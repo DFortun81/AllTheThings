@@ -430,39 +430,39 @@ _.Zones =
 							i(99206),	-- Helmet of the Prehistoric MarauderWarrior
 						},
 					}),
-					n(64085, { -- Cullen Hammerbrow <Blacksmithing Supplies>
-						["coords"] = {
-							{ 71.27, 50.52, 393 },
-						},
+					n(64085, {	-- Cullen Hammerbrow <Blacksmithing Supplies>
+						["coord"] = { 71.27, 50.52, 393 },
 						["g"] = {
-							i(84158), -- Plans: Contender's Revenant Belt
-							i(84159), -- Plans: Contender's Revenant Boots
-							i(84160), -- Plans: Contender's Revenant Bracers
-							i(84161), -- Plans: Contender's Revenant Breastplate
-							i(84162), -- Plans: Contender's Revenant Gauntlets
-							i(84163), -- Plans: Contender's Revenant Helm
-							i(84164), -- Plans: Contender's Revenant Legplates
-							i(84165), -- Plans: Contender's Revenant Shoulders
-							i(84166), -- Plans: Contender's Spirit Belt
-							i(84167), -- Plans: Contender's Spirit Boots
-							i(84168), -- Plans: Contender's Spirit Bracers
-							i(84169), -- Plans: Contender's Spirit Breastplate
-							i(84170), -- Plans: Contender's Spirit Gauntlets
-							i(84171), -- Plans: Contender's Spirit Helm
-							i(84172), -- Plans: Contender's Spirit Legplates
-							i(84173), -- Plans: Contender's Spirit Shoulders
-							i(84208), -- Plans: Masterwork Lightsteel Shield
-							i(84219), -- Plans: Masterwork Spiritguard Belt
-							i(84220), -- Plans: Masterwork Spiritguard Boots
-							i(84221), -- Plans: Masterwork Spiritguard Bracers
-							i(84222), -- Plans: Masterwork Spiritguard Breastplate
-							i(84223), -- Plans: Masterwork Spiritguard Gauntlets
-							i(84224), -- Plans: Masterwork Spiritguard Helm
-							i(84225), -- Plans: Masterwork Spiritguard Legplates
-							i(84226), -- Plans: Masterwork Spiritguard Shield
-							i(84227), -- Plans: Masterwork Spiritguard Shoulders
+							i(76061, {	-- Spirit of Harmony
+								i(84158),	-- Plans: Contender's Revenant Belt
+								i(84159),	-- Plans: Contender's Revenant Boots
+								i(84160),	-- Plans: Contender's Revenant Bracers
+								i(84161),	-- Plans: Contender's Revenant Breastplate
+								i(84162),	-- Plans: Contender's Revenant Gauntlets
+								i(84163),	-- Plans: Contender's Revenant Helm
+								i(84164),	-- Plans: Contender's Revenant Legplates
+								i(84165),	-- Plans: Contender's Revenant Shoulders
+								i(84166),	-- Plans: Contender's Spirit Belt
+								i(84167),	-- Plans: Contender's Spirit Boots
+								i(84168),	-- Plans: Contender's Spirit Bracers
+								i(84169),	-- Plans: Contender's Spirit Breastplate
+								i(84170),	-- Plans: Contender's Spirit Gauntlets
+								i(84171),	-- Plans: Contender's Spirit Helm
+								i(84172),	-- Plans: Contender's Spirit Legplates
+								i(84173),	-- Plans: Contender's Spirit Shoulders
+								i(84208),	-- Plans: Masterwork Lightsteel Shield
+								i(84219),	-- Plans: Masterwork Spiritguard Belt
+								i(84220),	-- Plans: Masterwork Spiritguard Boots
+								i(84221),	-- Plans: Masterwork Spiritguard Bracers
+								i(84222),	-- Plans: Masterwork Spiritguard Breastplate
+								i(84223),	-- Plans: Masterwork Spiritguard Gauntlets
+								i(84224),	-- Plans: Masterwork Spiritguard Helm
+								i(84225),	-- Plans: Masterwork Spiritguard Legplates
+								i(84226),	-- Plans: Masterwork Spiritguard Shield
+								i(84227),	-- Plans: Masterwork Spiritguard Shoulders
+							}),
 						},
-						["requireSkill"] = 164, -- Blacksmithing
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					n(74027, {	-- Lorry Warmheart <Mythic Vendor>
 						["coords"] = {
@@ -779,6 +779,45 @@ _.Zones =
 							i(44693),	-- Wound Dressing Shirt
 							i(44694),	-- Antiseptic-Soaked Dressing Shirt
 						},
+					}),
+					n(64094, {	-- Tanner Pang <Leatherworking & Skinning Supplies>
+						["g"] = {
+							i(76061, {	-- Spirit of Harmony
+								i(86240),	-- Pattern: Contender's Dragonscale Belt
+								i(86241),	-- Pattern: Contender's Dragonscale Boots
+								i(86242),	-- Pattern: Contender's Dragonscale Bracers
+								i(86243),	-- Pattern: Contender's Dragonscale Chestguard
+								i(86244),	-- Pattern: Contender's Dragonscale Gloves
+								i(86245),	-- Pattern: Contender's Dragonscale Helm
+								i(86246),	-- Pattern: Contender's Dragonscale Leggings
+								i(86247),	-- Pattern: Contender's Dragonscale Shoulders
+								i(86248),	-- Pattern: Contender's Leather Belt
+								i(86249),	-- Pattern: Contender's Leather Boots
+								i(86250),	-- Pattern: Contender's Leather Bracers
+								i(86251),	-- Pattern: Contender's Leather Chestguard
+								i(86252),	-- Pattern: Contender's Leather Gloves
+								i(86253),	-- Pattern: Contender's Leather Helm
+								i(86254),	-- Pattern: Contender's Leather Leggings
+								i(86255),	-- Pattern: Contender's Leather Shoulders
+								i(86256),	-- Pattern: Contender's Scale Belt
+								i(86257),	-- Pattern: Contender's Scale Boots
+								i(86258),	-- Pattern: Contender's Scale Bracers
+								i(86259),	-- Pattern: Contender's Scale Chestguard
+								i(86260),	-- Pattern: Contender's Scale Gloves
+								i(86261),	-- Pattern: Contender's Scale Helm
+								i(86262),	-- Pattern: Contender's Scale Leggings
+								i(86263),	-- Pattern: Contender's Scale Shoulders
+								i(86264),	-- Pattern: Contender's Wyrmhide Belt
+								i(86265),	-- Pattern: Contender's Wyrmhide Boots
+								i(86266),	-- Pattern: Contender's Wyrmhide Bracers
+								i(86267),	-- Pattern: Contender's Wyrmhide Chestguard
+								i(86268),	-- Pattern: Contender's Wyrmhide Gloves
+								i(86269),	-- Pattern: Contender's Wyrmhide Helm
+								i(86270),	-- Pattern: Contender's Wyrmhide Leggings
+								i(86271),	-- Pattern: Contender's Wyrmhide Shoulders
+							}),
+						},
+						["requireSkill"] = 165,	-- Leatherworking
 					}),
 					n(74022, {	-- Thelett Shaleheart <Raid Vendor>
 						["coords"] = {

@@ -8,16 +8,16 @@ _.WorldDrops =
 			filter(200, {	-- Recipes
 				n(-180, {	-- Alchemy
 					i(22914),	-- Recipe: Destruction Potion
-					i(22926),	-- Recipe: Elixir of Empowerment
+					i(22926),	-- Recipe: Elixir of Empowerment (BoE version)
 					i(22919),	-- Recipe: Elixir of Major Mageblood
 					i(22904),	-- Recipe: Elixir of the Searching Eye
-					i(22913),	-- Recipe: Haste Potion
+					i(22913),	-- Recipe: Haste Potion (BoE version)
 					i(22912),	-- Recipe: Heroic Potion
 					i(22903),	-- Recipe: Insane Strength Potion
 				}),
 				n(-181, {	-- Blacksmithing
-					{	-- Plans: Adamantite Weapon Chain
-						["itemID"] = 33186,	-- Plans: Adamantite Weapon Chain
+					{	-- Plans: Adamantite Weapon Chain (BoE version)
+						["itemID"] = 33186,	-- Plans: Adamantite Weapon Chain (BoE version)
 					},
 					{	-- Plans: Black Felsteel Bracers
 						["itemID"] = 23626,	-- Plans: Black Felsteel Bracers
@@ -145,7 +145,7 @@ _.WorldDrops =
 					i(24218),	-- Design: Radiant Talasite
 					i(24215),	-- Design: Reckless Noble Topaz
 					i(24217),	-- Design: Regal Talasite
-					i(24205),	-- Design: Rigid Star of Elune
+					i(24205),	-- Design: Rigid Star of Elune (BoE version)
 					i(31875, {	-- Design: Rigid Star of Elune
 						["spellID"] = 0,	-- This is now available via 24205, need to delink the old plans from the recipe
 						["u"] = 2,
@@ -160,7 +160,7 @@ _.WorldDrops =
 						["spellID"] = 0,	-- This is now available via 24204, need to delink the old plans from the recipe
 						["u"] = 2,
 					}),
-					i(24199),	-- Design: Solid Star of Elune
+					i(24199),	-- Design: Solid Star of Elune (BoE version)
 					i(24209),	-- Design: Sovereign Nightseye
 					i(24200),	-- Design: Sparkling Star of Elune
 					i(24201, {	-- Design: Sparkling Star of Elune
@@ -179,6 +179,22 @@ _.WorldDrops =
 					i(32411),	-- Design: Thundering Skyfire Diamond
 					i(24211),	-- Design: Timeless Nightseye
 					i(31878),	-- Design: Veiled Nightseye
+				}),
+				n(-187, {	-- Leatherworking
+					i(29724),	-- Pattern: Cobrascale Gloves (BoE version)
+					i(29723),	-- Pattern: Cobrascale Hood
+					un(8, i(29714)),	-- Pattern: Drums of Restoration (BoE version was removed from game)
+					un(8, i(29718)),	-- Pattern: Drums of Speed (BoE version was removed from game)
+					i(29730),	-- Pattern: Earthen Netherscale Boots
+					i(29727),	-- Pattern: Gloves of the Living Touch (BoE version)
+					i(29726),	-- Pattern: Hood of Primal Life
+					i(29729),	-- Pattern: Living Dragonscale Helm
+					i(29733),	-- Pattern: Netherdrake Gloves (BoE version)
+					i(29732),	-- Pattern: Netherdrake Helm
+					i(29734),	-- Pattern: Thick Netherscale Breastplate
+					i(29725),	-- Pattern: Windscale Hood
+					i(29728),	-- Pattern: Windslayer Wraps
+					i(29731),	-- Pattern: Windstrike Gloves (BoE version)
 				}),
 				n(-350, {	-- Spell Book
 					i(22153),	-- Tome of Arcane Brilliance Rank 2 -- Only drops from Elites, irrelevant information for live as its a grey item.

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				--[[
@@ -11,14 +11,14 @@ _.ExpansionFeatures =
 					n(-58, {     -- Hallow's End
 						["groups"] = {
 							n(-25, { 	 -- Pet Battle
-								n(96362, { -- Izzy Hollyfizzle events coordintor
+								n(96362, {	-- Izzy Hollyfizzle events coordintor
 									["groups"] = {	
-										un(25, i(128658, { -- Spooky Supplies
-											i(128664, { -- Creepy Crawlers
+										un(25, i(128658, {	-- Spooky Supplies
+											i(128664, {	-- Creepy Crawlers
 												["groups"] = {
-													p(1741), -- Ghastly Rat
-													p(1740), -- Ghost Maggot
-													p(1730), -- Spectral Spinner
+													p(1741),	-- Ghastly Rat
+													p(1740),	-- Ghost Maggot
+													p(1730),	-- Spectral Spinner
 												},
 												["description"] = "In order to summon Ghastly Rats, Ghost Maggots, and Spectral Spinners you will need to do the dailies in your Garrison.  Once you have gotten enough |cFFFFD700Spooky Supplies|r you can then purchase from Izzy Hollyfizzle the |cFFFFD700Creepy Crawlers|r and this will cause Ghastly Rats, Ghost Maggots, and Spectral Spinners to spawn."
 											}),	
@@ -42,14 +42,14 @@ _.ExpansionFeatures =
 								["u"] = 26,					
 							}),							
 						},
-						["achievementID"] = 1656, -- Hallowed Be Thy nme
+						["achievementID"] = 1656,	-- Hallowed Be Thy nme
 						["u"] = 26,
 					}),	
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	 -- Quests
 								["groups"] = {
-									n(96451, { -- Almie
+									n(96451, {	-- Almie
 										["groups"] = {	
 											q(39651), 	-- Grumpus
 											q(39649), 	-- Mencing Grumplings
@@ -58,18 +58,18 @@ _.ExpansionFeatures =
 										},
 										["description"] = "These daily quests take place in Frostfire Ridge and reward |cFFFFD700Merry Supplies|r.", 
 									}),
-									n(96304, { -- Tradurjo Jinglepocket
+									n(96304, {	-- Tradurjo Jinglepocket
 										q(6961), 	-- Greatfather Winter is Here!
 									}),
 								},
 								["u"] = 29,					
 							}),
 							n(-2, { 	 -- Vendors
-								n(96362, { -- Izzy Hollyfizzle events coordintor
-									i(128659, { -- Merry Supplies
+								n(96362, {	-- Izzy Hollyfizzle events coordintor
+									i(128659, {	-- Merry Supplies
 										["groups"] = {
-											i(108635), -- Crashin' Thrashin' Killdozer Controller
-											i(128670, { -- Savage Gift
+											i(108635),	-- Crashin' Thrashin' Killdozer Controller
+											i(128670, {	-- Savage Gift
 												["groups"] = {	
 													i(128671),  -- Minion of Grumpus
 												},
@@ -79,7 +79,7 @@ _.ExpansionFeatures =
 										["description"] = "Purchasing Ball of Tangled Lights, Imported Trees, Little Helpers, Festive Outfits, and Old Box of Decorations for 5x|cFFFFD700Merry Supplies|r will enble you to use the decorations year round.",
 									}),
 								}),	
-								n(96304, { -- Tradurjo Jinglepocket
+								n(96304, {	-- Tradurjo Jinglepocket
 									un(29, i(34319)),	-- Pattern: Red Winter Clothes
 									un(29, i(34262)),	-- Pattern: Winter Boots
 									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
@@ -89,7 +89,7 @@ _.ExpansionFeatures =
 								}),										
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),						
 				}),								

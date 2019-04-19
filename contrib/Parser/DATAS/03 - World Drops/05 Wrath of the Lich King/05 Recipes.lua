@@ -13,31 +13,31 @@ _.WorldDrops =
 				prof(333, {	-- Enchanting
 					{	-- Formula: Enchant Boots - Superior Agility
 						["itemID"] = 37341,	-- Formula: Enchant Boots - Superior Agility
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 					{	-- Formula: Enchant Bracer - Expertise
 						["itemID"] = 37346,	-- Formula: Enchant Bracer - Expertise
-						["u"] = 7, -- formula was removed from game when expertise went away
+						["u"] = 7,	-- formula was removed from game when expertise went away
 					},
 					{	-- Formula: Enchant Bracer - Greater Stats
 						["itemID"] = 37337,	-- Formula: Enchant Bracer - Greater Stats
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 					{	-- Formula: Enchant Chest - Greater Dodge
 						["itemID"] = 37336,	-- Formula: Enchant Chest - Greater Dodge
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 					{	-- Formula: Enchant Cloak - Haste
 						["itemID"] = 37348,	-- Formula: Enchant Cloak - Haste
-						["u"] = 2, -- was replaced by Enchant Cloak - Greater Speed
+						["u"] = 2,	-- was replaced by Enchant Cloak - Greater Speed
 					},
 					{	-- Formula: Enchant Weapon - Exceptional Agility
 						["itemID"] = 37343,	-- Formula: Enchant Weapon - Exceptional Agility
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 					{	-- Formula: Enchant Weapon - Exceptional Versatility (formerly Spirit)
 						["itemID"] = 37329,	-- Formula: Enchant Weapon - Exceptional Versatility
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 				}),
 				n(-185, { 	-- Inscription

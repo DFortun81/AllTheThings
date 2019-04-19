@@ -3,6 +3,6 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 28}, 
 {
-	holiday(235466, { -- Pilgrim's Bounty
+	holiday(235466, {	-- Pilgrim's Bounty
 	}),
 });

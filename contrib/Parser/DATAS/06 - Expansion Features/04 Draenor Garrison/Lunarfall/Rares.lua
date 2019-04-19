@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-16, { 	-- Rares

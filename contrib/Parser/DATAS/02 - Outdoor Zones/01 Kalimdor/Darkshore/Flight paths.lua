@@ -8,10 +8,10 @@ _.Zones =
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(339, {	-- Grove of the Ancients, Darkshore
-						["coord"] = { 44.4, 75.4 },
+						["coord"] = { 44.4, 75.4, 62 },
 					}),
 					fp(26, {	-- Lor'danel, Darkshore
-						["coord"] = { 51.6, 17.6 },
+						["coord"] = { 51.6, 17.6, 62 },
 					}),
 				}),
 			},

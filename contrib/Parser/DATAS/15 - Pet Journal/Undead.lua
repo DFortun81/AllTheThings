@@ -49,6 +49,7 @@ _.PetJournal =
 		p(1954),	-- Nerubian Swarmer
 		p(2080), 	-- Rattlejaw
 		p(439),		-- Restless Shadeling
+		p(2199),	-- Restored Revenant
 		p(2394),	-- Returned Hatchling
 		p(1804),	-- Risen Saber Kitten
 		p(2553),	-- Rotting Ghoul
@@ -68,6 +69,7 @@ _.PetJournal =
 		un(2, p(187)),	-- Vampiric Batling
 		p(2037),	-- Vilebrood Whelpling
 		p(310),		-- Voodoo Figurine
+		p(2580),	-- Wayward Spirit
 		p(1394),	-- Weebomination
 		p(1968),	-- Wicked Soul
 		p(2411),	-- Wicker Pup

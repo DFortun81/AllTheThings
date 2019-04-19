@@ -3,14 +3,14 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(905, { -- Argus
+	m(905, {	-- Argus
 		["groups"] = {
-			n(-34, { -- World Quests
+			n(-34, {	-- World Quests
 				["groups"] = {
-					n(-322, { -- Cloak
-						i(150988), -- Twisted-Ritualist's Shawl
+					n(-322, {	-- Cloak
+						i(150988),	-- Twisted-Ritualist's Shawl
 					}),
-					n(-43, { -- Cloth
+					n(-43, {	-- Cloth
 						i(150980),	-- Doomsinger Cap
 						i(150987),	-- Doomsinger Amice
 						i(150985),	-- Doomsinger Robes
@@ -20,7 +20,7 @@ _.Zones =
 						i(150986),	-- Doomsinger Leggings
 						i(150984),	-- Doomsinger Slippers
 					}),
-					n(-44, { -- Leather
+					n(-44, {	-- Leather
 						i(150969),	-- Stygian Mask
 						i(150970),	-- Stygian Shoulderguards
 						i(150968),	-- Stygian Vest
@@ -30,7 +30,7 @@ _.Zones =
 						i(150971),	-- Stygian Trousers
 						i(150967),	-- Stygian Boots
 					}),
-					n(-45, { -- Mail
+					n(-45, {	-- Mail
 						i(150975),	-- Nath'raxxan Coif
 						i(150979),	-- Nath'raxxan Spaulders
 						i(150978),	-- Nath'raxxan Chestguard
@@ -40,7 +40,7 @@ _.Zones =
 						i(150974),	-- Nath'raxxan Leggings
 						i(150976),	-- Nath'raxxan Boots
 					}),
-					n(-46, { -- Plate
+					n(-46, {	-- Plate
 						i(150957),	-- Garothi Helmet
 						i(150960),	-- Garothi Pauldrons
 						i(150958),	-- Garothi Breastplate
@@ -50,7 +50,7 @@ _.Zones =
 						i(150956),	-- Garothi Greaves
 						i(150963),	-- Garothi Sabatons
 					}),
-				--	n(-387, { -- Relic
+				--	n(-387, {	-- Relic
 				--		
 				--	}),
 				},

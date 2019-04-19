@@ -89,7 +89,7 @@ _.Zones =
 									}),
 									q(48934, {	-- Mark of the Damned
 										["sourceQuests"] = { 47493 },	-- A Lonely Spirit
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 									}),
 									q(47491, {	-- Remnants of the Damned
 										["qg"] = 122688,	-- Bwonsamdi
@@ -212,7 +212,7 @@ _.Zones =
 										["sourceQuests"] = { 49081 },	-- To Kill a Loa
 									}),
 									q(49406, {	-- Zalamar Slaughter
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = {
 											48801,	-- Isolating Zalamar
 											48890,	-- How to Be a Blood Troll
@@ -300,7 +300,7 @@ _.Zones =
 										["sourceQuests"] = { 49136 },	-- Jungo, Herald of G'huun
 									}),
 									q(51689, {	-- Tortollan Rescue
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 49120 },	-- Speaking with the Dead
 									}),
 								},
@@ -370,7 +370,7 @@ _.Zones =
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 									}),
 									q(48093, {	-- Nagating the Threat [Note: One of 3 final Quest needed to trigger criteria]
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 									}),
 									q(47525, {	-- Staying Hidden
@@ -467,7 +467,7 @@ _.Zones =
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 									}),
 									q(47756, {	-- The Libation's Liberation
-										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+										["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
 										["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 									}),
 									q(47596, {	-- There Is No Plan "B"
@@ -700,6 +700,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
+					{	-- A One-Way Ticket to the Heart
+						["questID"] = 54964,
+						["qg"] = 149823,	-- Magni Bronzebeard
+						["coord"] = { 52.3, 68.6, 1382 },
+						["sourceQuest"] = 54940,	-- Necessity is the MOTHER
+					},
 					{	-- All Hope is Lost
 						["questID"] = 48857,
 						["qg"] = 127212,	-- Ka'dran
@@ -868,7 +874,13 @@ _.Zones =
 					},
 					{	-- Mawfiend Extermination
 						["questID"] = 47996,
-						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance", -- Let's make the bonus objective icon look pretty
+						["icon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",	-- Let's make the bonus objective icon look pretty
+					},
+					{	-- Necessity is the MOTHER
+						["questID"] = 54940,
+						["qg"] = 149823,
+						["coord"] = { 47.6, 16.2, 1381, },
+						["sourceQuest"] = 54939,	-- Stubborn as a Bronzebeard
 					},
 					{	-- No Problem Tar Can't Solve
 						["questID"] = 49776,
@@ -982,6 +994,12 @@ _.Zones =
 					{	-- Stopping Zardrax
 						["questID"] = 48852,
 						["sourceQuest"] = 48854,	-- Offer of Power
+					},
+					{	-- Stubborn as a Bronzebeard
+						["questID"] = 54939,
+						["qg"] = 149867,	-- Magni Bronzebeard
+						["coord"] = { 57.8, 50.4, 863 },
+						["sourceQuest"] = 54938,	-- A Brother's Help
 					},
 					{	-- The Fall of Kel'vax
 						["questID"] = 48480,

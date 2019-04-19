@@ -228,7 +228,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "The Mortar: Reloaded",
-							["recipeID"] = 13240
+							["recipeID"] = 13240,
+							["u"] = 2
 						},
 						{
 							["name"] = "Thorium Grenade",
@@ -242,11 +243,13 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Bloodvine Goggles",
-							["recipeID"] = 24356
+							["recipeID"] = 24356,
+							["u"] = 8
 						},
 						{
 							["name"] = "Bloodvine Lens",
-							["recipeID"] = 24357
+							["recipeID"] = 24357,
+							["u"] = 8
 						},
 						{
 							["name"] = "Bright-Eye Goggles",
@@ -424,11 +427,13 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Hyper-Radiant Flame Reflector",
-							["recipeID"] = 23081
+							["recipeID"] = 23081,
+							["u"] = 7,
 						},
 						{
 							["name"] = "Ice Deflector",
-							["recipeID"] = 3957
+							["recipeID"] = 3957,
+							["u"] = 7
 						},
 						{
 							["name"] = "Lifelike Mechanical Toad",
@@ -502,7 +507,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Ultrasafe Transporter - Gadgetzan",
-							["recipeID"] = 23489
+							["recipeID"] = 23489,
+							["description"] = "Speak to Jhordy Lapforge in Gadgetzan at 52.17, 27.88 to learn this recipe.",
 						},
 						{
 							["name"] = "Voice Amplification Modulator",
@@ -532,7 +538,8 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Flawless Arcanite Rifle",
-							["recipeID"] = 19833
+							["recipeID"] = 19833,
+							["u"] = 7,
 						},
 						{
 							["name"] = "Lovingly Crafted Boomstick",

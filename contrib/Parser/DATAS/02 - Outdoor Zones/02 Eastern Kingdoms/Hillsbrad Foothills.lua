@@ -6,24 +6,24 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
 			["groups"] = {
-				n(-228, { 	-- Flight Path
-					fp(669, { -- Eastpoint Tower, Hillsbrad
+				n(-228, {	-- Flight Path
+					fp(669, {	-- Eastpoint Tower, Hillsbrad
 						["coord"] = { 59.6, 63.2 },
 					}),
-					fp(667, { -- Ruins of Southshore, Hillsbrad
+					fp(667, {	-- Ruins of Southshore, Hillsbrad
 						["coord"] = { 49, 66.2 },
 					}),
-					fp(668, { -- Southpoint Gate, Hillsbrad
+					fp(668, {	-- Southpoint Gate, Hillsbrad
 						["coord"] = { 29, 64.4 },
 					}),
-					fp(670, { -- Strahnbrad, Alterac Mountains
+					fp(670, {	-- Strahnbrad, Alterac Mountains
 						["coord"] = { 58.2, 26.4 },
 					}),
-					fp(13, { -- Tarren Mill, Hillsbrad
+					fp(13, {	-- Tarren Mill, Hillsbrad
 						["coord"] = { 56, 46 },
 					}),
 				}),
-				n(-25, {	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					p(646), 	-- Chicken
 					p(648), 	-- Huge Toad
 					p(453), 	-- Infested Bear Cub
@@ -37,7 +37,7 @@ _.Zones =
 					p(379), 	-- Squirrel
 					p(420), 	-- Toad
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					h(ach(4895, {	-- Hillsbrad Foothills Quests
 						crit(1),		-- The Sludge Fields
@@ -51,7 +51,7 @@ _.Zones =
 						["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 						["sourceQuests"] = { 28344 },	-- Can You Smell What the Lok'tar is Cooking?
 					}),
-					qh(28237, { -- A Blight Upon the Land
+					qh(28237, {	-- A Blight Upon the Land
 						["groups"] = {
 							i(65697),	-- Stillwater's Cloak
 							i(65675),	-- Stillwater's Dagger
@@ -78,7 +78,7 @@ _.Zones =
 					q( 28733, {	-- Basic Botany
 						["qg"] = 49687,	-- Brazie the Botanist
 					}),
-					qh(28556, { -- Breaking the Hand
+					qh(28556, {	-- Breaking the Hand
 						["groups"] = {
 							i(65721),	-- Corrahn's Cloak
 							i(65703),	-- Gavin's Pauldrons
@@ -111,7 +111,7 @@ _.Zones =
 						["qg"] = 2278,	-- Melisara
 						["sourceQuests"] = { 28556 },	-- Breaking the Hand (may be available after 28587 Aid of the Frostwolf)
 					}),
-					qh(28604, { -- Deception and Trickery
+					qh(28604, {	-- Deception and Trickery
 						["groups"] = {
 							i(65722),	-- Lilith's Wand
 							i(65704),	-- Vest of the Phantom
@@ -131,7 +131,7 @@ _.Zones =
 					}),
 --					q(43296),	-- Defend (REMOVED, from Legion pre-patch)
 --					q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
-					qh(28197, { -- Discretion is Key
+					qh(28197, {	-- Discretion is Key
 						["groups"] = {
 							i(65694),	-- Clerk Whitesteed's Cloak
 							i(65672),	-- Crossbow of the Twice-Slain
@@ -139,7 +139,7 @@ _.Zones =
 						["qg"] = 47781,	-- Warden Stillwater
 						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
-					qh(28231, { -- Do it for Twinkles
+					qh(28231, {	-- Do it for Twinkles
 						["groups"] = {
 							i(65714),	-- "Jenny's" Gloves
 							i(65696),	-- Awesome Boots
@@ -154,7 +154,7 @@ _.Zones =
 						["sourceQuests"] = { 28604 },	-- Deception and Trickery
 					}),
 					o(206944, {	-- Shovel
-						qh(28189, { -- Do the Right Thing
+						qh(28189, {	-- Do the Right Thing
 							["groups"] = {
 								i(65667),	-- Shovel of Mercy
 							},
@@ -192,7 +192,7 @@ _.Zones =
 						["qg"] = 47899,	-- Flesh-Shaper Arnauld
 						["sourceQuests"] = { 28192 },	-- No One Here Gets Out Alive
 					}),
-					qh(28209, { -- Freedom for Lydon
+					qh(28209, {	-- Freedom for Lydon
 						["groups"] = {
 							i(65713),	-- Monstrous Shield
 							i(65673),	-- Aberrant Vest
@@ -210,7 +210,7 @@ _.Zones =
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28617 },	-- Flower Power
 					}),
-					qh(28114, { -- Glorious Harvest
+					qh(28114, {	-- Glorious Harvest
 						["groups"] = {
 							i(65710),	-- Creeping Boots
 							i(65692),	-- Bear Hide Vest
@@ -226,13 +226,13 @@ _.Zones =
 					qh(28332, {	-- Helcular's Command
 						["qg"] = 48129,	-- Helcular
 					}),
-					qh(28331, { -- Helcular's Rod Giveth...
+					qh(28331, {	-- Helcular's Rod Giveth...
 						["groups"] = {
 							i(65676),	-- Helcular's Other Rod
 						},
 						["qg"] = 48129,	-- Helcular
 					}),
-					qh(28400, { -- Heroes of the Horde!
+					qh(28400, {	-- Heroes of the Horde!
 						["groups"] = {
 							i(65728),	-- Boots of the Hero
 							i(65719),	-- Spaulders of the Hero
@@ -244,7 +244,7 @@ _.Zones =
 						["qg"] = 48503,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28397 },	-- They Will Never Expect This...
 					}),
-					qpvp(qh(8272, { -- Hero of the Frostwolf
+					qpvp(qh(8272, {	-- Hero of the Frostwolf
 						["groups"] = {
 							i(19107),	-- Bloodseeker
 							i(19106),	-- Ice Barbed Spear
@@ -254,7 +254,7 @@ _.Zones =
 						["qg"] = 13817,	-- Voggah Deathgrip
 						["sourceQuests"] = { 7142 },	-- The Battle for Alterac
 					})),
-					qpvp(qa(8271, { -- Hero of the Stormpike
+					qpvp(qa(8271, {	-- Hero of the Stormpike
 						["groups"] = {
 							i(19107),	-- Bloodseeker
 							i(19106),	-- Ice Barbed Spear
@@ -280,7 +280,7 @@ _.Zones =
 							i(17906),	-- Frostwolf Insignia Rank 3
 						},
 					})),
-					qh(28138, { -- Human Infestation
+					qh(28138, {	-- Human Infestation
 						["groups"] = {
 							i(65709),	-- Binding Plates
 							i(65690),	-- Slaver's Leggings
@@ -298,12 +298,14 @@ _.Zones =
 					}),
 --					q(43285),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
 --					q(42805),	-- Invasion: Hillsbrad Foothills (REMOVED, from Legion pre-patch)
-					qr(q(8249, {	-- Junkboxes Needed
-						un(2, i(20086, {	-- Broken Dusksteel Throwing Knife
-							["qg"] = 7323,	-- Winstone Wolfe
-						})),
-					})),
-					qh(28354, { -- Kasha Will Fly Again
+					q(8249, {	-- Junkboxes Needed
+						["qg"] = 7323,	-- Winstone Wolfe
+						["repeatable"] = true,
+						["groups"] = {
+							un(2, i(20086)),	-- Broken Dusksteel Throwing Knife
+						},
+					}),
+					qh(28354, {	-- Kasha Will Fly Again
 						["groups"] = {
 							i(65717),	-- Kingslayer's Breastplate
 							i(65699),	-- Mudsnout Spaulders
@@ -313,7 +315,7 @@ _.Zones =
 						["qg"] = 48218,	-- Kingslayer Orkus
 						["sourceQuests"] = { 28348 },	-- Stormpike Rendezvous
 					}),
-					q(28748, { -- Lawn of the Dead
+					q(28748, {	-- Lawn of the Dead
 						["groups"] = {
 							i(65689),	-- Brazie's Plant Light
 							i(65666),	-- Botanist's Britches
@@ -453,7 +455,7 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 30113 },	-- Victory in the Depths
 					})),
-					qh(28636, { -- Silence of the Dwarves
+					qh(28636, {	-- Silence of the Dwarves
 						["groups"] = {
 							i(65724),	-- Grasps of the Unyielding
 							i(65706),	-- Mr. Hider's Bracers
@@ -467,13 +469,13 @@ _.Zones =
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 					}),
-					qh(28489, { -- Stagwiches
+					qh(28489, {	-- Stagwiches
 						["groups"] = {
 							i(65681),	-- Stagwich Slicer
 						},
 						["qg"] = 2397,	-- Derak Nightfall
 					}),
-					qh(28616, { -- Stormpike Apocalypse
+					qh(28616, {	-- Stormpike Apocalypse
 						["groups"] = {
 							i(65723),	-- Cloak of Treason
 							i(65705),	-- Pocket-Nuke Belt
@@ -515,7 +517,7 @@ _.Zones =
 					qh(28645, {	-- The Durnholde Challenge: Bloodvenom
 						["sourceQuests"] = { 28644 },	-- The Durnholde Challenge: Teracula
 					}),
-					qh(28647, { -- The Durnholde Challenge: D-1000
+					qh(28647, {	-- The Durnholde Challenge: D-1000
 						["groups"] = {
 							i(65707),	-- Discontinuer's Hammer
 							i(65687),	-- Axe of the Judgment Day
@@ -547,7 +549,7 @@ _.Zones =
 							i(17909),	-- Frostwolf Insignia Rank 6
 						},
 					})),
-					qh(28484, { -- The Heart of the Matter
+					qh(28484, {	-- The Heart of the Matter
 						["groups"] = {
 							i(65720),	-- Tell-Tale Bracers
 							i(65702),	-- Supple Yeti Leggings
@@ -580,7 +582,7 @@ _.Zones =
 					qpvp(qa(7102, {	-- Towers and Bunkers
 						["qg"] = 13777,	-- Sergeant Durgen Stormpike
 					})),
-					qh(28330, { -- Trail of Filth
+					qh(28330, {	-- Trail of Filth
 						["groups"] = {
 							i(65718),	-- Lethality Leggings
 							i(65700),	-- Chet's Slimy Bracers
@@ -605,7 +607,7 @@ _.Zones =
 					o(207279, {	-- Warchief's Command Board
 						qh(28619),	-- Warchief's Command: Arathi Highlands!
 					}),
-					qh(28096, { -- Welcome to the Machine
+					qh(28096, {	-- Welcome to the Machine
 						["groups"] = {
 							i(65711),	-- Portable Lap Desk
 							i(65693),	-- Quest Giver's Pauldrons
@@ -615,7 +617,7 @@ _.Zones =
 						["qg"] = 2215,	-- High Executor Darthalia
 						["sourceQuests"] = { 27746, 28089 },	-- Empire of Dirt & Warchief's Command: Hillsbrad Foothills!
 					}),
-					qh(28485, { -- Yetimus the Yeti Lord
+					qh(28485, {	-- Yetimus the Yeti Lord
 						["groups"] = {
 							i(65726),	-- Shield of Uncurbed Appetite
 							i(65708),	-- Tarren Orb
@@ -624,7 +626,7 @@ _.Zones =
 						["qg"] = 2418,	-- Deathguard Samsa
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16,  {	-- Rares
 					n(50335, { 	-- Alitus
 						dr(14.0, i(6575)),	-- Defender Cloak
 						dr(12.0, i(9781)),	-- Bandit Pants
@@ -1185,7 +1187,7 @@ _.Zones =
 					n(2242, {	-- Syndicate Spy
 						dr(0.05, i(5775)),	-- Pattern: Black Silk Pack
 					}),
-					nh(14275, { -- Tamra Stormpike
+					nh(14275, {	-- Tamra Stormpike
 						i(3053), 	-- Humbert's Chestpiece	
 						dr(06.0, i(9805)),	-- Superior Cloak
 						dr(05.0, i(9814)),	-- Fortified Belt
@@ -1286,35 +1288,34 @@ _.Zones =
 						dr(01.0, i(9831)),	-- Scaled Cloak
 					}),
 				}),
-				n(-2,  {	-- Vendors
-					n(2480, {	-- Bro'kin <Alchemy Supplies>
+				n(-2,   {	-- Vendors
+					n(2480,   {	-- Bro'kin <Alchemy Supplies>
 						i(14634),	-- Recipe: Frost Oil
 					}),
-					h(n(2393, {	-- Christoph Jeffcoat <Tradesman>
+					nh(2393,  {	-- Christoph Jeffcoat <Tradesman>
 						["groups"] = {
 							i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
 								["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
 								["u"] = 2,
 							}),
-							i(6054), -- Recipe: Shadow Protection Potion
-							i(5788), -- Pattern: Thick Murloc Armor
+							i(6054),	-- Recipe: Shadow Protection Potion
+							i(5788),	-- Pattern: Thick Murloc Armor
 						},
 						["coord"] = { 57.51, 47.79 },					
-					})),
-					nh(2397, {	-- Derak Nightfall <Cook>
+					}),
+					nh(2397,  {	-- Derak Nightfall <Cook>
 						i(6330), 	-- Recipe: Bristle Whisker Catfish
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					h(n(2698, {	-- George Candarte <Leatherworking Supplies>
+					nh(2698,  {	-- George Candarte <Leatherworking Supplies>
 						i(7613), 	-- Pattern: Green Leather Armor
-					})),
-					h(n(47712, {	-- Harland Waldek <Weaponsmith>
+					}),
+					nh(47712, {	-- Harland Waldek <Weaponsmith>
 						i(4818),	-- Executioner's Sword
 						i(4817),	-- Blessed Claymore
-					})),
-					{	-- Jorek Ironside <Frostwolf Supply Officer>
-						["npcID"] = 13219,	-- Jorek Ironside <Frostwolf Supply Officer>
+					}),
+					nh(13219, {	-- Jorek Ironside
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							i(19029),	-- Horn of the Frostwolf Howler Mount
@@ -1345,8 +1346,8 @@ _.Zones =
 							un(2, i(19320)),	-- Gnoll Skin Bandolier
 							un(2, i(19319)),	-- Harpy Hide Quiver
 						},
-					},
-					n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
+					}),
+					n(3536,   {	-- Kris Legace <Freewheeling Tradeswoman>
 						i(4832),	-- Mystic Sarong
 						i(4830),	-- Saber Leggings
 						i(4831),	-- Stalking Pants
@@ -1354,11 +1355,11 @@ _.Zones =
 						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
 					}),
-					h(n(2394, {	-- Mallen Swain <Tailoring Supplies>
+					nh(2394,  {	-- Mallen Swain <Tailoring Supplies>
 						i(6274), 	-- Pattern: Blue Overalls
 						i(6401),	-- Pattern: Dark Silk Shirt
-					})),
-					h(n(3539, {	-- Ott <Weaponsmith>
+					}),
+					nh(3539,  {	-- Ott <Weaponsmith>
 						i(12247),	-- Broad Bladed Knife
 						i(12249),	-- Merciless Axe
 						i(4825),	-- Callous Axe
@@ -1366,22 +1367,23 @@ _.Zones =
 						i(4826),	-- Marauder Axe
 						i(4818),	-- Executioner's Sword
 						i(4817),	-- Blessed Claymore
-					})),
-					n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
+					}),
+					n(2684,   {	-- Rizz Loosebolt <Engineering Supplies>
 						["u"] = 33,
 						["groups"] = {
 							un(7, i(13308)),	-- Schematic: Ice Deflector
 						},
 					}),
-					n(6779, {	-- Smudge Thunderwood <Poison Supplies>
+					n(6779,   {	-- Smudge Thunderwood <Poison Supplies>
 						["classes"] = {4},	-- Rogue Only
 						["groups"] = {
 							i(18160),	-- Recipe: Thistle Tea
 						},
 					}),
-					n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+					na(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
 						["itemID"] = 137642,	-- Mark of Honor
-						["groups"] = {
+						["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
+						["g"] = {
 							i(19030),	-- Stormpike Battle Charger Mount
 							i(19032),	-- Stormpike Battle Tabard
 							i(19045),	-- Stormpike Battle Standard
@@ -1408,14 +1410,15 @@ _.Zones =
 							i(19325),	-- Don Julio's Band
 							i(21563),	-- Don Rodrigo's Band
 						},
-						["crs"] = {
-							13216,	-- Gaelden Hammersmith <Stormpike Supply Officer>
+					}),
+					n(6777,   {	-- Zan Shivsproket <Speciality Engineer>
+						["coord"] = { 71.18, 45.26, 25 },
+						["groups"] = {
+							i(7742),	-- Schematic: Gnomish Cloaking Device
 						},
 					}),
-					n(6777, {	-- Zan Shivsproket <Speciality Engineer>
-						i(7742),	-- Schematic: Gnomish Cloaking Device
-					}),
-					n(3537, {	-- Zixil <Merchant Supreme>
+					n(3537,   {	-- Zixil <Merchant Supreme>
+						i(7114),	-- Pattern: Azure Silk Gloves
 						i(6377),	-- Formula: Enchant Boots - Minor Agility
 						i(7362), 	-- Pattern: Earthen Leather Shoulders
 						i(5772),	-- Pattern: Red Woolen Bag
@@ -1428,7 +1431,7 @@ _.Zones =
 						i(4827),	-- Wizard's Belt
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(0,    {	-- Zone Drop
 					i(11152, {	-- Formula: Enchant Gloves - Fishing
 						["crs"] = {
 							14276,	-- Scargil
@@ -1438,7 +1441,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-40, {	-- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(565, {	-- Bartolo's Yeti Fur Cloak
@@ -1475,10 +1478,10 @@ _.Zones =
 								un(2, i(3750)),	-- Ribbed Breastplate
 							})),
 							un(40, qa(1053, {	-- In the Name of the Light
-								un(2, i( 6831)),	-- Black Menace
-								un(2, i( 6830)),	-- Bonebiter
+								un(2, i(6831)),	-- Black Menace
+								un(2, i(6830)),	-- Bonebiter
 								un(2, i(11262)),	-- Orb of Lorica
-								un(2, i( 6829)),	-- Sword of Serenity
+								un(2, i(6829)),	-- Sword of Serenity
 							})),
 							un(40, qh(546, {	-- [DEPRECATED] Souvenirs of Death
 								un(2, i(3739)),	-- Skull Ring
@@ -1504,8 +1507,8 @@ _.Zones =
 							})),
 							un(40, qh(2938, {	-- Venom to the Undercity
 								un(2, i(10686)),	-- Aegis of Battle
-								un(2, i( 9650)),	-- Honorguard Chestpiece
-								un(2, i( 9649)),	-- Royal Highmark Vestments
+								un(2, i(9650)),	-- Honorguard Chestpiece
+								un(2, i(9649)),	-- Royal Highmark Vestments
 							})),
 							un(40, qh(1051, { 	-- Vorrel's Revenge
 								un(2, i(4643)), 	-- Grimsteel Cape
@@ -1571,7 +1574,7 @@ _.Zones =
 			},
 			["lvl"] = 15,	
 			["achievementID"] = 772,
-			["description"] = "|cff66ccffHillsbrad Foothills was radically changed in Cataclysm. A former grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.|r",				
+			["description"] = "|cff66ccffHillsbrad Foothills was radically changed in Cataclysm. Formerly a grassy zone with World PvP between the Alliance town of Southshore and the Horde town of Tarren Mill, the Forsaken have taken over the zone after the Shattering. Southshore is destroyed due to plague experiments, and toxic waste covers much of the zone. This zone has also been merged with Alterac Mountains, a snowy plateau populated by ogres and surrounded by the Syndicate.|r",				
 		}),
 	}),
 };

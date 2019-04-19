@@ -7,21 +7,21 @@ _.Zones =
 		m(790, {	-- Eye of Azshara
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(1870, { -- Eye of Azshara, Azsuna
+					fp(1870, {	-- Eye of Azshara, Azsuna
 						["coord"] = { 38.2, 46 },
 					}),
 				}),
-				n(-25, { -- Pet Battle
-					p(1914), -- Coastal Sandpiper
-					p(1728), -- Juvenile Scuttleback
+				n(-25, {	-- Pet Battle
+					p(1914),	-- Coastal Sandpiper
+					p(1728),	-- Juvenile Scuttleback
 				}),
-				n(-16, { -- Rares
-					n(111573, { -- Kosumoth the Hungering
+				n(-16, {	-- Rares
+					n(111573, {	-- Kosumoth the Hungering
 						["groups"] = {
 							q(43798, { 
 								["groups"] = {
-									i(140261), -- Pet
-									i(138201), -- Mount
+									i(140261),	-- Pet
+									i(138201),	-- Mount
 								},
 								["repeatable"] = true,
 							}),

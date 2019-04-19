@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			["maps"] = {
 				1333,	-- Horde Intro Quest Map
 			},
-			["achievementID"] = 13296, -- War for the Shore
+			["achievementID"] = 13296,	-- War for the Shore
 			["description"] = "|cff66ccffThe Battle for Darkshore is the second warfront in Battle for Azeroth where the Forsaken and the night elves struggle for control of a staging area near the former night elven capital region of Teldrassil.|r", 
 			["g"] = {
 				n(-16,	{ -- Rares
@@ -95,9 +95,7 @@ _.ExpansionFeatures =
 							["npcID"] = 147708,				-- Athrikus Narassin
 							["qg"] = 147708,				-- Athrikus Narassin
 							["isWeekly"] = true,
-							["coords"] = {
-								{ 59.02, 24.29, 62 },
-							},
+							["coord"] = { 58.5, 24.2, 62 },
 							["g"] = {
 								{	--Narassin's Soul Gem
 									["itemID"] = 166784,	-- Narassin's Soul Gem
@@ -105,7 +103,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Blackpaw [H Only]
-							["hordeQuestID"] = 54890,		-- Blackpaw [H]
+							["questID"] = 54890,		-- Blackpaw [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149660,				-- Blackpaw
 							["qg"] = 149660,				-- Blackpaw
@@ -284,7 +282,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Grimhorn [H Only]
-							["hordeQuestID"] = 54891,		-- Grimhorn [H]
+							["questID"] = 54891,		-- Grimhorn [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149662,				-- Grimhorn
 							["qg"] = 149662,				-- Grimhorn
@@ -360,7 +358,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Onu [H Only]
-							["hordeQuestID"] = 54291,		-- Onu [H]
+							["questID"] = 54291,		-- Onu [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147758,				-- Onu
 							["qg"] = 147758,				-- Onu
@@ -398,7 +396,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Sapper Odette [H Only]
-							["hordeQuestID"] = 54452,		-- Sapper Odette [H]
+							["questID"] = 54452,		-- Sapper Odette [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 148103,				-- Sapper Odette
 							["qg"] = 148103,				-- Sapper Odette
@@ -424,7 +422,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shadowclaw [H Only]
-							["hordeQuestID"] = 54892,		-- Shadowclaw [H]
+							["questID"] = 54892,		-- Shadowclaw [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149663,				-- Shadowclaw
 							["qg"] = 149663,				-- Shadowclaw
@@ -445,7 +443,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shattershard
-							["allianceQuestID"] = 54289,	-- Shattershard [A]
+							["allianceQuestID"] = 54289,	-- Shattershard [A] 54884
 							["hordeQuestID"] = 54290,		-- Shattershard [H]
 							["npcID"] = 147751,				-- Shattershard
 							["qg"] = 147751,				-- Shattershard
@@ -480,7 +478,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Thelar Moonstrike [H Only]
-							["hordeQuestID"] = 54252,		-- Thelar Moonstrike [H]
+							["questID"] = 54252,		-- Thelar Moonstrike [H]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147435,				-- Thelar Moonstrike
 							["qg"] = 147435,				-- Thelar Moonstrike

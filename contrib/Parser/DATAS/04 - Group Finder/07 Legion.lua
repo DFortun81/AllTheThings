@@ -7,9 +7,7 @@ _.GroupFinder =
 	{
 		["tierID"] = 7,
 		["groups"] = {
-			i(140591, {			-- Shattered Satchel of Cooperation
-				i(141701), -- Selfless Glory
-			}),
+			i(140591),	-- Shattered Satchel of Cooperation
 		},
 	},
 };

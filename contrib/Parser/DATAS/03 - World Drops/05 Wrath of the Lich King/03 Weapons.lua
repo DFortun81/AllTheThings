@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
 					i(36571),	-- Splicing Axe
 					i(36572),	-- Dinged Cleaver
 					i(36573),	-- Primeval Adze
@@ -22,7 +22,7 @@ _.WorldDrops =
 					i(36583),	-- Skeletal Hacker
 					i(36584),	-- Snowy Edge
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
 					i(36585),	-- Finned Battleaxe
 					i(36586),	-- Wreaking Battleaxe
 					i(36587),	-- Taunka Axe
@@ -39,7 +39,7 @@ _.WorldDrops =
 					i(36598),	-- Scarlet Battle Axe
 					i(37811),	-- Captain Carver's Persuader
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
 					i(36613),	-- Honorable Longbow
 					i(36614),	-- Yew Bow
 					i(36615),	-- Expert's Longbow
@@ -56,7 +56,7 @@ _.WorldDrops =
 					i(36626),	-- Military Compound Bow
 					i(37809),	-- Roc-Feather Longbow
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
 					i(36627),	-- Composite Crossbow
 					i(36628),	-- Under-Arm Crossbow
 					i(36629),	-- Ferocious Crossbow
@@ -72,7 +72,7 @@ _.WorldDrops =
 					i(36639),	-- Brutal Ballista
 					i(36640),	-- Scourge Crossbow
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
 					i(35681),	-- Unrelenting Blade
 					i(36473),	-- Pioneer's Dagger
 					i(36474),	-- Engraved Dagger
@@ -112,7 +112,7 @@ _.WorldDrops =
 					}),
 					i(49227),	-- Skoll's Fang
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
 					i(36557),	-- Meat Ripper
 					i(36558),	-- Curved Scratcher
 					i(36559),	-- Prized Handscythes
@@ -129,7 +129,7 @@ _.WorldDrops =
 					i(36570),	-- Corrupted Scythes
 					i(37749),	-- Shocking Claws
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
 					i(36641),	-- Bound Musket
 					i(36642),	-- Flintlock Gun
 					i(36643),	-- Tracker's Musket
@@ -146,7 +146,7 @@ _.WorldDrops =
 					i(36654),	-- Harsh-Winter Rifle
 					i(50444),	-- Rowan's Rifle of Silver Bullets
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
 					i(36459),	-- Icy Orb
 					i(36460),	-- Northern Star
 					i(36461),	-- Demon-Skull Orb
@@ -165,7 +165,7 @@ _.WorldDrops =
 					i(37817),	-- Branch of Sinful Reprieve
 					i(37889),	-- Prison Manifest
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
 					i(35664),	-- Unknown Archaeologist's Hammer
 					i(36487),	-- Stone-Headed Gavel
 					i(36488),	-- Conifer Club
@@ -199,7 +199,7 @@ _.WorldDrops =
 					i(37808),	-- Dragonjaw Mauler
 					i(48663),	-- Tankard O' Terror
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
 					i(36501),	-- Granite Maul
 					i(36502),	-- Ungainly Mace
 					i(36503),	-- Toothless Bludgeon
@@ -216,7 +216,7 @@ _.WorldDrops =
 					i(37812),	-- Petrified Ironwood Smasher
 					i(44708),	-- Dirkee's Superstructure
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
 					i(36599),	-- Ocean Trident
 					i(36600),	-- Village Scythe
 					i(36601),	-- Patient Harpoon
@@ -233,7 +233,7 @@ _.WorldDrops =
 					i(36612),	-- Scourge War Spear
 					i(37813),	-- Banner Slicer
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
 					i(36445),	-- Riveted Shield
 					i(36446),	-- Forged-Iron Shield
 					i(36447),	-- Kaskala Buckler
@@ -253,7 +253,7 @@ _.WorldDrops =
 					i(44313),	-- Zom's Crackling Bulwark
 					i(45450),	-- Northern Barrier
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
 					i(36543),	-- Survival Stick
 					i(36544),	-- Journeyed Staff
 					i(36545),	-- Branched Stick
@@ -286,7 +286,7 @@ _.WorldDrops =
 					i(37804),	-- Bloodwood Greatstaff
 					i(37806),	-- Zabra's Misplaced Staff
 				}),
-				n(-338, { -- 1H Swords
+				n(-338, {	-- 1H Swords
 					i(36515),	-- Raider's Cutlass
 					i(36516),	-- Tribal Blade
 					i(36517),	-- Iron-Grip Shortsword
@@ -305,7 +305,7 @@ _.WorldDrops =
 					i(43611),	-- Krol Cleaver
 					i(44311),	-- Avool's Sword of Jin
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
 					i(36529),	-- Unearthed Broadsword
 					i(36530),	-- Whetted Ironblade
 					i(36531),	-- Sawtooth Greatsword
@@ -321,7 +321,7 @@ _.WorldDrops =
 					i(36541),	-- Wintry Claymore
 					i(36542),	-- Invasion Blade
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
 					i(35652),	-- Incessant Torch
 					i(36655),	-- Pearled Wand
 					i(36656),	-- Darkened Wand

@@ -89,16 +89,16 @@ _.Zones =
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1054, { -- Gao-Ran Battlefront, Townlong Steppes
+					fp(1054, {	-- Gao-Ran Battlefront, Townlong Steppes
 						["coord"] = { 74.4, 81.4 },
 					}),
-					fp(1053, { -- Longying Outpost, Townlong Steppes
+					fp(1053, {	-- Longying Outpost, Townlong Steppes
 						["coord"] = { 71, 57.2 },
 					}),
-					fp(1055, { -- Rensai's Watchpost, Townlong Steppes
+					fp(1055, {	-- Rensai's Watchpost, Townlong Steppes
 						["coord"] = { 54.2, 79 },
 					}),
-					fp(1056, { -- Shado-Pan Garrison, Townlong Steppes
+					fp(1056, {	-- Shado-Pan Garrison, Townlong Steppes
 						["coord"] = { 50, 71.8 },
 					}),
 				}),
@@ -115,25 +115,35 @@ _.Zones =
 					p(741), 	-- Silent Hedgehog
 					p(729), 	-- Tolai Hare
 					p(740), 	-- Yakrat
-					qr(q(31991, { -- Grand Master Zusshi
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qr(q(32434, { -- Burning Pandaren Spirit
+					q(31991, {	-- Grand Master Zusshi
+						["repeatable"] = true,
 						["groups"] = {
-							i(93146, { -- Pandaren Spirit Pet Supplies
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(32434, {	-- Burning Pandaren Spirit
+						["repeatable"] = true,
+						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+						["groups"] = {
+							i(93146, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
 								i(44820),	-- Red Ribbon Pet Leash
 								i(92798),	-- Pandaren Fire Spirit
 							})
 						},
-						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-					})),
+					}),
 				}),
 				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
-						desc(i(94933), "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r"),	-- Tiny Blue Carp Pet
-						desc(i(94932), "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r"),	-- Tiny Red Carp Pet
-						desc(i(94935), "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r"),	-- Tiny White Carp Pet
+					prof(356, {	-- Fishing
+						i(94933, {	-- Tiny Blue Carp Pet
+							["description"] = "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r",
+						}),
+						i(94932, {	-- Tiny Red Carp Pet
+							["description"] = "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r",
+						}),
+						i(94935, {	-- Tiny White Carp Pet
+							["description"] = "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r",
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -157,7 +167,7 @@ _.Zones =
 					}),
 					q(31065, {	-- Buried Beneath
 						["qg"] = 62274,	-- Taran Zhu
-						["sourceQuests"] = { 30980 }, -- Heroes of the Shado-Pan
+						["sourceQuests"] = { 30980 },	-- Heroes of the Shado-Pan
 					}),
 					q(31120, {	-- Cheng Bo!
 						["qg"] = 63009,	-- Master Snowdrift
@@ -177,7 +187,7 @@ _.Zones =
 					--q(31122),	-- Chose Prot Warrior
 					q(30898, {	-- Cutting the Swarm
 						["qg"] = 61066,	-- Taran Zhu
-						["sourceQuests"] = { 30895 }, -- Improvised Ammunition
+						["sourceQuests"] = { 30895 },	-- Improvised Ammunition
 					}),
 					q(31043, {	-- Dark Arts
 						["qg"] = 62304,	-- Ban Bearheart
@@ -200,7 +210,7 @@ _.Zones =
 							i(84595),	-- Farwatch Armored Helm
 						},
 						["qg"] = 61020,	-- Hawkmaster Nurong
-						["sourceQuests"] = { 30978 }, -- Hostile Skies
+						["sourceQuests"] = { 30978 },	-- Hostile Skies
 					}),
 					q(30778, {	-- Dust to Dust
 						["qg"] = 61261,	-- Ban Bearheart
@@ -218,7 +228,7 @@ _.Zones =
 							i(83745),	-- Dusklight Drape
 						},
 						["qg"] = 62436,	-- Taoshi
-						["sourceQuests"] = { 30901 }, -- Along the Southern Front
+						["sourceQuests"] = { 30901 },	-- Along the Southern Front
 					}),
 					q(30953, {-- Fallen Sentinels
 						["qg"] = 61585,	-- Yak-Keeper Kyana
@@ -251,8 +261,8 @@ _.Zones =
 					}),
 					q(30785, {	-- Gao-Ran Battlefront
 						["qg"] = 61261,	-- Ban Beartheart
-						["isBreadcrumb"] = true, -- Hidden once completed Quests at Gao-Ran Battlefront
-						["sourceQuests"] = { 30784 }, -- The Point of No Return
+						["isBreadcrumb"] = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
+						["sourceQuests"] = { 30784 },	-- The Point of No Return
 					}),
 					q(30927, {	-- Give Them Peace
 						["qg"] = 61584,	-- Sentinel Commander Qipan
@@ -289,14 +299,14 @@ _.Zones =
 					}),
 					q(30980, {	-- Heroes of the Shado-Pan
 						["qg"] = 62786,	-- Hawkmaster Nurong
-						["sourceQuests"] = { 30979 }, -- Devastation Below
+						["sourceQuests"] = { 30979 },	-- Devastation Below
 					}),
 					q(30978, {	-- Hostile Skies
 						["groups"] = {
 							i(88590),	-- Nurong's Gun
 						},
 						["qg"] = 61020,	-- Hawkmaster Nurong
-						["sourceQuests"] = { 30899 }, -- In Skilled Hands
+						["sourceQuests"] = { 30899 },	-- In Skilled Hands
 					}),
 					q(31045, {	-- Illusions Of The Past
 						["qg"] = 62304,	-- Ban Bearheart
@@ -315,7 +325,7 @@ _.Zones =
 							i(88096),	-- Palewind Pantaloons
 						},
 						["qg"] = 61066,	-- Taran Zhu
-						["sourceQuests"] = { 30893 }, -- The Endless Swarm
+						["sourceQuests"] = { 30893 },	-- The Endless Swarm
 					}),
 					q(30958, {	-- In Battle's Shadow
 						["qg"] = 61583,	-- High Adept Paosha
@@ -323,11 +333,11 @@ _.Zones =
 					}),
 					q(30777, {	-- In Search of Suna
 						["qg"] = 60687,	-- Ban Bearheart
-						["sourceQuests"] = { 30776 }, -- Jung Duk
+						["sourceQuests"] = { 30776 },	-- Jung Duk
 					}),
 					q(30899, {	-- In Skilled Hands
 						["qg"] = 62274,	-- Taran Zhu
-						["sourceQuests"] = { 30976 }, -- Joining the Hunt
+						["sourceQuests"] = { 30976 },	-- Joining the Hunt
 					}),
 					q(31049, {	-- In Sprite Of Everything
 						["qgs"] = {
@@ -343,11 +353,11 @@ _.Zones =
 					}),
 					q(30972, {	-- Joining the Fight
 						["qg"] = 62124,	-- Initiate Pao-Me
-						["sourceQuests"] = { 30971 }, -- Taking Stock
+						["sourceQuests"] = { 30971 },	-- Taking Stock
 					}),
 					q(30976, {	-- Joining the Hunt
 						["qg"] = 62736,	-- Taran Zhu
-						["sourceQuests"] = { 30975 }, -- The Taking of Dusklight Bridge
+						["sourceQuests"] = { 30975 },	-- The Taking of Dusklight Bridge
 					}),
 					q(30776, {	-- Jung Duk
 						["groups"] = {
@@ -417,7 +427,7 @@ _.Zones =
 							i(83740),	-- Sigil of Devotion
 						},
 						["qg"] = 61581,	-- Ogo the Younger
-						["sourceQuests"] = { 30924 }, -- The Wisdom of Niuzao
+						["sourceQuests"] = { 30924 },	-- The Wisdom of Niuzao
 					}),
 					q(31064, {-- Nurong and Rothek
 						["qg"] = 62274,	-- Taran Zhu
@@ -444,7 +454,7 @@ _.Zones =
 							i(88583),	-- Ban's Bag of Bombs
 						},
 						["qg"] = 60687,	-- Ban Bearheart
-						["sourceQuests"] = { 30771 }, -- Perfect Pitch
+						["sourceQuests"] = { 30771 },	-- Perfect Pitch
 					}),
 					--q(30974),	-- Raising Spirits -- Never made it out of beta
 					q(30774, {	-- Ranger Rescue
@@ -488,7 +498,7 @@ _.Zones =
 							i(83679),	-- Palewind Legguards
 						},
 						["qg"] = 60684,	-- Suna Silentstrike
-						["sourceQuests"] = { 30769 }, -- First Assault
+						["sourceQuests"] = { 30769 },	-- First Assault
 					}),
 					q(30933, {	-- Seeking Father
 						["qg"] = 65341,	-- Ku-Mo
@@ -519,7 +529,7 @@ _.Zones =
 							i(87768),	-- Reins of the Onyx Cloud Serpent
 						},
 						["qg"] = 63009,	-- Master Snowdrift
-						["sourceQuests"] = { 31266 }, -- Mogu Incursions
+						["sourceQuests"] = { 31266 },	-- Mogu Incursions
 					}),
 					q(30971, {	-- Taking Stock
 						["qg"] = 62124,	-- Initiate Pao-Me
@@ -560,7 +570,7 @@ _.Zones =
 							i(83730),	-- Battlefront Band
 						},
 						["qg"] = 61021,	-- Taoshi
-						["sourceQuests"] = { 30898 }, -- Cutting the Swarm
+						["sourceQuests"] = { 30898 },	-- Cutting the Swarm
 					}),
 					q(30959, {	-- The Big Guns
 						["qg"] = 61581,	-- Ogo the Younger
@@ -620,7 +630,7 @@ _.Zones =
 							i(83706),	-- Palewind Gauntlets
 						},
 						["qg"] = 61066,	-- Taran Zhu
-						["sourceQuests"] = { 30960 }, -- Returning from the Pass
+						["sourceQuests"] = { 30960 },	-- Returning from the Pass
 					}),
 					q(31119, {	-- The Enemy of My Enemy... Is Still My Enemy!
 						["qg"] = 63009,	-- Master Snowdrift
@@ -725,7 +735,7 @@ _.Zones =
 					}),
 					qh(32680, {	-- The Storm Gathers
 						["qg"] = 70358,	-- Scout Captain Elsia
-						["sourceQuests"] = { 32678 }, -- Thunder Calls
+						["sourceQuests"] = { 32678 },	-- Thunder Calls
 					}),
 					qa(32681, {	-- The Storm Gathers
 						["qg"] = 70360,	-- Vareesa Windrunner
@@ -752,7 +762,7 @@ _.Zones =
 					}),
 					q(31656, {	-- The Threat in the South
 						["qg"] = 62802,	-- Taoshi
-						["sourceQuests"] = { 30968 }, -- The Sha of Hatred
+						["sourceQuests"] = { 30968 },	-- The Sha of Hatred
 					}),
 					q(30787, {	-- The Torches
 						["groups"] = {
@@ -763,7 +773,7 @@ _.Zones =
 							i(84609),	-- Amulet of Longing
 						},
 						["qg"] = 60857,	-- Orbiss
-						["sourceQuests"] = { 30786 }, -- A Spear Through My Side, A Chain Through My Soul
+						["sourceQuests"] = { 30786 },	-- A Spear Through My Side, A Chain Through My Soul
 					}),
 					q(30952, {	-- The Unending Siege
 						["qg"] = 61580,	-- Ogo the Elder
@@ -965,10 +975,10 @@ _.Zones =
 						
 						
 					}),
-					n(66938, { -- Odd'nirok
-						i(90171, { -- Odd'nirok's Clamshell
-							i(90172), -- Clamshell Band
-							i(90087), -- Lobstmourne
+					n(66938, {	-- Odd'nirok
+						i(90171, {	-- Odd'nirok's Clamshell
+							i(90172),	-- Clamshell Band
+							i(90087),	-- Lobstmourne
 						}),
 					}),
 					n(50791, {	-- Siltriss the Sharpener
@@ -2243,7 +2253,7 @@ _.Zones =
 			},
 			["lvl"] = 83,
 			["maps"] = {
-				389, -- Niuzao Catacombs
+				389,	-- Niuzao Catacombs
 			},
 			["achievementID"] = 6977,
 			["description"] = "|cff66ccffTownlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.|r",

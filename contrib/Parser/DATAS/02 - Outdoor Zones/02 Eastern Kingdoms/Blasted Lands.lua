@@ -7,19 +7,19 @@ _.Zones =
 		m(17, {	-- Blasted Lands
 			["groups"] = {					
 				n(-228, {	-- Flight Paths
-					fp(604, { -- Dreadmaul Hold, Blasted Lands [H]
+					fp(604, {	-- Dreadmaul Hold, Blasted Lands [H]
 						["description"] = "Dreadmaul Hold, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 43.6, 14.2 },
 					}),
-					fp(45, { -- Nethergarde Keep, Blasted Lands [A]
+					fp(45, {	-- Nethergarde Keep, Blasted Lands [A]
 						["description"] = "Nethergarde Keep, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 61.2, 21.6 },
 					}),
-					fp(603, { -- Sunveil Excursion, Blasted Lands [H]
+					fp(603, {	-- Sunveil Excursion, Blasted Lands [H]
 						["description"] = "Sunveil Excursion, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 50.8, 72.8 },
 					}),
-					fp(602, { -- Surwich, Blasted Lands [A]
+					fp(602, {	-- Surwich, Blasted Lands [A]
 						["description"] = "Surwich, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 47, 89.2 },
 					}),
@@ -39,12 +39,12 @@ _.Zones =
 						crit(3),		-- Avenging the Rockpool
 					}),
 --]]
-					qg(42298, qa(26172, { -- A Bloodmage's Gotta Eat Too
+					qg(42298, qa(26172, {	-- A Bloodmage's Gotta Eat Too
 						i(59384),
 						i(59386),
 						i(59385),
 					})),
-					qg(7505, qh(25690, { -- A Bloodmage's Gotta Eat Too
+					qg(7505, qh(25690, {	-- A Bloodmage's Gotta Eat Too
 						i(59422),
 						i(59424),
 						i(59423),
@@ -98,13 +98,13 @@ _.Zones =
 					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 						["questID"] = 37676,
 					},
-					qg(5385, qa(25716, { -- Cultists at our Doorstep
+					qg(5385, qa(25716, {	-- Cultists at our Doorstep
 						i(59378),
 						i(59376),
 						i(59379),
 						i(59377),
 					})),
-					qg(9540, qa(25709, { -- Curtail the Darktail
+					qg(9540, qa(25709, {	-- Curtail the Darktail
 						i(59371),
 						i(59369),
 						i(59370),
@@ -136,7 +136,7 @@ _.Zones =
 					qg(42348, qh(25719)),	-- Demoniac Vessel
 					qg(42352, qa(26186)),	-- Demoniac Vessel
 --]]
-					qg(5393, qa(25711, { -- Eliminate the Okril'lon
+					qg(5393, qa(25711, {	-- Eliminate the Okril'lon
 						i(59373),
 						i(59374),
 						i(59372),
@@ -210,7 +210,9 @@ _.Zones =
 					qg(5385, qa(26157)),	-- Kasim Sharim
 					qg(79675, qh(34741)),	-- Keli'dan the Breaker
 					i(8244, {	-- Flawless Draenethyst Sphere
-						qr(q(25772)),	-- Kum'isha's Endeavors
+						q(25772, {	-- Kum'isha's Endeavors
+							["repeatable"] = true,
+						}),
 					}),
 					qg(7506, qh(25700)),	-- Loramus Thalipedes Awaits
 					qg(5393, qa(25710)),	-- Minor Distractions
@@ -277,13 +279,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36307,	-- Investigating the Invasion
 					},
-					qg(41134, qh(25682, { -- Mission Complete
+					qg(41134, qh(25682, {	-- Mission Complete
 						i(59414),
 						i(59416),
 						i(59415),
 						i(59417),
 					})),
-					qg(41354, q(25706, { -- Neptool's Revenge
+					qg(41354, q(25706, {	-- Neptool's Revenge
 						i(59403),
 						i(59404),
 					})),
@@ -292,7 +294,7 @@ _.Zones =
 					qg(7506, qh(25687)),	-- Not Just Any Body
 					qg(42298, qa(26161)),	-- Not Just Any Body
 --]]						
-					qg(41125, qh(25675, { -- Ogre Combat
+					qg(41125, qh(25675, {	-- Ogre Combat
 						i(59407),
 						i(59408),
 						i(59409),
@@ -311,7 +313,9 @@ _.Zones =
 					},
 --[[					
 					i(10593, {	-- Imperfect Draenethyst Fragment
-						qr(q(25771)),	-- One Draenei's Junk...
+						q(25771, {	-- One Draenei's Junk...
+							["repeatable"] = true,
+						}),
 					}),
 					qg(9540, qa(25708)),	-- Our Fallen Friends
 --]]					
@@ -327,7 +331,7 @@ _.Zones =
 						["coord"] = { 71.8, 48.9 },
 						["races"] = HORDE_ONLY,
 					},
-					qg(41133, qh(25678, { -- Pick Your Fate
+					qg(41133, qh(25678, {	-- Pick Your Fate
 						i(59411),
 						i(59412),
 						i(59413),
@@ -386,14 +390,14 @@ _.Zones =
 					qg(16841, qa(26175)),	-- Surwich
 					qg(41134, qh(25680)),	-- That's Not Us
 --]]					
-					qg(7506, qh(25688, { -- The Altar of Storms
+					qg(7506, qh(25688, {	-- The Altar of Storms
 						i(59428),
 						i(59425),
 						i(59427),
 						i(59429),
 						i(59426),
 					})),
-					qg(42298, qa(26162, { -- The Altar of Storms	
+					qg(42298, qa(26162, {	-- The Altar of Storms	
 						i(59390),
 						i(59387),
 						i(59389),
@@ -404,13 +408,13 @@ _.Zones =
 					qg(42298, qa(26167)),	-- The Amulet of Allistarj
 					qg(7783, qh(25697)),	-- The Amulet of Allistarj
 --]]					
-					qg(42298, qa(26169, { -- The Amulet of Grol
+					qg(42298, qa(26169, {	-- The Amulet of Grol
 						i(59381),
 						i(59382),
 						i(59380),
 						i(59383),
 					})),
-					qg(7783, qh(25699, { -- The Amulet of Grol
+					qg(7783, qh(25699, {	-- The Amulet of Grol
 						i(59419),
 						i(59420),
 						i(59418),
@@ -432,13 +436,13 @@ _.Zones =
 					{	-- The Dark Portal (tracking quest?)
 						["questID"] = 37187,
 					},
-					qg(42349, qa(26187, { -- The Downfall of Marl Wormthorn
+					qg(42349, qa(26187, {	-- The Downfall of Marl Wormthorn
 						i(59400),
 						i(59402),
 						i(59401),
 						i(59399),
 					})),
-					qg(42344, qh(25720, { -- The Downfall of Marl Wormthorn
+					qg(42344, qh(25720, {	-- The Downfall of Marl Wormthorn
 						i(59439),
 						i(59438),
 						i(59440),
@@ -449,7 +453,9 @@ _.Zones =
 					qg(42298, qa(26170)),	-- The Final Ritual
 					qg(42298, qa(26159)),	-- The First Step
 					qg(7506, qh(25685)),	-- The First Step
-					desc(q(25707), "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches."),	-- The Future of the Rockpool
+					q(25707, {	-- The Future of the Rockpool
+						["description"] = "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
+					}),
 					qg(19254, qh(25696)),	-- The Sunveil Excursion
 					qg(41159, qh(25692)),	-- The Vile Blood of Demons
 					qg(42299, qa(26165)),	-- The Vile Blood of Demons
@@ -521,12 +527,12 @@ _.Zones =
 						},
 					},
 --					qg(5393, qa(25714)),	-- Watcher Mahar Ba (add'l QG 9540)
-					qg(16841, qa(26174, { -- Watching Our Back
+					qg(16841, qa(26174, {	-- Watching Our Back
 						i(59394),
 						i(59393),
 						i(59395),
 					})),
-					qg(19254, qh(25695, { -- Watching Our Back
+					qg(19254, qh(25695, {	-- Watching Our Back
 						i(59433),
 						i(59432),
 						i(59431),
@@ -1137,123 +1143,134 @@ _.Zones =
 				n(0,    {	-- Zone Drop
 					i(10593, {	-- Imperfect Draenethyst Fragment
 						["groups"] = {
-							qr(q(25771, {	-- One Draenei's Junk...
-								i(12122, { 	-- Kum'isha's Junk
-									dr(03.0, i(9940)),	-- Abjurer's Hood
-									dr(03.0, i(9942)),	-- Abjurer's Pants
-									dr(03.0, i(10194)),	-- Crusader's Cloak
-									dr(03.0, i(10131)),	-- Revenant Boots
-									dr(03.0, i(10129)),	-- Revenant Gauntlets
-									dr(02.0, i(7527)),	-- Cabalist Chestpiece
-									dr(02.0, i(9953)),	-- Chieftain's Headdress
-									dr(02.0, i(9955)),	-- Chieftain's Shoulders
-									dr(02.0, i(10059)),	-- Duskwoven Bracers
-									dr(02.0, i(10058)),	-- Duskwoven Sandals
-									dr(02.0, i(7517)),	-- Gossamer Tunic
-									dr(02.0, i(10080)),	-- Lord's Gauntlets
-									dr(02.0, i(10081)),	-- Lord's Girdle
-									dr(02.0, i(10208)),	-- Overlord's Legplates
-									dr(02.0, i(10209)),	-- Overlord's Spaulders
-									dr(02.0, i(10130)),	-- Revenant Girdle
-									dr(02.0, i(9957)),	-- Warmonger's Chestpiece
-									dr(01.6, i(9948)),	-- Chieftain's Boots
-									dr(01.6, i(10060)),	-- Duskwoven Cape
-									dr(01.6, i(9965)),	-- Warmonger's Pauldrons
-									dr(01.5, i(10127)),	-- Revenant Bracers
-									dr(01.5, i(10067)),	-- Righteous Waistguard
-									dr(01.5, i(10190)),	-- Swashbuckler's Belt
-									dr(01.4, i(9941)),	-- Abjurer's Mantle
-									dr(01.4, i(10086)),	-- Gothic Plate Armor
-									dr(01.3, i(9936)),	-- Abjurer's Boots
-									dr(01.3, i(9939)),	-- Abjurer's Gloves
-									dr(01.3, i(9952)),	-- Chieftain's Gloves
-									dr(01.3, i(10066)),	-- Duskwoven Sash
-									dr(01.3, i(10207)),	-- Overlord's Crown
-									dr(01.3, i(10205)),	-- Overlord's Gauntlets
-									dr(01.3, i(10132)),	-- Revenant Helmet
-									dr(01.3, i(10069)),	-- Righteous Bracers
-									dr(01.3, i(10075)),	-- Righteous Spaulders
-									dr(01.3, i(9964)),	-- Warmonger's Leggings
-									dr(01.2, i(10191)),	-- Crusader's Armguards
-									dr(01.2, i(10243)),	-- Heavy Lamellar Girdle
-									dr(01.2, i(10076)),	-- Lord's Armguards
-									dr(01.2, i(10133)),	-- Revenant Leggings
-									dr(01.2, i(10134)),	-- Revenant Shoulders
-									dr(01.2, i(10071)),	-- Righteous Cloak
-									dr(01.1, i(9954)),	-- Chieftain's Leggings
-									dr(01.1, i(10062)),	-- Duskwoven Gloves
-									dr(01.1, i(10061)),	-- Duskwoven Turban
-									dr(01.1, i(10083)),	-- Lord's Crown
-									dr(01.1, i(10068)),	-- Righteous Boots
-									dr(01.1, i(10185)),	-- Swashbuckler's Cape
-									dr(01.0, i(10063)),	-- Duskwoven Amice
-									dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
-									dr(01.0, i(10084)),	-- Lord's Legguards
-									dr(01.1, i(10185)),	-- Swashbuckler's Cape
-									dr(01.0, i(10063)),	-- Duskwoven Amice
-									dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
-									dr(01.0, i(10084)),	-- Lord's Legguards	
-									dr(01.0, i(10072)),	-- Righteous Gloves
-								}),
-							})),
+							q(25771, {	-- One Draenei's Junk...
+								["repeatable"] = true,
+								["groups"] = {
+									i(12122, { 	-- Kum'isha's Junk
+										dr(03.0, i(9940)),	-- Abjurer's Hood
+										dr(03.0, i(9942)),	-- Abjurer's Pants
+										dr(03.0, i(10194)),	-- Crusader's Cloak
+										dr(03.0, i(10131)),	-- Revenant Boots
+										dr(03.0, i(10129)),	-- Revenant Gauntlets
+										dr(02.0, i(7527)),	-- Cabalist Chestpiece
+										dr(02.0, i(9953)),	-- Chieftain's Headdress
+										dr(02.0, i(9955)),	-- Chieftain's Shoulders
+										dr(02.0, i(10059)),	-- Duskwoven Bracers
+										dr(02.0, i(10058)),	-- Duskwoven Sandals
+										dr(02.0, i(7517)),	-- Gossamer Tunic
+										dr(02.0, i(10080)),	-- Lord's Gauntlets
+										dr(02.0, i(10081)),	-- Lord's Girdle
+										dr(02.0, i(10208)),	-- Overlord's Legplates
+										dr(02.0, i(10209)),	-- Overlord's Spaulders
+										dr(02.0, i(10130)),	-- Revenant Girdle
+										dr(02.0, i(9957)),	-- Warmonger's Chestpiece
+										dr(01.6, i(9948)),	-- Chieftain's Boots
+										dr(01.6, i(10060)),	-- Duskwoven Cape
+										dr(01.6, i(9965)),	-- Warmonger's Pauldrons
+										dr(01.5, i(10127)),	-- Revenant Bracers
+										dr(01.5, i(10067)),	-- Righteous Waistguard
+										dr(01.5, i(10190)),	-- Swashbuckler's Belt
+										dr(01.4, i(9941)),	-- Abjurer's Mantle
+										dr(01.4, i(10086)),	-- Gothic Plate Armor
+										dr(01.3, i(9936)),	-- Abjurer's Boots
+										dr(01.3, i(9939)),	-- Abjurer's Gloves
+										dr(01.3, i(9952)),	-- Chieftain's Gloves
+										dr(01.3, i(10066)),	-- Duskwoven Sash
+										dr(01.3, i(10207)),	-- Overlord's Crown
+										dr(01.3, i(10205)),	-- Overlord's Gauntlets
+										dr(01.3, i(10132)),	-- Revenant Helmet
+										dr(01.3, i(10069)),	-- Righteous Bracers
+										dr(01.3, i(10075)),	-- Righteous Spaulders
+										dr(01.3, i(9964)),	-- Warmonger's Leggings
+										dr(01.2, i(10191)),	-- Crusader's Armguards
+										dr(01.2, i(10243)),	-- Heavy Lamellar Girdle
+										dr(01.2, i(10076)),	-- Lord's Armguards
+										dr(01.2, i(10133)),	-- Revenant Leggings
+										dr(01.2, i(10134)),	-- Revenant Shoulders
+										dr(01.2, i(10071)),	-- Righteous Cloak
+										dr(01.1, i(9954)),	-- Chieftain's Leggings
+										dr(01.1, i(10062)),	-- Duskwoven Gloves
+										dr(01.1, i(10061)),	-- Duskwoven Turban
+										dr(01.1, i(10083)),	-- Lord's Crown
+										dr(01.1, i(10068)),	-- Righteous Boots
+										dr(01.1, i(10185)),	-- Swashbuckler's Cape
+										dr(01.0, i(10063)),	-- Duskwoven Amice
+										dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
+										dr(01.0, i(10084)),	-- Lord's Legguards
+										dr(01.1, i(10185)),	-- Swashbuckler's Cape
+										dr(01.0, i(10063)),	-- Duskwoven Amice
+										dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
+										dr(01.0, i(10084)),	-- Lord's Legguards	
+										dr(01.0, i(10072)),	-- Righteous Gloves
+									}),
+								},
+							}),
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",
 					}),
 					i(8244,  {	-- Flawless Draenethyst Sphere
 						["groups"] = {
-							qr(q(25772, { 	-- Kum'isha's Endeavors
-								i(10752, { 	-- Emerald Encrusted Chest
-									dr(03.0, i(13009)),	-- Cow King's Hide
-									dr(03.0, i(13008)),	-- Dalewind Trousers
-									dr(03.0, i(6660)),	-- Julie's Dagger
-									dr(03.0, i(13144)),	-- Serenity Belt
-									dr(03.0, i(754)),	-- Shortsword of Vengeance
-									dr(03.0, i(13052)),	-- Warmonger
-									dr(02.0, i(13014)),	-- Axe of Rin'ji
-									dr(02.0, i(13027)),	-- Bonesnapper
-									dr(02.0, i(13102)),	-- Cassandra's Grace
-									dr(02.0, i(13122)),	-- Dark Phantom Cape
-									dr(02.0, i(2564)),	-- Elven Spirit Claws
-									dr(02.0, i(13018)),	-- Executioner's Cleaver
-									dr(02.0, i(9433)),	-- Forgotten Wraps
-									dr(02.0, i(13074)),	-- Golem Shard Leggings
-									dr(02.0, i(13039)),	-- Skull Splitting Crossbow
-									dr(02.0, i(1607)),	-- Soulkeeper
-									dr(02.0, i(13066)),	-- Wyrmslayer Spaulders
-									dr(01.9, i(13067)),	-- Hydralick Armor
-									dr(01.9, i(13021)),	-- Needle Threader
-									dr(01.8, i(1203)),	-- Aegis of Stormwind
-									dr(01.8, i(13134)),	-- Belt of the Gladiator
-									dr(01.8, i(13109)),	-- Blackflame Cape
-									dr(01.8, i(13043)),	-- Blade of the Titans
-									dr(01.8, i(13046)),	-- Blanchard's Stout
-									dr(01.8, i(13055)),	-- Bonechewer
-									dr(01.8, i(13076)),	-- Giantslayer Bracers
-									dr(01.8, i(13073)),	-- Mugthol's Helm
-									dr(01.8, i(13035)),	-- Serpent Slicer
-									dr(01.8, i(1721)),	-- Viking Warhammer
-									dr(01.8, i(13065)),	-- Wand of Allistarj
-									dr(01.8, i(4091)),	-- Widowmaker
-									dr(01.7, i(13120)),	-- Deepfury Bracers
-									dr(01.7, i(13125)),	-- Elven Chain Boots
-									dr(01.7, i(13022)),	-- Gryphonwing Long Bow
-									dr(01.7, i(8190)),	-- Hanzo Sword
-									dr(01.7, i(13082)),	-- Mountainside Buckler
-									dr(01.7, i(4090)),	-- Mug O' Hurt
-									dr(01.7, i(13111)),	-- Sandals of the Insurgent
-									dr(01.7, i(13059)),	-- Stoneraven
-									dr(01.7, i(13112)),	-- Winged Helm
-									dr(01.6, i(13126)),	-- Battlecaller Gauntlets
-									dr(01.6, i(13139)),	-- Guttbuster
-									dr(01.6, i(13128)),	-- High Bergg Helm
-									dr(01.6, i(1720)),	-- Tanglewood Staff
-									dr(01.5, i(	13030)),	-- Basilisk Bone
-									i(17050), 				-- Chan's Imperial Robes
-								}),
-							})),
+							q(25772, { 	-- Kum'isha's Endeavors
+								["repeatable"] = true,
+								["groups"] = {
+									i(10752, { 	-- Emerald Encrusted Chest
+										dr(03.0, i(13009)),	-- Cow King's Hide
+										dr(03.0, i(13008)),	-- Dalewind Trousers
+										dr(03.0, i(6660)),	-- Julie's Dagger
+										dr(03.0, i(13144)),	-- Serenity Belt
+										dr(03.0, i(754)),	-- Shortsword of Vengeance
+										dr(03.0, i(13052)),	-- Warmonger
+										dr(02.0, i(13014)),	-- Axe of Rin'ji
+										dr(02.0, i(13027)),	-- Bonesnapper
+										dr(02.0, i(13102)),	-- Cassandra's Grace
+										dr(02.0, i(13122)),	-- Dark Phantom Cape
+										dr(02.0, i(2564)),	-- Elven Spirit Claws
+										dr(02.0, i(13018)),	-- Executioner's Cleaver
+										dr(02.0, i(9433)),	-- Forgotten Wraps
+										dr(02.0, i(13074)),	-- Golem Shard Leggings
+										dr(02.0, i(13039)),	-- Skull Splitting Crossbow
+										dr(02.0, i(1607)),	-- Soulkeeper
+										dr(02.0, i(13066)),	-- Wyrmslayer Spaulders
+										dr(01.9, i(13067)),	-- Hydralick Armor
+										dr(01.9, i(13021)),	-- Needle Threader
+										dr(01.8, i(1203)),	-- Aegis of Stormwind
+										dr(01.8, i(13134)),	-- Belt of the Gladiator
+										dr(01.8, i(13109)),	-- Blackflame Cape
+										dr(01.8, i(13043)),	-- Blade of the Titans
+										dr(01.8, i(13046)),	-- Blanchard's Stout
+										dr(01.8, i(13055)),	-- Bonechewer
+										dr(01.8, i(13076)),	-- Giantslayer Bracers
+										dr(01.8, i(13073)),	-- Mugthol's Helm
+										dr(01.8, i(13035)),	-- Serpent Slicer
+										dr(01.8, i(1721)),	-- Viking Warhammer
+										dr(01.8, i(13065)),	-- Wand of Allistarj
+										dr(01.8, i(4091)),	-- Widowmaker
+										dr(01.7, i(13120)),	-- Deepfury Bracers
+										dr(01.7, i(13125)),	-- Elven Chain Boots
+										dr(01.7, i(13022)),	-- Gryphonwing Long Bow
+										dr(01.7, i(8190)),	-- Hanzo Sword
+										dr(01.7, i(13082)),	-- Mountainside Buckler
+										dr(01.7, i(4090)),	-- Mug O' Hurt
+										dr(01.7, i(13111)),	-- Sandals of the Insurgent
+										dr(01.7, i(13059)),	-- Stoneraven
+										dr(01.7, i(13112)),	-- Winged Helm
+										dr(01.6, i(13126)),	-- Battlecaller Gauntlets
+										dr(01.6, i(13139)),	-- Guttbuster
+										dr(01.6, i(13128)),	-- High Bergg Helm
+										dr(01.6, i(1720)),	-- Tanglewood Staff
+										dr(01.5, i(	13030)),	-- Basilisk Bone
+										i(17050), 				-- Chan's Imperial Robes
+									}),
+								},
+							}),
 						},
 						["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",							
 					}),
+					un(7, i(15727, {	-- Pattern: Heavy Scorpid Vest
+						["crs"] = {
+							6005,	-- Shadowsworn Thug
+						},
+					})),
 					i(118675),	-- Time-Locked Box Bronze Whelpling
 				}),
 				n(-40,  {	-- Legacy

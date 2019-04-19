@@ -40,7 +40,9 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63075, qa(31548)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
+					qg(63075, qa(31548, {	-- Learning the Ropes
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					})),
 					qg(63075, qa(31549)),	-- On The Mend
 					qg(63075, qa(31822)),	-- Level Up!
 					qg(63075, qa(31551)), 	-- Got one!
@@ -52,10 +54,10 @@ _.Zones =
 --]]
 					o(2059, {	-- A Dwarven Corpse
 						qa(26855, {	-- A Pilot's Revenge
-							i( 57560),	-- Mangy Claw Mitts
-							i( 57566),	-- Siege Engineer's Belt
-							i( 57562),	-- Hammerfoot's Plate Leggings
-							i( 57563),	-- South Gate Blunderbuss
+							i(57560),	-- Mangy Claw Mitts
+							i(57566),	-- Siege Engineer's Belt
+							i(57562),	-- Hammerfoot's Plate Leggings
+							i(57563),	-- South Gate Blunderbuss
 							i(131612),	-- Siege Engineer's Waistband
 						}),
 					}),
@@ -151,10 +153,12 @@ _.Zones =
 --					q(43284),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 --					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 					qg(41578, qa(25932)),	-- It's Raid Night Every Night
-					desc(qa(32663), "This quest is available to Gnomes upon reaching level 20.", {	-- Learn To Ride
+					qa(32663, {	-- Learn To Ride
+						["description"] = "This quest is available to Gnomes upon reaching level 20.",
 						["races"] = {7},
 					}),
-					desc(qa(32662), "This quest is available to Dwarves upon reaching level 20.", {	-- Learn To Ride
+					qa(32662, {	-- Learn To Ride
+						["description"] = "This quest is available to Dwarves upon reaching level 20.",
 						["races"] = {3},
 					}),
 --					qa(14084),	-- Learn to Ride in Dun Morogh (REMOVED)
@@ -654,7 +658,9 @@ _.Zones =
 			["lvl"] = 1,	
 			["achievementID"] = 627,
 			["maps"] = {
-				31,	-- Coldridge Valley
+				28,		-- Coldridge Pass
+				29,		-- The Grizzled Den
+				31,		-- Coldridge Valley
 				428,	-- Frostmane Hovel (Coldridge Valley)
 				523,	-- Dun Morogh
 			},

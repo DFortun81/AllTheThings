@@ -70,21 +70,77 @@ _.Zones =
 						h(ach(12754)),	-- Zandalari Fisherman
 						h(ach(12737)),	-- Zandalari Master of All
 						--]]
-						q(51962, {	-- Lumbering Away
+						qh(51962, {	-- Lumbering Away
+							["description"] = "Requires 50 Zandalari Mining",
+							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
 							["groups"] = {
 								recipe(253334),	-- Monelite Deposit Rank 2
 							},
+						}),
+						qh(52014, {	-- Ritualistic Prepartions
 							["description"] = "Requires 50 Zandalari Mining",
 							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
-							["races"] = HORDE_ONLY,
-						}),
-						q(52014, {	-- Ritualistic Prepartions
 							["groups"] = {
 								recipe(253337),	-- Storm Silver Deposit Rank 2
 							},
-							["description"] = "Requires 50 Zandalari Mining",
-							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
-							["races"] = HORDE_ONLY,
+						}),
+						-- Alchemy Questline
+						qh(50112, {	-- Casting the First Stone
+							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+							["coord"] = { 42.2, 38.0, 1165 },
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50113, {	-- Ocular Extracts
+							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+							["coord"] = { 42.2, 38.0, 1165 },
+							["sourceQuest"] = 50112,	-- Casting the First Stone
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50115, {	-- Changing the Scenery
+							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+							["coord"] = { 42.2, 38.0, 1165 },
+							["sourceQuest"] = 50112,	-- Casting the First Stone
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50116, {	-- A Possible Solution
+							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+							["coord"] = { 42.2, 38.0, 1165 },
+							["sourceQuests"] = { 
+								50115,	-- Changing the Scenery
+								50113,	-- Ocular Extracts
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50117, {	-- A Deathly Draught
+							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+							["coord"] = { 65.2, 36.9, 863 },
+							["sourceQuest"] = 50116,
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50118, {	-- A Stone's Throw
+							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+							["coord"] = { 65.2, 36.9, 863 },
+							["sourceQuest"] = 50116,
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qh(50119, {	-- Chemically Compounded
+							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+							["coord"] = { 65.2, 36.9, 863 },
+							["sourceQuests"] = { 
+								50117,	-- A Deathly Draught
+								50118,	-- A Stone's Throw	
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						o(280957, {	-- Zukashi's Satchel
+							qh(50120, {	-- A Recipe for Success
+								["coord"] = { 62.9, 28.9, 863 },
+								["sourceQuest"] = 50119,
+								["requireSkill"] = 171,	-- Alchemy
+								["groups"] = {
+									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+								},	
+							}),
 						}),
 					},
 				}),

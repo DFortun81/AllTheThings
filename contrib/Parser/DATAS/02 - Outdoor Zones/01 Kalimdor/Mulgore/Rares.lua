@@ -8,13 +8,17 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares
 					n(3068, {	-- Mazzranache
+						["u"] = 43,
+						["coord"] = { 50.4, 42.6, 7 },
 						["groups"] = {
 							un(7, i(4861)),	-- Sleek Feathered Tunic
 						},
-						["u"] = 43,
-						["coord"] = { 50.4, 42.6 },
 					}),
 					n(5785, {	-- Sister Hatelash
+						["coords"] = {
+							{ 53.4, 12.6, 7 },
+							{ 32.6, 24.0, 7 },
+						},
 						["groups"] = {
 							i(68762),	-- Imbued Cadet Cloak
 							i(68748),	-- Imbued Disciple's Cloak
@@ -42,12 +46,15 @@ _.Zones =
 							i(68761),	-- Imbued Infantry Boots
 							i(68758),	-- Imbued Pioneer Boots
 						},
-						["coords"] = {
-							{ 53.4, 12.6 },
-							{ 32.6, 24.0 },
-						},
 					}),
 					n(5807, {	-- The Rake
+						["coords"] = {
+							{ 50.6, 26.6, 7 },
+							{ 55.6, 24.4, 7 },
+							{ 54.4, 20.2, 7 },
+							{ 49.6, 22.8, 7 },
+						},
+						["description"] = "Patrols in a large circle south-east of Camp Sungraze.",
 						["groups"] = {
 							i(68762),	-- Imbued Cadet Cloak
 							i(68748),	-- Imbued Disciple's Cloak
@@ -70,13 +77,6 @@ _.Zones =
 							i(6337),	-- Infantry Leggings
 							i(6269),	-- Pioneer Trousers
 						},
-						["coords"] = {
-							{ 50.6, 26.6 },
-							{ 55.6, 24.4 },
-							{ 54.4, 20.2 },
-							{ 49.6, 22.8 },
-						},
-						["description"] = "Patrols in a large circle south-east of Camp Sungraze.",
 					}),
 				}),
 			},

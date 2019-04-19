@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10002, { -- Classic
+			n(-10002, {	-- Classic
 				["groups"] = {
 					ach(632),	-- Blackfathom Deeps
 					ach(642),	-- Blackrock Depths

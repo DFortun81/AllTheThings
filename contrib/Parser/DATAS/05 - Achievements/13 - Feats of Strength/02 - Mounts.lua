@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-10031, { -- Mounts
+			n(-10031, {	-- Mounts
 				["groups"] = {
 					un(24, ach(3496)),	-- A Brew-FAST Mount
 					un(2, ach(430)),	-- Amani War Bear

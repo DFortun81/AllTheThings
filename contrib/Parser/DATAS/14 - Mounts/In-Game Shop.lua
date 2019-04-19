@@ -10,6 +10,7 @@ _.Mounts =
 		un(35, i(97989)),	-- Enchanted Fey Dragon
 		un(35, i(112327)),	-- Grinning Reaver
 		un(35, i(78924)),	-- Heart of the Aspects
+		un(35, i(166774)),	-- Hogrus, Swine of Good Fortune
 		un(35, i(107951)),	-- Iron Skyreaver
 		un(35, i(147901)),	-- Luminous Starseeker
 		un(35, i(122469)),	-- Mystic Runesaber

@@ -5,10 +5,11 @@ _.PetJournal =
 {
 	pa(239, { 	-- Flying
 		p(1708),	-- Albatross Chick
-		a(p(2566)), -- Albatross Hatchling
+		a(p(2566)),	-- Albatross Hatchling
 		p(1984),	-- Albino Buzzard
 		p(2555), 	-- Albino Duskwatcher
 		a(p(331)),	-- Alliance Balloon (Alliance)
+		p(2586),	-- Amberglow Stinger
 		p(732),		-- Amber Moth
 		p(1465),	-- Amberbarb Wisp
 		p(52),		-- Ancona Chicken
@@ -38,7 +39,7 @@ _.PetJournal =
 		p(2527),	-- Child of Pa'ku
 		p(646),		-- Chicken
 		p(1914),	-- Coastal Sandpiper
-		a(p(2568)), -- Cobalt Raven
+		a(p(2568)),	-- Cobalt Raven
 		p(47),		-- Cockatiel
 		a(p(2405)),	-- Corlain Falcon
 		p(1997),	-- Crackers
@@ -97,6 +98,7 @@ _.PetJournal =
 		p(1762),	-- Hog-Nosed Bat
 		p(2379),	-- Honey Bee
 		h(p(332)),	-- Horde Balloon (Horde)
+		p(2484),	-- Horse Balloon
 		p(49),		-- Hyacinth Macaw
 		p(1532),	-- Ikky
 		p(534),		-- Imperial Eagle Chick
@@ -105,6 +107,7 @@ _.PetJournal =
 		p(1202),	-- Ji-Kun Hatchling
 		p(1469),	-- Junglebeak
 		p(1597),	-- Kaliri Hatchling
+		p(2585),	-- Kor'thik Swarmling
 		p(2390),	-- Leafy Flutterwing
 		p(2552),	-- Leatherwing Screecher
 		p(1713),	-- Long-Eared Owl
@@ -112,6 +115,7 @@ _.PetJournal =
 		p(1403),	-- Mechanical Axebeak
 		p(722),		-- Mei Li Sparkler
 		p(149),		-- Miniwing
+		p(2483),	-- Murloc Balloon
 		p(1514),	-- Mystical Spring Bouquet
 		p(186),		-- Nether Ray Fry
 		p(1715),	-- Nightwatch Swooper
@@ -156,6 +160,7 @@ _.PetJournal =
 		p(2441),	-- Squawkling
 		p(1546),	-- Stormwing
 		p(1570),	-- Sunfire Kaliri
+		p(2473),	-- Sunscale Hatchling
 		p(402),		-- Swamp Moth
 		p(1590),	-- Swamplighter Firelfy
 		p(728),		-- Szechuan Chicken
@@ -179,6 +184,7 @@ _.PetJournal =
 		p(141),		-- White Moth
 		p(195),		-- White Tickbird Hatchling
 		p(548),		-- Wildhammer Gryphon Hatchling
+		p(2482),	-- Wolf Balloon
 		p(1463),	-- Wood Wasp
 		p(140),		-- Yellow Moth
 		p(2000),	-- Young Venomfang

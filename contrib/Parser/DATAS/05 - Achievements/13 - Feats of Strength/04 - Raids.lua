@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-10044, { -- Raids
+			n(-10044, {	-- Raids
 				["groups"] = {
 					un(2, a(ach(4156, {	-- A Tribute to Immortality (Alliance)
 						un(2, a(i(49096))),	-- Crusader's White Warhorse

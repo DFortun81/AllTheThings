@@ -12,7 +12,7 @@ _.Zones =
 					{	-- The Scarlet Enclave
 						["mapID"] = 124,
 						["g"] = {
-							n(-17, { -- Quests
+							n(-17, {	-- Quests
 								["classes"] = {
 									6,	-- Death Knight Only
 								},
@@ -169,6 +169,11 @@ _.Zones =
 										["qg"] = 25462,	-- The Lich King
 										["coord"] = { 51.3, 35.2, 124 },
 										["sourceQuest"] = 12641,	-- Death Comes From On High
+										["groups"] = {
+											{	-- Bladed Ebon Amulet
+												["itemID"] = 38662,	-- Bladed Ebon Amulet
+											},
+										},
 									},
 									{	-- The Power of Blood, Frost and Unholy
 										["questID"] = 12849,

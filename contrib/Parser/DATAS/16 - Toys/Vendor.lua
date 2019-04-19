@@ -5,10 +5,12 @@ _.Toys =
 {
 	n(-2,  { 	-- Vendor
 		i(163211),		-- Akunda's Firesticks
+		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
 			["classes"] = {12},
 		}),
+		i(168014),		-- Banner of the Burning Blade
 		i(120857, {		-- Barrel of Bandanas -- only rogue
 			["classes"] = {4},
 		}),
@@ -131,7 +133,9 @@ _.Toys =
 			["classes"] = {7},
 		}),
 		i(131814),		-- Whitewater Carp
-		i(97919),		-- Whole-Body Shrinka'
+		i(97919, {		-- Whole-Body Shrinka'
+			["description"] = "Use this toy when you encounter a mob you need to dps slowly, such as Exarch Maladaar in Auchenai Crypts.",
+		}),
 		i(119212),		-- Winning Hand
 		i(98552), 		-- Xan'tish's Flute
 		i(156649),		-- Zandalari Effigy Amulet

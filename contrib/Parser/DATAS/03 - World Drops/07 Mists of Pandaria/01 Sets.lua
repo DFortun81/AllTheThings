@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-1000, { -- Sets
+			n(-1000, {	-- Sets
 				i(94056),	-- Battered Saurscale Belt
 				i(94057),	-- Battered Saurscale Boots
 				i(94055),	-- Battered Saurscale Bracers

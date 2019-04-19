@@ -15,7 +15,7 @@ _.Zones =
 								qg(15895, q(8883)),	-- Valadar Starsong
 							}),
 						},
-						["achievementID"] = 913, -- To Honor One's Elders
+						["achievementID"] = 913,	-- To Honor One's Elders
 						["u"] = 17,
 					}),
 					n(-50, {     -- Love is in the Air
@@ -28,13 +28,13 @@ _.Zones =
 								qg(38293, qa(24804)),	-- Uncommon Scents
 							}),
 							n(-2, { 	-- Vendors
-								n(37674, { -- Lovely Merchant <Crown Chemical Co.>
-									i(50161, { -- Dinner Suit Box
+								n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
+									i(50161, {	-- Dinner Suit Box
 										i(151765),	-- Blue Dinner Suit
 										i(151764),	-- Purple Dinner Suit
 										i(151766),	-- Red Dinner Suit
 									}),
-									i(50160, { -- Lovely Dress Box
+									i(50160, {	-- Lovely Dress Box
 										i(151770),	-- Lovely Black Dress
 										i(151768),	-- Lovely Blue Dress
 										i(151767),	-- Lovely Purple Dress
@@ -58,7 +58,7 @@ _.Zones =
 								qg(19171, qa(13484)),	-- Spring Collectors 
 							}),
 						},
-						["achievementID"] = 2798, -- Noble Gardener
+						["achievementID"] = 2798,	-- Noble Gardener
 						["u"] = 19,
 					}),
 					n(-56, {     -- Brewfest
@@ -67,7 +67,7 @@ _.Zones =
 								qg(19171, qa(11441)),	-- Brewfest!
 							}),
 						},
-						["achievementID"] = 1683, -- Brewmaster
+						["achievementID"] = 1683,	-- Brewmaster
 						["u"] = 24,
 					}),
 					n(-60, {     -- Pilgrim's Bounty
@@ -90,16 +90,16 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 3478, -- Pilgrim
+						["achievementID"] = 3478,	-- Pilgrim
 						["u"] = 28,
 					}),
 					n(-61, {     -- Feast of Winter Veil
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(23010, qa(7022)), -- Greatfather Winter is Here!
+								qg(23010, qa(7022)),	-- Greatfather Winter is Here!
 							}),	
-							n(-2, { -- Vendors
-								n(23010, { -- Wolgren Jinglepocket
+							n(-2, {	-- Vendors
+								n(23010, {	-- Wolgren Jinglepocket
 									un(29, i(34319)),	-- Pattern: Red Winter Clothes
 									un(29, i(34262)),	-- Pattern: Winter Boots
 									un(29, i(17200)),	-- Recipe: Gingerbread Cookie
@@ -109,7 +109,7 @@ _.Zones =
 								}),
 							}),
 						},
-						["achievementID"] = 1691, -- Merrymaker
+						["achievementID"] = 1691,	-- Merrymaker
 						["u"] = 29,
 					}),
 				}),

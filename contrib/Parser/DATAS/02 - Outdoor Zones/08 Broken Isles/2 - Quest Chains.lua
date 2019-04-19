@@ -4,63 +4,63 @@
 _.Zones =
 {
 	m(619, { 	-- The Broken Isles
-		n(-171, { -- Quest Chains
+		n(-171, {	-- Quest Chains
 			["groups"] = {
-				n(-4, { -- Achievements
-					ach(11427, { -- No Shellfish Endeavor
-						i(143660), -- Mrgrglhjorn
+				n(-4, {	-- Achievements
+					ach(11427, {	-- No Shellfish Endeavor
+						i(143660),	-- Mrgrglhjorn
 					}),
 				}),
 				n(-170, {	-- Balance of Power
 					["groups"] = {
-						q(43496, { -- The Power Within
+						q(43496, {	-- The Power Within
 						  ["classes"] = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12},
 						  ["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna."
 						  }),
-						q(43501, { -- The Power Within
+						q(43501, {	-- The Power Within
 						  ["classes"] = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12},
 						  ["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna."
 						  }),
-						q(43503, { -- The Power Within
+						q(43503, {	-- The Power Within
 						  ["classes"] = {8},
 						  ["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna."
 						  }),
-						q(43505, { -- The Power Within
+						q(43505, {	-- The Power Within
 						  ["classes"] = {8},
 						  ["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna." -- NOTE: This quest does not flag properly when the other version is completed.
 						}),
-						q(40668), -- The Heart of Zin-Azshari
-						q(43514), -- A Vainglorious Past
-						q(43517), -- Fallen Power
-						q(43518), -- Tempering Darkness
-						q(43519), -- Lucid Strength
-						--q(43581), -- The Wisdom of Patience NOTE: This quest was removed when Emerald Nightmare opened
-						q(43520), -- In Nightmares
-						q(43521), -- Essence of Power
-						q(43522), -- Essential Consumption
-						q(43523, { -- Repaid Debt
+						q(40668),	-- The Heart of Zin-Azshari
+						q(43514),	-- A Vainglorious Past
+						q(43517),	-- Fallen Power
+						q(43518),	-- Tempering Darkness
+						q(43519),	-- Lucid Strength
+						--q(43581),	-- The Wisdom of Patience NOTE: This quest was removed when Emerald Nightmare opened
+						q(43520),	-- In Nightmares
+						q(43521),	-- Essence of Power
+						q(43522),	-- Essential Consumption
+						q(43523, {	-- Repaid Debt
 							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar."
 						  }),
-						q(43527, { -- Saving the Guard
+						q(43527, {	-- Saving the Guard
 							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar."
 						  }),
-						q(40673), -- Lost Knowledge
-						q(43525), -- Vault of the Wardens: Borrowing Without Asking
-						q(40675), -- The Arcway: Rite of the Captain
-						q(43524), -- Court of Stars: Literary Perfection
-						q(40678), -- Twisted Power
-						q(43526), -- A True Test
-						q(40603), -- Seeking the Valkyra
-						q(40608), -- The Mark
-						q(40613), -- Maw of Souls: Retrieving the Svalnguard
-						q(40614), -- A Feast Fit for Odyn
-						q(40672), -- Neltharion's Lair: Presentation is Key
-						q(40615), -- Halls of Valor: Odyn's Blessing
-						q(43528), -- Planning the Assault NOTE: This quest was removed when The Nighthold opened
-						q(43531), -- Into the Nighthold
-						q(43530), -- The Nighthold: Delusions of Grandeur
-						q(43532), -- The Nighthold: Darkness Calls
-						q(43533, { -- Balance of Power
+						q(40673),	-- Lost Knowledge
+						q(43525),	-- Vault of the Wardens: Borrowing Without Asking
+						q(40675),	-- The Arcway: Rite of the Captain
+						q(43524),	-- Court of Stars: Literary Perfection
+						q(40678),	-- Twisted Power
+						q(43526),	-- A True Test
+						q(40603),	-- Seeking the Valkyra
+						q(40608),	-- The Mark
+						q(40613),	-- Maw of Souls: Retrieving the Svalnguard
+						q(40614),	-- A Feast Fit for Odyn
+						q(40672),	-- Neltharion's Lair: Presentation is Key
+						q(40615),	-- Halls of Valor: Odyn's Blessing
+						q(43528),	-- Planning the Assault NOTE: This quest was removed when The Nighthold opened
+						q(43531),	-- Into the Nighthold
+						q(43530),	-- The Nighthold: Delusions of Grandeur
+						q(43532),	-- The Nighthold: Darkness Calls
+						q(43533, {	-- Balance of Power
 							cl(1, {
 							  ["groups"] = { 
 								artifact(805),

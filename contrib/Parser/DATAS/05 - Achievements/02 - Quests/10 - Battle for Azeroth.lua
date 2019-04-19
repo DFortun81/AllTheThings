@@ -13,17 +13,17 @@ To do:
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-10052, { -- Battle for Azeroth
+			n(-10052, {	-- Battle for Azeroth
 				["groups"] = {
 					a(ach(13026)),	-- 7th Legion Spycatcher
 					h(ach(12480)),	-- A Bargain of Blood
 					h(ach(13021)),	-- A Most Efficient Apocalypse
 					a(ach(12891, {	-- A Nation United
-						crit(1),		-- Kul Tourist
+						crit(1),		-- Loremaster of Kul Tiras
 						crit(2),		-- The Pride of Kul Tiras
-						crit(3),		-- 	A Nation United
+						crit(3),		-- A Nation United
 					})),
 					a(ach(12473, {	-- A Sound Plan
 						crit(1),		-- The Ashvane Trading Company
@@ -62,8 +62,10 @@ _.Achievements =
 					ach(13035),		-- By de Power of de Loa!
 					h(ach(13017)),	-- Champion of the Vulpera
 					ach(13047),		-- Clever Use of Mechanical Explosives
+					a(ach(13426)),	-- Come On and Slam
 					a(ach(12582)),	-- Come Sail Away
 					a(ach(13053)),	-- Deadliest Cache
+					h(ach(13435)),	-- Doomsoul Surprise
 					a(ach(13059)),	-- Drag Race
 					a(ach(12497, {	-- Drust Do It.
 						crit(1),		-- The Final Effigy
@@ -78,6 +80,22 @@ _.Achievements =
 						crit(10),		-- Stick It To 'Em!
 					})),
 					ach(13045),		-- Every Day I'm Truffling
+					a(ach(13283, {	-- Frontline Warrior (A)
+						crit(1),		-- A Sound Defense
+						crit(2),		-- Storm's Rage
+						crit(3),		-- A Drust Cause
+						crit(4),		-- Many Fine Heroes
+						crit(5),		-- March on the Marsh
+						crit(6),		-- Ritual Rampage
+					})),
+					h(ach(13284, {	-- Frontline Warrior (H)
+						crit(1),		-- Breaching Boralus
+						crit(2),		-- Romp in the Swamp
+						crit(3),		-- Isolated Victory
+						crit(4),		-- Shores of Zuldazar
+						crit(5),		-- In Every Dark Corner
+						crit(6),		-- Horde of Heroes
+					})),
 					ach(12918),		-- Have a Heart
 					h(ach(13030, {	-- How to Ptrain Your Pterrordax
 						crit(1),		-- Nature Versus Nurture
@@ -86,17 +104,14 @@ _.Achievements =
 						crit(4),		-- Down, But Not Out
 					})),
 					h(ach(13041)),	-- Hungry, Hungry Ranishu
+					a(ach(13251)),	-- In Teldrassil's Shadow
 					ach(13023), 	-- It's Really Getting Out of Hand
 					a(ach(13060, {	-- Kul Runnings
 						crit(1),		-- Sliding with Style
 						crit(2),		-- Frozen Freestyle
 						crit(3),		-- Slippery Slopes
 					})),
-					a(ach(12593, {	-- Kul Tourist
-						crit(1),		-- A Sound Plan
-						crit(2),		-- Drust Do It.
-						crit(3),		-- Stormsong and Dance
-					})),
+					a(ach(13384)),	-- Kul Tirans Don't Look at Explosions
 					a(ach(13062, {	-- Let's Bee Friends
 						i(163776),		--	Large Honeycomb Cluster (Bumbles)
 					})),
@@ -118,7 +133,24 @@ _.Achievements =
 						crit(5),		-- Boon of Kimbul
 						crit(6),		-- Boon of Krag'wa
 					})),
+					a(ach(12593, {	-- Loremaster of Kul Tiras
+						ach(12473),		-- A Sound Plan
+						ach(12497),		-- Drust Do It.
+						ach(12496),		-- Stormsong and Dance
+					})),
+					h(ach(13294, {	-- Loremaster of Zandalar
+						ach(11861),		-- The Throne of Zuldazar
+						ach(11868),		-- The Dark Heart of Nazmir
+						ach(12478),		-- Secrets in the Sands
+					})),
+					ach(13512, {	-- Master Calligrapher
+						crit(1),		-- Master of Calligraphy - Circle
+						crit(2),		-- Master of Calligraphy - Square
+						crit(3),		-- Master of Calligraphy - Triangle
+					}),
 					h(ach(13039)),	-- Paku'ai
+					a(ach(13440)),	-- Pushing the Payload (A)
+					h(ach(13441)),	-- Pushing the Payload (H)
 					h(ach(13038)),	-- Raptari Rider
 					a(ach(12510, {	-- Ready for War (Alliance)
 						crit(1),		-- Nazmir Foothold
@@ -148,6 +180,7 @@ _.Achievements =
 						crit(4),		-- Green Sabertron slain
 						crit(5),		-- Copper Sabertron slain
 					}),
+					h(ach(13437)),	-- Scavenge like a Vulpera
 					ach(13011),		-- Scourge of Zem'lan
 					h(ach(12478, {	-- Secrets in the Sands
 						crit(1),		-- Dangers in the Desert
@@ -192,6 +225,7 @@ _.Achievements =
 					})),
 					a(ach(12997)),	-- The Pride of Kul Tiras
 					a(ach(12087)),	-- The Reining Champion
+					h(ach(13263)),	-- The Shadow Hunter
 					h(ach(11861, {	-- The Throne of Zuldazar
 						crit(1),		-- Portents and Prophecies
 						crit(2),		-- Port of Zandalar
@@ -202,7 +236,33 @@ _.Achievements =
 						crit(7),		-- March of the Loa
 					})),
 					ach(13046),		-- These Hills Sing
+					a(ach(13467, {	-- Tides of Vengeance (A)
+						crit(1),		-- War Marches On
+						crit(2),		-- The Sleeper Agent
+						crit(3),		-- Mischief Managed
+						crit(4),		-- He Who Walks in the Light
+					})),
+					h(ach(13466, {	-- Tides of Vengeance (H)
+						crit(1),		-- The Day is Won
+						crit(2),		-- Mekkatorque's Battle Plans
+						crit(3),		-- Through the Front Door
+						crit(4),		-- Fly Out to Meet Them
+					})),
 					h(ach(13037)),	-- Torcanata
+					ach(13517, {	-- Two Sides To Every Tale
+						i(168055),		-- Bloodflank Charger (mount)
+						i(168056),		-- Ironclad Frostclaw (mount)
+						crit(1),		-- A Nation United
+						crit(2),		-- Tides of Vengeance (A)
+						crit(3),		-- Zandalar Forever!
+						crit(4),		-- Tides of Vengeance (H)
+					}),		
+					a(ach(13285, {	-- Upright Citizens
+						i(166247),		-- Citizens Brigade Whistle (toy)
+						crit(1),		-- Russel the Bard recruited
+						crit(2),		-- Flynn Fairwind recruited
+						crit(3),		-- Leeroy Jenkins recruited
+					})),
 					h(ach(13014, {	-- Vorrik's Champion
 						crit(1),		-- Faithless slain with Vorrik's Bulwark slain
 						crit(2),		-- Faithless slain with Rakjan the Unbroken slain

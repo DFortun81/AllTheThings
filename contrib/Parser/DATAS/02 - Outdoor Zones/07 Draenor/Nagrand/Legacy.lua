@@ -9,8 +9,8 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["groups"] = {
 						n(-17, {	-- Quests
-							un(40, q(36206)), -- The Dragon's Tale
-							un(40, q(35995)), -- Tarnished Bronze
+							un(40, q(36206)),	-- The Dragon's Tale
+							un(40, q(35995)),	-- Tarnished Bronze
 							un(40, q(36004, {	-- Power Unleashed
 								un(4, i(118295)),	-- Timeless Solium Band of Brutality
 								un(4, i(118296)),	-- Timeless Solium Band of the Archmage

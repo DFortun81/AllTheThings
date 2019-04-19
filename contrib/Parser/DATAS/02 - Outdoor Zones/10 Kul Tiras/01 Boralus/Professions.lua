@@ -12,7 +12,7 @@ _.Zones =
 						{	-- A Need For Coal [Mine -- Monelite Deposit II]
 							["questID"] = 48752, 	-- A Need For Coal
 							["qg"] = 136091,	-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -42,7 +42,7 @@ _.Zones =
 							["sourceQuests"] = {
 								48770,	-- Three Sheets to the Wind
 							},
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -72,7 +72,7 @@ _.Zones =
 							["sourceQuests"] = {
 								51568,	-- Ritualistic Preparations
 							},
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -122,7 +122,7 @@ _.Zones =
 						{	-- Don't Pick a Fight [Mine -- Monelite Seam II]
 							["questID"] = 48764, 	-- Don't Pick a Fight
 							["qg"] = 136091,	-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -166,7 +166,7 @@ _.Zones =
 							["itemID"] = 161078,	-- Exceptional Platinum Shard
 							["questID"] = 52044,	-- An Exceptional Platinum Shard
 							["qg"] = 136091,		-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -307,7 +307,7 @@ _.Zones =
 						{	-- Ritualistic Preparations [Mine -- Storm Silver Deposit II]
 							["questID"] = 51568,	-- Ritualistic Preparations
 							["qg"] = 136091,	-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },	-- Trainer Location
 								{ 73.49, 08.38 },	-- Forge
@@ -324,7 +324,7 @@ _.Zones =
 						},
 						{	-- Seams Familiar [Mine -- Monelite Seam III]
 							["questID"] = 48767,	-- Seams Familiar
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["sourceQuests"] = {
 								48764, 	-- Don't Pick a Fight
 							},
@@ -358,7 +358,7 @@ _.Zones =
 							["sourceQuests"] = {
 								48752, 	-- A Need For Coal
 							},
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },
 							},
@@ -373,7 +373,7 @@ _.Zones =
 						{	-- Tattered Map [Mine]
 							["itemID"] = 161085,	-- Tattered Map
 							["questID"] = 52049,	-- X Marks the Plat!
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "Requires 150 Kul'Tiran Mining",
 						},
@@ -383,7 +383,7 @@ _.Zones =
 							["sourceQuests"] = {
 								51380,	-- Back to Franklin
 							},
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.63, 23.53 },	-- Franklin the Drunk
 								{ 69.37, 13.05 },	-- Hilock of Eggs
@@ -402,7 +402,7 @@ _.Zones =
 						{	-- Three Sheets to the Wind [Mine -- Storm Silver Seam II]
 							["questID"] = 48770,	-- Three Sheets to the Wind
 							["qg"] = 136091,	-- Myra Cabot
-							["requireSkill"] = 186, -- Mining
+							["requireSkill"] = 186,	-- Mining
 							["coords"] = {
 								{ 75.01, 07.61 },	-- Trainer Location
 								{ 75.25, 14.33 },	-- Harold Atkey
@@ -417,6 +417,65 @@ _.Zones =
 								},
 							},
 						},
+						-- Alchemy Questline
+						qa(50121, {	-- Casting the First Stone
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 74.2, 6.5, 1161 },
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50122, {	-- Ocular Extracts
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 74.2, 6.5, 1161 },
+							["sourceQuest"] = 50121,	-- Casting the First Stone
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50124, {	-- Changing the Scenery
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 74.2, 6.5, 1161 },
+							["sourceQuest"] = 50121,	-- Casting the First Stone
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50125, {	-- A Possible Solution
+							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+							["coord"] = { 74.2, 6.5, 1161 },
+							["sourceQuests"] = { 
+								50124,	-- Changing the Scenery
+								50122,	-- Ocular Extracts
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50126, {	-- A Deathly Draught
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["sourceQuest"] = 50125,
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50127, {	-- A Stone's Throw
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["sourceQuest"] = 50125,
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						qa(50128, {	-- Chemically Compounded
+							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+							["coord"] = { 30.6, 49.6, 896 },
+							["sourceQuests"] = { 
+								50127,	-- A Deathly Draught
+								50126,	-- A Stone's Throw	
+							},
+							["requireSkill"] = 171,	-- Alchemy
+						}),
+						o(280755, {	-- Quintin's Satchel
+							qa(50129, {	-- A Recipe for Success
+								["coord"] = { 62.9, 28.9, 863 },
+								["sourceQuest"] = 50128,
+								["requireSkill"] = 171,	-- Alchemy
+								["groups"] = {
+									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+								},
+	
+							}),
+						}),
 						--[[
 						-- Note!! Commenting out the achievements for now.  They aren't specific to the city and are already under achievements section in ATT.  Will analyze later and see if any can be reconfigured.
 						ach(12757),		-- Angling for Battle
@@ -482,7 +541,7 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["achievementID"] = 12847, -- Siege of Boralus
+			["achievementID"] = 12847,	-- Siege of Boralus
 			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),

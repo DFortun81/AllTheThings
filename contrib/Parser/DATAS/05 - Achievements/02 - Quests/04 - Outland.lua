@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9977, { -- Outland
+			n(-9977, {	-- Outland
 				["groups"] = {
 					ach(1276),		-- Blade's Edge Bomberman (Blade's Edge Mountains)
 					ach(1275),		-- Bombs Away (Terokkar Forest)

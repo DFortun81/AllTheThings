@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
-			filter(113, { -- Bags
+			filter(113, {	-- Bags
 				i(5765),	-- Black Silk Pack
 				i(856),		-- Blue Leather Bag
 				i(14156),	-- Bottomless Bag

@@ -29,7 +29,7 @@ _.WorldEvents =
 								["groups"] = {
 									un(39, title(33)),	-- Scarab Lord Title
 									un(2, i(21176)),	-- Black Qiraji Resonating Crystal
-									un(2, { ["mountID"] = 239770, ["questID"] = 8743 }), -- Black Qiraji War Tank (No item available.)
+									un(2, { ["mountID"] = 239770, ["questID"] = 8743 }),	-- Black Qiraji War Tank (No item available.)
 								},
 							})),
 						},
@@ -202,7 +202,7 @@ _.WorldEvents =
 						["u"] = 40,
 					},
 				},
-				["achievementID"] = 5533, -- Veteran of the Shifting Sands
+				["achievementID"] = 5533,	-- Veteran of the Shifting Sands
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

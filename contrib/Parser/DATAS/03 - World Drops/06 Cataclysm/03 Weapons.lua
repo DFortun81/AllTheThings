@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
 					i(55281),	-- Razorwind Axe
 					i(55282),	-- Steelspark Axe
 					i(55283),	-- Angerfang Axe
@@ -21,7 +21,7 @@ _.WorldDrops =
 					i(66981),	-- Axe of the Deadly Price
 					i(71362),	-- Obsidium Cleaver
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
 					i(55290),	-- Razorwind Broadaxe
 					i(55291),	-- Steelspark Broadaxe
 					i(55292),	-- Angerfang Broadaxe
@@ -33,7 +33,7 @@ _.WorldDrops =
 					un(7, i(55298)),	-- Rustmaul Broadaxe
 					i(66985),	-- Termination Axe
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
 					--i(111783),	-- Irontree Bow - item does not seem to exist in game - from what I could find, this item was never in game
 					i(55299),	-- Razorwind Bow
 					i(55300),	-- Steelspark Bow
@@ -46,7 +46,7 @@ _.WorldDrops =
 					un(7, i(55307)),	-- Rustmaul Bow
 					i(66973),	-- Ravenheart Longbow
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
 					i(55317),	-- Razorwind Crossbow
 					i(55318),	-- Steelspark Crossbow
 					i(55319),	-- Angerfang Crossbow
@@ -58,7 +58,7 @@ _.WorldDrops =
 					un(7, i(55325)),	-- Rustmaul Crossbow
 					i(71366),	-- Lava Bolt Crossbow
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
 					i(55326),	-- Razorwind Dagger
 					i(55327),	-- Steelspark Dagger
 					i(55328),	-- Angerfang Dagger
@@ -87,7 +87,7 @@ _.WorldDrops =
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					i(71359),	-- Chelley's Sterilized Scalpel
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
 					i(55344),	-- Razorwind Knuckles
 					i(55345),	-- Steelspark Knuckles
 					i(55346),	-- Angerfang Knuckles
@@ -101,7 +101,7 @@ _.WorldDrops =
 					i(63538),	-- Claws of Agony
 					i(66972),	-- Crystalline Geoknife
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
 					i(55353),	-- Razorwind Gun
 					i(55354),	-- Steelspark Gun
 					i(55355),	-- Angerfang Gun
@@ -115,7 +115,7 @@ _.WorldDrops =
 					i(66953),	-- Snub-Nosed Pistol
 					i(67045),	-- Abatement Cannon
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
 					i(55371),	-- Moonbrook Crystal
 					i(55372),	-- Swamplight Crystal
 					i(55373),	-- Sishir Crystal
@@ -131,7 +131,7 @@ _.WorldDrops =
 					i(67149),	-- Heartbound Tome
 					i(71022),	-- Goblet of Anger
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
 					i(55362),	-- Moonbrook Scepter
 					i(55363),	-- Swamplight Scepter
 					i(55364),	-- Sishir Scepter
@@ -156,7 +156,7 @@ _.WorldDrops =
 					i(67120),	-- Mace of Apotheosis
 					i(69803),	-- Gurubashi Punisher
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
 					i(55389),	-- Razorwind Hammer
 					i(55390),	-- Steelspark Hammer
 					i(55391),	-- Angerfang Hammer
@@ -169,7 +169,7 @@ _.WorldDrops =
 					i(66993),	-- Sorrow's End
 					i(67243),	-- Armagedillo's Tail
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
 					i(55407),	-- Razorwind Spear
 					i(55408),	-- Steelspark Spear
 					i(55409),	-- Angerfang Spear
@@ -183,7 +183,7 @@ _.WorldDrops =
 					i(69843),	-- Mobus's Dripping Halberd
 					i(71361),	-- Ranseur of Hatred
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
 					i(55425),	-- Dreadmaul Shield
 					i(55426),	-- Rethban Shield
 					i(55427),	-- Jasperlode Shield
@@ -198,7 +198,7 @@ _.WorldDrops =
 					i(67145),	-- Blockade's Lost Shield
 					i(71038),	-- Ward of the Red Widow
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
 					i(55335),	-- Razorwind Staff
 					i(55336),	-- Steelspark Staff
 					i(55337),	-- Angerfang Staff
@@ -224,7 +224,7 @@ _.WorldDrops =
 					i(67098),	-- Sealing Heartstaff
 					i(71360),	-- Spire of Scarlet Pain
 				}),
-				n(-338, { -- 1H Swords
+				n(-338, {	-- 1H Swords
 					i(55452),	-- Razorwind Sword
 					i(55453),	-- Steelspark Sword
 					i(55454),	-- Angerfang Sword
@@ -242,7 +242,7 @@ _.WorldDrops =
 					i(68161),	-- Krol Decapitator
 					i(71006),	-- Volcanospike
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
 					i(55461),	-- Razorwind Greatsword
 					i(55462),	-- Steelspark Greatsword
 					i(55463),	-- Angerfang Greatsword
@@ -254,7 +254,7 @@ _.WorldDrops =
 					un(7, i(55469)),	-- Rustmaul Greatsword
 					i(66978),	-- Rage-Possessed Greatsword
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
 					i(55479),	-- Moonbrook Wand
 					i(55480),	-- Swamplight Wand
 					i(55481),	-- Sishir Wand

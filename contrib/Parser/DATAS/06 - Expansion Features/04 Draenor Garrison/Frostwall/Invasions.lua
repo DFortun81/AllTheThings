@@ -185,6 +185,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -233,6 +234,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -279,6 +281,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -325,6 +328,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -371,6 +375,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -417,6 +422,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -463,6 +469,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate

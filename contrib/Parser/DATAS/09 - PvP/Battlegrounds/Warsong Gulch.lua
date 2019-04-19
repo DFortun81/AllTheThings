@@ -5,31 +5,22 @@ _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		m(92 , {	-- Warsong Gulch
-			["maps"] = {10,63},	-- Northern Barrens / Ashenvale
+			["maps"] = {
+				10,		-- Northern Barrens
+				63,		-- Ashenvale
+				859,	-- Warsong Gulch
+				1339,	-- Warsong Gulch
+			},	
 			["achievementID"] = 166,	-- Warsong Gulch Victory
 			["description"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War. A faction wins when they have returned three enemy flags within 25 minutes, or if they have returned the most flags (or capped last if a tie) when the timer runs out. The longer a flag carrier holds onto a flag, the more damage the player will take.\n\nEach base has a long tunnel with several floors and platforms that can only be accessed via certain routes. A common technique is for the flag carrier to hop between floor levels while the attacking team tries to figure out which floor the FC is hidden on, or jump away from melee attackers.\n\nThe Alliance Outpost is located in Southern Ashenvale.\nThe Horde Outpost is located in Northern Barrens.",
-			["groups"] = {
-				ach(1259),	-- Not So Fast
+			["g"] = {
 				a(faction(890, {	-- Silverwing Sentinels
 					["creatureID"] = 19908,	-- Su'ura Swiftarrow <Warsong Gulch Battlemaster>
-					["groups"] = {
-						ach(1172, {	-- Master of Warsong Gulch
-							ach(199),	-- Capture the Flag
-							ach(872),	-- Frenzied Defender
-							ach(204),	-- Ironman
-							a(ach(203)),	-- Not In My House
-							ach(200),	-- Persistent Defender
-							a(ach(202)),	-- Quick Cap
-							ach(207),	-- Save the Day
-							a(ach(206)),	-- Supreme Defender
-							ach(201),	-- Warsong Expedience
-							ach(168),	-- Warsong Gulch Perfection
-							ach(167),	-- Warsong Gulch Veteran
-						}),
-						ach(713),	-- Silverwing Sentinel
+					["g"] = {
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 61.6, 83.8, 63 },
+							["g"] = {
 								i(19595),	-- Dryad's Wrist Bindings
 								i(19596),	-- Dryad's Wrist Bindings
 								i(19597),	-- Dryad's Wrist Bindings
@@ -100,24 +91,11 @@ _.PVP =
 				})),
 				h(faction(889, {	-- Warsong Outriders
 					["creatureID"] = 19910,	-- Gargok <Warsong Gulch Battlemaster>
-					["groups"] = {
-						ach(1172, {	-- Master of Warsong Gulch
-							ach(199),	-- Capture the Flag
-							ach(872),	-- Frenzied Defender
-							ach(204),	-- Ironman
-							h(ach(1251)),	-- Not In My House
-							ach(200),	-- Persistent Defender
-							h(ach(1502)),	-- Quick Cap
-							ach(207),	-- Save the Day
-							h(ach(1252)),	-- Supreme Defender
-							ach(201),	-- Warsong Expedience
-							ach(168),	-- Warsong Gulch Perfection
-							ach(167),	-- Warsong Gulch Veteran
-						}),
-						ach(712),	-- Warsong Outrider
+					["g"] = {
 						n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 40.2, 20.0, 1307 },
+							["g"] = {
 								i(19595),	-- Dryad's Wrist Bindings
 								i(19596),	-- Dryad's Wrist Bindings
 								i(19597),	-- Dryad's Wrist Bindings

@@ -12,16 +12,16 @@ _.Zones =
 					n(-2, { 	-- Vendors
 						n(95424, {	-- Dawn-Seeker Krisek <Order of the Awakened>
 							["groups"] = { 
-								currency(823, { -- Apexis Crystals
+								currency(823, {	-- Apexis Crystals
 									i(128478),	-- Blazing Firehawk
-									i(128441, { -- Contract: Solar Priest Vayx
+									i(128441, {	-- Contract: Solar Priest Vayx
 										follower(582),  -- Solar Priest Vayx
 									}),
 									i(123974),	-- Reins of the Corrupted Dreadwing
 									i(122283),	-- Rukhmar's Sacred Memory
 								}),
-								currency(1191, { -- Valor
-									un(2, i(127785)), -- Crystallized Fel
+								currency(1191, {	-- Valor
+									un(2, i(127785)),	-- Crystallized Fel
 								}),
 								i(128502, {	-- Hunter's Seeking Crystal
 									i(128503),	-- Master Hunter's Seeking Crystal
@@ -37,7 +37,7 @@ _.Zones =
 						}),
 						n(96130, {	-- Ravenspeaker Thelnaas <Order of the Awakened>
 							["groups"] = { 
-								currency(823, { -- Apexis Crystals
+								currency(823, {	-- Apexis Crystals
 									i(128225),	-- Empowered Apexis Fragment
 									i(124562),	-- Baleful Armament
 									i(124554),	-- Baleful Hood
@@ -73,22 +73,22 @@ _.Zones =
 								i(128490, {	-- Blueprint: Oil
 									["questID"] = 39561,
 								}),
-								i(128440, { -- Contract: Dowser Bigspark
+								i(128440, {	-- Contract: Dowser Bigspark
 									["groups"] = {
-										follower(581.2), -- Dowser Bigspark
+										follower(581.2),	-- Dowser Bigspark
 									},
 								}),
 								i(128526),	-- Deathtusk Felboar
 								i(128475),	-- Empowered Augment Rune
 								i(128251, {	-- Equipment Blueprint: Tuskarr Fishing Net
-									["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
+									["questID"] = 39359,	-- Equipment Blueprint: Tuskarr Fishing Net
 								}),
-								i(128489, { -- Equipment Blueprint: Unsinkable
-									["questID"] = 39358, -- Equipment Blueprint: Unsinkable
+								i(128489, {	-- Equipment Blueprint: Unsinkable
+									["questID"] = 39358,	-- Equipment Blueprint: Unsinkable
 								}),
 								i(128471),	-- Frostwolf Grint's Battlegear
-								i(127269, { -- Ship Blueprint: Battleship
-									["questID"] = 39604, -- I Sunk Your Battleship
+								i(127269, {	-- Ship Blueprint: Battleship
+									["questID"] = 39604,	-- I Sunk Your Battleship
 								}),
 								i(128294, {	-- Trade Agreement: Arakkoa Outcasts
 									["questID"] = 37485,
@@ -101,7 +101,7 @@ _.Zones =
 						}),
 						n(95650, {	-- Skoller
 							["groups"] = {
-								i(128328), -- Skoller's Bag of Squirrel Treats
+								i(128328),	-- Skoller's Bag of Squirrel Treats
 							},
 							["coord"] = { 55.2, 75.0 },
 							["description"] = "Talk to him and you will receive the toy.",
@@ -111,18 +111,18 @@ _.Zones =
 								i(128444, {	-- Blueprint: Oil
 									["questID"] = 39561,
 								}),
-								i(128445, { -- Contract: Dowser Bigspark
+								i(128445, {	-- Contract: Dowser Bigspark
 									["groups"] = {
-										follower(581.1), -- Dowser Bigspark
+										follower(581.1),	-- Dowser Bigspark
 									},
 								}),
 								i(128527),	-- Deathtusk Felboar
 								i(128482),	-- Empowered Augment Rune
 								i(128491, {	-- Equipment Blueprint: Tuskarr Fishing Net
-									["questID"] = 39359, -- Equipment Blueprint: Tuskarr Fishing Net
+									["questID"] = 39359,	-- Equipment Blueprint: Tuskarr Fishing Net
 								}),
-								i(128250, { -- Equipment Blueprint: Unsinkable
-									["questID"] = 39358, -- Equipment Blueprint: Unsinkable
+								i(128250, {	-- Equipment Blueprint: Unsinkable
+									["questID"] = 39358,	-- Equipment Blueprint: Unsinkable
 								}),
 								i(128462),	-- Karabor Councilor's Attire
 								i(128473, {	-- Packaged Ceremonial Karabor Finery
@@ -135,13 +135,13 @@ _.Zones =
 									i(128463),	-- Ceremonial Shoulderpads of Karabor
 									i(128465),	-- Ceremonial Slippers of Karabor
 								}),
-								i(128492, { -- Ship Blueprint: Battleship
-									["questID"] = 39601, -- I Sunk Your Battleship
+								i(128492, {	-- Ship Blueprint: Battleship
+									["questID"] = 39601,	-- I Sunk Your Battleship
 								}),
 								i(128294, {	-- Trade Agreement: Arakkoa Outcasts
 									["questID"] = 37485,
 								}),
-								i(128474, { -- Treasure Map: Tanaan Jungle
+								i(128474, {	-- Treasure Map: Tanaan Jungle
 									["questID"] = 39463,
 								}),
 							},
@@ -150,12 +150,12 @@ _.Zones =
 						n(92805, {	-- Z'tenga the Walker <Saberstalker Quartermaster>
 							["groups"] = {
 								i(128449),	-- Saberstalkers Tabard **Note this costs gold and not claws**
-								i(124099, { -- Blackfang Claw
+								i(124099, {	-- Blackfang Claw
 									i(128481),	-- Bristling Hellboar
 									i(116671),	-- Wild Goretusk
 									i(128477),	-- Savage Cub
-									i(128439, { -- Contract: Pallas
-										follower(580), -- Pallas
+									i(128439, {	-- Contract: Pallas
+										follower(580),	-- Pallas
 									}),
 								}),
 							},

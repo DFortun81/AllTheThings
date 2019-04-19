@@ -20,7 +20,29 @@ _.WorldDrops =
 						},
 					},
 				}),
-				n(-185, { -- Inscription
+				n(-183, {	-- Engineering
+					{	-- Schematic: Chief Engineer Jard's Journal
+						["itemID"] = 100910, 	-- Schematic: Chief Engineer Jard's Journal
+						["groups"] = {
+							{	-- Advanced Refrigeration Unit
+								["recipeID"] = 139197,	-- Advanced Refrigeration Unit
+							},
+							{	-- Jard's Peculiar Energy Source
+								["recipeID"] = 139176,	-- Jard's Peculiar Energy Source
+							},
+							{	-- Pierre
+								["recipeID"] = 139196,	-- Pierre
+							},
+							{	-- Rascal-Bot
+								["recipeID"] = 143714,	-- Rascal-Bot
+							},
+							{	-- Sky Golem
+								["recipeID"] = 139192,	-- Sky Golem
+							},
+						},
+					},
+				}),
+				n(-185, {	-- Inscription
 					{	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
 						["itemID"] = 102534,	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
 					},
@@ -37,7 +59,7 @@ _.WorldDrops =
 						["itemID"] = 104223,	-- Technique: Glyph of the Unbound Elemental
 					},
 				}),
-				n(-186, { -- Jewelcrafting
+				n(-186, {	-- Jewelcrafting
 					{	-- Design: Agile Primal Diamond
 						["itemID"] = 83811,	-- Design: Agile Primal Diamond
 					},
@@ -86,6 +108,18 @@ _.WorldDrops =
 					{	-- Design: Serpent's Heart
 						["itemID"] = 95470,	-- Design: Serpent's Heart
 					},
+				}),
+				n(-187, {	-- Leatherworking
+					{	-- Pattern: Drums of Rage
+						["itemID"] = 102513,	-- Pattern: Drums of Rage
+						["description"] = "Requires maxed Pandaria leatherworking skill to drop",
+					},
+					{	-- Pattern: Hardened Magnificent Hide and Its Uses
+						["itemID"] = 100864,	-- Pattern: Hardened Magnificent Hide and Its Uses
+						["description"] = "Requires maxed Pandaria leatherworking skill to drop",
+					},
+					i(95467),	-- Pattern: Magnificence of Leather
+					i(95468),	-- Pattern: Magnificence of Scales
 				}),
 				n(-190, {	-- Tailoring
 					i(100863, {	-- Pattern: Celestial Cloth and Its Uses

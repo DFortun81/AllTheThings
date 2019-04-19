@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-9958, { -- Player vs Player
+			n(-9958, {	-- Player vs Player
 				["groups"] = {
 					n(-3158, {	--	Player vs. Player (Battle for Azeroth Season 1)
 						["groups"] = {
@@ -110,6 +110,7 @@ _.Achievements =
 									},
 									{	-- Sinister Gladiator's Proto-Drake
 										["itemID"] = 156880,	-- Sinister Gladiator's Proto-Drake
+										["collectible"] = false,
 									},
 									{	-- Alliance Sinister Gladiator's Tabard
 										["itemID"] = 164910,	--  Alliance Sinister Gladiator's Tabard

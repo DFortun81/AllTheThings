@@ -5,30 +5,24 @@ _.PVP =
 {
 	n(-304, {	-- Battlegrounds
 		m(93 , {	-- Arathi Basin
-			["maps"] = {14},	-- Arathi Highlands
+			["maps"] = {
+				14,		-- Arathi Highlands
+				837,	-- Arathi Basin
+				844,	-- Arathi Basin
+				1383,	-- Arathi Basin
+				1366,	-- Arathi Basin (BG)
+			},
 			["achievementID"] = 154,	-- Arathi Basin Victory
-			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
-			["groups"] = {
-				ach(1169, {	-- Master of Arathi Basin
-					ach( 583),	-- Arathi Basin All-Star
-					ach( 584),	-- Arathi Basin Assassin
-					ach( 165),	-- Arathi Basin Perfection
-					ach( 155),	-- Arathi Basin Veteran
-					ach(  73),	-- Disgracin' The Basin
-					ach( 159),	-- Let's Get This Done
-					ach( 158),	-- Me and the Cappin' Makin' it Happen
-					ach(1153),	-- Overly Defensive
-					ach( 161),	-- Resilient Victory
-					ach( 156),	-- Territorial Dominance
-					ach( 157),	-- To The Rescue!
-					ach( 162),	-- We Had It All Along *cough*
-				}),
+			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
+			["g"] = {
 				h(faction(510, {
-					["groups"] = {
+					["creatureID"] = 19905,
+					["g"] = {
 						ach(710), 	-- The Defiler
 						n(15126, {	-- Rutherford Twing
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 68.4, 30.6, 14 },
+							["g"] = {
 								i(20176),	-- Defiler's Epaulets
 								i(20163),	-- Defiler's Cloth Girdle
 								i(20164),	-- Defiler's Cloth Girdle
@@ -103,14 +97,15 @@ _.PVP =
 							},
 						}),
 					},
-					["creatureID"] = 19905,
 				})),
 				a(faction(509, {
-					["groups"] = {
+					["creatureID"] = 30231,
+					["g"] = {
 						ach(711), 	-- Knight of Arathor
-						n(15127, {	-- Samual Hawke
+						n(15127, {	-- Samuel Hawke
 							["itemID"] = 137642,	-- Mark of Honor
-							["groups"] = {
+							["coord"] = { 40.2, 46.4, 14 },
+							["g"] = {
 								i(20061),	-- Highlander's Epaulets
 								i(20047),	-- Highlander's Cloth Girdle
 								i(20097),	-- Highlander's Cloth Girdle
@@ -185,7 +180,6 @@ _.PVP =
 							},
 						}),
 					},
-					["creatureID"] = 30231,
 				})),
 			},
 		}),

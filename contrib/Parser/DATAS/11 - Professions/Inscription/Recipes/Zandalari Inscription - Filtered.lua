@@ -264,8 +264,34 @@ profession(773, {	-- Inscription
 						},
 						{	-- Glyph of the Tideskipper
 							["recipeID"] = 276088--[[Glyph of the Tideskipper]]
+						},
+						{  -- Glyph of Storm's Wake(missing in automation)
+							["recipeID"] = 289356,  -- Glyph of Storm's Wake
+							["races"] = ALLIANCE_ONLY,
 						}
 					}
+				},
+				{
+					["name"] = "Blood Contracts",
+					["categoryID"] = 1276,
+					["g"] = {
+						{
+							["recipeID"] = 292320,
+							["name"] = "Blood Contract: Bloodguard"
+						},
+						{
+							["recipeID"] = 292012,
+							["name"] = "Blood Contract: Bloodshed"
+						},
+						{
+							["recipeID"] = 292322,
+							["name"] = "Blood Contract: Oblivion"
+						},
+						{
+							["recipeID"] = 259665,
+							["name"] = "Blood Contract: Sacrifice"
+						},
+					},
 				},
 				{	-- Follower Equipment
 					["categoryID"] = 1235--[[Follower Equipment]],
@@ -274,7 +300,17 @@ profession(773, {	-- Inscription
 							["recipeID"] = 278422--[[Crimson Ink Well]]
 						}
 					}
-				}
+				},
+				{	-- Tools of the Trade
+					["name"] = "Tools of the Trade",
+					["categoryID"] = 1262,
+					["g"] = {
+						{	-- Sanguine Feather Quill of Lana'thel
+							["name"] = "Sanguine Feather Quill of Lana'thel",
+							["recipeID"] = 256301
+						},
+					},
+				},
 			}
 		},
 	}),

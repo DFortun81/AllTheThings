@@ -7,10 +7,10 @@ _.Zones =
 		m(127, {	-- Crystalsong Forest
 			["groups"] = {	
 				n(-228, {	-- Flight Points
-					fp(337, { -- Sunreaver's Command, Crystalsong Forest
+					fp(337, {	-- Sunreaver's Command, Crystalsong Forest
 						["coord"] = { 78.4, 50.2 },
 					}),
-					fp(336, { -- Windrunner's Overlook, Crystalsong Forest
+					fp(336, {	-- Windrunner's Overlook, Crystalsong Forest
 						["coord"] = { 72, 80.8 },
 					}),
 				}),

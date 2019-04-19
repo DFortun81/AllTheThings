@@ -5,8 +5,9 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
+					i(116457),	-- Frostbitten Axe
 					i(116474),	-- Lunarglow Axe
 					i(116491),	-- Vinewrapped Axe
 					i(116508),	-- Creeperclaw Axe
@@ -17,11 +18,12 @@ _.WorldDrops =
 					i(116593),	-- Bloodmane Axe
 					i(116610),	-- Gorian Axe
 					i(116627),	-- Howling Axe
-					--i(117010), -- Not a valid item so commenting out Forester's Axe
+					--i(117010),	-- Not a valid item so commenting out Forester's Axe
 					i(118781),	-- Gorestained Hatchet
 					i(118782),	-- Ivory-Hilted Cleaver
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
+					i(116458),	-- Frostbitten Broadaxe
 					i(116475),	-- Lunarglow Broadaxe
 					i(116492),	-- Vinewrapped Broadaxe
 					i(116509),	-- Creeperclaw Broadaxe
@@ -34,7 +36,8 @@ _.WorldDrops =
 					i(116628),	-- Howling Broadaxe
 					i(118802),	-- Tayger's Sword-On-A-Stick
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
+					i(116459),	-- Frostbitten Bow
 					i(116476),	-- Lunarglow Bow
 					i(116493),	-- Vinewrapped Bow
 					i(116510),	-- Creeperclaw Bow
@@ -47,7 +50,8 @@ _.WorldDrops =
 					i(116629),	-- Howling Bow
 					i(118796),	-- Gorestrung Longbow of Kel'tann
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
+					i(116460),	-- Frostbitten Crossbow
 					i(116477),	-- Lunarglow Crossbow
 					i(116494),	-- Vinewrapped Crossbow
 					i(116511),	-- Creeperclaw Crossbow
@@ -60,7 +64,9 @@ _.WorldDrops =
 					i(116630),	-- Howling Crossbow
 					i(118797),	-- Auto-Loading Crossbow of the Sand Emperor
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
+					i(116461),	-- Frostbitten Dagger
+					i(116462),	-- Coldsinger Spellblade
 					i(116478),	-- Lunarglow Dagger
 					i(116479),	-- Moonwhisper Spellblade
 					i(116495),	-- Vinewrapped Dagger
@@ -86,7 +92,8 @@ _.WorldDrops =
 					i(118784),	-- Sliver of Na'the
 					i(118785),	-- Void Bound Knife
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
+					i(116463),	-- Frostbitten Knuckles
 					i(116480),	-- Lunarglow Knuckles
 					i(116497),	-- Vinewrapped Knuckles
 					i(116514),	-- Creeperclaw Knuckles
@@ -99,7 +106,8 @@ _.WorldDrops =
 					i(116633),	-- Howling Knuckles
 					i(118786),	-- Chade's Kidneythumper
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
+					i(116464),	-- Frostbitten Gun
 					i(116481),	-- Lunarglow Gun
 					i(116498),	-- Vinewrapped Gun
 					i(116515),	-- Creeperclaw Gun
@@ -112,7 +120,8 @@ _.WorldDrops =
 					i(116634),	-- Howling Gun
 					i(118798),	-- Dead Eye Zakk's Boomshooter
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
+					i(116694),	-- Coldsinger Crystal
 					i(116697),	-- Moonwhisper Crystal
 					i(116700),	-- Growthshaper Branch
 					i(116703),	-- Evermorn Twig
@@ -128,7 +137,9 @@ _.WorldDrops =
 					i(118851),	-- Genesaur Braid
 					i(118852),	-- Erorus' Ledger of Trade
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
+					i(116465),	-- Frostbitten Mace
+					i(116466),	-- Coldsinger Scepter
 					i(116482),	-- Lunarglow Mace
 					i(116483),	-- Moonwhisper Scepter
 					i(116499),	-- Vinewrapped Mace
@@ -154,7 +165,8 @@ _.WorldDrops =
 					i(118788),	-- Matti's Magnificent Mace
 					i(118789),	-- Firecrystal Mace
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
+					i(116467),	-- Frostbitten Hammer
 					i(111475),	-- Beater's Beat Stick
 					i(116484),	-- Lunarglow Hammer
 					i(116501),	-- Vinewrapped Hammer
@@ -169,7 +181,8 @@ _.WorldDrops =
 					i(116637),	-- Howling Hammer
 					i(118799),	-- Draenic Ribsmasher
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
+					i(116468),	-- Frostbitten Spear
 					i(107658),	-- Thunderlord Longspear
 					i(116485),	-- Lunarglow Spear
 					i(116502),	-- Vinewrapped Spear
@@ -185,7 +198,8 @@ _.WorldDrops =
 					i(118800),	-- Pillar of Malice
 					i(118801),	-- Spire of Autumn
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
+					i(106397),	-- Frostbitten Shield
 					un(7, i(55433)),	-- Steelgrill Shield
 					i(106430),	-- Rimeplate Shield
 					i(106463),	-- Rockspine Shield
@@ -202,7 +216,9 @@ _.WorldDrops =
 					i(118873),	-- Jerek's Intractable Barrier
 					i(118874),	-- Blackrock Bulwark
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
+					i(116469),	-- Frostbitten Staff
+					i(116470),	-- Frostbitten Staff
 					i(116486),	-- Lunarglow Staff
 					i(116487),	-- Lunarglow Staff
 					i(116503),	-- Vinewrapped Staff
@@ -228,7 +244,8 @@ _.WorldDrops =
 					i(118805),	-- Caniki's Cane of Command
 					un(7, i(25173)),	-- Master's Bo Staff
 				}),
-				n(-338, { -- 1H Swords
+				n(-338, {	-- 1H Swords
+					i(116471),	-- Frostbitten Sword
 					i(116488),	-- Lunarglow Sword
 					i(116505),	-- Vinewrapped Sword
 					i(116522),	-- Creeperclaw Sword
@@ -243,7 +260,8 @@ _.WorldDrops =
 					i(118791),	-- Razorcrystal Blade
 					i(118792),	-- Reinforced Tuskblade
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
+					i(116472),	-- Frostbitten Greatsword
 					i(116489),	-- Lunarglow Greatsword
 					i(116506),	-- Vinewrapped Greatsword
 					i(116523),	-- Creeperclaw Greatsword
@@ -256,7 +274,8 @@ _.WorldDrops =
 					i(116642),	-- Howling Greatsword
 					i(118806),	-- Windworn Greatsword
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
+					i(116473),	-- Coldsinger Wand
 					i(116490),	-- Moonwhisper Wand
 					un(7, i(25285)),	-- Bloodwood Wand
 					i(116507),	-- Growthshaper Wand

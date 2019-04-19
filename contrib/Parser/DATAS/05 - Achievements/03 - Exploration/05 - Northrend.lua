@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9978, { -- Northrend
+			n(-9978, {	-- Northrend
 				["groups"] = {
 					ach(1264, {	-- Explore Borean Tundra
 						crit(1),	-- Temple City of En'kilah

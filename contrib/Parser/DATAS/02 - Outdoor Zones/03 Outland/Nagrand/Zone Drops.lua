@@ -9,7 +9,7 @@ _.Zones =
 			{	-- Nagrand (Outland)
 				["mapID"] = 107,	-- Nagrand (Outland)
 				["groups"] = {
-					n(0,    {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						["groups"] = {
 							i(23608, {	-- Plans: Khorium Belt
 								["crs"] = {
@@ -18,8 +18,8 @@ _.Zones =
 							}),
 							i(23611, {	-- Plans: Ragesteel Gloves
 								["crs"] = {
-									17137, -- Boulderfist Mage
-									17136, -- Boulderfist Warrior
+									17137,	-- Boulderfist Mage
+									17136,	-- Boulderfist Warrior
 								},
 							}),
 							i(22923, {	-- Recipe: Major Arcane Protection Potion

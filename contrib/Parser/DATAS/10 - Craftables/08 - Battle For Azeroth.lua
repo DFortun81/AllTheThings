@@ -3,8 +3,8 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(8, { -- Battle For Azeroth
-		n(-180, { -- Alchemy
+	tier(8, {	-- Battle For Azeroth
+		n(-180, {	-- Alchemy
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(101, {	-- Battle Pets
 				{	-- Quivering Sac
@@ -78,7 +78,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-181, { -- Blacksmithing
+		n(-181, {	-- Blacksmithing
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
 			filter(20, {	-- Daggers
 				{	-- Honorable Combatant's Shanker [A]
@@ -496,7 +496,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-182, { -- Enchanting
+		n(-182, {	-- Enchanting
 			filter(101, {	-- Battle Pets
 				{	-- Enchanted Tiki Mask
 					["itemID"] = 152878,	-- Enchanted Tiki Mask
@@ -529,58 +529,63 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-183, { -- Engineering
+		n(-183, {	-- Engineering
+			filter(100, {	-- Mounts
+				{	-- Mecha-Mogul Mk2*
+					["itemID"] = 161134,	-- Mecha-Mogul Mk2
+				},
+			}),
 			filter(101, {	-- Battle Pets
-				{	-- Mechantula
+				{	-- Mechantula*
 					["itemID"] = 165849,	-- Mechantula
 				},
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Honorable Combatant's Discombobulator
+				{	-- Honorable Combatant's Discombobulator*
 					["itemID"] = 159937,	-- Honorable Combatant's Discombobulator
 				},
-				{	-- Magnetic Discombobulator
+				{	-- Magnetic Discombobulator*
 					["itemID"] = 152830,	-- Magnetic Discombobulator
 				},
-				{	-- Precision Attitude Adjuster
+				{	-- Precision Attitude Adjuster*
 					["itemID"] = 152837,	-- Precision Attitude Adjuster
 				},
-				{	-- Sinister Combatant's Discombobulator
+				{	-- Sinister Combatant's Discombobulator*
 					["itemID"] = 164680,	-- Sinister Combatant's Discombobulator
 				},
 			}),
 			filter(31, {	-- Guns
-				{	-- Finely-Tuned Stormsteel Destroyer [A]
+				{	-- Finely-Tuned Stormsteel Destroyer [A]*
 					["itemID"] = 161930,	-- Finely-Tuned Stormsteel Destroyer [A]
 				},
-				{	-- Finely-Tuned Stormsteel Destroyer [H]
+				{	-- Finely-Tuned Stormsteel Destroyer [H]*
 					["itemID"] = 153506,	-- Finely-Tuned Stormsteel Destroyer [H]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [A]
+				{	-- Honorable Combatant's Stormsteel Destroyer [A]*
 					["itemID"] = 161931,	-- Honorable Combatant's Stormsteel Destroyer [A]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [H]
+				{	-- Honorable Combatant's Stormsteel Destroyer [H]*
 					["itemID"] = 159936,	-- Honorable Combatant's Stormsteel Destroyer [H]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [A]
+				{	-- Sinister Combatant's Stormsteel Destroyer [A]*
 					["itemID"] = 164696,	-- Sinister Combatant's Stormsteel Destroyer [A]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [H]
+				{	-- Sinister Combatant's Stormsteel Destroyer [H]*
 					["itemID"] = 164679,	-- Sinister Combatant's Stormsteel Destroyer [H]
 				},
 			}),
 			n(-320,	{ 		-- Head
 				filter(4, {	-- Cloth
-					{	-- AZ3-R1-T3 Synthetic Specs
+					{	-- AZ3-R1-T3 Synthetic Specs*
 						["itemID"] = 160488,	-- AZ3-R1-T3 Synthetic Specs
 					},
-					{	-- Charged SP1-R1-73D Synthetic Specs
+					{	-- Charged SP1-R1-73D Synthetic Specs*
 						["itemID"] = 165895,	-- Charged SP1-R1-73D Synthetic Specs
 					},
-					{	-- Emblazoned Synthetic Specs
+					{	-- Emblazoned Synthetic Specs*
 						["itemID"] = 166980,	-- Emblazoned Synthetic Specs
 					},
-					{	-- Imbued Synthetic Specs
+					{	-- Imbued Synthetic Specs*
 						["itemID"] = 166979,	-- Imbued Synthetic Specs
 						["g"] = {
 							{	-- Schematic: Emblazoned Synthetic Specs
@@ -588,7 +593,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Synthetic Specs
+					{	-- SP1-R1-73D Synthetic Specs*
 						["itemID"] = 165890,	-- SP1-R1-73D Synthetic Specs
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Synthetic Specs
@@ -596,7 +601,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Synthetic Specs
+					{	-- Surging Synthetic Specs*
 						["itemID"] = 165885,	-- Surging Synthetic Specs
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Synthetic Specs
@@ -606,16 +611,16 @@ _.Craftables =
 					},
 				}),
 				filter(5, {	-- Leather
-					{	-- AZ3-R1-T3 Gearspun Goggles
+					{	-- AZ3-R1-T3 Gearspun Goggles*
 						["itemID"] = 160489,	-- AZ3-R1-T3 Gearspun Goggles
 					},
-					{	-- Charged SP1-R1-73D Gearspun Goggles
+					{	-- Charged SP1-R1-73D Gearspun Goggles*
 						["itemID"] = 165896,	-- Charged SP1-R1-73D Gearspun Goggles
 					},
-					{	-- Emblazoned Gearspun Goggles
+					{	-- Emblazoned Gearspun Goggles*
 						["itemID"] = 166982,	-- Emblazoned Gearspun Goggles
 					},
-					{	-- Imbued Gearspun Goggles
+					{	-- Imbued Gearspun Goggles*
 						["itemID"] = 166981,	-- Imbued Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: Emblazoned Gearspun Goggles
@@ -623,7 +628,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Gearspun Goggles
+					{	-- SP1-R1-73D Gearspun Goggles*
 						["itemID"] = 165891,	-- SP1-R1-73D Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
@@ -631,7 +636,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Gearspun Goggles
+					{	-- Surging Gearspun Goggles*
 						["itemID"] = 165886,	-- Surging Gearspun Goggles
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Gearspun Goggles
@@ -641,16 +646,16 @@ _.Craftables =
 					},
 				}),
 				filter(6, {	-- Mail
-					{	-- AZ3-R1-T3 Bionic Bifocals
+					{	-- AZ3-R1-T3 Bionic Bifocals*
 						["itemID"] = 160490,	-- AZ3-R1-T3 Bionic Bifocals
 					},
-					{	-- Charged SP1-R1-73D Bionic Bifocals
+					{	-- Charged SP1-R1-73D Bionic Bifocals*
 						["itemID"] = 165897,	-- Charged SP1-R1-73D Bionic Bifocals
 					},
-					{	-- Emblazoned Bionic Bifocals
+					{	-- Emblazoned Bionic Bifocals*
 						["itemID"] = 166984,	-- Emblazoned Bionic Bifocals
 					},
-					{	-- Imbued Bionic Bifocals
+					{	-- Imbued Bionic Bifocals*
 						["itemID"] = 166983,	-- Imbued Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: Emblazoned Bionic Bifocals
@@ -658,7 +663,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Bionic Bifocals
+					{	-- SP1-R1-73D Bionic Bifocals*
 						["itemID"] = 165892,	-- SP1-R1-73D Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
@@ -666,7 +671,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Bionic Bifocals
+					{	-- Surging Bionic Bifocals*
 						["itemID"] = 165887,	-- Surging Bionic Bifocals
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Bionic Bifocals
@@ -676,16 +681,16 @@ _.Craftables =
 					},
 				}),
 				filter(7, {	-- Plate
-					{	-- AZ3-R1-T3 Orthogonal Optics
+					{	-- AZ3-R1-T3 Orthogonal Optics*
 						["itemID"] = 160491,	-- AZ3-R1-T3 Orthogonal Optics
 					},
-					{	-- Charged SP1-R1-73D Orthogonal Optics
+					{	-- Charged SP1-R1-73D Orthogonal Optics*
 						["itemID"] = 165898,	-- Charged SP1-R1-73D Orthogonal Optics
 					},
-					{	-- Emblazoned Orthogonal Optics
+					{	-- Emblazoned Orthogonal Optics*
 						["itemID"] = 166986,	-- Emblazoned Orthogonal Optics
 					},
-					{	-- Imbued Orthogonal Optics
+					{	-- Imbued Orthogonal Optics*
 						["itemID"] = 166985,	-- Imbued Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: Emblazoned Orthogonal Optics
@@ -693,7 +698,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- SP1-R1-73D Orthogonal Optics
+					{	-- SP1-R1-73D Orthogonal Optics*
 						["itemID"] = 165893,	-- SP1-R1-73D Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
@@ -701,7 +706,7 @@ _.Craftables =
 							},
 						},
 					},
-					{	-- Surging Orthogonal Optics
+					{	-- Surging Orthogonal Optics*
 						["itemID"] = 165888,	-- Surging Orthogonal Optics
 						["g"] = {
 							{	-- Schematic: SP1-R1-73D Orthogonal Optics
@@ -712,9 +717,9 @@ _.Craftables =
 				}),
 			}),
 		}),
-		n(-185, { -- Inscription
+		n(-185, {	-- Inscription
 		-- Reviewed and updated as of 12.16.2018 BfA 8.1
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War
 					sp(267087, {	-- Blockades Deck
 						i(159128),	-- Darkmoon Deck: Blockades
@@ -750,8 +755,11 @@ _.Craftables =
 					["itemID"] = 164682,	-- Sinister Combatant's Etched Vessel [H]
 				},
 			}),
+			sp(256236, {	-- Tome of the Quiet Mind
+				i(153647),	-- Tome of the Quiet Mind
+			}),
 		}),
-		n(-186, { -- Jewelcrafting
+		n(-186, {	-- Jewelcrafting
 		-- Reviewed and updated as of 12.15.2018 BfA 8.1
 			filter(28, {	-- Staves
 				{	-- Honorable Combatant's Staff of Intuition
@@ -838,7 +846,7 @@ _.Craftables =
 				},
 			}),
 		}),
-		n(-187, { -- Leatherworking
+		n(-187, {	-- Leatherworking
 			{	-- Coarse Leather Armguards [A]
 				["itemID"] = 161945,	-- Coarse Leather Armguards [A]
 			},
@@ -1402,7 +1410,7 @@ _.Craftables =
 				["itemID"] = 165400,	-- Tempered Tempest Leggings [H]
 			},
 		}),
-		n(-190, { -- Tailoring
+		n(-190, {	-- Tailoring
 			n(-37, {	-- Discovery
 				sp(257122, {	-- Embroidered Deep Sea Breeches
 					i(162509),	-- Pattern: Imbued Deep Sea Breeches
@@ -1417,92 +1425,112 @@ _.Craftables =
 					i(162508),	-- Pattern: Emblazoned Deep Sea Gloves
 				}),
 			}),
-			i(154695),	-- Deep Sea Bag
-			i(162480),	-- Emblazoned Deep Sea Breeches [A]
-			i(162478),	-- Emblazoned Deep Sea Breeches [H]
-			i(162479),	-- Emblazoned Deep Sea Gloves [A]
-			i(162476),	-- Emblazoned Deep Sea Gloves [H]
-			i(154696),	-- Embroidered Deep Sea Bag
-			i(161986),	-- Embroidered Deep Sea Breeches [A]
-			i(154694),	-- Embroidered Deep Sea Breeches [H]
-			i(161990),	-- Embroidered Deep Sea Cloak [A]
-			i(154700),	-- Embroidered Deep Sea Cloak [H]
-			i(161985),	-- Embroidered Deep Sea Gloves [A]
-			i(154693),	-- Embroidered Deep Sea Gloves [H]
-			i(165377, {	-- Enhanced Deep Sea Breeches [A]
-				i(165655),	-- Pattern: Fortified Deep Sea Breeches
+			filter(113, {	-- Bags
+				i(154695),	-- Deep Sea Bag
+				i(154696),	-- Embroidered Deep Sea Bag
 			}),
-			i(165378, {	-- Enhanced Deep Sea Breeches [H]
-				i(165655),	-- Pattern: Fortified Deep Sea Breeches
+			n(-323, {	-- Chest
+				i(161977),	-- Tidespray Linen Robe [A]
+				i(154685),	-- Tidespray Linen Robe [H]
 			}),
-			i(165402, {	-- Enhanced Deep Sea Gloves [A]
-				i(165652),	-- Pattern: Fortified Deep Sea Gloves
+			n(-322, {	-- Cloaks
+				i(161990),	-- Embroidered Deep Sea Cloak [A]
+				i(154700),	-- Embroidered Deep Sea Cloak [H]
+				i(161998),	-- Honorable Combatant's Satin Cloak [A]
+				i(159917),	-- Honorable Combatant's Satin Cloak [H]
+				i(164717),	-- Sinister Combatant's Satin Cloak [A]
+				i(164676),	-- Sinister Combatant's Satin Cloak [H]
+				i(161987),	-- Tidespray Linen Cloak [A]
+				i(154697),	-- Tidespray Linen Cloak [H]
 			}),
-			i(165403, {	-- Enhanced Deep Sea Gloves [H]
-				i(165652),	-- Pattern: Fortified Deep Sea Gloves
+			n(-330, {	-- Feet
+				i(161993),	-- Honorable Combatant's Satin Boots [A]
+				i(159912),	-- Honorable Combatant's Satin Boots [H]
+				i(164712),	-- Sinister Combatant's Satin Boots [A]
+				i(164671),	-- Sinister Combatant's Satin Boots [H]
+				i(161978),	-- Tidespray Linen Sandals [A]
+				i(154686),	-- Tidespray Linen Sandals [H]
 			}),
-			i(165385, {	-- Fortified Deep Sea Breeches [A]
-				i(165654),	-- Pattern: Tempered Deep Sea Breeches
+			n(-327, {	-- Hands
+				i(162479),	-- Emblazoned Deep Sea Gloves [A]
+				i(162476),	-- Emblazoned Deep Sea Gloves [H]
+				i(161985),	-- Embroidered Deep Sea Gloves [A]
+				i(154693),	-- Embroidered Deep Sea Gloves [H]
+				i(165402, {	-- Enhanced Deep Sea Gloves [A]
+					i(165652),	-- Pattern: Fortified Deep Sea Gloves
+				}),
+				i(165403, {	-- Enhanced Deep Sea Gloves [H]
+					i(165652),	-- Pattern: Fortified Deep Sea Gloves
+				}),
+				i(165410, {	-- Fortified Deep Sea Gloves [A]
+					i(165653),	-- Pattern: Tempered Deep Sea Gloves
+				}),
+				i(165411, {	-- Fortified Deep Sea Gloves [H]
+					i(165653),	-- Pattern: Tempered Deep Sea Gloves
+				}),
+				i(161994),	-- Honorable Combatant's Satin Mittens [A]
+				i(159913),	-- Honorable Combatant's Satin Mittens [H]
+				i(162487),	-- Imbued Deep Sea Gloves [A]
+				i(162475),	-- Imbued Deep Sea Gloves [H]
+				i(164713),	-- Sinister Combatant's Satin Mittens [A]
+				i(164672),	-- Sinister Combatant's Satin Mittens [H]
+				i(165418),	-- Tempered Deep Sea Gloves [A]
+				i(165419),	-- Tempered Deep Sea Gloves [H]
+				i(161979),	-- Tidespray Linen Mittens [A]
+				i(154687),	-- Tidespray Linen Mittens [H]
 			}),
-			i(165386, {	-- Fortified Deep Sea Breeches [H]
-				i(165654),	-- Pattern: Tempered Deep Sea Breeches
+			n(-320, {	-- Head
+				i(161980),	-- Tidespray Linen Hood [A]
+				i(154688),	-- Tidespray Linen Hood [H]
 			}),
-			i(165410, {	-- Fortified Deep Sea Gloves [A]
-				i(165653),	-- Pattern: Tempered Deep Sea Gloves
+			n(-329, {	-- Legs
+				i(162480),	-- Emblazoned Deep Sea Breeches [A]
+				i(162478),	-- Emblazoned Deep Sea Breeches [H]
+				i(161986),	-- Embroidered Deep Sea Breeches [A]
+				i(154694),	-- Embroidered Deep Sea Breeches [H]
+				i(165377, {	-- Enhanced Deep Sea Breeches [A]
+					i(165655),	-- Pattern: Fortified Deep Sea Breeches
+				}),
+				i(165378, {	-- Enhanced Deep Sea Breeches [H]
+					i(165655),	-- Pattern: Fortified Deep Sea Breeches
+				}),
+				i(165385, {	-- Fortified Deep Sea Breeches [A]
+					i(165654),	-- Pattern: Tempered Deep Sea Breeches
+				}),
+				i(165386, {	-- Fortified Deep Sea Breeches [H]
+					i(165654),	-- Pattern: Tempered Deep Sea Breeches
+				}),
+				i(161995),	-- Honorable Combatant's Satin Pants [A]
+				i(159914),	-- Honorable Combatant's Satin Pants [H]
+				i(162488),	-- Imbued Deep Sea Breeches [A]
+				i(162477),	-- Imbued Deep Sea Breeches [H]
+				i(164714),	-- Sinister Combatant's Satin Pants [A]
+				i(164673),	-- Sinister Combatant's Satin Pants [H]
+				i(165393),	-- Tempered Deep Sea Breeches [A]
+				i(165394),	-- Tempered Deep Sea Breeches [H]
+				i(161981),	-- Tidespray Linen Pants [A]
+				i(154689),	-- Tidespray Linen Pants [H]
 			}),
-			i(165411, {	-- Fortified Deep Sea Gloves [H]
-				i(165653),	-- Pattern: Tempered Deep Sea Gloves
+			n(-321, {	-- Shoulders
+				i(161982),	-- Tidespray Linen Spaulders [A]
+				i(154690),	-- Tidespray Linen Spaulders [H]
 			}),
-			i(161996),	-- Honorable Combatant's Satin Belt [A]
-			i(159915),	-- Honorable Combatant's Satin Belt [H]
-			i(161993),	-- Honorable Combatant's Satin Boots [A]
-			i(159912),	-- Honorable Combatant's Satin Boots [H]
-			i(161997),	-- Honorable Combatant's Satin Bracers [A]
-			i(159916),	-- Honorable Combatant's Satin Bracers [H]
-			i(161998),	-- Honorable Combatant's Satin Cloak [A]
-			i(159917),	-- Honorable Combatant's Satin Cloak [H]
-			i(161994),	-- Honorable Combatant's Satin Mittens [A]
-			i(159913),	-- Honorable Combatant's Satin Mittens [H]
-			i(161995),	-- Honorable Combatant's Satin Pants [A]
-			i(159914),	-- Honorable Combatant's Satin Pants [H]
-			i(162488),	-- Imbued Deep Sea Breeches [A]
-			i(162477),	-- Imbued Deep Sea Breeches [H]
-			i(162487),	-- Imbued Deep Sea Gloves [A]
-			i(162475),	-- Imbued Deep Sea Gloves [H]
-			i(164715),	-- Sinister Combatant's Satin Belt [A]
-			i(164674),	-- Sinister Combatant's Satin Belt [H]
-			i(164712),	-- Sinister Combatant's Satin Boots [A]
-			i(164671),	-- Sinister Combatant's Satin Boots [H]
-			i(164716),	-- Sinister Combatant's Satin Bracers [A]
-			i(164675),	-- Sinister Combatant's Satin Bracers [H]
-			i(164717),	-- Sinister Combatant's Satin Cloak [A]
-			i(164676),	-- Sinister Combatant's Satin Cloak [H]
-			i(164713),	-- Sinister Combatant's Satin Mittens [A]
-			i(164672),	-- Sinister Combatant's Satin Mittens [H]
-			i(164714),	-- Sinister Combatant's Satin Pants [A]
-			i(164673),	-- Sinister Combatant's Satin Pants [H]
-			i(165393),	-- Imbued Deep Sea Breeches [A]
-			i(165394),	-- Imbued Deep Sea Breeches [H]
-			i(165418),	-- Imbued Deep Sea Gloves [A]
-			i(165419),	-- Imbued Deep Sea Gloves [H]
-			i(161983),	-- Tidespray Linen Belt [A]
-			i(154691),	-- Tidespray Linen Belt [H]
-			i(161984),	-- Tidespray Linen Bracers [A]
-			i(154692),	-- Tidespray Linen Bracers [H]
-			i(161987),	-- Tidespray Linen Cloak [A]
-			i(154697),	-- Tidespray Linen Cloak [H]
-			i(161980),	-- Tidespray Linen Hood [A]
-			i(154688),	-- Tidespray Linen Hood [H]
-			i(161979),	-- Tidespray Linen Mittens [A]
-			i(154687),	-- Tidespray Linen Mittens [H]
-			i(161981),	-- Tidespray Linen Pants [A]
-			i(154689),	-- Tidespray Linen Pants [H]
-			i(161977),	-- Tidespray Linen Robe [A]
-			i(154685),	-- Tidespray Linen Robe [H]
-			i(161978),	-- Tidespray Linen Sandals [A]
-			i(154686),	-- Tidespray Linen Sandals [H]
-			i(161982),	-- Tidespray Linen Spaulders [A]
-			i(154690),	-- Tidespray Linen Spaulders [H]
+			n(-328, {	-- Waist
+				i(161996),	-- Honorable Combatant's Satin Belt [A]
+				i(159915),	-- Honorable Combatant's Satin Belt [H]
+				i(164715),	-- Sinister Combatant's Satin Belt [A]
+				i(164674),	-- Sinister Combatant's Satin Belt [H]
+				i(161983),	-- Tidespray Linen Belt [A]
+				i(154691),	-- Tidespray Linen Belt [H]
+			}),
+			n(-326, {	-- Wrist
+				i(161997),	-- Honorable Combatant's Satin Bracers [A]
+				i(159916),	-- Honorable Combatant's Satin Bracers [H]
+				i(164716),	-- Sinister Combatant's Satin Bracers [A]
+				i(164675),	-- Sinister Combatant's Satin Bracers [H]
+				i(161984),	-- Tidespray Linen Bracers [A]
+				i(154692),	-- Tidespray Linen Bracers [H]
+			}),
 		}),
 	}),
 };

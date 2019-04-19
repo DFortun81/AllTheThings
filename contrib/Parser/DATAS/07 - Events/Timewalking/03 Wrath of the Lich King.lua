@@ -78,8 +78,19 @@ _.WorldEvents =
 								i(44983),	-- Strand Crawler Pet
 								i(45984),	-- Unusual Compass Toy
 								i(33820),	-- Weather-Beaten Fishing Hat
+								i(45986, {	-- Tiny Titanium Lockbox
+									i(45995),	-- Forgotten Necklace
+									i(36444),	-- Ice Encrusted Amulet
+									i(36443),	-- Platinum Medallion
+									i(36442),	-- Silken Cord Amulet
+									i(36428),	-- Bouquet Ring
+									i(45994),	-- Lost Ring
+									i(36430),	-- Puzzle Ring
+									i(36429),	-- Spur Ring
+									i(45859),	-- The 5 Ring
+								}),
 							}),
-							i(44113, { -- Small Spice Bag
+							i(44113, {	-- Small Spice Bag
 								i(34834),	-- Recipe: Captain Rumsey's Lager
 								i(33925),	-- Recipe: Delicious Chocolate Cake
 								i(33871),	-- Recipe: Stormchops
@@ -88,6 +99,7 @@ _.WorldEvents =
 						["maps"] = {
 							125,	--  Dalaran: Northrend
 						},
+						["lvl"] = 80,
 					}),
 				},
 			}),

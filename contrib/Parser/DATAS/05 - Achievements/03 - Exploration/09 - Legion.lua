@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9982, { -- Legion
+			n(-9982, {	-- Legion
 				["groups"] = {
 					ach(11261, {	-- Adventurer of Azsuna
 						crit(1),		-- Valiyaka the Stormbringer

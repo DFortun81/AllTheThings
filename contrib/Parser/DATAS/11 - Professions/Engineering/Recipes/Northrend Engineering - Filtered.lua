@@ -218,11 +218,13 @@ profession(202, {	-- Engineering
 					["g"] = {
 						{
 							["name"] = "Mechano-Hog",
-							["recipeID"] = 60866
+							["recipeID"] = 60866,
+							["races"] = HORDE_ONLY,
 						},
 						{
 							["name"] = "Mekgineer's Chopper",
-							["recipeID"] = 60867
+							["recipeID"] = 60867,
+							["races"] = ALLIANCE_ONLY,
 						}
 					}
 				},

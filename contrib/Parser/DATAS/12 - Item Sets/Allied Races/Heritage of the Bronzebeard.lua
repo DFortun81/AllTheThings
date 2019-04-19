@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1803, { -- Heritage of the Bronzebeard
+			gs(1803, {	-- Heritage of the Bronzebeard
 				["groups"] = {
 					i(165931),	-- Bronzebeard Helm
 					i(165932),	-- Bronzebeard Pauldrons

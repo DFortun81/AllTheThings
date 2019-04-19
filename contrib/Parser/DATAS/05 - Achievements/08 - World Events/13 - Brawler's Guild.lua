@@ -12,26 +12,26 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = {
-			n(-10026, { -- Brawler's Guidl
+			n(-10026, {	-- Brawler's Guild
 				["groups"] = {
 					ach(11570),		-- Educated Guesser
-					ach(11572),		-- I Am Thrall's Complete Lack Of Surprise
-					a(ach(11565, {	-- King of the Guild (Alliance)
+					ach(13194),		-- I Am Thrall's Complete Lack Of Surprise(BFA)
+					a(ach(13191, {	-- Brawler for Azeroth (Alliance)(BFA)
 						title(209),		-- Brawler
-						ach(11563, {	-- The Second Rule of Brawler's Guild
+						ach(13189, {	-- The Second Rule of Brawler's Guild(BFA)
 							i(93195),		-- Brawler's Pass
 						}),
-						ach(11560),		-- You Are Not Your $#*@! Legplates
+						ach(13186),		-- You Are Not Your $#*@! Legplates(BFA)
 						ach(11558),		-- The First Rule of Brawler's Guild
 					})),
-					h(ach(11566, {	-- King of the Guild (Horde)
+					h(ach(13192, {	-- Brawler for Azeroth (Horde)(BFA)
 						title(209),		-- Brawler
-						ach(11564, {	-- The Second Rule of Brawler's Guild
+						ach(13190, {	-- The Second Rule of Brawler's Guild(BFA)
 							i(93228),		-- Brawler's Pass
 						}),
-						ach(11561),		-- You Are Not Your $#*@! Legplates
+						ach(13188),		-- You Are Not Your $#*@! Legplates(BFA)
 						ach(11559),		-- The First Rule of Brawler's Guild
 					})),
 					ach(11573, {	-- Rumble Club

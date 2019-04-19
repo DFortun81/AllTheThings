@@ -56,19 +56,19 @@ namespace Parser_V2
                 Console.ReadLine();
                 return;
             }
-            
-            foreach(var fileName in luaFiles)
+
+            Lua lua = new Lua();
+            lua.DoFile("./_main.lua");
+            foreach (var fileName in luaFiles)
             {
                 //Debug.WriteLine(fileName);
                 do
                 {
                     try
                     {
-                        Lua lua = new Lua();
-                        lua.DoFile("./_main.lua");
+                        lua.DoString("AllTheThings = {};_ = AllTheThings;");
                         lua.DoFile(fileName);
                         Framework.Merge(lua.GetTable("AllTheThings"));
-                        lua.Close();
                         break;
                     }
                     catch(Exception e)
@@ -81,6 +81,7 @@ namespace Parser_V2
                 }
                 while (true);
             }
+            lua.Close();
 
             // Now that all of the data and items have been loaded into the Database, let's Process it!
             Framework.Process();

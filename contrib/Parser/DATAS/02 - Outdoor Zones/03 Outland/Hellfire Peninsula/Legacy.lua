@@ -39,7 +39,7 @@ _.Zones =
 							})),
 							un(40, qh(9438, {	-- Messenger to Thrall
 								["sourceQuest"] = 9406,	-- The Mag'har
-								["qg"] = 3230, -- Nazgrel
+								["qg"] = 3230,	-- Nazgrel
 							})),
 							un(40, qa( 47025)),	-- Blood: Aid of the Illidari
 							un(40, qa( 47024)),	-- Brewmaster: Aid of the Illidari

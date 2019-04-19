@@ -23,7 +23,7 @@ _.WorldEvents =
 				}),
 				i(34518), 	-- Golden Pig
 				i(34519), 	-- Silver Pig
-				p(231),		-- Jade Tiger
+				i(46894),	-- Jade Tiger
 				n(-548, {	-- China Only
 					ach(3636, {	-- Jade Tiger
 						["collectible"] = false,

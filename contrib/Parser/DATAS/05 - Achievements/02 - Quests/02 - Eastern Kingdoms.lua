@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9975, { -- Eastern Kingdoms
+			n(-9975, {	-- Eastern Kingdoms
 				["groups"] = {
 					ach(4896, {		-- Arathi Highlands Quests
 						crit(1),		-- Faldir's Cove

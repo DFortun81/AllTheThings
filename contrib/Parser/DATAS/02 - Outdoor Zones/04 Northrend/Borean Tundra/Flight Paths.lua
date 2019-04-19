@@ -10,7 +10,7 @@ _.Zones =
 				["mapID"] = 114,
 				["g"] = {
 					n(-228, {	-- Flight Paths
-						fp(289, { -- Amber Ledge, Borean Tundra
+						fp(289, {	-- Amber Ledge, Borean Tundra
 							["coord"] = { 45.2, 34.4, 114 },
 						}),
 						fp(259, {	-- Bor'gorok Outpost, Borean Tundra

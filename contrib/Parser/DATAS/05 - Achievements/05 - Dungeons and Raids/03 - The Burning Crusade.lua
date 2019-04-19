@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10003, { -- The Burning Crusade
+			n(-10003, {	-- The Burning Crusade
 				["groups"] = {
 					ach(666),	-- Auchenai Crypts
 					ach(692),	-- Gruul's Lair

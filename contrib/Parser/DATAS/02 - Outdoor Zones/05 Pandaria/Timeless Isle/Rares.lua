@@ -25,7 +25,7 @@ _.Zones =
 									["criteriaID"] = 31,		-- Archiereus of Flame
 								},
 								{	-- Burden of Eternity
-									["itemID"] = 03982,	-- Burden of Eternity
+									["itemID"] = 103982,	-- Burden of Eternity
 								},
 								{	-- Elixir of Ancient Knowledge
 									["itemID"] = 86574,	-- Elxir of Ancient Knowledge
@@ -457,8 +457,8 @@ _.Zones =
 						}),
 						{	-- Spelurk*
 							["npcID"] = 71864,	-- Spelurk
-							["questID"] = 32960, -- Says Cave-In, but should be KillID
-							--["questID"] = 33164, -- Says killID but should be cave in
+							["questID"] = 32960,	-- Says Cave-In, but should be KillID
+							--["questID"] = 33164,	-- Says killID but should be cave in
 							["isDaily"] = true,
 							["coords"] = {
 								{ 59.54, 48.95, 554 },
@@ -482,6 +482,25 @@ _.Zones =
 							["groups"] = {
 								i(103982),	-- Burden of Eternity
 							},
+						}),
+						n(72769, { 	-- Spirit of Jadefire
+							["groups"] = {
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 45,		-- Glowing Green Ash [Criteria]
+									["itemID"] = 104258,	-- Glowing Green Ash [Item]
+									["dr"] = 1.9,
+								},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 21,		-- Jadefire Spirit [Criteria]
+									["itemID"] = 104307,		-- Jadefire Spirit [Item]
+									["dr"] = 1.9,
+								},
+								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
+							},
+							["questID"] = 33293,
+							["isDaily"] = true,
 						}),
 						n(72808, {	-- Tsavo'ka
 							["questID"] = 33304,

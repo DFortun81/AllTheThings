@@ -147,7 +147,17 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 278419--[[Kaleidoscopic Lens]]
 						}
 					}
-				}
+				},
+				{	-- Tools of the Trade
+					["name"] = "Tools of the Trade",
+					["categoryID"] = 1278,
+					["g"] = {
+						{	-- Jewelhammer's Focus
+							["name"] = "Jewelhammer's Focus",
+							["recipeID"] = 256703
+						},
+					},
+				},
 			}
 		},
 	}),

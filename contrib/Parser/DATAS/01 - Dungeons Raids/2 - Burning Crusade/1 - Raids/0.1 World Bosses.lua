@@ -3,9 +3,15 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, {	-- Burning Crusade
-	n(-7, { -- World Bosses
+	n(-7, {	-- World Bosses
+		["isRaid"] = true,
+		["lvl"] = 70,
 		["groups"] = { 
 			n(18728, { 	-- Doom Lord Kazzak
+				["description"] = "Originally known just as Lord Kazzak, but after he found an artifact to reopen the Dark Portal and travelled through it, he was promoted. He now commands the Legion war effort in Outland in the name of his master, Kil'jaeden. Lord Kazzak's replacement on Azeroth after the re-opening of the Dark Portal is Highlord Kruul, one of Kazzak's minions.",
+				["isRaid"] = true,
+				["maps"] = { 100 },	-- Hellfire Peninsula
+				["coord"] = { 63.2, 16.0, 100 },
 				["groups"] = {
 					i(30732),	-- Exodar Life-Staff
 					i(30733),	-- Hope Ender
@@ -18,11 +24,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30736),	-- Ring of Flowing Light
 					i(30738),	-- Ring of Reciprocity
 				},
-				["description"] = "|cff66ccffLocated at the Throne of Kil'jaeden, Hellfire Penninsula|r",
-				["isRaid"] = true,
-				["maps"] = { 100 }, -- Hellfire Peninsula
 			}),
 			n(17711, { 	-- Doomwalker
+				["description"] = "Doomwalker is a powerful Fel Reaver sent by Kil'jaeden to assault the gates of the Black Temple in Shadowmoon Valley.",
+				["isRaid"] = true,
+				["maps"] = { 104 },	-- Shadowmoon Valley (Outland)
+				["coord"] = { 71.4, 43.8, 104 },
 				["groups"] = {
 					i(30724),	-- Barrel-Blade Longrifle
 					i(30722),	-- Ethereum Nexus-Reaver
@@ -35,12 +42,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(30725),	-- Anger-Spark Gloves
 					i(30727),	-- Gilded Trousers of Benediction
 				},
-				["description"] = "|cff66ccffLocated outside of Black Temple, Shadowmoon Valley|r",
-				["isRaid"] = true,
-				["maps"] = { 104 }, -- Shadowmoon Valley (Outland)
 			}),	
 		},
-		["isRaid"] = true,
-		["lvl"] = 70,
 	}),
 })};

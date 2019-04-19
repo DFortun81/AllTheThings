@@ -35,6 +35,7 @@ _.GroupFinder =
 				   i(113707),   -- Emberspark Plate Leggings*
 				   i(113781),	-- Emberspark Plate Sabatons*
 				   i(113702),	-- Emberspark Plate Wristguards
+				   i(113719),	-- Emberspark Plate Gloves (confirmed 16.04.2019)
 				},
 				["description"] = "|cff66ccffBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation",
 				["lvl"] = 80,

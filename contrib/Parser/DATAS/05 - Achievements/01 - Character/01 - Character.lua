@@ -4,7 +4,7 @@
 
 _.Achievements = 
 {
-	n(-10051, { -- Character
+	n(-10051, {	-- Character
 		["groups"] = {
 			ach(5180, {		-- Breaking The Sound Barrier (Master)
 				ach(891),		-- Giddy Up! (Apprentice)

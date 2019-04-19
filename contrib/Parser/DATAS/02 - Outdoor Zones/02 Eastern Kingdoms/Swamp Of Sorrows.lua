@@ -7,16 +7,16 @@ _.Zones =
 		m(51, {	-- Swamp of Sorrows
 			["groups"] = {		
 				n(-228, {	-- Flight Path
-					fp(599, { -- Bogpaddle, Swamp of Sorrows
+					fp(599, {	-- Bogpaddle, Swamp of Sorrows
 						["coord"] = { 72, 12 },
 					}),
-					fp(598, { -- Marshtide Watch, Swamp of Sorrows
+					fp(598, {	-- Marshtide Watch, Swamp of Sorrows
 						["coord"] = { 70, 38.4 },
 					}),
-					fp(56, { -- Stonard, Swamp of Sorrows
+					fp(56, {	-- Stonard, Swamp of Sorrows
 						["coord"] = { 47.6, 55 },
 					}),
-					fp(600, { -- The Harborage, Swamp of Sorrows
+					fp(600, {	-- The Harborage, Swamp of Sorrows
 						["coord"] = { 30.6, 34.6 },
 					}),
 				}),
@@ -33,13 +33,13 @@ _.Zones =
 					p(418),	-- Water Snake
 				}),
 				n(-17,  {	-- Quests
-					ach(4904, { -- Swamp of Sorrows Quests
-						crit(1, { -- Bogpaddle
+					ach(4904, {	-- Swamp of Sorrows Quests
+						crit(1, {	-- Bogpaddle
 							q(27587, {	-- Maliciously Delicious
 								["qg"] = 45786,
 								["sourceQuests"] = { 28569,28570,28675,28677 },
 							}),
-							q(27536, { -- Mostly Harmless
+							q(27536, {	-- Mostly Harmless
 								["groups"] = {
 									i(64589),
 									i(64599),
@@ -60,7 +60,7 @@ _.Zones =
 								["qg"] = 45948,
 								["sourceQuests"] = { 27597 },
 							}),
-							q(27599, { -- Can't Take It With Them
+							q(27599, {	-- Can't Take It With Them
 								["groups"] = {
 									i(64590),
 									i(64600),
@@ -70,7 +70,7 @@ _.Zones =
 								["qg"] = 45948,
 								["sourceQuests"] = { 27597 },
 							}),
-							q(27600, { -- In With a Bang
+							q(27600, {	-- In With a Bang
 								["groups"] = {
 									i(64591),
 									i(64601),
@@ -81,12 +81,12 @@ _.Zones =
 								["sourceQuests"] = { 27598,27599 },
 							}),
 						}),
-						crit(2, { -- The Bloodmire
+						crit(2, {	-- The Bloodmire
 							qa(27821, {	-- Orcs and Humans
 								["qg"] = 46676,
 								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
 							}),
-							qa(27822, { -- Lumbering Oafs
+							qa(27822, {	-- Lumbering Oafs
 								["groups"] = {
 									i(64593),
 									i(64603),
@@ -95,13 +95,13 @@ _.Zones =
 								["qg"] = 46676,
 								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
 							}),
-							qa(27795, { -- Tides of Darkness
+							qa(27795, {	-- Tides of Darkness
 								["groups"] = {
 									i(64594),
 									i(64620),
 									i(64613),
 									i(64604),
-									i(157013), -- Ogre Mage Club
+									i(157013),	-- Ogre Mage Club
 								},
 								["qg"] = 46676,
 								["sourceQuests"] = { 27821,27822 },
@@ -118,7 +118,7 @@ _.Zones =
 								["qg"] = 46676,
 								["sourceQuests"] = { 27795,27843,27845 },
 							}),
-							qa(27849, { -- Assault on Stonard
+							qa(27849, {	-- Assault on Stonard
 								["groups"] = {
 									i(64623),
 									i(64595),
@@ -130,7 +130,7 @@ _.Zones =
 								["sourceQuests"] = { 27795,27843,27845 },
 							}),
 						}),
-						crit(3, { -- The Shifting Mire
+						crit(3, {	-- The Shifting Mire
 							qa(27875, {	-- Prayerblossom
 								["qg"] = 17127,
 							}),
@@ -147,13 +147,13 @@ _.Zones =
 							}),
 							qa(24913, {	-- Remember the Light
 								["groups"] = {
-									i(64597), -- Light's Embrace
+									i(64597),	-- Light's Embrace
 								},
 								["qg"] = 17127,
 								["sourceQuests"] = { 27902,27904 },
 							}),
 						}),
-						crit(4, { -- The Sunken Temple
+						crit(4, {	-- The Sunken Temple
 							q(27740, {	-- Baba Bogbrew
 								["qg"] = 45948,
 								["sourceQuests"] = { 27600 },
@@ -161,7 +161,7 @@ _.Zones =
 							q(27691, {	-- Marshfin Madness
 								["qg"] = 46172,
 							}),
-							q(27757, { -- The Darkest Depths
+							q(27757, {	-- The Darkest Depths
 								["groups"] = {
 									i(64592),
 									i(64602),
@@ -201,24 +201,24 @@ _.Zones =
 							}),
 							q(27914, {	-- Blessing of the Green Dragonflight
 								["groups"] = {
-									i(64596), -- Dream Pendant
-									i(64606), -- Dream Amulet
-									i(64615), -- Dream Medallion
+									i(64596),	-- Dream Pendant
+									i(64606),	-- Dream Amulet
+									i(64615),	-- Dream Medallion
 								},
 								["qg"] = 46071,	-- Lord Itharius (may be outside instance?)
 								["sourceQuests"] = { 27773 },
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
-						sz(782,  1, { -- Misty Valley
+					n(-168, {	-- Other Quests
+						sz(782,  1, {	-- Misty Valley
 						}),
-						sz(782,  2, { -- The Harborage
+						sz(782,  2, {	-- The Harborage
 							qa(27919, {	-- Onward to the Blasted Lands
 								["qg"] = 17127,
 							}),
 						}),
-						sz(782,  3, { -- Splinterspear Junction
+						sz(782,  3, {	-- Splinterspear Junction
 							qh(27910, {	-- Last Regrets
 								["qg"] = 47041,
 							}),
@@ -227,7 +227,7 @@ _.Zones =
 							}),
 							qh(27911, {	-- With Dying Breath
 								["groups"] = {
-									i(64627), -- Dying Breath
+									i(64627),	-- Dying Breath
 								},
 								["qg"] = 47041,
 							}),
@@ -242,10 +242,10 @@ _.Zones =
 								["qg"] = 47041,
 							}),
 						}),
-						sz(782,  4, { -- The Shifting Mire
+						sz(782,  4, {	-- The Shifting Mire
 						}),
-						sz(782,  5, { -- Stonard
-							qh(27853, { -- Lumbering Oafs
+						sz(782,  5, {	-- Stonard
+							qh(27853, {	-- Lumbering Oafs
 								["groups"] = {
 									i(64624),
 									i(64628),
@@ -270,17 +270,17 @@ _.Zones =
 							qh(27855, {	-- Reinforcements Denied
 								["qg"] = 7623,
 							}),
-							qh(27854, { -- Tides of Darkness
+							qh(27854, {	-- Tides of Darkness
 								["groups"] = {
 									i(64625),
 									i(64634),
 									i(64632),
 									i(64629),
-									i(157013), -- Ogre Mage Club
+									i(157013),	-- Ogre Mage Club
 								},
 								["qg"] = 7623,
 							}),
-							qh(27857, { -- We're Under Attack!
+							qh(27857, {	-- We're Under Attack!
 								["groups"] = {
 									i(64636),
 									i(64626),
@@ -291,11 +291,11 @@ _.Zones =
 								["qg"] = 7623,
 							}),
 						}),
-						sz(782,  6, { -- Pool of Tears
+						sz(782,  6, {	-- Pool of Tears
 						}),
-						sz(782,  7, { -- Stagalbog
+						sz(782,  7, {	-- Stagalbog
 						}),
-						sz(782,  8, { -- Sorrowmurk NOTE: This should be Temple of Atal'Hakkar
+						sz(782,  8, {	-- Sorrowmurk NOTE: This should be Temple of Atal'Hakkar
 							q(27915, {	-- The Heart of the Temple
 								["qg"] = 46071,	-- Lord Itharius
 								["sourceQuests"] = { 27914 },
@@ -309,27 +309,27 @@ _.Zones =
 								["qg"] = 46071,	-- Lord Itharius
 							}),
 						}),
-						sz(782,  9, { -- Bogpaddle
-							q(27592, { -- Drinks on the Rocks
+						sz(782,  9, {	-- Bogpaddle
+							q(27592, {	-- Drinks on the Rocks
 								["groups"] = {
 									i(64622),
 									i(64588),
 									i(64598),
 									i(64607),
 									i(64616),
-									i(157012), -- Broken Silversnap Bottle
+									i(157012),	-- Broken Silversnap Bottle
 								},
 								["qg"] = 46010,
 							}),
-							q(27663, { -- Tastes Like Strider
-								["qg"] = 46182, -- Pierre Fishflay
+							q(27663, {	-- Tastes Like Strider
+								["qg"] = 46182,	-- Pierre Fishflay
 							}),
 						}),
-						sz(782, 10, { -- Misty Reed Strand
+						sz(782, 10, {	-- Misty Reed Strand
 						}),
-						sz(782, 11, { -- Purespring Cavern
+						sz(782, 11, {	-- Purespring Cavern
 						}),
-						sz(782, 12, { -- Marshtide Watch
+						sz(782, 12, {	-- Marshtide Watch
 							qa(27840, {	-- Draenethyst Crystals
 								["qg"] = 18221,
 							}),
@@ -800,7 +800,7 @@ _.Zones =
 					}), 
 					n(14448, {	-- Molt Thorn
 						["g"] = {
-							dr(01.6, i(5608)),	-- Living Cowl
+							i(5608),	-- Living Cowl
 							un(2, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
 							dr(09.0, i(10108)),	-- Wanderer's Cloak
 							dr(03.0, i(10098)),	-- Councillor's Cloak
@@ -999,6 +999,7 @@ _.Zones =
 						["g"] = {
 							i(12254),	-- Well Oiled Cloak
 							i(12253),	-- Brilliant Red Cloak
+							un(7, i(15726)),	-- Pattern: Green Dragonscale Breastplate (BoE version was removed from game)
 						},
 						["coord"] = { 29.6, 33.6 },
 					})),
@@ -1026,7 +1027,7 @@ _.Zones =
 							un(40, q(2702, {	-- Heroes of Old 2
 								un(2, i(10659)),	-- Shard of Afrasa
 							})), 
-							un(40, qa(1393, { -- Galen's Escape
+							un(40, qa(1393, {	-- Galen's Escape
 								un(2, i(6828)),	-- Visionary Buckler
 							})),
 							un(40, qh(1427, {	-- [DEPRECATED]Threat From the Sea
@@ -1038,11 +1039,9 @@ _.Zones =
 						}),
 						n(-16, {	-- Rares (Legacy)
 							un(43, n(766, {	-- Tangled Horror
-								un(7, i(5608)),	-- Living Cowl
+								i(5608),	-- Living Cowl
 							})),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
-						--}),
 					},
 				}),
 			},

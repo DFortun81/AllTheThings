@@ -8,64 +8,64 @@ _.Zones =
 		m(896, {	-- Drustvar
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(2127, { -- Anyport, Drustvar [N]
+					fp(2127, {	-- Anyport, Drustvar [N]
 						["description"] = "Anyport, Drustvar",
 						["coord"] = { 19.2, 43.2 },
 					}),
-					fp(2106, { -- Arom's Stand, Drustvar [A]
+					fp(2106, {	-- Arom's Stand, Drustvar [A]
 						["description"] = "Arom's Stand, Drustvar",
 						["coords"] = {
 							{ 38.14, 52.53, 896 },
 						},
 					}),
-					fp(2037, { -- Barbthorn Ridge, Drustvar [A]
+					fp(2037, {	-- Barbthorn Ridge, Drustvar [A]
 						["description"] = "Barbthorn Ridge, Drustvar",
 						["coord"] = { 62.6, 23.8 },
 					}),
-					fp(2108, { -- Falconhurst, Drustvar [A]
+					fp(2108, {	-- Falconhurst, Drustvar [A]
 						["description"] = "Falconhurst, Drustvar",
 						["coord"] = { 27, 72.2 },
 					}),
-					fp(2056, { -- Fallhaven, Drustvar (Ferry) [A]
+					fp(2056, {	-- Fallhaven, Drustvar (Ferry) [A]
 						["description"] = "Fallhaven, Drustvar (Ferry)",
 						["coord"] = { 61.6, 36.6 },
 						--["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2033, { -- Fallhaven, Drustvar [A]
+					fp(2033, {	-- Fallhaven, Drustvar [A]
 						["description"] = "Fallhaven, Drustvar",
 						["coord"] = { 55.2, 34.8 },
 					}),
-					fp(2057, { -- Fletcher's Hollow, Drustvar (Ferry) [A]
+					fp(2057, {	-- Fletcher's Hollow, Drustvar (Ferry) [A]
 						["description"] = "Fletcher's Hollow, Drustvar (Ferry)",
 						["coord"] = { 69.4, 57.2 },
 						--["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2035, { -- Fletcher's Hollow, Drustvar [A]
+					fp(2035, {	-- Fletcher's Hollow, Drustvar [A]
 						["description"] = "Fletcher's Hollow, Drustvar",
 						["coord"] = { 70.2, 60.4 },
 					}),
-					fp(2034, { -- Hangman's Point, Drustvar [A]
+					fp(2034, {	-- Hangman's Point, Drustvar [A]
 						["description"] = "Hangman's Point, Drustvar",
 						["coord"] = { 71, 40.8 },
 					}),
-					fp(2135, { -- Krazzlefrazz Outpost, Drustvar [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
+					fp(2135, {	-- Krazzlefrazz Outpost, Drustvar [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 						["description"] = "Krazzlefrazz Outpost, Drustvar",
 						["coord"] = { 37.4, 24 },
 						--["races"] = HORDE_ONLY,
 					}),
-					fp(2275, { -- Mudfisher Cove, Drustvar [H]
+					fp(2275, {	-- Mudfisher Cove, Drustvar [H]
 						["description"] = "Mudfisher Cove, Drustvar \n\nRequires completion of Mission Report: Mudfisher Cove and related quest line to unlock.",
 						["coord"] = { 62, 16.8 },
 					}),
-					fp(2274, { -- Swiftwind Post, Drustvar [H]
+					fp(2274, {	-- Swiftwind Post, Drustvar [H]
 						["description"] = "Swiftwind Post, Drustvar \n\nRequires completion of Mission Report: Swiftwind Post and related quest line to unlock.",
 						["coord"] = { 66.4, 59.2 },
 					}),
-					fp(2107, { -- Watchman's Rise, Drustvar [A]
+					fp(2107, {	-- Watchman's Rise, Drustvar [A]
 						["description"] = "Watchman's Rise, Drustvar",
 						["coord"] = { 31.8, 30.4 },
 					}),
-					fp(2109, { -- Whitegrove Chapel, Drustvar [N]
+					fp(2109, {	-- Whitegrove Chapel, Drustvar [N]
 						["description"] = "Whitegrove Chapel, Drustvar",
 						["coord"] = { 25.6, 16.6 },
 					}),

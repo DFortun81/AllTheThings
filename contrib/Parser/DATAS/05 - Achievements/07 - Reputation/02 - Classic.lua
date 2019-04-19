@@ -12,21 +12,21 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-10002, { -- Classic
+			n(-10002, {	-- Classic
 				["groups"] = {
-					ach(956, { -- Brood of Nozdormu
-						faction(910), -- Brood of Nozdormu
+					ach(956, {	-- Brood of Nozdormu
+						faction(910),	-- Brood of Nozdormu
 					}),
-					ach(955, { -- Hydraxian Waterlords
-						faction(749), -- Hydraxian Waterlords
+					ach(955, {	-- Hydraxian Waterlords
+						faction(749),	-- Hydraxian Waterlords
 					}),
-					ach(946, { -- The Argent Dawn
-						faction(529), -- Argent Dawn
+					ach(946, {	-- The Argent Dawn
+						faction(529),	-- Argent Dawn
 					}),
-					ach(944, { -- They Love Me In That Tunnel
-						faction(576), --  Timbermaw Hold
+					ach(944, {	-- They Love Me In That Tunnel
+						faction(576),	--  Timbermaw Hold
 					}),
 				},
 			}),

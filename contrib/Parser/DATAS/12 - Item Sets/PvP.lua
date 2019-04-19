@@ -33,7 +33,7 @@ _.GearSets =
 					i(28245),	-- Pendant of Dominance
 					i(28244),	-- Pendant of Triumph
 				}),
-				cl(1, { -- Warrior
+				cl(1, {	-- Warrior
 					-- Grand Marshal's Plate [Warrior]
 					i(28701),	-- Grand Marshal's Plate Helm
 					i(28703),	-- Grand Marshal's Plate Shoulders
@@ -48,7 +48,7 @@ _.GearSets =
 					i(28854),	-- High Warlord's Plate Legguards
 					i(28855),	-- High Warlord's Plate Shoulders
 				}), 
-				cl(2, { -- Paladin
+				cl(2, {	-- Paladin
 					-- Grand Marshal's Lamellar [Paladin]
 					i(28681),	-- Grand Marshal's Lamellar Helm
 					i(28683),	-- Grand Marshal's Lamellar Shoulders
@@ -91,7 +91,7 @@ _.GearSets =
 					i(28864),	-- High Warlord's Scaled Legguards
 					i(28865),	-- High Warlord's Scaled Shoulders
 				}),
-				cl(3, { -- Hunter
+				cl(3, {	-- Hunter
 					-- Grand Marshal's Chain [Hunter]
 					i(28615),	-- Grand Marshal's Chain Helm
 					i(28617),	-- Grand Marshal's Chain Spaulders
@@ -106,7 +106,7 @@ _.GearSets =
 					i(28808),	-- High Warlord's Chain Leggings
 					i(28809),	-- High Warlord's Chain Spaulders
 				}),
-				cl(4, { -- Rogue
+				cl(4, {	-- Rogue
 					-- Grand Marshal's Leather [Rogue]
 					i(28685),	-- Grand Marshal's Leather Helm
 					i(28687),	-- Grand Marshal's Leather Spaulders
@@ -121,7 +121,7 @@ _.GearSets =
 					i(28839),	-- High Warlord's Leather Spaulders
 					i(28840),	-- High Warlord's Leather Tunic
 				}),
-				cl(5, { -- Priest
+				cl(5, {	-- Priest
 					-- Grand Marshal's Mooncloth [Priest]
 					i(31622),	-- Grand Marshal's Mooncloth Cowl
 					i(31624),	-- Grand Marshal's Mooncloth Shoulderpads
@@ -150,7 +150,7 @@ _.GearSets =
 					i(28859),	-- High Warlord's Satin Mantle
 					i(28860),	-- High Warlord's Satin Robe
 				}),
-				cl(7, { -- Shaman
+				cl(7, {	-- Shaman
 					-- Grand Marshal's Linked [Shaman]
 					i(28691),	-- Grand Marshal's Linked Helm
 					i(28693),	-- Grand Marshal's Linked Spaulders
@@ -193,7 +193,7 @@ _.GearSets =
 					i(31649),   -- High Warlord's Ringmail Legguards
 					i(31650),   -- High Warlord's Ringmail Shoulders
 				}),
-				cl(8, { -- Mage
+				cl(8, {	-- Mage
 					-- Grand Marshal's Silk [Mage]
 					i(28715),	-- Grand Marshal's Silk Cowl
 					i(28714),	-- Grand Marshal's Silk Amice
@@ -208,7 +208,7 @@ _.GearSets =
 					i(28869),	-- High Warlord's Silk Raiment
 					i(28870),	-- High Warlord's Silk Trousers
 				}),
-				cl(9, { -- Warlock
+				cl(9, {	-- Warlock
 					-- Grand Marshal's Dreadweave [Warlock]
 					i(28625),	-- Grand Marshal's Dreadweave Hood
 					i(28627),	-- Grand Marshal's Dreadweave Mantle
@@ -223,7 +223,7 @@ _.GearSets =
 					i(28820),	-- High Warlord's Dreadweave Mantle
 					i(28821),	-- High Warlord's Dreadweave Robe
 				}),
-				cl(11, { -- Druid
+				cl(11, {	-- Druid
 					-- Grand Marshal's Dragonhide [Druid]
 					i(28619),	-- Grand Marshal's Dragonhide Helm
 					i(28622),	-- Grand Marshal's Dragonhide Spaulders
@@ -459,7 +459,7 @@ _.GearSets =
 			["groups"] = {
 				gs(380, {	-- Merciless Gladiator's Satin Armor		
 					["groups"] = {
-						n(-9951, { -- Discipline / Holy Priest
+						n(-9951, {	-- Discipline / Holy Priest
 							i(32016),	-- Merciless Gladiator's Mooncloth Hood
 							i(32018),	-- Merciless Gladiator's Mooncloth Mantle
 							i(32019),	-- Merciless Gladiator's Mooncloth Robe
@@ -781,7 +781,7 @@ _.GearSets =
 			["groups"] = {				
 				gs(378, {	-- Brutal Gladiator's Satin Armor		
 					["groups"] = {
-						n(-9951, { -- Holy/Discipline Priest
+						n(-9951, {	-- Holy/Discipline Priest
 							i(35054),	-- Brutal Gladiator's
 							i(35056),	-- Brutal Gladiator's
 							i(35057),	-- Brutal Gladiator's
@@ -791,7 +791,7 @@ _.GearSets =
 							i(35055),	-- Brutal Gladiator's
 							i(35144),	--
 						}),
-						n(-9917, { -- Shadow Priest
+						n(-9917, {	-- Shadow Priest
 							i(35084),	-- Brutal Gladiator's
 							i(35086),	-- Brutal Gladiator's
 							i(35087),	-- Brutal Gladiator's
@@ -802,7 +802,7 @@ _.GearSets =
 							i(35144),	
 						}),
 					},		
-					["classes"] = { 5 }, -- Priest		
+					["classes"] = { 5 },	-- Priest		
 				}),			
 				gs(951, {	-- Brutal Gladiator's Silk Armor		
 					["groups"] = {		
@@ -815,7 +815,7 @@ _.GearSets =
 						i(35100),	-- Brutal Gladiator's
 						i(35149),	-- 
 					},		
-					["classes"] = { 8 }, -- Mage		
+					["classes"] = { 8 },	-- Mage		
 				}),			
 				gs(947, {	-- Brutal Gladiator's Felweave Armor		
 					["groups"] = {		
@@ -828,11 +828,11 @@ _.GearSets =
 						i(35009),	-- Brutal Gladiator's
 						i(35138),	-- 
 					},		
-					["classes"] = { 9 }, -- Warlock		
+					["classes"] = { 9 },	-- Warlock		
 				}),			
 				gs(953, {	-- Brutal Gladiator's Dragonhide Armor		
 					["groups"] = {
-						n(-9952, { -- Guardian / Feral Druid
+						n(-9952, {	-- Guardian / Feral Druid
 							i(35023),	-- Brutal Gladiator's
 							i(35025),	-- Brutal Gladiator's
 							i(35026),	-- Brutal Gladiator's
@@ -842,7 +842,7 @@ _.GearSets =
 							i(35024),	-- Brutal Gladiator's
 							i(35139),	-- 
 						}),
-						n(-9926, { -- Balance Druid
+						n(-9926, {	-- Balance Druid
 							i(35112),	-- Brutal Gladiator's
 							i(35114),	-- Brutal Gladiator's
 							i(35115),	-- Brutal Gladiator's
@@ -852,7 +852,7 @@ _.GearSets =
 							i(35113),	-- Brutal Gladiator's
 							i(35150),	-- 
 						}),
-						n(-9927, { -- Restoration Druid
+						n(-9927, {	-- Restoration Druid
 							i(34999),	-- Brutal Gladiator's
 							i(35001),	-- Brutal Gladiator's
 							i(35002),	-- Brutal Gladiator's
@@ -863,7 +863,7 @@ _.GearSets =
 							i(35137),	-- 
 						}),
 					},		
-					["classes"] = { 11 }, -- Druid		
+					["classes"] = { 11 },	-- Druid		
 				}),			
 				gs(949, {	-- Brutal Gladiator's Leather Armor		
 					["groups"] = {		
@@ -876,7 +876,7 @@ _.GearSets =
 						i(35034),	-- Brutal Gladiator's
 						i(35141),	-- 
 					},		
-					["classes"] = { 4 }, -- Rogue		
+					["classes"] = { 4 },	-- Rogue		
 				}),			
 				gs(952, {	-- Brutal Gladiator's Chain Armor		
 					["groups"] = {		
@@ -889,11 +889,11 @@ _.GearSets =
 						i(34993),	-- Brutal Gladiator's
 						i(35136),	-- 
 					},		
-					["classes"] = { 3 }, -- Hunter		
+					["classes"] = { 3 },	-- Hunter		
 				}),			
 				gs(948, {	-- Brutal Gladiator's Ringmail Armor		
 					["groups"] = {
-						n(-9939, { -- Elemental Shaman
+						n(-9939, {	-- Elemental Shaman
 							i(35050),	-- Brutal Gladiator's
 							i(35052),	-- Brutal Gladiator's
 							i(35048),	-- Brutal Gladiator's
@@ -903,7 +903,7 @@ _.GearSets =
 							i(35051),	-- Brutal Gladiator's
 							i(35143),	-- 
 						}),
-						n(-9940, { -- Enhancement Shaman
+						n(-9940, {	-- Enhancement Shaman
 							i(35044),	-- Brutal Gladiator's
 							i(35046),	-- Brutal Gladiator's
 							i(35042),	-- Brutal Gladiator's
@@ -913,7 +913,7 @@ _.GearSets =
 							i(35045),	-- Brutal Gladiator's
 							i(35142),	-- 
 						}),
-						n(-9941, { -- Restoration Shaman
+						n(-9941, {	-- Restoration Shaman
 							i(35079),	-- Brutal Gladiator's
 							i(35081),	-- Brutal Gladiator's
 							i(35077),	-- Brutal Gladiator's
@@ -924,11 +924,11 @@ _.GearSets =
 							i(35147),	-- 
 						}),
 					},		
-					["classes"] = { 7 }, -- Shaman		
+					["classes"] = { 7 },	-- Shaman		
 				}),			
 				gs(950, {	-- Brutal Gladiator's Scaled Armor		
 					["groups"] = {		
-						n(-9942, { -- Holy Paladin
+						n(-9942, {	-- Holy Paladin
 							i(35061),	-- Brutal Gladiator's
 							i(35063),	-- Brutal Gladiator's
 							i(35059),	-- Brutal Gladiator's
@@ -938,7 +938,7 @@ _.GearSets =
 							i(35062),	-- Brutal Gladiator's
 							i(35145),	-- 
 						}),
-						n(-9943, { -- Protection Paladin
+						n(-9943, {	-- Protection Paladin
 							i(35090),	-- Brutal Gladiator's
 							i(35092),	-- Brutal Gladiator's
 							i(35088),	-- Brutal Gladiator's
@@ -948,7 +948,7 @@ _.GearSets =
 							i(35091),	-- Brutal Gladiator's
 							i(35148),	-- 
 						}),
-						n(-9944, { -- Retribution Paladin
+						n(-9944, {	-- Retribution Paladin
 							i(35029),	-- Brutal Gladiator's
 							i(35031),	-- Brutal Gladiator's
 							i(35027),	-- Brutal Gladiator's
@@ -959,7 +959,7 @@ _.GearSets =
 							i(35140),	-- 
 						}),
 					},		
-					["classes"] = { 2 }, -- Paladin		
+					["classes"] = { 2 },	-- Paladin		
 				}),			
 				gs(946, {	-- Brutal Gladiator's Plate Armor		
 					["groups"] = {		
@@ -972,25 +972,25 @@ _.GearSets =
 						i(35069),	-- Brutal Gladiator's
 						i(35146),   -- 
 					},		
-					["classes"] = { 1 }, -- Warrior		
+					["classes"] = { 1 },	-- Warrior		
 				}),			
 			},				
-			["achievementID"] = 11709, -- Tough Threads				
+			["achievementID"] = 11709,	-- Tough Threads				
 		}),					
 		gsh(377, {	-- Season 5 - PvP Rare					
 			["groups"] = {
-				gssh(377, { -- PvP Rare
+				gssh(377, {	-- PvP Rare
 					["groups"] = {
 						gs(377, {	-- Savage Gladiator's Satin Armor			
 							["groups"] = {			
-								n(-9951, { -- Holy/Discipline Priest		
+								n(-9951, {	-- Holy/Discipline Priest		
 									i(41848),	-- Savage Gladiator's Mooncloth Hood
 									i(41850),	-- Savage Gladiator's Mooncloth Mantle
 									i(41851),	-- Savage Gladiator's Mooncloth Robe
 									i(41847),	-- Savage Gladiator's Mooncloth Gloves
 									i(41849),	-- Savage Gladiator's Mooncloth Leggings
 								}),		
-								n(-9917, { -- Shadow Priest		
+								n(-9917, {	-- Shadow Priest		
 									i(41912),	-- Savage Gladiator's Satin Hood
 									i(41930),	-- Savage Gladiator's Satin Mantle
 									i(41918),	-- Savage Gladiator's Satin Robe
@@ -998,7 +998,7 @@ _.GearSets =
 									i(41924),	-- Savage Gladiator's Satin Leggings
 								}),		
 							},			
-							["classes"] = { 5 }, -- Priest			
+							["classes"] = { 5 },	-- Priest			
 						}),				
 						gs(811, {	-- Savage Gladiator's Silk Armor			
 							["groups"] = {			
@@ -1008,7 +1008,7 @@ _.GearSets =
 								i(41968),	-- Savage Gladiator's Silk Handguards	
 								i(41956),	-- Savage Gladiator's Silk Trousers	
 							},			
-							["classes"] = { 8 }, -- Mage			
+							["classes"] = { 8 },	-- Mage			
 						}),				
 						gs(807, {	-- Savage Gladiator's Felweave Armor			
 							["groups"] = {			
@@ -1018,25 +1018,25 @@ _.GearSets =
 								i(42014),	-- Savage Gladiator's Felweave Handguards	
 								i(42002),	-- Savage Gladiator's Felweave Trousers	
 							},			
-							["classes"] = { 9 }, -- Warlock			
+							["classes"] = { 9 },	-- Warlock			
 						}),				
 						gs(813, {	-- Savage Gladiator's Dragonhide Armor			
 							["groups"] = {			
-								n(-9952, { -- Guardian/Feral Druid		
+								n(-9952, {	-- Guardian/Feral Druid		
 									i(41269),	-- Savage Gladiator's Kodohide Helm
 									i(41271),	-- Savage Gladiator's Kodohide Spaulders
 									i(41272),	-- Savage Gladiator's Kodohide Robes
 									i(41268),	-- Savage Gladiator's Kodohide Gloves
 									i(41270),	-- Savage Gladiator's Kodohide Legguards
 								}),		
-								n(-9926, { -- Balance Druid		
+								n(-9926, {	-- Balance Druid		
 									i(41324),	-- Savage Gladiator's Wyrmhide Helm
 									i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 									i(41313),	-- Savage Gladiator's Wyrmhide Robes
 									i(41290),	-- Savage Gladiator's Wyrmhide Gloves
 									i(41301),	-- Savage Gladiator's Wyrmhide Legguards
 								}),		
-								n(-9927, { -- Restoration Druid		
+								n(-9927, {	-- Restoration Druid		
 									i(41675),	-- Savage Gladiator's Dragonhide Helm
 									i(41712),	-- Savage Gladiator's Dragonhide Spaulders
 									i(41658),	-- Savage Gladiator's Dragonhide Robes
@@ -1044,7 +1044,7 @@ _.GearSets =
 									i(41664),	-- Savage Gladiator's Dragonhide Legguards
 								}),		
 							},			
-							["classes"] = { 11 }, -- Druid			
+							["classes"] = { 11 },	-- Druid			
 						}),				
 						gs(809, {	-- Savage Gladiator's Leather Armor			
 							["groups"] = {			
@@ -1054,7 +1054,7 @@ _.GearSets =
 								i(41643),	-- Savage Gladiator's Leather Gloves	
 								i(41645),	-- Savage Gladiator's Leather Legguards	
 							},			
-							["classes"] = { 4 }, -- Rogue			
+							["classes"] = { 4 },	-- Rogue			
 						}),				
 						gs(812, {	-- Savage Gladiator's Chain Armor			
 							["groups"] = {			
@@ -1064,25 +1064,25 @@ _.GearSets =
 								i(41140),	-- Savage Gladiator's Chain Gauntlets	
 								i(41202),	-- Savage Gladiator's Chain Leggings	
 							},			
-							["classes"] = { 3 }, -- Hunter			
+							["classes"] = { 3 },	-- Hunter			
 						}),				
 						gs(808, {	-- Savage Gladiator's Ringmail Armor			
 							["groups"] = {			
-								n(-9939, { -- Elemental Shaman		
+								n(-9939, {	-- Elemental Shaman		
 									i(41016),	-- Savage Gladiator's Mail Helm
 									i(41041),	-- Savage Gladiator's Mail Spaulders
 									i(40987),	-- Savage Gladiator's Mail Armor
 									i(41004),	-- Savage Gladiator's Mail Gauntlets
 									i(41030),	-- Savage Gladiator's Mail Leggings
 								}),		
-								n(-9940, { -- Enhancement Shaman		
+								n(-9940, {	-- Enhancement Shaman		
 									i(41148),	-- Savage Gladiator's Linked Helm
 									i(41208),	-- Savage Gladiator's Linked Spaulders
 									i(41078),	-- Savage Gladiator's Linked Armor
 									i(41134),	-- Savage Gladiator's Linked Gauntlets
 									i(41160),	-- Savage Gladiator's Linked Leggings
 								}),		
-								n(-9941, { -- Restoration Shaman		
+								n(-9941, {	-- Restoration Shaman		
 									i(41010),	-- Savage Gladiator's Ringmail Helm
 									i(41024),	-- Savage Gladiator's Ringmail Spaulders
 									i(40986),	-- Savage Gladiator's Ringmail Armor
@@ -1090,18 +1090,18 @@ _.GearSets =
 									i(41023),	-- Savage Gladiator's Ringmail Leggings
 								}),		
 							},			
-							["classes"] = { 7 }, -- Shaman			
+							["classes"] = { 7 },	-- Shaman			
 						}),				
 						gs(810, {	-- Savage Gladiator's Scaled Armor			
 							["groups"] = {			
-								n(-9942, { -- Holy Paladin		
+								n(-9942, {	-- Holy Paladin		
 									i(40930),	-- Savage Gladiator's Ornamented Headcover
 									i(40960),	-- Savage Gladiator's Ornamented Spaulders
 									i(40898),	-- Savage Gladiator's Ornamented Chestguard
 									i(40918),	-- Savage Gladiator's Ornamented Gloves
 									i(40936),	-- Savage Gladiator's Ornamented Legplates
 								}),		
-								n(-9912, { -- Protection / Retribution Paladin		
+								n(-9912, {	-- Protection / Retribution Paladin		
 									i(40818),	-- Savage Gladiator's Scaled Helm
 									i(40858),	-- Savage Gladiator's Scaled Shoulders
 									i(40780),	-- Savage Gladiator's Scaled Chestpiece
@@ -1109,7 +1109,7 @@ _.GearSets =
 									i(40838),	-- Savage Gladiator's Scaled Legguards
 								}),		
 							},			
-							["classes"] = { 2 }, -- Paladin			
+							["classes"] = { 2 },	-- Paladin			
 						}),				
 						gs(806, {	-- Savage Gladiator's Plate Armor			
 							["groups"] = {			
@@ -1119,7 +1119,7 @@ _.GearSets =
 								i(40797),	-- Savage Gladiator's Plate 	
 								i(40836),	-- Savage Gladiator's Plate 	
 							},			
-							["classes"] = { 1 }, -- Warrior			
+							["classes"] = { 1 },	-- Warrior			
 						}),				
 						gs(814, {	-- Savage Gladiator's Dreadplate Armor			
 							["groups"] = {			
@@ -1129,16 +1129,16 @@ _.GearSets =
 								i(40799),	-- Savage Gladiator's Dreadplate 	
 								i(40837),	-- Savage Gladiator's Dreadplate 	
 							},			
-							["classes"] = { 6 }, -- Death Knight			
+							["classes"] = { 6 },	-- Death Knight			
 						}),		
 					},
 					["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
 				}),
-				gssh(376, { -- Honor
+				gssh(376, {	-- Honor
 					["groups"] = {
 						gs(376, {	-- Hateful Gladiator's Satin Armor				
 							["groups"] = {				
-								n(-9951, { -- Holy/Discipline Priest			
+								n(-9951, {	-- Holy/Discipline Priest			
 									i(41852),	-- Hateful Gladiator's Mooncloth Hood	
 									i(41867),	-- Hateful Gladiator's Mooncloth Mantle	
 									i(41857),	-- Hateful Gladiator's Mooncloth Robe	
@@ -1148,7 +1148,7 @@ _.GearSets =
 									i(41862),	-- Hateful Gladiator's Mooncloth Leggings	
 									i(44900),	-- Hateful Gladiator's Mooncloth 	
 								}),			
-								n(-9917, { -- Shadow Priest			
+								n(-9917, {	-- Shadow Priest			
 									i(41913),	-- Hateful Gladiator's Satin Hood	
 									i(41931),	-- Hateful Gladiator's Satin Mantle	
 									i(41919),	-- Hateful Gladiator's Satin Robe	
@@ -1159,7 +1159,7 @@ _.GearSets =
 									i(41879),	-- Hateful Gladiator's Satin 	
 								}),			
 							},				
-							["classes"] = { 5 }, -- Priest				
+							["classes"] = { 5 },	-- Priest				
 						}),					
 						gs(802, {	-- Hateful Gladiator's Silk Armor				
 							["groups"] = {				
@@ -1172,7 +1172,7 @@ _.GearSets =
 								i(41957),	-- Hateful Gladiator's Silk Trousers		
 								i(41901),	-- Hateful Gladiator's Slippers of Dominance
 							},				
-							["classes"] = { 8 }, -- Mage				
+							["classes"] = { 8 },	-- Mage				
 						}),					
 						gs(798, {	-- Hateful Gladiator's Felweave Armor				
 							["groups"] = {				
@@ -1185,11 +1185,11 @@ _.GearSets =
 								i(42003),	-- Hateful Gladiator's Felweave Trousers		
 								i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
 							},				
-							["classes"] = { 9 }, -- Warlock				
+							["classes"] = { 9 },	-- Warlock				
 						}),					
 						gs(804, {	-- Hateful Gladiator's Dragonhide Armor				
 							["groups"] = {				
-								n(-9952, { -- Guardian/Feral Druid			
+								n(-9952, {	-- Guardian/Feral Druid			
 									i(41319),	-- Hateful Gladiator's Kodohide Helm	
 									i(41273),	-- Hateful Gladiator's Kodohide Spaulders	
 									i(41308),	-- Hateful Gladiator's Kodohide Robes	
@@ -1199,7 +1199,7 @@ _.GearSets =
 									i(41296),	-- Hateful Gladiator's Kodohide Legguards	
 									i(44891),	-- Titan-Forged Boots of Dominance
 								}),			
-								n(-9926, { -- Balance Druid			
+								n(-9926, {	-- Balance Druid			
 									i(41325),	-- Hateful Gladiator's Wyrmhide Helm	
 									i(41279),	-- Hateful Gladiator's Wyrmhide Spaulders	
 									i(41314),	-- Hateful Gladiator's Wyrmhide Robes	
@@ -1209,7 +1209,7 @@ _.GearSets =
 									i(41302),	-- Hateful Gladiator's Wyrmhide Legguards	
 									i(y),	-- Hateful Gladiator's Boots of Salvation
 								}),			
-								n(-9927, { -- Restoration Druid			
+								n(-9927, {	-- Restoration Druid			
 									i(41676),	-- Hateful Gladiator's Dragonhide Helm	
 									i(41713),	-- Hateful Gladiator's Dragonhide Spaulders	
 									i(41659),	-- Hateful Gladiator's Dragonhide Robes	
@@ -1220,7 +1220,7 @@ _.GearSets =
 									i(41633),	-- Hateful Gladiator's Sabatons of Dominance
 								}),			
 							},				
-							["classes"] = { 11 }, -- Druid				
+							["classes"] = { 11 },	-- Druid				
 						}),					
 						gs(800, {	-- Hateful Gladiator's Leather Armor				
 							["groups"] = {				
@@ -1233,7 +1233,7 @@ _.GearSets =
 								i(41653),	-- Hateful Gladiator's Leather Legguards		
 								i(41828),	-- Hateful Gladiator's Boots of Triumph
 							},				
-							["classes"] = { 4 }, -- Rogue				
+							["classes"] = { 4 },	-- Rogue				
 						}),					
 						gs(803, {	-- Hateful Gladiator's Chain Armor				
 							["groups"] = {				
@@ -1246,11 +1246,11 @@ _.GearSets =
 								i(41203),	-- Hateful Gladiator's Chain Leggings		
 								i(41228),	-- Hateful Gladiator's Sabatons of Triumph
 							},				
-							["classes"] = { 3 }, -- Hunter				
+							["classes"] = { 3 },	-- Hunter				
 						}),					
 						gs(799, {	-- Hateful Gladiator's Ringmail Armor				
 							["groups"] = {				
-								n(-9939, { -- Elemental Shaman			
+								n(-9939, {	-- Elemental Shaman			
 									i(41017),	-- Hateful Gladiator's Mail Helm	
 									i(41042),	-- Hateful Gladiator's Mail Spaulders	
 									i(40989),	-- Hateful Gladiator's Mail Armor	
@@ -1260,7 +1260,7 @@ _.GearSets =
 									i(41031),	-- Hateful Gladiator's Mail Leggings	
 									i(44897),	-- Titan-Forged Sabatons of Salvation
 								}),			
-								n(-9940, { -- Enhancement Shaman			
+								n(-9940, {	-- Enhancement Shaman			
 									i(41149),	-- Hateful Gladiator's Linked Helm	
 									i(41209),	-- Hateful Gladiator's Linked Spaulders	
 									i(41079),	-- Hateful Gladiator's Linked Armor	
@@ -1270,7 +1270,7 @@ _.GearSets =
 									i(41162),	-- Hateful Gladiator's Linked Leggings	
 									i(41073),	-- Titan-Forged Sabatons of Salvation
 								}),			
-								n(-9941, { -- Restoration Shaman			
+								n(-9941, {	-- Restoration Shaman			
 									i(41011),	-- Hateful Gladiator's Ringmail Helm	
 									i(41036),	-- Hateful Gladiator's Ringmail Spaulders	
 									i(40988),	-- Hateful Gladiator's Ringmail Armor	
@@ -1281,11 +1281,11 @@ _.GearSets =
 									i(41049),	-- Hateful Gladiator's Sabatons of Dominance
 								}),			
 							},				
-							["classes"] = { 7 }, -- Shaman				
+							["classes"] = { 7 },	-- Shaman				
 						}),					
 						gs(801, {	-- Hateful Gladiator's Scaled Armor				
 							["groups"] = {				
-								n(-9942, { -- Holy Paladin			
+								n(-9942, {	-- Holy Paladin			
 									i(40931),	-- Hateful Gladiator's Ornamented Headcover	
 									i(40961),	-- Hateful Gladiator's Ornamented Spaulders	
 									i(40904),	-- Hateful Gladiator's Ornamented Chestguard	
@@ -1295,7 +1295,7 @@ _.GearSets =
 									i(40937),	-- Hateful Gladiator's Ornamented Legplates	
 									i(44894),	-- Titan-Forged Greaves of Salvation
 								}),			
-								n(-9912, { -- Protection / Retribution Paladin			
+								n(-9912, {	-- Protection / Retribution Paladin			
 									i(40821),	-- Hateful Gladiator's Scaled Helm	
 									i(40861),	-- Hateful Gladiator's Scaled Shoulders	
 									i(40782),	-- Hateful Gladiator's Scaled Chestpiece	
@@ -1306,7 +1306,7 @@ _.GearSets =
 									i(40973),	-- Titan-Forged Greaves of Salvation
 								}),			
 							},				
-							["classes"] = { 2 }, -- Paladin				
+							["classes"] = { 2 },	-- Paladin				
 						}),					
 						gs(797, {	-- Hateful Gladiator's Plate Armor				
 							["groups"] = {				
@@ -1319,7 +1319,7 @@ _.GearSets =
 								i(40840),	-- Hateful Gladiator's Plate 		
 								i(40878),	-- Hateful Gladiator's Greaves of Triumph
 							},				
-							["classes"] = { 1 }, -- Warrior				
+							["classes"] = { 1 },	-- Warrior				
 						}),					
 						gs(805, {	-- Hateful Gladiator's Dreadplate Armor				
 							["groups"] = {				
@@ -1332,13 +1332,13 @@ _.GearSets =
 								i(40841),	-- Hateful Gladiator's Dreadplate 		
 								i(147585),	-- Hateful Gladiator's Greaves of Victory
 							},				
-							["classes"] = { 6 }, -- Death Knight				
+							["classes"] = { 6 },	-- Death Knight				
 						}),					
 					},
 					["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple Skull
 				}),
 			},					
-			["achievementID"] = 11710, -- Lethal Looks					
+			["achievementID"] = 11710,	-- Lethal Looks					
 		}),						
 		-- DK Switches from Victory to Triumph S6
 		gsh(373, {	-- Season 7
@@ -1431,7 +1431,7 @@ _.GearSets =
 			},
 			["achievementID"] = 11712,	-- Relentlessly Good Looking
 		}),
-		n(-4191, { -- Tournament Sets
+		n(-4191, {	-- Tournament Sets
 			["description"] = "These items were available during Warlords of Draenor, but only served as an ilvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
 			["u"] = 2,	-- Removed from Game
 			["groups"] = bubbleDown({["u"] = 2, ["ignoreSource"] = 1}, {
@@ -1967,7 +1967,7 @@ _.GearSets =
 								i(126401),	-- Warmongering Gladiator's Warboots of Victory
 							}),
 						},
-						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple", -- Purple Skull
+						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple Skull
 					}),
 				})),
 			},

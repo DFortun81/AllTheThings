@@ -9,7 +9,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 		["g"] = {
 			n(-4, {	-- Achievements
 				["g"] = {
-					ach(1693, { -- Fool For Love
+					ach(1693, {	-- Fool For Love
 						["g"] = {
 							un(18, title(103)),	-- the Love Fool
 							ach(260, {}),		-- Charming

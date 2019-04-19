@@ -12,9 +12,12 @@ _.Zones =
 					qg(66522, q(31915, {	-- Grand Master Lydia Accoste (non-daily)
 						i(89125),	-- Sack of Pet Supplies
 					})),
-					qr(qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
-						i(89125),	-- Sack of Pet Supplies
-					}))),
+					qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
+						["isDaily"] = true,
+						["groups"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					})),
 					qg(66522, qh(31980)),	-- The Returning Champion
 					qg(66522, qa(31976)),	-- The Returning Champion
 				}),
@@ -188,6 +191,17 @@ _.Zones =
 						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 						["lvl"] = 110,
 					}),
+					{	-- The New Directive
+						["questID"] = 9860,	-- The New Directive
+						["u"] = 40,
+						["qg"] = 17613,	-- Archmage Alturus
+						["groups"] = {
+							{	-- Violet Badge
+								["itemID"] = 31113,	-- Violet Badge
+								["u"] = 2,
+							},
+						},
+					},
 					{
 						["questID"] = 44733,	-- The Power of Corruption
 						["sourceQuest"] = 44764,	-- Demon in Disguise
@@ -195,7 +209,7 @@ _.Zones =
 						["lvl"] = 110,
 					},
 					q(40712, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
+						["qg"] = 101282,	-- Revil Kost
 						["classes"] = { 9 },
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders
@@ -204,7 +218,7 @@ _.Zones =
 						},
 					}),
 					q(41156, {	-- The Power Possessed
-						["qg"] = 101282, -- Revil Kost
+						["qg"] = 101282,	-- Revil Kost
 						["classes"] = { 9 },
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders

@@ -56,49 +56,41 @@ _.Zones =
 									["itemID"] = 44133,	-- Greater Inscription of the Axe
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50335,	-- Greater Inscription of the Axe
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44134,	-- Greater Inscription of the Crag
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50336,	-- Greater Inscription of the Crag
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44136,	-- Greater Inscription of the Pinnacle
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50337,	-- Greater Inscription of the Pinnacle
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 44135,	-- Greater Inscription of the Storm
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 								{
 									["itemID"] = 50338,	-- Greater Inscription of the Storm
 									["spellID"] = 0,	-- Ignore
 									["f"] = 55,		-- Consumable
-									["b"] = 0,	-- Ignore BoA
 								},
 							},
 							["coord"] = { 66.1, 61.4, 120 },
@@ -140,7 +132,7 @@ _.Zones =
 						},
 						{			-- Remember Everfrost!
 							["questID"] = 13421,	-- Remember Everfrost!
-							["coord"] = { 67.0, 60.8, 120 }, -- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
+							["coord"] = { 67.0, 60.8, 120 },	-- needs verification, taken from wowhead.  there's some contention as to whether this quest is offered by an NPC or if the "qg" is just the turn-in NPC
 							["qg"] = 32594,	-- Quest Giver: Calder <Blacksmithing Supplies>
 							["sourceQuests"] = { 13420 },	-- Source Quest: Everfrost
 							["repeatable"]	= true,
@@ -795,7 +787,7 @@ _.Zones =
 						["coord"] = { 31.2, 38.1, 120 },
 						["sourceQuests"] = { 12979 },	-- Armor of Darkness
 					}),
-					q(13417),	-- The Brothers Bronzebeard	-- scrapped version? no qg or faction data on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
+--					qa(13417),	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
 					qa(12973, {	-- The Brothers Bronzebeard (awarded "For the Frostborn King" criteria before turning in quest)
 						["g"] = {
 							i(43192),	-- Ring of the Northern Winds
@@ -918,7 +910,12 @@ _.Zones =
 						["coord"] = { 37.6, 46.4, 120 },
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 12888 },	-- SCRAP-E
-						-- teaches Scrapbot Construction Kit, spell 55252, not sure how to list
+						["groups"] = {
+							{	-- Schematic: Scrapbot Construction Kit
+								["recipeID"] = 55252,	-- Schematic: Scrapbot Construction Kit
+							},
+						},
+							
 					}),
 					q(13047, {	-- The Reckoning (triggered completion of "Loken" criteria even before turning quest in)
 						["g"] = {
@@ -1160,6 +1157,21 @@ _.Zones =
 					},
 				}),
 				n(-2,   {	-- Vendors
+					{	-- "Honest" Max
+						["npcID"] = 30464,	-- Olut Alegut
+						["g"] = {
+							{	-- Loaned Gryphon Reins
+								["itemID"] = 44221,	-- Loaned Gryphon Reins
+								["u"] = 2, 
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Loaned Wind Rider Reins
+								["itemID"] = 44229,	-- Loaned Wind Rider  Reins
+								["u"] = 2,
+								["races"] = HORDE_ONLY,
+							},
+						},
+					},
 					{	-- Olut Alegut
 						["npcID"] = 30472,	-- Olut Alegut
 						["itemID"] = 42780,	-- Relics of Ulduar
@@ -1232,6 +1244,16 @@ _.Zones =
 							["crs"] = {
 								29793,	-- Frostfeather Witch
 								29792,	-- Frostfeather Screecher
+							},
+						}),
+						i(49050, {	-- Schematic: Jeeves
+							["crs"] = {
+								29724,	-- Library Guardian
+							},
+						}),
+						i(43573, {	-- Tears of Bitter Anguish
+							["crs"] = {
+								29570,	-- Nascent Val'kyr
 							},
 						}),
 					},

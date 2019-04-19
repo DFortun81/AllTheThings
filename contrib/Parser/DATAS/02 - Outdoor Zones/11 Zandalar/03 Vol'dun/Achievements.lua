@@ -8,7 +8,8 @@ _.Zones =
 			["groups"] = {
 				n(-4,   {	-- Achievements
 					["groups"] = {
-						{	--  A Loa of a Tale
+						ach(12943),		-- Adventurer of Vol'dun
+						{				-- A Loa of a Tale
 							["achievementID"] = 13036,	-- A Loa of a Tale
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -51,7 +52,7 @@ _.Zones =
 							["npcID"] = 143255
 							]]--
 						}),
-						{	-- Get Hek'd
+						{				-- Get Hek'd
 							["achievementID"] = 12482,	-- Get Hek'd
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["g"] = {
@@ -69,7 +70,7 @@ _.Zones =
 										129474,	-- Ranishu Ravager
 									},
 									["coords"] = {	-- Turn-In Location
-										{ 46.98, 46.63, 864 }, -- Court of Zak'rajan
+										{ 46.98, 46.63, 864 },	-- Court of Zak'rajan
 									},
 									["g"] = {
 										{	-- Charged Ranishu Antennae
@@ -161,7 +162,7 @@ _.Zones =
 										50891,	-- Item Turn-In
 									},
 									["coords"] = {
-										{ 49.33, 84.39, 864 }, -- The Eternal Spring
+										{ 49.33, 84.39, 864 },	-- The Eternal Spring
 									},
 									["crs"] = {	
 										134744,	-- Redrock Howler
@@ -365,10 +366,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12560,	-- Explore Vol'dun
-			["lvl"] = 110,
-			["description"] = "|cff66ccffThis vast desert rolling with sand dunes was once a vibrant jungle, but the Aqir decimated its countryside. Zandalar sends its criminals here to die, and most of them end up perishing. The area is inhabited by Zandalari troll vagabonds, vulpera, and sethrak.\n\nLong ago, the C'Thrax Mythrax the Unraveler descended upon Vol'dun. He slaughtered troll and sethrak alike. The loa Sethraliss sacrificed herself to save them, but though she struck Mythrax down Mythrax was still able to destroy the disc at the heart of Atul'Aman. After witnessing the destruction firsthand, the sethrak knew that something had to be done to prevent anyone from raising Mythrax again. Sulthis, Vorrik, and Korthek worked together to seal Mythrax within the great pyramid.\n\nYears later, Korthek grew power hungry and sought to free Mythrax to conquer Zuldazar. He gathered like-minded sethrak and declared himself emperor.|r",
 		}),
 	}),
 };
---]]

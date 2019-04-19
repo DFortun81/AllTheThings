@@ -4,6 +4,17 @@ profession(164, {	-- Blacksmithing
 		{	-- Blackmithing Plans
 			["categoryID"] = 590--[[Blackmithing Plans]],
 			["g"] = {
+				-- Legacy specilizations for posterity
+				n(-40, { -- Legacy
+					un(34, recipe(9788)),  -- Armorsmith
+					un(34, recipe(9787, {  -- Weaponsmith
+						["groups"] = {
+							un(34, recipe(17041)),  -- Master Axesmith
+							un(34, recipe(17040)),  -- Master Hammersmith
+							un(34, recipe(17039)),  -- Master Swordsmith
+						}
+					})),
+				}),
 				{	-- Materials
 					["categoryID"] = 215--[[Materials]],
 					["g"] = {

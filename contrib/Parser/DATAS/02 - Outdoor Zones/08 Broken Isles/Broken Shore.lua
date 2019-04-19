@@ -6,214 +6,214 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(646, { 	-- Broken Shore
 			["groups"] = {
-				n(-10049, { -- Command Center
+				n(-10049, {	-- Command Center
 					["groups"] =  {
-						n(122719, { -- Scouting Map
+						n(122719, {	-- Scouting Map
 							["achievementID"] = 11217,
 							["modelScale"] = 2.75,
 							["modelRotation"] = 325,
 						}),
 					},
-					["achievementID"] = 11736, -- Assume Command
+					["achievementID"] = 11736,	-- Assume Command
 				}),
 				n(-169, { 	-- Emissary Quests
-					q(48641, { -- Armies of Legionfall
+					q(48641, {	-- Armies of Legionfall
 						["groups"] = {
-							i(157830, { -- Legionfall Spoils
+							i(157830, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, { -- Dauntless Hood		
-										i(147241), -- Ley-Touched Hood	
-										i(147242), -- Fel-Treated Hood	
-										i(147243), -- Galvanized Stormscale Helm	
-										i(147244), -- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood		
+										i(147241),	-- Ley-Touched Hood	
+										i(147242),	-- Fel-Treated Hood	
+										i(147243),	-- Galvanized Stormscale Helm	
+										i(147244),	-- Storm-Tempered Greathelm	
 									}),
-									i(147221, { -- Dauntless Choker	
-										i(147263), -- Animus Pendant
+									i(147221, {	-- Dauntless Choker	
+										i(147263),	-- Animus Pendant
 									}),	
-									i(147218, { -- Dauntless Spaulders		
-										i(147249), -- Ley-Touched Mantle	
-										i(147250), -- Fel-Treated Spaulders	
-										i(147251), -- Galvanized Stormscale Spaulders	
-										i(147252), -- Storm-Tempered Shoulderguard	
+									i(147218, {	-- Dauntless Spaulders		
+										i(147249),	-- Ley-Touched Mantle	
+										i(147250),	-- Fel-Treated Spaulders	
+										i(147251),	-- Galvanized Stormscale Spaulders	
+										i(147252),	-- Storm-Tempered Shoulderguard	
 									}),		
-									i(147222, { -- Dauntless Cloak		
-										i(147269), -- Unifying Drape	
+									i(147222, {	-- Dauntless Cloak		
+										i(147269),	-- Unifying Drape	
 									}),		
-									i(147213, { -- Dauntless Tunic		
-										i(147232), -- Ley-Touched Robes	
-										i(147229), -- Fel-Treated Chestguard	
-										i(147230), -- Galvanized Stormscale Chestguard	
-										i(147231), -- Storm-Tempered Breastplate	
+									i(147213, {	-- Dauntless Tunic		
+										i(147232),	-- Ley-Touched Robes	
+										i(147229),	-- Fel-Treated Chestguard	
+										i(147230),	-- Galvanized Stormscale Chestguard	
+										i(147231),	-- Storm-Tempered Breastplate	
 									}),		
-									i(147212, { -- Dauntless Bracers		
-										i(147225), -- Ley-Touched Bracers	
-										i(147226), -- Fel-Treated Bracers	
-										i(147227), -- Galvanized Stormscale Bracers	
-										i(147228), -- Storm-Tempered Bracers	
+									i(147212, {	-- Dauntless Bracers		
+										i(147225),	-- Ley-Touched Bracers	
+										i(147226),	-- Fel-Treated Bracers	
+										i(147227),	-- Galvanized Stormscale Bracers	
+										i(147228),	-- Storm-Tempered Bracers	
 									}),		
-									i(147215, { -- Dauntless Gauntlets		
-										i(147237), -- Ley-Touched Gloves	
-										i(147238), -- Fel-Treated Gauntlets	
-										i(147239), -- Galvanized Stormscale Gauntlets	
-										i(147240), -- Storm-Tempered Gauntlets	
+									i(147215, {	-- Dauntless Gauntlets		
+										i(147237),	-- Ley-Touched Gloves	
+										i(147238),	-- Fel-Treated Gauntlets	
+										i(147239),	-- Galvanized Stormscale Gauntlets	
+										i(147240),	-- Storm-Tempered Gauntlets	
 									}),		
-									i(147219, { -- Dauntless Girdle		
-										i(147253), -- Ley-Touched Cord	
-										i(147254), -- Fel-Treated Belt	
-										i(147255), -- Galvanized Stormscale Belt	
-										i(147256), -- Storm-Tempered Girdle	
+									i(147219, {	-- Dauntless Girdle		
+										i(147253),	-- Ley-Touched Cord	
+										i(147254),	-- Fel-Treated Belt	
+										i(147255),	-- Galvanized Stormscale Belt	
+										i(147256),	-- Storm-Tempered Girdle	
 									}),		
-									i(147217, { -- Dauntless Leggings		
-										i(147245), -- Ley-Touched Trousers	
-										i(147246), -- Fel-Treated Legguards	
-										i(147247), -- Galvanized Stormscale Legguards	
-										i(147248), -- Storm-Tempered Legplates	
+									i(147217, {	-- Dauntless Leggings		
+										i(147245),	-- Ley-Touched Trousers	
+										i(147246),	-- Fel-Treated Legguards	
+										i(147247),	-- Galvanized Stormscale Legguards	
+										i(147248),	-- Storm-Tempered Legplates	
 									}),		
-									i(147214, { -- Dauntless Treads		
-										i(147233), -- Ley-Touched Sandals	
-										i(147234), -- Fel-Treated Boots	
-										i(147235), -- Galvanized Stormscale Boots	
-										i(147236), -- Storm-Tempered Greaves	
+									i(147214, {	-- Dauntless Treads		
+										i(147233),	-- Ley-Touched Sandals	
+										i(147234),	-- Fel-Treated Boots	
+										i(147235),	-- Galvanized Stormscale Boots	
+										i(147236),	-- Storm-Tempered Greaves	
 									}),		
-									i(147220, { -- Dauntless Ring	
-										i(147257), -- Avenging Band
+									i(147220, {	-- Dauntless Ring	
+										i(147257),	-- Avenging Band
 									}),	
-									i(147223, { -- Dauntless Trinket	
-										i(147275), -- Beguiler's Talisman
-										i(147276), -- Spellbinder's Seal
-										i(147278), -- Stalwart Crest
+									i(147223, {	-- Dauntless Trinket	
+										i(147275),	-- Beguiler's Talisman
+										i(147276),	-- Spellbinder's Seal
+										i(147278),	-- Stalwart Crest
 									}),	
 								},
 							}),
-							un(2, i(154910, { -- Legionfall Spoils
+							un(2, i(154910, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, { -- Dauntless Hood		
-										i(147241), -- Ley-Touched Hood	
-										i(147242), -- Fel-Treated Hood	
-										i(147243), -- Galvanized Stormscale Helm	
-										i(147244), -- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood		
+										i(147241),	-- Ley-Touched Hood	
+										i(147242),	-- Fel-Treated Hood	
+										i(147243),	-- Galvanized Stormscale Helm	
+										i(147244),	-- Storm-Tempered Greathelm	
 									}),
-									i(147221, { -- Dauntless Choker	
-										i(147263), -- Animus Pendant
+									i(147221, {	-- Dauntless Choker	
+										i(147263),	-- Animus Pendant
 									}),	
-									i(147218, { -- Dauntless Spaulders		
-										i(147249), -- Ley-Touched Mantle	
-										i(147250), -- Fel-Treated Spaulders	
-										i(147251), -- Galvanized Stormscale Spaulders	
-										i(147252), -- Storm-Tempered Shoulderguard	
+									i(147218, {	-- Dauntless Spaulders		
+										i(147249),	-- Ley-Touched Mantle	
+										i(147250),	-- Fel-Treated Spaulders	
+										i(147251),	-- Galvanized Stormscale Spaulders	
+										i(147252),	-- Storm-Tempered Shoulderguard	
 									}),		
-									i(147222, { -- Dauntless Cloak		
-										i(147269), -- Unifying Drape	
+									i(147222, {	-- Dauntless Cloak		
+										i(147269),	-- Unifying Drape	
 									}),		
-									i(147213, { -- Dauntless Tunic		
-										i(147232), -- Ley-Touched Robes	
-										i(147229), -- Fel-Treated Chestguard	
-										i(147230), -- Galvanized Stormscale Chestguard	
-										i(147231), -- Storm-Tempered Breastplate	
+									i(147213, {	-- Dauntless Tunic		
+										i(147232),	-- Ley-Touched Robes	
+										i(147229),	-- Fel-Treated Chestguard	
+										i(147230),	-- Galvanized Stormscale Chestguard	
+										i(147231),	-- Storm-Tempered Breastplate	
 									}),		
-									i(147212, { -- Dauntless Bracers		
-										i(147225), -- Ley-Touched Bracers	
-										i(147226), -- Fel-Treated Bracers	
-										i(147227), -- Galvanized Stormscale Bracers	
-										i(147228), -- Storm-Tempered Bracers	
+									i(147212, {	-- Dauntless Bracers		
+										i(147225),	-- Ley-Touched Bracers	
+										i(147226),	-- Fel-Treated Bracers	
+										i(147227),	-- Galvanized Stormscale Bracers	
+										i(147228),	-- Storm-Tempered Bracers	
 									}),		
-									i(147215, { -- Dauntless Gauntlets		
-										i(147237), -- Ley-Touched Gloves	
-										i(147238), -- Fel-Treated Gauntlets	
-										i(147239), -- Galvanized Stormscale Gauntlets	
-										i(147240), -- Storm-Tempered Gauntlets	
+									i(147215, {	-- Dauntless Gauntlets		
+										i(147237),	-- Ley-Touched Gloves	
+										i(147238),	-- Fel-Treated Gauntlets	
+										i(147239),	-- Galvanized Stormscale Gauntlets	
+										i(147240),	-- Storm-Tempered Gauntlets	
 									}),		
-									i(147219, { -- Dauntless Girdle		
-										i(147253), -- Ley-Touched Cord	
-										i(147254), -- Fel-Treated Belt	
-										i(147255), -- Galvanized Stormscale Belt	
-										i(147256), -- Storm-Tempered Girdle	
+									i(147219, {	-- Dauntless Girdle		
+										i(147253),	-- Ley-Touched Cord	
+										i(147254),	-- Fel-Treated Belt	
+										i(147255),	-- Galvanized Stormscale Belt	
+										i(147256),	-- Storm-Tempered Girdle	
 									}),		
-									i(147217, { -- Dauntless Leggings		
-										i(147245), -- Ley-Touched Trousers	
-										i(147246), -- Fel-Treated Legguards	
-										i(147247), -- Galvanized Stormscale Legguards	
-										i(147248), -- Storm-Tempered Legplates	
+									i(147217, {	-- Dauntless Leggings		
+										i(147245),	-- Ley-Touched Trousers	
+										i(147246),	-- Fel-Treated Legguards	
+										i(147247),	-- Galvanized Stormscale Legguards	
+										i(147248),	-- Storm-Tempered Legplates	
 									}),		
-									i(147214, { -- Dauntless Treads		
-										i(147233), -- Ley-Touched Sandals	
-										i(147234), -- Fel-Treated Boots	
-										i(147235), -- Galvanized Stormscale Boots	
-										i(147236), -- Storm-Tempered Greaves	
+									i(147214, {	-- Dauntless Treads		
+										i(147233),	-- Ley-Touched Sandals	
+										i(147234),	-- Fel-Treated Boots	
+										i(147235),	-- Galvanized Stormscale Boots	
+										i(147236),	-- Storm-Tempered Greaves	
 									}),		
-									i(147220, { -- Dauntless Ring	
-										i(147257), -- Avenging Band
+									i(147220, {	-- Dauntless Ring	
+										i(147257),	-- Avenging Band
 									}),	
-									i(147223, { -- Dauntless Trinket	
-										i(147275), -- Beguiler's Talisman
-										i(147276), -- Spellbinder's Seal
-										i(147278), -- Stalwart Crest
+									i(147223, {	-- Dauntless Trinket	
+										i(147275),	-- Beguiler's Talisman
+										i(147276),	-- Spellbinder's Seal
+										i(147278),	-- Stalwart Crest
 									}),	
 								},
 							})),
-							un(2, i(152649, { -- Legionfall Spoils
+							un(2, i(152649, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, { -- Dauntless Hood		
-										i(147241), -- Ley-Touched Hood	
-										i(147242), -- Fel-Treated Hood	
-										i(147243), -- Galvanized Stormscale Helm	
-										i(147244), -- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood		
+										i(147241),	-- Ley-Touched Hood	
+										i(147242),	-- Fel-Treated Hood	
+										i(147243),	-- Galvanized Stormscale Helm	
+										i(147244),	-- Storm-Tempered Greathelm	
 									}),
-									i(147221, { -- Dauntless Choker	
-										i(147263), -- Animus Pendant
+									i(147221, {	-- Dauntless Choker	
+										i(147263),	-- Animus Pendant
 									}),	
-									i(147218, { -- Dauntless Spaulders		
-										i(147249), -- Ley-Touched Mantle	
-										i(147250), -- Fel-Treated Spaulders	
-										i(147251), -- Galvanized Stormscale Spaulders	
-										i(147252), -- Storm-Tempered Shoulderguard	
+									i(147218, {	-- Dauntless Spaulders		
+										i(147249),	-- Ley-Touched Mantle	
+										i(147250),	-- Fel-Treated Spaulders	
+										i(147251),	-- Galvanized Stormscale Spaulders	
+										i(147252),	-- Storm-Tempered Shoulderguard	
 									}),		
-									i(147222, { -- Dauntless Cloak		
-										i(147269), -- Unifying Drape	
+									i(147222, {	-- Dauntless Cloak		
+										i(147269),	-- Unifying Drape	
 									}),		
-									i(147213, { -- Dauntless Tunic		
-										i(147232), -- Ley-Touched Robes	
-										i(147229), -- Fel-Treated Chestguard	
-										i(147230), -- Galvanized Stormscale Chestguard	
-										i(147231), -- Storm-Tempered Breastplate	
+									i(147213, {	-- Dauntless Tunic		
+										i(147232),	-- Ley-Touched Robes	
+										i(147229),	-- Fel-Treated Chestguard	
+										i(147230),	-- Galvanized Stormscale Chestguard	
+										i(147231),	-- Storm-Tempered Breastplate	
 									}),		
-									i(147212, { -- Dauntless Bracers		
-										i(147225), -- Ley-Touched Bracers	
-										i(147226), -- Fel-Treated Bracers	
-										i(147227), -- Galvanized Stormscale Bracers	
-										i(147228), -- Storm-Tempered Bracers	
+									i(147212, {	-- Dauntless Bracers		
+										i(147225),	-- Ley-Touched Bracers	
+										i(147226),	-- Fel-Treated Bracers	
+										i(147227),	-- Galvanized Stormscale Bracers	
+										i(147228),	-- Storm-Tempered Bracers	
 									}),		
-									i(147215, { -- Dauntless Gauntlets		
-										i(147237), -- Ley-Touched Gloves	
-										i(147238), -- Fel-Treated Gauntlets	
-										i(147239), -- Galvanized Stormscale Gauntlets	
-										i(147240), -- Storm-Tempered Gauntlets	
+									i(147215, {	-- Dauntless Gauntlets		
+										i(147237),	-- Ley-Touched Gloves	
+										i(147238),	-- Fel-Treated Gauntlets	
+										i(147239),	-- Galvanized Stormscale Gauntlets	
+										i(147240),	-- Storm-Tempered Gauntlets	
 									}),		
-									i(147219, { -- Dauntless Girdle		
-										i(147253), -- Ley-Touched Cord	
-										i(147254), -- Fel-Treated Belt	
-										i(147255), -- Galvanized Stormscale Belt	
-										i(147256), -- Storm-Tempered Girdle	
+									i(147219, {	-- Dauntless Girdle		
+										i(147253),	-- Ley-Touched Cord	
+										i(147254),	-- Fel-Treated Belt	
+										i(147255),	-- Galvanized Stormscale Belt	
+										i(147256),	-- Storm-Tempered Girdle	
 									}),		
-									i(147217, { -- Dauntless Leggings		
-										i(147245), -- Ley-Touched Trousers	
-										i(147246), -- Fel-Treated Legguards	
-										i(147247), -- Galvanized Stormscale Legguards	
-										i(147248), -- Storm-Tempered Legplates	
+									i(147217, {	-- Dauntless Leggings		
+										i(147245),	-- Ley-Touched Trousers	
+										i(147246),	-- Fel-Treated Legguards	
+										i(147247),	-- Galvanized Stormscale Legguards	
+										i(147248),	-- Storm-Tempered Legplates	
 									}),		
-									i(147214, { -- Dauntless Treads		
-										i(147233), -- Ley-Touched Sandals	
-										i(147234), -- Fel-Treated Boots	
-										i(147235), -- Galvanized Stormscale Boots	
-										i(147236), -- Storm-Tempered Greaves	
+									i(147214, {	-- Dauntless Treads		
+										i(147233),	-- Ley-Touched Sandals	
+										i(147234),	-- Fel-Treated Boots	
+										i(147235),	-- Galvanized Stormscale Boots	
+										i(147236),	-- Storm-Tempered Greaves	
 									}),		
-									i(147220, { -- Dauntless Ring	
-										i(147257), -- Avenging Band
+									i(147220, {	-- Dauntless Ring	
+										i(147257),	-- Avenging Band
 									}),	
-									i(147223, { -- Dauntless Trinket	
-										i(147275), -- Beguiler's Talisman
-										i(147276), -- Spellbinder's Seal
-										i(147278), -- Stalwart Crest
+									i(147223, {	-- Dauntless Trinket	
+										i(147275),	-- Beguiler's Talisman
+										i(147276),	-- Spellbinder's Seal
+										i(147278),	-- Stalwart Crest
 									}),	
 								},
 							})),
@@ -221,16 +221,16 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					n(-206,  { -- Paragon
-						q(46777, { -- The Bounties of Legionfall
+						q(46777, {	-- The Bounties of Legionfall
 							["groups"] = {
-								i(152108, { -- Legionfall Chest
+								i(152108, {	-- Legionfall Chest
 									["groups"] = {
-										i(147841), -- Orphaned Felbat
+										i(147841),	-- Orphaned Felbat
 									},
 								}),
-								i(147361, { -- Legionfall Chest
+								i(147361, {	-- Legionfall Chest
 									["groups"] = {
-										i(147841), -- Orphaned Felbat
+										i(147841),	-- Orphaned Felbat
 									},
 									["u"] = 2,
 								}),
@@ -240,17 +240,17 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1942, { -- Aalgen Point, Broken Shore
+					fp(1942, {	-- Aalgen Point, Broken Shore
 						["coord"] = { 70.6, 47.6 },
 					}),
-					fp(1862, { -- Acherus: The Ebon Hold
+					fp(1862, {	-- Acherus: The Ebon Hold
 						["coord"] = { 97.4, 56 },
 						["classes"] = { 6 },	-- Death Knight
 					}),
-					fp(1941, { -- Deliverance Point, Broken Shore
+					fp(1941, {	-- Deliverance Point, Broken Shore
 						["coord"] = { 45.2, 64 },
 					}),
-					fp(1856, { -- Vengeance Point, Broken Shore
+					fp(1856, {	-- Vengeance Point, Broken Shore
 						["coord"] = { 49.6, 21 },
 					}),
 				}),
@@ -262,58 +262,58 @@ _.Zones =
 					ach(11737),	-- Disrupting the Nether
 					ach(11738),	-- It'll Nether Happen
 				}),
-				n(-10050, { -- Nether Disruptor
-					["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
-						q(46774, { -- The Nether Disruptor
+				n(-10050, {	-- Nether Disruptor
+					["groups"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
+						q(46774, {	-- The Nether Disruptor
 							["groups"] = {
-								i(147451), -- Armorcrafter's Commendation
+								i(147451),	-- Armorcrafter's Commendation
 							},
-							["qg"] = 120183, -- Commander Chambers
+							["qg"] = 120183,	-- Commander Chambers
 							["repeatable"] = true,
 						}),
-						i(147451, { -- Armorcrafter's Commendation
-							q(46696, { -- Fashion History and a Philosophy of Style
-								["qg"] = 120221, -- Eliezer Hammerbeard
+						i(147451, {	-- Armorcrafter's Commendation
+							q(46696, {	-- Fashion History and a Philosophy of Style
+								["qg"] = 120221,	-- Eliezer Hammerbeard
 								["description"] = "You must turn in the Commendation before this quest becomes available.",
 								["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-								["sourceQuest"] = 46774, -- The Nether Disruptor
+								["sourceQuest"] = 46774,	-- The Nether Disruptor
 							}),
 						}),
-						q(46696, { -- The Legend of the Four Hammers
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46696, {	-- The Legend of the Four Hammers
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuest"] = 46696, -- Fashion History and a Philosophy of Style
+							["sourceQuest"] = 46696,	-- Fashion History and a Philosophy of Style
 						}),
-						q(46700, { -- Armor of the Ancients
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46700, {	-- Armor of the Ancients
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+							["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
 						}),
-						q(46698, { -- The Dragonhunter
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46698, {	-- The Dragonhunter
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+							["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
 						}),
-						q(46697, { -- The Godfighter
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46697, {	-- The Godfighter
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+							["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
 						}),
-						q(46699, { -- The Hellslayer
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46699, {	-- The Hellslayer
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuest"] = 46696, -- The Legend of the Four Hammers
+							["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
 						}),
-						q(46701, { -- Hammer of Forgotten Heroes
-							["qg"] = 120221, -- Eliezer Hammerbeard
+						q(46701, {	-- Hammer of Forgotten Heroes
+							["qg"] = 120221,	-- Eliezer Hammerbeard
 							["description"] = "Once you've completed this quest, you should earn the ability to craft the legendary belt.",
 							["isWeekly"] = true,	-- Note!! It's not necessarily repeatable since you can only do it once per cycle.  Using Weekly as the Nether Disruptor will typically come up only once a week (has a 4 day duration).
-							["sourceQuests"] = { 46700, 46698, 46697, 46699 }, -- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
+							["sourceQuests"] = { 46700, 46698, 46697, 46699 },	-- Armor of the Ancients, The Dragonhunter, The Godfighter, The Hellslayer
 						}),
 					}),
 				}),
 				n(-38, { 	-- Profession
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						ach(10596, {	-- Bigger Fish to Fry
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
@@ -384,8 +384,8 @@ _.Zones =
 							faction(2102, {	-- Impus
 								["groups"] = {
 									i(146963, {		-- Desecrated Seaweed
-										i(147312), -- Demon Noggin
-										i(152554), -- Desecrated Seaweed Shirt
+										i(147312),	-- Demon Noggin
+										i(152554),	-- Desecrated Seaweed Shirt
 									}),
 								},
 								["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF34.0, 54.0|r on Deadwood Landing.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you receive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
@@ -397,265 +397,265 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
-					ach(11546, { -- Breaching the Tomb
+					ach(11546, {	-- Breaching the Tomb
 						["groups"] = {
-							crit(1, { -- Armies of Legionfall
+							crit(1, {	-- Armies of Legionfall
 								["groups"] = {
-									q(46734, { -- Assault on Broken Shore
+									q(46734, {	-- Assault on Broken Shore
 										["groups"] = {
 											{
-												--["spellID"] = 242180, -- Broken Shore World Quests
+												--["spellID"] = 242180,	-- Broken Shore World Quests
 											},
 										},
-										["qg"] = 120215, -- Archmage Khadgar
-										["sourceQuests"] = { 45727 }, -- Uniting the Isles
+										["qg"] = 120215,	-- Archmage Khadgar
+										["sourceQuests"] = { 45727 },	-- Uniting the Isles
 									}),
 								},
 							}),
-							crit(2, { -- Assault on Broken Shore
+							crit(2, {	-- Assault on Broken Shore
 								["groups"] = {
-									q(46734, { -- Assault on Broken Shore
-										["qg"] = 120215, -- Archmage Khadgar
-										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+									q(46734, {	-- Assault on Broken Shore
+										["qg"] = 120215,	-- Archmage Khadgar
+										["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 									}),
 								},
 							}),
-							crit(3, { -- Begin Construction
+							crit(3, {	-- Begin Construction
 								["groups"] = {
-									q(46286, { -- Legionfall Supplies
+									q(46286, {	-- Legionfall Supplies
 										["groups"] = {
-											q(46245, { -- Begin Construction
+											q(46245, {	-- Begin Construction
 												["groups"] = {
-													q(46773, { -- The Command Center
-														["qg"] = 120183, -- Commander Chambers
-														["sourceQuests"] = { 46245 }, -- Begin Construction
+													q(46773, {	-- The Command Center
+														["qg"] = 120183,	-- Commander Chambers
+														["sourceQuests"] = { 46245 },	-- Begin Construction
 													}),
-													q(46772, { -- The Mage Tower
-														["qg"] = 120183, -- Commander Chambers
-														["sourceQuests"] = { 46245 }, -- Begin Construction
+													q(46772, {	-- The Mage Tower
+														["qg"] = 120183,	-- Commander Chambers
+														["sourceQuests"] = { 46245 },	-- Begin Construction
 													}),
-													q(46774, { -- The Nether Disruptor
-														["qg"] = 120183, -- Commander Chambers
-														["sourceQuests"] = { 46245 }, -- Begin Construction
+													q(46774, {	-- The Nether Disruptor
+														["qg"] = 120183,	-- Commander Chambers
+														["sourceQuests"] = { 46245 },	-- Begin Construction
 													}),
 												},
-												["qg"] = 120183, -- Commander Chambers
-												["sourceQuests"] = { 46286 }, -- Legionfall Supplies
+												["qg"] = 120183,	-- Commander Chambers
+												["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 											}),
 										},
-										["qg"] = 120183, -- Commander Chambers
-										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+										["qg"] = 120183,	-- Commander Chambers
+										["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 									}),
 								},
 							}),
-							crit(4, { -- Aalgen Point
+							crit(4, {	-- Aalgen Point
 								["groups"] = {
-									q(46832, { -- Aalgen Point
-										["qg"] = 120183, -- Commander Chambers
-										["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+									q(46832, {	-- Aalgen Point
+										["qg"] = 120183,	-- Commander Chambers
+										["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 									}),
 								},
 							}),
-							crit(5, { -- Vengeance Point
+							crit(5, {	-- Vengeance Point
 								["groups"] = {
-									q(46845, { -- Vengeance Point
-										["qg"] = 120118, -- Heidirk the Scalekeeper
-										["sourceQuests"] = { 46832 }, -- Aalgen Point
+									q(46845, {	-- Vengeance Point
+										["qg"] = 120118,	-- Heidirk the Scalekeeper
+										["sourceQuests"] = { 46832 },	-- Aalgen Point
 									}),
 								},
 							}),
-							crit(6, { -- Defending Broken Isles
+							crit(6, {	-- Defending Broken Isles
 								["groups"] = {
-									q(46247, { -- Defending Broken Isles
-										["qg"] = 116576, -- Maiev Shadowsong
-										["sourceQuests"] = { 46286 }, -- Legionfall Supplies
+									q(46247, {	-- Defending Broken Isles
+										["qg"] = 116576,	-- Maiev Shadowsong
+										["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 									}),
 								},
 							}),
-							crit(7, { -- Champions of Legionfall
+							crit(7, {	-- Champions of Legionfall
 								["groups"] = {
-									q(47137, { -- Champions of Legionfall
+									q(47137, {	-- Champions of Legionfall
 										["groups"] = {
-											cl(10, { -- Monk
+											cl(10, {	-- Monk
 												["groups"] = {
-													q(45440, { -- A Brewing Situation
-														["qg"] = 116929, -- Brewmaster Blancee
-														["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+													q(45440, {	-- A Brewing Situation
+														["qg"] = 116929,	-- Brewmaster Blancee
+														["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 													}),	
-													q(45404, { -- Panic at the Brewery
-														["qg"] = 119664, -- Brewmaster Almai
-														["sourceQuests"] = { 45440 }, -- A Brewing Situation
+													q(45404, {	-- Panic at the Brewery
+														["qg"] = 119664,	-- Brewmaster Almai
+														["sourceQuests"] = { 45440 },	-- A Brewing Situation
 													}),	
-													q(45459, { -- Storming the Legion
-														["qg"] = 119765, -- Spirit of Brewmaster Blanche
-														["sourceQuests"] = { 45404 }, -- Panic at the Brewery
+													q(45459, {	-- Storming the Legion
+														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 45404 },	-- Panic at the Brewery
 													}),	
-													q(45574, { -- Fel Ingredients
-														["qg"] = 117305, -- Brewmaster Almai
-														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													q(45574, {	-- Fel Ingredients
+														["qg"] = 117305,	-- Brewmaster Almai
+														["sourceQuests"] = { 45459 },	-- Storming the Legion
 													}),	
-													q(45449, { -- Alchemist Koryla
-														["qg"] = 117305, -- Brewer Almai
-														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													q(45449, {	-- Alchemist Koryla
+														["qg"] = 117305,	-- Brewer Almai
+														["sourceQuests"] = { 45459 },	-- Storming the Legion
 													}),	
-													q(45545, { -- Barrel Toss
-														["qg"] = 117305, -- Brewer Almai
-														["sourceQuests"] = { 45459 }, -- Storming the Legion
+													q(45545, {	-- Barrel Toss
+														["qg"] = 117305,	-- Brewer Almai
+														["sourceQuests"] = { 45459 },	-- Storming the Legion
 													}),	
-													q(46320, { -- Hope For a Cure
-														["qg"] = 117305, -- Brewer Almai
-														["sourceQuests"] = { 45574, 45449, 45545 }, -- Fel Ingredients / Alchemist Koryla / Barrel Toss
+													q(46320, {	-- Hope For a Cure
+														["qg"] = 117305,	-- Brewer Almai
+														["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
 													}),	
-													q(45442, { -- Not Felling Well
-														["qg"] = 119765, -- Spirit of Brewmaster Blanche
-														["sourceQuests"] = { 46320 }, -- Hope For a Cure
+													q(45442, {	-- Not Felling Well
+														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 46320 },	-- Hope For a Cure
 													}),	
-													q(45771, { -- A Time for Everything
-														["qg"] = 119765, -- Spirit of Brewmaster Blanche
-														["sourceQuests"] = { 45442 }, -- Not Felling Well
+													q(45771, {	-- A Time for Everything
+														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
+														["sourceQuests"] = { 45442 },	-- Not Felling Well
 													}),	
-													q(45790, { -- Champion: Almai
-														["qg"] = 117504, -- Brewer Almai
-														["sourceQuests"] = { 45771 }, -- A Time for Everything
+													q(45790, {	-- Champion: Almai
+														["qg"] = 117504,	-- Brewer Almai
+														["sourceQuests"] = { 45771 },	-- A Time for Everything
 													}),
 												},
 											}),
 										},
-										["qg"] = 116576, -- Maiev Shadowsong
-										["sourceQuests"] = { 46247 }, -- Defending Broken Isles
+										["qg"] = 116576,	-- Maiev Shadowsong
+										["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 									}),
 								},
 							}),
-							crit(8, { -- Shard Times
+							crit(8, {	-- Shard Times
 								["groups"] = {
-									q(46251, { -- Shard Times
-										["qg"] = 116302, -- Archmage Khadgar
-										["sourceQuests"] = { 47137 }, -- Champions of Legionfall
+									q(46251, {	-- Shard Times
+										["qg"] = 116302,	-- Archmage Khadgar
+										["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 									}),
 								},
 							}),
-							crit(9, { -- Mark of the Sentinax
+							crit(9, {	-- Mark of the Sentinax
 								["groups"] = {
-									q(47139, { -- Mark of the Sentinax
-										["qg"] = 117873, -- Illidan Stormrage
-										["sourceQuests"] = { 46251 }, -- Shard Times
+									q(47139, {	-- Mark of the Sentinax
+										["qg"] = 117873,	-- Illidan Stormrage
+										["sourceQuests"] = { 46251 },	-- Shard Times
 									}),
 								},
 							}),
-							crit(10, { -- Self-Fulfilling Prophecy
+							crit(10, {	-- Self-Fulfilling Prophecy
 								["groups"] = {
-									q(46248, { -- Self-Fulfilling Prophecy
-										["qg"] = 120372, -- Prophet Velen
-										["sourceQuests"] = { 47139 }, -- Mark of the Sentinax
+									q(46248, {	-- Self-Fulfilling Prophecy
+										["qg"] = 120372,	-- Prophet Velen
+										["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
 									}),
 								},
 							}),
-							crit(11, { -- Intolerable Infestation
+							crit(11, {	-- Intolerable Infestation
 								["groups"] = {
-									q(46252, { -- Intolerable Infestation
-										["qg"] = 116576, -- Maiev Shadowsong
-										["sourceQuests"] = { 46248 }, -- Self-Fulfilling Prophecy
+									q(46252, {	-- Intolerable Infestation
+										["qg"] = 116576,	-- Maiev Shadowsong
+										["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
 									}),
 								},
 							}),
-							crit(12, { -- Relieved of Thier Valuables
+							crit(12, {	-- Relieved of Thier Valuables
 								["groups"] = {
-									q(46769, { -- Relieved of Their Valuables
-										["qg"] = 116302, -- Archmage Khadgar
-										["sourceQuests"] = { 46252 }, -- Intolerable Infestation
+									q(46769, {	-- Relieved of Their Valuables
+										["qg"] = 116302,	-- Archmage Khadgar
+										["sourceQuests"] = { 46252 },	-- Intolerable Infestation
 									}),
 								},
 							}),
-							crit(13, { -- Take Out the Head...
+							crit(13, {	-- Take Out the Head...
 								["groups"] = {
-									q(46250, { -- Take Out the Head...
-										["qg"] = 116576, -- Maiev Shadowsong
-										["sourceQuests"] = { 46769 }, -- Relieved of Their Valuables
+									q(46250, {	-- Take Out the Head...
+										["qg"] = 116576,	-- Maiev Shadowsong
+										["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
 									}),
 								},
 							}),
-							crit(14, { -- Championing Our Cause
+							crit(14, {	-- Championing Our Cause
 								["groups"] = {
-									q(46249, { -- Championing Our Cause
-										["qg"] = 116302, -- Archmage Khadgar
-										["sourceQuests"] = { 46250 }, -- Take Out the Head...
+									q(46249, {	-- Championing Our Cause
+										["qg"] = 116302,	-- Archmage Khadgar
+										["sourceQuests"] = { 46250 },	-- Take Out the Head...
 									}),
 								},
 							}),
-							crit(15, { -- Strike Them Down
+							crit(15, {	-- Strike Them Down
 								["groups"] = {
-									q(46246, { -- Strike Them Down
-										["qg"] = 116576, -- Maiev Shadowsong
-										["sourceQuests"] = { 46249 }, -- Championing Our Cause
+									q(46246, {	-- Strike Them Down
+										["qg"] = 116576,	-- Maiev Shadowsong
+										["sourceQuests"] = { 46249 },	-- Championing Our Cause
 									}),
 								},
 							}),
 						},
 					}),
-					n(-168, { -- Other Quests
-						sz(11543,1, { -- Deliverance Point
-							q(46244, { -- Cathedral of Eternal Night: Altar of the Aegis
+					n(-168, {	-- Other Quests
+						sz(11543,1, {	-- Deliverance Point
+							q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 								["groups"] = {
-									i(146932), -- Condensed Storm's Fury
-									i(146926), -- Fel Command Beacon
-									i(146928), -- Heat Absorbing Prism
-									i(146933), -- Highborne Martyr's Blood
-									i(146927), -- Inferno Oil
-									i(146925), -- Mature Morrowsprout
-									i(146931), -- Mephistroth's Rib
-									i(146929), -- Moonstone Figurine
-									i(146930), -- Pure Arcane Powder
-									i(146934), -- Untouched Holy Candle
+									i(146932),	-- Condensed Storm's Fury
+									i(146926),	-- Fel Command Beacon
+									i(146928),	-- Heat Absorbing Prism
+									i(146933),	-- Highborne Martyr's Blood
+									i(146927),	-- Inferno Oil
+									i(146925),	-- Mature Morrowsprout
+									i(146931),	-- Mephistroth's Rib
+									i(146929),	-- Moonstone Figurine
+									i(146930),	-- Pure Arcane Powder
+									i(146934),	-- Untouched Holy Candle
 								},
-								["qg"] = 116302, -- Archmage Khadgar
-								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+								["qg"] = 116302,	-- Archmage Khadgar
+								["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 							}),
-							q(46253, { -- Pillars of Creation
-								["qg"] = 116302, -- Archmage Khadgar
-								["sourceQuests"] = { 46734 }, -- Assault on Broken Shore
+							q(46253, {	-- Pillars of Creation
+								["qg"] = 116302,	-- Archmage Khadgar
+								["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 							}),
-							q(47067, { -- Seeking Lost Knowledge
-								["qg"] = 116302, -- Archmage Khadgar
+							q(47067, {	-- Seeking Lost Knowledge
+								["qg"] = 116302,	-- Archmage Khadgar
 								["u"] = 2,
 							}),
 							
 						}),
-						i(143559, { -- Wyrmtongue's Cache Key
-							q(46499, { -- Spiders, Huh?
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46734 }, -- Assault on Brokeen Shore
+						i(143559, {	-- Wyrmtongue's Cache Key
+							q(46499, {	-- Spiders, Huh?
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 							}),
-							q(46501, { -- Grave Robbin'
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46499 }, -- Spiders, Huh?
+							q(46501, {	-- Grave Robbin'
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 							}),
-							q(46509, { -- Tomb Raidering
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46501 }, -- Grave Robbin'
+							q(46509, {	-- Tomb Raidering
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46501 },	-- Grave Robbin'
 							}),
-							q(46510, { -- Ship Graveyard
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46509 }, -- Tomb Raidering
+							q(46510, {	-- Ship Graveyard
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46509 },	-- Tomb Raidering
 							}),
-							q(46511, { -- We're Treasure Hunters
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46510 }, -- Ship Graveyard
+							q(46511, {	-- We're Treasure Hunters
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46510 },	-- Ship Graveyard
 							}),
-							q(46666, { -- The Motherlode
-								["qg"] = 119886, -- Excavator Karla
-								["sourceQuests"] = { 46511 }, -- We're Treasure Hunters
+							q(46666, {	-- The Motherlode
+								["qg"] = 119886,	-- Excavator Karla
+								["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 							}),
 						}),
-						q(46175, { -- Rolling Thunder
+						q(46175, {	-- Rolling Thunder
 							["groups"] = {
-								ach(11607, { -- They See Me Rolling
+								ach(11607, {	-- They See Me Rolling
 									["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
 								}),
 							},
 						}),
-						q(46317, { -- Talon's Call
-							["qg"] = 118105, -- Grovewarden Proudhorn
-							["sourceQuests"] = { 46246 }, -- Strike Them Down
+						q(46317, {	-- Talon's Call
+							["qg"] = 118105,	-- Grovewarden Proudhorn
+							["sourceQuests"] = { 46246 },	-- Strike Them Down
 							["classes"] = { 11 },  -- Druid
 						}),
 					}),
@@ -692,36 +692,36 @@ _.Zones =
 						["lvl"] = 110,
 					},
 					q(47032, {	-- Legion Threat: Azshara
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qa(47030, {	-- Legion Threat: Dalaran Infiltration
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qa(47031, {	-- Legion Threat: Highmountain
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					q(47033, {	-- Legion Threat: Suramar
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qa(47035, {	-- Legion Threat: The Missing Mage
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qa(47034, {	-- Legion Threat: The Necromancer
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qa(47027, {	-- Legion Threat: Val'sharah
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 					}),
 					qh(46827, {	-- Meld Into the Shadows
-						["qg"] = 117259, -- Lord Jorach Ravenholdt
+						["qg"] = 117259,	-- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
 					}),
 					q(42074, {	-- Return of the Light
-						["qg"] = 106011, -- Jace Darkweaver
+						["qg"] = 106011,	-- Jace Darkweaver
 						["classes"] = { 5 },
 					}),
 					q(47000, {	-- The Council's Call
-						["qg"] = 116302, -- Archmage Khadgar
+						["qg"] = 116302,	-- Archmage Khadgar
 						["sourceQuests"] = {
 							45030,	-- The Fel-Etched Bone
 							46765,	-- The Broken Shore: Investigating the Legion
@@ -1283,9 +1283,9 @@ _.Zones =
 						["npcID"] = 121107,		-- Lady Eldrathe
 						["questID"] = 47026,	-- Rare Elite 22
 					},
-					n(119629, { -- Lord Hel'Nurath 
+					n(119629, {	-- Lord Hel'Nurath 
 						["groups"] = {
-							i(142233), -- Shadowy Reins of the Accursed Wrathsteed
+							i(142233),	-- Shadowy Reins of the Accursed Wrathsteed
 						},
 						["questID"] = 46304,	-- Rare Elite 15
 						["classes"] = {9},
@@ -1325,62 +1325,62 @@ _.Zones =
 									["questID"] = 43715,
 									["description"] = "|cFFFFFFFFStep 1:|r Head to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffThe demons are taking over this island, you may want to leave.|r \n\nChoose option 1 again. \n\n|cffcc33ffYou must know much. Will you help us defeat them?|r \n\nHe tells you to go away.",
 								}),	
-								o(252412, { -- Mound of Dirt
+								o(252412, {	-- Mound of Dirt
 									["icon"] = "Interface\\Icons\\INV_MISC_DUST_05",
 									["questID"] = 43729,						
 									["description"] = "|cFFFFFFFFStep :2|r Head to the |cFFFFD700Feldust Cavern|r at |cFFFFFFFF58.56, 53.99|r.  Walk inside to |cFFFFFFFF57.45, 55.95|r and click the |cFFFFD700Mound of Dirt|r to loot the |cFFFFD700Weathered Relic|r\n\nHead back to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffDo you recognize this relic?|r \n\nSpeak to him again and choose option 1. \n\n|cffcc33ffTell me of these whispers.|r\n\nSpeak to him again and choose option 1.\n\n|cffcc33ffDrak'thul?|r.\n\nSpeak to him again and choose option 1. \n\n|cffcc33ffYou are yourself again. What happened?|r \n\nSpeak to him again and he will tell you to go away",
 								}),	
-								o(252557, { -- Hungering Orb 1
+								o(252557, {	-- Hungering Orb 1
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43730,						
 									["description"] = "|cFFFFFFFFStep 3:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF37.96, 37.41|r, walk down into the cave and click on the purple |cFFFFD700Hungering Orb|r in the fountain.",
 								}),
-								o(252558, { -- Hungering Orb 2
+								o(252558, {	-- Hungering Orb 2
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43731,						
 									["description"] = "|cFFFFFFFFStep 4:|r This step will send you to |cFFFFD700Stormheim|r.  Head to |cFFFFFFFF32.92, 75.90|r, walk into the cave and make sure to avoid the |cFFFFD700Kangaxx|r.  Click on the |cFFFFD700Hungering Orb|r at the back of the cave in the sack of scrolls.",
 								}),
-								o(252559, { -- Hungering Orb 3
+								o(252559, {	-- Hungering Orb 3
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43732,						
 									["description"] = "|cFFFFFFFFStep 5:|r This step will send you to Val'sharah|r.  Head to |cFFFFFFFF41.51, 84.18|r, walk into the cave and take a left to see a table with a note on it.  Turn left and walk over the rocks, turn back right and kill the |cFFFFD700Arcane Servitor|r.  Click the |cFFFFD700Hungering Orb|r sitting on the ground between two sleeping pads.",
 								}),
-								o(252560, { -- Hungering Orb 4
+								o(252560, {	-- Hungering Orb 4
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43733,						
 									["description"] = "|cFFFFFFFFStep 6:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF29.16, 78.57|r, swim down and the cave is under the rock ledge.  Walk forward avoiding the steam explosions and click on the |cFFFFD700Hungering Orb|r sitting under a leanto in some leaves.\n\n|cffcc33ffNote: Be careful not to die to fatigue, fatigue will stop once in the cave.|r",
 								}),
-								o(252561, { -- Hungering Orb 5
+								o(252561, {	-- Hungering Orb 5
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43734,						
 									["description"] = "|cFFFFFFFFStep 7:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF59.37, 13.13|r, walk down into the cave and click on the |cFFFFD700Hungering Orb|r that is wrapped in stone beside a broken table.",
 								}),
-								o(252562, { -- Hungering Orb 6
+								o(252562, {	-- Hungering Orb 6
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43735,						
 									["description"] = "|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r.  Head to the |cFFFFD700Shield's Rest|r flight point.  Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r.  Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r.  Swim down beneath the shark and turn into the opening then swim up into the cave.  Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",
 								}),
-								o(252563, { -- Hungering Orb 7
+								o(252563, {	-- Hungering Orb 7
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43736,						
 									["description"] = "|cFFFFFFFFStep 9:|r This step will send you to |cFFFFD700Highmountain|r.  Head to |cFFFFFFFF55.84, 38.47|r.  This cave is to the right of the main cave here through the bushes.  Click on the |cFFFFD700Hungering Orb|r that is under the dead animal skull on the ground.",
 								}),
-								o(252564, { -- Hungering Orb 8
+								o(252564, {	-- Hungering Orb 8
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43737,						
 									["description"] = "|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",
 								}),
-								o(252565, { -- Hungering Orb 9
+								o(252565, {	-- Hungering Orb 9
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43760,						
 									["description"] = "|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone.  Head to |cFFFFFFFF79.52, 89.31|r.  Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed.  Swim up and to the platform above and through the hole on right side.  Now swim through the seaweed hole on left and down.  Turn around and swim under the beam then through the seaweed to the left.  Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",
 								}),
-								o(252434, { -- Hungering Orb 10
+								o(252434, {	-- Hungering Orb 10
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
 									["questID"] = 43761,						
 									["description"] = "|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF37.17, 71.82|r.  Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",
 								}),
-								n(111573, { -- Kosumoth the Hungering
+								n(111573, {	-- Kosumoth the Hungering
 									["groups"] = {
 										i(140261), 	-- Hungering Claw Pet
 										i(138201),	-- Fathom Dweller Mount
@@ -1404,126 +1404,141 @@ _.Zones =
 						["description"] = "/kiss her during Where There is a Whip... WQ.",
 						["coord"] = { 49.0, 55.8 },
 					},
-					n(120076, { -- Treasure Master Iks'reeged
-						currency(1226, { -- Nethershard
-							i(142452), -- Lingering Wyrmtongue Essence Toy
-							i(143559, { -- Wyrmtongue's Cache Key
-								o(268551, { -- Curious Wyrmtongue Cache [Used first one out of many]
-									i(147867), -- Pilfered Sweeper Toy
-									i(146953), -- Scraps Pet
+					n(120076, {	-- Treasure Master Iks'reeged
+						currency(1226, {	-- Nethershard
+							i(142452),	-- Lingering Wyrmtongue Essence Toy
+							i(143559, {	-- Wyrmtongue's Cache Key
+								o(268551, {	-- Curious Wyrmtongue Cache [Used first one out of many]
+									i(147867),	-- Pilfered Sweeper Toy
+									i(146953),	-- Scraps Pet
 								}),
 							}),
 						}),
 					}),
-					n(120898, { -- Warmage Kath'leen <Legionfall Artificer>
-						currency(1226, { -- Nethershard
-							["groups"] = {
-								{ -- Arsenal: Armaments of the Ebon Blade
-									["groups"] = {
-											i(141365), -- Blood 2H Axe
-											i(141377), -- Blood 1H Sword
-											i(141366), -- Blood 2H Polearm
-											i(141379), -- Blood 1H Warsword
-											i(141375), -- Blood 2H Sword
-											i(141381), -- Icy 2H Axe
-											i(141362), -- Icy 1H Sword
-											i(141373), -- Icy 2H Polearm
-											i(141363), -- Icy 1H Warsword
-											i(141376), -- Icy 2H Sword
-											i(141382), -- Unholy 2H Axe
-											i(141378), -- Unholy 1H Sword
-											i(141374), -- Unholy 2H Polearm
-											i(141380), -- Unholy 1H Warsword
-											i(141364), -- Unholy 2H Sword								
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 141372,
+					n(120898, {	-- Warmage Kath'leen <Legionfall Artificer>
+						currency(1226, {	-- Nethershard
+							{ -- Arsenal: Armaments of the Ebon Blade
+								["ignoreBonus"] = true,
+								["itemID"] = 141372,
+								["groups"] = {
+										i(141365),	-- Blood 2H Axe
+										i(141377),	-- Blood 1H Sword
+										i(141366),	-- Blood 2H Polearm
+										i(141379),	-- Blood 1H Warsword
+										i(141375),	-- Blood 2H Sword
+										i(141381),	-- Icy 2H Axe
+										i(141362),	-- Icy 1H Sword
+										i(141373),	-- Icy 2H Polearm
+										i(141363),	-- Icy 1H Warsword
+										i(141376),	-- Icy 2H Sword
+										i(141382),	-- Unholy 2H Axe
+										i(141378),	-- Unholy 1H Sword
+										i(141374),	-- Unholy 2H Polearm
+										i(141380),	-- Unholy 1H Warsword
+										i(141364),	-- Unholy 2H Sword								
 								},
-								{ -- Arsenal: Armaments of the Silver Hand
-									["groups"] = {
-											i(141370), -- Ardent Defender
-											i(150953), -- Ardent Gavel
-											i(141367), -- Ardent Hammer			
-											i(141368), -- Ardent Warhammer
-											i(141654), -- Gilded Defender
-											i(141653), -- Gilded Warhammer		
-									},
-									["ignoreBonus"] = true,
-									["itemID"] = 141371,
-								},
-								i(147708), -- Legion Invasion Simulator Toy
-								i(130199), -- Legion Pocket Poral Toy
-								i(147205), -- Legionfall Tabard
-								{
-									["itemID"] = 147775,	-- Nether Portal Disruptor
-									["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
-								},
-								i(151541), -- Technique: Glyph of Floating 
-								i(141067), -- Technique: Glyph of Wrathguard
-								i(147216, { -- Dauntless Hood
-									i(147241), -- Cloth
-									i(147242), -- Leather
-									i(147243), -- Mail
-									i(147244), -- Plate
-								}),
-								i(147218, { -- Dauntless Spaulders
-									i(147249), -- Cloth
-									i(147250), -- Leather
-									i(147251), -- Mail
-									i(147252), -- Plate
-								}),
-								i(147222, { -- Dauntless Cloak
-									i(147269) -- Cloak
-								}),
-								i(147213, { -- Dauntless Tunic
-									i(147232), -- Cloth
-									i(147229), -- Leather
-									i(147230), -- Mail
-									i(147231), -- Plate
-								}),
-								i(147212, { -- Dauntless Bracers
-									i(147225), -- Cloth
-									i(147226), -- Leather
-									i(147227), -- Mail
-									i(147228), -- Plate
-								}),
-								i(147215, { -- Dauntless Gauntlets
-									i(147237), -- Cloth
-									i(147238), -- Leather
-									i(147239), -- Mail
-									i(147240), -- Plate
-								}),
-								i(147219, { -- Dauntless Girdle
-									i(147253), -- Cloth
-									i(147254), -- Leather
-									i(147255), -- Mail
-									i(147256), -- Plate
-								}),
-								i(147217, { -- Dauntless Leggings
-									i(147245), -- Cloth
-									i(147246), -- Leather
-									i(147247), -- Mail
-									i(147248), -- Plate
-								}),
-								i(147214, { -- Dauntless Treads
-									i(147233), -- Cloth
-									i(147234), -- Leather
-									i(147235), -- Mail
-									i(147236), -- Plate
-								}),
 							},
-							["description"] = "|cff66ccffEbon Blade and Silver Hand armaments can only be bought with the associated classes.  \nDauntless tokens can roll any item in Legion with an iLvL 850+.  The ones featured on each token are exclusive to the tokens only. \nDauntless tokens are able to be purchased, drop off any mob in Broken Shore along with Legion Invasion bossses.|r"
+							{ -- Arsenal: Armaments of the Silver Hand
+								["ignoreBonus"] = true,
+								["itemID"] = 141371,
+								["groups"] = {
+										i(141370),	-- Ardent Defender
+										i(150953),	-- Ardent Gavel
+										i(141367),	-- Ardent Hammer			
+										i(141368),	-- Ardent Warhammer
+										i(141654),	-- Gilded Defender
+										i(141653),	-- Gilded Warhammer		
+								},
+							},
+							i(147708),	-- Legion Invasion Simulator Toy
+							i(130199),	-- Legion Pocket Poral Toy
+							i(147205),	-- Legionfall Tabard
+							{
+								["itemID"] = 147775,	-- Nether Portal Disruptor
+								["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
+							},
+							i(151541),	-- Technique: Glyph of Floating 
+							i(141067),	-- Technique: Glyph of Wrathguard
+							i(147216, {	-- Dauntless Hood
+								i(147241),	-- Cloth
+								i(147242),	-- Leather
+								i(147243),	-- Mail
+								i(147244),	-- Plate
+							}),
+							i(147221, {	-- Dauntless Choker	
+								i(147263),	-- Animus Pendant
+							}),
+							i(147218, {	-- Dauntless Spaulders
+								i(147249),	-- Cloth
+								i(147250),	-- Leather
+								i(147251),	-- Mail
+								i(147252),	-- Plate
+							}),
+							i(147222, {	-- Dauntless Cloak
+								i(147269) -- Cloak
+							}),
+							i(147213, {	-- Dauntless Tunic
+								i(147232),	-- Cloth
+								i(147229),	-- Leather
+								i(147230),	-- Mail
+								i(147231),	-- Plate
+							}),
+							i(147212, {	-- Dauntless Bracers
+								i(147225),	-- Cloth
+								i(147226),	-- Leather
+								i(147227),	-- Mail
+								i(147228),	-- Plate
+							}),
+							i(147215, {	-- Dauntless Gauntlets
+								i(147237),	-- Cloth
+								i(147238),	-- Leather
+								i(147239),	-- Mail
+								i(147240),	-- Plate
+							}),
+							i(147219, {	-- Dauntless Girdle
+								i(147253),	-- Cloth
+								i(147254),	-- Leather
+								i(147255),	-- Mail
+								i(147256),	-- Plate
+							}),
+							i(147217, {	-- Dauntless Leggings
+								i(147245),	-- Cloth
+								i(147246),	-- Leather
+								i(147247),	-- Mail
+								i(147248),	-- Plate
+							}),
+							i(147214, {	-- Dauntless Treads
+								i(147233),	-- Cloth
+								i(147234),	-- Leather
+								i(147235),	-- Mail
+								i(147236),	-- Plate
+							}),
+							i(147220, {	-- Dauntless Ring	
+								i(147257),	-- Avenging Band
+							}),
+							i(147223, {	-- Dauntless Trinket	
+								i(147275),	-- Beguiler's Talisman
+								i(147276),	-- Spellbinder's Seal
+								i(147278),	-- Stalwart Crest
+							}),
+							i(146659),	-- Nethershard Essence
+							i(153006),	-- Grimoire of Lost Knowledge
+							i(147864),	-- Legionfall Banner
+							i(147698),	-- Cauterizing Void Shard
+							i(147707),	-- Repurposed Fel Focuser
+							i(156630),	-- Relinquished Armor Set
+							i(139879),	-- Crate of Champion Equipment
 						}),
 					}),
 				}),
 				n(-34, { 	-- World Quests
-					n(-322, { -- Cloak
-						i(146886), -- Felknight Greatcloak
-						i(146857), -- Mo'arg Overseer's Cloak
-						i(134365), -- Netherwracked Greatcloak
-						i(146884), -- Wyrmtongue Scavenger's Shawl
+					n(-322, {	-- Cloak
+						i(146886),	-- Felknight Greatcloak
+						i(146857),	-- Mo'arg Overseer's Cloak
+						i(134365),	-- Netherwracked Greatcloak
+						i(146884),	-- Wyrmtongue Scavenger's Shawl
 					}),
-					n(-3244, { -- Netherwhisper Set
+					n(-3244, {	-- Netherwhisper Set
 						["groups"] = {
 							i(134392),	-- Netherwhisper Hood
 							i(134397),	-- Netherwhisper Mantle
@@ -1535,7 +1550,7 @@ _.Zones =
 							i(134396),	-- Netherwhisper Slippers
 						},
 					}),
-					n(-3246, { -- Riven Priesthood Set
+					n(-3246, {	-- Riven Priesthood Set
 						["groups"] = {
 							i(146877),	-- Riven Priesthood Cap
 							i(146882),	-- Riven Priesthood Amice
@@ -1547,7 +1562,7 @@ _.Zones =
 							i(146881),	-- Riven Priesthood Slippers
 						},
 					}),
-					n(-3265, { -- Felbat Leather Set
+					n(-3265, {	-- Felbat Leather Set
 						["groups"] = {
 							i(134372),	-- Felbat Leather Headguard
 							i(134374),	-- Felbat Leather Pauldrons
@@ -1559,7 +1574,7 @@ _.Zones =
 							i(134369),	-- Felbat Leather Boots
 						},
 					}),
-					n(-3272, { -- Lunarblight Set
+					n(-3272, {	-- Lunarblight Set
 						["groups"] = {
 							i(146863),	-- Lunarblight Headgear
 							i(146865),	-- Lunarblight Mantle
@@ -1571,7 +1586,7 @@ _.Zones =
 							i(146860),	-- Lunarblight Treads
 						},
 					}),
-					n(-3277, { -- Mardum Chain Set
+					n(-3277, {	-- Mardum Chain Set
 						["groups"] = {
 							i(134387),	-- Mardum Chain Helm
 							i(134389),	-- Mardum Chain Pauldrons
@@ -1583,7 +1598,7 @@ _.Zones =
 							i(134386),	-- Mardum Chain Boots
 						},
 					}),
-					n(-3283, { -- Shrinebreaker Set
+					n(-3283, {	-- Shrinebreaker Set
 						["groups"] = {
 							i(146872),	-- Shrinebreaker Coif
 							i(146874),	-- Shrinebreaker Spaulders
@@ -1595,7 +1610,7 @@ _.Zones =
 							i(146871),	-- Shrinebreaker Boots
 						},
 					}),
-					n(-3306, { -- Moonshatter Set
+					n(-3306, {	-- Moonshatter Set
 						["groups"] = {
 							i(146852),	-- Moonshatter Helmet
 							i(146854),	-- Moonshatter Pauldrons
@@ -1607,7 +1622,7 @@ _.Zones =
 							i(146855),	-- Moonshatter Sabatons
 						},
 					}),
-					n(-3301, { -- Portalguard Set
+					n(-3301, {	-- Portalguard Set
 						["groups"] = {
 							i(134358),	-- Portalguard Helm
 							i(134360),	-- Portalguard Shoulders
@@ -1621,9 +1636,9 @@ _.Zones =
 					}),
 				}),
 				n(-40, { 	-- Legacy
-					n(-10048, { -- Mage Tower
+					n(-10048, {	-- Mage Tower
 						["groups"] = bubbleDown({["u"] = 41}, {
-							q(46065, { -- An Impossible Foe
+							q(46065, {	-- An Impossible Foe
 								["groups"] = {
 									{ 	-- Apocalypse
 										["classes"] = { 6 },
@@ -1651,12 +1666,12 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									6, -- Unholy Death Knight
-									11, -- Feral Druid
-									8, -- Fire Mage
-									4, -- Outlaw Rogue
-									7, -- Elemental Shaman
-									1, -- Fury Warrior
+									6,	-- Unholy Death Knight
+									11,	-- Feral Druid
+									8,	-- Fire Mage
+									4,	-- Outlaw Rogue
+									7,	-- Elemental Shaman
+									1,	-- Fury Warrior
 								},
 								["qgs"] = {
 									115638,	-- Agatha
@@ -1666,7 +1681,7 @@ _.Zones =
 									115640,	-- Fuming Imp
 								},
 							}),
-							q(44925, { -- Closing the Eye
+							q(44925, {	-- Closing the Eye
 								["groups"] = {
 									{ 	-- Blades of the Fallen Prince
 										["classes"] = { 6 },
@@ -1690,18 +1705,18 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									6, -- Frost Death Knight
-									12, -- Havoc Demon Hunter
-									3, -- Survival Hunter
-									4, -- Subtlety Rogue
-									1, -- Arms Warrior
+									6,	-- Frost Death Knight
+									12,	-- Havoc Demon Hunter
+									3,	-- Survival Hunter
+									4,	-- Subtlety Rogue
+									1,	-- Arms Warrior
 								},
 								["qgs"] = {
 									115244,	-- Archmage Xylem
 									116839,	-- Corrupting Shadows
 								},
 							}),
-							q(46035, { -- End of the Risen Threat
+							q(46035, {	-- End of the Risen Threat
 								["groups"] = {
 									{ 	-- G'Hanir, the Mother Tree
 										["classes"] = { 11 },
@@ -1725,11 +1740,11 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									11, -- Restoration Druid
-									2, -- Holy Paladin
-									10, -- Mistweaver Monk
-									5, -- Holy Priest
-									7, -- Restoration Shaman
+									11,	-- Restoration Druid
+									2,	-- Holy Paladin
+									10,	-- Mistweaver Monk
+									5,	-- Holy Priest
+									7,	-- Restoration Shaman
 								},
 								["qgs"] = {
 									118447,	-- Commander Jarod Shadowsong
@@ -1741,7 +1756,7 @@ _.Zones =
 									119474,	-- Corrupted Risen Soldier
 								},
 							}),
-							q(45627, { -- Feltotem's Fall
+							q(45627, {	-- Feltotem's Fall
 								["groups"] = {
 									{ 	-- Titanstrike
 										["classes"] = { 3 },
@@ -1761,17 +1776,17 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									3, -- Beast Mastery Hunter
-									10, -- Windwalker Monk
-									5, -- Discipline Priest
-									9, -- Destruction Warlock
+									3,	-- Beast Mastery Hunter
+									10,	-- Windwalker Monk
+									5,	-- Discipline Priest
+									9,	-- Destruction Warlock
 								},
 								["qgs"] = {
 									117230,	-- Tugar Bloodtotem
 									117484,	-- Jormog the Behemoth
 								},
 							}),
-							q(45526, { -- The God-Queen's Fury
+							q(45526, {	-- The God-Queen's Fury
 								["groups"] = {
 									{ 	-- Aluneth
 										["classes"] = { 8 },
@@ -1795,11 +1810,11 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									8, -- Arcane Mage
-									2, -- Retribution Paladin
-									4, -- Assassination Rogue
-									7, -- Enhancemeent Shaman
-									9, -- Demonology Warlock
+									8,	-- Arcane Mage
+									2,	-- Retribution Paladin
+									4,	-- Assassination Rogue
+									7,	-- Enhancemeent Shaman
+									9,	-- Demonology Warlock
 								},
 								["qgs"] = {
 									116484,	-- Sigryn
@@ -1807,7 +1822,7 @@ _.Zones =
 									116496,	-- Runeseer Faljar
 								},
 							}),
-							q(45416, { -- The Highlord's Return
+							q(45416, {	-- The Highlord's Return
 								["groups"] = {
 									{ 	-- Maw of the Damned
 										["classes"] = { 6 },
@@ -1835,22 +1850,22 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									6, -- Blood Death Knight
-									12, -- Vengeance Demon Hunter
-									11, -- Guardian Druid
-									10, -- Brewmaster Monk
-									2, -- Protection Paladin 
-									1, -- Protection Warrior
+									6,	-- Blood Death Knight
+									12,	-- Vengeance Demon Hunter
+									11,	-- Guardian Druid
+									10,	-- Brewmaster Monk
+									2,	-- Protection Paladin 
+									1,	-- Protection Warrior
 								},
 								["qgs"] = {
 									117933,	-- Inquisitor Variss
-									118032, -- Tormenting Eye
+									118032,	-- Tormenting Eye
 									103928,	-- Smoldering Infernal
 									118044,	-- Nether Horror
 									117198,	-- Highlord Kruul
 								},
 							}),
-							q(46127, { -- Thwarting the Twins
+							q(46127, {	-- Thwarting the Twins
 								["groups"] = {
 									{ 	-- Scythe of Elune
 										["classes"] = { 11 },
@@ -1874,11 +1889,11 @@ _.Zones =
 									},
 								},
 								["classes"] = {
-									11, -- Balance Druid
-									3, -- Marksmanship Hunter
-									8, -- Frost Mage
-									5, -- Shadow Priest
-									9, -- Affliction Warlock
+									11,	-- Balance Druid
+									3,	-- Marksmanship Hunter
+									8,	-- Frost Mage
+									5,	-- Shadow Priest
+									9,	-- Affliction Warlock
 								},
 								["qgs"] = {
 									116410,	-- Karam Magespear
@@ -1892,58 +1907,58 @@ _.Zones =
 						["u"] = 41,
 					}),
 					n(-2, {	-- Vendors	
-						n(121589, { -- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
+						n(121589, {	-- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
 							["groups"] = {
-								un(2, i(147796, { -- Relinquished Hood
-									i(146786), -- Cloth
-									i(146772), -- Leather
-									i(146781), -- Mail
-									i(146761), -- Plate
+								un(2, i(147796, {	-- Relinquished Hood
+									i(146786),	-- Cloth
+									i(146772),	-- Leather
+									i(146781),	-- Mail
+									i(146761),	-- Plate
 								})),
-								un(2, i(147800, { -- Relinquished Spaulders
-									i(146791), -- Cloth
-									i(146774), -- Leather
-									i(146783), -- Mail
-									i(146763), -- Plate
+								un(2, i(147800, {	-- Relinquished Spaulders
+									i(146791),	-- Cloth
+									i(146774),	-- Leather
+									i(146783),	-- Mail
+									i(146763),	-- Plate
 								})),
-								un(2, i(147794, { -- Relinquished Cloak
-									i(146766), -- Cloak
+								un(2, i(147794, {	-- Relinquished Cloak
+									i(146766),	-- Cloak
 								})),
-								un(2, i(147793, { -- Relinquished Chestguard
-									i(146789), -- Cloth
-									i(146773), -- Leather
-									i(146784), -- Mail
-									i(146758), -- Plate
+								un(2, i(147793, {	-- Relinquished Chestguard
+									i(146789),	-- Cloth
+									i(146773),	-- Leather
+									i(146784),	-- Mail
+									i(146758),	-- Plate
 								})),
-								un(2, i(147786, { -- Relinquished Bracers
-									i(146792), -- Cloth
-									i(146768), -- Leather
-									i(146778), -- Mail
-									i(146765), -- Plate
+								un(2, i(147786, {	-- Relinquished Bracers
+									i(146792),	-- Cloth
+									i(146768),	-- Leather
+									i(146778),	-- Mail
+									i(146765),	-- Plate
 								})),
-								un(2, i(147795, { -- Relinquished Gauntlets
-									i(146787), -- Cloth
-									i(146771), -- Leather
-									i(146779), -- Mail
-									i(146759), -- Plate
+								un(2, i(147795, {	-- Relinquished Gauntlets
+									i(146787),	-- Cloth
+									i(146771),	-- Leather
+									i(146779),	-- Mail
+									i(146759),	-- Plate
 								})),
-								un(2, i(147791, { -- Relinquished Girdle
-									i(146785), -- Cloth
-									i(146775), -- Leather
-									i(146777), -- Mail
-									i(146760), -- Plate
+								un(2, i(147791, {	-- Relinquished Girdle
+									i(146785),	-- Cloth
+									i(146775),	-- Leather
+									i(146777),	-- Mail
+									i(146760),	-- Plate
 								})),
-								un(2, i(147797, { -- Relinquished Leggings
-									i(146788), -- Cloth
-									i(146770), -- Leather
-									i(146782), -- Mail
-									i(146762), -- Plate
+								un(2, i(147797, {	-- Relinquished Leggings
+									i(146788),	-- Cloth
+									i(146770),	-- Leather
+									i(146782),	-- Mail
+									i(146762),	-- Plate
 								})),
-								un(2, i(147792, { -- Relinquished Treads
-									i(146790), -- Cloth
-									i(146769), -- Leather
-									i(146780), -- Mail
-									i(146764), -- Plate
+								un(2, i(147792, {	-- Relinquished Treads
+									i(146790),	-- Cloth
+									i(146769),	-- Leather
+									i(146780),	-- Mail
+									i(146764),	-- Plate
 								})),
 							},
 							["description"] = "|cff66ccffThis vendor no longer exists on the Broken Shore and the only way to obtain these appearances are by the Legion Invasion bosses, and Legion Invasion quests only.|r"

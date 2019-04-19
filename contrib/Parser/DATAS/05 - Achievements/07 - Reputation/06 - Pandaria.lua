@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-9980, { -- Pandaria
+			n(-9980, {	-- Pandaria
 				["groups"] = {
 					h(ach(8206, {	-- Dominance Offensive
 						faction(1375), 	-- Dominance Offensive

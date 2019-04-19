@@ -78,12 +78,32 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(52009, {	-- Crab People [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Calligraphy
+									["questID"] = 55264,	-- Calligraphy
+									["races"] = ALLIANCE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Square
+													["criteriaID"] = 2,	-- Master of Calligraphy - Square
+												},
+											},
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
+								{	-- Crab People — Pet Battle
+									["questID"] = 52009,	-- Crab People
+									["isWQ"] = 120,
+									["qg"] = 139489,	-- Captain Hermes
+									["g"] = {
+										{	-- Crab People — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 1,	-- Crab People
+										},
+									},
+								},
 								{	-- Duchess Fallensong [A-Incursion WQ]
 									["questID"] = 54665,	-- Duchess Fallensong
 									["coords"] = {
@@ -145,7 +165,42 @@ _.Zones =
 								{	-- Luminous Monelite
 									["questID"] = 53308,	-- Luminous Monelite
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-									["requireSkill"] = 186, -- Mining
+									["requireSkill"] = 186,	-- Mining
+								},
+								{  -- Naga Attack!
+									["questID"] = 53979,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 53963,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{	-- Night Horrors — Pet Battle
+									["questID"] = 52218,	-- Night Horrors
+									["isWQ"] = 120,
+									["qg"] = 140461,	-- Dilbert McClint
+									["g"] = {
+										{	-- Night Horrors — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 4,	-- Night Horrors
+										},
+									},
 								},
 								{	-- Omgar Doombow [A-Incursion WQ]
 									["questID"] = 54089,	-- Fungal Infestation
@@ -171,12 +226,17 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 								},
-								q(52278, {	-- Rogue Azerite [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Rogue Azerite [Pet Battle]
+									["questID"] = 52278,	-- Rogue Azerite
+									["isWQ"] = 120,
+									["qg"] = 140813,	-- Fizzie Sparkwhistle
+									["g"] = {
+										{	-- Rogue Azerite (Battle on Zandalar and Kul Tiras)
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 5,	-- Rogue Azerite
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Sister Hilga [AH]
 									["questID"] = 51612, 	-- Sister Hilga
 									["coords"] = {
@@ -252,6 +312,17 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 								},
+								{	-- What's the Buzz? — Pet Battle
+									["questID"] = 52297,	-- What's the Buzz?
+									["isWQ"] = 120,
+									["qg"] = 140880,	-- Michael Skarn
+									["g"] = {
+										{	-- What's the Buzz? — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 6,	-- What's the Buzz?
+										},
+									},
+								},
 								{	-- Work Order: Battle Flag: Rallying Swiftness
 									["questID"] = 52424,
 									["groups"] = {
@@ -319,7 +390,7 @@ _.Zones =
 									},
 									["crs"] = {
 										148862,	-- Zillie Wunderwrench
-										148860, -- Grizzwald
+										148860,	-- Grizzwald
 									},
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,

@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					un(2, ach(2921)),		-- A Quick Shave (25 player)
 					un(2, a(ach(8030))),	-- A Test of Valor (Alliance)
@@ -31,6 +31,15 @@ _.Achievements =
 						un(2, h(ach(9173))),	-- The Second Rule of Brawler's Guild (Season 2)
 						un(2, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
 						un(2, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
+					}))),
+					un(2, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
+					un(2, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
+						un(2, ach(11563)), 		-- The Second Rule of Brawler's Guild(Legion)
+						un(2, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
+					}))),
+					un(2, h(ach(11566, {	-- King of the Guild (Horde)
+						un(2, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
+						un(2, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
 					}))),
 					un(2, ach(10765, {		-- Brokenly Epic (ilvl 840)
 						un(2, ach(9708)),		-- Savagely Epic (ilvl 640)

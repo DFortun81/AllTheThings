@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9960, { -- Professions
+	n(-9960, {	-- Professions
 		["groups"] = {
-			n(-9955, { -- General
+			n(-9955, {	-- General
 				["groups"] = {
 					ach(9454, {		-- Draenic Seed Collector
 						i(111997),		-- Herb Garden, Level 3 [Blueprints]
@@ -36,7 +36,7 @@ _.Achievements =
 					ach(10587), 	-- Hot Swapper
 					ach(9071, {		-- Inspector Gagetzan
 						["groups"] = {
-							i(114002, { -- Encoded Message
+							i(114002, {	-- Encoded Message
 								crit(1),	-- Decoded Message 001-003
 								crit(2),	-- Decoded Message 001-014
 								crit(3),	-- Decoded Message 001-107
@@ -90,6 +90,16 @@ _.Achievements =
 					h(ach(12735)),	-- Working in Zandalar
 					ach(10581),		-- Working the Isles
 					h(ach(12737)),	-- Zandalari Master of All
+					ach(13516, {	-- Massive Tool
+						--[[crit(1),		-- Alchemy: Silas' Sphere of Transmutation
+						crit(2),		-- Blacksmithing: Khaz'gorian Smithing Hammer
+						crit(3),		-- Enchanting: Iwen's Enchanting Rod
+						crit(4),		-- Engineering: The Ub3r-Spanner
+						crit(5),		-- Inscription: Sanguine Feather Quill of Lana'thel
+						crit(6),		-- Jewelcrafting: Jewelhammer's Focus
+						crit(7),		-- Leatherworking: Mallet of Thunderous Skins
+						crit(8),		-- Tailoring: Synchronous Thread]]--  				--Only need one for achiev.
+					}),
 				},
 			}),
 		},

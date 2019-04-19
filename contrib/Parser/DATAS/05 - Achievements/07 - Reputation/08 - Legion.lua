@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-9982, { -- Legion
+			n(-9982, {	-- Legion
 				["groups"] = {
 					ach(11796, {	-- Armies of Legionfall
 						faction(2045), 	-- Armies of Legionfall

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 _.ExpansionFeatures =
 {
-	n(-9966, { -- Draenor Garrisons
+	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-136, { 	-- Invasions
@@ -62,7 +62,7 @@ _.ExpansionFeatures =
 						}),
 						ach(9203),		-- Shadow Council Invasion
 						ach(9206),		-- Shadowmoon Clan Invasion
-						i(120320, { -- Invader's Abandoned Sack
+						i(120320, {	-- Invader's Abandoned Sack
 							["groups"] = {
 								i(115418),	-- Blood Gutter Greatsword
 								i(115417),	-- Chadrik's Lost Axe
@@ -89,7 +89,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["description"] = "Bronze Challenge"
 						}),
-						i(120319, { -- Invader's Damaged Cache
+						i(120319, {	-- Invader's Damaged Cache
 							["groups"] = {
 								i(115418),	-- Blood Gutter Greatsword
 								i(115417),	-- Chadrik's Lost Axe
@@ -116,7 +116,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["description"] = "Silver Challenge"
 						}),
-						i(116980, { -- Invader's Forgotten Treasure
+						i(116980, {	-- Invader's Forgotten Treasure
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["description"] = "Gold Challenge"
 						}),
-						i(122163, { -- Routed Invader's Crate of Spoils
+						i(122163, {	-- Routed Invader's Crate of Spoils
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -185,6 +185,7 @@ _.ExpansionFeatures =
 								i(122171),	-- Acid-Grooved Gorenscale Leggings
 								i(115410),	-- Gatecrasher's Chain Boots
 								i(115407),	-- Tehax's Penetrating Visage
+								i(122180),	-- Spiteleaf Podstrand
 								i(115415),	-- Spaulders of Primal Ferocity
 								i(122166),	-- Blackrock Iron Stranglers
 								i(122173),	-- Charred Blackrock Iron Waistplate
@@ -195,7 +196,7 @@ _.ExpansionFeatures =
 							["isWeekly"] = true,
 							["description"] = "Platinum Challenge"
 						}),
-						n(90802, { -- Annihilon
+						n(90802, {	-- Annihilon
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -241,7 +242,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
 						}),
-						n(90841, { -- Commander Dro'gan
+						n(90841, {	-- Commander Dro'gan
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -287,7 +288,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
 						}),
-						n(90943, { -- Gaur
+						n(90943, {	-- Gaur
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -333,7 +334,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",									
 						}),
-						n(91012, { -- Lady Fleshear
+						n(91012, {	-- Lady Fleshear
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -379,7 +380,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						}),
-						n(90995, { -- Mage Lord Gogg'nthog
+						n(90995, {	-- Mage Lord Gogg'nthog
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
@@ -425,7 +426,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",									
 						}),
-						n(90946, { -- Teluur
+						n(90946, {	-- Teluur
 							["groups"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout

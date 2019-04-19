@@ -32,7 +32,7 @@ _.Zones =
 					fp(12, {	-- Darkshire, Duskwood
 						["coord"] = { 77.4, 44.2 },
 					}),
-					fp(622, { -- Raven Hill, Duskwood
+					fp(622, {	-- Raven Hill, Duskwood
 						["coord"] = { 21, 56.6 },
 					}),
 				}),
@@ -48,10 +48,12 @@ _.Zones =
 					p(419), 	-- Small Frog
 					p(379), 	-- Squirrel
 					p(400), 	-- Widow Spiderling
-					qr(qg(65655, q(31850)),	-- Eric Davidson
-					qg(65655, qa(31729, { -- Steven Lisbane
+					qg(65655, q(31850, {	-- Eric Davidson
+						["isDaily"] = true,
+					})),
+					qg(65655, qa(31729, {	-- Steven Lisbane
 						i(89125),	-- Sack of Pet Supplies
-					}))),
+					})),
 				}),
 				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
@@ -64,30 +66,30 @@ _.Zones =
 					})),
 ]]--				
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
-					qg(576, qa(26797, { -- A Daughters Love
+					qg(576, qa(26797, {	-- A Daughters Love
 						i(60937),
 						i(156954),	-- Refurbished Archeus
 						i(156955),	-- Reconditioned Archeus
 					})),
-					qg(43738, qa(26707, { -- A Deadly Vine
+					qg(43738, qa(26707, {	-- A Deadly Vine
 						i(60924),
 						i(60925),
 						i(60926),
 						i(60927),
 						i(131587),
-						i(157003), -- Corpseweed Hewer						
+						i(157003),	-- Corpseweed Hewer						
 					})),
 --[[					
 					qart(qg(101651, q(40785, {	-- A Foe of the Dark
-						["classes"] = {11}, -- Druid
+						["classes"] = {11},	-- Druid
 					}))),
 --]]
-					qg(288, qa(26787, { -- Bear In Mind
+					qg(288, qa(26787, {	-- Bear In Mind
 						i(60934),
 						i(60935),
 						i(131604),
 					})),
-					qg(264, qa(26686, { -- Bones That Walk
+					qg(264, qa(26686, {	-- Bones That Walk
 						i(60941),
 						i(60942),
 						i(131581),
@@ -97,9 +99,9 @@ _.Zones =
 						qa(26722),	-- Buried Below
 					}),
 					qg(110684, q(43382, {	-- Champion: Natalie Seline
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
---]]					qg(276, qa(26685, { -- Classy Glass
+--]]					qg(276, qa(26685, {	-- Classy Glass
 						i(60908),
 						i(60909),
 						i(131580),
@@ -108,13 +110,13 @@ _.Zones =
 					qg(43453, qa(26672)),	-- Clawing at the Truth
 					qg(620, q(3861)),	-- CLUCK!
 --]]
-					qg(43730, qa(26760, { -- Cry For The Moon
+					qg(43730, qa(26760, {	-- Cry For The Moon
 						i(60928),
 						i(60929),
 						i(60930),
 						i(131597),
 					})),
-					qg(265, qa(26655, { -- Deliver the Thread
+					qg(265, qa(26655, {	-- Deliver the Thread
 						i(60899),
 						i(60900),
 						i(60901),
@@ -128,13 +130,13 @@ _.Zones =
 					})),
 --[[
 					qg(100323, q(40834, {	-- Following the Curse
-						["classes"] = {11}, -- Druid
+						["classes"] = {11},	-- Druid
 					})),
 					qg(100323, q(40588, {	-- Following the Curse
-						["classes"] = {9}, -- Warlock
+						["classes"] = {9},	-- Warlock
 					})),
 					qg(100323, q(40931, {	-- Following the Curse
-						["classes"] = {6}, -- Death Knight
+						["classes"] = {6},	-- Death Knight
 					})),
 					qg(273, qa(26661)),	-- Gather Rot Blossoms
 					qg(265, qa(26652)),	-- Ghost Hair Thread
@@ -142,19 +144,19 @@ _.Zones =
 					qg(43731, qa(26725)),	-- Guided by the Light
 					qg(267, qa(26669)),	-- In A Dark Corner
 					qg(111041, q(43392, {	-- Into the Void
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 					qg(101656, q(40784, {	-- Its Rightful Place
-						["classes"] = {11}, -- Druid
+						["classes"] = {11},	-- Druid
 					})),
 --]]
-					qg(273, qa(26676, { -- Juice Delivery
+					qg(273, qa(26676, {	-- Juice Delivery
 						i(60902),
 						i(60903),
 						i(131579),
 					})),
 --					qg(276, qa(26683)),	-- Look To The Stars
-					qg(265, qa(26674, { -- Mistmantle's Revenge
+					qg(265, qa(26674, {	-- Mistmantle's Revenge
 						i(60917),
 						i(60918),
 						i(60919),
@@ -163,7 +165,7 @@ _.Zones =
 					})),					
 --					qg(264, qa(26795)),	-- Mor'Ladim
 					o(204825, {	-- Lightforged Crest
-						qa(26754, { -- Morbent's Bane	
+						qa(26754, {	-- Morbent's Bane	
 							i(60939),
 							i(60940),
 							i(131596),
@@ -177,16 +179,16 @@ _.Zones =
 					qg(43731, qa(26838)),	-- Rebels Without a Clue 
 					qg(302, qa(26654)),	-- Return the Comb
 					qg(110684, q(43393, {	-- Rising Shadows
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 --]]					
-					qg(267, qa(26670, { -- Roland's Doom
+					qg(267, qa(26670, {	-- Roland's Doom
 						i(60914),
 						i(60915),
 						i(60916),
 						i(131577),
-						i(157002), -- Exorcist's Crossbow
-						i(156975), -- Exorcist's Dagger						
+						i(157002),	-- Exorcist's Crossbow
+						i(156975),	-- Exorcist's Dagger						
 					})),
 					qa(26620, {	-- Seasoned Wolf Kabobs
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
@@ -195,19 +197,20 @@ _.Zones =
 --[[					
 					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
 					qg(111041, q(43391, {	-- Secrets of the Void
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 					qg(43731, qa(26777)),	-- Soothing Spirits
 					qg(289, qa(26653)),	-- Supplies from Darkshire
 --]]					
-					qg(43731, qa(26778, { -- The Cries of the Dead
+					qg(43731, qa(26778, {	-- The Cries of the Dead
 						i(60921),
 						i(60922),
 						i(60923),
 						i(131600),
 					})),
 --					qg(264, qa(26796)),	-- The Daughter Who Lived
-					qg(263, qa(26727, { -- The Embalmer's Revenge
+					qg(263, qa(26727, {	-- The Embalmer's Revenge
+						i(60905),	-- Ello's Band
 						i(60906),
 						i(60907),
 					})),
@@ -225,7 +228,7 @@ _.Zones =
 					qg(264, qa(26645)),	-- The Night Watch
 					qg(663, qa(26689)),	-- The Rotting Orchard
 --]]					
-					qg(267, qa(26667, { -- The Stolen Letters
+					qg(267, qa(26667, {	-- The Stolen Letters
 						i(60911),
 						i(60912),
 						i(60913),
@@ -241,12 +244,12 @@ _.Zones =
 					qg(663, qa(26690)),	-- Vile and Tainted
 					qg(888, qa(25235)),	-- Vulgar Vul'Gol
 --]]					
-					qg(264, qa(26618, { -- Wolves at Our Heels
+					qg(264, qa(26618, {	-- Wolves at Our Heels
 						i(60896),
 						i(60897),
 						i(131564),
 					})),
-					qg(663, qa(26691, { -- Worgen in the Woods
+					qg(663, qa(26691, {	-- Worgen in the Woods
 						i(60931),
 						i(60932),
 						i(60933),

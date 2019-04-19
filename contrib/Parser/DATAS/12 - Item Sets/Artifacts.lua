@@ -6,18 +6,18 @@ local honorLevel50 = {};
 local honorLevel80 = {};
 _.PVP =
 {
-	n(-9983, { -- Honor
-		ach(12894, { ["groups"] = honorLevel10 }), -- Honor Level 10
-		ach(12902, { ["groups"] = honorLevel30 }), -- Honor Level 30
-		ach(12904, { ["groups"] = honorLevel50 }), -- Honor Level 50
-		ach(12907, { ["groups"] = honorLevel80 }), -- Honor Level 80
+	n(-9983, {	-- Honor
+		ach(12894, { ["groups"] = honorLevel10 }),	-- Honor Level 10
+		ach(12902, { ["groups"] = honorLevel30 }),	-- Honor Level 30
+		ach(12904, { ["groups"] = honorLevel50 }),	-- Honor Level 50
+		ach(12907, { ["groups"] = honorLevel80 }),	-- Honor Level 80
 	}),
 };
 local thisSideUpAch = {};
 _.Achievements = 
 {
-	n(-9960, { -- Professions
-		n(-9974, { -- Archaeology
+	n(-9960, {	-- Professions
+		n(-9974, {	-- Archaeology
 			ach(10603, {	-- A Keen Eye
 				ach(10602, {["groups"] = thisSideUpAch}),		-- This Side Up
 			}),
@@ -153,13 +153,13 @@ end;
 _.GearSets = 
 -----------------------------------------------------
 {
-	n(-10067, { -- Artifacts
+	n(-10067, {	-- Artifacts
 		["achievementID"] = 11171,	-- Arsenal of Power
 		["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\nUnlocks are shown based off your current hero and may or may not reflect whether you actually unlocked them on that class.\n\n",
 		["lvl"] = 100,
 		["groups"] = {
-			cl(1, { -- Warrior
-				i(128910, { -- Strom'kar, the Warbreaker
+			cl(1, {	-- Warrior
+				i(128910, {	-- Strom'kar, the Warbreaker
 					BaseAppearance("Interface\\Icons\\inv_sword_2h_artifactarathor_d_01",{
 						artifact(295),	-- Standard
 						artifact(791),	-- Recover one of the Pillars
@@ -197,7 +197,7 @@ _.GearSets =
 						artifact(905),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128908, { -- Warswords of the Valarjar [Main Hand]
+				i(128908, {	-- Warswords of the Valarjar [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",{
 						artifact(296),	-- Standard
 						artifact(654),	-- Recover one of the Pillars
@@ -240,7 +240,7 @@ _.GearSets =
 						artifact(963),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(134553, { -- Warswords of the Valarjar [Off Hand]
+				i(134553, {	-- Warswords of the Valarjar [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactvigfus_d_01",{
 						artifact(296),	-- Standard
 						artifact(654),	-- Recover one of the Pillars
@@ -283,7 +283,7 @@ _.GearSets =
 						artifact(963),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128289, { -- Scale of the Earth-Warder
+				i(128289, {	-- Scale of the Earth-Warder
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactmagnar_d_01",{
 						artifact(66),	-- Standard
 						artifact(147),	-- Recover one of the Pillars
@@ -321,7 +321,7 @@ _.GearSets =
 						artifact(160),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128288, { -- Scaleshard
+				i(128288, {	-- Scaleshard
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactmagnar_d_01",{
 						artifact(66),	-- Standard
 						artifact(147),	-- Recover one of the Pillars
@@ -360,8 +360,8 @@ _.GearSets =
 					}),
 				}),
 			}), 
-			cl(2, { -- Paladin
-				i(120978, { -- Ashbringer
+			cl(2, {	-- Paladin
+				i(120978, {	-- Ashbringer
 					BaseAppearance("Interface\\Icons\\inv_sword_2h_artifactashbringer_d_01",{
 						artifact(9),	-- Standard
 						artifact(8),	-- Recover one of the Pillars
@@ -399,7 +399,7 @@ _.GearSets =
 						artifact(868),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128823, { -- The Silver Hand
+				i(128823, {	-- The Silver Hand
 					BaseAppearance("Interface\\Icons\\inv_mace_2h_artifactsilverhand_d_01",{
 						artifact(120),	-- Standard
 						artifact(547),	-- Recover one of the Pillars
@@ -437,7 +437,7 @@ _.GearSets =
 						artifact(980),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128866, { -- Truthguard
+				i(128866, {	-- Truthguard
 					BaseAppearance("Interface\\Icons\\inv_shield_1h_artifactnorgannon_d_01",{
 						artifact(291),	-- Standard
 						artifact(704),	-- Recover one of the Pillars
@@ -475,7 +475,7 @@ _.GearSets =
 						artifact(722),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128867, { -- Oathseeker
+				i(128867, {	-- Oathseeker
 					BaseAppearance("Interface\\Icons\\inv_sword_1h_artifactnorgannon_d_01",{
 						artifact(291),	-- Standard
 						artifact(704),	-- Recover one of the Pillars
@@ -514,8 +514,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(3, { -- Hunter
-				i(128826, { -- Thas'dorah, Legacy of the Windrunners
+			cl(3, {	-- Hunter
+				i(128826, {	-- Thas'dorah, Legacy of the Windrunners
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_bow_1h_artifactwindrunner_d_02",
 						["groups"] = {
@@ -571,7 +571,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128861, { -- Titanstrike
+				i(128861, {	-- Titanstrike
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_firearm_2h_artifactlegion_d_01",
 						["groups"] = {
@@ -627,7 +627,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128808, { -- Talonclaw
+				i(128808, {	-- Talonclaw
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_polearm_2h_artifacteagle_d_01",
 						["groups"] = {
@@ -684,8 +684,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(4, { -- Rogue
-				i(128870, { -- The Kingslayers [Main Hand]
+			cl(4, {	-- Rogue
+				i(128870, {	-- The Kingslayers [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_01",
 						["groups"] = {
@@ -741,7 +741,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128869, { -- The Kingslayers [Off Hand]
+				i(128869, {	-- The Kingslayers [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactgarona_d_01",
 						["groups"] = {
@@ -797,7 +797,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128872, { -- The Dreadblades [Main Hand]
+				i(128872, {	-- The Dreadblades [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_01",
 						["groups"] = {
@@ -853,7 +853,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(134552, { -- The Dreadblades [Off Hand]
+				i(134552, {	-- The Dreadblades [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactskywall_d_01",
 						["groups"] = {
@@ -909,7 +909,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128476, { -- Fangs of the Devourer [Main Hand]
+				i(128476, {	-- Fangs of the Devourer [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_01",
 						["groups"] = {
@@ -965,7 +965,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128479, { -- Fangs of the Devourer [Off Hand]
+				i(128479, {	-- Fangs of the Devourer [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactfangs_d_01",
 						["groups"] = {
@@ -1022,8 +1022,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(5, { -- Priest
-				i(128868, { -- Light's Wrath	
+			cl(5, {	-- Priest
+				i(128868, {	-- Light's Wrath	
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\INV_Staff_2H_ArtifactTome_D_01",
 						["groups"] = {
@@ -1079,7 +1079,7 @@ _.GearSets =
 						}
 					}),
 				}),	
-				i(128825, { -- T'uure, Beacon of the Naaru
+				i(128825, {	-- T'uure, Beacon of the Naaru
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\INV_Staff_2h_ArtifactHeartofKure_D_01",	
 						["groups"] = {
@@ -1139,7 +1139,7 @@ _.GearSets =
 						}
 					}),
 				}),			
-				i(128827, { -- Xal'atath, Blade of the Black Empire
+				i(128827, {	-- Xal'atath, Blade of the Black Empire
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_01",
 						["groups"] = {
@@ -1195,7 +1195,7 @@ _.GearSets =
 						},
 					}),
 				}),
-				i(133958, { -- Secrets of the Void
+				i(133958, {	-- Secrets of the Void
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactcthun_d_01",
 						["groups"] = {
@@ -1252,8 +1252,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(6, { -- Death Knight
-				i(128402, { -- Maw of the Damned
+			cl(6, {	-- Death Knight
+				i(128402, {	-- Maw of the Damned
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_01",
 						["groups"] = {
@@ -1309,7 +1309,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128292, { -- Blades of the Fallen Prince
+				i(128292, {	-- Blades of the Fallen Prince
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01",
 						["groups"] = {
@@ -1365,7 +1365,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128293, { -- Blades of the Fallen Prince
+				i(128293, {	-- Blades of the Fallen Prince
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactruneblade_d_01",
 						["groups"] = {
@@ -1421,7 +1421,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128403, { -- Apocalypse
+				i(128403, {	-- Apocalypse
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_2h_artifactsoulrend_d_01",
 						["groups"] = {
@@ -1478,8 +1478,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(7, { -- Shaman
-				i(128819, { -- Doomhammer
+			cl(7, {	-- Shaman
+				i(128819, {	-- Doomhammer
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactdoomhammer_d_01",
 						["groups"] = {
@@ -1535,7 +1535,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128873, { -- Fury of the Stonemother
+				i(128873, {	-- Fury of the Stonemother
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactdoomhammer_d_01",
 						["groups"] = {
@@ -1591,7 +1591,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128935, { -- The Fist of Ra-den
+				i(128935, {	-- The Fist of Ra-den
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_hand_1h_artifactstormfist_d_01",
 						["groups"] = {
@@ -1647,7 +1647,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128936, { -- The Highkeeper's Ward
+				i(128936, {	-- The Highkeeper's Ward
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactstormfist_d_01",
 						["groups"] = {
@@ -1703,7 +1703,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128911, { -- Sharas'dal, Scepter of Tides
+				i(128911, {	-- Sharas'dal, Scepter of Tides
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_mace_1h_artifactazshara_d_01",
 						["groups"] = {
@@ -1759,7 +1759,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128934, { -- Shield of the Sea Queen
+				i(128934, {	-- Shield of the Sea Queen
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_shield_1h_artifactazshara_d_01",
 						["groups"] = {
@@ -1816,8 +1816,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(8, { -- Mage
-				i(128862, { -- Ebonchill
+			cl(8, {	-- Mage
+				i(128862, {	-- Ebonchill
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactantonidas_d_01",
 						["groups"] = {
@@ -1873,7 +1873,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128820, { -- Felo'melorn
+				i(128820, {	-- Felo'melorn
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_sword_1h_artifactfelomelorn_d_01",
 						["groups"] = {
@@ -1929,7 +1929,7 @@ _.GearSets =
 						}
 					}),
 				}), 
-				i(133959, { -- Heart of the Phoenix
+				i(133959, {	-- Heart of the Phoenix
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactfelomelorn_d_01",
 						["groups"] = {
@@ -1985,7 +1985,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(127857, { -- Aluneth
+				i(127857, {	-- Aluneth
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactaegwynsstaff_d_01",
 						["groups"] = {
@@ -2042,8 +2042,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(9, { -- Warlock
-				i(128941, { -- Scepter of Sargeras
+			cl(9, {	-- Warlock
+				i(128941, {	-- Scepter of Sargeras
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactsargeras_d_01",
 						["groups"] = {
@@ -2099,7 +2099,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128942, { -- Ulthalesh, the Deadwind Harvester
+				i(128942, {	-- Ulthalesh, the Deadwind Harvester
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactdeadwind_d_01",
 						["groups"] = {
@@ -2155,7 +2155,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128943, { -- Skull of the Man'ari
+				i(128943, {	-- Skull of the Man'ari
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_artifactskulloferedar_d_01",
 						["groups"] = {
@@ -2211,7 +2211,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(137246, { -- Spine of Thal'kiel
+				i(137246, {	-- Spine of Thal'kiel
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_knife_1h_artifactskulloferedar_d_01",
 						["groups"] = {
@@ -2268,8 +2268,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(10, { -- Monk
-				i(128937, { -- Sheilun, Staff of the Mists
+			cl(10, {	-- Monk
+				i(128937, {	-- Sheilun, Staff of the Mists
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactshaohao_d_01",
 						["groups"] = {
@@ -2325,7 +2325,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128938, { -- Fu Zan, the Wanderer's Companion
+				i(128938, {	-- Fu Zan, the Wanderer's Companion
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_staff_2h_artifactmonkeyking_d_01",
 						["groups"] = {
@@ -2381,7 +2381,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(128940, { -- Fists of the Heavens [Main Hand]
+				i(128940, {	-- Fists of the Heavens [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_01",
 						["groups"] = {
@@ -2437,7 +2437,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(133948, { -- Fists of the Heavens [Off Hand]
+				i(133948, {	-- Fists of the Heavens [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_hand_1h_artifactskywall_d_01",
 						["groups"] = {
@@ -2494,8 +2494,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(11, { -- Druid
-				i(128858, { -- Scythe of Elune
+			cl(11, {	-- Druid
+				i(128858, {	-- Scythe of Elune
 					BaseAppearance("Interface\\Icons\\inv_staff_2h_artifactelune_d_01",{
 						artifact(244),	-- Standard
 						artifact(411),	-- Recover one of the Pillars
@@ -2539,7 +2539,7 @@ _.GearSets =
 						artifact(410),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128306, { -- G'Hanir, the Mother Tree
+				i(128306, {	-- G'Hanir, the Mother Tree
 					BaseAppearance("Interface\\Icons\\inv_staff_2h_artifactnordrassil_d_01",{
 						artifact(45),	-- Standard
 						artifact(46),	-- Recover one of the Pillars
@@ -2577,7 +2577,7 @@ _.GearSets =
 						artifact(64),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128860, { -- Fangs of Ashamane [Main Hand]
+				i(128860, {	-- Fangs of Ashamane [Main Hand]
 					-- https://www.wowhead.com/acquiring-fangs-of-ashamane-feral-druid-artifact
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
 						{
@@ -2644,7 +2644,7 @@ _.GearSets =
 						artifact(833),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128859, { -- Fangs of Ashamane [Off Hand]
+				i(128859, {	-- Fangs of Ashamane [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
 						{
 							["artifactID"] = 426,	-- Standard Troll
@@ -2710,7 +2710,7 @@ _.GearSets =
 						artifact(833),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128821, { -- Claws of Ursoc [Main Hand]
+				i(128821, {	-- Claws of Ursoc [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
 						races({8}, artifact(266)),	-- Standard Troll
 						races({22}, artifact(265)),	-- Standard Worgen
@@ -2751,7 +2751,7 @@ _.GearSets =
 						artifact(285),	-- Kill 1,000 Players Hidden
 					}),
 				}),
-				i(128822, { -- Claws of Ursoc [Offhand]
+				i(128822, {	-- Claws of Ursoc [Offhand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
 						races({8}, artifact(266)),	-- Standard Troll
 						races({22}, artifact(265)),	-- Standard Worgen
@@ -2793,8 +2793,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			cl(12, { -- Demon Hunter
-				i(127829, { -- Twinblades of the Deceiver [Main Hand]
+			cl(12, {	-- Demon Hunter
+				i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_01",
 						["groups"] = {
@@ -2850,7 +2850,7 @@ _.GearSets =
 						}
 					}),
 				}),
-				i(127830, { -- Twinblades of the Deceiver [Off Hand]
+				i(127830, {	-- Twinblades of the Deceiver [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactazgalor_d_01",
 						["groups"] = {
@@ -2906,7 +2906,7 @@ _.GearSets =
 						},
 					}),
 				}),
-				i(128832, { -- Aldrachi Warblades [Main Hand]
+				i(128832, {	-- Aldrachi Warblades [Main Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01",
 						["groups"] = {
@@ -2962,7 +2962,7 @@ _.GearSets =
 						},
 					}),
 				}),
-				i(128831, { -- Aldrachi Warblades [Off Hand]
+				i(128831, {	-- Aldrachi Warblades [Off Hand]
 					BaseAppearance({
 						["icon"] = "Interface\\Icons\\inv_glaive_1h_artifactaldrochi_d_01",
 						["groups"] = {
@@ -3019,8 +3019,8 @@ _.GearSets =
 					}),
 				}),
 			}),
-			prof(356, { -- Fishing
-				i(133755, { -- Underlight Angler
+			prof(356, {	-- Fishing
+				i(133755, {	-- Underlight Angler
 					["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 					["modelScale"] = 1.25,
 					["modelRotation"] = 55,
@@ -3032,7 +3032,7 @@ _.GearSets =
 						qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
 							["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 							["groups"] = {
-								i(152583, { -- Underlight Emerald
+								i(152583, {	-- Underlight Emerald
 									{
 										["artifactID"] = 988,	-- Fisherfriend of the Isles
 									},

@@ -15,6 +15,13 @@ _.Zones =
 						["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					}), 
 					n(5838, {	-- Brokespear
+						["coords"] = {
+							{ 52.2, 75.8, 10 },
+							{ 51.4, 83.8, 10 },
+							{ 53.6, 87.0, 10 },
+							{ 57.8, 82.2, 10 },
+							{ 58.6, 77.6, 10 },
+						},
 						["groups"] = {
 							i(9763),	-- Cadet Leggings
 							i(9756),	-- Gypsy Trousers
@@ -43,15 +50,13 @@ _.Zones =
 							i(9749),	-- Simple Blouse
 							un(7, i(7559)),	-- Runic Cane
 						},
-						["coords"] = {
-							{ 52.2, 75.8 },
-							{ 51.4, 83.8 },
-							{ 53.6, 87.0 },
-							{ 57.8, 82.2 },
-							{ 58.6, 77.6 },
-						},
 					}), 
 					n(5865, {	-- Dishu
+						["coords"] = {
+							{ 45.4, 32.8, 10 },
+							{ 45.2, 52.8, 10 },
+							{ 48.8, 51.8, 10 },
+						},
 						["groups"] = {
 							i(6268),	-- Pioneer Tunic
 							i(6337),	-- Infantry Leggings
@@ -74,13 +79,14 @@ _.Zones =
 							i(6542),	-- Willow Cape
 							i(6548),	-- Soldier's Girdle
 						},
-						["coords"] = {
-							{ 45.4, 32.8 },
-							{ 45.2, 52.8 },
-							{ 48.8, 51.8 },
-						},
 					}),
 					n(3270, {	-- Elder Mystic Razorsnout
+						["coords"] = {
+							{ 56.4, 51.6, 10 },
+							{ 58.2, 49.6, 10 },
+							{ 60.8, 52.4, 10 },
+							{ 61.6, 53.2, 10 },
+						},
 						["groups"] = {
 							i(6268),	-- Pioneer Tunic
 							i(6266),	-- Disciple's Vest
@@ -107,17 +113,12 @@ _.Zones =
 							i(6539),	-- Willow Belt
 							i(6550),	-- Soldier's Wristguards
 							i(6537),	-- Willow Boots
-							un(7, i(4768)), -- Adept's Gloves
+							un(7, i(4768)),	-- Adept's Gloves
 							un(7, i(4771)),	-- Harvest Cloak
-						},
-						["coords"] = {
-							{ 56.4, 51.6 },
-							{ 58.2, 49.6 },
-							{ 60.8, 52.4 },
-							{ 61.6, 53.2 },
 						},
 					}), 
 					n(5836, {	-- Engineer Whirleygig
+						["coord"] = { 58.0, 20.6, 10 },
 						["groups"] = {
 							i(6547),	-- Soldier's Gauntlets
 							i(9775),	-- Bandit Cinch
@@ -152,9 +153,9 @@ _.Zones =
 							i(9783),	-- Raider's Chestpiece
 							i(6585),	-- Scouting Cloak
 						},
-						["coord"] = { 58.0, 20.6 },
 					}), 
 					n(5835, {	-- Foreman Grills
+						["coord"] = { 57.2, 20.6, 10 },
 						["groups"] = {
 							i(6545),	-- Soldier's Armor
 							i(9779),	-- Bandit Cloak
@@ -189,9 +190,9 @@ _.Zones =
 							i(9784),	-- Raider's Boots
 							i(6536),	-- Willow Vest
 						},
-						["coord"] = { 57.2, 20.6 },
 					}), 
 					n(3398, {	-- Gesharahan
+						["coord"] = { 40.0, 74.6, 10 },
 						["groups"] = {
 							i(9763),	-- Cadet Leggings
 							i(9756),	-- Gypsy Trousers
@@ -224,11 +225,11 @@ _.Zones =
 							i(9788),	-- Raider's Belt
 							i(9766),	-- Greenweave Sash
 							un(7, i(5183)),	-- Pulsating Hydra Heart
-							un(7, i(5182)), -- Shiver Blade
+							un(7, i(5182)),	-- Shiver Blade
 						},
-						["coord"] = { 40.0, 74.6 },
 					}),
 					n(5828, {	-- Humar the Pridelord
+						["coord"] = { 67.2, 64.0, 10 },
 						["groups"] = {
 							i(6545),	-- Soldier's Armor
 							i(9779),	-- Bandit Cloak
@@ -262,9 +263,9 @@ _.Zones =
 							i(6536),	-- Willow Vest
 							i(6575),	-- Defender Cloak
 						},
-						["coord"] = { 67.2, 64.0 },
 					}), 
 					n(3470, {	-- Rathorian
+						["coord"] = { 41.6, 39.6, 10 },
 						["groups"] = {
 							i(6546),	-- Soldier's Leggings
 							i(6540),	-- Willow Pants
@@ -286,11 +287,11 @@ _.Zones =
 							i(6564),	-- Shimmering Cloak
 							i(9787),	-- Raider's Gauntlets
 							un(7, i(5111)),	-- Rathorian's Cape
-							un(7, i(5112)), -- Ritual Blade
+							un(7, i(5112)),	-- Ritual Blade
 						},
-						["coord"] = { 41.6, 39.6 },
 					}), 
 					n(5841, {	-- Rocklance
+						["coord"] = { 59.2, 80.2, 10 },
 						["groups"] = {
 							i(9747),	-- Simple Britches
 							i(9756),	-- Gypsy Trousers
@@ -321,9 +322,9 @@ _.Zones =
 							i(9788),	-- Raider's Belt
 							i(6545),	-- Soldier's Armor
 						},
-						["coord"] = { 59.2, 80.2 },
 					}), 
 					n(5830, {	-- Sister Rathtalon
+						["coord"] = { 25.4, 33.2, 10 },
 						["groups"] = {
 							i(6553),	-- Bard's Trousers
 							i(9779),	-- Bandit Cloak
@@ -356,9 +357,9 @@ _.Zones =
 							i(6562),	-- Shimmering Boots
 							i(6536),	-- Willow Vest
 						},
-						["coord"] = { 25.4, 33.2 },
 					}), 
 					n(3295, {	-- Sludge Anomaly
+						["coord"] = { 57.6, 19.4, 10 },
 						["groups"] = {
 							i(9779),	-- Bandit Cloak
 							i(6553),	-- Bard's Trousers
@@ -397,9 +398,13 @@ _.Zones =
 							i(6557),	-- Bard's Boots
 							i(9812),	-- Fortified Cloak
 						},
-						["coord"] = { 57.6, 19.4 },
 					}), 
 					n(5837, {	-- Stonearm
+						["coords"] = {
+							{ 32.4, 53.0, 10 },
+							{ 32.0, 48.6, 10 },
+							{ 40.0, 45.6, 10 },
+						},
 						["groups"] = {
 							i(9756),	-- Gypsy Trousers
 							i(9747),	-- Simple Britches
@@ -430,13 +435,9 @@ _.Zones =
 							un(7, i(1355)), 	-- Buckskin Cape
 							i(6716),	-- Schematic: EZ-Thro Dynamite
 						},
-						["coords"] = {
-							{ 32.4, 53.0 },
-							{ 32.0, 48.6 },
-							{ 40.0, 45.6 },
-						},
 					}), 
 					n(5831, {	-- Swiftmane
+						["coord"] = { 64.8, 60.4, 10 },
 						["groups"] = {
 							i(6548),	-- Soldier's Girdle
 							i(6557),	-- Bard's Boots
@@ -462,23 +463,23 @@ _.Zones =
 							i(6542),	-- Willow Cape
 							i(6540),	-- Willow Pants
 						},
-						["coord"] = { 64.8, 60.4 },
 					}), 
 					o(202081, {	-- Takk's Nest
+						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
+						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
+						["coords"] = {
+							{ 61.0, 19.8, 10 },
+							{ 62.8, 20.2, 10 },
+							{ 64.1, 23.0, 10 },
+							{ 65.0, 28.7, 10 },
+							--{ 56.0, 49.3, 10 },	-- Wowhead notes this as another coord, but only before cataclysm
+						},
 						["groups"] = {	
 							i(48118),  	-- Leaping Hatchling
 						},
-						["coords"] = {
-							{ 61.0, 19.8 },
-							{ 62.8, 20.2 },
-							{ 64.1, 23.0 },
-							{ 65.0, 28.7 },
-							--{ 56.0, 49.3 },	-- Wowhead notes this as another coord, but only before cataclysm
-						},
-						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
-						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",
 					}),
 					n(5842, {	-- Takk the Leaper
+						["coord"] = { 63.4, 36.6, 10 },
 						["groups"] = {
 							i(6266),	-- Disciple's Vest
 							i(9763),	-- Cadet Leggings
@@ -501,14 +502,13 @@ _.Zones =
 							i(6543),	-- Willow Bracers
 							i(6541),	-- Willow Gloves
 						},
-						["coord"] = { 63.4, 36.6 },
 					}), 
 					n(3652, {	-- Trigore the Lasher
+						["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 						["groups"] = {
 							i(5425),	-- RuneChain Girdle
 							i(5426),	-- Serpent's Kiss
 						},
-						["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
 					}), 
 				}),
 			},

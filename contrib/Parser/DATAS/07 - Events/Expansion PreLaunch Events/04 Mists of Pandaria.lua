@@ -5,18 +5,18 @@ _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
 		["groups"] = {
-			tier(5, { -- Mists of Pandaria
+			tier(5, {	-- Mists of Pandaria
 				["groups"] = {
-					un(3, ach(7467, { -- Theramore's Fall
+					un(3, ach(7467, {	-- Theramore's Fall
 						["groups"] = {
-							un(4, i(89196)), -- Theramore Tabard
+							un(4, i(89196)),	-- Theramore Tabard
 						},
 						["collectible"] = false,
 						["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
 					})),
-					un(3, ach(7468, { -- Theramore's Fall
+					un(3, ach(7468, {	-- Theramore's Fall
 						["groups"] = {
-							un(4, i(89205)), -- Mini Mana Bomb Toy
+							un(4, i(89205)),	-- Mini Mana Bomb Toy
 						},
 						["collectible"] = false,
 						["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",

@@ -19,31 +19,31 @@ _.Zones =
 					p(546),	-- Tol'vir Scarab
 					{	-- Grand Master Obalis
 						["questID"] = 31970,
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8, 249 },
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["qg"] = 66824,	-- Obalis
-						["coord"] = { 56.6, 41.8 },
 					},
 					{	-- Grand Master Obalis
 						["questID"] = 31971,
+						["qg"] = 66824,	-- Obalis
+						["coord"] = { 56.6, 41.8, 249 },
+						["isDaily"] = true,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["qg"] = 66824,	-- Obalis
-						["coord"] = { 56.6, 41.8 },
-						["isDaily"] = true,
 					},
 					{	-- The Triumphant Return
 						["questID"] = 31985,
 						["qg"] = 66824,	-- Obalis
-						["coord"] = { 56.6, 41.8 },
+						["coord"] = { 56.6, 41.8, 249 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Triumphant Return
 						["questID"] = 31986,
 						["qg"] = 66824,	-- Obalis
-						["coord"] = { 56.6, 41.8 },
+						["coord"] = { 56.6, 41.8, 249 },
 						["races"] = HORDE_ONLY,
 					},
 				}),

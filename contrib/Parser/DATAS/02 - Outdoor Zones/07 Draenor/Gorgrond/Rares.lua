@@ -99,7 +99,7 @@ _.Zones =
 									{ 53.4, 44.6, 543 },
 								},
 								["g"] = {	
-									i(118212), -- Char's Smoldering Fist
+									i(118212),	-- Char's Smoldering Fist
 								},
 							}, 
 							{	-- Defector Dazgo
@@ -236,7 +236,7 @@ _.Zones =
 									{ 54.8, 35.6, 549 },
 								},
 								["g"] = {	
-									i(119397), -- Gnarled Goren Jaw
+									i(119397),	-- Gnarled Goren Jaw
 								},						
 							}, 
 							{	-- Greldrok the Cunning
@@ -274,7 +274,7 @@ _.Zones =
 									{ 52.2, 70.2, 543 },						
 								},
 								["g"] = {	
-									i(118209), -- Skrikka's Mandible
+									i(118209),	-- Skrikka's Mandible
 								},
 							}, 
 							{	-- Horgg	**2nd coords uncofirmed, he walked but had to kill before he reached the end of the cycle**
@@ -325,7 +325,7 @@ _.Zones =
 										["criteriaID"] = 4,			-- Inventor Blammo
 									},
 									{	-- Blammo's Blammer
-										["itemID"] = 119226, -- Blammo's Blammer
+										["itemID"] = 119226,	-- Blammo's Blammer
 									},
 								},
 							}, 
@@ -413,7 +413,7 @@ _.Zones =
 								},
 								["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 								["g"] = {	
-									i(118208), -- Broodmother's Kiss
+									i(118208),	-- Broodmother's Kiss
 								},						
 							}, 
 							{	-- Poundfist	**Coords uncofirmed, relied on wowhead**
@@ -489,7 +489,7 @@ _.Zones =
 									{ 44.6, 92.2, 543 },
 								},
 								["g"] = {	
-									i(118223), -- Sunclaw
+									i(118223),	-- Sunclaw
 								},
 							}, 
 							{	-- Swift Onyx Flayer

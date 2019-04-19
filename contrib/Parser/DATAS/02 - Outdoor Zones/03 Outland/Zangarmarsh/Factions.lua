@@ -13,27 +13,27 @@ _.Zones =
 						["groups"] = {
 							n(-17,  {	-- Quests
 								q(9802, {	-- Plants of Zangarmarsh
+									["qg"] = 17909,	-- Lauranna Thar'well
+									["coord"] = { 80.3, 64.2, 102 },
 									["groups"] = {
 										i(24402)	-- Package of Identified Plants
 									},
-									["qg"] = 17909,	-- Lauranna Thar'well
-									["coord"] = { 80.3, 64.2, 102 },
 								}),
 								q(9784, {	-- Identify Plant Parts
+									["qg"] = 17909,	-- Lauranna Thar'well
+									["coord"] = { 80.3, 64.2, 102 },
+									["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
+									["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
+									["repeatable"] = true,
 									["groups"] = {
 										i(24402)	-- Package of Identified Plants
 									},
-									["qg"] = 17909,	-- Lauranna Thar'well
-									["coord"] = { 80.3, 64.2, 102 },
-									["sourceQuests"] = { 9802 },	-- Plants of Zangarmarsh
-									["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
-									["repeatable"] = true,
 								}),
 								i(24402, {	-- Package of Identified Plants
 									i(24407, {	-- Uncatalogued Species
 										q(9875, {	-- Uncatalogued Species
+											["sourceQuest"] = 9784,	-- Identify Plant Parts
 											["description"] = "Only available until you are Honored with Cenarion Expedition.",
-											["sourceQuests"] = { 9784 },	-- Identify Plant Parts
 											["repeatable"] = true,
 										}),
 									}),
@@ -41,6 +41,7 @@ _.Zones =
 							}),
 							n(-2,   {	-- Vendors
 								n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
+									["coord"] = { 79.2, 63.7, 102 },
 									["groups"] = {
 										i(31804),	-- Cenarion Expedition Tabard
 										i(33999),	-- Cenarion War Hippogryph Mount
@@ -90,7 +91,6 @@ _.Zones =
 										i(29173),	-- Strength of the Untamed
 										i(29172),	-- Ashyen's Gift
 									},
-									["coord"] = { 79.2, 63.7, 102 },
 								}),
 							}),
 						},
@@ -101,37 +101,42 @@ _.Zones =
 							n(-17,  {	-- Quests
 								q(9809, {	-- More Glowcaps 
 									["qg"] = 17924,	-- Mshii'fn
-									["sourceQuests"] = { 9808 },	-- Glowcap Mushrooms
+									["coord"] = { 19.7, 52.1, 102 },
+									["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9742, {	-- More Spore Sacs
 									["qg"] = 17923,	-- Fahssn
-									["sourceQuests"] = { 9739 },	-- The Sporelings' Plight
+									["coord"] = { 19.0, 63,4, 102 },
+									["sourceQuest"] = 9739,	-- The Sporelings' Plight
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9744, {	-- More Tendrils!
 									["qg"] = 17923,	-- Fahssn
-									["sourceQuests"] = { 9743 },	-- Natural Enemies
+									["coord"] = { 19.0, 63,4, 102 },
+									["sourceQuest"] = 9743,	-- Natural Enemies
 									["description"] = "Unavailable after you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9807, {	-- More Fertile Spores
 									["qg"] = 17925,	-- Gshaff
 									["coord"] = { 19.1, 49.4, 102 },
-									["sourceQuests"] = { 9806 },	-- Fertile Spores
+									["sourceQuest"] = 9806,	-- Fertile Spores
 									["description"] = "Unavailable until you reach Friendly with Sporeggar.",
 									["repeatable"] = true,	-- Not possible if you reached friendly or higher
 								}),
 								q(9727, {	-- Now That We're Still Friends...
 									["qg"] = 17856,	-- Gzhun'tt
-									["sourceQuests"] = { 9726 },	-- Now That We're Friends...
+									["coord"] = { 19.5, 50.0, 102 },
+									["sourceQuest"] = 9726,	-- Now That We're Friends...
 									["repeatable"] = true,
 								}),
 							}),
 							n(-2,   {	-- Vendors
 								n(18382,  {		-- Mycah <Sporeggar Quartermaster>
+									["coord"] = { 17.8, 51.2, 102 },
 									["groups"] = {
 										i(24245, {	-- Glowcap
 											i(38229),	-- Pattern: Mycah's Botanical Bag
@@ -146,7 +151,6 @@ _.Zones =
 											i(31775),	-- Sporeggar Tabard
 										}),
 									},
-									["coord"] = { 17.8, 51.2, 102 },
 								}),
 							}),
 						},

@@ -16,8 +16,12 @@ _.Zones =
 					p(397),	-- Skunk
 					p(412),	-- Spider
 					p(379),	-- Squirrel
-					desc(p(473), "Can commonly be found on the beaches of Azshara."),	-- Turquise Turtle
-					desc(p(469), "Can be found in areas where the Twilight Hammer have set up camp."),	-- Twilight Beetle
+					p(473, {	-- Turquise Turtle
+						["description"] = "Can commonly be found on the beaches of Azshara.",
+					}),
+					p(469, {	-- Twilight Beetle
+						["description"] = "Can be found in areas where the Twilight Hammer have set up camp.",
+					}),
 					p(470),	-- Twilight Spider
 				}),
 			},

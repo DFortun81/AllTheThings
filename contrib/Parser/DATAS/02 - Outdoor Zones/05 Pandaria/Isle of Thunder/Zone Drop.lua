@@ -223,9 +223,6 @@ _.Zones =
 							{	-- Immaculate Amulet
 								["itemID"] = 82280,	-- Immaculate Amulet
 							},
-							{	-- Immaculate Ring
-								["itemID"] = 82283,	-- Immaculate Ring
-							},
 							{	-- Immaculate Spellblade
 								["itemID"] = 82285,	-- Immaculate Spellblade
 							},
@@ -330,6 +327,14 @@ _.Zones =
 							},
 						},
 					},
+					n(0, {	-- Zone Drops
+						i(97961, {	-- Half-Empty Food Container (Filthling Pet)
+							["crs"] = {
+								69251,	-- Quivering Filth
+							},
+							["description"] = "This item is obtained by killing Quivering Filth",
+						}),
+					}),
 				},
 			},
 		},

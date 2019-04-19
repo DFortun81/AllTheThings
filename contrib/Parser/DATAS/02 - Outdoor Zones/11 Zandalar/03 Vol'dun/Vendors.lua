@@ -98,6 +98,7 @@ _.Zones =
 									["f"] = 55,  -- They may change it to a toy?
 								}),
 							},
+							["coord"] = { 56.7, 49.7, 864 },
 							["races"] = HORDE_ONLY,
 						}),
 						n(135400, {	-- Jenoh
@@ -108,14 +109,17 @@ _.Zones =
 									i(163509),	-- Freshwater Pincher
 									i(163503),	-- Ranishu Runt
 									i(163512),	-- Sandstinger Wasp
+									i(163514),	-- Violent Looking Flower Pot (Carnivorous Lasher)
 								}),								
 							},
+							["coord"] = { 29.5, 59.4, 864 },
 							["description"] = "Complete the questline \"A Lost Flute\" to unlock this vendor.",
 							["races"] = HORDE_ONLY,
 						}),
 						{	-- Rhan'ka
-							["npcID"] = 122723,	-- Rhan'ka
+							["npcID"] = 129354,	-- Rhan'ka
 							["races"] = HORDE_ONLY,
+							["coord"] = { 43.5, 60.2, 864 },
 							["g"] = {
 								{	-- Rhan'ka's Escape Plan
 									["itemID"] = 164983,	-- Rhan'ka's Escape Plan
@@ -126,9 +130,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12560,	-- Explore Vol'dun
-			["lvl"] = 110,
-			["description"] = "|cff66ccffThis vast desert rolling with sand dunes was once a vibrant jungle, but the Aqir decimated its countryside. Zandalar sends its criminals here to die, and most of them end up perishing. The area is inhabited by Zandalari troll vagabonds, vulpera, and sethrak.\n\nLong ago, the C'Thrax Mythrax the Unraveler descended upon Vol'dun. He slaughtered troll and sethrak alike. The loa Sethraliss sacrificed herself to save them, but though she struck Mythrax down Mythrax was still able to destroy the disc at the heart of Atul'Aman. After witnessing the destruction firsthand, the sethrak knew that something had to be done to prevent anyone from raising Mythrax again. Sulthis, Vorrik, and Korthek worked together to seal Mythrax within the great pyramid.\n\nYears later, Korthek grew power hungry and sought to free Mythrax to conquer Zuldazar. He gathered like-minded sethrak and declared himself emperor.|r",
 		}),
 	}),
 };

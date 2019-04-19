@@ -1,5 +1,5 @@
 -- Tailoring - Skill ID 197 / Spell ID 3908
-profession(197, { -- Tailoring
+profession(197, {	-- Tailoring
 	gb(128, {	-- Tailoring Emporium (Level 3)
 		["maps"] = {582, 590},	-- Both Garrisons
 		["groups"] = {
@@ -32,7 +32,9 @@ profession(197, { -- Tailoring
 					i(114862),	-- Pattern: Nimble Hexweave Cloak
 					i(114861),	-- Pattern: Powerful Hexweave Cloak
 					i(114871),	-- Recipe: Hexweave Essence
-					desc(i(114970), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+					i(114970, {	-- Small Pouch of Coins
+						["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+					}),
 				}),
 			}),
 			n(88285, {	-- Tailoring Follower
@@ -73,7 +75,9 @@ profession(197, { -- Tailoring
 					i(114862),	-- Pattern: Nimble Hexweave Cloak
 					i(114861),	-- Pattern: Powerful Hexweave Cloak
 					i(114871),	-- Recipe: Hexweave Essence
-					desc(i(114970), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+					i(114970, {	-- Small Pouch of Coins
+						["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+					}),
 				}),
 			}),
 		},

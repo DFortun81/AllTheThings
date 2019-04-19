@@ -7,16 +7,16 @@ _.Zones =
 		m(26, {	-- The Hinterlands
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(43, { -- Aerie Peak, The Hinterlands
+					fp(43, {	-- Aerie Peak, The Hinterlands
 						["coord"] = { 11, 46 },
 					}),
-					fp(617, { -- Hiri'watha Research Station, The Hinterlands
+					fp(617, {	-- Hiri'watha Research Station, The Hinterlands
 						["coord"] = { 32.4, 58 },
 					}),
-					fp(76, { -- Revantusk Village, The Hinterlands
+					fp(76, {	-- Revantusk Village, The Hinterlands
 						["coord"] = { 81.6, 81.8 },
 					}),
-					fp(618, { -- Stormfeather Outpost, The Hinterlands
+					fp(618, {	-- Stormfeather Outpost, The Hinterlands
 						["coord"] = { 65.6, 44.8 },
 					}),
 				}),
@@ -27,7 +27,9 @@ _.Zones =
 					p(446),	-- Jade Oozeling
 					p(450),	-- Maggot
 					p(417),	-- Rat
-					qr(q(31910)),	-- David Kosse (DAILY)
+					q(31910, {	-- David Kosse (DAILY)
+						["isDaily"] = true,
+					}),
 				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests
@@ -80,14 +82,14 @@ _.Zones =
 					qa(26524, {	-- Dark Vessels
 						["groups"] = {
 							i(59252),	-- Sandals of Tainted Blood
-							i(59253, { -- Sandrene's Invisible Hauberk
+							i(59253, {	-- Sandrene's Invisible Hauberk
 								["groups"] = {
 								},
 								["description"] = "You will not be able to transmog this item.",
 							}),
 							i(59254),	-- Spider Venom Leggings
 							i(59255),	-- Dark Vessel Breastplate
-							i(131544, { -- Sandrene's Invisible Hauberk
+							i(131544, {	-- Sandrene's Invisible Hauberk
 								["groups"] = {
 								},
 								["description"] = "You will not be able to transmog this item.",
@@ -97,17 +99,17 @@ _.Zones =
 						["qg"] = 43156,	-- Fraggar Thundermantle
 						["sourceQuests"] = { 26523 },	-- All That Skitters
 					}),
-					qh(26309, { -- Dark Vessels
+					qh(26309, {	-- Dark Vessels
 						["groups"] = {
 							i(59294),	-- Sandals of Tainted Blood
-							i(59295, { -- Sandrene's Invisible Vest
+							i(59295, {	-- Sandrene's Invisible Vest
 								["groups"] = {
 								},
 								["description"] = "You will not be able to transmog this item.",
 							}),
 							i(59296),	-- Spider Venom Leggings
 							i(59297),	-- Dark Vessel Breastplate
-							i(131510, { -- Sandrene's Invisible Hauberk
+							i(131510, {	-- Sandrene's Invisible Hauberk
 								["groups"] = {
 								},
 								["description"] = "You will not be able to transmog this item.",
@@ -136,18 +138,18 @@ _.Zones =
 						},
 						["qg"] = 43156,	-- Fraggar Thundermantle
 					}),
-					qh(26357, { -- Faces of Evil
+					qh(26357, {	-- Faces of Evil
 						["groups"] = {
 							i(59288),	-- Vile Branch
 							i(59290),	-- Jintha'Alor Axe
 						},
 						["qg"] = 42624,	-- Kotonga
 					}),
-					q(485, { -- Find OOX-09/HL!
+					q(485, {	-- Find OOX-09/HL!
 						["groups"] = {
-							q(836, { -- Rescue OOX-09/HL!
-								i(9645), -- Gnomish Inventor Boots
-								i(9646), -- Gnomish Water Sinking Device
+							q(836, {	-- Rescue OOX-09/HL!
+								i(9645),	-- Gnomish Inventor Boots
+								i(9646),	-- Gnomish Water Sinking Device
 							}),
 						},
 						["description"] = "This beacon is found in Hinterlands.",
@@ -219,7 +221,7 @@ _.Zones =
 						["qg"] = 43157,	-- Doran Steelwing
 						["sourceQuests"] = { 26498 },	-- Death to the Vilebranch
 					}),
-					qh(26308, { -- It's Ours Now
+					qh(26308, {	-- It's Ours Now
 						["groups"] = {
 							i(59291),	-- Blood Drinker Staff
 							i(59292),	-- Soul Eater Shoulderguard
@@ -267,7 +269,7 @@ _.Zones =
 						["qg"] = 43109,	-- Dron Blastbrew
 						["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 					}),
-					qh(26283, { -- Prime Slime
+					qh(26283, {	-- Prime Slime
 						["groups"] = {
 							i(59277),	-- Research Assistant's Wand
 							i(59278),	-- Slime Hunter Headguard
@@ -672,7 +674,7 @@ _.Zones =
 						dr(01.0, i(9823)),	-- Durable Gloves
 						dr(01.0, i(7416)),	-- Phalanx Bracers					
 					}), 
-					n(107617, { -- Ol' Muddle
+					n(107617, {	-- Ol' Muddle
 						dr(02.0, i(9846)),	-- Conjurer's Bracers					
 					}),
 					n(8210, { 	-- Razortalon
@@ -892,10 +894,13 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
 					a(n(8160, {	-- Nioma <Leatherworking Supplies>
-						i(8409), -- Pattern: Nightscape Shoulders
+						i(8409),	-- Pattern: Nightscape Shoulders
 					})),
 					n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
-						i(10609),	-- Schematic: Mithril Mechanical Dragonling
+						["coord"] = { 34.33, 37.77, 26 },
+						["groups"] = {
+							i(10609),	-- Schematic: Mithril Mechanical Dragonling
+						},
 					}),
 					na(4782, {	-- Truk Wildbeard <Bartender>
 						i(18046),	-- Recipe: Tender Wolf Steak
@@ -912,7 +917,7 @@ _.Zones =
 						["crs"] = {
 							2642,	-- Vilebranch Shadowcaster
 						},
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 				}),	
 				n(-40, {	-- Legacy
@@ -954,9 +959,9 @@ _.Zones =
 						--n(-16, {	-- Rares (Legacy)
 						--}),
 						n(  0, {	-- Zone Drop (Legacy)
-							un(43, n(7996, { -- Qiaga the Keeper
+							un(43, n(7996, {	-- Qiaga the Keeper
 								un(2, i(9241, {  -- Sacred Mallet
-									i(9240), -- Mallet of Zul'Farrak
+									i(9240),	-- Mallet of Zul'Farrak
 								})),
 							})),
 						}),

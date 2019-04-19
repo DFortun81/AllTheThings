@@ -5,21 +5,21 @@ _.WorldEvents =
 {
 	n(-520, { 	-- Expansion Prelaunch Events
 		["groups"] = {
-			n(-523, { -- Cataclysm
+			n(-523, {	-- Cataclysm
 				["groups"] = {
-					un(3, ach(4786, { -- Operation: Gnomeregan
+					un(3, ach(4786, {	-- Operation: Gnomeregan
 						["groups"] = {
-							un(3, i(54651)), -- Gnomeregan Pride Toy
+							un(3, i(54651)),	-- Gnomeregan Pride Toy
 						},
 						["collectible"] = false,
 					})),
-					un(3, ach(4790, { -- Zalazane's Fall
+					un(3, ach(4790, {	-- Zalazane's Fall
 						["groups"] = {
-							un(3, i(54653)), -- Darkspear Pride Toy
+							un(3, i(54653)),	-- Darkspear Pride Toy
 						},
 						["collectible"] = false,
 					})),
-					un(3, ach(4887, { -- Tripping the Rifts
+					un(3, ach(4887, {	-- Tripping the Rifts
 						["groups"] = {
 							-- NOTE: NPCs are unrelated to the achievement.
 							n(44822, {	-- Crown Princess Theradras

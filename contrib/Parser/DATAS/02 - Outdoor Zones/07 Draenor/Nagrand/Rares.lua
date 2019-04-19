@@ -1238,7 +1238,7 @@ _.Zones =
 									{ 93.2, 28.2, 550 },
 								},
 								["g"] = {	
-									i(116916), -- Gorepetal's Gentle Grasp
+									i(116916),	-- Gorepetal's Gentle Grasp
 								},
 							},				
 							{	-- Gortag Steelgrip

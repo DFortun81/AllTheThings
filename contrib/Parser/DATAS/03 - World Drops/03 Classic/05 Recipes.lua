@@ -14,7 +14,7 @@ _.WorldDrops =
 					i(3396),	-- Recipe: Elixir of Lesser Agility
 					i(2553),	-- Recipe: Elixir of Minor Agility
 					i(6211),	-- Recipe: Elixir of Ogre's Strength
-					i(13491),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
+					un(7, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 					un(2, i(13493)),	-- Recipe: Greater Arcane Elixir
 					i(13490),	-- Recipe: Greater Stoneshield Potion
 					i(9295), 	-- Recipe: Invisibility Potion
@@ -91,7 +91,7 @@ _.WorldDrops =
 						["itemID"] = 3870,	-- Plans: Green Iron Shoulders
 					},
 					{	-- Plans: Heavy Mithril Helm
-						["itemID"]= 7990, -- Plans: Heavy Mithril Helm
+						["itemID"]= 7990,	-- Plans: Heavy Mithril Helm
 					},
 					{	-- Plans: Heavy Mithril Pants
 						["itemID"] = 7975,	-- Plans: Heavy Mithril Pants
@@ -117,7 +117,7 @@ _.WorldDrops =
 					},
 					{	-- Plans: Ironforge Chain
 						["itemID"] = 6734,	-- -- Plans: Ironforge Chain
-						["u"] = 1, -- Never implemented
+						["u"] = 1,	-- Never implemented
 					},
 					{	-- Plans: Ironforge Gauntlets
 						["itemID"] = 6736,	-- Plans: Ironforge Gauntlets
@@ -227,7 +227,7 @@ _.WorldDrops =
 						["u"] = 1,
 					},
 					{	-- Plans: Thorium Helm
-						["itemID"] = 12694, -- Plans: Thorium Helm
+						["itemID"] = 12694,	-- Plans: Thorium Helm
 					},
 					{	-- Plans: Thorium Leggings
 						["itemID"] = 12704,	-- Plans: Thorium Leggings
@@ -252,7 +252,7 @@ _.WorldDrops =
 					i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
 					{			-- Formula: Enchant Boots - Greater Agility
 						["itemID"] = 16245,	-- Formula: Enchant Boots - Greater Agility
-						["u"] = 7, -- now learned from trainer, formula was removed from game
+						["u"] = 7,	-- now learned from trainer, formula was removed from game
 					},
 					i(16215),	-- Formula: Enchant Boots - Greater Stamina
 					i(11167),	-- Formula: Enchant Boots - Lesser Versatility
@@ -281,7 +281,7 @@ _.WorldDrops =
 					i(10603),	-- Schematic: Catseye Ultra Goggles
 					{			-- Schematic: Deepdive Helmet
 						["itemID"] = 10607,	-- Schematic: Deepdive Helmet
-						["u"] = 7, -- now learned from trainer, schematic was removed from game
+						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 					i(6716),	-- Schematic: EZ-Thro Dynamite
 					i(4416),	-- Schematic: Goblin Land Mine
@@ -296,11 +296,11 @@ _.WorldDrops =
 					i(10608),	-- Schematic: Sniper Scope
 					{			-- Schematic: Spellpower Goggles Xtreme
 						["itemID"] = 10605,	-- Schematic: Spellpower Goggles Xtreme
-						["u"] = 7, -- now learned from trainer, schematic was removed from game
+						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 					{			-- Schematic: Thorium Rifle
 						["itemID"] = 16043,	-- Schematic: Thorium Rifle
-						["u"] = 7, -- now learned from trainer, schematic was removed from game
+						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 				}),
 				n(-186, { 	-- Jewelcrafting
@@ -314,15 +314,42 @@ _.WorldDrops =
 					i(21944),	-- Design: Truesilver Boar
 				}),
 				prof(165, {	-- Leatherworking
+					i(4301),	-- Pattern: Barbaric Belt
+					i(4297),	-- Pattern: Barbaric Gloves
 					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8389),	-- Pattern: Big Voodoo Pants
 					i(8386),	-- Pattern: Big Voodoo Robe
+					i(15737),	-- Pattern: Chimeric Boots		
+					i(15746),	-- Pattern: Chimeric Leggings
+					i(15755),	-- Pattern: Chimeric Vest	
+					i(4296),	-- Pattern: Dark Leather Shoulders
+					i(2409),	-- Pattern: Dark Leather Tunic
+					i(7452),	-- Pattern: Dusky Boots
 					i(7449),	-- Pattern: Dusky Leather Leggings
+					i(2406),	-- Pattern: Fine Leather Boots
+					i(2408),	-- Pattern: Fine Leather Gloves
+					i(5972),	-- Pattern: Fine Leather Pants
 					i(7450),	-- Pattern: Green Whelp Armor
 					i(4299),	-- Pattern: Guardian Armor
+					i(4298),	-- Pattern: Guardian Belt
+					i(5974),	-- Pattern: Guardian Cloak
 					i(4300),	-- Pattern: Guardian Leather Bracers
+					i(7364),	-- Pattern: Heavy Earthen Gloves
+					i(15743),	-- Pattern: Heavy Scorpid Belt
+					i(4294),	-- Pattern: Hillman's Belt
+					i(4293),	-- Pattern: Hillman's Leather Vest
+					i(7363),	-- Pattern: Pilferer's Gloves
+					i(7288),	-- Pattern: Rugged Leather Pants
+					un(7, i(15745)),	-- Pattern: Runic Leather Belt (now taught by trainer)
+					un(7, i(15731)),	-- Pattern: Runic Leather Gauntlets (now taught by trainer)
+					un(7, i(15765)),	-- Pattern: Runic Leather Pants (now taught by trainer)
+					i(7453),	-- Pattern: Swift Boots
 					i(8385),	-- Pattern: Turtle Scale Gloves
+					i(15742),	-- Pattern: Warbear Harness (BoE version)
+					un(2, i(15754)),	-- Pattern: Warbear Woolies
+					i(2407),	-- Pattern: White Leather Jerkin
+					un(7, i(15757)),	-- Pattern: Wicked Leather Pants (now taught by trainer)
 				}),
 				n(-190, {	-- Tailoring
 					i(7085),	-- Pattern: Azure Shoulders
@@ -334,32 +361,32 @@ _.WorldDrops =
 					i(7086),	-- Pattern: Earthen Silk Belt
 					{			-- Pattern: Felcloth Boots
 						["itemID"] = 14492,	-- Pattern: Felcloth Boots
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					{			-- Pattern: Felcloth Hood
 						["itemID"] = 14496,	-- Pattern: Felcloth Hood
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					{			-- Pattern: Felcloth Robe
 						["itemID"] = 14506,	-- Pattern: Felcloth Robe
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					{			-- Pattern: Felcloth Shoulders
 						["itemID"] = 14508,	-- Pattern: Felcloth Shoulders
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					{			-- Pattern: Frostweave Gloves
 						["itemID"] = 14474,	-- Pattern: Frostweave Gloves
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					{			-- Pattern: Frostweave Pants
 						["itemID"] = 14489,	-- Pattern: Frostweave Pants
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					i(14467),	-- Pattern: Frostweave Robe
 					{			-- Pattern: Frostweave Tunic
 						["itemID"] = 14466,	-- Pattern: Frostweave Tunic
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					i(14511),	-- Pattern: Gloves of Spell Mastery
 					i(2601),	-- Pattern: Gray Woolen Robe
@@ -387,7 +414,7 @@ _.WorldDrops =
 					i(4354),	-- Pattern: Rich Purple Silk Shirt
 					{			-- Pattern: Runecloth Tunic
 						["itemID"] = 14470,	-- Pattern: Runecloth Tunic
-						["u"] = 7, -- now learned from trainer, recipe was removed from game
+						["u"] = 7,	-- now learned from trainer, recipe was removed from game
 					},
 					i(4351),	-- Pattern: Shadow Hood
 					i(4353),	-- Pattern: Spider Belt

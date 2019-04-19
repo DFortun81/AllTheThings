@@ -7,21 +7,29 @@ _.Zones =
 		m(121, {	-- Zul'Drak
 			["groups"] = {
 				n(-228, {	-- Flight Points
-					fp(305, { -- Ebon Watch, Zul'Drak
+					fp(305, {	-- Ebon Watch, Zul'Drak
 						["coord"] = { 14, 73.6 },
 					}),
-					fp(331, { -- Gundrak, Zul'Drak
+					fp(331, {	-- Gundrak, Zul'Drak
 						["coord"] = { 70.4, 23.2 },
 					}),
-					fp(306, { -- Light's Breach, Zul'Drak
+					fp(306, {	-- Light's Breach, Zul'Drak
 						["coord"] = { 32.2, 74.4 },
 					}),
-					fp(304, { -- The Argent Stand, Zul'Drak
+					fp(304, {	-- The Argent Stand, Zul'Drak
 						["coord"] = { 41.4, 64.4 },
 					}),
-					fp(307, { -- Zim'Torga, Zul'Drak
+					fp(307, {	-- Zim'Torga, Zul'Drak
 						["coord"] = { 60, 56.8 },
 					}),
+				}),
+				n(-25,  {	-- Pet Battle
+					p(641),		-- Arctic Hare
+					p(234),		-- Gundrak Hatchling
+					p(387),		-- Snake
+					p(412),		-- Spider
+					p(1238),	-- Unborn Val'kyr
+					p(535),		-- Water Waveling
 				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests or other quest achievements
@@ -47,20 +55,17 @@ _.Zones =
 					q(12631),	-- An Invitation, of Sorts...
 					q(12504),	-- Argent Crusade, We Are Leaving!
 					q(12653),	-- Back to Har'koa
-					q(12713),	-- Betrayal
 					q(12567),	-- Blessing of Zim'Abwa
 					q(12656),	-- Blessing of Zim'Rhuk
 					q(12618),	-- Blessing of Zim'Torga
 					q(12684),	-- Blood of a Dead God
 					q(12627),	-- Breaking Through Jin'Alai
-					q(12662),	-- Bringing Down Heb'Jin
 					q(12632),	-- But First My Offspring
 					q(12940),	-- Candy Bucket
 					q(12941),	-- Candy Bucket
 					q(12610),	-- Clipping Their Wings
 					q(12638),	-- Close Call
 					q(12606),	-- Cocooned!
-					q(12604),	-- Congratulations!
 					q(12730),	-- Convocation at Zol'Heb
 					q(12583),	-- Crashed Sprayer
 					q(12599),	-- Creature Comforts
@@ -213,15 +218,32 @@ _.Zones =
 						i(39780),
 						i(39782),
 					}),
+					{	-- Betrayal
+						["questID"] = 12713,	-- Betrayal
+						["qg"] = 28518,	-- Stefan Vadu
+						["groups"] = {
+							{	-- Betrayer's Choker
+								["itemID"] = 39655,	-- Betrayer's Choker
+							},
+							{	-- Choker of Betrayal
+								["itemID"] = 39653,	-- Choker of Betrayal
+							},
+							{	-- Choker of the Betrayer
+								["itemID"] = 39652,	-- Choker of the Betrayer
+							},
+						},
+					},
 					q(12662,  {  -- Bringing Down Heb'Jin
-						i(39836),
-						i(39788),
-						i(39790),
+						i(39777),	-- Band of Misty Mojo
+						i(39836),	-- Supple Mantle of the Bloodletter
+						i(39788),	-- Leggings of the Ritual
+						i(39790),	-- Gauntlets of the Altar
 					}),
 					q(12632,  {  -- But First My Offspring
-						i(39787),
-						i(39856),
-						i(39891),
+						i(39787),	-- Soothsayer's Handwraps
+						i(39856),	-- Bloodletter's Pants
+						i(39821),	-- Spiritist's Focus
+						i(39891),	-- Brazen Offender's Helm
 					}),
 					q(12610,  {  -- Clipping Their Wings
 						i(39804),
@@ -229,6 +251,31 @@ _.Zones =
 						i(39854),
 						i(39855),
 					}),
+					{	-- Congratulations!
+						["questID"] = 12604,	-- Congratulations!
+						["qg"] = 28039,	-- Commander Kunz
+						["isDaily"] = true,
+						["groups"] = {
+							{	-- Patroller's Pack
+								["itemID"] = 43556,	-- Patroller's Pack
+								["description"] = "Small chance to contain listed items.",
+								["groups"] = {
+									{	-- Grizzlemaw Helm
+										["itemID"] = 36335,	-- Grizzlemaw Helm
+									},
+									{	-- Icemist Sash
+										["itemID"] = 36003,	-- Icemist Sash
+									},
+									{	-- Muradin Pants
+										["itemID"] = 36128,	-- Muradin Pants
+									},
+									{	-- Deputy Pa'trolla Badge
+										["itemID"] = 43555,	-- Deputy Pa'trolla Badge
+									},
+								},
+							},
+						},
+					},
 					q(12730,  {  -- Convocation at Zol'Heb
 						i(41890),
 						i(41891),
@@ -236,10 +283,11 @@ _.Zones =
 						i(41932),
 					}),
 					q(12652,  {  -- Feedin' Da Goolz
-						i(39812),
-						i(39876),
-						i(39880),
-						i(39882),
+						i(39812),	-- Soiled Trousers
+						i(39876),	-- Aged Abomination Tripe
+						i(39880),	-- Redigested Mail Scraps
+						i(39882),	-- Carved Bone Helm
+						i(39831),	-- Petrified Ghoul Finger
 					}),
 					q(12674,  {  -- Hell Hath a Fury
 						i(39791),
@@ -248,9 +296,10 @@ _.Zones =
 						i(39841),
 					}),
 					q(12709,  {  -- Hexed Caches
-						i(39797),
-						i(39863),
-						i(39849),
+						i(39797),	-- Bloodbinder's Hood
+						i(39863),	-- Supple Vest of the Bloodbinder
+						i(39848),	-- Neckcharm of the Bloodletter
+						i(39849),	-- Belt of Divine Ancestry
 					}),
 					q(12661,  {  -- Infiltrating Voltarus
 						i(39809),
@@ -279,10 +328,11 @@ _.Zones =
 						i(39827),
 					}),
 					q(12740,  {  -- Parachutes for the Argent Crusade
-						i(39779),
-						i(39799),
-						i(39801),
-						i(39820),
+						i(39779),	-- Crusader's Ripcord
+						i(39840),	-- Rescuer's Ripcord
+						i(39799),	-- Rescuer's Chestguard
+						i(39801),	-- Boots of the Rescuer
+						i(39820),	-- Blade of Valorous Service
 					}),
 					q(12510,  {  -- Precious Elemental Fluids
 						i(39781),
@@ -291,9 +341,10 @@ _.Zones =
 						i(39805),
 					}),
 					q(12584,  {  -- Pure Evil
-						i(39773),
-						i(39837),
-						i(39795),
+						i(39773),	-- Soothsayer's Shoulderpads
+						i(39837),	-- Gloves of Swift Death
+						i(39795),	-- Boots of the Altar
+						i(39792),	-- Ritualistic Band of Light
 					}),
 					q(12721,  {  -- Rampage
 						i(39794),
@@ -302,9 +353,10 @@ _.Zones =
 						i(39847),
 					}),
 					q(12676,  {  -- Sabotage
-						i(39873),
-						i(39875),
-						i(39877),
+						i(39811),	-- Badge of the Infiltrator
+						i(39873),	-- Skins of Subterfuge
+						i(39875),	-- Shoulderguards of Subterfuge
+						i(39877),	-- Belt of the Betrayer
 					}),
 					q(12669,  {  -- So Far, So Bad
 						i(39810),
@@ -320,9 +372,10 @@ _.Zones =
 						i(39829),
 					}),
 					q(12903,  {  -- That's What Friends Are For...
-						i(39886),
-						i(39816),
-						i(39890),
+						i(39886),	-- Greenhealer's Gauntlets
+						i(39816),	-- Medic's Hood
+						i(39890),	-- Purifier's Pantaloons
+						i(39889),	-- Horn of Argent Fury
 					}),
 					q(12948,  {  -- The Champion of Anguish
 						i(41815),
@@ -333,14 +386,16 @@ _.Zones =
 						i(41824),
 					}),
 					q(12639,  {  -- The Frozen Earth
-						i(39772),
-						i(39835),
-						i(39783),
+						i(39772),	-- Bloodbinder's Wrist Wraps
+						i(39835),	-- Supple Bloodbinder's Helm
+						i(39783),	-- Bloodbinder's Gauntlets
+						i(39786),	-- Band of the Bloodletter
 					}),
 					q(12622,  {  -- The Leaders at Jin'Alai
-						i(39775),
-						i(39838),
-						i(39796),
+						i(39775),	-- Soothsayer's Sandals
+						i(39838),	-- Supple Belt of the Bloodletter
+						i(39796),	-- Boots of the Great Sacrifice
+						i(39798),	-- Ring of Ancestral Protectors
 					}),
 					q(12919,  {  -- The Storm King's Vengeance
 						i(41826),
@@ -350,7 +405,7 @@ _.Zones =
 						i(41846),
 					}),
 					q(12859, {	-- This Just In: Fire Still Hot!
-						i(41755, { -- The Fire Extinguisher
+						i(41755, {	-- The Fire Extinguisher
 							["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 						}),
 					}),
@@ -380,10 +435,11 @@ _.Zones =
 						i(39818),
 					}),
 					q(12685,  {  -- You Reap What You Sow
-						i(39844),
-						i(39861),
-						i(39845),
-						i(39826),
+						i(39844),	-- Ritualistic Shield
+						i(39861),	-- Supple Bloodbinder's Leggings
+						i(39793),	-- Neckcharm of Mighty Mojo
+						i(39845),	-- Ancestral Gauntlets
+						i(39826),	-- Bloodletter's Blade
 					}),
 				}),	
 				n(-16, { 	-- Rares
@@ -482,14 +538,14 @@ _.Zones =
 				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
-						n(29334, { -- Gundrak Raptor
+						n(29334, {	-- Gundrak Raptor
 							["groups"] = {
-								i(48116), -- Gundrak Hatchling
+								i(48116),	-- Gundrak Hatchling
 							},
 						}),
-						n(29235, { -- Gundrak Savage
+						n(29235, {	-- Gundrak Savage
 							["groups"] = {
-								i(41120), -- Plans: Reinforced Cobalt Legplates
+								i(41120),	-- Plans: Reinforced Cobalt Legplates
 							},
 						}),
 					},

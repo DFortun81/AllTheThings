@@ -12,11 +12,11 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy
+	n(-9968, {	-- Legacy
 		["groups"] = {
-			n(-9960, { -- Professions
+			n(-9960, {	-- Professions
 				["groups"] = {
-					un(2, ach(11139, { -- Field Medic!
+					un(2, ach(11139, {	-- Field Medic!
 						["groups"] = {
 							un(39, title(340, {	-- TITLE: Field Medic!
 								["groups"] = {
@@ -136,7 +136,7 @@ _.Achievements =
 							})),
 						},
 					})),
-					un(2, ach(10580, { -- Heroic Skills to Pay the Bills(800)
+					un(2, ach(10580, {	-- Heroic Skills to Pay the Bills(800)
 						crit(1),	-- Legion Fisherman
 						crit(2),	-- Legion Medic
 						crit(3),	-- Legion Cook
@@ -165,10 +165,10 @@ _.Achievements =
 							crit(3),	-- Grand Master Cook
 						}),
 					})),
-					un(2, ach(11138, { -- Is There a Medic in the Zone? (10 of 16)
+					un(2, ach(11138, {	-- Is There a Medic in the Zone? (10 of 16)
 						["description"] = "See Field Medic for all 16 items and suggested locations.",
 					})),
-					un(2, ach(10599, { -- Legion Medic (800)
+					un(2, ach(10599, {	-- Legion Medic (800)
 						["groups"] = {
 							ach(131),	-- Journeyman Medic (150)
 							ach(132),	-- Expert Medic (225)
@@ -180,9 +180,9 @@ _.Achievements =
 							ach(9505),	-- Draenor Medic (700)				
 						},
 					})),			
-					un(2, ach(5480)), -- Preparing for Disaster				
-					un(2, ach(137)), -- Stocking Up			
-					un(2, ach(141)), -- Ultimate Triage	
+					un(2, ach(5480)),	-- Preparing for Disaster				
+					un(2, ach(137)),	-- Stocking Up			
+					un(2, ach(141)),	-- Ultimate Triage	
 				},	
 			}),
 		},	

@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-9961, { -- Reputation
+			n(-9961, {	-- Reputation
 				["groups"] = {
 					un(2, ach(5788)),	-- Agent of the Shen'dralar
 					ach(871, {			-- Avast Ye, Admiral!

@@ -24,16 +24,37 @@ _.Zones =
 							["coord"] = { 52.2, 36.4 },
 							["races"] = HORDE_ONLY,
 						}),
-						n(18267, {	-- Battlecryer Blackeye
-							["groups"] = {
-								i(24581, {	-- Mark of Thrallmar
-									i(27832),	-- Band of the Victor
-									i(27830),	-- Circlet of the Victor
-								}),
+						{	-- Battlecryer Blackeye
+							["npcID"] = 18267,	-- Battlecryer Blackeye
+							["itemID"] = 24581,	-- Mark of Thrallmar
+							["coords"] = {
+								{ 55.94, 39.21, 100 },
 							},
-							["coord"] = { 55.8, 39.0 },
 							["races"] = HORDE_ONLY,
-						}),
+							["g"] = {
+								{	-- Band of the Victor
+									["itemID"] = 27832,	-- Band of the Victor
+								},
+								{	-- Circlet of the Victor
+									["itemID"] = 27830,	-- Circlet of the Victor
+								},
+								{	-- Bold Blood Garnet
+									["itemID"] = 63697,	-- Bold Blood Garnet
+								},
+								{	-- Brilliant Blood Garnet
+									["itemID"] = 27777,	-- Brilliant Blood Garnet
+								},
+								{	-- Delicate Blood Garnet
+									["itemID"] = 28360,	-- Delicate Blood Garnet
+								},
+								{	-- Jagged Deep Peridot
+									["itemID"] = 27786,	-- Jagged Deep Peridot
+								},
+								{	-- Thrallmar Favor
+									["itemID"] = 24522,	-- Thrallmar Favor
+								},
+							},
+						},
 						n(35099, {	-- Bana Wildmane <Wind Rider Keeper>
 							["groups"] = {
 								i(25477),	-- Swift Red Wind Rider Mount
@@ -145,14 +166,27 @@ _.Zones =
 							["coord"] = { 56.6, 62.6 },
 							["races"] = ALLIANCE_ONLY,
 						}),
-						n(19836, {	-- Mixie Farshot <Gun Merchant>
-							["groups"] = {
-								i(23803),	-- Schematic: Cogspinner Goggles
+						{	-- Mixie Farshot <Gun Merchant>
+							["npcID"] = 19836,	-- Mixie Farshot <Gun Merchant>
+							["coords"] = {
+								{ 61.12, 81.41, 100 },
 							},
-							["coord"] = { 61.0, 81.4 },
 							["races"] = HORDE_ONLY,
-						}),
+							["description"] = "NOTE!! This vendor contains 1 of each pattern.  After they are purchased you must wait for them to spawn again.",
+							["g"] = {
+								{	-- Schematic: Adamantite Scope
+									["itemID"] = 23807,	-- Schematic: Adamantite Scope
+								},
+								{	-- Schematic: Cogspinner Goggles
+									["itemID"] = 23803,	-- Schematic: Cogspinner Goggles
+								},
+							},
+						},
 						n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
+							["coords"] = {
+								{ 54.91, 37.81, 100 },
+							},
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(24004),	-- Thrallmar Tabard
 								i(31358),	-- Design: Dawnstone Crab
@@ -191,13 +225,11 @@ _.Zones =
 								i(29168),	-- Ancestral Band
 								i(25824),	-- Farseer's Band
 							},
-							["coord"] = { 54.8, 37.8 },
-							["races"] = HORDE_ONLY,
 						}),
 						n(16583, {	-- Rohok
 							["groups"] = {
-								un(1, i(25847)), -- Plans: Eternium Rod
-								i(23638), -- Plans: Lesser Ward of Shielding
+								un(1, i(25847)),	-- Plans: Eternium Rod
+								i(23638),	-- Plans: Lesser Ward of Shielding
 							},
 							["coord"] = { 53.2, 38.2 },
 							["races"] = HORDE_ONLY,

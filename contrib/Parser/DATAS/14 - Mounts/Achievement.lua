@@ -10,12 +10,12 @@ _.Mounts =
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
-		i(137614),	-- Biting Frostshard Core
 		i(44223),	-- Black War Bear (Alliance)
 		i(44224),	-- Black War Bear (Horde)
 		i(116666),	-- Blacksteel Battleboar
 		i(153041),	-- Bleakhoof Ruinstrider
 		i(51954),	-- Bloodbathed Frostbrood Vanquisher
+		i(168055),	-- Bloodflank Charger
 		i(163216), 	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
 		i(120968),	-- Chauffeured Mekgineer's Chopper (Alliance)
@@ -23,7 +23,7 @@ _.Mounts =
 		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
-		i(166539),		-- Dazar'alor Windreaver
+		i(166539),	-- Dazar'alor Windreaver
 		i(161331),	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
@@ -31,7 +31,7 @@ _.Mounts =
 		i(69213),	-- Flameward Hippogryph
 		i(163981),	-- Frenzied Feltalon
 		i(116670),	-- Frostplains Battleboar
-		i(156880),	-- Sinister Gladiator's Proto-Drake
+		i(137614),	-- Frostshard Infernal
 		i(116383),	-- Gorestrider Gronnling
 		i(141216),	-- Grove Defiler
 		i(87776),	-- Heavenly Azure Cloud Serpent
@@ -40,7 +40,9 @@ _.Mounts =
 		i(51955),	-- Icebound Frostbrood Vanquisher
 		i(127140),	-- Infernal Direwolf
 		i(45801),	-- Ironbound Proto-Drake
+		i(168056),	-- Ironclad Frostclaw
 		i(91802),	-- Jade Pandaren Kite
+		i(164762),	-- Kul Tiran Charger (Kul Tiran Allied Race)
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (Alliance)
 		i(140500),	-- Mechanized Lumber Extractor
@@ -65,6 +67,7 @@ _.Mounts =
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
+		i(156880),	-- Sinister Gladiator's Proto-Drake
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras
 		i(156486),	-- Starcursed Voidstrider (Alliance)

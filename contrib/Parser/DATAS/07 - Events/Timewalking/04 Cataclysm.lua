@@ -7,7 +7,7 @@ _.WorldEvents =
 		["groups"] = {
 			tier(4, { 	-- Catacylsm
 				["groups"] = {
-					{	--  Smoldering Timewarped Ember [Alliance]
+					{	-- Smoldering Timewarped Ember [Alliance]
 						["itemID"] = 133378,	-- Smoldering Timewarped Ember [Alliance]
 						["questID"] = 40787,	-- The Smoldering Ember
 						["qg"] = 101759,	-- Kiatke
@@ -26,6 +26,7 @@ _.WorldEvents =
 					{	-- Kiatke <Timewalking Vendor>
 						["npcID"] = 101759, 	-- Kiatke <Timewalking Vendor>
 						["currencyID"] = 1166,  -- Timewarped Badge
+						["lvl"] = 85,
 						["g"] = {
 						-- Commendations!!
 							{	-- Commendation of the Dragonmaw Clan

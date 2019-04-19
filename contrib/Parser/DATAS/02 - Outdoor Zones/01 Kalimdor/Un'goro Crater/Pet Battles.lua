@@ -10,7 +10,9 @@ _.Zones =
 					p(632),	-- Ash Lizard
 					p(406),	-- Beetle
 					p(393),	-- Cockroach
-					desc(p(504), "Can be found around Golakka Hot Springs, near Elder Diemetradons."),	-- Diemetradon Hatchling
+					p(504, {	-- Diemetradon Hatchling
+						["description"] = "Can be found around Golakka Hot Springs, near Elder Diemetradons.",
+					}),
 					p(631),	-- Emerald Boa
 					p(415),	-- Fire Beetle
 					p(404),	-- Long-tailed Mole

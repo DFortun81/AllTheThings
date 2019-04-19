@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9968, { -- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
-			n(-10045, { -- Currencies
+			n(-10045, {	-- Currencies
 				["groups"] = {
 					un(2, ach(5539, {	-- 50,000 Conquest Points
 						un(2, ach(5540)),	-- 25,000 Conquest Points

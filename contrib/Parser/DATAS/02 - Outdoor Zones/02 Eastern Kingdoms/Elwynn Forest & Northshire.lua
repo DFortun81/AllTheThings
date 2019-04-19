@@ -7,10 +7,10 @@ _.Zones =
 		m(37, {		-- Elwynn Forest
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(589, { -- Eastvale Logging Camp, Elwynn
+					fp(589, {	-- Eastvale Logging Camp, Elwynn
 						["coord"] = { 81.8, 66.4 },
 					}),
-					fp(582, { -- Goldshire, Elwynn
+					fp(582, {	-- Goldshire, Elwynn
 						["coord"] = { 41.8, 64.6 },
 					}),
 				}),
@@ -46,17 +46,21 @@ _.Zones =
 						},
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					desc(qg(63014, qa(31308)), "This quest is part of a chain initiated by learning Battle Pet Training."),	-- Learning the Ropes
+					qg(63014, qa(31308, {	-- Learning the Ropes
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					})),
 					qg(63014, qa(31309)),	-- On The Mend
 					qg(63014, qa(31785)),	-- Level Up!
 					qg(63014, qa(31550)),	-- Got one!
-					qr(qg(64330, q(31693)),	-- Julia Stevens
-					qg(64330, qa(31724, { -- Old MacDonald
+					qg(64330, q(31693, {	-- Julia Stevens
+						["isDaily"] = true,
+					}),
+					qg(64330, qa(31724, {	-- Old MacDonald
 						i(89125),	-- Sack of Pet Supplies
 					}))),					
 				}),
 				n(-38, {	-- Profession
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						["groups"] = {
 							i(6643),		-- Bloated Smallfish. He contains a Malachite & a Tiyerseye, but the rate to fish him is 1 to 2000-4000.
 						},
@@ -72,17 +76,17 @@ _.Zones =
 					qg(246, qa(   84)),	-- Back to Billy
 --]]					
 					o(203733, {	-- Bounty Board
-						qa(   46, { -- Bounty on Murlocs
+						qa(   46, {	-- Bounty on Murlocs
 							i(4840),
 							i(1158),
 							i(57248),
 							i(57521),
-							i(156980), -- Solid Wooden Club
-							i(156981), -- Field Tested Spear 
+							i(156980),	-- Solid Wooden Club
+							i(156981),	-- Field Tested Spear 
 						}),
 						qa(26152),	-- Wanted: James Clark
 					}),
-					qg(261, qa(   59, { -- Cloth and Leather Armor
+					qg(261, qa(   59, {	-- Cloth and Leather Armor
 						i(1171),
 						i(2237),
 						i(57520),
@@ -105,7 +109,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54101,	-- On Track
 					},
-					qg(278, qa(   83, { -- Fine Linen Goods
+					qg(278, qa(   83, {	-- Fine Linen Goods
 						i(983),
 						i(57405),
 						i(57406),
@@ -122,13 +126,14 @@ _.Zones =
 					qg(247, qa(   87)),	-- Goldtooth					
 					qg(42256, qa(26378)),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
 					qg(253, qa(   60)),	-- Kobold Candles
-					desc(qa(32618), "This quest is available to Humans upon reaching level 20.", {	-- Learn To Ride	-- Learn To Ride
-						["races"] = {1}, -- Human
+					qa(32618, {	-- Learn To Ride
+						["description"] = "This quest is available to Humans upon reaching level 20.",
+						["races"] = {1},	-- Human
 					}),
 --					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)
 					qg(246, qa(   85)),	-- Lost Necklace
 --]]					
-					qg(42256, qa(  147, { -- Manhunt
+					qg(42256, qa(  147, {	-- Manhunt
 						i(1183),	-- Elastic Wristguards
 						i(57522),	-- McCree's Sparring Gloves
 						i(1360),	-- Stormwind Plate Gloves
@@ -150,7 +155,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54100,	-- A Way Out
 					},
-					qg(261, qa(   52, { -- Protect the Frontier
+					qg(261, qa(   52, {	-- Protect the Frontier
 						i(57523),
 						i(57524),
 						i(57525),
@@ -161,7 +166,7 @@ _.Zones =
 						qa(71),	-- Report to Thomas
 					}),
 --]]					
-					qg(963, qa(   11, { -- Riverpaw Gnoll Bounty
+					qg(963, qa(   11, {	-- Riverpaw Gnoll Bounty
 						i(57527),
 						i(2238),
 						i(57526),
@@ -181,18 +186,18 @@ _.Zones =
 --]]					
 
 					qart(qa(42504, {	-- The Unseen Blade
-						["qg"] = 107979, -- Garona Halforcen
+						["qg"] = 107979,	-- Garona Halforcen
 						["classes"] = { 4 },
 					})),
 					qart(qh(42627, {	-- The Unseen Blade
-						["qg"] = 107979, -- Garona Halforcen
+						["qg"] = 107979,	-- Garona Halforcen
 						["classes"] = { 4 },
 					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
-						qa(  176, { -- Wanted: "Hogger"
-							i(  6085),	-- Footman Tunic
-							i(  6084),	-- Stormwind Guard Leggings
-							i( 60219),	-- Balanced Spell Staff
+						qa(  176, {	-- Wanted: "Hogger"
+							i( 6085),	-- Footman Tunic
+							i( 6084),	-- Stormwind Guard Leggings
+							i(60219),	-- Balanced Spell Staff
 							i(131199),	-- Lion Guard Chainmail
 							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),
@@ -376,13 +381,13 @@ _.Zones =
 					})),
 				}),
 				n(-74, {	-- Zone Wide
-					sz(776,8, { -- Eastvale Logging Camp
+					sz(776,8, {	-- Eastvale Logging Camp
 						{	-- The Battle For Broken Shore
 							["questID"] = 42740,
 							["groups"] = {
-								i(139389, { -- Charred Locket
+								i(139389, {	-- Charred Locket
 									["groups"] = {
-										i(139391), -- Alaina's Bonnet
+										i(139391),	-- Alaina's Bonnet
 									},
 									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item.  You will then go to 85, 67 in Elywnn Forest located at the Eastvale Logging Camp.  From there you will go to the bedroom on the second floor to talk to Alaina.  After talking to her leave (log or swap zones) and then come back to her to retrieve the item."
 								}),
@@ -421,32 +426,32 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests
 							qg(197, qa(28762, {	-- Beating Them Back!
-								--["races"] = {11}, -- Draenei (assuming this is improperly noted in wowhead)
-								["classes"] = {2}, -- Paladin
+								--["races"] = {11},	-- Draenei (assuming this is improperly noted in wowhead)
+								["classes"] = {2},	-- Paladin
 							})),
 							qg(197, qa(29078, {	-- Beating Them Back!
-								["races"] = {3,4,7,11,22,25}, -- non-Human Alliance races
+								["races"] = {3,4,7,11,22,25},	-- non-Human Alliance races
 							})),
 							qg(197, qa(28767, {	-- Beating Them Back!
-								["classes"] = {3}, -- Hunter
+								["classes"] = {3},	-- Hunter
 							})),
 							qg(197, qa(28766, {	-- Beating Them Back!
-								["classes"] = {1}, -- Warrior
+								["classes"] = {1},	-- Warrior
 							})),
 							qg(197, qa(28763, {	-- Beating Them Back!
-								["classes"] = {5}, -- Priest
+								["classes"] = {5},	-- Priest
 							})),
 							qg(197, qa(28764, {	-- Beating Them Back!
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(197, qa(28757, {	-- Beating Them Back!
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(197, qa(28765, {	-- Beating Them Back!
-								["classes"] = {9}, -- Warlock
+								["classes"] = {9},	-- Warlock
 							})),
 							qg(197, qa(31139, {	-- Beating Them Back!
-								["classes"] = {10}, -- Monk
+								["classes"] = {10},	-- Monk
 							})),
 							qg(197, qa(26389)),	-- Blackrock Invasion
 							qg(197, qa(26390)),	-- Ending the Invasion!
@@ -461,57 +466,57 @@ _.Zones =
 							qg(951, qa(28809)),	-- Fear No Evil --]]
 --							qg(197, qa(29080)),	-- Join the Battle! (can't verify class -- maybe this one is for non-Humans?)
 							qg(911, qa(28789, {	-- Join the Battle!
-								["classes"] = {1}, -- Warrior
+								["classes"] = {1},	-- Warrior
 							})),
 							qg(375, qa(28786, {	-- Join the Battle!
-								["classes"] = {5}, -- Priest
+								["classes"] = {5},	-- Priest
 							})),
 							qg(925, qa(28785, {	-- Join the Battle!
-								["classes"] = {2}, -- Paladin
+								["classes"] = {2},	-- Paladin
 							})),
 							qg(915, qa(28787, {	-- Join the Battle!
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(198, qa(28784, {	-- Join the Battle!
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(43278, qa(28780, {	-- Join the Battle!
-								["classes"] = {3}, -- Hunter
+								["classes"] = {3},	-- Hunter
 							})),
 							qg(459, qa(28788, {	-- Join the Battle!
-								["classes"] = {9}, -- Warlock
+								["classes"] = {9},	-- Warlock
 							})),
 							qg(63258, qa(31143, {	-- Join the Battle! (unsure of QG, add'l listed 197)
-								["classes"] = {10}, -- Monk (unsure)
+								["classes"] = {10},	-- Monk (unsure)
 							})),
 							qg(197, qa(28771, {	-- Lions for Lambs
-								["classes"] = {5}, -- Priest
+								["classes"] = {5},	-- Priest
 							})),
 							qg(197, qa(28772, {	-- Lions for Lambs
-								["classes"] = {4}, -- Rogue
+								["classes"] = {4},	-- Rogue
 							})),
 							qg(197, qa(28773, {	-- Lions for Lambs
-								["classes"] = {9}, -- Warlock
---								["races"] = {7}, -- Gnome (doubtful, but what wowhead says)
+								["classes"] = {9},	-- Warlock
+--								["races"] = {7},	-- Gnome (doubtful, but what wowhead says)
 							})),
 							qg(197, qa(28774, {	-- Lions for Lambs
-								["classes"] = {1}, -- Warrior
+								["classes"] = {1},	-- Warrior
 							})),
 							qg(197, qa(28759, {	-- Lions for Lambs
-								["classes"] = {3}, -- Hunter
+								["classes"] = {3},	-- Hunter
 							})),
 							qg(197, qa(29079, {	-- Lions for Lambs
-								["races"] = {3,4,7,11,22,25}, -- non-Human
+								["races"] = {3,4,7,11,22,25},	-- non-Human
 							})),
 							qg(197, qa(31140, {	-- Lions for Lambs
-								["classes"] = {10}, -- Monk (can't verify)
+								["classes"] = {10},	-- Monk (can't verify)
 							})),
 							qg(197, qa(28769, {	-- Lions for Lambs
-								["classes"] = {8}, -- Mage
+								["classes"] = {8},	-- Mage
 							})),
 							qg(197, qa(28770, {	-- Lions for Lambs
-								["classes"] = {2}, -- Paladin
---								["races"] = {11}, -- Draenei (doubtful, but what wowhead says)
+								["classes"] = {2},	-- Paladin
+--								["races"] = {11},	-- Draenei (doubtful, but what wowhead says)
 							})),
 							qg(197, qa(   54)),	-- Report to Goldshire
 							qg(6774, qa(37112)),	-- Rest and Relaxation
@@ -520,8 +525,8 @@ _.Zones =
 							qg(823, qa(28822)),	-- The Rear is Clear
 							qg(823, qa(31145)),	-- The Rear is Clear
 							qg(823, qa(28821, {	-- The Rear is Clear
-								["classes"] = {4}, -- Rogue
---								["races"] = {22}, -- Worgen (doubtful, but what wowhead says)
+								["classes"] = {4},	-- Rogue
+--								["races"] = {22},	-- Worgen (doubtful, but what wowhead says)
 							})),
 							qg(823, qa(28817)),	-- The Rear is Clear
 							qg(823, qa(28823)),	-- The Rear is Clear
@@ -533,8 +538,8 @@ _.Zones =
 							qg(823, qa(28794)),	-- They Sent Assassins
 							qg(823, qa(28793)),	-- They Sent Assassins
 							qg(823, qa(28795, {	-- They Sent Assassins
-								["classes"] = {4}, -- Rogue
---								["races"] = {22}, -- Worgen (doubtful, but what wowhead says)
+								["classes"] = {4},	-- Rogue
+--								["races"] = {22},	-- Worgen (doubtful, but what wowhead says)
 							})),
 							qg(823, qa(28797)),	-- They Sent Assassins
 							qg(823, qa(28791)),	-- They Sent Assassins
@@ -542,7 +547,7 @@ _.Zones =
 							qg(823, qa(29081)),	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead 
 							--]]
 						}),
---[[						n(-16, { -- Rares
+--[[						n(-16, {	-- Rares
 							n(62),	-- Gug Fatcandle (doesn't drop greens, just a 4-slot bag)
 						}), --]]
 						n(-40, {	-- Legacy
@@ -561,7 +566,8 @@ _.Zones =
 			},
 			["lvl"] = 1,
 			["maps"] = {
-				39,	-- Fargodeep Mine
+				38,	-- Fargodeep Mine Lv1
+				39,	-- Fargodeep Mine Lv2
 				40,	-- Jasperlode Mine
 			},
 			["achievementID"] = 776,

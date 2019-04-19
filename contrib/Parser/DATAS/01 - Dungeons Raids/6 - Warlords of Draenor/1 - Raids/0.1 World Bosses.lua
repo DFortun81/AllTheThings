@@ -4,8 +4,18 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
+		["isRaid"] = true,
+		["lvl"] = 100,
 		["groups"] = {
-			cr(81252, e(1291, {	-- Drov the Ruiner
+			e(1291, {	-- Drov the Ruiner
+				["questID"] = 37462,
+				["isRaid"] = true,
+				["maps"] = { 543 },	-- Gorgrond
+				["coord"] = { 44.1, 39.9, 543 },
+				["crs"] = {
+					81252,	-- Drov the Ruiner
+					87437,	-- Drov the Ruiner
+				},
 				["groups"] = {	
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
@@ -21,11 +31,17 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-				["questID"] = 37462,
+			}),
+			e(1262, {	-- Rukhmar
+				["achievementID"] = 9425,
+				["questID"] = 37464,
 				["isRaid"] = true,
-				["maps"] = { 543 },	-- Gorgrond
-			})),
-			cr(87493, e(1262, {	-- Rukhmar
+				["maps"] = { 542 },	-- Spires of Arak
+				["coord"] = { 37.0, 39.3, 542 },
+				["crs"] = {
+					87493,	-- Rukhmar (WoWHead)
+					83746,	-- Rukhmar (Crieve)
+				},
 				["groups"] = {
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
@@ -50,37 +66,38 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115439),	-- Firemender Seal
 					i(115438),	-- Signet of Burning Truths
 				},
-				["achievementID"] = 9425,
-				["questID"] = 37464,
-				["isRaid"] = true,
-				["maps"] = { 542 }, -- Spires of Arak
-			})),
-			cr(94015, e(1452, { -- Supreme Lord Kazzak
-				["groups"] = {
-					i(127976), -- Choker of Reciprocity
-					i(127977), -- Insightful Void-Link Chain
-					i(127978), -- Necklace of Flowing Light
-					i(127979), -- Studded Choker of the Accursed
-					i(127980), -- Void-Sealed Gorget
-					i(127974), -- Drape of the Doomguard
-					i(127971), -- Gossamer Felscorched Scarf
-					i(127975), -- Marked Cloak of Command
-					i(127973), -- Nether-Touched Cloak
-					i(127972), -- Spellcloak of Suramar
-					i(127981), -- Bracers of Perfect Discomfort
-					i(127983), -- Supreme Felchain Bracers
-					i(127982), -- Terrorweave Wristwraps
-					i(127984), -- Wristclasps of Righteous Reckoning
-					i(124545), -- Chipped Soul Prism
-					i(124546), -- Mark of Supreme Doom
-				},
+			}),
+			cr(94015, e(1452, {	-- Supreme Lord Kazzak
 				["questID"] = 39380,
 				["isRaid"] = true,
 				["maps"] = {
 					534,	-- Tanaan Jungle
 				},
+				["coord"] = { 47.5, 22.1, 534 },
+				["groups"] = {
+					i(127976),	-- Choker of Reciprocity
+					i(127977),	-- Insightful Void-Link Chain
+					i(127978),	-- Necklace of Flowing Light
+					i(127979),	-- Studded Choker of the Accursed
+					i(127980),	-- Void-Sealed Gorget
+					i(127974),	-- Drape of the Doomguard
+					i(127971),	-- Gossamer Felscorched Scarf
+					i(127975),	-- Marked Cloak of Command
+					i(127973),	-- Nether-Touched Cloak
+					i(127972),	-- Spellcloak of Suramar
+					i(127981),	-- Bracers of Perfect Discomfort
+					i(127983),	-- Supreme Felchain Bracers
+					i(127982),	-- Terrorweave Wristwraps
+					i(127984),	-- Wristclasps of Righteous Reckoning
+					i(124545),	-- Chipped Soul Prism
+					i(124546),	-- Mark of Supreme Doom
+				},
 			})),
 			cr(81535, e(1211, {	-- Tarlna the Ageless
+				["questID"] = 37462,
+				["isRaid"] = true,
+				["maps"] = { 543 },	-- Gorgrond
+				["coord"] = { 47.0, 86.7, 543 },
 				["groups"] = {	
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
@@ -95,12 +112,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-				["questID"] = 37462,
-				["isRaid"] = true,
-				["maps"] = { 543 }, -- Gorgrond
 			})),
 		},
-		["isRaid"] = true,
-		["lvl"] = 100,
 	}),
 })};

@@ -308,10 +308,39 @@ _.ExpansionFeatures =
 						},
 					}),
 					nh(88228, {	-- Sergeant Grimjaw - Garrison Quartermaster
-						["qgs"] = {79774, 88228},
+						["crs"] = {79774},
 						["groups"] = {
 							i(114931, {	-- Cerulean Pigment
 								i(141642),	-- Technique: Tome of the Clear Mind
+							}),
+							currency(824, {	-- Garrison Resources
+								i(122307),	-- Rush Order: Barn
+								i(122496),	-- Rush Order: Garden Shipment [H]
+								i(122487),	-- Rush Order: Gladiator's Sanctum
+								i(122501),	-- Rush Order: Goblin Workshop [H]
+								i(122502),	-- Rush Order: Mine Shipment [H]
+								i(128373),	-- Rush Order: Shipyard
+								i(122491),	-- Rush Order: War Mill [H]
+								i(122424),	-- Scouting Missive: Broken Precipice [H]
+								i(122418),	-- Scouting Missive: Darktide Roost [H]
+								i(122400),	-- Scouting Missive: Everbloom Wilds [H]
+								i(122402),	-- Scouting Missive: Iron Siegeworks [H]
+								i(122413),	-- Scouting Missive: Lost Veil Anzu [H]
+								i(122403),	-- Scouting Missive: Magnarok [H]
+								i(122421),	-- Scouting Missive: Mok'gol Watchpost [H]
+								i(122411),	-- Scouting Missive: Pillars of Fate [H]
+								i(122412),	-- Scouting Missive: Shattrath Harbor [H]
+								i(122408),	-- Scouting Missive: Skettis [H]
+								i(122416),	-- Scouting Missive: Socrethar's Rise [H]
+								i(122405),	-- Scouting Missive: Stonefury Cliffs [H]
+								i(133884),	-- Scouting Missive: The Heart of Shattrath [H]
+								i(133876),	-- Scouting Missive: The Pit [H]
+								i(122272),	-- Follower Ability Retraining Manual
+								i(122273),	-- Follower Trait Retraining Guide
+								i(120348),	-- Enchanted Crystal of Freezing
+								i(120347),	-- Enchanted Crystal of Replenishment
+								i(120349),	-- Enduring Vial of Swiftness
+								i(120182),	-- Excess Potion of Accelerated Learning
 							}),
 						},
 					}),
@@ -341,6 +370,7 @@ _.ExpansionFeatures =
 					nh(91033, {	-- Zeezu - Leather Trader
 						i(120945),	-- Primal Spirit
 						i(127722),	-- Recipe: Mighty Burnished Essence
+						un(2, i(122547)),	-- Recipe: Powerful Burnished Essence
 						i(127740),	-- Recipe: Savage Burnished Essence
 						i(122715),	-- Recipe: Spiritual Leathercraft
 					}),
@@ -382,6 +412,18 @@ _.ExpansionFeatures =
 								i(118488),	-- Schematic: Wormhole Centrifuge
 								i(128327),	-- Small Pouch of Coins
 							}),
+							{	-- Schematic: Blackrock Rifling
+								["itemID"] = 120267,	-- Schematic: Blackrock Rifling
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
+							{	-- Schematic: Oglethorpe's Octagonal Lenses
+								["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
+							{	-- Schematic: Precision Scope Tuning Kit
+								["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
 						}),
 					}),				
 					n(-107, {	-- Fishing Shack
@@ -688,7 +730,9 @@ _.ExpansionFeatures =
 								i(116735),	-- Recipe: Truesteel Pauldrons
 								i(118044),	-- Recipe: Truesteel Reshaper
 								i(116742),	-- Recipe: Truesteel Waistguard
-								desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
+								i(116764, {	-- Small Pouch of Coins
+									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								}),
 							}),
 							{	-- Plans: Blackrock Crucibles and Their Uses
 								["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses
@@ -704,39 +748,52 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-	--[[				
-					n(-118, { 		-- The Tannery		
+					n(-118, { 		-- The Tannery
 						nh(79834, {	-- Murne Greenhoof 
-							i(115358), 		-- Teaches Journeying helm, robes, slacks	-- Traveling helm, leggings, tunic, burnished leather, secrets of draenor leatherworking
-							i(116325),
-							i(116326),
-							i(116327),
-							i(116328),
-							i(116329),
-							i(116330),
-							i(116331),
-							i(116332),
-							i(116333),
-							i(116334),
-							i(116335),
-							i(116336),
-							i(116337),
-							i(116338),
-							i(116339),
-							i(116340),
-							i(116341),
-							i(116342),
-							i(116343),
-							i(116344),
-							i(116345),
-							i(116347),
-							i(116348),
-							i(116349),
-							i(116350),
-							i(120258),
+							i(115358, {	-- Draenor Leatherworking
+								recipe(171391),	-- Burnished Leather
+								i(116319),	-- Recipe: Journeying Helm
+								i(116320),	-- Recipe: Journeying Robes
+								i(116321),	-- Recipe: Journeying Slacks
+								i(120130),	-- Recipe: Secrets of Draenor Leatherworking
+								i(116322),	-- Recipe: Traveling Helm
+								i(116324),	-- Recipe: Traveling Leggings
+								i(116323),	-- Recipe: Traveling Tunic
+							}),
+							i(118721, {	-- Secret of Draenor Leatherworking
+								i(116328),	-- Recipe: Brilliant Burnished Cloak
+								i(116345),	-- Recipe: Burnished Essence
+								i(116349),	-- Recipe: Burnished Inscription Bag
+								i(116347),	-- Recipe: Burnished Leather Bag
+								i(116348),	-- Recipe: Burnished Mining Bag
+								i(120258),	-- Recipe: Drums of Fury
+								i(116325),	-- Recipe: Leather Refurbishing Kit
+								i(116327),	-- Recipe: Nimble Burnished Cloak
+								i(116326),	-- Recipe: Powerful Burnished Cloak
+								i(116350),	-- Recipe: Riding Harness
+								i(116335),	-- Recipe: Supple Boots
+								i(116334),	-- Recipe: Supple Bracers
+								i(116332),	-- Recipe: Supple Gloves
+								i(116330),	-- Recipe: Supple Helm
+								i(116331),	-- Recipe: Supple Leggings
+								i(116329),	-- Recipe: Supple Shoulderguards
+								i(116333),	-- Recipe: Supple Vest
+								i(116336),	-- Recipe: Supple Waistguard
+								i(116344),	-- Recipe: Wayfaring Belt
+								i(116343),	-- Recipe: Wayfaring Boots
+								i(116342),	-- Recipe: Wayfaring Bracers
+								i(116340),	-- Recipe: Wayfaring Gloves
+								i(116338),	-- Recipe: Wayfaring Helm
+								i(116339),	-- Recipe: Wayfaring Leggings
+								i(116337),	-- Recipe: Wayfaring Shoulderguards
+								i(116341),	-- Recipe: Wayfaring Tunic
+								{	-- Small Pouch of Coins
+									["itemID"] = 116376,
+									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								},
+							}),
 						}),		
 					}),
-			]]--							
 					n(-119, {	-- Trading Post
 						nh(87015, {	-- Kil'rip - Laughing Skull Quartermaster 
 							["groups"] = {

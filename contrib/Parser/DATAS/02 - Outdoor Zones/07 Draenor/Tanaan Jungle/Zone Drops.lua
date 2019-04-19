@@ -11,26 +11,26 @@ _.Zones =
 				["g"] = {
 					n(0, {	-- Zone Drops
 						["groups"] = {
-							i(126950, { -- Equipment Blueprint: Bilge Pump
-								["questID"] = 38932, -- Equipment Blueprint: Bilge Pump
+							i(126950, {	-- Equipment Blueprint: Bilge Pump
+								["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 							}),
-							i(128258, { -- Equipment Blueprint: Felsmoke Launchers
-								["questID"] = 39366, -- Equipment Blueprint: Felsmoke Launchers
+							i(128258, {	-- Equipment Blueprint: Felsmoke Launchers
+								["questID"] = 39366,	-- Equipment Blueprint: Felsmoke Launchers
 							}),
 							i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
-								["questID"] = 39364, -- Equipment Blueprint: Gyroscopic Internal Stabilizer
+								["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 							}),
-							i(128232, { -- Equipment Blueprint: High Intensity Fog Lights
-								["questID"] = 39356, -- Equipment Blueprint: High Intensity Fog Lights
+							i(128232, {	-- Equipment Blueprint: High Intensity Fog Lights
+								["questID"] = 39356,	-- Equipment Blueprint: High Intensity Fog Lights
 							}),
-							i(128255, { -- Equipment Blueprint: Ice Cutter
-								["questID"] = 39363, -- Equipment Blueprint: Ice Cutter
+							i(128255, {	-- Equipment Blueprint: Ice Cutter
+								["questID"] = 39363,	-- Equipment Blueprint: Ice Cutter
 							}),
-							i(128231, { -- Equipment Blueprint: Trained Shark Tank
-								["questID"] = 39355, -- Equipment Blueprint: Trained Shark Tank
+							i(128231, {	-- Equipment Blueprint: Trained Shark Tank
+								["questID"] = 39355,	-- Equipment Blueprint: Trained Shark Tank
 							}),
-							i(128252, { -- Equipment Blueprint: True Iron Rudder
-								["questID"] = 39360, -- Equipment Blueprint: True Iron Rudder
+							i(128252, {	-- Equipment Blueprint: True Iron Rudder
+								["questID"] = 39360,	-- Equipment Blueprint: True Iron Rudder
 							}),
 							i(128225),	-- Empowered Apexis Fragment
 							i(124562, {	-- Baleful Armament	

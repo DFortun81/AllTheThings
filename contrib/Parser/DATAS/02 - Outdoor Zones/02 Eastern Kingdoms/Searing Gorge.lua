@@ -7,13 +7,13 @@ _.Zones =
 		m(32, {	-- Searing Gorge
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(673, { -- Iron Summit, Searing Gorge
+					fp(673, {	-- Iron Summit, Searing Gorge
 						["coord"] = { 41, 68.6 },
 					}),
-					fp(74, { -- Thorium Point, Searing Gorge
+					fp(74, {	-- Thorium Point, Searing Gorge
 						["coord"] = { 37.8, 30.6 },
 					}),
-					fp(75, { -- Thorium Point, Searing Gorge
+					fp(75, {	-- Thorium Point, Searing Gorge
 						["coord"] = { 34.8, 30.8 },
 					}),
 				}),
@@ -26,49 +26,49 @@ _.Zones =
 					p(428), 	-- Molten Hatchling
 				}),
 				n(-17, {	-- Quests
-					ach(4910, { -- Searing Gorge Quests
-						crit(1, { -- Thorium Advance (qID 27964)
-							q(27963, { -- A New Master... But Who?
+					ach(4910, {	-- Searing Gorge Quests
+						crit(1, {	-- Thorium Advance (qID 27964)
+							q(27963, {	-- A New Master... But Who?
 								["groups"] = {
-									i(63218), -- Rockhead Helm
-									i(63217), -- Oilfist Globe
-									i(63216), -- Jack's Lucky Charm
+									i(63218),	-- Rockhead Helm
+									i(63217),	-- Oilfist Globe
+									i(63216),	-- Jack's Lucky Charm
 									},
 								["qg"] = 47266,	-- Jack Rockleg
-								["sourceQuests"] = { 28512,28581,28582 }, -- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
+								["sourceQuests"] = { 28512,28581,28582 },	-- "To the Aid of the Thorium Brotherhood", "Warchief's Command: Searing Gorge", "Hero's Call: Searing Gorge"
 							}),
 							q(27964, {	--Dig-Boss Dinwhisker
 								["qg"] = 47266,	-- Jack Rockleg
-								["sourceQuests"] = { 27963 }, -- "A New Master...But Who?"
+								["sourceQuests"] = { 27963 },	-- "A New Master...But Who?"
 							}),
 						}),
-						crit(2, { -- The Seat of the Brotherhood (qID 27979)
+						crit(2, {	-- The Seat of the Brotherhood (qID 27979)
 							q(27965, {	--Thorium Point: The Seat of the Brotherhood
 								["qg"] = 47266,	-- Jack Rockleg
-								["sourceQuests"] = { 27957,27964 }, -- 
+								["sourceQuests"] = { 27957,27964 },	-- 
 							}),
 							q(27981, {	--Heat That Just Don't Quit
 								["qg"] = 14627,	-- Hansel Heavyhands
 							}),
-							q(27976, { -- Curse These Fat Fingers
+							q(27976, {	-- Curse These Fat Fingers
 								["groups"] = {
-									i(63226), -- Fat Finger Gloves
-									i(63225), -- Pounding Leggings
-									i(63224), -- Heavyhands' Gloves
-									i(63223), -- Gretel's Pendant
+									i(63226),	-- Fat Finger Gloves
+									i(63225),	-- Pounding Leggings
+									i(63224),	-- Heavyhands' Gloves
+									i(63223),	-- Gretel's Pendant
 								},
 								["qg"] = 14627,	-- Hansel Heavyhands
-								["sourceQuests"] = { 27965 }, -- 
+								["sourceQuests"] = { 27965 },	-- 
 							}),
-							q(27977, { -- Recon Essentials
+							q(27977, {	-- Recon Essentials
 								["groups"] = {
-									i(63222), -- Steamsmith Helm
-									i(63221), -- Taskmaster's Loop
-									i(63220), -- Essential Pantaloons
-									i(63219), -- Mantle of the White Sheep
+									i(63222),	-- Steamsmith Helm
+									i(63221),	-- Taskmaster's Loop
+									i(63220),	-- Essential Pantaloons
+									i(63219),	-- Mantle of the White Sheep
 								},
 								["qg"] = 14626,	-- Taskmaster Scrange
-								["sourceQuests"] = { 27965 }, -- 
+								["sourceQuests"] = { 27965 },	-- 
 							}),
 							q(27983, {	--Lunk's Adventure: Cranky Little Dwarfs
 								["qg"] = 47429,	-- Lunk
@@ -76,88 +76,88 @@ _.Zones =
 							}),
 							q(28099, {	--Rasha'krak
 								["qg"] = 14625,	-- Overseer Oilfist
-								["sourceQuests"] = { 27965 }, -- 
+								["sourceQuests"] = { 27965 },	-- 
 							}),
 							q(27982, {	--Twilight Collars
 								["qg"] = 14626,	-- Taskmaster Scrange
-								["sourceQuests"] = { 27977 }, -- 
+								["sourceQuests"] = { 27977 },	-- 
 							}),
 							q(27979, {	--Dark Ministry
 								["qg"] = 14627,	-- Hansel Heavyhands
-								["sourceQuests"] = { 27976,27977 }, -- 
+								["sourceQuests"] = { 27976,27977 },	-- 
 							}),
 						}),
-						crit(3, { -- In the Hall of the Mountain-Lord (qID 28035)
+						crit(3, {	-- In the Hall of the Mountain-Lord (qID 28035)
 							q(27986, {	--In the Hall of the Mountain-Lord
 								["qg"] = 14627,	-- Hansel Heavyhands
-								["sourceQuests"] = { 27979 }, -- Dark Ministry
+								["sourceQuests"] = { 27979 },	-- Dark Ministry
 							}),
 							q(28028, {	--Siege!
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 27986 }, -- 
+								["sourceQuests"] = { 27986 },	-- 
 							}),
 							q(28029, {	--Set Them Ablaze!
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 27986 }, -- 
+								["sourceQuests"] = { 27986 },	-- 
 							}),
-							q(28030, { -- They Build a Better Bullet
+							q(28030, {	-- They Build a Better Bullet
 								["groups"] = {
 									i(63229),  -- K'Vlar Vest
 									i(63228),  -- Rendan's Signet
 									i(63227),  -- Dark Iron Gun
-									i(156937), -- Dark Iron Blackjack
-									i(157009), -- Dark Iron Shank
-									i(157010), -- Dark Iron Maul
-									i(156937), -- Dark Iron Blackjack
+									i(156937),	-- Dark Iron Blackjack
+									i(157009),	-- Dark Iron Shank
+									i(157010),	-- Dark Iron Maul
+									i(156937),	-- Dark Iron Blackjack
 								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 27986 }, -- 
+								["sourceQuests"] = { 27986 },	-- 
 							}),
 							q(28033, {	--Deceit
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 28028,28029,28030 }, -- "Siege!", "Set Them Ablaze!", "They Build a Better Bullet"
+								["sourceQuests"] = { 28028,28029,28030 },	-- "Siege!", "Set Them Ablaze!", "They Build a Better Bullet"
 							}),
 							q(28034, {	--Lunk's Adventure: Rendan's Weakness
 								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 28033 }, -- Deceit
+								["sourceQuests"] = { 28033 },	-- Deceit
 							}),
 							q(28035, {	--The Mountain-Lord's Support
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 28034 }, -- Lunk's Adventure: Rendan's Weakness
+								["sourceQuests"] = { 28034 },	-- Lunk's Adventure: Rendan's Weakness
 							}),
 						}),
-						crit(4, { -- Into the Gorge (qID 28064)
-							q(28052, { -- Operation: Stir the Cauldron
+						crit(4, {	-- Into the Gorge (qID 28064)
+							q(28052, {	-- Operation: Stir the Cauldron
 								["groups"] = {
-									i(63236), -- Mountain-Lord's Legguards
-									i(63235), -- Slag Pit Bracers
-									i(63234), -- Dancer's Belt
+									i(63236),	-- Mountain-Lord's Legguards
+									i(63235),	-- Slag Pit Bracers
+									i(63234),	-- Dancer's Belt
 								},
 								["qg"] = 14625,	-- Overseer Oilfist
 								["sourceQuests"] = { 28035 },
 							}),
 							q(28054, {	--Slavery is Bad
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 28052 }, -- 
+								["sourceQuests"] = { 28052 },	-- 
 							}),
 							q(28055, {	--Sweet, Horrible Freedom
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 28052 }, -- 
+								["sourceQuests"] = { 28052 },	-- 
 							}),
-							q(28056, { -- Rise, Obsidion
+							q(28056, {	-- Rise, Obsidion
 								["groups"] = {
 									i(63240),  -- Dark Iron Axe
 									i(63239),  -- Belt of Turning Tides
 									i(63238),  -- Suntara Spaulders
 									i(63237),  -- Sootsmoke Wand
-									i(156936), -- Dark Iron Pike
+									i(156936),	-- Dark Iron Pike
 								},
 								["qg"] = 47393,	-- Mountain-Lord Rendan
-								["sourceQuests"] = { 28052 }, -- 
+								["sourceQuests"] = { 28052 },	-- 
 							}),
 							q(28057, {	--Kill 'em With Sleep Deprivation
 								["qg"] = 14628,	-- Evonice Sootsmoker
-								["sourceQuests"] = { 28054,28055,28056 }, -- "Slavery Is Bad", "Sweet, Horrible Freedom", "Rise, Obsidion"
+								["sourceQuests"] = { 28054,28055,28056 },	-- "Slavery Is Bad", "Sweet, Horrible Freedom", "Rise, Obsidion"
 								["g"] = {
 									{	-- Everglowing Robe
 										["itemID"] = 19129,	-- Everglowing Robe
@@ -165,11 +165,11 @@ _.Zones =
 									},
 								},
 							}),
-							o(179832, { -- Pillaclencher's Ornate Pillow
-								i(62933, { -- Chambermaid Pillaclencher's Pillow
+							o(179832, {	-- Pillaclencher's Ornate Pillow
+								i(62933, {	-- Chambermaid Pillaclencher's Pillow
 									q(28058, {	--Look at the Size of It!
 										["groups"] = {
-											i(18951), -- Evonice's Landin' Pilla
+											i(18951),	-- Evonice's Landin' Pilla
 										},
 										["sourceQuests"] = {28057},
 									}),
@@ -177,7 +177,7 @@ _.Zones =
 							}),
 							q(28060, {	--Twisted Twilight Ties
 								["qg"] = 14626,	-- Taskmaster Scrange
-								["sourceQuests"] = { 28057 }, -- Kill 'em With Sleep Deprivation
+								["sourceQuests"] = { 28057 },	-- Kill 'em With Sleep Deprivation
 							}),
 							q(28061, {	--Minions of Calcinder
 								["qg"] = 14625,	-- Overseer Oilfist
@@ -185,89 +185,89 @@ _.Zones =
 							}),
 							q(28062, {	--From Whence He Came
 								["qg"] = 14625,	-- Overseer Oilfist
-								["sourceQuests"] = { 28060 }, -- Twisted Twilight Ties
+								["sourceQuests"] = { 28060 },	-- Twisted Twilight Ties
 							}),
-							q(28064, { -- Welcome to the Brotherhood (questline appears to start with "Slavery is Bad" - not sure how this quest is obtained exactly)
+							q(28064, {	-- Welcome to the Brotherhood (questline appears to start with "Slavery is Bad" - not sure how this quest is obtained exactly)
 								["groups"] = {
-									i(63244), -- Pauldrons of the Thorium Brotherhood
-									i(63243), -- Hammer of the Thorium Brotherhood
-									i(63242), -- Amulet of the Thorium Brotherhood
+									i(63244),	-- Pauldrons of the Thorium Brotherhood
+									i(63243),	-- Hammer of the Thorium Brotherhood
+									i(63242),	-- Amulet of the Thorium Brotherhood
 								},
-								["sourceQuests"] = { 28062 }, -- From Whence He Came
+								["sourceQuests"] = { 28062 },	-- From Whence He Came
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
-						sz(774, 1, { -- Firewatch Ridge
+					n(-168, {	-- Other Quests
+						sz(774, 1, {	-- Firewatch Ridge
 							q(27984, {	--Lunthistle's Tale
 								["qg"] = 8436,	-- Zamael Lunthistle
 							}),
 							q(27985, {	--Prayer to Elune
 								["qg"] = 8436,	-- Zamael Lunthistle
-								["sourceQuests"] = { 27984 }, -- Lunthistle's Tale
+								["sourceQuests"] = { 27984 },	-- Lunthistle's Tale
 							}),
 						}),
-						sz(774, 2, { -- The Cauldron
+						sz(774, 2, {	-- The Cauldron
 							q(27470, {	-- A Potential Ally
 								["qg"] = 14625,	-- Overseer Oilfist
 							}),
 						}),
-						-- sz(774, 3, { -- Blackchar Cave
+						-- sz(774, 3, {	-- Blackchar Cave
 						-- }),
-						sz(774, 4, { -- The Sea of Cinders NOTE: Should be Iron Summit
-							q(28032, { -- The Mysteries of the Fire-Gizzard
+						sz(774, 4, {	-- The Sea of Cinders NOTE: Should be Iron Summit
+							q(28032, {	-- The Mysteries of the Fire-Gizzard
 								["groups"] = {
-									i(63233), -- Iron Summit Belt
-									i(63232), -- Incendosaur Gloves
-									i(63231), -- Lizard Skin Boots
-									i(63230), -- Fire-Gizzard Robes
+									i(63233),	-- Iron Summit Belt
+									i(63232),	-- Incendosaur Gloves
+									i(63231),	-- Lizard Skin Boots
+									i(63230),	-- Fire-Gizzard Robes
 								},
 								["qg"] = 47440,	-- Agnes Flimshale
-								["sourceQuests"] = { 27986 }, -- 
+								["sourceQuests"] = { 27986 },	-- 
 							}),
 						}),
-						sz(774, 5, { -- Grimesilt Dig Site
+						sz(774, 5, {	-- Grimesilt Dig Site
 							q(27956, {	--Lunk's Task
 								["qg"] = 47269,	-- Lunk
 							}),
 							q(27957, {	--Lunk No Kill
 								["qg"] = 47269,	-- Lunk
-								["sourceQuests"] = { 27956 }, -- Lunk's Task
+								["sourceQuests"] = { 27956 },	-- Lunk's Task
 							}),
-							q(27958, { -- A Proper Antivenom
+							q(27958, {	-- A Proper Antivenom
 								["groups"] = {
-									i(63211), -- Medical Officer Legguards
-									i(63210), -- Snakeoil Helm
-									i(63209), -- Glassweb Robes
+									i(63211),	-- Medical Officer Legguards
+									i(63210),	-- Snakeoil Helm
+									i(63209),	-- Glassweb Robes
 									},
 								["qg"] = 47268,	-- Prisanne Dustcropper
-								["sourceQuests"] = { 27957 }, -- Lunk No Kill
+								["sourceQuests"] = { 27957 },	-- Lunk No Kill
 							}),
 							q(27959, {	--Lunk's Adventure: Spider Rider
 								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 27958 }, -- A Proper Antivenom
+								["sourceQuests"] = { 27958 },	-- A Proper Antivenom
 							}),
 							q(27960, {	--The Fewer, the Better
 								["qg"] = 47267,	-- Burrian Coalpart
 							}),
-							q(27961, { -- Out of Place
+							q(27961, {	-- Out of Place
 								["groups"] = {
-									i(63215), -- Coalpart's Bracers
-									i(63214), -- Mercy Killing Helm
-									i(63213), -- Fuzzy Headcover
-									i(63212), -- Ash Feather Cloak
+									i(63215),	-- Coalpart's Bracers
+									i(63214),	-- Mercy Killing Helm
+									i(63213),	-- Fuzzy Headcover
+									i(63212),	-- Ash Feather Cloak
 								},
 								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 }, -- The Fewer, the Better
+								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
 							}),
 							q(27962, {	--A Lumbering Relic
 								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 }, -- The Fewer, the Better
+								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
 							}),
 						}),
-						-- sz(774, 6, { -- Dustfire Valley
+						-- sz(774, 6, {	-- Dustfire Valley
 						-- }),
-						sz(774, 7, { -- Thorium Point
+						sz(774, 7, {	-- Thorium Point
 							qh(28515, {	--Mouton Flamestar
 								["qg"] = 14625,	-- Overseer Oilfist
 							}),
@@ -277,23 +277,25 @@ _.Zones =
 							q(27980, {	--The Spiders Have to Go
 								["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 							}),
-							qr(q(13662, {	--Gaining Acceptance
+							q(13662, {	--Gaining Acceptance
 								["qg"] = 14624,	-- Master Smith Burninate
-								["sourceQuests"] = { 28064 }, -- Welcome to the Brotherhood
-							})),
-							qr(q(7737, {	--Gaining Even More Acceptance
+								["repeatable"] = true,
+								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+							}),
+							q(7737, {	--Gaining Even More Acceptance
 								["qg"] = 14624,	-- Master Smith Burninate
-								["sourceQuests"] = { 28064 }, -- Welcome to the Brotherhood
-							})),
+								["repeatable"] = true,
+								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+							}),
 							q(28053, {	--Lunk Like Your Style
 								["groups"] = {
-									i(63245), -- Lunk's Special Gear
+									i(63245),	-- Lunk's Special Gear
 								},
 								["qg"] = 47429,	-- Lunk
 								["sourceQuests"] = { 28064 },
 							}),
 						}),
-						-- sz(774, 8, { -- Blackrock Mountain
+						-- sz(774, 8, {	-- Blackrock Mountain
 						-- }),
 					}),
 				}),
@@ -324,7 +326,7 @@ _.Zones =
 						dr(01.0, i(9913)),	-- Royal Gown
 						dr(01.0, i(9963)),	-- Warmonger's Circlet					
 					}),
-					o(207496, { -- Dark Iron Treasure Chest
+					o(207496, {	-- Dark Iron Treasure Chest
 						["groups"] = {
 							i(1718),	-- Basilisk Hide Pants
 							i(13109),	-- Blackflame Cape

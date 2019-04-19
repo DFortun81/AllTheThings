@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-141, { -- Felsoul 
+				n(-141, {	-- Felsoul 
 					["groups"] = {
 						un(1, i(154022)),	-- Felsoul Wand
 						i(154024),	-- Felsoul Stave

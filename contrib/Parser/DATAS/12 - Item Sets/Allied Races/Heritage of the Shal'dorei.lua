@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["groups"] = {
-			gs(1523, { -- Heritage of the Shal'dorei
+			gs(1523, {	-- Heritage of the Shal'dorei
 				["groups"] = {
 					i(156675),	-- Shal'dorei Crown
 					i(156676),	-- Shal'dorei Mantle

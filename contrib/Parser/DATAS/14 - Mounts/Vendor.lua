@@ -54,6 +54,8 @@ _.Mounts =
 			{	-- Azure Water Strider
 				["itemID"] = 81354,	-- Azure Water Strider
 			},
+			i(167894),	-- Beastlord's Irontusk
+			i(167895),	-- Beastlord's Warwolf
 			{	-- Black Battlestrider
 				["itemID"] = 29465,	-- Black Battlestrider
 			},

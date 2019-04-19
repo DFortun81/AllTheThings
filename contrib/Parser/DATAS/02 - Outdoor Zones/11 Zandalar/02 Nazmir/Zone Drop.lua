@@ -22,10 +22,10 @@ _.Zones =
 								133279,	-- Nazmani Drudge
 								133077,	-- Nazmani War Slave
 								136639,	-- Zalamar Worshipper
-								133063, -- Nazmani Blood Witch
-								128734, -- Amaki Guard
-								120606, -- Blood Troll Hexxer
-								124688, -- Natha'vor Cannibal
+								133063,	-- Nazmani Blood Witch
+								128734,	-- Amaki Guard
+								120606,	-- Blood Troll Hexxer
+								124688,	-- Natha'vor Cannibal
 							},
 						}),
 					},

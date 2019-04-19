@@ -8,10 +8,10 @@ _.Zones =
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(79, {	-- Marshal's Stand, Un'Goro Crater
-						["coord"] = { 56, 64 },
+						["coord"] = { 56, 64, 78 },
 					}),
 					fp(386, {	-- Mossy Pile, Un'Goro Crater
-						["coord"] = { 44, 40.2 },
+						["coord"] = { 44, 40.2, 78 },
 					}),
 				}),
 			},

@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(101, { 	-- Outland
-		m(111, { -- Shattrath City
+		m(111, {	-- Shattrath City
 			["groups"] = {
 				n(-228, {	-- Flight Master
-					fp(128, { -- Shattrath, Terokkar Forest
+					fp(128, {	-- Shattrath, Terokkar Forest
 						["coord"] = { 63.8, 41 },
 					}),
 				}),
@@ -38,30 +38,34 @@ _.Zones =
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-							qr(q(10327, {	-- Single Mark of Kil'jaeden
+							q(10327, {	-- Single Mark of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-							})),
-							qr(q(10326, {	-- More Marks of Kil'jaeden
+							}),
+							q(10326, {	-- More Marks of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Honored.",
 								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
-							})),
+							}),
 							q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-							qr(q(10655, {	-- Single Mark of Sargeras
+							q(10655, {	-- Single Mark of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-							})),
-							qr(q(10654, {	-- More Marks of Sargeras
+							}),
+							q(10654, {	-- More Marks of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
-							})),
+							}),
 							q(10020, {	-- A Cure for Zahlia
 								["qg"] = 18597,	-- Sha'nir
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
@@ -74,11 +78,12 @@ _.Zones =
 								["qg"] = 18538,	-- Ishanah
 								-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
 							}),
-							qr(q(10421, {	-- Fel Armaments
+							q(10421, {	-- Fel Armaments
 								["qg"] = 18538,	-- Ishanah
+								["repeatable"] = true,
 								["description"] = "Gives reputation through Exalted.",
 								["sourceQuests"] = { 10420 },	-- A Cleansing Light
-							})),
+							}),
 							q(11038, {	-- Assist Exarch Orelis
 								["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
@@ -90,6 +95,7 @@ _.Zones =
 									i(30369),	-- Cleansed Fel Pauldrons
 									i(30370),	-- Gauntlets of the Redeemed Vindicator
 									i(30371),	-- Lightwarden's Girdle
+									i(30860),	-- Kaylaan's Signet
 								},
 								["qg"] = 18538,	-- Ishanah
 								["sourceQuests"] = { 10410 },	-- Ishanah's Help
@@ -124,7 +130,11 @@ _.Zones =
 								},
 								["qg"] = 22429,	-- Vekax
 							}),
-							qr(q(10918,  {  -- More Feathers
+							q(10918,  {  -- More Feathers
+								["qg"] = 22429,	-- Vekax
+								["repeatable"] = true,
+								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
 								["groups"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -137,10 +147,7 @@ _.Zones =
 										i(28494),	-- Ravenguard's Greaves
 									}),
 								},	
-								["qg"] = 22429,	-- Vekax
-								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
-								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-							})),
+							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
@@ -189,11 +196,14 @@ _.Zones =
 						["groups"] = {
 							q(10984, {	-- Speak with the Ogre
 								["qg"] = 22497,	-- V'eru
-								["isBreadcrumb"] = true,	-- for "Mog'dorg the Wizened"
+								["coord"] = { 56.4, 49.2, 111 },
+								["isBreadcrumb"] = true,
 							}),
 							q(10983, {	-- Mog'dorg the Wizened
 								["qg"] = 22940,	-- Grok
-								["sourceQuests"] = { 10984 },	-- Speak with the Ogre
+								["coord"] = { 65.0, 68.4, 111 },
+								["sourceQuest"] = 10984,	-- Speak with the Ogre
+								["isBreadcrumb"] = true,
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
@@ -295,14 +305,14 @@ _.Zones =
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
-					faction(935, { -- The Sha'tar
+					faction(935, {	-- The Sha'tar
 						["g"] = {
-							q(13430, { -- Trial of the Naaru: Magtheridon
+							q(13430, {	-- Trial of the Naaru: Magtheridon
 								["g"] = {
 									i(31746) -- Phoenix-Fire Band
 								},
-								["qg"] = 18481, -- A'dal
-								["sourceQuests"] = { 10884, 10885, 10886 }, -- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
+								["qg"] = 18481,	-- A'dal
+								["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
 							}),
 						},
 					}),
@@ -324,19 +334,29 @@ _.Zones =
 					}),
 					faction(1077, {	-- Shattered Sun Offensive
 						["groups"] = {
-							qr(q(11877, {	-- Sunfury Attack Plans
+							q(11877, {	-- Sunfury Attack Plans
 								["qg"] = 25140,	-- Lord Torvos
-							})),
-							qr(q(11880, {	-- The Multiphase Survey
+								["repeatable"] = true,
+							}),
+							q(11880, {	-- The Multiphase Survey
 								["qg"] = 19475,	-- Harbinger Haronem
-							})),
-							qr(q(11875, {	-- Gaining the Advantage
+								["repeatable"] = true,
+							}),
+							q(11875, {	-- Gaining the Advantage
 								["qg"] = 19202,	-- Emissary Mordin
+								["repeatable"] = true,
 								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-							})),
-							qr(q(11514, {	-- Maintaining the Sunwell Portal
+							}),
+							un(40, q(11513, {	-- Intercepting the Mana Cells
 								["qg"] = 24932,	-- Exarch Nasuun
-							})),
+								["coord"] = { 49.8, 42.6, 111 },
+								["repeatable"] = true,
+							})),	
+							q(11514, {	-- Maintaining the Sunwell Portal
+								["qg"] = 24932,	-- Exarch Nasuun
+								["coord"] = { 49.8, 42.6, 111 },
+								["repeatable"] = true,
+							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
@@ -354,9 +374,10 @@ _.Zones =
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
 					}),
-					un(40, q( 10180, {	-- Can't Stay Away
+					q(10180, {	-- Can't Stay Away
 						["qg"] = 19045,	-- Oloraak
-					})), -- Quest seems removed. Gold 28.10.2018
+						["isBreadcrumb"] = true,
+					}),
 					qh(11046, {	-- Chief Apothecary Hildagard
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
@@ -366,14 +387,14 @@ _.Zones =
 						["coord"] = { 54.7, 44.3 },
 						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
-					q(44863, { -- Clearing the Air
+					q(44863, {	-- Clearing the Air
 						["groups"] = {
-							i(142279), -- Plans: Windforged Rapier
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142282), -- Plans: Stormforged Axe
+							i(142279),	-- Plans: Windforged Rapier
+							i(142283),	-- Plans: Skyforged Great Axe
+							i(142282),	-- Plans: Stormforged Axe
 						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
+						["qg"] = 115546,	-- Lunelli
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10009, {	-- Crackin' Some Skulls
 						["qg"] = 18584,	-- Sal'salabim
@@ -384,14 +405,14 @@ _.Zones =
 						["isWeekly"] = true,
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
-					q(41160, { -- Earth to Earth
+					q(41160, {	-- Earth to Earth
 						["groups"] = {
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
+							i(142284),	-- Plans: Stoneforged Claymore
+							i(142287),	-- Plans: Great Earthforged Hammer
+							i(142286),	-- Plans: Lavaforged Warhammer
 						},
-						["qg"] = 115546, -- Lunelli
-						["requireSkill"] = 164, -- Blacksmithing
+						["qg"] = 115546,	-- Lunelli
+						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
@@ -417,84 +438,96 @@ _.Zones =
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 					}),
-					qd( q( 11380, {	-- Manalicious
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q( 11380, {	-- Manalicious
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 10037, {	-- Rather Be Fishin'
 						["groups"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
 					}),
-					qd( q( 11377, {	-- Revenge is Tasty
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q(11377, {	-- Revenge is Tasty
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 10849, {	-- Seek Out Kirrik
 						["qg"] = 22292,	-- Rilak the Redeemed
 						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
 					}),
-					qd( q( 11381, {	-- Soup for the Soul
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
-					qd( q( 11379, {	-- Super Hot Stew
-						i(33844, {	-- Barrel of Fish
-							i(33869),	-- Recipe: Broiled Bloodfin
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33870),	-- Recipe: Skullfish Soup
-							i(33871),	-- Recipe: Stormchops
-						}),
-						i(33857, {	-- Crate of Meat
-							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33925),	-- Recipe: Delicious Chocolate Cake
-							i(33875),	-- Recipe: Kibler's Bits
-							i(33873),	-- Recipe: Spicy Hot Talbuk
-							i(33871),	-- Recipe: Stormchops
-						}),
-					})),
+					q(11381, {	-- Soup for the Soul
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
+					q(11379, {	-- Super Hot Stew
+						["isDaily"] = true,
+						["groups"] = {
+							i(33844, {	-- Barrel of Fish
+								i(33869),	-- Recipe: Broiled Bloodfin
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33870),	-- Recipe: Skullfish Soup
+								i(33871),	-- Recipe: Stormchops
+							}),
+							i(33857, {	-- Crate of Meat
+								i(34834),	-- Recipe: Captain Rumsey's Lager
+								i(33925),	-- Recipe: Delicious Chocolate Cake
+								i(33875),	-- Recipe: Kibler's Bits
+								i(33873),	-- Recipe: Spicy Hot Talbuk
+								i(33871),	-- Recipe: Stormchops
+							}),
+						},
+					}),
 					q( 13082, {	-- The Boon of A'dal
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
@@ -523,10 +556,11 @@ _.Zones =
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 					}),
-					qr(q(13430, {	-- Trial of the Naaru: Magtheridon
+					q(13430, {	-- Trial of the Naaru: Magtheridon
 						["qg"] = 18481,	-- A'dal
+						["repeatable"] = true,
 						["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
-					})),
+					}),
 --					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
 					q(10884, {	-- Trial of the Naaru: Mercy
 						["qg"] = 18481,	-- A'dal
@@ -630,7 +664,7 @@ _.Zones =
 								["itemID"] = 23593,	-- Plans: Adamantite Rapier
 							},
 							{	-- Plans: Adamantite Rod
-								["itemID"]  = 25846, -- Plans: Adamantite Rod
+								["itemID"]  = 25846,	-- Plans: Adamantite Rod
 								["u"] = 1,
 							},
 						},
@@ -931,6 +965,15 @@ _.Zones =
 							i(29100),	-- Mantle of Malorne
 						},
 						["coord"] = { 23.6, 32.6 },
+					}),
+					n(19196, {	-- Cro Threadstrong <Leatherworking Supplies>
+						["groups"] = {
+							i(25720, {	-- Pattern: Heavy Knothide Leather
+								["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
+								["u"] = 8,
+							}),
+						},
+						["coord"] = { 67.2, 67.6 },
 					}),
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 						["groups"] = {
@@ -1505,63 +1548,14 @@ _.Zones =
 						},
 						["coord"] = { 58.6, 75.2 },
 					}),
-					n(52278, {	-- Linsa <Tabard Vendor> 
-						["groups"] = {
-							i(31779),		-- Aldor Tabard
-							a(i(20132)),	-- Arathor Battle Tabard
-							h(i(20131)),	-- Battle Tabard of the Defilers
-							i(25549),		-- Blood Knight Tabard
-							i(31804),		-- Cenarion Expedition Tabard
-							{				-- Competitor's Tabard
-								["itemID"] = 36941,
-								["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							},
-							i(31776),		-- Consortium Tabard
-							h(i(19031)),	-- Frostwolf Battle Tabard
-							i(31404),		-- Green Trophy Tabard of the Illidari
-							i(5976),		-- Guild Tabard
-							a(i(23999)),	-- Honor Hold Tabard
-							i(31777),		-- Keepers of Time Tabard
-							a(i(15198)),	-- Knight's Colors
-							a(i(31774)),	-- Kurenai Tabrd
-							i(43300),		-- Loremaster's Colors
-							i(31778),		-- Lower City Tabard
-							h(i(31773)),	-- Mag'har Tabard
-							i(32828),		-- Ogri'la Tabard
-							a(i(15196)),	-- Private's Tabard
-							i(31405),		-- Purple Trophy Tabard of the Illidari
-							h(i(15197)),	-- Scout's Tabard
-							i(31780),		-- Scryers Tabard
-							i(31781),		-- Sha'tar Tabard
-							a(i(19506)),	-- Silverwing Battle Tabard
-							i(32445),		-- Skyguard Tabard
-							i(31775),		-- Sporeggar Tabard
-							h(i(15199)),	-- Stone Guard's Herald
-							a(i(19032)),	-- Stormpike Battle Tabard
-							i(43349),		-- Tabard of Brute Force
-							a(i(49052)),	-- Tabard of Conquest
-							h(i(49054)),	-- Tabard of Conquest
-							i(35280),		-- Tabard of Summer Flames
-							i(35279),		-- Tabard of Summer Skies
-							i(40643),		-- Tabard of the Achiever
-							i(22999),		-- Tabard of the Argent Dawn
-							i(43348),		-- Tabard of the Explorer
-							a(i(24344)),	-- Tabard of the Hand
-							i(35221),		-- Tabard of the Shattered Sun
-							h(i(24004)),	-- Thrallmar Tabard
-							h(i(19505)),	-- Warsong Battle Tabard
-						},
-						["description"] = "Tabards are only obtainable by those who have earned them.|r",
-						["coord"] = { 58.8, 46.4 },
-					}),
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["groups"] = {
-							i(142287), -- Plans: Great Earthforged Hammer
-							i(142286), -- Plans: Lavaforged Warhammer
-							i(142283), -- Plans: Skyforged Great Axe
-							i(142284), -- Plans: Stoneforged Claymore
-							i(142282), -- Plans: Stormforged Axe
-							i(142279), -- Plans: Windforged Rapier
+							i(142287),	-- Plans: Great Earthforged Hammer
+							i(142286),	-- Plans: Lavaforged Warhammer
+							i(142283),	-- Plans: Skyforged Great Axe
+							i(142284),	-- Plans: Stoneforged Claymore
+							i(142282),	-- Plans: Stormforged Axe
+							i(142279),	-- Plans: Windforged Rapier
 						},
 						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
 						["coord"] = { 64.2, 71.4 },
@@ -1928,195 +1922,6 @@ _.Zones =
 						},
 						["coord" ] = { 60.6, 64.2 },
 					}),
-					n(52268, {	-- Riha <Guild Vendor>
-						["groups"] = {
-							faction(1168, {	-- Your Guild (Faction)
-								["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-								["groups"] = {
-									ach(4989, {	-- A Class Act
-										["collectible"] = false,
-										["groups"] = {
-											a(i(63352)),	-- Shroud of Cooperation - Honored
-											h(i(63353)),	-- Shroud of Cooperation - Honored
-										},
-									}),
-									h(ach(5179, {	-- Alliance Slayer
-										["collectible"] = false,
-										["groups"] = {
-											h(i(65362)),	-- Guild Page - Honored - minipet bound to Character
-										},
-									})),
-									ach(5024, {	-- Better Leveling Through Chemistry
-										["collectible"] = false,
-										["groups"] = {
-											i(65498),	-- Recipe: Big Cauldron of Battle
-										},
-									}),
-									ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-										["collectible"] = false,
-										["groups"] = {
-											un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-										},
-										["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-									}),
-									ach(5144, {	-- Critter Kill Squad
-										["collectible"] = false,
-										["groups"] = {
-											i(63398),	-- Armadillo Pup - Revered
-										},
-									}),
-									ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
-										["collectible"] = false,
-										["groups"] = {
-											i(71033),	-- Lil' Tarecgosa - Exalted
-										},
-									}),
-									ach(4988, {	-- Guild Glory of the Cataclysm Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(63125),	-- Reins of the Dark Phoenix - Exalted
-										},
-									}),
-									ach(9669, {	-- Guild Glory of the Draenor Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(116666),	-- Blacksteel Battleboar - Exalted
-										},
-									}),
-									ach(6682, {	-- Guild Glory of the Pandaria Raider
-										["collectible"] = false,
-										["groups"] = {
-											i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
-										},
-									}),
-									ach(6681, {	-- Guild Pandaren Dungeon Hero
-										["collectible"] = false,
-										["groups"] = {
-											i(89190),	-- Tailored Initiate's Shirt - Honored
-											i(89192),	-- Tailored Memeber's Shirt - Honored
-											i(89194),	-- Tailored Officer's Shirt - Honored
-										},
-									}),
-									a(ach(5031, {	-- Horde Slayer
-										["collectible"] = false,
-										["groups"] = {
-											a(i(65361)),	-- Guild Page - Honored - minipet bound to Character
-										},
-									})),
-									ach(5035, {	-- Master Crafter
-										["collectible"] = false,
-										["groups"] = {
-											a(i(65360)),	-- Cloak of Coordination - Revered
-											h(i(65274)),	-- Cloak of Coordination - Revered
-										},
-									}),
-									ach(5465, {	-- Mix Master
-										["collectible"] = false,
-										["groups"] = {
-											i(65435),	-- Recipe: Cauldron of Battle
-										},
-									}),
-									a(ach(6644, {	-- Pandaren Embassy
-										["collectible"] = false,
-										["groups"] = {
-											i(89191),	-- Artisan Initiate's Shirt - Exalted
-											i(89193),	-- Artisan Member's Shirt - Exalted
-											i(89195),	-- Artisan Officer's Shirt - Exalted
-										},
-									})),
-									h(ach(6664, {	-- Pandaren Embassy
-										["collectible"] = false,
-										["groups"] = {
-											i(89191),	-- Artisan Initiate's Shirt - Exalted
-											i(89193),	-- Artisan Member's Shirt - Exalted
-											i(89195),	-- Artisan Officer's Shirt - Exalted
-										},
-									})),
-									ach(5201, {	-- Profit Sharing
-										["collectible"] = false,
-										["groups"] = {
-											a(i(65363)),	-- Guild Herald - Revered - minipet bound to Character
-											h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
-										},
-									}),
-									a(ach(7448, {	-- Scenario Roundup
-										["collectible"] = false,
-										["groups"] = {
-											i(85508),	-- Initiate's Shirt - Honored
-											i(85509),	-- Member's Shirt - Honored
-											i(85510),	-- Officer's Shirt - Honored
-										},
-									})),
-									h(ach(7449, {	-- Scenario Roundup
-										["collectible"] = false,
-										["groups"] = {
-											i(85508),	-- Initiate's Shirt - Honored
-											i(85509),	-- Member's Shirt - Honored
-											i(85510),	-- Officer's Shirt - Honored
-										},
-									})),
-									ach(5467, {	-- Set the Oven to "Cataclysmic"
-										["collectible"] = false,
-										["groups"] = {
-											i(62799),	-- Recipe: Broiled Dragon Feast
-										},
-									}),
-									ach(5036, {	-- That's a Lot of Bait
-										["collectible"] = false,
-										["groups"] = {
-											i(62800),	-- Recipe: Seafood Magnifique Feast
-										},
-									}),
-									a(ach(5812, {	-- United Nations
-										["collectible"] = false,
-										["groups"] = {
-											i(63138),	-- Dark Phoenix Hatchling - Exalted
-										},
-									})),
-									h(ach(5892, {	-- United Nations
-										["collectible"] = false,
-										["groups"] = {
-											i(63138),	-- Dark Phoenix Hatchling - Exalted
-										},
-									})),
-									ach(6626, {	-- Working Better as a Team
-										["collectible"] = false,
-										["groups"] = {
-											i(127011),	-- Pristine Lightforged Legplates - Honored
-											i(122252),	-- Tarnished Leggings of Destruction - Honored
-											i(122251),	-- Polished Legplates of Valor - Honored
-											i(122254),	-- Stained Shadowcraft Pants - Honored
-											i(122253),	-- Mystical Kilt of Elements - Honored
-											i(122256),	-- Tattered Dreadmist Leggings - Honored
-											i(122255),	-- Preened Wildfeather Leggings - Honored
-											i(122264),	-- Burnished Legplates of Might - Honored
-										},
-									}),
-									
-									h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
-									a(i(62298)),	-- Reins of the Golden King - Exalted
-									i(69209),	-- Illustrious Guild Tabard - Friendly
-									i(69210),	-- Renowned Guild Tabard - Honored
-									a(i(63206)),	-- Wrap of Unity - Honored
-									h(i(63207)),	-- Wrap of Unity - Honored
-									i(122266),	-- Ripped Sandstorm Cloak - Friendly
-									i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-									i(122261),	-- Inherited Cape of the Black Baron - Friendly
-									i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-									i(122263),	-- Burnished Helm of Might - Friendly
-									i(122250),	-- Tattered Dreadmist Mask - Friendly
-									i(122249),	-- Preened Tribal War Feathers - Friendly
-									i(122248),	-- Stained Shadowcraft Cap - Friendly 
-									i(122247),	-- Mystical Coif of Elements - Friendly
-									i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-									i(127012),	-- Pristine Lightforged Helm - Friendly
-									i(122245),	-- Polished Helm of Valor - Friendly
-								},
-							}),
-						},
-						["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-						["coord"] = { 58.6, 46.6 },
-					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 						["groups"] = {
 							i(29735, {	-- Holy Dust
@@ -2250,10 +2055,15 @@ _.Zones =
 						["coord"] = {44.8, 91.6 },
 					}),
 					n(19661, {	-- Viggz Shinesparked <Engineering Supplies>
+						["coord"] = { 64.8, 69.6 },
 						["groups"] = {
 							i(23799),	-- Schematic: Adamantite Rifle
+							{				-- Schematic: Fused Wiring
+								["itemID"] = 32381,	-- Schematic: Fused Wiring
+								["spellID"] = 0,
+								["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							},
 						},
-						["coord"] = { 64.8, 69.6 },
 					}),
 					n(18484, {	-- Wind Trader Lathrai
 						["groups"] = {

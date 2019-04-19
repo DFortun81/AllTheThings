@@ -7,17 +7,18 @@ _.Zones =
 		m(641, {	-- Val'sharah
 			["groups"] = {
 				n(-169, { 	-- Emissary Quess
-					q(42170, { -- The Dreamweavers
+					q(42170, {	-- The Dreamweavers
 						["groups"] = {
-							i(157822, { -- Dreamweaver Provisions
+							i(157822, {	-- Dreamweaver Provisions
 								["groups"] = {
+									i(144319),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-									i(130167), -- Thistleleaf Adventurer
-									n(-322, { -- Cloak
+									i(130167),	-- Thistleleaf Adventurer
+									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
-									n(-3245, { -- Night Dreamer Set
+									n(-3245, {	-- Night Dreamer Set
 										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
@@ -29,7 +30,7 @@ _.Zones =
 											i(139090),	-- Night Dreamer Slippers
 										},
 									}),
-									n(-3259, { -- Terrorweave Set
+									n(-3259, {	-- Terrorweave Set
 										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
@@ -41,7 +42,7 @@ _.Zones =
 											i(121328),	-- Terrorweave Boots
 										},
 									}),
-									n(-3269, { -- Dreadhide Set
+									n(-3269, {	-- Dreadhide Set
 										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
@@ -53,7 +54,7 @@ _.Zones =
 											i(121293),	-- Dreadhide Boots
 										},
 									}),
-									n(-3268, { -- Tranquil Bough Set
+									n(-3268, {	-- Tranquil Bough Set
 										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
@@ -65,7 +66,7 @@ _.Zones =
 											i(139067),	-- Tranquil Bough Footpads
 										},
 									}),
-									n(-3281, { -- Bramblemail Set
+									n(-3281, {	-- Bramblemail Set
 										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
@@ -77,7 +78,7 @@ _.Zones =
 											i(139080),	-- Bramblemail Boots
 										},
 									}),
-									n(-3279, { -- Vilescale Set
+									n(-3279, {	-- Vilescale Set
 										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
@@ -89,7 +90,7 @@ _.Zones =
 											i(121318),	-- Vilescale Sabatons
 										},
 									}),
-									n(-3307, { -- Nightsfall Set
+									n(-3307, {	-- Nightsfall Set
 										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
@@ -101,7 +102,7 @@ _.Zones =
 											i(139061),	-- Nightsfall Sabatons
 										},
 									}),
-									n(-3303, { -- Wracksoul Set
+									n(-3303, {	-- Wracksoul Set
 										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
@@ -115,14 +116,14 @@ _.Zones =
 									}),
 								},
 							}),
-							un(2, i(154903, { -- Dreamweaver Provisions
+							un(2, i(154903, {	-- Dreamweaver Provisions
 								["groups"] = {
-									i(130167), -- Thistleleaf Adventurer
-									n(-322, { -- Cloak
+									i(130167),	-- Thistleleaf Adventurer
+									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
-									n(-3245, { -- Night Dreamer Set
+									n(-3245, {	-- Night Dreamer Set
 										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
@@ -134,7 +135,7 @@ _.Zones =
 											i(139090),	-- Night Dreamer Slippers
 										},
 									}),
-									n(-3259, { -- Terrorweave Set
+									n(-3259, {	-- Terrorweave Set
 										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
@@ -146,7 +147,7 @@ _.Zones =
 											i(121328),	-- Terrorweave Boots
 										},
 									}),
-									n(-3269, { -- Dreadhide Set
+									n(-3269, {	-- Dreadhide Set
 										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
@@ -158,7 +159,7 @@ _.Zones =
 											i(121293),	-- Dreadhide Boots
 										},
 									}),
-									n(-3268, { -- Tranquil Bough Set
+									n(-3268, {	-- Tranquil Bough Set
 										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
@@ -170,7 +171,7 @@ _.Zones =
 											i(139067),	-- Tranquil Bough Footpads
 										},
 									}),
-									n(-3281, { -- Bramblemail Set
+									n(-3281, {	-- Bramblemail Set
 										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
@@ -182,7 +183,7 @@ _.Zones =
 											i(139080),	-- Bramblemail Boots
 										},
 									}),
-									n(-3279, { -- Vilescale Set
+									n(-3279, {	-- Vilescale Set
 										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
@@ -194,7 +195,7 @@ _.Zones =
 											i(121318),	-- Vilescale Sabatons
 										},
 									}),
-									n(-3307, { -- Nightsfall Set
+									n(-3307, {	-- Nightsfall Set
 										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
@@ -206,7 +207,7 @@ _.Zones =
 											i(139061),	-- Nightsfall Sabatons
 										},
 									}),
-									n(-3303, { -- Wracksoul Set
+									n(-3303, {	-- Wracksoul Set
 										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
@@ -220,14 +221,14 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(151464, { -- Dreamweaver Provisions
+							un(2, i(151464, {	-- Dreamweaver Provisions
 								["groups"] = {
-									i(130167), -- Thistleleaf Adventurer
-									n(-322, { -- Cloak
+									i(130167),	-- Thistleleaf Adventurer
+									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
-									n(-3245, { -- Night Dreamer Set
+									n(-3245, {	-- Night Dreamer Set
 										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
@@ -239,7 +240,7 @@ _.Zones =
 											i(139090),	-- Night Dreamer Slippers
 										},
 									}),
-									n(-3259, { -- Terrorweave Set
+									n(-3259, {	-- Terrorweave Set
 										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
@@ -251,7 +252,7 @@ _.Zones =
 											i(121328),	-- Terrorweave Boots
 										},
 									}),
-									n(-3269, { -- Dreadhide Set
+									n(-3269, {	-- Dreadhide Set
 										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
@@ -263,7 +264,7 @@ _.Zones =
 											i(121293),	-- Dreadhide Boots
 										},
 									}),
-									n(-3268, { -- Tranquil Bough Set
+									n(-3268, {	-- Tranquil Bough Set
 										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
@@ -275,7 +276,7 @@ _.Zones =
 											i(139067),	-- Tranquil Bough Footpads
 										},
 									}),
-									n(-3281, { -- Bramblemail Set
+									n(-3281, {	-- Bramblemail Set
 										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
@@ -287,7 +288,7 @@ _.Zones =
 											i(139080),	-- Bramblemail Boots
 										},
 									}),
-									n(-3279, { -- Vilescale Set
+									n(-3279, {	-- Vilescale Set
 										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
@@ -299,7 +300,7 @@ _.Zones =
 											i(121318),	-- Vilescale Sabatons
 										},
 									}),
-									n(-3307, { -- Nightsfall Set
+									n(-3307, {	-- Nightsfall Set
 										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
@@ -311,7 +312,7 @@ _.Zones =
 											i(139061),	-- Nightsfall Sabatons
 										},
 									}),
-									n(-3303, { -- Wracksoul Set
+									n(-3303, {	-- Wracksoul Set
 										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
@@ -325,14 +326,14 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(146747, { -- Dreamweaver Provisions
+							un(2, i(146747, {	-- Dreamweaver Provisions
 								["groups"] = {
-									i(130167), -- Thistleleaf Adventurer
-									n(-322, { -- Cloak
+									i(130167),	-- Thistleleaf Adventurer
+									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
-									n(-3245, { -- Night Dreamer Set
+									n(-3245, {	-- Night Dreamer Set
 										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
@@ -344,7 +345,7 @@ _.Zones =
 											i(139090),	-- Night Dreamer Slippers
 										},
 									}),
-									n(-3259, { -- Terrorweave Set
+									n(-3259, {	-- Terrorweave Set
 										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
@@ -356,7 +357,7 @@ _.Zones =
 											i(121328),	-- Terrorweave Boots
 										},
 									}),
-									n(-3269, { -- Dreadhide Set
+									n(-3269, {	-- Dreadhide Set
 										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
@@ -368,7 +369,7 @@ _.Zones =
 											i(121293),	-- Dreadhide Boots
 										},
 									}),
-									n(-3268, { -- Tranquil Bough Set
+									n(-3268, {	-- Tranquil Bough Set
 										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
@@ -380,7 +381,7 @@ _.Zones =
 											i(139067),	-- Tranquil Bough Footpads
 										},
 									}),
-									n(-3281, { -- Bramblemail Set
+									n(-3281, {	-- Bramblemail Set
 										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
@@ -392,7 +393,7 @@ _.Zones =
 											i(139080),	-- Bramblemail Boots
 										},
 									}),
-									n(-3279, { -- Vilescale Set
+									n(-3279, {	-- Vilescale Set
 										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
@@ -404,7 +405,7 @@ _.Zones =
 											i(121318),	-- Vilescale Sabatons
 										},
 									}),
-									n(-3307, { -- Nightsfall Set
+									n(-3307, {	-- Nightsfall Set
 										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
@@ -416,7 +417,7 @@ _.Zones =
 											i(139061),	-- Nightsfall Sabatons
 										},
 									}),
-									n(-3303, { -- Wracksoul Set
+									n(-3303, {	-- Wracksoul Set
 										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
@@ -430,14 +431,14 @@ _.Zones =
 									}),
 								},
 							})),
-							un(2, i(137560, { -- Dreamweaver Provisions
+							un(2, i(137560, {	-- Dreamweaver Provisions
 								["groups"] = {
-									i(130167), -- Thistleleaf Adventurer
-									n(-322, { -- Cloak
+									i(130167),	-- Thistleleaf Adventurer
+									n(-322, {	-- Cloak
 										i(139074),	-- Dreamwalker's Cloak
 										i(121307),	-- Nightmare Shroud
 									}),
-									n(-3245, { -- Night Dreamer Set
+									n(-3245, {	-- Night Dreamer Set
 										["groups"] = {
 											i(139086),	-- Night Dreamer Crest
 											i(139091),	-- Night Dreamer Mantle
@@ -449,7 +450,7 @@ _.Zones =
 											i(139090),	-- Night Dreamer Slippers
 										},
 									}),
-									n(-3259, { -- Terrorweave Set
+									n(-3259, {	-- Terrorweave Set
 										["groups"] = {
 											i(121324),	-- Terrorweave Cowl
 											i(121329),	-- Terrorweave Pauldrons
@@ -461,7 +462,7 @@ _.Zones =
 											i(121328),	-- Terrorweave Boots
 										},
 									}),
-									n(-3269, { -- Dreadhide Set
+									n(-3269, {	-- Dreadhide Set
 										["groups"] = {
 											i(121296),	-- Dreadhide Hood
 											i(121298),	-- Dreadhide Mantle
@@ -473,7 +474,7 @@ _.Zones =
 											i(121293),	-- Dreadhide Boots
 										},
 									}),
-									n(-3268, { -- Tranquil Bough Set
+									n(-3268, {	-- Tranquil Bough Set
 										["groups"] = {
 											i(139070),	-- Tranquil Bough Hood
 											i(139072),	-- Tranquil Bough Spaulders
@@ -485,7 +486,7 @@ _.Zones =
 											i(139067),	-- Tranquil Bough Footpads
 										},
 									}),
-									n(-3281, { -- Bramblemail Set
+									n(-3281, {	-- Bramblemail Set
 										["groups"] = {
 											i(139081),	-- Bramblemail Helm
 											i(139083),	-- Bramblemail Pauldrons
@@ -497,7 +498,7 @@ _.Zones =
 											i(139080),	-- Bramblemail Boots
 										},
 									}),
-									n(-3279, { -- Vilescale Set
+									n(-3279, {	-- Vilescale Set
 										["groups"] = {
 											i(121319),	-- Vilescale Helm
 											i(121321),	-- Vilescale Shoulderguards
@@ -509,7 +510,7 @@ _.Zones =
 											i(121318),	-- Vilescale Sabatons
 										},
 									}),
-									n(-3307, { -- Nightsfall Set
+									n(-3307, {	-- Nightsfall Set
 										["groups"] = {
 											i(139058),	-- Nightsfall Helmet
 											i(139060),	-- Nightsfall Shoulderplates
@@ -521,7 +522,7 @@ _.Zones =
 											i(139061),	-- Nightsfall Sabatons
 										},
 									}),
-									n(-3303, { -- Wracksoul Set
+									n(-3303, {	-- Wracksoul Set
 										["groups"] = {
 											i(121279),	-- Wracksoul Helm
 											i(121281),	-- Wracksoul Pauldrons
@@ -538,14 +539,14 @@ _.Zones =
 						},
 						["repeatable"] = true,
 					}),
-					n(-206, { -- Paragon
-						q(46747, { -- Supplies From the Dreamweavers
+					n(-206, {	-- Paragon
+						q(46747, {	-- Supplies From the Dreamweavers
 							["groups"] = {
-								i(152103, { -- Dreamweaver Cache
-									i(147804), -- Wild Dreamrunner
+								i(152103, {	-- Dreamweaver Cache
+									i(147804),	-- Wild Dreamrunner
 								}),
-								un(2, i(146898, { -- Dreamweaver Cache
-									i(147804), -- Wild Dreamrunner
+								un(2, i(146898, {	-- Dreamweaver Cache
+									i(147804),	-- Wild Dreamrunner
 								})),
 							},
 							["repeatable"] = true,
@@ -553,22 +554,22 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1713, { -- Bradensbrook, Val'sharah
+					fp(1713, {	-- Bradensbrook, Val'sharah
 						["coord"] = { 42.2, 58.4 },
 					}),
-					fp(1766, { -- Garden of the Moon, Val'sharah
+					fp(1766, {	-- Garden of the Moon, Val'sharah
 						["coord"] = { 56.6, 57.8 },
 					}),
-					fp(1885, { -- Gloaming Reef, Val'sharah
+					fp(1885, {	-- Gloaming Reef, Val'sharah
 						["coord"] = { 25.8, 66.4 },
 					}),
-					fp(1673, { -- Lorlathil, Val'sharah
+					fp(1673, {	-- Lorlathil, Val'sharah
 						["coord"] = { 55, 72.4 },
 					}),
-					fp(1764, { -- Starsong Refuge, Val'sharah
+					fp(1764, {	-- Starsong Refuge, Val'sharah
 						["coord"] = { 69, 50.8 },
 					}),
-					fp(1847, { -- The Dream Grove (Eagle)
+					fp(1847, {	-- The Dream Grove (Eagle)
 						["coord"] = { 44, 15 },
 						["classes"] = { 3 },	-- Hunter
 					}),
@@ -591,11 +592,11 @@ _.Zones =
 					n(115740, {	-- Orphaned Sharptalon
 						["groups"] = {
 							p(1976), 	-- Sharptalon Hatchling
-							q(45007, { -- Sharptalon Bonding
-								i(142496), -- Dirty Spoon
+							q(45007, {	-- Sharptalon Bonding
+								i(142496),	-- Dirty Spoon
 							}),
-							q(45019, { -- Sharptalon Reunion
-								i(137580), -- Viridian Sharptalon
+							q(45019, {	-- Sharptalon Reunion
+								i(137580),	-- Viridian Sharptalon
 							}),
 						},
 						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
@@ -636,51 +637,51 @@ _.Zones =
 					n(-180, {	-- Alchemy
 						["groups"] = {
 							q(39338, {	-- Return the Filter
-								["qg"] = 93974, -- Leyweaver Erenyi
-								["sourceQuests"] = { 44112 }, -- Trading for Dreams
+								["qg"] = 93974,	-- Leyweaver Erenyi
+								["sourceQuests"] = { 44112 },	-- Trading for Dreams
 							}),
 						},
 						["requireSkill"] = 171,
 					}),
 					n(-181, {	-- Blacksmithing
-						["groups"] = bubbleDown({["requireSkill"] = 164}, { -- Blacksmithing
+						["groups"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
 							{	-- Between the Hammer...
 								["questID"] = 39680,	-- Between the Hammer...
-								["qg"] = 96763, -- Saris Swifthammer
-								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
+								["qg"] = 96763,	-- Saris Swifthammer
+								["sourceQuest"] = 39702,	-- Legend of Black Rook Hold
 								["g"] = {
 									{	-- Plans: Leystone Waistguard (Rank 2)
-										["itemID"] = 123929, -- Plans: Leystone Waistguard (Rank 2)
+										["itemID"] = 123929,	-- Plans: Leystone Waistguard (Rank 2)
 									},
 								},
 							},
 							{	-- ...And the Anvil
 								["questID"] = 39726,	-- ...And the Anvil
-								["qg"] = 96763, -- Saris Swifthammer
-								["sourceQuest"] = 39702, -- Legend of Black Rook Hold
+								["qg"] = 96763,	-- Saris Swifthammer
+								["sourceQuest"] = 39702,	-- Legend of Black Rook Hold
 							},
 							{	-- The Knowledge of Black Rook
 								["questID"] = 39729,	-- The Knowledge of Black Rook
-								["qg"] = 96763, -- Saris Swifthammer
-								["sourceQuests"] = { 39680, 39726 }, -- Between the Hammer..., ...And the Anvil
+								["qg"] = 96763,	-- Saris Swifthammer
+								["sourceQuests"] = { 39680, 39726 },	-- Between the Hammer..., ...And the Anvil
 								["isBreadcrumb"] = true,
 							},
-							n(-34, { -- World Quests
+							n(-34, {	-- World Quests
 								{	-- Work Order: Leystone Armguards
 									["questID"] = 41634,	-- Work Order: Leystone Armguards
-									["qg"] = 106901, -- Sylvia Hartshorn
+									["qg"] = 106901,	-- Sylvia Hartshorn
 									["lvl"] = 110,
-									--["isWQ"] = true, -- maybe, someday?
+									--["isWQ"] = true,	-- maybe, someday?
 									["g"] = {
 										{	-- Recipe: Leystone Armguards (Rank 3)
-											["itemID"] = 123936, -- Recipe: Leystone Armguards (Rank 3)
+											["itemID"] = 123936,	-- Recipe: Leystone Armguards (Rank 3)
 										},
 									},
 								},
 							}),
 						}),
 					}),
-					prof(356, { -- Fishing
+					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
@@ -878,10 +879,13 @@ _.Zones =
 								["creatureID"] = 120456
 							}),
 						}),
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 				}),
 				n(-17, { 	-- Quests
-					ach(10698, { -- That's Val'sharah Folks!
+					ach(10698, {	-- That's Val'sharah Folks!
 						q(39731),	-- The Tranquil Forest
 						q(39861),	-- Tying Up Loose Ends
 						q(40122),	-- Cenarius, Keeper of the Grove
@@ -889,7 +893,7 @@ _.Zones =
 							i(141618),	-- Life-Giving Berries
 							i(141619),	-- Mana-Infused Berries
 						}),
-						crit(1, { -- Archdruid of the Vale
+						crit(1, {	-- Archdruid of the Vale
 							q(38382),	-- Archdruid of the Vale										
 							q(39383),	-- Dishonored
 							q(39384),	-- The Corruptor
@@ -902,7 +906,7 @@ _.Zones =
 							}),
 							q(38323),	-- Return to the Grove
 						}),
-						crit(2, { -- Archdruid of the Claw
+						crit(2, {	-- Archdruid of the Claw
 							q(38142),	-- Archdruid of the Claw
 							q(38455),	-- Frenzied Furbolgs
 							q(38922),	-- Littlefur
@@ -932,7 +936,7 @@ _.Zones =
 							}),
 							q(38322),	-- Return to the Grove
 						}),
-						crit(3, { -- Archdruid of the Lore
+						crit(3, {	-- Archdruid of the Lore
 							q(38381, {	-- Archdruid of Lore (Non-Druid version)
 								["classes"] = {1,2,3,4,5,6,7,8,9,10,12}
 							}),
@@ -946,7 +950,7 @@ _.Zones =
 							q(38235),	-- Solid as a Rock
 							q(38148),	-- Return to the Grove
 						}),
-						crit(4, { -- Into the Nightmare
+						crit(4, {	-- Into the Nightmare
 							q(38377, {	-- The Emerald Queen
 								i(141387),	-- Emerald Bloom
 								i(132279),	-- Cleansed Shrine Relic
@@ -994,7 +998,7 @@ _.Zones =
 								i(141390),	-- The Corruptor's Totem [AP]
 							}),
 						}),
-						crit(5, { -- All Nightmare Long
+						crit(5, {	-- All Nightmare Long
 							qa( 41056),	-- Love Lost
 							qh( 41054),	-- Love Lost
 							qh( 41890),	-- Dark Side of the Moon
@@ -1048,7 +1052,7 @@ _.Zones =
 								i(141383),	-- Crystallized Moon Drop [AP]
 							}),
 						}),
-						crit(6, { -- Bradensbrook
+						crit(6, {	-- Bradensbrook
 							q(39149),	-- A Village in Peril
 							q(38643),	-- A Village in Peril
 							q(38645),	-- Children of the Night
@@ -1073,7 +1077,7 @@ _.Zones =
 								i(141388),	-- Warden's Boon
 							}),
 						}),
-						crit(7, { -- Black Rook Hold
+						crit(7, {	-- Black Rook Hold
 							q(38718),	-- Kur'talos Ravencrest
 							q(38714,  {  -- Maiev's Trail
 								i(129983),	-- Farseeker Drape
@@ -1116,7 +1120,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					ach(10877, { -- Pillars of Creation
+					ach(10877, {	-- Pillars of Creation
 						q(40567, {	-- Darkheart Thicket: Enter the Nightmare
 							i(141551),	-- Boots of the Receding Nightmare
 							i(141548),	-- Footwraps of the Receding Nightmare
@@ -1125,17 +1129,17 @@ _.Zones =
 						}),
 						o(248534, {	-- The Tears of Elune
 							q(40890,  {  -- The Tears of Elune
-								i(130001), -- Shaladrassil Cuirass
-								i(129993), -- Shaladrassil Tunic
-								i(129985), -- Shaladrassil Vestments
-								i(130012), -- Shaladrassil Chestguard
+								i(130001),	-- Shaladrassil Cuirass
+								i(129993),	-- Shaladrassil Tunic
+								i(129985),	-- Shaladrassil Vestments
+								i(130012),	-- Shaladrassil Chestguard
 							}),
 						}),
 					}),  
-					n(-168, { -- Other Quests
-						sz(10666,3, { -- Bradensbrook
+					n(-168, {	-- Other Quests
+						sz(10666,3, {	-- Bradensbrook
 							q(39015,  {  -- Grumpy
-								i(128354), -- Grumpy
+								i(128354),	-- Grumpy
 							}),
 						}),
 						{	-- Bruls Before Jewels
@@ -1154,7 +1158,7 @@ _.Zones =
 								},
 							},
 						},
-						sz(10666,6, { -- Grove of Cenarius
+						sz(10666,6, {	-- Grove of Cenarius
 							q(39354, {	-- Wisp in the Willows
 								i(130127),	-- Syndrelle's Favorite Ring
 							}),
@@ -1164,17 +1168,17 @@ _.Zones =
 							}),
 							]]--
 						}),
-						n(-90001, { -- Lostlight Grotto
+						n(-90001, {	-- Lostlight Grotto
 							q(42747),	-- Where the Wildkin Are
 							q(42748),	-- Emerald Sisters
 							q(42750),	-- Dreamcatcher
 							q(42786),	-- Grotesque Remains
 							q(42751),	-- Moon Reaver
 						}),
-						n(-90000, { -- Lunarwing Shallows
+						n(-90000, {	-- Lunarwing Shallows
 							q(38889,  {  -- Adopting the Adorable
 								["groups"] = {
-									i(128690), -- Ashmaw Cub
+									i(128690),	-- Ashmaw Cub
 								},
 								["description"] = "|cff66ccffHave to kill Jinikki the Puncturer to get this quest.|n",
 							}),
@@ -1191,7 +1195,7 @@ _.Zones =
 							q(40220),	-- Thorny Dancing
 							q(38862),	-- Thieving Thistleleaf
 						}),
-						sz(10666,9, { -- Moonclaw Vale
+						sz(10666,9, {	-- Moonclaw Vale
 							q(42865),	-- Grell to Pay
 							q(42883),	-- All Grell Broke Loose
 							q(42884),	-- Grassroots Effort
@@ -1342,33 +1346,37 @@ _.Zones =
 --]]					
 				}),
 				n(-2, { 	-- Vendors
-					n(93974, { -- Leyweaver Erenyi
+					n(93974, {	-- Leyweaver Erenyi
 						i(127022),	-- Pattern: Imbued Silkweave Cinch (Rank 1)
 					}),
 					n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
-						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
-						i(137898),	-- Recipe: Dreadleather Footpads
-						i(137896),	-- Recipe: Dreadleather Mask
-						i(137895),	-- Recipe: Dreadleather Pants
-						i(137883),	-- Recipe: Warhide Jerkin
-						i(140578),	-- Dreamweaver Initiate's Tabard
-						i(140667),	-- Tabard of the Dreamweavers
 						i(23712),	-- Ash'ana
+						i(140578),	-- Dreamweaver Initiate's Tabard
+						i(128608),	-- Formula: Enchant Cloak - Binding of Agility (Rank 3)
+						i(128593),	-- Formula: Enchant Neck - Mark of the Claw (Rank 2)
+						i(128601),	-- Formula: Enchant Ring - Binding of Haste (Rank 3)
+						i(128599),	-- Formula: Enchant Ring - Word of Versatility (Rank 3)
 						i(130232),	-- Moonfeather Statue
 						i(130158),	-- Path of Elothir
-						i(130170),	-- Tear of the Green Aspect
-						i(139605),	-- Pendant of the Moon Temple
 						i(139596),	-- Pauldrons of Entwined Roots
+						i(139605),	-- Pendant of the Moon Temple
+						i(137898),	-- Recipe: Dreadleather Footpads (Rank 3)
+						i(137896),	-- Recipe: Dreadleather Mask (Rank 3)
+						i(137895),	-- Recipe: Dreadleather Pants (Rank 3)
+						i(137883),	-- Recipe: Warhide Jerkin (Rank 3)
+						i(140652),	-- Seed of Solar Fire - Druid Artifact Skin
+						i(140667),	-- Tabard of the Dreamweavers
+						i(130170),	-- Tear of the Green Aspect
 						i(140745),	-- Treasure Map: Val'sharah
 					}),
 				}),
 				n(-34, { 	-- World Quests
 					["groups"] = {
-						n(-322, { -- Cloak
+						n(-322, {	-- Cloak
 							i(139074),	-- Dreamwalker's Cloak
 							i(121307),	-- Nightmare Shroud
 						}),
-						n(-3245, { -- Night Dreamer Set
+						n(-3245, {	-- Night Dreamer Set
 							["groups"] = {
 								i(139086),	-- Night Dreamer Crest
 								i(139091),	-- Night Dreamer Mantle
@@ -1381,7 +1389,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 						}),
-						n(-3259, { -- Terrorweave Set
+						n(-3259, {	-- Terrorweave Set
 							["groups"] = {
 								i(121324),	-- Terrorweave Cowl
 								i(121329),	-- Terrorweave Pauldrons
@@ -1394,7 +1402,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 						}),
-						n(-3269, { -- Dreadhide Set
+						n(-3269, {	-- Dreadhide Set
 							["groups"] = {
 								i(121296),	-- Dreadhide Hood
 								i(121298),	-- Dreadhide Mantle
@@ -1407,7 +1415,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 						}),
-						n(-3268, { -- Tranquil Bough Set
+						n(-3268, {	-- Tranquil Bough Set
 							["groups"] = {
 								i(139070),	-- Tranquil Bough Hood
 								i(139072),	-- Tranquil Bough Spaulders
@@ -1420,7 +1428,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 						}),
-						n(-3281, { -- Bramblemail Set
+						n(-3281, {	-- Bramblemail Set
 							["groups"] = {
 								i(139081),	-- Bramblemail Helm
 								i(139083),	-- Bramblemail Pauldrons
@@ -1433,7 +1441,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 						}),
-						n(-3279, { -- Vilescale Set
+						n(-3279, {	-- Vilescale Set
 							["groups"] = {
 								i(121319),	-- Vilescale Helm
 								i(121321),	-- Vilescale Shoulderguards
@@ -1446,7 +1454,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
 						}),
-						n(-3307, { -- Nightsfall Set
+						n(-3307, {	-- Nightsfall Set
 							["groups"] = {
 								i(139058),	-- Nightsfall Helmet
 								i(139060),	-- Nightsfall Shoulderplates
@@ -1459,7 +1467,7 @@ _.Zones =
 							},
 							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						}),
-						n(-3303, { -- Wracksoul Set
+						n(-3303, {	-- Wracksoul Set
 							["groups"] = {
 								i(121279),	-- Wracksoul Helm
 								i(121281),	-- Wracksoul Pauldrons
@@ -1475,6 +1483,14 @@ _.Zones =
 						n(-387, {	-- Relics
 							i(143682),	-- Viscous Terror
 						}),
+						{	-- Work Order: Pump-Action Bandage Gun
+							["questID"] = 41676,
+							["isWQ"] = 110,
+							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
+							},
+						},
 						{	-- Work Order: Silkweave Gloves
 							["questID"] = 41646,
 							["groups"] = {
@@ -1483,10 +1499,28 @@ _.Zones =
 							["isWQ"] = 110,
 							["requireSkill"] = 197,	-- Tailoring
 						},
+						{	-- Work Order: Warhide Mask
+							["questID"] = 41640,
+							["groups"] = {
+								i(137878),	-- Recipe: Warhide Mask (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 165,	-- Leatherworking
+						},
+						{	-- Work Order: Word of Agility
+							["questID"] = 41670,
+							["qg"] = 106901,	-- Sylvia Hartshorn
+							["groups"] = {
+								i(128605),	-- Formula: Enchant CLoak - Word of Agility (Rank 3)
+							},
+							["isWQ"] = 110,
+							["requireSkill"] = 333,	-- Enchanting
+						},
 					},
 				}),
 				n(0, {		-- Zone Drops
 					["groups"] = {
+						i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
@@ -1497,42 +1531,42 @@ _.Zones =
 						i(141049),	-- Technique: Glyph of the Hook
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
-						i(141290, { -- Dreamgrove Sproutling
+						i(141290, {	-- Dreamgrove Sproutling
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121181, { -- Mangler's Mark
+						i(121181, {	-- Mangler's Mark
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121180, { -- Mark of Lore
+						i(121180, {	-- Mark of Lore
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121179, { -- Mark of Malorne
+						i(121179, {	-- Mark of Malorne
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(141291, { -- Shal'nir Sproutling
+						i(141291, {	-- Shal'nir Sproutling
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121193, { -- Vale Walker's Pendant
+						i(121193, {	-- Vale Walker's Pendant
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121192, { -- Vale Walker's Circle
+						i(121192, {	-- Vale Walker's Circle
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
 						}),
-						i(121177, { -- Vale Walker's Cloak
+						i(121177, {	-- Vale Walker's Cloak
 							["groups"] = {
 							},
 							["bonusID"] = 1812,
@@ -1879,7 +1913,10 @@ _.Zones =
 			["achievementID"] = 10666,
 			["maps"] = {
 				642,	-- Darkpens
-				868,	-- Val'sharah Legion Invasion
+				643,	-- Sleeper's Barrow
+				644,	-- Sleeper's Barrow #2
+				758,	-- Gloaming Reef
+				868,	-- Val'sharah (Legion Invasion)
 			},
 			["description"] = "|cff66ccffVal'sharah is a zone in the northwestern area of the Broken Isles. It was here where Malfurion Stormrage first learned druidism under the tutelage of Cenarius. The zone is currently contested by Xavius and his satyrs attempting to spread the corruption of the Emerald Nightmare. Ages ago, the first druids molded Val'sharah to be a mirror of the Emerald Dream. While merely an echo, it is as close to the Dream as Azeroth can come.|r",				
 		}),	

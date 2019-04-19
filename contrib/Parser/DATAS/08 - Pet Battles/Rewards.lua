@@ -6,6 +6,15 @@ _.PetBattles =
 {
 	i(94207, {	-- Fabled Pandaren Pet Supplies
 		["groups"] = {
+			i(92679),	-- Flawless Aquatic Battle-Stone
+			i(92675),	-- Flawless Beast Battle-Stone
+			i(92676),	-- Flawless Critter Battle-Stone
+			i(92665),	-- Flawless Elemental Battle-Stone
+			i(92677),	-- Flawless Flying Battle-Stone
+			i(92682),	-- Flawless Humanoid Battle-Stone
+			i(92678),	-- Flawless Magic Battle-Stone
+			i(92680),	-- Flawless Mechanical Battle-Stone
+			i(92681),	-- Flawless Undead Battle-Stone
 			i(89139),	-- Chain Pet Leash
 			i(37460),	-- Rope Pet Leash
 			i(44820),	-- Red Ribbon Pet Leash
@@ -29,6 +38,16 @@ _.PetBattles =
 	}),
 	i(89125, {	-- Sack of Pet Supplies
 		["groups"] = {
+			i(89587),	-- Porcupette
+			i(92679),	-- Flawless Aquatic Battle-Stone
+			i(92675),	-- Flawless Beast Battle-Stone
+			i(92676),	-- Flawless Critter Battle-Stone
+			i(92665),	-- Flawless Elemental Battle-Stone
+			i(92677),	-- Flawless Flying Battle-Stone
+			i(92682),	-- Flawless Humanoid Battle-Stone
+			i(92678),	-- Flawless Magic Battle-Stone
+			i(92680),	-- Flawless Mechanical Battle-Stone
+			i(92681),	-- Flawless Undead Battle-Stone
 			i(89139),	-- Chain Pet Leash
 			i(37460),	-- Rope Pet Leash
 			i(44820),	-- Red Ribbon Pet Leash
@@ -64,6 +83,15 @@ _.PetBattles =
 	}),
 	i(98095, {	-- Brawler's Pet Supplies
 		["groups"] = {
+			i(92679),	-- Flawless Aquatic Battle-Stone
+			i(92675),	-- Flawless Beast Battle-Stone
+			i(92676),	-- Flawless Critter Battle-Stone
+			i(92665),	-- Flawless Elemental Battle-Stone
+			i(92677),	-- Flawless Flying Battle-Stone
+			i(92682),	-- Flawless Humanoid Battle-Stone
+			i(92678),	-- Flawless Magic Battle-Stone
+			i(92680),	-- Flawless Mechanical Battle-Stone
+			i(92681),	-- Flawless Undead Battle-Stone
 			i(89139),	-- Chain Pet Leash
 			i(37460),	-- Rope Pet Leash
 			i(44820),	-- Red Ribbon Pet Leash

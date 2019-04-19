@@ -232,6 +232,25 @@ _.Zones =
 						i(111241),	-- Primal Gladiator's Plate Helm
 						i(111242),	-- Primal Gladiator's Plate Legguards
 						i(111243),	-- Primal Gladiator's Plate Shoulders
+						un(2, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
+						un(2, i(111080)),	-- Primal Gladiator's necklace of prowess
+						un(2, i(111128)),	-- Primal Gladiator's pendant of cruelty
+						un(2, i(111129)),	-- Primal Gladiator's pendant of prowess
+						un(2, i(111130)),	-- Primal Gladiator's pendant of meditation
+						un(2, i(111131)),	-- Primal Gladiator's pendant of contemplation
+						un(2, i(111207)),	-- Primal Gladiator's choker of cruelty
+						un(2, i(111208)),	-- Primal Gladiator's choker of prowess
+						un(2, i(111081)),	-- Primal Gladiator's ring of cruelty
+						un(2, i(111082)),	-- Primal Gladiator's Ring of prowess
+						un(2, i(111134)),	-- Primal Gladiator's band of cruelty
+						un(2, i(111135)),	-- Primal Gladiator's band of prowess
+						un(2, i(111136)),	-- Primal Gladiator's band of victory
+						un(2, i(111137)),	-- Primal Gladiator's band of meditation
+						un(2, i(111138)),	-- Primal Gladiator's band of contemplation
+						un(2, i(111219)),	-- Primal Gladiator's signet of cruelty
+						un(2, i(111220)),	-- Primal Gladiator's signet of accuracy
+						un(2, i(111271)),	-- Primal Gladiator's ring of triumph
+						un(2, i(111272)),	-- Primal Gladiator's signet of ruthlessness
 					}),	
 					n(88161, {	-- Challenger Sunforge
 						["groups"] = {
@@ -958,7 +977,9 @@ _.Zones =
 							i(160662), 	-- Recipe: Blackwater Anti-Venom
 							i(160663), 	-- Recipe: Healing Tonic
 							i(160661), 	-- Recipe: Fire Ammonite Oil
-							desc(i(114028), "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)"),	-- Small Pouch of Coins
+							i(114028, {	-- Small Pouch of Coins
+								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+							}),
 						}),
 					}),
 					n(87548, {	-- Kaevan Highwit <Jewelcrafting Designs>
@@ -1083,6 +1104,11 @@ _.Zones =
 								i(126344),	-- Warmongering Gladiator's Belt of Cruelty
 								i(126311),	-- Warmongering Gladiator's Dragonhide Legguards
 								i(126346),	-- Warmongering Gladiator's Boots of Cruelty
+								--[[ slumber got credit for these 3 horde items by opening the alliance ensemble, not what we have listed
+								i(126345),	-- Warmongering Gladiator's Belt of Victory
+								i(126347),	-- Boots of Prowess
+								i(126351),	-- Bindings of Victory
+								--]]
 							},
 							["ignoreBonus"] = true,
 							["itemID"] = 138502,
@@ -1093,6 +1119,7 @@ _.Zones =
 								i(126424),	-- Warmongering Gladiator's Leather Spaulders
 								i(126420),	-- Warmongering Gladiator's Leather Tunic
 								i(126349),	-- Warmongering Gladiator's Bindings of Cruelty
+								-- i(126350)	-- Bindings of Prowess (slumber received when opening alliance version instead of 'bindings of cruelty')
 								i(126421),	-- Warmongering Gladiator's Leather Gloves
 								i(126344),	-- Warmongering Gladiator's Belt of Cruelty
 								i(126423),	-- Warmongering Gladiator's Leather Legguards
@@ -1255,6 +1282,18 @@ _.Zones =
 							i(118488),	-- Schematic: Wormhole Centrifuge
 							i(128327),	-- Small Pouch of Coins
 						}),
+						{	-- Schematic: Blackrock Rifling
+							["itemID"] = 120267,	-- Schematic: Blackrock Rifling
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
+						{	-- Schematic: Oglethorpe's Octagonal Lenses
+							["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
+						{	-- Schematic: Precision Scope Tuning Kit
+							["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
+							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						},
 					}),
 					n(87550, { 	-- Nonn Threeratchet <Blacksmithing Plans>
 						i(115356, {	-- Draenor Blacksmithing
@@ -1293,7 +1332,9 @@ _.Zones =
 							i(116735),	-- Recipe: Truesteel Pauldrons
 							i(118044),	-- Recipe: Truesteel Reshaper
 							i(116742),	-- Recipe: Truesteel Waistguard
-							desc(i(116764), "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)"),	-- Small Pouch of Coins
+							i(116764, {	-- Small Pouch of Coins
+								["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+							}),
 						}),
 						{	-- Plans: Blackrock Crucibles and Their Uses
 							["itemID"] = 108421,	-- Plans: Blackrock Crucibles and Their Uses

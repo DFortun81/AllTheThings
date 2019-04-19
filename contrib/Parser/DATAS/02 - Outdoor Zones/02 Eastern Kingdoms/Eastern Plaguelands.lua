@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S        M O D U L E         --
+--          Z O N E S        M O D U L E        	--
 ---------------------------------------------------
 _.Zones =
 {
@@ -7,32 +7,32 @@ _.Zones =
 		m(23, {		-- Eastern Plaguelands
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(315, { -- Acherus: The Ebon Hold
+					fp(315, {	-- Acherus: The Ebon Hold
 						["coord"] = { 83.8, 50.2 },
-						["classes"] = { 6 }, -- Death Knight
+						["classes"] = { 6 },	-- Death Knight
 					}),
-					fp(87, { -- Crown Guard Tower, Eastern Plaguelands
+					fp(87, {	-- Crown Guard Tower, Eastern Plaguelands
 						["coord"] = { 34.8, 68 },
 					}),
-					fp(86, { -- Eastwall Tower, Eastern Plaguelands
+					fp(86, {	-- Eastwall Tower, Eastern Plaguelands
 						["coord"] = { 61.6, 43.8 },
 					}),
-					fp(67, { -- Light's Hope Chapel, Eastern Plaguelands
+					fp(67, {	-- Light's Hope Chapel, Eastern Plaguelands
 						["coord"] = { 75.8, 53.4 },
 					}),
-					fp(68, { -- Light's Hope Chapel, Eastern Plaguelands
+					fp(68, {	-- Light's Hope Chapel, Eastern Plaguelands
 						["coord"] = { 75.6, 53.2 },
 					}),
-					fp(630, { -- Light's Shield Tower, Eastern Plaguelands
+					fp(630, {	-- Light's Shield Tower, Eastern Plaguelands
 						["coord"] = { 52.8, 53.6 },
 					}),
-					fp(85, { -- Northpass Tower, Eastern Plaguelands
+					fp(85, {	-- Northpass Tower, Eastern Plaguelands
 						["coord"] = { 51.2, 21.2 },
 					}),
-					fp(84, { -- Plaguewood Tower, Eastern Plaguelands
+					fp(84, {	-- Plaguewood Tower, Eastern Plaguelands
 						["coord"] = { 18.4, 27.4 },
 					}),
-					fp(383, { -- Thondroril River, Eastern Plaguelands
+					fp(383, {	-- Thondroril River, Eastern Plaguelands
 						["coord"] = { 10, 65.8 },
 					}),
 				}),
@@ -42,11 +42,13 @@ _.Zones =
 					p(457), 	-- Festering Maggot
 					p(628), 	-- Infected Fawn
 					p(627), 	-- Infected Squirrel
-					qr(qg(66512, q(31911))),	-- Deiza Plaguehorn
+					qg(66512, q(31911, {	-- Deiza Plaguehorn
+						["isDaily"] = true,
+					})),
 				}),
 				n(-17, {	-- Quests
-					ach(4892, { -- Eastern Plaugelands Quests
-						crit(1, { -- The Paladin Pals
+					ach(4892, {	-- Eastern Plaugelands Quests
+						crit(1, {	-- The Paladin Pals
 							q(27684, {	-- Visitors
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 								["isBreadcrumb"] = true,	-- for "Gidwin Goldbraids"
@@ -59,36 +61,36 @@ _.Zones =
 								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
-							q(27369, { -- Greasing the Wheel
+							q(27369, {	-- Greasing the Wheel
 								["groups"] = {
-									i(62938),  -- Giddy's Old Gloves
-									i(62937),  -- Thorondoril River Boots
-									i(62936),  -- Treads of Banshee Bells
-									i(62935),  -- Flower Picker's Gloves
-									i(131668), -- Stem-Laced Boots
+									i(62938), 	-- Giddy's Old Gloves
+									i(62937), 	-- Thorondoril River Boots
+									i(62936), 	-- Treads of Banshee Bells
+									i(62935), 	-- Flower Picker's Gloves
+									i(131668),	-- Stem-Laced Boots
 								},
-								["qg"] = 45428, -- Gidwin Goldbraids
+								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
 							}),
 							q(27370, {	-- Tarenar Sunstrike
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
-							q(27371, {  -- What I Do Best
-								["qg"] = 45429, -- Tarenar Sunstrike
+							q(27371, { 	-- What I Do Best
+								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
-							q(27372, { -- A Gift For Fiona
+							q(27372, {	-- A Gift For Fiona
 								["groups"] = {
-									i(62943),  -- Helm of Thoughtful Gifts
-									i(62942),  -- Gentling Breastplate
-									i(62941),  -- Plaguehound Armbands
-									i(62940),  -- Belt of Appeasement
-									i(62939),  -- Caravan Sash
-									i(131669), -- Plaguehound Bracers
-									i(131670), -- Cinch of Good Will
+									i(62943), 	-- Helm of Thoughtful Gifts
+									i(62942), 	-- Gentling Breastplate
+									i(62941), 	-- Plaguehound Armbands
+									i(62940), 	-- Belt of Appeasement
+									i(62939), 	-- Caravan Sash
+									i(131669),	-- Plaguehound Bracers
+									i(131670),	-- Cinch of Good Will
 								},
-								["qg"] = 45429, -- Tarenar Sunstrike
+								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
 							q(27373, {	-- Onward, to Light's Hope Chapel
@@ -96,7 +98,7 @@ _.Zones =
 								["sourceQuests"] = { 27369, 27372 },	-- "Greasing the Wheel", "A Gift For Fiona"
 							}),
 						}),
-						crit(2, { -- The Redpaths of Darrowshire
+						crit(2, {	-- The Redpaths of Darrowshire
 							q(27383, {	-- Little Pamela
 								["qg"] = 11063,	-- Carlin Redpath
 							}),
@@ -104,11 +106,11 @@ _.Zones =
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
-							q(27392, { -- I'm Not Supposed to Tell You This
+							q(27392, {	-- I'm Not Supposed to Tell You This
 								["groups"] = {
-									i(62950), -- Joseph's Spare Belt
-									i(62949), -- Finder's Keepers
-									i(62948), -- Hide of the Lone Hunter
+									i(62950),	-- Joseph's Spare Belt
+									i(62949),	-- Finder's Keepers
+									i(62948),	-- Hide of the Lone Hunter
 									},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
@@ -121,12 +123,12 @@ _.Zones =
 								["qg"] = 11063,	-- Carlin Redpath
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
-							q(27387, { -- Villians of Darrowshire
+							q(27387, {	-- Villians of Darrowshire
 								["groups"] = {
-									i(62954), -- Seeker's Britches
-									i(62953), -- Vest of Discovery
-									i(62952), -- Chromie's Mirror
-									i(62951), -- Cowl of Revision
+									i(62954),	-- Seeker's Britches
+									i(62953),	-- Vest of Discovery
+									i(62952),	-- Chromie's Mirror
+									i(62951),	-- Cowl of Revision
 								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
@@ -139,28 +141,28 @@ _.Zones =
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
-							q(27390, { -- The Battle of Darrowshire
+							q(27390, {	-- The Battle of Darrowshire
 								["groups"] = {
-									i(62957), -- Homecoming Wrap
-									i(62956), -- Sweet-Tempered Breastplate
-									i(62955), -- Pauldrons of Darrowshire
+									i(62957),	-- Homecoming Wrap
+									i(62956),	-- Sweet-Tempered Breastplate
+									i(62955),	-- Pauldrons of Darrowshire
 								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27387,27388,27389 },	-- "Villains of Darrowshire", "Heroes of Darrowshire", "Marauders of Darrowshire"
 							}),
-							q(27391, { -- Hidden Treasures
+							q(27391, {	-- Hidden Treasures
 								["groups"] = {
-									i(62961),   -- Redpath Bracers
-									i(62960),   -- Brightening Wand
-									i(62959),   -- Hidden Treasure
-									i(62958),   -- Militia Hatchet
+									i(62961),  	-- Redpath Bracers
+									i(62960),  	-- Brightening Wand
+									i(62959),  	-- Hidden Treasure
+									i(62958),  	-- Militia Hatchet
 									i(157007),	-- Militia Dagger
 								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27390 },	-- "The Battle of Darrowshire"
 							}),
 						}),
-						crit(3, { -- Tyr's Hand
+						crit(3, {	-- Tyr's Hand
 							q(27459, {	-- The Brotherhood of Light
 								["qg"] = 11036,	-- Leonid Barthalomew the Revered
 							}),
@@ -205,7 +207,7 @@ _.Zones =
 								["qg"] = 16112,
 								["sourceQuests"] = {27462},
 							}),
-							q(27619, { -- The Commander
+							q(27619, {	-- The Commander
 								["groups"] = {
 									i(62971),
 									i(62970),
@@ -218,7 +220,7 @@ _.Zones =
 								["qg"] = 16112,
 								["sourceQuests"] = {27614,27615,27616,27619},
 							}),
-							q(27620, { -- Like Rats
+							q(27620, {	-- Like Rats
 								["groups"] = {
 									i(62998),
 									i(62997),
@@ -228,54 +230,54 @@ _.Zones =
 								["sourceQuests"] = {27618,27619},
 							}),
 						}),
-						crit(4, { -- Serving the Argent Crusade
+						crit(4, {	-- Serving the Argent Crusade
 							q(27463, {	-- A Boyhood Dream
 								["qg"] = 45431,	-- Gidwin Goldbraids
-								["sourceQuests"] = {27455}, -- "Boys Will Be Boys"
+								["sourceQuests"] = {27455},	-- "Boys Will Be Boys"
 							}),
 							q(27464, {	-- Argent Call: The Trial of the Crypt
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
-								["sourceQuests"] = {27463}, -- "A Boyhood Dream"
+								["sourceQuests"] = {27463},	-- "A Boyhood Dream"
 							}),
 							q(27465, {	-- Argent Call: The Noxious Glade
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
-								["sourceQuests"] = {27464}, -- "Argent Call: The Trial of the Crypt"
+								["sourceQuests"] = {27464},	-- "Argent Call: The Trial of the Crypt"
 							}),
 							q(27466, {	-- Argent Call: Northdale
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27465}, -- "Argent Call: The Noxious Glade"
+								["sourceQuests"] = {27465},	-- "Argent Call: The Noxious Glade"
 							}),
-							q(27487, { -- Ix'lar the Underlord
+							q(27487, {	-- Ix'lar the Underlord
 								["groups"] = {
-									i(62995), -- Underlord's Mandible
-									i(62994), -- Rash Gloves
-									i(62993), -- Belt of Delay
-									i(62992), -- Pendant of the Ill-Advised
+									i(62995),	-- Underlord's Mandible
+									i(62994),	-- Rash Gloves
+									i(62993),	-- Belt of Delay
+									i(62992),	-- Pendant of the Ill-Advised
 								},
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27466}, -- "Argent Call: Northdale"
+								["sourceQuests"] = {27466},	-- "Argent Call: Northdale"
 							}),
 							q(27488, {	-- Impatience
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27487}, -- "Ix'lar the Underlord"
+								["sourceQuests"] = {27487},	-- "Ix'lar the Underlord"
 							}),
 							q(27489, {	-- Nobody to Blame but Myself
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27488}, -- "Impatience"
+								["sourceQuests"] = {27488},	-- "Impatience"
 							}),
 						}),
-						crit(5, { -- Journey's End
+						crit(5, {	-- Journey's End
 							q(27522, {	-- Beat it Out of Them
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27489}, -- "Nobody to Blame but Myself"
+								["sourceQuests"] = {27489},	-- "Nobody to Blame but Myself"
 							}),
 							q(27524, {	-- Blind Fury
 								["qg"] = 45417,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27522}, -- "Beat it Out of Them"
+								["sourceQuests"] = {27522},	-- "Beat it Out of Them"
 							}),
 							q(27525, {	-- Guardians of Stratholme
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27524}, -- "Blind Fury"
+								["sourceQuests"] = {27524},	-- "Blind Fury"
 							}),
 							{
 								["qgs"] = {
@@ -288,9 +290,9 @@ _.Zones =
 							},
  							q(27526, {	-- Gidwin's Fate Revealed
 								["qg"] = 45729,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27551}, -- "The Baroness' Missive"
+								["sourceQuests"] = {27551},	-- "The Baroness' Missive"
 							}),
-							q(27527, { -- Journey's End
+							q(27527, {	-- Journey's End
 								["groups"] = {
 									i(63022),
 									i(63021),
@@ -299,17 +301,17 @@ _.Zones =
 									i(63018),
 								},
 								["qg"] = 45730,	-- Tarenar Sunstrike
-								["sourceQuests"] = {27526}, -- "Gidwin's Fate Revealed"
+								["sourceQuests"] = {27526},	-- "Gidwin's Fate Revealed"
 							}),
 						}),
 					}),
-					ach(5442, { -- Full Caravan
-						crit(1, { -- Fiona
+					ach(5442, {	-- Full Caravan
+						crit(1, {	-- Fiona
 							q(27684, {	-- Visitors
 								["qg"] = 11034,	-- Lord Maxwell Tyrosus
 							}),
 						}),
-						crit(2, { -- Gidwin Goldbraids
+						crit(2, {	-- Gidwin Goldbraids
 							q(27367, {	-- Gidwin Goldbraids
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
@@ -318,52 +320,52 @@ _.Zones =
 								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
-							q(27369, { -- Greasing the Wheel
+							q(27369, {	-- Greasing the Wheel
 								["groups"] = {
-									i(62938),  -- Giddy's Old Gloves
-									i(62937),  -- Thorondoril River Boots
-									i(62936),  -- Treads of Banshee Bells
-									i(62935),  -- Flower Picker's Gloves
-									i(131668), -- Stem-Laced Boots
+									i(62938), 	-- Giddy's Old Gloves
+									i(62937), 	-- Thorondoril River Boots
+									i(62936), 	-- Treads of Banshee Bells
+									i(62935), 	-- Flower Picker's Gloves
+									i(131668),	-- Stem-Laced Boots
 								},
-								["qg"] = 45428, -- Gidwin Goldbraids
+								["qg"] = 45428,	-- Gidwin Goldbraids
 								["sourceQuests"] = { 27368 },	-- Just Encased
 							}),
 						}),
-						crit(3, { -- Tarenar Sunstrike
+						crit(3, {	-- Tarenar Sunstrike
 							q(27370, {	-- Tarenar Sunstrike
 								["qg"] = 45417,	-- Fiona
 								["sourceQuests"] = { 27683,27684,28578,28577 },	-- "Into the Woods", "Visitors", "Hero's Call: Eastern Plaguelands!", "Warchief's Command: Eastern Plaguelands!"
 							}),
-							q(27371, {  -- What I Do Best
-								["qg"] = 45429, -- Tarenar Sunstrike
+							q(27371, { 	-- What I Do Best
+								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
-							q(27372, { -- A Gift For Fiona
+							q(27372, {	-- A Gift For Fiona
 								["groups"] = {
-									i(62943),  -- Helm of Thoughtful Gifts
-									i(62942),  -- Gentling Breastplate
-									i(62941),  -- Plaguehound Armbands
-									i(62940),  -- Belt of Appeasement
-									i(62939),  -- Caravan Sash
-									i(131669), -- Plaguehound Bracers
-									i(131670), -- Cinch of Good Will
+									i(62943), 	-- Helm of Thoughtful Gifts
+									i(62942), 	-- Gentling Breastplate
+									i(62941), 	-- Plaguehound Armbands
+									i(62940), 	-- Belt of Appeasement
+									i(62939), 	-- Caravan Sash
+									i(131669),	-- Plaguehound Bracers
+									i(131670),	-- Cinch of Good Will
 								},
-								["qg"] = 45429, -- Tarenar Sunstrike
+								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
 						}),
-						crit(4, { -- Argus Highbeacon
+						crit(4, {	-- Argus Highbeacon
 							q(27381, {	-- Traveling Companions
 								["qg"] = 45429,	-- Tarenar Sunstrike
 								["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 							}),
-							q(27382, { -- Rough Roads
+							q(27382, {	-- Rough Roads
 								["groups"] = {
-									i(62947), -- Treads of Youth
-									i(62946), -- Crown Guard Armbands
-									i(62945), -- Plaguebat Vest
-									i(62944), -- Slippers of the Lonely Road
+									i(62947),	-- Treads of Youth
+									i(62946),	-- Crown Guard Armbands
+									i(62945),	-- Plaguebat Vest
+									i(62944),	-- Slippers of the Lonely Road
 								},
 								["qg"] = 45451,	-- Argus Highbeacon
 							}),
@@ -372,7 +374,7 @@ _.Zones =
 								["sourceQuests"] = { 27381,27382 },	-- "Traveling Companion", "Rough Roads"
 							}),
 						}),
-						crit(5, { -- Pamela Redpath
+						crit(5, {	-- Pamela Redpath
 							q(27383, {	-- Little Pamela
 								["qg"] = 11063,	-- Carlin Redpath
 							}),
@@ -380,11 +382,11 @@ _.Zones =
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
-							q(27392, { -- I'm Not Supposed to Tell You This
+							q(27392, {	-- I'm Not Supposed to Tell You This
 								["groups"] = {
-									i(62950), -- Joseph's Spare Belt
-									i(62949), -- Finder's Keepers
-									i(62948), -- Hide of the Lone Hunter
+									i(62950),	-- Joseph's Spare Belt
+									i(62949),	-- Finder's Keepers
+									i(62948),	-- Hide of the Lone Hunter
 								},
 								["qg"] = 10926,	-- Pamela Redpath
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
@@ -397,12 +399,12 @@ _.Zones =
 								["qg"] = 11063,	-- Carlin Redpath
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
-							q(27387, { -- Villians of Darrowshire
+							q(27387, {	-- Villians of Darrowshire
 								["groups"] = {
-									i(62954), -- Seeker's Britches
-									i(62953), -- Vest of Discovery
-									i(62952), -- Chromie's Mirror
-									i(62951), -- Cowl of Revision
+									i(62954),	-- Seeker's Britches
+									i(62953),	-- Vest of Discovery
+									i(62952),	-- Chromie's Mirror
+									i(62951),	-- Cowl of Revision
 								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
@@ -415,27 +417,27 @@ _.Zones =
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
-							q(27390, { -- The Battle of Darrowshire
+							q(27390, {	-- The Battle of Darrowshire
 								["groups"] = {
-									i(62957), -- Homecoming Wrap
-									i(62956), -- Sweet-Tempered Breastplate
-									i(62955), -- Pauldrons of Darrowshire
+									i(62957),	-- Homecoming Wrap
+									i(62956),	-- Sweet-Tempered Breastplate
+									i(62955),	-- Pauldrons of Darrowshire
 								},
 								["qg"] = 10667,	-- Chromie
 								["sourceQuests"] = { 27387,27388,27389 },	-- "Villains of Darrowshire", "Heroes of Darrowshire", "Marauders of Darrowshire"
 							}),
 						}),
-						crit(6, { -- Vex'thul
+						crit(6, {	-- Vex'thul
 							q(27432, {	-- Zaeldarr the Outcast
 								["qg"] = 45500,	-- Urk Gagbaz
 							}),
 							q(27449, {	-- Honor and Strength
 								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27432}, -- Zaeldarr the Outcast
+								["sourceQuests"] = {27432},	-- Zaeldarr the Outcast
 							}),
 						}),
-						crit(7, { -- Rimblat Earthshatter
-							q(27456, { -- Gathering Some Grub(s)
+						crit(7, {	-- Rimblat Earthshatter
+							q(27456, {	-- Gathering Some Grub(s)
 								["groups"] = {
 									i(62981),
 									i(62980),
@@ -446,67 +448,69 @@ _.Zones =
 							}),
 							q(27457, {	-- An Opportune Alliance
 								["qg"] = 16134,	-- Rimblat Earthshatter
-								["sourceQuests"] = {27456,27465}, -- "Gathering Some Grub(s)", "Argent Call: The Noxious Glade"
+								["sourceQuests"] = {27456,27465},	-- "Gathering Some Grub(s)", "Argent Call: The Noxious Glade"
 							}),
 						}),
-						crit(8, { -- Beezil Linkspanner
+						crit(8, {	-- Beezil Linkspanner
 						}),
 					}),
-					n(-168, { -- Other Quests
-						sz(771, 4, { -- Crown Guard Tower
+					n(-168, {	-- Other Quests
+						sz(771, 4, {	-- Crown Guard Tower
 							q(27544, {	-- Cenarion Tenacity
 								["qg"] = 45500,	-- Urk Gagbaz
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
-								["isBreadcrumb"] = true, -- for "Postponing the Inevitable"
+								["isBreadcrumb"] = true,	-- for "Postponing the Inevitable"
 							}),
 						}),
-						sz(771, 5, { -- The Fungal Vale
+						sz(771, 5, {	-- The Fungal Vale
 							q(27420, {	-- Postponing the Inevitable
 								["qg"] = 16135,	-- Rayne
-								["sourceQuests"] = {27544}, -- for "Cenarion Tenacity"
+								["sourceQuests"] = {27544},	-- for "Cenarion Tenacity"
 							}),
-							q(27421, { -- Amidst Death, Life
+							q(27421, {	-- Amidst Death, Life
 								["groups"] = {
-									i(62965), -- Ring of New Life
-									i(62964), -- Pauldrons of Blooming Hope
-									i(62963), -- Rayne's Scarf
-									i(62962), -- Fungal Vale Cloak
+									i(62965),	-- Ring of New Life
+									i(62964),	-- Pauldrons of Blooming Hope
+									i(62963),	-- Rayne's Scarf
+									i(62962),	-- Fungal Vale Cloak
 								},
 								["qg"] = 16135,	-- Rayne
 							}),
 						}),
-						sz(771, 11, { -- Light's Hope Chapel
+						sz(771, 11, {	-- Light's Hope Chapel
 							q(27458, {	-- Smokey and the Bandage
 								["qg"] = 11033,	-- Smokey LaRue
 							}),
-							q(27467, { -- Buried Blades
+							q(27467, {	-- Buried Blades
 								["groups"] = {
-									i(62984), -- Omarion's Gift
-									i(62983), -- Cowl of the Noxious Glade		
-									i(62982), -- Light-Touched Pendant
+									i(62984),	-- Omarion's Gift
+									i(62983),	-- Cowl of the Noxious Glade		
+									i(62982),	-- Light-Touched Pendant
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
 							}),
- 							qr(q(28756, {	-- Aberrations of Bone
-								["qg"] = 49856,	-- 
+ 							q(28756, {	-- Aberrations of Bone
+								["qg"] = 49856,	-- Lord Raymond George
+								["repeatable"] = true,
 								["sourceQuests"] = {27464},
-							})),
-							qr(q(28755, {	-- Annals of the Silver Hand
-								["qg"] = 49856,	-- 
+							}),
+							q(28755, {	-- Annals of the Silver Hand
+								["qg"] = 49856,	-- Lord Raymond George
+								["repeatable"] = true,
 								["sourceQuests"] = {27464},
-							})),
+							}),
 							q( 27762, {	-- Fuselight, Ho!
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 								["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
 							}),
 						}),
-						sz(771, 12, { -- The Infectis Scar
-							q(27450, { -- Frederick's Fish Fancy
+						sz(771, 12, {	-- The Infectis Scar
+							q(27450, {	-- Frederick's Fish Fancy
 								["groups"] = {
-									i(62974), -- Infectis Scuttler Helm
-									i(62973), -- Infectis Puffer Gloves
-									i(62972), -- Infectis Incher Leggings
+									i(62974),	-- Infectis Scuttler Helm
+									i(62973),	-- Infectis Puffer Gloves
+									i(62972),	-- Infectis Incher Leggings
 									},
 								["qg"] = 45575,	-- Frederick Calston
 							}),
@@ -518,56 +522,56 @@ _.Zones =
 							}),
 							q(27453, {	-- Catalysm
 								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27451,27452} -- "To Kill With Purpose", "Dark Garb"
+								["sourceQuests"] = {27451,27452}	-- "To Kill With Purpose", "Dark Garb"
 							}),
-							q(27454, { -- Just a Drop in the Bucket
+							q(27454, {	-- Just a Drop in the Bucket
 								["groups"] = {
-									i(62977),  -- Light's Shield
-									i(62976),  -- Breastplate of the Droplet
-									i(62975),  -- Plaguefix Launcher
-									i(156978), -- Cauldron Cracker
-									i(156979), -- Cauldron Dredger
+									i(62977), 	-- Light's Shield
+									i(62976), 	-- Breastplate of the Droplet
+									i(62975), 	-- Plaguefix Launcher
+									i(156978),	-- Cauldron Cracker
+									i(156979),	-- Cauldron Dredger
 								},
 								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27453} -- "Catalysm"
+								["sourceQuests"] = {27453}	-- "Catalysm"
 							}),
 							q(27455, {	-- Boys Will Be Boys
 								["qg"] = 45417,	-- Fiona
-								["sourceQuests"] = {27448} -- "The Trek Continues"
+								["sourceQuests"] = {27448}	-- "The Trek Continues"
 							}),
 						}),
-						sz(771, 14, { -- Eastwall Tower
+						sz(771, 14, {	-- Eastwall Tower
 							q(27481, {	-- Out of the Ziggurat
 								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27449,27465} -- "Honor and Strength", "Argent Call: The Noxious Glade"
+								["sourceQuests"] = {27449,27465}	-- "Honor and Strength", "Argent Call: The Noxious Glade"
 							}),
-							q(27482, { -- Into the Flames
+							q(27482, {	-- Into the Flames
 								["groups"] = {
-									i(62991), -- Strength's Supremacy
+									i(62991),	-- Strength's Supremacy
 								},
 								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27481} -- "Out of the Ziggurat"
+								["sourceQuests"] = {27481}	-- "Out of the Ziggurat"
 							}),
 							q(27479, {	-- Righteous Indignation
 								["qg"] = 45736,	-- Deacon Andaal
 							}),
-							q(27477, { -- The Corpulent One
+							q(27477, {	-- The Corpulent One
 								["groups"] = {
-									i(62987), -- Eastwall Gauntlets
-									i(62986), -- Borelgore's Skin
-									i(62985), -- Corpulent Shoulderpads
+									i(62987),	-- Eastwall Gauntlets
+									i(62986),	-- Borelgore's Skin
+									i(62985),	-- Corpulent Shoulderpads
 								},
 								["qg"] = 45735,	-- Gamella Cracklefizz
 							}),
 						}),
-						sz(771, 18, { -- Northpass Tower
+						sz(771, 18, {	-- Northpass Tower
  							q(27422, {	-- A City Under Siege
 								["qg"] = 45482,	-- Argent Officer Irizarry
 							}),
  							q(27521, {	-- Wretched Hive of Scum and Villainy
 								["qg"] = 45826,	-- Kirkian Dawnshield
 							}),
-							q(27523, { -- Duskwing, Oh How I Hate Thee...
+							q(27523, {	-- Duskwing, Oh How I Hate Thee...
 								["groups"] = {
 									i(63001),
 									i(63000),
@@ -578,17 +582,17 @@ _.Zones =
 							}),
 							q(27532, {	-- The Plaguewood Tower
 								["qg"] = 45451,	-- Argus Highbeacon
-								["sourceQuests"] = {27522} , -- "Beat it Out of Them"
+								["sourceQuests"] = {27522} ,	-- "Beat it Out of Them"
 							}),
 						}),
-						sz(771, 21, { -- The Plaguewood
+						sz(771, 21, {	-- The Plaguewood
 							q(27528, {	-- Scourged Mass
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
 							q(27529, {	-- Defenders of Darrowshire
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
-							q(27539, { -- Add'em to the Pile
+							q(27539, {	-- Add'em to the Pile
 								["groups"] = {
 									i(63014),
 									i(63013),
@@ -597,7 +601,7 @@ _.Zones =
 								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
 							}),
-							q(27530, { -- The Corpsebeasts
+							q(27530, {	-- The Corpsebeasts
 								["groups"] = {
 									i(63017),
 									i(63016),
@@ -610,7 +614,7 @@ _.Zones =
 								["qg"] = 45828,	-- Argent Apotehcary Judkins
 								["isBreadcrumb"] = true,
 							}),
-							q(27531, { -- Counter-Plague Research
+							q(27531, {	-- Counter-Plague Research
 								["groups"] = {
 									i(63010),
 									i(63009),
@@ -623,7 +627,7 @@ _.Zones =
 							q(27534, {	-- Augustus' Receipt Book
 								["qg"] = 12384,	-- Augustus the Touched
 							}),
-							q(27533, { -- A Fate Worse Than Butchery
+							q(27533, {	-- A Fate Worse Than Butchery
 								["groups"] = {
 									i(63006),
 									i(63005),
@@ -676,7 +680,7 @@ _.Zones =
 					--[[
 					Class Hall Quests
 					qg(111616, q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
-						["classes"] = {5}, -- Priest
+						["classes"] = {5},	-- Priest
 					})),
 					qg(110969, q(43491)),	-- Allies of the Light (in scenario?)
 					qg(90251, q(43492)),	-- Champion: Aponi Brightmane
@@ -694,7 +698,7 @@ _.Zones =
 --[[
 					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(31084, q(13166, {	-- The Battle For The Ebon Hold
-						["classes"] = {6}, -- Death Knight
+						["classes"] = {6},	-- Death Knight
 					})),
 					qg(31084, qa(13188)),	-- Where Kings Walk
 --]]
@@ -884,8 +888,48 @@ _.Zones =
 						dr(01.0, i(9960)),	-- Warmonger's Gauntlets
 					}),
 					n(50813, { 	-- Fene-mal
-						dr(82.0, i(9878)),	-- Sorcerer Hat
-						dr(01.0, i(9897)),	-- Jazeraint Chestguard
+						i(9927),	-- Brigade Bracers
+						i(9932),	-- Brigade Circlet
+						i(9931),	-- Brigade Girdle
+						i(7533),	-- Cabalist Cloak
+						i(7490),	-- Captain's Boots
+						i(7493),	-- Captain's Bracers
+						i(7487),	-- Captain's Leggings
+						i(7494),	-- Captain's Waistguard
+						i(8141),	-- Chromite Greaves
+						i(9973),	-- Embossed Plate Boots
+						i(9289),	-- Field Plate Boots
+						i(9287),	-- Field Plate Gauntlets
+						i(9288),	-- Field Plate Girdle
+						i(9285),	-- Field Plate Vambraces
+						i(9887),	-- Huntsman's Armor
+						i(9885),	-- Huntsman's Boots
+						i(9893),	-- Huntsman's Leggings
+						i(9894),	-- Huntsman's Shoulders
+						i(9901),	-- Jazeraint Belt
+						i(9895),	-- Jazeraint Boots
+						i(9897),	-- Jazeraint Chestguard
+						i(9900),	-- Jazeraint Gauntlets
+						i(9902),	-- Jazeraint Helm
+						i(9904),	-- Jazeraint Pauldrons
+						i(7483),	-- Ranger Cloak
+						i(7485),	-- Ranger Cord
+						i(7480),	-- Ranger Gloves
+						i(7484),	-- Ranger Wristguards
+						i(7472),	-- Regal Boots
+						i(7475),	-- Regal Cuffs
+						i(7471),	-- Regal Gloves
+						i(7470),	-- Regal Wizard Hat
+						i(9908),	-- Royal Cape
+						i(9910),	-- Royal Gloves
+						i(9906),	-- Royal Sash
+						i(7439),	-- Sentinel Breastplate
+						i(9874),	-- Sorcerer Drape
+						i(9878),	-- Sorcerer Hat
+						i(9917),	-- Tracker's Boots
+						i(9919),	-- Tracker's Cloak
+						i(7429),	-- Twilight Armor
+						i(7430),	-- Twilight Robe
 					}),
 					n(1843, { 	-- Foreman Jerris
 						dr(43.0, i(7544)),	-- Champion's Cape
@@ -929,7 +973,7 @@ _.Zones =
 						dr(01.1, i(9926)),	-- Brigade Boots
 						dr(01.1, i(9884)),	-- Sorcerer Robe
 						dr(01.0, i(9927)),	-- Brigade Bracers
-						i(12836), -- Plans: Frostguard
+						i(12836),	-- Plans: Frostguard
 					}),
 					n(10825, { 	-- Gish the Unmoving
 						dr(05.0, i(9289)),	-- Field Plate Boots
@@ -1224,18 +1268,51 @@ _.Zones =
 						dr(01.0, i(9959)),	-- Warmonger's Cloak
 					}),
 					n(50947, { 	-- Varah
-						dr(78.0, i(9925)),	-- Tracker's Wristguards
-						dr(01.9, i(9883)),	-- Sorcerer Pants
-						dr(01.2, i(9887)),	-- Huntsman's Armor
+						i(9927),	-- Brigade Bracers
+						i(9932),	-- Brigade Circlet
+						i(9930),	-- Brigade Gauntlets
+						i(9931),	-- Brigade Girdle
+						i(7534),	-- Cabalist Bracers
+						i(7533),	-- Cabalist Cloak
+						i(7530),	-- Cabalist Gloves
+						i(7490),	-- Captain's Boots
+						i(7487),	-- Captain's Leggings
+						i(9966),	-- Embossed Plate Armor
+						i(9973),	-- Embossed Plate Boots
+						i(9972),	-- Embossed Plate Bracers
+						i(9967),	-- Embossed Plate Gauntlets
+						i(9968),	-- Embossed Plate Girdle
+						i(9969),	-- Embossed Plate Helmet
+						i(9970),	-- Embossed Plate Leggings
+						i(9971),	-- Embossed Plate Pauldrons
+						i(9286),	-- Field Plate Armor
+						i(9290),	-- Field Plate Helmet
+						i(9291),	-- Field Plate Leggings
+						i(9292),	-- Field Plate Pauldrons
+						i(7522),	-- Gossamer Boots
+						i(10094),	-- Gothic Plate Vambraces
+						i(8120),	-- Heraldic Cloak
+						i(9887),	-- Huntsman's Armor
+						i(9893),	-- Huntsman's Leggings
+						i(9903),	-- Jazeraint Leggings
+						i(4046),	-- Mistscape Pants
+						i(7481),	-- Ranger Boots
+						i(7478),	-- Ranger Leggings
+						i(7482),	-- Ranger Shoulders
+						i(7332),	-- Regal Armor
+						i(7471),	-- Regal Gloves
+						i(7470),	-- Regal Wizard Hat
+						i(9907),	-- Royal Boots
+						i(9908),	-- Royal Cape
+						i(9910),	-- Royal Gloves
+						i(9911),	-- Royal Trousers
+						i(9874),	-- Sorcerer Drape
+						i(9883),	-- Sorcerer Pants
+						i(9884),	-- Sorcerer Robe
+						i(9916),	-- Tracker's Belt
+						i(9919),	-- Tracker's Cloak
+						i(9925),	-- Tracker's Wristguards
 						i(10606),	-- Schematic: Parachute Cloak
-					}),
-					n(0, { 		-- Zone Drop
-						["groups"] = {
-							i(61387, { 	-- Hidden Stash
-								dr(35, i(66076)),	-- Mr. Grubbs Pet
-							}),
-						},
-						["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 					}),
 					n(10823, { 	-- Zul'Brin Warpbranch
 						dr(36.0, i(10089)),	-- Gothic Sabatons
@@ -1261,6 +1338,14 @@ _.Zones =
 						dr(01.0, i(9292)),	-- Field Plate Pauldrons
 						dr(01.0, i(9916)),	-- Tracker's Belt
 					}),
+				}),
+				n(0, { 		-- Zone Drop
+					["groups"] = {
+						i(61387, { 	-- Hidden Stash
+							dr(35, i(66076)),	-- Mr. Grubbs Pet
+						}),
+					},
+					["description"] = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 				}),
 				n (-2, {	-- Vendors
 					n(12384, {	-- Agustus the Touched
@@ -1289,6 +1374,7 @@ _.Zones =
 							{	-- Design: Ring of Bitter Shadows
 								["itemID"] = 21954,	-- Design: Ring of Bitter Shadows
 							},
+							un(7, i(15756)),	-- Pattern: Runic Leather Headband (now learned from trainer)
 						},
 					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
@@ -1316,30 +1402,33 @@ _.Zones =
 					}),
 					n(28512, {	-- Quartermaster Ozorg
 						["groups"] = {
-							i(34652), -- Archerus Knight's Hood
-							i(34655), -- Archerus Knight's Pauldrons
-							i(34659), -- Archerus Knight's Shroud
-							i(34650), -- Archerus Knight's Tunic
-							i(34653), -- Archerus Knight's Wristguard
-							i(34649), -- Archerus Knight's Gauntlets
-							i(34651), -- Archerus Knight's Girdle
-							i(34656), -- Archerus Knight's Legplates
-							i(34648), -- Archerus Knight's Greaves
-							i(38633), -- Greataxe of the Ebon Blade
-							i(38632), -- Greatsword of the Ebon Blade
-							i(34661), -- Massacre Sword
-							i(38707), -- Runed Spellblade
-							i(38661), -- Greathelm of the Scourge Champion
-							i(38663), -- Blood-Soaked Saronite Plated Spaulders
-							i(39322), -- Shroud of the North Wind
-							i(39320), -- Sky Darkener's Shroud of Blood
-							i(38664), -- Sky Darkener's Shroud of the Unholy
-							i(38665), -- Saronite War Plate
-							i(38666), -- Plated Saronite Bracers
-							i(38667), -- Bloodbane's Gauntlets of Command
-							i(38668), -- The Plaguebringer's Girdle
-							i(38669), -- Engraved Saronite Legplates
-							i(38670), -- Greaves of the Slaughter
+							i(34652),	-- Archerus Knight's Hood
+							i(34655),	-- Archerus Knight's Pauldrons
+							i(34659),	-- Archerus Knight's Shroud
+							i(34650),	-- Archerus Knight's Tunic
+							i(34653),	-- Archerus Knight's Wristguard
+							i(34649),	-- Archerus Knight's Gauntlets
+							i(34651),	-- Archerus Knight's Girdle
+							i(34656),	-- Archerus Knight's Legplates
+							i(34648),	-- Archerus Knight's Greaves
+							i(34657),	-- Choker of Damnation
+							i(34658),	-- Plague Band
+							i(38147),	-- Corrupted Band
+							i(38633),	-- Greataxe of the Ebon Blade
+							i(38632),	-- Greatsword of the Ebon Blade
+							i(34661),	-- Massacre Sword
+							i(38707),	-- Runed Spellblade
+							i(38661),	-- Greathelm of the Scourge Champion
+							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
+							i(39322),	-- Shroud of the North Wind
+							i(39320),	-- Sky Darkener's Shroud of Blood
+							i(38664),	-- Sky Darkener's Shroud of the Unholy
+							i(38665),	-- Saronite War Plate
+							i(38666),	-- Plated Saronite Bracers
+							i(38667),	-- Bloodbane's Gauntlets of Command
+							i(38668),	-- The Plaguebringer's Girdle
+							i(38669),	-- Engraved Saronite Legplates
+							i(38670),	-- Greaves of the Slaughter
 						},
 						["coord"] = { 81.9, 48.4 },
 						["classes"] = { 6 },	-- Death Knight
@@ -1352,7 +1441,7 @@ _.Zones =
 								["crs"] = {
 									9452,	-- Scarlet Enchanter
 								},
-								["u"] = 7, -- now learned from trainer, formula was removed from game
+								["u"] = 7,	-- now learned from trainer, formula was removed from game
 							}),
 							i(16222, {	-- Formula: Enchant Shield - Superior Versatility (formerly Superior Spirit)
 								["crs"] = {
@@ -1382,68 +1471,98 @@ _.Zones =
 								},
 								["u"] = 2,
 							}),
+							i(16056, {	-- Schematic: Flawless Arcanite Rifle
+								["u"] = 7,
+								["crs"] = {
+									8561,	-- Mossflayer Shadowhunter
+								},
+							}),
 						}),
 						n(-17, {	-- Quests (Legacy)
-							un(40, qr(q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
-								un(2, i(22657)),	-- Amulet of the Dawn
-								un(2, i(22667)),	-- Bracers of Hope
-								un(2, i(22668)),	-- Bracers of Subterfuge
-								un(2, i(22659)),	-- Medallion of the Dawn
-								un(2, i(22678)),	-- Talisman of Ascendance
-								un(2, i(22656)),	-- The Purifier
-							}))),
-							un(40, qr(q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
-							un(40, qr(q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-								un(2, i(22681)),	-- Band of Piety
-								un(2, i(22680)),	-- Band of Resolution
-								un(2, i(22688)),	-- Verimonde's Last Resort
-								un(2, i(22690)),	-- Leggings of the Plague Hunter
-								un(2, i(22689)),	-- Sanctified Leather Helm
-							}))),
+							un(40, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22657)),	-- Amulet of the Dawn
+									un(2, i(22667)),	-- Bracers of Hope
+									un(2, i(22668)),	-- Bracers of Subterfuge
+									un(2, i(22659)),	-- Medallion of the Dawn
+									un(2, i(22678)),	-- Talisman of Ascendance
+									un(2, i(22656)),	-- The Purifier
+								},
+							})),
+							un(40, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
+							un(40, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+								["repeatable"] = true,
+								["groups"] = {
+									un(2, i(22681)),	-- Band of Piety
+									un(2, i(22680)),	-- Band of Resolution
+									un(2, i(22688)),	-- Verimonde's Last Resort
+									un(2, i(22690)),	-- Leggings of the Plague Hunter
+									un(2, i(22689)),	-- Sanctified Leather Helm
+								},
+							})),
 							un(40, q(4971, {	-- A Matter of Time
 								un(2, i(15813)),	-- Gold Link Belt
 								un(2, i(15812)),	-- Orchid Amice
@@ -1466,7 +1585,7 @@ _.Zones =
 							})),
 							un(40, {		-- Houses of the Holy
 								["questID"] = 5243,	-- Houses of the Holy
-								["qg"]	= 11036, -- Leonid Barthalomew the Revered
+								["qg"]	= 11036,	-- Leonid Barthalomew the Revered
 								["groups"] = {
 									un(2, i(13217)),	-- Band of the Penitent
 									un(2, i(13216)),	-- Crown of the Penitent

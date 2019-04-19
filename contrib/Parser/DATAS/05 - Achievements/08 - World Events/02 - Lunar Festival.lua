@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = bubbleDown({["u"] = 17}, {
-			n(-10015, { -- Lunar Festival
+			n(-10015, {	-- Lunar Festival
 				["groups"] = {
 					ach(609, {	-- 50 Coins of Ancestry
 						ach(608),	-- 25 Coins of Ancestry

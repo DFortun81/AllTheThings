@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-9981, { -- Draenor
+			n(-9981, {	-- Draenor
 				["groups"] = {
 					ach(9469, {		-- Arakkoa Outcasts
 						faction(1515), 	-- Arakkoa Outcasts

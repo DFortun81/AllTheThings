@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = bubbleDown({["u"] = 18}, {
-			n(-10016, { -- Love is in the Air
+			n(-10016, {	-- Love is in the Air
 				["groups"] = {
 					ach(1701, {		-- Be Mine!
 						crit(1),		-- Be Mine!

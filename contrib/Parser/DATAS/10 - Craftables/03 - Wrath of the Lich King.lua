@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(3, { -- Wrath of the Lich King
+	tier(3, {	-- Wrath of the Lich King
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinkets
 				i(44323),	-- Indestructible Alchemist Stone
@@ -255,7 +255,7 @@ _.Craftables =
 					["itemID"] = 47571,	-- Saronite Swordbreakers
 				},
 				{	-- Savage Saronite Bracers
-					["itemID"] = 41354, -- Savage Saronite Bracers
+					["itemID"] = 41354,	-- Savage Saronite Bracers
 				},
 				{	-- Spiked Cobalt Bracers
 					["itemID"] = 40954,	-- Spiked Cobalt Bracers
@@ -405,25 +405,47 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(41168),	-- Armor Plated Combat Shotgun
-			i(39688),	-- Mark "S" Boomstick
-			i(44504),	-- Nesingwary 4000
-			i(42549),	-- Armored Titanium Goggles
-			i(42552),	-- Charged Titanium Specs
-			i(42555),	-- Electroflux Sight Enhancers
-			i(42554),	-- Greensight Gogs
-			i(41112),	-- Mechanized Snow Goggles
-			i(44740),	-- Mechanized Snow Goggles
-			i(44741),	-- Mechanized Snow Goggles
-			i(44742),	-- Mechanized Snow Goggles
-			i(42551),	-- Truesight Ice Blinders
-			i(44949),	-- Unbreakable Healing Amplifiers
-			i(42553),	-- Visage Liquification Goggles
-			i(42550),	-- Weakness Spectralizers
+			filter(100, {	-- Mounts
+				i(41508),	-- Mechano-Hog*
+				i(44413),	-- Mekgineer's Chopper*
+			}),
+			filter(102, {	-- Toys
+				i(40895),	-- Gnomish X-Ray Specs*
+				i(40768),	-- MOLL-E*
+				i(48933),	-- Wormhole Generator: Northrend*
+			}),
+			n(-319, {	-- Weapons
+				-- Guns
+				i(41168),	-- Armor Plated Combat Shotgun*
+				i(39688),	-- Mark "S" Boomstick*
+				i(44504),	-- Nesingwary 4000*
+			}),
+			n(-318, {	-- Armour
+				-- Head
+				i(42549),	-- Armored Titanium Goggles*
+				i(42552),	-- Charged Titanium Specs*
+				i(42555),	-- Electroflux Sight Enhancers*
+				i(42554),	-- Greensight Gogs*
+				i(41112),	-- Mechanized Snow Goggles*
+				i(44740),	-- Mechanized Snow Goggles*
+				i(44741),	-- Mechanized Snow Goggles*
+				i(44742),	-- Mechanized Snow Goggles*
+				i(42551),	-- Truesight Ice Blinders*
+				i(44949),	-- Unbreakable Healing Amplifiers*
+				i(42553),	-- Visage Liquification Goggles*
+				i(42550),	-- Weakness Spectralizers*
+				-- Trinket
+				i(41121),	-- Gnomish Lightning Generator*
+				i(40865),	-- Noise Machine*
+				i(40767),	-- Sonic Booster*
+			}),
+			filter(113, {	-- Bags
+				i(23775),	-- Titanium Toolbox*
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
 					i(44260, {["f"] = 55}),    -- Ace of Prisms
 					i(44261, {["f"] = 55}),    -- 2 of Prisms
@@ -738,89 +760,113 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
+			filter(113, {	-- Bags
+				i(41597),	-- Abyssal Bag
+				i(45773),	-- Emerald Bag
+				i(41599),	-- Frostweave Bag
+				i(41600),	-- Glacial Bag
+				i(41598),	-- Mysterious Bag
+			}),
+			n(-323, {	-- Chest
+				i(41554),	-- Black Duskweave Robe
+				i(41549),	-- Duskweave Robe
+				i(42101),	-- Ebonweave Robe
+				i(43972),	-- Frostsavage Robe
+				i(41515),	-- Frostwoven Robe
+				i(43583),	-- Glacial Robe
+				i(47603),	-- Merlin's Robe (alliance)
+				i(47604),	-- Merlin's Robe (horde)
+				i(42100),	-- Moonshroud Robe
+				i(41525),	-- Mystic Frostwoven Robe
+				i(47605),	-- Royal Moonshroud Robe (alliance)
+				i(47606),	-- Royal Moonshroud Robe (horde)
+				i(42102),	-- Spellweave Robe
+			}),
+			n(-322, {	-- Cloaks
+				i(45810),	-- Cloak of Crimson Snow
+				i(41608),	-- Cloak of Frozen Spirits
+				i(41607),	-- Cloak of the Moon
+				i(41610),	-- Deathchill Cloak
+				i(45811),	-- Frostguard Drape
+				i(45626),	-- Spidersilk Drape
+				i(41609),	-- Wispcloak
+			}),
+			n(-330, {	-- Feet
+				i(42096),	-- Aurora Slippers
+				i(49890),	-- Deathfrost Boots
+				i(41544),	-- Duskweave Boots
+				i(43970),	-- Frostsavage Boots
+				i(41520),	-- Frostwoven Boots
+				i(43585),	-- Glacial Slippers
+				i(49893),	-- Sandals of Consecration
+				i(45567),	-- Savior's Slippers
+				i(41985),	-- Silky Iceshard Boots
+				i(45566),	-- Spellslinger's Slippers
+			}),
+			n(-327, {	-- Hands
+				i(41545),	-- Duskweave Gloves
+				i(42111),	-- Ebonweave Gloves
+				i(41516),	-- Frostsavage Gloves
+				i(44211),	-- Frostwoven Gloves
+				i(42095),	-- Light Blessed Mittens
+				i(42103),	-- Moonshroud Gloves
+				i(42113),	-- Spellweave Gloves
+			}),
+			n(-320, {	-- Head
+				i(41546),	-- Duskweave Cowl
+				i(43971),	-- Frostsavage Cowl
+				i(41521),	-- Frostwoven Cowl
+				i(41984),	-- Hat of Wintry Doom
+			}),
+			n(-329, {	-- Legs
+				i(41553),	-- Black Duskweave Leggings
+				i(41548),	-- Duskweave Leggings
+				i(42093),	-- Frostmoon Pants
+				i(43975),	-- Frostsavage Leggings
+				i(41519),	-- Frostwoven Leggings
+				i(49891),	-- Leggings of Woven Death
+				i(49892),	-- Lightweave Leggings
+			}),
 			n(-160, {	-- Mounts
 				i(44554),	-- Flying Carpet
 				i(54797),	-- Frosty Flying Carpet
 				i(44558),	-- Magnificent Flying Carpet
 			}),
-			i(41546),	-- Duskweave Cowl
-			i(43971),	-- Frostsavage Cowl
-			i(41521),	-- Frostwoven Cowl
-			i(41984),	-- Hat of Wintry Doom
-			i(41550),	-- Duskweave Shoulders
-			i(43973),	-- Frostsavage Shoulders
-			i(41513),	-- Frostwoven Shoulders
-			i(41523),	-- Mystic Frostwoven Shoulders
-			i(45810),	-- Cloak of Crimson Snow
-			i(41608),	-- Cloak of Frozen Spirits
-			i(41607),	-- Cloak of the Moon
-			i(41610),	-- Deathchill Cloak
-			i(45811),	-- Frostguard Drape
-			i(45626),	-- Spidersilk Drape
-			i(41609),	-- Wispcloak
-			i(41554),	-- Black Duskweave Robe
-			i(41549),	-- Duskweave Robe
-			i(42101),	-- Ebonweave Robe
-			i(43972),	-- Frostsavage Robe
-			i(41515),	-- Frostwoven Robe
-			i(43583),	-- Glacial Robe
-			i(47603),	-- Merlin's Robe
-			i(47604),	-- Merlin's Robe
-			i(42100),	-- Moonshroud Robe
-			i(41525),	-- Mystic Frostwoven Robe
-			i(47605),	-- Royal Moonshroud Robe
-			i(47606),	-- Royal Moonshroud Robe
-			i(42102),	-- Spellweave Robe
-			i(41249),	-- Blue Lumberjack Shirt
-			i(41253),	-- Blue Workman's Shirt
-			i(41250),	-- Green Lumberjack Shirt
-			i(41255),	-- Green Workman's Shirt
-			i(41248),	-- Red Lumberjack Shirt
-			i(41252),	-- Red Workman's Shirt
-			i(41254),	-- Rustic Workman's Shirt
-			i(41251),	-- Yellow Lumberjack Shirt
-			i(47586),	-- Bejeweled Wizard's Bracers
-			i(47585),	-- Bejeweled Wizard's Bracers
-			i(41555),	-- Black Duskweave Wristwraps
-			i(41551),	-- Duskweave Wristwraps
-			i(43974),	-- Frostsavage Bracers
-			i(41512),	-- Frostwoven Wristwraps
-			i(41528),	-- Mystic Frostwoven Wristwraps
-			i(47588),	-- Royal Moonshroud Bracers
-			i(47587),	-- Royal Moonshroud Bracers
-			i(41545),	-- Duskweave Gloves
-			i(42111),	-- Ebonweave Gloves
-			i(41516),	-- Frostsavage Gloves
-			i(44211),	-- Frostwoven Gloves
-			i(42095),	-- Light Blessed Mittens
-			i(42103),	-- Moonshroud Gloves
-			i(42113),	-- Spellweave Gloves
-			i(45558),	-- Cord of the White Dawn
-			i(41986),	-- Deep Frozen Cord
-			i(41543),	-- Duskweave Belt
-			i(43969),	-- Frostsavage Belt
-			i(41522),	-- Frostwoven Belt
-			i(43584),	-- Glacial Waistband
-			i(45557),	-- Sash of Ancient Power
-			i(41553),	-- Black Duskweave Leggings
-			i(41548),	-- Duskweave Leggings
-			i(42093),	-- Frostmoon Pants
-			i(43975),	-- Frostsavage Leggings
-			i(41519),	-- Frostwoven Leggings
-			i(49891),	-- Leggings of Woven Death
-			i(49892),	-- Lightweave Leggings
-			i(42096),	-- Aurora Slippers
-			i(49890),	-- Deathfrost Boots
-			i(41544),	-- Duskweave Boots
-			i(43970),	-- Frostsavage Boots
-			i(41520),	-- Frostwoven Boots
-			i(43585),	-- Glacial Slippers
-			i(49893),	-- Sandals of Consecration
-			i(45567),	-- Savior's Slippers
-			i(41985),	-- Silky Iceshard Boots
-			i(45566),	-- Spellslinger's Slippers
-			filter(113, {	-- Bags
-				i(41597),	-- Abyssal Bag
+			n(-321, {	-- Shoulders
+				i(41550),	-- Duskweave Shoulders
+				i(43973),	-- Frostsavage Shoulders
+				i(41513),	-- Frostwoven Shoulders
+				i(41523),	-- Mystic Frostwoven Shoulders
+			}),
+			n(-324, {	-- Shirts
+				i(41249),	-- Blue Lumberjack Shirt
+				i(41253),	-- Blue Workman's Shirt
+				i(41250),	-- Green Lumberjack Shirt
+				i(41255),	-- Green Workman's Shirt
+				i(41248),	-- Red Lumberjack Shirt
+				i(41252),	-- Red Workman's Shirt
+				i(41254),	-- Rustic Workman's Shirt
+				i(41251),	-- Yellow Lumberjack Shirt
+			}),
+			n(-328, {	-- Waist
+				i(45558),	-- Cord of the White Dawn
+				i(41986),	-- Deep Frozen Cord
+				i(41543),	-- Duskweave Belt
+				i(43969),	-- Frostsavage Belt
+				i(41522),	-- Frostwoven Belt
+				i(43584),	-- Glacial Waistband
+				i(45557),	-- Sash of Ancient Power
+			}),
+			n(-326, {	-- Wrist
+				i(47585),	-- Bejeweled Wizard's Bracers (alliance)
+				i(47586),	-- Bejeweled Wizard's Bracers (horde)
+				i(41555),	-- Black Duskweave Wristwraps
+				i(41551),	-- Duskweave Wristwraps
+				i(43974),	-- Frostsavage Bracers
+				i(41512),	-- Frostwoven Wristwraps
+				i(41528),	-- Mystic Frostwoven Wristwraps
+				i(47587),	-- Royal Moonshroud Bracers (alliance)
+				i(47588),	-- Royal Moonshroud Bracers (horde)
 			}),
 		}),
 	}),

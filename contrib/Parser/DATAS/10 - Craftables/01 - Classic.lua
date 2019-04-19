@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(1, { -- Classic
+	tier(1, {	-- Classic
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinket
 				{	-- Philosopher's Stone
@@ -252,7 +252,7 @@ _.Craftables =
 					["itemID"] = 12802,	-- Darkspear
 				},
 			}),
-			filter(34, {	-- First Weapons
+			filter(34, {	-- Fist Weapons
 				{	-- Blood Talon
 					["itemID"] = 12795,	-- Blood Talon
 					["u"] = 1,
@@ -493,7 +493,7 @@ _.Craftables =
 					["itemID"] = 20549,	-- Darkrune Gauntlets
 				},
 				{	-- Fiery Plate Gauntlets
-					["itemID"] = 12631, -- Fiery Plate Gauntlets
+					["itemID"] = 12631,	-- Fiery Plate Gauntlets
 					["u"] = 8,
 				},
 				{	-- Gemmed Copper Gauntlets
@@ -721,83 +721,110 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			filter(27, { -- Wands
+			filter(27, {	-- Wands
 				i(11288),	-- Greater Magic Wand
 				i(11290),	-- Greater Mystic Wand
 				i(11287),	-- Lesser Magic Wand
 				i(11289),	-- Lesser Mystic Wand
 			}),
-			filter(53, { -- Trinket
+			filter(53, {	-- Trinket
 				i(11811),	-- Smoking Heart of the Mountain
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			{	-- Plans: Inlaid Mithril Cylinder
-				["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
-				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			},
-			{	-- Recipe: Goblin Rocket Fuel
-				["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
-				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			},
-			i(18282),	-- Core Marksman Rifle
-			i(16004),	-- Dark Iron Rifle
-			i(4369),	-- Deadly Blunderbuss
-			un(8, i(16007)),	-- Flawless Arcanite Rifle
-			i(18168),	-- Force Reactive Disk
-			i(4372),	-- Lovingly Crafted Boomstick
-			i(10508),	-- Mithril Blunderbuss
-			i(10510),	-- Mithril Heavy-Bore Rifle
-			i(4383),	-- Moonsight Rifle
-			i(4362),	-- Rough Boomstick
-			i(4379),	-- Silver-Plated Shotgun
-			i(15995),	-- Thorium Rifle
-			un(8, i(19999)),	-- Bloodvine Goggles
-			un(8, i(19998)),	-- Bloodvine Lens
-			i(10499),	-- Bright-Eye Goggles
-			i(10501),	-- Catseye Ultra Goggles
-			i(4393),	-- Craftsman's Monocle
-			i(10506),	-- Deepdive Helmet
-			i(10500),	-- Fire Goggles
-			i(4368),	-- Flying Tiger Goggles
-			i(10545),	-- Gnomish Goggles
-			i(10726),	-- Gnomish Mind Control Cap
-			i(10543),	-- Goblin Construction Helmet
-			i(10542),	-- Goblin Mining Helmet
-			i(10588),	-- Goblin Rocket Helmet
-			i(10504),	-- Green Lens
-			i(4385),	-- Green Tinted Goggles
-			i(16008),	-- Master Engineer's Goggles
-			i(10503),	-- Rose Colored Goggles
-			i(4373),	-- Shadow Goggles
-			i(10502),	-- Spellpower Goggles Xtreme
-			i(15999),	-- Spellpower Goggles Xtreme Plus
-			i(10518),	-- Parachute Cloak
-			i(10721),	-- Gnomish Harm Prevention Belt
-			i(10724),	-- Gnomish Rocket Boots
-			i(7189),	-- Goblin Rocket Boots
-			filter(51, {	-- Neck
-				i(16009),	-- Voice Amplification Modulator
+			filter(100, {	-- Mounts
+				i(34060),	-- Flying Machine*
 			}),
-			filter(53, {	-- Trinket
-				i(16022),	-- Arcanite Dragonling
-				i(4397),	-- Gnomish Cloaking Device
-				i(10720),	-- Gnomish Net-o-Matic Projector
-				i(10716),	-- Gnomish Shrink Ray
-				i(7506),	-- Gnomish Universal Remote
-				i(10577),	-- Goblin Mortar
-				i(18634),	-- Gyrofreeze Ice Reflector
-				i(18638),	-- Hyper-Radiant Flame Reflector
-				i(4396),	-- Mechanical Dragonling
-				i(10576),	-- Mithril Mechanical Dragonling
-				i(4381),	-- Minor Recombobulator
-				i(18639),	-- Ultra-Flash Shadow Reflector
-				i(18637),	-- Major Recombobulator
+			filter(200, {	-- Recipes
+				{	-- Recipe: Goblin Rocket Fuel*
+					["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+					["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+				},
+				{	-- Plans: Inlaid Mithril Cylinder*
+					["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
+					["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+				},
+			}),
+			filter(101, {	-- Pets
+				i(15996),	-- Lifelike Mechanical Toad*
+				i(11826),	-- Lil' Smoky*
+				i(4401),	-- Mechanical Squirrel Box*
+				i(11825),	-- Pet Bombling*
+				i(21277),	-- Tranquil Mechanical Yeti*
+			}),
+			filter(102, {	-- Toys
+				i(18984),	-- Dimensional Ripper - Everlook*
+				i(17716),	-- Snowmaster 9000*
+				i(18986),	-- Ultrasafe Transporter: Gadgetzan*
+				i(18660),	-- World Enlarger*
+			}),
+			n(-319, {	-- Weapons	
+				-- Guns
+				i(18282),	-- Core Marksman Rifle*
+				i(16004),	-- Dark Iron Rifle*
+				i(4369),	-- Deadly Blunderbuss*
+				un(8, i(16007)),	-- Flawless Arcanite Rifle
+				i(4372),	-- Lovingly Crafted Boomstick*
+				i(10508),	-- Mithril Blunderbuss*
+				i(10510),	-- Mithril Heavy-Bore Rifle*
+				i(4383),	-- Moonsight Rifle*
+				i(4362),	-- Rough Boomstick*
+				i(4379),	-- Silver-Plated Shotgun*
+				i(15995),	-- Thorium Rifle*
+			}),
+			n(-318, {	-- Armor
+				-- Head
+				un(8, i(19999)),	-- Bloodvine Goggles
+				un(8, i(19998)),	-- Bloodvine Lens
+				i(10499),	-- Bright-Eye Goggles*
+				i(10501),	-- Catseye Ultra Goggles*
+				i(4393),	-- Craftsman's Monocle*
+				i(10506),	-- Deepdive Helmet*
+				i(10500),	-- Fire Goggles*
+				i(4368),	-- Flying Tiger Goggles*
+				i(10545),	-- Gnomish Goggles*
+				i(10726),	-- Gnomish Mind Control Cap*
+				i(10543),	-- Goblin Construction Helmet*
+				i(10542),	-- Goblin Mining Helmet*
+				i(10588),	-- Goblin Rocket Helmet*
+				i(10504),	-- Green Lens*
+				i(4385),	-- Green Tinted Goggles*
+				i(16008),	-- Master Engineer's Goggles*
+				i(10503),	-- Rose Colored Goggles*
+				i(4373),	-- Shadow Goggles*
+				i(10502),	-- Spellpower Goggles Xtreme*
+				i(15999),	-- Spellpower Goggles Xtreme Plus*
+				-- Neck
+				i(16009),	-- Voice Amplification Modulator*
+				-- Back
+				i(10518),	-- Parachute Cloak*
+				-- Waist
+				i(10721),	-- Gnomish Harm Prevention Belt*
+				-- Feet
+				i(10724),	-- Gnomish Rocket Boots*
+				i(7189),	-- Goblin Rocket Boots*
+				-- Shields
+				i(18168),	-- Force Reactive Disk*
+				-- Trinket
+				i(16022),	-- Arcanite Dragonling*
+				i(4397),	-- Gnomish Cloaking Device*
+				i(10720),	-- Gnomish Net-o-Matic Projector*
+				i(10716),	-- Gnomish Shrink Ray*
+				i(7506),	-- Gnomish Universal Remote*
+				i(10577),	-- Goblin Mortar*
+				i(18634),	-- Gyrofreeze Ice Reflector*
+				i(45631),	-- High-Powered Flashlight*
+				un(8, i(18638)),	-- Hyper-Radiant Flame Reflector
+				i(18637),	-- Major Recombobulator*
+				i(4396),	-- Mechanical Dragonling*
+				i(4381),	-- Minor Recombobulator*
+				i(10576),	-- Mithril Mechanical Dragonling*
+				i(18639),	-- Ultra-Flash Shadow Reflector*
 			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				{	-- Arcane Tarot
 					["spellID"] = 59487,	-- Arcane Tarot
 					["g"] = {
@@ -1288,8 +1315,8 @@ _.Craftables =
 				i(8175),	-- Nightscape Tunic
 				i(7285),	-- Nimble Leather Gloves
 				i(7358),	-- Pilferer's Gloves
-				i(4456),	-- Raptor Hide Belt
-				i(4455),	-- Raptor Hide Harness
+				a(i(4456)),	-- Raptor Hide Belt (alliance only)
+				h(i(4455)),	-- Raptor Hide Harness (horde only)
 				i(7284),	-- Red Whelp Gloves
 				i(7280),	-- Rugged Leather Pants
 				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
@@ -1325,6 +1352,10 @@ _.Craftables =
 				un(8, i(15049)),	-- Blue Dragonscale Shoulders
 				un(8, i(19157)),	-- Chromatic Gauntlets
 				un(8, i(8347)),		-- Dragonscale Gauntlets
+				-- Dreamscale Breastplate
+				un(8, i(20380, {
+					["description"] =  "While this recipe is still available, the mats required to craft it are not",
+				})),
 				un(8, i(15078)),	-- Heavy Scorpid Gauntlets
 				un(8, i(15079)),	-- Heavy Scorpid Leggings
 				un(8, i(15081)),	-- Heavy Scorpid Shoulders
@@ -1340,7 +1371,6 @@ _.Craftables =
 				i(15051),	-- Black Dragonscale Shoulders
 				i(20295),	-- Blue Dragonscale Leggings
 				i(8367),	-- Dragonscale Breastplate
-				i(20380),	-- Dreamscale Breastplate
 				i(7348),	-- Fletcher's Gloves
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
@@ -1369,199 +1399,233 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			un(8, i(18405)),	-- Belt of the Archmage		
-			un(8, i(19684)),	-- Bloodvine Boots
-			un(8, i(19683)),	-- Bloodvine Leggings
-			un(8, i(19682)),	-- Bloodvine Vest
-			{	-- Boots of Darkness
-				["itemID"] = 7027,	-- Boots of Darkness	**NYI and replaced by Boots of Utter Darkness pattern in BC**
-				["u"] = 1,
-			},
-			un(8, i(18413)),	-- Cloak of Warding
-			un(8, i(18407)),	-- Felcloth Gloves
-			un(8, i(22658)),	-- Glacial Cloak
-			un(8, i(22654)),	-- Glacial Gloves
-			un(8, i(22652)),	-- Glacial Vest
-			un(8, i(22655)),	-- Glacial Wrists
-			un(8, i(18408)),	-- Inferno Gloves
-			un(8, i(18409)),	-- Mooncloth Gloves
-			un(5, i(14153)),	-- Robe of the Void
-			un(8, i(14136)),	-- Robe of Winter Night
-			un(8, i(5770)),		-- Robes of Arcana
-			i(10030),	-- Admiral's Hat
-			i(19056),	-- Argent Boots
-			i(19059),	-- Argent Shoulders
-			i(7060),	-- Azure Shoulders
-			i(7052),	-- Azure Silk Belt
-			i(7053),	-- Azure Silk Cloak
-			i(4319),	-- Azure Silk Gloves
-			i(7048),	-- Azure Silk Hood
-			i(7046),	-- Azure Silk Pants
-			i(4324),	-- Azure Silk Vest
-			i(2578),	-- Barbaric Linen Vest
-			i(10026),	-- Black Mageweave Boots
-			i(10003),	-- Black Mageweave Gloves
-			i(10024),	-- Black Mageweave Headband
-			i(9999),	-- Black Mageweave Leggings
-			i(10001),	-- Black Mageweave Robe
-			i(10027),	-- Black Mageweave Shoulders
-			i(9998),	-- Black Mageweave Vest
-			i(4336),	-- Black Swashbuckler's Shirt
-			i(6242),	-- Blue Linen Robe
-			i(2577),	-- Blue Linen Shirt
-			i(6240),	-- Blue Linen Vest
-			i(6263),	-- Blue Overalls
-			i(4325),	-- Boots of the Enchanter
-			i(4332),	-- Bright Yellow Shirt
-			i(14103),	-- Brightcloth Cloak
-			i(14101),	-- Brightcloth Gloves
-			i(14104),	-- Brightcloth Pants
-			i(14100),	-- Brightcloth Robe
-			i(4343),	-- Brown Linen Pants
-			i(6238),	-- Brown Linen Robe
-			i(4344),	-- Brown Linen Shirt
-			i(10044),	-- Cindercloth Boots
-			i(14044),	-- Cindercloth Cloak
-			i(14043),	-- Cindercloth Gloves
-			i(14045),	-- Cindercloth Pants
-			i(10042),	-- Cindercloth Robe
-			i(14042),	-- Cindercloth Vest
-			i(14134),	-- Cloak of Fire
-			i(10048),	-- Colorful Kilt
-			i(7055),	-- Crimson Silk Belt
-			i(7056),	-- Crimson Silk Cloak
-			i(7064),	-- Crimson Silk Gloves
-			i(7062),	-- Crimson Silk Pantaloons
-			i(7063),	-- Crimson Silk Robe
-			i(7059),	-- Crimson Silk Shoulders
-			i(7058),	-- Crimson Silk Vest
-			i(4333),	-- Dark Silk Shirt
-			i(4314),	-- Double-stitched Woolen Shoulders
-			i(10041),	-- Dreamweave Circlet
-			i(10019),	-- Dreamweave Gloves
-			i(10021),	-- Dreamweave Vest
-			i(7061),	-- Earthen Silk Belt
-			i(7051),	-- Earthen Vest
-			i(4322),	-- Enchanter's Cowl
-			i(14108),	-- Felcloth Boots
-			i(14111),	-- Felcloth Hood
-			i(14107),	-- Felcloth Pants
-			i(14106),	-- Felcloth Robe
-			i(14112),	-- Felcloth Shoulders
-			i(16979),	-- Flarecore Gloves
-			i(19165),	-- Flarecore Leggings
-			i(16980),	-- Flarecore Mantle
-			i(19156),	-- Flarecore Robe
-			i(18263),	-- Flarecore Wraps
-			i(4334),	-- Formal White Shirt
-			i(13870),	-- Frostweave Gloves
-			i(13871),	-- Frostweave Pants
-			i(13868),	-- Frostweave Robe
-			i(13869),	-- Frostweave Tunic
-			i(22660),	-- Gaea's Embrace
-			i(14143),	-- Ghostweave Belt
-			i(14142),	-- Ghostweave Gloves
-			i(14144),	-- Ghostweave Pants
-			i(14141),	-- Ghostweave Vest
-			i(4318),	-- Gloves of Meditation
-			i(14146),	-- Gloves of Spell Mastery
-			i(2585),	-- Gray Woolen Robe
-			i(2587),	-- Gray Woolen Shirt
-			i(6264),	-- Greater Adept's Robe
-			i(17723),	-- Green Holiday Shirt
-			i(4308),	-- Green Linen Bracers
-			i(2579),	-- Green Linen Shirt
-			i(7065),	-- Green Silk Armor
-			i(7057),	-- Green Silken Shoulders
-			i(2582),	-- Green Woolen Vest
-			i(7047),	-- Hands of Darkness
-			i(4309),	-- Handstitched Linen Britches
-			i(4307),	-- Heavy Linen Gloves
-			i(4311),	-- Heavy Woolen Cloak
-			i(4310),	-- Heavy Woolen Gloves
-			i(4316),	-- Heavy Woolen Pants
-			i(4327),	-- Icy Cloak
-			i(10054),	-- Lavender Mageweave Shirt
-			i(5766),	-- Lesser Wizard's Robe
-			i(2569),	-- Linen Boots
-			i(4326),	-- Long Silken Cloak
-			i(19050),	-- Mantle of the Timbermaw
-			i(15802),	-- Mooncloth Boots
-			i(14140),	-- Mooncloth Circlet
-			i(14137),	-- Mooncloth Leggings
-			i(18486),	-- Mooncloth Robe
-			i(14139),	-- Mooncloth Shoulders
-			i(14138),	-- Mooncloth Vest
-			i(10056),	-- Orange Mageweave Shirt
-			i(10052),	-- Orange Martial Shirt
-			i(5542),	-- Pearl-Clasped Cloak
-			i(4331),	-- Phoenix Gloves
-			i(4317),	-- Phoenix Pants
-			i(10055),	-- Pink Mageweave Shirt
-			i(2572),	-- Red Linen Robe
-			i(2575),	-- Red Linen Shirt
-			i(6239),	-- Red Linen Vest
-			i(10018),	-- Red Mageweave Gloves
-			i(10033),	-- Red Mageweave Headband
-			i(10009),	-- Red Mageweave Pants
-			i(10029),	-- Red Mageweave Shoulders
-			i(10007),	-- Red Mageweave Vest
-			i(6796),	-- Red Swashbuckler's Shirt
-			i(4313),	-- Red Woolen Boots
-			i(2580),	-- Reinforced Linen Cape
-			i(4315),	-- Reinforced Woolen Shoulders
-			i(4335),	-- Rich Purple Silk Shirt
-			i(7054),	-- Robe of Power
-			i(14152),	-- Robe of the Archmage
-			i(13856),	-- Runecloth Belt
-			i(13864),	-- Runecloth Boots
-			i(13860),	-- Runecloth Cloak
-			i(13863),	-- Runecloth Gloves
-			i(13866),	-- Runecloth Headband
-			i(13865),	-- Runecloth Pants
-			i(13858),	-- Runecloth Robe
-			i(13867),	-- Runecloth Shoulders
-			i(13857),	-- Runecloth Tunic
-			i(20539),	-- Runed Stygian Belt
-			i(20537),	-- Runed Stygian Boots
-			i(20538),	-- Runed Stygian Leggings
-			i(4323),	-- Shadow Hood
-			i(10031),	-- Shadoweave Boots
-			i(10023),	-- Shadoweave Gloves
-			desc(i(10025), "Required for the |cff3399ffLucid Nightmare|r riddle mount."),	-- Shadoweave Mask
-			i(10002),	-- Shadoweave Pants
-			i(10004),	-- Shadoweave Robe
-			i(10028),	-- Shadoweave Shoulders
-			i(7050),	-- Silk Headband
-			i(10047),	-- Simple Kilt
-			i(4312),	-- Soft-Soled Linen Boots
-			i(4328),	-- Spider Belt
-			i(4321),	-- Spider Silk Slippers
-			i(4320),	-- Spidersilk Boots
-			i(4329),	-- Star Belt
-			i(6384),	-- Stylish Blue Shirt
-			i(6385),	-- Stylish Green Shirt
-			i(4330),	-- Stylish Red Shirt
-			i(22757),	-- Sylvan Crown
-			i(22758),	-- Sylvan Shoulders
-			i(22756),	-- Sylvan Vest
-			i(7049),	-- Truefaith Gloves
-			i(14154),	-- Truefaith Vestments
-			i(10034),	-- Tuxedo Shirt
-			i(10008),	-- White Bandit Mask
-			i(6241),	-- White Linen Robe
-			i(2576),	-- White Linen Shirt
-			i(6795),	-- White Swashbuckler's Shirt
-			i(19047),	-- Wisdom of the Timbermaw
-			i(14132),	-- Wizardweave Leggings
-			i(14128),	-- Wizardweave Robe
-			i(14130),	-- Wizardweave Turban
-			i(2583),	-- Woolen Boots
-			filter(113, { -- Bags
+			filter(113, {	-- Bags
 				i(5765),	-- Black Silk Pack
 				i(14156),	-- Bottomless Bag
+				i(22251),	-- Cenarion Herb Bag
 				i(21342),	-- Core Felcloth Bag
+				i(22246),	-- Enchanted Mageweave Pouch
+				i(22248),	-- Enchanted Runecloth Bag
+				i(5764),	-- Green Silk Pack
+				i(4241),	-- Green Woolen Bag
+				i(4238),	-- Linen Bag
+				i(10050),	-- Mageweave Bag
+				i(14155),	-- Mooncloth Bag
+				i(5762),	-- Red Linen Bag
+				i(10051),	-- Red Mageweave Bag
+				i(5763),	-- Red Woolen Bag
+				i(14046),	-- Runecloth Bag
+				i(4245),	-- Small Silk Pack
+				i(21340),	-- Soul Pouch
+				i(4240),	-- Woolen Bag
 			}),	
+			n(-323, {	-- Chest
+				un(8, i(19682)),	-- Bloodvine Vest
+				un(8, i(22652)),	-- Glacial Vest
+				un(5, i(14153)),	-- Robe of the Void
+				i(4324),	-- Azure Silk Vest
+				i(2578),	-- Barbaric Linen Vest
+				i(10001),	-- Black Mageweave Robe
+				i(9998),	-- Black Mageweave Vest
+				i(6242),	-- Blue Linen Robe
+				i(6240),	-- Blue Linen Vest
+				i(6263),	-- Blue Overalls
+				i(14100),	-- Brightcloth Robe
+				i(6238),	-- Brown Linen Robe
+				i(10042),	-- Cindercloth Robe
+				i(14042),	-- Cindercloth Vest
+				i(7063),	-- Crimson Silk Robe
+				i(7058),	-- Crimson Silk Vest
+				i(10021),	-- Dreamweave Vest
+				i(7051),	-- Earthen Vest
+				i(14106),	-- Felcloth Robe
+				i(19156),	-- Flarecore Robe
+				i(13868),	-- Frostweave Robe
+				i(13869),	-- Frostweave Tunic
+				i(14141),	-- Ghostweave Vest
+				i(2585),	-- Gray Woolen Robe
+				i(6264),	-- Greater Adept's Robe
+				i(7065),	-- Green Silk Armor
+				i(2582),	-- Green Woolen Vest
+				i(5766),	-- Lesser Wizard's Robe
+				i(18486),	-- Mooncloth Robe
+				i(14138),	-- Mooncloth Vest
+				i(2572),	-- Red Linen Robe
+				i(6239),	-- Red Linen Vest
+				i(10007),	-- Red Mageweave Vest
+				i(7054),	-- Robe of Power
+				i(14152),	-- Robe of the Archmage
+				i(14136),	-- Robe of Winter Night
+				i(5770),	-- Robes of Arcana
+				i(13858),	-- Runecloth Robe
+				i(13857),	-- Runecloth Tunic
+				i(10004),	-- Shadoweave Robe
+				i(22756),	-- Sylvan Vest
+				i(14154),	-- Truefaith Vestments
+				i(6241),	-- White Linen Robe
+				i(14128),	-- Wizardweave Robe
+			}),
+			n(-322, {	-- Cloaks
+				un(8, i(22658)),	-- Glacial Cloak
+				i(7053),	-- Azure Silk Cloak
+				i(14103),	-- Brightcloth Cloak
+				i(14044),	-- Cindercloth Cloak
+				i(14134),	-- Cloak of Fire
+				i(18413),	-- Cloak of Warding
+				i(7056),	-- Crimson Silk Cloak
+				i(22660),	-- Gaea's Embrace
+				i(4311),	-- Heavy Woolen Cloak
+				i(4327),	-- Icy Cloak
+				i(4326),	-- Long Silken Cloak
+				i(5542),	-- Pearl-Clasped Cloak
+				i(2580),	-- Reinforced Linen Cape
+				i(13860),	-- Runecloth Cloak
+			}),
+			n(-330, {	-- Feet
+				un(8, i(19684)),	-- Bloodvine Boots
+				un(1, i(7027)),		-- Boots of Darkness
+				i(19056),	-- Argent Boots
+				i(10026),	-- Black Mageweave Boots
+				i(4325),	-- Boots of the Enchanter
+				i(10044),	-- Cindercloth Boots
+				i(14108),	-- Felcloth Boots
+				i(2569),	-- Linen Boots
+				i(15802),	-- Mooncloth Boots
+				i(4313),	-- Red Woolen Boots
+				i(13864),	-- Runecloth Boots
+				i(20537),	-- Runed Stygian Boots
+				i(10031),	-- Shadoweave Boots
+				i(4312),	-- Soft-Soled Linen Boots
+				i(4321),	-- Spider Silk Slippers
+				i(4320),	-- Spidersilk Boots
+				i(2583),	-- Woolen Boots
+			}),
+			n(-327, {	-- Hands
+				un(8, i(22654)),	-- Glacial Gloves
+				i(4319),	-- Azure Silk Gloves
+				i(10003),	-- Black Mageweave Gloves
+				i(14101),	-- Brightcloth Gloves
+				i(14043),	-- Cindercloth Gloves
+				i(7064),	-- Crimson Silk Gloves
+				i(10019),	-- Dreamweave Gloves
+				i(18407),	-- Felcloth Gloves
+				i(16979),	-- Flarecore Gloves
+				i(13870),	-- Frostweave Gloves
+				i(14142),	-- Ghostweave Gloves
+				i(4318),	-- Gloves of Meditation
+				i(14146),	-- Gloves of Spell Mastery
+				i(7047),	-- Hands of Darkness
+				i(4307),	-- Heavy Linen Gloves
+				i(4310),	-- Heavy Woolen Gloves
+				i(18408),	-- Inferno Gloves
+				i(18409),	-- Mooncloth Gloves
+				i(4331),	-- Phoenix Gloves
+				i(10018),	-- Red Mageweave Gloves
+				i(13863),	-- Runecloth Gloves
+				i(10023),	-- Shadoweave Gloves
+				i(7049),	-- Truefaith Gloves
+			}),
+			n(-320, {	-- Head
+				i(10030),	-- Admiral's Hat
+				i(7048),	-- Azure Silk Hood
+				i(10024),	-- Black Mageweave Headband
+				i(10041),	-- Dreamweave Circlet
+				i(4322),	-- Enchanter's Cowl
+				i(14111),	-- Felcloth Hood
+				i(14140),	-- Mooncloth Circlet
+				i(10033),	-- Red Mageweave Headband
+				i(13866),	-- Runecloth Headband
+				i(4323),	-- Shadow Hood
+				i(10025, {	-- Shadoweave Mask
+					["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
+				}),
+				i(7050),	-- Silk Headband
+				i(22757),	-- Sylvan Crown
+				i(10008),	-- White Bandit Mask
+				i(14130),	-- Wizardweave Turban
+			}),
+			n(-329, {	-- Legs
+				un(8, i(19683)),	-- Bloodvine Leggings
+				i(7046),	-- Azure Silk Pants
+				i(9999),	-- Black Mageweave Leggings
+				i(14104),	-- Brightcloth Pants
+				i(4343),	-- Brown Linen Pants
+				i(14045),	-- Cindercloth Pants
+				i(10048),	-- Colorful Kilt
+				i(7062),	-- Crimson Silk Pantaloons
+				i(14107),	-- Felcloth Pants
+				i(19165),	-- Flarecore Leggings
+				i(13871),	-- Frostweave Pants
+				i(14144),	-- Ghostweave Pants
+				i(4309),	-- Handstitched Linen Britches
+				i(4316),	-- Heavy Woolen Pants
+				i(14137),	-- Mooncloth Leggings
+				i(4317),	-- Phoenix Pants
+				i(10009),	-- Red Mageweave Pants
+				i(13865),	-- Runecloth Pants
+				i(20538),	-- Runed Stygian Leggings
+				i(10002),	-- Shadoweave Pants
+				i(10047),	-- Simple Kilt
+				i(14132),	-- Wizardweave Leggings
+			}),
+			n(-324, {	-- Shirts
+				i(4336),	-- Black Swashbuckler's Shirt
+				i(2577),	-- Blue Linen Shirt
+				i(4332),	-- Bright Yellow Shirt
+				i(4344),	-- Brown Linen Shirt
+				i(4333),	-- Dark Silk Shirt
+				i(4334),	-- Formal White Shirt
+				i(2587),	-- Gray Woolen Shirt
+				i(17723),	-- Green Holiday Shirt
+				i(2579),	-- Green Linen Shirt
+				i(10054),	-- Lavender Mageweave Shirt
+				i(10056),	-- Orange Mageweave Shirt
+				i(10052),	-- Orange Martial Shirt
+				i(10055),	-- Pink Mageweave Shirt
+				i(2575),	-- Red Linen Shirt
+				i(6796),	-- Red Swashbuckler's Shirt
+				i(4335),	-- Rich Purple Silk Shirt
+				i(6384),	-- Stylish Blue Shirt
+				i(6385),	-- Stylish Green Shirt
+				i(4330),	-- Stylish Red Shirt
+				i(10034),	-- Tuxedo Shirt
+				i(2576),	-- White Linen Shirt
+				i(6795),	-- White Swashbuckler's Shirt
+			}),
+			n(-321, {	-- Shoulders
+				i(19059),	-- Argent Shoulders
+				i(7060),	-- Azure Shoulders
+				i(10027),	-- Black Mageweave Shoulders
+				i(7059),	-- Crimson Silk Shoulders
+				i(4314),	-- Double-stitched Woolen Shoulders
+				i(14112),	-- Felcloth Shoulders
+				i(16980),	-- Flarecore Mantle
+				i(7057),	-- Green Silken Shoulders
+				i(19050),	-- Mantle of the Timbermaw
+				i(14139),	-- Mooncloth Shoulders
+				i(10029),	-- Red Mageweave Shoulders
+				i(4315),	-- Reinforced Woolen Shoulders
+				i(13867),	-- Runecloth Shoulders
+				i(10028),	-- Shadoweave Shoulders
+				i(22758),	-- Sylvan Shoulders
+			}),
+			n(-328, {	-- Waist
+				i(7052),	-- Azure Silk Belt
+				i(18405),	-- Belt of the Archmage
+				i(7055),	-- Crimson Silk Belt
+				i(7061),	-- Earthen Silk Belt
+				i(14143),	-- Ghostweave Belt
+				i(13856),	-- Runecloth Belt
+				i(20539),	-- Runed Stygian Belt
+				i(4328),	-- Spider Belt
+				i(4329),	-- Star Belt
+				i(19047),	-- Wisdom of the Timbermaw
+			}),
+			n(-326, {	-- Wrist
+				un(8, i(22655)),	-- Glacial Wrists
+				i(18263),	-- Flarecore Wraps
+				i(4308),	-- Green Linen Bracers
+			}),
 		}),
 	}),
 };

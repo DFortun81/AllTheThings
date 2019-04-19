@@ -30,6 +30,7 @@ _.Mounts =
 			["classes"] = {2},
 			["races"] = {1,3},
 		},
+		i(166724),		-- Bruce
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
@@ -75,12 +76,15 @@ _.Mounts =
 			["itemID"] = 143502,	-- Highlord's Golden Charger
 			["classes"] = {2},
 		},
+		i(143505, {	-- Highlord's Valorous Charger
+			["classes"] = { 2 },	-- Paladin
+		}),
 		{
 			["itemID"] = 143503,	-- Highlord's Vengeful Charger
 			["classes"] = {2},
 		},
 		{
-			["itemID"] = 143505,	-- Highlord's Vigilant Charger
+			["itemID"] = 143504,	-- Highlord's Vigilant Charger
 			["classes"] = {2},
 		},
 		{

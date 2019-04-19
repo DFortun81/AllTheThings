@@ -4,25 +4,28 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(227, { 	-- Blackfathom Deeps
+		["lvl"] = 15,
+		["maps"] = { 221, 222, 223 },
+		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
 			n(-17, {	-- Quests 
 				qg(75606, qa(34672, { 	-- The Rise of Aku'mai
-					i( 65986),	-- Shield Against the Evil Presence
-					i( 65962),	-- Thaelrid's Greaves
-					i( 65938),	-- Blackfathom Leggings
-					i( 65912),	-- Robe of Kelris
+					i(65986),	-- Shield Against the Evil Presence
+					i(65962),	-- Thaelrid's Greaves
+					i(65938),	-- Blackfathom Leggings
+					i(65912),	-- Robe of Kelris
 					i(131713),	-- Scales of Aku'mai
 				})),
 				qg(74409, qh(34673, { 	-- The Rise of Aku'mai
-					i( 66030),	-- Plates of Aku'mai
-					i( 66039),	-- Shield Against the Evil Presence
-					i( 66021),	-- Blackfathom Leggings
-					i( 66012),	-- Je'neu's Robes
+					i(66030),	-- Plates of Aku'mai
+					i(66039),	-- Shield Against the Evil Presence
+					i(66021),	-- Blackfathom Leggings
+					i(66012),	-- Je'neu's Robes
 					i(131714),	-- Blackfathom Chain Leggings
 				})),
 			}),	
 			n(  0, {	-- Zone Drop
-				i( 1454, {	-- Axe of the Enforcer
+				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
@@ -33,7 +36,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 3414, {	-- Crested Scepter
+				i(3414, {	-- Crested Scepter
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
@@ -43,7 +46,7 @@ _.Instances = { tier(1, {	-- Classic
 						74363,	-- Twilight Shadow
 					},
 				}),
-				i( 3413, {	-- Doomspike
+				i(3413, {	-- Doomspike
 					["crs"] = {
 						74719,	-- Blindlight Rotmouth
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
@@ -60,7 +63,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 2567, {	-- Evocator's Blade
+				i(2567, {	-- Evocator's Blade
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -77,7 +80,7 @@ _.Instances = { tier(1, {	-- Classic
 						74363,	-- Twilight Shadow
 					},
 				}),
-				i( 1481, {	-- Grimclaw
+				i(1481, {	-- Grimclaw
 					["crs"] = {
 						74984,	-- Blindlight Murloc
 						74720,	-- Blindlight Murloc
@@ -90,7 +93,7 @@ _.Instances = { tier(1, {	-- Classic
 						74363,	-- Twilight Shadow
 					},
 				}),
-				i( 3416, {	-- Martyr's Chain
+				i(3416, {	-- Martyr's Chain
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						75980,	-- Blindlight Razorjaw
@@ -104,7 +107,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 3417, {	-- Onyx Claymore
+				i(3417, {	-- Onyx Claymore
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -131,7 +134,7 @@ _.Instances = { tier(1, {	-- Classic
 						76037,	-- Twilight Storm Mender
 					},
 				}),
-				i( 3039, {	-- Short Ash Bow
+				i(3039, {	-- Short Ash Bow
 					["crs"] = {
 						74984,	-- Blindlight Murloc
 						75658,	-- Blindlight Murloc
@@ -147,7 +150,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 2271, {	-- Staff of the Blessed Seer
+				i(2271, {	-- Staff of the Blessed Seer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -166,7 +169,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 3415, {	-- Staff of the Friar
+				i(3415, {	-- Staff of the Friar
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -179,7 +182,7 @@ _.Instances = { tier(1, {	-- Classic
 						75285,	-- Twilight Storm Mender
 					},
 				}),
-				i( 1486, {	-- Tree Bark Jacket
+				i(1486, {	-- Tree Bark Jacket
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
@@ -219,21 +222,21 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			cr(74446, e( 368, {	-- Ghamoo-Ra
 				i(151433),	-- Thick Shellplate Shoulders
-				i(  6907),	-- Tortoise Armor
-				i(  6908),	-- Ghamoo-Ra's Bind
+				i( 6907),	-- Tortoise Armor
+				i( 6908),	-- Ghamoo-Ra's Bind
 				i(151432),	-- Twilight Turtleskin Leggings
 			})),
 			cr(74476, e( 436, {	-- Domina <Mistress of Shadows>
-				i( 11121),	-- Darkwater Talwar
-				i(  3078),	-- Naga Heartpiercer
+				i(11121),	-- Darkwater Talwar
+				i( 3078),	-- Naga Heartpiercer
 				i(132554),	-- Deadly Serpentine Grips
-				i(   888),		-- Naga Battle Gloves
+				i(  888),		-- Naga Battle Gloves
 				i(151435),	-- Domina's Deathmaw Greaves
 				i(151434),	-- Foul Shadowsleet Slippers
 			})),
 			cr(74565, e( 426, {	-- Subjugator Kor'ul
-				i(  6905),	-- Reef Axe
-				i(  6906),	-- Algae Fists
+				i( 6905),	-- Reef Axe
+				i( 6906),	-- Algae Fists
 				i(151436),	-- Murloc Oppressor's Band
 			})),
 			cr(74505, e(1145, {	-- Thruk
@@ -243,28 +246,28 @@ _.Instances = { tier(1, {	-- Classic
 				i(151437),	-- Hook Charm Necklace
 			})),
 			cr(75410, e( 447, {	-- Guardian of the Deep
-				i(  6904),	-- Bite of Serra'kis
+				i( 6904),	-- Bite of Serra'kis
 				i(132555),	-- Serra'kis Scale Wraps
-				i(  6902),	-- Bands of Serra'kis
-				i(  6901),	-- Glowing Thresher Cape
+				i( 6902),	-- Bands of Serra'kis
+				i( 6901),	-- Glowing Thresher Cape
 			})),
 			cr(74988, e(1144, {	-- Executioner Gore
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
 			})),
 			cr(74728, e( 437, {	-- Twilight Lord Bathiel
-				i(  1155),	-- Rod of the Sleepwalker
+				i( 1155),	-- Rod of the Sleepwalker
 				i(151440),	-- Blackfathom Ascendant's Helm
 				i(151439),	-- Bathiel's Scale Spaulders
-				i(  6903),	-- Gaze Dreamer Pants
+				i( 6903),	-- Gaze Dreamer Pants
 				i(151438),	-- Hungering Deepwater Treads
 			})),
 			cr(75408, e( 444, {	-- Aku'mai
 				ach(632),	-- Blackfathom Deeps
-				i(  6909),	-- Strike of the Hydra
-				i(  6911),	-- Moss Cinch
+				i( 6909),	-- Strike of the Hydra
+				i( 6911),	-- Moss Cinch
 				i(132553),	-- Algae-Twined Waistcord
-				i(  6910),	-- Leech Pants
+				i( 6910),	-- Leech Pants
 				i(151441),	-- Aku'mai Worshipper's Greatboots
 			})),
 			n(-40, {	-- Legacy
@@ -305,7 +308,5 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 		},
-		["lvl"] = 15,
-		["maps"] = { 221, 222, 223 },
 	}),
 })};

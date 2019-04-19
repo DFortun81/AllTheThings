@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-1000, { -- Sets
+			n(-1000, {	-- Sets
 				i(106390),	-- Bladespire Breastplate
 				i(106391),	-- Bladespire Gauntlets
 				i(106392),	-- Bladespire Girdle

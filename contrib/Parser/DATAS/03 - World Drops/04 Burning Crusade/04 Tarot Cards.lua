@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {	-- Burning Crusade
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings
 				i(31889),	-- Two of Blessings

@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				n(-16, {	-- Rares	
 					n(50784, {	-- Anith
+						["coord"] = { 32.6, 30.8, 70 },
 						["groups"] = {
 							i(7458),	-- Knight's Boots
 							i(7462),	-- Knight's Girdle
@@ -36,9 +37,9 @@ _.Zones =
 							i(7447),	-- Sentinel Bracers
 							i(9880),	-- Sorcerer Gloves
 						},
-						["coord"] = { 32.6, 30.8 },
 					}), 
 					n(50735, {	-- Blinkeye the Rattler
+						["coord"] = { 51.6, 16.6, 70 },
 						["groups"] = {
 							i(7458),	-- Knight's Boots
 							i(7435),	-- Twilight Mantle
@@ -64,9 +65,9 @@ _.Zones =
 							i(7444),	-- Sentinel Boots
 							i(7429),	-- Twilight Armor
 						},
-						["coord"] = { 51.6, 16.6 },
 					}), 
 					n(4339, {	-- Brimgore
+						["coord"] = { 50.2, 75.8, 70 },
 						["groups"] = {
 							i(9886),	-- Huntsman's Bands
 							i(9904),	-- Jazeraint Pauldrons
@@ -101,9 +102,13 @@ _.Zones =
 							i(7476),	-- Regal Sash
 							i(7439),	-- Sentinel Breastplate
 						},
-						["coord"] = { 50.2, 75.8 },
 					}), 
 					n(14230, {	-- Burgle Eye
+						["coords"] = {
+							{ 57.8, 16.2, 70 },
+							{ 59.0, 8.4, 70 },
+							{ 62.8, 7.8, 70 },
+						},
 						["groups"] = {
 							i(9849),	-- Conjurer's Hood
 							i(7447),	-- Sentinel Bracers
@@ -144,13 +149,9 @@ _.Zones =
 							i(9898),	-- Jazeraint Cloak
 							i(7431),	-- Twilight Pants
 						},
-						["coords"] = {
-							{ 57.8, 16.2 },
-							{ 59.0, 8.4 },
-							{ 62.8, 7.8 },
-						},
 					}), 
 					n(4380, {	-- Darkmist Widow
+						["coord"] = { 33.6, 22.8, 70 },
 						["groups"] = {
 							i(9863),	-- Archer's Shoulderpads
 							i(9862),	-- Archer's Trousers
@@ -195,9 +196,16 @@ _.Zones =
 							i(9898),	-- Jazeraint Cloak
 							i(7431),	-- Twilight Pants
 						},
-						["coord"] = { 33.6, 22.8 },
 					}), 
 					n(14232, {	-- Dart
+						["coords"] = {
+							{ 48.2, 14.2, 70 },
+							{ 47.4, 16.2, 70 },
+							{ 46.8, 17.6, 70 },
+							{ 48.0, 19.6, 70 },
+							{ 49.0, 18.4, 70 },
+							{ 49.0, 17.2, 70 },
+						},
 						["groups"] = {
 							i(7457),	-- Knight's Gauntlets
 							i(7443),	-- Sentinel Gloves
@@ -245,36 +253,33 @@ _.Zones =
 							i(7492),	-- Captain's Cloak
 							i(7454),	-- Knight's Breastplate
 						},
-						["coords"] = {
-							{ 48.2, 14.2 },
-							{ 47.4, 16.2 },
-							{ 46.8, 17.6 },
-							{ 48.0, 19.6 },
-							{ 49.0, 18.4 },
-							{ 49.0, 17.2 },
-						},
 					}), 
 					o(202080, {	-- Dart's Nest
+						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
+						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
+						["coords"] = {
+							{ 47.9, 19.0, 70 },
+							{ 49.1, 17.5, 70 },
+							{ 48.0, 14.5, 70 },
+							{ 46.5, 17.2, 70 },
+						},
 						["groups"] = {		
 							i(48112),	-- Darting Hatchling
 						},
-						["coords"] = {
-							{ 47.9, 19.0 },
-							{ 49.1, 17.5 },
-							{ 48.0, 14.5 },
-							{ 46.5, 17.2 },
-						},
-						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",
-						["icon"] = "Interface\\Icons\\INV_Pet_PinkMurlocEgg",	
 					}),
 					n(15552, {	-- Dr. Weavil
-						["groups"] = {
-							dr(3, i(142265))	-- Big Red Raygun
-						},
 						["lvl"] = 110,
-						["coord"] = { 76.0, 18.6 },
+						["coord"] = { 76.0, 18.6, 70 },
+						["groups"] = {
+							i(142265)	-- Big Red Raygun
+						},
 					}),
 					n(14231, {	-- Drogoth the Roamer
+						["coords"] = {
+							{ 39.8, 19.8, 70 },
+							{ 38.8, 19.8, 70 },
+							{ 39.6, 19.4, 70 },
+						},
 						["groups"] = {
 							i(7446),	-- Sentinel Cloak
 							i(7438),	-- Twilight Belt
@@ -320,13 +325,14 @@ _.Zones =
 							i(9877),	-- Sorcerer Cloak
 							i(9875),	-- Sorcerer Sash
 						},
-						["coords"] = {
-							{ 39.8, 19.8 },
-							{ 38.8, 19.8 },
-							{ 39.6, 19.4 },
-						},
 					}), 
 					n(14234, {	-- Hayoc
+						["coords"] = {
+							{ 48.0, 62.6, 70 },
+							{ 47.6, 61.6, 70 },
+							{ 48.8, 60.0, 70 },
+							{ 49.0, 61.6, 70 },
+						},
 						["groups"] = {
 							i(9863),	-- Archer's Shoulderpads
 							i(9862),	-- Archer's Trousers
@@ -369,14 +375,12 @@ _.Zones =
 							i(7459),	-- Knight's Pauldrons
 							i(7431),	-- Twilight Pants
 						},
-						["coords"] = {
-							{ 48.0, 62.6 },
-							{ 47.6, 61.6 },
-							{ 48.8, 60.0 },
-							{ 49.0, 61.6 },
-						},
 					}), 
 					n(50342, {	-- Heronis
+						["coords"] = {
+							{ 39.4, 28.6, 70 },
+							{ 40.2, 28.6, 70 },
+						},
 						["groups"] = {
 							i(9844),	-- Conjurer's Vest
 							i(7432),	-- Twilight Cowl
@@ -404,12 +408,9 @@ _.Zones =
 							i(9902),	-- Jazeraint Helm
 							i(7430),	-- Twilight Robe
 						},
-						["coords"] = {
-							{ 39.4, 28.6 },
-							{ 40.2, 28.6 },
-						},
 					}), 
 					n(50957, {	-- Hugeclaw
+						["coord"] = { 54.0, 43.8, 70 },
 						["groups"] = {
 							i(9852),	-- Conjurer's Robe
 							i(7434),	-- Twilight Boots
@@ -423,9 +424,13 @@ _.Zones =
 							i(7454),	-- Knight's Breastplate
 							i(7459),	-- Knight's Pauldrons
 						},
-						["coord"] = { 54.0, 43.8 },
 					}), 
 					n(14236, {	-- Lord Angler
+						["coords"] = {
+							{ 56.6, 62.2, 70 },
+							{ 56.6, 63.6, 70 },
+							{ 55.4, 63.6, 70 },
+						},
 						["groups"] = {
 							i(9856),	-- Archer's Boots
 							i(9859),	-- Archer's Cap
@@ -470,13 +475,9 @@ _.Zones =
 							i(9851),	-- Conjurer's Breeches
 							i(9844),	-- Conjurer's Vest
 						},
-						["coords"] = {
-							{ 56.6, 62.2 },
-							{ 56.6, 63.6 },
-							{ 55.4, 63.6 },
-						},
 					}), 
 					n(50875, {	-- Nychus
+						["coord"] = { 34.3, 70.6, 70 },
 						["groups"] = {
 							i(7445),	-- Sentinel Shoulders
 							i(7492),	-- Captain's Cloak
@@ -497,9 +498,9 @@ _.Zones =
 							i(7435),	-- Twilight Mantle
 							i(7493),	-- Captain's Bracers
 						},
-						["coord"] = { 34.3, 70.6 },
 					}), 
 					n(14237, {	-- Oozeworm
+						["coord"] = { 37.0, 62.6, 70 },
 						["groups"] = {
 							i(9854),	-- Archer's Jerkin
 							i(7445),	-- Sentinel Shoulders
@@ -538,9 +539,9 @@ _.Zones =
 							i(7474),	-- Regal Cloak
 							i(9875),	-- Sorcerer Sash
 						},
-						["coord"] = { 37.0, 62.6 },
 					}), 
 					n(50764, {	-- Paraliss
+						["coord"] = { 38.6, 74.6, 70 },
 						["groups"] = {
 							i(7493),	-- Captain's Bracers
 							i(9885),	-- Huntsman's Boots
@@ -562,9 +563,15 @@ _.Zones =
 							i(7432),	-- Twilight Cowl
 							i(9876),	-- Sorcerer Slippers
 						},
-						["coord"] = { 38.6, 74.6 },
 					}), 
 					n(14233, {	-- Ripscale
+						["coords"] = {
+							{ 37.8, 50.4, 70 },
+							{ 43.8, 50.0, 70 },
+							{ 42.0, 54.8, 70 },
+							{ 47.6, 55.8, 70 },
+							{ 49.2, 57.2, 70 },
+						},
 						["groups"] = {
 							i(9886),	-- Huntsman's Bands
 							i(9891),	-- Huntsman's Belt
@@ -599,15 +606,9 @@ _.Zones =
 							i(7439),	-- Sentinel Breastplate
 							i(7485),	-- Ranger Cord
 						},
-						["coords"] = {
-							{ 37.8, 50.4 },
-							{ 43.8, 50.0 },
-							{ 42.0, 54.8 },
-							{ 47.6, 55.8 },
-							{ 49.2, 57.2 },
-						},
 					}), 
 					n(51061, {	-- Roth-Salam
+						["coord"] = { 50.2, 84.6, 70 },
 						["groups"] = {
 							i(9852),	-- Conjurer's Robe
 							i(9891),	-- Huntsman's Belt
@@ -632,9 +633,9 @@ _.Zones =
 							i(7459),	-- Knight's Pauldrons
 							i(9877),	-- Sorcerer Cloak
 						},
-						["coord"] = { 50.2, 84.6 },
 					}), 
 					n(51069, {	-- Scintillex
+						["coord"] = { 55.8, 85.6, 70 },
 						["groups"] = {
 							i(9891),	-- Huntsman's Belt
 							i(9892),	-- Huntsman's Gloves
@@ -651,9 +652,12 @@ _.Zones =
 							i(7431),	-- Twilight Pants
 							i(7489),	-- Captain's Gauntlets
 						},
-						["coord"] = { 55.8, 85.6 },
 					}),
 					n(50945, {	-- Scruff
+						["coords"] = {
+							{ 29.4, 43.4, 70 },
+							{ 29.6, 44.8, 70 },
+						},
 						["groups"] = {
 							i(9855),	-- Archer's Belt
 							i(9859),	-- Archer's Cap
@@ -682,18 +686,19 @@ _.Zones =
 							i(9870),	-- Renegade Circlet
 							i(9877),	-- Sorcerer Cloak
 						},
-						["coords"] = {
-							{ 29.4, 43.4 },
-							{ 29.6, 44.8 },
-						},
 					}),
 					n(4368, {	-- Strashaz Myrmidon
-						["groups"] = {
-							un(2, i(12718)), -- Plans: Runic Breastplate
-						},
 						["u"] = 43,
+						["groups"] = {
+							un(2, i(12718)),	-- Plans: Runic Breastplate
+						},
 					}),
 					n(50901, {	-- Teromak
+						["coords"] = {
+							{ 41.8, 43.2, 70 },
+							{ 42.0, 42.0, 70 },
+							{ 41.4, 41.8, 70 },
+						},
 						["groups"] = {
 							i(7369),	-- Elder's Robe
 							i(9861),	-- Archer's Gloves
@@ -721,13 +726,13 @@ _.Zones =
 							i(9855),	-- Archer's Belt
 							i(9859),	-- Archer's Cap
 						},
-						["coords"] = {
-							{ 41.8, 43.2 },
-							{ 42.0, 42.0 },
-							{ 41.4, 41.8 },
-						},
 					}), 
 					n(14235, {	-- The Rot
+						["coords"] = {
+							{ 51.6, 59.4, 70 },
+							{ 51.6, 60.0, 70 },
+							{ 51.6, 61.0, 70 },
+						},
 						["groups"] = {
 							i(7492),	-- Captain's Cloak
 							i(9896),	-- Jazeraint Bracers
@@ -763,11 +768,6 @@ _.Zones =
 							i(7439),	-- Sentinel Breastplate
 							i(7429),	-- Twilight Armor
 							i(9889),	-- Huntsman's Cap
-						},
-						["coords"] = {
-							{ 51.6, 59.4 },
-							{ 51.6, 60.0 },
-							{ 51.6, 61.0 },
 						},
 					}), 
 				}),

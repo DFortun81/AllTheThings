@@ -116,7 +116,7 @@ _.Zones =
 								["groups"] = {
 									q(47514, {	-- Zuldazar
 										["qg"] = 135775,	-- Scouting Map
-										-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
+										-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievement because they can't pick anything up regardless and less spammy in Quest Chain window
 									}),
 									q(49615, {	-- Trust of a King
 										["qg"] = 133050,	-- Princes Talanji
@@ -475,6 +475,98 @@ _.Zones =
 								},
 								["races"] = HORDE_ONLY,
 							})),
+							{	-- A Bargain of Blood
+								["achievementID"] = 12480,	-- A Bargain of Blood
+								["races"] = HORDE_ONLY,		-- Horde Only Races
+								["g"] = {
+									{	-- Bulwark of Torcali
+										["questID"] = 47229,	-- Bulwark of Torcali
+										["qg"] = 121601,		-- Rokhan
+										["sourceQuests"] = {
+											47204,	-- The New Frontline
+											47205,	-- Warmother
+										},
+										["coords"] = {
+											{ 56.91, 19.11, 862 },
+										},
+									},
+									{ 	-- Rokhan
+										["questID"] = 47201,	-- Rokhan
+										["qg"] = 121599,		-- King Rastakhan
+										["sourceQuests"] = {
+											47198,	-- They Want Us Alive
+											47200,	-- Ticks
+										},
+										["coords"] = {
+											{ 60.39, 22.03, 862 },
+										},
+									},
+									{	-- The New Frontline
+										["questID"] = 47204,	-- The New Frontline
+										["qg"] = 121601,		-- Rokhan
+										["sourceQuests"] = {
+											47201,	-- Rokhan
+										},
+										["coords"] = {
+											{ 56.91, 19.11, 862 },
+										},
+									},
+									{	-- They Want Us Alive
+										["questID"] = 47198,	-- They Want Us Alive
+										["qg"] = 121599,		-- King Rastakhan
+										["sourceQuests"] = {
+											47199,	-- The Blood Gate
+										},
+										["coords"] = {
+											{ 60.39, 22.03, 862 },
+										},
+									},
+									{	-- Ticks
+										["questID"] = 47200,	-- Ticks
+										["qg"] = 121599,		-- King Rastakhan
+										["sourceQuests"] = {
+											47199,	-- The Blood Gate
+										},
+										["coords"] = {
+											{ 60.39, 22.03, 862 },
+										},
+									},
+									{	-- Warmother
+										["questID"] = 47205,	-- Warmother
+										["qg"] = 121601,		-- Rokhan
+										["sourceQuests"] = {
+											47201,	-- Rokhan
+										},
+										["coords"] = {
+											{ 56.91, 19.11, 862 },
+										},
+										["g"] = {
+											{	-- Bloodsiege Drape
+												["itemID"] = 158653,	-- Bloodsiege Drape
+											},
+											{	-- Shazraka's Curse Ring
+												["itemID"] = 162453,	-- Shazraka's Curse Ring
+											},
+										},
+									},
+								},
+							},
+							{	-- The Final Seal
+								["achievementID"] = 12481,	-- The Final Seal
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									{	-- Zandalar Forever!
+										["questID"] = 50954,	-- Zandalar Forever!
+										["qg"] = 135890,		-- King Rastakhan
+										["sourceQuests"] = {
+											47229,	-- Bulwark of Torcali
+										},
+										["coords"] = {
+											{ 60.05, 22.23, 862 },
+										},
+									},
+								},
+							},
 							q(49289, {	-- A Special Stone
 								["g"] = {
 									i(159151),	-- Tidemistress Greatcloak
@@ -483,6 +575,21 @@ _.Zones =
 									i(158442),	-- Torcalin Belt
 									i(158443),	-- Jambani Belt
 									i(157539),	-- Scroll of Storm Control
+								},
+							}),
+							qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
+								["qg"] = 138138,	-- Princess Telanji
+								["coord"] = { 43.7, 39.5 },
+								["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+							}),
+							qh(48400, {	-- Grand Theft Telemancy
+								["qg"] = 131580,	-- Apprentice Telemancer Astrandis
+								["g"] = {
+									i(155310),	-- Reliquary Explorer's Drape
+									i(158419),	-- Rastari Treads
+									i(158420),	-- Zanchuli Footwraps
+									i(158421),	-- Torcalin Treads
+									i(158422),	-- Jambani Treads
 								},
 							}),
 							qh(47587, {	-- Headhunter Jo
@@ -499,15 +606,29 @@ _.Zones =
 								},
 								["qg"] = 138669	-- Hemet Nesingwary
 							}),
-							qh(52113, {	-- Vol'jin, Son of Sen'jin
-								["qg"] = 137878,	-- Master Gadrin
-								["coord"] = { 45.5, 35.8 },
-								["sourceQuests"] = { 52114 },	-- Honoring a True Leader
+							qh(49680, {	-- Skycaller Soltok
+								["qg"] = 130450,	-- Bladeguard Sonji
+								["g"] = {
+									i(155311),	-- Soltok's Drape
+									i(155309),	-- Lightning Caller's Band
+								},
 							}),
-							qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
-								["qg"] = 138138,	-- Princess Telanji
-								["coord"] = { 43.7, 39.5 },
-								["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+							{	-- The Dark Lady Calls
+								["questID"] = 54097,
+								["qg"] = 146013,	-- Dark Ranger Alina
+								["coord"] = { 58.4, 62.7 },
+								["races"] = HORDE_ONLY,
+							},
+							qh(50297, {	-- The Head of Her Enemy
+								["qg"] = 130929,	-- Witch Doctor Jangalar
+								["g"] = {
+									i(159147),	-- Jambani Walkers
+									i(159149),	-- Zanchuli Footies
+									i(158666),	-- Jambani Voodoo Focus
+									i(159148),	-- Torcalin Walkers
+									i(159150),	-- Rastari Stompers
+									i(159123),	-- Jambani Barrier
+								},
 							}),
 							q(49285, {	-- Tiny Treasures
 								["g"] = {
@@ -517,12 +638,11 @@ _.Zones =
 								["coord"] = { 70.2, 65.0 },
 								["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers? (Horde) - NEEDS VERIFICATION, per wowhead comment.  Also need to make sure Alliance side has no prereqs.
 							}),
-							{	-- The Dark Lady Calls
-								["questID"] = 54097,
-								["qg"] = 146013,	-- Dark Ranger Alina
-								["coord"] = { 58.4, 62.7 },
-								["races"] = HORDE_ONLY,
-							},
+							qh(52113, {	-- Vol'jin, Son of Sen'jin
+								["qg"] = 137878,	-- Master Gadrin
+								["coord"] = { 45.5, 35.8 },
+								["sourceQuests"] = { 52114 },	-- Honoring a True Leader
+							}),
 						},
 					}),
 				},

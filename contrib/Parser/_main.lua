@@ -640,10 +640,6 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-desc = function(t, description)									-- Add a description to an object.
-	t.description = description;
-	return t;
-end
 dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 	if t and t.itemID then
 		t.dr = dropRate;
@@ -739,10 +735,6 @@ qart = function(t)						-- Gives a quest the Artifact Description
 	t.icon = "Interface\\Minimap\\TrapInactive_HammerGold";
 	return t;
 end
-qd = function(t)							-- Gives a quest the Daily Description
-	t.isDaily = true;
-	return t;
-end
 ql = function(t)							-- Gives a quest the Legendary Description
 	t.description = "This quest is part of a legendary quest line.";
 	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
@@ -751,14 +743,6 @@ end
 qpvp = function(t)						-- Gives a quest the PvP Description
 	t.description = "This quest is a PvP quest.";
 	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
-	return t;
-end
-qr = function(t)
-	t.repeatable = true;
-	return t;
-end
-qw = function(t)
-	t.isWeekly = true;
 	return t;
 end
 qwe = function(t)						-- Gives a quest the World Event Description

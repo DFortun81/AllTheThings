@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-10059, { -- Pandaria Scenarios
+			n(-10059, {	-- Pandaria Scenarios
 				["groups"] = {
 					ach(7252),		-- A Brewing Storm (A Brewing Storm)
 					ach(7988),		-- A Little Patience (A Little Patience)

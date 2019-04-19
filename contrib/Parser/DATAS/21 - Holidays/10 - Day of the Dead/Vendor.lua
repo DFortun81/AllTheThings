@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
-	holiday(307365, { -- Day of the Dead
+	holiday(307365, {	-- Day of the Dead
 		n(-2, {	-- Vendors
 			{	-- Champman <Day of the Dead Vendor>
 				["npcID"] = 34382,	-- Chapman

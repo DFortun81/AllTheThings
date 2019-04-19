@@ -17,21 +17,23 @@ _.Zones =
 					p(424),	-- Roach
 					p(482),	-- Rock Viper
 					p(419),	-- Small Frog
-					desc(p(485), "This wild pet can be found in the south eastern area of Desolace. It only spawns at night."),	-- Stone Armadillo
+					p(485, {	-- Stone Armadillo
+						["description"] = "This wild pet can be found in the south eastern area of Desolace. It only spawns at night.",
+					}),
 					p(480),	-- Topaz Shale Hatchling
 					{	-- Cassandra Kaboom
 						["questID"] = 31870,
 						["qg"] = 66372,	-- Merda Stronghoof
+						["coord"] = { 57.2, 45.8, 66 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["coord"] = { 57.2, 45.8 },
-						["races"] = HORDE_ONLY,
 					},	
 					{	-- Merda Stronghoof
 						["questID"] = 31872,
 						["qg"] = 66372,	-- Merda Stronghoof
-						["coord"] = { 57.2, 45.8 },
+						["coord"] = { 57.2, 45.8, 66 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},

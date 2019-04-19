@@ -10,7 +10,9 @@ _.ExpansionFeatures =
 				["mapID"] = 590,	-- Frostwall
 				["lvl"] = 90,
 				["maps"] = {
-					585,	-- Frostwall Mine (unclaimed)
+					585,	-- Frostwall Mine [Unclaimed / Level 1]
+					586,	-- Frostwall Mine [Level 2]
+					587,	-- Frostwall Mine [Level 3]
 				},
 				["isRaid"] = true,
 				["icon"] = "Interface\\Icons\\achievement_garrison_tier01_horde",

@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
-			n(-318, { -- Armor
-				n(-320, { -- Head
+			n(-318, {	-- Armor
+				n(-320, {	-- Head
 					i(10574),	-- Corpseshroud
 					i(10630),	-- Soulcatcher Halo
 					i(12549),	-- Braincage
@@ -115,7 +115,7 @@ _.WorldDrops =
 					i(16009),	-- Voice Amplification Modulator
 					un(7, i(5754)),	-- Wolfpack Medallion
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {	-- Shoulder
 					un(7, i(3231)),	-- Cutthroat Pauldrons
 					i(12998),	-- Magician's Mantle
 					i(13013),	-- Elder Wizard's Mantle
@@ -138,7 +138,7 @@ _.WorldDrops =
 					i(7727),	-- Watchman Pauldrons
 					i(7755),	-- Flintrock Shoulders
 				}),
-				n(-322, { -- Back
+				n(-322, {	-- Back
 					i(10060),	-- Duskwoven Cape
 					i(10071),	-- Righteous Cloak
 					i(10079),	-- Lord's Cape
@@ -158,7 +158,7 @@ _.WorldDrops =
 					i(10258),	-- Adventurer's Cape
 					i(10267),	-- Masterwork Cape
 					i(115348),	-- Feathered Cape
-					un(7, i(1190)), -- Overseer's Cloak
+					un(7, i(1190)),	-- Overseer's Cloak
 					i(12253),	-- Brilliant Red Cloak
 					i(12254),	-- Well Oiled Cloak
 					i(12551),	-- Stoneshield Cloak
@@ -263,12 +263,14 @@ _.WorldDrops =
 					i(2059),	-- Sentry Cloak
 					un(7, i(20693)),	-- Weighted Cloak
 					un(7, i(20697)),	-- Crystalline Threaded Cape
-					un(7, i(2241)), -- Desperado Cape
-					desc(un(7, i(22782)), "Added in WOD only to Big Crate of Salvage"),	-- Sin'dorei Cloak of Warding
+					un(7, i(2241)),	-- Desperado Cape
+					un(7, i(22782, {	-- Sin'dorei Cloak of Warding
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					un(7, i(2284)),	-- Rat Cloth Cloak
 					un(7, i(3018)),	-- Hide of Lupos
 					i(3475),	-- Cloak of Flames
-					un(7, i(4447)), -- Cloak of Night
+					un(7, i(4447)),	-- Cloak of Night
 					un(7, i(4462)),	-- Cloak of Rot
 					i(4695),	-- Burnished Cloak
 					i(4701),	-- Inscribed Cloak
@@ -295,7 +297,7 @@ _.WorldDrops =
 					un(7, i(5257)),	-- Dark Hooded Cape
 					un(7, i(5751)),	-- Webwing Cloak
 					un(7, i(5969)),	-- Regent's Cloak
-					un(7, i(5971)), -- Feathered Cape
+					un(7, i(5971)),	-- Feathered Cape
 					un(7, i(6179)),	-- Privateer's Cape
 					i(6378),	-- Seer's Cape
 					i(6381),	-- Bright Cloak
@@ -362,14 +364,18 @@ _.WorldDrops =
 					i(9951),	-- Chieftain's Cloak
 					i(9959),	-- Warmonger's Cloak
 				}),
-				n(-323, { -- Chest
-					desc(un(7, i(54784)), "Added in WOD only to Big Crate of Salvage"),	-- Burnished Tunic		
+				n(-323, {	-- Chest
+					un(7, i(54784, {	-- Burnished Tunic
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					i(10328),	-- Scarlet Chestpiece
 					i(10581),	-- Death's Head Vestment
 					i(10583),	-- Quillward Harness
 					i(120166),	-- Gorestained Garb
-					desc(un(7, i(120952)), "Added in WOD only to Big Crate of Salvage"),	-- Slarkhide
-					un(7, i(1211)), -- Gnoll War Harness
+					un(7, i(120952, {	-- Slarkhide
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
+					un(7, i(1211)),	-- Gnoll War Harness
 					i(12542),	-- Funeral Pyre Vestment
 					i(1297),	-- Robes of the Shadowcaster
 					i(12988),	-- Starsight Tunic
@@ -396,10 +402,10 @@ _.WorldDrops =
 					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 					i(2292),	-- Necrology Robes
 					i(24808),	-- Unyielding Chain Vest
-					un(7, i(2566)), -- Sacrificial Robes
+					un(7, i(2566)),	-- Sacrificial Robes
 					i(2800),	-- Black Velvet Robes
 					i(3000),	-- Brood Mother Carapace
-					un(7, i(3019)), -- Noble's Robe
+					un(7, i(3019)),	-- Noble's Robe
 					i(3053),	-- Humbert's Chestpiece
 					un(7, i(3330)),	-- Dargol's Hauberk
 					i(3416),	-- Martyr's Chain
@@ -410,9 +416,9 @@ _.WorldDrops =
 					i(4782),	-- Solstice Robe
 					un(7, i(4861)),	-- Sleek Feathered Tunic
 					i(5755),	-- Onyx Shredder Plate
-					un(7, i(6180)), -- Slarkskin
-					un(7, i(6195)), -- Wax-Polished Armor
-					un(7, i(6197)), -- Loch Croc Hide Vest
+					un(7, i(6180)),	-- Slarkskin
+					un(7, i(6195)),	-- Wax-Polished Armor
+					un(7, i(6197)),	-- Loch Croc Hide Vest
 					i(7728),	-- Beguiler Robes
 					i(7759),	-- Archon Chestpiece
 					i(821),		-- Riverpaw Leather Vest
@@ -422,21 +428,21 @@ _.WorldDrops =
 					i(9434),	-- Elemental Raiment
 					i(9508),	-- Mechbuilder's Overalls
 				}),
-				n(-324, { -- Shirt
-					un(7, i(127)), -- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
+				n(-324, {	-- Shirt
+					un(7, i(127)),	-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
 					i(138385),	-- Lucky Shirt
-					un(7, i(148)), -- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
-					un(7, i(154)), -- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
+					un(7, i(148)),	-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
+					un(7, i(154)),	-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
 					i(16059),	-- Common Brown Shirt
 					i(16060),	-- Common White Shirt
 					i(18231),	-- Sleeveless T-Shirt
-					un(7, i(20897)), -- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
-					un(7, i(20901)), -- Warder's Shirt (Starter Shirt Blood Elf Hunters)
+					un(7, i(20897)),	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
+					un(7, i(20901)),	-- Warder's Shirt (Starter Shirt Blood Elf Hunters)
 					un(7, i(2105)),	 -- Thug Shirt
-					un(7, i(23345)), -- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
-					un(7, i(23473)), -- Recruit's Shirt	(Starter Shirt Draenei Warriors)
-					un(7, i(23476)), -- Squire's Shirt	(Starter Shirt Draenei Paladins)
-					un(7, i(24143)), -- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
+					un(7, i(23345)),	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
+					un(7, i(23473)),	-- Recruit's Shirt	(Starter Shirt Draenei Warriors)
+					un(7, i(23476)),	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
+					un(7, i(24143)),	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
 					i(3426),	-- Bold Yellow Shirt
 					i(3427),	-- Stylish Black Shirt
 					i(3428),	-- Common Gray Shirt
@@ -468,21 +474,21 @@ _.WorldDrops =
 					i(45672),	-- Orgrimmar Doublet
 					i(45673),	-- Thunder Bluff Doublet
 					i(45674),	-- Undercity Doublet
-					un(7, i(49)), -- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
+					un(7, i(49)),	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
 					i(49567),	-- Gilnean Adventurer's Shirt
 					i(5107),	-- Deckhand's Shirt
 					i(53),		-- Neophyte's Shirt
 					i(6096),	-- Apprentice's Shirt
 					i(6097),	-- Acolyte's Shirt
 					un(7, i(6117)),	-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
-					un(7, i(6120)), -- Recruit's Shirt (Former starter shirt for NE Warriors)
-					un(7, i(6125)), -- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
-					un(7, i(6134)), -- Primitive Mantle (Former starter shirt for Troll Shaman)
-					un(7, i(6136)), -- Trapper's Shirt (Former starter shirt for Troll Rogues)
+					un(7, i(6120)),	-- Recruit's Shirt (Former starter shirt for NE Warriors)
+					un(7, i(6125)),	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
+					un(7, i(6134)),	-- Primitive Mantle (Former starter shirt for Troll Shaman)
+					un(7, i(6136)),	-- Trapper's Shirt (Former starter shirt for Troll Rogues)
 					i(6833),	-- White Tuxedo Shirt
 					i(68611),	-- Red Shirt
 				}),
-				n(-326, { -- Wrist
+				n(-326, {	-- Wrist
 					i(10632),	-- Slimescale Bracers
 					i(12546),	-- Aristocratic Cuffs
 					i(12550),	-- Runed Golem Shackles
@@ -516,7 +522,7 @@ _.WorldDrops =
 					i(9432),	-- Skullplate Bracers
 					i(9433),	-- Forgotten Wraps
 				}),
-				n(-327, { -- Hands
+				n(-327, {	-- Hands
 					i(10413),	-- Gloves of the Fang
 					i(10584),	-- Stormgale Fists
 					i(10631),	-- Murkwater Gauntlets
@@ -526,7 +532,7 @@ _.WorldDrops =
 					i(13071),	-- Plated Fist of Hakoo
 					i(13072),	-- Stonegrip Gauntlets
 					i(13126),	-- Battlecaller Gauntlets
-					un(7, i(1314)), -- Ghoul Fingers
+					un(7, i(1314)),	-- Ghoul Fingers
 					i(132743),	-- Slither-Scale Gauntlets
 					i(14551),	-- Edgemaster's Handguards
 					i(1659),	-- Engineering Gloves
@@ -546,7 +552,7 @@ _.WorldDrops =
 					un(7, i(1945)),	-- Woodworking Gloves
 					i(1978),	-- Wolfclaw Gloves
 					i(2167),	-- Foreman's Gloves
-					un(7, i(2274)), -- Sapper's Gloves
+					un(7, i(2274)),	-- Sapper's Gloves
 					i(2564),	-- Elven Spirit Claws
 					i(31126),	-- Gloves of Ferocity
 					un(7, i(3341)),	-- Gauntlets of Ogre Strength
@@ -561,12 +567,12 @@ _.WorldDrops =
 					i(9435),	-- Reticulated Bone Gauntlets
 					i(9491),	-- Hotshot Pilot's Gloves
 				}),
-				n(-328, { -- Waist
+				n(-328, {	-- Waist
 					un(7, i(1215)),	-- Support Girdle
 					i(12257),	-- Heavy Notched Belt
 					i(12258),	-- Serpent Clasp Belt
 					i(12978),	-- Stormbringer Belt
-					un(7, i(1299)), -- Lesser Belt of the Spire
+					un(7, i(1299)),	-- Lesser Belt of the Spire
 					i(13011),	-- Silver-Lined Belt
 					i(13077),	-- Girdle of Uther
 					i(13105),	-- Sutarn's Ring
@@ -596,10 +602,10 @@ _.WorldDrops =
 					i(16864),	-- Belt of Might
 					un(7, i(18676)),	-- Sash of the Windreaver
 					i(18702),	-- Belt of the Ordained
-					un(7, i(2283)), -- Rat Cloth Belt
+					un(7, i(2283)),	-- Rat Cloth Belt
 					un(7, i(2899)),	-- Wendigo Collar
 					i(2911),	-- Keller's Girdle
-					un(7, i(3229)), -- Tarantula Silk Sash
+					un(7, i(3229)),	-- Tarantula Silk Sash
 					un(7, i(3429)),	-- Guardsman Belt
 					un(7, i(4436)),	-- Jewel-Encrusted Sash
 					un(7, i(4463)),	-- Beaded Raptor Collar
@@ -612,10 +618,10 @@ _.WorldDrops =
 					un(7, i(5750)),	-- Warchief's Girdle
 					un(7, i(5975)),	-- Ruffian Belt
 					un(7, i(6200)),	-- Garneg's War Belt
-					un(7, i(832)), -- Silver Defias Belt
+					un(7, i(832)),	-- Silver Defias Belt
 					i(9405),	-- Girdle of Golem Strength	
 				}),
-				n(-329, { -- Legs
+				n(-329, {	-- Legs
 					i(10633),	-- Silvershell Leggings
 					i(12255),	-- Pale Leggings
 					i(12256),	-- Cindercloth Leggings
@@ -655,7 +661,7 @@ _.WorldDrops =
 					i(9484),	-- Spellshock Leggings
 					i(9509),	-- Petrolspill Leggings
 				}),
-				n(-330, { -- Feet
+				n(-330, {	-- Feet
 					i(10332),	-- Scarlet Boots
 					i(10578),	-- Thoughtcast Boots
 					i(10582),	-- Briar Tredders
@@ -682,7 +688,7 @@ _.WorldDrops =
 					un(7, i(2232)),	-- Dark Runner Boots
 					i(2276),	-- Swampwalker Boots
 					un(7, i(4464)),	-- Trouncing Boots
-					un(7, i(4660)), -- Walking Boots
+					un(7, i(4660)),	-- Walking Boots
 					i(4788),	-- Agile Boots
 					i(4789),	-- Stable Boots
 					un(7, i(5968)),	-- Rugged Boots (Added during WoD to Salvage Crates)

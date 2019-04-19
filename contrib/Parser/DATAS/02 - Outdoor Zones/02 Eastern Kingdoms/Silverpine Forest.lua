@@ -7,16 +7,16 @@ _.Zones =
 		m(21, {	-- Silverpine Forest
 			["groups"] = {
 				n(-228, { 	-- Flight Path
-					fp(645, { -- Forsaken High Command, Silverpine Forest
+					fp(645, {	-- Forsaken High Command, Silverpine Forest
 						["coord"] = { 57.8, 8.8 },
 					}),
-					fp(681, { -- Forsaken Rear Guard, Silverpine Forest
+					fp(681, {	-- Forsaken Rear Guard, Silverpine Forest
 						["coord"] = { 45.8, 21.8 },
 					}),
-					fp(654, { -- The Forsaken Front, Silverpine Forest
+					fp(654, {	-- The Forsaken Front, Silverpine Forest
 						["coord"] = { 50.8, 63.6 },
 					}),
-					fp(10, { -- The Sepulcher, Silverpine Forest
+					fp(10, {	-- The Sepulcher, Silverpine Forest
 						["coord"] = { 45.4, 42.4 },
 					}),
 				}),
@@ -67,7 +67,7 @@ _.Zones =
 						["qg"] = 45617,	-- Lady Sylvanas Windrunner
 						["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 					}),
-					qh(27601, { -- Cities in Dust
+					qh(27601, {	-- Cities in Dust
 						["groups"] = {
 							i(62897),	-- Bracers of the Most Trusted
 							i(131680),	-- Belt of Absolute Allegiance
@@ -105,7 +105,7 @@ _.Zones =
 						["qg"] = 45195,	-- Bloodfang Stalker
 						["sourceQuests"] = { 27180 },	-- Honor the Dead
 					}),
-					qh(27575, { -- From the Belly of the Beast
+					qh(27575, {	-- From the Belly of the Beast
 						["groups"] = {
 							i(131679),	-- Better, Stronger, Faster Bracers
 							i(62887),	-- Bracers of the Million Gold Man
@@ -666,11 +666,11 @@ _.Zones =
 --					n(46981, { 	-- Nightlash	}), 
 				}),
 				n(-2,  {	-- Vendors
-					nh(3552, { -- Alexandre Lefevre <Leather Armor Merchant>
-						i(4788), -- Agile Boots
-						i(4789), -- Stable Boots
+					nh(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
+						i(4788),	-- Agile Boots
+						i(4789),	-- Stable Boots
 					}),
-					nh(3554, { -- Andrea Boynton <Clothier>
+					nh(3554, {	-- Andrea Boynton <Clothier>
 						i(4782), 	-- Solstice Robe
 						i(4781), 	-- Whispering Vest
 						i(4786), 	-- Wise Man's Belt
@@ -678,7 +678,7 @@ _.Zones =
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
 					}),
-					nh(3556, { -- Andrew Hilbert <Trade Supplies>
+					nh(3556, {	-- Andrew Hilbert <Trade Supplies>
 						i(6272),	-- Pattern: Blue Linen Robe
 						i(5786), 	-- Pattern: Murloc Scale Belt
 						i(5787), 	-- Pattern: Murloc Scale Breastplate
@@ -704,7 +704,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
 					nh(9553, {	-- Nadia Vernon <Bowyer>
-						i(11304), -- Fine Longbow
+						i(11304),	-- Fine Longbow
 					}),
 					n(3534, {	-- Wallace the Blind <Weaponsmith>
 						i(4817), 	-- Blessed Claymore
@@ -751,7 +751,7 @@ _.Zones =
 								un(2, i(3458)),	-- Rugged Mail Gloves
 							})),
 							un(40, qh(429, {	-- Wild Hearts
-								un(2, i(4597)),	-- Recipe: Discolored Healing Potion
+								un(7, i(4597)),	-- Recipe: Discolored Healing Potion
 							})),
 						}),
 						n(-16, {	-- Rares (Legacy)
@@ -785,7 +785,7 @@ _.Zones =
 							["description"] = "Becomes available during To Foresaken Forward Command and is no longer available after The Great Esacpe.",
 						}),
 					}),
-					n(-17, { -- Quests
+					n(-17, {	-- Quests
 						qh(27406, {	-- A Man Named Godfrey
 							["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 							["coord"] = { 72.9, 30.1 },

@@ -187,6 +187,57 @@ namespace Parser_V2
             #endregion
             #region Merge (for acquiring fields for the Item Database)
             /// <summary>
+            /// Merge the array data!
+            /// </summary>
+            /// <param name="item">The item!</param>
+            /// <param name="field">The field!</param>
+            /// <param name="value">The value.</param>
+            private static void MergeArrayData(Dictionary<string, object> item, string field, object value)
+            {
+                /*
+                bool b = item.TryGetValue("itemID", out object itemIDObj) && Convert.ToInt32(itemIDObj) == 162825 && field == "c";
+                if (b)
+                {
+                    Console.WriteLine(ToJSON(value));
+                    Console.WriteLine(value.GetType().ToString());
+                }
+                */
+
+                // Convert the data to a list of generic objects.
+                var newList = value as List<object>;
+                if (newList == null)
+                {
+                    var dict = value as Dictionary<object, object>;
+                    if (dict == null) return;
+                    else newList = dict.Values.ToList();
+                }
+
+                // Attempt to get the old list data.
+                List<object> oldList;
+                if (item.TryGetValue(field, out object oldData))
+                {
+                    // Convert the old data to a list of objects.
+                    oldList = oldData as List<object>;
+                }
+                else
+                {
+                    // Create a new list.
+                    item[field] = oldList = new List<object>();
+                }
+
+                // Merge the new list of data into the old data and ensure there are no duplicate values.
+                foreach (var entry in newList)
+                {
+                    var index = Convert.ToInt32(entry);
+                    if (oldList.Contains(index)) continue;
+                    oldList.Add(index);
+                }
+
+                // Sort the old list to ensure that the order is consistent.
+                oldList.Sort();
+            }
+
+            /// <summary>
             /// Merge the field into the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into an item.
             /// </summary>
@@ -290,6 +341,7 @@ namespace Parser_V2
                     case "f":
                     case "u":
                     case "b":
+                    case "r":
                     case "ilvl":
                     case "lvl":
                     case "q":
@@ -300,51 +352,11 @@ namespace Parser_V2
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
-                    case "races":
                     case "specs":
+                    case "races":
                     case "sourceQuests":
                         {
-                            /*
-                            bool b = item.TryGetValue("itemID", out object itemIDObj) && Convert.ToInt32(itemIDObj) == 162825 && field == "c";
-                            if (b)
-                            {
-                                Console.WriteLine(ToJSON(value));
-                                Console.WriteLine(value.GetType().ToString());
-                            }
-                            */
-
-                            // Convert the data to a list of generic objects.
-                            var newList = value as List<object>;
-                            if (newList == null)
-                            {
-                                var dict = value as Dictionary<object, object>;
-                                if (dict == null) return;
-                                else newList = dict.Values.ToList();
-                            }
-
-                            // Attempt to get the old list data.
-                            List<object> oldList;
-                            if (item.TryGetValue(field, out object oldData))
-                            {
-                                // Convert the old data to a list of objects.
-                                oldList = oldData as List<object>;
-                            }
-                            else
-                            {
-                                // Create a new list.
-                                item[field] = oldList = new List<object>();
-                            }
-
-                            // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var entry in newList)
-                            {
-                                var index = Convert.ToInt32(entry);
-                                if (oldList.Contains(index)) continue;
-                                oldList.Add(index);
-                            }
-
-                            // Sort the old list to ensure that the order is consistent.
-                            oldList.Sort();
+                            MergeArrayData(item, field, value);
                             break;
                         }
 
@@ -574,10 +586,11 @@ namespace Parser_V2
             /// Merge the fields from the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into the data.
             /// </summary>
+            /// <param name="itemID">The item ID being merged.</param>
             /// <param name="data">The data dictionary to merge into.</param>
             /// <param name="field">The name of the field being merged.</param>
             /// <param name="value">The value of the merged field.</param>
-            public static void MergeInto(Dictionary<string, object> data, string field, object value)
+            public static void MergeInto(int itemID, Dictionary<string, object> data, string field, object value)
             {
                 switch (field)
                 {
@@ -603,13 +616,20 @@ namespace Parser_V2
                     case "lvl":
                     case "q":
                     case "c":
-                    case "races":
                     case "specs":
                     case "sourceQuests":
                     case "repeatable":
                     case "isWeekly":
                     case "isDaily":
                         {
+                            data[field] = value;
+                            break;
+                        }
+                    case "races":
+                    case "r":
+                        {
+                            // Check for Mark of Honor and don't merge!
+                            if (itemID == 137642) break;
                             data[field] = value;
                             break;
                         }
@@ -669,13 +689,14 @@ namespace Parser_V2
 
             /// <summary>
             /// Merge information about the item into the data dictionary.
-            /// Fields need to be whitelisted in the MergeInto(data, field, value) function.
+            /// Fields need to be whitelisted in the MergeInto(itemID, data, field, value) function.
             /// </summary>
+            /// <param name="itemID">The item ID being merged.</param>
             /// <param name="item">The item dictionary to merge into the data table.</param>
             /// <param name="data">The data dictionary to receive the merged data.</param>
-            public static void MergeInto(Dictionary<string, object> item, Dictionary<string, object> data)
+            public static void MergeInto(int itemID, Dictionary<string, object> item, Dictionary<string, object> data)
             {
-                foreach (var pair in item) MergeInto(data, pair.Key, pair.Value);
+                foreach (var pair in item) MergeInto(itemID, data, pair.Key, pair.Value);
             }
 
             /// <summary>
@@ -702,7 +723,7 @@ namespace Parser_V2
                 ITEMS_WITH_REFERENCES[itemID] = true;
 
                 // Merge the item with the data dictionary.
-                MergeInto(item, data);
+                MergeInto(itemID, item, data);
             }
             
             /// <summary>
@@ -713,13 +734,13 @@ namespace Parser_V2
             public static void MergeInto(Dictionary<string, object> data)
             {
                 // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
+                if (data.TryGetValue("itemID", out int itemID))
                 {
-                    MergeInto(Convert.ToInt32(itemIDRef), data);
+                    MergeInto(itemID, data);
                 }
-                else if (data.TryGetValue("toyID", out itemIDRef))
+                else if (data.TryGetValue("toyID", out itemID))
                 {
-                    MergeInto(Convert.ToInt32(itemIDRef), data);
+                    MergeInto(itemID, data);
                 }
             }
 
@@ -732,13 +753,13 @@ namespace Parser_V2
             public static void MergeInto(Dictionary<string, object> data, out int itemID)
             {
                 // Attempt to extra the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef))
+                if (data.TryGetValue("itemID", out itemID))
                 {
-                    MergeInto(itemID = Convert.ToInt32(itemIDRef), data);
+                    MergeInto(itemID, data);
                 }
-                else if (data.TryGetValue("toyID", out itemIDRef))
+                else if (data.TryGetValue("toyID", out itemID))
                 {
-                    MergeInto(itemID = Convert.ToInt32(itemIDRef), data);
+                    MergeInto(itemID, data);
                 }
                 else itemID = -1;
             }

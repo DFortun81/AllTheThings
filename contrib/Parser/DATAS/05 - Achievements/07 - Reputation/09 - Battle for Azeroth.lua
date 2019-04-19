@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-10052, { -- Battle for Azeroth
+			n(-10052, {	-- Battle for Azeroth
 				["groups"] = {
 					ach(12947, { 	-- Azerothian Diplomat
 						crit(1), 		-- Zandalari (H) / Proudmoore (A)

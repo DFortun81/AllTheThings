@@ -44,6 +44,7 @@ AllTheThings.L = {
 
 	-- Event Text
 	["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
+	["ITEM_ID_ADDED_RANK"] = "%s (%d) [Rank %d] was added to your collection.";
 	["ITEM_ID_ADDED_MISSING"] = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
 	["ITEM_ID_ADDED_SHARED"] = "%s (%d) [+%d] were added to your collection.";
 	["ITEM_ID_ADDED_SHARED_MISSING"] = "%s (%d) [+%d] were added to your collection. Not found in the database. Please report to the ATT Discord!";
@@ -137,7 +138,12 @@ AllTheThings.L = {
 		["WoW Anniversary"] = "Anniversary",
 		
 	};
-
+	["CUSTOM_DIFFICULTIES"] = {
+		[-1] = "Raid Finder (5.4)",
+		[-2] = "Flexible (5.4)",
+		[-3] = "Normal (5.4)",
+		[-4] = "Heroic (5.4)",
+	},
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"
 		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
@@ -306,6 +312,10 @@ AllTheThings.L = {
 		[-73] = "Interface\\Icons\\achievement_zone_silithus_01",				-- Call of the Scarab
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01", 				-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01", 				-- Shadowforge City
+		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",			-- Graveyard (SM)
+		[-86] = "Interface\\Icons\\INV_Misc_Book_13",							-- Library (SM)
+		[-87] = "Interface\\Icons\\Garrison_Building_Armory",					-- Armory (SM)
+		[-88] = "Interface\\Icons\\Ability_Paladin_GaurdedbytheLight",			-- Cathedral (SM)
 		[-90] = "Interface\\Icons\\INV_Misc_Bone_Skull_01",						-- Elite
 		[-91] = "Interface\\Icons\\INV_Misc_Dust_02",							-- Deprecated
 		[-92] = "Interface\\Icons\\inv_misc_head_gnoll_01",						-- Meatball Instructions
@@ -413,22 +423,26 @@ AllTheThings.L = {
 		[-219] = "Interface\\MINIMAP\\TRACKING\\Profession",					-- Profession Trainers
 		[-220] = "Interface\\MINIMAP\\TRACKING\\Class",							-- Class
 		[-221] = "Interface\\Icons\\inv_orderhall_orderresources",				-- Bonus Objectives
-		[-222] = "Interface\\Icons\\inv_misc_coin_01",							-- Treasure Hunter
-		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",		-- Daily
-		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 					-- Demon Hunter
-		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",			-- Elemental Bonds
-		[-226] = "Interface\\ICONS\\INV_Misc_Map02",							-- World Drops
-		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",					-- Victory
-		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",					-- Flight Paths
-		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",				-- Conquest
+		[-222] = "Interface\\Icons\\inv_misc_coin_01",										-- Treasure Hunter
+		[-223] = "Interface\\Icons\\achievement_quests_completed_daily_07",					-- Daily
+		[-224] = "Interface\\Icons\\ClassIcon_DemonHunter", 								-- Demon Hunter
+		[-225] = "Interface\\Icons\\spell_lightning_lightningbolt01",						-- Elemental Bonds
+		[-226] = "Interface\\ICONS\\INV_Misc_Map02",										-- World Drops
+		[-227] = "Interface\\ICONS\\spell_holy_divinepurpose",								-- Victory
+		[-228] = "Interface\\Minimap\\Tracking\\Flightmaster",								-- Flight Paths
+		[-230] = "Interface\\Icons\\achievement_legionpvp2tier3",							-- Conquest
 		[-231] = "Interface\\Icons\\Spell_Shadow_DeathScream",
 		[-232] = "Interface\\Icons\\Spell_Shadow_DeathScream",
-		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
-		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",		-- Warfront: The Battle for Stromgarde
+		[-233] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
+		[-234] = "Interface\\Icons\\achievement_zone_arathihighlands_01",					-- Warfront: The Battle for Stromgarde
 		[-235] = "Interface\\Icons\\inv_scroll_05",
-		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",				-- Bounty
-		[-244] = "Interface\\Icons\\ability_racial_fireblood",					-- Dark Iron Dwarf
-		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",			-- Mag'har Orc
+		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
+		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
+		[-244] = "Interface\\Icons\\ability_racial_fireblood",								-- Dark Iron Dwarf
+		[-245] = "Interface\\Icons\\achievement_alliedrace_magharorc",						-- Mag'har Orc
+		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll",					-- Zandalari Troll
+		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",					-- Kul Tiran
+		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -464,6 +478,7 @@ AllTheThings.L = {
 		[-348] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
 		[-349] = "Interface\\Icons\\Ability_Mage_IceForm",						-- Cosmetic
 		[-350] = "Interface\\Icons\\inv_misc_book_07",							-- Spell Books
+		[-351] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE",			-- Boss Drop
 		[-355] = "Interface\\Icons\\misc_arrowlup",								-- Titanforged
 		[-363] = "Interface\\Icons\\achievement_reputation_argentchampion", 	-- The Argent Tournament
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",				-- The Construct Quarter
@@ -490,6 +505,7 @@ AllTheThings.L = {
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",				-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",					-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",				-- WoW Anniversary
+		[-501] = "Interface\\Icons\\ability_racial_molemachine",				-- Mole Machine
 		[-531] = "Interface\\Icons\\achievement_general",						-- 2008 Spirit of Competition Event
 		[-532] = "Interface\\Icons\\Inv_gravegolempet",							-- Heroes of the Storm Promotion
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",							-- Hearthstone Promotion
@@ -1075,6 +1091,7 @@ AllTheThings.L = {
 		[-233] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Horde]
 		[-234] = GetSpellInfo(279443),											-- Warfront: The Battle for Stromgarde [Alliance]
 		[-235] = AUCTION_CATEGORY_RECIPES,										-- Recipes
+		[-236] = "Alliance War Campaign",										-- Alliance War Campaign
 		[-237] = GetSpellInfo(290253),											-- Warfront: The Battle for Darkshore [Alliance]
 		[-238] = GetSpellInfo(290228),											-- Warfront: The Battle for Darkshore [Horde]
 		[-239] = GetSpellInfo(208246),											-- Assault [8.1 Assaults]
@@ -1092,6 +1109,9 @@ AllTheThings.L = {
 		[-249] = GetSpellInfo(258752),											-- Twilight Filter
 		[-250] = GetSpellInfo(258803),											-- Argus Filter
 	
+		[-251] = "Zandalari Troll",												-- Zandalari Troll
+		[-252] = "Kul Tiran",													-- Kul Tiran
+		[-253] = "Horde War Campaign",											-- Horde War Campaign
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1137,6 +1157,7 @@ AllTheThings.L = {
 		[-348] = GetItemSubClassInfo(2,13),										-- Fist Weapons
 		[-349] = GetItemSubClassInfo(4,5),										-- Cosmetic
 		[-350] = SPELLBOOK,														-- Spell Books
+		[-351] = "Boss Drop",													-- Boss Drop
 		[-355] = GetSpellInfo(257215),											-- Titanforged
 		[-356] = "Assault on the Dark Portal",
 		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
@@ -1188,7 +1209,26 @@ AllTheThings.L = {
 		[-497] = GetSpellInfo(213410).." "..GetSpellInfo(76724),				-- Demonic Offering
 		[-498] = GetSpellInfo(23700),											-- Twisting Nether
 		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
-		[-500] = "WoW Anniversary",
+		[-500] = "WoW Anniversary",-- Dark Iron Dwarves Mole Machine
+		[-501] = GetSpellInfo(265225),											-- Mole Machine
+		[-502] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
+		[-503] = C_Map.GetAreaInfo(8771),										-- Honor's Stand
+		[-503] = C_Map.GetAreaInfo(537),										-- Fire Plume Ridge
+		[-504] = C_Map.GetAreaInfo(348),											-- Aerie Peak
+		[-505] = C_Map.GetAreaInfo(1584),										-- Blackrock Depths
+		[-506] = C_Map.GetAreaInfo(1438),										-- Nethergarde Keep
+		[-507] = C_Map.GetAreaInfo(3746),										-- The Hand of Gul'dan [Outlands]
+		[-508] = C_Map.GetAreaInfo(3866),										-- Skald [Outlands]
+		[-509] = C_Map.GetAreaInfo(4168),										-- Ruby Dragonshrine
+		[-510] = C_Map.GetAreaInfo(4658),										-- Argent Tournament Grounds
+		[-511] = C_Map.GetAreaInfo(5963),										-- Stormstout Brewery
+		[-512] = C_Map.GetAreaInfo(6085),										-- One Keg
+		[-513] = C_Map.GetAreaInfo(6766),										-- The Pit
+		[-514] = C_Map.GetAreaInfo(7139),										-- Elemental Plateau
+		[-515] = C_Map.GetAreaInfo(8648),										-- Aalgen Point
+		[-516] = C_Map.GetAreaInfo(7806),										-- Neltharion's Vault
+		-- Note!! -517 through -519 reserved for if they add drills to BfA content
+				
 		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
 		[-522] = "Wrath of the Lich King: Zombie Infestation",
@@ -1196,7 +1236,7 @@ AllTheThings.L = {
 		[-525] = "Warlords of Draenor: Iron Horde Incursion",
 		[-526] = "Legion: Legion Invasion",
 		[-527] = "Battle for Azeroth: War of the Thorns",
-
+		[-528] = "Broken Isles",												-- Broken Isles [Mole Machine]
 		[-531] = "2008 Spirit of Competition Event",
 		[-532] = "Heroes of the Storm Promotion",
 		[-533] = "Hearthstone Promotion",
@@ -1721,14 +1761,15 @@ AllTheThings.L = {
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
+		[-10069] = "Scenario's",
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
-		[-90000] = "Lunarwing Shallows",
-		[-90001] = "Lostlight Grotto",
+		[-90000] = C_Map.GetAreaInfo(7680),							-- Lunarwing Shallows
+		[-90000] = C_Map.GetAreaInfo(8268),							-- Lostlight Grotto
 		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
-		[-90003] = "Waning Glacier",								-- Waning Glacier
-		[-90004] = "Anyport",										-- Currently no localization calls
+		[-90002] = C_Map.GetAreaInfo(9338),							-- Waning Glacier
+		[-90002] = C_Map.GetAreaInfo(9617),							-- Anyport
 		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
 		
 		-- Durotar
@@ -1778,6 +1819,7 @@ AllTheThings.L = {
 		[35251] = "Interface\\Icons\\Garrison_BronzeChest",
 		[62483] = "Interface\\Icons\\INV_WorseRobot",
 		[112948] = "Interface\\Icons\\INV_Misc_Food_Lunchbox_Silver",
+		[113768] = "Interface\\Icons\\inv_egg_06",
 		[131474] = "Interface\\Icons\\Creatureportrait_Nexus_Floating_Disc",
 		[138492] = "Interface\\Icons\\INV_Misc_Apexis_Shard",
 		[142195] = "Interface\\Icons\\INV_Misc_Map07",
@@ -1798,6 +1840,8 @@ AllTheThings.L = {
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180448] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[180503] = "Interface\\Icons\\INV_Misc_Book_09",
+		[180690] = "Interface\\Icons\\Garrison_BronzeChest",
+		[180691] = "Interface\\Icons\\Garrison_BronzeChest",
 		[180794] = "Interface\\Icons\\INV_Misc_Book_06",
 		[180918] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[181011] = "Interface\\Icons\\INV_Misc_Book_11",
@@ -1819,9 +1863,13 @@ AllTheThings.L = {
 		[183770] = "Interface\\Icons\\Spell_Mage_FocusingCrystal",
 		[183811] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[184465] = "Interface\\Icons\\INV_6_2Raid_Trinket_3b",
+		[184660] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[184825] = "Interface\\Icons\\INV_Misc_Book_05",
 		[184945] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[184946] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[185035] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[185126] = "Interface\\Icons\\ToolTip_CrystallizedFel",
+		[185165] = "Interface\\Icons\\ToolTip_CrystallizedFel",
 		[185927] = "Interface\\Icons\\ToolTip_CrystallizedFel",
 		[186426] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[186648] = "Interface\\Icons\\INV_Box_01",
@@ -2191,6 +2239,8 @@ AllTheThings.L = {
 		[290765] = "Interface\\Icons\\INV_Ore_Gold_Nugget",
 		[290993] = "Interface\\Icons\\inv_misc_treasurechest04b",
 		[291143] = "Interface\\Icons\\inv_misc_wrench_01",
+		[294703] = "Interface\\Icons\\inv_box_03",
+		[311218] = "Interface\\Icons\\inv_knife_1h_artifactcthun_d_01",
 		[9999999] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999998] = "Interface\\Icons\\Garrison_SilverChest",
 		[9999997] = "Interface\\Icons\\Garrison_SilverChest",
@@ -2248,6 +2298,7 @@ AllTheThings.L = {
 		[62483] = "A.I.D.A. Communicator",
 		[106780] = "Tidestone of Golganneth",
 		[112948] = "Intrepid's Locked Strongbox",
+		[113768] = GetSpellInfo(61820),
 		[123329] = "Baelog's Chest",
 		[131474] = "The Discs of Norgannon",
 		[131979] = "Large Darkwood Chest",
@@ -2293,6 +2344,8 @@ AllTheThings.L = {
 		[179697] = "Arena Treasure Chest",
 		[180448] = "Wanted Poster: Deathclasp",
 		[180503] = "Sandy Cookbook",
+		[180690] = "Large Scarab Coffer",
+		[180691] = "Scarab Coffer",
 		[180794] = "Journal of Jandice Barov",
 		[180918] = "Wanted: Thaelis the Hungerer",
 		[181011] = "Magister Duskwither's Journal",
@@ -2312,15 +2365,22 @@ AllTheThings.L = {
 		[182032] = "Galaen's Journal",
 		[182115] = "Wanted Poster",
 		[182165] = "Wanted Poster",
+		[182392] = "Garadar Bulletin Board",
+		[182939] = "Telaar Bulletin Board",
 		[182947] = "The Codex of Blood",
 		[182952] = "Steam Pump Flotsam",
+		[183284] = "Wanted Poster",
 		[183770] = "B'naar Control Console",
-		[183811] = "Wanted Posted",
+		[183811] = "Wanted Poster",
 		[184300] = "Necromantic Focus",
 		[184465] = "Cache of the Legion",
+		[184660] = "Wanted Poster",
+		[184825] = "Lashh'an Tome",
 		[184945] = "Wanted Poster",
 		[184946] = "Wanted Poster",
+		[185035] = "Wanted Poster",
 		[185126] = "Crystal Prison",
+		[185165] = "Legion Communicator",
 		[185168] = "Reinforced Fel Iron Chest",
 		[185927] = "Fel Crystal Prism",
 		[186426] = "Wanted Poster",
@@ -2334,6 +2394,7 @@ AllTheThings.L = {
 		[187559] = "Horde Bonfire",
 		[187564] = "Alliance Bonfire",
 		[187565] = "Elder Atkanok",
+		[187674] = "Ith'rix's Hardened Carapace",
 		[187851] = "Cultist Shrine",
 		[187905] = "Massive Glowing Egg",
 		[187916] = "Alliance Bonfire",
@@ -3016,7 +3077,9 @@ AllTheThings.L = {
 		[280619] = "Old Ironbound Chest", -- Old Ironbound Chest
 		[280727] = "Charred Note",
 		[280751] = "Small Treasure Chest",
+		[280755] = "Quintin's Satchel",
 		[280951] = "Ashvane Spoils", -- Ashvane Spoils
+		[280957] = "Zukashi's Satchel",
 		[281092] = "Witch Doctor's Hoard", -- Witch Doctor's Hoard
 		[281230] = "Formal Invitation",
 		[281397] = "Cutwater Treasure Chest", -- Cutwater Treasure Chest
@@ -3112,6 +3175,7 @@ AllTheThings.L = {
 		[294316] = "Lost Offerings of Kimbul", -- Lost Offerings of Kimbul
 		[294317] = "Deadwood Chest", -- Deadwood Chest
 		[294319] = "Sandsunken Treasure", -- Sandsunken Treasure
+		[294703] = "Grimmy's Rusty Lockbox",
 		[297825] = "Web-Covered Chest", -- Web-Covered Chest
 		[297828] = "Merchant's Chest", -- Merchant's Chest
 		[297878] = "Hexed Chest", -- Hexed Chest
@@ -3130,6 +3194,7 @@ AllTheThings.L = {
 		[298965] = "Cracked Tablet",	-- Cracked Tablet
 		[299073] = "Fractured Tablet",	-- Fractured Tablet
 		[310709] = "Waterlogged Chest",	-- New Chest in Elywynn since 8.1
+		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
 		[239925] = GetSpellInfo(155346),		-- Ogrish Fortitude
@@ -3183,7 +3248,7 @@ AllTheThings.L = {
 		["Sunken Temple"] = "The Temple of Atal'hakkar";
 		["The Sunwell"] = "Sunwell Plateau";
 		["Tempest Keep"] = "The Eye";
-		["Violet Hold"] = "The Violet Hold";
+		["The Violet Hold"] = "Violet Hold";
 	};
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
@@ -3229,7 +3294,7 @@ AllTheThings.L = {
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
-		{4, "|CFFFF0000This is legacy instance that is no longer available.|r", "Legacy Instance (12)"}; -- 12
+		{4, "|CFFFF0000This is legacy instance or boss that is no longer available.|r", "Legacy Instance (12)"}; -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}; -- 13
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
@@ -3262,7 +3327,8 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation for Ulduar broke a number of Hard Mode loot tables.|r", "Ulduar Hard Mode Loot (45)"}; -- 45
-		{2, "|CFFFF0000This item is likely available from Incursions while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 7.3.2, Blizzard's shifted loot from Princess to various bosses.  In the process made this item no longer drop. |r", "BRD Broken Loot (45)"}; -- 45
+		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

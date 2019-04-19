@@ -12,6 +12,17 @@ _.Zones =
 					n(-34,  {	-- World Quests
 						["groups"] = {
 							n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
+								{	-- Add More to the Collection — Pet Battle
+									["questID"] = 52923,	-- Add More to the Collection
+									["isWQ"] = 120,
+									["qg"] = 142114,	-- Talia Sparkbrow
+									["g"] = {
+										{	-- Add More to the Collection — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 22,	-- Add More to the Collection
+										},
+									},
+								},
 								q(50864, {	-- Atal'zul Gotaka
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -37,12 +48,32 @@ _.Zones =
 								q(51642, {	-- Beachhead [AH]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(52892, {	-- Critters are Friends, Not Food [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Calligraphy
+									["questID"] = 55344,	-- Calligraphy
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Triangle
+													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
+												},
+											},
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
+								{	-- Critters are Friends, Not Food — Pet Battle
+									["questID"] = 52892,	-- Critters are Friends, Not Food
+									["isWQ"] = 120,
+									["qg"] = 142096,	-- Karaga
+									["g"] = {
+										{	-- Critters are Friends, Not Food — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 21,	-- Critters are Friends, Not Food
+										},
+									},
+								},
 								{	-- Daggerjaw [AH]
 									["npcID"] = 133190,		-- Daggerjaw	Note!! Done so we can use his name for the quest rather than Quest #123456
 									["questID"] = 50871,	-- Daggerjaw
@@ -112,6 +143,42 @@ _.Zones =
 									["coords"] = {
 										{ 81.76, 38.09 },	-- Door Entrance
 										{ 81.81, 37.64 },	-- Game
+									},
+								},
+								{ -- Naga Attack!
+									["questID"] = 54051,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{ -- Naga Attack!
+									["questID"] = 54060,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{ -- Naga Attack!
+									["questID"] = 54051,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
 									},
 								},
 								{	-- Old R'gal
@@ -238,7 +305,7 @@ _.Zones =
 										i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
@@ -246,7 +313,7 @@ _.Zones =
 										i(162297),	-- Recipe: Spiced Snapper [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
@@ -254,7 +321,7 @@ _.Zones =
 										i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 									},
 									["requireSkill"] = 185,	-- Cooking
-									["qg"] = 134345, -- Collector Kojo <Tortollan Seekers Emissary>
+									["qg"] = 134345,	-- Collector Kojo <Tortollan Seekers Emissary>
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- Wrath of Rezan
@@ -270,12 +337,17 @@ _.Zones =
 										},
 									},
 								},
-								q(52937, {	-- You've Never Seen Jammer Upset [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- You've Never Seen Jammer Upset — Pet Battle
+									["questID"] = 52937,	-- You've Never Seen Jammer Upset
+									["isWQ"] = 120,
+									["qg"] = 142151,	-- Jammer
+									["g"] = {
+										{	-- You've Never Seen Jammer Upset — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 23,	-- You've Never Seen Jammer Upset
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 							}),
 							i(158116),	-- Bonehex Claws
 							i(158125),	-- Bonehex Warmaul

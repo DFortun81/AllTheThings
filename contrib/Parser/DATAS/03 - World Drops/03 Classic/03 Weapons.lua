@@ -5,15 +5,15 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
 					i(10623),	-- Winter's Bite
 					i(12527),	-- Ribsplitter
 					i(12990),	-- Razor's Edge
 					i(13014),	-- Axe of Rin'ji
 					i(13015),	-- Serathil
 					i(1454),	-- Axe of the Enforcer
-					un(7, i(1459)), -- Shadowhide Scalper
+					un(7, i(1459)),	-- Shadowhide Scalper
 					i(1481),	-- Grimclaw
 					i(15230),	-- Ridge Cleaver
 					i(15231),	-- Splitting Hatchet
@@ -32,8 +32,8 @@ _.WorldDrops =
 					i(1994),	-- Ebonclaw Reaver
 					i(2073),	-- Dwarven Hatchet
 					i(2080),	-- Hillborne Axe
-					un(7, i(2265)), -- Stonesplinter Axe
-					un(7, i(2281)), -- Rodentia Flint Axe
+					un(7, i(2265)),	-- Stonesplinter Axe
+					un(7, i(2281)),	-- Rodentia Flint Axe
 					i(2807),	-- Guillotine Axe
 					i(2815),	-- Curve-Bladed Ripper
 					i(2878),	-- Bearded Boneaxe
@@ -44,13 +44,13 @@ _.WorldDrops =
 					i(4824),	-- Blurred Axe
 					i(4825),	-- Callous Axe
 					i(4826),	-- Marauder Axe
-					un(7, i(4949)), -- Orcish Cleaver
+					un(7, i(4949)),	-- Orcish Cleaver
 					i(5426),	-- Serpent's Kiss
 					i(7761),	-- Steelclaw Reaver
 					i(7786),	-- Headsplitter
 					i(790),		-- Forester's Axe
 					i(811),		-- Axe of the Deep Woods
-					un(7, i(826)), -- Brutish Riverpaw Axe
+					un(7, i(826)),	-- Brutish Riverpaw Axe
 					i(863),		-- Gloom Reaper
 					i(871),		-- Flurry Axe
 					un(7, i(885)),		-- Black Metal Axe
@@ -59,9 +59,9 @@ _.WorldDrops =
 					i(9465),	-- Digmaster 5000
 					i(9485),	-- Vibroblade
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
 					i(10570),	-- Manslayer
-					un(7, i(1220)), -- Lupine Axe
+					un(7, i(1220)),	-- Lupine Axe
 					i(12249),	-- Merciless Axe
 					i(12250),	-- Midnight Axe
 					i(1263),	-- Brain Hacker
@@ -71,8 +71,8 @@ _.WorldDrops =
 					i(13017),	-- Hellslayer Battle Axe
 					i(13018),	-- Executioner's Cleaver
 					i(1318),	-- Night Reaver
-					un(7, i(1455)), -- Blackrock Champion's Axe
-					un(7, i(1461)), -- Slayer's Battle Axe
+					un(7, i(1455)),	-- Blackrock Champion's Axe
+					un(7, i(1461)),	-- Slayer's Battle Axe
 					un(7, i(1521)),	-- Lumbering Ogre Axe
 					i(15268),	-- Twin-Bladed Axe
 					i(15269),	-- Massive Battle Axe
@@ -84,8 +84,8 @@ _.WorldDrops =
 					i(1640),	-- Monstrous War Axe
 					i(1680),	-- Headchopper
 					un(7, i(2015)),	-- Black Metal War Axe
-					un(7, i(2175)), -- Shadowhide Battle Axe
-					un(7, i(2203)), -- Brashclaw's Chopper
+					un(7, i(2175)),	-- Shadowhide Battle Axe
+					un(7, i(2203)),	-- Brashclaw's Chopper
 					un(7, i(2227)),	-- Heavy Ogre War Axe
 					i(2291),	-- Kang the Decapitator
 					i(2299),	-- Burning War Axe
@@ -105,7 +105,7 @@ _.WorldDrops =
 					i(9481),	-- The Minotaur
 					i(9486),	-- Supercharger Battle Axe
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
 					i(10567),	-- Quillshooter
 					un(1, i(5748)),	-- Centaur Longbow
 					i(10624),	-- Stinging Bow
@@ -143,20 +143,20 @@ _.WorldDrops =
 					i(8183),	-- Precision Bow
 					i(9426),	-- Monolithic Bow
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
 					i(13037),	-- Crystalpine Stinger
 					i(13038),	-- Swiftwind
 					i(13039),	-- Skull Splitting Crossbow
 					i(13040),	-- Heartseeking Crossbow
 					un(7, i(6315)),	-- Steelarrow Crossbow
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
 					i(10625),	-- Stealthblade
 					i(115349),	-- Talon of Vultros
 					i(12247),	-- Broad Bladed Knife
 					i(12248),	-- Daring Dirk
 					i(12531),	-- Searing Needle
-					un(7, i(1287)), -- Giant Tarantula Fang
+					un(7, i(1287)),	-- Giant Tarantula Fang
 					i(14555),	-- Alcor's Sunrazor
 					i(1465),	-- Tigerbane
 					i(15241),	-- Battle Knife
@@ -192,7 +192,7 @@ _.WorldDrops =
 					i(4091),	-- Widowmaker
 					i(4446),	-- Blackvenom Blade
 					un(7, i(4449)),	-- Naraxis' Fang
-					un(7, i(4454)), -- Talon of Vultros
+					un(7, i(4454)),	-- Talon of Vultros
 					i(4571),	-- War Knife
 					un(7, i(5112)),	-- Ritual Blade
 					i(5267),	-- Scarlet Kris
@@ -205,15 +205,15 @@ _.WorldDrops =
 					i(6660),	-- Julie's Dagger
 					i(776),		-- Vendetta
 					i(8006),	-- The Ziggler
-					un(7, i(816)), -- Small Hand Blade
+					un(7, i(816)),	-- Small Hand Blade
 					i(820),		-- Slicer Blade
 					un(7, i(899)),		-- Venom Web Fang
 					i(9384),	-- Stonevault Shiv
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
 					i(11603),	-- Vilerend Slicer
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
 					i(13136),	-- Lil Timmy's Peashooter
 					i(13137),	-- Ironweaver
 					i(13138),	-- The Silencer
@@ -239,7 +239,7 @@ _.WorldDrops =
 					i(9422),	-- Shadowforge Bushmaster
 					i(9487),	-- Hi-Tech Supergun
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
 					i(13029),	-- Umbral Crystal
 					i(13030),	-- Basilisk Bone
 					i(13031),	-- Orb of Mistmantle
@@ -327,11 +327,11 @@ _.WorldDrops =
 					i(9914),	-- Royal Scepter
 					i(9944),	-- Abjurer's Crystal
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
 					i(10571),	-- Ebony Boneclub
 					i(1207),	-- Murphstar
-					un(7, i(1214)), -- Gnoll Punisher
-					un(7, i(1296)), -- Blackrock Mace
+					un(7, i(1214)),	-- Gnoll Punisher
+					un(7, i(1296)),	-- Blackrock Mace
 					i(13006),	-- Mass of McGowan
 					i(13024),	-- Beazel's Basher
 					i(13025),	-- Deadwood Sledge
@@ -339,9 +339,9 @@ _.WorldDrops =
 					i(13027),	-- Bonesnapper
 					i(13028),	-- Bludstone Hammer
 					i(13048),	-- Looming Gavel
-					un(7, i(1394)), -- Driftwood Club
-					un(7, i(1440)), -- Gnoll Skull Basher
-					un(7, i(1457)), -- Shadowhide Mace
+					un(7, i(1394)),	-- Driftwood Club
+					un(7, i(1440)),	-- Gnoll Skull Basher
+					un(7, i(1457)),	-- Shadowhide Mace
 					i(1483),	-- Face Smasher
 					i(15222),	-- Barbed Club
 					i(15223),	-- Jagged Star
@@ -357,7 +357,7 @@ _.WorldDrops =
 					un(7, i(18671)),	-- Baron Charr's Sceptre
 					i(1926),	-- Weighted Sap
 					un(7, i(1938)),	-- Block Mallet
-					i(1958, { -- Petrified Shinbone
+					i(1958, {	-- Petrified Shinbone
 						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 					}),
 					i(19808, {  -- Rockhide Strongfish
@@ -368,8 +368,8 @@ _.WorldDrops =
 					i(2194),	-- Diamond Hammer
 					i(2243),	-- Hand of Edward the Odd
 					i(2256),	-- Skeletal Club
-					un(7, i(2267)), -- Stonesplinter Mace
-					un(7, i(2821)), -- Mo'grosh Masher
+					un(7, i(2267)),	-- Stonesplinter Mace
+					un(7, i(2821)),	-- Mo'grosh Masher
 					i(31269),	-- Ghoul Hammer
 					un(7, i(3223)),	-- Frostmane Scepter
 					i(3414),	-- Crested Scepter
@@ -378,7 +378,7 @@ _.WorldDrops =
 					un(7, i(4439)),	-- Bruiser Club
 					i(4569),	-- Staunch Hammer
 					un(7, i(5256)),	-- Kovork's Rattle
-					i(6360, { -- Steelscale Crushfish
+					i(6360, {	-- Steelscale Crushfish
 						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 					}),
 					un(7, i(68194, {	-- Oggleflint's Inspirer
@@ -399,16 +399,16 @@ _.WorldDrops =
 					i(9427),	-- Stonevault Bonebreaker
 					i(9488),	-- Oscillating Power Hammer
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
 					un(7, i(911)),	-- Ironwood Treebranch
 					i(10626),	-- Ragehammer
-					un(7, i(1218)), -- Heavy Gnoll War Club
+					un(7, i(1218)),	-- Heavy Gnoll War Club
 					i(12528),	-- The Judge's Gavel
 					i(12983),	-- Rakzur Club
 					i(13045),	-- Viscous Hammer
 					i(13046),	-- Blanchard's Stout
 					i(13047),	-- Twig of the World Tree
-					un(7, i(1458)), -- Shadowhide Maul
+					un(7, i(1458)),	-- Shadowhide Maul
 					i(1523),	-- Huge Stone Club
 					i(15259),	-- Hefty Battlehammer
 					i(15260),	-- Stone Hammer
@@ -437,13 +437,13 @@ _.WorldDrops =
 					i(4570),	-- Birchwood Maul
 					i(4777),	-- Ironwood Maul
 					i(4778),	-- Heavy Spiked Mace
-					un(7, i(6205)), -- Burrowing Shovel
+					un(7, i(6205)),	-- Burrowing Shovel
 					i(6327),	-- The Pacifier
 					i(7730),	-- Cobalt Crusher
 					i(9391),	-- The Shoveler
 					i(9423),	-- The Jackhammer
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
 					i(12989),	-- Gargoyle's Bite
 					i(13054),	-- Grim Reaper
 					i(13055),	-- Bonechewer
@@ -457,7 +457,7 @@ _.WorldDrops =
 					un(7, i(7758)),	-- Ruthless Shiv (Old World Drop)
 					i(9480),	-- Eyegouger
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
 					i(10078),	-- Lord's Crest
 					i(10093),	-- Revenant Deflector
 					i(10158),	-- Mercurial Guard
@@ -559,7 +559,7 @@ _.WorldDrops =
 					i(4068),	-- Chief Brigadier Shield
 					i(4069),	-- Blackforge Buckler
 					i(4070),	-- Jouster's Crest
-					un(7, i(4290)), -- Dust Bowl
+					un(7, i(4290)),	-- Dust Bowl
 					i(4444),	-- Black Husk Shield
 					un(7, i(4477)),	-- Nefarious Buckler
 					i(4820),	-- Guardian Buckler
@@ -606,12 +606,12 @@ _.WorldDrops =
 					i(9958),	-- Warmonger's Buckler
 					i(9974),	-- Overlord's Shield
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
 					i(10627),	-- Bludgeon of the Grinning Dog
 					i(12251),	-- Big Stick
 					i(12252),	-- Staff of Protection
 					i(12532),	-- Spire of the Stoneshaper
-					un(7, i(1300)), -- Lesser Staff of the Spire
+					un(7, i(1300)),	-- Lesser Staff of the Spire
 					i(13000),	-- Staff of Hale Magefire
 					i(1391),	-- Riverpaw Mystic Staff
 					i(1405),	-- Foamspittle Staff
@@ -625,8 +625,8 @@ _.WorldDrops =
 					i(1613),	-- Spiritchaser Staff
 					i(1664),	-- Spellforce Rod
 					i(1720),	-- Tanglewood Staff
-					un(7, i(1928)), -- Defias Mage Staff
-					un(7, i(1933)), -- Staff of Conjuring
+					un(7, i(1928)),	-- Defias Mage Staff
+					un(7, i(1933)),	-- Staff of Conjuring
 					i(1998),	-- Bloodscalp Channeling Staff
 					un(7, i(2013)),	-- Cryptbone Staff
 					un(7, i(20258)),	-- Zulian Ceremonial Staff
@@ -638,7 +638,7 @@ _.WorldDrops =
 					i(3185),	-- Acrobatic Staff
 					un(7, i(3227)),	-- Nightbane Staff
 					i(3415),	-- Staff of the Friar
-					un(7, i(3902)), -- Staff of Nobles
+					un(7, i(3902)),	-- Staff of Nobles
 					un(7, i(4437)),	-- Channeler's Staff
 					i(4566),	-- Sturdy Quarterstaff
 					i(4575),	-- Medicine Staff
@@ -654,8 +654,8 @@ _.WorldDrops =
 					i(944),		-- Elemental Mage Staff
 					i(9482),	-- Witch Doctor's Cane
 				}),
-				n(-338, { -- 1H Swords
-					un(7, i(1219)), -- Redridge Machete
+				n(-338, {	-- 1H Swords
+					un(7, i(1219)),	-- Redridge Machete
 					i(12535),	-- Doomforged Straightedge
 					i(1265),	-- Scorpion Sting
 					i(12974),	-- The Black Knight
@@ -665,7 +665,7 @@ _.WorldDrops =
 					i(13034),	-- Speedsteel Rapier
 					i(13035),	-- Serpent Slicer
 					i(13036),	-- Assassination Blade
-					un(7, i(1469)), -- Scimitar of Atun
+					un(7, i(1469)),	-- Scimitar of Atun
 					i(1482),	-- Shadowfang
 					un(7, i(1493)),	-- Heavy Marauder Scimitar
 					i(15210),	-- Raider Shortsword
@@ -683,7 +683,7 @@ _.WorldDrops =
 					un(7, i(17054)),	-- Joonho's Mercy
 					i(1727),	-- Sword of Decay
 					i(1728),	-- Teebu's Blazing Longsword
-					un(7, i(1925)), -- Defias Rapier
+					un(7, i(1925)),	-- Defias Rapier
 					i(1951),	-- Blackwater Cutlass
 					i(2011),	-- Twisted Sabre
 					un(7, i(2018)),	-- Skeletal Longsword
@@ -716,14 +716,14 @@ _.WorldDrops =
 					i(9392),	-- Annealed Blade
 					i(9424),	-- Ginn-Su Sword
 					i(9511),	-- Bloodletter Scalpel
-					i(9719, { -- Broken Blade of Heroes
+					i(9719, {	-- Broken Blade of Heroes
 						["groups"] = {
 							i(9718),  -- Reforged Blade of Heroes
 						},
 						["description"] = "This item is a world drop from level 29-46 creatures. Once reforged by a blacksmith, it becomes the Reforged Blade of Heroes. ",
 					}), 
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
 					i(10573),	-- Boneslasher
 					i(10628),	-- Deathblow
 					i(12992),	-- Searing Blade
@@ -735,8 +735,8 @@ _.WorldDrops =
 					i(13051),	-- Witchfury
 					i(13052),	-- Warmonger
 					i(13053),	-- Doombringer
-					un(7, i(1387)), -- Ghoulfang
-					un(7, i(1460)), -- Shadowhide Two-Handed Sword
+					un(7, i(1387)),	-- Ghoulfang
+					un(7, i(1460)),	-- Shadowhide Two-Handed Sword
 					i(15248),	-- Gleaming Claymore
 					i(15249),	-- Polished Zweihander
 					i(15250),	-- Glimmering Flamberge
@@ -756,12 +756,12 @@ _.WorldDrops =
 					i(1986),	-- Gutrender
 					un(7, i(2014)),	-- Black Metal Greatsword
 					un(7, i(2084)),	-- Darksteel Bastard Sword
-					un(7, i(2204)), -- Brashclaw's Skewer
+					un(7, i(2204)),	-- Brashclaw's Skewer
 					i(2205),	-- Duskbringer
 					i(2801),	-- Blade of Hanna
 					un(7, i(2822)),	-- Mo'grosh Toothpick
 					i(2877),	-- Combatant Claymore
-					un(7, i(3188)), -- Coral Claymore
+					un(7, i(3188)),	-- Coral Claymore
 					i(3192),	-- Short Bastard Sword
 					i(3196),	-- Edged Bastard Sword
 					i(3197),	-- Stonecutter Claymore
@@ -777,7 +777,7 @@ _.WorldDrops =
 					i(9385),	-- Archaic Defender
 					i(9490),	-- Gizmotron Megachopper
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
 					i(10572),	-- Freezing Shard
 					i(12984),	-- Skycaller
 					i(13004),	-- Torch of Austen

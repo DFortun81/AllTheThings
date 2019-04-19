@@ -42,19 +42,19 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Path
-					fp(649, { -- Andorhal, Western Plaguelands
+					fp(649, {	-- Andorhal, Western Plaguelands
 						["coord"] = { 46.6, 64.6 },
 					}),
-					fp(650, { -- Andorhal, Western Plaguelands
+					fp(650, {	-- Andorhal, Western Plaguelands
 						["coord"] = { 39.4, 69.4 },
 					}),
-					fp(66, { -- Chillwind Camp, Western Plaguelands
+					fp(66, {	-- Chillwind Camp, Western Plaguelands
 						["coord"] = { 42.8, 85 },
 					}),
-					fp(672, { -- Hearthglen, Western Plaguelands
+					fp(672, {	-- Hearthglen, Western Plaguelands
 						["coord"] = { 44.6, 18.4 },
 					}),
-					fp(651, { -- The Menders' Stead, Western Plaguelands
+					fp(651, {	-- The Menders' Stead, Western Plaguelands
 						["coord"] = { 50.4, 52.2 },
 					}),
 				}),
@@ -67,8 +67,8 @@ _.Zones =
 					p(420), 	-- Toad
 				}),
 				n(-17, {	-- Quests
-					ach(4893, { -- Western Plaguelands Quests
-						crit(1, { -- The First Battle for Andorhal
+					ach(4893, {	-- Western Plaguelands Quests
+						crit(1, {	-- The First Battle for Andorhal
 							qa(27158, {	-- The Battle for Andorhal
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
 								["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
@@ -80,10 +80,10 @@ _.Zones =
 							}),
 							qa(27160, {	-- War Machines
 								["groups"] = {
-									i( 62143),	-- Gut Opener Gloves
-									i( 62142),	-- Behemoth Boots
-									i( 62141),	-- Belt of the Laconic
-									i( 62140),	-- Dried-Up Bracers
+									i(62143),	-- Gut Opener Gloves
+									i(62142),	-- Behemoth Boots
+									i(62141),	-- Belt of the Laconic
+									i(62140),	-- Dried-Up Bracers
 									i(131642),	-- Putrid Mail Boots
 									i(131643),	-- Succinct Sash
 								},
@@ -102,10 +102,10 @@ _.Zones =
 							}),
 							qa(27162, {	-- Scholomancer
 								["groups"] = {
-									i( 62151),	-- Belt of Lingering Corruption
-									i( 62150),	-- Elimination Bracers
-									i( 62149),	-- Burden of Time
-									i( 62148),	-- Gandling's Gloves
+									i(62151),	-- Belt of Lingering Corruption
+									i(62150),	-- Elimination Bracers
+									i(62149),	-- Burden of Time
+									i(62148),	-- Gandling's Gloves
 									i(131644),	-- Armguards of Binding
 									i(131645),	-- Shoulderguard of Timeless Restraint
 								},
@@ -122,10 +122,10 @@ _.Zones =
 							}),
 							qh(26923, {	-- War Machines
 								["groups"] = {
-									i( 62147),	-- Gut Opener Gloves
-									i( 62146),	-- Behemoth Boots
-									i( 62145),	-- Belt of the Blathering Fool
-									i( 62144),	-- Bracers of Favorable Chance
+									i(62147),	-- Gut Opener Gloves
+									i(62146),	-- Behemoth Boots
+									i(62145),	-- Belt of the Blathering Fool
+									i(62144),	-- Bracers of Favorable Chance
 									i(131618),	-- Putrid Mail Boots
 									i(131619),	-- Belt of Recklessness
 								},
@@ -144,10 +144,10 @@ _.Zones =
 							}),
 							qh(26924, {	-- Scholomancer
 								["groups"] = {
-									i( 62155),	-- Belt of Lingering Corruption
-									i( 62154),	-- Elimination Bracers
-									i( 62153),	-- Burden of Time
-									i( 62152),	-- Gandling's Gloves
+									i(62155),	-- Belt of Lingering Corruption
+									i(62154),	-- Elimination Bracers
+									i(62153),	-- Burden of Time
+									i(62152),	-- Gandling's Gloves
 									i(131620),	-- Armguards of Binding
 									i(131621),	-- Shoulderguard of Timeless Restraint
 								},
@@ -159,16 +159,16 @@ _.Zones =
 								["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 							}),
 						}),
-						crit(2, { -- A Temporary Peace
+						crit(2, {	-- A Temporary Peace
 							qa(27166, {	-- Go Fletch!
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
 							}),
 							qa(27167, {	-- A Mighty Hunger
 								["groups"] = {
-									i( 62159),	-- Bear Hunter's Rifle
-									i( 62158),	-- Homestead Helm
-									i( 62157),	-- Farmer's Vest
-									i( 62156),  -- Grant's Signet
+									i(62159),	-- Bear Hunter's Rifle
+									i(62158),	-- Homestead Helm
+									i(62157),	-- Farmer's Vest
+									i(62156),  -- Grant's Signet
 									i(131646),	-- Leather Stitched Chain Tunic
 								},
 								["qg"] = 45165,	-- Thurman Grant
@@ -202,10 +202,10 @@ _.Zones =
 							}),
 							qa(27174, {	-- Combat Training
 								["groups"] = {
-									i( 62184),	-- Abominable Shoulderguards
-									i( 62183),	-- Gory Gloves
-									i( 62182),	-- Training Leggings
-									i( 62181),	-- Zombie Shotgun
+									i(62184),	-- Abominable Shoulderguards
+									i(62183),	-- Gory Gloves
+									i(62182),	-- Training Leggings
+									i(62181),	-- Zombie Shotgun
 									i(131647),	-- Faded Mail Gauntlets
 								},
 								["qg"] = 45165,	-- Thurman Grant
@@ -217,27 +217,27 @@ _.Zones =
 							}),
 							qh(26938, {	-- Combat Training
 								["groups"] = {
-									i( 62188),	-- Abominable Shoulderguards
-									i( 62187),	-- Charming Gloves
-									i( 62186),	-- Ravensun Britches
-									i( 62185),	-- Zombie Shotgun
+									i(62188),	-- Abominable Shoulderguards
+									i(62187),	-- Charming Gloves
+									i(62186),	-- Ravensun Britches
+									i(62185),	-- Zombie Shotgun
 									i(131623),	-- Ravensun Gloves
 								},
 								["sourceQuests"] = { 26937 },	-- When Death is Not Enough
 							}),
 
 						}),
-						crit(3, { -- The Second Battle for Andorhal
+						crit(3, {	-- The Second Battle for Andorhal
 							qa(27197, {	-- The Battle Resumes!
 								["qg"] = 45012,	-- Durnt Brightfalcon
 								["sourceQuests"] = { 27175,27233 },	-- The Menders' Stead
 							}),
 							qa(27198, {	-- Supporting the Troops
 								["groups"] = {
-									i( 62205),  -- Defender's Band
-									i( 62204),	-- Gloves of the Able
-									i( 62203),	-- Belt of the Unafraid
-									i( 62202),	-- Bracers of Envy
+									i(62205),  -- Defender's Band
+									i(62204),	-- Gloves of the Able
+									i(62203),	-- Belt of the Unafraid
+									i(62202),	-- Bracers of Envy
 									i(131653),	-- Gloves of Approaching Victory
 									i(131654),	-- Belt of Proficiency
 								},
@@ -258,10 +258,10 @@ _.Zones =
 							}),
 							qa(27202, {	-- Brother Against Brother
 								["groups"] = {
-									i( 62213),	-- Minuteman Pike
-									i( 62212),	-- Quelling Bracers
-									i( 62211),	-- Shoulderwraps of the Enthralled
-									i( 62210),  -- Pack Leader's Band
+									i(62213),	-- Minuteman Pike
+									i(62212),	-- Quelling Bracers
+									i(62211),	-- Shoulderwraps of the Enthralled
+									i(62210),  -- Pack Leader's Band
 									i(131655),	-- Bracer of Grievance
 								},
 								["qg"] = 45165,	-- Thurman Grant
@@ -273,11 +273,11 @@ _.Zones =
 							}),
 							qa(27206, {	-- Alas, Andorhal
 								["groups"] = {
-									i( 62222),	-- Chillwind Pauldrons
-									i( 62221),	-- Chillwind Legguards
-									i( 62220),	-- Chillwind Tunic
-									i( 62219),	-- Chillwind Staff
-									i( 62218),	-- Chillwind Dagger
+									i(62222),	-- Chillwind Pauldrons
+									i(62221),	-- Chillwind Legguards
+									i(62220),	-- Chillwind Tunic
+									i(62219),	-- Chillwind Staff
+									i(62218),	-- Chillwind Dagger
 									i(131656),	-- Chillwind Breeches
 								},
 								["qg"] = 44453,	-- Thassarian
@@ -293,10 +293,10 @@ _.Zones =
 							}),
 							qh(27085, {	-- Supporting the Troops
 								["groups"] = {
-									i( 62209),  -- Deathguard Band
-									i( 62208),	-- Gloves of the Able
-									i( 62207),	-- Belt of the Unafraid
-									i( 62206),	-- Bracers of Envy
+									i(62209),  -- Deathguard Band
+									i(62208),	-- Gloves of the Able
+									i(62207),	-- Belt of the Unafraid
+									i(62206),	-- Bracers of Envy
 									i(131637),	-- Gloves of Approaching Victory
 									i(131638),	-- Belt of Proficiency
 								},
@@ -313,10 +313,10 @@ _.Zones =
 							}),
 							qh(27089, {	-- Ace in the Hole
 								["groups"] = {
-									i( 62217),	-- Minuteman Pike
-									i( 62216),	-- Lurid Bracers
-									i( 62215),	-- Shoulderwraps of the Enthralled
-									i( 62214),  -- Ring of Aces
+									i(62217),	-- Minuteman Pike
+									i(62216),	-- Lurid Bracers
+									i(62215),	-- Shoulderwraps of the Enthralled
+									i(62214),  -- Ring of Aces
 									i(131639),	-- Forsaken Trooper Armguards
 								},
 								["qg"] = 44451,	-- Lady Sylvanas Windrunner
@@ -328,18 +328,18 @@ _.Zones =
 							}),
 							qh(27144, {	-- The Reckoning
 								["groups"] = {
-									i( 62227),	-- Pauldrons of Andorhal
-									i( 62226),	-- Andorhal Legguards
-									i( 62225),	-- Andorhal Tunic
-									i( 62224),	-- Staff of Andorhal
-									i( 62223),	-- Dagger of Andorhal
+									i(62227),	-- Pauldrons of Andorhal
+									i(62226),	-- Andorhal Legguards
+									i(62225),	-- Andorhal Tunic
+									i(62224),	-- Staff of Andorhal
+									i(62223),	-- Dagger of Andorhal
 									i(131641),	-- Andorhal Chain Leggings
 								},
 								["qg"] = 44451,	-- Lady Sylvanas Windrunner
 								["sourceQuests"] = { 27090 },	-- Andorhal, Once and For All
 							}),
 						}),
-						crit(4, { -- The Menders' Stead
+						crit(4, {	-- The Menders' Stead
 							qa(27168, {	-- Those That Couldn't Let Go
 								["qg"] = 11053,	-- High Priestess MacDonnell
 								["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
@@ -356,9 +356,9 @@ _.Zones =
 							}),
 							q( 26999, {	-- A New Era for the Plaguelands
 								["groups"] = {
-									i( 62174),	-- Bracers of the Returning Wild
-									i( 62173),	-- Boots of the Flowering Earth
-									i( 62172),	-- Forest Green Cloak
+									i(62174),	-- Bracers of the Returning Wild
+									i(62173),	-- Boots of the Flowering Earth
+									i(62172),	-- Forest Green Cloak
 									i(131630),	-- Treads of Renewed Growth
 								},
 								["qg"] = 44454,	-- Field Agent Kaartish
@@ -425,9 +425,9 @@ _.Zones =
 							}),
 							q( 27055, {	-- Students of Krastinov
 								["groups"] = {
-									i( 62201),	-- Kaartish's Sword
-									i( 62200),	-- Field Agent's Belt
-									i( 62199),	-- Malicia's Scepter
+									i(62201),	-- Kaartish's Sword
+									i(62200),	-- Field Agent's Belt
+									i(62199),	-- Malicia's Scepter
 									i(131635),	-- Plague-Free Disciple Belt
 								},
 								["sourceQuests"] = { 27054 },	-- Desperate Acts
@@ -444,9 +444,9 @@ _.Zones =
 							}),
 							q( 26955, {	-- Zen'Kiki and the Cultists
 								["groups"] = {
-									i( 62194),	-- Breastplate of the Patient
-									i( 62193),	-- Leggings of the Slipper Shifter
-									i( 62192),  -- Zen'Kiki's Thanks
+									i(62194),	-- Breastplate of the Patient
+									i(62193),	-- Leggings of the Slipper Shifter
+									i(62192),  -- Zen'Kiki's Thanks
 									i(131627),	-- Scaled Pants of Patience
 								},
 								["qg"] = 44456,	-- Adrine Towhide
@@ -454,14 +454,14 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
-						sz(770, 3, { -- Sorrow Hill TODO: This should really be Chillwind Camp
+					n(-168, {	-- Other Quests
+						sz(770, 3, {	-- Sorrow Hill TODO: This should really be Chillwind Camp
 							q( 27683, {	-- Into the Woods
 								["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
 								["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 							}),
 						}),
-						sz(770, 9, { -- Northridge Lumber Camp
+						sz(770, 9, {	-- Northridge Lumber Camp
 							q( 27013, {	-- Too Close for Comfort
 								["qg"] = 44472,	-- Kelly Dumah
 							}),
@@ -479,7 +479,7 @@ _.Zones =
 								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 							}),
 						}),
-						sz(770, 10, { -- Hearthglen
+						sz(770, 10, {	-- Hearthglen
 							q( 27156, {	-- It's About Time!
 								["qg"] = 45157,	-- Lieutenant Myner
 							}),
@@ -492,10 +492,10 @@ _.Zones =
 							}),
 							q( 27017, {	-- Memories from a Lost Past
 								["groups"] = {
-									i( 62198),  -- Andrea's Locket
-									i( 62197),	-- Gahrron's Shoulderguard
-									i( 62196),	-- Gloria's Work Vest
-									i( 62195),	-- Footfalls of Memories
+									i(62198),  -- Andrea's Locket
+									i(62197),	-- Gahrron's Shoulderguard
+									i(62196),	-- Gloria's Work Vest
+									i(62195),	-- Footfalls of Memories
 									i(131631),	-- Del's Discarded Shoulderguard
 									i(131632),	-- Dusty Gahrron Chainmail
 								},
@@ -1205,6 +1205,11 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drop
+					un(7, i(15771, {	-- Pattern: Living Breastplate
+						["crs"] = {
+							1813,	-- Decaying Horror
+						},
+					})),
 					i(9296, {	-- Recipe: Gift of Arthas
 						["crs"] = {
 							1783,	-- Skeletal Flayer

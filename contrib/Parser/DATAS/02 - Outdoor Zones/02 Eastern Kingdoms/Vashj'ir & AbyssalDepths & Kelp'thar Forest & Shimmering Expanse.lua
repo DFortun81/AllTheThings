@@ -211,6 +211,7 @@ _.Zones =
 								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
 								dr(1.4, i(67134)),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
+								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50050, {	-- Shok'sharak
 								dr(100, i(67233))	-- Sussurating Treads of Shok'sharak
@@ -822,6 +823,12 @@ _.Zones =
 								i(59730),
 								i(59729),
 							})),
+							{	-- Elemental Bonds: Desire
+								["questID"] = 29328,
+								["qg"] = 53652,	-- Aggra
+								["coord"] = { 69.8, 34.2, 204 },
+								["sourceQuest"] = 29336,	-- Into Coaxing Tides
+							},
 --[[
 							qg(, qh(25592)),	-- Deep Attraction
 							qg(, qa(25893)),	-- Desperate Plan
@@ -855,6 +862,12 @@ _.Zones =
 								i(59743),
 								i(59741),
 							})),
+							{	-- Into Constant Earth
+								["questID"] = 29337,
+								["qg"] = 53652,	-- Aggra
+								["coord"] = { 69.8, 34.2, 204 },
+								["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
+							},
 --[[
 							qg(, qh(25969)),	-- Hostile Waters
 							qg(, qa(25894)),	-- Hostile Waters
@@ -1004,6 +1017,7 @@ _.Zones =
 								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
 								dr(1.4, i(67134)),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
+								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50052, {	-- Burgy Blackheart
 								dr(100, i(134022))	-- Burgy Blackheart's Handsome Hat

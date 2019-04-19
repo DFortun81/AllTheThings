@@ -6,7 +6,58 @@ _.Toys =
 	n(-3,  {	-- World Event
 		n(-173, {	-- Timewalking
 			i(144072),	-- Adopted Puppy Crate
-			i(129929),	-- Ever-Shifting Mirror
+			i(129929, {  -- Ever-Shifting Mirror	
+				["description"] = "Go to the waypoint and use the toy.\nIt will spawn a portal between the two continents.\nUse this to quickly get to raids or zones you need to clear.\nA few portals of note are listed below:\n\nBRF<--->Gruul's Lair\nWoD Nagrand(north most)<--->SSC\nWoD SMV(right most)<--->Black Temple\nTanaan Jungle(HFC)<--->Magtheridon's Lair",
+				["coords"] = {
+					{ 50.3, 57.2, 550 },  --Nagrand (Draenor) Oshugun Spirit Woods 50.35 57.21
+					{ 41.3, 59.0, 107 },  -- Nagrand (Outland) Oshugun Spirit Fields 41.27 59.04
+				
+					{ 88.3, 22.8, 550 },  -- Nagrand (Draenor) Zangar Shore 88.30 22.84
+					{ 68.2, 88.5, 102 },  -- Zangarmarsh (Outland) Entrance to Nagrand 68.2 88.46 
+						
+					{ 71.4, 21.9, 550 },  -- Nagrand (Draenor) Throne of the Elements 71.41 21.94 
+					{ 60.4, 25.6, 107 },  -- Nagrand (Outland) Throne of the Elements 60.36 25.56
+					
+					{ 81.1, 09.0, 550 },  -- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
+					{ 49.2, 55.4, 102 },  -- Zangarmarsh (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37 
+					
+					{ 21.8, 45.3, 525 },  -- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
+					{ 46.4, 64.1, 105 },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 46.4 64.66
+					
+					{ 37.5, 60.7, 525 },  -- Frostfire Ridge (Draenor) The Burning Glacier 37.53 60.71
+					{ 39.6, 77.4, 105 },  -- Blade's Edge Mountains (Outland) Bloodmaul Ravine 39.63 77.39
+					
+					{ 49.4, 73.7, 543 },  -- Gorgrond (Draenor) Razor Bloom 49.41 73.66
+					{ 59.1, 71.7, 105 },  -- Blade's Edge Mountains (Outland) Razor Ridge 59.11 71.69
+					
+					{ 50.8, 31.4, 543 },  -- Gorgrond (Draenor) Outside BRF 50.82 31.43
+					{ 66.2, 26.3, 105 },  -- Blade's Edge Mountains (Outand) Gruul's Lair 50.82 31.43
+					
+					{ 70.3, 54.5, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' Dark Portal 70.3 54.53
+					{ 80.4, 51.6, 100 },  -- Hellfire Peninsula (Outland) The Path of Glory Dark Portal 80.38 51.6
+					
+					{ 49.6, 50.7, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' HFC 49.56 50.73
+					{ 55.0, 48.9, 100 },  -- Hellfire Peninsula (Outland) The Path of Glory HFC 54.97 48.9
+					
+					{ 60.0, 48.4, 539 },  -- Shadowmoon Valley (Draenor) Path of Light 'Crossroad' 60.02 48.37 
+					{ 61.5, 46.1, 104 },  -- Shadowmoon Valley (Outland) The Warden's Cage 61.53 46.07
+					
+					{ 32.3, 28.8, 539 },  -- Shadowmoon Valley (Draenor) Moonflower Valley 'Crossroad near Alliance garrison' 32.33 28.76
+					{ 27.1, 33.3, 104 },  -- Shadowmoon Valley (Outland) Legion Hold 'Crossroad' 27.1 33.36
+					
+					{ 47.4, 12.4, 542 },  -- Spires of Arak (Draenor) 'Ridge on the boarder with Talador' 47.4 12.45
+					{ 70.8, 75.9, 108 },  -- Terokkar Forest (Outland) Skettis 70.78 75.88
+					
+					{ 57.9, 80.5, 535 },  -- Talador (Draenor) Deathweb Hollow 57.85 80.53
+					{ 45.4, 47.5, 108 },  -- Terokkar Forest (Outland) The Bone Wastes 45.37 47.53
+					
+					{ 50.4, 35.2, 535 },  -- Talador (Draenor) Shattrath City 'New' 50.41 35.19
+					{ 35.3, 12.5, 108 },  -- Terokkar Forest (Outland) Shattrath City 'Old' 35.27 12.51
+					
+					{ 68.4, 09.3, 535 },  -- Talador (Draenor) 'Path of Glory' 68.42 9.32
+					{ 82.6, 66.1, 102 },  -- Zangarmarsh/Hellfire Peninsula (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
+				}
+			}),
 			i(151016), 	-- Fractured Necrolyte Skull
 			i(129965), 	-- Grizzlesnout's Fang
 			i(133511), 	-- Gurboggle's Gleaming Bauble
@@ -47,7 +98,7 @@ _.Toys =
 				i(90427),	-- Pandaren Brewpack
 				i(116757),	-- Steamworks Sausage Grill
 			},
-			["achievementID"] = 1683, -- Brewmaster
+			["achievementID"] = 1683,	-- Brewmaster
 			["u"] = 24,
 		}),
 		n(-52, {    -- Children's Week
@@ -55,7 +106,7 @@ _.Toys =
 				i(69895), 	-- Green Balloon
 				i(69896), 	-- Yellow Balloon
 			},
-			["achievementID"] = 1793, -- For The Children
+			["achievementID"] = 1793,	-- For The Children
 			["u"] = 20,
 		}),
 		n(-59, {    -- Day of the Dead
@@ -66,7 +117,7 @@ _.Toys =
 				i(116890),	-- "Santo's Sun" Contender's Costume
 				i(116891),	-- "Snowy Owl" Contender's Costume
 			},
-			["achievementID"] = 3456, -- Dead Man's Party
+			["achievementID"] = 3456,	-- Dead Man's Party
 			["u"] = 27,
 		}),
 		n(-61, {    -- Feast of Winter Veil
@@ -100,7 +151,7 @@ _.Toys =
 				i(17712), 	-- Winter Veil Disguise Kit
 				i(116691), 	-- Zhevra Lounge Cushion
 			},
-			["achievementID"] = 1691, -- Merrymaker
+			["achievementID"] = 1691,	-- Merrymaker
 			["u"] = 29,
 		}),
 		{	-- Hallow's End
@@ -176,7 +227,7 @@ _.Toys =
 					["itemID"] = 165669,	-- Lunar Elder's Hearthstone
 				},
 			},
-			["achievementID"] = 913, -- To Honor One's Elders
+			["achievementID"] = 913,	-- To Honor One's Elders
 			["u"] = 17,
 		}),
 		a(n(-53, {  -- Midsummer Fire Festival (Alliance)
@@ -186,7 +237,7 @@ _.Toys =
 				i(116435),	-- Cozy Bonfire
 				i(141649),	-- Set of Matches
 			},
-			["achievementID"] = 1038, -- The Flame Warden
+			["achievementID"] = 1038,	-- The Flame Warden
 			["u"] = 21,
 		})),
 		h(n(-54, {	-- Midsummer Fire Festival (Horde)
@@ -196,14 +247,14 @@ _.Toys =
 				i(116435),	-- Cozy Bonfire
 				i(141649),	-- Set of Matches
 			},
-			["achievementID"] = 1039, -- The Flame Keeper
+			["achievementID"] = 1039,	-- The Flame Keeper
 			["u"] = 21,
 		})),
 		n(-60, {    -- Pilgrim's Bounty
 			["groups"]  = {
 				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
 			},
-			["achievementID"] = 3478, -- Pilgrim
+			["achievementID"] = 3478,	-- Pilgrim
 			["u"] = 28,
 		}),
 		n(-55, {    -- Pirate's Day
@@ -211,7 +262,7 @@ _.Toys =
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
 			},
-			["achievementID"] = 3457, -- The Captain's Booty
+			["achievementID"] = 3457,	-- The Captain's Booty
 			["u"] = 23,
 		}),
 	}),

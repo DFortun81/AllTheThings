@@ -10,19 +10,19 @@ _.Zones =
 					ach(5444),	-- Ready, Set, Goat!
 				}),
 				n(-228, {	-- Flight Path
-					fp(632, { -- Bloodwatcher Point, Badlands
+					fp(632, {	-- Bloodwatcher Point, Badlands
 						["coord"] = { 52.4, 50.6 },
 					}),
-					fp(634, { -- Dragon's Mouth, Badlands
+					fp(634, {	-- Dragon's Mouth, Badlands
 						["coord"] = { 21.6, 57.6 },
 					}),
-					fp(633, { -- Dustwind Dig, Badlands
+					fp(633, {	-- Dustwind Dig, Badlands
 						["coord"] = { 48.8, 36.2 },
 					}),
-					fp(635, { -- Fuselight, Badlands
+					fp(635, {	-- Fuselight, Badlands
 						["coord"] = { 64.2, 35.2 },
 					}),
-					fp(21, { -- New Kargath, Badlands
+					fp(21, {	-- New Kargath, Badlands
 						["coord"] = { 17.2, 40.2 },
 					}),
 				}),
@@ -36,7 +36,7 @@ _.Zones =
 					p(432), 	-- Stripe-Tailed Scorpid
 				}),
 				n(-17,  {	-- Quests
-					ach(4900, { -- Badlands Quests
+					ach(4900, {	-- Badlands Quests
 						crit(1, { --	Rhea
 							q( 27763, {	-- To Fuselight Proper
 								["qg"] = 46650,	-- Eddie Flofizzle
@@ -178,9 +178,9 @@ _.Zones =
 							o(206374, {	-- Trove of the Watchers
 								qa(27794, {	-- Return to Blam
 									["groups"] = {
-										i( 63176),	-- Well Cushioned Boots
-										i( 63175),	-- Hieronymus' Belt
-										i( 63174),	-- Watcher's Spear
+										i(63176),	-- Well Cushioned Boots
+										i(63175),	-- Hieronymus' Belt
+										i(63174),	-- Watcher's Spear
 										i(157008),	-- Blam-Hatchet
 									},
 									["sourceQuests"] = { 27912 },	-- The Titans' Trove
@@ -243,13 +243,13 @@ _.Zones =
 							}),
 							q( 27859, {	-- The Egg Lives On
 								["groups"] = {
-									i(63194), -- Rhea's Last Egg
+									i(63194),	-- Rhea's Last Egg
 								},
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27930 },	-- Devastation
 							}),
 						})),
-						h(crit(2, { --  The Fate of a Dragonflight
+						h(crit(2, {	--  The Fate of a Dragonflight
 							qh(27889, {	-- New Kargath
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27888 },	-- Return to Blam
@@ -310,9 +310,9 @@ _.Zones =
 							}),
 							q( 27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
 								["groups"] = {
-									i( 63193),	-- Theldurin's Fist
-									i( 63192),  -- Tosselwrench's Shrinker
-									i( 63191),	-- Martek's Knife
+									i(63193),	-- Theldurin's Fist
+									i(63192),  -- Tosselwrench's Shrinker
+									i(63191),	-- Martek's Knife
 									i(156961),	-- Martek's Stick of Truthiness
 									i(156962),	-- Genuine Deathwing Fang
 								},
@@ -322,7 +322,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, { -- Other Quests
+					n(-168, {	-- Other Quests
 						sz(765, 1, {	-- Lethlor Ravine
 							q( 27775, {	-- When the Going Gets Tough, Cheat
 								["groups"] = {
@@ -945,7 +945,7 @@ _.Zones =
 						})),
 						un(40, q(2418, {	-- Power Stones
 							un(2, i(10358)),	-- Duracin Bracers
-							un(2, i( 9522)),	-- Energized Stone Circle
+							un(2, i(9522)),	-- Energized Stone Circle
 							un(2, i(10359)),	-- Everlast Boots
 						})),
 						un(40, qa(2361, {	-- Restoring the Necklace

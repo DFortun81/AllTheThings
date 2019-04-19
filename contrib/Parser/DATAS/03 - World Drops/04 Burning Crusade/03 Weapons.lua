@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-319, { -- Weapons		
-				n(-334, { -- 1H Axes
+			n(-319, {	-- Weapons		
+				n(-334, {	-- 1H Axes
 					i(25198),	-- Karaborian Battle Axe
 					i(25199),	-- Knight's War Axe
 					i(25200),	-- Jagged Broadaxe
@@ -23,7 +23,7 @@ _.WorldDrops =
 					i(25211),	-- Rockbiter Cutter
 					i(31153),	-- Axe of the Legion
 				}),
-				n(-335, { -- 2H Axes
+				n(-335, {	-- 2H Axes
 					i(25212),	-- Lucky Strike Axe
 					i(25213),	-- Fel-Touched Axe
 					i(25214),	-- Mok'Nathal Battleaxe
@@ -43,7 +43,7 @@ _.WorldDrops =
 					i(31318),	-- Singing Crystal Axe
 					i(32663),	-- Apexis Cleaver
 				}),	
-				n(-346, { -- Bows
+				n(-346, {	-- Bows
 					i(25240),	-- Azerothian Longbow
 					i(25241),	-- Ashenvale Longbow
 					i(25242),	-- Telaari Longbow
@@ -60,7 +60,7 @@ _.WorldDrops =
 					i(25253),	-- Windspear Longbow
 					i(31303),	-- Valanos' Longbow
 				}),
-				n(-347, { -- Crossbows
+				n(-347, {	-- Crossbows
 					i(25254),	-- Tower Crossbow
 					i(25255),	-- Ram's Head Crossbow
 					i(25256),	-- Stronghold Crossbow
@@ -76,7 +76,7 @@ _.WorldDrops =
 					i(25266),	-- Well-Balanced Crossbow
 					i(25267),	-- Rampant Crossbow
 				}),			
-				n(-333, { -- Daggers	
+				n(-333, {	-- Daggers	
 					i(25100),	-- Liege Blade
 					i(25101),	-- Cross Pommel Dagger
 					i(25102),	-- Jaedenis Dagger
@@ -113,7 +113,7 @@ _.WorldDrops =
 					i(31331),	-- The Night Blade
 					i(32659),	-- Crystal-Infused Shiv
 				}),
-				n(-348, { -- Fist Weapons	
+				n(-348, {	-- Fist Weapons	
 					i(25184),	-- Ravager Claws
 					i(25185),	-- Thrasher Blades
 					i(25186),	-- Vampiric Handscythes
@@ -132,7 +132,7 @@ _.WorldDrops =
 					i(29372),	-- Void-Talon
 					i(30755),	-- Mag'hari Fighting Claw
 				}),
-				n(-345, { -- Guns
+				n(-345, {	-- Guns
 					i(25268),	-- Lead-Slug Shotgun
 					i(25269),	-- Longbeard Rifle
 					i(25270),	-- Gnomish Assault Rifle
@@ -151,7 +151,7 @@ _.WorldDrops =
 					i(31204),	-- The Gunblade
 					i(31323),	-- Don Santos' Famous Hunting Rifle
 				}),			
-				n(-331, { -- Held in Off-hand
+				n(-331, {	-- Held in Off-hand
 					i(25086),	-- Dreamseeker Dandelion
 					i(25087),	-- Bleeding Eye
 					i(25088),	-- Laughing Skull Orb
@@ -166,7 +166,7 @@ _.WorldDrops =
 					i(25098),	-- Tuurik Torch
 					i(25099),	-- Draenei Crystal Rod
 				}),
-				n(-336, { -- 1H Maces
+				n(-336, {	-- 1H Maces
 					i(25114),	-- Doomsayer's Mace
 					i(25115),	-- Riversong Mace
 					i(25116),	-- Pneumatic War Hammer
@@ -200,7 +200,7 @@ _.WorldDrops =
 					i(31342),	-- The Ancient Scepter of Sue-Min
 					i(32661),	-- Apexis Crystal Mace
 				}),
-				n(-337, { -- 2H Maces
+				n(-337, {	-- 2H Maces
 					i(25128),	-- Shining Mace
 					i(25129),	-- Giant's Leg Bone
 					i(25130),	-- Gronn-Bone Club
@@ -218,7 +218,7 @@ _.WorldDrops =
 					i(31299),	-- The Oathkeeper
 					i(31322),	-- The Hammer of Destiny
 				}),
-				n(-343, { -- Polearms
+				n(-343, {	-- Polearms
 					i(25226),	-- War Scythe
 					i(25227),	-- Sha'tari Longspear
 					i(25228),	-- Halberd Polearm
@@ -236,7 +236,7 @@ _.WorldDrops =
 					i(29377),	-- Ethereum Phase-Spear
 					i(30753),	-- Warphorn Spear
 				}),			
-				n(-332, { -- Shield
+				n(-332, {	-- Shield
 					i(25072),	-- Northman's Shield
 					i(25074),	-- Telaari Shield
 					i(25076),	-- Screaming Shield
@@ -253,7 +253,7 @@ _.WorldDrops =
 					i(31287),	-- Draenei Honor Guard Shield
 					i(31292),	-- Crystal Pulse Shield
 				}),
-				n(-342, { -- Staves
+				n(-342, {	-- Staves
 					i(25170),	-- Rattan Bo Staff
 					i(25171),	-- Straight Hardwood Staff
 					i(25172),	-- Jinbali Warp-Staff
@@ -288,11 +288,13 @@ _.WorldDrops =
 					i(31334),	-- Staff of Natural Fury
 					i(32662),	-- Flaming Quartz Staff
 				}),
-				n(-338, { -- 1H Swords
+				n(-338, {	-- 1H Swords
 					i(25142),	-- Telaari Longblade
 					i(25143),	-- Silver Hand Blade
 					i(25144),	-- Skettis Curved Blade
-					desc(un(7, i(25145)), "Added in WOD only to Big Crate of Salvage"),	-- Wisdom Blade
+					un(7, i(25145, {	-- Wisdom Blade
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
 					i(25146),	-- Light-Etched Longsword
 					i(25147),	-- Skystrider Katana
 					i(25148),	-- Bone Collector Sword
@@ -310,7 +312,7 @@ _.WorldDrops =
 					i(31336),	-- Blade of Wizardry
 					i(32660),	-- Crystalforged Sword
 				}),
-				n(-339, { -- 2H Swords
+				n(-339, {	-- 2H Swords
 					i(25156),	-- Royal Crusader Sword
 					i(25157),	-- Serpentlord Claymore
 					i(25158),	-- Skeletal Broadsword
@@ -327,7 +329,7 @@ _.WorldDrops =
 					i(25169),	-- Fel Orc Brute Sword
 					i(31134),	-- Blade of Misfortune
 				}),
-				n(-341, { -- Wands
+				n(-341, {	-- Wands
 					i(25282),	-- Mahogany Wand
 					i(25283),	-- Crystallized Ebony Wand
 					i(25284),	-- Purpleheart Wand

@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9963, { -- Pet Battles
+	n(-9963, {	-- Pet Battles
 		["groups"] = {
-			n(-10028, { -- Battle
+			n(-10028, {	-- Battle
 				["groups"] = {
 					ach(9069, {		-- An Awfully Big Adventure
 						i(120121),		-- Trunks
@@ -214,7 +214,7 @@ _.Achievements =
 					ach(12281),		-- Beast Brawler
 					ach(13270, {	-- Beast Mode
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -289,7 +289,7 @@ _.Achievements =
 					ach(12284), 	-- Critter Brawler
 					ach(13271, {	-- Critters with Huge Teeth
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -359,7 +359,7 @@ _.Achievements =
 					}),
 					ach(13272, {	-- Dragons Make Everything Better
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -401,7 +401,7 @@ _.Achievements =
 					}),
 					ach(13273, {	-- Element of Success
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -512,7 +512,7 @@ _.Achievements =
 					ach(12286),		-- Flying Brawler
 					ach(13274, {	-- Fun With Flying
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -533,7 +533,7 @@ _.Achievements =
 					}),
 					ach(13280, {	-- Hobbyist Aquarist
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -575,7 +575,7 @@ _.Achievements =
 					}),
 					ach(13281, {	-- Human Resources
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -608,7 +608,7 @@ _.Achievements =
 					}),
 					ach(13277, {	-- Machine Learning
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -650,7 +650,7 @@ _.Achievements =
 					}),
 					ach(13275, {	-- Magician's Secrets
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn
@@ -759,7 +759,7 @@ _.Achievements =
 					ach(6620),		-- No Time To Heal
 					ach(13278, {	-- Not Quite Dead Yet
 						crit(1),	-- Captain Hermes
-						crit(2),	-- Automated Chaos
+						crit(2),	-- Eddie Fixit
 						crit(3),	-- Dilbert McClint
 						crit(4),	-- Fizzie Sparkwhistle
 						crit(5),	-- Michael Skarn

@@ -191,7 +191,7 @@ _.Zones =
 							},
 							{	-- Lightbearer
 								["objectID"] = 227527,
-								["questID"] = 35964, -- also triggers 34101
+								["questID"] = 35964,	-- also triggers 34101
 								["coord"] = { 68.8, 56.2 , 535 },
 								["g"] = {
 									i(109192),	-- Lightbearer
@@ -391,7 +391,7 @@ _.Zones =
 								["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",
 								["coord"] = { 39.2, 41.7, 535 },
 								["g"] = {
-									i(112623, { -- Pack of Fishing Supplies
+									i(112623, {	-- Pack of Fishing Supplies
 										i(34834),	-- Recipe: Captain Rumsey's Lager
 										i(33820), 	-- Weather-Beaten Fishing Hat
 										i(44983),	-- Strand Crawler Pet

@@ -4,6 +4,14 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 50,
+		["mapID"] = 232,
+		["crs"] = {
+			14387,	-- Lothos Riftwaker
+		},
+		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
 			n(-1, {	-- Common Boss Drop
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
@@ -18,6 +26,17 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(18259, {	-- Formula: Enchant Weapon - Spellpower
+					["crs"]	= {
+						12118,	-- Lucifron
+						11982,	-- Magmadar
+						12259,	-- Gehennas
+						12057,	-- Garr
+						12264,	-- Shazzrah
+						12056,	-- Baron Geddon
+						11988,	-- Golemagg the Incinerator
+					},
+				}),
+				i(18252, {	-- Pattern: Core Armor Kit
 					["crs"]	= {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -450,7 +469,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(12118, e(1519, { -- Lucifron
+			cr(12118, e(1519, {	-- Lucifron
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -468,12 +487,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-			--	un(2, i(16665, { -- Tome of Tranquilizing Shot
+			--	un(2, i(16665, {	-- Tome of Tranquilizing Shot
 			--		["class"] = { 3 },
 			--		["collectible"] = false,
 			--	})),
 			})),
-			cr(11982, e(1520, { -- Magmadar
+			cr(11982, e(1520, {	-- Magmadar
 				i(93034),	-- Blazing Rune (Pet)
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
@@ -501,7 +520,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
-			cr(12259, e(1521, { -- Gehennas
+			cr(12259, e(1521, {	-- Gehennas
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -519,7 +538,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
 			})),
-			cr(12057, e(1522, { -- Garr
+			cr(12057, e(1522, {	-- Garr
 				i(18564, {	-- Bindings of the Windseeker (Right)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -530,7 +549,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						}),
 					},
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
@@ -557,7 +576,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
-			cr(12264, e(1523, { -- Shazzrah
+			cr(12264, e(1523, {	-- Shazzrah
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -575,7 +594,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
 			})),
-			cr(12056, e(1524, { -- Baron Geddon
+			cr(12056, e(1524, {	-- Baron Geddon
 				i(18563, {	-- Bindings of the Windseeker (Left)
 					["groups"] = {
 						i(19019, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -586,7 +605,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						}),
 					},
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 }, -- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
+					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
@@ -606,7 +625,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(17110),	-- Seal of the Archmagus
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
-			cr(12098, e(1525, { -- Sulfuron Harbinger
+			cr(12098, e(1525, {	-- Sulfuron Harbinger
 				i(93033),	-- Mark of Flame (Pet)
 				i(17074),	-- Shadowstrike
 				i(17223),	-- Thunderstrike
@@ -625,7 +644,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
 			})),
-			cr(11988, e(1526, { -- Golemagg the Incinerator
+			cr(11988, e(1526, {	-- Golemagg the Incinerator
 				i(93035),	-- Core of Hardened Ash (Pet)
 				i(17203),	-- Sulfuron Ingot
 				i(18822),	-- Obsidian Edged Blade 
@@ -652,7 +671,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
 			})),
-			cr(12018, e(1527, { -- Majordomo Executus
+			cr(12018, e(1527, {	-- Majordomo Executus
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
 				i(19139),	-- Fireguard Shoulders
@@ -665,7 +684,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19140),	-- Cauterizing Band
 				un(2, i(18646)),	-- The Eye of Divinity
 			})),
-			cr(11502, e(1528, { -- Ragnaros
+			cr(11502, e(1528, {	-- Ragnaros
 				ach(686),	-- Molten Core
 				i(138018),	-- Clothes Chest Pattern: Molten Core
 				{	-- Eye of Sulfuras
@@ -770,13 +789,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(13130),	-- Windrunner Legguards
 				i(13066),	-- Wyrmslayer Spaulders
 			})),
-		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["mapID"] = 232,
-		["crs"] = {
-			14387,	-- Lothos Riftwaker
 		},
 	}),
 })};

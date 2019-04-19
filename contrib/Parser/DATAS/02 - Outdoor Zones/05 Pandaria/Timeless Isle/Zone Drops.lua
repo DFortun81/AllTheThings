@@ -109,7 +109,7 @@ _.Zones =
 						n(71920, {	-- Cursed Hozen Swabby
 							dr(8.0, i(104015, {	-- Barnacle Encrusted Key
 								{
-									["objectID"] = 220832, -- Sunken Treasure
+									["objectID"] = 220832,	-- Sunken Treasure
 									["description"] = "In the belly of the sunken ship.",
 									["coord"] = { 40.4, 92.3 },
 									["groups"] = {
@@ -295,25 +295,6 @@ _.Zones =
 							},
 							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
 						}),
-						n(72769, { 	-- Spirit of Jadefire
-							["groups"] = {
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 45,		-- Glowing Green Ash [Criteria]
-									["itemID"] = 104258,	-- Glowing Green Ash [Item]
-									["dr"] = 1.9,
-								},
-								{
-									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-									["criteriaID"] = 21,		-- Jadefire Spirit [Criteria]
-									["itemID"] = 104307,		-- Jadefire Spirit [Item]
-									["dr"] = 1.9,
-								},
-								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
-							},
-							["questID"] = 33293,
-							["isDaily"] = true,
-						}),
 						n(72908, {	-- Spotted Swarmer
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -326,22 +307,23 @@ _.Zones =
 							dr(0.4, i(104231)),	-- Technique: Glyph of Inspired Hymns
 						}),
 						i(103642),	-- Book of the Ages
+						i(104217),	-- Charred Recipe
 						i(103643),	-- Dew of Eternal Morning
 						i(103641),	-- Singing Crystal
 						i(103982),	-- Burden of Eternity
-						i(102318, { -- Timeless Cloak
-							i(103982, { -- Burden of Eternity
-								i(101889), -- Amaranthine Cloak
-								i(101879), -- Cliffbreaker Drape
-								i(101939), -- Elder Tortoiseshell Drape
-								i(101935), -- Kiln-Stoker Cloak
-								i(101917), -- Warmsun Cloak
+						i(102318, {	-- Timeless Cloak
+							i(103982, {	-- Burden of Eternity
+								i(101889),	-- Amaranthine Cloak
+								i(101879),	-- Cliffbreaker Drape
+								i(101939),	-- Elder Tortoiseshell Drape
+								i(101935),	-- Kiln-Stoker Cloak
+								i(101917),	-- Warmsun Cloak
 							}),
-							i(101800), -- Amaranthine Cloak
-							i(101790), -- Cliffbreaker Drape
-							i(101852), -- Elder Tortoiseshell Drape
-							i(101848), -- Kiln-Stoker Cloak
-							i(101828), -- Warmsun Cloak
+							i(101800),	-- Amaranthine Cloak
+							i(101790),	-- Cliffbreaker Drape
+							i(101852),	-- Elder Tortoiseshell Drape
+							i(101848),	-- Kiln-Stoker Cloak
+							i(101828),	-- Warmsun Cloak
 						}),
 						i(104013, {	-- Timeless Cloth Armor Cache
 							["groups"] = {
@@ -365,7 +347,7 @@ _.Zones =
 							["description"] = "Item created will be class and spec specific.|r",
 						}),
 						i(102287, {	-- Timeless Cloth Helm
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101891),	-- Amaranthine Cowl
 								i(101901),	-- Cloudscorcher Cowl
 							}),
@@ -373,7 +355,7 @@ _.Zones =
 							i(101812),	-- Cloudscorcher Cowl
 						}),
 						i(102289, {	-- Timeless Cloth Spaulders
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101897),	-- Amaranthine Shoulderpads
 								i(101906),	-- Cloudscorcher Shoulderpads
 							}),
@@ -381,7 +363,7 @@ _.Zones =
 							i(101817),	-- Cloudscorcher Shoulderpads
 						}),
 						i(102284, {	-- Timeless Cloth Robes
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101895),	-- Amaranthine Robes
 								i(101904),	-- Cloudscorcher Robes
 							}),
@@ -389,7 +371,7 @@ _.Zones =
 							i(101815),	-- Cloudscorcher Robes
 						}),
 						i(102321, {	-- Timeless Cloth Bracers
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101899),	-- Amaranthine Wristwraps
 								i(101907),	-- Cloudscorcher Wristwraps
 							}),
@@ -397,7 +379,7 @@ _.Zones =
 							i(101818),	-- Cloudscorcher Wristwraps
 						}),
 						i(102286, {	-- Timeless Cloth Gloves
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101892),	-- Amaranthine Handwraps
 								i(101902),	-- Cloudscorcher Handwraps
 							}),
@@ -405,7 +387,7 @@ _.Zones =
 							i(101813),	-- Cloudscorcher Handwraps
 						}),
 						i(102290, {	-- Timeless Cloth Belt
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101890),	-- Amaranthine Cord
 								i(101900),	-- Cloudscorcher Belt
 							}),
@@ -413,7 +395,7 @@ _.Zones =
 							i(101811),	-- Cloudscorcher Belt
 						}),
 						i(102288, {	-- Timeless Cloth Leggings
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101893),	-- Amaranthine Leggings
 								i(101903),	-- Cloudscorcher Leggings
 							}),
@@ -421,7 +403,7 @@ _.Zones =
 							i(101814),	-- Cloudscorcher Leggings
 						}),
 						i(102285, {	-- Timeless Cloth Boots
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101896),	-- Amaranthine Sandals
 								i(101905),	-- Cloudscorcher Sandals
 							}),
@@ -627,8 +609,8 @@ _.Zones =
 							},
 							["description"] = "Item created will be class and spec specific.|r",
 						}),
-						i(102266, { -- Timeless Plate Helm
-							i(103982, { -- Burden of Eternity
+						i(102266, {	-- Timeless Plate Helm
+							i(103982, {	-- Burden of Eternity
 								i(101882),	-- Cliffbreaker Helm
 								i(101942),	-- Elder Tortoiseshell Helm
 								i(101911),	-- Everbright Helm
@@ -637,8 +619,8 @@ _.Zones =
 							i(101855),	-- Elder Tortoiseshell Helm
 							i(101822),	-- Everbright Helm
 						}),
-						i(102268, { -- Timeless Plate Spaulders
-							i(103982, { -- Burden of Eternity
+						i(102268, {	-- Timeless Plate Spaulders
+							i(103982, {	-- Burden of Eternity
 								i(101885),	-- Cliffbreaker Pauldrons
 								i(101945),	-- Elder Tortoiseshell Pauldrons
 								i(101913),	-- Everbright Pauldrons
@@ -647,8 +629,8 @@ _.Zones =
 							i(101858),	-- Elder Tortoiseshell Pauldrons
 							i(101824),	-- Everbright Pauldrons
 						}),
-						i(102263, { -- Timeless Plate Chestpiece
-							i(103982, { -- Burden of Eternity
+						i(102263, {	-- Timeless Plate Chestpiece
+							i(103982, {	-- Burden of Eternity
 								i(101878),	-- Cliffbreaker Breastplate
 								i(101938),	-- Elder Tortoiseshell Breastplate
 								i(101908),	-- Everbright Breastplate
@@ -657,8 +639,8 @@ _.Zones =
 							i(101851),	-- Elder Tortoiseshell Breastplate
 							i(101819),	-- Everbright Breastplate
 						}),
-						i(102320, { -- Timeless Plate Bracers
-							i(103982, { -- Burden of Eternity
+						i(102320, {	-- Timeless Plate Bracers
+							i(103982, {	-- Burden of Eternity
 								i(101888),	-- Cliffbreaker Vambraces
 								i(101948),	-- Elder Tortoiseshell Vambraces
 								i(101915),	-- Everbright Vambraces
@@ -667,8 +649,8 @@ _.Zones =
 							i(101861),	-- Elder Tortoiseshell Vambraces
 							i(101826),	-- Everbright Vambraces
 						}),
-						i(102265, { -- Timeless Plate Gloves
-							i(103982, { -- Burden of Eternity
+						i(102265, {	-- Timeless Plate Gloves
+							i(103982, {	-- Burden of Eternity
 								i(101880),	-- Cliffbreaker Gauntlets
 								i(101940),	-- Elder Tortoiseshell Gauntlets
 								i(101909),	-- Everbright Gauntlets
@@ -677,8 +659,8 @@ _.Zones =
 							i(101853),	-- Elder Tortoiseshell Gauntlets
 							i(101820),  -- Everbright Gauntlets
 						}),
-						i(102269, { -- Timeless Plate Belt
-							i(103982, { -- Burden of Eternity
+						i(102269, {	-- Timeless Plate Belt
+							i(103982, {	-- Burden of Eternity
 								i(101881),	-- Cliffbreaker Girdle
 								i(101941),	-- Elder Tortoiseshell Girdle
 								i(101910),	-- Everbright Girdle
@@ -687,8 +669,8 @@ _.Zones =
 							i(101854),	-- Elder Tortoiseshell Girdle
 							i(101821),	-- Everbright Girdle
 						}),
-						i(102267, { -- Timeless Plate Leggings
-							i(103982, { -- Burden of Eternity
+						i(102267, {	-- Timeless Plate Leggings
+							i(103982, {	-- Burden of Eternity
 								i(101883),	-- Cliffbreaker Legplates
 								i(101943),	-- Elder Tortoiseshell Legplates
 								i(101912),	-- Everbright Legplates
@@ -697,8 +679,8 @@ _.Zones =
 							i(101856),	-- Elder Tortoiseshell Legplates
 							i(101823),	-- Everbright Legplates
 						}),
-						i(102264, { -- Timeless Plate Boot
-							i(103982, { -- Burden of Eternity
+						i(102264, {	-- Timeless Plate Boot
+							i(103982, {	-- Burden of Eternity
 								i(101886),	-- Cliffbreaker Sabatons
 								i(101946),	-- Elder Tortoiseshell Sabatons
 								i(101914),	-- Everbright Sabatons
@@ -708,7 +690,7 @@ _.Zones =
 							i(101825),	-- Everbright Sabatons
 						}),
 						i(104345, {	-- Timeless Lavalliere
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101894),	-- Amaranthine Necklace [Timeless]
 								i(101884),	-- Cliffbreaker Neck [Timeless]
 								i(101944),	-- Elder Tortoiseshell Neck [Timeless]
@@ -722,7 +704,7 @@ _.Zones =
 							i(101827),	-- Warmsun Choker
 						}),
 						i(102291, {	-- Timeless Signet
-							i(103982, { -- Burden of Eternity
+							i(103982, {	-- Burden of Eternity
 								i(101898),	-- Amaranthine Signet [Timeless]
 								i(101887),	-- Cliffbreaker Seal [Timeless]
 								i(101947),	-- Elder Tortoiseshell Seal [Timeless]

@@ -12,7 +12,7 @@ _.Zones =
 					{	-- Flight Master
 						["npcID"] = -228,	-- Flight Point
 						["g"] = {
-							fp(2, { -- Stormwind, Elwynn
+							fp(2, {	-- Stormwind, Elwynn
 								["coord"] = { 71, 72.6 },
 							}),
 						},

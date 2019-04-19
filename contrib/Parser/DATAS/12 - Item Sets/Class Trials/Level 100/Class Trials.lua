@@ -3,13 +3,13 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-138, {	-- Level 100
 			["description"] = "These are obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_100",
 			["lvl"] = 100,
 			["groups"] = bubbleDown({["u"] = 2}, {
-				n(-140, { -- Communal
+				n(-140, {	-- Communal
 					["groups"] = {
 						n(-9915, {	-- Disc / Holy
 							i(129394),	-- Communal Staff
@@ -48,7 +48,7 @@ _.GearSets =
 					},
 					["classes"] = { 5 }
 				}),
-				n(-145, { -- Mountainsage
+				n(-145, {	-- Mountainsage
 					["groups"] = {
 						i(129525),	-- Mountainsage Staff
 						un(1, i(129523)),	-- Mountainsage Wand
@@ -69,7 +69,7 @@ _.GearSets =
 					},
 					["classes"] = { 8 }
 				}),
-				n(-141, { -- Felsoul 
+				n(-141, {	-- Felsoul 
 					["groups"] = {
 						i(129425),	-- Felsoul Staff
 						i(129417),	-- Felsoul Cowl
@@ -89,7 +89,7 @@ _.GearSets =
 					},
 					["classes"] = { 9 }
 				}),
-				n(-147, { -- Springrain
+				n(-147, {	-- Springrain
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129583),	-- Springrain Spear
@@ -107,7 +107,7 @@ _.GearSets =
 							i(129577),	-- Springrain Stone of Destruction
 							i(129563),	-- Springrain Stone of Rage
 						}),
-						n(-9926, { -- Balance
+						n(-9926, {	-- Balance
 							i(129567),	-- Springrain Headpiece
 							i(129569),	-- Springrain Spaulders
 							i(129564),	-- Springrain Tunic
@@ -117,7 +117,7 @@ _.GearSets =
 							i(129568),	-- Springrain Leggings
 							i(129565),	-- Springrain Treads
 						}),
-						n(-9925, { -- Feral
+						n(-9925, {	-- Feral
 							i(129581),	-- Springrain Helm
 							i(129584),	-- Springrain Pauldrons
 							i(129578),	-- Springrain Vest
@@ -130,7 +130,7 @@ _.GearSets =
 					},
 					["classes"] = { 11 }
 				}),
-				n(-143, { -- Lightdrinker 
+				n(-143, {	-- Lightdrinker 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129473),	-- Lightdrinker Sword
@@ -154,7 +154,7 @@ _.GearSets =
 					},
 					["classes"] = { 4 }
 				}),
-				n(-144, { -- Mistdancer 
+				n(-144, {	-- Mistdancer 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129478),	-- Mistdancer Spire
@@ -206,7 +206,7 @@ _.GearSets =
 					},
 					["classes"] = { 10 }
 				}),
-				n(-150, { -- Trailseeker
+				n(-150, {	-- Trailseeker
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129717),	-- Trailseeker Shotgun
@@ -229,47 +229,153 @@ _.GearSets =
 					},
 					["classes"] = { 3 }
 				}),
-				n(-148, { -- Streamtalker
+				n(-148, {	-- Streamtalker
+					["classes"] = { 7 },	-- Shaman Only
 					["groups"] = {
-						i(129626),	-- Streamtalker Aegis
-						i(129620),	-- Streamtalker Claws
-						i(129630),	-- Streamtalker Talons	
-						n(-9939, { -- Elemental
-							i(129624),	-- Streamtalker Coif
-							--i(),	-- 
-							i(129645),	-- Streamtalker Cloak of Destruction
-							i(129627),	-- Streamtalker Pauldrons
-							i(129621),	-- Streamtalker Tunic
-							i(129629),	-- Streamtalker Armbands
-							i(129623),	-- Streamtalker Gloves
-							i(129628),	-- Streamtalker Belt
-							i(129625),	-- Streamtalker Legwraps
-							i(129622),	-- Streamtalker Boots
-							--i(),	-- 
-							--i(),	-- 
-							--i(),	-- 
-							--i(),	-- 
-						}),
-						n(-9940, { -- Enhancement
-							i(129634),	-- Streamtalker Helm
-							--i(),	-- 
-							i(129609),	-- Streamtalker Cloak of Rage
-							i(129636),	-- Streamtalker Shoulderguards
-							i(129631),	-- Streamtalker Chestguard
-							i(129638),	-- Streamtalker Armguard
-							i(129633),	-- Streamtalker Handguards
-							i(129637),	-- Streamtalker Waistguard
-							i(129635),	-- Streamtalker Legguards
-							i(129632),	-- Streamtalker Greaves
-							--i(),	-- 
-							--i(),	-- 
-							--i(),	-- 
-							--i(),	-- 
-						}),
+						{	-- Streamtalker Aegis [Elemental]
+							["itemID"] = 129626,	-- Streamtalker Aegis
+						},
+						{	-- Streamtalker Claws [Elemental]
+							["itemID"] = 129620,	-- Streamtalker Claws
+						},
+						{	-- Streamtalker Talons [Enhancement]
+							["itemID"] = 129630,	-- Streamtalker Talons
+						},
+						{	-- Streamtalker Slicers [Restoration]
+							["itemID"] = 129646,	-- Streamtalker Slicers
+						},
+						{	-- Streamtalker Shield [Restoration]
+							["itemID"] = 129652,	-- Streamtalker Shield
+						},
+						{	-- Streamtalker Coif [Elemental]
+							["itemID"] = 129624,	-- Streamtalker Coif
+						},
+						{	-- Streamtalker Cowl [Restoration]
+							["itemID"] = 129650,	-- Streamtalker Cowl
+						},
+						{	-- Streamtalker Helm [Enhancement]
+							["itemID"] = 129634,	-- Streamtalker Helm	
+						},
+						{	-- Streamtalker Choker [Enhancement]
+							["itemID"] = 129610,	-- Streamtalker Choker	
+						},
+						{	-- Streamtalker Medallion [Elemental]
+							["itemID"] = 129615,	-- Streamtalker Medallion
+						},
+						{	-- Streamtalker Necklace [Restoration]
+							["itemID"] = 129640,	-- Streamtalker Necklace
+						},
+						{	-- Streamtalker Pauldrons [Elemental]
+							["itemID"] = 129627,	-- Streamtalker Pauldrons
+						},
+						{	-- Streamtalker Shoulderguards [Enhancement]
+							["itemID"] = 129636,	-- Streamtalker Shoulderguards	
+						},
+						{	-- Streamtalker Spaulders [Restoration]
+							["itemID"] = 129653,	-- Streamtalker Spaulders
+						},
+						{	-- Streamtalker Cloak of Destruction [Elemental]
+							["itemID"] = 129645,	-- Streamtalker Cloak of Destruction
+						},
+						{	-- Streamtalker Cloak of Rage [Enhancement]
+							["itemID"] = 129609,	-- Streamtalker Cloak of Rage	
+						},
+						{	-- Streamtalker Cloak of Wisdom [Restoration]
+							["itemID"] = 129639,	-- Streamtalker Cloak of Wisdom
+						},
+						{	-- Streamtalker Chestguard [Enhancement]
+							["itemID"] = 129631,	-- Streamtalker Chestguard	
+						},
+						{	-- Streamtalker Tunic [Elemental]
+							["itemID"] = 129621,	-- Streamtalker Tunic
+						},
+						{	-- Streamtalker Vest [Restoration]
+							["itemID"] = 129647,	-- Streamtalker Vest
+						},
+						{	-- Streamtalker Armbands [Elemental]
+							["itemID"] = 129629,	-- Streamtalker Armbands
+						},
+						{	-- Streamtalker Armguard [Enhancement]
+							["itemID"] = 129638,	-- Streamtalker Armguard	
+						},
+						{	-- Streamtalker Bracers [Restoration]
+							["itemID"] = 129655,	-- Streamtalker Bracers
+						},
+						{	-- Streamtalker Gloves [Elemental]
+							["itemID"] = 129623,	-- Streamtalker Gloves
+						},
+						{	-- Streamtalker Grips [Restoration]
+							["itemID"] = 129649,	-- Streamtalker Grips
+						},
+						{	-- Streamtalker Handguards [Enhancement]
+							["itemID"] = 129633,	-- Streamtalker Handguards	
+						},
+						{	-- Streamtalker Belt [Elemental]
+							["itemID"] = 129628,	-- Streamtalker Belt
+						},
+						{	-- Streamtalker Girdle [Restoration]
+							["itemID"] = 129654,	-- Streamtalker Girdle
+						},
+						{	-- Streamtalker Waistguard [Enhancement]
+							["itemID"] = 129637,	-- Streamtalker Waistguard	
+						},
+						{	-- Streamtalker Leggings [Restoration]
+							["itemID"] = 129651,	-- Streamtalker Leggings
+						},
+						{	-- Streamtalker Legguards [Enhancement]
+							["itemID"] = 129635,	-- Streamtalker Legguards	
+						},
+						{	-- Streamtalker Legwraps [Elemental]
+							["itemID"] = 129625,	-- Streamtalker Legwraps
+						},
+						{	-- Streamtalker Boots [Elemental]
+							["itemID"] = 129622,	-- Streamtalker Boots
+						},
+						{	-- Streamtalker Greaves [Enhancement]
+							["itemID"] = 129632,	-- Streamtalker Greaves	
+						},
+						{	-- Streamtalker Sabatons [Restoration]
+							["itemID"] = 129648,	-- Streamtalker Sabatons
+						},
+						{	-- Streamtalker Band of Destruction [Elemental]
+							["itemID"] = 129618,	-- Streamtalker Band of Destruction
+						},
+						{	-- Streamtalker Band of Onslaught [Enhancement]
+							["itemID"] = 129612,	-- Streamtalker Band of Onslaught
+						},
+						{	-- Streamtalker Band of Wisdom [Restoration]
+							["itemID"] = 129643,	-- Streamtalker Band of Wisdom
+						},
+						{	-- Streamtalker Idol of Rage [Enhancement]
+							["itemID"] = 129611,	-- Streamtalker Idol of Rage
+						},
+						{	-- Streamtalker Idol of Destruction [Elemental]
+							["itemID"] = 129616,	-- Streamtalker Idol of Destruction
+						},
+						{	-- Streamtalker Idol of Wisdom [Restoration]
+							["itemID"] = 129641,	-- Streamtalker Idol of Wisdom
+						},
+						{	-- Streamtalker Ring of Destruction [Elemental]
+							["itemID"] = 129617,	-- Streamtalker Ring of Destruction
+						},
+						{	-- Streamtalker Ring of Onslaught [Enhancement]
+							["itemID"] = 129613,	-- Streamtalker Ring of Onslaught
+						},
+						{	-- Streamtalker Ring of Wisdom [Restoration]
+							["itemID"] = 129642,	-- Streamtalker Ring of Wisdom
+						},
+						{	-- Streamtalker Stone of Destruction [Elemental]
+							["itemID"] = 129619,	-- Streamtalker Stone of Destruction
+						},
+						{	-- Streamtalker Stone of Rage [Enhancement]
+							["itemID"] = 129614,	-- Streamtalker Stone of Rage
+						},
+						{	-- Streamtalker Stone of Wisdom [Restoration]
+							["itemID"] = 129644,	-- Streamtalker Stone of Wisdom
+						},
 					},
-					["classes"] = { 7 }
 				}),	
-				n(-149, { -- Sunsoul 
+				n(-149, {	-- Sunsoul 
 					["groups"] = {
 						i(129681),	-- Sunsoul Bulwark
 						i(129678),	-- Sunsoul Scepter
@@ -321,7 +427,7 @@ _.GearSets =
 					},
 					["classes"] = { 2 }
 				}),
-				n(-146, { -- Oathsworn 
+				n(-146, {	-- Oathsworn 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129536),	-- Oathsworn Axe
@@ -364,7 +470,7 @@ _.GearSets =
 					},
 					["classes"] = { 1 }
 				}),	
-				n(-142, { -- Heart-Lesion 
+				n(-142, {	-- Heart-Lesion 
 					["groups"] = {
 						i(142023, {	-- Adventurer's Footlocker
 							i(129435),	-- Heart-Lesion Blade

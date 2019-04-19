@@ -15,7 +15,7 @@ _.Zones =
 						["g"] = {
 							{	-- Adherent Hanjun <Tushui Quartermaster>
 								["npcID"] = 69334,	-- Adherent Hanjun <Tushui Quartermaster>
-								["coord"] = { 67.85, 17.05 },
+								["coord"] = { 67.85, 17.05, 84 },
 								["g"] = {
 									i(83079),	-- Tushui Tabard
 									i(92071),	-- Tushui Satchel
@@ -23,7 +23,7 @@ _.Zones =
 							},
 							{	-- Alexandra Bolero <Tailoring Supplies>
 								["npcID"] = 1347,	-- Alexandra Bolero <Tailoring Supplies>
-								["coord" ] = { 53.32, 81.67 },
+								["coord" ] = { 53.32, 81.67, 84 },
 								["g"] = {
 									i(54440, {	-- Dreamcloth
 										i(54601),	-- Pattern: Belt of the Depths
@@ -50,18 +50,19 @@ _.Zones =
 							{	-- Astrid Langstrump <Mountain Horse Handler>
 								["npcID"] = 55285,	-- Astrid Langstrump <Mountain Horse Handler>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 52.39, 7.93 },
+								["coord"] = { 52.39, 7.93, 84 },
 								["g"] = {
 									i(73838),	-- Mountain Horse
 									i(73839),	-- Swift Mountain Horse
 								},
 							},
 							{	-- Captain Dirgehammer <Cataclysmic Gladiator>	
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 69975,	-- Captain Dirgehammer <Cataclysmic Gladiator>
-								["coord"] = { 75.05, 67.53 },
+								["coord"] = { 75.05, 67.53, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
-									i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
+									i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 										["groups"] = {
 											i(73446),	-- Cataclysmic Gladiator's Shield Wall
 											i(73447),	-- Cataclysmic Gladiator's Slicer
@@ -259,11 +260,11 @@ _.Zones =
 									i(73454),	-- Cataclysmic Gladiator's Ripper
 									i(73455),	-- Cataclysmic Gladiator's Shanker
 									i(73456),	-- Cataclysmic Gladiator's Pike
-									un(2, i(31640)),	    -- Grand Marshal's Ringmail Chestguard
-									un(2, i(31641)),	    -- Grand Marshal's Ringmail Gloves
-									un(2, i(31642)),	    -- Grand Marshal's Ringmail Headpiece
-									un(2, i(31643)),	    -- Grand Marshal's Ringmail Legguards
-									un(2, i(31644)),	    -- Grand Marshal's Ringmail Shoulders
+									un(2, i(31640)),	-- Grand Marshal's Ringmail Chestguard
+									un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
+									un(2, i(31642)),	-- Grand Marshal's Ringmail Headpiece
+									un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
+									un(2, i(31644)),	-- Grand Marshal's Ringmail Shoulders
 									un(2, i(28615)),	-- Grand Marshal's Chain Helm
 									un(2, i(28617)),	-- Grand Marshal's Chain Spaulders
 									un(2, i(28613)),	-- Grand Marshal's Chain Armor
@@ -288,185 +289,58 @@ _.Zones =
 									un(2, i(31641)),	-- Grand Marshal's Ringmail Gloves
 									un(2, i(31643)),	-- Grand Marshal's Ringmail Legguards
 									-- Lieutenant Commander's Regalia [Mage]
-									{	-- Lieutenant Commander's Crown
-										["itemID"] = 16416,	-- Lieutenant Commander's Crown
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Silk Spaulders
-										["itemID"] = 16415,	-- Lieutenant Commander's Silk Spaulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Silk Raiment
-										["itemID"] = 16413,	-- Knight-Captain's Silk Raiment
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Silk Gloves
-										["itemID"] = 16391,	-- Knight-Lieutenant's Silk Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Silk Leggings
-										["itemID"] = 16414,	-- Knight-Captain's Silk Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Silk Boots
-										["itemID"] = 16369,	-- Knight-Lieutenant's Silk Boots
-										["u"] = 2,
-									},
+									un(2, i(16416)),	-- Lieutenant Commander's Crown
+									un(2, i(16415)),	-- Lieutenant Commander's Silk Spaulders
+									un(2, i(16413)),	-- Knight-Captain's Silk Raiment
+									un(2, i(16391)),	-- Knight-Lieutenant's Silk Gloves
+									un(2, i(16414)),	-- Knight-Captain's Silk Leggings
+									un(2, i(16369)),	-- Knight-Lieutenant's Silk Boots
 									-- Lieutenant Commander's Threads [Warlock]
-									{	-- Lieutenant Commander's Headguard
-										["itemID"] = 17566,	-- Lieutenant Commander's Headguard
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Dreadweave Mantle
-										["itemID"] = 17569,	-- Lieutenant Commander's Dreadweave Mantle
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Dreadweave Robe
-										["itemID"] = 17568,	-- Knight-Captain's Dreadweave Robe
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Dreadweave Gloves
-										["itemID"] = 17564,	-- Knight-Lieutenant's Dreadweave Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Dreadweave Leggings
-										["itemID"] = 17567,	-- Knight-Captain's Dreadweave Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Dreadweave Boots
-										["itemID"] = 17562,	-- Knight-Lieutenant's Dreadweave Boots
-										["u"] = 2,
-									},
+									un(2, i(17566)),	-- Lieutenant Commander's Headguard
+									un(2, i(17569)),	-- Lieutenant Commander's Dreadweave Mantle
+									un(2, i(17568)),	-- Knight-Captain's Dreadweave Robe
+									un(2, i(17564)),	-- Knight-Lieutenant's Dreadweave Gloves
+									un(2, i(17567)),	-- Knight-Captain's Dreadweave Leggings
+									un(2, i(17562)),	-- Knight-Lieutenant's Dreadweave Boots
 									-- Lieutenant Commander's Raiment [Priest]
-									{	-- Lieutenant Commander's Diadem
-										["itemID"] = 17598,	-- Lieutenant Commander's Diadem
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Satin Amice
-										["itemID"] = 17601,	-- Lieutenant Commander's Satin Amice
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Satin Robes
-										["itemID"] = 17600,	-- Knight-Captain's Satin Robes
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Satin Gloves
-										["itemID"] = 17596,	-- Knight-Lieutenant's Satin Gloves
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Satin Leggings
-										["itemID"] = 17599,	-- Knight-Captain's Satin Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Satin Boots
-										["itemID"] = 17594,	-- Knight-Lieutenant's Satin Boots
-										["u"] = 2,
-									},
+									un(2, i(17598)),	-- Lieutenant Commander's Diadem
+									un(2, i(17601)),	-- Lieutenant Commander's Satin Amice
+									un(2, i(17600)),	-- Knight-Captain's Satin Robes
+									un(2, i(17596)),	-- Knight-Lieutenant's Satin Gloves
+									un(2, i(17599)),	-- Knight-Captain's Satin Leggings
+									un(2, i(17594)),	-- Knight-Lieutenant's Satin Boots
 									-- Lieutenant Commander's Vestments [Rogue]
-									{	-- Lieutenant Commander's Leather Veil
-										["itemID"] = 16418,	-- Lieutenant Commander's Leather Veil
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Leather Spaulders
-										["itemID"] = 16420,	-- Lieutenant Commander's Leather Spaulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Leather Armor
-										["itemID"] = 16417,	-- Knight-Captain's Leather Armor
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Leather Gauntlets
-										["itemID"] = 16396,	-- Knight-Lieutenant's Leather Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Leather Legguards
-										["itemID"] = 16419,	-- Knight-Captain's Leather Legguards
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Leather Boots
-										["itemID"] = 16392,	-- Knight-Lieutenant's Leather Boots
-										["u"] = 2,
-									},
+									un(2, i(16418)),	-- Lieutenant Commander's Leather Veil
+									un(2, i(16420)),	-- Lieutenant Commander's Leather Spaulders
+									un(2, i(16417)),	-- Knight-Captain's Leather Armor
+									un(2, i(16396)),	-- Knight-Lieutenant's Leather Gauntlets
+									un(2, i(16419)),	-- Knight-Captain's Leather Legguards
+									un(2, i(16392)),	-- Knight-Lieutenant's Leather Boots
 									-- Lieutenant Commander's Battlegear [Warrior]
-									{	-- Lieutenant Commander's Plate Helm
-										["itemID"] = 16429,	-- Lieutenant Commander's Plate Helm
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Plate Pauldrons
-										["itemID"] = 16432,	-- Lieutenant Commander's Plate Pauldrons
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Plate Chestguard
-										["itemID"] = 16430,	-- Knight-Captain's Plate Chestguard
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Plate Gauntlets
-										["itemID"] = 16406,	-- Knight-Lieutenant's Plate Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Plate Leggings
-										["itemID"] = 16431,	-- Knight-Captain's Plate Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Plate Boots
-										["itemID"] = 16405,	-- Knight-Lieutenant's Plate Boots
-										["u"] = 2,
-									},
+									un(2, i(16429)),	-- Lieutenant Commander's Plate Helm
+									un(2, i(16432)),	-- Lieutenant Commander's Plate Pauldrons
+									un(2, i(16430)),	-- Knight-Captain's Plate Chestguard
+									un(2, i(16406)),	-- Knight-Lieutenant's Plate Gauntlets
+									un(2, i(16431)),	-- Knight-Captain's Plate Leggings
+									un(2, i(16405)),	-- Knight-Lieutenant's Plate Boots
 									-- Lieutenant Commander's Aegis [Paladin]
-									{	-- Lieutenant Commander's Lamellar Headguard
-										["itemID"] = 16434,	-- Lieutenant Commander's Lamellar Headguard
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Lamellar Shoulders
-										["itemID"] = 16436,	-- Lieutenant Commander's Lamellar Shoulders
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Lamellar Breastplate
-										["itemID"] = 16433,	-- Knight-Captain's Lamellar Breastplate
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Lamellar Gauntlets
-										["itemID"] = 16410,	-- Knight-Lieutenant's Lamellar Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Lamellar Leggings
-										["itemID"] = 16435,	-- Knight-Captain's Lamellar Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Lamellar Sabatons
-										["itemID"] = 16409,	-- Knight-Lieutenant's Lamellar Sabatons
-										["u"] = 2,
-									},
-									-- Lieutenant Commander's Pursuit [Hunter]
-									{	-- Lieutenant Commander's Chain Helmet
-										["itemID"] = 16428,	-- Lieutenant Commander's Chain Helmet
-										["u"] = 2,
-									},
-									{	-- Lieutenant Commander's Chain Pauldrons
-										["itemID"] = 16427,	-- Lieutenant Commander's Chain Pauldrons
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Chain Hauberk
-										["itemID"] = 16425,	-- Knight-Captain's Chain Hauberk
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Chain Gauntlets
-										["itemID"] = 16403,	-- Knight-Lieutenant's Chain Gauntlets
-										["u"] = 2,
-									},
-									{	-- Knight-Captain's Chain Leggings
-										["itemID"] = 16426,	-- Knight-Captain's Chain Leggings
-										["u"] = 2,
-									},
-									{	-- Knight-Lieutenant's Chain Boots
-										["itemID"] = 16401,	-- Knight-Lieutenant's Chain Boots
-										["u"] = 2,
-									},
+									un(2, i(16434)),	-- Lieutenant Commander's Lamellar Headguard
+									un(2, i(16436)),	-- Lieutenant Commander's Lamellar Shoulders
+									un(2, i(16433)),	-- Knight-Captain's Lamellar Breastplate
+									un(2, i(16410)),	-- Knight-Lieutenant's Lamellar Gauntlets
+									un(2, i(16435)),	-- Knight-Captain's Lamellar Leggings
+									un(2, i(16409)),	-- Knight-Lieutenant's Lamellar Sabatons
+									un(2, i(16428)),	-- Lieutenant Commander's Chain Helmet
+									un(2, i(16427)),	-- Lieutenant Commander's Chain Pauldrons
+									un(2, i(16425)),	-- Knight-Captain's Chain Hauberk
+									un(2, i(16403)),	-- Knight-Lieutenant's Chain Gauntlets
+									un(2, i(16426)),	-- Knight-Captain's Chain Leggings
+									un(2, i(16401)),	-- Knight-Lieutenant's Chain Boots
 								},
 							},
 							{	-- Captain Lancy Revshon <Stormwind Quartermaster>
 								["npcID"] = 49877,	-- Captain Lancy Revshon <Stormwind Quartermaster>
-								["coord"] = { 67.59, 72.96 },
+								["coord"] = { 67.59, 72.96, 84 },
 								["g"] = {
 									i(64902),	-- Cape of Stormwind
 									i(64901),	-- Mantle of Stormwind
@@ -496,7 +370,7 @@ _.Zones =
 							},
 							{	-- Carla Granger <Cloth Armor Merchant>
 								["npcID"] = 1291,	-- Carla Granger <Cloth Armor Merchant>
-								["coord"] = { 62.22, 67.71 },
+								["coord"] = { 62.22, 67.71, 84 },
 								["g"] = {
 									i(16059),	-- Common Brown Shirt
 									i(3428),	-- Common Grey Shirt
@@ -505,7 +379,7 @@ _.Zones =
 							},
 							{	-- Catarina Stanford <Inscription Trainer>
 								["npcID"] = 30713,	-- Catarina Stanford <Inscription Trainer>
-								["coord"] = { 49.79, 74.60 },
+								["coord"] = { 49.79, 74.60, 84 },
 								["g"] = {
 									{	-- Technique: Songs of the Alliance
 										["itemID"] = 140566,	-- Technique: Songs of the Alliance
@@ -514,7 +388,7 @@ _.Zones =
 							},
 							{	-- Catherine Leland <Fishing Supplies>
 								["npcID"] = 5494,	-- Catherine Leland <Fishing Supplies>
-								["coord"] = { 55.03, 69.54 },
+								["coord"] = { 55.03, 69.54, 84 },
 								["g"] = {
 									i(6325),	-- Recipe: Brilliant Smallfish
 									i(6330),	-- Recipe: Bristle Whisker Catfish
@@ -531,7 +405,7 @@ _.Zones =
 							},
 							{	-- Charys Yserian <Arcane Trinkets Vendor>
 								["npcID"] = 1307,	-- Charys Yserian <Arcane Trinkets Vendor> **Limited Supply on all items**
-								["coord"] = { 44.75, 86.35 },
+								["coord"] = { 44.75, 86.35, 84 },
 								["g"] = {
 									i(4824),	-- Blurred Axe
 									i(4825),	-- Callous Axe
@@ -562,9 +436,9 @@ _.Zones =
 							{	-- Dalia Skyblossom <Cooking Trainer>
 								["npcID"] = 133411,	-- Dalia Skyblossom <Cooking Trainer>
 								["coords"] = {
-									{ 51.55, 17.92 },	-- Fire (walks between here and the lean-to)
-									{ 50.66, 17.24 },	-- Lean-to (walks between here and the fire)
-								},
+									{ 51.55, 17.92, 84 },	-- Fire (walks between here and the lean-to)
+									{ 50.66, 17.24, 84 },	-- Lean-to (walks between here and the fire)
+									},
 								["g"] = {
 									i(21219),	-- Recipe: Sagefish Delight
 									i(21099),	-- Recipe: Smoked Sagefish
@@ -572,14 +446,14 @@ _.Zones =
 							},
 							{	-- Darian Singh <Fireworks Vendor>
 								["npcID"] = 1304,	-- Darian Singh <Fireworks Vendor>
-								["coord"] = { 42.64, 76.88 },
+								["coord"] = { 42.64, 76.88, 84 },
 								["g"] = {
 									i(18649),	-- Schematic: Blue Firework	**Limited Supply**
 								},
 							},
 							{	-- Dawn Radue <Bag Merchant>
 								["npcID"] = 50669,	-- Dawn Radue <Bag Merchant>
-								["coord"] = { 64.83, 71.63 },
+								["coord"] = { 64.83, 71.63, 84 },
 								["g"] = {
 									i(67387),	-- "Carriage" Signature Bag
 									i(67396),	-- "Carriage - Christina" Precious Metal Bag
@@ -592,8 +466,9 @@ _.Zones =
 								},
 							},
 							{	-- Edlan Halsing <Bloodthirsty Gladiator>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 52029,	-- Edlan Halsing <Bloodthirsty Gladiator>
-								["coord"] = { 74.73, 68.21 },
+								["coord"] = { 74.73, 68.21, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents
 									i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
@@ -732,21 +607,21 @@ _.Zones =
 							},
 							{	-- Edna Mullby
 								["npcID"] = 1286,	-- Edna Mullby
-								["coord"] = { 64.65, 71.38 },
+								["coord"] = { 64.65, 71.38, 84 },
 								["g"] = {
 									i(20856),	-- Design: Heavy Golden Necklace of Battle
 								},
 							},
 							{	-- Eldraeith <Herbalism Supplies>
 								["npcID"] = 5503,	-- Eldraeith <Herbalism Supplies>
-								["coord"] = { 55.68, 85.20 },
+								["coord"] = { 55.68, 85.20, 84 },
 								["g"] = {
 									i(22250),	-- Herb Pouch
 								},
 							},
 							{	-- Erika Tate <Cooking Supplies>
 								["npcID"] = 5483,	-- Erika Tate <Cooking Supplies>
-								["coord"] = { 77.53, 53.16 },
+								["coord"] = { 77.53, 53.16, 84 },
 								["g"] = {
 									i(21219),	-- Recipe: Sagefish Delight
 									i(21099),	-- Recipe: Smoked Sagefish
@@ -754,7 +629,7 @@ _.Zones =
 							},
 							{	-- Faldren Tillsdale <Valor Quartermaster>
 								["npcID"] = 44245,	-- Faldren Tillsdale <Valor Quartermaster>
-								["coord"] = { 79.15, 69.57 },
+								["coord"] = { 79.15, 69.57, 84 },
 								["g"] = {
 									-- Weapons
 									i(77079),	-- Hungermouth Wand
@@ -1134,7 +1009,7 @@ _.Zones =
 							},
 							{	-- Farrah Facet <Epic Gem Recipes>
 								["npcID"] = 56925,	-- Farrah Facet <Epic Gem Recipes>
-								["coord"] = { 63.90, 61.61 },
+								["coord"] = { 63.90, 61.61, 84 },
 								["g"] = {
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(71928),	-- Design: Accurate Shadow Spinel
@@ -1209,7 +1084,7 @@ _.Zones =
 							},
 							{	-- Frederick Stover <Bow Merchant>
 								["npcID"] = 1298,	-- Frederick Stover <Bow Merchant>	**All items Limited Supply**
-								["coord"] = { 58.59, 69.08 },
+								["coord"] = { 58.59, 69.08, 84 },
 								["g"] = {
 									i(11303),	-- Fine Shortbow
 									i(11307),	-- Massive Longbow
@@ -1218,7 +1093,7 @@ _.Zones =
 							},
 							{	-- Isabel Jones <Jewelcrafting Design Vendor>
 								["npcID"] = 50480,	-- Isabel Jones <Jewelcrafting Design Vendor>
-								["coord"] = { 63.81, 61.36 },
+								["coord"] = { 63.81, 61.36, 84 },
 								["g"] ={
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(52409),	-- Design: Accurate Demonseye
@@ -1314,7 +1189,7 @@ _.Zones =
 							},
 							{	-- Jessara Cordell <Enchanting Supplies>
 								["npcID"] = 1318,	-- Jessara Cordell <Enchanting Supplies>
-								["coord"] = { 52.94, 74.09 },
+								["coord"] = { 52.94, 74.09, 84 },
 								["g"] = {
 									i(20753),	-- Formula: Lesser Wizard Oil
 									i(20752),	-- Formula: Minor Mana Oil
@@ -1343,60 +1218,60 @@ _.Zones =
 							},
 							{	-- Jillian Tanner <Leatherworking Supplies>
 								["npcID"] = 5565,	-- Jillian Tanner <Leatherworking Supplies>
-								["coord"] = { 71.71, 62.74 },
+								["coord"] = { 71.71, 62.74, 84 },
 								["g"] = {
 									i(56516, {	-- Heavy Savage Leather
-										i(67095), -- Pattern: Assassin's Chestplate
-										i(67070), -- Pattern: Belt of Nefarious Whispers
-										i(67084), -- Pattern: Charscale Leg Armor
-										i(67094), -- Pattern: Chestguard of Nature's Fury
-										i(67073), -- Pattern: Corded Viper Belt
-										i(67100), -- Pattern: Dragonkiller Tunic
-										i(68193), -- Pattern: Dragonscale Leg Armor							
-										i(71721), -- Pattern: Drakehide Leg Armor												
-										i(67068), -- Pattern: Lightning Lash
-										i(67082), -- Pattern: Razor-Edged Cloak
-										i(67072), -- Pattern: Stormleather Sash	
-										i(67083), -- Pattern: Twilight Dragonscale Cloak
-										i(67096), -- Pattern: Twilight Scale Chestguard
-										i(67064), -- Pattern: Vicious Charscale Belt
-										i(67063), -- Pattern: Vicious Charscale Boots	
-										i(67049), -- Pattern: Vicious Charscale Bracers
-										i(67090), -- Pattern: Vicious Charscale Chest
-										i(67053), -- Pattern: Vicious Charscale Gloves
-										i(67091), -- Pattern: Vicious Charscale Helm
-										i(67079), -- Pattern: Vicious Charscale Legs
-										i(67078), -- Pattern: Vicious Charscale Shoulders						
-										i(67080), -- Pattern: Vicious Dragonscale Belt
-										i(67065), -- Pattern: Vicious Dragonscale Boots	
-										i(67054), -- Pattern: Vicious Dragonscale Bracers
-										i(67093), -- Pattern: Vicious Dragonscale Chest
-										i(67066), -- Pattern: Vicious Dragonscale Gloves
-										i(67081), -- Pattern: Vicious Dragonscale Helm
-										i(67092), -- Pattern: Vicious Dragonscale Legs
-										i(67055), -- Pattern: Vicious Dragonscale Shoulders
-										i(67076), -- Pattern: Vicious Leather Belt
-										i(67060), -- Pattern: Vicious Leather Boots	
-										i(67046), -- Pattern: Vicious Leather Bracers
-										i(67087), -- Pattern: Vicious Leather Chest
-										i(67048), -- Pattern: Vicious Leather Gloves
-										i(67077), -- Pattern: Vicious Leather Helm
-										i(67089), -- Pattern: Vicious Leather Legs	
-										i(67062), -- Pattern: Vicious Leather Shoulders
-										i(67044), -- Pattern: Vicious Wyrmhide Belt
-										i(67058), -- Pattern: Vicious Wyrmhide Boots
-										i(67042), -- Pattern: Vicious Wyrmhide Bracers
-										i(67075), -- Pattern: Vicious Wyrmhide Chest	
-										i(67056), -- Pattern: Vicious Wyrmhide Gloves
-										i(67086), -- Pattern: Vicious Wyrmhide Helm
-										i(67085), -- Pattern: Vicious Wyrmhide Legs	
-										i(67074), -- Pattern: Vicious Wyrmhide Shoulders
+										i(67095),	-- Pattern: Assassin's Chestplate
+										i(67070),	-- Pattern: Belt of Nefarious Whispers
+										i(67084),	-- Pattern: Charscale Leg Armor
+										i(67094),	-- Pattern: Chestguard of Nature's Fury
+										i(67073),	-- Pattern: Corded Viper Belt
+										i(67100),	-- Pattern: Dragonkiller Tunic
+										i(68193),	-- Pattern: Dragonscale Leg Armor							
+										i(71721),	-- Pattern: Drakehide Leg Armor												
+										i(67068),	-- Pattern: Lightning Lash
+										i(67082),	-- Pattern: Razor-Edged Cloak
+										i(67072),	-- Pattern: Stormleather Sash	
+										i(67083),	-- Pattern: Twilight Dragonscale Cloak
+										i(67096),	-- Pattern: Twilight Scale Chestguard
+										i(67064),	-- Pattern: Vicious Charscale Belt
+										i(67063),	-- Pattern: Vicious Charscale Boots	
+										i(67049),	-- Pattern: Vicious Charscale Bracers
+										i(67090),	-- Pattern: Vicious Charscale Chest
+										i(67053),	-- Pattern: Vicious Charscale Gloves
+										i(67091),	-- Pattern: Vicious Charscale Helm
+										i(67079),	-- Pattern: Vicious Charscale Legs
+										i(67078),	-- Pattern: Vicious Charscale Shoulders						
+										i(67080),	-- Pattern: Vicious Dragonscale Belt
+										i(67065),	-- Pattern: Vicious Dragonscale Boots	
+										i(67054),	-- Pattern: Vicious Dragonscale Bracers
+										i(67093),	-- Pattern: Vicious Dragonscale Chest
+										i(67066),	-- Pattern: Vicious Dragonscale Gloves
+										i(67081),	-- Pattern: Vicious Dragonscale Helm
+										i(67092),	-- Pattern: Vicious Dragonscale Legs
+										i(67055),	-- Pattern: Vicious Dragonscale Shoulders
+										i(67076),	-- Pattern: Vicious Leather Belt
+										i(67060),	-- Pattern: Vicious Leather Boots	
+										i(67046),	-- Pattern: Vicious Leather Bracers
+										i(67087),	-- Pattern: Vicious Leather Chest
+										i(67048),	-- Pattern: Vicious Leather Gloves
+										i(67077),	-- Pattern: Vicious Leather Helm
+										i(67089),	-- Pattern: Vicious Leather Legs	
+										i(67062),	-- Pattern: Vicious Leather Shoulders
+										i(67044),	-- Pattern: Vicious Wyrmhide Belt
+										i(67058),	-- Pattern: Vicious Wyrmhide Boots
+										i(67042),	-- Pattern: Vicious Wyrmhide Bracers
+										i(67075),	-- Pattern: Vicious Wyrmhide Chest	
+										i(67056),	-- Pattern: Vicious Wyrmhide Gloves
+										i(67086),	-- Pattern: Vicious Wyrmhide Helm
+										i(67085),	-- Pattern: Vicious Wyrmhide Legs	
+										i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 									}),
 								},
 							},
 							{	-- Jon Casper <Sous Chef>
 								["npcID"] = 49701,	-- Jon Casper <Sous Chef>
-								["coord"] = { 50.42, 71.84 },
+								["coord"] = { 50.42, 71.84, 84 },
 								["g"] = {
 									currency(81, {	-- Epicurean's Award
 										i(65426),	-- Recipe: Baked Rockfish
@@ -1433,7 +1308,7 @@ _.Zones =
 							},
 							{	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 								["npcID"] = 55684,	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-								["coord"] = { 65.00, 48.46 },
+								["coord"] = { 65.00, 48.46, 84 },
 								["g"] = {
 									{	-- Elementium Bar
 										["itemID"] = 52186,	-- Elementium Bar
@@ -1556,7 +1431,7 @@ _.Zones =
 							},
 							{	-- Kaita Deepforge <Blacksmithing Supplies>
 								["npcID"] = 5512,	-- Kaita Deepforge <Blacksmithing Supplies>
-								["coord"] = { 63.62, 37.75 },
+								["coord"] = { 63.62, 37.75, 84 },
 								["g"] = {
 									{	-- Plans: Hardened Iron Shortsword
 										["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
@@ -1682,7 +1557,7 @@ _.Zones =
 							},
 							{	-- Katie Stokx <Horse Breeder>
 								["npcID"] = 43694,	-- Katie Stokx <Horse Breeder>
-								["coord"] = { 77.01, 67.91 },
+								["coord"] = { 77.01, 67.91, 84 },
 								["g"] = {
 									i(2411),	-- Black Stallion Bridle
 									i(5656),	-- Brown Horse Bridle
@@ -1695,7 +1570,7 @@ _.Zones =
 							},
 							{	-- Kendor Kabonka <Master of Cooking Recipes>
 								["npcID"] = 340,	-- Kendor Kabonka <Master of Cooking Recipes>
-								["coord"] = { 76.47, 52.92 },
+								["coord"] = { 76.47, 52.92, 84 },
 								["g"] = {
 									i(2889),	-- Recipe: Beer Basted Boar Ribs
 									i(3679),	-- Recipe: Blood Sausage
@@ -1744,8 +1619,7 @@ _.Zones =
 									un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
 									un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
 									un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-									un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
-									
+									un(2, i(70210)),	-- Ruthless Gladiator's Endgame
 									un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
 									un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
 									un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
@@ -1854,14 +1728,15 @@ _.Zones =
 									un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
 									un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
 								},
-								["u"] = 43, -- Vendor no longer exists
+								["u"] = 43,	-- Vendor no longer exists
 							},
 							{	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 69974,	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-								["coord"] = { 74.94, 67.25 },
+								["coord"] = { 74.94, 67.25, 84 },
 								["g" ] = {
 									-- Ensembles not added as unable to verify contents
-									i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
+									i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 										i(70242),	-- Ruthless Gladiator's Barrier
 										i(70235),	-- Ruthless Gladiator's Baton of Light
 										i(70226),	-- Ruthless Gladiator's Battle Staff
@@ -2062,7 +1937,7 @@ _.Zones =
 							{	-- Lelanai <Saber Handler>
 								["npcID"] = 4730,	-- Lelanai <Saber Handler>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 55.07, 12.83 },
+								["coord"] = { 55.07, 12.83, 84 },
 								["g"] = {
 									i(8632),	-- Reins of the Spotted Frostsaber
 									i(47100),	-- Reins of the Striped Dawnsaber
@@ -2075,15 +1950,16 @@ _.Zones =
 							},
 							{	-- Lenny "Fingers" McCoy
 								["npcID"] = 2795,	-- Lenny "Fingers" McCoy
-								["coord"] = { 72.80, 58.92 },
+								["coord"] = { 72.80, 58.92, 84 },
 								["g"] = {
 									i(97921),	-- Bom'bay's Color-Seein'Sauce
 									i(138385),	-- Lucky Shirt
 								},
 							},
 							{	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12784,	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-								["coord"] = { 75.29, 67.21 },
+								["coord"] = { 75.29, 67.21, 84 },
 								["g"] = {
 									i(18825),	-- Grand Marshal's Aegis
 									i(18867),	-- Grand Marshal's Battle Hammer
@@ -2109,8 +1985,9 @@ _.Zones =
 								},
 							},
 							{	-- Lieutenant Karter <War Mount Quartermaster>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12783,	-- Lieutenant Karter <War Mount Quartermaster>
-								["coord"] = { 76.36, 65.33 },
+								["coord"] = { 76.36, 65.33, 84 },
 								["g"] = {
 									i(29465),	-- Black Battlestrider Mount
 									i(29467),	-- Black War Ram Mount
@@ -2382,12 +2259,13 @@ _.Zones =
 							},
 							{	-- Lieutenant Tristia <Vicious Gladiator>
 								-- The NPC ID got reused, she was also >S11< Elite Vendor
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 54660,	-- Lieutenant Tristia <Vicious Gladiator>
 								-- The NPC ID got reused, she was also >S11< Elite Vendor
-								["coord"] = { 75.00, 67.02 },
+								["coord"] = { 75.00, 67.02, 84 },
 								["g"] = {
 									-- Ensembles not added as unable to verify contents, individual armor pieces verified on vendor
-									i(146641), --  Arsenal: Vicious Gladiator's Weapons
+									i(146641),	--  Arsenal: Vicious Gladiator's Weapons
 									-- Weapons
 									i(61360),	-- Vicious Gladiator's Barrier
 									i(61351),	-- Vicious Gladiator's Baton of Light
@@ -2698,8 +2576,9 @@ _.Zones =
 								},
 							},
 							{	-- Liliana Emberfrost <Honor Heirlooms>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 52030,	-- Liliana Emberfrost <Honor Heirlooms>
-								["coord"] = { 74.41, 67.59 },
+								["coord"] = { 74.41, 67.59, 84 },
 								["g"] = {
 									-- Weapons
 									i(122369),	-- Battleworn Thrash Blade
@@ -2726,7 +2605,7 @@ _.Zones =
 							},
 							{	-- Lisbeth Schneider <Clothier>
 								["npcID"] = 1299,	-- Lisbeth Schneider <Clothier>
-								["coord"] = { 58.18, 66.96 },
+								["coord"] = { 58.18, 66.96, 84 },
 								["g"] = {
 									i(3426),	-- Bold Yellow Shirt
 									i(3428),	-- Common Grey Shirt
@@ -2736,7 +2615,7 @@ _.Zones =
 							{	-- Lord Candren <Gilneas Quartermaster>
 								["npcID"] = 50307,	-- Lord Candren <Gilneas Quartermaster>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.28, 13.04 },
+								["coord"] = { 56.28, 13.04, 84 },
 								["g"] = {
 									i(64893),	-- Cape of Gilneas
 									i(64892),	-- Mantle of Gilneas
@@ -2747,7 +2626,7 @@ _.Zones =
 							},
 							{	-- Magatha Silverton <Justice Quartermaster>
 								["npcID"] = 44246,	-- Magatha Silverton <Justice Quartermaster>
-								["coord"] = { 78.98, 69.77 },
+								["coord"] = { 78.98, 69.77, 84 },
 								["g"] = {
 									-- Weapons
 									i(71150),	-- Scorchvine Wand
@@ -2973,14 +2852,15 @@ _.Zones =
 							},
 							{	-- Maria Lumere <Alchemy Supplies>
 								["npcID"] = 1313,	-- Maria Lumere <Alchemy Supplies>
-								["coord"]= { 55.75, 85.52 },
+								["coord"]= { 55.75, 85.52, 84 },
 								["g"] = {
 									i(9301),	-- Recipe: Elixir of Shadow Power
 								},
 							},
 							{	-- Master Sergeant Biggins <Accessories Quartermaster>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12781,	-- Master Sergeant Biggins <Accessories Quartermaster>
-								["coord"] = { 75.18, 66.77 },
+								["coord"] = { 75.18, 66.77, 84 },
 								["g"] = {
 									i(15198),	-- Knight's Colors
 									i(15196),	-- Private's Tabard
@@ -2997,11 +2877,12 @@ _.Zones =
 									un(2, i(18442)),	-- Master Sergeant's Insignia
 									un(2, i(18444)),	-- Master Sergeant's Insignia
 									un(2, i(18443)),	-- Master Sergeant's Insignia
+									un(2, i(44957)),	-- Greater Inscription of the Gladiator
 								},
 							},
 							{	-- Miles Sidney <Poison Supplies>
 								["npcID"] = 28347,	-- Miles Sidney <Poison Supplies>
-								["coord"] = {74.25, 58.18 },
+								["coord"] = {74.25, 58.18, 84 },
 								["g"] = {
 									i(38579),	-- Venomous Tome
 								},
@@ -3009,7 +2890,7 @@ _.Zones =
 							{	-- Moon Priestess Lasara <Darnassus Quartermaster>
 								["npcID"] = 50305,	-- Moon Priestess Lasara <Darnassus Quartermaster>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.59, 13.25 },
+								["coord"] = { 56.59, 13.25, 84 },
 								["g"] = {
 									i(45579),	-- Darnassus Tabard
 									i(64887),	-- Cape of Darnassus
@@ -3020,7 +2901,7 @@ _.Zones =
 							},
 							{	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["npcID"] = 73190,	-- Necrolord Sipe <Combatant Mount Quartermaster>
-								["coord"] = { 76.88, 65.60 },
+								["coord"] = { 76.88, 65.60, 84 },
 								["g"] = bubbleDown({["u"] = 2}, {
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
@@ -3038,133 +2919,94 @@ _.Zones =
 							},
 							{	-- Old Whitenose <Dragon Turtle Breeder>
 								["npcID"] = 65068,	-- Old Whitenose <Dragon Turtle Breeder>
-								["coord"] = { 67.74, 18.44 },
+								["coord"] = { 67.74, 18.44, 84 },
 								["g"] = {
 									i(91008, { 	-- Black Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87795, { 	-- Black Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),
 									i(91009, {	-- Blue Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87796, { 	-- Blue Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),
 									i(91005, { 	-- Brown Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87797, { 	-- Brown Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),
 									i(91011,  {	-- Great Black Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87802,  {	-- Great Black Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),			
 									i(91013,  {	-- Great Blue Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87803,  {	-- Great Blue Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),	
 									i(91014,  {	-- Great Brown Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87804,  {	-- Great Brown Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),			
 									i(91012,  {	-- Great Green Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87801,  {	-- Great Green Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),		
 									i(91015,  {	-- Great Purple Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87805,  {	-- Great Purple Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),	
 									i(91010,  {	-- Great Red Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(82811,  {	-- Great Red Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),	
 									i(91004,  {	-- Green Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(82765,  {	-- Green Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),		
 									i(91006, {	-- Purple Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87799,  {	-- Purple Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),	
 									i(91007, {	-- Red Dragon Turtle (Panda)
-										["races"] = {25,26},
+										["races"] = { 25, 26 },
 									}),			
 									i(87800, {	-- Red Dragon Turtle
-										["races"] = {10,9,2,6,8,5,11,3,7,1,4,22},
+										["races"] = { 10, 9, 2, 6, 8, 5, 11, 3, 7, 1, 4, 22 },
 									}),
 									un(1, i(91016)),	-- Reins of the Great Red Dragon Turtle (Never Implemented?)
 								},
 							},
 							{	-- Paulie <Old Town Choppers>
 								["npcID"] = 87501,	-- Paulie <Old Town Choppers>
-								["coord"] = { 73.09, 59.38 },
+								["coord"] = { 73.09, 59.38, 84 },
 								["g"] = {
 									i(116789),	-- Champion's Treadblade
 								},
 							},
-							{	-- Rebecca Laughlin <Tabard Designer>
-								["npcID"] = 5193,	-- Rebecca Laughlin <Tabard Designer>
-								["description"] = "Tabards are only obtainable by those who have earned them.|r",
-								["coord"] = { 64.05, 77.42 },
-								["g"] = {
-									i(31779),	-- Aldor Tabard
-									i(20132),	-- Arathor Battle Tabard
-									i(31804),	-- Cenarion Expedition Tabard
-									i(31776),	-- Consortium Tabard
-									i(31404),	-- Green Trophy Tabard of the Illidari
-									i(5976),	-- Guild Tabard
-									i(23999),	-- Honor Hold Tabard
-									i(31777),	-- Keepers of Time Tabard
-									i(15198),	-- Knight's Colors
-									i(31774),	-- Kurenai Tabrd
-									i(43300),	-- Loremaster's Colors
-									i(31778),	-- Lower City Tabard
-									i(32828),	-- Ogri'la Tabard
-									i(15196),	-- Private's Tabard
-									i(31405),	-- Purple Trophy Tabard of the Illidari
-									i(31780),	-- Scryers Tabard
-									i(31781),	-- Sha'tar Tabard
-									i(19506),	-- Silverwing Battle Tabard
-									i(32445),	-- Skyguard Tabard
-									i(31775),	-- Sporeggar Tabard
-									i(19032),	-- Stormpike Battle Tabard
-									i(43349),	-- Tabard of Brute Force
-									i(49052),	-- Tabard of Conquest
-									i(35280),	-- Tabard of Summer Flames
-									i(35279),	-- Tabard of Summer Skies
-									i(40643),	-- Tabard of the Achiever
-									i(43348),	-- Tabard of the Explorer
-									i(24344),	-- Tabard of the Hand
-									i(35221),	-- Tabard of the Shattered Sun
-									{			-- Competitor's Tabard
-										["itemID"] = 36941,	-- Competitor's Tabard
-										["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-									},
-								},
-							},
 							{	-- Sergeant Major Clate <Legacy Armor Quartermaster>
+								["itemID"] = 137642,	-- Mark of Honor
 								["npcID"] = 12785,	-- Sergeant Major Clate <Legacy Armor Quartermaster>
-								["coord"] = { 75.46, 67.03 },
+								["coord"] = { 75.46, 67.03, 84 },
 								["g"] = {
 									-- Head
 									i(16465),	-- Field Marshal's Chain Helm
@@ -3299,207 +3141,10 @@ _.Zones =
 									i(16437),	-- Marshal's Silk Footwraps
 								},
 							},
-							{	-- Shay Pressler <Guild Vendor>
-								["npcID"] = 46602,	-- Shay Pressler <Guild Vendor>
-								["description"] = "If you cannot find an item on this vendor, either your guild does not have the required Achievement, or you do not have sufficient rep with your guild to purchase the item.|r",
-								["coord"] = { 64.14, 77.03 },
-								["g"] = {
-									faction(1168, {	-- Your Guild (Faction)
-										["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-										["groups"] = {
-											ach(4989, {	-- A Class Act
-												["collectible"] = false,
-												["groups"] = {
-													a(i(63352)),	-- Shroud of Cooperation - Honored
-													--h(i(63353)),	-- Shroud of Cooperation - Honored
-												},
-											}),
-											--[[
-											h(ach(5179, {	-- Alliance Slayer
-												["collectible"] = false,
-												["groups"] = {
-													h(i(65362)),	-- Guild Page - Honored - minipet bound to Character
-												},
-											})),
-											]]--
-											ach(5024, {	-- Better Leveling Through Chemistry
-												["collectible"] = false,
-												["groups"] = {
-													i(65498),	-- Recipe: Big Cauldron of Battle
-												},
-											}),
-											ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
-												["collectible"] = false,
-												["groups"] = {
-													un(4, i(114968)),	-- Deathwatch Hatchling - Revered
-												},
-												["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-											}),
-											ach(5144, {	-- Critter Kill Squad
-												["collectible"] = false,
-												["groups"] = {
-													i(63398),	-- Armadillo Pup - Revered
-												},
-											}),
-											ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
-												["collectible"] = false,
-												["groups"] = {
-													i(71033),	-- Lil' Tarecgosa - Exalted
-												},
-											}),
-											ach(4988, {	-- Guild Glory of the Cataclysm Raider
-												["collectible"] = false,
-												["groups"] = {
-													i(63125),	-- Reins of the Dark Phoenix - Exalted
-												},
-											}),
-											ach(9669, {	-- Guild Glory of the Draenor Raider
-												["collectible"] = false,
-												["groups"] = {
-													i(116666),	-- Blacksteel Battleboar - Exalted
-												},
-											}),
-											ach(6682, {	-- Guild Glory of the Pandaria Raider
-												["collectible"] = false,
-												["groups"] = {
-													i(85666),	-- Reins of the Thundering Jade Cloud Serpent - Exalted
-												},
-											}),
-											ach(6681, {	-- Guild Pandaren Dungeon Hero
-												["collectible"] = false,
-												["groups"] = {
-													i(89190),	-- Tailored Initiate's Shirt - Honored
-													i(89192),	-- Tailored Memeber's Shirt - Honored
-													i(89194),	-- Tailored Officer's Shirt - Honored
-												},
-											}),
-											a(ach(5031, {	-- Horde Slayer
-												["collectible"] = false,
-												["groups"] = {
-													a(i(65361)),	-- Guild Page - Honored - minipet bound to Character
-												},
-											})),
-											ach(5035, {	-- Master Crafter
-												["collectible"] = false,
-												["groups"] = {
-													a(i(65360)),	-- Cloak of Coordination - Revered
-													--h(i(65274)),	-- Cloak of Coordination - Revered
-												},
-											}),
-											ach(5465, {	-- Mix Master
-												["collectible"] = false,
-												["groups"] = {
-													i(65435),	-- Recipe: Cauldron of Battle
-												},
-											}),
-											a(ach(6644, {	-- Pandaren Embassy
-												["collectible"] = false,
-												["groups"] = {
-													i(89191),	-- Artisan Initiate's Shirt - Exalted
-													i(89193),	-- Artisan Member's Shirt - Exalted
-													i(89195),	-- Artisan Officer's Shirt - Exalted
-												},
-											})),
-											--[[
-											h(ach(6664, {	-- Pandaren Embassy
-												["collectible"] = false,
-												["groups"] = {
-													i(89191),	-- Artisan Initiate's Shirt - Exalted
-													i(89193),	-- Artisan Member's Shirt - Exalted
-													i(89195),	-- Artisan Officer's Shirt - Exalted
-												},
-											})),
-											]]--
-											ach(5201, {	-- Profit Sharing
-												["collectible"] = false,
-												["groups"] = {
-													a(i(65363)),	-- Guild Herald - Revered - minipet bound to Character
-													--h(i(65364)),	-- Guild Herald - Revered - minipet bound to Character
-												},
-											}),
-											a(ach(7448, {	-- Scenario Roundup
-												["collectible"] = false,
-												["groups"] = {
-													i(85508),	-- Initiate's Shirt - Honored
-													i(85509),	-- Member's Shirt - Honored
-													i(85510),	-- Officer's Shirt - Honored
-												},
-											})),
-											--[[
-											h(ach(7449, {	-- Scenario Roundup
-												["collectible"] = false,
-												["groups"] = {
-													i(85508),	-- Initiate's Shirt - Honored
-													i(85509),	-- Member's Shirt - Honored
-													i(85510),	-- Officer's Shirt - Honored
-												},
-											})),
-											]]--
-											ach(5467, {	-- Set the Oven to "Cataclysmic"
-												["collectible"] = false,
-												["groups"] = {
-													i(62799),	-- Recipe: Broiled Dragon Feast
-												},
-											}),
-											ach(5036, {	-- That's a Lot of Bait
-												["collectible"] = false,
-												["groups"] = {
-													i(62800),	-- Recipe: Seafood Magnifique Feast
-												},
-											}),
-											a(ach(5812, {	-- United Nations
-												["collectible"] = false,
-												["groups"] = {
-													i(63138),	-- Dark Phoenix Hatchling - Exalted
-												},
-											})),
-											--[[
-											h(ach(5892, {	-- United Nations
-												["collectible"] = false,
-												["groups"] = {
-													i(63138),	-- Dark Phoenix Hatchling - Exalted
-												},
-											})),
-											]]--
-											ach(6626, {	-- Working Better as a Team
-												["collectible"] = false,
-												["groups"] = {
-													i(127011),	-- Pristine Lightforged Legplates - Honored
-													i(122252),	-- Tarnished Leggings of Destruction - Honored
-													i(122251),	-- Polished Legplates of Valor - Honored
-													i(122254),	-- Stained Shadowcraft Pants - Honored
-													i(122253),	-- Mystical Kilt of Elements - Honored
-													i(122256),	-- Tattered Dreadmist Leggings - Honored
-													i(122255),	-- Preened Wildfeather Leggings - Honored
-													i(122264),	-- Burnished Legplates of Might - Honored
-												},
-											}),
-											--h(i(67107)),	-- Reins of the Kor'kron Annihilator - Exalted
-											a(i(62298)),	-- Reins of the Golden King - Exalted
-											i(69209),	-- Illustrious Guild Tabard - Friendly
-											i(69210),	-- Renowned Guild Tabard - Honored
-											a(i(63206)),	-- Wrap of Unity - Honored
-											--h(i(63207)),	-- Wrap of Unity - Honored
-											i(122266),	-- Ripped Sandstorm Cloak - Friendly
-											i(122260),	-- Worn Stoneskin Gargoyle Cape - Friendly
-											i(122261),	-- Inherited Cape of the Black Baron - Friendly
-											i(122262),	-- Ancient Bloodmoon Cloak - Friendly
-											i(122263),	-- Burnished Helm of Might - Friendly
-											i(122250),	-- Tattered Dreadmist Mask - Friendly
-											i(122249),	-- Preened Tribal War Feathers - Friendly
-											i(122248),	-- Stained Shadowcraft Cap - Friendly 
-											i(122247),	-- Mystical Coif of Elements - Friendly
-											i(122246),	-- Tarnished Raging Berserker's Helm - Friendly
-											i(127012),	-- Pristine Lightforged Helm - Friendly
-											i(122245),	-- Polished Helm of Valor - Friendly
-										},
-									}),
-								},
-							},
 							{	-- Shylenai <Owl Trainer>
 								["npcID"] = 8665,	-- Shylenai <Owl Trainer>
 								["description"] = "Appears in Stormwind after War of Thorns.",
-								["coord"] = { 56.00, 3.22 },
+								["coord"] = { 56.00, 3.22, 84 },
 								["g"] = {
 									i(8500),	-- Great Horned Owl
 									i(8501),	-- Hawk Owl
@@ -3507,14 +3152,14 @@ _.Zones =
 							},
 							{	-- Stanly McCormick <Inscription Supplies>
 								["npcID"] = 30730,	-- Stanly McCormick <Inscription Supplies>
-								["coord"] = { 49.62, 74.81 },
+								["coord"] = { 49.62, 74.81, 84 },
 								["g"] = {
 									i(39489),	-- Scribe's Satchel	**Limited Supply**
 								},
 							},
 							{	-- Tannec Stonebeak <Gryphon Keeper>
 								["npcID"] = 43768,	-- Tannec Stonebeak <Gryphon Keeper>
-								["coord"] = { 71.45, 72.08 },
+								["coord"] = { 71.45, 72.08, 84 },
 								["g"] = {
 									i(25471),	-- Ebon Gryphon Mount
 									i(25470),	-- Golden Gryphon Mount
@@ -3527,7 +3172,7 @@ _.Zones =
 							},
 							{	-- Terrance Denman <Jewelcrafting Supplies>
 								["npcID"] = 44583,	-- Terrance Denman <Jewelcrafting Supplies>
-								["coord"] = { 63.18, 61.50 },
+								["coord"] = { 63.18, 61.50, 84 },
 								["g"] ={
 									currency(361, {	-- Illustrious Jewelcrafter's Token
 										i(52409),	-- Design: Accurate Demonseye
@@ -3623,7 +3268,7 @@ _.Zones =
 							},
 							{	-- Toren Landow <Legacy Justice Quartermaster>
 								["npcID"] = 58154,	-- Toren Landow <Legacy Justice Quartermaster>
-								["coord"] = { 79.08, 70.15 },
+								["coord"] = { 79.08, 70.15, 84 },
 								["g"] = {
 									-- Weapons
 									i(57924),	-- Apple-Bent Bough

@@ -3,49 +3,27 @@
 ---------------------------------------------------
 _.Zones = 
 {
-	{	-- Kalimdor
-		["mapID"] = 12,	-- Kalimdor
-		["g"] = {
-			{	-- Mount Hyjal
-				["mapID"] = 198,	-- Mount Hyjal
-				["g"] = {
-					{	-- Flight Paths
-						["npcID"] = -228,	-- Flight Paths
-						["g"] = {
-							{	-- Gates of Sothann, Hyjal
-								["flightPathID"] = 616,	-- Gates of Sothann, Hyjal
-								["coords"] = {
-									{ 71.63, 75.34, 198 },
-								},
-							},
-							{	-- Grove of Aessina, Hyjal
-								["flightPathID"] = 558,	-- Grove of Aessina, Hyjal
-								["coords"] = {
-									{ 19.61, 36.37, 198  },
-								},
-							},
-							{	-- Nordrassil, Hyjal
-								["flightPathID"] = 559,	-- Nordrassil, Hyjal
-								["coords"] = {
-									{ 62.13, 21.58, 198  },
-								},
-							},
-							{	-- Sanctuary of Malorne, Hyjal
-								["flightPathID"] = 781,	-- Sanctuary of Malorne, Hyjal
-								["coords"] = {
-									{ 27.76, 63.64, 198 },
-								},
-							},
-							{	-- Shrine of Aviana, Hyjal
-								["flightPathID"] = 557,	-- Shrine of Aviana, Hyjal
-								["coords"] = {
-									{ 41.18, 42.59, 198  },
-								},
-							},
-						},
-					},
-				},
+	m(12, {	-- Kalimdor
+		m(198, {	-- Mount Hyjal
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					fp(616, {	-- Gates of Sothann, Hyjal
+						["coord"] = { 71.63, 75.34, 198 },
+					}),
+					fp(558, {	-- Grove of Aessina, Hyjal
+						["coord"] = { 19.61, 36.37, 198  },
+					}),
+					fp(559, {	-- Nordrassil, Hyjal
+						["coord"] = { 62.13, 21.58, 198  },
+					}),
+					fp(781, {	-- Sanctuary of Malorne, Hyjal
+						["coord"] = { 27.76, 63.64, 198 },
+					}),
+					fp(557, {	-- Shrine of Aviana, Hyjal
+						["coord"] = { 41.18, 42.59, 198  },
+					}),
+				}),
 			},
-		},
-	},
+		}),
+	}),
 };

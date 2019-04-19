@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, { -- Allied Races
+	gsh(1522, {	-- Allied Races
 		["icon"] = "Interface\\Icons\\achievement_level_110",
 		["g"] = {
-			gs(1525, { -- Heritage of the Lightforged
+			gs(1525, {	-- Heritage of the Lightforged
 				["races"] = { 30 },
 				["g"] = {
 					{	-- Lightforged Gorget

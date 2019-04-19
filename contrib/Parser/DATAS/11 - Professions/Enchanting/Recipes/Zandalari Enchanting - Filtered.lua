@@ -3,6 +3,15 @@ profession(333, {	-- Enchanting
 		{
 			["categoryID"] = 647--[[Zandalari Enchanting]],
 			["g"] = {
+								{
+					["categoryID"] = 1255--[[Training]],
+					["g"] = {
+						{
+							-- Enchant Runic Power Core
+							["recipeID"] = 284415,--[[Enchant Runic Power Core]]
+						}
+					}
+				},
 				{
 					["categoryID"] = 650--[[Glove Enchantments]],
 					["g"] = {
@@ -315,6 +324,14 @@ profession(333, {	-- Enchanting
 					["g"] = {
 						{
 							["recipeID"] = 278418--[[Disenchanting Rod]]
+						}
+					}
+				},
+				{
+					["categoryID"] = 1249--[[Tools of the Trade]],
+					["g"] = {
+						{
+							["recipeID"] = 287494--[[Iwen's Enchanting Rod]]
 						}
 					}
 				},

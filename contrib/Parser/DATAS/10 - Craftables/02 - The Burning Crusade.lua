@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(2, { -- The Burning Crusade
+	tier(2, {	-- The Burning Crusade
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinkets
 				i(13503),	-- Alchemist Stone
@@ -426,50 +426,70 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(23746),	-- Adamantite Rifle
-			i(23742),	-- Fel Iron Musket
-			i(23747),	-- Felsteel Boomstick
-			i(32756),	-- Gyro-Balanced Khorium Destroyer
-			i(23748),	-- Ornate Khorium Rifle
-			i(34847),	-- Annihilator Holo-Gogs
-			i(23758),	-- Cogspinner Goggles
-			i(32478),	-- Deathblow X11 Goggles
-			i(32494),	-- Destruction Holo-Gogs
-			i(23838),	-- Foreman's Enchanted Helmet
-			i(23839),	-- Foreman's Reinforced Helmet
-			i(32461),	-- Furious Gizmatic Goggles
-			i(32476),	-- Gadgetstorm Goggles
-			i(23829),	-- Gnomish Battle Goggles
-			i(23835),	-- Gnomish Poultryizer
-			i(23828),	-- Gnomish Power Goggles
-			i(23836),	-- Goblin Rocket Launcher
-			i(34357),	-- Hard Khorium Goggles
-			i(35182),	-- Hyper-Magnified Moon Specs
-			i(23763),	-- Hyper-Vision Goggles
-			i(32472),	-- Justicebringer 2000 Specs
-			i(35185),	-- Justicebringer 3000 Specs
-			i(34355),	-- Lightning Etched Specs
-			i(32475),	-- Living Replicator Specs
-			i(32480),	-- Magnified Moon Specs
-			i(34354),	-- Mayhem Projection Goggles
-			i(23761),	-- Power Amplification Goggles
-			i(32495),	-- Powerheal 4000 Lens
-			i(35181),	-- Powerheal 9000 Lens
-			i(35184),	-- Primal-Attuned Goggles
-			i(34353),	-- Quad Deathblow X44 Goggles
-			i(32474),	-- Surestrike Goggles v2.0
-			i(34356),	-- Surestrike Goggles v3.0
-			i(32473),	-- Tankatronic Goggles
-			i(23762),	-- Ultra-Spectropic Detection Goggles
-			i(32479),	-- Wonderheal XT40 Shades
-			i(35183),	-- Wonderheal XT68 Shades
-			i(23825),	-- Nigh-Invulnerability Belt
-			i(23824),	-- Rocket Boots Xtreme
-			i(35581),	-- Rocket Boots Xtreme Lite
+			filter(100, {	-- Mounts
+				i(34061),	-- Turbo-Charged Flying Machine*
+			}),
+			filter(102, {	-- Toys
+				i(23767),	-- Crashin' Thrashin' Robot*
+				i(30542),	-- Dimensional Ripper - Area 52*
+				i(30544),	-- Ultrasafe Transporter: Toshley's Station*
+			}),
+			n(-319, {	-- Weapons
+				-- Guns
+				i(23746),	-- Adamantite Rifle*
+				i(23742),	-- Fel Iron Musket*
+				i(23747),	-- Felsteel Boomstick*
+				i(32756),	-- Gyro-Balanced Khorium Destroyer*
+				i(23748),	-- Ornate Khorium Rifle*
+			}),
+			n(-318, {	-- Armor
+				-- Head
+				i(34847),	-- Annihilator Holo-Gogs*
+				i(23758),	-- Cogspinner Goggles*
+				i(32478),	-- Deathblow X11 Goggles*
+				i(32494),	-- Destruction Holo-Gogs*
+				i(23838),	-- Foreman's Enchanted Helmet*
+				i(23839),	-- Foreman's Reinforced Helmet*
+				i(32461),	-- Furious Gizmatic Goggles*
+				i(32476),	-- Gadgetstorm Goggles*
+				i(23829),	-- Gnomish Battle Goggles*
+				i(23828),	-- Gnomish Power Goggles*
+				i(34357),	-- Hard Khorium Goggles*
+				i(35182),	-- Hyper-Magnified Moon Specs*
+				i(23763),	-- Hyper-Vision Goggles*
+				i(32472),	-- Justicebringer 2000 Specs*
+				i(35185),	-- Justicebringer 3000 Specs*
+				i(34355),	-- Lightning Etched Specs*
+				i(32475),	-- Living Replicator Specs*
+				i(32480),	-- Magnified Moon Specs*
+				i(34354),	-- Mayhem Projection Goggles*
+				i(23761),	-- Power Amplification Goggles*
+				i(32495),	-- Powerheal 4000 Lens*
+				i(35181),	-- Powerheal 9000 Lens*
+				i(35184),	-- Primal-Attuned Goggles*
+				i(34353),	-- Quad Deathblow X44 Goggles*
+				i(32474),	-- Surestrike Goggles v2.0*
+				i(34356),	-- Surestrike Goggles v3.0*
+				i(32473),	-- Tankatronic Goggles*
+				i(23762),	-- Ultra-Spectropic Detection Goggles*
+				i(32479),	-- Wonderheal XT40 Shades*
+				i(35183),	-- Wonderheal XT68 Shades*
+				-- Waist
+				i(23825),	-- Nigh-Invulnerability Belt*
+				-- Feet
+				i(23824),	-- Rocket Boots Xtreme*
+				i(35581),	-- Rocket Boots Xtreme Lite*
+				-- Trinket
+				i(23835),	-- Gnomish Poultryizer*
+				i(23836),	-- Goblin Rocket Launcher*
+			}),				
+			filter(113, {	-- Bags
+				i(23774),	-- Fil Iron Toolbox
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings
 				i(31889),	-- Two of Blessings
@@ -806,71 +826,100 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			i(24267),	-- Battlecast Hood
-			i(24266),	-- Spellstrike Hood
-			i(24264),	-- Whitemend Hood
-			i(21869),	-- Frozen Shadoweave Shoulders
-			i(32587),	-- Mantle of Nimble Thought
-			i(21874),	-- Primal Mooncloth Shoulders
-			i(21864),	-- Soulcloth Shoulders
-			i(32585),	-- Swiftheal Mantle
-			i(30831),	-- Cloak of Arcane Evasion
-			i(24253),	-- Cloak of Eternity
-			i(24252),	-- Cloak of the Black Void
-			i(24260),	-- Manaweave Cloak
-			i(32420),	-- Night's End
-			i(24258),	-- Resolute Cape
-			i(24259),	-- Vengeance Wrap
-			i(24254),	-- White Remedy Cape
-			i(21868),	-- Arcanoweave Robe
-			i(30839),	-- Flameheart Vest
-			i(21871),	-- Frozen Shadoweave Robe
-			i(21861),	-- Imbued Netherweave Robe
-			i(21862),	-- Imbued Netherweave Tunic
-			i(21854),	-- Netherweave Robe
-			i(21855),	-- Netherweave Tunic
-			i(21875),	-- Primal Mooncloth Robe
-			i(34365),	-- Robe of Eternal Light
-			i(21865),	-- Soulcloth Vest
-			i(21848),	-- Spellfire Robe
-			i(34364),	-- Sunfire Robe
-			i(21866),	-- Arcanoweave Bracers
-			i(24251),	-- Blackstrike Bracers
-			i(24250),	-- Bracers of Havok
-			i(32586),	-- Bracers of Nimble Thought
-			i(30837),	-- Flameheart Bracers
-			i(21849),	-- Netherweave Bracers
-			i(32392),	-- Soulguard Bracers
-			i(32584),	-- Swiftheal Wraps
-			i(24249),	-- Unyielding Bracers
-			i(30838),	-- Flameheart Gloves
-			i(34367),	-- Hands of Eternal Light
-			i(21851),	-- Netherweave Gloves
-			i(21863),	-- Soulcloth Gloves
-			i(21847),	-- Spellfire Gloves
-			i(34366),	-- Sunfire Handwraps
-			i(30038),	-- Belt of Blasting
-			i(30036),	-- Belt of the Long Road
-			i(24257),	-- Black Belt of Knowledge
-			i(24256),	-- Girdle of Ruination
-			i(21850),	-- Netherweave Belt
-			i(21873),	-- Primal Mooncloth Belt
-			i(32390),	-- Soulguard Girdle
-			i(21846),	-- Spellfire Belt
-			i(24255),	-- Unyielding Girdle
-			i(24263),	-- Battlecast Pants
-			i(21859),	-- Imbued Netherweave Pants
-			i(21852),	-- Netherweave Pants
-			i(32389),	-- Soulguard Leggings
-			i(24262),	-- Spellstrike Pants
-			i(24261),	-- Whitemend Pants
-			i(21867),	-- Arcanoweave Boots
-			i(30037),	-- Boots of Blasting
-			i(30035),	-- Boots of the Long Road
-			i(21870),	-- Frozen Shadoweave Boots
-			i(21860),	-- Imbued Netherweave Boots
-			i(21853),	-- Netherweave Boots
-			i(32391),	-- Soulguard Slippers
+			filter(113, {	-- Bags
+				i(24270),	-- Bag of Jewels
+				i(22249),	-- Big Bag of Enchantment
+				i(21872),	-- Ebon Shadowbag
+				i(21843),	-- Imbued Netherweave Bag
+				i(38225),	-- Mycah's Botanical Bag
+				i(21841),	-- Netherweave Bag
+				i(21876),	-- Primal Mooncloth Bag
+				i(22252),	-- Satchel of Cenarius
+				i(21858),	-- Spellfire Bag
+			}),	
+			n(-323, {	-- Chest
+				i(21868),	-- Arcanoweave Robe
+				i(30839),	-- Flameheart Vest
+				i(21871),	-- Frozen Shadoweave Robe
+				i(21861),	-- Imbued Netherweave Robe
+				i(21862),	-- Imbued Netherweave Tunic
+				i(21854),	-- Netherweave Robe
+				i(21855),	-- Netherweave Tunic
+				i(21875),	-- Primal Mooncloth Robe
+				i(34365),	-- Robe of Eternal Light
+				i(21865),	-- Soulcloth Vest
+				i(21848),	-- Spellfire Robe
+				i(34364),	-- Sunfire Robe
+			}),
+			n(-322, {	-- Cloaks
+				i(30831),	-- Cloak of Arcane Evasion
+				i(24253),	-- Cloak of Eternity
+				i(24252),	-- Cloak of the Black Void
+				i(24260),	-- Manaweave Cloak
+				i(32420),	-- Night's End
+				i(24258),	-- Resolute Cape
+				i(24259),	-- Vengeance Wrap
+				i(24254),	-- White Remedy Cape
+			}),
+			n(-330, {	-- Feet
+				i(21867),	-- Arcanoweave Boots
+				i(30037),	-- Boots of Blasting
+				i(30035),	-- Boots of the Long Road
+				i(21870),	-- Frozen Shadoweave Boots
+				i(21860),	-- Imbued Netherweave Boots
+				i(21853),	-- Netherweave Boots
+				i(32391),	-- Soulguard Slippers
+			}),
+			n(-327, {	-- Hands
+				i(30838),	-- Flameheart Gloves
+				i(34367),	-- Hands of Eternal Light
+				i(21851),	-- Netherweave Gloves
+				i(21863),	-- Soulcloth Gloves
+				i(21847),	-- Spellfire Gloves
+				i(34366),	-- Sunfire Handwraps
+			}),
+			n(-320, {	-- Head
+				i(24267),	-- Battlecast Hood
+				i(24266),	-- Spellstrike Hood
+				i(24264),	-- Whitemend Hood
+			}),
+			n(-329, {	-- Legs
+				i(24263),	-- Battlecast Pants
+				i(21859),	-- Imbued Netherweave Pants
+				i(21852),	-- Netherweave Pants
+				i(32389),	-- Soulguard Leggings
+				i(24262),	-- Spellstrike Pants
+				i(24261),	-- Whitemend Pants
+			}),
+			n(-321, {	-- Shoulders
+				i(21869),	-- Frozen Shadoweave Shoulders
+				i(32587),	-- Mantle of Nimble Thought
+				i(21874),	-- Primal Mooncloth Shoulders
+				i(21864),	-- Soulcloth Shoulders
+				i(32585),	-- Swiftheal Mantle
+			}),
+			n(-328, {	-- Waist
+				i(30038),	-- Belt of Blasting
+				i(30036),	-- Belt of the Long Road
+				i(24257),	-- Black Belt of Knowledge
+				i(24256),	-- Girdle of Ruination
+				i(21850),	-- Netherweave Belt
+				i(21873),	-- Primal Mooncloth Belt
+				i(32390),	-- Soulguard Girdle
+				i(21846),	-- Spellfire Belt
+				i(24255),	-- Unyielding Girdle
+			}),
+			n(-326, {	-- Wrist
+				i(21866),	-- Arcanoweave Bracers
+				i(24251),	-- Blackstrike Bracers
+				i(24250),	-- Bracers of Havok
+				i(32586),	-- Bracers of Nimble Thought
+				i(30837),	-- Flameheart Bracers
+				i(21849),	-- Netherweave Bracers
+				i(32392),	-- Soulguard Bracers
+				i(32584),	-- Swiftheal Wraps
+				i(24249),	-- Unyielding Bracers
+			}),
 		}),
 	}),
 };

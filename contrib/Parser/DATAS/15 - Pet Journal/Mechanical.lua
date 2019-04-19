@@ -22,7 +22,7 @@ _.PetJournal =
 		p(2001), 	-- Dibbler
 		p(1450),	-- Draenei Micro Defender
 		p(2449),	-- False Knucklebump
-		un(1, p(2341)),	-- Feathers
+		p(2526),	-- Feathers
 		p(1162),	-- Fluxfire Feline
 		p(2058),	-- Foe Reaper 0.9
 		p(1961),	-- G0-R41-0N Ultratonk
@@ -61,6 +61,7 @@ _.PetJournal =
 		h(p(2565)),	-- Rebuilt Mechanical Spider
 		p(471),		-- Robo-Chick
 		un(10, p(168)),	-- Rocket Chicken
+		p(2401),	-- Rooter
 		p(1957),	-- Runeforged Servitor
 		p(1467),	-- Sky-Bo
 		p(1183),	-- Son of Animus

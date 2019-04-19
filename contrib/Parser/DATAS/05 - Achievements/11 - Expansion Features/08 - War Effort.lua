@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-10057, { -- War Effort
+			n(-10057, {	-- War Effort
 				["groups"] = {
 					ach(12874, {	-- An Eventful Battle
 						crit(1),		-- Fozruk

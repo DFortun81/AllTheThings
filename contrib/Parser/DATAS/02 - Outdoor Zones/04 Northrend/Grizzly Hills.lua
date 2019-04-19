@@ -5,18 +5,21 @@ _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(116, {	-- Grizzly Hills
+			["maps"] = {
+				757,	-- Ursoc's Lair
+			},
 			["groups"] = {
 				n(-228, {	-- Flight Points
-					fp(253, { -- Amberpine Lodge, Grizzly Hills
+					fp(253, {	-- Amberpine Lodge, Grizzly Hills
 						["coord"] = { 31.2, 59.2 },
 					}),
-					fp(249, { -- Camp Oneqwah, Grizzly Hills
+					fp(249, {	-- Camp Oneqwah, Grizzly Hills
 						["coord"] = { 64.8, 46.8 },
 					}),
-					fp(250, { -- Conquest Hold, Grizzly Hills
+					fp(250, {	-- Conquest Hold, Grizzly Hills
 						["coord"] = { 22, 64.4 },
 					}),
-					fp(255, { -- Westfall Brigade, Grizzly Hills
+					fp(255, {	-- Westfall Brigade, Grizzly Hills
 						["coord"] = { 59.8, 26.6 },
 					}),
 				}),
@@ -470,6 +473,17 @@ _.Zones =
 							q(12037, {	--  Search and Rescue
 								["qg"] = 26604,	-- Mack Fearsen
 								["sourceQuests"] = {12029},
+								["groups"] = {
+									{	-- Kurzel's Angst
+										["itemID"] = 39649,	-- Kurzel's Angst
+									},
+									{	-- Kurzel's Rage
+										["itemID"] = 39648,	-- Kurzel's Rage
+									},
+									{	-- Kurzel's Warband
+										["itemID"] = 39650,	-- Kurzel's Warband
+									},
+								},
 							}),
 							q(12238, {	--  Cleansing Drak'Tharon
 								["qg"] = 26787,	-- Image of Drakuru
@@ -876,7 +890,7 @@ _.Zones =
 					}),
 				}),	
 				n(-16, { 	-- Rares
-					n(38453, { -- Arcturis
+					n(38453, {	-- Arcturis
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 						["coord"] = { 31.2, 55.4 },
 						["groups"] = {
@@ -957,55 +971,57 @@ _.Zones =
 					},
 				}),
 				n(-2, {		-- Vendors
-					a(n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
-						["groups"] = {
-							i(137642, {	-- Mark of Honor
+					["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.  All the items they sell now cost 1 Mark of Honor; the old currency, Venture Coins, were removed from the game.",
+					["g"] = {
+						na(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = { 13.8, 86.4 },
+							["g"] = {
 								i(38356),	-- Venture Battle Wand
 								i(38354),	-- Oil-Stained Tarp
 								i(38355),	-- Thick Goblin Back Protector
 								i(38353),	-- Venture Bay Buccaneer's Cape
 								i(38358),	-- Arcane Revitalizer
 								i(38359),	-- Goblin Repetition Reducer
-							}),
-						},
-						["coord"] = { 13.8, 86.4 },
-						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
-					})),
-					nh(26868, {	-- Provisioner Lorkran <General Goods>
-						["groups"] = {
-							i(21219),	-- Recipe: Sagefish Delight
-							i(21099),	-- Recipe: Smoked Sagefish
-						},
-						["coord"] = { 22.6, 66.0 },
-					}),
-					h(n(27730, {	-- Purkom <Venture Coin Vendor>
-						["groups"] = {
-							i(137642, {	-- Mark of Honor
+							},
+						}),
+						nh(26868, {	-- Provisioner Lorkran <General Goods>
+							["coord"] = { 22.6, 66.0 },
+							["g"] = {
+								i(21219),	-- Recipe: Sagefish Delight
+								i(21099),	-- Recipe: Smoked Sagefish
+							},
+						}),
+						nh(27730, {	-- Purkom <Venture Coin Vendor>
+							["itemID"] = 137642,	-- Mark of Honor
+							["coord"] = { 13.8, 86.2 },
+							["g"] = {
 								i(38356),	-- Venture Battle Wand
 								i(38354),	-- Oil-Stained Tarp
 								i(38355),	-- Thick Goblin Back Protector
 								i(38353),	-- Venture Bay Buccaneer's Cape
 								i(38358),	-- Arcane Revitalizer
 								i(38359),	-- Goblin Repetition Reducer
-							}),
-						},
-						["coord"] = { 13.8, 86.2 },
-						["description"] = "Only available while your faction controls the area. If no NPCs are available, ground your mount and flag for PVP. They will respawn once the control % reaches 100%. Each item costs 1 Mark of Honor. Venture Coins no longer exist in the game."
-					})),
-					desc(n(91632, {	-- Remington Brode <Traveling Lumberjack>
-						i(122236)
-					}), "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\""),
+							},
+						}),
+						n(91632, {	-- Remington Brode <Traveling Lumberjack>
+							["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
+							["g"] = {
+								i(122236)
+							},
+						}),
+					},
 				}),
 				n(0, { 		-- Zone Drop
 					["groups"] = {
-						i(41123, { -- Plans: Reinforced Cobalt Helm
+						i(41123, {	-- Plans: Reinforced Cobalt Helm
 							["crs"] = {
-								26270, -- Iron Rune-Shaper
+								26270,	-- Iron Rune-Shaper
 							},
 						}),
-						i(46108, { -- Technique: Rituals of the New Moon
+						i(46108, {	-- Technique: Rituals of the New Moon
 							["crs"] = {
-								27676, -- Silverbrook Defender
+								27676,	-- Silverbrook Defender
 								27546,	-- Silverbrook Hunter
 								26679,	-- Silverbrook Trapper
 								26708,	-- Silverbrook Villager

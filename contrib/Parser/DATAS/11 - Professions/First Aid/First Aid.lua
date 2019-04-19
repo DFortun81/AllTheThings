@@ -1,4 +1,4 @@
-profession(129, { -- First Aid
+profession(129, {	-- First Aid
 	["groups"] =  {
 		un(2, ach(10599, {	-- Legion Medic (800) *
 			["groups"] = {
@@ -180,7 +180,7 @@ profession(129, { -- First Aid
 				["description"] = "No longer required.",
 			})),
 		}),
-		filter(200, { -- Recipes
+		filter(200, {	-- Recipes
 			-- Classic
 			un(2, recipe(3275)),	-- Linen Bandage
 			un(2, recipe(3276)),	-- Heavy Linen Bandage

@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-150, { -- Trailseeker
+				n(-150, {	-- Trailseeker
 					["classes"] = { 3 },
 					["groups"] = {
 						{	-- Adventurer's Footlocker

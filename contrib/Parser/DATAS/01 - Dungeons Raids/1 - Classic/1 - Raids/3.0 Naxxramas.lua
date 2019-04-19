@@ -10,7 +10,8 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 60,
 		["mapID"] = 162,
 		["groups"] = {
-			d(1, {	-- Normal (Legacy)
+			d(9, {	-- 40 Player (Legacy)
+				["ignoreBonus"] = true,
 				["u"] = 12,
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline
@@ -45,7 +46,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 15192,	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
-									un(2, i(22631)), -- Atiesh, Greatstaff of the Guardian (Priest)
+									un(2, i(22631)),	-- Atiesh, Greatstaff of the Guardian (Priest)
 								},
 							},
 							{
@@ -55,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 15192,	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
-									un(2, i(22589)), -- Atiesh, Greatstaff of the Guardian (Mage)
+									un(2, i(22589)),	-- Atiesh, Greatstaff of the Guardian (Mage)
 								},
 							},
 							{
@@ -65,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 15192,	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
-									un(2, i(22630)), -- Atiesh, Greatstaff of the Guardian (Warlock)
+									un(2, i(22630)),	-- Atiesh, Greatstaff of the Guardian (Warlock)
 								},
 							},
 							{
@@ -75,7 +76,7 @@ _.Instances = { tier(1, {	-- Classic
 								["qg"] = 15192,	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
-									un(2, i(22632)), -- Atiesh, Greatstaff of the Guardian (Druid)
+									un(2, i(22632)),	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
 							},
 						},
@@ -134,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Bracers
-									["recipeID"] = 28244, -- Plans: Icebane Bracers
+									["recipeID"] = 28244,	-- Plans: Icebane Bracers
 									["u"] = 2,
 								},
 							},
@@ -146,7 +147,7 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Breastplate
-									["recipeID"] = 28242, -- Plans: Icebane Breastplate
+									["recipeID"] = 28242,	-- Plans: Icebane Breastplate
 									["u"] = 2,
 								},
 							},
@@ -158,7 +159,7 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 							["groups"] = {
 								{	-- Plans: Icebane Gauntlets
-									["recipeID"] = 28243, -- Plans: Icebane Gauntlets
+									["recipeID"] = 28243,	-- Plans: Icebane Gauntlets
 									["u"] = 2,
 								},
 							},
@@ -1017,7 +1018,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(-368, { 	-- The Arachnid Quarter
 						["groups"] = {
-							n(15956, { -- Anub'Rekhan
+							n(15956, {	-- Anub'Rekhan
 								un(2, i(22937)),	-- Gem of Nerubis
 								un(2, i(22935)),	-- Touch of Frost
 								un(2, i(22938)),	-- Cryptfiend Silk Cloak

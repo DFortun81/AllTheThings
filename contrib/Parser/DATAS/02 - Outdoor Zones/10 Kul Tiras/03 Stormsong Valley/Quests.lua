@@ -241,7 +241,7 @@ _.Zones =
 						["sourceQuests"] = { 50741 },	-- Don't Turtle [Alliance Only]
 						["coord"] = { 42.6, 54.3 },
 						["groups"] = {
-							i(160514, { -- Maokka's Box
+							i(160514, {	-- Maokka's Box
 								i(158679),	-- Maokka's Carving
 							}),
 						},
@@ -930,12 +930,47 @@ _.Zones =
 						q(50088),	-- Golden Fields Forever
 						q(50069),	-- Goldfield's War
 						q(51883),	-- Grizz's Lunch
-						q(51752),	-- Grizzled
-						q(51492),	-- Gunpowder Plot
+						q(51752, {	-- Grizzled
+							["g"] = {
+								i(160348),	-- Tidespeaker Handwraps
+								i(160351),	-- Darkwater Mitts
+								i(160354),	-- Stormchaser Strikers
+								i(160357),	-- Dread Corsair Strikers
+								i(158686),	-- Tidespeaker Slippers
+								i(158688),	-- Darkwater Treads
+								i(158687),	-- Stormchaser Striders
+								i(158685),	-- Dread Corsair Warboots
+							},
+						}),
+						a({
+							["questID"] = 51492,	-- Gunpowder Plot
+							["qg"] = 136574,	-- Charles Davenport
+							["groups"] = {
+								i(160350),	-- Darkwater Handwraps
+								i(160356),	-- Dread Corsair Gloves
+								i(160353),	-- Stormchaser Handguards
+								i(160347),	-- Tidespeaker Grips
+								i(160362),	-- Darkwater Britches
+								i(160368),	-- Dread Corsair Pants
+								i(160365),	-- Stormchaser Pants
+								i(160359),	-- Tidespeaker Pantaloons
+							},
+						}),
 						q(51711),	-- Having a Blast
 						q(52068),	-- Helping Out, Somewhere Else
 						q(50060),	-- Honey, Slimes!
-						q(51427),	-- I like Turtles
+						{
+							["questID"] = 51427,	-- I like Turtles
+							["qg"] = 137453,	-- Loroja <Watcher of Ai'twen>
+							["groups"] = {
+								i(160395),	-- Ai'twen's Light
+								i(160396),	-- Ai'twen's Defender
+								i(160352),	-- Darkwater Grasps
+								i(160358),	-- Dread Corsair Grips
+								i(160355),	-- Stormchaser Handcovers
+								i(160349),	-- Tidespeaker Mittens
+							},
+						},
 						q(50802),	-- Iron Low Tide
 						q(51557),	-- Irontide Warning
 						q(51582),	-- Make it Mildenhall
@@ -952,7 +987,16 @@ _.Zones =
 						q(50907),	-- Poor Souls
 						q(51724),	-- Powered Up
 						q(50698),	-- Problem Solving with Gunpowder
-						q(50653),	-- Reclaiming our Defenses
+						q(50653, {	-- Reclaiming our Defenses
+							["qg"] = 131003,	-- Specialist Wembley
+							["g"] = {
+								i(160337),	-- Darkwater Footpads
+								i(160343),	-- Dread Corsair Boots
+								i(155232),	-- Proudmoore Battalion Cloak
+								i(160340),	-- Stormchaser Treads
+								i(160334),	-- Tidespeaker Footwraps
+							},
+						}),
 						q(50161),	-- Recovering Raimond
 						q(51554),	-- Reloading
 						q(49742),	-- Respect Your Elders

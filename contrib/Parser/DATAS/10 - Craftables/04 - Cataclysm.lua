@@ -3,13 +3,12 @@
 -----------------------------------------------------
 _.Craftables =
 {
-	tier(4, { -- Cataclysm
+	tier(4, {	-- Cataclysm
 		n(-180, {	-- Alchemy
-			n(-160, { -- Mounts
-				i(65891), -- Vial of the Sands
+			n(-160, {	-- Mounts
+				i(65891),	-- Vial of the Sands
 			}),
 			i(58488, {	-- Potion of Treasure Finding
-				["description"] = "Drink this potion if you ever go out to farm Cataclysm mobs/quests. Any mob in those zones can drop a Tiny Treasure Chest, due to the demand for the crafting reagents within, this may make your time quite profitable.",
 				["groups"] = {
 					i(67539, {	-- Tiny Treasure Chest
 						i(53010),	-- Embersilk Cloth
@@ -315,28 +314,47 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			n(-25, { -- Pet Battles
+			n(-25, {	-- Pet Battles
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			i(71077),	-- Extreme-Impact Hole Puncher
-			i(59598),	-- Finely-Tuned Throat Needler
-			i(59367),	-- Kickback 5000
-			i(59364),	-- Overpowered Chicken Splitter
-			i(59599),	-- Volatile Thunderstick
-			i(59455),	-- Agile Bio-Optic Killshades
-			i(59453),	-- Camouflage Bio-Optic Killshades
-			i(59456),	-- Deadly Bio-Optic Killshades
-			i(59458),	-- Energized Bio-Optic Killshades
-			i(59449),	-- Lightweight Bio-Optic Killshades
-			i(59359),	-- Reinforced Bio-Optic Killshades
-			i(59448),	-- Specialized Bio-Optic Killshades
+			filter(101, {	-- Pets
+				i(60216),	-- De-Weaponized Mechanical Companion*
+				i(59597),	-- Personal World Destroyer*
+			}),
+			filter(102, {	-- Toys
+				i(40727),	-- Gnomish Gravity Well*
+				i(60854),	-- Loot-A-Rang*
+			}),
+			n(-319, {	-- Weapons
+				i(71077),	-- Extreme-Impact Hole Puncher*
+				i(59598),	-- Finely-Tuned Throat Needler*
+				i(59367),	-- Kickback 5000*
+				i(59364),	-- Overpowered Chicken Splitter*
+				i(59599),	-- Volatile Thunderstick*
+			}),
+			n(-318, {	-- Armour
+				-- Head
+				i(59455),	-- Agile Bio-Optic Killshades*
+				i(59453),	-- Camouflage Bio-Optic Killshades*
+				i(59456),	-- Deadly Bio-Optic Killshades*
+				i(59458),	-- Energized Bio-Optic Killshades*
+				i(59449),	-- Lightweight Bio-Optic Killshades*
+				i(59359),	-- Reinforced Bio-Optic Killshades*
+				i(59448),	-- Specialized Bio-Optic Killshades*
+				-- Trinkets
+				i(60403),	-- Elementium Dragonling*
+			}),
+			filter(113, {	-- Bags
+				i(60217),	-- Elementium Toolbox*
+				i(60218),	-- Lure Master Tackle Box*
+			}),
 		}),
 		n(-185, { 	-- Inscription
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
-			n(-491, { -- Tarot Cards
+			n(-491, {	-- Tarot Cards
 				sp(86615, {	-- Darkmoon Card of Destruction
 					i(61988, {["f"] = 55}),    -- Ace of embers
 					i(61989, {["f"] = 55}),    -- 2 of embers
@@ -431,6 +449,11 @@ _.Craftables =
 			filter(51, {	-- Neck
 				{	-- Alicite Pendant
 					["itemID"] = 52307,	-- Alicite Pendant
+					["groups"] = {
+						{	-- Alicite Pendant (Rare) small chance to proc when crafting 52307 version
+							["itemID"] = 52312,	-- Alicite Pendant
+						},
+					},
 				},
 				{	-- Brazen Elementium Medallion
 					["itemID"]=  52350,	-- Brazen Elementium Medallion
@@ -446,6 +469,11 @@ _.Craftables =
 				},
 				{	-- Nightstone Choker
 					["itemID"] = 52309,	-- Nightstone Choker
+					["groups"] = {
+						{	-- Nightstone Choker (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52314,	-- Nightstone Choker
+						},
+					},
 				},
 				{	-- Vicious Amberjewel Pendant
 					["itemID"] = 75075,	-- Vicious Amberjewel Pendant
@@ -469,9 +497,19 @@ _.Craftables =
 				},
 				{	-- Hessonite Band
 					["itemID"] = 52308,	-- Hessonite Band
+					["groups"] = {
+						{	-- Hessonite Band (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52316,	-- Hessonite Band
+						},
+					},
 				},
 				{	-- Jasper Ring
 					["itemID"] = 52306,	-- Jasper Ring
+					["groups"] = {
+						{	-- Jasper Ring (Rare) small chance to proc when crafting 52306 version
+							["itemID"] = 52310,	-- Jasper Ring
+						},
+					},
 				},
 				{	-- Punisher's Band
 					["itemID"] = 69852,
@@ -579,51 +617,93 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			i(54476),	-- Deathsilk Cowl
-			i(54485),	-- Spiritmend Cowl
-			i(75073),	-- Vicious Embersilk Cowl
-			i(75062),	-- Vicious Fireweave Cowl
-			i(54474),	-- Deathsilk Shoulders
-			i(54479),	-- Spiritmend Shoulders
-			i(75064),	-- Vicious Embersilk Shoulders
-			i(75091),	-- Vicious Fireweave Shoulders
-			i(75065),	-- Vicious Embersilk Cape
-			i(54475),	-- Deathsilk Robe
-			i(54486),	-- Spiritmend Robe
-			i(75093),	-- Vicious Embersilk Robe
-			i(75088),	-- Vicious Fireweave Robe
-			i(71989),	-- Bracers of Unconquered Power
-			i(54473),	-- Deathsilk Bracers
-			i(71990),	-- Dreamwraps of the Light
-			i(54480),	-- Spiritmend Bracers
-			i(75098),	-- Vicious Embersilk Bracers
-			i(75089),	-- Vicious Fireweave Bracers
-			i(54478),	-- Deathsilk Gloves
-			i(69945),	-- Don Tayo's Inferno Mittens
-			i(69944),	-- Grips of Altered Reality
-			i(54484),	-- Spiritmend Gloves
-			i(75070),	-- Vicious Embersilk Gloves
-			i(75063),	-- Vicious Fireweave Gloves
-			i(54504),	-- Belt of the Depths
-			i(54471),	-- Deathsilk Belt
-			i(54503),	-- Dreamless Belt
-			i(54481),	-- Spiritmend Belt
-			i(75096),	-- Vicious Embersilk Belt
-			i(75086),	-- Vicious Fireweave Belt
-			i(54505),	-- Breeches of Mended Nightmares
-			i(54472),	-- Deathsilk Leggings
-			i(54506),	-- Flame-Ascended Pantaloons
-			i(71980),	-- Lavaquake Legwraps
-			i(54483),	-- Spiritmend Leggings
-			i(75072),	-- Vicious Embersilk Pants
-			i(75082),	-- Vicious Fireweave Pants
-			i(71981),	-- World Mender's Pants
-			i(69954),	-- Boots of the Black Flame
-			i(54477),	-- Deathsilk Boots
-			i(69953),	-- Endless Dream Walkers
-			i(54482),	-- Spiritmend Boots
-			i(75095),	-- Vicious Embersilk Boots
-			i(75087),	-- Vicious Fireweave Boots
+			filter(113, {	-- Bags
+				i(54443),	-- Embersilk Bag
+				i(54446),	-- Hyjal Expedition Bag
+				i(54444),	-- Illusionary Bag
+				i(70138),	-- Luxurious Silk Gem Bag
+				i(54445),	-- Otherworldly Bag
+			}),
+			n(-323, {		-- Chest
+				un(7, i(70060)),	-- Bloodthirsty Embersilk Robe
+				un(7, i(70058)),	-- Bloodthirsty Fireweave Robe
+				i(54475),	 		-- Deathsilk Robe
+				i(54486),			-- Spiritmend Robe
+				i(75093),			-- Vicious Embersilk Robe
+				i(75088),			-- Vicious Fireweave Robe
+			}),
+			n(-322, {		-- Cloaks
+				un(7, i(70070)),	-- Bloodthirsty Embersilk Cape
+				i(75065),			-- Vicious Embersilk Cape
+			}),
+			n(-330, {		-- Feet
+				i(69954),	-- Boots of the Black Flame
+				un(7, i(70061)),	-- Bloodthirsty Embersilk Boots
+				un(7, i(70053)),	-- Bloodthirsty Fireweave Boots
+				i(54477),			-- Deathsilk Boots
+				i(69953),			-- Endless Dream Walkers
+				i(54482),			-- Spiritmend Boots
+				i(75095),			-- Vicious Embersilk Boots
+				i(75087),			-- Vicious Fireweave Boots
+			}),
+			n(-327, {		-- Hands
+				un(7, i(70065)),	-- Bloodthirsty Embersilk Gloves
+				un(7, i(70056)),	-- Bloodthirsty Fireweave Gloves
+				i(54478),			-- Deathsilk Gloves
+				i(69945),			-- Don Tayo's Inferno Mittens
+				i(69944),			-- Grips of Altered Reality
+				i(54484),			-- Spiritmend Gloves
+				i(75070),			-- Vicious Embersilk Gloves
+				i(75063),			-- Vicious Fireweave Gloves
+			}),
+			n(-320, {		-- Head
+				un(7, i(70067)),	-- Bloodthirsty Embersilk Cowl
+				un(7, i(70055)),	-- Bloodthirsty Fireweave Cowl
+				i(54476),			-- Deathsilk Cowl
+				i(54485),			-- Spiritmend Cowl
+				i(75073),			-- Vicious Embersilk Cowl
+				i(75062),			-- Vicious Fireweave Cowl
+			}),
+			n(-329, {		-- Legs
+				un(7, i(70066)),	-- Bloodthirsty Embersilk Pants
+				un(7, i(70057)),	-- Bloodthirsty Fireweave Pants
+				i(54505),			-- Breeches of Mended Nightmares
+				i(54472),			-- Deathsilk Leggings
+				i(54506),			-- Flame-Ascended Pantaloons
+				i(71980),			-- Lavaquake Legwraps
+				i(54483),			-- Spiritmend Leggings
+				i(75072),			-- Vicious Embersilk Pants
+				i(75082),			-- Vicious Fireweave Pants
+				i(71981),			-- World Mender's Pants
+			}),
+			n(-321, {		-- Shoulders
+				un(7, i(70064)),	-- Bloodthirsty Embersilk Shoulders
+				un(7, i(70059)),	-- Bloodthirsty Fireweave Shoulders
+				i(54474),			-- Deathsilk Shoulders
+				i(54479),			-- Spiritmend Shoulders
+				i(75064),			-- Vicious Embersilk Shoulders
+				i(75091),			-- Vicious Fireweave Shoulders
+			}),
+			n(-328, {		-- Waist
+				i(54504),			-- Belt of the Depths
+				un(7, i(70062)),	-- Bloodthirsty Embersilk Belt
+				un(7, i(70052)),	-- Bloodthirsty Fireweave Belt
+				i(54471),			-- Deathsilk Belt
+				i(54503),			-- Dreamless Belt
+				i(54481),			-- Spiritmend Belt
+				i(75096),			-- Vicious Embersilk Belt
+				i(75086),			-- Vicious Fireweave Belt
+			}),
+			n(-326, {		-- Wrist
+				un(7, i(70063)),	-- Bloodthirsty Embersilk Bracers
+				un(7, i(70054)),	-- Bloodthirsty Fireweave Bracers
+				i(71989),			-- Bracers of Unconquered Power
+				i(54473),			-- Deathsilk Bracers
+				i(71990),			-- Dreamwraps of the Light
+				i(54480),			-- Spiritmend Bracers
+				i(75098),			-- Vicious Embersilk Bracers
+				i(75089),			-- Vicious Fireweave Bracers
+			}),
 		}),
 	}),
 };

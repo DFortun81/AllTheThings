@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9969, { -- Feats of Strength
+	n(-9969, {	-- Feats of Strength
 		["groups"] = {
-			n(-10043, { -- Dungeons
+			n(-10043, {	-- Dungeons
 				["groups"] = {
 					un(2, ach(9622, {	-- Challenge Master: Auchindoun
 						un(39, title(293)),	-- the Soul Preserver

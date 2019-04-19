@@ -5,7 +5,7 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-1000, { -- Sets
+			n(-1000, {	-- Sets
 				i(24575),	-- Outlander's Girdle
 				i(24582),	-- Outlander's Boots
 				i(24583),	-- Outlander's Tunic

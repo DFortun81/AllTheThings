@@ -10,108 +10,108 @@ _.Zones =
 				["mapID"] = 100,	-- Hellfire Peninsula
 				["g"] = {
 					n(-17, {  	-- Quests
-						h(ach(1271, { -- To Hellfire and Back [Horde Version]
-							crit(1, { -- Disrupt the Burning Legion
-								qh(10120, { -- Arrival in Outland
-									["qg"] = 19253, -- Lieutenant General Orion
-									["sourceQuests"] = { 49816 }, -- To Outland [Breadcrumb]
+						h(ach(1271, {	-- To Hellfire and Back [Horde Version]
+							crit(1, {	-- Disrupt the Burning Legion
+								qh(10120, {	-- Arrival in Outland
+									["qg"] = 19253,	-- Lieutenant General Orion
+									["sourceQuests"] = { 49816 },	-- To Outland [Breadcrumb]
 								}),
-								qh(10289, { -- Journey to Thrallmar
-									["qg"] = 18930, -- Vlagga Freyfeather
-									["sourceQuests"] = { 10120 }, -- Arrival in Outlanad
+								qh(10289, {	-- Journey to Thrallmar
+									["qg"] = 18930,	-- Vlagga Freyfeather
+									["sourceQuests"] = { 10120 },	-- Arrival in Outlanad
 								}),
-								qh(10291, { -- Report to Nazgrel
-									["qg"] = 19255, -- General Krakork
-									["sourceQuests"] = { 10289 }, -- Journey to Thrallmar
+								qh(10291, {	-- Report to Nazgrel
+									["qg"] = 19255,	-- General Krakork
+									["sourceQuests"] = { 10289 },	-- Journey to Thrallmar
 								}),
-								qh(10086, { -- I Work... For the Horde!
+								qh(10086, {	-- I Work... For the Horde!
 									["groups"] = {
-										i(29938), -- Battle Seeker Chesguard
-										i(29943), -- Legionnaire's Studded Helm
-										i(29945), -- Magistrate's Greaves
-										i(29931), -- Phantasmal Headdress
+										i(29938),	-- Battle Seeker Chesguard
+										i(29943),	-- Legionnaire's Studded Helm
+										i(29945),	-- Magistrate's Greaves
+										i(29931),	-- Phantasmal Headdress
 									},
-									["qg"] = 21283, -- Megzeg Nukklebust
+									["qg"] = 21283,	-- Megzeg Nukklebust
 								}),
-								qh(10121, { -- Eradicate the Burning Legion
-									["qg"] = 3230, -- Nazgrel
-									["sourceQuests"] = { 10291 }, -- Report to Nazgrel
+								qh(10121, {	-- Eradicate the Burning Legion
+									["qg"] = 3230,	-- Nazgrel
+									["sourceQuests"] = { 10291 },	-- Report to Nazgrel
 								}),
-								qh(10450, { -- Bonechewer Blood
+								qh(10450, {	-- Bonechewer Blood
 									["groups"] = {
-										i(29919), -- Adamantine Kite Shield
-										i(29915), -- Desolation Rod
-										i(29914), -- Hellfire Skiver
-										i(29916), -- Ironstar Repeater
-										i(29917), -- Landslide Buckler
+										i(29919),	-- Adamantine Kite Shield
+										i(29915),	-- Desolation Rod
+										i(29914),	-- Hellfire Skiver
+										i(29916),	-- Ironstar Repeater
+										i(29917),	-- Landslide Buckler
 									},
-									["qg"] = 21256, -- Vurtok Axebreaker
-									["sourceQuests"] = { 10291 }, -- Report to Nazgrel
+									["qg"] = 21256,	-- Vurtok Axebreaker
+									["sourceQuests"] = { 10291 },	-- Report to Nazgrel
 								}),
-								qh(10087, { -- Burn It Up... For the Horde!
+								qh(10087, {	-- Burn It Up... For the Horde!
 									["groups"] = {
-										i(29934), -- Helm of Affinity
-										i(29930), -- Nature-Stitched Kilt
-										i(29941), -- Scale Brand Breastplate
-										i(29928), -- Wanderer's Stitched Trousers
+										i(29934),	-- Helm of Affinity
+										i(29930),	-- Nature-Stitched Kilt
+										i(29941),	-- Scale Brand Breastplate
+										i(29928),	-- Wanderer's Stitched Trousers
 									},
-									["qg"] = 21283, -- Megzeg Nukklebust
-									["sourceQuests"] = { 10086 }, -- Work For the Horde
+									["qg"] = 21283,	-- Megzeg Nukklebust
+									["sourceQuests"] = { 10086 },	-- Work For the Horde
 								}),
-								qh(10123, { -- Felspark Ravine
+								qh(10123, {	-- Felspark Ravine
 									["groups"] = {
-										i(29911), -- Agamaggan's Quill
-										i(29913), -- Foe Reaver
-										i(29908), -- Rage Reaver
-										i(29909), -- Screaming Dagger
-										i(29910), -- The Staff of Twin Worlds
+										i(29911),	-- Agamaggan's Quill
+										i(29913),	-- Foe Reaver
+										i(29908),	-- Rage Reaver
+										i(29909),	-- Screaming Dagger
+										i(29910),	-- The Staff of Twin Worlds
 									},
-									["qg"] = 19256, -- Sergeant Shatterskull
-									["sourceQuests"] = { 10121 }, -- Eradicate the Burning Legion
+									["qg"] = 19256,	-- Sergeant Shatterskull
+									["sourceQuests"] = { 10121 },	-- Eradicate the Burning Legion
 								}),
-								qh(10449, { -- Apothecary Zelana
-									["qg"] = 21256, -- Vurtok Axebreaker
-									["sourceQuests"] = { 10450 }, -- Bonechewer Blood
+								qh(10449, {	-- Apothecary Zelana
+									["qg"] = 21256,	-- Vurtok Axebreaker
+									["sourceQuests"] = { 10450 },	-- Bonechewer Blood
 								}),
-								qh(10124, { -- Forward Base: Reaver's Fall
-									["qg"] = 19256, -- Sergeeant Shatterskull
-									["sourceQuests"] = { 10123 }, -- Felspark Ravine
+								qh(10124, {	-- Forward Base: Reaver's Fall
+									["qg"] = 19256,	-- Sergeeant Shatterskull
+									["sourceQuests"] = { 10123 },	-- Felspark Ravine
 								}),
-								qh(10208, { -- Disrupt Their Reinforcements
+								qh(10208, {	-- Disrupt Their Reinforcements
 									["groups"] = {
-										i(29932), -- Arcane Ringed Tunic
-										i(29939), -- Flayer-Hide Leggings
-										i(29935), -- Fore Scarred Breastplate
-										i(29946), -- Invader's Greathelm
-										i(29927), -- Shadowbrim Travel Hat
+										i(29932),	-- Arcane Ringed Tunic
+										i(29939),	-- Flayer-Hide Leggings
+										i(29935),	-- Fore Scarred Breastplate
+										i(29946),	-- Invader's Greathelm
+										i(29927),	-- Shadowbrim Travel Hat
 									},
-									["qg"] = 19273, -- Forward Commander To'arch
-									["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
+									["qg"] = 19273,	-- Forward Commander To'arch
+									["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 								}),
-								qh(10129, { -- Mission: Gateways Murketh and Shaadraz
+								qh(10129, {	-- Mission: Gateways Murketh and Shaadraz
 									["groups"] = {
-										i(29942), -- Battle Scarred Leggings
-										i(29937), -- Helm of Infinite Visions
-										i(29944), -- Protectorate Breastplate
-										i(29929), -- Raging Spirit Harness
+										i(29942),	-- Battle Scarred Leggings
+										i(29937),	-- Helm of Infinite Visions
+										i(29944),	-- Protectorate Breastplate
+										i(29929),	-- Raging Spirit Harness
 									},
-									["qg"] = 19273, -- Forwarad Commander To'arch
-									["sourceQuests"] = { 10208 }, -- Disrupt Their Reinforcements
+									["qg"] = 19273,	-- Forwarad Commander To'arch
+									["sourceQuests"] = { 10208 },	-- Disrupt Their Reinforcements
 								}),
-								qh(10388, { -- Return to Thrallmar
-									["qg"] = 19273, -- Forwarad Commander To'arch
-									["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz 
+								qh(10388, {	-- Return to Thrallmar
+									["qg"] = 19273,	-- Forwarad Commander To'arch
+									["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz 
 								}),
 								
 							}),
 							--[[
-							crit(2, { -- Cruel's Intentions
+							crit(2, {	-- Cruel's Intentions
 							}),
 							--]]
-							crit(3, { -- The Hand of Kargath
+							crit(3, {	-- The Hand of Kargath
 								qh(10538,{	-- Boiling Blood
 									["qg"] = 21279,	--Apothecary Albreck
-									["sourceQuests"] = { 10242 }, -- Spinebreaker Post
+									["sourceQuests"] = { 10242 },	-- Spinebreaker Post
 								}),
 								qh(10835, {	-- Apothecary Antonivich
 									["qg"] = 21279,	-- Apothecary Albreck
@@ -144,42 +144,42 @@ _.Zones =
 								}),
 							}),
 							--[[
-							crit(4, { -- Spinebreaker Post
+							crit(4, {	-- Spinebreaker Post
 							}),
 							--]]
-							crit(5, { -- The Mag'har
-								qh(9400, { -- The Assassin
-									["qg"] = 3230, -- Nazgrel
-									["sourceQuests"] = { 10388 }, -- Return to Thrallmar
+							crit(5, {	-- The Mag'har
+								qh(9400, {	-- The Assassin
+									["qg"] = 3230,	-- Nazgrel
+									["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 								}),
-								qh(9401, { -- A Strange Weapon
-									["qg"] = 17062, -- Fel Orc Corpse
-									["sourceQuests"] = { 9400 }, -- The Assassin
+								qh(9401, {	-- A Strange Weapon
+									["qg"] = 17062,	-- Fel Orc Corpse
+									["sourceQuests"] = { 9400 },	-- The Assassin
 								}),
-								qh(9405, { -- The Warchief's Mandate
-									["qg"] = 3230, -- Nazgrel
-									["sourceQuests"] = { 9401 }, -- The Warchief's Mandate
+								qh(9405, {	-- The Warchief's Mandate
+									["qg"] = 3230,	-- Nazgrel
+									["sourceQuests"] = { 9401 },	-- The Warchief's Mandate
 								}),
-								qh(9410, { -- A Spirit Guide
-									["qg"] = 16574, -- Far Seer Regulkut
-									["sourceQuests"] = { 9405 }, -- The Warchief's Mandate
+								qh(9410, {	-- A Spirit Guide
+									["qg"] = 16574,	-- Far Seer Regulkut
+									["sourceQuests"] = { 9405 },	-- The Warchief's Mandate
 								}),
-								qh(9406, { -- The Mag'har
+								qh(9406, {	-- The Mag'har
 									["groups"] = {
-										i(25510), -- Ceremonial Robes
-										i(25513), -- Clefthoof Hide Mask
-										i(25511), -- Thunderforge Leggings
-										i(25512), -- Tribal Hauberk
+										i(25510),	-- Ceremonial Robes
+										i(25513),	-- Clefthoof Hide Mask
+										i(25511),	-- Thunderforge Leggings
+										i(25512),	-- Tribal Hauberk
 									},
-									["qg"] = 16845, -- Gorkan Bloodfist
-									["sourceQuests"] = { 9410 }, -- A Spirit Guide
+									["qg"] = 16845,	-- Gorkan Bloodfist
+									["sourceQuests"] = { 9410 },	-- A Spirit Guide
 								}),
 							}),
 							--[[
-							crit(6, { -- Falcon Watch
+							crit(6, {	-- Falcon Watch
 							}),
 							--]]
-							crit(7, { -- Green, But Not Orcs [Missing Rest that procs achieve]
+							crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
 								q(10236, {	-- Outland Sucks!
 									["qg"] = 16915,	-- Foreman Razelcraz
 									["sourceQuests"] = { 0 },	-- 
@@ -202,219 +202,219 @@ _.Zones =
 									["sourceQuests"] = { 10629 },	-- Shizz Work
 								}),		
 							}),
-							crit(8, { -- Cenarion Post
-								i(29476, { -- Crimson Crystal Shard
-									q(10134, { -- Crimson Crystal Clue
-										["qg"] = 19188, -- Raging Colossus
+							crit(8, {	-- Cenarion Post
+								i(29476, {	-- Crimson Crystal Shard
+									q(10134, {	-- Crimson Crystal Clue
+										["qg"] = 19188,	-- Raging Colossus
 									}),
 								}),
-								q(10349, { -- The Earthbinder
-									["qg"] = 19293, -- Tola'thion
-									["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
+								q(10349, {	-- The Earthbinder
+									["qg"] = 19293,	-- Tola'thion
+									["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 								}),
-								q(10351, { -- Natural Remedies
+								q(10351, {	-- Natural Remedies
 									["groups"] = {
-										i(28075), -- Destroyer's Mantle
-										i(28069), -- Golden Cenarion Greaves
-										i(28074), -- Studded Green Anklewraps
-										i(28070), -- Verdant Handwraps
+										i(28075),	-- Destroyer's Mantle
+										i(28069),	-- Golden Cenarion Greaves
+										i(28074),	-- Studded Green Anklewraps
+										i(28070),	-- Verdant Handwraps
 									},
-									["qg"] = 19294, -- Earthbinder Galandria Nightbreeze
-									["sourceQuests"] = { 10349 }, -- The Earthbinder
+									["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
+									["sourceQuests"] = { 10349 },	-- The Earthbinder
 								}),
-								q(10132, { -- Colossal Menace
+								q(10132, {	-- Colossal Menace
 									["groups"] = {
-										i(28062), -- Expedition Repeater
-										i(28063), -- Survivalist's Wand
+										i(28062),	-- Expedition Repeater
+										i(28063),	-- Survivalist's Wand
 									},
-									["qg"] = 19293, -- Tola'thion
+									["qg"] = 19293,	-- Tola'thion
 								}),
-								q(9372, { -- Demonic Contamination
-									["qg"] = 16991, -- Thiah Redmane
+								q(9372, {	-- Demonic Contamination
+									["qg"] = 16991,	-- Thiah Redmane
 								}),
-								q(10159, { -- Keep Thornfang Hill Clear!
-									["qg"] = 16888, -- Mahuram Stouthoof
+								q(10159, {	-- Keep Thornfang Hill Clear!
+									["qg"] = 16888,	-- Mahuram Stouthoof
 								}),
-								q(10255, { -- Testing the Antidote
+								q(10255, {	-- Testing the Antidote
 									["groups"] = {
-										i(25985), -- Cenarion Naturalist's Staff
-										i(25986), -- Dreadtusk's Fury
-										i(25987), -- Helboar Carving Blade
+										i(25985),	-- Cenarion Naturalist's Staff
+										i(25986),	-- Dreadtusk's Fury
+										i(25987),	-- Helboar Carving Blade
 									},
-									["qg"] = 16991, -- Thiah Redmane
-									["sourceQuests"] = { 9372 }, -- Demonic Contamination
+									["qg"] = 16991,	-- Thiah Redmane
+									["sourceQuests"] = { 9372 },	-- Demonic Contamination
 								}),
 							}),
 						})),
-						a(ach(1189, { -- To Hellfire and Back [Alliance Version]
-							crit(1, { -- Disrupt the Burning Legion
-								qa(10288, { -- Arrival in Outland
-									["qg"] = 19229, -- Commander Duron
-									["sourceQuests"] = { 49862 }, -- To Outland [Breadcrumb]
+						a(ach(1189, {	-- To Hellfire and Back [Alliance Version]
+							crit(1, {	-- Disrupt the Burning Legion
+								qa(10288, {	-- Arrival in Outland
+									["qg"] = 19229,	-- Commander Duron
+									["sourceQuests"] = { 49862 },	-- To Outland [Breadcrumb]
 								}),
-								qa(10140, { -- Journey to Honor Hold
-									["qg"] = 18931, -- Amish Wildhammer
-									["sourceQuests"] = { 10288 }, -- Arrival in Outland
+								qa(10140, {	-- Journey to Honor Hold
+									["qg"] = 18931,	-- Amish Wildhammer
+									["sourceQuests"] = { 10288 },	-- Arrival in Outland
 								}),
-								qa(10254, { -- Force Commander Danath
-									["qg"] = 19308, -- Marshal Isildor
-									["sourceQuests"] = { 10140 }, -- Journey to Honor Hold
+								qa(10254, {	-- Force Commander Danath
+									["qg"] = 19308,	-- Marshal Isildor
+									["sourceQuests"] = { 10140 },	-- Journey to Honor Hold
 								}),
-								qa(10055, { -- Waste Not, Want Not
+								qa(10055, {	-- Waste Not, Want Not
 									["groups"] = {
-										i(29938), -- Battle Seeker Chesguard
-										i(29943), -- Legionnaire's Studded Helm
-										i(29945), -- Magistrate's Greaves
-										i(29931), -- Phantasmal Headdress
+										i(29938),	-- Battle Seeker Chesguard
+										i(29943),	-- Legionnaire's Studded Helm
+										i(29945),	-- Magistrate's Greaves
+										i(29931),	-- Phantasmal Headdress
 									},
-									["qg"] = 21209, -- Dumphry
-									["sourceQuests"] = { 10254 }, -- Force Commander Danath
+									["qg"] = 21209,	-- Dumphry
+									["sourceQuests"] = { 10254 },	-- Force Commander Danath
 								}),
-								qa(10141, { -- The Legion Reborn
-									["qg"] = 16819, -- Force Commander Danath Trollbane
-									["sourceQuests"] = { 10254 }, -- Force Commander Danath
+								qa(10141, {	-- The Legion Reborn
+									["qg"] = 16819,	-- Force Commander Danath Trollbane
+									["sourceQuests"] = { 10254 },	-- Force Commander Danath
 								}),
-								qa(10160, { -- Know Your Enemy
-									["qg"] = 16819, -- Force Commander Danath Trollbane
-									["sourceQuests"] = { 10254 }, -- Force Commander Danath
+								qa(10160, {	-- Know Your Enemy
+									["qg"] = 16819,	-- Force Commander Danath Trollbane
+									["sourceQuests"] = { 10254 },	-- Force Commander Danath
 								}),
-								qa(10482, { -- Fel Orc Scavengers
+								qa(10482, {	-- Fel Orc Scavengers
 									["groups"] = {
-										i(29919), -- Adamantine Kite Shield
-										i(29915), -- Desolation Rod
-										i(29914), -- Hellfire Skiver
-										i(29916), -- Ironstar Repeater
-										i(29917), -- Landslide Buckler
+										i(29919),	-- Adamantine Kite Shield
+										i(29915),	-- Desolation Rod
+										i(29914),	-- Hellfire Skiver
+										i(29916),	-- Ironstar Repeater
+										i(29917),	-- Landslide Buckler
 									},
-									["qg"] = 16820, -- Lieutenant Amadi
-									["sourceQuests"] = { 10160 }, -- Know Your Enemy
+									["qg"] = 16820,	-- Lieutenant Amadi
+									["sourceQuests"] = { 10160 },	-- Know Your Enemy
 								}),
-								qa(10078, { -- Laying Waste to the Unwanted
-									["qg"] = 21209, -- Dumphry
-									["sourceQuests"] = { 10055 }, -- Waste Not, Want Not
+								qa(10078, {	-- Laying Waste to the Unwanted
+									["qg"] = 21209,	-- Dumphry
+									["sourceQuests"] = { 10055 },	-- Waste Not, Want Not
 								}),
-								qa(10142, { -- The Path of Anguish
+								qa(10142, {	-- The Path of Anguish
 									["groups"] = {
-										i(29911), -- Agamaggan's Quill
-										i(29913), -- Foe Reaver
-										i(29908), -- Rage Reaver
-										i(29909), -- Screaming Dagger
-										i(29910), -- The Staff of Twin Worlds
+										i(29911),	-- Agamaggan's Quill
+										i(29913),	-- Foe Reaver
+										i(29908),	-- Rage Reaver
+										i(29909),	-- Screaming Dagger
+										i(29910),	-- The Staff of Twin Worlds
 									},
-									["qg"] = 19309, -- Sergeant Altumus
-									["sourceQuests"] = { 10141 }, -- The Legion Reborn
+									["qg"] = 19309,	-- Sergeant Altumus
+									["sourceQuests"] = { 10141 },	-- The Legion Reborn
 								}),
-								qa(10483, { -- Ill Omens
-									["qg"] = 16820, -- Lieutenant Amadi
-									["sourceQuests"] = { 10482 }, -- Fel Orc Scavengers
+								qa(10483, {	-- Ill Omens
+									["qg"] = 16820,	-- Lieutenant Amadi
+									["sourceQuests"] = { 10482 },	-- Fel Orc Scavengers
 								}),
-								qa(10143, { -- Expedition Point
-									["qg"] = 19309, -- Sergeant Altumus
-									["sourceQuests"] = { 10142 }, -- The Path of Anguish
+								qa(10143, {	-- Expedition Point
+									["qg"] = 19309,	-- Sergeant Altumus
+									["sourceQuests"] = { 10142 },	-- The Path of Anguish
 								}),
-								qa(10144, { -- Disrupt Their Reinforcements
+								qa(10144, {	-- Disrupt Their Reinforcements
 									["groups"] = {
-										i(29932), -- Arcane Ringed Tunic
-										i(29939), -- Flayer-Hide Leggings
-										i(29935), -- Fore Scarred Breastplate
-										i(29946), -- Invader's Greathelm
-										i(29927), -- Shadowbrim Travel Hat
+										i(29932),	-- Arcane Ringed Tunic
+										i(29939),	-- Flayer-Hide Leggings
+										i(29935),	-- Fore Scarred Breastplate
+										i(29946),	-- Invader's Greathelm
+										i(29927),	-- Shadowbrim Travel Hat
 									},
-									["qg"] = 19310, -- Forward Commander Kingston
-									["sourceQuests"] = { 10143 }, -- Expedition Point
+									["qg"] = 19310,	-- Forward Commander Kingston
+									["sourceQuests"] = { 10143 },	-- Expedition Point
 								}),
-								qa(10146, { -- Mission: Gateways Murketh and Shaadraz
+								qa(10146, {	-- Mission: Gateways Murketh and Shaadraz
 									["groups"] = {
-										i(29942), -- Battle Scarred Leggings
-										i(29937), -- Helm of Infinite Visions
-										i(29944), -- Protectorate Breastplate
-										i(29929), -- Raging Spirit Harness
+										i(29942),	-- Battle Scarred Leggings
+										i(29937),	-- Helm of Infinite Visions
+										i(29944),	-- Protectorate Breastplate
+										i(29929),	-- Raging Spirit Harness
 									},
-									["qg"] = 19310, -- Forward Commander Kingston
-									["sourceQuests"] = { 10144 }, -- Disrupt Their Reinforcements
+									["qg"] = 19310,	-- Forward Commander Kingston
+									["sourceQuests"] = { 10144 },	-- Disrupt Their Reinforcements
 								}),
 								
 							}),
 							--[[
-							crit(2, { -- Cruel's Intentions
+							crit(2, {	-- Cruel's Intentions
 							}),
-							crit(3, { -- The Hand of Kargath
+							crit(3, {	-- The Hand of Kargath
 							}),
-							crit(4, { -- Spinebreaker Post
+							crit(4, {	-- Spinebreaker Post
 							}),
-							crit(5, { -- The Mag'har
+							crit(5, {	-- The Mag'har
 							}),
-							crit(6, { -- Falcon Watch
+							crit(6, {	-- Falcon Watch
 							}),
-							crit(7, { -- Green, But Not Orcs [Missing Rest that procs achieve]
+							crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
 							}),
 							--]]
-							crit(8, { -- Cenarion Post
-								i(29476, { -- Crimson Crystal Shard
-									q(10134, { -- Crimson Crystal Clue
-										["qg"] = 19188, -- Raging Colossus
+							crit(8, {	-- Cenarion Post
+								i(29476, {	-- Crimson Crystal Shard
+									q(10134, {	-- Crimson Crystal Clue
+										["qg"] = 19188,	-- Raging Colossus
 									}),
 								}),
-								q(10349, { -- The Earthbinder
-									["qg"] = 19293, -- Tola'thion
-									["sourceQuests"] = { 10134 }, -- Crimson Crystal Clue
+								q(10349, {	-- The Earthbinder
+									["qg"] = 19293,	-- Tola'thion
+									["sourceQuests"] = { 10134 },	-- Crimson Crystal Clue
 								}),
-								q(10351, { -- Natural Remedies
+								q(10351, {	-- Natural Remedies
 									["groups"] = {
-										i(28075), -- Destroyer's Mantle
-										i(28069), -- Golden Cenarion Greaves
-										i(28074), -- Studded Green Anklewraps
-										i(28070), -- Verdant Handwraps
+										i(28075),	-- Destroyer's Mantle
+										i(28069),	-- Golden Cenarion Greaves
+										i(28074),	-- Studded Green Anklewraps
+										i(28070),	-- Verdant Handwraps
 									},
-									["qg"] = 19294, -- Earthbinder Galandria Nightbreeze
-									["sourceQuests"] = { 10349 }, -- The Earthbinder
+									["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
+									["sourceQuests"] = { 10349 },	-- The Earthbinder
 								}),
-								q(10132, { -- Colossal Menace
+								q(10132, {	-- Colossal Menace
 									["groups"] = {
-										i(28062), -- Expedition Repeater
-										i(28063), -- Survivalist's Wand
+										i(28062),	-- Expedition Repeater
+										i(28063),	-- Survivalist's Wand
 									},
-									["qg"] = 19293, -- Tola'thion
+									["qg"] = 19293,	-- Tola'thion
 								}),
-								q(9372, { -- Demonic Contamination
-									["qg"] = 16991, -- Thiah Redmane
+								q(9372, {	-- Demonic Contamination
+									["qg"] = 16991,	-- Thiah Redmane
 								}),
-								q(10159, { -- Keep Thornfang Hill Clear!
-									["qg"] = 16888, -- Mahuram Stouthoof
+								q(10159, {	-- Keep Thornfang Hill Clear!
+									["qg"] = 16888,	-- Mahuram Stouthoof
 								}),
-								q(10255, { -- Testing the Antidote
+								q(10255, {	-- Testing the Antidote
 									["groups"] = {
-										i(25985), -- Cenarion Naturalist's Staff
-										i(25986), -- Dreadtusk's Fury
-										i(25987), -- Helboar Carving Blade
+										i(25985),	-- Cenarion Naturalist's Staff
+										i(25986),	-- Dreadtusk's Fury
+										i(25987),	-- Helboar Carving Blade
 									},
-									["qg"] = 16991, -- Thiah Redmane
-									["sourceQuests"] = { 9372 }, -- Demonic Contamination
+									["qg"] = 16991,	-- Thiah Redmane
+									["sourceQuests"] = { 9372 },	-- Demonic Contamination
 								}),
 							}),
 						})),
-						n(-168, { -- Other Quests
-							qh(49816, { -- To Outland!
+						n(-168, {	-- Other Quests
+							qh(49816, {	-- To Outland!
 								["isBreadcrumb"] = true,
 								["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 							}),
-							qa(49862, { -- To Outland!
+							qa(49862, {	-- To Outland!
 								["isBreadcrumb"] = true,
 								["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
 							}),
-							sz(1271,8, { -- Cenarion Post
+							sz(1271,8, {	-- Cenarion Post
 								["groups"] = {
-									q(9912, { -- The Cenarion Expedition
+									q(9912, {	-- The Cenarion Expedition
 										["qg"] = 16885,
 										["isBreadcrumb"] = true,
 									}),
 								},
 								["collectible"] = false,	-- Turn off Collectible flags.
 							}),
-							h(sz(862,3, { -- Falcon Watch
+							h(sz(862,3, {	-- Falcon Watch
 								["groups"] = {
-									qh(10442, { -- Helping the Cenarion Post
-										["qg"] = 16790, -- Falconer Drenna Riverwind
+									qh(10442, {	-- Helping the Cenarion Post
+										["qg"] = 16790,	-- Falconer Drenna Riverwind
 									}),
 								},
 								["collectible"] = false,	-- Turn off Collectible flags.
@@ -429,7 +429,7 @@ _.Zones =
 								["description"] = "This quest is required for the 'Draining the Marsh' criteria in Zangarmarsh.",
 								["sourceQuests"] = { 9724 },	-- Warning the Cenarion Circle
 							}),
-							h(sz(862,4, { -- Spinebreaker Post
+							h(sz(862,4, {	-- Spinebreaker Post
 								["groups"] = {
 									qh(10220,{	-- Make Them Listen
 										["qg"] = 19682,	-- Emissary Mordiba
@@ -446,73 +446,73 @@ _.Zones =
 								},
 								["collectible"] = false,	-- Turn off Collectible flags.
 							})),
-							h(sz(862,11, { -- Thrallmar
+							h(sz(862,11, {	-- Thrallmar
 								["groups"] = {
-									q(9498, { -- Falcon Watch [Breadcrumb]
-										["qg"] = 21256, -- Vurtok Axebreaker
-										["sourceQuests"] = { 10450 }, -- Bonechewer Blood
-										["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 }, -- Every race but Blood Elves
+									q(9498, {	-- Falcon Watch [Breadcrumb]
+										["qg"] = 21256,	-- Vurtok Axebreaker
+										["sourceQuests"] = { 10450 },	-- Bonechewer Blood
+										["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Every race but Blood Elves
 									}),
-									q(9499, { -- Falcon Watch [Breadcrumb]
-										["qg"] = 21256, -- Vurtok Axebreaker
-										["sourceQuests"] = { 10450 }, -- Bonechewer Blood
-										["races"] = { 10 }, -- Blood Elves
+									q(9499, {	-- Falcon Watch [Breadcrumb]
+										["qg"] = 21256,	-- Vurtok Axebreaker
+										["sourceQuests"] = { 10450 },	-- Bonechewer Blood
+										["races"] = { 10 },	-- Blood Elves
 									}),
-									qh(13409, { -- Hellfire Fortifications
+									qh(13409, {	-- Hellfire Fortifications
 										["groups"] = {
-											i(40477), -- Insignia of the Horde
+											i(40477),	-- Insignia of the Horde
 										},
-										["qg"] = 18267, -- Battlecryer Blackeye
-										["sourceQuests"] = { 10124 }, -- Forward Base: Reaver's Fall
+										["qg"] = 18267,	-- Battlecryer Blackeye
+										["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 									}),
-									qh(10110, { -- Hellfire Fortifications
-										["qg"] = 18267, -- Battlecryer Blackeye
-										["sourceQuests"] = { 13409 }, -- Hellfire Fortifications
+									qh(10110, {	-- Hellfire Fortifications
+										["qg"] = 18267,	-- Battlecryer Blackeye
+										["sourceQuests"] = { 13409 },	-- Hellfire Fortifications
 									}),
-									qh(10390, { -- Forge Camp: Mageddon
-										["qg"] = 3230, -- Nazgrel
-										["sourceQuests"] = { 10388 }, -- Return to Thrallmar
+									qh(10390, {	-- Forge Camp: Mageddon
+										["qg"] = 3230,	-- Nazgrel
+										["sourceQuests"] = { 10388 },	-- Return to Thrallmar
 									}),
 								},
 								["collectible"] = false,	-- Turn off Collectible flags.
 							})),
 							-- Need a Reaver's Fall Section, but none in achievement
-							qh(10242, { -- Spinebreaker Post
-								["qg"] = 21257, -- Apothecary Zelana
-								["sourceQuests"] = { 10449 }, -- Apothecary Zelana
+							qh(10242, {	-- Spinebreaker Post
+								["qg"] = 21257,	-- Apothecary Zelana
+								["sourceQuests"] = { 10449 },	-- Apothecary Zelana
 							}),
-							qh(10162, { -- Mission: The Abyssal Shelf
+							qh(10162, {	-- Mission: The Abyssal Shelf
 								["groups"] = {
-									i(29933), -- Arcane Ringed Greaves
-									i(29936), -- Skyfire Greaves
-									i(29940), -- Veteran's Skullcap
-									i(29926), -- Whispering Tunic
+									i(29933),	-- Arcane Ringed Greaves
+									i(29936),	-- Skyfire Greaves
+									i(29940),	-- Veteran's Skullcap
+									i(29926),	-- Whispering Tunic
 								},
-								["qg"] = 19273, -- Forwarad Commander To'arch
-								["sourceQuests"] = { 10129 }, -- Mission: Gatewayas Murketh and Shaadraz
+								["qg"] = 19273,	-- Forwarad Commander To'arch
+								["sourceQuests"] = { 10129 },	-- Mission: Gatewayas Murketh and Shaadraz
 							}),
 							-- Need a Shatter Point Section, but none in achievement
-							qa(10163, { -- Mission: The Abyssal Shelf
+							qa(10163, {	-- Mission: The Abyssal Shelf
 								["groups"] = {
-									i(29933), -- Arcane Ringed Greaves
-									i(29936), -- Skyfire Greaves
-									i(29940), -- Veteran's Skullcap
-									i(29926), -- Whispering Tunic
+									i(29933),	-- Arcane Ringed Greaves
+									i(29936),	-- Skyfire Greaves
+									i(29940),	-- Veteran's Skullcap
+									i(29926),	-- Whispering Tunic
 								},
-								["qg"] = 20232, -- Wing Commander Gryphongar
-								["sourceQuests"] = { 10344 }, -- Wing Commander Gryphongar
+								["qg"] = 20232,	-- Wing Commander Gryphongar
+								["sourceQuests"] = { 10344 },	-- Wing Commander Gryphongar
 							}),
 						}),
-						n(-494, { -- Miscellaneous
+						n(-494, {	-- Miscellaneous
 							qh(  9442),	-- A Debilitating Sickness
 							qa(  9355, {	-- A Job for an Intelligent Man
 								i(25785),	-- Adept's Band
 								i(25784),	-- Imbued Chain
 							}),
 							qh(9376,  {  -- A Pilgrim's Plight
-								i(25783), -- Pilgrim's Cover
-								i(25781), -- Segmented Breastplate
-								i(25782), -- Sunstrider Legguards
+								i(25783),	-- Pilgrim's Cover
+								i(25781),	-- Segmented Breastplate
+								i(25782),	-- Sunstrider Legguards
 							}),
 							q(10367),	-- A Traitor Among Us
 							qa( 29689),	-- Advancing the Campaign
@@ -648,7 +648,9 @@ _.Zones =
 								i(29926),	-- Whispering Tunic
 							}),
 							q(10403),	-- Naladu
-							qd( q(31922)),	-- Nicki Tinytech
+							q(31922, {	-- Nicki Tinytech
+								["isDaily"] = true,
+							}),
 							qa( 10400, {	-- Overlord
 								i(28041),	-- Bladefist's Breadth
 								i(28042),	-- Regal Protectorate

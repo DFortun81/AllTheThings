@@ -29,7 +29,7 @@ _.Zones =
 					}),
 				}),
 				n(-228, {	-- Flight Paths
-					fp(1029, { -- Tavern in the Mists, The Veiled Stair
+					fp(1029, {	-- Tavern in the Mists, The Veiled Stair
 						["coord"] = { 56.6, 75.8 },
 					}),
 				}),
@@ -39,14 +39,14 @@ _.Zones =
 					p(709), 	-- Malayan Quillrat Pup
 				}),
 				n(-17, { 	-- Quests
-					un(40, q(33104, { -- A Pandaren Legend
-						i(102457, { -- Timeless Essence of the Black Dragonflight
-							un(38, i(102248)), -- Fen-Yu, Fury of Xuen
-							un(38, i(102249)), -- Gon-Lu, Strength of Xuen
-							un(38, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-							un(38, i(102245)), -- Qian-Le, Courage of Niuzao
-							un(38, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-							un(38, i(102246)), -- Xing-Ho, Breath of Yu'lon
+					un(40, q(33104, {	-- A Pandaren Legend
+						i(102457, {	-- Timeless Essence of the Black Dragonflight
+							un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
+							un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
+							un(38, i(102247)),	-- Jina-Kang, Kindness of Chi-Ji
+							un(38, i(102245)),	-- Qian-Le, Courage of Niuzao
+							un(38, i(102250)),	-- Qian-Ying, Fortitude of Niuzao
+							un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
 						}),
 					})),
 --[[				
@@ -72,15 +72,15 @@ _.Zones =
 							un(38, i(98146)),	-- Oxhorn Bladebreaker
 							un(38, i(98147)),	-- Tigerclaw Cape
 							un(38, i(98148)),	-- Tigerfang Wrap
-							i(102457, { -- Timeless Essence of the Black Dragonflight
+							i(102457, {	-- Timeless Essence of the Black Dragonflight
 								["description"] = "To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
 								["groups"] = {								
-									un(38, i(102248)), -- Fen-Yu, Fury of Xuen
-									un(38, i(102249)), -- Gon-Lu, Strength of Xuen
-									un(38, i(102247)), -- Jina-Kang, Kindness of Chi-Ji
-									un(38, i(102245)), -- Qian-Le, Courage of Niuzao
-									un(38, i(102250)), -- Qian-Ying, Fortitude of Niuzao
-									un(38, i(102246)), -- Xing-Ho, Breath of Yu'lon
+									un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
+									un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
+									un(38, i(102247)),	-- Jina-Kang, Kindness of Chi-Ji
+									un(38, i(102245)),	-- Qian-Le, Courage of Niuzao
+									un(38, i(102250)),	-- Qian-Ying, Fortitude of Niuzao
+									un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
 								},
 							}),
 						},

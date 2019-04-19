@@ -7,7 +7,7 @@ _.Zones =
 		m(468, {	-- Ammen Vale
 			["groups"] = {
 				n(-25, {	-- Pet Battle
-					p(464), -- Grey Moth
+					p(464),	-- Grey Moth
 				}),
 			},
 		}),

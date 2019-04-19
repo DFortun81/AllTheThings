@@ -33,6 +33,7 @@ _.Zones =
 						["groups"] = {
 							i(157824, {	-- Valarjar Cache
 								["groups"] = {
+									i(144310),	-- Formula: Enchant Neck - Mark of the Master (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
@@ -437,7 +438,9 @@ _.Zones =
 							}))),
 							sq(39837, qg(91531, q(38339))),			-- A Little Kelp From My Foes / Colborn the Unworthy
 							sq({38324,38339}, qg(91531, q(38347, {	-- Stealth by Seaweed / Colborn the Unworthy
-								desc(n(91386), "Walk by him. Don't get killed."),	-- Guarm
+								n(91386, {	-- Guarm
+									["description"] = "Walk by him. Don't get killed.",
+								}),
 							}))),
 							sq(38347, qg(97319, q(39848))),			-- A Desperate Bargain / Ashildir <Queen of the Valkyra>
 							sq(39848, qg(91387, q(39857))),			-- The Eternal Nemesis / Helya's Altar
@@ -449,7 +452,9 @@ _.Zones =
 							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
 							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
 							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
-								desc(n(91948), "Soloable, but might require a group."),	-- Geir <The Eternal Nemesis>
+								n(91948, {	-- Geir <The Eternal Nemesis>
+									["description"] = "Soloable, but might require a group.",
+								}),
 							}))),
 							sq(39853, qg(97319, q(39855, {	-- Paid in Lifeblood / Ashildir <Queen of the Valkyra>
 								i(132832),	-- Bones of Geir	
@@ -465,7 +470,9 @@ _.Zones =
 							}))),
 						}),
 						n(-16, {	-- Rares
-							desc(n(109163), "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise."),			-- Captain Dargun
+							n(109163, {	-- Captain Dargun
+								["description"] = "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise.",
+							}),
 							n(92040, {	-- Fenri
 								["groups"] = {
 									i(129044),	-- Frothing Helhound's Fury
@@ -481,12 +488,24 @@ _.Zones =
 										["classes"] = {1},
 										["dr"] = 100,
 										["groups"] = {
-											desc(q(46229), "His Name Is Dragonblood"),	-- Valarjar Lore Unlock 1
-											desc(q(46230), "The Last Words of Asgrim the Dreadkiller"),	-- Valarjar Lore Unlock 2
-											desc(q(46231), "A Shieldmaiden's Creed"),	-- Valarjar Lore Unlock 3
-											desc(q(46232), "The Prophecy of Rythas the Oracle"),	-- Valarjar Lore Unlock 4
-											desc(q(46233), "The Lessons of the Blackfist"),	-- Valarjar Lore Unlock 5
-											desc(q(46234), "Volund's Folly"),	-- Valarjar Lore Unlock 6
+											q(46229, {	-- Valarjar Lore Unlock 1
+												["description"] = "His Name Is Dragonblood",
+											}),
+											q(46230, {	-- Valarjar Lore Unlock 2
+												["description"] = "The Last Words of Asgrim the Dreadkiller",
+											}),
+											q(46231, {	-- Valarjar Lore Unlock 3
+												["description"] = "A Shieldmaiden's Creed",
+											}),
+											q(46232, {	-- Valarjar Lore Unlock 4
+												["description"] = "The Prophecy of Rythas the Oracle",
+											}),
+											q(46233, {	-- Valarjar Lore Unlock 5
+												["description"] = "The Lessons of the Blackfist",
+											}),
+											q(46234, {	-- Valarjar Lore Unlock 6
+												["description"] = "Volund's Folly",
+											}),
 										}
 									}),
 								}
@@ -715,6 +734,9 @@ _.Zones =
 								["creatureID"] = 120458
 							}),
 						}),
+						{	-- Schematic: Reaves Module: Wormhole Generator Mode
+							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						},
 					}),
 					prof(393, {	-- Skinning
 						n(91799, {	-- Juvenile Stormwing
@@ -871,14 +893,12 @@ _.Zones =
 						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
 						q(41497),	-- Wild Leystone Seams
 						q(41297),	-- Work Order: Fjarnskaggl
-						q(41678),	-- Work Order: Gunpack
 						q(41313),	-- Work Order: Leystone
 						q(41654),	-- Work Order: Queen's Opal Loop
 						q(41648),	-- Work Order: Silkweave Bracers
 						q(41660),	-- Work Order: Skaggldrynk
 						q(41277),	-- Work Order: Stormrays
 						q(41344),	-- Work Order: Stormscales
-						q(41642),	-- Work Order: Warhide Footpads
 						q(41672),	-- Work Order: Word of Haste
 						q(41936),	-- You Have Been Challenged					
 					}),
@@ -1492,54 +1512,104 @@ _.Zones =
 							i(134560),
 							i(134561),
 						}),
-						n(-38, {	-- Professions
-							n(-181, {	-- Blacksmithing
-								{	-- Work Order: Leystone Breastplate
-									["questID"] = 41636,	-- Work Order: Leystone Breastplate
-									["qg"] = 106904,	-- Valdemar Stormseeker
-									["g"] = {
-										{	-- Recipe: Leystone Breastplate [Rank 3]
-											["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
-										},
+					}),
+					n(-38, {	-- Professions
+						n(-181, {	-- Blacksmithing
+							{	-- Work Order: Leystone Breastplate
+								["questID"] = 41636,	-- Work Order: Leystone Breastplate
+								["qg"] = 106904,	-- Valdemar Stormseeker
+								["g"] = {
+									{	-- Recipe: Leystone Breastplate [Rank 3]
+										["itemID"] = 123939,	-- Recipe: Leystone Breastplate [Rank 3]
 									},
-								},
-							}),
-							n(-183, {	-- Engineering
-								{	-- Work Order: Gunpack
-									["questID"] = 41678,	-- Work Order: Gunpack
-									["qg"] = 106904,	-- Valdemar Stormseeker
-									["g"] = {
-										{	-- Schematic: Gunpack [Rank 3]
-											["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
-										},
-									},
-								},
-							}),
-							n(-185, {	-- Inscription
-								["groups"] = {
-									q(40052, {	-- Ancient Vrykul Mastered
-										["qg"] = 97748,	-- Nicholo Swiftfuse
-										["sourceQuests"] = { 39947 },	-- Not So Complex?
-										["g"] = {
-											{	-- Technique: Scroll of Forgotten Knowledge
-												["itemID"] = 137728,	-- Technique: Scroll of Forgotten Knowledge
-											},
-										},
-									}),
-								},
-								["requireSkill"] = 773,
-							}),
-							{	-- Mysteries of Nature
-								["questID"] = 40546,
-								["requireSkill"] = 755,	-- Jewelcrafting
-								["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
-								["groups"] = {
-									recipe(195883),	-- Chatterstone
 								},
 							},
 						}),
-					}),
-				  
+						n(-182, {	-- Enchanting
+							{	-- Halls of Valor: Revenge of the Enchantress
+								["questID"] = 39904,	-- Halls of Valor: Revenge of the Enchantress
+								["qg"] = 98367,	-- Tigrid the Charmer
+								["g"] = {
+									{	-- Formula: Enchanted Pen
+										["itemID"] = 128623,	-- Formula: Enchanted Pen
+									},
+								},
+							},
+						}),
+						n(-183, {	-- Engineering
+							{	-- Work Order: Gunpack
+								["questID"] = 41678,	-- Work Order: Gunpack
+								["qg"] = 106904,	-- Valdemar Stormseeker
+								["g"] = {
+									{	-- Schematic: Gunpack [Rank 3]
+										["itemID"] = 137722,	-- Schematic: Gunpack [Rank 3]
+									},
+								},
+							},
+							{	-- The Shell, You Say?
+								["questID"] = 40866,	-- The Shell, You Say?
+								["qg"] = 102198,	-- Fargo Flintlocke
+								["requireSkill"] = 202,
+								["groups"] = {
+									{	-- Schematic: Sonic Environment Enhancer
+										-- ["recipeID"] = 201596,	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
+										["recipeID"] = 200466,	-- Schematic: Sonic Environment Enhancer
+									},
+								},
+							},
+							q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
+								["groups"] = {
+									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
+								},
+								["qg"] = 102198,	-- Fargo Flintlocke
+								["requireSkill"] = 202,
+								["sourceQuests"] = {
+									40866,	-- The Shell, You Say?
+									40867,	-- Bubble Baubles
+								},
+							}),
+						}),
+						n(-185, {	-- Inscription
+							["groups"] = {
+								q(40052, {	-- Ancient Vrykul Mastered
+									["qg"] = 97748,	-- Nicholo Swiftfuse
+									["sourceQuests"] = { 39947 },	-- Not So Complex?
+									["g"] = {
+										{	-- Technique: Scroll of Forgotten Knowledge
+											["itemID"] = 137728,	-- Technique: Scroll of Forgotten Knowledge
+										},
+									},
+								}),
+							},
+							["requireSkill"] = 773,
+						}),
+						n(-186, {	-- Jewelcrafting
+							["groups"] = {
+								{	-- Mysteries of Nature
+									["questID"] = 40546,
+									["requireSkill"] = 755,	-- Jewelcrafting
+									["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
+									["groups"] = {
+										recipe(195883),	-- Chatterstone
+									},
+								},
+							},
+						}),
+						n(-190, {	-- Tailoring
+							["groups"] = {
+								q(38974, {	-- Halls of Valor: The Right Question
+									["qg"] = 93977,	-- Leyweaver Tellumi
+									["coord"] = { 65.6, 56.2 },
+									["g"] = {
+										{	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+											["itemID"] = 127024,	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
+										},
+									},
+								}),
+							},
+							["requireSkill"] = 197,	-- Tailoring
+						}),
+					}),				  
 				--[[ These quests will be organized soon™
 					q(44720),	-- A Call to Action
 					qart(qg(117394, q(45534))),	-- A Common Enemy
@@ -1593,7 +1663,6 @@ _.Zones =
 					q(38607),	-- Gates of Valhallas
 					q(38670),	-- Goredome 2
 					q(40615),	-- Halls of Valor: Odyn's Blessing
-					q(39904),	-- Halls of Valor: Revenge of the Enchantress
 					q(44721),	-- Helya's Conquest
 					q(42393),	-- Homecoming
 					q(44577),	-- Honor the Flame
@@ -1663,8 +1732,7 @@ _.Zones =
 					q(44775),	-- The Peak of Bones
 					q(41168),	-- The Purple Hills of Mac'Aree
 					q(41170),	-- The Relic Renewed
-					q(45486),	-- The Reluctant Queen					
-					q(40866),	-- The Shell, You Say?
+					q(45486),	-- The Reluctant Queen
 					q(45406),	-- The Storm's Fury
 					q(44117),	-- Time Flies When Yer Havin' Rum!
 					q(45522),	-- To Silence the Bonespeakers
@@ -1683,28 +1751,8 @@ _.Zones =
 						["qg"] = 112959,	-- Fleet Admiral Tethys
 						["classes"] = { 4 },
 					}),
-					{	-- Halls of Valor: The Right Question
-						["questID"] = 38974,
-						["groups"] = {
-							i(127024),	-- Pattern: Imbued Silkweave Pantaloons (Rank 1)
-						},
-						["qg"] = 93977,	-- Leyweaveer Tellumi
-						["coord"] = { 65.6, 56.2 },
-						["requireSkill"] = 197,	-- Tailoring
-					},
 					q(46340, {
 						["qg"] = 93628,	-- Eyir
-					}),
-					q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-						["groups"] = {
-							sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
-						},
-						["qg"] = 102198,	-- Fargo Flintlocke
-						["requireSkill"] = 202,
-						["sourceQuests"] = {
-							40866,	-- The Shell, You Say?
-							40867,	-- Bubble Baubles
-						},
 					}),
 				}),
 				n(-16, { 	-- Rares
@@ -1985,10 +2033,14 @@ _.Zones =
 					}),
 					n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 						i(140656),	-- Rod of the Ascended - Priest Artifact Appearance item
+						i(137915),	-- Recipe: Battlebound Hauberk [Rank 3]
+						i(137910),	-- Recipe: Battlebound Warhelm [Rank 3]
 						i(136698),	-- Recipe: Consecrated Spike
 						i(123954),	-- Recipe: Demonsteel Boots [Rank 3]
 						i(123951),	-- Recipe: Demonsteel Greaves [Rank 3]
 						i(123952),	-- Recipe: Demonsteel Helm [Rank 3]
+						i(137927),	-- Recipe: Gravenscale Leggings [Rank 3]
+						i(137928),	-- Recipe: Gravenscale Warhelm [Rank 3]
 						i(129149),	-- Death's Door Charm
 						i(139598),	-- Legplates of Forgotten Myth
 						i(136920),	-- Sunborn Val'kyr
@@ -2085,9 +2137,33 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 197,	-- Tailoring
 					},
+					{	-- Work Order: Warhide Footpads
+						["questID"] = 41642,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["groups"] = {
+							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 165,	-- Leatherworking
+					},
+					{	-- Work Order: Word of Haste
+						["questID"] = 41672,
+						["qg"] = 106904,	-- Valdemar Stormseeker
+						["groups"] = {
+							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
+						},
+						["isWQ"] = 110,
+						["requireSkill"] = 333,	-- Enchanting
+					},
 				}),				
 				n(0, { 		-- Zone Drops
 					["groups"] = {
+						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
+						i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
+							["crs"] = {
+								111393, 	-- Deathcaller Mystic
+							},
+						}),
 						i(136701),	-- Schematic: Shockinator
 						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
@@ -2492,6 +2568,12 @@ _.Zones =
 				638,	-- Thorignir Refuge
 				639,	-- Aggramar's Vault
 				640,	-- Vault of Eyir
+				649,	-- Helheim
+				694,	-- Helmouth Shallows
+				829,	-- Halls of Valor
+				865,	-- Stormheim (Legion Invasion)
+				866,	-- Stormheim (Legion Invasion)
+				877,	-- Fields of the Eternal Hunt
 			},
 			["achievementID"] = 10668,
 			["description"] = "|cff66ccffStormheim is a zone in the eastern area of the Broken Isles situated in the shadow of Highmountain to the west, and Suramar to the southwest. It's home to the mighty vrykul who left Northrend many ages ago in search of their holy land. Two titanic watchers here have warred with each other for thousands of years. The Halls of Valor and Helheim, the realms to which the vrykul journey when they die, are located in this zone.|r",

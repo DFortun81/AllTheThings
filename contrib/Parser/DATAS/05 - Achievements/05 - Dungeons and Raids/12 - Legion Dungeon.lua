@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10012, { -- Legion Dungeon
+			n(-10012, {	-- Legion Dungeon
 				["groups"] = {
 					ach(10707),		-- A Specter, Illuminated
 					ach(11769),		-- A Steamy Romance Saga

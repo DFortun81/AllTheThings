@@ -7,7 +7,7 @@ _.WorldEvents =
 	{	-- Darkmoon Island
 		["mapID"] = 407,	-- Darkmoon Island
 		["g"] = {
-			n(-17, { -- Quests
+			n(-17, {	-- Quests
 				{	-- 1200 Tickets - Amulet of the Darkmoon
 					["questID"] = 7981,	-- 1200 Tickets - Amulet of the Darkmoon
 					["qg"] = 14828,	-- Gelvas Grimegate <Souvenir & Toy Prizes>
@@ -494,6 +494,43 @@ _.WorldEvents =
 						},
 					},
 				},
+				{	-- Darkmoon Treasure Chest
+					["objectID"] = 209620,	-- Darkmoon Treasure Chest
+					["icon"] = "Interface\\Icons\\garrison_silverchest",
+					["coords"] = {
+						{ 46.79, 78.91, 407 },	-- Entrance
+						{ 44.65, 78.92, 407 },	-- Chest
+					},
+					["g"] = {
+						{	-- Master Pit Fighter
+							["questID"] = 29761,	-- Master Pit Fighter
+							["qg"] = 55402,	-- Korgol Crushskull
+							["coord"] = { 47.38, 78.92, 407 },
+							["sourceQuests"] = { 29760 },	-- Pit Fighter
+							["collectible"] = false,
+							["g"] = {
+								i(74035),	-- Master Pit Fighter
+								ach(6024),	-- Darkmoon Dominator
+							},
+						},
+						{	-- Pit Fighter
+							["questID"] = 29760,	-- Pit Fighter
+							["qg"] = 55402,	-- Korgol Crushskull
+							["coord"] = { 47.38, 78.92, 407 },
+							["collectible"] = false,
+							["g"] = {
+								i(74034),	-- Pit Fighter
+								ach(6023),	-- Darkmoon Duelist
+							},
+						},
+						{	-- Returning Champion
+							["itemID"] = 126949,	-- Returning Champion
+							["sourceQuests"] = {
+								29761,	-- Master Pit Fighter
+							},
+						},
+					},
+				},
 				{	-- Faire Favors [Profession Quests]
 					["achievementID"] = 6032,	-- Faire Favors
 					["g"] = {
@@ -758,48 +795,6 @@ _.WorldEvents =
 						},
 						{	-- Darkmoon Game Prize
 							["itemID"] = 93724,	-- Darkmoon Game Prize
-						},
-					},
-				},
-				{	-- Darkmoon Treasure Chest
-					["objectID"] = 209620,	-- Darkmoon Treasure Chest
-					["icon"] = "Interface\\Icons\\garrison_silverchest",
-					["coords"] = {
-						{ 46.79, 78.91, 407 },	-- Entrance
-						{ 44.65, 78.92, 407 },	-- Chest
-					},
-					["g"] = {
-						{	-- Master Pit Fighter
-							["itemID"] = 74035,		-- Master Pit Fighter
-							["questID"] = 29761,	-- Master Pit Fighter
-							["qg"] = 55402,			-- Korgol Crushskull
-							["sourceQuests"] = {
-								29760,	-- Pit Fighter
-							},
-							["coords"] = {
-								{ 47.38, 78.92, 407 },
-							},
-							["collectible"] = false,
-						},
-						{	-- Pit Fighter
-							["itemID"] = 74034,		-- Pit Fighter
-							["questID"] = 29760,	-- Pit Fighter
-							["qg"] = 55402,			-- Korgol Crushskull
-							["coords"] = {
-								{ 47.38, 78.92, 407 },
-							},
-							["collectible"] = false,
-							["g"] = {
-								{	-- Darkmoon Duelist
-									["achievementID"] = 6023,	-- Darkmoon Duelist
-								},
-							},
-						},
-						{	-- Returning Champion
-							["itemID"] = 126949,	-- Returning Champion
-							["sourceQuests"] = {
-								29761,	-- Master Pit Fighter
-							},
 						},
 					},
 				},

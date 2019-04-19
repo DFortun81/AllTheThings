@@ -7,672 +7,1611 @@ _.Zones =
 		m(198, {	-- Mount Hyjal
 			["groups"] = {
 				n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					ach(5868, {		-- And the Meek Shall Inherit Kalimdor (Mount Hyjal)
-						crit(1),		-- Angry Little Squirrel
-						crit(2),		-- Hyjal Bear Cub
-						crit(3),		-- Alpine Songbird slain
-						crit(4),		-- Child of Tortolla
-					}),
-					ach(4870, {		-- Coming Down the Mountain
-						crit(1),		-- The Return of the Ancients
-						crit(2),		-- Shrine of Goldrinn
-						crit(3),		-- Foray into the Firelands
-						crit(4),		-- Grove of Aessina
-						crit(5),		-- Awakening Tortolla
-						crit(6),		-- Shrine of Aviana
-						crit(7),		-- The Ancients
-						crit(8),		-- Cavorting with Cultists
-						crit(9),		-- Extinguish the Firelord
-					}),
-]]--				
-					qg(41006, q(25731, { -- A Bird in Hand
-						i(57333),
-						i(57332),
-					})),
---[[					
-					qg(39406, q(25494)),	-- A Champion's Collar
-					qg(41006, q(25758)),	-- A Gap in Their Armor
-					qg(106250, q(42046), {	-- A New Beginning
-						["classes"]= {11},
-					}),
-					qg(39933, q(25411)),	-- A New Master
-					qg(41068, q(25665)),	-- A Plea From Beyond
---]]
-					qg(41005, q(25664, { -- A Prayer and a Wing
-						i(57341),
-						i(57340),
-						i(57339),
-					})),
---[[					
-					qg(38917, q(25324)),	-- A Prisoner of Interest
---]]					
-					{
-						["questID"] = 29195,	-- A Ritual of Flame
+					--[[
+						25829 - tracking quest - goldrinn hub complete
+						27872 - tortolla hub complete
+						27873 - aviana hub complete
+					]]--
+					{	-- Coming Down the Mountain
+						["achievementID"] = 4870,
+						["groups"] = {
+							{	-- The Return of the Ancients
+								["criteriaID"] = 1,
+								["sourceQuest"] = 25584,	-- The Return of the Ancients
+							},
+							{	-- Shrine of Goldrinn
+								["criteriaID"] = 2,
+								["sourceQuests"] = {
+									25298,	-- Free Your Mind, the Rest Follows
+									25332,	-- Get Me Outta Here! -- verify
+									25312,	-- Return to Duskwhisper
+								},
+							},
+							{	-- Foray into the Firelands
+								["criteriaID"] = 3,
+								["sourceQuest"] = 25612,	-- Return from the Firelands -- verify
+							},
+							{	-- Grove of Aessina
+								["criteriaID"] = 4,
+								["sourceQuests"] = {
+									25382,	-- Disrupting the Rituals
+									29066,	-- Good News... and Bad News
+								},
+							},
+							{	-- Awakening Tortolla
+								["criteriaID"] = 5,
+								["sourceQuest"] = 25520,	-- An Ancient Awakens
+							},
+							{	-- Shrine of Aviana
+								["criteriaID"] = 6,
+								["sourceQuest"] = 25832,	-- Return to Aviana
+							},
+							{	-- The Ancients
+								["criteriaID"] = 7,
+								["sourceQuest"] = 25653,	-- The Ancients are With Us
+							},
+							{	-- Cavorting with Cultists
+								["criteriaID"] = 8,
+								["sourceQuest"] = 25531,	-- Twilight Riot
+							},
+							{	-- Extinguish the Firelord
+								["criteriaID"] = 9,
+								["sourceQuest"] = 25551,	-- The Firelord
+							},
+						},
+					},
+					{	-- A Bird in Hand
+						["questID"] = 25731,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 42.1, 45.4, 198 },
+						["sourceQuests"] = {
+							25656,	-- Scrambling For Eggs
+							25655,	-- The Wormwing Problem
+						},
+						["groups"] = {
+							i(57333),	-- Punishing Shoulders
+							i(57332),	-- Legplates of Persuasion
+							i(57334),	-- Pinpoint Choker
+						},
+					},
+					{	-- A Champion's Collar
+						["questID"] = 25494,
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25294,	-- Walking the Dog
+					},
+					{	-- A Gap in Their Armor
+						["questID"] = 25758,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					},
+					{	-- A New Beginning
+						["questID"] = 42046,
+						["qg"] = 106250,	-- 
+						["classes"]= { 11 },	-- Druid
+					},
+					{	-- A New Master
+						["questID"] = 25411,
+						["qg"] = 39933,	-- Tyrus Blackhorn
+						["coord"] = { 22.2, 44.9, 198 },
+						["sourceQuest"] = 25408,	-- Seeds of Their Demise
+					},
+					{	-- A Plea From Beyond
+						["questID"] = 25665,
+						["qg"] = 41068,	-- Mysterious Winged Spirit
+						["coord"] = { 40.3, 44.3, 198 },
+						["sourceQuest"] = 25663,	-- An Offering For Aviana
+					},
+					{	-- A Prayer and a Wing
+						["questID"] = 25664,
+						["qg"] = 41005,	-- Choluna
+						["coord"] = { 44.4, 46.2, 198 },
+						["sourceQuest"] = 25665,	-- A Plea From Beyond
+						["groups"] = {
+							i(57341),	-- Shoulderpads of Dead Memories
+							i(57340),	-- Griefsoul Wristguards
+							i(57339),	-- Heartcrush Greathammer
+						},
+					},
+					{	-- A Prisoner of Interest
+						["questID"] = 25324,
+						["qg"] = 38917,	-- Alysra
+						["coord"] = { 48.4, 18.9, 198 },
+						["sourceQuest"] = 25424,	-- Return to Alysra
+					},
+					{	-- A Ritual of Flame
+						["questID"] = 29195,
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["lvl"] = 85,
+						["coord"] = { 27.1, 54.4, 198 },
 						["sourceQuest"] = 29145,	-- Opening the Door
-						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-						["coord"] = { 27.1, 54.4 },
-						["lvl"] = 85,
 					},
-					qg(41381, q(25372, { -- Aessina's Miracle
-						i(57267),
-						i(57266),
-						i(57265),
-						i(57264),
-					})),
---[[					
-					qg(39413, q(25499)),	-- Agility Training: Run Like Hell!
-					qg(52669, q(29284)),	-- Aid of the Ancients
-					qg(40341, q(25520)),	-- An Ancient Awakens
---]]					
-					qg(41005, q(25807, { -- An Ancient Reborn
-						i(57336),
-						i(57337),
-					})),
---[[					
-					qg(41005, q(25663)),	-- An Offering for Aviana
-]]--
-					{
-						["questID"] = 44877,	-- Attack on the Roost
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
+					{	-- Aessina's Miracle
+						["questID"] = 25372,
+						["qg"] = 41381,	-- Nordu
+						["coord"] = { 27.3, 55.5, 198 },
+						["sourceQuest"] = 25842,	-- Firefight
+						["groups"] = {
+							i(57267),	-- Rebirth Spaulders
+							i(57266),	-- Gloves of Nurtured Truth
+							i(57265),	-- Treads of Restoration
+							i(57264),	-- Chestplate of Viridian Renewal
+						},
 					},
-					{
-						["questID"] = 44888,	-- Aviana's Grace
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuests"] = { 44877, 45532 },	-- Source Quest: Attack on the Roost / Mother's Orders
-						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
+					{	-- Agility Training: Run Like Hell!
+						["questID"] = 25499,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25509,	-- Physical Training: Forced Labor
 					},
---[[
-					qg(40289, q(27874)),	-- Aviana's Legacy (add'l QGs 46987 and 46998)
-					qg(52669, q(29125)),	-- Between the Trees
---]]					
-					qg(39933, q(25428, { -- Black Heart of Flame
-						i(57321),
-						i(57320),
-					})),
---[[					
-					qg(40341, q(25514)),	-- Breaking the Bonds
-					qg(41507, q(25899)),	-- Breakthrough
-					qg(40816, q(25552)),	-- Brood of Evil
-					qg(52669, q(29147)),	-- Call the Flock
---]]
-					{
-						["questID"] = 29199,	-- Calling for Reinforcements
-						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-						["coord"] = { 27.1, 62.7 },
-						["lvl"] = 85,
-					},
-					{
-						["questID"] = 29197,	-- Caught Unawares
-						["sourceQuest"] = 29196,	-- To the Sanctuary!
+					{	-- Aid of the Ancients
+						["questID"] = 29284,
 						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29283,	-- Calling the Ancients
 					},
-					qg(40341, q(25519, { -- Children of Tortolla
-						i(57280),
-						i(57279),
-						i(57278),
-						i(57277),
-					})),
---[[					
-					qg(40834, q(25599)),	-- Cindermaul, the Portal Master
-					qg(39432, qh(25277)),	-- Cleaning House
-					qg(39433, qa(25278)),	-- Cleaning House
-					qg(40289, q(25597)),	-- Commander Jarod Shadowsong
-					qg(106204, q(42045, {	-- Communing With Malorne (QG in Emerald Dreamway)
-						["classes"]= {11},
-					})),
---]]					
-					qg(40834, q(25577, { -- Crushing the Cores
-						i(57358),
-						i(57357),
-						i(57359),
-					})),
-					qg(40816, q(25553, { -- Death to the Broodmother
-						i(57302),
-						i(57301),
-						i(57300),
-					})),			
-					qg(41006, q(25761, { -- Disassembly
-						i(57314),
-						i(57313),
-						i(57312),
-						i(57315),
-					})),
-					qg(39927, q(25382, { -- Disrupting the Rituals
-						i(57330),
-						i(57329),
-					})),
---[[					
-					qg(39858, q(25491)),	-- Durable Seeds
---]]
-					{
-						["questID"] = 29122,	-- Echoes of Nemesis
-						["sourceQuest"] = 29101,	-- Punting Season
-						["qg"] = 52671,	-- Mylune
-						["coord"] = { 27.1, 61.9 },
+					{	-- An Ancient Awakens
+						["questID"] = 25520,
+						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuests"] = {
+							25514,	-- Breaking the Bonds
+							25519,	-- Children of Tortolla
+						},
+					},
+					{	-- An Ancient Reborn
+						["questID"] = 25807,
+						["qg"] = 41005,	-- Choluna
+						["coord"] = { 44.4, 46.2, 198 },
+						["sourceQuest"] = 25795,	-- Return to the Shrine
+						["groups"] = {
+							i(57336),	-- Skygrip Handguards
+							i(57337),	-- Heraldcall Censer
+							i(57335),	-- Signet of Fragrant Summoning
+						},
+					},
+					{	-- An Offering for Aviana
+						["questID"] = 25663,
+						["qg"] = 41005,	-- Choluna
+						["coord"] = { 44.4, 46.2, 198 },
+						["sourceQuests"] = {
+							27874,	-- Aviana's Legacy
+							25584,	-- The Return of the Ancients
+							25985,	-- Wings Over Mount Hyjal
+						},
+					},
+					{	-- Attack on the Roost
+						["questID"] = 44877,
+						["lvl"] = 110,
+						["classes"]= { 11 },	-- Druid
+						["sourceQuest"]	= 44869,	-- Talon Terror
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
+						},
+					},
+					{	-- Aviana's Grace
+						["questID"] = 44888,
+						["lvl"] = 110,
+						["classes"]= { 11 },	-- Druid
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
+						},
+						["sourceQuests"] = {
+							44877,	-- Attack on the Roost
+							45532,	-- Mother's Orders
+						},
+					},
+					{	-- Aviana's Legacy
+						["questID"] = 27874,
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.8, 198 },
+						["sourceQuest"] = 25611,	-- Return from the Firelands
+						["isBreadcrumb"] = true,
+					},
+					{	-- Between the Trees
+						["questID"] = 29125,
+						["qg"] = 52669,	-- Matoclaw
 						["isDaily"] = true,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					},
+					{	-- Black Heart of Flame
+						["questID"] = 25428,
+						["qg"] = 39933,	-- Tyrus Blackhorn
+						["coord"] = { 22.2, 44.9, 198 },
+						["sourceQuest"] = 25412,	-- The Name Never Spoken
+						["groups"] = {
+							i(57321),	-- Charbite Hood
+							i(57320),	-- Embercrusher Grips
+							i(57322),	-- Signet of Nascent Fire
+						},
+					},
+					{	-- Breaking the Bonds
+						["questID"] = 25514,
+						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuest"] = 25510,	-- Tortolla Speaks
+					},
+					{	-- Breakthrough
+						["questID"] = 25899,
+						["qg"] = 41507,	-- Niden
+						["coord"] = { 42.2, 60.5, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					},
+					{	-- Brood of Evil
+						["questID"] = 25552,
+						["qg"] = 40816,	-- Aronus
+						["coord"] = { 72.2, 73.9, 198 },
+						["sourceQuest"] = 25644,	-- The Twilight Egg
+					},
+					{	-- Call the Flock
+						["questID"] = 29147,
+						["qg"] = 52669,	-- Matoclaw
+						["isDaily"] = true,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					},
+					{	-- Calling for Reinforcements
+						["questID"] = 29199,
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 						["lvl"] = 85,
+						["coord"] = { 27.1, 62.7, 198 },
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					},
+					{	-- Caught Unawares
+						["questID"] = 29197,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29196,	-- To the Sanctuary!
+					},
+					{	-- Children of Tortolla
+						["questID"] = 25519,
+						["qg"] = 40341,	-- Tortolla
+						["coord"] = { 24.6, 55.6, 198 },
+						["sourceQuest"] = 25510,	-- Tortolla Speaks
+						["groups"] = {
+							i(57280),	-- Kilt of Reborn Future
+							i(57279),	-- Boots of Infinite Possibility
+							i(57278),	-- Shadow-Cleanser Bracers
+							i(57277),	-- Crown of Chelonian Freedom
+						},
+					},
+					{	-- Cindermaul, the Portal Master
+						["questID"] = 25599,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["sourceQuests"] = {
+							25577,	-- Crushing the Cores
+							25575,	-- Forged of Shadow and Flame
+							25576,	-- Rage of the Wolf Ancient
+						},
+					},
+					{	-- Cleaning House
+						["questID"] = 25277,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 28.4, 29.8, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25279,	-- The Shrine Reclaimed
+					},
+					{	-- Cleaning House
+						["questID"] = 25278,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Codex of Shadows
+						["objectID"] = 203207,
+						["questID"] = 25763,	-- The Codex of Shadows
+						["coord"] = { 31.2, 76.9, 198 },
+						["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					},
+					{	-- Commander Jarod Shadowsong
+						["questID"] = 25597,
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.8, 198 },
+						["sourceQuest"] = 25653,	-- The Ancients are With Us
+					},
+					{	-- Crushing the Cores
+						["questID"] = 25577,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["sourceQuest"] = 25617,	-- Into the Maw!
+						["groups"] = {
+							i(57358),	-- Coreforged Girdle
+							i(57357),	-- Anvilcrush Bracers
+							i(57359),	-- Drape of Smoldering Dreams
+						},
+					},
+					{	-- Death to the Broodmother
+						["questID"] = 25553,
+						["qg"] = 40816,	-- Aronus
+						["coord"] = { 72.2, 73.9, 198 },
+						["sourceQuest"] = 25552,	-- Brood of Evil
+						["groups"] = {
+							i(57302),	-- Maggotproof Gloves
+							i(57301),	-- Matriarch-Hide Wristguards
+							i(57300),	-- Greaves of Violent Revenge
+						},
+					},			
+					{	-- Disassembly
+						["questID"] = 25761,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuest"] = 25758,	-- A Gap In Their Armor
+						["groups"] = {
+							i(57314),	-- Nimble-Knife Chestguard
+							i(57313),	-- Bladerip Girdle
+							i(57312),	-- Discarded Juggernaut Plating
+							i(57315),	-- Claw of Corroded Hope
+						},
+					},
+					{	-- Disrupting the Rituals
+						["questID"] = 25382,
+						["qg"] = 39927,	-- Laina Nightsky
+						["coord"] = { 19.0, 40.9, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+						["groups"] = {
+							i(57331),	-- Ring of the Quenched Inferno
+							i(57330),	-- Lordbane Scepter
+							i(57329),	-- Firestorm Hackblade
+						},
+					},
+					{	-- Durable Seeds
+						["questID"] = 25491,
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25490,	-- Smashing Through Ashes
+					},
+					{	-- Echoes of Nemesis
+						["questID"] = 29122,
+						["qg"] = 52671,	-- Mylune
+						["lvl"] = 85,
+						["coord"] = { 27.1, 61.9, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29101,	-- Punting Season
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 							n(52383, {	-- Nemesis <Echo of the Usurper>
-								{
-									["achievementID"] = 5869,	-- Infernal Ambassadors
+								{	-- Infernal Ambassadors
+									["achievementID"] = 5869,
 									["criteriaID"] = 5,	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
 								},
 							}),
 						},
 					},
-					qg(41006, q(25764, { -- Egg Hunt
-						i(57319),
-						i(57318),
-						i(57317),
-					})),
-					qg(40578, q(25560, { -- Egg Wave
-						i(65662), -- Gold Mini Jouster
-						i(65661), -- Blue Mini Jouster
-					})),
-					q(29331, { -- Elemental Bonds: The Vow (QG unknown, possibly 54168)
-						i(71268),
-						i(71267),
-						i(71270),
-						i(71269),
-					}),
-					o(202712, {	-- The Twilight Apocrypha
-						q(25303, { -- Elementary!
-							i(57382),
-							i(57381),
-							i(57380),
-						}),
-						q(25312),	-- Return to Duskwhisper
-					}),
---[[					
-					qg(39869, q(25430)),	-- Emerald Allies
-					qg(39427, q(25233)),	-- End of the Supply Line
-					qg(40997, q(25740)),	-- Fact-Finding Mission
-					qg(39927, q(25381)),	-- Fighting Fire With ... Anything
---]]					
-					qg(41498, q(25923, { -- Finish Nemesis
-						i(57263),
-						i(57262),
-						i(57261),
-						i(57260),
-					})),
---[[					
-					qg(40331, q(25492)),	-- Firebreak
-					qg(41381, q(25842)),	-- Firefight
-					qg(39857, q(25323)),	-- Flamebreaker
---]]					
-					qg(40278, q(25574, { -- Flames from Above
-						i(57296),
-						i(57295),
-						i(57294),
-					})),
---[[					
-					qg(40578, q(25523)),	-- Flight in the Firelands
-					qg(50068, q(29182)),	-- Flight of the Storm Crows (add'l QG 52669)
-					qg(40834, q(25575)),	-- Forged of Shadow and Flame
---]]					
-					qg(40834, q(25600, { -- Foremaster Pyrendius
-						i(57270),
-						i(57269),
-						i(57268),
-					})),
-					o(202706, {	-- Twilight Cauldron
-						q(25298, { -- Free Your Mind, the Rest Follows
-							i(57364),
-							i(57363),
-							i(57365),
-						}),
-					}),
-					qg(39858, q(25493, { -- Fresh Bait
-						i(57352),
-						i(57351),
-					})),
---[[					
-					qg(39434, q(25297)),	-- From the Mouth of Madness
-					qg(39640, q(25328)),	-- Gar'gol's Gotta Go
-					o(202701, {	-- Outhouse Hideout
-						q(25296),	-- Gather the Intelligence
-						q(25601),	-- Head of the Class
-						q(25308),	-- Seeds of Discord
-						q(25314),	-- Speech Writing for Dummies
-					}),
---]]					
-					qg(39640, q(25332, { -- Get Me Outta Here!
-						i(57362),
-						i(57361),
-						i(57360),
-					})),
---[[					
-					qg(39433, qa(25271)),	-- Goldrinn's Ferocity
-					qg(39933, q(29066)),	-- Good News... and Bad News (breadcrumb quest after Black Heart of Flame - put QG as NPC that ends that quest)
-					qg(39413, q(25315)),	-- Graduation Speech
-					qg(39406, q(25496)),	-- Grudge Match
---]]
-					{
-						["questID"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
+					{	-- Egg Hunt
+						["questID"] = 25764,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuests"] = {
+							25761,	-- Disassembly
+							25746,	-- Sethria's Brood
+							25763,	-- The Codex of Shadows
+						},
+						["groups"] = {
+							i(57319),	-- Lightheart Sandals
+							i(57318),	-- Tunic of Soaring Safety
+							i(57317),	-- Cloakbreaker Helm
+							i(57316),	-- Egg-Lift Talisman
+						},
+					},
+					{	-- Egg Wave
+						["questID"] = 25560,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 37.2, 56.1, 198 },
+						["sourceQuest"] = 25544,	-- Wave Two
+						["groups"] = {
+							ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
+							i(65662),	-- Gold Mini Jouster
+							i(65661),	-- Blue Mini Jouster
+						},
+					},
+					{	-- Elemental Bonds: The Vow -- originally offered in the molten front map but is this also offered in mount hyjal?
+						["questID"] = 29331,
+						["groups"] = {
+							i(71268),	-- Mantle of Doubt
+							i(71267),	-- Mantle of Desire
+							i(71270),	-- Mantle of Patience
+							i(71269),	-- Mantle of Fury
+						},
+					},
+					{	-- Emerald Allies
+						["questID"] = 25430,
+						["qg"] = 39869,	-- Windspeaker Tamila
+						["coord"] = { 47.6, 35.5, 198 },
+						["sourceQuest"] = 25464,	-- The Return of Baron Geddon
+					},
+					{	-- End of the Supply Line
+						["questID"] = 25233,
+						["qg"] = 39427,	-- Jadi Falaryn
+						["coord"] = { 35.7, 19.6, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- Eye of Twilight
+						["objectID"] = 202697,
+						["coord"] = { 27.1, 35.2, 198 },
+						["groups"] = {
+							{	-- Mastering Puppets
+								["questID"] = 25301,
+								["sourceQuest"] = 25300,	-- The Eye of Twilight
+							},
+						},
+					},
+					{	-- Fact-Finding Mission
+						["questID"] = 25740,
+						["qg"] = 40997,	-- Skylord Omnuron
+						["coord"] = { 43.5, 45.8, 198 },
+						["sourceQuests"] = {
+							25731,	-- A Bird In Hand
+							25664,	-- A Prayer and a Wing
+						},
+					},
+					{	-- Fighting Fire With ... Anything
+						["questID"] = 25381,
+						["qg"] = 39927,	-- Laina Nightsky
+						["coord"] = { 19.0, 40.9, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- Finish Nemesis
+						["questID"] = 25923,
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuests"] = {
+							25915,	-- The Strength of Tortolla
+							25910,	-- The Time for Mercy has Passed
+						},
+						["groups"] = {
+							i(57263),	-- Liberating Crown
+							i(57262),	-- Leggings of the Vanquished Usurper
+							i(57261),	-- Tortolla's Discarded Scales
+							i(57260),	-- Nemesis Crushers
+						},
+					},
+					{	-- Firebreak
+						["questID"] = 25492,
+						["qg"] = 40331,	-- Rayne Feathersong
+						["coord"] = { 27.0, 63.0, 198 },
+						["sourceQuest"] = 25490,	-- Smashing Through Ashes
+					},
+					{	-- Firefight
+						["questID"] = 25842,
+						["qg"] = 41381,	-- Nordu
+						["coord"] = { 27.3, 55.5, 198 },
+						["sourceQuest"] = 25830,	-- The Last Living Lorekeeper
+					},
+					{	-- Flamebreaker
+						["questID"] = 25323,
+						["qg"] = 39857,	-- Malfurion Stormrage
+						["coord"] = { 47.7, 35.5, 198 },
+						["sourceQuests"] = {
+							25472,	-- The Flameseer's Staff
+							25319,	-- War on the Twilight's Hammer
+						},
+					},
+					{	-- Flames from Above
+						["questID"] = 25574,
+						["qg"] = 40278,	-- Tholo Whitehoof
+						["coord"] = { 64.0, 22.4, 198 },
+						["sourceQuest"] = 25370,	-- Inciting the Elements
+						["groups"] = {
+							i(57296),	-- Girdle of Nullified Infiltration
+							i(57295),	-- Hornblower's Legguards
+							i(57294),	-- Poisonfire Greatsword
+						},
+					},
+					{	-- Flight in the Firelands
+						["questID"] = 25523,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 44.1, 45.9, 198 },
+						["sourceQuest"] = 25810,	-- The Hatchery Must Burn
+					},
+					{	-- Flight of the Storm Crows
+						["questID"] = 29182,
+						["sourceQuest"] = 29181,	-- Druids of the Talon
+						["coords"] = {
+							{ 27.1, 62.5, 198 },
+							{ 42.6, 45.6, 198 },
+						},
+						["qgs"] = {
+							50068,	-- Isara Riverstride
+							52669,	-- Matoclaw
+						},
+					},
+					{	-- Forged of Shadow and Flame
+						["questID"] = 25575,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["sourceQuest"] = 25617,	-- Into the Maw!
+					},
+					{	-- Foremaster Pyrendius
+						["questID"] = 25600,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["sourceQuest"] = 25599,	-- Cindermaul, the Portal Master
+						["groups"] = {
+							i(57270),	-- Wolfking Spaulders
+							i(57269),	-- Helm of Terrorizing Fangs
+							i(57268),	-- Forgemaster's Shattered Shackle
+						},
+					},
+					{	-- Fresh Bait
+						["questID"] = 25493,
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25490,	-- Smashing Through Ashes
+						["groups"] = {
+							i(57352),	-- Gore-Stained Shoulderpads
+							i(57351),	-- Gutrip Gauntlets
+							i(57353),	-- Calcified Gizzard
+						},
+					},
+					{	-- From the Mouth of Madness
+						["questID"] = 25297,
+						["qg"] = 39434,	-- Rio Duran
+						["coord"] = { 28.1, 29.8, 198 },
+						["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					},
+					{	-- Gar'gol's Gotta Go
+						["questID"] = 25328,
+						["qg"] = 39640,	-- Kristoff Manheim
+						["coord"] = { 27.2, 40.7, 198 },
+						["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					},
+					{	-- Get Me Outta Here!
+						["questID"] = 25332,
+						["qg"] = 39640,	-- Kristoff Manheim
+						["coord"] = { 27.2, 40.7, 198 },
+						["sourceQuest"] = 25328,	-- Gar'gol's Gotta Go
+						["groups"] = {
+							i(57362),	-- Hood of Misplaced Dreams
+							i(57361),	-- Neglected Footpads
+							i(57360),	-- Shoulderguards of Empty Memory
+						},
+					},
+					{	-- Goldrinn's Ferocity
+						["questID"] = 25271,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Good News... and Bad News
+						["questID"] = 29066,
+						["coord"] = { 22.2, 44.9, 198 },
+						["sourceQuest"] = 25428,	-- Black Heart of Flame
+					},
+					{	-- Graduation Speech
+						["questID"] = 25315,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 59.5, 59.0, 198 },
+						["sourceQuest"] = 25601,	-- Head of the Class
+					},
+					{	-- Grudge Match
+						["questID"] = 25496,
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25494,	-- A Champion's Collar
+					},
+					{	-- Guardians of Hyjal: Firelands Invasion!
+						["questID"] = 29389,
 						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-						["coord"] = { 19.5, 37.9 },
+						["lvl"] = 85,
+						["coord"] = { 19.5, 37.8, 198 },
+						["sourceQuest"] = 25372,	-- Aessina's Miracle
 						["isBreadcrumb"] = true,
-						["lvl"] = 85,
 					},
---[[
-					qg(39429, q(25255)),	-- Harrying the Hunters
-					qg(39858, q(25507)),	-- Hell's Shells
-					qg(39432, qh(25270)),	-- Howling Mad
---]]
-					
-					qg(41497, q(25901, { -- Hyjal Recycling Program
-						i(57347),
-						i(57345),
-					})),
---[[					
-					qg(39928, q(25404)),	-- If You're Not Against Us...
-					qg(39442, q(25224)),	-- In Bloom
---]]					
-					qg(39427, q(25234, { -- In the Rear With the Gear
-						i(57385),
-						i(57384),
-					})),
---[[					
-					qg(40278, q(25370)),	-- Inciting the Elements
-					qg(54312, q(29335)),	-- Into Slashing Winds
-					qg(39432, qh(25624)),	-- Into the Maw!
-					qg(39622, qh(25617)),	-- Into the Maw!
-					qg(39433, qa(25623)),	-- Into the Maw!
-					qg(39627, qa(25618)),	-- Into the Maw!
-					qg(39927, q(25940)),	-- Last Stand at Whistling Grove (add'l QG 39928)
---]]
-					{
-						["questID"] = 29200,	-- Leyara
-						["sourceQuest"] = 29199,	-- Calling for Reinforcements
+					{	-- Harrying the Hunters
+						["questID"] = 25255,
+						["qg"] = 39429,	-- Oomla Whitehorn
+						["coord"] = { 35.6, 19.4, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- Hell's Shells
+						["questID"] = 25507,
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25493,	-- Fresh Bait
+					},
+					{	-- Howling Mad
+						["questID"] = 25270,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 30.1, 31.7, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25269,	-- The Voice of Lo'Gosh
+					},
+					{	-- Hyjal Recycling Program
+						["questID"] = 25901,
+						["qg"] = 41497,	-- Logram
+						["coord"] = { 56.8, 56.0, 198 },
+						["sourceQuest"] = 25904,	-- The Hammer and the Key -- verify
+						["groups"] = {
+							i(57347),	-- Bloodbolt Crossbow
+							i(57345),	-- Razorproof Greaves
+							i(57346),	-- Mindfletcher Talisman
+						},
+					},
+					{	-- If You're Not Against Us...
+						["questID"] = 25404,
+						["qg"] = 39928,	-- Matoclaw
+						["coord"] = { 19.0, 36.9, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- In Bloom
+						["questID"] = 25224,
+						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
+					},
+					{	-- In the Rear With the Gear
+						["questID"] = 25234,
+						["qg"] = 39427,	-- Jadi Falaryn
+						["coord"] = { 35.7, 19.6, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+						["groups"] = {
+							i(57385),	-- Repurposed Twilight Girdle
+							i(57384),	-- Rust-Scrivened Leggings
+							i(57383),	-- Sharptooth Signet
+						},
+					},
+					{	-- Inciting the Elements
+						["questID"] = 25370,
+						["qg"] = 40278,	-- Tholo Whitehoof
+						["coord"] = { 64.0, 22.4, 198 },
+					},
+					{	-- Into Slashing Winds
+						["questID"] = 29335,
+						["qg"] = 54312,	-- Aggra
+						["coord"] = { 60.2, 30.1, 198 },
+						["sourceQuest"] = 29326,	-- The Nordrassil Summit
+					},
+					{	-- Into the Maw!
+						["questID"] = 25624,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 28.4, 29.8, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25355,	-- Lightning in a Bottle
+					},
+					{	-- Into the Maw!
+						["questID"] = 25617,
+						["qg"] = 39622,	-- Spirit of Lo'Gosh
+						["coord"] = { 28.6, 39.2, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25355,	-- Lightning in a Bottle
+					},
+					{	-- Into the Maw!
+						["questID"] = 25623,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Into the Maw!
+						["questID"] = 25618,
+						["qg"] = 39627,	-- Spirit of Goldrinn
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Last Stand at Whistling Grove
+						["questID"] = 25940,
+						["qg"] = 39927,	-- Laina Nightsky
+						["coord"] = { 19.0, 40.9, 198 },
+						["sourceQuest"] = 25382,	-- Disrupting the Rituals
+						["isBreadcrumb"] = true,
+					},
+					{	-- Leyara
+						["questID"] = 29200,
 						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-						["coord"] = { 27.1, 62.7 },
 						["lvl"] = 85,
+						["coord"] = { 27.1, 62.7, 198 },
+						["sourceQuest"] = 29199,	-- Calling for Reinforcements
 					},
---[[
-					qg(39432, qh(25355)),	-- Lightning in a Bottle
-					qg(39433, qa(25353)),	-- Lightning in a Bottle
---]]
-					{
-						["questID"] = 44921,	-- Lone Wolf
-						["qg"] = 115749,	-- Quest Givers: Aviana <Ancient>
-						["sourceQuest"]	= 44888,	-- Source Quest: Aviana's Grace
-						["classes"]= { 11 },	-- Druid
+					{	-- Lightning in a Bottle
+						["questID"] = 25355,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 28.4, 29.8, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25277,	-- Cleaning House
+					},
+					{	-- Lightning in a Bottle
+						["questID"] = 25353,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Lone Wolf
+						["questID"] = 44921,
+						["qg"] = 115749,	-- Aviana
 						["lvl"] = 110,
-					},
---[[
-					qg(41507, q(25881)),	-- Lost Wardens
---]]					
-					qg(39433, qa(25273, { -- Lycanthoth the Corruptor
-						i(57379),
-						i(57378),
-					})),
-					qg(39432, qh(25272, { -- Lycanthoth the Corruptor
-						i(57376),
-						i(57375),
-					})),
---[[					
-					qg(40772, q(25550)),	-- Magma Monarch
-					o(202697, {	-- Eye of Twilight
-						q(25301),	-- Mastering Puppets
-					}),
-					qg(39413, q(25299)),	-- Mental Training: Speaking the Truth to Power
---]]					
-					qg(40772, q(25548, { -- Might of the Firelord
-						i(57289),
-						i(57288),
-						i(57287),
-					})),
-					{
-						["questID"] = 45532,	-- Mother's Orders
-						["qgs"] = { 115802, 119982 },	-- Quest Givers: Thisalee Crow / Druid of the Talon
-						["sourceQuest"]	= 44869,	-- Source Quest: Talon Terror
 						["classes"]= { 11 },	-- Druid
-						["lvl"] = 110,
+						["sourceQuest"]	= 44888,	-- Aviana's Grace
 					},
-					{
-						["questID"] = 29162,	-- Nature's Blessing
-						["sourceQuest"] = 29161,	-- Those Bears Up There
+					{	-- Lost Wardens
+						["questID"] = 25881,
+						["qg"] = 41507,	-- Niden
+						["coord"] = { 42.2, 60.5, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					},
+					{	-- Lycanthoth the Corruptor
+						["questID"] = 25273,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(57379),	-- Clutches of the Worgen Spirit
+							i(57378),	-- Primal Force Girdle
+							i(57377),	-- Goldrinn's Locket
+						},
+					},
+					{	-- Lycanthoth the Corruptor
+						["questID"] = 25272,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 30.1, 31.7, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25270,	-- Howling Mad
+						["groups"] = {
+							i(57376),	-- Handguards of Restrained Brutality
+							i(57375),	-- Wrap of Furious Pride
+							i(57374),	-- Choker of Lo'Gosh
+						},
+					},
+					{	-- Magma Monarch
+						["questID"] = 25550,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25549,	-- The Sanctum of the Prophets
+					},
+					{	-- Mental Training: Speaking the Truth to Power
+						["questID"] = 25299,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25499,	-- Agility Training: Run Like Hell!
+					},
+					{	-- Might of the Firelord
+						["questID"] = 25548,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25608,	-- Slash and Burn
+						["groups"] = {
+							i(57289),	-- Flamesear Leggings
+							i(57288),	-- Subjugator's Shoulderguards
+							i(57287),	-- Gauntlets of Guerilla Fury
+						},
+					},
+					{	-- Mother's Orders
+						["questID"] = 45532,
+						["lvl"] = 110,
+						["classes"]= { 11 },	-- Druid
+						["sourceQuest"]	= 44869,	-- Talon Terror
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
+						},
+					},
+					{	-- Nature's Blessing
+						["questID"] = 29162,
 						["qg"] = 52671,	-- Mylune
-						["coord"] = { 27.1, 62.0 },
-						["isDaily"] = true,
 						["lvl"] = 85,
+						["coord"] = { 27.1, 62.0, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29161,	-- Those Bears Up There
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 							n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
-								{
-									["achievementID"] = 5869,	-- Infernal Ambassadors
+								{	-- Infernal Ambassadors
+									["achievementID"] = 5869,
 									["criteriaID"] = 1,	-- Slay Pyrachnis without using the Emerald of Aessina. slain
 								},
 							}),
 						},
 					},
---[[
-					qg(52669, q(29280)),	-- Nourishing Waters
---]]					
-					qg(39930, q(25392, { -- Oh, Deer!
-						i(57327),
-						i(57326),
-						i(57328),
-					})),
-					{
-						["questID"] = 29145,	-- Opening the Door
+					{	-- Nourishing Waters
+						["questID"] = 29280,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29279,	-- Filling the Moonwell
+					},
+					{	-- Oh, Deer!
+						["questID"] = 25392,
+						["qg"] = 39930,	-- Mylune
+						["coord"] = { 19.2, 37.8, 198 },
+						["sourceQuest"] = 25385,	-- Save the Wee Animals
+						["groups"] = {
+							i(57327),	-- Deer-Savior Leggings
+							i(57326),	-- Salt-Lick Chestguard
+							i(57328),	-- Cloak of Cheerful Flowers
+						},
+					},
+					{	-- Opening the Door
+						["questID"] = 29145,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
 						["sourceQuest"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
-						["coord"] = { 27.1, 62.5 },
-						["qg"] = 52669,	-- Matoclaw
-						["lvl"] = 85,
 					},
---[[
-					qg(52669, q(29164)),	-- Perfecting Your Howl
-					qg(39413, q(25509)),	-- Physical Training: Forced Labor
---]]					
-					qg(40331, q(25502, { -- Prepping the Soil
-						i(57349),
-						i(57348),
-						i(57350),
-					})),
---[[					
-					qg(41492, q(25886)),	-- Pressing the Advantage
-					qg(40289, q(25317)),	-- Protect the World Tree
---]]
-					{
-						["questID"] = 29101,	-- Punting Season
+					{	-- Outhouse Hideout
+						["objectID"] = 202701,
+						["coord"] = { 88.2, 58.5, 198 },
+						["groups"] = {
+							{	-- Gather the Intelligence
+								["questID"] = 25296,
+								["sourceQuest"] = 25291,	-- Twilight Training
+							},
+							{	-- Head of the Class
+								["questID"] = 25601,
+								["sourceQuest"] = 25314,	-- Speech Writing for Dummies
+							},
+							{	-- Seeds of Discord
+								["questID"] = 25308,
+								["sourceQuest"] = 25296,	-- Gather the Intelligence
+							},
+							{	-- Speech Writing for Dummies
+								["questID"] = 25314,
+								["sourceQuests"] = {
+									25310,	-- The Greater of Two Evils
+									25311,	-- Twilight Territory
+								},
+							},
+						},
+					},
+					{	-- Perfecting Your Howl
+						["questID"] = 29164,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					},
+					{	-- Physical Training: Forced Labor
+						["questID"] = 25509,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25291,	-- Twilight Training
+					},
+					{	-- Prepping the Soil
+						["questID"] = 25502,
+						["qg"] = 40331,	-- Rayne Feathersong
+						["coord"] = { 27.0, 63.0, 198 },
+						["sourceQuest"] = 25492,	-- Firebreak
+						["groups"] = {
+							i(57349),	-- Helm of the Mendicant
+							i(57348),	-- Flameward Cloak
+							i(57350),	-- Kindleprotector Staff
+						},
+					},
+					{	-- Pressing the Advantage
+						["questID"] = 25886,
+						["qg"] = 41492,	-- Captain Irontree
+						["coord"] = { 57.1, 55.9, 198 },
+						["sourceQuest"] = 25881,	-- Lost Wardens
+					},
+					{	-- Protect the World Tree
+						["questID"] = 25317,
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.8, 198 },
+					},
+					{	-- Punting Season
+						["questID"] = 29101,
 						["qg"] = 52671,	-- Mylune
-						["coord"] = { 27.1, 61.9 },
-						["isDaily"] = true,
 						["lvl"] = 85,
-						["groups"] = {
-							currency(416),	-- Mark of the World Tree
-						},
-					},
-					{
-						["questID"] = 29123,	-- Rage Against the Flames
+						["coord"] = { 27.1, 61.9, 198 },
+						["isDaily"] = true,
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["isDaily"] = true,
-						["lvl"] = 85,
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
-					{
-						["questID"] = 29127,	-- Rage Against the Flames
+					{	-- Pure Twilight Egg
+						["objectID"] = 207359,
+						["coord"] = { 59.1, 83.8, 198 },
+						["groups"] = {
+							{	-- The Twilight Egg
+								["questID"] = 25644,
+								["sourceQuest"] = 25608,	-- Slash and Burn
+							},
+						},
+					},
+					{	-- Rage Against the Flames
+						["questID"] = 29123,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["isDaily"] = true,
-						["lvl"] = 85,
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
-					{
-						["questID"] = 29149,	-- Rage Against the Flames
+					{	-- Rage Against the Flames
+						["questID"] = 29127,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["isDaily"] = true,
-						["lvl"] = 85,
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
-					{
-						["questID"] = 29163,	-- Rage Against the Flames
+					{	-- Rage Against the Flames
+						["questID"] = 29149,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
 						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["isDaily"] = true,
-						["lvl"] = 85,
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
---[[
-					qg(40837, q(25576)),	-- Rage of the Wolf Ancient
-					qg(52986, q(29248)),	-- Releasing the Pressure
-					qg(52986, q(29246)),	-- Relieving the Pain
-					qg(40834, qh(25612)),	-- Return from the Firelands
-					qg(40834, qa(25611)),	-- Return from the Firelands
-					qg(40096, q(25424)),	-- Return to Alysra
---]]					
-					qg(40578, q(25832, { -- Return to Aviana
-						i(57273),
-						i(57272),
-						i(57271),
-					})),
---[[					
-					qg(40178, q(25578)),	-- Return to Nordrassil
-					qg(41006, q(25795)),	-- Return to the Shrine
-					qg(39930, q(25385)),	-- Save the Wee Animals
-					qg(41006, q(25656)),	-- Scrambling for Eggs
-					qg(40773, q(25554)),	-- Secrets of the Flame
---]]					
-					qg(39933, q(25408, { -- Seeds of Their Demise
-						i(57324),
-						i(57323),
-					})),
---[[					
-					qg(41006, q(25746)),	-- Sethria's Brood
-					qg(41006, q(25776)),	-- Sethria's Demise
-					qg(39621, q(25274)),	-- Signed in Blood
-					qg(40772, q(25608)),	-- Slash and Burn
-					qg(39932, q(25490)),	-- Smashing Through Ashes
---]]					
-					qg(39413, q(25309, { -- Spiritual Training: Mercy is for the Weak
-						i(57308),
-						i(57307),
-						i(57306),
-					})),
---					qg(52669, q(29166)),	-- Supplies for the Other Side
-					qg(39433, qa(25352, { -- Sweeping the Shelf
-						i(57372),
-						i(57371),
-						i(57370),
-						i(57373),
-					})),
-					qg(39432, qh(25354, { -- Sweeping the Shelf
-						i(57368),
-						i(57367),
-						i(57366),
-						i(57369),
-					})),
-				--[[
-					qg(106299, q(44869)),	-- Talon Terror (QG in The Dreamgrove)
-					qg(41504, q(25653)),	-- The Ancients are With Us
-					qg(40772, qa(27398)),	-- The Battle Is Won, The War Goes On
-					qg(40772, qh(27399)),	-- The Battle Is Won, The War Goes On
---]]					
-					qg(39932, q(25462, { -- The Bears Up There
-						i(57356),
-						i(57355),
-						i(57354),
-					})),
---[[					
-					qg(52669, q(29165)),	-- The Call of the Pack
-					qg(38917, q(25320)),	-- The Captured Scout
-					o(203207, {	-- Codex of Shadows
-						q(25763),	-- The Codex of Shadows
-					}),
---]]					
-					qg(39925, q(25460, { -- The Earth Rises
-						i(57283),
-						i(57282),
-						i(57281),
-					})),
---[[					
-					qg(39435, q(25300)),	-- The Eye of Twilight
-					qg(40289, q(29437)),	-- The Fallen Guardian (add'l QG 46998 and 52793)
---]]
-					{
-						["questID"] = 29202,	-- The Fate of Runetotem
+					{	-- Rage Against the Flames
+						["questID"] = 29163,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["groups"] = {
+							currency(416),	-- Mark of the World Tree
+						},
+					},
+					{	-- Rage of the Wolf Ancient
+						["questID"] = 25576,
+						["qg"] = 40837,	-- Yargra Blackscar
+						["coord"] = { 26.3, 41.9, 198 },
+						["sourceQuest"] = 25617,	-- Into the Maw!
+					},
+					{	-- Releasing the Pressure -- todo: unknown source quest
+						["questID"] = 29248,
+						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
+						["isDaily"] = true,
+					},
+					{	-- Relieving the Pain -- todo: unknown source quest
+						["questID"] = 29246,
+						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
+						["isDaily"] = true,
+					},
+					{	-- Return from the Firelands
+						["questID"] = 25612,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
+					},
+					{	-- Return from the Firelands
+						["questID"] = 25611,
+						["qg"] = 40834,	-- Jordan Olafson
+						["coord"] = { 26.2, 41.9, 198 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
+					},
+					{	-- Return to Alysra
+						["questID"] = 25424,
+						["qg"] = 40096,	-- Scout Larandia
+						["coord"] = { 44.4, 18.9, 198 },
+						["sourceQuest"] = 25321,	-- Twilight Captivity
+					},
+					{	-- Return to Aviana
+						["questID"] = 25832,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 37.2, 56.1, 198 },
+						["sourceQuest"] = 25560,	-- Egg Wave
+						["groups"] = {
+							i(57273),	-- Blinkered Hood
+							i(57272),	-- Sky-Knight Handguards
+							i(57271),	-- Silver Spur Boots
+						},
+					},
+					{	-- Return to Nordrassil
+						["questID"] = 25578,
+						["qg"] = 40178,	-- Alysra
+						["coord"] = { 52.1, 17.4, 198 },
+						["sourceQuest"] = 25325,	-- Through the Dream
+					},
+					{	-- Return to the Shrine
+						["questID"] = 25795,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuest"] = 25776,	-- Sethria's Demise
+					},
+					{	-- Save the Wee Animals
+						["questID"] = 25385,
+						["qg"] = 39930,	-- Mylune
+						["coord"] = { 19.2, 37.8, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- Scrambling for Eggs
+						["questID"] = 25656,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 42.1, 45.4, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- Secrets of the Flame
+						["questID"] = 25554,
+						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuest"] = 25608,	-- Slash and Burn
+					},
+					{	-- Seeds of Their Demise
+						["questID"] = 25408,
+						["qg"] = 39933,	-- Tyrus Blackhorn
+						["coord"] = { 22.2, 44.9, 198 },
+						["sourceQuest"] = 25404,	-- If You're Not Against Us...
+						["groups"] = {
+							i(57325),	-- Bileberry Smelling Salts
+							i(57324),	-- Seedfilter Deflector
+							i(57323),	-- Deathseed Crushers
+						},
+					},
+					{	-- Sethria's Brood
+						["questID"] = 25746,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					},
+					{	-- Sethria's Demise
+						["questID"] = 25776,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 32.7, 70.7, 198 },
+						["sourceQuest"] = 25764,	-- Egg Hunt
+					},
+					{	-- Signed in Blood
+						["questID"] = 25274,
+						["qg"] = 39621,	-- Elementalist Ortell
+						["coord"] = { 71.9, 58.0, 198 },
+						["sourceQuest"] = 25597,	-- Commander Jarod Shadowsong
+					},
+					{	-- Slash and Burn
+						["questID"] = 25608,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.2, 74.7, 198 },
+						["sourceQuest"] = 25531,	-- Twilight Riot
+					},
+					{	-- Smashing Through Ashes
+						["questID"] = 25490,
+						["qg"] = 39932,	-- Keeper Taldros
+						["coord"] = { 13.6, 32.7, 198 },
+						["sourceQuest"] = 25462,	-- The Bears Up There
+					},
+					{	-- Spiritual Training: Mercy is for the Weak
+						["questID"] = 25309,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuest"] = 25299,	-- Mental Training: Speaking the Truth to Power
+						["groups"] = {
+							i(57308),	-- Supplicant's Discarded Bracer
+							i(57307),	-- Belt of Swift Failure
+							i(57306),	-- Chestguard of Rapid Promotion
+						},
+					},
+					{	-- Supplies for the Other Side
+						["questID"] = 29166,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29203,	-- Into the Depths
+					},
+					{	-- Sweeping the Shelf
+						["questID"] = 25352,
+						["qg"] = 39433,	-- Ian Duran
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(57372),	-- Bracers of the Forlorn Wolf
+							i(57371),	-- Wolfcall Stompers
+							i(57370),	-- Belt of Binding Purification
+							i(57373),	-- Rage of Lo'Gosh
+						},
+					},
+					{	-- Sweeping the Shelf
+						["questID"] = 25354,
+						["qg"] = 39432,	-- Takrik Ragehowl
+						["coord"] = { 28.4, 29.8, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25277,	-- Cleaning House
+						["groups"] = {
+							i(57368),	-- Wolfcaller Bracers
+							i(57367),	-- Treads of the Dreamwolf
+							i(57366),	-- Girdle of the Ancient Wolf
+							i(57369),	-- Goldrinn's Purifier
+						},
+					},
+					{	-- The Ancients are With Us
+						["questID"] = 25653,
+						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.7, 198 },
+						["sourceQuest"] = 25928,	-- Tortolla's Triumph
+					},
+					{	-- The Battle Is Won, The War Goes On
+						["questID"] = 27398,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 71.9, 74.0, 198 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25551,	-- The Firelord
+					},
+					{	-- The Battle Is Won, The War Goes On
+						["questID"] = 27399,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 71.9, 74.0, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25551,	-- The Firelord
+					},
+					{	-- The Bears Up There
+						["questID"] = 25462,
+						["qg"] = 39932,	-- Keeper Taldros
+						["coord"] = { 13.6, 32.7, 198 },
+						["sourceQuest"] = 25940,	-- Last Stand at Whistling Grove
+						["groups"] = {
+							i(57356),	-- Stickyfoot Sandals
+							i(57355),	-- Treegrip Pants
+							i(57354),	-- Wildlife Defender
+						},
+					},
+					{	-- The Call of the Pack
+						["questID"] = 29165,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29164,	-- Perfecting Your Howl
+					},
+					{	-- The Captured Scout
+						["questID"] = 25320,
+						["qg"] = 38917,	-- Alysra
+						["coord"] = { 48.4, 18.9, 198 },
+						["sourceQuest"] = 25430,	-- Emerald Allies
+					},
+					{	-- The Earth Rises
+						["questID"] = 25460,
+						["qg"] = 39925,	-- Anren Shadowseeker
+						["coord"] = { 63.9, 22.6, 198 },
+						["groups"] = {
+							i(57283),	-- Rockbreaker Robes
+							i(57282),	-- Corecrusher Gloves
+							i(57281),	-- Scalded Rockscale Shoulderpads
+						},
+					},
+					{	-- The Eye of Twilight
+						["questID"] = 25300,
+						["qg"] = 39435,	-- Royce Duskwhisper
+						["coord"] = { 28.6, 30.2, 198 },
+						["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					},
+					{	-- The Fallen Guardian
+						["questID"] = 29437,
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.9, 198 },
+						["sourceQuest"] = 29326,	-- The Nordrassil Summit -- verify
+					},
+					{	-- The Fate of Runetotem
+						["questID"] = 29202,
+						["qg"] = 52669,	-- Matoclaw
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
 						["sourceQuest"] = 29201,	-- Through the Gates of Hell
-						["qg"] = 52669,	-- Matoclaw
-						["coord"] = { 27.1, 62.5 },
-						["lvl"] = 85,
 					},
-					qg(40773, q(25551, { -- The Firelord
-						i(57274),
-					})),
---[[					
-					qg(39434, q(25630)),	-- The Fires of Mount Hyjal
-					qg(39869, q(25472)),	-- The Flameseer's Staff
---]]
-					qg(40773, q(25555, { -- The Gatekeeper
-						i(57298),
-					})),
---[[					
-					qg(39413, q(25310)),	-- The Greater of Two Evils
-					qg(41504, q(25904)),	-- The Hammer and the Key
-					qg(41003, q(25810)),	-- The Hatchery Must Burn (add'l QG 50081)
-					qg(52669, q(29215)),	-- The Hunt Begins
-					qg(40289, q(25830)),	-- The Last Living Lorekeeper (add'l QGs 46987, 46998, and 47002)
-					qg(40093, q(25412)),	-- The Name Never Spoken
-					qg(54313, q(29326)),	-- The Nordrassil Summit
-					qg(52669, q(29126)),	-- The Power of Malorne
---]]
-					{
-						["questID"] = 29128,	-- The Protectors of Hyjal
-						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					{	-- The Firelord
+						["questID"] = 25551,
+						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuests"] = {
+							25553,	-- Death to the Broodmother
+							25550,	-- Magma Monarch
+							25555,	-- The Gatekeeper
+						},
+						["groups"] = {
+							i(57275),	-- Hyjal Savior's Pendant
+							i(57276),	-- Hyjal Savior's Signet
+							i(57274),	-- Hyjal Savior's Drape
+						},
+					},
+					{	-- The Fires of Mount Hyjal
+						["questID"] = 25630,
+						["qg"] = 39434,	-- Rio Duran
+						["coord"] = { 28.1, 29.8, 198 },
+						["isBreadcrumb"] = true,
+					},
+					{	-- The Flameseer's Staff
+						["questID"] = 25472,
+						["qg"] = 39869,	-- Windspeaker Tamila
+						["coord"] = { 47.6, 35.5, 198 },
+						["sourceQuest"] = 25317,	-- Protect the World Tree
+					},
+					{	-- The Gatekeeper
+						["questID"] = 25555,
+						["qg"] = 40773,	-- Cenarius
+						["coord"] = { 71.9, 74.0, 198 },
+						["sourceQuest"] = 25554,	-- Secrets of the Flame
+						["groups"] = {
+							i(57299),	-- Torque of the Herald
+							i(57298),	-- Gatekeeper Treads
+						},
+					},
+					{	-- The Greater of Two Evils
+						["questID"] = 25310,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuests"] = {
+							25496,	-- Grudge Match
+							25309,	-- Spiritual Training: Mercy is the for Weak
+						},
+					},
+					{	-- The Hammer and the Key
+						["questID"] = 25904,
+						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.8, 198 },
+						["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					},
+					{	-- The Hatchery Must Burn
+						["questID"] = 25810,
+						["qg"] = 41003,	-- Morthis Whisperwing
+						["coord"] = { 44.1, 45.9, 198 },
+						["sourceQuest"] = 25807,	-- An Ancient Reborn
+					},
+					{	-- The Hunt Begins
+						["questID"] = 29215,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29214,	-- The Shadow Wardens
+					},
+					{	-- The Last Living Lorekeeper
+						["questID"] = 25830,
+						["coords"] = {	-- there 4 possible coords here, one for each ancient. Need to determine the remaining two [Pr3vention]
+							{ 62.0, 24.8, 198 },
+							{ 27.0, 62.6, 198 },
+						},
+						["qgs"] = {
+							40289,	-- Ysera
+							46987,	-- Vision of Ysera
+							46998,	-- Vision of Ysera
+							47002,	-- Vision of Ysera
+						},
+						["sourceQuests"] = {
+							25520,	-- An Ancient Awakens
+							25382,	-- Disrupting the Rituals
+							29066,	-- Good News... and Bad News
+							25832,	-- Return to Aviana
+						},
+					},
+					{	-- The Name Never Spoken
+						["questID"] = 25412,
+						["qg"] = 40093,	-- Subjugated Inferno Lord
+						["sourceQuest"] = 25411,	-- A New Master
+					},
+					{	-- The Nordrassil Summit
+						["questID"] = 29326,
+						["qg"] = 54313,	-- Thrall
+						["coord"] = { 60.6, 31.4, 198 },
+					},
+					{	-- The Power of Malorne
+						["questID"] = 29126,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29125,	-- Between the Trees
+					},
+					{	-- The Protectors of Hyjal
+						["questID"] = 29128,
 						["qg"] = 53073,	-- Captain Soren Moonclaw
-						["coord"] = { 27.1, 61.6 },
-						["isDaily"] = true,
 						["lvl"] = 85,
+						["coord"] = { 27.1, 61.6, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29201,	-- Through the Gates of Hell
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
-					{
-						["questID"] = 29311,	-- The Rest is History
-						["qg"] = 11801,	-- Quest Giver: Rabine Saturna
-						["sourceQuest"] = 29310,	-- Source Quest: The Tipping Point
+					{	-- The Rest is History
+						["questID"] = 29311,
+						["qg"] = 11801,	-- Rabine Saturna
 						["lvl"] = 85,
+						["sourceQuest"] = 29310,	-- The Tipping Point
 						["groups"] = {
 							i(71259),	-- Leyara's Locket
 						},
 					},
-					qg(39857, q(25464, { -- The Return of Baron Geddon
-						i(57303),
-						i(57305),
-						i(57304),
-					})),
---[[					
-					qg(40289, q(25584)),	-- The Return of the Ancients
-]]--
-					{
-						["questID"] = 29198,	-- The Sanctuary Must Not Fall
-						["sourceQuest"] = 29197,	-- Caught Unawares
-						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-						["coord"] = { 27.1, 62.5 },
-						["lvl"] = 85,
+					{	-- The Return of Baron Geddon
+						["questID"] = 25464,
+						["qg"] = 39857,	-- Malfurion Stormrage
+						["coord"] = { 47.7, 35.5, 198 },
+						["sourceQuest"] = 25323,	-- Flamebreaker
 						["groups"] = {
-							{
-								["achievementID"] = 5866,	-- The Molten Front Offensive
+							i(57303),	-- Heatbinder Wristplates
+							i(57305),	-- Axe of Grounded Flame
+							i(57304),	-- Druidic Channeler's Mace
+						},
+					},
+					{	-- The Return of the Ancients
+						["questID"] = 25584,
+						["qg"] = 40289,	-- Ysera
+						["coord"] = { 62.0, 24.9, 198 },
+						["sourceQuest"] = 25578,	-- Return to Nordrassil
+					},
+					{	-- The Sanctuary Must Not Fall
+						["questID"] = 29198,
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["lvl"] = 85,
+						["coord"] = { 27.1, 62.5, 198 },
+						["sourceQuest"] = 29197,	-- Caught Unawares
+						["groups"] = {
+							{	-- The Molten Front Offensive
+								["achievementID"] = 5866,
 								["criteriaID"] = 1,	-- Stop the assault on the Sanctuary of Malorne
 							},
 						},
 					},
---[[
-					qg(40772, q(25549)),	-- The Sanctum of the Prophets
-					qg(39627, qa(25280)),	-- The Shrine Reclaimed
-					qg(39622, qh(25279)),	-- The Shrine Reclaimed
-					qg(41498, q(25915)),	-- The Strength of Tortolla
---]]					
-					qg(41504, q(25906, { -- The Third Flamegate
-						i(57343),
-						i(57342),
-						i(57344),
-					})),
---[[					
-					qg(41498, q(25910)),	-- The Time for Mercy has Passed
-					o(207359, {	-- Pure Twilight Egg
-						q(25644),	-- The Twilight Egg
-					}),
-					qg(39427, qa(25268)),	-- The Voice of Goldrinn
-					qg(39429, qh(25269)),	-- The Voice of Lo'Gosh
-					qg(41006, q(25655)),	-- The Wormwing Problem
-					qg(49444, q(28732)),	-- This Can Only Mean One Thing...
---]]
-					{
-						["questID"] = 29161,	-- Those Bears Up There
-						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					{	-- The Sanctum of the Prophets
+						["questID"] = 25549,
+						["qg"] = 40772,	-- Commander Jarod Shadowsong
+						["coord"] = { 72.0, 74.0, 198 },
+						["sourceQuest"] = 25548,	-- Might of the Firelord
+					},
+					{	-- The Shrine Reclaimed
+						["questID"] = 25280,
+						["qg"] = 39627,	-- Spirit of Goldrinn
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Shrine Reclaimed
+						["questID"] = 25279,
+						["qg"] = 39622,	-- Spirit of Lo'Gosh
+						["coord"] = { 29.6, 29.2, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					},
+					{	-- The Strength of Tortolla
+						["questID"] = 25915,
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25906,	-- The Third Flamegate
+					},
+					{	-- The Third Flamegate
+						["questID"] = 25906,
+						["qg"] = 41504,	-- Tortolla
+						["coord"] = { 41.9, 60.7, 198 },
+						["sourceQuest"] = 25904,	-- The Hammer and the Key
+						["groups"] = {
+							i(57343),	-- Leggings of Fiery Travail
+							i(57342),	-- Rescuers Shoulderguards
+							i(57344),	-- Glyphtrace Ritual Knife
+						},
+					},
+					{	-- The Time for Mercy has Passed
+						["questID"] = 25910,
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25906,	-- The Third Flamegate
+					},
+					{	-- The Twilight Apocrypha
+						["objectID"] = 202712,
+						["coord"] = { 25.8, 41.6, 198 },
+						["groups"] = {
+							{	-- Elementary!
+								["questID"] = 25303,
+								["sourceQuest"] = 25301,	-- Mastering Puppets
+								["groups"] = {
+									i(57382),	-- Apocryhphic Bindings
+									i(57381),	-- Chestguard of Inscrutability
+									i(57380),	-- Girdle of Gar'gol
+								},
+							},
+							{	-- Return to Duskwhisper
+								["questID"] = 25312,
+								["sourceQuest"] = 25303,	-- Elementary!
+							},
+						},
+					},
+					{	-- The Voice of Goldrinn
+						["questID"] = 25268,
+						["qg"] = 39427,	-- Jadi Falaryn
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Voice of Lo'Gosh
+						["questID"] = 25269,
+						["qg"] = 39429,	-- Oomla Whitehorn
+						["coord"] = { 35.6, 19.4, 198 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							25233,	-- End of the Supply Line
+							25255,	-- Harrying the Hunters
+							25234,	-- In the Rear With the Gear
+						},
+					},
+					{	-- The Wormwing Problem
+						["questID"] = 25655,
+						["qg"] = 41006,	-- Thisalee Crow
+						["coord"] = { 42.1, 45.4, 198 },
+						["sourceQuest"] = 25584,	-- The Return of the Ancients
+					},
+					{	-- This Can Only Mean One Thing...
+						["questID"] = 28732,
+						["qg"] = 49444,	-- Finkle Einhorn
+						["coord"] = { 42.6, 28.1, 198 },
+						["isBreadcrumb"] = true,
+					},
+					{	-- Those Bears Up There
+						["questID"] = 29161,
 						["qg"] = 52671,	-- Mylune
-						["coord"] = { 27.1, 62.0 },
-						["isDaily"] = true,
 						["lvl"] = 85,
+						["isDaily"] = true,
+						["coord"] = { 27.1, 62.0, 198 },
+						["sourceQuest"] = 29201,	-- Through the Gates of Hell
 						["groups"] = {
 							currency(416),	-- Mark of the World Tree
 						},
 					},
-					qg(40139, q(25325, { -- Through the Dream
-						i(57285),
-						i(57284),
-						i(57286),
-					})),
-					{
-						["questID"] = 29201,	-- Through the Gates of Hell
-						["sourceQuest"] = 29200,	-- Leyara
-						["qg"] = 52845,	-- Malfurion Stormrage
-						["coord"] = { 27.0, 62.7 },
-						["lvl"] = 85,
+					{	-- Through the Dream
+						["questID"] = 25325,
+						["qg"] = 40139,	-- Captain Saynna Stormrunner
+						["coord"] = { 56.7, 18.8, 198 },
+						["sourceQuest"] = 25324,	-- A Prisoner of Interest
 						["groups"] = {
-							{
-								["achievementID"] = 5866,	-- The Molten Front Offensive
+							i(57285),	-- Muffling Hood
+							i(57284),	-- Grips of Arcane Imprisonment
+							i(57286),	-- Dreamrending Dagger
+						},
+					},
+					{	-- Through the Gates of Hell
+						["questID"] = 29201,
+						["qg"] = 52845,	-- Malfurion Stormrage
+						["lvl"] = 85,
+						["coord"] = { 27.0, 62.7, 198 },
+						["sourceQuest"] = 29200,	-- Leyara
+						["groups"] = {
+							{	-- The Molten Front Offensive
+								["achievementID"] = 5866,
 								["criteriaID"] = 2,	-- Gain access to the Molten Front
 							},
 						},
 					},
-					{
-						["questID"] = 29196,	-- To the Sanctuary!
-						["sourceQuest"] = 29195,	-- A Ritual of Flame
+					{	-- To the Sanctuary!
+						["questID"] = 29196,
 						["qg"] = 52845,	-- Malfurion Stormrage
-						["coord"] = { 27.3, 55.2 },
 						["lvl"] = 85,
+						["coord"] = { 27.3, 55.2, 198 },
+						["sourceQuest"] = 29195,	-- A Ritual of Flame
 					},
---[[
-					qg(39858, q(25510)),	-- Tortolla Speaks
-					qg(39858, q(25843)),	-- Tortolla's Revenge (add'l QGs 41480 and 52838)
-					qg(41498, q(25928)),	-- Tortolla's Triumph
-					qg(52986, q(29247)),	-- Treating the Wounds
---]]					
-					qg(39442, q(25223, { -- Trial By Fire
-						i(57310),
-						i(57309),
-					})),
---[[					
-					qg(40096, q(25321)),	-- Twilight Captivity					
-					qg(40619, q(25531)),	-- Twilight Riot
-					qg(39413, q(25311)),	-- Twilight Territory
-					qg(39442, q(25291)),	-- Twilight Training
-					qg(40578, q(29177)),	-- Vigilance on Wings
-					qg(39406, q(25294)),	-- Walking the Dog
---]]					
-					qg(39857, q(25319, { -- War on the Twilight's Hammer
-						i(57291),
-						i(57290),
-						i(57293),
-						i(57292),
-					})),
---[[					
-					qg(39451, q(25330)),	-- Waste of Flesh
-					qg(40578, q(25525)),	-- Wave One
-					qg(40578, q(25544)),	-- Wave Two
-					qg(52669, q(29282)),	-- Well Armed
-					qg(52669, q(29148)),	-- Wings Aflame
-					qg(41005, q(25985)),	-- Wings Over Mount Hyjal
-					qg(39621, q(25276)),	-- Your New Identity	
---]]					
-				}),	
+					{	-- Tortolla Speaks
+						["questID"] = 25510,
+						["qg"] = 39858,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 27.1, 62.6, 198 },
+						["sourceQuest"] = 25507,	-- Hell's Shells
+					},
+					{	-- Tortolla's Revenge
+						["questID"] = 25843,
+						["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+						["coord"] = { 19.5, 37.8, 198 },
+						["sourceQuest"] = 25372,	-- Aessina's Miracle
+					},
+					{	-- Tortolla's Triumph
+						["questID"] = 25928,
+						["qg"] = 41498,	-- Garunda Mountainpeak
+						["coord"] = { 64.2, 53.5, 198 },
+						["sourceQuest"] = 25923,	-- Finish Nemesis
+					},
+					{	-- Treating the Wounds -- todo: unknown source quest
+						["questID"] = 29247,
+						["qg"] = 52986,	-- Dorda'en Nightweaver
+						["coord"] = { 27.5, 62.5, 198 },
+						["isDaily"] = true,
+					},
+					{	-- Trial By Fire
+						["questID"] = 25223,
+						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
+						["groups"] = {
+							i(57310),	-- Impressive Greaves
+							i(57309),	-- Chestplate of Exceptional Expectations
+						},
+					},
+					{	-- Twilight Captivity	
+						["questID"] = 25321,
+						["qg"] = 40096,	-- Scout Larandia
+						["coord"] = { 44.4, 18.9, 198 },
+						["sourceQuest"] = 25320,	-- The Captured Scout
+					},
+					{	-- Twilight Cauldron
+						["objectID"] = 202706,
+						["coord"] = { 28.4, 36.4, 198 },
+						["groups"] = {
+							{	-- Free Your Mind, the Rest Follows
+								["questID"] = 25298,
+								["sourceQuest"] = 25297,	-- From the Mouth of Madness
+								["groups"] = {
+									i(57364),	-- Purifying Spaulders
+									i(57363),	-- Invidious Casque
+									i(57365),	-- Crusher of Bonds
+								},
+							},
+						},
+					},
+					{	-- Twilight Riot
+						["questID"] = 25531,
+						["qg"] = 40619,	-- Commander Jarod Shadowsong
+						["coord"] = { 95.3, 51.3, 198 },
+						["sourceQuest"] = 25315,	-- Graduation Speech
+					},
+					{	-- Twilight Territory
+						["questID"] = 25311,
+						["qg"] = 39413,	-- Instructor Mylva
+						["coord"] = { 89.5, 59.0, 198 },
+						["sourceQuests"] = {
+							25496,	-- Grudge Match
+							25309,	-- Spiritual Training: Mercy is the for Weak
+						},
+					},
+					{	-- Twilight Training
+						["questID"] = 25291,
+						["qg"] = 39442,	-- Condenna the Pitiless
+						["coord"] = { 76.9, 62.0, 198 },
+						["sourceQuests"] = {
+							25224,	-- In Bloom
+							25223,	-- Trial By Fire
+							25330,	-- Waste of Flesh
+						},
+					},
+					{	-- Vigilance on Wings
+						["questID"] = 29177,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 37.2, 56.1, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 25560,	-- Egg Wave
+					},
+					{	-- Walking the Dog
+						["questID"] = 25294,
+						["qg"] = 39406,	-- Instructor Devoran
+						["coord"] = { 90.1, 56.3, 198 },
+						["sourceQuest"] = 25291,	-- Twilight Training
+					},
+					{	-- War on the Twilight's Hammer
+						["questID"] = 25319,
+						["qg"] = 39857,	-- Malfurion Stormrage
+						["coord"] = { 47.7, 35.5, 198 },
+						["sourceQuest"] = 25317,	-- Protect the World Tree
+						["groups"] = {
+							i(57291),	-- Naturelord Helm
+							i(57290),	-- Druidic Guardian Plate
+							i(57293),	-- Front-Line Blunderbuss
+							i(57292),	-- Repurposed Twilight Stave
+						},
+					},
+					{	-- Waste of Flesh
+						["questID"] = 25330,
+						["qg"] = 39451,	-- Instructor Cargall
+						["coord"] = { 77.0, 62.1, 198 },
+						["sourceQuest"] = 25276,	-- Your New Identity
+					},
+					{	-- Wave One
+						["questID"] = 25525,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 37.2, 56.1, 198 },
+						["sourceQuest"] = 25523,	-- Flight in the Firelands
+					},
+					{	-- Wave Two
+						["questID"] = 25544,
+						["qg"] = 40578,	-- Farden Talonshrike
+						["coord"] = { 37.2, 56.1, 198 },
+						["sourceQuest"] = 25525,	-- Wave One
+					},
+					{	-- Well Armed -- todo: unknown source quest
+						["questID"] = 29282,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+					},
+					{	-- Wings Aflame
+						["questID"] = 29148,
+						["qg"] = 52669,	-- Matoclaw
+						["coord"] = { 27.1, 62.5, 198 },
+						["isDaily"] = true,
+						["sourceQuest"] = 29147,	-- Call the Flock
+					},
+					{	-- Wings Over Mount Hyjal
+						["questID"] = 25985,
+						["qg"] = 41005,	-- Choluna
+						["coord"] = { 44.4, 46.2, 198 },
+						["isBreadcrumb"] = true,
+					},
+					{	-- Your New Identity
+						["questID"] = 25276,
+						["qg"] = 39621,	-- Elementalist Ortell
+						["coord"] = { 71.9, 58.0, 198 },
+						["sourceQuest"] = 25274,	-- Signed in Blood
+					},
+				}),
 			},
 		}),
 	}),

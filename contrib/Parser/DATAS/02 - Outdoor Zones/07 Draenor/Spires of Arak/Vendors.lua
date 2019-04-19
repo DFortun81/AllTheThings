@@ -12,13 +12,13 @@ _.Zones =
 					n(-2, { 	-- Vendors
 						a(spell(170108, {	-- Smuggling Run!
 							["groups"] = {
-								na(82459, { -- Honest Jim
+								na(82459, {	-- Honest Jim
 									["groups"] = {
-										i(113096), -- Bloodmane Charm
-										i(116915, { -- Inactive Apexis Guardian
+										i(113096),	-- Bloodmane Charm
+										i(116915, {	-- Inactive Apexis Guardian
 											follower(168),  -- Ziri'ak
 										}),
-										i(117415), -- Smuggled Tonic
+										i(117415),	-- Smuggled Tonic
 										i(113273),	-- Orb of the Soulstealer
 										i(113274),	-- Plume of Celerity
 										i(113275),	-- Ravenlord's Talon
@@ -36,13 +36,13 @@ _.Zones =
 						})),
 						h(spell(170097, {	-- Smuggling Run!
 							["groups"] = {
-								nh(84243, { -- Linny "The Skinny" Leadpockets
+								nh(84243, {	-- Linny "The Skinny" Leadpockets
 									["groups"] = {
-										i(113096), -- Bloodmane Charm
-										i(116915, { -- Inactive Apexis Guardian
+										i(113096),	-- Bloodmane Charm
+										i(116915, {	-- Inactive Apexis Guardian
 											follower(168),  -- Ziri'ak
 										}),
-										i(117415), -- Smuggled Tonic
+										i(117415),	-- Smuggled Tonic
 										i(113273),	-- Orb of the Soulstealer
 										i(113274),	-- Plume of Celerity
 										i(113275),	-- Ravenlord's Talon

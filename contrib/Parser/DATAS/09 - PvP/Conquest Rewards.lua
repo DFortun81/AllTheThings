@@ -3,7 +3,7 @@
 -----------------------------------------------
 _.PVP =
 {
-	n(-230, { -- Conquest
+	n(-230, {	-- Conquest
 		["groups"] = {
 			{	-- Dread Gladiator: Battle for Azeroth  Season 1
 				["npcID"] = -490,	-- Dread Gladiator: Battle for Azeroth  Season 1

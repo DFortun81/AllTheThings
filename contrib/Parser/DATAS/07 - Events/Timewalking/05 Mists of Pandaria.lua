@@ -15,6 +15,7 @@ _.WorldEvents =
 					},
 					n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
 						["currencyID"] = 1166,	-- Timewarped Badge
+						["lvl"] = 90,
 						["groups"] = {
 							-- Mounts / Pets / Toys
 							i(87775),	-- Yu'lei, Daughter of Jade [Mount]

@@ -11,8 +11,6 @@ _.PetJournal =
 		p(1150),	-- Ashstone Core
 		p(1429),	-- Autumnal Sproutling
 		p(2429),	-- Azeriti
-		p(2545), 	-- Gust of Cyclarus
-		p(2547), 	-- Hydrath Droplet
 		p(2086), 	-- Blazehound
 		p(1517),	-- Blazing Cindercrawler
 		un(35, p(1248)),	-- Blossoming Ancient
@@ -43,9 +41,14 @@ _.PetJournal =
 		p(1430),	-- Forest Sproutling
 		p(2440),	-- Fozling
 		p(253),		-- Frigid Frostling
+		p(2466),	-- Giggling Flame
 		p(1332),	-- Gooey Sha-ling
 		p(834),		-- Grinder
+		p(2545), 	-- Gust of Cyclarus
+		p(2591),	-- Happiness
 		un(7, p(1544)),	-- Hatespark the Tiny
+		p(2003),	-- Hearthy
+		p(2547), 	-- Hydrath Droplet
 		p(1949),	-- Igneous Flameling
 		p(856),		-- Jade Tentacle
 		p(1348),	-- Jadefire Spirit
@@ -57,6 +60,7 @@ _.PetJournal =
 		p(1177),	-- Living Sandling
 		p(337),		-- Lumpy
 		p(1955),	-- Magma Rageling
+		p(2467),	-- Mischievous Zephyr
 		un(31, p(1451)),	-- Molten Corgi
 		p(1932),	-- Nightmare Lasher
 		p(1933),	-- Nightmare Treant
@@ -69,6 +73,8 @@ _.PetJournal =
 		p(2018),	-- Paradox Spirit
 		p(265),		-- Pebble
 		p(175),		-- Phoenix Hatchling
+		p(2465),	-- Playful Frostkin
+		p(2590),	-- Ravenous Prideling
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
 		p(172),		-- Searing Scorchling
@@ -79,10 +85,10 @@ _.PetJournal =
 		p(1960),	-- Snaplasher
 		p(1569),	-- Soul of the Forge
 		p(128),		-- Spirit of Summer
+		p(2584),	-- Spirit of the Spring
 		p(1917),	-- Stormstruck Beaver
 		p(1518),	-- Stout Alemental
 		p(1434),	-- Sun Sproutling
-		p(2473),	-- Sunscale Hatchling
 		p(2088), 	-- Surger
 		p(1231),	-- Tainted Waveling
 		p(204),		-- Teldrassil Sproutling

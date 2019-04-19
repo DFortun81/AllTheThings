@@ -3,7 +3,7 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	spell(921, { -- Pickpocketing
+	spell(921, {	-- Pickpocketing
 		["groups"] = {	
 			n(-9981, {	-- Draenor
 				i(112995),	-- Slimy Ring: 2 coins
@@ -45,17 +45,17 @@ _.WorldDrops =
 				i(151146),	--Charmed Band
 			}),
 			n(-161, { 	-- Toys
-				i(36863, { -- Decahedral Dwarven Dice
+				i(36863, {	-- Decahedral Dwarven Dice
 					["groups"] = {
 					},
 					["description"] = "Can be pickpocketed from Northrend humanoids.",
 				}),
-				i(63269, { -- Loaded Gnomish Dice
+				i(63269, {	-- Loaded Gnomish Dice
 					["groups"] = {
 					},
 					["description"] = "Can be pickpocketed from Cataclysm humanoids.",
 				}),
-				i(36862, { -- Worn Troll Dice
+				i(36862, {	-- Worn Troll Dice
 					["groups"] = {
 					},
 					["description"] = "Can be pickpocketed from Northrend humanoids.",

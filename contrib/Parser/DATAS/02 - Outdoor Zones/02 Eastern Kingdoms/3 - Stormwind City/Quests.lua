@@ -13,84 +13,267 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							gsh(1522, { -- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
-								["groups"] = {
-									qg(126301, qa(50239, {	-- A Choice of Allies
-										na(-244, {	-- Dark Iron Dwarf
-											q(53566, {	-- Dark Iron Dwarfs
-												ach(12515, {	-- Allied Races: Dark Iron Dwarf
-													i(161331),	-- Dark Iron Core Hound
+							{	-- A Choice of Allies
+								["questID"] = 50239,	-- A Choice of Allies
+								["qg"] = 126301,		-- Anduin Wyrnn
+								["coords"] = {
+									{ 52.07, 13.43, 84 },
+								},
+								["g"] = {
+									{	-- Dark Iron Dwaves
+										["achievementID"] = 12515,	-- Allied Races: Dark Iron Dwarf
+										["sourceQuests"] = {
+											53566,	-- Dark Iron Dwaves
+										},
+										["g"] = {
+											{	-- Blackrock Depths
+												["questID"] = 51813,	-- Blackrock Depths
+												["qg"] = 133197,		-- Moira Thaurissan
+												["coords"] = {
+													{ 52.03, 13.73, 84 },
+												},
+											},
+											{	-- The MOTHERLODE!!: Ironfoe
+												["questID"] = 53351,	-- The MOTHERLODE!!: Ironfoe
+												["qg"] = 140309,		-- Moira Thaurissan
+												["coords"] = {
+													{ 57.04, 30.33, 1159 },
+												},
+												["sourceQuests"] = {
+													51813,	-- Blackrock Depths
+												},
+												["maps"] = {
+													1159,	-- Blackrock Depths: Dark Iron Dwarf Scenario
+												},
+											},
+											{	-- Molten Core
+												["questID"] = 53342,	-- Molten Core
+												["qg"] = 133197,		-- Moira Thaurissan
+												["coords"] = {
+													{ 52.03, 13.73, 84 },
+												},
+												["sourceQuests"] = {
+													53351,	-- The MOTHERLODE!!: Ironfoe
+												},
+											},
+											{	-- Firelands
+												["questID"] = 53352,	-- Firelands
+												["qg"] = 133197,		-- Moira Thaurissan
+												["coords"] = {
+													{ 52.03, 13.73, 84 },
+												},
+												["sourceQuests"] = {
+													53342,	-- Molten Core
+												},
+											},
+											{	-- Forged in Fire an'Flame
+												["questID"] = 51474,	-- Forged in Fire an'Flame
+												["qg"] = 133197,		-- Moira Thaurissan
+												["coords"] = {
+													{ 52.03, 13.73, 84 },
+												},
+												["sourceQuests"] = {
+													53352,	-- Firelands
+												},
+											},
+											{	-- Dark Iron Dwarves
+												["questID"] = 53566,	-- Dark Iron Dwarves
+												["qg"] = 140309,		-- Moira Thaurissan
+												["coords"] = {
+													{ 57.20, 30.89, 1159 },
+												},
+												["sourceQuests"] = {
+													51474,	-- Forgged in Fire an'Flame
+												},
+												["g"] = {
+													{	-- Dark Iron Core Hound
+														["itemID"] = 161331,	-- Dark Iron Core Hound
+													},
+												},
+											},
+										},
+									},
+									na(-252, {	-- Kul Tiran
+										qa(54706, {	-- Made in Kul Tiras
+											["qg"] = 148798,	-- Lady Jaina Proudmoore
+											["coord"] = { 52.3, 13.5, 84 },	-- Stormwind
+										}),
+										qa(55039, {	-- The Master Shipwright
+											["qg"] = 122370,	-- Cyrus Crestfall
+											["coord"] = { 67.9, 22.1, 1161 },	-- Boralus
+											["sourceQuests"] = { 54706 },	-- Made in Kul Tiras
+										}),
+										qa(55043, {	-- Fish Tales and Distant Sails
+											["qg"] = 150515,	-- Cyrus Crestfall
+											["coord"] = { 59.3, 70.2, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 55039 },	-- The Master Shipwright
+										}),
+										qa(54708, {	-- Home, Home on the Range
+											["qg"] = 150515,	-- Cyrus Crestfall
+											["coord"] = { 58.6, 70.4, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 55043 },	-- Fish Tales and Distant Sails
+										}),
+										qa(54721, {	-- I'm Too Old for This Ship
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 50.1, 49.8, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54708 },	-- Home, Home on the Range
+										}),
+										qa(54723, {	-- Covering Our Masts
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
+										}),
+										qa(54725, {	-- The Deep Ones
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54721 },	-- I'm Too Old for This Ship
+										}),
+										qa(54726, {	-- Frame Work
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 66.0, 47.4, 942 },	-- Stormsong Valley
+											["sourceQuests"] = {
+												54723,	-- Covering Our Masts
+												54725,	-- The Deep Ones
+											},
+										}),
+										qa(54727, {	-- Team Carry
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 68.9, 20.5, 895 },	-- Tiragarde Sound
+											["sourceQuests"] = { 54726 },	-- Frame Work
+										}),
+										qa(54728, {	-- This Lumber is Haunted
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
+											["sourceQuests"] = { 54727 },	-- Team Carry
+										}),
+										qa(54730, {	-- Gorak Tul's Influence
+											["qg"] = 139926,	-- Thornspeaker Birchgrove
+											["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
+											["sourceQuests"] = { 54728 },	-- This Lumber is Haunted
+										}),
+										qa(54731, {	-- Balance in All Things
+											["qg"] = 139926,	-- Thornspeaker Birchgrove
+											["coord"] = { 61.9, 59.4, 896 },	-- Drustvar
+											["sourceQuests"] = { 54730 },	-- Gorak Tul's Influence
+										}),
+										qa(54729, {	-- The Bleak Hills
+											["qg"] = 148870,	-- Dorian Atwater
+											["coord"] = { 67.1, 12.3, 895 },	-- Tiragarde Sound
+											["sourceQuests"] = { 54727 },	-- Team Carry
+										}),
+										qa(54732, {	-- Drop It!
+											["qg"] = 150884,	-- Chelsea Wright
+											["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
+											["sourceQuests"] = { 54729 },	-- The Bleak Hills
+										}),
+										qa(55136, {	-- Her Dog Days Are Over
+											["qg"] = 150885,	-- Wicker Beast
+											["coord"] = { 36.5, 28.9, 896 },	-- Drustvar
+											["sourceQuests"] = { 54732 },	-- Drop It!
+										}),
+										qa(54733, {	-- Make it Wright
+											["qg"] = 150884,	-- Chelsea Wright
+											["coord"] = { 33.1, 30.4, 896 },	-- Drustvar
+											["sourceQuests"] = { 55136 },	-- Her Dog Days Are Over
+										}),
+										qa(54734, {	-- Summons from Dorian
+											["qg"] = 149252,	-- Bound Sky
+											["coords"] = {
+												{ 45.4, 45.6, 896 },	-- Drustvar
+												{ 33.0, 30.4, 896 },	-- Drustvar
+											},
+											["description"] = "The questgiver will appear close to where you turn in Balance in All Things OR Make it Wright, depending on which set of quests you do second.",
+											["sourceQuests"] = {
+												54731,	-- Balance in All Things
+												54733,	-- Make it Wright
+											},
+										}),
+										qa(54735, {	-- A Worthy Crew
+											["qg"] = 148798,	-- Lady Jaina Proudmoore
+											["coord"] = { 66.5, 44.3, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54734 },	-- Summons from Dorian
+										}),
+										qa(54851, {	-- Blessing of the Tides
+											["qg"] = 148798,	-- Lady Jaina Proudmoore
+											["coord"] = { 67.5, 44.7, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54735 },	-- A Worthy Crew
+										}),
+										qa(53720, {	-- Allegiance of Kul Tiras
+											["qg"] = 148798,	-- Lady Jaina Proudmoore
+											["coord"] = { 71.1, 43.9, 942 },	-- Stormsong Valley
+											["sourceQuests"] = { 54851 },	-- Blessing of the Tides
+											["g"] = {
+												ach(13163, {	-- Allied Races: Kul Tiran
+													a(i(164762)),	-- Kul Tiran Charger
 												}),
+											},
+										}),
+									}),
+									na(-207, {	-- Lightforged Draenei
+										qg(126319, qa(49698)),	-- The Lightforged
+										qg(126319, qa(49266)),	-- Captain Fareeya
+										qg(126319, qa(50071, {	-- For the Light!
+											ach(12243, {	-- Allied Races: Lightforged Draenei
+												a(i(155656)),	-- Lightforged Felcrusher
 											}),
-										}),
-										na(-207, {	-- Lightforged Draenei
-											qg(126319, qa(49698)),	-- The Lightforged
-											qg(126319, qa(49266)),	-- Captain Fareeya
-											qg(126319, qa(50071, {	-- For the Light!
-												ach(12243, {	-- Allied Races: Lightforged Draenei
-													a(i(155656)),	-- Lightforged Felcrusher
-												}),
-											})),
-										}),
-										na(-208, {	-- Void Elves
-											qg(126321, qa(49787, {	-- The Ghostlands
-											-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
-												ach(12242, {	-- Allied Races: Void Elf
-													a(i(156486)),	-- Starcursed Voidstrider
-												}),
-											})),
-										}),
+										})),
+									}),
+									na(-208, {	-- Void Elves
+										qg(126321, qa(49787, {	-- The Ghostlands
+										-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
+											ach(12242, {	-- Allied Races: Void Elf
+												a(i(156486)),	-- Starcursed Voidstrider
+											}),
+										})),
+									}),
 									qa(49929),	-- The Call for Allies
 									un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
-									})),
 								},
-								["icon"] = "Interface\\Icons\\FactionChange",
-								--["lvl"] = 110,
-							}),
+							},
 							qa(52946, {	-- A Dying World
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51795 }, -- The Battle for Lordaeron
+								["qg"] = 142930,	-- Halford Wyrmbane
+								["sourceQuests"] = { 51795 },	-- The Battle for Lordaeron
 								["coord"] = { 27.7, 21.5 },
 							}),
 							qa(49976, {	-- Gifts of the Fallen
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 50371 } , -- Summons to Stormwind
+								["qg"] = 132255,	-- Master Mathias Shawa
+								["sourceQuests"] = { 50371 } ,	-- Summons to Stormwind
 							}),
 							qa(53370, {	-- Hour of Reckoning
-								["qg"] = 144095, -- Master Mathias Shaw
+								["qg"] = 144095,	-- Master Mathias Shaw
 								["coord"] = { 22.3, 32.3 },
 								["groups"] = {		
-									i(163542), -- Footman's Warmace
-									i(163541), -- Longbow of the Hunt
-									i(163539), -- Spear of the Hunt
-									i(163537), -- Footman's Warhammer
-									i(163534), -- Warmage's Spellblade
-									i(163526), -- Footman's Handaxe
-									i(163540), -- Footman's Boot Knife
-									i(163538), -- Footman's Gladius
-									i(163536), -- Warmage's Spire
-									i(163533), -- Footman's Cleaver
+									i(163542),	-- Footman's Warmace
+									i(163541),	-- Longbow of the Hunt
+									i(163539),	-- Spear of the Hunt
+									i(163537),	-- Footman's Warhammer
+									i(163534),	-- Warmage's Spellblade
+									i(163526),	-- Footman's Handaxe
+									i(163540),	-- Footman's Boot Knife
+									i(163538),	-- Footman's Gladius
+									i(163536),	-- Warmage's Spire
+									i(163533),	-- Footman's Cleaver
 								},
 							}),
 							qa(50371),	-- Summons to Stormwind
 							qa(51795, {	-- The Battle for Lordaeron
-								["qg"] = 144095, -- Master Mathias Shaw
-								["sourceQuests"] = { 53370 }, -- Hour of Reckoning
+								["qg"] = 144095,	-- Master Mathias Shaw
+								["sourceQuests"] = { 53370 },	-- Hour of Reckoning
 								["coord"] = { 22.3, 32.3 },
 							}),
-							qa(46728, { -- The Nation of Kul Tiras
-								["qg"] = 120756, -- Anduin Wyrnn
-								["sourceQuests"] = { 46727 }, -- Tides of War
+							qa(46728, {	-- The Nation of Kul Tiras
+								["qg"] = 120756,	-- Anduin Wyrnn
+								["sourceQuests"] = { 46727 },	-- Tides of War
 								["coord"] = { 85.2, 32.1 },
 							}),
-							qa(46727, { -- Tides of War
-								["qg"] = 142930, -- Halford Wyrmbane
-								["sourceQuests"] = { 51403 }, -- The Speaker's Imperative
+							qa(46727, {	-- Tides of War
+								["qg"] = 142930,	-- Halford Wyrmbane
+								["sourceQuests"] = { 51403 },	-- The Speaker's Imperative
 								["coord"] = { 27.6, 21.2 },
 							}),
 							qa(49981, {	-- Witness to the Wound
-								["qg"] = 132255, -- Master Mathias Shawa
-								["sourceQuests"] = { 49976 } , -- Gifts of the Fallen
+								["qg"] = 132255,	-- Master Mathias Shawa
+								["sourceQuests"] = { 49976 } ,	-- Gifts of the Fallen
 							}),	
 							qa(27355, {	-- A Boon for the Powerful
 								["groups"] = {
@@ -462,7 +645,17 @@ _.Zones =
 							qg(, qa( 8763)),	-- The Hero of the Day
 							qg(, qh( 8799)),	-- The Hero of the Day
 							qg(, qa(43471)),	-- The Historians
-							qg(, qa( 7497)),	-- The Journey Has Just Begun
+		--]]					
+							qa(7497, {	-- The Journey Has Just Begun
+								["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
+								["requireSkill"] = 165,	-- Leatherworking
+								["qg"] = 14394,	-- Major Mattingly
+								["g"] = {
+									recipe(19093),		-- Onyxia Scale Cloak
+									un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+								},
+							}),
+		--[[
 							qg(, qa(26183)),	-- The King's Cider
 							qg(, q(29547)),	-- The King's Command
 							qg(, qa(25157)),	-- The Latest Fashion!
@@ -472,7 +665,7 @@ _.Zones =
 								["groups"] = {
 									i(139739),	-- Chestguard of the Uncrowned
 								},
-								["qg"] = 111049, -- Master Mathias Shaw
+								["qg"] = 111049,	-- Master Mathias Shaw
 								["classes"] = { 4 },
 								["lvl"] = 98,
 							}),
@@ -488,7 +681,7 @@ _.Zones =
 							qg(, qa(11970)),	-- The Master of Summer Lore
 							--]]
 							qa(29548, {	-- The Mission
-								["qg"] = 55789, -- Rell Nightwind
+								["qg"] = 55789,	-- Rell Nightwind
 							}),
 							--[[
 							qg(, qa(47253)),	-- The Originals

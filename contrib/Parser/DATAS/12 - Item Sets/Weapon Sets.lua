@@ -3,12 +3,12 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-366, { -- Weapon Sets
+	n(-366, {	-- Weapon Sets
 		["groups"] = {
-			n(-9, { -- PvP
-				tier(2, { -- Burning Crusade
+			n(-9, {	-- PvP
+				tier(2, {	-- Burning Crusade
 					["groups"] = {  -- COMPLETE
-						i(146650, { -- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
+						i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 							["groups"] = {
 								i(28302),	-- Gladiator's Bonecracker
 								i(28299),	-- Gladiator's Bonegrinder
@@ -62,7 +62,7 @@ _.GearSets =
 								i(32055),	-- Merciless Gladiator's War Staff
 							},
 						}),
-						i(146649, { -- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = {
 								i(33661),	-- Vengeful Gladiator's Barrier
 								i(34059),	-- Vengeful Gladiator's Baton of Light
@@ -102,7 +102,7 @@ _.GearSets =
 								i(34014),	-- Vengeful Gladiator's Waraxe
 							},
 						}),
-						i(146648, { -- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = {
 								i(34986),	-- Brutal Gladiator's Barrier
 								i(34985),	-- Brutal Gladiator's Baton of Light
@@ -147,44 +147,44 @@ _.GearSets =
 						}),
 					},
 				}),
-				tier(3, { -- Wrath of the Lich King
+				tier(3, {	-- Wrath of the Lich King
 					["groups"] = {  -- COMPLETE
-						i(146647, { -- Arsenal: Savage Gladiator's Weapons [ Horde / Alliance / Tested ]
-							i(42557), -- Savage Gladiator's Barrier
-							i(42511), -- Savage Gladiator's Baton of Light
-							i(42356), -- Savage Gladiator's Battle Staff
-							i(42221), -- Savage Gladiator's Bonecracker
-							i(42295), -- Savage Gladiator's Bonegrinder
-							i(42212), -- Savage Gladiator's Chopper
-							i(42206), -- Savage Gladiator's Cleaver
-							i(42294), -- Savage Gladiator's Decapitator
-							i(42382), -- Savage Gladiator's Energy Staff
-							i(42220), -- Savage Gladiator's Fleshslicer
-							i(44416), -- Savage Gladiator's Focus Staff
-							i(42344), -- Savage Gladiator's Gavel
-							i(42297), -- Savage Gladiator's Greatsword
-							i(42213), -- Savage Gladiator's Hacker
-							i(42446), -- Savage Gladiator's Heavy Crossbow
-							i(42445), -- Savage Gladiator's Longbow
-							i(42215), -- Savage Gladiator's Mutilator
-							i(42517), -- Savage Gladiator's Piercing Touch
-							i(42296), -- Savage Gladiator's Pike
-							i(42222), -- Savage Gladiator's Pummeler
-							i(42223), -- Savage Gladiator's Quickblade
-							i(42568), -- Savage Gladiator's Redoubt
-							i(42447), -- Savage Gladiator's Rifle
-							i(42218), -- Savage Gladiator's Ripper
-							i(42216), -- Savage Gladiator's Shanker
-							i(42556), -- Savage Gladiator's Shield Wall
-							i(42217), -- Savage Gladiator's Shiv
-							i(42219), -- Savage Gladiator's Slasher
-							i(42224), -- Savage Gladiator's Slicer
-							i(42343), -- Savage Gladiator's Spellblade
-							i(42388), -- Savage Gladiator's Staff
-							i(42448), -- Savage Gladiator's Touch of Defeat
-							i(44415), -- Savage Gladiator's War Staff
+						i(146647, {	-- Arsenal: Savage Gladiator's Weapons [ Horde / Alliance / Tested ]
+							i(42557),	-- Savage Gladiator's Barrier
+							i(42511),	-- Savage Gladiator's Baton of Light
+							i(42356),	-- Savage Gladiator's Battle Staff
+							i(42221),	-- Savage Gladiator's Bonecracker
+							i(42295),	-- Savage Gladiator's Bonegrinder
+							i(42212),	-- Savage Gladiator's Chopper
+							i(42206),	-- Savage Gladiator's Cleaver
+							i(42294),	-- Savage Gladiator's Decapitator
+							i(42382),	-- Savage Gladiator's Energy Staff
+							i(42220),	-- Savage Gladiator's Fleshslicer
+							i(44416),	-- Savage Gladiator's Focus Staff
+							i(42344),	-- Savage Gladiator's Gavel
+							i(42297),	-- Savage Gladiator's Greatsword
+							i(42213),	-- Savage Gladiator's Hacker
+							i(42446),	-- Savage Gladiator's Heavy Crossbow
+							i(42445),	-- Savage Gladiator's Longbow
+							i(42215),	-- Savage Gladiator's Mutilator
+							i(42517),	-- Savage Gladiator's Piercing Touch
+							i(42296),	-- Savage Gladiator's Pike
+							i(42222),	-- Savage Gladiator's Pummeler
+							i(42223),	-- Savage Gladiator's Quickblade
+							i(42568),	-- Savage Gladiator's Redoubt
+							i(42447),	-- Savage Gladiator's Rifle
+							i(42218),	-- Savage Gladiator's Ripper
+							i(42216),	-- Savage Gladiator's Shanker
+							i(42556),	-- Savage Gladiator's Shield Wall
+							i(42217),	-- Savage Gladiator's Shiv
+							i(42219),	-- Savage Gladiator's Slasher
+							i(42224),	-- Savage Gladiator's Slicer
+							i(42343),	-- Savage Gladiator's Spellblade
+							i(42388),	-- Savage Gladiator's Staff
+							i(42448),	-- Savage Gladiator's Touch of Defeat
+							i(44415),	-- Savage Gladiator's War Staff
 						}),
-						i(146646, { -- Arsenal: Hateful Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146646, {	-- Arsenal: Hateful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							i(42563),	-- Hateful Gladiator's Barrier
 							i(42512),	-- Hateful Gladiator's Baton of Light
 							i(42359),	-- Hateful Gladiator's Battle Staff
@@ -223,7 +223,7 @@ _.GearSets =
 							i(44417),	-- Hateful Gladiator's War Staff
 							i(42236),	-- Hateful Gladiator's Waraxe
 						}),
-						i(146645, { -- Arsenal: Deadly Gladiator's Weapon [ Horde / Alliance / Tested ]
+						i(146645, {	-- Arsenal: Deadly Gladiator's Weapon [ Horde / Alliance / Tested ]
 							i(42564),	-- Deadly Gladiator's Barrier
 							i(42513),	-- Deadly Gladiator's Baton of Light
 							i(42362),	-- Deadly Gladiator's Battle Staff
@@ -262,7 +262,7 @@ _.GearSets =
 							i(44419),	-- Deadly Gladiator's War Staff
 							i(42237),	-- Deadly Gladiator's Waraxe
 						}),
-						i(146644, { -- Arsenal: Furious Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146644, {	-- Arsenal: Furious Gladiator's Weapons [ Horde / Alliance / Tested ]
 							i(42565),	-- Furious Gladiator's Barrier
 							i(42514),	-- Furious Gladiator's Baton of Light
 							i(42364),	-- Furious Gladiator's Battle Staff
@@ -301,7 +301,7 @@ _.GearSets =
 							i(44421),	-- Furious Gladiator's War Staff
 							i(42238),	-- Furious Gladiator's Waraxe
 						}),
-						i(146643, { -- Arsenal: Relentless Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146643, {	-- Arsenal: Relentless Gladiator's Weapons [ Horde / Alliance / Tested ]
 							i(42566),	-- Relentless Gladiator's Barrier
 							i(42515),	-- Relentless Gladiator's Baton of Light
 							i(42366),	-- Relentless Gladiator's Battle Staff
@@ -343,7 +343,7 @@ _.GearSets =
 							i(49185),	-- Relentless Gladiator's Wand of Alacrity
 							i(44423),	-- Relentless Gladiator's War Staff
 						}),
-						i(146642, { -- Arsenal: Wrathful Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							i(51452),	-- Wrathful Gladiator's Barrier	
 							i(51532),	-- Wrathful Gladiator's Baton of Light	
 							i(51404),	-- Wrathful Gladiator's Battle Staff	
@@ -386,9 +386,9 @@ _.GearSets =
 						}),
 					},
 				}),
-				tier(4, { -- Cataclysm
+				tier(4, {	-- Cataclysm
 					["groups"] = { -- COMPLETE
-						i(146641, { -- Arsenal: Vicious Gladiator's Weapons
+						i(146641, {	-- Arsenal: Vicious Gladiator's Weapons
 							i(61360),	-- Vicious Gladiator's Barrier
 							i(61351),	-- Vicious Gladiator's Baton of Light
 							i(61341),	-- Vicious Gladiator's Battle Staff
@@ -421,7 +421,7 @@ _.GearSets =
 							i(61343),	-- Vicious Gladiator's Staff
 							i(61350),	-- Vicious Gladiator's Touch of Defeat
 						}),
-						i(146640, { -- Arsenal: Ruthless Gladiator's Weapons
+						i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 							i(70242),	-- Ruthless Gladiator's Barrier
 							i(70235),	-- Ruthless Gladiator's Baton of Light
 							i(70226),	-- Ruthless Gladiator's Battle Staff
@@ -454,7 +454,7 @@ _.GearSets =
 							i(70228),	-- Ruthless Gladiator's Staff
 							i(70234),	-- Ruthless Gladiator's Touch of Defeat
 						}),
-						i(146639, { -- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = {
 								i(73446),	-- Cataclysmic Gladiator's Shield Wall
 								i(73447),	-- Cataclysmic Gladiator's Slicer
@@ -490,9 +490,9 @@ _.GearSets =
 						}),
 					},
 				}),
-				tier(5, { -- Mists of Pandaria
+				tier(5, {	-- Mists of Pandaria
 					["groups"] = { -- COMPLETE
-						i(144243, { -- Arsenal: Malevolent Gladiator's Weapons [ Horde / Alliance / Tested ]
+						i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["groups"] = { -- Alliance & Horde / Tested
 								i(91482),	-- Malevolent Gladiator's Barrier
 								i(91486),	-- Malevolent Gladiator's Battle Staff
@@ -521,7 +521,7 @@ _.GearSets =
 								i(91535),	-- Malevolent Gladiator's Staff
 							},
 						}),
-						i(144245, { -- Arsenal: Tyrannical Gladiator's Weapons [ Horde / Tested ]
+						i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(99794),	-- Tyrannical Gladiator's Barrier
 								i(100171),	-- Tyrannical Gladiator's Barrier
@@ -571,7 +571,7 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(144246, { -- Arsenal: Tyrannical Gladiator's Weapons [ Alliance ]
+						i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(99794),	-- Tyrannical Gladiator's Barrier
 								i(100171),	-- Tyrannical Gladiator's Barrier
@@ -621,7 +621,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(144251, { -- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
+						i(144251, {	-- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(102982),	-- Grievous Gladiator's Barrier
 								i(103167),	-- Grievous Gladiator's Barrier
@@ -678,7 +678,7 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(144252, { -- Arsenal: Grievous Gladiator's Weapons [ Alliance ]
+						i(144252, {	-- Arsenal: Grievous Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(102982),	-- Grievous Gladiator's Barrier
 								i(103167),	-- Grievous Gladiator's Barrier
@@ -735,7 +735,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(144248, { -- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
+						i(144248, {	-- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(102785),	-- Prideful Gladiator's Barrier
 								i(102596),	-- Prideful Gladiator's Baton of Light
@@ -792,7 +792,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(144250, { -- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
+						i(144250, {	-- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(102785),	-- Prideful Gladiator's Barrier
 								i(102596),	-- Prideful Gladiator's Baton of Light
@@ -851,9 +851,9 @@ _.GearSets =
 						}),
 					},
 				}),
-				tier(6, { -- Warlords of Draenor
+				tier(6, {	-- Warlords of Draenor
 					["groups"] = { -- MISSING: Wild Combatant (W S2)
-						i(138625, { -- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
+						i(138625, {	-- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
 							["groups"] = {
 								i(115083),	-- Primal Combatant's Barrier
 								i(119866),	-- Primal Combatant's Barrier
@@ -912,7 +912,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138626, { -- Arsenal: Primal Combatant's Weapons [ Horde ]
+						i(138626, {	-- Arsenal: Primal Combatant's Weapons [ Horde ]
 							["groups"] = {
 								i(115083),	-- Primal Combatant's Barrier
 								i(119866),	-- Primal Combatant's Barrier
@@ -971,7 +971,7 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(138631, { -- Arsenal: Primal Gladiator's Weapons [ Alliance ]
+						i(138631, {	-- Arsenal: Primal Gladiator's Weapons [ Alliance ]
 							["groups"] = {
 								i(111140),	-- Primal Gladiator's Barrier
 								i(115667),	-- Primal Gladiator's Barrier
@@ -1030,7 +1030,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138632, { -- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
+						i(138632, {	-- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(111140),	-- Primal Gladiator's Barrier
 								i(115667),	-- Primal Gladiator's Barrier
@@ -1089,21 +1089,27 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(138629, { -- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
+						i(138629, {	-- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
 							["groups"] = {
 								i(125428),	-- Wild Combatant's Barrier
+								i(124951),	-- Wild Combatant's Barrier
+								i(124931),	-- Wild Combatant's Baton of Light
 								i(125408),	-- Wild Combatant's Baton of Light
 								i(125410),	-- Wild Combatant's Battle Staff
+								i(124933),	-- Wild Combatant's Battle Staff
 								i(125017),	-- Wild Combatant's Bonecracker
 								i(125494),	-- Wild Combatant's Bonecracker
 								i(125020),	-- Wild Combatant's Bonegrinder
 								i(125497),	-- Wild Combatant's Bonegrinder
 								i(127380),	-- Wild Combatant's Chopper
 								i(127381),	-- Wild Combatant's Chopper
+								i(124885),	-- Wild Combatant's Cleaver
 								i(125362),	-- Wild Combatant's Cleaver
 								i(125019),	-- Wild Combatant's Decapitator
 								i(125496),	-- Wild Combatant's Decapitator
+								i(124943),	-- Wild Combatant's Endgame
 								i(125420),	-- Wild Combatant's Endgame
+								i(124934),	-- Wild Combatant's Energy Staff
 								i(125411),	-- Wild Combatant's Energy Staff
 								i(125406),	-- Wild Combatant's Gavel
 								i(125021),	-- Wild Combatant's Greatsword
@@ -1111,43 +1117,63 @@ _.GearSets =
 								i(125015),	-- Wild Combatant's Hacker
 								i(125492),	-- Wild Combatant's Hacker
 								i(125368),	-- Wild Combatant's Heavy Crossbow
+								i(124891),	-- Wild Combatant's Heavy Crossbow
 								i(125367),	-- Wild Combatant's Longbow
+								i(124890),	-- Wild Combatant's Longbow
 								i(125407),	-- Wild Combatant's Mageblade
+								i(124930),	-- Wild Combatant's Mageblade
 								i(125370),	-- Wild Combatant's Pike
+								i(124893),	-- Wild Combatant's Pike
 								i(125365),	-- Wild Combatant's Pummeler
+								i(124888),	-- Wild Combatant's Pummeler
 								i(125366),	-- Wild Combatant's Quickblade
+								i(124889),	-- Wild Combatant's Quickblade
 								i(125427),	-- Wild Combatant's Redoubt
+								i(124950),	-- Wild Combatant's Redoubt
 								i(125016),	-- Wild Combatant's Render
 								i(125493),	-- Wild Combatant's Render
 								i(125421),	-- Wild Combatant's Reprieve
+								i(124944),	-- Wild Combatant's Reprieve
 								i(125369),	-- Wild Combatant's Rifle
+								i(124892),	-- Wild Combatant's Rifle
 								i(125364),	-- Wild Combatant's Ripper
+								i(124887),	-- Wild Combatant's Ripper
 								i(125363),	-- Wild Combatant's Shanker
+								i(124886),	-- Wild Combatant's Shanker
 								i(125029),	-- Wild Combatant's Shield Wall
 								i(125506),	-- Wild Combatant's Shield Wall
 								i(125018),	-- Wild Combatant's Slicer
 								i(125495),	-- Wild Combatant's Slicer
 								i(125405),	-- Wild Combatant's Spellblade
+								i(124928),	-- Wild Combatant's Spellblade
 								i(125371),	-- Wild Combatant's Staff
+								i(124894),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
+								i(124932),	-- Wild Combatant's Touch of Defeat
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(138630, { -- Arsenal: Wild Combatant's Weapons [ Alliance ]
+						i(138630, {	-- Arsenal: Wild Combatant's Weapons [ Alliance ]
 							["groups"] = {
 								i(125428),	-- Wild Combatant's Barrier
+								i(124951),	-- Wild Combatant's Barrier
+								i(124931),	-- Wild Combatant's Baton of Light
 								i(125408),	-- Wild Combatant's Baton of Light
 								i(125410),	-- Wild Combatant's Battle Staff
+								i(124933),	-- Wild Combatant's Battle Staff
 								i(125017),	-- Wild Combatant's Bonecracker
 								i(125494),	-- Wild Combatant's Bonecracker
 								i(125020),	-- Wild Combatant's Bonegrinder
 								i(125497),	-- Wild Combatant's Bonegrinder
 								i(127380),	-- Wild Combatant's Chopper
 								i(127381),	-- Wild Combatant's Chopper
+								i(124885),	-- Wild Combatant's Cleaver
 								i(125362),	-- Wild Combatant's Cleaver
 								i(125019),	-- Wild Combatant's Decapitator
 								i(125496),	-- Wild Combatant's Decapitator
+								i(124943),	-- Wild Combatant's Endgame
 								i(125420),	-- Wild Combatant's Endgame
+								i(124934),	-- Wild Combatant's Energy Staff
 								i(125411),	-- Wild Combatant's Energy Staff
 								i(125406),	-- Wild Combatant's Gavel
 								i(125021),	-- Wild Combatant's Greatsword
@@ -1155,29 +1181,43 @@ _.GearSets =
 								i(125015),	-- Wild Combatant's Hacker
 								i(125492),	-- Wild Combatant's Hacker
 								i(125368),	-- Wild Combatant's Heavy Crossbow
+								i(124891),	-- Wild Combatant's Heavy Crossbow
 								i(125367),	-- Wild Combatant's Longbow
+								i(124890),	-- Wild Combatant's Longbow
 								i(125407),	-- Wild Combatant's Mageblade
+								i(124930),	-- Wild Combatant's Mageblade
 								i(125370),	-- Wild Combatant's Pike
+								i(124893),	-- Wild Combatant's Pike
 								i(125365),	-- Wild Combatant's Pummeler
+								i(124888),	-- Wild Combatant's Pummeler
 								i(125366),	-- Wild Combatant's Quickblade
+								i(124889),	-- Wild Combatant's Quickblade
 								i(125427),	-- Wild Combatant's Redoubt
+								i(124950),	-- Wild Combatant's Redoubt
 								i(125016),	-- Wild Combatant's Render
 								i(125493),	-- Wild Combatant's Render
 								i(125421),	-- Wild Combatant's Reprieve
+								i(124944),	-- Wild Combatant's Reprieve
 								i(125369),	-- Wild Combatant's Rifle
+								i(124892),	-- Wild Combatant's Rifle
 								i(125364),	-- Wild Combatant's Ripper
+								i(124887),	-- Wild Combatant's Ripper
 								i(125363),	-- Wild Combatant's Shanker
+								i(124886),	-- Wild Combatant's Shanker
 								i(125029),	-- Wild Combatant's Shield Wall
 								i(125506),	-- Wild Combatant's Shield Wall
 								i(125018),	-- Wild Combatant's Slicer
 								i(125495),	-- Wild Combatant's Slicer
 								i(125405),	-- Wild Combatant's Spellblade
+								i(124928),	-- Wild Combatant's Spellblade
 								i(125371),	-- Wild Combatant's Staff
+								i(124894),	-- Wild Combatant's Staff
 								i(125409),	-- Wild Combatant's Touch of Defeat
+								i(124932),	-- Wild Combatant's Touch of Defeat
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138633, { -- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
+						i(138633, {	-- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
 							["groups"] = {
 								i(124749),	-- Wild Gladiator's Barrier
 								i(125228),	-- Wild Gladiator's Barrier
@@ -1242,7 +1282,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138634, { -- Arsenal: Wild Gladiator's Weapons [ Horde ]
+						i(138634, {	-- Arsenal: Wild Gladiator's Weapons [ Horde ]
 							["groups"] = {
 								i(124749),	-- Wild Gladiator's Barrier
 								i(125228),	-- Wild Gladiator's Barrier
@@ -1307,7 +1347,7 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(138627, { -- Arsenal: Warmongering Combatant's Weapons [ Horde ]
+						i(138627, {	-- Arsenal: Warmongering Combatant's Weapons [ Horde ]
 							["groups"] = {
 								i(126065),	-- Warmongering Combatant's Barrier
 								i(126542),	-- Warmongering Combatant's Barrier
@@ -1371,7 +1411,7 @@ _.GearSets =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						i(138628, { -- Arsenal: Warmongering Combatant's Weapons [ Alliance / Tested ]
+						i(138628, {	-- Arsenal: Warmongering Combatant's Weapons [ Alliance / Tested ]
 							["groups"] = {
 								i(126065),	-- Warmongering Combatant's Barrier
 								i(126542),	-- Warmongering Combatant's Barrier
@@ -1435,7 +1475,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138635, { -- Arsenal: Warmongering Gladiator's Weapons [ Alliance / Tested ]
+						i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons [ Alliance / Tested ]
 							["groups"] = {
 								i(125863),	-- Warmongering Gladiator's Barrier
 								i(126342),	-- Warmongering Gladiator's Barrier
@@ -1498,7 +1538,7 @@ _.GearSets =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(138636, { -- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
+						i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons [ Horde ]
 							["groups"] = {
 								i(125863),	-- Warmongering Gladiator's Barrier
 								i(126342),	-- Warmongering Gladiator's Barrier
@@ -1564,34 +1604,34 @@ _.GearSets =
 					},
 				}),
 			}),
-			i(141372, { -- Arsenal: Armaments of the Ebon Blade
+			i(141372, {	-- Arsenal: Armaments of the Ebon Blade
 				["groups"] = {
-					i(141365), -- Blood 2H Axe
-					i(141377), -- Blood 1H Sword
-					i(141366), -- Blood 2H Polearm
-					i(141379), -- Blood 1H Warsword
-					i(141375), -- Blood 2H Sword
-					i(141381), -- Icy 2H Axe
-					i(141362), -- Icy 1H Sword
-					i(141373), -- Icy 2H Polearm
-					i(141363), -- Icy 1H Warsword
-					i(141376), -- Icy 2H Sword
-					i(141382), -- Unholy 2H Axe
-					i(141378), -- Unholy 1H Sword
-					i(141374), -- Unholy 2H Polearm
-					i(141380), -- Unholy 1H Warsword
-					i(141364), -- Unholy 2H Sword
+					i(141365),	-- Blood 2H Axe
+					i(141377),	-- Blood 1H Sword
+					i(141366),	-- Blood 2H Polearm
+					i(141379),	-- Blood 1H Warsword
+					i(141375),	-- Blood 2H Sword
+					i(141381),	-- Icy 2H Axe
+					i(141362),	-- Icy 1H Sword
+					i(141373),	-- Icy 2H Polearm
+					i(141363),	-- Icy 1H Warsword
+					i(141376),	-- Icy 2H Sword
+					i(141382),	-- Unholy 2H Axe
+					i(141378),	-- Unholy 1H Sword
+					i(141374),	-- Unholy 2H Polearm
+					i(141380),	-- Unholy 1H Warsword
+					i(141364),	-- Unholy 2H Sword
 				},
 				["lvl"] = 110,
 			}),
-			i(141371, { -- Arsenal: Armaments of the Silver Hand
+			i(141371, {	-- Arsenal: Armaments of the Silver Hand
 				["groups"] = {
-					i(141370), -- Ardent Defender
-					i(150953), -- Ardent Gavel
-					i(141367), -- Ardent Hammer			
-					i(141368), -- Ardent Warhammer
-					i(141654), -- Gilded Defender
-					i(141653), -- Gilded Warhammer		
+					i(141370),	-- Ardent Defender
+					i(150953),	-- Ardent Gavel
+					i(141367),	-- Ardent Hammer			
+					i(141368),	-- Ardent Warhammer
+					i(141654),	-- Gilded Defender
+					i(141653),	-- Gilded Warhammer		
 				},
 				["lvl"] = 110,				
 			}),
@@ -1618,25 +1658,25 @@ _.GearSets =
 				},
 				["lvl"] = 100,
 			}),
-			i(152396, { -- Arsenal: Weapons of the Lightforged
+			i(152396, {	-- Arsenal: Weapons of the Lightforged
 				["groups"] = {
-					i(152332), -- Brilliant Daybreak Aegis
-					i(152337), -- Brilliant Daybreak Blade
-					i(152334), -- Brilliant Eventide Aegis
-					i(152339), -- Brilliant Eventide Blade
-					i(152333), -- Lustrous Daybreak Aegis
-					i(152336), -- Lustrous Daybreak Blade
-					i(152340), -- Lustrous Daybreak Greatsword
-					i(152342), -- Lustrous Daybreak Staff
-					i(152335), -- Lustrous Eventide Aegis
-					i(152338), -- Lustrous Eventide Blade
-					i(152341), -- Lustrous Eventide Greatsword
-					i(152343), -- Lustrous Eventide Staff
+					i(152332),	-- Brilliant Daybreak Aegis
+					i(152337),	-- Brilliant Daybreak Blade
+					i(152334),	-- Brilliant Eventide Aegis
+					i(152339),	-- Brilliant Eventide Blade
+					i(152333),	-- Lustrous Daybreak Aegis
+					i(152336),	-- Lustrous Daybreak Blade
+					i(152340),	-- Lustrous Daybreak Greatsword
+					i(152342),	-- Lustrous Daybreak Staff
+					i(152335),	-- Lustrous Eventide Aegis
+					i(152338),	-- Lustrous Eventide Blade
+					i(152341),	-- Lustrous Eventide Greatsword
+					i(152343),	-- Lustrous Eventide Staff
 				},
 				["lvl"] = 110,
 			}),
 			
 		},
-		["achievementID"] = 705, -- Master of Arms
+		["achievementID"] = 705,	-- Master of Arms
 	}),
 };

@@ -1299,6 +1299,163 @@ namespace Parser_V2
                 // Calculate the filter ID. (0 is invalid, -1 is explicitly ignored)
                 data["f"] = (int)CalculateFilter(data);
             }
+
+            private static List<object> ALLIANCE_ONLY = new List<object> {
+                1,  // Human
+                3,  // Dwarf
+                4,  // Night Elf
+                7,  // Gnome
+                11, // Draenei
+                22, // Worgen
+                25, // Pandaren [Alliance]
+                29, // Void Elf
+                30, // Lightforged
+                32, // Kul Tiran
+                34, // Dark Iron
+            };
+            private static List<object> HORDE_ONLY = new List<object> {
+                2,	// Orc
+                5,	// Undead
+                6,	// Tauren
+                8,	// Troll
+                9,	// Goblin
+                10,	// Blood Elf
+                26, // Pandaren[Horde]
+                27,	// Nightborne
+                28,	// Highmountain
+                31,	// Zandalari
+                36,	// Mag'har
+            };
+
+            private static Dictionary<object, bool> _ALLIANCE_ONLY_DICT;
+            private static Dictionary<object, bool> ALLIANCE_ONLY_DICT
+            {
+                get
+                {
+                    if(_ALLIANCE_ONLY_DICT == null)
+                    {
+                        _ALLIANCE_ONLY_DICT = new Dictionary<object, bool>();
+                        foreach (var o in ALLIANCE_ONLY) _ALLIANCE_ONLY_DICT[o] = true;
+                    }
+                    return _ALLIANCE_ONLY_DICT;
+                }
+            }
+            private static Dictionary<object, bool> _HORDE_ONLY_DICT;
+            private static Dictionary<object, bool> HORDE_ONLY_DICT
+            {
+                get
+                {
+                    if (_HORDE_ONLY_DICT == null)
+                    {
+                        _HORDE_ONLY_DICT = new Dictionary<object, bool>();
+                        foreach (var o in HORDE_ONLY) _HORDE_ONLY_DICT[o] = true;
+                    }
+                    return _HORDE_ONLY_DICT;
+                }
+            }
+
+            /// <summary>
+            /// Assign the Faction ID for this data dictionary if a valid ID hasn't already been assigned.
+            /// </summary>
+            /// <param name="data">The data dictionary.</param>
+            public static void AssignFactionID(Dictionary<string, object> data)
+            {
+                // If an object already has a faction ID assigned and the ID is valid, ignore it.
+                //if (data.TryGetValue("r", out object temp) && Convert.ToInt32(temp) > 0) return;
+
+                // Calculate the faction ID. (0 is no faction)
+                if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
+                {
+                    var allRaces = new List<object>(races);
+                    var allianceDictionary = new Dictionary<object, bool>(ALLIANCE_ONLY_DICT);
+                    var allianceRaces = new List<object>();
+                    foreach(var raceID in races)
+                    {
+                        if (allianceDictionary.Remove(raceID))
+                        {
+                            allRaces.Remove(raceID);
+                            allianceRaces.Add(raceID);
+                        }
+                    }
+
+                    var hordeDictionary = new Dictionary<object, bool>(HORDE_ONLY_DICT);
+                    var hordeRaces = new List<object>();
+                    foreach (var raceID in races)
+                    {
+                        if (hordeDictionary.Remove(raceID))
+                        {
+                            allRaces.Remove(raceID);
+                            hordeRaces.Add(raceID);
+                        }
+                    }
+
+                    // Calculate the faction.
+                    var allCount = allRaces.Count;
+                    if (allRaces.Count == 0)
+                    {
+                        // If there are no neutral races in this list, good. We need to do the thing.
+                        var allianceCount = allianceRaces.Count;
+                        var hordeCount = hordeRaces.Count;
+                        if (allianceCount == 0)
+                        {
+                            // If there are no alliance races, that means this might be a horde only item.
+                            if (hordeCount == 0)
+                            {
+                                // Uh, or not. I don't have a clue!
+                            }
+                            else
+                            {
+                                var leftovers = hordeDictionary.Count;
+                                if (leftovers == 0)
+                                {
+                                    // This is all horde races, cool. Let's clean this up!
+                                    data["r"] = 2;  // Horde Only!
+                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
+                                }
+                                else
+                                {
+                                    // Nah man, we need to list them all. Damnit!
+                                    //Console.WriteLine("There was a leftover race?!");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            var leftovers = allianceDictionary.Count;
+                            if (leftovers == 0)
+                            {
+                                // This is all alliance races, cool. Let's clean this up!
+                                data["r"] = 1;  // Alliance Only!
+                                data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
+                            }
+                            else if (hordeCount == 0)
+                            {
+                                // If there are no horde or alliance races, do nothing.
+                            }
+                            else
+                            {
+                                leftovers = hordeDictionary.Count;
+                                if (leftovers == 0)
+                                {
+                                    // This is all horde races, cool. Let's clean this up!
+                                    data["r"] = 2;  // Horde Only!
+                                    data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
+                                }
+                                else
+                                {
+                                    // Nah man, we need to list them all. Damnit!
+                                    //Console.WriteLine("There was a leftover race?!");
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // Nah man, we need to list them all. Damnit!
+                        //Console.WriteLine("There was a leftover race?!");
+                    }
+                }
+            }
             #endregion
             #region Export
             /// <summary>
@@ -1499,6 +1656,49 @@ namespace Parser_V2
             #endregion
             #region Merge (for acquiring fields for the Item Database)
             /// <summary>
+            /// Merge the array data!
+            /// </summary>
+            /// <param name="item">The item!</param>
+            /// <param name="field">The field!</param>
+            /// <param name="value">The value.</param>
+            private static void MergeArrayData(Dictionary<string, object> item, string field, object value)
+            {
+                // Convert the data to a list of generic objects.
+                var newList = value as List<object>;
+                if (newList == null)
+                {
+                    var dict = value as Dictionary<object, object>;
+                    if (dict == null) return;
+                    newList = dict.Values.ToList();
+                }
+
+                // Attempt to get the old list data.
+                List<object> oldList;
+                if (item.TryGetValue(field, out object oldData))
+                {
+                    // Convert the old data to a list of objects.
+                    oldList = oldData as List<object>;
+                }
+                else
+                {
+                    // Create a new list.
+                    item[field] = oldList = new List<object>();
+                }
+
+                // Merge the new list of data into the old data and ensure there are no duplicate values.
+                foreach (var entry in newList)
+                {
+                    var index = Convert.ToInt32(entry);
+                    if (oldList.Contains(index)) continue;
+                    oldList.Add(index);
+                }
+
+                // Sort the old list to ensure that the order is consistent.
+                oldList.Sort();
+            }
+
+
+            /// <summary>
             /// Merge the field into the item reference if it is whitelisted.
             /// Only a couple of fields will successfully merge into an item.
             /// </summary>
@@ -1661,46 +1861,15 @@ namespace Parser_V2
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
-                    case "races":
                     case "specs":
                     case "difficulties":
                     case "sourceQuests":
+                    case "races":
                     case "maps":
                     case "qgs":
                     case "crs":
                         {
-                            // Convert the data to a list of generic objects.
-                            var newList = value as List<object>;
-                            if (newList == null)
-                            {
-                                var dict = value as Dictionary<object, object>;
-                                if (dict == null) return;
-                                newList = dict.Values.ToList();
-                            }
-
-                            // Attempt to get the old list data.
-                            List<object> oldList;
-                            if (item.TryGetValue(field, out object oldData))
-                            {
-                                // Convert the old data to a list of objects.
-                                oldList = oldData as List<object>;
-                            }
-                            else
-                            {
-                                // Create a new list.
-                                item[field] = oldList = new List<object>();
-                            }
-
-                            // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var entry in newList)
-                            {
-                                var index = Convert.ToInt32(entry);
-                                if (oldList.Contains(index)) continue;
-                                oldList.Add(index);
-                            }
-
-                            // Sort the old list to ensure that the order is consistent.
-                            oldList.Sort();
+                            MergeArrayData(item, field, value);
                             break;
                         }
 

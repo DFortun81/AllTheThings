@@ -48,7 +48,7 @@ _.Zones =
 									{ 27.73, 50.20, 525 },
 								},
 								["g"] = {
-									i(111476), -- Stolen Breath Toy
+									i(111476),	-- Stolen Breath Toy
 								},
 							},
 							{	-- Broodmother Reeg'ak
@@ -58,7 +58,7 @@ _.Zones =
 									{ 66.65, 31.59, 525 },
 								},
 								["g"] = {
-									i(111533), -- Corrosive Tongue of Reeg'ak
+									i(111533),	-- Corrosive Tongue of Reeg'ak
 								},
 							},
 							{	-- Canyon Icemother
@@ -75,7 +75,7 @@ _.Zones =
 									{ 41.38, 68.31, 525 },
 								},
 								["g"] = {
-									i(111953), -- Bat-Leather Breeches
+									i(111953),	-- Bat-Leather Breeches
 								},
 							},
 							{	-- Cindermaw
@@ -85,7 +85,7 @@ _.Zones =
 									{ 40.56, 47.07, 525 },
 								},
 								["g"] = {	
-									i(111490), -- Cindermaw's Blazing Talon
+									i(111490),	-- Cindermaw's Blazing Talon
 								},
 							},
 							{	-- Clumsy Cragmaul Brute
@@ -105,7 +105,7 @@ _.Zones =
 									{ 26.6, 55.6, 525 },	-- Walks around near this point on the ice
 								},
 								["g"] = {	
-									i(112066), -- Coldstomp's Sorrow
+									i(112066),	-- Coldstomp's Sorrow
 								},
 							},
 							{	-- Coldtusk
@@ -116,7 +116,7 @@ _.Zones =
 									{ 55.0, 71.2, 525 },
 								},
 								["g"] = {	
-									i(111484), -- Cold Tusk
+									i(111484),	-- Cold Tusk
 								},
 							},
 							{	-- Cyclonic Fury
@@ -126,7 +126,7 @@ _.Zones =
 									{ 67.20, 78.81, 525 },
 								},
 								["g"] = {	
-									i(112086), -- Windburnt Pauldrons
+									i(112086),	-- Windburnt Pauldrons
 								},
 							},
 							{	-- Earthshaker Holar	**Coords uncofirmed, relied on wowhead**
@@ -169,7 +169,7 @@ _.Zones =
 									{ 71.54, 46.84, 525 },
 								},
 								["g"] = {
-									i(107661), -- Smoldering Lavacore Orb
+									i(107661),	-- Smoldering Lavacore Orb
 								},
 							},
 							{	-- Giant-Slayer Kul
@@ -270,7 +270,7 @@ _.Zones =
 									{ 47.14, 55.36, 525 },
 								},
 								["g"] = {	
-									i(111955), -- Skog's Drape
+									i(111955),	-- Skog's Drape
 								},
 							},
 							{	-- Hoarfrost <Tempest of Ice>
@@ -483,7 +483,7 @@ _.Zones =
 								},
 								["isDaily"] = true,
 								["g"] = {	
-									un(1, i(119409, { -- Icebound Bloodmaul Spire
+									un(1, i(119409, {	-- Icebound Bloodmaul Spire
 										["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
 									})),
 								},

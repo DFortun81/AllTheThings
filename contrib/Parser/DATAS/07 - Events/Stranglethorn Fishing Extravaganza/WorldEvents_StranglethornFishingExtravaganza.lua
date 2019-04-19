@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-62, { 	-- Stranglethorn Fishing Extravaganza
 		["description"] = "Winners all get Master Angler of Azeroth which is needed for the meta-achievement Accomplished Angler.\n\nAll winners can choose between any of the prizes. The fishing rod and toy no longer seem to be limited to the First Place winner in Patch 7.1.5.",
-		["achievementID"] = 306, -- Master Angler of Azeroth
+		["achievementID"] = 306,	-- Master Angler of Azeroth
 		["coord"] = { 41.6, 73.0 },
 		["maps"] = { 210 },	-- The Cape of Stranglethorn
 		["u"] = 30,
@@ -13,7 +13,7 @@ _.WorldEvents =
 			i(19807, {	-- Speckled Tastyfish
 				["description"] = "You need 40. Fish from the pools! Good luck!",
 				["groups"] = {
-					q(8193, { -- Grand Prize
+					q(8193, {	-- Grand Prize
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
@@ -26,7 +26,7 @@ _.WorldEvents =
 					}),
 					--[[
 					-- These two quests appear to no longer be in game. "Retrieving Data"
-					q(32435, { -- Second Prize
+					q(32435, {	-- Second Prize
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
@@ -35,7 +35,7 @@ _.WorldEvents =
 							un(30, i(19971)),	-- High Test Eternium Fishing Line
 						},
 					}),
-					q(32436, { -- Third Prize
+					q(32436, {	-- Third Prize
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
@@ -43,7 +43,7 @@ _.WorldEvents =
 						},
 					}),
 					]]--
-					q(44765, { -- Stranglethorn Fishing Extravaganza
+					q(44765, {	-- Stranglethorn Fishing Extravaganza
 						["repeatable"] = true,
 						["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 						["groups"] = {
@@ -56,13 +56,13 @@ _.WorldEvents =
 					}),
 				},
 			}),
-			n(15079, { -- Fishbot 5000
+			n(15079, {	-- Fishbot 5000
 				{
 					["itemID"] = 19803,	-- Brownell's Blue Striped Racer
 					["questID"] = 8225,	-- Rare Fish -- Brownell's Blue Striped Racer
 					["repeatable"] = true,
 					["groups"] = {
-						un(30, i(19969)), -- Nat Pagle's Extreme Anglin' Boots
+						un(30, i(19969)),	-- Nat Pagle's Extreme Anglin' Boots
 					},
 				},
 				{
@@ -70,7 +70,7 @@ _.WorldEvents =
 					["questID"] = 8224,	-- Rare Fish - Dezian Queenfish
 					["repeatable"] = true,
 					["groups"] = {
-						un(30, i(19971)), -- High Test Eternium Fishing Line
+						un(30, i(19971)),	-- High Test Eternium Fishing Line
 					},
 				},
 				{
@@ -78,7 +78,7 @@ _.WorldEvents =
 					["questID"] = 8221,	-- Rare Fish - Keefer's Angelfish
 					["repeatable"] = true,
 					["groups"] = {
-						un(30, i(19972)), -- Lucky Fishing Hat
+						un(30, i(19972)),	-- Lucky Fishing Hat
 					},
 				},
 			}),

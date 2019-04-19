@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9963, { -- Pet Battles
+	n(-9963, {	-- Pet Battles
 		["groups"] = {
-			n(-10029, { -- Level
+			n(-10029, {	-- Level
 				["groups"] = {
 					ach(6570, {	-- All Growns Up! (Lvl 25)
 						ach(6569),	-- Old Timer (Lvl 20)

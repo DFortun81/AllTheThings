@@ -175,7 +175,7 @@ _.Zones =
 										}),
 										q(47512, {	-- Nazmir
 											["qg"] = 133050,
-											-- ["sourceQuests"] = { 52131 }, -- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
+											-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
 										}),
 										q(48535, {	-- Nazmir, the Forbidden Swamp
 											["qg"] = 126549,
@@ -211,6 +211,10 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 						}),
 						{	-- Azerite for the Horde
+							["groups"] = {
+								i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
+								i(166999),	-- Treasure Map
+							},
 							["questID"] = 53435, 	-- Azerite for the Horde
 							["qg"] = 133000,	-- Captain Rez'okun
 							["coords"] = {
@@ -219,24 +223,171 @@ _.Zones =
 							["repeatable"] = true,
 							["isWeekly"] = true,
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								{	-- Treasure Map
-									["itemID"] = 166999, 	-- Treasure Map
-									["itemID"] = 166883, 	-- Treasure Map, Displayed Version, you get the first
-								},
+						},
+						{	-- Righting Wrongs
+							["questID"] = 55124,
+							["qg"] = 150433,	-- Bluffwatcher Proudscar
+							["coord"] = { 49.8, 95.9, 1165 },
+							["races"] = HORDE_ONLY,
+						},
+						{	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
+							["questID"] = 47432,
+							["qg"] = 127489,	-- Hexlord Raal
+							["races"] = HORDE_ONLY,
+							["sourceQuests"] = {
+								47440,	-- Pa'ku, Master of Winds
+								47439,	-- Gonk, Lord of the Pack
 							},
 						},
-						q(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
-							["qg"] = 127489,	-- Hexlord Raal
-							["sourceQuests"] = { 47440, 47439, },	-- Pa'ku, Master of Winds, Gonk, Lord of the Pack
-							["races"] = HORDE_ONLY,
-						}),
 						{	-- Trouble in Gnomeregan
 							["questID"]	= 54276,	-- Trouble in Gnomeregan
 							["qg"] = 147641,	-- Radek Fuselock
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 						},
+						{	-- Whatever Happened to Grizzek Fizzwrench?
+							["questID"] = 53817,
+							["qg"] = 136683,	-- Trade Prince Gallywix
+							["coord"] = { 58.5, 62.6, 1163 },
+							["races"] = HORDE_ONLY,
+						},
+						h(i(165668, {	-- The Azsharan Medallion
+							["crs"] = {
+								144778,	-- Darktide Champion
+								144769,	-- Darktide Sorceress
+								144770,	-- Darktide Witch
+								144816,	-- Darktide Slaver
+								144777,	-- Darktide Marauder
+								144780,	-- Darktide Brute
+							},
+							["description"]	= "To get the questitem you need to kill Naga while the worldquest 'Naga Attack!' is up.",
+							["groups"] = {
+								qh(54172),	-- The Azsharan Medallion
+							},
+						})),
+						qh(54174, {	-- Orders from Azshara
+							["qg"] = 134345,	-- Collector Kojo
+							["coord"] = { 71.4, 30.2, 862 },
+							["sourceQuest"] = 54172,	-- The Azsharan Medallion
+							["classes"] = {
+								1,	-- Warrior
+								2,	-- Paladin
+								3,	-- Hunter
+								4,	-- Rogue
+								6,	-- Deathknight
+								7,	-- Shaman
+								8,	-- Mage
+								9,	-- Warlock
+								10,	-- Monk
+								11,	-- Druid
+								12,	-- Demonhunter
+							},
+						}),
+						qh(54433, {	-- Orders from Azshara
+							["qg"] = 134345,	-- Collector Kojo
+							["coord"] = { 71.4, 30.2, 862 },
+							["sourceQuest"] = 54172,	-- The Azsharan Medallion
+							["classes"] = { 5 },	-- Priest
+						}),
+						o(311218, {	-- Xal'atath, Blade of the Black Empire
+							qh(54117, {	-- Every Little Death Helps
+								["coord"] = { 78.0, 36.7, 862 },
+								["sourceQuest"] = 54174,	-- Orders from Azshara
+								["classes"] = {
+									1,	-- Warrior
+									2,	-- Paladin
+									3,	-- Hunter
+									4,	-- Rogue
+									6,	-- Deathknight
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+									12,	-- Demonhunter
+								},
+							}),
+							q(54118, {	-- Every Little Death Helps
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuests"] = {
+									54265,	-- Orders from Azshara
+									54433,	-- Orders from Azshara
+								},
+								["classes"] = { 5 },	-- Priest
+							}),
+							q(53760, {	-- Unintended Consequences
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuest"] = 54117,	-- Every Little Death Helps
+								["classes"] = {
+									1,	-- Warrior
+									2,	-- Paladin
+									3,	-- Hunter
+									4,	-- Rogue
+									6,	-- Deathknight
+									7,	-- Shaman
+									8,	-- Mage
+									9,	-- Warlock
+									10,	-- Monk
+									11,	-- Druid
+									12,	-- Demonhunter
+								},
+							}),
+							q(54058, {	-- Unintended Consequences
+								["coords"] = {
+									{ 78.0, 36.7, 862 },
+									{ 34.2, 31.8, 942 },
+								},
+								["sourceQuest"] = 54118,	-- Every Little Death Helps
+								["classes"] = { 5 },	-- Priest
+							}),
+						}),
+						q(53761, {	-- The Pirate's Treasure
+							["qg"] = 144773,	-- Xal'atath
+							["coord"] = { 20.0, 35.8, 896 },
+							["sourceQuest"] = 53760,	-- Unintended Consequences
+						}),
+						q(53762, {	-- The Tempest Crown
+							["qg"] = 145396,	-- Xal'atath
+							["coord"] = { 75.0, 77.7, 895 },
+							["sourceQuest"] = 53761,	-- The Pirate's Treasure
+						}),
+						q(53763, {	-- Twist the Knife
+							["qg"] = 146384,	-- Xal'atath
+							["coord"] = { 53.0, 13.6, 864 },
+							["sourceQuest"] = 53762,	-- The Tempest Crown
+						}),
+						qh(53766, {	-- His Eye Upon You
+							["qgs"] = {
+								146335,	-- Queen Talanji
+								133050,	-- Princess Talanji
+							},
+							["coords"] = { 
+								{ 49.9, 46.6, 1165 },
+								{ 41.7, 66.7, 1163 },
+							},
+							["sourceQuest"] = 53763,	-- Twist the Knife
+							["description"]	= "You just get the Toy if you choose to cleanse the gift.",
+							["groups"] = {
+								i(168123),	-- Twitching Eyeball
+							},
+						}),
+						qh(54439, {	-- Crucible of Storms: Relics of Shadow
+							["qgs"] = {
+								146335,	-- Queen Talanji
+								133050,	-- Princess Talanji
+							},
+							["coords"] = { 
+								{ 49.9, 46.6, 1165 },
+								{ 41.7, 66.7, 1163 },
+							},
+							["sourceQuest"] = 53763,	-- Twist the Knife
+						}),
 					},
 				}),
 			},
@@ -244,7 +395,6 @@ _.Zones =
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			["maps"] = {
-				--1163,	-- Dazar'alor
 				1164,	-- Dazar'alor
 				1165,	-- Dazar'alor
 			},

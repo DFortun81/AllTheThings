@@ -21,13 +21,6 @@ _.Zones =
 								["speciesID"] = 1179,	-- Electrified Razortooth
 								["crs"] = { 69794 },	-- Electrified Razortooth
 							},
-							{	-- Filthing
-								["itemID"] = 97961,	-- Half-Empty Food Container
-								["crs"] = {
-									69251,	-- Quivering Filth
-								},
-								["description"] = "This item is obtained by killing Quivering Filth",
-							},
 							{	-- Swamp Croaker
 								["speciesID"] = 1182,	-- Swamp Croaker
 								["crs"] = { 69819 },	-- Swamp Croaker

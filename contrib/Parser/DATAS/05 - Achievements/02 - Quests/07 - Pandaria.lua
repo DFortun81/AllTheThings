@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9956, { -- Quests
+	n(-9956, {	-- Quests
 		["groups"] = {
-			n(-9980, { -- Pandaria
+			n(-9980, {	-- Pandaria
 				["groups"] = {
 					ach(7318),		-- A Taste of History
 					ach(7294),		-- A Taste of Things to Come (Halfhill)

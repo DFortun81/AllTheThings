@@ -3,16 +3,16 @@
 --------------------------------------------
 _.Holidays =  bubbleDown({["u"] = 21},
 {
-	holiday(235474, { -- Midsummer Fire Festival
+	holiday(235474, {	-- Midsummer Fire Festival
 		["groups"] = {
-			n(-4, { -- Achievements
-				ach(1038, { -- The Flame Warden
+			n(-4, {	-- Achievements
+				ach(1038, {	-- The Flame Warden
 					["groups"] = {
-						un(21, title(44)), -- Flame Warden
-						ach(1034, { -- The Fires of Azeroth
+						un(21, title(44)),	-- Flame Warden
+						ach(1034, {	-- The Fires of Azeroth
 							["groups"] = {
-								ach(1022, { -- Flame Warden of Eastern Kingdoms
-									["groups"] = bubbleDown({["achievementID"] = 1022}, { -- Flame Warden of Eastern Kingdoms [Achievement]
+								ach(1022, {	-- Flame Warden of Eastern Kingdoms
+									["groups"] = bubbleDown({["achievementID"] = 1022}, {	-- Flame Warden of Eastern Kingdoms [Achievement]
 										{
 											["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
 											["questID"] = 11804, 		-- Honor the Flame [Arathi Highlands]
@@ -128,8 +128,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(1023, { -- Flame Warden of Kalimdor
-									["groups"] = bubbleDown({["achievementID"] = 1023}, { -- Flame Warden of Kalimdor [Achievement]
+								ach(1023, {	-- Flame Warden of Kalimdor
+									["groups"] = bubbleDown({["achievementID"] = 1023}, {	-- Flame Warden of Kalimdor [Achievement]
 										{
 											["criteriaID"] = 1,			-- Ashenvale [Criteria]
 											["questID"] = 11805, 		-- Honor the Flame [Ashenvale]
@@ -231,8 +231,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(1024, { -- Flame Warden of Outland
-									["groups"] = bubbleDown({["achievementID"] = 1024}, { -- Flame Warden of Outland [Achievement]
+								ach(1024, {	-- Flame Warden of Outland
+									["groups"] = bubbleDown({["achievementID"] = 1024}, {	-- Flame Warden of Outland [Achievement]
 										{
 											["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
 											["questID"] = 11807,		-- Honor the Flame [Blade's Edge Mountains]
@@ -285,8 +285,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(6008, { -- Flame Warden of Northrend
-									["groups"] = bubbleDown({["achievementID"] = 6008}, { -- Flame Warden of Northrend [Achievement]
+								ach(6008, {	-- Flame Warden of Northrend
+									["groups"] = bubbleDown({["achievementID"] = 6008}, {	-- Flame Warden of Northrend [Achievement]
 										{
 											["criteriaID"] = 1,			-- Dragonblight [Criteria]
 											["questID"] = 13487,		-- Honor the Flame [Dragonblight]
@@ -346,8 +346,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(6011, { -- Flame Warden of Cataclysm
-									["groups"] = bubbleDown({["achievementID"] = 6011}, { -- Flame Warden of Cataclysm [Achievement]
+								ach(6011, {	-- Flame Warden of Cataclysm
+									["groups"] = bubbleDown({["achievementID"] = 6011}, {	-- Flame Warden of Cataclysm [Achievement]
 										{
 											["criteriaID"] = 1,			-- Uldum [Criteria]
 											["questID"] = 28950,		-- Honor the Flame [Uldum]
@@ -389,10 +389,10 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(1035, { -- Desecration of the Horde
+						ach(1035, {	-- Desecration of the Horde
 							["groups"] = {
-								ach(1028, { -- Extinguishing Eastern Kingdoms
-									["groups"] = bubbleDown({["achievementID"] = 1028}, { -- Extinguishing Eastern Kingdoms [Achievement]
+								ach(1028, {	-- Extinguishing Eastern Kingdoms
+									["groups"] = bubbleDown({["achievementID"] = 1028}, {	-- Extinguishing Eastern Kingdoms [Achievement]
 										{
 											["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
 											["maps"] = { 14 }, 			-- Arathi Highlands
@@ -466,8 +466,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(1029, { -- Extinguishing Kalimdor
-									["groups"] = bubbleDown({["achievementID"] = 1029}, { -- Extinguishing Kalimdor [Achievement]
+								ach(1029, {	-- Extinguishing Kalimdor
+									["groups"] = bubbleDown({["achievementID"] = 1029}, {	-- Extinguishing Kalimdor [Achievement]
 										{
 											["criteriaID"] = 1,			-- Ashenvale [Criteria]
 											["maps"] = { 63 },			-- Ashenvale
@@ -541,8 +541,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}), 
-								ach(1030, { -- Extinguishing Outland
-									["groups"] = bubbleDown({["achievementID"] = 1030}, { -- Extinguishing Outland [Achievement]
+								ach(1030, {	-- Extinguishing Outland
+									["groups"] = bubbleDown({["achievementID"] = 1030}, {	-- Extinguishing Outland [Achievement]
 										{
 											["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
 											["maps"] = { 105 },			-- Blade's Edge Mountains
@@ -581,8 +581,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(6007, { -- Extinguishing Northrend
-									["groups"] = bubbleDown({["achievementID"] = 6007}, { -- Extinguishing Northrend [Achievement]
+								ach(6007, {	-- Extinguishing Northrend
+									["groups"] = bubbleDown({["achievementID"] = 6007}, {	-- Extinguishing Northrend [Achievement]
 										{
 											["criteriaID"] = 1,			-- Borean Tundra [Criteria]
 											["maps"] = { 114 },			-- Borean Tundra
@@ -626,8 +626,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(6013, { -- Extinguishing the Cataclysm
-									["groups"] = bubbleDown({["achievementID"] = 6013}, { -- Extinguishing the Cataclysm [Achievement]
+								ach(6013, {	-- Extinguishing the Cataclysm
+									["groups"] = bubbleDown({["achievementID"] = 6013}, {	-- Extinguishing the Cataclysm [Achievement]
 										{
 											["criteriaID"] = 1,			-- Twilight Highlands [Criteria]
 											["maps"] = { 241 },			-- Twilight Highlands
@@ -644,51 +644,51 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(263, { -- Ice the Frost Lord
+						ach(263, {	-- Ice the Frost Lord
 							
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(271, { -- Burning Hot Pole Dance
+						ach(271, {	-- Burning Hot Pole Dance
 							
 							["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(1145, { -- King of the Fire Festival
+						ach(1145, {	-- King of the Fire Festival
 							["groups"] = {
 								{
-									["questID"] = 9324, -- Stealing Orgrimmar's Flame
-									["itemID"] = 23179, -- Flame of Orgrimmar
-									["maps"] = { 85, }, -- Orgrimmar
+									["questID"] = 9324,	-- Stealing Orgrimmar's Flame
+									["itemID"] = 23179,	-- Flame of Orgrimmar
+									["maps"] = { 85, },	-- Orgrimmar
 									["races"] = ALLIANCE_ONLY,
 								},
 								{
-									["questID"] = 9325, -- Stealing Thunder Bluff's Flame
-									["itemID"] = 23180, -- Flame of Thunder Bluff
-									["maps"] = { 88 }, -- Thunder Bluff
+									["questID"] = 9325,	-- Stealing Thunder Bluff's Flame
+									["itemID"] = 23180,	-- Flame of Thunder Bluff
+									["maps"] = { 88 },	-- Thunder Bluff
 									["races"] = ALLIANCE_ONLY,
 								},
 								{
-									["questID"] = 9326, -- Stealing the Undercity's Flame
-									["itemID"] = 23181, -- Flame of the Undercity
-									["maps"] = { 90 }, -- Undercity
+									["questID"] = 9326,	-- Stealing the Undercity's Flame
+									["itemID"] = 23181,	-- Flame of the Undercity
+									["maps"] = { 90 },	-- Undercity
 									["races"] = ALLIANCE_ONLY,
 								},
 								{
-									["questID"] = 11935, -- Stealing Silvermoon's Flame
-									["itemID"] = 35568, -- Flame of Silvermoon
-									["maps"] = { 110 }, -- Silvermoon City
+									["questID"] = 11935,	-- Stealing Silvermoon's Flame
+									["itemID"] = 35568,	-- Flame of Silvermoon
+									["maps"] = { 110 },	-- Silvermoon City
 									["races"] = ALLIANCE_ONLY,
 								},
-								q(9365, { -- A Thief's Reward
+								q(9365, {	-- A Thief's Reward
 									["groups"] = {
-										un(21, i(23323)), -- Crown of the Fire Festival
+										un(21, i(23323)),	-- Crown of the Fire Festival
 									},
-									["qg"] = 16817, -- Festival Loremaster
+									["qg"] = 16817,	-- Festival Loremaster
 									["sourceQuests"] = {
-										9324, -- Stealing Orgrimmar's Flame
-										9325, -- Stealing Thunder Bluff's Flame
-										9326, -- Stealing the Undercity's Flame
-										11935, -- Stealing Silvermoon's Flame
+										9324,	-- Stealing Orgrimmar's Flame
+										9325,	-- Stealing Thunder Bluff's Flame
+										9326,	-- Stealing the Undercity's Flame
+										11935,	-- Stealing Silvermoon's Flame
 									},
 									["maps"] = {
 										84,	-- Stormwind City
@@ -701,16 +701,16 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(272, { -- Torch Juggler
+						ach(272, {	-- Torch Juggler
 							
-							["maps"] = { 125 }, -- Dalaran (Northrend)
+							["maps"] = { 125 },	-- Dalaran (Northrend)
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(8045, { -- Flame Warden of Pandaria
-					["groups"] = bubbleDown({["achievementID"] = 8045}, { -- Flame Warden of Pandaria [Achievement]
+				ach(8045, {	-- Flame Warden of Pandaria
+					["groups"] = bubbleDown({["achievementID"] = 8045}, {	-- Flame Warden of Pandaria [Achievement]
 						{
 							["criteriaID"] = 1,			-- Dread Wastes [Criteria]
 							["questID"] = 32497,		-- Honor the Flame [Dread Wastes]
@@ -763,8 +763,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(11283, { -- Flame Warden of Draenor
-					["groups"] = bubbleDown({["achievementID"] = 11283}, { -- Flame Warden of Draenor [Achievement]
+				ach(11283, {	-- Flame Warden of Draenor
+					["groups"] = bubbleDown({["achievementID"] = 11283}, {	-- Flame Warden of Draenor [Achievement]
 						{
 							["criteriaID"] = 1,			-- Spires of Arak [Criteria]
 							["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
@@ -803,8 +803,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(11280, { -- Flame Warden of the Broken Isles
-					["groups"] = bubbleDown({["achievementID"] = 11280}, { -- Flame Warden of the Broken Isles [Achievement]
+				ach(11280, {	-- Flame Warden of the Broken Isles
+					["groups"] = bubbleDown({["achievementID"] = 11280}, {	-- Flame Warden of the Broken Isles [Achievement]
 						{
 							["criteriaID"] = 1,			-- Azsuna [Criteria]
 							["questID"] = 44574,		-- Honor the Flame [Azsuna]
@@ -843,27 +843,27 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(8042, { -- Extinguishing Pandaria
+				ach(8042, {	-- Extinguishing Pandaria
 					
-					["maps"] = { 390, }, -- Vale of Eternal Blossoms
+					["maps"] = { 390, },	-- Vale of Eternal Blossoms
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(11276, { -- Extinguishing Draenor
+				ach(11276, {	-- Extinguishing Draenor
 					
-					["maps"] = { 525, }, -- Frostfire Ridge
+					["maps"] = { 525, },	-- Frostfire Ridge
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(11278, { -- Extinguishing the Broken Isles
+				ach(11278, {	-- Extinguishing the Broken Isles
 					
-					["maps"] = { 680 }, -- Suramar
+					["maps"] = { 680 },	-- Suramar
 					["races"] = ALLIANCE_ONLY,
 				}),
-				ach(1039, { -- The Flame Keeper
+				ach(1039, {	-- The Flame Keeper
 					["groups"] = {
-						un(21, title(45)), -- Flame Keeper
-						ach(1036, { -- The Fires of Azeroth
-							ach(1025, { -- Flame Keeper of Eastern Kingdoms
-								["groups"] = bubbleDown({["achievementID"] = 1025}, { -- Flame Keeper of Eastern Kingdoms [Achievement]
+						un(21, title(45)),	-- Flame Keeper
+						ach(1036, {	-- The Fires of Azeroth
+							ach(1025, {	-- Flame Keeper of Eastern Kingdoms
+								["groups"] = bubbleDown({["achievementID"] = 1025}, {	-- Flame Keeper of Eastern Kingdoms [Achievement]
 									{
 										["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
 										["questID"] = 11840, 		-- Honor the Flame [Arathi Highlands]
@@ -965,8 +965,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								}),
 								["races"] = HORDE_ONLY,
 							}),
-							ach(1026, { -- Flame Keeper of Kalimdor
-								["groups"] = bubbleDown({["achievementID"] = 1026}, { -- Flame Keeper of Kalimdor [Achievement]
+							ach(1026, {	-- Flame Keeper of Kalimdor
+								["groups"] = bubbleDown({["achievementID"] = 1026}, {	-- Flame Keeper of Kalimdor [Achievement]
 									{
 										["criteriaID"] = 1,			-- Ashenvale [Criteria]
 										["questID"] = 11841, 		-- Honor the Flame [Ashenvale]
@@ -1068,8 +1068,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								}),
 								["races"] = HORDE_ONLY,
 							}),
-							ach(1027, { -- Flame Keeper of Outland
-								["groups"] = bubbleDown({["achievementID"] = 1027}, { -- Flame Keeper of Outland [Achievement]
+							ach(1027, {	-- Flame Keeper of Outland
+								["groups"] = bubbleDown({["achievementID"] = 1027}, {	-- Flame Keeper of Outland [Achievement]
 									{
 										["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
 										["questID"] = 11843,		-- Honor the Flame [Blade's Edge Mountains]
@@ -1122,8 +1122,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								}),
 								["races"] = HORDE_ONLY,
 							}),
-							ach(6009, { -- Flame Keeper of Northrend
-								["groups"] = bubbleDown({["achievementID"] = 6009}, { -- Flame Keeper of Northrend [Achievement]
+							ach(6009, {	-- Flame Keeper of Northrend
+								["groups"] = bubbleDown({["achievementID"] = 6009}, {	-- Flame Keeper of Northrend [Achievement]
 									{
 										["criteriaID"] = 1,			-- Dragonblight [Criteria]
 										["questID"] = 13495,		-- Honor the Flame [Dragonblight]
@@ -1183,8 +1183,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								}),
 								["races"] = HORDE_ONLY,
 							}),
-							ach(6012, { -- Flame Keeper of Cataclysm
-								["groups"] = bubbleDown({["achievementID"] = 6012}, { -- Flame Keeper of Cataclysm [Achievement]
+							ach(6012, {	-- Flame Keeper of Cataclysm
+								["groups"] = bubbleDown({["achievementID"] = 6012}, {	-- Flame Keeper of Cataclysm [Achievement]
 									{
 										["criteriaID"] = 1,			-- Vashj'ir [Criteria]
 										["questID"] = 29031,		-- Honor the Flame [Vashj'ir]
@@ -1224,10 +1224,10 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 							}),
 						}),
-						ach(1037, { -- Desecration of the Alliance
+						ach(1037, {	-- Desecration of the Alliance
 							["groups"] = {
-								ach(1031, { -- Extinguishing Eastern Kingdoms
-									["groups"] = bubbleDown({["achievementID"] = 1031}, { -- Extinguishing Eastern Kingdoms [Achievement]
+								ach(1031, {	-- Extinguishing Eastern Kingdoms
+									["groups"] = bubbleDown({["achievementID"] = 1031}, {	-- Extinguishing Eastern Kingdoms [Achievement]
 										{
 											["criteriaID"] = 1,			-- Arathi Highlands [Criteria]
 											["maps"] = { 14 }, 			-- Arathi Highlands
@@ -1311,8 +1311,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = HORDE_ONLY,
 								}),
-								ach(1032, { -- Extinguishing Kalimdor
-									["groups"] = bubbleDown({["achievementID"] = 1032}, { -- Extinguishing Kalimdor [Achievement]
+								ach(1032, {	-- Extinguishing Kalimdor
+									["groups"] = bubbleDown({["achievementID"] = 1032}, {	-- Extinguishing Kalimdor [Achievement]
 										{
 											["criteriaID"] = 1,			-- Ashenvale [Criteria]
 											["maps"] = { 63 },			-- Ashenvale
@@ -1386,8 +1386,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = HORDE_ONLY,
 								}),
-								ach(1033, { -- Extinguishing Outland
-									["groups"] = bubbleDown({["achievementID"] = 1033}, { -- Extinguishing Outland [Achievement]
+								ach(1033, {	-- Extinguishing Outland
+									["groups"] = bubbleDown({["achievementID"] = 1033}, {	-- Extinguishing Outland [Achievement]
 										{
 											["criteriaID"] = 1,			-- Blade's Edge Mountains [Criteria]
 											["maps"] = { 105 },			-- Blade's Edge Mountains
@@ -1426,8 +1426,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = HORDE_ONLY,
 								}),
-								ach(6010, { -- Extinguishing Northrend
-									["groups"] = bubbleDown({["achievementID"] = 6010}, { -- Extinguishing Northrend [Achievement]
+								ach(6010, {	-- Extinguishing Northrend
+									["groups"] = bubbleDown({["achievementID"] = 6010}, {	-- Extinguishing Northrend [Achievement]
 										{
 											["criteriaID"] = 1,			-- Dragonblight [Criteria]
 											["maps"] = { 115 },			-- Dragonblight
@@ -1471,8 +1471,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									}),
 									["races"] = HORDE_ONLY,
 								}),
-								ach(6014, { -- Extinguishing the Cataclysm
-									["groups"] = bubbleDown({["achievementID"] = 6014}, { -- Extinguishing the Cataclysm [Achievement]
+								ach(6014, {	-- Extinguishing the Cataclysm
+									["groups"] = bubbleDown({["achievementID"] = 6014}, {	-- Extinguishing the Cataclysm [Achievement]
 										{
 											["criteriaID"] = 1,			-- Twilight Highlands [Criteria]
 											["maps"] = { 241 },			-- Twilight Highlands
@@ -1488,46 +1488,46 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								}),
 							},
 						}),
-						ach(271, { -- Burning Hot Pole Dance
+						ach(271, {	-- Burning Hot Pole Dance
 							
 							["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
 							["races"] = HORDE_ONLY,
 						}),
-						ach(263, { -- Ice the Frost Lord
+						ach(263, {	-- Ice the Frost Lord
 							
 							["races"] = HORDE_ONLY,
 						}),
-						ach(1145, { -- King of the Fire Festival
+						ach(1145, {	-- King of the Fire Festival
 							["groups"] = {
 								{
-									["questID"] = 9330, -- Stealing Stormwind's Flame
-									["itemID"] = 23182, -- Flame of Stormwind
+									["questID"] = 9330,	-- Stealing Stormwind's Flame
+									["itemID"] = 23182,	-- Flame of Stormwind
 									["races"] = HORDE_ONLY,
-									["maps"] = { 84, }, -- Stormwind City
+									["maps"] = { 84, },	-- Stormwind City
 								},
 								{
-									["questID"] = 9331, -- Stealing Ironforge's Flame
-									["itemID"] = 23183, -- Flame of Ironforge
+									["questID"] = 9331,	-- Stealing Ironforge's Flame
+									["itemID"] = 23183,	-- Flame of Ironforge
 									["races"] = HORDE_ONLY,
-									["maps"] = { 87, }, -- Ironforge
+									["maps"] = { 87, },	-- Ironforge
 								},
 								{
-									["questID"] = 9332, -- Stealing Darnassus's Flame
-									["itemID"] = 23184, -- Flame of Darnassus
+									["questID"] = 9332,	-- Stealing Darnassus's Flame
+									["itemID"] = 23184,	-- Flame of Darnassus
 									["races"] = HORDE_ONLY,
-									["maps"] = { 89, }, -- Darnassus
+									["maps"] = { 89, },	-- Darnassus
 								},
 								{
-									["questID"] = 11933, -- Stealing the Exodar's Flame
-									["itemID"] = 35569, -- Flame of the Exodar
+									["questID"] = 11933,	-- Stealing the Exodar's Flame
+									["itemID"] = 35569,	-- Flame of the Exodar
 									["races"] = HORDE_ONLY,
-									["maps"] = { 103, }, -- The Exodar
+									["maps"] = { 103, },	-- The Exodar
 								},
-								q(9339, { -- A Thief's Reward
+								q(9339, {	-- A Thief's Reward
 									["groups"] = {
-										un(21, i(23323)), -- Crown of the Fire Festival
+										un(21, i(23323)),	-- Crown of the Fire Festival
 									},
-									["qg"] = 16818, -- Festival Talespinner
+									["qg"] = 16818,	-- Festival Talespinner
 									["maps"] = {
 										85,	-- Orgrimmar
 										88,	-- Thunder Bluff
@@ -1537,25 +1537,25 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									},
 									["races"] = HORDE_ONLY,
 									["sourceQuests"] = {
-										9330, -- Stealing Stormwind's Flame
-										9331, -- Stealing Ironforge's Flame
-										9332, -- Stealing Darnassus's Flame
-										11933, -- Stealing the Exodar's Flame
+										9330,	-- Stealing Stormwind's Flame
+										9331,	-- Stealing Ironforge's Flame
+										9332,	-- Stealing Darnassus's Flame
+										11933,	-- Stealing the Exodar's Flame
 									},
 								}),
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						ach(272, { -- Torch Juggler
+						ach(272, {	-- Torch Juggler
 							
-							["maps"] = { 125, }, -- Dalaran (Northrend)
+							["maps"] = { 125, },	-- Dalaran (Northrend)
 							["races"] = HORDE_ONLY,
 						}),
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				ach(8044, { -- Flame Keeper of Pandaria
-					["groups"] = bubbleDown({["achievementID"] = 8044}, { -- Flame Keeper of Pandaria [Achievement]
+				ach(8044, {	-- Flame Keeper of Pandaria
+					["groups"] = bubbleDown({["achievementID"] = 8044}, {	-- Flame Keeper of Pandaria [Achievement]
 						{
 							["criteriaID"] = 1,			-- Dread Wastes [Criteria]
 							["questID"] = 32497,		-- Honor the Flame [Dread Wastes]
@@ -1608,8 +1608,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = HORDE_ONLY,
 				}),
-				ach(11284, { -- Flame Keeper of Draenor
-					["groups"] = bubbleDown({["achievementID"] = 11284}, { -- Flame Keeper of Draenor [Achievement]
+				ach(11284, {	-- Flame Keeper of Draenor
+					["groups"] = bubbleDown({["achievementID"] = 11284}, {	-- Flame Keeper of Draenor [Achievement]
 						{
 							["criteriaID"] = 1,			-- Spires of Arak [Criteria]
 							["questID"] = 44570,		-- Honor the Flame [Spires of Arak]
@@ -1648,8 +1648,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = HORDE_ONLY,
 				}),
-				ach(11282, { -- Flame Keeper of the Broken Isles
-					["groups"] = bubbleDown({["achievementID"] = 11282}, { -- Flame Keeper of the Broken Isles [Achievement]
+				ach(11282, {	-- Flame Keeper of the Broken Isles
+					["groups"] = bubbleDown({["achievementID"] = 11282}, {	-- Flame Keeper of the Broken Isles [Achievement]
 						{
 							["criteriaID"] = 1,			-- Azsuna [Criteria]
 							["questID"] = 44574,		-- Honor the Flame [Azsuna]
@@ -1688,28 +1688,28 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 					["races"] = HORDE_ONLY,
 				}),
-				ach(8043, { -- Extinguishing Pandaria
+				ach(8043, {	-- Extinguishing Pandaria
 					
-					["maps"] = { 390, }, -- Vale of Eternal Blossoms
+					["maps"] = { 390, },	-- Vale of Eternal Blossoms
 					["races"] = HORDE_ONLY,
 				}),
-				ach(11277, { -- Extinguishing Draenor
+				ach(11277, {	-- Extinguishing Draenor
 					
-					["maps"] = { 539, }, -- Shadowmoon Valley
+					["maps"] = { 539, },	-- Shadowmoon Valley
 					["races"] = HORDE_ONLY,
 				}),
-				ach(11279, { -- Extinguishing the Broken Isles
+				ach(11279, {	-- Extinguishing the Broken Isles
 					
-					["maps"] = { 680, }, -- Suramar
+					["maps"] = { 680, },	-- Suramar
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(-139, { -- Bosses
+			n(-139, {	-- Bosses
 				["groups"] = {
-					n(25740, { -- Ahune
+					n(25740, {	-- Ahune
 						["groups"] = {
 							ach(263),	-- Ice the Frost Lord
-							un(21, i(149753, { -- Knapsack of Chilled Goods [Uncommon Quality]
+							un(21, i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
 								["groups"] = {
 									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
 								},
@@ -1724,39 +1724,43 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								["lvl"] = 98,
 							})),
 							{
-								["questID"] = 11972, -- Shards of Ahune
-								["itemID"] = 35723, -- Shards of Ahune (Item)
+								["questID"] = 11972,	-- Shards of Ahune
+								["itemID"] = 35723,	-- Shards of Ahune (Item)
 								["groups"] = {
 									un(21, i(35279)),	-- Tabard of Summer Skies
 									un(21, i(35280)),	-- Tabard of Summer Flames
 								},
 								["description"] = "This item can be looted and completed once per character, but has no level requirement.",
 							},
-							un(21, i(138838)), -- Illusion: Deathfrost
-							un(21, dr(3, i(35498))), -- Formula: Enchant Weapon - Deathfrost
-							un(2, i(35514)), -- Frostscythe of Lord Ahune
-							un(2, i(54806)), -- Frostscythe of Lord Ahune
-							un(2, i(69771)), -- Frostscythe of Lord Ahune
-							un(2, i(95426)), -- Frostscythe of Lord Ahune
-							un(2, i(35497)), -- Cloak of the Frigid Winds
-							un(2, i(54805)), -- Cloak of the Frigid Winds
-							un(2, i(69769)), -- Cloak of the Frigid Winds
-							un(2, i(95425)), -- Cloak of the Frigid Winds
-							un(2, i(35496)), -- Icebound Cloak
-							un(2, i(54801)), -- Icebound Cloak
-							un(2, i(69770)), -- Icebound Cloak
-							un(2, i(95427)), -- Icebound Cloak
-							un(2, i(35494)), -- Shroud of Winter's Chill
-							un(2, i(54804)), -- Shroud of Winter's Chill
-							un(2, i(69768)), -- Shroud of Winter's Chill
-							un(2, i(95428)), -- Shroud of Winter's Chill
-							un(2, i(54803)), -- The Frost Lord's Battle Shroud
-							un(2, i(69767)), -- The Frost Lord's Battle Shroud
-							un(2, i(95429)), -- The Frost Lord's Battle Shroud
-							un(2, i(35495)), -- The Frost Lord's War Cloak
-							un(2, i(54802)), -- The Frost Lord's War Cloak
-							un(2, i(69766)), -- The Frost Lord's War Cloak
-							un(2, i(95430)), -- The Frost Lord's War Cloak
+							un(21, i(138838)),	-- Illusion: Deathfrost
+							un(21, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
+							un(2, i(35514)),	-- Frostscythe of Lord Ahune
+							un(2, i(54806)),	-- Frostscythe of Lord Ahune
+							un(2, i(69771)),	-- Frostscythe of Lord Ahune
+							un(2, i(95426)),	-- Frostscythe of Lord Ahune
+							un(2, i(35507)),	-- Amulet of Bitter Hatred
+							un(2, i(35509)),	-- Amulet of Glacial Tranquility
+							un(2, i(35508)),	-- Choker of the Arctic Flow
+							un(2, i(35511)),	-- Hailstone Pendant
+							un(2, i(35497)),	-- Cloak of the Frigid Winds
+							un(2, i(54805)),	-- Cloak of the Frigid Winds
+							un(2, i(69769)),	-- Cloak of the Frigid Winds
+							un(2, i(95425)),	-- Cloak of the Frigid Winds
+							un(2, i(35496)),	-- Icebound Cloak
+							un(2, i(54801)),	-- Icebound Cloak
+							un(2, i(69770)),	-- Icebound Cloak
+							un(2, i(95427)),	-- Icebound Cloak
+							un(2, i(35494)),	-- Shroud of Winter's Chill
+							un(2, i(54804)),	-- Shroud of Winter's Chill
+							un(2, i(69768)),	-- Shroud of Winter's Chill
+							un(2, i(95428)),	-- Shroud of Winter's Chill
+							un(2, i(54803)),	-- The Frost Lord's Battle Shroud
+							un(2, i(69767)),	-- The Frost Lord's Battle Shroud
+							un(2, i(95429)),	-- The Frost Lord's Battle Shroud
+							un(2, i(35495)),	-- The Frost Lord's War Cloak
+							un(2, i(54802)),	-- The Frost Lord's War Cloak
+							un(2, i(69766)),	-- The Frost Lord's War Cloak
+							un(2, i(95430)),	-- The Frost Lord's War Cloak
 							un(21, i(117372)),	-- Cloak of the Frigid Winds
 							un(21, i(117374)),	-- Icebound Cloak
 							un(21, i(117375)),	-- Shroud of Winter's Chill
@@ -1768,7 +1772,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					}),
 				},
 			}),
-			n(-17, { -- Quests
+			n(-17, {	-- Quests
 				["groups"] = {
 					{
 						["questID"] = 11964,	-- Incense for the Summer Scorchlings
@@ -1864,15 +1868,15 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							249,	-- Uldum
 						},
 					},
-					q(11970, { -- The Master of Summer Lore
+					q(11970, {	-- The Master of Summer Lore
 						
 						["qgs"] = {
-							18927, -- Human Commoner
-							19148, -- Dwarf Commoner
-							19171, -- Draenei Commoner
-							19172, -- Gnome Commoner
-							19173, -- Night Elf Commoner
-							20102, -- Goblin Commoner
+							18927,	-- Human Commoner
+							19148,	-- Dwarf Commoner
+							19171,	-- Draenei Commoner
+							19172,	-- Gnome Commoner
+							19173,	-- Night Elf Commoner
+							20102,	-- Goblin Commoner
 						},
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = {
@@ -1889,7 +1893,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							504,	-- Isle of Thunder
 						},
 					}),
-					q(11731, { -- Torch Tossing
+					q(11731, {	-- Torch Tossing
 						
 						["qg"] = 25975,	-- Master Fire Eater
 						["races"] = ALLIANCE_ONLY,
@@ -1900,11 +1904,11 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							103,	-- The Exodar
 						},
 					}),
-					q(11657, { -- Torch Catching
+					q(11657, {	-- Torch Catching
 						
 						["qg"] = 25975,	-- Master Fire Eater
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 11731 }, -- Torch Tossing
+						["sourceQuests"] = { 11731 },	-- Torch Tossing
 						["maps"] = {
 							84,	-- Stormwind City
 							87,	-- Ironforge
@@ -1912,15 +1916,15 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							103,	-- The Exodar
 						},
 					}),
-					q(11971, { -- The Spinner of Summer Tales
+					q(11971, {	-- The Spinner of Summer Tales
 						
 						["qgs"] = {
-							19169, -- Blood Elf Commoner
-							19175, -- Orc Commoner
-							19176, -- Tauren Commoner
-							19177, -- Troll Commoner
-							19178, -- Forsaken Commoner
-							20102, -- Goblin Commoner
+							19169,	-- Blood Elf Commoner
+							19175,	-- Orc Commoner
+							19176,	-- Tauren Commoner
+							19177,	-- Troll Commoner
+							19178,	-- Forsaken Commoner
+							20102,	-- Goblin Commoner
 						},
 						["races"] = HORDE_ONLY,
 						["maps"] = {
@@ -1954,7 +1958,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						
 						["qg"] = 26113,	-- Master Flame Eater
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 11922 }, -- Torch Tossing
+						["sourceQuests"] = { 11922 },	-- Torch Tossing
 						["maps"] = {
 							85,	-- Orgrimmar
 							88,	-- Thunder Bluff
@@ -1963,8 +1967,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					}),
 					{
-						["questID"] = 11886, -- Unusual Activity
-						["qg"] = 26221, -- Earthen Ring Elder
+						["questID"] = 11886,	-- Unusual Activity
+						["qg"] = 26221,	-- Earthen Ring Elder
 						["maps"] = {
 							84,	-- Stormwind City
 							85,	-- Orgrimmar
@@ -1978,29 +1982,29 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						},
 					},
 					{
-						["questID"] = 11891, -- An Innocent Disguise
+						["questID"] = 11891,	-- An Innocent Disguise
 						["qg"] = 25324,		 -- Earthen Ring Guide
-						["sourceQuests"] = { 11886, }, -- Unusual Activity
-						["maps"] = { 63, }, -- Ashenvale
+						["sourceQuests"] = { 11886, },	-- Unusual Activity
+						["maps"] = { 63, },	-- Ashenvale
 					},
 					{
-						["questID"] = 12012, -- Inform the Elder
+						["questID"] = 12012,	-- Inform the Elder
 						["qg"] = 25324,		 -- Earthen Ring Guide
-						["sourceQuests"] = { 11891, }, -- An Innocent Disguise
-						["maps"] = { 63, }, -- Ashenvale
+						["sourceQuests"] = { 11891, },	-- An Innocent Disguise
+						["maps"] = { 63, },	-- Ashenvale
 					},
 				},
 			}),
-			n(-2, { -- Vendors
+			n(-2, {	-- Vendors
 				["groups"] = {
-					n(26123, { -- Midsummer Supplier (Alliance Vendor)
+					n(26123, {	-- Midsummer Supplier (Alliance Vendor)
 						["groups"] = {
-							un(21, i(23247, { -- Burning Blossom
+							un(21, i(23247, {	-- Burning Blossom
 								n(-3199, {
 									["groups"] = { -- Midsummer Reveler Set
-										un(21, i(23324)), -- Mantle of the Fire Festival
-										un(21, i(34685)), -- Vestment of Summer
-										un(21, i(34683)), -- Sandals of Summer
+										un(21, i(23324)),	-- Mantle of the Fire Festival
+										un(21, i(34685)),	-- Vestment of Summer
+										un(21, i(34683)),	-- Sandals of Summer
 									},
 								}),
 								{
@@ -2020,21 +2024,21 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							})),
 						},
 						["maps"] = {
-							84, -- Stormwind City
-							87, -- Ironforge
-							89, -- Darnassus
-							103, -- The Exodar
+							84,	-- Stormwind City
+							87,	-- Ironforge
+							89,	-- Darnassus
+							103,	-- The Exodar
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(26124, { -- Midsummer Merchant (Horde Vendor)
+					n(26124, {	-- Midsummer Merchant (Horde Vendor)
 						["groups"] = {
-							un(21, i(23247, { -- Burning Blossom
-								n(-3199, { -- Midsummer Reveler Set
+							un(21, i(23247, {	-- Burning Blossom
+								n(-3199, {	-- Midsummer Reveler Set
 									["groups"] = {
-										un(21, i(23324)), -- Mantle of the Fire Festival
-										un(21, i(34685)), -- Vestment of Summer
-										un(21, i(34683)), -- Sandals of Summer
+										un(21, i(23324)),	-- Mantle of the Fire Festival
+										un(21, i(34685)),	-- Vestment of Summer
+										un(21, i(34683)),	-- Sandals of Summer
 									},
 								}),
 								{
@@ -2054,10 +2058,10 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							})),
 						},
 						["maps"] = {
-							85, -- Orgrimmar
-							88, -- Thunder Bluff
-							90, -- Undercity
-							110, -- Silvermoon City
+							85,	-- Orgrimmar
+							88,	-- Thunder Bluff
+							90,	-- Undercity
+							110,	-- Silvermoon City
 						},
 						["races"] = HORDE_ONLY,
 					}),

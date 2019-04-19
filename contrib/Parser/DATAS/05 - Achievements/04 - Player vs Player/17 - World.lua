@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9958, { -- Player vs Player
+	n(-9958, {	-- Player vs Player
 		["groups"] = {
-			n(-10058, { -- World
+			n(-10058, {	-- World
 				["groups"] = {
 					ach(12573, {	-- Band of Brothers
 						crit(1),		-- Honorable Kill

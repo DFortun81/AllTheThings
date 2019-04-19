@@ -4,6 +4,15 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(744, { 	-- Temple of Ahn'Qiraj
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 50,
+		["maps"] = {
+			319,	-- The Hive Undergrounds
+			320,	-- The Temple Gates
+			321,	-- Vault of C'Thun
+		},
+		["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
 			n(-17, {	-- Quests
 				faction(910, { 	-- Quests / Brood of Nozdormu
@@ -64,9 +73,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(8579, {	-- Mortal Champions
 					["qg"] = 15503,	-- Kandrostrasz
+				}),
+				q(8595, {	-- Mortal Champions
+					["qg"] = 15503,	-- Kandrostrasz
 					["repeatable"] = true,
 				}),
-				--q(8575),	-- Mortal Champions
 				q(8802, {	-- The Savior of Kalimdor
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God
@@ -129,7 +140,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(8627, {	-- Avenger's Breastplate
-						["qg"] = 115504,	-- Vethsera
+						["qg"] = 15504,	-- Vethsera
 						["repeatable"] = true,
 						["groups"] = {
 							i(21389),	-- Avenger's Breastplate
@@ -502,6 +513,30 @@ _.Instances = { tier(1, {	-- Classic
 						15299,	-- Viscidus
 					},
 				}),
+				i(76402, {	-- Greater Scarab Coffer Key
+					["groups"] = {
+						o(180690, {	-- Large Scarab Coffe
+							i(21156, {	-- Scarab Bag
+								i(20861),	-- Bronze Scarab
+								i(20859),	-- Gold Scarab
+								i(20862),	-- Crystal Scarab
+								i(20865),	-- Ivory Scarab
+								i(20860),	-- Silver Scarab
+								i(20858),	-- Stone Scarab
+								i(20864),	-- Bone Scarab
+								i(20863),	-- Clay Scarab
+							}),
+							i(20876),	-- Idol of Death
+							i(20875),	-- Idol of Night
+							i(20881),	-- Idol of Strife
+							i(20877),	-- Idol of the Sage
+							i(20874),	-- Idol of the Sun
+							i(20882),	-- Idol of War
+							i(20879),	-- Idol of Life
+							i(20878),	-- Idol of Rebirth
+						}),
+					},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(21218, {	-- Blue Qiraji Resonating Crystal
@@ -662,6 +697,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			e(1543, {	-- The Prophet Skeram
+				["creatureID"] = 15263,
 				["groups"] = {
 					i(22222),	-- Plans: Thick Obisidan Breastplate
 					i(93041),	-- Jewel of Maddening Whispers (Pet)
@@ -679,13 +715,17 @@ _.Instances = { tier(1, {	-- Classic
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
 				},
-				["creatureID"] = 15263,
 			}),
 			e(1547, {	-- Silithid Royalty
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 					n(-1, {	-- Common Boss Drops
 						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings",
+						["crs"] = {
+							15511,	-- Lord Kri
+							15543,	-- Princess Yauj
+							15544,	-- Vem
+						},
 						["groups"] = {
 							i(21693),	-- Guise of the Devourer
 							i(21694),	-- Ternary Mantle
@@ -694,13 +734,8 @@ _.Instances = { tier(1, {	-- Classic
 							i(21692),	-- Triad Girdle
 							i(21695),	-- Angelista's Touch
 						},
-						["crs"] = {
-							15511,	-- Lord Kri
-							15543,	-- Princess Yauj
-							15544,	-- Vem
-						},
 					}),
-					n(15511, { -- Lord Kri
+					n(15511, {	-- Lord Kri
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21603),	-- Wand of Qiraji Nobility
@@ -709,7 +744,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(21685),	-- Petrified Scarab
 						},
 					}),
-					n(15543, { -- Princess Yauj
+					n(15543, {	-- Princess Yauj
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21683),	-- Mantle of the Desert Crusade
@@ -719,7 +754,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(21687),	-- Ukko's Ring of Darkness
 						},
 					}),
-					n(15544, { -- Vem
+					n(15544, {	-- Vem
 						["description"] = "Killing this boss last can drop the following items.",
 						["groups"] = {
 							i(21690),	-- Angelista's Charm
@@ -731,6 +766,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1544, {	-- Battleguard Sartura
+				["creatureID"] = 15516,
 				["groups"] = {
 					i(21673),	-- Silithid Claw
 					i(21666),	-- Sartura's Might
@@ -746,9 +782,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(21648),	-- Recomposed Boots
 					i(21670),	-- Badge of the Swarmguard
 				},
-				["creatureID"] = 15516,
 			}),
 			e(1545, {	-- Fankriss the Unyielding
+				["creatureID"] = 15510,
 				["groups"] = {
 					i(21635),	-- Barb of the Sand Reaver
 					i(21650),	-- Ancient Qiraji Ripper
@@ -762,13 +798,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(21645),	-- Hive Tunneler's Boots
 					i(21647),	-- Fetish of the Sand Reaver
 				},
-				["creatureID"] = 15510,
 			}),
 			e(1548, {	-- Viscidus
+				["description"] = "This boss requires 20 frost hits to freeze. A fast dagger or one-hander with enchant weapon - elemental force or endothermic blaster toy (boss at 0%) to do this. Once frozen, you need 30 melee hits to shatter him. Equipping crate of kidnapped puppies or barov peasant caller trinket and using it after boss freezes will help to do this.",
+				["creatureID"] = 15299,
 				["groups"] = {
 					i(20928, {	-- Qiraji Bindings of Command
 						{
-							["questID"] = 8544, -- Conqueror's Spaulders (Quest)
+							["questID"] = 8544,	-- Conqueror's Spaulders (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -777,7 +814,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8559, -- Conqueror's Greaves (Quest)
+							["questID"] = 8559,	-- Conqueror's Greaves (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -786,7 +823,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8641, -- Deathdealer's Spaulders (Quest)
+							["questID"] = 8641,	-- Deathdealer's Spaulders (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -795,7 +832,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8637, -- Deathdealer's Boots (Quest)
+							["questID"] = 8637,	-- Deathdealer's Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -804,7 +841,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8594, -- Mantle of the Oracle (Quest)
+							["questID"] = 8594,	-- Mantle of the Oracle (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -813,7 +850,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8596, -- Footwraps of the Oracle (Quest)
+							["questID"] = 8596,	-- Footwraps of the Oracle (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -822,7 +859,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8659, -- Striker's Pauldrons (Quest)
+							["questID"] = 8659,	-- Striker's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -831,7 +868,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8626, -- Striker's Footguards (Quest)
+							["questID"] = 8626,	-- Striker's Footguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -842,7 +879,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					i(20932, {	-- Qiraji Bindings of Dominance
 						{
-							["questID"] = 8630, -- Avenger's Pauldrons (Quest)
+							["questID"] = 8630,	-- Avenger's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -851,7 +888,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8655, -- Avenger's Greaves (Quest)
+							["questID"] = 8655,	-- Avenger's Greaves (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -860,7 +897,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8664, -- Doomcaller's Mantle (Quest)
+							["questID"] = 8664,	-- Doomcaller's Mantle (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -869,7 +906,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8660, -- Doomcaller's Footwraps (Quest)
+							["questID"] = 8660,	-- Doomcaller's Footwraps (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -878,7 +915,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8625, -- Enigma Shoulderpads (Quest)
+							["questID"] = 8625,	-- Enigma Shoulderpads (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -887,7 +924,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8634, -- Enigma Boots (Quest)
+							["questID"] = 8634,	-- Enigma Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -896,7 +933,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8669, -- Genesis Shoulderpads (Quest)
+							["questID"] = 8669,	-- Genesis Shoulderpads (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -905,7 +942,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8665, -- Genesis Boots (Quest)
+							["questID"] = 8665,	-- Genesis Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -914,7 +951,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8602, -- Stormcaller's Pauldrons (Quest)
+							["questID"] = 8602,	-- Stormcaller's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -923,7 +960,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8621, -- Stormcaller's Footguards (Quest)
+							["questID"] = 8621,	-- Stormcaller's Footguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -940,14 +977,13 @@ _.Instances = { tier(1, {	-- Classic
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
 				},
-				["description"] = "This boss requires 20 frost hits to freeze. A fast dagger or one-hander with enchant weapon - elemental force or endothermic blaster toy (boss at 0%) to do this. Once frozen, you need 30 melee hits to shatter him. Equipping crate of kidnapped puppies or barov peasant caller trinket and using it after boss freezes will help to do this.",
-				["creatureID"] = 15299,
 			}),
 			e(1546, {	-- Princess Huhuran
+				["creatureID"] = 15509,
 				["groups"] = {
 					i(20928, {	-- Qiraji Bindings of Command
 						{
-							["questID"] = 8544, -- Conqueror's Spaulders (Quest)
+							["questID"] = 8544,	-- Conqueror's Spaulders (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -956,7 +992,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8559, -- Conqueror's Greaves (Quest)
+							["questID"] = 8559,	-- Conqueror's Greaves (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -965,7 +1001,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8641, -- Deathdealer's Spaulders (Quest)
+							["questID"] = 8641,	-- Deathdealer's Spaulders (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -974,7 +1010,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8637, -- Deathdealer's Boots (Quest)
+							["questID"] = 8637,	-- Deathdealer's Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -983,7 +1019,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8594, -- Mantle of the Oracle (Quest)
+							["questID"] = 8594,	-- Mantle of the Oracle (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -992,7 +1028,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8596, -- Footwraps of the Oracle (Quest)
+							["questID"] = 8596,	-- Footwraps of the Oracle (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -1001,7 +1037,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8659, -- Striker's Pauldrons (Quest)
+							["questID"] = 8659,	-- Striker's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -1010,7 +1046,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8626, -- Striker's Footguards (Quest)
+							["questID"] = 8626,	-- Striker's Footguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -1021,7 +1057,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					i(20932, {	-- Qiraji Bindings of Dominance
 						{
-							["questID"] = 8630, -- Avenger's Pauldrons (Quest)
+							["questID"] = 8630,	-- Avenger's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -1030,7 +1066,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8655, -- Avenger's Greaves (Quest)
+							["questID"] = 8655,	-- Avenger's Greaves (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -1039,7 +1075,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8664, -- Doomcaller's Mantle (Quest)
+							["questID"] = 8664,	-- Doomcaller's Mantle (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -1048,7 +1084,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8660, -- Doomcaller's Footwraps (Quest)
+							["questID"] = 8660,	-- Doomcaller's Footwraps (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -1057,7 +1093,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8625, -- Enigma Shoulderpads (Quest)
+							["questID"] = 8625,	-- Enigma Shoulderpads (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -1066,7 +1102,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8634, -- Enigma Boots (Quest)
+							["questID"] = 8634,	-- Enigma Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -1075,7 +1111,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8669, -- Genesis Shoulderpads (Quest)
+							["questID"] = 8669,	-- Genesis Shoulderpads (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -1084,7 +1120,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8665, -- Genesis Boots (Quest)
+							["questID"] = 8665,	-- Genesis Boots (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -1093,7 +1129,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8602, -- Stormcaller's Pauldrons (Quest)
+							["questID"] = 8602,	-- Stormcaller's Pauldrons (Quest)
 							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -1102,7 +1138,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8621, -- Stormcaller's Footguards (Quest)
+							["questID"] = 8621,	-- Stormcaller's Footguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -1118,122 +1154,120 @@ _.Instances = { tier(1, {	-- Classic
 					i(21617),	-- Wasphide Gauntlets
 					i(21620),	-- Ring of the Martyr
 				},
-				["creatureID"] = 15509,
 			}),
 			e(1549, {	-- The Twin Emperors
-				["groups"] = {
-					n(15276, { -- Emperor Vek'lor
-						i(20930, {	-- Vek'lor's Diadem
-							{
-								["questID"] = 8628, -- Avenger's Crown (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {2},	-- Paladin
-								["groups"] = {
-									i(21387),	-- Avenger's Crown
-								},
+				n(15276, {	-- Emperor Vek'lor
+					i(20930, {	-- Vek'lor's Diadem
+						{
+							["questID"] = 8628,	-- Avenger's Crown (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {2},	-- Paladin
+							["groups"] = {
+								i(21387),	-- Avenger's Crown
 							},
-							{
-								["questID"] = 8639, -- Deathdealer's Helm (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {4},	-- Rogue
-								["groups"] = {
-									i(21360),	-- Deathdealer's Helm
-								},
+						},
+						{
+							["questID"] = 8639,	-- Deathdealer's Helm (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {4},	-- Rogue
+							["groups"] = {
+								i(21360),	-- Deathdealer's Helm
 							},
-							{
-								["questID"] = 8667, -- Genesis Helm (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {11},	-- Druid
-								["groups"] = {
-									i(21353),	-- Genesis Helm
-								},
+						},
+						{
+							["questID"] = 8667,	-- Genesis Helm (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {11},	-- Druid
+							["groups"] = {
+								i(21353),	-- Genesis Helm
 							},
-							{
-								["questID"] = 8623, -- Stormcaller's Diadem (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {7},	-- Shaman
-								["groups"] = {
-									i(21372),	-- Stormcaller's Diadem
-								},
+						},
+						{
+							["questID"] = 8623,	-- Stormcaller's Diadem (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {7},	-- Shaman
+							["groups"] = {
+								i(21372),	-- Stormcaller's Diadem
 							},
-							{
-								["questID"] = 8657, -- Striker's Diadem (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {3},	-- Hunter
-								["groups"] = {
-									i(21366),	-- Striker's Diadem
-								},
+						},
+						{
+							["questID"] = 8657,	-- Striker's Diadem (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {3},	-- Hunter
+							["groups"] = {
+								i(21366),	-- Striker's Diadem
 							},
-						}),
-						i(20735),	-- Formula: Enchant Cloak - Subtlety
-						i(93040), 	-- Anubisath Idol
-						i(21597), 	-- Royal Scepter of Vek'lor
-						i(21602), 	-- Qiraji Execution Bracers
-						i(21599), 	-- Vek'lor's Gloves of Devastation
-						i(21598), 	-- Royal Qiraji Belt
-						i(21600), 	-- Boots of Epiphany
-						i(21601),	-- Ring of Emperor Vek'lor
+						},
 					}),
-					n(15275, { -- Emperor Vek'nilash
-						i(20926, {	-- Vek'nilash's Circlet
-							{
-								["questID"] = 8561, -- Conqueror's Crown (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {1},	-- Warrior
-								["groups"] = {
-									i(21329),	-- Conqueror's Crown
-								},
+					i(20735),	-- Formula: Enchant Cloak - Subtlety
+					i(93040), 	-- Anubisath Idol
+					i(21597), 	-- Royal Scepter of Vek'lor
+					i(21602), 	-- Qiraji Execution Bracers
+					i(21599), 	-- Vek'lor's Gloves of Devastation
+					i(21598), 	-- Royal Qiraji Belt
+					i(21600), 	-- Boots of Epiphany
+					i(21601),	-- Ring of Emperor Vek'lor
+				}),
+				n(15275, {	-- Emperor Vek'nilash
+					i(20926, {	-- Vek'nilash's Circlet
+						{
+							["questID"] = 8561,	-- Conqueror's Crown (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {1},	-- Warrior
+							["groups"] = {
+								i(21329),	-- Conqueror's Crown
 							},
-							{
-								["questID"] = 8662, -- Doomcaller's Circlet (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {9},	-- Warlock
-								["groups"] = {
-									i(21337),	-- Doomcaller's Circlet
-								},
+						},
+						{
+							["questID"] = 8662,	-- Doomcaller's Circlet (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {9},	-- Warlock
+							["groups"] = {
+								i(21337),	-- Doomcaller's Circlet
 							},
-							{
-								["questID"] = 8632, -- Enigma Circlet (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {8},	-- Mage
-								["groups"] = {
-									i(21347),	-- Enigma Circlet
-								},
+						},
+						{
+							["questID"] = 8632,	-- Enigma Circlet (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {8},	-- Mage
+							["groups"] = {
+								i(21347),	-- Enigma Circlet
 							},
-							{
-								["questID"] = 8592, -- Tiara of the Oracle (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {5},	-- Priest
-								["groups"] = {
-									i(21348),	-- Tiara of the Oracle
-								},
+						},
+						{
+							["questID"] = 8592,	-- Tiara of the Oracle (Quest)
+							["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+							["repeatable"] = true,
+							["classes"] = {5},	-- Priest
+							["groups"] = {
+								i(21348),	-- Tiara of the Oracle
 							},
-						}),
-						i(20726),	-- Formula: Enchant Gloves - Threat
-						i(21679), 	-- Kalimdor's Revenge
-						i(21608),	-- Amulet of Vek'nilash
-						i(21604), 	-- Bracelets of Royal Redemption
-						i(21605), 	-- Gloves of the Hidden Temple
-						i(21606), 	-- Belt of the Fallen Emperor
-						i(21607), 	-- Grasp of the Fallen Emperor
-						i(21609), 	-- Regenerating Belt of Vek'nilash
+						},
 					}),
-				},
+					i(20726),	-- Formula: Enchant Gloves - Threat
+					i(21679), 	-- Kalimdor's Revenge
+					i(21608),	-- Amulet of Vek'nilash
+					i(21604), 	-- Bracelets of Royal Redemption
+					i(21605), 	-- Gloves of the Hidden Temple
+					i(21606), 	-- Belt of the Fallen Emperor
+					i(21607), 	-- Grasp of the Fallen Emperor
+					i(21609), 	-- Regenerating Belt of Vek'nilash
+				}),
 			}),
 			e(1550, { 	-- Ouro
+				["creatureID"] = 15517,
 				["groups"] = {
 					i(20927, {	-- Ouro's Intact Hide
 						{
-							["questID"] = 8560, -- Conqueror's Legguards (Quest)
+							["questID"] = 8560,	-- Conqueror's Legguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -1242,7 +1276,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8640, -- Deathdealer's Leggings (Quest)
+							["questID"] = 8640,	-- Deathdealer's Leggings (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -1251,7 +1285,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8631, -- Enigma Leggings (Quest)
+							["questID"] = 8631,	-- Enigma Leggings (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -1260,7 +1294,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8593, -- Trousers of the Oracle (Quest)
+							["questID"] = 8593,	-- Trousers of the Oracle (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -1271,7 +1305,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					i(20931, {	-- Skin of the Great Sandworm
 						{
-							["questID"] = 8629, -- Avenger's Legguards (Quest)
+							["questID"] = 8629,	-- Avenger's Legguards (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -1280,7 +1314,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8663, -- Doomcaller's Trousers (Quest)
+							["questID"] = 8663,	-- Doomcaller's Trousers (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -1289,7 +1323,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8668, -- Genesis Trousers (Quest)
+							["questID"] = 8668,	-- Genesis Trousers (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -1298,7 +1332,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8624, -- Stormcaller's Leggings (Quest)
+							["questID"] = 8624,	-- Stormcaller's Leggings (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -1307,7 +1341,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8658, -- Striker's Leggings (Quest)
+							["questID"] = 8658,	-- Striker's Leggings (Quest)
 							["qg"] = 15503,		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -1323,14 +1357,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(23570),	-- Jom Gabbar
 					i(23558),	-- The Burrower's Shell
 				},
-				["creatureID"] = 15517,
 			}),
 			e(1551, { 	-- C'Thun
+				["creatureID"] = 15727,
 				["groups"] = {
 					ach(687),	-- Temple of Ahn'Qiraj
 					i(20929, {	-- Carapace of the Old God
 						{
-							["questID"] = 8627, -- Avenger's Breastplate (Quest)
+							["questID"] = 8627,	-- Avenger's Breastplate (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {2},	-- Paladin
@@ -1339,7 +1373,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8562, -- Conqueror's Breastplate (Quest)
+							["questID"] = 8562,	-- Conqueror's Breastplate (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {1},	-- Warrior
@@ -1348,7 +1382,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8638, -- Deathdealer's Vest (Quest)
+							["questID"] = 8638,	-- Deathdealer's Vest (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {4},	-- Rogue
@@ -1357,7 +1391,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8622, -- Stormcaller's Hauberk (Quest)
+							["questID"] = 8622,	-- Stormcaller's Hauberk (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {7},	-- Shaman
@@ -1366,7 +1400,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8656, -- Striker's Hauberk (Quest)
+							["questID"] = 8656,	-- Striker's Hauberk (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {3},	-- Hunter
@@ -1377,7 +1411,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					i(20933, {	-- Husk of the Old God
 						{
-							["questID"] = 8661, -- Doomcaller's Robes (Quest)
+							["questID"] = 8661,	-- Doomcaller's Robes (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {9},	-- Warlock
@@ -1386,7 +1420,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8633, -- Enigma Robes (Quest)
+							["questID"] = 8633,	-- Enigma Robes (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {8},	-- Mage
@@ -1395,7 +1429,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8666, -- Genesis Vest (Quest)
+							["questID"] = 8666,	-- Genesis Vest (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {11},	-- Druid
@@ -1404,7 +1438,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 						{
-							["questID"] = 8603, -- Vestments of the Oracle (Quest)
+							["questID"] = 8603,	-- Vestments of the Oracle (Quest)
 							["qg"] = 15504,		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
 							["classes"] = {5},	-- Priest
@@ -1430,16 +1464,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(21596),	-- Ring of the Godslayer
 					i(21579),	-- Vanquished Tentacle of C'Thun
 				},
-				["creatureID"] = 15727,
 			}),
-		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["maps"] = {
-			319,	-- The Hive Undergrounds
-			320,	-- The Temple Gates
-			321,	-- Vault of C'Thun
 		},
 	}),
 })};

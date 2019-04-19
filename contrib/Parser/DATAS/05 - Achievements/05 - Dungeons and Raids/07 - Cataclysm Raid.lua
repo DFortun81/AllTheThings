@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-9959, { -- Dungeons & Raids
+	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10007, { -- Cataclysm Raid
+			n(-10007, {	-- Cataclysm Raid
 				["groups"] = {
 					{	-- Aberrant Behavior
 						["achievementID"] = 5310,	-- Aberrant Behavior

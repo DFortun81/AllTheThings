@@ -9,12 +9,12 @@ _.Zones =
 				n(0, {	-- Zone Drops
 					{	-- Plump Dig Rat
 						["itemID"] = 78342,
-						["groups"] = {
-							recipe(6417),	-- Dig Rat Stew
-						},
 						["spellID"] = 0,	-- Filter: No Spell ID plox
 						["crs"] = {
 							3444,	-- Dig Rat
+						},
+						["groups"] = {
+							recipe(6417),	-- Dig Rat Stew
 						},
 					},
 					i(6663),	-- Recipe: Elixir of Giant Growth

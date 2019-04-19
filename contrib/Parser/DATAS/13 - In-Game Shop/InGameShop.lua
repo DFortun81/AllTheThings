@@ -15,6 +15,7 @@ _.InGameShop =
 		un(35, i(97989)),	-- Enchanted Fey Dragon
 		un(2, i(112327)),	-- Grinning Reaver
 		un(35, i(78924)),	-- Heart of the Aspects
+		un(35, i(166774)),	-- Hogrus, Swine of Good Fortune
 		un(35, i(107951)),	-- Iron Skyreaver
 		un(35, i(147901)),	-- Luminous Starseeker
 		un(35, i(122469)),	-- Mystic Runesaber
@@ -61,4 +62,14 @@ _.InGameShop =
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 		})),
 	}),
+	n(-161, {	-- Toys
+			["groups"] = {
+				un(35, i(166778)),	-- Horde's Might Firework
+				un(35, i(166777)),	-- Lion's Pride Firework
+				un(35, i(166779)),	-- Transmorpher Beacon
+			},
+			["description"] = "For a limited time 25% of proceeds will go to WoW Esports prize pools.",
+	}),
+	un(2, i(105911)),	-- Pouch of Enduring Wisdome (was in asia store during 5.4)
+	un(2, i(105912)),	-- Pouch of Enduring Wisdome 5 (was in asia store during 5.4)
 };

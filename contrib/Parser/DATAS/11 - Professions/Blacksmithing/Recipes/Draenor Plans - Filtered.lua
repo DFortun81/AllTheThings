@@ -17,7 +17,8 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 171690--[[Truesteel Ingot]]
 						},
 						{	-- Truesteel Ingot
-							["recipeID"] = 171718--[[Truesteel Ingot]]
+							["recipeID"] = 171718--[[Truesteel Ingot]],
+							["u"] = 1,
 						}
 					}
 				},

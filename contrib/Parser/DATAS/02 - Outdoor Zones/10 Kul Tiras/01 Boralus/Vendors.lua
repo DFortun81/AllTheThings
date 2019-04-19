@@ -19,6 +19,34 @@ _.Zones =
 								{	-- Seafarer's Dubloon
 									["currencyID"] = 1710,	-- Seafarer's Dubloon
 									["g"] = {
+										{	-- Island Expedition Gloves
+											["itemID"] = 167851,	-- Island Expedition Gloves
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Bracers
+											["itemID"] = 167848,	-- Island Expedition Bracers
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Belt
+											["itemID"] = 167855,	-- Island Expedition Belt
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Legwear
+											["itemID"] = 167853,	-- Island Expedition Legwear
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Boots
+											["itemID"] = 167850,	-- Island Expedition Boots
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+										},
+										{	-- Island Expedition Cloak
+											["itemID"] = 167858,	-- Island Expedition Cloak
+											["description"] = "Cost: 35 Seafarer's Dubloons",
+											["g"] = {
+												a(i(160332)),	-- Mud-Slicked Capote -- Opening on Alliance
+												h(i(155305)),	-- Golden City Greatcloak -- Opening on Horde
+											},
+										},
 										{	-- Saltwater Seahorse
 											["itemID"] = 166471,	-- Saltwater Seahorse
 											["description"] = "Cost: 500 Seafarer's Dubloons",
@@ -99,7 +127,7 @@ _.Zones =
 						},
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							["groups"] = {
-								i(11023), -- Ancona Chicken
+								i(11023),	-- Ancona Chicken
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -148,424 +176,432 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
-							["npcID"] = 142564,	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
-							["coord"] = { 56.30, 26.95, 1161 },
+						{	-- Layla Evenkeel
+							["npcID"] = 136059,	-- Layla Evenkeel
+							["coords"] = {
+								{ 77.64, 14.32, 1161 },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								{	-- Mark of Honor
-									["itemID"] = 137642,	-- Mark of Honor
-									["g"] = {
-										{	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
-											["itemID"] = 162262,	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
-											["itemID"] = 162263,	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
-											["itemID"] = 162265,	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
-											["itemID"] = 162266,	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
-											["itemID"] = 162267,	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
-											["itemID"] = 162268,	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
-											["itemID"] = 162269,	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
-											["itemID"] = 162270,	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
-											["itemID"] = 162271,	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
-											["itemID"] = 162272,	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
-											["itemID"] = 162273,	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
-											["itemID"] = 162274,	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
-											["itemID"] = 162277,	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
-											["itemID"] = 162278,	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
-											["itemID"] = 162279,	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
-											["itemID"] = 162280,	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Shanker [Rank 2]
-											["itemID"] = 162281,	-- Recipe: Honorable Combatant's Shanker [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Shanker [Rank 3]
-											["itemID"] = 162282,	-- Recipe: Honorable Combatant's Shanker [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Polearm [Rank 2]
-											["itemID"] = 162283,	-- Recipe: Honorable Combatant's Polearm [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Polearm [Rank 3]
-											["itemID"] = 162284,	-- Recipe: Honorable Combatant's Polearm [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
-											["itemID"] = 162308,	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
-											["itemID"] = 162309,	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
-											["itemID"] = 162353,	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
-											["itemID"] = 162354,	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
-											["itemID"] = 162390,	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
-											["itemID"] = 162391,	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
-											["itemID"] = 162392,	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
-											["itemID"] = 162393,	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
-											["itemID"] = 162394,	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
-											["itemID"] = 162395,	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
-											["itemID"] = 162396,	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
-											["itemID"] = 162397,	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
-											["itemID"] = 162398,	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
-											["itemID"] = 162399,	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
-											["itemID"] = 162402,	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
-											["itemID"] = 162403,	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
-											["itemID"] = 162404,	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
-											["itemID"] = 162405,	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
-											["itemID"] = 162406,	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
-											["itemID"] = 162407,	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
-											["itemID"] = 162408,	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
-											["itemID"] = 162409,	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
-											["itemID"] = 162410,	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Mail Armguards [Rank 3]
-											["itemID"] = 162411,	-- Recipe: Honorable Combatant's Mail Armguards [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Bow [Rank 2]
-											["itemID"] = 162417,	-- Recipe: Honorable Combatant's Bow [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Bow [Rank 3]
-											["itemID"] = 162418,	-- Recipe: Honorable Combatant's Bow [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
-											["itemID"] = 162431,	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
-											["itemID"] = 162432,	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]
-											["itemID"] = 162433,	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
-											["itemID"] = 162434,	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
-											["itemID"] = 162435,	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
-											["itemID"] = 162436,	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
-											["itemID"] = 162437,	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
-											["itemID"] = 162438,	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
-											["itemID"] = 162439,	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
-											["itemID"] = 162440,	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
-											["itemID"] = 162441,	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
-										},
-										{	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
-											["itemID"] = 162442,	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
-											["itemID"] = 162668,	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Spellblade [Rank 3]
-											["itemID"] = 162669,	-- Recipe: Honorable Combatant's Spellblade [Rank 3]
-										},
-										{	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
-											["itemID"] = 163020,	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
-										},
-										{	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
-											["itemID"] = 163021,	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
-										},
-										{	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
-											["itemID"] = 163022,	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
-										},
-										{	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
-											["itemID"] = 163023,	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
-										},
-										{	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 2]
-											["itemID"] = 163024,	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 2]
-										},
-										{	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 3]
-											["itemID"] = 163025,	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Boots [Rank 2]
-											["itemID"] = 165278,	-- Recipe: Sinister Combatant's Plate Boots [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Boots [Rank 3]
-											["itemID"] = 165279,	-- Recipe: Sinister Combatant's Plate Boots [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 2]
-											["itemID"] = 165280,	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 3]
-											["itemID"] = 165281,	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Greaves [Rank 2]
-											["itemID"] = 165282,	-- Recipe: Sinister Combatant's Plate Greaves [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Greaves [Rank 3]
-											["itemID"] = 165283,	-- Recipe: Sinister Combatant's Plate Greaves [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Shield [Rank 2]
-											["itemID"] = 165284,	-- Recipe: Sinister Combatant's Plate Shield [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Shield [Rank 3]
-											["itemID"] = 165285,	-- Recipe: Sinister Combatant's Plate Shield [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 2]
-											["itemID"] = 165286,	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 3]
-											["itemID"] = 165287,	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Armguards [Rank 2]
-											["itemID"] = 165288,	-- Recipe: Sinister Combatant's Plate Armguards [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Plate Armguards [Rank 3]
-											["itemID"] = 165289,	-- Recipe: Sinister Combatant's Plate Armguards [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
-											["itemID"] = 165290,	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
-											["itemID"] = 165291,	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
-											["itemID"] = 165292,	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
-											["itemID"] = 165293,	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
-											["itemID"] = 165294,	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
-											["itemID"] = 165295,	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Shanker [Rank 2]
-											["itemID"] = 165296,	-- Recipe: Sinister Combatant's Shanker [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Shanker [Rank 3]
-											["itemID"] = 165297,	-- Recipe: Sinister Combatant's Shanker [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Polearm [Rank 2]
-											["itemID"] = 165298,	-- Recipe: Sinister Combatant's Polearm [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Polearm [Rank 3]
-											["itemID"] = 165299,	-- Recipe: Sinister Combatant's Polearm [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 2]
-											["itemID"] = 165300,	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 3]
-											["itemID"] = 165301,	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 3]
-										},
-										{	-- Schematic: Sinister Combatant's Discombobulator [Rank 2]
-											["itemID"] = 165302,	-- Schematic: Sinister Combatant's Discombobulator [Rank 2]
-										},
-										{	-- Schematic: Sinister Combatant's Discombobulator [Rank 3]
-											["itemID"] = 165303,	-- Schematic: Sinister Combatant's Discombobulator [Rank 3]
-										},
-										{	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 2]
-											["itemID"] = 165304,	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 2]
-										},
-										{	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 3]
-											["itemID"] = 165305,	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2]
-											["itemID"] = 165306,	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3]
-											["itemID"] = 165307,	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2]
-											["itemID"] = 165308,	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 3]
-											["itemID"] = 165309,	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]
-											["itemID"] = 165310,	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Treads [Rank 3]
-											["itemID"] = 165311,	-- Recipe: Sinister Combatant's Leather Treads [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 2]
-											["itemID"] = 165312,	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 3]
-											["itemID"] = 165313,	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2]
-											["itemID"] = 165314,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
-											["itemID"] = 165315,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 2]
-											["itemID"] = 165316,	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 3]
-											["itemID"] = 165317,	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Armguards [Rank 2]
-											["itemID"] = 165318,	-- Recipe: Sinister Combatant's Leather Armguards [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Leather Armguards [Rank 3]
-											["itemID"] = 165319,	-- Recipe: Sinister Combatant's Leather Armguards [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Treads [Rank 2]
-											["itemID"] = 165320,	-- Recipe: Sinister Combatant's Mail Treads [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Treads [Rank 3]
-											["itemID"] = 165321,	-- Recipe: Sinister Combatant's Mail Treads [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 2]
-											["itemID"] = 165322,	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 3]
-											["itemID"] = 165323,	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Leggings [Rank 2]
-											["itemID"] = 165324,	-- Recipe: Sinister Combatant's Mail Leggings [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Leggings [Rank 3]
-											["itemID"] = 165325,	-- Recipe: Sinister Combatant's Mail Leggings [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 2]
-											["itemID"] = 165326,	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 3]
-											["itemID"] = 165327,	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Armguards [Rank 2]
-											["itemID"] = 165328,	-- Recipe: Sinister Combatant's Mail Armguards [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Mail Armguards [Rank 3]
-											["itemID"] = 165329,	-- Recipe: Sinister Combatant's Mail Armguards [Rank 3]
-										},
-										{	-- Recipe: Sinister Combatant's Bow [Rank 2]
-											["itemID"] = 165330,	-- Recipe: Sinister Combatant's Bow [Rank 2]
-										},
-										{	-- Recipe: Sinister Combatant's Bow [Rank 3]
-											["itemID"] = 165331,	-- Recipe: Sinister Combatant's Bow [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Cloak [Rank 2]
-											["itemID"] = 165332,	-- Pattern: Sinister Combatant's Satin Cloak [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Cloak [Rank 3]
-											["itemID"] = 165333,	-- Pattern: Sinister Combatant's Satin Cloak [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Boots [Rank 2]
-											["itemID"] = 165334,	-- Pattern: Sinister Combatant's Satin Boots [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Boots [Rank 3]
-											["itemID"] = 165335,	-- Pattern: Sinister Combatant's Satin Boots [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Mittens [Rank 2]
-											["itemID"] = 165336,	-- Pattern: Sinister Combatant's Satin Mittens [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Mittens [Rank 3]
-											["itemID"] = 165337,	-- Pattern: Sinister Combatant's Satin Mittens [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Pants [Rank 2]
-											["itemID"] = 165338,	-- Pattern: Sinister Combatant's Satin Pants [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Pants [Rank 3]
-											["itemID"] = 165339,	-- Pattern: Sinister Combatant's Satin Pants [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Belt [Rank 2]
-											["itemID"] = 165340,	-- Pattern: Sinister Combatant's Satin Belt [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Belt [Rank 3]
-											["itemID"] = 165341,	-- Pattern: Sinister Combatant's Satin Belt [Rank 3]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Bracers [Rank 2]
-											["itemID"] = 165342,	-- Pattern: Sinister Combatant's Satin Bracers [Rank 2]
-										},
-										{	-- Pattern: Sinister Combatant's Satin Bracers [Rank 3]
-											["itemID"] = 165343,	-- Pattern: Sinister Combatant's Satin Bracers [Rank 3]
-										},
-										{	-- Recipe: Potion of the Unveiling Eye [Rank 2]
-											["itemID"] = 166271,	-- Recipe: Potion of the Unveiling Eye [Rank 2]
-										},
-										{	-- Recipe: Potion of the Unveiling Eye [Rank 3]
-											["itemID"] = 166272,	-- Recipe: Potion of the Unveiling Eye [Rank 3]
-										},
-									},
+								{	-- Book of Schematics: Ub3r-Spanner
+									["itemID"] = 168025,	-- Book of Schematics: Ub3r-Spanner
 								},
 							},
 						},
+						n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
+							-- When the vendor is listed on the same level with ["npcID"], it causes Mark of Honor to show up in the Boralus minilist, and also makes it so that when you use /att itemid:137642 or /att [Mark of Honor] the vendor doesn't show up in the list that way.
+							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.30, 26.95, 1161 },
+							["g"] = {
+								{	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
+									["itemID"] = 162262,	-- Recipe: Honorable Combatant's Plate Boots [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
+									["itemID"] = 162263,	-- Recipe: Honorable Combatant's Plate Boots [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
+									["itemID"] = 162265,	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
+									["itemID"] = 162266,	-- Recipe: Honorable Combatant's Plate Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
+									["itemID"] = 162267,	-- Recipe: Honorable Combatant's Plate Greaves [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
+									["itemID"] = 162268,	-- Recipe: Honorable Combatant's Plate Greaves [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
+									["itemID"] = 162269,	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
+									["itemID"] = 162270,	-- Recipe: Honorable Combatant's Plate Waistguard [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
+									["itemID"] = 162271,	-- Recipe: Honorable Combatant's Plate Armguards [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
+									["itemID"] = 162272,	-- Recipe: Honorable Combatant's Plate Armguards [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
+									["itemID"] = 162273,	-- Recipe: Honorable Combatant's Plate Shield [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
+									["itemID"] = 162274,	-- Recipe: Honorable Combatant's Plate Shield [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
+									["itemID"] = 162277,	-- Recipe: Honorable Combatant's Cutlass [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
+									["itemID"] = 162278,	-- Recipe: Honorable Combatant's Cutlass [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
+									["itemID"] = 162279,	-- Recipe: Honorable Combatant's Deckpounder [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
+									["itemID"] = 162280,	-- Recipe: Honorable Combatant's Deckpounder [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Shanker [Rank 2]
+									["itemID"] = 162281,	-- Recipe: Honorable Combatant's Shanker [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Shanker [Rank 3]
+									["itemID"] = 162282,	-- Recipe: Honorable Combatant's Shanker [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Polearm [Rank 2]
+									["itemID"] = 162283,	-- Recipe: Honorable Combatant's Polearm [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Polearm [Rank 3]
+									["itemID"] = 162284,	-- Recipe: Honorable Combatant's Polearm [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
+									["itemID"] = 162308,	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
+									["itemID"] = 162309,	-- Recipe: Honorable Combatant's Sorcerous Scepter [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
+									["itemID"] = 162353,	-- Recipe: Honorable Combatant's Etched Vessel [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
+									["itemID"] = 162354,	-- Recipe: Honorable Combatant's Etched Vessel [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
+									["itemID"] = 162390,	-- Recipe: Honorable Combatant's Leather Treads [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
+									["itemID"] = 162391,	-- Recipe: Honorable Combatant's Leather Treads [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
+									["itemID"] = 162392,	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
+									["itemID"] = 162393,	-- Recipe: Honorable Combatant's Leather Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
+									["itemID"] = 162394,	-- Recipe: Honorable Combatant's Leather Leggings [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
+									["itemID"] = 162395,	-- Recipe: Honorable Combatant's Leather Leggings [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
+									["itemID"] = 162396,	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
+									["itemID"] = 162397,	-- Recipe: Honorable Combatant's Leather Waistguard [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
+									["itemID"] = 162398,	-- Recipe: Honorable Combatant's Leather Armguards [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
+									["itemID"] = 162399,	-- Recipe: Honorable Combatant's Leather Armguards [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
+									["itemID"] = 162402,	-- Recipe: Honorable Combatant's Mail Treads [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
+									["itemID"] = 162403,	-- Recipe: Honorable Combatant's Mail Treads [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
+									["itemID"] = 162404,	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
+									["itemID"] = 162405,	-- Recipe: Honorable Combatant's Mail Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
+									["itemID"] = 162406,	-- Recipe: Honorable Combatant's Mail Leggings [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
+									["itemID"] = 162407,	-- Recipe: Honorable Combatant's Mail Leggings [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
+									["itemID"] = 162408,	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
+									["itemID"] = 162409,	-- Recipe: Honorable Combatant's Mail Waistguard [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
+									["itemID"] = 162410,	-- Recipe: Honorable Combatant's Mail Armguards [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Mail Armguards [Rank 3]
+									["itemID"] = 162411,	-- Recipe: Honorable Combatant's Mail Armguards [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Bow [Rank 2]
+									["itemID"] = 162417,	-- Recipe: Honorable Combatant's Bow [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Bow [Rank 3]
+									["itemID"] = 162418,	-- Recipe: Honorable Combatant's Bow [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
+									["itemID"] = 162431,	-- Pattern: Honorable Combatant's Satin Cloak [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
+									["itemID"] = 162432,	-- Pattern: Honorable Combatant's Satin Cloak [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]
+									["itemID"] = 162433,	-- Pattern: Honorable Combatant's Satin Boots [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
+									["itemID"] = 162434,	-- Pattern: Honorable Combatant's Satin Boots [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
+									["itemID"] = 162435,	-- Pattern: Honorable Combatant's Satin Mittens [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
+									["itemID"] = 162436,	-- Pattern: Honorable Combatant's Satin Mittens [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
+									["itemID"] = 162437,	-- Pattern: Honorable Combatant's Satin Pants [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
+									["itemID"] = 162438,	-- Pattern: Honorable Combatant's Satin Pants [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
+									["itemID"] = 162439,	-- Pattern: Honorable Combatant's Satin Belt [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
+									["itemID"] = 162440,	-- Pattern: Honorable Combatant's Satin Belt [Rank 3]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
+									["itemID"] = 162441,	-- Pattern: Honorable Combatant's Satin Bracers [Rank 2]
+								},
+								{	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
+									["itemID"] = 162442,	-- Pattern: Honorable Combatant's Satin Bracers [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
+									["itemID"] = 162668,	-- Recipe: Honorable Combatant's Spellblade [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Spellblade [Rank 3]
+									["itemID"] = 162669,	-- Recipe: Honorable Combatant's Spellblade [Rank 3]
+								},
+								{	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
+									["itemID"] = 163020,	-- Schematic: Honorable Combatant's Discombobulator [Rank 2]
+								},
+								{	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
+									["itemID"] = 163021,	-- Schematic: Honorable Combatant's Discombobulator [Rank 3]
+								},
+								{	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
+									["itemID"] = 163022,	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 2]
+								},
+								{	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
+									["itemID"] = 163023,	-- Schematic: Honorable Combatant's Stormsteel Destroyer [Rank 3]
+								},
+								{	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 2]
+									["itemID"] = 163024,	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 2]
+								},
+								{	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 3]
+									["itemID"] = 163025,	-- Recipe: Honorable Combatant's Intuitive Staff [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Boots [Rank 2]
+									["itemID"] = 165278,	-- Recipe: Sinister Combatant's Plate Boots [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Boots [Rank 3]
+									["itemID"] = 165279,	-- Recipe: Sinister Combatant's Plate Boots [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 2]
+									["itemID"] = 165280,	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 3]
+									["itemID"] = 165281,	-- Recipe: Sinister Combatant's Plate Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Greaves [Rank 2]
+									["itemID"] = 165282,	-- Recipe: Sinister Combatant's Plate Greaves [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Greaves [Rank 3]
+									["itemID"] = 165283,	-- Recipe: Sinister Combatant's Plate Greaves [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Shield [Rank 2]
+									["itemID"] = 165284,	-- Recipe: Sinister Combatant's Plate Shield [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Shield [Rank 3]
+									["itemID"] = 165285,	-- Recipe: Sinister Combatant's Plate Shield [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 2]
+									["itemID"] = 165286,	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 3]
+									["itemID"] = 165287,	-- Recipe: Sinister Combatant's Plate Waistguard [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Armguards [Rank 2]
+									["itemID"] = 165288,	-- Recipe: Sinister Combatant's Plate Armguards [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Plate Armguards [Rank 3]
+									["itemID"] = 165289,	-- Recipe: Sinister Combatant's Plate Armguards [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
+									["itemID"] = 165290,	-- Recipe: Sinister Combatant's Cutlass [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
+									["itemID"] = 165291,	-- Recipe: Sinister Combatant's Cutlass [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
+									["itemID"] = 165292,	-- Recipe: Sinister Combatant's Deckpounder [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
+									["itemID"] = 165293,	-- Recipe: Sinister Combatant's Deckpounder [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
+									["itemID"] = 165294,	-- Recipe: Sinister Combatant's Spellblade [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
+									["itemID"] = 165295,	-- Recipe: Sinister Combatant's Spellblade [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Shanker [Rank 2]
+									["itemID"] = 165296,	-- Recipe: Sinister Combatant's Shanker [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Shanker [Rank 3]
+									["itemID"] = 165297,	-- Recipe: Sinister Combatant's Shanker [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Polearm [Rank 2]
+									["itemID"] = 165298,	-- Recipe: Sinister Combatant's Polearm [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Polearm [Rank 3]
+									["itemID"] = 165299,	-- Recipe: Sinister Combatant's Polearm [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 2]
+									["itemID"] = 165300,	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 3]
+									["itemID"] = 165301,	-- Recipe: Sinister Combatant's Sorcerous Scepter [Rank 3]
+								},
+								{	-- Schematic: Sinister Combatant's Discombobulator [Rank 2]
+									["itemID"] = 165302,	-- Schematic: Sinister Combatant's Discombobulator [Rank 2]
+								},
+								{	-- Schematic: Sinister Combatant's Discombobulator [Rank 3]
+									["itemID"] = 165303,	-- Schematic: Sinister Combatant's Discombobulator [Rank 3]
+								},
+								{	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 2]
+									["itemID"] = 165304,	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 2]
+								},
+								{	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 3]
+									["itemID"] = 165305,	-- Schematic: Sinister Combatant's Stormsteel Destroyer [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2]
+									["itemID"] = 165306,	-- Recipe: Sinister Combatant's Etched Vessel [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3]
+									["itemID"] = 165307,	-- Recipe: Sinister Combatant's Etched Vessel [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2]
+									["itemID"] = 165308,	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 3]
+									["itemID"] = 165309,	-- Recipe: Sinister Combatant's Intuitive Staff [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]
+									["itemID"] = 165310,	-- Recipe: Sinister Combatant's Leather Treads [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Treads [Rank 3]
+									["itemID"] = 165311,	-- Recipe: Sinister Combatant's Leather Treads [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 2]
+									["itemID"] = 165312,	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 3]
+									["itemID"] = 165313,	-- Recipe: Sinister Combatant's Leather Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2]
+									["itemID"] = 165314,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
+									["itemID"] = 165315,	-- Recipe: Sinister Combatant's Leather Leggings [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 2]
+									["itemID"] = 165316,	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 3]
+									["itemID"] = 165317,	-- Recipe: Sinister Combatant's Leather Waistguard [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Armguards [Rank 2]
+									["itemID"] = 165318,	-- Recipe: Sinister Combatant's Leather Armguards [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Leather Armguards [Rank 3]
+									["itemID"] = 165319,	-- Recipe: Sinister Combatant's Leather Armguards [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Treads [Rank 2]
+									["itemID"] = 165320,	-- Recipe: Sinister Combatant's Mail Treads [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Treads [Rank 3]
+									["itemID"] = 165321,	-- Recipe: Sinister Combatant's Mail Treads [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 2]
+									["itemID"] = 165322,	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 3]
+									["itemID"] = 165323,	-- Recipe: Sinister Combatant's Mail Gauntlets [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Leggings [Rank 2]
+									["itemID"] = 165324,	-- Recipe: Sinister Combatant's Mail Leggings [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Leggings [Rank 3]
+									["itemID"] = 165325,	-- Recipe: Sinister Combatant's Mail Leggings [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 2]
+									["itemID"] = 165326,	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 3]
+									["itemID"] = 165327,	-- Recipe: Sinister Combatant's Mail Waistguard [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Armguards [Rank 2]
+									["itemID"] = 165328,	-- Recipe: Sinister Combatant's Mail Armguards [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Mail Armguards [Rank 3]
+									["itemID"] = 165329,	-- Recipe: Sinister Combatant's Mail Armguards [Rank 3]
+								},
+								{	-- Recipe: Sinister Combatant's Bow [Rank 2]
+									["itemID"] = 165330,	-- Recipe: Sinister Combatant's Bow [Rank 2]
+								},
+								{	-- Recipe: Sinister Combatant's Bow [Rank 3]
+									["itemID"] = 165331,	-- Recipe: Sinister Combatant's Bow [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Cloak [Rank 2]
+									["itemID"] = 165332,	-- Pattern: Sinister Combatant's Satin Cloak [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Cloak [Rank 3]
+									["itemID"] = 165333,	-- Pattern: Sinister Combatant's Satin Cloak [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Boots [Rank 2]
+									["itemID"] = 165334,	-- Pattern: Sinister Combatant's Satin Boots [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Boots [Rank 3]
+									["itemID"] = 165335,	-- Pattern: Sinister Combatant's Satin Boots [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Mittens [Rank 2]
+									["itemID"] = 165336,	-- Pattern: Sinister Combatant's Satin Mittens [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Mittens [Rank 3]
+									["itemID"] = 165337,	-- Pattern: Sinister Combatant's Satin Mittens [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Pants [Rank 2]
+									["itemID"] = 165338,	-- Pattern: Sinister Combatant's Satin Pants [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Pants [Rank 3]
+									["itemID"] = 165339,	-- Pattern: Sinister Combatant's Satin Pants [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Belt [Rank 2]
+									["itemID"] = 165340,	-- Pattern: Sinister Combatant's Satin Belt [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Belt [Rank 3]
+									["itemID"] = 165341,	-- Pattern: Sinister Combatant's Satin Belt [Rank 3]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Bracers [Rank 2]
+									["itemID"] = 165342,	-- Pattern: Sinister Combatant's Satin Bracers [Rank 2]
+								},
+								{	-- Pattern: Sinister Combatant's Satin Bracers [Rank 3]
+									["itemID"] = 165343,	-- Pattern: Sinister Combatant's Satin Bracers [Rank 3]
+								},
+								{	-- Recipe: Potion of the Unveiling Eye [Rank 2]
+									["itemID"] = 166271,	-- Recipe: Potion of the Unveiling Eye [Rank 2]
+								},
+								{	-- Recipe: Potion of the Unveiling Eye [Rank 3]
+									["itemID"] = 166272,	-- Recipe: Potion of the Unveiling Eye [Rank 3]
+								},
+							},
+						}),
 						n(145838, {	-- Marshal Frazer
 							["groups"] = {
-								i(139775), -- Alliance Enthusiast
-								i(142379), -- Dutiful Squire
+								i(139775),	-- Alliance Enthusiast
+								i(142379),	-- Dutiful Squire
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -673,9 +709,9 @@ _.Zones =
 						},
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
-								i(163568), -- Lost Platysaur [So Cute!]
-								i(163589), -- Reins of the Palehide Direhorn
-								i(163042), -- Reins of the Mighty Caravan Brutosaur
+								i(163568),	-- Lost Platysaur [So Cute!]
+								i(163589),	-- Reins of the Palehide Direhorn
+								i(163042),	-- Reins of the Mighty Caravan Brutosaur
 							},
 							["races"] = ALLIANCE_ONLY,
 							["coords"] = {
@@ -686,7 +722,7 @@ _.Zones =
 							["groups"] = {
 								i(160539),	-- Tabard of the 7th Legion
 								i(163036, {	-- Polished Pet Charm
-									i(163778), -- Lil'Siege
+									i(163778),	-- Lil'Siege
 								}),
 								i(161586),	-- Belt of the Grove Auxiliary
 								i(161588),	-- Bracers of the Allied Earthbinders
@@ -724,31 +760,31 @@ _.Zones =
 									["g"] = {
 										i(165720),	-- Monelite Whetstone
 										i(165880, {	-- Outpost Upgrade: Arom's Stand
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(165836, {	-- Outpost Upgrade: Brennadam
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(165873, {	-- Outpost Upgrade: Castaway Point
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163043, {	-- Scouting Report: Grimwaatt's Crash
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163044, {	-- Scouting Report: Mistvine Ledge
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163047, {	-- Scouting Report: Mugamba Overlook
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163048, {	-- Scouting Report: Veiled Grotto
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163046, {	-- Scouting Report: Verdant Hollow
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 										i(163041, {	-- Scouting Report: Vulture's Nest
-											["f"] = 55, -- Consumable; Might change to Misc later
+											["f"] = 55,	-- Consumable; Might change to Misc later
 										}),
 									},
 								},
@@ -763,7 +799,7 @@ _.Zones =
 			},
 			["lvl"] = 110,
 			["isRaid"] = true,
-			["achievementID"] = 12847, -- Siege of Boralus
+			["achievementID"] = 12847,	-- Siege of Boralus
 			["description"] = "|cff66ccffBoralus is the capital of the island city-state of Kul Tiras. It is located on the mouth of a river or strait running through Tiragarde Sound. Boralus is a safe port of call in unsafe waters. The outer wall hosts a marketplace that is second to none. Merchants from all over Azeroth dock here to trade their goods. For most visitors, the market is all they ever see of Boralus. Beyond the Great Gate lies the city proper, and very few outsiders are allowed inside.|r",
 		}),
 	}),

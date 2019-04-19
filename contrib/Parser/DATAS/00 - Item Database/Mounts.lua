@@ -149,6 +149,7 @@ i(163123, 272481);	-- Vicious War Riverbeast [A]
 i(163124, 270560);	-- Vicious War Clefthoof [H]
 i(151625, 239767);	-- Red Qiraji War Tank
 i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
+i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)
 
 ---------------
 -- PATCH 8.1 --
@@ -160,6 +161,7 @@ i(166428, 288438);	-- Blackpaw
 i(166468, 288720);	-- Bloodgorged Hunter
 i(166469, 288714);	-- Bloodthirsty Dreadwing
 i(166442, 288587);	-- Blue Marsh Hopper
+i(166724, 289639);	-- Bruce
 i(166438, 288438);	-- Caged Bear
 i(166437, 288505);	-- Captured Kaldorei Nightsaber
 i(166434, 288503);	-- Captured Umber Nightsaber
@@ -168,6 +170,7 @@ i(166433, 288499);	-- Frightened Kodo
 i(166518, 289083);	-- G.M.O.D.
 i(166705, 289555);	-- Glacial Tidestorm
 i(163183, 259740);	-- Green Marsh Hopper
+i(166774, 290134);	-- Hogrus, Swine of Good Fortune
 i(166467, 288721);	-- Island Thunderscale
 i(166435, 288505);	-- Kaldorei Nightsaber
 i(164571, 281554);	-- Meat Wagon
@@ -178,6 +181,7 @@ i(166464, 288735);	-- Rubyshell Krolusk
 i(166471, 288711);	-- Saltwater Seahorse
 i(166436, 288506);	-- Sandy Nightsaber
 i(166745, 266925);	-- Siltwing Albatross
+i(156880, 262023);	-- Sinister Gladiator's Proto-Drake
 i(166470, 288712);	-- Stonehide Elderhorn
 i(156798, 261395);	-- The Hivemind
 i(166803, 288503);	-- Umber Nightsaber
@@ -186,3 +190,10 @@ i(165019, 281887);	-- Vicious Black Warsaber
 i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
 i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
+
+-----------------
+-- PATCH 8.1.5 --
+-----------------
+
+i(167894, 294568);	-- Beastlord's Irontusk
+i(167895, 294569);	-- Beastlord's Warwolf

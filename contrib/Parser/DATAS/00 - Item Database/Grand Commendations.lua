@@ -228,5 +228,28 @@ i(163620, 2103);	-- Island Flotsam [Zandalari Empire]
 i(163615, 2162);	-- Lost Sea Scroll [Storm's Wake]
 i(163617, 2159);	-- Rusted Alliance Insignia [7th Legion]
 i(163621, 2157);	-- Rusted Horde Insignia [Honorbound]
-i(163618, 2158);	-- Shimmering Shell [Volundai]
-i(166501, 2163);	-- Soggy Page [Tortollan]
+i(163618, 2158);	-- Shimmering Shell [Voldunai]
+i(166501, 2163);	-- Soggy Page [Tortollan Seekers]
+
+
+-- in BFA the reputation rewards from the mission table / quests are actually currencies, not items like in legion
+-- so when you get a Proudmoore Admiralty Commendation for 100 reputation, you're actually getting 100 Invisible Proudmoore Admiralty Coins (since the "currencies" aren't tracked on the currency tab but are seemingly immediately exchanged for reputation)
+-- if we can link the currencies to the reputation somehow we can track reputation completion (and possibly whether or not you need the reputation still for paragon rewards?  that'd be nice!)
+
+-- currencyID, factionID
+
+-- ALLIANCE
+-- 1579, 2164	-- Champions of Azeroth Commendation
+-- 1592, 2161	-- Order of Embers Commendation
+-- 1593, 2160	-- Proudmoore Admiralty Commendation
+-- 1594, 2162	-- Storm's Wake Commendation
+-- 1599, 2159	-- 7th Legion Commendation
+
+-- HORDE
+-- 1600, 2157	-- Honorbound Commendation
+-- 1595, 2156	-- Talanji's Expedition Commendation
+-- 1596, 2158	-- Voldunai Commendation
+-- 1597, 2103	-- Zandalari Empire Commendation
+
+-- NEUTRAL
+-- 1598, 2163	-- Tortollan Seekers Commendation

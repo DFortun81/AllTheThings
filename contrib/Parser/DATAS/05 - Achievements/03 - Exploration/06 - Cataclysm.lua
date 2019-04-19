@@ -4,9 +4,9 @@
 
 _.Achievements =
 {
-	n(-9957, { -- Exploration
+	n(-9957, {	-- Exploration
 		["groups"] = {
-			n(-9979, { -- Cataclysm
+			n(-9979, {	-- Cataclysm
 				["groups"] = {
 					ach(5753, {	-- Cataclysmically Delicious
 						crit(1),	-- Baked Rockfish

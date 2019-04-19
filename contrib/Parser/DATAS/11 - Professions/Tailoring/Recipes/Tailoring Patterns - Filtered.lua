@@ -49,12 +49,8 @@ profession(197, {	-- Tailoring
 							["u"] = 17,
 						},
 						{
-							["recipeID"] = 28207,--[[Glacial Vest]]
-							["u"] = 7,
-						},
-						{
 							["recipeID"] = 44950,--[[Green Winter Clothes]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 						{
 							["recipeID"] = 7636,--[[Green Woolen Robe]]
@@ -62,39 +58,19 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["recipeID"] = 44958,--[[Red Winter Clothes]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
 							["u"] = 1,
 						},
-						{
-							["recipeID"] = 6692,--[[Robes of Arcana]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 18436,--[[Robe of Winter Night]]
-							["u"] = 2,
-						},
 					}
 				},
 				{
 					["categoryID"] = 237--[[Bracers]],
-					["g"] = {
-						{
-							["recipeID"] = 28209,--[[Glacial Wrists]]
-							["u"] = 7,
-						},
-					},
 				},
 				{
-					["categoryID"] = 238--[[Belts]],
-					["g"] = {
-						{
-							["recipeID"] = 22866,--[[Belt of the Archmage]]
-							["u"] = 2,
-						},
-					}
+					["categoryID"] = 238--[[Belts]]
 				},
 				{
 					["categoryID"] = 239--[[Gloves]],
@@ -102,22 +78,6 @@ profession(197, {	-- Tailoring
 						{
 							["recipeID"] = 12063,--[[Stormcloth Gloves]]
 							["u"] = 1,
-						},
-						{
-							["recipeID"] = 22867,--[[Felcloth Gloves]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 28205,--[[Glacial Gloves]]
-							["u"] = 7,
-						},
-						{
-							["recipeID"] = 22868,--[[Inferno Gloves]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 22869,--[[Mooncloth Gloves]]
-							["u"] = 2,
 						},
 					}
 				},
@@ -153,23 +113,13 @@ profession(197, {	-- Tailoring
 				},
 				{
 					["categoryID"] = 242--[[Cloaks]],
-					["g"] = {
-						{
-							["recipeID"] = 22870,--[[Cloak of Warding]]
-							["u"] = 2,
-						},
-						{
-							["recipeID"] = 28208,--[[Glacial Cloak]]
-							["u"] = 7,
-						}
-					},
 				},
 				{
 					["categoryID"] = 243--[[Shirts]],
 					["g"] = {
 						{
 							["recipeID"] = 21945,--[[Green Holiday Shirt]]
-							["u"] = 17,
+							["u"] = 29,
 						},
 					},
 				},

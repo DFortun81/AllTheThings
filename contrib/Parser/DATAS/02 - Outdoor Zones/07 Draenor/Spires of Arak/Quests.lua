@@ -377,7 +377,7 @@ _.Zones =
 							i(114907),	-- Talon Guard Wingclipper
 							i(114904),	-- Talon Guard Wingsmasher
 						}),
-						n(-359, { -- Brewery
+						n(-359, {	-- Brewery
 							qa(37287,  {  -- Cleaning House
 								i(119001),	-- Mystery Keg
 							}),

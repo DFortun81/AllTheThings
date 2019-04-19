@@ -24,15 +24,13 @@ _.Zones =
 								}),
 								{	-- Automated Chaos [AH] [Pet Battle!!]
 									["questID"] = 52165,	-- Automated Chaos
-									["qg"] = 140315,		-- Eddie Fixit
-									["coords"] = {
-										{ 36.61, 33.61 },
-									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["coord"] = { 36.61, 33.61, 942 },
+									["isWQ"] = 120,
+									["qg"] = 140315,	-- Eddie Fixit
 									["g"] = {
 										{	-- Automated Chaos
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-											["criteriaID"] = 3,			-- Automated Chaos
+											["criteriaID"] = 3,	-- Automated Chaos
 										},
 									},
 								},
@@ -72,9 +70,35 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 									--Note!! 10/16 offered Shoalbreach Waistguard
 								},
+								{	-- Calligraphy
+									["questID"] = 55341,	-- Calligraphy
+									["races"] = ALLIANCE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Triangle
+													["criteriaID"] = 3,	-- Master of Calligraphy - Triangle
+												},
+											},
+										},
+									},
+								},
 								q(51782, {	-- Captain Razorspine
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Captured Evil — Pet Battle
+									["questID"] = 52325,	-- Captured Evil
+									["isWQ"] = 120,
+									["qg"] = 141046,	-- Leana Darkwind
+									["g"] = {
+										{	-- Captured Evil — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 8,	-- Captured Evil
+										},
+									},
+								},
 								q(52179, {	-- Fortified Resistance
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -104,6 +128,30 @@ _.Zones =
 									["questID"] = 51633,	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{  -- Naga Attack!
+									["questID"] = 53773,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 53945,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								{	-- Ordnance Orders [A]
 									["questID"] = 52939,	-- Ordnance Orders [A]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -114,12 +162,99 @@ _.Zones =
 									["questID"] = 51806,	-- Pest Remover Mk. II
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+							--	It looks like there's a "Sabertron" WQ for each color of Sabertron, so every time a WQ is up we'll need to determine which criteria to attach to it.  Only one confirmed so far.  This way the WQs will show the correct criteria reward in /attwq, and it will reduce unnecessary duplication of information.
+								q(51978, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								q(51947, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								{	-- Sabertron (GREEN)
+									["questID"] = 51976,	-- Sabertron (GREEN)
+									["g"] = {
+										{	-- Green Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 4,			-- Green Sabertron
+										},
+									},
+								},
+								q(51977, {	-- Sabertron (unknown criteria)
+									["g"] = {
+										{	-- Red Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 1,	-- Red Sabertron
+										},
+										{	-- Yellow Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 2,	-- Yellow Sabertron
+										},
+										{	-- Orange Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 3,	--  Sabertron
+										},
+										{	-- Green Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 4,	--  Sabertron
+										},
+									},
+								}),
+								{	-- Sabertron (COPPER)
+									["questID"] = 51974, 	-- Sabertron (COPPER)
+									["g"] = {
+										{	-- Copper Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 5,			-- Copper Sabertron
+										},
+									},
+								},
 								q(52889, {	-- Sandscour
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(52316, {	-- Sea Creatures Are Weird
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								{	-- Sea Creatures Are Weird — Pet Battle
+									["questID"] = 52316,	-- Sea Creatures Are Weird
+									["isWQ"] = 120,
+									["qg"] = 141002,	-- Ellie Vern
+									["g"] = {
+										{	-- Sea Creatures Are Weird — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 7,	-- Sea Creatures Are Weird
+										},
+									},
+								},
 								{	-- Severus the Outcast [AH]
 									["questID"] = 52315,	-- Severus the Outcast
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -142,15 +277,13 @@ _.Zones =
 								},
 								{	-- This Little Piggy Has Sharp Tusks [AH] [Pet Battle!!]
 									["questID"] = 52126,	-- This Little Piggy Has Sharp Tusks
-									["qg"] = 139987,		-- Bristlespine
-									["coords"] = {
-										{ 42.41, 76.61 },
-									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
+									["qg"] = 139987,	-- Bristlespine
+									["coord"] = { 42.41, 76.61, 942 },
+									["isWQ"] = 120,	-- Enables WQ filter for Level 120
 									["g"] = {
 										{	-- This Little Piggy Has Sharp Tusks
 											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-											["criteriaID"] = 2,			-- This Little Piggy Has Sharp Tusks
+											["criteriaID"] = 2,	-- This Little Piggy Has Sharp Tusks
 										},
 									},
 								},

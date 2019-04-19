@@ -4,9 +4,9 @@
 
 _.Achievements = 
 {
-	n(-10055, { -- Expansion Features
+	n(-10055, {	-- Expansion Features
 		["groups"] = {
-			n(-9966, { -- Draenor Garrison
+			n(-9966, {	-- Draenor Garrison
 				["groups"] = {
 					ach(9130),		-- A Rare Friend
 					ach(10174, 10276, {	-- Admiral

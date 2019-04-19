@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9962, { -- World Events
+	n(-9962, {	-- World Events
 		["groups"] = {
-			n(-10024, { -- Argent Tournament
+			n(-10024, {	-- Argent Tournament
 				["groups"] = {
 					a(ach(3676)),	-- A Silver Confidant (Alliance)
 					ach(2758, {		-- Argent Valor

@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
-	holiday(307365, { -- Day of the Dead
+	holiday(307365, {	-- Day of the Dead
 		{	-- Catrina
 			["npcID"] = 34383,	-- Catrina
 			["coords"] = {

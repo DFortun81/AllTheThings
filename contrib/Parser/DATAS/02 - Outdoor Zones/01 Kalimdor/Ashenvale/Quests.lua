@@ -28,368 +28,55 @@ _.Zones =
 						crit(7),		-- The Corrupted Heart of the Forest
 					})),
 ]]--
-					h(ach(4976, {	-- Ashenvale Quests
-						crit(1, {	-- The Corrupted Heart of the Forest
-							{	-- Final Report
-								["questID"] = 13619,
-								["qg"] = 33294,	-- Gorat
-								["coord"] = { 64.2, 84.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13618,	-- Find Gorat!
-							},
-							{	-- Management Material
-								["questID"] = 13640,
-								["groups"] = {
-									i(56627),	-- Labor Camp Frock
-									i(56628),	-- Manager's Mantle
-									i(56629),	-- Hands of Encouragement
-									i(131297),	-- Gorka's Brass Shoulderguards
-								},
-								["qg"] = 33421,	-- Gorka
-								["coord"] = { 72.9, 80.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13628,	-- Got Wood?
-							},
-							{	-- Needs a Little Lubrication
-								["questID"] = 13651,
-								["qg"] = 33421,	-- Gorka
-								["coord"] = { 72.9, 80.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13640,	-- Management Material
-							},
-							{	-- Crisis at Splintertree
-								["questID"] = 13653,
-								["groups"] = {
-									i(56639),	-- Mourner's Stole
-									i(56640),	-- Leggings of Loss
-									i(56641),	-- Burden of Sacrifice
-									i(131299),	-- Griefbearer Leggings
-								},
-								["qg"] = 33421,	-- Gorka
-								["coord"] = { 72.9, 80.4 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13651,	-- Needs a Little Lubrication
-							},
-							{	-- Blood of the Weak
-								["questID"] = 13803,
-								["qg"] = 33837,	-- Kadrak
-								["coord"] = { 73.6, 62.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13712,	-- To The Rescue!
-							},
-							{	-- Pierce Their Heart!
-								["questID"] = 13805,
-								["groups"] = {
-									i(56727),	-- Scrupleless Bracers
-									i(56728),	-- Bloodtaint Boots
-									i(56729),	-- Forest Heart Piercer
-									i(131304),	-- Heart-Corruptor Wristguards
-								},
-								["qg"] = 33760,	-- Durak
-								["coord"] = { 72.1, 57.6 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13803,	-- Blood of the Weak
-							},
-						}),
-						crit(2, {	-- The Diplomat from Silvermoon
-							{	-- Mission Improbable
-								["questID"] = 13808,
-								["qg"] = 33837,	-- Kadrak
-								["coord"] = { 73.6, 62.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13805,	-- Pierce Their Heart!
-							},
-							{	-- Making Stumps
-								["questID"] = 13815,
-								["qg"] = 33889,	-- Krokk
-								["coord"] = { 82.5, 53.7 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13808,	-- Mission Improbable
-							},
-							{	-- Wet Work
-								["questID"] = 13865,
-								["groups"] = {
-									i(56724),	-- Wet Work Gloves
-									i(56725),	-- Belt of Secret Signs
-									i(56726),	-- Disarray Boots
-									i(131307),	-- Krokk's Notched Belt
-								},
-								["qg"] = 33889,	-- Krokk
-								["coord"] = { 82.5, 53.7 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13808,	-- Mission Improbable
-							},
-							{	-- As Good as it Gets
-								["questID"] = 13870,
-								["qg"] = 33889,	-- Krokk
-								["coord"] = { 82.5, 53.7 },
-								["races"] = HORDE_ONLY,
+					{	-- Ashenvale Quests
+						["achievementID"] = 4976,
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							{	-- The Corrupted Heart of the Forest
+								["criteriaID"] = 1,
 								["sourceQuests"] = {
-									13815,	-- Making Stumps
-									13865,	-- Wet Work
+									13653,	-- Crisis at Splintertree
+									13619,	-- Final Report
+									13805,	-- Pierce the Heart
 								},
 							},
-							{	-- Security!
-								["questID"] = 13871,
-								["groups"] = {
-									i(56718),	-- Detective Buckler
-									i(56719),	-- Pilfered Kaldorei Belt
-									i(56720),	-- Security Crossbow
-									i(131308),	-- Gorthak's Tool Belt
-								},
-								["qg"] = 17304,	-- Overseer Gorthak
-								["coord"] = { 90.9, 58.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13870,	-- As Good as it Gets
+							{	-- The Diplomat from Silvermoon
+								["criteriaID"] = 2,
+								["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 							},
-							{	-- Sheelah's Last Wish
-								["questID"] = 13873,
-								["qg"] = 34233,	-- Guardian Menerin
-								["coord"] = { 90.7, 58.1 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13871,	-- Security!
+							{	-- Splintertree's Demonic Defense
+								["criteriaID"] = 3,
+								["sourceQuest"] = 13842,	-- Dread Head Redemption -- in orgrimmar
 							},
-						}),
-						crit(3, {	-- Splintertree's Demonic Defense
-							["groups"] = {
-								{	-- Playing with Felfire
-									["questID"] = 13730,
-									["groups"] = {
-										i(56649),	-- Folly's Edge
-										i(56650),	-- Felfire-Tainted Vest
-										i(56651),	-- Legguards of Abandoned Virtue
-										i(131302),	-- Felfire-Scorched Chesteguard
-										i(156958),	-- Scepter of Questionable Decision Making
-									},
-									["qg"] = 33726,	-- Splintertree Demolisher
-									["coord"] = { 73.3, 62.1 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 13803,	-- Blood of the Weak
-								},
-								{	-- Tell No One!
-									["questID"] = 13751,
-									["qg"] = 33726,	-- Sprintertree Demolisher
-									["coord"] = { 73.3, 62.1 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 13730,	-- Playing With Felfire
-								},
-								{	-- Dirty Deeds
-									["questID"] = 13797,
-									["qg"] = 33760,	-- Durak
-									["coord"] = { 72.2, 57.6 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 13751,	-- Tell No One!
-								},
-								{	-- Rain of Destruction
-									["questID"] = 13798,
-									["groups"] = {
-										i(56711),	-- Impish Blade
-										i(56712),	-- Accursed Mace
-										i(56713),	-- Durak's Wand
-										i(56714),	-- Band of Foul Strength
-									},
-									["qg"] = 33760,	-- Durak
-									["coord"] = { 72.2, 57.6 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 13797,	-- Dirty Deeds
-								},
-								{	-- All Apologies
-									["questID"] = 13841,
-									["qg"] = 33726,	-- Splintertree Demolisher
-									["coord"] = { 73.3, 62.1 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 13798,	-- Rain of Destruction
-								},
-							},
-							["description"] = "Final quest is \"Dread Head Redemption\" in Orgrimmar.",
-						}),
-						crit(4, {	-- Zoram'gar Outpost
-							{	-- Keep the Fires Burning
-								["questID"] = 13890,
-								["groups"] = {
-									i(56715),	-- Oily Bracers
-									i(56716),	-- Alighted Boots
-									i(56717),	-- Mystlash Bracers
-									i(131314),	-- Darkbreaker Treads
-								},
-								["qg"] = 34122,	-- Commander Grimfang
-								["coord"] = { 12.1, 33.8 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Lousy Pieces of Ship
-								["questID"] = 13883,
-								["qg"] = 34303,	-- Dagrun Ragehammer
-								["coord"] = { 11.4, 35.3 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Naga at the Zoram Strand
-								["questID"] = 6442,
-								["qg"] = 12719,	-- Marukai
-								["coord"] = { 12.6, 35.3 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- The Essence of Aku'Mai
-								["questID"] = 26890,
-								["qg"] = 34303,	-- Dagrun Ragehammer
-								["coord"] = { 11.4, 35.3 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Vorsha the Lasher
-								["questID"] = 6641,
-								["groups"] = {
-									i(17692), -- Horn Ring
-								},
-								["qg"] = 12717,	-- Muglash
-								["coord"] = { 12.7, 34.1 },
-								["races"] = HORDE_ONLY,
-							},
-							{	-- Before You Go...
-								["questID"] = 13920,
-								["groups"] = {
-									i(56721),	-- Meat Packer Ribbon
-									i(56722),	-- Je'neu's Hunting Vest
-									i(56723),	-- Deerstalker Leggings
-									i(131319),	-- Je'neu's Ringmail Jerkin
-								},
-								["qg"] = 34122,	-- Commander Grimfang
-								["coord"] = { 12.1, 33.8 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13890,	-- Keep the Fires Burning
-							},
-							{	-- Deep Despair
-								["questID"] = 13901,
-								["qg"] = 12719,	-- Marukai
-								["coord"] = { 12.6, 35.3 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 6442,	-- Naga at the Zoram Strand
-							},
-						}),
-						crit(5, {	-- The Bombing of Astranaar
-							{	-- Tweedle's Dumb
-								["questID"] = 13936,
-								["qg"] = 34359,	-- Captain Goggath
-								["coord"] = { 38.1, 43.8 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13923,	-- To Hellscream's Watch
-							},
-							{	-- Set Us Up the Bomb
-								["questID"] = 13942,
-								["qg"] = 34395,	-- Tweedle
-								["coord"] = { 37.9, 43.8 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13936,	-- Tweedle's Dumb
-							},
-							{	-- Breathing Room
-								["questID"] = 13943,
-								["groups"] = {
-									i(56667),	-- Cloak of Readiness
-									i(56668),	-- Bracers of Humility
-									i(56669),	-- Groundwork Shield
-									i(131322),	-- Preparation Wristguards
-								},
-								["qg"] = 34359,	-- Captain Goggath
-								["coord"] = { 38.1, 43.8 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13936,	-- Tweedle's Dumb
-							},
-							{	-- Small Hands, Short Fuse
-								["questID"] = 13944,
-								["qg"] = 34395,	-- Tweedle
-								["coord"] = { 37.9, 43.8 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13942,	-- Set Us Up The Bomb
-							},
-							{	-- Blastranaar!
-								["questID"] = 13947,
-								["groups"]	= {
-									i(56661),	-- Preemptive Striker
-									i(56662),	-- Staff of Fiery Fate
-									i(56663),	-- Leggings of Hellscream's Watch
-									i(131323),	-- Tweedle's Blastproof Legguards
-								},
-								["qg"] = 34359,	-- Captain Goggath
-								["coord"] = { 38.1, 43.8 },
-								["races"] = HORDE_ONLY,
+							{	-- Zoram'gar Outpost
+								["criteriaID"] = 4,
 								["sourceQuests"] = {
-									13943,	-- Breathing Room
-									13944,	-- Small Hands, Short Fuse
+									13920,	-- Before You Go...
+									13901,	-- Deep Despair
+									13883,	-- Lousy Pieces of Ship
+									26890,	-- The Essence of Aku'Mai
+									6641,	-- Vorsha the Lasher
 								},
 							},
-						}),
-						crit(6, {	-- Weapons of Their Destruction
-							{	-- Tweedle's Tiny Package
-								["questID"] = 13974,
-								["qg"] = 34395,	-- Tweedle
-								["coord"] = { 37.9, 43.8 },
-								["races"] = HORDE_ONLY,
+							{	-- The Bombing of Astranaar
+								["criteriaID"] = 5,
 								["sourceQuest"] = 13947,	-- Blastranaar!
 							},
-							{	-- Mass Production
-								["questID"] = 13977,
-								["qg"] = 34569,	-- Flooz
-								["coord"] = { 49.9, 67.2 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13974,	-- Tweedle's Tiny Package
-							},
-							{	-- Building Your Own Coffin
-								["questID"] = 13983,
-								["qg"] = 34596,	-- Foreman Jinx
-								["coord"] = { 46.1, 63.2 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13977,	-- Mass Production
-							},
-							{	-- They're Out There!
-								["questID"] = 13980,
-								["groups"] = {
-									i(56692),	-- Weaponized Belt
-									i(56693),	-- Backwatcher's Ring
-								},
-								["qg"] = 34596,	-- Foreman Jinx
-								["coord"] = { 46.1, 63.2 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13977,	-- Mass Production
-							},
-						}),
-						crit(7, {	-- Bringing Harmony to the Elements
-							{	-- Thunder Peak
-								["questID"] = 13879,
-								["qg"] = 34510,	-- Broyk
-								["coord"] = { 38.7, 43.3 },
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 13947,	-- Blastranaar!
-							},
-							{	-- Hot Lava	-- TODO: fix for the alliance. 
-								["questID"] = 13880,
-								["qg"] = 34290,	-- Core
-								["coord"] = { 52.3, 56.5 },
-								["sourceQuest"] = 13879,	-- Thunder Peak
-							},
-							{	-- Put Out The Fire	-- TODO: fix for the alliance.
-								["questID"] = 13884,
-								["qg"] = 34292,	-- Arctanus
-								["coord"] = { 52.0, 56.7 },
-								["sourceQuest"] = 13879,	-- Thunder Peak
-							},
-							{	-- Vortex
-								["questID"] = 13888,
-								["groups"] = {
-									i(56686),	-- Blossom of the Earthen Ring
-									i(56687),	-- Subduer's Gloves
-									i(56688),	-- Belt of Equilibrium
-									i(131313),	-- Subduer's Gauntlets
-								},
-								["qg"] = 34289,	-- The Vortex
-								["coord"] = { 52.3, 56.8 },
-								["races"] = HORDE_ONLY,
+							{	-- Weapons of Their Destruction
+								["criteriaID"] = 6,
 								["sourceQuests"] = {
-									13880,	-- Hot Lava
-									13884,	-- Put Out The Fire
+									13983,	-- Building Your Own Coffin
+									13980,	-- They're Out There!
 								},
 							},
-						}),
-					})),
-					{
-						["questID"] = 26453,	-- A Helping Hand
+							{	-- Bringing Harmony to the Elements
+								["criteriaID"] = 7,
+								["sourceQuest"] = 13888,	-- Vortex
+							},
+						},
+					},
+					{	-- A Helping Hand
+						["questID"] = 26453,
 						["qg"] = 17106,	-- Vindicator Palanaar
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -425,50 +112,67 @@ _.Zones =
 					},
 					{	-- Agents of Destruction  (No Prereq)
 						["questID"] = 26457,
+						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(56642),	-- Starwhisper Monnions
 							i(56643),	-- Woodguard Vest
 							i(131532),	-- Starwhisper Spaulders
 						},
-						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
-						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- All Apologies
+						["questID"] = 13841,
+						["qg"] = 33726,	-- Splintertree Demolisher
+						["coord"] = { 73.3, 62.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13798,	-- Rain of Destruction
 					},
 					{	-- All's Well
 						["questID"] = 13924,
+						["qg"] = 34358,	-- Avrus the Redeemed
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 						["groups"] = {
 							i(56676),	-- Whitemoon Gloves
 							i(56677),	-- Belt of Healing Charms
 							i(56678),	-- Boots of the Deliverer
 							i(131320),	-- Whitemoon Mender Cord
 						},
-						["qg"] = 34358,	-- Avrus the Redeemed
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13922,	-- In the Hands of the Perverse
 					},
 					{	-- Allegiance to the Old Gods
 						["questID"] = 6565,
+						["u"] = 40,
+						["qg"] = 12736,	-- Je'neu Sancrea
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(17694)),	-- Band of the Fist
 							un(2, i(17695)),	-- Chestnut Mantle
 						},
-						["u"] = 40,
-						["qg"] = 12736,	-- Je'neu Sancrea
-						["races"] = HORDE_ONLY,
 					},
 					{	-- Answered Questions
 						["questID"] = 1044,
+						["u"] = 40,
+						["qg"] = 661,	-- Jonathan Carevin
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							un(2, i(5817)),	-- Lunaris Bow
 							un(2, i(5818)),	-- Moonbeam Wand
 						},
-						["u"] = 40,
-						["qg"] = 661,	-- Jonathan Carevin
-						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- As Good as it Gets
+						["questID"] = 13870,
+						["qg"] = 33889,	-- Krokk
+						["coord"] = { 82.5, 53.7, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							13815,	-- Making Stumps
+							13865,	-- Wet Work
+						},
 					},
 					{	-- Ashenvale Outrunners
 						["questID"] = 6503,
 						["qg"] = 12867,	-- Kuray'bin
-						["coord"] = { 73.5, 60.8 },
+						["coord"] = { 73.5, 60.8, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Astranaar Bound
@@ -485,7 +189,7 @@ _.Zones =
 					{	-- Bad News Bear-er
 						["questID"] = 13848,
 						["qg"] = 33837,	-- Kadrak
-						["coord"] = { 73.6, 62.1 },
+						["coord"] = { 73.6, 62.1, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					},
@@ -500,13 +204,26 @@ _.Zones =
 						["qg"] = 33204,	-- Evenar Stillwhisper
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Before You Go...
+						["questID"] = 13920,
+						["qg"] = 34122,	-- Commander Grimfang
+						["coord"] = { 12.1, 33.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13890,	-- Keep the Fires Burning
+						["groups"] = {
+							i(56721),	-- Meat Packer Ribbon
+							i(56722),	-- Je'neu's Hunting Vest
+							i(56723),	-- Deerstalker Leggings
+							i(131319),	-- Je'neu's Ringmail Jerkin
+						},
+					},
 					{	-- Befouled Water Globe
 						["itemID"] = 16408,
 						["groups"] = {
 							{	-- The Befouled Element
 								["questID"] = 1918,
 								["qg"] = 12759,	-- Tideress
-								["coord"] = { 48.2, 69.6 },
+								["coord"] = { 48.2, 69.6, 63 },
 								["races"] = HORDE_ONLY,
 							},
 						},
@@ -514,19 +231,62 @@ _.Zones =
 					{	-- Between a Rock and a Thistlefur
 						["questID"] = 216,
 						["qg"] = 12757,	-- Karang Amakkar
-						["coord"] = { 37.7, 43.5 },
+						["coord"] = { 37.7, 43.5, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Blackfathom Deeps
 						["questID"] = 26894,
 						["qg"] = 34122,	-- Commander Grimfang
-						["coord"] = { 12.1, 33.8 },
+						["coord"] = { 12.1, 33.8, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Blackfathom Deeps
 						["questID"] = 26897,
 						["qg"] = 3845,	-- Shindrell Swiftfire
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Blastranaar!
+						["questID"] = 13947,
+						["qg"] = 34359,	-- Captain Goggath
+						["coord"] = { 38.1, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["groups"]	= {
+							i(56661),	-- Preemptive Striker
+							i(56662),	-- Staff of Fiery Fate
+							i(56663),	-- Leggings of Hellscream's Watch
+							i(131323),	-- Tweedle's Blastproof Legguards
+						},
+						["sourceQuests"] = {
+							13943,	-- Breathing Room
+							13944,	-- Small Hands, Short Fuse
+						},
+					},
+					{	-- Blood of the Weak
+						["questID"] = 13803,
+						["qg"] = 33837,	-- Kadrak
+						["coord"] = { 73.6, 62.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13712,	-- To The Rescue!
+					},
+					{	-- Breathing Room
+						["questID"] = 13943,
+						["qg"] = 34359,	-- Captain Goggath
+						["coord"] = { 38.1, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13936,	-- Tweedle's Dumb
+						["groups"] = {
+							i(56667),	-- Cloak of Readiness
+							i(56668),	-- Bracers of Humility
+							i(56669),	-- Groundwork Shield
+							i(131322),	-- Preparation Wristguards
+						},
+					},
+					{	-- Building Your Own Coffin
+						["questID"] = 13983,
+						["qg"] = 34596,	-- Foreman Jinx
+						["coord"] = { 46.1, 63.2, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13977,	-- Mass Production
 					},
 					{	-- Check in on the Edunes
 						["questID"] = 13965,
@@ -550,9 +310,22 @@ _.Zones =
 					{	-- Condition Critical!
 						["questID"] = 13958,
 						["qg"] = 34359,	-- Captain Goggath
-						["coord"] = { 38.0, 43.8 },
+						["coord"] = { 38.0, 43.8, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13947,	-- Blastranaar!
+					},
+					{	-- Crisis at Splintertree
+						["questID"] = 13653,
+						["qg"] = 33421,	-- Gorka
+						["coord"] = { 72.9, 80.4, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13651,	-- Needs a Little Lubrication
+						["groups"] = {
+							i(56639),	-- Mourner's Stole
+							i(56640),	-- Leggings of Loss
+							i(56641),	-- Burden of Sacrifice
+							i(131299),	-- Griefbearer Leggings
+						},
 					},
 					{	-- Culling the Furbolg Threat
 						["questID"] = 13867,
@@ -568,21 +341,28 @@ _.Zones =
 					{	-- Dead Elves Walking
 						["questID"] = 13801,
 						["qg"] = 12724,	-- Pixel
-						["coord"] = { 73.8, 62.4 },
+						["coord"] = { 73.8, 62.4, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13803,	-- Blood of the Weak
 					},
+					{	-- Deep Despair
+						["questID"] = 13901,
+						["qg"] = 12719,	-- Marukai
+						["coord"] = { 12.6, 35.3, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 6442,	-- Naga at the Zoram Strand
+					},
 					{	-- Defend the Tree!
 						["questID"] = 13935,
+						["qg"] = 34377,	-- Halannia
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13928,	-- Recover the Fallen
 						["groups"] = {
 							i(56670),	-- Raynewood Shield
 							i(56671),	-- Shadumbra's Wrath
 							i(56672),	-- Frostshadow Crossbow
 							i(131321),	-- Shadumbra's Might
 						},
-						["qg"] = 34377,	-- Halannia
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13928,	-- Recover the Fallen
 					},
 					{	-- Delivery for Orendil
 						["questID"] = 13623,
@@ -599,7 +379,7 @@ _.Zones =
 					{	-- Destroy the Legion
 						["questID"] = 26448,
 						["qg"] = 17355,	-- Valusha
-						["coord"] = { 73.1, 60.1 },
+						["coord"] = { 73.1, 60.1, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Destroy the Legion
@@ -610,22 +390,29 @@ _.Zones =
 					{	-- Diabolical Plans
 						["itemID"] = 23798,
 						["questID"] = 26447,	-- Diabolical Plans
+						["races"] = HORDE_ONLY,
 						["qgs"] = {
 							11697,	-- Mannoroc Lasher
 							6115,	-- Roaming Felguard
 							6073,	-- Searing Felguard
 						},
-						["races"] = HORDE_ONLY,
 					},
 					{	-- Diabolical Plans
 						["itemID"] = 23777,
 						["questID"] = 26443,	-- Diabolical Plans
+						["races"] = ALLIANCE_ONLY,
 						["qgs"] = {
 							11697,	-- Mannoroc Lasher
 							6115,	-- Roaming Felguard
 							6073,	-- Searing Felguard
 						},
-						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Dirty Deeds
+						["questID"] = 13797,
+						["qg"] = 33760,	-- Durak
+						["coord"] = { 72.2, 57.6, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13751,	-- Tell No One!
 					},
 					{	-- Do Yourself a Favor
 						["questID"] = 25613,
@@ -659,6 +446,9 @@ _.Zones =
 					},
 					{	-- Explosives Shredding
 						["questID"] = 13698,
+						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26457,	-- Agents of Destruction
 						["groups"] = {
 							i(56646),	-- Shredder Blade
 							i(56647),	-- Powder Burn Vest
@@ -666,26 +456,30 @@ _.Zones =
 							i(131301),	-- Soot-Stained Chainmail Breastplate
 							i(156957),	-- Shredder Piston
 						},
-						["qg"] = 17287,	-- Sentinel Luciel Starwhisper
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26457,	-- Agents of Destruction
 					},
 					{	-- Fallen Sky Lake
 						["questID"] = 1035,
+						["u"] = 40,
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							un(2, i(5814)),	-- Snapbrook Armor
 							un(2, i(6722)),	-- Beastial Manacles
 							un(2, i(17047)),	-- Luminescent Amice
 						},
-						["u"] = 40,
-						["qg"] = 3894,	-- Pelturas Whitemoon
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Field Test: Gnomecorder
 						["questID"] = 25621,
 						["qg"] = 40895,	-- Professor Xakxak Gyromate
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25615,	-- Kalen Trueshot
+					},
+					{	-- Final Report
+						["questID"] = 13619,
+						["qg"] = 33294,	-- Gorat
+						["coord"] = { 64.2, 84.4, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13618,	-- Find Gorat!
 					},
 					{	-- Finding Teronis
 						["questID"] = 26463,
@@ -696,7 +490,7 @@ _.Zones =
 					{	-- Freedom to Ruul
 						["questID"] = 6482,
 						["qg"] = 12818,	-- Ruul Snowhoof
-						["coord"] = { 41.4, 34.6 },
+						["coord"] = { 41.4, 34.6, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Go With The Flow
@@ -707,16 +501,16 @@ _.Zones =
 					},
 					{	-- Gurtar's Request
 						["questID"] = 13875,
+						["qg"] = 34242,	-- Guardian Gurtar
+						["races"] = HORDE_ONLY,
+						["coord"] = { 89.5, 48.6, 63 },
+						["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 						["groups"] = {
 							i(56655),	-- Bloodcup Slippers
 							i(56656),	-- Faithful Treads
 							i(56657),	-- Gloves of Unforgotten Vows
 							i(131309),	-- Faithful Footguards
 						},
-						["qg"] = 34242,	-- Guardian Gurtar
-						["races"] = HORDE_ONLY,
-						["coord"] = { 89.5, 48.6 },
-						["sourceQuest"] = 13873,	-- Sheelah's Last Wish
 					},
 					{	-- He Who Would Be Forgiven
 						["questID"] = 13921,
@@ -737,6 +531,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25615,	-- Return to Stardust
 					},
+					{	-- Hot Lava
+						["questID"] = 13880,
+						["qg"] = 34290,	-- Core
+						["coord"] = { 52.3, 56.5, 63 },
+						["sourceQuest"] = 13879,	-- Thunder Peak
+					},
 					{	-- In a Bind
 						["questID"] = 13982,
 						["qg"] = 3698,	-- Bolyun
@@ -754,76 +554,141 @@ _.Zones =
 					},
 					{	-- Insane Druids
 						["questID"] = 26472,
+						["qg"] = 33777,	-- Gaivan Shadewalker
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13792,	-- The Shadewalker
 						["groups"] = {
 							i(5813),	-- Emil's Brand
 							i(156959),	-- Emil's Staff
 						},
-						["qg"] = 33777,	-- Gaivan Shadewalker
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13792,	-- The Shadewalker
 					},
 					{	-- Je'neu of the Earthen Ring
 						["questID"] = 824,
+						["qg"] = 12737,	-- Mastok Wrilehiss
+						["coord"] = { 74.1, 60.7, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 1918,	-- Befouled Water Globe
 						["groups"] = {
 							i(16659),	-- Deftkin Belt
 							i(16660),	-- Driftmire Shield
 							i(16661),	-- Soft Willow Cape
 							i(131216),	-- Nimblereed Chain
 						},
-						["qg"] = 12737, -- Mastok Wrilehiss
-						["coord"] = { 74.1, 60.7 },
+					},
+					{	-- Keep the Fires Burning
+						["questID"] = 13890,
+						["qg"] = 34122,	-- Commander Grimfang
+						["coord"] = { 12.1, 33.8, 63 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 1918, -- Befouled Water Globe
+						["groups"] = {
+							i(56715),	-- Oily Bracers
+							i(56716),	-- Alighted Boots
+							i(56717),	-- Mystlash Bracers
+							i(131314),	-- Darkbreaker Treads
+						},
 					},
 					{	-- King of the Foulweald
 						["questID"] = 13989,
+						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26480,	-- Dartol's Rod
 						["groups"] = {
 							i(56706),	-- Greenpaw Belt
 							i(56707),	-- Band of Perserverence
 						},
-						["qg"] = 3897,	-- Krolg
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26480,	-- Dartol's Rod
 					},
 					{ 	-- King of the Foulweald
 						["questID"] = 6621,
+						["qg"] = 12696,	-- Senani Thunderheart
+						["coord"] = { 49.7, 65.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13967,	-- Thinning the... Heard?
 						["groups"] = {
 							i(17005),	-- Boorguard Tunic
 							i(17006),	-- Cobalt Legguards
 							i(131234),	-- Feral Vestment
 						},
-						["qg"] = 12696,	-- Senani Thunderheart
-						["coord"] = { 49.7, 65.1 },
+					},
+					{	-- Lousy Pieces of Ship
+						["questID"] = 13883,
+						["qg"] = 34303,	-- Dagrun Ragehammer
+						["coord"] = { 11.4, 35.3, 63 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 13967,	-- Thinning the... Heard?
+					},
+					{	-- Making Stumps
+						["questID"] = 13815,
+						["qg"] = 33889,	-- Krokk
+						["coord"] = { 82.5, 53.7, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13808,	-- Mission Improbable
+					},
+					{	-- Management Material
+						["questID"] = 13640,
+						["qg"] = 33421,	-- Gorka
+						["coord"] = { 72.9, 80.4, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13628,	-- Got Wood?
+						["groups"] = {
+							i(56627),	-- Labor Camp Frock
+							i(56628),	-- Manager's Mantle
+							i(56629),	-- Hands of Encouragement
+							i(131297),	-- Gorka's Brass Shoulderguards
+						},
+					},
+					{	-- Mass Production
+						["questID"] = 13977,
+						["qg"] = 34569,	-- Flooz
+						["coord"] = { 49.9, 67.2, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13974,	-- Tweedle's Tiny Package
+					},
+					{	-- Mission Improbable
+						["questID"] = 13808,
+						["qg"] = 33837,	-- Kadrak
+						["coord"] = { 73.6, 62.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13805,	-- Pierce Their Heart!
 					},
 					{	-- Naga of the Strand
 						["questID"] = 13602,
 						["qg"] = 3845,	-- Shindrell Swiftfire
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Naga at the Zoram Strand
+						["questID"] = 6442,
+						["qg"] = 12719,	-- Marukai
+						["coord"] = { 12.6, 35.3, 63 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Needs a Little Lubrication
+						["questID"] = 13651,
+						["qg"] = 33421,	-- Gorka
+						["coord"] = { 72.9, 80.4, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13640,	-- Management Material
+					},
 					{	-- Never Again!
 						["questID"] = 26449,
+						["qg"] = 17355,	-- Valusha
+						["coord"] = { 73.1, 60.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 26447,	-- Diabolical Plans
 						["groups"] = {
 							i(24119),	-- Band of Argus
 							i(24120),	-- Seal of Argus
 							i(24118),	-- Signet of Argus
 						},
-						["qg"] = 17355,	-- Valusha
-						["coord"] = { 73.1, 60.1 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 26447,	-- Diabolical Plans
 					},
 					{	-- Never Again!
 						["questID"] = 26445,
+						["qg"] = 17303,	-- Vindicator Vedaar
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26443,	-- Diabolical Plans
 						["groups"] = {
 							i(24119),	-- Band of Argus
 							i(24120),	-- Seal of Argus
 							i(24118),	-- Signet of Argus
 						},
-						["qg"] = 17303,	-- Vindicator Vedaar
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26443,	-- Diabolical Plans
 					},
 					{	-- Of Their Own Design
 						["questID"] = 13595,
@@ -836,28 +701,74 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13642,	-- Bathed in Light
 					},
+					{	-- Pierce Their Heart!
+						["questID"] = 13805,
+						["qg"] = 33760,	-- Durak
+						["coord"] = { 72.1, 57.6, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13803,	-- Blood of the Weak
+						["groups"] = {
+							i(56727),	-- Scrupleless Bracers
+							i(56728),	-- Bloodtaint Boots
+							i(56729),	-- Forest Heart Piercer
+							i(131304),	-- Heart-Corruptor Wristguards
+						},
+					},
+					{	-- Playing with Felfire
+						["questID"] = 13730,
+						["qg"] = 33726,	-- Splintertree Demolisher
+						["coord"] = { 73.3, 62.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13803,	-- Blood of the Weak
+						["groups"] = {
+							i(56649),	-- Folly's Edge
+							i(56650),	-- Felfire-Tainted Vest
+							i(56651),	-- Legguards of Abandoned Virtue
+							i(131302),	-- Felfire-Scorched Chesteguard
+							i(156958),	-- Scepter of Questionable Decision Making
+						},
+					},
 					{	-- Playing Possum
 						["questID"] = 26478,
+						["qg"] = 3916,	-- Shael'dryn
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26477,	-- Search the Bole
 						["groups"] = {
 							i(56664),	-- Shael'dryn's Bracers
 							i(56665),	-- Possumfoot Boots
 							i(56666),	-- Dissembling Bracers
 							i(131534),	-- Possumfoot Treads
 						},
-						["qg"] = 3916,	-- Shael'dryn
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26477,	-- Search the Bole
+					},
+					{	-- Put Out The Fire
+						["questID"] = 13884,
+						["qg"] = 34292,	-- Arctanus
+						["coord"] = { 52.0, 56.7, 63 },
+						["sourceQuest"] = 13879,	-- Thunder Peak
 					},
 					{	-- Raene's Cleansing
 						["questID"] = 1046,
+						["u"] = 40,
+						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							un(2, i(5815)),	-- Glacial Stone
 							un(2, i(17046)),	-- Gutterblade
 							un(2, i(1116)),	-- Ring of Pure Silver
 						},
-						["u"] = 40,
-						["qg"] = 3897,	-- Krolg
-						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Rain of Destruction
+						["questID"] = 13798,
+						["qg"] = 33760,	-- Durak
+						["coord"] = { 72.2, 57.6, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13797,	-- Dirty Deeds
+						["groups"] = {
+							i(56711),	-- Impish Blade
+							i(56712),	-- Accursed Mace
+							i(56713),	-- Durak's Wand
+							i(56714),	-- Band of Foul Strength
+						},
 					},
 					{	-- Rear Guard Duty (No Prereq)
 						["questID"] = 13632,
@@ -894,15 +805,15 @@ _.Zones =
 					},
 					{	-- Respect for the Fallen
 						["questID"] = 13626,
+						["qg"] = 11806,	-- Sentinel Onaeya
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13624,	-- A Squad of Your Own
 						["groups"] = {
 							i(56630),	-- Delgren's Leggings
 							i(56631),	-- Onaeya's Gloves
 							i(56632),	-- Feero's Pauldrons
 							i(131296),	-- Feero's Ringmail Grips
 						},
-						["qg"] = 11806,	-- Sentinel Onaeya
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13624,	-- A Squad of Your Own
 					},
 					{	-- Retaking Mystral Lake
 						["questID"] = 26470,
@@ -912,15 +823,15 @@ _.Zones =
 					},
 					{	-- Return Fire
 						["questID"] = 13853,
+						["qg"] = 4079,	-- Sentinel Thenysil
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13849,	-- Astranaar's Burning!
 						["groups"] = {
 							i(56673),	-- Fiery Loop
 							i(56674),	-- Thenysil's Vest
 							i(56675),	-- Astranaar Legguards
 							i(131306),	-- Glaivethrower Expert's Chestpiece
 						},
-						["qg"] = 4079,	-- Sentinel Thenysil
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13849,	-- Astranaar's Burning!
 					},
 					{	-- Return to Raene
 						["questID"] = 26479,
@@ -930,17 +841,17 @@ _.Zones =
 					},
 					{	-- Ruuzel
 						["questID"] = 26466,
-						["groups"] = {
-							i(5812),	-- Robes of Antiquity
-						},
 						["qg"] = 3846,	-- Talen
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26465,	-- The Ancient Statuettes
+						["groups"] = {
+							i(5812),	-- Robes of Antiquity
+						},
 					},
 					{	-- Satyr Horns
 						["questID"] = 6441,
 						["qg"] = 12724,	-- Pixel
-						["coord"] = { 73.8, 62.4 },
+						["coord"] = { 73.8, 62.4, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26449,	-- Never Again!
 					},
@@ -955,6 +866,19 @@ _.Zones =
 						["qg"] = 3916,	-- Shael'dryn
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26476,	-- Dryad Delivery
+					},
+					{	-- Security!
+						["questID"] = 13871,
+						["qg"] = 17304,	-- Overseer Gorthak
+						["coord"] = { 90.9, 58.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13870,	-- As Good as it Gets
+						["groups"] = {
+							i(56718),	-- Detective Buckler
+							i(56719),	-- Pilfered Kaldorei Belt
+							i(56720),	-- Security Crossbow
+							i(131308),	-- Gorthak's Tool Belt
+						},
 					},
 					{	-- Sentinel Advanced Care Package
 						["questID"] = 7865,
@@ -974,31 +898,52 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Requires Friendly Reputation with Silverwing Sentinels.",
 					},
+					{	-- Set Us Up the Bomb
+						["questID"] = 13942,
+						["qg"] = 34395,	-- Tweedle
+						["coord"] = { 37.9, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13936,	-- Tweedle's Dumb
+					},
 					{	-- Shadumbra's Head
 						["itemID"] = 16304,
 						["questID"] = 24,	-- Shadumbra's Head
 						["qg"] = 12677,	-- Shadumbra
-						["coord"] = { 61.4, 50.2 },
+						["coord"] = { 61.4, 50.2, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Sharptalon's Claw
 						["itemID"] = 16305,
 						["questID"] = 2,	-- Sharptalon's Claw
 						["qg"] = 12676,	-- Sharptalon
-						["coord"] = { 73.2, 73.6 },
+						["coord"] = { 73.2, 73.6, 63 },
 						["races"] = HORDE_ONLY,
 						["description"] = "Can be found roaming the woods.",
+					},
+					{	-- Sheelah's Last Wish
+						["questID"] = 13873,
+						["qg"] = 34233,	-- Guardian Menerin
+						["coord"] = { 90.7, 58.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13871,	-- Security!
 					},
 					{	-- Simmer Down Now
 						["questID"] = 25,
 						["qg"] = 34559,	-- Captain Tarkan
-						["coord"] = { 50.1, 67.5 },
+						["coord"] = { 50.1, 67.5, 63 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Small Hands, Short Fuse
+						["questID"] = 13944,
+						["qg"] = 34395,	-- Tweedle
+						["coord"] = { 37.9, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13942,	-- Set Us Up The Bomb
 					},
 					{	-- Stalemate
 						["questID"] = 13962,
 						["qg"] = 34518,	-- Thagg
-						["coord"] = { 59.9, 53.2 },
+						["coord"] = { 59.9, 53.2, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13958,	-- Condition Critical!
 					},
@@ -1010,24 +955,31 @@ _.Zones =
 					},
 					{	-- Supplies to Auberdine
 						["questID"] = 976,
+						["u"] = 40,
+						["qg"] = 4484,	-- Feero Ironhand
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							un(2, i(6721)),	-- Chestplate of Kor
 							un(2, i(5323)),	-- Everglow Lantern
 						},
-						["u"] = 40,
-						["qg"] = 4484,	-- Feero Ironhand
-						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Tell No One!
+						["questID"] = 13751,
+						["qg"] = 33726,	-- Sprintertree Demolisher
+						["coord"] = { 73.3, 62.1, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13730,	-- Playing With Felfire
 					},
 					{	-- That Which has Risen
 						["questID"] = 13644,
+						["qg"] = 33443,	-- Keeper Heartwise
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(56652),	-- Ablution Slippers
 							i(56653),	-- Somber Treads
 							i(56654),	-- Heartwise Boon
 							i(131298),	-- Somber Boots
 						},
-						["qg"] = 33443,	-- Keeper Heartwise
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Ancient Statuettes
 						["questID"] = 26465,
@@ -1037,57 +989,63 @@ _.Zones =
 					},
 					{	-- The Branch of Cenarius
 						["questID"] = 26468,
+						["qg"] = 3920,	-- Anilia
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
 						["groups"] = {
 							i(5820),	-- Faerie Mantle
 							i(11229),	-- Brightplate Girdle
 						},
-						["qg"] = 3920,	-- Anilia
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
+					},
+					{	-- The Essence of Aku'Mai
+						["questID"] = 26890,
+						["qg"] = 34303,	-- Dagrun Ragehammer
+						["coord"] = { 11.4, 35.3, 63 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Forest Heart
 						["questID"] = 13796,
+						["qg"] = 33777,	-- Gaivan Shadewalker
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13792,	-- The Shadewalker
 						["groups"] = {
 							i(56636),	-- Forest Grace Mantle
 							i(56637),	-- Severed Druid's Leggings
 							i(56638),	-- Gnarlbark Shoulders
 							i(131303),	-- Barkburn Legguards
 						},
-						["qg"] = 33777,	-- Gaivan Shadewalker
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13792,	-- The Shadewalker
 					},
 					{	-- The Goblin Braintrust
 						["questID"] = 13979,
+						["qg"] = 34354,	-- Huntress Jalin
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(56703),	-- Jalin's Recompense
 							i(56704),	-- Braintrust Vest
 							i(56705),	-- Skunkworks Sword
 							i(131326),	-- Bombgineer Blasting Vest
 						},
-						["qg"] = 34354,	-- Huntress Jalin
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Hunt Completed
 						["questID"] = 247,
-						["groups"] = {
-							un(2, i(16658)),	-- Wildhunter Cloak
-						},
 						["u"] = 40,
 						["qg"] = 12696,	-- Senani Thunderheart
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							un(2, i(16658)),	-- Wildhunter Cloak
+						},
 					},
 					{	-- The Last Stand
 						["questID"] = 13987,
+						["qg"] = 34604,	-- Big Baobob
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13985,	-- Clear the Shrine
 						["groups"] = {
 							i(56689),	-- Adansonian Cloak
 							i(56690),	-- Unringed Bands
 							i(56691),	-- Baobab Fruit Shell
 							i(131327),	-- Sheltered Aessina Wristguards
 						},
-						["qg"] = 34604,	-- Big Baobob
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13985,	-- Clear the Shrine
 					},
 					{	-- The Lost Chalice
 						["questID"] = 26455,
@@ -1096,25 +1054,25 @@ _.Zones =
 					},
 					{	-- The Lost Gem
 						["questID"] = 26464,
+						["qg"] = 3891,	-- Teronis' Corpse
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26463,	-- Finding Teronis
 						["groups"] = {
 							i(56624),	-- Falathim-Washed Robes
 							i(56625),	-- Broadleaf Mantle
 							i(56626),	-- Maestra's Gloves
 							i(131533),	-- Broadleaf Spaulders
 						},
-						["qg"] = 3891,	-- Teronis' Corpse
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26463,	-- Finding Teronis
 					},
 					{	-- The Lost Pages
 						["questID"] = 6504,
+						["u"] = 40,
+						["qg"] = 12718,	-- Gurda Ragescar
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(16741)),	-- Oilrag Handwraps
 							un(2, i(16740)),	-- Shredder Operating Gloves
 						},
-						["u"] = 40,
-						["qg"] = 12718,	-- Gurda Ragescar
-						["races"] = HORDE_ONLY,
 					},
 					{	-- The Reason Why
 						["questID"] = 13630,
@@ -1148,6 +1106,17 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
 					},
+					{	-- They're Out There!
+						["questID"] = 13980,
+						["qg"] = 34596,	-- Foreman Jinx
+						["coord"] = { 46.1, 63.2, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13977,	-- Mass Production
+						["groups"] = {
+							i(56692),	-- Weaponized Belt
+							i(56693),	-- Backwatcher's Ring
+						},
+					},
 					{	-- Thinning the... Herd?
 						["questID"] = 13967,
 						["qg"] = 12696,	-- Senani Thunderheart
@@ -1159,10 +1128,17 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13965,	-- Check in on the Edunes
 					},
+					{	-- Thunder Peak
+						["questID"] = 13879,
+						["qg"] = 34510,	-- Broyk
+						["coord"] = { 38.7, 43.3, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13947,	-- Blastranaar!
+					},
 					{	-- To Hellscream's Watch
 						["questID"] = 13923,
 						["qg"] = 34122,	-- Commander Grimfang
-						["coord"] = { 12.1, 33.8 },
+						["coord"] = { 12.1, 33.8, 63 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 13920,	-- Before You Go...
@@ -1176,7 +1152,7 @@ _.Zones =
 					{	-- To The Ramparts!
 						["questID"] = 13866,
 						["qg"] = 34195,	-- Kulg Gorespatter
-						["coord"] = { 94.4, 46.8 },
+						["coord"] = { 94.4, 46.8, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 24463,	-- Probing into Ashenvale
 						["isBreadcrumb"] = true,
@@ -1190,39 +1166,33 @@ _.Zones =
 					},
 					{	-- Too Far Gone
 						["questID"] = 13876,
+						["qg"] = 34251,	-- Vear Darksnout
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 13868,	-- Corrupting Influence?
 						["groups"] = {
 							i(56622),	-- Thistle Ring
 							i(56623),	-- Zoram'gar Cloak
 						},
-						["qg"] = 34251,	-- Vear Darksnout
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13868,	-- Corrupting Influence?
 					},
 					{ 	-- Torek's Assault
 						["questID"] = 6544,
+						["qg"] = 12858,	-- Torek
+						["coord"] = { 68.4, 75.2, 63 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(16889),	-- Polished Walking Staff
 							i(16890),	-- Slatemetal Cutlass
 							i(156956),	-- Rugged Walking Staff
 						},
-						["qg"] = 12858,	-- Torek
-						["coord"] = { 68.4, 75.2 },
-						["races"] = HORDE_ONLY,
 					},
 					{	-- Troll Charm
 						["questID"] = 6462,
 						["qg"] = 12721,	-- Mitsuwa
-						["coord"] = { 38.8, 42.3 },
+						["coord"] = { 38.8, 42.3, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- Troll Charm
 						["itemID"] = 46128,
-						["groups"] = {
-							{
-								["questID"] = 13868,	-- Corrupting Influence?
-								["races"] = ALLIANCE_ONLY,
-							},
-						},
 						["crs"] = {
 							3925,	-- Thistlefur Avenger
 							3924,	-- Thistlefur Shaman
@@ -1230,24 +1200,44 @@ _.Zones =
 							3921,	-- Thistlefur Ursa
 							3922,	-- Thistlefur Totemic
 						},
+						["groups"] = {
+							{
+								["questID"] = 13868,	-- Corrupting Influence?
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
 					},
 					{	-- True Power of the Rod
 						["questID"] = 26482,
+						["qg"] = 3897,	-- Krolg
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26481,	-- A New Adornment
 						["groups"] = {
 							i(56694),	-- Silverwind Bracers
 							i(56695),	-- Wolfrunner Boots
 							i(56696),	-- Legacy of Teronis
 							i(131535),	-- Wolfrunner Wristbands
 						},
-						["qg"] = 3897,	-- Krolg
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 26481,	-- A New Adornment
+					},
+					{	-- Tweedle's Dumb
+						["questID"] = 13936,
+						["qg"] = 34359,	-- Captain Goggath
+						["coord"] = { 38.1, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13923,	-- To Hellscream's Watch
+					},
+					{	-- Tweedle's Tiny Package
+						["questID"] = 13974,
+						["qg"] = 34395,	-- Tweedle
+						["coord"] = { 37.9, 43.8, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13947,	-- Blastranaar!
 					},
 					{	-- Ursangous' Paw
 						["itemID"] = 16303,
 						["questID"] = 23,	-- Ursangous
 						["qg"] = 12678,	-- Ursangous
-						["coord"] = { 40.4, 66.4 },
+						["coord"] = { 40.4, 66.4, 63 },
 						["races"] = HORDE_ONLY,
 						["description"] = "Can be found roaming the woods west of Silverwind Refuge.",
 					},
@@ -1256,16 +1246,41 @@ _.Zones =
 						["qg"] = 3901,	-- Illiyana
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Vorsha the Lasher
+						["questID"] = 6641,
+						["qg"] = 12717,	-- Muglash
+						["coord"] = { 12.7, 34.1, 63 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(17692),	-- Horn Ring
+						},
+					},
 					{	-- Vortex
 						["questID"] = 13886,
+						["qg"] = 34289,	-- The Vortex
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(56683),	-- Blossom of the Earthen Ring
 							i(56684),	-- Subduer's Gloves
 							i(56685),	-- Belt of Equilibrium
 							i(131312),	-- Subduer's Gauntlets
 						},
+						["sourceQuests"] = {
+							13880,	-- Hot Lava
+							13884,	-- Put Out The Fire
+						},
+					},
+					{	-- Vortex
+						["questID"] = 13888,
 						["qg"] = 34289,	-- The Vortex
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 52.3, 56.8, 63 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(56686),	-- Blossom of the Earthen Ring
+							i(56687),	-- Subduer's Gloves
+							i(56688),	-- Belt of Equilibrium
+							i(131313),	-- Subduer's Gauntlets
+						},
 						["sourceQuests"] = {
 							13880,	-- Hot Lava
 							13884,	-- Put Out The Fire
@@ -1273,26 +1288,26 @@ _.Zones =
 					},
 					{	-- Warsong Supplies
 						["questID"] = 6571,
+						["u"] = 40,
+						["qg"] = 11820,	-- Locke Okarr
 						["groups"] = {
 							un(2, i(16977)),	-- Warsong Boots
 							un(2, i(16978)),	-- Warsong Gauntlets
 							un(2, i(16975)),	-- Warsong Supplies
 						},
-						["u"] = 40,
-						["qg"] = 11820,	-- Locke Okarr
 						["races"] = HORDE_ONLY,
 					},
 					{	-- We're Here to Do One Thing, Maybe Two...
 						["questID"] = 25945,
 						["qg"] = 41678,	-- Blood Guard Aldo Rockrain
-						["coord"] = { 49.8, 65.7 },
+						["coord"] = { 49.8, 65.7, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 28532,	-- Warchief's Command: Stonetalon Mountains!
 					},
 					{	-- Well, Come to the Jungle (breadcrumb?)
 						["questID"] = 26416,
 						["qg"] = 43063,	-- Cromula
-						["coord"] = { 49.4, 67.1 },
+						["coord"] = { 49.4, 67.1, 63 },
 						["races"] = HORDE_ONLY,
 					},
 					{	-- West to the Strand
@@ -1301,6 +1316,19 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13594,	-- Don't Forget the Horde
 						["isBreadcrumb"] = true,
+					},
+					{	-- Wet Work
+						["questID"] = 13865,
+						["qg"] = 33889,	-- Krokk
+						["coord"] = { 82.5, 53.7, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 13808,	-- Mission Improbable
+						["groups"] = {
+							i(56724),	-- Wet Work Gloves
+							i(56725),	-- Belt of Secret Signs
+							i(56726),	-- Disarray Boots
+							i(131307),	-- Krokk's Notched Belt
+						},
 					},
 					{	-- Worgen Wisdom
 						["questID"] = 13872,

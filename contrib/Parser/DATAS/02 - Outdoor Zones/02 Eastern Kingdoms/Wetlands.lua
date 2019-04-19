@@ -7,19 +7,19 @@ _.Zones =
 		m(56, {	-- Wetlands
 			["groups"] = {	
 				n(-228, {	-- Flight Path
-					fp(553, { -- Dun Modr, Wetlands
+					fp(553, {	-- Dun Modr, Wetlands
 						["coord"] = { 50, 18.4 },
 					}),
-					fp(552, { -- Greenwarden's Grove, Wetlands
+					fp(552, {	-- Greenwarden's Grove, Wetlands
 						["coord"] = { 56.4, 41.8 },
 					}),
-					fp(7, { -- Menethil Harbor, Wetlands
+					fp(7, {	-- Menethil Harbor, Wetlands
 						["coord"] = { 9.4, 59.6 },
 					}),
-					fp(554, { -- Slabchisel's Survey, Wetlands
+					fp(554, {	-- Slabchisel's Survey, Wetlands
 						["coord"] = { 56.8, 71.2 },
 					}),
-					fp(551, { -- Whelgar's Retreat, Wetlands
+					fp(551, {	-- Whelgar's Retreat, Wetlands
 						["coord"] = { 38.6, 39 },
 					}),
 				}),
@@ -47,7 +47,7 @@ _.Zones =
 					qg(, qa(25820)),	-- A Mother's Worries
 					qg(, qa(26327)),	-- Anvilmar the Hero
 --]]
-					qg(2104, qa(25780, { -- Assault on Menethil Keep
+					qg(2104, qa(25780, {	-- Assault on Menethil Keep
 						i(59078),
 						i(59077),
 						i(59076),
@@ -60,7 +60,7 @@ _.Zones =
 					qa(28991),	-- Candy Bucket
 					qg(, qa(26137)),	-- Checking on the Boys
 --]]
-					qg(41297, qa(25801, { -- Claws from the Deep
+					qg(41297, qa(25801, {	-- Claws from the Deep
 						i(59082),
 						i(59081),
 						i(59080),
@@ -79,14 +79,14 @@ _.Zones =
 					qh(11749),	-- Desecrate this Fire!
 					qg(, q(38841)),	-- Die, Fish-People
 --]]
-					qg(41415, qa(25864, { -- Dinosaur Crisis
+					qg(41415, qa(25864, {	-- Dinosaur Crisis
 						i(59095),
 						i(59094),
 						i(59093),
 						i(131451),
 					})),
 --					qg(, qa(25734)),	-- Down In Thelgen Rock
-					qg(41086, qa(25727, { -- Drungeld Glowerglare
+					qg(41086, qa(25727, {	-- Drungeld Glowerglare
 						i(59072),	-- Addled Blotter Bracers
 						i(59071),	-- Bad Belt
 						i(59070),	-- Surveyor's Leggings
@@ -97,7 +97,7 @@ _.Zones =
 					qg(, q(26138)),	-- Ferilon Leafborn
 					qg(, qa(25721)),	-- Fight the Flood
 --]]
-					qg(41615, qa(25939, { -- For Peat's Sake
+					qg(41615, qa(25939, {	-- For Peat's Sake
 						i(59109),
 						i(59108),
 						i(59107),
@@ -114,7 +114,7 @@ _.Zones =
 					qg(, qa(25857)),	-- Hunting Horrorjaw
 					qg(, qa(25854)),	-- I'll Call Him Bitey
 --]]
-					qg(41128, qa(25735, { -- Incendicite Ore
+					qg(41128, qa(25735, {	-- Incendicite Ore
 						i(59066),
 						i(59065),
 						i(59064),
@@ -133,7 +133,7 @@ _.Zones =
 					qg(, qa(25802)),	-- Reclaiming Goods
 --]]
 					o(259, {	-- Half-buried Barrel	
-						qa(25805, { -- Return the Statuette
+						qa(25805, {	-- Return the Statuette
 							i(59085),
 							i(59084),
 							i(59083),
@@ -141,7 +141,7 @@ _.Zones =
 						}),
 					}),
 --					qg(, qa(25804)),	-- Search More Hovels
-					qg(41129, qa(25722, { -- Sedimentary, My Dear
+					qg(41129, qa(25722, {	-- Sedimentary, My Dear
 						i(59075),
 						i(59074),
 						i(59073),
@@ -152,7 +152,7 @@ _.Zones =
 					qg(, qa(26980)),	-- Swiftgear Station
 					qg(, qa(26189)),	-- The Angerfang Menace
 --]]	
-					qg(42160, qa(26128, { -- The Battle of Thandol Span
+					qg(42160, qa(26128, {	-- The Battle of Thandol Span
 						i(59113),
 						i(59112),
 						i(59111),
@@ -161,7 +161,7 @@ _.Zones =
 						i(131489),
 					})),
 --					qg(, qa(26120)),	-- The Crazed Dragonmaw
-					qg(41307, qa(25817, { -- The Cursed Crew
+					qg(41307, qa(25817, {	-- The Cursed Crew
 						i(59089),
 						i(59088),
 						i(59087),
@@ -169,17 +169,17 @@ _.Zones =
 						i(131445),
 					})),
 					o(112948, {	-- Intrepid's Locked Strongbox
-						qa(25819, { -- The Eye of Paleth
-							i(  2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
-							i( 59092),
-							i( 59091),
-							i( 59090),
+						qa(25819, {	-- The Eye of Paleth
+							i( 2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
+							i(59092),
+							i(59091),
+							i(59090),
 							i(131446),
 						}),
 					}),
 					n(41167, {	-- Torrention
 						i(55243, {	-- Floodsurge Core
-							qa(25736, { -- The Floodsurge Core
+							qa(25736, {	-- The Floodsurge Core
 								i(59069),
 								i(59068),
 								i(59067),
@@ -187,7 +187,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					qg(41415, qa(25865, { -- The Mosshide Job
+					qg(41415, qa(25865, {	-- The Mosshide Job
 						i(59098),
 						i(59097),
 						i(59096),
@@ -201,13 +201,13 @@ _.Zones =
 					qg(, qa(26127)),	-- The Twilight's Hammer Revealed
 					qg(, qa(25723)),	-- Thresh Out of Luck
 --]]					
-					qg(41413, qa(25853, { -- Tooling Around
+					qg(41413, qa(25853, {	-- Tooling Around
 						i(59105),
 						i(59104),
 						i(59103),
 						i(60338),
 						i(131450),
-						i(157026), -- Fresh-Haft Axe
+						i(157026),	-- Fresh-Haft Axe
 					})),
 --[[					
 					qg(, qa(26981)),	-- Whelgar's Retreat
@@ -215,13 +215,13 @@ _.Zones =
 					qg(, qa(25800)),	-- When Life Gives You Crabs
 					qg(, qa(26195)),	-- Who Wards The Greenwarden
 --]]					
-					qg(41415, qa(25868, { -- Yorla Darksnare
+					qg(41415, qa(25868, {	-- Yorla Darksnare
 						i(59102),
 						i(59101),
 						i(59100),
 						i(59099),
-						i(157006), -- Old Guard's Bow
-						i(157004), -- Old Guard's Poleaxe 
+						i(157006),	-- Old Guard's Bow
+						i(157004),	-- Old Guard's Poleaxe 
 					})),
 				}),
 				n(-16, {	-- Rares
@@ -643,7 +643,10 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 					})),
 					na(41435, {	-- Fradd Swiftgear <Engineering Supplies>
-						i(14639),	-- Schematic: Minor Recombobulator
+						["coord"] = { 26.80, 25.91, 56 },
+						["groups"] = {
+							i(14639),	-- Schematic: Minor Recombobulator
+						},
 					}),
 					a(n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 						i(6275),	-- Pattern: Greater Adept's Robe

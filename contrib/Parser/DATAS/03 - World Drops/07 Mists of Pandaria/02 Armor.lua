@@ -5,8 +5,8 @@ _.WorldDrops =
 {
 	{
 		["groups"] = {
-			n(-318, { -- Armor
-				n(-320, { -- Head
+			n(-318, {	-- Armor
+				n(-320, {	-- Head
 					i(87450),	-- Hood of Alchemical Vapors
 					i(87451),	-- Helm of Elemental Binding
 					i(87452),	-- Zom's Misty Hood
@@ -36,7 +36,7 @@ _.WorldDrops =
 						["itemID"] = 82115,	-- Shamanic Amulet
 					},
 				}),
-				n(-321, { -- Shoulder
+				n(-321, {	-- Shoulder
 					i(87489),	-- Fletcher's Sharpening Shoulders
 					i(87490),	-- Orb-Bound Shoulders
 					i(87491),	-- Spaulders of Five Rings
@@ -45,7 +45,7 @@ _.WorldDrops =
 					i(87494),	-- Shoulderguards of Honest Labor
 					i(90576),	-- Spaulders of the Scorned
 				}),
-				n(-322, { -- Back
+				n(-322, {	-- Back
 					i(116693),	-- Coldsinger Cloak
 					i(82017),	-- Intricate Cloak
 					i(82061),	-- Gemmed Cloak
@@ -63,7 +63,7 @@ _.WorldDrops =
 					i(90586),	-- Dory's Pageantry
 					i(90589),	-- Dirl's Drafty Drape
 				}),
-				n(-323, { -- Chest
+				n(-323, {	-- Chest
 					i(87424),	-- Cryptwarden's Breastplate
 					i(87425),	-- Chestguard of the Solicitious Pandaren
 					i(87426),	-- Deathspite Breastplate
@@ -73,7 +73,7 @@ _.WorldDrops =
 					i(90585),	-- Vulajin's Vicious Breastplate
 					i(90587),	-- Natli's Fireheart Robe
 				}),
-				n(-326, { -- Wrist
+				n(-326, {	-- Wrist
 					i(86183),	-- Shining Cicada Bracers
 					i(86184),	-- Luminescent Firefly Wristguards
 					i(86185),	-- Smooth Beetle Wristbands
@@ -111,7 +111,7 @@ _.WorldDrops =
 					i(87521),	-- Zoid's Scorched Bracers
 					i(87522),	-- Star-Carrier Bracers
 				}),
-				n(-327, { -- Hands
+				n(-327, {	-- Hands
 					i(87443),	-- Syrio's Gloves of Tutelage
 					i(87444),	-- Wind-Kissed Handwraps
 					i(87445),	-- Gauntlets of Blurring Fingers
@@ -122,7 +122,7 @@ _.WorldDrops =
 					i(90574),	-- Etoshia's Elegant Gloves
 					i(90588),	-- Rittsyn's Ruinblasters
 				}),
-				n(-328, { -- Waist
+				n(-328, {	-- Waist
 					i(87501),	-- Unbreakable Waistplate
 					i(87502),	-- Repression Belt
 					i(87503),	-- Repin's Ammo-Laden Belt
@@ -131,7 +131,7 @@ _.WorldDrops =
 					i(87506),	-- Cheng's Irrepressible Girdle
 					i(87507),	-- Melador's Mercurial Wrap
 				}),
-				n(-329, { -- Legs
+				n(-329, {	-- Legs
 					i(87459),	-- Dills' Primal Leggings
 					i(87460),	-- Legplates of the Wandering Warrior
 					i(87461),	-- Greatheart Pants
@@ -151,7 +151,7 @@ _.WorldDrops =
 					i(90724),	-- Spriggin's Sproggin' Leggin'
 					i(90725),	-- Gaarn's Leggings of Infestation
 				}),
-				n(-330, { -- Feet
+				n(-330, {	-- Feet
 					i(87432),	-- Tesslah's Ticking Treads
 					i(87433),	-- Blackfooted Greatboots
 					i(87434),	-- Sandals of Sympathetic Healing
@@ -180,6 +180,9 @@ _.WorldDrops =
 					},
 					{	-- Perculia's Peculiar Signet
 						["itemID"] = 90584,	-- Perculia's Peculiar Signet
+					},
+					{	-- Ring of the Shipwrecked Prince
+						["itemID"] = 90591,	-- Ring of the Shipwrecked Prince
 					},
 					{	-- Shamanic Ring
 						["itemID"] = 82118,	-- Shamanic Ring

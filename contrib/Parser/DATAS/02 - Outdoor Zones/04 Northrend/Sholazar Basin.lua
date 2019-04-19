@@ -153,6 +153,24 @@ _.Zones =
 									},
 								},
 							},
+							{	-- A Hero's Burden
+								["questID"] = 12581,	-- A Hero's Burden
+								["qg"] = 28122,	-- Moodle
+								["groups"] = {
+									{	-- Artruis' Focus Stone
+										["itemID"] = 39475,	-- Artruis' Focus Stone
+									},
+									{	-- Blood-Infused Pendant
+										["itemID"] = 39485,	-- Blood-Infused Pendant
+									},
+									{	-- Choker of Binding
+										["itemID"] = 39483,	-- Choker of Binding
+									},
+									{	-- Spiked Collar of Servitude
+										["itemID"] = 39484,	-- Spiked Collar of Servitude
+									},
+								},
+							},
 							{
 								["questID"] = 12704,	-- Appeasing the Great Rain Stone [Quest]
 								["qg"] = 28027, 		-- Quest Giver: High-Oracle Soo-say
@@ -284,10 +302,10 @@ _.Zones =
 					ach(938),	-- The Snows of Northrend
 				}),
 				n(-228, {	-- Flight Points
-					fp(309, { -- Nesingwary Base Camp, Sholazar Basin
+					fp(309, {	-- Nesingwary Base Camp, Sholazar Basin
 						["coord"] = { 25.2, 58.4 },
 					}),
-					fp(308, { -- River's Heart, Sholazar Basin
+					fp(308, {	-- River's Heart, Sholazar Basin
 						["coord"] = { 50, 61.4 },
 					}),
 				}),
@@ -311,7 +329,6 @@ _.Zones =
 					}),
 ]]--
 --[[				
-					q(12581),	-- A Hero's Burden
 					q(12607),	-- A Mammoth Undertaking
 					q(12536),	-- A Rough Ride
 					q(12804),	-- A Steak Fit for a Hunter
@@ -358,7 +375,6 @@ _.Zones =
 					q(12539),	-- Hoofing It
 					q(12595),	-- In Search of Bigger Game
 					qa( 11964),	-- Incense for the Summer Scorchlings
-					q(12624),	-- It Could Be Anywhere!
 					q(12540),	-- Just Following Orders
 					q(12589),	-- Kick, What Kick?
 					q(12651),	-- Lakeside Landing
@@ -411,23 +427,23 @@ _.Zones =
 					q(13024),	-- Wanikaya the Elder
 					q(12660),	-- Weapons of Destruction
 					--]]
-					q(12489, { -- Welcome to Sholazar Basin
-						["qg"] = 27987, -- Monte Muzzleshot
-						["sourceQuests"] = { 12521 }, -- Where in the World is Hemet Nesingwary?
+					q(12489, {	-- Welcome to Sholazar Basin
+						["qg"] = 27987,	-- Monte Muzzleshot
+						["sourceQuests"] = { 12521 },	-- Where in the World is Hemet Nesingwary?
 					}),
-					q(12524, { -- Venture Co. Misadventure
-						["qg"] = 28032, -- Debaar
-						["sourceQuests"] = { 27987 }, -- Welcome to Scholazar Basin
+					q(12524, {	-- Venture Co. Misadventure
+						["qg"] = 28032,	-- Debaar
+						["sourceQuests"] = { 27987 },	-- Welcome to Scholazar Basin
 					}),
-					q(12525, { -- Wipe That Grin Off His Face	
+					q(12525, {	-- Wipe That Grin Off His Face	
 						["groups"] = {
-							i(39332), -- Ogre-Crushing Wristguards
-							i(39376), -- Bracers of the Rejuvenated Forest
-							i(39430), -- Spitelinked Bracers
-							i(39452), -- Roaming Wristguards
+							i(39332),	-- Ogre-Crushing Wristguards
+							i(39376),	-- Bracers of the Rejuvenated Forest
+							i(39430),	-- Spitelinked Bracers
+							i(39452),	-- Roaming Wristguards
 						},
-						["qg"] = 28032, -- Debaar
-						["sourceQuests"] = { 12524 }, -- Venture Co. Misadventure
+						["qg"] = 28032,	-- Debaar
+						["sourceQuests"] = { 12524 },	-- Venture Co. Misadventure
 					}),
 					q(12691,  {  -- A Timeworn Coffer
 						i(39348),
@@ -442,9 +458,10 @@ _.Zones =
 						i(39459),
 					}),
 					q(12569,  {  -- Crocolisk Mastery: The Ambush
-						i(39331),
-						i(39374),
-						i(39461),
+						i(39331),	-- Tooth-Marked Girdle
+						i(39374),	-- Crocscale Moccasins
+						i(39461),	-- Muck-Stained Carapace
+						i(39480),	-- Bent Crocolisk Tooth
 					}),
 					q(12558,  {  -- Dreadsaber Mastery: Ready to Pounce
 						i(39323),
@@ -466,14 +483,16 @@ _.Zones =
 						i(39455),
 					}),
 					q(12570,  {  -- Fortunate Misunderstandings
-						i(39335),
-						i(39378),
-						i(39432),
+						i(39335),	-- Leggings of Mending Fronds
+						i(39378),	-- Ragged Leaf Grips
+						i(39432),	-- Belt of Misconceptions
+						i(39482),	-- Ring of Misinterpreted Gestures
 					}),
 					q(12624,  {  -- It Could Be Anywhere!
-						i(39479),
-						i(39446),
-						i(39466),
+						i(39479),	-- Cloak of Renewed Hope
+						i(39446),	-- Pauldrons of Resolution
+						i(39466),	-- Boots of Dominance
+						i(39474),	-- Ring of Devoted Promises
 					}),
 					q(12537,  {  -- Lightning Definitely Strikes Twice
 						i(39347),
@@ -650,9 +669,9 @@ _.Zones =
 					}),
 				}),
 				n(0, { 		-- Zone Drop
-					i(41122, { -- Plans: Reinforced Cobalt Chestpiece
+					i(41122, {	-- Plans: Reinforced Cobalt Chestpiece
 						["crs"] = {
-							28123, -- Venture Co. Excavator
+							28123,	-- Venture Co. Excavator
 						},
 					}),
 				}),

@@ -12,7 +12,7 @@ _.Zones =
 						ach(945, {	-- The Argent Champion
 							title(99),	-- %s the Argent Champion
 						}),
-						n(30431, { -- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
+						n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 							i(43154),	-- Tabard of the Argent Crusade
 							i(41726),	-- Design: Guardian's Twilight Opal
 							i(42187),	-- Pattern: Brilliant Spellthread
@@ -34,7 +34,7 @@ _.Zones =
 				faction(1098, {	-- Knights of the Ebon Blade
 					["achievementID"] = 1009,	-- Knights of the Ebon Blade
 					["groups"] = {
-						n(32538, { -- Duchess Mynx <Ebon Blade Quartermaster>
+						n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 							i(43155),	-- Tabard of the Ebon Blade
 							i(41562),	-- Design: Deadly Huge Citrine
 							i(41721),	-- Design: Deadly Monarch Topaz
@@ -64,16 +64,16 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Points
-					fp(335, { -- Crusaders' Pinnacle, Icecrown
+					fp(335, {	-- Crusaders' Pinnacle, Icecrown
 						["coord"] = { 79.4, 72.2 },
 					}),
-					fp(325, { -- Death's Rise, Icecrown
+					fp(325, {	-- Death's Rise, Icecrown
 						["coord"] = { 19.4, 47.8 },
 					}),
-					fp(334, { -- The Argent Vanguard, Icecrown
+					fp(334, {	-- The Argent Vanguard, Icecrown
 						["coord"] = { 87.8, 78 },
 					}),
-					fp(333, { -- The Shadow Vault, Icecrown
+					fp(333, {	-- The Shadow Vault, Icecrown
 						["coord"] = { 43.6, 24.4 },
 					}),
 				}),
@@ -191,8 +191,6 @@ _.Zones =
 					qh( 13857),	-- At The Enemy's Gates
 					qh( 13230),	-- Avenge Me!
 					q(13142),	-- Banshee's Revenge
-					qh( 13279),	-- Basic Chemistry
-					qa( 13295),	-- Basic Chemistry
 					q(13213),	-- Battle at Valhalas
 					q(13217),	-- Battle at Valhalas: Carnage!
 					q(13214),	-- Battle at Valhalas: Fallen Heroes
@@ -225,7 +223,6 @@ _.Zones =
 					q(13120),	-- Death's Gaze
 					q(14105),	-- Deathspeaker Kharos
 					q(13042),	-- Deep in the Bowels of The Underhalls
-					q(13039),	-- Defending The Vanguard
 					q(13119),	-- Destroying the Altars
 					qh( 13305),	-- Do Your Worst
 					qa( 13394),	-- Do Your Worst
@@ -356,7 +353,6 @@ _.Zones =
 					qa( 13288),	-- That's Abominable!
 					qa( 13289),	-- That's Abominable!
 					qh( 13276),	-- That's Abominable!
-					q(12852),	-- The Admiral Revealed
 					q(13125),	-- The Air Stands Still
 					qa( 13667),	-- The Argent Tournament
 					qh( 13668),	-- The Argent Tournament
@@ -407,7 +403,6 @@ _.Zones =
 					qa( 13400),	-- The Hunter and the Prince
 					qa( 13337),	-- The Ironwall Rampart
 					qh( 13312),	-- The Ironwall Rampart
-					q(13086),	-- The Last Line Of Defense
 					q(13118),	-- The Purging Of Scourgeholme
 					q(13110),	-- The Restless Dead
 					q(13163),	-- The Rider of Blood
@@ -488,13 +483,13 @@ _.Zones =
 					}),
 					{
 						["questID"] = 13072,	-- A Hero Remains
-						["qg"] = 30562, -- Quest Giver: Crusader Bridenbrad
+						["qg"] = 30562,	-- Quest Giver: Crusader Bridenbrad
 						["sourceQuest"] = 13068,	-- Source Quest: A Tale of Valor
 						["lvl"] = 67,
 					},
 					{
 						["questID"] = 13068,	-- A Tale of Valor
-						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
 						["lvl"] = 67,
 						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.",
 					},
@@ -505,6 +500,36 @@ _.Zones =
 						i(44023),
 						i(44032),
 					}),
+					{	-- Basic Chemistry [H]
+						["questID"] = 13279,	-- Basic Chemistry
+						["qg"] = 29795,	-- Koltira Deathweaver
+						["groups"] = {
+							{	-- Bat-Wool Signet
+								["itemID"] = 44387,	-- Bat-Wool Signet
+							},
+							{	-- Frog-Toe Band
+								["itemID"] = 44388,	-- Frog-Toe Band
+							},
+							{	-- Newt-Eye Ring
+								["itemID"] = 44386,	-- Newt-Eye Ring
+							},
+						},
+					},
+					{	-- Basic Chemistry [A]
+						["questID"] = 13295,	-- Basic Chemistry
+						["qg"] = 29799,	-- Thassarian
+						["groups"] = {
+							{	-- Bat-Wool Signet
+								["itemID"] = 44387,	-- Bat-Wool Signet
+							},
+							{	-- Frog-Toe Band
+								["itemID"] = 44388,	-- Frog-Toe Band
+							},
+							{	-- Newt-Eye Ring
+								["itemID"] = 44386,	-- Newt-Eye Ring
+							},
+						},
+					},
 					q(13219,  {  -- Battle at Valhalas: Final Challenge
 						i(44382),
 						i(44383),
@@ -553,9 +578,10 @@ _.Zones =
 						},
 					}),
 					q(13039, {	-- Defending The Vanguard
-						i(43828),
-						i(43841),
-						i(43831),
+						i(43828),	-- Touch of Light
+						i(43841),	-- Argent Girdle
+						i(43829),	-- Crusader's Locket
+						i(43831),	-- Enchanted Plate Waistguard
 					}),
 					qa(13394, {	-- Do Your Worst
 						i(43881),
@@ -669,10 +695,11 @@ _.Zones =
 						["coord"] = { 41.0, 23.8 },
 					}),
 					q(13083,  {  -- Light Within the Darkness
-						i(44018),
-						i(44041),
-						i(44042),
-						i(44043),
+						i(44018),	-- Bridenbrad's Sash
+						i(44041),	-- Belt of the Never-Forgotten
+						i(44042),	-- Chained Belt of Remembrance
+						i(44043),	-- Girdle of Eternal Memory
+						i(44039),	-- Signet of Bridenbrad
 					}),
 					q(13308,  {  -- Mind Tricks
 						i(44021),
@@ -711,10 +738,14 @@ _.Zones =
 						i(44038),
 					}),
 					qa(13287,  {  -- Poke and Prod
-						i(43889),
+						i(43903),	-- Ring of the Fallen Shadow Adept
+						i(43889),	-- Hulking Abomination Hide Cloak
+						i(43884),	-- Amulet of the Malefic Necromancer
 					}),
 					qh(13237,  {  -- Poke and Prod
-						i(43889),
+						i(43903),	-- Ring of the Fallen Shadow Adept
+						i(43889),	-- Hulking Abomination Hide Cloak
+						i(43884),	-- Amulet of the Malefic Necromancer
 					}),
 					qa(13321,  {  -- Retest Now
 						i(39134),
@@ -778,6 +809,24 @@ _.Zones =
 						i(39887),
 						i(39888),
 					}),
+					{	-- The Admiral Revealed
+						["questID"] = 12852,	-- The Admiral Revealed
+						["qg"] = 29560,	-- Lord-Commander Arete
+						["groups"] = {
+							{	-- Amulet of the Crusade
+								["itemID"] = 44034,	--Amulet of the Crusade
+							},
+							{	-- Emeline's Locket
+								["itemID"] = 44017,	-- Emeline's Locket
+							},
+							{	-- Reinforced Titanium Neckguard
+								["itemID"] = 44035,	-- Reinforced Titanium Neckguard
+							},
+							{	-- The Severed Noose of Westwind
+								["itemID"] = 44033,	-- The Severed Noose of Westwind
+							},
+						},
+					},
 					q(13125,  {  -- The Air Stands Still
 						i(43839),
 						i(43840),
@@ -833,9 +882,24 @@ _.Zones =
 					}),
 					{
 						["questID"] = 13073,	-- The Keeper's Favor
-						["qg"] = 31044, -- Quest Giver: Highlord Tirion Fordring
+						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
 						["sourceQuest"] = 13072,	-- Source Quest: A Hero Remains
 						["lvl"] = 67,
+					},
+					{	-- The Last Line Of Defense
+						["questID"] = 13086,	-- The Last Line Of Defense
+						["qg"] = 30657,	-- Siegemaster Fezzik
+						["groups"] = {
+							{	-- Cannoneer's Fuselighter
+								["itemID"] = 44013,	-- Cannoneer's Fuselighter
+							},
+							{	-- Cannoneer's Morale
+								["itemID"] = 44015,	-- Cannoneer's Morale
+							},
+							{	-- Fezzik's Pocketwatch
+								["itemID"] = 44014,	-- Fezzik's Pocketwatch
+							},
+						},
 					},
 					q(13110,  {  -- The Restless Dead
 						i(43833),
@@ -844,9 +908,10 @@ _.Zones =
 						i(43834),
 					}),
 					q(13163,  {  -- The Rider of Blood
-						i(43896),
-						i(43937),
-						i(43939),
+						i(43877),	-- Blood-Forged Circle
+						i(43896),	-- Grotesque Butcher's Pants
+						i(43937),	-- Blood-Stalker's Cover
+						i(43939),	-- Breastplate of Splattered Blood
 					}),
 					q(13162,  {  -- The Rider of Frost
 						i(43899),

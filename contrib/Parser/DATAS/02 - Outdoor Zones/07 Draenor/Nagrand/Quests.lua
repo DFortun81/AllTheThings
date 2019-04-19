@@ -24,7 +24,7 @@ _.Zones =
 								},
 								["collectible"] = false,
 							}),
-							a(ach(8927, { -- Nagrandeur (Alliance)
+							a(ach(8927, {	-- Nagrandeur (Alliance)
 								["groups"] = {
 --[[	Achievement info for Loremaster related zone quests
 							h(ach(8928, {	-- Nagrandeur (Horde) (unlocks ability to buy Nagrand Treasure Map from Srikka in Warspear)
@@ -38,36 +38,36 @@ _.Zones =
 								crit(8),		-- The Legacy of Garrosh Hellscream
 							})),
 ]]--						
-									crit(1, { -- The Might of Steel and Blood
-										q(34675), -- The Might of the Warsong
-										q(34678), -- Up and Running
-										q(34682), -- Operation: Surprise Party
+									crit(1, {	-- The Might of Steel and Blood
+										q(34675),	-- The Might of the Warsong
+										q(34678),	-- Up and Running
+										q(34682),	-- Operation: Surprise Party
 										q(34716, { 	-- Mo'mor Might Know
 											i(114694),	-- Beastrider Helm
 											i(114691),	-- Plainsthunder Helm
 											i(114693),	-- Stormsteppe Helm
 											i(114692),	-- Windshaper Hood
 										}),
-										q(34718), -- The Others
-										q(34719), -- ... and My Hammer
+										q(34718),	-- The Others
+										q(34719),	-- ... and My Hammer
 										q(34746, { 	-- Shields Down!
 											i(114700),	-- Beastrider Spaulders
 											i(114701),	-- Plainsthunder Shoulders
 											i(114703),	-- Stormsteppe Pauldrons
 											i(114702),	-- Windshaper Mantle
 										}),
-										q(34769), -- A Choice to Make
+										q(34769),	-- A Choice to Make
 									}),
-									crit(5, { -- A Blademaster's Honor
-										q(34951), -- They Call Him Lantresor of the Blade
-										q(34954), -- The Blade Itself
+									crit(5, {	-- A Blademaster's Honor
+										q(34951),	-- They Call Him Lantresor of the Blade
+										q(34954),	-- The Blade Itself
 										q(34955, { 	-- Not Without My Honor
 											i(114687),	-- Beastrider Gloves
 											i(114688),	-- Plainsthunder Gauntlets
 											i(114690),	-- Stormsteppe Gauntlets
 											i(114689),	-- Windshaper Gloves
 										}),
-										q(34956), -- Meet Me in the Cavern
+										q(34956),	-- Meet Me in the Cavern
 										q(34957, { 	-- Challenge of the Masters
 											i(114707),	-- Beastrider Belt
 											i(114704),	-- Plainsthunder Girdle
@@ -75,9 +75,9 @@ _.Zones =
 											i(114705),	-- Windshaper Cord
 										}),
 									}),
-									crit(6, { -- Trouble at the Overwatch
-										q(35148), -- Trouble at the Overwatch
-										q(34593), -- Obtaining Ogre Offensive Orders
+									crit(6, {	-- Trouble at the Overwatch
+										q(35148),	-- Trouble at the Overwatch
+										q(34593),	-- Obtaining Ogre Offensive Orders
 										q(34596, {	-- Reglakk's Research
 											i(114917),	-- Gorian Arcanist Spellstaff
 											i(114918),	-- Gorian Arcanist Spiritshaker
@@ -90,9 +90,9 @@ _.Zones =
 											i(114915),	-- Mighty Gorian Shortsword
 										}),
 									}),
-									crit(7, { -- The Taking of Lok'rath
-										q(35059), -- Along the Riverside
-										q(35060), -- Terms of Surrender
+									crit(7, {	-- The Taking of Lok'rath
+										q(35059),	-- Along the Riverside
+										q(35060),	-- Terms of Surrender
 										q(35061, { 	-- The Pride of Lok-rath
 											i(118142),	-- Beastrider Belt
 											i(118139),	-- Plainsthunder Waistguard
@@ -100,8 +100,8 @@ _.Zones =
 											i(118140),	-- Windshaper Waistwrap
 										}),
 									}),
-									crit(8, { -- The Legacy of Garrosh Hellscream
-										q(35062), -- Lok'rath is Secured
+									crit(8, {	-- The Legacy of Garrosh Hellscream
+										q(35062),	-- Lok'rath is Secured
 										q(35169, {	-- And Justice for Thrall
 											i(118156),	-- Coif of Grasping Earth
 											i(118154),	-- Grounded Headguard
@@ -109,14 +109,14 @@ _.Zones =
 											i(118155),	-- Thundercaller's Cowl
 										}),
 									}),
-									crit(2, { -- The Ring of Trials
-										q(35921, { -- Bread and Circuses NOTE: This quest is an optional breadcrumb
+									crit(2, {	-- The Ring of Trials
+										q(35921, {	-- Bread and Circuses NOTE: This quest is an optional breadcrumb
 										  ["isBreadcrumb"] = true,
 										}),
-										q(34662), -- Ring of Trials: Crushmaul
-										q(34663), -- Ring of Trials: Raketalon
-										q(34664), -- Ring of Trials: Hol'yelaa
-										q(34665), -- Ring of Trials: Captain Boomspark
+										q(34662),	-- Ring of Trials: Crushmaul
+										q(34663),	-- Ring of Trials: Raketalon
+										q(34664),	-- Ring of Trials: Hol'yelaa
+										q(34665),	-- Ring of Trials: Captain Boomspark
 										q(34666, { 	-- Ring of Trials: Roakk the Zealot
 											i(114711),	-- Beastrider Wristwraps
 											i(114709),	-- Plainsthunder Wristwraps
@@ -124,16 +124,16 @@ _.Zones =
 											i(114708),	-- Windshaper Wristwraps
 										}),
 									}),
-									crit(4, { -- Throne of The Elements
-										q(35332, { -- Nobundo Sends Word NOTE: This quest is an optional breadcrumb
+									crit(4, {	-- Throne of The Elements
+										q(35332, {	-- Nobundo Sends Word NOTE: This quest is an optional breadcrumb
 										["isBreadcrumb"] = true,
 										}),
-										q(35331), -- Called to the Throne
-										q(35333), -- Elemental Attunement
-										q(34881), -- Earth, Wind and Fire...and Water
-										q(34893), -- Guardians of the Plateau
-										q(34894), -- A Rare Bloom
-										q(34932), -- Guise of the Deceiver
+										q(35331),	-- Called to the Throne
+										q(35333),	-- Elemental Attunement
+										q(34881),	-- Earth, Wind and Fire...and Water
+										q(34893),	-- Guardians of the Plateau
+										q(34894),	-- A Rare Bloom
+										q(34932),	-- Guise of the Deceiver
 										q(34941, { 	-- The Debt We Share
 											i(114885),	-- Gar'rok's Patchwork Cloak
 											i(119052),	-- Gar'rok's Roadworn Cloak
@@ -147,9 +147,9 @@ _.Zones =
 											i(114681),	-- Stormsteppe Vest
 											i(114699),	-- Windshaper Robe
 										}),
-										q(35372), -- The Call of Oshu'gun
-										q(35397), -- The Pale Threat
-										q(35398), -- Dark Binding
+										q(35372),	-- The Call of Oshu'gun
+										q(35397),	-- The Pale Threat
+										q(35398),	-- Dark Binding
 										q(35396, { 	-- The Dark Heart of Oshu'gun
 											i(118126),	-- Void-Warped Oshu'gun Crossbow
 											i(118127),	-- Void-Warped Oshu'gun Dagger
@@ -161,12 +161,12 @@ _.Zones =
 											i(118129),	-- Void-Warped Oshu'gun Staff
 										}),
 									}),
-									crit(3, { -- The Shadow of the Void
-										q(35083), -- Disrupt the Rituals
-										q(35084), -- Silence the Call
-										q(35085), -- Through the Nether
-										q(35086), -- The Void March
-										q(35087), -- The Nether Approaches
+									crit(3, {	-- The Shadow of the Void
+										q(35083),	-- Disrupt the Rituals
+										q(35084),	-- Silence the Call
+										q(35085),	-- Through the Nether
+										q(35086),	-- The Void March
+										q(35087),	-- The Nether Approaches
 										q(35088, { 	-- The Shadow of the Void
 											i(118143),	-- Beastrider Gauntlets
 											i(118144),	-- Plainsthunder Handguards
@@ -176,19 +176,23 @@ _.Zones =
 									}),
 								},
 							})),
-							n(-168, { -- Other Quests
-								desc(qa(34953), "This quest is only available if you do not accept The Friend o' My Enemy from Hansel Heavyhands."), -- Blood of the Burning Blade
-								desc(qa(34952), "This quest is only available if you do not accept Blood of the Burning Blade from Lantresor of the Blade."), -- The Friend o' My Enemy
-								q(34512), -- Declawing the Competition
-								q(34810), -- Gazmolf Futzwangler and the Highmaul Crusade
-								q(35632), -- A Lesson in Archaeology
-								q(34809), -- A Lesson in Mineralogy
-								q(35663, { -- A Lesson in Teamwork
+							n(-168, {	-- Other Quests
+								qa(34953, {	-- Blood of the Burning Blade
+									["description"] = "This quest is only available if you do not accept The Friend o' My Enemy from Hansel Heavyhands.",
+								}),
+								qa(34952, {	-- The Friend o' My Enemy
+									["description"] = "This quest is only available if you do not accept Blood of the Burning Blade from Lantresor of the Blade.",
+								}),
+								q(34512),	-- Declawing the Competition
+								q(34810),	-- Gazmolf Futzwangler and the Highmaul Crusade
+								q(35632),	-- A Lesson in Archaeology
+								q(34809),	-- A Lesson in Mineralogy
+								q(35663, {	-- A Lesson in Teamwork
 									i(114890),	-- Excavated Highmaul Doohickey
 									i(114887),	-- Excavated Highmaul Knicknack
 									i(114888),	-- Excavated Highmaul Thingamabob
 								}),
-								q(34811), -- Good Help is Hard to Find
+								q(34811),	-- Good Help is Hard to Find
 								qa(35068, {	-- If They Won't Surrender...
 									i(118150),	-- Beastrider Bracers
 									i(118148),	-- Plainsthunder Bracers
@@ -201,7 +205,9 @@ _.Zones =
 									i(118149),	-- Stormsteppe Bracers
 									i(118147),	-- Windshaper Bracers
 								}),
-								qr(q(35928)), -- Meatgut Needs Bones
+								q(35928, {	-- Meatgut Needs Bones
+									["repeatable"] = true,
+								}),
 								qa(34572, {	-- Obliterating Ogres
 									i(114686),	-- Beastrider Boots
 									i(114683),	-- Plainsthunder Warboots
@@ -214,13 +220,17 @@ _.Zones =
 									i(114685),	-- Stormsteppe Sabatons
 									i(114684),	-- Windshaper Treads
 								}),
-								desc(qa(34717), "This version of Operation: Just Arrowhead can only be obtained if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party. If you leave and come back later you will receive a different version of the quest. Neither is required for quest progression through Nagrand."), -- Operation: Just Arrowhead
-								desc(qa(34720), "This version of Operation: Just Arrowhead can only be obtained if you left Rangari Ogir's area after turning in Operation: Surprise Party. If you did not leave you will receive a different version of the quest. Neither is required for quest progression through Nagrand."), -- Operation: Just Arrowhead
+								qa(34717, {	-- Operation: Just Arrowhead
+									["description"] = "This version of Operation: Just Arrowhead can only be obtained if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party. If you leave and come back later you will receive a different version of the quest. Neither is required for quest progression through Nagrand.",
+								}),
+								qa(34720, {	-- Operation: Just Arrowhead
+									["description"] = "This version of Operation: Just Arrowhead can only be obtained if you left Rangari Ogir's area after turning in Operation: Surprise Party. If you did not leave you will receive a different version of the quest. Neither is required for quest progression through Nagrand.",
+								}),
 --[[						
-								qa(34597), -- Removing the Paper Trail
-								qh(35156), -- Removing the Paper Trail
-								qa(34877), -- Removing the Reinforcements
-								qh(35159), -- Removing the Reinforcements
+								qa(34597),	-- Removing the Paper Trail
+								qh(35156),	-- Removing the Paper Trail
+								qa(34877),	-- Removing the Reinforcements
+								qh(35159),	-- Removing the Reinforcements
 --]]						
 								qa(35338),	-- Shooting the Breeze
 								qa(35356),	-- Someone's Missing Arrow
@@ -239,8 +249,8 @@ _.Zones =
 									i(114696),	-- Windshaper Leggings
 								}),
 --[[						
-								qa(35067), -- Silence the War Machines
-								qh(35099), -- Silence the War Machines
+								qa(35067),	-- Silence the War Machines
+								qh(35099),	-- Silence the War Machines
 --]]						
 								qa(35393),	-- Spiritual Matters
 								qh(35231),	-- Spiritual Matters
@@ -251,19 +261,19 @@ _.Zones =
 								q(34900, {	-- New Babies
 									i(114834),	-- Meadowstomper Calf
 								}),
-								qa(35069), -- Terror of Nagrand
-								qh(35101), -- Terror of Nagrand
-								q(36275, { -- The Search For Research
+								qa(35069),	-- Terror of Nagrand
+								qh(35101),	-- Terror of Nagrand
+								q(36275, {	-- The Search For Research
 									i(116830),	-- Researcher's Ring
 									i(119063),	-- Sporebat Glowpod Ring
 									i(119071),	-- Sporebat Glowtail Loop
 									i(116829),	-- Sporebat Sporepod Ring
 									i(116831),	-- Sporebat Tooth Ring
 								}),
-								q(36284), -- A Fascinating Fungus
-								q(36285), -- Dirgenmire				
-								qa(35140), -- THAELIN!
-								qa(35141), -- Carrier Has Arrived
+								q(36284),	-- A Fascinating Fungus
+								q(36285),	-- Dirgenmire				
+								qa(35140),	-- THAELIN!
+								qa(35141),	-- Carrier Has Arrived
 								qa(35337, {	-- That Pounding Sound
 									i(118137),	-- Plainshunter Blackjack
 									i(118135),	-- Plainshunter Claws
@@ -283,11 +293,11 @@ _.Zones =
 								}),
 								qh(35375),	-- Queen of the Clefthoof
 --[[						
-								qa(35395), -- The Fate of Gordawg
-								qh(34271), -- The Fate of Gordawg
-								q(34598), -- The Missing Caravan
-								q(35146), -- The Good Doctor
-								q(36273), -- Whacking Weeds 
+								qa(35395),	-- The Fate of Gordawg
+								qh(34271),	-- The Fate of Gordawg
+								q(34598),	-- The Missing Caravan
+								q(35146),	-- The Good Doctor
+								q(36273),	-- Whacking Weeds 
 --]]						
 							}),	
 --[[					

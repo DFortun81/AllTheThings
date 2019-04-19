@@ -249,7 +249,7 @@ _.Zones =
 								},
 								{	-- Ancient Titan Chest
 									["objectID"] = 236267,
-									["questID"] = 35701, -- also triggers 36712
+									["questID"] = 35701,	-- also triggers 36712
 									["coord"] = { 53.4, 46.8, 543 },
 									["g"] = {
 										currency(824),	-- Garrison Resources
@@ -422,7 +422,7 @@ _.Zones =
 								["questID"] = 36506,
 								["coord"] = { 41.7, 53.0, 543 },
 								["g"] = {
-									i(118702), -- Brokor's Walking Stick
+									i(118702),	-- Brokor's Walking Stick
 								},
 							},	
 							{	-- Discarded Pack
@@ -806,7 +806,7 @@ _.Zones =
 									{ 45.0, 42.6, 543 },
 								},
 								["g"] = {
-									i(118713), -- Iron Lookout's Arbalest
+									i(118713),	-- Iron Lookout's Arbalest
 								},
 							},
 							{	-- Stashed Emergency Rucksack
@@ -913,7 +913,7 @@ _.Zones =
 									{ 59.5, 63.7, 543 },
 								},
 								["g"] = {
-									i(118712), -- Huurand's Huge Hammer
+									i(118712),	-- Huurand's Huge Hammer
 								},
 							},	
 							{	-- Warm Goren Egg

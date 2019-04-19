@@ -10,7 +10,7 @@ _.Zones =
 			["groups"] = {
 				n(-212, {	-- Treasure Chest
 					["groups"] = { -- If we are going to list every treasure chest then let's make it pretty and not show quest ID# on screen.
-						o(9999999, { -- Treasure Chest
+						o(9999999, {	-- Treasure Chest
 							["questID"] = 49142,
 							["isDaily"] = true,
 							["repeatable"] = true,

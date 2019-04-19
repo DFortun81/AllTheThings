@@ -169,8 +169,12 @@ _.Zones =
 						un(3, i(97637)),	-- Insurrection Boots
 						un(3, i(97767)),	-- Insurrection Boots
 					})),
-					desc(i(6663), "Can drop from any mob in the Barrens."),	-- Recipe: Elixir of Giant Growth
-					desc(i(6661), "Can drop from any mob in the Barrens."),	-- Recipe: Savory Deviate Delight
+					i(6663, {	-- Recipe: Elixir of Giant Growth
+						["description"] = "Can drop from any mob in the Barrens.",
+					}),
+					i(6661, {	-- Recipe: Savory Deviate Delight
+						["description"] = "Can drop from any mob in the Barrens.",
+					}),
 				}),
 			},
 		}),

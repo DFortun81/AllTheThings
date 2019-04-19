@@ -8,11 +8,11 @@ _.Zones =
 			["groups"] = {
 				n(-2, {	-- Vendors
 					n(18427, {	-- Fazu <Tradesman>
+						["coord"] = { 53.4, 56.6, 106 },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(22647),	-- Recipe: Crunchy Spider Surprise
 						},
-						["coord"] = { 53.4, 56.6 },
-						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 			},

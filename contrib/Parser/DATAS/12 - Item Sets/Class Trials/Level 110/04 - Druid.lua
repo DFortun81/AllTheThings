@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-147, { -- Springrain
+				n(-147, {	-- Springrain
 					["g"] = {
 						{	-- Balance
 							["npcID"] = -9926,	-- Balance

@@ -37,18 +37,18 @@ _.Zones =
 								}),
 								o(213751, {	-- Sprite's Cloth Chest
 									["groups"] = {
-										dr(35, i(86223)),	-- Agile Sprite Cloak
-										dr(21, i(86222)),	-- Precise Sprite Cloak
-										dr(19, i(86225)),	-- Strong Sprite Cloak
-										dr(18, i(86221)),	-- Wise Sprite Cloak
-										dr(7, i(86224)),	-- Steadfast Sprite Cape
+										i(86223),	-- Agile Sprite Cloak
+										i(86222),	-- Precise Sprite Cloak
+										i(86225),	-- Strong Sprite Cloak
+										i(86221),	-- Wise Sprite Cloak
+										i(86224),	-- Steadfast Sprite Cape
 									},
 									["coord"] = { 74.6, 74.8 },
 									["questID"] = 31412,
 									["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
 									["modelScale"] = 1.5,
 									["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
-									["description"] = "Cave entrance is at 73.2, 73.6.",
+									["description"] = "Cave entrance is at 73.2, 73.6.  This chest is personal loot and focuses on your set spec, not your loot spec.",
 								}),
 								o(213842, {	-- Stash of Yaungol Weapons
 									["groups"] = {

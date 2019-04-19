@@ -8,6 +8,241 @@ _.Zones =
 			["groups"] = {
 				n(-25,  { 	-- Pet Battle
 					["g"] = {
+						ach(13279, {	-- Family Battler
+							["collectible"] = false,
+							["g"] = {
+								ach(13280, {	-- Hobbyist Aquarist
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Hobbyist Aquarist
+											["achievementID"] = 13280,	-- Hobbyist Aquarist
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13270, {	-- Beast Mode
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Beast Mode
+											["achievementID"] = 13270,	-- Beast Mode
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13271, {	-- Critters with Huge Teeth
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Critters with Huge Teeth
+											["achievementID"] = 13271,	-- Critters with Huge Teeth
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13272, {	-- Dragons Make Everything Better
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Dragons Make Everything Better
+											["achievementID"] = 13272,	-- Dragons Make Everything Better
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13273, {	-- Element of Success
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Element of Success
+											["achievementID"] = 13273,	-- Element of Success
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13274, {	-- Fun With Flying
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Fun With Flying
+											["achievementID"] = 13274,	-- Fun With Flying
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13281, {	-- Human Resources
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Human Resources
+											["achievementID"] = 13281,	-- Human Resources
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13275, {	-- Magician's Secrets
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Magician's Secrets
+											["achievementID"] = 13275,	-- Magician's Secrets
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13277, {	-- Machine Learning
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Machine Learning
+											["achievementID"] = 13277,	-- Machine Learning
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+								ach(13278, {	-- Not Quite Dead Yet
+									["collectible"] = false,
+									["g"] = {
+										{	-- Keeyo — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 141879,	-- Keeyo
+											["criteriaID"] = 14,	-- Keeyo
+											["coord"] = { 57.0, 49.0, 864 },
+										},
+										{	-- Sizzik — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 141945,	-- Sizzik
+											["criteriaID"] = 15,	-- Sizzik
+											["coord"] = { 26.6, 54.8, 864 },
+										},
+										{	-- Kusa — Not Quite Dead Yet
+											["achievementID"] = 13278,	-- Not Quite Dead Yet
+											["creatureID"] = 142054,	-- Kusa
+											["criteriaID"] = 16,	-- Kusa
+											["coord"] = { 45.0, 46.4, 864 },
+										},
+									},
+								}),
+							},
+						}),
 						{	-- Bloodfever Tarantula
 							["speciesID"] = 2388,	-- Bloodfever Tarantula
 							["crs"] = { 143047 },	-- Bloodfever Tarantula
@@ -20,9 +255,9 @@ _.Zones =
 							["speciesID"] = 2390,	-- Leafy Flutterwing
 							["crs"] = { 143049 },	-- Leafy Flutterwing
 						},
-						{	-- Loose Parts [A Only]
+						{	-- Loose Parts [A Only] / Battle Bots WQ
 							["objectID"] = 311903,	-- Loose Parts
-							["questID"] = 54526,	-- Whether you have it collected this assault or not.
+							["questID"] = 54272,	-- Battle Bots (Alliance)
 							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 							["races"] = ALLIANCE_ONLY,	-- Only Alliance can collect the parts from this.
 							["g"] ={
@@ -62,9 +297,9 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Loose Parts [H Only]
+						{	-- Loose Parts [H Only] / Battle Bots WQ
 							["objectID"] = 311902,	-- Loose Parts
-							["questID"] = 54525,	-- Whether you have it collected this assault or not.
+							["questID"] = 54273,	-- Battle Bots (Horde)
 							["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 							["races"] = HORDE_ONLY,	-- Only Horde can collect the parts from this.
 							["g"] ={
@@ -112,10 +347,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12560,	-- Explore Vol'dun
-			["lvl"] = 110,
-			["description"] = "|cff66ccffThis vast desert rolling with sand dunes was once a vibrant jungle, but the Aqir decimated its countryside. Zandalar sends its criminals here to die, and most of them end up perishing. The area is inhabited by Zandalari troll vagabonds, vulpera, and sethrak.\n\nLong ago, the C'Thrax Mythrax the Unraveler descended upon Vol'dun. He slaughtered troll and sethrak alike. The loa Sethraliss sacrificed herself to save them, but though she struck Mythrax down Mythrax was still able to destroy the disc at the heart of Atul'Aman. After witnessing the destruction firsthand, the sethrak knew that something had to be done to prevent anyone from raising Mythrax again. Sulthis, Vorrik, and Korthek worked together to seal Mythrax within the great pyramid.\n\nYears later, Korthek grew power hungry and sought to free Mythrax to conquer Zuldazar. He gathered like-minded sethrak and declared himself emperor.|r",
 		}),
 	}),
 };
---]]

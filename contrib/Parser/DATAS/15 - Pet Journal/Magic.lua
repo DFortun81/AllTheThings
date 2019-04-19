@@ -5,14 +5,18 @@ _.PetJournal =
 {
 	pa(243, { 	-- Magic
 		p(1624),	-- Abyssius
+		p(2420),	-- Accursed Hexxer
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
-		p(2439); 	-- Azerite Puddle
+		p(2439), 	-- Azerite Puddle
+		p(2352),	-- Baa'l
+		p(2582),	-- Baoh-Xi
 		p(1964),	-- Blood Boil
 		un(35, p(1466)),	-- Brightpaw
 		p(1888),	-- Celestial Calf
 		p(1633),	-- Chaos Pup
 		p(1232),	-- Coilfang Stalker
+		p(2581),	-- Comet
 		p(1931),	-- Court Scribe
 		p(1962),	-- Creeping Tentacle
 		p(2115), 	-- Cross Gazer
@@ -53,6 +57,7 @@ _.PetJournal =
 		un(20, p(308)),		-- Legs
 		p(1234),	-- Lesser Voidcaller
 		p(1395),	-- Lil' Leftovers
+		p(2589),	-- Living Amber
 		p(1243),	-- Living Fluid
 		p(1159),	-- Lofty Libram
 		p(341),		-- Lunar Lantern

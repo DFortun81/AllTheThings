@@ -5,7 +5,7 @@ _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
-			i(19160, { -- Contest Winner's Tabard
+			i(19160, {	-- Contest Winner's Tabard
 				["groups"] = {
 				},
 				["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",

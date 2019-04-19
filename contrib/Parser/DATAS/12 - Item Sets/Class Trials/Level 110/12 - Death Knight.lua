@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-142, { -- Heart-Lesion
+				n(-142, {	-- Heart-Lesion
 					["classes"] = { 6 },
 					["groups"] = {
 						{	-- Adventurer's Footlocker

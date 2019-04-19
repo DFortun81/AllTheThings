@@ -5,7 +5,7 @@
 --       Craftable Items.
 
 -- Enchanting - Skill ID 333 / Spell ID 7411
-profession(333, { -- Enchanting
+profession(333, {	-- Enchanting
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
 		["maps"] = {582, 590},	-- Both Garrisons
 		["groups"] = {
@@ -139,7 +139,7 @@ profession(333, { -- Enchanting
 			un(1, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
 		},
 	}),
-	n(-492, { -- Illusions -- these should probably be moved to Craftable Items
+	n(-492, {	-- Illusions -- these should probably be moved to Craftable Items
 		["groups"] = {
 			sp(217637, {					-- Tome of Illusions: Azeroth
 				i(138787, {

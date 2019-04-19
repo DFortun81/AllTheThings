@@ -11,7 +11,8 @@ _.Zones =
 				["g"] = {
 					n(-4,   {	-- Achievements
 						["g"] = {
-							{	--  A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
+							ach(12944),		-- Adventurer of Zuldazar
+							{				-- A Loa of a Tale [Note: Ugh Longhand, but parser will only take it this way.  Don't convert please]
 								["achievementID"] = 13036,	-- A Loa of a Tale
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								["g"] = {
@@ -185,7 +186,7 @@ _.Zones =
 									o(279609, {	-- Spoils of Pandaria	
 										["criteriaID"] = 3,
 										["questID"] = 49936,
---										["coord"] = { , , 862 },	-- need to go on an alt to get map/coordinate info
+										["coord"] = { 24.5, 27.0, 1177 },	-- lower level of Breath of Pa'ku
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
 									o(281655, {	-- Gift of the Brokenhearted	

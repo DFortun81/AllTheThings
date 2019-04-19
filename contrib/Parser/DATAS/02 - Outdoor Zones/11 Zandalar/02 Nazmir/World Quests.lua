@@ -10,6 +10,17 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
+								{	-- Accidental Dread — Pet Battle
+									["questID"] = 52803,	-- Accidental Dread
+									["isWQ"] = 120,
+									["qg"] = 141814,	-- Korval Darkbeard
+									["g"] = {
+										{	-- Accidental Dread — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 16,	-- Accidental Dread
+										},
+									},
+								},
 								{	-- Azerite Infused Slag
 									["questID"] = 50564,	-- Azerite Infused Slag
 									["npcID"] = 134293, 	-- Azerite-Infused Elemental	Note!! Done so we can use his name for the quest rather than Quest #123456
@@ -17,11 +28,6 @@ _.Zones =
 										{ 32.98, 26.80 }
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-									["g"] = {
-										{	-- Fused-Slag Girdle
-											["itemID"] = 161100,	-- Fused-Slag Girdle
-										},
-									},
 								},
 								q(51415, {	-- Azerite Madness
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -37,16 +43,47 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Calligraphy
+									["questID"] = 55342,	-- Calligraphy
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Circle
+													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
+												},
+											},
+										},
+									},
+								},
+								{	-- Cancel the Blood Troll Apocalypse
+									["questID"] = 50665,	-- Cancel the Blood Troll Apocalypse
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- A Most Efficient Apocalypse
+											["achievementID"] = 13021,	-- A Most Efficient Apocalypse
+											["races"] = HORDE_ONLY,
+										},
+									},
+								},
 								{	-- Cargo Reclamation
 									["questID"] =  50962,	-- Cargo Reclamation
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
-								q(52779, {	-- Crawg in the Bog [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Crawg in the Bog — Pet Battle
+									["questID"] = 52779,	-- Crawg in the Bog
+									["isWQ"] = 120,
+									["qg"] = 141588,	-- Bloodtusk
+									["g"] = {
+										{	-- Crawg in the Bog — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 14,	-- Crawg in the Bog
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Don't Stalk Me, Troll (A)
 									["g"] = {
 										{	-- 7th Legion Spycatcher
@@ -101,13 +138,6 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 								},
 								q(50505, {	-- Kal'draxa
-									["groups"] = {
-										i(161018, {	-- Winged Terror Wristwraps
-											["crs"] = {
-												124397,	-- Kal'draxa
-											},
-										}),
-									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
 								{	-- King Kooba
@@ -121,6 +151,52 @@ _.Zones =
 									["questID"] = 53321,	-- Luminous Monelite
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 186,	-- Mining
+								},
+								{	-- Marshdwellers — Pet Battle
+									["questID"] = 52754,	-- Marshdwellers
+									["isWQ"] = 120,
+									["qg"] = 141529,	-- Lozu
+									["g"] = {
+										{	-- Marshdwellers — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 13,	-- Marshdwellers
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 54267,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{  -- Naga Attack!
+									["questID"] = 54236,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{	-- Pack Leader — Pet Battle
+									["questID"] = 52799,	-- Pack Leader
+									["isWQ"] = 120,
+									["qg"] = 141799,	-- Grady Prett
+									["g"] = {
+										{	-- Pack Leader — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 15,	-- Pack Leader
+										},
+									},
 								},
 								{	-- Past Due
 									["questID"] = 50667,	-- Past Due

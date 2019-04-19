@@ -27,37 +27,37 @@ _.Zones =
 					})),
 				}),
 				n(-228, {	-- Flight Path
-					fp(659, { -- Bloodgulch, Twilight Highlands
+					fp(659, {	-- Bloodgulch, Twilight Highlands
 						["coord"] = { 54, 42.2 },
 					}),
-					fp(656, { -- Crushblow, Twilight Highlands
+					fp(656, {	-- Crushblow, Twilight Highlands
 						["coord"] = { 45.6, 76.2 },
 					}),
-					fp(661, { -- Dragonmaw Port, Twilight Highlands
+					fp(661, {	-- Dragonmaw Port, Twilight Highlands
 						["coord"] = { 73.8, 52.8 },
 					}),
-					fp(664, { -- Firebeard's Patrol, Twilight Highlands
+					fp(664, {	-- Firebeard's Patrol, Twilight Highlands
 						["coord"] = { 60.4, 57.6 },
 					}),
-					fp(662, { -- Highbank, Twilight Highlands
+					fp(662, {	-- Highbank, Twilight Highlands
 						["coord"] = { 81.6, 77 },
 					}),
-					fp(666, { -- Kirthaven, Twilight Highlands
+					fp(666, {	-- Kirthaven, Twilight Highlands
 						["coord"] = { 56.6, 15.2 },
 					}),
-					fp(657, { -- The Gullet, Twilight Highlands
+					fp(657, {	-- The Gullet, Twilight Highlands
 						["coord"] = { 36.8, 38 },
 					}),
-					fp(660, { -- The Krazzworks, Twilight Highlands
+					fp(660, {	-- The Krazzworks, Twilight Highlands
 						["coord"] = { 75.4, 18 },
 					}),
-					fp(665, { -- Thundermar, Twilight Highlands
+					fp(665, {	-- Thundermar, Twilight Highlands
 						["coord"] = { 48.4, 28.2 },
 					}),
-					fp(658, { -- Vermillion Redoubt, Twilight Highlands
+					fp(658, {	-- Vermillion Redoubt, Twilight Highlands
 						["coord"] = { 28.4, 24.8 },
 					}),
-					fp(663, { -- Victor's Point, Twilight Highlands
+					fp(663, {	-- Victor's Point, Twilight Highlands
 						["coord"] = { 43.8, 57.2 },
 					}),
 				}),
@@ -1578,11 +1578,11 @@ _.Zones =
 --]]
 				}),
 				n(-16,  {	-- Rares
-					n(50085, { -- Overlord Sunderfury
-						i(67244), -- Sunderfury's Sundries
+					n(50085, {	-- Overlord Sunderfury
+						i(67244),	-- Sunderfury's Sundries
 					}), 
-					n(50086, { -- Tarvus the Vile
-						i(67245), -- Tarvus's Poison-Scarred Boots
+					n(50086, {	-- Tarvus the Vile
+						i(67245),	-- Tarvus's Poison-Scarred Boots
 					}), 
 				}),
 				n( -2,  {	-- Vendors
@@ -1904,51 +1904,51 @@ _.Zones =
 					},
 					n(50381, {		-- Misty Merriweather <Hide & Leather Trader>
 						["groups"] = {						
-							i(67095), -- Pattern: Assassin's Chestplate
-							i(67070), -- Pattern: Belt of Nefarious Whispers
-							i(67084), -- Pattern: Charscale Leg Armor
-							i(67094), -- Pattern: Chestguard of Nature's Fury
-							i(67073), -- Pattern: Corded Viper Belt	
-							i(67100), -- Pattern: Dragonkiller Tunic
-							i(68193), -- Pattern: Dragonscale Leg Armor							
-							i(71721), -- Pattern: Drakehide Leg Armor
-							i(67068), -- Pattern: Lightning Lash	
-							i(67082), -- Pattern: Razor-Edged Cloak	
-							i(67072), -- Pattern: Stormleather Sash	
-							i(67083), -- Pattern: Twilight Dragonscale Cloak
-							i(67096), -- Pattern: Twilight Scale Chestguard	
-							i(67064), -- Pattern: Vicious Charscale Belt
-							i(67063), -- Pattern: Vicious Charscale Boots
-							i(67049), -- Pattern: Vicious Charscale Bracers
-							i(67090), -- Pattern: Vicious Charscale Chest
-							i(67053), -- Pattern: Vicious Charscale Gloves
-							i(67091), -- Pattern: Vicious Charscale Helm
-							i(67079), -- Pattern: Vicious Charscale Legs
-							i(67078), -- Pattern: Vicious Charscale Shoulders
-							i(67080), -- Pattern: Vicious Dragonscale Belt
-							i(67065), -- Pattern: Vicious Dragonscale Boots
-							i(67054), -- Pattern: Vicious Dragonscale Bracers
-							i(67093), -- Pattern: Vicious Dragonscale Chest
-							i(67066), -- Pattern: Vicious Dragonscale Gloves								
-							i(67081), -- Pattern: Vicious Dragonscale Helm
-							i(67092), -- Pattern: Vicious Dragonscale Legs	
-							i(67055), -- Pattern: Vicious Dragonscale Shoulders
-							i(67076), -- Pattern: Vicious Leather Belt
-							i(67060), -- Pattern: Vicious Leather Boots
-							i(67046), -- Pattern: Vicious Leather Bracers
-							i(67087), -- Pattern: Vicious Leather Chest
-							i(67048), -- Pattern: Vicious Leather Gloves
-							i(67077), -- Pattern: Vicious Leather Helm
-							i(67089), -- Pattern: Vicious Leather Legs							
-							i(67062), -- Pattern: Vicious Leather Shoulders	
-							i(67044), -- Pattern: Vicious Wyrmhide Belt
-							i(67058), -- Pattern: Vicious Wyrmhide Boots
-							i(67042), -- Pattern: Vicious Wyrmhide Bracers							
-							i(67075), -- Pattern: Vicious Wyrmhide Chest																	
-							i(67056), -- Pattern: Vicious Wyrmhide Gloves							
-							i(67086), -- Pattern: Vicious Wyrmhide Helm							
-							i(67085), -- Pattern: Vicious Wyrmhide Legs															
-							i(67074), -- Pattern: Vicious Wyrmhide Shoulders							
+							i(67095),	-- Pattern: Assassin's Chestplate
+							i(67070),	-- Pattern: Belt of Nefarious Whispers
+							i(67084),	-- Pattern: Charscale Leg Armor
+							i(67094),	-- Pattern: Chestguard of Nature's Fury
+							i(67073),	-- Pattern: Corded Viper Belt	
+							i(67100),	-- Pattern: Dragonkiller Tunic
+							i(68193),	-- Pattern: Dragonscale Leg Armor							
+							i(71721),	-- Pattern: Drakehide Leg Armor
+							i(67068),	-- Pattern: Lightning Lash	
+							i(67082),	-- Pattern: Razor-Edged Cloak	
+							i(67072),	-- Pattern: Stormleather Sash	
+							i(67083),	-- Pattern: Twilight Dragonscale Cloak
+							i(67096),	-- Pattern: Twilight Scale Chestguard	
+							i(67064),	-- Pattern: Vicious Charscale Belt
+							i(67063),	-- Pattern: Vicious Charscale Boots
+							i(67049),	-- Pattern: Vicious Charscale Bracers
+							i(67090),	-- Pattern: Vicious Charscale Chest
+							i(67053),	-- Pattern: Vicious Charscale Gloves
+							i(67091),	-- Pattern: Vicious Charscale Helm
+							i(67079),	-- Pattern: Vicious Charscale Legs
+							i(67078),	-- Pattern: Vicious Charscale Shoulders
+							i(67080),	-- Pattern: Vicious Dragonscale Belt
+							i(67065),	-- Pattern: Vicious Dragonscale Boots
+							i(67054),	-- Pattern: Vicious Dragonscale Bracers
+							i(67093),	-- Pattern: Vicious Dragonscale Chest
+							i(67066),	-- Pattern: Vicious Dragonscale Gloves								
+							i(67081),	-- Pattern: Vicious Dragonscale Helm
+							i(67092),	-- Pattern: Vicious Dragonscale Legs	
+							i(67055),	-- Pattern: Vicious Dragonscale Shoulders
+							i(67076),	-- Pattern: Vicious Leather Belt
+							i(67060),	-- Pattern: Vicious Leather Boots
+							i(67046),	-- Pattern: Vicious Leather Bracers
+							i(67087),	-- Pattern: Vicious Leather Chest
+							i(67048),	-- Pattern: Vicious Leather Gloves
+							i(67077),	-- Pattern: Vicious Leather Helm
+							i(67089),	-- Pattern: Vicious Leather Legs							
+							i(67062),	-- Pattern: Vicious Leather Shoulders	
+							i(67044),	-- Pattern: Vicious Wyrmhide Belt
+							i(67058),	-- Pattern: Vicious Wyrmhide Boots
+							i(67042),	-- Pattern: Vicious Wyrmhide Bracers							
+							i(67075),	-- Pattern: Vicious Wyrmhide Chest																	
+							i(67056),	-- Pattern: Vicious Wyrmhide Gloves							
+							i(67086),	-- Pattern: Vicious Wyrmhide Helm							
+							i(67085),	-- Pattern: Vicious Wyrmhide Legs															
+							i(67074),	-- Pattern: Vicious Wyrmhide Shoulders							
 						},	
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1995,51 +1995,51 @@ _.Zones =
 					})),
 					n(50172, {		-- Threm Blackscalp <Hide & Leather Trader>
 						["groups"] = {						
-							i(67095), -- Pattern: Assassin's Chestplate
-							i(67070), -- Pattern: Belt of Nefarious Whispers
-							i(67084), -- Pattern: Charscale Leg Armor
-							i(67094), -- Pattern: Chestguard of Nature's Fury
-							i(67073), -- Pattern: Corded Viper Belt	
-							i(67100), -- Pattern: Dragonkiller Tunic
-							i(68193), -- Pattern: Dragonscale Leg Armor							
-							i(71721), -- Pattern: Drakehide Leg Armor
-							i(67068), -- Pattern: Lightning Lash	
-							i(67082), -- Pattern: Razor-Edged Cloak	
-							i(67072), -- Pattern: Stormleather Sash	
-							i(67083), -- Pattern: Twilight Dragonscale Cloak
-							i(67096), -- Pattern: Twilight Scale Chestguard	
-							i(67064), -- Pattern: Vicious Charscale Belt
-							i(67063), -- Pattern: Vicious Charscale Boots
-							i(67049), -- Pattern: Vicious Charscale Bracers
-							i(67090), -- Pattern: Vicious Charscale Chest
-							i(67053), -- Pattern: Vicious Charscale Gloves
-							i(67091), -- Pattern: Vicious Charscale Helm
-							i(67079), -- Pattern: Vicious Charscale Legs
-							i(67078), -- Pattern: Vicious Charscale Shoulders
-							i(67080), -- Pattern: Vicious Dragonscale Belt
-							i(67065), -- Pattern: Vicious Dragonscale Boots
-							i(67054), -- Pattern: Vicious Dragonscale Bracers
-							i(67093), -- Pattern: Vicious Dragonscale Chest
-							i(67066), -- Pattern: Vicious Dragonscale Gloves								
-							i(67081), -- Pattern: Vicious Dragonscale Helm
-							i(67092), -- Pattern: Vicious Dragonscale Legs	
-							i(67055), -- Pattern: Vicious Dragonscale Shoulders
-							i(67076), -- Pattern: Vicious Leather Belt
-							i(67060), -- Pattern: Vicious Leather Boots
-							i(67046), -- Pattern: Vicious Leather Bracers
-							i(67087), -- Pattern: Vicious Leather Chest
-							i(67048), -- Pattern: Vicious Leather Gloves
-							i(67077), -- Pattern: Vicious Leather Helm
-							i(67089), -- Pattern: Vicious Leather Legs							
-							i(67062), -- Pattern: Vicious Leather Shoulders	
-							i(67044), -- Pattern: Vicious Wyrmhide Belt
-							i(67058), -- Pattern: Vicious Wyrmhide Boots
-							i(67042), -- Pattern: Vicious Wyrmhide Bracers							
-							i(67075), -- Pattern: Vicious Wyrmhide Chest																	
-							i(67056), -- Pattern: Vicious Wyrmhide Gloves							
-							i(67086), -- Pattern: Vicious Wyrmhide Helm							
-							i(67085), -- Pattern: Vicious Wyrmhide Legs															
-							i(67074), -- Pattern: Vicious Wyrmhide Shoulders							
+							i(67095),	-- Pattern: Assassin's Chestplate
+							i(67070),	-- Pattern: Belt of Nefarious Whispers
+							i(67084),	-- Pattern: Charscale Leg Armor
+							i(67094),	-- Pattern: Chestguard of Nature's Fury
+							i(67073),	-- Pattern: Corded Viper Belt	
+							i(67100),	-- Pattern: Dragonkiller Tunic
+							i(68193),	-- Pattern: Dragonscale Leg Armor							
+							i(71721),	-- Pattern: Drakehide Leg Armor
+							i(67068),	-- Pattern: Lightning Lash	
+							i(67082),	-- Pattern: Razor-Edged Cloak	
+							i(67072),	-- Pattern: Stormleather Sash	
+							i(67083),	-- Pattern: Twilight Dragonscale Cloak
+							i(67096),	-- Pattern: Twilight Scale Chestguard	
+							i(67064),	-- Pattern: Vicious Charscale Belt
+							i(67063),	-- Pattern: Vicious Charscale Boots
+							i(67049),	-- Pattern: Vicious Charscale Bracers
+							i(67090),	-- Pattern: Vicious Charscale Chest
+							i(67053),	-- Pattern: Vicious Charscale Gloves
+							i(67091),	-- Pattern: Vicious Charscale Helm
+							i(67079),	-- Pattern: Vicious Charscale Legs
+							i(67078),	-- Pattern: Vicious Charscale Shoulders
+							i(67080),	-- Pattern: Vicious Dragonscale Belt
+							i(67065),	-- Pattern: Vicious Dragonscale Boots
+							i(67054),	-- Pattern: Vicious Dragonscale Bracers
+							i(67093),	-- Pattern: Vicious Dragonscale Chest
+							i(67066),	-- Pattern: Vicious Dragonscale Gloves								
+							i(67081),	-- Pattern: Vicious Dragonscale Helm
+							i(67092),	-- Pattern: Vicious Dragonscale Legs	
+							i(67055),	-- Pattern: Vicious Dragonscale Shoulders
+							i(67076),	-- Pattern: Vicious Leather Belt
+							i(67060),	-- Pattern: Vicious Leather Boots
+							i(67046),	-- Pattern: Vicious Leather Bracers
+							i(67087),	-- Pattern: Vicious Leather Chest
+							i(67048),	-- Pattern: Vicious Leather Gloves
+							i(67077),	-- Pattern: Vicious Leather Helm
+							i(67089),	-- Pattern: Vicious Leather Legs							
+							i(67062),	-- Pattern: Vicious Leather Shoulders	
+							i(67044),	-- Pattern: Vicious Wyrmhide Belt
+							i(67058),	-- Pattern: Vicious Wyrmhide Boots
+							i(67042),	-- Pattern: Vicious Wyrmhide Bracers							
+							i(67075),	-- Pattern: Vicious Wyrmhide Chest																	
+							i(67056),	-- Pattern: Vicious Wyrmhide Gloves							
+							i(67086),	-- Pattern: Vicious Wyrmhide Helm							
+							i(67085),	-- Pattern: Vicious Wyrmhide Legs															
+							i(67074),	-- Pattern: Vicious Wyrmhide Shoulders							
 						},	
 						["races"] = HORDE_ONLY,
 					}),

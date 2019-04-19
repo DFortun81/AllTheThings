@@ -12,9 +12,9 @@ To do:
 
 _.Achievements = 
 {
-	n(-9961, { -- Reputation
+	n(-9961, {	-- Reputation
 		["groups"] = {
-			n(-9979, { -- Cataclysm
+			n(-9979, {	-- Cataclysm
 				["groups"] = {
 					ach(5827, { 	-- Avengers of Hyjal	
 						title(188), 	-- <Name>, Avenger of Hyjal

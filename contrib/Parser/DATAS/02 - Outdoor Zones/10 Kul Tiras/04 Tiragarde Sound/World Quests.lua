@@ -39,6 +39,21 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
+								{	-- Calligraphy
+									["questID"] = 55340,	-- Calligraphy
+									["races"] = ALLIANCE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Circle
+													["criteriaID"] = 1,	-- Master of Calligraphy - Circle
+												},
+											},
+										},
+									},
+								},
 								q(51842, {	-- Carla Smirk
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -71,6 +86,29 @@ _.Zones =
 								q(51632, {	-- Make Loh Go
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{  -- Naga Attack!
+									["questID"] = 53994,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
+								{	-- Not So Bad Down Here — Pet Battle
+									["questID"] = 52430,	-- Not So Bad Down Here
+									["isWQ"] = 120,
+									["qg"] = 141077,	-- Kwint
+									["g"] = {
+										{	-- Not So Bad Down Here — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 9,	-- Not So Bad Down Here
+										},
+									},
+								},
 								{	-- Picturesque Norwington Estate [A]
 									["questID"] = 51090,	-- Picturesque Norwington Estate
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -99,6 +137,17 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Strange Looking Dogs — Pet Battle
+									["questID"] = 52751,	-- Strange Looking Dogs
+									["isWQ"] = 120,
+									["qg"] = 141479,	-- Burly
+									["g"] = {
+										{	-- Strange Looking Dogs — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 12,	-- Strange Looking Dogs
+										},
+									},
+								},
 								{	-- Swab This!
 									["g"] = {
 										{	-- Bless the Rains Down in Freehold
@@ -114,12 +163,17 @@ _.Zones =
 									["isWQ"] = 120,
 									["questID"] = 53196,	-- Swab This!
 								},
-								q(52471, {	-- That's a Big Carcass [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- That's a Big Carcass — Pet Battle
+									["questID"] = 52471,	-- That's a Big Carcass
+									["isWQ"] = 120,
+									["qg"] = 141292,	-- Delia Hanako
+									["g"] = {
+										{	-- That's a Big Carcass — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 11,	-- That's a Big Carcass
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- The Lord's Hunt [A]
 									["questID"] = 51406,	-- The Lord's Hunt
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -138,12 +192,17 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 									["questID"] = 53346,	-- Trogg Tromping
 								},
-								q(52455, {	-- Unbreakable [Pet Battle]
-									["groups"] = {
-										i(163036),	-- Polished Pet Charm
+								{	-- Unbreakable — Pet Battle
+									["questID"] = 52455,	-- Unbreakable
+									["isWQ"] = 120,
+									["qg"] = 141215,	-- Chitara
+									["g"] = {
+										{	-- Unbreakable — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 10,	-- Unbreakable
+										},
 									},
-									["isWQ"] = 120,		-- Enables WQ filter for Level 120
-								}),
+								},
 								{	-- Work Order: Battle Flag: Phalanx Defense
 									["questID"] = 52423,
 									["groups"] = {

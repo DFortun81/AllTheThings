@@ -147,6 +147,7 @@ namespace Parser_V2
             // Merge all relevant Item Data into the data container.
             Items.Merge(data);
             Items.MergeInto(data);
+            Objects.AssignFactionID(data);
 
             // Cache the Filter ID.
             Objects.Filters filter = Objects.Filters.Ignored;
@@ -307,10 +308,17 @@ namespace Parser_V2
         {
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
-            foreach (var data in Items.AllItems) Objects.AssignFilterID(data);
+            foreach (var data in Items.AllItems)
+            {
+                Objects.AssignFilterID(data);
+                Objects.AssignFactionID(data);
+            }
 
             // Merge the Item Data into the Containers.
-            foreach (var container in Objects.AllContainers.Values) Process(container, 1, 1);
+            foreach (var container in Objects.AllContainers.Values)
+            {
+                Process(container, 1, 1);
+            }
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -333,7 +341,18 @@ namespace Parser_V2
             foreach (var item in Items.AllItemsWithoutReferences)
             {
                 TierList tier;
-                if (item.TryGetValue("itemID", out object itemIDRef))
+                if (item.TryGetValue("lvl", out object lvlRef) && lvlRef is int level)
+                {
+                    if (level < 61) tier = tierLists[1]; // Classic
+                    else if (level < 71) tier = tierLists[2];   // Burning Crusade
+                    else if (level < 81) tier = tierLists[3];   // Wrath of the Lich King
+                    else if (level < 86) tier = tierLists[4];   // Cataclysm
+                    else if (level < 91) tier = tierLists[5];   // Mists of Pandaria
+                    else if (level < 101) tier = tierLists[6];   // Warlords of Draenor
+                    else if (level < 111) tier = tierLists[7];   // Legion
+                    else tier = tierLists[8];   // Battle For Azeroth
+                }
+                else if (item.TryGetValue("itemID", out object itemIDRef))
                 {
                     var itemID = Convert.ToInt32(itemIDRef);
                     if (itemID < 22727) tier = tierLists[1]; // Classic
@@ -405,12 +424,15 @@ namespace Parser_V2
                                         }
                                     }
 
-                                    var newItem = new Dictionary<string, object>
+                                    if (item.TryGetValue("itemID", out int itemID))
                                     {
-                                        {"itemID", item["itemID"] },
-                                    };
-                                    Items.MergeInto(item, newItem);
-                                    listing.Add(newItem);
+                                        var newItem = new Dictionary<string, object>
+                                        {
+                                            {"itemID", itemID },
+                                        };
+                                        Items.MergeInto(itemID, item, newItem);
+                                        listing.Add(newItem);
+                                    }
                                     break;
                                 }
                             default:
@@ -428,12 +450,15 @@ namespace Parser_V2
                                             });
                                         }
 
-                                        var newItem = new Dictionary<string, object>
+                                        if (item.TryGetValue("itemID", out int itemID))
                                         {
-                                            {"itemID", item["itemID"] },
-                                        };
-                                        Items.MergeInto(item, newItem);
-                                        listing.Add(newItem);
+                                            var newItem = new Dictionary<string, object>
+                                            {
+                                                {"itemID", itemID },
+                                            };
+                                            Items.MergeInto(itemID, item, newItem);
+                                            listing.Add(newItem);
+                                        }
                                     }
                                     break;
                                 }

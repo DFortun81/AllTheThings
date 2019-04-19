@@ -1,5 +1,5 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
-profession(182, { -- Herbalism
+profession(182, {	-- Herbalism
 	n(-26, {	-- Drop
 		i(111350, {		-- A Compendium of the Herbs of Draenor
 			["collectible"] = false,
@@ -289,12 +289,12 @@ profession(182, { -- Herbalism
 			},
 		}),
 	}),
-	n(-25, { -- Pet Battles
-		i(153045), -- Fel Lasher
-		i(118595), -- Nightshade Sproutling
+	n(-25, {	-- Pet Battles
+		i(153045),	-- Fel Lasher
+		i(118595),	-- Nightshade Sproutling
 	}),
 	--[===[--
-	filter(200, { -- Recipes
+	filter(200, {	-- Recipes
 		-- Legion
 		recipe(193292),	-- Aethril [Rank 1]
 		recipe(193293),	-- Aethril [Rank 2]

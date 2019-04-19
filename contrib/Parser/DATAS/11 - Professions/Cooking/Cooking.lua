@@ -1,5 +1,5 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
-profession(185, { -- Cooking
+profession(185, {	-- Cooking
 	n(-37, {	-- Discovery
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 		["groups"] = {
@@ -27,10 +27,18 @@ profession(185, { -- Cooking
 		},
 	}),
 	n(-26, {	-- Drop
-		desc(i(43509), "Can drop from any Northrend mob."),	-- Recipe: Bad Clams
-		desc(i(43510), "Can drop from any Northrend mob."),	-- Recipe: Haunted Herring
-		desc(i(43508), "Can drop from any Northrend mob."),	-- Recipe: Last Week's Mammoth
-		desc(i(43507), "Can drop from any Northrend mob."),	-- Recipe: Tasty Cupcake
+		i(43509, {	-- Recipe: Bad Clams
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43510, {	-- Recipe: Haunted Herring
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43508, {	-- Recipe: Last Week's Mammoth
+			["description"] = "Can drop from any Northrend mob.",
+		}),
+		i(43507, {	-- Recipe: Tasty Cupcake
+			["description"] = "Can drop from any Northrend mob.",
+		}),
 		i(111387, {		-- The Joy of Draenor Cooking
 			["collectible"] = false,
 			["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
@@ -94,7 +102,7 @@ profession(185, { -- Cooking
 				i(133845),	-- Recipe: Fishbrul Special [Rank 2]
 				i(133865),	-- Recipe: Fishbrul Special [Rank 3]
 			}),
-			i(124118, { -- Fatty Bearsteak
+			i(124118, {	-- Fatty Bearsteak
 				i(133847),	-- Recipe: Bear Tartare [Rank 2]
 				i(133867),	-- Recipe: Bear Tartare [Rank 3]
 			}),
@@ -167,7 +175,7 @@ profession(185, { -- Cooking
 				i(133846),	-- Recipe: Dried Mackerel Strips [Rank 2]
 				i(133866),	-- Recipe: Dried Mackerel Strips [Rank 3]
 			}),
-			i(133680, { -- Slice of Bacon
+			i(133680, {	-- Slice of Bacon
 				i(133871),	-- Recipe: Crispy Bacon [Rank 1]
 				i(133872),	-- Recipe: Crispy Bacon [Rank 2]
 				i(133873),	-- Recipe: Crispy Bacon [Rank 3]
@@ -285,7 +293,7 @@ profession(185, { -- Cooking
 					["u"] = 7,
 				},
 				un(7, i(5489)),	-- Recipe: Lean Venison
-				un(7, i(12227)), -- Recipe: Lean Wolf Steak
+				un(7, i(12227)),	-- Recipe: Lean Wolf Steak
 				un(7, i(5487)),	-- Recipe: Dig Rat Stew
 				un(7, i(44977)),	-- Recipe: Dig Rat Stew
 				un(7, i(3736)),	-- Recipe: Tasty Lion Steak
@@ -296,7 +304,7 @@ profession(185, { -- Cooking
 				un(7, i(35566)),	-- Recipe: Juicy Bear Burger
 				un(7, i(13945)),	-- Recipe: Nightfin Soup
 				un(7, i(13946)),	-- Recipe: Poached Sunscale Salmon
-				un(7, i(21025)), -- Recipe: Dirge's Kickin' Chimaerok Chops
+				un(7, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 				--[[
 				recipe(37836),	-- Spice Bread
 				recipe(7751),	-- Brilliant Smallfish
@@ -534,7 +542,7 @@ profession(185, { -- Cooking
 				recipe(125122),	-- Rice Pudding
 				recipe(125078),	-- Roasted Barley Tea
 				recipe(124234),	-- Skewered Peanut Chicken
-				recipe(125117), -- Sliced Peaches
+				recipe(125117),	-- Sliced Peaches
 				recipe(125123),	-- Spicy Vegetable Chips
 				recipe(124230),	-- Tangy Yogurt
 				recipe(124225),	-- Toasted Fish Jerky
@@ -709,7 +717,9 @@ profession(185, { -- Cooking
 				recipe(201516),		-- Lavish Suramar Feast [Rank 1]
 				recipe(201543),		-- Lavish Suramar Feast [Rank 2]
 				recipe(201563),		-- Lavish Suramar Feast [Rank 3]
-				desc(recipe(201683), "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will."),		-- Crispy Bacon [Rank 1]
+				recipe(201683, {	-- Crispy Bacon [Rank 1]
+					["description"] = "You learn this by giving Nomi your slices of bacon, and hoping he doesn't burn it.\n\n... He will.",
+				}),
 				recipe(201684),		-- Crispy Bacon [Rank 2]
 				recipe(201685),		-- Crispy Bacon [Rank 3]
 				recipe(201504),		-- Drogbar-Style Salmon [Rank 1]

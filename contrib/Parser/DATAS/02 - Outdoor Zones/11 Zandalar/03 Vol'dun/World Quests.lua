@@ -30,6 +30,21 @@ _.Zones =
 									},
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Calligraphy
+									["questID"] = 55343,	-- Calligraphy
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Master Calligrapher
+											["achievementID"] = 13512,	-- Master Calligrapher
+											["g"] = {
+												{	-- Master of Calligraphy - Square
+													["criteriaID"] = 2,	-- Master of Calligraphy - Square
+												},
+											},
+										},
+									},
+								},
 								q(51098, {	-- Commodore Calhoun
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -80,6 +95,17 @@ _.Zones =
 								q(51239, {	-- Instructions Not Included
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
+								{	-- Keeyo's Champions of Vol'dun — Pet Battle
+									["questID"] = 52850,	-- Keeyo's Champions of Vol'dun
+									["isWQ"] = 120,
+									["qg"] = 141879,	-- Keeyo
+									["g"] = {
+										{	-- Keeyo's Champions of Vol'dun — Battle on Zandalar and Kul Tiras
+											["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
+											["criteriaID"] = 17,	-- Keeyo's Champions of Vol'dun
+										},
+									},
+								},
 								q(51429, {	-- King Clickyclack
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
@@ -91,6 +117,18 @@ _.Zones =
 									["questID"] = 51153, 	-- Mor'fani the Exile
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
+								{  -- Naga Attack!
+									["questID"] = 54287,	-- Naga Attack!
+									["isWQ"] = 120,
+									["groups"] = {
+										{
+											["itemID"] = 165605,  -- Azsharan Medallion
+											["groups"] = {
+												i(168123),  -- Twitching Eyeball
+											},
+										},
+									},
+								},
 								q(51850, {	-- Preserve the Oasis
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
@@ -99,6 +137,33 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
+								{	-- Sandfishing
+									["questID"] = 51173,	-- Sandfishing
+									["races"] = HORDE_ONLY,
+									["isWQ"] = 120,
+									["g"] = {
+										{	-- Adept Sandfisher
+											["achievementID"] = 13009,	-- Adept Sandfisher
+											["g"] = {
+												{	-- Adept Sandfisher — Cobalt Sandworm Scale
+													["criteriaID"] = 1,	-- Adept Sandfisher — Cobalt Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Silver Sandworm Scale
+													["criteriaID"] = 2,	-- Adept Sandfisher — Silver Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Emerald Sandworm Scale
+													["criteriaID"] = 3,	-- Adept Sandfisher — Emerald Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Ruby Sandworm Scale
+													["criteriaID"] = 4,	-- Adept Sandfisher — Ruby Sandworm Scale
+												},
+												{	-- Adept Sandfisher — Onyx Sandworm Scale
+													["criteriaID"] = 5,	-- Adept Sandfisher — Onyx Sandworm Scale
+												},
+											},
+										},
+									},
+								},
 								{	-- Scaleclaw Broodmother
 									["questID"] = 51107,	-- Scaleclaw Broodmother
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -284,10 +349,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12560,	-- Explore Vol'dun
-			["lvl"] = 110,
-			["description"] = "|cff66ccffThis vast desert rolling with sand dunes was once a vibrant jungle, but the Aqir decimated its countryside. Zandalar sends its criminals here to die, and most of them end up perishing. The area is inhabited by Zandalari troll vagabonds, vulpera, and sethrak.\n\nLong ago, the C'Thrax Mythrax the Unraveler descended upon Vol'dun. He slaughtered troll and sethrak alike. The loa Sethraliss sacrificed herself to save them, but though she struck Mythrax down Mythrax was still able to destroy the disc at the heart of Atul'Aman. After witnessing the destruction firsthand, the sethrak knew that something had to be done to prevent anyone from raising Mythrax again. Sulthis, Vorrik, and Korthek worked together to seal Mythrax within the great pyramid.\n\nYears later, Korthek grew power hungry and sought to free Mythrax to conquer Zuldazar. He gathered like-minded sethrak and declared himself emperor.|r",
 		}),
 	}),
 };
---]]

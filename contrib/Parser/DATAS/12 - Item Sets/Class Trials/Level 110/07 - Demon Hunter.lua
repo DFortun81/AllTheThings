@@ -3,10 +3,10 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	n(-5350, { -- Class Trial Item Sets
+	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
-				n(-224, { -- Illidari
+				n(-224, {	-- Illidari
 					["groups"] = {
 						i(154737),	-- Illidari Blindfold
 						i(154747),	-- Illidari Chain

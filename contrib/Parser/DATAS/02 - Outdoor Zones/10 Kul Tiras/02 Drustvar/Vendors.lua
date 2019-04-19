@@ -11,21 +11,22 @@ _.Zones =
 					["groups"] = {
 						n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 							["groups"] = {
-								i(163036, { -- Polished Pet Charm
+								i(163036, {	-- Polished Pet Charm
 								--Note!! Write the item like this on this vendor to prevent the description from being written on the charms.
 									i(163493, {	-- Bloody Rabbit Fang
 										["description"] = "Defeat Cottontail Matron (located at 52.20, 46.80) for this item to appear on the vendor.",
 									}),
 									i(163510),	-- Crimson Frog
-									i(163492),	-- Drustvar Piglet
+									i(163492, {	-- Drustvar Piglet
+										["races"] = ALLIANCE_ONLY,
+									}),
 									i(160708, {	-- Smoochums' Bloody Heart
 										["description"] = "Complete the questline given by Abby Lewis (located at 54.60, 39.20 and 56.40, 49.00) for this item to appear on the vendor.",
 									}),
 									i(163494),	-- Wad of Spider Web
 								}),
 							},
-							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",
-							["races"] = ALLIANCE_ONLY,
+							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",	
 						}),
 						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [A]
 							["groups"] = {
@@ -81,10 +82,10 @@ _.Zones =
 									["spellID"] = 256789,
 								}),
 								i(162329, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 2]
-									["spellID"] = 272067,
+									-- ["spellID"] = 272066,
 								}),
 								i(162330, {	-- Schematic: AZ3-R1-T3 Orthogonal Optics [Rank 3]
-									["spellID"] = 272066,
+									-- ["spellID"] = 272067,
 								}),
 								i(162322, {	-- Schematic: Frost-Laced Ammunition [Rank 3]
 									["spellID"] = 265102,

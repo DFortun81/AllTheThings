@@ -4,84 +4,89 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(742, {	-- Blackwing Lair
+		["isRaid"] = true,
+		["sharedLockout"] = 1,
+		["lvl"] = 50,
+		["mapID"] = 287,
+		["maps"] = { 288, 289, 290 },
+		["coord"] = { 64.29, 71.02, 33 },	-- Blackwing Lair, Blackrock Mountain [Blackrock Spire]
 		["groups"] = {
 			n(0, {	-- Zone Drop
-				["groups"] = {
-					i(19434, {	-- Band of Dark Dominion
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),
-					i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-					}),
-					i(19437, {	-- Boots of Pure Thought
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
-					i(19436, {	-- Cloak of Dragonic Might
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
-					i(19362, {	-- Doom's Edge
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),
-					{	-- Draconic Avenger
-						["itemID"] = 19354,	-- Draconic Avenger
-						["crs"] = {
-							12460,	-- Death Talon Wyrmguard
-						},
+				i(19434, {	-- Band of Dark Dominion
+					["crs"] = {
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
 					},
-					i(19358, {	-- Draconic Maul
-						["crs"] = {
-							12467, -- Death Talon Captain
-							12463, -- Death Talon Flamescale
-							12464, -- Death Talon Seether
-							12465, -- Death Talon Wyrmkin
-						},
-					}),
-					{	-- Elementium Ingot
-						["itemID"] = 18562,	-- Elementium Ingot
-						["crs"] = {
-							13996,	-- Blackwing Technician
-						},
+				}),
+				i(17683, {	-- Book: Gift of the Wild Rank 2
+					--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
+				}),
+				i(19437, {	-- Boots of Pure Thought
+					["crs"] = {
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
 					},
-					i(19435, {	-- Essence Gatherer
-						["crs"] = {
-							12457, -- Blackwing Spellbinder
-							12459, -- Blackwing Warlock
-							12461, -- Death Talon Overseer
-						},
-					}),
-					{	-- Interlaced Shadow Jerkin
-						["itemID"] = 19439,	-- Interlaced Shadow Jerkin
-						["crs"] = {
-							12460,	-- Death Talon Wyrmguard
-						},
+				}),
+				i(19436, {	-- Cloak of Draconic Might
+					["crs"] = {
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
 					},
-					{	-- Ringo's Blizzard Boots
-						["itemID"] = 19438,	-- Ringo's Blizzard Boots
-						["crs"] = {
-							12460,	-- Death Talon Wyrmguard
-						},
+				}),
+				i(19362, {	-- Doom's Edge
+					["crs"] = {
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
+					},
+				}),
+				{	-- Draconic Avenger
+					["itemID"] = 19354,	-- Draconic Avenger
+					["crs"] = {
+						12460,	-- Death Talon Wyrmguard
+					},
+				},
+				i(19358, {	-- Draconic Maul
+					["crs"] = {
+						12467,	-- Death Talon Captain
+						12463,	-- Death Talon Flamescale
+						12464,	-- Death Talon Seether
+						12465,	-- Death Talon Wyrmkin
+					},
+				}),
+				{	-- Elementium Ingot
+					["itemID"] = 18562,	-- Elementium Ingot
+					["crs"] = {
+						13996,	-- Blackwing Technician
+					},
+				},
+				i(19435, {	-- Essence Gatherer
+					["crs"] = {
+						12457,	-- Blackwing Spellbinder
+						12459,	-- Blackwing Warlock
+						12461,	-- Death Talon Overseer
+					},
+				}),
+				{	-- Interlaced Shadow Jerkin
+					["itemID"] = 19439,	-- Interlaced Shadow Jerkin
+					["crs"] = {
+						12460,	-- Death Talon Wyrmguard
+					},
+				},
+				{	-- Ringo's Blizzard Boots
+					["itemID"] = 19438,	-- Ringo's Blizzard Boots
+					["crs"] = {
+						12460,	-- Death Talon Wyrmguard
 					},
 				},
 			}),
-			e( 1529, {	-- Razoregore the Untamed
+			e( 1529, {	-- Razorgore the Untamed
+				["creatureID"] = 12435,
 				["groups"] = {
 					i(93036),	-- Unscathed Egg (Pet)
 					i(19334),	-- The Untamed Blade
@@ -100,9 +105,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19336),	-- Arcane Infused Gem
 					i(19337),	-- The Black Book
 				},
-				["creatureID"] = 12435,
 			}),
 			e( 1530, {	-- Vaelastrasz the Corrupt
+				["creatureID"] = 13020,
 				["groups"] = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
@@ -120,9 +125,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19339),	-- Mind Quickening Gem
 					i(19340),	-- Rune of Metamorphosis
 				},
-				["creatureID"] = 13020,
 			}),
 			e( 1531, {	-- Broodlord Lashlayer
+				["creatureID"] = 12017,
 				["groups"] = {
 					i(93037),	-- Blackwing Banner (Pet)
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
@@ -141,9 +146,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19341),	-- Lifegiving Gem
 					i(19342),	-- Venomous Totem
 				},
-				["creatureID"] = 12017,
 			}),
 			e( 1532, {	-- Firemaw
+				["creatureID"] = 11983,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
@@ -169,13 +174,13 @@ _.Instances = { tier(1, {	-- Classic
 					i(19395),	-- Rejuvenating Gem
 					i(19343),	-- Scrolls of Blinding Light
 				},
-				["creatureID"] = 11983,
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
 				i(18562),	-- Elementium Ingot
 				i(44956),	-- Goblin's Guide to Elementium
 			}),
 			e( 1533, {	-- Ebonroc
+				["creatureID"] = 14601,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
@@ -199,9 +204,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19406),	-- Drake Fang Talisman
 					i(19395),	-- Rejuvenating Gem
 				},
-				["creatureID"] = 14601,
 			}),
 			e( 1534, {	-- Flamegor
+				["creatureID"] = 11981,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
@@ -225,9 +230,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19395),	-- Rejuvenating Gem
 					i(19431),	-- Styleen's Impeding Scarab
 				},
-				["creatureID"] = 11981,
 			}),
 			e( 1535, {	-- Chromaggus
+				["creatureID"] = 14020,
 				["groups"] = {
 					i(93038),	-- Whistle of Chromatic Bone
 					i(19352),	-- Chromatically Tempered Sword
@@ -253,9 +258,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19387),	-- Chromatic Boots
 					i(19391),	-- Shimmering Geta
 				},
-				["creatureID"] = 14020,
 			}),
 			e( 1536, {	-- Nefarian
+				["creatureID"] = 11583,
 				["groups"] = {
 					ach(685),	-- Blackwing Lair
 					i(19003, {	-- Head of Nefarian
@@ -305,6 +310,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+					i(12728),	-- Plans: Invulnerable Mail
 					i(1203),	-- Aegis of Stormwind
 					i(13036),	-- Assassination Blade
 					i(13096),	-- Band of the Hierophant
@@ -373,13 +379,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(13486),	-- Recipe: Transmute Undeath to Water
 					i(13487),	-- Recipe: Transmute Water to Undeath
 				},
-				["creatureID"] = 11583,
 			})
 		},
-		["isRaid"] = true,
-		["sharedLockout"] = 1,
-		["lvl"] = 50,
-		["mapID"] = 287,
-		["maps"] = { 288, 289, 290 },
 	}),
 })};
