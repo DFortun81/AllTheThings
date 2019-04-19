@@ -15,7 +15,7 @@ _.Achievements =
 	n(-9958, {	-- Player vs Player
 		["g"] = {
 			n(-9986, {	-- Eye of the Storm
-				-- ["maps"] = {  },	-- 
+				["maps"] = { 112 },	-- Eye of the Storm (BG)
 				["g"] = {
 					ach(1171, {	-- Master of Eye of the Storm
 						ach(209, {	-- Eye of the Storm Veteran
