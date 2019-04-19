@@ -7204,6 +7204,7 @@ local function CreateMiniListForGroup(group)
 			["g"] = { group },
 		};
 	end
+  
 	popout.data = CloneData(popout.data);
 	popout.data.visible = true;
 	popout.data.indent = 0;
@@ -7211,12 +7212,14 @@ local function CreateMiniListForGroup(group)
 	popout.data.progress = 0;
 	BuildGroups(popout.data, popout.data.g);
 	UpdateGroups(popout.data, popout.data.g);
-	AddTomTomWaypoint(popout.data, false);
-	if not popout.data.expanded then
-		ExpandGroupsRecursively(popout.data, true, true);
-	end
-	--ExportData(popout.data);
-	popout:Toggle(true);
+	if IsAltKeyDown() then
+		AddTomTomWaypoint(popout.data, false);
+	else
+		if not popout.data.expanded then
+			ExpandGroupsRecursively(popout.data, true, true);
+		end
+		--ExportData(popout.data);
+		popout:Toggle(true);
 end
 local function ClearRowData(self)
 	self.ref = nil;
@@ -7630,7 +7633,7 @@ local function RowOnClick(self, button)
 				-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
 				if app:GetWindow("Tradeskills"):IsShown() then
 					
-				else
+				elseif button == "LeftButton" then
 					-- Default behaviour is to Refresh Collections.
 					RefreshCollections(reference);
 				end
