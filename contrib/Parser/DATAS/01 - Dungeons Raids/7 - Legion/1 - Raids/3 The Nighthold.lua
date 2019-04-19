@@ -235,29 +235,36 @@ _.Instances = { tier(7, {	-- Legion
 							i(140833),	-- Sundered Comet
 							i(140841),	-- Tempest of the Heavens
 						})),	
-						cr(104528, e(1761, {	-- High Botanist Tel'arn
-							ach(10754),	-- Fruit of All Evil
-							{
-								["achievementID"] = 10837,	-- Royal Athenaeum
-								["criteriaID"] = 3,			-- High Botanist Tel'arn
+						e(1761, {	-- High Botanist Tel'arn
+							["crs"] = {
+								109040,	-- Arcanist Tel'arn
+								109041,	-- Naturalist Tel'arn
+								109038,	-- Solarist Tel'arn
 							},
-							i(143751),	-- Technique: Glyph of Twilight Bloom
-							i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-							i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
-							i(140881),	-- Eventide Casque
-							i(140883),	-- Shoulderguard of the Eclipse
-							i(140874),	-- Thistle-Proof Thorngrabbers
-							i(140886),	-- Woven Lasher Tendril Bracers
-							i(140908),	-- Trousers of Cultivation
-							i(140861),	-- Grove-Tender's Moccasins
-							i(140873),	-- Shal'dorei Weedstompers
-							i(140896),	-- Ring of Braided Stems
-							i(140801),	-- Fury of the Burning Sky
-							i(140802),	-- Nightblooming Frond
-							i(140822),	-- Breath of Dusk
-							i(140839),	-- Parasitic Spore
-							i(140836),	-- Sunflare Coal
-						})),
+							["g"] = {
+								ach(10754),	-- Fruit of All Evil
+								{
+									["achievementID"] = 10837,	-- Royal Athenaeum
+									["criteriaID"] = 3,			-- High Botanist Tel'arn
+								},
+								i(143751),	-- Technique: Glyph of Twilight Bloom
+								i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
+								i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+								i(140881),	-- Eventide Casque
+								i(140883),	-- Shoulderguard of the Eclipse
+								i(140874),	-- Thistle-Proof Thorngrabbers
+								i(140886),	-- Woven Lasher Tendril Bracers
+								i(140908),	-- Trousers of Cultivation
+								i(140861),	-- Grove-Tender's Moccasins
+								i(140873),	-- Shal'dorei Weedstompers
+								i(140896),	-- Ring of Braided Stems
+								i(140801),	-- Fury of the Burning Sky
+								i(140802),	-- Nightblooming Frond
+								i(140822),	-- Breath of Dusk
+								i(140839),	-- Parasitic Spore
+								i(140836),	-- Sunflare Coal
+							},
+						}),
 					},
 				}),
 				ach(10838, { 	-- Nightspire
@@ -651,29 +658,36 @@ _.Instances = { tier(7, {	-- Legion
 					i(140816),	-- Fingernail of the Fel Brute
 					i(140835),	-- Unkindled Ember
 				})),
-				cr(104528, e(1761, {	-- High Botanist Tel'arn
-					ach(10754),	-- Fruit of All Evil
-					{
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 3,			-- High Botanist Tel'arn
+				e(1761, {	-- High Botanist Tel'arn
+					["crs"] = {
+						109040,	-- Arcanist Tel'arn
+						109041,	-- Naturalist Tel'arn
+						109038,	-- Solarist Tel'arn
 					},
-					i(143751),	-- Technique: Glyph of Twilight Bloom
-					i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-					i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
-					i(140881),	-- Eventide Casque
-					i(140883),	-- Shoulderguard of the Eclipse
-					i(140874),	-- Thistle-Proof Thorngrabbers
-					i(140886),	-- Woven Lasher Tendril Bracers
-					i(140908),	-- Trousers of Cultivation
-					i(140861),	-- Grove-Tender's Moccasins
-					i(140873),	-- Shal'dorei Weedstompers
-					i(140896),	-- Ring of Braided Stems
-					i(140801),	-- Fury of the Burning Sky
-					i(140802),	-- Nightblooming Frond
-					i(140822),	-- Breath of Dusk
-					i(140839),	-- Parasitic Spore
-					i(140836),	-- Sunflare Coal
-				})),
+					["g"] = {
+						ach(10754),	-- Fruit of All Evil
+						{
+							["achievementID"] = 10837,	-- Royal Athenaeum
+							["criteriaID"] = 3,			-- High Botanist Tel'arn
+						},
+						i(143751),	-- Technique: Glyph of Twilight Bloom
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(140881),	-- Eventide Casque
+						i(140883),	-- Shoulderguard of the Eclipse
+						i(140874),	-- Thistle-Proof Thorngrabbers
+						i(140886),	-- Woven Lasher Tendril Bracers
+						i(140908),	-- Trousers of Cultivation
+						i(140861),	-- Grove-Tender's Moccasins
+						i(140873),	-- Shal'dorei Weedstompers
+						i(140896),	-- Ring of Braided Stems
+						i(140801),	-- Fury of the Burning Sky
+						i(140802),	-- Nightblooming Frond
+						i(140822),	-- Breath of Dusk
+						i(140839),	-- Parasitic Spore
+						i(140836),	-- Sunflare Coal
+					},
+				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					{
@@ -1049,29 +1063,36 @@ _.Instances = { tier(7, {	-- Legion
 					i(140816),	-- Fingernail of the Fel Brute
 					i(140835),	-- Unkindled Ember
 				})),
-				cr(104528, e(1761, {	-- High Botanist Tel'arn
-					ach(10754),	-- Fruit of All Evil
-					{
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 3,			-- High Botanist Tel'arn
+				e(1761, {	-- High Botanist Tel'arn
+					["crs"] = {
+						109040,	-- Arcanist Tel'arn
+						109041,	-- Naturalist Tel'arn
+						109038,	-- Solarist Tel'arn
 					},
-					i(143751),	-- Technique: Glyph of Twilight Bloom
-					i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-					i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
-					i(140881),	-- Eventide Casque
-					i(140883),	-- Shoulderguard of the Eclipse
-					i(140874),	-- Thistle-Proof Thorngrabbers
-					i(140886),	-- Woven Lasher Tendril Bracers
-					i(140908),	-- Trousers of Cultivation
-					i(140861),	-- Grove-Tender's Moccasins
-					i(140873),	-- Shal'dorei Weedstompers
-					i(140896),	-- Ring of Braided Stems
-					i(140801),	-- Fury of the Burning Sky
-					i(140802),	-- Nightblooming Frond
-					i(140822),	-- Breath of Dusk
-					i(140839),	-- Parasitic Spore
-					i(140836),	-- Sunflare Coal
-				})),
+					["g"] = {
+						ach(10754),	-- Fruit of All Evil
+						{
+							["achievementID"] = 10837,	-- Royal Athenaeum
+							["criteriaID"] = 3,			-- High Botanist Tel'arn
+						},
+						i(143751),	-- Technique: Glyph of Twilight Bloom
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(140881),	-- Eventide Casque
+						i(140883),	-- Shoulderguard of the Eclipse
+						i(140874),	-- Thistle-Proof Thorngrabbers
+						i(140886),	-- Woven Lasher Tendril Bracers
+						i(140908),	-- Trousers of Cultivation
+						i(140861),	-- Grove-Tender's Moccasins
+						i(140873),	-- Shal'dorei Weedstompers
+						i(140896),	-- Ring of Braided Stems
+						i(140801),	-- Fury of the Burning Sky
+						i(140802),	-- Nightblooming Frond
+						i(140822),	-- Breath of Dusk
+						i(140839),	-- Parasitic Spore
+						i(140836),	-- Sunflare Coal
+					},
+				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					{
@@ -1457,30 +1478,37 @@ _.Instances = { tier(7, {	-- Legion
 					i(140816),	-- Fingernail of the Fel Brute
 					i(140835),	-- Unkindled Ember
 				})),
-				cr(104528, e(1761, {	-- High Botanist Tel'arn
-					ach(10754),	-- Fruit of All Evil
-					ach(10846),	-- Mythic: High Botanist Tel'arn
-					{
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 3,			-- High Botanist Tel'arn
+				e(1761, {	-- High Botanist Tel'arn
+					["crs"] = {
+						109040,	-- Arcanist Tel'arn
+						109041,	-- Naturalist Tel'arn
+						109038,	-- Solarist Tel'arn
 					},
-					i(143751),	-- Technique: Glyph of Twilight Bloom
-					i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
-					i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
-					i(140881),	-- Eventide Casque
-					i(140883),	-- Shoulderguard of the Eclipse
-					i(140874),	-- Thistle-Proof Thorngrabbers
-					i(140886),	-- Woven Lasher Tendril Bracers
-					i(140908),	-- Trousers of Cultivation
-					i(140861),	-- Grove-Tender's Moccasins
-					i(140873),	-- Shal'dorei Weedstompers
-					i(140896),	-- Ring of Braided Stems
-					i(140801),	-- Fury of the Burning Sky
-					i(140802),	-- Nightblooming Frond
-					i(140822),	-- Breath of Dusk
-					i(140839),	-- Parasitic Spore
-					i(140836),	-- Sunflare Coal
-				})),
+					["g"] = {
+						ach(10754),	-- Fruit of All Evil
+						ach(10846),	-- Mythic: High Botanist Tel'arn
+						{
+							["achievementID"] = 10837,	-- Royal Athenaeum
+							["criteriaID"] = 3,			-- High Botanist Tel'arn
+						},
+						i(143751),	-- Technique: Glyph of Twilight Bloom
+						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
+						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
+						i(140881),	-- Eventide Casque
+						i(140883),	-- Shoulderguard of the Eclipse
+						i(140874),	-- Thistle-Proof Thorngrabbers
+						i(140886),	-- Woven Lasher Tendril Bracers
+						i(140908),	-- Trousers of Cultivation
+						i(140861),	-- Grove-Tender's Moccasins
+						i(140873),	-- Shal'dorei Weedstompers
+						i(140896),	-- Ring of Braided Stems
+						i(140801),	-- Fury of the Burning Sky
+						i(140802),	-- Nightblooming Frond
+						i(140822),	-- Breath of Dusk
+						i(140839),	-- Parasitic Spore
+						i(140836),	-- Sunflare Coal
+					},
+				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
 					ach(10851),	-- Elementalry!
 					ach(10845),	-- Mythic: Star Augur Etraeus
