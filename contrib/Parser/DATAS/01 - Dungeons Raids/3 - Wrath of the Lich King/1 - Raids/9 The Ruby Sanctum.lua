@@ -62,16 +62,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(39863, e(1652, {	-- Halion
 					ach(4815),	-- The Twilight Destroyer (25 player)
 					i(53132),	-- Penumbra Pendant
-					i(53489),	-- Cloak of Burning Dusk
+					i(53489),	-- Cloak of Burning Dusk			** Confirmed Drop 4/19/19
 					i(53486),	-- Bracers of Fiery Night
-					i(53134),	-- Phaseshifter's Bracers
+					i(53134),	-- Phaseshifter's Bracers			** Confirmed Drop 4/19/19
 					i(53126),	-- Umbrage Armbands
 					i(53488),	-- Split Shape Belt
 					i(53125),	-- Apocalypse's Advance
-					i(53487),	-- Foreshadow Steps
+					i(53487),	-- Foreshadow Steps					** Confirmed Drop 4/19/19
 					i(53127),	-- Returning Footfalls
-					i(53129),	-- Treads of Impending Resurrection
-					i(53490),	-- Ring of Phased Regeneration
+					i(53129),	-- Treads of Impending Resurrection	** Confirmed Drop 4/19/19
+					i(53490),	-- Ring of Phased Regeneration		** Confirmed Drop 4/19/19
 					i(53133),	-- Signet of Twilight
 					i(54572),	-- Charred Twilight Scale
 					i(54573),	-- Glowing Twilight Scale
