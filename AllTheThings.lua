@@ -43,7 +43,7 @@ local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 
--- Coroutine Helper Functions
+-- Coroutine Helper Functions 
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
