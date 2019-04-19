@@ -85,10 +85,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(54581),	-- Penumbra Pendant
 					i(54583),	-- Cloak of Burning Dusk
 					i(54582),	-- Bracers of Fiery Night
-					i(54584),	-- Phaseshifter's Bracers
+					i(54584),	-- Phaseshifter's Bracers			** Confirmed Drop 4/19/19
 					i(54580),	-- Umbrage Armbands
 					i(54587),	-- Split Shape Belt
-					i(54578),	-- Apocalypse's Advance
+					i(54578),	-- Apocalypse's Advance				** Confirmed Drop 4/19/19
 					i(54586),	-- Foreshadow Steps
 					i(54577),	-- Returning Footfalls
 					i(54579),	-- Treads of Impending Resurrection
@@ -97,7 +97,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(54588),	-- Charred Twilight Scale
 					i(54589),	-- Glowing Twilight Scale
 					i(54591),	-- Petrified Twilight Scale
-					i(54590),	-- Sharpened Twilight Scale
+					i(54590),	-- Sharpened Twilight Scale			** Confirmed Drop 4/19/19
 				})),
 			}),
 		},
