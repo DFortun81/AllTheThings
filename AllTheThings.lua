@@ -2753,7 +2753,7 @@ local function RefreshCollections()
 		end
 		
 		-- Refresh the Collection Windows!
-		app:RefreshData(false);
+		app:RefreshData(false, false, true);
 		collectgarbage();
 		
 		-- Report success.
@@ -8928,10 +8928,10 @@ function app:GetDataCache()
 	end
 	return allData;
 end
-function app:RefreshData(lazy, got)
+function app:RefreshData(lazy, got, manual)
 	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
-	app.countdown = 30;
+	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
 		-- While the player is in combat, wait for combat to end.
 		while InCombatLockdown() do coroutine.yield(); end
