@@ -130,6 +130,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					},
 					ach(2052, {	-- Twilight Assist [25 player]
+						-- Note!! Even with 1 drake up you can still get 0 loot from the table 4/19/19
 						i(44003),	-- Upstanding Spaulders
 						i(44000),	-- Dragonstorm Breastplate
 						i(44002),	-- The Sanctum's Flowing Vestments
@@ -180,14 +181,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40455),	-- Staff of Restraint
 					i(40451),	-- Hyaline Helm of the Sniper
 					i(40437),	-- Concealment Shoulderpads				** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40438),	-- Council Chamber Epaulets
+					i(40438),	-- Council Chamber Epaulets				** Confirmed Drop 4/19/19 [1 Drake up]
 					i(40439),	-- Mantle of the Eternal Sentinel		** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40453),	-- Chestplate of the Great Aspects		** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40446),	-- Dragon Brood Legguards
-					i(40433),	-- Wyrmrest Band
+					i(40433),	-- Wyrmrest Band						** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43999),	-- Ring of the Empty Horizon			** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40431),	-- Fury of the Five Flights				** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40432),	-- Illustration of the Dragon Soul
+					i(40431),	-- Fury of the Five Flights				** Confirmed Drop 4/19/19 [1/3 Drakes up]
+					i(40432),	-- Illustration of the Dragon Soul		** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43345),	-- Dragon Hide Bag
 					{	-- Large Satchel of Spoils
 						["itemID"] = 43346,	-- Large Satchel of Spoils
