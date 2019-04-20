@@ -11566,7 +11566,7 @@ app.events.PLAYER_LOGIN = function()
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= version) then
 				SetDataMember("RefreshedCollectionsAlready", version);
-				wipe(GetDataMember("CollectedSources"));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				wipe(GetDataMember("CollectedSources", {}));	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				RefreshCollections();
 				return nil;
 			end
