@@ -55,7 +55,6 @@ _.WorldDrops =
 					i(12044),	-- Arctic Pendant
 					i(20909),	-- Barbaric Iron Collar
 					i(12028),	-- Basalt Necklace
-					i(30419),	-- Brilliant Necklace
 					i(31154),	-- Bronze Torc
 					i(12019),	-- Cerulean Talisman
 					i(20967),	-- Citrine Pendant of Golden Healing
