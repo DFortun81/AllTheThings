@@ -408,18 +408,18 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["coord"] = { 41.8, 73.0, 85 },
 						["g"] = {
-							un(2, i(103533, {	-- Vicious Saddle
-								un(2, i(70910)),	-- Horn of the Vicious War Wolf Mount
-								un(2, i(102533)),	-- Reins of the Vicious Skeletal Warhorse Mount
-								un(2, i(142235)),	-- Vicious War Bear
-								un(2, i(152869)),	-- Vicious War Fox
-								un(2, i(124540)),	-- Vicious War Kodo Mount
-								un(2, i(116778)),	-- Vicious War Raptor Mount
-								un(2, i(142437)),	-- Vicious War Scorpion Mount
-								un(2, i(140354)),	-- Vicious War Trike Mount
-								un(2, i(143649)),	-- Vicious War Turtle Mount
-								un(2, i(140348)),	-- Vicious Warstrider Mount
-							})),
+							i(103533, {	-- Vicious Saddle
+								i(70910),	-- Horn of the Vicious War Wolf Mount
+								i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
+								i(142235),	-- Vicious War Bear
+								i(152869),	-- Vicious War Fox
+								i(124540),	-- Vicious War Kodo Mount
+								i(116778),	-- Vicious War Raptor Mount
+								i(142437),	-- Vicious War Scorpion Mount
+								i(140354),	-- Vicious War Trike Mount
+								i(143649),	-- Vicious War Turtle Mount
+								i(140348),	-- Vicious Warstrider Mount
+							}),
 						},
 					}),
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>

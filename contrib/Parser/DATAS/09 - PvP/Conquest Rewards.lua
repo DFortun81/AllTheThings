@@ -1449,6 +1449,9 @@ _.PVP =
 					{	-- Sinister Gladiator's Chain Epaulets
 						["itemID"] = 166661,	-- Sinister Gladiator's Chain Epaulets
 					},
+					{	-- Quartermaster's Coin
+						["itemID"] = 163827,	-- -- Quartermaster's Coin.
+					},
 				}),
 			},
 			{	-- Weekly PVP Chest [Redoing both structures later so it's not listed like this]
