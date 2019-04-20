@@ -200,6 +200,62 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
+					--Followers Sort Later
+					q(41750, {	-- Champion: Calydus
+						["qg"] = 101097,	-- Calydus
+						["groups"] = {
+							follower(616),	-- Calydus
+						},
+					}),
+					q(41756, {	-- Champion: Eredar Twins
+						["qg"] = 106228,	-- Grand Warlock Alythess
+						["groups"] = {
+							follower(621),	-- Eredar Twins
+						},
+					}),
+					q(41753, {	-- Champion: Jubeka Shadowbreaker
+						["qg"] = 105922,	-- Jubeka Shadowbreaker <Council of the Black Harvest>
+						["groups"] = {
+							follower(619),	-- Jubeka Shadowbreaker
+						},
+					}),
+					q(46047, {	-- Champion: Kanrethad Ebonlocke
+					--q(46316)  Diff quest text if you completed green fire quest.  Same result from both quests.
+						["qg"] = 118927,	-- Kanrethad Ebonlocke
+						["groups"] = {
+							follower(997),	-- Kanrethad Ebonlocke
+						},
+					}),
+					q(41751, {	-- Champion: Kira Iresoul
+						["qg"] = 104732,	-- Kira Iresoul
+						["groups"] = {
+							follower(617),	-- Kira Iresoul
+						},
+					}),
+					q(41755, {	-- Champion: Lulubelle Fizzlebang
+						["qg"] = 105928,	-- Lulubelle Fizzlebang
+						["groups"] = {
+							follower(590),	-- Lulubelle Fizzlebang
+						},
+					}),
+					q(41748, {	-- Champion: Ritssyn Flamescowl
+						["qg"] = 104795,	-- Ritssyn Flamescowl <Council of the Black Harvest>
+						["groups"] = {
+							follower(589),	-- Ritssyn Flamescowl
+						},
+					}),
+					q(41754, {	-- Champion: Shinfel Blightsworn
+						["qg"] = 105140,	-- Shinfel Blightsworn <Council of the Black Harvest>
+						["groups"] = {
+							follower(620),	-- Shinfel Blightsworn
+						},
+					}),
+					q(41752, {	-- Champion: Zinnin Smythe
+						["qg"] = 105923,	-- Zinnin Smythe <Council of the Black Harvest>
+						["groups"] = {
+							follower(618),	-- Zinnin Smythe
+						},
+					}),
 				}),
 				n(-2, {	--  Vendors
 					n(101097, {	-- Calydus

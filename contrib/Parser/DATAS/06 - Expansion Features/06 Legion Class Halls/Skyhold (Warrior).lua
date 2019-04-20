@@ -188,6 +188,67 @@ _.ExpansionFeatures =
 					q(43090, {	-- Ulduar's Oath
 						i(139688),	-- Battlelord's Bracers
 					}),
+					--Followers Sort later
+					q(42616, {	-- Champion: Dvalen Ironrune
+						["qg"] = 112766,	-- Dvalen Ironrune
+						["groups"] = {
+							follower(714),	-- Dvalen Ironrune
+						},
+					}),
+					q(42606, {	-- Champion: Finna Bjornsdottir
+						["qg"] = 107985,	-- Finna Bjornsdottir
+						["groups"] = {
+							follower(709),	-- Finna Bjornsdottir
+						},
+					}),
+					q(42619, {	-- Champion: Hodir
+						["qg"] = 113583,	-- Hodir
+						["groups"] = {
+							follower(715),	-- Hodir
+						},
+					}),
+					q(42204, {	-- Jorhuttam
+						["qg"] = 106271,	-- Jarum Skymane
+						["groups"] = {
+							follower(711),	-- Hymdall
+						},
+					}),
+					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
+						--["qg"] = ,	-- Autoaccept while on the chain
+						["groups"] = {
+							follower(712),	-- King Ymiron
+						},
+					}),
+					qa(45876, {	-- Champion: Lord Darius Crowley
+						["qg"] = 117480,	-- Lord Darius Crowley
+						["groups"] = {
+							follower(989),	-- Lord Darius Crowley / Eitrigg
+						},
+					}),
+					qh(45873, {	-- Champion: Eitrigg
+						["qg"] = 117479,	-- Eitrigg
+						["groups"] = {
+							follower(989),	-- Lord Darius Crowley / Eitrigg
+						},
+					}),
+					q(42605, {	-- Champion: Ragnvald Drakeborn
+						["qg"] = 107984,	-- Ragnvald Drakeborn
+						["groups"] = {
+							follower(708),	-- Ragnvald Drakeborn
+						},
+					}),
+					q(42614, {	-- Champion: Svergan Stormcloak
+						["qg"] = 107986,	-- Svergan Stormcloak
+						["groups"] = {
+							follower(710),	-- Svergan Stormcloak
+						},
+					}),
+					q(42618, {	-- Champion: Thorim
+						["qg"] = 112765,	-- Thorim
+						["groups"] = {
+							follower(713),	-- Thorim
+						},
+					}),
 				}),
 				n(-2, {	--  Vendors
 					n(112392, {	-- Quartermaster Durnolf

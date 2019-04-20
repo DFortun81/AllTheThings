@@ -105,6 +105,18 @@ _.ExpansionFeatures =
 							}),
 						},
 					},
+					q(44865, {	-- Butler to the Great
+						["qg"] = 115551,	-- Phantom Valet
+						["groups"] = {
+							follower(733),	-- Moroes
+						},
+					}),
+					q(45312, {	-- You Beat the Ball of Meat
+						--["qg"] = i(143590),	-- Hunk of Meatball
+						["groups"] = {
+							follower(986),	-- Meatball
+						},
+					}),
 					{	-- Argussian Reach Insignia
 						["itemID"] = 152960,	-- Argussian Reach Insignia
 					},

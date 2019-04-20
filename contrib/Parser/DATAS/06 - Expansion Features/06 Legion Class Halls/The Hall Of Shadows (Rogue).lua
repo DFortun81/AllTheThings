@@ -120,6 +120,67 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
+					--Followers Sort later
+					q(44181, {	-- Champion: Fleet Admiral Tethys
+						["qg"] = 94159,		-- Fleet Admiral Tethys
+						["groups"] = {
+							follower(780),	-- Fleet Admiral Tethys
+						},
+					}),
+					q(43262, {	-- Champion: Garona Halforcen
+						["qg"] = 94141,		-- Garona Halforcen
+						["groups"] = {
+							follower(778),	-- Garona Halforcen
+						},
+					}),
+					q(44183, {	-- Champion: Lord Jorach Ravenholdt
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+						["groups"] = {
+							follower(779),	-- Lord Jorach Ravenholdt
+						},
+					}),
+					q(44180, {	-- Champion: Marin Noggenfogger
+						["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
+						["groups"] = {
+							follower(890),	-- Marin Noggenfogger
+						},
+					}),
+					q(43724, {	-- Champion: Master Mathias Shaw
+						["qg"] = 110953,	-- Master Mathias Shaw <Leader of SI:7>
+						["groups"] = {
+							follower(893),	-- Master Mathias Shaw
+						},
+					}),
+					qa(46059, {	-- Champion: Tess Greymane
+						["qg"] = 94138,		-- Princess Tess Greymane
+						["groups"] = {
+							follower(988),	-- Princess Tess Greymane / Lilian Voss
+						},
+					}),
+					qh(46058, {	-- Champion: Lilian Voss
+						["qg"] = 98099,		-- Lilian Voss
+						["groups"] = {
+							follower(988),	-- Princess Tess Greymane / Lilian Voss
+						},
+					}),
+					q(43723, {	-- Champion: Taoshi
+						["qg"] = 98100,		-- Taoshi
+						["groups"] = {
+							follower(892),	-- Taoshi
+						},
+					}),
+					q(42800, {	-- Champion: Valeera Sanguinar
+						["qg"] = 98102,		-- Valeera Sanguinar
+						["groups"] = {
+							follower(891),	-- Valeera Sanguinar
+						},
+					}),
+					q(43261, {	-- Champion: Vanessa VanCleef
+						["qg"] = 102636,	-- Vanessa VanCleef
+						["groups"] = {
+							follower(591),	-- Vanessa VanCleef
+						},
+					}),
 				}),
 				--[[
 				n(98093, {	-- Scouting Map

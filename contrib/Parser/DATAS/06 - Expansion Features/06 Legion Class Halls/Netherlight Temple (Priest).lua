@@ -234,6 +234,61 @@ _.ExpansionFeatures =
 					q(43381, {	-- Champion: Mariella Ward
 						i(139762),	-- Bracers
 					}),
+					--Followers  Sort later 
+					q(46034, {	-- Champion: Aelthalyste
+						["qg"] = 120842,	-- Aelthalyste
+						["groups"] = {
+							follower(1002),	-- Champion: Akama
+						},
+					}),
+					q(43398, {	-- Champion: Alonsus Faol
+						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+						["groups"] = {
+							follower(875),	-- Alonsus Faol
+						},
+					}),
+					q(43271, {	-- Champion: Calia Menethil
+						["qg"] = 110596,	-- Calia Menethil
+						["groups"] = {
+							follower(856),	-- Calia Menethil
+						},
+					}),
+					q(43272, {	-- Champion: High Priestess Ishanah
+						--["qg"] = ,	-- Can't find QG
+						["groups"] = {
+							follower(857),	-- High Priestess Ishanah
+						},
+					}),
+					q(43381, {	-- Champion: Mariella Ward
+						["qg"] = 111215,	-- Mariella Ward
+						["groups"] = {
+							follower(873),	-- Mariella Ward
+						},
+					}),
+					q(43382, {	-- Champion: Natalie Seline
+						["qg"] = 110684,	-- Natalie Seline <Cult of Forgotten Shadows>
+						["groups"] = {
+							follower(874),	-- Natalie Seline
+						},
+					}),
+					q(43380, {	-- Champion: Sol
+						["qg"] = 110457,	-- Sol
+						["groups"] = {
+							follower(872),	-- Sol
+						},
+					}),
+					q(42137, {	-- Champion: Yalia Sagewhisper
+						["qg"] = 110687,	-- Yalia Sagewhisper
+						["groups"] = {
+							follower(871),	-- Yalia Sagewhisper
+						},
+					}),
+					q(42138, {	-- Champion: Zabra Hexx
+						["qg"] = 110686,	-- Zabra Hexx
+						["groups"] = {
+							follower(870),	-- Zabra Hexx
+						},
+					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43420, {	-- A Hero's Weapon
 						sp(219663)	-- Heroic Weapons [No item associated]
