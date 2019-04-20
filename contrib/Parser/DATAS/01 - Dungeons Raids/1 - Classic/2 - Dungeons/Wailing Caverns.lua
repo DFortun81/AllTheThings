@@ -6,9 +6,6 @@ _.Instances = { tier(1, {	-- Classic
 	inst(240, { 	-- Wailing Caverns
 		["lvl"] = 12,
 		["mapID"] = 279,
-		["maps"] = { 
-			825,	-- Pet Dungeon
-		},
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Wailing Caverns [Northern Barrens]
 		["groups"] = {
 			n(-17, {	-- Quests 	

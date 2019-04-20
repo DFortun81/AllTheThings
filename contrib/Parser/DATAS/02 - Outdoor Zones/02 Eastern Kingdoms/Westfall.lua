@@ -39,17 +39,6 @@ _.Zones =
 					qa(31780, {	-- Old MacDonald
 						["isDaily"] = true,
 					}),
-					ach(11856, {	-- Pet Battle Challenge: Wailing Caverns
-						i(151632),	-- Mining Monkey
-						n(119390, {	-- Marcus "Bagman" Brown
-							["groups"] = {
-								i(150742),	-- Pet Reaper 0.9
-								i(150741),	-- Tricorne
-								i(150739),	-- Pocket Cannon
-							},
-							["description"] = "Must have completed the Wailing Caverns Pet Battle Dungeon quest Wailing Critters and the breadcrumb quest Deadmines, Part Three?."
-						}),
-					}),
 				}),
 				n(-38, {	-- Professions
 						prof(356, {	-- Fishing

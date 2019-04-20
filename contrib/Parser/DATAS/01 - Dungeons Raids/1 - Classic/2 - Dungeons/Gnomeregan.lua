@@ -10,9 +10,6 @@ _.Instances = { tier(1, {	-- Classic
 			227, 
 			228, 
 			229, 
-			840,	-- Pet Dungeon
-			841,	-- Pet Dungeon
-			842,	-- Pet Dungeon
 		},
 		["coord"] = { 30.11, 74.64, 30 },	-- Gnomeregan, Gnomeregan [Dun Morogh]
 		["groups"] = {

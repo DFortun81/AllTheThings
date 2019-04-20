@@ -347,6 +347,8 @@ _.Zones =
 					},
 				}),
 				m(427,  {	-- Coldridge Valley
+					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
+					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare
@@ -400,10 +402,10 @@ _.Zones =
 							})),
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
-					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
 				}),			
 				m(469,  {	-- New Tinkertown [Above]
+					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
+					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare
@@ -412,6 +414,7 @@ _.Zones =
 							p(440), 	-- Snow Cub
 						}),
 						n(-17, { 	-- Quests
+							["races"] = {7},
 							["groups"] = {
 --[[							
 								qg(42553, q(26205, {	-- A Job for the Multi-Bot
@@ -554,7 +557,6 @@ _.Zones =
 								})),
 --]]								
 							},
-							["races"] = {7},
 						}),
 						n(-16, { 	-- Rares
 							 n(107431, {	-- Weaponized Rabbot
@@ -602,57 +604,28 @@ _.Zones =
 							},
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
-					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
 				}),
 				m(30,  {	-- New Tinkertown [Below]
+					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
+					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
 					["groups"] = {	
 						n(-25, { 	-- Pet Battle
 							n(124617, {	-- Environeer Bert
+								["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
 								["groups"] = {
 									i(151638, {	-- Leprous Sack of Pet Supplies
 										i(151645),	-- Model D1-BB-L3R
 									}),
 								},
-								["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan."
 							}),
-							ach(13269, {	-- Pet Battle Challenge: Gnomeregan
-								{	-- Mini Spider Tank
-									["itemID"] = 165894,	-- Mini Spider Tank
-								},
-								{	-- Gnomeregan's New Guardians
-									["questID"] = 54185,	-- Gnomeregan's New Guardians
-									["qg"] = 147070,	-- Micro Zoox
-									["coord"] = { 31.67, 71.61 },
-									["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [A] + [H]
-								},
-								{	-- Micro Zoox
-									["npcID"] = 147070,	-- Micro Zoox
-									["g"] = {
-										{	-- Pristine Gizmo
-											["itemID"] = 165835,	-- Pristine Gizmo
-											["g"] = {
-												{	-- Leper Rat Tail
-													["itemID"] = 165855,	-- Leper Rat Tail
-												},
-												{	-- Mechanical Cockroach
-													["itemID"] = 165854,	-- Mechanical Cockroach
-												},
-												{	-- Rechargeable Alarm-O-Dog Battery
-													["itemID"] = 165857,	-- Rechargeable Alarm-O-Dog Battery
-												},
-												{	-- Schematic: Mechantula
-													["itemID"] = 165844,	-- Schematic: Mechantula
-												},
-											},
-										},
-									},
-								},
-							}),
+							{	-- Gnomeregan's New Guardians
+								["questID"] = 54185,	-- Gnomeregan's New Guardians
+								["qg"] = 147070,	-- Micro Zoox
+								["coord"] = { 31.67, 71.61, 30 },
+								["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [A] + [H]
+							},
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
-					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
 				}),
 			},
 			["lvl"] = 1,	
