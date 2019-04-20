@@ -18,7 +18,7 @@
 		AllTheThings.Settings:ToggleCollectedThings();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
-		AllTheThings.ToggleBOEItems();
+		AllTheThings.Settings:ToggleBOEItems();
 	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="ADDONS">
 		AllTheThings.ToggleMainList();
