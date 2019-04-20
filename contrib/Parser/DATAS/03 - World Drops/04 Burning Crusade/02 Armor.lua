@@ -29,34 +29,22 @@ _.WorldDrops =
 					i(31196),	-- Amulet of Sanctification
 					i(31178),	-- Amulet of Unstable Power
 					i(25058),	-- Anglesite Choker
-					i(24121),	-- Chain of the Twilight Owl
 					i(31338),	-- Charlotte's Ivy
 					i(31321),	-- Choker of Repentance
 					i(25070),	-- Coral Beads
 					i(25067),	-- Diopside Beads
-					i(24117),	-- Embrace of the Dawn
 					i(25069),	-- Epidote Stone Necklace
 					i(31940),	-- Ethereum Torque
-					i(24116),	-- Eye of the Night
 					i(25059),	-- Fire Opal Collar
 					i(31194),	-- Gronn-Blessed Warbeads
 					i(25061),	-- Hiddenite Necklace
 					i(25068),	-- Kunzite Necklace
-					i(24110),	-- Living Ruby Pendant
 					i(25063),	-- Multi-Colored Beads
-					i(32508),	-- Necklace of the Deep
 					i(31275),	-- Necklace of Trophies
-					i(31147),	-- Pendant of Cunning
-					i(24092),	-- Pendant of Frozen Flame
-					i(24097),	-- Pendant of Shadow's End
-					i(24093),	-- Pendant of Thawing
-					i(24098),	-- Pendant of the Null Rune
 					i(24095),	-- Pendant of Withering
 					i(25066),	-- Pink Sapphire Necklace
 					i(25060),	-- Sunstone Necklace
 					i(25071),	-- Tanzanite Pendant
-					i(24077),	-- Thick Adamantite Necklace
-					i(24106),	-- Thick Felsteel Necklace
 					i(25065),	-- Turquoise Brooch
 					i(25062),	-- Zircon Amulet
 				}),
