@@ -2902,7 +2902,7 @@ _.Zones =
 							{	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["npcID"] = 73190,	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["coord"] = { 76.88, 65.60, 84 },
-								["g"] = bubbleDown({["u"] = 2}, {
+								["g"] = {
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
 										i(102514),	-- Reins of the Vicious Warsaber
@@ -2915,7 +2915,7 @@ _.Zones =
 										i(116777),	-- Vicious War Ram
 										i(143648),	-- Vicious War Turtle
 									}),
-								}),
+								},
 							},
 							{	-- Old Whitenose <Dragon Turtle Breeder>
 								["npcID"] = 65068,	-- Old Whitenose <Dragon Turtle Breeder>

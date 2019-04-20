@@ -1181,6 +1181,10 @@ _.PVP =
 				["itemID"] = 166417,	-- Reins of the Onyx War Hyena
 				["u"] = 1,		-- Nobody obtained it since Season 2 start. Hopefully will be added later
 			},
+			{	-- Vicious Saddle
+				["itemID"] = 103533,	-- Vicious Saddle
+				["description"] = "Offered as Season Reward Cap after you received your Seasonal Mount, up to 10 times per Season. Any win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+			},
 			{	-- 2v2/3v3/RBG
 				["itemID"] = 165717,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 			},
