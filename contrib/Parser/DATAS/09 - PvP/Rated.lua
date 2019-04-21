@@ -84,6 +84,38 @@ _.PVP =
 						},
 						},
 					},
+					{	-- Player vs. Player (Battle for Azeroth Season 3)
+						["npcID"] = -3156,	-- Player vs. Player (Battle for Azeroth Season 3
+						["g"] = {
+							{	-- Mounts
+								["filter"] = 100,	-- Mounts
+								["g"] = {
+									{	-- Vicious War Basilisk (Ally, Blue)
+										["itemID"] = 163122,	-- Vicious War Basilisk (Ally, Blue)
+									},
+									{	-- Vicious War Basilisk (Horde, Red)
+										["itemID"] = 163121,	-- Vicious War Basilisk (Horde, Red)
+									},
+								},
+							["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
+							},
+					--[[{	-- Battleborn Sigil Sinister Combatant
+							["itemID"] = 164951,	-- Battleborn Sigil Sinister Combatant
+						},
+						{	-- Battleborn Sigil Sinister Challenger
+							["itemID"] = 164952,	-- Battleborn Sigil Sinister Challenger
+						},
+						{	-- Battleborn Sigil Sinister Rival
+							["itemID"] = 164953,	-- Battleborn Sigil Sinister Rival
+						},
+						{	-- Battleborn Sigil Sinister Duelist
+							["itemID"] = 164954,	-- Battleborn Sigil Sinister Duelist
+						},
+						{	-- Battleborn Sigil Sinister Elite
+							["itemID"] = 164955,	-- Battleborn Sigil Sinister Elite
+						},--]]
+						},
+					},
 				},
 			},
 			{	-- Recipes

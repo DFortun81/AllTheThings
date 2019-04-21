@@ -606,6 +606,16 @@ _.Zones =
 								},
 								["qg"] = 138669	-- Hemet Nesingwary
 							}),
+							qh(49884, {	-- Hope's Blue Light
+								["g"] = {
+									i(159152),	-- Torcalin Grips
+									i(159153),	-- zanchuli Grips
+									i(159154),	-- Rastari Gloves
+									i(159155),	-- Jambani Handguards
+									i(158667),	-- Blue Flame Spelltorch
+									i(159124),	-- Golden Fleet Buckler
+								},
+							}),
 							qh(49680, {	-- Skycaller Soltok
 								["qg"] = 130450,	-- Bladeguard Sonji
 								["g"] = {

@@ -2171,6 +2171,10 @@ _.PVP =
 						["itemID"] = 161674,	-- Dread Gladiator's Medallion
 						["u"] = 2,	
 					},
+					{	-- Warlord's Trophy Dread Combatant
+						["itemID"] = 155622,	-- Warlord's Trophy Dread Combatant
+						["u"] = 2,	
+					},
 					{	-- Warlord's Trophy Dread Challenger
 						["itemID"] = 164584,	-- Warlord's Trophy Dread Challenger
 						["u"] = 2,	
@@ -2912,6 +2916,21 @@ _.PVP =
 					},
 					{	-- Sinister Gladiator's Chain Epaulets
 						["itemID"] = 166661,	-- Sinister Gladiator's Chain Epaulets
+					},
+					{	-- Warlord's Trophy Sinister Combatant
+						["itemID"] = 164950,	-- Warlord's Trophy Sinister Combatant
+					},
+					{	-- Warlord's Trophy Sinister Challenger
+						["itemID"] = 164956,	-- Warlord's Trophy Sinister Challenger
+					},
+					{	-- Warlord's Trophy Sinister Rival
+						["itemID"] = 164957,	-- Warlord's Trophy Sinister Rival
+					},
+					{	-- Warlord's Trophy Sinister Duelist
+						["itemID"] = 164958,	-- Warlord's Trophy Sinister Duelist	
+					},
+					{	-- Warlord's Trophy Sinister Elite
+						["itemID"] = 164959,	-- Warlord's Trophy Sinister Elite
 					},
 				}),
 			},

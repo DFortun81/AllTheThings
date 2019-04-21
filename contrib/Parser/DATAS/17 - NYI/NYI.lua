@@ -31,8 +31,6 @@ _.NeverImplemented =
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 		un(1, i(165261)),	-- Unknown Cloak
-		un(1, i(163121)),	-- Vicious War Basilisk (Horde, Red, probably will be added in a later patch)
-		un(1, i(163122)),	-- Vicious War Basilisk (Ally, Blue, probably will be added in a later patch)
 		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
 		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(1, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
@@ -794,6 +792,8 @@ _.NeverImplemented =
 			un(1, i(150489)),	-- Shroud of Forgiveness
 			un(1, i(150714)),	-- Travel-Worn Shawl
 			un(1, i(134579)),	-- Vanguard Cape
+			un(1, i(167150)),	-- Unknown
+			un(1, i(158582)),	-- Wickerweave Cloak (Bfa Beta Only)
 			un(1, i(108814)),	-- 6.0 PH Cloak Agi
 			un(1, i(108822)),	-- 6.0 PH Cloak STR
 			un(1, i(39828)),	-- Punisher's Cloak
@@ -979,6 +979,8 @@ _.NeverImplemented =
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
+			un(1, i(167138)),	-- Unknown
+			un(1, i(167139)),	-- Unknown
 			un(1, i(46839)),	-- Unknown
 			un(1, i(46840)),	-- Unknown
 			un(1, i(65015)),	-- Donstusefury of angerforge
@@ -1137,6 +1139,7 @@ _.NeverImplemented =
 		un(1, i(43016)),
 		un(1, i(52446)),
 		un(1, i(62898)),
+		un(1, i(164769)),	-- Unknown
 		un(1, i(33565)),	-- Uncommon Drop Certificate
 		un(1, i(105914)),	-- Danger Detector Boots
 		un(1, i(105915)),	-- Danger Detector Harness
@@ -1306,6 +1309,7 @@ _.NeverImplemented =
 		un(1, i(152880)),	-- Reuuse me
 		un(1, i(131737)),	-- Wyrmy Tunkins
 		un(1, i(154703)),	-- Hot Air Baloon
+		un(1, i(136906)),	-- Brown Piglet
 		un(1, i(162686)),	-- Demon Goat (unused Baa'l ID)
 		un(1, i(163553)),	-- Digitized Assistant (used to be a pet)
 		un(1, i(163554)),	-- Finicky Gauntlet (used to be a pet)
@@ -1905,6 +1909,7 @@ _.NeverImplemented =
 			un(1, i(109301)),	-- Unknown
 			un(1, i(109311)),	-- Unknown
 			un(1, i(109380)),	-- Unknown
+			un(1, i(167146)),	-- Unknown
 		}),
 		n(-336, { 	-- One-Handed Maces
 			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)

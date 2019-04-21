@@ -443,6 +443,7 @@ AllTheThings.L = {
 		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll",					-- Zandalari Troll
 		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",					-- Kul Tiran
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
+		[-254] = "Interface\\Icons\\Ability_warrior_bloodfrenzy",				-- Hostile NPC
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1112,6 +1113,7 @@ AllTheThings.L = {
 		[-251] = "Zandalari Troll",												-- Zandalari Troll
 		[-252] = "Kul Tiran",													-- Kul Tiran
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
+		[-254] = "Hostile NPC",													-- Hostile NPC
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1327,6 +1329,7 @@ AllTheThings.L = {
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
 -- Other Sets
+		[-3156] = string.format(PLAYER_V_PLAYER_SEASON, 3),						-- Player vs. Player (Battle for Azeroth Season 3)
 		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
 		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season 1)
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,

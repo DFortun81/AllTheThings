@@ -423,6 +423,7 @@ _.Zones =
 								i(117990),	-- Maa'run's Prescient Eye
 								i(117991),	-- Maa'run's Treacherous Eye
 							}),
+							i(111418),	-- Mushroom Juice (Used for the Bonus Objective).
 						},
 					},
 				},
