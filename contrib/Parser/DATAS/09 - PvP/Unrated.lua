@@ -256,7 +256,7 @@ _.PVP =
 				i(134696),	-- Cascading Amice
 				i(134694),	-- Cascading Cord
 				i(134697),	-- Cascading Cuffs
-				i(134695),	-- Cascading Trousers
+				i(134695),	-- Cascading Trousers*
 				i(134714),	-- Crushing Armplates
 				i(134711),	-- Crushing Girdle
 				i(134712),	-- Crushing Legguards
@@ -265,7 +265,7 @@ _.PVP =
 				i(134715),	-- Enveloping Badge
 				i(134716),	-- Enveloping Cloak
 				i(134698),	-- Enveloping Distinction
-				i(134709),	-- Enveloping Pendant
+				i(134709),	-- Enveloping Pendant*
 				i(134707),	-- Surging Armbands
 				i(134705),	-- Surging Chain Leggings
 				i(134706),	-- Surging Spaulders

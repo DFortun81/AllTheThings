@@ -659,7 +659,6 @@ _.Zones =
 							qg(, qa(26183)),	-- The King's Cider
 							qg(, q(29547)),	-- The King's Command
 							qg(, qa(25157)),	-- The Latest Fashion!
-							qg(, qa(40519)),	-- The Legion Returns
 		--]]					
 							q(37689, {	-- The Imposter
 								["groups"] = {

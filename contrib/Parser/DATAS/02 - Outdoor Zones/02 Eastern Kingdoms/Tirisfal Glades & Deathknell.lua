@@ -128,8 +128,10 @@ _.Zones =
 					}),
 					qart(q(40706, {	-- A Legend You Can Hold
 						["qg"] = 101314,	-- Alonsus Faol
-						["sourceQuests"] = { 40705 },	-- Priestly Matters
+						["lvl"] = 98,
+						["coord"] = { 79.0, 40.9, 18 },
 						["classes"] = { 5 },	-- priest
+						["sourceQuests"] = { 40705 },	-- Priestly Matters
 					})),
 					qh(25013, {	-- A Little Oomph
 						["groups"] = {
@@ -161,7 +163,10 @@ _.Zones =
 					}),
 					qart(q(40710, {	-- Blade in Twilight
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+						["lvl"] = 98,
+						["coord"] = { 79.0, 40.9, 18 },
 						["classes"] = { 5 },	-- Priest
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 					})),
 					qh(24990, {	-- Darkhound Pounding -- anytime
 						["qg"] = 10665,	-- Junior Apothecary Holland
@@ -238,10 +243,12 @@ _.Zones =
 						["sourceQuests"] = { 24994 },	-- Doom Weed
 					}),
 					q(40705, {	-- Priestly Matters
+						-- Quest is actually picked up in Dalaran.
 						["qgs"] = {
 							101344,	-- Hooded Priestess (horde)
 							102333,	-- Hooded Priestess (alliance)
 						},
+						["lvl"] = 98,
 						["classes"] = { 5 },	-- Priest
 					}),
 					qh(24978, {	-- Reaping the Reapers -- anytime
@@ -785,6 +792,7 @@ _.Zones =
 			},
 			["lvl"] = 1,
 			["maps"] = {
+				20,		-- Keeper's Rest (part of Priest artifact questline)
 				908,	-- Ruins of Lordaeron
 			},
 			["achievementID"] = 768,

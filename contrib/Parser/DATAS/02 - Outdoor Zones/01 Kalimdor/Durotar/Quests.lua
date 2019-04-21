@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
-			["groups"] = {
+			["g"] = {
 				n(-17, {	-- Quests
 					{	-- A Weapon of the Horde
 						["questID"] = 41002,
@@ -25,7 +25,7 @@ _.Zones =
 						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
-						["groups"] = {
+						["g"] = {
 							un(3, i(97849)),	-- Radical Mojo
 						},
 					},
@@ -34,7 +34,7 @@ _.Zones =
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
-						["groups"] = {
+						["g"] = {
 							un(3, i(97849)),	-- Radical Mojo
 						},
 					},
@@ -65,7 +65,7 @@ _.Zones =
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
+						["g"] = {
 							un(2, i(7129)),	-- Brutal Gauntlets
 						},
 					},
@@ -83,6 +83,23 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
+					qh(40607, {	-- Demons Among Us
+						["qg"] = 100873,	-- Allari the Souleater
+						["lvl"] = 98,
+						["coord"] = { 45.8, 15.1, 1 },
+						["sourceQuests"] = { 40760 },	-- Emissary
+						["g"] = {
+							i(129104),	-- Brand of the Banshee Queen
+							i(138776),	-- Accolade of the Banshee Queen
+							i(138775),	-- Token of the Banshee Queen
+						},
+					}),
+					qh(40760, {	-- Emissary
+						["qg"] = 100866,	-- Lady Sylvanas Windrunner
+						["lvl"] = 98,
+						["coord"] = { 45.6, 15.8, 1 },
+						["sourceQuests"] = { 40522 },	-- Fate of the Horde
+					}),
 					{	-- Exploiting the Situation
 						["questID"] = 25176,
 						["qg"] = 39423,	-- Gail Nozzywig
@@ -90,13 +107,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25171,	-- Riding On
 					},
+					qh(40522, {	-- Fate of the Horde
+						["qg"] = 100453,	-- Eitrigg
+						["lvl"] = 98,
+						["coord"] = { 57.2, 10.5, 1 },
+						["sourceQuests"] = { 40518 },	-- The Battle for Broken Shore
+					}),
 					{	-- Fizzled
 						["questID"] = 25260,
 						["qg"] = 39379,	-- Gor the Enforcer
 						["coord"] = { 44.9, 14.7, 1 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
-						["groups"] = {
+						["g"] = {
 							i(53369),	-- Fizzle's Gloves
 							i(53366),	-- Enforcer's Gloves
 							i(131413),	-- Gor's Re-Inforced Gloves
@@ -116,7 +139,7 @@ _.Zones =
 						["qg"] = 3706,	-- Tai'jin
 						["races"] = { 8 },	-- Troll
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["g"] = {
 							un(2, i(16606)),	-- Juju Hex Robes
 						},
 					},
@@ -148,7 +171,7 @@ _.Zones =
 						["coord"] = { 44.9, 14.7, 1 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25205,	-- The Wolf and The Kodo
-						["groups"] = {
+						["g"] = {
 							i(53368),	-- Feckless Armbands
 							i(53374),	-- Heedless Treads
 							i(131410),	-- Bindings of Disregard
@@ -170,9 +193,10 @@ _.Zones =
 					},
 					{	-- Keep Your Friends Close
 						["questID"] = 40605,
+						["coord"] = { 45.6, 15.9, 1 },
 						["qg"] = 101035,	-- Lady Sylvanas Windrunner
 						["races"] = HORDE_ONLY,
-						["classes"] = { 12 },	-- Demon Hunter
+						["sourceQuests"] = { 40607 },	-- Demons Among Us
 					},
 					{	-- Learn To Ride
 						["questID"] = 32671,
@@ -201,6 +225,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25227,	-- Thonk
 					},
+					qh(39698, {	-- Making the Rounds
+						["qg"] = 96686,	-- Lady Sylvanas Windrunner
+						["lvl"] = 98,
+						["coord"] = { 61.3, 8.8, 1 },
+						["sourceQuests"] = { 38307 },	-- The Warchief Beckons
+					}),
 					{	-- Margoz
 						["questID"] = 25261,
 						["qg"] = 39379,	-- Gor the Enforcer
@@ -228,7 +258,11 @@ _.Zones =
 						["coord"] = { 57.6, 9.6, 1 },
 						["races"] = { 9 },	-- Goblin
 						["sourceQuest"] = 25266,	-- Warchief's Emissary
-						["groups"] = {
+						["qgs"] = {
+							86884,	-- Darkspear Loyalist
+							39609,	-- Kor'kron Loyalist
+						},
+						["g"] = {
 							i(118217),	-- Staff of Dubious Pacts
 							i(118219),	-- Harness of Forward Directions
 							i(131898),	-- Chestguard of Forward Directions
@@ -236,10 +270,6 @@ _.Zones =
 							un(34, i(67154)),	-- Staff of the Unwelcome
 							un(34, i(67157)),	-- Harness of Binding
 							un(34, i(67156)),	-- Girdle of Servitude
-						},
-						["qgs"] = {
-							86884,	-- Darkspear Loyalist
-							39609,	-- Kor'kron Loyalist
 						},
 					},
 					{	-- Never Trust a Big Barb and a Smile
@@ -309,7 +339,7 @@ _.Zones =
 					},
 					{	-- Riding Trainer Pamphlet
 						["itemID"] = 46883,
-						["groups"] = {
+						["g"] = {
 							{
 								["questID"] = 14088,	-- Learn to Ride in Durotar
 								["u"] = 40,
@@ -351,7 +381,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 3208,	-- Margoz
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(4947)),	-- Jagged Dagger
 							un(2, i(4939)),	-- Steady Bastard Sword
 							un(2, i(4948)),	-- Stinging Mace
@@ -363,7 +393,7 @@ _.Zones =
 						["coord"] = { 56.4, 20.0, 1 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25261,	-- Margoz
-						["groups"] = {
+						["g"] = {
 							i(53358),	-- Blade Cultist Slippers
 							i(53387),	-- Searing Bracers
 							i(53390),	-- Skull Rock Belt
@@ -391,7 +421,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 44281,	-- To Be Prepared
 						["description"] = "Legion expansion introduction quest.|r",
-						["groups"] = {
+						["g"] = {
 							i(136582),	-- Bonegrinder of the Horde Vanguard
 							i(136583),	-- Longbow of the Horde Vanguard
 							i(136584),	-- Dagger of the Horde Vanguard
@@ -416,7 +446,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 3521,	-- Ak'Zeloth
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(5420)),	-- Banshee Armor
 						},
 					},
@@ -466,7 +496,10 @@ _.Zones =
 						["qg"] = 4311,	-- Holgar Stormaxe
 						["lvl"] = 98,
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 43926	-- The Legion Returns
+						["sourceQuest"] = 43926,	-- The Legion Returns
+						["g"] = {
+							i(141294),	-- Mark of Orgrimmar
+						},
 					},
 					{	-- Unbidden Visitors
 						["questID"] = 25194,
@@ -493,15 +526,10 @@ _.Zones =
 					qg(100873, qh(40983, {	-- Demons Among Them
 						["classes"]= {12},
 					})),
-					qg(100873, qh(40607)),	-- Demons Among Us
-					qg(100866, qh(40760)),	-- Emissary
-					qg(100453, qh(40522)),	-- Fate of the Horde
-					qg(96686, qh(39698)),	-- Making the Rounds
 --					qh(44543),	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
 					qh(47835, {	-- The Hand of Fate (QG in Broken Isles Dalaran)
 						["description"] = "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar.",
 					}),
-					qg(96683, qh(38307)),	-- The Warchief Beckons (QG also in Dalaran)
 					qg(122065, qh(47867)),	-- Two If By Sea
 --]]
 				}),

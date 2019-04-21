@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms		
 		m(42, { 	-- Deadwind Pass
-			["groups"] = {
+			["g"] = {
 				n(-25, { 	-- Pet Battle
 					p(1160), 	-- Arcane Eye
 					p(439), 	-- Restless Shadeling
@@ -14,7 +14,7 @@ _.Zones =
 					})),
 					qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
 						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
 					})),
@@ -40,7 +40,7 @@ _.Zones =
 						["questID"] = 44865,	-- Butler to the Great
 						["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
 						["qg"] = 115551,	-- Phantom Valet
-						["groups"] = {
+						["g"] = {
 							follower(733),	-- Moroes
 						},
 					},
@@ -80,7 +80,7 @@ _.Zones =
 						["sourceQuest"] = 44733,	-- The Power of Corruption
 						["qg"] = 114310,	-- Archmage Khadgar
 						["lvl"] = 110,
-						["groups"] = {
+						["g"] = {
 							i(142460),	-- Violet Seal of the Archmage
 						},
 					},
@@ -118,7 +118,7 @@ _.Zones =
 						["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
 						["qg"] = 18255,	-- Mage Darius
 						["lvl"] = 110,
-						["groups"] = {
+						["g"] = {
 							i(142468),	-- Violet Seal of the Archmage
 						},
 					},
@@ -133,7 +133,7 @@ _.Zones =
 						["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
 						["qg"] = 18255,	-- Mage Darius
 						["lvl"] = 110,
-						["groups"] = {
+						["g"] = {
 							i(142461),	-- Violet Seal of the Archmage
 						},
 					},
@@ -195,7 +195,7 @@ _.Zones =
 						["questID"] = 9860,	-- The New Directive
 						["u"] = 40,
 						["qg"] = 17613,	-- Archmage Alturus
-						["groups"] = {
+						["g"] = {
 							{	-- Violet Badge
 								["itemID"] = 31113,	-- Violet Badge
 								["u"] = 2,
@@ -227,7 +227,7 @@ _.Zones =
 						},
 					}),
 					ql(q(30113, {	-- Victory in the Depths
-						["groups"] = {
+						["g"] = {
 							i(77947),	-- The Sleeper
 							i(77948),	-- The Dreamer
 						},
@@ -239,7 +239,7 @@ _.Zones =
 						["objectID"] = 258978,	-- Waterlogged Tome
 						["questID"] = 44487,	-- Waterlogged Tome
 						["lvl"] = 110,
-						["groups"] = {
+						["g"] = {
 							{
 								["achievementID"] = 11240,	-- Harbinger
 								["criteriaID"] = 1,	-- Waterlogged Tome
@@ -249,7 +249,7 @@ _.Zones =
 				}),
 				n(-77, { 	-- Special
 					n(-79, { 	-- Puzzler's Desire
-						["groups"] = {
+						["g"] = {
 							i(151623),	-- Lucid Nightmare Mount
 						},
 						["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
@@ -275,7 +275,10 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 40,	
+			["lvl"] = 40,
+			["maps"] = {
+				41,	-- Dalaran (Deadwind Pass, prior to move to Broken Isles)
+			},
 			["achievementID"] = 777,
 			["description"] = "|cff66ccffDeadwind Pass is a haunted forest and canyon on the edges of the Kingdom of Stormwind in the southern Eastern Kingdoms. Medivh made his foreboding home in Karazhan at the center of the Pass, which is now a 10-player dungeon.|r",			
 		}),	

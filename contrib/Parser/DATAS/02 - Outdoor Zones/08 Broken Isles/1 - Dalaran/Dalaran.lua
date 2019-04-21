@@ -16,7 +16,7 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
 			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",
 			["groups"] = {
-				n(-169, { 	-- Emissary Quests
+				n(-169, {	-- Emissary Quests
 					q(43179, {	-- The Kirin Tor of Dalaran
 						["groups"]  = {
 							i(157828, {	-- Kirin Tor Chest
@@ -80,7 +80,7 @@ _.Zones =
 					}),
 ]]--					
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,  {	-- Pet Battle
 					["groups"] = {
 						p(1778),	-- Dust Bunny
 						qg(98725, qa(   45540)),	-- A Call from the Caverns
@@ -91,7 +91,7 @@ _.Zones =
 					},
 					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
 				}),
-				n(-38, { 	-- Profession
+				n(-38,  {	-- Profession
 					{	-- Felslate
 						["itemID"] = 123919,	-- Felslate
 						["requireSkill"] = 755,	-- Jewelcrafting
@@ -344,7 +344,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17,  {	-- Quests
 					i(122293, {	-- Trans-Dimensional Bird Whistle
 						["groups"] = {
 							{
@@ -422,7 +422,7 @@ _.Zones =
 							]]--
 						},
 					}),
-					n(-34, {	-- World Quests
+					n(-34,  {	-- World Quests
 --[[					
 						q(42442),	-- Fight Night: Amalia
 						q(40299),	-- Fight Night: Bodhi Sunwayver
@@ -828,6 +828,7 @@ _.Zones =
 							}),
 							q(40854, {	-- Endless Possibilities -- underbelly
 								["qg"] = 102193,	-- Filgo Scrapbottom
+								["coord"] = { 66.4, 53.4, 628 },	-- Dalaran Underbelly
 								["sourceQuests"] = { 40545 },	-- Aww Scrap!
 							}),
 							q(48065, {	-- Extraterrestrial Exploration
@@ -874,6 +875,8 @@ _.Zones =
 							}),
 							q(40855, {	-- Our Man in Azsuna
 								["qg"] = 93520,	-- Didi the Wrench
+								["coord"] = { 38.6, 25.0, 627 },
+								["sourceQuests"] = { 40854 },	-- Endless Possibilities
 							}),
 							q(40860, {	-- Resupplying the Line
 								["qg"] = 93539,	-- Hobart Grapplehammer
@@ -2636,6 +2639,11 @@ _.Zones =
 						["qg"] = 114719,	-- Trader Caelen
 						["repeatable"] = true,
 					}),
+					q(44100, {	-- Proper Introductions
+						["qg"] = 112695,	-- Hooded Priest
+						["lvl"] = 101,
+						["classes"] = { 5 },	-- Priest
+					}),
 					qa(47022, {	-- Protection: Aid of the Illidari
 						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["classes"] = { 2 },
@@ -3005,7 +3013,9 @@ _.Zones =
 					}),
 					q(40938, {	-- The Light and the Void
 						["qg"] = 101313,	-- Prophet Velen
-						["classes"] = { 5 },
+						["coord"] = { 46.6, 20.9, 627 },
+						["classes"] = { 5 },	-- Priest
+						["sourceQuests"] = { 40710 },	-- Blade in Twilight
 					}),
 					q(41625, {	-- The Light's Wrath
 						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
@@ -3114,6 +3124,7 @@ _.Zones =
 					--q(39731),	-- The Tranquil Forest -- granted by scouting map
 					qh(38307, {	-- The Warchief Beckons
 						["qg"] = 96683,	-- Nathanos Blightcaller
+						["coord"] = { 29.4, 47.1, 627 },
 						["sourceQuests"] = {
 							39864,	-- Stormheim
 							44701,	-- Stormheim
@@ -3310,7 +3321,7 @@ _.Zones =
 					q(44115),	-- Welcome to Legion!
 ]]--
 				}),
-				n(-16, { 	-- Rares 
+				n(-16,  {	-- Rares 
 					o(244965, {	-- Sheddle's Chest
 						["groups"] = {
 							i(129055),	-- Shoe Shine Kit Toy
@@ -3336,7 +3347,7 @@ _.Zones =
 						["description"] = "Item is sitting on a table upstairs in The Legerdemain Lounge.",
 					}),
 				}),
-				n(-77, { 	-- Special
+				n(-77,  {	-- Special
 					["groups"] = {
 						n(-78, {	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 							["groups"] = {	
@@ -3476,7 +3487,7 @@ _.Zones =
 					},
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
 				}),					
-				n(-2, { 	-- Vendors
+				n(-2,   {	-- Vendors
 					n(93528, { 	-- Angelique Butler <First Aid Supplies>
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing
@@ -8277,7 +8288,7 @@ _.Zones =
 						}),
 					}),
 				}),	
-				n(-40, {    -- Legacy
+				n(-40,  {	-- Legacy
 					["groups"] = {
 						n(-4, {		-- Achievements
 							un(2, ach(11139, {	-- Field Medic!

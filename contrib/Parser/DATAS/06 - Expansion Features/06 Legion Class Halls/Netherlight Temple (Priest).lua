@@ -19,8 +19,14 @@ _.ExpansionFeatures =
 				]]--
 				n(-17, {	-- Quests
 					n(-10067, {	-- Artifact
-						qh(40705, {	-- Priestly Matters
-							["qg"] = 101344,	-- Hooded Priestess
+						q(40705, {	-- Priestly Matters
+							-- Quest is actually picked up in Dalaran.
+							["qgs"] = {
+								101344,	-- Hooded Priestess (Horde)
+								102333,	-- Hooded Priestess (Alliance)
+							},
+							["classes"] = { 5 },	-- Priest
+							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						}),	
 						qh(40706, {	-- A Legend You Can Hold
 							["qg"] = 101314,	-- Alonsus Faol
@@ -215,12 +221,19 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					qg(110564, q(43390, {	-- Forgotten Shadows
-						["classes"] = {5},	-- Priest
-					})),									
+					q(41019, {	-- Actions on Azeroth
+						["qg"] = 102655,	-- Alonsus Faol
+						["coord"] = { 48.9, 49.1, 702 },
+						["classes"] = { 5 },	-- Priest
+						["sourceQuests"] = { 40938 },	-- The Light and the Void
+					}),
+					q(43390, {	-- Forgotten Shadows
+						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+						["classes"] = { 5 },	-- Priest
+					}),
 					q(45789, {	-- The Sunken Vault
 						["lvl"] = 110,
-						["classes"] = {5},
+						["classes"] = { 5 },
 						["groups"] = {
 							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
 						},
@@ -233,6 +246,9 @@ _.ExpansionFeatures =
 					}),
 					q(43381, {	-- Champion: Mariella Ward
 						i(139762),	-- Bracers
+					}),
+					q(39864, {	-- Stormheim
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
 					}),
 					--Followers  Sort later 
 					q(46034, {	-- Champion: Aelthalyste

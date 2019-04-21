@@ -25,7 +25,12 @@ _.Zones =
 			q(34398, {	-- The Dark Portal
 				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
-			q(43926),	-- The Legion Returns
+			qa(40519, {	-- The Legion Returns (Alliance)
+				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
+			}),
+			qh(43926, {	-- The Legion Returns
+				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
+			}),
 			q(29157),	-- The Zandalari Menace
 			q(28493),	-- Warchief's Command: Ashenvale!
 			q(28496),	-- Warchief's Command: Azshara!

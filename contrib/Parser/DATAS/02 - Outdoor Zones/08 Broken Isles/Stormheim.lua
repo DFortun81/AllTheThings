@@ -5,13 +5,13 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(634, {	-- Stormheim
-			["groups"] = {
+			["g"] = {
 				n(-10067, {	-- Artifacts
 					q(43560, {	-- Audience with the Windlord
 						["qg"] = 92218,	-- Thrymjaris <Mother of the Thorignir>
 						["classes"] = { 4 },	-- Rogue Only
 						["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
-						["groups"] = {
+						["g"] = {
 							i(139536, {	-- Emanation of the Winds
 								artifact(881),	-- Outlaw Rogue Hidden Artifact Skin
 							}),
@@ -22,7 +22,7 @@ _.Zones =
 						["qg"] = 92218,	-- Thrymjaris <Mother of the Thorignir>
 						["classes"] = { 4 },	-- Rogue Only
 						["sourceQuests"] = { 39652 },	-- Where Dragons Rule
-						["groups"] = {
+						["g"] = {
 							i(139468),	-- Bindings of the Windlord
 							i(139466),	-- Bindings of the Windlord
 						},
@@ -30,16 +30,16 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					q(42234, {	-- The Valarjar
-						["groups"] = {
+						["g"] = {
 							i(157824, {	-- Valarjar Cache
-								["groups"] = {
+								["g"] = {
 									i(144310),	-- Formula: Enchant Neck - Mark of the Master (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
 									}),
 									n(-3242, {	-- Bonespeaker Set
-										["groups"] = {
+										["g"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
 											i(134219),	-- Bonespeaker Robes
@@ -51,7 +51,7 @@ _.Zones =
 										},
 									}),
 									n(-3266, {	-- Biornskin Set
-										["groups"] = {
+										["g"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
 											i(134197),	-- Biornskin Vest
@@ -63,7 +63,7 @@ _.Zones =
 										},
 									}),
 									n(-3278, {	-- Tideskorn Set
-										["groups"] = {
+										["g"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
 											i(134214),	-- Tideskorn Vest
@@ -75,7 +75,7 @@ _.Zones =
 										},
 									}),
 									n(-3302, {	-- Skoldiir Set
-										["groups"] = {
+										["g"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
 											i(134179),	-- Skoldiir Breastplate
@@ -87,7 +87,7 @@ _.Zones =
 										},
 									}),
 									n(-3309, {	-- Wardbreaker Set
-										["groups"] = {
+										["g"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
 											i(136725),	-- Wardbreaker Chestplate
@@ -101,12 +101,12 @@ _.Zones =
 								},
 							}),
 							un(2, i(154905, {	-- Valarjar Cache
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
 									}),
 									n(-3242, {	-- Bonespeaker Set
-										["groups"] = {
+										["g"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
 											i(134219),	-- Bonespeaker Robes
@@ -118,7 +118,7 @@ _.Zones =
 										},
 									}),
 									n(-3266, {	-- Biornskin Set
-										["groups"] = {
+										["g"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
 											i(134197),	-- Biornskin Vest
@@ -130,7 +130,7 @@ _.Zones =
 										},
 									}),
 									n(-3278, {	-- Tideskorn Set
-										["groups"] = {
+										["g"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
 											i(134214),	-- Tideskorn Vest
@@ -142,7 +142,7 @@ _.Zones =
 										},
 									}),
 									n(-3302, {	-- Skoldiir Set
-										["groups"] = {
+										["g"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
 											i(134179),	-- Skoldiir Breastplate
@@ -154,7 +154,7 @@ _.Zones =
 										},
 									}),
 									n(-3309, {	-- Wardbreaker Set
-										["groups"] = {
+										["g"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
 											i(136725),	-- Wardbreaker Chestplate
@@ -168,12 +168,12 @@ _.Zones =
 								},
 							})),
 							un(2, i(151466, {	-- Valarjar Cache
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
 									}),
 									n(-3242, {	-- Bonespeaker Set
-										["groups"] = {
+										["g"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
 											i(134219),	-- Bonespeaker Robes
@@ -185,7 +185,7 @@ _.Zones =
 										},
 									}),
 									n(-3266, {	-- Biornskin Set
-										["groups"] = {
+										["g"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
 											i(134197),	-- Biornskin Vest
@@ -197,7 +197,7 @@ _.Zones =
 										},
 									}),
 									n(-3278, {	-- Tideskorn Set
-										["groups"] = {
+										["g"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
 											i(134214),	-- Tideskorn Vest
@@ -209,7 +209,7 @@ _.Zones =
 										},
 									}),
 									n(-3302, {	-- Skoldiir Set
-										["groups"] = {
+										["g"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
 											i(134179),	-- Skoldiir Breastplate
@@ -221,7 +221,7 @@ _.Zones =
 										},
 									}),
 									n(-3309, {	-- Wardbreaker Set
-										["groups"] = {
+										["g"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
 											i(136725),	-- Wardbreaker Chestplate
@@ -235,12 +235,12 @@ _.Zones =
 								},
 							})),
 							un(2, i(146749, {	-- Valarjar Cache
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
 									}),
 									n(-3242, {	-- Bonespeaker Set
-										["groups"] = {
+										["g"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
 											i(134219),	-- Bonespeaker Robes
@@ -252,7 +252,7 @@ _.Zones =
 										},
 									}),
 									n(-3266, {	-- Biornskin Set
-										["groups"] = {
+										["g"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
 											i(134197),	-- Biornskin Vest
@@ -264,7 +264,7 @@ _.Zones =
 										},
 									}),
 									n(-3278, {	-- Tideskorn Set
-										["groups"] = {
+										["g"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
 											i(134214),	-- Tideskorn Vest
@@ -276,7 +276,7 @@ _.Zones =
 										},
 									}),
 									n(-3302, {	-- Skoldiir Set
-										["groups"] = {
+										["g"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
 											i(134179),	-- Skoldiir Breastplate
@@ -288,7 +288,7 @@ _.Zones =
 										},
 									}),
 									n(-3309, {	-- Wardbreaker Set
-										["groups"] = {
+										["g"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
 											i(136725),	-- Wardbreaker Chestplate
@@ -302,12 +302,12 @@ _.Zones =
 								},
 							})),
 							un(2, i(137562, {	-- Valarjar Cache
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134202),	-- Stormsky Cloak
 									}),
 									n(-3242, {	-- Bonespeaker Set
-										["groups"] = {
+										["g"] = {
 											i(134216),	-- Bonespeaker Cowl
 											i(134221),	-- Bonespeaker Mantle
 											i(134219),	-- Bonespeaker Robes
@@ -319,7 +319,7 @@ _.Zones =
 										},
 									}),
 									n(-3266, {	-- Biornskin Set
-										["groups"] = {
+										["g"] = {
 											i(134196),	-- Biornskin Hood
 											i(134198),	-- Biornskin Shoulderpads
 											i(134197),	-- Biornskin Vest
@@ -331,7 +331,7 @@ _.Zones =
 										},
 									}),
 									n(-3278, {	-- Tideskorn Set
-										["groups"] = {
+										["g"] = {
 											i(134211),	-- Tideskorn Coif
 											i(134213),	-- Tideskorn Mantle
 											i(134214),	-- Tideskorn Vest
@@ -343,7 +343,7 @@ _.Zones =
 										},
 									}),
 									n(-3302, {	-- Skoldiir Set
-										["groups"] = {
+										["g"] = {
 											i(134182),	-- Skoldiir Helm
 											i(134184),	-- Skoldiir Shoulderguards
 											i(134179),	-- Skoldiir Breastplate
@@ -355,7 +355,7 @@ _.Zones =
 										},
 									}),
 									n(-3309, {	-- Wardbreaker Set
-										["groups"] = {
+										["g"] = {
 											i(136728),	-- Wardbreaker Helm
 											i(136730),	-- Wardbreaker Pauldrons
 											i(136725),	-- Wardbreaker Chestplate
@@ -373,7 +373,7 @@ _.Zones =
 					}),
 					n(-206, {	-- Paragon
 						q(46746, {	-- Supplies from the Valarjar
-							["groups"] = {
+							["g"] = {
 								i(152106, {	-- Valarjar Strongbox
 									i(147805),	-- Valarjar Stormwing
 								}),
@@ -426,7 +426,7 @@ _.Zones =
 					}),
 				}),
 				m(649, { 	-- Helheim
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests
 							qg(97319, q(39837)),					-- An Unworthy Task / Ashildir <Queen of the Valkyra>
 							sq(39837, qg(91531, q(38324, {			-- Accessories of the Cursed / Colborn the Unworthy
@@ -448,7 +448,7 @@ _.Zones =
 								i(129339),	-- Drape of the Undying Raider
 								i(129239),	-- Bloodbeard's Seal
 							}))),
-							sq(39849, qg(97319, q(39849))),			-- Sundered / Ashildir <Queen of the Valkyra>
+							sq(39849, qg(97319, q(39850))),			-- Sundered / Ashildir <Queen of the Valkyra>
 							sq(39849, qg(97319, q(39851))),			-- Allies in Death / Ashildir <Queen of the Valkyra>
 							-- sq(39849, qg(97319, q(39852))),			-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
 							sq({39849,39851,39852}, qg(97319, q(39853, {			-- Victory is Eternal / Ashildir <Queen of the Valkyra>
@@ -473,21 +473,21 @@ _.Zones =
 							n(109163, {	-- Captain Dargun
 								["description"] = "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise.",
 							}),
-							n(92040, {	-- Fenri
-								["groups"] = {
+							n(92040,  {	-- Fenri
+								["g"] = {
 									i(129044),	-- Frothing Helhound's Fury
 								},
 								["questID"] = 38461
 							}), 
-							n(115732, {			-- Jorvild the Trusted
+							n(115732, {	-- Jorvild the Trusted
 								["description"] = "Starting from Helya's Throne, head down the stairs and along the path. When you hit the first bridge, turn right 90 degrees and start swimming lengthwise down the pond. Directly in front of you there's a tiny \"beach\" with a door-sized cave entrance. If you get to the part of the pond where it gets narrow and turns around a corner, you went too far. The cave is just left of the bend between some rocks.",
 								["questID"] = 46949,
-								["groups"] = {
+								["g"] = {
 									i(144437, {	-- Lost Legend of the Valarjar
 										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 										["classes"] = {1},
 										["dr"] = 100,
-										["groups"] = {
+										["g"] = {
 											q(46229, {	-- Valarjar Lore Unlock 1
 												["description"] = "His Name Is Dragonblood",
 											}),
@@ -510,8 +510,8 @@ _.Zones =
 									}),
 								}
 							}),
-							n(97630, {	-- Soulthirster
-								["groups"] = {
+							n(97630,  {	-- Soulthirster
+								["g"] = {
 									i(129188),	-- Pet
 								},
 								["questID"] = 39870,	
@@ -541,7 +541,7 @@ _.Zones =
 					p(1917), 	-- Stormstruck Beaver
 					p(1750), 	-- Tiny Apparition
 					n(115742, {	-- Orphaned Direbeak
-						["groups"] = {
+						["g"] = {
 							p(1975), 	-- Direbeak Hatchling
 							q(44982, {	-- Direbeak Bonding
 								i(142495),	-- Fake Teeth
@@ -595,7 +595,7 @@ _.Zones =
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 133887,	-- Luminous Pearl (Item)
 									["questID"] = 40960,	-- Luminous Pearl (Quest)
@@ -606,7 +606,7 @@ _.Zones =
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
 									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 4,			-- Axefish (Criteria)
@@ -621,19 +621,19 @@ _.Zones =
 								}),
 								i(133724, {		-- Decayed Whale Blubber
 									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
+									["g"] = {
 										i(133795),	-- Ravenous Fly
 									}
 								}),
 								i(133721, {		-- Message in a Bottle
 									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
+									["g"] = {
 										i(133722)		-- Axefish Lure
 									},
 								}),
 								i(133795, {		-- Ravenous Fly
 									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
@@ -648,10 +648,10 @@ _.Zones =
 								}),
 								i(133723, {		-- Stunned, Angry Shark
 									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
+									["g"] = {
 										n(102359, {		-- Landlocked Shark
 											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
+											["g"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
@@ -669,7 +669,7 @@ _.Zones =
 							}),
 							i(133715, {		-- Ancient Vrykul Ring
 								["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
-								["groups"] = {
+								["g"] = {
 									spell(201818, {		-- Ancient Vrykul Ring (Buff)
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -686,13 +686,13 @@ _.Zones =
 							}),
 							i(133713, {		-- Moosehorn Hook
 								["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one! As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
-								["groups"] = {
+								["g"] = {
 									i(133714),		-- Silverscale Minnow
 								},
 							}),
 							i(133714, {		-- Silverscale Minnow
 								["description"] = "This item will allow you to catch the Rare fish Thundering Stormray in Stormheim.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 15,		-- Thundering Stormray (Criteria)
@@ -707,7 +707,7 @@ _.Zones =
 							}),
 							i(133716, {		-- Soggy Drakescale
 								["description"] = "This item will allow you to catch the Rare fish Graybelly Lobster in Stormheim.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 7,			-- Graybelly Lobster (Criteria)
@@ -723,7 +723,7 @@ _.Zones =
 						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2100, {	-- Corbyn
-								["groups"] = {
+								["g"] = {
 									i(146961, {		-- Shiny Bauble
 										i(147307),	-- Carved Wooden Helm
 										i(152574),	-- Corbyn's Beacon
@@ -744,7 +744,7 @@ _.Zones =
 								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
 								["collectible"] = false,
 								["dr"] = 17,
-								["groups"] = {
+								["g"] = {
 									recipe(194171),	-- Unbroken Claw
 								},
 							},
@@ -752,767 +752,927 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[					
-					n(-34, {	-- World Quests					
-						q(43964),	-- A Jarl's Feast
-						q(42067),	-- All Howl, No Bite
-						q(41948),	-- All Pets Go to Heaven
-						q(45439),	-- An Invasion of... Murlocs?
-						q(43951),	-- An Overdue Debt
-						q(41443),	-- Ancient Leystone Deposits
-						q(41451),	-- Assault on Hrydshal
-						q(45839),	-- Assault on Stormheim
-						q(46008),	-- Balnazoth
-						q(45072),	-- Barrels o' Fun
-						q(41935),	-- Beasts of Burden
-						q(46010),	-- Bonecrusher Korgolath
-						q(41534),	-- Brambly Fjarnskaggl
-						q(41490),	-- Brimstone Destroyer
-						q(41489),	-- Brimstone Destroyer
-						q(41488),	-- Brimstone Destroyer
-						q(41938),	-- Brothers of Skovald
-						q(46011),	-- Colossal Infernal
-						q(46216),	-- Congealed Corruption
-						q(46179),	-- Crushing the Legion
-						q(41950),	-- Cry More Thunder!
-						q(43745),	-- Culling the Storm
-						q(42820),	-- DANGER: Aegir Wavecrusher
-						q(42861),	-- DANGER: Boulderfall, the Eroded
-						q(42864),	-- DANGER: Captain Dargun
-						q(42785),	-- DANGER: Den Mother Ylva
-						q(42806),	-- DANGER: Fjorlag, the Grave's Chill
-						q(42798),	-- DANGER: Huntress Estrid
-						q(42964),	-- DANGER: Lagertha
-						q(42963),	-- DANGER: Rulf Bonesnapper
-						q(42991),	-- DANGER: Runeseer Sigvid
-						q(42953),	-- DANGER: Soulbinder Halldora
-						q(41444),	-- Dark Leystone Deposits
-						q(43710),	-- Dark Runes
-						q(41459),	-- Dense Leystone Outcropping
-						q(44893),	-- Direbeak Swarm!
-						q(41794),	-- Drakestalker
-						q(42173),	-- Electrosnack
-						q(43772),	-- Enigmatic
-						q(45786),	-- Feast of the Hounds
-						q(46012),	-- Fel Commander Urgoz
-						q(41570),	-- Felhide
-						q(41569),	-- Felhide
-						q(41568),	-- Felhide
-						q(41521),	-- Felwort
-						q(41520),	-- Felwort					
-						q(41519),	-- Felwort
-						q(46013),	-- Firecaller Rok'duun
-						q(41296),	-- Fjarnskaggl Cluster
-						q(41547),	-- Fjarnskaggl Cluster
-						q(41299),	-- Flourishing Fjarnskaggl
-						q(46014),	-- Gelthrog
-						q(41427),	-- Get Vrekt
-						q(42004),	-- Ghostship
-						q(44923),	-- Helarjar Landing: Vrekt
-						q(41614),	-- Huge Stormrays
-						q(41275),	-- Huge Stormrays
-						q(41615),	-- Huge Stormrays
-						q(46015),	-- Idra'zuul
-						q(41944),	-- Jarrun's Ladder
-						q(43769),	-- Ley Race
-						q(41505),	-- Leystone Basilisks
-						q(41506),	-- Leystone Basilisks
-						q(41507),	-- Leystone Basilisks
-						q(45049),	-- Like the Wind
-						q(41274),	-- Lively Stormrays
-						q(41603),	-- Lively Stormrays
-						q(41602),	-- Lively Stormrays
-						q(46016),	-- Magdrezoth
-						q(40278),	-- My Beasts's Bidding
-						q(44943),	-- Now That's Just Clawful!
-						q(41958),	-- Oh, Ominitron
-						q(43752),	-- Oh, Ship!
-						q(43751),	-- Oh, Ship!
-						q(41340),	-- Perfect Storm Drake Scale
-						q(43786),	-- Pesty Nests
-						q(41535),	-- Prickly Fjarnskaggl
-						q(41460),	-- Primal Leystone Outcropping
-						q(41536),	-- Pungent Fjarnskaggl
-						q(41925),	-- Razing Hel
-						q(42177),	-- Reclaiming Morheim
-						q(41926),	-- Returning Champion
-						q(42176),	-- Rise of Skovald
-						q(41276),	-- Rocket Boot Fishing
-						q(41927),	-- Ruining the Runewood
-						q(43722),	-- Sacred Bones
-						q(42270),	-- Scourge of the Skies
-						q(46017),	-- Shel'drozul
-						q(42178),	-- Shock Absorber
-						q(41300),	-- Singed Fjarnskaggl
-						q(41555),	-- Slab of Bacon
-						q(41556),	-- Slab of Bacon
-						q(41261),	-- Slab of Bacon
-						q(41278),	-- Slippery Stormrays
-						q(41343),	-- Solid Crabshell Fragment
-						q(45390),	-- Souls of the Vrykul
-						q(43827),	-- Stormwing the Portals
-						q(41445),	-- Stormy Leystone Deposits
-						q(41442),	-- Striking Leystone Deposits
-						q(41298),	-- Supplies Needed: Fjarnskaggl
-						q(41317),	-- Supplies Needed: Leystone
-						q(41345),	-- Supplies Needed: Stormscales
-						q(41984),	-- The Creeping Mists
-						q(41949),	-- The Drekirjar Return
-						q(43721),	-- The Helarjar Have Surfaced
-						q(42013),	-- The Helmouth
-						q(43771),	-- The Magic of Flight
-						q(42269),	-- The Soultakers
-						q(46264),	-- Their Eyes Are Upon Us
-						q(46021),	-- Thel'draz
-						q(41342),	-- Thick Bear Hide
-						q(42182),	-- To Battle!
-						q(42183),	-- To Battle!
-						q(41930),	-- Valor Calls
-						q(43963),	-- Vampirates!
-						q(43454),	-- WANTED: Egyl the Enduring
-						q(43620),	-- WANTED: Egyl the Enduring
-						q(43434),	-- WANTED: Fathnyr
-						q(43621),	-- WANTED: Fathnyr
-						q(43436),	-- WANTED: Glimar Ironfist
-						q(43622),	-- WANTED: Glimar Ironfist
-						q(43453),	-- WANTED: Hannval the Butcher
-						q(43623),	-- WANTED: Hannval the Butcher
-						q(43452),	-- WANTED: Isel the Hammer
-						q(43624),	-- WANTED: Isel the Hammer
-						q(43438),	-- WANTED: Nameless King
-						q(43625),	-- WANTED: Nameless King
-						q(43437),	-- WANTED: Thane Irglov
-						q(43626),	-- WANTED: Thane Irglov
-						q(43450),	-- WANTED: Tiptog the Lost
-						q(43627),	-- WANTED: Tiptog the Lost
-						q(43451),	-- WANTED: Urgev the Flayer
-						q(43628),	-- WANTED: Urgev the Flayer
-						q(43599),	-- Warden Tower Assault: Blackhawk's Bulwark
-						q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
-						q(43601),	-- Warden Tower Assault: Whisperwind's Citadel
-						q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
-						q(41497),	-- Wild Leystone Seams
-						q(41297),	-- Work Order: Fjarnskaggl
-						q(41313),	-- Work Order: Leystone
-						q(41654),	-- Work Order: Queen's Opal Loop
-						q(41648),	-- Work Order: Silkweave Bracers
-						q(41660),	-- Work Order: Skaggldrynk
-						q(41277),	-- Work Order: Stormrays
-						q(41344),	-- Work Order: Stormscales
-						q(41672),	-- Work Order: Word of Haste
-						q(41936),	-- You Have Been Challenged					
-					}),
+--[[				n(-34, {	-- World Quests					
+							q(43964),	-- A Jarl's Feast
+							q(42067),	-- All Howl, No Bite
+							q(41948),	-- All Pets Go to Heaven
+							q(45439),	-- An Invasion of... Murlocs?
+							q(43951),	-- An Overdue Debt
+							q(41443),	-- Ancient Leystone Deposits
+							q(41451),	-- Assault on Hrydshal
+							q(45839),	-- Assault on Stormheim
+							q(46008),	-- Balnazoth
+							q(45072),	-- Barrels o' Fun
+							q(41935),	-- Beasts of Burden
+							q(46010),	-- Bonecrusher Korgolath
+							q(41534),	-- Brambly Fjarnskaggl
+							q(41490),	-- Brimstone Destroyer
+							q(41489),	-- Brimstone Destroyer
+							q(41488),	-- Brimstone Destroyer
+							q(41938),	-- Brothers of Skovald
+							q(46011),	-- Colossal Infernal
+							q(46216),	-- Congealed Corruption
+							q(46179),	-- Crushing the Legion
+							q(41950),	-- Cry More Thunder!
+							q(43745),	-- Culling the Storm
+							q(42820),	-- DANGER: Aegir Wavecrusher
+							q(42861),	-- DANGER: Boulderfall, the Eroded
+							q(42864),	-- DANGER: Captain Dargun
+							q(42785),	-- DANGER: Den Mother Ylva
+							q(42806),	-- DANGER: Fjorlag, the Grave's Chill
+							q(42798),	-- DANGER: Huntress Estrid
+							q(42964),	-- DANGER: Lagertha
+							q(42963),	-- DANGER: Rulf Bonesnapper
+							q(42991),	-- DANGER: Runeseer Sigvid
+							q(42953),	-- DANGER: Soulbinder Halldora
+							q(41444),	-- Dark Leystone Deposits
+							q(43710),	-- Dark Runes
+							q(41459),	-- Dense Leystone Outcropping
+							q(44893),	-- Direbeak Swarm!
+							q(41794),	-- Drakestalker
+							q(42173),	-- Electrosnack
+							q(43772),	-- Enigmatic
+							q(45786),	-- Feast of the Hounds
+							q(46012),	-- Fel Commander Urgoz
+							q(41570),	-- Felhide
+							q(41569),	-- Felhide
+							q(41568),	-- Felhide
+							q(41521),	-- Felwort
+							q(41520),	-- Felwort					
+							q(41519),	-- Felwort
+							q(46013),	-- Firecaller Rok'duun
+							q(41296),	-- Fjarnskaggl Cluster
+							q(41547),	-- Fjarnskaggl Cluster
+							q(41299),	-- Flourishing Fjarnskaggl
+							q(46014),	-- Gelthrog
+							q(41427),	-- Get Vrekt
+							q(42004),	-- Ghostship
+							q(44923),	-- Helarjar Landing: Vrekt
+							q(41614),	-- Huge Stormrays
+							q(41275),	-- Huge Stormrays
+							q(41615),	-- Huge Stormrays
+							q(46015),	-- Idra'zuul
+							q(41944),	-- Jarrun's Ladder
+							q(43769),	-- Ley Race
+							q(41505),	-- Leystone Basilisks
+							q(41506),	-- Leystone Basilisks
+							q(41507),	-- Leystone Basilisks
+							q(45049),	-- Like the Wind
+							q(41274),	-- Lively Stormrays
+							q(41603),	-- Lively Stormrays
+							q(41602),	-- Lively Stormrays
+							q(46016),	-- Magdrezoth
+							q(40278),	-- My Beasts's Bidding
+							q(44943),	-- Now That's Just Clawful!
+							q(41958),	-- Oh, Ominitron
+							q(43752),	-- Oh, Ship!
+							q(43751),	-- Oh, Ship!
+							q(41340),	-- Perfect Storm Drake Scale
+							q(43786),	-- Pesty Nests
+							q(41535),	-- Prickly Fjarnskaggl
+							q(41460),	-- Primal Leystone Outcropping
+							q(41536),	-- Pungent Fjarnskaggl
+							q(41925),	-- Razing Hel
+							q(42177),	-- Reclaiming Morheim
+							q(41926),	-- Returning Champion
+							q(42176),	-- Rise of Skovald
+							q(41276),	-- Rocket Boot Fishing
+							q(41927),	-- Ruining the Runewood
+							q(43722),	-- Sacred Bones
+							q(42270),	-- Scourge of the Skies
+							q(46017),	-- Shel'drozul
+							q(42178),	-- Shock Absorber
+							q(41300),	-- Singed Fjarnskaggl
+							q(41555),	-- Slab of Bacon
+							q(41556),	-- Slab of Bacon
+							q(41261),	-- Slab of Bacon
+							q(41278),	-- Slippery Stormrays
+							q(41343),	-- Solid Crabshell Fragment
+							q(45390),	-- Souls of the Vrykul
+							q(43827),	-- Stormwing the Portals
+							q(41445),	-- Stormy Leystone Deposits
+							q(41442),	-- Striking Leystone Deposits
+							q(41298),	-- Supplies Needed: Fjarnskaggl
+							q(41317),	-- Supplies Needed: Leystone
+							q(41345),	-- Supplies Needed: Stormscales
+							q(41984),	-- The Creeping Mists
+							q(41949),	-- The Drekirjar Return
+							q(43721),	-- The Helarjar Have Surfaced
+							q(42013),	-- The Helmouth
+							q(43771),	-- The Magic of Flight
+							q(42269),	-- The Soultakers
+							q(46264),	-- Their Eyes Are Upon Us
+							q(46021),	-- Thel'draz
+							q(41342),	-- Thick Bear Hide
+							q(42182),	-- To Battle!
+							q(42183),	-- To Battle!
+							q(41930),	-- Valor Calls
+							q(43963),	-- Vampirates!
+							q(43454),	-- WANTED: Egyl the Enduring
+							q(43620),	-- WANTED: Egyl the Enduring
+							q(43434),	-- WANTED: Fathnyr
+							q(43621),	-- WANTED: Fathnyr
+							q(43436),	-- WANTED: Glimar Ironfist
+							q(43622),	-- WANTED: Glimar Ironfist
+							q(43453),	-- WANTED: Hannval the Butcher
+							q(43623),	-- WANTED: Hannval the Butcher
+							q(43452),	-- WANTED: Isel the Hammer
+							q(43624),	-- WANTED: Isel the Hammer
+							q(43438),	-- WANTED: Nameless King
+							q(43625),	-- WANTED: Nameless King
+							q(43437),	-- WANTED: Thane Irglov
+							q(43626),	-- WANTED: Thane Irglov
+							q(43450),	-- WANTED: Tiptog the Lost
+							q(43627),	-- WANTED: Tiptog the Lost
+							q(43451),	-- WANTED: Urgev the Flayer
+							q(43628),	-- WANTED: Urgev the Flayer
+							q(43599),	-- Warden Tower Assault: Blackhawk's Bulwark
+							q(43598),	-- Warden Tower Assault: Blackhawk's Bulwark
+							q(43601),	-- Warden Tower Assault: Whisperwind's Citadel
+							q(43600),	-- Warden Tower Assault: Whisperwind's Citadel
+							q(41497),	-- Wild Leystone Seams
+							q(41297),	-- Work Order: Fjarnskaggl
+							q(41313),	-- Work Order: Leystone
+							q(41654),	-- Work Order: Queen's Opal Loop
+							q(41648),	-- Work Order: Silkweave Bracers
+							q(41660),	-- Work Order: Skaggldrynk
+							q(41277),	-- Work Order: Stormrays
+							q(41344),	-- Work Order: Stormscales
+							q(41672),	-- Work Order: Word of Haste
+							q(41936),	-- You Have Been Challenged					
+						}),
 --]]
 					ach(10790, {	-- Vrykul Story, Bro
-						crit(1, {	-- Greymane's Gambit
-							qa( 44700),	-- Stormheim
-							qa( 39735),	-- Stormheim
-							qa( 38035),	-- A Royal Summons
-							qa( 38206),	-- Making the Rounds
-							qa(39800,  { 	-- Greymane's Gambit
-								i(139914),
-								i(121760),
-								i(139950),
-								i(139955),
-								i(139976),
-								i(121762),
-								i(121753),
-								i(121761),
-							}),
-							qh( 44701),	-- Stormheim
-							qh( 39864),	-- Stormheim
-							qh( 38307),	-- The Warchief Beckons
-							qh( 39698),	-- Making the Rounds
-							h({
-								["questID"] = 39801,	-- The Splintered Fleet
-								["maps"] = {671,1},	-- Map: The Cove of Nashal / Durotar
-								["lvl"] = 98,			-- Requires Level 98
-								["qg"] = 96686,			-- Quest Giver: Lady Sylvanas Windrunner <Banshee Queen>
-								["sourceQuest"] = 38307,	-- Source Quest: The Warchief Beckons
-								["groups"] = {
-									i(139916),	-- Black Rose Amice
-									i(139925),	-- Black Rose Wristwraps
-									i(139974),	-- Dark Ranger Shoulderguards
-									i(139987),	-- Dark Ranger Wristguards
-									i(140012),	-- Deathstalker Shoulderplates
-									i(140018),	-- Deathstalker Vambraces
-									i(139948),	-- Dread-Rider Shoulders
-									i(139956),	-- Dread-Rider Cuffs
-								},
-							}),
-						}),
-						crit(2, {	-- The Aftermath
-							qa(38053,  { 	-- Assault and Battery
-								i(134554),
-								i(134555),
-								i(134556),
-								i(134557),
-								i(134558),
-								i(134559),
-								i(134560),
-								i(134561),
-							}),
-							qa( 38052),	-- Boarded!
-							qa( 38057),	-- The Lost Legion
-							qa( 38558),	-- See Ya Later, Oscillator
-							qa( 38058),	-- Lightning Rod
-							qa( 38059),	-- Pins and Needles
-							qa(38060,  { 	-- Signal Boost
-								i(129233),
-								i(129234),
-								i(129235),
-								i(129236),
-								i(129310),
-								i(129311),
-								i(129312),
-								i(129313),
-							}),
-							qh( 38332),	-- The Ranger Lord
-							qh( 38360),	-- The Windrunner's Fate
-							qh(38362,  { 	-- A Grim Trophy
-								i(121499),
-								i(121501),
-								i(121500),
-								i(121498),
-								i(129302),
-								i(129303),
-								i(129304),
-								i(129305),
-							}),
-						}),
-						{
-							["questID"] = 39775,	-- Stormforged Grapple Launcher
-							["itemID"] = 138111,	-- Stormforged Grapple Launcher
-							["creatureID"] = 107840,-- Stormforged Grapple Launcher
-							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+						{	-- Criteria 1 — Greymane's Gambit
+							["criteriaID"] = 1,	-- Greymane's Gambit
+							["sourceQuests"] = { 39801 },	-- The Splintered Fleet
 						},
-						crit(3, {	-- The Trial of Might
-							a({
-								["questID"] = 38210,	-- The Ancient Trials
-								["qg"] = 97306,	-- Muninn
-							}),
-							h({
-								["questID"] = 38459,	-- The Ancient Trials
-								["qg"] = 97305,	-- Huginn
-							}),
-							{
-								["questID"] = 38331,	-- Havi's Test
-								["sourceQuests"] = {
-									38210,	-- The Ancient Trials
-									38459,	-- The Ancient Trials
-								},
-								["qg"] = 96254,	-- Havi
-							},
-							{
-								["questID"] = 39590,	-- Ahead of the Game
-								["sourceQuest"] = 38331,	-- Havi's Test
-								["qg"] = 96254,	-- Havi
-							},
-							{
-								["questID"] = 39595,	-- Blood and Gold
-								["sourceQuest"] = 38331,	-- Havi's Test
-								["qg"] = 96254,	-- Havi
-							},
-							{
-								["questID"] = 39591,	-- A Trial of Valor
-								["sourceQuests"] = {
-									39590,	-- Ahead of the Game
-									9595,	-- Blood and Gold
-								},
-								-- ["qg"] = ,	-- Yotnar's Head
-							},
-							{
-								["questID"] = 39592,	-- A Trial of Will
-								["sourceQuests"] = {
-									39590,	-- Ahead of the Game
-									9595,	-- Blood and Gold
-								},
-								-- ["qg"] = ,	-- Yotnar's Head
-							},
-							{
-								["questID"] = 39593,	-- The Shattered Watcher
-								["sourceQuests"] = {
-									39590,	-- Ahead of the Game
-									9595,	-- Blood and Gold
-								},
-								-- ["qg"] = ,	-- Yotnar's Head
-								["groups"] = {
-									i(129316),	-- Watcher's Pendant of Courage
-									i(121560),	-- Signet of the Watcher's Guile
-								},
-							},
-							{
-								["questID"] = 39594,	-- A Trial of Might
-								["sourceQuests"] = {
-									39593,	-- The Shattered Watcher
-									39592,	-- A Trial of Will
-								},
-								["qg"] = 96257,	-- Yotnar
-							},
-							{
-								["questID"] = 39597,	-- The Blessing of the Watchers
-								["sourceQuest"] = 39594,	-- A Trial of Might
-								["qg"] = 96258,	-- Yotnar
-								["groups"] = {
-									i(132781),	-- Archived Record of Might
-									i(132786),	-- Archived Record of Valor
-									i(132791),	-- Archived Record of Will
-									i(132775),	-- Blessing of the Watchers
-									i(132796),	-- Breath of the Vault
-									i(132783),	-- Echo of Aggramar
-									i(132780),	-- Grasp of the God-King
-									i(132777),	-- Offering of Spilled Blood
-									i(132779),	-- Pillaged Honor
-									i(132790),	-- Rumblehoof's Flameheart
-									i(132794),	-- Runetwister Talisman
-									i(132778),	-- Skovald's Betrayal
-									i(132793),	-- Spark of Will
-									i(132792),	-- Tideskorn War Brand
-									i(132789),	-- Twisted Tideskorn Rune
-									i(132787),	-- Vault Guardian Core
-									i(132785),	-- Whispers of the Thorignir
-									i(132782),	-- Yotnar's Gratitude
-									i(132776),	-- Yotnar's Pride
-									i(132788),	-- Yotnar's Turmoil
-								},
-							},
-						}),
-						crit(4, {	-- The Trial of Will
-							a({
-								["questID"] = 38473,	-- Will of the Thorignir
-								["sourceQuest"] = 39597,	-- The Blessing of the Watchers
-								["qg"] = 96254,	-- Havi
-							}),
-							h({
-								["questID"] = 38611,	-- Will of the Thorignir
-								["sourceQuest"] = 39597,	-- The Blessing of the Watchers
-								["qg"] = 96254,	-- Havi
-							}),
-							a({
-								["questID"] = 38312,	-- A Grapple a Day
-								["sourceQuest"] = 38473,	-- Will of the Thorignir
-								["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
-							}),
-							h({
-								["questID"] = 38612,	-- A Grapple a Day
-								["sourceQuest"] = 38611,	-- Will of the Thorignir
-								["qg"] = 92561,	-- Dread-Rider Cullen
-							}),
-							a({
-								["itemID"] = 122610,	-- Storm Drake Scale
-								["questID"] = 38337,	-- Built to Scale
-								["groups"] = {
-									i(129320),	-- Charged Stormwing Robes
-									i(129321),	-- Electrified Stormwing Vest
-									i(129322),	-- Humming Stormwing Chest
-									i(129323),	-- Stormwing Plate Chestguard
-									i(121521),	-- Charged Stormwing Belt
-									i(121520),	-- Electrified Stormwing Cord
-									i(121522),	-- Humming Stormwing Wrap
-									i(121519),	-- Reinforced Stormwing Waistguard
-								},
-							}),
-							h({
-								["itemID"] = 124037,	-- Storm Drake Scale
-								["questID"] = 38616,	-- Built to Scale
-								["groups"] = {
-									i(129320),	-- Charged Stormwing Robes
-									i(129321),	-- Electrified Stormwing Vest
-									i(129322),	-- Humming Stormwing Chest
-									i(129323),	-- Stormwing Plate Chestguard
-									i(121521),	-- Charged Stormwing Belt
-									i(121520),	-- Electrified Stormwing Cord
-									i(121522),	-- Humming Stormwing Wrap
-									i(121519),	-- Reinforced Stormwing Waistguard
-								},
-							}),
-							a({
-								["questID"] = 38318,	-- No Wings Required
-								["sourceQuest"] = 38312,	-- A Grapple a Day
-								["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
-							}),
-							h({
-								["questID"] = 38613,	-- No Wings Required
-								["sourceQuest"] = 38612,	-- A Grapple a Day
-								["qg"] = 92566,	-- Dread-Rider Cullen
-							}),
-							a({
-								["questID"] = 38405,	-- To Weather the Storm
-								["sourceQuest"] = 38312,	-- A Grapple a Day
-								["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
-								["groups"] = {
-									i(121567),	-- Galeborn's Oiled Cloak
-									i(129318),	-- Lodestone of the Galeborn
-									i(129317),	-- Lodestone of the Mystic
-									i(129319),	-- Lodestone of the Stormbreaker
-								},
-							}),
-							h({
-								["questID"] = 38614,	-- To Weather the Storm
-								["sourceQuest"] = 38612,	-- A Grapple a Day
-								["qg"] = 92566,	-- Dread-Rider Cullen
-								["groups"] = {
-									i(121567),	-- Galeborn's Oiled Cloak
-									i(129318),	-- Lodestone of the Galeborn
-									i(129317),	-- Lodestone of the Mystic
-									i(129319),	-- Lodestone of the Stormbreaker
-								},
-							}),
-							a({
-								["questID"] = 38410,	-- Impalement Insurance
-								["sourceQuests"] = {
-									38318,	-- No Wings Required
-									38405,	-- To Weather the Storm
-								},
-								["qg"] = 91519,	-- Commander Lorna Crowley <Gilneas Brigade>
-							}),
-							h({
-								["questID"] = 38615,	-- Impalement Insurance
-								["sourceQuests"] = {
-									38613,	-- No Wings Required
-									38614,	-- To Weather the Storm
-								},
-								["qg"] = 92567,	-- Dread-Rider Cullen
-							}),
-							a({
-								["questID"] = 38342,	-- Another Way
-								["sourceQuest"] = 38410,	-- Impalement Insurance
-								["qg"] = 91553,	-- Commander Lorna Crowley <Gilneas Brigade>
-							}),
-							h({
-								["questID"] = 38617,	-- Another Way
-								["sourceQuest"] = 38410,	-- Impalement Insurance
-								["qg"] = 92573,	-- Dread-Rider Cullen
-							}),
-							a({
-								["questID"] = 38412,	-- Above the Winter Moonlight
-								["sourceQuest"] = 38342,	-- Another Way
-								["qg"] = 91558,	-- Commander Lorna Crowley <Gilneas Brigade>
-							}),
-							h({
-								["questID"] = 38618,	-- Above the Winter Moonlight
-								["sourceQuest"] = 38617,	-- Another Way
-								["qg"] = 92569,	-- Dread-Rider Cullen
-							}),
-							{
-								["questID"] = 38413,	-- Wings of Liberty
-								["sourceQuests"] = {
-									38412,	-- Above the Winter Moonlight
-									38618,	-- Above the Winter Moonlight
-								},
-								["qgs"] = {
-									91249,	-- Vethir
-									96465,	-- Vethir
-								},
-								["groups"] = {
-									i(121517),	-- 
-									i(121515),	-- 
-									i(121518),	-- 
-									i(121516),	-- 
-									i(129324),	-- 
-									i(129325),	-- 
-									i(129326),	-- 
-									i(129327),	-- 
-								},
-							},
-							{
-								["questID"] = 38414,	-- Heart of a Dragon
-								["sourceQuests"] = {
-									38412,	-- Above the Winter Moonlight
-									38618,	-- Above the Winter Moonlight
-								},
-								["qgs"] = {
-									91249,	-- Vethir
-									96465,	-- Vethir
-								},
-							},
-							{
-								["questID"] = 40568,	-- Fury of the Storm
-								["sourceQuests"] = {
-									38412,	-- Above the Winter Moonlight
-									38618,	-- Above the Winter Moonlight
-								},
-								["qgs"] = {
-									91249,	-- Vethir
-									96465,	-- Vethir
-								},
-							},
-							{
-								["questID"] = 39652,	-- Where Dragons Rule
-								["sourceQuests"] = {
-									38413,	-- Wings of Liberty
-									38414,	-- Heart of a Dragon
-									40568,	-- Fury of the Storm
-								},
-								["qg"] = 96465,	-- Vethir
-								["groups"] = {
-									i(132806),	-- Azariah's Last Moments
-									i(132808),	-- Breath of Vethir
-									i(132811),	-- Crystallized Tideskorn Cruelty
-									i(132814),	-- Drekirjar Jarl's Disdain
-									i(132800),	-- Drekirjar Lifeblood
-									i(132810),	-- Erratic Stormforce
-									i(132802),	-- Hrydshal Forgeflame
-									i(132816),	-- Hrydshal Weald
-									i(132804),	-- Sigil of Hrydshal
-									i(132817),	-- Shade of Thorim's Peak
-									i(132815),	-- Storm-Charged Lodestone
-									i(132805),	-- Stormborn Courage
-									i(132819),	-- Thorignir Slipstream
-									i(132803),	-- Thorim's Peak Snowcap
-									i(132813),	-- Thrymjaris' Fury
-									i(132799),	-- Thrymjaris' Grace
-								},
-							},
-							{
-								["questID"] = 38624,	-- Cry Thunder!
-								["sourceQuest"] = 39652,	-- Where Dragons Rule
-								["qg"] = 92218,	-- Thymjaris
-							},
-						}),
-						crit(5, {	-- The Trial of Valor
-							{
-								["questID"] = 39803,	-- The Trials Continue
-								["sourceQuest"] = 38624,	-- Cry Thunder!
-								["qg"] = 97074,	-- Huginn
-							},
-							q(39804),	-- Speaking of Bones
-							q(39796),	-- To Haustvald
-							q(38778),	-- Turn the Keys
-							q(39788),	-- The Runewood's Revenge
-							q(38808,  { 	-- Bjornharta
-								i(129335),
-								i(129336),
-								i(129337),
-								i(129338),
-							}),
-							q(38810),	-- The Dreaming Fungus
-							q(38811),	-- Judgment Day
-							q(39791),	-- Lay Them to Rest
-							q(38816),	-- Breaking the Bonespeakers
-							q(38817,  { 	-- Regal Remains
-								i(129229),
-								i(129231),
-								i(129230),
-								i(129232),
-								i(132757),
-								i(132759),
-								i(132756),
-								i(132758),
-							}),
-							q(38823),	-- The Runes that Bind
-							q(38815),	-- Waking the Shieldmaiden
-							q(38818),	-- The Final Judgment
-						}),
-						crit(6, {	-- To Helheim and Back
-							q(39837),	-- An Unworthy Task
-							q(38324),	-- Accessories of the Cursed
-							q(38339),	-- A Little Kelp From My Foes
-							q(38347),	-- Stealth by Seaweed
-							q(39848),	-- A Desperate Bargain
-							q(39857),	-- The Eternal Nemesis
-							q(39849),	-- To Light the Way
-							q(39850),	-- Sundered
-							q(39851),	-- Allies in Death
-							q(39853),	-- Victory is Eternal
-							q(39855),	-- Paid in Lifeblood
-						}),
-						q(40078, {	-- A Heavy Burden
-							i(133813),	-- Recipe: Pickled Stormray [Rank 1]
-						}),
-						crit(7, {	-- Secrets of the Shieldmaidens
-							qa( 39059),	-- To Catch a Banshee
-							qa( 39060),	-- Combustible Contagion
-							qa( 39061),	-- Whispers from the Dark
-							qa(39472,  { 	-- Cut Out the Heart
-								i(129252),
-								i(129255),
-								i(129256),
-								i(129257),
-								i(129250),
-								i(129251),
-								i(129253),
-								i(129254),
-							}),
-							qa( 39062),	-- To Skold-Ashil
-							qa( 39063),	-- Shielded Secrets
-							q(39405),	-- Stories of Battle
-							qa( 39092),	-- Becoming the Ascendant
-							qa(39122,  { 	-- Ending the New Beginning
-								i(129346),
-								i(129347),
-								i(129348),
-								i(129349),
-							}),
-							qh( 39154),	-- To Skold-Ashil
-							qh( 38878),	-- Shielded Secrets
-							qh( 39155),	-- Becoming the Ascendant
-							qh( 38872),	-- The Dark Lady's Bidding
-							qh( 38873),	-- Clear the Deck!
-							qh( 39153),	-- Dreadwake's Dilemma
-							qh( 39385,  {	-- A Gift for Greymane
-								i(129225),
-								i(129226),
-								i(129227),
-								i(129228),
-								i(132765),
-								i(132764),
-								i(132763),
-								i(132762),
-							}),
-							qh( 39154),	-- To Skold-Ashil
-							qh( 38878),	-- Shielded Secrets
-							qh( 39155),	-- Becoming the Ascendant
-							qh(38882,  { 	-- A New Life for Undeath
-								i(129342),
-								i(129343),
-								i(129344),
-								i(129345),
-							}),
-						}),
-						crit(8, {	-- The Champion of Stormheim
-							q(40001),	-- Knocking on Valor's Door
-							q(40002),	-- A Familiar Fate
-							q(40003),	-- Stem the Tide
-							q(40004),	-- Break the Spine
-							q(40005),	-- Stormheim's Salvation
-						}),
+						{	-- Criteria 2 — The Aftermath
+							["criteriaID"] = 2,	-- The Aftermath
+							["sourceQuests"] = { 38362 },	-- A Grim Trophy
+						},
+						{	-- Criteria 3 — The Trial of Might
+							["criteriaID"] = 3,	-- The Trial of Might
+							["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
+						},
+						{	-- Criteria 4 — The Trial of Will
+							["criteriaID"] = 4,	-- The Trial of Will
+							["sourceQuests"] = { 38624 },	-- Cry Thunder!
+						},
+						{	-- Criteria 5 — The Trial of Valor
+							["criteriaID"] = 5,	-- The Trial of Valor
+							["sourceQuests"] = { 38818 },	-- The Final Judgment
+						},
+						{	-- Criteria 6 — To Helheim and Back
+							["criteriaID"] = 6,	-- To Helheim and Back
+							["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
+						},
+						{	-- Criteria 7 — Secrets of the Shieldmaidens
+							["criteriaID"] = 7,	-- Secrets of the Shieldmaidens
+							["sourceQuests"] = { 38882 },	-- A New Life for Undeath
+						},
+						{	-- Criteria 8 — The Champion of Stormheim
+							["criteriaID"] = 8,	-- The Champion of Stormheim
+							["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
+						},
 					}),
 					ach(10877, {	-- Pillars of Creation
-						q(40072),	-- Halls of Valor: Securing the Aegis
-						q(43349, {	-- The Aegis of Aggramar
-							i(130016),	-- Valor-Bound Legplates
-							i(129989),	-- Valor-Bound Trousers
-							i(129997),	-- Valor-Bound Legwraps
-							i(130005),	-- Valor-Bound Greaves
-						}),
-					}),
-					ach(11232, {	-- Lock, Stock and Two Smoking Goblins
-						ach(10793, {	-- What a Ripoff!
-							{
-								["questID"] = 39789,	-- Eating Into Our Business
-								["qg"] = 97258,		-- Quest Giver: Ootasa Galehoof
-							},
-							{
-								["questID"] = 39793,	-- Only the Finest
-								["qg"] = 107675,		-- Quest Giver: Rax Sixtrigger
-								["sourceQuest"] = 39789,	-- Source Quest: Eating Into Our Business
-							},
-							{
-								["questID"] = 39787,	-- Rigging the Wager
-								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
-								["sourceQuest"] = 39793,	-- Source Quest: Only the Finest
-							},
-							{
-								["questID"] = 39786,	-- A Stone Cold Gamble
-								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
-								["sourceQuest"] = 39787,	-- Source Quest: Rigging the Wager
-							},
-							{
-								["questID"] = 39792,	-- A Stack of Racks
-								["qg"] = 107675,		-- Quest Giver: Rax Sixtrigger
-								["sourceQuest"] = 39786,	-- Source Quest: A Stone Cold Gamble
-							},
-							{
-								["questID"] = 42483,	-- Put It All on Red
-								["qg"] = 107674,		-- Quest Giver: Snaggle Sixtrigger
-								["sourceQuest"] = 39792,	-- Source Quest: A Stack of Racks
-								["groups"] = {
-									title(343),		-- TITLE: %s the Gullible
-								},
-							},
-						}),
-						{
-							["questID"] = 43331,	-- Time to Collect
-							["qg"] = 110018,	-- Quest Giver: Gazrix Gearlock <Steamwheedle Cartel>
-							["sourceQuest"] = 42483,	-- Source Quest: Put It All on Red
-							["lvl"] = 110,	-- Requires Level 110
-							["groups"] = {
-								i(140601, {	-- Sixtrigger Resource Crate
-									i(133815),	-- Recipe: Spiced Rib Roast
-									i(140600),	-- Sixtrigger Lucky Ring
-								}),
-								i(140599),	-- Pretty Silk Gloves
-								i(140597),	-- Rax's Piloting Handgrips
-								i(140596),	-- Reinforced Mook Handguards
-								i(140598),	-- Snaggle's Best Gloves
-								i(140592),	-- Mook Battlepants
-								i(140593),	-- Rax's Polished Greaves
-								i(140595),	-- Rax's Silk Pajama Bottoms
-								i(140594),	-- Snaggle's Favorite Pants
-							}
+						["collectible"] = false,
+						["g"] = {
+							crit(1, {	-- Aegis of Aggramar
+								-- 40072,	-- Halls of Valor: Securing the Aegis = SQ?
+								-- 43349,	-- The Aegis of Aggramar = SQ?
+								-- Need to know whether to list one or both to avoid endless SQ loop if they're attached to each other
+							}),
 						},
 					}),
-					n(-168, {	-- Other Quests
-						sz(10668,4,  {	-- Dreygrot
-							q(42635),	-- The Mystery of Dreyrgrot
-							q(42639),	-- A Stone of Blood
-							q(42640),	-- The Value of Knowledge
-							q(42641,  { 	-- What the Bonespeakers Buried
-								i(129360),
-								i(129358),
-								i(129359),
-								i(129357),
-							}),
-							q(42645),	-- Spilling Bad Blood
-						}),
-						sz(10668,16, {	-- Storm's Reach
-							q(42444),	-- Plight of the Blackfeather
-							q(42445),	-- Nithogg's Tribute
-							q(42446),	-- Singed Feathers
-							q(42447,  { 	-- Dances With Ravenbears
-								i(129361),
-								i(129363),
-								i(129364),
-								i(129365),
-								i(129249),
-								i(129248),
-								i(129247),
-								i(129246),
-							}),
-						}),
-						sz(10668,17, {	-- Talonrest
-							q(39789),	-- Eating Into Our Business
-							q(39793),	-- Only the Finest
-							q(39787),	-- Rigging the Wager
-							q(39786),	-- A Stone Cold Gamble
-							q(39792),	-- A Stack of Racks
-							q(42483),	-- Put It All on Red
-						}),
-						sz(10668,18, {	-- Tideskorn Harbor
-							q(39984),	-- Remnants of the Past
-							q(40046),	-- Scavenging the Shallows
-							q(43595),	-- To Honor the Fallen
-							q(40044,  { 	-- Shadows in the Mists
-								i(129350),
-								i(132773),
-								i(132772),
-								i(132771),
-								i(132770),
-							}),
-							q(43596,  { 	-- Piercing the Mists - Dungeon
-								i(140618),
-								i(140619),
-								i(140620),
-								i(140621),
-							}),
-	
-						}),
-						--I don't know where these quests belong. My Horde toons haven't done anything in Legion yet.
-						qh(38317,  { 	-- Masters of Disguise -  listed on Wowhead as neutral, but turns in to a Horde NPC
-							i(129093),	-- Ravenbear Disguise
-						}),
-						qh(38358,  { 	-- Pump it Up
-							i(134554),
-							i(134555),
-							i(134556),
-							i(134557),
-							i(134558),
-							i(134559),
-							i(134560),
-							i(134561),
-						}),
+					ach(10793, {	-- What a Ripoff!
+						["sourceQuests"] = { 42483 },	-- Put it All on Red
 					}),
+					ach(11232, {	-- Lock, Stock and Two Smoking Goblins
+						["sourceQuests"] = { 43331 },	-- Time to Collect
+					}),
+
+				--  QUESTS START HERE
+
+					qa(38412, {	-- Above the Winter Moonlight (Alliance)
+						["sourceQuest"] = 38342,	-- Another Way
+						["qg"] = 91558,	-- Commander Lorna Crowley <Gilneas Brigade>
+					}),
+					qh(38618, {	-- Above the Winter Moonlight (Horde)
+						["qg"] = 92569,	-- Dread-Rider Cullen
+						["coord"] = { 45.7, 72.9, 634 },
+						["sourceQuest"] = 38617,	-- Another Way
+					}),
+					q(38324),	-- Accessories of the Cursed
+					q(39848),	-- A Desperate Bargain
+					q(40002),	-- A Familiar Fate
+					qh(39385, {	-- A Gift for Greymane
+						i(129225),
+						i(129226),
+						i(129227),
+						i(129228),
+						i(132765),
+						i(132764),
+						i(132763),
+						i(132762),
+					}),
+					qa(38312, {	-- A Grapple a Day (Alliance)
+						["sourceQuest"] = 38473,	-- Will of the Thorignir
+						["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
+					}),
+					qh(38612, {	-- A Grapple a Day (Horde)
+						["qg"] = 92561,	-- Dread-Rider Cullen
+						["coord"] = { 44.8, 59.3, 634 },
+						["sourceQuest"] = 38611,	-- Will of the Thorignir
+					}),
+					qh(38362, {	-- A Grim Trophy
+						["sourceQuests"] = {
+							38360,	-- The Windrunner's Fate
+							38361,	-- Wrath of the Blightcaller
+						},
+						["coord"] = { 44.1, 18.1, 634 },
+						["qg"] = 91158,	-- Nathanos Blightcaller
+						["g"] = {
+							i(121499),	-- Footwraps of the Blightcaller
+							i(121501),	-- Duskbat Exterminator's Treads
+							i(121500),	-- Blighthound Master's Greaves
+							i(121498),	-- Sabatons of the Blightcaller
+							i(129302),	-- Black Rose Hood
+							i(129303),	-- Blighthound Master's Hood
+							i(129304),	-- Gryphonstalker's Visage
+							i(129305),	-- Wildsky's Unused Helmet
+						},
+					}),
+					q(39590,  {	-- Ahead of the Game
+						["qg"] = 96254,	-- Havi
+						["coord"] = { 41.8, 42.9, 634 },
+						["sourceQuest"] = 38331,	-- Havi's Test
+					}),
+					q(40078,  {	-- A Heavy Burden
+						i(133813),	-- Recipe: Pickled Stormray [Rank 1]
+					}),
+					q(38339),	-- A Little Kelp From My Foes
+					q(39851),	-- Allies in Death
+					q(40120,  {	-- A Murky Fate
+						["qg"] = 98587,	-- Morheim Ancestor
+						["coord"] = { 78.2, 58.5, 634 },
+					}),
+					qh(38882, {	-- A New Life for Undeath
+						i(129342),
+						i(129343),
+						i(129344),
+						i(129345),
+					}),
+					qa(38342, {	-- Another Way (Alliance)
+						["sourceQuest"] = 38410,	-- Impalement Insurance
+						["qg"] = 91553,	-- Commander Lorna Crowley <Gilneas Brigade>
+					}),
+					qh(38617, {	-- Another Way (Horde)
+						["qg"] = 92573,	-- Dread-Rider Cullen
+						["coord"] = { 47.0, 71.7, 634 },
+						["sourceQuest"] = 38410,	-- Impalement Insurance
+					}),
+					q(39837),	-- An Unworthy Task
+					qa(38035),	-- A Royal Summons
+					qa(38053, {	-- Assault and Battery
+						i(134554),
+						i(134555),
+						i(134556),
+						i(134557),
+						i(134558),
+						i(134559),
+						i(134560),
+						i(134561),
+					}),
+					q(39792,  {	-- A Stack of Racks
+						["qg"] = 107675,		-- Rax Sixtrigger
+						["sourceQuest"] = 39786,	-- A Stone Cold Gamble
+					}),
+					q(39786,  {	-- A Stone Cold Gamble
+						["qg"] = 107674,		-- Snaggle Sixtrigger
+						["sourceQuest"] = 39787,	-- Rigging the Wager
+					}),
+					q(42639,  {	-- A Stone of Blood
+						["qg"] = 108072,	-- Sir Finley Mrrggglton
+						["coord"] = { 74.8, 55.5, 634 },
+					}),
+					q(39594,  {	-- A Trial of Might
+						["qg"] = 96257,	-- Yotnar
+						["coord"] = { 46.6, 44.4, 634 },
+						["sourceQuests"] = {
+							39593,	-- The Shattered Watcher
+							39592,	-- A Trial of Will
+						},
+					}),
+					q(39591,  {	-- A Trial of Valor
+						["coord"] = { 46.6, 44.4, 634 },
+						["sourceQuests"] = { 39590 },	-- Ahead of the Game
+					}),
+					q(39592,  {	-- A Trial of Will
+						["coord"] = { 46.6, 44.4, 634 },
+						["sourceQuests"] = { 39590 },	-- Ahead of the Game
+					}),
+					qa(39092),	-- Becoming the Ascendant (Alliance)
+					qh(39155),	-- Becoming the Ascendant (Horde)
+					q(38808,  {	-- Bjornharta
+						["sourceQuests"] = {
+							39788,	-- The Runewood's Revenge
+							38778,	-- Turn the Keys
+						},
+						["coord"] = { 68.4, 54.2, 634 },
+						["qg"] = 93231,	-- Vydhar
+						["g"] = {
+							i(129335),	-- Runespeaker's Cuffs
+							i(129336),	-- Runesworn Bindings
+							i(129337),	-- Stormborn Bracers
+							i(129338),	-- Dreadsworn Wristguards
+							i(129353),	-- Tender Hjarta Loop
+						},
+					}),
+					q(39595,  {	-- Blood and Gold
+						["itemID"] = 128512,	-- Challenger's Tribute
+						-- Wowhead information on this quest is inaccurate.
+						-- No prereqs required; quest item was looted from the first mob I killed.
+						["qgs"] = {
+							100435,	-- Bloodtotem Flameheart
+							108309,	-- Bloodtotem Flameheart
+							96229,	-- Bloodtotem Skirmisher
+							108289,	-- Bloodtotem Skirmisher
+							96129,	-- Felskorn Raider
+							108309,	-- Felskorn Raider
+							100433,	-- Mightstone Rockcaller
+							96236,	-- Mightstone Savage
+							108283,	-- Mightstone Savage
+						},
+					}),
+					qa(38052),	-- Boarded!
+					q(38816,  {	-- Breaking the Bonespeakers
+						["qg"] = 93446,	-- Shieldmaiden Iounn
+						["coord"] = { 68.0, 48.6, 634 },
+						["sourceQuests"] = {
+							38811,	-- Judgment Day
+							39791,	-- Lay Them to Rest
+						},
+					}),
+					q(40004),	-- Break the Spine
+					{	---------- Built to Scale (Alliance)
+						["races"] = ALLIANCE_ONLY,
+						["itemID"] = 122610,	-- Storm Drake Scale
+						["questID"] = 38337,	-- Built to Scale
+						["g"] = {
+							i(129320),	-- Charged Stormwing Robes
+							i(129321),	-- Electrified Stormwing Vest
+							i(129322),	-- Humming Stormwing Chest
+							i(129323),	-- Stormwing Plate Chestguard
+							i(121521),	-- Charged Stormwing Belt
+							i(121520),	-- Electrified Stormwing Cord
+							i(121522),	-- Humming Stormwing Wrap
+							i(121519),	-- Reinforced Stormwing Waistguard
+						},
+					},
+					{	---------- Built to Scale (Horde)
+						["questID"] = 38616,	-- Built to Scale
+						["itemID"] = 124037,	-- Storm Drake Scale
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							91202,	-- Stormwing Drake
+							91920,	-- Stormwing Drake
+							91486,	-- Stormwing Drake
+						},
+						["g"] = {
+							i(129320),	-- Charged Stormwing Robes
+							i(129321),	-- Electrified Stormwing Vest
+							i(129322),	-- Humming Stormwing Chest
+							i(129323),	-- Stormwing Plate Chestguard
+							i(121521),	-- Charged Stormwing Belt
+							i(121520),	-- Electrified Stormwing Cord
+							i(121522),	-- Humming Stormwing Wrap
+							i(121519),	-- Reinforced Stormwing Waistguard
+						},
+					},
+					qh(38873),	-- Clear the Deck!
+					qa(39060),	-- Combustible Contagion
+					q(38624,  {	-- Cry Thunder!
+						["qg"] = 92218,	-- Thymjaris
+						["coord"] = { 40.8, 80.8, 634 },
+						["sourceQuest"] = 39652,	-- Where Dragons Rule
+					}),
+					qa(39472, {	-- Cut Out the Heart
+						i(129252),
+						i(129255),
+						i(129256),
+						i(129257),
+						i(129250),
+						i(129251),
+						i(129253),
+						i(129254),
+					}),
+					q(42447,  {	-- Dances With Ravenbears
+						i(129361),
+						i(129363),
+						i(129364),
+						i(129365),
+						i(129249),
+						i(129248),
+						i(129247),
+						i(129246),
+					}),
+					q(44177,  {	-- Dark Secrets and Shady Deals
+						["qg"] = 112959,	-- Fleet Admiral Tethys
+						["classes"] = { 4 },
+					}),
+					qh(39153),	-- Dreadwake's Dilemma
+					q(39789,  {	-- Eating Into Our Business
+						["qg"] = 97258,	-- Ootasa Galehoof
+						["coord"] = { 51.4, 56.9, 634 },
+					}),
+					qa(39122, {	-- Ending the New Beginning
+						i(129346),
+						i(129347),
+						i(129348),
+						i(129349),
+					}),
+					qh(38308, {	-- Eyes in the Overlook
+						["coord"] = { 36.7, 31.0, 634 },
+						["sourceQuests"] = { 38362 },	-- A Grim Trophy
+					}),
+					q(40568,  {	-- Fury of the Storm
+						["qgs"] = {
+							91249,	-- Vethir
+							96465,	-- Vethir
+						},
+						["coord"] = { 44.7, 77.4, 634 },
+						["sourceQuests"] = {
+							38412,	-- Above the Winter Moonlight (Alliance)
+							38618,	-- Above the Winter Moonlight (Horde)
+						},
+					}),
+					qa(39800, {	-- Greymane's Gambit
+						i(139914),
+						i(121760),
+						i(139950),
+						i(139955),
+						i(139976),
+						i(121762),
+						i(121753),
+						i(121761),
+					}),
+					q(40072,  {	-- Halls of Valor: Securing the Aegis
+						["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
+					}),
+					q(38331,  {	-- Havi's Test
+						["qg"] = 96254,	-- Havi
+						["coord"] = { 41.8, 42.9, 634 },
+						["sourceQuests"] = {
+							38210,	-- The Ancient Trials (Alliance)
+							38459,	-- The Ancient Trials (Horde)
+						},
+					}),
+					q(38414,  {	-- Heart of a Dragon
+						["qgs"] = {
+							91249,	-- Vethir
+							96465,	-- Vethir
+						},
+						["coord"] = { 44.7, 77.4, 634 },
+						["sourceQuests"] = {
+							38412,	-- Above the Winter Moonlight (Alliance)
+							38618,	-- Above the Winter Moonlight (Horde)
+						},
+					}),
+					qa(38410, {	-- Impalement Insurance (Alliance)
+						["sourceQuests"] = {
+							38318,	-- No Wings Required
+							38405,	-- To Weather the Storm
+						},
+						["qg"] = 91519,	-- Commander Lorna Crowley <Gilneas Brigade>
+					}),
+					qh(38615, {	-- Impalement Insurance (Horde)
+						["qg"] = 92567,	-- Dread-Rider Cullen
+						["coord"] = { 43.7, 67.8, 634 },
+						["sourceQuests"] = {
+							38613,	-- No Wings Required
+							38614,	-- To Weather the Storm
+						},
+					}),
+					q(38811,  {	-- Judgment Day
+						["qg"] = 93231,	-- Vydhar
+						["coord"] = { 68.4, 54.2, 634 },
+						["sourceQuests"] = {
+							38808,	-- Bjornharta
+							38810,	-- The Dreaming Fungus
+						},
+					}),
+					q(40001),	-- Knocking on Valor's Door
+					q(39791,  {	-- Lay Them to Rest
+						["qg"] = 93231,	-- Vydhar
+						["coord"] = { 68.4, 54.2, 634 },
+						["sourceQuests"] = {
+							38808,	-- Bjornharta
+							38810,	-- The Dreaming Fungus
+						},
+					}),
+					qa(38058),	-- Lightning Rod
+					qa(38206),	-- Making the Rounds
+					qh(38317, {	-- Masters of Disguise
+						["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
+						["coord"] = { 33.3, 31.4, 634 },
+						["g"] = {
+							i(129093),	-- Ravenbear Disguise
+						},
+					}),
+					q(42445,  {	-- Nithogg's Tribute
+						["coord"] = { 49.8, 32.5, 634 },
+						["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
+					}),
+					qa(38318, {	-- No Wings Required (Alliance)
+						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+						["sourceQuest"] = 38312,	-- A Grapple a Day
+					}),
+					qh(38613, {	-- No Wings Required (Horde)
+						["sourceQuest"] = 38612,	-- A Grapple a Day
+						["coord"] = { 46.5, 67.7, 634 },
+						["qg"] = 92566,	-- Dread-Rider Cullen
+					}),
+					q(39793,  {	-- Only the Finest
+						["qg"] = 107675,		-- Rax Sixtrigger
+						["sourceQuest"] = 39789,	-- Eating Into Our Business
+					}),
+					q(39855),	-- Paid in Lifeblood
+					q(43596,  {	-- Piercing the Mists - Dungeon
+						i(140618),
+						i(140619),
+						i(140620),
+						i(140621),
+					}),
+					qa(38059),	-- Pins and Needles
+					q(42444,  {	-- Plight of the Blackfeather
+						["qg"] = 107499,	-- Frightened Ravenbear
+						["coord"] = { 50.2, 34.1, 634 }
+					}),
+					qh(38358, {	-- Pump it Up
+						["coord"] = { 36.1, 27.4, 634 },
+						["qg"] = 91590,	-- Apothecary Withers
+						["g"] = {
+							i(134554),	-- Runespeaker's Gloves
+							i(134555),	-- Runesworn Grips
+							i(134556),	-- Stormborn Gloves
+							i(134557),	-- Dreadsworn Gauntlets
+							i(134558),	-- Runespeaker's Robe
+							i(134559),	-- Runesworn Chestguard
+							i(134560),	-- Stormborn Tunic
+							i(134561),	-- Dreadsworn Chestguard
+						},
+					}),
+					q(42483,  {	-- Put It All on Red
+						["sourceQuest"] = 39792,	-- A Stack of Racks
+						["qg"] = 107674,		-- Snaggle Sixtrigger
+						["g"] = {
+							title(343),		-- TITLE: %s the Gullible
+						},
+					}),
+					q(38817,  {	-- Regal Remains
+						["sourceQuests"] = {
+							38811,	-- Judgment Day
+							39791,	-- Lay Them to Rest
+						},
+						["coord"] = { 68.0, 48.6, 634 },
+						["qg"] = 93446,	-- Shieldmaiden Iounn
+						["g"] = {
+							i(129229),	-- Runespeaker's Sandals
+							i(129231),	-- Stormborn Treads
+							i(129230),	-- Runesworn Boots
+							i(129232),	-- Dreadsworn Greaves
+							i(132757),	-- Runespeaker's Trousers
+							i(132759),	-- Runesworn Greaves
+							i(132756),	-- Dreadsworn Legplates
+							i(132758),	-- Stormborn Legguards
+						},
+					}),
+					q(39984,  {	-- Remnants of the Past
+						["coord"] = { 62.9, 48.4, 634 },
+					}),
+					q(39787,  {	-- Rigging the Wager
+						["qg"] = 107674,		-- Snaggle Sixtrigger
+						["sourceQuest"] = 39793,	-- Only the Finest
+					}),
+					q(40046),	-- Scavenging the Shallows
+					qa(38558),	-- See Ya Later, Oscillator
+					q(40044,  {	-- Shadows in the Mists
+						i(129350),
+						i(132773),
+						i(132772),
+						i(132771),
+						i(132770),
+					}),
+					qa(39063),	-- Shielded Secrets (Alliance)
+					qh(38878),	-- Shielded Secrets (Horde)
+					qh(38357, {	-- Side Effects May Include Mild Undeath
+						["qg"] = 91590,	-- Apothecary Withers
+						["coord"] = { 36.1, 27.4, 634 },
+					}),
+					qa(38060, {	-- Signal Boost
+						i(129233),
+						i(129234),
+						i(129235),
+						i(129236),
+						i(129310),
+						i(129311),
+						i(129312),
+						i(129313),
+					}),
+					q(42446,  {	-- Singed Feathers
+						["qg"] = 107498,	-- Cukkaw
+						["coord"] = { 49.8, 32.5, 634 },
+						["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
+					}),
+					q(39804,  {	-- Speaking of Bones
+						["qg"] = 92539,	-- Havi
+						["coord"] = { 60.0, 50.8, 634 },
+						["sourceQuests"] = { 39803 },	-- The Trials Continue
+					}),
+					q(42645),	-- Spilling Bad Blood
+					q(38347),	-- Stealth by Seaweed
+					q(40003),	-- Stem the Tide
+					q(39405),	-- Stories of Battle
+					{			-- Stormforged Grapple Launcher
+						["coord"] = { 36.9, 31.8, 634 },
+						["itemID"] = 138111,	-- Stormforged Grapple Launcher
+						["questID"] = 39775,	-- Stormforged Grapple Launcher
+						["creatureID"] = 107840,	-- Stormforged Grapple Launcher
+						["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+					},
+				--	qa(44700),	-- Stormheim (probably granted by scouting map)
+				--	qa(39735),	-- Stormheim (probably granted by scouting map)
+				--	qh(44701),	-- Stormheim (probably granted by scouting map)
+					q(40005),	-- Stormheim's Salvation
+					q(39850),	-- Sundered
+					q(43349,  {	-- The Aegis of Aggramar
+						i(130016),	-- Valor-Bound Legplates
+						i(129989),	-- Valor-Bound Trousers
+						i(129997),	-- Valor-Bound Legwraps
+						i(130005),	-- Valor-Bound Greaves
+					}),
+					qa(38210, {	-- The Ancient Trials (Alliance)
+						["qg"] = 97306,	-- Muninn (Alliance)
+					}),
+					qh(38459, {	-- The Ancient Trials (Horde)
+						["qg"] = 97305,	-- Huginn
+						["coord"] = { 36.8, 30.9, 634 },
+						["sourceQuests"] = { 38362 },	-- A Grim Trophy
+					}),
+					q(39597,  {	-- The Blessing of the Watchers
+						["sourceQuest"] = 39594,	-- A Trial of Might
+						["qg"] = 96258,	-- Yotnar
+						["g"] = {
+							i(132781),	-- Archived Record of Might
+							i(132786),	-- Archived Record of Valor
+							i(132791),	-- Archived Record of Will
+							i(132775),	-- Blessing of the Watchers
+							i(132796),	-- Breath of the Vault
+							i(132783),	-- Echo of Aggramar
+							i(132780),	-- Grasp of the God-King
+							i(132777),	-- Offering of Spilled Blood
+							i(132779),	-- Pillaged Honor
+							i(132790),	-- Rumblehoof's Flameheart
+							i(132794),	-- Runetwister Talisman
+							i(132778),	-- Skovald's Betrayal
+							i(132793),	-- Spark of Will
+							i(132792),	-- Tideskorn War Brand
+							i(132789),	-- Twisted Tideskorn Rune
+							i(132787),	-- Vault Guardian Core
+							i(132785),	-- Whispers of the Thorignir
+							i(132782),	-- Yotnar's Gratitude
+							i(132776),	-- Yotnar's Pride
+							i(132788),	-- Yotnar's Turmoil
+						},
+					}),
+					qh(38872),	-- The Dark Lady's Bidding
+					q(38810,  {	-- The Dreaming Fungus
+						["qg"] = 93231,	-- Vydhar
+						["coord"] = { 68.4, 54.2, 634 },
+						["sourceQuests"] = {
+							39788,	-- The Runewood's Revenge
+							38778,	-- Turn the Keys
+						},
+					}),
+					q(39857),	-- The Eternal Nemesis
+					q(38818,  {	-- The Final Judgment
+						["qg"] = 93234,	-- Ashildir
+						["coord"] = { 71.4, 42.5, 634 },
+						["sourceQuests"] = { 38815 },	-- Waking the Shieldmaiden
+					}),
+					q(46340,  {	-- The Gates Are Closed
+						["qg"] = 93628,	-- Eyir
+					}),
+					qa(38057),	-- The Lost Legion
+					q(42635,  {	-- The Mystery of Dreyrgrot
+						["qg"] = 108072,	-- Sir Finley Mrrggglton
+						["coord"] = { 74.8, 55.5, 634 },
+					}),
+					qh(38332, {	-- The Ranger Lord
+						["qg"] = 91473,	-- Dread-Rider Cullen
+						["coord"] = { 36.1, 27.5, 634 },
+					}),
+					q(38823,  {	-- The Runes that Bind
+						["coord"] = { 69.8, 45.6, 634 },
+						["sourceQuests"] = {
+							38811,	-- Judgment Day
+							39791,	-- Lay Them to Rest
+						},
+					}),
+					q(39788,  {	-- The Runewood's Revenge
+						["qg"] = 93231,	-- Vydhar
+						["coord"] = { 68.4, 54.2, 634 },
+						["sourceQuests"] = { 39796 },	-- To Haustvald
+					}),
+					q(39593,  {	-- The Shattered Watcher
+						["coord"] = { 46.6, 44.4, 634 },
+						["sourceQuests"] = { 39590 },	-- Ahead of the Game
+						["g"] = {
+							i(129316),	-- Watcher's Pendant of Courage
+							i(121560),	-- Signet of the Watcher's Guile
+						},
+					}),
+					qh(39801, {	-- The Splintered Fleet
+						["maps"] = { 671, 1 },	-- Map: The Cove of Nashal / Durotar
+						["lvl"] = 98,
+						["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						["sourceQuest"] = 38307,	-- The Warchief Beckons
+						["g"] = {
+							i(139916),	-- Black Rose Amice
+							i(139925),	-- Black Rose Wristwraps
+							i(139974),	-- Dark Ranger Shoulderguards
+							i(139987),	-- Dark Ranger Wristguards
+							i(140012),	-- Deathstalker Shoulderplates
+							i(140018),	-- Deathstalker Vambraces
+							i(139948),	-- Dread-Rider Shoulders
+							i(139956),	-- Dread-Rider Cuffs
+						},
+					}),
+					q(39803,  {	-- The Trials Continue
+						["qg"] = 97074,	-- Huginn
+						["coord"] = { 47.9, 54.6, 634 },
+						["sourceQuest"] = 38624,	-- Cry Thunder!
+					}),
+					q(42640,  {	-- The Value of Knowledge
+						["coord"] = { 75.5, 50.8, 634 },
+					}),
+					qh(38307),	-- The Warchief Beckons
+					qh(38360, {	-- The Windrunner's Fate
+						["qg"] = 91158,	-- Nathanos Blightcaller
+						["coord"] = { 37.8, 21.6, 634 },
+						["sourceQuests"] = { 38322 },	-- The Ranger Lord
+					}),
+					q(43331,  {	-- Time to Collect
+						["sourceQuest"] = 42483,	-- Put It All on Red
+						["lvl"] = 110,
+						["qg"] = 110018,	-- Gazrix Gearlock <Steamwheedle Cartel>
+						["g"] = {
+							i(140601, {	-- Sixtrigger Resource Crate
+								i(133815),	-- Recipe: Spiced Rib Roast
+								i(140600),	-- Sixtrigger Lucky Ring
+							}),
+							i(140599),	-- Pretty Silk Gloves
+							i(140597),	-- Rax's Piloting Handgrips
+							i(140596),	-- Reinforced Mook Handguards
+							i(140598),	-- Snaggle's Best Gloves
+							i(140592),	-- Mook Battlepants
+							i(140593),	-- Rax's Polished Greaves
+							i(140595),	-- Rax's Silk Pajama Bottoms
+							i(140594),	-- Snaggle's Favorite Pants
+						}
+					}),
+					qa(39059),	-- To Catch a Banshee
+					q(39796,  {	-- To Haustvald
+						["qg"] = 92539,	-- Havi
+						["coord"] = { 60.0, 50.8, 634 },
+						["sourceQuests"] = { 39804 },	-- Speaking of Bones
+					}),
+					q(43595),	-- To Honor the Fallen
+					q(39849),	-- To Light the Way
+					qa(39062),	-- To Skold-Ashil (Alliance)
+					qh(39154),	-- To Skold-Ashil (Horde)
+					qa(38405, {	-- To Weather the Storm (Alliance)
+						["sourceQuest"] = 38312,	-- A Grapple a Day
+						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
+						["g"] = {
+							i(121567),	-- Galeborn's Oiled Cloak
+							i(129318),	-- Lodestone of the Galeborn
+							i(129317),	-- Lodestone of the Mystic
+							i(129319),	-- Lodestone of the Stormbreaker
+						},
+					}),
+					qh(38614, {	-- To Weather the Storm (Horde)
+						["sourceQuest"] = 38612,	-- A Grapple a Day
+						["coord"] = { 46.5, 67.7, 634 },
+						["qg"] = 92566,	-- Dread-Rider Cullen
+						["g"] = {
+							i(121567),	-- Galeborn's Oiled Cloak
+							i(129318),	-- Lodestone of the Galeborn
+							i(129317),	-- Lodestone of the Mystic
+							i(129319),	-- Lodestone of the Stormbreaker
+						},
+					}),
+					q(38778,  {	-- Turn the Keys
+						["qg"] = 93231,	-- Vydhar
+						["coord"] = { 68.4, 54.2, 634 },
+						["sourceQuests"] = { 39796 },	-- To Haustvald
+					}),
+					q(39853),	-- Victory is Eternal
+					q(38815,  {	-- Waking the Shieldmaiden
+						["qg"] = 97270,	-- Shieldmaiden Iounn
+						["coord"] = { 69.8, 45.5, 634 },
+						["sourceQuests"] = {
+							38816,	-- Breaking the Bonespeakers
+							38817,	-- Regal Remains
+							38823,	-- The Runes that Bind
+						},
+					}),
+					q(42641,  {	-- What the Bonespeakers Buried
+						i(129360),
+						i(129358),
+						i(129359),
+						i(129357),
+					}),
+					q(39652,  {	-- Where Dragons Rule
+						["sourceQuests"] = {
+							38413,	-- Wings of Liberty
+							38414,	-- Heart of a Dragon
+							40568,	-- Fury of the Storm
+						},
+						["coord"] = { 42.8, 82.6, 634 },
+						["qg"] = 96465,	-- Vethir
+						["g"] = {
+							i(132806),	-- Azariah's Last Moments
+							i(132808),	-- Breath of Vethir
+							i(132811),	-- Crystallized Tideskorn Cruelty
+							i(132814),	-- Drekirjar Jarl's Disdain
+							i(132800),	-- Drekirjar Lifeblood
+							i(132810),	-- Erratic Stormforce
+							i(132802),	-- Hrydshal Forgeflame
+							i(132816),	-- Hrydshal Weald
+							i(132804),	-- Sigil of Hrydshal
+							i(132817),	-- Shade of Thorim's Peak
+							i(132815),	-- Storm-Charged Lodestone
+							i(132805),	-- Stormborn Courage
+							i(132819),	-- Thorignir Slipstream
+							i(132803),	-- Thorim's Peak Snowcap
+							i(132813),	-- Thrymjaris' Fury
+							i(132799),	-- Thrymjaris' Grace
+						},
+					}),
+					qa(39061),	-- Whispers from the Dark
+					qa(38473, {	-- Will of the Thorignir (Alliance)
+						["sourceQuest"] = 39597,	-- The Blessing of the Watchers
+						["qg"] = 96254,	-- Havi
+					}),
+					qh(38611, {	-- Will of the Thorignir (Horde)
+						["sourceQuest"] = 39597,	-- The Blessing of the Watchers
+						["coord"] = { 41.8, 43.0, 634 },
+						["qg"] = 96254,	-- Havi
+					}),
+					q(38413,  {	-- Wings of Liberty
+						["qgs"] = {
+							91249,	-- Vethir
+							96465,	-- Vethir
+						},
+						["coord"] = { 44.7, 77.4, 634 },
+						["sourceQuests"] = {
+							38412,	-- Above the Winter Moonlight (Alliance)
+							38618,	-- Above the Winter Moonlight (Horde)
+						},
+						["g"] = {
+							i(121517),	-- Thorignir Punisher Spaulders
+							i(121515),	-- Thorignir Striker Shoulderguards
+							i(121518),	-- Thorignir Javelin Mantle
+							i(121516),	-- Thorignir Heavy Pauldrons
+							i(129324),	-- Goliath Wraps of Hridmogir
+							i(129325),	-- Reaping Gloves of Aleifir
+							i(129326),	-- Marauding Grips of Hrafsir
+							i(129327),	-- Sieging Gauntlets of Erilar
+						},
+					}),
+					qh(38361, {	-- Wrath of the Blightcaller
+						["qg"] = 91158,	-- Nathanos Blightcaller
+						["coord"] = { 37.8, 21.6, 634 },
+						["sourceQuests"] = { 38322 },	-- The Ranger Lord
+					}),
+					
+					
+					
+					--[[
+						["qg"] = ,	-- 
+						["coord"] = { , , 634 },
+						["sourceQuests"] = {  },	-- 
+					}),
+					--]]
+					
+					
+					
+					
+					
+					
 					n(-38, {	-- Professions
 						n(-181, {	-- Blacksmithing
 							{	-- Work Order: Leystone Breastplate
@@ -1550,7 +1710,7 @@ _.Zones =
 								["questID"] = 40866,	-- The Shell, You Say?
 								["qg"] = 102198,	-- Fargo Flintlocke
 								["requireSkill"] = 202,
-								["groups"] = {
+								["g"] = {
 									{	-- Schematic: Sonic Environment Enhancer
 										-- ["recipeID"] = 201596,	-- Schematic: Sonic Environment Enhancer(Spell that is cast on you to learn the following recipe.  Not collectible)
 										["recipeID"] = 200466,	-- Schematic: Sonic Environment Enhancer
@@ -1558,7 +1718,7 @@ _.Zones =
 								},
 							},
 							q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-								["groups"] = {
+								["g"] = {
 									sp(201602),	-- Schematic: Intra-Dalaran Wormhole Generator
 								},
 								["qg"] = 102198,	-- Fargo Flintlocke
@@ -1570,7 +1730,7 @@ _.Zones =
 							}),
 						}),
 						n(-185, {	-- Inscription
-							["groups"] = {
+							["g"] = {
 								q(40052, {	-- Ancient Vrykul Mastered
 									["qg"] = 97748,	-- Nicholo Swiftfuse
 									["sourceQuests"] = { 39947 },	-- Not So Complex?
@@ -1584,19 +1744,19 @@ _.Zones =
 							["requireSkill"] = 773,
 						}),
 						n(-186, {	-- Jewelcrafting
-							["groups"] = {
+							["g"] = {
 								{	-- Mysteries of Nature
 									["questID"] = 40546,
 									["requireSkill"] = 755,	-- Jewelcrafting
 									["qg"] = 100499,	-- Jabrul <Jewelcrafting Master>
-									["groups"] = {
+									["g"] = {
 										recipe(195883),	-- Chatterstone
 									},
 								},
 							},
 						}),
 						n(-190, {	-- Tailoring
-							["groups"] = {
+							["g"] = {
 								q(38974, {	-- Halls of Valor: The Right Question
 									["qg"] = 93977,	-- Leyweaver Tellumi
 									["coord"] = { 65.6, 56.2 },
@@ -1615,7 +1775,6 @@ _.Zones =
 					qart(qg(117394, q(45534))),	-- A Common Enemy
 					q(40614),	-- A Feast Fit for Odyn
 					q(40078),	-- A Heavy Burden
-					q(40120),	-- A Murky Fate
 					q(44771),	-- A Threat Rises
 					q(40265),	-- A Touch of Magic
 					q(38442),	-- A Worthy Challenger
@@ -1652,7 +1811,6 @@ _.Zones =
 					q(40149),	-- Drakol'nir Must Die
 					q(39998),	-- Drive Back the Tideskorn
 					q(47050),	-- Enhancement: Fate of the Tideskorn
-					qh( 38308),	-- Eyes in the Overlook
 					q(40542),	-- Eyes of Nashal
 					q(40544),	-- Eyes of Nashal
 					q(40543),	-- Eyes of Nashal
@@ -1707,13 +1865,12 @@ _.Zones =
 					q(40603),	-- Seeking the Valkyra
 					q(40146),	-- Seymour and Agnes
 					q(40404),	-- Show Legion Portal
-					qh( 38357),	-- Side Effects May Include Mild Undeath
 					q(41787),	-- Someone Else's Mess
 					q(42194),	-- Stolen Honor
 					q(41039),	-- Stolen Knowledge
 					q(40131),	-- Stonehide Leather Sample
 					q(42749),	-- Strange Bedfellows
-					qa( 38036),	-- Supplies From the Skies
+					qa(38036),	-- Supplies From the Skies
 					q(42651),	-- Svergan's Promise
 					q(38424),	-- Thane's Mead Hall
 					q(41163),	-- The Apocalypse Bringer
@@ -1744,173 +1901,168 @@ _.Zones =
 					q(38472),	-- Whitewater Typhoon
 					q(38626),	-- Worg Pack
 					q(38627),	-- Worgen Stalkers (Horde Only)
-					qh( 38361),	-- Wrath of the Blightcaller
 					SOON™
 					--]]
-					q(44177, {	-- Dark Secrets and Shady Deals
-						["qg"] = 112959,	-- Fleet Admiral Tethys
-						["classes"] = { 4 },
-					}),
-					q(46340, {
-						["qg"] = 93628,	-- Eyir
-					}),
 				}),
 				n(-16, { 	-- Rares
-					n(91874, { 		-- Bladesquall
+					n(91874,  {	-- Bladesquall
 						["questID"] = 38431,
-						["groups"] = {	
+						["coord"] = { 46.0, 77.7, 634 },
+						["g"] = {	
 							i(129048),
+							{	-- Bladesquall (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 4,	-- Bladesquall
+							},
 						},
 					}), 
-					n(92599, { 		-- Bloodstalker Alpha
+					n(92599,  {	-- Bloodstalker Alpha
+						["questID"] = 38626,
 						["coord"] = { 38.8, 38.8, 634 },
-						["groups"] = {
-							{
+						["g"] = {
+							{	-- Worg Pack (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 8,	-- Worg Pack
 							},
 							i(129101),	-- Alpha's Paw
 						},
 					}), 
-					n(92685, { 		-- Captain Brvet
+					n(92685,  {	-- Captain Brvet
 						["questID"] = 38642,
-						["groups"] = {
+						["g"] = {
 							i(129123),
 						},
 					}), 
-					nh(92343, { 	-- Captain Tomas (Mother Clacker)
-						["groups"] = {
+					nh(92343, {	-- Captain Tomas (Mother Clacker)
+						["description"] = "Speak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.",
+						["questID"] = 38422,	
+						["g"] = {
 							i(129040),
 						},
-						["questID"] = 38422,	
-						
-						["description"] = "Speak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.",
 					}),
-					h({
-						["vignetteID"] = 38627,	-- Worgen Stalkers (Horde Only)
+					v(38627,  {	-- Worgen Stalkers (Horde Only)
+						["description"] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
+						["races"] = HORDE_ONLY,
 						["qgs"] = {
 							92604,	-- Champion Elodie
 							92609,	-- Tracker Jack
 							92611,	-- Ambusher Daggerfang
 							92613,	-- Priestess Liza
 						},
-						["description"] = "There is an ongoing 4x4 battle, assist the Horde by defeating the Worgen Stalkers.",
-						["groups"] = {
+						["g"] = {
 							i(129264),	-- Patrol Captain's Gauntlets
 						},
 					}),
-					nh(94313, { 	-- Daniel "Boomer" Vorick
-						["groups"] = {
-							i(129144),
+					nh(94313, {	-- Daniel "Boomer" Vorick
+						["questID"] = 39048,
+						["g"] = {
+							i(129144),	
 						},
-						["questID"] = 39048,	
-						
 					}),
-					a({
-						["vignetteID"] = 38630,	-- Horde Kill Squad (Alliance Only)
+					v(38630,  {	-- Horde Kill Squad (Alliance Only)
+						["description"] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Horde Kill Squad.",
+						["races"] = ALLIANCE_ONLY,
 						["qgs"] = {
 							92626,	-- Deathguard Adams
 							92631,	-- Dark Ranger Jess
 							92633,	-- Assassin Huwe
 							92634,	-- Apothecary Perez
 						},
-						["description"] = "There is an ongoing 4x4 battle, assist the Alliance by defeating the Horde Kill Squad.",
-						["groups"] = {
+						["g"] = {
 							i(129266),	-- Raider Captain's Gauntlets
 						},
 					}),
-					na(94347, { 	-- Dread-Rider Cortis
-						["groups"] = {	
+					na(94347, {	-- Dread-Rider Cortis
+						["questID"] = 43343,
+						["g"] = {	
 							i(130134),
 						},
-						["questID"] = 43343,	
-							
 					}), 
-					n(98188, { 		-- Egyl the Enduring
+					n(98188,  {	-- Egyl the Enduring
 						["questID"] = 40068,
-						["groups"] = {	
+						["g"] = {	
 							i(132898),
 						},
 					}), 
-					n(91803, { 		-- Fathnyr
-						-- ["questID"] = ,	-- 
-						["coord"] = { 46.64, 84.7, 634},
-						["groups"] = {
+					n(91803,  {	-- Fathnyr
+						["questID"] = 38425,
+						["coord"] = { 46.3, 82.9, 634 },
+						["g"] = {
 							i(129206),	-- Andvari's Gift
+							{	-- Fathnyr (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 3,	-- Fathnyr
+							},
 						},
 					}), 
-					n(91529, { 		-- Glimar Ironfist
-						["groups"] = {
+					n(91529,  {	-- Glimar Ironfist
+						["questID"] = 38333,
+						["g"] = {
 							i(129291),
 						},
-						["questID"] = 38333,	
-						
 					}), 
-					n(98503, { 		-- Grrvrgull the Conqueror
-						["groups"] = {	
+					n(98503,  {	-- Grrvrgull the Conqueror
+						["questID"] = 40113,
+						["g"] = {	
 							i(138421),
 						},
-						["questID"] = 40113,	
-							
 					}), 
-					n(107926, { 		-- Hannval the Butcher
-						["groups"] = {	
+					n(107926, {	-- Hannval the Butcher
+						["questID"] = 42591,
+						["g"] = {	
 							i(138417),
 						},
-						["questID"] = 42591,	
-							
 					}),
-					a({
-						["vignetteID"] = 38625,	-- Hook and Sinker (Alliance Only)
+					v(38625,  {	-- Hook and Sinker (Alliance Only)
+						["races"] = ALLIANCE_ONLY,
 						["qgs"] = {
 							92590,	-- Hook
 							92591,	-- Sinker
 						},
-						["groups"] = {
+						["g"] = {
 							i(129109),	-- Sinker's Line
 						},
 					}),
-					nh(92951, { 	-- Houndmaster Ely
-						["groups"] = {	
-							i(129037),
+					nh(92951, {	-- Houndmaster Ely
+						["questID"] = 38712,
+						["coord"] = { 47.1, 57.2, 634 },
+						["g"] = {	
+							i(129037),	-- THe Houndmaster's Fancy Pants
 						},
-						["questID"] = 38712,	
-							
 					}), 
-					n(90139, { 		-- Inquisitor Ernstenbok
-						["groups"] = {	
+					n(90139,  {	-- Inquisitor Ernstenbok
+						["questID"] = 37908,	
+						["g"] = {	
 							i(140686), 
 						},
-						["questID"] = 37908,	
-						
 					}), 
-					n(94413, { 		-- Isel the Hammer
-						["coord"] = { 62.0, 60.6, 634 },
+					n(94413,  {	-- Isel the Hammer
 						["questID"] = 39120,
-						["groups"] = {
-							{
+						["coord"] = { 62.0, 60.6, 634 },
+						["g"] = {
+							{	-- Isel the Hammer (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 16,	-- Isel the Hammer
 							},
 							i(129133),	-- The Hammer's Head
 						},
 					}), 
-					n(98421, { 		-- Kottr Vondyr
-						["coord"] = { 73.6, 47.6, 634 },
+					n(98421,  {	-- Kottr Vondyr
 						["questID"] = 40109,
-						["groups"] = {
-							{
+						["coord"] = { 73.6, 47.6, 634 },
+						["g"] = {
+							{	-- Kottr Vondyr (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 20,	-- Kottr Vondyr
 							},
 							i(138419),	-- The Binder's Bonds
 						},
 					}), 
-					n(93371, { 		-- Mordvigbjorn
-						["coord"] = { 72.8, 49.6, 634 },
+					n(93371,  {	-- Mordvigbjorn
 						["questID"] = 38837,
-						["groups"] = {
-							{
+						["coord"] = { 72.8, 49.6, 634 },
+						["g"] = {
+							{	-- Mordvigbjorn (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 14,	-- Mordvigbjorn
 							},
@@ -1918,80 +2070,81 @@ _.Zones =
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
 					}), 
-					n(110363, { 		-- Roteye
-						["groups"] = {	
+					n(110363, {	-- Roteye
+						["questID"] = 43342,
+						["g"] = {	
 							i(139387),
 						},
-						["questID"] = 43342,	
-							
 					}), 
-					n(107487, { 		-- Starbuck
-						["groups"] = {	
+					n(107487, {	-- Starbuck
+						["questID"] = 42437,
+						["g"] = {	
 							i(130132),
 						},
-						["questID"] = 42437,	
-							
 					}), 
-					n(91795, { 		-- Stormwing Matriarch
-						["groups"] = {	
+					n(91795,  {	-- Stormwing Matriarch
+						["questID"] = 38423,
+						["g"] = {	
 							i(129208),
 							i(129110),
 						},
-						["questID"] = 38423,	
-							
 					}),
-					n(98268, { 		-- Tarben <Jarl of Tideskorn Harbor>
-						["coord"] = { 61.6, 43.4, 634 },
+					n(98268,  {	-- Tarben <Jarl of Tideskorn Harbor>
 						["questID"] = 40081,
-						["groups"] = {
-							{
+						["coord"] = { 61.6, 43.4, 634 },
+						["g"] = {
+							{	-- Tarben (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 19,	-- Tarben
 							},
 							i(129199),	-- Tideskorn Jarl's Pendant
 						},
 					}),
-					n(91892, { 		-- Thane Irglov the Merciless
+					n(91892,  {	-- Thane Irglov the Merciless
 						["questID"] = 38424,
-						["groups"] = {
+						["g"] = {
 							i(129113)	-- Faintly Glowing Flagon of Mead
 						},
 					}), 
-					n(92763, { 		-- The Nameless King
+					n(92763,  {	-- The Nameless King
 						["description"] = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
-						["coord"] = { 67.2, 39.8, 634 },
 						["questID"] = 38685,
-						["groups"] = {
-							{
+						["coord"] = { 67.2, 39.8, 634 },
+						["g"] = {
+							{	-- The Nameless King (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 12,	-- The Nameless King
 							},
 							i(129041),	-- Aurora of the Nameless King
 						},
 					}),
-					n(93166, { 		-- Tiptog the Lost
+					n(93166,  {	-- Tiptog the Lost
+						["questID"] = 38774,
 						["coord"] = { 47.0, 49.4, 634 },
-						["groups"] = {
-							{
+						["g"] = {
+							{	-- Lost Ettin (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 13,	-- Lost Ettin
 							},
 							i(129163),	-- Lost Etin's Strength
 						},
 					}), 
-					n(93401, { 		-- Urgev the Flayer
-						["groups"] = {
-							i(129219),
+					n(93401,  {	-- Urgev the Flayer
+						["questID"] = 38847,
+						["coord"] = { 64.7, 51.9, 634 },
+						["g"] = {
+							i(129219),	-- The Flayer's Runewraps
+							{	-- Urgev the Flayer (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 15,	-- Urgev the Flayer
+							},
 						},
-						["questID"] = 38847,	
-						
 					}), 
-					n(92152, { 		-- Whitewater Typhoon
-						["groups"] = {	
+					n(92152,  {	-- Whitewater Typhoon
+						["questID"] = 38472,
+						["g"] = {	
 							i(138418),
 						},
-						["questID"] = 38472,	
-							
 					}),
 --[[
 				--	n(108885, { 	-- Aegir Wavecrusher	}), 
@@ -2054,7 +2207,7 @@ _.Zones =
 						i(134202),	-- Stormsky Cloak
 					}),
 					n(-3242, {	-- Bonespeaker Set
-						["groups"] = {
+						["g"] = {
 							i(134216),	-- Bonespeaker Cowl
 							i(134221),	-- Bonespeaker Mantle
 							i(134219),	-- Bonespeaker Robes
@@ -2067,7 +2220,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					}),
 					n(-3266, {	-- Biornskin Set
-						["groups"] = {
+						["g"] = {
 							i(134196),	-- Biornskin Hood
 							i(134198),	-- Biornskin Shoulderpads
 							i(134197),	-- Biornskin Vest
@@ -2080,7 +2233,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					}),
 					n(-3278, {	-- Tideskorn Set
-						["groups"] = {
+						["g"] = {
 							i(134211),	-- Tideskorn Coif
 							i(134213),	-- Tideskorn Mantle
 							i(134214),	-- Tideskorn Vest
@@ -2093,7 +2246,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					}),
 					n(-3302, {	-- Skoldiir Set
-						["groups"] = {
+						["g"] = {
 							i(134182),	-- Skoldiir Helm
 							i(134184),	-- Skoldiir Shoulderguards
 							i(134179),	-- Skoldiir Breastplate
@@ -2106,7 +2259,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 					n(-3309, {	-- Wardbreaker Set
-						["groups"] = {
+						["g"] = {
 							i(136728),	-- Wardbreaker Helm
 							i(136730),	-- Wardbreaker Pauldrons
 							i(136725),	-- Wardbreaker Chestplate
@@ -2123,7 +2276,7 @@ _.Zones =
 					}),
 					{	-- Work Order: Queen's Opal Loop
 						["questID"] = 41652,
-						["groups"] = {
+						["g"] = {
 							i(137865),	-- Design: Queen's Opal Loop (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2131,7 +2284,7 @@ _.Zones =
 					},
 					{	-- Work Order: Silkweave Bracers
 						["questID"] = 41648,
-						["groups"] = {
+						["g"] = {
 							i(137961),	-- Pattern: Silkweave Bracers (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2140,7 +2293,7 @@ _.Zones =
 					{	-- Work Order: Warhide Footpads
 						["questID"] = 41642,
 						["qg"] = 106904,	-- Valdemar Stormseeker
-						["groups"] = {
+						["g"] = {
 							i(137880),	-- Recipe: Warhide Footpads (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2149,7 +2302,7 @@ _.Zones =
 					{	-- Work Order: Word of Haste
 						["questID"] = 41672,
 						["qg"] = 106904,	-- Valdemar Stormseeker
-						["groups"] = {
+						["g"] = {
 							i(128597),	-- Formula: Enchant Ring - Word of Haste (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2157,7 +2310,7 @@ _.Zones =
 					},
 				}),				
 				n(0, { 		-- Zone Drops
-					["groups"] = {
+					["g"] = {
 						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 						i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 							["crs"] = {
@@ -2176,202 +2329,202 @@ _.Zones =
 						i(141064),	-- Technique: Glyph of the Shivarra
 						i(141051),	-- Technique: Glyph of the Trident
 						i(141287, {	-- Law of Strength
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(141286, {	-- Rite of the Val'kyr
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121125, {	-- Rune-Etched Bark
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121124, {	-- Stormforged Idol
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121137, {	-- Stormwing Band
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121138, {	-- Stormwing Chain
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121122, {	-- Stormwing Drape
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121126, {	-- Stormwing Tail Tip
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121159, {	-- Hrydshal Cowl
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121164, {	-- Hrydshal Shoulderpads
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121162, {	-- Hrydshal Robe
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121165, {	-- Hrydshal Wristwraps
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121160, {	-- Hrydshal Handwraps
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121158, {	-- Hrydshal Cord
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121161, {	-- Hrydshal Leggings
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121163, {	-- Hrydshal Sandals
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121131, {	-- Haustvelt Hood
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121133, {	-- Haustvelt Shoulders
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121132, {	-- Haustvelt Jerkin
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121127, {	-- Haustvelt Bindings
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121130, {	-- Haustvelt Gloves
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121134, {	-- Haustvelt Waistband
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121129, {	-- Haustvelt Britches
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121128, {	-- Haustvelt Boots
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121154, {	-- Valisdall Helm
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121156, {	-- Valisdall Spaulders
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121157, {	-- Valisdall Vest
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121151, {	-- Valisdall Bracers
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121152, {	-- Valisdall Gauntlets
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121150, {	-- Valisdall Belt
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121155, {	-- Valisdall Legguards
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121153, {	-- Valisdall Greaves
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121114, {	-- Valarsmidd Helm
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121116, {	-- Valarsmidd Pauldrons
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121111, {	-- Valarsmidd Breastplate
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121118, {	-- Valarsmidd Vambraces
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121112, {	-- Valarsmidd Gauntlets
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121113, {	-- Valarsmidd Girdle
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121115, {	-- Valarsmidd Legplates
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
 						i(121117, {	-- Valarsmidd Sabatons
-							["groups"] = {
+							["g"] = {
 							},
 							["bonusID"] = 1812,
 						}),
@@ -2521,13 +2674,13 @@ _.Zones =
 					},
 				}),
 				n(-40, {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-4, {	-- Achievements
 							un(2, ach(11139, {	-- Field Medic!
-								["groups"] = {
+								["g"] = {
 									un(39, title(340, {	-- TITLE: Field Medic!
 										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["groups"] = {
+										["g"] = {
 											{
 												["achievementID"] = 11139,	-- Field Medic (Achievement)
 												["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
