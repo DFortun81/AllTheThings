@@ -121,6 +121,7 @@ _.Zones =
 					{	-- Aroom's Farewell
 						["questID"] = 13578,
 						["qg"] = 33119,	-- Aroom
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13577,	-- The Last Wildkin
 						["groups"] = {
 							i(55133),	-- Wildkin Feather Belt
@@ -198,6 +199,7 @@ _.Zones =
 					{	-- Calming the Earth
 						["questID"] = 13584,
 						["qg"] = 33112,	-- Selenn
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13579,	-- Protector of Ameth'aran
 						["groups"] = {
 							i(52620),	-- Earth-Crusted Breastplate
@@ -255,14 +257,15 @@ _.Zones =
 					{	-- Denying Manpower
 						["questID"] = 13507,
 						["qg"] = 32965,	-- Sentinel Tysha Moonblade
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							13504,	-- Shatterspear Laborers
+							13505,	-- Remnants of the Highborne
+						},
 						["groups"] = {
 							i(52659),	-- Cover of Leaves
 							i(52597),	-- Tysha's Chestguard
 							i(131278),	-- Sentinel's Leafbough Chestpiece
-						},
-						["sourceQuests"] = {
-							13504,	-- Shatterspear Laborers
-							13505,	-- Remnants of the Highborne
 						},
 					},
 					{	-- Disgusting Workbench
@@ -528,6 +531,7 @@ _.Zones =
 					{	-- Soothing the Elements
 						["questID"] = 13580,
 						["qg"] = 33117,	-- Elder Brownpaw
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13576,	-- Mutual Aid
 						["groups"] = {
 							i(52598),	-- Soothsaying Vest
@@ -641,6 +645,7 @@ _.Zones =
 						["questID"] = 13897,
 						["qg"] = 34422,	-- Malfurion Stormrage
 						["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13900,	-- The Offering to Azshara
 						["groups"] = {
 							i(52616),	-- Bracers of the Ancient Grove
@@ -680,18 +685,19 @@ _.Zones =
 						["questID"] = 13520,
 						["qg"] = 32972,	-- Serendia Oakwhisper
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(131823),	-- Diver's Waistband
-							i(52609),	-- Diver's Cord
-						},
 						["sourceQuests"] = {
 							13518,	-- The Last Wave of Survivors
 							13522,	-- Threat from the Water
+						},
+						["groups"] = {
+							i(131823),	-- Diver's Waistband
+							i(52609),	-- Diver's Cord
 						},
 					},
 					{	-- The Corruption's Source
 						["questID"] = 13529,
 						["qg"] = 32978,	-- Tharnarium Treetender
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13528,	-- Buzzbox 723
 						["groups"] = {
 							i(52595),	-- Goat Hide Vest
@@ -740,6 +746,7 @@ _.Zones =
 					{	-- The Eye of All Storms
 						["questID"] = 13588,
 						["qg"] = 33091,	-- Malfurion Stormrage
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13940,	-- Leaving the Dream
 						["groups"] = {
 							i(52636),	-- Portal Closer's Hammer
@@ -788,20 +795,21 @@ _.Zones =
 						["questID"] = 13844,
 						["qg"] = 34041,	-- Mathas Wildwood
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							13507,	-- Denying Manpower
+							13509,	-- War Supplies
+						},
 						["groups"] = {
 							i(52623),	-- Wild Bark Boots
 							i(52607),	-- Forsaken Belt
 							i(52591),	-- Narassin's Gloves
 							i(131305),	-- Wildwood Chain Links
 						},
-						["sourceQuests"] = {
-							13507,	-- Denying Manpower
-							13509,	-- War Supplies
-						},
 					},
 					{	-- The Offering to Azshara
 						["questID"] = 13900,
 						["qg"] = 34423,	-- Warlord Wrathspine
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13899,	-- The Darkscale Warlord
 						["groups"] = {
 							i(52588),	-- Ritual Stopper's Slippers
@@ -814,16 +822,17 @@ _.Zones =
 					{	-- The Ritual Bond
 						["questID"] = 13569,
 						["qg"] = 33048,	-- Keeper Karithus
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							13566,	-- Ritual Materials
+							13565,	-- Twice Removed
+							13598,	-- Unsavory Remedies
+						},
 						["groups"] = {
 							i(52615),	-- Moonstalker Bracers
 							i(55126),	-- Thistle Bear Girdle
 							i(52664),	-- Cloak of the Stag
 							i(131288),	-- Moonstalker Wristwraps
-						},
-						["sourceQuests"] = {
-							13566,	-- Ritual Materials
-							13565,	-- Twice Removed
-							13598,	-- Unsavory Remedies
 						},
 					},
 					{	-- The Seeds of Life
@@ -913,6 +922,7 @@ _.Zones =
 					{	-- The Waking Nightmare
 						["questID"] = 13587,
 						["qg"] = 33166,	-- Thessera
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13586,	-- The Emerald Dream
 						["groups"] = {
 							i(52614),	-- Thessera's Gift
@@ -947,6 +957,7 @@ _.Zones =
 					{	-- Twice Removed
 						["questID"] = 13565,
 						["qg"] = 33126,	-- Seraphine
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13564,	-- A Lost Companion
 						["groups"] = {
 							i(52629),	-- Naga Plate Bracers
