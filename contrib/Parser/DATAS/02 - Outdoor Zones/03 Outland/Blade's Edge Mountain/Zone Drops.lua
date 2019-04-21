@@ -11,6 +11,52 @@ _.Zones =
 				["groups"] = {
 					n(0, {	-- Zone Drop
 						["groups"] = {
+							i(29750, {	-- Ethereum Stasis Chamber Key (required to summon/"release" mobs)(5x prison keys)
+								["coords"] = {
+									{ 52.85, 14.97, 105 },	-- Image of Commander Ameer <The Protectorate>
+									{ 51.2, 11.6, 105 },	-- Ethereum Prisoner (Group Energy Ball)
+									{ 49.6, 15.8, 105 },	-- Ethereum Prisoner (Group Energy Ball)
+									{ 49.6, 21.2, 105 },	-- Ethereum Prisoner (Group Energy Ball)
+									{ 52.6, 20.0, 105 },	-- Ethereum Prisoner (Group Energy Ball)
+								},
+								["crs"] = {
+									22919,	-- Image of Commander Ameer <The Protectorate>
+								},
+								["description"] = "Requires 5 Ethereum Prison Keys to purchase",
+								["g"] = {
+									i(31569, {	-- Mistshroud Shoulders
+										["crs"] = {
+											20889,	-- Ethereum Prisoner (Group Energy Ball)
+											22827,	-- Gorgolon the All-Seeing
+										},
+									}),
+									i(32522, {	-- Demonic Bulwark
+										["crs"] = {
+											20889,	-- Ethereum Prisoner (Group Energy Ball)
+											22828,	-- Trelopades
+										},
+									}),
+									i(31561, {	-- Skystalker's Shoulders
+										["crs"] = {
+											20889,	-- Ethereum Prisoner (Group Energy Ball)
+											20888,	-- Solus the Eternal
+										},
+									}),
+									i(31577, {	-- Slatesteel Shoulders
+										["crs"] = {
+											20889,	-- Ethereum Prisoner (Group Energy Ball)
+											22826,	-- King Dorfbruiser
+										},
+									}),
+									i(31553, {	-- Windchanneller's Mantle
+										["crs"] = {
+											20889,	-- Ethereum Prisoner (Group Energy Ball)
+											22825,	-- Matron Li-sahar
+										},
+									}),
+									
+								},
+							}),
 							i(32672, {	-- Depleted Badge
 								["crs"] = {
 									19973,	-- Abyssal Flamebringer
@@ -32,18 +78,6 @@ _.Zones =
 								},
 								["groups"] = {
 									i(32658),	-- Badge of Tenacity
-								},
-							}),
-							i(32522, {	-- Demonic Bulwark
-								["coords"] = {
-									{ 51.2, 11.6, 105 },
-									{ 49.6, 15.8, 105 },
-									{ 49.6, 21.2, 105 },
-									{ 52.6, 20.0, 105 },
-								},
-								["crs"] = {
-									20889,	-- Ethereum Prisoner (Group Energy Ball)
-									22828,	-- Trelopades
 								},
 							}),
 							i(32673, {	-- Depleted Dagger
@@ -345,18 +379,6 @@ _.Zones =
 									16952,	-- Anger Guard
 								},
 							}),
-							i(31569, {	-- Mistshroud Shoulders
-								["coords"] = {
-									{ 51.2, 11.6, 105 },
-									{ 49.6, 15.8, 105 },
-									{ 49.6, 21.2, 105 },
-									{ 52.6, 20.0, 105 },
-								},
-								["crs"] = {
-									20889,	-- Ethereum Prisoner (Group Energy Ball)
-									22827,	-- Gorgolon the All-Seeing
-								},
-							}),
 							i(23800, {	-- Schematic: Felsteel Boomstick
 								["coords"] = {
 									{ 73.4, 40.6, 105 },
@@ -378,42 +400,6 @@ _.Zones =
 								},
 								["crs"] = {
 									23386,	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
-								},
-							}),
-							i(31561, {	-- Skystalker's Shoulders
-								["coords"] = {
-									{ 51.2, 11.6, 105 },
-									{ 49.6, 15.8, 105 },
-									{ 49.6, 21.2, 105 },
-									{ 52.6, 20.0, 105 },
-								},
-								["crs"] = {
-									20889,	-- Ethereum Prisoner (Group Energy Ball)
-									20888,	-- Solus the Eternal
-								},
-							}),
-							i(31577, {	-- Slatesteel Shoulders
-								["coords"] = {
-									{ 51.2, 11.6, 105 },
-									{ 49.6, 15.8, 105 },
-									{ 49.6, 21.2, 105 },
-									{ 52.6, 20.0, 105 },
-								},
-								["crs"] = {
-									20889,	-- Ethereum Prisoner (Group Energy Ball)
-									22826,	-- King Dorfbruiser
-								},
-							}),
-							i(31553, {	-- Windchanneller's Mantle
-								["coords"] = {
-									{ 51.2, 11.6, 105 },
-									{ 49.6, 15.8, 105 },
-									{ 49.6, 21.2, 105 },
-									{ 52.6, 20.0, 105 },
-								},
-								["crs"] = {
-									20889,	-- Ethereum Prisoner (Group Energy Ball)
-									22825,	-- Matron Li-sahar
 								},
 							}),
 							i(22925, {	-- Recipe: Major Holy Protection Potion
