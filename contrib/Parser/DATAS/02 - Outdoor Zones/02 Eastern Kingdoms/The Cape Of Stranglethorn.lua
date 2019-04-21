@@ -657,17 +657,6 @@ _.Zones =
 					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
---[[					nlq({     -- Legacy Quests 
-						q( 617, {	-- Akiris by the Bundle
-							un(34, i(4117)),	-- Scorching Sash
-						}),
-						q( 213, {	-- Hostile Takeover
-							un(34, i(4121)),	-- Gemmed Gloves
-						}),
-						qa(611, {	-- The Curse of the Tides
-							un(34, i(4120)),	-- Robe of Crystal Waters
-						}),
-					}),--]]
 				}),
 			}),
 				n(-16, {	-- Rares
