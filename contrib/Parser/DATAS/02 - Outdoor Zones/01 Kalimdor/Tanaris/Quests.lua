@@ -713,6 +713,7 @@ _.Zones =
 						["qg"] = 151132,	-- Feathers
 						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 						["sourceQuest"] = 53816,	-- Some Reassembly Required
+						["lvl"] = 120,
 					},
 					{	-- Rescue OOX-17/TN!
 						["questID"] = 648,
@@ -729,6 +730,7 @@ _.Zones =
 						["qg"] = 151132,	-- Feathers
 						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 						["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
+						["lvl"] = 120,
 					},
 					{	-- Return to Apothecary Zinge
 						["questID"] = 864,
@@ -896,6 +898,7 @@ _.Zones =
 							53815,	-- Whatever Happened to Saffy Flivvers?
 							53817,	-- Whatever Happened to Grizzek Fizzwrench?
 						},
+						["lvl"] = 120,
 					},
 					{	-- Southsea Shakedown
 						["questID"] = 8366,
