@@ -47,6 +47,7 @@ _.Zones =
 					{	-- A Lost Companion
 						["questID"] = 13564,
 						["qg"] = 32960,	-- Volcor
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13554,	-- A Cure In The Dark
 							13529,	-- The Corruption's Source
@@ -150,6 +151,7 @@ _.Zones =
 					{	-- Buzzbox 413
 						["questID"] = 13521,
 						["qg"] = 32977,	-- Wizbang Cranktoggle
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13518,	-- The Last Wave of Survivors
 							13522,	-- Threat from the Water
@@ -158,9 +160,11 @@ _.Zones =
 					{	-- Buzzbox 413
 						["objectID"] = 194105,
 						["model"] = "world\\generic\\goblin\\passivedoodads\\controlpanel\\goblincontrolpanel.mdx",
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{	-- No Accounting for Taste
 								["questID"] = 13527,
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 13521,	-- Buzzbox 413
 							},
 						},
@@ -168,14 +172,17 @@ _.Zones =
 					{	-- Buzzbox 723
 						["questID"] = 13528,
 						["qg"] = 32977,	-- Wizbang Cranktoggle
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13527,	-- No Accounting for Taste
 					},
 					{	-- Buzzbox 723
 						["objectID"] = 194122,
 						["model"] = "world\\generic\\goblin\\passivedoodads\\controlpanel\\goblincontrolpanel.mdx",
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							{	-- A Cure In The Dark
 								["questID"] = 13554,
+								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 13528,	-- Buzzbox 723
 								["groups"] = {
 									i(52619),	-- Ichor Stained Vest
@@ -282,11 +289,13 @@ _.Zones =
 					{	-- Elune's Fire
 						["questID"] = 13582,
 						["qg"] = 33119,	-- Aroom
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13578,	-- Aroom's Farewell
 					},
 					{	-- Ending the Threat
 						["questID"] = 13515,
 						["qg"] = 33178,	-- Huntress Sandrya Moonfall
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13590,	-- The Front Line
 					},
 					{	-- Escape Through Force
@@ -383,10 +392,12 @@ _.Zones =
 					{	-- Leave No Tracks
 						["questID"] = 13892,
 						["qg"] = 34402,	-- Balren of the Claw
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Leaving the Dream
 						["questID"] = 13940,
 						["qg"] = 33166,	-- Thessera
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13587,	-- The Waking Nightmare
 					},
 					{	-- Malfurion's Return
@@ -413,6 +424,7 @@ _.Zones =
 					{	-- Mutual Aid
 						["questID"] = 13576,
 						["qg"] = 33117,	-- Elder Brownpaw
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13575,	-- The Land is in Their Blood
 						["groups"] = {
 							i(52656),	-- Scorched Shield
@@ -438,11 +450,13 @@ _.Zones =
 					{	-- Naga In Our Midst
 						["questID"] = 13953,
 						["qg"] = 34498,	-- Darkscale Assassin
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13895,	-- The Slumbering Ancients
 					},
 					{	-- On the Brink
 						["questID"] = 13513,
 						["qg"] = 32966,	-- Balthule Shadowstrike
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13507,	-- Denying Manpower
 							13509,	-- War Supplies
@@ -481,6 +495,7 @@ _.Zones =
 					},
 					{	-- Protector of Ameth'Aran
 						["questID"] = 13579,
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 33091,	-- Malfurion Stormrage
 					},
 					{	-- Remembrance of Auberdine
@@ -499,6 +514,7 @@ _.Zones =
 					{	-- Remnants of the Highborne
 						["questID"] = 13505,
 						["qg"] = 32966,	-- Balthule Shadowstrike
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 					},
 					{	-- Return to Nessa
@@ -511,11 +527,13 @@ _.Zones =
 					{	-- Ritual Materials
 						["questID"] = 13566,
 						["qg"] = 33048,	-- Keeper Karithus
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13564,	-- A Lost Companion
 					},
 					{	-- Shatterspear Laborers
 						["questID"] = 13504,
 						["qg"] = 32965,	-- Sentinel Tysha Moonblade
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 					},
 					{	-- Solace for the Highborne
@@ -526,6 +544,7 @@ _.Zones =
 					{	-- Soggoth and Kronn
 						["questID"] = 13893,
 						["qg"] = 34340,	-- Archaeologist Groff
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13896,	-- Unearthed Knowledge
 					},
 					{	-- Soothing the Elements
@@ -542,34 +561,39 @@ _.Zones =
 					{	-- Spirit of the Moonstalker
 						["questID"] = 13568,
 						["qg"] = 33131,	-- Great Moonstalker Spirit
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "You can only choose one of these quests.  Moonstalker gives 10% haste, Stag gives 10% movement speed, and Thistle Bear gives 10% reduction in damage taken.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
 					{	-- Spirit of the Stag
 						["questID"] = 13567,
 						["qg"] = 33048,	-- Great Stag Spirit
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "You can only choose one of these quests.  Stag gives 10% movement speed, Moonstalker gives 10% haste, and Thistle Bear gives 10% reduction in damage taken.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
 					{	-- Spirit of the Thistle Bear
 						["questID"] = 13597,
 						["qg"] = 33132,	-- Great Thistle Bear Spirit
+						["races"] = ALLIANCE_ONLY,
 						["description"] = "You can only choose one of these quests.  Thistle Bear gives 10% reduction in damage taken, Moonstalker gives 10% haste, and Stag gives 10% movement speed.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
 					{	-- Stepping Up Surveillance
 						["questID"] = 13948,
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13892,	-- Leave No Tracks
 					},
 					{	-- Strategic Strikes
 						["questID"] = 13512,
 						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
-						["groups"] = {
-							i(52650),	-- Dryad's Wand
-						},
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13507,	-- Denying Manpower
 							13509,	-- War Supplies
+						},
+						["groups"] = {
+							i(52650),	-- Dryad's Wand
 						},
 					},
 					{	-- Swamped Secrets
@@ -591,6 +615,7 @@ _.Zones =
 					{	-- Sworn to Protect
 						["questID"] = 13585,
 						["qg"] = 33112,	-- Selenn
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13584,	-- Calming the Earth
 					},
 					{	-- Tharnariun's Hope
@@ -679,6 +704,7 @@ _.Zones =
 					{	-- The Blackwood Pledge
 						["questID"] = 13581,
 						["qg"] = 33117,	-- Elder Brownpaw
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13580,	-- Soothing the Elements
 					},
 					{	-- The Boon of the Seas
@@ -709,6 +735,7 @@ _.Zones =
 					{	-- The Darkscale Warlord
 						["questID"] = 13899,
 						["qg"] = 34402,	-- Balren of the Claw
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13953,	-- Naga in Our Midst
 					},
 					{	-- The Defiler (no sourcequest?)
@@ -737,6 +764,7 @@ _.Zones =
 					{	-- The Emerald Dream
 						["questID"] = 13586,
 						["qg"] = 33091,	-- Malfurion Stormrage
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13585,	-- Sworn to Protect
 							13581,	-- The Blackwood Pledge
@@ -762,6 +790,7 @@ _.Zones =
 					{	-- The Front Line
 						["questID"] = 13590,
 						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13513,	-- On the Brink
 							13512,	-- Strategic Strikes
@@ -770,6 +799,7 @@ _.Zones =
 					{	-- The Land Is in Their Blood
 						["questID"] = 13575,
 						["qg"] = 33091,	-- Malfurion Stormrage
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Last Refugee
 						["questID"] = 13605,
@@ -785,11 +815,13 @@ _.Zones =
 					{	-- The Last Wave of Survivors
 						["questID"] = 13518,
 						["qg"] = 32973,	-- Dentaria Silverglade
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28490,	-- Hero's Call: Darkshore!
 					},
 					{	-- The Last Wildkin
 						["questID"] = 13577,
 						["qg"] = 33091,	-- Malfurion Stormrage
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Looting of Althalaxx
 						["questID"] = 13844,
@@ -849,6 +881,7 @@ _.Zones =
 					{	-- The Shatterspear Invaders
 						["questID"] = 13589,
 						["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
 					{	-- The Sleeper Has Awakened
@@ -865,6 +898,7 @@ _.Zones =
 					{	-- The Slumbering Ancients
 						["questID"] = 13895,
 						["qg"] = 33072,	-- Onu
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13893,	-- Soggoth and Kronn
 					},
 					{	-- The Tides Turn Against Us
@@ -932,11 +966,13 @@ _.Zones =
 					{	-- The Wildkin's Oath
 						["questID"] = 13583,
 						["qg"] = 33119,	-- Aroom
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13582,	-- Elune's Fire
 					},
 					{	-- Threat from the Water
 						["questID"] = 13522,
 						["qg"] = 32971,	-- Ranger Glynda Nal'Shea
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Three Hammers to Break
 						["questID"] = 13543,
@@ -974,11 +1010,13 @@ _.Zones =
 					{	-- Unearthed Knowledge
 						["questID"] = 13896,
 						["qg"] = 34404,	-- Larien
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13948,	-- Stepping Up Surveillance
 					},
 					{	-- Unsavory Remedies
 						["questID"] = 13598,
 						["qg"] = 33048,	-- Keeper Karithus
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13564,	-- A Lost Companion
 					},
 					{	-- WANTED: Murkdeep!
@@ -995,6 +1033,7 @@ _.Zones =
 					{	-- War Supplies
 						["questID"] = 13509,
 						["qg"] = 32963,	-- Lieutenant Morra Starbreeze
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							13504,	-- Shatterspear Laborers
 							13505,	-- Remnants of the Highborne
