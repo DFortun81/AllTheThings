@@ -28,7 +28,7 @@ _.GroupFinder =
 					un(2, i(51997)),	-- Stalwart Spaulders
 					i(51990),			-- Stalwart Treads			— 4/16/19
 					i(51994),			-- Tumultuous Cloak
-					i(160598),			-- Tumultuous Cloak			— 4/16/19
+					i(160598),			-- Tumultuous Cloak			— 4/21/19
 					i(160597),			-- Tumultuous Cloak			— 4/7/19
 					i(51996),			-- Tumultuous Necklace		- 4/19/19
 					i(51992),			-- Tumultuous Ring [INT]

@@ -42,10 +42,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					ach(2049, {	-- Twilight Assist [10 player]
 						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(43992),	-- Volitant Amulet		** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
-							i(43988),	-- Gale-Proof Cloak
-							i(43990),	-- Blade-Scarred Tunic
-							i(43989),	-- Remembrance Girdle	** Confirmed Drop 4/19/19 [1 Drake up]
+							i(43992),	-- Volitant Amulet			//** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
+							i(43988),	-- Gale-Proof Cloak			//** Confirmed Drop 4/19/19 [1 Drake up]
+							i(43990),	-- Blade-Scarred Tunic		//** Confirmed Drop 4/19/19 [1 Drake up]
+							i(43989),	-- Remembrance Girdle		//** Confirmed Drop 4/19/19 [1 Drake up]
 							i(43991),	-- Legguards of Composure
 						},
 					}),					
@@ -54,7 +54,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["g"] = {
 							i(43995),	-- Enamored Cowl
 							i(43998),	-- Chestguard of Flagrant Prowess
-							i(43994),	-- Belabored Legplates
+							i(43994),	-- Belabored Legplates		//** Confirmed Drop 4/19/19 [2 Drakes(s) up]
 							i(43996),	-- Sabatons of Firmament
 							i(43993),	-- Greatring of Collision
 						},
@@ -63,13 +63,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- of the Nightfall
 							["titleID"] = 107,	-- of the Nightfall
 						},
-						i(43986)	-- Reins of the Black Drake 	** Confirmed Drop 4/19/19 [3 Drakes up]
+						i(43986)	-- Reins of the Black Drake 	//** Confirmed Drop 4/19/19 [3 Drakes up]
 					}),
 					{	-- Champion of the Frozen Wastes: Sartharion
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
 					},
-					i(40613, {	-- Gloves of the Lost Conqueror		** Confirmed Drop 4/19/19 [1 Drake up]
+					i(40613, {	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
 						i(39634),	-- Heroes' Redemption Gauntlets
 						i(39632),	-- Heroes' Redemption Gloves
 						i(39639),	-- Heroes' Redemption Handguards
@@ -85,7 +85,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(39609),	-- Heroes' Dreadnaught Gauntlets
 						i(39622),	-- Heroes' Dreadnaught Handguards
 					}),
-					i(40615, {	-- Gloves of the Lost Vanquisher
+					i(40615, {	-- Gloves of the Lost Vanquisher	//** Confirmed Drop 4/19/19 [2 Drakes(s) up]
 						i(39618),	-- Heroes' Scourgeborne Gauntlets
 						i(39624),	-- Heroes' Scourgeborne Handguards
 						i(39544),	-- Heroes' Dreamwalker Gloves
@@ -95,12 +95,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(39560),	-- Heroes' Bonescythe Gauntlets
 					}),
 					i(40429),	-- Crimson Steel
-					i(40428),	-- Titan's Outlook			** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
-					i(40427),	-- Circle of Arcane Streams	** Confirmed Drop 4/19/19 [1 Drake up]
-					i(40426),	-- Signet of the Accord		** Confirmed Drop 4/19/19 [3 Drakes(s) up]
-					i(40430),	-- Majestic Dragon Figurine
-					i(43345),	-- Dragon Hide Bag			** Confirmed Drop 4/19/19 [3 Drakes(s) up]
-					{	-- Satchel of Spoils				** Confirmed Drop 4/19/19 [3 Drakes(s) up]
+					i(40428),	-- Titan's Outlook			//** Confirmed Drop 4/19/19 [1/2/3 Drake(s) up]
+					i(40427),	-- Circle of Arcane Streams	//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(40426),	-- Signet of the Accord		//** Confirmed Drop 4/19/19 [2/3 Drakes(s) up]
+					i(40430),	-- Majestic Dragon Figurine	//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(43345),	-- Dragon Hide Bag			//** Confirmed Drop 4/19/19 [1/2/3 Drakes(s) up]
+					{	-- Satchel of Spoils				//** Confirmed Drop 4/19/19 [1/2/3 Drakes(s) up]
 						["itemID"] = 43347,	-- Satchel of Spoils
 						["description"] = "Contains gold.",						
 					},
@@ -139,17 +139,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						-- Note!! Even with 1 drake up you can still get 0 loot from the table 4/19/19
 						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(44003),	-- Upstanding Spaulders				** Confirmed Drop 4/19/19 [2 Drakes up]
-							i(44000),	-- Dragonstorm Breastplate			** Confirmed Drop 4/19/19 [3 Drakes up]
-							i(44002),	-- The Sanctum's Flowing Vestments	** Confirmed Drop 4/19/19 [2 Drakes up]
+							i(44003),	-- Upstanding Spaulders				//** Confirmed Drop 4/19/19 [2 Drakes up]
+							i(44000),	-- Dragonstorm Breastplate			//** Confirmed Drop 4/19/19 [2/3 Drakes up]
+							i(44002),	-- The Sanctum's Flowing Vestments	//** Confirmed Drop 4/19/19 [2 Drakes up]
 							i(44004),	-- Bountiful Gauntlets
 						},
 					}),
 					ach(2053, {	-- Twilight Duo [25 player]
 						["description"] = "With only 2 drakes up loot from this table isn't always guaranteed.",
 						["g"] = {
-							i(44007),	-- Headpiece of Reconciliation	** Confirmed Drop 4/19/19 [2/3 Drakes up]
-							i(44006),	-- Obsidian Greathelm			** Confirmed Drop 4/19/19 [2 Drakes up]
+							i(44007),	-- Headpiece of Reconciliation	//** Confirmed Drop 4/19/19 [2/3 Drakes up]
+							i(44006),	-- Obsidian Greathelm			//** Confirmed Drop 4/19/19 [2 Drakes up]
 							i(44005),	-- Pennant Cloak
 							i(44008),	-- Unsullied Cuffs
 							i(44011),	-- Leggings of the Honored
@@ -159,13 +159,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{	-- Twilight Vanquisher
 							["titleID"] = 89,	-- Twilight Vanquisher
 						},
-						i(43954)	-- Reins of the Twilight Drake		** Confirmed Drop 4/19/19 [3 Drakes up]
+						i(43954)	-- Reins of the Twilight Drake		//** Confirmed Drop 4/19/19 [3 Drakes up]
 					}),
 					{	-- Champion of the Frozen Wastes: Sartharion
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
 					},
-					i(40628, {	-- Gauntlets of the Lost Conqueror		** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40628, {	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40575),	-- Valorous Redemption Gauntlets
 						i(40570),	-- Valorous Redemption Gloves
 						i(40580),	-- Valorous Redemption Handguards
@@ -181,7 +181,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40527),	-- Valorous Dreadnaught Gauntlets
 						i(40545),	-- Valorous Dreadnaught Handguards
 					}),
-					i(40630, {	-- Gauntlets of the Lost Vanquisher		** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40630, {	-- Gauntlets of the Lost Vanquisher		//** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40552),	-- Valorous Scourgeborne Gauntlets
 						i(40563),	-- Valorous Scourgeborne Handguards
 						i(40466),	-- Valorous Dreamwalker Gloves
@@ -190,19 +190,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(40415),	-- Valorous Frostfire Gloves
 						i(40496),	-- Valorous Bonescythe Gauntlets
 					}),
-					i(40455),	-- Staff of Restraint					** Confirmed Drop 4/19/19 [2 Drakes up]
+					i(40455),	-- Staff of Restraint					//** Confirmed Drop 4/19/19 [2 Drakes up]
 					i(40451),	-- Hyaline Helm of the Sniper
-					i(40437),	-- Concealment Shoulderpads				** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40438),	-- Council Chamber Epaulets				** Confirmed Drop 4/19/19 [1 Drake up]
-					i(40439),	-- Mantle of the Eternal Sentinel		** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40453),	-- Chestplate of the Great Aspects		** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40446),	-- Dragon Brood Legguards				** Confirmed Drop 4/19/19 [2 Drakes up]
-					i(40433),	-- Wyrmrest Band						** Confirmed Drop 4/19/19 [1 Drake up]
-					i(43999),	-- Ring of the Empty Horizon			** Confirmed Drop 4/19/19 [3 Drakes up]
-					i(40431),	-- Fury of the Five Flights				** Confirmed Drop 4/19/19 [1/3 Drakes up]
-					i(40432),	-- Illustration of the Dragon Soul		** Confirmed Drop 4/19/19 [1 Drake up]
-					i(43345),	-- Dragon Hide Bag
-					{	-- Large Satchel of Spoils
+					i(40437),	-- Concealment Shoulderpads				//** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40438),	-- Council Chamber Epaulets				//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(40439),	-- Mantle of the Eternal Sentinel		//** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40453),	-- Chestplate of the Great Aspects		//** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40446),	-- Dragon Brood Legguards				//** Confirmed Drop 4/19/19 [2 Drakes up]
+					i(40433),	-- Wyrmrest Band						//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(43999),	-- Ring of the Empty Horizon			//** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40431),	-- Fury of the Five Flights				//** Confirmed Drop 4/19/19 [1/3 Drakes up]
+					i(40432),	-- Illustration of the Dragon Soul		//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(43345),	-- Dragon Hide Bag						//** Confirmed Drop 4/19/19 [1/2/3 Drakes up]
+					{	-- Large Satchel of Spoils						//** Confirmed Drop 4/19/19 [1/2/3 Drakes up]
 						["itemID"] = 43346,	-- Large Satchel of Spoils
 						["description"] = "Contains gold.",						
 					},
