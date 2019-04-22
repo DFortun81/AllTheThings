@@ -419,6 +419,7 @@ _.Zones =
 					qart(q(45570, {	-- In Safer Hands -- possibly legacy now that mage tower is unavailable?
 						["qg"] = 117252,	-- Archmage Xylem
 						["coord"] = { 25.2, 38.0, 76 },
+						["u"] = 41,		-- Was part of the quest to unlock appearance and can't get anymore
 					})),
 					{	-- In The Face!
 						["questID"] = 14472,

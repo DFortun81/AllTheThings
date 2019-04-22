@@ -1704,7 +1704,7 @@ table.insert(settings.MostRecentTab.objects, scrollFrame);
 
 local child = CreateFrame("Frame", nil, scrollFrame);
 child:SetPoint("TOP", 0, 0);
-child:SetSize(600, 2000);
+child:SetSize(600, 2500);
 scrollbar.child = child;
 table.insert(settings.MostRecentTab.objects, child);
 child.CreateCheckBox = function(self, label, onRefresh, onClick)
@@ -2047,7 +2047,7 @@ local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 highChanceFrame:SetPoint("TOP",highChance,0,-20);
 highChanceFrame:SetPoint("LEFT", child, 4, 0);
 highChanceFrame:SetPoint("RIGHT", child, -4, 0);
-highChanceFrame:SetHeight(80);
+highChanceFrame:SetHeight(90);
 
 -- high Everything
 local highChanceAll = child:CreateCheckBox("Enable All \"High Chance\"",
@@ -2121,14 +2121,14 @@ end
 
 -- Legacy
 local legacy = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*20)))
+legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*15)))
 legacy:SetText("Legacy");
 
 local legacyFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 legacyFrame:SetPoint("TOP",legacy,0,-20);
 legacyFrame:SetPoint("LEFT", child, 4, 0);
 legacyFrame:SetPoint("RIGHT", child, -4, 0);
-legacyFrame:SetHeight(100);
+legacyFrame:SetHeight(120);
 
 -- Legacy Everything
 local legacyAll = child:CreateCheckBox("Enable All \"Legacy\"",
