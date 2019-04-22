@@ -469,7 +469,6 @@ _.WorldDrops =
 					un(7, i(6125)),	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
 					un(7, i(6134)),	-- Primitive Mantle (Former starter shirt for Troll Shaman)
 					un(7, i(6136)),	-- Trapper's Shirt (Former starter shirt for Troll Rogues)
-					i(6833),	-- White Tuxedo Shirt
 					i(68611),	-- Red Shirt
 				}),
 				n(-326, {	-- Wrist
