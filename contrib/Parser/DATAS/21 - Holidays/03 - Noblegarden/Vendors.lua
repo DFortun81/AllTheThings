@@ -138,10 +138,13 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["coords"] = {
 							
 						},
-						["maps"] = {
-							
-						},
 						--]]
+						["maps"] = {
+							27,	-- Dun Morogh
+							37,	-- Elwynn Forest
+							57,	-- Teldrassil
+							97,	-- Azuremyst Isle
+						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Noblegarden Chocolate	Note!! Currency used to purchase items
