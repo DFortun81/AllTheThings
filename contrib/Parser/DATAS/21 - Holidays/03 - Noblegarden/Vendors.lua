@@ -41,14 +41,14 @@ _.Holidays = bubbleDown({["u"] = 19},
 					-- Appearances --
 					un(19, i(74282)),	-- Black Spring Circlet
 					un(19, i(151804)),	-- Black Tuxedo Pants
---						un(19, i(164922)),	-- Blue Spring Circlet
---						un(19, i(164923)),	-- Brown Spring Circlet
+						un(19, i(164922)),	-- Blue Spring Circlet
+						un(19, i(164923)),	-- Brown Spring Circlet
 					un(19, i(151806)),	-- Elegant Dress
 					un(19, i(74283)),	-- Pink Spring Circlet
 					un(19, i(44803)),	-- Spring Circlet
 					un(19, i(44800)),	-- Spring Robes
 					un(19, i(6833)),	-- White Tuxedo Shirt
---						un(19, i(164924)),	-- Yellow Spring Circlet
+						un(19, i(164924)),	-- Yellow Spring Circlet
 					-- Pets --
 					un(19, i(141532)),	-- Noblegarden Bunny
 					un(19, i(116258)),	-- Mystical Spring Bouquet
