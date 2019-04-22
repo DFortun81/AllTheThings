@@ -13,9 +13,15 @@ _.Holidays = bubbleDown({["u"] = 19},
 					{	-- Noblegarden Merchant
 						["npcID"] = 32837,	-- Noblegarden Merchant
 						["coords"] = {
+							{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
+							{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
 							{ 47.64, 47.31, 94 },	-- Falconwing Square, Eversong Woods
+							{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
 						},
 						["maps"] = {
+							1,	-- Durotar
+							7,	-- Mulgore
+							18,	-- Tirisfal Glades
 							94,	-- Eversong Woods
 						},
 						["races"] = HORDE_ONLY,
@@ -128,12 +134,14 @@ _.Holidays = bubbleDown({["u"] = 19},
 					},
 					{	-- Noblegarden Vendor
 						["npcID"] = 32836,	-- Noblegarden Vendor
+						--[[
 						["coords"] = {
 							
 						},
 						["maps"] = {
 							
 						},
+						--]]
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Noblegarden Chocolate	Note!! Currency used to purchase items
