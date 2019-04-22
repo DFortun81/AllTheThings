@@ -134,11 +134,12 @@ _.Holidays = bubbleDown({["u"] = 19},
 					},
 					{	-- Noblegarden Vendor
 						["npcID"] = 32836,	-- Noblegarden Vendor
-						--[[
 						["coords"] = {
-							
+							{ 49.01, 51.19, 97 },	-- Azure Watch, Azuremyst Isle
+							{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
+							{ 43.03, 65.32, 37 },	-- Goldshire, Elwynn Forest
+							{ 54.11, 50.81, 27 },	-- Kharanos, Dun Morogh
 						},
-						--]]
 						["maps"] = {
 							27,	-- Dun Morogh
 							37,	-- Elwynn Forest
