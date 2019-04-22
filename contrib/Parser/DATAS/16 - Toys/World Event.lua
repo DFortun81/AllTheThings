@@ -1,4 +1,4 @@
----------------------------------------------
+	---------------------------------------------
 --         T O Y S       M O D U L E       --
 ---------------------------------------------
 _.Toys =
@@ -94,6 +94,7 @@ _.Toys =
 				i(116758),	-- Brewfest Banner
 				i(71137), 	-- Brewfest Keg Pony
 				i(33927),	-- Brewfest Pony Keg
+				i(166747),	-- Brewfest Reveler's Hearthstone
 				i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
 				i(90427),	-- Pandaren Brewpack
 				i(116757),	-- Steamworks Sausage Grill
@@ -133,6 +134,7 @@ _.Toys =
 				i(90888),	-- Foot Ball
 				i(104324),	-- Foot Ball
 				i(116692), 	-- Fuzzy Green Lounge Cushion
+				i(162973),	-- Greatfather Winter's Hearthstone
 				i(151343), 	-- Hearthstation [Alliance]
 				i(151344), 	-- Hearthstation [Horde]
 				i(46709), 	-- MiniZep Controller
@@ -235,6 +237,7 @@ _.Toys =
 				i(34686), 	-- Brazier of Dancing Flames
 				i(116440), 	-- Burning Defender's Medallion
 				i(116435),	-- Cozy Bonfire
+				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
 			},
 			["achievementID"] = 1038,	-- The Flame Warden
@@ -245,11 +248,22 @@ _.Toys =
 				i(34686), 	-- Brazier of Dancing Flames
 				i(116440), 	-- Burning Defender's Medallion
 				i(116435),	-- Cozy Bonfire
+				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
 			},
 			["achievementID"] = 1039,	-- The Flame Keeper
 			["u"] = 21,
 		})),
+		{	-- Noblegarden
+			["npcID"] = -51,			-- Noblegarden
+			["achievementID"] = 2798,	-- Noble Gardener
+			["g"] = {
+				{	-- Noble Gardener's Hearthstone
+					["itemID"] = 165802,	-- Noble Gardener's Hearthstone
+					["u"] = 19,				-- Noble Garden
+				},
+			},
+		},			
 		n(-60, {    -- Pilgrim's Bounty
 			["groups"]  = {
 				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
