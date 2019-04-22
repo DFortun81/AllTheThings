@@ -55,9 +55,9 @@ _.Zones =
 								i(24581, {	-- Mark of Thrallmar
 									i(27930),	-- Splintermark
 									i(27939),	-- Incendic Rod
-									i(27921),	-- Mark of Conquest
-									i(27922),	-- Mark of Defiance
-									i(27927),	-- Mark of Vindication
+									i(27920),	-- Mark of Conquest
+									i(27924),	-- Mark of Defiance
+									i(27926),	-- Mark of Vindication
 								}),
 							},
 						}),

@@ -3351,6 +3351,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 60.4, 55.2, 502 },
 							["g"] = {
+								un(2, i(24551)),	-- Talisman of the Horde
 								i(146646),	-- Arsenal: Hateful Gladiator's Weapons
 								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
 									i(41913),	-- Hateful Gladiator's Satin Hood

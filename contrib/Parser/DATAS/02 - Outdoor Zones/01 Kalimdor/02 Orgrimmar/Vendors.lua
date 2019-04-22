@@ -1043,6 +1043,7 @@ _.Zones =
 							i(16486), 	-- First Sergeant's Silk Cuffs
 							i(16497), 	-- First Sergeant's Leather Armguards
 							i(16532), 	-- First Sergeant's Mail Wristguards
+							un(2, i(24551)),	-- Talisman of the Horde
 							i(16533), 	-- Warlord's Silk Cowl
 							i(16534), 	-- General's Silk Trousers
 							i(16535), 	-- Warlord's Silk Raiment

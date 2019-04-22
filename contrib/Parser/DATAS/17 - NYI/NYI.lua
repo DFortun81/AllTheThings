@@ -160,6 +160,9 @@ _.NeverImplemented =
 			un(1, i(109473)),	-- Unknown
 			un(1, i(109477)),	-- Unknown
 			un(1, i(109521)),	-- Unknown
+			un(1, i(109540)),	-- Unknown
+			un(1, i(109542)),	-- Unknown
+			un(1, i(109546)),	-- Unknown
 			un(1, i(32098)),	-- Chancellor's Mooncloth Cowl
 			un(1, i(32099)),	-- Chancellor's Mooncloth Legs
 			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
@@ -340,6 +343,18 @@ _.NeverImplemented =
 			un(1, i(54687)),	-- Sentinel Breastplate
 			un(1, i(54724)),	-- Shadowcraft Bracers
 			un(1, i(54725)),	-- Shadowcraft Gloves
+			un(1, i(109276)),	-- Unknown
+			un(1, i(109287)),	-- Unknown
+			un(1, i(109294)),	-- Unknown
+			un(1, i(109305)),	-- Unknown
+			un(1, i(109306)),	-- Unknown
+			un(1, i(109307)),	-- Unknown
+			un(1, i(109308)),	-- Unknown
+			un(1, i(109345)),	-- Unknown
+			un(1, i(109346)),	-- Unknown
+			un(1, i(109347)),	-- Unknown
+			un(1, i(109348)),	-- Unknown
+			un(1, i(109349)),	-- Unknown
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
 			un(1, i(54681)),	-- Thick Murloc Armor
@@ -732,6 +747,10 @@ _.NeverImplemented =
 			un(1, i(166412)),	-- flaskzertaurens plate pauldrons
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(107862)),	-- Unknown
+			un(1, i(107865)),	-- Unknown
+			un(1, i(107870)),	-- Unknown
+			un(1, i(107873)),	-- Unknown
 			un(1, i(25797)),	-- Crushing Grasp
 			un(1, i(29237)),	-- Warpath Bracers
 			un(1, i(37175)),	-- Glassy Silver Bracers
@@ -980,6 +999,8 @@ _.NeverImplemented =
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
 			un(1, i(167138)),	-- Unknown
+			un(1, i(157746)),	-- Graven Keepsake
+			un(1, i(157747)),	-- Illuminated Charm
 			un(1, i(167139)),	-- Unknown
 			un(1, i(46839)),	-- Unknown
 			un(1, i(46840)),	-- Unknown

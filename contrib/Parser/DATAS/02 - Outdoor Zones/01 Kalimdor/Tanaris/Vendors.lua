@@ -811,6 +811,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 28.0, 71 },
 						["g"] = {
+							un(2, i(24551)),	-- Talisman of the Horde
 							i(64782),	-- Bloodthirsty Gladiator's Links of Cruelty
 							i(64681),	-- Bloodthirsty Gladiator's Armbands of Meditation
 							i(64683),	-- Bloodthirsty Gladiator's Armplates of Alacrity

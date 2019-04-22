@@ -41,6 +41,7 @@ _.WorldDrops =
 					i(25068),	-- Kunzite Necklace
 					i(25063),	-- Multi-Colored Beads
 					i(31275),	-- Necklace of Trophies
+					i(31147),	-- Pendant of Cunning
 					i(24095),	-- Pendant of Withering
 					i(25066),	-- Pink Sapphire Necklace
 					i(25060),	-- Sunstone Necklace

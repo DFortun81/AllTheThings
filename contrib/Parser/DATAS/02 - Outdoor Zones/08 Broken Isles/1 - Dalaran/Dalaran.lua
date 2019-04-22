@@ -4918,6 +4918,9 @@ _.Zones =
 							i(140274),	-- River Calf Pet
 						}),
 					}),
+					n(110642, {		-- Fizzi Liverzapper
+						i(2460),	-- Elixir of Tongues
+					}),
 					nh(98724, {	-- Giada Goldleash
 						i(116415, {	-- Pet Charm
 							i(127704),	-- Bloodthorn Hatchling Pet
