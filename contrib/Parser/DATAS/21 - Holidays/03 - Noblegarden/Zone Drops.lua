@@ -58,6 +58,10 @@ _.Holidays = bubbleDown({["u"] = 19},
 								["itemID"] = 44800,			-- Spring Robes
 								["u"] = 19,					-- Noblegarden Filter
 							},
+							{	-- Swift Springstrider
+								["itemID"] = 72145,			-- Swift Springstrider
+								["u"] = 19,					-- Noblegarden Filter
+							},
 							{	-- White Tuxedo Shirt
 								["itemID"] = 6833,			-- White Tuxedo Shirt
 								["u"] = 19,					-- Noblegarden Filter
