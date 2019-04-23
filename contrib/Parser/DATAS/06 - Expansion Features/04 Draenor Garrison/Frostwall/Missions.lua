@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		h(m(590, {	-- Frostwall
 			["g"] = {
 				nh(-299, { 	-- Missions
-					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r"
+					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
 					["g"] = {
 						n(85805, {	-- Command Table [Garrison Level 3]
 							["modelScale"] = 2.5,

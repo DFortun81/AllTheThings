@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		m(582, {	-- Lunarfall
 			["g"] = {	
 				n(-299, { 	-- Missions
-					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r"
+					["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
 					["g"] = {
 						n(84698, {	-- Command Table
 							["modelScale"] = 2.5,

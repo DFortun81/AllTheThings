@@ -559,7 +559,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 									i(53068),	-- Lavascale Catfish
 								},
 							}),
-						}),
+						},
 					}),
 					n(52418, {			-- Lost Offspring of Gahz'ranka
 						["g"] = {
