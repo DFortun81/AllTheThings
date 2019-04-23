@@ -1713,7 +1713,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["groups"] = {
 					n(-1, {		-- Shared Boss Loot
-						i(104275, {	-- Twisted Treasures of the Vale
+						un(48, i(104275, {	-- Twisted Treasures of the Vale
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 							--[[
 							["crs"] = {
@@ -1726,34 +1726,20 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 							]]--
 							["groups"] = {
-								i(105824),	-- Aeth's Swiftcinder Cloak
-								i(105816),	-- Brave Niunai's Cloak
-								i(105812),	-- Cape of the Alpha
-								i(105818),	-- Crimson Gauntlets of Death
-								i(105815),	-- Drape of the Omega
-								i(105823),	-- Gauntlets of Discarded Time
-								i(105813),	-- Kalaena's Arcane Handwraps
-								i(105819),	-- Keengrip Arrowpullers
-								i(105820),	-- Marco's Crackling Gloves
-								i(105821),	-- Romy's Reliable Grips
-								i(105814),	-- Seebo's Sainted Touch
-								i(105817),	-- Siid's Silent Stranglers
-								i(105825),	-- Turtleshell Greatcloak
-								i(105822),	-- Zoid's Molten Gauntlets
-								un(2, i(105824)),	-- Aeth's Swiftcinder Cloak LFR
-								un(2, i(105816)),	-- Brave Niunai's Cloak LFR
-								un(2, i(105812)),	-- Cape of the Alpha LFR
-								un(2, i(105815)),	-- Drape of the Omega LFR
-								un(2, i(105825)),	-- Turtleshell Greatcloak LFR
-								un(2, i(105813)),	-- Kalaena's Arcane Handwraps LFR
-								un(2, i(105814)),	-- Seebo's Sainted Touch LFR
-								un(2, i(105818)),	-- Crimson Gauntlets of Death LFR
-								un(2, i(105817)),	-- Siid's Silent Stranglers LFR
-								un(2, i(105819)),	-- Keengrip Arrowpullers LFR
-								un(2, i(105820)),	-- Marco's Crackling Gloves LFR
-								un(2, i(105823)),	-- Gauntlets of Discarded Time LFR
-								un(2, i(105821)),	-- Romy's Reliable Grips LFR
-								un(2, i(105822)),	-- Zoid's Molten Gauntlets LFR										
+								un(48, i(105824)),	-- Aeth's Swiftcinder Cloak
+								un(48, i(105816)),	-- Brave Niunai's Cloak
+								un(48, i(105812)),	-- Cape of the Alpha
+								un(48, i(105818)),	-- Crimson Gauntlets of Death
+								un(48, i(105815)),	-- Drape of the Omega
+								un(48, i(105823)),	-- Gauntlets of Discarded Time
+								un(48, i(105813)),	-- Kalaena's Arcane Handwraps
+								un(48, i(105819)),	-- Keengrip Arrowpullers
+								un(48, i(105820)),	-- Marco's Crackling Gloves
+								un(48, i(105821)),	-- Romy's Reliable Grips
+								un(48, i(105814)),	-- Seebo's Sainted Touch
+								un(48, i(105817)),	-- Siid's Silent Stranglers
+								un(48, i(105825)),	-- Turtleshell Greatcloak
+								un(48, i(105822)),	-- Zoid's Molten Gauntlets								
 								-- Pets / Mounts
 								i(94295),	-- Primal Egg
 								i(44984),	-- Ammen Vale Lashling
@@ -1788,7 +1774,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(48124),	-- Razormaw Hatchling
 								i(48126),	-- Razzashi Hatchling
 							},
-						}),
+						})),
 						i(105714, {	-- Coalesced Turmoil
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 							--[[
@@ -1815,20 +1801,20 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 							]]--
 							["groups"] = {
-								i(105824),	-- Aeth's Swiftcinder Cloak
-								i(105816),	-- Brave Niunai's Cloak
-								i(105812),	-- Cape of the Alpha
-								i(105818),	-- Crimson Gauntlets of Death
-								i(105815),	-- Drape of the Omega
-								i(105823),	-- Gauntlets of Discarded Time
-								i(105813),	-- Kalaena's Arcane Handwraps
-								i(105819),	-- Keengrip Arrowpullers
-								i(105820),	-- Marco's Crackling Gloves
-								i(105821),	-- Romy's Reliable Grips
-								i(105814),	-- Seebo's Sainted Touch
-								i(105817),	-- Siid's Silent Stranglers
-								i(105825),	-- Turtleshell Greatcloak
-								i(105822),	-- Zoid's Molten Gauntlets
+								un(48, i(105824)),	-- Aeth's Swiftcinder Cloak
+								un(48, i(105816)),	-- Brave Niunai's Cloak
+								un(48, i(105812)),	-- Cape of the Alpha
+								un(48, i(105818)),	-- Crimson Gauntlets of Death
+								un(48, i(105815)),	-- Drape of the Omega
+								un(48, i(105823)),	-- Gauntlets of Discarded Time
+								un(48, i(105813)),	-- Kalaena's Arcane Handwraps
+								un(48, i(105819)),	-- Keengrip Arrowpullers
+								un(48, i(105820)),	-- Marco's Crackling Gloves
+								un(48, i(105821)),	-- Romy's Reliable Grips
+								un(48, i(105814)),	-- Seebo's Sainted Touch
+								un(48, i(105817)),	-- Siid's Silent Stranglers
+								un(48, i(105825)),	-- Turtleshell Greatcloak
+								un(48, i(105822)),	-- Zoid's Molten Gauntlets	
 								i(44984),	-- Ammen Vale Lashling
 								i(54436),	-- Blue Clockwork Rocket Bot
 								i(44970),	-- Dun Morogh Cub

@@ -18,35 +18,35 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["groups"] = {
-							i(95618, {	-- Cache of Mogu Riches
+							un(48, i(95618, {	-- Cache of Mogu Riches
 								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								["groups"] = {
-									i(86884),	-- Belt of Embodied Terror
-									i(86900),	-- Binder's Chain of Unending Summer
-									i(86850),	-- Darting Damselfly Cuffs
-									i(86844),	-- Gleaming Moth Cuffs
-									i(86895),	-- Healer's Belt of Final Winter
-									i(86846),	-- Inlaid Cricket Bracers
-									i(86896),	-- Invoker's Belt of Final Winter
-									i(86772),	-- Jade Bandit Figurine
-									i(86771),	-- Jade Charioteer Figurine
-									i(86774),	-- Jade Courtesan Figurine
-									i(86773),	-- Jade Magistrate Figurine
-									i(86775),	-- Jade Warlord Figurine
-									i(86847),	-- Jagged Hornet Bracers
-									i(86842),	-- Luminescent Firefly Wristguards
-									i(86902),	-- Mender's Girdle of Endless Spring
-									i(86904),	-- Patroller's Girdle of Endless Spring
-									i(86845),	-- Pearlescent Butterfly Wristbands
-									i(86849),	-- Plated Locust Bracers
-									i(86903),	-- Protector's Girdle of Endless Spring
-									i(86901),	-- Ranger's Chain of Unending Summer
-									i(86848),	-- Serrated Wasp Bracers
-									i(86841),	-- Shining Cicada Bracers
-									i(86843),	-- Smooth Beetle Wristbands
-									i(86897),	-- Sorcerer's Belt of Final Winter
-									i(86899),	-- Stalker's Cord of Eternal Autumn
-									i(86898),	-- Weaver's Cord of Eternal Autumn
+									un(48, i(86884)),	-- Belt of Embodied Terror
+									un(48, i(86900)),	-- Binder's Chain of Unending Summer
+									un(48, i(86850)),	-- Darting Damselfly Cuffs
+									un(48, i(86844)),	-- Gleaming Moth Cuffs
+									un(48, i(86895)),	-- Healer's Belt of Final Winter
+									un(48, i(86846)),	-- Inlaid Cricket Bracers
+									un(48, i(86896)),	-- Invoker's Belt of Final Winter
+									un(48, i(86772)),	-- Jade Bandit Figurine
+									un(48, i(86771)),	-- Jade Charioteer Figurine
+									un(48, i(86774)),	-- Jade Courtesan Figurine
+									un(48, i(86773)),	-- Jade Magistrate Figurine
+									un(48, i(86775)),	-- Jade Warlord Figurine
+									un(48, i(86847)),	-- Jagged Hornet Bracers
+									un(48, i(86842)),	-- Luminescent Firefly Wristguards
+									un(48, i(86902)),	-- Mender's Girdle of Endless Spring
+									un(48, i(86904)),	-- Patroller's Girdle of Endless Spring
+									un(48, i(86845)),	-- Pearlescent Butterfly Wristbands
+									un(48, i(86849)),	-- Plated Locust Bracers
+									un(48, i(86903)),	-- Protector's Girdle of Endless Spring
+									un(48, i(86901)),	-- Ranger's Chain of Unending Summer
+									un(48, i(86848)),	-- Serrated Wasp Bracers
+									un(48, i(86841)),	-- Shining Cicada Bracers
+									un(48, i(86843)),	-- Smooth Beetle Wristbands
+									un(48, i(86897)),	-- Sorcerer's Belt of Final Winter
+									un(48, i(86899)),	-- Stalker's Cord of Eternal Autumn
+									un(48, i(86898)),	-- Weaver's Cord of Eternal Autumn
 									i(44984),	-- Ammen Vale Lashling
 									i(54436),	-- Blue Clockwork Rocket Bot
 									i(44970),	-- Dun Morogh Cub
@@ -84,7 +84,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(48124),	-- Razormaw Hatchling
 									i(48126),	-- Razzashi Hatchling
 								},
-							}),
+							})),
 						},
 						--[[
 						["crs"] = {
