@@ -1775,7 +1775,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(48126),	-- Razzashi Hatchling
 							},
 						})),
-						i(105714, {	-- Coalesced Turmoil
+						un(49, i(105714, {	-- Coalesced Turmoil
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 							--[[
 							["crs"] = {
@@ -1848,7 +1848,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(48124),	-- Razormaw Hatchling
 								i(48126),	-- Razzashi Hatchling
 							},
-						}),
+						})),
 					}),
 					ach(8458, {	-- Vale of Eternal Sorrows
 						["crs"] = {
