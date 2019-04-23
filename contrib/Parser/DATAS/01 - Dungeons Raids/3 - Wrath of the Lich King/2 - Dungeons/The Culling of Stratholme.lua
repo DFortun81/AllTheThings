@@ -7,6 +7,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["mapID"] = 130,
 		["maps"] = { 131 },
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 56.9, 82.4, 75 },	-- actual dungeon entrance
+		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				qg(26527, q(13149, {	-- Dispelling Illusions

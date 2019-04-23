@@ -7,6 +7,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["lvl"] = 85,
 		["mapID"] = 399,
 		["maps"] = { 400 },
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 66.2, 29.2, 75 },	-- actual dungeon entrance
+		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				i(77957, {	-- Urgent Twilight Missive
@@ -25,7 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0,   {	-- Zone Drop
 				["crs"] = {
 					55559,	-- Crystalline Elemental
 					54555,	-- Frozen Servitor

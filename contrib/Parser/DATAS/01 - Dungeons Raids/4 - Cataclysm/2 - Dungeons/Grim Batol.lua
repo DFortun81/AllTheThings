@@ -6,8 +6,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 	inst(71, { 	-- Grim Batol
 		["lvl"] = 83,
 		["mapID"] = 293,
-		["groups"] = {
-			d( 1, {	-- Normal
+		["coord"] = { 19.2, 54.2, 241 },
+		["g"] = {
+			d(1,  {	-- Normal
 				n(-17, {	-- Quests 				
 					q(28854, {	-- Closing A Dark Chapter
 						i(66933),	-- Breastplate of the Witness
@@ -20,7 +21,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66938),	-- Tooranu's Spaulders
 					}),
 				}),
-				n(0, {		-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(56220),	-- Abandoned Dark Iron Ring
 					i(56218),	-- Curse-Tainted Leggings		
 					i(56219),	-- Shroud of Dark Memories
@@ -68,9 +69,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56123)),	-- Red Scale Boots [Replaced with 56451]		
 				})),
 				cr(40484, e(134, {	-- Erudax
-					{	-- Grim Batol
-						["achievementID"] = 4840,	-- Grim Batol
-					},
+					ach(4840),	-- Grim Batol
 					i(56461),	-- Staff of Siphoned Essences
 					i(56456),	-- Wild Hammer
 					i(56459),	-- Mace of Transformed Bone
@@ -94,14 +93,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(2, i(56132)),	-- Mark of Khardros [Replaced with 56458]
 				})),
 			}),
-			d( 2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(39625, e(131, {	-- General Umbriss
-						{	-- Umbrage for Umbriss
-							["achievementID"] = 5297,	-- Umbrage for Umbriss
-						},
+						ach(5297),	-- Umbrage for Umbriss
 						i(56441),	-- Modgug's Blade
 						i(157612), 	-- Dragonkin Ward (Added 7.3.5)
 						i(56443),	-- Wildhammer Riding Helm
@@ -129,12 +126,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56451),	-- Red Scale Boots
 					})),
 					cr(40484, e(134, {	-- Erudax
-						{	-- Don't Need to Break Eggs to Make an Omelet
-							["achievementID"] = 5298,	-- Don't Need to Break Eggs to Make an Omelet
-						},
-						{	-- Heroic: Grim Batol
-							["achievementID"] = 5062,	-- Heroic: Grim Batol
-						},
+						ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
+						ach(5062),	-- Heroic: Grim Batol
 						i(56461),	-- Staff of Siphoned Essences
 						i(56456),	-- Wild Hammer
 						i(56459),	-- Mace of Transformed Bone
@@ -151,7 +144,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 86,
-				["groups"] = {
+				["g"] = {
 					cr(39625, e(131, {	-- General Umbriss
 						i(133283),	-- Modgud's Blade
 						i(133285),	-- Wildhammer Riding Helm
