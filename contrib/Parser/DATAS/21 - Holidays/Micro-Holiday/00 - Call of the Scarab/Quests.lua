@@ -5,7 +5,7 @@ _.Holidays =
 {
 	{	-- Call of the Scarab
 		["holidayID"] = 1574965,	-- Call of the Scarab
-		["u"] = 44,					-- Micro-Holiday Filter
+		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
 			{	-- Quests
 				["npcID"] = -17,	-- Quests

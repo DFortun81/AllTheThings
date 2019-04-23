@@ -1825,7 +1825,7 @@ local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate")
 unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
 unobtainableFrame:SetPoint("LEFT", child, 4, 0);
 unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
-unobtainableFrame:SetHeight(520);
+unobtainableFrame:SetHeight(535);
 
 -- unobtainable enable
 local unobtainableEnable = child:CreateCheckBox("Filter Unobtainable Items",
@@ -1966,7 +1966,7 @@ local possChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 possChanceFrame:SetPoint("TOP",possChance,0,-20);
 possChanceFrame:SetPoint("LEFT", child, 4, 0);
 possChanceFrame:SetPoint("RIGHT", child, -4, 0);
-possChanceFrame:SetHeight(60);
+possChanceFrame:SetHeight(75);
 
 -- possible Everything
 local possChanceAll = child:CreateCheckBox("Enable All \"Possible Chance\"",
@@ -2030,7 +2030,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		x = 0;
 		y = 20;
 		count = count + 1;
-		if count == 2 then
+		if count == 3 then
 			x = 300
 			y = 5
 			last = possChanceFrame
@@ -2128,7 +2128,7 @@ local legacyFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 legacyFrame:SetPoint("TOP",legacy,0,-20);
 legacyFrame:SetPoint("LEFT", child, 4, 0);
 legacyFrame:SetPoint("RIGHT", child, -4, 0);
-legacyFrame:SetHeight(120);
+legacyFrame:SetHeight(150);
 
 -- Legacy Everything
 local legacyAll = child:CreateCheckBox("Enable All \"Legacy\"",
