@@ -8,10 +8,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
 		["mapID"] = 282,
-		["groups"] = {
+		["coord"] = { 46.1, 47.9, 244 },
+		["g"] = {
 			e(139, {	-- Argaloth
 				["creatureID"] = 47120,
-				["groups"] = {
+				["g"] = {
 					ach(5416),	-- Pit Lord Argaloth
 					i(60673),	-- Vicious Gladiator's Choker of Accuracy
 					i(60670),	-- Vicious Gladiator's Choker of Proficiency
@@ -153,7 +154,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			e(339, {	-- Alizabal, Mistress of Hate
 				["creatureID"] = 55869,
-				["groups"] = {
+				["g"] = {
 					ach(6108),	-- Alizabal
 					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
 					i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
@@ -310,7 +311,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			e(140, {	-- Occu'thar
 				["creatureID"] = 52363,
-				["groups"] = {
+				["g"] = {
 					ach(6045),	-- Occu'thar
 					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
 					i(70381),	-- Ruthless Gladiator's Choker of Proficiency

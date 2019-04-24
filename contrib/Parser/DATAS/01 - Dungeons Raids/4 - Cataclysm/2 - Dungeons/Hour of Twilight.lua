@@ -11,23 +11,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 			{ 66.2, 29.2, 75 },	-- actual dungeon entrance
 		},
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
-				i(77957, {	-- Urgent Twilight Missive
-					q(30105, {	-- The Twilight Prophet
-						i(72884),	-- Writhing Wand
-						i(72886),	-- Thrall's Gratitude
-						i(76153),	-- Signet of the Twilight Prophet
-					}),
-				}),
 				q(30103, {	-- To Wyrmrest!
+					["sourceQuests"] = { 30102 },	-- The Hour of Twilight
 					["qgs"] = { 54548, 54634, 54972, 55779 },	-- Thrall (4 versions, all different areas of the dungeon)
-					["groups"] = {
+					["g"] = {
 						i(72858),	-- Safeguard Gloves
 						i(72887),	-- Cinch of the World Shaman
 						i(72888),	-- Ring of the Loyal Companion
 					},
 				}),
+				{	-- Urgent Twilight Missive > The Twilight Prophet
+					["sourceQuests"] = { 30102 },	-- The Hour of Twilight (did not drop for me before completing the chain)
+					["questID"] = 30105,	-- The Twilight Prophet
+					["itemID"] = 77957,	-- Urgent Twilight Missive
+					["qgs"] = {
+						54590,	-- Arcurion
+						54968,	-- Asira Dawnslayer (apparently can drop from this boss if someone queues into the dungeon with the first boss dead)
+					},
+					["g"] = {
+						i(72884),	-- Writhing Wand
+						i(72886),	-- Thrall's Gratitude
+						i(76153),	-- Signet of the Twilight Prophet
+					},
+				},
 			}),
 			n(0,   {	-- Zone Drop
 				["crs"] = {

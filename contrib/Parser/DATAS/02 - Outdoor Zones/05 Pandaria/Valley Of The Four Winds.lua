@@ -1893,8 +1893,8 @@ _.Zones =
 							un(2, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
 							un(2, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
 							un(2, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
-							un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of alacrity
-							un(2, i(91355)),	-- Tyrannical Gladiator's footguards of meditation
+							un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity
+							un(2, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation
 							--
 						},
 						["u"] = 43,
@@ -1903,6 +1903,34 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
+						-- These are the Season 13 ensembles.  
+						-- Other than these ensembles, it looks like the only source for lots of this gear is Nalak.
+						-- Take note of the opposite-faction appearances that are awarded so we can fill out both factions!
+						--	i(138689),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
+						--	i(138691),	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor (Druid)
+						--	i(138683),	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor (Death Knight)
+						--	i(138701),	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+						--	i(138693),	-- Ensemble: Tyrannical Gladiator's Ironskin Armor (Monk)
+						--	i(138695),	-- Ensemble: Tyrannical Gladiator's Leather Armor (Rogue)
+						--	i(138681),	-- Ensemble: Tyrannical Gladiator's Plate Armor (Warrior)
+						--	i(138687),	-- Ensemble: Tyrannical Gladiator's Ringmail Armor (Shaman)
+						--	i(138699),	-- Ensemble: Tyrannical Gladiator's Satin Armor (Priest)
+						--	i(138685),	-- Ensemble: Tyrannical Gladiator's Scaled Armor (Paladin)
+							i(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor (Mage)
+								i(91234),	-- Tyrannical Gladiator's Silk Cowl
+								i(91240),	-- Tyrannical Gladiator's Silk Amice
+								i(91238),	-- Tyrannical Gladiator's Silk Robe
+								i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess (the vendor sells the Seasion 14 version of this item, ID 99788)
+								i(91232),	-- Tyrannical Gladiator's Silk Handguards
+								i(91236),	-- Tyrannical Gladiator's Silk Trousers
+								-- Also unlocked the following Horde versions:
+								-- i(94381),	-- Tyrannical Gladiator's Silk Cowl
+								-- i(94389),	-- Tyrannical Gladiator's Silk Amice
+								-- i(94431),	-- Tyrannical Gladiator's Silk Robe
+								-- i(94362),	-- Tyrannical Gladiator's Silk Trousers
+								-- i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
+								-- i(94451),	-- Tyrannical Gladiator's Silk Handguards
+							}),
 							i(144246),	-- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
 							i(99796),	-- Tyrannical Gladiator's Battle Staff
@@ -2070,10 +2098,10 @@ _.Zones =
 							i(99960),	-- Tyrannical Gladiator's Plate Legguards
 							i(99961),	-- Tyrannical Gladiator's Plate Shoulders
 							-- Alliance only Set. Replaced with a normal set
-							un(2, i(91234)),	-- Tyrannical Gladiator's Silk Cowl)
-							un(2, i(91238)),	-- Tyrannical Gladiator's Silk Robe
-							un(2, i(91240)),	-- Tyrannical Gladiator's Silk Amice
-							un(2, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm)
+							-- un(2, i(91234)),	-- Tyrannical Gladiator's Silk Cowl) (available via S13 ensemble)
+							-- un(2, i(91238)),	-- Tyrannical Gladiator's Silk Robe (available via S13 ensemble)
+							-- un(2, i(91240)),	-- Tyrannical Gladiator's Silk Amice (available via S13 ensemble)
+							un(2, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm
 							un(2, i(91315)),	-- Tyrannical Gladiator's Mooncloth Robe
 							un(2, i(91317)),	-- Tyrannical Gladiator's Mooncloth Mantle
 						},

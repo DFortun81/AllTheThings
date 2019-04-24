@@ -847,6 +847,27 @@ _.Zones =
 								["itemID"] = 137642,	-- Mark of Honor
 								["coord"] = { 35.4, 83.2, 379 },
 								["g"] = {
+								-- These are the Season 13 ensembles.  
+								-- Other than these ensembles, it looks like the only source for lots of this gear is Nalak.
+								-- Take note of the opposite-faction appearances that are awarded so we can fill out both factions!
+								--	i(138689),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
+								--	i(138691),	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor (Druid)
+								--	i(138683),	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor (Death Knight)
+								--	i(138701),	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+								--	i(138693),	-- Ensemble: Tyrannical Gladiator's Ironskin Armor (Monk)
+								--	i(138695),	-- Ensemble: Tyrannical Gladiator's Leather Armor (Rogue)
+								--	i(138681),	-- Ensemble: Tyrannical Gladiator's Plate Armor (Warrior)
+								--	i(138687),	-- Ensemble: Tyrannical Gladiator's Ringmail Armor (Shaman)
+								--	i(138699),	-- Ensemble: Tyrannical Gladiator's Satin Armor (Priest)
+								--	i(138685),	-- Ensemble: Tyrannical Gladiator's Scaled Armor (Paladin)
+									i(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor (Mage)
+										i(94381),	-- Tyrannical Gladiator's Silk Cowl
+										i(94389),	-- Tyrannical Gladiator's Silk Amice
+										i(94431),	-- Tyrannical Gladiator's Silk Robe
+										i(94362),	-- Tyrannical Gladiator's Silk Trousers
+										i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
+										i(94451),	-- Tyrannical Gladiator's Silk Handguards
+									}),
 									i(144245),	-- Arsenal: Tyrannical Gladiator's Weapons
 									i(100171),	-- Tyrannical Gladiator's Barrier
 									i(99974),	-- Tyrannical Gladiator's Battle Staff

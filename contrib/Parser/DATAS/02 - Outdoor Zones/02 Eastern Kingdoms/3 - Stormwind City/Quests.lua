@@ -13,12 +13,9 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{	-- A Choice of Allies
-								["questID"] = 50239,	-- A Choice of Allies
+							qa(50239, {	-- A Choice of Allies
+								["coord"] = { 52.07, 13.43, 84 },
 								["qg"] = 126301,		-- Anduin Wyrnn
-								["coords"] = {
-									{ 52.07, 13.43, 84 },
-								},
 								["g"] = {
 									{	-- Dark Iron Dwaves
 										["achievementID"] = 12515,	-- Allied Races: Dark Iron Dwarf
@@ -229,7 +226,7 @@ _.Zones =
 									qa(49929),	-- The Call for Allies
 									un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
 								},
-							},
+							}),
 							qa(52946, {	-- A Dying World
 								["qg"] = 142930,	-- Halford Wyrmbane
 								["sourceQuests"] = { 51795 },	-- The Battle for Lordaeron
@@ -614,7 +611,13 @@ _.Zones =
 							qg(, q(34398)),	-- The Dark Portal
 							qg(, q(36881)),	-- The Dark Portal
 							qg(, qa( 7905)),	-- The Darkmoon Faire
-							qg(, qa(30095)),	-- The End Time
+		--]]
+							qa(30095, {	-- The End Time
+								["qg"] = 52408,	-- Coridormi
+								["lvl"] = 85,
+								["isBreadcrumb"] = true,
+							}),
+		--[[
 							qg(, qa(28826)),	-- The Eye of the Storm
 							qg(, qa(40517)),	-- The Fallen Lion
 		--]]

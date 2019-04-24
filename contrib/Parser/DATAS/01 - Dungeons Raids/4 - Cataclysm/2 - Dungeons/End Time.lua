@@ -11,19 +11,20 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 			{ 57.7, 30.4, 75 },	-- actual dungeon entrance
 		},
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(30097, {	-- Archival Purposes
 					["qg"] = 57864,	-- Alurmi
-					["groups"] = {
+					["g"] = {
 						i(72871),	-- Crescent Wand
 						i(72852),	-- Archivist's Gloves
 						i(72872),	-- Time Strand Gauntlets
 					},
 				}),
 				q(30096, {	-- Murozond
+					["sourceQuests"] = { 30095 },	-- The End Time
 					["qg"] = 54751,	-- Nozdormu
-					["groups"] = {
+					["g"] = {
 						i(72873),	-- Bronze Blaster
 						i(76152),	-- Cowl of Destiny
 						i(72875),	-- Time Twister's Gauntlets
@@ -32,6 +33,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 				q(30098, {	-- The Well of Eternity
 					["qg"] = 54751,	-- Nozdormu
+					["sourceQuests"] = { 30096 },	-- Murozond
 				}),
 			}),
 			d(  2, {	-- Heroic
@@ -76,7 +78,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						54123,	-- Echo of Sylvannas
 						54544,	-- Echo of Tyrande
 					},
-					["groups"] = {
+					["g"] = {
 						i(72804),	-- Dragonshrine Scepter
 						i(72806),	-- Echoing Headguard
 						i(72801),	-- Breastplate of Sorrow
@@ -126,7 +128,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			d( 24, {	-- Timewalking
 				["lvl"] = 86,
-				["groups"] = {
+				["g"] = {
 					n(-1,	{	-- Common Boss Drops
 						["crs"] = {
 							54431,	-- Echo of Baine
@@ -134,7 +136,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							54123,	-- Echo of Sylvannas
 							54544,	-- Echo of Tyrande
 						},
-						["groups"] = {
+						["g"] = {
 							i(133391),	-- Dragonshrine Scepter
 							i(133415),	-- Crescent Wand
 							i(133393),	-- Echoing Headguard

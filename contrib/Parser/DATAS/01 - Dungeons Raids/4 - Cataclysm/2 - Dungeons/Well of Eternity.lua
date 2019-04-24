@@ -10,11 +10,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 			{ 22.9, 64.4, 75 },	-- actual dungeon entrance
 		},
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests 			
 				q(30104, {	-- Documenting the Timeways
 					["qg"] = 57864,	-- Alurmi
-					["groups"] = {
+					["g"] = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
 						i(72882),	-- Chronicler's Chestguard
@@ -23,14 +23,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 				q(30099, {	-- In Unending Numbers
 					["qg"] = 55624,	-- Nozdormu
+					["sourceQuests"] = { 30098 },	-- The Well of Eternity
 				}),
 				q(30102, {	-- The Hour of Twilight
 					["qg"] = 57913,	-- Chromie
+					["sourceQuests"] = { 30101 },	-- The Path of the Dragon Soul
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
-					["qg"] = 55624,	-- Nozdormu
 					["sourceQuests"] = { 30100 },	-- The Vainglorious
-					["groups"] = {
+					["qg"] = 55624,	-- Nozdormu
+					["g"] = {
 						i(72876),	-- Ironfeather Longbow
 						i(72877),	-- Chain of the Demon Hunter
 						i(72878),	-- Demonic Skull
