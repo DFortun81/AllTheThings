@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			d(1, {	-- Normal
 				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {
-						129732,	-- Skycap'n Kragg
+						126832,	-- Skycap'n Kragg
 						--  Shark Bait
 					},
 					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -25,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2093, {	-- Council o' Captains
 					["crs"] = {
-						126848,	-- Capttain Eudora
+						126848,	-- Captain Eudora
 						126845,	-- Captain Jolly
 						126847,	-- Captain Raoul
 					},
@@ -78,7 +78,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["groups"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
-							129732,	-- Skycap'n Kragg
+							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
 						["groups"] = {
@@ -92,7 +92,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2093, {	-- Council o' Captains
 						["crs"] = {
-							126848,	-- Capttain Eudora
+							126848,	-- Captain Eudora
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
@@ -146,7 +146,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["groups"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
-							129732,	-- Skycap'n Kragg
+							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
 						["groups"] = {
@@ -162,7 +162,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2093, {	-- Council o' Captains
 						["crs"] = {
-							126848,	-- Capttain Eudora
+							126848,	-- Captain Eudora
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
