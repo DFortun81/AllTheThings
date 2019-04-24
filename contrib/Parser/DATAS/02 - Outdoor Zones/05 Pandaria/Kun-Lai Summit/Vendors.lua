@@ -853,7 +853,16 @@ _.Zones =
 								--	i(138690),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
 								--	i(138692),	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor (Druid)
 								--	i(138684),	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor (Death Knight)
-								--	i(138702),	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+									i(138702, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+										i(100112),	-- Tyrannical Gladiator's Felweave Cowl
+										i(100068),	-- Tyrannical Gladiator's Felweave Amice
+										i(100045),	-- Tyrannical Gladiator's Felweave Raiment
+										i(100073),	-- Tyrannical Gladiator's Cuffs of Accuracy
+										i(100111),	-- Tyrannical Gladiator's Felweave Handguards
+										i(100046),	-- Tyrannical Gladiator's Cord of Accuracy
+										i(100141),	-- Tyrannical Gladiator's Felweave Trousers
+										i(99994),	-- Tyrannical Gladiator's Treads of Alacrity
+									}),
 								--	i(138694),	-- Ensemble: Tyrannical Gladiator's Ironskin Armor (Monk)
 								--	i(138696),	-- Ensemble: Tyrannical Gladiator's Leather Armor (Rogue)
 								--	i(138682),	-- Ensemble: Tyrannical Gladiator's Plate Armor (Warrior)
@@ -864,9 +873,11 @@ _.Zones =
 										i(94381),	-- Tyrannical Gladiator's Silk Cowl
 										i(94389),	-- Tyrannical Gladiator's Silk Amice
 										i(94431),	-- Tyrannical Gladiator's Silk Robe
-										i(94362),	-- Tyrannical Gladiator's Silk Trousers
 										i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
 										i(94451),	-- Tyrannical Gladiator's Silk Handguards
+								 	 -- there's probably a belt missing here that i already knew the appearance of.
+										i(94362),	-- Tyrannical Gladiator's Silk Trousers
+									 -- there's probably shoes missing here that i already knew the appearance of.
 									}),
 									i(144245),	-- Arsenal: Tyrannical Gladiator's Weapons
 									i(100171),	-- Tyrannical Gladiator's Barrier

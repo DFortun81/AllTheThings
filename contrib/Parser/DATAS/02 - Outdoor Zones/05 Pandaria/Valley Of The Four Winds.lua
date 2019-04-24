@@ -1909,7 +1909,16 @@ _.Zones =
 						--	i(138689),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
 						--	i(138691),	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor (Druid)
 						--	i(138683),	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor (Death Knight)
-						--	i(138701),	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+							i(138701, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+								i(99953),	-- Tyrannical Gladiator's Felweave Cowl
+								i(99956),	-- Tyrannical Gladiator's Felweave Amice
+								i(99955),	-- Tyrannical Gladiator's Felweave Raiment
+								i(99787),	-- Tyrannical Gladiator's Cuffs of Accuracy
+								i(99952),	-- Tyrannical Gladiator's Felweave Handguards
+								i(99782),	-- Tyrannical Gladiator's Cord of Accuracy
+								i(99954),	-- Tyrannical Gladiator's Felweave Trousers
+								i(99785),	-- Tyrannical Gladiator's Treads of Alacrity
+							}),
 						--	i(138693),	-- Ensemble: Tyrannical Gladiator's Ironskin Armor (Monk)
 						--	i(138695),	-- Ensemble: Tyrannical Gladiator's Leather Armor (Rogue)
 						--	i(138681),	-- Ensemble: Tyrannical Gladiator's Plate Armor (Warrior)
@@ -1922,14 +1931,9 @@ _.Zones =
 								i(91238),	-- Tyrannical Gladiator's Silk Robe
 								i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess (the vendor sells the Seasion 14 version of this item, ID 99788)
 								i(91232),	-- Tyrannical Gladiator's Silk Handguards
+								-- there's probably a belt missing here that i already knew the appearance of.
 								i(91236),	-- Tyrannical Gladiator's Silk Trousers
-								-- Also unlocked the following Horde versions:
-								-- i(94381),	-- Tyrannical Gladiator's Silk Cowl
-								-- i(94389),	-- Tyrannical Gladiator's Silk Amice
-								-- i(94431),	-- Tyrannical Gladiator's Silk Robe
-								-- i(94362),	-- Tyrannical Gladiator's Silk Trousers
-								-- i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
-								-- i(94451),	-- Tyrannical Gladiator's Silk Handguards
+								-- there's probably shoes missing here that i already knew the appearance of.
 							}),
 							i(144246),	-- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
