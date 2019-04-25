@@ -6,11 +6,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(272, { 	-- Azjol-Nerub
 		["lvl"] = 60,
 		["mapID"] = 157,
+		["coords"] = { 26.0, 50.6, 115 },
 		["maps"] =  { 158, 159 },
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 29807,	-- Death to the Traitor King
+				q(29807, {	-- Death to the Traitor King
 					["qg"] = 55564,	-- Reclaimer A'zak
 					["groups"] = {
 						i(44359), 	-- Don Soto's Boots
@@ -18,9 +18,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44360), 	-- Husk Shard Sabatons
 						i(44358), 	-- Kilix's Silk Slippers
 					},
-				},
-				{
-					["questID"] = 29808,	-- Don't Forget the Eggs!
+				}),
+				q(29808, {	-- Don't Forget the Eggs!
 					["qg"] = 55564,	-- Reclaimer A'zak
 					["groups"] = {
 						i(44362), 	-- Expelling Gauntlets
@@ -28,15 +27,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44363), 	-- Purging Handguards
 						i(44364), 	-- Wraps of Quelled Bane
 					},
-				},
-				{
-					["questID"] = 29811,	-- The Gatewatcher's Talisman
+				}),
+				q(29811, {	-- The Gatewatcher's Talisman
 					["qg"] = 55564,	-- Reclaimer A'zak
-				},
+				}),
 			}),
-			d(1, {		-- Normal
+			d(1,   {	-- Normal
 				ach(480),	-- Azjol-Nerub
-				n(0, {		-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
@@ -71,7 +69,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 				}),
 				cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
-					{
+					{	-- Krik'thir the Gatewatcher slain (Azjol-Nerub)
 						["achievementID"] = 480,	-- Azjol-Nerub
 						["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
 					},
@@ -85,7 +83,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37218),	-- Stone-Worn Footwraps
 				})),
 				cr(28921, e(586, {	-- Hadronox
-					{
+					{	-- Hadronox slain (Azjol-Nerub)
 						["achievementID"] = 480,	-- Azjol-Nerub
 						["criteriaID"] = 2,	-- Hadronox slain
 					},
@@ -99,7 +97,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37220),	-- Essence of Gossamer
 				})),
 				cr(29120, e(587, {	-- Anub'arak
-					{
+					{	-- Anub'arak slain (Azjol-Nerub)
 						["achievementID"] = 480,	-- Azjol-Nerub
 						["criteriaID"] = 3,	-- Anub'arak slain
 					},
@@ -116,11 +114,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35661),	-- Signet of Arachnathid Command
 				})),
 			}),
-			d(2, {		-- Heroic
+			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
 					ach(491),	-- Heroic: Azjol-Nerub
-					n(0, {		-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
@@ -145,15 +143,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					}),
 					cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
-						{
-							["achievementID"] = 1296,	-- Watch Him Die
+						ach(1296, {	-- Watch Him Die
 							["crs"] = {
 								28730,	-- Watcher Gashra
 								28729,	-- Watcher Narjil
 								28731,	-- Watcher Silthik
 							},
-						},
-						{
+						}),
+						{			-- Krik'thir the Gatewatcher slain (Heroic: Azjol-Nerub)
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 							["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
 						},
@@ -168,7 +165,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 					cr(28921, e(586, {	-- Hadronox
 						ach(1297),	-- Hadronox Denied
-						{
+						{			-- Hadronox slain (Heroic: Azjol-Nerub)
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 							["criteriaID"] = 2,	-- Hadronox slain
 						},
@@ -182,14 +179,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37220),	-- Essence of Gossamer
 					})),
 					cr(29120, e(587, {	-- Anub'arak
-						{
-							["achievementID"] = 1860,	-- Gotta Go!
-						},
-						{
+						ach(1860),	-- Gotta Go!
+						{			-- Anub'arak slain (Heroic: Azjol-Nerub)
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
 							["criteriaID"] = 3,	-- Anub'arak slain
 						},
-						{
+						{			-- Anub'arak slain (Champion of the Frozen Wastes)
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							["criteriaID"] = 4,			-- Anub'arak slain
 						},
