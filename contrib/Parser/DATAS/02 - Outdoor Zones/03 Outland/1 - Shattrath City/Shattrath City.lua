@@ -20,51 +20,81 @@ _.Zones =
 					}),
 				}),
 				n(-17,  {	-- Quests
+					q(10210, {	-- A'dal
+						["qg"] = 19684,	-- Haggard War Veteran
+						["coord"] = { 59.6, 41.4, 111 },
+					}),
+					q(10211, {	-- City of Light
+						["qg"] = 18166,	-- Archmage Khadgar
+						["coord"] = { 54.7, 44.3, 111 },
+						["sourceQuests"] = 10210,	-- A'dal
+					}),
 					faction( 932, {	-- The Aldor
 						["groups"] = {
 							q(10551, {	-- Allegiance to the Aldor
 								["qg"] = 18166,	-- Archmage Khadgar
-								["sourceQuests"] = { 10211 },	-- City of Light
+								["coord"] = { 54.7, 44.3, 111 },
+								["sourceQuest"] = 10211,	-- City of Light
 							}),
 							q(10554, {	-- Ishanah
 								["qg"] = 18166,	-- Archmage Khadgar
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["coord"] = { 54.7, 44.3, 111 },
+								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 							}),
 							q(10021, {	-- Restoring the Light
-								["qg"] = 18166,	-- Archmage Khadgar
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["qg"] = 18538,	-- Ishanah
+								["coord"] = { 24.2, 29.8, 111 },
+								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 							}),
-							q(10325, {	-- Marks of Kil'jaeden (may be able to be picked up in Netherstorm)
+							q(10325, {	-- Marks of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 							}),
 							q(10327, {	-- Single Mark of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["repeatable"] = true,
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
-								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+								["repeatable"] = true,
 							}),
 							q(10326, {	-- More Marks of Kil'jaeden
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["repeatable"] = true,
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
 								["description"] = "Gives reputation through Honored.",
-								["sourceQuests"] = { 10325 },	-- Marks of Kil'jaeden
+								["repeatable"] = true,
 							}),
-							q(10653, {	-- Marks of Sargeras  (may be able to be picked up in Netherstorm)
+							q(10653, {	-- Marks of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 							}),
 							q(10655, {	-- Single Mark of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["repeatable"] = true,
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuest"] = 10653,	-- Marks of Sargeras
 								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+								["repeatable"] = true,
 							}),
 							q(10654, {	-- More Marks of Sargeras
 								["qg"] = 18537,	-- Adyen the Lightwarden
-								["repeatable"] = true,
+								["coord"] = { 30.7, 34.6, 111 },
+								["sourceQuests"] = 10653,	-- Marks of Sargeras
 								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10653 },	-- Marks of Sargeras
+								["repeatable"] = true,
+							}),
+							q(10420, {	-- A Cleansing Light
+								["qg"] = 18538,	-- Ishanah
+								["coord"] = { 24.2, 29.8, 111 },
+								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+							}),
+							q(10421, {	-- Fel Armaments
+								["qg"] = 18538,	-- Ishanah
+								["coord"] = { 24.2, 29.8, 111 },
+								["sourceQuest"] = 10420,	-- A Cleansing Light
+								["description"] = "Gives reputation through Exalted.",
+								["repeatable"] = true,
 							}),
 							q(10020, {	-- A Cure for Zahlia
 								["qg"] = 18597,	-- Sha'nir
@@ -74,31 +104,17 @@ _.Zones =
 								["qg"] = 18537,	-- Adyen the Lightwarden
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 							}),
-							q(10420, {	-- A Cleansing Light
-								["qg"] = 18538,	-- Ishanah
-								-- ["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor (this quest appeared before I aligned myself with The Aldor)
-							}),
-							q(10421, {	-- Fel Armaments
-								["qg"] = 18538,	-- Ishanah
-								["repeatable"] = true,
-								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10420 },	-- A Cleansing Light
-							}),
 							q(11038, {	-- Assist Exarch Orelis
-								["qgs"] = { 23271, 23270 },	-- Vindicator Kaan & Vindicator Aeus
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
-							}),
-							q(10409, {	-- Deathblow to the Legion (awarded "Socrethar" criteria for Netherstorm "Into the Nether" overall quest achievement)
-								["groups"] = {
-									i(30368),	-- Slippers of the High Priestess
-									i(30369),	-- Cleansed Fel Pauldrons
-									i(30370),	-- Gauntlets of the Redeemed Vindicator
-									i(30371),	-- Lightwarden's Girdle
-									i(30860),	-- Kaylaan's Signet
+								["qgs"] = { 
+									23271,	-- Vindicator Kaan
+									23270,	-- Vindicator Aeus
 								},
-								["qg"] = 18538,	-- Ishanah
-								["sourceQuests"] = { 10410 },	-- Ishanah's Help
+								["coords"] = {
+									{ 35.0, 32.6, 111 },
+									{ 47.4, 26.4, 111 },
+								},
+								["sourceQuests"] = 10551,	-- Allegiance to the Aldor
+								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 							}),
 							q(10017, {	-- Strained Supplies
 								["qg"] = 18597,	-- Sha'nir
@@ -110,6 +126,94 @@ _.Zones =
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
 								["sourceQuests"] = { 10017 },	-- Strained Supplies
 							}),
+						},
+						["collectible"] = false,	-- Turn off Collectible flags.
+					}),
+					faction( 934, {	-- The Scryers
+						["groups"] = {
+							q(10552, {	-- Allegiance to the Scryers
+								["qg"] = 18166,	-- Archmage Khadgar
+								["coord"] = { 54.7, 44.3, 111 },
+								["sourceQuest"] = 10211,	-- City of Light
+							}),
+							q(10553, {	-- Voren'thal the Seer
+								["qg"] = 18166,	-- Archmage Khadgar
+								["coord"] = { 54.7, 44.3, 111 },
+								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+							}),
+							q(10412, {	-- Firewing Signets
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+							}),
+							q(10414, {	-- Single Firewing Signet
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10412,	-- Firewing Signets
+								["description"] = "Gives reputation through Honored.",
+								["repeatable"] = true,
+							}),
+							q(10415, {	-- More Firewing Signets
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10412,	-- Firewing Signets
+								["description"] = "Gives reputation through Honored.",
+								["repeatable"] = true,	
+							}),
+							q(10656, {	-- Sunfury Signets
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+							}),
+							q(10659, {	-- Single Sunfury Signet
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10656,	-- Sunfury Signets
+								["description"] = "Gives reputation through Exalted.",
+								["repeatable"] = true,
+							}),
+							q(10658, {	-- More Sunfury Signets
+								["qg"] = 18531,	-- Magistrix Fyalenn
+								["coord"] = { 45.1, 81.4, 111 },
+								["sourceQuest"] = 10656,	-- Sunfury Signets
+								["description"] = "Gives reputation through Exalted.",
+								["repeatable"] = true,
+							}),
+							q(10416, {	-- Synthesis of Power
+								["qg"] = 18530,	-- Voren'thal the Seer
+								["coord"] = { 42.6, 91.4, 111 },
+								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+							}),
+							q(10419, {	-- Arcane Tomes
+								["qg"] = 18530,	-- Voren'thal the Seer
+								["coord"] = { 42.6, 91.4, 111 },
+								["sourceQuest"] = 10416,	-- Synthesis of Power
+								["description"] = "Gives reputation through Exalted.",
+								["repeatable"] = true,
+							}),
+							q(11039, {	-- Report to Spymaster Thalodien
+								["qgs"] = {
+									23273, 	-- Arcanist Raestan
+									23272,	-- Arcanist Savan
+								},
+								["coords"] = {
+									{ 44.6, 76.2, 111 },
+									{ 60.6, 63.2, 111 },
+								},
+								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+								["isBreadcrumb"] = true,	-- for Manaforge B'naar
+							}),
+							q(10024, {	-- Voren'thal's Visions
+								["qg"] = 18596,	-- Arcanist Adyria
+								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+							}),
+							q(10025, {	-- More Basilisk Eyes
+								["qg"] = 18596,	-- Arcanist Adyria
+								["repeatable"] = true,
+								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+								["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
+							}),
+							q(11482),	-- Duty Calls
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
@@ -208,103 +312,6 @@ _.Zones =
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
-					faction( 934, {	-- The Scryers
-						["groups"] = {
-							q(10552, {	-- Allegiance to the Scryers
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3 },
-								["sourceQuests"] = { 10211 },	-- City of Light
-							}),
-							q(10553, {	-- Voren'thal the Seer
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3 },
-								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-							}),
-							q(11039, {	-- Report to Spymaster Thalodien
-								["qgs"] = {
-									23273, 	-- Arcanist Raestan (unconfirmed, from wowhead)
-									23272,	-- Arcanist Savan
-								},
-								["coord"] = { 44.6, 76.2 },
-								["isBreadcrumb"] = true,	-- for Manaforge B'naar
-								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-							}),
-							q(10507, {	-- Turning Point
-								["groups"] = {
-									i(30375),	-- Gauntlets of the Vanquisher
-									i(30372),	-- Socrethar's Girdle
-									i(30373),	-- Netherfused Pauldrons
-									i(30374),	-- Greaves of Spellpower
-									i(30859),	-- Wand of the Seer
-								},
-								["qg"] = 18530,	-- Voren'thal the Seer
-								["coord"] = { 42.7, 91.6 },
-								["sourceQuests"] = { 10509 },	-- Bound for Glory
-								-- Awarded "Socrethar" criteria for "Into the Nether" achievement.
-							}),
-							q(10412, {	-- Firewing Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-							}),
-							q(10415, {	-- More Firewing Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["repeatable"] = true,
-								["description"] = "Gives reputation through Honored.",
-								["sourceQuests"] = { 10412 },	-- Firewing Signets
-							}),
-							q(10414, {	-- Single Firewing Signet
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["repeatable"] = true,
-								["description"] = "Gives reputation through Honored.",
-								["sourceQuests"] = { 10412 },	-- Firewing Signets
-							}),
-							q(10656, {	-- Sunfury Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-							}),
-							q(10658, {	-- More Sunfury Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["repeatable"] = true,
-								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10656 },	-- Sunfury Signets
-							}),
-							q(10659, {	-- Single Sunfury Signet
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4 },
-								["repeatable"] = true,
-								["description"] = "Gives reputation through Exalted.",
-								["sourceQuests"] = { 10656 },	-- Sunfury Signets
-							}),
-							q(10416, {	-- Synthesis of Power
-								["qg"] = 18530,	-- Voren'thal the Seer
-								["coord"] = { 42.6, 91.4 },
-								["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
-							}),
-							q(10419, {	-- Arcane Tomes
-								["qg"] = 18530,	-- Voren'thal the Seer
-								["coord"] = { 42.6, 91.4 },
-								["repeatable"] = true,
-								["sourceQuests"] = { 10416 },	-- Synthesis of Power
-							}),
-							q(10024, {	-- Voren'thal's Visions
-								["qg"] = 18596,	-- Arcanist Adyria
-								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-							}),
-							q(10025, {	-- More Basilisk Eyes
-								["qg"] = 18596,	-- Arcanist Adyria
-								["repeatable"] = true,
-								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-								["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
-							}),
-							q(11482),	-- Duty Calls
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
 					faction(935, {	-- The Sha'tar
 						["g"] = {
 							q(13430, {	-- Trial of the Naaru: Magtheridon
@@ -365,11 +372,7 @@ _.Zones =
 						i(25927),	-- Consortium Cloak of the Quick
 						i(25928),	-- Ethereal Healing Pendant
 						i(25926),	-- Nexus-Stalker's Band
-					}),
-					q( 10210, {	-- A'dal
-						["qg"] = 19684,	-- Haggard War Veteran
-						["coord"] = { 59.6, 41.4 },
-					}),
+					}),	
 					qh(10167, {	-- Auchindoun...
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
@@ -381,11 +384,6 @@ _.Zones =
 					qh(11046, {	-- Chief Apothecary Hildagard
 						["qg"] = 19678,	-- Fantei
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
-					}),
-					q( 10211, {	-- City of Light
-						["qg"] = 18166,	-- Archmage Khadgar
-						["coord"] = { 54.7, 44.3 },
-						["sourceQuests"] = { 10210 },	-- A'dal
 					}),
 					q(44863, {	-- Clearing the Air
 						["groups"] = {
@@ -420,6 +418,9 @@ _.Zones =
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
 					}),
 					q(10704, {	-- How to Break Into the Arcatraz
+						["qg"] = 18481,	-- A'dal
+						["coord"] = { 53.7, 44.6, 111 },
+						["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
 						["groups"] = {
 							i(31465),	-- Sha'tari Achorite's Cloak
 							i(31461),	-- A'dal's Gift
@@ -427,8 +428,6 @@ _.Zones =
 							i(31462),	-- Shattrath's Champion Belt
 							i(31460),	-- Sha'tari Vindicator's Waistguard
 						},
-						["qg"] = 18481,	-- A'dal
-						["sourceQuests"] = { 10280 },	-- Special Delivery to Shattrath City
 					}),
 					q(  9990, {	-- Investigate Tuurem
 						["qg"] = 18484,	-- Wind Trader Lathrai
