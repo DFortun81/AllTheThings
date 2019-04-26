@@ -1465,6 +1465,13 @@ _.Zones =
 					q(46340,  {	-- The Gates Are Closed
 						["qg"] = 93628,	-- Eyir
 					}),
+					q(41802, {	-- The Gates of Valor
+						["qg"] = 103484,	-- Brann Bronzebeard
+						["requiredSkill"] = 794,	-- Archaeology
+						["g"] = {
+							i(131735),	-- Imp Generator
+						},
+					}),
 					qa(38057),	-- The Lost Legion
 					q(42635,  {	-- The Mystery of Dreyrgrot
 						["qg"] = 108072,	-- Sir Finley Mrrggglton
@@ -1877,7 +1884,6 @@ _.Zones =
 					q(42431),	-- The Brood of Nithogg
 					q(40541),	-- The Charge Within
 					q(45524),	-- The Forgotten Heir
-					q(41802),	-- The Gates of Valor
 					q(42193),	-- The Gjallarhorn
 					q(41849),	-- The Iron Fist
 					q(45999),	-- The Legion Assault

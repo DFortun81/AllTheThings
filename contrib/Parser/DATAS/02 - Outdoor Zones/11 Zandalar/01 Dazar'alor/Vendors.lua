@@ -144,6 +144,12 @@ _.Zones =
 								},
 							},
 						},
+						n(122703, {	-- Clever Kumali <Alchemist Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(166422),	-- Recipe: Silas' Sphere of Transmutation
+							},
+						}),
 						{	-- Elly Fraze <Toys and Curiosities> [AH]
 							["npcID"] = 138033, 	-- Elly Fraze <Toys and Curiosities>
 							["coords"] = {
@@ -159,6 +165,18 @@ _.Zones =
 								},
 							},
 						},
+						n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168024),	-- Recipe: Iwen's Enchanting Rod
+							},
+						}),
+						n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168022),	-- Recipe: Khaz'gorian Smithing Hammer
+							},
+						}),
 						{	-- Granda Watae [H]
 							["npcID"] = 132130,		-- Granda Watae
 							["coords"] = {
@@ -317,6 +335,12 @@ _.Zones =
 								},
 							},
 						},
+						n(136071, {	-- Pin'jin the Patient <Tailoring Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168029),	-- Recipe: Synchronous Thread
+							},
+						}),
 						n(122463, {	-- Plen <Unusual and Remarkable Wares>
 							["coords"] = {
 								{ 47.73, 91.64, 1165 },
@@ -521,6 +545,18 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
+						n(122695, {	-- Seshuli <Jewelcrafting Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168027),	-- Recipe: Jewelhammer's Focus
+							},
+						}),
+						n(131840, {	-- Shuga Blastcaps <Engineering Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168025),	-- Book of Schematics: Ub3r-Spanner
+							},
+						}),
 						n(125879, {	-- Talutu
 							["coords"] = {
 								{ 48.58, 87.09, 1165 },
@@ -588,6 +624,12 @@ _.Zones =
 								},
 							},
 						},
+						n(122698, {	-- Xanjo <Leatherworking Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168028),	-- Recipe: Mallet of Thunderous Skins
+							},
+						}),
 					},
 				}),
 			},

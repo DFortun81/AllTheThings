@@ -125,6 +125,12 @@ _.Zones =
 								},
 							},
 						},
+						n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168028),	-- Recipe: Mallet of Thunderous Skins
+							},
+						}),
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							["groups"] = {
 								i(11023),	-- Ancona Chicken
@@ -144,6 +150,12 @@ _.Zones =
 							},
 							["coord"] = { 50.8, 46.0 },
 							["races"] = ALLIANCE_ONLY,
+						}),
+						n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168029),	-- Recipe: Synchronous Thread
+							},
 						}),
 						{	-- Dodger
 							["npcID"] = 148024,	-- Dodger
@@ -176,6 +188,24 @@ _.Zones =
 								},
 							},
 						},
+						n(136041, {	-- Emily Fairweather <Enchanting Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168024),	-- Recipe: Iwen's Enchanting Rod
+							},
+						}),
+						n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(166422),	-- Recipe: Silas' Sphere of Transmutation
+							},
+						}),
+						n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168022),	-- Recipe: Khaz'gorian Smithing Hammer
+							},
+						}),
 						{	-- Layla Evenkeel
 							["npcID"] = 136059,	-- Layla Evenkeel
 							["coords"] = {
@@ -707,6 +737,12 @@ _.Zones =
 								},
 							},
 						},
+						n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168027),	-- Recipe: Jewelhammer's Focus
+							},
+						}),
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
 								i(163568),	-- Lost Platysaur [So Cute!]

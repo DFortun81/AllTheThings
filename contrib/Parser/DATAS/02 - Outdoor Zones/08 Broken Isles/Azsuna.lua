@@ -1596,6 +1596,8 @@ _.Zones =
 								["groups"] = {
 									i(132961),	-- Cape of Azure Fury
 									i(132964),	-- Stellagosa's Breath
+									i(132962),	-- The Jailer's Key
+									i(132963),	-- Young Drake's Impulse
 								},
 								["sourceQuests"] = {
 									36920,	-- From Within (Non-DH Version)
@@ -2178,10 +2180,13 @@ _.Zones =
 						}),
 						sz(10665,6, {	-- The Lost Orchard
 							q(38203,  {  	-- Challiane Vineyards
-								i(132968),
-								i(132967),
-								i(132966),
-								i(132965),
+								i(132967),	-- Cooper's Bindings
+								i(121493),	-- Liastrin's Wine Taster
+								i(132966),	-- Oenologer's Protection Bands
+								i(121491),	-- Shalrala's Engraved Goblet
+								i(121489),	-- Valiana's Secret Recipe
+								i(132968),	-- Vintner's Wristwraps
+								i(132965),	-- Wine-Resistant Bracers
 							}),
 						}),
 						sz(10665,7, {	-- Nar'thalas
@@ -2342,7 +2347,6 @@ _.Zones =
 					q(43520),	-- The Emerald Nightmare: In Nightmares
 					q(45028),	-- The Fate of Kanrethad										
 					q(38963),	-- The Final Lesson?
-					q(41802),	-- The Gates of Valor
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
 ]]--

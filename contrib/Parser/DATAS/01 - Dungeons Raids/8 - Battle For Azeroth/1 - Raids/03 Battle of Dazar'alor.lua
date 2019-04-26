@@ -332,6 +332,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 										["races"] = HORDE_ONLY,
 									},
 									i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
+									i(166582),	-- Technique: Glyph of the Tides
 									i(165604),	-- Daelin Proudmoore's Saber
 									i(165583),	-- Fogbreaker, Light of the Sea
 									i(165823),	-- Glaciercrest Helm
@@ -659,6 +660,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								["races"] = HORDE_ONLY,
 							},
 							ach(13410),	-- Snow Fun Allowed
+							i(166582),	-- Technique: Glyph of the Tides
 							i(165604),	-- Daelin Proudmoore's Saber
 							i(165583),	-- Fogbreaker, Light of the Sea
 							i(165823),	-- Glaciercrest Helm
@@ -986,6 +988,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
 								--["u"] = 2,	-- Legacy Achievement
 							}),
+							i(166582),	-- Technique: Glyph of the Tides
 							i(165604),	-- Daelin Proudmoore's Saber
 							i(165583),	-- Fogbreaker, Light of the Sea
 							i(165823),	-- Glaciercrest Helm
@@ -1348,6 +1351,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								},
 							}),
 							i(166705),	-- Glacial Tidestorm (MOUNT!)
+							i(166582),	-- Technique: Glyph of the Tides
 							i(165604),	-- Daelin Proudmoore's Saber
 							i(165583),	-- Fogbreaker, Light of the Sea
 							i(165823),	-- Glaciercrest Helm

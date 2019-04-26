@@ -1352,7 +1352,6 @@ _.Zones =
 					q(38530),	-- The Firmament Stone
 					q(45524),	-- The Forgotten Heir
 					q(42832),	-- The Fruit of Our Efforts
-					q(41802),	-- The Gates of Valor
 					q(41878),	-- The Gondolier
 					q(42228),	-- The Hidden City
 					q(41139),	-- The Key Is Around Here Somewhere...
@@ -1542,6 +1541,12 @@ _.Zones =
 						},
 						["questID"] = 44072,	
 					}), 
+					n(111653, { 	-- Miasu
+						["groups"] = {	
+							i(121810),	-- Pocket Void Portal
+						},
+						["questID"] = 43793,	
+					}), 
 					n(110340, { 	-- Myonix
 						["groups"] = {	
 							i(133816),	-- Recipe: Leybeque Ribs
@@ -1608,7 +1613,6 @@ _.Zones =
 				--	v(43351, { 		-- Mal'Dreth the Corruptor	}), 
 				--	v(44124, { 		-- Mar'tura	}), 
 				--	v(43718, { 		-- Matron Hagatha	}), 
-				--	v(43793, { 		-- Miasu	}), 
 				--	v(45506, { 		-- Oglok the Furious	}), 
 				--	v(43449, { 		-- Oreth the Vile	}), 
 				--	n(113694, { 	-- Pashya	}),

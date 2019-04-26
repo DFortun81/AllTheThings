@@ -27,7 +27,7 @@ _.Craftables =
 			}),
 			filter(53, {	-- Trinkets
 				{	-- Emblazoned Alchemist Stone
-					["itemID"] = 291086,	-- Emblazoned Alchemist Stone
+					["itemID"] = 166976,	-- Emblazoned Alchemist Stone
 				},
 				{	-- Endless Tincture of Fractional Power
 					["itemID"] = 152636,	-- Endless Tincture of Fractional Power
@@ -36,10 +36,10 @@ _.Craftables =
 					["itemID"] = 152634,	-- Endless Tincture of Renewed Combat
 				},
 				{	-- Eternal Alchemist Stone
-					["itemID"] = 286923,	-- Eternal Alchemist Stone
+					["itemID"] = 165928,	-- Eternal Alchemist Stone
 				},
 				{	-- Imbued Alchemist Stone
-					["itemID"] = 291085,	-- Imbued Alchemist Stone
+					["itemID"] = 166975,	-- Imbued Alchemist Stone
 					["g"] = {
 						{	-- Recipe: Emblazoned Alchemist Stone
 							["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
@@ -47,7 +47,7 @@ _.Craftables =
 					},
 				},
 				{	-- Sanguinated Alchemist Stone
-					["itemID"] = 291084,	-- Sanguinated Alchemist Stone
+					["itemID"] = 166974,	-- Sanguinated Alchemist Stone
 					["g"] = {
 						{	-- Recipe: Imbued Alchemist Stone
 							["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
@@ -58,7 +58,7 @@ _.Craftables =
 					["itemID"] = 152637,	-- Siren's Alchemist Stone
 				},
 				{	-- Spirited Alchemist Stone
-					["itemID"] = 286922,	-- Spirited Alchemist Stone
+					["itemID"] = 165927,	-- Spirited Alchemist Stone
 					["g"] = {
 						{	-- Recipe: Eternal Alchemist Stone
 							["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
@@ -69,7 +69,7 @@ _.Craftables =
 					["itemID"] = 152632,	-- Surging Alchemist Stone
 				},
 				{	-- Tidal Alchemist Stone
-					["itemID"] = 286921,	-- Tidal Alchemist Stone
+					["itemID"] = 165926,	-- Tidal Alchemist Stone
 					["g"] = {
 						{	-- Recipe: Spirited Alchemist Stone
 							["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone

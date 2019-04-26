@@ -28,6 +28,7 @@ _.Zones =
 								124688,	-- Natha'vor Cannibal
 							},
 						}),
+						i(154823),	-- Etched Bone Ring
 					},
 				}),
 			},

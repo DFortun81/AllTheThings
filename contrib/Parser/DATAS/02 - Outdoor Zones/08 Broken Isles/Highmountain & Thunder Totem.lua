@@ -1293,6 +1293,9 @@ _.Zones =
 									i(132089),
 									i(132088),
 									i(132087),
+									i(132091),	-- Warmth of Uriah
+									i(132092),	-- Solace of Uriah
+									i(132093),	-- Courage of Uriah
 								}),
 							}),
 							sz(10667,9 , {	-- Shipwreck Cove
