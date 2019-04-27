@@ -462,6 +462,21 @@ _.Zones =
 						["qg"] = 107554,	-- Thassarian
 						["classes"] = { 6 },	-- Death Knight
 					},
+					qh(39801, {	-- The Splintered Fleet
+						["sourceQuest"] = 38307,	-- The Warchief Beckons
+						["lvl"] = 98,
+						["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
+						["g"] = {
+							i(139916),	-- Black Rose Amice
+							i(139925),	-- Black Rose Wristwraps
+							i(139974),	-- Dark Ranger Shoulderguards
+							i(139987),	-- Dark Ranger Wristguards
+							i(140012),	-- Deathstalker Shoulderplates
+							i(140018),	-- Deathstalker Vambraces
+							i(139948),	-- Dread-Rider Shoulders
+							i(139956),	-- Dread-Rider Cuffs
+						},
+					}),
 					{	-- The War of Northwatch Aggression
 						["questID"] = 25169,
 						["qg"] = 3140,	-- Lar Prowltusk

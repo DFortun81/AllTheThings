@@ -253,7 +253,7 @@ _.PVP =
 				i(135570),	-- Battle Touched Helfrost
 				i(135569),	-- Battle Touched Infernal Shard
 				i(135572),	-- Battle Touched Martyr Stone
-				i(134696),	-- Cascading Amice
+				i(134696),	-- Cascading Amice*			— 4/27/19
 				i(134694),	-- Cascading Cord*			— 4/26/19
 				i(134697),	-- Cascading Cuffs*			— 4/26/19
 				i(134695),	-- Cascading Trousers*		— 4/26/19
