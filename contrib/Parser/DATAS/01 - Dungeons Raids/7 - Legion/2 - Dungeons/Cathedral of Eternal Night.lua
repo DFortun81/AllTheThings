@@ -4,9 +4,10 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(900, {	-- Cathedral of Eternal Night
-		["lvl"] = 110,
+		["coord"] = { 64.7, 16.6, 646 },
 		["maps"] = { 845, 846, 847, 848, 849 },
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			d(2, {	-- Heroic
 				n(0, {	-- Zone Drops
 					i(147514, {	-- Felguard Destroyer's Legplates

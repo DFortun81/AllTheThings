@@ -4,17 +4,22 @@
 _.WorldEvents =
 {
 	n(-496, {	-- Bizmo's Brawlpub
-		["groups"] = {	
+		["races"] = ALLIANCE_ONLY,
+		["maps"] = {
+			499,	-- Deeprun Tram [Note!! Adding this here because the map switches don't always register and we don't want the user to reload each time for the list to appear
+			500,	-- Bizmo's Brawlpub
+		},
+		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
+		["g"] = {	
 			n(-17, { 	-- Quests
-				q(55022, {	-- SOlving the mystery
-					["groups"] = {
-						i(166724),	-- Bruce
-					},
+				qa(55022, {	-- Solving the mystery
+					i(166724),	-- Bruce (MOUNT!)
 				}),
 			}),
 			n(-2, {	-- Vendors
 				n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>  This vendor will change if you start the murder questline  New vendor = 151941 Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
-					["groups"]	= {
+					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
+					["g"] = {
 						i(93025),	-- Clock'em Pet
 						i(144394),	-- Tylarr Gronnden Pet
 						i(142403),	-- Brawler's Burly Basilisk Mount
@@ -37,8 +42,9 @@ _.WorldEvents =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(167811),  -- Brawlers Guild Tabard
-						{ -- Ensemble: Brawlers Garb
-							["groups"] = {
+						i(167891, {	-- Ensemble: Brawler's Garb
+							["ignoreBonus"] = true,
+							["g"] = {
 								i(167817),	-- Brawler's Headgear
 								i(167819),	-- Brawler's Shoulderpads
 								i(167813),	-- Brawler's Harness
@@ -48,26 +54,21 @@ _.WorldEvents =
 								i(167818),	-- Brawler's Leggings
 								i(167815),	-- Brawler's Footpads
 							},
-							["ignoreBonus"] = true,
-							["itemID"] = 167891,
-						},
+						}),
 						i(127773, {	-- Gemcutter Module: Mastery
+							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
 							["spellID"] = 187636,
-							["requireSkill"] = 755,	-- Jewelcrafting
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["coord"] = {
-								25.84, 39.79
-							},
+							["requireSkill"] = 755,	-- Jewelcrafting
 						}),
 					},
-					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				}),
 			}),
 			ach(9176, {		-- Deck Your Collection (Season 2) - According to Wowhead this achievement AND the shirt it rewards ARE still obtainable in Legion. You just have to defeat the bosses listed.
-				["groups"] = {
+				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
+				["g"] = {
 					i(98543),		-- Wraps of the Blood-Soaked Brawler
 				},
-				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
 			}),
 			i(143763, {		-- Bag of Chipped Dice
 				n(117208, {	-- a Seagull
@@ -172,11 +173,5 @@ _.WorldEvents =
 				}),
 			}),
 		},
-		["races"] = ALLIANCE_ONLY,
-		["maps"] = {
-			499,	-- Deeprun Tram [Note!! Adding this here because the map switches don't always register and we don't want the user to reload each time for the list to appear
-			500,	-- Bizmo's Brawlpub
-		},
-		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 	}),
 };	

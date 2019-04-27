@@ -4,16 +4,15 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(276, { 	-- Halls of Reflection
-		["lvl"] = 78,
 		["mapID"] = 185,
-		["groups"] = {
+		["coord"] = { 52.3, 89.3, 118 },
+		["lvl"] = 78,
+		["g"] = {
 			n(-17, {	-- Quests
-				a({
-					["questID"] = 24500,	-- Wrath of the Lich King
+				qa(24500, {	-- Wrath of the Lich King
 					["qg"] = 37582,	-- Archmage Koreln <Kirin Tor>
 				}),
-				h({
-					["questID"] = 24802,	-- Wrath of the Lich King
+				qh(24802, {	-- Wrath of the Lich King
 					["qg"] = 37779,	-- Dark Ranger Loralen
 				}),
 			}),
@@ -115,7 +114,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					ach(4521),	-- Heroic: The Halls of Reflection
 					n(0, {	-- Zone Drop
 						i(50379),	-- Battered Hilt (Alliance)

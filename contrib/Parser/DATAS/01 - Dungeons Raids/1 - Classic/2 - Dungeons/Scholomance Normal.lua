@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 476,
 		["maps"] = { 477, 478, 479 },
 		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
-		["groups"] = {
+		["g"] = {
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
 					q(31447, {	-- An End to the Suffering
@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 						["qg"] = 64562,	-- Talking Skull
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(18702, {	-- Belt of the Ordained
 						["crs"] = {
 							59501,	-- Reanimated Corpse
@@ -60,15 +60,12 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				})),
 				cr(59184, e(663, { 	-- Jandice Barov
-					i(88346),	-- Metanoia Shield
-					i(88345),	-- Barovian Ritual Hood
-					i(88349),	-- Phantasmal Drape
-					i(88347),	-- Ghostwoven Legguards
-					i(88348),	-- Wraithplate Treads
-					{	-- Darkshade Gloves
-						["itemID"] = 14543,	-- Darkshade Gloves
-						["u"] = 2,
-					},
+					i(88346),			-- Metanoia Shield
+					i(88345),			-- Barovian Ritual Hood
+					i(88349),			-- Phantasmal Drape
+					i(88347),			-- Ghostwoven Legguards
+					i(88348),			-- Wraithplate Treads
+					un(2, i(14543)),	-- Darkshade Gloves
 				})),
 				cr(59153, e(665, { 	-- Rattlegore
 					i(88344),	-- Goresoaked Headreaper
@@ -97,7 +94,7 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 			}),
 			n(-40, {	-- Legacy
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests (Legacy)
 						un(40, q(4771, { 	-- Dawn's Gambit
 							un(2, i(15854)), 	-- Dancing Sliver
@@ -117,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(40, q(7668, { 	-- The Darkreaver Menace
 							["classes"] = { 7 },
 							["races"] = HORDE_ONLY,
-							["groups"] = {
+							["g"] = {
 								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
 								un(2, i(20134)), 	-- Skyfury Helm
 							},
@@ -188,7 +185,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(10503, {	-- Jandice Barov
 						un(2, o(180794, {	-- Journal of Jandice Barov
 							["description"] = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
-							["groups"] = {
+							["g"] = {
 								un(2, recipe(26086)),	-- Felcloth Bag
 							},
 						})),
@@ -241,7 +238,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(16118, {	-- Kormok
 						["description"] = "This boss was summoned using the Brazier of Beckoning.",
-						["groups"] = {
+						["g"] = {
 							un(2, i(22332)),	-- Blade of Necromancy
 							un(2, i(22333)),	-- Hammer of Divine Might
 							un(2, i(22303)),	-- Ironweave Pants

@@ -7,7 +7,7 @@ _.PVP =
 		i(135539, {	-- Crate of Battlefield Goods 15-39
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 15-39 range.|r",
 			["lvl"] = 15,
-			["groups"] = {
+			["g"] = {
 				i(134643),	-- Auxiliary's Cuffs*
 				i(134642),	-- Auxiliary's Leggings*
 				i(134640),	-- Auxiliary's Robe
@@ -43,7 +43,7 @@ _.PVP =
 		i(135540, {	-- Crate of Battlefield Goods 40-59
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 40-59 range.|r",
 			["lvl"] = 40,
-			["groups"] = {
+			["g"] = {
 				i(134672),	-- Auxiliary's Amice
 				i(134670),	-- Auxiliary's Cowl
 				i(134669),	-- Auxiliary's Handwraps
@@ -76,7 +76,7 @@ _.PVP =
 		i(135541, {	-- Crusader's Crate of Battlefield Goods 60-69
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 60-69 range.|r",
 			["lvl"] = 60,
-			["groups"] = {
+			["g"] = {
 				i(134584),	-- Inciter's Cord
 				i(134585),	-- Inciter's Cuffs
 				i(134583),	-- Inciter's Treads
@@ -105,7 +105,7 @@ _.PVP =
 		i(135542, {	-- Icy Crate of Battlefield Goods 70-79
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 70-79 range.|r",
 			["lvl"] = 70, 
-			["groups"] = {
+			["g"] = {
 				i(134724),	-- Icyweave Amice*
 				i(134722),	-- Icyweave Robes*
 				i(134723),	-- Icyweave Gloves*
@@ -137,12 +137,12 @@ _.PVP =
 		}),
 		i(135543, {	-- Rival's Crate of Battlefield Goods 80-89; splitting this box into two categories, loot table varies with level
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 80-89 range.|r",
-			["groups"] = {
+			["g"] = {
 				n(-302, {	-- Level 80-84
 					["description"] = "Rewarded for winning a random battleground in the level 80-84 range.",
 					["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 					["lvl"] = 80,
-					["groups"] = {
+					["g"] = {
 						i(134616),	-- Inflammatory Cord*
 						i(134615),	-- Inflammatory Hood*
 						i(134614),	-- Inflammatory Treads*
@@ -173,7 +173,7 @@ _.PVP =
 					["description"] = "Rewarded for winning a random battleground in the level 85-89 range.",
 					["icon"] = "Interface\\Icons\\expansionicon_mistsofpandaria",
 					["lvl"] = 85,
-					["groups"] = {
+					["g"] = {
 						i(134754),	-- Veiled Cuffs*
 						i(134752),	-- Veiled Leggings*
 						i(134753),	-- Veiled Mantle*
@@ -208,7 +208,7 @@ _.PVP =
 		i(135545, {	-- Savage Crate of Battlefield Goods 90-99
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 90-99 range.|r",
 			["lvl"] = 90,
-			["groups"] = {
+			["g"] = {
 				i(134787),	-- Entrenched Cowl*
 				i(134786),	-- Entrenched Handwraps*
 				i(134784),	-- Entrenched Raiment*
@@ -242,7 +242,7 @@ _.PVP =
 		i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran
 			["description"] = "|cff66ccffRewarded for winning a random battleground in the level 100-109 range, or Ashran quests.|r",
 			["lvl"] = 100,
-			["groups"] = {
+			["g"] = {
 				i(135578),	-- Battle Touched Banner
 				i(135568),	-- Battle Touched Blood of the Fallen
 				i(135574),	-- Battle Touched Blossom
@@ -254,18 +254,18 @@ _.PVP =
 				i(135569),	-- Battle Touched Infernal Shard
 				i(135572),	-- Battle Touched Martyr Stone
 				i(134696),	-- Cascading Amice
-				i(134694),	-- Cascading Cord
-				i(134697),	-- Cascading Cuffs
-				i(134695),	-- Cascading Trousers*
+				i(134694),	-- Cascading Cord*			— 4/26/19
+				i(134697),	-- Cascading Cuffs*			— 4/26/19
+				i(134695),	-- Cascading Trousers*		— 4/26/19
 				i(134714),	-- Crushing Armplates
 				i(134711),	-- Crushing Girdle
 				i(134712),	-- Crushing Legguards
 				i(134713),	-- Crushing Pauldrons
 				i(134692),	-- Enveloping Accolade
 				i(134715),	-- Enveloping Badge
-				i(134716),	-- Enveloping Cloak
-				i(134698),	-- Enveloping Distinction
-				i(134709),	-- Enveloping Pendant*
+				i(134716),	-- Enveloping Cloak*		— 4/26/19
+				i(134698),	-- Enveloping Distinction*	— 4/26/19
+				i(134709),	-- Enveloping Pendant*		— 4/25/19
 				i(134707),	-- Surging Armbands
 				i(134705),	-- Surging Chain Leggings
 				i(134706),	-- Surging Spaulders

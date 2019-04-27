@@ -4,27 +4,24 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(280, { 	-- The Forge of Souls
-		["lvl"] = 75,
 		["mapID"] = 183,
-		["groups"] = {
+		["coord"] = { 52.3, 89.3, 118 },
+		["lvl"] = 75,
+		["g"] = {
 			n(-17, {	-- Quests 
-				a({
-					["questID"] = 24499,	-- Echoes of Tortured Souls
+				qa(24499, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24510,	-- Inside the Frozen Citadel
 					["qg"] = 37597,	-- Lady Jaina Proudmoore
 				}),
-				h({
-					["questID"] = 24511,	-- Echoes of Tortured Souls
+				qh(24511, {	-- Echoes of Tortured Souls
 					["sourceQuest"] = 24506,	-- Inside the Frozen Citadel
 					["qg"] = 37596,	-- Lady Sylvanas Windrunner <Banshee Queen>
 				}),
-				a({
-					["questID"] = 24683,	-- The Pit of Saron
+				qa(24683, {	-- The Pit of Saron
 					["sourceQuest"] = 24499,	-- Echoes of Tortured Souls
 					["qg"] = 38160,	-- Lady Jaina Proudmoore
 				}),
-				h({
-					["questID"] = 24682,	-- The Pit of Saron
+				qh(24682, {	-- The Pit of Saron
 					["sourceQuest"] = 24511,	-- Echoes of Tortured Souls
 					["qg"] = 38161,	-- Lady Sylvanas Windrunner <Banshee Queen>
 				}),
@@ -122,7 +119,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					ach(4519),	-- Heroic: The Forge of Souls
 					n(0, {		-- Zone Drop
 						i(50379),	-- Battered Hilt (Alliance)

@@ -11,7 +11,7 @@ _.Instances = { tier(1, {	-- Classic
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 		},
 		["coord"] = { 69.2, 24.9, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(31513, {	-- Blades of the Anointed
 					["qg"] = 64827,	-- Hooded Crusader
@@ -21,51 +21,51 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 31513 },	-- Blades of the Anointed
 				}),
 			}),
-			n(  0, {	-- Zone Drop
-				i(7759),	-- Archon Chestpiece
-				i(7728),	-- Beguiler's Robes
-				i(7729),	-- Chesterfall Musket
-				i(7730),	-- Cobalt Crusher
-				i(7752),	-- Dreamslayer
-				un(7, i(7736)),	-- Fight Club
-				un(7, i(7755)),	-- Flintrock Shoulders
-				i(7754, {	-- Harbinger Boots
-					["crs"] = {
-						7754,	-- Scarlet Sentry
-					},
+			d(1,   {	-- Normal
+				n(0,   {	-- Zone Drop
+					i(7759),	-- Archon Chestpiece
+					i(7728),	-- Beguiler's Robes
+					i(7729),	-- Chesterfall Musket
+					i(7730),	-- Cobalt Crusher
+					i(7752),	-- Dreamslayer
+					un(7, i(7736)),	-- Fight Club
+					un(7, i(7755)),	-- Flintrock Shoulders
+					i(7754, {	-- Harbinger Boots
+						["crs"] = {
+							7754,	-- Scarlet Sentry
+						},
+					}),
+					i(7786, {	-- Headsplitter
+						["crs"] = {
+							7754,	-- Scarlet Sentry
+						},
+					}),
+					i(2262, {	-- Mark of Kern
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+						},
+					}),
+					i(10329),	-- Scarlet Belt
+					i(10332),	-- Scarlet Boots
+					i(10328),	-- Scarlet Chestpiece
+					i(10331),	-- Scarlet Gauntlets
+					i(10333),	-- Scarlet Wristguards
+					i(7761),	-- Steelclaw Reaver
+					i(5819),	-- Sunblaze Coif
+					i(1992),	-- Swampchill Fetish
+					i(8226, {	-- The Butcher
+						["crs"] = {
+							7754,	-- Scarlet Sentry
+						},
+					}),
+					un(7, i(7760)),	-- Warchief Kilt
+					i(7727, {	-- Watchman Pauldrons
+						["crs"] = {
+							7754,	-- Scarlet Sentry
+						},
+					}),
+					i(7757),	-- Windweaver Staff
 				}),
-				i(7786, {	-- Headsplitter
-					["crs"] = {
-						7754,	-- Scarlet Sentry
-					},
-				}),
-				i(2262, {	-- Mark of Kern
-					["crs"] = {
-						60033,	-- Frenzied Spirit
-					},
-				}),
-				i(10329),	-- Scarlet Belt
-				i(10332),	-- Scarlet Boots
-				i(10328),	-- Scarlet Chestpiece
-				i(10331),	-- Scarlet Gauntlets
-				i(10333),	-- Scarlet Wristguards
-				i(7761),	-- Steelclaw Reaver
-				i(5819),	-- Sunblaze Coif
-				i(1992),	-- Swampchill Fetish
-				i(8226, {	-- The Butcher
-					["crs"] = {
-						7754,	-- Scarlet Sentry
-					},
-				}),
-				un(7, i(7760)),	-- Warchief Kilt
-				i(7727, {	-- Watchman Pauldrons
-					["crs"] = {
-						7754,	-- Scarlet Sentry
-					},
-				}),
-				i(7757),	-- Windweaver Staff
-			}),
-			d(1, {		-- Normal
 				cr(59789, e(688, {	-- Thalnos the Soulrender
 					i(88284),	-- Forgotten Bloodmage Mantle
 					i(88288),	-- Soulrender Greatcloak
@@ -139,7 +139,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						un(43, n(14693, {	-- Scorn
 							["description"] = "This encounter was only available during the Scourge Invasion.",
-							["groups"] = {
+							["g"] = {
 								un(2, i(23168)),	-- Scorn's Focal Dagger
 								un(2, i(23169)),	-- Scorn's Icy Choker
 								un(2, i(23170)),	-- The Frozen Clutch
