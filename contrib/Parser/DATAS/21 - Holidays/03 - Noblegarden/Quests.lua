@@ -56,9 +56,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 				},
 			},
 			{	--	Spring Gathers [Alliance]
-				["questID"] = 13484,	-- The Great Egg Hunt
+				["questID"] = 13484,	-- Spring Gatherers
 				["u"] = 19,				-- Noblegarden Filter
-				["isDaily"] = true,
 				["qgs"] = {
 					19171,	-- Draenei Commoner
 					19148,	-- Dwarf Commoner
@@ -122,9 +121,8 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["races"] = ALLIANCE_ONLY,
 			},
 			{	--	Spring Gathers [Horde]
-				["questID"] = 13483,	-- The Great Egg Hunt
+				["questID"] = 13483,	-- Spring Gatherers
 				["u"] = 19,				-- Noblegarden Filter
-				["isDaily"] = true,
 				["qgs"] = {
 					19169,	-- Blood Elf Commoner
 					19178,	-- Forsaken Commoner
@@ -198,6 +196,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 			{	--	The Great Egg Hunt [Alliance]
 				["questID"] = 13480,	-- The Great Egg Hunt
 				["u"] = 19,				-- Noblegarden Filter
+				["isDaily"] = true,
 				["qgs"] = {
 					32799,	-- Spring Collector
 				},
@@ -223,11 +222,11 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
 					},
 				},
-				["repeatable"] = true,
 			},
 			{	--	The Great Egg Hunt [Horde]
 				["questID"] = 13479,	-- The Great Egg Hunt
 				["u"] = 19,				-- Noblegarden Filter
+				["isDaily"] = true,
 				["qgs"] = {
 					32798,	-- Spring Gatherer [Falconwing]
 				},
@@ -253,7 +252,6 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["description"] = "This item is required for the achievement \"Hard Boiled\".",
 					},
 				},
-				["repeatable"] = true,
 			},
 		}),
 	}),
