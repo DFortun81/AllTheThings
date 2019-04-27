@@ -580,6 +580,7 @@ _.Zones =
 							i(34469, {	-- Strange Engine Part
 								q(11531, {	-- Strange Engine Part
 									["races"] = ALLIANCE_ONLY,
+									["repeatable"] = true,
 									["requireSkill"] = 356,	-- Fishing
 								}),
 							}),
