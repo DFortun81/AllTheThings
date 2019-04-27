@@ -179,16 +179,19 @@ _.Zones =
 							}),
 							q(11018, {	-- Nethercite Ore
 								["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+								["isDaily"] = true,
 								["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 								["requireSkill"] = 186,	-- Mining
 							}),
 							q(11016, {	-- Nethermine Flayer Hide
 								["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+								["isDaily"] = true,
 								["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 								["requireSkill"] = 393,	-- Skinning
 							}),
 							q(11017, {	-- Netherdust Pollen
 								["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
+								["isDaily"] = true,
 								["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 								["requireSkill"] = 182,	-- Herbalism
 							}),
@@ -198,6 +201,7 @@ _.Zones =
 							}),
 							q(11049, {	-- The Great Netherwing Egg Hunt
 								["qg"] = 23141,	-- Yarzill the Merc
+								["repeatable"] = true,
 								["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 							}),
 							q(11050, {	-- Accepting All Eggs
