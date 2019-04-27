@@ -5,6 +5,16 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(641, {	-- Val'sharah
+			["lvl"] = 98,	
+			["achievementID"] = 10666,
+			["maps"] = {
+				642,	-- Darkpens
+				643,	-- Sleeper's Barrow
+				644,	-- Sleeper's Barrow #2
+				758,	-- Gloaming Reef
+				868,	-- Val'sharah (Legion Invasion)
+			},
+			["description"] = "|cff66ccffVal'sharah is a zone in the northwestern area of the Broken Isles. It was here where Malfurion Stormrage first learned druidism under the tutelage of Cenarius. The zone is currently contested by Xavius and his satyrs attempting to spread the corruption of the Emerald Nightmare. Ages ago, the first druids molded Val'sharah to be a mirror of the Emerald Dream. While merely an echo, it is as close to the Dream as Azeroth can come.|r",
 			["g"] = {
 				n(-169, { 	-- Emissary Quess
 					q(42170, {	-- The Dreamweavers
@@ -1231,6 +1241,9 @@ _.Zones =
 							i(130154),  -- Pet
 						},
 					}),
+					n(93030, { 		-- Ironbranch
+						i(130126),	-- Iron Branch
+					}), 
 					n(94366,  {	-- Lelyn Swiftshadow
 						["g"] = {
 							{	-- The Warden's Signet
@@ -1300,8 +1313,7 @@ _.Zones =
 				--	n(107924, { 	-- Darkfiend Tormentor	}), 
 				--	v(45483, { 		-- Ealdis	}), 
 				--	v(40126, { 		-- Grelda the Hag	}), 
-				--	v(45484, {	 	-- Harbinger of Screams	}), 
-				--	n(93030, { 		-- Ironbranch	}), 
+				--	v(45484, {	 	-- Harbinger of Screams	}),
 				--	n(93686, { 		-- Jinikki the Puncturer	}), 
 				--	n(106042, { 	-- Kalazzius the Guileful	}), 
 				--	n(109125, { 	-- Kathaw the Savage	}), 
@@ -1794,17 +1806,7 @@ _.Zones =
 						}),
 					},
 				}),
-			},
-			["lvl"] = 98,	
-			["achievementID"] = 10666,
-			["maps"] = {
-				642,	-- Darkpens
-				643,	-- Sleeper's Barrow
-				644,	-- Sleeper's Barrow #2
-				758,	-- Gloaming Reef
-				868,	-- Val'sharah (Legion Invasion)
-			},
-			["description"] = "|cff66ccffVal'sharah is a zone in the northwestern area of the Broken Isles. It was here where Malfurion Stormrage first learned druidism under the tutelage of Cenarius. The zone is currently contested by Xavius and his satyrs attempting to spread the corruption of the Emerald Nightmare. Ages ago, the first druids molded Val'sharah to be a mirror of the Emerald Dream. While merely an echo, it is as close to the Dream as Azeroth can come.|r",				
+			},				
 		}),	
 	}),
 };
