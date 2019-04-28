@@ -207,7 +207,7 @@ _.Zones =
 							q(11050, {	-- Accepting All Eggs
 								["qg"] = 23141,	-- Yarzill the Merc
 								["repeatable"] = true,
-								["sourceQuests"] = { 11050 },	-- The Great Netherwing Egg Hunt
+								["sourceQuests"] = { 11049 },	-- The Great Netherwing Egg Hunt
 							}),
 							q(11020, {	-- A Slow Death
 								["qg"] = 23141,	-- Yarzill the Merc
