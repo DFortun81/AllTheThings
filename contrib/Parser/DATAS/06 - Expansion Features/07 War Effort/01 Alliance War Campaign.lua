@@ -512,6 +512,7 @@ _.ExpansionFeatures =
 							},
 							qa(53069, {	-- Operation: Blood Arrow
 								["description"] = "This quest will automatically be offered when you reach 4,500 Friendly reputation with 7th Legion (75% of Friendly).",
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 52146 },	-- Blood on the Sand
 							}),
 							qa(52147, {	-- Crippling the Horde
@@ -725,6 +726,7 @@ _.ExpansionFeatures =
 							},
 							qa(53072, {	-- Operation: Heartstrike
 								["description"] = "This quest will automatically be offered when you reach Revered with 7th Legion.",
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 52496 },	-- A Clean Escape
 							}),
 							qa(52473, {	-- Bringing Down the Fleet
@@ -964,6 +966,7 @@ _.ExpansionFeatures =
 						},
 							qa(54191, {	-- Changing Course
 								["description"] = "This quest will automatically be offered when you reach 7,000 Revered reputation with 7th Legion (33.3% of Revered).",
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 53887 },	-- War Marches On
 							}),
 							qa(54192, {	-- Sensitive Intel
