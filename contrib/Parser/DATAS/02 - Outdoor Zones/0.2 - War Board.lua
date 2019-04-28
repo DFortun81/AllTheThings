@@ -79,7 +79,10 @@ _.Zones =
 			q(29391),	-- Guardians of Hyjal: Call of the Ancients
 			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
 			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+			{
+				["questID"] = 28490,	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+				["isBreadcrumb"] = true,
+			},
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
 			q(28709),	-- Hero's Call: Borean Tundra!
 			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
