@@ -317,7 +317,7 @@ _.Zones =
 													i(158670),	-- Zanchuli Waistwrap
 													i(158671),	-- Rastari Belt
 												},
-												["qg"] = 133302,	-- Druid of Gonk
+												["qg"] = 123335,	-- Wardruid Loti
 												["sourceQuests"] = { 
 													47897,	-- Zanchuli Traitors
 													47915,	-- Rescuing the Taken
@@ -567,6 +567,19 @@ _.Zones =
 									},
 								},
 							},
+							qh(48581, {	-- A Good Spanking
+								["qg"] = 122009,	-- Kraal Master B'khor
+								["g"] = {
+									i(158411),	-- Jambani Girdle
+									i(158434),	-- Jambani Legwraps
+									i(158408),	-- Rastari Girdle
+									i(158431),	-- Rastari Legplates
+									i(158410),	-- Torcalin Chain
+									i(158433),	-- Torcalin Greaves
+									i(158409),	-- Zanchuli Cincture
+									i(158432),	-- Zanchuli Trousers
+								},
+							}),
 							q(49289, {	-- A Special Stone
 								["g"] = {
 									i(159151),	-- Tidemistress Greatcloak
@@ -602,7 +615,7 @@ _.Zones =
 									i(159119),	-- Headhunter Jo's Machecte
 									i(159120),	-- Great Hunt Warglaive
 									i(159121),	-- Headhunter Jo's Longstaff
-									i(159122),	-- Wildtusk Ivory Headcracker
+									i(159122),	-- Wildtusk Ivory Headcracker	
 								},
 								["qg"] = 138669	-- Hemet Nesingwary
 							}),
@@ -614,6 +627,16 @@ _.Zones =
 									i(159155),	-- Jambani Handguards
 									i(158667),	-- Blue Flame Spelltorch
 									i(159124),	-- Golden Fleet Buckler
+								},
+							}),
+							qh(48527, {	-- Ravenous Landsharks
+								["qg"] = 121706,	-- Beastlord L'kala
+								["g"] = {
+									i(159764),	-- Enraged Diemetradon Fin
+									i(158390),	-- Jambani Striders
+									i(158387),	-- Rastari Footguards
+									i(158389),	-- Torcalin Sabatons
+									i(158388),	-- Zanchuli Sandals
 								},
 							}),
 							qh(49680, {	-- Skycaller Soltok
