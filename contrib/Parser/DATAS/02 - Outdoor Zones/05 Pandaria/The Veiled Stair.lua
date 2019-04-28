@@ -49,7 +49,7 @@ _.Zones =
 							un(38, i(102246)),	-- Xing-Ho, Breath of Yu'lon
 						}),
 					})),
---[[				
+--[[
 					q(31287),	-- Educating Saurok
 					q(31286),	-- Robbing Robbers of Robbers
 					q(31611),	-- The Kun-Lai Kicker
@@ -74,7 +74,7 @@ _.Zones =
 							un(38, i(98148)),	-- Tigerfang Wrap
 							i(102457, {	-- Timeless Essence of the Black Dragonflight
 								["description"] = "To purchase the legendary cloak token you must have obtained the achievement |r |cFFFFD700'Chapter V: Judgment of the Black Prince'|r during Mists of Pandaria.",
-								["groups"] = {								
+								["groups"] = {
 									un(38, i(102248)),	-- Fen-Yu, Fury of Xuen
 									un(38, i(102249)),	-- Gon-Lu, Strength of Xuen
 									un(38, i(102247)),	-- Jina-Kang, Kindness of Chi-Ji
@@ -85,11 +85,12 @@ _.Zones =
 							}),
 						},
 						["description"] = "To purchase the epic cloaks you must have obtained the achievement |r |cFFFFD700'Chapter IV: Celestial Blessings'|r during Mists of Pandaria. ",
+						["coords"] = { 54.4, 72.8, 433 },
 					}),
 				}),
-			},	
+			},
 			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
 			["lvl"] = 78,
-		}),	
+		}),
 	}),
 };
