@@ -232,7 +232,7 @@ _.Toys =
 			["achievementID"] = 913,	-- To Honor One's Elders
 			["u"] = 17,
 		}),
-		a(n(-53, {  -- Midsummer Fire Festival (Alliance)
+		a(n(-53, {  -- Midsummer Fire Festival
 			["groups"] = {
 				i(34686), 	-- Brazier of Dancing Flames
 				i(116440), 	-- Burning Defender's Medallion
@@ -240,18 +240,7 @@ _.Toys =
 				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
 			},
-			["achievementID"] = 1038,	-- The Flame Warden
-			["u"] = 21,
-		})),
-		h(n(-54, {	-- Midsummer Fire Festival (Horde)
-			["groups"] = {
-				i(34686), 	-- Brazier of Dancing Flames
-				i(116440), 	-- Burning Defender's Medallion
-				i(116435),	-- Cozy Bonfire
-				i(166746),	-- Fire Eater's Hearthstone
-				i(141649),	-- Set of Matches
-			},
-			["achievementID"] = 1039,	-- The Flame Keeper
+			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
 			["u"] = 21,
 		})),
 		{	-- Noblegarden
