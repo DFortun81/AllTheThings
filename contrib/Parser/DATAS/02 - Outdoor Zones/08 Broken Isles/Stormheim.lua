@@ -426,6 +426,8 @@ _.Zones =
 					}),
 				}),
 				m(649, { 	-- Helheim
+					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
+					["icon"] = "Interface\\Icons\\achievement_boss_helyra",
 					["g"] = {
 						n(-17, {	-- Quests
 							q(39837, {	-- An Unworthy Task
@@ -518,11 +520,16 @@ _.Zones =
 								["description"] = "Objective of the World Quest 'DANGER: Captain Dargun'. Is not up otherwise.",
 							}),
 							n(92040,  {	-- Fenri
+								["questID"] = 38461,
+								["coord"] = { 84.6, 49.2, 649 },
 								["g"] = {
 									i(129044),	-- Frothing Helhound's Fury
+									{	-- Fenri (Adventurer of Stormheim)
+										["achievementID"] = 11263,	-- Adventurer of Stormheim
+										["criteriaID"] = 6,	-- Fenri
+									},
 								},
-								["questID"] = 38461
-							}), 
+							}),
 							n(115732, {	-- Jorvild the Trusted
 								["description"] = "Starting from Helya's Throne, head down the stairs and along the path. When you hit the first bridge, turn right 90 degrees and start swimming lengthwise down the pond. Directly in front of you there's a tiny \"beach\" with a door-sized cave entrance. If you get to the part of the pond where it gets narrow and turns around a corner, you went too far. The cave is just left of the bend between some rocks.",
 								["questID"] = 46949,
@@ -555,15 +562,19 @@ _.Zones =
 								}
 							}),
 							n(97630,  {	-- Soulthirster
+								["questID"] = 39870,
+								["coord"] = { 29.0, 61.6, 649 },
 								["g"] = {
-									i(129188),	-- Pet
+									i(129188),	-- Bleakwater Jelly (PET!)
+									{	-- Soulthirster (Adventurer of Stormheim)
+										["achievementID"] = 11263,	-- Adventurer of Stormheim
+										["criteriaID"] = 17,	-- Soulthirster
+									},
+
 								},
-								["questID"] = 39870,	
 							}),
 						}),
-					},	
-					["icon"] = "Interface\\Icons\\achievement_boss_helyra",	
-					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
+					},
 				}),
 				n(-25, { 	-- Pet Battle
 					p(1708), 	-- Albatross Chick
@@ -983,11 +994,10 @@ _.Zones =
 					ach(10877, {	-- Pillars of Creation
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Aegis of Aggramar
-								-- 40072,	-- Halls of Valor: Securing the Aegis = SQ?
-								-- 43349,	-- The Aegis of Aggramar = SQ?
-								-- Need to know whether to list one or both to avoid endless SQ loop if they're attached to each other
-							}),
+							{	-- Criteria 1 — Aegis of Aggramar
+								["criteriaID"] = 1,	-- Aegis of Aggramar
+								["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
+							},
 						},
 					}),
 					ach(10793, {	-- What a Ripoff!
@@ -1072,8 +1082,8 @@ _.Zones =
 					q(38339),	-- A Little Kelp From My Foes
 					q(39851),	-- Allies in Death
 					q(40120,  {	-- A Murky Fate
-						["qg"] = 98587,	-- Morheim Ancestor
 						["coord"] = { 78.2, 58.5, 634 },
+						["qg"] = 98587,	-- Morheim Ancestor
 					}),
 					qh(38882, {	-- A New Life for Undeath
 						["sourceQuests"] = { 39155 },	-- Becoming the Ascendant
@@ -1111,16 +1121,24 @@ _.Zones =
 						i(134561),
 					}),
 					q(39792,  {	-- A Stack of Racks
+						["sourceQuests"] = {
+							39793,	-- Only the Finest
+							39787,	-- Rigging the Wager
+						},
+						["coord"] = { 51.3, 57.2, 634 },
 						["qg"] = 107675,		-- Rax Sixtrigger
-						["sourceQuest"] = 39786,	-- A Stone Cold Gamble
 					}),
 					q(39786,  {	-- A Stone Cold Gamble
+						["sourceQuests"] = {
+							39793,	-- Only the Finest
+							39787,	-- Rigging the Wager
+						},
+						["coord"] = { 51.3, 56.9, 634 },
 						["qg"] = 107674,		-- Snaggle Sixtrigger
-						["sourceQuest"] = 39787,	-- Rigging the Wager
 					}),
 					q(42639,  {	-- A Stone of Blood
-						["qg"] = 108072,	-- Sir Finley Mrrggglton
 						["coord"] = { 74.8, 55.5, 634 },
+						["qg"] = 108072,	-- Sir Finley Mrrggglton
 					}),
 					q(39594,  {	-- A Trial of Might
 						["qg"] = 96257,	-- Yotnar
@@ -1246,14 +1264,22 @@ _.Zones =
 						i(129254),
 					}),
 					q(42447,  {	-- Dances With Ravenbears
-						i(129361),
-						i(129363),
-						i(129364),
-						i(129365),
-						i(129249),
-						i(129248),
-						i(129247),
-						i(129246),
+						["sourceQuests"] = {
+							42445,	-- Nithogg's Tribute
+							42446,	-- Singed Feathers
+						},
+						["coord"] = { 49.8, 32.5, 634 },
+						["qg"] = 107498,	-- Cukkaw
+						["g"] = {
+							i(129361),	-- Blackfeather Handwraps
+							i(129363),	-- Blackfeather Gloves
+							i(129364),	-- Blackfeather Grips
+							i(129365),	-- Blackfeather Handguards
+							i(129249),	-- Dreadsworn Greatbelt
+							i(129248),	-- Stormborn Waistguard
+							i(129247),	-- Runesworn Girdle
+							i(129246),	-- Runespeaker's Cinch
+						},
 					}),
 					q(44177,  {	-- Dark Secrets and Shady Deals
 						["qg"] = 112959,	-- Fleet Admiral Tethys
@@ -1382,9 +1408,9 @@ _.Zones =
 						["qg"] = 92566,	-- Dread-Rider Cullen
 					}),
 					q(39793,  {	-- Only the Finest
-						["qg"] = 107675,		-- Rax Sixtrigger
-						["coord"] = { 51.4, 57.0, 634 },
 						["sourceQuest"] = 39789,	-- Eating Into Our Business
+						["coord"] = { 51.4, 57.0, 634 },
+						["qg"] = 107675,		-- Rax Sixtrigger
 					}),
 					q(39855),	-- Paid in Lifeblood
 					q(43596,  {	-- Piercing the Mists - Dungeon
@@ -1413,10 +1439,13 @@ _.Zones =
 						},
 					}),
 					q(42483,  {	-- Put It All on Red
-						["sourceQuest"] = 39792,	-- A Stack of Racks
-						["qg"] = 107674,		-- Snaggle Sixtrigger
+						["sourceQuests"] = {
+							39792,	-- A Stack of Racks
+							39786,	-- A Stone Cold Gamble
+						},
+						["qg"] = 107674,	-- Snaggle Sixtrigger
 						["g"] = {
-							title(343),		-- TITLE: %s the Gullible
+							title(343),	-- <Name> the Gullible
 						},
 					}),
 					q(38817,  {	-- Regal Remains
@@ -1441,18 +1470,29 @@ _.Zones =
 						["coord"] = { 62.9, 48.4, 634 },
 					}),
 					q(39787,  {	-- Rigging the Wager
-						["qg"] = 107674,		-- Snaggle Sixtrigger
-						["coord"] = { 51.2, 57.1, 634 },
 						["sourceQuest"] = 39793,	-- Only the Finest
+						["coord"] = { 51.2, 57.1, 634 },
+						["qg"] = 107674,		-- Snaggle Sixtrigger
 					}),
-					q(40046),	-- Scavenging the Shallows
+					q(40046,  {	-- Scavenging the Shallows
+						-- prereq for SOMETHING, but at 107 i was too low-leveled
+						["sourceQuests"] = { 39984 },	-- Remnants of the Past
+						["coord"] = { 59.0, 42.9, 634 },
+						["qg"] = 97973,	-- Havi
+					}),
 					qa(38558),	-- See Ya Later, Oscillator
 					q(40044,  {	-- Shadows in the Mists
-						i(129350),
-						i(132773),
-						i(132772),
-						i(132771),
-						i(132770),
+						-- prereq for SOMETHING, but at 107 i was too low-leveled
+						["sourceQuests"] = { 39984 },	-- Remnants of the Past
+						["coord"] = { 59.0, 42.9, 634 },
+						["qg"] = 97973,	-- Havi
+						["g"] = {
+							i(129350),	-- Sigrid's Phantom Shroud
+							i(132773),	-- Dreadsworn Waistguard
+							i(132772),	-- Stormborn Cinch
+							i(132771),	-- Runesworn Waistguard
+							i(132770),	-- Runespeaker's Waistcord
+						},
 					}),
 					qa(39063),	-- Shielded Secrets (Alliance)
 					qh(38878, {	-- Shielded Secrets (Horde)
@@ -1475,7 +1515,6 @@ _.Zones =
 						i(129313),
 					}),
 					q(42446,  {	-- Singed Feathers
-					--	********** TURNED IN **********
 						["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
 						["coord"] = { 49.8, 32.5, 634 },
 						["qg"] = 107498,	-- Cukkaw
@@ -1485,7 +1524,14 @@ _.Zones =
 						["coord"] = { 60.0, 50.8, 634 },
 						["sourceQuests"] = { 39803 },	-- The Trials Continue
 					}),
-					q(42645),	-- Spilling Bad Blood
+					q(42645,  {	-- Spilling Bad Blood
+						["sourceQuests"] = {
+							42635,	-- The Mystery of Dreyrgrot
+							42639,	-- A Stone of Blood
+						},
+						["coord"] = { 74.8, 55.5, 634 },
+						["qg"] = 108072,	-- Sir Finley Mrrggglton
+					}),
 					q(38347),	-- Stealth by Seaweed
 					q(40003,  {	-- Stem the Tide
 						["sourceQuests"] = { 40002 },	-- A Familiar Fate
@@ -1657,7 +1703,12 @@ _.Zones =
 						["coord"] = { 60.0, 50.8, 634 },
 						["qg"] = 92539,	-- Havi
 					}),
-					q(43595),	-- To Honor the Fallen
+					q(43595,  {	-- To Honor the Fallen
+						-- prereq for SOMETHING, but at 107 i was too low-leveled
+						["sourceQuests"] = { 39984 },	-- Remnants of the Past
+						["coord"] = { 59.0, 42.9, 634 },
+						["qg"] = 97973,	-- Havi
+					}),
 					q(39849),	-- To Light the Way
 					qa(39062),	-- To Skold-Ashil (Alliance)
 					qh(39154, {	-- To Skold-Ashil (Horde)
@@ -1706,10 +1757,19 @@ _.Zones =
 						["qg"] = 97270,	-- Shieldmaiden Iounn
 					}),
 					q(42641,  {	-- What the Bonespeakers Buried
-						i(129360),
-						i(129358),
-						i(129359),
-						i(129357),
+						["sourceQuests"] = {
+							42635,	-- The Mystery of Dreyrgrot
+							42639,	-- A Stone of Blood
+						},
+						["coord"] = { 74.8, 55.5, 634 },
+						["qg"] = 108072,	-- Sir Finley Mrrggglton
+						["g"] = {
+							i(129329),	-- The Blood-Thane's Amulet
+							i(129360),	-- Dreadsworn Breastplate
+							i(129358),	-- Stormborn Hauberk
+							i(129359),	-- Runesworn Tunic
+							i(129357),	-- Runespeaker's Vestments
+						},
 					}),
 					q(39652,  {	-- Where Dragons Rule
 						["sourceQuests"] = {
@@ -2010,7 +2070,7 @@ _.Zones =
 					SOON™
 					--]]
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					n(91874,  {	-- Bladesquall
 						["questID"] = 38431,
 						["coord"] = { 46.0, 77.7, 634 },
@@ -2034,20 +2094,20 @@ _.Zones =
 						},
 					}), 
 					n(92685,  {	-- Captain Brvet
+						["description"] = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
 						["questID"] = 38642,
+						["coord"] = { 58.0, 45.2, 634 },
 						["g"] = {
-							i(129123),
-						},
-					}), 
-					nh(92343, {	-- Captain Tomas (Mother Clacker)
-						["description"] = "Speak to Captain Tomas to summon Mother Clacker. Alliance can tag Mother Clacker after it is summoned.",
-						["questID"] = 38422,	
-						["g"] = {
-							i(129040),
+							i(129123),	-- Brvet's Hauberk of Command
+							{	-- Helmouth Raiders (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 10,	-- Helmouth Raiders
+							},
 						},
 					}),
-					v(38627,  {	-- Worgen Stalkers (Horde Only)
+					v(38627,  {	-- Champion Elodie (Worgen Stalkers — Horde Only)
 						["description"] = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
+						["coord"] = { 44.0, 22.9, 634 },
 						["races"] = HORDE_ONLY,
 						["qgs"] = {
 							92604,	-- Champion Elodie
@@ -2056,17 +2116,23 @@ _.Zones =
 							92613,	-- Priestess Liza
 						},
 						["g"] = {
+							{	-- Worgen Stalkers or Forsaken Defenders (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 9,	-- Worgen Stalkers or Forsaken Defenders
+							},
 							i(129264),	-- Patrol Captain's Gauntlets
 						},
 					}),
 					nh(94313, {	-- Daniel "Boomer" Vorick
 						["questID"] = 39048,
+						["coord"] = { 58.2, 75.5, 634 },
 						["g"] = {
-							i(129144),	
+							i(129144),	-- Boomer's Utility Belt
 						},
 					}),
-					v(38630,  {	-- Horde Kill Squad (Alliance Only)
+					v(38630,  {	-- Deathguard Adams (Horde Kill Squad — Alliance Only)
 						["description"] = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Horde Kill Squad.",
+						["coord"] = { 44.2, 22.8, 634 },
 						["races"] = ALLIANCE_ONLY,
 						["qgs"] = {
 							92626,	-- Deathguard Adams
@@ -2076,18 +2142,28 @@ _.Zones =
 						},
 						["g"] = {
 							i(129266),	-- Raider Captain's Gauntlets
+							{	-- Worgen Stalkers or Forsaken Defenders (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 9,	-- Worgen Stalkers or Forsaken Defenders
+							},
 						},
 					}),
 					na(94347, {	-- Dread-Rider Cortis
 						["questID"] = 43343,
-						["g"] = {	
-							i(130134),
+						["coord"] = { 74.2, 62.4, 634 },
+						["g"] = {
+							i(130134),	-- Padded-Link Sniper Leggings
 						},
-					}), 
+					}),
 					n(98188,  {	-- Egyl the Enduring
 						["questID"] = 40068,
+						["coord"] = { 41.4, 32.0, 634 },	-- cave entrance
 						["g"] = {	
-							i(132898),
+							i(132898),	-- Sabatons of the Endless Vigil
+							{	-- Egyl the Enduring (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 18,	-- Egyl the Enduring
+							},
 						},
 					}), 
 					n(91803,  {	-- Fathnyr
@@ -2103,25 +2179,41 @@ _.Zones =
 					}), 
 					n(91529,  {	-- Glimar Ironfist
 						["questID"] = 38333,
+						["coord"] = { 41.9, 66.5, 634 },
 						["g"] = {
-							i(129291),
+							i(129291),	-- Stormslayer Champion Belt
+							{	-- Glimar Ironfist (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 1,	-- Glimar Ironfist
+							},
 						},
-					}), 
+					}),
 					n(98503,  {	-- Grrvrgull the Conqueror
 						["questID"] = 40113,
-						["g"] = {	
-							i(138421),
+						["coord"] = { 78.9, 61.1, 634 },
+						["g"] = {
+							i(138421),	-- The Conqueror's Chain
+							{	-- Grrvrgull the Conqueror (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 21,	-- Grrvrgull the Conqueror
+							},
 						},
-					}), 
+					}),
 					n(107926, {	-- Hannval the Butcher
 						["questID"] = 42591,
+						["coord"] = { 51.9, 74.8, 634 },
 						["g"] = {	
-							i(138417),
+							i(138417),	-- The Butcher's Apron
+							{	-- Hannval the Butcher (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 22,	-- Hannval the Butcher
+							},
 						},
 					}),
 					v(38625,  {	-- Hook and Sinker (Alliance Only)
 						["races"] = ALLIANCE_ONLY,
-						["qgs"] = {
+						["coord"] = { 42.0, 57.6, 634 },
+						["crs"] = {
 							92590,	-- Hook
 							92591,	-- Sinker
 						},
@@ -2137,9 +2229,14 @@ _.Zones =
 						},
 					}), 
 					n(90139,  {	-- Inquisitor Ernstenbok
-						["questID"] = 37908,	
-						["g"] = {	
-							i(140686), 
+						["questID"] = 37908,
+						["coord"] = { 62.4, 74.9, 634 },	-- cave entrance
+						["g"] = {
+							i(140686),	-- Gargantuan Mantle
+							{	-- Marius & Tehd versus an Inquisitor (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 24,	-- Marius & Tehd versus an Inquisitor
+							},
 						},
 					}), 
 					n(94413,  {	-- Isel the Hammer
@@ -2152,7 +2249,18 @@ _.Zones =
 							},
 							i(129133),	-- The Hammer's Head
 						},
-					}), 
+					}),
+					n(92751,  {	-- Ivory Sentinel
+						["questID"] = 39031,
+						["coord"] = { 60.1, 68.1, 634 },
+						["g"] = {
+							i(132895),	-- The Watcher's Divine Inspiration
+							{	-- Ivory Sentinel (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 11,	-- Ivory Sentinel
+							},
+						},
+					}),
 					n(98421,  {	-- Kottr Vondyr
 						["questID"] = 40109,
 						["coord"] = { 73.6, 47.6, 634 },
@@ -2176,23 +2284,41 @@ _.Zones =
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
 					}), 
+					nh(91780, {	-- Mother Clacker
+						["questID"] = 38422,
+						["crs"] = { 92343 },	-- Captain Tomas
+						["g"] = {
+							i(129040),	-- Clacker's Clanking Clam Diggers
+						},
+					}),
 					n(110363, {	-- Roteye
 						["questID"] = 43342,
-						["g"] = {	
-							i(139387),
+						["coord"] = { 57.8, 34.6, 634 },
+						["g"] = {
+							i(139387),	-- Drowned Champion's Greaves
+							{	-- Roteye (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 23,	-- Roteye
+							},
 						},
-					}), 
+					}),
 					n(107487, {	-- Starbuck
 						["questID"] = 42437,
-						["g"] = {	
-							i(130132),
+						["coord"] = { 54.4, 28.9, 634 },
+						["g"] = {
+							i(130132),	-- Bracers of Earthbound Flight
 						},
-					}), 
+					}),
 					n(91795,  {	-- Stormwing Matriarch
 						["questID"] = 38423,
+						["coord"] = { 49.5, 72.3, 634 },
 						["g"] = {	
-							i(129208),
-							i(129110),
+							i(129208),	-- Stormborne Whelpling (PET!)
+							i(129110),	-- Matriarch-Hide Legguards
+							{	-- Stormwing Matriarch (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 2,	-- Stormwing Matriarch
+							},
 						},
 					}),
 					n(98268,  {	-- Tarben <Jarl of Tideskorn Harbor>
@@ -2208,10 +2334,20 @@ _.Zones =
 					}),
 					n(91892,  {	-- Thane Irglov the Merciless
 						["questID"] = 38424,
-						["g"] = {
-							i(129113)	-- Faintly Glowing Flagon of Mead
+						["coord"] = { 41.8, 71.2, 634 },
+						["crs"] = {
+							91893,	-- Erling the Lightningborn
+							91894,	-- Strider Cuyler
+							91895,	-- Asger Jarlborn
 						},
-					}), 
+						["g"] = {
+							i(129113),	-- Faintly Glowing Flagon of Mead (TOY!)
+							{	-- Thane's Mead Hall (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 5,	-- Thane's Mead Hall
+							},
+						},
+					}),
 					n(92763,  {	-- The Nameless King
 						["description"] = "Click on the offering shrine that spawns in front of the sign to summon The Nameless King.",
 						["questID"] = 38685,
@@ -2248,8 +2384,13 @@ _.Zones =
 					}), 
 					n(92152,  {	-- Whitewater Typhoon
 						["questID"] = 38472,
-						["g"] = {	
-							i(138418),
+						["coord"] = { 36.2, 51.1, 634 },
+						["g"] = {
+							i(138418),	-- Typhoon Grips
+							{	-- Whitewater Typhoon (Adventurer of Stormheim)
+								["achievementID"] = 11263,	-- Adventurer of Stormheim
+								["criteriaID"] = 7,	-- Whitewater Typhoon
+							},
 						},
 					}),
 --[[
@@ -2262,7 +2403,6 @@ _.Zones =
 				--	n(92682, { 		-- Helmouth Raider	}), 
 				--	n(92703, { 		-- Helmouth Raider	}), 
 				--	n(108822, { 	-- Huntress Estrid	}), 
-				--	n(92751, { 		-- Ivory Sentinel	}), 
 				--	n(109015, { 	-- Lagertha	}), 
 				--	n(109317, { 	-- Rulf Bonesnapper	}), 
 				--	n(109318, { 	-- Runeseer Sigvid	}), 
@@ -2272,7 +2412,7 @@ _.Zones =
 				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), 
 --]]
 				}),
-				n(-2, { 	-- Vendors
+				n(-2,  {	-- Vendors
 					n(98367, {	-- Tigrid the Charmer <Enchantress>
 						i(124440, {	-- Arkhana
 							i(128617),	-- Formula: Enchant Gloves - Legion Herbalism
@@ -2308,7 +2448,7 @@ _.Zones =
 						i(129367),	-- Vrykul Toy Boat Kit
 					}),
 				}),
-				n(-34, { 	-- World Quests
+				n(-34, {	-- World Quests
 					n(-322, {	-- Cloak
 						i(134202),	-- Stormsky Cloak
 					}),
@@ -2415,7 +2555,7 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 					},
 				}),				
-				n(0, { 		-- Zone Drops
+				n(0,   {	-- Zone Drops
 					["g"] = {
 						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 						i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)

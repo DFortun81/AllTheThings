@@ -81,16 +81,22 @@ _.Zones =
 ]]--					
 				}),
 				n(-25,  {	-- Pet Battle
-					["groups"] = {
-						p(1778),	-- Dust Bunny
-						qg(98725, qa(   45540)),	-- A Call from the Caverns
-						qg(115287, qh(  45540)),	-- A Call from the Caverns
-						ach(12431, {	-- Post Haste
-							i(156721),		-- Mailemental
-						}),
-					},
-					["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15 minute buff..  Multiple people can click the rug.  If there are none present you can realm hop until you find one. You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
-				}),
+					p(1778, {	-- Dust Bunny
+						["description"] = "In order to see this battle pet you must first obtain the buff |cFFFFD700Spring Cleaning|r, which is a 15-minute buff.  You obtain this buff by clicking on a |cFFFFD700Dusty Rug|r.  Multiple people can click the rug.  If there are none present you can realm hop until you find one.  The rug can spawn in one of five locations:\n\n|cFFFFFFFFBarber Shop|r - Upper Level (|cFFFFFFFF52.52, 30.31|r),\n\n|cFFFFFFFFBreanni's Shop|r - Behind the counter (|cFFFFFFFF58.9, 38.3|r),\n\n|cFFFFFFFFFilthy  Animal [Horde]|r - Outside the building on top of the sewer gate to the right before you enter. (|cFFFFFFFF64.15, 37.9|r)\n\n|cFFFFFFFFGreyfang Enclave [Alliance]|r - Behind the Paladin Portal\n\n|cFFFFFFFFLegerdemain Lounge|r - Top Floor",
+					}),
+					q(45540, {	-- A Call from the Caverns
+						["qgs"] = {
+							98725,	-- Lio the Lioness <Battle Pet Master>
+							115287,	-- Serr'ah <Battle Pet Master>
+						},
+					}),
+					q(46293, {	-- Deadmines, Part Three?
+						["qg"] = 96479,	-- Breanni
+					}),
+					ach(12431, {	-- Post Haste
+						i(156721),	-- Mailemental
+					}),
+                }),
 				n(-38,  {	-- Profession
 					{	-- Felslate
 						["itemID"] = 123919,	-- Felslate
@@ -2635,19 +2641,23 @@ _.Zones =
 						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 versions)
 						["classes"] = { 3 },
 					}),
+					q(44545, {	-- Pressing the Assault
+						["isBreadcrumb"] = true,
+						["description"] = "This quest is automatically offered after you find your first Pillar of Creation.",
+					}),
 					q(48375, {	-- Primal Obliterum
 						["qg"] = 114719,	-- Trader Caelen
 						["repeatable"] = true,
 					}),
 					q(44100, {	-- Proper Introductions
-						["qg"] = 112695,	-- Hooded Priest
-						["lvl"] = 101,
 						["classes"] = { 5 },	-- Priest
+						["lvl"] = 101,
+						["qg"] = 112695,	-- Hooded Priest
 					}),
 					qa(47022, {	-- Protection: Aid of the Illidari
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
-						["classes"] = { 2 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 2 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["u"] = 40,
 					}),
 					qa(45412, {	-- Protection: Aid of the Illidari
@@ -4917,9 +4927,6 @@ _.Zones =
 							i(129798),	-- Plump Jelly Pet
 							i(140274),	-- River Calf Pet
 						}),
-					}),
-					n(110642, {		-- Fizzi Liverzapper
-						i(2460),	-- Elixir of Tongues
 					}),
 					nh(98724, {	-- Giada Goldleash
 						i(116415, {	-- Pet Charm
