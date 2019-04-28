@@ -121,6 +121,7 @@ _.WorldDrops =
 					i(4835),	-- Elite Shoulders
 					i(7727),	-- Watchman Pauldrons
 					i(7755),	-- Flintrock Shoulders
+					i(9430),	-- Spaulders of a Lost Age
 				}),
 				n(-322, {	-- Back
 					i(10060),	-- Duskwoven Cape
