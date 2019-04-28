@@ -21,6 +21,13 @@ _.Zones =
 					},
 				}),
 				n(-17, {
+					{	-- Skymistress Gloaming
+						["questID"] = 9134,
+						["qg"] = 16191,	-- Sathren Azuredawn
+						["coord"] = { 53.9, 71.0, 110 },
+						["races"] = { 10 },	-- Blood Elf
+						["sourceQuest"] = 9133,	-- Fly to Silvermoon City
+					},
 					{	-- Walk Among Ghosts
 						["questID"] = 53734,
 						["qg"] = 16802,	-- Lor'themar Theron
@@ -73,7 +80,6 @@ _.Zones =
 					qh(11915),	-- Playing with Fire
 					qh(27298),	-- Seek Out Master Pyreanor
 					qh(27332),	-- Seek the Shadow-Walker
-					qh( 9134),	-- Skymistress Gloaming
 					qh( 9332),	-- Stealing Darnassus's Flame
 					qh( 9331),	-- Stealing Ironforge's Flame
 					qh( 9330),	-- Stealing Stormwind's Flame
