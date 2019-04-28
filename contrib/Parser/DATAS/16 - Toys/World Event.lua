@@ -232,7 +232,7 @@ _.Toys =
 			["achievementID"] = 913,	-- To Honor One's Elders
 			["u"] = 17,
 		}),
-		a(n(-53, {  -- Midsummer Fire Festival
+		n(-53, {  	-- Midsummer Fire Festival
 			["groups"] = {
 				i(34686), 	-- Brazier of Dancing Flames
 				i(116440), 	-- Burning Defender's Medallion
@@ -242,7 +242,7 @@ _.Toys =
 			},
 			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
 			["u"] = 21,
-		})),
+		}),
 		{	-- Noblegarden
 			["npcID"] = -51,			-- Noblegarden
 			["achievementID"] = 2798,	-- Noble Gardener
