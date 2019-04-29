@@ -64,7 +64,6 @@ _.WorldDrops =
 					i(55313),	-- Mereldar Cloak
 					i(55314),	-- Thondroril Cloak
 					i(55315),	-- Blackwolf Cloak
-					un(7, i(55316)),	-- Sorrowmurk Cloak
 					i(55824),	-- Skin of Stone
 					i(56219),	-- Shroud of Dark Memories
 					i(59466),	-- Ironstar's Impenetrable Cover
