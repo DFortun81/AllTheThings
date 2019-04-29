@@ -189,15 +189,6 @@ _.Zones =
 									},
 								}),
 								-- INCURSIONS INFO STARTS HERE
-								-- not sure if cache should be attached to quests or just indicated with a description
-								-- also not sure where this stuff should live!  help!  i'm a libra and i can't make decisions!  it's not my fault!
-								--[[
-								qh(53939),	-- Breaching Boralus (Tiragarde Sound)
-								qh(54132),	-- Horde of Heroes (Stormsong Valley)
-								qh(54137),	-- In Every Dark Corner (Drustvar)
-								qh(53885),	-- Isolated Victory (Vol'dun)
-								qh(54135),	-- Romp in the Swamp (Nazmir)
-								qh(53883),	-- Shores of Zuldazar
 								i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 									["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 									["g"] = bubbleDown({["modID"] = 6}, {
@@ -255,7 +246,6 @@ _.Zones =
 										i(166337),	-- Honorbound Warhammer
 									}),
 								}),
-							--]]
 							},
 						}),
 					},
