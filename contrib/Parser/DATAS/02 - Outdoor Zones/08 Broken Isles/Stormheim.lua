@@ -502,15 +502,15 @@ _.Zones =
 								["coord"] = { 46.2, 60.6, 649 },
 								["qg"] = 97558,	-- Ashildir
 								["g"] = {
-									i(132832),	-- Bones of Geir	
-									i(132830),	-- Cursebinder Chains	
-									i(132826),	-- Cursed Kvaldir Blood	
-									i(132827),	-- Gaze of Helya	
-									i(132824),	-- Helheim Waylight	
-									i(132828),	-- Helhound Core	
-									i(132829),	-- Silver of Heost	
-									i(132825),	-- Val'kyra Boon	
-									i(132834),	-- Wailing Wings	
+									i(132832),	-- Bones of Geir
+									i(132830),	-- Cursebinder Chains
+									i(132826),	-- Cursed Kvaldir Blood
+									i(132827),	-- Gaze of Helya
+									i(132824),	-- Helheim Waylight
+									i(132828),	-- Helhound Core
+									i(132829),	-- Silver of Heost
+									i(132825),	-- Val'kyra Boon
+									i(132834),	-- Wailing Wings
 									i(132831),	-- Worthy Soul
 								},
 							}),
@@ -642,9 +642,21 @@ _.Zones =
 						["questID"] = 40032,	-- The Missing Page
 						["sourceQuests"] = {
 							40031,	-- Vrykul Herblore
-						},	
-						
+						},
+
 						["requireSkill"] = 182,	-- Herbalism
+					},
+					{	-- Skinning Technique: Unbroken Claw
+						["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
+						["requireSkill"] = 393,	-- Skinning
+						["crs"] = {
+							91799,	-- Juvenile Stormwing
+						},
+						["g"] = {
+							{ -- Unbroken Claw
+								["recipeID"] = 194171,	-- Unbroken Claw
+							},
+						},
 					},
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
@@ -793,21 +805,9 @@ _.Zones =
 							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
 						},
 					}),
-					prof(393, {	-- Skinning
-						n(91799, {	-- Juvenile Stormwing
-							{
-								["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
-								["collectible"] = false,
-								["dr"] = 17,
-								["g"] = {
-									recipe(194171),	-- Unbroken Claw
-								},
-							},
-						}),
-					}),
 				}),
 				n(-17, { 	-- Quests
---[[				n(-34, {	-- World Quests					
+--[[				n(-34, {	-- World Quests
 							q(43964),	-- A Jarl's Feast
 							q(42067),	-- All Howl, No Bite
 							q(41948),	-- All Pets Go to Heaven
@@ -853,7 +853,7 @@ _.Zones =
 							q(41569),	-- Felhide
 							q(41568),	-- Felhide
 							q(41521),	-- Felwort
-							q(41520),	-- Felwort					
+							q(41520),	-- Felwort
 							q(41519),	-- Felwort
 							q(46013),	-- Firecaller Rok'duun
 							q(41296),	-- Fjarnskaggl Cluster
@@ -954,7 +954,7 @@ _.Zones =
 							q(41277),	-- Work Order: Stormrays
 							q(41344),	-- Work Order: Stormscales
 							q(41672),	-- Work Order: Word of Haste
-							q(41936),	-- You Have Been Challenged					
+							q(41936),	-- You Have Been Challenged
 						}),
 --]]
 					ach(10790, {	-- Vrykul Story, Bro
@@ -1834,21 +1834,21 @@ _.Zones =
 						["coord"] = { 37.8, 21.6, 634 },
 						["qg"] = 91158,	-- Nathanos Blightcaller
 					}),
-					
-					
-					
+
+
+
 				--[[
-						["sourceQuests"] = {  },	-- 
+						["sourceQuests"] = {  },	--
 						["coord"] = { , , 634 },
-						["qg"] = ,	-- 
+						["qg"] = ,	--
 					}),
 				--]]
-					
-					
-					
-					
-					
-					
+
+
+
+
+
+
 					n(-38, {	-- Professions
 						n(-181, {	-- Blacksmithing
 							["requireSkill"] = 164,	-- Blacksmithing
@@ -1935,7 +1935,7 @@ _.Zones =
 								}),
 							},
 						}),
-					}),				  
+					}),
 				--[[ These quests will be organized soon™
 					q(44720),	-- A Call to Action
 					qart(qg(117394, q(45534))),	-- A Common Enemy
@@ -2074,14 +2074,14 @@ _.Zones =
 					n(91874,  {	-- Bladesquall
 						["questID"] = 38431,
 						["coord"] = { 46.0, 77.7, 634 },
-						["g"] = {	
+						["g"] = {
 							i(129048),
 							{	-- Bladesquall (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 4,	-- Bladesquall
 							},
 						},
-					}), 
+					}),
 					n(92599,  {	-- Bloodstalker Alpha
 						["questID"] = 38626,
 						["coord"] = { 38.8, 38.8, 634 },
@@ -2092,7 +2092,7 @@ _.Zones =
 							},
 							i(129101),	-- Alpha's Paw
 						},
-					}), 
+					}),
 					n(92685,  {	-- Captain Brvet
 						["description"] = "Click on the Horn of the Helmouth to spawn Captain Brvet.",
 						["questID"] = 38642,
@@ -2158,14 +2158,14 @@ _.Zones =
 					n(98188,  {	-- Egyl the Enduring
 						["questID"] = 40068,
 						["coord"] = { 41.4, 32.0, 634 },	-- cave entrance
-						["g"] = {	
+						["g"] = {
 							i(132898),	-- Sabatons of the Endless Vigil
 							{	-- Egyl the Enduring (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 18,	-- Egyl the Enduring
 							},
 						},
-					}), 
+					}),
 					n(91803,  {	-- Fathnyr
 						["questID"] = 38425,
 						["coord"] = { 46.3, 82.9, 634 },
@@ -2176,7 +2176,7 @@ _.Zones =
 								["criteriaID"] = 3,	-- Fathnyr
 							},
 						},
-					}), 
+					}),
 					n(91529,  {	-- Glimar Ironfist
 						["questID"] = 38333,
 						["coord"] = { 41.9, 66.5, 634 },
@@ -2202,7 +2202,7 @@ _.Zones =
 					n(107926, {	-- Hannval the Butcher
 						["questID"] = 42591,
 						["coord"] = { 51.9, 74.8, 634 },
-						["g"] = {	
+						["g"] = {
 							i(138417),	-- The Butcher's Apron
 							{	-- Hannval the Butcher (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
@@ -2224,10 +2224,10 @@ _.Zones =
 					nh(92951, {	-- Houndmaster Ely
 						["questID"] = 38712,
 						["coord"] = { 47.1, 57.2, 634 },
-						["g"] = {	
+						["g"] = {
 							i(129037),	-- THe Houndmaster's Fancy Pants
 						},
-					}), 
+					}),
 					n(90139,  {	-- Inquisitor Ernstenbok
 						["questID"] = 37908,
 						["coord"] = { 62.4, 74.9, 634 },	-- cave entrance
@@ -2238,7 +2238,7 @@ _.Zones =
 								["criteriaID"] = 24,	-- Marius & Tehd versus an Inquisitor
 							},
 						},
-					}), 
+					}),
 					n(94413,  {	-- Isel the Hammer
 						["questID"] = 39120,
 						["coord"] = { 62.0, 60.6, 634 },
@@ -2271,7 +2271,7 @@ _.Zones =
 							},
 							i(138419),	-- The Binder's Bonds
 						},
-					}), 
+					}),
 					n(93371,  {	-- Mordvigbjorn
 						["questID"] = 38837,
 						["coord"] = { 72.8, 49.6, 634 },
@@ -2283,7 +2283,7 @@ _.Zones =
 							i(133827),	-- Recipe: Bear Tartare [Rank 1]
 							i(129035),	-- Indomitable Bearskin Cloak
 						},
-					}), 
+					}),
 					nh(91780, {	-- Mother Clacker
 						["questID"] = 38422,
 						["crs"] = { 92343 },	-- Captain Tomas
@@ -2312,7 +2312,7 @@ _.Zones =
 					n(91795,  {	-- Stormwing Matriarch
 						["questID"] = 38423,
 						["coord"] = { 49.5, 72.3, 634 },
-						["g"] = {	
+						["g"] = {
 							i(129208),	-- Stormborne Whelpling (PET!)
 							i(129110),	-- Matriarch-Hide Legguards
 							{	-- Stormwing Matriarch (Adventurer of Stormheim)
@@ -2370,7 +2370,7 @@ _.Zones =
 							},
 							i(129163),	-- Lost Etin's Strength
 						},
-					}), 
+					}),
 					n(93401,  {	-- Urgev the Flayer
 						["questID"] = 38847,
 						["coord"] = { 64.7, 51.9, 634 },
@@ -2381,7 +2381,7 @@ _.Zones =
 								["criteriaID"] = 15,	-- Urgev the Flayer
 							},
 						},
-					}), 
+					}),
 					n(92152,  {	-- Whitewater Typhoon
 						["questID"] = 38472,
 						["coord"] = { 36.2, 51.1, 634 },
@@ -2394,22 +2394,22 @@ _.Zones =
 						},
 					}),
 --[[
-				--	n(108885, { 	-- Aegir Wavecrusher	}), 
-				--	n(109113, { 	-- Boulderfall, the Eroded	}), 
+				--	n(108885, { 	-- Aegir Wavecrusher	}),
+				--	n(109113, { 	-- Boulderfall, the Eroded	}),
 				--	n(111463, { 	-- Bulvinkel	}),
 				--	n(108790, { 	-- Den Mother Ylva	}),
-				--	n(108827, { 	-- Fjorlag, the Grave's Chill	}), 
-				--	n(108823, { 	-- Halfdan	}), 
-				--	n(92682, { 		-- Helmouth Raider	}), 
-				--	n(92703, { 		-- Helmouth Raider	}), 
-				--	n(108822, { 	-- Huntress Estrid	}), 
-				--	n(109015, { 	-- Lagertha	}), 
-				--	n(109317, { 	-- Rulf Bonesnapper	}), 
-				--	n(109318, { 	-- Runeseer Sigvid	}), 
-				--	n(109195, { 	-- Soulbinder Halldora	}), 
-				--	n(109994, { 	-- Stormtalon	}), 
-				--	n(100223, { 	-- Vrykul Earthshaper Spirit	}), 
-				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), 
+				--	n(108827, { 	-- Fjorlag, the Grave's Chill	}),
+				--	n(108823, { 	-- Halfdan	}),
+				--	n(92682, { 		-- Helmouth Raider	}),
+				--	n(92703, { 		-- Helmouth Raider	}),
+				--	n(108822, { 	-- Huntress Estrid	}),
+				--	n(109015, { 	-- Lagertha	}),
+				--	n(109317, { 	-- Rulf Bonesnapper	}),
+				--	n(109318, { 	-- Runeseer Sigvid	}),
+				--	n(109195, { 	-- Soulbinder Halldora	}),
+				--	n(109994, { 	-- Stormtalon	}),
+				--	n(100223, { 	-- Vrykul Earthshaper Spirit	}),
+				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}),
 --]]
 				}),
 				n(-2,  {	-- Vendors
@@ -2554,7 +2554,7 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 333,	-- Enchanting
 					},
-				}),				
+				}),
 				n(0,   {	-- Zone Drops
 					["g"] = {
 						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
@@ -2976,6 +2976,6 @@ _.Zones =
 			},
 			["achievementID"] = 10668,
 			["description"] = "|cff66ccffStormheim is a zone in the eastern area of the Broken Isles situated in the shadow of Highmountain to the west, and Suramar to the southwest. It's home to the mighty vrykul who left Northrend many ages ago in search of their holy land. Two titanic watchers here have warred with each other for thousands of years. The Halls of Valor and Helheim, the realms to which the vrykul journey when they die, are located in this zone.|r",
-		}),	
+		}),
 	}),
 };

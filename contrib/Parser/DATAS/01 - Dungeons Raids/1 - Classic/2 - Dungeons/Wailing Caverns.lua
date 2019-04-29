@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 279,
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Wailing Caverns [Northern Barrens]
 		["groups"] = {
-			n(-17, {	-- Quests 	
+			n(-17, {	-- Quests
 				q(26870, {	-- Cleansing the Caverns
 					["qg"] = 5768,	-- Ebru
 					["groups"] = {
@@ -28,7 +28,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 5767,	-- Nalpak
 				}),
 			}),
-			n(  0, {	-- Zone Drop		
+			n(  0, {	-- Zone Drop
 				i(48114, {	-- Deviate Hatchling (PET!)
 					["crs"] = {
 						3637,	-- Deviate Guardian
@@ -79,7 +79,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n( 5912, { 			-- Deviate Faerie Dragon
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					dr(46, i(5243)), 	-- Firebelcher
 					dr(42, i(6632)), 	-- Feyscale Cloak
 				},
@@ -126,4 +126,4 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 		},
 	}),
-})};	
+})};

@@ -597,7 +597,7 @@ _.Zones =
 							}),
 						},
 						["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
-					}),	
+					}),
 				}),
 				n(-38, { 	-- Profession
 					--Note!! We don't need the names of the profession as a header because we can filter it out based on profession
@@ -667,7 +667,7 @@ _.Zones =
 						["sourceQuests"] = {
 							40026,	-- Chase the Culprit
 						},
-						["requireSkill"] = 182,	-- Herbalism						
+						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
 							{	-- Foxflower [Rank 3]
 								["recipeID"] = 193300,	-- Foxflower [Rank 3]
@@ -682,21 +682,19 @@ _.Zones =
 						},
 						["requireSkill"] = 182,	-- Herbalism
 					},
-					prof(393, {	-- Skinning
-						n(97449, { 		-- Bristlemaul
-							["groups"] = {
-								{
-									["itemID"] = 139893,	-- Skinning Technique: Unbroken Claw
-									["collectible"] = false,
-									["dr"] = 6,
-									["groups"] = {
-										recipe(194170),	-- Unbroken Tooth
-									},
-								},
+					{	-- Skinning Technique: Unbroken Tooth
+						["itemID"] = 139893,	-- Skinning Technique: Unbroken Tooth
+						--["questID"] = 40405,	-- !!Was originally here, don't believe it's needed now
+						["requireSkill"] = 393,	-- Skinning
+						["crs"] = {
+							97449,	-- Bristlemaul
+						},
+						["g"] = {
+							{ -- Unbroken Tooth
+								["recipeID"] = 194170,	-- Unbroken Tooth
 							},
-							["questID"] = 40405,
-						}),
-					}),
+						},
+					},
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -923,7 +921,7 @@ _.Zones =
 							  q(39429),	-- Assaulting the Haglands
 							  q(39322),	-- The Witchqueen
 							  q(39387),	-- The Skies of Highmountain
-								
+
 							}),
 							crit(4, {	-- The Bloodtotem Tribe
 							  q(38912),	-- The Bloodtotem Tribe
@@ -939,7 +937,7 @@ _.Zones =
 								i(121668),
 							  }),
 							  q(39381),	-- Rock Troll in a Hard Place
-							  q(39391),	-- Pet Rocks					
+							  q(39391),	-- Pet Rocks
 							  q(39425),	-- Stonedark Crystal
 							  q(39588),	-- They Will Pay With Blood
 							  q(39426),	-- Blood Debt
@@ -1174,7 +1172,7 @@ _.Zones =
 											i(128570),	-- Formula: Enchant Cloak - Word of Strength (Rank 1)
 										},
 										["qg"] = 98017,	-- Guron Twaintail
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											39879,	-- Strong Like the Earth
 											39880,	-- Waste Not
 										},
@@ -1219,7 +1217,7 @@ _.Zones =
 							n(-189, {	-- Skinning
 								["groups"] = bubbleDown({["requireSkill"] = 393}, {	-- Skinning
 									q(40134, {	-- Highmountain Hides
-										["groups"] = { 
+										["groups"] = {
 											i(130064, {	-- Deadeye Monocle
 												["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 											}),
@@ -1322,7 +1320,7 @@ _.Zones =
 								q(40000),	-- A True Hunter
 								q(39656,  {  	-- Wolf Pack Attack
 									i(131933), 		-- Critter Hand Cannon
-								}),	
+								}),
 								q(39417),	-- Rating Razik
 							}),
 							sz(10667,10 , {	-- Skyhorn
@@ -1362,7 +1360,7 @@ _.Zones =
 								i(130315),
 								i(130316),
 							  }),
-							  q(39439),	-- Stonedark Relics                
+							  q(39439),	-- Stonedark Relics
 							}),
 							sz(10667,7, {	-- Riverbend
 							  q(39323),	-- Moozy's Sojourn
@@ -1416,7 +1414,7 @@ _.Zones =
 									q(46182),	-- Battle for Highmountain
 									q(47018),	-- Beast Mastery: Rumblings Near Feltotem
 									q(43961),	-- Bestrix
-									q(42930),	-- Big Gamy Ribs										
+									q(42930),	-- Big Gamy Ribs
 									q(42417),	-- Bilebrain
 									q(39991),	-- Blessing of Cenarius
 									q(40773),	-- Bloodshard
@@ -1448,7 +1446,7 @@ _.Zones =
 									q(44273),	-- Darkheart Thicket
 									q(42654),	-- Darkheart Thicket: Nightmare Oak
 									q(39274),	-- Defend the Riverlands
-									q(47073),	-- Delivering Lost Knowledge									
+									q(47073),	-- Delivering Lost Knowledge
 									q(45173),	-- Desperate Times
 									q(45796),	-- Destroying the Nest
 									q(45560),	-- Destruction: Rumblings Near Feltotem
@@ -1600,7 +1598,7 @@ _.Zones =
 									q(45726),	-- The Tainted Marsh
 									q(40954),	-- The Unseen Path
 									q(44055),	-- They Have A Pitlord
-									q(39878),	-- Thunder Struck					
+									q(39878),	-- Thunder Struck
 									q(45172),	-- To Battle!
 									q(45349),	-- To the Broken Shore
 									q(42110),	-- To the Summit!
@@ -1654,8 +1652,8 @@ _.Zones =
 							["qg"] = 98948,	-- Hrul Sharphoof
 							["requireSkill"] = 165,
 						}),
-						--[[					
-					n(-34, {	-- World Quests					
+						--[[
+					n(-34, {	-- World Quests
 						q(43985),	-- A Dark Tide
 						q(45840),	-- Assault on Highmountain
 						q(41705),	-- Assault on Thunder Totem
@@ -1819,8 +1817,8 @@ _.Zones =
 						q(46192),	-- Zar'vok
 						q(46279),	-- Zargrom
 					}),
---]]					
-				}),	
+--]]
+				}),
 				n(-16, { 	-- Rares
 					{
 						["vignetteID"] = 40413,	-- Amateur Hunters
@@ -1832,9 +1830,9 @@ _.Zones =
 						["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage in combat with the amateur hunters, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
 						["groups"] = {
 							o(245479, {	-- Battered Chest
-								["groups"] = {	
+								["groups"] = {
 									i(131781),
-								},						
+								},
 								["displayID"] = 65118,
 							}),
 						},
@@ -1856,86 +1854,86 @@ _.Zones =
 						["groups"] = {
 							i(131761),
 						},
-						["questID"] = 40405,	
-							
-					}), 
-					n(94877, { 		-- Brogrul the Mighty 
+						["questID"] = 40405,
+
+					}),
+					n(94877, { 		-- Brogrul the Mighty
 						["groups"] = {
 							i(138396),
 						},
-						["questID"] = 39235,	
-							
-					}), 
+						["questID"] = 39235,
+
+					}),
 					n(97933, { 		-- Crab Rider Grmlrml
-						["groups"] = {	
+						["groups"] = {
 							i(131798),
 						},
-						["questID"] = 39994,	
-							
-					}), 
+						["questID"] = 39994,
+
+					}),
 					n(97345, { 		-- Crawshuk the Hungry
-						["groups"] = {	
+						["groups"] = {
 							i(131809, { 	-- Gleaming Roc Feather
 								i(131811), 		-- Toy
 							}),
 						},
-						["questID"] = 39806,		
-					}), 
+						["questID"] = 39806,
+					}),
 					n(100495, { 	-- Devouring Darkness
 						["groups"] = {
-							i(131780), 
+							i(131780),
 						},
-						["questID"] = 40414,	
-						
+						["questID"] = 40414,
+
 						["description"] = "|cff66ccffClick all candles to summon mob|r"
-					}), 
+					}),
 					n(96072, { 		-- Durguth
-						["groups"] = {	
+						["groups"] = {
 							i(131796),
 						},
-						["questID"] = 45508,	
-							
-					}), 
+						["questID"] = 45508,
+
+					}),
 					n(97793, { 		-- Flamescale
 						["groups"] = {
 							i(131773),
 						},
-						["questID"] = 39963,	
-						
+						["questID"] = 39963,
+
 						["description"] = "|cff66ccffClick on Abandoned Fishing Pole to summon Flamescale|r"
-					}), 					
+					}),
 					n(96590, { 		-- Gurbog da Basher
 						["groups"] = {
 							i(131775),
 						},
-						["questID"] = 40347,	
-							
-					}), 
+						["questID"] = 40347,
+
+					}),
 					n(98024, { 		-- Luggut the Eggeater
-						["groups"] = {	
+						["groups"] = {
 							i(131776),
 						},
-						["questID"] = 40406,	
-							
-					}), 
+						["questID"] = 40406,
+
+					}),
 					n(96410, { 		-- Majestic Elderhorn
 						["groups"] = {
 							i(131900), 	-- Toy
 						},
-						["questID"] = 39646,		
-					}), 
-					n(98311, { 		-- Mrrklr 	
-						["groups"] = {	
+						["questID"] = 39646,
+					}),
+					n(98311, { 		-- Mrrklr
+						["groups"] = {
 							i(131797),
 						},
 						["questID"] = 40096,
-					}), 
+					}),
 					n(95204, { 		-- Oubdob da Smasher
-						["groups"] = {	
+						["groups"] = {
 							i(131793),
 						},
 						["questID"] = 39435,
-					}), 
+					}),
 					{
 						["vignetteID"] = 40423,	-- Unethical Adventurers
 						["qgs"] = {
@@ -1958,50 +1956,50 @@ _.Zones =
 						["groups"] = {
 							i(131792),
 						},
-						["questID"] = 39866,	
-						
+						["questID"] = 39866,
+
 						["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
-					}), 
-					n(97093, { 		-- Shara Felbreath 
+					}),
+					n(97093, { 		-- Shara Felbreath
 						["groups"] = {
 							i(131791),
 						},
-						["questID"] = 39762,	
-						
+						["questID"] = 39762,
+
 					}),
-					n(101077, { 	-- Sekhan 
+					n(101077, { 	-- Sekhan
 						["groups"] = {
 							i(131730),
 						},
-						["questID"] = 40681,	
-						
+						["questID"] = 40681,
+
 					}),
-					n(95872, { 		-- Skullhat 
+					n(95872, { 		-- Skullhat
 						["groups"] = {
 							i(131769),
 						},
-						["questID"] = 39465,	
-						
-					}), 
+						["questID"] = 39465,
+
+					}),
 					n(97653, { 		-- Taurson
 						["groups"] = {
 							o(244628, {	-- Taurson's Prize
-								["groups"] = {		
+								["groups"] = {
 									i(131800),
-								},						
+								},
 								["displayID"] = 65118,
 							}),
 						},
-						["questID"] = 39872,	
-								
-					}), 
+						["questID"] = 39872,
+
+					}),
 					n(97203, { 		-- Tenpak Flametotem
-						["groups"] = {	
+						["groups"] = {
 							i(129175),	-- Pet
 						},
-						["questID"] = 39782,	
-						
-					}), 
+						["questID"] = 39782,
+
+					}),
 					n(97116, { 		-- Treasure Chest 244519
 						["groups"] = {
 							i(131810, {	-- Derelict Skyhorn Kite
@@ -2009,45 +2007,45 @@ _.Zones =
 							}),
 						},
 						["modelID"] = 73098,
-						["questID"] = 39824,	
+						["questID"] = 39824,
 					}),
 					n(72409, { 		-- Treasure Chest 243668
-						["groups"] = {	
+						["groups"] = {
 							i(131927, {	-- Shimmering Roc Feather
 								i(131811),	-- Toy
 							}),
 						},
 						["modelID"] = 73098,
-						["questID"] = 39466,	
+						["questID"] = 39466,
 					}),
 					n(109556, { 	-- Treasure Chest 243773
-						["groups"] = {	
+						["groups"] = {
 							i(131926, {	-- Delicate Roc Feather
 								i(131811),	-- Toy
 							}),
 						},
 						["modelID"] = 73098,
-						["questID"] = 39503,	
+						["questID"] = 39503,
 					}),
 --[[
-	--				n(104481, { 	-- Ala'washte	}), 
-	--				n(98299, { 		-- Bodash the Hoarder	}), 
-	--				n(102863, { 	-- Bruiser	}), 
+	--				n(104481, { 	-- Ala'washte	}),
+	--				n(98299, { 		-- Bodash the Hoarder	}),
+	--				n(102863, { 	-- Bruiser	}),
 	--				o(257392, 		-- Burning Plate of the Worldbreaker
 	--					i(139580), 		-- Warrior Hidden Appearance Unlock Protection
 	--				}),
-	--				n(104513, { 	-- Defilia 	}), 
-	--				n(101649, { 	-- Frostshard	}), 
+	--				n(104513, { 	-- Defilia 	}),
+	--				n(101649, { 	-- Frostshard	}),
 	--				n(97326, { 		-- Hartli the Snatcher
 	--					i(129190), 		-- Possible toy someday
-	--				}), 
-	--				n(104517, { 	-- Mawat'aki 	}), 
-	--				n(96621, { 		-- Mellok, Son of Torok 	}), 
-	--				n(104484, { 	-- Olokk the Shipbreaker 	}), 
-	--				n(104524, { 	-- Ormagrogg 	}), 
-	--				n(97102, { 		-- Ram'Pag drops nothing of note			}), 
-	--				n(98890, { 		-- Slumber 	}), 
-	--				n(97928, { 		-- Tamed Coralback 	}), 
+	--				}),
+	--				n(104517, { 	-- Mawat'aki 	}),
+	--				n(96621, { 		-- Mellok, Son of Torok 	}),
+	--				n(104484, { 	-- Olokk the Shipbreaker 	}),
+	--				n(104524, { 	-- Ormagrogg 	}),
+	--				n(97102, { 		-- Ram'Pag drops nothing of note			}),
+	--				n(98890, { 		-- Slumber 	}),
+	--				n(97928, { 		-- Tamed Coralback 	}),
 --]]
 				}),
 				n(-2, { 	-- Vendors
@@ -2658,9 +2656,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 98,	
+			["lvl"] = 98,
 			["achievementID"] = 10667,
-			["description"] = "|cff66ccffHighmountain is a zone that dominates the northern horizon of the Broken Isles with its jagged peak. It is one of the last great frontiers of the isles, named in honor of Huln Highmountain for his bravery in the War of the Ancients. Following the War against the Iron Horde, the Burning Legion began to invade Azeroth through the Tomb of Sargeras. The tauren of Highmountain, descended from Huln Highmountain and other tauren who had fought in the War of the Ancients, had been living in peace with the local drogbar for generations, but when the Legion invaded, the drogbar stole the taurens' sacred artifact, the [Hammer of Khaz'goroth]. The Highmountain are now at risk of being taken over by the drogbar and their king Dargrul the Underking, ruling his kin from the former lair of the black aspect Neltharion.|r",			
-		}),	
+			["description"] = "|cff66ccffHighmountain is a zone that dominates the northern horizon of the Broken Isles with its jagged peak. It is one of the last great frontiers of the isles, named in honor of Huln Highmountain for his bravery in the War of the Ancients. Following the War against the Iron Horde, the Burning Legion began to invade Azeroth through the Tomb of Sargeras. The tauren of Highmountain, descended from Huln Highmountain and other tauren who had fought in the War of the Ancients, had been living in peace with the local drogbar for generations, but when the Legion invaded, the drogbar stole the taurens' sacred artifact, the [Hammer of Khaz'goroth]. The Highmountain are now at risk of being taken over by the drogbar and their king Dargrul the Underking, ruling his kin from the former lair of the black aspect Neltharion.|r",
+		}),
 	}),
 };

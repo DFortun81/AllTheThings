@@ -383,7 +383,7 @@ _.Zones =
 								["qg"] = 131326,	-- First Arcanist Thalyssra
 								["coord"] = { 59.3, 85.5 },
 							}),
-						}),	
+						}),
 					},
 					["races"]  = { 27 },	-- Nightborne
 				}),
@@ -793,7 +793,7 @@ _.Zones =
 						q(44024),	-- WANTED: Shal'an
 						q(44012),	-- WANTED: Siegemaster Aedrin
 						q(44023),	-- WANTED: Siegemaster Aedrin
---]]					
+--]]
 						q(43943, {	-- Withered Army Training
 							["qgs"] = {
 								97140,	-- First Arcanist Thalyssra (Frail)
@@ -836,7 +836,7 @@ _.Zones =
 								}),
 							},
 						}),
---[[						
+--[[
 						q(43807),	-- Withered Wrangling: Ambervale
 						q(44158),	-- Withered Wrangling: Falanaar
 						q(44157),	-- Withered Wrangling: Tel'anor
@@ -846,8 +846,8 @@ _.Zones =
 						q(41661),	-- Work Order: Skystep Potions
 						q(41302),	-- Work Order: Starlight Roses
 						q(41350),	-- Work Order: Stonehide Leather
---]]						
-					}),						
+--]]
+					}),
 					q(44057),	-- A "Noble" Event
 					q(41173, {	-- A Beacon of Hope
 						i(131717),	-- Starlight Beacon
@@ -1363,7 +1363,7 @@ _.Zones =
 					q(38967),	-- The Nightborne Connection
 					q(40123),	-- The Nightborne Pact
 					q(42421),	-- The Nightfallen
-					q(43532),	-- The Nighthold: Darkness Calls					
+					q(43532),	-- The Nighthold: Darkness Calls
 					q(43530),	-- The Nighthold: Delusions of Grandeur
 					q(45417),	-- The Nighthold: Lord of the Shadow Council
 					q(45553),	-- The Nighthuntress Beckons
@@ -1422,7 +1422,7 @@ _.Zones =
 					q(44754),	-- Waxing Crescent
 					q(40779),	-- We Need Even More Power!
 					q(44829),	-- We Need Weapons
-					q(41179),	-- What Once Was Lost					
+					q(41179),	-- What Once Was Lost
 					q(43566),	-- Withered Progress
 					q(41174),	-- Worth Its Weight
 					q(41702),	-- Written in Stone
@@ -1437,10 +1437,10 @@ _.Zones =
 					q(42837,  {  -- Balance to Spare
 						i(139790),	-- Untethered Wyrmling
 					}),
-					q(45239,  {  -- Cubic Coalescing 
+					q(45239,  {  -- Cubic Coalescing
 						i(142536),	-- Memory Cube
 					}),
-					q(45372,  {  -- Fate of the Nightborn 
+					q(45372,  {  -- Fate of the Nightborn
 						i(142436),	-- Arcanist's Manasaber
 					}),
 					q(42722,  {  -- Friends in Cages
@@ -1454,46 +1454,46 @@ _.Zones =
 					}),
 					q(41197,  {  -- You've Got to Be Kitten Me Right Meow
 						i(139791),	-- Lurking Owl Kitten
-					}),	
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(111649, { 	-- Ambassador D'vwinn
 						["g"] = {
 							i(139918),
 						},
-						["questID"] = 43794,	
-					}), 
+						["questID"] = 43794,
+					}),
 					n(111197, { 	-- Anax
-						["g"] = {	
+						["g"] = {
 							i(140934),
 						},
-						["questID"] = 43954,		
-					}), 
+						["questID"] = 43954,
+					}),
 					n(110870, { 	-- Apothecary Faldren
-						["g"] = {	
+						["g"] = {
 							i(121754),
 						},
-						["questID"] = 43580,	
-					}), 
+						["questID"] = 43580,
+					}),
 					n(110726, { 	-- Cadraeus
-						["g"] = {	
+						["g"] = {
 							i(139969),
 						},
-						["questID"] = 43495,		
-					}), 
+						["questID"] = 43495,
+					}),
 					n(100864, { 	-- Cora'kar
-						["g"] = {	
+						["g"] = {
 							i(139952),
 						},
-						["questID"] = 41135,		
-					}), 
-					n(111651, { 	-- Degren 
-						["g"] = {	
+						["questID"] = 41135,
+					}),
+					n(111651, { 	-- Degren
+						["g"] = {
 							i(121808),	-- Nether Conductors
-						},	
-					}), 
+						},
+					}),
 					n(99792, {		-- Elfbane
-						["g"] = {	
+						["g"] = {
 							i(121806),	-- Mountain Rage Shaker
 						},
 						["questID"] = 41319,
@@ -1502,87 +1502,87 @@ _.Zones =
 							i(136901),
 					}),
 					n(99610, { 		-- Garvrulg
-						["g"] = {	
+						["g"] = {
 							i(121755),
 						},
-						["questID"] = 40897,	
-					}), 
+						["questID"] = 40897,
+					}),
 					n(110832, { 	-- Gorgroth
-						["g"] = {	
+						["g"] = {
 							i(121747),
 						},
-						["questID"] = 43992,		
-					}), 
+						["questID"] = 43992,
+					}),
 					n(103223, { 	-- Hertha Grimdottir
-						["g"] = {	
+						["g"] = {
 							i(121737),
 						},
-						["questID"] = 43993,		
-					}), 
+						["questID"] = 43993,
+					}),
 					n(106526, { 	-- Lady Rivantas
-						["g"] = {	
+						["g"] = {
 							i(141866),
 						},
-						["questID"] = 44675,	
-					}), 
+						["questID"] = 44675,
+					}),
 					n(102303, { 	-- Lieutenant Strathmar
-						["g"] = {	
+						["g"] = {
 							i(121735),
 						},
-						["questID"] = 40905,	
-					}), 
+						["questID"] = 40905,
+					}),
 					n(113368, { 	-- Llorian
-						["g"] = {	
+						["g"] = {
 							i(141867),
 						},
-						["questID"] = 44676,	
-					}), 
+						["questID"] = 44676,
+					}),
 					n(112497, { 	-- Maia the White
-						["g"] = {	
+						["g"] = {
 							i(139897),
 						},
-						["questID"] = 44072,	
-					}), 
+						["questID"] = 44072,
+					}),
 					n(111653, { 	-- Miasu
-						["g"] = {	
+						["g"] = {
 							i(121810),	-- Pocket Void Portal
 						},
-						["questID"] = 43793,	
-					}), 
+						["questID"] = 43793,
+					}),
 					n(110340, { 	-- Myonix
-						["g"] = {	
+						["g"] = {
 							i(133816),	-- Recipe: Leybeque Ribs
 							i(121739),	-- Felinus Manus
 						},
-						["questID"] = 43358,	
-					}), 
+						["questID"] = 43358,
+					}),
 					n(107846, { 	-- Pinchshank
-						["g"] = {	
+						["g"] = {
 							i(140314),
 						},
-						["questID"] = 43968,	
-					}), 
+						["questID"] = 43968,
+					}),
 					n(105547, { 	-- Rauren
-						["g"] = {	
+						["g"] = {
 							i(121759),
 						},
-						["questID"] = 43484,	
-					}), 
+						["questID"] = 43484,
+					}),
 					n(103183, { 	-- Rok'nash
-						["g"] = {	
+						["g"] = {
 							i(140019),
 						},
-						["questID"] = 40680,	
-					}), 
+						["questID"] = 40680,
+					}),
 					n(113425, { 	-- Rovendros
 						["questID"] = 43795,	-- Tracking - Rovendros Found
 						["description"] = "This is a hdiden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
 					}),
 					n(109054, { 	-- Shal'an
-						["g"] = {	
+						["g"] = {
 							i(139926),
 						},
-						["questID"] = 42831,	
+						["questID"] = 42831,
 					}),
 					n(110824, { 	-- Tideclaw
 						{
@@ -1592,42 +1592,42 @@ _.Zones =
 								i(133817), 	-- Recipe: Suramar Surf and Turf
 							},
 						},
-					}), 
---[[				
-				--	v(45478, { 		-- Achronos	}), 
-				--	v(45504, { 		-- Alteria	}), 
-				--	v(43481, { 		-- Arcanist Lylandre	}), 
-				--	v(43717, { 		-- Artificer Lothaire	}), 
-				--	v(45475, { 		-- Auditor Esiel	}), 
-				--	v(45471, { 		-- Az'jatar	}), 
-				--	n(103787, { 	-- Baconlisk	}),				
-				--	n(105632, { 	-- Broodmother Shu'malis	}), 
-				--	v(45503, { 		-- Colerian	}), 
-				--	v(43792, { 		-- Degren	}), 
-				--	v(41319, { 		-- Elfbane	}), 
-				--	v(43597, { 		-- Guardian Thor'el	}), 
-				--	v(41136, { 		-- Har'kess the Insatiable	}), 
-				--	v(44569, { 		-- Inquisitor Volitix	}), 
-				--	v(41134, { 		-- Jetsam	}), 
-				--	v(41786, { 		-- King Morgalash	}), 
-				--	v(43348, { 		-- Magister Phaedris	}), 
-				--	v(45476, { 		-- Magistrix Vilessa	}), 
-				--	v(43351, { 		-- Mal'Dreth the Corruptor	}), 
-				--	v(44124, { 		-- Mar'tura	}), 
-				--	v(43718, { 		-- Matron Hagatha	}), 
-				--	v(45506, { 		-- Oglok the Furious	}), 
-				--	v(43449, { 		-- Oreth the Vile	}), 
+					}),
+--[[
+				--	v(45478, { 		-- Achronos	}),
+				--	v(45504, { 		-- Alteria	}),
+				--	v(43481, { 		-- Arcanist Lylandre	}),
+				--	v(43717, { 		-- Artificer Lothaire	}),
+				--	v(45475, { 		-- Auditor Esiel	}),
+				--	v(45471, { 		-- Az'jatar	}),
+				--	n(103787, { 	-- Baconlisk	}),
+				--	n(105632, { 	-- Broodmother Shu'malis	}),
+				--	v(45503, { 		-- Colerian	}),
+				--	v(43792, { 		-- Degren	}),
+				--	v(41319, { 		-- Elfbane	}),
+				--	v(43597, { 		-- Guardian Thor'el	}),
+				--	v(41136, { 		-- Har'kess the Insatiable	}),
+				--	v(44569, { 		-- Inquisitor Volitix	}),
+				--	v(41134, { 		-- Jetsam	}),
+				--	v(41786, { 		-- King Morgalash	}),
+				--	v(43348, { 		-- Magister Phaedris	}),
+				--	v(45476, { 		-- Magistrix Vilessa	}),
+				--	v(43351, { 		-- Mal'Dreth the Corruptor	}),
+				--	v(44124, { 		-- Mar'tura	}),
+				--	v(43718, { 		-- Matron Hagatha	}),
+				--	v(45506, { 		-- Oglok the Furious	}),
+				--	v(43449, { 		-- Oreth the Vile	}),
 				--	n(113694, { 	-- Pashya	}),
-				--	v(43603, { 		-- Randril	}), 
-				--	v(44003, { 		-- Reef Lord Raj'his	}),  
-				--	n(105739, { 	-- Sanaar	}), 
-				--	v(45505, { 		-- Scythemaster Cil'raman	}), 
-				--	v(45502, { 		-- Selenyi	}), 
-				--	v(43996, { 		-- Shadowquill	}), 
-				--	v(43369, { 		-- Siegemaster Aedrin	}), 
-				--	v(45477, { 		-- Sorallus	}), 
-				--	v(44669, { 		-- Vicious Whale Shark}), 					
-				--	v(45474, { 		-- Volshax, Breaker of Will	}), 
+				--	v(43603, { 		-- Randril	}),
+				--	v(44003, { 		-- Reef Lord Raj'his	}),
+				--	n(105739, { 	-- Sanaar	}),
+				--	v(45505, { 		-- Scythemaster Cil'raman	}),
+				--	v(45502, { 		-- Selenyi	}),
+				--	v(43996, { 		-- Shadowquill	}),
+				--	v(43369, { 		-- Siegemaster Aedrin	}),
+				--	v(45477, { 		-- Sorallus	}),
+				--	v(44669, { 		-- Vicious Whale Shark}),
+				--	v(45474, { 		-- Volshax, Breaker of Will	}),
 --]]
 				}),
 				n(-2, { 	-- Vendors
@@ -2176,7 +2176,7 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 98,	
+			["lvl"] = 98,
 			["achievementID"] = 10669,
 			["maps"] = {
 				681,	-- The Arcway Vaults #1
@@ -2194,7 +2194,7 @@ _.Zones =
 				693,	-- Falanaar Arcway
 				798,	-- The Arcway
 			},
-			["description"] = "|cff66ccffSuramar is a max-level zone located in the central Broken Isles. Once a great night elven settlement, though not as glorious as the capital of Zin-Azshari, it was famously the hometown of several important night elves: Illidan Stormrage, his brother Malfurion, their friend Tyrande Whisperwind, and the siblings Jarod and Maiev Shadowsong. Today it is the home of the Nightborne. Suramar is built on ley lines, and arcane coils in the tunnel system running beneath Suramar and the surrounding areas tap into those ley lines' power. Since the creation of the Nightwell, the ley lines have become redundant and the arcane coils abandoned.|r",				
-		}),	
+			["description"] = "|cff66ccffSuramar is a max-level zone located in the central Broken Isles. Once a great night elven settlement, though not as glorious as the capital of Zin-Azshari, it was famously the hometown of several important night elves: Illidan Stormrage, his brother Malfurion, their friend Tyrande Whisperwind, and the siblings Jarod and Maiev Shadowsong. Today it is the home of the Nightborne. Suramar is built on ley lines, and arcane coils in the tunnel system running beneath Suramar and the surrounding areas tap into those ley lines' power. Since the creation of the Nightwell, the ley lines have become redundant and the arcane coils abandoned.|r",
+		}),
 	}),
 };

@@ -22,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 							59293,    -- Scarlet Cannoneer
 							59372,    -- Scarlet Scholar
 						},
-					}),					
+					}),
 				}),
 				cr(59303, e(660, {	-- Houndmaster Braun
 					i(88264),	-- Houndmaster's Compound Crossbow

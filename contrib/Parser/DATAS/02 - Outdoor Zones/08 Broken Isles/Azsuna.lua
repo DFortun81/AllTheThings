@@ -17,8 +17,8 @@ _.Zones =
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -27,10 +27,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -39,10 +39,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -51,10 +51,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -63,10 +63,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -75,10 +75,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -87,10 +87,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -99,10 +99,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -111,7 +111,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							}),
@@ -121,8 +121,8 @@ _.Zones =
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -131,10 +131,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -143,10 +143,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -155,10 +155,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -167,10 +167,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -179,10 +179,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -191,10 +191,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -203,10 +203,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -215,7 +215,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -225,8 +225,8 @@ _.Zones =
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -235,10 +235,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -247,10 +247,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -259,10 +259,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -271,10 +271,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -283,10 +283,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -295,10 +295,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -307,10 +307,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -319,7 +319,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -329,8 +329,8 @@ _.Zones =
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -339,10 +339,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -351,10 +351,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -363,10 +363,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -375,10 +375,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -387,10 +387,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -399,10 +399,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -411,10 +411,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -423,7 +423,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -433,8 +433,8 @@ _.Zones =
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -443,10 +443,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -455,10 +455,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -467,10 +467,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -479,10 +479,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -491,10 +491,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -503,10 +503,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -515,10 +515,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -527,7 +527,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -544,8 +544,8 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -554,10 +554,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -566,10 +566,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -578,10 +578,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -590,10 +590,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -602,10 +602,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -614,10 +614,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -626,10 +626,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -638,7 +638,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							}),
@@ -649,8 +649,8 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -659,10 +659,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -671,10 +671,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -683,10 +683,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -695,10 +695,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -707,10 +707,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -719,10 +719,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -731,10 +731,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -743,7 +743,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -754,8 +754,8 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -764,10 +764,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -776,10 +776,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -788,10 +788,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -800,10 +800,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -812,10 +812,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -824,10 +824,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -836,10 +836,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -848,7 +848,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -859,8 +859,8 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -869,10 +869,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -881,10 +881,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -893,10 +893,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -905,10 +905,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -917,10 +917,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -929,10 +929,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -941,10 +941,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -953,7 +953,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -964,8 +964,8 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
-									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+									n(-3241, {	-- Arcane Singed Set
+										["groups"] = {
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -974,10 +974,10 @@ _.Zones =
 											i(134347),	-- Arcane Singed Cord
 											i(134350),	-- Arcane Singed Leggings
 											i(134352),	-- Arcane Singed Slippers
-										},		
-									}),			
-									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3248, {	-- Seawitch Set
+										["groups"] = {
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -986,10 +986,10 @@ _.Zones =
 											i(134259),	-- Seawitch Cinch
 											i(134262),	-- Seawitch Leggings
 											i(134264),	-- Seawitch Sandals
-										},		
-									}),			
-									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3271, {	-- Brinewashed Set
+										["groups"] = {
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -998,10 +998,10 @@ _.Zones =
 											i(134243),	-- Brinewashed Leather Belt
 											i(134238),	-- Brinewashed Leather Pants
 											i(134237),	-- Brinewashed Leather Boots
-										},		
-									}),			
-									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3264, {	-- Mana-Saber Set
+										["groups"] = {
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -1010,10 +1010,10 @@ _.Zones =
 											i(134331),	-- Mana-Saber Hide Belt
 											i(134326),	-- Mana-Saber Hide Pants
 											i(134325),	-- Mana-Saber Hide Boots
-										},		
-									}),			
-									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3282, {	-- Manaburst Set
+										["groups"] = {
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -1022,10 +1022,10 @@ _.Zones =
 											i(134339),	-- Manaburst Waistguard
 											i(134344),	-- Manaburst Legguards
 											i(134342),	-- Manaburst Greaves
-										},		
-									}),	
-									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3276, {	-- Sea Stalker's Set
+										["groups"] = {
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -1034,10 +1034,10 @@ _.Zones =
 											i(134251),	-- Sea Stalker's Cinch
 											i(134256),	-- Sea Stalker's Leggings
 											i(134254),	-- Sea Stalker's Boots
-										},		
-									}),			
-									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3305, {	-- Coralplate Set
+										["groups"] = {
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -1046,10 +1046,10 @@ _.Zones =
 											i(134225),	-- Coralplate Girdle
 											i(134227),	-- Coralplate Legguards
 											i(134229),	-- Coralplate Sandstompers
-										},		
-									}),			
-									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										},
+									}),
+									n(-3304, {	-- Ley-Scarred Set
+										["groups"] = {
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -1058,7 +1058,7 @@ _.Zones =
 											i(134313),	-- Ley-Scarred Waistplate
 											i(134315),	-- Ley-Scarred Greaves
 											i(134317),	-- Ley-Scarred Sabatons
-										},		
+										},
 									}),
 								},
 							})),
@@ -1161,7 +1161,7 @@ _.Zones =
 							}),
 						},
 						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
-					}),	
+					}),
 				}),
 				n(-38, { 	-- Profession
 					prof(356, {	-- Fishing
@@ -1352,7 +1352,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
---[[					
+--[[
 					n(-34, {	-- World Quests
 						q(42119),	-- A Cleansing Cocktail
 						q(42024),	-- A Friend of My Enemy
@@ -1517,7 +1517,7 @@ _.Zones =
 						q(41326),	-- Work Order: Stormscales
 						q(44788),	-- Work Study: Bestiaries of Azsuna
 					}),
---]]					
+--]]
 					ach(10763, {	-- Azsuna Matata
 						crit(1, {	-- Behind Legion Lines [Verified & Fully Finished - 7/26/18; Lucetia]
 							q(38834, {	-- Into the Fray (Non-DH version)
@@ -1698,7 +1698,7 @@ _.Zones =
 							}),
 							q(38015,  {  	-- On the Brink
 								i(129178),  	-- Emmigosa
-							}),	
+							}),
 							q(42567),	-- Cursed to Wither
 							q(42756),	-- Hunger's End
 						}),
@@ -1811,7 +1811,7 @@ _.Zones =
 								  i(133547),
 								  i(133546),
 								  i(133544),
-								}),	
+								}),
 							}),
 							q(37659),	-- The Captain's Foot Locker
 							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
@@ -1844,7 +1844,7 @@ _.Zones =
 							i(140624),	-- Bitterbrine Binding
 							i(140625),	-- Waistban of the Hatecoil Oracles
 						}),
-					}),  
+					}),
 					n(-38, { 	 -- Professions
 						n(-180, {	-- Alchemy
 							["groups"] = {
@@ -2231,7 +2231,7 @@ _.Zones =
 					q(42450),	-- Brawlgoth
 					q(43193),	-- Calamitous Intent
 					q(40766),	-- Charfeather
-					q(42221),	-- Chief Bitterbrine										
+					q(42221),	-- Chief Bitterbrine
 					q(44673),	-- Commander Soraax
 					q(38946),	-- Consult the Locals
 					q(41157),	-- Corrupted Studies
@@ -2298,7 +2298,7 @@ _.Zones =
 					q(40855),	-- Our Man in Azsuna
 					q(39934),	-- Our New Allies
 					q(40056),	-- Our New Allies
-					q(41161),	-- Out of the Frying Pan										
+					q(41161),	-- Out of the Frying Pan
 					q(39718),	-- Paradise Lost
 					q(46794),	-- Paragon of the Court
 					q(46800),	-- Paragon of the Wardens
@@ -2345,7 +2345,7 @@ _.Zones =
 					q(43373),	-- The Best and Brightest
 					q(37466),	-- The Broken Academy
 					q(43520),	-- The Emerald Nightmare: In Nightmares
-					q(45028),	-- The Fate of Kanrethad										
+					q(45028),	-- The Fate of Kanrethad
 					q(38963),	-- The Final Lesson?
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
@@ -2429,7 +2429,7 @@ _.Zones =
 					q(40145),	-- Under Down
 					q(45126),	-- Unlikely Seduction
 					q(41180),	-- Unspeakable Power
-					q(40130),	-- Washed Clean					
+					q(40130),	-- Washed Clean
 					q(42166),	-- What Is Going On Here?
 					q(41179),	-- What Once Was Lost
 					qa( 44758),	-- What's the Cache?
@@ -2447,14 +2447,14 @@ _.Zones =
 							i(141868),
 						},
 						["questID"] = 42505,
-						
-					}), 
+
+					}),
 					n(90244, { 		-- Arcavellus
 						["groups"] = {
 							i(129085),
 						},
-						["questID"] = 37932,	
-						
+						["questID"] = 37932,
+
 						["description"] = "|cff66ccffClick Unbound Rift in Ley-Ruins of Zarkhenar to start event. Arcavellus will spawn after a few waves of enemies.|r",
 					}),
 					n(106583, { 	-- Arkethrax
@@ -2471,26 +2471,26 @@ _.Zones =
 						["groups"] = {
 							i(129067),
 						},
-						["questID"] = 38238,	
-							
-					}), 
+						["questID"] = 38238,
+
+					}),
 					n(107327, { 	-- Bilebrain
 						["groups"] = {
 							i(129079),
 						},
-						["questID"] = 42417,	
-							
-					}), 
+						["questID"] = 42417,
+
+					}),
 					n(107127, { 	-- Brawlgoth
 						["groups"] = {
 							i(129086),
 						},
-						["questID"] = 42450,	
-								
-					}), 
+						["questID"] = 42450,
+
+					}),
 					n(91100, { 		-- Brogozog
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
-						["questID"] = 38212,	
+						["questID"] = 38212,
 						["groups"] = {
 							{
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
@@ -2503,36 +2503,36 @@ _.Zones =
 						["groups"] = {
 							i(141869),
 						},
-						["questID"] = 44670,	
-							
-					}), 
-					n(91289, { 		-- Cailyn Paledoom 
+						["questID"] = 44670,
+
+					}),
+					n(91289, { 		-- Cailyn Paledoom
 						["groups"] = {
 							i(129063),
 						},
-						["questID"] = 38268,	
-							
-					}), 
+						["questID"] = 38268,
+
+					}),
 					n(89846, { 		-- Captain Volo'ren
-						["groups"] = {	
+						["groups"] = {
 							i(129066),
 						},
-						["questID"] = 37821,	
-							
-					}),				
+						["questID"] = 37821,
+
+					}),
 					n(107266, { 	-- Commander Soraax
-						["groups"] = {	
+						["groups"] = {
 							i(141871),
 						},
-						["questID"] = 44673,	
-							
-					}), 
+						["questID"] = 44673,
+
+					}),
 					n(90057, { 		-- Daggerbeak
-						["groups"] = {	
+						["groups"] = {
 							i(129084),
 						},
-						["questID"] = 37869,	
-							
+						["questID"] = 37869,
+
 					}),
 					n(91579, { 		-- Doomlord Kazrok
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
@@ -2555,100 +2555,100 @@ _.Zones =
 							i(129087),
 						},
 						["questID"] = 42069,
-					}), 
+					}),
 					n(89884, { 		-- Flog the Captain-Eater
-						["groups"] = {	
+						["groups"] = {
 							i(129090),
 						},
-						["questID"] = 37824,	
-							
-					}), 
+						["questID"] = 37824,
+
+					}),
 					n(109564, { 	-- Glimmering Treasure Chest
-						["groups"] = {					
+						["groups"] = {
 							i(129078),
 						},
 						["questID"] = 37649,
 						["displayID"] = 71077,
 						["modelScale"] = 1.5,
 						["description"] = "|cff66ccffThis chest is underground in the Oceanus Cove caves on the ground of gold coins next to Lady Sssurine.|r",
-					}),	
+					}),
 					n(107136, { 	-- Houndmaster Stroxis
 						["groups"] = {
 							i(141873),
 						},
-						["questID"] = 42286,	
-							
-					}), 
+						["questID"] = 42286,
+
+					}),
 					n(90803, { 		-- Infernal Lord
-						["groups"] = {	
+						["groups"] = {
 							i(129083),
 						},
-						["questID"] = 38037,	
-						
+						["questID"] = 38037,
+
 						["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
-					}), 
+					}),
 					n(107269, { 	-- Inquisitor Tivos
 						["groups"] = {
 							i(141874),
 						},
-						["questID"] = 42376,	
-							
-					}), 
+						["questID"] = 42376,
+
+					}),
 					n(90217, { 		-- Normantis the Deposed
 						["groups"] = {
 							i(129061),
 						},
-						["questID"] = 37928,	
-							
-					}), 
+						["questID"] = 37928,
+
+					}),
 					n(90901, { 		-- Pridelord Meowl
 						["groups"] = {
 							i(138395),
 						},
-						["questID"] = 38061,	
-							
+						["questID"] = 38061,
+
 					}),
 					n(109504, { 	-- Ragemaw
 						["groups"] = {
 							i(129075),
 						},
-						["questID"] = 44108,	
-							
-					}), 
+						["questID"] = 44108,
+
+					}),
 					n(89016, { 		-- Ravyn-Drath
 						["groups"] = {
 							i(129080),
 						},
-						["questID"] = 37537,	
-							
-					}), 
+						["questID"] = 37537,
+
+					}),
 					n(90505, { 		-- Syphonus
 						["groups"] = {
 							i(129064),
 						},
-						["questID"] = 37989,	
-							
-					}), 
+						["questID"] = 37989,
+
+					}),
 					n(108136, { 	-- The Muscle
-						["groups"] = {	
+						["groups"] = {
 							i(129081),
 						},
-						["questID"] = 44671,	
-							
+						["questID"] = 44671,
+
 					}),
 					n(89850, { 		-- The Oracle
-						["groups"] = {	
+						["groups"] = {
 							i(129065),
 						},
-						["questID"] = 37822,	
-							
-					}), 
+						["questID"] = 37822,
+
+					}),
 					n(91113, { 		-- Tide Behemoth
-						["groups"] = {	
+						["groups"] = {
 							i(129062),
 						},
-						["questID"] = 38217,	
-							
+						["questID"] = 38217,
+
 					}),
 						n(97116, {	-- Treasure Chest
                         ["groups"] = {
@@ -2658,53 +2658,53 @@ _.Zones =
                         ["modelID"] = 71076,
                     }),
 					n(89650, { 		-- Valiyaka the Stormbringer
-						["groups"] = {	
+						["groups"] = {
 							i(129082),
 						},
-						["questID"] = 37726,	
-							
+						["questID"] = 37726,
+
 					}),
 					n(107113, { 	-- Vorthax
 						["groups"] = {
 							i(141875),
 						},
-						["questID"] = 42280,	
-							
-					}), 
+						["questID"] = 42280,
+
+					}),
 					n(90164, { 		-- Warbringer Mox'na
-						["groups"] = {	
+						["groups"] = {
 							i(129069),
 						},
-						["questID"] = 37909,	
-							
-					}), 
---[[	
-	--				n(109641, { 	-- Arcanor Prime }), 
-	--				n(101596, { 	-- Charfeather }), 
-	--				n(106990, { 	-- Chief Bitterbrine Drops ring }), 
-	--				n(109677, { 	-- Chief Treasurer Jabrill }), 
-	--				n(108255, { 	-- Coura, Mistress of Arcana }), 
-	--				n(109702, { 	-- Deepclaw }), 
+						["questID"] = 37909,
+
+					}),
+--[[
+	--				n(109641, { 	-- Arcanor Prime }),
+	--				n(101596, { 	-- Charfeather }),
+	--				n(106990, { 	-- Chief Bitterbrine Drops ring }),
+	--				n(109677, { 	-- Chief Treasurer Jabrill }),
+	--				n(108255, { 	-- Coura, Mistress of Arcana }),
+	--				n(109702, { 	-- Deepclaw }),
 	--				n(112637, { 	-- Devious Sunrunner }),
-	--				n(109584, { 	-- Fjordun }), 
-	--				n(89816, { 		-- Golza the Iron Fin drops trinket	 }), 
-	--				n(109630, { 	-- Immolian }), 
-	--				n(103975, { 	-- Jade Darkhaven }), 
-	--				n(111939, { 	-- Lysanis Shadesoul }), 
-	--				n(109653, { 	-- Marblub the Massive }), 
-	--				n(93622, { 		-- Mortiferous }), 
-	--				n(89865, { 		-- Mrrgrl the Tide Reaver drops neck }), 
-	--				n(111434, { 	-- Sea King Tidross }), 
-	--				n(112636, { 	-- Sinister Leyrunner }), 
-	--				n(109594, { 	-- Stormfeather }), 
+	--				n(109584, { 	-- Fjordun }),
+	--				n(89816, { 		-- Golza the Iron Fin drops trinket	 }),
+	--				n(109630, { 	-- Immolian }),
+	--				n(103975, { 	-- Jade Darkhaven }),
+	--				n(111939, { 	-- Lysanis Shadesoul }),
+	--				n(109653, { 	-- Marblub the Massive }),
+	--				n(93622, { 		-- Mortiferous }),
+	--				n(89865, { 		-- Mrrgrl the Tide Reaver drops neck }),
+	--				n(111434, { 	-- Sea King Tidross }),
+	--				n(112636, { 	-- Sinister Leyrunner }),
+	--				n(109594, { 	-- Stormfeather }),
 	--				o(254087, { 	-- The Dreadblades
 	--					i(128872), 		-- Rogue Outlaw Hidden Appearance
 	--				}),
-	--				n(109620, { 	-- The Whisperer }), 
-	--				n(110824, { 	-- Tideclaw }), 
+	--				n(109620, { 	-- The Whisperer }),
+	--				n(110824, { 	-- Tideclaw }),
 	--				n(102064, { 	-- Torrentius }),
-	--				n(109575, { 	-- Valakar the Thirsty }), 
---]]				
+	--				n(109575, { 	-- Valakar the Thirsty }),
+--]]
 				}),
 				n(-77, {	-- Special
 					o(251168, {	-- Ephemeral Crystal
@@ -2716,10 +2716,15 @@ _.Zones =
 				}),
 				n(-2, { 	-- Vendors
 					n(107139, {	-- Enchantress Ilyana
-						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
-						i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
-						i(144314),	-- Formula: Enchant Neck - Mark of the Quick (Rank 1)
-						i(144311),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 1)
+						["coords"] = {
+							{ 46.81, 40.81, 630 },
+						},
+						["g"] = {
+							i(144317),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 1)
+							i(144308),	-- Formula: Enchant Neck - Mark of the Master (Rank 1)
+							i(144314),	-- Formula: Enchant Neck - Mark of the Quick (Rank 1)
+							i(144311),	-- Formula: Enchant Neck - Mark of the Versatile (Rank 1)
+						},
 					}),
 					n(102196, {	-- Fargo Flintlocke
 						["coord"] = { 43.0, 62.84, 630 },
@@ -2792,8 +2797,8 @@ _.Zones =
 						i(134246),	-- Herringbone Drape
 						i(136748),	-- Vault Watcher's Cloak
 					}),
-					n(-3241, {	-- Arcane Singed Set		
-						["groups"] = {		
+					n(-3241, {	-- Arcane Singed Set
+						["groups"] = {
 							i(134348),	-- Arcane Singed Aurora
 							i(134353),	-- Arcane Singed Mantle
 							i(134351),	-- Arcane Singed Robe
@@ -2802,11 +2807,11 @@ _.Zones =
 							i(134347),	-- Arcane Singed Cord
 							i(134350),	-- Arcane Singed Leggings
 							i(134352),	-- Arcane Singed Slippers
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
-					}),			
-					n(-3248, {	-- Seawitch Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+					}),
+					n(-3248, {	-- Seawitch Set
+						["groups"] = {
 							i(134260),	-- Seawitch Hood
 							i(134265),	-- Seawitch Mantle
 							i(134263),	-- Seawitch Robes
@@ -2815,11 +2820,11 @@ _.Zones =
 							i(134259),	-- Seawitch Cinch
 							i(134262),	-- Seawitch Leggings
 							i(134264),	-- Seawitch Sandals
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
-					}),			
-					n(-3271, {	-- Brinewashed Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+					}),
+					n(-3271, {	-- Brinewashed Set
+						["groups"] = {
 							i(134240),	-- Brinewashed Leather Cowl
 							i(134242),	-- Brinewashed Leather Shoulderpads
 							i(134241),	-- Brinewashed Leather Vest
@@ -2828,11 +2833,11 @@ _.Zones =
 							i(134243),	-- Brinewashed Leather Belt
 							i(134238),	-- Brinewashed Leather Pants
 							i(134237),	-- Brinewashed Leather Boots
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
-					}),			
-					n(-3264, {	-- Mana-Saber Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+					}),
+					n(-3264, {	-- Mana-Saber Set
+						["groups"] = {
 							i(134328),	-- Mana-Saber Hide Hood
 							i(134330),	-- Mana-Saber Hide Shoulders
 							i(134329),	-- Mana-Saber Hide Jerkin
@@ -2841,11 +2846,11 @@ _.Zones =
 							i(134331),	-- Mana-Saber Hide Belt
 							i(134326),	-- Mana-Saber Hide Pants
 							i(134325),	-- Mana-Saber Hide Boots
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
-					}),			
-					n(-3282, {	-- Manaburst Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+					}),
+					n(-3282, {	-- Manaburst Set
+						["groups"] = {
 							i(134343),	-- Manaburst Helm
 							i(134345),	-- Manaburst Spaulders
 							i(134346),	-- Manaburst Chainmail
@@ -2854,11 +2859,11 @@ _.Zones =
 							i(134339),	-- Manaburst Waistguard
 							i(134344),	-- Manaburst Legguards
 							i(134342),	-- Manaburst Greaves
-						},		
-						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
-					}),	
-					n(-3276, {	-- Sea Stalker's Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+					}),
+					n(-3276, {	-- Sea Stalker's Set
+						["groups"] = {
 							i(134255),	-- Sea Stalker's Hood
 							i(134257),	-- Sea Stalker's Mantle
 							i(134258),	-- Sea Stalker's Shirt
@@ -2867,11 +2872,11 @@ _.Zones =
 							i(134251),	-- Sea Stalker's Cinch
 							i(134256),	-- Sea Stalker's Leggings
 							i(134254),	-- Sea Stalker's Boots
-						},		
-						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
-					}),			
-					n(-3305, {	-- Coralplate Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+					}),
+					n(-3305, {	-- Coralplate Set
+						["groups"] = {
 							i(134226),	-- Coralplate Helmet
 							i(134228),	-- Coralplate Pauldrons
 							i(134223),	-- Coralplate Chestguard
@@ -2880,11 +2885,11 @@ _.Zones =
 							i(134225),	-- Coralplate Girdle
 							i(134227),	-- Coralplate Legguards
 							i(134229),	-- Coralplate Sandstompers
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
-					}),			
-					n(-3304, {	-- Ley-Scarred Set		
-						["groups"] = {		
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+					}),
+					n(-3304, {	-- Ley-Scarred Set
+						["groups"] = {
 							i(134314),	-- Ley-Scarred Helm
 							i(134316),	-- Ley-Scarred Pauldrons
 							i(134311),	-- Ley-Scarred Chestplate
@@ -2893,9 +2898,9 @@ _.Zones =
 							i(134313),	-- Ley-Scarred Waistplate
 							i(134315),	-- Ley-Scarred Greaves
 							i(134317),	-- Ley-Scarred Sabatons
-						},		
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
-					}),			
+						},
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+					}),
 					n(-387, {	-- Relics
 						i(141273),	-- Echo of Eons
 					}),
@@ -2948,7 +2953,7 @@ _.Zones =
 						["isWQ"] = 110,
 						["requireSkill"] = 333,	-- Enchanting
 					},
-				}),	
+				}),
 				n(0, { 		-- Zone Drops
 					["groups"] = {
 						i(144315),	-- Formula: Enchant Neck - Mark of the Quick (Rank 2)
@@ -3005,7 +3010,7 @@ _.Zones =
 						}),
 						i(121048, {	-- Temporal Scholar's Cord
 							["bonusID"] = 1812,
-						}),						
+						}),
 						i(121051, {	-- Temporal Scholar's Leggings
 							["bonusID"] = 1812,
 						}),
@@ -3283,7 +3288,7 @@ _.Zones =
 			},
 			["achievementID"] = 10665,
 			["lvl"] = 98,
-			["maps"] = { 
+			["maps"] = {
 				631,	-- Nar'thalas Academy
 				632,	-- Oceanus Cove
 				633,	-- Temple of a Thousand Lights

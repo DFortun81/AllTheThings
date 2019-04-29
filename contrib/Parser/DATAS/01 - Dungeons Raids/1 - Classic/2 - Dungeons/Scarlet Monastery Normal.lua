@@ -228,7 +228,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(7720)),	-- Whitemane's Chapeau
 						}),
 					}),
-				}),	
+				}),
 			}),
 		},
 	}),

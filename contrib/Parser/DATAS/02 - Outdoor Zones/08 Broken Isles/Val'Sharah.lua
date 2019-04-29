@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			["lvl"] = 98,	
+			["lvl"] = 98,
 			["achievementID"] = 10666,
 			["maps"] = {
 				642,	-- Darkpens
@@ -610,7 +610,7 @@ _.Zones =
 							}),
 						},
 						["description"] = "1. Buy Dried Bilberries from Fialla Sweetberry in Dalaran.\n2. Kill Sharptalon Matriarch.\n3. /target Orphaned Sharptalon\n4. Feed Orphaned Sharptalon Dried Bilberries.\n5. Enjoy new Sharptalon Hatchling|r",
-					}),	
+					}),
 				}),
 				n(-38, { 	-- Profession
 					{	-- Blight-Choked Herb [Dreamleaf II]
@@ -642,8 +642,7 @@ _.Zones =
 							recipe(193307),	-- Felwort [Rank 1]
 						},
 					},
-					n(-180, {	-- Alchemy
-						["requireSkill"] = 171,	-- Alchemy
+					prof(171, {	-- Alchemy
 						["g"] = {
 							q(39338, {	-- Return the Filter
 								["qg"] = 93974,	-- Leyweaver Erenyi
@@ -651,8 +650,8 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-181, {	-- Blacksmithing
-						["g"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
+					prof(164, {	-- Blacksmithing
+						["g"] = {	-- Blacksmithing
 							q(39680, {	-- Between the Hammer...
 								["sourceQuest"] = 39702,	-- Legend of Black Rook Hold
 								["qg"] = 96763,	-- Saris Swifthammer
@@ -679,7 +678,7 @@ _.Zones =
 									},
 								}),
 							}),
-						}),
+						},
 					}),
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
@@ -894,7 +893,7 @@ _.Zones =
 							i(141619),	-- Mana-Infused Berries
 						}),
 						crit(1, {	-- Archdruid of the Vale
-							q(38382),	-- Archdruid of the Vale										
+							q(38382),	-- Archdruid of the Vale
 							q(39383),	-- Dishonored
 							q(39384),	-- The Corruptor
 							q(40573,  {  -- The Nightmare Lord
@@ -1135,7 +1134,7 @@ _.Zones =
 								i(130012),	-- Shaladrassil Chestguard
 							}),
 						}),
-					}),  
+					}),
 					n(-168, {	-- Other Quests
 						sz(10666,3, {	-- Bradensbrook
 							q(39015,  {  -- Grumpy
@@ -1198,52 +1197,52 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(110562, {	-- Bahagar
-						["questID"] = 43446,	
-						["g"] = {	
+						["questID"] = 43446,
+						["g"] = {
 							i(130135),
 						},
 					}),
 					n(92965,  {	-- Darkshade
-						["questID"] = 38767,				
+						["questID"] = 38767,
 						["g"] = {
 							i(130166), 	-- Pet
 						},
-					}), 
+					}),
 					n(97517,  {	-- Dreadbog
-						["questID"] = 39858,	
-						["g"] = {	
+						["questID"] = 39858,
+						["g"] = {
 							i(130125),
 						},
-					}), 
+					}),
 					n(109225, {	-- Elandris Bladesong (Undergrell Attack)
 						["description"] = "|cff66ccffSpeak to Elandris Bladesong to start the event. Kill waves of enemies and then the Crazed Undergrell.|r",
 						["questID"] = 43176,
-						["g"] = {	
+						["g"] = {
 							i(130133),
 						},
-					}), 
+					}),
 					n(92334,  {	-- Elindya Featherlight (Skul'vrax)
 						["description"] = "|cff66ccffRevive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.|r",
-						["questID"] = 38887,	
+						["questID"] = 38887,
 						["g"] = {
 							i(130115)
 						},
-					}), 
+					}),
 					n(93679,  {	-- Gathenak the Subjugator
 						["questID"] = 44070,
-						["g"] = {	
+						["g"] = {
 							i(132359),
 						},
-					}), 
+					}),
 					n(92117,  {	-- Gorebeak
 						["questID"] = 38468,
-						["g"] = {	
+						["g"] = {
 							i(130154),  -- Pet
 						},
 					}),
 					n(93030, { 		-- Ironbranch
 						i(130126),	-- Iron Branch
-					}), 
+					}),
 					n(94366,  {	-- Lelyn Swiftshadow
 						["g"] = {
 							{	-- The Warden's Signet
@@ -1254,44 +1253,44 @@ _.Zones =
 					}),
 					n(98241,  {	-- Lyrath Moonfeather
 						["questID"] = 40079,
-						["g"] = {	
+						["g"] = {
 							i(130118),
 						},
-					}), 
+					}),
 					n(95221,  {	-- Mad Henryk
 						["questID"] = 39357,
 						["g"] = {
 							i(130214),
 						},
-					}), 
+					}),
 					n(95318,  {	-- Perrexx
 						["questID"] = 39596,
-						["g"] = {	
+						["g"] = {
 							i(130137),
 						},
-					}), 
+					}),
 					n(94485,  {	-- Pollous the Fetid
 						["questID"] = 39130,
 						["g"] = {
 							i(130168),
 						},
-					}), 
+					}),
 					n(92180,  {	-- Seersei
 						["questID"] = 38479,
-						["g"] = {	
+						["g"] = {
 							i(130171),
 						},
-					}), 
+					}),
 					n(92423,  {	-- Theryssia
 						["description"] = "|cff66ccffClick on Theryssia's nameplate on the grave stone.|r",
-						["questID"] = 38772,	
+						["questID"] = 38772,
 						["g"] = {
 							i(130136),
 						},
-					}), 
+					}),
 					n(93205,  {	-- Thondrax
 						["questID"] = 38780,
-						["g"] = {	
+						["g"] = {
 							i(130121),
 						},
 					}),
@@ -1304,28 +1303,28 @@ _.Zones =
 					},
 					n(97504,  {	-- Wraithtalon
 						["questID"] = 39856,
-						["g"] = {	
+						["g"] = {
 							i(130116),
 						},
-					}), 
+					}),
 --[[
-				--	n(93758, { 		-- Antydas Nightcaller	}), 
-				--	n(107924, { 	-- Darkfiend Tormentor	}), 
-				--	v(45483, { 		-- Ealdis	}), 
-				--	v(40126, { 		-- Grelda the Hag	}), 
+				--	n(93758, { 		-- Antydas Nightcaller	}),
+				--	n(107924, { 	-- Darkfiend Tormentor	}),
+				--	v(45483, { 		-- Ealdis	}),
+				--	v(40126, { 		-- Grelda the Hag	}),
 				--	v(45484, {	 	-- Harbinger of Screams	}),
-				--	n(93686, { 		-- Jinikki the Puncturer	}), 
-				--	n(106042, { 	-- Kalazzius the Guileful	}), 
-				--	n(109125, { 	-- Kathaw the Savage	}), 
-				--	n(94414, { 		-- Kiranys Duskwhisper	}), 
-				--	v(45490, { 		-- Lytheron	}), 
-				--	v(45501, { 		-- Malisandra	}), 
-				--	v(45488, { 		-- Nylaathria the Forgotten	}), 
-				--	v(45487, { 		-- Rabxach	}), 
-				--	v(45500, { 		-- Shalas'aman	}), 
-				--	n(103785, { 	-- Well-Fed Bear	}), 
-				--	v(45493, { 		-- Witchdoctor Grgl-Brgl	}), 
---]]					
+				--	n(93686, { 		-- Jinikki the Puncturer	}),
+				--	n(106042, { 	-- Kalazzius the Guileful	}),
+				--	n(109125, { 	-- Kathaw the Savage	}),
+				--	n(94414, { 		-- Kiranys Duskwhisper	}),
+				--	v(45490, { 		-- Lytheron	}),
+				--	v(45501, { 		-- Malisandra	}),
+				--	v(45488, { 		-- Nylaathria the Forgotten	}),
+				--	v(45487, { 		-- Rabxach	}),
+				--	v(45500, { 		-- Shalas'aman	}),
+				--	n(103785, { 	-- Well-Fed Bear	}),
+				--	v(45493, { 		-- Witchdoctor Grgl-Brgl	}),
+--]]
 				}),
 				n(-2, { 	-- Vendors
 					n(93974, {	-- Leyweaver Erenyi
@@ -1770,7 +1769,7 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["g"] = {
 						n(-4, {	-- Achievements
-							un(2, ach(11139, {	-- Field Medic! 
+							un(2, ach(11139, {	-- Field Medic!
 								["g"] = {
 									un(39, title(340, {	-- TITLE: Field Medic!
 										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
@@ -1806,7 +1805,7 @@ _.Zones =
 						}),
 					},
 				}),
-			},				
-		}),	
+			},
+		}),
 	}),
 };

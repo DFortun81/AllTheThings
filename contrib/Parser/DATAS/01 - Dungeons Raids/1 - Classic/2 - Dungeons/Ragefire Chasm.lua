@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				qa(30995, {	-- No Man Left Behind
 					["qg"] = 61822,	-- SI:7 Field Commander Dirken
-				}),					
+				}),
 				{	-- The Dark Shaman (Alliance)
 					["questID"] = 30996,	-- The Dark Shaman
 					["races"] = ALLIANCE_ONLY,
@@ -106,7 +106,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(2,  i(66031)), 	-- Hide Vest of the Shaman
 							un(2,  i(66022)), 	-- Ragefire Leggings
 							un(2,  i(49541)), 	-- Robes of the Doomed Ritual
-							un(2, i(131613)), 	-- Scaled Vest of the Shaman 
+							un(2, i(131613)), 	-- Scaled Vest of the Shaman
 							un(2,  i(66040)), 	-- Searing Belt
 							un(2,  i(66045)), 	-- Stone Guard Greaves
 						},

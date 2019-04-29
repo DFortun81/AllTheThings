@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 221, 222, 223 },
 		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
-			n(-17, {	-- Quests 
+			n(-17, {	-- Quests
 				qg(75606, qa(34672, { 	-- The Rise of Aku'mai
 					i(65986),	-- Shield Against the Evil Presence
 					i(65962),	-- Thaelrid's Greaves
@@ -23,7 +23,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(66012),	-- Je'neu's Robes
 					i(131714),	-- Blackfathom Chain Leggings
 				})),
-			}),	
+			}),
 			n(  0, {	-- Zone Drop
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
@@ -297,7 +297,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(7004)),		-- Prelacy Cape
 						un(2, i(56681)),	-- Searching Wand
 						un(2, i(56680)),	-- Shadestar Mace
-					})),	
+					})),
 					un(40, qa(26883, {	-- Twilight Falls
 						un(2, i(56699)),	-- Aluwyn's Legguards
 						un(2, i(56697)),	-- Blackfathom Mace

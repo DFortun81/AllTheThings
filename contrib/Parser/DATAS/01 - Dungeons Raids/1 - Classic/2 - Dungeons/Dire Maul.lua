@@ -112,7 +112,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18315),	-- Ring of Demonic Potency
 					})),
 					n(16097, {			-- Isalien Summonable
-						["groups"] = { 
+						["groups"] = {
 							i(22057, {	-- Brazier of Invocation
 								un(11, i(22472)), 	-- Boots of Ferocity
 								un(11, i(22315)), 	-- Hammer of Revitalization
@@ -448,7 +448,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(11, i(18757)), 	-- Diabolic Mantle
 							un(11, i(18755)), 	-- Xorothian Firestick
 							un(11, i(18756)), 	-- Dreadguard Protector
-							un(11, i(18754)), 	-- Fel Hardened Bracers	
+							un(11, i(18754)), 	-- Fel Hardened Bracers
 						},
 					}),
 					cr(11486, e(410, {	-- Prince Tortheldrin
@@ -508,10 +508,10 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							})),
 							un(40, qa(7488, {	-- Lethtendris's Web
-								un(2, i(18491)),	-- Lorespinner 
+								un(2, i(18491)),	-- Lorespinner
 							})),
 							un(40, qh(7489, {	-- Lethtendris's Web
-								un(2, i(18491)),	-- Lorespinner 
+								un(2, i(18491)),	-- Lorespinner
 							})),
 							un(40, q(7483, {	-- Libram of Rapidity
 								un(2, i(18329, {	-- Arcanum of Rapidity
@@ -519,7 +519,7 @@ _.Instances = { tier(1, {	-- Classic
 								})),
 							})),
 							un(40, q(7441, {	-- Pusillin and the Elder Azj'Tordin
-								un(2, i(18410)),	-- Sprinter's Sword 
+								un(2, i(18410)),	-- Sprinter's Sword
 								un(2, i(18411)),	-- Spry Boots
 							})),
 						}),
@@ -656,14 +656,14 @@ _.Instances = { tier(1, {	-- Classic
 								})),
 							})),
 							un(40, qa(7462, { 	-- The Treasure of the Shen'dralar
-								un(2, i(18421)),	-- Backwood Helm 
-								un(2, i(18420)),	-- Bonecrusher 
-								un(2, i(18424)),	-- Sedge Boots 
+								un(2, i(18421)),	-- Backwood Helm
+								un(2, i(18420)),	-- Bonecrusher
+								un(2, i(18424)),	-- Sedge Boots
 							})),
 							un(40, qh(7877, { 	-- The Treasure of the Shen'dralar
-								un(2, i(18421)),	-- Backwood Helm 
-								un(2, i(18420)),	-- Bonecrusher 
-								un(2, i(18424)),	-- Sedge Boots 
+								un(2, i(18421)),	-- Backwood Helm
+								un(2, i(18420)),	-- Bonecrusher
+								un(2, i(18424)),	-- Sedge Boots
 							})),
 						}),
 						n( 0, {	-- Zone Drop (Legacy)

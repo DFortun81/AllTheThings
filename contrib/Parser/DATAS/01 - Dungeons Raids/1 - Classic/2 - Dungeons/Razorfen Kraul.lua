@@ -22,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(65918),	-- Agamaggan's Gift
 						i(131617),	-- Razorflank's Chainmail
 					},
-				}),	
+				}),
 				q(26901, {	-- Going, Going, Guano!
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
@@ -131,7 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			cr(75001, e(896, {	-- Hunter Bonetusk
-				i(6681),	-- Thornspike 
+				i(6681),	-- Thornspike
 				i(151442), 	-- Bonetusk Cloak
 			})),
 			cr(74948, e(895, {	-- Roogug
@@ -160,12 +160,12 @@ _.Instances = { tier(1, {	-- Classic
 				i(13048),	-- Looming Gavel
 				i(2277),	-- Necromancer Leggings
 				i(13124),	-- Ravasaur Scale Boots
-				i(13063),	-- Starfaller 
+				i(13063),	-- Starfaller
 				i(2877),	-- Combatant Claymore
 				i(3020),	-- Enduring Cap
 				i(13127),	-- Frostreaver Crown
 				i(9405),	-- Girdle of Golem Strength
-				i(9395),	-- Gloves of Old 
+				i(9395),	-- Gloves of Old
 				i(791),		-- Gnarled Ash Staff
 				i(13019),	-- Harpyclaw Short Bow
 				i(12974),	-- The Black Knight

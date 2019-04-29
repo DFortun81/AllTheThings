@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
 		["groups"] = {
 			d(1, {		-- Normal
-				n(-17, {	-- Quests 
+				n(-17, {	-- Quests
 					qa(27917, { 	-- Sniffing Them Out
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 					}),
@@ -68,7 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 							47146,	-- Spitebone Flayer
 							47143,	-- Spitebone Skeleton
 							3870,	-- Stone Sleeper
-							3873,	-- Tormented Officer									
+							3873,	-- Tormented Officer
 						},
 					}),
 					i(3194, {	-- Black Malice
@@ -89,14 +89,14 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(2205, {	-- Duskbringer
 						["crs"] = {
 							47132,	-- Dark Creeper
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1483, {	-- Face Smasher
@@ -118,7 +118,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(1489, {	-- Gloomshroud Armor
@@ -141,7 +141,7 @@ _.Instances = { tier(1, {	-- Classic
 							47145,	-- Spitebone Guardian
 							47143,	-- Spitebone Skeleton
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1974, {	-- Mindthrust Bracers
@@ -162,7 +162,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(2292, {	-- Necrology Robes
@@ -186,7 +186,7 @@ _.Instances = { tier(1, {	-- Classic
 							47146,	-- Spitebone Flayer
 							47145,	-- Spitebone Guardian
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1482, {	-- Shadowfang
@@ -197,7 +197,7 @@ _.Instances = { tier(1, {	-- Classic
 							47137,	-- Mindless Horror
 							47140,	-- Sorcerous Skeleton
 							3873,	-- Tormented Officer
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(1484, {	-- Witching Stave
@@ -218,7 +218,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 				}),

@@ -18,7 +18,7 @@ _.Zones =
 				n(-16, {	-- Rares
 					n(111573, {	-- Kosumoth the Hungering
 						["groups"] = {
-							q(43798, { 
+							q(43798, {
 								["groups"] = {
 									i(140261),	-- Pet
 									i(138201),	-- Mount
@@ -31,9 +31,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 110,	
+			["lvl"] = 110,
 			["icon"] = "Interface\\Icons\\achievement_dungeon_eyeofazshara",
 			["description"] = "|cff66ccffThe Eye of Azshara is zone south of Dalaran in the Broken Isles. It is a level 110 elite zone that is a replica of the dungeon of the same name. A flight master can be found here, but even with a level 100 boost, you need to unlock it by visiting the flight point.|r",
-		}),	
+		}),
 	}),
 };
