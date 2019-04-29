@@ -51,14 +51,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
-					{	-- Wailing Critters
-						["questID"] = 45423,
-						["qg"] = 116781,	-- Muyani
-						["coord"] = { 38.8, 68.2, 10 },
-						["groups"] = {
-							i(122457),	-- Ultimate Battle-Training Stone
-						},
-					},
 				}),
 			},
 		}),
