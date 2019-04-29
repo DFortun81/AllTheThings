@@ -638,26 +638,102 @@ _.Zones =
 							["qg"] = 21475,	-- Scout Zagran
 							["sourceQuests"] = { 10601, 10602 },	-- The Fate of Kagrosh & The Summoning Chamber
 						}),
-						qa(10626, {	-- Capture the Weapons
-							["g"] = {
-								i(30926),	-- Ashwalker's Footwraps
-								i(30938),	-- Azurestrike Shoulders
-								i(30950),	-- Darkhunter's Cinch
-								i(30966),	-- Singed Vambraces
-							},
-							["qg"] = 19370,	-- Ordinn Thunderfist
-							["coord"] = { 36.8, 54.8 },
-							["sourceQuests"] = { 10621 },	-- Illidari Bane-Shard
+						i(30756, {	-- Illidari Bane-Shard (Alliance)
+							qa(10621, {	-- Illidari Bane-Shard
+								["qg"] = 21499,	-- Overseer Ripsaw
+								["coord"] = { 23.0, 35.6, 104 },
+							}),
 						}),
-						qh(10627, {	-- Capture the Weapons
+						i(30579, {	-- Illidari Bane-Shard (Horde)
+							qh(10623, {	-- Illidari Bane-Shard
+								["qg"] = 21499,	-- Overseer Ripsaw
+								["coord"] = { 23.0, 35.6, 104 },
+							}),
+						}),
+						qa(10626, {	-- Capture the Weapons
+							["qg"] = 19370,	-- Ordinn Thunderfist
+							["coord"] = { 36.8, 54.8, 104 },
+							["sourceQuest"] = 10621,	-- Illidari Bane-Shard
 							["groups"] = {
 								i(30926),	-- Ashwalker's Footwraps
 								i(30938),	-- Azurestrike Shoulders
 								i(30950),	-- Darkhunter's Cinch
 								i(30966),	-- Singed Vambraces
 							},
+						}),
+						qh(10627, {	-- Capture the Weapons
 							["qg"] = 19333,	-- Grokom Deatheye
-							["sourceQuests"] = { 10623 },	-- Illidari Bane-Shard
+							["coord"] = { 29.8, 31.2, 108 },
+							["sourceQuest"] = 10623,	-- Illidari Bane-Shard
+							["groups"] = {
+								i(30926),	-- Ashwalker's Footwraps
+								i(30938),	-- Azurestrike Shoulders
+								i(30950),	-- Darkhunter's Cinch
+								i(30966),	-- Singed Vambraces
+							},
+						}),
+						qa(10662, {	-- The Hermit Smith (Alliance)
+							["qg"] = 19370,	-- Ordinn Thunderfist
+							["coord"] = { 36.8, 54.8, 104 },
+							["sourceQuest"] = 10627,	-- Capture the Weapons
+						}),
+						qh(10663, {	-- The Hermit Smith (Horde)
+							["qg"] = 19333,	-- Grokom Deatheye
+							["coord"] = { 29.8, 31.2, 108 },
+							["sourceQuest"] = 10627,	-- Capture the Weapons
+						}),
+						q(10664, {	-- Additional Materials
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuests"] = {
+								10662,	-- The Hermit Smith (Alliance)
+								10663,	-- The Hermit Smith (Horde)
+							},
+						}),
+						q(10665, {	-- Fresh from the Mechanar
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuest"] = 10664,	-- Additional Materials
+						}),
+						q(10666, {	-- The Lexicon Demonica
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuest"] = 10664,	-- Additional Materials
+						}),
+						q(10667, {	-- Underworld Loam
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuests"] = {
+								10665,	-- Fresh From the Mechanar
+								10666,	-- The Lexicon Demonica
+							},
+						}),
+						q(10670, {	-- Tear of the Earthmother
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuests"] = {
+								10665,	-- Fresh From the Mechanar
+								10666,	-- The Lexicon Demonica
+							},
+						}),
+						q(10676, {	-- Bane of the Illidari
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuests"] = {
+								10670,	-- Tear of the Earthmother
+								10667,	-- Underworld Loam
+							},
+						}),
+						q(10679, {	-- Quenching the Blade
+							["qg"] = 21465,	-- David Wayne
+							["coord"] = { 77.4, 38.6, 108 },
+							["sourceQuest"] = 10676,	-- Bane of the Illidari
+							["groups"] = {
+								i(30788),	-- Illidari-Bane Broadsword
+								i(30789),	-- Illidari-Bane Claymore
+								i(31745),	-- Illidari-Bane Dagger
+								i(30787),	-- Illidari-Bane Mageblade
+							},
 						}),
 						q(10528, {	-- Demonic Crystal Prisons
 							["qg"] = 21292,	-- Ar'tor, Son of Oronok
@@ -769,18 +845,6 @@ _.Zones =
 							},
 							["sourceQuests"] = { 10642 },	-- A Ghost in the Machine
 						}),
-						{			-- Illidari Bane-Shard (Alliance)
-							["qg"] = 21499,	-- Overseer Ripsaw
-							["races"] = ALLIANCE_ONLY,
-							["itemID"] = 30756,	-- Illidari Bane-Shard
-							["questID"] = 10621,	-- Illidari Bane-Shard
-						},
-						{			-- Illidari Bane-Shard (Horde)
-							["qg"] = 21499,	-- Overseer Ripsaw
-							["races"] = HORDE_ONLY,
-							["itemID"] = 30579,	-- Illidari Bane-Shard
-							["questID"] = 10623,	-- Illidari Bane-Shard
-						},
 						q(10782, {	-- Imbuing the Headpiece
 							["qg"] = 22024,	-- Parshah
 							["sourceQuests"] = { 10780 },	-- Sketh'lon Feathers

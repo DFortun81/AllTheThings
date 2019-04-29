@@ -327,14 +327,13 @@ _.Zones =
 						["groups"] = {
 							q(11096, {	-- Threat from Above
 								["qg"] = 23449,	-- Yuula
+								["coord"] = { 64.0, 42.0, 111 },
+								
 							}),
 							q(11098, {	-- To Skettis!
 								["qg"] = 23449,	-- Yuula
-								["sourceQuests"] = { 11096 },	-- Threat From Above
-							}),
-							q(11028, {	-- Countdown to Doom
-								["qg"] = 22292,	-- Rilak the Redeemed
-								["sourceQuests"] = { 11024 },	-- An Ally in Lower City *UNTESTED*
+								["coord"] = { 64.0, 42.0, 111 },
+								["sourceQuest"] = 11096,	-- Threat From Above
 							}),
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
@@ -367,12 +366,6 @@ _.Zones =
 						},
 						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
-					q( 10112, {	-- A Personal Favor
-						i(31724),	-- Arakkoa Divining Rod
-						i(25927),	-- Consortium Cloak of the Quick
-						i(25928),	-- Ethereal Healing Pendant
-						i(25926),	-- Nexus-Stalker's Band
-					}),	
 					qh(10167, {	-- Auchindoun...
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
@@ -429,10 +422,6 @@ _.Zones =
 							i(31460),	-- Sha'tari Vindicator's Waistguard
 						},
 					}),
-					q(  9990, {	-- Investigate Tuurem
-						["qg"] = 18484,	-- Wind Trader Lathrai
-						["sourceQuests"] = { 10112 },	-- A Personal Favor *UNTESTED*
-					}),
 					q( 10010, {	-- It's Just That Easy?
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
@@ -482,11 +471,7 @@ _.Zones =
 								i(33871),	-- Recipe: Stormchops
 							}),
 						},
-					}),
-					q( 10849, {	-- Seek Out Kirrik
-						["qg"] = 22292,	-- Rilak the Redeemed
-						["sourceQuests"] = { 10847 },	-- The Eyes of Skettis *UNTESTED*
-					}),
+					}),	
 					q(11381, {	-- Soup for the Soul
 						["isDaily"] = true,
 						["groups"] = {
@@ -535,21 +520,10 @@ _.Zones =
 						["qg"] = 21411,	-- Tobias the Filth Gorger
 						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
 					}),
-					q( 10847, {	-- The Eyes of Skettis
-						["qg"] = 22292,	-- Rilak the Redeemed
-						["sourceQuests"] = { 10863, 10908, 10862 },	-- Secrets of the Arakkoa, Speak with Rilak the Redeemed, or Surrender to the Horde
-					}),
+					
 					q( 10251, {	-- The Master's Grand Design?
 						["qg"] = 19720,	-- "Dirty" Larry
 						["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
-					}),
-					q( 10879, {	-- The Skettis Offensive
-						["groups"] = {
-							i(31727),	-- Choker of Bloodied Feathers
-							i(31726),	-- Necklace of Bloodied Feathers
-						},
-						["qg"] = 22373,	-- Defender Grashna
-						["sourceQuests"] = { 10874 },	-- Veil Shalas: Signal Fires *UNTESTED*
 					}),
 					q( 10883, {	-- The Tempest Key
 						["qg"] = 18166,	-- Archmage Khadgar
