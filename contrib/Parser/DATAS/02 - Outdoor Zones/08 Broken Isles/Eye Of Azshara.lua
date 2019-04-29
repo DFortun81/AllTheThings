@@ -12,8 +12,14 @@ _.Zones =
 					}),
 				}),
 				n(-25, {	-- Pet Battle
-					p(1914),	-- Coastal Sandpiper
-					p(1728),	-- Juvenile Scuttleback
+					{	-- Coastal Sandpiper
+						["speciesID"] = 1914,	-- Coastal Sandpiper
+						["crs"] = { 110826 },	-- Coastal Sandpiper
+					},
+					{	-- Juvenile Scuttleback
+						["speciesID"] = 1728,	-- Juvenile Scuttleback
+						["crs"] = { 97283 },	-- Juvenile Scuttleback
+					},
 				}),
 				n(-16, {	-- Rares
 					n(111573, {	-- Kosumoth the Hungering
