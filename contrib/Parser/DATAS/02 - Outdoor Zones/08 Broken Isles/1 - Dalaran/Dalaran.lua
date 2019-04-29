@@ -5,22 +5,22 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
-			["lvl"] = 1,
+			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",
 			["isRaid"] = true,
-			["lvl"] = 98,
+			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
 			["maps"] = { -- Do not include 626 as that is Rogue Class Hall
-				-- 627,	-- Dalaran [This causes it to load the list twice]
+			--	627,	-- Dalaran [This causes it to load the list twice]
 				628,	-- The Underbelly,
 				629,	-- Aegwynn's Gallery [May separate out later]
 			},
-			["icon"] = "Interface\\Icons\\Spell_arcane_teleportdalaranbrokenisles",
-			["description"] = "|cff66ccffDalaran moves to the Broken Isles as the mages of the Kirin Tor want to keep close to the events of the Burning Legion's third invasion from the Tomb of Sargeras, the fallen Titan and ravager of Worlds. The floating city receives several upgrades and can be found floating in the southern Broken Isles, south of Suramar and southeast of Azsuna. |r",
-			["groups"] = {
+			["lvl"] = 98,
+			["g"] = {
 				n(-169, {	-- Emissary Quests
 					q(43179, {	-- The Kirin Tor of Dalaran
-						["groups"]  = {
+						["repeatable"] = true,
+						["g"]  = {
 							i(157828, {	-- Kirin Tor Chest
-								["groups"] = {
+								["g"] = {
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									i(141349, {	-- Strange Humming Crystal
 										q(44412, {	-- Enemies Everywhere
@@ -30,7 +30,7 @@ _.Zones =
 								},
 							}),
 							un(2, i(154909, {	-- Kirin Tor Chest
-								["groups"] = {
+								["g"] = {
 									i(141349, {	-- Strange Humming Crystal
 										q(44412, {	-- Enemies Everywhere
 											i(141348),	-- Wondrous Wisdomball
@@ -39,7 +39,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(151470, {	-- Kirin Tor Chest
-								["groups"] = {
+								["g"] = {
 									i(141349, {	-- Strange Humming Crystal
 										q(44412, {	-- Enemies Everywhere
 											i(141348),	-- Wondrous Wisdomball
@@ -48,7 +48,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(146753, {	-- Kirin Tor Chest
-								["groups"] = {
+								["g"] = {
 									i(141349, {	-- Strange Humming Crystal
 										q(44412, {	-- Enemies Everywhere
 											i(141348),	-- Wondrous Wisdomball
@@ -57,7 +57,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(141350, {	-- Kirin Tor Chest
-								["groups"] = {
+								["g"] = {
 									i(141349, {	-- Strange Humming Crystal
 										q(44412, {	-- Enemies Everywhere
 											i(141348),	-- Wondrous Wisdomball
@@ -66,19 +66,17 @@ _.Zones =
 								},
 							})),
 						},
-						["repeatable"] = true,
 					}),
 				}),
 				n(-228, {	-- Flight Points
 					fp(1774, {	-- Dalaran
 						["coord"] = { 69.8, 50.8, 627 },
 					}),
---[[			Point does not register and check off after taking flight from Eagle Master
+					--[[	Point does not register and check off after taking flight from Eagle Master		
 					fp(1849, {	-- Dalaran (Eagle)
 						["coord"] = { 72.6, 41.6 },
 						["classes"] = { 3 },	-- Hunter
-					}),
-]]--
+					}), ]]--					
 				}),
 				n(-25,  {	-- Pet Battle
 					{	-- Dust Bunny
@@ -104,22 +102,19 @@ _.Zones =
 						["itemID"] = 123919,	-- Felslate
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["g"] = {
-							{	-- Design: Mass Prospect Felslate
-								["itemID"] = 141312,	-- Design: Mass Prospect Felslate
-							},
+							i(141312),	-- Design: Mass Prospect Felslate
 						},
 					},
 					{	-- Leystone Ore
 						["itemID"] = 123918,	-- Leystone Ore
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["g"] = {
-							{	-- Design: Mass Prospect Leystone
-								["itemID"] = 141311,	-- Design: Mass Prospect Leystone
-							},
+							i(141311),	-- Design: Mass Prospect Leystone
 						},
 					},
 					n(-180, {	-- Alchemy
-						["groups"] = {
+						["requireSkill"] = 171,	-- Alchemy
+						["g"] = {
 							q(39329, {	-- A Dormant Burner
 								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39328 },	-- Ancient Knowledge
@@ -153,14 +148,14 @@ _.Zones =
 								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39332, {	-- Furbolg Firewater
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39331 },	-- Eye of Azshara: Put a Cork in it
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39325, {	-- Get Your Mix On
-								["groups"] = {
+								["qg"] = 92458,	-- Deucus Valdera
+								["g"] = {
 									recipe(195095),	-- Alchemy (lvl 800)
 								},
-								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39344, {	-- Going Underground
 								["qg"] = 92458,	-- Deucus Valdera
@@ -172,327 +167,282 @@ _.Zones =
 								["qg"] = 92183,	-- Alard Schmied
 							}),
 							q(39330, {	-- Ley Hunting
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39329 },	-- A Dormant Burner
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39340, {	-- Lining the Crucible
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39339 },	-- A Fragile Crucible
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39350, {	-- Maw of Souls: A Hope in Helheim
 								["qg"] = 92183,	-- Alard Schmied
 							}),
 							q(39326, {	-- Missing Shipments
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39325 },	-- Get Your Mix On
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39335, {	-- Neltharion's Lair: Potent Powder
 								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39346, {	-- Testing the Calibration
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = {
 									39345,	-- Calibration Experts
 									39645,	-- Calibration Experts
 								},
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39351, {	-- The Emerald Nightmare: Rage Fire
-								["qg"] = 92183,	-- Alard Schmied
 								["sourceQuests"] = {
 									39348,	-- Halls of Valor: The Prime Ingredient
 									39349,	-- Black Rook Hold: Heavy, But Helpful
 									39350,	-- Maw of Souls: A Hope in Helheim
 								},
+								["qg"] = 92183,	-- Alard Schmied
+							}),
+							q(39342, {	-- The Price of the Black Market
+								["requireSkill"] = 171,	-- Alchemy
+								["qg"] = 101492,	-- Ms. Xiulan
 							}),
 							qa(39566, {	-- The Search for Knowledge
 								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39327, {	-- There's a Scribe for That
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39390 },	-- A Mysterious Text
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39341, {	-- Vault of the Wardens: Demon's Bile
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39340 },	-- Lining the Crucible
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							q(39336, {	-- We Need More Powder!
-								["qg"] = 92458,	-- Deucus Valdera
 								["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 						},
-						["requireSkill"] = 171,
 					}),
 					n(-191, {	-- Archaeology
-						["groups"] = {
+						["requireSkill"] = 794,	-- Archaeology
+						["g"] = {
 							q(41189, {	-- A New Lead
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41183, {	-- Academic Exploration
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(40857, {	-- Bits and Pieces
-								["qg"] = 93538,	-- Dariness the Learned
-								["isWeekly"] = true,
 								["sourceQuests"] = {
 									41158,	-- Fragments of the Fjords
 									41161,	-- Out of the Frying Pan
 									41164,	-- One Step Closer
 									41167,	-- Fel Fragments
 								},
+								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41167, {	-- Fel Fragments
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41158, {	-- Fragments of the Fjords
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41177, {	-- Goblin Archaeology
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41186, {	-- History of Highmountain
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41164, {	-- One Step Closer
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41161, {	-- Out of the Frying Pan
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41171, {	-- The Reliquary Calls
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41192, {	-- The Right Path
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41180, {	-- Unspeakable Power
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 							q(41174, {	-- Worth Its Weight
-								["qg"] = 93538,	-- Dariness the Learned
 								["isWeekly"] = true,
+								["qg"] = 93538,	-- Dariness the Learned
 							}),
 						},
-						["requireSkill"] = 794,
 					}),
-					prof(164, { -- Blacksmithing
-						["groups"] = {	-- Blacksmithing
-							{	-- Strange New Ores
-								["questID"] = 38499,	-- Strange New Ores
-								["qg"] = 92183,	-- Alard Schmied
+					prof(164, {	-- Blacksmithing
+						q(38499,  {	-- Strange New Ores
+							["qg"] = 92183,	-- Alard Schmied
+							["g"] = {
+								recipe(195097),	-- Legion Blacksmithing
+							},
+						}),
+						q(39681,  {	-- The Properties of Leystone
+							["qg"] = 92183,	-- Alard Schmied
+							["sourceQuest"] = 38499,	-- Strange New Ores
+							["g"] = {
+								i(123899),	-- Recipe: Leystone Armguards (Rank 1)
+								i(123900),	-- Recipe: Leystone Waistguard (Rank 1)
+							},
+						}),
+						qa(48053, {	-- Weigh Anchor
+							["qg"] = 92183,	-- Alard Schmied
+							["sourceQuest"] = 38499,	-- Strange New Ores
+							["g"] = {
+								i(151709),	-- Recipe: Felslate Anchor
+							},
+						}),
+						qh(48054, {	-- Weigh Anchor
+							["qg"] = 106655,	-- Arcanomancer Vridiel
+							["sourceQuest"] = 38499,	-- Strange New Ores
+							["g"] = {
+								i(151709),	-- Recipe: Felslate Anchor
+							},
+						}),
+						q(38502,  {	-- The Methods of the Nightfallen
+							["sourceQuest"] = 39681,	-- The Properties of Leystone
+							["qg"] = 97261,	-- Alard Schmied
+						}),
+						q(38501,  {	-- Hatecoil Hammerwork
+							["sourceQuest"] = 39681,	-- The Properties of Leystone
+							["qg"] = 97261,	-- Alard Schmied
+							["g"] = {
+								i(123906),	-- Recipe: Leystone Breastplate (Rank 1)
+								i(123901),	-- Recipe: Leystone Pauldrons (Rank 1)
+							},
+						}),
+						q(38505,  {	-- Engineers: Not COMPLETELY Useless
+							["sourceQuests"] = {
+								38501,	-- Hatecoil Hammerwork
+								38502,	-- The Methods of the Nightfallen
+							},
+							["qg"] = 97261,	-- Alard Schmied
+						}),
+						q(38506,  {	-- Chicken Scratch
+							["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
+							["qg"] = 92194,	-- Timofey Oshenko
+						}),
+						q(38507,  {	-- Secrets of Leysmithing
+							["sourceQuest"] = 38506,	-- Chicken Scratch
+							["qg"] = 92195,	-- Professor Pallin
+						}),
+						q(38515,  {	-- Nature Provides
+							["sourceQuest"] = 38507,	-- Secrets of Leysmithing
+							["qg"] = 97261,	-- Alard Schmied
+						}),
+						q(38500,  {	-- Leysmithing Mastery
+							["sourceQuest"] = 38515,	-- Nature Provides
+							["qg"] = 97261,	-- Alard Schmied
+							["g"] = {
+								i(123905),	-- Recipe: Leystone Boots (Rank 1)
+								i(123904),	-- Recipe: Leystone Gauntlets (Rank 1)
+								i(123902),	-- Recipe: Leystone Greaves (Rank 1)
+								i(123903),	-- Recipe: Leystone Helm (Rank 1)
+							},
+						}),
+						q(38563,  {	-- Flower-Pickers and Potion-Quaffers
+							["sourceQuest"] = 38500,	-- Leysmithing Mastery
+							["qg"] = 97261,	-- Alard Schmied
+						}),
+						q(38513,  {	-- The Highmountain Smiths
+							["isBreadcrumb"] = true,
+							["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
+							["qg"] = 92183,	-- Alard Schmied
+						}),
+						q(38522,  {	-- Not Just Weapons and Armor
+							["sourceQuest"] = 38518,	-- From One Master to Another
+							["qg"] = 92183,	-- Alard Schmied
+							["g"] = {
+								i(123957),	-- Recipe: Leystone Hoofplates
+							},
+						}),
+						q(38523,  {	-- Leystone Hoofplates
+							["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
+							["qg"] = 92183,	-- Alard Schmied
+							["g"] = {
+								i(123957),	-- Recipe: Leystone Hoofplates
+							},
+						}),
+						q(39702,  {	-- Legend of Black Rook Hold
+							["isBreadcrumb"] = true,
+							["sourceQuest"] = 38523,	-- Leystone Hoofplates
+							["qg"] = 92183,	-- Alard Schmied
+						}),
+						q(38564,  {	-- A Sweet Bargain
+							["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
+							["qg"] = 92183,	-- Alard Schmied
+						}),
+						q(44449,  {	-- Advanced Quenching
+							["sourceQuest"] = 38564,	-- A Sweet Bargain
+							["qg"] = 92183,	-- Alard Schmied
+							["g"] = {
+								i(123935),	-- Recipe: Leystone Breastplate (Rank 2)
+							},
+						}),
+						q(38524,  {	-- Felsmith Nal'ryssa
+							["isBreadcrumb"] = true,
+							["sourceQuest"] = 44449,	-- Advanced Quenching
+							["qg"] = 92183,	-- Alard Schmied
+						}),
+						n(-34, {	-- World Quests
+							q(41638, {	-- Work Order: Leystone Gauntlets
+								["qg"] = 32725,	-- Warmage Silva
 								["g"] = {
-									recipe(195097),	-- Legion Blacksmithing
-								},
-							},
-							{	-- The Properties of Leystone
-								["questID"] = 39681,	-- The Properties of Leystone
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38499,	-- Strange New Ores
-								["g"] = {
-									{	-- Recipe: Leystone Armguards (Rank 1)
-										["itemID"] = 123899,	-- Recipe: Leystone Armguards (Rank 1)
-									},
-									{	-- Recipe: Leystone Waistguard (Rank 1)
-										["itemID"] = 123900,	-- Recipe: Leystone Waistguard (Rank 1)
-									},
-								},
-							},
-							{	-- Weigh Anchor [A]
-								["questID"] = 48053,	-- Weigh Anchor
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38499,	-- Strange New Ores
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									{	-- 	Recipe: Felslate Anchor
-										["itemID"] = 151709,	-- Recipe: Felslate Anchor
-									},
-								},
-							},
-							{	-- Weigh Anchor [H]
-								["questID"] = 48054,	-- Weigh Anchor
-								["qg"] = 106655,	-- Arcanomancer Vridiel
-								["sourceQuest"] = 38499,	-- Strange New Ores
-								["races"] = HORDE_ONLY,
-								["g"] = {
-									{	-- 	Recipe: Felslate Anchor
-										["itemID"] = 151709,	-- Recipe: Felslate Anchor
-									},
-								},
-							},
-							{	-- The Methods of the Nightfallen
-								["questID"] = 38502,	-- The Methods of the Nightfallen
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuest"] = 39681,	-- The Properties of Leystone
-							},
-							{	-- Hatecoil Hammerwork
-								["questID"] = 38501,	-- Hatecoil Hammerwork
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuest"] = 39681,	-- The Properties of Leystone
-								["g"] = {
-									{	-- Recipe: Leystone Breastplate (Rank 1)
-										["itemID"] = 123906,	-- Recipe: Leystone Breastplate (Rank 1)
-									},
-									{	-- Recipe: Leystone Pauldrons (Rank 1)
-										["itemID"] = 123901,	-- Recipe: Leystone Pauldrons (Rank 1)
-									},
-								},
-							},
-							{	-- Engineers: Not COMPLETELY Useless
-								["questID"] = 38505,	-- Engineers: Not COMPLETELY Useless
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuests"] = { 38501, 38502 },	-- Hatecoil Hammerwork, The Methods of the Nightfallen
-							},
-							{	-- Chicken Scratch
-								["questID"] = 38506,	-- Chicken Scratch
-								["qg"] = 92194,	-- Timofey Oshenko
-								["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
-							},
-							{	-- Secrets of Leysmithing
-								["questID"] = 38507,	-- Secrets of Leysmithing
-								["qg"] = 92195,	-- Professor Pallin
-								["sourceQuest"] = 38506,	-- Chicken Scratch
-							},
-							{	-- Nature Provides
-								["questID"] = 38515,	-- Nature Provides
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuest"] = 38507,	-- Secrets of Leysmithing
-							},
-							{	-- Leysmithing Mastery
-								["questID"] = 38500,	-- Leysmithing Mastery
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuest"] = 38515,	-- Nature Provides
-								["g"] = {
-									{	-- Recipe: Leystone Boots (Rank 1)
-										["itemID"] = 123905,	-- Recipe: Leystone Boots (Rank 1)
-									},
-									{	-- Recipe: Leystone Gauntlets (Rank 1)
-										["itemID"] = 123904,	-- Recipe: Leystone Gauntlets (Rank 1)
-									},
-									{	-- Recipe: Leystone Greaves (Rank 1)
-										["itemID"] = 123902,	-- Recipe: Leystone Greaves (Rank 1)
-									},
-									{	-- Recipe: Leystone Helm (Rank 1)
-										["itemID"] = 123903,	-- Recipe: Leystone Helm (Rank 1)
-									},
-								},
-							},
-							{	-- Flower-Pickers and Potion-Quaffers
-								["questID"] = 38563,	-- Flower-Pickers and Potion-Quaffers
-								["qg"] = 97261,	-- Alard Schmied
-								["sourceQuest"] = 38500,	-- Leysmithing Mastery
-							},
-							{	-- The Highmountain Smiths
-								["questID"] = 38513,	-- The Highmountain Smiths
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
-								["isBreadcrumb"] = true,
-							},
-							{	-- Not Just Weapons and Armor
-								["questID"] = 38522,	-- Not Just Weapons and Armor
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38518,	-- From One Master to Another
-								["groups"] = {
-									{	-- Recipe: Leystone Hoofplates
-										["itemID"] = 123957,	-- Recipe: Leystone Hoofplates
-									},
-								},
-							},
-							{	-- Leystone Hoofplates
-								["questID"] = 38523,	-- Leystone Hoofplates
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
-								["g"] = {
-									{	-- Recipe: Leystone Hoofplates
-										["itemID"] = 123957,	-- Recipe: Leystone Hoofplates
-									},
-								},
-							},
-							{	-- Legend of Black Rook Hold
-								["questID"] = 39702,	-- Legend of Black Rook Hold
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38523,	-- Leystone Hoofplates
-								["isBreadcrumb"] = true,
-							},
-							{	-- A Sweet Bargain
-								["questID"] = 38564,	-- A Sweet Bargain
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
-							},
-							{	-- Advanced Quenching
-								["questID"] = 44449,	-- Advanced Quenching
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 38564,	-- A Sweet Bargain
-								["g"] = {
-									{	-- Recipe: Leystone Breastplate (Rank 2)
-										["itemID"] = 123935,	-- Recipe: Leystone Breastplate (Rank 2)
-									},
-								},
-							},
-							{	-- Felsmith Nal'ryssa
-								["questID"] = 38524,	-- Felsmith Nal'ryssa
-								["qg"] = 92183,	-- Alard Schmied
-								["sourceQuest"] = 44449,	-- Advanced Quenching
-								["isBreadcrumb"] = true,
-							},
-							n(-34, {	-- World Quests
-								{	-- Work Order: Leystone Gauntlets
-									["questID"] = 41638,	-- Work Order: Leystone Gauntlets
-									["qg"] = 32725,	-- Warmage Silva
-									["g"] = {
-										{	-- Recipe: Leystone Gauntlets (Rank 3)
-											["itemID"] = 137606,	-- Recipe: Leystone Gauntlets (Rank 3)
-										},
-									},
+									i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
 								},
 							}),
-						},
+						}),
 					}),
 					n(-192, {	-- Cooking
-						["groups"] = {
+						["requireSkill"] = 185,	-- Cooking
+						["g"] = {
 							q(40990, {	-- A Good Recipe List
-								["qg"] = 101846,	-- Nomi
-								["sourceQuests"] = {
+								["sourceQuests"] = { 
 									40988,	-- Too Many Cooks
 									40989,	-- The Prodigal Sous Chef
 								},
+								["qg"] = 101846,	-- Nomi
 							}),
 							q(40991, {	-- Opening the Test Kitchen
-								["qg"] = 101846,	-- Nomi
 								["sourceQuests"] = { 40990 },	-- A Good Recipe List
+								["qg"] = 101846,	-- Nomi
 							}),
 							q(44581, {	-- Spicing Things Up
-								["groups"] = {
+								["qg"] = 101846,	-- Nomi
+								["g"] = {
 									i(133826),	-- Recipe: Dried Mackerel Strips
 								},
-								["qg"] = 101846,	-- Nomi
 							}),
 							q(40989, {	-- The Prodigal Sous Chef
-								["groups"] = {
+								["qg"] = 102546,	-- Nomi
+								["g"] = {
 									i(133826),	-- Recipe: Dried Mackerel Strips
 								},
-								["qg"] = 102546,	-- Nomi
 							}),
 							q(40988, {	-- Too Many Cooks
-								["groups"] = {
+								["qg"] = 102546,	-- Nomi
+								["g"] = {
 									i(133826),	-- Recipe: Dried Mackerel Strips
 								},
-								["qg"] = 102546,	-- Nomi
 							}),
 						},
-						["requireSkill"] = 185,
 					}),
 					n(-182, {	-- Enchanting
-						["groups"] = {
+						["requireSkill"] = 333,	-- Enchanting
+						["g"] = {
 							q(39903, {	-- An Enchanting Home
 								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
@@ -504,141 +454,140 @@ _.Zones =
 								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
 							q(39876, {	-- Helping the Hunters
-								["qg"] = 93530,	-- Ildine Sorrowspear
 								["sourceQuests"] = { 39875 },	-- The Last Few
+								["qg"] = 93530,	-- Ildine Sorrowspear
 							}),
 							q(39920, {	-- On Azure Wings
-								["qg"] = 93531,	-- Enchanter Nalthanis
 								["sourceQuests"] = { 39907 },	-- Elven Enchantments
+								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
 							q(39874, {	-- Some Enchanted Evening
-								["groups"] = {
+								["qg"] = 93531,	-- Enchanter Nalthanis
+								["g"] = {
 									recipe(195096),	-- Enchanting (lvl 800)
 								},
-								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
 							q(39875, {	-- The Last Few
-								["qg"] = 93530,	-- Ildine Sorrowspear
 								["sourceQuests"] = { 39874 },	-- Some Enchanted Evening
+								["qg"] = 93530,	-- Ildine Sorrowspear
 							}),
 							q(39878, {	-- Thunder Struck
-								["qg"] = 93531,	-- Enchanter Nalthanis
 								["sourceQuests"] = { 40048 },	-- Strings of the Puppet Masters
+								["qg"] = 93531,	-- Enchanter Nalthanis
 							}),
 						},
-						["requireSkill"] = 333,
 					}),
 					n(-183, {	-- Engineering
-						["groups"] = {
+						["requireSkill"] = 202,	-- Engineering
+						["g"] = {
 							q(40871, {	-- 'Locke and Load
 								["qg"] = 93539,
 							}),
 							q(48056, {	-- A Harsh Mistress
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									recipe(247717),	-- Gravitational Reduction Slippers
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40863, {	-- Always the Last Thing
-								["groups"] = {
+								["sourceQuests"] = { 40858 },	-- The Missing Pieces
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198982),	-- Reaves Battery
 								},
-								["qg"] = 93520,	-- Didi the Wrench
-								["sourceQuests"] = { 40858 },	-- The Missing Pieces
-							}),
+							}),	
 							q(40878, {	-- Assault on Violet Hold: Cheating Death
-								["groups"] = {
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198985),	-- Reaves Module: Failure Detection Mode
 								},
-								["qg"] = 93520,	-- Didi the Wrench
 							}),
 							q(40545, {	-- Aww Scrap!
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									recipe(195112),	-- Engineering (lvl 800)
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(46119, {	-- Boon of the Builder
 								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40882, {	-- Court of Stars: Revamping the Recoil
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									i(133671),	-- Schematic: Semi-Automagic Cranial Cannon
 									i(133672),	-- Schematic: Sawed-Off Cranial Cannon
 									i(133673),	-- Schematic: Double-Barreled Cranial Cannon
 									i(133674),	-- Schematic: Ironsight Cranial Cannon
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40854, {	-- Endless Possibilities -- underbelly
-								["qg"] = 102193,	-- Filgo Scrapbottom
-								["coord"] = { 66.4, 53.4, 628 },	-- Dalaran Underbelly
 								["sourceQuests"] = { 40545 },	-- Aww Scrap!
+								["coord"] = { 66.4, 53.4, 628 },	-- Dalaran Underbelly
+								["qg"] = 102193,	-- Filgo Scrapbottom
 							}),
 							q(48065, {	-- Extraterrestrial Exploration
-								["groups"] = {
+								["sourceQuests"] = { 48069 },	-- The Wrench Calls
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(247744),	-- Wormhole Generator: Argus
 								},
-								["qg"] = 93520,	-- Didi the Wrench
-								["sourceQuests"] = { 48069 },	-- The Wrench Calls
 							}),
 							q(40869, {	-- Fire and Forget
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									recipe(198974),	-- Pump-Action Bandage Gun (Rank 1)
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40877, {	-- Halls of Valor: Trigger Happy
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									recipe(198981),	-- Trigger
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40870, {	-- Here Comes the BOOM!
-								["groups"] = {
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198987),	-- Reaves Module: Fireworks Display Mode
 								},
-								["qg"] = 93520,	-- Didi the Wrench
 							}),
 							q(40865, {	-- It's Not Rocket Science
 								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40879, {	-- It's On With Automatons
-								["groups"] = {
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198990),	-- Reaves Module: Piloted Combat Mode
 								},
-								["qg"] = 93520,	-- Didi the Wrench
 							}),
 							q(40864, {	-- Modular Modifications
-								["groups"] = {
+								["sourceQuests"] = { 40863 },	-- Always the Last Thing
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198984),	-- Reaves Module: Repair Mode
 									recipe(198988),	-- Reaves Module: Snack Distrubition Mode
 								},
-								["qg"] = 93520,	-- Didi the Wrench
-								["sourceQuests"] = { 40863 },	-- Always the Last Thing
 							}),
 							q(40855, {	-- Our Man in Azsuna
-								["qg"] = 93520,	-- Didi the Wrench
-								["coord"] = { 38.6, 25.0, 627 },
 								["sourceQuests"] = { 40854 },	-- Endless Possibilities
+								["coord"] = { 38.6, 25.0, 627 },
+								["qg"] = 93520,	-- Didi the Wrench
 							}),
 							q(40860, {	-- Resupplying the Line
 								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 							q(40880, {	-- Short Circuit
-								["groups"] = {
+								["qg"] = 93520,	-- Didi the Wrench
+								["g"] = {
 									recipe(198980),	-- Blingtron's Circuit Design Tutorial
 								},
-								["qg"] = 93520,	-- Didi the Wrench
 							}),
 							q(46128, {	-- Time for a Recharge
-								["groups"] = {
+								["qg"] = 93539,	-- Hobart Grapplehammer
+								["g"] = {
 									recipe(235775),	-- Rechargeable Reaves Battery
 								},
-								["qg"] = 93539,	-- Hobart Grapplehammer
 							}),
 						},
-						["requireSkill"] = 202,
 					}),
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
@@ -647,7 +596,7 @@ _.Zones =
 							["modelScale"] = 1.25,
 							["modelRotation"] = 55,
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								{
 									["questID"] = 40961,			-- The Dalaran Fountain
 									["sourceQuest"] = 40960,		-- (Source Quest: Luminous Pearl)
@@ -659,13 +608,13 @@ _.Zones =
 									["sourceQuest"] = 40961,		-- (Source Quest: The Dalaran Fountain)
 									["qg"] = 102639,				-- Quest Giver: Archmage Khadgar
 									["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
-									["groups"] = {
+									["g"] = {
 										{
 											["artifactID"] = 841,	-- Base Skin
 										},
 										qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
 											["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
-											["groups"] = {
+											["g"] = {
 												i(152583, {	-- Underlight Emerald
 													{
 														["artifactID"] = 988,	-- Fisherfriend of the Isles
@@ -681,7 +630,7 @@ _.Zones =
 							},
 						}),
 						faction(1975, {	-- Conjurer Margoss
-							["groups"] = {
+							["g"] = {
 								q(42911),	-- Drowned Mana (Quest)
 								i(138777, {	-- Drowned Mana
 									i(138811),	-- Brinedeep Bottom Feeder Mount
@@ -697,7 +646,7 @@ _.Zones =
 						}),
 						n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
 							ach(10722, { 	-- The Wish Remover
-								["groups"] = {
+								["g"] = {
 									{
 										["criteriaID"] = 1,		-- Stellagosa's Silver Coin (Criteria)
 										["itemID"] = 138894,	-- Stellagosa's Silver Coin (Item)
@@ -882,342 +831,333 @@ _.Zones =
 						}),
 					}),
 					n(-184, {	-- Herbalism
-						["groups"] = {
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
 							q(40019, {	-- An Empathetic Herb
-								["groups"] = {
+								["sourceQuests"] = { 40018 },	-- Dreamleaf Sample
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193295),	-- Dreamleaf (Rank 1)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40018 },	-- Dreamleaf Sample
 							}),
 							q(40026, {	-- Chase the Culprit
-								["groups"] = {
+								["sourceQuests"] = { 40025 },	-- Teeny Bite Marks
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193299),	-- Foxflower (Rank 2)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40025 },	-- Teeny Bite Marks
 							}),
 							q(40016, {	-- Desperation Breeds Ingenuity
-								["groups"] = {
+								["sourceQuests"] = { 40015 },	-- Ragged Strips of Silk
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193293),	-- Aethril (Rank 2)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40015 },	-- Ragged Strips of Silk
 							}),
 							q(40041, {	-- Felwort Analysis
-								["groups"] = {
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193308),	-- Felwort (Rank 2)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
 							}),
 							q(40033, {	-- Fjarnskaggl
-								["groups"] = {
+								["sourceQuests"] = { 40032 },	-- The Missing Page
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193303),	-- Fjarnskaggl (Rank 3)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40032 },	-- The Missing Page
 							}),
 							q(40014, {	-- Spayed by the Spade
-								["groups"] = {
+								["sourceQuests"] = { 40013 },	-- Aethril Sample
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193292),	-- Aethril (Rank 1)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40013 },	-- Aethril Sample
 							}),
 							q(40039, {	-- Tharillon's Fall
-								["groups"] = {
+							["sourceQuests"] = { 40038 },	-- Insane Ramblings
+							["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193306),	-- Starlight Rose (Rank 3)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40038 },	-- Insane Ramblings
 							}),
 							q(40042, {	-- The Emerald Nightmare: Felwort Mastery
-								["groups"] = {
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193309),	-- Felwort (Rank 3)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
 							}),
 							q(40035, {	-- The Gentlest Touch
-								["qg"] = 92464,	-- Kuhuine Tenderstride
 								["sourceQuests"] = { 40034 },	-- Starlight Rosedust
+								["qg"] = 92464,	-- Kuhuine Tenderstride
 							}),
 							q(40037, {	-- The Spade's Blade
-								["groups"] = {
+								["sourceQuests"] = { 40036 },	-- Jeweled Spade Handle
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193305),	-- Starlight Rose (Rank 2)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40036 },	-- Jeweled Spade Handle
 							}),
 							q(40031, {	-- Vrykul Herblore
-								["groups"] = {
+								["sourceQuests"] = { 40030 },	-- Ram's-Horn Trowel
+								["qg"] = 92464,	-- Kuhuine Tenderstride
+								["g"] = {
 									recipe(193302),	-- Fjarnskaggl (Rank 2)
 								},
-								["qg"] = 92464,	-- Kuhuine Tenderstride
-								["sourceQuests"] = { 40030 },	-- Ram's-Horn Trowel
 							}),
 						},
-						["requireSkill"] = 182,
 					}),
 					n(-185, {	-- Inscription
-						["groups"] = {
+						["requireSkill"] = 773,	-- Inscription
+						["g"] = {						
 							i(136909, {	-- Aethrem Crystal
+								["description"] = "There is a chance to create this item when milling Aethril.",
 								["g"] = {
 									q(39942, {	-- Aethrem Crystal
 										recipe(209658),	-- Mass Mill Aethril
 									}),
 								},
-								["description"] = "Chance to create item when milling Aethril.",
 							}),
-							q(39961, {	-- An Embarrassing Revelation
+							q(39961,  {	-- An Embarrassing Revelation
 								["qg"] = 244651,	-- Steamy Romance Novel
 							}),
-							q(39950, {	-- An Odd Trinket
-								["groups"] = {
+							q(39950,  {	-- An Odd Trinket
+								["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
+								["qg"] = 97359,	-- Raethan
+								["g"] = {
 									recipe(192855),	-- Prophecy Tarot (Rank 2)
 								},
-								["qg"] = 97359,	-- Raethan
-								["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
 							}),
-							q(39328, {	-- Ancient Knowledge
-								["qg"] = 92458,	-- Deucus Valdera
+							q(39328,  {	-- Ancient Knowledge
 								["sourceQuests"] = { 39327 },	-- There's a Scribe for That
+								["qg"] = 92458,	-- Deucus Valdera
 							}),
 							i(136912, {	-- Bulging Nightmare Pod
+								["description"] = "There is a chance to create this item when milling Dreamleaf.",
 								["g"] = {
 									q(40062, {	-- Bulging Nightmare Pod
 										recipe(209659),	-- Mass Mill Dreamleaf
 									}),
 								},
-								["description"] = "Chance to create item when milling Dreamleaf.",
 							}),
-							q(39957, {	-- Demon Ink
-								["groups"] = {
+							q(39957,  {	-- Demon Ink
+								["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
+								["qg"] = 92195,	-- Professor Pallin
+								["g"] = {
 									recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
 								},
-								["qg"] = 92195,	-- Professor Pallin
-								["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 							}),
-							q(39932, {	-- Fish Ink
+							q(39932,  {	-- Fish Ink
 								["qg"] = 92195,	-- Professor Pallin
 							}),
 							i(136916, {	-- Fjarnsk
+								["description"] = "Chance to create item when milling Fjarnskaggl.",
 								["g"] = {
 									q(40065, {	-- Fjarnsk
 										recipe(209661),	-- Mass Mill Fjarnskaggl
 									}),
 								},
-								["description"] = "Chance to create item when milling Fjarnskaggl.",
 							}),
-							q(39953, {	-- Halls of Valor: Vision of Valor
+							q(39953,  {	-- Halls of Valor: Vision of Valor
 								["qg"] = 92195,	-- Professor Pallin
 							}),
-							q(39954, {	-- Mass Milling Techniques
-								["groups"] = {
+							q(39954,  {	-- Mass Milling Techniques
+								["qg"] = 92195,	-- Professor Pallin
+								["g"] = {
 									recipe(210116),	-- Mass Mill Yseralline Seeds
 								},
+							}),
+							q(39944,  {	-- Mysterious Messages
 								["qg"] = 92195,	-- Professor Pallin
 							}),
-							q(39944, {	-- Mysterious Messages
-								["qg"] = 92195,	-- Professor Pallin
-							}),
-							q(39949, {	-- Once a Scribe Like You
-								["qg"] = 97359,	-- Raethan
+							q(39949,  {	-- Once a Scribe Like You
 								["sourceQuests"] = { 39948 },	-- The Ink Flows
+								["qg"] = 97359,	-- Raethan
 							}),
-							q(40056, {	-- Our New Allies
-								["qg"] = 92195,	-- Professor Pallin
+							q(40056,  {	-- Our New Allies
 								["classes"] = { 12 },
+								["qg"] = 92195,	-- Professor Pallin
 							}),
-							q(39934, {	-- Our New Allies
+							q(39934,  {	-- Our New Allies
 								["qg"] = 92195,	-- Professor Pallin
 							}),
 							i(136917, {	-- Roseate Essence
+								["description"] = "There is a chance to create this item when milling Starlight Rose.",
 								["g"] = {
 									q(39951, {	-- Roseate Essence
 										recipe(209662),	-- Mass Mill Starlight Rose
 									}),
 								},
-								["description"] = "Chance to create item when milling Starlight Rose.",
 							}),
 							i(136918, {	-- Sallow Essence
+								["description"] = "There is a chance to create this item when milling Felwort.",
 								["g"] = {
 									q(39952, {	-- Sallow Essence
 										recipe(209664),	-- Mass Mill Felwort
 									}),
 								},
-								["description"] = "Chance to create item when milling Felwort.",
 							}),
-							q(39847, {	-- Sign This
-								["groups"] = {
+							q(39847,  {	-- Sign This
+								["qg"] = 92195,	-- Professor Pallin
+								["g"] = {
 									recipe(195115),	-- Inscription (lvl 800)
 								},
-								["qg"] = 92195,	-- Professor Pallin
 							}),
-							q(39931, {	-- Smashing Herbs
---[[
-								None of the recipe IDs appear to exist to anymore despite the quest still being active
-								["groups"] = {
-									recipe(192969),	--
-									recipe(192975),	--
-									recipe(192970),	--
-									recipe(192971),	--
-									recipe(192972),	--
-									recipe(192973),	--
-									recipe(192974),	--
-									recipe(192976),	--
-									recipe(192978),	--
-									recipe(192979),	--
-									recipe(192980),	--
-									recipe(192981),	--
-								},
-]]--
-								["qg"] = 92195,	-- Professor Pallin
+							q(39931,  {	-- Smashing Herbs
 								["sourceQuests"] = { 39847 },	-- Sign This
+								["qg"] = 92195,	-- Professor Pallin
+							--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
+								["g"] = {
+									recipe(192969),	-- 
+									recipe(192975),	-- 
+									recipe(192970),	-- 
+									recipe(192971),	-- 
+									recipe(192972),	-- 
+									recipe(192973),	-- 
+									recipe(192974),	-- 
+									recipe(192976),	-- 
+									recipe(192978),	-- 
+									recipe(192979),	-- 
+									recipe(192980),	-- 
+									recipe(192981),	-- 
+								},]]--
 							}),
 							qa(43726, {	-- Tales of the Broken Isles
 								["qg"] = 97362,	-- Dazzik "Proudmoore"
 							}),
-							q(39933, {	-- The Card Shark
-								["groups"] = {
+							q(39933,  {	-- The Card Shark
+								["sourceQuests"] = { 39932 },	-- Fish Ink
+								["qg"] = 92195,	-- Professor Pallin
+								["g"] = {
 									recipe(192854),	-- Prophecy Tarot (Rank 1)
 								},
-								["qg"] = 92195,	-- Professor Pallin
-								["sourceQuests"] = { 39932 },	-- Fish Ink
 							}),
-							q(39948, {	-- The Ink Flows
+							q(39948,  {	-- The Ink Flows
 								["qg"] = 92195,	-- Professor Pallin
 							}),
 							qh(39959, {	-- The Plot Thickens
-								["qg"] = 92195,	-- Professor Pallin
 								["isBreadcrumb"] = true,
+								["qg"] = 92195,	-- Professor Pallin
 							}),
 							qa(39955, {	-- The Plot Thickens
-								["qg"] = 92195,	-- Professor Pallin
 								["isBreadcrumb"] = true,
+								["qg"] = 92195,	-- Professor Pallin
 							}),
-							q(43929, {	-- Vantus Mastery
-								["groups"] = {
+							q(43929,  {	-- Vantus Mastery
+								["qg"] = 90417,	-- Archmage Khadgar
+								["g"] = {
 									i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
 								},
-								["qg"] = 90417,	-- Archmage Khadgar
 							}),
 							i(136915, {	-- Woody Seed Cluster
+								["description"] = "There is a chance to create this item when milling Foxflower.",
 								["g"] = {
 									q(40064, {	-- Woody Seed Cluster
 										recipe(209660),	-- Mass Mill Foxflower
 									}),
 								},
-								["description"] = "Chance to create item when milling Foxflower.",
 							}),
 						},
-						["requireSkill"] = 773,
 					}),
 					n(-186, {	-- Jewelcrafting
-						["groups"] = {
-							q(40524, {	-- A Familiar Ring to It
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["g"] = {
+							q(40524,  {	-- A Familiar Ring to It
 								["qg"] = 93527,	-- Timothy Jones
 							}),
-							q(40562, {	-- A Personal Touch
+							q(40562,  {	-- A Personal Touch
 								["qg"] = 93543,	-- Sminx Glasseye
 							}),
-							q(40530, {	-- An Eye for Detail
-								["qg"] = 93526,	-- Tiffany Cartier
+							q(40530,  {	-- An Eye for Detail
 								["sourceQuests"] = { 40529 },	-- Truly Outrageous
+								["qg"] = 93526,	-- Tiffany Cartier
 							}),
-							q(40559, {	-- Black Rook Hold: The Raven's Wisdom
-								["groups"] = {
+							q(40559,  {	-- Black Rook Hold: The Raven's Wisdom
+								["qg"] = 93527,	-- Timothy Jones
+								["g"] = {
 									i(137800),	-- Dawnlight Band (Rank 1)
 								},
-								["qg"] = 93527,	-- Timothy Jones
 							}),
-							q(40540, {	-- Come at Me, Brul
+							q(40540,  {	-- Come at Me, Brul
 								["qg"] = 93526,	-- Tiffany Cartier
 							}),
-							q(40523, {	-- Facet-nating Friends
-								["groups"] = {
+							q(40523,  {	-- Facet-nating Friends
+								["qg"] = 93526,	-- Tiffany Cartier
+								["g"] = {
 									recipe(195116),	-- Jewelcrafting (lvl 800)
 								},
-								["qg"] = 93526,	-- Tiffany Cartier
 							}),
-							q(40561, {	-- Halls of Valor: Jewel of the Heavens
-								["groups"] = {
+							q(40561,  {	-- Halls of Valor: Jewel of the Heavens
+								["qg"] = 93527,	-- Timothy Jones
+								["g"] = {
 									i(137799),	-- Maelstrom Band (Rank 1)
 								},
-								["qg"] = 93527,	-- Timothy Jones
 							}),
-							q(40539, {	-- Hidden Intentions
-								["groups"] = {
+							q(40539,  {	-- Hidden Intentions
+								["qg"] = 100939,	-- Clive Cozen
+								["g"] = {
 									recipe(195881),	-- Jeweled Lockpick
 								},
-								["qg"] = 100939,	-- Clive Cozen
 							}),
-							q(40556, {	-- Jabrul Needs You
+							q(40556,  {	-- Jabrul Needs You
 								["qg"] = 246250,	-- Letter From Jabrul
 							}),
-							q(40538, {	-- Lapidary Lessons
-								["groups"] = {
+							q(40538,  {	-- Lapidary Lessons
+								["qg"] = 93526,	-- Tiffany Cartier
+								["g"] = {
 									recipe(195854),	-- Versatile Maelstrom Sapphire
 								},
-								["qg"] = 93526,	-- Tiffany Cartier
 							}),
-							q(40534, {	-- Making the Cut
-								["groups"] = {
-									recipe(195851),	-- Masterful Queen's Opal
-								},
+							q(40534,  {	-- Making the Cut
+								recipe(195851),	-- Masterful Queen's Opal
 							}),
-							q(40533, {	-- Making the Cut
-								["groups"] = {
-									recipe(195849),	-- Quick Azsunite
-								},
+							q(40533,  {	-- Making the Cut
+								recipe(195849),	-- Quick Azsunite
 							}),
-							q(40532, {	-- Making the Cut
-								["groups"] = {
-									recipe(195848),	-- Deadly Deep Amber
-								},
+							q(40532,  {	-- Making the Cut
+								recipe(195848),	-- Deadly Deep Amber
 							}),
-							q(40560, {	-- Maw of Souls: Spiriting Away
-								["groups"] = {
+							q(40560,  {	-- Maw of Souls: Spiriting Away
+								["qg"] = 93527,	-- Timothy Jones
+								["g"] = {
 									i(137798),	-- Prophetic Band (Rank 1)
 								},
-								["qg"] = 93527,	-- Timothy Jones
 							}),
-							q(40535, {	-- Raising the Drogbar
+							q(40535,  {	-- Raising the Drogbar
 								["qg"] = 93526,	-- Tiffany Cartier
 							}),
 							o(246154, {	-- Broken Toy Box
 								q(40558, {	-- Socket to Me
-									["groups"] = {
-										recipe(195882),	-- JewelCraft
-									},
+									recipe(195882),	-- JewelCraft
 								}),
 							}),
-							q(40531, {	-- Swift Vengeance
-								["qg"] = 93526,	-- Tiffany Cartier
+							q(40531,  {	-- Swift Vengeance
 								["sourceQuests"] = { 40530 },	-- An Eye for Detail
+								["qg"] = 93526,	-- Tiffany Cartier
 							}),
-							q(40529, {	-- Truly Outrageous
-								["groups"] = {
+							q(40529,  {	-- Truly Outrageous
+								["sourceQuests"] = { 40523 },	-- Facet-nating Friends
+								["qg"] = 93526,	-- Tiffany Cartier
+								["g"] = {
 									recipe(195850),	-- Versatile Skystone
 								},
-								["qg"] = 93526,	-- Tiffany Cartier
-								["sourceQuests"] = { 40523 },	-- Facet-nating Friends
 							}),
-							q(41656, {	-- Work Order: Azsunite Loop
+							q(41656,  {	-- Work Order: Azsunite Loop
+								["isWQ"] = 110,
 								["g"] = {
 									i(137840),	-- Design: Azsunite Loop (Rank 3)
 								},
-								["isWQ"] = 110,
 							}),
 						},
-						["requireSkill"] = 755,
 					}),
 					n(-187, {	-- Leatherworking
-						["groups"] = {
-							q(40206, {	-- A Debt Paid
-								["qg"] = 98931,	-- Thanid Glowergold
+						["requireSkill"] = 165,	-- Leatherworking
+						["g"] = {
+							q(40206,  {	-- A Debt Paid
 								["sourceQuests"] = { 40199 },	-- Leather Legwork
+								["qg"] = 98931,	-- Thanid Glowergold
 							}),
-							q(40196, {	-- Adventuring Anxieties
+							q(40196,  {	-- Adventuring Anxieties
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
 							qh(40241, {	-- Battle Bonds
@@ -1226,152 +1166,152 @@ _.Zones =
 							qa(40200, {	-- Battle Bonds
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40181, {	-- Black Rook Bandit
-								["groups"] = {
+							q(40181,  {	-- Black Rook Bandit
+								["qg"] = 98931,	-- Thanid Glowergold
+								["g"] = {
 									recipe(194736),	-- Battlebound Girdle (Rank 1)
 									recipe(194738),	-- Battlebound Leggings (Rank 1)
 								},
-								["qg"] = 98931,	-- Thanid Glowergold
 							}),
-							q(41889, {	-- Dazed of the Past
-								["groups"] = {
-									i(137952),	-- Recipe: Stonehide Leather Barding
-								},
-								["qg"] = 93523,	-- Namha Moonwater
+							q(41889,  {	-- Dazed of the Past
 								["sourceQuests"] = { 40197 },	-- The Necessary Materials
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = {
+									i(137952),	-- Recipe: Stonehide Leather Barding				
+								},
 							}),
-							q(40211, {	-- Demon Flesh
+							q(40211,  {	-- Demon Flesh
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40176, {	-- From Head to Toe
-								["groups"] = {
+							q(40176,  {	-- From Head to Toe
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = {
 									i(132124),	-- Pattern: Battlebound Treads
 									recipe(194701),	-- Recipe: Warhide Footpads
 								},
-								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40193, {	-- Getting the Kinks Out
+							q(40193,  {	-- Getting the Kinks Out
 								["qg"] = 98931,	-- Thanid Glowergold
 							}),
-							q(40190, {	-- Hardening the Hide
+							q(40190,  {	-- Hardening the Hide
 								["qg"] = 9352,	-- Diane Cannings
 							}),
-							q(40177, {	-- Leather Lady
+							q(40177,  {	-- Leather Lady
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40199, {	-- Leather Legwork
-								["groups"] = {
+							q(40199,  {	-- Leather Legwork
+								["qg"] = 98931,	-- Thanid Glowergold
+								["g"] = {
 									i(137902),	-- Recipe: Battlebound Spaulders (Rank 2)
 									i(137906),	-- Recipe: Battlebound Treads (Rank 2)
 								},
+							}),
+							q(40187,  {	-- Links in the Chain
 								["qg"] = 98931,	-- Thanid Glowergold
 							}),
-							q(40187, {	-- Links in the Chain
-								["qg"] = 98931,	-- Thanid Glowergold
-							}),
-							q(40180, {	-- Mail Men
+							q(40180,  {	-- Mail Men
 								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40215, {	-- Mounting Made Easy
-								["groups"] = {
+							q(40215,  {	-- Mounting Made Easy
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = {
 									i(141850),	-- Recipe: Elderhorn Riding Harness
 								},
-								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40183, {	-- Over Your Head
-								["groups"] = {
+							q(40183,  {	-- Over Your Head
+								["sourceQuests"] = { 39958 },	-- Skin Deep
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = {
 									recipe(194699),	-- Warhide Mask
 									i(132123),	-- Pattern: Battlebound Warhelm
 								},
-								["qg"] = 93523,	-- Namha Moonwater
-								["sourceQuests"] = { 39958 },	-- Skin Deep
 							}),
-							q(40201, {	-- Playthings
-								["groups"] = {
-									i(137933),	-- Recipe: Leather Pet Bed
-								},
-								["qg"] = 93523,	-- Namha Moonwater
-								["sourceQuests"] = {
+							q(40201,  {	-- Playthings
+								["sourceQuests"] = { 
 									40200,	-- Battle Bonds (alliance)
 									40241,	-- Battle Bonds (horde)
 								},
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = { 
+									i(137933),	-- Recipe: Leather Pet Bed
+								},
 							}),
-							q(40198, {	-- Rats!
-								["groups"] = {
+							q(40198,  {	-- Rats!
+								["qg"] = 93522,	-- Diane Cannings
+								["g"] = {
 									i(137874),	-- Recipe: Warhide Footpads (Rank 2)
 									i(137870),	-- Recipe: Warhide Shoulderguard (Rank 2)
 								},
-								["qg"] = 93522,	-- Diane Cannings
 							}),
-							q(39958, {	-- Skin Deep
-								["groups"] = {
+							q(39958,  {	-- Skin Deep
+								["qg"] = 93523,	-- Namha Moonwater
+								["g"] = {
 									recipe(195119),	-- Leatherworking (lvl 800)
 								},
-								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40179, {	-- Stormheim Savagery
-								["groups"] = {
+							q(40179,  {	-- Stormheim Savagery
+								["qg"] = 93522,	-- Diane Cannings
+								["g"] = {
 									recipe(194696),	-- Warhide Belt (Rank 1)
 									recipe(194698),	-- Warhide Pants (Rank 1)
 								},
+							}),
+							q(40184,  {	-- Tauren Tanning
 								["qg"] = 93522,	-- Diane Cannings
 							}),
-							q(40184, {	-- Tauren Tanning
-								["qg"] = 93522,	-- Diane Cannings
-							}),
-							q(40202, {	-- The Final Lessons
-								["qg"] = 93522,	-- Diane Cannings
+							q(40202,  {	-- The Final Lessons
 								["sourceQuests"] = { 40198 },	-- Rats!
+								["qg"] = 93522,	-- Diane Cannings
 							}),
-							q(40197, {	-- The Necessary Materials
-								["qg"] = 93523,	-- Namha Moonwater
+							q(40197,  {	-- The Necessary Materials
 								["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
+								["qg"] = 93523,	-- Namha Moonwater
 							}),
-							q(40182, {	-- Too Good To Pass Up
-								["groups"] = {
+							q(40182,  {	-- Too Good To Pass Up
+								["qg"] = 98931,	-- Thanid Glowergold
+								["g"] = {
 									recipe(194742),	-- Battlebound Hauberk (Rank 1)
 								},
-								["qg"] = 98931,	-- Thanid Glowergold
 							}),
-							q(40178, {	-- Vestment Opportunity
-								["groups"] = {
+							q(40178,  {	-- Vestment Opportunity
+								["qg"] = 93522,	-- Diane Cannings
+								["g"] = { 
 									recipe(194702),	-- Warhide Jerkin (Rank 1)
 								},
-								["qg"] = 93522,	-- Diane Cannings
 							}),
 						},
-						["requireSkill"] = 165,
 					}),
 					n(-188, {	-- Mining
-						["groups"] = {
-							--q(38795)	-- Felslate Deposit Sample -- granted by i(124496)
-							--q(38796)	-- Felslate Seam Sample -- granted by i(124497)
+						["requireSkill"] = 186,	-- Mining
+						["g"] = {
+						--	q(38795)	-- Felslate Deposit Sample -- granted by i(124496)
+						--	q(38796)	-- Felslate Seam Sample -- granted by i(124497)
 							q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
-								["groups"] = {
+								["classes"] = { 1, 3 },
+								["qg"] = 93189,	-- Mama Diggs
+								["g"] = {
 									recipe(191970),	-- Infernal Brimstone (Rank 3)
 								},
-								["qg"] = 93189,	-- Mama Diggs
-								["classes"] = { 1, 3 },
 							}),
 							q(38807, {	-- Infernal Brimstone Analysis
-								["groups"] = {
+								["classes"] = { 2, 3 },
+								["qg"] = 93189,	-- Mama Diggs
+								["g"] = {
 									recipe(184505),	-- Infernal Brimstone (Rank 2)
 								},
-								["qg"] = 93189,	-- Mama Diggs
-								["classes"] = { 2, 3 },
 							}),
-							--q(38806)	-- Infernal Brimstone Sample -- granted by i(124502)
+						--	q(38806)	-- Infernal Brimstone Sample -- granted by i(124502)
 							q(39790, {	-- Infernal Brimstone Theory
-								["qg"] = 93189,	-- Mama Diggs
 								["sourceQuests"] = { 38807 },	-- Infernal Brimstone Analysis
+								["qg"] = 93189,	-- Mama Diggs
 							}),
-							--q(38777)	-- Leystone Deposit Sample -- granted by i(124489)
-							--q(38784)	-- Leystone Seam Sample -- granted by i(124490)
-							--q(38797)	-- Living Felslate Sample -- granted by i(124498)
-							--q(38785)	-- Living Leystone Sample -- granted by i(124491)
+						--	q(38777)	-- Leystone Deposit Sample -- granted by i(124489)
+						--	q(38784)	-- Leystone Seam Sample -- granted by i(124490)
+						--	q(38797)	-- Living Felslate Sample -- granted by i(124498)
+						--	q(38785)	-- Living Leystone Sample -- granted by i(124491)
 							q(39817, {	-- The Brimstone's Secret
-								["qg"] = 97360,	-- Matthew Rabis
 								["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
+								["qg"] = 97360,	-- Matthew Rabis
 							}),
 							q(38901, {	-- The Felsmiths
 								["qg"] = 93189,	-- Mama Diggs
@@ -1380,200 +1320,200 @@ _.Zones =
 								["qg"] = 93189,	-- Mama Diggs
 							}),
 						},
-						["requireSkill"] = 186,
 					}),
 					n(-189, {	-- Skinning
-						["groups"] = {
-							--q(40156)	-- Felhide Sample -- granted by i(129863)
-							--q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
-							--q(40151)	-- Immaculate Stormscale -- granted by i(129867)
+						["requireSkill"] = 393,
+						["g"] = {
+						--	q(40156)	-- Felhide Sample -- granted by i(129863)
+						--	q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
+						--	q(40151)	-- Immaculate Stormscale -- granted by i(129867)
 							q(40144, {	-- Glielle
 								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
 							q(40132, {	-- In One Piece
-								["groups"] = {
+								["sourceQuests"] = { 40131 },	-- Stonehide Leather Sample
+								["qg"] = 93541,	-- Kondal Huntersworn
+								["g"] = {
 									recipe(194161),	-- Stonehide Leather (Rank 1)
 								},
-								["qg"] = 93541,	-- Kondal Huntersworn
-								["sourceQuests"] = { 40131 },	-- Stonehide Leather Sample
 							}),
 							q(40137, {	-- Leather for Ske'rit
-								["qg"] = 93541,	-- Kondal Huntsworn
 								["sourceQuests"] = { 40136 },	-- Immaculate Stonehide Leather
+								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
 							q(40152, {	-- Scales for Ske'rit
-								["qg"] = 93541,	-- Kondal Huntsworn
 								["sourceQuests"] = { 40151 },	-- Immaculate Stormscale
+								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
 							q(40146, {	-- Seymour and Agnes
 								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
-							--q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
-							--q(40141),	-- Stormscale Sample -- granted by i(129862)
+						--	q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
+						--	q(40141),	-- Stormscale Sample -- granted by i(129862)
 							q(40142, {	-- The Core of the Stormscale
-								["groups"] = {
+								["qg"] = 93541,	-- Kondal Huntsworn
+								["g"] = {
 									recipe(194164),	-- Stormscale (Rank 1)
 								},
-								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
 							q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-								["groups"] = {
+								["qg"] = 93541,	-- Kondal Huntsworn
+								["g"] = {
 									recipe(194169),	-- Felhide (Rank 3)
 								},
-								["qg"] = 93541,	-- Kondal Huntsworn
 							}),
-							--q(40143),	-- Unfinished Treatise on the Properties of Stormscale -- granted by i(129865)
-
+						--	q(40143),	-- Unfinished Treatise on the Properties of Stormscale -- granted by i(129865)
 						},
-						["requireSkill"] = 393,
 					}),
 					n(-190, {	-- Tailoring
-						["groups"] = {
-							q(38951, {	-- A Needle Need
+						["requireSkill"] = 197,
+						["g"] = {
+							q(38951,  {	-- A Needle Need
 								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38953, {	-- Advanced Needlework
-								["qg"] = 93967,	-- Lyndras
+							q(38953,  {	-- Advanced Needlework
 								["sourceQuests"] = { 38952 },	-- Meticulous Precision
+								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38965, {	-- Assault on Violet Hold: Into the Hold
-								["qg"] = 96444,	-- Violet Hold Guard
+							q(38965,  {	-- Assault on Violet Hold: Into the Hold
 								["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
+								["qg"] = 96444,	-- Violet Hold Guard
 							}),
-							q(38946, {	-- Consult the Locals
-								["qg"] = 93542,	-- Tanithria
+							q(38946,  {	-- Consult the Locals
 								["sourceQuests"] = { 38945 },	-- This Should Be Simple... Right?
+								["qg"] = 93542,	-- Tanithria
 							}),
-							q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
-								["groups"] = {
+							q(38961,  {	-- Eye of Azshara: The Depraved Nightfallen
+								["sourceQuests"] = { 38963 },	-- The Final Lesson?
+								["qg"] = 93967,	-- Lyndras
+								["g"] = {
 									recipe(185923),	-- Silkweave Gloves (Rank 1)
 								},
-								["qg"] = 93967,	-- Lyndras
-								["sourceQuests"] = { 38963 },	-- The Final Lesson?
 							}),
-							q(38948, {	-- Hard Times
+							q(38948,  {	-- Hard Times
 								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38952, {	-- Meticulous Precision
-								["qg"] = 93542,	-- Tanithria
+							q(38952,  {	-- Meticulous Precision
 								["sourceQuests"] = { 38951 },	-- A Needle Need
+								["qg"] = 93542,	-- Tanithria
 							}),
-							q(38947, {	-- Runic Catgut
+							q(38947,  {	-- Runic Catgut
 								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38966, {	-- Secret Silkweaving Methods
-								["groups"] = {
+							q(38966,  {	-- Secret Silkweaving Methods
+								["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
+								["qg"] = 93542,	-- Tanithria
+								["g"] = {
 									recipe(185937),	-- Silkweave Pantaloons (Rank 2)
 									recipe(185938),	-- Silkweave Hood (Rank 2)
 									recipe(185939),	-- Silkweave Gloves (Rank 2)
 									recipe(185940),	-- Silkweave Slippers (Rank 2)
 								},
-								["qg"] = 93542,	-- Tanithria
-								["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
 							}),
-							q(38955, {	-- Sew Far, Sew Good
-								["groups"] = {
+							q(38955,  {	-- Sew Far, Sew Good
+								["sourceQuests"] = { 38954 },	-- Where's Lyndras?
+								["qg"] = 93967,	-- Lyndras
+								["g"] = {
 									recipe(186388),	-- Silkweave Satchel
 								},
-								["qg"] = 93967,	-- Lyndras
-								["sourceQuests"] = { 38954 },	-- Where's Lyndras?
 							}),
-							q(38944, {	-- Sew It Begins
-								["groups"] = {
+							q(38944,  {	-- Sew It Begins
+								["qg"] = 93542,	-- Tanithria
+								["g"] = {
 									recipe(195126),	-- Tailoring (lvl 800)
 								},
-								["qg"] = 93542,	-- Tanithria
 							}),
-							q(38949, {	-- So You Think You Can Sew
-								["qg"] = 93967,	-- Lyndras
+							q(38949,  {	-- So You Think You Can Sew
 								["sourceQuests"] = {
 									38947,	-- Runic Catgut
 									38948,	-- Hard Times
 								},
+								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38957, {	-- Taking Inspiration
-								["groups"] = {
+							q(38957,  {	-- Taking Inspiration
+								["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
+								["qg"] = 93967,	-- Lyndras
+								["g"] = {
 									recipe(185921),	-- Silkweave Pantaloons (Rank 1)
 								},
-								["qg"] = 93967,	-- Lyndras
-								["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
 							}),
-							q(38963, {	-- The Final Lesson?
-								["groups"] = {
-									recipe(185922),	-- Silkweave Hood (Rank 1)
-								},
-								["qg"] = 93967,	-- Lyndras
+							q(38963,  {	-- The Final Lesson?
 								["sourceQuests"] = {
 									38959,	-- Left Behind
 									38960,	-- Lining Them Up
 								},
+								["qg"] = 93967,	-- Lyndras
+								["g"] = {
+									recipe(185922),	-- Silkweave Hood (Rank 1)
+								},
 							}),
-							q(38967, {	-- The Nightborne Connection
-								["qg"] = 93542,	-- Tanithria
+							q(38967,  {	-- The Nightborne Connection
 								["sourceQuests"] = { 38962 },	-- The Path to Suramar City
-							}),
-							q(38962, {	-- The Path to Suramar City
 								["qg"] = 93542,	-- Tanithria
-								["sourceQuests"] = { 38966 },	-- Secret Silkweaving Methods
 							}),
-							q(38958, {	-- The Right Color
-								["groups"] = {
+							q(38962,  {	-- The Path to Suramar City
+								["sourceQuests"] = { 38966 },	-- Secret Silkweaving Methods
+								["qg"] = 93542,	-- Tanithria
+							}),
+							q(38958,  {	-- The Right Color
+								["qg"] = 93525,	-- Ainderu Summerleaf
+								["g"] = {
 									recipe(185924),	-- Silkweave Slippers (Rank 1)
 								},
-								["qg"] = 93525,	-- Ainderu Summerleaf
 							}),
-							q(38950, {	-- The Wayward Tailor
-								["qg"] = 93967,	-- Lyndras
+							q(38950,  {	-- The Wayward Tailor
 								["sourceQuests"] = { 38949 },	-- So You Think You Can Sew
+								["qg"] = 93967,	-- Lyndras
 							}),
-							q(38945, {	-- This Should Be Simple... Right?
-								["groups"] = {
+							q(38945,  {	-- This Should Be Simple... Right?
+								["qg"] = 93542,	-- Tanithria
+								["g"] = {
 									recipe(185920),	-- Silkweave Epaulets
 									recipe(185919),	-- Silkweave Cinch
 								},
+							}),
+							q(38956,  {	-- Where's Lyndras Again?
 								["qg"] = 93542,	-- Tanithria
 							}),
-							q(38956, {	-- Where's Lyndras Again?
-								["qg"] = 93542,	-- Tanithria
-							}),
-							q(38964, {	-- Where's Lyndras Now?
-								["qg"] = 93542,	-- Tanithria
+							q(38964,  {	-- Where's Lyndras Now?
 								["sourceQuests"] = { 38961 },	-- Eye of Azshara: The Depraved Nightfallen
+								["qg"] = 93542,	-- Tanithria
 							}),
-							q(39605, {	-- Where's Lyndras: Downward Spiral
+							q(39605,  {	-- Where's Lyndras: Downward Spiral
 								["sourceQuests"] = {
 									38964,	-- Where's Lyndras Now?
 									39602,	-- Where's Lyndras: Sewer Sleuthing
 								},
 							}),
-							o(243899, q(39667, {	-- Where's Lyndras: Leyflame Larceny
-								["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
-							})),
-							qh(39602, {	-- Where's Lyndras: Sewer Sleuthing
-								["qg"] = 93542,	-- Tanithria
-								["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
+							o(243899, {	-- Broken Ley Flame Burner
+								q(39667, {	-- Where's Lyndras: Leyflame Larceny
+									["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
+								}),
 							}),
-							q(38954, {	-- Where's Lyndras?
+							qh(39602, {	-- Where's Lyndras: Sewer Sleuthing
+								["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?
+								["qg"] = 93542,	-- Tanithria
+							}),
+							q(38954,  {	-- Where's Lyndras?
 								["qg"] = 93542,	-- Tanithria
 							}),
 							n(-34, {	-- World Quests
-								{	-- Work Order: Silkweave Hood
-									["questID"] = 41650,
-									["groups"] = {
+								q(41650, {
+									["requireSkill"] = 197,	-- Tailoring
+									["isWQ"] = 110,
+									["g"] = {
 										i(138013),	-- Pattern: Silkweave Hood (Rank 3)
 									},
-									["isWQ"] = 110,
-									["requireSkill"] = 197,	-- Tailoring
-								},
+								}),
 							}),
 						},
-						["requireSkill"] = 197,
 					}),
 				}),
 				n(-17,  {	-- Quests
 					i(122293, {	-- Trans-Dimensional Bird Whistle
 						["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
-						["groups"] = {
+						["collectible"] = false,
+						["g"] = {
 							{
 								["itemID"] = 139632,	-- A Tiny Pair of Goggles
 								["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
@@ -1588,17 +1528,16 @@ _.Zones =
 								},
 							},
 						},
-						["collectible"] = false,
 					}),
 					n(-176, { 	-- Weekly World Events
 						["qg"] = 111246,	-- Archmage Timear
 						["u"] = 40,
-						["groups"] = {
+						["g"] = {
 							{
 								["questID"] = 44164,	-- A Burning Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
 							},
@@ -1606,7 +1545,7 @@ _.Zones =
 								["questID"] = 44166,	-- A Frozen Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
 							},
@@ -1614,7 +1553,7 @@ _.Zones =
 								["questID"] = 44167,	-- A Shattered Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
 							},
@@ -1622,7 +1561,7 @@ _.Zones =
 								["questID"] = 45799,	-- A Shrouded Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
 							},
@@ -1630,7 +1569,7 @@ _.Zones =
 								["questID"] = 45799,	-- A Shrouded Path Through Time
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153504),	-- Cache of Antoran Treasures [Normal]
 								},
 							},
@@ -1638,7 +1577,7 @@ _.Zones =
 								["questID"] = 44171,	-- Emissary of War
 								["qg"] = 111246,	-- Quest Giver: Archmage Timear
 								["isWeekly"] = true,	-- This is a Weekly Quest
-								["groups"] = {
+								["g"] = {
 									i(153501),	-- Cache of Antoran Treasures [Heroic]
 								},
 							},
@@ -1675,14 +1614,14 @@ _.Zones =
 							["qg"] = 32725,	-- Warmage Silva
 							["isWQ"] = 110,
 							["requireSkill"] = 202,	-- Engineering
-							["groups"] = {
+							["g"] = {
 								i(137724),	-- Schematic: Failure Detection Pylon (Rank 3)
 							},
 						},
 						{	-- Work Order: Warhide Gloves
 							["questID"] = 41644,
 							["qg"] = 32725,	-- Warmage Silva
-							["groups"] = {
+							["g"] = {
 								i(137879),	-- Recipe: Warhide Gloves (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1691,7 +1630,7 @@ _.Zones =
 						{	-- Work Order: Word of Intellect
 							["questID"] = 41674,
 							["qg"] = 32725,	-- Warmage Silva
-							["groups"] = {
+							["g"] = {
 								i(128606),	-- Formula: Enchant CLoak - Word of Intellect (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1699,253 +1638,252 @@ _.Zones =
 						},
 					}),
 					o(247797, {	-- Lost Mail
-						["groups"] = {
+						["g"] = {
 							i(134859, {	-- Lost Mail
 								q(41368),	-- Lost Mail
 							}),
 						},
 					}),
-					qart(q(41541, {	-- A Beastly Expedition
-						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 different versions)
+					q(41541,  {	-- A Beastly Expedition 
 						["classes"] = { 3 },
-					})),
-					q(44720, {	-- A Call to Action
+						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 different versions)
+					}),
+					q(44720,  {	-- A Call to Action
 						["qgs"] = {
 							114946,	-- Muninn
 							119531,	-- Muninn
 						},
-					}),
-					qart(qh( 41052, {	-- A Desperate Plea
-						["qg"] = 93775,	-- Eitrigg
+					}), 
+					qh(41052, {	-- A Desperate Plea
 						["classes"] = { 1 },
-					})),
-					q(44009, {	-- A Falling Star
-						["qg"] = 90417,	-- Archmage Khadgar
-						["classes"] = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
+						["qg"] = 93775,	-- Eitrigg
 					}),
-					q(44257, {	-- A Falling Star
+					q(44009,  {	-- A Falling Star
+						["classes"] = { 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 },	-- not Paladins
 						["qg"] = 90417,	-- Archmage Khadgar
-						["classes"] = { 2 },
+					}),							
+					q(44257,  {	-- A Falling Star
+						["classes"] = { 2 },	-- Paladin
+						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(46083, {	-- A Few Things First
-						["qg"] = 92183,	-- Alard Schmied
-						["classes"] = { 2 },
+					q(46083,  {	-- A Few Things First
 						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
-					}),
-					q(45645, {	-- A Fool's Errand
-						["qg"] = 117438,	-- Doloria
 						["classes"] = { 2 },
+						["qg"] = 92183,	-- Alard Schmied
 					}),
-					qart(qa(45865, {	-- A Gift From the Six
-						["qg"] = 90418,	-- Archmage Modera
+					q(45645,  {	-- A Fool's Errand
+						["classes"] = { 2 },
+						["qg"] = 117438,	-- Doloria
+					}),
+					qa(45865, {	-- A Gift From the Six
 						["classes"] = { 1, 3, 4, 6, 12 },
-					})),
-					qart(qa(45864, {	-- A Gift From the Six
 						["qg"] = 90418,	-- Archmage Modera
+					}),										
+					qa(45864, {	-- A Gift From the Six
 						["classes"] = { 2, 5, 7, 10, 11 },
-					})),
-					qart(qa(45862, {	-- A Gift From the Six
 						["qg"] = 90418,	-- Archmage Modera
+					}),										
+					qa(45862, {	-- A Gift From the Six
 						["classes"] = { 2, 4, 7, 8, 9 },
-					})),
-					qart(qa(45842, {	-- A Gift From the Six
 						["qg"] = 90418,	-- Archmage Modera
---						["classes"] = {},	-- need info
-					})),
-					qart(qa(45866, {	-- A Gift From the Six
+					}),										
+					qa(45842, {	-- A Gift From the Six
+					--	["classes"] = {},	-- need info
 						["qg"] = 90418,	-- Archmage Modera
+					}),										
+					qa(45866, {	-- A Gift From the Six
 						["classes"] = { 3, 5, 8, 9, 11 },
-					})),
-					qart(qa(45861, {	-- A Gift From the Six
 						["qg"] = 90418,	-- Archmage Modera
+					}),										
+					qa(45861, {	-- A Gift From the Six
 						["classes"] = { 1, 4, 6, 7, 8, 11 },
-					})),
-					qart(qa(45863, {	-- A Gift From the Six
 						["qg"] = 90418,	-- Archmage Modera
-						["classes"] = { 1, 4, 6, 7, 8, 11,},
-					})),
-					qart(q(41632, {	-- A Gift of Time
-						["qg"] = 105081,	-- Archmage Kalec
+					}),										
+					qa(45863, {	-- A Gift From the Six
+						["classes"] = { 1, 4, 6, 7, 8, 11,}, 
+						["qg"] = 90418,	-- Archmage Modera
+					}),										
+					q(41632,  {	-- A Gift of Time
 						["classes"] = { 5 },
-					})),
-					q(44099, {	-- A Mutual Friend
-						["qg"] = 112693,	-- Black Harvest Acolyte
-						["classes"] = { 9 },
-					}),
-					q(42006, {	-- A New Threat
 						["qg"] = 105081,	-- Archmage Kalec
-						["classes"] = { 8 },
-						["sourceQuests"] = {
+					}),	
+					q(44099,  {	-- A Mutual Friend
+						["classes"] = { 9 },
+						["qg"] = 112693,	-- Black Harvest Acolyte
+					}),
+					q(42006,  {	-- A New Threat
+						["sourceQuests"] = { 
 							42001,	-- Aluneth, Greatstaff of the Magna
 							42003,	-- Kept Secret, Kept Safe
 						},
-					}),
-					q(41626, {	-- A New Threat
+						["classes"] = { 8 },
 						["qg"] = 105081,	-- Archmage Kalec
-						["classes"] = { 5 },
+					}),
+					q(41626,  {	-- A New Threat
 						["sourceQuests"] = { 41625 },	-- The Light's Wrath
+						["classes"] = { 5 },
+						["qg"] = 105081,	-- Archmage Kalec
 					}),
-					q(40715, {	-- A Pact of Necessity
-						["qg"] = 101441,	-- Duke Lankral
-						["classes"] = { 6 },	-- Death Knight
+					q(40715,  {	-- A Pact of Necessity
 						["sourceQuests"] = { 40714 },	-- The Call to War
-					}),
-					q(44178, {	-- A Particularly Potent Potion
-						["qg"] = 102594,	-- Marin Noggenfogger
-						["classes"] = { 4 },
-					}),
-					qart(q(40930, {	-- Apocalypse
 						["classes"] = { 6 },	-- Death Knight
-					})),
-					q(46177, {	-- A Portal Away
+						["qg"] = 101441,	-- Duke Lankral
+					}),
+					q(44178,  {	-- A Particularly Potent Potion
+						["classes"] = { 4 },
+						["qg"] = 102594,	-- Marin Noggenfogger
+					}),
+					q(40930,  {	-- Apocalypse
+						["classes"] = { 6 },	-- Death Knight
+					}),
+					q(46177,  {	-- A Portal Away
 						["qg"] = 116048,
 					}),
 					qh(39746, {	-- A Ring Unbroken
-						["qg"] = 91731,	-- Thrall
 						["classes"] = { 7 },
+						["qg"] = 91731,	-- Thrall
 					}),
 					qa(38035, {	-- A Royal Summons
-						["qg"] = 96644,	-- Sky Admiral Rogers
 						["sourceQuests"] = { 39735, 44700 },	-- Stormheim (2 versions)
+						["qg"] = 96644,	-- Sky Admiral Rogers
 					}),
-					q(43441, {	-- A Second Weapon
+					q(43441,  {	-- A Second Weapon
+						["classes"] = { 8 },
 						["qgs"] = {
-							102700,	-- Meryl Felstorm
+							102700,	-- Meryl Felstorm 
 							109222,	-- Meryl Felstorm (alliance)
 						},
-						["classes"] = { 8 },
 					}),
-					q(44252, {	-- A Sheath For Every Blade
+					q(44252,  {	-- A Sheath For Every Blade
+						["classes"] = { 4 },
 						["qg"] = 105986,	-- Kelsey Steelspark
-						["classes"] = { 4 },
 					}),
-					q(42866, {	-- A Sign From The Sky
-						["qg"] = 90259,	-- Lord Maxwell Tyrosus
+					q(42866,  {	-- A Sign From The Sky
 						["classes"] = { 2 },
+						["qg"] = 90259,	-- Lord Maxwell Tyrosus
 					}),
-					q(37448, {	-- A Simple Plan
-						["qg"] = 110953,	-- Master Mathias Shaw
+					q(37448,  {	-- A Simple Plan
 						["classes"] = { 4 },
+						["qg"] = 110953,	-- Master Mathias Shaw
 					}),
-					q(40643, {	-- A Summons From Moonglade
-						["qg"] = 101061,  -- Archdruid Hamuul Runetotem
+					q(40643,  {	-- A Summons From Moonglade
 						["classes"] = { 11 },
+						["qg"] = 101061,  -- Archdruid Hamuul Runetotem
 					}),
 					i(140774, {	-- Vault Ticket
-						["groups"] = {
+						["isWeekly"] = true,
+						["g"] = {
 							q(44159, {	-- A Ticket for Marin
 								["classes"] = { 4 },
 							}),
 						},
-						["isWeekly"] = true,
 					}),
-					q(40840, {	-- A Worthy Blade
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					q(40840,  {	-- A Worthy Blade
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
 					qa(47041, {	-- Affliction: The Twisted Twin
-						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 						["classes"] = { 9 },
+						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 					}),
-					q(44406, {	-- Aggra's Guidance
-						["qgs"] = { 96528, 106519 },	-- Farseer Nobundo (2 versions)
+					q(44406,  {	-- Aggra's Guidance
 						["classes"] = { 7 },
+						["qgs"] = { 96528, 106519 },	-- Farseer Nobundo (2 versions)
 					}),
-					q(42001, {	-- Aluneth, Greatstaff of the Magna
-						["qg"] = 102700,	-- Meryl Felstorm
+					q(42001,  {	-- Aluneth, Greatstaff of the Magna
 						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
 					qa(42814, {	-- An Important Mission
-						["qg"] = 108961,	-- Sergeant Dalton
 						["classes"] = { 1 },
+						["qg"] = 108961,	-- Sergeant Dalton
 					}),
 					qa(46065, {	-- An Impossible Foe
+						["classes"] = { 1, 4, 6, 7, 8, 11 },
 						["qg"] = 117871,	-- War Councilor Victoria
-						["classes"] = { 1, 4, 6, 7, 8, 11, },
 						["u"] = 40,
 					}),
-					q(40267, {	-- An Unexpected Message
-						["qg"] = 102700,	-- Meryl Felstorm
+					q(40267,  {	-- An Unexpected Message
 						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					q(40157, {	-- An Unseemly Task
+					q(40157,  {	-- An Unseemly Task
 						["qg"] = 93541,	-- Kondal Huntsworn
 					}),
-					q(38710, {	-- An Urgent Gathering
-						["qg"] = 92909,	-- Lord Maxwell Tyrosus
+					q(38710,  {	-- An Urgent Gathering
 						["classes"] = { 2 },
+						["qg"] = 92909,	-- Lord Maxwell Tyrosus
 					}),
-					q(45437, {	-- An Urgent Situation
+					q(45437,  {	-- An Urgent Situation
 						["classes"] = { 8 },
 					}),
-					q(45991, {	-- An Urgent Warning
+					q(45991,  {	-- An Urgent Warning
+						["classes"] = { 4 },
 						["qg"] = 118424,	-- Injured Bandit
-						["classes"] = { 4 },
 					}),
-					q(44034, {	-- Another Worthy Blade
+					q(44034,  {	-- Another Worthy Blade
+						["classes"] = { 4 },
 						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
 					}),
-					q(45482, {	-- Arcane: Fate of the Tideskorn
-						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
+					q(45482,  {	-- Arcane: Fate of the Tideskorn
 						["classes"] = { 8 },
+						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
 					}),
 					qa(42423, {	-- Archmage Vargoth's Retreat
-						["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 						["sourceQuests"] = { 42416 },	-- The Council is in Session
+						["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 					}),
-					q(46730, {	-- Armies of Legionfall
+					q(46730,  {	-- Armies of Legionfall
 						["qg"] = 120215,	-- Archmage Khadgar
 					}),
-					q(46000, {	-- Arming Dalaran
-						["qg"] = 119001,	-- Sin'dorei Archmage
+					q(46000,  {	-- Arming Dalaran
 						["sourceQuests"] = { 45586 },	-- Shield Amplification
 						["classes"] = { 8 },
+						["qg"] = 119001,	-- Sin'dorei Archmage
 					}),
-					q(44914, {	-- Arms: The Thieving Apprentice
-						["qgs"] = { 105081, 115467 },	-- Archmage Kalec (2 versions)
-						["classes"] = { 1 },
+					q(44914,  {	-- Arms: The Thieving Apprentice
 						["sourceQuests"] = { 47032 },	-- Legion Threat: Azshara
+						["classes"] = { 1 },
+						["qgs"] = { 105081, 115467 },	-- Archmage Kalec (2 versions)
 					}),
-					q(41804, {	-- Ask and You Shall Receive
+					q(41804,  {	-- Ask and You Shall Receive
+						["classes"] = { 12 },
 						["qg"] = 90417,	-- Archmage Khadgar
-						["classes"] = { 12 },
 					}),
-					q(40247, {	-- Asking a Favor
+					q(40247,  {	-- Asking a Favor
+						["classes"] = { 12 },
 						["qgs"] = { 99247, 108572 },	-- Kayn Sunfury (2 versions)
-						["classes"] = { 12 },
 					}),
-					q(41803, {	-- Asking a Favor
+					q(41803,  {	-- Asking a Favor
+						["classes"] = { 12 },
 						["qgs"] = { 99254, 108571 },	-- Altruis the Sufferer
-						["classes"] = { 12 },
 					}),
-					q(47051, {	-- Assassination: Fate of the Tideskorn
-						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
+					q(47051,  {	-- Assassination: Fate of the Tideskorn
 						["classes"] = { 4 },
+						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
 					}),
-					q(46734, {	-- Assault on Broken Shore
-						["qg"] = 120215,	-- Archmage Khadgar
+					q(46734,  {	-- Assault on Broken Shore
 						["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
+						["qg"] = 120215,	-- Archmage Khadgar
 					}),
-					q(44400, {	-- Assault on Violet Hold: Purple Pain
-						["groups"] = {
+					q(44400,  {	-- Assault on Violet Hold: Purple Pain
+						["qg"] = 113813,	-- Lieutenant Sinclari
+						["g"] = {
 							i(141359),	-- Violet Guardian's Corona
 							i(141358),	-- Violet Guardian's Cowl
 							i(141357),	-- Violet Guardian's Helm
 							i(141356),	-- Violet Guardian's Faceguard
 						},
-						["qg"] = 113813,	-- Lieutenant Sinclari
 					}),
-					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
-						["qg"] = 110571,	-- Delas Moonfang
-						["classes"] = { 2 },
+					q(43487,  {	-- Assault on Violet Hold: The Fel Lexicon
 						["sourceQuests"] = {
 							43486,	-- Cracking the Codex
 							49812,	-- Delas in Dalaran
 						},
+						["classes"] = { 2 },
+						["qg"] = 110571,	-- Delas Moonfang
 					}),
 					qa(44782, {	-- Away From Prying Eyes
-						["qg"] = 90417,	-- Archmage Khadgar
 						["sourceQuests"] = {
 							44781,	-- The Council's Call
 							45050,	-- Infiltration Plans
@@ -1957,66 +1895,68 @@ _.Zones =
 							45061,	-- Scrolls of the Faldrottin
 							47000,	-- The Council's Call
 						},
+						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(44766, {	-- Backup Plan
-						["qg"] = 118242,	-- Aethas Sunreaver
-						["classes"] = { 8 },
+					q(44766,  {	-- Backup Plan
 						["sourceQuests"] = { 45437 },	-- An Urgent Situation
+						["classes"] = { 8 },
+						["qg"] = 118242,	-- Aethas Sunreaver
 					}),
 					qa(47037, {	-- Balance: The Twisted Twin
-						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 						["classes"] = { 11 },
+						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 					}),
 					qa(46327, {	-- Bargaining with Shadows
 						["qg"] = 90418,	-- Archmage Modera
 					}),
 					qa(47018, {	-- Beast Mastery: Rumblings Near Feltotem
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 3 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(45415, {	-- Between Worlds
-						["qg"] = 117042,	-- Prophet Velen
+					q(45415,  {	-- Between Worlds
 						["sourceQuests"] = { 45414 },	-- Confirming Suspicions
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["qg"] = 117042,	-- Prophet Velen
 						["u"] = 40,
 					}),
-					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
-						["qg"] = 110164,	-- Valeera Sanguinar
-						["classes"] = { 4 },
+					q(42678,  {	-- Black Rook Hold: Into Black Rook Hold
 						["sourceQuests"] = {
 							43251,	-- In Search of the Eye
 							43252,	-- Eternal Unrest
 						},
-					}),
-					q(40710, {	-- Blade in Twilight
-						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
-						["classes"] = { 5 },
-					}),
-					q(43468, {	-- Blood for the Wolfe
-						["qg"] = 98102,	-- Valeera Sanguinar
 						["classes"] = { 4 },
+						["qg"] = 110164,	-- Valeera Sanguinar
 					}),
-					q(43488, {	-- Blood of Our Enemy
-						["qg"] = 110571,	-- Delas Moonfang
+					q(40710,  {	-- Blade in Twilight
+						["classes"] = { 5 },
+						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+					}),
+					q(43468,  {	-- Blood for the Wolfe
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
+					}),
+					q(43488,  {	-- Blood of Our Enemy
 						["classes"] = { 2 },
+						["qg"] = 110571,	-- Delas Moonfang
 					}),
-					q(44760, {	-- Blood On Your Hands
+					q(44760,  {	-- Blood On Your Hands
 						["qg"] = 115264,	-- Illnea Bloodthorn
 					}),
 					qa(47025, {	-- Blood: Aid of the Illidari
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
-						["classes"] = { 6 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 6 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["u"] = 40,
 					}),
 					qa(47024, {	-- Brewmaster: Aid of the Illidari
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
-						["classes"] = { 10 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 10 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["u"] = 40,
 					}),
-					q(44004, {	-- Bringer of the Light
-						["groups"] = {
+					q(44004,  {	-- Bringer of the Light
+						["qg"] = 112130,	-- Archmage Khadgar
+						["g"] = {
 							i(140614),	-- Amice of Steadfast Allies
 							i(140610),	-- Wristwraps of the Grieving Prophet
 							i(140615),	-- Felstalking Shoulders
@@ -2026,297 +1966,315 @@ _.Zones =
 							i(140617),	-- Rakeesh's Pauldron
 							i(140611),	-- Fel Commander's Vambraces
 						},
-						["qg"] = 112130,	-- Archmage Khadgar
 					}),
-					q(41121, {	-- By Any Means
+					q(41121,  {	-- By Any Means
+						["classes"] = { 12 },
 						["qg"] = 103156,	-- Altruis the Sufferer
-						["classes"] = { 12 },
 					}),
-					q(39051, {	-- By Any Means
+					q(39051,  {	-- By Any Means
+						["classes"] = { 12 },
 						["qg"] = 94902,	-- Kayn Sunfury
-						["classes"] = { 12 },
 					}),
-					q(39047, {	-- Call of the Illidari
+					q(39047,  {	-- Call of the Illidari
+						["classes"] = { 12 },
 						["qg"] = 99343,	-- Kor'vas Bloodthorn
-						["classes"] = { 12 },
 					}),
-					q(39261, {	-- Call of the Illidari
+					q(39261,  {	-- Call of the Illidari
+						["classes"] = { 12 },
 						["qg"] = 99343,	-- Kor'vas Bloodthorn
-						["classes"] = { 12 },
 					}),
-					q(40392, {	-- Call of the Marksman
-						["qgs"] = { 103415, 103741 },	-- Courier Larkspur (2 versions)
-						["classes"] = { 3 },
+					q(40392,  {	-- Call of the Marksman
 						["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
+						["classes"] = { 3 },
+						["qgs"] = { 103415, 103741 },	-- Courier Larkspur (2 versions)
 					}),
-					q(46724, {	-- Champion: The Great Akazamzarak
-						["groups"] = {
-							follower(995),	-- The Great Akazamzarak
-						},
-						["qg"] = 103092,	-- The Great Akazamzarak
+					q(46724,  {	-- Champion: The Great Akazamzarak
 						["sourceQuests"] = { 46723 },	-- Down the Rabbit Hole
 						["classes"] = { 8 },
+						["qg"] = 103092,	-- The Great Akazamzarak
+						["g"] = {
+							follower(995),	-- The Great Akazamzarak
+						},
 					}),
-					q(48021, {	-- Chromie
+					q(48021,  {	-- Chromie
 						["qgs"] = {
 							90417,	-- Archmage Khadgar
 							122926,	-- Image of Chromie
-						}
+						},
 					}),
 					qh(42539, {	-- Cloak and Dagger
-						["qg"] = 250671,	-- Notes on the Veiled Hand
-						["classes"] = { 4 },
 						["sourceQuests"] = { 42503 },	-- Codebreaker
+						["classes"] = { 4 },
+						["qg"] = 250671,	-- Notes on the Veiled Hand
 					}),
 					qh(42503, {	-- Codebreaker
-						["qg"] = 94138,	-- Princess Tess Greymane
-						["classes"] = { 4 },
-						["sourceQuests"] = {
+						["sourceQuests"] = { 
 							42501,	-- Finishing the Job
 							42502,	-- No Sanctuary
 						},
-					}),
-					q(47605, {	-- Coins of Air
-						["qg"] = 123087,	-- Al'Abas
 						["classes"] = { 4 },
+						["qg"] = 94138,	-- Princess Tess Greymane
 					}),
-					q(45414, {	-- Confirming Suspicions
-						["qg"] = 116880,	-- Kor'vas Bloodthorn
+					q(47605,  {	-- Coins of Air
+						["classes"] = { 4 },
+						["qg"] = 123087,	-- Al'Abas
+					}),
+					q(45414,  {	-- Confirming Suspicions
 						["sourceQuests"] = { 45413 },	-- Gathering Information
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["qg"] = 116880,	-- Kor'vas Bloodthorn
 						["u"] = 40,
 					}),
-					q(43841, {	-- Convincin' Old Yancey
-						["qg"] = 94159,	-- Fleet Admiral Tethys
+					q(43841,  {	-- Convincin' Old Yancey
 						["classes"] = { 4 },
+						["qg"] = 94159,	-- Fleet Admiral Tethys
 					}),
-					-- q(44275)	-- Court of Stars -- mission board
-					q(43486, {	-- Cracking the Codex
-						["qg"] = 90251,	-- Aponi Brightmane
+				--	q(44275)	-- Court of Stars -- mission board
+					q(43486,  {	-- Cracking the Codex
 						["classes"] = { 2 },
+						["qg"] = 90251,	-- Aponi Brightmane
 					}),
-					q(43394, {	-- Crossing Legion Lines
-						["qg"] = 111044,	-- Lord Maxwell Tyrosus
+					q(43394,  {	-- Crossing Legion Lines
 						["classes"] = { 5 },
+						["qg"] = 111044,	-- Lord Maxwell Tyrosus
 					}),
-					q(45239, {	-- Cubic Coalescing
-						["groups"] = {
+					q(45239,  {	-- Cubic Coalescing
+						["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
+						["qg"] = 93538,	-- Dariness the Learned
+						["g"] = {
 							i(142536),	-- Memory Cube
 						},
-						["qg"] = 93538,	-- Dariness the Learned
-						["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
 					}),
-					--q(45159)	-- Cubic Conundrum -granted by i(142559) in nighthold
-					q(45160, {	-- Cubic Currents
-						["qg"] = 93538,	-- Dariness the Learned
+				--	q(45159)	-- Cubic Conundrum -granted by i(142559) in nighthold
+					q(45160,  {	-- Cubic Currents
 						["sourceQuests"] = { 45159 },	-- Cubic Conundrum
+						["qg"] = 93538,	-- Dariness the Learned
 					}),
-					q(45125, {	-- Dabbling in the Demonic
-						["qg"] = 116714,	-- Ritssyn Flamescowl
+					q(45125,  {	-- Dabbling in the Demonic
 						["classes"] = { 1, 4, 6, 7, 11 },
+						["qg"] = 116714,	-- Ritssyn Flamescowl
 					}),
-					q(42477, {	-- Daio the Decrepit
-						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm (2 versions)
+					q(42477,  {	-- Daio the Decrepit
 						["classes"] = { 8 },
+						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm (2 versions)
 					}),
 					qa(45843, {	-- Dark Omens
 						["qg"] = 116880,	-- Kor'vas Bloodthorn
 					}),
-					q(42125, {	-- Dark Whispers
-						["qg"] = 106610,	-- Calydus
-						["classes"] = { 9 },
+					q(42125,  {	-- Dark Whispers
 						["sourceQuests"] = {
 							40623,	-- The Dark Riders
 							41155,	-- The Dark Riders
 							42168,	-- Looking into the Darkness
 						},
+						["classes"] = { 9 },
+						["qg"] = 106610,	-- Calydus
 					}),
-					-- q(44272)	-- Darkheart Thicket -- mission board
-					-- q(44273)	-- Darkheart Thicket -- mission board
-					q(46293, {	-- Deadmines, Part Three?
+				--	q(44272)	-- Darkheart Thicket -- mission board
+				--	q(44273)	-- Darkheart Thicket -- mission board
+					q(46293,  {	-- Deadmines, Part Three?
 						["qg"] = 96479,	-- Breanni
 					}),
-					q(42680, {	-- Deciphering the Letter
-						["groups"] = {
+					q(42680,  {	-- Deciphering the Letter
+						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
+						["g"] = { 
 							i(139746),	-- Wristbands of the Uncrowned
 						},
-						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
-						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 					}),
-					q(40996, {	-- Delegation
+					q(40996,  {	-- Delegation
+						["classes"] = { 4 },
 						["qg"] = 102594,	-- Marin Noggenfogger
-						["classes"] = { 4 },
 					}),
-					--q(47079)	-- Delivering Lost Knowledge -- removed?
-					q(43384, {	-- Demonic Runes
-						["qg"] = 110571,	-- Delas Moonfang
+				--	q(47079)	-- Delivering Lost Knowledge -- removed?
+					q(43384,  {	-- Demonic Runes
 						["classes"] = { 5 },
+						["qg"] = 110571,	-- Delas Moonfang
 					}),
-					q(47049, {	-- Demonology: Fate of the Tideskorn
+					q(47049,  {	-- Demonology: Fate of the Tideskorn
+						["classes"] = { 9 },
 						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
-						["classes"] = { 9 },
 					}),
-					--q(45173)	-- Desperate Times -- mission board
+				--	q(45173)	-- Desperate Times -- mission board
 					qa(45560, {	-- Destruction: Rumblings Near Feltotem
-						["qg"] = 90418,	-- Archmage Modera
-						["classes"] = { 9 },
 						["sourceQuests"] = {
 							47031,	-- Legion Threat: Highmountain
 							47035,	-- Legion Threat: The Missing Mage
 						},
+						["classes"] = { 9 },
+						["qg"] = 90418,	-- Archmage Modera
 					}),
 					qa(47020, {	-- Discipline: Rumblings Near Feltotem
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
-						["classes"] = { 5 },
 						["sourceQuests"] = {
 							47031,	-- Legion Threat: Highmountain
 							47035,	-- Legion Threat: The Missing Mage
 						},
+						["classes"] = { 5 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
-					q(46723, {	-- Down the Rabbit Hole
-						["groups"] = {
+					q(46723,  {	-- Down the Rabbit Hole
+						["classes"] = { 8 },
+						["qg"] = 103092,	-- The Great Akazamzarak
+						["g"] = {
 							i(147838),	-- Akazamzarak's Spare Hat
 						},
-						["qg"] = 103092,	-- The Great Akazamzarak
-						["classes"] = { 8 },
 					}),
-					q(41220, {	-- Down to Azsuna
-						["qg"] = 41220,	-- Archmage Khadgar
-						["sourceQuests"] = {
-							39718, 	-- Paradise Lost [Demon Hunter]
-						},
+					q(41220,  {	-- Down to Azsuna
+						["sourceQuests"] = { 39718 },	-- Paradise Lost [Demon Hunter]
 						["isBreadcrumb"] = true,
+						["qg"] = 41220,	-- Archmage Khadgar
 					}),
-					q(46103, {	-- Dread Infiltrators
-						["qg"] = 119259,	-- Apothecary Keever
+					q(46103,  {	-- Dread Infiltrators
 						["classes"] = { 4 },
+						["qg"] = 119259,	-- Apothecary Keever
 					}),
-					q(42911, {	-- Drowned Mana
+					q(42911,  {	-- Drowned Mana
 						["qg"] = 108825,	-- Conjurer Margoss
 					}),
 					qa(45123, {	-- Elemental: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 7 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(44412, {	-- Enemies Everywhere
-						["groups"] = {
+					q(44412,  {	-- Enemies Everywhere
+						["qg"] = 90417,	-- Archmage Khadgar
+						["g"] = {
 							i(141348),	-- Wondrous Wisdomball
 						},
-						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(47050, {	-- Enhancement: Fate of the Tideskorn
+					q(47050,  {	-- Enhancement: Fate of the Tideskorn
+						["classes"] = { 7 },
 						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
-						["classes"] = { 7 },
 					}),
-					q(41807, {	-- Establishing a Connection
+					q(41807,  {	-- Establishing a Connection
+						["classes"] = { 12 },
 						["qg"] = 99262,	-- Jace Darkweaver
-						["classes"] = { 12 },
 					}),
-					q(42869, {	-- Eternal Vigil
+					q(42869,  {	-- Eternal Vigil
+						["classes"] = { 12 },
 						["qg"] = 102799,	-- Kor'vas Bloodthorn
-						["classes"] = { 12 },
 					}),
-					q(43945, {	-- Expanding Your Horizons
-						["qg"] = 99531,	-- Aggra
-						["classes"] = { 7 },
+					q(43945,  {	-- Expanding Your Horizons
 						["sourceQuests"] = { 44406 },	-- Aggra's Guidance
+						["classes"] = { 7 },
+						["qg"] = 99531,	-- Aggra
 					}),
-					--q(44271)	-- Eye of Azshara -- mission board
-					--q(44270)	-- Eye of Azshara -- mission board
-					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-						["groups"] = {
+					q(43473,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					}),
+					q(43474,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					--	["u"] = 40,	-- No Server response, quest is removed
+					}),
+					q(43475,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					--	["u"] = 40,	-- No Server response, quest is removed
+					}),
+					q(43477,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					}),
+					q(43476,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					--	["u"] = 40,	-- No Server response, quest is removed
+					}),
+					q(43478,  {	-- Experimental Potion: Test Subjects Needed
+						["qg"] = 110642,	-- Fizzi Liverzapper
+					--	["u"] = 40,	-- No Server response, quest is removed
+					}),
+				--	q(44271)	-- Eye of Azshara -- mission board
+				--	q(44270)	-- Eye of Azshara -- mission board
+					q(42213,  {	-- Eye of Azshara: The Tidestone of Golganneth
+						["sourceQuests"] = { 38286 },	-- Eye of Azshara: Wrath of Azshara
+						["qg"] = 106780,	-- Tidestone of Golganneth
+						["g"] = {
 							i(140622),	-- Hardshell Greatbelt
 							i(140623),	-- Brightscale Waistguard
 							i(140624),	-- Bitterbrine Binding
 							i(140625),	-- Waistband of the Hatecoil Oracles
 						},
-						["qg"] = 106780,	-- Tidestone of Golganneth
-						["sourceQuests"] = { 38286 },	-- Eye of Azshara: Wrath of Azshara
 					}),
-					q(43852, {	-- Fancy Lads and Buccaneers
-						["qg"] = 94159,	-- Fleet Admiral Tethys
-						["classes"] = { 4 },
+					q(43852,  {	-- Fancy Lads and Buccaneers
 						["sourceQuests"] = { 43841 },	-- Convincin' Old Yancey
-					}),
-					q(41924, {	-- Fangs of the Devourer
-						["qg"] = 105464,	-- Val'zuun
 						["classes"] = { 4 },
+						["qg"] = 94159,	-- Fleet Admiral Tethys
 					}),
-					--q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
-					q(41035, {	-- Felstorm's Plea
+					q(41924,  {	-- Fangs of the Devourer
+						["classes"] = { 4 },
+						["qg"] = 105464,	-- Val'zuun
+					}),
+				--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
+					q(41035,  {	-- Felstorm's Plea
 						["classes"] = { 8 },
 					}),
 					qa(47059, {	-- Feral: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 11 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(45615, {	-- Finders Keepers
+					q(45615,  {	-- Finders Keepers
+						["classes"] = { 8 },
 						["qg"] = 103092,	-- The Great Akazamzarak
-						["classes"] = { 8 },
 					}),
-					q(42452, {	-- Finding Ebonchill
+					q(42452,  {	-- Finding Ebonchill
+						["classes"] = { 8 },
 						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm (2 versions)
-						["classes"] = { 8 },
 					}),
-					q(43100, {	-- Finding the Scepter
-						["qg"] = 101097,	-- Calydus
+					q(43100,  {	-- Finding the Scepter
 						["classes"] = { 9 },
+						["qg"] = 101097,	-- Calydus
 					}),
-					q(42501, {	-- Finishing the Job
-						["qg"] = 94138,	-- Princess Tess Greymane
+					q(42501,  {	-- Finishing the Job
 						["classes"] = { 4 },
+						["qg"] = 94138,	-- Princess Tess Greymane
 					}),
 					qa(47055, {	-- Fire: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 8 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
 					qa(41778, {	-- Firing Up the Forge
 						["qg"] = 90463,	-- Archmage Karlain
 					}),
-					q(42424, {	-- Following In His Footsteps
-						["qg"] = 107423,	-- Archmage Kalec
-						["classes"] = { 8 },
+					q(42424,  {	-- Following In His Footsteps
 						["sourceQuests"] = { 42423 },	-- Archmage Vargoth's Retreat
+						["classes"] = { 8 },
+						["qg"] = 107423,	-- Archmage Kalec
 					}),
-					q(45917, {	-- Following the Scent
-						["qg"] = 116714,	-- Ritssyn Flamescowl
+					q(45917,  {	-- Following the Scent
 						["classes"] = { 1, 4, 6, 7, 11 },
+						["qg"] = 116714,	-- Ritssyn Flamescowl
 					}),
 					qh(44203, {	-- For the Cause
-						["qg"] = 113213,	-- Master Mathias Shaw
 						["classes"] = { 4 },
 						["isDaily"] = true,
+						["qg"] = 113213,	-- Master Mathias Shaw
 					}),
 					qa(44202, {	-- For the Cause
-						["qg"] = 113213,	-- Master Mathias Shaw
 						["classes"] = { 4 },
 						["isDaily"] = true,
+						["qg"] = 113213,	-- Master Mathias Shaw
 					}),
-					q(39763, {	-- For Whom the Fel Tolls
-						["qg"] = 97360,	-- Matthew Rabis
+					q(39763,  {	-- For Whom the Fel Tolls
+						["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
 						["classes"] = { 2, 3, 9 },
 						["races"] = { 3, 9 },
-						["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
+						["qg"] = 97360,	-- Matthew Rabis
 					}),
-					q(47046, {	-- Frost: The Thieving Apprentice
-						["qgs"] = { 105467, 115081 },	-- Archmage Kalec (2 versions)
+					q(47046,  {	-- Frost: The Thieving Apprentice
 						["classes"] = { 6 },
+						["qgs"] = { 105467, 115081 },	-- Archmage Kalec (2 versions)
 					}),
 					qa(45182, {	-- Frost: The Twisted Twin
-						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 						["classes"] = { 8 },
+						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 					}),
-					q(46779, {	-- Further Advancement
-						["qg"] = 98092,	-- Nikki the Gossip
+					q(46779,  {	-- Further Advancement
 						["classes"] = { 4 },
+						["qg"] = 98092,	-- Nikki the Gossip
 					}),
 					qa(47056, {	-- Fury: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 1 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(45413, {	-- Gathering Information
-						["qg"] = 116880,	-- Kor'vas Bloodthorn
+					q(45413,  {	-- Gathering Information
 						["sourceQuests"] = {
 							45412,	-- Protection: Aid of the Illidari
 							46314,	-- Vengeance: Seeking Kor'vas
@@ -2326,328 +2284,322 @@ _.Zones =
 							47025,	-- Blood: Aid of the Illidari
 						},
 						["classes"] = { 1, 2, 6, 10, 11, 12 },
+						["qg"] = 116880,	-- Kor'vas Bloodthorn
 						["u"] = 40,
 					}),
-					q(44337, {	-- Goddess Watch Over You
+					q(44337,  {	-- Goddess Watch Over You
 						["qg"] = 113686,	-- Archmage Khadgar
 					}),
-					q(44338, {	-- Goddess Watch Over You
+					q(44338,  {	-- Goddess Watch Over You
 						["qg"] = 113686,	-- Archmage Khadgar
 					}),
-					q(46744, {	-- Greater Power for Greater Threats -- removed?
-						["qgs"] = { 90417, 116302 },	-- Archmage Khadgar (2 versions, dalaran/broken shore)
+					q(46744,  {	-- Greater Power for Greater Threats -- removed?
 						["isBreadcrumb"] = true,
+						["qgs"] = { 90417, 116302 },	-- Archmage Khadgar (2 versions, dalaran/broken shore)
 					}),
-					q(42175, {	-- Growing Power
-						["qg"] = 112688,	-- Meryl Felstorm
+					q(42175,  {	-- Growing Power
 						["classes"] = { 8 },
+						["qg"] = 112688,	-- Meryl Felstorm
 					}),
 					qa(47023, {	-- Guardian: Aid of the Illidari
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
-						["classes"] = { 11 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 11 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["u"] = 40,
 					}),
-					q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
+					q(47043,  {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
 						["qgs"] = { 105467, 115081 },	-- Archmage Kalec (2 versions)
 						["classes"] = { 12 },
 					}),
 					qh(46178, {	-- Hiding In Plain Sight
-						["groups"] = {
+						["classes"] = { 4 },
+						["qg"] = 98099,	-- Lilian Voss
+						["g"] = {
 							-- rewards spell 240982 (mount: shadowblade's murderous omen)
 						},
-						["qg"] = 98099,	-- Lilian Voss
-						["classes"] = { 4 },
 					}),
 					qa(46089, {	-- Hiding In Plain Sight
-						["groups"] = {
+						["classes"] = { 4 },
+						["qg"] = 98099,	-- Lilian Voss
+						["g"] = {
 							-- rewards spell 240982 (mount: shadowblade's murderous omen)
 						},
-						["qg"] = 98099,	-- Lilian Voss
-						["classes"] = { 4 },
 					}),
-					q(47607, {	-- High Fash-Djinn
-						["qg"] = 123087,	-- Al'Abas
+					q(47607,  {	-- High Fash-Djinn
 						["classes"] = { 4 },
+						["qg"] = 123087,	-- Al'Abas
 					}),
 					qa(47006, {	-- Holy: The Bradensbrook Investigation
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
-						["classes"] = { 2 },
 						["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+						["classes"] = { 2 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
 					qa(46078, {	-- Holy: The Bradensbrook Investigation
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
-						["classes"] = { 5 },
 						["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					}),
-					q(40950, {	-- Honoring Success
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
-					}),
-					q(42774, {	-- Hope Prevails
-						["qg"] = 108776,	-- Lord Maxwell Tyrosus
-						["classes"] = { 2 },
-					}),
-					q(41966, {	-- House Call
-						["qg"] = 105602,	-- Vindicator Boros
 						["classes"] = { 5 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(41009, {	-- Hunter to Hunter
+					q(40950,  {	-- Honoring Success
+						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					}),
+					q(42774,  {	-- Hope Prevails
+						["classes"] = { 2 },
+						["qg"] = 108776,	-- Lord Maxwell Tyrosus
+					}),
+					q(41966,  {	-- House Call
+						["classes"] = { 5 },
+						["qg"] = 105602,	-- Vindicator Boros
+					}),
+					q(41009,  {	-- Hunter to Hunter
+						["sourceQuests"] = { 40419 },	-- Rescue Mission
+						["classes"] = { 3 },
 						["qg"] = 106879,	-- Grif Wildheart
-						["classes"] = { 3 },
-						["sourceQuests"] = { 40419 },	-- Rescue Mission
 					}),
-					q(40952, {	-- Hunter to Hunter
+					q(40952,  {	-- Hunter to Hunter
+						["sourceQuests"] = { 40419 },	-- Rescue Mission
+						["classes"] = { 3 },
 						["qg"] = 102570,	-- Grif Wildheart
-						["classes"] = { 3 },
-						["sourceQuests"] = { 40419 },	-- Rescue Mission
 					}),
-					q(47595, {	-- I Don't Need Them, But I'll Take Them
+					q(47595,  {	-- I Don't Need Them, But I'll Take Them
 						["classes"] = { 4 },
 					}),
-					q(47594, {	-- I'll Take Those, Thanks!
+					q(47594,  {	-- I'll Take Those, Thanks!
+						["classes"] = { 4 },
 						["qg"] = 103792,	-- Griftah
-						["classes"] = { 4 },
 					}),
 					qa(44821, {	-- In Dire Need
-						["qg"] = 115465,	-- Archmage Modera
 						["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
+						["qg"] = 115465,	-- Archmage Modera
 					}),
-					q(44184, {	-- In the Blink of an Eye
-						["groups"] = {
+					q(44184,  {	-- In the Blink of an Eye
+						["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
+						["g"] = {
 							i(143780),	-- Tome of the Tranquil Mind
 						},
-						["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
 					}),
-					q(44663, {	-- In the Blink of an Eye
-						["groups"] = {
-							i(143785),	-- Tome of the Tranquil Mind
-						},
+					q(44663,  {	-- In the Blink of an Eye
+						i(143785),	-- Tome of the Tranquil Mind
 					}),
-					q(44448, {	-- In the House of Light and Shadow
-						["qg"] = 90417,	-- Archmage Khadgar
+					q(44448,  {	-- In the House of Light and Shadow
 						["sourceQuests"] = {
 							44337,	-- Goddess Watch Over You
 							44338,	-- Goddess Watch Over You
 						},
+						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(47604, {	-- In the Land of Magic
+					q(47604,  {	-- In the Land of Magic
+						["classes"] = { 4 },
 						["qg"] = 123087,	-- Al'Abas
-						["classes"] = { 4 },
 					}),
-					q(40995, {	-- Injection of Power
+					q(40995,  {	-- Injection of Power
+						["classes"] = { 4 },
 						["qg"] = 102594,	-- Marin Noggenfogger
-						["classes"] = { 4 },
 					}),
-					q(45992, {	-- Investigate the Broken Shore
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					q(45992,  {	-- Investigate the Broken Shore
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
 					qa(45906, {	-- Jarod's Gift
-						["qg"] = 90418,	-- Archmage Modera
 						["sourceQuests"] = { 46035 },	-- End of the Risen Threat
 						["classes"] = { 2, 5, 7, 11 },
+						["qg"] = 90418,	-- Archmage Modera
 						["u"] = 40,
 					}),
-					q(38907, {	-- Keepers of the Hammer
-						["qg"] = 97666,	-- Warbrave Oro
+					q(38907,  {	-- Keepers of the Hammer
 						["sourceQuests"] = { 39733 },	-- The Lone Mountain
+						["qg"] = 97666,	-- Warbrave Oro
 					}),
-					q(44555, {	-- Khadgar's Discovery
+					q(44555,  {	-- Khadgar's Discovery
 						["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
 					}),
-					q(39985, {	-- Khadgar's Discovery
+					q(39985,  {	-- Khadgar's Discovery
 						["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
 					}),
 					qa(45905, {	-- Kruul's Gift
-						["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 						["sourceQuests"] = { 45416 },	-- The Highlord's Return
+						["qg"] = 90431,	-- Archmage Ansirem Runeweaver
 						["u"] = 40,
 					}),
-					q(46074, {	-- Leather to Legendary
-						["qg"] = 92183,	-- Alard Schmied
-						["classes"] = { 2 },
+					q(46074,  {	-- Leather to Legendary
 						["sourceQuests"] = { 46083 },	-- A Few Things First
+						["classes"] = { 2 },
+						["qg"] = 92183,	-- Alard Schmied
 					}),
-					q(40997, {	-- Lethal Efficiency
-						["qg"] = 98092,	-- Nikki the Gossip
+					q(40997,  {	-- Lethal Efficiency
 						["classes"] = { 4 },
+						["qg"] = 98092,	-- Nikki the Gossip
 					}),
-					q(42168, {	-- Looking into the Darkness
-						["qg"] = 106610,	-- Calydus
-						["classes"] = { 9 },
+					q(42168,  {	-- Looking into the Darkness
 						["sourceQuests"] = {
 							40611,	-- The Fate of Deadwind
 							42128,	-- Ritual Reagents
 						},
+						["classes"] = { 9 },
+						["qg"] = 106610,	-- Calydus
 					}),
-	--[[			Attached Lost Mail to the Object. One is looted from the Object, the other one is looted from completion of the quest
-					i(134859, {	-- Lost Mail
-						["groups"] = {
-							q(41368),	-- Lost Mail
-						},
-					}),
-					i(135479, {	-- Lost Mail (Lost Mail have two different item and quest IDs, but no info on why)
-						["groups"] = {
+			--[[	Attached Lost Mail to the Object. One is looted from the Object, the other one is looted from completion of the quest
+					i(135479, {	-- Lost Mail
+						["g"] = {
 							q(41411),	-- Lost Mail
 						},
-					}),
-		--]]		q(47606, {	-- Loyalty Is Its Own Reward
-						["qg"] = 123087,	-- Al'Abas
+					}), --]]
+					q(47606,  {	-- Loyalty Is Its Own Reward
 						["classes"] = { 4 },
+						["qg"] = 123087,	-- Al'Abas
 					}),
-					q(39986, {	-- Magic Message
-						["qg"] = 90417,	-- Archmage Khadgar
+					q(39986,  {	-- Magic Message
 						["sourceQuests"] = {
 							39985,	-- Khadgar's Discovery
 							44555,	-- Khadgar's Discovery
 						},
+						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(40819, {	-- Making Arrangements
+					q(40819,  {	-- Making Arrangements
+						["classes"] = { 12 },
 						["qgs"] = { 99247, 108572 },	-- Kayn Sunfury
-						["classes"] = { 12 },
 					}),
-					q(41120, {	-- Making Arrangements
-						["qgs"] = { 99254, 108571 },	-- Altruis  the Sufferer
+					q(41120,  {	-- Making Arrangements
 						["classes"] = { 12 },
+						["qgs"] = { 99254, 108571 },	-- Altruis  the Sufferer
 					}),
 					qa(38206, {	-- Making the Rounds
-						["qg"] = 96644,	-- Sky Admiral Rogers
 						["sourceQuests"] = { 38035 },	-- A Royal Summons
+						["qg"] = 96644,	-- Sky Admiral Rogers
 					}),
 					qa(47039, {	-- Marksmanship: The Twisted Twin
-						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 						["classes"] = { 3 },
+						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
 					}),
-					q(48376, {	-- Mass Primal Obliterum
-						["qg"] = 114719,	-- Trader Caelen
+					q(48376,  {	-- Mass Primal Obliterum
 						["repeatable"] = true,
+						["qg"] = 114719,	-- Trader Caelen
 					}),
-					--q(44267)	-- Maw of Souls -- mission board
-					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
-						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
+				--	q(44267)	-- Maw of Souls -- mission board
+					q(43253,  {	-- Maw of Souls: Ancient Vrykul Legends
 						["sourceQuests"] = {
 							42684,	-- Throwing SI:7 Off the Trail
 							43468,	-- Blood for the Wolfe
 						},
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
 					}),
 					qa(46260, {	-- Meld Into the Shadows
-						["qg"] = 117259,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
 						["sourceQuests"] = {
 							45628,	-- This Time, Leave a Trail
 							45629,	-- This Time, Leave a Trail
 						},
+						["classes"] = { 4 },
+						["qg"] = 117259,	-- Lord Jorach Ravenholdt
 					}),
-					q(45185, {	-- Message from the Shadows
+					q(45185,  {	-- Message from the Shadows
 						["qg"] = 116175,	-- Karam Magespear
 					}),
 					qa(47005, {	-- Mistweaver: The Bradensbrook Investigation
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
-						["classes"] = { 10 },
 						["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+						["classes"] = { 10 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
-					q(42594, {	-- Move Like No Other
-						["qg"] = 107968,	-- Archmage Lan'dalock
-						["classes"] = { 12 },
+					q(42594,  {	-- Move Like No Other
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
+						["classes"] = { 12 },
+						["qg"] = 107968,	-- Archmage Lan'dalock
 					}),
-					q(44116, {	-- Mystery at Citrine Bay
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					q(44116,  {	-- Mystery at Citrine Bay
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
 					qa(45909, {	-- Navarrogg's Gift
-						["qg"] = 90418,	-- Archmage Modera
 						["sourceQuests"] = { 45627 },	-- Feltotem's Fall
+						["qg"] = 90418,	-- Archmage Modera
 						["u"] = 40,
 					}),
-					q(40384, {	-- Needs of the Hunters
+					q(40384,  {	-- Needs of the Hunters
+						["classes"] = { 3 },
 						["qg"] = 100786,	-- Snowfeather
-						["classes"] = { 3 },
 					}),
-					--q(44265)	-- Neltharion's Lair -- mission board
-					--q(44264)	-- Neltharion's Lair -- mission board
-					--q(43554)	-- Neltharion's Lair -- mission board
-					q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
+				--	q(44265)	-- Neltharion's Lair -- mission board
+				--	q(44264)	-- Neltharion's Lair -- mission board
+				--	q(43554)	-- Neltharion's Lair -- mission board
+					q(42185,  {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
+						["classes"] = { 3 },
 						["qg"] = 106558,	-- Mimiron
-						["classes"] = { 3 },
 					}),
-					q(42502, {	-- No Sanctuary
+					q(42502,  {	-- No Sanctuary
+						["classes"] = { 4 },
 						["qg"] = 94138,	-- Princess Tess Greymane
-						["classes"] = { 4 },
 					}),
-					q(42730, {	-- Noggenfogger's Reasonable Request
+					q(42730,  {	-- Noggenfogger's Reasonable Request
+						["classes"] = { 4 },
 						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
 					}),
-					q(46722, {	-- Nothing Up My Sleeve
-						["qg"] = 103092,	-- The Great Akazamzarak
+					q(46722,  {	-- Nothing Up My Sleeve
 						["classes"] = { 8 },
+						["qg"] = 103092,	-- The Great Akazamzarak
 					}),
-					--q(44269)	-- Odyn's Challenge -- mission board
-					--q(44268)	-- Odyn's Challenge -- mission board
-					--q(43509)	-- Odyn's Challenge -- mission board
-					q(43250, {	-- Off to Court
-						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
+				--	q(44269)	-- Odyn's Challenge -- mission board
+				--	q(44268)	-- Odyn's Challenge -- mission board
+				--	q(43509)	-- Odyn's Challenge -- mission board
+					q(43250,  {	-- Off to Court
 						["sourceQuests"] = { 43249 },	-- The Raven's Eye
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
 					}),
-					q(45644, {	-- Oh Doloria, My Sweet Doloria
-						["qg"] = 118009,	-- Maximillian of Northshire
-						["classes"] = { 2 },
+					q(45644,  {	-- Oh Doloria, My Sweet Doloria
 						["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
+						["classes"] = { 2 },
+						["qg"] = 118009,	-- Maximillian of Northshire
 					}),
-					q(40953, {	-- On Eagle's Wings
-						["qg"] = 102478,	-- Emmarel Shadwarden
-						["classes"] = { 3 },
-						["sourceQuests"] = {
+					q(40953,  {	-- On Eagle's Wings
+						["sourceQuests"] = { 
 							40952,	-- Hunter to Hunter
 							41008,	-- Hunter to Hunter
 							41009,	-- Hunter to Hunter
-						}
+						},
+						["classes"] = { 3 },
+						["qg"] = 102478,	-- Emmarel Shadwarden
 					}),
-					q(44215, {	-- One More Thing...
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					q(44215,  {	-- One More Thing...
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
-					q(45193, {	-- One Step Behind
+					q(45193,  {	-- One Step Behind
 						["qg"] = 116175,	-- Karam Magespear
 					}),
-					q(41967, {	-- Out of the Darkness
+					q(41967,  {	-- Out of the Darkness
+						["classes"] = { 5 },
 						["qg"] = 105603,	-- Defender Barrem
-						["classes"] = { 5 }
 					}),
 					qa(47058, {	-- Outlaw: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 						["classes"] = { 4 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera (2 versions)
 					}),
-					q(39718, {	-- Paradise Lost
+					q(39718,  {	-- Paradise Lost
 						["isBreadcrumb"] = true,
 					}),
-					q(37666, {	-- Picking a Fight
-						["qg"] = 110793,	-- Taoshi
-						["classes"] = { 4 },
+					q(37666,  {	-- Picking a Fight
 						["sourceQuests"] = { 43508 },	-- The Captive Spymaster
+						["classes"] = { 4 },
+						["qg"] = 110793,	-- Taoshi
 					}),
-					q(40821, {	-- Power Overwhelming
-						["qg"] = 101097,	-- Calydus
-						["classes"] = { 9 },
+					q(40821,  { 	-- Power Overwhelming
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
+						["classes"] = { 9 },
+						["qg"] = 101097,	-- Calydus
 					}),
-					q(41542, {	-- Preparation for the Hunt
-						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 versions)
+					q(41542,  {	-- Preparation for the Hunt
 						["classes"] = { 3 },
+						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden (3 versions)
 					}),
-					q(44545, {	-- Pressing the Assault
+					q(44545,  {	-- Pressing the Assault
 						["isBreadcrumb"] = true,
 						["description"] = "This quest is automatically offered after you find your first Pillar of Creation.",
 					}),
-					q(48375, {	-- Primal Obliterum
-						["qg"] = 114719,	-- Trader Caelen
+					q(48375,  {	-- Primal Obliterum
 						["repeatable"] = true,
+						["qg"] = 114719,	-- Trader Caelen
 					}),
-					q(44100, {	-- Proper Introductions
+					q(44100,  {	-- Proper Introductions
 						["classes"] = { 5 },	-- Priest
 						["lvl"] = 101,
 						["qg"] = 112695,	-- Hooded Priest
@@ -2659,386 +2611,350 @@ _.Zones =
 						["u"] = 40,
 					}),
 					qa(45412, {	-- Protection: Aid of the Illidari
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
-						["classes"] = { 1 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 1 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver (2 versions)
 						["u"] = 40,
 					}),
-					q(43470, {	-- Pruning the Garden
-						["qg"] = 98100,	-- Taoshi
+					q(43470,  {	-- Pruning the Garden
 						["classes"] = { 4 },
+						["qg"] = 98100,	-- Taoshi
 					}),
 					qa(45910, {	-- Raest's Gift
-						["qg"] = 90463,	-- Archmage Karlain
 						["sourceQuests"] = { 46127 },	-- Thwarting the Twins
+						["qg"] = 90463,	-- Archmage Karlain
 						["u"] = 40,
 					}),
-					q(40823, {	-- Rebuilding the Council
-						["qg"] = 101097,	-- Calydus
+					q(40823,  {	-- Rebuilding the Council
 						["classes"] = { 9 },
+						["qg"] = 101097,	-- Calydus
 					}),
-					q(45251, {	-- Redundancy
-						["qg"] = 118242,	-- Aethas Sunreaver
+					q(45251,  {	-- Redundancy
 						["classes"] = { 8 },
+						["qg"] = 118242,	-- Aethas Sunreaver
 					}),
-					q(41540, {	-- Rendezvous with the Courier
+					q(41540,  {	-- Rendezvous with the Courier
+						["classes"] = { 3 },
 						["qgs"] = { 102478, 107317, 107973 },	-- Emmarel Shadewarden
-						["classes"] = { 3 },
 					}),
-					q(40419, {	-- Rescue Mission
-						["qg"] = 100190,	-- Vareesa Windrunner
-						["classes"] = { 3 },
+					q(40419,  {	-- Rescue Mission
 						["sourceQuests"] = {
 							40400,	-- Clandestine Operation (alliance)
 							40402,	-- Clandestine Operation (horde)
 							40403,	-- Clandestine Operation (horde v2)
 						},
+						["classes"] = { 3 },
+						["qg"] = 100190,	-- Vareesa Windrunner
 					}),
 					qa(47004, {	-- Restoration: The Bradensbrook Investigation
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
-						["classes"] = { 11 },
 						["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+						["classes"] = { 11 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
 					qa(47003, {	-- Restoration: The Bradensbrook Investigation
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
-						["classes"] = { 7 },
 						["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+						["classes"] = { 7 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
-					q(47052, {	-- Retribution: Fate of the Tideskorn
-						["qg"] = 90417,	-- Archmage Khadgar
+					q(47052,  {	-- Retribution: Fate of the Tideskorn
 						["classes"] = { 2 },
-					}),
-					q(46290, {	-- Return of the Archmage
-						["qg"] = 118242,	-- Aethas Sunreaver
-						["classes"] = { 8 },
-						["sourceQuests"] = { 46000 },	-- Arming Dalaran
-					}),
-					q(41806, {	-- Return to Jace
 						["qg"] = 90417,	-- Archmage Khadgar
-						["classes"] = { 12 },
 					}),
-					q(45238, {	-- Return to Karazhan: Cubic Cynosure
-						["qg"] = 93538,	-- Dariness the Learned
+					q(46290,  {	-- Return of the Archmage
+						["sourceQuests"] = { 46000 },	-- Arming Dalaran
+						["classes"] = { 8 },
+						["qg"] = 118242,	-- Aethas Sunreaver
+					}),
+					q(41806,  {	-- Return to Jace
+						["classes"] = { 12 },
+						["qg"] = 90417,	-- Archmage Khadgar
+					}),
+					q(45238,  {	-- Return to Karazhan: Cubic Cynosure
 						["sourceQuests"] = { 45160 },	-- Cubic Currents
+						["qg"] = 93538,	-- Dariness the Learned
 					}),
-					--q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
-					q(41221, {	-- Return to Mardum
-						["qg"] = 109295,	-- Matron Mother Malevolence
+				--	q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
+					q(41221,  {	-- Return to Mardum
 						["classes"] = { 12 },
+						["qg"] = 109295,	-- Matron Mother Malevolence
 					}),
-					q(41033, {	-- Return to Mardum
-						["qg"] = 109295,	-- Matron Mother Malevolence
+					q(41033,  {	-- Return to Mardum
 						["classes"] = { 12 },
+						["qg"] = 109295,	-- Matron Mother Malevolence
 					}),
 					qa(42815, {	-- Return to the Broken Shore
-						["qg"] = 96183,	-- Danath Trollbane
-						["classes"] = { 1 },
 						["sourceQuests"] = { 42814 },	-- An Important Mission
+						["classes"] = { 1 },
+						["qg"] = 96183,	-- Danath Trollbane
 					}),
 					qh(38904, {	-- Return to the Broken Shore
-						["qg"] = 93773,	-- High Overlord Saurfang
-						["classes"] = { 1 },
 						["sourceQuests"] = { 41052 },	-- A Desperate Plea
+						["classes"] = { 1 },
+						["qg"] = 93773,	-- High Overlord Saurfang
 					}),
-					q(43007, {	-- Return to the Chamber of Shadows
+					q(43007,  {	-- Return to the Chamber of Shadows
+						["classes"] = { 4 },
 						["qg"] = 112679,	-- Valeera Sanguinar
-						["classes"] = { 4 },
 					}),
-					q(42663, {	-- Rise, Champions
-						["qg"] = 102700,	-- Meryl Felstorm
-						["classes"] = { 8 },
+					q(42663,  {	-- Rise, Champions
 						["sourceQuests"] = { 42175 },	-- Growing Power
+						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					q(42608, {	-- Rise, Champions
-						["qg"] = 101097,	-- Calydus
+					q(42608,  {	-- Rise, Champions
 						["classes"] = { 9 },
+						["qg"] = 101097,	-- Calydus
 					}),
-					q(42139, {	-- Rise, Champions
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
+					q(42139,  {	-- Rise, Champions
 						["sourceQuests"] = { 43007 },	-- Return to the Chamber of Shadows
+						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
-					q(42128, {	-- Ritual Reagents
-						["qg"] = 101097,	-- Calydus
-						["classes"] = { 9 },
+					q(42128,  {	-- Ritual Reagents
 						["sourceQuests"] = {
 							40606,	-- To Point the Way
 							42952,	-- Tracking Down the Skull
 						},
-					}),
-					q(43254, {	-- Ritual Ruination
-						["qg"] = 109838,	-- Calydus
 						["classes"] = { 9 },
+						["qg"] = 101097,	-- Calydus
 					}),
-					q(45192, {	-- Runes of Rending
+					q(43254,  {	-- Ritual Ruination
+						["classes"] = { 9 },
+						["qg"] = 109838,	-- Calydus
+					}),
+					q(45192,  {	-- Runes of Rending
 						["qg"] = 116175,	-- Karam Magespear
 					}),
-					q(44204, {	-- Seal their Fates
-						["qg"] = 110820,	-- Scythe
+					q(44204,  {	-- Seal their Fates
 						["classes"] = { 4 },
+						["qg"] = 110820,	-- Scythe
 					}),
-					q(47864, {	-- Sealing Fate: Additional Marks of Honor
-						["qg"] = 111243,	--  Archmage Lan'Dalock
+					q(47864,  {	-- Sealing Fate: Additional Marks of Honor
 						["isWeekly"] = true,
-					}),
-					q(43894, {	-- Sealing Fate: Extraneous Order Resources
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(43895, {	-- Sealing Fate: Gold
+					q(43894,  {	-- Sealing Fate: Extraneous Order Resources
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(43897, {	-- Sealing Fate: Immense Fortune of Gold
+					q(43895,  {	-- Sealing Fate: Gold
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(47851, {	-- Sealing Fate: Marks of Honor
+					q(43897,  {	-- Sealing Fate: Immense Fortune of Gold
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(43892, {	-- Sealing Fate: Order Resources
+					q(47851,  {	-- Sealing Fate: Marks of Honor
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(43896, {	-- Sealing Fate: Piles of Gold
+					q(43892,  {	-- Sealing Fate: Order Resources
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(47865, {	-- Sealing Fate: Piles of Marks of Honor
+					q(43896,  {	-- Sealing Fate: Piles of Gold
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(43893, {	-- Sealing Fate: Stashed Order Resources
+					q(47865,  {	-- Sealing Fate: Piles of Marks of Honor
+						["isWeekly"] = true,
 						["qg"] = 111243,	--  Archmage Lan'Dalock
-						["isWeekly"] = true,
 					}),
-					q(45187, {	-- Secrets in the Underbelly
+					q(43893,  {	-- Sealing Fate: Stashed Order Resources
+						["isWeekly"] = true,
+						["qg"] = 111243,	--  Archmage Lan'Dalock
+					}),
+					q(45187,  {	-- Secrets in the Underbelly
 						["qg"] = 116175,	-- Karam Magespear
 					}),
-					q(42872, {	-- Securing the Way
-						["qg"] = 109196,	-- Jace Darkweaver
+					q(42872,  {	-- Securing the Way
 						["classes"] = { 12 },
+						["qg"] = 109196,	-- Jace Darkweaver
 					}),
-					q(42000, {	-- Seeker of Truth
+					q(42000,  {	-- Seeker of Truth
+						["classes"] = { 2 },
 						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (2 versions)
-						["classes"] = { 2 },
 					}),
-					q(42770, {	-- Seeking Guidance
+					q(42770,  {	-- Seeking Guidance
+						["classes"] = { 2 },
 						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus
-						["classes"] = { 2 },
 					}),
-					q(45630, {	-- Servant to No One
-						["qg"] = 103092,	-- The Great Akazamzarak
+					q(45630,  {	-- Servant to No One
 						["classes"] = { 8 },
+						["qg"] = 103092,	-- The Great Akazamzarak
 					}),
 					qa(47042, {	-- Shadow: The Twisted Twin
+						["classes"] = { 5 },
 						["qgs"] = { 90463, 115468 },	-- Archmage Karlain
-						["classes"] = { 5 },
 					}),
-					q(47592, {	-- Shine Bright Like a Diamond
+					q(47592,  {	-- Shine Bright Like a Diamond
+						["classes"] = { 4 },
 						["qg"] = 103792,	-- Griftah
-						["classes"] = { 4 },
 					}),
-					q(42017, {	-- Shrine of the Truthguard
+					q(42017,  {	-- Shrine of the Truthguard
+						["classes"] = { 2 },
 						["qg"] = 105813,	-- Orik Trueheart
-						["classes"] = { 2 },
 					}),
-					--q(47148) -- Something Different -- granted when entering a brawl. weekly?
-					q(43829, {	-- Spy vs. Spy
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
+				--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
+					q(43829,  {	-- Spy vs. Spy
 						["sourceQuests"] = { 43958 },	-- A Body of Evidence
-					}),
-					q(41574, {	-- Stolen Thunder
-						["qg"] = 104381,	-- Grif Wildheart
-						["classes"] = { 3 },
-						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
-					}),
-					--q(44411),	-- Strange Humming Crystal -- granted by i(141349)
-					q(47048, {
-						["qgs"] = { 105467, 115081 },	-- Archmage Kalec
 						["classes"] = { 4 },
-					}),
-					q(47047, {
-						["qgs"] = { 105467, 115081 },	-- Archmage Kalec
-						["classes"] = { 3 },
-					}),
-					q(42703, {	-- Technical Wizardry
-						["qg"] = 102700,	-- Meryl Felstorm
-						["classes"] = { 2 },
-						["sourceQuests"] = { 42663 },	-- Rise, Champions
-					}),
-					q(43473, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					}),
-					{
-						["questID"] = 43474,	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					--	["u"] = 40,	-- No Server response, quest is removed
-					},
-					{
-						["questID"] = 43475,	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					--	["u"] = 40,	-- No Server response, quest is removed
-					},
-					q(43477, {	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					}),
-					{
-						["questID"] = 43476,	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					--	["u"] = 40,	-- No Server response, quest is removed
-					},
-					{
-						["questID"] = 43478,	-- Experimental Potion: Test Subjects Needed
-						["qg"] = 110642,	-- Fizzi Liverzapper
-					--	["u"] = 40,	-- No Server response, quest is removed
-					},
-					q(45916, {	-- The Acolyte Imperiled
-						["qg"] = 116714,	-- Ritssyn Flamescowl
-						["classes"] = { 1, 4, 6, 7, 11 },
-					}),
-					o(251991, {
-						q(43349, {	-- The Aegis of Aggramar
-							["groups"] = {
-								i(130016),	-- Valor-Bound Legplates
-								i(129997),	-- Valor-Bound Legwraps
-								i(129989),	-- Valor-Bound Trousers
-								i(130005),	-- Valor-Bound Greaves
-							},
-						}),
-					}),
-					q(42593, {	-- The Arcane Way
-						["qg"] = 98632,	-- Matron Mother Malevolence
-						["classes"] = { 12 },
-					}),
-					--q(44263),	-- The Arcway -- mission board
-					q(44172, {	-- The Arena Calls
-						["qg"] = 111246,	-- Archmage Timear
-						["isWeekly"] = true,
-					}),
-					q(43373, {	-- The Best and Brightest
-						["qg"] = 110557,	-- Prophet Velen
-						["classes"] = { 5 },
-					}),
-					q(43014, {	-- The Big Bad Wolfe
-						["qg"] = 98092,	-- Nikki the Gossip
-						["classes"] = { 4 },
-						["sourceQuests"] = { 43013 },	-- The School of Roguery
-					}),
-					q(44041, {	-- The Bloody Truth
 						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
-						["sourceQuests"] = { 43829 },	-- Spy vs. Spy
 					}),
-					q(42377, {	-- The Brother's Trail
-						["qg"] = 106337,	-- Travard
+					q(41574,  {	-- Stolen Thunder
+						["sourceQuests"] = { 41541 },	-- A Beastly Expedition
+						["classes"] = { 3 },
+						["qg"] = 104381,	-- Grif Wildheart
+					}),
+				--	q(44411),	-- Strange Humming Crystal -- granted by i(141349)
+					q(47048,  {	-- Subtlety: The Thieving Apprentice
+						["classes"] = { 4 },					 
+						["qgs"] = { 105467, 115081 },	-- Archmage Kalec
+					}),
+					q(47047,  {	-- Survival: The Thieving Apprentice
+						["classes"] = { 3 },					 
+						["qgs"] = { 105467, 115081 },	-- Archmage Kalec
+					}),
+					q(42703,  {	-- Technical Wizardry
+						["sourceQuests"] = { 42663 },	-- Rise, Champions
 						["classes"] = { 2 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					q(40714, {	-- The Call To War
-						["classes"] = { 6 },
+					q(45916,  {	-- The Acolyte Imperiled
+						["classes"] = { 1, 4, 6, 7, 11 },
+						["qg"] = 116714,	-- Ritssyn Flamescowl
+					}),
+					q(42593,  {	-- The Arcane Way
+						["classes"] = { 12 },
+						["qg"] = 98632,	-- Matron Mother Malevolence
+					}),
+				--	q(44263),	-- The Arcway -- mission board
+					q(44172,  {	-- The Arena Calls
+						["isWeekly"] = true,
+						["qg"] = 111246,	-- Archmage Timear
+					}),
+					q(43373,  {	-- The Best and Brightest
+						["classes"] = { 5 },
+						["qg"] = 110557,	-- Prophet Velen
+					}),
+					q(43014,  {	-- The Big Bad Wolfe
+						["sourceQuests"] = { 43013 },	-- The School of Roguery
+						["classes"] = { 4 },
+						["qg"] = 98092,	-- Nikki the Gossip
+					}),
+					q(44041,  {	-- The Bloody Truth
+						["sourceQuests"] = { 43829 },	-- Spy vs. Spy
+						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					}),
+					q(42377,  {	-- The Brother's Trail
+						["classes"] = { 2 },
+						["qg"] = 106337,	-- Travard
+					}),
+					q(40714,  {	-- The Call To War
 						["description"] = "Automatically given to you when you arrive in Dalaran.",
+						["classes"] = { 6 },
 					}),
-					q(41114, {	-- The Champion's Return -- no qg info
+					q(41114,  {	-- The Champion's Return -- no qg info
 						["classes"] = { 8 },
 					}),
 					qa(42416, {	-- The Council is in Session
-						["qg"] = 107351,	-- Archmage Khadgar
-						["classes"] = { 8 },
 						["sourceQuests"] = { 42222 },	-- Empyrean Society Report
+						["classes"] = { 8 },
+						["qg"] = 107351,	-- Archmage Khadgar
 					}),
 					i(154880, {	-- Cursed Shard
 						q(49474, {	-- The Cursed Shard
 							["isBreadcrumb"] = true,
 						}),
 					}),
-					q(42476, {	-- The Deadwind Site
-						["qg"] = 102700,	-- Meryl Felstorm
+					q(42476,  {	-- The Deadwind Site
 						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					q(40849, {	-- The Dreadblades
-						["qg"] = 102120,	-- Fleet Admiral Tethys
+					q(40849,  {	-- The Dreadblades
 						["classes"] = { 4 },
+						["qg"] = 102120,	-- Fleet Admiral Tethys
 					}),
-					q(41036, {	-- The Dreadlord's Prize
-						["groups"] = {
+					q(41036,  {	-- The Dreadlord's Prize
+						["sourceQuests"] = { 41035 },	-- Felstorm's Plea
+						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
+						["g"] = {
 							sp(204287),	-- Teleport: Hall of the Guardian
 						},
-						["qg"] = 102700,	-- Meryl Felstorm
-						["classes"] = { 8 },
-						["sourceQuests"] = { 41035 },	-- Felstorm's Plea
 					}),
-					q(39427, {	-- The Eagle Spirit's Blessing
-						["qg"] = 104382,	-- Apata Highmountain
-						["classes"] = { 3 },
+					q(39427,  {	-- The Eagle Spirit's Blessing
 						["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
+						["classes"] = { 3 },
+						["qg"] = 104382,	-- Apata Highmountain
 					}),
-					--q(42005),	-- The End of the Saga -- starts in Howling Fjord
-					q(45420, {	-- The Eye of Aman'Thul
-						["groups"] = {
+				--	q(42005),	-- The End of the Saga -- starts in Howling Fjord
+					q(45420,  {	-- The Eye of Aman'Thul
+						["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
+						["qg"] = 106522,	-- Archmage Khadgar
+						["g"] = {
 							sp(233377),	-- Gaze of Aman'Thul
 						},
-						["qg"] = 106522,	-- Archmage Khadgar
-						["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					}),
-					q(44375, {	-- The Final Blade
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					q(44375,  {	-- The Final Blade
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
-					q(40839, {	-- The Final Shadow
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
+					q(40839,  {	-- The Final Shadow
 						["sourceQuests"] = { 40832 },	-- Call of the Uncrowned
+						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
-					q(45904, {	-- The God-Queen's Gift
-						["qg"] = 90417,	-- Archmage Khadgar
+					q(45904,  {	-- The God-Queen's Gift
 						["classes"] = { 2, 4, 7, 8, 9 },
+						["qg"] = 90417,	-- Archmage Khadgar
 						["u"] = 40,
 					}),
-					--q(14166),	-- The Grateful Dead -- Day of the Dead event quest
-					q(41112, {	-- The Great Akazamzarak
-						["qg"] = 102700,	-- Meryl Felstorm
-						["classes"] = { 8 },
+				--	q(14166),	-- The Grateful Dead -- Day of the Dead event quest
+					q(41112,  {	-- The Great Akazamzarak
 						["sourceQuests"] = { 41125 },	-- Unlocked Potential
+						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					q(41119, {	-- The Hunt
+					q(41119,  {	-- The Hunt
+						["classes"] = { 12 },
 						["qg"] = 103156,	-- Altruis the Sufferer
-						["classes"] = { 12 },
 					}),
-					q(39247, {	-- The Hunt
+					q(39247,  {	-- The Hunt
+						["classes"] = { 12 },
 						["qg"] = 94902,	-- Kayn Sunfury
-						["classes"] = { 12 },
 					}),
-					q(41415, {	-- The Hunter's Call
-						["qg"] = 102478,	-- Emmarel Shadewarden
+					q(41415,  {	-- The Hunter's Call
 						["classes"] = { 3 },
+						["qg"] = 102478,	-- Emmarel Shadewarden
 					}),
 					qa(45902, {	-- The Imp Mother's Gift
-						["qg"] = 90418,	-- Archmage Modera
 						["classes"] = { 1, 4, 6, 7, 8, 11, },
+						["qg"] = 90418,	-- Archmage Modera
 						["u"] = 40,
 					}),
-					q(40938, {	-- The Light and the Void
-						["qg"] = 101313,	-- Prophet Velen
-						["coord"] = { 46.6, 20.9, 627 },
-						["classes"] = { 5 },	-- Priest
+					q(40938,  {	-- The Light and the Void
 						["sourceQuests"] = { 40710 },	-- Blade in Twilight
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 46.6, 20.9, 627 },
+						["qg"] = 101313,	-- Prophet Velen
 					}),
-					q(41625, {	-- The Light's Wrath
-						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
+					q(41625,  {	-- The Light's Wrath
 						["classes"] = { 5 },
+						["qgs"] = { 101314, 110564 },	-- Alonsus Faol (2 versions)
 					}),
-					q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
+					q(39733,  {	-- The Lone Mountain -- granted by order hall scouting map
 						["isBreadcrumb"] = true,
 					}),
-					--q(44276),	-- The Lord of Black Rook Hold -- granted by mission board
-					--q(44277),	-- The Lord of Black Rook Hold -- granted by mission board
-					q(42479, {	-- The Mage Hunter
-						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm
+				--	q(44276),	-- The Lord of Black Rook Hold -- granted by mission board
+				--	q(44277),	-- The Lord of Black Rook Hold -- granted by mission board
+					q(42479,  {	-- The Mage Hunter
 						["classes"] = { 8 },
+						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm
 					}),
-					q(50247, {	-- The Mail must flow
+					q(50247,  {	-- The Mail must flow
 						i(156836, {	-- Bulging Package
 							i(156833),	-- Katy's Stampwhistle
 							i(135479),	-- Lost Mail
@@ -3047,267 +2963,271 @@ _.Zones =
 					qa(46200, {	-- The Matter Resolved... For Now...
 						["qg"] = 118954,	-- Night Elf Warrior
 					}),
-					q(42231, {	-- The Mysterious Paladin
-						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus
+					q(42231,  {	-- The Mysterious Paladin
 						["classes"] = { 2 },
+						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus
 					}),
-					q(47603, {	-- The Mysterious, Magnificent Al'Abas
-						["qg"] = 123087,	-- Al'Abas
+					q(47603,  {	-- The Mysterious, Magnificent Al'Abas
 						["classes"] = { 4 },
+						["qg"] = 123087,	-- Al'Abas
 					}),
-					q(40729, {	-- The New Blood
-						["qg"] = 101456,	-- Ritssyn Flamescowl
-						["classes"] = { 9 },
+					q(40729,  {	-- The New Blood
 						["sourceQuests"] = { 40716 },	-- The Sixth
+						["classes"] = { 9 },
+						["qg"] = 101456,	-- Ritssyn Flamescowl
 					}),
-					q(42011, {	-- The Nexus Vault
+					q(42011,  {	-- The Nexus Vault
 						["sourceQuests"] = { 42010 },	-- Arcane Unleashed
 						["classes"] = { 8 },
 					}),
-					q(41631, {	-- The Nexus Vault
+					q(41631,  {	-- The Nexus Vault
 						["sourceQuests"] = { 41630 },	-- Unleashing Judgment
 						["classes"] = { 5 },
 					}),
-					q(45207, {	-- The Nightborne Apprentice
-						["qg"] = 118242,	-- Aethas Sunreaver
-						["classes"] = { 8 },
+					q(45207,  {	-- The Nightborne Apprentice
 						["sourceQuests"] = { 46338 },	-- A Creative Solution
-					}),
-					q(41113, {	-- The Only Way to Travel
-						["qg"] = 103092,	-- The Great Akazamzarak
 						["classes"] = { 8 },
+						["qg"] = 118242,	-- Aethas Sunreaver
+					}),
+					q(41113,  {	-- The Only Way to Travel
 						["sourceQuests"] = { 41112 },	-- The Great Akazamzarak
+						["classes"] = { 8 },
+						["qg"] = 103092,	-- The Great Akazamzarak
 					}),
 					qh(46322, {	-- The Pirate's Bay
-						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 						["classes"] = { 4 },
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
 					qa(45833, {	-- The Pirate's Bay
+						["classes"] = { 4 },
 						["qg"] = 101513,	-- Lord Jorach Ravenholdt
-						["classes"] = { 4 },
 					}),
-					q(40816, {	-- The Power to Survive
+					q(40816,  {	-- The Power to Survive
+						["classes"] = { 12 },
 						["qg"] = 99254,	-- Altruis the Sufferer
-						["classes"] = { 12 },
 					}),
-					q(40814, {	-- The Power to Survive
+					q(40814,  {	-- The Power to Survive
+						["classes"] = { 12 },
 						["qg"] = 99247,	-- Kayn Sunfury
-						["classes"] = { 12 },
 					}),
-					q(39342, {	-- The Price of the Black Market
-						["qg"] = 101492,	-- Ms. Xiulan
-						["requireSkill"] = 171,
-					}),
-					q(43249, {	-- The Raven's Eye
-						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
+					q(43249,  {	-- The Raven's Eye
 						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
-					}),
-					q(43013, {	-- The School of Roguery
-						["qg"] = 98092,	-- Nikki the Gossip
 						["classes"] = { 4 },
-						["sourceQuests"] = { 42140 },	-- A More Wretched Hive of Scum and Villainy
-					}),
-					q(38376, {	-- The Search for the Highlord
-						["qg"] = 90369,	-- Lord Maxwell Tyrosus
-						["classes"] = { 2 },
-					}),
-					q(41919, {	-- The Shadows Reveal
 						["qg"] = 98102,	-- Valeera Sanguinar
+					}),
+					q(43013,  {	-- The School of Roguery
+						["sourceQuests"] = { 42140 },	-- A More Wretched Hive of Scum and Villainy
 						["classes"] = { 4 },
+						["qg"] = 98092,	-- Nikki the Gossip
 					}),
-					q(42120, {	-- The Silver Hand
-						["qg"] = 106337,	-- Travard
+					q(38376,  {	-- The Search for the Highlord
 						["classes"] = { 2 },
+						["qg"] = 90369,	-- Lord Maxwell Tyrosus
+					}),
+					q(41919,  {	-- The Shadows Reveal
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
+					}),
+					q(42120,  {	-- The Silver Hand
 						["sourceQuests"] = { 42377 },	-- The Brother's Trail
+						["classes"] = { 2 },
+						["qg"] = 106337,	-- Travard
 					}),
-					q(40716, {	-- The Sixth
-						["qg"] = 103506,	-- Ritssyn Flamescowl
+					q(40716,  {	-- The Sixth
 						["classes"] = { 9 },
+						["qg"] = 103506,	-- Ritssyn Flamescowl
 					}),
-					q(41124, {	-- The Tirisgarde Reborn
-						["qg"] = 102700,	-- Meryl Felstorm
+					q(41124,  {	-- The Tirisgarde Reborn
 						["classes"] = { 8 },
+						["qg"] = 102700,	-- Meryl Felstorm
 					}),
-					--q(39731),	-- The Tranquil Forest -- granted by scouting map
+				--	q(39731),	-- The Tranquil Forest -- granted by scouting map
 					qh(38307, {	-- The Warchief Beckons
-						["qg"] = 96683,	-- Nathanos Blightcaller
-						["coord"] = { 29.4, 47.1, 627 },
 						["sourceQuests"] = {
 							39864,	-- Stormheim
 							44701,	-- Stormheim
 						},
+						["coord"] = { 29.4, 47.1, 627 },
+						["qg"] = 96683,	-- Nathanos Blightcaller
 					}),
 					qa(45188, {	-- The Wisdom of the Council
 						["qg"] = 116308,	-- Karam Magespear
 					}),
-					q(44175, {	-- The World Awaits
-						["qg"] = 111246,	-- Archmage Timear
+					q(44175,  {	-- The World Awaits
 						["isWeekly"] = true,
+						["qg"] = 111246,	-- Archmage Timear
 					}),
-					q(43479, {	-- The World is Not Enough
-						["qg"] = 98100,	-- Taoshi
-						["classes"] = { 4 },
+					q(43479,  {	-- The World is Not Enough
 						["sourceQuests"] = { 43470 },	-- Pruning the Garden
-					}),
-					q(44310, {	-- Thrice the Power
-						["qgs"] = { 102700, 109222 },	-- Maryl Felstorm (2 versions)
-						["classes"] = { 8 },
-					}),
-					q(42684, {	-- Throwing SI:7 Off the Trail
-						["qg"] = 98102,	-- Valeera Sanguinar
 						["classes"] = { 4 },
+						["qg"] = 98100,	-- Taoshi
 					}),
-					q(43331, {	-- Time to Collect
-						["groups"] = {
-							i(140595),	-- Rax's Silk Pajama Bottoms
-							i(140594),	-- Snaggle's Favorite Pants
-							i(140593),	-- Rax's Polished Greaves
-							i(140592),	-- Mook Battlepants
+					q(44310,  {	-- Thrice the Power	
+						["classes"] = { 8 },
+						["qgs"] = { 102700, 109222 },	-- Maryl Felstorm (2 versions)
+					}),				
+					q(42684,  {	-- Throwing SI:7 Off the Trail
+						["classes"] = { 4 },
+						["qg"] = 98102,	-- Valeera Sanguinar
+					}),
+					q(43331,  {	-- Time to Collect
+						["sourceQuests"] = { 42483 },	-- Put It All on Red
+						["coord"] = { 50.2, 23.0, 627 },
+						["lvl"] = 110,
+						["qg"] = 110018,	-- Gazrix Gearlock <Steamwheedle Cartel>
+						["g"] = {
+							i(140601, {	-- Sixtrigger Resource Crate
+								i(133815),	-- Recipe: Spiced Rib Roast
+								i(140600),	-- Sixtrigger Lucky Ring
+							}),
 							i(140599),	-- Pretty Silk Gloves
-							i(140598),	-- Snaggle's Best Gloves
 							i(140597),	-- Rax's Piloting Handgrips
 							i(140596),	-- Reinforced Mook Handguards
-						},
-						["qg"] = 110018,	-- Gazrix Gearlock
+							i(140598),	-- Snaggle's Best Gloves
+							i(140592),	-- Mook Battlepants
+							i(140593),	-- Rax's Polished Greaves
+							i(140595),	-- Rax's Silk Pajama Bottoms
+							i(140594),	-- Snaggle's Favorite Pants
+						}
 					}),
-					--q(45172),	-- To Battle! -- granted by mission board
-					q(42002, {	-- To Northrend
-						["qg"] = 105689,	-- Orik Trueheart
-						["classes"] = { 2 },
+				--	q(45172),	-- To Battle! -- granted by mission board
+					q(42002,  {	-- To Northrend
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
+						["classes"] = { 2 },
+						["qg"] = 105689,	-- Orik Trueheart
 					}),
 					qa(46810),	-- To the Forge It Goes...
 					qh(46946),	-- To the Forge It Goes...
-					q(39987, {	-- Trail of Echoes
-						["qg"] = 90417,	-- Archmage Khadgar
+					q(39987,  {	-- Trail of Echoes
 						["sourceQuests"] = { 39986 },	-- Magic Message
+						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(41922, {	-- Traitor!
+					q(41922,  {	-- Traitor!
+						["classes"] = { 4 },
 						["qg"] = 98102,	-- Valeera Sanguinar
-						["classes"] = { 4 },
 					}),
-					q(43535, {	-- Translation: Danger!
-						["qg"] = 110571,	-- Delas Moonfang
+					q(43535,  {	-- Translation: Danger!
 						["classes"] = { 1, 2, 5 },
+						["qg"] = 110571,	-- Delas Moonfang
 					}),
-					q(39861, {	-- Tying Up Loose Ends
-						["qg"] = 91172,	-- Archmage Khadgar
+					q(39861,  {	-- Tying Up Loose Ends
 						["sourceQuests"] = { 39731 },	-- The Tranquil Forest
+						["coord"] = { 70.1, 43.7, 627 },
+						["qg"] = 91172,	-- Archmage Khadgar
 					}),
-					q(37494, {	-- Under Cover of Darkness
-						["qg"] = 98100,	-- Taoshi
-						["classes"] = { 4 },
+					q(37494,  {	-- Under Cover of Darkness
 						["sourceQuests"] = { 37448 },	-- A Simple Plan
+						["classes"] = { 4 },
+						["qg"] = 98100,	-- Taoshi
 					}),
 					qa(47057, {	-- Unholy: The Folly of Levia Laurence
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 						["classes"] = { 6 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
-					q(43341, {	-- Uniting the Isles
-						["groups"] = {
+					q(43341,  {	-- Uniting the Isles
+						["qg"] = 90417,	-- Archmage Khadgar
+						["g"] = {
 							i(141605),	-- Flight Master Whistle
 						},
-						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					q(45727, {	-- Uniting the Isles
-						["groups"] = {
+					q(45727,  {	-- Uniting the Isles
+						["qg"] = 90417,	-- Archmage Khadgar
+						["g"] = {
 							i(141605),	-- Flight Master Whistle
 						},
-						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					--q(43556),	-- Vault of the Wardens -- granted by mission board
-					--q(44260),	-- Vault of the Wardens -- granted by mission board
-					--q(44261),	-- Vault of the Wardens -- granted by mission board
-					q(43379, {	-- Velen's Vision
-						["qg"] = 110557,	-- Prophet Velen
+				--	q(43556),	-- Vault of the Wardens -- granted by mission board
+				--	q(44260),	-- Vault of the Wardens -- granted by mission board
+				--	q(44261),	-- Vault of the Wardens -- granted by mission board
+					q(43379,  {	-- Velen's Vision
 						["classes"] = { 5 },
+						["qg"] = 110557,	-- Prophet Velen
 					}),
-					q(40249, {	-- Vengeance Will Be Ours
+					q(40249,  {	-- Vengeance Will Be Ours
+						["classes"] = { 12 },
 						["qg"] = 99247,	-- Kayn Sunfury
-						["classes"] = { 12 },
 					}),
-					q(41863, {	-- Vengeance Will Be Ours
-						["qg"] = 99254,	-- Altruis the Sufferer
+					q(41863,  {	-- Vengeance Will Be Ours
 						["classes"] = { 12 },
+						["qg"] = 99254,	-- Altruis the Sufferer
 					}),
 					qa(46314, {	-- Vengeance: Seeking Kor'vas
-						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver
-						["classes"] = { 12 },
 						["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+						["classes"] = { 12 },
+						["qgs"] = { 90431, 115466 },	-- Archmage Ansirem Runeweaver
 						["u"] = 40,
 					}),
-					--q(44259),	-- Violet Hold -- granted by mission board
-					--q(44058),	-- Volpin the Elusive -- starts from all order halls
-					q(47591, {	-- Wanna Buy a Lamp?
-						["qg"] = 103792,	-- Griftah
+				--	q(44259),	-- Violet Hold -- granted by mission board
+				--	q(44058),	-- Volpin the Elusive -- starts from all order halls
+					q(47591,  {	-- Wanna Buy a Lamp?
 						["classes"] = { 4 },
+						["qg"] = 103792,	-- Griftah
 					}),
-					q(38576, {	-- We Meet at Light's Hope
-						["qgs"] = { 106209, 106834 },	-- Lord Maxwell Tyrosus
-						["classes"] = { 2 },
+					q(38576,  {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-					}),
-					q(40408, {	-- Weapons of Legend
-						["qg"] = 90369,	-- Lord Maxwell Tyrosus
 						["classes"] = { 2 },
-						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
+						["qgs"] = { 106209, 106834 },	-- Lord Maxwell Tyrosus
 					}),
-					q(40618, {	-- Weapons of Legend
-						["qg"] = 102478,	-- Emmarel Shadewarden
-						["classes"] = { 3 },
+					q(40408,  {	-- Weapons of Legend
+						["sourceQuests"] = { 38710 },	-- An Urgent Gathering
+						["classes"] = { 2 },
+						["qg"] = 90369,	-- Lord Maxwell Tyrosus
+					}),
+					q(40618,  {	-- Weapons of Legend
 						["sourceQuests"] = {
 							40384,	-- Needs of the Hunters
 							41415,	-- The Hunter's Call
 						},
+						["classes"] = { 3 },
+						["qg"] = 102478,	-- Emmarel Shadewarden
 					}),
-					q(43015, {	-- What Winstone Suggests
-						["qg"] = 98092,	-- Nikki the Gossip
-						["classes"] = { 4 },
+					q(43015,  {	-- What Winstone Suggests
 						["sourceQuests"] = { 43014 },	-- The Big Bad Wolfe
+						["classes"] = { 4 },
+						["qg"] = 98092,	-- Nikki the Gossip
 					}),
-					q(45813, {	-- Where Art Thou, My Sweet
-						["groups"] = {
+					q(45813,  {	-- Where Art Thou, My Sweet
+						["classes"] = { 2 },
+						["qg"] = 118088,	-- Maximillian of Northshire
+						["g"] = {
 							sp(234259),	-- Follower: Maximillian of Northshire
 						},
-						["qg"] = 118088,	-- Maximillian of Northshire
-						["classes"] = { 2 },
 					}),
-					q(43469, {	-- Where In the World is Mathias?
-						["qg"] = 98100,	-- Taoshi
-						["classes"] = { 4 },
+					q(43469,  {	-- Where In the World is Mathias?
 						["sourceQuests"] = { 43470 },	-- Pruning the Garden
+						["classes"] = { 4 },
+						["qg"] = 98100,	-- Taoshi
 					}),
 					qa(45190, {	-- Where it's Thinnest
 						["qg"] = 90463,	-- Archmage Karlain
 					}),
-					q(46206, {	-- Whispers of a Frightened World
-						["description"] = "Automatically given to you by Magni Bronzebeard in Dalaran",
+					q(46206,  {	-- Whispers of a Frightened World
+						["description"] = "Automatically given to you by Magni Bronzebeard in Dalaran.",
 					}),
-					q(47330, {	-- Whispers of a Frightened World
+					q(47330,  {	-- Whispers of a Frightened World
 						["qg"] = 90417,	-- Archmage Khadgar
 					}),
-					--q(45179),	-- Win the Crowd -- granted by mission board
+				--	q(45179),	-- Win the Crowd -- granted by mission board
 					qa(47019, {	-- Windwalker: Rumblings Near Feltotem
-						["qgs"] = { 90418, 115465 },	-- Archmage Modera
-						["classes"] = { 10 },
 						["sourceQuests"] = {
 							47031,	-- Legion Threat: Highmountain
 							47035,	-- Legion Threat: The Missing Mage
 						},
+						["classes"] = { 10 },
+						["qgs"] = { 90418, 115465 },	-- Archmage Modera
 					}),
-					q(44195, {	-- Workorders for Armaments
-						["qg"] = 110348,	-- Mal
+					q(44195,  {	-- Workorders for Armaments
 						["classes"] = { 4 },
+						["qg"] = 110348,	-- Mal
 					}),
-					q(45908, {	-- Xylem's Gift
+					q(45908,  {	-- Xylem's Gift
 						["qg"] = 105081,	-- Archmage Kalec
 						["u"] = 40,
 					}),
-					q(44006, {	-- Your Fullest Potential
-						["qg"] = 99531,	-- Aggra
+					q(44006,  {	-- Your Fullest Potential
 						["classes"] = { 7 },
-					}),
+						["qg"] = 99531,	-- Aggra
+					}),														
 --[[
 					The following quests have been removed from the game:
 					q(49472)	-- A Titanic Effort
@@ -3329,36 +3249,33 @@ _.Zones =
 					q(44115),	-- Welcome to Legion!
 ]]--
 				}),
-				n(-16,  {	-- Rares
+				n(-16,  {	-- Rares 
 					o(244965, {	-- Sheddle's Chest
-						["groups"] = {
+						["description"] = "Item spawns shortly after midnight on Saturday and stays up for 2 hours (during the Saturday to Sunday transition).  To find this chest you go to the upper level of the |cFFFFD700Photonic Playground|r, which is connected to the toy shop (you will know it's the right area if you see|cFFFFD700Shandy Glossgleam|r there with his pool).  You will either want to fly past |cFFFFD700Shandy Glossgleam|r or go up the stairs to reach the area.  Once you walk in you will see the chest in between a white chair and a brown chair.",
+						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
+						["g"] = {
 							i(129055),	-- Shoe Shine Kit Toy
 						},
-						["icon"] = "Interface\\Icons\\Garrison_SilverChest",
-						["description"] = "Item spawns shortly after midnight on Saturday and stays up for 2 hours (during the Saturday to Sunday transition).  To find this chest you go to the upper level of the |cFFFFD700Photonic Playground|r, which is connected to the toy shop (You will know it's the right area if you see|cFFFFD700Shandy Glossgleam|r there with his pool).  You will either want to fly past |cFFFFD700Shandy Glossgleam|r or go up the stairs to reach the area.  Once you walk in you will see the chest in between a white chair and a brown chair."
 					}),
-					{	-- Technique: Tome of the Tranquil Mind
-						["objectID"] = 257999,	-- Technique: Tome of the Tranquil Mind
+					o(257999, {	-- Technique: Tome of the Tranquil Mind
 						["requireSkill"] = 773,	-- Inscription
 						["coord"] = { 41.34, 36.05, 625 },
 						["g"] = {
-							{	-- Technique: Tome of the Tranquil Mind
-								["itemID"] = 141447,	-- Technique: Tome of the Tranquil Mind
-							},
+							i(141447),	-- Technique: Tome of the Tranquil Mind
 						},
-					},
+					}),
 					o(266851, {	-- Wand of Simulated Life
-						["groups"] = {
+						["description"] = "Item is sitting on a table upstairs in The Legerdemain Lounge.",
+						["icon"] = "Interface\\Icons\\Inv_misc_discoball_01",
+						["g"] = {
 							i(143534),	-- Wand of Simulated Life
 						},
-						["icon"] = "Interface\\Icons\\Inv_misc_discoball_01",
-						["description"] = "Item is sitting on a table upstairs in The Legerdemain Lounge.",
 					}),
 				}),
 				n(-77,  {	-- Special
-					["groups"] = {
-						n(-78, {	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
-							["groups"] = {
+					["g"] = {
+						n(-78, {	-- Lucid Nightmare Mount [Note: Drops from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
+							["g"] = {	
 								o(270885, { 	-- Inconspicuous Note
 									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
 									["questID"] = 47826,
@@ -3368,59 +3285,59 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
 									["questID"] = 47837,
 									["description"] = "|cFFFFFFFFStep 2:|r This step will require you to visit |cFFFFD700Ulduar|r.  Head to |cFFFFD700XT-002 Desconstructor's|r room.  You will then go to the upper left corner of the map where the trash pile is.  When you are looking at the trash pile you will see a broken body with blue legs on the ground.  Look directly above it and you will see a head with a |cFFFFD700Rusty Lever|r.  You want to click the lever to activate the lights in the middle of the Scrapyard.  You want to click each light in the pattern below.  The top of the pattern will be starting at the front of the instance.\n\nThe pattern will be in the shape of a 20x20 grid.\n\n0 = OFF     |cffcc33ff1|r = ON\n\n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n|cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r \n0 0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 \n0 0 |cffcc33ff1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1|r 0 0 \n0 0 0 |cffcc33ff1 1 1|r 0 |cffcc33ff1 1 1 1 1 1|r 0 |cffcc33ff1 1 1|r 0 0 0 \n0 0 0 0 |cffcc33ff1|r 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 |cffcc33ff1|r 0 0 0 0 \n0 0 0 0 0 0 0 |cffcc33ff1 1 1 1 1 1|r 0 0 0 0 0 0 0 \n\nOnce you have beaten this the next |cFFFFD700Inconspicuous Note|r will spawn in the middle. Click this to continue. The note reads...\n\n|cFFFFFFFF1000 years imprisoned.|r\n|cFFFFFFFFSurely it wears on the mind.|r",
-								}),
+								}),				
 								o(272046, {		-- Mind Larva
 									["icon"] = "Interface\\Icons\\inv_misc_food_vendor_boiledsilkwormpupa",
 									["questID"] = 47840,
 									["description"] = "|cFFFFFFFFStep 3:|r This step will require you to visit |cFFFFD700AQ40|r. Head to |cFFFFD700C'thun|r, go past his room into the room with three vendors.  Once you see the three vendors you will then go up the stairs and you will see a table that has a glowing |cFFFFD700Mind Larva|r on it.  You will click the |cFFFFD700Mind Larva|r and this will activate a game similar to the |cFFFFD700Jewelcraft|r toy.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface.  Then scroll into first person view.  You can also use right mouse button to turn your character around for easier viewing.|r\n\nUpdate: You will need to play this until you can line up five brains either horizontally or vertically.  If you find this hard to do just keep playing and you'll eventually trigger it.|r",
-								}),
+								}),				
 								o(272061, { 	-- Inconspicuous Note
 									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
 									["questID"] = 47841,
 									["description"] = "|cFFFFFFFFStep 4:|r The next |cFFFFD700Inconspicuous Note|r will spawn on the table.  Click this to continue.  The note reads...\r\r|cFFFFFFFFDeeper than deep.|r\r|cFFFFFFFFAwaits your seat.|r",
-								}),
+								}),				
 								o(272163, { 	-- Strange Skull
-									["groups"] = {
-										i(10025),  	-- Shadoweave Mask
+									["g"] = {
+										i(10025),  	-- Shadoweave Mask		
 									},
 									["icon"] = "Interface\\Icons\\INV_Misc_Bone_HumanSkull_02",
 									["questID"] = 47849,
 									["description"] = "|cFFFFFFFFStep 5:|r First things first, obtain a |cFFFFD700Shadoweave Mask|r.\n\n|cffcc33ffNote: You will need the actual item, it can not be transmogged on your character.|r\n\nThis step will require you to visit Deepholm.  Take |cFFFFD700Therazane's Throne|r portal if you have it available otherwise fly to |cFFFFFFFF58.30, 25.60|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave proceed forward.  Mount up and go to the room past the |cFFFFD700Colossal Gyreworm|r into the next cavern section. Go to the big grey rock in the center of this room at |cFFFFFFFF63.76, 22.63|r and you will see a |cFFFFD700Dark Fissure|r.  Click this fissure.  Once you click it a warning will pop up saying \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure.  You may not be able to climb back out again.  Are you very sure you want to do this?'|r\n\n|cFFFFD700Caution:|r If you are on a PvP realm be prepared to face the other faction.  It might be best finding a friend on a PVE server willing to bring their toon to Deepholm then inviting you.\n\nOnce you are in here you will see a chair just randomly sitting there.  You will want to go behind the chair and click on |cFFFFD700Dingy Plaque|r.  The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the chair seat.  Equip the Shadoweave Mask and interract with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r",
-								}),
+								}),				
 								o(272165, {		-- Inconspicuous Note
 									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
 									["questID"] = 47850,
 									["description"] = "|cFFFFFFFFStep 6:|r The next |cFFFFD700Inconspicuous Note|r spawns in front of the chair.  Click this to continue.  The note reads...\r\r|cFFFFFFFFWhere the shaded delegate may appear.|r",
-								}),
+								}),				
 								n(-81, {		-- Inconspicuous Note
-									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
+									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",	
 									["questID"] = 47852,
 									["description"] = "|cFFFFFFFFStep 7:|r This step will require you to visit |cFFFFD700Gnomeregan|r. \n\nNote:Horde players can easily get in Gnomeregan by taking the zeppelin from Orgrimmar and then use the teleporter from the Grom'gol Base Camp.\n\nOnce inside the instance go straight and jump down into the |cFFFFD700Hall of Gears|r.  From here take the winding hallway towards the |cFFFFD700Launch Bay|r.  Take a left and then another left into another set of hallways.  Left, Right, Right then forward and down, the 2nd alcove on the left will have a plaque on the wall called |cFFFFD700Instructions|r and a set of 10 |cFFFFD700Numerical Consoles|r.  Click the Instructions, they read.\n\n|cFFFFFFFF0111011 00100 10010110 1010|r\n|cFFFFFFFF11110111 01100 01111111 01000|r\n|cFFFFFFFF01101011100101 1010010110 10111101|r\n|cFFFFFFFF11001 00111111 10010 01001001|r\n|cFFFFFFFF10000 011010010110100111010110|r\n|cFFFFFFFF01011011 11110 11110001 11111|r\n|cFFFFFFFF11100000 00010 11111111 01000|r\n|cFFFFFFFF10110111 10101 01111111 00001|r\n|cFFFFFFFF10101110 11111 00110000 01000|r\n|cFFFFFFFF101101010010101110010110|r\n\n|cFFFFFFFF180|r\n\n|cFFFFFFFF+1111111111|r\n\nSetting the consoles to 1222176597 will cause the fifth |cFFFFD700Inconspicuous Note|r to spawn.\n\n|cffcc33ffNote: You can use the following scripts as macros:|r\n|cffcc33ffUp: /script SelectGossipOption(1)|r\n|cffcc33ffDown: /script SelectGossipOption(2)|r\n\nClick this to continue.  The note reads...\n\n|cFFFFFFFFGames and toys are left behind.|r\n|cFFFFFFFFWhen you awaken screaming.|r",
-								}),
+								}),						
 								n(-82, {		-- Inconspicuous Note
-									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
+									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",	
 									["questID"] = 47863,
 									["description"] = "|cFFFFFFFFStep 8:|r This step will require you to visit |cFFFFD700Val'sharah|r.  You will head to |cFFFFFFFF66.00, 36.50|r.  Inside the house is a |cFFFFD700Nightmare Tumor|r.  Click this to start the next puzzle.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface.  Then scroll into first person view.  You can also use right mouse button to turn your character around for easier viewing.|r\n\nThis puzzle is similar to |cFFFFD700Blingtron's Circuit Design Tutorial|r.\n\nThe object of the puzzle is to untangle all of the lines so that none cross each other and turn blue.  Once you complete it another |cFFFFD700Inconspicuous Note|r will appear.  Click this to continue.  The note reads...\r\r|cFFFFFFFFWhat you seek is buried within.|r",
-								}),
+								}),						
 								n(-83, {		-- Inconspicuous Note
-									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
+									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",	
 									["questID"] = 47881,
 									["description"] = "|cFFFFFFFFStep 9:|r This step will require you to visit |cFFFFD700Kun Lai Summit|r.  You will head to |cFFFFFFFF53.40, 49.00|r.  This is the entrace to the |cFFFFD700Tomb of Secrets|r.  Walk inside and there will be an |cFFFFD700Urn|r at the base of a Mogu statue that you can click.\r\r|cffcc33ffWARNING: You are about to consume the ashes of an evil sorcerer.  There is no way to tell what will happen.  Are you VERY sure you want to do this?|r\n\nYou will be teleported to the |cFFFFD700Endless Halls|r where you will have to figure a way out. \r\r1. (Optional) Download the addon |cFFFFFFFFLucid Nightmare Helper|r as it will help you with the endless maze by generating rooms as you go and you can notate special things in each one.\n2. In the Endless Halls each room is identical but some doorways will be blocked by stones. \r3. Each room has an altar in the middle, the rune can spawn on the altar and the orbs spawn on torches to each side. \r4. Most rooms will have unlit torches and no rune. \r5. The goal is to find a colored orb and then take the orb to the corresponding rune. \r6. The colors are |cFFFFD700Red, Blue, Green, Yellow, and Purple|r. \r7. Once you take each orb to each rune you will then walk through another doorway and be teleported out.\r\r|cffcc33ffNotes:|r\n|cffcc33ff1. Do not try this close to server reset, this could take easily a couple of hours to complete.\n|cffcc33ff2.If you are struggling with the maze and want to reset you need to leave the area for one hour.|r\n\nThere will be another |cFFFFD700Inconspicuous Note|r on an altar.  Click this to continue. The note reads...\n\n|cFFFFFFFFThe way is now open.|r\n|cFFFFFFFFTo the greatest secret never told.|r\n|cFFFFFFFFA fitting end to your journey.|r",
-								}),
+								}),						
 								n(-79, { 	-- Puzzler's Desire
-									["groups"] = {
+									["g"] = {
 										i(151623),	-- Lucid Nightmare Mount
 									},
 									["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
 									["questID"] = 47885,
 									["description"] = "|cFFFFFFFFStep 10:|r The last step will take you to |cFFFFD700Deadwind Pass|r.  You will head to |cFFFFFFFF39.85, 73.60|r. \n\nThis is the entrance to the Forgotten Crypt.\n\nOnce inside head down the stairs into the |cFFFFD700Well of the Forgotten|r. \nWalk into the hallway, |cFFFFD700Pauper's Walk|r and follow it into the |cFFFFD700Forgotten Crypt.|r\nTake a right and then another right into the hallway, |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tome of the Unrepentant.|r\nOpen the Gate and fall down the hole to the right. Walk into |cFFFFD700The Pit of Criminals|r.\nTurn right and go down the stairs then left and up on the top of the bone pile is the |cFFFFD700Puzzler's Desire|r.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount.|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving yet another puzzle.",
-								}),
+								}),									
 							},
 							["modelID"] = 78092,
 							["modelScale"] = .8,
-						}),
+						}),	
 						n(-80, { 	-- Riddler's Mind-Worm
-							["groups"] = {
+							["g"] = {
 								o(148502, { 	-- Page 9
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 45470,
@@ -3433,81 +3350,84 @@ _.Zones =
 									["questID"] = 47207,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 2|r This step will take us to |cFFFFD700Duskwood|r.  Head to |cFFFFFFFF49.25, 34.01|r.  |cFFFFD700Page 78|r is found on the table beside the moonwell. Click this to continue.  The page reads...\n\n|cFFFFFFFF...first of the lords to fall...|r",
+									["description"] = "|cFFFFFFFFStep 2|r This step will take us to |cFFFFD700Duskwood|r.  Head to |cFFFFFFFF49.25, 34.01|r.  |cFFFFD700Page 78|r is found on the table beside the moonwell. Click this to continue.  The page reads...\n\n|cFFFFFFFF...first of the lords to fall...|r",								
 								}),
 								o(245216, { 	-- Page 161
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47208,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 3|r This step will take us to |cFFFFD700Firelands|r.  |cFFFFD700Page 161|r will be found on the left rear side of the |cFFFFD700Ragnaros|r platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the wind, the eye...|r",
+									["description"] = "|cFFFFFFFFStep 3|r This step will take us to |cFFFFD700Firelands|r.  |cFFFFD700Page 161|r will be found on the left rear side of the |cFFFFD700Ragnaros|r platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the wind, the eye...|r",												
 								}),
 								o(251564, { 	-- Page 655
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47209,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 4|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF70.44, 78.11|r.  |cFFFFD700Page 655|r will be between the two small trees.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the plume, the tomb, a scarab moon...|r",
+									["description"] = "|cFFFFFFFFStep 4|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF70.44, 78.11|r.  |cFFFFD700Page 655|r will be between the two small trees.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the plume, the tomb, a scarab moon...|r",												
 								}),
 								o(220821, { 	-- Page 845
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47210,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 5|r This step will take us to |cFFFFD700Siege of Orgrimmar|r.  This does not spawn on LFR.  Head to the |cFFFFD700Sha of Pride|r room.  |cFFFFD700Page 845|r is found in the far back left corner of the room (southwest on the minimap).  Click this to continue.  The page reads...\n\n|cFFFFFFFF...in snow, sand, and stone...|r",
+									["description"] = "|cFFFFFFFFStep 5|r This step will take us to |cFFFFD700Siege of Orgrimmar|r.  This does not spawn on LFR.  Head to the |cFFFFD700Sha of Pride|r room.  |cFFFFD700Page 845|r is found in the far back left corner of the room (southwest on the minimap).  Click this to continue.  The page reads...\n\n|cFFFFFFFF...in snow, sand, and stone...|r",															
 								}),
 								o(220820, {		-- Page 1127
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47211,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 6|r This step will take us to the |cFFFFD700Well of Eternity|r instance in |cFFFFD700Caverns of Time|r.  Kill the first 2 bosses.  Take the drake and when you are dropped off walk to the left to the stone stairs.  |cFFFFD700Page 1127|r will be on the bottom stair next to a large stone divider.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...behold the battle, unblinking...|r",
+									["description"] = "|cFFFFFFFFStep 6|r This step will take us to the |cFFFFD700Well of Eternity|r instance in |cFFFFD700Caverns of Time|r.  Kill the first 2 bosses.  Take the drake and when you are dropped off walk to the left to the stone stairs.  |cFFFFD700Page 1127|r will be on the bottom stair next to a large stone divider.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...behold the battle, unblinking...|r",																
 								}),
 								o(19023, { 		-- Page 2351
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47212,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 7|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r.  Head to |cFFFFFFFF34.61, 50.88|r.  |cFFFFD700Page 2351|r will be between the statue's paws on the platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",
+									["description"] = "|cFFFFFFFFStep 7|r This step will take us to |cFFFFD700Kun-Lai Summit|r near the |cFFFFD700Shado-Pan Monastery|r.  Head to |cFFFFFFFF34.61, 50.88|r.  |cFFFFD700Page 2351|r will be between the statue's paws on the platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...bejeweled watcher...|r",																	
 								}),
 								o(244678, { 	-- Page 5555
 									["icon"] = "Interface\\Icons\\INV_Misc_NoteScript2d",
 									["questID"] = 47213,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 8|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF76.45, 53.67|r.  |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",
+									["description"] = "|cFFFFFFFFStep 8|r This step will take us to |cFFFFD700Uldum|r.  Head to |cFFFFFFFF76.45, 53.67|r.  |cFFFFD700Page 5555|r will be on the platform slightly offcenter in front of the left foot of the statue.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...ray of sunshine...|r",																				
 								}),
 								o(269830, { 	-- Gift of the Mind-Seekers
-									["groups"] = {
+									["g"] = {
 										i(147835),	-- Riddler's Mind Worm
 									},
 									["icon"] = "Interface\\Icons\\Trade_Archaeology_CthunsPuzzleBox",
 									["questID"] = 47214,
 									["repeatable"] = true,
 									["isWeekly"] = true,
-									["description"] = "|cFFFFFFFFStep 9|r This step will take us to |cFFFFD700Westfall|r.  Head to |cFFFFFFFF30.53, 27.56|r.  |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat.  Click this to obtain your mount.  Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",
-								}),
+									["description"] = "|cFFFFFFFFStep 9|r This step will take us to |cFFFFD700Westfall|r.  Head to |cFFFFFFFF30.53, 27.56|r.  |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat.  Click this to obtain your mount.  Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",																																									
+								}),					
 							},
 							["modelID"] = 74314,
 							["modelScale"] = .7,
 							["description"] = "Below is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
-						}),
+						}),							
 					},
 					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
-				}),
+				}),					
 				n(-2,   {	-- Vendors
-					n(93528, { 	-- Angelique Butler <First Aid Supplies>
-						i(44694),	-- Antiseptic-Soaked Dressing
-						i(44693),	-- Wound Dressing
+					n(93528,   {	-- Angelique Butler <First Aid Supplies>
+						["coord"] = { 36.6, 37.6, 627 },
+						["g"] = {
+							i(44694),	-- Antiseptic-Soaked Dressing
+							i(44693),	-- Wound Dressing
+						},
 					}),
 					nh(119486, {	-- Apothecary Lee <Legion Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 56.8, 27.8, 625 },
 						["g"] = {
 							gssh(1071, {	-- Combatant
-								["groups"] = {
+								["g"] = {
 									-- LEGION { Legion Season 1 AND 2
-									i(146159, {	-- Vindictive Combatant's Satin Armor
+									i(146159, {	-- Vindictive Combatant's Satin Armor		
 										i(135980),	-- Vindictive Combatant's Satin Hood
 										i(135983),	-- Vindictive Combatant's Satin Mantle
 										i(136870),	-- Vindictive Combatant's Drape of Piety
@@ -3517,8 +3437,8 @@ _.Zones =
 										i(135984),	-- Vindictive Combatant's Satin Cord
 										i(135981),	-- Vindictive Combatant's Satin Leggings
 										i(135978),	-- Vindictive Combatant's Satin Treads
-									}),
-									i(146157, {	-- Vindictive Combatant's Silk Armor
+									}),		
+									i(146157, {	-- Vindictive Combatant's Silk Armor		
 										i(135956),	-- Vindictive Combatant's Silk Cowl
 										i(135959),	-- Vindictive Combatant's Silk Amice
 										i(136019),	-- Vindictive Combatant's Silken Shawl
@@ -3528,8 +3448,8 @@ _.Zones =
 										i(135960),	-- Vindictive Combatant's Silk Cord
 										i(135957),	-- Vindictive Combatant's Silk Trousers
 										i(135954),	-- Vindictive Combatant's Silk Treads
-									}),
-									i(146161, {	-- Vindictive Combatant's Felweave Armor
+									}),		
+									i(146161, {	-- Vindictive Combatant's Felweave Armor		
 										i(136004),	-- Vindictive Combatant's Felweave Cowl
 										i(136007),	-- Vindictive Combatant's Felweave Amice
 										i(136882),	-- Vindictive Combatant's Felweave Cloak
@@ -3539,8 +3459,8 @@ _.Zones =
 										i(136008),	-- Vindictive Combatant's Felweave Cord
 										i(136005),	-- Vindictive Combatant's Felweave Trousers
 										i(136002),	-- Vindictive Combatant's Felweave Treads
-									}),
-									i(146169, {	-- Vindictive Combatant's Dragonhide Armor
+									}),		
+									i(146169, {	-- Vindictive Combatant's Dragonhide Armor		
 										i(135940),	-- Vindictive Combatant's Dragonhide Helm
 										i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
 										i(136022),	-- Vindictive Combatant's Dragonhide Cloak
@@ -3550,8 +3470,8 @@ _.Zones =
 										i(135944),	-- Vindictive Combatant's Dragonhide Belt
 										i(135941),	-- Vindictive Combatant's Dragonhide Legguards
 										i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
-									}),
-									i(146173, {	-- Vindictive Combatant's Leather Armor
+									}),		
+									i(146173, {	-- Vindictive Combatant's Leather Armor		
 										i(135989),	-- Vindictive Combatant's Leather Helm
 										i(135991),	-- Vindictive Combatant's Leather Spaulders
 										i(136871),	-- Vindictive Combatant's Shadowcape
@@ -3561,8 +3481,8 @@ _.Zones =
 										i(135992),	-- Vindictive Combatant's Leather Belt
 										i(135990),	-- Vindictive Combatant's Leather Legguards
 										i(135987),	-- Vindictive Combatant's Leather Slippers
-									}),
-									i(146171, {	-- Vindictive Combatant's Ironskin Armor
+									}),		
+									i(146171, {	-- Vindictive Combatant's Ironskin Armor		
 										i(135964),	-- Vindictive Combatant's Ironskin Helm
 										i(135966),	-- Vindictive Combatant's Ironskin Spaulders
 										i(136023),	-- Vindictive Combatant's Ironskin Cloak
@@ -3572,9 +3492,10 @@ _.Zones =
 										i(135968),	-- Vindictive Combatant's Ironskin Belt
 										i(135965),	-- Vindictive Combatant's Ironskin Legguards
 										i(135962),	-- Vindictive Combatant's Ironskin Slippers
-									}),
-									i(146265, {	-- Vindictive Combatant's Felskin Armor
-										["groups"] = {
+									}),		
+									i(146265, {	-- Vindictive Combatant's Felskin Armor	
+										["classes"] = { 12 },
+										["g"] = {
 											i(136305),	-- Vindictive Combatant's Felskin Helm
 											i(136308),	-- Vindictive Combatant's Felskin Spaulders
 											i(136894),	-- Vindictive Combatant's Demonthread Cloak
@@ -3585,9 +3506,8 @@ _.Zones =
 											i(136306),	-- Vindictive Combatant's Felskin Legguards
 											i(136303),	-- Vindictive Combatant's Felskin Boots
 										},
-										["classes"] = { 12 },
-									}),
-									i(146155, {	-- Vindictive Combatant's Chain Armor
+									}),		
+									i(146155, {	-- Vindictive Combatant's Chain Armor		
 										i(135949),	-- Vindictive Combatant's Chain Helm
 										i(135951),	-- Vindictive Combatant's Chain Spaulders
 										i(136026),	-- Vindictive Combatant's Drape of the Tracker
@@ -3597,8 +3517,8 @@ _.Zones =
 										i(135952),	-- Vindictive Combatant's Chain Clasp
 										i(135950),	-- Vindictive Combatant's Chain Leggings
 										i(135947),	-- Vindictive Combatant's Chain Treads
-									}),
-									i(146153, {	-- Vindictive Combatant's Ringmail Armor
+									}),		
+									i(146153, {	-- Vindictive Combatant's Ringmail Armor		
 										i(135997),	-- Vindictive Combatant's Ringmail Helm
 										i(135999),	-- Vindictive Combatant's Ringmail Spaulders
 										i(136872),	-- Vindictive Combatant's Totemic Cloak
@@ -3608,8 +3528,8 @@ _.Zones =
 										i(136000),	-- Vindictive Combatant's Ringmail Clasp
 										i(135998),	-- Vindictive Combatant's Ringmail Kilt
 										i(135995),	-- Vindictive Combatant's Ringmail Boots
-									}),
-									i(146167, {	-- Vindictive Combatant's Scaled Armor
+									}),		
+									i(146167, {	-- Vindictive Combatant's Scaled Armor		
 										i(135973),	-- Vindictive Combatant's Scaled Helm
 										i(135975),	-- Vindictive Combatant's Scaled Shoulders
 										i(136027),	-- Vindictive Combatant's Greatcloak of Faith
@@ -3619,8 +3539,8 @@ _.Zones =
 										i(135976),	-- Vindictive Combatant's Scaled Girdle
 										i(135974),	-- Vindictive Combatant's Scaled Legguards
 										i(135971),	-- Vindictive Combatant's Scaled Sabatons
-									}),
-									i(146163, {	-- Vindictive Combatant's Plate Armor
+									}),		
+									i(146163, {	-- Vindictive Combatant's Plate Armor		
 										i(136013),	-- Vindictive Combatant's Plate Helm
 										i(136015),	-- Vindictive Combatant's Plate Shoulders
 										i(136888),	-- Vindictive Combatant's Cloak of Battle
@@ -3630,8 +3550,8 @@ _.Zones =
 										i(136016),	-- Vindictive Combatant's Plate Girdle
 										i(136014),	-- Vindictive Combatant's Plate Legguards
 										i(136011),	-- Vindictive Combatant's Plate Warboots
-									}),
-									i(146165, {	-- Vindictive Combatant's Dreadplate Armor
+									}),		
+									i(146165, {	-- Vindictive Combatant's Dreadplate Armor		
 										i(135933),	-- Vindictive Combatant's Dreadplate Helm
 										i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
 										i(136018),	-- Vindictive Combatant's Dreadcloak
@@ -3643,7 +3563,7 @@ _.Zones =
 										i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
 									}),
 									-- LEGION & 4
-									i(147687, {	-- Cruel Combatant's Satin Armor
+									i(147687, {	-- Cruel Combatant's Satin Armor		
 										i(145173),	-- Cruel Combatant's Satin Hood
 										i(145179),	-- Cruel Combatant's Satin Mantle
 										i(145041),	-- Cruel Combatant's Drape of Piety
@@ -3653,8 +3573,8 @@ _.Zones =
 										i(145181),	-- Cruel Combatant's Satin Cord
 										i(145175),	-- Cruel Combatant's Satin Leggings
 										i(145169),	-- Cruel Combatant's Satin Treads
-									}),
-									i(147695, {	-- Cruel Combatant's Silk Armor
+									}),		
+									i(147695, {	-- Cruel Combatant's Silk Armor		
 										i(145119),	-- Cruel Combatant's Silk Cowl
 										i(145125),	-- Cruel Combatant's Silk Amice
 										i(145035),	-- Cruel Combatant's Silken Shawl
@@ -3664,8 +3584,8 @@ _.Zones =
 										i(145127),	-- Cruel Combatant's Silk Cord
 										i(145121),	-- Cruel Combatant's Silk Trousers
 										i(145115),	-- Cruel Combatant's Silk Treads
-									}),
-									i(147681, {	-- Cruel Combatant's Felweave Armor
+									}),		
+									i(147681, {	-- Cruel Combatant's Felweave Armor		
 										i(145245),	-- Cruel Combatant's Felweave Cowl
 										i(145251),	-- Cruel Combatant's Felweave Amice
 										i(145047),	-- Cruel Combatant's Felweave Cloak
@@ -3675,8 +3595,8 @@ _.Zones =
 										i(145253),	-- Cruel Combatant's Felweave Cord
 										i(145247),	-- Cruel Combatant's Felweave Trousers
 										i(145241),	-- Cruel Combatant's Felweave Treads
-									}),
-									i(147676, {	-- Cruel Combatant's Dragonhide Armor
+									}),		
+									i(147676, {	-- Cruel Combatant's Dragonhide Armor		
 										i(145089),	-- Cruel Combatant's Dragonhide Helm
 										i(145093),	-- Cruel Combatant's Dragonhide Spaulders
 										i(145031),	-- Cruel Combatant's Dragonhide Cloak
@@ -3686,8 +3606,8 @@ _.Zones =
 										i(145095),	-- Cruel Combatant's Dragonhide Belt
 										i(145091),	-- Cruel Combatant's Dragonhide Legguards
 										i(145085),	-- Cruel Combatant's Dragonhide Moccasins
-									}),
-									i(147686, {	-- Cruel Combatant's Leather Armor
+									}),		
+									i(147686, {	-- Cruel Combatant's Leather Armor		
 										i(145197),	-- Cruel Combatant's Leather Helm
 										i(145201),	-- Cruel Combatant's Leather Spaulders
 										i(145043),	-- Cruel Combatant's Shadowcape
@@ -3697,8 +3617,8 @@ _.Zones =
 										i(145203),	-- Cruel Combatant's Leather Belt
 										i(145199),	-- Cruel Combatant's Leather Legguards
 										i(145193),	-- Cruel Combatant's Leather Slippers
-									}),
-									i(147683, {	-- Cruel Combatant's Ironskin Armor
+									}),		
+									i(147683, {	-- Cruel Combatant's Ironskin Armor		
 										i(145135),	-- Cruel Combatant's Ironskin Helm
 										i(145139),	-- Cruel Combatant's Ironskin Spaulders
 										i(145037),	-- Cruel Combatant's Ironskin Cloak
@@ -3708,9 +3628,9 @@ _.Zones =
 										i(145143),	-- Cruel Combatant's Ironskin Belt
 										i(145137),	-- Cruel Combatant's Ironskin Legguards
 										i(145131),	-- Cruel Combatant's Ironskin Slippers
-									}),
-									i(147679, {	-- Cruel Combatant's Felskin Armor
-										["groups"] = {
+									}),		
+									i(147679, {	-- Cruel Combatant's Felskin Armor	
+										["g"] = {
 											i(145073),	-- Cruel Combatant's Felskin Helm
 											i(145077),	-- Cruel Combatant's Felskin Spaulders
 											i(145029),	-- Cruel Combatant's Demonthread Cloak
@@ -3722,8 +3642,8 @@ _.Zones =
 											i(145069),	-- Cruel Combatant's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(147690, {	-- Cruel Combatant's Chain Armor
+									}),		
+									i(147690, {	-- Cruel Combatant's Chain Armor		
 										i(145105),	-- Cruel Combatant's Chain Helm
 										i(145109),	-- Cruel Combatant's Chain Spaulders
 										i(145033),	-- Cruel Combatant's Drape of the Tracker
@@ -3733,8 +3653,8 @@ _.Zones =
 										i(145111),	-- Cruel Combatant's Chain Clasp
 										i(145107),	-- Cruel Combatant's Chain Leggings
 										i(145101),	-- Cruel Combatant's Chain Treads
-									}),
-									i(147673, {	-- Cruel Combatant's Ringmail Armor
+									}),		
+									i(147673, {	-- Cruel Combatant's Ringmail Armor		
 										i(145213),	-- Cruel Combatant's Ringmail Helm
 										i(145217),	-- Cruel Combatant's Ringmail Spaulders
 										i(145045),	-- Cruel Combatant's Totemic Cloak
@@ -3744,8 +3664,8 @@ _.Zones =
 										i(145219),	-- Cruel Combatant's Ringmail Clasp
 										i(145215),	-- Cruel Combatant's Ringmail Leggings
 										i(145209),	-- Cruel Combatant's Ringmail Boots
-									}),
-									i(147694, {	-- Cruel Combatant's Scaled Armor
+									}),		
+									i(147694, {	-- Cruel Combatant's Scaled Armor		
 										i(145159),	-- Cruel Combatant's Scaled Helm
 										i(145163),	-- Cruel Combatant's Scaled Shoulders
 										i(145039),	-- Cruel Combatant's Greatcloak of Faith
@@ -3755,8 +3675,8 @@ _.Zones =
 										i(145165),	-- Cruel Combatant's Scaled Girdle
 										i(145161),	-- Cruel Combatant's Scaled Legguards
 										i(145155),	-- Cruel Combatant's Scaled Sabatons
-									}),
-									i(147691, {	-- Cruel Combatant's Plate Armor
+									}),		
+									i(147691, {	-- Cruel Combatant's Plate Armor		
 										i(145263),	-- Cruel Combatant's Plate Helm
 										i(145267),	-- Cruel Combatant's Plate Shoulders
 										i(145049),	-- Cruel Combatant's Cloak of Battle
@@ -3766,8 +3686,8 @@ _.Zones =
 										i(145269),	-- Cruel Combatant's Plate Girdle
 										i(145265),	-- Cruel Combatant's Plate Legguards
 										i(145259),	-- Cruel Combatant's Plate Warboots
-									}),
-									i(147678, {	-- Cruel Combatant's Dreadplate Armor
+									}),		
+									i(147678, {	-- Cruel Combatant's Dreadplate Armor		
 										i(145057),	-- Cruel Combatant's Dreadplate Helm
 										i(145061),	-- Cruel Combatant's Dreadplate Shoulders
 										i(145027),	-- Cruel Combatant's Dreadcloak
@@ -3777,15 +3697,15 @@ _.Zones =
 										i(145063),	-- Cruel Combatant's Dreadplate Girdle
 										i(145059),	-- Cruel Combatant's Dreadplate Legguards
 										i(145053),	-- Cruel Combatant's Dreadplate Sabatons
-									}),
+									}),		
 								},
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 							}),
 							gssh(1414, {	-- Gladiator
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-								["groups"] = {
+								["g"] = {
 									-- LEGION { Legion Season 1 & 2
-									i(146149, {	-- Vindictive Gladiator's Satin Armor
+									i(146149, {	-- Vindictive Gladiator's Satin Armor		
 										i(135754),	-- Vindictive Gladiator's Satin Hood
 										i(135757),	-- Vindictive Gladiator's Satin Mantle
 										i(136864),	-- Vindictive Gladiator's Drape of Piety
@@ -3795,8 +3715,8 @@ _.Zones =
 										i(135758),	-- Vindictive Gladiator's Satin Cord
 										i(135755),	-- Vindictive Gladiator's Satin Leggings
 										i(135752),	-- Vindictive Gladiator's Satin Treads
-									}),
-									i(146147, {	-- Vindictive Gladiator's Silk Armor
+									}),		
+									i(146147, {	-- Vindictive Gladiator's Silk Armor		
 										i(135730),	-- Vindictive Gladiator's Silk Cowl
 										i(135733),	-- Vindictive Gladiator's Silk Amice
 										i(135793),	-- Vindictive Gladiator's Silken Shawl
@@ -3806,8 +3726,8 @@ _.Zones =
 										i(135734),	-- Vindictive Gladiator's Silk Cord
 										i(135731),	-- Vindictive Gladiator's Silk Trousers
 										i(135728),	-- Vindictive Gladiator's Silk Treads
-									}),
-									i(146151, {	-- Vindictive Gladiator's Felweave Armor
+									}),		
+									i(146151, {	-- Vindictive Gladiator's Felweave Armor		
 										i(135778),	-- Vindictive Gladiator's Felweave Cowl
 										i(135781),	-- Vindictive Gladiator's Felweave Amice
 										i(136880),	-- Vindictive Gladiator's Felweave Cloak
@@ -3817,8 +3737,8 @@ _.Zones =
 										i(135782),	-- Vindictive Gladiator's Felweave Cord
 										i(135779),	-- Vindictive Gladiator's Felweave Trousers
 										i(135776),	-- Vindictive Gladiator's Felweave Treads
-									}),
-									i(146141, {	-- Vindictive Gladiator's Dragonhide Armor
+									}),		
+									i(146141, {	-- Vindictive Gladiator's Dragonhide Armor		
 										i(135714),	-- Vindictive Gladiator's Dragonhide Helm
 										i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
 										i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -3828,8 +3748,8 @@ _.Zones =
 										i(135718),	-- Vindictive Gladiator's Dragonhide Belt
 										i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
 										i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
-									}),
-									i(146145, {	-- Vindictive Gladiator's Leather Armor
+									}),		
+									i(146145, {	-- Vindictive Gladiator's Leather Armor		
 										i(135763),	-- Vindictive Gladiator's Leather Helm
 										i(135765),	-- Vindictive Gladiator's Leather Spaulders
 										i(136865),	-- Vindictive Gladiator's Shadowcape
@@ -3839,8 +3759,8 @@ _.Zones =
 										i(135766),	-- Vindictive Gladiator's Leather Belt
 										i(135764),	-- Vindictive Gladiator's Leather Legguards
 										i(135761),	-- Vindictive Gladiator's Leather Slippers
-									}),
-									i(146143, {	-- Vindictive Gladiator's Ironskin Armor
+									}),		
+									i(146143, {	-- Vindictive Gladiator's Ironskin Armor		
 										i(135738),	-- Vindictive Gladiator's Ironskin Helm
 										i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
 										i(135797),	-- Vindictive Gladiator's Ironskin Cloak
@@ -3850,8 +3770,8 @@ _.Zones =
 										i(135742),	-- Vindictive Gladiator's Ironskin Belt
 										i(135739),	-- Vindictive Gladiator's Ironskin Legguards
 										i(135736),	-- Vindictive Gladiator's Ironskin Slippers
-									}),
-									i(146263, {	-- Vindictive Gladiator's Felskin Armor
+									}),		
+									i(146263, {	-- Vindictive Gladiator's Felskin Armor		
 										i(136289),	-- Vindictive Gladiator's Felskin Helm
 										i(136292),	-- Vindictive Gladiator's Felskin Spaulders
 										i(136892),	-- Vindictive Gladiator's Demonthread Cloak
@@ -3861,8 +3781,8 @@ _.Zones =
 										i(136293),	-- Vindictive Gladiator's Felskin Belt
 										i(136290),	-- Vindictive Gladiator's Felskin Legguards
 										i(136287),	-- Vindictive Gladiator's Felskin Boots
-									}),
-									i(146139, {	-- Vindictive Gladiator's Chain Armor
+									}),		
+									i(146139, {	-- Vindictive Gladiator's Chain Armor		
 										i(135723),	-- Vindictive Gladiator's Chain Helm
 										i(135725),	-- Vindictive Gladiator's Chain Spaulders
 										i(135800),	-- Vindictive Gladiator's Drape of the Tracker
@@ -3872,8 +3792,8 @@ _.Zones =
 										i(135726),	-- Vindictive Gladiator's Chain Clasp
 										i(135724),	-- Vindictive Gladiator's Chain Leggings
 										i(135721),	-- Vindictive Gladiator's Chain Treads
-									}),
-									i(146137, {	-- Vindictive Gladiator's Ringmail Armor
+									}),		
+									i(146137, {	-- Vindictive Gladiator's Ringmail Armor		
 										i(135771),	-- Vindictive Gladiator's Ringmail Helm
 										i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
 										i(136866),	-- Vindictive Gladiator's Totemic Cloak
@@ -3883,8 +3803,8 @@ _.Zones =
 										i(135774),	-- Vindictive Gladiator's Ringmail Clasp
 										i(135772),	-- Vindictive Gladiator's Ringmail Kilt
 										i(135769),	-- Vindictive Gladiator's Ringmail Boots
-									}),
-									i(146135, {	-- Vindictive Gladiator's Scaled Armor
+									}),		
+									i(146135, {	-- Vindictive Gladiator's Scaled Armor		
 										i(135747),	-- Vindictive Gladiator's Scaled Helm
 										i(135749),	-- Vindictive Gladiator's Scaled Shoulders
 										i(135801),	-- Vindictive Gladiator's Greatcloak of Faith
@@ -3894,8 +3814,8 @@ _.Zones =
 										i(135750),	-- Vindictive Gladiator's Scaled Girdle
 										i(135748),	-- Vindictive Gladiator's Scaled Legguards
 										i(135745),	-- Vindictive Gladiator's Scaled Sabatons
-									}),
-									i(146131, {	-- Vindictive Gladiator's Plate Armor
+									}),		
+									i(146131, {	-- Vindictive Gladiator's Plate Armor		
 										i(135787),	-- Vindictive Gladiator's Plate Helm
 										i(135789),	-- Vindictive Gladiator's Plate Shoulders
 										i(136886),	-- Vindictive Gladiator's Cloak of Battle
@@ -3905,8 +3825,8 @@ _.Zones =
 										i(135790),	-- Vindictive Gladiator's Plate Girdle
 										i(135788),	-- Vindictive Gladiator's Plate Legguards
 										i(135785),	-- Vindictive Gladiator's Plate Warboots
-									}),
-									i(146133, {	-- Vindictive Gladiator's Dreadplate Armor
+									}),		
+									i(146133, {	-- Vindictive Gladiator's Dreadplate Armor		
 										i(135707),	-- Vindictive Gladiator's Dreadplate Helm
 										i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
 										i(135792),	-- Vindictive Gladiator's Dreadcloak
@@ -3916,10 +3836,10 @@ _.Zones =
 										i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
 										i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
 										i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
-
+										
 									}),
 									-- LEGION & 4
-									i(147664, {	-- Cruel Gladiator's Satin Armor
+									i(147664, {	-- Cruel Gladiator's Satin Armor		
 										i(144681),	-- Cruel Gladiator's Satin Hood
 										i(144687),	-- Cruel Gladiator's Satin Mantle
 										i(144549),	-- Cruel Gladiator's Drape of Piety
@@ -3929,8 +3849,8 @@ _.Zones =
 										i(144689),	-- Cruel Gladiator's Satin Cord
 										i(144683),	-- Cruel Gladiator's Satin Leggings
 										i(144677),	-- Cruel Gladiator's Satin Treads
-									}),
-									i(147667, {	-- Cruel Gladiator's Silk Armor
+									}),		
+									i(147667, {	-- Cruel Gladiator's Silk Armor		
 										i(144627),	-- Cruel Gladiator's Silk Cowl
 										i(144633),	-- Cruel Gladiator's Silk Amice
 										i(144543),	-- Cruel Gladiator's Silken Shawl
@@ -3940,8 +3860,8 @@ _.Zones =
 										i(144635),	-- Cruel Gladiator's Silk Cord
 										i(144629),	-- Cruel Gladiator's Silk Trousers
 										i(144623),	-- Cruel Gladiator's Silk Treads
-									}),
-									i(147654, {	-- Cruel Gladiator's Felweave Armor
+									}),		
+									i(147654, {	-- Cruel Gladiator's Felweave Armor		
 										i(144753),	-- Cruel Gladiator's Felweave Cowl
 										i(144759),	-- Cruel Gladiator's Felweave Amice
 										i(144555),	-- Cruel Gladiator's Felweave Cloak
@@ -3951,8 +3871,8 @@ _.Zones =
 										i(144761),	-- Cruel Gladiator's Felweave Cord
 										i(144755),	-- Cruel Gladiator's Felweave Trousers
 										i(144749),	-- Cruel Gladiator's Felweave Treads
-									}),
-									i(147648, {	-- Cruel Gladiator's Dragonhide Armor
+									}),		
+									i(147648, {	-- Cruel Gladiator's Dragonhide Armor		
 										i(144597),	-- Cruel Gladiator's Dragonhide Helm
 										i(144601),	-- Cruel Gladiator's Dragonhide Spaulders
 										i(144539),	-- Cruel Gladiator's Dragonhide Cloak
@@ -3962,8 +3882,8 @@ _.Zones =
 										i(144603),	-- Cruel Gladiator's Dragonhide Belt
 										i(144599),	-- Cruel Gladiator's Dragonhide Legguards
 										i(144593),	-- Cruel Gladiator's Dragonhide Moccasins
-									}),
-									i(147658, {	-- Cruel Gladiator's Leather Armor
+									}),		
+									i(147658, {	-- Cruel Gladiator's Leather Armor		
 										i(144705),	-- Cruel Gladiator's Leather Helm
 										i(144709),	-- Cruel Gladiator's Leather Spaulders
 										i(144551),	-- Cruel Gladiator's Shadowcape
@@ -3973,8 +3893,8 @@ _.Zones =
 										i(144711),	-- Cruel Gladiator's Leather Belt
 										i(144707),	-- Cruel Gladiator's Leather Legguards
 										i(144701),	-- Cruel Gladiator's Leather Slippers
-									}),
-									i(147655, {	-- Cruel Gladiator's Ironskin Armor
+									}),		
+									i(147655, {	-- Cruel Gladiator's Ironskin Armor		
 										i(144643),	-- Cruel Gladiator's Ironskin Helm
 										i(144647),	-- Cruel Gladiator's Ironskin Spaulders
 										i(144545),	-- Cruel Gladiator's Ironskin Cloak
@@ -3984,8 +3904,8 @@ _.Zones =
 										i(144651),	-- Cruel Gladiator's Ironskin Belt
 										i(144645),	-- Cruel Gladiator's Ironskin Legguards
 										i(144639),	-- Cruel Gladiator's Ironskin Slippers
-									}),
-									i(147652, {	-- Cruel Gladiator's Felskin Armor
+									}),		
+									i(147652, {	-- Cruel Gladiator's Felskin Armor		
 										i(144581),	-- Cruel Gladiator's Felskin Helm
 										i(144585),	-- Cruel Gladiator's Felskin Spaulders
 										i(144537),	-- Cruel Gladiator's Demonthread Cloak
@@ -3995,8 +3915,8 @@ _.Zones =
 										i(144587),	-- Cruel Gladiator's Felskin Belt
 										i(144583),	-- Cruel Gladiator's Felskin Legguards
 										i(144577),	-- Cruel Gladiator's Felskin Boots
-									}),
-									i(147645, {	-- Cruel Gladiator's Chain Armor
+									}),		
+									i(147645, {	-- Cruel Gladiator's Chain Armor		
 										i(144613),	-- Cruel Gladiator's Chain Helm
 										i(144617),	-- Cruel Gladiator's Chain Spaulders
 										i(144541),	-- Cruel Gladiator's Drape of the Tracker
@@ -4006,8 +3926,8 @@ _.Zones =
 										i(144619),	-- Cruel Gladiator's Chain Clasp
 										i(144615),	-- Cruel Gladiator's Chain Leggings
 										i(144609),	-- Cruel Gladiator's Chain Treads
-									}),
-									i(147662, {	-- Cruel Gladiator's Ringmail Armor
+									}),		
+									i(147662, {	-- Cruel Gladiator's Ringmail Armor		
 										i(144721),	-- Cruel Gladiator's Ringmail Helm
 										i(144725),	-- Cruel Gladiator's Ringmail Spaulders
 										i(144553),	-- Cruel Gladiator's Totemic Cloak
@@ -4017,8 +3937,8 @@ _.Zones =
 										i(144727),	-- Cruel Gladiator's Ringmail Clasp
 										i(144723),	-- Cruel Gladiator's Ringmail Kilt
 										i(144717),	-- Cruel Gladiator's Ringmail Boots
-									}),
-									i(147666, {	-- Cruel Gladiator's Scaled Armor
+									}),		
+									i(147666, {	-- Cruel Gladiator's Scaled Armor		
 										i(144666),	-- Cruel Gladiator's Scaled Helm
 										i(144671),	-- Cruel Gladiator's Scaled Shoulders
 										i(144547),	-- Cruel Gladiator's Greatcloak of Faith
@@ -4028,8 +3948,8 @@ _.Zones =
 										i(144673),	-- Cruel Gladiator's Scaled Girdle
 										i(144668),	-- Cruel Gladiator's Scaled Legguards
 										i(144662),	-- Cruel Gladiator's Scaled Sabatons
-									}),
-									i(147659, {	-- Cruel Gladiator's Plate Gaun Armor
+									}),		
+									i(147659, {	-- Cruel Gladiator's Plate Gaun Armor		
 										i(144769),	-- Cruel Gladiator's Plate Gauntlets
 										i(144773),	-- Cruel Gladiator's Plate Legguards
 										i(144557),	-- Cruel Gladiator's Cloak of Battle
@@ -4039,8 +3959,8 @@ _.Zones =
 										i(144775),	-- Cruel Gladiator's Plate Shoulders
 										i(144771),	-- Cruel Gladiator's Plate Helm
 										i(144765),	-- Cruel Gladiator's Plate Chestpiece
-									}),
-									i(147649, {	-- Cruel Gladiator's Dreadplate Armor
+									}),		
+									i(147649, {	-- Cruel Gladiator's Dreadplate Armor		
 										i(144565),	-- Cruel Gladiator's Dreadplate Helm
 										i(144569),	-- Cruel Gladiator's Dreadplate Shoulders
 										i(144535),	-- Cruel Gladiator's Dreadcloak
@@ -4067,22 +3987,17 @@ _.Zones =
 							}),
 						},
 					}),
-					{	-- Arcanomancer Vridiel <Blacksmithing Trainer>
-						["npcID"] = 106655,	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+					n(106655,  {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 						["currencyID"] = 1533,	-- Wakening Essences
-						["coords"] = {
-							{ 45.21, 29.11, 627 },
-						},
+						["coord"] = { 45.21, 29.11, 627 },
 						["g"] = {
-							{	-- Awoken Titan Essence
-								["itemID"] = 154879,	-- Awoken Titan Essence
+							i(154879, {	-- Awoken Titan Essence
 								["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
-							},
-							{	-- Purified Titan Essence
-								["itemID"] = 157796,	-- Purified Titan Essence
+							}),
+							i(157796, {	-- Purified Titan Essence
 								["description"] = "If you still have this item, refer to the BoA tokens to know what you can get for your class. If you already know all of the legendaries for your class, this item will give you a random BoA token instead.",
 								["u"] = 1,
-							},
+							}),
 							i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
 								i(132459),	-- Perseverance of the Ebon Martyr
 								i(144280),	-- Death March
@@ -4118,7 +4033,7 @@ _.Zones =
 								i(137109),	-- X'anshi, Shroud of Archbishop Benedictus
 								i(144438),	-- Zeks Exterminatus
 								i(132861),	-- Estel, Dejahna's Inspiration
-								i(151814),	-- Heart of the Void
+								i(151814),	-- Heart of the Void					
 								i(132409),	-- Anund's Seared Shackles
 								i(132450),	-- Muze's Unwavering Will
 								i(132436),	-- Skjoldr, Sanctuary of Ivangont
@@ -4379,7 +4294,7 @@ _.Zones =
 								i(137060),	-- Archavon's Heavy Hand
 								i(137108),	-- Kakushan's Stormscale Gauntlets
 								i(137087),	-- Naj'entus's Vertebrae
-								i(137089),	-- Thundergod's Vigor
+								i(137089),	-- Thundergod's Vigor 
 								i(151822),	-- Ararat's Bloodmirror
 								i(151824),	-- Valarjar Berserkers
 								i(137077),	-- Weight of the Earth
@@ -4393,7 +4308,7 @@ _.Zones =
 								i(137054),	-- The Walls Fell
 							}),
 						},
-					},
+					}),
 					n(96979, { 	-- Bragund Brightlink <Mail Armor Merchant>
 						i(50993),	-- Band of the Night Raven
 						i(50980),	-- Blizzard Keeper's Mitts
@@ -4444,7 +4359,7 @@ _.Zones =
 						i(45360),	-- Valorous Scourgestalker Handguards
 						i(45361),	-- Valorous Scourgestalker Headpiece
 						i(45362),	-- Valorous Scourgestalker Legguards
-						i(45402),	-- Valorous Worldbreaker Headpiece
+						i(45402),	-- Valorous Worldbreaker Headpiece				
 						i(45364),	-- Valorous Scourgestalker Tunic
 						i(45401),	-- Valorous Worldbreaker Handguards
 						i(40515),	-- Valorous Earthshatter Gloves
@@ -4522,7 +4437,7 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- Legion { Legion Season 1 & 2
-									i(146236, {	-- Vindictive Gladiator's Satin Armor
+									i(146236, {	-- Vindictive Gladiator's Satin Armor		
 										i(136093),	-- Vindictive Gladiator's Satin Hood
 										i(136096),	-- Vindictive Gladiator's Satin Mantle
 										i(136873),	-- Vindictive Gladiator's Drape of Piety
@@ -4532,8 +4447,8 @@ _.Zones =
 										i(136097),	-- Vindictive Gladiator's Satin Cord
 										i(136094),	-- Vindictive Gladiator's Satin Leggings
 										i(136091),	-- Vindictive Gladiator's Satin Treads
-									}),
-									i(146234, {	-- Vindictive Gladiator's Silk Armor
+									}),		
+									i(146234, {	-- Vindictive Gladiator's Silk Armor		
 										i(136069),	-- Vindictive Gladiator's Silk Cowl
 										i(136072),	-- Vindictive Gladiator's Silk Amice
 										i(136132),	-- Vindictive Gladiator's Silken Shawl
@@ -4543,8 +4458,8 @@ _.Zones =
 										i(136073),	-- Vindictive Gladiator's Silk Cord
 										i(136070),	-- Vindictive Gladiator's Silk Trousers
 										i(136067),	-- Vindictive Gladiator's Silk Treads
-									}),
-									i(146238, {	-- Vindictive Gladiator's Felweave Armor
+									}),		
+									i(146238, {	-- Vindictive Gladiator's Felweave Armor		
 										i(136117),	-- Vindictive Gladiator's Felweave Cowl
 										i(136120),	-- Vindictive Gladiator's Felweave Amice
 										i(136883),	-- Vindictive Gladiator's Felweave Cloak
@@ -4554,8 +4469,8 @@ _.Zones =
 										i(136121),	-- Vindictive Gladiator's Felweave Cord
 										i(136118),	-- Vindictive Gladiator's Felweave Trousers
 										i(136115),	-- Vindictive Gladiator's Felweave Treads
-									}),
-									i(146228, {	-- Vindictive Gladiator's Dragonhide Armor
+									}),		
+									i(146228, {	-- Vindictive Gladiator's Dragonhide Armor		
 										i(136053),	-- Vindictive Gladiator's Dragonhide Helm
 										i(136056),	-- Vindictive Gladiator's Dragonhide Spaulders
 										i(136135),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -4565,8 +4480,8 @@ _.Zones =
 										i(136057),	-- Vindictive Gladiator's Dragonhide Belt
 										i(136054),	-- Vindictive Gladiator's Dragonhide Legguards
 										i(136051),	-- Vindictive Gladiator's Dragonhide Moccasins
-									}),
-									i(146232, {	-- Vindictive Gladiator's Leather Armor
+									}),		
+									i(146232, {	-- Vindictive Gladiator's Leather Armor		
 										i(136102),	-- Vindictive Gladiator's Leather Helm
 										i(136104),	-- Vindictive Gladiator's Leather Spaulders
 										i(136874),	-- Vindictive Gladiator's Shadowcape
@@ -4576,8 +4491,8 @@ _.Zones =
 										i(136105),	-- Vindictive Gladiator's Leather Belt
 										i(136103),	-- Vindictive Gladiator's Leather Legguards
 										i(136100),	-- Vindictive Gladiator's Leather Slippers
-									}),
-									i(146230, {	-- Vindictive Gladiator's Ironskin Armor
+									}),		
+									i(146230, {	-- Vindictive Gladiator's Ironskin Armor		
 										i(136077),	-- Vindictive Gladiator's Ironskin Helm
 										i(136079),	-- Vindictive Gladiator's Ironskin Spaulders
 										i(136136),	-- Vindictive Gladiator's Ironskin Cloak
@@ -4587,9 +4502,9 @@ _.Zones =
 										i(136081),	-- Vindictive Gladiator's Ironskin Belt
 										i(136078),	-- Vindictive Gladiator's Ironskin Legguards
 										i(136075),	-- Vindictive Gladiator's Ironskin Slippers
-									}),
-									i(146270, {	-- Vindictive Gladiator's Felskin Armor
-										["groups"] = {
+									}),		
+									i(146270, {	-- Vindictive Gladiator's Felskin Armor		
+										["g"] = {
 											i(136313),	-- Vindictive Gladiator's Felskin Helm
 											i(136316),	-- Vindictive Gladiator's Felskin Spaulders
 											i(136895),	-- Vindictive Gladiator's Demonthread Cloak
@@ -4601,8 +4516,8 @@ _.Zones =
 											i(136311),	-- Vindictive Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(146226, {	-- Vindictive Gladiator's Chain Armor
+									}),		
+									i(146226, {	-- Vindictive Gladiator's Chain Armor		
 										i(136062),	-- Vindictive Gladiator's Chain Helm
 										i(136064),	-- Vindictive Gladiator's Chain Spaulders
 										i(136139),	-- Vindictive Gladiator's Drape of the Tracker
@@ -4612,8 +4527,8 @@ _.Zones =
 										i(136065),	-- Vindictive Gladiator's Chain Clasp
 										i(136063),	-- Vindictive Gladiator's Chain Leggings
 										i(136060),	-- Vindictive Gladiator's Chain Treads
-									}),
-									i(146224, {	-- Vindictive Gladiator's Ringmail Armor
+									}),		
+									i(146224, {	-- Vindictive Gladiator's Ringmail Armor		
 										i(136110),	-- Vindictive Gladiator's Ringmail Helm
 										i(136112),	-- Vindictive Gladiator's Ringmail Spaulders
 										i(136875),	-- Vindictive Gladiator's Totemic Cloak
@@ -4623,8 +4538,8 @@ _.Zones =
 										i(136113),	-- Vindictive Gladiator's Ringmail Clasp
 										i(136111),	-- Vindictive Gladiator's Ringmail Kilt
 										i(136108),	-- Vindictive Gladiator's Ringmail Boots
-									}),
-									i(146222, {	-- Vindictive Gladiator's Scaled Armor
+									}),		
+									i(146222, {	-- Vindictive Gladiator's Scaled Armor		
 										i(136086),	-- Vindictive Gladiator's Scaled Helm
 										i(136088),	-- Vindictive Gladiator's Scaled Shoulders
 										i(136140),	-- Vindictive Gladiator's Greatcloak of Faith
@@ -4634,8 +4549,8 @@ _.Zones =
 										i(136089),	-- Vindictive Gladiator's Scaled Girdle
 										i(136087),	-- Vindictive Gladiator's Scaled Legguards
 										i(136084),	-- Vindictive Gladiator's Scaled Sabatons
-									}),
-									i(146218, {	-- Vindictive Gladiator's Plate Armor
+									}),		
+									i(146218, {	-- Vindictive Gladiator's Plate Armor		
 										i(136126),	-- Vindictive Gladiator's Plate Helm
 										i(136128),	-- Vindictive Gladiator's Plate Shoulders
 										i(136889),	-- Vindictive Gladiator's Cloak of Battle
@@ -4645,8 +4560,8 @@ _.Zones =
 										i(136129),	-- Vindictive Gladiator's Plate Girdle
 										i(136127),	-- Vindictive Gladiator's Plate Legguards
 										i(136124),	-- Vindictive Gladiator's Plate Warboots
-									}),
-									i(146220, {	-- Vindictive Gladiator's Dreadplate Armor
+									}),		
+									i(146220, {	-- Vindictive Gladiator's Dreadplate Armor		
 										i(136046),	-- Vindictive Gladiator's Dreadplate Helm
 										i(136048),	-- Vindictive Gladiator's Dreadplate Shoulders
 										i(136131),	-- Vindictive Gladiator's Dreadcloak
@@ -4656,9 +4571,9 @@ _.Zones =
 										i(136049),	-- Vindictive Gladiator's Dreadplate Girdle
 										i(136047),	-- Vindictive Gladiator's Dreadplate Legguards
 										i(136044),	-- Vindictive Gladiator's Dreadplate Sabatons
-									}),
+									}),			
 									-- LEGION 3 & 4
-									i(147640, {	-- Cruel Gladiator's Satin Armor
+									i(147640, {	-- Cruel Gladiator's Satin Armor		
 										i(144926),	-- Cruel Gladiator's Satin Hood
 										i(144932),	-- Cruel Gladiator's Satin Mantle
 										i(144794),	-- Cruel Gladiator's Drape of Piety
@@ -4668,8 +4583,8 @@ _.Zones =
 										i(144934),	-- Cruel Gladiator's Satin Cord
 										i(144928),	-- Cruel Gladiator's Satin Leggings
 										i(144922),	-- Cruel Gladiator's Satin Treads
-									}),
-									i(147644, {	-- Cruel Gladiator's Silk Armor
+									}),		
+									i(147644, {	-- Cruel Gladiator's Silk Armor		
 										i(144872),	-- Cruel Gladiator's Silk Cowl
 										i(144878),	-- Cruel Gladiator's Silk Amice
 										i(144788),	-- Cruel Gladiator's Silken Shawl
@@ -4679,8 +4594,8 @@ _.Zones =
 										i(144880),	-- Cruel Gladiator's Silk Cord
 										i(144874),	-- Cruel Gladiator's Silk Trousers
 										i(144868),	-- Cruel Gladiator's Silk Treads
-									}),
-									i(147629, {	-- Cruel Gladiator's Felweave Armor
+									}),		
+									i(147629, {	-- Cruel Gladiator's Felweave Armor		
 										i(144998),	-- Cruel Gladiator's Felweave Cowl
 										i(145004),	-- Cruel Gladiator's Felweave Amice
 										i(144800),	-- Cruel Gladiator's Felweave Cloak
@@ -4690,8 +4605,8 @@ _.Zones =
 										i(145006),	-- Cruel Gladiator's Felweave Cord
 										i(145000),	-- Cruel Gladiator's Felweave Trousers
 										i(144994),	-- Cruel Gladiator's Felweave Treads
-									}),
-									i(147623, {	-- Cruel Gladiator's Dragonhide Armor
+									}),		
+									i(147623, {	-- Cruel Gladiator's Dragonhide Armor		
 										i(144842),	-- Cruel Gladiator's Dragonhide Helm
 										i(144846),	-- Cruel Gladiator's Dragonhide Spaulders
 										i(144784),	-- Cruel Gladiator's Dragonhide Cloak
@@ -4701,8 +4616,8 @@ _.Zones =
 										i(144848),	-- Cruel Gladiator's Dragonhide Belt
 										i(144844),	-- Cruel Gladiator's Dragonhide Legguards
 										i(144838),	-- Cruel Gladiator's Dragonhide Moccasins
-									}),
-									i(147634, {	-- Cruel Gladiator's Leather Armor
+									}),		
+									i(147634, {	-- Cruel Gladiator's Leather Armor		
 										i(144950),	-- Cruel Gladiator's Leather Helm
 										i(144954),	-- Cruel Gladiator's Leather Spaulders
 										i(144796),	-- Cruel Gladiator's Shadowcape
@@ -4712,8 +4627,8 @@ _.Zones =
 										i(144956),	-- Cruel Gladiator's Leather Belt
 										i(144952),	-- Cruel Gladiator's Leather Legguards
 										i(144946),	-- Cruel Gladiator's Leather Slippers
-									}),
-									i(147632, {	-- Cruel Gladiator's Ironskin Armor
+									}),		
+									i(147632, {	-- Cruel Gladiator's Ironskin Armor		
 										i(144888),	-- Cruel Gladiator's Ironskin Helm
 										i(144892),	-- Cruel Gladiator's Ironskin Spaulders
 										i(144790),	-- Cruel Gladiator's Ironskin Cloak
@@ -4723,9 +4638,9 @@ _.Zones =
 										i(144896),	-- Cruel Gladiator's Ironskin Belt
 										i(144890),	-- Cruel Gladiator's Ironskin Legguards
 										i(144884),	-- Cruel Gladiator's Ironskin Slippers
-									}),
+									}),		
 									i(147627, {	-- Cruel Gladiator's Felskin Armor
-										["groups"] = {
+										["g"] = {
 											i(144826),	-- Cruel Gladiator's Felskin Helm
 											i(144830),	-- Cruel Gladiator's Felskin Spaulders
 											i(144782),	-- Cruel Gladiator's Demonthread Cloak
@@ -4737,8 +4652,8 @@ _.Zones =
 											i(144822),	-- Cruel Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(147621, {	-- Cruel Gladiator's Chain Armor
+									}),		
+									i(147621, {	-- Cruel Gladiator's Chain Armor		
 										i(144858),	-- Cruel Gladiator's Chain Helm
 										i(144862),	-- Cruel Gladiator's Chain Spaulders
 										i(144786),	-- Cruel Gladiator's Drape of the Tracker
@@ -4748,8 +4663,8 @@ _.Zones =
 										i(144864),	-- Cruel Gladiator's Chain Clasp
 										i(144860),	-- Cruel Gladiator's Chain Leggings
 										i(144854),	-- Cruel Gladiator's Chain Treads
-									}),
-									i(147637, {	-- Cruel Gladiator's Ringmail Armor
+									}),		
+									i(147637, {	-- Cruel Gladiator's Ringmail Armor		
 										i(144966),	-- Cruel Gladiator's Ringmail Helm
 										i(144970),	-- Cruel Gladiator's Ringmail Spaulders
 										i(144798),	-- Cruel Gladiator's Totemic Cloak
@@ -4759,8 +4674,8 @@ _.Zones =
 										i(144972),	-- Cruel Gladiator's Ringmail Clasp
 										i(144968),	-- Cruel Gladiator's Ringmail Kilt
 										i(144962),	-- Cruel Gladiator's Ringmail Boots
-									}),
-									i(147642, {	-- Cruel Gladiator's Scaled Armor
+									}),		
+									i(147642, {	-- Cruel Gladiator's Scaled Armor		
 										i(144912),	-- Cruel Gladiator's Scaled Helm
 										i(144916),	-- Cruel Gladiator's Scaled Shoulders
 										i(144792),	-- Cruel Gladiator's Greatcloak of Faith
@@ -4770,8 +4685,8 @@ _.Zones =
 										i(144918),	-- Cruel Gladiator's Scaled Girdle
 										i(144914),	-- Cruel Gladiator's Scaled Legguards
 										i(144908),	-- Cruel Gladiator's Scaled Sabatons
-									}),
-									i(147636, {	-- Cruel Gladiator's Plate Armor
+									}),		
+									i(147636, {	-- Cruel Gladiator's Plate Armor		
 										i(145016),	-- Cruel Gladiator's Plate Helm
 										i(145020),	-- Cruel Gladiator's Plate Shoulders
 										i(144802),	-- Cruel Gladiator's Cloak of Battle
@@ -4781,8 +4696,8 @@ _.Zones =
 										i(145022),	-- Cruel Gladiator's Plate Girdle
 										i(145018),	-- Cruel Gladiator's Plate Legguards
 										i(145012),	-- Cruel Gladiator's Plate Warboots
-									}),
-									i(147625, {	-- Cruel Gladiator's Dreadplate Armor
+									}),		
+									i(147625, {	-- Cruel Gladiator's Dreadplate Armor		
 										i(144810),	-- Cruel Gladiator's Dreadplate Helm
 										i(144814),	-- Cruel Gladiator's Dreadplate Shoulders
 										i(144780),	-- Cruel Gladiator's Dreadcloak
@@ -4792,7 +4707,7 @@ _.Zones =
 										i(144816),	-- Cruel Gladiator's Dreadplate Girdle
 										i(144812),	-- Cruel Gladiator's Dreadplate Legguards
 										i(144806),	-- Cruel Gladiator's Dreadplate Sabatons
-									}),
+									}),		
 								},
 							}),
 						},
@@ -5133,9 +5048,9 @@ _.Zones =
 						["coord"] = { 29.6, 75.0, 625 },
 						["g"] = {
 							gssh(1071, {	-- Combatant
-								["groups"] = {
+								["g"] = {
 									-- LEGION { Legion Season 1 & 2
-									i(146158, {	-- Vindictive Combatant's Satin Armor
+									i(146158, {	-- Vindictive Combatant's Satin Armor		
 										i(135867),	-- Vindictive Combatant's Satin Hood
 										i(135870),	-- Vindictive Combatant's Satin Mantle
 										i(136867),	-- Vindictive Combatant's Drape of Piety
@@ -5145,8 +5060,8 @@ _.Zones =
 										i(135871),	-- Vindictive Combatant's Satin Cord
 										i(135868),	-- Vindictive Combatant's Satin Leggings
 										i(135865),	-- Vindictive Combatant's Satin Treads
-									}),
-									i(146156, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146156, {	-- Vindictive Combatant's Satin Armor		
 										i(135843),	-- Vindictive Combatant's Silk Cowl
 										i(135846),	-- Vindictive Combatant's Silk Amice
 										i(135906),	-- Vindictive Combatant's Silken Shawl
@@ -5156,8 +5071,8 @@ _.Zones =
 										i(135847),	-- Vindictive Combatant's Silk Cord
 										i(135844),	-- Vindictive Combatant's Silk Trousers
 										i(135841),	-- Vindictive Combatant's Silk Treads
-									}),
-									i(146160, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146160, {	-- Vindictive Combatant's Satin Armor		
 										i(135891),	-- Vindictive Combatant's Felweave Cowl
 										i(135894),	-- Vindictive Combatant's Felweave Amice
 										i(136881),	-- Vindictive Combatant's Felweave Cloak
@@ -5167,8 +5082,8 @@ _.Zones =
 										i(135895),	-- Vindictive Combatant's Felweave Cord
 										i(135892),	-- Vindictive Combatant's Felweave Trousers
 										i(135889),	-- Vindictive Combatant's Felweave Treads
-									}),
-									i(146168, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146168, {	-- Vindictive Combatant's Satin Armor		
 										i(135827),	-- Vindictive Combatant's Dragonhide Helm
 										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
 										i(135909),	-- Vindictive Combatant's Dragonhide Cloak
@@ -5178,8 +5093,8 @@ _.Zones =
 										i(135831),	-- Vindictive Combatant's Dragonhide Belt
 										i(135828),	-- Vindictive Combatant's Dragonhide Legguards
 										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
-									}),
-									i(146172, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146172, {	-- Vindictive Combatant's Satin Armor		
 										i(135876),	-- Vindictive Combatant's Leather Helm
 										i(135878),	-- Vindictive Combatant's Leather Spaulders
 										i(136868),	-- Vindictive Combatant's Shadowcape
@@ -5189,8 +5104,8 @@ _.Zones =
 										i(135879),	-- Vindictive Combatant's Leather Belt
 										i(135877),	-- Vindictive Combatant's Leather Legguards
 										i(135874),	-- Vindictive Combatant's Leather Slippers
-									}),
-									i(146170, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146170, {	-- Vindictive Combatant's Satin Armor		
 										i(135851),	-- Vindictive Combatant's Ironskin Helm
 										i(135853),	-- Vindictive Combatant's Ironskin Spaulders
 										i(135910),	-- Vindictive Combatant's Ironskin Cloak
@@ -5200,9 +5115,9 @@ _.Zones =
 										i(135855),	-- Vindictive Combatant's Ironskin Belt
 										i(135852),	-- Vindictive Combatant's Ironskin Legguards
 										i(135849),	-- Vindictive Combatant's Ironskin Slippers
-									}),
-									i(146264, {	-- Vindictive Combatant's Satin Armor
-										["groups"] = {
+									}),		
+									i(146264, {	-- Vindictive Combatant's Satin Armor		
+										["g"] = {
 											i(136297),	-- Vindictive Combatant's Felskin Helm
 											i(136300),	-- Vindictive Combatant's Felskin Spaulders
 											i(136893),	-- Vindictive Combatant's Demonthread Cloak
@@ -5214,8 +5129,8 @@ _.Zones =
 											i(136295),	-- Vindictive Combatant's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(146154, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146154, {	-- Vindictive Combatant's Satin Armor		
 										i(135836),	-- Vindictive Combatant's Chain Helm
 										i(135838),	-- Vindictive Combatant's Chain Spaulders
 										i(135913),	-- Vindictive Combatant's Drape of the Tracker
@@ -5225,8 +5140,8 @@ _.Zones =
 										i(135839),	-- Vindictive Combatant's Chain Clasp
 										i(135837),	-- Vindictive Combatant's Chain Leggings
 										i(135834),	-- Vindictive Combatant's Chain Treads
-									}),
-									i(146152, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146152, {	-- Vindictive Combatant's Satin Armor		
 										i(135884),	-- Vindictive Combatant's Ringmail Helm
 										i(135886),	-- Vindictive Combatant's Ringmail Spaulders
 										i(136869),	-- Vindictive Combatant's Totemic Cloak
@@ -5236,8 +5151,8 @@ _.Zones =
 										i(135887),	-- Vindictive Combatant's Ringmail Clasp
 										i(135885),	-- Vindictive Combatant's Ringmail Kilt
 										i(135882),	-- Vindictive Combatant's Ringmail Boots
-									}),
-									i(146166, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146166, {	-- Vindictive Combatant's Satin Armor		
 										i(135860),	-- Vindictive Combatant's Scaled Helm
 										i(135862),	-- Vindictive Combatant's Scaled Shoulders
 										i(135914),	-- Vindictive Combatant's Greatcloak of Faith
@@ -5247,8 +5162,8 @@ _.Zones =
 										i(135863),	-- Vindictive Combatant's Scaled Girdle
 										i(135861),	-- Vindictive Combatant's Scaled Legguards
 										i(135858),	-- Vindictive Combatant's Scaled Sabatons
-									}),
-									i(146162, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146162, {	-- Vindictive Combatant's Satin Armor		
 										i(135900),	-- Vindictive Combatant's Plate Helm
 										i(135902),	-- Vindictive Combatant's Plate Shoulders
 										i(136887),	-- Vindictive Combatant's Cloak of Battle
@@ -5258,8 +5173,8 @@ _.Zones =
 										i(135903),	-- Vindictive Combatant's Plate Girdle
 										i(135901),	-- Vindictive Combatant's Plate Legguards
 										i(135898),	-- Vindictive Combatant's Plate Warboots
-									}),
-									i(146164, {	-- Vindictive Combatant's Satin Armor
+									}),		
+									i(146164, {	-- Vindictive Combatant's Satin Armor		
 										i(135820),	-- Vindictive Combatant's Dreadplate Helm
 										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
 										i(135905),	-- Vindictive Combatant's Dreadcloak
@@ -5269,9 +5184,9 @@ _.Zones =
 										i(135823),	-- Vindictive Combatant's Dreadplate Girdle
 										i(135821),	-- Vindictive Combatant's Dreadplate Legguards
 										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
-									}),
+									}),	
 									-- LEGION & 4
-									i(147688, {	-- Cruel Combatant's Satin Armor
+									i(147688, {	-- Cruel Combatant's Satin Armor		
 										i(145172),	-- Cruel Combatant's Satin Hood
 										i(145178),	-- Cruel Combatant's Satin Mantle
 										i(145040),	-- Cruel Combatant's Drape of Piety
@@ -5281,8 +5196,8 @@ _.Zones =
 										i(145180),	-- Cruel Combatant's Satin Cord
 										i(145174),	-- Cruel Combatant's Satin Leggings
 										i(145168),	-- Cruel Combatant's Satin Treads
-									}),
-									i(147696, {	-- Cruel Combatant's Silk Armor
+									}),		
+									i(147696, {	-- Cruel Combatant's Silk Armor		
 										i(145118),	-- Cruel Combatant's Silk Cowl
 										i(145124),	-- Cruel Combatant's Silk Amice
 										i(145034),	-- Cruel Combatant's Silken Shawl
@@ -5292,8 +5207,8 @@ _.Zones =
 										i(145126),	-- Cruel Combatant's Silk Cord
 										i(145120),	-- Cruel Combatant's Silk Trousers
 										i(145114),	-- Cruel Combatant's Silk Treads
-									}),
-									i(147682, {	-- Cruel Combatant's Felweave Armor
+									}),		
+									i(147682, {	-- Cruel Combatant's Felweave Armor		
 										i(145244),	-- Cruel Combatant's Felweave Cowl
 										i(145250),	-- Cruel Combatant's Felweave Amice
 										i(145046),	-- Cruel Combatant's Felweave Cloak
@@ -5303,8 +5218,8 @@ _.Zones =
 										i(145252),	-- Cruel Combatant's Felweave Cord
 										i(145246),	-- Cruel Combatant's Felweave Trousers
 										i(145240),	-- Cruel Combatant's Felweave Treads
-									}),
-									i(147675, {	-- Cruel Combatant's Dragonhide Armor
+									}),		
+									i(147675, {	-- Cruel Combatant's Dragonhide Armor		
 										i(145088),	-- Cruel Combatant's Dragonhide Helm
 										i(145092),	-- Cruel Combatant's Dragonhide Spaulders
 										i(145030),	-- Cruel Combatant's Dragonhide Cloak
@@ -5314,8 +5229,8 @@ _.Zones =
 										i(145094),	-- Cruel Combatant's Dragonhide Belt
 										i(145090),	-- Cruel Combatant's Dragonhide Legguards
 										i(145084),	-- Cruel Combatant's Dragonhide Moccasins
-									}),
-									i(147685, {	-- Cruel Combatant's Leather Armor
+									}),		
+									i(147685, {	-- Cruel Combatant's Leather Armor		
 										i(145196),	-- Cruel Combatant's Leather Helm
 										i(145200),	-- Cruel Combatant's Leather Spaulders
 										i(145042),	-- Cruel Combatant's Shadowcape
@@ -5325,8 +5240,8 @@ _.Zones =
 										i(145202),	-- Cruel Combatant's Leather Belt
 										i(145198),	-- Cruel Combatant's Leather Legguards
 										i(145192),	-- Cruel Combatant's Leather Slippers
-									}),
-									i(147684, {	-- Cruel Combatant's Ironskin Armor
+									}),		
+									i(147684, {	-- Cruel Combatant's Ironskin Armor		
 										i(145134),	-- Cruel Combatant's Ironskin Helm
 										i(145138),	-- Cruel Combatant's Ironskin Spaulders
 										i(145036),	-- Cruel Combatant's Ironskin Cloak
@@ -5336,9 +5251,9 @@ _.Zones =
 										i(145142),	-- Cruel Combatant's Ironskin Belt
 										i(145136),	-- Cruel Combatant's Ironskin Legguards
 										i(145130),	-- Cruel Combatant's Ironskin Slippers
-									}),
+									}),		
 									i(147680, {	-- Cruel Combatant's Felskin Armor
-										["groups"] = {
+										["g"] = {
 											i(145072),	-- Cruel Combatant's Felskin Helm
 											i(145076),	-- Cruel Combatant's Felskin Spaulders
 											i(145028),	-- Cruel Combatant's Demonthread Cloak
@@ -5350,8 +5265,8 @@ _.Zones =
 											i(145068),	-- Cruel Combatant's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(147689, {	-- Cruel Combatant's Chain Armor
+									}),		
+									i(147689, {	-- Cruel Combatant's Chain Armor		
 										i(145104),	-- Cruel Combatant's Chain Helm
 										i(145108),	-- Cruel Combatant's Chain Spaulders
 										i(145032),	-- Cruel Combatant's Drape of the Tracker
@@ -5361,8 +5276,8 @@ _.Zones =
 										i(145110),	-- Cruel Combatant's Chain Clasp
 										i(145106),	-- Cruel Combatant's Chain Leggings
 										i(145100),	-- Cruel Combatant's Chain Treads
-									}),
-									i(147674, {	-- Cruel Combatant's Ringmail Armor
+									}),		
+									i(147674, {	-- Cruel Combatant's Ringmail Armor		
 										i(145212),	-- Cruel Combatant's Ringmail Helm
 										i(145216),	-- Cruel Combatant's Ringmail Spaulders
 										i(145044),	-- Cruel Combatant's Totemic Cloak
@@ -5372,8 +5287,8 @@ _.Zones =
 										i(145218),	-- Cruel Combatant's Ringmail Clasp
 										i(145214),	-- Cruel Combatant's Ringmail Kilt
 										i(145208),	-- Cruel Combatant's Ringmail Boots
-									}),
-									i(147693, {	-- Cruel Combatant's Scaled Armor
+									}),		
+									i(147693, {	-- Cruel Combatant's Scaled Armor		
 										i(145158),	-- Cruel Combatant's Scaled Helm
 										i(145162),	-- Cruel Combatant's Scaled Shoulders
 										i(145038),	-- Cruel Combatant's Greatcloak of Faith
@@ -5383,8 +5298,8 @@ _.Zones =
 										i(145164),	-- Cruel Combatant's Scaled Girdle
 										i(145160),	-- Cruel Combatant's Scaled Legguards
 										i(145154),	-- Cruel Combatant's Scaled Sabatons
-									}),
-									i(147692, {	-- Cruel Combatant's Plate Armor
+									}),		
+									i(147692, {	-- Cruel Combatant's Plate Armor		
 										i(145262),	-- Cruel Combatant's Plate Helm
 										i(145266),	-- Cruel Combatant's Plate Shoulders
 										i(145048),	-- Cruel Combatant's Cloak of Battle
@@ -5394,8 +5309,8 @@ _.Zones =
 										i(145268),	-- Cruel Combatant's Plate Girdle
 										i(145264),	-- Cruel Combatant's Plate Legguards
 										i(145258),	-- Cruel Combatant's Plate Warboots
-									}),
-									i(147677, {	-- Cruel Combatant's Dreadplate Armor
+									}),		
+									i(147677, {	-- Cruel Combatant's Dreadplate Armor		
 										i(145056),	-- Cruel Combatant's Dreadplate Helm
 										i(145060),	-- Cruel Combatant's Dreadplate Shoulders
 										i(145026),	-- Cruel Combatant's Dreadcloak
@@ -5405,14 +5320,14 @@ _.Zones =
 										i(145062),	-- Cruel Combatant's Dreadplate Girdle
 										i(145058),	-- Cruel Combatant's Dreadplate Legguards
 										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
-									}),
+									}),		
 								},
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 							}),
 							gssh(1414, {	-- Gladiator
-								["groups"] = {
+								["g"] = {
 									-- LEGION { Legion Season 1 & 2
-									i(146148, {	-- Vindictive Gladiator's Satin Armor
+									i(146148, {	-- Vindictive Gladiator's Satin Armor		
 										i(135641),	-- Vindictive Gladiator's Satin Hood
 										i(135644),	-- Vindictive Gladiator's Satin Mantle
 										i(136861),	-- Vindictive Gladiator's Drape of Piety
@@ -5422,8 +5337,8 @@ _.Zones =
 										i(135645),	-- Vindictive Gladiator's Satin Cord
 										i(135642),	-- Vindictive Gladiator's Satin Leggings
 										i(135639),	-- Vindictive Gladiator's Satin Treads
-									}),
-									i(146146, {	-- Vindictive Gladiator's Silk Armor
+									}),		
+									i(146146, {	-- Vindictive Gladiator's Silk Armor		
 										i(135617),	-- Vindictive Gladiator's Silk Cowl
 										i(135620),	-- Vindictive Gladiator's Silk Amice
 										i(135684),	-- Vindictive Gladiator's Silken Shawl
@@ -5433,8 +5348,8 @@ _.Zones =
 										i(135621),	-- Vindictive Gladiator's Silk Cord
 										i(135618),	-- Vindictive Gladiator's Silk Trousers
 										i(135615),	-- Vindictive Gladiator's Silk Treads
-									}),
-									i(146150, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146150, {	-- Vindictive Gladiator's Satin Armor		
 										i(135665),	-- Vindictive Gladiator's Felweave Cowl
 										i(135668),	-- Vindictive Gladiator's Felweave Amice
 										i(136879),	-- Vindictive Gladiator's Felweave Cloak
@@ -5444,8 +5359,8 @@ _.Zones =
 										i(135669),	-- Vindictive Gladiator's Felweave Cord
 										i(135666),	-- Vindictive Gladiator's Felweave Trousers
 										i(135663),	-- Vindictive Gladiator's Felweave Treads
-									}),
-									i(146140, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146140, {	-- Vindictive Gladiator's Satin Armor		
 										i(135601),	-- Vindictive Gladiator's Dragonhide Helm
 										i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders
 										i(135680),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -5455,8 +5370,8 @@ _.Zones =
 										i(135605),	-- Vindictive Gladiator's Dragonhide Belt
 										i(135602),	-- Vindictive Gladiator's Dragonhide Legguards
 										i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins
-									}),
-									i(146144, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146144, {	-- Vindictive Gladiator's Satin Armor		
 										i(135650),	-- Vindictive Gladiator's Leather Helm
 										i(135652),	-- Vindictive Gladiator's Leather Spaulders
 										i(136862),	-- Vindictive Gladiator's Shadowcape
@@ -5466,8 +5381,8 @@ _.Zones =
 										i(135653),	-- Vindictive Gladiator's Leather Belt
 										i(135651),	-- Vindictive Gladiator's Leather Legguards
 										i(135648),	-- Vindictive Gladiator's Leather Slippers
-									}),
-									i(146142, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146142, {	-- Vindictive Gladiator's Satin Armor		
 										i(135625),	-- Vindictive Gladiator's Ironskin Helm
 										i(135627),	-- Vindictive Gladiator's Ironskin Spaulders
 										i(135687),	-- Vindictive Gladiator's Ironskin Cloak
@@ -5477,9 +5392,9 @@ _.Zones =
 										i(135629),	-- Vindictive Gladiator's Ironskin Belt
 										i(135626),	-- Vindictive Gladiator's Ironskin Legguards
 										i(135623),	-- Vindictive Gladiator's Ironskin Slippers
-									}),
+									}),		
 									i(146262, {	-- Vindictive Gladiator's Satin Armor
-										["groups"] = {
+										["g"] = {
 											i(136281),	-- Vindictive Gladiator's Felskin Helm
 											i(136284),	-- Vindictive Gladiator's Felskin Spaulders
 											i(136891),	-- Vindictive Gladiator's Demonthread Cloak
@@ -5491,8 +5406,8 @@ _.Zones =
 											i(136279),	-- Vindictive Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(146138, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146138, {	-- Vindictive Gladiator's Satin Armor		
 										i(135610),	-- Vindictive Gladiator's Chain Helm
 										i(135612),	-- Vindictive Gladiator's Chain Spaulders
 										i(135683),	-- Vindictive Gladiator's Drape of the Tracker
@@ -5502,8 +5417,8 @@ _.Zones =
 										i(135613),	-- Vindictive Gladiator's Chain Clasp
 										i(135611),	-- Vindictive Gladiator's Chain Leggings
 										i(135608),	-- Vindictive Gladiator's Chain Treads
-									}),
-									i(146136, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146136, {	-- Vindictive Gladiator's Satin Armor		
 										i(135658),	-- Vindictive Gladiator's Ringmail Helm
 										i(135660),	-- Vindictive Gladiator's Ringmail Spaulders
 										i(136863),	-- Vindictive Gladiator's Totemic Cloak
@@ -5513,8 +5428,8 @@ _.Zones =
 										i(135661),	-- Vindictive Gladiator's Ringmail Clasp
 										i(135659),	-- Vindictive Gladiator's Ringmail Kilt
 										i(135656),	-- Vindictive Gladiator's Ringmail Boots
-									}),
-									i(146134, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146134, {	-- Vindictive Gladiator's Satin Armor		
 										i(135634),	-- Vindictive Gladiator's Scaled Helm
 										i(135636),	-- Vindictive Gladiator's Scaled Shoulders
 										i(135688),	-- Vindictive Gladiator's Greatcloak of Faith
@@ -5524,8 +5439,8 @@ _.Zones =
 										i(135637),	-- Vindictive Gladiator's Scaled Girdle
 										i(135635),	-- Vindictive Gladiator's Scaled Legguards
 										i(135632),	-- Vindictive Gladiator's Scaled Sabatons
-									}),
-									i(146130, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146130, {	-- Vindictive Gladiator's Satin Armor		
 										i(135674),	-- Vindictive Gladiator's Plate Helm
 										i(135676),	-- Vindictive Gladiator's Plate Shoulders
 										i(136885),	-- Vindictive Gladiator's Cloak of Battle
@@ -5535,8 +5450,8 @@ _.Zones =
 										i(135677),	-- Vindictive Gladiator's Plate Girdle
 										i(135675),	-- Vindictive Gladiator's Plate Legguards
 										i(135672),	-- Vindictive Gladiator's Plate Warboots
-									}),
-									i(146132, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146132, {	-- Vindictive Gladiator's Satin Armor		
 										i(135594),	-- Vindictive Gladiator's Dreadplate Helm
 										i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders
 										i(135679),	-- Vindictive Gladiator's Dreadcloak
@@ -5546,9 +5461,9 @@ _.Zones =
 										i(135597),	-- Vindictive Gladiator's Dreadplate Girdle
 										i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
 										i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
-									}),
+									}),		
 									-- LEGION &4
-									i(147663, {	-- Cruel Gladiator's Satin Armor
+									i(147663, {	-- Cruel Gladiator's Satin Armor		
 										i(144680),	-- Cruel Gladiator's Satin Hood
 										i(144686),	-- Cruel Gladiator's Satin Mantle
 										i(144548),	-- Cruel Gladiator's Drape of Piety
@@ -5558,8 +5473,8 @@ _.Zones =
 										i(144688),	-- Cruel Gladiator's Satin Cord
 										i(144682),	-- Cruel Gladiator's Satin Leggings
 										i(144676),	-- Cruel Gladiator's Satin Treads
-									}),
-									i(147668, {	-- Cruel Gladiator's Silk Armor
+									}),		
+									i(147668, {	-- Cruel Gladiator's Silk Armor		
 										i(144626),	-- Cruel Gladiator's Silk Cowl
 										i(144632),	-- Cruel Gladiator's Silk Amice
 										i(144542),	-- Cruel Gladiator's Silken Shawl
@@ -5569,8 +5484,8 @@ _.Zones =
 										i(144634),	-- Cruel Gladiator's Silk Cord
 										i(144628),	-- Cruel Gladiator's Silk Trousers
 										i(144622),	-- Cruel Gladiator's Silk Treads
-									}),
-									i(147653, {	-- Cruel Gladiator's Felweave Armor
+									}),		
+									i(147653, {	-- Cruel Gladiator's Felweave Armor		
 										i(144752),	-- Cruel Gladiator's Felweave Cowl
 										i(144758),	-- Cruel Gladiator's Felweave Amice
 										i(144554),	-- Cruel Gladiator's Felweave Cloak
@@ -5580,8 +5495,8 @@ _.Zones =
 										i(144760),	-- Cruel Gladiator's Felweave Cord
 										i(144754),	-- Cruel Gladiator's Felweave Trousers
 										i(144748),	-- Cruel Gladiator's Felweave Treads
-									}),
-									i(147647, {	-- Cruel Gladiator's Dragonhide Armor
+									}),		
+									i(147647, {	-- Cruel Gladiator's Dragonhide Armor		
 										i(144596),	-- Cruel Gladiator's Dragonhide Helm
 										i(144600),	-- Cruel Gladiator's Dragonhide Spaulders
 										i(144538),	-- Cruel Gladiator's Dragonhide Cloak
@@ -5591,8 +5506,8 @@ _.Zones =
 										i(144602),	-- Cruel Gladiator's Dragonhide Belt
 										i(144598),	-- Cruel Gladiator's Dragonhide Legguards
 										i(144592),	-- Cruel Gladiator's Dragonhide Moccasins
-									}),
-									i(147657, {	-- Cruel Gladiator's Leather Armor
+									}),		
+									i(147657, {	-- Cruel Gladiator's Leather Armor		
 										i(144704),	-- Cruel Gladiator's Leather Helm
 										i(144708),	-- Cruel Gladiator's Leather Spaulders
 										i(144550),	-- Cruel Gladiator's Shadowcape
@@ -5602,8 +5517,8 @@ _.Zones =
 										i(144710),	-- Cruel Gladiator's Leather Belt
 										i(144706),	-- Cruel Gladiator's Leather Legguards
 										i(144700),	-- Cruel Gladiator's Leather Slippers
-									}),
-									i(147656, {	-- Cruel Gladiator's Ironskin Armor
+									}),		
+									i(147656, {	-- Cruel Gladiator's Ironskin Armor		
 										i(144642),	-- Cruel Gladiator's Ironskin Helm
 										i(144646),	-- Cruel Gladiator's Ironskin Spaulders
 										i(144544),	-- Cruel Gladiator's Ironskin Cloak
@@ -5613,9 +5528,9 @@ _.Zones =
 										i(144650),	-- Cruel Gladiator's Ironskin Belt
 										i(144644),	-- Cruel Gladiator's Ironskin Legguards
 										i(144638),	-- Cruel Gladiator's Ironskin Slippers
-									}),
-									i(147651, {	-- Cruel Gladiator's Felskin Armor
-										["groups"] = {
+									}),		
+									i(147651, {	-- Cruel Gladiator's Felskin Armor	
+										["g"] = {
 											i(144580),	-- Cruel Gladiator's Felskin Helm
 											i(144584),	-- Cruel Gladiator's Felskin Spaulders
 											i(144536),	-- Cruel Gladiator's Demonthread Cloak
@@ -5627,8 +5542,8 @@ _.Zones =
 											i(144576),	-- Cruel Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(147646, {	-- Cruel Gladiator's Chain Armor
+									}),		
+									i(147646, {	-- Cruel Gladiator's Chain Armor		
 										i(144612),	-- Cruel Gladiator's Chain Helm
 										i(144616),	-- Cruel Gladiator's Chain Spaulders
 										i(144540),	-- Cruel Gladiator's Drape of the Tracker
@@ -5638,8 +5553,8 @@ _.Zones =
 										i(144618),	-- Cruel Gladiator's Chain Clasp
 										i(144614),	-- Cruel Gladiator's Chain Leggings
 										i(144608),	-- Cruel Gladiator's Chain Treads
-									}),
-									i(147661, {	-- Cruel Gladiator's Ringmail Armor
+									}),		
+									i(147661, {	-- Cruel Gladiator's Ringmail Armor		
 										i(144720),	-- Cruel Gladiator's Ringmail Helm
 										i(144724),	-- Cruel Gladiator's Ringmail Spaulders
 										i(144552),	-- Cruel Gladiator's Totemic Cloak
@@ -5649,8 +5564,8 @@ _.Zones =
 										i(144726),	-- Cruel Gladiator's Ringmail Clasp
 										i(144722),	-- Cruel Gladiator's Ringmail Kilt
 										i(144716),	-- Cruel Gladiator's Ringmail Boots
-									}),
-									i(147665, {	-- Cruel Gladiator's Scaled Armor
+									}),		
+									i(147665, {	-- Cruel Gladiator's Scaled Armor		
 										i(144665),	-- Cruel Gladiator's Scaled Helm
 										i(144670),	-- Cruel Gladiator's Scaled Shoulders
 										i(144546),	-- Cruel Gladiator's Greatcloak of Faith
@@ -5660,8 +5575,8 @@ _.Zones =
 										i(144672),	-- Cruel Gladiator's Scaled Girdle
 										i(144667),	-- Cruel Gladiator's Scaled Legguards
 										i(144661),	-- Cruel Gladiator's Scaled Sabatons
-									}),
-									i(147660, {	-- Cruel Gladiator's Plate Armor
+									}),		
+									i(147660, {	-- Cruel Gladiator's Plate Armor		
 										i(144770),	-- Cruel Gladiator's Plate Helm
 										i(144774),	-- Cruel Gladiator's Plate Shoulders
 										i(144556),	-- Cruel Gladiator's Cloak of Battle
@@ -5671,8 +5586,8 @@ _.Zones =
 										i(144776),	-- Cruel Gladiator's Plate Girdle
 										i(144772),	-- Cruel Gladiator's Plate Legguards
 										i(144766),	-- Cruel Gladiator's Plate Warboots
-									}),
-									i(147650, {	-- Cruel Gladiator's Dreadplate Armor
+									}),		
+									i(147650, {	-- Cruel Gladiator's Dreadplate Armor		
 										i(144564),	-- Cruel Gladiator's Dreadplate Helm
 										i(144568),	-- Cruel Gladiator's Dreadplate Shoulders
 										i(144534),	-- Cruel Gladiator's Dreadcloak
@@ -5702,8 +5617,8 @@ _.Zones =
 					}),
 					a(n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
 						gssh(1414, {	-- Gladiator
-							["groups"] = {
-								i(149424, {	-- Helm of the Demonic Gladiator
+							["g"] = {
+								i(149424, {	-- Helm of the Demonic Gladiator		
 									i(149040),	-- Demonic Gladiator's Satin Hood
 									i(148986),	-- Demonic Gladiator's Silk Cowl
 									i(149112),	-- Demonic Gladiator's Felweave Cowl
@@ -5716,8 +5631,8 @@ _.Zones =
 									i(149025),	-- Demonic Gladiator's Scaled Helm
 									i(149130),	-- Demonic Gladiator's Plate Helm
 									i(148924),	-- Demonic Gladiator's Dreadplate Helm
-								}),
-								i(149427, {	-- Pauldrons of the Demonic Gladiator
+								}),		
+								i(149427, {	-- Pauldrons of the Demonic Gladiator		
 									i(149046),	-- Demonic Gladiator's Satin Mantle
 									i(148992),	-- Demonic Gladiator's Silk Amice
 									i(149118),	-- Demonic Gladiator's Felweave Amice
@@ -5730,8 +5645,8 @@ _.Zones =
 									i(149030),	-- Demonic Gladiator's Scaled Shoulders
 									i(149134),	-- Demonic Gladiator's Plate Shoulders
 									i(148928),	-- Demonic Gladiator's Dreadplate Shoulders
-								}),
-								i(149432, {	-- Cloak of the Demonic Gladiator
+								}),		
+								i(149432, {	-- Cloak of the Demonic Gladiator		
 									i(148908),	-- Demonic Gladiator's Drape of Piety
 									i(148902),	-- Demonic Gladiator's Silken Shawl
 									i(148914),	-- Demonic Gladiator's Felweave Cloak
@@ -5744,8 +5659,8 @@ _.Zones =
 									i(148906),	-- Demonic Gladiator's Greatcloak of Faith
 									i(148916),	-- Demonic Gladiator's Cloak of Battle
 									i(148894),	-- Demonic Gladiator's Dreadcloak
-								}),
-								i(149425, {	-- Chest of the Demonic Gladiator
+								}),		
+								i(149425, {	-- Chest of the Demonic Gladiator		
 									i(149044),	-- Demonic Gladiator's Satin Robe
 									i(148990),	-- Demonic Gladiator's Silk Tunic
 									i(149116),	-- Demonic Gladiator's Felweave Raiment
@@ -5758,8 +5673,8 @@ _.Zones =
 									i(149029),	-- Demonic Gladiator's Scaled Breastplate
 									i(149124),	-- Demonic Gladiator's Plate Chestpiece
 									i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece
-								}),
-								i(149431, {	-- Bracers of the Demonic Gladiator
+								}),		
+								i(149431, {	-- Bracers of the Demonic Gladiator		
 									i(149050),	-- Demonic Gladiator's Satin Bracers
 									i(148996),	-- Demonic Gladiator's Silk Bracers
 									i(149122),	-- Demonic Gladiator's Felweave Bracers
@@ -5772,8 +5687,8 @@ _.Zones =
 									i(149034),	-- Demonic Gladiator's Scaled Wristplates
 									i(149138),	-- Demonic Gladiator's Plate Wristplates
 									i(148932),	-- Demonic Gladiator's Dreadplate Wristplates
-								}),
-								i(149428, {	-- Gloves of the Demonic Gladiator
+								}),		
+								i(149428, {	-- Gloves of the Demonic Gladiator		
 									i(149038),	-- Demonic Gladiator's Satin Gloves
 									i(148984),	-- Demonic Gladiator's Silk Handguards
 									i(149110),	-- Demonic Gladiator's Felweave Handguards
@@ -5786,8 +5701,8 @@ _.Zones =
 									i(149023),	-- Demonic Gladiator's Scaled Gauntlets
 									i(149128),	-- Demonic Gladiator's Plate Gauntlets
 									i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets
-								}),
-								i(149429, {	-- Cinch of the Demonic Gladiator
+								}),		
+								i(149429, {	-- Cinch of the Demonic Gladiator		
 									i(149048),	-- Demonic Gladiator's Satin Cord
 									i(148994),	-- Demonic Gladiator's Silk Cord
 									i(149120),	-- Demonic Gladiator's Felweave Cord
@@ -5800,8 +5715,8 @@ _.Zones =
 									i(149032),	-- Demonic Gladiator's Scaled Girdle
 									i(149136),	-- Demonic Gladiator's Plate Girdle
 									i(148930),	-- Demonic Gladiator's Dreadplate Girdle
-								}),
-								i(149426, {	-- Leggings of the Demonic Gladiator
+								}),		
+								i(149426, {	-- Leggings of the Demonic Gladiator		
 									i(149042),	-- Demonic Gladiator's Satin Leggings
 									i(148988),	-- Demonic Gladiator's Silk Trousers
 									i(149114),	-- Demonic Gladiator's Felweave Trousers
@@ -5814,8 +5729,8 @@ _.Zones =
 									i(149027),	-- Demonic Gladiator's Scaled Legguards
 									i(149132),	-- Demonic Gladiator's Plate Legguards
 									i(148926),	-- Demonic Gladiator's Dreadplate Legguards
-								}),
-								i(149430, {	-- Treads of the Demonic Gladiator
+								}),		
+								i(149430, {	-- Treads of the Demonic Gladiator		
 									i(149036),	-- Demonic Gladiator's Satin Treads
 									i(148982),	-- Demonic Gladiator's Silk Treads
 									i(149108),	-- Demonic Gladiator's Felweave Treads
@@ -5828,7 +5743,7 @@ _.Zones =
 									i(149021),	-- Demonic Gladiator's Scaled Sabatons
 									i(149126),	-- Demonic Gladiator's Plate Warboots
 									i(148920),	-- Demonic Gladiator's Dreadplate Sabatons
-								}),
+								}),	
 								i(149406, {	-- Helm of the Dominant Gladiator
 									un(2, i(148548)),	-- Dominant Gladiator's Satin Hood
 									un(2, i(148494)),	-- Dominant Gladiator's Silk Cowl
@@ -5842,8 +5757,8 @@ _.Zones =
 									un(2, i(148533)),	-- Dominant Gladiator's Scaled Helm
 									un(2, i(148638)),	-- Dominant Gladiator's Plate Helm
 									un(2, i(148432)),	-- Dominant Gladiator's Dreadplate Helm
-								}),
-								i(149409, {	-- Pauldrons of the Dominant Gladiator
+								}),		
+								i(149409, {	-- Pauldrons of the Dominant Gladiator		
 									un(2, i(148554)),	-- Dominant Gladiator's Satin Mantle
 									un(2, i(148500)),	-- Dominant Gladiator's Silk Amice
 									un(2, i(148626)),	-- Dominant Gladiator's Felweave Amice
@@ -5856,8 +5771,8 @@ _.Zones =
 									un(2, i(148538)),	-- Dominant Gladiator's Scaled Shoulders
 									un(2, i(148642)),	-- Dominant Gladiator's Plate Shoulders
 									un(2, i(148436)),	-- Dominant Gladiator's Dreadplate Shoulders
-								}),
-								i(149414, {	-- Cloak of the Dominant Gladiator
+								}),		
+								i(149414, {	-- Cloak of the Dominant Gladiator		
 									un(2, i(148416)),	-- Dominant Gladiator's Drape of Piety
 									un(2, i(148410)),	-- Dominant Gladiator's Silken Shawl
 									un(2, i(148422)),	-- Dominant Gladiator's Felweave Cloak
@@ -5870,8 +5785,8 @@ _.Zones =
 									un(2, i(148414)),	-- Dominant Gladiator's Greatcloak of Faith
 									un(2, i(148424)),	-- Dominant Gladiator's Cloak of Battle
 									un(2, i(148402)),	-- Dominant Gladiator's Dreadcloak
-								}),
-								i(149407, {	-- Chest of the Dominant Gladiator
+								}),		
+								i(149407, {	-- Chest of the Dominant Gladiator		
 									un(2, i(148552)),	-- Dominant Gladiator's Satin Robe
 									un(2, i(148498)),	-- Dominant Gladiator's Silk Tunic
 									un(2, i(148624)),	-- Dominant Gladiator's Felweave Raiment
@@ -5884,8 +5799,8 @@ _.Zones =
 									un(2, i(148537)),	-- Dominant Gladiator's Scaled Breastplate
 									un(2, i(148632)),	-- Dominant Gladiator's Plate Chestpiece
 									un(2, i(148426)),	-- Dominant Gladiator's Dreadplate Chestpiece
-								}),
-								i(149413, {	-- Bracers of the Dominant Gladiator
+								}),		
+								i(149413, {	-- Bracers of the Dominant Gladiator		
 									un(2, i(148558)),	-- Dominant Gladiator's Satin Bracers
 									un(2, i(148504)),	-- Dominant Gladiator's Silk Bracers
 									un(2, i(148630)),	-- Dominant Gladiator's Felweave Bracers
@@ -5898,8 +5813,8 @@ _.Zones =
 									un(2, i(148542)),	-- Dominant Gladiator's Scaled Wristplates
 									un(2, i(148646)),	-- Dominant Gladiator's Plate Wristplates
 									un(2, i(148440)),	-- Dominant Gladiator's Dreadplate Wristplates
-								}),
-								i(149410, {	-- Gloves of the Dominant Gladiator
+								}),		
+								i(149410, {	-- Gloves of the Dominant Gladiator		
 									un(2, i(148546)),	-- Dominant Gladiator's Satin Gloves
 									un(2, i(148492)),	-- Dominant Gladiator's Silk Handguards
 									un(2, i(148618)),	-- Dominant Gladiator's Felweave Handguards
@@ -5912,8 +5827,8 @@ _.Zones =
 									un(2, i(148531)),	-- Dominant Gladiator's Scaled Gauntlets
 									un(2, i(148636)),	-- Dominant Gladiator's Plate Gauntlets
 									un(2, i(148430)),	-- Dominant Gladiator's Dreadplate Gauntlets
-								}),
-								i(149411, {	-- Cinch of the Dominant Gladiator
+								}),		
+								i(149411, {	-- Cinch of the Dominant Gladiator		
 									un(2, i(148556)),	-- Dominant Gladiator's Satin Cord
 									un(2, i(148502)),	-- Dominant Gladiator's Silk Cord
 									un(2, i(148628)),	-- Dominant Gladiator's Felweave Cord
@@ -5926,8 +5841,8 @@ _.Zones =
 									un(2, i(148540)),	-- Dominant Gladiator's Scaled Girdle
 									un(2, i(148644)),	-- Dominant Gladiator's Plate Girdle
 									un(2, i(148438)),	-- Dominant Gladiator's Dreadplate Girdle
-								}),
-								i(149408, {	-- Leggings of the Dominant Gladiator
+								}),		
+								i(149408, {	-- Leggings of the Dominant Gladiator		
 									un(2, i(148550)),	-- Dominant Gladiator's Satin Leggings
 									un(2, i(148496)),	-- Dominant Gladiator's Silk Trousers
 									un(2, i(148622)),	-- Dominant Gladiator's Felweave Trousers
@@ -5940,8 +5855,8 @@ _.Zones =
 									un(2, i(148535)),	-- Dominant Gladiator's Scaled Legguards
 									un(2, i(148640)),	-- Dominant Gladiator's Plate Legguards
 									un(2, i(148434)),	-- Dominant Gladiator's Dreadplate Legguards
-								}),
-								i(149412, {	-- Treads of the Dominant Gladiator
+								}),		
+								i(149412, {	-- Treads of the Dominant Gladiator		
 									un(2, i(148544)),	-- Dominant Gladiator's Satin Treads
 									un(2, i(148490)),	-- Dominant Gladiator's Silk Treads
 									un(2, i(148616)),	-- Dominant Gladiator's Felweave Treads
@@ -5955,7 +5870,7 @@ _.Zones =
 									un(2, i(148634)),	-- Dominant Gladiator's Plate Warboots
 									un(2, i(148428)),	-- Dominant Gladiator's Dreadplate Sabatons
 								}),
-								i(149388, {	-- Helm of the Fierce Gladiator
+								i(149388, {	-- Helm of the Fierce Gladiator		
 									un(2, i(148055)),	-- Fierce Gladiator's Satin Hood
 									un(2, i(148001)),	-- Fierce Gladiator's Silk Cowl
 									un(2, i(148127)),	-- Fierce Gladiator's Felweave Cowl
@@ -5968,8 +5883,8 @@ _.Zones =
 									un(2, i(148040)),	-- Fierce Gladiator's Scaled Helm
 									un(2, i(148145)),	-- Fierce Gladiator's Plate Helm
 									un(2, i(147939)),	-- Fierce Gladiator's Dreadplate Helm
-								}),
-								i(149391, {	-- Pauldrons of the Fierce Gladiator
+								}),		
+								i(149391, {	-- Pauldrons of the Fierce Gladiator		
 									un(2, i(148061)),	-- Fierce Gladiator's Satin Mantle
 									un(2, i(148007)),	-- Fierce Gladiator's Silk Amice
 									un(2, i(148133)),	-- Fierce Gladiator's Felweave Amice
@@ -5982,8 +5897,8 @@ _.Zones =
 									un(2, i(148045)),	-- Fierce Gladiator's Scaled Shoulders
 									un(2, i(148149)),	-- Fierce Gladiator's Plate Shoulders
 									un(2, i(147943)),	-- Fierce Gladiator's Dreadplate Shoulders
-								}),
-								i(149396, {	-- Cloak of the Fierce Gladiator
+								}),		
+								i(149396, {	-- Cloak of the Fierce Gladiator		
 									un(2, i(147923)),	-- Fierce Gladiator's Drape of Piety
 									un(2, i(147917)),	-- Fierce Gladiator's Silken Shawl
 									un(2, i(147929)),	-- Fierce Gladiator's Felweave Cloak
@@ -5996,8 +5911,8 @@ _.Zones =
 									un(2, i(147921)),	-- Fierce Gladiator's Greatcloak of Faith
 									un(2, i(147931)),	-- Fierce Gladiator's Cloak of Battle
 									un(2, i(147909)),	-- Fierce Gladiator's Dreadcloak
-								}),
-								i(149389, {	-- Chest of the Fierce Gladiator
+								}),		
+								i(149389, {	-- Chest of the Fierce Gladiator		
 									un(2, i(148059)),	-- Fierce Gladiator's Satin Robe
 									un(2, i(148005)),	-- Fierce Gladiator's Silk Tunic
 									un(2, i(148131)),	-- Fierce Gladiator's Felweave Raiment
@@ -6010,8 +5925,8 @@ _.Zones =
 									un(2, i(148044)),	-- Fierce Gladiator's Scaled Breastplate
 									un(2, i(148139)),	-- Fierce Gladiator's Plate Chestpiece
 									un(2, i(147933)),	-- Fierce Gladiator's Dreadplate Chestpiece
-								}),
-								i(149395, {	-- Bracers of the Fierce Gladiator
+								}),		
+								i(149395, {	-- Bracers of the Fierce Gladiator		
 									un(2, i(148065)),	-- Fierce Gladiator's Satin Bracers
 									un(2, i(148011)),	-- Fierce Gladiator's Silk Bracers
 									un(2, i(148137)),	-- Fierce Gladiator's Felweave Bracers
@@ -6024,8 +5939,8 @@ _.Zones =
 									un(2, i(148049)),	-- Fierce Gladiator's Scaled Wristplates
 									un(2, i(148153)),	-- Fierce Gladiator's Plate Wristplates
 									un(2, i(147947)),	-- Fierce Gladiator's Dreadplate Wristplates
-								}),
-								i(149392, {	-- Gloves of the Fierce Gladiator
+								}),		
+								i(149392, {	-- Gloves of the Fierce Gladiator		
 									un(2, i(148053)),	-- Fierce Gladiator's Satin Gloves
 									un(2, i(147999)),	-- Fierce Gladiator's Silk Handguards
 									un(2, i(148125)),	-- Fierce Gladiator's Felweave Handguards
@@ -6038,8 +5953,8 @@ _.Zones =
 									un(2, i(148038)),	-- Fierce Gladiator's Scaled Gauntlets
 									un(2, i(148143)),	-- Fierce Gladiator's Plate Gauntlets
 									un(2, i(147937)),	-- Fierce Gladiator's Dreadplate Gauntlets
-								}),
-								i(149393, {	-- Cinch of the Fierce Gladiator
+								}),		
+								i(149393, {	-- Cinch of the Fierce Gladiator		
 									un(2, i(148063)),	-- Fierce Gladiator's Satin Cord
 									un(2, i(148009)),	-- Fierce Gladiator's Silk Cord
 									un(2, i(148135)),	-- Fierce Gladiator's Felweave Cord
@@ -6052,8 +5967,8 @@ _.Zones =
 									un(2, i(148047)),	-- Fierce Gladiator's Scaled Girdle
 									un(2, i(148151)),	-- Fierce Gladiator's Plate Girdle
 									un(2, i(147945)),	-- Fierce Gladiator's Dreadplate Girdle
-								}),
-								i(149390, {	-- Leggings of the Fierce Gladiator
+								}),		
+								i(149390, {	-- Leggings of the Fierce Gladiator		
 									un(2, i(148057)),	-- Fierce Gladiator's Satin Leggings
 									un(2, i(148003)),	-- Fierce Gladiator's Silk Trousers
 									un(2, i(148129)),	-- Fierce Gladiator's Felweave Trousers
@@ -6066,8 +5981,8 @@ _.Zones =
 									un(2, i(148042)),	-- Fierce Gladiator's Scaled Legguards
 									un(2, i(148147)),	-- Fierce Gladiator's Plate Legguards
 									un(2, i(147941)),	-- Fierce Gladiator's Dreadplate Legguards
-								}),
-								i(149394, {	-- Treads of the Fierce Gladiator
+								}),		
+								i(149394, {	-- Treads of the Fierce Gladiator		
 									un(2, i(148051)),	-- Fierce Gladiator's Satin Treads
 									un(2, i(147997)),	-- Fierce Gladiator's Silk Treads
 									un(2, i(148123)),	-- Fierce Gladiator's Felweave Treads
@@ -6085,8 +6000,8 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 						}),
 						gssh(1391, {	-- Elite
-							["groups"] = bubbleDown({["u"] = 14}, {
-								i(149433, {	-- Helm of the Demonic Gladiator
+							["g"] = bubbleDown({["u"] = 14}, {
+								i(149433, {	-- Helm of the Demonic Gladiator		
 									i(149286),	-- Demonic Gladiator's Satin Hood
 									i(149232),	-- Demonic Gladiator's Silk Cowl
 									i(149358),	-- Demonic Gladiator's Felweave Cowl
@@ -6099,8 +6014,8 @@ _.Zones =
 									i(149272),	-- Demonic Gladiator's Scaled Helm
 									i(149376),	-- Demonic Gladiator's Plate Helm
 									i(149170),	-- Demonic Gladiator's Dreadplate Helm
-								}),
-								i(149436, {	-- Pauldrons of the Demonic Gladiator
+								}),		
+								i(149436, {	-- Pauldrons of the Demonic Gladiator		
 									i(149292),	-- Demonic Gladiator's Satin Mantle
 									i(149238),	-- Demonic Gladiator's Silk Amice
 									i(149364),	-- Demonic Gladiator's Felweave Amice
@@ -6113,8 +6028,8 @@ _.Zones =
 									i(149276),	-- Demonic Gladiator's Scaled Shoulders
 									i(149380),	-- Demonic Gladiator's Plate Shoulders
 									i(149174),	-- Demonic Gladiator's Dreadplate Shoulders
-								}),
-								i(149441, {	-- Cloak of the Demonic Gladiator
+								}),		
+								i(149441, {	-- Cloak of the Demonic Gladiator		
 									i(149154),	-- Demonic Gladiator's Drape of Piety
 									i(149148),	-- Demonic Gladiator's Silken Shawl
 									i(149160),	-- Demonic Gladiator's Felweave Cloak
@@ -6127,8 +6042,8 @@ _.Zones =
 									i(149152),	-- Demonic Gladiator's Greatcloak of Faith
 									i(149162),	-- Demonic Gladiator's Cloak of Battle
 									i(149140),	-- Demonic Gladiator's Dreadcloak
-								}),
-								i(149434, {	-- Chest of the Demonic Gladiator
+								}),		
+								i(149434, {	-- Chest of the Demonic Gladiator		
 									i(149290),	-- Demonic Gladiator's Satin Robe
 									i(149236),	-- Demonic Gladiator's Silk Tunic
 									i(149362),	-- Demonic Gladiator's Felweave Raiment
@@ -6141,8 +6056,8 @@ _.Zones =
 									i(149266),	-- Demonic Gladiator's Scaled Breastplate
 									i(149370),	-- Demonic Gladiator's Plate Chestpiece
 									i(149164),	-- Demonic Gladiator's Dreadplate Chestpiece
-								}),
-								i(149440, {	-- Bracers of the Demonic Gladiator
+								}),		
+								i(149440, {	-- Bracers of the Demonic Gladiator		
 									i(149296),	-- Demonic Gladiator's Satin Bracers
 									i(149242),	-- Demonic Gladiator's Silk Bracers
 									i(149368),	-- Demonic Gladiator's Felweave Bracers
@@ -6155,8 +6070,8 @@ _.Zones =
 									i(149280),	-- Demonic Gladiator's Scaled Wristplates
 									i(149384),	-- Demonic Gladiator's Plate Wristplates
 									i(149178),	-- Demonic Gladiator's Dreadplate Wristplates
-								}),
-								i(149437, {	-- Gloves of the Demonic Gladiator
+								}),		
+								i(149437, {	-- Gloves of the Demonic Gladiator		
 									i(149284),	-- Demonic Gladiator's Satin Gloves
 									i(149230),	-- Demonic Gladiator's Silk Handguards
 									i(149356),	-- Demonic Gladiator's Felweave Handguards
@@ -6169,8 +6084,8 @@ _.Zones =
 									i(149270),	-- Demonic Gladiator's Scaled Gauntlets
 									i(149374),	-- Demonic Gladiator's Plate Gauntlets
 									i(149168),	-- Demonic Gladiator's Dreadplate Gauntlets
-								}),
-								i(149438, {	-- Cinch of the Demonic Gladiator
+								}),		
+								i(149438, {	-- Cinch of the Demonic Gladiator		
 									i(149294),	-- Demonic Gladiator's Satin Cord
 									i(149240),	-- Demonic Gladiator's Silk Cord
 									i(149366),	-- Demonic Gladiator's Felweave Cord
@@ -6183,8 +6098,8 @@ _.Zones =
 									i(149278),	-- Demonic Gladiator's Scaled Girdle
 									i(149382),	-- Demonic Gladiator's Plate Girdle
 									i(149176),	-- Demonic Gladiator's Dreadplate Girdle
-								}),
-								i(149435, {	-- Leggings of the Demonic Gladiator
+								}),		
+								i(149435, {	-- Leggings of the Demonic Gladiator		
 									i(149288),	-- Demonic Gladiator's Satin Leggings
 									i(149234),	-- Demonic Gladiator's Silk Trousers
 									i(149360),	-- Demonic Gladiator's Felweave Trousers
@@ -6197,8 +6112,8 @@ _.Zones =
 									i(149274),	-- Demonic Gladiator's Scaled Legguards
 									i(149378),	-- Demonic Gladiator's Plate Legguards
 									i(149172),	-- Demonic Gladiator's Dreadplate Legguards
-								}),
-								i(149439, {	-- Treads of the Demonic Gladiator
+								}),		
+								i(149439, {	-- Treads of the Demonic Gladiator		
 									i(149282),	-- Demonic Gladiator's Satin Treads
 									i(149228),	-- Demonic Gladiator's Silk Treads
 									i(149354),	-- Demonic Gladiator's Felweave Treads
@@ -6211,8 +6126,8 @@ _.Zones =
 									i(149268),	-- Demonic Gladiator's Scaled Sabatons
 									i(149372),	-- Demonic Gladiator's Plate Warboots
 									i(149166),	-- Demonic Gladiator's Dreadplate Sabatons
-								}),
-								i(149415, {	-- Helm of the Dominant Gladiator
+								}),	
+								i(149415, {	-- Helm of the Dominant Gladiator		
 									un(14, i(148794)),	-- Dominant Gladiator's Satin Hood
 									un(14, i(148740)),	-- Dominant Gladiator's Silk Cowl
 									un(14, i(148866)),	-- Dominant Gladiator's Felweave Cowl
@@ -6225,8 +6140,8 @@ _.Zones =
 									un(14, i(148780)),	-- Dominant Gladiator's Scaled Helm
 									un(14, i(148884)),	-- Dominant Gladiator's Plate Helm
 									un(14, i(148678)),	-- Dominant Gladiator's Dreadplate Helm
-								}),
-								i(149418, {	-- Pauldrons of the Dominant Gladiator
+								}),		
+								i(149418, {	-- Pauldrons of the Dominant Gladiator		
 									un(14, i(148800)),	-- Dominant Gladiator's Satin Mantle
 									un(14, i(148746)),	-- Dominant Gladiator's Silk Amice
 									un(14, i(148872)),	-- Dominant Gladiator's Felweave Amice
@@ -6239,8 +6154,8 @@ _.Zones =
 									un(14, i(148784)),	-- Dominant Gladiator's Scaled Shoulders
 									un(14, i(148888)),	-- Dominant Gladiator's Plate Shoulders
 									un(14, i(148682)),	-- Dominant Gladiator's Dreadplate Shoulders
-								}),
-								i(149423, {	-- Cloak of the Dominant Gladiator
+								}),		
+								i(149423, {	-- Cloak of the Dominant Gladiator		
 									un(14, i(148662)),	-- Dominant Gladiator's Drape of Piety
 									un(14, i(148656)),	-- Dominant Gladiator's Silken Shawl
 									un(14, i(148668)),	-- Dominant Gladiator's Felweave Cloak
@@ -6253,8 +6168,8 @@ _.Zones =
 									un(14, i(148660)),	-- Dominant Gladiator's Greatcloak of Faith
 									un(14, i(148670)),	-- Dominant Gladiator's Cloak of Battle
 									un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak
-								}),
-								i(149416, {	-- Chest of the Dominant Gladiator
+								}),		
+								i(149416, {	-- Chest of the Dominant Gladiator		
 									un(14, i(148798)),	-- Dominant Gladiator's Satin Robe
 									un(14, i(148744)),	-- Dominant Gladiator's Silk Tunic
 									un(14, i(148870)),	-- Dominant Gladiator's Felweave Raiment
@@ -6267,8 +6182,8 @@ _.Zones =
 									un(14, i(148774)),	-- Dominant Gladiator's Scaled Breastplate
 									un(14, i(148878)),	-- Dominant Gladiator's Plate Chestpiece
 									un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece
-								}),
-								i(149422, {	-- Bracers of the Dominant Gladiator
+								}),		
+								i(149422, {	-- Bracers of the Dominant Gladiator		
 									un(14, i(148804)),	-- Dominant Gladiator's Satin Bracers
 									un(14, i(148750)),	-- Dominant Gladiator's Silk Bracers
 									un(14, i(148876)),	-- Dominant Gladiator's Felweave Bracers
@@ -6281,8 +6196,8 @@ _.Zones =
 									un(14, i(148788)),	-- Dominant Gladiator's Scaled Wristplates
 									un(14, i(148892)),	-- Dominant Gladiator's Plate Wristplates
 									un(14, i(148686)),	-- Dominant Gladiator's Dreadplate Wristplates
-								}),
-								i(149419, {	-- Gloves of the Dominant Gladiator
+								}),		
+								i(149419, {	-- Gloves of the Dominant Gladiator		
 									un(14, i(148792)),	-- Dominant Gladiator's Satin Gloves
 									un(14, i(148738)),	-- Dominant Gladiator's Silk Handguards
 									un(14, i(148864)),	-- Dominant Gladiator's Felweave Handguards
@@ -6295,8 +6210,8 @@ _.Zones =
 									un(14, i(148778)),	-- Dominant Gladiator's Scaled Gauntlets
 									un(14, i(148882)),	-- Dominant Gladiator's Plate Gauntlets
 									un(14, i(148676)),	-- Dominant Gladiator's Dreadplate Gauntlets
-								}),
-								i(149420, {	-- Cinch of the Dominant Gladiator
+								}),		
+								i(149420, {	-- Cinch of the Dominant Gladiator		
 									un(14, i(148802)),	-- Dominant Gladiator's Satin Cord
 									un(14, i(148748)),	-- Dominant Gladiator's Silk Cord
 									un(14, i(148874)),	-- Dominant Gladiator's Felweave Cord
@@ -6309,8 +6224,8 @@ _.Zones =
 									un(14, i(148786)),	-- Dominant Gladiator's Scaled Girdle
 									un(14, i(148890)),	-- Dominant Gladiator's Plate Girdle
 									un(14, i(148684)),	-- Dominant Gladiator's Dreadplate Girdle
-								}),
-								i(149417, {	-- Leggings of the Dominant Gladiator
+								}),		
+								i(149417, {	-- Leggings of the Dominant Gladiator		
 									un(14, i(148796)),	-- Dominant Gladiator's Satin Leggings
 									un(14, i(148742)),	-- Dominant Gladiator's Silk Trousers
 									un(14, i(148868)),	-- Dominant Gladiator's Felweave Trousers
@@ -6323,8 +6238,8 @@ _.Zones =
 									un(14, i(148782)),	-- Dominant Gladiator's Scaled Legguards
 									un(14, i(148886)),	-- Dominant Gladiator's Plate Legguards
 									un(14, i(148680)),	-- Dominant Gladiator's Dreadplate Legguards
-								}),
-								i(149421, {	-- Treads of the Dominant Gladiator
+								}),		
+								i(149421, {	-- Treads of the Dominant Gladiator		
 									un(14, i(148790)),	-- Dominant Gladiator's Satin Treads
 									un(14, i(148736)),	-- Dominant Gladiator's Silk Treads
 									un(14, i(148862)),	-- Dominant Gladiator's Felweave Treads
@@ -6337,8 +6252,8 @@ _.Zones =
 									un(14, i(148776)),	-- Dominant Gladiator's Scaled Sabatons
 									un(14, i(148880)),	-- Dominant Gladiator's Plate Warboots
 									un(14, i(148674)),	-- Dominant Gladiator's Dreadplate Sabatons
-								}),
-								i(149397, {	-- Helm of the Fierce Gladiator
+								}),	
+								i(149397, {	-- Helm of the Fierce Gladiator	
 									un(14, i(148301)),	-- Fierce Gladiator's Satin Hood
 									un(14, i(148247)),	-- Fierce Gladiator's Silk Cowl
 									un(14, i(148373)),	-- Fierce Gladiator's Felweave Cowl
@@ -6351,8 +6266,8 @@ _.Zones =
 									un(14, i(148287)),	-- Fierce Gladiator's Scaled Helm
 									un(14, i(148391)),	-- Fierce Gladiator's Plate Helm
 									un(14, i(148185)),	-- Fierce Gladiator's Dreadplate Helm
-								}),
-								i(149400, {	-- Pauldrons of the Fierce Gladiator
+								}),		
+								i(149400, {	-- Pauldrons of the Fierce Gladiator		
 									un(14, i(148307)),	-- Fierce Gladiator's Satin Mantle
 									un(14, i(148253)),	-- Fierce Gladiator's Silk Amice
 									un(14, i(148379)),	-- Fierce Gladiator's Felweave Amice
@@ -6365,8 +6280,8 @@ _.Zones =
 									un(14, i(148291)),	-- Fierce Gladiator's Scaled Shoulders
 									un(14, i(148395)),	-- Fierce Gladiator's Plate Shoulders
 									un(14, i(148189)),	-- Fierce Gladiator's Dreadplate Shoulders
-								}),
-								i(149405, {	-- Cloak of the Fierce Gladiator
+								}),		
+								i(149405, {	-- Cloak of the Fierce Gladiator		
 									un(14, i(148169)),	-- Fierce Gladiator's Drape of Piety
 									un(14, i(148163)),	-- Fierce Gladiator's Silken Shawl
 									un(14, i(148175)),	-- Fierce Gladiator's Felweave Cloak
@@ -6379,8 +6294,8 @@ _.Zones =
 									un(14, i(148167)),	-- Fierce Gladiator's Greatcloak of Faith
 									un(14, i(148177)),	-- Fierce Gladiator's Cloak of Battle
 									un(14, i(148155)),	-- Fierce Gladiator's Dreadcloak
-								}),
-								i(149398, {	-- Chest of the Fierce Gladiator
+								}),		
+								i(149398, {	-- Chest of the Fierce Gladiator		
 									un(14, i(148305)),	-- Fierce Gladiator's Satin Robe
 									un(14, i(148251)),	-- Fierce Gladiator's Silk Tunic
 									un(14, i(148377)),	-- Fierce Gladiator's Felweave Raiment
@@ -6393,8 +6308,8 @@ _.Zones =
 									un(14, i(148281)),	-- Fierce Gladiator's Scaled Breastplate
 									un(14, i(148385)),	-- Fierce Gladiator's Plate Chestpiece
 									un(14, i(148179)),	-- Fierce Gladiator's Dreadplate Chestpiece
-								}),
-								i(149404, {	-- Bracers of the Fierce Gladiator
+								}),		
+								i(149404, {	-- Bracers of the Fierce Gladiator		
 									un(14, i(148311)),	-- Fierce Gladiator's Satin Bracers
 									un(14, i(148257)),	-- Fierce Gladiator's Silk Bracers
 									un(14, i(148383)),	-- Fierce Gladiator's Felweave Bracers
@@ -6407,8 +6322,8 @@ _.Zones =
 									un(14, i(148295)),	-- Fierce Gladiator's Scaled Wristplates
 									un(14, i(148399)),	-- Fierce Gladiator's Plate Wristplates
 									un(14, i(148193)),	-- Fierce Gladiator's Dreadplate Wristplates
-								}),
-								i(149401, {	-- Gloves of the Fierce Gladiator
+								}),		
+								i(149401, {	-- Gloves of the Fierce Gladiator		
 									un(14, i(148299)),	-- Fierce Gladiator's Satin Gloves
 									un(14, i(148245)),	-- Fierce Gladiator's Silk Handguards
 									un(14, i(148371)),	-- Fierce Gladiator's Felweave Handguards
@@ -6421,8 +6336,8 @@ _.Zones =
 									un(14, i(148285)),	-- Fierce Gladiator's Scaled Gauntlets
 									un(14, i(148389)),	-- Fierce Gladiator's Plate Gauntlets
 									un(14, i(148183)),	-- Fierce Gladiator's Dreadplate Gauntlets
-								}),
-								i(149402, {	-- Cinch of the Fierce Gladiator
+								}),		
+								i(149402, {	-- Cinch of the Fierce Gladiator		
 									un(14, i(148309)),	-- Fierce Gladiator's Satin Cord
 									un(14, i(148255)),	-- Fierce Gladiator's Silk Cord
 									un(14, i(148381)),	-- Fierce Gladiator's Felweave Cord
@@ -6435,8 +6350,8 @@ _.Zones =
 									un(14, i(148293)),	-- Fierce Gladiator's Scaled Girdle
 									un(14, i(148397)),	-- Fierce Gladiator's Plate Girdle
 									un(14, i(148191)),	-- Fierce Gladiator's Dreadplate Girdle
-								}),
-								i(149399, {	-- Leggings of the Fierce Gladiator
+								}),		
+								i(149399, {	-- Leggings of the Fierce Gladiator		
 									un(14, i(148303)),	-- Fierce Gladiator's Satin Leggings
 									un(14, i(148249)),	-- Fierce Gladiator's Silk Trousers
 									un(14, i(148375)),	-- Fierce Gladiator's Felweave Trousers
@@ -6449,8 +6364,8 @@ _.Zones =
 									un(14, i(148289)),	-- Fierce Gladiator's Scaled Legguards
 									un(14, i(148393)),	-- Fierce Gladiator's Plate Legguards
 									un(14, i(148187)),	-- Fierce Gladiator's Dreadplate Legguards
-								}),
-								i(149403, {	-- Treads of the Fierce Gladiator
+								}),		
+								i(149403, {	-- Treads of the Fierce Gladiator		
 									un(14, i(148297)),	-- Fierce Gladiator's Satin Treads
 									un(14, i(148243)),	-- Fierce Gladiator's Silk Treads
 									un(14, i(148369)),	-- Fierce Gladiator's Felweave Treads
@@ -6466,7 +6381,7 @@ _.Zones =
 								}),
 							}),
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-						}),
+						}),	
 					})),
 					n(96980, { 	-- Matilda Brightlink <Mail Armor Merchant>
 						a(i(48250)),	-- Windrunner's Headpiece of Conquest
@@ -6576,7 +6491,7 @@ _.Zones =
 						a(i(25470)),	-- Golden Gryphon
 						h(i(25476)),	-- Green Wind Rider
 						a(i(25472)),	-- Snowy Gryphon
-						h(i(25474)),	-- Tawny Wind Rider
+						h(i(25474)),	-- Tawny Wind Rider 
 						h(i(44690)),	-- Armored Blue Wind Rider
 						a(i(44689)),	-- Armored Snowy Gryphon
 						h(i(44226)),	-- Reins of the Armored Brown Bear
@@ -6609,7 +6524,7 @@ _.Zones =
 						i(40698),	-- Ward of the Violet Citadel
 						i(40699),	-- Handbook of Obscure Remedies
 					}),
-					n(96975, { 	-- Paldesse <Cloth Armor Merchant>
+					n(96975, { 	-- Paldesse <Cloth Armor Merchant>	
 						i(50997),	-- Circle of Ossus
 						i(50984),	-- Gloves of Ambivalence
 						i(50983),	-- Gloves of False Gestures
@@ -6706,7 +6621,7 @@ _.Zones =
 						i(39491),	-- Heroes' Frostfire Circlet
 					}),
 					n(92457, {	-- Patricia Egan <Alchemy Supplier>
-						["groups"] = {
+						["g"] = {
 							i(127898),	-- Recipe: Ancient Healing Potion (Rank 1)
 							i(127917),	-- Recipe: Ancient Healing Potion (Rank 2)
 							i(127899),	-- Recipe: Ancient Mana Potion (Rank 1)
@@ -6907,7 +6822,7 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION { Legion Season 1 & 2
-									i(146237, {	-- Vindictive Gladiator's Satin Armor
+									i(146237, {	-- Vindictive Gladiator's Satin Armor		
 										i(136206),	-- Vindictive Gladiator's Satin Hood
 										i(136209),	-- Vindictive Gladiator's Satin Mantle
 										i(136876),	-- Vindictive Gladiator's Drape of Piety
@@ -6917,8 +6832,8 @@ _.Zones =
 										i(136210),	-- Vindictive Gladiator's Satin Cord
 										i(136207),	-- Vindictive Gladiator's Satin Leggings
 										i(136204),	-- Vindictive Gladiator's Satin Treads
-									}),
-									i(146235, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146235, {	-- Vindictive Gladiator's Satin Armor		
 										i(136182),	-- Vindictive Gladiator's Silk Cowl
 										i(136185),	-- Vindictive Gladiator's Silk Amice
 										i(136245),	-- Vindictive Gladiator's Silken Shawl
@@ -6928,8 +6843,8 @@ _.Zones =
 										i(136186),	-- Vindictive Gladiator's Silk Cord
 										i(136183),	-- Vindictive Gladiator's Silk Trousers
 										i(136180),	-- Vindictive Gladiator's Silk Treads
-									}),
-									i(146239, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146239, {	-- Vindictive Gladiator's Satin Armor		
 										i(136230),	-- Vindictive Gladiator's Felweave Cowl
 										i(136233),	-- Vindictive Gladiator's Felweave Amice
 										i(136884),	-- Vindictive Gladiator's Felweave Cloak
@@ -6939,8 +6854,8 @@ _.Zones =
 										i(136234),	-- Vindictive Gladiator's Felweave Cord
 										i(136231),	-- Vindictive Gladiator's Felweave Trousers
 										i(136228),	-- Vindictive Gladiator's Felweave Treads
-									}),
-									i(146229, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146229, {	-- Vindictive Gladiator's Satin Armor		
 										i(136166),	-- Vindictive Gladiator's Dragonhide Helm
 										i(136169),	-- Vindictive Gladiator's Dragonhide Spaulders
 										i(136248),	-- Vindictive Gladiator's Dragonhide Cloak
@@ -6950,8 +6865,8 @@ _.Zones =
 										i(136170),	-- Vindictive Gladiator's Dragonhide Belt
 										i(136167),	-- Vindictive Gladiator's Dragonhide Legguards
 										i(136164),	-- Vindictive Gladiator's Dragonhide Moccasins
-									}),
-									i(146233, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146233, {	-- Vindictive Gladiator's Satin Armor		
 										i(136215),	-- Vindictive Gladiator's Leather Helm
 										i(136217),	-- Vindictive Gladiator's Leather Spaulders
 										i(136877),	-- Vindictive Gladiator's Shadowcape
@@ -6961,8 +6876,8 @@ _.Zones =
 										i(136218),	-- Vindictive Gladiator's Leather Belt
 										i(136216),	-- Vindictive Gladiator's Leather Legguards
 										i(136213),	-- Vindictive Gladiator's Leather Slippers
-									}),
-									i(146231, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146231, {	-- Vindictive Gladiator's Satin Armor		
 										i(136190),	-- Vindictive Gladiator's Ironskin Helm
 										i(136192),	-- Vindictive Gladiator's Ironskin Spaulders
 										i(136249),	-- Vindictive Gladiator's Ironskin Cloak
@@ -6972,9 +6887,9 @@ _.Zones =
 										i(136194),	-- Vindictive Gladiator's Ironskin Belt
 										i(136191),	-- Vindictive Gladiator's Ironskin Legguards
 										i(136188),	-- Vindictive Gladiator's Ironskin Slippers
-									}),
+									}),		
 									i(146271, {	-- Vindictive Gladiator's Satin Armor
-										["groups"] = {
+										["g"] = {
 											i(136321),	-- Vindictive Gladiator's Felskin Helm
 											i(136324),	-- Vindictive Gladiator's Felskin Spaulders
 											i(136896),	-- Vindictive Gladiator's Demonthread Cloak
@@ -6986,8 +6901,8 @@ _.Zones =
 											i(136319),	-- Vindictive Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(146227, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146227, {	-- Vindictive Gladiator's Satin Armor		
 										i(136175),	-- Vindictive Gladiator's Chain Helm
 										i(136177),	-- Vindictive Gladiator's Chain Spaulders
 										i(136252),	-- Vindictive Gladiator's Drape of the Tracker
@@ -6997,8 +6912,8 @@ _.Zones =
 										i(136178),	-- Vindictive Gladiator's Chain Clasp
 										i(136176),	-- Vindictive Gladiator's Chain Leggings
 										i(136173),	-- Vindictive Gladiator's Chain Treads
-									}),
-									i(146225, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146225, {	-- Vindictive Gladiator's Satin Armor		
 										i(136223),	-- Vindictive Gladiator's Ringmail Helm
 										i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
 										i(136878),	-- Vindictive Gladiator's Totemic Cloak
@@ -7008,8 +6923,8 @@ _.Zones =
 										i(136226),	-- Vindictive Gladiator's Ringmail Clasp
 										i(136224),	-- Vindictive Gladiator's Ringmail Kilt
 										i(136221),	-- Vindictive Gladiator's Ringmail Boots
-									}),
-									i(146223, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146223, {	-- Vindictive Gladiator's Satin Armor		
 										i(136199),	-- Vindictive Gladiator's Scaled Helm
 										i(136201),	-- Vindictive Gladiator's Scaled Shoulders
 										i(136253),	-- Vindictive Gladiator's Greatcloak of Faith
@@ -7019,8 +6934,8 @@ _.Zones =
 										i(136202),	-- Vindictive Gladiator's Scaled Girdle
 										i(136200),	-- Vindictive Gladiator's Scaled Legguards
 										i(136197),	-- Vindictive Gladiator's Scaled Sabatons
-									}),
-									i(146219, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146219, {	-- Vindictive Gladiator's Satin Armor		
 										i(136239),	-- Vindictive Gladiator's Plate Helm
 										i(136241),	-- Vindictive Gladiator's Plate Shoulders
 										i(136890),	-- Vindictive Gladiator's Cloak of Battle
@@ -7030,8 +6945,8 @@ _.Zones =
 										i(136242),	-- Vindictive Gladiator's Plate Girdle
 										i(136240),	-- Vindictive Gladiator's Plate Legguards
 										i(136237),	-- Vindictive Gladiator's Plate Warboots
-									}),
-									i(146221, {	-- Vindictive Gladiator's Satin Armor
+									}),		
+									i(146221, {	-- Vindictive Gladiator's Satin Armor		
 										i(136159),	-- Vindictive Gladiator's Dreadplate Helm
 										i(136161),	-- Vindictive Gladiator's Dreadplate Shoulders
 										i(136244),	-- Vindictive Gladiator's Dreadcloak
@@ -7041,9 +6956,9 @@ _.Zones =
 										i(136162),	-- Vindictive Gladiator's Dreadplate Girdle
 										i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
 										i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
-									}),
+									}),	
 									-- LEGION 3 & 4
-									i(147639, {	-- Cruel Gladiator's Satin Armor
+									i(147639, {	-- Cruel Gladiator's Satin Armor		
 										i(144927),	-- Cruel Gladiator's Satin Hood
 										i(144933),	-- Cruel Gladiator's Satin Mantle
 										i(144795),	-- Cruel Gladiator's Drape of Piety
@@ -7053,8 +6968,8 @@ _.Zones =
 										i(144935),	-- Cruel Gladiator's Satin Cord
 										i(144929),	-- Cruel Gladiator's Satin Leggings
 										i(144923),	-- Cruel Gladiator's Satin Treads
-									}),
-									i(147643, {	-- Cruel Gladiator's Silk Armor
+									}),		
+									i(147643, {	-- Cruel Gladiator's Silk Armor		
 										i(144873),	-- Cruel Gladiator's Silk Cowl
 										i(144879),	-- Cruel Gladiator's Silk Amice
 										i(144789),	-- Cruel Gladiator's Silken Shawl
@@ -7064,8 +6979,8 @@ _.Zones =
 										i(144881),	-- Cruel Gladiator's Silk Cord
 										i(144875),	-- Cruel Gladiator's Silk Trousers
 										i(144869),	-- Cruel Gladiator's Silk Treads
-									}),
-									i(147630, {	-- Cruel Gladiator's Felweave Armor
+									}),		
+									i(147630, {	-- Cruel Gladiator's Felweave Armor		
 										i(144999),	-- Cruel Gladiator's Felweave Cowl
 										i(145005),	-- Cruel Gladiator's Felweave Amice
 										i(144801),	-- Cruel Gladiator's Felweave Cloak
@@ -7075,8 +6990,8 @@ _.Zones =
 										i(145007),	-- Cruel Gladiator's Felweave Cord
 										i(145001),	-- Cruel Gladiator's Felweave Trousers
 										i(144995),	-- Cruel Gladiator's Felweave Treads
-									}),
-									i(147624, {	-- Cruel Gladiator's Dragonhide Armor
+									}),		
+									i(147624, {	-- Cruel Gladiator's Dragonhide Armor		
 										i(144843),	-- Cruel Gladiator's Dragonhide Helm
 										i(144847),	-- Cruel Gladiator's Dragonhide Spaulders
 										i(144785),	-- Cruel Gladiator's Dragonhide Cloak
@@ -7086,8 +7001,8 @@ _.Zones =
 										i(144849),	-- Cruel Gladiator's Dragonhide Belt
 										i(144845),	-- Cruel Gladiator's Dragonhide Legguards
 										i(144839),	-- Cruel Gladiator's Dragonhide Moccasins
-									}),
-									i(147633, {	-- Cruel Gladiator's Leather Armor
+									}),		
+									i(147633, {	-- Cruel Gladiator's Leather Armor		
 										i(144951),	-- Cruel Gladiator's Leather Helm
 										i(144955),	-- Cruel Gladiator's Leather Spaulders
 										i(144797),	-- Cruel Gladiator's Shadowcape
@@ -7097,8 +7012,8 @@ _.Zones =
 										i(144957),	-- Cruel Gladiator's Leather Belt
 										i(144953),	-- Cruel Gladiator's Leather Legguards
 										i(144947),	-- Cruel Gladiator's Leather Slippers
-									}),
-									i(147631, {	-- Cruel Gladiator's Ironskin Armor
+									}),		
+									i(147631, {	-- Cruel Gladiator's Ironskin Armor		
 										i(144889),	-- Cruel Gladiator's Ironskin Helm
 										i(144893),	-- Cruel Gladiator's Ironskin Spaulders
 										i(144791),	-- Cruel Gladiator's Ironskin Cloak
@@ -7108,9 +7023,9 @@ _.Zones =
 										i(144897),	-- Cruel Gladiator's Ironskin Belt
 										i(144891),	-- Cruel Gladiator's Ironskin Legguards
 										i(144885),	-- Cruel Gladiator's Ironskin Slippers
-									}),
+									}),		
 									i(147628, {	-- Cruel Gladiator's Felskin Armor
-										["groups"] = {
+										["g"] = {
 											i(144827),	-- Cruel Gladiator's Felskin Helm
 											i(144831),	-- Cruel Gladiator's Felskin Spaulders
 											i(144783),	-- Cruel Gladiator's Demonthread Cloak
@@ -7122,8 +7037,8 @@ _.Zones =
 											i(144823),	-- Cruel Gladiator's Felskin Boots
 										},
 										["classes"] = { 12 },
-									}),
-									i(147622, {	-- Cruel Gladiator's Chain Armor
+									}),		
+									i(147622, {	-- Cruel Gladiator's Chain Armor		
 										i(144859),	-- Cruel Gladiator's Chain Helm
 										i(144863),	-- Cruel Gladiator's Chain Spaulders
 										i(144787),	-- Cruel Gladiator's Drape of the Tracker
@@ -7133,8 +7048,8 @@ _.Zones =
 										i(144865),	-- Cruel Gladiator's Chain Clasp
 										i(144861),	-- Cruel Gladiator's Chain Leggings
 										i(144855),	-- Cruel Gladiator's Chain Treads
-									}),
-									i(147638, {	-- Cruel Gladiator's Ringmail Armor
+									}),		
+									i(147638, {	-- Cruel Gladiator's Ringmail Armor		
 										i(144967),	-- Cruel Gladiator's Ringmail Helm
 										i(144971),	-- Cruel Gladiator's Ringmail Spaulders
 										i(144799),	-- Cruel Gladiator's Totemic Cloak
@@ -7144,8 +7059,8 @@ _.Zones =
 										i(144973),	-- Cruel Gladiator's Ringmail Clasp
 										i(144969),	-- Cruel Gladiator's Ringmail Kilt
 										i(144963),	-- Cruel Gladiator's Ringmail Boots
-									}),
-									i(147641, {	-- Cruel Gladiator's Scaled Armor
+									}),		
+									i(147641, {	-- Cruel Gladiator's Scaled Armor		
 										i(144913),	-- Cruel Gladiator's Scaled Helm
 										i(144917),	-- Cruel Gladiator's Scaled Shoulders
 										i(144793),	-- Cruel Gladiator's Greatcloak of Faith
@@ -7155,8 +7070,8 @@ _.Zones =
 										i(144919),	-- Cruel Gladiator's Scaled Girdle
 										i(144915),	-- Cruel Gladiator's Scaled Legguards
 										i(144909),	-- Cruel Gladiator's Scaled Sabatons
-									}),
-									i(147635, {	-- Cruel Gladiator's Plate Armor
+									}),		
+									i(147635, {	-- Cruel Gladiator's Plate Armor		
 										i(145017),	-- Cruel Gladiator's Plate Helm
 										i(145021),	-- Cruel Gladiator's Plate Shoulders
 										i(144803),	-- Cruel Gladiator's Cloak of Battle
@@ -7166,8 +7081,8 @@ _.Zones =
 										i(145023),	-- Cruel Gladiator's Plate Girdle
 										i(145019),	-- Cruel Gladiator's Plate Legguards
 										i(145013),	-- Cruel Gladiator's Plate Warboots
-									}),
-									i(147626, {	-- Cruel Gladiator's Dreadplate Armor
+									}),		
+									i(147626, {	-- Cruel Gladiator's Dreadplate Armor		
 										i(144811),	-- Cruel Gladiator's Dreadplate Helm
 										i(144815),	-- Cruel Gladiator's Dreadplate Shoulders
 										i(144781),	-- Cruel Gladiator's Dreadcloak
@@ -7177,7 +7092,7 @@ _.Zones =
 										i(144817),	-- Cruel Gladiator's Dreadplate Girdle
 										i(144813),	-- Cruel Gladiator's Dreadplate Legguards
 										i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
-									}),
+									}),		
 								},
 							}),
 						},
@@ -7328,8 +7243,8 @@ _.Zones =
 					}),
 					nh(120687, {	-- Violet Shadowmend <Gladiator Quartermaster>
 						gssh(1414, {	-- Gladiator
-							["groups"] = {
-								i(149424, {	-- Helm of the Demonic Gladiator
+							["g"] = {
+								i(149424, {	-- Helm of the Demonic Gladiator		
 									i(149041),	-- Demonic Gladiator's Satin Hood
 									i(148987),	-- Demonic Gladiator's Silk Cowl
 									i(149113),	-- Demonic Gladiator's Felweave Cowl
@@ -7342,8 +7257,8 @@ _.Zones =
 									i(149026),	-- Demonic Gladiator's Scaled Helm
 									i(149131),	-- Demonic Gladiator's Plate Helm
 									i(148925),	-- Demonic Gladiator's Dreadplate Helm
-								}),
-								i(149427, {	-- Pauldrons of the Demonic Gladiator
+								}),		
+								i(149427, {	-- Pauldrons of the Demonic Gladiator		
 									i(149047),	-- Demonic Gladiator's Satin Mantle
 									i(148993),	-- Demonic Gladiator's Silk Amice
 									i(149119),	-- Demonic Gladiator's Felweave Amice
@@ -7356,8 +7271,8 @@ _.Zones =
 									i(149031),	-- Demonic Gladiator's Scaled Shoulders
 									i(149135),	-- Demonic Gladiator's Plate Shoulders
 									i(148929),	-- Demonic Gladiator's Dreadplate Shoulders
-								}),
-								i(149432, {	-- Cloak of the Demonic Gladiator
+								}),		
+								i(149432, {	-- Cloak of the Demonic Gladiator		
 									i(148909),	-- Demonic Gladiator's Drape of Piety
 									i(148903),	-- Demonic Gladiator's Silken Shawl
 									i(148915),	-- Demonic Gladiator's Felweave Cloak
@@ -7370,8 +7285,8 @@ _.Zones =
 									i(148907),	-- Demonic Gladiator's Greatcloak of Faith
 									i(148917),	-- Demonic Gladiator's Cloak of Battle
 									i(148895),	-- Demonic Gladiator's Dreadcloak
-								}),
-								i(149425, {	-- Chest of the Demonic Gladiator
+								}),		
+								i(149425, {	-- Chest of the Demonic Gladiator		
 									i(149045),	-- Demonic Gladiator's Satin Robe
 									i(148991),	-- Demonic Gladiator's Silk Tunic
 									i(149117),	-- Demonic Gladiator's Felweave Raiment
@@ -7384,8 +7299,8 @@ _.Zones =
 									i(149020),	-- Demonic Gladiator's Scaled Breastplate
 									i(149125),	-- Demonic Gladiator's Plate Chestpiece
 									i(148919),	-- Demonic Gladiator's Dreadplate Chestpiece
-								}),
-								i(149431, {	-- Bracers of the Demonic Gladiator
+								}),		
+								i(149431, {	-- Bracers of the Demonic Gladiator		
 									i(149051),	-- Demonic Gladiator's Satin Bracers
 									i(148997),	-- Demonic Gladiator's Silk Bracers
 									i(149123),	-- Demonic Gladiator's Felweave Bracers
@@ -7398,8 +7313,8 @@ _.Zones =
 									i(149035),	-- Demonic Gladiator's Scaled Wristplates
 									i(149139),	-- Demonic Gladiator's Plate Wristplates
 									i(148933),	-- Demonic Gladiator's Dreadplate Wristplates
-								}),
-								i(149428, {	-- Gloves of the Demonic Gladiator
+								}),		
+								i(149428, {	-- Gloves of the Demonic Gladiator		
 									i(149039),	-- Demonic Gladiator's Satin Gloves
 									i(148985),	-- Demonic Gladiator's Silk Handguards
 									i(149111),	-- Demonic Gladiator's Felweave Handguards
@@ -7412,8 +7327,8 @@ _.Zones =
 									i(149024),	-- Demonic Gladiator's Scaled Gauntlets
 									i(149129),	-- Demonic Gladiator's Plate Gauntlets
 									i(148923),	-- Demonic Gladiator's Dreadplate Gauntlets
-								}),
-								i(149429, {	-- Cinch of the Demonic Gladiator
+								}),		
+								i(149429, {	-- Cinch of the Demonic Gladiator		
 									i(149049),	-- Demonic Gladiator's Satin Cord
 									i(148995),	-- Demonic Gladiator's Silk Cord
 									i(149121),	-- Demonic Gladiator's Felweave Cord
@@ -7426,8 +7341,8 @@ _.Zones =
 									i(149033),	-- Demonic Gladiator's Scaled Girdle
 									i(149137),	-- Demonic Gladiator's Plate Girdle
 									i(148931),	-- Demonic Gladiator's Dreadplate Girdle
-								}),
-								i(149426, {	-- Leggings of the Demonic Gladiator
+								}),		
+								i(149426, {	-- Leggings of the Demonic Gladiator		
 									i(149043),	-- Demonic Gladiator's Satin Leggings
 									i(148989),	-- Demonic Gladiator's Silk Trousers
 									i(149115),	-- Demonic Gladiator's Felweave Trousers
@@ -7440,8 +7355,8 @@ _.Zones =
 									i(149028),	-- Demonic Gladiator's Scaled Legguards
 									i(149133),	-- Demonic Gladiator's Plate Legguards
 									i(148927),	-- Demonic Gladiator's Dreadplate Legguards
-								}),
-								i(149430, {	-- Treads of the Demonic Gladiator
+								}),		
+								i(149430, {	-- Treads of the Demonic Gladiator		
 									i(149037),	-- Demonic Gladiator's Satin Treads
 									i(148983),	-- Demonic Gladiator's Silk Treads
 									i(149109),	-- Demonic Gladiator's Felweave Treads
@@ -7468,8 +7383,8 @@ _.Zones =
 									un(2, i(148534)),	-- Dominant Gladiator's Scaled Helm
 									un(2, i(148639)),	-- Dominant Gladiator's Plate Helm
 									un(2, i(148433)),	-- Dominant Gladiator's Dreadplate Helm
-								}),
-								i(149409, {	-- Pauldrons of the Dominant Gladiator
+								}),		
+								i(149409, {	-- Pauldrons of the Dominant Gladiator		
 									un(2, i(148555)),	-- Dominant Gladiator's Satin Mantle
 									un(2, i(148501)),	-- Dominant Gladiator's Silk Amice
 									un(2, i(148627)),	-- Dominant Gladiator's Felweave Amice
@@ -7482,8 +7397,8 @@ _.Zones =
 									un(2, i(148539)),	-- Dominant Gladiator's Scaled Shoulders
 									un(2, i(148643)),	-- Dominant Gladiator's Plate Shoulders
 									un(2, i(148437)),	-- Dominant Gladiator's Dreadplate Shoulders
-								}),
-								i(149414, {	-- Cloak of the Dominant Gladiator
+								}),		
+								i(149414, {	-- Cloak of the Dominant Gladiator		
 									un(2, i(148417)),	-- Dominant Gladiator's Drape of Piety
 									un(2, i(148411)),	-- Dominant Gladiator's Silken Shawl
 									un(2, i(148423)),	-- Dominant Gladiator's Felweave Cloak
@@ -7496,8 +7411,8 @@ _.Zones =
 									un(2, i(148415)),	-- Dominant Gladiator's Greatcloak of Faith
 									un(2, i(148425)),	-- Dominant Gladiator's Cloak of Battle
 									un(2, i(148403)),	-- Dominant Gladiator's Dreadcloak
-								}),
-								i(149407, {	-- Chest of the Dominant Gladiator
+								}),		
+								i(149407, {	-- Chest of the Dominant Gladiator		
 									un(2, i(148553)),	-- Dominant Gladiator's Satin Robe
 									un(2, i(148499)),	-- Dominant Gladiator's Silk Tunic
 									un(2, i(148625)),	-- Dominant Gladiator's Felweave Raiment
@@ -7510,8 +7425,8 @@ _.Zones =
 									un(2, i(148528)),	-- Dominant Gladiator's Scaled Breastplate
 									un(2, i(148633)),	-- Dominant Gladiator's Plate Chestpiece
 									un(2, i(148427)),	-- Dominant Gladiator's Dreadplate Chestpiece
-								}),
-								i(149413, {	-- Bracers of the Dominant Gladiator
+								}),		
+								i(149413, {	-- Bracers of the Dominant Gladiator		
 									un(2, i(148559)),	-- Dominant Gladiator's Satin Bracers
 									un(2, i(148505)),	-- Dominant Gladiator's Silk Bracers
 									un(2, i(148631)),	-- Dominant Gladiator's Felweave Bracers
@@ -7524,8 +7439,8 @@ _.Zones =
 									un(2, i(148543)),	-- Dominant Gladiator's Scaled Wristplates
 									un(2, i(148647)),	-- Dominant Gladiator's Plate Wristplates
 									un(2, i(148441)),	-- Dominant Gladiator's Dreadplate Wristplates
-								}),
-								i(149410, {	-- Gloves of the Dominant Gladiator
+								}),		
+								i(149410, {	-- Gloves of the Dominant Gladiator		
 									un(2, i(148547)),	-- Dominant Gladiator's Satin Gloves
 									un(2, i(148493)),	-- Dominant Gladiator's Silk Handguards
 									un(2, i(148619)),	-- Dominant Gladiator's Felweave Handguards
@@ -7538,8 +7453,8 @@ _.Zones =
 									un(2, i(148532)),	-- Dominant Gladiator's Scaled Gauntlets
 									un(2, i(148637)),	-- Dominant Gladiator's Plate Gauntlets
 									un(2, i(148431)),	-- Dominant Gladiator's Dreadplate Gauntlets
-								}),
-								i(149411, {	-- Cinch of the Dominant Gladiator
+								}),		
+								i(149411, {	-- Cinch of the Dominant Gladiator		
 									un(2, i(148557)),	-- Dominant Gladiator's Satin Cord
 									un(2, i(148503)),	-- Dominant Gladiator's Silk Cord
 									un(2, i(148629)),	-- Dominant Gladiator's Felweave Cord
@@ -7552,8 +7467,8 @@ _.Zones =
 									un(2, i(148541)),	-- Dominant Gladiator's Scaled Girdle
 									un(2, i(148645)),	-- Dominant Gladiator's Plate Girdle
 									un(2, i(148439)),	-- Dominant Gladiator's Dreadplate Girdle
-								}),
-								i(149408, {	-- Leggings of the Dominant Gladiator
+								}),		
+								i(149408, {	-- Leggings of the Dominant Gladiator		
 									un(2, i(148551)),	-- Dominant Gladiator's Satin Leggings
 									un(2, i(148497)),	-- Dominant Gladiator's Silk Trousers
 									un(2, i(148623)),	-- Dominant Gladiator's Felweave Trousers
@@ -7566,8 +7481,8 @@ _.Zones =
 									un(2, i(148536)),	-- Dominant Gladiator's Scaled Legguards
 									un(2, i(148641)),	-- Dominant Gladiator's Plate Legguards
 									un(2, i(148435)),	-- Dominant Gladiator's Dreadplate Legguards
-								}),
-								i(149412, {	-- Treads of the Dominant Gladiator
+								}),		
+								i(149412, {	-- Treads of the Dominant Gladiator		
 									un(2, i(148545)),	-- Dominant Gladiator's Satin Treads
 									un(2, i(148491)),	-- Dominant Gladiator's Silk Treads
 									un(2, i(148617)),	-- Dominant Gladiator's Felweave Treads
@@ -7581,7 +7496,7 @@ _.Zones =
 									un(2, i(148635)),	-- Dominant Gladiator's Plate Warboots
 									un(2, i(148429)),	-- Dominant Gladiator's Dreadplate Sabatons
 								}),
-								i(149388, {	-- Helm of the Fierce Gladiator
+								i(149388, {	-- Helm of the Fierce Gladiator		
 									un(2, i(148056)),	-- Fierce Gladiator's Satin Hood
 									un(2, i(148002)),	-- Fierce Gladiator's Silk Cowl
 									un(2, i(148128)),	-- Fierce Gladiator's Felweave Cowl
@@ -7594,8 +7509,8 @@ _.Zones =
 									un(2, i(148041)),	-- Fierce Gladiator's Scaled Helm
 									un(2, i(148146)),	-- Fierce Gladiator's Plate Helm
 									un(2, i(147940)),	-- Fierce Gladiator's Dreadplate Helm
-								}),
-								i(149391, {	-- Pauldrons of the Fierce Gladiator
+								}),		
+								i(149391, {	-- Pauldrons of the Fierce Gladiator		
 									un(2, i(148062)),	-- Fierce Gladiator's Satin Mantle
 									un(2, i(148008)),	-- Fierce Gladiator's Silk Amice
 									un(2, i(148134)),	-- Fierce Gladiator's Felweave Amice
@@ -7608,8 +7523,8 @@ _.Zones =
 									un(2, i(148046)),	-- Fierce Gladiator's Scaled Shoulders
 									un(2, i(148150)),	-- Fierce Gladiator's Plate Shoulders
 									un(2, i(147944)),	-- Fierce Gladiator's Dreadplate Shoulders
-								}),
-								i(149396, {	-- Cloak of the Fierce Gladiator
+								}),		
+								i(149396, {	-- Cloak of the Fierce Gladiator		
 									un(2, i(147924)),	-- Fierce Gladiator's Drape of Piety
 									un(2, i(147918)),	-- Fierce Gladiator's Silken Shawl
 									un(2, i(147930)),	-- Fierce Gladiator's Felweave Cloak
@@ -7622,8 +7537,8 @@ _.Zones =
 									un(2, i(147922)),	-- Fierce Gladiator's Greatcloak of Faith
 									un(2, i(147932)),	-- Fierce Gladiator's Cloak of Battle
 									un(2, i(147910)),	-- Fierce Gladiator's Dreadcloak
-								}),
-								i(149389, {	-- Chest of the Fierce Gladiator
+								}),		
+								i(149389, {	-- Chest of the Fierce Gladiator		
 									un(2, i(148060)),	-- Fierce Gladiator's Satin Robe
 									un(2, i(148006)),	-- Fierce Gladiator's Silk Tunic
 									un(2, i(148132)),	-- Fierce Gladiator's Felweave Raiment
@@ -7636,8 +7551,8 @@ _.Zones =
 									un(2, i(148035)),	-- Fierce Gladiator's Scaled Breastplate
 									un(2, i(148140)),	-- Fierce Gladiator's Plate Chestpiece
 									un(2, i(147934)),	-- Fierce Gladiator's Dreadplate Chestpiece
-								}),
-								i(149395, {	-- Bracers of the Fierce Gladiator
+								}),		
+								i(149395, {	-- Bracers of the Fierce Gladiator		
 									un(2, i(148066)),	-- Fierce Gladiator's Satin Bracers
 									un(2, i(148012)),	-- Fierce Gladiator's Silk Bracers
 									un(2, i(148138)),	-- Fierce Gladiator's Felweave Bracers
@@ -7650,8 +7565,8 @@ _.Zones =
 									un(2, i(148050)),	-- Fierce Gladiator's Scaled Wristplates
 									un(2, i(148154)),	-- Fierce Gladiator's Plate Wristplates
 									un(2, i(147948)),	-- Fierce Gladiator's Dreadplate Wristplates
-								}),
-								i(149392, {	-- Gloves of the Fierce Gladiator
+								}),		
+								i(149392, {	-- Gloves of the Fierce Gladiator		
 									un(2, i(148054)),	-- Fierce Gladiator's Satin Gloves
 									un(2, i(148000)),	-- Fierce Gladiator's Silk Handguards
 									un(2, i(148126)),	-- Fierce Gladiator's Felweave Handguards
@@ -7664,8 +7579,8 @@ _.Zones =
 									un(2, i(148039)),	-- Fierce Gladiator's Scaled Gauntlets
 									un(2, i(148144)),	-- Fierce Gladiator's Plate Gauntlets
 									un(2, i(147938)),	-- Fierce Gladiator's Dreadplate Gauntlets
-								}),
-								i(149393, {	-- Cinch of the Fierce Gladiator
+								}),		
+								i(149393, {	-- Cinch of the Fierce Gladiator		
 									un(2, i(148064)),	-- Fierce Gladiator's Satin Cord
 									un(2, i(148010)),	-- Fierce Gladiator's Silk Cord
 									un(2, i(148136)),	-- Fierce Gladiator's Felweave Cord
@@ -7678,8 +7593,8 @@ _.Zones =
 									un(2, i(148048)),	-- Fierce Gladiator's Scaled Girdle
 									un(2, i(148152)),	-- Fierce Gladiator's Plate Girdle
 									un(2, i(147946)),	-- Fierce Gladiator's Dreadplate Girdle
-								}),
-								i(149390, {	-- Leggings of the Fierce Gladiator
+								}),		
+								i(149390, {	-- Leggings of the Fierce Gladiator		
 									un(2, i(148058)),	-- Fierce Gladiator's Satin Leggings
 									un(2, i(148004)),	-- Fierce Gladiator's Silk Trousers
 									un(2, i(148130)),	-- Fierce Gladiator's Felweave Trousers
@@ -7692,8 +7607,8 @@ _.Zones =
 									un(2, i(148043)),	-- Fierce Gladiator's Scaled Legguards
 									un(2, i(148148)),	-- Fierce Gladiator's Plate Legguards
 									un(2, i(147942)),	-- Fierce Gladiator's Dreadplate Legguards
-								}),
-								i(149394, {	-- Treads of the Fierce Gladiator
+								}),		
+								i(149394, {	-- Treads of the Fierce Gladiator		
 									un(2, i(148052)),	-- Fierce Gladiator's Satin Treads
 									un(2, i(147998)),	-- Fierce Gladiator's Silk Treads
 									un(2, i(148124)),	-- Fierce Gladiator's Felweave Treads
@@ -7711,8 +7626,8 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 						}),
 						gssh(1391, {	-- Elite
-							["groups"] = bubbleDown({["u"] = 14}, {
-								i(149433, {	-- Helm of the Demonic Gladiator
+							["g"] = bubbleDown({["u"] = 14}, {
+								i(149433, {	-- Helm of the Demonic Gladiator		
 									i(149287),	-- Demonic Gladiator's Satin Hood
 									i(149233),	-- Demonic Gladiator's Silk Cowl
 									i(149359),	-- Demonic Gladiator's Felweave Cowl
@@ -7725,8 +7640,8 @@ _.Zones =
 									i(149273),	-- Demonic Gladiator's Scaled Helm
 									i(149377),	-- Demonic Gladiator's Plate Helm
 									i(149171),	-- Demonic Gladiator's Dreadplate Helm
-								}),
-								i(149436, {	-- Pauldrons of the Demonic Gladiator
+								}),		
+								i(149436, {	-- Pauldrons of the Demonic Gladiator		
 									i(149293),	-- Demonic Gladiator's Satin Mantle
 									i(149239),	-- Demonic Gladiator's Silk Amice
 									i(149365),	-- Demonic Gladiator's Felweave Amice
@@ -7739,8 +7654,8 @@ _.Zones =
 									i(149277),	-- Demonic Gladiator's Scaled Shoulders
 									i(149381),	-- Demonic Gladiator's Plate Shoulders
 									i(149175),	-- Demonic Gladiator's Dreadplate Shoulders
-								}),
-								i(149441, {	-- Cloak of the Demonic Gladiator
+								}),		
+								i(149441, {	-- Cloak of the Demonic Gladiator		
 									i(149155),	-- Demonic Gladiator's Drape of Piety
 									i(149149),	-- Demonic Gladiator's Silken Shawl
 									i(149161),	-- Demonic Gladiator's Felweave Cloak
@@ -7753,8 +7668,8 @@ _.Zones =
 									i(149153),	-- Demonic Gladiator's Greatcloak of Faith
 									i(149163),	-- Demonic Gladiator's Cloak of Battle
 									i(149141),	-- Demonic Gladiator's Dreadcloak
-								}),
-								i(149434, {	-- Chest of the Demonic Gladiator
+								}),		
+								i(149434, {	-- Chest of the Demonic Gladiator		
 									i(149291),	-- Demonic Gladiator's Satin Robe
 									i(149237),	-- Demonic Gladiator's Silk Tunic
 									i(149363),	-- Demonic Gladiator's Felweave Raiment
@@ -7767,8 +7682,8 @@ _.Zones =
 									i(149267),	-- Demonic Gladiator's Scaled Breastplate
 									i(149371),	-- Demonic Gladiator's Plate Chestpiece
 									i(149165),	-- Demonic Gladiator's Dreadplate Chestpiece
-								}),
-								i(149440, {	-- Bracers of the Demonic Gladiator
+								}),		
+								i(149440, {	-- Bracers of the Demonic Gladiator		
 									i(149297),	-- Demonic Gladiator's Satin Bracers
 									i(149243),	-- Demonic Gladiator's Silk Bracers
 									i(149369),	-- Demonic Gladiator's Felweave Bracers
@@ -7781,8 +7696,8 @@ _.Zones =
 									i(149281),	-- Demonic Gladiator's Scaled Wristplates
 									i(149385),	-- Demonic Gladiator's Plate Wristplates
 									i(149179),	-- Demonic Gladiator's Dreadplate Wristplates
-								}),
-								i(149437, {	-- Gloves of the Demonic Gladiator
+								}),		
+								i(149437, {	-- Gloves of the Demonic Gladiator		
 									i(149285),	-- Demonic Gladiator's Satin Gloves
 									i(149231),	-- Demonic Gladiator's Silk Handguards
 									i(149357),	-- Demonic Gladiator's Felweave Handguards
@@ -7795,8 +7710,8 @@ _.Zones =
 									i(149271),	-- Demonic Gladiator's Scaled Gauntlets
 									i(149375),	-- Demonic Gladiator's Plate Gauntlets
 									i(149169),	-- Demonic Gladiator's Dreadplate Gauntlets
-								}),
-								i(149438, {	-- Cinch of the Demonic Gladiator
+								}),		
+								i(149438, {	-- Cinch of the Demonic Gladiator		
 									i(149295),	-- Demonic Gladiator's Satin Cord
 									i(149241),	-- Demonic Gladiator's Silk Cord
 									i(149367),	-- Demonic Gladiator's Felweave Cord
@@ -7809,8 +7724,8 @@ _.Zones =
 									i(149279),	-- Demonic Gladiator's Scaled Girdle
 									i(149383),	-- Demonic Gladiator's Plate Girdle
 									i(149177),	-- Demonic Gladiator's Dreadplate Girdle
-								}),
-								i(149435, {	-- Leggings of the Demonic Gladiator
+								}),		
+								i(149435, {	-- Leggings of the Demonic Gladiator		
 									i(149289),	-- Demonic Gladiator's Satin Leggings
 									i(149235),	-- Demonic Gladiator's Silk Trousers
 									i(149361),	-- Demonic Gladiator's Felweave Trousers
@@ -7823,8 +7738,8 @@ _.Zones =
 									i(149275),	-- Demonic Gladiator's Scaled Legguards
 									i(149379),	-- Demonic Gladiator's Plate Legguards
 									i(149173),	-- Demonic Gladiator's Dreadplate Legguards
-								}),
-								i(149439, {	-- Treads of the Demonic Gladiator
+								}),		
+								i(149439, {	-- Treads of the Demonic Gladiator		
 									i(149283),	-- Demonic Gladiator's Satin Treads
 									i(149229),	-- Demonic Gladiator's Silk Treads
 									i(149355),	-- Demonic Gladiator's Felweave Treads
@@ -7851,7 +7766,7 @@ _.Zones =
 									un(14, i(148781)),	-- Dominant Gladiator's Scaled Helm
 									un(14, i(148885)),	-- Dominant Gladiator's Plate Helm
 									un(14, i(148679)),	-- Dominant Gladiator's Dreadplate Helm
-								}),
+								}),		
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
 									un(14, i(148801)),	-- Dominant Gladiator's Satin Mantle
 									un(14, i(148747)),	-- Dominant Gladiator's Silk Amice
@@ -7865,7 +7780,7 @@ _.Zones =
 									un(14, i(148785)),	-- Dominant Gladiator's Scaled Shoulders
 									un(14, i(148889)),	-- Dominant Gladiator's Plate Shoulders
 									un(14, i(148683)),	-- Dominant Gladiator's Dreadplate Shoulders
-								}),
+								}),		
 								i(149423, {	-- Cloak of the Dominant Gladiator
 									un(14, i(148663)),	-- Dominant Gladiator's Drape of Piety
 									un(14, i(148657)),	-- Dominant Gladiator's Silken Shawl
@@ -7879,7 +7794,7 @@ _.Zones =
 									un(14, i(148661)),	-- Dominant Gladiator's Greatcloak of Faith
 									un(14, i(148671)),	-- Dominant Gladiator's Cloak of Battle
 									un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak
-								}),
+								}),		
 								i(149416, {	-- Chest of the Dominant Gladiator
 									un(14, i(148799)),	-- Dominant Gladiator's Satin Robe
 									un(14, i(148745)),	-- Dominant Gladiator's Silk Tunic
@@ -7893,8 +7808,8 @@ _.Zones =
 									un(14, i(148775)),	-- Dominant Gladiator's Scaled Breastplate
 									un(14, i(148879)),	-- Dominant Gladiator's Plate Chestpiece
 									un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece
-								}),
-								i(149422, {	-- Bracers of the Dominant Gladiator
+								}),		
+								i(149422, {	-- Bracers of the Dominant Gladiator		
 									un(14, i(148805)),	-- Dominant Gladiator's Satin Bracers
 									un(14, i(148751)),	-- Dominant Gladiator's Silk Bracers
 									un(14, i(148877)),	-- Dominant Gladiator's Felweave Bracers
@@ -7907,8 +7822,8 @@ _.Zones =
 									un(14, i(148789)),	-- Dominant Gladiator's Scaled Wristplates
 									un(14, i(148893)),	-- Dominant Gladiator's Plate Wristplates
 									un(14, i(148687)),	-- Dominant Gladiator's Dreadplate Wristplates
-								}),
-								i(149419, {	-- Gloves of the Dominant Gladiator
+								}),		
+								i(149419, {	-- Gloves of the Dominant Gladiator		
 									un(14, i(148793)),	-- Dominant Gladiator's Satin Gloves
 									un(14, i(148739)),	-- Dominant Gladiator's Silk Handguards
 									un(14, i(148865)),	-- Dominant Gladiator's Felweave Handguards
@@ -7921,8 +7836,8 @@ _.Zones =
 									un(14, i(148779)),	-- Dominant Gladiator's Scaled Gauntlets
 									un(14, i(148883)),	-- Dominant Gladiator's Plate Gauntlets
 									un(14, i(148677)),	-- Dominant Gladiator's Dreadplate Gauntlets
-								}),
-								i(149420, {	-- Cinch of the Dominant Gladiator
+								}),		
+								i(149420, {	-- Cinch of the Dominant Gladiator		
 									un(14, i(148803)),	-- Dominant Gladiator's Satin Cord
 									un(14, i(148749)),	-- Dominant Gladiator's Silk Cord
 									un(14, i(148875)),	-- Dominant Gladiator's Felweave Cord
@@ -7935,8 +7850,8 @@ _.Zones =
 									un(14, i(148787)),	-- Dominant Gladiator's Scaled Girdle
 									un(14, i(148891)),	-- Dominant Gladiator's Plate Girdle
 									un(14, i(148685)),	-- Dominant Gladiator's Dreadplate Girdle
-								}),
-								i(149417, {	-- Leggings of the Dominant Gladiator
+								}),		
+								i(149417, {	-- Leggings of the Dominant Gladiator		
 									un(14, i(148797)),	-- Dominant Gladiator's Satin Leggings
 									un(14, i(148743)),	-- Dominant Gladiator's Silk Trousers
 									un(14, i(148869)),	-- Dominant Gladiator's Felweave Trousers
@@ -7949,8 +7864,8 @@ _.Zones =
 									un(14, i(148783)),	-- Dominant Gladiator's Scaled Legguards
 									un(14, i(148887)),	-- Dominant Gladiator's Plate Legguards
 									un(14, i(148681)),	-- Dominant Gladiator's Dreadplate Legguards
-								}),
-								i(149421, {	-- Treads of the Dominant Gladiator
+								}),		
+								i(149421, {	-- Treads of the Dominant Gladiator		
 									un(14, i(148791)),	-- Dominant Gladiator's Satin Treads
 									un(14, i(148737)),	-- Dominant Gladiator's Silk Treads
 									un(14, i(148863)),	-- Dominant Gladiator's Felweave Treads
@@ -7963,8 +7878,8 @@ _.Zones =
 									un(14, i(148777)),	-- Dominant Gladiator's Scaled Sabatons
 									un(14, i(148881)),	-- Dominant Gladiator's Plate Warboots
 									un(14, i(148675)),	-- Dominant Gladiator's Dreadplate Sabatons
-								}),
-								i(149397, {	-- Helm of the Fierce Gladiator
+								}),	
+								i(149397, {	-- Helm of the Fierce Gladiator		
 									un(14, i(148302)),	-- Fierce Gladiator's Satin Hood
 									un(14, i(148248)),	-- Fierce Gladiator's Silk Cowl
 									un(14, i(148374)),	-- Fierce Gladiator's Felweave Cowl
@@ -7977,8 +7892,8 @@ _.Zones =
 									un(14, i(148288)),	-- Fierce Gladiator's Scaled Helm
 									un(14, i(148392)),	-- Fierce Gladiator's Plate Helm
 									un(14, i(148186)),	-- Fierce Gladiator's Dreadplate Helm
-								}),
-								i(149400, {	-- Pauldrons of the Fierce Gladiator
+								}),		
+								i(149400, {	-- Pauldrons of the Fierce Gladiator		
 									un(14, i(148308)),	-- Fierce Gladiator's Satin Mantle
 									un(14, i(148254)),	-- Fierce Gladiator's Silk Amice
 									un(14, i(148380)),	-- Fierce Gladiator's Felweave Amice
@@ -7991,8 +7906,8 @@ _.Zones =
 									un(14, i(148292)),	-- Fierce Gladiator's Scaled Shoulders
 									un(14, i(148396)),	-- Fierce Gladiator's Plate Shoulders
 									un(14, i(148190)),	-- Fierce Gladiator's Dreadplate Shoulders
-								}),
-								i(149405, {	-- Cloak of the Fierce Gladiator
+								}),		
+								i(149405, {	-- Cloak of the Fierce Gladiator		
 									un(14, i(148170)),	-- Fierce Gladiator's Drape of Piety
 									un(14, i(148164)),	-- Fierce Gladiator's Silken Shawl
 									un(14, i(148176)),	-- Fierce Gladiator's Felweave Cloak
@@ -8005,8 +7920,8 @@ _.Zones =
 									un(14, i(148168)),	-- Fierce Gladiator's Greatcloak of Faith
 									un(14, i(148178)),	-- Fierce Gladiator's Cloak of Battle
 									un(14, i(148156)),	-- Fierce Gladiator's Dreadcloak
-								}),
-								i(149398, {	-- Chest of the Fierce Gladiator
+								}),		
+								i(149398, {	-- Chest of the Fierce Gladiator		
 									un(14, i(148306)),	-- Fierce Gladiator's Satin Robe
 									un(14, i(148252)),	-- Fierce Gladiator's Silk Tunic
 									un(14, i(148378)),	-- Fierce Gladiator's Felweave Raiment
@@ -8019,8 +7934,8 @@ _.Zones =
 									un(14, i(148282)),	-- Fierce Gladiator's Scaled Breastplate
 									un(14, i(148386)),	-- Fierce Gladiator's Plate Chestpiece
 									un(14, i(148180)),	-- Fierce Gladiator's Dreadplate Chestpiece
-								}),
-								i(149404, {	-- Bracers of the Fierce Gladiator
+								}),		
+								i(149404, {	-- Bracers of the Fierce Gladiator		
 									un(14, i(148312)),	-- Fierce Gladiator's Satin Bracers
 									un(14, i(148258)),	-- Fierce Gladiator's Silk Bracers
 									un(14, i(148384)),	-- Fierce Gladiator's Felweave Bracers
@@ -8033,8 +7948,8 @@ _.Zones =
 									un(14, i(148296)),	-- Fierce Gladiator's Scaled Wristplates
 									un(14, i(148400)),	-- Fierce Gladiator's Plate Wristplates
 									un(14, i(148194)),	-- Fierce Gladiator's Dreadplate Wristplates
-								}),
-								i(149401, {	-- Gloves of the Fierce Gladiator
+								}),		
+								i(149401, {	-- Gloves of the Fierce Gladiator		
 									un(14, i(148300)),	-- Fierce Gladiator's Satin Gloves
 									un(14, i(148246)),	-- Fierce Gladiator's Silk Handguards
 									un(14, i(148372)),	-- Fierce Gladiator's Felweave Handguards
@@ -8047,8 +7962,8 @@ _.Zones =
 									un(14, i(148286)),	-- Fierce Gladiator's Scaled Gauntlets
 									un(14, i(148390)),	-- Fierce Gladiator's Plate Gauntlets
 									un(14, i(148184)),	-- Fierce Gladiator's Dreadplate Gauntlets
-								}),
-								i(149402, {	-- Cinch of the Fierce Gladiator
+								}),		
+								i(149402, {	-- Cinch of the Fierce Gladiator		
 									un(14, i(148310)),	-- Fierce Gladiator's Satin Cord
 									un(14, i(148256)),	-- Fierce Gladiator's Silk Cord
 									un(14, i(148382)),	-- Fierce Gladiator's Felweave Cord
@@ -8061,8 +7976,8 @@ _.Zones =
 									un(14, i(148294)),	-- Fierce Gladiator's Scaled Girdle
 									un(14, i(148398)),	-- Fierce Gladiator's Plate Girdle
 									un(14, i(148192)),	-- Fierce Gladiator's Dreadplate Girdle
-								}),
-								i(149399, {	-- Leggings of the Fierce Gladiator
+								}),		
+								i(149399, {	-- Leggings of the Fierce Gladiator		
 									un(14, i(148304)),	-- Fierce Gladiator's Satin Leggings
 									un(14, i(148250)),	-- Fierce Gladiator's Silk Trousers
 									un(14, i(148376)),	-- Fierce Gladiator's Felweave Trousers
@@ -8075,8 +7990,8 @@ _.Zones =
 									un(14, i(148290)),	-- Fierce Gladiator's Scaled Legguards
 									un(14, i(148394)),	-- Fierce Gladiator's Plate Legguards
 									un(14, i(148188)),	-- Fierce Gladiator's Dreadplate Legguards
-								}),
-								i(149403, {	-- Treads of the Fierce Gladiator
+								}),		
+								i(149403, {	-- Treads of the Fierce Gladiator		
 									un(14, i(148298)),	-- Fierce Gladiator's Satin Treads
 									un(14, i(148244)),	-- Fierce Gladiator's Silk Treads
 									un(14, i(148370)),	-- Fierce Gladiator's Felweave Treads
@@ -8089,11 +8004,11 @@ _.Zones =
 									un(14, i(148284)),	-- Fierce Gladiator's Scaled Sabatons
 									un(14, i(148388)),	-- Fierce Gladiator's Plate Warboots
 									un(14, i(148182)),	-- Fierce Gladiator's Dreadplate Sabatons
-								}),
+								}),	
 							}),
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-
-						}),
+								
+						}),						
 					}),
 					n(97012, { 	-- Wanda Chanter
 						i(47658),	-- Brimstone Igniter
@@ -8102,7 +8017,7 @@ _.Zones =
 					n(99867, { 	-- Warpweaver Tuviss (Neutral / Dalaran)
 						i(151116),	-- Fashionable Undershirt
 						{ -- Ensemble: Mana-Etched  Regalia
-							["groups"] = {
+							["g"] = {
 								i(151885),	-- Mana-Etched Crown
 								i(151886),	-- Mana-Etched Spaulders
 								i(151882),	-- Mana-Etched Vestments
@@ -8115,7 +8030,7 @@ _.Zones =
 								["itemID"] = 151117,
 						},
 						{ -- Ensemble: Obsidian Prowler's Garb
-							["groups"] = {
+							["g"] = {
 								i(151891),	-- Savage Mask of the Lynx Lord
 								i(151889),	-- Sun-Gilded Shouldercaps
 								i(151895),	-- Chestguard of the Proweler
@@ -8128,7 +8043,7 @@ _.Zones =
 							["itemID"] = 151118
 						},
 						{ -- Ensemble: Der'izu Armor
-							["groups"] = {
+							["g"] = {
 							i(151898),	-- Der'izu Helm
 							i(151896),	-- Der'izu Spaulders
 							i(151901),	-- Der'izu Chestpiece
@@ -8142,7 +8057,7 @@ _.Zones =
 							["itemID"] = 151119
 						},
 						{ -- Ensemble: Righteous Battleplate
-							["groups"] = {
+							["g"] = {
 								i(151906),	-- Helm of the Righteous
 								i(151904),	-- Spaulders of the Righteous
 								i(151908),	-- Breastlate of the Righteous
@@ -8160,7 +8075,7 @@ _.Zones =
 					n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
 						currency(1275, {	-- Curious Coin
 							i(136702, {	-- Formula: Soul Fibril
-								["groups"] = {
+								["g"] = {
 									recipe(209507),	-- Formula: Soul Fibril
 								},
 								["requireSkill"] = 333,	-- Enchanting
@@ -8187,9 +8102,7 @@ _.Zones =
 						}),
 					}),
 					n(-25, {	-- Pet Battle
-						["groups"] = {
-							p(1915),	-- Blind Rat
-						},
+						p(1915),	-- Blind Rat
 					}),
 					n(-2, {	-- Vendors
 						n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
@@ -8197,7 +8110,7 @@ _.Zones =
 								i(137826),	-- Design: Sorcerous Shadowruby Pendant [Rank 2]
 								i(138016),	-- Clothes Chest Pattern: Dalaran Citizens
 								i(139427),	-- Wild Mana Wand
-							}),
+							}),	
 						}),
 						n(97363, {	-- K'huta <Portals and Jujus>
 							currency(1149, {	-- Sightless Eyes
@@ -8210,7 +8123,7 @@ _.Zones =
 								i(138029),	-- Portal Key: Inn Entrance
 								i(138032),	-- Portal Key: Rear Entrance
 								i(138027),	-- Portal Key: Sewer Guard Station
-							}),
+							}),	
 						}),
 						n(97364, { 	-- Laura Malley <Creatures>
 							currency(1149, {	-- Sightless Eyes
@@ -8276,7 +8189,7 @@ _.Zones =
 								97381,	-- Screek
 								97384,	-- Segacedi
 							},
-							["groups"] = {
+							["g"] = {
 								artifact(900),	--  Hidden Artifact Skin
 							},
 						}),
@@ -8290,21 +8203,21 @@ _.Zones =
 								97381,	-- Screek
 								97384,	-- Segacedi
 							},
-							["groups"] = {
+							["g"] = {
 								artifact(611),	-- Assassination Rogue Hidden Artifact Skin
 							},
 						}),
 					}),
-				}),
+				}),	
 				n(-40,  {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-4, {		-- Achievements
 							un(2, ach(11139, {	-- Field Medic!
 								["description"] = "This title was made unobtainable with the 8.0.1 Prepatch for BFA.",
-								["groups"] = {
+								["g"] = {
 									un(39, title(340, {	-- TITLE: Field Medic!
 										["description"] = "WARNING! This title will be removed with the release of Battle For Azeroth. MAKE SURE TO GET IT BEFORE THEN!\nNOTE: You should use Premade Group Finder. You have much better odds in a group.\n\nWARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["groups"] = {
+										["g"] = {
 											{
 												["achievementID"] = 11139,	-- Field Medic (Achievement)
 												["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
