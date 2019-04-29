@@ -16,6 +16,7 @@ _.WorldDrops =
 					i(6211),	-- Recipe: Elixir of Ogre's Strength
 					un(7, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 					un(2, i(13493)),	-- Recipe: Greater Arcane Elixir
+					i(9296), 	-- Recipe: Gift of Arthas
 					i(13490),	-- Recipe: Greater Stoneshield Potion
 					i(9295), 	-- Recipe: Invisibility Potion
 					i(3395),	-- Recipe: Limited Invulnerability Potion
