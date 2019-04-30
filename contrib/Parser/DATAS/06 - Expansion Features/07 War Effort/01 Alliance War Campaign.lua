@@ -20,20 +20,22 @@ _.ExpansionFeatures =
 							n(-6015, {	-- Rewards
 								["description"] = "You'll be offered these rewards at the end of your first foothold.",
 								["g"] = {
-									i(163660),	-- 7th Legionnaire's Chainmail
-									i(163659),	-- 7th Legionnaire's Skullcap
-									i(163658),	-- 7th Legionnaire's Spaulders
-									i(163662, {	-- 7th Legionnaire's Helmet
-										["modID"] = 25,
-									}),
-									i(163661, {	-- 7th Legionnaire's Pauldrons
-										["modID"] = 25,
-									}),
 									i(163663, {	-- 7th Legionnaire's Breastplate
 										["modID"] = 25,
 									}),
-									-- This quest must reward other Azerite gear for other armor types, but it's not on wowhead.
-									-- Need to complete on cloth/leather to see rewards
+									i(163660),	-- 7th Legionnaire's Chainmail
+									i(163662, {	-- 7th Legionnaire's Helmet
+										["modID"] = 25,
+									}),
+									i(163656),	-- 7th Legionnaire's Mask
+									i(163661, {	-- 7th Legionnaire's Pauldrons
+										["modID"] = 25,
+									}),
+									i(163659),	-- 7th Legionnaire's Skullcap
+									i(163655),	-- 7th Legionnaire's Shoulderpads
+									i(163658),	-- 7th Legionnaire's Spaulders
+									i(163657),	-- 7th Legionnaire's Tunic
+									-- Need to complete on cloth to see rewards
 									-- Not sure what the modID does in this instance, but Luce put it on the items during their playthrough, so I'm keeping it
 									-- Mail gear seemed to track fine without it but I could be missing something
 								},

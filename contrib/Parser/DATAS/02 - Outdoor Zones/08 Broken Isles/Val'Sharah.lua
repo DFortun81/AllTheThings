@@ -881,15 +881,18 @@ _.Zones =
 					ach(10698, {	-- That's Val'sharah Folks!
 						{	-- Criteria 1 — Archdruid of the Vale
 							["criteriaID"] = 1,	-- Archdruid of the Vale
-							["sourceQuests"] = { 38323 },	-- Return to the Grove
+							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
 						},
 						{	-- Criteria 2 — Archdruid of the Claw
 							["criteriaID"] = 2,	-- Archdruid of the Claw
 							["sourceQuests"] = { 38322 },	-- Return to the Grove
 						},
-						{	-- Criteria 3 — Archdruid of the Lore
-							["criteriaID"] = 3,	-- Archdruid of the Lore
-							["sourceQuests"] = { 38148 },	-- Return to the Grove
+						{	-- Criteria 3 — Archdruid of Lore
+							["criteriaID"] = 3,	-- Archdruid of Lore
+							["sourceQuests"] = {
+								38225,	-- Death to the Witchmother
+								38235,	-- Solid as a Rock
+							},
 						},
 						{	-- Criteria 4 — Into the Nightmare
 							["criteriaID"] = 4,	-- Into the Nightmare
@@ -969,7 +972,7 @@ _.Zones =
 						["coord"] = { 54.6, 72.8, 641 },
 						["qg"] = 91462,	-- Malfurion Stormrage
 					}),
-					q(38225,  {  -- Death to the Witchmother
+					q(38225, {  -- Death to the Witchmother
 						["sourceQuests"] = {
 							38381,	-- Archdruid of Lord (Non-Druid)
 							44106,	-- Archdruid of Lore (Druid)
@@ -980,6 +983,11 @@ _.Zones =
 							i(121646),	-- Witchmother Drape
 							i(130021),	-- Swiftfeather Band
 						},
+					}),
+					q(39383, {	-- Dishonored
+						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
+						["coord"] = { 60.9, 73.3, 641 },
+						["qg"] = 95395,	-- Thaon Moonclaw
 					}),
 					q(42750, {	-- Dreamcatcher
 						["sourceQuests"] = { 42748 },	-- Emerald Sisters (must be on quest)
@@ -992,6 +1000,11 @@ _.Zones =
 					}),
 					q(38842, {	-- Faerie Fracas (bonus objective)
 						["coord"] = { 54.1, 83.4, 641 },
+					}),
+					q(38455, {	-- Frenzied Furbolgs
+						["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
+						["coord"] = { 49.0, 82.2, 641 },
+						["qg"] = 73426,	-- Rylissa Bearsong
 					}),
 					q(42884, {	-- Grassroots Effort
 						["coord"] = { 66.6, 77.1, 641 },
@@ -1007,8 +1020,17 @@ _.Zones =
 						["itemID"] = 138441,	-- Grotesque Remains
 						["qg"] = 108327,	-- Undulating Boneslime
 					},
+					q(38922, {	-- Littlefur
+						["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
+						["coord"] = { 48.3, 84.5, 641 },
+						["qg"] = 93890,	-- Elder Sookh
+					}),
 					q(42857, {	-- Moist Around the Hedges
 						["coord"] = { 66.7, 75.7, 641 },
+					}),
+					q(39393, {	-- Moonclaw Vale (bonus objective)
+						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
+						["coord"] = { 62.9, 71.6, 641 },
 					}),
 					q(42751, {	-- Moon Reaver
 						["sourceQuests"] = {
@@ -1056,6 +1078,23 @@ _.Zones =
 						["coord"] = { 48.4, 87.9, 641 },
 						["qg"] = 91318,	-- Chieftain Graw
 					},
+					q(39384, {	-- The Corruptor
+						["sourceQuests"] = { 39383 },	-- Dishonored
+						["coord"] = { 62.8, 71.5, 641 },
+						["qg"] = 95396,	-- Thaon Moonclaw
+					}),
+					q(40573, {  -- The Nightmare Lord
+						["sourceQuests"] = { 39384 },	-- The Corruptor
+						["coord"] = { 65.1, 67.0, 641 },
+						["qg"] = 91650,	-- Evelle Nightwhisper
+						["g"] = {
+							i(130008),	-- Armbands of Unrelenting Anguish
+							i(130019),	-- Armplates of Unrelenting Anguish
+							i(130000),	-- Bands of Unrelenting Anguish
+							i(129992),	-- Cuffs of Unrelenting Anguish
+							i(121643),	-- Thaon's Grief
+						},
+					}),
 					{	---------- The Warden's Signet
 						["questID"] = 38711,	-- The Warden's Signet
 						["itemID"] = 127860,	-- Warden's Signet
@@ -1076,6 +1115,21 @@ _.Zones =
 					q(40220, {	-- Thorny Dancing
 						["coord"] = { 53.8, 79.7, 641 },
 						["qg"] = 93600,	-- Saylanna Riverbreeze
+					}),
+					q(38246, {  -- Totemic Call
+						["sourceQuests"] = { 38922 },	-- Littlefur
+						["coord"] = { 46.3, 84.6, 641 },
+						["qg"] = 93581,	-- Littlefur
+						["g"] = {
+							i(121599),	-- Nightvale Cord
+							i(129987),	-- Nightvale Gloves
+							i(121598),	-- Rooksguard Girdle
+							i(130014),	-- Rooksguard Grips
+							i(121601),	-- Sablehide Belt
+							i(129995),	-- Sablehide Handguards
+							i(130003),	-- Thornbrace Grips
+							i(121600),	-- Thornbrace Waistguard
+						},
 					}),
 					q(42747, {	-- Where the Wildkin Are
 						["coord"] = { 59.4, 84.1, 641 },
@@ -1284,18 +1338,6 @@ _.Zones =
 						i(141390),	-- The Corruptor's Totem [AP]
 					}),
 					q(38148),	-- Return to the Grove
-					q(38455),	-- Frenzied Furbolgs
-					q(38922),	-- Littlefur
-					q(38246,  {  -- Totemic Call
-						i(121599),	-- Nightvale Cord
-						i(129987),	-- Nightvale Gloves
-						i(121598),	-- Rooksguard Girdle
-						i(130014),	-- Rooksguard Grips
-						i(121601),	-- Sablehide Belt
-						i(129995),	-- Sablehide Handguards
-						i(130003),	-- Thornbrace Grips
-						i(121600),	-- Thornbrace Waistguard
-					}),
 					q(38143),	-- Awakening the Archdruid
 					q(38144),	-- The Demons Below
 					q(38145),	-- Out of the Dream
@@ -1310,15 +1352,6 @@ _.Zones =
 						i(121587),	-- Thornbrace Helm
 					}),
 					q(38322),	-- Return to the Grove
-					q(39383),	-- Dishonored
-					q(39384),	-- The Corruptor
-					q(40573,  {  -- The Nightmare Lord
-						i(130008),	-- Armbands of Unrelenting Anguish
-						i(130019),	-- Armplates of Unrelenting Anguish
-						i(130000),	-- Bands of Unrelenting Anguish
-						i(129992),	-- Cuffs of Unrelenting Anguish
-						i(121643),	-- Thaon's Grief
-					}),
 					q(38323),	-- Return to the Grove
 					n(-168, {	-- Other Quests
 						sz(10666,3, {	-- Bradensbrook
@@ -1359,9 +1392,14 @@ _.Zones =
 						},
 					}),
 					n(110562, {	-- Bahagar
-						["questID"] = 43446,	
-						["g"] = {	
-							i(130135),
+						["questID"] = 43446,
+						["coord"] = { 45.2, 88.1, 641 },
+						["g"] = {
+							i(130135),	-- Mana-Prowler Leggings
+							{	-- Bahagar (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 18,	-- Bahagar
+							},
 						},
 					}),
 					n(92965,  {	-- Darkshade
@@ -1374,13 +1412,6 @@ _.Zones =
 						["questID"] = 39858,	
 						["g"] = {	
 							i(130125),
-						},
-					}), 
-					n(109225, {	-- Elandris Bladesong (Undergrell Attack)
-						["description"] = "|cff66ccffSpeak to Elandris Bladesong to start the event. Kill waves of enemies and then the Crazed Undergrell.|r",
-						["questID"] = 43176,
-						["g"] = {	
-							i(130133),
 						},
 					}), 
 					n(92334,  {	-- Elindya Featherlight (Skul'vrax)
@@ -1462,6 +1493,18 @@ _.Zones =
 						["questID"] = 38780,
 						["g"] = {	
 							i(130121),
+						},
+					}),
+					n(109708, {	-- Undergrell Ringleader
+						["questID"] = 43176,
+						["coord"] = { 67.0, 69.5, 641 },
+						["crs"] = { 109225 },	-- Elandris Bladesong
+						["g"] = {	
+							i(130133),	-- Undergrell Mobilehelm
+							{	-- Undergrell Attack (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 17,	-- Undergrell Attack
+							},
 						},
 					}),
 					{	---------- Unguarded Thistleleaf Treasure

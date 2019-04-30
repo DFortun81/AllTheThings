@@ -11,7 +11,8 @@ _.ExpansionFeatures =
 						36793 - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
 						36799 - Garrison Nodes - Tracking Quest - triggered after unlocking the mine, picking all herbs
 					]]--
-					ach(8671, {
+					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							crit(1, {	-- Foothold in a Savage Land
 								{	-- For the Horde!
@@ -146,7 +147,6 @@ _.ExpansionFeatures =
 								},
 							}),
 						},
-						["races"] = HORDE_ONLY,
 					}),
 					garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
 						{	-- Feeding An Army
@@ -2119,10 +2119,11 @@ _.ExpansionFeatures =
 						},
 					},
 					n(89753, { 	-- High Overlord Saurfang
+						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["coord"] = { 40.2, 56.7, 590 },
-						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 						["groups"] = {
 							i(123975, {	-- Greater Bounty Spoils
+								["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
 								["groups"] = {
 									i(114111, {	-- Formidable Armament
 										i(115335),	-- Formidable Axe
@@ -2236,6 +2237,13 @@ _.ExpansionFeatures =
 										i(114513),	-- Trousers of Volatile Ice
 										i(114515),	-- Undying Legguards
 									}),
+									i(119122, {	-- Grandiose Ring
+										i(114531),	-- Daggerfinger Ring
+										i(114532),	-- Frostfire Band
+										i(114533),	-- Loop of Shielding Light
+										i(114535),	-- Officiant's Formidable Seal
+										i(114534),	-- Wrenchtooth Signet
+									}),
 									i(114083, {	-- Grandiose Robes
 										i(114497),	-- Chestguard of Determined Resolve
 										i(114499),	-- Crazed Bomber's Breastplate
@@ -2256,146 +2264,126 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							{	-- Arcane Sanctum: Ko'ragh
-								["questID"] = 37757,
+							qh(37757, {	-- Arcane Sanctum: Ko'ragh
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- Auchindoun
-								["questID"] = 37780,
+							}),
+							qh(37780, {	-- Auchindoun
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Blackhand's Crucible: Blackhand
-								["questID"] = 37765,
+							}),
+							qh(37765, {	-- Blackhand's Crucible: Blackhand
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- Bloodmaul Slag Mines
-								["questID"] = 37781,
+							}),
+							qh(37781, {	-- Bloodmaul Slag Mines
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Destructor's Rise
-								["questID"] = 39231,
+							}),
+							qh(39231, {	-- Destructor's Rise
 								["isWeekly"] = true,
 								["groups"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
-							},
-							{	-- Grimrail Depot
-								["questID"] = 37782,
+							}),
+							qh(37782, {	-- Grimrail Depot
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Imperator's Rise: Imperator Mar'gok
-								["questID"] = 37758,
+							}),
+							qh(37758, {	-- Imperator's Rise: Imperator Mar'gok
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- Iron Assembly: Admiral Gar'an
-								["questID"] = 37764,
+							}),
+							qh(37764, {	-- Iron Assembly: Admiral Gar'an
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- Iron Docks
-								["questID"] = 37783,
+							}),
+							qh(37783, {	-- Iron Docks
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Maw of Souls
-								["questID"] = 39225,
+							}),
+							qh(39225, {	-- Maw of Souls
 								["isDaily"] = true,
 								["groups"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
-							},
-							{	-- Pits of Mannoroth
-								["questID"] = 39221,
+							}),
+							qh(39221, {	-- Pits of Mannoroth
 								["isDaily"] = true,
 								["groups"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
-							},
-							{	-- Shadowmoon Burial Grounds
-								["questID"] = 37784,
+							}),
+							qh(37784, {	-- Shadowmoon Burial Grounds
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Skyreach
-								["questID"] = 37785,
+							}),
+							qh(37785, {	-- Skyreach
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Slagworks: Heart of the Mountain
-								["questID"] = 37762,
+							}),
+							qh(37762, {	-- Slagworks: Heart of the Mountain
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- Temple of Tyranny
-								["questID"] = 39228,
+							}),
+							qh(39228, {	-- Temple of Tyranny
 								["isDaily"] = true,
 								["groups"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
-							},
-							{	-- The Black Forge: Kromog
-								["questID"] = 37763,
+							}),
+							qh(37763, {	-- The Black Forge: Kromog
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
-							{	-- The Black Gate
-								["questID"] = 39232,
+							}),
+							qh(39232, {	-- The Black Gate
 								["isDaily"] = true,
 								["groups"] = {
 									currency(823),	-- Apexis Crystal x1000
 								},
-							},
-							{	-- The Everbloom
-								["questID"] = 37786,
+							}),
+							qh(37786, {	-- The Everbloom
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Upper Blackrock Spire
-								["questID"] = 37787,
+							}),
+							qh(37787, {	-- Upper Blackrock Spire
 								["isDaily"] = true,
 								["groups"] = {
 									currency(824),	-- Garrison Resources x175
 								},
-							},
-							{	-- Walled City: Brackenspore
-								["questID"] = 37756,
+							}),
+							qh(37756, {	-- Walled City: Brackenspore
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
-							},
+							}),
 						},
 					}),
 					n(-152, {	-- Garrison Campaign
