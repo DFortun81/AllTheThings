@@ -924,6 +924,14 @@ _.Zones =
 							i(131486),	-- Cinch of the Grieving Father
 						},
 					},
+					{	-- Trouble in the Deeps
+						["u"] = 40,
+						["questID"] = 6562,
+						["qg"] = 11862,	-- Tsunaman
+						["races"] = HORDE_ONLY,
+						["coord"] = { 47.2, 64.3, 65 },
+						["isBreadcrumb"] = true,
+					},
 					{	-- Wanted Poster: Besseleth
 						["objectID"] = 177904,
 						["groups"] = {

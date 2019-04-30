@@ -2343,6 +2343,7 @@ AllTheThings.L = {
 		[176392] = "Scourge Cauldron",
 		[177787] = "Rackmore's Log",
 		[177904] = "Wanted Poster: Besseleth",
+		[177964] = "Fathom Stone",
 		[179485] = "A Broken Trap",
 		[179501] = "Knot Thimblejack's Cache",
 		[179832] = "Pillaclencher's Ornate Pillow",

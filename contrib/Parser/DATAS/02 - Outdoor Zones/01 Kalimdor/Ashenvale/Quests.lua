@@ -149,11 +149,20 @@ _.Zones =
 							un(2, i(17695)),	-- Chestnut Mantle
 						},
 					},
+					{	-- An Aggressive Defense
+						["questID"] = 1025,
+						["u"] = 40,
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["coord"] = { 36.6, 49.6, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1023,	-- Raene's Cleansing
+					},
 					{	-- Answered Questions
 						["questID"] = 1044,
 						["u"] = 40,
 						["qg"] = 661,	-- Jonathan Carevin
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1043,	-- The Scythe of Elune
 						["groups"] = {
 							un(2, i(5817)),	-- Lunaris Bow
 							un(2, i(5818)),	-- Moonbeam Wand
@@ -747,6 +756,13 @@ _.Zones =
 						["sourceQuest"] = 13879,	-- Thunder Peak
 					},
 					{	-- Raene's Cleansing
+						["questID"] = 1023,
+						["u"] = 40,
+						["qg"] = 3891,	-- Teronis' Corpse
+						["coord"] = { 20.3, 42.3, 63 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Raene's Cleansing
 						["questID"] = 1046,
 						["u"] = 40,
 						["qg"] = 3897,	-- Krolg
@@ -1003,6 +1019,14 @@ _.Zones =
 						["coord"] = { 11.4, 35.3, 63 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- The Essence of Aku'Mai
+						["u"] = 40,
+						["questID"] = 6563,
+						["qg"] = 12736,	-- Je'neu Sancrea
+						["coord"] = { 11.6, 34.3, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 6562,	-- Trouble in the Deeps
+					},
 					{	-- The Forest Heart
 						["questID"] = 13796,
 						["qg"] = 33777,	-- Gaivan Shadewalker
@@ -1025,6 +1049,12 @@ _.Zones =
 							i(56705),	-- Skunkworks Sword
 							i(131326),	-- Bombgineer Blasting Vest
 						},
+					},
+					{	-- The Howling Vale
+						["questID"] = 1022,
+						["u"] = 40,
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Hunt Completed
 						["questID"] = 247,
@@ -1240,6 +1270,13 @@ _.Zones =
 						["coord"] = { 40.4, 66.4, 63 },
 						["races"] = HORDE_ONLY,
 						["description"] = "Can be found roaming the woods west of Silverwind Refuge.",
+					},
+					{	-- Velinde Starsong
+						["questID"] = 1037,
+						["u"] = 40,
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1022,	-- The Howling Vale
 					},
 					{	-- Vile Satyr! Dryads in Danger!
 						["questID"] = 26467,

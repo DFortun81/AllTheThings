@@ -350,6 +350,13 @@ _.Zones =
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
 					},
+					{	-- The Barrens Port
+						["questID"] = 1039,
+						["u"] = 40,
+						["qg"] = 8026,	-- Thyn'tel Bladeweaver
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1038,	-- Velinde's Effects
+					},
 					{	-- The Secret to Perfect Kimchi
 						["questID"] = 29313,
 						["groups"] = {
@@ -394,6 +401,13 @@ _.Zones =
 						["coord"] = { 39.0, 32.8 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+					},
+					{	-- Velinde's Effects
+						["questID"] = 1038,
+						["u"] = 40,
+						["qg"] = 8026,	-- Thyn'tel Bladeweaver
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1037,	-- Velinde Starsong
 					},
 					{	-- Weapons of Elunite
 						["questID"] = 1693,

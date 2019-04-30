@@ -180,6 +180,11 @@ _.Zones =
 					qg(43731, qa(26777)),	-- Soothing Spirits
 					qg(289, qa(26653)),	-- Supplies from Darkshire
 --]]
+					qa(1042, {	-- The Carevin Family
+						["u"] = 40,
+						["qg"] = 267,	-- Clerk Daltry
+						["sourceQuest"] = 1041,	-- The Caravan Road
+					}),
 					qg(43731, qa(26778, {	-- The Cries of the Dead
 						i(60921),
 						i(60922),
@@ -192,6 +197,11 @@ _.Zones =
 						i(60906),
 						i(60907),
 					})),
+					qa(1043, {	-- The Scythe of Elune
+						["u"] = 40,
+						["qg"] = 661,	-- Jonathan Carevin
+						["sourceQuest"] = 1042,	-- The Carevin Family
+					}),
 --[[
 					qg(43861, qa(26723)),	-- The Fate of Morbent Fel
 					qg(267, qa(26671)),	-- The Fate of Stalvan Mistmantle
