@@ -53,6 +53,13 @@ _.Zones =
 							},
 						},
 					},
+					{	-- A Gnome's Respite
+						["questID"] = 1071,
+						["u"] = 40,
+						["qg"] = 4077,	-- Gaxim Rustfizzle
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1085,	-- On Guard in Stonetalon
+					},
 					{	-- A Proper Peace Offerin'
 						["questID"] = 25837,
 						["qg"] = 41278,	-- "Cookie" McWeaksauce
@@ -597,6 +604,13 @@ _.Zones =
 							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
 						}),
 					}), --]]
+					{	-- On Guard in Stonetalon
+						["questID"] = 1085,
+						["u"] = 40,
+						["qg"] = 4080,	-- Kaela Shadowspear
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1070,	-- On Guard in Stonetalon
+					},
 					{	-- Orders from High Command
 						["questID"] = 25650,
 						["qg"] = 40881,	-- Minx
