@@ -885,7 +885,7 @@ _.Zones =
 						},
 						{	-- Criteria 2 — Archdruid of the Claw
 							["criteriaID"] = 2,	-- Archdruid of the Claw
-							["sourceQuests"] = { 38322 },	-- Return to the Grove
+							["sourceQuests"] = { 38147 },	-- Entangled Dreams
 						},
 						{	-- Criteria 3 — Archdruid of Lore
 							["criteriaID"] = 3,	-- Archdruid of Lore
@@ -928,7 +928,7 @@ _.Zones =
 						}),
 					}),  
 				--	QUESTS START HERE
-					q(38889,  {  -- Adopting the Adorable
+					q(38889, {  -- Adopting the Adorable
 						["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 						["coord"] = { 53.0, 87.7, 641 },	-- cave entrance
 						["crs"] = { 93686 },	-- Jinikki the Puncturer
@@ -967,6 +967,15 @@ _.Zones =
 						["coord"] = { 54.7, 52.8, 641 },
 						["qg"] = 92688,	-- Darcy Heathrow
 					}),
+					q(38143, {	-- Awakening the Archdruid
+						["sourceQuests"] = {
+							38455,	-- Frenzied Furbolgs
+							38146,	-- The Chieftain's Beads
+							38246,	-- Totemic Call
+						},
+						["coord"] = { 49.0, 82.2, 641 },
+						["qg"] = 73426,	-- Rylissa Bearsong
+					}),
 					q(40122, {	-- Cenarius, Keeper of the Grove
 						["sourceQuests"] = { 39861 },	-- Tying Up Loose Ends
 						["coord"] = { 54.6, 72.8, 641 },
@@ -984,6 +993,10 @@ _.Zones =
 							i(130021),	-- Swiftfeather Band
 						},
 					}),
+					q(39029, {	-- Defend the Temple (bonus objective)
+						["sourceQuests"] = { 38641 },	-- The Temple of Elune
+						["coord"] = { 51.4, 56.9, 641 },
+					}),
 					q(39383, {	-- Dishonored
 						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
 						["coord"] = { 60.9, 73.3, 641 },
@@ -997,6 +1010,24 @@ _.Zones =
 					q(42748, {	-- Emerald Sisters
 						["coord"] = { 59.4, 84.1, 641 },
 						["qg"] = 108304,	-- Guviena Bladesong
+					}),
+					q(38147, {  -- Entangled Dreams
+						["sourceQuests"] = {
+							38145,	-- Out of the Dream
+							38144,	-- The Demons Below
+						},
+						["coord"] = { 63.7, 49.9, 643 },	-- Sleeper's Barrow
+						["qg"] = 91223,	-- Koda Steelclaw
+						["g"] = {
+							i(121586),	-- Nightvale Cowl
+							i(121593),	-- Nightvale Robe
+							i(121574),	-- Rooksguard Breastplate
+							i(121585),	-- Rooksguard Helmet
+							i(121588),	-- Sablehide Hood
+							i(121576),	-- Sablehide Vest
+							i(121575),	-- Thornbrace Chainmail
+							i(121587),	-- Thornbrace Helm
+						},
 					}),
 					q(38842, {	-- Faerie Fracas (bonus objective)
 						["coord"] = { 54.1, 83.4, 641 },
@@ -1025,6 +1056,11 @@ _.Zones =
 						["coord"] = { 48.3, 84.5, 641 },
 						["qg"] = 93890,	-- Elder Sookh
 					}),
+					q(38595, {	-- Malfurion's Fury
+						["sourceQuests"] = { 38663 },	-- The Die is Cast
+						["coord"] = { 52.2, 63.5, 641 },
+						["qg"] = 92742,	-- Ysera
+					}),
 					q(42857, {	-- Moist Around the Hedges
 						["coord"] = { 66.7, 75.7, 641 },
 					}),
@@ -1050,6 +1086,37 @@ _.Zones =
 							i(141619),	-- Mana-Infused Berries
 						},
 					}),
+					q(38145, {	-- Out of the Dream
+						["sourceQuests"] = { 38143 },	-- Awakening the Archdruid
+						["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
+						["qg"] = 91223,	-- Koda Steelclaw
+					}),
+					q(38148, {	-- Return to the Grove
+						["sourceQuests"] = { 38147 },	-- Entangled Dreams
+						["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
+						["coord"] = { 48.9, 81.6, 641 },
+						["qg"] = 91223,	-- Koda Steelclaw
+					}),
+					q(38322, {	-- Return to the Grove
+						["sourceQuests"] = {
+							38225,	-- Death to the Witchmother
+							38235,	-- Solid as a Rock
+						},
+						["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
+						["coord"] = { 48.8, 70.2, 641 },
+						["qg"] = 91066,	-- Elothir
+					}),
+					q(38323, {	-- Return to the Grove
+						["sourceQuests"] = { 40573 },	-- The Nightmare Lord
+						["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
+						["coord"] = { 62.2, 76.2, 641 },
+						["qg"] = 100573,	-- Evelle Nightwhisper
+					}),
+					q(38655, {	-- Root Cause
+						["sourceQuests"] = { 38641 },	-- The Temple of Elune
+						["coord"] = { 51.4, 56.9, 641 },
+						["qg"] = 92697,	-- Isoraen Nightstar
+					}),
 					q(38235, {	-- Solid as a Rock
 						["sourceQuests"] = {
 							38381,	-- Archdruid of Lord (Non-Druid)
@@ -1072,6 +1139,17 @@ _.Zones =
 							i(121579),	-- Thornbrace Sabatons
 						},
 					}),
+					q(38662, {	-- Tears for Fears
+						["sourceQuests"] = { 38641 },	-- The Temple of Elune
+						["coord"] = { 51.4, 56.9, 641 },
+						["qg"] = 92680,	-- Lyanis Moonfall
+						["g"] = {
+							i(121651),	-- Darkfiend Dreadbringer Horn
+							i(121641),	-- Radiant Charm of Elune
+							i(121647),	-- Temple Priestess' Charm
+							i(121649),	-- Vibrant Temple Masonry
+						},
+					}),
 					{	---------- The Chieftain's Beads
 						["questID"] = 38146,	-- The Chieftain's Beads
 						["itemID"] = 128340,
@@ -1082,6 +1160,51 @@ _.Zones =
 						["sourceQuests"] = { 39383 },	-- Dishonored
 						["coord"] = { 62.8, 71.5, 641 },
 						["qg"] = 95396,	-- Thaon Moonclaw
+					}),
+					q(38144, {	-- The Demons Below
+						["sourceQuests"] = { 38143 },	-- Awakening the Archdruid
+						["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
+						["qg"] = 91223,	-- Koda Steelclaw
+					}),
+					q(38663, {	-- The Die is Cast
+						["sourceQuests"] = {
+							38655,	-- Root Cause
+							38662,	-- Tears for Fears
+						},
+						["coord"] = { 51.4, 56.9, 641 },
+						["qg"] = 92680,	-- Lyanis Moonfall
+					}),
+					q(38377, {	-- The Emerald Queen
+						["sourceQuests"] = {
+							38148,	-- Return to the Grove
+							38322,	-- Return to the Grove
+							38323,	-- Return to the Grove
+						},
+						["coord"] = { 51.9, 64.1, 641 },
+						["qg"] = 91109,	-- Malfurion Stormrage
+						["g"] = {
+							i(141387),	-- Emerald Bloom
+							i(132279),	-- Cleansed Shrine Relic
+							i(132282),	-- Enchanted Pool Garnet
+							i(132303),	-- Enchanted Stoneblood Feather
+							i(132297),	-- Everblooming Flower
+							i(132286),	-- Felshroom
+							i(132287),	-- Firewater Essence
+							i(132290),	-- Frozen Moss of the Den
+							i(132280),	-- Lost Priestess' Loop
+							i(132281),	-- Lunarwing Crystal
+							i(132298),	-- Nightmare Cave Moss
+							i(132295),	-- Petrified Ancient Bark
+							i(132284),	-- Preserved Blood-Stained Claw
+							i(132302),	-- Rustling of the Forest
+							i(132299),	-- Satyr's Nightmare Fetish
+							i(132285),	-- Small Nightmare Totem
+							i(132294),	-- Stone of the Dream Den
+							i(132288),	-- Trickster's Everburning Flames
+							i(132283),	-- Uncorrupted Val Blood
+							i(132296),	-- Val'sharah Seed Pods
+							i(132289),	-- Vale Shadow Frost
+						},
 					}),
 					q(40573, {  -- The Nightmare Lord
 						["sourceQuests"] = { 39384 },	-- The Corruptor
@@ -1094,6 +1217,11 @@ _.Zones =
 							i(129992),	-- Cuffs of Unrelenting Anguish
 							i(121643),	-- Thaon's Grief
 						},
+					}),
+					q(38641, {	-- The Temple of Elune
+						["sourceQuests"] = { 38377 },	-- The Emerald Queen
+						["coord"] = { 52.4, 63.6, 641 },
+						["qg"] = 98584,	-- Ysera
 					}),
 					{	---------- The Warden's Signet
 						["questID"] = 38711,	-- The Warden's Signet
@@ -1115,6 +1243,21 @@ _.Zones =
 					q(40220, {	-- Thorny Dancing
 						["coord"] = { 53.8, 79.7, 641 },
 						["qg"] = 93600,	-- Saylanna Riverbreeze
+					}),
+					q(38582, {  -- To Old Friends
+						["sourceQuests"] = { 38595 },	-- Malfurion's Fury
+						["coord"] = { 60.7, 61.5, 641 },
+						["qg"] = 92420,	-- Ysera
+						["g"] = {
+							i(129986),	-- Nightvale Footwraps
+							i(121596),	-- Nightvale Mantle
+							i(121595),	-- Rooksguard Pauldrons
+							i(130013),	-- Rooksguard Treads
+							i(129994),	-- Sablehide Footwraps
+							i(121594),	-- Sablehide Shoulders
+							i(130002),	-- Thornbrace Boots
+							i(121597),	-- Thornbrace Spaulders
+						},
 					}),
 					q(38246, {  -- Totemic Call
 						["sourceQuests"] = { 38922 },	-- Littlefur
@@ -1291,68 +1434,9 @@ _.Zones =
 					q(38743, {	-- The Fate of Val'sharah
 						i(141383),	-- Crystallized Moon Drop [AP]
 					}),
-					q(38377, {	-- The Emerald Queen
-						i(141387),	-- Emerald Bloom
-						i(132279),	-- Cleansed Shrine Relic
-						i(132282),	-- Enchanted Pool Garnet
-						i(132303),	-- Enchanted Stoneblood Feather
-						i(132297),	-- Everblooming Flower
-						i(132286),	-- Felshroom
-						i(132287),	-- Firewater Essence
-						i(132290),	-- Frozen Moss of the Den
-						i(132280),	-- Lost Priestess' Loop
-						i(132281),	-- Lunarwing Crystal
-						i(132298),	-- Nightmare Cave Moss
-						i(132295),	-- Petrified Ancient Bark
-						i(132284),	-- Preserved Blood-Stained Claw
-						i(132302),	-- Rustling of the Forest
-						i(132299),	-- Satyr's Nightmare Fetish
-						i(132285),	-- Small Nightmare Totem
-						i(132294),	-- Stone of the Dream Den
-						i(132288),	-- Trickster's Everburning Flames
-						i(132283),	-- Uncorrupted Val Blood
-						i(132296),	-- Val'sharah Seed Pods
-						i(132289),	-- Vale Shadow Frost
-					}),
-					q(38641),	-- The Temple of Elune
-					q(38662, {	-- Tears for Fears
-						i(121651),	-- Darkfiend Dreadbringer Horn
-						i(121641),	-- Radiant Charm of Elune
-						i(121647),	-- Temple Priestess' Charm
-						i(121649),	-- Vibrant Temple Masonry
-					}),
-					q(38655),	-- Root Cause
-					q(38663),	-- The Die is Cast
-					q(38595),	-- Malfurion's Fury
-					q(38582,  {  -- To Old Friends
-						i(129986),	-- Nightvale Footwraps
-						i(121596),	-- Nightvale Mantle
-						i(121595),	-- Rooksguard Pauldrons
-						i(130013),	-- Rooksguard Treads
-						i(129994),	-- Sablehide Footwraps
-						i(121594),	-- Sablehide Shoulders
-						i(130002),	-- Thornbrace Boots
-						i(121597),	-- Thornbrace Spaulders
-					}),
 					q(38753, {	-- The Demon's Trail
 						i(141390),	-- The Corruptor's Totem [AP]
 					}),
-					q(38148),	-- Return to the Grove
-					q(38143),	-- Awakening the Archdruid
-					q(38144),	-- The Demons Below
-					q(38145),	-- Out of the Dream
-					q(38147,  {  -- Entangled Dreams
-						i(121586),	-- Nightvale Cowl
-						i(121593),	-- Nightvale Robe
-						i(121574),	-- Rooksguard Breastplate
-						i(121585),	-- Rooksguard Helmet
-						i(121588),	-- Sablehide Hood
-						i(121576),	-- Sablehide Vest
-						i(121575),	-- Thornbrace Chainmail
-						i(121587),	-- Thornbrace Helm
-					}),
-					q(38322),	-- Return to the Grove
-					q(38323),	-- Return to the Grove
 					n(-168, {	-- Other Quests
 						sz(10666,3, {	-- Bradensbrook
 							q(39015,  {  -- Grumpy
