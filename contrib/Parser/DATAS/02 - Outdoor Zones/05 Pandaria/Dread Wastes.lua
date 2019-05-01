@@ -885,6 +885,7 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(50821, { 		-- Ai-Li Skymirror
+						["coord"] = { 34.8, 23.2, 422 },
 						dr(18, i(87629)),	-- Chestplate of Manifest
 						dr(13, i(86589)), 	-- Ai-Li's Skymirror
 						dr(11, i(87632)),	-- Fearsworn Chestpiece
@@ -901,12 +902,14 @@ _.Zones =
 						dr(8, i(87633)),	-- Sharksin Armor
 					}),
 					n(66935, {	-- Clamstok
+						["coord"] = { 27, 69.2, 422 },
 						i(90170, {	-- Clamstok's Clamshell
 							i(90172),	-- Clamshell Band
 							i(90087),	-- Lobstmourne
 						}),
 					}),
 					n(50334, { 		-- Dak the Breaker
+						["coord"] = { 25.2, 28.6, 422 },
 						dr(28, i(86567)),	-- Yaungol Wind Chime
 						dr(24, i(87635)),	-- Amber-Starched Robes
 						dr(10, {
@@ -923,6 +926,11 @@ _.Zones =
 						}),
 					}),
 					n(50739, { 		-- Gar'lok
+						["coord"] = {
+							{ 38.8, 29.6, 422 },
+							{ 35.6, 30.8, 422 },
+							{ 39.2, 41.8, 422 },
+						},
 						dr(23, i(86578)),	-- Eternal Warrior's Sigil
 						dr(20, i(87628)),	-- Spinebreaker Chestpiece
 						dr(11, i(87627)),	-- Kunchong Carapace Chestguard
@@ -937,6 +945,8 @@ _.Zones =
 						dr(8, i(87633)),	-- Sharkskin Robe
 					}),
 					n(50836, { 		-- Ik-Ik the Nimble
+						["coord"] = { 55.4, 63.4, 422 },
+						["description"] = { "Burrow entrance at 54.9, 65.7" },
 						dr(17, i(87634)),	-- Mazu's Robe
 						dr(15, i(87630)),	-- Chestpiece of Twinkling Stars
 						dr(13, i(86593)), 	-- Hozen Beach Ball
@@ -953,6 +963,7 @@ _.Zones =
 						dr(8, i(87633)),	-- Sharkskin Armor
 					}),
 					n(50347, { 		-- Karr the Darkener
+						["coord"] = { 71.8, 37.6, 422 },
 						dr(18, i(87634)),	-- Mazu's Robe
 						dr(17, i(87630)),	-- Chestpiece of Twinkling Stars
 						dr(10, {
@@ -971,6 +982,10 @@ _.Zones =
 						}),
 					}),
 					n(50356, { 		-- Krol the Blade
+						["coord"] = {
+							{ 74.2, 20.4, 422 },
+							{ 72.8, 22.2, 422 },
+						},
 						dr(15, i(87629)),	-- Chestplate of Manifest Dread
 						dr(12, i(87634)),	-- Mazu's Robe
 						dr(11, {
@@ -989,6 +1004,7 @@ _.Zones =
 						}),
 					}),
 					n(50776, { 		-- Nalash Verdantis
+						["coord"] = { 64.2, 58.6, 422 },
 						dr(15, {
 							i(87635),	-- Amber-Starched Robes
 							i(87628),	-- Spinebreaker Chestpiece
@@ -1007,6 +1023,12 @@ _.Zones =
 						}),
 					}),
 					n(50805, { 		-- Omnis Grinlok
+						["coord"] = {
+							{ 38.2, 58.0, 422 },
+							{ 39.2, 62.4, 422 },
+							{ 36.6, 64.2, 422 },
+							{ 36.4, 61.2, 422 },
+						},
 						dr(26, i(86585)),	-- Golden Fleece
 						dr(18, i(87628)),	-- Spinebreaker Chestpiece
 						dr(11, {
