@@ -172,7 +172,7 @@ _.Zones =
 						crit(3),		-- Taste of Amber
 						crit(4),		-- Like a Deck Boss
 					}),
-]]--				
+]]--
 					q(31178, {	-- A Bloody Delight
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
@@ -345,7 +345,7 @@ _.Zones =
 					q(31231, {-- Dreadspinner Extermination
 						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
-					}),	
+					}),
 					q(31439, {	-- Dropping Our Signal
 						["qg"] = 64815,	-- Kor'ik
 					}),
@@ -387,7 +387,7 @@ _.Zones =
 					}),
 					q(31076, {-- Fate of the Stormstouts
 						["qg"] = 62779,	-- Chen Stormstout
-					}),	
+					}),
 					q(31509, {	-- Fear Takes Root
 						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
 						["isDaily"] = true,
@@ -614,7 +614,7 @@ _.Zones =
 					q(31808, {-- Rampage Against the Machine
 						["qg"] = 63758,	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
-					}),	
+					}),
 					q(31189, {	-- Reeltime Strategy
 						["qg"] = 63349,	-- Deck Boss Arie
 					}),
@@ -1028,7 +1028,7 @@ _.Zones =
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1043,7 +1043,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1058,7 +1058,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes

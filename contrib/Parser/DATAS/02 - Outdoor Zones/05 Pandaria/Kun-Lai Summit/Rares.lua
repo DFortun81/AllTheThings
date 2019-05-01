@@ -363,7 +363,7 @@ _.Zones =
 								["npcID"] = 69841,	-- Zandalari Warbringer
 								["coords"] = {
 									{ 47.42, 61.54, 422 },	-- Dread Wastes
-									{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+									{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 									{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 									{ 52.56, 18.85, 371 },	-- The Jade Forest
 									{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -378,7 +378,7 @@ _.Zones =
 								["npcID"] = 69842,	-- Zandalari Warbringer
 								["coords"] = {
 									{ 47.42, 61.54, 422 },	-- Dread Wastes
-									{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+									{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 									{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 									{ 52.56, 18.85, 371 },	-- The Jade Forest
 									{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -393,7 +393,7 @@ _.Zones =
 								["npcID"] = 69769,	-- Zandalari Warbringer
 								["coords"] = {
 									{ 47.42, 61.54, 422 },	-- Dread Wastes
-									{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+									{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 									{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 									{ 52.56, 18.85, 371 },	-- The Jade Forest
 									{ 36.58, 85.67, 388 },	-- Townlong Steppes

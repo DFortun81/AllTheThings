@@ -135,7 +135,7 @@ _.Zones =
 						crit(4),		-- Temple of the Red Crane
 						crit(5),		-- Dawnchaser Retreat
 					})),
-]]--				
+]]--
 					qh(32169, {	-- A Colossal Victory
 						["isDaily"] = true,
 					}),
@@ -215,7 +215,7 @@ _.Zones =
 						["qg"] = 67631,	-- Marshal Troteman
 						["isDaily"] = true,
 					}),
-					
+
 					q(30672, {	-- Balance
 						["groups"] = {
 							i(81542),	-- Fishmonger's Blade
@@ -359,7 +359,7 @@ _.Zones =
 						["qg"] = 68166,	-- Sully "The Pickle" McLeary
 						["isDaily"] = true,
 					}),
-					
+
 					qa(31378, {	-- Challenge At The Temple of the Red Crane
 						["qg"] = 64032,	-- Sage Whiteheart
 						["isDaily"] = true,
@@ -797,7 +797,7 @@ _.Zones =
 							i(81510),	-- Korjan Armplates
 							i(81511),	-- Dojani Bracers
 						},
-						["qg"] = 56112,	-- Kang Bramblestaff 
+						["qg"] = 56112,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
 					qa(30355, {	-- Re-Reclaim
@@ -1363,7 +1363,7 @@ _.Zones =
 					qh(32131),	-- We Require More Minerals!
 					qh(32140),	-- Work Order: Iron
 					qh(32138),	-- Work Order: Lumber
-					
+
 					Holiday quests:
 					qh( 32047),	-- Candy Bucket
 					q(32034),	-- Candy Bucket
@@ -1548,7 +1548,7 @@ _.Zones =
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1563,7 +1563,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1578,7 +1578,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
