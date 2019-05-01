@@ -8,22 +8,39 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 221, 222, 223 },
 		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
-			n(-17, {	-- Quests 
-				qg(75606, qa(34672, { 	-- The Rise of Aku'mai
-					i(65986),	-- Shield Against the Evil Presence
-					i(65962),	-- Thaelrid's Greaves
-					i(65938),	-- Blackfathom Leggings
-					i(65912),	-- Robe of Kelris
-					i(131713),	-- Scales of Aku'mai
-				})),
-				qg(74409, qh(34673, { 	-- The Rise of Aku'mai
-					i(66030),	-- Plates of Aku'mai
-					i(66039),	-- Shield Against the Evil Presence
-					i(66021),	-- Blackfathom Leggings
-					i(66012),	-- Je'neu's Robes
-					i(131714),	-- Blackfathom Chain Leggings
-				})),
-			}),	
+			n(-17, {	-- Quests
+				o(177964, {	-- Fathom Stone
+					["u"] = 43,
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						qh(908, {	-- Amongst the Ruins
+							["u"] = 40,
+							["repeatable"] = true,
+							["sourceQuest"] = 6563,	-- The Essence of Aku'Mai
+						}),
+					},
+				}),
+				qa(34672, {	-- The Rise of Aku'mai
+					["qg"] = 75606,	-- Sentinel Aluwyn
+					["groups"] = {
+						i(65986),	-- Shield Against the Evil Presence
+						i(65962),	-- Thaelrid's Greaves
+						i(65938),	-- Blackfathom Leggings
+						i(65912),	-- Robe of Kelris
+						i(131713),	-- Scales of Aku'mai
+					},
+				}),
+				qh(34673, {	-- The Rise of Aku'mai
+					["qg"] = 74409,	-- Zeya
+					["groups"] = {
+						i(66030),	-- Plates of Aku'mai
+						i(66039),	-- Shield Against the Evil Presence
+						i(66021),	-- Blackfathom Leggings
+						i(66012),	-- Je'neu's Robes
+						i(131714),	-- Blackfathom Chain Leggings
+					},
+				}),
+			}),
 			n(  0, {	-- Zone Drop
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
@@ -297,7 +314,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(7004)),		-- Prelacy Cape
 						un(2, i(56681)),	-- Searching Wand
 						un(2, i(56680)),	-- Shadestar Mace
-					})),	
+					})),
 					un(40, qa(26883, {	-- Twilight Falls
 						un(2, i(56699)),	-- Aluwyn's Legguards
 						un(2, i(56697)),	-- Blackfathom Mace

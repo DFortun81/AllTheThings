@@ -188,19 +188,28 @@ _.Zones =
 					qg(5165, qa(27267, {	-- Make Contact with SI:7
 						["classes"] = {4},	-- Rogue
 					})),
-					qg(11406, qa(27268, {	-- Make Haste to the Cathedral
-						["classes"] = {5},	-- Priest
-					})),
+--]]
+					qa(27268, {	-- Make Haste to the Cathedral
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 25.0, 8.20, 87 },
+						["qg"] = 11406,	-- High Priest Rohan
+					}),
+--[[
 					qg(5173, qa(28259, {	-- Meet with Demisette Cloyce
 						["classes"] = {9},	-- Warlock
 					})),
 					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
 						["classes"] = {7},	-- Shaman
 					})),
-					qg(11406, qa(28285, {	-- Meet with High Priestess Laurena
-						["classes"] = {5},	-- Priest
-					})),
-					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
+--]]
+					qa(28285, {	-- Meet with High Priestess Laurena
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 25.0, 8.20, 87 },
+						["qg"] = 11406,	-- High Priest Rohan
+					}),
+--[[					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
 						["classes"] = {2},	-- Paladin
 					})),
 					qg(5165, qa(28262, {	-- Meet with Lord Tony Romano

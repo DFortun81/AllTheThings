@@ -1023,6 +1023,11 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["u"] = 40,
 						},
+						qa(1041, {	-- The Caravan Road
+							["u"] = 40,
+							["qg"] = 3945,	-- Caravaneer Ruzzgot
+							["sourceQuest"] = 1040,	-- The Passage to Booty Bay
+						}),
 						un(40, qa(613, {	-- Cracking Maury's Foot
 							un(2, i(4129)),	-- Collection Plate
 						})),

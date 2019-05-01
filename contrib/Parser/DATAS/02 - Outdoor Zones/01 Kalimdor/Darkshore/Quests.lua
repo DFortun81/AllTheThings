@@ -345,7 +345,12 @@ _.Zones =
 						["questID"] = 13599,
 						["qg"] = 33048,	-- Keeper Karithus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 13569,	-- The Ritual Bond
+						["sourceQuests"] = {
+							13568,	-- Spirit of the Moonstalker
+							13567,	-- Spirit of the Stag
+							13597,	-- Spirit of the Thistle Bear
+							13569,	-- The Ritual Bond
+						},
 					},
 					{	-- Hellscream's Missive
 						["itemID"] = 46318,
@@ -562,6 +567,7 @@ _.Zones =
 						["questID"] = 13568,
 						["qg"] = 33131,	-- Great Moonstalker Spirit
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["description"] = "You can only choose one of these quests.  Moonstalker gives 10% haste, Stag gives 10% movement speed, and Thistle Bear gives 10% reduction in damage taken.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
@@ -569,6 +575,7 @@ _.Zones =
 						["questID"] = 13567,
 						["qg"] = 33048,	-- Great Stag Spirit
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["description"] = "You can only choose one of these quests.  Stag gives 10% movement speed, Moonstalker gives 10% haste, and Thistle Bear gives 10% reduction in damage taken.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},
@@ -576,6 +583,7 @@ _.Zones =
 						["questID"] = 13597,
 						["qg"] = 33132,	-- Great Thistle Bear Spirit
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["description"] = "You can only choose one of these quests.  Thistle Bear gives 10% reduction in damage taken, Moonstalker gives 10% haste, and Stag gives 10% movement speed.",
 						["sourceQuest"] = 13569,	-- The Ritual Bond
 					},

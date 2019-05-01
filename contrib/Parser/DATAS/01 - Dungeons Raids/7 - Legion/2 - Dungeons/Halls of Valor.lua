@@ -3,15 +3,15 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(721, { 	-- Halls of Valor
+	inst(721, {	-- Halls of Valor
 		["lvl"] = 98,
 		["maps"] = { 703, 704, 705 },
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				o(251991, {	-- The Aegis of Aggramar
 					q(43349, {	-- The Aegis of Aggramar
-						["sourceQuest"] = 40072,	-- Halls of Valor: Securing the Aegis
-						["groups"] = {
+						["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
+						["g"] = {
 							i(130016),	-- Valor-Bound Legplates
 							i(129997),	-- Valor-Bound Legwraps
 							i(129989),	-- Valor-Bound Trousers
@@ -20,7 +20,7 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 				}),
 			}),
-			d(1, {		-- Normal
+			d(1,  {	-- Normal
 				n(0, { 		-- Zone Drop
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 				}),
@@ -100,9 +100,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(133686),	-- Stormforged Inferno
 				})),
 			}),
-			d(2, {		-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					n(0, { 		-- Zone Drop
 						i(137717),	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
 					}),
@@ -185,9 +185,9 @@ _.Instances = { tier(7, {	-- Legion
 					})),
 				},
 			}),
-			d(23, {		-- Mythic
+			d(23, {	-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					n(-4, {	-- Achievements
 						ach(10542),	-- I Got What You Mead
 						ach(10544),	-- Stag Party

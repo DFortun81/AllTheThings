@@ -5,9 +5,9 @@
 _.Achievements =
 {
 	n(-9961, {	-- Reputation
-		["groups"] = {
+		["g"] = {
 			n(-9955, {	-- General
-				["groups"] = {
+				["g"] = {
 					ach(12866, { 	-- 100 Exalted Reputations
 						i(163982),		-- Pureheart Courser
 						title(379), 	-- Esteemed <Name>
@@ -129,7 +129,7 @@ _.Achievements =
 								faction(349), 	-- Ravenholdt
 								un(2, faction(809)),	-- Shen'dralar
 								faction(169, { 	-- Steamwheedle Cartel
-									["groups"] = {
+									["g"] = {
 										faction(21), 	-- Booty Bay
 										faction(577),	-- Everlook
 										faction(369), 	-- Gadgetzan
@@ -268,7 +268,7 @@ _.Achievements =
 						faction(942),	-- Cenarion Expedition
 					}),
 					ach(12415, {	-- Heritage of Highmountain
-						["groups"] = {
+						["g"] = {
 							i(156668),	-- Highmountain Headdress
 							i(156669),	-- Highmountain Shoulderguards
 							i(156670),	-- Highmountain Harness
@@ -281,7 +281,7 @@ _.Achievements =
 						["races"] = {28},
 					}),
 					ach(13076, {	-- Heritage of the Dark Iron
-						["groups"] = {
+						["g"] = {
 							i(161015),	-- Dark Iron Bracers
 							i(161014),	-- Dark Iron Boots
 							i(161008),	-- Dark Iron Helm
@@ -294,7 +294,7 @@ _.Achievements =
 						["races"] = {34},
 					}),
 					ach(13504, {	-- Heritage of the Kul Tirans
-						["groups"] = {
+						["g"] = {
 							i(165002),	-- Kul'Tiran Bicorne
 							i(165003),	-- Kul'Tiran Tasseled Pauldron
 							i(165004),	-- Kul'Tiran Longcoat
@@ -318,7 +318,7 @@ _.Achievements =
 						["races"] = {30},
 					}),
 					ach(13077, {	-- Heritage of the Mag'har
-						["groups"] = {
+						["g"] = {
 							i(161003),	-- Warsong Clan Bracers
 							i(160993),	-- Warsong Clan Pauldrons
 							i(160992),	-- Warsong Clan Helm
@@ -347,7 +347,9 @@ _.Achievements =
 						["races"] = {36},
 					}),
 					ach(12413, {	-- Heritage of the Nightborne
-						["groups"] = {
+						["questID"] = 49784,	-- Heritage of the Nightborne
+						["races"] = { 27 },	-- Nightborne
+						["g"] = {
 							i(156675),	-- Shal'dorei Crown
 							i(156676),	-- Shal'dorei Mantle
 							i(156677),	-- Shal'dorei Finery
@@ -357,10 +359,9 @@ _.Achievements =
 							i(156681),	-- Shal'dorei Slippers
 							i(156685),	-- Shal'dorei Bracers
 						},
-						["races"] = {27},
 					}),
 					ach(12291, {	-- Heritage of the Void
-						["groups"] = {
+						["g"] = {
 							i(156690),	-- Ren'dorei Helm
 							i(156691),	-- Ren'dorei Pauldrons
 							i(156692),	-- Ren'dorei Mantle
@@ -373,7 +374,7 @@ _.Achievements =
 						["races"] = {29},
 					}),
 					ach(13503, {	-- Heritage of the Zandalari
-						["groups"] = {
+						["g"] = {
 							i(164993),	-- Zandalari Mask
 							i(164994),	-- Zandalari Pauldrons
 							i(164995),	-- Zandalari Torque

@@ -4,17 +4,15 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(64, { 	-- Shadowfang Keep
-		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
 		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
-		["groups"] = {
+		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
+		["g"] = {
 			d(2, {	-- Heroic
-				["lvl"] = 85,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["lvl"] = 85,
+				["g"] = {
 					cr(46962, e( 96, {	-- Baron Ashbury
-						{	-- Pardon Denied
-							["achievementID"] = 5503,	-- Pardon Denied
-						},
+						ach(5503),	-- Pardon Denied
 						i(63433),	-- Robes of Arugal
 						i(63437),	-- Baron Ashbury's Cuffs
 						i(63434),	-- Gloves of the Greymane Wall
@@ -29,9 +27,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(63440),	-- Boots of Lingering Sorrow
 					})),
 					cr( 4278, e( 98, {	-- Commander Springvale
-						{	-- To the Ground!
-							["achievementID"] = 5504,	-- To the Ground!
-						},
+						ach(5504),	-- To the Ground!
 						i(63445),	-- Arced War Axe
 						i(63449),	-- Thieving Spaulders
 						i(63448),	-- Spingvale's Cloak
@@ -46,22 +42,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(63453),	-- Iron Will Girdle
 					})),
 					cr(46964, e(100, {	-- Lord Godfrey
-						{	-- Bullet Time
-							["achievementID"] = 5505,	-- Bullet Time
-							["g"] = {
-								{	-- Defeat Lord Godfrey
-									["achievementID"] = 5505,	-- Bullet Time
-									["criteriaID"] = 1,	-- Defeat Lord Godfrey
-								},
-								{	-- Bloodthirsty Ghouls killed by Pistol Barrage
-									["achievementID"] = 5505,	-- Bullet Time
-									["criteriaID"] = 2,	-- Bloodthirsty Ghouls killed by Pistol Barrage
-								},
-							},
-						},
-						{	-- Heroic: Shadowfang Keep
-							["achievementID"] = 5093,	-- Heroic: Shadowfang Keep
-						},
+						ach(5505, {	-- Bullet Time
+							crit(1),	-- Defeat Lord Godfrey
+							crit(2),	-- Bloodthirsty Ghouls killed by Pistol Barrage
+						}),
+						ach(5093),	-- Heroic: Shadowfang Keep
 						i(63461),	-- Staff of Isolation
 						i(63456),	-- Meteor Shard
 						i(63459),	-- Worgen Hunter's Helm

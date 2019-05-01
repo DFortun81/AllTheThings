@@ -61,12 +61,17 @@ _.WorldEvents =
 					},
 				})),
 			}),
-			h(ach(9177, {		-- Deck Your Collection (Season 2) - According to Wowhead this achievement AND the shirt it rewards ARE still obtainable in Legion. You just have to defeat the bosses listed.
-				["description"] = "This Legacy Achievement and its reward shirt are reportedly still obtainable. Good luck!|r",
+			{	-- Deck Your Collection [Season 2]
+				["achievementID"] = 9177,	-- Deck Your Collection [Season 2]
+				["u"] = 2,					-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(98543),		-- Wraps of the Blood-Soaked Brawler
+					{	-- Wraps of the Blood-Soaked Brawler
+						["itemID"] = 98543,	-- Wraps of the Blood-Soaked Brawler
+						["u"] = 2,			-- Note!! Unobtainable in BFA, but was obtainable in WoD/Legion
+					},
 				},
-			})),
+			},
 			i(142319, {		-- Bag of Chipped Dice
 				nh(117208, {	-- a Seagull
 					i(144375, {		-- Feathered Brawler's Purse

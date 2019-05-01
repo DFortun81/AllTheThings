@@ -10,19 +10,6 @@ _.Zones =
 				["mapID"] = 108,	-- Terokkar Forest
 				["groups"] = {
 					n(-2, {		-- Vendors
-						n(23367, {	-- Grella <Skyguard Quartermaster>
-							i(38628),	-- Nether Ray Fry Pet
-							i(32319),	-- Blue Riding Nether Ray Mount
-							i(32314),	-- Green Riding Nether Ray Mount
-							i(32316),	-- Purple Riding Nether Ray Mount
-							i(32317),	-- Red Riding Nether Ray Mount
-							i(32318),	-- Silver Riding Nether Ray Mount
-							i(32445),	-- Skyguard Tabard
-							i(32539),	-- Skyguard Drape
-							i(32538),	-- Skywitch's Drape
-							i(32771),	-- Airman's Ribbon Gallantry
-							i(32770),	-- Skyguard Silver Cross
-						}),
 						na(19296, {	-- Innkeeper Biribi <Innkeeper>
 							i(27699),	-- Recipe: Golden Fish Sticks
 							i(27700),	-- Recipe: Spicy Crawdad

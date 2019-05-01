@@ -568,10 +568,6 @@ _.Zones =
 								["qg"] = 18008,	-- Ikuti
 								["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
 							}),
-							qa(10104, {	-- Concerns About Tuurem
-								["qg"] = 18008,	-- Ikuti
-								["coord"] = { 41.8, 27.2, 102 },
-							}),
 							qa(9794, {	-- No Time for Curiosity
 								["qg"] = 18019,	-- Timothy Daniels
 								["coord"] = { 41.2, 28.6, 102 },
@@ -583,10 +579,6 @@ _.Zones =
 									["repeatable"] = true,
 									["requireSkill"] = 356,	-- Fishing
 								}),
-							}),
-							qa(9793, {	-- The Fate of Tuurem
-								["qg"] = 18004,	-- Vindicator Idaar
-								["coord"] = { 68.2, 50.0, 102 },
 							}),
 							qa(9776, {	-- The Orebor Harborage
 								["qg"] = 18003,	-- Anchorite Ahuurn
@@ -611,6 +603,16 @@ _.Zones =
 							q(9957, {	-- What's Wrong at Cenarion Thicket?
 								["qg"] = 17834,	-- Lethyn Moonfire
 								["coord"] = { 78.6, 63.0, 102 },
+								["isBreadcrumb"] = true,
+							}),
+							qa(10104, {	-- Concerns About Tuurem
+								["qg"] = 18008,	-- Ikuti
+								["coord"] = { 41.8, 27.2, 102 },
+								["isBreadcrumb"] = true,
+							}),
+							qa(9793, {	-- The Fate of Tuurem
+								["qg"] = 18004,	-- Vindicator Idaar
+								["coord"] = { 68.2, 50.0, 102 },
 								["isBreadcrumb"] = true,
 							}),
 							qh(10105, {	-- News for Rakoria

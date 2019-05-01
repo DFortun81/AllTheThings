@@ -11,8 +11,18 @@ _.Holidays = bubbleDown({["u"] = 19},
 				["npcID"] = 0,
 				["g"] = {
 					{	-- Brightly Colored Egg
-						["itemID"] = 45072,	-- Brightly Colored Egg
+						["itemID"] = 45072,		-- Brightly Colored Egg
 						["u"] = 19,				-- Noblegarden Filter
+						["maps"] = {
+							1,	-- Durotar
+							7,	-- Mulgore
+							18,	-- Tirisfal Glades
+							27,	-- Dun Morogh
+							37,	-- Elwynn Forest
+							57,	-- Teldrassil
+							94,	-- Eversong Woods
+							97,	-- Azuremyst Isle
+						},
 						["g"] = {
 							--Note!! Only achievementID/criteriaID's are listed on items that are otherwise ---.  Collectible items don't need them as they auto check the achievement at the same time.
 							{	-- Black Tuxedo Pants

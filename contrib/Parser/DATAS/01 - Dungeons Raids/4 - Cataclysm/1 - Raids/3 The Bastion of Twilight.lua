@@ -59,7 +59,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					e(157, {	-- Theralion and Valiona
-						["creatureID"] = 45992,	-- Valiona [Able to add multiple creatures later]
+						["crs"] = {
+							45992,	-- Valiona
+							45993,	-- Theralion
+						},
 						["groups"] = {
 							ach(4852),	-- Double Dragon
 							i(152969),	-- Odd Twilight Egg (PET!)
@@ -78,7 +81,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					e(158, {	-- Ascendant Council
-						["creatureID"] = 43735,
+						["crs"] = {
+							43735,	-- Elementium Monstrosity
+							43686,	-- Ignacious
+							43687,	-- Feludius
+							43688,	-- Arion
+							43689,	-- Terrastra
+						},
 						["groups"] = {
 							ach(5311),	-- Elementary
 							i(152970),	-- Lesser Circle of Binding (PET!)
@@ -191,7 +200,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					e(157, {	-- Theralion and Valiona
-						["creatureID"] = 45992,	-- Valiona
+						["crs"] = {
+							45992,	-- Valiona
+							45993,	-- Theralion
+						},
 						["groups"] = {
 							ach(5117),	-- Heroic: Valiona and Theralion
 							ach(4852),	-- Double Dragon
@@ -211,7 +223,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					e(158, {	-- Ascendant Council
-						["creatureID"] = 43735,
+						["crs"] = {
+							43735,	-- Elementium Monstrosity
+							43686,	-- Ignacious
+							43687,	-- Feludius
+							43688,	-- Arion
+							43689,	-- Terrastra
+						},
 						["groups"] = {
 							ach(5119),	-- Heroic: Ascendant Council
 							ach(5311),	-- Elementary

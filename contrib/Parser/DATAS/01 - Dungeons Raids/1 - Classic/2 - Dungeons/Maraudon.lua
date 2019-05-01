@@ -67,7 +67,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-69, {	-- Maraudon Portal
 				["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				["groups"] = {
-					n(-17, {	-- Quests 			
+					n(-17, {	-- Quests
 						q(27692, {	-- Princess Theradras
 							i(131682),	-- Boots of Endless Vitality
 							i(131681),	-- Leggings of Flourishing Vigor
@@ -77,7 +77,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(66008),	-- Shield of Maraudon
 							i(65919),	-- Zaetar's Gloves
 						}),
-					}),	
+					}),
 					cr(12225, e(428, {	-- Celebras the Cursed
 						i(17738),	-- Claw of Celebras
 						i(132561),	-- Corrupted Keeper's Band

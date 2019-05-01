@@ -136,7 +136,7 @@ _.Instances = { tier(1, {	-- Classic
 							["description"] = "\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n",
 						}),
 						i(11615, { 	-- Plans: Dark Iron Shoulders
-							["description"] = "\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",		
+							["description"] = "\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",
 						}),
 					},
 					["description"] = "There are 6 spawn points for this object.\n\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",  -- Since writing to the item delays sometimes we are also going to add the description to the headers just so we know they are seen.
@@ -362,17 +362,17 @@ _.Instances = { tier(1, {	-- Classic
 				o(181074, { 		-- Arena Spoils Summonable Read Description
 					["groups"] = {
 						i(21986, { 		-- Banner of Provocation
-							un(2, i(22305)), 		-- Ironweave Mantle 
-							un(11, i(22317)), 		-- Lefty's Brass Knuckle 
+							un(2, i(22305)), 		-- Ironweave Mantle
+							un(11, i(22317)), 		-- Lefty's Brass Knuckle
 							un(11, i(22318)), 		-- Malgen's Long Bow
-							un(11, i(22330)), 		-- Shroud of Arcane Mastery 
+							un(11, i(22330)), 		-- Shroud of Arcane Mastery
 						}),
 					},
 					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
-				}),	
+				}),
 				cr(10096, e(372, {	-- Ring of Law
 					n(9031, { 	-- Anub'shiah
-						["groups"] = {	
+						["groups"] = {
 							i(11677), 	-- Graverot Cape
 							i(11675), 	-- Shadefiend Boots
 							i(11731), 	-- Savage Gladiator Greaves
@@ -381,43 +381,43 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9029, { 	-- Eviscerator
-						["groups"] = {	
+						["groups"] = {
 							i(11685), 	-- Splinthide Shoulders
 							i(11686), 	-- Girdle of Beastial Fury
 							i(11730), 	-- Savage Gladiator Grips
 						},
-						["description"] = "This is one of the possible bosses for this event.",	
+						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9027, { 	-- Gorosh the Dervish
-						["groups"] = {	
+						["groups"] = {
 							i(22266), 	-- Flarethorn
 							i(11662), 	-- Ban'thok Sash
 							i(11726), 	-- Savage Gladiatior Chain
 							i(22257),	-- Bloodclot Band
 						},
-						["description"] = "This is one of the possible bosses for this event.",									
+						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9028, {	-- Grizzle
-						["groups"] = {	
+						["groups"] = {
 							i(11610), 	-- Plans: Dark Iron Pulverizer
 							i(11702), 	-- Grizzle's Skinner
 							i(11722), 	-- Dregmetal Spaulders
 							i(11703), 	-- Stonewall Girdle
 							i(22270),	-- Entrenching Boots
 						},
-						["description"] = "This is one of the possible bosses for this event.",									
+						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9032, { 	-- Hedrum the Creeper
-						["groups"] = {	
+						["groups"] = {
 							i(11635), 	-- Hookfang Shanker
 							i(11729), 	-- Savage Gladiator Helm
 							i(11633), 	-- Spiderfang Carapace
 							i(11634), 	-- Silkweb Gloves
 						},
-						["description"] = "This is one of the possible bosses for this event.",									
+						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9030, { 	-- Ok'thor the Breaker
-						["groups"] = {	
+						["groups"] = {
 							i(11662), 	-- Ban'thok Sash
 							i(11665), 	-- Ogreseer Fists
 							i(11728), 	-- Savage Gladiator's Leggings
@@ -447,7 +447,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11840), 	-- Master Builder's Shirt
 					i(11839), 	-- Chief Architect's Monocle
 					i(11841), 	-- Senior Designer's Pantaloons
-					i(151406), 	-- Belt  of the Eminent Mason 
+					i(151406), 	-- Belt  of the Eminent Mason
 					i(11842), 	-- Land Surveyor's Mantle
 					i(22223), 	-- Foreman's Head Protector
 				})),
@@ -476,7 +476,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(9476, {	-- Watchman Doomgrip
 						["groups"] = {
 							o(160836, {	-- Relic Coffer
-								["groups"] = {	
+								["groups"] = {
 									i(11946),	-- Fire Opal Necklace
 									i(11945),	-- Dark Iron Ring
 								},
@@ -484,7 +484,7 @@ _.Instances = { tier(1, {	-- Classic
 								["modelID"] = 34286,
 							}),
 							o(161495, {	-- Secret Safe
-								["groups"] = {	
+								["groups"] = {
 									i(22256),	-- Mana Shaping Handwraps
 									i(22205), 	-- Black Steel Bindings
 									i(22254), 	-- Wand of Eternal Light
@@ -596,7 +596,7 @@ _.Instances = { tier(1, {	-- Classic
 					["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the event.",
 				})),
 				cr(9543, n(9543, {	-- Ribbly Screwspigot
-					["groups"] = {	
+					["groups"] = {
 						i(11612),	-- Plans: Dark Iron Plate
 						un(2, i(2663)),	-- Ribbly's Bandolier
 						un(2, i(2662)),	-- Ribbly's Quiver
@@ -615,7 +615,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(18653),  -- Schematic: Goblin Jumper Cables XL
 				})),
 				cr(9502, e(381, {	-- Phalanx
-					["groups"] = {		
+					["groups"] = {
 						i(11744), 		-- Bloodfist
 						i(22212), 		-- Golem Fitted Pauldrons
 						i(22204), 		-- Wristguards of Renown
@@ -665,8 +665,8 @@ _.Instances = { tier(1, {	-- Classic
 						i(19212),  	-- Plans: Nightfall
 						i(20761),	-- Recipe: Transmute Elemental Fire
 					},
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",									
-				}),	
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+				}),
 				cr(9156, e(384, {	-- Ambassador Flamelash
 					i(11809), 	-- Flame Wrath
 					i(11808), 	-- Circle of Flame
@@ -675,11 +675,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(11832),	-- Burst of Knowledge
 				})),
 				n(8923, { 			-- Panzor the Invincible
-					["groups"] = {	
+					["groups"] = {
 						i(22245),	-- Soot Encrusted Footwear
 						i(11787),	-- Shalehusk Boots
 						i(11786),	-- Stone of the Earth
-						i(11785),	-- Rock Golem Bulwark	
+						i(11785),	-- Rock Golem Bulwark
 					},
 					["description"] = "This is a rare that is not always present.",
 				}),
@@ -710,14 +710,14 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 						["modelScale"] = 2.1,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",			
+						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 					}),
 				})),
 				cr(9938, e(386, {	-- Magmus
 					i(22208), 	-- Lavastone Hammer
 					i(11935), 	-- Magmus Stone
 					i(11746), 	-- Golem Skull Helm
-					i(151411), 	-- Molten-Warden Leggings 
+					i(151411), 	-- Molten-Warden Leggings
 					i(22275), 	-- Firemoss Boots
 				})),
 				cr(9019, e(387, {	-- Emperor Dagran Thaurissan
@@ -762,7 +762,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(12112)),	-- Crypt Demon Bracers
 						un(2, i(12114)),	-- Nightfall Gloves
 						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape 
+						un(2, i(12113)),	-- Sunborne Cape
 					})),
 					un(40, qa(4322, {		-- Jail Break!
 						un(2, i(12061)),	-- Blade of Reckoning
@@ -777,7 +777,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(12059)),	-- Conqueror's Medallion
 					})),
 					un(40, q(4136, {		-- Ribbly Screwspigot
-						un(2, i(11963)),	-- Penance Spaulders 
+						un(2, i(11963)),	-- Penance Spaulders
 						un(2, i(11865)),	-- Rancor Boots
 						un(2, i(12049)),	-- Splintsteel Armor
 					})),

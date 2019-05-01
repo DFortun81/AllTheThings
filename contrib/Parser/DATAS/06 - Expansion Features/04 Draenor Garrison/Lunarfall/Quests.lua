@@ -1848,29 +1848,24 @@ _.ExpansionFeatures =
 						["coord"] = { 46.9, 50.8, 582 },
 						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 					}),
-					{	-- A Tiny Scarecrow Costume
+					{			-- A Tiny Scarecrow Costume
 						["itemID"] = 128874,	-- A Tiny Scarecrow Costume
 						["questID"] = 39865,	-- Pepe can be sometimes be summoned with this mask
 						["coord"] = { 40.12, 70.06 },	-- Pepe Location [Alliance]
 						["description"] = "Halloween Decorations must be up in a Tier 3 garrison",
 					},
-					{	-- All Hands on Deck
-						["questID"] = 38259,
+					qa(38259, {	-- All Hands on Deck
 						["qg"] = 92219,	-- King Varian Wrynn
-						["races"] = ALLIANCE_ONLY,
-					},
+					}),
 					qa(36624, {	-- Ashran Appearance
 						["coord"] = { 40.7, 53.6, 582 },
 						["lvl"] = 91,
 						["qg"] = 79953,	-- Lieutenant Thorn
 					}),
-					{	-- Bigger is Better
-						["questID"] = 36592,
+					qa(36592, {	-- Bigger is Better
 						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-					},
-					{ 	-- Bringing the Bass
-						["questID"] = 38356,
+					}),
+					qa(38356, {	-- Bringing the Bass
 						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
 						["g"] = {
 							i(122613, {	-- Stash of Dusty Music Rolls
@@ -1883,38 +1878,29 @@ _.ExpansionFeatures =
 								i(122219),	-- Music Roll: Way of the Monk
 								i(122207),	-- Music Roll: Tinkertown
 							}),
-						}
-					},
-					{	-- Building For Professions - alternate version that was never used
-						["questID"] = 37667,
+						},
+					}),
+					q(37667,  {	-- Building For Professions - alternate version that was never used
 						["u"] = 1,
-					},
-					{	-- Building For Professions
-						["questID"] = 36100,
+					}),
+					qa(36100, {	-- Building For Professions
 						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Call of the Archmage
-						["questID"] = 35988,
+					}),
+					q(35988,  {	-- Call of the Archmage
 						["qg"] = 83858,	-- Khadgar's Servant
 						["u"] = 40,
-					},
-					{	-- Clearing the Garden
-						["questID"] = 36404,
-						["qg"] = 85344,	-- Naron Bloomthistle
-						["races"] = ALLIANCE_ONLY,
+					}),
+					qa(36404, {	-- Clearing the Garden
 						["sourceQuest"] = 36592,	-- Bigger is Better
+						["qg"] = 85344,	-- Naron Bloomthistle
 						["g"] = {
 							{ ["buildingID"] = 29 },	-- Herb Garden lvl 1
 						},
-					},
-					{	-- Feeding An Army
-						["questID"] = 36272,
+					}),
+					qa(36272, {	-- Feeding An Army
 						["qg"] = 84524,	-- Homer Stonefield
-						["races"] = ALLIANCE_ONLY,
-					},
-					{ 	-- For the Alliance
-						["questID"] = 34583,
+					}),
+					qa(34583, {	-- For the Alliance
 						["qg"] = 79470,	-- Vindicator Maraad
 						["g"] = {
 							i(108908),	-- Rangari Initiate Crossbow
@@ -1926,33 +1912,25 @@ _.ExpansionFeatures =
 							i(108918),	-- Karabor Arcanist Rod
 							i(108919),	-- Karabor Augury mace
 						},
-					},
-					{	-- Garrison Campaign: Awakening
-						["questID"] = 36134,
+					}),
+					qa(36134, {	-- Garrison Campaign: Awakening
 						["qg"] = 81492,	-- Bodrick Grey
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Garrison Campaign: Crows In The Field
-						["questID"] = 34409,
+					}),
+					qa(34409, {	-- Garrison Campaign: Crows In The Field
 						["qg"] = 88112,	-- Morthis Whisperwing
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Gems of the Apexis
-						["questID"] = 39195,
-						["qg"] = 77209,	-- Baros Alexston
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+					}),
+					qa(39195, {	-- Gems of the Apexis
 						["requireSkill"] = 755,	-- Jewelcrafting
+						["isBreadcrumb"] = true,
+						["qg"] = 77209,	-- Baros Alexston
 						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
-					},
-					{	-- Looking For Help
-						["questID"] = 34758,
-						["qg"] = 77733,	-- Ron Ashton
-						["races"] = ALLIANCE_ONLY,
+					}),
+					qa(34758, {	-- Looking For Help
 						["requireSkill"] = 356,	-- Fishing
-					},
+						["qg"] = 77733,	-- Ron Ashton
+					}),
 					qa(33359, {	-- Meet Us at Starfall Post
 						["qg"] = 80645,	-- Cordana Felsong
 						["coord"] = { 43.8, 44.4, 582 },
@@ -1963,8 +1941,7 @@ _.ExpansionFeatures =
 						["coord"] = { 44.1, 53.2, 582 },
 						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 					}),
-					{ 	-- Proving Grounds
-						["questID"] = 37433,
+					qa(37433, {	-- Proving Grounds
 						["qg"] = 79953,	-- Lieutenant Thorn
 						["g"] = {
 							i(119463),	-- Staff of Trials
@@ -1976,10 +1953,12 @@ _.ExpansionFeatures =
 							i(119464),	-- Cudgel of Trials
 							i(119457),	-- Handaxe of Trials
 						},
-					},
-					n(89763, { 	-- Muradin Bronzebeard
+					}),
+					n(89763,  {	-- Muradin Bronzebeard
+						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["g"] = {
 							i(123975, {	-- Greater Bounty Spoils
+								["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
 								["g"] = {
 									i(114111, {	-- Formidable Armament
 										i(115335),	-- Formidable Axe
@@ -2093,6 +2072,13 @@ _.ExpansionFeatures =
 										i(114513),	-- Trousers of Volatile Ice
 										i(114515),	-- Undying Legguards
 									}),
+									i(119122, {	-- Grandiose Ring
+										i(114531),	-- Daggerfinger Ring
+										i(114532),	-- Frostfire Band
+										i(114533),	-- Loop of Shielding Light
+										i(114535),	-- Officiant's Formidable Seal
+										i(114534),	-- Wrenchtooth Signet
+									}),
 									i(114083, { 	-- Grandiose Robes
 										i(114497),	-- Chestguard of Determined Resolve
 										i(114499),	-- Crazed Bomber's Breastplate
@@ -2112,59 +2098,133 @@ _.ExpansionFeatures =
 										i(114503),	-- Undying Boots
 									}),
 								},
-								["description"] = "This satchel is awarded by High Overlord Saurfang and Muradin Bronzebeard on all of the Garrison Raid Quests.",
 							}),
-							q(37767, { 	-- Arcane Sanctum: Ko'ragh
+							qa(37767, {	-- Arcane Sanctum: Ko'ragh
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37772, { 	-- Blackhand's Crucible: Blackhand
+							qa(37796, {	-- Auchindoun
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37772, {	-- Blackhand's Crucible: Blackhand
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37768, { 	-- Imperator's Rise: Imperator Mar'gok
+							qa(37795, {	-- Bloodmaul Slag Mines
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(39259, {	-- Destructor's Rise
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal (1,000)
+								},
+							}),
+							qa(37794, {	-- Grimrail Depot
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37768, {	-- Imperator's Rise: Imperator Mar'gok
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37771, { 	-- Iron Assembly: Admiral Gar'an
+							qa(37771, {	-- Iron Assembly: Admiral Gar'an
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37769, { 	-- Slagworks: Heart of the Mountain
+							qa(37793, {	-- Iron Docks
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(39253, {	-- Maw of Souls
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal (1,000)
+								},
+							}),
+							qa(39250, {	-- Pits of Mannoroth
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal (1,000)
+								},
+							}),
+							qa(37792, {	-- Shadowmoon Burial Grounds
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37791, {	-- Skyreach
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37769, {	-- Slagworks: Heart of the Mountain
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37770, { 	-- The Black Forge: Kromog
+							qa(39256, {	-- Temple of Tyranny
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal (1,000)
+								},
+							}),
+							qa(37770, {	-- The Black Forge: Kromog
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
-							q(37766, { 	-- Walled City: Brackenspore
+							qa(39260, {	-- The Black Gate
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal (1,000)
+								},
+							}),
+							qa(37790, {	-- The Everbloom
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37789, {	-- Upper Blackrock Spire
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources (175)								
+								},
+							}),
+							qa(37766, {	-- Walled City: Brackenspore
 								["isWeekly"] = true,
 								["groups"] = {
 									i(123975),	-- Greater Bounty Spoils
 								},
 							}),
 						},
-						["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which all have the Greater Bounty Spoils as a reward.",
 					}),
-					{	-- Mystery Notebook
-						["questID"] = 38306,
+					qa(38306, {	-- Mystery Notebook
 						["qg"] = 91589,	-- Fix "Smallie" Biggswrench
-						["races"] = ALLIANCE_ONLY,
-					},
-					n(-152, { 	-- Garrison Campaign
+					}),
+					n(-152,   {	-- Garrison Campaign
 						q(35195, {	-- Socrethar's Fury
 							i(119134),	-- Sargerei Disguise (TOY!)
 						}),
@@ -2172,40 +2232,31 @@ _.ExpansionFeatures =
 							i(119144),	-- Touch of the Naaru (TOY!)
 						}),
 					}),
-					{	-- The Secrets of Gorgrond
-						["questID"] = 35556,
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- These Look Familiar...
-						["questID"] = 34028,
+					qa(35556),	-- The Secrets of Gorgrond
+					qa(34028, {	-- These Look Familiar...
 						["qg"] = 77217,	-- Jr. Surveyor Dorn
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- Things Are Not Goren Our Way
-						["questID"] = 34192,
-						["qg"] = 77730,	-- Timothy Leens
+					}),
+					qa(34192, {	-- Things Are Not Goren Our Way
 						["sourceQuest"] = 36592,	-- Bigger is Better
+						["qg"] = 77730,	-- Timothy Leens
 						["g"] = {
 							{ ["buildingID"] = 61 },	-- Frostwall Mines
 						},
-					},
-					{	-- Treasure Contract: The Infected Orc
-						["questID"] = 37941,
+					}),
+					q(37941,  {	-- Treasure Contract: The Infected Orc
+						["isDaily"] = true,
 						["qgs"] = {
 							89793,	-- Harrison Jones
 							92223,	-- Surveyor Daltry
 						},
-						["isDaily"] = true,
-					},
-					{	-- We Need a Shipwright
-						["questID"] = 38257,
-						["qg"] = 92219,	-- King Varian Wrynn
-						["races"] = ALLIANCE_ONLY,
+					}),
+					qa(38257, {	-- We Need a Shipwright
 						["sourceQuests"] = {
 							38253,	-- Garrison Campaign: War Council
 							40418,	-- To Tanaan!
 						},
-					},
+						["qg"] = 92219,	-- King Varian Wrynn
+					}),
 				}),
 			},
 		}),

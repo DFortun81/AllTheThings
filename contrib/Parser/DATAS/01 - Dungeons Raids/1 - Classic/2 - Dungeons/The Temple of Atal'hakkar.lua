@@ -24,7 +24,7 @@ _.Instances = { tier(1, {	-- Classic
 					["questID"] = 27633,	-- The Blood God Hakkar
 					["qg"] = 46077,	-- Lord Itharius
 				},
-			}),				
+			}),
 			n(  0, {	-- Zone Drop
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
@@ -48,7 +48,7 @@ _.Instances = { tier(1, {	-- Classic
 						5283,	-- Nightmare Wanderer
 						8319,	-- Nightmare Whelp
 						5280,	-- Nightmare Wyrmkin
-						
+
 					},
 				}),
 				i(10627, {	-- Bludgeon of the Grinning Dog

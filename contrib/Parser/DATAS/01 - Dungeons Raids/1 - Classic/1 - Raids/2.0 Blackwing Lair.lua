@@ -365,7 +365,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11302),	-- Uther's Strength
 					i(13065),	-- Wand of Allistarj
 					i(13130),	-- Windrunner Legguards
-					i(13066),	-- Wyrmslayer 
+					i(13066),	-- Wyrmslayer
 				 -- PROFESSIONS
 					i(14511),	-- Pattern: Gloves of Spell Mastery
 					i(14509),	-- Pattern: Mooncloth Circlet

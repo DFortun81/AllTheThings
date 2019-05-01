@@ -1047,6 +1047,7 @@ _.Zones =
 						},
 					},
 					{	-- Hour of Reckoning
+						["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 						["questID"] = 53372,
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["races"] = HORDE_ONLY,

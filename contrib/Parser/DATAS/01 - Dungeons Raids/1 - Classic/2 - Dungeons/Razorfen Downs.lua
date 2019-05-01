@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 300,
 		["coord"] = { 53.24, 71.17, 12 },	-- Razorfen Downs, Kalimdor [Southern Barrens]
 		["groups"] = {
-			n(-17, {			-- Quests 
+			n(-17, {			-- Quests
 				{	-- Blackthorn's Lieutenants
 					["questID"] = 33513,	-- Blackthorn's Lieutenants
 					["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{	-- The Ritual
 					["questID"] = 33514,	-- The Ritual
-					["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)							
+					["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
 					["g"] = {
 						{	-- Belt of Tyrannic Rule
 							["itemID"] = 65996,	-- Belt of Tyrannic Rule
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						74478,	-- Death's Head Shadowmender
 						74483,	-- Death's Head Arachnomancer
-						74950,	-- Gelatanized Plague Gunk 
+						74950,	-- Gelatanized Plague Gunk
 					},
 				}),
 			}),
@@ -167,7 +167,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss.",
 				["groups"] = {
-					i(10766),	-- Plaguerot Sprig 
+					i(10766),	-- Plaguerot Sprig
 					i(10768),	-- Boar Champion's Belt
 					i(10767),	-- Savage Boar's Guard
 					i(10758),	-- X'caliboar

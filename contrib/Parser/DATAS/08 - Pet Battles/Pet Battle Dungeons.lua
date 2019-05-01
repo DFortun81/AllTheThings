@@ -53,10 +53,11 @@ _.PetBattles =
 			},
 		},
 	},
-{	-- Pet Battle Challenge: Wailing Caverns
+	{	-- Pet Battle Challenge: Wailing Caverns
 		["questID"] = 45539,
 		["qg"] = 116781,	-- Muyani
 		["coord"] = { 38.8, 68.2, 10 },
+		["sourceQuest"] = 45423,	-- Wailing Critters
 		["maps"] = {
 			10,	-- Northern Barrens
 			825,	-- Pet Dungeon
@@ -74,5 +75,16 @@ _.PetBattles =
 			}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
 		},
 	},
-	
+	{	-- Wailing Critters
+		["questID"] = 45423,
+		["qg"] = 116781,	-- Muyani
+		["coord"] = { 38.8, 68.2, 10 },
+		["maps"] = {
+			10,	-- Northern Barrens
+			825,	-- Pet Dungeon
+		},
+		["groups"] = {
+			i(122457),	-- Ultimate Battle-Training Stone
+		},
+	},
 };

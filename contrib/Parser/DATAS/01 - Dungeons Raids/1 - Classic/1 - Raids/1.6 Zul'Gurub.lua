@@ -68,7 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 									["groups"] = {
 										un(2, i(19841)),	-- Zandalar Confessor's Mantle
 									},
-								},			
+								},
 								{
 									["questID"] = 8073,	-- Paragon's of Power: The Madcap's Tunic
 									["qg"] = 14905,		-- Quest Giver: Falthir the Sightless
