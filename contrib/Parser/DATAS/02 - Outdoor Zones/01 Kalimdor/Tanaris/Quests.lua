@@ -665,7 +665,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					},
 					{	-- Nice Hat...
-						["questID"] = 12513,
+						["questID"] = 12515,	-- Despite what wowhead says, 12513 is depracated, not 12515
 						["qg"] = 28126,	-- Don Carlos
 						["coord"] = { 50.7, 27.5, 71 },
 					},
