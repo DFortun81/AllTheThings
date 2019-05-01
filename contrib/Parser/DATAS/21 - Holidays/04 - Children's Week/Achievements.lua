@@ -13,12 +13,12 @@ _.Holidays = bubbleDown({["u"] = 20},
 					{	-- For the Children
 						["achievementID"] = 1793,	-- For the Children
 						["groups"] = {
-							{	-- Matron (Female characters)
-								["titleID"] = 104,	-- Matron (Female characters)
+							{	-- Matron [Female Characters]
+								["titleID"] = 104,	-- Matron [Female Characters]
 								["u"] = 20,
 							},
-							{	-- Patron (Male characters)
-								["titleID"] = 105,	-- Patron (Male characters)
+							{	-- Patron [Male Characters]
+								["titleID"] = 105,	-- Patron [Male Characters]
 								["u"] = 20,
 							},
 							{	-- Aw, Isn't It Cute?
@@ -27,33 +27,55 @@ _.Holidays = bubbleDown({["u"] = 20},
 							{	-- Bad Example
 								["achievementID"] = 1788,	-- Bad Example
 								["groups"] = {
-									{	-- Tigule and Foror's Strawberry Ice Cream
-										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 1,	-- Tigule and Foror's Strawberry Ice Cream
-									},
-									{	-- Tasty Cupcake
-										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 2,	-- Tasty Cupcake
-									},
-									{	-- Red Velvet Cupcake
-										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 3,	-- Red Velvet Cupcake
-									},
-									{	-- Delicious Chocolate Cake
-										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 4,	-- Delicious Chocolate Cake
-									},
-									{	-- Lovely Cake Slice
-										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 5,	-- Lovely Cake Slice
-									},
 									{	-- Dalaran Brownie
 										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 6,	-- Dalaran Brownie
+										["criteriaID"] = 6,			-- Dalaran Brownie
+										["crs"] = {
+											14480,	-- Alowicious Czervik
+											47383,	-- Brivelthwerp
+											18914,	-- Caregiver Isel
+											14481,	-- Emmithue Smails
+											-- 15353,	-- Katrina Shimmerstar	Note!! Only shows up during Hallow's End
+											49893,	-- Lisa McKeever
+											18913,	-- Matron Tikkit
+											-- 15354,	-- Rachelle Gothena		Note!! Only shows up during Hallow's End
+											24934,	-- Snack-O-Matic IV
+										},
+										["coords"] = {
+											{ 53.21, 79.01, 85 },	-- Alowicious Czervik [Orgrimmar]
+											{ 69.81, 85.01, 64 },	-- Brivelthwerp [Thousand Needles]
+											{ 54.21, 76.01, 107 },	-- Caregiver Isel [Nagrand]
+											{ 61.21, 74.81, 84 },	-- Emmithue Smails [Stormwind City]
+											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
+											{ 51.61, 72.01, 84 },	-- Lisa McKeever [Stormwind City]
+											{ 56.61, 34.61, 107 },	-- Matron Tikkit [Nagrand]
+											-- { },	-- Rachelle Gothena	[Orgrimmar]		Note!! Only shows up during Hallow's End
+											{ 53.66, 53.01, 85 },	-- Snack-O-Matic IV
+										},
 									},
 									{	-- Dalaran Doughnut
 										["achievementID"] = 1788,	-- Bad Example
-										["criteriaID"] = 7,	-- Dalaran Doughnut
+										["criteriaID"] = 7,			-- Dalaran Doughnut
+									},
+									{	-- Delicious Chocolate Cake
+										["achievementID"] = 1788,	-- Bad Example
+										["criteriaID"] = 4,			-- Delicious Chocolate Cake
+									},
+									{	-- Lovely Cake Slice
+										["achievementID"] = 1788,	-- Bad Example
+										["criteriaID"] = 5,			-- Lovely Cake Slice
+									},
+									{	-- Red Velvet Cupcake
+										["achievementID"] = 1788,	-- Bad Example
+										["criteriaID"] = 3,			-- Red Velvet Cupcake
+									},
+									{	-- Tasty Cupcake
+										["achievementID"] = 1788,	-- Bad Example
+										["criteriaID"] = 2,			-- Tasty Cupcake
+									},
+									{	-- Tigule and Foror's Strawberry Ice Cream
+										["achievementID"] = 1788,	-- Bad Example
+										["criteriaID"] = 1,			-- Tigule and Foror's Strawberry Ice Cream
 									},
 								},
 							},
