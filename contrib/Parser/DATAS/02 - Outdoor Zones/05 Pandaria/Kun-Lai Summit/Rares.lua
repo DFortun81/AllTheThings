@@ -131,6 +131,7 @@ _.Zones =
 							{	-- Kishak
 								["npcID"] = 66933,	-- Kishak
 								["coords"] = {
+									{ 45.60, 19.61, 379 },
 									{ 42.58, 22.98, 379 },
 									{ 54.32, 21.65, 379 },
 									{ 49.38, 18.54, 379 },
@@ -153,6 +154,8 @@ _.Zones =
 								["npcID"] = 50332,	-- Korda Torros
 								["coords"] = {
 									{ 47.89, 81.24, 379 },
+									{ 49.23, 80.59, 379 },
+									{ 51.60, 80.80, 379 },
 									{ 51.23, 79.59, 379 },
 								},
 								["g"] = {
@@ -213,7 +216,7 @@ _.Zones =
 										["itemID"] = 86584,	-- Hardened Shell
 										["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 										["criteriaID"] = 9,			-- Hardened Shell
-										
+
 									},
 									{	-- Yakwasher's Bracers
 										["itemID"] = 87615,	-- Yakwasher's Bracers
@@ -247,6 +250,9 @@ _.Zones =
 							{	-- Scritch
 								["npcID"] = 50831,	-- Scritch
 								["coords"] = {
+									{ 44.8, 65.2, 379 },
+									{ 44.8, 63.6, 379 },
+									{ 47.2, 63, 379 },
 									{ 46.24, 61.54, 379 },
 								},
 								["g"] = {
