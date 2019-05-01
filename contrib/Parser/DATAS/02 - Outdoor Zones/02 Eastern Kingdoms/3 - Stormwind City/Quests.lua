@@ -239,7 +239,7 @@ _.Zones =
 							qa(53370, {	-- Hour of Reckoning
 								["qg"] = 144095,	-- Master Mathias Shaw
 								["coord"] = { 22.3, 32.3 },
-								["groups"] = {		
+								["g"] = {		
 									i(163542),	-- Footman's Warmace
 									i(163541),	-- Longbow of the Hunt
 									i(163539),	-- Spear of the Hunt
@@ -273,23 +273,24 @@ _.Zones =
 								["sourceQuests"] = { 49976 } ,	-- Gifts of the Fallen
 							}),	
 							qa(27355, {	-- A Boon for the Powerful
-								["groups"] = {
+								["g"] = {
 									i(65496),	-- Staff of Justified Sins
 								},
 								["qg"] = 461,	-- Demisette Cloyce
 								["classes"] = { 9 },	-- Warlock
 		--						["sourceQuests"] = {  },	-- 
 							}),
-							qa(27363, {	-- A Budding Young Surgeon
-								["groups"] = {
+							q(27363, {	-- A Budding Young Surgeon
+							--	["sourceQuests"] = {  },	-- 
+								["classes"] = { 5 },	-- Priest
+								["races"] = { 7 },	-- Gnome
+								["qg"] = 45306,	-- Chief Surgeon Gashweld
+								["g"] = {
 									i(65480),	-- Staff of the Technocrat
 								},
-								["qg"] = 45306,	-- Chief Surgeon Gashweld
-								["classes"] = { 5 },	-- Priest
-		--						["sourceQuests"] = {  },	-- 
 							}),
 							qa(28393, {	-- A Dangerous Alliance
-								["groups"] = {
+								["g"] = {
 									i(65618),	-- Faceguard of the Crown
 									i(65639),	-- Headguard of the Crown
 								},
@@ -299,7 +300,7 @@ _.Zones =
 							}),
 		--					qg(, qa(26190)),	-- A Fisherman's Feast
 							qa(27337, {	-- A Fitting Weapon
-								["groups"] = {
+								["g"] = {
 									i(65492),	-- Broadsword of the Crown
 									i(65493),	-- Greatsword of the Crown
 								},
@@ -323,7 +324,7 @@ _.Zones =
 							qg(, qa(25154)),	-- A Present for Lila
 		--]]
 							qa(27351, {	-- A Royal Reward
-								["groups"] = {
+								["g"] = {
 									i(65486),	-- SI:7 Special Issue Dagger
 								},
 								["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
@@ -342,7 +343,7 @@ _.Zones =
 							qg(, qa(44473)),	-- A Weapon of the Alliance
 		--]]
 							qa(27344, {	-- A Well-Earned Reward
-								["groups"] = {
+								["g"] = {
 									i(65465),	-- Crossbow of the Crown
 								},
 								["qg"] = 44247,	-- Wulf Hansreim
@@ -369,7 +370,7 @@ _.Zones =
 							qg(, qa(26488)),	-- Big Gulp
 		--]]
 							qa(27353, {	-- Blessings of the Elements
-								["groups"] = {
+								["g"] = {
 									i(65488),	-- Battleaxe of the Farseer
 									i(65489),	-- Spell Axe of the Farseer
 								},
@@ -411,12 +412,13 @@ _.Zones =
 							qg(, qa(31981)),	-- Exceeding Expectations
 		--]]
 							qa(27361, {	-- Favored of the Light
-								["groups"] = {
+								["sourceQuests"] = { 27268 },	-- Make Haste to the Cathedral
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 49.6, 44.8, 84 },
+								["qg"] = 376,	-- High Priestess Laurena
+								["g"] = {
 									i(65482),	-- Staff of the Hallowed
 								},
-								["qg"] = 376,	-- High Priestess Laurena
-								["classes"] = { 5 },	-- Priest
-		--						["sourceQuests"] = {  },	-- 
 							}),
 		--[[
 							qg(1141, qa( 1271)),	-- Feast at the Blue Recluse
@@ -484,7 +486,7 @@ _.Zones =
 							qg(, qa(38206)),	-- Making the Rounds
 							--]]
 							qa(27354, {	-- Mastering the Arcane
-								["groups"] = {
+								["g"] = {
 									i(65467),	-- Staff of the Royal Wizard
 								},
 								["qg"] = 331,	-- Maginor Dumas
@@ -536,7 +538,7 @@ _.Zones =
 							qg(, qa(29399)),	-- Shopping Around
 		--]]
 							qa(28401, {	-- Slaves of the Firelord
-								["groups"] = {
+								["g"] = {
 									i(65640), 		-- Mask of the Farseer
 									i(65622), 		-- Headcover of the Farseer
 								},
@@ -553,7 +555,7 @@ _.Zones =
 							qg(, qa( 9325)),	-- Stealing Thunder Bluff's Flame
 		--]]
 							qa(28399, {	-- Stones of Binding
-								["groups"] = {
+								["g"] = {
 									i(65621),	-- Horns of Justified Sins
 								},
 								["qg"] = 461,	-- Demisette Cloyce
@@ -578,7 +580,7 @@ _.Zones =
 							qg(, qa(43806)),	-- The Battle for Broken Shore
 		--]]
 							qg(108916, qa(42740,  {  	-- The Battle for Broken Shore
-								["groups"] = {
+								["g"] = {
 									i(138767),	-- Stormwind Vanguard Battle Mace
 									i(138772),	-- Stormwind Vanguard Bonegrinder
 									i(138770),	-- Stormwind Vanguard Dagger
@@ -600,7 +602,7 @@ _.Zones =
 							qg(, qa(29403)),	-- The Collector's Agent
 		--]]
 							qa(28406, {	-- The Dark Iron Army
-								["groups"] = {
+								["g"] = {
 									i(65624),	-- SI:7 Special Issue Facemask
 								},
 								["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
@@ -622,7 +624,7 @@ _.Zones =
 							qg(, qa(40517)),	-- The Fallen Lion
 		--]]
 							qa(28394, {	-- The Golem Lord's Creations
-								["groups"] = {
+								["g"] = {
 									i(65619),	-- Helm of the Crown
 								},
 								["qg"] = 44247,	-- Wulf Hansreim
@@ -634,7 +636,7 @@ _.Zones =
 							qg(, qa(47221)),	-- The Hand of Fate
 		--]]
 							q(27343, {	-- The Hand of the Light
-								["groups"] = {
+								["g"] = {
 									i(65475),	-- Mace of the Order
 									i(65476),	-- Gavel of the Order
 									i(65477),	-- Warhammer of the Order
@@ -664,7 +666,7 @@ _.Zones =
 							qg(, qa(25157)),	-- The Latest Fashion!
 		--]]					
 							q(37689, {	-- The Imposter
-								["groups"] = {
+								["g"] = {
 									i(139739),	-- Chestguard of the Uncrowned
 								},
 								["qg"] = 111049,	-- Master Mathias Shaw
@@ -690,7 +692,7 @@ _.Zones =
 							qg(, qa(  543)),	-- The Perenolde Tiara
 							--]]
 							qa(28398, {	-- The Pyromancer's Grimoire
-								["groups"] = {
+								["g"] = {
 									i(65620),	-- Hood of the Royal Wizard
 								},
 								["qg"] = 331,	-- Maginor Dumas
@@ -718,12 +720,13 @@ _.Zones =
 							qg(, q( 29482)),	-- Transmutation Master
 		--]]
 							qa(28328, {	-- Twilight Scheming
-								["groups"] = {
+								["sourceQuests"] = { 28285 },	-- Meet with High Priestess Laurena
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 49.6, 44.8, 84 },
+								["qg"] = 376,	-- Twilight Scheming
+								["g"] = {
 									i(65616),	-- Crown of the Hallowed
 								},
-								["qg"] = 376,	-- Twilight Scheming
-								["classes"] = { 5 },	-- Priest
-		--						["sourceQuests"] = {  },	-- 
 							}),
 							qa(28238, {	-- Twilight Shores
 								["qg"] = 107574,	-- Anduin Wrynn
@@ -743,7 +746,7 @@ _.Zones =
 							qg(, q(11886)),	-- Unusual Activity
 		--]]
 							q(28405, {	-- Weapons of Darkness
-								["groups"] = {
+								["g"] = {
 									i(65623),	-- Helm of the Order
 									i(65641),	-- Faceguard of the Order
 									i(65646),	-- Headguard of the Order

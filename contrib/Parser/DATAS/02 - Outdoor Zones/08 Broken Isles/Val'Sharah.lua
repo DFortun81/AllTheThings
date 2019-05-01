@@ -912,20 +912,9 @@ _.Zones =
 						},
 					}),
 					ach(10877, {	-- Pillars of Creation
-						q(40567, {	-- Darkheart Thicket: Enter the Nightmare
-							i(141551),	-- Boots of the Receding Nightmare
-							i(141548),	-- Footwraps of the Receding Nightmare
-							i(141550),	-- Sabatons of the Receding Nightmare
-							i(141549),	-- Treads of the Receding Nightmare
-						}),
-						o(248534, {	-- The Tears of Elune
-							q(40890,  {  -- The Tears of Elune
-								i(130001),	-- Shaladrassil Cuirass
-								i(129993),	-- Shaladrassil Tunic
-								i(129985),	-- Shaladrassil Vestments
-								i(130012),	-- Shaladrassil Chestguard
-							}),
-						}),
+						-- 40567	-- Darkheart Thicket: Enter the Nightmare
+						-- 40890	-- The Tears of Elune
+						-- one or both = SQs?
 					}),  
 				--	QUESTS START HERE
 					q(38889, {  -- Adopting the Adorable
@@ -981,6 +970,45 @@ _.Zones =
 						["coord"] = { 54.6, 72.8, 641 },
 						["qg"] = 91462,	-- Malfurion Stormrage
 					}),
+					qh(41763, {	-- Close Enough to Touch (Horde)
+						["sourceQuests"] = { 43702 },	-- Softening the Target
+						["coord"] = { 63.2, 42.1, 641 },
+						["qg"] = 104728,	-- Tyrande Whisperwind
+						["g"] = {
+							i(132311),	-- Blossom of Promise
+							i(132319),	-- Charred Imp Claw
+							i(132314),	-- Desiccated Breeze
+							i(132305),	-- Elothir's Sympathy
+							i(132322),	-- Lifelink to Elothir
+							i(132316),	-- Mana-Fused Seedling
+							i(132325),	-- Nightmare Zephyr
+							i(132321),	-- Petrified Ancient Branch
+							i(132309),	-- Rimed Worldtree Blossom
+							i(132317),	-- Sap of the Worldtree
+							i(132308),	-- Shaladrassil's Anger
+							i(132312),	-- Twisted Nightmare Totem
+							i(132310),	-- Uncorrupted Soil
+							i(132306),	-- Varethos' Fortitude
+							i(132320),	-- Varethos' Frozen Heart
+							i(132323),	-- Varethos' Last Breath
+						},
+					}),
+					q(40567, {	-- Darkheart Thicket: Enter the Nightmare
+						["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						["coord"] = { 53.7, 55.8, 641 },
+						["qg"] = 104921,	-- Tyrande Whisperwind
+						["g"] = {
+							i(141551),	-- Boots of the Receding Nightmare
+							i(141548),	-- Footwraps of the Receding Nightmare
+							i(141550),	-- Sabatons of the Receding Nightmare
+							i(141549),	-- Treads of the Receding Nightmare
+						},
+					}),
+					qh(41890, {	-- Dark Side of the Moon (Horde)
+						["sourceQuests"] = { 41054 },	-- Love Lost
+						["coord"] = { 69.5, 49.4, 641 },
+						["qg"] = 103022,	-- Tyrande Whisperwind
+					}),
 					q(38225, {  -- Death to the Witchmother
 						["sourceQuests"] = {
 							38381,	-- Archdruid of Lord (Non-Druid)
@@ -1006,6 +1034,9 @@ _.Zones =
 						["sourceQuests"] = { 42748 },	-- Emerald Sisters (must be on quest)
 						["coord"] = { 59.4, 81.9, 641 },
 						["qg"] = 108358,	-- Leirana
+					}),
+					q(43241, {	-- Flow of the Nightmare
+						["coord"] = { 64.0, 47.1, 641 },
 					}),
 					q(42748, {	-- Emerald Sisters
 						["coord"] = { 59.4, 84.1, 641 },
@@ -1037,6 +1068,11 @@ _.Zones =
 						["coord"] = { 49.0, 82.2, 641 },
 						["qg"] = 73426,	-- Rylissa Bearsong
 					}),
+					qh(41749, {	-- Given to Corruption (Horde)
+						["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
+						["coord"] = { 66.1, 44.6, 641 },
+						["qg"] = 92783,	-- Elothir
+					}),
 					q(42884, {	-- Grassroots Effort
 						["coord"] = { 66.6, 77.1, 641 },
 						["qg"] = 109631,	-- Old Grizzleback
@@ -1051,10 +1087,25 @@ _.Zones =
 						["itemID"] = 138441,	-- Grotesque Remains
 						["qg"] = 108327,	-- Undulating Boneslime
 					},
+					qh(38675, {	-- Heart of the Nightmare (Horde)
+						["sourceQuests"] = { 43576 },	-- Regroup at the Refuge
+						["coord"] = { 69.4, 49.4, 641 },
+						["qg"] = 103022,	-- Tyrande Whisperwind
+					}),
 					q(38922, {	-- Littlefur
 						["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
 						["coord"] = { 48.3, 84.5, 641 },
 						["qg"] = 93890,	-- Elder Sookh
+					}),
+					q(38671, {	-- Lost in Retreat
+						["sourceQuests"] = { 41054 },	-- Love Lost
+						["coord"] = { 69.5, 49.4, 641 },
+						["qg"] = 94863,	-- Mender Onelle
+					}),
+					qh(41054, {	-- Love Lost (Horde)
+						["sourceQuests"] = { 38753 },	-- The Demon's Trail
+						["coord"] = { 67.4, 56.1, 641 },
+						["qg"] = 102938,	-- Tyrande Whisperwind
 					}),
 					q(38595, {	-- Malfurion's Fury
 						["sourceQuests"] = { 38663 },	-- The Die is Cast
@@ -1091,6 +1142,16 @@ _.Zones =
 						["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
 						["qg"] = 91223,	-- Koda Steelclaw
 					}),
+					q(38684, {	-- Reading the Leaves
+						["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
+						["coord"] = { 66.1, 44.6, 641 },
+						["qg"] = 92783,	-- Elothir
+					}),
+					q(43576, {	-- Regroup at the Refuge
+						["sourceQuests"] = { 41890 },	-- Dark Side of the Moon (Horde)
+						["coord"] = { 66.8, 50.2, 641 },
+						["qg"] = 104885,	-- Tyrande Whisperwind
+					}),
 					q(38148, {	-- Return to the Grove
 						["sourceQuests"] = { 38147 },	-- Entangled Dreams
 						["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
@@ -1116,6 +1177,18 @@ _.Zones =
 						["sourceQuests"] = { 38641 },	-- The Temple of Elune
 						["coord"] = { 51.4, 56.9, 641 },
 						["qg"] = 92697,	-- Isoraen Nightstar
+					}),
+					q(38748, {	-- Ruins of Shala'nir (bonus objective)
+						["sourceQuests"] = { 43702 },	-- Softening the Target
+						["coord"] = { 60.9, 35.6, 641 },
+					}),
+					q(43702, {	-- Softening the Target
+						["sourceQuests"] = {
+							41749,	-- Given to Corruption (Horde)
+							38684,	-- Reading the Leaves
+						},
+						["coord"] = { 66.1, 44.8, 641 },
+						["qg"] = 104728,	-- Tyrande Whisperwind
 					}),
 					q(38235, {	-- Solid as a Rock
 						["sourceQuests"] = {
@@ -1166,6 +1239,11 @@ _.Zones =
 						["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
 						["qg"] = 91223,	-- Koda Steelclaw
 					}),
+					q(38753, {	-- The Demon's Trail
+						["sourceQuests"] = { 38582 },	-- To Old Friends
+						["coord"] = { 65.0, 61.1, 641 },
+						["qg"] = 92710,	-- Ysera
+					}),
 					q(38663, {	-- The Die is Cast
 						["sourceQuests"] = {
 							38655,	-- Root Cause
@@ -1206,6 +1284,11 @@ _.Zones =
 							i(132289),	-- Vale Shadow Frost
 						},
 					}),
+					q(38743, {	-- The Fate of Val'sharah
+						["sourceQuests"] = { 41763 },	-- Close Enough to Touch (Horde)
+						["coord"] = { 57.8, 38.6, 641 },
+						["qg"] = 104799,	-- Tyrande Whisperwind
+					}),
 					q(40573, {  -- The Nightmare Lord
 						["sourceQuests"] = { 39384 },	-- The Corruptor
 						["coord"] = { 65.1, 67.0, 641 },
@@ -1216,6 +1299,17 @@ _.Zones =
 							i(130000),	-- Bands of Unrelenting Anguish
 							i(129992),	-- Cuffs of Unrelenting Anguish
 							i(121643),	-- Thaon's Grief
+						},
+					}),
+					q(40890, {  -- The Tears of Elune
+						["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						["coord"] = { 53.5, 55.9, 641 },
+						["icon"] = "Interface\\Icons\\inv_jewelcrafting_gem_42",
+						["g"] = {
+							i(130001),	-- Shaladrassil Cuirass
+							i(129993),	-- Shaladrassil Tunic
+							i(129985),	-- Shaladrassil Vestments
+							i(130012),	-- Shaladrassil Chestguard
 						},
 					}),
 					q(38641, {	-- The Temple of Elune
@@ -1285,6 +1379,11 @@ _.Zones =
 						["g"] = {
 							i(130127),	-- Syndrelle's Favorite Ring
 						},
+					}),
+					q(41707, {	-- Wormtalon Wreckage
+						["sourceQuests"] = { 41054 },	-- Love Lost
+						["coord"] = { 69.5, 49.4, 641 },
+						["qg"] = 95117,	-- Aldos Duskwing
 					}),
 					q(38372, {	-- Wretched Sisters (bonus objective)
 						["coord"] = { 45.1, 74.0, 641 },
@@ -1382,20 +1481,11 @@ _.Zones =
 					q(38691, {	-- Jarod's Mission
 						i(141388),	-- Warden's Boon
 					}),
-					qa( 41056),	-- Love Lost
-					qh( 41054),	-- Love Lost
-					qh( 41890),	-- Dark Side of the Moon
-					qa( 41708),	-- Dark Side of the Moon
-					q(38671),	-- Lost in Retreat
-					q(41707),	-- Wormtalon Wreckage
-					q(43576),	-- Regroup at the Refuge
-					qa( 41724),	-- Heart of the Nightmare
-					qh( 38675),	-- Heart of the Nightmare
-					q(38684),	-- Reading the Leaves
-					qh( 41749),	-- Given to Corruption
-					qa( 41893),	-- Given to Corruption
-					q(43702),	-- Softening the Target
-					qh( 41763, {	-- Close Enough to Touch
+					qa(41056),	-- Love Lost (Alliance)
+					qa(41708),	-- Dark Side of the Moon (Alliance)
+					qa(41724),	-- Heart of the Nightmare
+					qa(41893),	-- Given to Corruption (Alliance)
+					qa(38687, {	-- Close Enough to Touch (Alliance)
 						i(132311),	-- Blossom of Promise
 						i(132319),	-- Charred Imp Claw
 						i(132314),	-- Desiccated Breeze
@@ -1413,53 +1503,23 @@ _.Zones =
 						i(132320),	-- Varethos' Frozen Heart
 						i(132323),	-- Varethos' Last Breath
 					}),
-					qa( 38687, {	-- Close Enough to Touch
-						i(132311),	-- Blossom of Promise
-						i(132319),	-- Charred Imp Claw
-						i(132314),	-- Desiccated Breeze
-						i(132305),	-- Elothir's Sympathy
-						i(132322),	-- Lifelink to Elothir
-						i(132316),	-- Mana-Fused Seedling
-						i(132325),	-- Nightmare Zephyr
-						i(132321),	-- Petrified Ancient Branch
-						i(132309),	-- Rimed Worldtree Blossom
-						i(132317),	-- Sap of the Worldtree
-						i(132308),	-- Shaladrassil's Anger
-						i(132312),	-- Twisted Nightmare Totem
-						i(132310),	-- Uncorrupted Soil
-						i(132306),	-- Varethos' Fortitude
-						i(132320),	-- Varethos' Frozen Heart
-						i(132323),	-- Varethos' Last Breath
+					q(39015,  {  -- Grumpy
+						i(128354),	-- Grumpy
 					}),
-					q(38743, {	-- The Fate of Val'sharah
-						i(141383),	-- Crystallized Moon Drop [AP]
+					q(40536, {	-- Bruls Before Jewels
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["qg"] = 100776,	-- Jabrul <Jewelcrafting Master>
+						["g"] = {
+							i(132469),	-- Design: Azsunite Pendant
+							i(132468),	-- Design: Deep Amber Pendant
+							i(132467),	-- Design: Skystone Pendant
+						},
 					}),
-					q(38753, {	-- The Demon's Trail
-						i(141390),	-- The Corruptor's Totem [AP]
+					--[[
+					q(44825, {	-- Wisp in the Willows REMOVED?
+						i(130127),	-- Syndrelle's Favorite Ring
 					}),
-					n(-168, {	-- Other Quests
-						sz(10666,3, {	-- Bradensbrook
-							q(39015,  {  -- Grumpy
-								i(128354),	-- Grumpy
-							}),
-						}),
-						q(40536, {	-- Bruls Before Jewels
-							["requireSkill"] = 755,	-- Jewelcrafting
-							["qg"] = 100776,	-- Jabrul <Jewelcrafting Master>
-							["g"] = {
-								i(132469),	-- Design: Azsunite Pendant
-								i(132468),	-- Design: Deep Amber Pendant
-								i(132467),	-- Design: Skystone Pendant
-							},
-						}),
-						sz(10666,6, {	-- Grove of Cenarius
-							--[[
-							q(44825, {	-- Wisp in the Willows REMOVED?
-								i(130127),	-- Syndrelle's Favorite Ring
-							}),
-							]]--
-						}),
-					}),
+					]]--
 				}),
 				n(-16,  {	-- Rares
 					n(93758,  {	-- Antydas Nightcaller
@@ -1493,18 +1553,23 @@ _.Zones =
 						},
 					}), 
 					n(97517,  {	-- Dreadbog
-						["questID"] = 39858,	
-						["g"] = {	
-							i(130125),
+						["questID"] = 39858,
+						["coord"] = { 60.4, 44.1, 641 },
+						["g"] = {
+							i(130125),	-- Dreadbog Fungalflesh Cape
+							{	-- Dreadbog (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 15,	-- Dreadbog
+							},
 						},
-					}), 
+					}),
 					n(92334,  {	-- Elindya Featherlight (Skul'vrax)
 						["description"] = "|cff66ccffRevive Elindya Featherlight, follow her to Swiftflight and Skul'vrax will spawn.|r",
-						["questID"] = 38887,	
+						["questID"] = 38887,
 						["g"] = {
 							i(130115)
 						},
-					}), 
+					}),
 					n(93679,  {	-- Gathenak the Subjugator
 						["questID"] = 44070,
 						["g"] = {	
@@ -1523,15 +1588,39 @@ _.Zones =
 							},
 						},
 					}),
+					n(95123,  {	-- Grelda the Hag
+						["questID"] = 40126,
+						["coord"] = { 66.0, 52.5, 641 },
+						["g"] = {
+							i(130122),	-- Grelda's Ageless Pendant
+							{	-- Grelda the Hag (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 11,	-- Grelda the Hag
+							},
+						},
+					}),
 					n(93030,  {	-- Ironbranch
-						i(130126),	-- Iron Branch
-					}), 
+						["questID"] = 40080,
+						["coord"] = { 58.8, 33.9, 641 },
+						["g"] = {
+							i(130126),	-- Iron Branch
+							{	-- Ironbranch (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 5,	-- Ironbranch
+							},
+						},
+					}),
 					n(98241,  {	-- Lyrath Moonfeather
 						["questID"] = 40079,
-						["g"] = {	
-							i(130118),
+						["coord"] = { 61.9, 30.2, 641 },
+						["g"] = {
+							i(130118),	-- Moonfeather Handwraps
+							{	-- Lyrath Moonfeather (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 16,	-- Lyrath Moonfeather
+							},
 						},
-					}), 
+					}),
 					n(95221,  {	-- Mad Henryk
 						["questID"] = 39357,
 						["g"] = {
@@ -1551,10 +1640,15 @@ _.Zones =
 					}),
 					n(94485,  {	-- Pollous the Fetid
 						["questID"] = 39130,
+						["coord"] = { 67.0, 44.0, 641 },
 						["g"] = {
-							i(130168),
+							i(130168),	-- Fetid Waveling (PET!)
+							{	-- Purging the River (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 10,	-- Purging the River
+							},
 						},
-					}), 
+					}),
 					n(92180,  {	-- Seersei
 						["questID"] = 38479,
 						["coord"] = { 41.8, 77.7, 641 },
@@ -1575,8 +1669,13 @@ _.Zones =
 					}), 
 					n(93205,  {	-- Thondrax
 						["questID"] = 38780,
+						["coord"] = { 62.6, 47.8, 641 },
 						["g"] = {	
-							i(130121),
+							i(130121),	-- Thondrax's Night-Runed Bands
+							{	-- Thondrax (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 6,	-- Thondrax
+							},
 						},
 					}),
 					n(109708, {	-- Undergrell Ringleader
@@ -1605,15 +1704,19 @@ _.Zones =
 					},
 					n(97504,  {	-- Wraithtalon
 						["questID"] = 39856,
-						["g"] = {	
-							i(130116),
+						["coord"] = { 66.6, 37.0, 641 },
+						["g"] = {
+							i(130116),	-- Twisted Wraithtalon Gloves
+							{	-- Wraithtalon (Adventurer of Val'sharah)
+								["achievementID"] = 11262,	-- Adventurer of Val'sharah
+								["criteriaID"] = 14,	-- Wraithtalon
+							},
 						},
-					}), 
+					}),
 --[[
 				--	n(93758, { 		-- Antydas Nightcaller	}), 
 				--	n(107924, { 	-- Darkfiend Tormentor	}), 
 				--	v(45483, { 		-- Ealdis	}), 
-				--	v(40126, { 		-- Grelda the Hag	}), 
 				--	v(45484, {	 	-- Harbinger of Screams	}),
 				--	n(93686, { 		-- Jinikki the Puncturer	}), 
 				--	n(106042, { 	-- Kalazzius the Guileful	}), 

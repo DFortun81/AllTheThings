@@ -3,9 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(101, { 	-- Outland
+	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
-			["groups"] = {
+			["description"] = "|cff66ccffShattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.|r",
+			["isRaid"] = true,
+			["lvl"] = 58,
+			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
+			["g"] = {
 				n(-228, {	-- Flight Master
 					fp(128, {	-- Shattrath, Terokkar Forest
 						["coord"] = { 63.8, 41 },
@@ -19,6 +23,706 @@ _.Zones =
 						["coord"] = { 59.0, 70.0 },
 					}),
 				}),
+				faction(932,  {	-- The Aldor
+					n(-17, {	-- Quests
+						q(10551, {	-- Allegiance to the Aldor
+							["qg"] = 18166,	-- Archmage Khadgar
+							["coord"] = { 54.7, 44.3, 111 },
+							["sourceQuest"] = 10211,	-- City of Light
+						}),
+						q(10554, {	-- Ishanah
+							["qg"] = 18166,	-- Archmage Khadgar
+							["coord"] = { 54.7, 44.3, 111 },
+							["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						}),
+						q(10021, {	-- Restoring the Light
+							["qg"] = 18538,	-- Ishanah
+							["coord"] = { 24.2, 29.8, 111 },
+							["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						}),
+						q(10325, {	-- Marks of Kil'jaeden
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						}),
+						q(10327, {	-- Single Mark of Kil'jaeden
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+							["description"] = "Gives reputation through Honored.",
+							["repeatable"] = true,
+						}),
+						q(10326, {	-- More Marks of Kil'jaeden
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+							["description"] = "Gives reputation through Honored.",
+							["repeatable"] = true,
+						}),
+						q(10653, {	-- Marks of Sargeras
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						}),
+						q(10655, {	-- Single Mark of Sargeras
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuest"] = 10653,	-- Marks of Sargeras
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(10654, {	-- More Marks of Sargeras
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["coord"] = { 30.7, 34.6, 111 },
+							["sourceQuests"] = 10653,	-- Marks of Sargeras
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(10420, {	-- A Cleansing Light
+							["qg"] = 18538,	-- Ishanah
+							["coord"] = { 24.2, 29.8, 111 },
+							["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						}),
+						q(10421, {	-- Fel Armaments
+							["qg"] = 18538,	-- Ishanah
+							["coord"] = { 24.2, 29.8, 111 },
+							["sourceQuest"] = 10420,	-- A Cleansing Light
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(10020, {	-- A Cure for Zahlia
+							["qg"] = 18597,	-- Sha'nir
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+							["qg"] = 18537,	-- Adyen the Lightwarden
+							["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+						}),
+						q(11038, {	-- Assist Exarch Orelis
+							["qgs"] = { 
+								23271,	-- Vindicator Kaan
+								23270,	-- Vindicator Aeus
+							},
+							["coords"] = {
+								{ 35.0, 32.6, 111 },
+								{ 47.4, 26.4, 111 },
+							},
+							["sourceQuests"] = 10551,	-- Allegiance to the Aldor
+							["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
+						}),
+						q(10017, {	-- Strained Supplies
+							["qg"] = 18597,	-- Sha'nir
+							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+						}),
+						q(10019, {	-- More Venom Sacs
+							["qg"] = 18597,	-- Sha'nir
+							["repeatable"] = true,
+							["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+							["sourceQuests"] = { 10017 },	-- Strained Supplies
+						}),
+					}),
+					n(-2,  {	-- Vendors
+						n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
+							["coord"] = { 23.6, 32.6, 111 },
+							["g"] = {
+								i(28963),	-- Voidheart Crown
+								i(28964),	-- Voidhaert Robe
+								i(28966),	-- Voidheart Leggings
+								i(28967),	-- Voidheat Mantle
+								i(28968),	-- Voidheart Gloves
+								i(29011),	-- Warbringer Greathelm
+								i(29012),	-- Warbringer Chestguard
+								i(29015),	-- Warbringer Legguards
+								i(29016),	-- Warbringer Shoulderguards
+								i(29017),	-- Warbringer Handguards
+								i(29019),	-- Warbringer Breastplate
+								i(29020),	-- Warbringer Gauntlets
+								i(29021),	-- Warbringer Battle-Helm
+								i(29022),	-- Warbringer Greaves
+								i(29023),	-- Warbringer Shoulderplates
+								i(29028),	-- Cyclone Headdress
+								i(29029),	-- Cyclone Hauberk
+								i(29030),	-- Cyclone Kilt
+								i(29031),	-- Cyclone Shoulderpads
+								i(29032),	-- Cyclone Gloves
+								i(29033),	-- Cyclone Chestguard
+								i(29034),	-- Cyclone Handguards
+								i(29035),	-- Cyclone Faceguard
+								i(29036),	-- Cyclone Legguards
+								i(29037),	-- Cyclone Shoulderguards
+								i(29038),	-- Cuclone Breastplate
+								i(29039),	-- Cyclone Gauntlets
+								i(29040),	-- Cyclone Helm
+								i(29042),	-- Cyclone War-Kilt
+								i(29043),	-- Cyclone Sholderplates
+								i(29044),	-- Netherblade Facemask
+								i(29045),	-- Netherblade Chestpiece
+								i(29046),	-- Netherblade Breeches
+								i(29047),	-- Netherblade Shoulderpads
+								i(29048),	-- Netherblade Gloves
+								i(29049),	-- Light-Collar of the Incarnate
+								i(29050),	-- Robes of the Incarnate
+								i(29053),	-- Trousers of the Incarnate
+								i(29054),	-- Light-Mantle of the Incarnate
+								i(29055),	-- Handwraps of the Incarnate
+								i(29056),	-- Shroud of the Incarnate
+								i(29057),	-- Gloves of the Incarnate
+								i(29058),	-- Soul-Collar of the Incarnate
+								i(29059),	-- Leggings of the Incarnate
+								i(29060),	-- Soul-Mantle of the Incarnate
+								i(29061),	-- Justicar Diadem
+								i(29062),	-- Justicar Chestpiece
+								i(29063),	-- Justicar Leggings
+								i(29064),	-- Justicar Pauldrons
+								i(29065),	-- Justicar Gloves
+								i(29066),	-- Justicar Chestguard
+								i(29067),	-- Justicar Handguards
+								i(29068),	-- Justicar Faceguard
+								i(29069),	-- Justicar Legguards
+								i(29070),	-- Justicar Shoulderguards
+								i(29071),	-- Justicar Breastplate
+								i(29072),	-- Justicar Gauntlets
+								i(29073),	-- Justicar Crown
+								i(29074),	-- Justicar Greaves
+								i(29075),	-- Justicar Shoulderplates
+								i(29076),	-- Collar of the Aldor
+								i(29077),	-- Vestments of the Aldor
+								i(29078),	-- Legwraps of the Aldor
+								i(29079),	-- Pauldrons of the Aldor
+								i(29080),	-- Gloves of the Aldor
+								i(29081),	-- Demon Stalker Greathelm
+								i(29082),	-- Demon Stalker Harness
+								i(29083),	-- Demon Stalker Greaves
+								i(29084),	-- Demon Stalker Shoulderguards
+								i(29085),	-- Demon Stalker Gauntlets
+								i(29086),	-- Crown of Malorne
+								i(29087),	-- Chestguard of Malorne
+								i(29088),	-- Legguards of Malorne
+								i(29089),	-- Shoulderguards of Malorne
+								i(29090),	-- Handguards of Malorne
+								i(29091),	-- Chestpiece of Malorne
+								i(29092),	-- Gloves of Malorne
+								i(29093),	-- Antlers of Malorne
+								i(29094),	-- Britches of Malorne
+								i(29095),	-- Pauldrons of Malorne
+								i(29096),	-- Breastplate of Malorne
+								i(29097),	-- Gauntlets of Malorne
+								i(29098),	-- Stag-Helm of Malorne
+								i(29099),	-- Greaves of Malorne
+								i(29100),	-- Mantle of Malorne
+							},
+						}),
+						n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
+							["coord"] = { 48.0, 26.6, 111 },
+							["g"] = {
+								i(31779),	-- Aldor Tabard
+								i(29129),	-- Anchorite's Robes
+								i(29130),	-- Auchenai Staff
+								i(24177),	-- Design: Pendant of Shadow's End
+								i(23145),	-- Design: Purified Shadow Draenite
+								i(23143, {	-- Design: Purified Shadow Draenite
+									["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
+										["u"] = 2,
+								}),
+								i(23149),	-- Design: Smooth Golden Draenite
+								i(28291, {	-- Design: Smooth Golden Draenite
+									["spellID"] = 0,	-- This is now available via 23149, need to delink the old plans from the recipe
+										["u"] = 2,
+								}),
+								i(29128),	-- Lightwarden's Band
+								i(29123),	-- Medallion of the Lightbearer
+								i(29704),	-- Pattern: Blastguard Belt
+								i(29703),	-- Pattern: Blastguard Boots
+								i(29702),	-- Pattern: Blastguard Pants
+								i(30842),	-- Pattern: Flameheart Bracers
+								i(30843),	-- Pattern: Flameheart Gloves
+								i(30844),	-- Pattern: Flameheart Vest
+								i(29693),	-- Pattern: Flamescale Belt
+								i(29691),	-- Pattern: Flamescale Boots
+								i(29689),	-- Pattern: Flamescale Leggings
+								i(24295),	-- Pattern: Golden Spellthread
+								i(24293),	-- Pattern: Silver Spellthread
+								i(25721),	-- Pattern: Vindicator's Armor Kit
+								i(23601),	-- Plans: Flamebane Bracers
+								i(23604),	-- Plans: Flamebane Breastplate
+								i(23603),	-- Plans: Flamebane Gloves
+								i(23602),	-- Plans: Flamebane Helm
+								i(29124),	-- Vindicator's Brand
+								i(29127),	-- Vindicator's Hauberk
+							},
+						}),
+						n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
+							["coord"] = { 48.6, 26.6, 111 },
+							["g"] = {
+								i(29735, {	-- Holy Dust
+									i(28886),	-- Greater Inscription of Discipline
+									i(28887),	-- Greater Inscription of Faith
+									i(28888),	-- Greater Inscription of Vengeance
+									i(28889),	-- Greater Inscription of Warding
+									i(28881),	-- Inscription of Discipline
+									i(28878),	-- Inscription of Faith
+									i(28885),	-- Inscription of Vengeance
+									i(28882),	-- Inscription of Warding
+								}),
+							},
+						}),
+					}),
+				}),
+				faction(934,  {	-- The Scryers
+					n(-17, {	-- Quests
+						q(10552, {	-- Allegiance to the Scryers
+							["qg"] = 18166,	-- Archmage Khadgar
+							["coord"] = { 54.7, 44.3, 111 },
+							["sourceQuest"] = 10211,	-- City of Light
+						}),
+						q(10553, {	-- Voren'thal the Seer
+							["qg"] = 18166,	-- Archmage Khadgar
+							["coord"] = { 54.7, 44.3, 111 },
+							["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						}),
+						q(10412, {	-- Firewing Signets
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						}),
+						q(10414, {	-- Single Firewing Signet
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10412,	-- Firewing Signets
+							["description"] = "Gives reputation through Honored.",
+							["repeatable"] = true,
+						}),
+						q(10415, {	-- More Firewing Signets
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10412,	-- Firewing Signets
+							["description"] = "Gives reputation through Honored.",
+							["repeatable"] = true,	
+						}),
+						q(10656, {	-- Sunfury Signets
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						}),
+						q(10659, {	-- Single Sunfury Signet
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10656,	-- Sunfury Signets
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(10658, {	-- More Sunfury Signets
+							["qg"] = 18531,	-- Magistrix Fyalenn
+							["coord"] = { 45.1, 81.4, 111 },
+							["sourceQuest"] = 10656,	-- Sunfury Signets
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(10416, {	-- Synthesis of Power
+							["qg"] = 18530,	-- Voren'thal the Seer
+							["coord"] = { 42.6, 91.4, 111 },
+							["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						}),
+						q(10419, {	-- Arcane Tomes
+							["qg"] = 18530,	-- Voren'thal the Seer
+							["coord"] = { 42.6, 91.4, 111 },
+							["sourceQuest"] = 10416,	-- Synthesis of Power
+							["description"] = "Gives reputation through Exalted.",
+							["repeatable"] = true,
+						}),
+						q(11039, {	-- Report to Spymaster Thalodien
+							["qgs"] = {
+								23273, 	-- Arcanist Raestan
+								23272,	-- Arcanist Savan
+							},
+							["coords"] = {
+								{ 44.6, 76.2, 111 },
+								{ 60.6, 63.2, 111 },
+							},
+							["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+							["isBreadcrumb"] = true,	-- for Manaforge B'naar
+						}),
+						q(10024, {	-- Voren'thal's Visions
+							["qg"] = 18596,	-- Arcanist Adyria
+							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+						}),
+						q(10025, {	-- More Basilisk Eyes
+							["qg"] = 18596,	-- Arcanist Adyria
+							["repeatable"] = true,
+							["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+							["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
+						}),
+						q(11482),	-- Duty Calls
+					}),
+					n(-2,  {	-- Vendors
+						n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
+							["coord"] = { 42.6, 90.6, 111 },
+							["g"] = {
+								i(28963),	-- Voidheart Crown
+								i(28964),	-- Voidhaert Robe
+								i(28966),	-- Voidheart Leggings
+								i(28967),	-- Voidheat Mantle
+								i(28968),	-- Voidheart Gloves
+								i(29011),	-- Warbringer Greathelm
+								i(29012),	-- Warbringer Chestguard
+								i(29015),	-- Warbringer Legguards
+								i(29016),	-- Warbringer Shoulderguards
+								i(29017),	-- Warbringer Handguards
+								i(29019),	-- Warbringer Breastplate
+								i(29020),	-- Warbringer Gauntlets
+								i(29021),	-- Warbringer Battle-Helm
+								i(29022),	-- Warbringer Greaves
+								i(29023),	-- Warbringer Shoulderplates
+								i(29028),	-- Cyclone Headdress
+								i(29029),	-- Cyclone Hauberk
+								i(29030),	-- Cyclone Kilt
+								i(29031),	-- Cyclone Shoulderpads
+								i(29032),	-- Cyclone Gloves
+								i(29033),	-- Cyclone Chestguard
+								i(29034),	-- Cyclone Handguards
+								i(29035),	-- Cyclone Faceguard
+								i(29036),	-- Cyclone Legguards
+								i(29037),	-- Cyclone Shoulderguards
+								i(29038),	-- Cuclone Breastplate
+								i(29039),	-- Cyclone Gauntlets
+								i(29040),	-- Cyclone Helm
+								i(29042),	-- Cyclone War-Kilt
+								i(29043),	-- Cyclone Sholderplates
+								i(29044),	-- Netherblade Facemask
+								i(29045),	-- Netherblade Chestpiece
+								i(29046),	-- Netherblade Breeches
+								i(29047),	-- Netherblade Shoulderpads
+								i(29048),	-- Netherblade Gloves
+								i(29049),	-- Light-Collar of the Incarnate
+								i(29050),	-- Robes of the Incarnate
+								i(29053),	-- Trousers of the Incarnate
+								i(29054),	-- Light-Mantle of the Incarnate
+								i(29055),	-- Handwraps of the Incarnate
+								i(29056),	-- Shroud of the Incarnate
+								i(29057),	-- Gloves of the Incarnate
+								i(29058),	-- Soul-Collar of the Incarnate
+								i(29059),	-- Leggings of the Incarnate
+								i(29060),	-- Soul-Mantle of the Incarnate
+								i(29061),	-- Justicar Diadem
+								i(29062),	-- Justicar Chestpiece
+								i(29063),	-- Justicar Leggings
+								i(29064),	-- Justicar Pauldrons
+								i(29065),	-- Justicar Gloves
+								i(29066),	-- Justicar Chestguard
+								i(29067),	-- Justicar Handguards
+								i(29068),	-- Justicar Faceguard
+								i(29069),	-- Justicar Legguards
+								i(29070),	-- Justicar Shoulderguards
+								i(29071),	-- Justicar Breastplate
+								i(29072),	-- Justicar Gauntlets
+								i(29073),	-- Justicar Crown
+								i(29074),	-- Justicar Greaves
+								i(29075),	-- Justicar Shoulderplates
+								i(29076),	-- Collar of the Aldor
+								i(29077),	-- Vestments of the Aldor
+								i(29078),	-- Legwraps of the Aldor
+								i(29079),	-- Pauldrons of the Aldor
+								i(29080),	-- Gloves of the Aldor
+								i(29081),	-- Demon Stalker Greathelm
+								i(29082),	-- Demon Stalker Harness
+								i(29083),	-- Demon Stalker Greaves
+								i(29084),	-- Demon Stalker Shoulderguards
+								i(29085),	-- Demon Stalker Gauntlets
+								i(29086),	-- Crown of Malorne
+								i(29087),	-- Chestguard of Malorne
+								i(29088),	-- Legguards of Malorne
+								i(29089),	-- Shoulderguards of Malorne
+								i(29090),	-- Handguards of Malorne
+								i(29091),	-- Chestpiece of Malorne
+								i(29092),	-- Gloves of Malorne
+								i(29093),	-- Antlers of Malorne
+								i(29094),	-- Britches of Malorne
+								i(29095),	-- Pauldrons of Malorne
+								i(29096),	-- Breastplate of Malorne
+								i(29097),	-- Gauntlets of Malorne
+								i(29098),	-- Stag-Helm of Malorne
+								i(29099),	-- Greaves of Malorne
+								i(29100),	-- Mantle of Malorne
+							},
+						}),
+						n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
+							["coord" ] = { 60.6, 64.2, 111 },
+							["g"] = {
+								i(23133),	-- Design: Brilliant Blood Garnet
+								i(24176),	-- Design: Pendant of Withering
+								i(29134),	-- Gauntlets of the Chosen
+								i(29701),	-- Pattern: Enchanted Clefthoof Boots
+								i(29700),	-- Pattern: Enchanted Clefthoof Gloves
+								i(29698),	-- Pattern: Enchanted Clefthoof Leggings
+								i(29684),	-- Pattern: Enchanted Felscale Boots
+								i(29682),	-- Pattern: Enchanted Felscale Gloves
+								i(29677),	-- Pattern: Enchanted Felscale Leggings
+								i(25722),	-- Pattern: Magister's Armor Kit
+								i(24292),	-- Pattern: Mystic Spellthread
+								i(24294),	-- Pattern: Runic Spellthread
+								i(23597),	-- Plans: Enchanted Adamantite Belt
+								i(23598),	-- Plans: Enchanted Adamantite Boots
+								i(23599),	-- Plans: Enchanted Adamantite Breastplate
+								i(23600),	-- Plans: Enchanted Adamantite Leggings
+								i(22908),	-- Recipe: Elixir of Major Firepower
+								i(29125),	-- Retainer's Blade
+								i(29131),	-- Retainer's Leggings
+								i(29132),	-- Scryer's Bloodgem
+								i(31780),	-- Scryers Tabard
+								i(29133),	-- Seer's Cane
+								i(29126),	-- Seer's Signet
+							},
+						}),
+						n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
+						["coord"] = { 60.0, 64.6, 111 },
+						["g"] = {
+							i(29736, {	-- Arcane Rune
+								i(28910),	-- Greater Inscription of the Blade
+								i(28911),	-- Greater Inscription of the Knight
+								i(28912),	-- Greater Inscription of the Oracle
+								i(28909),	-- Greater Inscription of the Orb
+								i(28907),	-- Inscription of the Blade
+								i(28908),	-- Inscription of the Knight
+								i(28904),	-- Inscription of the Oracle
+								i(28903),	-- Inscription of the Orb
+							}),
+						},
+					}),
+						n(19238, {	-- Urumir Stavebright <Staff Vendor>
+							["description"] = "You must be either have built rep with the Scryers OR be neutral (not have aligned yourself with either the Scryers or Aldor) to interact with this vendor.",
+							["coord"] = { 49.6, 79.0, 111 },
+							["g"] = {
+								i(12252),	-- Staff of Protection
+							},
+						}),
+					}),
+				}),
+				faction(1011, {	-- Lower City
+					n(-17, {	-- Quests
+						q(10917,  {  -- The Outcast's Plight
+							["g"] = {
+								i(31800,  {  -- Outcasts Cache
+									i(28495),	-- Windwalker's Sash
+									i(28496),	-- Talonite's Belt
+									i(28497),	-- Dreadhawk's Girdle
+									i(28498),	-- Ravenguard's Baldric
+									i(28491),	-- Windwalker's Footwraps
+									i(28493),	-- Dreadhawk's Schynbald
+									i(28492),	-- Talonite's Boots
+									i(28494),	-- Ravenguard's Greaves
+								}),
+							},
+							["qg"] = 22429,	-- Vekax
+						}),
+						q(10918,  {  -- More Feathers
+							["qg"] = 22429,	-- Vekax
+							["repeatable"] = true,
+							["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+							["sourceQuests"] = { 10917 },	-- The Outcast's Plight
+							["g"] = {
+								i(31800,  {  -- Outcasts Cache
+									i(28495),	-- Windwalker's Sash
+									i(28496),	-- Talonite's Belt
+									i(28497),	-- Dreadhawk's Girdle
+									i(28498),	-- Ravenguard's Baldric
+									i(28491),	-- Windwalker's Footwraps
+									i(28493),	-- Dreadhawk's Schynbald
+									i(28492),	-- Talonite's Boots
+									i(28494),	-- Ravenguard's Greaves
+								}),
+							},	
+						}),
+					}),
+					n(-2,  {	-- Vendors
+						n(21655, {	-- Nakodu <Lower City Quartermaster>
+							["coord" ] = { 62.6, 69.0, 111 },
+							["g"] = {
+								i(35405),	-- Crusader's Ornamented Leggings
+								i(35412),	-- Crusader's Scaled Chestpiece
+								i(33157),	-- Design: Falling Star
+								i(24179),	-- Design: Felsteel Boar
+								i(24175),	-- Design: Pendant of Thawing
+								i(23138),	-- Design: Potent Flame Spessarite
+								i(35357),	-- Dragonhide Helm
+								i(35331),	-- Dreadweave Mantle
+								i(35344),	-- Evoker's Silk Cowl
+								i(33148),	-- Formula: Enchant Cloak - Dodge
+								i(30832),	-- Gavel of Unearthed Secrets
+								i(35361),	-- Kodohide Gloves
+								i(30836),	-- Leggings of the Skettis Exile
+								i(30841),	-- Lower City Prayerbook
+								i(31778),	-- Lower City Tabard
+								i(35335),	-- Mooncloth Mitts
+								i(35370),	-- Opportunist's Leather Tunic
+								i(30833),	-- Pattern: Cloak of Arcane Evasion
+								i(22910),	-- Recipe: Elixir of Major Shadow Power
+								i(30835),	-- Salvager's Hauberk
+								i(35340),	-- Satin Leggings
+								i(35411),	-- Savage Plate Shoulders
+								i(35382),	-- Seer's Linked Gauntlets
+								i(35389),	-- Seer's Mail Leggings
+								i(35391),	-- Seer's Ringmail Chestguard
+								i(30834),	-- Shapeshifter's Signet
+								i(35378),	-- Stalker's Chain Helm
+								i(30830),	-- Trident of the Outcast Tribe
+								i(35373),	-- Wyrmhide Legguards
+							},
+						}),
+					}),
+				}),
+				faction(1015, {	-- Netherwing
+					["collectible"] = false,	-- Netherwing isn't based in Shattrath, so shouldn't be collectible here.
+					["g"] = {
+						q(11109, {	-- Jorus the Cobalt Netherwing Drake
+							["g"] = {
+								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11110, {	-- Malfas the Purple Netherwing Drake
+							["g"] = {
+								i(32860),	-- Reins of the Purple Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11111, {	-- Onyxien the Onyx Netherwing Drake
+							["g"] = {
+								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11112, {	-- Suraku the Azure Netherwing Drake
+							["g"] = {
+								i(32858),	-- Reins of the Azure Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11113, {	-- Voranaku the Violet Netherwing Drake
+							["g"] = {
+								i(32862),	-- Reins of the Violet Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+						q(11114, {	-- Zoya the Veridian Netherwing Drake
+							["g"] = {
+								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+							},
+							["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+						}),
+					},
+				}),
+				faction(1038, {	-- Ogri'la
+					["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
+					["g"] = {
+						q(10984, {	-- Speak with the Ogre
+							["qg"] = 22497,	-- V'eru
+							["coord"] = { 56.4, 49.2, 111 },
+							["isBreadcrumb"] = true,
+						}),
+						q(10983, {	-- Mog'dorg the Wizened
+							["qg"] = 22940,	-- Grok
+							["coord"] = { 65.0, 68.4, 111 },
+							["sourceQuest"] = 10984,	-- Speak with the Ogre
+							["isBreadcrumb"] = true,
+						}),
+					},
+				}),
+				faction(935,  {	-- The Sha'tar
+					q(13430, {	-- Trial of the Naaru: Magtheridon
+						["sourceQuests"] = { 
+							10884,	-- Trial of the Naaru: Mercy
+							10885, 	-- Trial of the Naaru: Strength
+							10886,	-- Trial of the Naaru: Tenacity
+						},
+						["qg"] = 18481,	-- A'dal
+						["g"] = {
+							i(31746) -- Phoenix-Fire Band
+						},
+					}),
+					n(-2,  {	-- Vendors
+						n(21432, {	-- Almaador <Sha'tari Quartermaster>
+							["coord"] = { 51.6, 41.6, 111 },
+							["g"] = {
+								i(29177),	-- Adal's Command
+								i(29180),	-- Blessed Scale Girdle
+								i(29176),	-- Crest of the Sha'tar
+								i(35404),	-- Crusader's Ornamented Headguard
+								i(35416),	-- Crusader's Scaled Shoulders
+								i(33159),	-- Design: Blood of Amber
+								i(25904),	-- Design: Insightful Earthstorm Diamond
+								i(33155),	-- Design: Kailee's Rose
+								i(30826),	-- Design: Ring of Arcane Shielding
+								i(24182),	-- Design: Talasite Owl
+								i(35359),	-- Dragonhide Spaulders
+								i(35330),	-- Dreadweave Leggings
+								i(35345),	-- Evoker's Silk Handguards
+								i(28273),	-- Formula: Enchant Gloves - Major Healing
+								i(33153),	-- Formula: Enchant Gloves - Threat
+								i(28281),	-- Formula: Enchant Weapon - Major Healing
+								i(29175),	-- Gavel of Pure Light
+								i(35362),	-- Kodohide Helm
+								i(35333),	-- Mooncloth Cowl
+								i(35368),	-- Opportunist's Leather Legguards
+								i(29717),	-- Pattern: Drums of Battle
+								i(13517),	-- Recipe: Alchemist Stone
+								i(31354),	-- Recipe: Flask of the Titans
+								i(22915),	-- Recipe: Transmute Primal Air to Fire
+								i(35341),	-- Satin Mantle
+								i(35407),	-- Savage Plate Chestpiece
+								i(35381),	-- Seer's Linked Armor
+								i(35388),	-- Seer's MAil Helm
+								i(35395),	-- Seer's Ringmail Shoulderpads
+								i(31781),	-- Sha'tar Tabard
+								i(35380),	-- Stalker's Chain Spaulders
+								i(35375),	-- Wyrmhide Robe
+								i(29179),	-- Xi'ri's Gift
+							},
+						}),
+					}),
+				}),
+				faction(1031, {	-- Sha'tari Skyguard
+					["collectible"] = false,	-- Sha'tari Skyguard isn't based in Shattrath, so shouldn't be collectible here.
+					["g"] = {
+						q(11096, {	-- Threat from Above
+							["coord"] = { 64.0, 42.0, 111 },
+							["qg"] = 23449,	-- Yuula
+							
+						}),
+						q(11098, {	-- To Skettis!
+							["sourceQuest"] = 11096,	-- Threat From Above
+							["coord"] = { 64.0, 42.0, 111 },
+							["qg"] = 23449,	-- Yuula
+						}),
+					},
+				}),
+				faction(1077, {	-- Shattered Sun Offensive
+					["collectible"] = false,	-- Shattered Sun Offensive isn't based in Shattrath, so shouldn't be collectible here.
+					["g"] = {
+						q(11877, {	-- Sunfury Attack Plans
+							["qg"] = 25140,	-- Lord Torvos
+							["repeatable"] = true,
+						}),
+						q(11880, {	-- The Multiphase Survey
+							["qg"] = 19475,	-- Harbinger Haronem
+							["repeatable"] = true,
+						}),
+						q(11875, {	-- Gaining the Advantage
+							["qg"] = 19202,	-- Emissary Mordin
+							["repeatable"] = true,
+							["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
+						}),
+						un(40, q(11513, {	-- Intercepting the Mana Cells
+							["qg"] = 24932,	-- Exarch Nasuun
+							["coord"] = { 49.8, 42.6, 111 },
+							["repeatable"] = true,
+						})),	
+						q(11514, {	-- Maintaining the Sunwell Portal
+							["qg"] = 24932,	-- Exarch Nasuun
+							["coord"] = { 49.8, 42.6, 111 },
+							["repeatable"] = true,
+						}),
+					},
+				}),
 				n(-17,  {	-- Quests
 					q(10210, {	-- A'dal
 						["qg"] = 19684,	-- Haggard War Veteran
@@ -28,343 +732,6 @@ _.Zones =
 						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, 111 },
 						["sourceQuests"] = 10210,	-- A'dal
-					}),
-					faction( 932, {	-- The Aldor
-						["groups"] = {
-							q(10551, {	-- Allegiance to the Aldor
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3, 111 },
-								["sourceQuest"] = 10211,	-- City of Light
-							}),
-							q(10554, {	-- Ishanah
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3, 111 },
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-							}),
-							q(10021, {	-- Restoring the Light
-								["qg"] = 18538,	-- Ishanah
-								["coord"] = { 24.2, 29.8, 111 },
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-							}),
-							q(10325, {	-- Marks of Kil'jaeden
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-							}),
-							q(10327, {	-- Single Mark of Kil'jaeden
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
-								["description"] = "Gives reputation through Honored.",
-								["repeatable"] = true,
-							}),
-							q(10326, {	-- More Marks of Kil'jaeden
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
-								["description"] = "Gives reputation through Honored.",
-								["repeatable"] = true,
-							}),
-							q(10653, {	-- Marks of Sargeras
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-							}),
-							q(10655, {	-- Single Mark of Sargeras
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuest"] = 10653,	-- Marks of Sargeras
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(10654, {	-- More Marks of Sargeras
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["coord"] = { 30.7, 34.6, 111 },
-								["sourceQuests"] = 10653,	-- Marks of Sargeras
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(10420, {	-- A Cleansing Light
-								["qg"] = 18538,	-- Ishanah
-								["coord"] = { 24.2, 29.8, 111 },
-								["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-							}),
-							q(10421, {	-- Fel Armaments
-								["qg"] = 18538,	-- Ishanah
-								["coord"] = { 24.2, 29.8, 111 },
-								["sourceQuest"] = 10420,	-- A Cleansing Light
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(10020, {	-- A Cure for Zahlia
-								["qg"] = 18597,	-- Sha'nir
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
-								["qg"] = 18537,	-- Adyen the Lightwarden
-								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
-							}),
-							q(11038, {	-- Assist Exarch Orelis
-								["qgs"] = { 
-									23271,	-- Vindicator Kaan
-									23270,	-- Vindicator Aeus
-								},
-								["coords"] = {
-									{ 35.0, 32.6, 111 },
-									{ 47.4, 26.4, 111 },
-								},
-								["sourceQuests"] = 10551,	-- Allegiance to the Aldor
-								["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
-							}),
-							q(10017, {	-- Strained Supplies
-								["qg"] = 18597,	-- Sha'nir
-								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-							}),
-							q(10019, {	-- More Venom Sacs
-								["qg"] = 18597,	-- Sha'nir
-								["repeatable"] = true,
-								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
-								["sourceQuests"] = { 10017 },	-- Strained Supplies
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction( 934, {	-- The Scryers
-						["groups"] = {
-							q(10552, {	-- Allegiance to the Scryers
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3, 111 },
-								["sourceQuest"] = 10211,	-- City of Light
-							}),
-							q(10553, {	-- Voren'thal the Seer
-								["qg"] = 18166,	-- Archmage Khadgar
-								["coord"] = { 54.7, 44.3, 111 },
-								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-							}),
-							q(10412, {	-- Firewing Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-							}),
-							q(10414, {	-- Single Firewing Signet
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10412,	-- Firewing Signets
-								["description"] = "Gives reputation through Honored.",
-								["repeatable"] = true,
-							}),
-							q(10415, {	-- More Firewing Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10412,	-- Firewing Signets
-								["description"] = "Gives reputation through Honored.",
-								["repeatable"] = true,	
-							}),
-							q(10656, {	-- Sunfury Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-							}),
-							q(10659, {	-- Single Sunfury Signet
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10656,	-- Sunfury Signets
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(10658, {	-- More Sunfury Signets
-								["qg"] = 18531,	-- Magistrix Fyalenn
-								["coord"] = { 45.1, 81.4, 111 },
-								["sourceQuest"] = 10656,	-- Sunfury Signets
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(10416, {	-- Synthesis of Power
-								["qg"] = 18530,	-- Voren'thal the Seer
-								["coord"] = { 42.6, 91.4, 111 },
-								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-							}),
-							q(10419, {	-- Arcane Tomes
-								["qg"] = 18530,	-- Voren'thal the Seer
-								["coord"] = { 42.6, 91.4, 111 },
-								["sourceQuest"] = 10416,	-- Synthesis of Power
-								["description"] = "Gives reputation through Exalted.",
-								["repeatable"] = true,
-							}),
-							q(11039, {	-- Report to Spymaster Thalodien
-								["qgs"] = {
-									23273, 	-- Arcanist Raestan
-									23272,	-- Arcanist Savan
-								},
-								["coords"] = {
-									{ 44.6, 76.2, 111 },
-									{ 60.6, 63.2, 111 },
-								},
-								["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-								["isBreadcrumb"] = true,	-- for Manaforge B'naar
-							}),
-							q(10024, {	-- Voren'thal's Visions
-								["qg"] = 18596,	-- Arcanist Adyria
-								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-							}),
-							q(10025, {	-- More Basilisk Eyes
-								["qg"] = 18596,	-- Arcanist Adyria
-								["repeatable"] = true,
-								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
-								["sourceQuests"] = { 10024 },	-- Voren'thal's Visions
-							}),
-							q(11482),	-- Duty Calls
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction(1011, {	-- Lower City
-						["groups"] = {
-							q(10917,  {  -- The Outcast's Plight
-								["groups"] = {
-									i(31800,  {  -- Outcasts Cache
-										i(28495),	-- Windwalker's Sash
-										i(28496),	-- Talonite's Belt
-										i(28497),	-- Dreadhawk's Girdle
-										i(28498),	-- Ravenguard's Baldric
-										i(28491),	-- Windwalker's Footwraps
-										i(28493),	-- Dreadhawk's Schynbald
-										i(28492),	-- Talonite's Boots
-										i(28494),	-- Ravenguard's Greaves
-									}),
-								},
-								["qg"] = 22429,	-- Vekax
-							}),
-							q(10918,  {  -- More Feathers
-								["qg"] = 22429,	-- Vekax
-								["repeatable"] = true,
-								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
-								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-								["groups"] = {
-									i(31800,  {  -- Outcasts Cache
-										i(28495),	-- Windwalker's Sash
-										i(28496),	-- Talonite's Belt
-										i(28497),	-- Dreadhawk's Girdle
-										i(28498),	-- Ravenguard's Baldric
-										i(28491),	-- Windwalker's Footwraps
-										i(28493),	-- Dreadhawk's Schynbald
-										i(28492),	-- Talonite's Boots
-										i(28494),	-- Ravenguard's Greaves
-									}),
-								},	
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction(1015, {	-- Netherwing
-						["groups"] = {
-							q(11109, {	-- Jorus the Cobalt Netherwing Drake
-								["groups"] = {
-									i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-							q(11110, {	-- Malfas the Purple Netherwing Drake
-								["groups"] = {
-									i(32860),	-- Reins of the Purple Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-							q(11111, {	-- Onyxien the Onyx Netherwing Drake
-								["groups"] = {
-									i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-							q(11112, {	-- Suraku the Azure Netherwing Drake
-								["groups"] = {
-									i(32858),	-- Reins of the Azure Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-							q(11113, {	-- Voranaku the Violet Netherwing Drake
-								["groups"] = {
-									i(32862),	-- Reins of the Violet Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-							q(11114, {	-- Zoya the Veridian Netherwing Drake
-								["groups"] = {
-									i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-								},
-								["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction(1038, {	-- Ogri'la
-						["groups"] = {
-							q(10984, {	-- Speak with the Ogre
-								["qg"] = 22497,	-- V'eru
-								["coord"] = { 56.4, 49.2, 111 },
-								["isBreadcrumb"] = true,
-							}),
-							q(10983, {	-- Mog'dorg the Wizened
-								["qg"] = 22940,	-- Grok
-								["coord"] = { 65.0, 68.4, 111 },
-								["sourceQuest"] = 10984,	-- Speak with the Ogre
-								["isBreadcrumb"] = true,
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction(935, {	-- The Sha'tar
-						["g"] = {
-							q(13430, {	-- Trial of the Naaru: Magtheridon
-								["g"] = {
-									i(31746) -- Phoenix-Fire Band
-								},
-								["qg"] = 18481,	-- A'dal
-								["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Trial of the Naaru: Strength, Trial of the Naaru: Tenacity
-							}),
-						},
-					}),
-					faction(1031, {	-- Sha'tari Skyguard
-						["groups"] = {
-							q(11096, {	-- Threat from Above
-								["qg"] = 23449,	-- Yuula
-								["coord"] = { 64.0, 42.0, 111 },
-								
-							}),
-							q(11098, {	-- To Skettis!
-								["qg"] = 23449,	-- Yuula
-								["coord"] = { 64.0, 42.0, 111 },
-								["sourceQuest"] = 11096,	-- Threat From Above
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
-					}),
-					faction(1077, {	-- Shattered Sun Offensive
-						["groups"] = {
-							q(11877, {	-- Sunfury Attack Plans
-								["qg"] = 25140,	-- Lord Torvos
-								["repeatable"] = true,
-							}),
-							q(11880, {	-- The Multiphase Survey
-								["qg"] = 19475,	-- Harbinger Haronem
-								["repeatable"] = true,
-							}),
-							q(11875, {	-- Gaining the Advantage
-								["qg"] = 19202,	-- Emissary Mordin
-								["repeatable"] = true,
-								["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-							}),
-							un(40, q(11513, {	-- Intercepting the Mana Cells
-								["qg"] = 24932,	-- Exarch Nasuun
-								["coord"] = { 49.8, 42.6, 111 },
-								["repeatable"] = true,
-							})),	
-							q(11514, {	-- Maintaining the Sunwell Portal
-								["qg"] = 24932,	-- Exarch Nasuun
-								["coord"] = { 49.8, 42.6, 111 },
-								["repeatable"] = true,
-							}),
-						},
-						["collectible"] = false,	-- Turn off Collectible flags.
 					}),
 					qh(10167, {	-- Auchindoun...
 						["qg"] = 18481,	-- A'dal
@@ -379,7 +746,7 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
 					q(44863, {	-- Clearing the Air
-						["groups"] = {
+						["g"] = {
 							i(142279),	-- Plans: Windforged Rapier
 							i(142283),	-- Plans: Skyforged Great Axe
 							i(142282),	-- Plans: Stormforged Axe
@@ -397,7 +764,7 @@ _.Zones =
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
 					q(41160, {	-- Earth to Earth
-						["groups"] = {
+						["g"] = {
 							i(142284),	-- Plans: Stoneforged Claymore
 							i(142287),	-- Plans: Great Earthforged Hammer
 							i(142286),	-- Plans: Lavaforged Warhammer
@@ -414,7 +781,7 @@ _.Zones =
 						["qg"] = 18481,	-- A'dal
 						["coord"] = { 53.7, 44.6, 111 },
 						["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
-						["groups"] = {
+						["g"] = {
 							i(31465),	-- Sha'tari Achorite's Cloak
 							i(31461),	-- A'dal's Gift
 							i(31464),	-- Naaru Belt of Precision
@@ -428,7 +795,7 @@ _.Zones =
 					}),
 					q( 11380, {	-- Manalicious
 						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							i(33844, {	-- Barrel of Fish
 								i(33869),	-- Recipe: Broiled Bloodfin
 								i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -447,14 +814,14 @@ _.Zones =
 						},
 					}),
 					q( 10037, {	-- Rather Be Fishin'
-						["groups"] = {
+						["g"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
 						["qg"] = 18653,	-- Seth
 					}),
 					q(11377, {	-- Revenge is Tasty
 						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							i(33844, {	-- Barrel of Fish
 								i(33869),	-- Recipe: Broiled Bloodfin
 								i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -474,7 +841,7 @@ _.Zones =
 					}),	
 					q(11381, {	-- Soup for the Soul
 						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							i(33844, {	-- Barrel of Fish
 								i(33869),	-- Recipe: Broiled Bloodfin
 								i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -494,7 +861,7 @@ _.Zones =
 					}),
 					q(11379, {	-- Super Hot Stew
 						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							i(33844, {	-- Barrel of Fish
 								i(33869),	-- Recipe: Broiled Bloodfin
 								i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -557,56 +924,56 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(11389, {	-- Wanted: Arcatraz Sentinels
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11371, {	-- Wanted: Coilfang Myrmidons
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11376, {	-- Wanted: Malicious Instructors
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11383, {	-- Wanted: Rift Lords
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11364, {	-- Wanted: Shattered Hand Centurions
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11500, {	-- Wanted: Sisters of Torment
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11385, {	-- Wanted: Sunseeker Channelers
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
 					q(11387, {	-- Wanted: Tempest-Forge Destroyers
-						["groups"] = {
+						["g"] = {
 							i(29460),	-- Ethereum Prison Key
 						},
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
@@ -622,83 +989,38 @@ _.Zones =
 					}),
 				}),	
 				n(-2,   {	-- Vendors
-					n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
-						["groups"] = {
-							{	-- Plans: Adamantite Cleaver
-								["itemID"] = 23591,	-- Plans: Adamantite Cleaver
-							},
-							{	-- Plans: Adamantite Dagger
-								["itemID"] = 23592,	-- Plans: Adamantite Dagger
-							},
-							{	-- Plans: Adamantite Maul
-								["itemID"] = 23590,	-- Plans: Adamantite Maul
-							},
-							{	-- Plans: Adamantite Rapier
-								["itemID"] = 23593,	-- Plans: Adamantite Rapier
-							},
-							{	-- Plans: Adamantite Rod
-								["itemID"]  = 25846,	-- Plans: Adamantite Rod
+					n(19662,  {	-- Aaron Hollman <Blacksmithing Supplies>
+						["coord" ] = { 64.0, 71.8, 111 },
+						["g"] = {
+							i(23591),	-- Plans: Adamantite Cleaver
+							i(23592),	-- Plans: Adamantite Dagger
+							i(23590),	-- Plans: Adamantite Maul
+							i(23593),	-- Plans: Adamantite Rapier
+							i(25846, {	-- Plans: Adamantite Rod
 								["u"] = 1,
-							},
+							}),
 						},
-						["coord" ] = { 64.0, 71.8 },
 					}),
-					n(19043, {	-- Ahemen <Staff Vendor>
-						["groups"] = {
+					n(19043,  {	-- Ahemen <Staff Vendor>
+						-- may require neutral (not aligned with alder/scryers) or positive reputation with aldor to interact with this vendor -- need to test
+						["coord"] = { 34.2, 20.0, 111 },
+						["g"] = {
 							i(12251),	-- Big Stick
 						},
-						["coord"] = { 34.2, 20.0 },
 					}),
-					n(21432, {	-- Almaador <Sha'tari Quartermaster>
-						["groups"] = {
-							i(29177),	-- Adal's Command
-							i(29180),	-- Blessed Scale Girdle
-							i(29176),	-- Crest of the Sha'tar
-							i(35404),	-- Crusader's Ornamented Headguard
-							i(35416),	-- Crusader's Scaled Shoulders
-							i(33159),	-- Design: Blood of Amber
-							i(25904),	-- Design: Insightful Earthstorm Diamond
-							i(33155),	-- Design: Kailee's Rose
-							i(30826),	-- Design: Ring of Arcane Shielding
-							i(24182),	-- Design: Talasite Owl
-							i(35359),	-- Dragonhide Spaulders
-							i(35330),	-- Dreadweave Leggings
-							i(35345),	-- Evoker's Silk Handguards
-							i(28273),	-- Formula: Enchant Gloves - Major Healing
-							i(33153),	-- Formula: Enchant Gloves - Threat
-							i(28281),	-- Formula: Enchant Weapon - Major Healing
-							i(29175),	-- Gavel of Pure Light
-							i(35362),	-- Kodohide Helm
-							i(35333),	-- Mooncloth Cowl
-							i(35368),	-- Opportunist's Leather Legguards
-							i(29717),	-- Pattern: Drums of Battle
-							i(13517),	-- Recipe: Alchemist Stone
-							i(31354),	-- Recipe: Flask of the Titans
-							i(22915),	-- Recipe: Transmute Primal Air to Fire
-							i(35341),	-- Satin Mantle
-							i(35407),	-- Savage Plate Chestpiece
-							i(35381),	-- Seer's Linked Armor
-							i(35388),	-- Seer's MAil Helm
-							i(35395),	-- Seer's Ringmail Shoulderpads
-							i(31781),	-- Sha'tar Tabard
-							i(35380),	-- Stalker's Chain Spaulders
-							i(35375),	-- Wyrmhide Robe
-							i(29179),	-- Xi'ri's Gift
-						},
-						["coord"] = { 51.6, 41.6 },
-					}),
-					n(22212, {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
-						["groups"] = {
+					n(22212,  {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
+						["coord"] = { 66.6, 68.6, 111 },
+						["g"] = {
 							i(21915),	-- Pattern: Ebon Shadowbag
 							i(21914),	-- Pattern: Frozen Shadoweave Boots
 							i(21912),	-- Pattern: Frozen Shadoweave Shoulders
 							i(21913),	-- Pattern: Frozen Shadoweave Robe
 							i(30483),	-- Pattern: Shadowcloth
 						},
-						["coord"] = { 66.6, 68.6 },
 					}),
-					n(27667, { 	-- Anwehu <Weapons & Armorsmith>
-						["groups" ] = {
+					n(27667,  {	-- Anwehu <Weapons & Armorsmith>
+						["coord"] = { 48.8, 42.8, 111 },
+						["g"] = {
 							i(34925),	-- Adorned Supernal Legwraps
 							i(34935),	-- Aftershock Waistguard
 							i(34887),	-- Angelista's Revenge
@@ -757,218 +1079,38 @@ _.Zones =
 							i(34923), 	-- Waistguard of Reparation
 							i(34930), 	-- Wave of Life Chestguard
 						},
-						["coord"] = { 48.8, 42.8 },
 					}),
-					n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
-						["groups"] = {
-							i(28963),	-- Voidheart Crown
-							i(28964),	-- Voidhaert Robe
-							i(28966),	-- Voidheart Leggings
-							i(28967),	-- Voidheat Mantle
-							i(28968),	-- Voidheart Gloves
-							i(29011),	-- Warbringer Greathelm
-							i(29012),	-- Warbringer Chestguard
-							i(29015),	-- Warbringer Legguards
-							i(29016),	-- Warbringer Shoulderguards
-							i(29017),	-- Warbringer Handguards
-							i(29019),	-- Warbringer Breastplate
-							i(29020),	-- Warbringer Gauntlets
-							i(29021),	-- Warbringer Battle-Helm
-							i(29022),	-- Warbringer Greaves
-							i(29023),	-- Warbringer Shoulderplates
-							i(29028),	-- Cyclone Headdress
-							i(29029),	-- Cyclone Hauberk
-							i(29030),	-- Cyclone Kilt
-							i(29031),	-- Cyclone Shoulderpads
-							i(29032),	-- Cyclone Gloves
-							i(29033),	-- Cyclone Chestguard
-							i(29034),	-- Cyclone Handguards
-							i(29035),	-- Cyclone Faceguard
-							i(29036),	-- Cyclone Legguards
-							i(29037),	-- Cyclone Shoulderguards
-							i(29038),	-- Cuclone Breastplate
-							i(29039),	-- Cyclone Gauntlets
-							i(29040),	-- Cyclone Helm
-							i(29042),	-- Cyclone War-Kilt
-							i(29043),	-- Cyclone Sholderplates
-							i(29044),	-- Netherblade Facemask
-							i(29045),	-- Netherblade Chestpiece
-							i(29046),	-- Netherblade Breeches
-							i(29047),	-- Netherblade Shoulderpads
-							i(29048),	-- Netherblade Gloves
-							i(29049),	-- Light-Collar of the Incarnate
-							i(29050),	-- Robes of the Incarnate
-							i(29053),	-- Trousers of the Incarnate
-							i(29054),	-- Light-Mantle of the Incarnate
-							i(29055),	-- Handwraps of the Incarnate
-							i(29056),	-- Shroud of the Incarnate
-							i(29057),	-- Gloves of the Incarnate
-							i(29058),	-- Soul-Collar of the Incarnate
-							i(29059),	-- Leggings of the Incarnate
-							i(29060),	-- Soul-Mantle of the Incarnate
-							i(29061),	-- Justicar Diadem
-							i(29062),	-- Justicar Chestpiece
-							i(29063),	-- Justicar Leggings
-							i(29064),	-- Justicar Pauldrons
-							i(29065),	-- Justicar Gloves
-							i(29066),	-- Justicar Chestguard
-							i(29067),	-- Justicar Handguards
-							i(29068),	-- Justicar Faceguard
-							i(29069),	-- Justicar Legguards
-							i(29070),	-- Justicar Shoulderguards
-							i(29071),	-- Justicar Breastplate
-							i(29072),	-- Justicar Gauntlets
-							i(29073),	-- Justicar Crown
-							i(29074),	-- Justicar Greaves
-							i(29075),	-- Justicar Shoulderplates
-							i(29076),	-- Collar of the Aldor
-							i(29077),	-- Vestments of the Aldor
-							i(29078),	-- Legwraps of the Aldor
-							i(29079),	-- Pauldrons of the Aldor
-							i(29080),	-- Gloves of the Aldor
-							i(29081),	-- Demon Stalker Greathelm
-							i(29082),	-- Demon Stalker Harness
-							i(29083),	-- Demon Stalker Greaves
-							i(29084),	-- Demon Stalker Shoulderguards
-							i(29085),	-- Demon Stalker Gauntlets
-							i(29086),	-- Crown of Malorne
-							i(29087),	-- Chestguard of Malorne
-							i(29088),	-- Legguards of Malorne
-							i(29089),	-- Shoulderguards of Malorne
-							i(29090),	-- Handguards of Malorne
-							i(29091),	-- Chestpiece of Malorne
-							i(29092),	-- Gloves of Malorne
-							i(29093),	-- Antlers of Malorne
-							i(29094),	-- Britches of Malorne
-							i(29095),	-- Pauldrons of Malorne
-							i(29096),	-- Breastplate of Malorne
-							i(29097),	-- Gauntlets of Malorne
-							i(29098),	-- Stag-Helm of Malorne
-							i(29099),	-- Greaves of Malorne
-							i(29100),	-- Mantle of Malorne
-						},
-						["coord"] = { 42.6, 90.6 },
-					}),
-					n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
-						["groups"] = {
-							i(28963),	-- Voidheart Crown
-							i(28964),	-- Voidhaert Robe
-							i(28966),	-- Voidheart Leggings
-							i(28967),	-- Voidheat Mantle
-							i(28968),	-- Voidheart Gloves
-							i(29011),	-- Warbringer Greathelm
-							i(29012),	-- Warbringer Chestguard
-							i(29015),	-- Warbringer Legguards
-							i(29016),	-- Warbringer Shoulderguards
-							i(29017),	-- Warbringer Handguards
-							i(29019),	-- Warbringer Breastplate
-							i(29020),	-- Warbringer Gauntlets
-							i(29021),	-- Warbringer Battle-Helm
-							i(29022),	-- Warbringer Greaves
-							i(29023),	-- Warbringer Shoulderplates
-							i(29028),	-- Cyclone Headdress
-							i(29029),	-- Cyclone Hauberk
-							i(29030),	-- Cyclone Kilt
-							i(29031),	-- Cyclone Shoulderpads
-							i(29032),	-- Cyclone Gloves
-							i(29033),	-- Cyclone Chestguard
-							i(29034),	-- Cyclone Handguards
-							i(29035),	-- Cyclone Faceguard
-							i(29036),	-- Cyclone Legguards
-							i(29037),	-- Cyclone Shoulderguards
-							i(29038),	-- Cuclone Breastplate
-							i(29039),	-- Cyclone Gauntlets
-							i(29040),	-- Cyclone Helm
-							i(29042),	-- Cyclone War-Kilt
-							i(29043),	-- Cyclone Sholderplates
-							i(29044),	-- Netherblade Facemask
-							i(29045),	-- Netherblade Chestpiece
-							i(29046),	-- Netherblade Breeches
-							i(29047),	-- Netherblade Shoulderpads
-							i(29048),	-- Netherblade Gloves
-							i(29049),	-- Light-Collar of the Incarnate
-							i(29050),	-- Robes of the Incarnate
-							i(29053),	-- Trousers of the Incarnate
-							i(29054),	-- Light-Mantle of the Incarnate
-							i(29055),	-- Handwraps of the Incarnate
-							i(29056),	-- Shroud of the Incarnate
-							i(29057),	-- Gloves of the Incarnate
-							i(29058),	-- Soul-Collar of the Incarnate
-							i(29059),	-- Leggings of the Incarnate
-							i(29060),	-- Soul-Mantle of the Incarnate
-							i(29061),	-- Justicar Diadem
-							i(29062),	-- Justicar Chestpiece
-							i(29063),	-- Justicar Leggings
-							i(29064),	-- Justicar Pauldrons
-							i(29065),	-- Justicar Gloves
-							i(29066),	-- Justicar Chestguard
-							i(29067),	-- Justicar Handguards
-							i(29068),	-- Justicar Faceguard
-							i(29069),	-- Justicar Legguards
-							i(29070),	-- Justicar Shoulderguards
-							i(29071),	-- Justicar Breastplate
-							i(29072),	-- Justicar Gauntlets
-							i(29073),	-- Justicar Crown
-							i(29074),	-- Justicar Greaves
-							i(29075),	-- Justicar Shoulderplates
-							i(29076),	-- Collar of the Aldor
-							i(29077),	-- Vestments of the Aldor
-							i(29078),	-- Legwraps of the Aldor
-							i(29079),	-- Pauldrons of the Aldor
-							i(29080),	-- Gloves of the Aldor
-							i(29081),	-- Demon Stalker Greathelm
-							i(29082),	-- Demon Stalker Harness
-							i(29083),	-- Demon Stalker Greaves
-							i(29084),	-- Demon Stalker Shoulderguards
-							i(29085),	-- Demon Stalker Gauntlets
-							i(29086),	-- Crown of Malorne
-							i(29087),	-- Chestguard of Malorne
-							i(29088),	-- Legguards of Malorne
-							i(29089),	-- Shoulderguards of Malorne
-							i(29090),	-- Handguards of Malorne
-							i(29091),	-- Chestpiece of Malorne
-							i(29092),	-- Gloves of Malorne
-							i(29093),	-- Antlers of Malorne
-							i(29094),	-- Britches of Malorne
-							i(29095),	-- Pauldrons of Malorne
-							i(29096),	-- Breastplate of Malorne
-							i(29097),	-- Gauntlets of Malorne
-							i(29098),	-- Stag-Helm of Malorne
-							i(29099),	-- Greaves of Malorne
-							i(29100),	-- Mantle of Malorne
-						},
-						["coord"] = { 23.6, 32.6 },
-					}),
-					n(19196, {	-- Cro Threadstrong <Leatherworking Supplies>
-						["groups"] = {
+					n(19196,  {	-- Cro Threadstrong <Leatherworking Supplies>
+						["coord"] = { 67.2, 67.6, 111 },
+						["g"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
 								["spellID"] = 0,	-- This is now available from the trainer, so use spellID=0 to delink the old plans from the recipe
 								["u"] = 8,
 							}),
 						},
-						["coord"] = { 67.2, 67.6 },
 					}),
-					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
-						["groups"] = {
+					n(19213,  {	-- Eiin <Specialty Tailoring Supplies>
+						["coord"] = { 66.2, 68.8, 111 },
+						["g"] = {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave
 							i(21893),	-- Pattern: Imbued Netherweave Bag
 							i(21894),	-- Pattern: Bolt of Soulcloth
 							i(21896), 	-- Pattern: Netherweave Robe
 							i(21897), 	-- Pattern: Netherweave Tunic
 						},
-						["coord"] = { 66.2, 68.8 },
 					}),
-					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
-						["groups"] = {
+					n(33633,  {	-- Enchantress Andiala <Enchanting Trainer>
+						["coord"] = { 56.2, 74.4, 111 },
+						["g"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil
 							i(20752),	-- Formula: Minor Mana Oil
 							i(20758),	-- Formula: Minor Wizard Oil
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
-						["coord"] = { 56.2, 74.4 },
 					}),
-					n(18525, {  -- G'eras
-						["groups"] = {
+					n(18525,  {	-- G'eras
+						["coord"] = { 50.8, 42.4, 111 },
+						["g"] = {
 							i(33585), 	-- Achromic Trousers of the Naaru
 							i(33810), 	-- Amani Mask of Death
 							i(33578), 	-- Armwraps of the Kaldorei Protector
@@ -1093,29 +1235,29 @@ _.Zones =
 							i(32085), 	-- Warpstalker Helm	
 							i(33589), 	-- Wristguards of Tranquil Thought
 						},
-						["coord"] = { 50.8, 42.4 },
 					}),
-					n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
-						["groups"] = {
+					n(22213,  {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
+						["coord"] = { 66.6, 68.6, 111 },
+						["g"] = {
 							i(24316),	-- Pattern: Spellcloth
 							i(21911),	-- Pattern: Spellfire Bag
 							i(21908),	-- Pattern: Spellfire Belt
 							i(21909),	-- Pattern: Spellfire Gloves
 							i(21910),	-- Pattern: Spellfire Robe
 						},
-						["coord"] = { 66.6, 68.6 },
 					}),
-					n(18756, {	-- Haris Pilton <Socialite>
-						["groups"] = {
+					n(18756,  {	-- Haris Pilton <Socialite>
+						["coord"] = { 75.6, 30.6, 111 },
+						["g"] = {
 							i(38082),	-- "Gigantique" Bag
 							i(51809),	-- Portable Hole
 							i(134007),	-- Eternal Black Diamond Ring Toy
 							i(134004),	-- Noble's Eternal Elementium Signet
 						},
-						["coord"] = { 75.6, 30.6 },
 					}),
-					n(19065, {	-- Inessera <Jewelcrafting Supplies Vendor>
-						["groups"] = {
+					n(19065,  {	-- Inessera <Jewelcrafting Supplies Vendor>
+						["coord"] = { 35.6, 19.8, 111 },
+						["g"] = {
 							currency(61, {	-- Dalaran Jewelcrafter's Token
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
@@ -1267,17 +1409,17 @@ _.Zones =
 								i(46952),	-- Design: Willful Ametrine
 							}),
 						},
-						["coord"] = { 35.6, 19.8 },
 					}),
-					n(19195, {	-- Jim Saltit <Cooking Supplies>
-						["groups"] = {
+					n(19195,  {	-- Jim Saltit <Cooking Supplies>
+						["coord"] = { 63.4, 68.6, 111 },
+						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
-						["coord"] = { 63.4, 68.6 },
 					}),
-					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
-						["groups"] = {
+					n(21906,  {	-- Kelara <Keeper of Sha'tari Heirlooms>
+						["coord"] = { 24.8, 27.0, 111 },
+						["g"] = {
 							i(30113),	-- Destroyer Chestguard
 							i(30114),	-- Destroyer Handguards
 							i(30115),	-- Destroyer Greathelm
@@ -1364,10 +1506,10 @@ _.Zones =
 							i(30234),	-- Nordrassil Wrath-Kilt
 							i(30235),	-- Nordrassil Wrath-Mantle
 						},
-						["coord"] = { 24.8, 27.0 },
 					}),
-					n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
-						["groups"] = {
+					n(33637,  {	-- Kirembri Silvermane <Jewelcrafting Trainer>
+						["coord"] = { 58.6, 75.2, 111 },
+						["g"] = {
 							currency(61, {	-- Dalaran Jewelcrafter's Token
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
@@ -1519,10 +1661,11 @@ _.Zones =
 								i(46952),	-- Design: Willful Ametrine
 							}),
 						},
-						["coord"] = { 58.6, 75.2 },
 					}),
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
-						["groups"] = {
+						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
+						["coord"] = { 64.2, 71.4, 111 },
+						["g"] = {
 							i(142287),	-- Plans: Great Earthforged Hammer
 							i(142286),	-- Plans: Lavaforged Warhammer
 							i(142283),	-- Plans: Skyforged Great Axe
@@ -1530,11 +1673,10 @@ _.Zones =
 							i(142282),	-- Plans: Stormforged Axe
 							i(142279),	-- Plans: Windforged Rapier
 						},
-						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.|r",
-						["coord"] = { 64.2, 71.4 },
 					}),
-					n(19663, {	-- Madame Ruby <Enchanting Supplies>
-						["groups"] = {
+					n(19663,  {	-- Madame Ruby <Enchanting Supplies>
+						["coord"] = { 63.6, 70.0, 111 },
+						["g"] = {
 							i(28282),	-- Formula: Enchant Shield - Major Stamina
 							i(22565),	-- Formula: Large Prismatic Shard
 							i(20753),	-- Formula: Lesser Wizard Oil
@@ -1544,54 +1686,20 @@ _.Zones =
 							i(22563),	-- Formula: Superior Wizard Oil
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
-						["coord"] = { 63.6, 70.0 },
 					}),
-					n(21655, {	-- Nakodu <Lower City Quartermaster>
-						["groups"] = {
-							i(35405),	-- Crusader's Ornamented Leggings
-							i(35412),	-- Crusader's Scaled Chestpiece
-							i(33157),	-- Design: Falling Star
-							i(24179),	-- Design: Felsteel Boar
-							i(24175),	-- Design: Pendant of Thawing
-							i(23138),	-- Design: Potent Flame Spessarite
-							i(35357),	-- Dragonhide Helm
-							i(35331),	-- Dreadweave Mantle
-							i(35344),	-- Evoker's Silk Cowl
-							i(33148),	-- Formula: Enchant Cloak - Dodge
-							i(30832),	-- Gavel of Unearthed Secrets
-							i(35361),	-- Kodohide Gloves
-							i(30836),	-- Leggings of the Skettis Exile
-							i(30841),	-- Lower City Prayerbook
-							i(31778),	-- Lower City Tabard
-							i(35335),	-- Mooncloth Mitts
-							i(35370),	-- Opportunist's Leather Tunic
-							i(30833),	-- Pattern: Cloak of Arcane Evasion
-							i(22910),	-- Recipe: Elixir of Major Shadow Power
-							i(30835),	-- Salvager's Hauberk
-							i(35340),	-- Satin Leggings
-							i(35411),	-- Savage Plate Shoulders
-							i(35382),	-- Seer's Linked Gauntlets
-							i(35389),	-- Seer's Mail Leggings
-							i(35391),	-- Seer's Ringmail Chestguard
-							i(30834),	-- Shapeshifter's Signet
-							i(35378),	-- Stalker's Chain Helm
-							i(30830),	-- Trident of the Outcast Tribe
-							i(35373),	-- Wyrmhide Legguards
-						},
-						["coord" ] = { 62.6, 69.0 },
-					}),
-					n(22208, {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
-						["groups"] = {
+					n(22208,  {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
+						["coord"] = { 66.4, 69.0, 111 },
+						["g"] = {
 							i(21895),	-- Pattern: Primal Mooncloth
 							i(21919),	-- Pattern: Primal Mooncloth Bag
 							i(21916),	-- Pattern: Primal Mooncloth Belt
 							i(21917),	-- Pattern: Primal Mooncloth Robe
 							i(21918),	-- Pattern: Primal Mooncloth Shoulders
 						},
-						["coord"] = { 66.4, 69.0 },
 					}),
-					n(33680, {	-- Nemiha <Jewelcrafting Trainer>
-						["groups"] = {
+					n(33680,  {	-- Nemiha <Jewelcrafting Trainer>
+						["coord"] = { 36.2, 47.0, 111 },
+						["g"] = {
 							currency(61, {	-- Dalaran Jewelcrafter's Token
 								i(47010),	-- Design: Accurate Dreadstone
 								i(46917),	-- Design: Bold Cardinal Ruby
@@ -1743,10 +1851,10 @@ _.Zones =
 								i(46952),	-- Design: Willful Ametrine
 							}),
 						},
-						["coord"] = { 36.2, 47.0 },
 					}),
-					n(27666, {	-- Ontuvo <Jewelcrafting Supplies>
-						["groups"] = {
+					n(27666,  {	-- Ontuvo <Jewelcrafting Supplies>
+						["coord"] = { 48.8, 41.8, 111 },
+						["g"] = {
 							i(35244),	-- Design: Bold Crimson Spinel
 							i(35248),	-- Design: Brilliant Crimson Spinel
 							i(35250, {	-- Design: Brilliant Crimson Spinel
@@ -1826,119 +1934,16 @@ _.Zones =
 							i(35239),	-- Design: Timeless Shadowsong Amethyst
 							i(35270),	-- Design: Veiled Shadowsong Amethyst
 						},
-						["coord"] = { 48.8, 41.8 },
 					}),
-					n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
-						["groups"] = {
-							i(31779),	-- Aldor Tabard
-							i(29129),	-- Anchorite's Robes
-							i(29130),	-- Auchenai Staff
-							i(24177),	-- Design: Pendant of Shadow's End
-							i(23145),	-- Design: Purified Shadow Draenite
-							i(23143, {	-- Design: Purified Shadow Draenite
-								["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
-									["u"] = 2,
-							}),
-							i(23149),	-- Design: Smooth Golden Draenite
-							i(28291, {	-- Design: Smooth Golden Draenite
-								["spellID"] = 0,	-- This is now available via 23149, need to delink the old plans from the recipe
-									["u"] = 2,
-							}),
-							i(29128),	-- Lightwarden's Band
-							i(29123),	-- Medallion of the Lightbearer
-							i(29704),	-- Pattern: Blastguard Belt
-							i(29703),	-- Pattern: Blastguard Boots
-							i(29702),	-- Pattern: Blastguard Pants
-							i(30842),	-- Pattern: Flameheart Bracers
-							i(30843),	-- Pattern: Flameheart Gloves
-							i(30844),	-- Pattern: Flameheart Vest
-							i(29693),	-- Pattern: Flamescale Belt
-							i(29691),	-- Pattern: Flamescale Boots
-							i(29689),	-- Pattern: Flamescale Leggings
-							i(24295),	-- Pattern: Golden Spellthread
-							i(24293),	-- Pattern: Silver Spellthread
-							i(25721),	-- Pattern: Vindicator's Armor Kit
-							i(23601),	-- Plans: Flamebane Bracers
-							i(23604),	-- Plans: Flamebane Breastplate
-							i(23603),	-- Plans: Flamebane Gloves
-							i(23602),	-- Plans: Flamebane Helm
-							i(29124),	-- Vindicator's Brand
-							i(29127),	-- Vindicator's Hauberk
-						},
-						["coord"] = { 48.0, 26.6 },
-					}),
-					n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
-						["groups"] = {
-							i(23133),	-- Design: Brilliant Blood Garnet
-							i(24176),	-- Design: Pendant of Withering
-							i(29134),	-- Gauntlets of the Chosen
-							i(29701),	-- Pattern: Enchanted Clefthoof Boots
-							i(29700),	-- Pattern: Enchanted Clefthoof Gloves
-							i(29698),	-- Pattern: Enchanted Clefthoof Leggings
-							i(29684),	-- Pattern: Enchanted Felscale Boots
-							i(29682),	-- Pattern: Enchanted Felscale Gloves
-							i(29677),	-- Pattern: Enchanted Felscale Leggings
-							i(25722),	-- Pattern: Magister's Armor Kit
-							i(24292),	-- Pattern: Mystic Spellthread
-							i(24294),	-- Pattern: Runic Spellthread
-							i(23597),	-- Plans: Enchanted Adamantite Belt
-							i(23598),	-- Plans: Enchanted Adamantite Boots
-							i(23599),	-- Plans: Enchanted Adamantite Breastplate
-							i(23600),	-- Plans: Enchanted Adamantite Leggings
-							i(22908),	-- Recipe: Elixir of Major Firepower
-							i(29125),	-- Retainer's Blade
-							i(29131),	-- Retainer's Leggings
-							i(29132),	-- Scryer's Bloodgem
-							i(31780),	-- Scryers Tabard
-							i(29133),	-- Seer's Cane
-							i(29126),	-- Seer's Signet
-						},
-						["coord" ] = { 60.6, 64.2 },
-					}),
-					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
-						["groups"] = {
-							i(29735, {	-- Holy Dust
-								i(28886),	-- Greater Inscription of Discipline
-								i(28887),	-- Greater Inscription of Faith
-								i(28888),	-- Greater Inscription of Vengeance
-								i(28889),	-- Greater Inscription of Warding
-								i(28881),	-- Inscription of Discipline
-								i(28878),	-- Inscription of Faith
-								i(28885),	-- Inscription of Vengeance
-								i(28882),	-- Inscription of Warding
-							}),
-						},
-						["coord"] = { 48.6, 26.6 },
-					}),
-					n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
-						["groups"] = {
-							i(29736, {	-- Arcane Rune
-								i(28910),	-- Greater Inscription of the Blade
-								i(28911),	-- Greater Inscription of the Knight
-								i(28912),	-- Greater Inscription of the Oracle
-								i(28909),	-- Greater Inscription of the Orb
-								i(28907),	-- Inscription of the Blade
-								i(28908),	-- Inscription of the Knight
-								i(28904),	-- Inscription of the Oracle
-								i(28903),	-- Inscription of the Orb
-							}),
-						},
-						["coord"] = { 60.0, 64.6 },
-					}),
-					n(19074, {	-- Skreah <Alchemy Supplies>
-						["groups"] = {
+					n(19074,  {	-- Skreah <Alchemy Supplies>
+						["coord"] = { 45.8, 20.8, 111 },
+						["g"] = {
 							i(23574),	-- Recipe: Transmute Primal Might
 						},
-						["coord"] = { 45.8, 20.8 },
 					}),
-					n(19238, {	-- Urumir Stavebright <Staff Vendor>
-						["groups"] = {
-							i(12252),	-- Staff of Protection
-						},
-						["coord"] = { 49.6, 79.0 },
-					}),
-					n(21905, {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
-						["groups"] = {
+					n(21905,  {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
+						["coord"] = {44.8, 91.6, 111 },
+						["g"] = {
 							i(30113),	-- Destroyer Chestguard
 							i(30114),	-- Destroyer Handguards
 							i(30115),	-- Destroyer Greathelm
@@ -2025,50 +2030,44 @@ _.Zones =
 							i(30234),	-- Nordrassil Wrath-Kilt
 							i(30235),	-- Nordrassil Wrath-Mantle
 						},
-						["coord"] = {44.8, 91.6 },
 					}),
-					n(19661, {	-- Viggz Shinesparked <Engineering Supplies>
-						["coord"] = { 64.8, 69.6 },
-						["groups"] = {
+					n(19661,  {	-- Viggz Shinesparked <Engineering Supplies>
+						["coord"] = { 64.8, 69.6, 111 },
+						["g"] = {
 							i(23799),	-- Schematic: Adamantite Rifle
-							{				-- Schematic: Fused Wiring
-								["itemID"] = 32381,	-- Schematic: Fused Wiring
+							i(32381, {	-- Schematic: Fused Wiring
 								["spellID"] = 0,
 								["u"] = 7,	-- now learned from trainer, schematic was removed from game
-							},
+							}),
 						},
 					}),
-					n(18484, {	-- Wind Trader Lathrai
-						["groups"] = {
+					n(18484,  {	-- Wind Trader Lathrai
+						["coord"] = { 72.6, 31.6, 111 },
+						["g"] = {
 							i(23816),	-- Schematic: Fel Iron Toolbox
 							i(23811),	-- Schematic: White Smoke Flare
 						},
-						["coord"] = { 72.6, 31.6 },
 					}),
-					n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
-						["groups"] = {
+					n(19234,  {	-- Yurial Soulwater <Enchanting Supplies>
+						["coord"] = { 44.6, 96.8, 111 },
+						["g"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil
 							i(20752),	-- Formula: Minor Mana Oil
 							i(20758),	-- Formula: Minor Wizard Oil
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
-						["coord"] = { 44.6, 96.8 },
 					}),
-					n(33676, {	-- Zurii <Enchanting Trainer>
-						["groups"] = {
+					n(33676,  {	-- Zurii <Enchanting Trainer>
+						["coord"] = { 36.4, 44.6, 111 },
+						["g"] = {
 							i(20753),	-- Formula: Lesser Wizard Oil
 							i(20752),	-- Formula: Minor Mana Oil
 							i(20758),	-- Formula: Minor Wizard Oil
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
-						["coord"] = { 36.4, 44.6 },
 					}),
 				}),
 			},
-			["lvl"] = 58,
-			["isRaid"] = true,
-			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
-			["description"] = "|cff66ccffShattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.|r",				
 		}),
 	}),
 };
