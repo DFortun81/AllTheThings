@@ -4,9 +4,12 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(716, {	-- Eye of Azshara
-		["lvl"] = 98,
 		["mapID"] = 713,
-		["groups"] = {
+		["lvl"] = 98,
+		["g"] = {
+			n(0,      {	-- Zone Drops
+				i(137726),	-- Schematic: Leystone Buoy
+			}),
 			n(-10067, {	-- Artifacts
 				i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
 					["description"] = "Drops from the first two bosses on any difficulty.",
@@ -14,16 +17,16 @@ _.Instances = { tier(7, {	-- Legion
 						91784,	-- Warlord Parjesh
 						91789,	-- Lady Hatecoil
 					},
-					["groups"] = {
+					["g"] = {
 						artifact(926),	-- Resto Shaman Hidden Artifact Skin
 					},
 				}),
 			}),
-			n(-17, {	-- Quests
+			n(-17,    {	-- Quests
 				o(106780, {	-- Tidestone of Golganneth
 					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
 						["sourceQuests"] = { 38286 },	-- Eye of Azshara: Wrath of Azshara
-						["groups"] = {
+						["g"] = {
 							i(140622),	-- Hardshell Greatbelt
 							i(140623),	-- Brightscale Waistguard
 							i(140624),	-- Bitterbrine Binding
@@ -33,9 +36,6 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),	
 			d(1, {	-- Normal
-				n(0, {	-- Zone Drops
-					i(137726),	-- Schematic: Leystone Buoy
-				}),
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(134240),	-- Brinewashed Leather Cowl
 					i(134223),	-- Coralplate Chestguard
@@ -114,10 +114,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
-					n(0, {	-- Zone Drops
-						i(137726),	-- Schematic: Leystone Buoy
-					}),
+				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134223),	-- Coralplate Chestguard
@@ -197,10 +194,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
-					n(0, {	-- Zone Drops
-						i(137726),	-- Schematic: Leystone Buoy
-					}),
+				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						ach(10456),	-- But Y ou Say He's Just a Friend
 						i(134240),	-- Brinewashed Leather Cowl

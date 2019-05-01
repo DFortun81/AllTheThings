@@ -6,10 +6,10 @@ _.Instances = { tier(1, {	-- Classic
 	inst(231, { 	-- Gnomeregan
 		["lvl"] = 19,
 		["mapID"] = 226,
-		["maps"] = { 
-			227, 
-			228, 
-			229, 
+		["maps"] = {
+			227,
+			228,
+			229,
 		},
 		["coord"] = { 30.11, 74.64, 30 },	-- Gnomeregan, Gnomeregan [Dun Morogh]
 		["groups"] = {
@@ -66,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 										i(9363),	-- Sparklematic-Wrapped Box
 									},
 								},
-								
+
 								{
 									["questID"] = 4601,	-- The Sparklematic 5200!
 								},
@@ -85,7 +85,7 @@ _.Instances = { tier(1, {	-- Classic
 										i(9363),	-- Sparklematic-Wrapped Box
 									},
 								},
-								
+
 								{
 									["questID"] = 4602,	-- The Sparklematic 5200!
 								},

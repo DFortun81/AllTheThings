@@ -60,9 +60,17 @@ _.Zones =
 					qg(16761, qa(27265, {	-- Lord Grayson Shadowbreaker
 						["classes"] = {2},
 					})),
-					qg(16756, qa(27268, {	-- Make Haste to the Cathedral
-						["classes"] = {5},
-					})),
+--]]
+					qa(27268, {	-- Make Haste to the Cathedral
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coords"] = {
+							{ 33.0, 65.4, 103 },
+							{ 38.8, 51.0, 103 },
+						},
+						["qg"] = 16756,	-- Caedmos
+					}),
+--[[
 					qg(17120, qa(28258, {	-- Meet with Ander Germaine
 						["classes"] = {1},
 					})),

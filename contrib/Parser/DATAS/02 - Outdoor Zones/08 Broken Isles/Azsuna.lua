@@ -5,12 +5,21 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(630, {	-- Azsuna
-			["groups"] = {
+			["description"] = "|cff66ccffAzsuna is located on the West/South Western side of the Broken Isles. A land rich in magical leylines and magic so condensed that it has formed crystals. Azsuna was a home to many elves, nightelves and highborne. Azsuna is a very serene place, with mythical beasts that adorns it's plains. However is seems some of the Legions corruption has begun to take a bit of this land over. You will aid this land and those that currently reside in it by thwarting off some of the Legion as well as helping out a familiar dragonflight. The magical academy is also located here as Azsuna is a place that does hold vast amount of magic located in it's leylines. You will also learn about an old foe that you once fought during one of your trips back in time to the well of eternity.|r",
+			["achievementID"] = 10665,
+			["maps"] = { 
+				631,	-- Nar'thalas Academy
+				632,	-- Oceanus Cove
+				633,	-- Temple of a Thousand Lights
+				867,	-- Azsuna Invasion Map.  Will look at this further and maybe we can detach certain things. [Lucetia]
+			},
+			["lvl"] = 98,
+			["g"] = {
 				n(-169, { 	-- Emissary Quests
 					q(42420, {	-- Court of Farondis
-						["groups"] = {
+						["g"] = {
 							i(157825, {	-- Farondis Lockbox
-								["groups"] = {
+								["g"] = {
 									i(144316),	-- Formula: Enchant Neck - Mark of the Quick (Rank 3)
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, {	-- Cloak
@@ -18,7 +27,7 @@ _.Zones =
 										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -30,7 +39,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -42,7 +51,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -54,7 +63,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -66,7 +75,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -78,7 +87,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -90,7 +99,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -102,7 +111,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -116,13 +125,13 @@ _.Zones =
 								},
 							}),
 							un(2, i(137563, {	-- Farondis Lockbox
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -134,7 +143,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -146,7 +155,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -158,7 +167,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -170,7 +179,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -182,7 +191,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -194,7 +203,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -206,7 +215,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -220,13 +229,13 @@ _.Zones =
 								},
 							})),
 							un(2, i(146750, {	-- Farondis Lockbox
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -238,7 +247,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -250,7 +259,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -262,7 +271,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -274,7 +283,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -286,7 +295,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -298,7 +307,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -310,7 +319,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -324,13 +333,13 @@ _.Zones =
 								},
 							})),
 							un(2, i(151467, {	-- Farondis Lockbox
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -342,7 +351,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -354,7 +363,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -366,7 +375,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -378,7 +387,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -390,7 +399,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -402,7 +411,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -414,7 +423,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -428,13 +437,13 @@ _.Zones =
 								},
 							})),
 							un(2, i(154906, {	-- Farondis Lockbox
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -446,7 +455,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -458,7 +467,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -470,7 +479,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -482,7 +491,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -494,7 +503,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -506,7 +515,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -518,7 +527,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -535,9 +544,9 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					q(42422, {	-- The Wardens
-						["groups"] = {
+						["g"] = {
 							i(157827, {	-- Warden's Field Kit
-								["groups"] = {
+								["g"] = {
 									i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
@@ -545,7 +554,7 @@ _.Zones =
 										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -557,7 +566,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -569,7 +578,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -581,7 +590,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -593,7 +602,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -605,7 +614,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -617,7 +626,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -629,7 +638,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -643,14 +652,14 @@ _.Zones =
 								},
 							}),
 							un(2, i(137565, {	-- Warden's Field Kit
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -662,7 +671,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -674,7 +683,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -686,7 +695,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -698,7 +707,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -710,7 +719,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -722,7 +731,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -734,7 +743,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -748,14 +757,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(146752, {	-- Warden's Field Kit
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -767,7 +776,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -779,7 +788,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -791,7 +800,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -803,7 +812,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -815,7 +824,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -827,7 +836,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -839,7 +848,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -853,14 +862,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(151469, {	-- Warden's Field Kit
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -872,7 +881,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -884,7 +893,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -896,7 +905,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -908,7 +917,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -920,7 +929,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -932,7 +941,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -944,7 +953,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -958,14 +967,14 @@ _.Zones =
 								},
 							})),
 							un(2, i(154908, {	-- Warden's Field Kit
-								["groups"] = {
+								["g"] = {
 									n(-322, {	-- Cloak
 										i(134334),	-- Disgraced Court Cloak
 										i(134246),	-- Herringbone Drape
 										i(136748),	-- Vault Watcher's Cloak
 									}),
 									n(-3241, {	-- Arcane Singed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134348),	-- Arcane Singed Aurora
 											i(134353),	-- Arcane Singed Mantle
 											i(134351),	-- Arcane Singed Robe
@@ -977,7 +986,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3248, {	-- Seawitch Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134260),	-- Seawitch Hood
 											i(134265),	-- Seawitch Mantle
 											i(134263),	-- Seawitch Robes
@@ -989,7 +998,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3271, {	-- Brinewashed Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134240),	-- Brinewashed Leather Cowl
 											i(134242),	-- Brinewashed Leather Shoulderpads
 											i(134241),	-- Brinewashed Leather Vest
@@ -1001,7 +1010,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3264, {	-- Mana-Saber Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134328),	-- Mana-Saber Hide Hood
 											i(134330),	-- Mana-Saber Hide Shoulders
 											i(134329),	-- Mana-Saber Hide Jerkin
@@ -1013,7 +1022,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3282, {	-- Manaburst Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134343),	-- Manaburst Helm
 											i(134345),	-- Manaburst Spaulders
 											i(134346),	-- Manaburst Chainmail
@@ -1025,7 +1034,7 @@ _.Zones =
 										},		
 									}),	
 									n(-3276, {	-- Sea Stalker's Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134255),	-- Sea Stalker's Hood
 											i(134257),	-- Sea Stalker's Mantle
 											i(134258),	-- Sea Stalker's Shirt
@@ -1037,7 +1046,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3305, {	-- Coralplate Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134226),	-- Coralplate Helmet
 											i(134228),	-- Coralplate Pauldrons
 											i(134223),	-- Coralplate Chestguard
@@ -1049,7 +1058,7 @@ _.Zones =
 										},		
 									}),			
 									n(-3304, {	-- Ley-Scarred Set		
-										["groups"] = {		
+										["g"] = {		
 											i(134314),	-- Ley-Scarred Helm
 											i(134316),	-- Ley-Scarred Pauldrons
 											i(134311),	-- Ley-Scarred Chestplate
@@ -1067,7 +1076,7 @@ _.Zones =
 					}),
 					n(-206, {	-- Paragon
 						q(46745, {	-- Supplies from the Court
-							["groups"] = {
+							["g"] = {
 								i(152102, {	-- Farondis Chest
 									dr(3, i(147806)),	-- Cloudwing Hippogryph
 								}),
@@ -1078,7 +1087,7 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(46749, {	-- Supplies From the Wardens
-							["groups"] = {
+							["g"] = {
 								{	-- Warden's Supply Kit
 									["itemID"] = 152107,	-- Warden's Supply Kit
 									["g"] = {
@@ -1130,28 +1139,88 @@ _.Zones =
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
-					p(1708), 	-- Albatross Chick
-					p(706), 	-- Bandicoon
-					p(1914), 	-- Coastal Sandpiper
-					p(396), 	-- Dusk Spiderling
-					p(1774), 	-- Eldritch Manafiend
-					p(1773), 	-- Erudite Manafiend
-					p(1731), 	-- Felspider
-					p(1709), 	-- Fledgling Kingfeather
-					p(1710), 	-- Fledgling Oliveback
-					p(478), 	-- Forest Moth
-					p(464), 	-- Grey Moth
-					p(647), 	-- Grizzly Squirrel
-					p(699), 	-- Jumping Spider
-					p(1728),	-- Juvenile Scuttleback
-					p(1583), 	-- Kelp Scuttler
-					p(1729), 	-- Olivetail Hare
-					p(743), 	-- Rapana Whelk
-					p(1587), 	-- Royal Moth
-					p(1736), 	-- Slithering Brownscale
-					p(1935), 	-- Squirky
+					{	-- Albatross Chick
+						["speciesID"] = 1708,	-- Albatross Chick
+						["crs"] = { 97018 },	-- Albatross Chick
+					},
+					{	-- Bandicoon
+						["speciesID"] = 706,	-- Bandicoon
+						["crs"] = { 63062 },	-- Bandicoon
+					},
+					{	-- Coastal Sandpiper
+						["speciesID"] = 1914,	-- Coastal Sandpiper
+						["crs"] = { 110826 },	-- Coastal Sandpiper
+					},
+					{	-- Dusk Spiderling
+						["speciesID"] = 396,	-- Dusk Spiderling
+						["crs"] = { 61253 },	-- Dusk Spiderling
+					},
+					{	-- Eldritch Manafiend
+						["speciesID"] = 1774,	-- Eldritch Manafiend
+						["crs"] = { 98386 },	-- Eldritch Manafiend
+					},
+					{	-- Erudite Manafiend
+						["speciesID"] = 1773,	-- Erudite Manafiend
+						["crs"] = { 98385 },	-- Erudite Manafiend
+					},
+					{	-- Felspider
+						["speciesID"] = 1731,	-- Felspider
+						["crs"] = { 97323 },	-- Felspider
+					},
+					{	-- Fledgling Kingfeather
+						["speciesID"] = 1709,	-- Fledgling Kingfeather
+						["crs"] = { 97076 },	-- Fledgling Kingfeather
+					},
+					{	-- Fledgling Oliveback
+						["speciesID"] = 1710,	-- Fledgling Oliveback
+						["crs"] = { 97078 },	-- Fledgling Oliveback
+					},
+					{	-- Forest Moth
+						["speciesID"] = 478,	-- Forest Moth
+						["crs"] = { 62177 },	-- Forest Moth
+					},
+					{	-- Grey Moth
+						["speciesID"] = 464,	-- Grey Moth
+						["crs"] = { 62050 },	-- Grey Moth
+					},
+					{	-- Grizzly Squirrel
+						["speciesID"] = 647,	-- Grizzly Squirrel
+						["crs"] = { 62818 },	-- Grizzly Squirrel
+					},
+					{	-- Jumping Spider
+						["speciesID"] = 699,	-- Jumping Spider
+						["crs"] = { 63715 },	-- Jumping Spider
+					},
+					{	-- Juvenile Scuttleback
+						["speciesID"] = 1728,	-- Juvenile Scuttleback
+						["crs"] = { 97283 },	-- Juvenile Scuttleback
+					},
+					{	-- Kelp Scuttler
+						["speciesID"] = 1583,	-- Kelp Scuttler
+						["crs"] = { 88465 },	-- Kelp Scuttler
+					},
+					{	-- Olivetail Hare
+						["speciesID"] = 1729,	-- Olivetail Hare
+						["crs"] = { 97294 },	-- Olivetail Hare
+					},
+					{	-- Rapana Whelk
+						["speciesID"] = 743,	-- Rapana Whelk
+						["crs"] = { 64352 },	-- Rapana Whelk
+					},
+					{	-- Royal Moth
+						["speciesID"] = 1587,	-- Royal Moth
+						["crs"] = { 88417 },	-- Royal Moth
+					},
+					{	-- Slithering Brownscale
+						["speciesID"] = 1736,	-- Slithering Brownscale
+						["crs"] = { 97542 },	-- Slithering Brownscale
+					},
+					{	-- Squirky
+						["speciesID"] = 1935,	-- Squirky
+						["crs"] = { 113440 },	-- Squirky
+					},
 					n(115741, {	-- Orphaned Bloodgazer
-						["groups"] = {
+						["g"] = {
 							p(1977),  	-- Bloodgazer Hatchling
 							q(45008, {	-- Bloodgazer Bonding
 								i(142494),	-- Purple Blossom
@@ -1168,7 +1237,7 @@ _.Zones =
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 133887,	-- Luminous Pearl (Item)
 									["questID"] = 40960,	-- Luminous Pearl (Quest)
@@ -1179,7 +1248,7 @@ _.Zones =
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
 									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 4,			-- Axefish (Criteria)
@@ -1194,19 +1263,19 @@ _.Zones =
 								}),
 								i(133724, {		-- Decayed Whale Blubber
 									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
+									["g"] = {
 										i(133795),	-- Ravenous Fly
 									}
 								}),
 								i(133721, {		-- Message in a Bottle
 									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
+									["g"] = {
 										i(133722)		-- Axefish Lure
 									},
 								}),
 								i(133795, {		-- Ravenous Fly
 									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
@@ -1221,10 +1290,10 @@ _.Zones =
 								}),
 								i(133723, {		-- Stunned, Angry Shark
 									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
+									["g"] = {
 										n(102359, {		-- Landlocked Shark
 											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
+											["g"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
@@ -1242,7 +1311,7 @@ _.Zones =
 							}),
 							i(133702, {		-- Aromatic Murloc Slime
 								["description"] = "This item will allow you to catch the Rare fish Leyshimmer Blenny in Azsuna.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 8,			-- Leyshimmer Blenny (Criteria)
@@ -1257,7 +1326,7 @@ _.Zones =
 							}),
 							i(133703, {		-- Pearlescent Conch
 								["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
@@ -1272,7 +1341,7 @@ _.Zones =
 							}),
 							i(133704, {		-- Rusty Queenfish Brooch
 								["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
-								["groups"] = {
+								["g"] = {
 									spell(201807, {	-- Rusty Queenfish Brooch (Buff)
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -1289,7 +1358,7 @@ _.Zones =
 							}),
 							i(133701, {		-- Skrog Toenail
 								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
-								["groups"] = {
+								["g"] = {
 									n(102338, {		-- Salteye Skrog-Hunter
 										dr(93, i(133702)),	-- Aromatic Murloc Slime
 									}),
@@ -1298,13 +1367,13 @@ _.Zones =
 						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2097, {	-- Ilyssia of the Waters
-								["groups"] = {
+								["g"] = {
 									i(146848, {		-- Fragmented Enchantment
 										i(147308), 	-- Enchanted Bobber
 										i(152555), 	-- Ghost Shark
 										i(133703, {		-- Pearlescent Conch
 											["description"] = "This item will allow you to catch the Rare fish Nar'thalas Hermit in Azsuna.",
-											["groups"] = {
+											["g"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 11,		-- Nar'thalas Hermit (Criteria)
@@ -1319,7 +1388,7 @@ _.Zones =
 										}),
 										i(133704, {		-- Rusty Queenfish Brooch
 											["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
-											["groups"] = {
+											["g"] = {
 												spell(201807, {	-- Rusty Queenfish Brooch (Buff)
 													{
 														["achievementID"] = 10596,	-- Bigger Fish to Fry
@@ -1535,7 +1604,7 @@ _.Zones =
 							q(37658, {	-- Reignite the Wards
 								["qg"] = 90317,	-- Jace Darkweaver
 								["coord"] = { 43.1, 43.6, 630 },
-								["groups"] = {
+								["g"] = {
 									i(141623),	-- Demon Warding Halo
 									i(141622),	-- Guise of the Demon Warder
 									i(141621),	-- Demon Warder Helm
@@ -1561,7 +1630,7 @@ _.Zones =
 							q(37660, {	-- The Scythe of Souls
 								["qg"] = 89398,	-- Allari the Souleateer
 								["coord"] = { 43.2, 43.1, 630 },
-								["groups"] = {
+								["g"] = {
 									i(132951),	-- Leywalker Shoes
 									i(132949),	-- Ruin-Stalker Footpads
 									i(132948),	-- Seaspray Chain Boots
@@ -1593,7 +1662,7 @@ _.Zones =
 							q(37450, {	-- Saving Stellagosa
 								["qg"] = 90474,	-- Kor'vas Bloodthorn
 								["coord"] = { 41.2, 50.5, 630 },
-								["groups"] = {
+								["g"] = {
 									i(132961),	-- Cape of Azure Fury
 									i(132964),	-- Stellagosa's Breath
 									i(132962),	-- The Jailer's Key
@@ -1617,7 +1686,7 @@ _.Zones =
 							q(37449, {	-- Dark Revelations
 								["qg"] = 90474,	-- Kor'vas Bloodthorn
 								["coord"] = { 38.0, 57.6, 630 },
-								["groups"] = {
+								["g"] = {
 									i(132984),	-- Abandoned Highborne Mana Crystal
 									i(132985),	-- Blood of the Vanquished Highborne
 									i(133002),	-- Coalesced Shadows
@@ -1658,7 +1727,7 @@ _.Zones =
 								["isBreadcrumb"] = true,
 							}),
 							q(37957,  {  	-- Runas the Shamed
-								["groups"] = {
+								["g"] = {
 									i(132971),	-- Nightfallen's Desperation
 									i(132970),	-- Runas' Nearly Depleted Ley Crystal
 									i(132969),	-- Talisman of the Lost Blue Flight
@@ -1815,7 +1884,7 @@ _.Zones =
 							}),
 							q(37659),	-- The Captain's Foot Locker
 							qa(40794, {	-- Fate of the Queen's Reprisal [Alliance]
-								["groups"] = {
+								["g"] = {
 									i(121482),	-- Cloak of the Greywatch
 									i(138857),	-- SI:7 Standard Issue Vest
 									i(138856),	-- Alliance Auxillary Hauberk
@@ -1825,7 +1894,7 @@ _.Zones =
 								["qg"] = 239328,
 							}),
 							qh(42244, {	-- Fate of the Queen's Reprisal [Horde]
-								["groups"] = {
+								["g"] = {
 									i(138859),	-- Royal Apothecary Robe
 									i(121488),	-- Royal Apothecary Drape
 									i(138862),	-- Decorated Deathstalker Jerkin
@@ -1847,7 +1916,7 @@ _.Zones =
 					}),  
 					n(-38, { 	 -- Professions
 						n(-180, {	-- Alchemy
-							["groups"] = {
+							["g"] = {
 								q(39390, {	-- A Mysterious Text
 									["qg"] = 243392,	-- Alchemy Book
 									["sourceQuests"] = { 39566 },	-- The Search for Knowledge
@@ -1871,7 +1940,7 @@ _.Zones =
 							}),
 						}),
 						n(-182, {	-- Enchanting
-							["groups"] = {
+							["g"] = {
 								q(40169),	-- Crossroads Rendezvous
 								{	-- Down to the Core
 									["questID"] = 39923,	-- Down to the Core
@@ -1955,7 +2024,7 @@ _.Zones =
 						}),
 						n(-183, {	-- Engineering
 							["requireSkill"] = 202,
-							["groups"] = {
+							["g"] = {
 								q(40856, {	-- It'll Cost You
 									["sourceQuest"] = 40855,	-- Our Man in Azsuna
 									["qg"] = 102195,	-- Fargo Flintlocke
@@ -1963,7 +2032,7 @@ _.Zones =
 								}),
 								q(40876, {	-- 'Locke, Stock and Barrel
 									["qg"] = 102196,	-- Fargo Flintlocke
-									["groups"] = {
+									["g"] = {
 										-- Schematic: Better Headguns
 										--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
 										{	-- Blink-Trigger Headgun (Rank 2)
@@ -1984,7 +2053,7 @@ _.Zones =
 									["sourceQuest"] = 40856,	-- It'll Cost You
 									["qg"] = 102195,	-- Fargo Flintlocke
 									["requireSkill"] = 202,
-									["groups"] = {
+									["g"] = {
 										recipe(198939),	-- Schematic: Blink-Trigger Headgun
 										recipe(198965),	-- Schematic: Tactical Headgun
 										recipe(198966),	-- Schematic: Bolt-Action Headgun
@@ -1995,14 +2064,14 @@ _.Zones =
 									["sourceQuest"] = 40855,	-- Our Man in Azsuna
 									["qg"] = 102195,	-- Fargo Flintlocke
 									["requireSkill"] = 202,
-									["groups"] = {
+									["g"] = {
 										recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
 									},
 								}),
 							},
 						}),
 						n(-184, {	-- Herbalism
-							["groups"] = {
+							["g"] = {
 								i(129117, {	-- Aethril Sample
 									q(40013),	-- Aethril Sample
 								}),
@@ -2023,7 +2092,7 @@ _.Zones =
 							["requireSkill"] = 182,
 						}),
 						n(-185, {	-- Inscription
-							["groups"] = {
+							["g"] = {
 								q(39938, {	-- Containing the Demon Within
 									["g"] = {
 										i(137743),	-- Technique: Glyph of Fallow Wings
@@ -2058,7 +2127,7 @@ _.Zones =
 									i(137742),	-- Technique: Glyph of Crackling Flames
 								}),
 								q(39943, {	-- The Burdens of Hunting
-									["groups"] = {
+									["g"] = {
 										i(137744),	-- Technique: Glyph of Tattered Wings
 									},
 									["qgs"] = {
@@ -2077,9 +2146,9 @@ _.Zones =
 							["requireSkill"] = 773,
 						}),
 						n(-187, {	-- Leatherworking
-							["groups"] = bubbleDown({["requireSkill"] = 165}, {	-- Leatherworking
+							["g"] = bubbleDown({["requireSkill"] = 165}, {	-- Leatherworking
 								q(40188, {	-- Best Served Cold
-									["groups"] = {
+									["g"] = {
 										-- note there is no pattern item for these, so just listing the spell IDs
 										recipe(194735),	-- Battlebound Armbands (Rank 1)
 										recipe(194740),	-- Battlebound Grips (Rank 1)
@@ -2087,32 +2156,32 @@ _.Zones =
 									["qg"] = 98964,	-- Celea
 								}),
 								q(40208, {	-- Eye of Azshara: Scales of the Sea
-									["groups"] = {
+									["g"] = {
 										i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
 									},
 									["qg"] = 98964,	-- Celea
 								}),
 								q(40194, {	-- Reclaimed Cargo
-									["groups"] = {
+									["g"] = {
 										i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
 										i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
 									},
 									["qg"] = 98964,	-- Celea
 								}),
 								q(40207, {	-- Scales of the Arcane
-									["groups"] = {
+									["g"] = {
 										i(137905),	-- Recipe: Battlebound Grips (Rank 2)
 									},
 									["qg"] = 98964,	-- Celea
 								}),
 								q(40209, {	-- Scales of the Earth
-									["groups"] = {
+									["g"] = {
 										i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
 									},
 									["qg"] = 98964,	-- Celea
 								}),
 								q(40327, {	-- Testing the Metal
-									["groups"] = {
+									["g"] = {
 										i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
 									},
 									["qg"] = 99689,	-- Taldranis
@@ -2120,37 +2189,86 @@ _.Zones =
 							}),
 						}),
 					}),
-					ach(10994, {	-- Class Campaign
-						cl(5, {    -- Priest
-							q(43375),	-- An Ample Supply
-							q(42137),	-- Champion: Yalia Sagewhisper
-							q(42138),	-- Champion: Zabra Hex
+					ach(10994, {	-- A Glorious Campaign
+						cl(5, {	-- Priest
+							q(43375, {	-- An Ample Supply
+								["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+							}),
+							q(42137, {	-- Champion: Yalia Sagewhisper
+								["sourceQuests"] = { 43376 },	-- Problem Salver
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 47.1, 43.9, 630 },
+								["lvl"] = 103,
+								["qg"] = 110687,	-- Yalia Sagewhisper
+								["g"] = {
+									follower(871),	-- Yalia Sagewhisper
+								},
+							}),
+							q(42138, {	-- Champion: Zabra Hexx
+								["sourceQuests"] = { 43376 },	-- Problem Salver
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 47.1, 43.9, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+								["g"] = {
+									follower(870),	-- Zabra Hexx
+								},
+							}),
+							q(43378, {	-- Eye of Azshara: Looking Through the Lens
+								["sourceQuests"] = {
+									42137,	-- Champion: Yalia Sagewhisper
+									42138,	-- Champion: Zabra Hexx
+								},
+								["classes"] = { 5 },
+								["qg"] = 110687,	-- Yalia Sagewhisper
+							}),
+							q(43374, {	-- Murloc Mind Control
+								["sourceQuests"] = { 43372 },	-- The Best and Brightest
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 110686,	-- Zabra Hexx
+							}),
+							q(43376, {	-- Problem Salver
+								["sourceQuests"] = {
+									43375,	-- An Ample Supply
+								--	43374,	-- Murloc Mind Control (commented out to avoid infinite loop!)
+								},
+								["classes"] = { 5 },	-- Priest
+								["coord"] = { 58.5, 37.2, 630 },
+								["lvl"] = 103,
+								["qg"] = 112487,	-- Yalia Sagewhisper
+							}),
 						}),
-						cl(2, {    -- Paladin
+						cl(2, {	-- Paladin
 							q(43490),	-- Aponi's Trail
 							q(42888),	-- Communication Orbs
 						}),
-						cl(8, {    -- Mage
+						cl(8, {	-- Mage
 							q(42222),	-- Empyrean Society Report
 						}),
-						cl(4, {    -- Rogue
-							qh( 46324),	-- False Orders
-							qa( 45835),	-- False Orders
+						cl(4, {	-- Rogue
+							qh(46324),	-- False Orders
+							qa(45835),	-- False Orders
 						}),
-						cl(9, {    -- Warlock
+						cl(9, {	-- Warlock
 							q(39179),	-- Bloodstone Bandit
 							q(45024),	-- Cult Culling
 							q(40218),	-- Debt Repaid
 							q(45026),	-- Expending Fel Energy
 						}),
 					}),
-					n(-170, {    -- Balance of Power
+					n(-170, {	-- Balance of Power
 						q(43521),	-- Essence of Power
 						q(43522),	-- Essential Corruption
 						q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
 						q(43517),	-- Darkheart Thicket: Fallen Power
 					}),
-					n(-168, {    -- Other Quests
+					n(-168, {	-- Other Quests
 						sz(10665,2, {	-- Felblaze Ingress
 							q(42372),	-- Felblaze Ingress
 							q(42375),	-- Eye See You
@@ -2159,7 +2277,7 @@ _.Zones =
 								["questID"] = 42367,	-- Arkethrax
 								["sourceQuest"] = 42375,	-- Eye See You
 								["qg"] = 107245,	-- Marius Felbane
-								["groups"] = {
+								["g"] = {
 									i(121480),	-- Felblaze Chain
 									i(129171),	-- Band of Ingression
 								},
@@ -2201,7 +2319,7 @@ _.Zones =
 						}),
 					}),
 					n(-221, {	-- Bonus Objectives
-						["groups"] = {
+						["g"] = {
 							q(36811),	-- Retake Faronaar
 						},
 					}),
@@ -2285,7 +2403,6 @@ _.Zones =
 					q(43519),	-- Lucid Strength
 					q(38952),	-- Meticulous Precision
 					q(43462),	-- Mother Ozram
-					q(43374),	-- Murloc Mind Control
 					q(40189),	-- Naga Know-How
 					q(41181),	-- Narrowing Down
 					q(39921),	-- Neltharion's Lair: Rod of Azure
@@ -2308,7 +2425,6 @@ _.Zones =
 					q(45795),	-- Presence of Power
 					q(37728),	-- Presentation is Everything
 					q(38061),	-- Pridelord Meowl
-					q(43376),	-- Problem Salver
 					q(41159),	-- Process of Elimination
 					q(41771),	-- Recharging the Blade
 					q(43523),	-- Repaid Debt
@@ -2350,10 +2466,6 @@ _.Zones =
 					q(45174),	-- The Hunt for Illidan Stormrage
 					q(41185),	-- The Keys to Success
 ]]--
-					q(43378, {	-- Eye of Azshara: Looking Through the Lens
-						["qg"] = 110687,	-- Yalia Sagewhisper
-						["classes"] = { 5 },
-					}),
 					qa(45127, {	-- Fel-Crossed Lovers
 						["qg"] = 116189,	-- Levia Laurence
 					}),
@@ -2443,14 +2555,14 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(107657, { 	-- Arcanist Shal'iman
-						["groups"] = {
+						["g"] = {
 							i(141868),
 						},
 						["questID"] = 42505,
 						
 					}), 
 					n(90244, { 		-- Arcavellus
-						["groups"] = {
+						["g"] = {
 							i(129085),
 						},
 						["questID"] = 37932,	
@@ -2460,7 +2572,7 @@ _.Zones =
 					n(106583, { 	-- Arkethrax
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 						["questID"] = 42367,
-						["groups"] = {
+						["g"] = {
 							{
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 								["criteriaID"] = 1,	-- Azsuna
@@ -2468,21 +2580,21 @@ _.Zones =
 						},
 					}),
 					n(91187, { 		-- Beacher
-						["groups"] = {
+						["g"] = {
 							i(129067),
 						},
 						["questID"] = 38238,	
 							
 					}), 
 					n(107327, { 	-- Bilebrain
-						["groups"] = {
+						["g"] = {
 							i(129079),
 						},
 						["questID"] = 42417,	
 							
 					}), 
 					n(107127, { 	-- Brawlgoth
-						["groups"] = {
+						["g"] = {
 							i(129086),
 						},
 						["questID"] = 42450,	
@@ -2491,7 +2603,7 @@ _.Zones =
 					n(91100, { 		-- Brogozog
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 						["questID"] = 38212,	
-						["groups"] = {
+						["g"] = {
 							{
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 								["criteriaID"] = 1,	-- Azsuna
@@ -2500,35 +2612,35 @@ _.Zones =
 						},
 					}),
 					n(107105, { 	-- Broodmother Lizax
-						["groups"] = {
+						["g"] = {
 							i(141869),
 						},
 						["questID"] = 44670,	
 							
 					}), 
 					n(91289, { 		-- Cailyn Paledoom 
-						["groups"] = {
+						["g"] = {
 							i(129063),
 						},
 						["questID"] = 38268,	
 							
 					}), 
 					n(89846, { 		-- Captain Volo'ren
-						["groups"] = {	
+						["g"] = {	
 							i(129066),
 						},
 						["questID"] = 37821,	
 							
 					}),				
 					n(107266, { 	-- Commander Soraax
-						["groups"] = {	
+						["g"] = {	
 							i(141871),
 						},
 						["questID"] = 44673,	
 							
 					}), 
 					n(90057, { 		-- Daggerbeak
-						["groups"] = {	
+						["g"] = {	
 							i(129084),
 						},
 						["questID"] = 37869,	
@@ -2537,7 +2649,7 @@ _.Zones =
 					n(91579, { 		-- Doomlord Kazrok
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
 						["questID"] = 38352,	-- Kazrok
-						["groups"] = {
+						["g"] = {
 							{
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 								["criteriaID"] = 1,	-- Azsuna
@@ -2547,7 +2659,7 @@ _.Zones =
 					}),
 					n(105938, { 	-- Felwing (Felbats)
 						["description"] = "|cff66ccffPart of the Tehd & Marius' Excellent Adventure Achievement. Speak to Tehd to start the encounter.|r",
-						["groups"] = {
+						["g"] = {
 							{
 								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 								["criteriaID"] = 1,	-- Azsuna
@@ -2557,14 +2669,14 @@ _.Zones =
 						["questID"] = 42069,
 					}), 
 					n(89884, { 		-- Flog the Captain-Eater
-						["groups"] = {	
+						["g"] = {	
 							i(129090),
 						},
 						["questID"] = 37824,	
 							
 					}), 
 					n(109564, { 	-- Glimmering Treasure Chest
-						["groups"] = {					
+						["g"] = {					
 							i(129078),
 						},
 						["questID"] = 37649,
@@ -2573,14 +2685,14 @@ _.Zones =
 						["description"] = "|cff66ccffThis chest is underground in the Oceanus Cove caves on the ground of gold coins next to Lady Sssurine.|r",
 					}),	
 					n(107136, { 	-- Houndmaster Stroxis
-						["groups"] = {
+						["g"] = {
 							i(141873),
 						},
 						["questID"] = 42286,	
 							
 					}), 
 					n(90803, { 		-- Infernal Lord
-						["groups"] = {	
+						["g"] = {	
 							i(129083),
 						},
 						["questID"] = 38037,	
@@ -2588,91 +2700,91 @@ _.Zones =
 						["description"] = "|cff66ccffClick Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.|r",
 					}), 
 					n(107269, { 	-- Inquisitor Tivos
-						["groups"] = {
+						["g"] = {
 							i(141874),
 						},
 						["questID"] = 42376,	
 							
 					}), 
 					n(90217, { 		-- Normantis the Deposed
-						["groups"] = {
+						["g"] = {
 							i(129061),
 						},
 						["questID"] = 37928,	
 							
 					}), 
 					n(90901, { 		-- Pridelord Meowl
-						["groups"] = {
+						["g"] = {
 							i(138395),
 						},
 						["questID"] = 38061,	
 							
 					}),
 					n(109504, { 	-- Ragemaw
-						["groups"] = {
+						["g"] = {
 							i(129075),
 						},
 						["questID"] = 44108,	
 							
 					}), 
 					n(89016, { 		-- Ravyn-Drath
-						["groups"] = {
+						["g"] = {
 							i(129080),
 						},
 						["questID"] = 37537,	
 							
 					}), 
 					n(90505, { 		-- Syphonus
-						["groups"] = {
+						["g"] = {
 							i(129064),
 						},
 						["questID"] = 37989,	
 							
 					}), 
 					n(108136, { 	-- The Muscle
-						["groups"] = {	
+						["g"] = {	
 							i(129081),
 						},
 						["questID"] = 44671,	
 							
 					}),
 					n(89850, { 		-- The Oracle
-						["groups"] = {	
+						["g"] = {	
 							i(129065),
 						},
 						["questID"] = 37822,	
 							
 					}), 
 					n(91113, { 		-- Tide Behemoth
-						["groups"] = {	
+						["g"] = {	
 							i(129062),
 						},
 						["questID"] = 38217,	
 							
 					}),
 						n(97116, {	-- Treasure Chest
-                        ["groups"] = {
+                        ["g"] = {
                             i(122681),
                         },
                         ["questID"] = 38217,
                         ["modelID"] = 71076,
                     }),
 					n(89650, { 		-- Valiyaka the Stormbringer
-						["groups"] = {	
+						["g"] = {	
 							i(129082),
 						},
 						["questID"] = 37726,	
 							
 					}),
 					n(107113, { 	-- Vorthax
-						["groups"] = {
+						["g"] = {
 							i(141875),
 						},
 						["questID"] = 42280,	
 							
 					}), 
 					n(90164, { 		-- Warbringer Mox'na
-						["groups"] = {	
+						["g"] = {	
 							i(129069),
 						},
 						["questID"] = 37909,	
@@ -2708,7 +2820,7 @@ _.Zones =
 				}),
 				n(-77, {	-- Special
 					o(251168, {	-- Ephemeral Crystal
-						["groups"] = {
+						["g"] = {
 							i(138258),	-- Reins of the Long-Forgotten Hippogryph
 						},
 						["description"] = "Finding 5 Ephemeral Crystals, scattered across Aszuna, will award this mount, but find them quickly - after someone clicks on 5 crystals, the event will end, and you'll have to wait at least 8 hours (possibly up to 24) for the event to reappear.  Remember to play cautiously while you're hunting, because if you die you'll have to restart.",
@@ -2723,7 +2835,7 @@ _.Zones =
 					}),
 					n(102196, {	-- Fargo Flintlocke
 						["coord"] = { 43.0, 62.84, 630 },
-						["groups"] = {
+						["g"] = {
 							i(137703),	-- Schematic: Double-Barreled Cranial Cannon
 							i(137704),	-- Schematic: Ironsight Cranial Cannon
 							i(137702),	-- Schematic: Sawed-Off Cranial Cannon
@@ -2793,7 +2905,7 @@ _.Zones =
 						i(136748),	-- Vault Watcher's Cloak
 					}),
 					n(-3241, {	-- Arcane Singed Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134348),	-- Arcane Singed Aurora
 							i(134353),	-- Arcane Singed Mantle
 							i(134351),	-- Arcane Singed Robe
@@ -2806,7 +2918,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 					}),			
 					n(-3248, {	-- Seawitch Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134260),	-- Seawitch Hood
 							i(134265),	-- Seawitch Mantle
 							i(134263),	-- Seawitch Robes
@@ -2819,7 +2931,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",		
 					}),			
 					n(-3271, {	-- Brinewashed Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134240),	-- Brinewashed Leather Cowl
 							i(134242),	-- Brinewashed Leather Shoulderpads
 							i(134241),	-- Brinewashed Leather Vest
@@ -2832,7 +2944,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 					}),			
 					n(-3264, {	-- Mana-Saber Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134328),	-- Mana-Saber Hide Hood
 							i(134330),	-- Mana-Saber Hide Shoulders
 							i(134329),	-- Mana-Saber Hide Jerkin
@@ -2845,7 +2957,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",		
 					}),			
 					n(-3282, {	-- Manaburst Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134343),	-- Manaburst Helm
 							i(134345),	-- Manaburst Spaulders
 							i(134346),	-- Manaburst Chainmail
@@ -2858,7 +2970,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 					}),	
 					n(-3276, {	-- Sea Stalker's Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134255),	-- Sea Stalker's Hood
 							i(134257),	-- Sea Stalker's Mantle
 							i(134258),	-- Sea Stalker's Shirt
@@ -2871,7 +2983,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",		
 					}),			
 					n(-3305, {	-- Coralplate Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134226),	-- Coralplate Helmet
 							i(134228),	-- Coralplate Pauldrons
 							i(134223),	-- Coralplate Chestguard
@@ -2884,7 +2996,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",		
 					}),			
 					n(-3304, {	-- Ley-Scarred Set		
-						["groups"] = {		
+						["g"] = {		
 							i(134314),	-- Ley-Scarred Helm
 							i(134316),	-- Ley-Scarred Pauldrons
 							i(134311),	-- Ley-Scarred Chestplate
@@ -2901,7 +3013,7 @@ _.Zones =
 					}),
 					{	-- Work Order: Azsunite Pendant
 						["questID"] = 41651,
-						["groups"] = {
+						["g"] = {
 							i(137843),	-- Design: Azsunite Pendant (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2909,7 +3021,7 @@ _.Zones =
 					},
 					{	-- Work Order: Battlebound Spaulders
 						["questID"] = 41639,
-						["groups"] = {
+						["g"] = {
 							i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2919,13 +3031,13 @@ _.Zones =
 						["questID"] = 41639,
 						["isWQ"] = 110,
 						["requireSkill"] = 202,	-- Engineering
-						["groups"] = {
+						["g"] = {
 							i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
 						},
 					},
 					{	-- Work Order: Deep Amber Loop
 						["questID"] = 41652,
-						["groups"] = {
+						["g"] = {
 							i(137838),	-- Design: Deep Amber Loop (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2933,7 +3045,7 @@ _.Zones =
 					},
 					{	-- Work Order: Silkweave Epaulets
 						["questID"] = 41645,
-						["groups"] = {
+						["g"] = {
 							i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2942,7 +3054,7 @@ _.Zones =
 					{	-- Work Order: Word of Critical Strike
 						["questID"] = 41669,
 						["qg"] = 107376,	-- Veridis Fallon
-						["groups"] = {
+						["g"] = {
 							i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)
 						},
 						["isWQ"] = 110,
@@ -2950,7 +3062,7 @@ _.Zones =
 					},
 				}),	
 				n(0, { 		-- Zone Drops
-					["groups"] = {
+					["g"] = {
 						i(144315),	-- Formula: Enchant Neck - Mark of the Quick (Rank 2)
 						i(137924),	-- Recipe: Gravenscale Armbands (Rank 3)
 						i(137726),	-- Schematic: Leystone Buoy
@@ -3237,13 +3349,13 @@ _.Zones =
 					},
 				}),
 				n(-40, {    -- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-4, {		-- Achievements
 							un(2, ach(11139, {	-- Field Medic!
-								["groups"] = {
+								["g"] = {
 									un(39, title(340, {	-- TITLE: Field Medic!
 										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["groups"] = {
+										["g"] = {
 											{
 												["achievementID"] = 11139,	-- Field Medic (Achievement)
 												["criteriaID"] = 2, 		-- Bloody Note (Criteria)
@@ -3281,15 +3393,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 10665,
-			["lvl"] = 98,
-			["maps"] = { 
-				631,	-- Nar'thalas Academy
-				632,	-- Oceanus Cove
-				633,	-- Temple of a Thousand Lights
-				867,	-- Azsuna Invasion Map.  Will look at this further and maybe we can detach certain things. [Lucetia]
-			},
-			["description"] = "|cff66ccffAzsuna is located on the West/South Western side of the Broken Isles. A land rich in magical leylines and magic so condensed that it has formed crystals. Azsuna was a home to many elves, nightelves and highborne. Azsuna is a very serene place, with mythical beasts that adorns it's plains. However is seems some of the Legions corruption has begun to take a bit of this land over. You will aid this land and those that currently reside in it by thwarting off some of the Legion as well as helping out a familiar dragonflight. The magical academy is also located here as Azsuna is a place that does hold vast amount of magic located in it's leylines. You will also learn about an old foe that you once fought during one of your trips back in time to the well of eternity.|r",
 		}),
 	}),
 };

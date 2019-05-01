@@ -647,7 +647,7 @@ _.Instances = { tier(1, {	-- Classic
 			cr(11988, e(1526, {	-- Golemagg the Incinerator
 				i(93035),	-- Core of Hardened Ash (Pet)
 				i(17203),	-- Sulfuron Ingot
-				i(18822),	-- Obsidian Edged Blade 
+				i(18822),	-- Obsidian Edged Blade
 				i(18842),	-- Staff of Dominance
 				i(17103),	-- Azuresong Mageblade
 				i(17072),	-- Blastershot Launcher

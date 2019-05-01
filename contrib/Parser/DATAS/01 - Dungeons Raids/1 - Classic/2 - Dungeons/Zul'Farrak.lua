@@ -68,7 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(10080, {			-- Sandarr Dunereaver
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					dr(10.0, i(9512)), 	-- Blackmetal Cape
 					dr(10.0, i(5616)), 	-- Gutwrencher
 					dr(9.00, i(9483)), 	-- Flaming Incinerator
@@ -84,7 +84,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(10082, {			-- Zerillis
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					dr(87, i(12470)),	-- Sandstalker Ankleguardss
 				},
 			}),
@@ -107,7 +107,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(10081, {			-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					dr(87, i(12471)),	-- Desertwalker Cane
 				},
 			}),

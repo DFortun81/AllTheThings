@@ -21,200 +21,200 @@ _.Zones =
 						["groups"] = {
 							i(157830, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, {	-- Dauntless Hood		
-										i(147241),	-- Ley-Touched Hood	
-										i(147242),	-- Fel-Treated Hood	
-										i(147243),	-- Galvanized Stormscale Helm	
-										i(147244),	-- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood
+										i(147241),	-- Ley-Touched Hood
+										i(147242),	-- Fel-Treated Hood
+										i(147243),	-- Galvanized Stormscale Helm
+										i(147244),	-- Storm-Tempered Greathelm
 									}),
-									i(147221, {	-- Dauntless Choker	
+									i(147221, {	-- Dauntless Choker
 										i(147263),	-- Animus Pendant
-									}),	
-									i(147218, {	-- Dauntless Spaulders		
-										i(147249),	-- Ley-Touched Mantle	
-										i(147250),	-- Fel-Treated Spaulders	
-										i(147251),	-- Galvanized Stormscale Spaulders	
-										i(147252),	-- Storm-Tempered Shoulderguard	
-									}),		
-									i(147222, {	-- Dauntless Cloak		
-										i(147269),	-- Unifying Drape	
-									}),		
-									i(147213, {	-- Dauntless Tunic		
-										i(147232),	-- Ley-Touched Robes	
-										i(147229),	-- Fel-Treated Chestguard	
-										i(147230),	-- Galvanized Stormscale Chestguard	
-										i(147231),	-- Storm-Tempered Breastplate	
-									}),		
-									i(147212, {	-- Dauntless Bracers		
-										i(147225),	-- Ley-Touched Bracers	
-										i(147226),	-- Fel-Treated Bracers	
-										i(147227),	-- Galvanized Stormscale Bracers	
-										i(147228),	-- Storm-Tempered Bracers	
-									}),		
-									i(147215, {	-- Dauntless Gauntlets		
-										i(147237),	-- Ley-Touched Gloves	
-										i(147238),	-- Fel-Treated Gauntlets	
-										i(147239),	-- Galvanized Stormscale Gauntlets	
-										i(147240),	-- Storm-Tempered Gauntlets	
-									}),		
-									i(147219, {	-- Dauntless Girdle		
-										i(147253),	-- Ley-Touched Cord	
-										i(147254),	-- Fel-Treated Belt	
-										i(147255),	-- Galvanized Stormscale Belt	
-										i(147256),	-- Storm-Tempered Girdle	
-									}),		
-									i(147217, {	-- Dauntless Leggings		
-										i(147245),	-- Ley-Touched Trousers	
-										i(147246),	-- Fel-Treated Legguards	
-										i(147247),	-- Galvanized Stormscale Legguards	
-										i(147248),	-- Storm-Tempered Legplates	
-									}),		
-									i(147214, {	-- Dauntless Treads		
-										i(147233),	-- Ley-Touched Sandals	
-										i(147234),	-- Fel-Treated Boots	
-										i(147235),	-- Galvanized Stormscale Boots	
-										i(147236),	-- Storm-Tempered Greaves	
-									}),		
-									i(147220, {	-- Dauntless Ring	
+									}),
+									i(147218, {	-- Dauntless Spaulders
+										i(147249),	-- Ley-Touched Mantle
+										i(147250),	-- Fel-Treated Spaulders
+										i(147251),	-- Galvanized Stormscale Spaulders
+										i(147252),	-- Storm-Tempered Shoulderguard
+									}),
+									i(147222, {	-- Dauntless Cloak
+										i(147269),	-- Unifying Drape
+									}),
+									i(147213, {	-- Dauntless Tunic
+										i(147232),	-- Ley-Touched Robes
+										i(147229),	-- Fel-Treated Chestguard
+										i(147230),	-- Galvanized Stormscale Chestguard
+										i(147231),	-- Storm-Tempered Breastplate
+									}),
+									i(147212, {	-- Dauntless Bracers
+										i(147225),	-- Ley-Touched Bracers
+										i(147226),	-- Fel-Treated Bracers
+										i(147227),	-- Galvanized Stormscale Bracers
+										i(147228),	-- Storm-Tempered Bracers
+									}),
+									i(147215, {	-- Dauntless Gauntlets
+										i(147237),	-- Ley-Touched Gloves
+										i(147238),	-- Fel-Treated Gauntlets
+										i(147239),	-- Galvanized Stormscale Gauntlets
+										i(147240),	-- Storm-Tempered Gauntlets
+									}),
+									i(147219, {	-- Dauntless Girdle
+										i(147253),	-- Ley-Touched Cord
+										i(147254),	-- Fel-Treated Belt
+										i(147255),	-- Galvanized Stormscale Belt
+										i(147256),	-- Storm-Tempered Girdle
+									}),
+									i(147217, {	-- Dauntless Leggings
+										i(147245),	-- Ley-Touched Trousers
+										i(147246),	-- Fel-Treated Legguards
+										i(147247),	-- Galvanized Stormscale Legguards
+										i(147248),	-- Storm-Tempered Legplates
+									}),
+									i(147214, {	-- Dauntless Treads
+										i(147233),	-- Ley-Touched Sandals
+										i(147234),	-- Fel-Treated Boots
+										i(147235),	-- Galvanized Stormscale Boots
+										i(147236),	-- Storm-Tempered Greaves
+									}),
+									i(147220, {	-- Dauntless Ring
 										i(147257),	-- Avenging Band
-									}),	
-									i(147223, {	-- Dauntless Trinket	
+									}),
+									i(147223, {	-- Dauntless Trinket
 										i(147275),	-- Beguiler's Talisman
 										i(147276),	-- Spellbinder's Seal
 										i(147278),	-- Stalwart Crest
-									}),	
+									}),
 								},
 							}),
 							un(2, i(154910, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, {	-- Dauntless Hood		
-										i(147241),	-- Ley-Touched Hood	
-										i(147242),	-- Fel-Treated Hood	
-										i(147243),	-- Galvanized Stormscale Helm	
-										i(147244),	-- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood
+										i(147241),	-- Ley-Touched Hood
+										i(147242),	-- Fel-Treated Hood
+										i(147243),	-- Galvanized Stormscale Helm
+										i(147244),	-- Storm-Tempered Greathelm
 									}),
-									i(147221, {	-- Dauntless Choker	
+									i(147221, {	-- Dauntless Choker
 										i(147263),	-- Animus Pendant
-									}),	
-									i(147218, {	-- Dauntless Spaulders		
-										i(147249),	-- Ley-Touched Mantle	
-										i(147250),	-- Fel-Treated Spaulders	
-										i(147251),	-- Galvanized Stormscale Spaulders	
-										i(147252),	-- Storm-Tempered Shoulderguard	
-									}),		
-									i(147222, {	-- Dauntless Cloak		
-										i(147269),	-- Unifying Drape	
-									}),		
-									i(147213, {	-- Dauntless Tunic		
-										i(147232),	-- Ley-Touched Robes	
-										i(147229),	-- Fel-Treated Chestguard	
-										i(147230),	-- Galvanized Stormscale Chestguard	
-										i(147231),	-- Storm-Tempered Breastplate	
-									}),		
-									i(147212, {	-- Dauntless Bracers		
-										i(147225),	-- Ley-Touched Bracers	
-										i(147226),	-- Fel-Treated Bracers	
-										i(147227),	-- Galvanized Stormscale Bracers	
-										i(147228),	-- Storm-Tempered Bracers	
-									}),		
-									i(147215, {	-- Dauntless Gauntlets		
-										i(147237),	-- Ley-Touched Gloves	
-										i(147238),	-- Fel-Treated Gauntlets	
-										i(147239),	-- Galvanized Stormscale Gauntlets	
-										i(147240),	-- Storm-Tempered Gauntlets	
-									}),		
-									i(147219, {	-- Dauntless Girdle		
-										i(147253),	-- Ley-Touched Cord	
-										i(147254),	-- Fel-Treated Belt	
-										i(147255),	-- Galvanized Stormscale Belt	
-										i(147256),	-- Storm-Tempered Girdle	
-									}),		
-									i(147217, {	-- Dauntless Leggings		
-										i(147245),	-- Ley-Touched Trousers	
-										i(147246),	-- Fel-Treated Legguards	
-										i(147247),	-- Galvanized Stormscale Legguards	
-										i(147248),	-- Storm-Tempered Legplates	
-									}),		
-									i(147214, {	-- Dauntless Treads		
-										i(147233),	-- Ley-Touched Sandals	
-										i(147234),	-- Fel-Treated Boots	
-										i(147235),	-- Galvanized Stormscale Boots	
-										i(147236),	-- Storm-Tempered Greaves	
-									}),		
-									i(147220, {	-- Dauntless Ring	
+									}),
+									i(147218, {	-- Dauntless Spaulders
+										i(147249),	-- Ley-Touched Mantle
+										i(147250),	-- Fel-Treated Spaulders
+										i(147251),	-- Galvanized Stormscale Spaulders
+										i(147252),	-- Storm-Tempered Shoulderguard
+									}),
+									i(147222, {	-- Dauntless Cloak
+										i(147269),	-- Unifying Drape
+									}),
+									i(147213, {	-- Dauntless Tunic
+										i(147232),	-- Ley-Touched Robes
+										i(147229),	-- Fel-Treated Chestguard
+										i(147230),	-- Galvanized Stormscale Chestguard
+										i(147231),	-- Storm-Tempered Breastplate
+									}),
+									i(147212, {	-- Dauntless Bracers
+										i(147225),	-- Ley-Touched Bracers
+										i(147226),	-- Fel-Treated Bracers
+										i(147227),	-- Galvanized Stormscale Bracers
+										i(147228),	-- Storm-Tempered Bracers
+									}),
+									i(147215, {	-- Dauntless Gauntlets
+										i(147237),	-- Ley-Touched Gloves
+										i(147238),	-- Fel-Treated Gauntlets
+										i(147239),	-- Galvanized Stormscale Gauntlets
+										i(147240),	-- Storm-Tempered Gauntlets
+									}),
+									i(147219, {	-- Dauntless Girdle
+										i(147253),	-- Ley-Touched Cord
+										i(147254),	-- Fel-Treated Belt
+										i(147255),	-- Galvanized Stormscale Belt
+										i(147256),	-- Storm-Tempered Girdle
+									}),
+									i(147217, {	-- Dauntless Leggings
+										i(147245),	-- Ley-Touched Trousers
+										i(147246),	-- Fel-Treated Legguards
+										i(147247),	-- Galvanized Stormscale Legguards
+										i(147248),	-- Storm-Tempered Legplates
+									}),
+									i(147214, {	-- Dauntless Treads
+										i(147233),	-- Ley-Touched Sandals
+										i(147234),	-- Fel-Treated Boots
+										i(147235),	-- Galvanized Stormscale Boots
+										i(147236),	-- Storm-Tempered Greaves
+									}),
+									i(147220, {	-- Dauntless Ring
 										i(147257),	-- Avenging Band
-									}),	
-									i(147223, {	-- Dauntless Trinket	
+									}),
+									i(147223, {	-- Dauntless Trinket
 										i(147275),	-- Beguiler's Talisman
 										i(147276),	-- Spellbinder's Seal
 										i(147278),	-- Stalwart Crest
-									}),	
+									}),
 								},
 							})),
 							un(2, i(152649, {	-- Legionfall Spoils
 								["groups"] = {
-									i(147216, {	-- Dauntless Hood		
-										i(147241),	-- Ley-Touched Hood	
-										i(147242),	-- Fel-Treated Hood	
-										i(147243),	-- Galvanized Stormscale Helm	
-										i(147244),	-- Storm-Tempered Greathelm	
+									i(147216, {	-- Dauntless Hood
+										i(147241),	-- Ley-Touched Hood
+										i(147242),	-- Fel-Treated Hood
+										i(147243),	-- Galvanized Stormscale Helm
+										i(147244),	-- Storm-Tempered Greathelm
 									}),
-									i(147221, {	-- Dauntless Choker	
+									i(147221, {	-- Dauntless Choker
 										i(147263),	-- Animus Pendant
-									}),	
-									i(147218, {	-- Dauntless Spaulders		
-										i(147249),	-- Ley-Touched Mantle	
-										i(147250),	-- Fel-Treated Spaulders	
-										i(147251),	-- Galvanized Stormscale Spaulders	
-										i(147252),	-- Storm-Tempered Shoulderguard	
-									}),		
-									i(147222, {	-- Dauntless Cloak		
-										i(147269),	-- Unifying Drape	
-									}),		
-									i(147213, {	-- Dauntless Tunic		
-										i(147232),	-- Ley-Touched Robes	
-										i(147229),	-- Fel-Treated Chestguard	
-										i(147230),	-- Galvanized Stormscale Chestguard	
-										i(147231),	-- Storm-Tempered Breastplate	
-									}),		
-									i(147212, {	-- Dauntless Bracers		
-										i(147225),	-- Ley-Touched Bracers	
-										i(147226),	-- Fel-Treated Bracers	
-										i(147227),	-- Galvanized Stormscale Bracers	
-										i(147228),	-- Storm-Tempered Bracers	
-									}),		
-									i(147215, {	-- Dauntless Gauntlets		
-										i(147237),	-- Ley-Touched Gloves	
-										i(147238),	-- Fel-Treated Gauntlets	
-										i(147239),	-- Galvanized Stormscale Gauntlets	
-										i(147240),	-- Storm-Tempered Gauntlets	
-									}),		
-									i(147219, {	-- Dauntless Girdle		
-										i(147253),	-- Ley-Touched Cord	
-										i(147254),	-- Fel-Treated Belt	
-										i(147255),	-- Galvanized Stormscale Belt	
-										i(147256),	-- Storm-Tempered Girdle	
-									}),		
-									i(147217, {	-- Dauntless Leggings		
-										i(147245),	-- Ley-Touched Trousers	
-										i(147246),	-- Fel-Treated Legguards	
-										i(147247),	-- Galvanized Stormscale Legguards	
-										i(147248),	-- Storm-Tempered Legplates	
-									}),		
-									i(147214, {	-- Dauntless Treads		
-										i(147233),	-- Ley-Touched Sandals	
-										i(147234),	-- Fel-Treated Boots	
-										i(147235),	-- Galvanized Stormscale Boots	
-										i(147236),	-- Storm-Tempered Greaves	
-									}),		
-									i(147220, {	-- Dauntless Ring	
+									}),
+									i(147218, {	-- Dauntless Spaulders
+										i(147249),	-- Ley-Touched Mantle
+										i(147250),	-- Fel-Treated Spaulders
+										i(147251),	-- Galvanized Stormscale Spaulders
+										i(147252),	-- Storm-Tempered Shoulderguard
+									}),
+									i(147222, {	-- Dauntless Cloak
+										i(147269),	-- Unifying Drape
+									}),
+									i(147213, {	-- Dauntless Tunic
+										i(147232),	-- Ley-Touched Robes
+										i(147229),	-- Fel-Treated Chestguard
+										i(147230),	-- Galvanized Stormscale Chestguard
+										i(147231),	-- Storm-Tempered Breastplate
+									}),
+									i(147212, {	-- Dauntless Bracers
+										i(147225),	-- Ley-Touched Bracers
+										i(147226),	-- Fel-Treated Bracers
+										i(147227),	-- Galvanized Stormscale Bracers
+										i(147228),	-- Storm-Tempered Bracers
+									}),
+									i(147215, {	-- Dauntless Gauntlets
+										i(147237),	-- Ley-Touched Gloves
+										i(147238),	-- Fel-Treated Gauntlets
+										i(147239),	-- Galvanized Stormscale Gauntlets
+										i(147240),	-- Storm-Tempered Gauntlets
+									}),
+									i(147219, {	-- Dauntless Girdle
+										i(147253),	-- Ley-Touched Cord
+										i(147254),	-- Fel-Treated Belt
+										i(147255),	-- Galvanized Stormscale Belt
+										i(147256),	-- Storm-Tempered Girdle
+									}),
+									i(147217, {	-- Dauntless Leggings
+										i(147245),	-- Ley-Touched Trousers
+										i(147246),	-- Fel-Treated Legguards
+										i(147247),	-- Galvanized Stormscale Legguards
+										i(147248),	-- Storm-Tempered Legplates
+									}),
+									i(147214, {	-- Dauntless Treads
+										i(147233),	-- Ley-Touched Sandals
+										i(147234),	-- Fel-Treated Boots
+										i(147235),	-- Galvanized Stormscale Boots
+										i(147236),	-- Storm-Tempered Greaves
+									}),
+									i(147220, {	-- Dauntless Ring
 										i(147257),	-- Avenging Band
-									}),	
-									i(147223, {	-- Dauntless Trinket	
+									}),
+									i(147223, {	-- Dauntless Trinket
 										i(147275),	-- Beguiler's Talisman
 										i(147276),	-- Spellbinder's Seal
 										i(147278),	-- Stalwart Crest
-									}),	
+									}),
 								},
 							})),
 						},
@@ -481,39 +481,39 @@ _.Zones =
 													q(45440, {	-- A Brewing Situation
 														["qg"] = 116929,	-- Brewmaster Blancee
 														["sourceQuests"] = { 47137 },	-- Champions of Legionfall
-													}),	
+													}),
 													q(45404, {	-- Panic at the Brewery
 														["qg"] = 119664,	-- Brewmaster Almai
 														["sourceQuests"] = { 45440 },	-- A Brewing Situation
-													}),	
+													}),
 													q(45459, {	-- Storming the Legion
 														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 45404 },	-- Panic at the Brewery
-													}),	
+													}),
 													q(45574, {	-- Fel Ingredients
 														["qg"] = 117305,	-- Brewmaster Almai
 														["sourceQuests"] = { 45459 },	-- Storming the Legion
-													}),	
+													}),
 													q(45449, {	-- Alchemist Koryla
 														["qg"] = 117305,	-- Brewer Almai
 														["sourceQuests"] = { 45459 },	-- Storming the Legion
-													}),	
+													}),
 													q(45545, {	-- Barrel Toss
 														["qg"] = 117305,	-- Brewer Almai
 														["sourceQuests"] = { 45459 },	-- Storming the Legion
-													}),	
+													}),
 													q(46320, {	-- Hope For a Cure
 														["qg"] = 117305,	-- Brewer Almai
 														["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
-													}),	
+													}),
 													q(45442, {	-- Not Felling Well
 														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 46320 },	-- Hope For a Cure
-													}),	
+													}),
 													q(45771, {	-- A Time for Everything
 														["qg"] = 119765,	-- Spirit of Brewmaster Blanche
 														["sourceQuests"] = { 45442 },	-- Not Felling Well
-													}),	
+													}),
 													q(45790, {	-- Champion: Almai
 														["qg"] = 117504,	-- Brewer Almai
 														["sourceQuests"] = { 45771 },	-- A Time for Everything
@@ -618,7 +618,7 @@ _.Zones =
 								["qg"] = 116302,	-- Archmage Khadgar
 								["u"] = 2,
 							}),
-							
+
 						}),
 						i(143559, {	-- Wyrmtongue's Cache Key
 							q(46499, {	-- Spiders, Huh?
@@ -752,7 +752,7 @@ _.Zones =
 						q(45358),	-- Contagion Containment
 						q(45837),	-- Creeping Fel
 						q(45531),	-- Creeping Fel
-						q(46821),	-- Creepy Crawlies					
+						q(46821),	-- Creepy Crawlies
 						q(45969),	-- Defense of the Ancient
 						q(45970),	-- Duty's End
 						q(46829),	-- Elemental Abuse
@@ -778,7 +778,7 @@ _.Zones =
 						q(45743),	-- Judgment of Odyn
 						q(45776),	-- Keys are a Crutch
 						q(45653),	-- Kill it with Fire!
-						q(45472),	-- Kraken Eggs					
+						q(45472),	-- Kraken Eggs
 						q(46308),	-- Leave a Trail
 						q(46046),	-- Life's a Lich
 						q(46754),	-- Magical Beasts
@@ -822,8 +822,8 @@ _.Zones =
 						q(45791),	-- War Materiel
 						q(45930),	-- We Didn't Start the Fire
 						q(45977),	-- Where There is a Whip...
-						q(44748),	-- Winged Terrors					
-					}),				
+						q(44748),	-- Winged Terrors
+					}),
 					q(44057),	-- A "Noble" Event
 					q(45571),	-- A Bit of Espionage
 					qg(119531, q(44720)),	-- A Call to Action
@@ -1010,7 +1010,7 @@ _.Zones =
 					q(45556),	-- Ready to Strike
 					q(43266),	-- Recruiting the Troops
 					q(45251),	-- Redundancy
-					q(46769),	-- Relieved of Their Valuables					
+					q(46769),	-- Relieved of Their Valuables
 					q(40419),	-- Rescue Mission
 					q(44889),	-- Resource Management
 					q(45764),	-- Restoring Equilibrium
@@ -1091,7 +1091,7 @@ _.Zones =
 					q(46690),	-- The Legend of the Wardenscale
 					q(43545),	-- The Lord of Black Rook Hold
 					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold					
+					q(44277),	-- The Lord of Black Rook Hold
 					q(46772),	-- The Mage Tower
 					q(46666),	-- The Motherlode
 					q(46774),	-- The Nether Disruptor
@@ -1145,7 +1145,7 @@ _.Zones =
 					q(46689),	-- Wisp-Touched Elderhide
 					q(46069),	-- Worthy of the Title
 					q(46256),	-- X Treasures Found, 1 Challenge Attempted
-					q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated	
+					q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 				}),
 				--]]
 				}),
@@ -1283,7 +1283,7 @@ _.Zones =
 						["npcID"] = 121107,		-- Lady Eldrathe
 						["questID"] = 47026,	-- Rare Elite 22
 					},
-					n(119629, {	-- Lord Hel'Nurath 
+					n(119629, {	-- Lord Hel'Nurath
 						["groups"] = {
 							i(142233),	-- Shadowy Reins of the Accursed Wrathsteed
 						},
@@ -1324,60 +1324,60 @@ _.Zones =
 									["modelID"] = 71795,
 									["questID"] = 43715,
 									["description"] = "|cFFFFFFFFStep 1:|r Head to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffThe demons are taking over this island, you may want to leave.|r \n\nChoose option 1 again. \n\n|cffcc33ffYou must know much. Will you help us defeat them?|r \n\nHe tells you to go away.",
-								}),	
+								}),
 								o(252412, {	-- Mound of Dirt
 									["icon"] = "Interface\\Icons\\INV_MISC_DUST_05",
-									["questID"] = 43729,						
+									["questID"] = 43729,
 									["description"] = "|cFFFFFFFFStep :2|r Head to the |cFFFFD700Feldust Cavern|r at |cFFFFFFFF58.56, 53.99|r.  Walk inside to |cFFFFFFFF57.45, 55.95|r and click the |cFFFFD700Mound of Dirt|r to loot the |cFFFFD700Weathered Relic|r\n\nHead back to |cFFFFFFFF37.17, 71.82|r. Speak with |cFFFFD700Drak'thul|r and choose option 1. \n\n|cffcc33ffDo you recognize this relic?|r \n\nSpeak to him again and choose option 1. \n\n|cffcc33ffTell me of these whispers.|r\n\nSpeak to him again and choose option 1.\n\n|cffcc33ffDrak'thul?|r.\n\nSpeak to him again and choose option 1. \n\n|cffcc33ffYou are yourself again. What happened?|r \n\nSpeak to him again and he will tell you to go away",
-								}),	
+								}),
 								o(252557, {	-- Hungering Orb 1
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43730,						
+									["questID"] = 43730,
 									["description"] = "|cFFFFFFFFStep 3:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF37.96, 37.41|r, walk down into the cave and click on the purple |cFFFFD700Hungering Orb|r in the fountain.",
 								}),
 								o(252558, {	-- Hungering Orb 2
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43731,						
+									["questID"] = 43731,
 									["description"] = "|cFFFFFFFFStep 4:|r This step will send you to |cFFFFD700Stormheim|r.  Head to |cFFFFFFFF32.92, 75.90|r, walk into the cave and make sure to avoid the |cFFFFD700Kangaxx|r.  Click on the |cFFFFD700Hungering Orb|r at the back of the cave in the sack of scrolls.",
 								}),
 								o(252559, {	-- Hungering Orb 3
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43732,						
+									["questID"] = 43732,
 									["description"] = "|cFFFFFFFFStep 5:|r This step will send you to Val'sharah|r.  Head to |cFFFFFFFF41.51, 84.18|r, walk into the cave and take a left to see a table with a note on it.  Turn left and walk over the rocks, turn back right and kill the |cFFFFD700Arcane Servitor|r.  Click the |cFFFFD700Hungering Orb|r sitting on the ground between two sleeping pads.",
 								}),
 								o(252560, {	-- Hungering Orb 4
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43733,						
+									["questID"] = 43733,
 									["description"] = "|cFFFFFFFFStep 6:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF29.16, 78.57|r, swim down and the cave is under the rock ledge.  Walk forward avoiding the steam explosions and click on the |cFFFFD700Hungering Orb|r sitting under a leanto in some leaves.\n\n|cffcc33ffNote: Be careful not to die to fatigue, fatigue will stop once in the cave.|r",
 								}),
 								o(252561, {	-- Hungering Orb 5
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43734,						
+									["questID"] = 43734,
 									["description"] = "|cFFFFFFFFStep 7:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF59.37, 13.13|r, walk down into the cave and click on the |cFFFFD700Hungering Orb|r that is wrapped in stone beside a broken table.",
 								}),
 								o(252562, {	-- Hungering Orb 6
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43735,						
+									["questID"] = 43735,
 									["description"] = "|cFFFFFFFFStep 8:|r This step will send you to |cFFFFD700The Great Sea|r near |cFFFFD700Stormheim|r.  Head to the |cFFFFD700Shield's Rest|r flight point.  Fly northwest until you see a broken statue with a large axe in the water named |cFFFFD700Sotnar's Rest|r.  Swim down where the hand comes out of the water between the 2 jutting  stones and you should see a |cFFFFD700Toothless Great White|r.  Swim down beneath the shark and turn into the opening then swim up into the cave.  Avoid the steam explosions and click on the |cFFFFD700Hungering Orb|r.",
 								}),
 								o(252563, {	-- Hungering Orb 7
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43736,						
+									["questID"] = 43736,
 									["description"] = "|cFFFFFFFFStep 9:|r This step will send you to |cFFFFD700Highmountain|r.  Head to |cFFFFFFFF55.84, 38.47|r.  This cave is to the right of the main cave here through the bushes.  Click on the |cFFFFD700Hungering Orb|r that is under the dead animal skull on the ground.",
 								}),
 								o(252564, {	-- Hungering Orb 8
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43737,						
+									["questID"] = 43737,
 									["description"] = "|cFFFFFFFFStep 10:|r This step will send you to |cFFFFD700Azsuna|r.  Head to |cFFFFFFFF54.02, 26.18|r, walk down into the cave and click the |cFFFFD700Hungering Orb|r that is under the plant next to the second pillar.",
 								}),
 								o(252565, {	-- Hungering Orb 9
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43760,						
+									["questID"] = 43760,
 									["description"] = "|cFFFFFFFFStep 11:|r This step will send you to |cFFFFD700Eye of Azshara|r, the zone.  Head to |cFFFFFFFF79.52, 89.31|r.  Swim down to find a wrecked ship, you can swim into the ship between the anchor and the rock throught the seaweed.  Swim up and to the platform above and through the hole on right side.  Now swim through the seaweed hole on left and down.  Turn around and swim under the beam then through the seaweed to the left.  Click the  |cFFFFD700Hungering Orb|r that is on the right side in the water.",
 								}),
 								o(252434, {	-- Hungering Orb 10
 									["icon"] = "Interface\\Icons\\INV_Misc_Orb_04",
-									["questID"] = 43761,						
+									["questID"] = 43761,
 									["description"] = "|cFFFFFFFFStep 12:|r This step will send you to |cFFFFD700Broken Shore|r.  Head to |cFFFFFFFF37.17, 71.82|r.  Click the |cFFFFD700Hungering Orb|r that is on the stone table near |cFFFFD700Drak'Thul|r",
 								}),
 								n(111573, {	-- Kosumoth the Hungering
@@ -1389,12 +1389,12 @@ _.Zones =
 									["isWeekly"] = true,
 									["description"] = "You can now head to |cFFFFD700Eye of Azshara|r, the zone, and kill |cFFFFD700Kosumoth the Hungering|r when |cFFFFD700DANGER: Kosumoth the Hungering|r world quest is active to get your pet and mount.",
 								}),
-							},	
+							},
 							["description"] = "This will show you how to unlock |cFFFFD700Kosumoth the Hungering|r who has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",
 						}),
-					},		
-					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",	
-				}),				
+					},
+					["icon"] = "Interface\\Icons\\Ability_Racial_PackHobgoblin",
+				}),
 				n(-2, { 	-- Vendors
 					{	-- Syaith <Loaner Demon>
 						["npcID"] = 118403,	-- Syaith <Loaner Demon>
@@ -1435,7 +1435,7 @@ _.Zones =
 										i(141378),	-- Unholy 1H Sword
 										i(141374),	-- Unholy 2H Polearm
 										i(141380),	-- Unholy 1H Warsword
-										i(141364),	-- Unholy 2H Sword								
+										i(141364),	-- Unholy 2H Sword
 								},
 							},
 							{ -- Arsenal: Armaments of the Silver Hand
@@ -1444,10 +1444,10 @@ _.Zones =
 								["groups"] = {
 										i(141370),	-- Ardent Defender
 										i(150953),	-- Ardent Gavel
-										i(141367),	-- Ardent Hammer			
+										i(141367),	-- Ardent Hammer
 										i(141368),	-- Ardent Warhammer
 										i(141654),	-- Gilded Defender
-										i(141653),	-- Gilded Warhammer		
+										i(141653),	-- Gilded Warhammer
 								},
 							},
 							i(147708),	-- Legion Invasion Simulator Toy
@@ -1457,7 +1457,7 @@ _.Zones =
 								["itemID"] = 147775,	-- Nether Portal Disruptor
 								["description"] = "Can be used to summon rare elite mobs from Nether Portals while the Nether Disruptor is up. Can be bought or sold on the Auction House.",
 							},
-							i(151541),	-- Technique: Glyph of Floating 
+							i(151541),	-- Technique: Glyph of Floating
 							i(141067),	-- Technique: Glyph of Wrathguard
 							i(147216, {	-- Dauntless Hood
 								i(147241),	-- Cloth
@@ -1465,7 +1465,7 @@ _.Zones =
 								i(147243),	-- Mail
 								i(147244),	-- Plate
 							}),
-							i(147221, {	-- Dauntless Choker	
+							i(147221, {	-- Dauntless Choker
 								i(147263),	-- Animus Pendant
 							}),
 							i(147218, {	-- Dauntless Spaulders
@@ -1513,10 +1513,10 @@ _.Zones =
 								i(147235),	-- Mail
 								i(147236),	-- Plate
 							}),
-							i(147220, {	-- Dauntless Ring	
+							i(147220, {	-- Dauntless Ring
 								i(147257),	-- Avenging Band
 							}),
-							i(147223, {	-- Dauntless Trinket	
+							i(147223, {	-- Dauntless Trinket
 								i(147275),	-- Beguiler's Talisman
 								i(147276),	-- Spellbinder's Seal
 								i(147278),	-- Stalwart Crest
@@ -1854,7 +1854,7 @@ _.Zones =
 									12,	-- Vengeance Demon Hunter
 									11,	-- Guardian Druid
 									10,	-- Brewmaster Monk
-									2,	-- Protection Paladin 
+									2,	-- Protection Paladin
 									1,	-- Protection Warrior
 								},
 								["qgs"] = {
@@ -1906,7 +1906,7 @@ _.Zones =
 						["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
 						["u"] = 41,
 					}),
-					n(-2, {	-- Vendors	
+					n(-2, {	-- Vendors
 						n(121589, {	-- Thaumaturge Vashreen <Purveryor of Exquisite Furnishings>
 							["groups"] = {
 								un(2, i(147796, {	-- Relinquished Hood
@@ -1972,6 +1972,6 @@ _.Zones =
 				676,	-- Broken Shore (Opening Warrior OH map)
 			},
 			["description"] = "|cff66ccffBroken Shore is the new max-level zone introduced in Patch 7.2 with World Quests, Armies of Legionfall Reputation, Nethershards, and a new dungeon and raid. |r",
-		}),	
+		}),
 	}),
 };

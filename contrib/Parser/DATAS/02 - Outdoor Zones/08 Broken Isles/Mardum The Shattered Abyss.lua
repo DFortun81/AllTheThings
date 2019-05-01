@@ -86,40 +86,40 @@ _.Zones =
 						["groups"] = {
 							i(128954),	-- Power Handler's Gloves
 							i(133314),	-- Power Handler's Gloves
-						},			
+						},
 						["qg"] = 98711,	-- Kor'vas Bloodthorn
-						["sourceQuests"] = { 38819, 38727, 38725 },	-- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche			
-					}),				
-					q(40051, {	-- Fel Secrets	
-						["qg"] = 99045,	-- Kor'vas Bloodthorn			
-						["sourceQuests"] = { 40222 },	-- The Imp Mother's Tome			
-					}),				
+						["sourceQuests"] = { 38819, 38727, 38725 },	-- Their Numbers Are Legion / Stop the Bombardment / Into the Foul Creche
+					}),
+					q(40051, {	-- Fel Secrets
+						["qg"] = 99045,	-- Kor'vas Bloodthorn
+						["sourceQuests"] = { 40222 },	-- The Imp Mother's Tome
+					}),
 					q(39515, {	-- Vengeance Will Be Mine! [Only if you choose Vengeance Spec]
-						["qg"] = 93127,	-- Kayn Sunfury			
-						["sourceQuests"] = { 40051 },	-- Fel Secrets			
-					}),				
+						["qg"] = 93127,	-- Kayn Sunfury
+						["sourceQuests"] = { 40051 },	-- Fel Secrets
+					}),
 					q(39516, {	-- Cry Havoc and Let Slip the Illidari! [Only if you choose Havoc Spec]
-						["qg"] = 93127,	-- Kayn Sunfury	
+						["qg"] = 93127,	-- Kayn Sunfury
 						["sourceQuests"] = { 40051 },	-- Fel Secrets
 					}),
 					q(39663, {	-- On Felbat Wings
 						["qg"] = 93127,	-- Kayn Sunfury
 						["sourceQuests"] = { 39515, 39516 },	-- Vengeance Will Be Mine! /  Cry Havoc and Let Slip the Illidari!
 					}),
-					q(38728, {	-- The Keystone			
-						["groups"] = {			
+					q(38728, {	-- The Keystone
+						["groups"] = {
 							i(128955),	-- The Brood Queen's Veil
 							i(133310),	-- The Brood Queen's Veil
-						},			
-						["qg"] = 97297,	-- Cyana Nightglaive			
-						["sourceQuests"] = { 39663 },	-- On Felbat Wings			
-					}),				
-					q(38729, {	-- Return to the Black Temple			
+						},
+						["qg"] = 97297,	-- Cyana Nightglaive
+						["sourceQuests"] = { 39663 },	-- On Felbat Wings
+					}),
+					q(38729, {	-- Return to the Black Temple
 						["groups"] = {
 							i(132243),	-- Fel-Etched Glaive
-						},			
-						["qg"] = 97303,	-- Kayn Sunfury			
-						["sourceQuests"] = { 38728 },	-- The Keystone			
+						},
+						["qg"] = 97303,	-- Kayn Sunfury
+						["sourceQuests"] = { 38728 },	-- The Keystone
 					}),
 				}),
 				n(-212, {	-- Treasure Chest
@@ -194,25 +194,25 @@ _.Zones =
 						["questID"] = 40231,	-- Nefarious Ring
 					}),
 					n(97370, { 	-- General Volroth
-						["groups"] = {	
+						["groups"] = {
 							i(128947),	-- Pit Lord's Cuffs
 							i(133313),	-- Pit Lord's Cuffs
 						},
 						["questID"] = 40234,
 					}),
 					n(97059, { 	-- King Voras
-						["groups"] = {	
+						["groups"] = {
 							i(128944),	-- Voras' Silk Drape
 						},
 						["questID"] = 40232,
-					}), 
+					}),
 					n(97057,  { -- Overseer Brutarg
 						["groups"] = {
 							i(133580),	-- Brutarg's Sword Tip
 						},
 						["questID"] = 40233,	-- Brutarg's Sword Tip
-					}),			
-				}),	
+					}),
+				}),
 				m(677, {	-- Vault of the Wardens: Vault of Silence
 					["groups"] = {
 						n(-17, {	-- Quests
@@ -220,7 +220,7 @@ _.Zones =
 								["groups"] = {
 									i(132243),	-- Fel-Etched Glaive
 									i(128956),	-- Fel-Etched Glaive
-								},			
+								},
 								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
 								["qg"] = 92718,	-- Maiev Shadowsong
 								["sourceQuests"] = { 38729 },	-- Return to the Black Temple
@@ -228,23 +228,23 @@ _.Zones =
 							q(39742, {	-- Vault of the Wardens
 								["description"] = "This is a bonus objective.",
 								["sourceQuests"] = { 38672 },	-- Breaking Out
-							}),	
+							}),
 							q(38689, {	-- Fel Infusion
 								["qg"] = 92986,	-- Altruis the Sufferer
 								["sourceQuests"] = { 38672 },	-- Breaking Out
-							}),	
+							}),
 							q(38690, {	-- Rise of the Illidari
 								["qg"] = 92980,	-- Kayn Sunfury
 								["sourceQuests"] = { 38672 },	-- Breaking Out
-							}),	
+							}),
 							q(38723, {	-- Stop Gul'dan! [Havoc Version]
 								["qg"] = 92718,	-- Maiev Shadowsong
 								["sourceQuests"] = { 38672, 38672 },	-- Fel Infusion / Rise of the Illidari
-							}),	
+							}),
 							q(40253, {	-- Stop Gul'dan! [Vengeance Version]
 								["qg"] = 92718,	-- Maiev Shadowsong
 								["sourceQuests"] = { 38672, 38672 },	-- Fel Infusion / Rise of the Illidari
-							}),	
+							}),
 							q(39682, {	-- Grand Theft Felbat
 								["qg"] = 96665,	-- Kayn Sunfury
 								["sourceQuests"] = { 38723, 40253 },	-- Stop Gul'dan!

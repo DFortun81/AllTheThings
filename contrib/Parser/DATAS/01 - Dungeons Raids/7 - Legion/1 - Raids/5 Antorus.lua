@@ -298,6 +298,10 @@ _.Instances = { tier(7, {	-- Legion
 							},
 							["groups"] = {
 								i(152816),	-- Antoran Charhound (MOUNT!)
+								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 								i(152000),	-- Shadowfused Chain Coif
 								i(152004),	-- Pauldrons of the Soulburner
 								i(151949),	-- Soul-Siphon Mantle

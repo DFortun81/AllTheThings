@@ -76,7 +76,6 @@ _.WorldDrops =
 					i(55439),	-- Mereldar Spellblade
 					i(55440),	-- Thondroril Spellblade
 					i(55441),	-- Blackwolf Spellblade
-					i(55442),	-- Sorrowmurk Spellblade
 					i(55790),	-- Toxidunk Dagger
 					un(7, i(66540)),	-- Miniature Winter Veil Tree
 					i(66880),	-- Potentate's Letter Opener
@@ -124,7 +123,6 @@ _.WorldDrops =
 					i(55376),	-- Mereldar Crystal
 					i(55377),	-- Thondroril Crystal
 					i(55378),	-- Blackwolf Crystal
-					i(55379),	-- Sorrowmurk Crystal
 					i(56109),	-- Book of Origination
 					i(66924),	-- Petrified Camel Haunch
 					i(67125),	-- Bone-Inlaid Sarcophagus Key
@@ -140,7 +138,6 @@ _.WorldDrops =
 					i(55367),	-- Mereldar Scepter
 					i(55368),	-- Thondroril Scepter
 					i(55369),	-- Blackwolf Scepter
-					i(55370),	-- Sorrowmurk Scepter
 					i(55380),	-- Razorwind Mace
 					i(55381),	-- Steelspark Mace
 					i(55382),	-- Angerfang Mace
@@ -263,7 +260,6 @@ _.WorldDrops =
 					i(55484),	-- Mereldar Wand
 					i(55485),	-- Thondroril Wand
 					i(55486),	-- Blackwolf Wand
-					i(55487),	-- Sorrowmurk Wand
 					i(55823),	-- Wand of Dark Worship
 					i(59460),	-- Theresa's Booklight
 					i(66920),	-- Cyu's Ornate Wand

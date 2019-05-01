@@ -7,48 +7,49 @@ _.ExpansionFeatures =
 		cl(5, {	-- Netherlight Temple (Priest)
 			["lvl"] = 98,
 			["mapID"] = 702,	-- Netherlight Temple (Priest)
-			["groups"] =  {
-				--[[
-				n(102589, {	-- Command Map
-					["groups"] = {
+			["g"] =  {
+		--[[	n(102589, {	-- Command Map
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 1.5,
-				}),
-				]]--
+				}),		]]--
 				n(-17, {	-- Quests
-					n(-10067, {	-- Artifact
+					n(-10067, {	-- Artifact Quests
 						q(40705, {	-- Priestly Matters
 							-- Quest is actually picked up in Dalaran.
+							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+							["classes"] = { 5 },	-- Priest
 							["qgs"] = {
 								101344,	-- Hooded Priestess (Horde)
 								102333,	-- Hooded Priestess (Alliance)
 							},
-							["classes"] = { 5 },	-- Priest
-							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						}),	
 						qh(40706, {	-- A Legend You Can Hold
-							["qg"] = 101314,	-- Alonsus Faol
 							["sourceQuests"] = { 40705 },	-- Priestly Matters
+							["qg"] = 101314,	-- Alonsus Faol
 						}),	
 						qh(43935, {	-- A Second Legend
-							["qg"] = 110564,	-- Alonsus Faol
 							["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+							["coord"] = { 51.1, 48.2, 702 },
+							["lvl"] = 102,
+							["qg"] = 110564,	-- Alonsus Faol
 						}),	
 						qh(44407, {	-- The Third Legend
-							["qg"] = 110564,	-- Alonsus Faol
 							["sourceQuests"] = { 43935 },	-- A Second Legend
+							["qg"] = 110564,	-- Alonsus Faol
 						}),	
 						i(128868, {	-- Light's Wrath
-							["groups"] = {
+							["g"] = {
 								q(41625, {	-- The Light's Wrath
-									["qg"] = 101314,	-- Alonsus Faol
 									["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
+									["classes"] = { 5 },	-- Priest
+									["qg"] = 101314,	-- Alonsus Faol
 								}),	
 								q(41626, {	-- A New Threat
-									["qg"] = 101314,	-- Alonsus Faol
 									["sourceQuests"] = { 41625 } ,	-- The Light's Wrath
+									["qg"] = 101314,	-- Alonsus Faol
 								}),	
 								q(41627, {	-- A Forgotten Enemy
 									["sourceQuests"] = { 41626 } ,	-- A New Threat
@@ -60,48 +61,48 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
 								}),	
 								q(41630, {	-- Unleashing Judgment
-									["qg"] = 105917,	-- Image of Kalec
 									["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
+									["qg"] = 105917,	-- Image of Kalec
 								}),	
 								q(41631, {	-- The Nexus Vault
-									["qg"] = 105917,	-- Image of Kalec
 									["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
+									["qg"] = 105917,	-- Image of Kalec
 								}),	
 								q(41632, {	-- A Gift of Time
-									["qg"] = 105081,	-- Archmage Kalec
 									["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
+									["qg"] = 105081,	-- Archmage Kalec
 								}),	
 							},
 						}),
 						i(128825, {	-- T'uure, Beacon of the Naaru
-							["groups"] = {
+							["g"] = {
 								qh(41957, {	-- The Vindicator's Plea
-									["qg"] = 101314,	-- Alonsus Faol
 									["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
+									["qg"] = 101314,	-- Alonsus Faol
 								}),	
 								qh(41966, {	-- House Call
-									["qg"] = 105602,	-- Vindicator Boros
 									["sourceQuests"] = { 41957 },	-- The Vindicator's Plea
+									["qg"] = 105602,	-- Vindicator Boros
 								}),	
 								qh(41967, {	-- Out of the Darkness
-									["qg"] = 105603,	-- Defender Barrem
 									["sourceQuests"] = { 41966 },	-- House Call
+									["qg"] = 105603,	-- Defender Barrem
 								}),	
 								qh(41993, {	-- Salvation From On High
-									["qg"] = 105684,	-- Alora
 									["sourceQuests"] = { 41967 },	-- Out of the Darkness
+									["qg"] = 105684,	-- Alora
 								}),	
 								qh(42074, {	-- Return of the Light
-									["qg"] = 106011,	-- Jace  Darkweaver
 									["sourceQuests"] = { 41993 },	-- Salvation From On High
+									["qg"] = 106011,	-- Jace  Darkweaver
 								}),
 							},
 						}),
 						i(128827, {	-- Xal'atah, Blade of the Black Empire
 							i(133958),	-- Secrets of the Void 
 							q(40710, {	-- Blade in Twilight
-								["qg"] = 101314,	-- Alonsus Faol
 								["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
+								["qg"] = 101314,	-- Alonsus Faol
 							}),
 						}),
 						i(141332, {	-- The Annals of Light and Shadow
@@ -123,7 +124,7 @@ _.ExpansionFeatures =
 								431, 432,	-- Scarlet Halls
 								350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
 							},
-							["groups"] = {
+							["g"] = {
 								q(44342, {	-- Volume VI
 									["title"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
 									["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
@@ -214,7 +215,7 @@ _.ExpansionFeatures =
 								i(139567, {	-- Writings of the End
 									["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
 									["coord"] = { 62.5, 36.3, 702 },
-									["groups"] = {
+									["g"] = {
 										artifact(738),	-- Discipline Priest Hidden Artifact Skin
 									},
 								}),
@@ -227,172 +228,258 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
 					}),
-					q(43390, {	-- Forgotten Shadows
-						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
-						["classes"] = { 5 },	-- Priest
-					}),
-					q(45789, {	-- The Sunken Vault
-						["lvl"] = 110,
-						["classes"] = { 5 },
-						["groups"] = {
-							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
-						},
-					}),
-					q(44251, {	-- Power Word: Armor
-						i(139757),	-- Head
-					}),
-					q(43402, {	-- High Priest of Netherlight
-						i(139759),	-- Chest
-					}),
-					q(43381, {	-- Champion: Mariella Ward
-						i(139762),	-- Bracers
-					}),
-					q(39864, {	-- Stormheim
-						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
-					}),
-					--Followers  Sort later 
 					q(46034, {	-- Champion: Aelthalyste
 						["qg"] = 120842,	-- Aelthalyste
-						["groups"] = {
+						["g"] = {
 							follower(1002),	-- Champion: Akama
 						},
 					}),
 					q(43398, {	-- Champion: Alonsus Faol
 						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
-						["groups"] = {
+						["g"] = {
 							follower(875),	-- Alonsus Faol
 						},
 					}),
 					q(43271, {	-- Champion: Calia Menethil
+						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["coord"] = { 51.6, 50.0, 702 },
 						["qg"] = 110596,	-- Calia Menethil
-						["groups"] = {
+						["g"] = {
 							follower(856),	-- Calia Menethil
 						},
 					}),
 					q(43272, {	-- Champion: High Priestess Ishanah
-						--["qg"] = ,	-- Can't find QG
-						["groups"] = {
+						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["coord"] = { 57.4, 26.9, 702 },
+						["qg"] = 110598,	-- High Priestess Ishanah
+						["g"] = {
 							follower(857),	-- High Priestess Ishanah
 						},
 					}),
 					q(43381, {	-- Champion: Mariella Ward
 						["qg"] = 111215,	-- Mariella Ward
-						["groups"] = {
+						["g"] = {
+							i(139762),	-- Bracers of the High Priest
 							follower(873),	-- Mariella Ward
 						},
 					}),
 					q(43382, {	-- Champion: Natalie Seline
 						["qg"] = 110684,	-- Natalie Seline <Cult of Forgotten Shadows>
-						["groups"] = {
+						["g"] = {
 							follower(874),	-- Natalie Seline
 						},
 					}),
 					q(43380, {	-- Champion: Sol
 						["qg"] = 110457,	-- Sol
-						["groups"] = {
+						["g"] = {
 							follower(872),	-- Sol
 						},
 					}),
-					q(42137, {	-- Champion: Yalia Sagewhisper
-						["qg"] = 110687,	-- Yalia Sagewhisper
-						["groups"] = {
-							follower(871),	-- Yalia Sagewhisper
+					q(43384, {	-- Demonic Runes
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 48.9, 48.7, 702 },
+						["lvl"] = 103,
+						["qg"] = 110571,	-- Delas Moonfang
+					}),
+					q(43390, {	-- Forgotten Shadows
+						["classes"] = { 5 },	-- Priest
+						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+					}),
+					q(43377, {	-- Halls of Valor: The Light Within
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 50.9, 46.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43402, {	-- High Priest of Netherlight
+						i(139759),	-- Chest
+					}),
+					q(44251, {	-- Power Word: Armor
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 38.9, 24.4, 702 },
+						["lvl"] = 110,
+						["g"] = {
+							i(139757),	-- Miter of the High Priest
 						},
 					}),
-					q(42138, {	-- Champion: Zabra Hexx
-						["qg"] = 110686,	-- Zabra Hexx
-						["groups"] = {
-							follower(870),	-- Zabra Hexx
+					q(43851, {	-- Recruiting More Troops
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 50.9, 46.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 109776,	-- Moira Thaurissan
+					}),
+					q(43275, {	-- Recruiting the Troops
+						["sourceQuests"] = { 43273 },	-- Spread the Word
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.2, 48.3, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43371, {	-- Relieving the Front Lines
+						["sourceQuests"] = { 43277 },	-- Tech It Up A Notch
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.1, 48.5, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43270, {	-- Rise, Champions
+						["sourceQuests"] = { 44100 },	-- Proper Introductions
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.1, 48.2, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43273, {	-- Spread the Word
+						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.2, 48.3, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(39864, {	-- Stormheim
+						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
+					}),
+					q(43277, {	-- Tech It Up A Notch
+						["sourceQuests"] = { 43276 },	-- Troops in the Field
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.1, 48.5, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43372, {	-- The Best and Brightest
+						["sourceQuests"] = { 43372 },	-- Whispers in the Void
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 48.2, 48.2, 702 },
+						["lvl"] = 103,
+						["qg"] = 110557,	-- Prophet Velen
+					}),
+					q(45789, {	-- The Sunken Vault
+						["classes"] = { 5 },
+						["lvl"] = 110,
+						["g"] = {
+							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
 						},
 					}),
-					--[[ Artifact Appearance  Quests Commented Out For Now
+					q(39731, {	-- The Tranquil Forest
+						["sourceQuests"] = { 44545 },	-- Pressing the Assault
+						["lvl"] = 98,
+					}),
+					q(43276, {	-- Troops in the Field
+						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.2, 48.3, 702 },
+						["lvl"] = 101,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43379, {	-- Velen's Vision
+						-- awarded third criteria for "fighting with style: classic" achievement
+						-- not sure if that should be here or on the achievement as a SQ or anything like that.
+						["sourceQuests"] = 43378,	-- Eye of Azshara: Through the Lens
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 48.3, 47.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 110557,	-- Prophet Velen
+					}),
+					q(43372, {	-- Whispers in the Void
+						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 51.2, 48.7, 702 },
+						["lvl"] = 103,
+						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					--[[ Artifact Appearance Quests Commented Out For Now
 					q(43420, {	-- A Hero's Weapon
 						sp(219663)	-- Heroic Weapons [No item associated]
+					}),
+					
+						["sourceQuests"] = {  },	-- 
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { , , 702 },
+						["lvl"] = ,
+						["qg"] = ,	-- 
 					}),
 					--]]
 				}),
 				n(-2, {	-- Vendors
 					n(112401, {	-- Meridelle Lightspark <Logistics>
-						i(140552),	-- Netherlight Spire
-						{
-							["itemID"] = 139757,		-- Helm
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+						["coord"] = { 39.0, 24.6, 702 },
+						["g"] = {
+							i(140552),	-- Netherlight Spire
+							i(139757, {	-- Miter of the High Priest
+								["g"] = {
+									{	-- Class Hall Helm Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
+									},
 								},
-							},
-						},
-						{
-							["itemID"] = 139760,		-- Shoulders
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+							}),
+							i(139760, {	-- Spaulders of the High Priest
+								["g"] = {
+									{	-- Class Hall Shoulders Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
+									},
 								},
-							},
-						},
-						{
-							["itemID"] = 139759,		-- Chestpiece
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+							}),
+							i(139759, {	-- Robes of the High Priest
+								["g"] = {
+									{	-- Class Hall Chestpiece Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
+									},
 								},
-							},
-						},
-						{
-							["itemID"] = 139762,		-- Bracers
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139756,		-- Gloves
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+							}),
+							i(139762, {	-- Bracers of the High Priest
+								["g"] = {
+									{	-- Class Hall Bracers Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
+									}
 								},
-							},
-						},
-						{
-							["itemID"] = 139761,		-- Belt
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+							}),
+							i(139756, {	-- Gloves of the High Priest
+								["g"] = {
+									{	-- Class Hall Gloves Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
+									},
 								},
-							},
-						},
-						{
-							["itemID"] = 139758,		-- Leggings
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+							}),
+							i(139761, {	-- Cord of the High Priest
+								["g"] = {
+									{	-- Class Hall Belt Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
+									},
 								},
-							},
-						},
-						{
-							["itemID"] = 139755,		-- Boots
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+							}),
+							i(139758, {	-- Leggings of the High Priest
+								["g"] = {
+									{	-- Class Hall Leggings Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
+									},
 								},
-							},
+							}),
+							i(139755, {	-- Steps of the High Priest
+								["g"] = {
+									{	-- Class Hall Boots Earned (A Classy Outfit)
+										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
+										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
+									},
+								},
+							}),
+							currency(1220, {	-- Order Resources
+								i(143727),	-- Champion's Salute Toy
+								i(124124),	-- Blood of Sargeras
+								i(140976),	-- High Priest's Lesser Armor Kit
+								i(140942),	-- High Priest's Armor Kit
+								i(140977),	-- High Priest's Greater Armor Kit
+							}),
 						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140976),	-- High Priest's Lesser Armor Kit
-							i(140942),	-- High Priest's Armor Kit
-							i(140977),	-- High Priest's Greater Armor Kit
-						}),
 					}),
 				}),
 			},

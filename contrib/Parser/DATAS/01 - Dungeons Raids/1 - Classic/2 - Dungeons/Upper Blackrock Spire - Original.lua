@@ -191,7 +191,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(10430, { 	-- The Beast
 					i(12731, { 	-- Pristine Hide of the Beast
 						["description"] = "This item was skinned off of The Beast with a skinning skill of 310. Prior to BC, this could only be accomplished with the Zulian Slicer or Finkle's Skinner.",
-						["groups"] = {	
+						["groups"] = {
 							q(5068, { 	-- Breastplate of Bloodthirst
 								un(2, i(12757)), 	-- Breastplate of Bloodthirst
 							}),
@@ -253,4 +253,4 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 		},
 	}),
-})};	
+})};

@@ -51,7 +51,7 @@ _.Instances = { tier(1, {	-- Classic
 				qh(27682, {	-- We Require More Minerals
 					["qg"] = 46241,	-- Aoren Sunglow
 				}),
-			}),	
+			}),
 			n(  0, {	-- Zone Drop
 				i(9420, {	-- Adventurer's Pith Helmet
 					["crs"] = {
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 						4852,	-- Stonevault Oracle
 					},
 				}),
-				i(9423),	-- The Jackhammer	
+				i(9423),	-- The Jackhammer
 				i(9391, {	-- The Shoveler
 					["crs"] = {
 						4863,	-- Jadespine Basilisk
@@ -255,7 +255,7 @@ _.Instances = { tier(1, {	-- Classic
 				["modelID"] = 64648,
 				["description"] = "These chests are scattered around the instance. They are usually locked, but sometimes spawn unlocked. Has a very long loot list, but drop chances are significantly less than Ancient Treasure.",
 				--["icon"] = "Interface\\Icons\\INV_Box_01"
-				["groups"] = {	
+				["groups"] = {
 					i(9967),	-- Embossed Plate Gauntlets
 					i(9904),	-- Jazeraint Pauldrons
 					i(9919),	-- Tracker's Cloak
@@ -290,7 +290,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
 					{	-- Plans: Heavy Mithril Helm
-						["itemID"] = 7990,	-- Plans: Heavy Mithril Helm 
+						["itemID"] = 7990,	-- Plans: Heavy Mithril Helm
 					},
 					{	-- Plans: Mithril Shield Spike
 						["itemID"] = 7976,	-- Plans: Mithril Shield Spike

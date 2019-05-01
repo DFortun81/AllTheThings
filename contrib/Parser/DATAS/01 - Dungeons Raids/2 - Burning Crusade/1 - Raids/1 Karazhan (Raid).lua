@@ -78,8 +78,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			e(  1553, {			-- Attumen The Huntsman
-				["creatureID"] = 16152,
+			e(1553, {			-- Attumen The Huntsman
+				["crs"] = {
+					16152,	-- Attumen the Huntsman
+					16151,	-- Midnight	
+				},
 				["groups"] = {
 					ach(882),	-- Fiery Warhorse's Reins
 					i(30480),	-- Fiery Warhorse's Reins (MOUNT!)

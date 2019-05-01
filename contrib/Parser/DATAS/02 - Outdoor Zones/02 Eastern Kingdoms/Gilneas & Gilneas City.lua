@@ -3,26 +3,34 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(179, { 	-- Gilneas	
-			["groups"] = {
---[[			
-				n(-17, { 	-- Quests
-					["groups"] = {
+	m(13, {	-- Eastern Kingdoms
+		m(179, {	-- Gilneas
+			["lvl"] = 1,
+			["maps"] = {
+				180,	-- Emberstone Mine
+				181,	-- Greymane Manor
+				182,	-- Greymane Manor
+			},
+			["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
+			["description"] = "|cff66ccffGilneas, once a human kingdom, was isolated from the rest of the world ever since the Second War. It is now home of Genn Graymane's worgen who have re-joined the Alliance once again since the Forsaken invasion and the Cataclysm wrecked their kingdom. Gilneas is a worgen-only leveling zone that relies heavily upon phasing. The starting zone covers how the player transforms into a Worgen, later aiding Graymane in trying to protect his kingdom from Sylvanas.|r",
+			["g"] = {
+--[[			n(-17, { 	-- Quests
+					["races"] = {22},
+					["g"] = {
 --						qa(14319),	-- Further Treatment (REMOVED in Beta)
 						qg(36140, qa(14347)),	-- Hold the Line
 						qg(36616, qa(14434)),	-- Rut'theran Village
 						qg(36140, qa(14348)),	-- You Can't Take 'Em Alone
 --						q(14220),	-- This Is the End (REMOVED in Beta)
 					},
-					["races"] = {22},
 				}),
 --]]				
 				m(202, { 	-- Gilneas City
-					["groups"] = {
+					["icon"] = "Interface\\Icons\\Achievement_worganhead",
+					["description"] = "|cff66ccffGilneas City was the capital city of the Kingdom of Gilneas. It was a dark and foreboding place of narrow cobblestone streets and crowded, Gothic houses, divided into four districts, centered around the Light's Dawn Cathedral. Shortly after the Cataclysm, the city was struck by a worgen assault and, later, a Forsaken invasion. After its abandonment by the Gilneans, the Alliance managed to retake the city, although its current status remains unknown.|r",
+					["g"] = {
 						n(-17, {	-- Quests
---[[						
-							qg(36743, qa(14467)),	-- Alas, Gilneas!
+--[[						qg(36743, qa(14467)),	-- Alas, Gilneas!
 							qg(34913, qa(14093)),	-- All Hell Breaks Loose
 							qg(36170, qa(14313)),	-- Among Humans Again
 							qg(35840, qa(14277, {	-- Arcane Inquiries
@@ -209,17 +217,8 @@ _.Zones =
 --]]							
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_worganhead",
-					["description"] = "|cff66ccffGilneas City was the capital city of the Kingdom of Gilneas. It was a dark and foreboding place of narrow cobblestone streets and crowded, Gothic houses, divided into four districts, centered around the Light's Dawn Cathedral. Shortly after the Cataclysm, the city was struck by a worgen assault and, later, a Forsaken invasion. After its abandonment by the Gilneans, the Alliance managed to retake the city, although its current status remains unknown.|r",
-				})
+				}),
 			},
-			["lvl"] = 1,	
-			["maps"] = {
-				180,	-- Emberstone Mine
-				182,	-- Greymane Manor
-			},
-			["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",	
-			["description"] = "|cff66ccffGilneas, once a human kingdom, was isolated from the rest of the world ever since the Second War. It is now home of Genn Graymane's worgen who have re-joined the Alliance once again since the Forsaken invasion and the Cataclysm wrecked their kingdom. Gilneas is a worgen-only leveling zone that relies heavily upon phasing. The starting zone covers how the player transforms into a Worgen, later aiding Graymane in trying to protect his kingdom from Sylvanas.|r",				
 		}),
 	}),
 };

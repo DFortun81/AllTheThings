@@ -28,6 +28,7 @@ _.Zones =
 								{ 47.4, 84.6, 109 },
 							},
 							["groups"] = {
+								ach(1312, crit(3)),	-- Bloody Rare
 								i(31201),	-- Illidari Cloak
 							},
 						}),
@@ -47,6 +48,7 @@ _.Zones =
 								{ 61.2, 32.2, 109 },
 							},
 							["groups"] = {
+								ach(1312, crit(8)),	-- Bloody Rare
 								i(31203),	-- Arcane Loop
 							},
 						}),
@@ -67,6 +69,7 @@ _.Zones =
 								{ 35.2, 19.6, 109 },
 							},
 							["groups"] = {
+								ach(1312, crit(16)),	-- Bloody Rare
 								i(31212),	-- Chimaerahide Leggings
 								i(31211),	-- Chimaerahide Pants
 								i(31210),	-- Chimaerascale Legguards

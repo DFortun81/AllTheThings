@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 				q( 44930,{ -- Deadmines: Sea'in Red
 					["groups"] = {
 						{ -- Ensemble: Blackened Defias Armor
-							["groups"] = {	
+							["groups"] = {
 								i(10399),	-- Blackened Defias Armor
 								i(10401),	-- Blackened Defias Gloves
 								i(10403),	-- Blackened Defias Belt
@@ -103,7 +103,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			d(  1, {	-- Normal	
+			d(  1, {	-- Normal
 				cr(47162, e(89, {	-- Glubtok
 					i(2169),	-- Buzzer Blade
 					i(5444),	-- Miner's Cape
@@ -152,9 +152,9 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(2074)), 	-- Solid Shortblade
 						})),
 						un(40, qa(166, { 	-- The Defias Brotherhood
-							un(2, i(6087)),		-- Chausses of Westfall 
-							un(2, i(2042)),		-- Staff of Westfall 
-							un(2, i(2041)),		-- Tunic of Westfall 
+							un(2, i(6087)),		-- Chausses of Westfall
+							un(2, i(2042)),		-- Staff of Westfall
+							un(2, i(2041)),		-- Tunic of Westfall
 						})),
 						un(40, qa(2040, { 	-- Underground Assault
 							un(2, i(7606)),		-- Polar Gauntlets
@@ -165,34 +165,34 @@ _.Instances = { tier(1, {	-- Classic
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["groups"] = {
-								},	
+								},
 								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(4416, { 	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["groups"] = {
-								},	
-								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",		
+								},
+								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(639, { 	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["groups"] = {
-								},	
-								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",	
+								},
+								["description"] = "You can obtain this appearance by doing a rogue only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(43, n(1731, { 	-- Goblin Craftsman 
+						un(43, n(1731, { 	-- Goblin Craftsman
 							un(7, i(1944)), 	-- Metalworking Gloves
 						})),
-						un(43, n(622, { 	-- Goblin Engineer 
+						un(43, n(622, { 	-- Goblin Engineer
 							un(7, i(1936)), 	-- Goblin Screwdriver
 						})),
-						un(43, n(3947, { 	-- Goblin Shipbuilder 
+						un(43, n(3947, { 	-- Goblin Shipbuilder
 							un(7, i(1943)), 	-- Goblin Mail Leggings
 						})),
-						un(43, n(641, { 	-- Goblin Woodcarver 
+						un(43, n(641, { 	-- Goblin Woodcarver
 							un(7, i(1945)), 	-- Woodworking Gloves
 						})),
 						un(43, n(646, { 	-- Mr. Smite

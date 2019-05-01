@@ -1051,7 +1051,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23028)),	-- Hailstone Band
 								un(2, i(23031)),	-- Band of the Inevitable
 							}),
-							n(15936, {	-- Heigan the Unclean	
+							n(15936, {	-- Heigan the Unclean
 								un(2, i(23019)),	-- Icebane Helmet
 								un(2, i(23033)),	-- Icy Scale Coif
 								un(2, i(23035)),	-- Preceptor's Hat
@@ -1064,7 +1064,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(23038)),	-- Band of Unnatural Forces
 								un(2, i(23037)),	-- Ring of Spiritual Fervor
 								un(2, i(23042)),	-- Loatheb's Reflection
-							}),	
+							}),
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
 					}),
@@ -1124,7 +1124,7 @@ _.Instances = { tier(1, {	-- Classic
 						["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
 					}),
 					n(-367, { 	-- The Construct Quarter
-						["groups"] = {		
+						["groups"] = {
 							n(16028, {	-- Patchwerk
 								un(2, i(22815)),	-- Severance
 								un(2, i(22818)),	-- The Plague Bearer
@@ -1157,8 +1157,8 @@ _.Instances = { tier(1, {	-- Classic
 						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
 					}),
 					n(-371, { 	-- The Upper Necropolis
-						["groups"] = {	
-							n(15989, {	-- Sapphiron	
+						["groups"] = {
+							n(15989, {	-- Sapphiron
 								un(2, i(23242)),	-- Claw of the Frost Wyrm
 								un(2, i(23043)),	-- The Face of Death
 								un(2, i(23049)),	-- Sapphiron's Left Eye

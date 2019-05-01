@@ -304,14 +304,14 @@ _.Zones =
 						["questID"] = 26806,
 						["qg"] = 3139,	-- Gar'Thok
 						["coord"] = { 51.8, 43.4, 1 },
-						["races"]= { 9, 1 },	-- Goblin
+						["races"]= { 9 },	-- Goblin
 						["sourceQuest"] = 26804,	-- Flight to Razor Hill
 					},
 					{	-- Return to Eitrigg
 						["questID"] = 26807,
 						["qg"] = 41140,	-- Burok
 						["coord"] = { 53.0, 43.6, 1 },
-						["races"]= { 9, 1 },	-- Goblin
+						["races"]= { 9 },	-- Goblin
 						["sourceQuest"] = 26806,	-- Reports to Orgrimmar
 					},
 					{	-- Riding On
@@ -357,6 +357,7 @@ _.Zones =
 						["questID"] = 835,
 						["qg"] = 3293,	-- Rezlak
 						["lvl"] = 7,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 46.3, 22.8, 1 },
 					},
 					{	-- Sent for Help
@@ -534,6 +535,7 @@ _.Zones =
 						["questID"] = 834,
 						["qg"] = 3293,	-- Rezlak
 						["lvl"] = 7,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 46.3, 22.8, 1 },
 					},
 --[[

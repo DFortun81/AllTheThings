@@ -62,77 +62,77 @@ _.Zones =
 						q(43532),	-- The Nighthold: Darkness Calls
 						q(43533, {	-- Balance of Power
 							cl(1, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(805),
 								artifact(669),
 								artifact(164),
 							  }
 							  }),
 							cl(2, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(16),
 								artifact(545),
 								artifact(856),
 							  }
 							}),
 							cl(3, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(219),
 								artifact(462),
 								artifact(481),
 							  }
 							}),
 							cl(4, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(237),
 								artifact(765),
 								artifact(71),
 							  }
 							}),
 							cl(5, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(735),
 								artifact(753),
 								artifact(255),
 							  }
 							}),
 							cl(6, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(368),
 								artifact(371),
 								artifact(403),
 							  }
 							}),
 							cl(7, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(310),
 								artifact(682),
 								artifact(781),
 							  }
 							}),
 							cl(8, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(184),
 								artifact(499),
 								artifact(134),
 							  }
 							}),
 							cl(9, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(198),
 								artifact(329),
 								artifact(818),
 							  }
 							}),
 							cl(10, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(517),
 								artifact(348),
 								artifact(525),
 							  }
 							}),
 							cl(11, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(419),
 								artifact(54),
 								artifact(434),
@@ -140,7 +140,7 @@ _.Zones =
 							  }
 							}),
 							cl(12, {
-							  ["groups"] = { 
+							  ["groups"] = {
 								artifact(36),
 								artifact(563),
 							  }
