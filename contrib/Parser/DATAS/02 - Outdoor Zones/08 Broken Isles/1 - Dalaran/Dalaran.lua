@@ -2088,10 +2088,6 @@ _.Zones =
 						["qg"] = 102594,	-- Marin Noggenfogger
 					}),
 				--	q(47079)	-- Delivering Lost Knowledge -- removed?
-					q(43384,  {	-- Demonic Runes
-						["classes"] = { 5 },
-						["qg"] = 110571,	-- Delas Moonfang
-					}),
 					q(47049,  {	-- Demonology: Fate of the Tideskorn
 						["classes"] = { 9 },
 						["qgs"] = { 90417, 115464 },	-- Archmage Khadgar (2 versions)
@@ -3139,10 +3135,6 @@ _.Zones =
 				--	q(43556),	-- Vault of the Wardens -- granted by mission board
 				--	q(44260),	-- Vault of the Wardens -- granted by mission board
 				--	q(44261),	-- Vault of the Wardens -- granted by mission board
-					q(43379,  {	-- Velen's Vision
-						["classes"] = { 5 },
-						["qg"] = 110557,	-- Prophet Velen
-					}),
 					q(40249,  {	-- Vengeance Will Be Ours
 						["classes"] = { 12 },
 						["qg"] = 99247,	-- Kayn Sunfury

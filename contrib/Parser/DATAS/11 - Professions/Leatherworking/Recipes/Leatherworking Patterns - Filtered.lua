@@ -25,7 +25,12 @@ profession(165, {	-- Leatherworking
 					["name"] = "Bags",
 					["categoryID"] = 250,
 					["g"] = {
-					}
+						{	-- Kodo Hide Bag
+							["recipeID"] = 5244,	-- Kodo Hide Bag
+							["races"] = HORDE_ONLY,
+							["description"] = "Pattern only available to Horde players.",
+						},
+					},
 				},
 				{
 					["name"] = "Helms",
@@ -102,7 +107,7 @@ profession(165, {	-- Leatherworking
 						{	-- Raptor Hide Harness
 							["recipeID"] = 4096,
 							["races"] = HORDE_ONLY,
-							["description"] = "Pattern only available to Horde players",
+							["description"] = "Pattern only available to Horde players.",
 						},
 						{	-- Red Dragonscale Breastplate
 							["recipeID"] = 19054,
@@ -197,7 +202,7 @@ profession(165, {	-- Leatherworking
 						{	-- Raptor Hide Belt
 							["recipeID"] = 4097,
 							["races"] = ALLIANCE_ONLY,
-							["description"] = "Pattern only available to Alliance players",
+							["description"] = "Pattern only available to Alliance players.",
 						},
 					}
 				},

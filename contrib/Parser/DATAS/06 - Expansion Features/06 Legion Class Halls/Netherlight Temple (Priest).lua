@@ -275,15 +275,41 @@ _.ExpansionFeatures =
 							follower(872),	-- Sol
 						},
 					}),
+					q(43384, {	-- Demonic Runes
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 48.9, 48.7, 702 },
+						["lvl"] = 103,
+						["qg"] = 110571,	-- Delas Moonfang
+					}),
 					q(43390, {	-- Forgotten Shadows
 						["classes"] = { 5 },	-- Priest
 						["qg"] = 110564,	-- Alonsus Faol <Bishop of Secrets>
+					}),
+					q(43377, {	-- Halls of Valor: The Light Within
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 50.9, 46.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 110564,	-- Alonsus Faol
 					}),
 					q(43402, {	-- High Priest of Netherlight
 						i(139759),	-- Chest
 					}),
 					q(44251, {	-- Power Word: Armor
-						i(139757),	-- Head
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 38.9, 24.4, 702 },
+						["lvl"] = 110,
+						["g"] = {
+							i(139757),	-- Miter of the High Priest
+						},
+					}),
+					q(43851, {	-- Recruiting More Troops
+						["sourceQuests"] = { 43379 },	-- Velen's Vision
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 50.9, 46.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 109776,	-- Moira Thaurissan
 					}),
 					q(43275, {	-- Recruiting the Troops
 						["sourceQuests"] = { 43273 },	-- Spread the Word
@@ -347,6 +373,15 @@ _.ExpansionFeatures =
 						["coord"] = { 51.2, 48.3, 702 },
 						["lvl"] = 101,
 						["qg"] = 110564,	-- Alonsus Faol
+					}),
+					q(43379, {	-- Velen's Vision
+						-- awarded third criteria for "fighting with style: classic" achievement
+						-- not sure if that should be here or on the achievement as a SQ or anything like that.
+						["sourceQuests"] = 43378,	-- Eye of Azshara: Through the Lens
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 48.3, 47.8, 702 },
+						["lvl"] = 103,
+						["qg"] = 110557,	-- Prophet Velen
 					}),
 					q(43372, {	-- Whispers in the Void
 						["sourceQuests"] = { 43371 },	-- Relieving the Front Lines
