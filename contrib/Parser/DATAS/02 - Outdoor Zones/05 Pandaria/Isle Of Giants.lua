@@ -5,6 +5,9 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(507, {	-- Isle of Giants
+			["lvl"] = 85,
+			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
+			["description"] = "|cff66ccffThe Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.|r",
 			["groups"] = {
 				n(-228, {	-- Flight Paths
 					fp(1221, {	-- Beeble's Wreck, Isle Of Giants
@@ -26,13 +29,15 @@ _.Zones =
 						dr(5, i(94573)),	-- Direhorn Runt
 					}),
 					n(70096, { 		-- War-God Dokah
-						["coord"] = {
+						["coords"] = {
 							{ 77.6, 82.6, 507 },
 							{ 78.6, 80.6, 507 },
 							{ 76.4, 83.8, 507 },
 						},
-						{	-- Big Bag of Zandalari Supplies
-							["itemID"] = 94158,	-- Big Bag of Zandalari Supplies
+						["groups"] = {
+							{	-- Big Bag of Zandalari Supplies
+								["itemID"] = 94158,	-- Big Bag of Zandalari Supplies
+							},
 						},
 					}),
 					n(69925, { 		-- Zandalari Dinomancer
@@ -148,9 +153,6 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 85,
-			["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
-			["description"] = "|cff66ccffThe Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.|r",
 		}),
 	}),
 };

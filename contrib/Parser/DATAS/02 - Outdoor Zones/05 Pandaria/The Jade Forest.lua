@@ -5,6 +5,19 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(371, {	-- The Jade Forest
+			["maps"] = {
+				372,	-- Greenstone Quarry
+				373,	-- Greenstone Quarry #2
+				374,	-- The Widows Wail
+				375,	-- Oona Kagu
+				447,	-- A brewing Storm
+				448,	-- the jade forest
+				791,	-- temple of the jade serpent #1
+				792,	-- temple of the jade serpent #2
+			},
+			["lvl"] = 80,
+			["achievementID"] = 6351,
+			["description"] = "|cff66ccffThe Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.|r",
 			["groups"] = {
 				n(-4, {	-- Achievements
 					["groups"] = {
@@ -12,66 +25,66 @@ _.Zones =
 						ach(7291),	-- In a Trail of Smoke (Jade Forest)
 						ach(7284, {	-- Is Another Man's Treasure
 							o(213741, {	-- Ancient Jinyu Staff
+								["questID"] = 31402,
 								["groups"] = {
 									i(86196),	-- Ancient Jinyu Staff
 								},
-								["questID"] = 31402,
 							}),
 							o(213364, {	-- Ancient Pandaren Mining Pick
+								["questID"] = 31399,
 								["groups"] = {
 									i(85777),	-- Ancient Pandaren Mining Pick
 								},
-								["questID"] = 31399,
 							}),
 							o(213742, {	-- Hammer of Ten Thunders
+								["questID"] = 31403,
 								["groups"] = {
 									i(86198),	-- Hammer of Ten Thunders
 								},
-								["questID"] = 31403,
 							}),
 							o(213743, {	-- Jade Infused Blade
+								["questID"] = 31307,
 								["groups"] = {
 									i(86199),	-- Jade Infused Blade
 								},
-								["questID"] = 31307,
 							}),
 							o(213363, {	-- Wodin's Mantid Shanker
+								["questID"] = 31397,
 								["groups"] = {
 									i(85776),	-- Wodin's Mantid Shanker
 								},
-								["questID"] = 31397,
 							}),
 						}),
 						ach(7997, {	-- Riches of Pandaria
 							o(213366, {	-- Ancient Pandaren Tea Pot
+								["description"] = "Located on the north-west coast at (26.2,32.5)",
 								["groups"] = {
 									i(85780, {	-- Ancient Pandaren Tea Pot
 										["questID"] = 31400,
 									}),
 								},
-								["description"] = "Located on the north-west coast at (26.2,32.5)",
 							}),
 							o(213368, {	-- Lucky Pandaren Coin
+								["description"] = "Located in the wishing fountain at (31.9,27.8)",
 								["groups"] = {
 									i(85781, {	-- Lucky Pandaren Coin
 										["questID"] = 31401,
 									}),
 								},
-								["description"] = "Located in the wishing fountain at (31.9,27.8)",
 							}),
 							o(213748, {	-- Pandaren Ritual Stone
+								["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
 								["groups"] = {
 									i(86216, {	-- Pandaren Ritual Stone
 										["questID"] = 31404,
 									}),
 								},
-								["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
 							}),
 							o(213362, {	-- Ship's Locker
+								["description"] = "Located underwater in a boat at (50.7,99.9)",
 								["groups"] = {
 									q(31396),	-- Ship's Locker
 								},
-								["description"] = "Located underwater in a boat at (50.7,99.9)",
 							}),
 						}),
 						ach(7289),	-- Shadow Hopper (Jade Forest)
@@ -181,6 +194,11 @@ _.Zones =
 							crit(1, {	-- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
 									q(29552, {	-- Critical Condition
+										["qgs"] = { 54614 },	-- Mishka
+										["sourceQuests"] = {
+											31736,	-- Envoy of the Alliance
+											31737,	-- The Cost of War
+										},
 										["groups"] = {
 											i(90387),	-- Crashed Gyrocopter Rotor
 											i(90388),	-- Grewatsword of Kofinna Kottr
@@ -188,11 +206,6 @@ _.Zones =
 											i(90384),	-- Peon-Chopping Axe
 											i(90386),	-- Recovery Team Shield
 											i(90389),	-- Skyguardian's Shield
-										},
-										["qgs"] = { 54614 },	-- Mishka
-										["sourceQuests"] = {
-											31736,	-- Envoy of the Alliance
-											31737,	-- The Cost of War
 										},
 									}),
 									q(31736, {	-- Envoy of the Alliance
@@ -246,6 +259,13 @@ _.Zones =
 										["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
 									}),
 									q(30070, {	-- The Fall of Ga'trul
+										["qg"] = 54616,	-- Sully "The Pickle" McLeary
+										["sourceQuests"]  = {
+											31741,	-- Twinspire Keep
+											31744,	-- Unfair Trade
+											31742,	-- Fractured Forces
+											31743,	-- Smoke Bfeore Fire
+										},
 										["groups"] = {
 											i(90345),	-- Peacebreaker's Armored Helm
 											i(90344),	-- Peacebreaker's Burnished Headcover
@@ -257,15 +277,13 @@ _.Zones =
 											i(90341),	-- Peacebreaker's Satin Hood
 											i(90340),	-- Peacebreaker's Silk Cowl
 										},
-										["qg"] = 54616,	-- Sully "The Pickle" McLeary
-										["sourceQuests"]  = {
-											31741,	-- Twinspire Keep
-											31744,	-- Unfair Trade
-											31742,	-- Fractured Forces
-											31743,	-- Smoke Bfeore Fire
-										},
 									}),
 									q(31735, {	-- The Right Tool For The Job
+										["qg"] = 54617,	-- Rell Nightwind
+										["sourceQuests"] = {
+											30069,	-- No Plan Survives Contact with the Enemy
+											31734,	-- Welcome Wagons
+										},
 										["groups"] = {
 											i(90354),	-- Armored Chestpiece of Eminent Domain
 											i(90353),	-- Burnished Chestguard of Eminent Domain
@@ -276,11 +294,6 @@ _.Zones =
 											i(90352),	-- Ringmail Armor of Eminent Domain
 											i(90350),	-- Satin Robe of Eminent Domain
 											i(90349),	-- Silk Robe of Eminent Domain
-										},
-										["qg"] = 54617,	-- Rell Nightwind
-										["sourceQuests"] = {
-											30069,	-- No Plan Survives Contact with the Enemy
-											31734,	-- Welcome Wagons
 										},
 									}),
 									q(31733, {	-- Touching Ground
@@ -304,6 +317,8 @@ _.Zones =
 										},
 									}),
 									q(31732, {	-- Unleash Hell
+										["qg"] = 66292,	--  Sky Admiral Rogers
+										["sourceQuests"] = { 29548 },	-- The Mission
 										["groups"] = {
 											i(90375),	-- Airship marine's Sharpshooter
 											i(90376),	-- Barricade-Breaker Cidgel
@@ -316,8 +331,6 @@ _.Zones =
 											i(90378),	-- Staff of the Skymagi
 											i(90374),	-- Sully's Hotwiring Knife
 										},
-										["qg"] = 66292,	--  Sky Admiral Rogers
-										["sourceQuests"] = { 29548 },	-- The Mission
 									}),
 									q(31734, {	-- Welcome Wagons
 										["qg"] = 54616,	-- Sully "The Pickle" McLeary
@@ -339,6 +352,8 @@ _.Zones =
 										},
 									}),
 									q(29559, {	-- Freeing Our Brothers
+										["qg"] = 55196,	-- Bold Karasshi
+										["sourceQuests"] = { 29553 },	-- The Missing Admiral
 										["groups"] = {
 											i(81022),	-- Cagebreaker's Leather Belt
 											i(81023),	-- Cagebreaker's Chain Links
@@ -350,8 +365,6 @@ _.Zones =
 											i(81029),	-- Cagebreaker's Armored Girdle
 											i(81030),	-- Cagebreaker's Heavy Girdle
 										},
-										["qg"] = 55196,	-- Bold Karasshi
-										["sourceQuests"] = { 29553 },	-- The Missing Admiral
 									}),
 									q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 										["qg"] = 66292,	-- Sky Admiral Rogers
@@ -362,6 +375,12 @@ _.Zones =
 										["sourceQuests"] = { 29759 },	-- Kung Din
 									}),
 									q(29759, {	-- Kung Din
+										["qg"] = 55196,	-- Bold Karasshi
+										["sourceQuests"] = {
+											29558,	-- The Path of War
+											29559,	-- Freeing Our Brothers
+											29560,	-- Ancient Power
+										},
 										["groups"] = {
 											i(90371),	-- Landfall Burnished Greaves
 											i(90366),	-- Landfall Chain Boots
@@ -372,12 +391,6 @@ _.Zones =
 											i(90368),	-- Landfall Satin Treads
 											i(90367),	-- Landfall Silk Treads
 											i(90372),	-- Landfall Warboots
-										},
-										["qg"] = 55196,	-- Bold Karasshi
-										["sourceQuests"] = {
-											29558,	-- The Path of War
-											29559,	-- Freeing Our Brothers
-											29560,	-- Ancient Power
 										},
 									}),
 									q(29885, {	-- Road Rations
@@ -436,6 +449,8 @@ _.Zones =
 										["sourceQuests"] = { 29903 },	-- A Perfect Match
 									}),
 									q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
+										["qg"] = 60970,	-- Admiral Taylor
+										["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
 										["groups"] = {
 											i(80788),	-- Jinyu Meditation Staff
 											i(80789),	-- Jinyu Divining Rod
@@ -448,8 +463,6 @@ _.Zones =
 											i(80796),	-- Jinyu Dagger
 											i(80797),	-- Jinyu Combat Mace
 										},
-										["qg"] = 60970,	-- Admiral Taylor
-										["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
 									}),
 									q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
 										["qg"] = 60970,	-- Admiral Taylor
@@ -507,6 +520,8 @@ _.Zones =
 										["sourceQuests"] = { 29635 },	-- Xiao, the Eater
 									}),
 									q(29630, {	-- And a Heavy Fist
+										["qg"] = 54915,	-- Groundskeeper Wu
+										["sourceQuests"] = { 29627 },	-- A Proper Weapon
 										["groups"] = {
 											i(80740),	-- Ambermist Gloves
 											i(80741),	-- Blackthicket Gloves
@@ -518,10 +533,10 @@ _.Zones =
 											i(80747),	-- Thunderwood Gauntlets
 											i(80748),	-- Jade Tiger Gauntlets
 										},
-										["qg"] = 54915,	-- Groundskeeper Wu
-										["sourceQuests"] = { 29627 },	-- A Proper Weapon
 									}),
 									q(29624, {	-- Attention
+										["qg"] = 54917,	-- Instructor Xann
+										["sourceQuests"] = { 29623 },	-- Perfection
 										["groups"] = {
 											i(80731),	-- Ambermist Cord
 											i(80732),	-- Blackthicket Belt
@@ -533,27 +548,15 @@ _.Zones =
 											i(80738),	-- Thunderwood Girdle
 											i(80739),	-- Jade Tiger Girdle
 										},
-										["qg"] = 54917,	-- Instructor Xann
-										["sourceQuests"] = { 29623 },	-- Perfection
 									}),
 									q(29632, {	-- Becoming Battle-Ready
 										["qg"] = 54922,	-- Master Stone Fist
 										["sourceQuests"] = { 29620 },	-- The Great Banquet
 									}),
 									q(29639, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
-										["groups"] = {
-											i(80798),	-- Greataxe of Honor
-											i(80799),	-- Sword of Honor
-											i(80800),	-- Tian Defender
-											i(80801),	-- Tian Protector
-											i(80802),	-- Blade of Honor
-											i(80803),	-- Mace of Honor
-										},
 										["qg"] = 54917,	-- Instructor Xann
 										["sourceQuests"] = { 29624 },	-- Attention
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-									}),
-									q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["groups"] = {
 											i(80798),	-- Greataxe of Honor
 											i(80799),	-- Sword of Honor
@@ -562,11 +565,11 @@ _.Zones =
 											i(80802),	-- Blade of Honor
 											i(80803),	-- Mace of Honor
 										},
+									}),
+									q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["qg"] = 54918,	-- Instructor Myang
 										["sourceQuests"] = { 29637 },	-- The Rumpus
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-									}),
-									q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["groups"] = {
 											i(80798),	-- Greataxe of Honor
 											i(80799),	-- Sword of Honor
@@ -575,9 +578,19 @@ _.Zones =
 											i(80802),	-- Blade of Honor
 											i(80803),	-- Mace of Honor
 										},
+									}),
+									q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["qg"] = 54915,	-- Groundskeeper Wu
 										["sourceQuests"] = { 29628, 29629, 29630 },	-- A Strong Back, A Steady Hand, And a Heavy Fist
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+										["groups"] = {
+											i(80798),	-- Greataxe of Honor
+											i(80799),	-- Sword of Honor
+											i(80800),	-- Tian Defender
+											i(80801),	-- Tian Protector
+											i(80802),	-- Blade of Honor
+											i(80803),	-- Mace of Honor
+										},
 									}),
 									q(29626, {	-- Groundskeeper Wu
 										["qg"] = 54926,	-- Xiao
@@ -599,6 +612,8 @@ _.Zones =
 										["qg"] = 54913,	-- Lin Tenderpaw
 									}),
 									q(29637, {	-- The Rumpus
+										["qg"] = 54918,	-- Instructor Myang
+										["sourceQuests"] = { 29636 },	-- A Test of Endurance
 										["groups"] = {
 											i(84251),	-- Staff of Inner Focus
 											i(84252),	-- Instructor's Staff
@@ -611,10 +626,10 @@ _.Zones =
 											i(84259),	-- Regal Shortblade
 											i(84260),	-- Mace of Serenity
 										},
-										["qg"] = 54918,	-- Instructor Myang
-										["sourceQuests"] = { 29636 },	-- A Test of Endurance
 									}),
 									q(29635, {	-- Xiao, the Eater
+										["qg"] = 54922,	-- Master Stone Fist
+										["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
 										["groups"] = {
 											i(88693),	-- Bamboo Plate Armwraps
 											i(88692),	-- Fox Grove Bracers
@@ -626,8 +641,6 @@ _.Zones =
 											i(88690),	-- Bamboo Leaf Armplates
 											i(88691),	-- Bamboo Plate Armplates
 										},
-										["qg"] = 54922,	-- Master Stone Fist
-										["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
 									}),
 									q(29622, {	-- Your Training Starts Now
 										["qg"] = 54926,	-- Xiao
@@ -666,6 +679,7 @@ _.Zones =
 										["qg"] = 54697,	-- Shao the Defiant
 									}),
 									q(29585, {	-- Spitfire
+										["qg"] = 54854,	-- Gentle Mother Hanae
 										["groups"] = {
 											i(84243),	-- Bamboo Fiber Gloves
 											i(84244),	-- Bamboo Leaf Gloves
@@ -677,7 +691,6 @@ _.Zones =
 											i(84250),	-- Bamboo Leaf Gauntlets
 											i(88709),	-- Bamboo Plate Gauntlets
 										},
-										["qg"] = 54854,	-- Gentle Mother Hanae
 									}),
 									q(29586, {	-- The Splintered Path
 										["qg"] = 55209,	-- Traumatized Nectarbreeze Farmer
@@ -761,6 +774,8 @@ _.Zones =
 										["sourceQuests"] = { 29635 },	-- Xiao, the Eater
 									}),
 									q(29630, {	-- And a Heavy Fist
+										["qg"] = 54915,	-- Groundskeeper Wu
+										["sourceQuests"] = { 29627 },	-- A Proper Weapon
 										["groups"] = {
 											i(80740),	-- Ambermist Gloves
 											i(80741),	-- Blackthicket Gloves
@@ -772,10 +787,10 @@ _.Zones =
 											i(80747),	-- Thunderwood Gauntlets
 											i(80748),	-- Jade Tiger Gauntlets
 										},
-										["qg"] = 54915,	-- Groundskeeper Wu
-										["sourceQuests"] = { 29627 },	-- A Proper Weapon
 									}),
 									q(29624, {	-- Attention
+										["qg"] = 54917,	-- Instructor Xann
+										["sourceQuests"] = { 29623 },	-- Perfection
 										["groups"] = {
 											i(80731),	-- Ambermist Cord
 											i(80732),	-- Blackthicket Belt
@@ -787,27 +802,15 @@ _.Zones =
 											i(80738),	-- Thunderwood Girdle
 											i(80739),	-- Jade Tiger Girdle
 										},
-										["qg"] = 54917,	-- Instructor Xann
-										["sourceQuests"] = { 29623 },	-- Perfection
 									}),
 									q(29632, {	-- Becoming Battle-Ready
 										["qg"] = 54922,	-- Master Stone Fist
 										["sourceQuests"] = { 29620 },	-- The Great Banquet
 									}),
 									q(29639, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
-										["groups"] = {
-											i(80798),	-- Greataxe of Honor
-											i(80799),	-- Sword of Honor
-											i(80800),	-- Tian Defender
-											i(80801),	-- Tian Protector
-											i(80802),	-- Blade of Honor
-											i(80803),	-- Mace of Honor
-										},
 										["qg"] = 54917,	-- Instructor Xann
 										["sourceQuests"] = { 29624 },	-- Attention
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-									}),
-									q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["groups"] = {
 											i(80798),	-- Greataxe of Honor
 											i(80799),	-- Sword of Honor
@@ -816,11 +819,11 @@ _.Zones =
 											i(80802),	-- Blade of Honor
 											i(80803),	-- Mace of Honor
 										},
+									}),
+									q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["qg"] = 54918,	-- Instructor Myang
 										["sourceQuests"] = { 29637 },	-- The Rumpus
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-									}),
-									q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["groups"] = {
 											i(80798),	-- Greataxe of Honor
 											i(80799),	-- Sword of Honor
@@ -829,9 +832,19 @@ _.Zones =
 											i(80802),	-- Blade of Honor
 											i(80803),	-- Mace of Honor
 										},
+									}),
+									q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
 										["qg"] = 54915,	-- Groundskeeper Wu
 										["sourceQuests"] = { 29628, 29629, 29630 },	-- A Strong Back, A Steady Hand, And a Heavy Fist
 										["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+										["groups"] = {
+											i(80798),	-- Greataxe of Honor
+											i(80799),	-- Sword of Honor
+											i(80800),	-- Tian Defender
+											i(80801),	-- Tian Protector
+											i(80802),	-- Blade of Honor
+											i(80803),	-- Mace of Honor
+										},
 									}),
 									q(29626, {	-- Groundskeeper Wu
 										["qg"] = 54926,	-- Xiao
@@ -853,6 +866,8 @@ _.Zones =
 										["qg"] = 54913,	-- Lin Tenderpaw
 									}),
 									q(29637, {	-- The Rumpus
+										["qg"] = 54918,	-- Instructor Myang
+										["sourceQuests"] = { 29636 },	-- A Test of Endurance
 										["groups"] = {
 											i(84251),	-- Staff of Inner Focus
 											i(84252),	-- Instructor's Staff
@@ -865,10 +880,10 @@ _.Zones =
 											i(84259),	-- Regal Shortblade
 											i(84260),	-- Mace of Serenity
 										},
-										["qg"] = 54918,	-- Instructor Myang
-										["sourceQuests"] = { 29636 },	-- A Test of Endurance
 									}),
 									q(29635, {	-- Xiao, the Eater
+										["qg"] = 54922,	-- Master Stone Fist
+										["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
 										["groups"] = {
 											i(88693),	-- Bamboo Plate Armwraps
 											i(88692),	-- Fox Grove Bracers
@@ -880,8 +895,6 @@ _.Zones =
 											i(88690),	-- Bamboo Leaf Armplates
 											i(88691),	-- Bamboo Plate Armplates
 										},
-										["qg"] = 54922,	-- Master Stone Fist
-										["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
 									}),
 									q(29622, {	-- Your Training Starts Now
 										["qg"] = 54926,	-- Xiao
@@ -916,6 +929,7 @@ _.Zones =
 										["qg"] = 54697,	-- Shao the Defiant
 									}),
 									q(29585, {	-- Spitfire
+										["qg"] = 54854,	-- Gentle Mother Hanae
 										["groups"] = {
 											i(84243),	-- Bamboo Fiber Gloves
 											i(84244),	-- Bamboo Leaf Gloves
@@ -927,7 +941,6 @@ _.Zones =
 											i(84250),	-- Bamboo Leaf Gauntlets
 											i(88709),	-- Bamboo Plate Gauntlets
 										},
-										["qg"] = 54854,	-- Gentle Mother Hanae
 									}),
 									q(29586, {	-- The Splintered Path
 										["qg"] = 55209,	-- Traumatized Nectarbreeze Farmer
@@ -1004,6 +1017,8 @@ _.Zones =
 						["sourceQuests"] = { 29889 },	-- Borrowed Brew
 					}),
 					qh(29827, {	-- Acid Rain
+						["qg"] = 55180,	-- Shademaster Kiryn
+						["sourceQuests"] = { 29815 },	-- Forensic Science
 						["groups"] = {
 							i(90310),	-- Honorary Combat Engineer's Burnished Legplates
 							i(90305),	-- Honorary Combat Engineer's Chain Leggings
@@ -1015,8 +1030,6 @@ _.Zones =
 							i(90307),	-- Honorary Combat Engineer's Satin Leggings
 							i(90306),	-- Honorary Combat Engineer's Silk Trousers
 						},
-						["qg"] = 55180,	-- Shademaster Kiryn
-						["sourceQuests"] = { 29815 },	-- Forensic Science
 					}),
 					q(29925, {	-- All We Can Spare
 						["qg"] = 56348,	-- Toya
@@ -1026,6 +1039,7 @@ _.Zones =
 						["qg"] = 59383,	-- Old Man Misteye -- do we define the breadcrumb here or on the following quest?
 					}),
 					qa(29900, {	-- An Ancient Legend
+						["qg"] = 56433,	-- Lina Whitepaw
 						["groups"] = {
 							i(80749),	-- Ambermist Cuffs
 							i(80750),	-- Blackthicket Bindings
@@ -1037,12 +1051,13 @@ _.Zones =
 							i(80756),	-- Thunderwood Armplates
 							i(80757),	-- Jade Tiger Armplates
 						},
-						["qg"] = 56433,	-- Lina Whitepaw
 					}),
 					qa(30565, {	-- An Unexpected Advantage
 						["qg"] = 59550,	-- Sully "The Pickle" McLeary
 					}),
 					q(29749, {	-- An Urgent Plea
+						["qg"] = 55480,	-- Pei-Zhi
+						["sourceQuests"] = { 29747, 29748 },	-- Break the Cycle, Simulacrumble
 						["groups"] = {
 							i(84261),	-- Axe of Sacrifice
 							i(84262),	-- Spirit Crusher
@@ -1051,8 +1066,6 @@ _.Zones =
 							i(84265),	-- Spiritbound Crescent
 							i(84266),	-- Spiritbound Axe
 						},
-						["qg"] = 55480,	-- Pei-Zhi
-						["sourceQuests"] = { 29747, 29748 },	-- Break the Cycle, Simulacrumble
 					}),
 
 					qa(29901, {	-- Anduin's Decision
@@ -1092,6 +1105,8 @@ _.Zones =
 						["sourceQuests"] = { 29937 },	-- Furious Fowl
 					}),
 					qh(29967, {	-- Boom Goes the Doonamite!
+						["qg"] = 56406,	-- Rivett Clutchpop
+						["sourceQuests"] = { 29968 },	-- Green-ish Energy
 						["groups"] = {
 							i(80788),	-- Jinyu Meditation Staff
 							i(80789),	-- Jinyu Divining Rod
@@ -1104,8 +1119,6 @@ _.Zones =
 							i(80796),	-- Jinyu Dagger
 							i(80797),	-- Jinyu Combat Mace
 						},
-						["qg"] = 56406,	-- Rivett Clutchpop
-						["sourceQuests"] = { 29968 },	-- Green-ish Energy
 					}),
 					qa(29889, {	-- Borrowed Brew
 						["qg"] = 209845,	--  Mouthwatering Brew
@@ -1275,6 +1288,8 @@ _.Zones =
 						["qg"] = 57242,	-- Elder Sage Wind-Yi
 					}),
 					q(29920, {	-- Getting Permission
+						["qg"] = 56708,	--  Syra Goldendraft
+						["sourceQuests"] = { 29995 },	-- Shrine of the Dawn
 						["groups"] = {
 							i(80758),	-- zen lotus pendant
 							i(80759),	-- dawnblossom necklace
@@ -1282,8 +1297,6 @@ _.Zones =
 							i(80761),	-- greenstone pendant
 							i(80762),	-- jade eye pendant
 						},
-						["qg"] = 56708,	--  Syra Goldendraft
-						["sourceQuests"] = { 29995 },	-- Shrine of the Dawn
 					}),
 					qh(29968, {	-- Green-ish Energy
 						["qg"] = 56406,	-- Rivett Clutchpop
@@ -1291,6 +1304,8 @@ _.Zones =
 					}),
 
 					qh(29943, {	-- Guerrillas in our Midst
+						["qg"] = 56339,	-- General Nazgrim
+						["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
 						["groups"] = {
 							i(80749),	-- Ambermist Cuffs
 							i(80750),	-- Blackthicket Bindings
@@ -1302,8 +1317,6 @@ _.Zones =
 							i(80756),	-- Thunderwood Armplates
 							i(80757),	-- Jade Tiger Armplates
 						},
-						["qg"] = 56339,	-- General Nazgrim
-						["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
 					}),
 					qa(30568, {	-- Helping the Cause
 						["qg"] = 55122,	-- Admiral Taylor
@@ -1415,6 +1428,8 @@ _.Zones =
 						["sourceQuests"] = { 30504, 31319, 30502, 30500 },	-- Emergency Response (horde and alliance), Jaded Heart, Residual Fallout
 					}),
 					qh(31999, {	-- Nazgrim's Command
+						["qg"] = 215844,	-- Flagpole
+						["sourceQuests"] = { 31779 },	-- The Darkness Within
 						["groups"] = {
 							i(90293),	-- Peacebreaker's Armored Helm
 							i(90292),	-- Peacebreaker's Burnished Headcover
@@ -1426,8 +1441,6 @@ _.Zones =
 							i(90288),	-- Peacebreaker's Satin Cowl
 							i(90289),	-- Peacebreaker's Silk Cowl
 						},
-						["qg"] = 215844,	-- Flagpole
-						["sourceQuests"] = { 31779 },	-- The Darkness Within
 					}),
 					q(31705, {	-- Needle Me Not
 						["qg"] = 58564,	-- Elder Anli
@@ -1451,6 +1464,8 @@ _.Zones =
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 					}),
 					q(30002, {	-- Pages of History
+						["qg"] = 56786,	-- Lorewalker Stonestep
+						["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
 						["groups"] = {
 							i(80722),	-- Ambermist Treads
 							i(80723),	-- Blackthicket Footguards
@@ -1462,10 +1477,10 @@ _.Zones =
 							i(80729),	-- Thunderwood Warboots
 							i(80730),	-- Jade Tiger Warboots
 						},
-						["qg"] = 56786,	-- Lorewalker Stonestep
-						["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
 					}),
 					qh(31765, {	-- Paint it Red!
+						["qg"] = 55135,	-- General Nazgrim
+						["sourceQuests"] = { 29690 },	-- Into the Mists
 						["groups"] = {
 							i(90329),	-- Garrosh's Vanguard Battleaxe
 							i(90336),	-- Gunship Armory Greataxe
@@ -1477,14 +1492,14 @@ _.Zones =
 							i(90327),	-- Stormcaller's Warclub
 							i(90328),	-- Trench Medic's Staff
 						},
-						["qg"] = 55135,	-- General Nazgrim
-						["sourceQuests"] = { 29690 },	-- Into the Mists
 					}),
 					qh(31152, {	-- Peering Into the Past
 						["qg"] = 63217,	-- Lorewalker Cho
 						["sourceQuests"] = { 31134 },	-- If These Stones Could Speak
 					}),
 					q(29755, {	-- Pei-Back
+						["qg"] = 214903,	-- The Tan-Chao
+						["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
 						["groups"] = {
 							i(80695),	-- Ambermist Mantle
 							i(80696),	-- Blackthicket Spaulders
@@ -1496,8 +1511,6 @@ _.Zones =
 							i(80702),	-- Thunderwood Shoulders
 							i(80703),	-- Jade Tiger Shoulders
 						},
-						["qg"] = 214903,	-- The Tan-Chao
-						["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
 					}),
 
 					q(31704, {	-- Pooped
@@ -1537,6 +1550,7 @@ _.Zones =
 						["sourceQuests"] = { 31769 },	-- The Final Blow!
 					}),
 					q(29882, {	-- Quill of Stingers
+						["qg"] = 56063,	-- Inkmaster Jo Po
 						["groups"] = {
 							i(80713),	-- Ambermist Leggings
 							i(80714),	-- Blackthicket Legguards
@@ -1548,7 +1562,6 @@ _.Zones =
 							i(80720),	-- Thunderwood Legguards
 							i(80721),	-- Jade Tiger Legguards
 						},
-						["qg"] = 56063,	-- Inkmaster Jo Po
 					}),
 					q(29579, {	-- Rally the Survivors
 						["qg"] = 54697,	-- Shao the Defiant
@@ -1559,6 +1572,8 @@ _.Zones =
 						["classes"] = { 10 },
 					}),
 					qh(29694, {	-- Regroup!
+						["qg"] = 66656,	-- General Nazgrim
+						["sourceQuests"] = { 31769 },	-- The Final Blow!
 						["groups"] = {
 							i(90334),	-- Cannonball-Dented Shield
 							i(90335),	-- Hozen-Thunking Mace
@@ -1567,8 +1582,6 @@ _.Zones =
 							i(90330),	-- Smoldering Gunship Strut
 							i(90332),	-- Zin'jun's Dwarf-Cleaver
 						},
-						["qg"] = 66656,	-- General Nazgrim
-						["sourceQuests"] = { 31769 },	-- The Final Blow!
 					}),
 					q(30500, {	-- Residual Fallout
 						["qg"] = 59418,	-- Lorewalker Cho
@@ -1582,13 +1595,13 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30188, {	-- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
+						["qg"] = 58564,	-- Elder Anli
+						["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 						["groups"] = {
 							i(79802), 	-- Quest 30188 - Reins of the Jade Cloud Serpent
 							i(85430), 	-- Quest 31810 - Reins of the Azure Cloud Serpent
 							i(85429), 	-- Quest 31811 - Reins of the Golden Cloud Serpent
 						},
-						["qg"] = 58564,	-- Elder Anli
-						["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 					}),
 					q(29751, {	-- Ritual Artifacts
 						["qg"] = 55614,	-- Pei-Zhi
@@ -1614,6 +1627,8 @@ _.Zones =
 						["sourceQuests"] = { 29731 },	-- Scouting Report: On the Right Track
 					}),
 					qh(29804, {	-- Seein' Red
+						["qgs"] = { 55403, 55497, 67153 },	-- 3 different phases of Zin'Jun
+						["sourceQuests"] = { 29765 },	-- Cryin' My Eyes Out
 						["groups"] = {
 							i(90302),	-- Armored Chestpiece of Eminent Domain
 							i(90301),	-- Burnished Chestguard of Eminent Domain
@@ -1625,10 +1640,10 @@ _.Zones =
 							i(90298),	-- Stain Robe of Eminent Domain
 							i(90297),	-- Silk Robe of Eminent Domain
 						},
-						["qgs"] = { 55403, 55497, 67153 },	-- 3 different phases of Zin'Jun
-						["sourceQuests"] = { 29765 },	-- Cryin' My Eyes Out
 					}),
 					qh(31774, {	-- Seeking Zin'jun
+						["qg"] = 66845,	-- Sergeant Gorrok
+						["sourceQuests"] = { 31771, 31773, 29694 },	-- Face to Face With Consequence, Prowler Problems, & Regroup!
 						["groups"] = {
 							i(90319),	-- Landfall Burnished Greaves
 							i(90314),	-- Landfall Chain Boots
@@ -1640,8 +1655,6 @@ _.Zones =
 							i(90315),	-- Landfall Silk Treads
 							i(90320),	-- Landfall Warboots
 						},
-						["qg"] = 66845,	-- Sergeant Gorrok
-						["sourceQuests"] = { 31771, 31773, 29694 },	-- Face to Face With Consequence, Prowler Problems, & Regroup!
 					}),
 					qa(31541, {	-- Set in Jade
 						["qg"] = 56063,	-- Inkmaster Jo Po
@@ -1680,6 +1693,7 @@ _.Zones =
 					}),
 
 					q(29585, {	-- Spitfire
+						["qg"] = 54854,	-- Gentle Mother Hanae
 						["groups"] = {
 							i(84243),	-- Bamboo Fiber Gloves
 							i(84244),	-- Bamboo Leaf Gloves
@@ -1691,7 +1705,6 @@ _.Zones =
 							i(84250),	-- Bamboo Leaf Gauntlets
 							i(88709),	-- Bamboo Plate Gauntlets
 						},
-						["qg"] = 54854,	-- Gentle Mother Hanae
 					}),
 					q(31699, {	-- Sprite Fright
 						["qg"] = 58509,	-- Ningna Darkwheel
@@ -1775,6 +1788,8 @@ _.Zones =
 						["requireSkill"] = 773,
 					}),
 					q(30000, {	-- The Jade Serpent
+						["qg"] = 56784,	-- Fei
+						["sourceQuests"] = { 29999, 30005 },	-- The Rider's Bind, Lighting Up The Sky
 						["groups"] = {
 							i(80686),	-- Ambermist Hood
 							i(80687),	-- Blackthicket Helm
@@ -1786,8 +1801,6 @@ _.Zones =
 							i(80693),	-- Thunderwood Helm
 							i(80694),	-- Jade Tiger Helm
 						},
-						["qg"] = 56784,	-- Fei
-						["sourceQuests"] = { 29999, 30005 },	-- The Rider's Bind, Lighting Up The Sky
 					}),
 					q(29723, {	-- The Jade Witch
 						["qgs"] = { 55234, 55274 },	-- 2 phases of An Windfur
@@ -1868,6 +1881,8 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(29865, {	-- The Silkwood Road
+						["qg"] = 56062,	-- Tzu the Ironbelly
+						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 						["groups"] = {
 							i(80704),	-- Ambermist Robe
 							i(80705),	-- Blackthicket Robes
@@ -1879,8 +1894,6 @@ _.Zones =
 							i(80711),	-- Thunderwood Chestpiece
 							i(80712),	-- Jade Tiger Chestpiece
 						},
-						["qg"] = 56062,	-- Tzu the Ironbelly
-						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					}),
 					q(30152, {	-- The Sky Race
 						["qg"] = 58420,	-- Instructor Windblade
@@ -1972,13 +1985,15 @@ _.Zones =
 						["qg"] = 56348,	-- Toya
 					}),
 					qh(31239, {	-- What's in a Name Name?
+						["qg"] = 56336,	-- Chief Kah Kah
+						["sourceQuests"] = { 29941 },	-- Beyond the Horizon
 						["groups"] = {
 							i(84105),	-- Fishy
 						},
-						["qg"] = 56336,	-- Chief Kah Kah
-						["sourceQuests"] = { 29941 },	-- Beyond the Horizon
 					}),
 					q(29930, {	-- What's Mined Is Yours
+						["qg"] = 56467,	-- Hao Mann
+						["sourceQuests"] = { 29929 },	-- Trapped!
 						["groups"] = {
 							i(80783),	-- Veridian Cloak
 							i(80784),	-- NectarBreeze Cloak
@@ -1986,10 +2001,9 @@ _.Zones =
 							i(80786),	-- Honey-Bear's Cape
 							i(80787),	-- Cloudfall Cloak
 						},
-						["qg"] = 56467,	-- Hao Mann
-						["sourceQuests"] = { 29929 },	-- Trapped!
 					}),
 					qh(31241, {	-- Wicked Wikkets
+						["qg"] = 63748,	-- Jeek Jeek
 						["groups"] = {
 							i(88701),	-- Wikket Cape
 							i(88702),	-- Wikket Cloak
@@ -1997,7 +2011,6 @@ _.Zones =
 							i(88699),	-- Wikket Surcoat
 							i(88700),	-- Wikket Drape
 						},
-						["qg"] = 63748,	-- Jeek Jeek
 					}),
 					q(30134, {	-- Wild Things
 						["qg"] = 58564,	-- Elder Anli
@@ -2251,22 +2264,22 @@ _.Zones =
 				}),
 				n(-222, {	-- Treasure Hunter
 					o(214339, {	-- Chest of Supplies
+						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
 						["groups"] = {
 							q(31864),	-- Chest of Supplies
 						},
-						["description"] = "Located near a waterfall on the Murky Bank bordering The Jade Forest and The Valley of Four Winds at (24,53)",
 					}),
 					o(214338, {	-- Offering of Remembrance
+						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
 						["groups"] = {
 							q(31865),	-- Offering of Remembrance
 						},
-						["description"] = "Located on the Shrine of Rememberance at (46.3,80.7)",
 					}),
 					o(214337, {	-- Stash of Gems
+						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
 						["groups"] = {
 							q(31866),	-- Stash of Gems
 						},
-						["description"] = "Located in a cave on Windward Isle at (62.4,27.5)",
 					}),
 				}),
 				n(-2, {	-- Vendors
@@ -2910,19 +2923,6 @@ _.Zones =
 					},
 				}),
 			},
-			["maps"] = {
-				372,	-- Greenstone Quarry
-				373,	-- Greenstone Quarry #2
-				374,	-- The Widows Wail
-				375,	-- Oona Kagu
-				447,	-- A brewing Storm
-				448,	-- the jade forest
-				791,	-- temple of the jade serpent #1
-				792,	-- temple of the jade serpent #2
-			},
-			["lvl"] = 80,
-			["achievementID"] = 6351,
-			["description"] = "|cff66ccffThe Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.|r",
 		}),
 	}),
 };
