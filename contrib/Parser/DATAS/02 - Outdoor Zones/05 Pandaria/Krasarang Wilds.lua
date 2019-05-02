@@ -1374,6 +1374,10 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(50787, {	-- Arness the Scale
+						["coord"] = {
+							{ 58.6, 43.8, 418 },
+							{ 56.2, 46.8, 418 },
+						},
 						dr(14, i(90723)),	-- Arnness's Scaled Leggings
 						dr(12, i(87612)),	-- Ancient Krasari Helm
 						dr(11, {
@@ -1390,12 +1394,14 @@ _.Zones =
 						}),
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
-						 ["groups"] = {
+						["coord"] = { 12.6, 82, 418 },
+						["groups"] = {
 							i(90087),	-- Lobstmourne
-						 },
-						 ["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
+						},
+						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
 					}),
 					n(50768, {	-- Cournith Waterstrider
+						["coord"] = { 30.6, 38.2, 418 },
 						dr(15, i(90721)),	-- Cournith Waterstrider's Silken Finery
 						dr(11, {
 							i(87612),	-- Ancient Krasari Helm
@@ -1410,18 +1416,28 @@ _.Zones =
 						dr(10, i(87607)),	-- Unearthed Dojani Headcover
 					}),
 					n(68318, {	-- Dalan Nightbreaker
+						["coord"] = {
+							{ 85.0, 27.6, 418 },
+							{ 89.6, 22.4, 418 },
+						},
 						dr(29, i(92783)),	-- Mark of the Hardened Grunt
 					}),
 					n(66934, {	-- Damlak
+						["coord"] = {
+							{ 40.0, 88.6, 418 },
+							{ 38.8, 87.4, 418 },
+						},
 						i(90169, {	-- Damlak's Clamshell
 							i(90172),	-- Clamshell Band
 							i(90087),	-- Lobstmourne
 						}),
 					}),
 					n(68319, {	-- Disha Fearwarden
+						["coord"] = { 87.4, 29.2, 418 },
 						dr(26, i(92787)),	-- Horde Insignia of Conquering
 					}),
 					n(50331, {	-- Go-Kan
+						["coord"] = { 39.4, 28.8, 418 },
 						dr(15, i(90719)),	-- Go-Kan's Golden Trousers
 						dr(12, {
 							i(87608),	-- Korjan Mystic's Hood
@@ -1440,6 +1456,15 @@ _.Zones =
 						}),
 					}),
 					n(50340, {	-- Gaarn the Toxic
+						["coord"] = {
+							{ 56.2, 28, 418 },
+							{ 58.6, 31.4, 418 },
+							{ 58.6, 34.4, 418 },
+							{ 54, 32.2, 418 },
+							{ 56.2, 35.2, 418 },
+							{ 56.2, 38.2, 418 },
+							{ 53.6, 38.8, 418 },
+						},
 						dr(14, i(90725)),	-- Gaarn's Leggings of Infestation
 						dr(11, {
 							i(87612),	-- Ancient Krasari Helm
@@ -1456,6 +1481,10 @@ _.Zones =
 						}),
 					}),
 					n(68321, {	-- Kar Warmaker
+						["coord"] = {
+							{ 13.4, 55.0, 418 },
+							{ 14.0, 57.0, 418 },
+						},
 						dr(29, i(92782)),	-- Steadfast Footman's Medallion
 					}),
 					n(70323, {	-- Krakkanon
@@ -1468,12 +1497,21 @@ _.Zones =
 						}),
 					}),
 					n(68317, {	-- Mavis Harms
+						["coord"] = {
+							{ 89, 26.8, 418 },
+							{ 84.6, 31, 418 },
+						},
 						dr(29, i(92785)),	-- Kor'kron Book of Hurting
 					}),
 				 	n(68322, {	-- Muerta
+						["coord"] = {
+							{ 10.6, 57, 418 },
+							{ 9.6, 54.6, 418 },
+						},
 						dr(30, i(92786)),	-- Alliance Insignia of Conquering
 					}),
 					n(50352, {	-- Qu'nas
+						["coord"] = { 67.2, 23, 418 },
 						dr(16, i(90717)),	-- Qu'nas' Apocryphal Legplates
 						dr(12, {
 							i(87606),	-- Tidehunter Helm
@@ -1490,6 +1528,12 @@ _.Zones =
 						dr(10, i(87612)),	-- Ancient Krasari Helm
 					}),
 					n(50816, {	-- Ruun Ghostpaw
+						["coord"] = {
+							{ 39.4, 55.2, 418 },
+							{ 41.6, 55.2, 418 },
+							{ 40.4, 52.8, 418 },
+							{ 42.8, 52.8, 418 },
+						},
 						dr(16, i(90720)),	-- Silent Leggings of the Ghostpaw
 						dr(12, {
 							i(87612),	-- Ancient Krasari Helm
@@ -1508,6 +1552,7 @@ _.Zones =
 						}),
 					}),
 					n(50830, {	-- Spriggin
+						["coord"] = { 52.2, 88.8, 418 },
 						dr(14, i(90724)),	-- Spriggin's Sproggin' Leggin'
 						dr(11, {
 							i(87612),	-- Ancient Krasari Helm
@@ -1524,6 +1569,11 @@ _.Zones =
 						}),
 					}),
 					n(50388, {	-- Torik-Ethis
+						["coord"] = {
+							{ 14.6, 31.0, 418 },
+							{ 14.4, 35.6, 418 },
+							{ 15.6, 35.6, 418 },
+						},
 						dr(13, i(90718)),	-- Torik-Ethis' Bloodied Legguards
 						dr(12, {
 							i(87609),	-- Brushstalker Helm
@@ -1542,6 +1592,7 @@ _.Zones =
 						}),
 					}),
 					n(68320, {	-- Ubunti the Shade
+						["coord"] = { 13.2, 66.0, 418 },
 						dr(28, i(92784)),	-- SI:7 Operative's Manual
 					}),
 					{	-- Zandalari Warbringer
