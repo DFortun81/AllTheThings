@@ -5,7 +5,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 {
 	{	-- Children's Week
 		["holidayID"] = 235445,	-- Children's Week
-		["u"] = 20,				-- Children's Week Filter
+		["u"] = 20,	-- Children's Week Filter
 		["g"] = {
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
@@ -148,6 +148,87 @@ _.Holidays = bubbleDown({["u"] = 20},
 							},
 						},
 					},
+					-- ALLIANCE QUESTS — KUL TIRAN ORPHAN
+					qa(53811, {	-- Children's Week
+						["coord"] = { 48.1, 40.2, 1161 },	-- Boralus
+						["maps"] = { 1161 },	-- Boralus
+						["qg"] = 145291,	-- Orphan Matron Westerson
+					}),
+					qa(53859, {	-- The Mountain Folk
+						["sourceQuests"] = { 53811 },	-- Children's Week
+						["maps"] = { 1161 },	-- Boralus
+						["qg"] = 145394,	-- Liam
+					}),
+					qa(53861, {	-- Yo Ho, Yo Ho!
+						["sourceQuests"] = { 53811 },	-- Children's Week
+						["maps"] = { 1161 },	-- Boralus
+						["qg"] = 145394,	-- Liam
+					}),
+					qa(53862, {	-- The Squid Shrine
+						["sourceQuests"] = { 53811 },	-- Children's Week
+						["maps"] = { 1161 },	-- Boralus
+						["qg"] = 145394,	-- Liam
+					}),
+					qa(53863, {	-- Bird Friends
+						["sourceQuests"] = {
+							53859,	-- The Mountain Folk
+							53862,	-- THe Squid Shrine
+							53861,	-- Yo Ho, Yo Ho!
+						},
+						["coords"] = {	-- pick up from orphan at whichever quest location you turn in last
+							{ 42.4, 22.7, 895 },	-- Tiragarde Sound (The Mountain Folk)
+							{ 79.7, 82.5, 895 },	-- Tiragarde Sound (Yo Ho, Yo Ho!)
+							{ 72.4, 49.3, 942 },	-- Stormsong Valley
+						},
+						["maps"] = {
+							895,	-- Tiragarde Sound
+							942,	-- Stormsong Valley
+						},
+						["qg"] = 145394,	-- Liam
+					}),
+					qa(53864, {	-- Shapeshifters
+						["sourceQuests"] = {
+							53859,	-- The Mountain Folk
+							53862,	-- The Squid Shrine
+							53861,	-- Yo Ho, Yo Ho!
+						},
+						["coords"] = {	-- pick up from orphan at whichever quest location you turn in last
+							{ 42.4, 22.7, 895 },	-- Tiragarde Sound (The Mountain Folk)
+							{ 79.7, 82.5, 895 },	-- Tiragarde Sound (Yo Ho, Yo Ho!)
+							{ 72.4, 49.3, 942 },	-- Stormsong Valley (The Squid Shrine)
+						},
+						["maps"] = {
+							895,	-- Tiragarde Sound
+							942,	-- Stormsong Valley
+						},
+						["qg"] = 145394,	-- Liam
+					}),
+					qa(53865, {	-- Return to the Orphanage
+						["sourceQuests"] = {
+							53863,	-- Bird Friends
+							53864,	-- Shapeshifters
+						},
+						["coords"] = {	-- pick up from orphan at whichever quest location you turn in last
+							{ 36.1, 51.1, 896 },	-- Drustvar (Bird Friends)
+							{ 46.3, 44.8, 896 },	-- Drustvar (Shapeshifters)
+						},
+						["maps"] = { 896 },	-- Drustvar
+						["qg"] = 145394,	-- Liam
+						["g"] = {
+							i(167011, {	-- Slimy Pouch (Froglet)
+								["u"] = 20,	-- Children's Week
+							}),
+							i(167010, {	-- Beakbert
+								["u"] = 20,	-- Children's Week
+							}),
+							i(167009, {	-- Enchanted Saurolisk Scale (Scaley)
+								["u"] = 20,	-- Children's Week
+							}),
+							i(167008, {	-- Sandy Hermit Crab Shell (Mr. Crabs)
+								["u"] = 20,	-- Children's Week
+							}),
+						},
+					}),
 					-- HORDE QUESTS == ORC ORPHAN == PART I --
 					{	-- Children's Week [Horde]
 						["questID"] = 172,	-- Children's Week [Horde]
