@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 20},
+_.Holidays = 
 {
 	{	-- Children's Week
 		["holidayID"] = 235445,	-- Children's Week
@@ -85,4 +85,4 @@ _.Holidays = bubbleDown({["u"] = 20},
 			},
 		},
 	},
-});
+};
