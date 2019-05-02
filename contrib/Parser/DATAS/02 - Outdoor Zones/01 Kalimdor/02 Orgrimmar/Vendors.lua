@@ -8,9 +8,23 @@ _.Zones =
 			["g"] = {
 				n(-2, {	-- Vendors
 					n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
-					["description"] = "This NPC walks around the Drag.",
-					["coord"] = { 58.6, 53.8, 85 },
 						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 57.13, 51.12, 85 },	-- Blax Bottlerocket Path
+							{ 57.24, 52.54, 85 },	-- Blax Bottlerocket Path
+							{ 57.87, 54.21, 85 },	-- Blax Bottlerocket Path
+							{ 58.08, 51.11, 85 },	-- Blax Bottlerocket Path
+							{ 58.29, 62.41, 85 },	-- Blax Bottlerocket Path
+							{ 58.34, 62.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.48, 55.55, 85 },	-- Blax Bottlerocket Path
+							{ 58.67, 62.27, 85 },	-- Blax Bottlerocket Path
+							{ 58.78, 53.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.79, 50.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.81, 57.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.85, 58.67, 85 },	-- Blax Bottlerocket Path
+							{ 58.86, 60.16, 85 },	-- Blax Bottlerocket Path
+							{ 59.32, 51.86, 85 },	-- Blax Bottlerocket Path
+						},
 						["g"] = {
 							i(54436),	-- Blue Clockwork Rocket Bot Pet
 							i(95621),	-- Warbot Ignition Key Pet
