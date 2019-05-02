@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["sourceQuests"] = { 29117, 29119, },	-- Let's Go Fly a Kite / You Scream, I Scream...
 						["maps"] = { 84, },	-- Stormwind City
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["g"] = {
 							{	-- Piglet's Collar
 								["itemID"] = 23007,	-- Piglet's Collar
 								["u"] = 20,
@@ -129,7 +129,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["sourceQuests"] = { 10956, 10962, },	-- The Seat of the Naaru / Time to Visit the Caverns
 						["maps"] = { 111, },	-- Shattrath City
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["g"] = {
 							{	-- Elekk Training Collar
 								["itemID"] = 32622,	-- Elekk Training Collar
 								["u"] = 20,
@@ -279,7 +279,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["sourceQuests"] = { 29190, 29191 },	-- Let's Go Fly a Kite / You Scream, I Scream...
 						["maps"] = { 85, },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							{	-- Piglet's Collar
 								["itemID"] = 23007,	-- Piglet's Collar
 								["u"] = 20,
@@ -348,7 +348,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["sourceQuests"] = { 10963, 11975, },	-- Time to Visit the Caverns / Now, When I Grow Up...
 						["maps"] = { 111, },	-- Shattrath City
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							{	-- Elekk Training Collar
 								["itemID"] = 32622,	-- Elekk Training Collar
 								["u"] = 20,
@@ -417,7 +417,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["qg"] = 33533,	-- Oracle Orphan
 						["sourceQuests"] = { 13937, },	-- A Trip To The Wonderworks
 						["maps"] = { 125, },	-- Dalaran (Northrend)
-						["groups"] = {
+						["g"] = {
 							{	-- Curious Oracle Hatchling
 								["itemID"] = 46545,	-- Curious Oracle Hatchling
 								["u"] = 20,
@@ -474,7 +474,7 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["qg"] = 33532,	-- Wolvar Orphan
 						["sourceQuests"] = { 13938, },	-- A Trip To The Wonderworks
 						["maps"] = { 125, },	-- Dalaran (Northrend)
-						["groups"] = {
+						["g"] = {
 							{	-- Curious Wolvar Pup
 								["itemID"] = 46544,	-- Curious Wolvar Pup
 								["u"] = 20,

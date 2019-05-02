@@ -793,7 +793,7 @@ _.Zones =
 			["lvl"] = 1,
 			["maps"] = {
 				20,		-- Keeper's Rest (part of Priest artifact questline)
-				908,	-- Ruins of Lordaeron
+				908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario)
 			},
 			["achievementID"] = 768,
 			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",				
