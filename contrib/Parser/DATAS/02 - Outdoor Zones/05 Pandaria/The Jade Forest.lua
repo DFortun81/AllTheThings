@@ -180,73 +180,73 @@ _.Zones =
 						["groups"] = {
 							crit(1, {	-- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
-									q(29552, {	-- Critical Condition		
-										["groups"] = {	
+									q(29552, {	-- Critical Condition
+										["groups"] = {
 											i(90387),	-- Crashed Gyrocopter Rotor
 											i(90388),	-- Grewatsword of Kofinna Kottr
 											i(90385),	-- Mishka's Bandage Cutter
 											i(90384),	-- Peon-Chopping Axe
 											i(90386),	-- Recovery Team Shield
 											i(90389),	-- Skyguardian's Shield
-										},	
-										["qgs"] = { 54614 },	-- Mishka	
-										["sourceQuests"] = {	
+										},
+										["qgs"] = { 54614 },	-- Mishka
+										["sourceQuests"] = {
 											31736,	-- Envoy of the Alliance
 											31737,	-- The Cost of War
-										},	
-									}),		
-									q(31736, {	-- Envoy of the Alliance	
+										},
+									}),
+									q(31736, {	-- Envoy of the Alliance
 										["qg"] = 54617,	-- Rell Nightwind
 										["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
-									}),	
-									q(31742, {	-- Fractured Forces		
-										["qg"] = 54617,	-- Rell Nightwind	
-										["sourceQuests"]  = {	
+									}),
+									q(31742, {	-- Fractured Forces
+										["qg"] = 54617,	-- Rell Nightwind
+										["sourceQuests"]  = {
 											31738,	-- Pillaging Peons
 											29552,	-- Critical Condition
 											31740,	-- Koukou's Rampage
-										},	
-									}),		
-									q(31740, {	-- Koukou's Rampage		
-										["qg"] = 66199,	-- Lin Applebloom	
-										["sourceQuests"] = { 31739 },  -- Priorities!	
-									}),		
-									q(30069, {	-- No Plan Survives Contact with the Enemy	
+										},
+									}),
+									q(31740, {	-- Koukou's Rampage
+										["qg"] = 66199,	-- Lin Applebloom
+										["sourceQuests"] = { 31739 },  -- Priorities!
+									}),
+									q(30069, {	-- No Plan Survives Contact with the Enemy
 										["qg"] = 54616,	-- Sully "The Pickle" McLeary
 										["sourceQuests"] = { 31733 },	-- Touching Ground
-									}),	
+									}),
 									q(31745, {	-- Onward and Inward	[Note: Final Quest needed to trigger criteria]
 										["qgs"] = { 54617, 66581 },	-- Rell Nightwind
 										["sourceQuests"] = { 30070 },	-- The Fall of Ga'trul
-									}),	
-									q(31738, {	-- Pillaging Peons		
-										["qg"] = 65910,	-- Sunke Khang	
-										["sourceQuests"] = {	
+									}),
+									q(31738, {	-- Pillaging Peons
+										["qg"] = 65910,	-- Sunke Khang
+										["sourceQuests"] = {
 											31736,	-- Envoy of the Alliance
 											31737,	-- The Cost of War
-										},	
-									}),		
-									q(31739, {	-- Priorities!		
-										["qg"] = 64596,	-- Teng Applebloom	
-										["sourceQuests"] = {	
+										},
+									}),
+									q(31739, {	-- Priorities!
+										["qg"] = 64596,	-- Teng Applebloom
+										["sourceQuests"] = {
 											31736,	-- Envoy of the Alliance
 											31737,	-- The Cost of War
-										},	
-									}),		
-									q(31743, {	-- Smoke Before Fire		
-										["qg"] = 54617,	-- Rell Nightwind	
-										["sourceQuests"]  = {	
+										},
+									}),
+									q(31743, {	-- Smoke Before Fire
+										["qg"] = 54617,	-- Rell Nightwind
+										["sourceQuests"]  = {
 											31738,	-- Pillaging Peons
 											29552,	-- Critical Condition
 											31740,	-- Koukou's Rampage
-										},	
+										},
 									}),
-									q(31737, {	-- The Cost of War			
-										["qg"] = 54617,	-- Rell Nightwind		
-										["sourceQuests"] = { 31735 },	-- The Right Tool For The Job		
-									}),			
-									q(30070, {	-- The Fall of Ga'trul		
-										["groups"] = {	
+									q(31737, {	-- The Cost of War
+										["qg"] = 54617,	-- Rell Nightwind
+										["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
+									}),
+									q(30070, {	-- The Fall of Ga'trul
+										["groups"] = {
 											i(90345),	-- Peacebreaker's Armored Helm
 											i(90344),	-- Peacebreaker's Burnished Headcover
 											i(90339),	-- Peacebreaker's Chain Helm
@@ -256,73 +256,73 @@ _.Zones =
 											i(90343),	-- Peacebreaker's Ringmail Helm
 											i(90341),	-- Peacebreaker's Satin Hood
 											i(90340),	-- Peacebreaker's Silk Cowl
-										},	
-										["qg"] = 54616,	-- Sully "The Pickle" McLeary	
-										["sourceQuests"]  = {	
+										},
+										["qg"] = 54616,	-- Sully "The Pickle" McLeary
+										["sourceQuests"]  = {
 											31741,	-- Twinspire Keep
 											31744,	-- Unfair Trade
 											31742,	-- Fractured Forces
 											31743,	-- Smoke Bfeore Fire
-										},	
-									}),		
-									q(31735, {	-- The Right Tool For The Job			
-										["groups"] = {		
-											i(90354),	-- Armored Chestpiece of Eminent Domain	
-											i(90353),	-- Burnished Chestguard of Eminent Domain	
-											i(90348),	-- Chain Armor of Eminent Domain	
-											i(90355),	-- Heavy Chestpiece of Eminent Domain	
-											i(90351),	-- Hide Robe of Eminent Domain	
-											i(90347),	-- Leather Tunic of Eminent Domain	
-											i(90352),	-- Ringmail Armor of Eminent Domain	
-											i(90350),	-- Satin Robe of Eminent Domain	
-											i(90349),	-- Silk Robe of Eminent Domain	
-										},		
-										["qg"] = 54617,	-- Rell Nightwind		
-										["sourceQuests"] = {		
-											30069,	-- No Plan Survives Contact with the Enemy	
-											31734,	-- Welcome Wagons	
-										},		
-									}),			
-									q(31733, {	-- Touching Ground		
-										["qg"] = 66292,	-- Sky Admiral Rogers	
-										["sourceQuests"] = { 31732 },	-- Unleash Hell	
-									}),		
-									q(31741, {	-- Twinspire Keep		
-										["qg"] = 65910,	-- Sunke Khang	
-										["sourceQuests"]  = {	
+										},
+									}),
+									q(31735, {	-- The Right Tool For The Job
+										["groups"] = {
+											i(90354),	-- Armored Chestpiece of Eminent Domain
+											i(90353),	-- Burnished Chestguard of Eminent Domain
+											i(90348),	-- Chain Armor of Eminent Domain
+											i(90355),	-- Heavy Chestpiece of Eminent Domain
+											i(90351),	-- Hide Robe of Eminent Domain
+											i(90347),	-- Leather Tunic of Eminent Domain
+											i(90352),	-- Ringmail Armor of Eminent Domain
+											i(90350),	-- Satin Robe of Eminent Domain
+											i(90349),	-- Silk Robe of Eminent Domain
+										},
+										["qg"] = 54617,	-- Rell Nightwind
+										["sourceQuests"] = {
+											30069,	-- No Plan Survives Contact with the Enemy
+											31734,	-- Welcome Wagons
+										},
+									}),
+									q(31733, {	-- Touching Ground
+										["qg"] = 66292,	-- Sky Admiral Rogers
+										["sourceQuests"] = { 31732 },	-- Unleash Hell
+									}),
+									q(31741, {	-- Twinspire Keep
+										["qg"] = 65910,	-- Sunke Khang
+										["sourceQuests"]  = {
 											31738,	-- Pillaging Peons
 											29552,	-- Critical Condition
 											31740,	-- Koukou's Rampage
-										},	
-									}),		
-									q(31744, {	-- Unfair Trade		
-										["qg"] =  65910,	-- Sunke Khang	
-										["sourceQuests"]  = {	
+										},
+									}),
+									q(31744, {	-- Unfair Trade
+										["qg"] =  65910,	-- Sunke Khang
+										["sourceQuests"]  = {
 											31738,	-- Pillaging Peons
 											29552,	-- Critical Condition
 											31740,	-- Koukou's Rampage
-										},	
-									}),		
-									q(31732, {	-- Unleash Hell			
-										["groups"] = {		
-											i(90375),	-- Airship marine's Sharpshooter	
-											i(90376),	-- Barricade-Breaker Cidgel	
-											i(90382),	-- Captain Roger's Polite Knocking Stick	
-											i(90377),	-- Fogcutter Staff	
-											i(90379),	-- Mystic Perpetual Motion Mace	
-											i(90381),	-- Shock Trooper Battleaxe	
-											i(90380),	-- Skyfire Medic's Staff	
-											i(90383),	-- Skyfire Trooper's Mace	
-											i(90378),	-- Staff of the Skymagi	
-											i(90374),	-- Sully's Hotwiring Knife	
-										},		
-										["qg"] = 66292,	--  Sky Admiral Rogers		
-										["sourceQuests"] = { 29548 },	-- The Mission		
-									}),			
-									q(31734, {	-- Welcome Wagons		
-										["qg"] = 54616,	-- Sully "The Pickle" McLeary	
-										["sourceQuests"] = { 31733 },	-- Touching Ground	
-									}),		
+										},
+									}),
+									q(31732, {	-- Unleash Hell
+										["groups"] = {
+											i(90375),	-- Airship marine's Sharpshooter
+											i(90376),	-- Barricade-Breaker Cidgel
+											i(90382),	-- Captain Roger's Polite Knocking Stick
+											i(90377),	-- Fogcutter Staff
+											i(90379),	-- Mystic Perpetual Motion Mace
+											i(90381),	-- Shock Trooper Battleaxe
+											i(90380),	-- Skyfire Medic's Staff
+											i(90383),	-- Skyfire Trooper's Mace
+											i(90378),	-- Staff of the Skymagi
+											i(90374),	-- Sully's Hotwiring Knife
+										},
+										["qg"] = 66292,	--  Sky Admiral Rogers
+										["sourceQuests"] = { 29548 },	-- The Mission
+									}),
+									q(31734, {	-- Welcome Wagons
+										["qg"] = 54616,	-- Sully "The Pickle" McLeary
+										["sourceQuests"] = { 31733 },	-- Touching Ground
+									}),
 								},
 							}),
 							crit(2, {	-- The Waterspeaking Ceremony [Completed: Patch 8.0.1 -- Lucetia]
@@ -400,7 +400,7 @@ _.Zones =
 									}),
 									q(29553, {	-- The Missing Admiral
 										["qg"] = 54615,	-- Nodd Codejack
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											29555,	-- The White Pawn
 											29556,	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 										},
@@ -420,7 +420,7 @@ _.Zones =
 								},
 							}),
 							--[[
-							crit(3, {	-- The White Pawn 
+							crit(3, {	-- The White Pawn
 								["groups"] = {
 								},
 							}),
@@ -455,7 +455,7 @@ _.Zones =
 										["qg"] = 60970,	-- Admiral Taylor
 										["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
 									}),
-									
+
 									q(29725, {	-- SI:7 Report: Fire From the Sky
 										["qg"] = 55282,	-- Sully "The Pickle" McLeary
 										["sourceQuests"] = { 29733 },	-- SI:7 Report: Lost in the Woods
@@ -507,7 +507,7 @@ _.Zones =
 										["sourceQuests"] = { 29635 },	-- Xiao, the Eater
 									}),
 									q(29630, {	-- And a Heavy Fist
-										["groups"] = { 
+										["groups"] = {
 											i(80740),	-- Ambermist Gloves
 											i(80741),	-- Blackthicket Gloves
 											i(80742),	-- Jade Witch Guantlets
@@ -761,7 +761,7 @@ _.Zones =
 										["sourceQuests"] = { 29635 },	-- Xiao, the Eater
 									}),
 									q(29630, {	-- And a Heavy Fist
-										["groups"] = { 
+										["groups"] = {
 											i(80740),	-- Ambermist Gloves
 											i(80741),	-- Blackthicket Gloves
 											i(80742),	-- Jade Witch Guantlets
@@ -968,13 +968,13 @@ _.Zones =
 						["qg"] = 56787,	-- Wise mari
 						["sourceQuests"] = { 29997 },	-- The Scryer's Dilemma
 					}),
-					
-					
+
+
 					q(31707, {	-- A Tangled Web
 						["qg"] = 58228,	-- Instructor Skythorn
 						["isDaily"] = true,
 					}),
-					
+
 					q(31539, {	-- A Thing of Beauty
 						["qg"] = 56065,	-- Inkmaster Wei
 						["requireSkill"] = 773,
@@ -1054,7 +1054,7 @@ _.Zones =
 						["qg"] = 55480,	-- Pei-Zhi
 						["sourceQuests"] = { 29747, 29748 },	-- Break the Cycle, Simulacrumble
 					}),
-					
+
 					qa(29901, {	-- Anduin's Decision
 						["sourceQuests"] = { 29900, 29899 },	-- An Ancient Legend, Rest in Peace
 						["description"] = "Automatically given when prequisites have been fulfilled.",
@@ -1067,16 +1067,16 @@ _.Zones =
 						["qg"] = 65999,	-- General Nazgrim
 						["sourceQuests"] = { 29804 },	-- Seein' Red
 					}),
-					
+
 					q(29753, {	-- Back to Nature
-						["qg"] = 55614,	-- Pei-Zhi 
+						["qg"] = 55614,	-- Pei-Zhi
 						["sourceQuests"] = { 29751, 29752, 29750 },	-- Ritual Artifacts, The Wayward Dead, Vessels of the Spirit
 					}),
 					q(30135, {	-- Beating the Odds
 						["qg"] = 58225,	-- Instructor Tong
 						["sourceQuests"] = { 30134 },	-- Wild Things
 					}),
-					
+
 					qh(29941, {	-- Beyond the Horizon
 						["qg"] = 56339,	-- General Nazgrim
 						["sourceQuests"] = { 29936 },	-- Instant Messaging
@@ -1091,7 +1091,7 @@ _.Zones =
 						["qg"] = 56406,	-- Rivett Clutchpop
 						["sourceQuests"] = { 29937 },	-- Furious Fowl
 					}),
-					qh(29967, {	-- Boom Goes the Doonamite! 
+					qh(29967, {	-- Boom Goes the Doonamite!
 						["groups"] = {
 							i(80788),	-- Jinyu Meditation Staff
 							i(80789),	-- Jinyu Divining Rod
@@ -1247,7 +1247,7 @@ _.Zones =
 						["qg"] = 58420,	-- Instructor Windblade
 						["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
 					}),
-					
+
 					qh(29815, {	-- Forensic Science
 						["qg"] = 55180,	-- Shademaster Kiryn
 						["sourceQuests"] = { 31999 },	-- Nazgrim's Command
@@ -1289,7 +1289,7 @@ _.Zones =
 						["qg"] = 56406,	-- Rivett Clutchpop
 						["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
 					}),
-					
+
 					qh(29943, {	-- Guerrillas in our Midst
 						["groups"] = {
 							i(80749),	-- Ambermist Cuffs
@@ -1311,7 +1311,7 @@ _.Zones =
 					q(32018, {	-- His Name Was... Stormstout
 						["qg"] = 56774,	-- Bolo
 					}),
-					
+
 					qa(29893, {	-- Hue
 						["qgs"] = { 56287, 61218 },	-- Lorewalker Cho
 					}),
@@ -1365,7 +1365,7 @@ _.Zones =
 						["qg"] = 56327,	-- Nibi Nibi
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 					}),
-					
+
 					qa(31362, {	-- Last Piece of the Puzzle
 						["qg"] = 59620,	-- Lorewalker Cho
 					}),
@@ -1397,7 +1397,7 @@ _.Zones =
 						["qg"] = 56346,	-- Foreman Mann
 						["sourceQuests"] = { 29928 },	-- I have No Jade and I must Scream
 					}),
-					
+
 					qh(29821, {	-- Missed Me By... That Much!
 						["qg"] = 55521,	-- Rivett Clutchpop
 						["sourceQuests"] = { 31999 },	-- Nazgrim's Command
@@ -1433,12 +1433,12 @@ _.Zones =
 						["qg"] = 58564,	-- Elder Anli
 						["isDaily"] = true,
 					}),
-					
+
 					q(31702, {	-- On The Prowl
 						["qg"] = 58564,	-- Elder Anli
 						["isDaily"] = true,
 					}),
-					
+
 					q(31784, {	-- Onyx To Goodness
 						["qg"] = 58564,	-- Elder Anli
 						["repeatable"] = true,
@@ -1499,7 +1499,7 @@ _.Zones =
 						["qg"] = 214903,	-- The Tan-Chao
 						["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
 					}),
-					
+
 					q(31704, {	-- Pooped
 						["qgs"] = { 58384, 65669, 65670, 65671 },	-- 4 different hatchlings
 						["isDaily"] = true,
@@ -1521,7 +1521,7 @@ _.Zones =
 						["qg"] = 58510,	-- Suchi the Sweet
 						["isDaily"] = true,
 					}),
-					
+
 					qh(31978, {	-- Priorities!
 						["qg"] = 66662,	-- Gi-Oh
 						["sourceQuests"] = { 31769 },	-- The Final Blow!
@@ -1586,7 +1586,7 @@ _.Zones =
 							i(79802), 	-- Quest 30188 - Reins of the Jade Cloud Serpent
 							i(85430), 	-- Quest 31810 - Reins of the Azure Cloud Serpent
 							i(85429), 	-- Quest 31811 - Reins of the Golden Cloud Serpent
-						},					
+						},
 						["qg"] = 58564,	-- Elder Anli
 						["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
 					}),
@@ -1678,7 +1678,7 @@ _.Zones =
 						["qg"] = 58413,	-- Jenova Longeye
 						["isDaily"] = true,
 					}),
-					
+
 					q(29585, {	-- Spitfire
 						["groups"] = {
 							i(84243),	-- Bamboo Fiber Gloves
@@ -1834,7 +1834,7 @@ _.Zones =
 					q(30139, {	-- The Rider's Journey
 						["qg"] = 58225,	-- Instructor Tong
 					}),
-					
+
 					qa(31254, {	-- The Road to Kun-Lai
 						["qg"] = 63778,	-- Messenger Grummle
 						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
@@ -1915,7 +1915,7 @@ _.Zones =
 						["qg"] = 55614,	-- Pei-Zhi
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 					}),
-					
+
 					q(32019, {	-- They Call Him... Stormstout
 						["qg"] = 56782,	-- Elder Sage Rain-Zhu
 					}),
@@ -2002,12 +2002,12 @@ _.Zones =
 					q(30134, {	-- Wild Things
 						["qg"] = 58564,	-- Elder Anli
 					}),
-					
+
 					qh(31770, {	-- You're Either With Us Or...
 						["qg"] = 66656,	-- General Nazgrim
 						["sourceQuests"] = { 31769 },	-- The Final Blow!
 					}),
-									
+
 --[[				These quests were removed
 					--
 					q(30065)	-- Arrows of Fortune
@@ -2030,7 +2030,7 @@ _.Zones =
 					--
 					q(30141)	-- The Rider's Journey (Consolidated with 30319)
 					q(30140)	-- The Rider's Journey (Consolidated with 30319)
-					
+
 					q(32027),	-- Candy Bucket
 					qa( 32049),	-- Candy Bucket
 					q(32029),	-- Candy Bucket
@@ -2058,7 +2058,7 @@ _.Zones =
 							i(87592),	-- Grookin' Grookin' Trousers
 							i(87587),	-- Orchard Tender's Leggings
 							i(87591),	-- Tian Trainee Leggings
-						}),	
+						}),
 						dr(10, {
 							i(87590),	-- Jade Heart Leggings
 							i(87589),	-- Leggings of Fractured Reflection
@@ -2081,7 +2081,7 @@ _.Zones =
 						dr(16, i(87652)),	-- Ook-Breaker Mace
 						dr(12, i(87586)),	-- Forest Trickster's Leggings
 						dr(11, {
-							i(87587),	-- Orchard Tender's Leggings	
+							i(87587),	-- Orchard Tender's Leggings
 							i(87588),	-- Leggings of Spiritsong Melody
 							i(87589),	-- Leggings of Fractured Reflection
 							i(87590),	-- Jade Heart Leggings
@@ -2207,7 +2207,7 @@ _.Zones =
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -2222,7 +2222,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -2237,7 +2237,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -2314,7 +2314,7 @@ _.Zones =
 						i(81678),	-- Faded Forest Scepter
 						i(81684),	-- Faded Forest Shield
 						i(81680),	-- Faded Forest Smasher
-						
+
 						-- Helms
 						i(81587),	-- Faded Forest Armored Helm
 						i(81582),	-- Faded Forest Burnished Headcover
@@ -2325,21 +2325,21 @@ _.Zones =
 						i(81581),	-- Faded Forest Ringmail Helm
 						i(81579),	-- Faded Forest Satin Hood
 						i(81583),	-- Faded Forest Silk Cowl
-						
+
 						-- Necklaces
 						i(81655),	-- Faded Forest Amulet
 						i(81652),	-- Faded Forest Choker
 						i(81651),	-- Faded Forest Locket
 						i(81653),	-- Faded Forest Necklace
 						i(81654),	-- Faded Forest Pendant
-						
+
 						-- Cloak
 						i(81668),	-- Faded Forest Cape
 						i(81670),	-- Faded Forest Cloak
 						i(81667),	-- Faded Forest Drape
 						i(81669),	-- Faded Forest Manteau
 						i(81666),	-- Faded Forest Shawl
-						
+
 						-- Shoulders
 						i(81596),	-- Faded Forest Armored Shoulders
 						i(81591),	-- Faded Forest Burnished Spaulders
@@ -2350,7 +2350,7 @@ _.Zones =
 						i(81590),	-- Faded Forest Ringmail Spaulders
 						i(81588),	-- Faded Forest Satin Mantle
 						i(81592),	-- Faded Forest Silk Amice
-						
+
 						-- Chest
 						i(81605),	-- Faded Forest Armored Chestpiece
 						i(81600),	-- Faded Forest Burnished Chestguard
@@ -2361,7 +2361,7 @@ _.Zones =
 						i(81599),	-- Faded Forest Ringmail Armor
 						i(81597),	-- Faded Forest Satin Robe
 						i(81601),	-- Faded Forest Silk Robe
-						
+
 						-- Wrists
 						i(81650),	-- Faded Forest Armored Bracers
 						i(81645),	-- Faded Forest Burnished Bracers
@@ -2372,7 +2372,7 @@ _.Zones =
 						i(81644),	-- Faded Forest Ringmail Armbands
 						i(81642),	-- Faded Forest Satin Cuffs
 						i(81646),	-- Faded Forest Silk Cuffs
-						
+
 						-- Gloves
 						i(81641),	-- Faded Forest Armored Gauntlets
 						i(81636),	-- Faded Forest Burnished Gloves
@@ -2383,7 +2383,7 @@ _.Zones =
 						i(81635),	-- Faded Forest Ringmail Gauntlets
 						i(81633),	-- Faded Forest Satin Gloves
 						i(81637),	-- Faded Forest Silk Handguards
-						
+
 						-- Waist
 						i(81632),	-- Faded Forest Armored Girdle
 						i(81627),	-- Faded Forest Burnished Clasp
@@ -2394,7 +2394,7 @@ _.Zones =
 						i(81626),	-- Faded Forest Ringmail Waistguard
 						i(81624),	-- Faded Forest Satin Cord
 						i(81628),	-- Faded Forest Silk Cord
-						
+
 						-- Legs
 						i(81614),	-- Faded Forest Armored Legguards
 						i(81609),	-- Faded Forest Burnished Legplates
@@ -2405,7 +2405,7 @@ _.Zones =
 						i(81608),	-- Faded Forest Ringmail Leggings
 						i(81606),	-- Faded Forest Satin Leggings
 						i(81610),	-- Faded Forest Silk Trousers
-						
+
 						-- Feet
 						i(81623),	-- Faded Forest Armored Warboots
 						i(81618),	-- Faded Forest Burnished Greaves
@@ -2416,14 +2416,14 @@ _.Zones =
 						i(81617),	-- Faded Forest Ringmail Sabatons
 						i(81615),	-- Faded Forest Satin Treads
 						i(81619),	-- Faded Forest Silk Treads
-						
+
 						-- Finger
 						i(81656),	-- Faded Forest Band
 						i(81658),	-- Faded Forest Loop
 						i(81657),	-- Faded Forest Ring
 						i(81660),	-- Faded Forest Seal
 						i(81659),	-- Faded Forest Signet
-						
+
 						-- Trinkets
 						i(81665),	-- Faded Forest Badge
 						i(81662),	-- Faded Forest Emblem
@@ -2462,7 +2462,7 @@ _.Zones =
 						i(81678),	-- Faded Forest Scepter
 						i(81684),	-- Faded Forest Shield
 						i(81680),	-- Faded Forest Smasher
-						
+
 						-- Helms
 						i(81587),	-- Faded Forest Armored Helm
 						i(81582),	-- Faded Forest Burnished Headcover
@@ -2473,21 +2473,21 @@ _.Zones =
 						i(81581),	-- Faded Forest Ringmail Helm
 						i(81579),	-- Faded Forest Satin Hood
 						i(81583),	-- Faded Forest Silk Cowl
-						
+
 						-- Necklaces
 						i(81655),	-- Faded Forest Amulet
 						i(81652),	-- Faded Forest Choker
 						i(81651),	-- Faded Forest Locket
 						i(81653),	-- Faded Forest Necklace
 						i(81654),	-- Faded Forest Pendant
-						
+
 						-- Cloak
 						i(81668),	-- Faded Forest Cape
 						i(81670),	-- Faded Forest Cloak
 						i(81667),	-- Faded Forest Drape
 						i(81669),	-- Faded Forest Manteau
 						i(81666),	-- Faded Forest Shawl
-						
+
 						-- Shoulders
 						i(81596),	-- Faded Forest Armored Shoulders
 						i(81591),	-- Faded Forest Burnished Spaulders
@@ -2498,7 +2498,7 @@ _.Zones =
 						i(81590),	-- Faded Forest Ringmail Spaulders
 						i(81588),	-- Faded Forest Satin Mantle
 						i(81592),	-- Faded Forest Silk Amice
-						
+
 						-- Chest
 						i(81605),	-- Faded Forest Armored Chestpiece
 						i(81600),	-- Faded Forest Burnished Chestguard
@@ -2509,7 +2509,7 @@ _.Zones =
 						i(81599),	-- Faded Forest Ringmail Armor
 						i(81597),	-- Faded Forest Satin Robe
 						i(81601),	-- Faded Forest Silk Robe
-						
+
 						-- Wrists
 						i(81650),	-- Faded Forest Armored Bracers
 						i(81645),	-- Faded Forest Burnished Bracers
@@ -2520,7 +2520,7 @@ _.Zones =
 						i(81644),	-- Faded Forest Ringmail Armbands
 						i(81642),	-- Faded Forest Satin Cuffs
 						i(81646),	-- Faded Forest Silk Cuffs
-						
+
 						-- Gloves
 						i(81641),	-- Faded Forest Armored Gauntlets
 						i(81636),	-- Faded Forest Burnished Gloves
@@ -2531,7 +2531,7 @@ _.Zones =
 						i(81635),	-- Faded Forest Ringmail Gauntlets
 						i(81633),	-- Faded Forest Satin Gloves
 						i(81637),	-- Faded Forest Silk Handguards
-						
+
 						-- Waist
 						i(81632),	-- Faded Forest Armored Girdle
 						i(81627),	-- Faded Forest Burnished Clasp
@@ -2542,7 +2542,7 @@ _.Zones =
 						i(81626),	-- Faded Forest Ringmail Waistguard
 						i(81624),	-- Faded Forest Satin Cord
 						i(81628),	-- Faded Forest Silk Cord
-						
+
 						-- Legs
 						i(81614),	-- Faded Forest Armored Legguards
 						i(81609),	-- Faded Forest Burnished Legplates
@@ -2553,7 +2553,7 @@ _.Zones =
 						i(81608),	-- Faded Forest Ringmail Leggings
 						i(81606),	-- Faded Forest Satin Leggings
 						i(81610),	-- Faded Forest Silk Trousers
-						
+
 						-- Feet
 						i(81623),	-- Faded Forest Armored Warboots
 						i(81618),	-- Faded Forest Burnished Greaves
@@ -2564,14 +2564,14 @@ _.Zones =
 						i(81617),	-- Faded Forest Ringmail Sabatons
 						i(81615),	-- Faded Forest Satin Treads
 						i(81619),	-- Faded Forest Silk Treads
-						
+
 						-- Finger
 						i(81656),	-- Faded Forest Band
 						i(81658),	-- Faded Forest Loop
 						i(81657),	-- Faded Forest Ring
 						i(81660),	-- Faded Forest Seal
 						i(81659),	-- Faded Forest Signet
-						
+
 						-- Trinkets
 						i(81665),	-- Faded Forest Badge
 						i(81662),	-- Faded Forest Emblem
@@ -2597,7 +2597,7 @@ _.Zones =
 						i(81678),	-- Faded Forest Scepter
 						i(81684),	-- Faded Forest Shield
 						i(81680),	-- Faded Forest Smasher
-						
+
 						-- Helms
 						i(81587),	-- Faded Forest Armored Helm
 						i(81582),	-- Faded Forest Burnished Headcover
@@ -2608,21 +2608,21 @@ _.Zones =
 						i(81581),	-- Faded Forest Ringmail Helm
 						i(81579),	-- Faded Forest Satin Hood
 						i(81583),	-- Faded Forest Silk Cowl
-						
+
 						-- Necklaces
 						i(81655),	-- Faded Forest Amulet
 						i(81652),	-- Faded Forest Choker
 						i(81651),	-- Faded Forest Locket
 						i(81653),	-- Faded Forest Necklace
 						i(81654),	-- Faded Forest Pendant
-						
+
 						-- Cloak
 						i(81668),	-- Faded Forest Cape
 						i(81670),	-- Faded Forest Cloak
 						i(81667),	-- Faded Forest Drape
 						i(81669),	-- Faded Forest Manteau
 						i(81666),	-- Faded Forest Shawl
-						
+
 						-- Shoulders
 						i(81596),	-- Faded Forest Armored Shoulders
 						i(81591),	-- Faded Forest Burnished Spaulders
@@ -2633,7 +2633,7 @@ _.Zones =
 						i(81590),	-- Faded Forest Ringmail Spaulders
 						i(81588),	-- Faded Forest Satin Mantle
 						i(81592),	-- Faded Forest Silk Amice
-						
+
 						-- Chest
 						i(81605),	-- Faded Forest Armored Chestpiece
 						i(81600),	-- Faded Forest Burnished Chestguard
@@ -2644,7 +2644,7 @@ _.Zones =
 						i(81599),	-- Faded Forest Ringmail Armor
 						i(81597),	-- Faded Forest Satin Robe
 						i(81601),	-- Faded Forest Silk Robe
-						
+
 						-- Wrists
 						i(81650),	-- Faded Forest Armored Bracers
 						i(81645),	-- Faded Forest Burnished Bracers
@@ -2655,7 +2655,7 @@ _.Zones =
 						i(81644),	-- Faded Forest Ringmail Armbands
 						i(81642),	-- Faded Forest Satin Cuffs
 						i(81646),	-- Faded Forest Silk Cuffs
-						
+
 						-- Gloves
 						i(81641),	-- Faded Forest Armored Gauntlets
 						i(81636),	-- Faded Forest Burnished Gloves
@@ -2666,7 +2666,7 @@ _.Zones =
 						i(81635),	-- Faded Forest Ringmail Gauntlets
 						i(81633),	-- Faded Forest Satin Gloves
 						i(81637),	-- Faded Forest Silk Handguards
-						
+
 						-- Waist
 						i(81632),	-- Faded Forest Armored Girdle
 						i(81627),	-- Faded Forest Burnished Clasp
@@ -2677,7 +2677,7 @@ _.Zones =
 						i(81626),	-- Faded Forest Ringmail Waistguard
 						i(81624),	-- Faded Forest Satin Cord
 						i(81628),	-- Faded Forest Silk Cord
-						
+
 						-- Legs
 						i(81614),	-- Faded Forest Armored Legguards
 						i(81609),	-- Faded Forest Burnished Legplates
@@ -2688,7 +2688,7 @@ _.Zones =
 						i(81608),	-- Faded Forest Ringmail Leggings
 						i(81606),	-- Faded Forest Satin Leggings
 						i(81610),	-- Faded Forest Silk Trousers
-						
+
 						-- Feet
 						i(81623),	-- Faded Forest Armored Warboots
 						i(81618),	-- Faded Forest Burnished Greaves
@@ -2699,14 +2699,14 @@ _.Zones =
 						i(81617),	-- Faded Forest Ringmail Sabatons
 						i(81615),	-- Faded Forest Satin Treads
 						i(81619),	-- Faded Forest Silk Treads
-						
+
 						-- Finger
 						i(81656),	-- Faded Forest Band
 						i(81658),	-- Faded Forest Loop
 						i(81657),	-- Faded Forest Ring
 						i(81660),	-- Faded Forest Seal
 						i(81659),	-- Faded Forest Signet
-						
+
 						-- Trinkets
 						i(81665),	-- Faded Forest Badge
 						i(81662),	-- Faded Forest Emblem
@@ -2906,7 +2906,7 @@ _.Zones =
 						i(81992),	-- Wall Legplates
 						i(81995),	-- Wall Sabatons
 
-					
+
 					},
 				}),
 			},

@@ -155,7 +155,7 @@ _.Zones =
 						crit(4),		-- The Sha of Hatred
 						crit(5),		-- Tai Ho's Investigation
 					}),
-]]--				
+]]--
 --[[
 					--q(32043),	-- Candy Bucket
 					--q(32497),	-- Honor the Flame
@@ -233,7 +233,7 @@ _.Zones =
 					q(30953, {-- Fallen Sentinels
 						["qg"] = 61585,	-- Yak-Keeper Kyana
 						["isDaily"] = true,
-					}),	
+					}),
 					q(30932, {	-- Father's Footsteps
 						["qg"] = 61584,	-- Sentinel Commander Qipan
 					}),
@@ -246,7 +246,7 @@ _.Zones =
 							i(88091),	-- Swampwalker Pauldrons
 							i(88090),	-- Steppebeast Pauldrons
 							i(88089),	-- Osul Peak Pauldron
-							i(88088),	-- Temple Guardian Pauldron 
+							i(88088),	-- Temple Guardian Pauldron
 							i(88087),	-- Palewind Pauldron
 						},
 						["qg"] = 60688,	-- Taran Zhu
@@ -389,7 +389,7 @@ _.Zones =
 							i(83754),	-- Shado-Pan Ranger's Blade
 							i(83755),	-- Bearheart's Club
 						},
-						["qg"] = 60903,	-- Xiao Tu 
+						["qg"] = 60903,	-- Xiao Tu
 					}),
 					q(31046, {	-- Little Hatchlings
 						["qg"] = 62304,	-- Ban Bearheart
@@ -431,7 +431,7 @@ _.Zones =
 					}),
 					q(31064, {-- Nurong and Rothek
 						["qg"] = 62274,	-- Taran Zhu
-					}),	
+					}),
 					q(31042, {	-- Onyx Hearts
 						["qg"] = 62304,	-- Ban Bearheart
 						["isDaily"] = true,
@@ -544,7 +544,7 @@ _.Zones =
 							63624,	-- Wu Kao Hawkmaster
 							63622,	-- Wu Kao Rogue
 						},
-						["isDaily"] = true, 
+						["isDaily"] = true,
 					}),
 					q(31203, {	-- Target of Opportunity: Sra'thik Swarmlord
 						["qgs"] = {
@@ -847,7 +847,7 @@ _.Zones =
 							62295,	-- Omnia Mage
 							62379,	-- Omnia Mage
 							62378,	-- Omnia Priest
-						}, 
+						},
 						["isDaily"] = true,
 					}),
 				}),
@@ -972,8 +972,8 @@ _.Zones =
 								i(90724),	-- Spriggin's Sproggin' Leggin'
 							}),
 						})),
-						
-						
+
+
 					}),
 					n(66938, {	-- Odd'nirok
 						i(90171, {	-- Odd'nirok's Clamshell
@@ -1020,7 +1020,7 @@ _.Zones =
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1035,7 +1035,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1050,7 +1050,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
