@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 20},
+_.Holidays = 
 {
 	{	-- Children's Week
 		["holidayID"] = 235445,	-- Children's Week
@@ -14,11 +14,11 @@ _.Holidays = bubbleDown({["u"] = 20},
 						["achievementID"] = 1793,	-- For the Children
 						["groups"] = {
 							{	-- Matron [Female Characters]
-								["titleID"] = 104,	-- Matron [Female Characters]
+								["titleID"] = 104,			-- Matron [Female Characters]
 								["u"] = 20,
 							},
 							{	-- Patron [Male Characters]
-								["titleID"] = 105,	-- Patron [Male Characters]
+								["titleID"] = 105,			-- Patron [Male Characters]
 								["u"] = 20,
 							},
 							{	-- Aw, Isn't It Cute?
@@ -30,27 +30,18 @@ _.Holidays = bubbleDown({["u"] = 20},
 									{	-- Dalaran Brownie
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 6,			-- Dalaran Brownie
+										["itemID"] = 42431,			-- Dalaran Brownie
 										["crs"] = {
-											14480,	-- Alowicious Czervik
-											47383,	-- Brivelthwerp
-											18914,	-- Caregiver Isel
-											14481,	-- Emmithue Smails
-											-- 15353,	-- Katrina Shimmerstar	Note!! Only shows up during Hallow's End
-											49893,	-- Lisa McKeever
-											18913,	-- Matron Tikkit
-											-- 15354,	-- Rachelle Gothena		Note!! Only shows up during Hallow's End
-											24934,	-- Snack-O-Matic IV
+											29548,	-- Aimee
+											92936,	-- Aimee
 										},
 										["coords"] = {
-											{ 53.21, 79.01, 85 },	-- Alowicious Czervik [Orgrimmar]
-											{ 69.81, 85.01, 64 },	-- Brivelthwerp [Thousand Needles]
-											{ 54.21, 76.01, 107 },	-- Caregiver Isel [Nagrand]
-											{ 61.21, 74.81, 84 },	-- Emmithue Smails [Stormwind City]
-											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
-											{ 51.61, 72.01, 84 },	-- Lisa McKeever [Stormwind City]
-											{ 56.61, 34.61, 107 },	-- Matron Tikkit [Nagrand]
-											-- { },	-- Rachelle Gothena	[Orgrimmar]		Note!! Only shows up during Hallow's End
-											{ 53.66, 53.01, 85 },	-- Snack-O-Matic IV
+											{ 51.21, 29.05, 125 },	-- Aimee [Dalaran: Broken Isles]
+											{ 50.85, 29.09, 627 },	-- Aimee [Dalaran: Broken Isles]
+										},
+										["maps"] = {
+											125,	-- Dalaran: Northrend
+											627,	-- Dalaran: Broken Isles
 										},
 									},
 									{	-- Dalaran Doughnut
@@ -76,57 +67,36 @@ _.Holidays = bubbleDown({["u"] = 20},
 									{	-- Tigule and Foror's Strawberry Ice Cream
 										["achievementID"] = 1788,	-- Bad Example
 										["criteriaID"] = 1,			-- Tigule and Foror's Strawberry Ice Cream
+										["itemID"] = 7228,			-- Tigule and Foror's Strawberry Ice Cream
+										["crs"] = {
+											14480,	-- Alowicious Czervik
+											47383,	-- Brivelthwerp
+											18914,	-- Caregiver Isel
+											14481,	-- Emmithue Smails
+											-- 15353,	-- Katrina Shimmerstar	Note!! Only shows up during Hallow's End
+											49893,	-- Lisa McKeever
+											18913,	-- Matron Tikkit
+											-- 15354,	-- Rachelle Gothena		Note!! Only shows up during Hallow's End
+											24934,	-- Snack-O-Matic IV
+										},
+										["coords"] = {
+											{ 53.32, 79.27, 85 },	-- Alowicious Czervik [Orgrimmar]
+											{ 69.87, 85.18, 64 },	-- Brivelthwerp [Thousand Needles]
+											{ 54.22, 76.11, 107 },	-- Caregiver Isel [Nagrand]
+											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
+											{ 56.73, 34.51, 107 },	-- Matron Tikkit [Nagrand]
+											-- { },	-- Rachelle Gothena	[Orgrimmar]		Note!! Only shows up during Hallow's End
+											{ 53.66, 53.01, 85 },	-- Snack-O-Matic IV
+										},
+										["maps"] = {
+											64,		-- Thousand Needles
+											84,		-- Stormwind City
+											85,		-- Orgrimmar
+											86,		-- Orgrimmar
+											107,	-- Nagrand
+										},
 									},
 								},
-							},
-							{	-- Daily Chores
-								["achievementID"] = 1789,	-- Daily Chores
-							},
-							{	-- Hail To The King, Baby
-								["achievementID"] = 1790,	-- Hail To The King, Baby
-								["maps"] = { 136, 137 },
-							},
-							{	-- Home Alone
-								["achievementID"] = 1791,	-- Home Alone
-							},
-							{	-- School of Hard Knocks
-								["achievementID"] = 1786,	-- School of Hard Knocks
-								["groups"] = {
-									{	-- Capture the flag in Eye of the Storm
-										["achievementID"] = 1786,	-- School of Hard Knocks
-										["criteriaID"] = 1,	-- Capture the flag in Eye of the Storm
-									},
-									{	-- Assault a tower in Alterac Valley
-										["achievementID"] = 1786,	-- School of Hard Knocks
-										["criteriaID"] = 2,	-- Assault a tower in Alterac Valley
-									},
-									{	-- Assault a flag in Arathi Basin
-										["achievementID"] = 1786,	-- School of Hard Knocks
-										["criteriaID"] = 3,	-- Assault a flag in Arathi Basin
-									},
-									{	-- Return a fallen flag in Warsong Gulch
-										["achievementID"] = 1786,	-- School of Hard Knocks
-										["criteriaID"] = 4,	-- Return a fallen flag in Warsong Gulch
-									},
-								},
-							},
-						},
-					},
-					{	-- Veteran Nanny
-						["achievementID"] = 275,	-- Veteran Nanny
-						["maps"] = { 111, },	-- Shattrath City
-						["groups"] = {
-							{	-- Peanut (Pet)
-								["achievementID"] = 275,	-- Veteran Nanny
-								["criteriaID"] = 1,	-- Peanut (Pet)
-							},
-							{	-- Willy (Pet)
-								["achievementID"] = 275,	-- Veteran Nanny
-								["criteriaID"] = 2,	-- Willy (Pet)
-							},
-							{	-- Egbert (Pet)
-								["achievementID"] = 275,	-- Veteran Nanny
-								["criteriaID"] = 3,	-- Egbert (Pet)
 							},
 						},
 					},
@@ -134,4 +104,4 @@ _.Holidays = bubbleDown({["u"] = 20},
 			},
 		},
 	},
-});
+};
