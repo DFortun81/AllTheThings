@@ -14,6 +14,7 @@ _.Holidays =
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 14305,		-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							29117,	-- Let's Go Fly a Kite
 							29119,	-- You Scream, I Scream...
@@ -107,10 +108,30 @@ _.Holidays =
 							},
 						},
 					},
+					{	-- Bird Friends [Alliance - Kul Tiran]
+						["questID"] = 53863, 	-- Bird Friends
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53859,	-- The Mountain Folk
+							53862,	-- The Squid Shrine
+							53861,	-- Yo Ho, Yo Ho!
+						},
+						["coords"] = {
+							{ 36.25, 51.08, 896 },	-- Birdfeather's Statue
+						},
+						["maps"] = {
+							896,	-- Drustvar
+							1161,	-- Boralus
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Children's Week [Alliance - Human]
 						["questID"] = 1468,		-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 51988,			-- Orphan Matron Nightingale
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["maps"] = { 
 							84,	-- Stormwind City
 						},
@@ -119,10 +140,24 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Children's Week [Alliance - Kul Tiran]
+						["questID"] = 53811,	-- Children's Week
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145291,		-- Oprhan Matron Westerson
+						["maps"] = {
+							1161,	-- Boralus
+						},
+						["coords"] = {
+							{ 47.77, 39.37, 1161 },	-- Path to Oprhan Matron Westerson
+							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Cruisin' the Chasm [Alliance - Human]
 						["questID"] = 29093,	-- Cruisin' the Chasm
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
 						},
@@ -140,6 +175,7 @@ _.Holidays =
 						["questID"] = 29117,	-- Let's Go Fly a Kite
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = { 
 							29093,	-- Cruisin' the Chasm
 							54130,	-- Our New Friends
@@ -174,6 +210,7 @@ _.Holidays =
 						["questID"] = 29107,	-- Malfurion Has Returned!
 						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
 						},
@@ -188,6 +225,7 @@ _.Holidays =
 						["questID"] = 54130,	-- Our New Friends
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
 						},
@@ -199,10 +237,113 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Return to the Orphanage [Alliance - Kul Tiran]
+						["questID"] = 53865, 	-- Return to the Orphanage
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53863, 	-- Bird Friends
+							53864,	-- Shapeshifters
+						},
+						["coords"] = {
+							{ 47.77, 39.37, 1161 },	-- Path to Oprhan Matron Westerson
+							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
+						},
+						["maps"] = {
+							1161,	-- Boralus
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Beakbert
+								["itemID"] = 167010,	-- Beakbert
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Enchanted Saurolisk Scale
+								["itemID"] = 167009,	-- Enchanted Saurolisk Scale
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Sandy Hermit Crab Shell
+								["itemID"] = 167008,	-- Sandy Hermit Crab Shell
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Slimy Pouch
+								["itemID"] = 167011,	-- Slimy Pouch
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							{	-- Curmudgeon's Payoff
+								["itemID"] = 23022,		-- Curmudgeon's Payoff
+								["u"] = 20,				-- Children's Week Filter
+								["description"] = "Contains 5 gold.",
+							},
+						},
+					},
+					{	-- Shapeshifters [Alliance - Kul Tiran]
+						["questID"] = 53864,	-- Shapeshifters
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53859,	-- The Mountain Folk
+							53862,	-- The Squid Shrine
+							53861,	-- Yo Ho, Yo Ho!
+						},
+						["coords"] = {
+							{ 45.94, 39.06, 896 },	-- Path to Ulfar's Den Starts
+							{ 46.32, 43.86, 896 },	-- Continue the path to Ulfar's Den
+							{ 46.32, 44.53, 896 },	-- Ulfar's Den
+						},
+						["maps"] = {
+							896,	-- Drustvar
+							1161,	-- Boralus
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- The Biggest Diamond Ever! [Alliance - Human]
 						["questID"] = 29106,	-- The Biggest Diamond Ever!
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							1468,	-- Children's Week
 						},
@@ -223,6 +364,7 @@ _.Holidays =
 						["questID"] = 29119,	-- You Scream, I Scream...
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = { 
 							29093,	-- Cruisin' the Chasm
 							54130,	-- Our New Friends
@@ -241,6 +383,58 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- The Mountain Folk [Alliance - Kul Tiran]
+						["questID"] = 53859, 	-- The Mountain Folk
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53811,	-- Children's Week
+						},
+						["coords"] = {
+							{ 42.47, 22.71, 895 },	-- Mountain Folk
+						},
+						["maps"] = {
+							1161,	-- Boralus
+							895,	-- Tiragarde Sound
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Squid Shrine [Alliance - Kul Tiran]
+						["questID"] = 53862, 	-- The Squid Shrine
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53811,	-- Children's Week
+						},
+						["coords"] = {
+							{ 72.57, 49.94, 942 },	-- Shrine of the Storm View
+						},
+						["maps"] = {
+							1161,	-- Boralus
+							942,	-- Stormsong Valley
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
+						["questID"] = 53861, 	-- Yo Ho, Yo Ho!
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 145394,		-- Liam
+						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
+						["sourceQuests"] = {
+							53811,	-- Children's Week
+						},
+						["coords"] = {
+							{ 79.83, 82.51, 895 },	-- Meet with Pirates
+						},
+						["maps"] = {
+							1161,	-- Boralus
+							895,	-- Tiragarde Sound
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					
 				},
 			},
 		},
