@@ -410,7 +410,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13937,	-- A Trip To The Wonderworks
 						},
-						["maps"] = { 
+						["maps"] = {
 							125,	-- Dalaran (Northrend)
 						},
 						["g"] = {
@@ -693,7 +693,7 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 34365,			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
-						["maps"] = { 
+						["maps"] = {
 							125,	-- Dalaran (Northrend)
 						},
 					},
@@ -720,7 +720,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13950,	-- Playmates!
 						},
-						["maps"] = { 
+						["maps"] = {
 							78,		-- Un'Goro Crater
 							125,	-- Dalaran (Northrend)
 						},
@@ -765,7 +765,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13933,	-- The Bronze Dragonshrine
 						},
-						["maps"] = { 
+						["maps"] = {
 							114,	-- Borean Tundra
 							125,	-- Dalaran (Northrend)
 						},
@@ -1027,7 +1027,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
 						},
-						["maps"] = { 
+						["maps"] = {
 							116,	-- Grizzly Hills
 							125,	-- Dalaran (Northrend)
 						},
@@ -1040,7 +1040,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13929,	-- The Biggest Tree Ever!
 						},
-						["maps"] = { 
+						["maps"] = {
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
@@ -1066,7 +1066,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13956,	-- Meeting a Great One
 						},
-						["maps"] = { 
+						["maps"] = {
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
@@ -1327,7 +1327,6 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
-
 				},
 			},
 		},
