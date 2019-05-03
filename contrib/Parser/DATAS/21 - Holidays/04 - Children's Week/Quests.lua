@@ -49,9 +49,20 @@ _.Holidays =
 						["questID"] = 13937,	-- A Trip To The Wonderworks
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33533,			-- Oracle Orphan
+						["crs"] = {
+							29478,	-- Jeppetto Joybuzz
+							96483,	-- Jeppetto Joybuzz
+						},
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
+							13956,	-- Meeting a Great One
 							13954,	-- The Dragon Queen
+						},
+						["coords"] = {
+							{ 42.82, 44.91, 125 },	-- Toyworks Entrance
+							{ 42.34, 45.07, 625 },	-- Toyworks Entrance
+							{ 44.86, 45.57, 125 },	-- Jepetto Joybuzz
+							{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 						},
 						["maps"] = {
 							125,	-- Dalaran [Northrend]
@@ -438,9 +449,15 @@ _.Holidays =
 						["questID"] = 13959,	-- Back To The Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33533,			-- Oracle Orphan
+						["crs"] = {
+							34365,			-- Orphan Matron Aria
+						},
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
 							13937,	-- A Trip To The Wonderworks
+						},
+						["coords"] = {
+							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
 						},
 						["maps"] = {
 							125,	-- Dalaran (Northrend)
@@ -450,15 +467,66 @@ _.Holidays =
 								["itemID"] = 46545,	-- Curious Oracle Hatchling
 								["u"] = 20,
 							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							{	-- Curmudgeon's Payoff
+								["itemID"] = 23022,		-- Curmudgeon's Payoff
+								["u"] = 20,				-- Children's Week Filter
+								["description"] = "Contains 5 gold.",
+							},
 						},
 					},
 					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
 						["questID"] = 13960,	-- Back To The Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33532,			-- Wolvar Orphan
+						["crs"] = {
+							34365,			-- Orphan Matron Aria
+						},
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13938,	-- A Trip To The Wonderworks
+						},
+						["coords"] = {
+							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
 						},
 						["maps"] = {
 							125,	-- Dalaran (Northrend)
@@ -467,6 +535,51 @@ _.Holidays =
 							{	-- Curious Wolvar Pup
 								["itemID"] = 46544,	-- Curious Wolvar Pup
 								["u"] = 20,
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							{	-- Curmudgeon's Payoff
+								["itemID"] = 23022,		-- Curmudgeon's Payoff
+								["u"] = 20,				-- Children's Week Filter
+								["description"] = "Contains 5 gold.",
 							},
 						},
 					},
@@ -769,6 +882,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 34365,			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["coords"] = {
+							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
+						},
 						["maps"] = {
 							125,	-- Dalaran (Northrend)
 						},
@@ -778,6 +894,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 34365,			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["coords"] = {
+							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
+						},
 						["maps"] = {
 							125,	-- Dalaran (Northrend)
 						},
@@ -803,10 +922,18 @@ _.Holidays =
 						["qg"] = 33533,			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
-							13950,	-- Playmates!
+							13951,	-- Playmates!
+							13929,	-- The Biggest Tree Ever!
+							13934,	-- The Bronze Dragonshrine
+						},
+						["coords"] = {
+							{ 40.01, 82.05, 119 },	-- Waygate Entrance
+							{ 40.66, 84.18, 119 },	-- Waygate Entrance
+							{ 47.56, 09.17, 78 },	-- The Etymidian
 						},
 						["maps"] = {
 							78,		-- Un'Goro Crater
+							119,	-- Sholazar Basin
 							125,	-- Dalaran (Northrend)
 						},
 					},
@@ -853,6 +980,11 @@ _.Holidays =
 						["sourceQuests"] = {
 							13933,	-- The Bronze Dragonshrine
 						},
+						["coords"] = {
+							{ 43.87, 12.06, 114 },	-- Path starts
+							{ 42.06, 11.26, 114 },	-- Path branches
+							{ 42.68, 12.61, 114 },	-- Roo visits Winterfin
+						},
 						["maps"] = {
 							114,	-- Borean Tundra
 							125,	-- Dalaran (Northrend)
@@ -864,7 +996,7 @@ _.Holidays =
 						["qg"] = 33532,			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
-							13934,	-- The Bronze Dragonshrine
+							13926,	-- Little Orphan Roo Of The Oracles
 						},
 						["maps"] = {
 							115,	-- Dragonblight
@@ -1141,6 +1273,10 @@ _.Holidays =
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
 						},
+						["coords"] = {
+							{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
+							{ 51.69, 40.74, 116 },	-- Roo taken to Grizzlemaw
+						},
 						["maps"] = {
 							116,	-- Grizzly Hills
 							125,	-- Dalaran (Northrend)
@@ -1152,7 +1288,11 @@ _.Holidays =
 						["qg"] = 33533,			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
-							13929,	-- The Biggest Tree Ever!
+							13926,	-- Little Orphan Roo Of The Oracles
+						},
+						["coords"] = {
+							{ 69.66, 46.25, 115 },	-- Path Starts
+							{ 71.25, 40.81, 115 },	-- Roo taken to Bronze Dragonshrine
 						},
 						["maps"] = {
 							115,	-- Dragonblight
@@ -1167,6 +1307,10 @@ _.Holidays =
 						["sourceQuests"] = {
 							13930,	-- Home Of The Bear-Men
 						},
+						["coords"] = {
+							{ 69.66, 46.25, 115 },	-- Path Starts
+							{ 71.25, 40.81, 115 },	-- Roo taken to Bronze Dragonshrine
+						},
 						["maps"] = {
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
@@ -1178,7 +1322,12 @@ _.Holidays =
 						["qg"] = 33533,			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
-							13956,	-- Meeting a Great One
+							13951,	-- Playmates!
+							13929,	-- The Biggest Tree Ever!
+							13934,	-- The Bronze Dragonshrine
+						},
+						["coords"] = {
+							{ 59.81, 54.45, 115 },	-- Meet Alexstraza
 						},
 						["maps"] = {
 							115,	-- Dragonblight
@@ -1192,6 +1341,9 @@ _.Holidays =
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13951,	-- Playmates!
+						},
+						["coords"] = {
+							{ 59.81, 54.45, 115 },	-- Meet Alexstraza
 						},
 						["maps"] = {
 							115,	-- Dragonblight
