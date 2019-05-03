@@ -25,6 +25,19 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- A Trip to the Dark Portal [Horde - Blood Elf]
+						["questID"] = 10951,	-- A Trip to the Dark Portal
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							10942,	-- Children's Week
+						},
+						["maps"] = {
+							100,	-- Hellfire Peninsula
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
@@ -288,7 +301,80 @@ _.Holidays =
 							},
 
 						},
-					},{	-- Bird Friends [Alliance - Kul Tiran]
+					},
+					{	-- Back to the Orphanage [Horde - Blood Elf - FINAL]
+						["questID"] = 10967,	-- Back to the Orphanage
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							11975,	-- Now, When I Grow Up...
+							10963,	-- Time to Visit the Caverns
+						},
+						["maps"] = {
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Elekk Training Collar
+								["itemID"] = 32622,		-- Elekk Training Collar
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Egbert's Egg
+								["itemID"] = 32616,		-- Egbert's Egg
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Legs
+								["itemID"] = 69648,		-- Legs
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Sleepy Willy
+								["itemID"] = 32617,		-- Sleepy Willy
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+
+						},
+					},
+					{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 145394,		-- Liam
@@ -342,6 +428,15 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Children's Week [Horde - Blood Elf]
+						["questID"] = 10942,	-- Children's Week [Horde - Blood Elf Orphan]
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22819,			-- Orphan Matron Mercy
+						["maps"] = {
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Children's Week [Horde - Orc]
 						["questID"] = 172,	-- Children's Week [Horde]
 						["u"] = 20,			-- Children's Week Filter
@@ -385,6 +480,19 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Hch'uu and the Mushroom People [Horde - Blood Elf]
+						["questID"] = 10945,	-- Hch'uu and the Mushroom People
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							10942,	-- Children's Week
+						},
+						["maps"] = {
+							102,	-- Zangarmarsh
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Hunting For Gold [Horde - Zandalari]
 						["questID"] = 53969,	-- Hunting for Gold
@@ -506,6 +614,21 @@ _.Holidays =
 						},
 						["maps"] = { 89, },	-- Darnassus
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Now, When I Grow Up... [Horde - Blood Elf]
+						["questID"] = 11975,	-- Now, When I Grow Up...
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							10951,	-- A Trip to the Dark Portal
+							10945,	-- Hch'uu and the Mushroom People
+							10953,	-- Visit the Throne of the Elements
+						},
+						["maps"] = {
+							110,	-- Silvermoon City
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Our New Friends [Alliance - Human]
 						["questID"] = 54130,	-- Our New Friends
@@ -902,6 +1025,34 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Time to Visit the Caverns [Horde - Blood Elf]
+						["questID"] = 10963,	-- Time to Visit the Caverns
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							10951,	-- A Trip to the Dark Portal
+							10945,	-- Hch'uu and the Mushroom People
+							10953,	-- Visit the Throne of the Elements
+						},
+						["maps"] = {
+							71,		-- Tanaris
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Visit the Throne of the Elements [Horde - Blood Elf]
+						["questID"] = 10953,	-- Visit the Throne of the Elements
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22817,			-- Blood Elf Orphan
+						["sourceQuests"] = {
+							10942,	-- Children's Week
+						},
+						["maps"] = {
+							107,	-- Nagrand [Outlands]
+							111,	-- Shattrath City
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 						["questID"] = 53861, 	-- Yo Ho, Yo Ho!
