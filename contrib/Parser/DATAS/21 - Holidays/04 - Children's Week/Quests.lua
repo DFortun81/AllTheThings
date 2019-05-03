@@ -73,9 +73,20 @@ _.Holidays =
 						["questID"] = 13938,	-- A Trip To The Wonderworks
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33532,			-- Wolvar Orphan
+						["crs"] = {
+							29478,	-- Jeppetto Joybuzz
+							96483,	-- Jeppetto Joybuzz
+						},
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
+							13955,	-- The Dragon Queen
 							13957,	-- The Mighty Hemet Nesingwary
+						},
+						["coords"] = {
+							{ 42.82, 44.91, 125 },	-- Toyworks Entrance
+							{ 42.34, 45.07, 625 },	-- Toyworks Entrance
+							{ 44.86, 45.57, 125 },	-- Jepetto Joybuzz
+							{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 						},
 						["maps"] = {
 							125,	-- Dalaran [Northrend]
@@ -446,7 +457,7 @@ _.Holidays =
 						},
 					},
 					{	-- Back To The Orphanage [Neutral - Oracles - FINAL]
-						["questID"] = 13959,	-- Back To The Orphanage
+						["questID"] = 28879,	-- Back to the Orphanage	Note!! 13959 depracated
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33533,			-- Oracle Orphan
 						["crs"] = {
@@ -515,7 +526,7 @@ _.Holidays =
 						},
 					},
 					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
-						["questID"] = 13960,	-- Back To The Orphanage
+						["questID"] = 28880,	-- Back To The Orphanage	Note!! 13960 depracated
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 33532,			-- Wolvar Orphan
 						["crs"] = {
@@ -745,6 +756,11 @@ _.Holidays =
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
 							13927,	-- Little Orphan Kekek Of The Wolvar
+						},
+						["coords"] = {
+							{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
+							{ 51.69, 40.74, 116 },	-- Kekek taken to Grizzlemaw
+							{ 50.71, 42.75, 116 },	-- Kekek taken to Grizzlemaw
 						},
 						["maps"] = {
 							116,	-- Grizzly Hills
@@ -996,7 +1012,10 @@ _.Holidays =
 						["qg"] = 33532,			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
-							13926,	-- Little Orphan Roo Of The Oracles
+							13927,	-- Little Orphan Kekek Of The Wolvar
+						},
+						["coords"] = {
+							{ 46.38, 67.79, 115 },	-- Kekek taken to Snowfall Glade
 						},
 						["maps"] = {
 							115,	-- Dragonblight
@@ -1276,6 +1295,7 @@ _.Holidays =
 						["coords"] = {
 							{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
 							{ 51.69, 40.74, 116 },	-- Roo taken to Grizzlemaw
+							{ 50.71, 42.75, 116 },	-- Roo taken to Grizzlemaw
 						},
 						["maps"] = {
 							116,	-- Grizzly Hills
@@ -1305,7 +1325,7 @@ _.Holidays =
 						["qg"] = 33532,			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
-							13930,	-- Home Of The Bear-Men
+							13927,	-- Little Orphan Kekek Of The Wolvar
 						},
 						["coords"] = {
 							{ 69.66, 46.25, 115 },	-- Path Starts
@@ -1340,7 +1360,9 @@ _.Holidays =
 						["qg"] = 33532,			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
+							13930,	-- Home Of The Bear-Men
 							13951,	-- Playmates!
+							13934,	-- The Bronze Dragonshrine
 						},
 						["coords"] = {
 							{ 59.81, 54.45, 115 },	-- Meet Alexstraza
@@ -1395,7 +1417,12 @@ _.Holidays =
 						["qg"] = 33532,			-- Wolvar Orphan
 						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
 						["sourceQuests"] = {
-							13955,	-- The Dragon Queen
+							13930,	-- Home Of The Bear-Men
+							13951,	-- Playmates!
+							13934,	-- The Bronze Dragonshrine
+						},
+						["coords"] = {
+							{ 27.11, 58.73, 119 },	-- Meet Hemest Nesingwary
 						},
 						["maps"] = {
 							119,	-- Sholazar Basin
