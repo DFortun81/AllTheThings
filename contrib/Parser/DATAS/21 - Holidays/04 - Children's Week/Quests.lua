@@ -19,6 +19,9 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
+						["coords"] = {
+							{ 88.56, 50.23, 100 },
+						},
 						["maps"] = {
 							100,	-- Hellfire Peninsula
 							111,	-- Shattrath City
@@ -32,6 +35,9 @@ _.Holidays =
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
+						},
+						["coords"] = {
+							{ 88.56, 50.23, 100 },
 						},
 						["maps"] = {
 							100,	-- Hellfire Peninsula
@@ -269,10 +275,16 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22818,			-- Draenei Orphan
+						["crs"] = {
+							22819,			-- Orphan Matron Mercy
+						},
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10956,	-- The Seat of the Naaru
 							10962,	-- Time to Visit the Caverns
+						},
+						["coords"] = {
+							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
 						},
 						["maps"] = {
 							111,	-- Shattrath City
@@ -342,10 +354,16 @@ _.Holidays =
 						["questID"] = 10967,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["crs"] = {
+							22819,			-- Orphan Matron Mercy
+						},
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							11975,	-- Now, When I Grow Up...
 							10963,	-- Time to Visit the Caverns
+						},
+						["coords"] = {
+							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
 						},
 						["maps"] = {
 							111,	-- Shattrath City
@@ -470,6 +488,9 @@ _.Holidays =
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
+						["coords"] = {
+							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+						},
 						["maps"] = {
 							111,	-- Shattrath City
 						},
@@ -506,6 +527,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
+						["coords"] = {
+							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
+						},
 						["maps"] = {
 							111,	-- Shattrath City
 						},
@@ -565,6 +589,10 @@ _.Holidays =
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
+						},
+						["coords"] = {
+							{ 19.43, 51.31, 102 },	-- Salandria taken to Sporeggar
+							{ 19.28, 51.34, 102 },	-- Speak to Hch'uu
 						},
 						["maps"] = {
 							102,	-- Zangarmarsh
@@ -762,6 +790,9 @@ _.Holidays =
 							10951,	-- A Trip to the Dark Portal
 							10945,	-- Hch'uu and the Mushroom People
 							10953,	-- Visit the Throne of the Elements
+						},
+						["coords"] = {
+							{ 76.61, 81.23, 110 },	-- Elite Tauren Chieftain
 						},
 						["maps"] = {
 							110,	-- Silvermoon City
@@ -1309,8 +1340,14 @@ _.Holidays =
 							10945,	-- Hch'uu and the Mushroom People
 							10953,	-- Visit the Throne of the Elements
 						},
+						["coords"] = {
+							{ 53.29, 55.35, 75 },	-- Salandria taken to Caverns of Time
+							{ 39.94, 77.39, 75 },	-- Toy Dragon
+							{ 64.76, 50.01, 75 },	-- Caverns of Time Entrance
+						},
 						["maps"] = {
 							71,		-- Tanaris
+							75,		-- Tanaris: Caverns of Time
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
@@ -1319,9 +1356,16 @@ _.Holidays =
 						["questID"] = 10953,	-- Visit the Throne of the Elements
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["crs"] = {
+							18072,	-- Elementalist Sharvak
+						},
 						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
+						},
+						["coords"] = {
+							{ 60.39, 23.36, 107 },	-- Salandria taken to the Throne of Elements
+							{ 60.65, 22.11, 107 },	-- Speak to Elementalist Sharvak
 						},
 						["maps"] = {
 							107,	-- Nagrand [Outlands]
