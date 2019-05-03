@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = 
+_.Holidays =
 {
 	{	-- Children's Week
 		["holidayID"] = 235445,	-- Children's Week
@@ -10,7 +10,8 @@ _.Holidays =
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
 				["g"] = {
-					{	-- A Warden of the Alliance [Alliance - Human]
+					--Note!! Each "set" of questlines will always be linked to the main city for that expansion so that there is a reminder to finish the questline if you haven't already.
+					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 14305,		-- Human Orphan
@@ -40,7 +41,7 @@ _.Holidays =
 							{ 65.63, 62.99, 84 },	-- Craggle Wobbletop Path
 							{ 66.61, 64.43, 84 },	-- Craggle Wobbletop Path
 						},
-						["maps"] = { 
+						["maps"] = {
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -132,7 +133,7 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 51988,			-- Orphan Matron Nightingale
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
-						["maps"] = { 
+						["maps"] = {
 							84,	-- Stormwind City
 						},
 						["coords"] = {
@@ -153,6 +154,21 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Children's Week [Horde - Zandalari]
+						["questID"] = 131346,	-- Children's Week
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["maps"] = {
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 53.46, 84.91, 1165 },	-- Entrance to Hall of Castes
+							{ 54.64, 84.61, 1165 },	-- Caretaker Padae
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Cruisin' the Chasm [Alliance - Human]
 						["questID"] = 29093,	-- Cruisin' the Chasm
 						["u"] = 20,				-- Children's Week Filter
@@ -165,18 +181,39 @@ _.Holidays =
 							{ 57.71, 53.27, 52 },	-- Rental Chopper
 							{ 57.78, 53.06, 52 },	-- Rental Chopper
 						},
-						["maps"] = { 
+						["maps"] = {
 							52,	-- Westfall
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Hunting For Gold [Horde - Zandalari]
+						["questID"] = 53969,	-- Hunting for Gold
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							53966,	-- Loa of Winds
+							53967,	-- The Frogmarsh
+							53968,	-- The Shifting Pack
+						},
+						["maps"] = {
+							864,	-- Vol'dun
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 28.91, 88.76, 864 },	-- The Golden Isle
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Let's Go Fly a Kite [Alliance - Human]
 						["questID"] = 29117,	-- Let's Go Fly a Kite
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 14305,			-- Human Orphan
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							29093,	-- Cruisin' the Chasm
 							54130,	-- Our New Friends
 							29106,	-- The Biggest Diamond Ever!
@@ -201,10 +238,30 @@ _.Holidays =
 							{ 65.63, 62.99, 84 },	-- Craggle Wobbletop Path
 							{ 66.61, 64.43, 84 },	-- Craggle Wobbletop Path
 						},
-						["maps"] = { 
+						["maps"] = {
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Loa of Winds [Horde - Zandalari]
+						["questID"] = 53966,	-- Loa of Winds
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							131346,	-- Children's Week
+						},
+						["maps"] = {
+							862,	-- Zuldazar
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 65.77, 45.01, 865 },	-- Path Starts to Pteroor Rise
+							{ 70.54, 49.11, 865 },	-- Pterror Rise
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Malfurion Has Returned! [Alliance - Human] REMOVED
 						["questID"] = 29107,	-- Malfurion Has Returned!
@@ -214,7 +271,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							1468,	-- Children's Week
 						},
-						["maps"] = { 
+						["maps"] = {
 							84,	-- Stormwind City
 							89,	-- Darnassus
 						},
@@ -232,12 +289,95 @@ _.Holidays =
 						["coords"] = {
 							{ 53.28, 15.25, 84 },	-- Stormwind Embassy
 						},
-						["maps"] = { 
+						["maps"] = {
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Return to the Orphanage [Alliance - Kul Tiran]
+					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
+						["questID"] = 53971,	-- Return to the Hall of Castes
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							53969,	-- Hunting for Gold
+							53970,	-- The Sethrak Queen
+						},
+						["maps"] = {
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 53.46, 84.91, 1165 },	-- Entrance to Hall of Castes
+							{ 54.64, 84.61, 1165 },	-- Caretaker Padae
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Beakbert
+								["itemID"] = 167010,	-- Beakbert
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Enchanted Saurolisk Scale
+								["itemID"] = 167009,	-- Enchanted Saurolisk Scale
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Sandy Hermit Crab Shell
+								["itemID"] = 167008,	-- Sandy Hermit Crab Shell
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Slimy Pouch
+								["itemID"] = 167011,	-- Slimy Pouch
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							{	-- Curmudgeon's Payoff
+								["itemID"] = 23022,		-- Curmudgeon's Payoff
+								["u"] = 20,				-- Children's Week Filter
+								["description"] = "Contains 5 gold.",
+							},
+						},
+					},
+					{	-- Return to the Orphanage [Alliance - Kul Tiran - FINAL]
 						["questID"] = 53865, 	-- Return to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 145394,		-- Liam
@@ -352,7 +492,7 @@ _.Holidays =
 							{ 44.76, 52.25, 87 },	-- Path to Old Ironforge
 							{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 						},
-						["maps"] = { 
+						["maps"] = {
 							84,		-- Stormwind City
 							87,		-- Ironforge
 							1361,	-- Old Ironforge
@@ -360,28 +500,25 @@ _.Holidays =
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- You Scream, I Scream... [Alliance - Human]
-						["questID"] = 29119,	-- You Scream, I Scream...
+					{	-- The Frogmarsh [Horde - Zandalari]
+						["questID"] = 53967,	-- The Frogmarsh
 						["u"] = 20,				-- Children's Week Filter
-						["qg"] = 14305,			-- Human Orphan
-						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
-						["sourceQuests"] = { 
-							29093,	-- Cruisin' the Chasm
-							54130,	-- Our New Friends
-							29106,	-- The Biggest Diamond Ever!
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							131346,	-- Children's Week
 						},
-						["crs"] = {
-							52420,	-- Bazzil Frostweaver
-							52421,	-- Hans Coldhearth
+						["maps"] = {
+							863,	-- Nazmir
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
 						},
 						["coords"] = {
-							{ 49.01, 89.74, 84 },	-- Hans Coldhearth
-							{ 49.12, 90.07, 84 },	-- Bazzil Frostweaver
+							{ 71.18, 49.19, 863 },	-- Path Starts
+							{ 73.26, 53.42, 863 },	-- The Frogmarsh
 						},
-						["maps"] = { 
-							84,	-- Stormwind City
-						},
-						["races"] = ALLIANCE_ONLY,
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Mountain Folk [Alliance - Kul Tiran]
 						["questID"] = 53859, 	-- The Mountain Folk
@@ -399,6 +536,49 @@ _.Holidays =
 							895,	-- Tiragarde Sound
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Sethrak Queen [Horde - Zandalari]
+						["questID"] = 53970,	-- The Sethrak Queen
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							53966,	-- Loa of Winds
+							53967,	-- The Frogmarsh
+							53968,	-- The Shifting Pack
+						},
+						["maps"] = {
+							864,	-- Vol'dun
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 27.01, 53.15, 864 },	-- Path to Sanctuary of the Devoted
+							{ 27.02, 51.98, 864 },	-- Path to Sanctuary of the Devoted
+							{ 26.77, 52.57, 864 },	-- Sanctuary of the Devoted
+						},
+						["races"] = HORDE_ONLY,
+					},
+					{	-- The Shifting Pack [Horde - Zandalari]
+						["questID"] = 53968,	-- The Shifting Pack
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 131346,		-- Caretaker Padae
+						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
+						["sourceQuests"] = {
+							131346,	-- Children's Week
+						},
+						["maps"] = {
+							862,	-- Zuldazar
+							1163,	-- The Great Seal [Dazar'alor]
+							1164,	-- Hall of Chroniclers [Dazar'alor]
+							1165,	-- Dazar'alor
+						},
+						["coords"] = {
+							{ 49.39, 31.22, 862 },	-- Path Starts
+							{ 48.69, 31.76, 862 },	-- Lair of Gonk
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Squid Shrine [Alliance - Kul Tiran]
 						["questID"] = 53862, 	-- The Squid Shrine
@@ -434,6 +614,30 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- You Scream, I Scream... [Alliance - Human]
+						["questID"] = 29119,	-- You Scream, I Scream...
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14305,			-- Human Orphan
+						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
+						["sourceQuests"] = {
+							29093,	-- Cruisin' the Chasm
+							54130,	-- Our New Friends
+							29106,	-- The Biggest Diamond Ever!
+						},
+						["crs"] = {
+							52420,	-- Bazzil Frostweaver
+							52421,	-- Hans Coldhearth
+						},
+						["coords"] = {
+							{ 49.01, 89.74, 84 },	-- Hans Coldhearth
+							{ 49.12, 90.07, 84 },	-- Bazzil Frostweaver
+						},
+						["maps"] = {
+							84,	-- Stormwind City
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					
 					
 				},
 			},
