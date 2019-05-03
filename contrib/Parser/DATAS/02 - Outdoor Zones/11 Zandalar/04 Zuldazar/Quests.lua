@@ -684,6 +684,26 @@ _.Zones =
 								["coord"] = { 58.4, 62.7 },
 								["races"] = HORDE_ONLY,
 							},
+							{	-- The Great Sea Scrolls [Note: this was ALLIANCE_ONLY in Stormsong quests, so copied it here to make a horde version]
+								["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+								["questID"] = 53476,	-- The Great Sea Scrolls
+								["description"] = "You receive this item when looting any treasure chest and has a random chance to spawn.",
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									{	-- Bartered Vrykul Cowl
+										["itemID"] = 163863,	-- Bartered Vrykul Cowl
+									},
+									{	-- Bartered Vrykul Facemask
+										["itemID"] = 163864,	-- Bartered Vrykul Facemask
+									},
+									{	-- Bartered Vrykul Hood
+										["itemID"] = 163862,	-- Bartered Vrykul Hood
+									},
+									{	-- Bartered Vrykul Warhelm
+										["itemID"] = 163865,	-- Bartered Vrykul Warhelm
+									},
+								},
+							},							
 							qh(50297, {	-- The Head of Her Enemy
 								["qg"] = 130929,	-- Witch Doctor Jangalar
 								["g"] = {
