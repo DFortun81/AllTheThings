@@ -52,6 +52,19 @@ _.Holidays =
 							625,	-- Dalaran [Broken Isles]
 						},
 					},
+					{	-- A Trip To The Wonderworks [Neutral - Wolvar]
+						["questID"] = 13938,	-- A Trip To The Wonderworks
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13957,	-- The Mighty Hemet Nesingwary
+						},
+						["maps"] = {
+							125,	-- Dalaran [Northrend]
+							625,	-- Dalaran [Broken Isles]
+						},
+					},
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
@@ -407,6 +420,24 @@ _.Holidays =
 							},
 						},
 					},
+					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
+						["questID"] = 13960,	-- Back To The Orphanage
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13938,	-- A Trip To The Wonderworks
+						},
+						["maps"] = {
+							125,	-- Dalaran (Northrend)
+						},
+						["g"] = {
+							{	-- Curious Wolvar Pup
+								["itemID"] = 46544,	-- Curious Wolvar Pup
+								["u"] = 20,
+							},
+						},
+					},
 					{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
@@ -529,6 +560,19 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Home Of The Bear-Men [Neutral - Wolvar]
+						["questID"] = 13930,	-- Home Of The Bear-Men
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13927,	-- Little Orphan Kekek Of The Wolvar
+						},
+						["maps"] = {
+							116,	-- Grizzly Hills
+							125,	-- Dalaran (Northrend)
+						},
+					},
 					{	-- Hunting For Gold [Horde - Zandalari]
 						["questID"] = 53969,	-- Hunting for Gold
 						["u"] = 20,				-- Children's Week Filter
@@ -635,6 +679,15 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
+						["questID"] = 13927,	-- Little Orphan Kekek Of The Wolvar
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 34365,			-- Orphan Matron Aria
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["maps"] = {
+							125,	-- Dalaran (Northrend)
+						},
+					},
 					{	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 						["questID"] = 13926,	-- Little Orphan Roo Of The Oracles
 						["u"] = 20,				-- Children's Week Filter
@@ -714,6 +767,19 @@ _.Holidays =
 						},
 						["maps"] = { 
 							114,	-- Borean Tundra
+							125,	-- Dalaran (Northrend)
+						},
+					},
+					{	-- Playmates! [Neutral - Wolvar]
+						["questID"] = 13951,	-- Playmates!
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13934,	-- The Bronze Dragonshrine
+						},
+						["maps"] = {
+							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
 					},
@@ -979,6 +1045,19 @@ _.Holidays =
 							125,	-- Dalaran (Northrend)
 						},
 					},
+					{	-- The Bronze Dragonshrine [Neutral - Wolvar]
+						["questID"] = 13934,	-- The Bronze Dragonshrine
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13930,	-- Home Of The Bear-Men
+						},
+						["maps"] = {
+							115,	-- Dragonblight
+							125,	-- Dalaran (Northrend)
+						},
+					},
 					{	-- The Dragon Queen [Neutral - Oracles]
 						["questID"] = 13954,	-- The Dragon Queen
 						["u"] = 20,				-- Children's Week Filter
@@ -988,6 +1067,19 @@ _.Holidays =
 							13956,	-- Meeting a Great One
 						},
 						["maps"] = { 
+							115,	-- Dragonblight
+							125,	-- Dalaran (Northrend)
+						},
+					},
+					{	-- The Dragon Queen [Neutral - Wolvar]
+						["questID"] = 13955,	-- The Dragon Queen
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13951,	-- Playmates!
+						},
+						["maps"] = {
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
@@ -1026,6 +1118,19 @@ _.Holidays =
 							{ 73.26, 53.42, 863 },	-- The Frogmarsh
 						},
 						["races"] = HORDE_ONLY,
+					},
+					{	-- The Mighty Hemet Nesingwary [Neutral - Wolvar]
+						["questID"] = 13957,	-- The Mighty Hemet Nesingwary
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33532,			-- Wolvar Orphan
+						["description"] = "If you are missing this quest resummon your Wolvar child to pick it up.",
+						["sourceQuests"] = {
+							13955,	-- The Dragon Queen
+						},
+						["maps"] = {
+							119,	-- Sholazar Basin
+							125,	-- Dalaran (Northrend)
+						},
 					},
 					{	-- The Mountain Folk [Alliance - Kul Tiran]
 						["questID"] = 53859, 	-- The Mountain Folk
