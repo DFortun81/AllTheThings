@@ -11,6 +11,20 @@ _.Holidays =
 				["npcID"] = -17,	-- Quests
 				["g"] = {
 					--Note!! Each "set" of questlines will always be linked to the main city for that expansion so that there is a reminder to finish the questline if you haven't already.
+					{	-- A Trip to the Dark Portal [Alliance - Draenei]
+						["questID"] = 10952,	-- A Trip to the Dark Portal
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10943, 	-- Children's Week
+						},
+						["maps"] = { 
+							100,	-- Hellfire Peninsula
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
@@ -109,7 +123,94 @@ _.Holidays =
 							},
 						},
 					},
-					{	-- Bird Friends [Alliance - Kul Tiran]
+					{	-- Auchindoun and the Ring of Observance [Alliance - Draenei]
+						["questID"] = 10950,	-- Auchindoun and the Ring of Observance
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10943, 	-- Children's Week
+						},
+						["maps"] = { 
+							108,	-- Terrokar Forest
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Back to the Orphanage [Alliance - Draenei - FINAL]
+						["questID"] = 10966,	-- Back to the Orphanage
+						["u"] = 20,				-- Children's Week Filter
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10956,	-- The Seat of the Naaru
+							10962,	-- Time to Visit the Caverns
+						},
+						["maps"] = { 
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							{	-- Elekk Training Collar
+								["itemID"] = 32622,		-- Elekk Training Collar
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Egbert's Egg
+								["itemID"] = 32616,		-- Egbert's Egg
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Legs
+								["itemID"] = 69648,		-- Legs
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Sleepy Willy
+								["itemID"] = 32617,		-- Sleepy Willy
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							
+						},
+					},{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 145394,		-- Liam
@@ -125,6 +226,15 @@ _.Holidays =
 						["maps"] = {
 							896,	-- Drustvar
 							1161,	-- Boralus
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Children's Week [Alliance - Draenei]
+						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22819,			-- Orphan Matron Mercy
+						["maps"] = { 
+							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
@@ -207,6 +317,20 @@ _.Holidays =
 							{ 28.91, 88.76, 864 },	-- The Golden Isle
 						},
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Jheel is at Aeris Landing! [Alliance - Draenei]
+						["questID"] = 10954,	-- Jheel is at Aeris Landing!
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10943, 	-- Children's Week
+						},
+						["maps"] = { 
+							107,	-- Nagrand [Outlands]
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Let's Go Fly a Kite [Alliance - Human]
 						["questID"] = 29117,	-- Let's Go Fly a Kite
@@ -294,7 +418,7 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
+					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL
 						["questID"] = 53971,	-- Return to the Hall of Castes
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 131346,		-- Caretaker Padae
@@ -537,6 +661,22 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- The Seat of the Naaru [Alliance - Draenei]
+						["questID"] = 10956,	-- The Seat of the Naaru
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10950,	-- Auchindoun and the Ring of Observance
+							10952,	-- A Trip to the Dark Portal
+							10954,	-- Jheel is at Aeris Landing!
+						},
+						["maps"] = { 
+							103,	-- The Exodar
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- The Sethrak Queen [Horde - Zandalari]
 						["questID"] = 53970,	-- The Sethrak Queen
 						["u"] = 20,				-- Children's Week Filter
@@ -594,6 +734,22 @@ _.Holidays =
 						["maps"] = {
 							1161,	-- Boralus
 							942,	-- Stormsong Valley
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Time to Visit the Caverns [Alliance - Draenei]
+						["questID"] = 10962,	-- Time to Visit the Caverns
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10950,	-- Auchindoun and the Ring of Observance
+							10952,	-- A Trip to the Dark Portal
+							10954,	-- Jheel is at Aeris Landing!
+						},
+						["maps"] = { 
+							71,		-- Tanaris
+							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
