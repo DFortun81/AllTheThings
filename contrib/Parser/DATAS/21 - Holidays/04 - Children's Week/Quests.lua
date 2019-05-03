@@ -39,6 +39,19 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
+					{	-- A Trip To The Wonderworks [Neutral - Oracles]
+						["questID"] = 13937,	-- A Trip To The Wonderworks
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13954,	-- The Dragon Queen
+						},
+						["maps"] = {
+							125,	-- Dalaran [Northrend]
+							625,	-- Dalaran [Broken Isles]
+						},
+					},
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
@@ -376,6 +389,24 @@ _.Holidays =
 
 						},
 					},
+					{	-- Back To The Orphanage [Neutral - Oracles - FINAL]
+						["questID"] = 13959,	-- Back To The Orphanage
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13937,	-- A Trip To The Wonderworks
+						},
+						["maps"] = { 
+							125,	-- Dalaran (Northrend)
+						},
+						["g"] = {
+							{	-- Curious Oracle Hatchling
+								["itemID"] = 46545,	-- Curious Oracle Hatchling
+								["u"] = 20,
+							},
+						},
+					},
 					{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
@@ -395,7 +426,7 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Children's Week [Alliance - Draenei]
+					{	-- Children's Week [Alliance - Draenei - START]
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
@@ -404,7 +435,7 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Children's Week [Alliance - Human]
+					{	-- Children's Week [Alliance - Human - START]
 						["questID"] = 1468,		-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 51988,			-- Orphan Matron Nightingale
@@ -417,7 +448,7 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Children's Week [Alliance - Kul Tiran]
+					{	-- Children's Week [Alliance - Kul Tiran - START]
 						["questID"] = 53811,	-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 145291,		-- Oprhan Matron Westerson
@@ -430,7 +461,7 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Children's Week [Horde - Blood Elf]
+					{	-- Children's Week [Horde - Blood Elf - START]
 						["questID"] = 10942,	-- Children's Week [Horde - Blood Elf Orphan]
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
@@ -440,7 +471,7 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Children's Week [Horde - Orc]
+					{	-- Children's Week [Horde - Orc - START]
 						["questID"] = 172,	-- Children's Week [Horde]
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 51989,		-- Orphan Matron Battlewall
@@ -451,7 +482,7 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Children's Week [Horde - Zandalari]
+					{	-- Children's Week [Horde - Zandalari - START]
 						["questID"] = 131346,	-- Children's Week
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 131346,		-- Caretaker Padae
@@ -604,6 +635,15 @@ _.Holidays =
 						},
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
+						["questID"] = 13926,	-- Little Orphan Roo Of The Oracles
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 34365,			-- Orphan Matron Aria
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["maps"] = { 
+							125,	-- Dalaran (Northrend)
+						},
+					},
 					{	-- Malfurion Has Returned! [Alliance - Human] REMOVED
 						["questID"] = 29107,	-- Malfurion Has Returned!
 						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
@@ -618,6 +658,19 @@ _.Holidays =
 						},
 						["maps"] = { 89, },	-- Darnassus
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Meeting a Great One [Neutral - Oracles]
+						["questID"] = 13956,	-- Meeting a Great One
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13950,	-- Playmates!
+						},
+						["maps"] = { 
+							78,		-- Un'Goro Crater
+							125,	-- Dalaran (Northrend)
+						},
 					},
 					{	-- Now, When I Grow Up... [Horde - Blood Elf]
 						["questID"] = 11975,	-- Now, When I Grow Up...
@@ -650,6 +703,19 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Playmates! [Neutral - Oracles]
+						["questID"] = 13950,	-- Playmates!
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13933,	-- The Bronze Dragonshrine
+						},
+						["maps"] = { 
+							114,	-- Borean Tundra
+							125,	-- Dalaran (Northrend)
+						},
 					},
 					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL
 						["questID"] = 53971,	-- Return to the Hall of Castes
@@ -886,6 +952,45 @@ _.Holidays =
 						},
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Biggest Tree Ever! [Neutral - Oracles]
+						["questID"] = 13929,	-- The Biggest Tree Ever!
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13926,	-- Little Orphan Roo Of The Oracles
+						},
+						["maps"] = { 
+							116,	-- Grizzly Hills
+							125,	-- Dalaran (Northrend)
+						},
+					},
+					{	-- The Bronze Dragonshrine [Neutral - Oracles]
+						["questID"] = 13933,	-- The Bronze Dragonshrine
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13929,	-- The Biggest Tree Ever!
+						},
+						["maps"] = { 
+							115,	-- Dragonblight
+							125,	-- Dalaran (Northrend)
+						},
+					},
+					{	-- The Dragon Queen [Neutral - Oracles]
+						["questID"] = 13954,	-- The Dragon Queen
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 33533,			-- Oracle Orphan
+						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["sourceQuests"] = {
+							13956,	-- Meeting a Great One
+						},
+						["maps"] = { 
+							115,	-- Dragonblight
+							125,	-- Dalaran (Northrend)
+						},
 					},
 					{	-- The Fallen Chieftain [Horde - Orc]
 						["questID"] = 29176,	-- The Fallen Chieftain
