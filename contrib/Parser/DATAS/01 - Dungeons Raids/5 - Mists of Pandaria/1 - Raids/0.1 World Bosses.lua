@@ -927,8 +927,56 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					
 					-- Caches / Boxes
-					i(104272),	-- Celestial Treasure Box
-					
+					i(104272, {	-- Celestial Treasure Box
+						["g"] = {
+							i(105824),	-- Aeth's Swiftcinder Cloak
+							i(105816),	-- Brave Niunai's Cloak
+							i(105812),	-- Cape of the Alpha
+							i(105818),	-- Crimson Gauntlets of Death
+							i(105815),	-- Drape of the Omega
+							i(105823),	-- Gauntlets of Discarded Time
+							i(105813),	-- Kalaena's Arcane Handwraps
+							i(105819),	-- Keengrip Arrowpullers
+							i(105820),	-- Marco's Crackling Gloves
+							i(105821),	-- Romy's Reliable Grips
+							i(105814),	-- Seebo's Sainted Touch
+							i(105817),	-- Siid's Silent Stranglers
+							i(105825),	-- Turtleshell Greatcloak
+							i(105822),	-- Zoid's Molten Gauntlets	
+							i(44984),	-- Ammen Vale Lashling
+							i(54436),	-- Blue Clockwork Rocket Bot
+							i(44970),	-- Dun Morogh Cub
+							i(44973),	-- Durotar Scorpion
+							i(67282),	-- Elementium Geode
+							i(44974),	-- Elwynn Lamb
+							i(44982),	-- Enchanted Broom
+							i(64403),	-- Fox Kit
+							i(43698),	-- Giant Sewer Rat
+							i(45002),	-- Mechanopeep
+							i(44980),	-- Mulgore Hatchling
+							i(94295),	-- Primal Egg
+							i(69992),	-- Shimmering Wyrmling
+							i(44965),	-- Teldrassil Sproutling
+							i(69991),	-- Tiny Sporebat
+							i(44971),	-- Tirisfal Batling
+							i(10360),	-- Black Kingsnake
+							i(29960),	-- Captured Firefly
+							i(8491),	-- Cat Carrier (Black Tabby)
+							i(46398),	-- Cat Carrier (Calico Cat)
+							i(8487),	-- Cat Carrier (Orange Tabby)
+							i(8488),	-- Cat Carrier (Silver Tabby)
+							i(10822),	-- Dark Whelpling
+							i(29953),	-- Golden Dragonhawk Hatchling
+							i(48116),	-- Gundrak Hatchling
+							i(48118),	-- Leaping Hatchling
+							i(48120),	-- Obsidian Hatchling
+							i(8496),	-- Parrot Cage (Cockatiel)
+							i(8492),	-- Parrot Cage (Green Wing Macaw)
+							i(8495),	-- Parrot Cage (Senegal)
+							i(48124),	-- Razormaw Hatchling
+							i(48126),	-- Razzashi Hatchling
+						},
+					}),
 					-- Neck
 					i(103515),	-- Prideful Gladiator's Choker of Accuracy
 					i(102641),	-- Prideful Gladiator's Choker of Accuracy

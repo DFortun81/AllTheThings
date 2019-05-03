@@ -31,28 +31,28 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95959),	-- Spiderweb Tabi
 					},
 				}),
-				un(48, i(95343, {	-- Treasures of the Thunder
+				un(2, i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 					["groups"] = {
 						i(94295),	-- Primal Egg
-						un(48, i(95961)),	-- Abandoned Zandalari Firecord
-						un(48, i(95962)),	-- Abandoned Zandalari Shadowgirdle
-						un(48, i(95965)),	-- Home-Warding Slippers
-						un(48, i(95963)),	-- Silentflame Sandals
-						un(48, i(95971)),	-- Abandoned Zandalari Moonstrap
-						un(48, i(95970)),	-- Abandoned Zandalari Silentbelt
-						un(48, i(95966)),	-- Deeproot Treads
-						un(48, i(95959)),	-- Spiderweb Tabi
-						un(48, i(95972)),	-- Abandoned Zandalarai Arrowlinks
-						un(48, i(95973)),	-- Abandoned Zandarlari Waterchain
-						un(48, i(95960)),	-- Scalehide Spurs
-						un(48, i(95967)),	-- Spiritbound Boots
-						un(48, i(95976)),	-- Abandoned Zandalari Bucklebreaker
-						un(48, i(95975)),	-- Abandoned Zandalari Goreplate
-						un(48, i(95974)),	-- Abandoned Zandalari Greatbelt
-						un(48, i(95979)),	-- Columnbreaker Stompers
-						un(48, i(95978)),	-- Locksmasher Greaves
-						un(48, i(95968)),	-- Vaultwalker Sabatons
+						i(95961),	-- Abandoned Zandalari Firecord
+						i(95962),	-- Abandoned Zandalari Shadowgirdle
+						i(95965),	-- Home-Warding Slippers
+						i(95963),	-- Silentflame Sandals
+						i(95971),	-- Abandoned Zandalari Moonstrap
+						i(95970),	-- Abandoned Zandalari Silentbelt
+						i(95966),	-- Deeproot Treads
+						i(95959),	-- Spiderweb Tabi
+						i(95972),	-- Abandoned Zandalarai Arrowlinks
+						i(95973),	-- Abandoned Zandarlari Waterchain
+						i(95960),	-- Scalehide Spurs
+						i(95967),	-- Spiritbound Boots
+						i(95976),	-- Abandoned Zandalari Bucklebreaker
+						i(95975),	-- Abandoned Zandalari Goreplate
+						i(95974),	-- Abandoned Zandalari Greatbelt
+						i(95979),	-- Columnbreaker Stompers
+						i(95978),	-- Locksmasher Greaves
+						i(95968),	-- Vaultwalker Sabatons
 					},
 				})),
 				qg(67990, qh(32589, {	-- Life Blood / Lor'themar Theron <Regent Lord of Quel'Thalas>
