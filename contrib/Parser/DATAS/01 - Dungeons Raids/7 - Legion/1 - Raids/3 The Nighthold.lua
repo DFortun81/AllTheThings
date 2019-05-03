@@ -204,7 +204,6 @@ _.Instances = { tier(7, {	-- Legion
 							i(140834),	-- Soul of Flame
 						})),
 						cr(103758, e(1732, {	-- Star Augur Etraeus
-							ach(10851),	-- Elementalry!
 							{
 								["achievementID"] = 10837,	-- Royal Athenaeum
 								["criteriaID"] = 2,			-- Star Augur Etraeus
@@ -242,7 +241,6 @@ _.Instances = { tier(7, {	-- Legion
 								109038,	-- Solarist Tel'arn
 							},
 							["g"] = {
-								ach(10754),	-- Fruit of All Evil
 								{
 									["achievementID"] = 10837,	-- Royal Athenaeum
 									["criteriaID"] = 3,			-- High Botanist Tel'arn
