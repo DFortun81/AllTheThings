@@ -978,7 +978,7 @@ _.Holidays =
 						["qg"] = 33533,			-- Oracle Orphan
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
 						["sourceQuests"] = {
-							13933,	-- The Bronze Dragonshrine
+							13926,	-- Little Orphan Roo Of The Oracles
 						},
 						["coords"] = {
 							{ 43.87, 12.06, 114 },	-- Path starts
