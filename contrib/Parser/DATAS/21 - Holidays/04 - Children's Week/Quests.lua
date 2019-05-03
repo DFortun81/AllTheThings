@@ -29,6 +29,7 @@ _.Holidays =
 						["questID"] = 10951,	-- A Trip to the Dark Portal
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
 						},
@@ -306,6 +307,7 @@ _.Holidays =
 						["questID"] = 10967,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							11975,	-- Now, When I Grow Up...
 							10963,	-- Time to Visit the Caverns
@@ -432,6 +434,7 @@ _.Holidays =
 						["questID"] = 10942,	-- Children's Week [Horde - Blood Elf Orphan]
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["maps"] = {
 							111,	-- Shattrath City
 						},
@@ -485,6 +488,7 @@ _.Holidays =
 						["questID"] = 10945,	-- Hch'uu and the Mushroom People
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
 						},
@@ -619,6 +623,7 @@ _.Holidays =
 						["questID"] = 11975,	-- Now, When I Grow Up...
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10951,	-- A Trip to the Dark Portal
 							10945,	-- Hch'uu and the Mushroom People
@@ -1030,6 +1035,7 @@ _.Holidays =
 						["questID"] = 10963,	-- Time to Visit the Caverns
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10951,	-- A Trip to the Dark Portal
 							10945,	-- Hch'uu and the Mushroom People
@@ -1045,6 +1051,7 @@ _.Holidays =
 						["questID"] = 10953,	-- Visit the Throne of the Elements
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22817,			-- Blood Elf Orphan
+						["description"] = "If you are missing this quest resummon your Blood Elf child to pick it up.",
 						["sourceQuests"] = {
 							10942,	-- Children's Week
 						},
