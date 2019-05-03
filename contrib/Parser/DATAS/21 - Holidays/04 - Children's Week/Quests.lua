@@ -69,6 +69,9 @@ _.Holidays =
 						["questID"] = 171,	-- A Warden of the Alliance
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 14305,		-- Human Orphan
+						["crs"] = {
+							51988,			-- Orphan Matron Nightingale
+						},
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
 						["sourceQuests"] = {
 							29117,	-- Let's Go Fly a Kite
@@ -168,13 +171,19 @@ _.Holidays =
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 14444,	-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["crs"] = {
+							51989,		-- Orphan Matron Battlewall
+						},
 						["sourceQuests"] = {
 							29190,	-- Let's Go Fly a Kite
 							29191,	-- You Scream, I Scream...
 						},
+						["coords"] = {
+							{ 57.93, 57.63, 85 },	-- Orphan Matron Battlewail
+						},
 						["maps"] = {
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -507,9 +516,12 @@ _.Holidays =
 						["u"] = 20,			-- Children's Week Filter
 						["qg"] = 51989,		-- Orphan Matron Battlewall
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["coords"] = {
+							{ 57.93, 57.63, 85 },	-- Orphan Matron Battlewail
+						},
 						["maps"] = {
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
 					},
@@ -653,9 +665,25 @@ _.Holidays =
 							29167,	-- The Banshee Queen
 							29176,	-- The Fallen Chieftain
 						},
+						["coords"] = {
+							{ 57.13, 51.12, 85 },	-- Blax Bottlerocket Path
+							{ 57.24, 52.54, 85 },	-- Blax Bottlerocket Path
+							{ 57.87, 54.21, 85 },	-- Blax Bottlerocket Path
+							{ 58.08, 51.11, 85 },	-- Blax Bottlerocket Path
+							{ 58.29, 62.41, 85 },	-- Blax Bottlerocket Path
+							{ 58.34, 62.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.48, 55.55, 85 },	-- Blax Bottlerocket Path
+							{ 58.67, 62.27, 85 },	-- Blax Bottlerocket Path
+							{ 58.78, 53.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.79, 50.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.81, 57.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.85, 58.67, 85 },	-- Blax Bottlerocket Path
+							{ 58.86, 60.16, 85 },	-- Blax Bottlerocket Path
+							{ 59.32, 51.86, 85 },	-- Blax Bottlerocket Path
+						},
 						["maps"] = {
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
 					},
@@ -783,10 +811,13 @@ _.Holidays =
 							125,	-- Dalaran (Northrend)
 						},
 					},
-					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL
+					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
 						["questID"] = 53971,	-- Return to the Hall of Castes
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 131346,		-- Caretaker Padae
+						["crs"] = {
+							131346,		-- Caretaker Padae
+						},
 						["description"] = "If you are missing this quest resummon your Zandalari child to pick it up.",
 						["sourceQuests"] = {
 							53969,	-- Hunting for Gold
@@ -870,6 +901,9 @@ _.Holidays =
 						["questID"] = 53865, 	-- Return to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 145394,		-- Liam
+						["crs"] = {
+							145291,		-- Oprhan Matron Westerson
+						},
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
 							53863, 	-- Bird Friends
@@ -955,10 +989,13 @@ _.Holidays =
 						["sourceQuests"] = {
 							172,	-- Children's Week
 						},
+						["coords"] = {
+							{ 50.71, 73.94, 76 },	-- Redhound Two-Seater
+						},
 						["maps"] = {
 							76,	-- Azshara
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
 					},
@@ -983,9 +1020,26 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- The Banshee Queen [Horde - Orc]
-						["questID"] = 29167,	-- The Banshee Queen
+					{	-- Strong New Allies [Horde - Orc]
+						["questID"] = 54146,	-- Strong New Allies
 						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14444,			-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							172,	-- Children's Week
+						},
+						["coords"] = {
+							{ 39.68, 78.68, 85 },	-- Orgimmar Embassy
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Drag
+						},
+						["races"] = HORDE_ONLY,
+					},
+					{	-- The Banshee Queen [Horde - Orc] REMOVED
+						["questID"] = 29167,	-- The Banshee Queen
+						["u"] = 2,				-- Unobtainable	Note!! Looks like quest was removed in BFA due to Teladrassil burning!!
 						["qg"] = 14444,			-- Orcish Orphan
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
 						["sourceQuests"] = {
@@ -993,7 +1047,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 							90,	-- Undercity
 						},
 						["races"] = HORDE_ONLY,
@@ -1092,9 +1146,13 @@ _.Holidays =
 						["sourceQuests"] = {
 							172,	-- Children's Week
 						},
+						["coords"] = {
+							{ 60.74, 22.92, 7 },	-- Fallen Chieftain
+						},
 						["maps"] = {
+							7,	-- Mulgore
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 							88,	-- Thunder Bluff
 						},
 						["races"] = HORDE_ONLY,
@@ -1321,9 +1379,15 @@ _.Holidays =
 							29167,	-- The Banshee Queen
 							29176,	-- The Fallen Chieftain
 						},
+						["crs"] = {
+							52818,	-- Snixx Quickfreeze
+						},
+						["coords"] = {
+							{ 36.28, 86.97, 85 },	-- Snixx Quickfreeze
+						},
 						["maps"] = {
 							85,	-- Orgrimmar
-							86,	-- Orgrimmar: The Dragon
+							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
 					},
