@@ -462,6 +462,10 @@ _.Zones =
 											q(49426, {	-- The King's Gambit	
 												["qg"] = 131049,	-- Rezan
 												["sourceQuests"] = { 49425 },	-- City of Gold
+												["g"] = {
+													i(155239),	-- Rastari Breastplate [was given this as reward 5/3/2019, not sure why it is listed for Prophet's Ploy also]
+													i(161143),	-- Rastari Helmet
+												},
 											}),	
 											q(49965, {	-- The Warpack	
 												["qg"] = 129491,	-- King Rastakhan
@@ -581,6 +585,7 @@ _.Zones =
 								},
 							}),
 							q(49289, {	-- A Special Stone
+								["qg"] = 128925,	-- Deyon
 								["g"] = {
 									i(159151),	-- Tidemistress Greatcloak
 									i(158440),	-- Rastari Waistplate
@@ -595,6 +600,13 @@ _.Zones =
 								["coord"] = { 43.7, 39.5 },
 								["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
 							}),
+							q(48026, {	-- Beneath the Waves
+								["qg"] = 131475,	-- Shrine of Gral
+								["g"] = {
+									i(159765),	-- Empowered Shark's Tooth
+									i(155308),	-- Whispering Seawitch's Ring
+								},
+							}),
 							qh(48400, {	-- Grand Theft Telemancy
 								["qg"] = 131580,	-- Apprentice Telemancer Astrandis
 								["g"] = {
@@ -605,19 +617,33 @@ _.Zones =
 									i(158422),	-- Jambani Treads
 								},
 							}),
-							qh(47587, {	-- Headhunter Jo
+							q(47587, {	-- Headhunter Jo
+								["qg"] = 138669,	-- Hemet Nesingwary
+								["sourceQuests"] = { 47586 },	-- Hunting the Hunter
 								["g"] = {
-									i(159114),	-- Rootway Safari Greatbow
-									i(159115),	-- K'tal Fang Blade
-									i(159116),	-- Wildtusk Ivory
-									i(159117),	-- Great Hunter Skullcracker
-									i(159118),	-- Rootway Safari Greatbow
-									i(159119),	-- Headhunter Jo's Machecte
 									i(159120),	-- Great Hunt Warglaive
+									i(159117),	-- Great Hunt Skullcracker
 									i(159121),	-- Headhunter Jo's Longstaff
+									i(159119),	-- Headhunter Jo's Machete
+									i(159115),	-- K'tal Fang Blade
+									i(159114),	-- Rootway Safari Greatbow
+									i(159118),	-- Rootway Safari Magestaff
+									i(159116),	-- Wildtusk Ivory Cudgel
 									i(159122),	-- Wildtusk Ivory Headcracker	
 								},
-								["qg"] = 138669	-- Hemet Nesingwary
+							}),
+							q(50466, {	-- He's Gone Mad!
+								["qg"] = 123005,	-- Hemet Nesingwary
+								["g"] = {
+									i(158447),	-- Jambani Armguards
+									i(158423),	-- Jambani Gloves
+									i(158445),	-- Rastari Armguards
+									i(158424),	-- Rastari Battlegloves
+									i(158426),	-- Torcalin Gauntlets
+									i(158446),	-- Torcalin Wristguards
+									i(158444),	-- Zanchuli Bands
+									i(158425),	-- Zanchuli Gloves
+								},
 							}),
 							qh(49884, {	-- Hope's Blue Light
 								["g"] = {
@@ -629,6 +655,12 @@ _.Zones =
 									i(159124),	-- Golden Fleet Buckler
 								},
 							}),
+							qh(49775, {	-- Key to the Brig
+								["qg"] = 135576,	-- Bo'tzun Maset
+								["g"] = {
+									i(159942),	-- Zul Adherent's Band
+								},
+							}),	
 							qh(48527, {	-- Ravenous Landsharks
 								["qg"] = 121706,	-- Beastlord L'kala
 								["g"] = {
