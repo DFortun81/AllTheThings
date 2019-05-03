@@ -19,7 +19,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
-						["maps"] = { 
+						["maps"] = {
 							100,	-- Hellfire Peninsula
 							111,	-- Shattrath City
 						},
@@ -123,6 +123,84 @@ _.Holidays =
 							},
 						},
 					},
+					{	-- A Warden of the Horde [Horde - Orc - FINAL]
+						["questID"] = 5502,	-- A Warden of the Horde
+						["u"] = 20,			-- Children's Week Filter
+						["qg"] = 14444,	-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							29190,	-- Let's Go Fly a Kite
+							29191,	-- You Scream, I Scream...
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Piglet's Collar
+								["itemID"] = 23007,		-- Piglet's Collar
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Rat Cage
+								["itemID"] = 23015,		-- Rat Cage
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Snail Shell
+								["itemID"] = 66073,		-- Snail Shell
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Turtle Box
+								["itemID"] = 23002,		-- Turtle Box
+								["u"] = 20,				-- Children's Week Filter
+							},
+							{	-- Pet Care Package
+								["itemID"] = 116202,	-- Pet Care Package
+								["u"] = 20,				-- Children's Week Filter
+								["g"] = {
+									{	-- "Dapper Gentleman" Costume
+										["itemID"] = 103786,	-- "Dapper Gentleman" Costume
+									},
+									{	-- "Dread Pirate" Costume
+										["itemID"] = 103795,	-- "Dread Pirate" Costume
+									},
+
+									{	-- "Little Princess" Costume
+										["itemID"] = 103789,	-- "Little Princess" Costume
+									},
+
+									{	-- Big Pink Bow
+										["itemID"] = 103797,	-- Big Pink Bow
+									},
+
+									{	-- Flawless Battle-Stone
+										["itemID"] = 92741,	-- Flawless Battle-Stone
+									},
+
+									{	-- Lesser Pet Treat
+										["itemID"] = 98112,	-- Lesser Pet Treat
+									},
+
+									{	-- Magical Mini-Treat
+										["itemID"] = 89906,	-- Magical Mini-Treat
+									},
+
+									{	-- Magical Pet Biscuit
+										["itemID"] = 71153,	-- Magical Pet Biscuit
+									},
+
+									{	-- Pet Treat
+										["itemID"] = 98114,	-- Pet Treat
+									},
+								},
+							},
+							{	-- Curmudgeon's Payoff
+								["itemID"] = 23022,		-- Curmudgeon's Payoff
+								["u"] = 20,				-- Children's Week Filter
+								["description"] = "Contains 5 gold.",
+							},
+						},
+					},
 					{	-- Auchindoun and the Ring of Observance [Alliance - Draenei]
 						["questID"] = 10950,	-- Auchindoun and the Ring of Observance
 						["u"] = 20,				-- Children's Week Filter
@@ -131,7 +209,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
-						["maps"] = { 
+						["maps"] = {
 							108,	-- Terrokar Forest
 							111,	-- Shattrath City
 						},
@@ -147,7 +225,7 @@ _.Holidays =
 							10956,	-- The Seat of the Naaru
 							10962,	-- Time to Visit the Caverns
 						},
-						["maps"] = { 
+						["maps"] = {
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -208,7 +286,7 @@ _.Holidays =
 									},
 								},
 							},
-							
+
 						},
 					},{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
@@ -233,7 +311,7 @@ _.Holidays =
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
 						["u"] = 20,				-- Children's Week Filter
 						["qg"] = 22819,			-- Orphan Matron Mercy
-						["maps"] = { 
+						["maps"] = {
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -263,6 +341,17 @@ _.Holidays =
 							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Children's Week [Horde - Orc]
+						["questID"] = 172,	-- Children's Week [Horde]
+						["u"] = 20,			-- Children's Week Filter
+						["qg"] = 51989,		-- Orphan Matron Battlewall
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Children's Week [Horde - Zandalari]
 						["questID"] = 131346,	-- Children's Week
@@ -326,7 +415,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
-						["maps"] = { 
+						["maps"] = {
 							107,	-- Nagrand [Outlands]
 							111,	-- Shattrath City
 						},
@@ -366,6 +455,22 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Let's Go Fly a Kite [Horde - Orc]
+						["questID"] = 29190,	-- Let's Go Fly a Kite
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14444,			-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							29146,	-- Ridin' the Rocketway
+							29167,	-- The Banshee Queen
+							29176,	-- The Fallen Chieftain
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Loa of Winds [Horde - Zandalari]
 						["questID"] = 53966,	-- Loa of Winds
@@ -582,6 +687,21 @@ _.Holidays =
 							},
 						},
 					},
+					{	-- Ridin' the Rocketway [Horde - Orc]
+						["questID"] = 29146,	-- Ridin' the Rocketway
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14444,			-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							172,	-- Children's Week
+						},
+						["maps"] = {
+							76,	-- Azshara
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Shapeshifters [Alliance - Kul Tiran]
 						["questID"] = 53864,	-- Shapeshifters
 						["u"] = 20,				-- Children's Week Filter
@@ -603,6 +723,21 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- The Banshee Queen [Horde - Orc]
+						["questID"] = 29167,	-- The Banshee Queen
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14444,			-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							172,	-- Children's Week
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+							90,	-- Undercity
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- The Biggest Diamond Ever! [Alliance - Human]
 						["questID"] = 29106,	-- The Biggest Diamond Ever!
 						["u"] = 20,				-- Children's Week Filter
@@ -623,6 +758,21 @@ _.Holidays =
 						},
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Fallen Chieftain [Horde - Orc]
+						["questID"] = 29176,	-- The Fallen Chieftain
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 14444,			-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							172,	-- Children's Week
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+							88,	-- Thunder Bluff
+						},
+						["races"] = HORDE_ONLY,
 					},
 					{	-- The Frogmarsh [Horde - Zandalari]
 						["questID"] = 53967,	-- The Frogmarsh
@@ -671,7 +821,7 @@ _.Holidays =
 							10952,	-- A Trip to the Dark Portal
 							10954,	-- Jheel is at Aeris Landing!
 						},
-						["maps"] = { 
+						["maps"] = {
 							103,	-- The Exodar
 							111,	-- Shattrath City
 						},
@@ -747,7 +897,7 @@ _.Holidays =
 							10952,	-- A Trip to the Dark Portal
 							10954,	-- Jheel is at Aeris Landing!
 						},
-						["maps"] = { 
+						["maps"] = {
 							71,		-- Tanaris
 							111,	-- Shattrath City
 						},
@@ -793,8 +943,23 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
-					
-					
+					{	-- You Scream, I Scream... [Horde - Orc]
+						["questID"] = 29191,	-- You Scream, I Scream...
+						["u"] = 20,			-- Children's Week Filter
+						["qg"] = 14444,	-- Orcish Orphan
+						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
+						["sourceQuests"] = {
+							29146,	-- Ridin' the Rocketway
+							29167,	-- The Banshee Queen
+							29176,	-- The Fallen Chieftain
+						},
+						["maps"] = {
+							85,	-- Orgrimmar
+							86,	-- Orgrimmar: The Dragon
+						},
+						["races"] = HORDE_ONLY,
+					},
+
 				},
 			},
 		},
