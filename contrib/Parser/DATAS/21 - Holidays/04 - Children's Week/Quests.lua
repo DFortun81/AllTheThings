@@ -264,6 +264,12 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
+						["coords"] = {
+							{ 44.17, 58.84, 108 },	-- Path to Ring
+							{ 40.76, 60.39, 108 },	-- Tunnel Exit
+							{ 43.11, 63.94, 108 },	-- Tunnel Exit
+							{ 39.57, 64.41, 108 },	-- Dornaa taken to Ring of Observance
+						},
 						["maps"] = {
 							108,	-- Terrokar Forest
 							111,	-- Shattrath City
@@ -280,8 +286,7 @@ _.Holidays =
 						},
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
-							10956,	-- The Seat of the Naaru
-							10962,	-- Time to Visit the Caverns
+							10968,	-- Call on the Farseer
 						},
 						["coords"] = {
 							{ 75.08, 47.87, 111 },	-- Orphan Matron Mercy
@@ -484,6 +489,26 @@ _.Holidays =
 						},
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Call on the Farseer [Alliance - Draenei]
+						["questID"] = 10968,	-- Call on the Farseer
+						["u"] = 20,				-- Children's Week Filter
+						["qg"] = 22818,			-- Draenei Orphan
+						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
+						["sourceQuests"] = {
+							10956,	-- The Seat of the Naaru
+							10962,	-- Time to Visit the Caverns
+						},
+						["coords"] = {
+							{ 27.10, 29.86, 103 },	-- Path to Farseer Nobundo
+							{ 30.67, 27.87, 103 },	-- Visit Farseer Nobundo
+							{ 31.30, 27.65, 103 },	-- Speak to Farseer Nobundo
+						},
+						["maps"] = {
+							103,	-- The Exodar
+							111,	-- Shattrath City
+						},
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Children's Week [Alliance - Draenei - START]
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
 						["u"] = 20,				-- Children's Week Filter
@@ -641,6 +666,10 @@ _.Holidays =
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
+						},
+						["coords"] = {
+							{ 31.44, 57.46, 107 },	-- Dornaa taken to Aeris Landing
+							{ 31.49, 57.61, 107 },	-- Speak to Jheel
 						},
 						["maps"] = {
 							107,	-- Nagrand [Outlands]
@@ -1248,6 +1277,10 @@ _.Holidays =
 							10952,	-- A Trip to the Dark Portal
 							10954,	-- Jheel is at Aeris Landing!
 						},
+						["coords"] = {
+							{ 56.87, 40.77, 103 },	-- Seat of the Naaru
+							{ 58.04, 41.50, 103 },	-- Speak to O'ros
+						},
 						["maps"] = {
 							103,	-- The Exodar
 							111,	-- Shattrath City
@@ -1323,6 +1356,11 @@ _.Holidays =
 							10950,	-- Auchindoun and the Ring of Observance
 							10952,	-- A Trip to the Dark Portal
 							10954,	-- Jheel is at Aeris Landing!
+						},
+						["coords"] = {
+							{ 53.29, 55.35, 75 },	-- Salandria taken to Caverns of Time
+							{ 39.94, 77.39, 75 },	-- Toy Dragon
+							{ 64.76, 50.01, 75 },	-- Caverns of Time Entrance
 						},
 						["maps"] = {
 							71,		-- Tanaris
