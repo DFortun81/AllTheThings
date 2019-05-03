@@ -228,6 +228,13 @@ _.ExpansionFeatures =
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40938 },	-- The Light and the Void
 					}),
+					q(43383, {	-- Awakening the Light
+						["sourceQuests"] = { 43377 },	-- Halls of Valor: The Light Within
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 75.7, 40.7, 702 },
+						["lvl"] = 103,
+						["qg"] = 102587,	-- Saa'ra
+					}),
 					q(46034, {	-- Champion: Aelthalyste
 						["qg"] = 120842,	-- Aelthalyste
 						["g"] = {

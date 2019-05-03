@@ -5,40 +5,50 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(27, {		-- Dun Morogh
-			["groups"] = {	
+			["achievementID"] = 627,
+			["description"] = "|cff66ccffDun Morogh is the snowy starter zone for Dwarf and Gnome in central Eastern Kingdoms. New players learn the basics of questing by fighting leper gnomes from Gnomeregan and lighter topics like safely transporting ale. This zone is reached on foot via a series of elaborate connecting tunnels not found anywhere else in Azeroth.|r",
+			["maps"] = {
+				28,		-- Coldridge Pass
+				29,		-- The Grizzled Den
+				31,		-- Coldridge Valley
+				428,	-- Frostmane Hovel (Coldridge Valley)
+			--	523,	-- Dun Morogh (Blood in the Snow scenario — commenting out so that random Dun Morogh quests, etc., don't show up in the scenario)
+			},
+			["lvl"] = 1,
+			["g"] = {
 				n(-228, {	-- Flight Master
 					fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
-						["coord"] = { 75.8, 54.4 },
+						["coord"] = { 75.8, 54.4, 27 },
 					}),
 					fp(619, {	-- Kharanos, Dun Morogh
-						["coord"] = { 53.8, 52.6 },
+						["coord"] = { 53.8, 52.6, 27 },
 					}),
 				}),
 				n(-25,  {	-- Pet Battle
-					p(441), 	-- Alpine Hare
-					p(440), 	-- Snow Cub
-					n(63075, {		-- Grady Bannson
-						["groups"] = {
+					p(441),	-- Alpine Hare
+					p(440),	-- Snow Cub
+					n(63075, {	-- Grady Bannson
+						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+						["g"] = {
 							p(138, {	-- Blue Moth
-								["races"] = {11}	-- Draenei
+								["races"] = { 11 },	-- Draenei
 							}),
 							p(630, {	-- Gilnean Raven
-								["races"] = {22}	-- Worgan
+								["races"] = { 22 },	-- Worgan
 							}),
-							p(68, {		-- Great Horned Owl
-								["races"] = {4}		-- Night Elf
+							p(68,  {	-- Great Horned Owl
+								["races"] = { 4 },		-- Night Elf
 							}),
 							p(792, {	-- Jade Crane Chick
-								["races"] = {25}	-- Pandaren
+								["races"] = { 25 },	-- Pandaren
 							}),
-							p(43, {		-- Orange Tabby Cat
-								["races"] = {1}		-- Human
+							p(43,  {	-- Orange Tabby Cat
+								["races"] = { 1 },		-- Human
 							}),
-							p(72, {     	-- Snowshoe Rabbit
-								["races"] = {3,7}	-- Gnome, Dwarf
+							p(72,  {	-- Snowshoe Rabbit
+								["races"] = { 3, 7 },	-- Gnome, Dwarf
 							}),
 						},
-						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 					qg(63075, qa(31548, {	-- Learning the Ropes
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
@@ -80,7 +90,7 @@ _.Zones =
 							i(131462),	-- Dark Iron Spy-Bands
 						},
 						["qg"] = 41786,	-- Sergeant Bahrum
-						["coord"] = { 82.8, 48.4 },
+						["coord"] = { 82.8, 48.4, 27 },
 						["sourceQuests"] = {
 							25979,	-- Dealing With the Surge
 							25978,	-- Entombed in Ice
@@ -88,7 +98,7 @@ _.Zones =
 					}),
 					qa(25979, {	-- Dealing with the Surge
 						["qg"] = 41804,	-- Khurgon Singefeather
-						["coord"] = { 82.6, 48.3 },
+						["coord"] = { 82.6, 48.3, 27 },
 					}),
 --[[
 					qg(46274, qa(27635, {	-- Decontamination
@@ -98,7 +108,7 @@ _.Zones =
 --					q(43291),	-- Defend (REMOVED, pre-Legion invasions)
 					qa(26112, {	-- Demanding Answers
 						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5 },
+						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 26102 },	-- Grimaxe's Demise
 					}),
 --					q(43283),	-- Demon Commander (REMOVED, pre-Legion invasions)
@@ -108,14 +118,14 @@ _.Zones =
 --]]
 					qa(25978, {	-- Entombed in Ice
 						["qg"] = 41786,	-- Sergeant Bahrum
-						["coord"] = { 82.8, 48.4 },
+						["coord"] = { 82.8, 48.4, 27 },
 						["sourceQuests"] = { 25986 },	-- Trouble at the Lake
 					}),
 
 --					qg(1378, qa(  318)),	-- Evershine
 					qa(26078, {	-- Extinguish the Fires
 						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5 },
+						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 25998 },	-- Get to the Airfield
 					}),
 
@@ -125,7 +135,7 @@ _.Zones =
 --]]
 					qa(25998, {	-- Get to the Airfield
 						["qg"] = 41786,	-- Sergeant Bahrum
-						["coord"] = { 82.8, 48.4 },
+						["coord"] = { 82.8, 48.4, 27 },
 						["sourceQuests"] = { 25997 },	-- Dark Iron Scheming
 					}),
 					qa(26102, {	-- Grimaxe's Demise
@@ -138,7 +148,7 @@ _.Zones =
 							i(131484),	-- Grimaxe's Chainmail Breastplate
 						},
 						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5 },
+						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 26094 },	-- Striking Back
 					}),
 --[[					
@@ -183,7 +193,7 @@ _.Zones =
 							}),
 						},
 						["qg"] = 50631,	-- Prospector Drugan
-						["coord"] = { 76.1, 53.0 },
+						["coord"] = { 76.1, 53.0, 27 },
 					}),
 					qg(1265, qa(  314, {	-- Protecting the Herd
 						un(2, i(3103)),	-- Coldridge Hammer
@@ -194,7 +204,7 @@ _.Zones =
 --					qg(40950, qa(25792)),	-- Pushing Forward
 					qa(26085, {	-- Rallying the Defenders
 						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5 },
+						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 26078 },	-- Extinguish the Fires
 					}),
 --[[
@@ -220,7 +230,7 @@ _.Zones =
 --]]
 					qa(26094, {	-- Striking Back
 						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5 },
+						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 26085 },	-- Rallying the Defenders
 					}),
 --[[
@@ -255,7 +265,7 @@ _.Zones =
 --]]
 					qa(25986, {	-- Trouble at the Lake
 						["qg"] = 1977,	-- Senator Mehr Stonehallow
-						["coord"] = { 75.8, 54.2 },
+						["coord"] = { 75.8, 54.2, 27 },
 						["isBreadcrumb"] = true,	-- for Entombed in Ice
 					}),
 --[[
@@ -316,14 +326,14 @@ _.Zones =
 					})),
 				}),
 				n(-40,  {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qa(417, {	-- A Pilot's Revenge NOTE: Replaced by quest 26855 which has a different loot table
 								un(2, i(1009)),	-- Compact Hammer
 								un(2, i(2218)),	-- Craftsman's Dagger
 							})),
 							un(40, qa(5625, {	-- Garments of the Light
-								["groups"] = {
+								["g"] = {
 									un(2, i(16605)),	-- Friar's Robes of the Light
 								},
 								["races"] = { 3 },	-- Dwarf
@@ -349,7 +359,7 @@ _.Zones =
 				m(427,  {	-- Coldridge Valley
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					["description"] = "|cff66ccffColdridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.|r",
-					["groups"] = {	
+					["g"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare
 							p(378), 	-- Rabbit
@@ -389,7 +399,7 @@ _.Zones =
 							a({
 								["questID"] = 24492,	-- Pack Your Bags
 								["qg"] = 37113,	-- Milo Geartwinge
-								["groups"] = {
+								["g"] = {
 									i(57542),	-- Coldridge Mountaineer's Pouch
 								},
 							}),
@@ -406,7 +416,7 @@ _.Zones =
 				m(469,  {	-- New Tinkertown [Above]
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
 					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
-					["groups"] = {	
+					["g"] = {	
 						n(-25, { 	-- Pet Battle
 							p(441), 	-- Alpine Hare
 							p(1162), 	-- Fluxfire Feline
@@ -415,7 +425,7 @@ _.Zones =
 						}),
 						n(-17, { 	-- Quests
 							["races"] = {7},
-							["groups"] = {
+							["g"] = {
 --[[							
 								qg(42553, q(26205, {	-- A Job for the Multi-Bot
 									["races"] = {7},
@@ -434,7 +444,7 @@ _.Zones =
 										7,	-- Gnome
 										9,	-- Goblin (I don't know about this.... WoWHead has this listed, but I doubt it. No Goblin to test though.)
 									},
-									["groups"] = {
+									["g"] = {
 										i(59053),	-- Airfield Courier Bag
 									},
 								},
@@ -508,31 +518,31 @@ _.Zones =
 								})),
 --]]
 								qg(42396, q(26197, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(59042),
 									},
 									["classes"] = {8},	-- Mage
 								})),
 								qg(42396, q(26199, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(59040),
 									},
 									["classes"] = {5},	-- Priest
 								})),
 								qg(42396, q(26202, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(59041),
 									},
 									["classes"] = {9},	-- Warlock
 								})),
 								qg(42396, q(26203, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(59039),
 									},
 									["classes"] = {1},	-- Warrior
 								})),
 								qg(42396, q(26206, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(59043),
 										i(59041),
 									},
@@ -542,7 +552,7 @@ _.Zones =
 									["classes"] = {10},	-- Monk
 								})),
 								qg(42396, q(41217, {	-- The Future of Gnomeregan
-									["groups"] = {
+									["g"] = {
 										i(134123),
 									},
 									["classes"] = {3},	-- Hunter
@@ -580,10 +590,10 @@ _.Zones =
 							})),
 						}),
 						n(-40, {	-- Legacy
-							["groups"] = {
+							["g"] = {
 								n(-17, {	-- Quests (Legacy)
 									un(40, qa(31138, {		-- The Arts of a Monk
-										["groups"] = {
+										["g"] = {
 											i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flad as unobtainable), Monk quest listed here is not available upon testing
 										},
 										["classes"] = { 8 },	-- Mage
@@ -608,11 +618,11 @@ _.Zones =
 				m(30,  {	-- New Tinkertown [Below]
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
 					["description"] = "|cff66ccffNew Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.|r",
-					["groups"] = {	
+					["g"] = {	
 						n(-25, { 	-- Pet Battle
 							n(124617, {	-- Environeer Bert
 								["description"] = "This pet has a chance of dropping after defeating Environeer Bert.  He is also located in Gnomeregan.",
-								["groups"] = {
+								["g"] = {
 									i(151638, {	-- Leprous Sack of Pet Supplies
 										i(151645),	-- Model D1-BB-L3R
 									}),
@@ -628,16 +638,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 1,	
-			["achievementID"] = 627,
-			["maps"] = {
-				28,		-- Coldridge Pass
-				29,		-- The Grizzled Den
-				31,		-- Coldridge Valley
-				428,	-- Frostmane Hovel (Coldridge Valley)
-				523,	-- Dun Morogh
-			},
-			["description"] = "|cff66ccffDun Morogh is the snowy starter zone for Dwarf and Gnome in central Eastern Kingdoms. New players learn the basics of questing by fighting leper gnomes from Gnomeregan and lighter topics like safely transporting ale. This zone is reached on foot via a series of elaborate connecting tunnels not found anywhere else in Azeroth.|r",				
 		}),
 	}),
 };
