@@ -101,7 +101,7 @@ _.Zones =
 							q(53406, {	-- The Chamber of Heart (third HoA upgrade)
 								["qg"] = 130216,	-- Magni Bronzebeard
 								["coord"] = { 42.1, 44.3, 81 },	-- Silithus
-								["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
+								["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
 								["sourceQuests"] = { 53405 },	-- Unlocking the Heart's Potential
 							}),
 							{			-- The Heart of Azeroth
