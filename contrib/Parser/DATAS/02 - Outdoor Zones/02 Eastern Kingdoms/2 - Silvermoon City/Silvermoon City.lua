@@ -42,7 +42,6 @@ _.Zones =
 					q(24635),	-- A Cloudlet of Classy Cologne
 					qh(24615),	-- A Gift for the Regent Lord of Quel'Thalas
 					q(24629),	-- A Perfect Puff of Perfume
-					qh( 9339),	-- A Thief's Reward
 					qh( 9627),	-- Allegiance to the Horde
 					qh(27277),	-- An Audience with Ureda
 					q(24636),	-- Bonbon Blitz
@@ -62,7 +61,6 @@ _.Zones =
 					qa(29092),	-- Inform the Elder
 					qh(27335),	-- Journey to Orgrimmar
 					qh(27282),	-- Kranosh's Behest
-					q(8867),	-- Lunar Fireworks
 					qh(28323),	-- Meet with Brother Silverhallow
 					qh(28304),	-- Meet with Dark Cleric Cecille
 					qh(28298),	-- Meet with Gordul
@@ -80,10 +78,6 @@ _.Zones =
 					qh(11915),	-- Playing with Fire
 					qh(27298),	-- Seek Out Master Pyreanor
 					qh(27332),	-- Seek the Shadow-Walker
-					qh( 9332),	-- Stealing Darnassus's Flame
-					qh( 9331),	-- Stealing Ironforge's Flame
-					qh( 9330),	-- Stealing Stormwind's Flame
-					qh(11933),	-- Stealing the Exodar's Flame
 					q(11954),	-- Striking Back
 					q(11917),	-- Striking Back
 					q(11947),	-- Striking Back
@@ -91,12 +85,6 @@ _.Zones =
 					q(11952),	-- Striking Back
 					q(11953),	-- Striking Back
 					qh(27280),	-- The Earthbreaker Calls
-					qa( 8871),	-- The Lunar Festival
-					qh( 8874),	-- The Lunar Festival
-					qa( 8870),	-- The Lunar Festival
-					qh( 8875),	-- The Lunar Festival
-					qa( 8872),	-- The Lunar Festival
-					qh( 8873),	-- The Lunar Festival
 					qh(27279),	-- The Shattered Hand
 					qh(11971),	-- The Spinner of Summer Tales
 					qh(11923),	-- Torch Catching

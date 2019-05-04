@@ -11,7 +11,6 @@ _.Zones =
 					qg(17120, qa(27225, {	-- A Summons from Ander Germaine
 						["classes"] = {1},
 					})),
-					qg(16817, qa( 9365)),	-- A Thief's Reward
 					qg(17538, qa(10968)),	-- Call on the Farseer
 					]]--
 					qa(9625, {	-- Elekks Are Serious Business

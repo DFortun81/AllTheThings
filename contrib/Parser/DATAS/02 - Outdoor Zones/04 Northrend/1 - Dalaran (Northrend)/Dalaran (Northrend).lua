@@ -1605,7 +1605,6 @@ _.Zones =
 					q(13926),	-- Little Orphan Roo Of The Oracles
 					q(24589),	-- Lord Jaraxxus Must Die!
 					q(24590),	-- Lord Marrowgar Must Die!
-					q(8867),	-- Lunar Fireworks
 --]]
 					{
 						["questID"] = 14151,	-- Cardinal Ruby
@@ -1653,12 +1652,6 @@ _.Zones =
 					q(13830),	-- The Ghostfish
 					q(14166),	-- The Grateful Dead
 					qh( 32409),	-- The Kirin Tor's True Colors
-					qa(  8871),	-- The Lunar Festival
-					qh(  8874),	-- The Lunar Festival
-					qh(  8875),	-- The Lunar Festival
-					qa(  8870),	-- The Lunar Festival
-					qa(  8872),	-- The Lunar Festival
-					qh(  8873),	-- The Lunar Festival
 					q(12796),	-- The Magical Kingdom of Dalaran
 					qh( 12791),	-- The Magical Kingdom of Dalaran
 					qa( 12794),	-- The Magical Kingdom of Dalaran

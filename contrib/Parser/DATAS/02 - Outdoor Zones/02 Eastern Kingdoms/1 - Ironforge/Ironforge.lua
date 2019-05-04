@@ -87,9 +87,6 @@ _.Zones =
 						["coord"] = { 75.7, 23.3, 87 },
 						["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
 					}),
-					qg(16817, qa( 9365, {	-- A Thief's Reward
-						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
-					})),
 					qa( 6625, {	-- Alliance Trauma
 						["qg"] = 5150,	-- Nissa Firestone
 						["isBreadcrumb"] = true,	-- for Triage

@@ -337,7 +337,6 @@ _.Zones =
 							qg(, qa(27225)),	-- A Summons from Ander Germaine
 							qg(, qa(32310)),	-- A Tale of Six Masters
 							qg(, qa(31917)),	-- A Tamer's Homecoming
-							qg(, qa( 9365)),	-- A Thief's Reward
 							qg(, qa(43323)),	-- A Time to Reflect
 							qg(, qa(  171)),	-- A Warden of the Alliance
 							qg(, qa(44473)),	-- A Weapon of the Alliance
@@ -549,10 +548,6 @@ _.Zones =
 		--[[
 							qg(, qa(24745)),	-- Something is in the Air (and it Ain't Love)
 							qg(, qa(24655)),	-- Something Stinks
-							qg(, qa( 9324)),	-- Stealing Orgrimmar's Flame
-							qg(, qa(11935)),	-- Stealing Silvermoon's Flame
-							qg(, qa( 9326)),	-- Stealing the Undercity's Flame
-							qg(, qa( 9325)),	-- Stealing Thunder Bluff's Flame
 		--]]
 							qa(28399, {	-- Stones of Binding
 								["g"] = {
@@ -678,9 +673,6 @@ _.Zones =
 							})),
 		--[[					
 							qg(, qa( 7781)),	-- The Lord of Blackrock
-							qg(, qa( 8872)),	-- The Lunar Festival
-							qg(, qa( 8871)),	-- The Lunar Festival
-							qg(, qa( 8870)),	-- The Lunar Festival
 							qg(, q(27203)),	-- The Maelstrom
 							qg(, qa(11970)),	-- The Master of Summer Lore
 							--]]

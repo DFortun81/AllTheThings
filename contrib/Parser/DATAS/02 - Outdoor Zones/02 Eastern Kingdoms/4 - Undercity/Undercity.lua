@@ -45,7 +45,6 @@ _.Zones =
 					q(24629),	-- A Perfect Puff of Perfume
 					qh( 42985),	-- A Royal Audience
 					qh( 29400),	-- A Season for Celebration
-					qh(  9339),	-- A Thief's Reward
 					qh( 29377),	-- A Time to Break Down
 					qh( 29376),	-- A Time to Build Up
 					qh( 27277),	-- An Audience with Ureda
@@ -75,7 +74,6 @@ _.Zones =
 					qh( 27282),	-- Kranosh's Behest
 					qh( 29320),	-- Like Pike?
 					qh( 29332),	-- Lily, Oh Lily
-					q(8867),	-- Lunar Fireworks
 					qh( 11357),	-- Masked Orphan Matron
 					qh( 28323),	-- Meet with Brother Silverhallow
 					qh( 28304),	-- Meet with Dark Cleric Cecille
@@ -110,10 +108,6 @@ _.Zones =
 					qh( 14047),	-- Slow-roasted Turkey
 					qh( 14037),	-- Spice Bread Stuffing
 					qh( 13483),	-- Spring Gatherers
-					qh(  9332),	-- Stealing Darnassus's Flame
-					qh(  9331),	-- Stealing Ironforge's Flame
-					qh(  9330),	-- Stealing Stormwind's Flame
-					qh( 11933),	-- Stealing the Exodar's Flame
 					qh( 29374),	-- Stink Bombs Away!
 					q(11954),	-- Striking Back
 					q(11917),	-- Striking Back
@@ -124,12 +118,6 @@ _.Zones =
 					qh( 29319),	-- Tadpole Terror
 					qh( 29427),	-- The Collector's Agent
 					qh( 14174),	-- The Grateful Dead
-					qa(  8870),	-- The Lunar Festival
-					qh(  8875),	-- The Lunar Festival
-					qa(  8872),	-- The Lunar Festival
-					qh(  8873),	-- The Lunar Festival
-					qh(  8874),	-- The Lunar Festival
-					qa(  8871),	-- The Lunar Festival
 					qh( 39959),	-- The Plot Thickens
 					qh( 38404),	-- The Same, But Different
 					o(207324, {	-- Warchief's Command Board

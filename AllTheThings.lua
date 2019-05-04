@@ -9317,7 +9317,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 									local searchResults = SearchForField("itemID", m);
 									if searchResults and #searchResults > 0 then
 										for j,k in ipairs(searchResults) do
-											if (k.parent and k.parent.creatureID == npc_id) or (k.parent.parent and k.parent.parent.creatureID == npc_id) then
+											if k.parent and (k.parent.creatureID == npc_id or (k.parent.parent and k.parent.parent.creatureID == npc_id)) then
 												found = true;
 											end
 										end
