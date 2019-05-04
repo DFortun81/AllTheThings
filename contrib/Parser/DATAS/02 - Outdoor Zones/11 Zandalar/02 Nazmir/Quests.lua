@@ -203,6 +203,8 @@ _.Zones =
 											i(155314),	-- Ritual Flayer's Vest
 											i(155325),	-- Death-Pledged Helm
 											i(155313),	-- Death-Pleged Chestguard
+											i(155312),	-- Nazmani Warplate Chestplate
+											i(155323),	-- Nazmani Warplate Faceguard
 										},
 										["qg"] = 128276,	-- Jo'chunga
 										["sourceQuests"] = { 49079 },	-- Hir'eek, the Bat Loa
@@ -784,6 +786,17 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 49370,	-- Rescue the Chronicler
 					},
+					{	-- Didn't Stop to Think if They Should
+						["questID"] = 49479,
+						["qg"] = 126346,	-- Chadwick Paxton
+						["coord"] = { 25.9, 36.1, 863 },
+						["sourceQuests"] = { 
+							48498,	-- No Mercy for Sithis
+							48496,	-- Reuniting the Company
+							48497,	-- Show of Force
+						},
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Don't Go into the Light
 						["questID"] = 49778,
 						["qg"] = 131231,	-- Jin'Tiki
@@ -801,6 +814,12 @@ _.Zones =
 						["coord"] = { 62.7, 53.5, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 49370,	-- Rescue the Chronicler
+					},
+					{	-- Getting a Leg Up
+						["questID"] = 48492,
+						["qg"] = 126346,	-- Chadwick Paxton
+						["sourceQuests"] = { 49477 },	-- Surprise Backup
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Halting the Empire's Fall
 						["questID"] = 50808,
@@ -881,6 +900,12 @@ _.Zones =
 						["qg"] = 149823,
 						["coord"] = { 47.6, 16.2, 1381, },
 						["sourceQuest"] = 54939,	-- Stubborn as a Bronzebeard
+					},
+					{	-- No Mercy for Sithis
+						["questID"] = 48498,
+						["qg"] = 126377,	-- Ingrid Bellix
+						["sourceQuests"] = { 48496 },	-- Reuniting the Company
+						["races"] = HORDE_ONLY,
 					},
 					{	-- No Problem Tar Can't Solve
 						["questID"] = 49776,
@@ -974,6 +999,31 @@ _.Zones =
 						["qg"] = 130481,	-- Shinga Deathwalker
 						["coord"] = { 39.0, 59.9, 863 },
 					},
+					{	-- Return to Dust
+						["questID"] = 48499,
+						["qg"] = 126346,	-- Chadwick Paxton
+						["coord"] = { 25.9, 36.1, 863 },
+						["sourceQuests"] = { 
+							49479,	-- Didn't Stop to Think if They Should
+						},
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Reuniting the Company
+						["questID"] = 48496,
+						["qg"] = 126346,	-- Chadwick Paxton
+						["sourceQuests"] = { 48492 },	-- Getting a Leg Up
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(158950),	-- Death-Pledged Grips
+							i(155342),	-- Death-Pledged Wristguards
+							i(158949),	-- Loa Speaker's Grips
+							i(155340),	-- Loa Speaker's Wristwraps
+							i(155520),	-- Nazmani Warplate Bracelets
+							i(158948),	-- Nazmani Warplate Handguards
+							i(158947),	-- Ritual Flayer's Handguards
+							i(155522),	-- Ritual Flayer's Wristwraps
+						},
+					},
 					{	-- Shoak's on the Menu
 						["questID"] = 47925,
 						["qg"] = 125024,	-- Kajosh
@@ -990,6 +1040,12 @@ _.Zones =
 							i(158958),	-- Ritual Flayer's Trousers
 							i(158967),	-- Ritual Flayer's Waistband
 						},
+					},
+					{	-- Show of Force
+						["questID"] = 48497,
+						["qg"] = 126346,	-- Chadwick Paxton
+						["sourceQuests"] = { 48492 },	-- Getting a Leg Up
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Stopping Zardrax
 						["questID"] = 48852,
