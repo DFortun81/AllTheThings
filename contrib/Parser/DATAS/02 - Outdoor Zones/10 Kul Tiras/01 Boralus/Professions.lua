@@ -417,65 +417,147 @@ _.Zones =
 								},
 							},
 						},
-						-- Alchemy Questline
-						qa(50121, {	-- Casting the First Stone
-							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 74.2, 6.5, 1161 },
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50122, {	-- Ocular Extracts
-							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 74.2, 6.5, 1161 },
-							["sourceQuest"] = 50121,	-- Casting the First Stone
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50124, {	-- Changing the Scenery
-							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 74.2, 6.5, 1161 },
-							["sourceQuest"] = 50121,	-- Casting the First Stone
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50125, {	-- A Possible Solution
-							["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
-							["coord"] = { 74.2, 6.5, 1161 },
-							["sourceQuests"] = { 
-								50124,	-- Changing the Scenery
-								50122,	-- Ocular Extracts
-							},
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50126, {	-- A Deathly Draught
-							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-							["coord"] = { 30.6, 49.6, 896 },
-							["sourceQuest"] = 50125,
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50127, {	-- A Stone's Throw
-							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-							["coord"] = { 30.6, 49.6, 896 },
-							["sourceQuest"] = 50125,
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qa(50128, {	-- Chemically Compounded
-							["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
-							["coord"] = { 30.6, 49.6, 896 },
-							["sourceQuests"] = { 
-								50127,	-- A Deathly Draught
-								50126,	-- A Stone's Throw	
-							},
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						o(280755, {	-- Quintin's Satchel
-							qa(50129, {	-- A Recipe for Success
-								["coord"] = { 62.9, 28.9, 863 },
-								["sourceQuest"] = 50128,
+
+						n(-180, {	-- Alchemy
+							-- Tools of Trade Questline
+							qa(50121, {	-- Casting the First Stone
+								["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+								["coord"] = { 74.2, 6.5, 1161 },
 								["requireSkill"] = 171,	-- Alchemy
-								["groups"] = {
-									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+							}),
+							qa(50122, {	-- Ocular Extracts
+								["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+								["coord"] = { 74.2, 6.5, 1161 },
+								["sourceQuest"] = 50121,	-- Casting the First Stone
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qa(50124, {	-- Changing the Scenery
+								["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+								["coord"] = { 74.2, 6.5, 1161 },
+								["sourceQuest"] = 50121,	-- Casting the First Stone
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qa(50125, {	-- A Possible Solution
+								["qg"] = 132228,	-- Elrick Pfitzer <Alchemielehrer>
+								["coord"] = { 74.2, 6.5, 1161 },
+								["sourceQuests"] = { 
+									50124,	-- Changing the Scenery
+									50122,	-- Ocular Extracts
 								},
-	
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qa(50126, {	-- A Deathly Draught
+								["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+								["coord"] = { 30.6, 49.6, 896 },
+								["sourceQuest"] = 50125,
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qa(50127, {	-- A Stone's Throw
+								["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+								["coord"] = { 30.6, 49.6, 896 },
+								["sourceQuest"] = 50125,
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qa(50128, {	-- Chemically Compounded
+								["qg"] = 132347,	-- Quintin Whalgrene <Master of Transmutations>
+								["coord"] = { 30.6, 49.6, 896 },
+								["sourceQuests"] = { 
+									50127,	-- A Deathly Draught
+									50126,	-- A Stone's Throw	
+								},
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							o(280755, {	-- Quintin's Satchel
+								qa(50129, {	-- A Recipe for Success
+									["coord"] = { 62.9, 28.9, 863 },
+									["sourceQuest"] = 50128,
+									["requireSkill"] = 171,	-- Alchemy
+									["groups"] = {
+										recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+									},
+		
+								}),
 							}),
 						}),
+						n(-190, {	-- Tailoring
+							-- Tools of Trade Questline
+							qa(53805, {	-- A Friend in Needle
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 76.6, 11.8, 1161 },
+								["requireSkill"] = 197,
+							}),
+							qa(53807, {	-- A Stitch in Time
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 76.6, 11.8, 1161 },
+								["sourceQuest"] = 53805,	-- A Friend in Needle
+								["requireSkill"] = 197,
+							}),
+							qa(55177, {	-- Tearing at the Seams
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["sourceQuest"] = 53807,	-- A Stitch in Time
+								["requireSkill"] = 197,
+							}),
+							q(53810, {	-- The Severed Thread
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 62.0, 53.9, 75 },
+								["sourceQuests"] = {
+									55177,	-- Tearing at the Seams (Alliance)
+									55188,	-- Tearing at the Seams (Horde)
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53813, {	-- Rolling Up the Sleeves
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 43.5, 34.8, 75 },
+								["sourceQuests"] = {
+									55177,	-- Tearing at the Seams (Alliance)
+									55188,	-- Tearing at the Seams (Horde)
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53858, {	-- Step Into Her Shoes
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 39.1, 63.3, 75 },
+								["sourceQuests"] = {
+									53810,	-- The Severed Thread
+									53813,	-- Rolling Up the Sleeves
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53866, {	-- If The Shoe Fits...
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 63.8, 68.8, 680 },
+								["sourceQuest"] = 53858,	-- Step Into Her Shoes
+								["requireSkill"] = 197,
+							}),
+							q(55214, {	-- Seam Stress
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 64.2, 69.5, 680 },
+								["sourceQuest"] = 53866,	-- If The Shoe Fits...
+								["requireSkill"] = 197,
+							}),
+							q(53868, {	-- Saving Nine
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 7.2, 24.5, 942 },
+								["sourceQuest"] = 55214,	-- Seam Stress
+								["requireSkill"] = 197,
+							}),
+							q(53869, {	-- Killing Time
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 71.6, 39.8, 115 },
+								["sourceQuest"] = 53868,	-- Saving Nine
+								["requireSkill"] = 197,
+							}),
+							qa(53881, {	-- Cut from the Same Cloth
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 71.6, 39.8, 115 },
+								["sourceQuest"] = 53869,	-- Killing Time
+								["requireSkill"] = 197,
+								["groups"] = {
+									recipe(292946),	-- Recipe: Synchronous Thread
+								},
+							}),	
+						}),	
 						--[[
 						-- Note!! Commenting out the achievements for now.  They aren't specific to the city and are already under achievements section in ATT.  Will analyze later and see if any can be reconfigured.
 						ach(12757),		-- Angling for Battle

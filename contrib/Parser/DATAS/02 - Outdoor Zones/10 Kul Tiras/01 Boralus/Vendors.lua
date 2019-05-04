@@ -152,9 +152,16 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
+							["coord"] = { 76.8, 11.2, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								i(168029),	-- Recipe: Synchronous Thread
+								i(168029, {	-- Recipe: Synchronous Thread
+									["sourceQuests"] = {
+										53881,	-- Cut from the Same Cloth (Alliance)
+										53962,	-- Cut from the Same Cloth (Horde)
+									},
+									["description"] = "This recipe is for relearning the Synchronous Thread after you already did the tools of trade questline."
+								}),
 							},
 						}),
 						{	-- Dodger

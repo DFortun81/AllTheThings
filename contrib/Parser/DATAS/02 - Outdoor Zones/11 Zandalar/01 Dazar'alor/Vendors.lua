@@ -335,10 +335,17 @@ _.Zones =
 								},
 							},
 						},
-						n(136071, {	-- Pin'jin the Patient <Tailoring Trainer>
+						n(122700, {	-- Pin'jin the Patient <Tailoring Trainer>
+							["coord"] = { 44.5, 33.9, 1165 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(168029),	-- Recipe: Synchronous Thread
+								i(168029, {	-- Recipe: Synchronous Thread
+									["sourceQuests"] = {
+										53881,	-- Cut from the Same Cloth (Alliance)
+										53962,	-- Cut from the Same Cloth (Horde)
+									},
+									["description"] = "This recipe is for relearning the Synchronous Thread after you already did the tools of trade questline."
+								}),
 							},
 						}),
 						n(122463, {	-- Plen <Unusual and Remarkable Wares>
