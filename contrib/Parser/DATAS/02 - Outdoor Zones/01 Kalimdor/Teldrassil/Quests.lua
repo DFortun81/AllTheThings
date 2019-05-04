@@ -231,8 +231,10 @@ _.Zones =
 					{	-- Teldrassil: The Refusal of the Aspects
 						["questID"] = 929,
 						["qg"] = 3515,	-- Corithras Moonrage
-						["races"] = { 4 },	-- Night Elf
+						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
+						["coord"] = { 41.4, 45.8, 57 },
+						["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 					},
 					{	-- The Bounty of Teldrassil
 						["questID"] = 26757,

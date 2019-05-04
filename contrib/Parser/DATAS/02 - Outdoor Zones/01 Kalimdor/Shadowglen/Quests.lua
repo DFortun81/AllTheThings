@@ -119,9 +119,13 @@ _.Zones =
 					{	-- Teldrassil: Passing Awareness
 						["questID"] = 28731,
 						["qg"] = 3514,	-- Tenaron Stormgrip
-						["coord"] = { 47.1, 55.9, 460 },
+						["coords"] = {
+							{ 47.1, 55.9, 460 },
+							{ 41.4, 45.8, 57 },
+						},
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 						["sourceQuest"] = 28730,	-- Precious Waters
+						["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
 					},
 					{	-- The Balance of Nature
 						["questID"] = 28713,
