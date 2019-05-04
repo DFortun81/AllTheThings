@@ -148,6 +148,13 @@ _.Zones =
 							un(2, i(5617)),	-- Vagabond Leggings
 						},
 					},
+					{	-- Bloodied Sentinel's Glaive
+						["questID"] = 53130,
+						["itemID"] = 163386,
+						["coord"] = { 45.22, 18.00, 62 },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					},
 					{	-- Buzzbox 413
 						["questID"] = 13521,
 						["qg"] = 32977,	-- Wizbang Cranktoggle
