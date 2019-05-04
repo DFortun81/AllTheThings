@@ -67,11 +67,12 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(1618, {	-- Gearing Redridge
+						["qg"] = 6031,	-- Tormus Deepforge
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 164,	-- Blacksmithing
 						["g"] = {
 							i(6735),	-- Plans: Ironforge Breastplate
 						},
-						["qg"] = 6031,	-- Tormus Deepforge
-						["races"] = ALLIANCE_ONLY,
 					}),
 					qa(4512, {	-- A Little Slime Goes a Long Way
 						["qg"] = 9616,	-- Laris Geardawdle
