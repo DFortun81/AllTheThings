@@ -39,14 +39,14 @@ _.ExpansionFeatures =
 						["qg"] = 149623,	-- Commander Lorna Crowley
 						["coord"] = { 46.8, 35.4, 62 },
 						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
+						["isWeekly"] = true,
 					},
 					{	-- Remaining Threats (Horde)
 						["questID"] = 54843,	-- Remaining Threats (Horde)
 						["qg"] = 149410,	-- Deathstalker Commander Belmont
 						["coord"] = { 46.9, 35.5, 62 },
 						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
+						["isWeekly"] = true,
 					},
 					h({
 						["questID"] = 54049,	-- The Dead of Night
