@@ -16,8 +16,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			d(1, {	-- Normal
-				n(-17, {	-- Quests 	
+			n(-17, {	-- Quests 	
 					q(29605, {	-- Brother Against Brother
 						["qg"] = 54840,	-- Isfar
 						["sourceQuests"] = 10180,	-- Can't Stay Away
@@ -42,7 +41,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29329),	-- Terokk's Quill
 					}),	
 				}),
-				cr(18472, e(541, {	-- Darkweaver Syth
+			d(1, {	-- Normal
+					cr(18472, e(541, {	-- Darkweaver Syth
 					i(24160),	-- Design: Khorium Inferno Band
 					i(27918),	-- Bands of Syth
 					i(27919),	-- Light-Woven Slippers
