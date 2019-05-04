@@ -335,7 +335,7 @@ _.Zones =
 								144777,	-- Darktide Marauder
 								144780,	-- Darktide Brute
 							},
-							["description"]	= "To get the questitem you need to kill Naga while the worldquest 'Naga Attack!' is up.",
+							["description"]	= "To get the questitem you need to kill Naga while the worldquest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 							["groups"] = {
 								qa(54141),	-- The Azsharan Medallion
 							},

@@ -92,9 +92,6 @@ _.Zones =
 									["groups"] = {
 										{
 											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
 										},
 									},
 								},

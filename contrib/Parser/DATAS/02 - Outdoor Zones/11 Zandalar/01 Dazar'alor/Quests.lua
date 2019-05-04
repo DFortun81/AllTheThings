@@ -243,7 +243,7 @@ _.Zones =
 							["qg"] = 120740,	-- King Rastakhan
 						}),
 						h(i(165668, {	-- The Azsharan Medallion
-							["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.",
+							["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 							["lvl"] = 120,
 							["crs"] = {
 								144778,	-- Darktide Champion
