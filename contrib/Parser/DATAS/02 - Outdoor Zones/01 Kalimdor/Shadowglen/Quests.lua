@@ -33,6 +33,9 @@ _.Zones =
 							28734,	-- A Favor for Melithar
 							28713,	-- The Balance of Nature
 						},
+						["groups"] = {
+							i(46753),	-- Melithar's Supply Bag
+						},
 					},
 					{	-- Dolanaar Delivery
 						["questID"] = 2159,

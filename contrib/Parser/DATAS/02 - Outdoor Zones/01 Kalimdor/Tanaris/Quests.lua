@@ -665,9 +665,23 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					},
 					{	-- Nice Hat...
-						["questID"] = 12515,	-- Despite what wowhead says, 12513 is depracated, not 12515
+						["questID"] = 12513,	-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
 						["qg"] = 28126,	-- Don Carlos
 						["coord"] = { 50.7, 27.5, 71 },
+						["isBreadcrumb"] = true,
+						["u"] = 2,	-- No longer available.
+						["groups"] = {
+							i(38276),	-- Haliscan Brimmed Hat
+						},
+					},
+					{	-- Nice Hat...
+						["questID"] = 12515,	-- CRIEVE NOTE: Got this on Druid, who doesn't have 12513 completed. [5/4/2019]
+						["qg"] = 28126,	-- Don Carlos
+						["coord"] = { 50.7, 27.5, 71 },
+						["isBreadcrumb"] = true,
+						["groups"] = {
+							i(38276),	-- Haliscan Brimmed Hat
+						},
 					},
 					{	-- Not Dead Yet! -- never went live
 						["questID"] = 38890,
