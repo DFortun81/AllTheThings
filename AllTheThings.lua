@@ -9500,6 +9500,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 	end
 	self.data.index = 0;
 	self.data.back = 1;
+	self.data.indent = 1;
+	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end):Show();
 --]]--
