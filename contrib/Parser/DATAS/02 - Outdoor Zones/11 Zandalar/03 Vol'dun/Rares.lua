@@ -256,26 +256,42 @@ _.Zones =
 								},
 							}),
 						}),
-						n(134571, {	-- Skycaller Teskris
+						
+						
+									
+						{	-- Skycaller Teskris
+							["npcID"] = 134571,	-- Skycaller Teskris
 							["questID"] = 50637,
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(160968),	-- Skycaller Spellstaff
-								{	-- Skycaller Teskris (Adventurer of Vol'dun)
+							["g"] = {
+								{	-- Skycaller Teskris
 									["achievementID"] = 12943,	-- Adventurer of Vol'dun
 									["criteriaID"] = 21,	-- Skycaller Teskris
 								},
-							}),
-						}),
-						n(134745, {	-- Skycarver Krakit
+								{	-- Skycaller Spellstaff
+									["itemID"] = 160968,	-- Skycaller Spellstaff
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},
+						{	-- Skycaller Krakit
+							["npcID"] = 134745,	-- Skycarver Krakit
 							["questID"] = 50686,
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(160980),	-- Skycarver Warglaive
+							["coords"] = {
+								{ 51.27, 36.53, 864 },
+							},
+							["g"] = {
 								{	-- Skycarver Krakit (Adventurer of Vol'dun)
 									["achievementID"] = 12943,	-- Adventurer of Vol'dun
 									["criteriaID"] = 22,	-- Skycarver Krakit
 								},
-							}),
-						}),
+								{	-- Skycarver Warglaive
+									["itemID"] = 160980,	-- Skycarver Warglaive
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},
 						n(136304, {	-- Songstress Nahjeen
 							["questID"] = 51063,
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -321,16 +337,24 @@ _.Zones =
 								},
 							}),
 						}),
-						n(134625, {	-- Warmother Captive
+						{	-- Warmother Captive
+							["npcID"] = 134625,	-- Warmother Captive
 							["questID"] = 50658,
-							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-								i(161103),	-- Barbarous Captive's Wargreaves
-								{	-- Warmother Captive (Adventurer of Vol'dun)
+							["coords"] = {
+								{50.72, 30.88, 864 },
+							},
+							["g"] = {
+								{	-- Warmother Captive
 									["achievementID"] = 12943,	-- Adventurer of Vol'dun
 									["criteriaID"] = 27,	-- Warmother Captive
 								},
-							}),
-						}),
+								{	-- Barbarous Captive's Wargreavers
+									["itemID"] = 161103,	-- Barbarous Captive's Wargreavers
+									["bonusID"] = 4776,
+									["lvl"] = 110,
+								},
+							},
+						},
 						n(129411, {	-- Zunashi the Exile
 							["questID"] = 48319,
 							["coord"] = { 43.9, 52.4, 864 },	-- cave entrance
