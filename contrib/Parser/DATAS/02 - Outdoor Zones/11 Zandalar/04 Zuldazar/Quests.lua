@@ -137,23 +137,23 @@ _.Zones =
 													49491,	-- Fuel for the Voodoo
 												},
 											}),
-											q(49495, {	-- Enforcing Fate	
+											q(49495, {	-- Enforcing Fate
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = {
 													49493,	-- Zul's Ethical Dilemma
 													49494,	-- Zuvembi Brew
 													51663,	-- Preparing for the Fall
-												}, 
+												},
 											}),
 											q(49663, {	-- False Prophecies [Note: Final Quest needed to trigger criteria]
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = { 49905 },	-- Plot Twist
 												--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
 											}),
-											q(49491, {	-- Fuel for the Voodoo	
+											q(49491, {	-- Fuel for the Voodoo
 												["qg"] = 130706,	-- Izita's Spirit
-												["sourceQuests"] = { 49488 },	-- Tal'gurub	
-											}),	
+												["sourceQuests"] = { 49488 },	-- Tal'gurub
+											}),
 											q(49489, {	-- Needs a Little Body
 												["groups"] = {
 													i(161139),	-- Spirit Twister's Band
@@ -164,72 +164,72 @@ _.Zones =
 												},
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = { 49488 },	-- Tal'gurub
-											}),	
-											q(49905, {	-- Plot Twist	
+											}),
+											q(49905, {	-- Plot Twist
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = { 49495 },	-- Enforcing Fate
-											}),	
-											q(51663, {	-- Preparing for the Fall	
+											}),
+											q(51663, {	-- Preparing for the Fall
 												--["qg"] = 290750,	-- Jambani Stockpile  [IS OBJECT]
 												["sourceQuests"] = {
 													49489,	-- Needs a Little Body
 													49490,	-- The Urn of Voices
 													49491,	-- Fuel for the Voodoo
 												},
-											}),	
-											q(49488, {	-- Tal'gurub	
+											}),
+											q(49488, {	-- Tal'gurub
 												["qg"] = 120740,	-- King Rastakhan
 												["sourceQuests"] = { 49615 },	-- Trust of a King
 											}),
-											q(49490, {	-- The Urn of Voices	
+											q(49490, {	-- The Urn of Voices
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = { 49488 },	-- Tal'gurub
-											}),	
-											q(49493, {	-- Zul's Ethical Dilemma	
+											}),
+											q(49493, {	-- Zul's Ethical Dilemma
 												["qg"] = 129907,	-- Zul the Prophet
 												["sourceQuests"] = {
 													49489,	-- Needs a Little Body
 													49490,	-- The Urn of Voices
 													49491,	-- Fuel for the Voodoo
 												},
-											}),	
-											q(49494, {	-- Zuvembi Brew	
+											}),
+											q(49494, {	-- Zuvembi Brew
 												["qg"] = 129907,	-- Zul the Prophet
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													49492,	-- Arrogance of Vol'jamba
 													51663,	-- Preparing for the Fall
 													49493,	-- Zul's Ethical Dilemma
-												},	
+												},
 											}),
 										},
 									}),
 									crit(3, {	-- Warport Rastari
 										["groups"] = {
-											q(49122, {	-- A Port in Peril	
+											q(49122, {	-- A Port in Peril
 												["qg"] = 127815,	-- Zolani
 												["sourceQuests"] = { 49663 },	-- False Prophecies
 											}),
-											q(49148, {	-- Crumbling Apart	
+											q(49148, {	-- Crumbling Apart
 												["qg"] = 127815,	-- Zolani
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													49146,	-- Spirits' Belongings
 													49145,	-- No Troll Left Behind
 													49144,	-- Wrath of the Zandalari
-												},	
+												},
 											}),
-											q(49149, {	-- Embrace the Voodoo	
+											q(49149, {	-- Embrace the Voodoo
 												["qg"] = 127837,	-- Kaza'jin the Wavebinder
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													49146,	-- Spirits' Belongings
 													49145,	-- No Troll Left Behind
 													49144,	-- Wrath of the Zandalari
-												},	
+												},
 											}),
-											q(49145, {	-- No Troll Left Behind	
+											q(49145, {	-- No Troll Left Behind
 												["qg"] = 127814,	-- Habutu
 												["sourceQuests"] = { 49122 },	-- A Port in Peril
-											}),	
-											q(49146, {	-- Spirits' Belongings	
+											}),
+											q(49146, {	-- Spirits' Belongings
 												["qg"] = 127837,	-- Kaza'jin the Wavebinder
 												["sourceQuests"] = { 49122 },	-- A Port in Peril
 											}),
@@ -242,14 +242,14 @@ _.Zones =
 													i(158415),	-- Jambani Wristwraps
 												},
 												["qg"] = 127814,	-- Habutu
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													49146,	-- Spirits' Belongings
 													49145,	-- No Troll Left Behind
 													49144,	-- Wrath of the Zandalari
-												},	
+												},
 											}),
 											--[[ QUEST REMOVED FROM BETA
-											q(47879, {	-- The Betrayal of Zul 
+											q(47879, {	-- The Betrayal of Zul
 												["qg"] = 129409,	-- Zolani
 												["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 											}),
@@ -269,9 +269,9 @@ _.Zones =
 													49147,	-- Show of Strength
 													49148,	-- Crumbling Apart
 													49149,	-- Embrace the Voodoo
-												}, 
+												},
 											}),
-											q(49144, {	-- Wrath of the Zandalari	
+											q(49144, {	-- Wrath of the Zandalari
 												["qg"] = 127815,	-- Zolani
 												["sourceQuests"] = { 49122 },	-- A Port in Peril
 											}),
@@ -279,16 +279,16 @@ _.Zones =
 									}),
 									crit(4, {	-- Web of Lies
 										["groups"] = {
-											q(51111, {	-- King or Prey	
+											q(51111, {	-- King or Prey
 												["qg"] = 124915	-- King Rastakhan
-											}),	
-											q(47521, {	-- Midnight in the Garden of the Loa	
+											}),
+											q(47521, {	-- Midnight in the Garden of the Loa
 												["qg"] = 133324,	-- Hexlord Raal
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													47520,	-- Walls Have Ears
 													47518,	-- Raal
 												},
-											}),	
+											}),
 											q(47528, {	-- Mistress of Lies [Note: Final Quest needed to trigger criteria]
 												["groups"] = {
 													i(159105),	-- Spy Mistress Chopper
@@ -301,12 +301,12 @@ _.Zones =
 													i(159112),	-- Shadra Disciple's Stabber
 												},
 												["qg"] = 124749,	-- Acolyte Mali
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													47963,	-- The Ancient One
 													47522,	-- The Hunter
 												},
-											}),	
-											q(47518, {	-- Raal	
+											}),
+											q(47518, {	-- Raal
 												["groups"] = {
 													i(158399),	-- Rastari Wargreaves
 													i(158400),	-- Zanchuli Leggings
@@ -318,35 +318,35 @@ _.Zones =
 													i(158671),	-- Rastari Belt
 												},
 												["qg"] = 123335,	-- Wardruid Loti
-												["sourceQuests"] = { 
-													47897,	-- Zanchuli Traitors
-													47915,	-- Rescuing the Taken
-												},
-											}),	
-											q(47915, {	-- Rescuing the Taken	
-												["qg"] = 124629,	-- Kaza'jin the Wavebinder
-												["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
-											}),	
-											q(47509, {	-- Terrace of the Chosen	
-												["qg"] = 141555,	-- Baine Bloodhoof
-												["sourceQuests"] = { 51111 },	-- King or Prey
-											}),	
-											q(47963, {	-- The Ancient One	
-												["qg"] = 133653,	-- Hexlord Raal
-												["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-											}),	
-											q(47522, {	-- The Hunter	
-												["qg"] = 122760,	-- Wardruid Loti
-												["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
-											}),	
-											q(47520, {	-- Walls Have Ears	
-												["qg"] = 133302,	-- Druid of Gonk
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													47897,	-- Zanchuli Traitors
 													47915,	-- Rescuing the Taken
 												},
 											}),
-											q(47897, {	-- Zanchuli Traitors	
+											q(47915, {	-- Rescuing the Taken
+												["qg"] = 124629,	-- Kaza'jin the Wavebinder
+												["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+											}),
+											q(47509, {	-- Terrace of the Chosen
+												["qg"] = 141555,	-- Baine Bloodhoof
+												["sourceQuests"] = { 51111 },	-- King or Prey
+											}),
+											q(47963, {	-- The Ancient One
+												["qg"] = 133653,	-- Hexlord Raal
+												["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
+											}),
+											q(47522, {	-- The Hunter
+												["qg"] = 122760,	-- Wardruid Loti
+												["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
+											}),
+											q(47520, {	-- Walls Have Ears
+												["qg"] = 133302,	-- Druid of Gonk
+												["sourceQuests"] = {
+													47897,	-- Zanchuli Traitors
+													47915,	-- Rescuing the Taken
+												},
+											}),
+											q(47897, {	-- Zanchuli Traitors
 												["qg"] = 124629,	-- Kaza'jin the Wavebinder
 												["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
 											}),
@@ -354,27 +354,27 @@ _.Zones =
 									}),
 									crit(5, {	-- Among the People
 										["groups"] = {
-											q(51679, {	-- A Strange Port of Call	
+											q(51679, {	-- A Strange Port of Call
 												["qg"] = 124083,	-- Zolani
 												["sourceQuests"] = { 47738 },	-- The Will of the Loa
-											}),	
-											q(47735, {	-- Ancient Tortollan Remedies	
+											}),
+											q(47735, {	-- Ancient Tortollan Remedies
 												["qg"] = 124063,	-- Jol the Ancient
 												["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
 											}),
-											q(47736, {	-- Heads Will Roll	
+											q(47736, {	-- Heads Will Roll
 												["qg"] = 124656,	-- Zolani
 												["sourceQuests"] = { 47737 },	-- The Temple of Rezan
-											}),	
+											}),
 											q(47740, {	-- House of the King  [Note: Final Quest needed to trigger criteria]
 												["qg"] = 124655,	-- King Rastakhan
 												["sourceQuests"] = { 47737 },	-- The Temple of Rezan
 											}),
-											q(51680, {	-- In Bwonsamdi's Shadow	
+											q(51680, {	-- In Bwonsamdi's Shadow
 												["qg"] = 124083,	-- Zolani
 												["sourceQuests"] = { 51101 },	-- The Wounded King
 											}),
-											q(51677, {	-- Mending Body and Soul	
+											q(51677, {	-- Mending Body and Soul
 												["qg"] = 124063,	-- Jol the Ancient
 												["sourceQuests"] = {
 													47735,	-- Ancient Tortollan Remedies
@@ -382,11 +382,11 @@ _.Zones =
 													47733,	-- The Loa-Speaker's Betrayal
 													50235,	-- No Safe Haven
 												},
-											}),	
-											q(50235, {	-- No Safe Haven	
+											}),
+											q(50235, {	-- No Safe Haven
 												["qg"] = 124083,	-- Zolani
 												["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-											}),	
+											}),
 											q(51678, {	-- Rastakhan's Might
 												["groups"] = {
 													i(155242),	-- Rastari Warboots
@@ -400,16 +400,16 @@ _.Zones =
 												},
 												["qg"] = 124062,	-- King Rastakhan
 												["sourceQuests"] = { 47738 },	-- The Will of the Loa
-											}),	
-											q(47733, {	-- The Loa-Speaker's Betrayal	
+											}),
+											q(47733, {	-- The Loa-Speaker's Betrayal
 												["qg"] = 138520,	-- Zeb'ahari Villager
 												["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-											}),	
-											q(47739, {	-- The Scent of Vengeance	
+											}),
+											q(47739, {	-- The Scent of Vengeance
 												["qg"] = 132637,	-- Jamil Abul'housin
 												["sourceQuests"] = { 51680 },	-- In Bwonsamdi's Shadow
-											}),	
-											q(47737, {	-- The Temple of Rezan	
+											}),
+											q(47737, {	-- The Temple of Rezan
 												["qg"] = 124062,	-- King Rastakhan
 												["sourceQuests"] = {
 													51679,	-- A Strange Port of Call
@@ -417,14 +417,14 @@ _.Zones =
 													47742,	-- Zul's Mutiny
 												},
 											}),
-											q(51101, {	-- The Wounded King	
+											q(51101, {	-- The Wounded King
 												["qg"] = 141555	-- Baine Bloodhoof
-											}),	
-											q(47738, {	-- The Will of the Loa	
+											}),
+											q(47738, {	-- The Will of the Loa
 												["qg"] = 132637,	-- Jamil Abul'housin
 												["sourceQuests"] = { 51677 },	-- Mending Body and Soul
-											}),	
-											q(47742, {	-- Zul's Mutiny	
+											}),
+											q(47742, {	-- Zul's Mutiny
 												["qg"] = 124062,	-- King Rastakhan
 												["sourceQuests"] = { 47738 },	-- The Will of the Loa
 											}),
@@ -432,22 +432,22 @@ _.Zones =
 									}),
 									crit(7, {	-- March of the Loa
 										["groups"] = {
-											q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess	
+											q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess
 												["qg"] = 129757,	-- King Rastakhan
 												["sourceQuests"] = { 49426 },	-- The King's Gambit
 											}),
-											q(49425, {	-- City of Gold	
+											q(49425, {	-- City of Gold
 												["qg"] = 129703,	-- Hexlord Raal
-												["sourceQuests"] = { 
+												["sourceQuests"] = {
 													49424,	-- The Full Prophecy
 													49422,	-- Heretics
 												},
 											}),
-											q(49422, {	-- Heretics	
+											q(49422, {	-- Heretics
 												["qg"] = 129740,	-- Gonk
 												["sourceQuests"] = { 49965 },	-- The Warpack
 											}),
-											q(49421, {	-- Hunting Zul	
+											q(49421, {	-- Hunting Zul
 												["qg"] = 141555,	-- Baine Bloodhoof
 												["sourceQuests"] = { 50433 },	-- Zanchuli Disbanded
 											}),
@@ -455,23 +455,23 @@ _.Zones =
 												["qg"] = 129757,	-- King Rastakhan
 												["sourceQuests"] = { 49901 },	-- Atal'Dazar: Yazma the Fallen Priestess
 											}),
-											q(49424, {	-- The Full Prophecy	
+											q(49424, {	-- The Full Prophecy
 												["qg"] = 129561,	-- Wardruid Loti
 												["sourceQuests"] = { 49965 },	-- The Warpack
-											}),	
-											q(49426, {	-- The King's Gambit	
+											}),
+											q(49426, {	-- The King's Gambit
 												["qg"] = 131049,	-- Rezan
 												["sourceQuests"] = { 49425 },	-- City of Gold
 												["g"] = {
 													i(155239),	-- Rastari Breastplate [was given this as reward 5/3/2019, not sure why it is listed for Prophet's Ploy also]
 													i(161143),	-- Rastari Helmet
 												},
-											}),	
-											q(49965, {	-- The Warpack	
+											}),
+											q(49965, {	-- The Warpack
 												["qg"] = 129491,	-- King Rastakhan
 												["sourceQuests"] = { 49421 },	-- Hunting Zul
-											}),	
-											q(50433, {	-- Zanchuli Disbanded	
+											}),
+											q(50433, {	-- Zanchuli Disbanded
 												["qg"] = 122760	-- Wardruid Loti
 											}),
 										},
@@ -629,7 +629,7 @@ _.Zones =
 									i(159114),	-- Rootway Safari Greatbow
 									i(159118),	-- Rootway Safari Magestaff
 									i(159116),	-- Wildtusk Ivory Cudgel
-									i(159122),	-- Wildtusk Ivory Headcracker	
+									i(159122),	-- Wildtusk Ivory Headcracker
 								},
 							}),
 							q(50466, {	-- He's Gone Mad!
@@ -660,7 +660,7 @@ _.Zones =
 								["g"] = {
 									i(159942),	-- Zul Adherent's Band
 								},
-							}),	
+							}),
 							qh(48527, {	-- Ravenous Landsharks
 								["qg"] = 121706,	-- Beastlord L'kala
 								["g"] = {
@@ -703,7 +703,7 @@ _.Zones =
 										["itemID"] = 163865,	-- Bartered Vrykul Warhelm
 									},
 								},
-							},							
+							},
 							qh(50297, {	-- The Head of Her Enemy
 								["qg"] = 130929,	-- Witch Doctor Jangalar
 								["g"] = {

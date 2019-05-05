@@ -81,7 +81,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 135536,	-- Jani
 											["questID"] = 50884,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -98,7 +98,7 @@ _.Zones =
 									["itemID"] = 158915,	-- Polished Ringhorn Hoof
 									["qg"] = 135564,	--  Jani
 									["questID"] = 50890,	-- Loot Treasure
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										50889,	-- Item Turn-In
 									},
 									["coords"] = {	-- Turn-In Location
@@ -118,7 +118,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 135564,	--  Jani
 											["questID"] = 50889,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -137,7 +137,7 @@ _.Zones =
 								{	-- Saurid Surprise
 									["qg"] = 133859,	-- Jani
 									["questID"] = 50901,	-- Saurid Surprise
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										51145,	-- Curse of Jani [Alliance]
 										47442,	-- Curse of Jani [Horde]
 									},
@@ -164,7 +164,7 @@ _.Zones =
 									["coords"] = {
 										{ 49.33, 84.39, 864 },	-- The Eternal Spring
 									},
-									["crs"] = {	
+									["crs"] = {
 										134744,	-- Redrock Howler
 										134718,	-- Redrock Scavenger
 									},
@@ -174,7 +174,7 @@ _.Zones =
 											["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
 											["qg"] = 135572,	-- Jani
 											["questID"] = 50891,	-- Item Turn-In
-											["sourceQuests"] = { 
+											["sourceQuests"] = {
 												51145,	-- Curse of Jani [Alliance]
 												47442,	-- Curse of Jani [Horde]
 											},
@@ -190,7 +190,7 @@ _.Zones =
 										},
 									},
 								},
-								
+
 							},
 						},
 						ach(13027, {	-- Mushroom Harvest
@@ -277,7 +277,7 @@ _.Zones =
 									["groups"] = {
 										n(132662,  { -- Mine Cart
 											["questID"] = 47326,
-											["coords"] = { 
+											["coords"] = {
 												{ 46.59, 88.00 },
 											},
 											["description"] = "Hop into the cart here to arrive at the end for the chest.",
@@ -286,7 +286,7 @@ _.Zones =
 									["questID"] = 50237,
 									["sourceQuests"] =  { 47326 },    -- Mine Cart Ride
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
-									["coords"] = { 
+									["coords"] = {
 										{ 44.37, 92.22 },
 									},
 								}),
@@ -320,7 +320,7 @@ _.Zones =
 										{ 57.02, 11.12 },
 									},
 								}),
-								o(287318, {	-- Sandfury Reserve	
+								o(287318, {	-- Sandfury Reserve
 									["questID"] = 51133,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
@@ -339,7 +339,7 @@ _.Zones =
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									["coord"] = { 26.53, 45.40 },
 								}),
-								o(287320, {	-- Stranded Cache	
+								o(287320, {	-- Stranded Cache
 									["questID"] = 51135,
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),

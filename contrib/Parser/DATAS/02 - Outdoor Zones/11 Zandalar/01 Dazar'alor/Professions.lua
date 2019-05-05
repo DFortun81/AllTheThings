@@ -66,7 +66,7 @@ _.Zones =
 							crit(10),		-- Pristine High Apothecary's Hood
 							crit(11),		-- Pristine Bwonsamdi Voodoo Mask
 							crit(12),		-- Pristine Blowgun of the Sethrak
-						})),	
+						})),
 						h(ach(12754)),	-- Zandalari Fisherman
 						h(ach(12737)),	-- Zandalari Master of All
 						--]]
@@ -92,7 +92,7 @@ _.Zones =
 							qh(50116, {	-- A Possible Solution
 								["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
 								["coord"] = { 42.2, 38.0, 1165 },
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									50115,	-- Changing the Scenery
 									50113,	-- Ocular Extracts
 								},
@@ -113,20 +113,20 @@ _.Zones =
 							qh(50119, {	-- Chemically Compounded
 								["qg"] = 132680,	-- Zukashi <Master of Transmutations>
 								["coord"] = { 65.2, 36.9, 863 },
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									50117,	-- A Deathly Draught
-									50118,	-- A Stone's Throw	
+									50118,	-- A Stone's Throw
 								},
 								["requireSkill"] = 171,	-- Alchemy
 							}),
 							o(280957, {	-- Zukashi's Satchel
 								qh(50120, {	-- A Recipe for Success
 									["coord"] = { 62.9, 28.9, 863 },
-									["sourceQuest"] = 50119,	-- Chemically Compounded	
+									["sourceQuest"] = 50119,	-- Chemically Compounded
 									["requireSkill"] = 171,	-- Alchemy
 									["groups"] = {
 										recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-									},	
+									},
 								}),
 							}),
 						}),
@@ -223,8 +223,8 @@ _.Zones =
 								["groups"] = {
 									recipe(292946),	-- Recipe: Synchronous Thread
 								},
-							}),							
-						}),	
+							}),
+						}),
 					},
 				}),
 			},

@@ -68,7 +68,7 @@ _.Zones =
 							},
 						},
 						{	-- The Arena Calls
-							["questID"] = 53039,	-- The Arena Calls 
+							["questID"] = 53039,	-- The Arena Calls
 							["qg"] = 144384,		-- Chronicler Shoopa
 							["isWeekly"] = true,
 							["repeatable"] = true,

@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				["achievementID"] = 12510,	-- Ready for War
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					1161,	--  Boralus
+					1161,	-- Boralus
 				},
 				["lvl"] = 110,
 				-- We need to attach lvl requirements in various areas here as the quests are specific to certain levels.  To ensure everything works properly we'll attach lvls to each quest to be safe.

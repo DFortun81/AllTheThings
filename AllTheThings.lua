@@ -9174,7 +9174,6 @@ app:GetWindow("Unsorted");
 end)();
 
 		-- Uncomment this section if you need to enable Debugger:
---[[
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -9500,7 +9499,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	end
 	self.data.index = 0;
 	self.data.back = 1;
-	self.data.indent = 0;
+	self.data.indent = 1;
 	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end):Show();

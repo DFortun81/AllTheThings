@@ -777,7 +777,7 @@ _.Zones =
 										{	-- Sanctuary Under Siege **
 											["questID"] = 50751,	-- Sanctuary Under Siege
 											["qg"] = 138519,		-- Vorrik
-											["coords"] = { 
+											["coords"] = {
 												{ 51.98, 27.71, 864 },	-- Skycallers' Spire (Vol'dun)
 											},
 											["sourceQuests"] = {
@@ -912,7 +912,7 @@ _.Zones =
 						q(50805, {	-- Skycaller Shutdown (Bonus Objective)
 							["coord"] = { 52.0, 27.7, 864 },	-- Skycallers' Spire (Vol'dun)
 						}),
-						
+
 						q(50703, {	-- Informing the Horde
 							["qg"] = 135133,	-- Warguard Rakera
 							["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)

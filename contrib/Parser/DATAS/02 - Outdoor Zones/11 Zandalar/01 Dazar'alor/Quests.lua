@@ -72,25 +72,25 @@ _.Zones =
 								i(166999),	-- Treasure Map
 							},
 						}),
-						qh(47437, {	-- Competitive Devotion	
+						qh(47437, {	-- Competitive Devotion
 							["qg"] = 126564,	-- Hexlord Raal
 							["sourceQuests"] = { 47434, 47435, },	-- Restraining Order, Pterrortorial Dispute
-						}),	
+						}),
 						qh(54439, {	-- Crucible of Storms: Relics of Shadow
 							["qgs"] = {
 								146335,	-- Queen Talanji
 								133050,	-- Princess Talanji
 							},
-							["coords"] = { 
+							["coords"] = {
 								{ 49.9, 46.6, 1165 },
 								{ 41.7, 66.7, 1163 },
 							},
 							["sourceQuests"] = { 53763 },	-- Twist the Knife
 						}),
-						qh(47442, {	-- Curse of Jani	
+						qh(47442, {	-- Curse of Jani
 							["qg"] = 126334,	-- Jani
 							["sourceQuests"] = { 47441 },	-- Pests
-						}),	
+						}),
 						qh(46929, {	-- Deterrent
 							["g"] = {
 								i(155305),	-- Golden City Greatcloak
@@ -101,8 +101,8 @@ _.Zones =
 							},
 							["qg"] = 135441,	-- Zolani
 							["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-						}),	
-						qh(47422, {	-- Dire Situation	
+						}),
+						qh(47422, {	-- Dire Situation
 							["g"] = {
 								i(159102),	-- Raal's Spare Hexxer
 								i(159100),	-- Crimson Cultist Scepter
@@ -116,11 +116,11 @@ _.Zones =
 							["qg"] = 126560,	-- Wardruid Loti
 							["sourceQuests"] = { 47437 },	-- Competitive Devotion
 						}),
-						qh(48454, {	-- Evidence of Evil	
+						qh(48454, {	-- Evidence of Evil
 							["qg"] = 126148,	-- Witch Doctor Jala
 							["sourceQuests"] = { 48452 },	-- The Red Market
-						}),	
-						qh(47423, {	-- Forbidden Practices	
+						}),
+						qh(47423, {	-- Forbidden Practices
 							["qg"] = 126560,	-- Wardruid Loti
 							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
 						}),
@@ -133,7 +133,7 @@ _.Zones =
 								146335,	-- Queen Talanji
 								133050,	-- Princess Talanji
 							},
-							["coords"] = { 
+							["coords"] = {
 								{ 49.9, 46.6, 1165 },
 								{ 41.7, 66.7, 1163 },
 							},
@@ -198,23 +198,23 @@ _.Zones =
 							["qg"] = 126564,	-- Hexlord Raal
 							["sourceQuests"] = { 47438 },	-- Picking a Side
 						}),
-						qh(47441, {	-- Pests	
+						qh(47441, {	-- Pests
 							["qg"] = 127665,	-- Nokano
 							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
 						}),
-						qh(47438, {	-- Picking a Side	
+						qh(47438, {	-- Picking a Side
 							["qg"] = 126560,	-- Wardruid Loti
 							["sourceQuests"] = { 47422 },	-- Dire Situation
 						}),
-						qh(47435, {	-- Pterrortorial Dispute	
+						qh(47435, {	-- Pterrortorial Dispute
 							["qg"] = 126560,	-- Wardruid Loti
 							["sourceQuests"] = { 47433 },	-- Offensively Defensive
 						}),
-						qh(46927, {	-- Punishment of Tal'aman	
+						qh(46927, {	-- Punishment of Tal'aman
 							["qg"] = 126684,	-- Yazma
 							["sourceQuests"] = { 48454 },	-- Evidence of Evil
-						}),	
-						qh(46928, {	-- Punishment of Tal'farrak	
+						}),
+						qh(46928, {	-- Punishment of Tal'farrak
 							["qg"] = 126684,	-- Yazma
 							["sourceQuests"] = { 48454 },	-- Evidence of Evil
 						}),
@@ -234,10 +234,10 @@ _.Zones =
 							["qg"] = 135441,	-- Zolani
 							["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
 						}),
-						qh(46926, {	-- Shakedown	
+						qh(46926, {	-- Shakedown
 							["qg"] = 135441,	-- Zolani
 							["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-						}),	
+						}),
 						qh(46931, {	-- Speaker of the Horde
 							["sourceQuests"] = { 46930 },	-- Rastakhan
 							["qg"] = 120740,	-- King Rastakhan
@@ -269,14 +269,14 @@ _.Zones =
 							["coord"] = { 20.0, 35.8, 896 },
 							["qg"] = 144773,	-- Xal'atath
 						}),
-						qh(50835, {	-- The Port of Zandalar	
+						qh(50835, {	-- The Port of Zandalar
 							["qg"] = 122915,	-- Zolani
 							["sourceQuests"] = { 49615 },	-- Trust of a King
-						}),	
-						qh(48452, {	-- The Red Market	
+						}),
+						qh(48452, {	-- The Red Market
 							["qg"] = 126148,	-- Witch Doctor Jala
 							["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
-						}),	
+						}),
 						q(53762,  {	-- The Tempest Crown
 							["qg"] = 145396,	-- Xal'atath
 							["coord"] = { 75.0, 77.7, 895 },

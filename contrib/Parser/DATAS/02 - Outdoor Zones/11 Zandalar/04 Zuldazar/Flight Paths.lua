@@ -27,11 +27,11 @@ _.Zones =
 							["description"] = "Castaway Encampment, Zuldazar",
 							["coord"] = { 77.6, 54.4 },
 						}),
-	--[[					
+	--[[
 						fp(2071, {	-- Dreadpearl, Zuldazar [N] [This appears to have been removed since BETA or changed to Isle of Fangs for Horde]
 							["coord"] = { 54.4, 87 },
 						}),
-	]]--					
+	]]--
 						fp(2045, {	-- Garden of the Loa, Zuldazar [H]
 							["description"] = "Garden of the Loa, Zuldazar",
 							["coord"] = { 49.6, 26.2 },

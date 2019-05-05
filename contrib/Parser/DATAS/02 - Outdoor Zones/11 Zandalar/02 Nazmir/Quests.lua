@@ -545,7 +545,7 @@ _.Zones =
 								},
 								{	-- Not Fit for This Plane
 									["questID"] = 49955,
-									["qg"] = 131253,	-- 
+									["qg"] = 131253,	--
 									["coord"] = { 68.6, 35.0, 863 },
 									["races"] = HORDE_ONLY,
 									["sourceQuests"] = {
@@ -556,7 +556,7 @@ _.Zones =
 								},
 								{	-- Protocol Recovery
 									["questID"] = 49957,
-									["qg"] = 131253,	-- 
+									["qg"] = 131253,	--
 									["coord"] = { 68.6, 35.0, 863 },
 									["races"] = HORDE_ONLY,
 									["sourceQuests"] = {
@@ -567,7 +567,7 @@ _.Zones =
 								},
 								{	-- Void is Prohibited
 									["questID"] = 49956,
-									["qg"] = 131253,	-- 
+									["qg"] = 131253,	--
 									["coord"] = { 68.6, 35.0, 863 },
 									["races"] = HORDE_ONLY,
 									["sourceQuests"] = {
@@ -683,7 +683,7 @@ _.Zones =
 								},
 								{	-- Ateena's Fall
 									["questID"] = 50087,
-									["qg"] = 133476,	-- 
+									["qg"] = 133476,	--
 									["coord"] = { 49.3, 57.1, 863 },
 									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 52073,	-- Petitioning Krag'wa
@@ -790,7 +790,7 @@ _.Zones =
 						["questID"] = 49479,
 						["qg"] = 126346,	-- Chadwick Paxton
 						["coord"] = { 25.9, 36.1, 863 },
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							48498,	-- No Mercy for Sithis
 							48496,	-- Reuniting the Company
 							48497,	-- Show of Force
@@ -909,7 +909,7 @@ _.Zones =
 					},
 					{	-- No Problem Tar Can't Solve
 						["questID"] = 49776,
-						["qg"] = 131231,	-- 
+						["qg"] = 131231,	--
 						["coord"] = { 24.1, 53.1, 863 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50933,	-- An Unfortunate Event
@@ -1003,7 +1003,7 @@ _.Zones =
 						["questID"] = 48499,
 						["qg"] = 126346,	-- Chadwick Paxton
 						["coord"] = { 25.9, 36.1, 863 },
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							49479,	-- Didn't Stop to Think if They Should
 						},
 						["races"] = HORDE_ONLY,

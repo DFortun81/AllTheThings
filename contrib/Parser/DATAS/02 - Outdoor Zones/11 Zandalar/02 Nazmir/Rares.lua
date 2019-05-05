@@ -387,7 +387,7 @@ _.Zones =
 							["questID"] = 49469,
 							["coords"] = {
 								{ 38.7, 29.0, 863 },	-- entrance
-							 -- { 38.7, 26.7, 863 },	-- mob (if we ever have ability to 
+							 -- { 38.7, 26.7, 863 },	-- mob (if we ever have ability to
 							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161095),	-- Queensguard Specter Legwraps

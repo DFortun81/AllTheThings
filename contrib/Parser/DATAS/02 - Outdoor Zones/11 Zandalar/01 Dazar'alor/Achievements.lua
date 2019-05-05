@@ -115,7 +115,7 @@ _.Zones =
 						h(ach(13038)),	-- Raptari Rider [H]
 						ach(12851, {	-- Treasures of Zuldazar
 							["groups"] = {
-								o(276735, {	-- Offerings of the Chosen	
+								o(276735, {	-- Offerings of the Chosen
 									["criteriaID"] = 1,
 									["questID"] = 48938,
 									["coord"] = { 38.3, 7.2, 1165 },
@@ -130,7 +130,7 @@ _.Zones =
 									},
 									["icon"] = "Interface\\Icons\\garrison_bronzechest",
 								}),
-								o(288596, {	-- Cache of Secrets	
+								o(288596, {	-- Cache of Secrets
 									["criteriaID"] = 9,
 									["questID"] = 51338,
 									["coord"] = { 44.5, 26.9, 1165 },	-- may need to be slightly tweaked

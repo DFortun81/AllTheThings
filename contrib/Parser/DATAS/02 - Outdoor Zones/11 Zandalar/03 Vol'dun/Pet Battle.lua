@@ -343,7 +343,7 @@ _.Zones =
 							["speciesID"] = 2392,	-- Young Sand Sifter
 							["crs"] = { 143050 },	-- Young Sand Sifter
 						},
-						
+
 					},
 				}),
 			},

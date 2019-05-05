@@ -2,8 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
--- TODO Once War Fronts launch figure out specifically what gear is awarded from the box.  So far we've had rotating on Beta as new sets come in.
-
 _.ExpansionFeatures =
 {
 	{	-- War Effort
