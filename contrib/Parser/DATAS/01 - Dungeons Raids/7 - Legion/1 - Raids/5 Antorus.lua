@@ -1875,7 +1875,8 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 					i(152789),	-- Shackled Ur'zul (MOUNT! MYTHIC ONLY)
-					i(155880),	-- Scythe of the Unmaker (not in DJ)
+					i(155880),	-- Scythe of the Unmaker [RED] (not in DJ)
+					i(153115),	-- Scythe of the Unmaker [BLUE] (not in DJ)
 					i(152423),	-- Helm of the Awakened Soul
 					i(152005),	-- Pauldrons of Colossal Burden
 					i(152679),	-- Gambeson of Sargeras' Corruption
