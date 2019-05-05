@@ -70,6 +70,7 @@ _.Zones =
 					qg(264, qa(26686, {	-- Bones That Walk
 						i(60941),
 						i(60942),
+						i(60943), -- Signet of the Night Watch
 						i(131581),
 					})),
 --[[

@@ -238,6 +238,7 @@ _.Zones =
 								["groups"] = {
 									i(60727),	-- Keeshan's Bow
 									i(60726),	-- Keeshan's Dagger
+									i(60730),	-- Bravo Company Signet
 								},
 								["sourceQuests"] = {26714},	-- Darkblaze, Brood of the Worldbreaker
 							})),

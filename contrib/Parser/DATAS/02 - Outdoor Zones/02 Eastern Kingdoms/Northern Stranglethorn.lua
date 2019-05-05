@@ -871,6 +871,7 @@ _.Zones =
 --]]
 					qg(715, q(197, {	-- Raptor Mastery
 						i(61111),	-- Belt of the Raptor
+						i(61112),	-- Raptor Slayer's Band
 						i(61110),	-- Tethis' Skull
 						i(131201),	-- Scale-Cord of the Raptor
 						un(2, i(4119)),	-- Raptor Hunter Tunic
