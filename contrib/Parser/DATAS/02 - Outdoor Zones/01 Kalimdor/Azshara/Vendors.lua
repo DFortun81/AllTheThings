@@ -7,6 +7,13 @@ _.Zones =
 		m(76, {	-- Azshara
 			["groups"] = {
 				n(-2,  {	-- Vendors
+					n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
+						["u"] = 43,	-- Removed From Game
+						["groups"] = {
+							un(7, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
+							un(7, i(15729)),	-- Pattern: Chimeric Gloves
+						},
+					}),
 					n(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 						["coord"] = { 57.0, 50.6, 76 },
 						["races"] = HORDE_ONLY,
@@ -29,17 +36,6 @@ _.Zones =
 							i(20758),	-- Formula: Minor Wizard Oil
 							i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						},
-					}),
-				}),
-				n(-40, {	-- Legacy
-					n(-2,  {	-- Vendors
-						n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
-							["u"] = 43,	-- Removed From Game
-							["groups"] = {
-								un(7, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
-								un(7, i(15729)),	-- Pattern: Chimeric Gloves
-							},
-						}),
 					}),
 				}),
 			},
