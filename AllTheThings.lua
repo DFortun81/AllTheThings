@@ -11326,6 +11326,7 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 end
 
 -- Register Events required at the start
+app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
@@ -11581,6 +11582,36 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
+end
+app.events.ADDON_LOADED = function(addonName)
+	if addonName == "Blizzard_AuctionUI" then
+		app:UnregisterEvent("ADDON_LOADED");
+		
+		-- Create the Auction Tab for ATT.
+		local n = AuctionFrame.numTabs + 1;
+		local frame = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
+		frame:SetID(n);
+		frame:SetText(L["AUCTION_TAB"]);
+		frame:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
+		
+		PanelTemplates_SetNumTabs (AuctionFrame, n);
+		PanelTemplates_EnableTab  (AuctionFrame, n);
+		hooksecurefunc("AuctionFrameTab_OnClick", function(self)
+			-- print("AuctionFrameTab_OnClick", self:GetID());
+			if self:GetID() == n then
+				--Default AH textures
+				AuctionFrameTopLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopLeft")
+				AuctionFrameTop:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-Top")
+				AuctionFrameTopRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopRight")
+				
+				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft")
+				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-Bot")
+				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight")
+			else
+				
+			end
+		end);
+	end
 end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
