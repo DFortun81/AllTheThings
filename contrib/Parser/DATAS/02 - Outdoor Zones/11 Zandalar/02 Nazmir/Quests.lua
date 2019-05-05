@@ -531,6 +531,9 @@ _.Zones =
 										49935,	-- How to Repair a Titan Keeper
 										49937,	-- Recovering Remnants
 									},
+									["g"] = {
+										i(159078),	-- Potency Manipulator
+									},
 								},
 								{	-- Unwelcome Undead
 									["questID"] = 49949,
@@ -688,6 +691,8 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["sourceQuest"] = 52073,	-- Petitioning Krag'wa
 									["groups"] = {
+										i(159010),	-- Nazmani Warplate Chestpiece
+										i(155333),	-- Nazmani Warplate Spaulders
 										i(155332),	-- Ritual Flayer's Spaulders
 										i(159012),	-- Ritual Flayer's Jerkin
 									},
