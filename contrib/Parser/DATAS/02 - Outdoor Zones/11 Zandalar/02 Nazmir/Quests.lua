@@ -237,7 +237,7 @@ _.Zones =
 											i(158981),	-- Death-Pledged Footguards
 											i(158974),	-- Fen Summoner's Cloak
 											i(158980),	-- Loa Speaker's Slippers
-											i(458979),	-- Nazmani Warplate Footguards
+											i(158979),	-- Nazmani Warplate Footguards
 											i(158982),	-- Ritual Flayer's Striders
 										},
 										["qg"] = 127961,	-- Princess Talanji
