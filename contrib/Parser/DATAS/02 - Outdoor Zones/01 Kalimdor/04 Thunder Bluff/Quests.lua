@@ -9,19 +9,13 @@ _.Zones =
 				n(-17, {	-- Quests
 --[[				
 					qg(3034, qh(27283, {	-- A Journey to Moonglade
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qg(3047, qh(27277, {	-- An Audience with Ureda
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
 					qg(34679, qh(14041)),	-- Cranberry Chutney
 					qg(3045, q(27334, {	-- Dark Cleric Cecille
-						["groups"] = {
-						},
 						["classes"] = {5},
 						["races"] = {5},
 					})),
@@ -30,8 +24,6 @@ _.Zones =
 					qg(36648, qh(31036)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR TAUREN)
 --[[
 					qg(43795, qh(27304, {	-- Follow the Sun
-						["groups"] = {
-						},
 						["classes"] = {2},
 					})),
 					qh(768, {    -- Gathering Leather
@@ -39,18 +31,12 @@ _.Zones =
 						["requireSkill"] = 393,    -- Skinning
 					}),
 					qg(3042, qh(27281, {	-- Grezz Ragefist
-						["groups"] = {
-						},
 						["classes"] = {1},
 					})),
 					qg(3039, qh(27278, {	-- Grimshot's Call
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),
 					qg(43870, q(27335, {	-- Journey to Orgrimmar
-						["groups"] = {
-						},
 						["classes"] = {5},
 						["races"] = {10},
 					})),
@@ -64,56 +50,45 @@ _.Zones =
 					}),
 --[[
 					qg(43881, qh(27282, {	-- Kranosh's Behest
-						["groups"] = {
-						},
 						["classes"] = {9},
 					})),
 					qg(3045, qh(28323)),	-- Meet with Brother Silverhallow
 					qg(3045, q(28304, {	-- Meet with Dark Cleric Cecille
-						["groups"] = {
-						},
 						["classes"] = {5},
 						["races"] = {5},
 					})),
 					qg(3042, qh(28290, {	-- Meet with Grezz Ragefist
-						["groups"] = {
-						},
 						["classes"] = {1},
 					})),
 					qg(43881, qh(28299, {	-- Meet with Kranosh
-						["groups"] = {
-						},
 						["classes"] = {9},
 					})),
 					qg(3039, qh(28297, {	-- Meet with Ormak Grimshot
-						["groups"] = {
-						},
 						["classes"] = {3},
 					})),
 					qg(43870, qh(28308)),	-- Meet with Seer Liwatha
 					qg(51639, qh(28301, {	-- Meet with Terga Earthbreaker
-						["groups"] = {
-						},
 						["classes"] = {7},
 					})),
 					qg(30458, q(28307, {	-- Meet with Tyelis
-						["groups"] = {
-						},
 						["classes"] = {5},
 						["races"] = {10},
 					})),
 					qg(3047, qh(28300, {	-- Meet with Ureda
-						["groups"] = {
-						},
 						["classes"] = {8},
 					})),
 					qg(3034, q(28289, {	-- Moonglade Calls
-						["groups"] = {
-						},
 						["classes"] = {11},
 					})),
 					qg(3978, qh( 2965)),	-- Portents of Uldum
 --]]					
+					{	-- Magatha's Payment to Jediga
+						["questID"] = 3562,
+						["u"] = 40,
+						["qg"] = 4046,	-- Magatha Grimtotem
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 3518,	-- Delivery to Magatha
+					},
 					{	-- Meet with Master Pyreanor
 						["questID"] = 28303,
 						["qg"] = 43795,	-- Aponi Brightmane
@@ -141,13 +116,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 27258,	-- The Black Shield
 					},
-					{	-- Tal the Wind Rider Master
-						["questID"] = 6363,
-						["qg"] = 8359,	-- Ahanu
-						["coord"] = { 45.5, 55.8 },
-						["races"] = { 6 },	-- Tauren
-						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
-					},
 					{	-- Return to Varg
 						["questID"] = 6364,
 						["qg"] = 2995,	-- Tal
@@ -155,39 +123,32 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					},
+					{	-- Tal the Wind Rider Master
+						["questID"] = 6363,
+						["qg"] = 8359,	-- Ahanu
+						["coord"] = { 45.5, 55.8 },
+						["races"] = { 6 },	-- Tauren
+						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
+					},
 --[[					
 					qg(43870, qh(28164, {	-- Seek Brother Silverhallow
-						["groups"] = {
-						},
 						["classes"] = {5},
 					})),
 					qg(43795, q(27298, {	-- Seek Out Master Pyreanor
-						["groups"] = {
-						},
 						["classes"] = {2},
 						["races"] = {10},
 					})),
 					qg(43870, q(27332, {	-- Seek the Shadow-Walker
-						["groups"] = {
-						},
 						["classes"] = {5},
 						["races"] = {8},
 					})),
 					qg(51639, qh(27280, {	-- The Earthbreaker Calls
-						["groups"] = {
-						},
 						["classes"] = {7},
 					})),
-					qg(34480, qh(14176)),	-- The Grateful Dead (HOLIDAY - Day of the Dead)
-					
 					qg(3045, qh(27331, {	-- The Seer's Call
-						["groups"] = {
-						},
 						["classes"] = {5},
 					})),
-					qg(36648, q(26397, {	-- Walk With The Earth Mother					
-						["groups"] = {
-						},
+					qg(36648, q(26397, {	-- Walk With The Earth Mother
 						["races"] = {6},
 					})),
 --]]

@@ -919,6 +919,14 @@ _.Zones =
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
 					},
+					{	-- Jes'rimon's Payment to Jediga
+						["questID"] = 3563,
+						["u"] = 40,
+						["qg"] = 8659,	-- Jes'rimon
+						["races"] = HORDE_ONLY,
+						["coord"] = { 55.5, 34.1, 85 },
+						["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
+					},
 					{	-- Doras the Wind Rider Master
 						["questID"] = 6385,
 						["qg"] = 6929,	-- Innkeeper Gryshka

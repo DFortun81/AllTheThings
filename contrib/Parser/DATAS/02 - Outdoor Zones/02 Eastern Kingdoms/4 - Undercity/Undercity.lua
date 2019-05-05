@@ -25,6 +25,13 @@ _.Zones =
 					p(454),		-- Undercity Rat
 				}),
 				n(-17, { 	-- Quests
+					{	-- Andron's Payment to Jediga
+						["questID"] = 3564,
+						["u"] = 40,
+						["qg"] = 6522,	-- Andron Gant
+						["coord"] = { 54.8, 76.3, 90 },
+						["sourceQuest"] = 3542,	-- Delivery to Andron Gant
+					},
 					qg(10181, qh(31037)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
 					qh(39960, {	-- The Legacy Passed On
 						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
