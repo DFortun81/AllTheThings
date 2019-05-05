@@ -1038,14 +1038,17 @@ _.Zones =
 							},
 						},
 						{	-- News from Spires of Arak -- aa
+							["isBreadcrumb"] = true,
 							["questID"] = 35537,
 							["qg"] = 79627,	-- Shadow Hunter Kajassa
 							["coord"] = { 71.2, 29.9, 535 },
 							["races"] = HORDE_ONLY,
 						},
 						{	-- News from Spires of Arak
+							["isBreadcrumb"] = true,
 							["questID"] = 35554,
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 79618 },	-- Vindicator Icia
 						},
 						{	-- Next Steps
 							["questID"] = 34875,

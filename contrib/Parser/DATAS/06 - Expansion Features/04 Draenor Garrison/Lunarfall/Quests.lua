@@ -15,12 +15,11 @@ _.ExpansionFeatures =
 					}),
 				}),
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
-					{	-- Abyssal Gulper Eel
-						["questID"] = 35075,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					qa(36517, {	-- Abyssal Gulper Eel
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623, {	-- Pack of Fishing Supplies
 								i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -30,63 +29,61 @@ _.ExpansionFeatures =
 								i(45992),	-- Jeweled Fishing Pole
 							}),
 						},
-					},
-					{	-- Blackwater Whiptail
-						["questID"] = 35074,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					}),
+					qa(36515, {	-- Blackwater Whiptail
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
 						},
-					},
-					{	-- Blind Lake Sturgeon
-						["questID"] = 35073,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					}),
+					qa(36514, {	-- Blind Lake Sturgeon
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
 						},
-					},
-					{	-- Fat Sleeper
-						["questID"] = 35072,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					}),
+					qa(36513, {	-- Fat Sleeper
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
 						},
-					},
-					{	-- Fire Ammonite
-						["questID"] = 35066,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					}),
+					qa(36510, {	-- Fire Ammonite
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
 						},
-					},
-					{	-- Jawless Skulker
-						["questID"] = 35071,
-						["qg"] = 77733,	-- Ron Ashton
-						["isDaily"] = true,
-						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+					}),
+					qa(36511, {	-- Jawless Skulker
 						["requireSkill"] = 356,	-- Fishing
+						["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+						["isDaily"] = true,
+						["qg"] = 77733,	-- Ron Ashton
 						["g"] = {
 							i(112623),	-- Pack of Fishing Supplies
 						},
-					},
+					}),
 				}),
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
-					q(37083, {
-						i(120142, {
-							i(119217),
-							i(119219),
+					q(37083, {	-- Fight, Kill, Salute!
+						i(120142, {	-- Coliseum Champion's Spoils
+							i(119217),	-- Alliance Flag of Victory
+							i(119219),	-- Warlord's Flag of Victory
+						--	warlord's flag isn't a reward contained in this bag; it's from being the last player alive while in the coliseum
+						--	the other item contained in this bag is 119218 (horde flag of victory)
+						--	not sure whether to remove warlord's flag or if it was placed here intentionally so it doesn't get lost elsewhere
 						}),
 					}),
 				}),
@@ -1857,6 +1854,13 @@ _.ExpansionFeatures =
 				qa(38259, {	-- All Hands on Deck
 					["qg"] = 92219,	-- King Varian Wrynn
 				}),
+				q(34653,  {	-- Arakkoa Exodus
+					["sourceQuests"] = { 35554 },	-- News from Spires of Arak
+					["isBreadcrumb"] = true,
+					["coord"] = { 37.8, 36.8, 582 },
+					["lvl"] = 96,
+					["qg"] = 81492,	-- Bodrick Grey
+				}),
 				qa(36624, {	-- Ashran Appearance
 					["coord"] = { 40.7, 53.6, 582 },
 					["lvl"] = 91,
@@ -1905,6 +1909,8 @@ _.ExpansionFeatures =
 				}),
 				qa(36404, {	-- Clearing the Garden
 					["sourceQuest"] = 36592,	-- Bigger is Better
+					["coord"] = { 31.6, 18.1, 582 },	-- level 2 garrison
+					["lvl"] = 96,
 					["qg"] = 85344,	-- Naron Bloomthistle
 					["g"] = {
 						{ ["buildingID"] = 29 },	-- Herb Garden lvl 1

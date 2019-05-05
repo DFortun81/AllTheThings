@@ -595,6 +595,12 @@ _.Zones =
 				qa(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 				}),
+				{	---------- The Prophet's Final Message
+					["sourceQuests"] = { 33256 },	-- The Defense of Karabor
+					["description"] = "The item that starts this quest is mailed to you.",
+					["questID"] = 37322,	-- The Prophet's Final Message
+					["itemID"] = 119208,	-- The Prophet's Arcanum
+				},
 				qa(33255, {	-- The Righteous March
 					["sourceQuests"] = { 33837 },	-- Darkness Falls
 					["coord"] = { 52.2, 46.1, 539 },
