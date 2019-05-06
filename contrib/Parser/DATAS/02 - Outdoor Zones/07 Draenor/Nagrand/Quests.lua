@@ -605,12 +605,6 @@ _.Zones =
 								i(114681),	-- Stormsteppe Vest
 								i(114699),	-- Windshaper Robe
 							}),
-							q(35088, { 	-- The Shadow of the Void
-								i(118143),	-- Beastrider Gauntlets
-								i(118144),	-- Plainsthunder Handguards
-								i(118146),	-- Stormsteppe Grips
-								i(118145),	-- Windshaper Gauntlets
-							}),
 --[[					
 							q(37835),	-- The Shadow War
 							q(35086),	-- The Void March
