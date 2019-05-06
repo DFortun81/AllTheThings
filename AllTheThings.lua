@@ -9172,8 +9172,8 @@ app:GetWindow("Unsorted");
 		UpdateWindow(self, true);
 	end);
 end)();
---[[
-		-- Uncomment this section if you need to enable Debugger:
+--[[--
+-- Uncomment this section if you need to enable Debugger:
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -11589,26 +11589,218 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- Create the Auction Tab for ATT.
 		local n = AuctionFrame.numTabs + 1;
-		local frame = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
-		frame:SetID(n);
-		frame:SetText(L["AUCTION_TAB"]);
-		frame:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
+		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
+		button:SetID(n);
+		button:SetText(L["AUCTION_TAB"]);
+		button:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
 		
 		PanelTemplates_SetNumTabs (AuctionFrame, n);
 		PanelTemplates_EnableTab  (AuctionFrame, n);
+		
+		-- Create the Auction Frame
+		local frame = CreateFrame("FRAME", app:GetName() .. "-AuctionFrame", AuctionFrame );
+		frame:SetPoint("TOPLEFT", AuctionFrame, 19, -67);
+		frame:SetPoint("BOTTOMRIGHT", AuctionFrame, -8, 36);
+		
+		-- The ALL THE THINGS Epic Logo!
+		local f = frame:CreateTexture(nil, "ARTWORK");
+		f:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
+		f:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 72, 0);
+		f:SetSize(36, 36);
+		f:SetScale(0.8);
+		f:Show();
+		frame.logo = f;
+
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("TOPLEFT", frame.logo, "TOPRIGHT", 4, -2);
+		f:SetJustifyH("LEFT");
+		f:SetText(L["TITLE"]);
+		f:SetScale(1.5);
+		f:Show();
+		frame.title = f;
+		
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("CENTER", frame.title, "CENTER", 0, 0);
+		f:SetPoint("RIGHT", frame, "RIGHT", -8, 0);
+		f:SetJustifyH("RIGHT");
+		f:SetText("Auction House Module");
+		f:Show();
+		frame.moduletitle = f;
+		
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 160, 2);
+		f:SetText("Settings");
+		f:SetWidth(120);
+		f:SetHeight(24);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", function() 
+			-- Open the Settings Menu
+			if InterfaceOptionsFrame:IsVisible() then
+				InterfaceOptionsFrame_Show();
+			else
+				InterfaceOptionsFrame_OpenToCategory(app:GetName());
+				InterfaceOptionsFrame_OpenToCategory(app:GetName());
+			end
+		end);
+		f:SetATTTooltip("Click this button to toggle the settings menu.");
+		frame.settingsButton = f;
+		
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPLEFT", frame.settingsButton, "TOPRIGHT", 2, 0);
+		f:SetPoint("BOTTOMLEFT", frame.settingsButton, "BOTTOMRIGHT", 2, 0);
+		f:SetText("Scan");
+		f:SetWidth(120);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", function()
+			local CanQuery, CanQueryAll = CanSendAuctionQuery();
+			print("CanQuery:", CanQuery, "CanQueryAll:", CanQueryAll);
+			if CanQuery then
+				frame.scanButton:Disable();
+				frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
+				-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
+				if CanQueryAll then
+					QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
+				else
+					
+				end
+			else
+				
+			end
+		end);
+		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live\" checked, this will do a scan through common collectible categories using Live data rather than a full scan.\n\nA Full Scan may take longer, but usually provides a broader amount of Things than a Live Scan would.");
+		frame.scanButton = f;
+		
+		-- Register for Events [Only when requests sent by ATT]
+		local _GetAuctionItemInfo = GetAuctionItemInfo;
+		frame:SetScript("OnEvent", function(self, e, ...)
+			print(e, ...);
+			local numItems = GetNumAuctionItems("list");
+			print("GetNumAuctionItems", numItems);
+			if numItems > 0 then
+				-- Unregister, then begin processing the Auction Item List
+				self:UnregisterEvent("AUCTION_ITEM_LIST_UPDATE");
+				app.CurrentAuctionTotal = numItems;
+				app.CurrentAuctionIndex = 0;
+				StartCoroutine("ProcessAuctions", function()
+					-- Gather the Auctions
+					local auctions = {};
+					local auctionsPerItemID = {};
+					app.CurrentAuctionIndex = 1;
+					if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
+						local iter = 0;
+						repeat
+							-- Process the Auction
+							local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+								minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+								ownerFullName, saleStatus, itemId, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
+							if itemId and itemId > 0 and saleStatus == 0 then
+								local data = {};
+								data.index = app.CurrentAuctionIndex;
+								data.itemID = itemId;
+								data.bidAmount = minBid;
+								data.buyoutPrice = buyoutPrice;
+								table.insert(auctions, data);
+							end
+							
+							-- Increment the index and check the iteration variable.
+							iter = iter + 1;
+							if iter >= 100 then
+								coroutine.yield();
+								iter = 0;
+							end
+							app.CurrentAuctionIndex = app.CurrentAuctionIndex + 1;
+						until app.CurrentAuctionIndex > app.CurrentAuctionTotal;
+					else
+						return false;
+					end
+					
+					-- Sort the auctions by bid amount first, then by buyout price;
+					table.sort(auctions, function(a, b)
+						if a.buyoutPrice then
+							if b.buyoutPrice then
+								return a.buyoutPrice > b.buyoutPrice;
+							else
+								return false;
+							end
+						else
+							if b.buyoutPrice then
+								return true;
+							end
+						end
+						
+						if a.bidAmount then
+							if b.bidAmount then
+								return a.bidAmount > b.bidAmount;
+							else
+								return true;
+							end
+						elseif b.bidAmount then
+							return true;
+						end
+					end);
+					
+					-- Process the items
+					app.CurrentAuctionIndex = 0;
+					app.CurrentAuctionTotal = 0;
+					for i,data in ipairs(auctions) do
+						-- If no Auction Data has been gathered for this Item ID yet, then create a table.
+						local auctionsForItemID = auctionsPerItemID[data.itemID];
+						if not auctionsForItemID then
+							auctionsForItemID = {};
+							auctionsPerItemID[data.itemID] = auctionsForItemID;
+						end
+						table.insert(auctionsForItemID, data);
+					end
+					
+					for itemID,auctionsForItemID in pairs(auctionsPerItemID) do
+						-- Do something with that data.
+						local count = #auctionsForItemID;
+						local cheapest = auctionsForItemID[1];
+						local priciest = auctionsForItemID[count];
+						print("AUCTION DATA", "Item ID", itemID, "found in", count, "Auctions,", 
+							cheapest.buyoutPrice or 0, " - ", priciest.buyoutPrice or cheapest.buyoutPrice or 0, "OBO",
+							cheapest.bidAmount or 0, " - ", priciest.bidAmount or cheapest.bidAmount or 0, "BID");
+					end
+				end);
+			end
+		end);
 		hooksecurefunc("AuctionFrameTab_OnClick", function(self)
 			-- print("AuctionFrameTab_OnClick", self:GetID());
 			if self:GetID() == n then
 				--Default AH textures
-				AuctionFrameTopLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopLeft")
-				AuctionFrameTop:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-Top")
-				AuctionFrameTopRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopRight")
+				AuctionFrameTopLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-TopLeft");
+				AuctionFrameTop:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Top");
+				AuctionFrameTopRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-TopRight");
+				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft");
+				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Bot");
+				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight");
 				
-				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft")
-				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-Bot")
-				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight")
+				-- Check to see if we can query the Auction House at all.
+				local CanQuery, CanQueryAll = CanSendAuctionQuery();
+				if CanQuery then
+					frame.scanButton:Enable();
+				else
+					frame.scanButton:Disable();
+				end
+				
+				--[[
+				local CanQuery, CanQueryAll = CanSendAuctionQuery()
+				QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
+				QueryAuctionItems("", nil, nil, 0, nil, 0, true, nil, nil);
+
+				AUCTION_ITEM_LIST_UPDATE
+				GetNumAuctionItems("list");
+
+				auctionInfo.ownerFullName   = GetAuctionItemInfo("list", x);
+				auctionInfo.itemLink      = GetAuctionItemLink("list", x);
+
+				local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+					minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+					ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("list", index)
+				]]--
+				frame:Show();
 			else
-				
+				frame:Hide();
 			end
 		end);
 	end
