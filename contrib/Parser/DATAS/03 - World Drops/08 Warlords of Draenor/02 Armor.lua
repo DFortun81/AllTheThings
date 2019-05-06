@@ -20,6 +20,7 @@ _.WorldDrops =
 					i(116686),	-- Ancestral Amulet
 					i(116677),	-- Coldsinger Amulet
 					i(116679),	-- Growthshaper Amulet
+					i(111244),	-- Lovely Locket of the Luxurious Locks of Lor're
 					i(116678),	-- Moonwhisper Amulet
 					i(116684),	-- Shadowsage Amulet
 					i(116682),	-- Soulkeeper Amulet

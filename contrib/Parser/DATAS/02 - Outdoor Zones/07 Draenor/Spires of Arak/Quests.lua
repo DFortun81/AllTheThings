@@ -180,6 +180,13 @@ _.Zones =
 					["qg"] = 79890,	-- Ornekka
 				}),
 
+
+				q(35000, {	-- Banished From the Sky
+					["sourceQuests"] = { 34998 },	-- Talon Watch
+					["coord"] = { 62.1, 42.6, 542 },
+					["qg"] = 80758,	-- Talon Guard Kurekk
+				}),
+
 				
 				q(36660, {	-- Bloodmane Pridelands (bonus objective)
 					["coord"] = { 48.0, 71.4, 542 },
@@ -205,6 +212,26 @@ _.Zones =
 					["qg"] = 79519,	-- Reshad
 				}),
 
+
+				q(35001, {	-- Gaze of the Raven God
+					["sourceQuests"] = { 35000 },	-- Banished From the Sky
+					["coord"] = { 62.1, 42.6, 542 },
+					["qg"] = 80758,	-- Talon Guard Kurekk
+				}),
+
+				
+				q(34999, {  -- Hatred Undying
+					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
+					["coord"] = { 61.9, 42.2, 542 },
+					["qg"] = 81514,	-- Kazu
+					["g"] = {
+						i(114715),	-- Cragplate Warboots
+						i(114717),	-- Ravenchain Sabatons
+						i(114716),	-- Shadowveil Treads
+						i(114718),	-- Skysinger Boots
+					},
+				}),
+				
 				
 				q(34656, {  -- Hidden in Plain Sight
 					["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
@@ -315,6 +342,13 @@ _.Zones =
 					["qg"] = 79748,	-- Percy
 				}),
 
+
+				q(35002, {	-- Sons of Sethe
+					["sourceQuests"] = { 35000 },	-- Banished From the Sky
+					["coord"] = { 62.1, 42.6, 542 },
+					["qg"] = 80758,	-- Talon Guard Kurekk
+				}),
+
 				
 				q(35079, {	-- Spore-be-Gone
 					["coord"] = { 61.4, 72.8, 542 },
@@ -343,6 +377,11 @@ _.Zones =
 				}),
 
 
+				q(36590, {	-- The Howling Crag (bonus objective)
+					["coord"] = { 65.0, 25.9, 542 },
+				}),
+
+					
 				q(34884, {	-- The Kaliri Whisperer
 					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
 					["coord"] = { 45.9, 45.7, 542 },
@@ -430,7 +469,6 @@ _.Zones =
 				q(34942),	-- Back from Beyond
 				qa(35719),	-- Back on Track
 				qh(35718),	-- Back on Track
-				q(35000),	-- Banished From the Sky
 				qh(37326),	-- Befriending the Locals
 				qa(37327),	-- Befriending the Locals
 				q(34830),	-- Behind the Veil
@@ -460,7 +498,6 @@ _.Zones =
 				qa(36353),	-- For Old Times' Sake
 				qa(36029),	-- Gardul Venomshiv
 				qh(36028),	-- Gardul Venomshiv
-				q(35001),	-- Gaze of the Raven God
 				q(35082),	-- Getting the Crew Back Together
 				q(44570),	-- Honor the Flame
 				qa(35549),	-- Honoring a Hero
@@ -519,7 +556,6 @@ _.Zones =
 				q(35261),	-- Shot-Caller
 				q(35089),	-- Skimming Off the Top
 				q(35259),	-- Sol Sisters
-				q(35002),	-- Sons of Sethe
 				q(35091),	-- Sporicide
 				qa(37281),	-- Standing United
 				qh(37276),	-- Standing United
@@ -610,12 +646,6 @@ _.Zones =
 					i(114951),	-- Skywatch Adherent Locket
 					i(119080),	-- Skywatch Adherant Necklace
 					i(114947),	-- Skywatch Adherent Pendant
-				}),
-				q(34999, {  -- Hatred Undying
-					i(114715),	-- Cragplate Warboots
-					i(114717),	-- Ravenchain Sabatons
-					i(114716),	-- Shadowveil Treads
-					i(114718),	-- Skysinger Boots
 				}),
 				q(35273, {  -- Hot Seat
 					i(114727),	-- Cragplate Legguards
