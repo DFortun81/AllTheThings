@@ -166,6 +166,13 @@ _.Zones =
 					["qg"] = 81770,	-- Reshad
 				}),
 
+
+				q(37296, {	-- A Lack of Wasps
+					["sourceQuests"] = { 35699 },	-- Peace Offering
+					["coord"] = { 43.9, 48.8, 542 },
+					["qg"] = 83463,	-- Dusk-Seer Irizzar
+				}),
+
 				
 				q(35636, {	-- All Due Respect
 					["sourceQuests"] = { 34659 },	-- The Crone
@@ -174,7 +181,13 @@ _.Zones =
 				}),
 
 				
+				q(36660, {	-- Bloodmane Pridelands (bonus objective)
+					["coord"] = { 48.0, 71.4, 542 },
+				}),
+				
+				
 				q(35077, {  -- Defungination
+					["sourceQuests"] = { 35619 },	-- Pinchwhistle Gearworks (Alliance, two versions)
 					["coord"] = { 61.4, 72.8, 542 },
 					["qg"] = 81109,	-- Kimzee Pinchwhistle
 					["g"] = {
@@ -210,6 +223,20 @@ _.Zones =
 					["sourceQuests"] = { 35274 },	-- One of Our Own
 					["coord"] = { 45.9, 46.3, 542 },
 					["qg"] = 81891,	-- Jasper Fel
+				}),
+
+
+				qa(35329, {	-- I See Dead People (Alliance)
+					["sourceQuests"] = { 35293 },	-- Old Friends
+					["coord"] = { 39.1, 48.8, 542 },
+					["qg"] = 81960,	-- Jasper Fel
+				}),
+
+				
+				q(34827, {	-- Last of the Talonpriests
+					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
+					["coord"] = { 45.9, 45.7, 542 },
+					["qg"] = 80153,	-- Shadow-Sage Iskar
 				}),
 
 				
@@ -269,7 +296,18 @@ _.Zones =
 					["coord"] = { 39.5, 61.2, 542 },
 					["qg"] = 82709,	-- Milly Osworth
 				}),
-
+				
+				
+				qa(35619, {	-- Pinchwhistle Gearworks (Alliance)
+					["sourceQuests"] = { 35286 },	-- Orders, Commander?
+				--	had also turned in "return to veil terokk" and "peace offering," possible that one or both of those is also required
+				--	i didn't see this quest until i came back to check something else unrelated after turning in the two previously mentioned quests...
+				--	(but i am a confirmed space case so it's possible missed it initially!)
+					["isBreadcrumb"] = true,
+					["coord"] = { 39.7, 60.6, 542 },
+					["qg"] = 85550,	-- Watchman Kovak
+				}),
+				
 				
 				q(35611, {	-- Return to Veil Terokk
 					["sourceQuests"] = { 35286 },	-- Orders, Commander?
@@ -290,11 +328,25 @@ _.Zones =
 					["qg"] = 82621,	-- Reshad
 				}),
 				
+
+				q(34998, {	-- Talon Watch
+					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
+					["coord"] = { 45.9, 45.7, 542 },
+					["qg"] = 81770,	-- Reshad
+				}),
+
 				
 				q(34659, {	-- The Crone
 					["sourceQuests"] = { 34658 },	-- Orders From On High
 					["coord"] = { 45.4, 18.2, 542 },
 					["qg"] = 79519,	-- Reshad
+				}),
+
+
+				q(34884, {	-- The Kaliri Whisperer
+					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
+					["coord"] = { 45.9, 45.7, 542 },
+					["qg"] = 81770,	-- Reshad
 				}),
 
 				
@@ -312,6 +364,7 @@ _.Zones =
 				qa(37316, {	-- Trading Post (Smuggling Run)
 				--	triggers when creating  smuggling run.
 					["sourceQuests"] = { 35286 },	-- Orders, Commander?
+					["title"] = "Trading Post (Smuggling Run)",
 				}),
 
 				
@@ -357,7 +410,6 @@ _.Zones =
 				
 				
 --[[
-				q(37296),	-- A Lack of Wasps
 				qa(35339),	-- A Parting Favor
 				q(35245),	-- A Sentimental Relic
 				q(36059),	-- A Worthy Vessel
@@ -414,8 +466,7 @@ _.Zones =
 				qa(35549),	-- Honoring a Hero
 				qa(35782),	-- I See Dead Arakkoa
 				qh(35766),	-- I See Dead Arakkoa
-				qa(35329),	-- I See Dead People
-				q(35322),	-- I See Dead People
+				qh(35322),	-- I See Dead People (Horde — wowhead lists this as neutral, but the QG is a Horde NPC)
 				q(35290),	-- Inn
 				q(35283),	-- Inn
 				q(37315),	-- Inn
@@ -425,7 +476,6 @@ _.Zones =
 				q(36062),	-- Kimzee Pinchwhistle
 				q(35028),	-- Krikka and Vakora Tracking
 				q(35201),	-- Krixel
-				q(34827),	-- Last of the Talonpriests
 				q(35258),	-- Legacy of the Apexis
 				q(35013),	-- Lithic's Gift
 				q(36184),	-- Mother Lode
@@ -444,11 +494,15 @@ _.Zones =
 				qh(35277),	-- Orders, Commander? (Horde)
 				qh(35697),	-- Peace Offering (Horde)
 				q(36296),	-- Phylarch the Evergreen
-				qa(36861),	-- Pinchwhistle Gearworks
-				qa(35619),	-- Pinchwhistle Gearworks
-				qh(35620),	-- Pinchwhistle Gearworks
-				qh(36862),	-- Pinchwhistle Gearworks
-				q(35257),	-- Power Unearthed
+				qh(35620, {	-- Pinchwhistle Gearworks (Horde)
+					["isBreadcrumb"] = true,
+				}),
+				qh(36862, {	-- Pinchwhistle Gearworks (Horde)
+					["isBreadcrumb"] = true,
+				}),
+				q(35257, {	-- Power Unearthed
+			--	showed as available to pick up after turning in "return to veil terokk," but qg wasn't there.
+				}),
 				qa(35408),	-- Prime the Cannons
 				qa(35407),	-- Punishable by Death
 				q(34938),	-- Ralshiara's Demise
@@ -475,7 +529,6 @@ _.Zones =
 				qh(37097),	-- Talbuk Training: Bulbapore
 				qa(36975),	-- Talbuk Training: Bulbapore
 				q(37144),	-- Talon Guard Kurekk
-				q(34998),	-- Talon Watch
 				q(37141),	-- Talonpriest Ishaal
 				q(35895),	-- Terokk's Fall
 				qh(35797),	-- The Ebon Hunter
@@ -484,7 +537,6 @@ _.Zones =
 				q(35011),	-- The False Talon King
 				q(35010),	-- The High Ravenspeaker
 				q(36790),	-- The Initiate's Revenge
-				q(34884),	-- The Kaliri Whisperer
 				q(35897),	-- The Missing Piece
 				q(35080),	-- The Mother Lode
 				qa(35959),	-- The Power of Poison

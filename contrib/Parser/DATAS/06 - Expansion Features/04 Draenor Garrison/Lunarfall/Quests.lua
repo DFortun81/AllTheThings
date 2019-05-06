@@ -2273,6 +2273,13 @@ _.ExpansionFeatures =
 					["coord"] = { 44.0, 53.3, 582 },
 					["sourceQuests"] = { 34586 },	-- Establish Your Garrison
 				}),
+				qa(36861, {	-- Pinchwhistle Gearworks (Alliance)
+				--	unknown prerequisite(s) to get this version
+					["isBreadcrumb"] = true,
+					["coord"] = { 45.8, 46.0, 582 },
+					["lvl"] = 96,
+					["qg"] = 86589,	-- Watchman Tilnia
+				}),
 				qa(37433, {	-- Proving Grounds
 					["qg"] = 79953,	-- Lieutenant Thorn
 					["g"] = {

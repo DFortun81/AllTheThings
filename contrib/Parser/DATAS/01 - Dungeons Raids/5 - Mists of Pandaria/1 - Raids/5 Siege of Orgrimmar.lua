@@ -24,11 +24,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			570,
 		},
 		["coords"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar, Vale of Eternal Blossoms (door leading downstairs to entrance)
-		["groups"] = {
+		["g"] = {
 			n(-2, {	-- Vendors
-				n(5643, {
+				n(5643, {	-- Tyranis Malem
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(5643),	-- Recipe: Great Rage Potion
 						i(5640),	-- Recipe: Rage Potion
 					},
@@ -38,7 +38,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Raid Finder difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-				["groups"] = {
+				["g"] = {
 					cr(71543, e(852, {	-- Immerseus
 						un(2, i(104920)),	-- Bolt-Burster Grips LFR
 						un(2, i(104927)),	-- Bracers of Purified Spirit LFR
@@ -320,7 +320,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-				["groups"] = {
+				["g"] = {
 					n(0, {	-- Zone Drop
 						un(2, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 						un(2, i(105830)),	-- Brave Niunai's Cloak Normal
@@ -574,7 +574,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(104867)),	-- Lever of the Megantholithic Apparatus Normal
 						un(2, i(104871)),	-- Powder-Stained Totemic Treads Normal
 						un(2, i(104874)),	-- Siegecrafter's Forge Hammer Normal
-						un(2, i(112879)),	-- Ticking Ebon Detonator Normal
+						un(2, i(104865)),	-- Ticking Ebon Detonator Normal
 					}),
 					n(71161, {	-- Paragons of the Klaxxi (Kil'ruk the Wind Reaver)
 						un(2, i(104882)),	-- Amber Parasite Wraps Normal
@@ -618,7 +618,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-				["groups"] = {
+				["g"] = {
 					n(0, {	-- Zone Drop
 						un(2, i(103846)),	-- Aeth's Swiftcinder Cloak Heroic
 						un(2, i(103960)),	-- Brave Niunai's Cloak Heroic
@@ -1165,7 +1165,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
-				["groups"] = {
+				["g"] = {
 					n(0, {	-- Zone Drop
 						un(2, i(105852)),	-- Aeth's Swiftcinder Cloak Mythic
 						un(2, i(105844)),	-- Brave Niunai's Cloak Mythic
@@ -1711,7 +1711,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(17, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
-				["groups"] = {
+				["g"] = {
 					n(-1, {		-- Shared Boss Loot
 						un(2, i(104275, {	-- Twisted Treasures of the Vale
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
@@ -1725,7 +1725,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								71734,	-- Sha of Pride
 							},
 							]]--
-							["groups"] = {
+							["g"] = {
 								i(105824),	-- Aeth's Swiftcinder Cloak
 								i(105816),	-- Brave Niunai's Cloak
 								i(105812),	-- Cape of the Alpha
@@ -1800,7 +1800,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								71865,	-- Garrosh Hellscream
 							},
 							]]--
-							["groups"] = {
+							["g"] = {
 								
 								
 							},
@@ -1810,7 +1810,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(71543, e(852, {	-- Immerseus
 								{	-- Vale of Eternal Sorrows: Immerseus
 									["achievementID"] = 8458,	-- Vale of Eternal Sorrows
@@ -1845,7 +1845,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									71475,	-- Rook Stonetoe [The Fallen Protectors]
 									71480,	-- Sun Tenderheart [The Fallen Protectors]
 								},
-								["groups"] = {
+								["g"] = {
 									{	-- Vale of Eternal Sorrows: Fallen Protectors
 										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 										["criteriaID"] = 2,	-- Fallen Protectors
@@ -1878,7 +1878,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									71965,	-- Norushen
 									72276,	-- Amalgam of Corruption
 								},
-								["groups"] = {
+								["g"] = {
 									{	-- Vale of Eternal Sorrows: Norushen
 										["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 										["criteriaID"] = 3,	-- Norushen
@@ -1960,7 +1960,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(72249, e(881, {	-- Galakras
 								{	-- Gates of Retribution: Galakras
 									["achievementID"] = 8459,	-- Gates of Retribution
@@ -2096,7 +2096,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(71454, e(846, {	-- Malkorok
 								{	-- The Underhold: Malkorok
 									["achievementID"] = 8461,	-- The Underhold
@@ -2204,7 +2204,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(71504, e(865, {	-- Siegecrafter Blackfuse
 								{	-- Downfall: Siegecrafter Blackfuse
 									["achievementID"] = 8462,	-- Downfall
@@ -3001,7 +3001,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Go Long
 							["achievementID"] = 8528,	-- Go Long
 						},
@@ -3036,7 +3036,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					["crs"] = {
 						71965,	-- Norushen
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- None Shall Pass
 							["achievementID"] = 8532,	-- None Shall Pass
 						},
@@ -3185,7 +3185,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71859,	-- Earthbreaker Haromm
 						71858,	-- Wavebinder Kardris
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Gates of Retribution: Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
 							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
@@ -4205,7 +4205,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Go Long
 							["achievementID"] = 8528,	-- Go Long
 						},
@@ -4240,7 +4240,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					["crs"] = {
 						71965,	-- Norushen
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- None Shall Pass
 							["achievementID"] = 8532,	-- None Shall Pass
 						},
@@ -4389,7 +4389,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71859,	-- Earthbreaker Haromm
 						71858,	-- Wavebinder Kardris
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Gates of Retribution: Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
 							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
@@ -5435,7 +5435,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Go Long
 							["achievementID"] = 8528,	-- Go Long
 						},
@@ -5473,7 +5473,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					["crs"] = {
 						71965,	-- Norushen
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Mythic: Norushen
 							["achievementID"] = 8466,	-- Mythic: Norushen
 						},
@@ -5634,7 +5634,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						71859,	-- Earthbreaker Haromm
 						71858,	-- Wavebinder Kardris
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Gates of Retribution: Kor'kron Dark Shaman
 							["achievementID"] = 8459,	-- Gates of Retribution
 							["criteriaID"] = 3,	-- Kor'kron Dark Shaman
