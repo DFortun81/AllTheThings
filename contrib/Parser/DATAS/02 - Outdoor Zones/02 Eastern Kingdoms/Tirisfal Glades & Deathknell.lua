@@ -5,10 +5,18 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
-			["groups"] = {
+			["achievementID"] = 768,
+			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",
+			["maps"] = {
+				20,		-- Keeper's Rest (part of Priest artifact questline)
+				466,	-- Night Web's Hollow
+				908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario)
+			},
+			["lvl"] = 1,
+			["g"] = {
 				n(-10067, {	-- Artifacts
 					["lvl"] = 98,
-					["groups"] = {
+					["g"] = {
 						nh(11608, {	-- Bardu Sharpeye
 							["description"] = "After talking to Prince Tortheldrin, you can talk to him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["classes"] = { 2 },	-- Paladin only
@@ -31,7 +39,7 @@ _.Zones =
 					p(417),		-- Bat
 					p(646),		-- Chicken
 					q(3861, { 	-- CLUCK!
-						["groups"] = {
+						["g"] = {
 							i(11110) -- Chicken Egg
 						},
 						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
@@ -40,7 +48,7 @@ _.Zones =
 					p(458),		-- Lost of Lordaeron
 					p(417),		-- Rat
 					n(63073, { 	-- Ansel Fincap
-						["groups"] = {
+						["g"] = {
 							p(75, {		-- Black Kingsnake
 								["races"] = {8,2}	-- Troll, Orc
 							}),
@@ -73,7 +81,7 @@ _.Zones =
 						["sourceQuests"] = { 26931 },	-- Foxes and Hounds
 					}),
 					qh(26931, {	-- Foxes and Hounds -- anytime
-						["groups"] = {
+						["g"] = {
 							i(62161),	-- Bullmastiff Vest
 							i(62163),	-- Fox Hunter's Rifle
 							i(62162),	-- Territorial Helm
@@ -105,7 +113,7 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 					}),
 					qh(26978, {	-- Who Needs Cauldrons?
-						["groups"] = {
+						["g"] = {
 							i(62171),	-- Cloak of the Salted Earth
 							i(62169),	-- Dithering Belt
 							i(62170),	-- Plague Cauldron Lid
@@ -114,7 +122,7 @@ _.Zones =
 						["sourceQuests"] = { 26934 },	-- Latent Disease
 					}),
 					qh(25046, {	-- A Daughter's Embrace
-						["groups"] = {
+						["g"] = {
 							i(57169),	-- Darrington's Dirk
 							i(57170),	-- Lilian's Staff
 							i(57171)	-- Executor's Breastplate
@@ -134,7 +142,7 @@ _.Zones =
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 					})),
 					qh(25013, {	-- A Little Oomph
-						["groups"] = {
+						["g"] = {
 							i(57167),	-- Night Web Gloves
 							i(57166),	-- Advanced Night Web Crossbow
 							i(57168),	-- Reaper's Buckler
@@ -172,7 +180,7 @@ _.Zones =
 						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
 					qh(25029, {	-- Deaths in the Family
-						["groups"] = {
+						["g"] = {
 							i(3446),	-- Darkwood Staff
 							i(3440),	-- Bonecracker
 						},
@@ -402,7 +410,7 @@ _.Zones =
 						un(7, i(4303)),	-- Cranial Thumper							
 					}), 
 					o(240624, {	-- Faerie Dragon Nest
-						["groups"] = {
+						["g"] = {
 							i(122234)	-- Music Roll: Faerie Dragon
 						},
 						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
@@ -557,7 +565,7 @@ _.Zones =
 					})
 				}),
 				m(19, {	-- Scarlet Monastery Entrace
-					["groups"] = {
+					["g"] = {
 						i(7753),	-- Bloodspiller
 						i(7729),	-- Chesterfall Musket
 						i(13049),	-- Deanship Claymore
@@ -593,17 +601,17 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
 				}),
 				n(-40, {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests (Legacy)
 							un(40, qh(5650, {	-- Garments of Darkness
-								["groups"] = {
+								["g"] = {
 									un(2, i(16607)),	-- Garments of Darkness
 								},
 								["races"] =  { 5 },	-- Undead
 								["classes"] = { 5 },	-- Priest
 							})),
 							un(40, qh(1822, {	-- Heirloom Weapon
-								["groups"] = {
+								["g"] = {
 									un(2, i(7115)),	-- Heirloom Axe
 									un(2, i(7117)),	-- Heirloom Hammer
 									un(2, i(7116)),	-- Heirloom Dagger
@@ -627,7 +635,7 @@ _.Zones =
 					},
 				}),
 				m(465, {	-- Deathknell
-					["groups"] = {
+					["g"] = {
 						n(-25, {	-- Pet Battle
 							p(417),	-- Rat
 							p(458),	-- Lost of Lordaeron
@@ -729,7 +737,7 @@ _.Zones =
 							n(1688),	-- Night Web Matriarch
 						}),
 						n(-40, {	-- Legacy
-							["groups"] = {
+							["g"] = {
 								n(-17, {	-- Quests
 									un(40, q(3096, {	-- Encrypted Scroll
 										["qg"] = 1569,	-- Shadow Priest Sarvis
@@ -737,7 +745,7 @@ _.Zones =
 										["classes"] = { 4 },	-- rogue
 									})),
 									un(40, q(5650, {	-- Garments of Darkness
-										["groups"] = {
+										["g"] = {
 											un(2, i(16607)),	-- Garments of Darkness
 										},
 										["races"] =  { 5 },	-- Undead
@@ -759,7 +767,7 @@ _.Zones =
 										},
 									})),
 									un(40, qh(1822, {	-- Heirloom Weapon
-										["groups"] = {
+										["g"] = {
 											un(2, i(7115)),	-- Heirloom Axe
 											un(2, i(7117)),	-- Heirloom Hammer
 											un(2, i(7116)),	-- Heirloom Dagger
@@ -789,14 +797,7 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",	
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
-			},
-			["lvl"] = 1,
-			["maps"] = {
-				20,		-- Keeper's Rest (part of Priest artifact questline)
-				908,	-- Ruins of Lordaeron (Battle for Lordaeron scenario)
-			},
-			["achievementID"] = 768,
-			["description"] = "|cff66ccffTirisfal Glades is the grim starting zone for the Forsaken. It is recovering from the plague of the Lich King, as new undead are forcibly brainwashed into the new Forsaken regime.|r",				
+			},				
 		}),
 	}),
 };
