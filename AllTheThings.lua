@@ -1192,6 +1192,16 @@ local function CreateObject(t)
 		
 		local meta = getmetatable(t);
 		if meta then
+			if t.key == "npcID" then
+				if t.itemID then
+					if t.isToy then
+						t = app.CreateToy(t.itemID, t);
+					else
+						t = app.CreateItem(t.itemID, t);
+					end
+					return t;
+				end
+			end
 			setmetatable(s, meta);
 			return s;
 		else
@@ -11717,11 +11727,12 @@ app.events.ADDON_LOADED = function(addonName)
 			
 			-- Display Test for Raw Data + Filtering
 			local window = app:GetWindow("AuctionData");
-			window.data = { ["text"] = "Auction Data", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
+			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
 			for key, value in pairs(searchResultsByKey) do
 				local count = 0;
 				local subdata = {};
 				subdata.description = "Container for '" .. key .. "' object types.";
+				subdata.visible = true;
 				subdata.text = key;
 				local g = {};
 				subdata.g = g;
