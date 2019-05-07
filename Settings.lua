@@ -123,6 +123,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["LiveScan"] = false,
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,

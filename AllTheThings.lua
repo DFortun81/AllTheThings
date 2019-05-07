@@ -11627,11 +11627,12 @@ app.events.ADDON_LOADED = function(addonName)
 		f:Show();
 		frame.moduletitle = f;
 		
+		-- Settings Button
 		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
-		f:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 160, 2);
+		f:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 160, 0);
 		f:SetText("Settings");
 		f:SetWidth(120);
-		f:SetHeight(24);
+		f:SetHeight(22);
 		f:RegisterForClicks("AnyUp");
 		f:SetScript("OnClick", function() 
 			-- Open the Settings Menu
@@ -11642,9 +11643,35 @@ app.events.ADDON_LOADED = function(addonName)
 				InterfaceOptionsFrame_OpenToCategory(app:GetName());
 			end
 		end);
-		f:SetATTTooltip("Click this button to toggle the settings menu.");
+		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
 		frame.settingsButton = f;
 		
+		-- Function to Update the State of the Scan button.
+		local UpdateScanButtonState = function()
+			repeat
+				local CanQuery, CanQueryAll = CanSendAuctionQuery();
+				print("UpdateScanButtonState: CanQuery", CanQuery, "CanQueryAll", CanQueryAll);
+				if app.Settings:GetTooltipSetting("LiveScan") then
+					if CanQuery then
+						frame.scanButton:Enable();
+						return true;
+					else
+						frame.scanButton:Disable();
+						for i=0,60,1 do coroutine.yield(); end
+					end
+				else
+					if CanQueryAll then
+						frame.scanButton:Enable();
+						return true;
+					else
+						frame.scanButton:Disable();
+						for i=0,60,1 do coroutine.yield(); end
+					end
+				end
+			until not frame:IsVisible();
+		end
+		
+		-- Scan Button
 		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
 		f:SetPoint("TOPLEFT", frame.settingsButton, "TOPRIGHT", 2, 0);
 		f:SetPoint("BOTTOMLEFT", frame.settingsButton, "BOTTOMRIGHT", 2, 0);
@@ -11652,26 +11679,84 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetWidth(120);
 		f:RegisterForClicks("AnyUp");
 		f:SetScript("OnClick", function()
+			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 			local CanQuery, CanQueryAll = CanSendAuctionQuery();
-			print("CanQuery:", CanQuery, "CanQueryAll:", CanQueryAll);
-			if CanQuery then
+			if app.Settings:GetTooltipSetting("LiveScan") then
+				if CanQuery then
+					-- Disable the button and register for the event.
+					frame.scanButton:Disable();
+					frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
+					frame.descriptionLabel:SetText("Live Scan request sent.\n\nPlease wait while we wait for the server to respond.");
+					frame.descriptionLabel:Show();
+					print("TODO: Do Live Scan");
+				else
+					return false;
+				end
+			elseif CanQueryAll then
+				-- Disable the button and register for the event.
 				frame.scanButton:Disable();
 				frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
-				-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
-				if CanQueryAll then
-					QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
-				else
-					
-				end
+				frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
+				frame.descriptionLabel:Show();
+				QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
 			else
-				
+				return false;
 			end
+			
+			-- Update the Scan Button State
+			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
 		end);
-		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live\" checked, this will do a scan through common collectible categories using Live data rather than a full scan.\n\nA Full Scan may take longer, but usually provides a broader amount of Things than a Live Scan would.");
+		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live Scan\" checked, this will do a scan through common collectible categories using Live data rather than a full scan.\n\nA Full Scan may take longer, but usually provides a broader amount of Things faster than a Live Scan would.\n\nFull Scans have an internal 15 minute cooldown.");
 		frame.scanButton = f;
+		f = frame.scanButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPRIGHT", frame.scanButton, "TOPLEFT", 6, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		f = frame.scanButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPLEFT", frame.scanButton, "TOPRIGHT", -6, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		
+		local cb = CreateFrame("CheckButton", nil, frame, "InterfaceOptionsCheckButtonTemplate");
+		cb:SetPoint("LEFT", frame.scanButton, "RIGHT", 2, 0);
+		cb:SetChecked(app.Settings:GetTooltipSetting("LiveScan"));
+		cb:SetScript("OnClick", function(self)
+			app.Settings:SetTooltipSetting("LiveScan", self:GetChecked());
+			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
+		end);
+		cb.Text:SetText("Live Scan");
+		frame.liveScan = f;
+		
+		-- Close Button
+		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
+		f:SetPoint("TOPRIGHT", frame, "BOTTOMRIGHT", 0, 0);
+		f:SetText("Close");
+		f:SetWidth(80);
+		f:SetHeight(22);
+		f:RegisterForClicks("AnyUp");
+		f:SetScript("OnClick", CloseAuctionHouse);
+		frame.closeButton = f;
+		f = frame.closeButton:CreateTexture(nil, "BORDER");
+		f:SetPoint("TOPRIGHT", frame.closeButton, "TOPLEFT", 5, 1);
+		f:SetTexture("Interface\\FrameGeneral\\UI-Frame");
+		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
+		f:SetSize(13, 25);
+		f:Show();
+		
+		f = frame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		f:SetPoint("CENTER", frame, "CENTER", 0, 0);
+		f:SetText("No Auction Data.\n\nPress 'Scan' to ask the server for information.");
+		f:SetTextColor(1, 1, 1, 1);
+		f:SetJustifyH("CENTER");
+		f:Show();
+		frame.descriptionLabel = f;
 		
 		-- Register for Events [Only when requests sent by ATT]
-		local _GetAuctionItemInfo = GetAuctionItemInfo;
+		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
 		frame:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			local numItems = GetNumAuctionItems("list");
@@ -11681,6 +11766,8 @@ app.events.ADDON_LOADED = function(addonName)
 				self:UnregisterEvent("AUCTION_ITEM_LIST_UPDATE");
 				app.CurrentAuctionTotal = numItems;
 				app.CurrentAuctionIndex = 0;
+				frame.descriptionLabel:SetText("Scan data received. Found " .. numItems .. " auctions.\n\nPlease wait while we determine how useful they all are.");
+				frame.descriptionLabel:Show();
 				StartCoroutine("ProcessAuctions", function()
 					-- Gather the Auctions
 					local auctions = {};
@@ -11690,21 +11777,30 @@ app.events.ADDON_LOADED = function(addonName)
 						local iter = 0;
 						repeat
 							-- Process the Auction
+							--[[
 							local name, texture, count, quality, canUse, level, levelColHeader, minBid,
 								minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
 								ownerFullName, saleStatus, itemId, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
 							if itemId and itemId > 0 and saleStatus == 0 then
 								local data = {};
-								data.index = app.CurrentAuctionIndex;
 								data.itemID = itemId;
 								data.bidAmount = minBid;
 								data.buyoutPrice = buyoutPrice;
 								table.insert(auctions, data);
 							end
+							]]--
+							local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
+							if link then
+								table.insert(auctions, link);
+							else
+								numItems = GetNumAuctionItems("list");
+								app.CurrentAuctionTotal = numItems;
+								app.CurrentAuctionIndex = app.CurrentAuctionIndex - 1;
+							end
 							
 							-- Increment the index and check the iteration variable.
 							iter = iter + 1;
-							if iter >= 100 then
+							if iter >= 1000 then
 								coroutine.yield();
 								iter = 0;
 							end
@@ -11714,7 +11810,8 @@ app.events.ADDON_LOADED = function(addonName)
 						return false;
 					end
 					
-					-- Sort the auctions by bid amount first, then by buyout price;
+					-- Sort the auctions by bid amount first, then by buyout price
+					--[[
 					table.sort(auctions, function(a, b)
 						if a.buyoutPrice then
 							if b.buyoutPrice then
@@ -11738,10 +11835,13 @@ app.events.ADDON_LOADED = function(addonName)
 							return true;
 						end
 					end);
+					]]--
 					
 					-- Process the items
 					app.CurrentAuctionIndex = 0;
 					app.CurrentAuctionTotal = 0;
+					
+					--[[
 					for i,data in ipairs(auctions) do
 						-- If no Auction Data has been gathered for this Item ID yet, then create a table.
 						local auctionsForItemID = auctionsPerItemID[data.itemID];
@@ -11749,10 +11849,15 @@ app.events.ADDON_LOADED = function(addonName)
 							auctionsForItemID = {};
 							auctionsPerItemID[data.itemID] = auctionsForItemID;
 						end
+						data.itemID = nil;
 						table.insert(auctionsForItemID, data);
 					end
 					
+					AllTheThingsAuctionData = {};
 					for itemID,auctionsForItemID in pairs(auctionsPerItemID) do
+						local data = {};
+						data.o = auctionsForItemID;
+						
 						-- Do something with that data.
 						local count = #auctionsForItemID;
 						local cheapest = auctionsForItemID[1];
@@ -11760,6 +11865,11 @@ app.events.ADDON_LOADED = function(addonName)
 						print("AUCTION DATA", "Item ID", itemID, "found in", count, "Auctions,", 
 							cheapest.buyoutPrice or 0, " - ", priciest.buyoutPrice or cheapest.buyoutPrice or 0, "OBO",
 							cheapest.bidAmount or 0, " - ", priciest.bidAmount or cheapest.bidAmount or 0, "BID");
+					end
+					]]--
+					
+					for i,data in ipairs(auctions) do
+						print("AUCTION DATA", i, data);
 					end
 				end);
 			end
@@ -11774,30 +11884,8 @@ app.events.ADDON_LOADED = function(addonName)
 				AuctionFrameBotLeft:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotLeft");
 				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Bot");
 				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight");
+				StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
 				
-				-- Check to see if we can query the Auction House at all.
-				local CanQuery, CanQueryAll = CanSendAuctionQuery();
-				if CanQuery then
-					frame.scanButton:Enable();
-				else
-					frame.scanButton:Disable();
-				end
-				
-				--[[
-				local CanQuery, CanQueryAll = CanSendAuctionQuery()
-				QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
-				QueryAuctionItems("", nil, nil, 0, nil, 0, true, nil, nil);
-
-				AUCTION_ITEM_LIST_UPDATE
-				GetNumAuctionItems("list");
-
-				auctionInfo.ownerFullName   = GetAuctionItemInfo("list", x);
-				auctionInfo.itemLink      = GetAuctionItemLink("list", x);
-
-				local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-					minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-					ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("list", index)
-				]]--
 				frame:Show();
 			else
 				frame:Hide();
