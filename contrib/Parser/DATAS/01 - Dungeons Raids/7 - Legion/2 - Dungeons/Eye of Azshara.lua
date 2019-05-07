@@ -23,16 +23,16 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			n(-17,    {	-- Quests
-				o(106780, {	-- Tidestone of Golganneth
-					q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-						["sourceQuests"] = { 38286 },	-- Eye of Azshara: Wrath of Azshara
-						["g"] = {
-							i(140622),	-- Hardshell Greatbelt
-							i(140623),	-- Brightscale Waistguard
-							i(140624),	-- Bitterbrine Binding
-							i(140625),	-- Waistband of the Hatecoil Oracles
-						},
-					}),
+				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
+					["qg"] = 106780,	-- Tidestone of Golganneth
+					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
+					["modelScale"] = 3,
+					["g"] = {
+						i(140622),	-- Hardshell Greatbelt
+						i(140623),	-- Brightscale Waistguard
+						i(140624),	-- Bitterbrine Binding
+						i(140625),	-- Waistband of the Hatecoil Oracles
+					},
 				}),
 			}),	
 			d(1, {	-- Normal
