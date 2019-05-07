@@ -11587,6 +11587,9 @@ app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then
 		app:UnregisterEvent("ADDON_LOADED");
 		
+		-- Cache some functions to make them faster
+		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
+		
 		-- Create the Auction Tab for ATT.
 		local n = AuctionFrame.numTabs + 1;
 		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
@@ -11646,7 +11649,7 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
 		frame.settingsButton = f;
 		
-		-- Function to Update the State of the Scan button.
+		-- Function to Update the State of the Scan button. (Coroutines, do not call manually.)
 		local UpdateScanButtonState = function()
 			repeat
 				local CanQuery, CanQueryAll = CanSendAuctionQuery();
@@ -11669,6 +11672,112 @@ app.events.ADDON_LOADED = function(addonName)
 					end
 				end
 			until not frame:IsVisible();
+		end
+		local ProcessAuctionData = function()
+			-- If we have no auction data, then simply return now.
+			if not AllTheThingsAuctionData then return false; end
+			local count = #AllTheThingsAuctionData;
+			if count < 1 then return false; end
+			
+			-- Wait a second!
+			for i=0,60,1 do coroutine.yield(); end
+			
+			for i,data in ipairs(AllTheThingsAuctionData) do
+				print("AUCTION DATA", i, data);
+			end
+		end
+		local ProcessAuctions = function()
+			-- Gather the Auctions
+			AllTheThingsAuctionData = {};
+			app.CurrentAuctionIndex = 1;
+			if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
+				local iter = 0;
+				repeat
+					-- Process the Auction
+					local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
+					if link then table.insert(AllTheThingsAuctionData, link); end
+					
+					-- Increment the index and check the iteration variable.
+					iter = iter + 1;
+					if iter >= 10000 then
+						coroutine.yield();
+						iter = 0;
+					end
+					app.CurrentAuctionIndex = app.CurrentAuctionIndex + 1;
+				until app.CurrentAuctionIndex > app.CurrentAuctionTotal;
+			else
+				return false;
+			end
+			
+			-- Process the items
+			app.CurrentAuctionIndex = 0;
+			app.CurrentAuctionTotal = 0;
+			print("Found ", #AllTheThingsAuctionData, "Auctions Item Links");
+			StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+			
+			--[[
+			local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+				minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+				ownerFullName, saleStatus, itemId, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
+			if itemId and itemId > 0 and saleStatus == 0 then
+				local data = {};
+				data.itemID = itemId;
+				data.bidAmount = minBid;
+				data.buyoutPrice = buyoutPrice;
+				table.insert(auctions, data);
+			end
+			
+			-- Sort the auctions by bid amount first, then by buyout price
+			table.sort(auctions, function(a, b)
+				if a.buyoutPrice then
+					if b.buyoutPrice then
+						return a.buyoutPrice > b.buyoutPrice;
+					else
+						return false;
+					end
+				else
+					if b.buyoutPrice then
+						return true;
+					end
+				end
+				
+				if a.bidAmount then
+					if b.bidAmount then
+						return a.bidAmount > b.bidAmount;
+					else
+						return true;
+					end
+				elseif b.bidAmount then
+					return true;
+				end
+			end);
+			
+			local auctionsPerItemID = {};
+			for i,data in ipairs(auctions) do
+				-- If no Auction Data has been gathered for this Item ID yet, then create a table.
+				local auctionsForItemID = auctionsPerItemID[data.itemID];
+				if not auctionsForItemID then
+					auctionsForItemID = {};
+					auctionsPerItemID[data.itemID] = auctionsForItemID;
+				end
+				data.itemID = nil;
+				table.insert(auctionsForItemID, data);
+			end
+			
+			AllTheThingsAuctionData = {};
+			for itemID,auctionsForItemID in pairs(auctionsPerItemID) do
+				local data = {};
+				data.o = auctionsForItemID;
+				
+				-- Do something with that data.
+				local count = #auctionsForItemID;
+				local cheapest = auctionsForItemID[1];
+				local priciest = auctionsForItemID[count];
+				print("AUCTION DATA", "Item ID", itemID, "found in", count, "Auctions,", 
+					cheapest.buyoutPrice or 0, " - ", priciest.buyoutPrice or cheapest.buyoutPrice or 0, "OBO",
+					cheapest.bidAmount or 0, " - ", priciest.bidAmount or cheapest.bidAmount or 0, "BID");
+			end
+			]]--
 		end
 		
 		-- Scan Button
@@ -11706,7 +11815,7 @@ app.events.ADDON_LOADED = function(addonName)
 			-- Update the Scan Button State
 			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
 		end);
-		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live Scan\" checked, this will do a scan through common collectible categories using Live data rather than a full scan.\n\nA Full Scan may take longer, but usually provides a broader amount of Things faster than a Live Scan would.\n\nFull Scans have an internal 15 minute cooldown.");
+		f:SetATTTooltip("Click this button to scan the auction house for collectible Things.\n\nIf you have \"Live Scan\" checked, this will do a scan through common collectible categories using Live data rather than a more efficient Full Scan.\n\nFull Scans have an internal 15 minute cooldown if you invalidate the cache by reloading your UI.");
 		frame.scanButton = f;
 		f = frame.scanButton:CreateTexture(nil, "BORDER");
 		f:SetPoint("TOPRIGHT", frame.scanButton, "TOPLEFT", 6, 1);
@@ -11754,9 +11863,9 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetJustifyH("CENTER");
 		f:Show();
 		frame.descriptionLabel = f;
+		StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 		
 		-- Register for Events [Only when requests sent by ATT]
-		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
 		frame:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			local numItems = GetNumAuctionItems("list");
@@ -11768,110 +11877,7 @@ app.events.ADDON_LOADED = function(addonName)
 				app.CurrentAuctionIndex = 0;
 				frame.descriptionLabel:SetText("Scan data received. Found " .. numItems .. " auctions.\n\nPlease wait while we determine how useful they all are.");
 				frame.descriptionLabel:Show();
-				StartCoroutine("ProcessAuctions", function()
-					-- Gather the Auctions
-					local auctions = {};
-					local auctionsPerItemID = {};
-					app.CurrentAuctionIndex = 1;
-					if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
-						local iter = 0;
-						repeat
-							-- Process the Auction
-							--[[
-							local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-								minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-								ownerFullName, saleStatus, itemId, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
-							if itemId and itemId > 0 and saleStatus == 0 then
-								local data = {};
-								data.itemID = itemId;
-								data.bidAmount = minBid;
-								data.buyoutPrice = buyoutPrice;
-								table.insert(auctions, data);
-							end
-							]]--
-							local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
-							if link then
-								table.insert(auctions, link);
-							else
-								numItems = GetNumAuctionItems("list");
-								app.CurrentAuctionTotal = numItems;
-								app.CurrentAuctionIndex = app.CurrentAuctionIndex - 1;
-							end
-							
-							-- Increment the index and check the iteration variable.
-							iter = iter + 1;
-							if iter >= 1000 then
-								coroutine.yield();
-								iter = 0;
-							end
-							app.CurrentAuctionIndex = app.CurrentAuctionIndex + 1;
-						until app.CurrentAuctionIndex > app.CurrentAuctionTotal;
-					else
-						return false;
-					end
-					
-					-- Sort the auctions by bid amount first, then by buyout price
-					--[[
-					table.sort(auctions, function(a, b)
-						if a.buyoutPrice then
-							if b.buyoutPrice then
-								return a.buyoutPrice > b.buyoutPrice;
-							else
-								return false;
-							end
-						else
-							if b.buyoutPrice then
-								return true;
-							end
-						end
-						
-						if a.bidAmount then
-							if b.bidAmount then
-								return a.bidAmount > b.bidAmount;
-							else
-								return true;
-							end
-						elseif b.bidAmount then
-							return true;
-						end
-					end);
-					]]--
-					
-					-- Process the items
-					app.CurrentAuctionIndex = 0;
-					app.CurrentAuctionTotal = 0;
-					
-					--[[
-					for i,data in ipairs(auctions) do
-						-- If no Auction Data has been gathered for this Item ID yet, then create a table.
-						local auctionsForItemID = auctionsPerItemID[data.itemID];
-						if not auctionsForItemID then
-							auctionsForItemID = {};
-							auctionsPerItemID[data.itemID] = auctionsForItemID;
-						end
-						data.itemID = nil;
-						table.insert(auctionsForItemID, data);
-					end
-					
-					AllTheThingsAuctionData = {};
-					for itemID,auctionsForItemID in pairs(auctionsPerItemID) do
-						local data = {};
-						data.o = auctionsForItemID;
-						
-						-- Do something with that data.
-						local count = #auctionsForItemID;
-						local cheapest = auctionsForItemID[1];
-						local priciest = auctionsForItemID[count];
-						print("AUCTION DATA", "Item ID", itemID, "found in", count, "Auctions,", 
-							cheapest.buyoutPrice or 0, " - ", priciest.buyoutPrice or cheapest.buyoutPrice or 0, "OBO",
-							cheapest.bidAmount or 0, " - ", priciest.bidAmount or cheapest.bidAmount or 0, "BID");
-					end
-					]]--
-					
-					for i,data in ipairs(auctions) do
-						print("AUCTION DATA", i, data);
-					end
-				end);
+				StartCoroutine("ProcessAuctions", ProcessAuctions);
 			end
 		end);
 		hooksecurefunc("AuctionFrameTab_OnClick", function(self)
