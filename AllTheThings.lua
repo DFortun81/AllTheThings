@@ -11653,7 +11653,7 @@ app.events.ADDON_LOADED = function(addonName)
 		local UpdateScanButtonState = function()
 			repeat
 				local CanQuery, CanQueryAll = CanSendAuctionQuery();
-				print("UpdateScanButtonState: CanQuery", CanQuery, "CanQueryAll", CanQueryAll);
+				-- print("UpdateScanButtonState: CanQuery", CanQuery, "CanQueryAll", CanQueryAll);
 				if app.Settings:GetTooltipSetting("LiveScan") then
 					if CanQuery then
 						frame.scanButton:Enable();
@@ -11682,9 +11682,60 @@ app.events.ADDON_LOADED = function(addonName)
 			-- Wait a second!
 			for i=0,60,1 do coroutine.yield(); end
 			
-			for i,data in ipairs(AllTheThingsAuctionData) do
-				print("AUCTION DATA", i, data);
+			-- Search the ATT Database for information related to the auction links (items, species, etc)
+			local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
+			for i,itemLink in ipairs(AllTheThingsAuctionData) do
+				searchResults = SearchForLink(itemLink);
+				if searchResults and #searchResults > 0 then
+					searchResult = searchResults[1];
+					key = searchResult.key;
+					value = searchResult[key];
+					keys = searchResultsByKey[key];
+					
+					-- Make sure that the key type is represented.
+					if not keys then
+						keys = {};
+						searchResultsByKey[key] = keys;
+					end
+					
+					-- First time this key value was used.
+					data = keys[value];
+					if not data then
+						data = CreateObject(searchResult);
+						for i=2,#searchResults,1 do
+							MergeObject(data, CreateObject(searchResults[i]));
+						end
+						--data.searchResults = searchResults;
+						data.auctions = {};
+						keys[value] = data;
+					end
+					table.insert(data.auctions, itemLink);
+					
+					--print("AUCTION DATA", i, itemLink, #searchResults);
+				end
 			end
+			
+			-- Display Test for Raw Data + Filtering
+			local window = app:GetWindow("AuctionData");
+			window.data = { ["text"] = "Auction Data", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
+			for key, value in pairs(searchResultsByKey) do
+				local count = 0;
+				local subdata = {};
+				subdata.description = "Container for '" .. key .. "' object types.";
+				subdata.text = key;
+				local g = {};
+				subdata.g = g;
+				for i,j in pairs(value) do
+					count = count + 1;
+					table.insert(g, j);
+				end
+				print("AUCTION DATA BY KEY", key, count);
+				table.insert(window.data.g, subdata);
+			end
+			BuildGroups(window.data, window.data.g);
+			UpdateGroups(window.data, window.data.g);
+			window:Show();
+			window:Update();
 		end
 		local ProcessAuctions = function()
 			-- Gather the Auctions
@@ -11788,6 +11839,14 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetWidth(120);
 		f:RegisterForClicks("AnyUp");
 		f:SetScript("OnClick", function()
+			-- Make sure that we're sorting the list correctly.
+			SortAuctionClearSort("list");
+			SortAuctionItems("list", "bid");
+			if IsAuctionSortReversed("list", "bid") then
+				SortAuctionItems("list", "bid");
+			end
+			SortAuctionApplySort("list");
+		
 			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 			local CanQuery, CanQueryAll = CanSendAuctionQuery();
 			if app.Settings:GetTooltipSetting("LiveScan") then
