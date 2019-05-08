@@ -195,14 +195,26 @@ _.Zones =
 						["qg"] = 50631,	-- Prospector Drugan
 						["coord"] = { 76.1, 53.0, 27 },
 					}),
-					qg(1265, qa(  314, {	-- Protecting the Herd
-						--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
-						--Might be racial locked and not unobtainable
-						i(3103),	-- Coldridge Hammer
-						i(2817),	-- Soft Leather Tunic
-						i(10549),	-- Rancher's Trousers
-					})),
-
+					{	-- Protecting the Herd
+						["questID"] = 314,	-- Protecting the Herd
+						["qg"] = 1265,		-- Rudra Amberstill
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
+							--Might be racial locked and not unobtainable
+							{	-- Coldridge Hammer
+								["itemID"] = 3103,	-- Coldridge Hammer
+							},
+							{	-- Rancher's Trousers
+								["itemID"] = 10549,			-- Rancher's Trousers
+								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+							},
+							{	-- Soft Leather Tunic
+								["itemID"] = 2817,	-- Soft Leather Tunic
+								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+							},
+						},
+					},
 --					qg(40950, qa(25792)),	-- Pushing Forward
 					qa(26085, {	-- Rallying the Defenders
 						["qg"] = 41853,	-- Commander Stonebreaker
