@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				{	-- Pet Battle
 					["npcID"] = -25,	-- Pet Battle
+					["f"] = 101,		-- Battle Pets
 					["g"] = {
 						{	-- Qiraji Guardling
 							["speciesID"] = 513,	-- Qiraji Guardling

@@ -8,6 +8,7 @@ _.Zones =
 			["groups"] = {
 				{	-- Pet Battle
 					["npcID"] = -25,	-- Pet Battle
+					["f"] = 101,		-- Battle Pets
 					["g"] = {
 						{	-- Dung Beetle
 							["speciesID"] = 467,	-- Dung Beetle
