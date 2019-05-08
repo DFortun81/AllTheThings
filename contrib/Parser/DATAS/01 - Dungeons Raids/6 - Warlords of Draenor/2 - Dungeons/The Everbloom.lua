@@ -22,11 +22,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			d(1, {	-- Normal
-				n(-17, {	-- Quests 			
+				n(-17, {	-- Quests
 					q(37150, {
 						i(118921),	-- Everbloom Peachick (PET!)
 					}),
-				}),	
+				}),
 				cr(81522, e(1214, {	-- Witherbark
 					i(119175),	-- Leafhide Penetrator
 					i(109912),	-- Bloody-Blade Drape
@@ -277,11 +277,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests 		
+				n(-17, {	-- Quests
 					q(37165, {
 						i(118935),	-- Ever-Blooming Frond
-					}),	
-				}),	
+					}),
+				}),
 				cr(81522, e(1214, {	-- Witherbark
 					{	-- Water Management
 						["achievementID"] = 9017,	-- Water Management

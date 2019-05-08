@@ -10,7 +10,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(2, {		-- Heroic
 				["lvl"] = 90,
 				["groups"] = {
-					n(-17, {	-- Quests 					
+					n(-17, {	-- Quests
 						qg(64764, q(31497, {	-- Just for Safekeeping, Of Course
 							i(87370),	-- Waistguard of the Phalanx
 							i(87371),	-- Scarlet Champion's Belt

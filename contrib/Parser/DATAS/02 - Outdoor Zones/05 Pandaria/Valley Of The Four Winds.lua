@@ -328,7 +328,7 @@ _.Zones =
 								["qg"] = 70398,	-- Ben of the Booming Voice (58.9,46.9)
 							}),
 						},
-					}),					
+					}),
 --[[				Achievement info for Loremaster related zone quests
 					ach(6301, {		-- Rally the Valley
 						crit(1),		-- Thunderfoot Fields
@@ -338,7 +338,7 @@ _.Zones =
 						crit(5),		-- The Hidden Master
 						crit(6),		-- Nesingwary's Safari
 					}),
-]]--					
+]]--
 					q(30402, {	-- A Dish for Chee Chee
 						["isDaily"] = true,
 						["qg"] = 58709,	-- Chee Chee
@@ -483,7 +483,7 @@ _.Zones =
 						["sourceQuests"] = { 29907 },	-- Chen and Li Li
 						["coord"] = { 83.7, 21.1, 376 },
 						["qg"] = 56204,	-- Pang Thunderfoot
-						["g"] = { 
+						["g"] = {
 							i(81769),	-- Silkmaster's Satin Leggings
 							i(81770),	-- Sunsoaked Legguards
 							i(81771),	-- Huangtze Scale Leggings
@@ -2103,7 +2103,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
-						-- These are the Season 13 ensembles.  
+						-- These are the Season 13 ensembles.
 						-- Other than these ensembles, it looks like the only source for lots of this gear is Nalak.
 						-- Take note of the opposite-faction appearances that are awarded so we can fill out both factions!
 						--	i(138689),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
@@ -2342,7 +2342,7 @@ _.Zones =
 							i(81678),	-- Faded Forest Scepter
 							i(81684),	-- Faded Forest Shield
 							i(81680),	-- Faded Forest Smasher
-							
+
 							-- Helms
 							i(81587),	-- Faded Forest Armored Helm
 							i(81582),	-- Faded Forest Burnished Headcover
@@ -2353,21 +2353,21 @@ _.Zones =
 							i(81581),	-- Faded Forest Ringmail Helm
 							i(81579),	-- Faded Forest Satin Hood
 							i(81583),	-- Faded Forest Silk Cowl
-							
+
 							-- Necklaces
 							i(81655),	-- Faded Forest Amulet
 							i(81652),	-- Faded Forest Choker
 							i(81651),	-- Faded Forest Locket
 							i(81653),	-- Faded Forest Necklace
 							i(81654),	-- Faded Forest Pendant
-							
+
 							-- Cloak
 							i(81668),	-- Faded Forest Cape
 							i(81670),	-- Faded Forest Cloak
 							i(81667),	-- Faded Forest Drape
 							i(81669),	-- Faded Forest Manteau
 							i(81666),	-- Faded Forest Shawl
-							
+
 							-- Shoulders
 							i(81596),	-- Faded Forest Armored Shoulders
 							i(81591),	-- Faded Forest Burnished Spaulders
@@ -2378,7 +2378,7 @@ _.Zones =
 							i(81590),	-- Faded Forest Ringmail Spaulders
 							i(81588),	-- Faded Forest Satin Mantle
 							i(81592),	-- Faded Forest Silk Amice
-							
+
 							-- Chest
 							i(81605),	-- Faded Forest Armored Chestpiece
 							i(81600),	-- Faded Forest Burnished Chestguard
@@ -2389,7 +2389,7 @@ _.Zones =
 							i(81599),	-- Faded Forest Ringmail Armor
 							i(81597),	-- Faded Forest Satin Robe
 							i(81601),	-- Faded Forest Silk Robe
-							
+
 							-- Wrists
 							i(81650),	-- Faded Forest Armored Bracers
 							i(81645),	-- Faded Forest Burnished Bracers
@@ -2400,7 +2400,7 @@ _.Zones =
 							i(81644),	-- Faded Forest Ringmail Armbands
 							i(81642),	-- Faded Forest Satin Cuffs
 							i(81646),	-- Faded Forest Silk Cuffs
-							
+
 							-- Gloves
 							i(81641),	-- Faded Forest Armored Gauntlets
 							i(81636),	-- Faded Forest Burnished Gloves
@@ -2411,7 +2411,7 @@ _.Zones =
 							i(81635),	-- Faded Forest Ringmail Gauntlets
 							i(81633),	-- Faded Forest Satin Gloves
 							i(81637),	-- Faded Forest Silk Handguards
-							
+
 							-- Waist
 							i(81632),	-- Faded Forest Armored Girdle
 							i(81627),	-- Faded Forest Burnished Clasp
@@ -2422,7 +2422,7 @@ _.Zones =
 							i(81626),	-- Faded Forest Ringmail Waistguard
 							i(81624),	-- Faded Forest Satin Cord
 							i(81628),	-- Faded Forest Silk Cord
-							
+
 							-- Legs
 							i(81614),	-- Faded Forest Armored Legguards
 							i(81609),	-- Faded Forest Burnished Legplates
@@ -2433,7 +2433,7 @@ _.Zones =
 							i(81608),	-- Faded Forest Ringmail Leggings
 							i(81606),	-- Faded Forest Satin Leggings
 							i(81610),	-- Faded Forest Silk Trousers
-							
+
 							-- Feet
 							i(81623),	-- Faded Forest Armored Warboots
 							i(81618),	-- Faded Forest Burnished Greaves
@@ -2444,14 +2444,14 @@ _.Zones =
 							i(81617),	-- Faded Forest Ringmail Sabatons
 							i(81615),	-- Faded Forest Satin Treads
 							i(81619),	-- Faded Forest Silk Treads
-							
+
 							-- Finger
 							i(81656),	-- Faded Forest Band
 							i(81658),	-- Faded Forest Loop
 							i(81657),	-- Faded Forest Ring
 							i(81660),	-- Faded Forest Seal
 							i(81659),	-- Faded Forest Signet
-							
+
 							-- Trinkets
 							i(81665),	-- Faded Forest Badge
 							i(81662),	-- Faded Forest Emblem
@@ -2703,7 +2703,7 @@ _.Zones =
 							un(2, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
 							un(2, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
 							un(2, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
-						
+
 							un(2, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
 							un(2, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
 							un(2, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
@@ -2712,7 +2712,7 @@ _.Zones =
 							un(2, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
 							un(2, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
 							un(2, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
-							
+
 							un(2, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
 							un(2, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
 							un(2, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
@@ -3083,7 +3083,7 @@ _.Zones =
 							un(2, i(85064)),	-- Elite Malevolent Gladiator's Ironskin Legguards
 							un(2, i(85066)),	-- Elite Malevolent Gladiator's Ironskin Tunic
 							un(2, i(85087)),	-- Elite Malevolent Gladiator's Ironskin Spaulders
-							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin 
+							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin
 							un(2, i(85030)),	-- Elite Malevolent Gladiator's Copperskin Helm
 							un(2, i(85060)),	-- Elite Malevolent Gladiator's Copperskin Legguards
 							un(2, i(85067)),	-- Elite Malevolent Gladiator's Copperskin Tunic
@@ -3248,7 +3248,7 @@ _.Zones =
 							i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
 							i(91624),	-- Malevolent Gladiator's Scaled Helm
 							i(91626),	-- Malevolent Gladiator's Scaled Legguards
-							i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented 
+							i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented
 							i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
 							i(91642),	-- Malevolent Gladiator's Ornamented Gloves
 							i(91644),	-- Malevolent Gladiator's Ornamented Headcover
@@ -3639,7 +3639,7 @@ _.Zones =
 							i(81678),	-- Faded Forest Scepter
 							i(81684),	-- Faded Forest Shield
 							i(81680),	-- Faded Forest Smasher
-							
+
 							-- Helms
 							i(81587),	-- Faded Forest Armored Helm
 							i(81582),	-- Faded Forest Burnished Headcover
@@ -3650,21 +3650,21 @@ _.Zones =
 							i(81581),	-- Faded Forest Ringmail Helm
 							i(81579),	-- Faded Forest Satin Hood
 							i(81583),	-- Faded Forest Silk Cowl
-							
+
 							-- Necklaces
 							i(81655),	-- Faded Forest Amulet
 							i(81652),	-- Faded Forest Choker
 							i(81651),	-- Faded Forest Locket
 							i(81653),	-- Faded Forest Necklace
 							i(81654),	-- Faded Forest Pendant
-							
+
 							-- Cloak
 							i(81668),	-- Faded Forest Cape
 							i(81670),	-- Faded Forest Cloak
 							i(81667),	-- Faded Forest Drape
 							i(81669),	-- Faded Forest Manteau
 							i(81666),	-- Faded Forest Shawl
-							
+
 							-- Shoulders
 							i(81596),	-- Faded Forest Armored Shoulders
 							i(81591),	-- Faded Forest Burnished Spaulders
@@ -3675,7 +3675,7 @@ _.Zones =
 							i(81590),	-- Faded Forest Ringmail Spaulders
 							i(81588),	-- Faded Forest Satin Mantle
 							i(81592),	-- Faded Forest Silk Amice
-							
+
 							-- Chest
 							i(81605),	-- Faded Forest Armored Chestpiece
 							i(81600),	-- Faded Forest Burnished Chestguard
@@ -3686,7 +3686,7 @@ _.Zones =
 							i(81599),	-- Faded Forest Ringmail Armor
 							i(81597),	-- Faded Forest Satin Robe
 							i(81601),	-- Faded Forest Silk Robe
-							
+
 							-- Wrists
 							i(81650),	-- Faded Forest Armored Bracers
 							i(81645),	-- Faded Forest Burnished Bracers
@@ -3697,7 +3697,7 @@ _.Zones =
 							i(81644),	-- Faded Forest Ringmail Armbands
 							i(81642),	-- Faded Forest Satin Cuffs
 							i(81646),	-- Faded Forest Silk Cuffs
-							
+
 							-- Gloves
 							i(81641),	-- Faded Forest Armored Gauntlets
 							i(81636),	-- Faded Forest Burnished Gloves
@@ -3708,7 +3708,7 @@ _.Zones =
 							i(81635),	-- Faded Forest Ringmail Gauntlets
 							i(81633),	-- Faded Forest Satin Gloves
 							i(81637),	-- Faded Forest Silk Handguards
-							
+
 							-- Waist
 							i(81632),	-- Faded Forest Armored Girdle
 							i(81627),	-- Faded Forest Burnished Clasp
@@ -3719,7 +3719,7 @@ _.Zones =
 							i(81626),	-- Faded Forest Ringmail Waistguard
 							i(81624),	-- Faded Forest Satin Cord
 							i(81628),	-- Faded Forest Silk Cord
-							
+
 							-- Legs
 							i(81614),	-- Faded Forest Armored Legguards
 							i(81609),	-- Faded Forest Burnished Legplates
@@ -3730,7 +3730,7 @@ _.Zones =
 							i(81608),	-- Faded Forest Ringmail Leggings
 							i(81606),	-- Faded Forest Satin Leggings
 							i(81610),	-- Faded Forest Silk Trousers
-							
+
 							-- Feet
 							i(81623),	-- Faded Forest Armored Warboots
 							i(81618),	-- Faded Forest Burnished Greaves
@@ -3741,14 +3741,14 @@ _.Zones =
 							i(81617),	-- Faded Forest Ringmail Sabatons
 							i(81615),	-- Faded Forest Satin Treads
 							i(81619),	-- Faded Forest Silk Treads
-							
+
 							-- Finger
 							i(81656),	-- Faded Forest Band
 							i(81658),	-- Faded Forest Loop
 							i(81657),	-- Faded Forest Ring
 							i(81660),	-- Faded Forest Seal
 							i(81659),	-- Faded Forest Signet
-							
+
 							-- Trinkets
 							i(81665),	-- Faded Forest Badge
 							i(81662),	-- Faded Forest Emblem

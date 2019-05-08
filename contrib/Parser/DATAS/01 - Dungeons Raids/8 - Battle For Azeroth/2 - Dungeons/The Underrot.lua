@@ -158,7 +158,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159443),	-- Legplates of Profane Sacrifice
 							i(159463),	-- Loop of Pulsing Veins
 							i(159624),	-- Rotcrusted Voodoo Doll
-							i(159402),	-- Waistguard of Sanguine Fervor									
+							i(159402),	-- Waistguard of Sanguine Fervor
 						},
 					}),
 					e(2131, {	-- Cragmaw the Infested

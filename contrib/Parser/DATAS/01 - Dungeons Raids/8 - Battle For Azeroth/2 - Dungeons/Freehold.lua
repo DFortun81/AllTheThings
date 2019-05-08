@@ -37,7 +37,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158346),	-- Sailcloth Waistband
 						i(159297),	-- Silver-Trimmed Breeches
 						i(158351),	-- Dashing Bilge Rat Shoes
-						i(158314),	-- Seal of Questionable 
+						i(158314),	-- Seal of Questionable
 					}),
 				}),
 				e(2094, {	-- Ring of Booty
@@ -104,7 +104,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158346),	-- Sailcloth Waistband
 							i(159297),	-- Silver-Trimmed Breeches
 							i(158351),	-- Dashing Bilge Rat Shoes
-							i(158314),	-- Seal of Questionable 
+							i(158314),	-- Seal of Questionable
 						},
 					}),
 					e(2094, {	-- Ring of Booty
@@ -174,7 +174,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158346),	-- Sailcloth Waistband
 							i(159297),	-- Silver-Trimmed Breeches
 							i(158351),	-- Dashing Bilge Rat Shoes
-							i(158314),	-- Seal of Questionable 
+							i(158314),	-- Seal of Questionable
 						},
 					}),
 					e(2094, {	-- Ring of Booty

@@ -1338,7 +1338,7 @@ _.Zones =
 								i(48217),	-- Malfurion's Shoulderpads of Conquest
 								i(48131),	-- Malfurion's Spaulders of Conquest
 								i(48160),	-- Malfurion's Trousers of Conquest
-								i(48159),	-- Malfurion's Vestments of Conquest							
+								i(48159),	-- Malfurion's Vestments of Conquest
 							}),
 							gs(640, {	-- Nobundo's Garb
 								i(48341),	-- Nobundo's Chestguard of Conquest
@@ -1355,8 +1355,8 @@ _.Zones =
 								i(48315),	-- Nobundo's Shoulderpads of Conquest
 								i(48283),	-- Nobundo's Spaulders of Conquest
 								i(48281),	-- Nobundo's Tunic of Conquest
-								i(48344),	-- Nobundo's War-Kilt of Conquest								
-							}),	
+								i(48344),	-- Nobundo's War-Kilt of Conquest
+							}),
 							gs(842, {	-- Thassarian's Battlegear
 								i(48474),	-- Thassarian's Battleplate of Conquest
 								i(48531),	-- Thassarian's Chestguard of Conquest
@@ -1392,7 +1392,7 @@ _.Zones =
 								i(48218),	-- VanCleef's Helmet of Conquest
 								i(48220),	-- VanCleef's Legplates of Conquest
 								i(48221),	-- VanCleef's Pauldrons of Conquest
-							}),	
+							}),
 							gs(349, {	-- Velen's Regalia
 								i(48073),	-- Velen's Circlet of Conquest
 								i(47914),	-- Velen's Cowl of Conquest
@@ -1485,7 +1485,7 @@ _.Zones =
 								i(48275),	-- Windrunner's Tunic of Conquest
 								i(48276),	-- Windrunner's Handguards of Conquest
 								i(48278),	-- Windrunner's Legguards of Conquest
-							}),	
+							}),
 							gs(641, {	-- Thrall's Garb
 								i(48338),	-- Thrall's Helm of Conquest
 								i(48340),	-- Thrall's Shoulderpads of Conquest
@@ -1502,7 +1502,7 @@ _.Zones =
 								i(48295),	-- Thrall's Tunic of Conquest
 								i(48296),	-- Thrall's Handguards of Conquest
 								i(48298),	-- Thrall's Legguards of Conquest
-							}),	
+							}),
 							gs(707, {	-- Liadrin's Plate
 								i(48597),	-- Liadrin's Headpiece of Conquest
 								i(48595),	-- Liadrin's Spaulders of Conquest
@@ -1520,7 +1520,7 @@ _.Zones =
 								i(48630),	-- Liadrin's Gauntlets of Conquest
 								i(48628),	-- Liadrin's Legplates of Conquest
 							}),
-							gs(657, {	-- Hellscream's Battlegear	
+							gs(657, {	-- Hellscream's Battlegear
 								i(48388),	-- Hellscream's Helmet of Conquest
 								i(48390),	-- Hellscream's Shoulderplates of Conquest
 								i(48386),	-- Hellscream's Battleplate of Conquest
@@ -1544,7 +1544,7 @@ _.Zones =
 								i(48502),	-- Koltira's Gauntlets of Conquest
 								i(48504),	-- Koltira's Legplates of Conquest
 							}),
-						}),							
+						}),
 					})),
 					h(n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
 						["coord"] = { 75.2, 22.0 },
@@ -1606,7 +1606,7 @@ _.Zones =
 									un(2, i(48265)),	-- Windrunner's Tunic of Triumph
 									un(2, i(48266)),	-- Windrunner's Handguards of Triumph
 									un(2, i(48268)),	-- Windrunner's Legguards of Triumph
-								}),	
+								}),
 								gs(641, {	-- Thrall's Garb
 									un(2, i(48328)),	-- Thrall's Helm of Triumph
 									un(2, i(48330)),	-- Thrall's Shoulderpads of Triumph
@@ -1623,7 +1623,7 @@ _.Zones =
 									un(2, i(48305)),	-- Thrall's Tunic of Triumph
 									un(2, i(48306)),	-- Thrall's Handguards of Triumph
 									un(2, i(48308)),	-- Thrall's Legguards of Triumph
-								}),	
+								}),
 								gs(707, {	-- Liadrin's Plate
 									un(2, i(48587)),	-- Liadrin's Headpiece of Triumph
 									un(2, i(48585)),	-- Liadrin's Spaulders of Triumph
@@ -1641,7 +1641,7 @@ _.Zones =
 									un(2, i(48618)),	-- Liadrin's Gauntlets of Triumph
 									un(2, i(48620)),	-- Liadrin's Legplates of Triumph
 								}),
-								gs(657, {	-- Hellscream's Battlegear	
+								gs(657, {	-- Hellscream's Battlegear
 									un(2, i(48398)),	-- Hellscream's Helmet of Triumph
 									un(2, i(48400)),	-- Hellscream's Battleplate of Triumph
 									un(2, i(48396)),	-- Hellscream's Shoulderplates of Triumph
@@ -1702,7 +1702,7 @@ _.Zones =
 									un(2, i(48207)),	-- Malfurion's Shoulderpads of Triumph
 									un(2, i(48138)),	-- Malfurion's Spaulders of Triumph
 									un(2, i(48170)),	-- Malfurion's Trousers of Triumph
-									un(2, i(48169)),	-- Malfurion's Vestments of Triumph						
+									un(2, i(48169)),	-- Malfurion's Vestments of Triumph
 								}),
 								gs(640, {	-- Nobundo's Plate
 									un(2, i(48355)),	-- Nobundo's Chestguard of Triumph
@@ -1719,8 +1719,8 @@ _.Zones =
 									un(2, i(48321)),	-- Nobundo's Shoulderpads of Triumph
 									un(2, i(48290)),	-- Nobundo's Spaulders of Triumph
 									un(2, i(48294)),	-- Nobundo's Tunic of Triumph
-									un(2, i(48352)),	-- Nobundo's War-Kilt of Triumph								
-								}),	
+									un(2, i(48352)),	-- Nobundo's War-Kilt of Triumph
+								}),
 								gs(842, {	-- Thassarian's Battlegear
 									un(2, i(48490)),	-- Thassarian's Battleplate of Triumph
 									un(2, i(48547)),	-- Thassarian's Chestguard of Triumph
@@ -1756,7 +1756,7 @@ _.Zones =
 									un(2, i(48230)),	-- VanCleef's Helmet of Triumph
 									un(2, i(48229)),	-- VanCleef's Legplates of Triumph
 									un(2, i(48228)),	-- VanCleef's Pauldrons of Triumph
-								}),	
+								}),
 								gs(349, {	-- Velen's Regalia
 									un(2, i(48085)),	-- Velen's Circlet of Triumph
 									un(2, i(48035)),	-- Velen's Cowl of Triumph
@@ -2301,7 +2301,7 @@ _.Zones =
 									i(48242),	-- Garona's Breastplate of Triumph
 									i(48241),	-- Garona's Gauntlets of Triumph
 									i(48239),	-- Garona's Legplates of Triumph
-								}),	
+								}),
 								-- Hunter
 								gs(738, {	-- Windrunner's Pursuit
 									i(48272),	-- Windrunner's Headpiece of Triumph
@@ -2309,7 +2309,7 @@ _.Zones =
 									i(48274),	-- Windrunner's Tunic of Triumph
 									i(48273),	-- Windrunner's Handguards of Triumph
 									i(48271),	-- Windrunner's Legguards of Triumph
-								}),	
+								}),
 								-- Shaman
 								gs(641, {	-- Thrall's Garb
 									i(48333),	-- Thrall's Helm of Triumph
@@ -2327,7 +2327,7 @@ _.Zones =
 									i(48300),	-- Thrall's Tunic of Triumph
 									i(48301),	-- Thrall's Handguards of Triumph
 									i(48303),	-- Thrall's Legguards of Triumph
-								}),	
+								}),
 								-- Paladin
 								gs(707, {	-- Liadrin's Plate
 									i(48592),	-- Liadrin's Headpiece of Triumph
@@ -2345,9 +2345,9 @@ _.Zones =
 									i(48626),	-- Liadrin's Battleplate of Triumph
 									i(48625),	-- Liadrin's Gauntlets of Triumph
 									i(48623),	-- Liadrin's Legplates of Triumph
-								}),	
+								}),
 								-- Warrior
-								gs(657, {	-- Hellscream's Battlegear	
+								gs(657, {	-- Hellscream's Battlegear
 									i(48393),	-- Hellscream's Helmet of Triumph
 									i(48395),	-- Hellscream's Shoulderplates of Triumph
 									i(48391),	-- Hellscream's Battleplate of Triumph
@@ -2429,7 +2429,7 @@ _.Zones =
 								-- Rogue
 								gs(349, {	-- VanCleef's Battlegear
 									i(48225),	-- VanCleef's Helmet of Triumph
-									i(48227),	-- VanCleef's Pauldrons of Triumph								
+									i(48227),	-- VanCleef's Pauldrons of Triumph
 									i(48223),	-- VanCleef's Breastplate of Triumph
 									i(48224),	-- VanCleef's Gauntlets of Triumph
 									i(48226),	-- VanCleef's Legplates of Triumph
@@ -2502,7 +2502,7 @@ _.Zones =
 									i(48482),	-- Thassarian's Gauntlets of Triumph
 									i(48539),	-- Thassarian's Handguards of Triumph
 									i(48541),	-- Thassarian's Legguards of Triumph
-									i(48484),	-- Thassarian's Legplates of Triumph			
+									i(48484),	-- Thassarian's Legplates of Triumph
 								}),
 							}),
 						}),

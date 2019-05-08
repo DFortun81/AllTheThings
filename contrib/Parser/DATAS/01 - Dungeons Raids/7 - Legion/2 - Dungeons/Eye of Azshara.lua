@@ -29,9 +29,11 @@ _.Instances = { tier(7, {	-- Legion
 				["npcID"] = -17,	-- Quests
 				["g"] = {
 					{	-- Eye of Azshara: The Tidestone of Golganneth
+						["itemID"] = 137206,	-- Tidestone of Golganneth
 						["questID"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
 						["crs"] = {
 							96028,	-- Wrath of Azshara
+							106780,	-- Tidestone of Golganneth
 						},
 						["sourceQuests"] = {
 							38286,	-- Eye of Azshara: Wrath of Azshara

@@ -117,7 +117,7 @@ _.Zones =
 									i(39053),	-- Helm of the Furbolg Purifier
 									i(39091),	-- Blood-Spattered Spaulders
 								},
-								["qg"] = 27295,	-- Hierophant Thayreen 
+								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12219,12220},
 							}),
 							q(12247, {	--  Children of Ursoc [A]
@@ -730,7 +730,7 @@ _.Zones =
 									i(39093),	-- Chestguard of Expressed Fury
 									i(38758),	-- Therapeutic Cloak
 								},
-								["qg"] = 26884,	-- Harkor 
+								["qg"] = 26884,	-- Harkor
 							}),
 						q(12238,{ 	-- Cleansing Drak'Tharon [Lucetia Note: We need to keep this quest in this zone.  It's picked up from here and having both in the dungeon is confusing to the end user as we had comments in Discord]
 							i(40755), 	-- Enticing Sabatons
@@ -738,7 +738,7 @@ _.Zones =
 							i(40756), 	-- Shoulders of the Seducer
 							i(40758), 	-- Shroud of Temptation
 						}),
-						
+
 					}),
 					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
 						h(ach(1357, {	-- Fo' Grizzle My Shizzle [H]
@@ -888,7 +888,7 @@ _.Zones =
 							i(38757),
 						}),
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					n(38453, {	-- Arcturis
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
@@ -1030,7 +1030,7 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 63,	
+			["lvl"] = 63,
 			["achievementID"] = 1266,
 			["description"] = "|cff66ccffGrizzly Hills is a stunning but sinister pine forest in eastern Northrend. Players investigate Arugal and the curse of the Worgen, PvP for control of the Blackriver Logging Camp and Venture Bay, escort Harrison Jones and the rest of the Zul'Aman crew through troll ruins, and heal Vordrassil, a defective World Tree. Grizzly Hills is home to trappers, ice trolls, iron dwarves, and furbolgs.|r",
 		}),

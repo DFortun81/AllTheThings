@@ -54,7 +54,7 @@ _.Zones =
 											22825,	-- Matron Li-sahar
 										},
 									}),
-									
+
 								},
 							}),
 							i(32672, {	-- Depleted Badge
@@ -457,7 +457,7 @@ _.Zones =
 											}),
 										},
 									}),
-									n(23282, {	-- Obsidia 
+									n(23282, {	-- Obsidia
 										["coord"] = { 34.0, 54.7, 105 },
 										["groups"] = {
 											i(32682, {	-- Obsidia Scale

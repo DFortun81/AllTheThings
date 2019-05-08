@@ -102,8 +102,8 @@ _.Zones =
 						crit(10),		-- Aldur'thar: The Desolation Gate
 						crit(11),		-- Corp'rethar: The Horror Gate
 					}),
-]]--				
---[[				
+]]--
+--[[
 					qa( 13286),	-- ...All the Help We Can Get.
 					qa( 13741),	-- A Blade Fit For A Champion
 					qh( 13773),	-- A Blade Fit For A Champion
@@ -185,7 +185,7 @@ _.Zones =
 					qh( 13860),	-- At The Enemy's Gates
 					qa( 13851),	-- At The Enemy's Gates
 					qh( 13859),	-- At The Enemy's Gates
-					qa( 13854),	-- At The Enemy's Gates					
+					qa( 13854),	-- At The Enemy's Gates
 					qa( 13855),	-- At The Enemy's Gates
 					qa( 13847),	-- At The Enemy's Gates
 					qh( 13857),	-- At The Enemy's Gates
@@ -422,7 +422,7 @@ _.Zones =
 					qa( 13725),	-- The Valiant's Challenge
 					qh( 13726),	-- The Valiant's Challenge
 					qa( 13723),	-- The Valiant's Challenge
-					qa( 13713),	-- The Valiant's Challenge					
+					qa( 13713),	-- The Valiant's Challenge
 					qa( 13724),	-- The Valiant's Challenge
 					qh( 13728),	-- The Valiant's Challenge
 					qh( 13729),	-- The Valiant's Challenge
@@ -473,8 +473,8 @@ _.Zones =
 					qa( 13398),	-- Where Dragons Fell
 					qh( 13359),	-- Where Dragons Fell
 					q(12814),	-- You'll Need a Gryphon
-					qa( 13290),	-- Your Attention, Please	
---]]					
+					qa( 13290),	-- Your Attention, Please
+--]]
 					qa(13702,  {  -- A Champion Rises
 						i(44998),
 					}),
@@ -952,7 +952,7 @@ _.Zones =
 						i(43890),
 						i(43921),
 					}),
-					q(13130,  {  -- The Stone That Started A Revolution 
+					q(13130,  {  -- The Stone That Started A Revolution
 						i(43855),
 						i(43914),
 						i(43982),
@@ -1020,7 +1020,7 @@ _.Zones =
 						i(43933),
 						i(43846),
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					{
 						["npcID"] = 32501,		-- High Thane Jorfus [NPC]
@@ -1174,9 +1174,9 @@ _.Zones =
 				}),
 			},
 			["maps"] = { 170 },
-			["lvl"] = 67,	
+			["lvl"] = 67,
 			["achievementID"] = 1270,
-			["description"] = "|cff66ccffIcecrown is a zone intended for level 67+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.|r",				
+			["description"] = "|cff66ccffIcecrown is a zone intended for level 67+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.|r",
 		}),
 	}),
 };

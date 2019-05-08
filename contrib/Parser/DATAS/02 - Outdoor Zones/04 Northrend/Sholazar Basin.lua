@@ -328,7 +328,7 @@ _.Zones =
 						crit(6),		-- Watching Over the Basin
 					}),
 ]]--
---[[				
+--[[
 					q(12607),	-- A Mammoth Undertaking
 					q(12536),	-- A Rough Ride
 					q(12804),	-- A Steak Fit for a Hunter
@@ -435,7 +435,7 @@ _.Zones =
 						["qg"] = 28032,	-- Debaar
 						["sourceQuests"] = { 27987 },	-- Welcome to Scholazar Basin
 					}),
-					q(12525, {	-- Wipe That Grin Off His Face	
+					q(12525, {	-- Wipe That Grin Off His Face
 						["groups"] = {
 							i(39332),	-- Ogre-Crushing Wristguards
 							i(39376),	-- Bracers of the Rejuvenated Forest
@@ -557,7 +557,7 @@ _.Zones =
 						i(39436),
 						i(39450),
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					{
 						["npcID"] = 32481,		-- Aotona [NPC]
@@ -599,7 +599,7 @@ _.Zones =
 							{ 34.8, 30.8 },
 							{ 36.2, 31.0 },
 							{ 37.4, 28.8 },
-							
+
 							-- The Glimmering Pillar
 							{ 46.6, 41.6 },
 							{ 47.4, 43.8 },
@@ -608,7 +608,7 @@ _.Zones =
 							{ 50.2, 42.0 },
 							{ 51.0, 43.8 },
 							{ 52.6, 41.8 },
-							
+
 							-- The Skyreach Pillar
 							{ 50.8, 80.0 },
 							{ 51.6, 82.8 },
@@ -676,9 +676,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 66,	
+			["lvl"] = 66,
 			["achievementID"] = 1268,
-			["description"] = "|cff66ccffSholazar Basin is a lush tropical forest in western Northrend. It owes its warm climate to the pylons around the zone, which are maintained by the Titans and also ward off the Scourge. It is a great zone for gathering max-Northrend level items like herbs and ore. There's also some rare beasts hunters like taming for pets, like Loque'nahak. Players will revisit Hemet Nesingwary and prove their hunting prowess for him, become an unwitting ambassador in a faction war between the Oracles and the Frenzyheart tribes, and learn about the power of the pylons.|r",				
+			["description"] = "|cff66ccffSholazar Basin is a lush tropical forest in western Northrend. It owes its warm climate to the pylons around the zone, which are maintained by the Titans and also ward off the Scourge. It is a great zone for gathering max-Northrend level items like herbs and ore. There's also some rare beasts hunters like taming for pets, like Loque'nahak. Players will revisit Hemet Nesingwary and prove their hunting prowess for him, become an unwitting ambassador in a faction war between the Oracles and the Frenzyheart tribes, and learn about the power of the pylons.|r",
 		}),
 	}),
 };

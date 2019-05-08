@@ -47,8 +47,8 @@ _.Zones =
 						crit(7),		-- Betrayal
 						crit(8),		-- The Argent Patrol
 					}),
-]]--				
---[[				
+]]--
+--[[
 					q(12912),	-- A Great Storm Approaches
 					q(12555),	-- A Tangled Skein
 					q(12647),	-- An End to the Suffering
@@ -101,8 +101,8 @@ _.Zones =
 					qh( 13500),	-- Honor the Flame
 					qa( 13492),	-- Honor the Flame
 					q(12665),	-- I Sense a Disturbance
-					q(12902),	-- In Search Of Answers 
-						["sourceQuests"] = { 
+					q(12902),	-- In Search Of Answers
+						["sourceQuests"] = {
 							{ 49534 }	-- Warchief's Command: Zul'Drak!
 							{ 49552 }	-- Hero's Call: Zul'Drak!
 						},
@@ -149,7 +149,7 @@ _.Zones =
 					q(12597),	-- Something for the Pain
 					q(12642),	-- Spirit of Rhunok
 					q(12609),	-- Stocking the Shelves
-					q(12507),	-- Strange Mojo					
+					q(12507),	-- Strange Mojo
 					q(12649),	-- Suit Up!
 					q(13549),	-- Tails Up
 					q(12795),	-- Taking a Stand
@@ -196,8 +196,8 @@ _.Zones =
 					q(12629),	-- You Can Run, But You Can't Hide
 					q(12685),	-- You Reap What You Sow
 					q(12686),	-- Zero Tolerance
-					q(39208),	-- Zul'Drak	
---]]					
+					q(39208),	-- Zul'Drak
+--]]
 					q(12555,  {  -- A Tangled Skein
 						i(39806),
 						i(39822),
@@ -441,7 +441,7 @@ _.Zones =
 						i(39845),	-- Ancestral Gauntlets
 						i(39826),	-- Bloodletter's Blade
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					{	-- Gondria
 						["npcID"] = 33776,
@@ -551,9 +551,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 64,	
+			["lvl"] = 64,
 			["achievementID"] = 1267,
-			["description"] = "|cff66ccffZul'Drak is a zone in central Northrend, intended for level 75+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.|r",				
+			["description"] = "|cff66ccffZul'Drak is a zone in central Northrend, intended for level 75+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.|r",
 		}),
 	}),
 };

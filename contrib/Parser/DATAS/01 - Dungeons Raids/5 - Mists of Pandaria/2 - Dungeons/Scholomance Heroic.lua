@@ -11,7 +11,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["lvl"] = 90,
 				["g"] = {
 					ach(6396),	-- Sanguinarian
-					n(-17,   {	-- Quests 			
+					n(-17,   {	-- Quests
 						q(31448, {	-- An End to the Suffering
 							["qg"] = 64563,	-- Talking Skull
 							["g"] = {
@@ -82,7 +82,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					n(59369, {	-- Doctor Theolen Krastinov
 						["description"] = "This is a rare that is not always present.",
-						["g"] = {	
+						["g"] = {
 							i(88566),	-- Krastinov's Bag of Horrors
 						},
 					}),

@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Points
-					fp(248, {	-- Apothecary Camp, Howling Fjord	
+					fp(248, {	-- Apothecary Camp, Howling Fjord
 						["coord"] = { 26, 25 },
 					}),
 					fp(192, {	-- Camp Winterhoof, Howling Fjord
@@ -48,7 +48,7 @@ _.Zones =
 					fp(295, {	-- Kamagua, Howling Fjord
 						["coord"] = { 24.6, 57.8 },
 					}),
-					fp(190, {	-- New Agamand, Howling Fjord	
+					fp(190, {	-- New Agamand, Howling Fjord
 						["coord"] = { 52, 67.4 },
 					}),
 					fp(183, {	-- Valgarde Port, Howling Fjord
@@ -155,9 +155,9 @@ _.Zones =
 									i(35834),	-- Nimblefinger Scaled Gloves
 									i(35835),	-- Antique Reinforced Legguards
 									i(35833),	-- Imperious Worghide Cap
-								},	
+								},
 								["sourceQuests"] = {11343},
-							}),	
+							}),
 							q(11291, {	--  To Westguard Keep! [A]
 								["qg"] = 23546,	-- Vice Admiral Keller
 								["sourceQuests"] = {11290},
@@ -1051,13 +1051,13 @@ _.Zones =
 						-- 	["qg"] = 24135,	-- Greatmother Ankha
 						-- }),
 						-- qh(29609, {	--  Friends in Dalaran
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(12181, {	--  Give it a Name
 						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
 						-- }),
 						-- qh(11266, {	--  Gjalerbron Attack Plans
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11279, {	--  Green Eggs and Whelps
 						-- 	["qg"] = 24157,	-- Plaguebringer Tillinghast
@@ -1078,7 +1078,7 @@ _.Zones =
 						-- 	["qg"] = 24137,	-- Dark Ranger Marrah
 						-- }),
 						-- qh(11398, {	--  It's a Scourge Device
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11297, {	--  Keeping Watch on the Interlopers
 						-- 	["qg"] = 24234,	-- Junat the Wanderer
@@ -1135,7 +1135,7 @@ _.Zones =
 						-- 	["qg"] = 24126,	-- Apothecary Lysander
 						-- }),
 						-- qh(11260, {	--  Stop the Ascension!
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11311, {	--  Suppressing the Elements
 						-- 	["qg"] = 24256,	-- Wind Tamer Kagan
@@ -1150,7 +1150,7 @@ _.Zones =
 						-- 	["qg"] = 24186,	-- Sage Mistwalker
 						-- }),
 						-- qh(11254, {	--  The Dragonskin Map
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11423, {	--  The Enemy's Legacy
 						-- 	["qg"] = 24548,	-- Scribe Seguine
@@ -1162,7 +1162,7 @@ _.Zones =
 						-- 	["qg"] = 24390,	-- Sage Edan
 						-- }),
 						-- qh(12791, {	--  The Magical Kingdom of Dalaran
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11167, {	--  The New Plague
 						-- 	["qg"] = 24126,	-- Apothecary Lysander
@@ -1174,7 +1174,7 @@ _.Zones =
 						-- 	["qg"] = 24362,	-- Longrunner Pembe
 						-- }),
 						-- qh(11453, {	--  The Slumbering King
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11229, {	--  The Windrunner Fleet
 						-- 	["qg"] = 23780,	-- High Executor Anselm
@@ -1518,9 +1518,9 @@ _.Zones =
 					})),
 				}),
 			},
-			["lvl"] = 58,	
+			["lvl"] = 58,
 			["achievementID"] = 1263,
-			["description"] = "|cff66ccffHowling Fjord is the eastern-most zone in Northrend, with breathtaking mountains, cliffs, and fortresses. Like Borean Tundra, it is intended for fresh level 68-72 players and introduces them to a variety of factions and lore plots. However, it is considered more challenging to level in this zone because of the steep mountains and windy paths between quest objectives compared to the flat plains of Borean Tundra. Alliance players learn about the reawakened vrykul, the prototype for humans, while Horde players assist the Forsaken in developing a new plague (perhaps with ethical qualms) to defeat the Lich King. Both sides also assist the Tuskarr in putting the spirits of their ancestors to rest, as well as aiding a group of humorous pirates.|r",				
+			["description"] = "|cff66ccffHowling Fjord is the eastern-most zone in Northrend, with breathtaking mountains, cliffs, and fortresses. Like Borean Tundra, it is intended for fresh level 68-72 players and introduces them to a variety of factions and lore plots. However, it is considered more challenging to level in this zone because of the steep mountains and windy paths between quest objectives compared to the flat plains of Borean Tundra. Alliance players learn about the reawakened vrykul, the prototype for humans, while Horde players assist the Forsaken in developing a new plague (perhaps with ethical qualms) to defeat the Lich King. Both sides also assist the Tuskarr in putting the spirits of their ancestors to rest, as well as aiding a group of humorous pirates.|r",
 		}),
 	}),
 };

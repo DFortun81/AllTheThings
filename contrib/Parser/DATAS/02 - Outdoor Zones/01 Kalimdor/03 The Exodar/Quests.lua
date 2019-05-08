@@ -39,7 +39,7 @@ _.Zones =
 						qa(27724),	-- Hero's Call: Vashj'ir!
 						qa(28544),	-- Hero's Call: Winterspring!
 						qa(29156),	-- The Troll Incursion
-					}),	
+					}),
 					]]--
 					q(605, {	-- Hippogryph Master Stephanos
 						["qg"] = 16768,	-- Nurguni
@@ -94,8 +94,8 @@ _.Zones =
 					qg(17468, qa( 9699)),	-- Truth or Fiction
 					qg(17122, qa(27266, {	-- Wulf Calls
 						["classes"] = {3},
-					})),				
---]]				
+					})),
+--]]
 				}),
 			},
 		}),

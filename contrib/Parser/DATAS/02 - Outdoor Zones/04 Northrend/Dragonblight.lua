@@ -607,7 +607,7 @@ _.Zones =
 											i(38146),	-- Gleaming Iceblade
 											i(38126),	-- Frostbite Warstaff
 										},
-										["qg"] = 0,	-- Unable to pull from Wowhead. 
+										["qg"] = 0,	-- Unable to pull from Wowhead.
 										["sourceQuests"] = {12031},
 									}),
 								},
@@ -791,7 +791,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(12794, {	--  The Magical Kingdom of Dalaran [A]
-							["qg"] = 26673,	-- Image of Archmage Modera 
+							["qg"] = 26673,	-- Image of Archmage Modera
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- Need "Moa'ki Harbor" Header
@@ -995,19 +995,19 @@ _.Zones =
 						--
 						--
 						-- q(47904, {	--  Preserve the True Future
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(47545, {	--  Rewind
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(47543, {	--  The Day That Chromie Dies
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(47906, {	--  The Deaths of Chromie
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(47550, {	--  The Many Advantages of Being a Time Dragon
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 					}),
 					n(-383, {	-- Miscellaneous [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
@@ -1028,7 +1028,7 @@ _.Zones =
 						-- 	["qg"] = 27248,	-- Apothecary Vicky Levine
 						-- }),
 						-- q(12059, {	--  A Strange Device [H]
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(11977, {	--  A Tauren Among Taunka [H]
 						-- 	["qg"] = 26156,	-- Wartook Iceborn
@@ -1068,7 +1068,7 @@ _.Zones =
 						-- 	["qg"] = 26504,	-- Soar Hawkfury
 						-- }),
 						-- q(12147, {	--  Disturbing Implications [H]
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(12200, {	--  Emerald Dragon Tears [H]
 						-- 	["qg"] = 27172,	-- Chief Plaguebringer Middleton
@@ -1164,7 +1164,7 @@ _.Zones =
 						-- 	["qg"] = 26652,	-- Greatmother Icemist
 						-- }),
 						-- q(12057, {	--  The Flesh-Bound Tome [H]
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(12066, {	--  The Focus on the Beach [H]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
@@ -1185,7 +1185,7 @@ _.Zones =
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
 						-- q(12271, {	--  The Rod of Compulsion [H]
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(12239, {	--  The Spy in New Hearthglen [H]
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
@@ -1215,7 +1215,7 @@ _.Zones =
 						-- 	["qg"] = 26379,	-- Overlord Agmar
 						-- }),
 						-- q(12205, {	--  Wanted: The Scarlet Onslaught [H]
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- q(12254, {	--  Without a Prayer [H]
 						-- 	["qg"] = 27350,	-- Agent Skully
@@ -1528,7 +1528,7 @@ _.Zones =
 								i(38056),	-- Ridgehunter Chestguard
 								i(38117),	-- Dreadtalon's Clutch
 							},
-							["qg"] = 0,	-- Unable to pull from Wowhead. 
+							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
 						qh(12090, {	-- Wanted: Gigantaur [H]
 							["groups"] = {
@@ -1537,7 +1537,7 @@ _.Zones =
 								i(38055),	-- Ridgehunter Gauntlets
 								i(38116),	-- Plated Magnataur Leggings
 							},
-							["qg"] = 0,	-- Unable to pull from Wowhead. 
+							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
 						qh(12089, {	-- Wanted: Magister Keldonus [H]
 							["groups"] = {
@@ -1548,7 +1548,7 @@ _.Zones =
 								i(38196),	-- Bloodsmeared Brutalizer
 								i(38138),	-- Keldonus' Missing Spellshard
 							},
-							["qg"] = 0,	-- Unable to pull from Wowhead. 
+							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
 						qh(12111, {	-- Where the Wild Things Roam [H]
 							["groups"] = {
@@ -1562,8 +1562,8 @@ _.Zones =
 							["qg"] = 26504,	-- Soar Hawkfury
 						}),
 					}),
-					
-					
+
+
 					-- Crieve Note: I absolutely hate the way the above section is organized. Someday, I'm cleaning this mess up.
 					-- That day is not today. Tomorrow doesn't look good either. Also, someone deleted these quests from the list.
 					-- I remember adding them a million billion years ago. Please don't delete them again. Thanks!
@@ -1594,7 +1594,7 @@ _.Zones =
 							i(44657),	-- Torque of the Red Dragonflight
 						},
 					},
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					{
 						["npcID"] = 32409,		-- Crazed Indu'le Survivor [NPC]
@@ -1681,7 +1681,7 @@ _.Zones =
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					}),
-					
+
 					na(27054, {	-- Modoru <Reagents & Enchanting Supplies>
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -1710,9 +1710,9 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 61,	
+			["lvl"] = 61,
 			["achievementID"] = 1265,
-			["description"] = "|cff66ccffDragonblight is a level 72-75 quest hub in central Northrend. It makes a reappearance in Cataclysm as the backdrop for Dragon Soul and Hour of Twilight in patch 4.3. It is an icy valley, covered with the bodies of dead dragons. Players learn about two major plotlines here: the dragonflights at Wyrmrest Temple, and the Wrathgate plot, which has very different stories for Alliance and Horde.|r",				
+			["description"] = "|cff66ccffDragonblight is a level 72-75 quest hub in central Northrend. It makes a reappearance in Cataclysm as the backdrop for Dragon Soul and Hour of Twilight in patch 4.3. It is an icy valley, covered with the bodies of dead dragons. Players learn about two major plotlines here: the dragonflights at Wyrmrest Temple, and the Wrathgate plot, which has very different stories for Alliance and Horde.|r",
 		}),
 	}),
 };

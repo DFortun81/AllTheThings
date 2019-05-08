@@ -65,7 +65,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(75829, e(1168, {	-- Nhallish
 					i(110036),	-- Nhallish's Bloody Polearm
-					i(109898),	-- Blackwater Wrap							
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard
@@ -226,14 +226,14 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests 			
+				n(-17, {	-- Quests
 					q(37163, {
 						i(119003),	-- Void Totem
 					}),
 					q(37164, {
 						i(118923),	-- Sentinel's Companion is a pet
 					}),
-				}),	
+				}),
 				cr(75509, e(1139, {	-- Sadana Bloodfury
 					{	-- What's Your Sign?
 						["achievementID"] = 9018,	-- What's Your Sign?
@@ -282,7 +282,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(75829, e(1168, {	-- Nhallish
 					i(110036),	-- Nhallish's Bloody Polearm
-					i(109898),	-- Blackwater Wrap							
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard
@@ -494,7 +494,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(75829, e(1168, {	-- Nhallish
 					i(110036),	-- Nhallish's Bloody Polearm
-					i(109898),	-- Blackwater Wrap							
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard
@@ -702,7 +702,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 					cr(75829, e(1168, {	-- Nhallish
 						i(110036),	-- Nhallish's Bloody Polearm
-						i(109898),	-- Blackwater Wrap							
+						i(109898),	-- Blackwater Wrap
 						i(109885),	-- Bloodfeather Chestwrap
 						i(109884),	-- Chestguard of Burning Focus
 						i(109886),	-- Crystalbinder Chestguard

@@ -3,11 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor	
+	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			["groups"] = {
 				n(-17, {	-- Quests
---[[				
+--[[
 					qg(3034, qh(27283, {	-- A Journey to Moonglade
 						["classes"] = {11},
 					})),
@@ -42,7 +42,7 @@ _.Zones =
 					})),
 --]]
 					qh(769, {	-- Kodo Hide Bag
-						["qg"] = 3050,	-- Veren Tallstrider				
+						["qg"] = 3050,	-- Veren Tallstrider
 						["requireSkill"] = 165,    -- Leatherworking
 						["groups"] = {
 							i(5083),	-- Pattern: Kodo Hide Bag
@@ -81,7 +81,7 @@ _.Zones =
 						["classes"] = {11},
 					})),
 					qg(3978, qh( 2965)),	-- Portents of Uldum
---]]					
+--]]
 					{	-- Magatha's Payment to Jediga
 						["questID"] = 3562,
 						["u"] = 40,
@@ -108,7 +108,7 @@ _.Zones =
 						["groups"] = {
 							i(33267),	-- Fleshripper
 							i(33259),	-- Crimson Barbut
-							i(156977),	-- Serrated Gladius 
+							i(156977),	-- Serrated Gladius
 						},
 						["qg"] = 4943,	-- Mosarn
 						["lvl"] = 35,
@@ -130,7 +130,7 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
 					},
---[[					
+--[[
 					qg(43870, qh(28164, {	-- Seek Brother Silverhallow
 						["classes"] = {5},
 					})),
