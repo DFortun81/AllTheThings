@@ -162,7 +162,7 @@ _.Zones =
 							}),
 						},
 					}),
-					a(n(16722, {	-- Egomis <Enchanting Supplies>
+					na(16722, {	-- Egomis <Enchanting Supplies>
 						i(22565),	-- Formula: Large Prismatic Shard
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
@@ -189,18 +189,18 @@ _.Zones =
 							i(52733),	-- Formula: Enchant Weapon - Power Torrent
 							i(52735),	-- Formula: Enchant Weapon - Windwalk
 						}),
-					})),
-					a(n(16657, {	-- Feera <Engineering Supplies>
+					}),
+					na(16657, {	-- Feera <Engineering Supplies>
 						i(23799),	-- Schematic: Adamantite Rifle
 						i(23816),	-- Schematic: Fel Iron Toolbox
 						i(23811),	-- Schematic: White Smoke Flare
-					})),
-					a(n(16716, {	-- Gornii <Cloth Armor Merchant>
+					}),
+					na(16716, {	-- Gornii <Cloth Armor Merchant>
 						i(3428),	-- Common Grey Shirt
 						i(16059),	-- Common Brown Shirt
 						i(16060),	-- Common White Shirt
-					})),
-					n(16748, {	-- Haferet <Leatherworking Supplies>
+					}),
+					na(16748, {	-- Haferet <Leatherworking Supplies>
 						["coord"] = { 66.6, 74.0, 103 },
 						["g"] = {
 							i(67095),	-- Pattern: Assassin's Chestplate
@@ -251,13 +251,13 @@ _.Zones =
 							i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 						},
 					}),
-					a(n(50306, {	-- Kadu <Exodar Quartermaster>
+					na(50306, {	-- Kadu <Exodar Quartermaster>
 						i(64889),	-- Mantle of Exodar
 						i(64890),	-- Cape of Exodar
 						i(64891),	-- Shroud of Exodar
 						i(45580),	-- Exodar Tabard
-					})),
-					a(n(16767, {	-- Neii <Tailoring Supplies>
+					}),
+					na(16767, {	-- Neii <Tailoring Supplies>
 						i(54440, {	-- Dreamcloth
 							i(54601),	-- Pattern: Belt of the Depths
 							i(54602),	-- Pattern: Dreamless Belt
@@ -280,30 +280,30 @@ _.Zones =
 						i(21894),	-- Pattern: Bolt of Soulcloth
 						i(21896), 	-- Pattern: Netherweave Robe
 						i(21897), 	-- Pattern: Netherweave Tunic
-					})),
+					}),
 					na(16718, {		-- Phea <Cooking Supplies>
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					}),
-					a(n(21019, {	-- Sixx <Moth Keeper>
+					na(21019, {	-- Sixx <Moth Keeper>
 						i(29901),	-- Blue Moth Egg Pet
 						i(29903),	-- Yellow Moth Egg Pet
 						i(29904),	-- White Moth Egg Pet
-					})),
-					n(30716, {	-- Thoth <Inscription Trainer>
+					}),
+					na(30716, {	-- Thoth <Inscription Trainer>
 						["coord"] = { 39.78, 38.87, 103 },
 						["g"] = {
 							i(137789),	-- Technique: Songs of the Legion
 						},
 					}),
-					a(n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
+					na(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 						i(29745),	-- Great Blue Elekk Mount
 						i(29746),	-- Great Green Elekk Mount
 						i(29747),	-- Great Purple Elekk Mount
 						i(28481),	-- Brown Elekk
 						i(29743),	-- Purple Elekk
 						i(29744),	-- Gray Elekk
-					})),
+					}),
 				}),
 			},
 		}),

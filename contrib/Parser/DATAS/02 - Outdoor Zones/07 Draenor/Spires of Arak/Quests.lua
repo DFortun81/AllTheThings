@@ -277,6 +277,17 @@ _.Zones =
 						follower(219),	-- Leorajh
 					},
 				}),
+				
+				
+				q(35013, {	-- Lithic's Gift
+					["sourceQuests"] = {
+						35011,	-- The False Talon King
+						35003,	-- Ritual Severance
+						35004,	-- Servants of a Dead God
+					},
+					["coord"] = { 64.1, 37.0, 542 },
+					["qg"] = 86475,	-- Talon Guard Kurekk
+				}),
 
 				
 				qa(36606, {	-- News from Nagrand
@@ -341,8 +352,59 @@ _.Zones =
 					["coord"] = { 40.1, 60.3, 542 },
 					["qg"] = 79748,	-- Percy
 				}),
+				
+				
+				q(35003, {	-- Ritual Severance
+					["sourceQuests"] = {
+						35001,	-- Gaze of the Raven God
+						35002,	-- Sons of Sethe
+					},
+					["coord"] = { 66.7, 51.6, 542 },
+					["qg"] = 80648,	-- Anzu
+					["g"] = {
+						i(114955),	-- Hollowblood Cloak
+						i(114949),	-- Hollowblood Drape
+						i(114954),	-- Hollowblood Greatcloak
+						i(119053),	-- Hollowblood Scale Cloak
+						i(119058),	-- Hollowblood Scarf
+					},
+				}),
+				
+				
+				q(35004, {  -- Servants of a Dead God
+					["sourceQuests"] = {
+						35001,	-- Gaze of the Raven God
+						35002,	-- Sons of Sethe
+					},
+					["coord"] = { 66.7, 51.6, 542 },
+					["qg"] = 80648,	-- Anzu
+					["g"] = {
+						i(114955),	-- Hollowblood Cloak
+						i(114949),	-- Hollowblood Drape
+						i(114954),	-- Hollowblood Greatcloak
+						i(119053),	-- Hollowblood Scale Cloak
+						i(119058),	-- Hollowblood Scarf
+					},
+				}),
 
 
+				q(35012, {  -- Sethe, the Dead God
+					["sourceQuests"] = {
+						35011,	-- The False Talon King
+						35003,	-- Ritual Severance
+						35004,	-- Servants of a Dead God
+					},
+					["coord"] = { 64.1, 37.0, 542 },
+					["qg"] = 86355,	-- Anzu
+					["g"] = {
+						i(114712),	-- Cragplate Chestplate
+						i(114713),	-- Ravenchain Vest
+						i(114731),	-- Shadowveil Robe
+						i(114714),	-- Skysinger Vest
+					},
+				}),
+				
+				
 				q(35002, {	-- Sons of Sethe
 					["sourceQuests"] = { 35000 },	-- Banished From the Sky
 					["coord"] = { 62.1, 42.6, 542 },
@@ -377,6 +439,16 @@ _.Zones =
 				}),
 
 
+				q(35011, {	-- The False Talon King
+					["sourceQuests"] = {
+						35001,	-- Gaze of the Raven God
+						35002,	-- Sons of Sethe
+					},
+					["coord"] = { 66.7, 51.6, 542 },
+					["qg"] = 86475,	-- Talon Guard Kurekk
+				}),
+
+				
 				q(36590, {	-- The Howling Crag (bonus objective)
 					["coord"] = { 65.0, 25.9, 542 },
 				}),
@@ -514,7 +586,6 @@ _.Zones =
 				q(35028),	-- Krikka and Vakora Tracking
 				q(35201),	-- Krixel
 				q(35258),	-- Legacy of the Apexis
-				q(35013),	-- Lithic's Gift
 				q(36184),	-- Mother Lode
 				q(36071),	-- Nagrand - Treasure 055 - Waterlogged Satchel
 				qh(36607),	-- News from Nagrand
@@ -546,7 +617,6 @@ _.Zones =
 				q(35007),	-- Rendezvous with the Ritualists
 				q(36724),	-- Reshad Tracking
 				q(35733),	-- Rites of the Talonpriests
-				q(35003),	-- Ritual Severance
 				qa(37006),	-- Riverbeast Training: Bulbapore
 				qh(37072),	-- Riverbeast Training: Bulbapore
 				q(36798),	-- Rooby Roo
@@ -570,7 +640,6 @@ _.Zones =
 				qh(35797),	-- The Ebon Hunter
 				qa(35835),	-- The Ebon Hunter
 				q(34924),	-- The Egg Thieves
-				q(35011),	-- The False Talon King
 				q(35010),	-- The High Ravenspeaker
 				q(36790),	-- The Initiate's Revenge
 				q(35897),	-- The Missing Piece
@@ -681,19 +750,6 @@ _.Zones =
 					i(118089),	-- "Super Sterilized" Blastguard Leggings
 					i(118087),	-- "Super Sterilized" Blastguard Legplates
 					i(118088),	-- "Super Sterlized" Blastguard Legwraps
-				}),
-				q(35004, {  -- Servants of a Dead God
-					i(114955),	-- Hollowblood Cloak
-					i(114949),	-- Hollowblood Drape
-					i(114954),	-- Hollowblood Greatcloak
-					i(119053),	-- Hollowblood Scale Cloak
-					i(119058),	-- Hollowblood Scarf
-				}),
-				q(35012, {  -- Sethe, the Dead God
-					i(114712),	-- Cragplate Chestplate
-					i(114713),	-- Ravenchain Vest
-					i(114731),	-- Shadowveil Robe
-					i(114714),	-- Skysinger Vest
 				}),
 				q(35896, {	-- The Avatar of Terokk
 					i(119073),	-- Talon Guard Bloodsworn Band
