@@ -554,7 +554,9 @@ _.Zones =
 								["sourceQuest"] = 53869,	-- Killing Time
 								["requireSkill"] = 197,
 								["groups"] = {
-									recipe(292946),	-- Recipe: Synchronous Thread
+									recipe(292946, {	-- Recipe: Synchronous Thread
+										["requireSkill"] = 197,
+									}),
 								},
 							}),	
 						}),	
