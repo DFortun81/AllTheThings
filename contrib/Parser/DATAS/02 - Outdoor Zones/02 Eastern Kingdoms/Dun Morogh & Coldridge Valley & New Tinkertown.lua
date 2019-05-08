@@ -196,9 +196,11 @@ _.Zones =
 						["coord"] = { 76.1, 53.0, 27 },
 					}),
 					qg(1265, qa(  314, {	-- Protecting the Herd
-						un(2, i(3103)),	-- Coldridge Hammer
-						un(2, i(2817)),	-- Soft Leather Tunic
-						un(2, i(10549)),	-- Rancher's Trousers
+						--Note!! When questing confirm that is isn't obtainable as reports says it was and it was previously marked unobtainable
+						--Might be racial locked and not unobtainable
+						i(3103),	-- Coldridge Hammer
+						i(2817),	-- Soft Leather Tunic
+						i(10549),	-- Rancher's Trousers
 					})),
 
 --					qg(40950, qa(25792)),	-- Pushing Forward
