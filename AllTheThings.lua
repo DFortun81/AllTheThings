@@ -11757,7 +11757,17 @@ app.events.ADDON_LOADED = function(addonName)
 				repeat
 					-- Process the Auction
 					local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
-					if link then table.insert(AllTheThingsAuctionData, link); end
+					if link then
+						table.insert(AllTheThingsAuctionData, link);
+					else
+						local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
+						if itemID and itemID > 0 and saleStatus == 0 then
+							print("ItemLink nil, but we got an itemID:", itemID);
+							table.insert(AllTheThingsAuctionData, "item:" .. itemID);
+						end
+					end
 					
 					-- Increment the index and check the iteration variable.
 					iter = iter + 1;
@@ -11780,10 +11790,10 @@ app.events.ADDON_LOADED = function(addonName)
 			--[[
 			local name, texture, count, quality, canUse, level, levelColHeader, minBid,
 				minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-				ownerFullName, saleStatus, itemId, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
-			if itemId and itemId > 0 and saleStatus == 0 then
+				ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
+			if itemID and itemID > 0 and saleStatus == 0 then
 				local data = {};
-				data.itemID = itemId;
+				data.itemID = itemID;
 				data.bidAmount = minBid;
 				data.buyoutPrice = buyoutPrice;
 				table.insert(auctions, data);
