@@ -295,18 +295,21 @@ _.Zones =
 									["questID"] = 44414,	-- Felspawns of Lothros
 									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
 									["sourceQuest"] = 44479,	-- Source Quest: Ravencrest's Legacy
+									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
 								},
 								{
 									["questID"] = 44415,	-- The Red Axe
 									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
 									["sourceQuest"] = 44414,	-- Source Quest: Felspawns of Lothros
+									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
 								},
 								{
 									["questID"] = 44416,	-- Hunter of Night
 									["qg"] = 113355,	-- Quest Giver: Broxigar the Red
 									["sourceQuest"] = 44415,	-- Source Quest: The Red Axe
+									["description"] = "This quest can only be completed while in the Ravencrest's Legacy Scenario",
 									["lvl"] = 110,
 									["groups"] = {
 										i(139932),	-- Belt of Shadowsong
