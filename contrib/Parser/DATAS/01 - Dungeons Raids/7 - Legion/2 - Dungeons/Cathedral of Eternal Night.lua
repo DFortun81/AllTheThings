@@ -10,50 +10,6 @@ _.Instances = { tier(7, {	-- Legion
 		["g"] = {
 			d(2, {	-- Heroic
 				n(0, {	-- Zone Drops
-					i(147514, {	-- Felguard Destroyer's Legplates
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147515, {	-- Hellblaze Invader's Greaves
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147517, {	-- Inquisitor's Battle Cowl
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
-					i(147516, {	-- Legion Stalker's Hood
-						["crs"] = {
-							118704,	-- Dul'zak
-							118723,	-- Gazerax
-							118705,	-- Nal'asha
-							120713,	-- Wa'glur
-							120716,	-- Dreadspeaker Serilis
-							120715,	-- Raga'yut
-							120717,	-- Mistress Dominix
-						},
-					}),
 					i(147117, {	-- Orb of the Fel Temptress
 						["crs"] = {
 							118714,  -- Hellblaze Temptress
