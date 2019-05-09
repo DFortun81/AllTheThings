@@ -189,6 +189,7 @@ _.Zones =
 					i(63138),	-- Dark Phoenix Hatchling - Exalted
 				},
 			})),
+			--[[ Achievement Heirlooms; Commenting this part out so we keep all the heirlooms together down below
 			ach(6626, {	-- Working Better as a Team
 				["collectible"] = false,
 				["groups"] = {
@@ -202,21 +203,16 @@ _.Zones =
 					i(122264),	-- Burnished Legplates of Might - Honored
 				},
 			}),
+			--]]
 			
-			
-			
+			-- Items that are listed in the achievement above have been commented out below to prevent unnecessary duplication.
 			
 			
 			
 			-- Mounts
+			--[[
 			{	-- Reins of the Dark Phoenix - Exalted
 				["itemID"] = 63125,	-- Reins of the Dark Phoenix
-			},
-			{	-- Reins of the Golden King - Exalted
-				["itemID"] = 62298,	-- Reins of the Golden King
-			},
-			{	-- Reins of the Kor'kron Annihilator - Exalted
-				["itemID"] = 67107,	-- Reins of the Kor'kron Annihilator
 			},
 			{	-- Reins of the Thundering Jade Cloud Serpent - Exalted
 				["itemID"] = 85666,	-- Reins of the Thundering Jade Cloud Serpent
@@ -224,8 +220,16 @@ _.Zones =
 			{	-- Blacksteel Battleboar - Exalted
 				["itemID"] = 116666,	-- Blacksteel Battleboar
 			},
+			--]]
+			{	-- Reins of the Golden King - Exalted
+				["itemID"] = 62298,	-- Reins of the Golden King
+			},
+			{	-- Reins of the Kor'kron Annihilator - Exalted
+				["itemID"] = 67107,	-- Reins of the Kor'kron Annihilator
+			},
 			
 			-- Pets
+			--[[
 			{	-- Armadillo Pup - Revered
 				["itemID"] = 63398,	-- Armadillo Pup
 			},
@@ -242,8 +246,10 @@ _.Zones =
 			{	-- Lil' Tarecgosa - Exalted
 				["itemID"] = 71033,	-- Lil' Tarecgosa
 			},
+			--]]
 			
 			-- Recipes
+			--[[
 			{	-- Recipe: Big Cauldron of Battle
 				["itemID"] = 65498,	-- Recipe: Big Cauldron of Battle
 			},
@@ -256,7 +262,7 @@ _.Zones =
 			{	-- Recipe: Seafood Magnifique Feast
 				["itemID"] = 62800,	-- Recipe: Seafood Magnifique Feast
 			},
-			
+			--]]
 			
 			{	-- Illustrious Guild Tabard - Friendly
 				["itemID"] = 69209,	-- Illustrious Guild Tabard
@@ -264,6 +270,7 @@ _.Zones =
 			{	-- Renowned Guild Tabard - Honored
 				["itemID"] = 69210,	-- Renowned Guild Tabard
 			},
+			--[[
 			{	-- Artisan Initiate's Shirt - Exalted
 				["itemID"] = 89191,	-- Artisan Initiate's Shirt
 			},
@@ -304,6 +311,7 @@ _.Zones =
 			h(i(65274)),	-- Cloak of Coordination - Revered
 			a(i(63352)),	-- Shroud of Cooperation - Honored
 			h(i(63353)),	-- Shroud of Cooperation - Honored
+			--]]
 			a({	-- Standard of Unity - Honored
 				["itemID"] = 64398,	-- Standard of Unity
 			}),
