@@ -207,11 +207,11 @@ _.Zones =
 							},
 							{	-- Rancher's Trousers
 								["itemID"] = 10549,			-- Rancher's Trousers
-								--["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
 							},
 							{	-- Soft Leather Tunic
 								["itemID"] = 2817,	-- Soft Leather Tunic
-								--["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
 							},
 						},
 					},
