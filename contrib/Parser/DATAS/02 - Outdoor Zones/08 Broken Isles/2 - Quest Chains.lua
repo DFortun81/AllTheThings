@@ -291,14 +291,6 @@ _.Zones =
 							["maps"] = { 793 },	-- Scenario: Black Rook Hold
 							["lvl"] = 110,
 							["groups"] = {
-								i(139994),	-- Breastplate of the Guard
-								i(139903),	-- Felblaze Handwraps
-								i(139942),	-- Felspawn Gloves
-								i(139954),	-- Moon Guard Robes
-								i(139984),	-- Ravencrest Chainmail
-								i(139920),	-- Robes of Elune
-								i(139995),	-- Siegebreaker's Gauntlets
-								i(139963),	-- Skyguard Grips
 								{
 									["questID"] = 44414,	-- Felspawns of Lothros
 									["qgs"] = { 113361, 113829 },	-- Quest Giver: Captain Jarod Shadowsong
@@ -324,6 +316,14 @@ _.Zones =
 										i(121802),	-- Ring of the Displaced Mage
 									},
 								},
+								i(139994),	-- Breastplate of the Guard
+								i(139903),	-- Felblaze Handwraps
+								i(139942),	-- Felspawn Gloves
+								i(139954),	-- Moon Guard Robes
+								i(139984),	-- Ravencrest Chainmail
+								i(139920),	-- Robes of Elune
+								i(139995),	-- Siegebreaker's Gauntlets
+								i(139963),	-- Skyguard Grips
 							},
 						},
 						{
