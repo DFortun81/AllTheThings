@@ -210,17 +210,38 @@ _.Zones =
 										i(136014),	-- Vindictive Combatant's Plate Legguards
 										i(136011),	-- Vindictive Combatant's Plate Warboots
 									}),
-									i(146165, {	-- Vindictive Combatant's Dreadplate Armor
-										i(135933),	-- Vindictive Combatant's Dreadplate Helm
-										i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
-										i(136018),	-- Vindictive Combatant's Dreadcloak
-										i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece
-										i(135937),	-- Vindictive Combatant's Dreadplate Wristplates
-										i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets
-										i(135936),	-- Vindictive Combatant's Dreadplate Girdle
-										i(135934),	-- Vindictive Combatant's Dreadplate Legguards
-										i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
-									}),
+									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Dreadplate Helm
+												["itemID"] = 135933,	-- Vindictive Combatant's Dreadplate Helm
+											},
+											{	-- Vindictive Combatant's Dreadplate Shoulders
+												["itemID"] = 135935,	-- Vindictive Combatant's Dreadplate Shoulders
+											},
+											{	-- Vindictive Combatant's Dreadcloak
+												["itemID"] = 136018,	-- Vindictive Combatant's Dreadcloak
+											},
+											{	-- Vindictive Combatant's Dreadplate Chestpiece
+												["itemID"] = 135930,	-- Vindictive Combatant's Dreadplate Chestpiece
+											},
+											{	-- Vindictive Combatant's Dreadplate Wristplates
+												["itemID"] = 135937,	-- Vindictive Combatant's Dreadplate Wristplates
+											},
+											{	-- Vindictive Combatant's Dreadplate Gauntlets
+												["itemID"] = 135932,	-- Vindictive Combatant's Dreadplate Gauntlets
+											},
+											{	-- Vindictive Combatant's Dreadplate Girdle
+												["itemID"] = 135936,	-- Vindictive Combatant's Dreadplate Girdle
+											},
+											{	-- Vindictive Combatant's Dreadplate Legguards
+												["itemID"] = 135934,	-- Vindictive Combatant's Dreadplate Legguards
+											},
+											{	-- Vindictive Combatant's Dreadplate Sabatons
+												["itemID"] = 135931,	-- Vindictive Combatant's Dreadplate Sabatons
+											},
+										},
+									},
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147687,	-- Ensemble: Cruel Combatant's Satin Armor
@@ -409,17 +430,38 @@ _.Zones =
 										i(145265),	-- Cruel Combatant's Plate Legguards
 										i(145259),	-- Cruel Combatant's Plate Warboots
 									}),
-									i(147678, {	-- Cruel Combatant's Dreadplate Armor
-										i(145057),	-- Cruel Combatant's Dreadplate Helm
-										i(145061),	-- Cruel Combatant's Dreadplate Shoulders
-										i(145027),	-- Cruel Combatant's Dreadcloak
-										i(145051),	-- Cruel Combatant's Dreadplate Chestpiece
-										i(145065),	-- Cruel Combatant's Dreadplate Wristplates
-										i(145055),	-- Cruel Combatant's Dreadplate Gauntlets
-										i(145063),	-- Cruel Combatant's Dreadplate Girdle
-										i(145059),	-- Cruel Combatant's Dreadplate Legguards
-										i(145053),	-- Cruel Combatant's Dreadplate Sabatons
-									}),
+									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 147678,	-- Ensemble: Cruel Combatant's Dreadplate Armor
+										["g"] = {
+											{	-- Cruel Combatant's Dreadplate Helm
+												["itemID"] = 145057,	-- Cruel Combatant's Dreadplate Helm
+											},
+											{	-- Cruel Combatant's Dreadplate Shoulders
+												["itemID"] = 145061,	-- Cruel Combatant's Dreadplate Shoulders
+											},
+											{	-- Cruel Combatant's Dreadcloak
+												["itemID"] = 145027,	-- Cruel Combatant's Dreadcloak
+											},
+											{	-- Cruel Combatant's Dreadplate Chestpiece
+												["itemID"] = 145051,	-- Cruel Combatant's Dreadplate Chestpiece
+											},
+											{	-- Cruel Combatant's Dreadplate Wristplates
+												["itemID"] = 145065,	-- Cruel Combatant's Dreadplate Wristplates
+											},
+											{	-- Cruel Combatant's Dreadplate Gauntlets
+												["itemID"] = 145055,	-- Cruel Combatant's Dreadplate Gauntlets
+											},
+											{	-- Cruel Combatant's Dreadplate Girdle
+												["itemID"] = 145063,	-- Cruel Combatant's Dreadplate Girdle
+											},
+											{	-- Cruel Combatant's Dreadplate Legguards
+												["itemID"] = 145059,	-- Cruel Combatant's Dreadplate Legguards
+											},
+											{	-- Cruel Combatant's Dreadplate Sabatons
+												["itemID"] = 145053,	-- Cruel Combatant's Dreadplate Sabatons
+											},
+										},
+									},
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 150262,	-- Ensemble: Fierce Combatant's Satin Armor
@@ -514,6 +556,38 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Scaled Sabatons
 												["itemID"] = 149635,	-- Fierce Combatant's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 150253,	-- Ensemble: Fierce Combatant's Dreadplate Armor
+										["g"] = {
+											{	-- Fierce Combatant's Dreadplate Helm
+												["itemID"] = 149536,	-- Fierce Combatant's Dreadplate Helm
+											},
+											{	-- Fierce Combatant's Dreadplate Shoulders
+												["itemID"] = 149540,	-- Fierce Combatant's Dreadplate Shoulders
+											},
+											{	-- Fierce Combatant's Dreadcloak
+												["itemID"] = 149506,	-- Fierce Combatant's Dreadcloak
+											},
+											{	-- Fierce Combatant's Dreadplate Chestpiece
+												["itemID"] = 149530,	-- Fierce Combatant's Dreadplate Chestpiece
+											},
+											{	-- Fierce Combatant's Dreadplate Wristplates
+												["itemID"] = 149544,	-- Fierce Combatant's Dreadplate Wristplates
+											},
+											{	-- Fierce Combatant's Dreadplate Gauntlets
+												["itemID"] = 149534,	-- Fierce Combatant's Dreadplate Gauntlets
+											},
+											{	-- Fierce Combatant's Dreadplate Girdle
+												["itemID"] = 149542,	-- Fierce Combatant's Dreadplate Girdle
+											},
+											{	-- Fierce Combatant's Dreadplate Legguards
+												["itemID"] = 149538,	-- Fierce Combatant's Dreadplate Legguards
+											},
+											{	-- Fierce Combatant's Dreadplate Sabatons
+												["itemID"] = 149532,	-- Fierce Combatant's Dreadplate Sabatons
 											},
 										},
 									},
@@ -708,18 +782,38 @@ _.Zones =
 										i(135788),	-- Vindictive Gladiator's Plate Legguards
 										i(135785),	-- Vindictive Gladiator's Plate Warboots
 									}),
-									i(146133, {	-- Vindictive Gladiator's Dreadplate Armor
-										i(135707),	-- Vindictive Gladiator's Dreadplate Helm
-										i(135709),	-- Vindictive Gladiator's Dreadplate Shoulders
-										i(135792),	-- Vindictive Gladiator's Dreadcloak
-										i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece
-										i(135711),	-- Vindictive Gladiator's Dreadplate Wristplates
-										i(135706),	-- Vindictive Gladiator's Dreadplate Gauntlets
-										i(135710),	-- Vindictive Gladiator's Dreadplate Girdle
-										i(135708),	-- Vindictive Gladiator's Dreadplate Legguards
-										i(135705),	-- Vindictive Gladiator's Dreadplate Sabatons
-
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 146133,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Dreadplate Helm
+												["itemID"] = 135707,	-- Vindictive Gladiator's Dreadplate Helm
+											},
+											{	-- Vindictive Gladiator's Dreadplate Shoulders
+												["itemID"] = 135709,	-- Vindictive Gladiator's Dreadplate Shoulders
+											},
+											{	-- Vindictive Gladiator's Dreadcloak
+												["itemID"] = 135792,	-- Vindictive Gladiator's Dreadcloak
+											},
+											{	-- Vindictive Gladiator's Dreadplate Chestpiece
+												["itemID"] = 135704,	-- Vindictive Gladiator's Dreadplate Chestpiece
+											},
+											{	-- Vindictive Gladiator's Dreadplate Wristplates
+												["itemID"] = 135711,	-- Vindictive Gladiator's Dreadplate Wristplates
+											},
+											{	-- Vindictive Gladiator's Dreadplate Gauntlets
+												["itemID"] = 135706,	-- Vindictive Gladiator's Dreadplate Gauntlets
+											},
+											{	-- Vindictive Gladiator's Dreadplate Girdle
+												["itemID"] = 135710,	-- Vindictive Gladiator's Dreadplate Girdle
+											},
+											{	-- Vindictive Gladiator's Dreadplate Legguards
+												["itemID"] = 135708,	-- Vindictive Gladiator's Dreadplate Legguards
+											},
+											{	-- Vindictive Gladiator's Dreadplate Sabatons
+												["itemID"] = 135705,	-- Vindictive Gladiator's Dreadplate Sabatons
+											},
+										},
+									},
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147664,	-- Ensemble: Cruel Gladiator's Satin Armor
@@ -905,17 +999,38 @@ _.Zones =
 										i(144771),	-- Cruel Gladiator's Plate Helm
 										i(144765),	-- Cruel Gladiator's Plate Chestpiece
 									}),
-									i(147649, {	-- Cruel Gladiator's Dreadplate Armor
-										i(144565),	-- Cruel Gladiator's Dreadplate Helm
-										i(144569),	-- Cruel Gladiator's Dreadplate Shoulders
-										i(144535),	-- Cruel Gladiator's Dreadcloak
-										i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece
-										i(144573),	-- Cruel Gladiator's Dreadplate Wristplates
-										i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets
-										i(144571),	-- Cruel Gladiator's Dreadplate Girdle
-										i(144567),	-- Cruel Gladiator's Dreadplate Legguards
-										i(144561),	-- Cruel Gladiator's Dreadplate Sabatons
-									}),
+									{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 147649,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Dreadplate Helm
+												["itemID"] = 144565,	-- Cruel Gladiator's Dreadplate Helm
+											},
+											{	-- Cruel Gladiator's Dreadplate Shoulders
+												["itemID"] = 144569,	-- Cruel Gladiator's Dreadplate Shoulders
+											},
+											{	-- Cruel Gladiator's Dreadcloak
+												["itemID"] = 144535,	-- Cruel Gladiator's Dreadcloak
+											},
+											{	-- Cruel Gladiator's Dreadplate Chestpiece
+												["itemID"] = 144559,	-- Cruel Gladiator's Dreadplate Chestpiece
+											},
+											{	-- Cruel Gladiator's Dreadplate Wristplates
+												["itemID"] = 144573,	-- Cruel Gladiator's Dreadplate Wristplates
+											},
+											{	-- Cruel Gladiator's Dreadplate Gauntlets
+												["itemID"] = 144563,	-- Cruel Gladiator's Dreadplate Gauntlets
+											},
+											{	-- Cruel Gladiator's Dreadplate Girdle
+												["itemID"] = 144571,	-- Cruel Gladiator's Dreadplate Girdle
+											},
+											{	-- Cruel Gladiator's Dreadplate Legguards
+												["itemID"] = 144567,	-- Cruel Gladiator's Dreadplate Legguards
+											},
+											{	-- Cruel Gladiator's Dreadplate Sabatons
+												["itemID"] = 144561,	-- Cruel Gladiator's Dreadplate Sabatons
+											},
+										},
+									},
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 149497,	-- Ensemble: Fierce Gladiator's Satin Armor
@@ -1010,6 +1125,38 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Scaled Sabatons
 												["itemID"] = 148037,	-- Fierce Gladiator's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 149482,	-- Ensemble: Fierce Gladiator's Dreadplate Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Dreadplate Helm
+												["itemID"] = 147940,	-- Fierce Gladiator's Dreadplate Helm
+											},
+											{	-- Fierce Gladiator's Dreadplate Shoulders
+												["itemID"] = 147944,	-- Fierce Gladiator's Dreadplate Shoulders
+											},
+											{	-- Fierce Gladiator's Dreadcloak
+												["itemID"] = 147910,	-- Fierce Gladiator's Dreadcloak
+											},
+											{	-- Fierce Gladiator's Dreadplate Chestpiece
+												["itemID"] = 147934,	-- Fierce Gladiator's Dreadplate Chestpiece
+											},
+											{	-- Fierce Gladiator's Dreadplate Wristplates
+												["itemID"] = 147948,	-- Fierce Gladiator's Dreadplate Wristplates
+											},
+											{	-- Fierce Gladiator's Dreadplate Gauntlets
+												["itemID"] = 147938,	-- Fierce Gladiator's Dreadplate Gauntlets
+											},
+											{	-- Fierce Gladiator's Dreadplate Girdle
+												["itemID"] = 147946,	-- Fierce Gladiator's Dreadplate Girdle
+											},
+											{	-- Fierce Gladiator's Dreadplate Legguards
+												["itemID"] = 147942,	-- Fierce Gladiator's Dreadplate Legguards
+											},
+											{	-- Fierce Gladiator's Dreadplate Sabatons
+												["itemID"] = 147936,	-- Fierce Gladiator's Dreadplate Sabatons
 											},
 										},
 									},
