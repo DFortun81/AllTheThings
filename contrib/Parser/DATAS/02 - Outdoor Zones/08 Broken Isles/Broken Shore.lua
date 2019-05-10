@@ -1417,6 +1417,7 @@ _.Zones =
 					}),
 					n(120898, {	-- Warmage Kath'leen <Legionfall Artificer>
 						currency(1226, {	-- Nethershard
+							i(147451),	-- Armorcrafter's Commendation
 							{ -- Arsenal: Armaments of the Ebon Blade
 								["ignoreBonus"] = true,
 								["itemID"] = 141372,
