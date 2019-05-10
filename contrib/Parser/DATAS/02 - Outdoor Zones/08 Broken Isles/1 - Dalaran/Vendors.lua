@@ -16,24 +16,45 @@ _.Zones =
 					}),
 					nh(119486, {	-- Apothecary Lee <Legion Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
-						["coords"] = { 
+						["coords"] = {
 							{ 56.59, 28.17, 627 },
 						},
 						["g"] = {
 							gssh(1071, {	-- Combatant
 								["g"] = {
 									-- LEGION Season 1 & 2
-									i(146159, {	-- Vindictive Combatant's Satin Armor
-										i(135980),	-- Vindictive Combatant's Satin Hood
-										i(135983),	-- Vindictive Combatant's Satin Mantle
-										i(136870),	-- Vindictive Combatant's Drape of Piety
-										i(135982),	-- Vindictive Combatant's Satin Tunic
-										i(135985),	-- Vindictive Combatant's Satin Bracers
-										i(135979),	-- Vindictive Combatant's Satin Gloves
-										i(135984),	-- Vindictive Combatant's Satin Cord
-										i(135981),	-- Vindictive Combatant's Satin Leggings
-										i(135978),	-- Vindictive Combatant's Satin Treads
-									}),
+									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 146159,	-- Ensemble: Vindictive Combatant's Satin Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Satin Hood
+												["itemID"] = 135980,	-- Vindictive Combatant's Satin Hood
+											},
+											{	-- Vindictive Combatant's Satin Mantle
+												["itemID"] = 135983,	-- Vindictive Combatant's Satin Mantle
+											},
+											{	-- Vindictive Combatant's Drape of Piety
+												["itemID"] = 136870,	-- Vindictive Combatant's Drape of Piety
+											},
+											{	-- Vindictive Combatant's Satin Tunic
+												["itemID"] = 135982,	-- Vindictive Combatant's Satin Tunic
+											},
+											{	-- Vindictive Combatant's Satin Bracers
+												["itemID"] = 135985,	-- Vindictive Combatant's Satin Bracers
+											},
+											{	-- Vindictive Combatant's Satin Gloves
+												["itemID"] = 135979,	-- Vindictive Combatant's Satin Gloves
+											},
+											{	-- Vindictive Combatant's Satin Cord
+												["itemID"] = 135984,	-- Vindictive Combatant's Satin Cord
+											},
+											{	-- Vindictive Combatant's Satin Leggings
+												["itemID"] = 135981,	-- Vindictive Combatant's Satin Leggings
+											},
+											{	-- Vindictive Combatant's Satin Treads
+												["itemID"] = 135978,	-- Vindictive Combatant's Satin Treads
+											},
+										},
+									},
 									i(146157, {	-- Vindictive Combatant's Silk Armor
 										i(135956),	-- Vindictive Combatant's Silk Cowl
 										i(135959),	-- Vindictive Combatant's Silk Amice
@@ -180,17 +201,38 @@ _.Zones =
 										i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
 									}),
 									-- LEGION Season 3 & 4
-									i(147687, {	-- Cruel Combatant's Satin Armor
-										i(145173),	-- Cruel Combatant's Satin Hood
-										i(145179),	-- Cruel Combatant's Satin Mantle
-										i(145041),	-- Cruel Combatant's Drape of Piety
-										i(145177),	-- Cruel Combatant's Satin Robe
-										i(145183),	-- Cruel Combatant's Satin Bracers
-										i(145171),	-- Cruel Combatant's Satin Gloves
-										i(145181),	-- Cruel Combatant's Satin Cord
-										i(145175),	-- Cruel Combatant's Satin Leggings
-										i(145169),	-- Cruel Combatant's Satin Treads
-									}),
+									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 147687,	-- Ensemble: Cruel Combatant's Satin Armor
+										["g"] = {
+											{	-- Cruel Combatant's Satin Hood
+												["itemID"] = 145173,	-- Cruel Combatant's Satin Hood
+											},
+											{	-- Cruel Combatant's Satin Mantle
+												["itemID"] = 145179,	-- Cruel Combatant's Satin Mantle
+											},
+											{	-- Cruel Combatant's Drape of Piety
+												["itemID"] = 145041,	-- Cruel Combatant's Drape of Piety
+											},
+											{	-- Cruel Combatant's Satin Robe
+												["itemID"] = 145177,	-- Cruel Combatant's Satin Robe
+											},
+											{	-- Cruel Combatant's Satin Bracers
+												["itemID"] = 145183,	-- Cruel Combatant's Satin Bracers
+											},
+											{	-- Cruel Combatant's Satin Gloves
+												["itemID"] = 145171,	-- Cruel Combatant's Satin Gloves
+											},
+											{	-- Cruel Combatant's Satin Cord
+												["itemID"] = 145181,	-- Cruel Combatant's Satin Cord
+											},
+											{	-- Cruel Combatant's Satin Leggings
+												["itemID"] = 145175,	-- Cruel Combatant's Satin Leggings
+											},
+											{	-- Cruel Combatant's Satin Treads
+												["itemID"] = 145169,	-- Cruel Combatant's Satin Treads
+											},
+										},
+									},
 									i(147695, {	-- Cruel Combatant's Silk Armor
 										i(145119),	-- Cruel Combatant's Silk Cowl
 										i(145125),	-- Cruel Combatant's Silk Amice
@@ -337,6 +379,38 @@ _.Zones =
 										i(145053),	-- Cruel Combatant's Dreadplate Sabatons
 									}),
 									-- LEGION Season 5, 6, 7
+									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 150262,	-- Ensemble: Fierce Combatant's Satin Armor
+										["g"] = {
+											{	-- Fierce Combatant's Satin Hood
+												["itemID"] = 149653,	-- Fierce Combatant's Satin Hood
+											},
+											{	-- Fierce Combatant's Satin Mantle
+												["itemID"] = 149659,	-- Fierce Combatant's Satin Mantle
+											},
+											{	-- Fierce Combatant's Drape of Piety
+												["itemID"] = 149520,	-- Fierce Combatant's Drape of Piety
+											},
+											{	-- Fierce Combatant's Satin Robe
+												["itemID"] = 149657,	-- Fierce Combatant's Satin Robe
+											},
+											{	-- Fierce Combatant's Satin Bracers
+												["itemID"] = 149663,	-- Fierce Combatant's Satin Bracers
+											},
+											{	-- Fierce Combatant's Satin Gloves
+												["itemID"] = 149651,	-- Fierce Combatant's Satin Gloves
+											},
+											{	-- Fierce Combatant's Satin Cord
+												["itemID"] = 149661,	-- Fierce Combatant's Satin Cord
+											},
+											{	-- Fierce Combatant's Satin Leggings
+												["itemID"] = 149655,	-- Fierce Combatant's Satin Leggings
+											},
+											{	-- Fierce Combatant's Satin Treads
+												["itemID"] = 149649,	-- Fierce Combatant's Satin Treads
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
 										["g"] = {
@@ -376,17 +450,38 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION Season 1 & 2
-									i(146149, {	-- Vindictive Gladiator's Satin Armor
-										i(135754),	-- Vindictive Gladiator's Satin Hood
-										i(135757),	-- Vindictive Gladiator's Satin Mantle
-										i(136864),	-- Vindictive Gladiator's Drape of Piety
-										i(135756),	-- Vindictive Gladiator's Satin Robe
-										i(135759),	-- Vindictive Gladiator's Satin Bracers
-										i(135753),	-- Vindictive Gladiator's Satin Gloves
-										i(135758),	-- Vindictive Gladiator's Satin Cord
-										i(135755),	-- Vindictive Gladiator's Satin Leggings
-										i(135752),	-- Vindictive Gladiator's Satin Treads
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 146149,	-- Ensemble: Vindictive Gladiator's Satin Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Satin Hood
+												["itemID"] = 135754,	-- Vindictive Gladiator's Satin Hood
+											},
+											{	-- Vindictive Gladiator's Satin Mantle
+												["itemID"] = 135757,	-- Vindictive Gladiator's Satin Mantle
+											},
+											{	-- Vindictive Gladiator's Drape of Piety
+												["itemID"] = 136864,	-- Vindictive Gladiator's Drape of Piety
+											},
+											{	-- Vindictive Gladiator's Satin Robe
+												["itemID"] = 135756,	-- Vindictive Gladiator's Satin Robe
+											},
+											{	-- Vindictive Gladiator's Satin Bracers
+												["itemID"] = 135759,	-- Vindictive Gladiator's Satin Bracers
+											},
+											{	-- Vindictive Gladiator's Satin Gloves
+												["itemID"] = 135753,	-- Vindictive Gladiator's Satin Gloves
+											},
+											{	-- Vindictive Gladiator's Satin Cord
+												["itemID"] = 135758,	-- Vindictive Gladiator's Satin Cord
+											},
+											{	-- Vindictive Gladiator's Satin Leggings
+												["itemID"] = 135755,	-- Vindictive Gladiator's Satin Leggings
+											},
+											{	-- Vindictive Gladiator's Satin Treads
+												["itemID"] = 135752,	-- Vindictive Gladiator's Satin Treads
+											},
+										},
+									},
 									i(146147, {	-- Vindictive Gladiator's Silk Armor
 										i(135730),	-- Vindictive Gladiator's Silk Cowl
 										i(135733),	-- Vindictive Gladiator's Silk Amice
@@ -532,17 +627,38 @@ _.Zones =
 
 									}),
 									-- LEGION Season 3 & 4
-									i(147664, {	-- Cruel Gladiator's Satin Armor
-										i(144681),	-- Cruel Gladiator's Satin Hood
-										i(144687),	-- Cruel Gladiator's Satin Mantle
-										i(144549),	-- Cruel Gladiator's Drape of Piety
-										i(144685),	-- Cruel Gladiator's Satin Robe
-										i(144691),	-- Cruel Gladiator's Satin Bracers
-										i(144679),	-- Cruel Gladiator's Satin Gloves
-										i(144689),	-- Cruel Gladiator's Satin Cord
-										i(144683),	-- Cruel Gladiator's Satin Leggings
-										i(144677),	-- Cruel Gladiator's Satin Treads
-									}),
+									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 147664,	-- Ensemble: Cruel Gladiator's Satin Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Satin Hood
+												["itemID"] = 144681,	-- Cruel Gladiator's Satin Hood
+											},
+											{	-- Cruel Gladiator's Satin Mantle
+												["itemID"] = 144687,	-- Cruel Gladiator's Satin Mantle
+											},
+											{	-- Cruel Gladiator's Drape of Piety
+												["itemID"] = 144549,	-- Cruel Gladiator's Drape of Piety
+											},
+											{	-- Cruel Gladiator's Satin Robe
+												["itemID"] = 144685,	-- Cruel Gladiator's Satin Robe
+											},
+											{	-- Cruel Gladiator's Satin Bracers
+												["itemID"] = 144691,	-- Cruel Gladiator's Satin Bracers
+											},
+											{	-- Cruel Gladiator's Satin Gloves
+												["itemID"] = 144679,	-- Cruel Gladiator's Satin Gloves
+											},
+											{	-- Cruel Gladiator's Satin Cord
+												["itemID"] = 144689,	-- Cruel Gladiator's Satin Cord
+											},
+											{	-- Cruel Gladiator's Satin Leggings
+												["itemID"] = 144683,	-- Cruel Gladiator's Satin Leggings
+											},
+											{	-- Cruel Gladiator's Satin Treads
+												["itemID"] = 144677,	-- Cruel Gladiator's Satin Treads
+											},
+										},
+									},
 									i(147667, {	-- Cruel Gladiator's Silk Armor
 										i(144627),	-- Cruel Gladiator's Silk Cowl
 										i(144633),	-- Cruel Gladiator's Silk Amice
@@ -687,6 +803,38 @@ _.Zones =
 										i(144561),	-- Cruel Gladiator's Dreadplate Sabatons
 									}),
 									-- LEGION Season 5, 6, 7
+									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 149497,	-- Ensemble: Fierce Gladiator's Satin Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Satin Hood
+												["itemID"] = 148056,	-- Fierce Gladiator's Satin Hood
+											},
+											{	-- Fierce Gladiator's Satin Mantle
+												["itemID"] = 148062,	-- Fierce Gladiator's Satin Mantle
+											},
+											{	-- Fierce Gladiator's Drape of Piety
+												["itemID"] = 147924,	-- Fierce Gladiator's Drape of Piety
+											},
+											{	-- Fierce Gladiator's Satin Robe
+												["itemID"] = 148060,	-- Fierce Gladiator's Satin Robe
+											},
+											{	-- Fierce Gladiator's Satin Bracers
+												["itemID"] = 148066,	-- Fierce Gladiator's Satin Bracers
+											},
+											{	-- Fierce Gladiator's Satin Gloves
+												["itemID"] = 148054,	-- Fierce Gladiator's Satin Gloves
+											},
+											{	-- Fierce Gladiator's Satin Cord
+												["itemID"] = 148064,	-- Fierce Gladiator's Satin Cord
+											},
+											{	-- Fierce Gladiator's Satin Leggings
+												["itemID"] = 148058,	-- Fierce Gladiator's Satin Leggings
+											},
+											{	-- Fierce Gladiator's Satin Treads
+												["itemID"] = 148052,	-- Fierce Gladiator's Satin Treads
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 149499,	-- Ensemble: Fierce Gladiator's Scaled Armor
 										["g"] = {
