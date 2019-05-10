@@ -94,9 +94,6 @@ local constructor = function(id, t, typeID)
 	end
 	return t;
 end
-local createInstance = function(template, prototype)
-	return setmetatable(template, prototype);
-end
 local contains = function(arr, value)
 	for i,value2 in ipairs(arr) do
 		if value2 == value then return true; end
@@ -3276,7 +3273,7 @@ app.BaseAchievement = {
 	end
 };
 app.CreateAchievement = function(id, t)
-	return createInstance(constructor(id, t, "achID"), app.BaseAchievement);
+	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
 end
 
 -- Achievement Criteria Lib
@@ -3370,7 +3367,7 @@ app.BaseAchievementCriteria = {
 	end
 };
 app.CreateAchievementCriteria = function(id, t)
-	return createInstance(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
+	return setmetatable(constructor(id, t, "criteriaID"), app.BaseAchievementCriteria);
 end
 
 (function()
@@ -3394,7 +3391,7 @@ app.BaseTransmogCategory = {
 };
 end)();
 app.CreateTransmogCategory = function(id, t)
-  return createInstance(constructor(id, t, "category"), app.BaseTransmogCategory);
+  return setmetatable(constructor(id, t, "category"), app.BaseTransmogCategory);
 end
     
 -- Artifact Lib
@@ -3496,7 +3493,7 @@ app.BaseCategory = {
 	end
 };
 app.CreateCategory = function(id, t)
-	return createInstance(constructor(id, t, "categoryID"), app.BaseCategory);
+	return setmetatable(constructor(id, t, "categoryID"), app.BaseCategory);
 end
 
 -- Character Class Lib
@@ -3548,7 +3545,7 @@ app.BaseCharacterClass = {
 	end
 };
 app.CreateCharacterClass = function(id, t)
-	return createInstance(constructor(id, t, "classID"), app.BaseCharacterClass);
+	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
 end
 app.BaseUnit = {
 	__index = function(t, key)
@@ -3595,7 +3592,7 @@ app.BaseUnit = {
 	end
 };
 app.CreateUnit = function(unit, t)
-	return createInstance(constructor(unit, t, "unit"), app.BaseUnit);
+	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
 end)();
 
@@ -3617,7 +3614,7 @@ app.BaseCurrencyClass = {
 	end
 };
 app.CreateCurrencyClass = function(id, t)
-	return createInstance(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
+	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
 
 -- Difficulty Lib
@@ -3699,7 +3696,7 @@ app.BaseDifficulty = {
 	end
 };
 app.CreateDifficulty = function(id, t)
-	return createInstance(constructor(id, t, "difficultyID"), app.BaseDifficulty);
+	return setmetatable(constructor(id, t, "difficultyID"), app.BaseDifficulty);
 end
 
 -- Encounter Lib
@@ -3747,7 +3744,7 @@ app.BaseEncounter = {
 	end
 };
 app.CreateEncounter = function(id, t)
-	return createInstance(constructor(id, t, "encounterID"), app.BaseEncounter);
+	return setmetatable(constructor(id, t, "encounterID"), app.BaseEncounter);
 end
 
 -- Faction Lib
@@ -3838,7 +3835,7 @@ app.BaseFaction = {
 	end
 };
 app.CreateFaction = function(id, t)
-	return createInstance(constructor(id, t, "factionID"), app.BaseFaction);
+	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 end)();
 
@@ -3949,7 +3946,7 @@ end)();
 		end
 	};
 	app.CreateFlightPath = function(id, t)
-		return createInstance(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+		return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 	end
 end)();
 
@@ -3969,7 +3966,7 @@ app.BaseFilter = {
 	end
 };
 app.CreateFilter = function(id, t)
-	return createInstance(constructor(id, t, "filterID"), app.BaseFilter);
+	return setmetatable(constructor(id, t, "filterID"), app.BaseFilter);
 end
 
 -- Follower Lib
@@ -4011,7 +4008,7 @@ app.BaseFollower = {
 	end
 };
 app.CreateFollower = function(id, t)
-	return createInstance(constructor(id, t, "followerID"), app.BaseFollower);
+	return setmetatable(constructor(id, t, "followerID"), app.BaseFollower);
 end
 
 -- /dump C_Garrison.GetBuildingInfo(1)
@@ -4067,7 +4064,7 @@ app.BaseGarrisonBuilding = {
 	end
 };
 app.CreateGarrisonBuilding = function(id, t)
-	return createInstance(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
+	return setmetatable(constructor(id, t, "buildingID"), app.BaseGarrisonBuilding);
 end
 
 -- Garrison Mission Lib
@@ -4086,7 +4083,7 @@ app.BaseGarrisonMission = {
 	end
 };
 app.CreateGarrisonMission = function(id, t)
-	return createInstance(constructor(id, t, "missionID"), app.BaseGarrisonMission);
+	return setmetatable(constructor(id, t, "missionID"), app.BaseGarrisonMission);
 end
 
 -- Garrison Talent Lib
@@ -4120,7 +4117,7 @@ app.BaseGarrisonTalent = {
 	end
 };
 app.CreateGarrisonTalent = function(id, t)
-	return createInstance(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
+	return setmetatable(constructor(id, t, "talentID"), app.BaseGarrisonTalent);
 end
 
 -- Heirloom Lib
@@ -4320,7 +4317,7 @@ app.BaseHeirloom = {
 	end
 };
 app.CreateHeirloom = function(id, t)
-	return createInstance(constructor(id, t, "itemID"), app.BaseHeirloom);
+	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
 end
 end)();
 
@@ -4415,7 +4412,7 @@ app.BaseHoliday = {
 	end
 };
 app.CreateHoliday = function(id, t)
-	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
+	return setmetatable(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
 end)();
 
@@ -4459,7 +4456,7 @@ app.BaseIllusion = {
 	end
 };
 app.CreateIllusion = function(id, t)
-	return createInstance(constructor(id, t, "illusionID"), app.BaseIllusion);
+	return setmetatable(constructor(id, t, "illusionID"), app.BaseIllusion);
 end
 
 -- Gear Set Lib
@@ -4515,7 +4512,7 @@ app.BaseGearSet = {
 	end
 };
 app.CreateGearSet = function(id, t)
-	return createInstance(constructor(id, t, "setID"), app.BaseGearSet);
+	return setmetatable(constructor(id, t, "setID"), app.BaseGearSet);
 end
 app.BaseGearSource = {
 	__index = function(t, key)
@@ -4548,7 +4545,7 @@ app.BaseGearSource = {
 	end
 };
 app.CreateGearSource = function(id)
-	return createInstance({ s = id}, app.BaseGearSource);
+	return setmetatable({ s = id}, app.BaseGearSource);
 end
 app.BaseGearSetHeader = {
 	__index = function(t, key)
@@ -4574,7 +4571,7 @@ app.BaseGearSetHeader = {
 	end
 };
 app.CreateGearSetHeader = function(id, t)
-	return createInstance(constructor(id, t, "setHeaderID"), app.BaseGearSetHeader);
+	return setmetatable(constructor(id, t, "setHeaderID"), app.BaseGearSetHeader);
 end
 app.BaseGearSetSubHeader = {
 	__index = function(t, key)
@@ -4600,7 +4597,7 @@ app.BaseGearSetSubHeader = {
 	end
 };
 app.CreateGearSetSubHeader = function(id, t)
-	return createInstance(constructor(id, t, "setSubHeaderID"), app.BaseGearSetSubHeader);
+	return setmetatable(constructor(id, t, "setSubHeaderID"), app.BaseGearSetSubHeader);
 end
 
 -- Instance Lib
@@ -4636,7 +4633,7 @@ app.BaseInstance = {
 	end
 };
 app.CreateInstance = function(id, t)
-	return createInstance(constructor(id, t, "instanceID"), app.BaseInstance);
+	return setmetatable(constructor(id, t, "instanceID"), app.BaseInstance);
 end
 
 -- Item Lib
@@ -4752,7 +4749,7 @@ app.BaseItem = {
 	end
 };
 app.CreateItem  = function(id, t)
-	return createInstance(constructor(id, t, "itemID"), app.BaseItem);
+	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 
 -- Item Source Lib
@@ -4832,7 +4829,7 @@ app.BaseItemSource = {
 	end
 };
 app.CreateItemSource = function(sourceID, itemID, t)
-	t = createInstance(constructor(sourceID, t, "s"), app.BaseItemSource);
+	t = setmetatable(constructor(sourceID, t, "s"), app.BaseItemSource);
 	t.itemID = itemID;
 	return t;
 end
@@ -4864,7 +4861,7 @@ app.BaseMap = {
 	end
 };
 app.CreateMap = function(id, t)
-	return createInstance(constructor(id, t, "mapID"), app.BaseMap);
+	return setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 end
 
 -- Mount Lib
@@ -4936,7 +4933,7 @@ app.BaseMount = {
 	end
 };
 app.CreateMount = function(id, t)
-	return createInstance(constructor(id, t, "spellID"), app.BaseMount);
+	return setmetatable(constructor(id, t, "spellID"), app.BaseMount);
 end
 
 -- Music Roll Lib
@@ -5003,7 +5000,7 @@ app.BaseMusicRoll = {
 };
 end)();
 app.CreateMusicRoll = function(questID, t)
-	return createInstance(constructor(questID, t, "questID"), app.BaseMusicRoll);
+	return setmetatable(constructor(questID, t, "questID"), app.BaseMusicRoll);
 end
 
 -- NPC Lib
@@ -5059,7 +5056,7 @@ app.BaseNPC = {
 	end
 };
 app.CreateNPC = function(id, t)
-	return createInstance(constructor(id, t, "npcID"), app.BaseNPC);
+	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
 end
 app.HolidayHeader = app.CreateNPC(-3, { g = {}, expanded = true, visible = false, total = 0, progress = 0 });
 
@@ -5090,7 +5087,7 @@ app.BaseObject = {
 	end
 };
 app.CreateObject = function(id, t)
-	return createInstance(constructor(id, t, "objectID"), app.BaseObject);
+	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
 end
 
 -- Pet Ability Lib
@@ -5111,7 +5108,7 @@ app.BasePetAbility = {
 	end
 };
 app.CreatePetAbility = function(id, t)
-	return createInstance(constructor(id, t, "petAbilityID"), app.BasePetAbility);
+	return setmetatable(constructor(id, t, "petAbilityID"), app.BasePetAbility);
 end
 
 -- Pet Type Lib
@@ -5132,7 +5129,7 @@ app.BasePetType = {
 	end
 };
 app.CreatePetType = function(id, t)
-	return createInstance(constructor(id, t, "petTypeID"), app.BasePetType);
+	return setmetatable(constructor(id, t, "petTypeID"), app.BasePetType);
 end
 
 -- Profession Lib
@@ -5175,7 +5172,7 @@ app.BaseProfession = {
 	end
 };
 app.CreateProfession = function(id, t)
-	return createInstance(constructor(id, t, "requireSkill"), app.BaseProfession);
+	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
 end
 
 -- Quest Lib
@@ -5239,7 +5236,7 @@ app.BaseQuest = {
 	end
 };
 app.CreateQuest = function(id, t)
-	return createInstance(constructor(id, t, "questID"), app.BaseQuest);
+	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
 
 -- Recipe Lib
@@ -5303,7 +5300,7 @@ app.BaseRecipe = {
 	end
 };
 app.CreateRecipe = function(id, t)
-	return createInstance(constructor(id, t, "spellID"), app.BaseRecipe);
+	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
 end
 
 -- Selfie Filters Lib
@@ -5365,7 +5362,7 @@ app.BaseSelfieFilter = {
 	end
 };
 app.CreateSelfieFilter = function(id, t)
-	return createInstance(constructor(id, t, "questID"), app.BaseSelfieFilter);
+	return setmetatable(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 
 -- Spell Lib
@@ -5417,7 +5414,7 @@ app.BaseSpell = {
 	end
 };
 app.CreateSpell = function(id, t)
-	return createInstance(constructor(id, t, "spellID"), app.BaseSpell);
+	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
 
 -- Species Lib
@@ -5498,7 +5495,7 @@ app.BaseSpecies = {
 	end
 };
 app.CreateSpecies = function(id, t)
-	return createInstance(constructor(id, t, "speciesID"), app.BaseSpecies);
+	return setmetatable(constructor(id, t, "speciesID"), app.BaseSpecies);
 end
 end)();
 
@@ -5553,7 +5550,7 @@ end)();
 		end
 	};
 	app.CreateTier = function(id, t)
-		return createInstance(constructor(id, t, "tierID"), app.BaseTier);
+		return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
 	end
 end)();
 
@@ -5652,7 +5649,7 @@ app.BaseTitle = {
 	end
 };
 app.CreateTitle = function(id, t)
-	return createInstance(constructor(id, t, "titleID"), app.BaseTitle);
+	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
 end
 
 -- Toy Lib
@@ -5687,7 +5684,7 @@ app.BaseToy = {
 	end
 };
 app.CreateToy = function(id, t)
-	return createInstance(constructor(id, t, "itemID"), app.BaseToy);
+	return setmetatable(constructor(id, t, "itemID"), app.BaseToy);
 end
 
 -- Vignette Lib
@@ -5797,7 +5794,7 @@ app.BaseVignette = {
 	end
 };
 app.CreateVignette = function(id, t)
-	return createInstance(constructor(id, t, "questID"), app.BaseVignette);
+	return setmetatable(constructor(id, t, "questID"), app.BaseVignette);
 end
 
 -- Filtering
@@ -11699,6 +11696,11 @@ app.events.ADDON_LOADED = function(addonName)
 				if searchResults and #searchResults > 0 then
 					searchResult = searchResults[1];
 					key = searchResult.key;
+					if key == "npcID" then
+						if searchResult.itemID then
+							key = "itemID";
+						end
+					end
 					value = searchResult[key];
 					keys = searchResultsByKey[key];
 					
@@ -11943,7 +11945,6 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetJustifyH("CENTER");
 		f:Show();
 		frame.descriptionLabel = f;
-		StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 		
 		-- Register for Events [Only when requests sent by ATT]
 		frame:SetScript("OnEvent", function(self, e, ...)
@@ -11971,9 +11972,14 @@ app.events.ADDON_LOADED = function(addonName)
 				AuctionFrameBot:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Auction-Bot");
 				AuctionFrameBotRight:SetTexture("Interface\\AuctionFrame\\UI-AuctionFrame-Bid-BotRight");
 				StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
+				if not self.InitialProcess then
+					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
+					self.InitialProcess = true;
+				end
 				
 				frame:Show();
 			else
+				app:GetWindow("AuctionData"):Hide();
 				frame:Hide();
 			end
 		end);
