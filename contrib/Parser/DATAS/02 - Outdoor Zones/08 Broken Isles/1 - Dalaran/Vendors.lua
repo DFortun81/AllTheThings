@@ -145,17 +145,38 @@ _.Zones =
 											i(136303),	-- Vindictive Combatant's Felskin Boots
 										},
 									}),
-									i(146155, {	-- Vindictive Combatant's Chain Armor
-										i(135949),	-- Vindictive Combatant's Chain Helm
-										i(135951),	-- Vindictive Combatant's Chain Spaulders
-										i(136026),	-- Vindictive Combatant's Drape of the Tracker
-										i(135946),	-- Vindictive Combatant's Chain Armor
-										i(135953),	-- Vindictive Combatant's Chain Armband
-										i(135948),	-- Vindictive Combatant's Chain Gauntlets
-										i(135952),	-- Vindictive Combatant's Chain Clasp
-										i(135950),	-- Vindictive Combatant's Chain Leggings
-										i(135947),	-- Vindictive Combatant's Chain Treads
-									}),
+									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 146155,	-- Ensemble: Vindictive Combatant's Chain Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Chain Helm
+												["itemID"] = 135949,	-- Vindictive Combatant's Chain Helm
+											},
+											{	-- Vindictive Combatant's Chain Spaulders
+												["itemID"] = 135951,	-- Vindictive Combatant's Chain Spaulders
+											},
+											{	-- Vindictive Combatant's Drape of the Tracker
+												["itemID"] = 136026,	-- Vindictive Combatant's Drape of the Tracker
+											},
+											{	-- Vindictive Combatant's Chain Armor
+												["itemID"] = 135946,	-- Vindictive Combatant's Chain Armor
+											},
+											{	-- Vindictive Combatant's Chain Armband
+												["itemID"] = 135953,	-- Vindictive Combatant's Chain Armband
+											},
+											{	-- Vindictive Combatant's Chain Gauntlets
+												["itemID"] = 135948,	-- Vindictive Combatant's Chain Gauntlets
+											},
+											{	-- Vindictive Combatant's Chain Clasp
+												["itemID"] = 135952,	-- Vindictive Combatant's Chain Clasp
+											},
+											{	-- Vindictive Combatant's Chain Leggings
+												["itemID"] = 135950,	-- Vindictive Combatant's Chain Leggings
+											},
+											{	-- Vindictive Combatant's Chain Treads
+												["itemID"] = 135947,	-- Vindictive Combatant's Chain Treads
+											},
+										},
+									},
 									i(146153, {	-- Vindictive Combatant's Ringmail Armor
 										i(135997),	-- Vindictive Combatant's Ringmail Helm
 										i(135999),	-- Vindictive Combatant's Ringmail Spaulders
@@ -365,17 +386,38 @@ _.Zones =
 										},
 										["classes"] = { 12 },
 									}),
-									i(147690, {	-- Cruel Combatant's Chain Armor
-										i(145105),	-- Cruel Combatant's Chain Helm
-										i(145109),	-- Cruel Combatant's Chain Spaulders
-										i(145033),	-- Cruel Combatant's Drape of the Tracker
-										i(145099),	-- Cruel Combatant's Chain Armor
-										i(145113),	-- Cruel Combatant's Chain Armband
-										i(145103),	-- Cruel Combatant's Chain Gauntlets
-										i(145111),	-- Cruel Combatant's Chain Clasp
-										i(145107),	-- Cruel Combatant's Chain Leggings
-										i(145101),	-- Cruel Combatant's Chain Treads
-									}),
+									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 147690,	-- Ensemble: Cruel Combatant's Chain Armor
+										["g"] = {
+											{	-- Cruel Combatant's Chain Helm
+												["itemID"] = 145105,	-- Cruel Combatant's Chain Helm
+											},
+											{	-- Cruel Combatant's Chain Spaulders
+												["itemID"] = 145109,	-- Cruel Combatant's Chain Spaulders
+											},
+											{	-- Cruel Combatant's Drape of the Tracker
+												["itemID"] = 145033,	-- Cruel Combatant's Drape of the Tracker
+											},
+											{	-- Cruel Combatant's Chain Armor
+												["itemID"] = 145099,	-- Cruel Combatant's Chain Armor
+											},
+											{	-- Cruel Combatant's Chain Armband
+												["itemID"] = 145113,	-- Cruel Combatant's Chain Armband
+											},
+											{	-- Cruel Combatant's Chain Gauntlets
+												["itemID"] = 145103,	-- Cruel Combatant's Chain Gauntlets
+											},
+											{	-- Cruel Combatant's Chain Clasp
+												["itemID"] = 145111,	-- Cruel Combatant's Chain Clasp
+											},
+											{	-- Cruel Combatant's Chain Leggings
+												["itemID"] = 145107,	-- Cruel Combatant's Chain Leggings
+											},
+											{	-- Cruel Combatant's Chain Treads
+												["itemID"] = 145101,	-- Cruel Combatant's Chain Treads
+											},
+										},
+									},
 									i(147673, {	-- Cruel Combatant's Ringmail Armor
 										i(145213),	-- Cruel Combatant's Ringmail Helm
 										i(145217),	-- Cruel Combatant's Ringmail Spaulders
@@ -524,6 +566,38 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Dragonhide Moccasins
 												["itemID"] = 149564,	-- Fierce Combatant's Dragonhide Moccasins
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
+										["g"] = {
+											{	-- Fierce Combatant's Chain Helm
+												["itemID"] = 149585,	-- Fierce Combatant's Chain Helm
+											},
+											{	-- Fierce Combatant's Chain Spaulders
+												["itemID"] = 149589,	-- Fierce Combatant's Chain Spaulders
+											},
+											{	-- Fierce Combatant's Drape of the Tracker
+												["itemID"] = 149512,	-- Fierce Combatant's Drape of the Tracker
+											},
+											{	-- Fierce Combatant's Chain Armor
+												["itemID"] = 149579,	-- Fierce Combatant's Chain Armor
+											},
+											{	-- Fierce Combatant's Chain Armband
+												["itemID"] = 149593,	-- Fierce Combatant's Chain Armband
+											},
+											{	-- Fierce Combatant's Chain Gauntlets
+												["itemID"] = 149583,	-- Fierce Combatant's Chain Gauntlets
+											},
+											{	-- Fierce Combatant's Chain Clasp
+												["itemID"] = 149591,	-- Fierce Combatant's Chain Clasp
+											},
+											{	-- Fierce Combatant's Chain Leggings
+												["itemID"] = 149587,	-- Fierce Combatant's Chain Leggings
+											},
+											{	-- Fierce Combatant's Chain Treads
+												["itemID"] = 149581,	-- Fierce Combatant's Chain Treads
 											},
 										},
 									},
@@ -717,17 +791,38 @@ _.Zones =
 										i(136290),	-- Vindictive Gladiator's Felskin Legguards
 										i(136287),	-- Vindictive Gladiator's Felskin Boots
 									}),
-									i(146139, {	-- Vindictive Gladiator's Chain Armor
-										i(135723),	-- Vindictive Gladiator's Chain Helm
-										i(135725),	-- Vindictive Gladiator's Chain Spaulders
-										i(135800),	-- Vindictive Gladiator's Drape of the Tracker
-										i(135720),	-- Vindictive Gladiator's Chain Armor
-										i(135727),	-- Vindictive Gladiator's Chain Armband
-										i(135722),	-- Vindictive Gladiator's Chain Gauntlets
-										i(135726),	-- Vindictive Gladiator's Chain Clasp
-										i(135724),	-- Vindictive Gladiator's Chain Leggings
-										i(135721),	-- Vindictive Gladiator's Chain Treads
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 146139,	-- Ensemble: Vindictive Gladiator's Chain Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Chain Helm
+												["itemID"] = 135723,	-- Vindictive Gladiator's Chain Helm
+											},
+											{	-- Vindictive Gladiator's Chain Spaulders
+												["itemID"] = 135725,	-- Vindictive Gladiator's Chain Spaulders
+											},
+											{	-- Vindictive Gladiator's Drape of the Tracker
+												["itemID"] = 135800,	-- Vindictive Gladiator's Drape of the Tracker
+											},
+											{	-- Vindictive Gladiator's Chain Armor
+												["itemID"] = 135720,	-- Vindictive Gladiator's Chain Armor
+											},
+											{	-- Vindictive Gladiator's Chain Armband
+												["itemID"] = 135727,	-- Vindictive Gladiator's Chain Armband
+											},
+											{	-- Vindictive Gladiator's Chain Gauntlets
+												["itemID"] = 135722,	-- Vindictive Gladiator's Chain Gauntlets
+											},
+											{	-- Vindictive Gladiator's Chain Clasp
+												["itemID"] = 135726,	-- Vindictive Gladiator's Chain Clasp
+											},
+											{	-- Vindictive Gladiator's Chain Leggings
+												["itemID"] = 135724,	-- Vindictive Gladiator's Chain Leggings
+											},
+											{	-- Vindictive Gladiator's Chain Treads
+												["itemID"] = 135721,	-- Vindictive Gladiator's Chain Treads
+											},
+										},
+									},
 									i(146137, {	-- Vindictive Gladiator's Ringmail Armor
 										i(135771),	-- Vindictive Gladiator's Ringmail Helm
 										i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
@@ -934,17 +1029,38 @@ _.Zones =
 										i(144583),	-- Cruel Gladiator's Felskin Legguards
 										i(144577),	-- Cruel Gladiator's Felskin Boots
 									}),
-									i(147645, {	-- Cruel Gladiator's Chain Armor
-										i(144613),	-- Cruel Gladiator's Chain Helm
-										i(144617),	-- Cruel Gladiator's Chain Spaulders
-										i(144541),	-- Cruel Gladiator's Drape of the Tracker
-										i(144607),	-- Cruel Gladiator's Chain Armor
-										i(144621),	-- Cruel Gladiator's Chain Armband
-										i(144611),	-- Cruel Gladiator's Chain Gauntlets
-										i(144619),	-- Cruel Gladiator's Chain Clasp
-										i(144615),	-- Cruel Gladiator's Chain Leggings
-										i(144609),	-- Cruel Gladiator's Chain Treads
-									}),
+									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 147645,	-- Ensemble: Cruel Gladiator's Chain Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Chain Helm
+												["itemID"] = 144613,	-- Cruel Gladiator's Chain Helm
+											},
+											{	-- Cruel Gladiator's Chain Spaulders
+												["itemID"] = 144617,	-- Cruel Gladiator's Chain Spaulders
+											},
+											{	-- Cruel Gladiator's Drape of the Tracker
+												["itemID"] = 144541,	-- Cruel Gladiator's Drape of the Tracker
+											},
+											{	-- Cruel Gladiator's Chain Armor
+												["itemID"] = 144607,	-- Cruel Gladiator's Chain Armor
+											},
+											{	-- Cruel Gladiator's Chain Armband
+												["itemID"] = 144621,	-- Cruel Gladiator's Chain Armband
+											},
+											{	-- Cruel Gladiator's Chain Gauntlets
+												["itemID"] = 144611,	-- Cruel Gladiator's Chain Gauntlets
+											},
+											{	-- Cruel Gladiator's Chain Clasp
+												["itemID"] = 144619,	-- Cruel Gladiator's Chain Clasp
+											},
+											{	-- Cruel Gladiator's Chain Leggings
+												["itemID"] = 144615,	-- Cruel Gladiator's Chain Leggings
+											},
+											{	-- Cruel Gladiator's Chain Treads
+												["itemID"] = 144609,	-- Cruel Gladiator's Chain Treads
+											},
+										},
+									},
 									i(147662, {	-- Cruel Gladiator's Ringmail Armor
 										i(144721),	-- Cruel Gladiator's Ringmail Helm
 										i(144725),	-- Cruel Gladiator's Ringmail Spaulders
@@ -1093,6 +1209,38 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Dragonhide Moccasins
 												["itemID"] = 147968,	-- Fierce Gladiator's Dragonhide Moccasins
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Chain Helm
+												["itemID"] = 147988,	-- Fierce Gladiator's Chain Helm
+											},
+											{	-- Fierce Gladiator's Chain Spaulders
+												["itemID"] = 147992,	-- Fierce Gladiator's Chain Spaulders
+											},
+											{	-- Fierce Gladiator's Drape of the Tracker
+												["itemID"] = 147916,	-- Fierce Gladiator's Drape of the Tracker
+											},
+											{	-- Fierce Gladiator's Chain Armor
+												["itemID"] = 147982,	-- Fierce Gladiator's Chain Armor
+											},
+											{	-- Fierce Gladiator's Chain Armband
+												["itemID"] = 147996,	-- Fierce Gladiator's Chain Armband
+											},
+											{	-- Fierce Gladiator's Chain Gauntlets
+												["itemID"] = 147986,	-- Fierce Gladiator's Chain Gauntlets
+											},
+											{	-- Fierce Gladiator's Chain Clasp
+												["itemID"] = 147994,	-- Fierce Gladiator's Chain Clasp
+											},
+											{	-- Fierce Gladiator's Chain Leggings
+												["itemID"] = 147990,	-- Fierce Gladiator's Chain Leggings
+											},
+											{	-- Fierce Gladiator's Chain Treads
+												["itemID"] = 147984,	-- Fierce Gladiator's Chain Treads
 											},
 										},
 									},
