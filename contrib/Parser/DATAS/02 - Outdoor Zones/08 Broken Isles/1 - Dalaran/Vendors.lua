@@ -77,17 +77,38 @@ _.Zones =
 										i(136005),	-- Vindictive Combatant's Felweave Trousers
 										i(136002),	-- Vindictive Combatant's Felweave Treads
 									}),
-									i(146169, {	-- Vindictive Combatant's Dragonhide Armor
-										i(135940),	-- Vindictive Combatant's Dragonhide Helm
-										i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
-										i(136022),	-- Vindictive Combatant's Dragonhide Cloak
-										i(135942),	-- Vindictive Combatant's Dragonhide Tunic
-										i(135945),	-- Vindictive Combatant's Dragonhide Wristguards
-										i(135939),	-- Vindictive Combatant's Dragonhide Gloves
-										i(135944),	-- Vindictive Combatant's Dragonhide Belt
-										i(135941),	-- Vindictive Combatant's Dragonhide Legguards
-										i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
-									}),
+									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 146169,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Dragonhide Helm
+												["itemID"] = 135940,	-- Vindictive Combatant's Dragonhide Helm
+											},
+											{	-- Vindictive Combatant's Dragonhide Spaulders
+												["itemID"] = 135943,	-- Vindictive Combatant's Dragonhide Spaulders
+											},
+											{	-- Vindictive Combatant's Dragonhide Cloak
+												["itemID"] = 136022,	-- Vindictive Combatant's Dragonhide Cloak
+											},
+											{	-- Vindictive Combatant's Dragonhide Tunic
+												["itemID"] = 135942,	-- Vindictive Combatant's Dragonhide Tunic
+											},
+											{	-- Vindictive Combatant's Dragonhide Wristguards
+												["itemID"] = 135945,	-- Vindictive Combatant's Dragonhide Wristguards
+											},
+											{	-- Vindictive Combatant's Dragonhide Gloves
+												["itemID"] = 135939,	-- Vindictive Combatant's Dragonhide Gloves
+											},
+											{	-- Vindictive Combatant's Dragonhide Belt
+												["itemID"] = 135944,	-- Vindictive Combatant's Dragonhide Belt
+											},
+											{	-- Vindictive Combatant's Dragonhide Legguards
+												["itemID"] = 135941,	-- Vindictive Combatant's Dragonhide Legguards
+											},
+											{	-- Vindictive Combatant's Dragonhide Moccasins
+												["itemID"] = 135938,	-- Vindictive Combatant's Dragonhide Moccasins
+											},
+										},
+									},
 									i(146173, {	-- Vindictive Combatant's Leather Armor
 										i(135989),	-- Vindictive Combatant's Leather Helm
 										i(135991),	-- Vindictive Combatant's Leather Spaulders
@@ -255,17 +276,38 @@ _.Zones =
 										i(145247),	-- Cruel Combatant's Felweave Trousers
 										i(145241),	-- Cruel Combatant's Felweave Treads
 									}),
-									i(147676, {	-- Cruel Combatant's Dragonhide Armor
-										i(145089),	-- Cruel Combatant's Dragonhide Helm
-										i(145093),	-- Cruel Combatant's Dragonhide Spaulders
-										i(145031),	-- Cruel Combatant's Dragonhide Cloak
-										i(145083),	-- Cruel Combatant's Dragonhide Tunic
-										i(145097),	-- Cruel Combatant's Dragonhide Wristguards
-										i(145087),	-- Cruel Combatant's Dragonhide Gloves
-										i(145095),	-- Cruel Combatant's Dragonhide Belt
-										i(145091),	-- Cruel Combatant's Dragonhide Legguards
-										i(145085),	-- Cruel Combatant's Dragonhide Moccasins
-									}),
+									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 147676,	-- Ensemble: Cruel Combatant's Dragonhide Armor
+										["g"] = {
+											{	-- Cruel Combatant's Dragonhide Helm
+												["itemID"] = 145089,	-- Cruel Combatant's Dragonhide Helm
+											},
+											{	-- Cruel Combatant's Dragonhide Spaulders
+												["itemID"] = 145093,	-- Cruel Combatant's Dragonhide Spaulders
+											},
+											{	-- Cruel Combatant's Dragonhide Cloak
+												["itemID"] = 145031,	-- Cruel Combatant's Dragonhide Cloak
+											},
+											{	-- Cruel Combatant's Dragonhide Tunic
+												["itemID"] = 145083,	-- Cruel Combatant's Dragonhide Tunic
+											},
+											{	-- Cruel Combatant's Dragonhide Wristguards
+												["itemID"] = 145097,	-- Cruel Combatant's Dragonhide Wristguards
+											},
+											{	-- Cruel Combatant's Dragonhide Gloves
+												["itemID"] = 145087,	-- Cruel Combatant's Dragonhide Gloves
+											},
+											{	-- Cruel Combatant's Dragonhide Belt
+												["itemID"] = 145095,	-- Cruel Combatant's Dragonhide Belt
+											},
+											{	-- Cruel Combatant's Dragonhide Legguards
+												["itemID"] = 145091,	-- Cruel Combatant's Dragonhide Legguards
+											},
+											{	-- Cruel Combatant's Dragonhide Moccasins
+												["itemID"] = 145085,	-- Cruel Combatant's Dragonhide Moccasins
+											},
+										},
+									},
 									i(147686, {	-- Cruel Combatant's Leather Armor
 										i(145197),	-- Cruel Combatant's Leather Helm
 										i(145201),	-- Cruel Combatant's Leather Spaulders
@@ -411,6 +453,38 @@ _.Zones =
 											},
 										},
 									},
+									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
+										["g"] = {
+											{	-- Fierce Combatant's Dragonhide Helm
+												["itemID"] = 149568,	-- Fierce Combatant's Dragonhide Helm
+											},
+											{	-- Fierce Combatant's Dragonhide Spaulders
+												["itemID"] = 149572,	-- Fierce Combatant's Dragonhide Spaulders
+											},
+											{	-- Fierce Combatant's Dragonhide Cloak
+												["itemID"] = 149510,	-- Fierce Combatant's Dragonhide Cloak
+											},
+											{	-- Fierce Combatant's Dragonhide Tunic
+												["itemID"] = 149562,	-- Fierce Combatant's Dragonhide Tunic
+											},
+											{	-- Fierce Combatant's Dragonhide Wristguards
+												["itemID"] = 149577,	-- Fierce Combatant's Dragonhide Wristguards
+											},
+											{	-- Fierce Combatant's Dragonhide Gloves
+												["itemID"] = 149566,	-- Fierce Combatant's Dragonhide Gloves
+											},
+											{	-- Fierce Combatant's Dragonhide Belt
+												["itemID"] = 149575,	-- Fierce Combatant's Dragonhide Belt
+											},
+											{	-- Fierce Combatant's Dragonhide Legguards
+												["itemID"] = 149570,	-- Fierce Combatant's Dragonhide Legguards
+											},
+											{	-- Fierce Combatant's Dragonhide Moccasins
+												["itemID"] = 149564,	-- Fierce Combatant's Dragonhide Moccasins
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
 										["g"] = {
@@ -504,18 +578,38 @@ _.Zones =
 										i(135779),	-- Vindictive Gladiator's Felweave Trousers
 										i(135776),	-- Vindictive Gladiator's Felweave Treads
 									}),
-									i(146141, {	-- Vindictive Gladiator's Dragonhide Armor
-										-- Lucetia!! Reconfirmed 5/9/19
-										i(135714),	-- Vindictive Gladiator's Dragonhide Helm
-										i(135717),	-- Vindictive Gladiator's Dragonhide Spaulders
-										i(135796),	-- Vindictive Gladiator's Dragonhide Cloak
-										i(135716),	-- Vindictive Gladiator's Dragonhide Robe
-										i(135719),	-- Vindictive Gladiator's Dragonhide Wristguards
-										i(135713),	-- Vindictive Gladiator's Dragonhide Gloves
-										i(135718),	-- Vindictive Gladiator's Dragonhide Belt
-										i(135715),	-- Vindictive Gladiator's Dragonhide Legguards
-										i(135712),	-- Vindictive Gladiator's Dragonhide Moccasins
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 146141,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Dragonhide Helm
+												["itemID"] = 135714,	-- Vindictive Gladiator's Dragonhide Helm
+											},
+											{	-- Vindictive Gladiator's Dragonhide Spaulders
+												["itemID"] = 135717,	-- Vindictive Gladiator's Dragonhide Spaulders
+											},
+											{	-- Vindictive Gladiator's Dragonhide Cloak
+												["itemID"] = 135796,	-- Vindictive Gladiator's Dragonhide Cloak
+											},
+											{	-- Vindictive Gladiator's Dragonhide Robe
+												["itemID"] = 135716,	-- Vindictive Gladiator's Dragonhide Robe
+											},
+											{	-- Vindictive Gladiator's Dragonhide Wristguards
+												["itemID"] = 135719,	-- Vindictive Gladiator's Dragonhide Wristguards
+											},
+											{	-- Vindictive Gladiator's Dragonhide Gloves
+												["itemID"] = 135713,	-- Vindictive Gladiator's Dragonhide Gloves
+											},
+											{	-- Vindictive Gladiator's Dragonhide Belt
+												["itemID"] = 135718,	-- Vindictive Gladiator's Dragonhide Belt
+											},
+											{	-- Vindictive Gladiator's Dragonhide Legguards
+												["itemID"] = 135715,	-- Vindictive Gladiator's Dragonhide Legguards
+											},
+											{	-- Vindictive Gladiator's Dragonhide Moccasins
+												["itemID"] = 135712,	-- Vindictive Gladiator's Dragonhide Moccasins
+											},
+										},
+									},
 									i(146145, {	-- Vindictive Gladiator's Leather Armor
 										i(135763),	-- Vindictive Gladiator's Leather Helm
 										i(135765),	-- Vindictive Gladiator's Leather Spaulders
@@ -681,18 +775,38 @@ _.Zones =
 										i(144755),	-- Cruel Gladiator's Felweave Trousers
 										i(144749),	-- Cruel Gladiator's Felweave Treads
 									}),
-									i(147648, {	-- Cruel Gladiator's Dragonhide Armor
-										-- Lucetia!! Reconfirmed 5/9/19
-										i(144597),	-- Cruel Gladiator's Dragonhide Helm
-										i(144601),	-- Cruel Gladiator's Dragonhide Spaulders
-										i(144539),	-- Cruel Gladiator's Dragonhide Cloak
-										i(144591),	-- Cruel Gladiator's Dragonhide Robe
-										i(144605),	-- Cruel Gladiator's Dragonhide Wristguards
-										i(144595),	-- Cruel Gladiator's Dragonhide Gloves
-										i(144603),	-- Cruel Gladiator's Dragonhide Belt
-										i(144599),	-- Cruel Gladiator's Dragonhide Legguards
-										i(144593),	-- Cruel Gladiator's Dragonhide Moccasins
-									}),
+									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 147648,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Dragonhide Helm
+												["itemID"] = 144597,	-- Cruel Gladiator's Dragonhide Helm
+											},
+											{	-- Cruel Gladiator's Dragonhide Spaulders
+												["itemID"] = 144601,	-- Cruel Gladiator's Dragonhide Spaulders
+											},
+											{	-- Cruel Gladiator's Dragonhide Cloak
+												["itemID"] = 144539,	-- Cruel Gladiator's Dragonhide Cloak
+											},
+											{	-- Cruel Gladiator's Dragonhide Robe
+												["itemID"] = 144591,	-- Cruel Gladiator's Dragonhide Robe
+											},
+											{	-- Cruel Gladiator's Dragonhide Wristguards
+												["itemID"] = 144605,	-- Cruel Gladiator's Dragonhide Wristguards
+											},
+											{	-- Cruel Gladiator's Dragonhide Gloves
+												["itemID"] = 144595,	-- Cruel Gladiator's Dragonhide Gloves
+											},
+											{	-- Cruel Gladiator's Dragonhide Belt
+												["itemID"] = 144603,	-- Cruel Gladiator's Dragonhide Belt
+											},
+											{	-- Cruel Gladiator's Dragonhide Legguards
+												["itemID"] = 144599,	-- Cruel Gladiator's Dragonhide Legguards
+											},
+											{	-- Cruel Gladiator's Dragonhide Moccasins
+												["itemID"] = 144593,	-- Cruel Gladiator's Dragonhide Moccasins
+											},
+										},
+									},
 									i(147658, {	-- Cruel Gladiator's Leather Armor
 										i(144705),	-- Cruel Gladiator's Leather Helm
 										i(144709),	-- Cruel Gladiator's Leather Spaulders
@@ -832,6 +946,38 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Satin Treads
 												["itemID"] = 148052,	-- Fierce Gladiator's Satin Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 149481,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Dragonhide Helm
+												["itemID"] = 147972,	-- Fierce Gladiator's Dragonhide Helm
+											},
+											{	-- Fierce Gladiator's Dragonhide Spaulders
+												["itemID"] = 147976,	-- Fierce Gladiator's Dragonhide Spaulders
+											},
+											{	-- Fierce Gladiator's Dragonhide Cloak
+												["itemID"] = 147914,	-- Fierce Gladiator's Dragonhide Cloak
+											},
+											{	-- Fierce Gladiator's Dragonhide Vest
+												["itemID"] = 147966,	-- Fierce Gladiator's Dragonhide Vest
+											},
+											{	-- Fierce Gladiator's Dragonhide Wristguards
+												["itemID"] = 147980,	-- Fierce Gladiator's Dragonhide Wristguards
+											},
+											{	-- Fierce Gladiator's Dragonhide Gloves
+												["itemID"] = 147970,	-- Fierce Gladiator's Dragonhide Gloves
+											},
+											{	-- Fierce Gladiator's Dragonhide Belt
+												["itemID"] = 147978,	-- Fierce Gladiator's Dragonhide Belt
+											},
+											{	-- Fierce Gladiator's Dragonhide Legguards
+												["itemID"] = 147974,	-- Fierce Gladiator's Dragonhide Legguards
+											},
+											{	-- Fierce Gladiator's Dragonhide Moccasins
+												["itemID"] = 147968,	-- Fierce Gladiator's Dragonhide Moccasins
 											},
 										},
 									},
