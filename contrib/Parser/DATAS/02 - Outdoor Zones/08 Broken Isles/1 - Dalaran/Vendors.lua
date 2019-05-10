@@ -55,17 +55,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146157, {	-- Vindictive Combatant's Silk Armor
-										i(135956),	-- Vindictive Combatant's Silk Cowl
-										i(135959),	-- Vindictive Combatant's Silk Amice
-										i(136019),	-- Vindictive Combatant's Silken Shawl
-										i(135958),	-- Vindictive Combatant's Silk Tunic
-										i(135961),	-- Vindictive Combatant's Silk Bracers
-										i(135955),	-- Vindictive Combatant's Silk Handguards
-										i(135960),	-- Vindictive Combatant's Silk Cord
-										i(135957),	-- Vindictive Combatant's Silk Trousers
-										i(135954),	-- Vindictive Combatant's Silk Treads
-									}),
+									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 146157,	-- Ensemble: Vindictive Combatant's Silk Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Silk Cowl
+												["itemID"] = 135956,	-- Vindictive Combatant's Silk Cowl
+											},
+											{	-- Vindictive Combatant's Silk Amice
+												["itemID"] = 135959,	-- Vindictive Combatant's Silk Amice
+											},
+											{	-- Vindictive Combatant's Silken Shawl
+												["itemID"] = 136019,	-- Vindictive Combatant's Silken Shawl
+											},
+											{	-- Vindictive Combatant's Silk Tunic
+												["itemID"] = 135958,	-- Vindictive Combatant's Silk Tunic
+											},
+											{	-- Vindictive Combatant's Silk Bracers
+												["itemID"] = 135961,	-- Vindictive Combatant's Silk Bracers
+											},
+											{	-- Vindictive Combatant's Silk Handguards
+												["itemID"] = 135955,	-- Vindictive Combatant's Silk Handguards
+											},
+											{	-- Vindictive Combatant's Silk Cord
+												["itemID"] = 135960,	-- Vindictive Combatant's Silk Cord
+											},
+											{	-- Vindictive Combatant's Silk Trousers
+												["itemID"] = 135957,	-- Vindictive Combatant's Silk Trousers
+											},
+											{	-- Vindictive Combatant's Silk Treads
+												["itemID"] = 135954,	-- Vindictive Combatant's Silk Treads
+											},
+										},
+									},
 									i(146161, {	-- Vindictive Combatant's Felweave Armor
 										i(136004),	-- Vindictive Combatant's Felweave Cowl
 										i(136007),	-- Vindictive Combatant's Felweave Amice
@@ -296,17 +317,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147695, {	-- Cruel Combatant's Silk Armor
-										i(145119),	-- Cruel Combatant's Silk Cowl
-										i(145125),	-- Cruel Combatant's Silk Amice
-										i(145035),	-- Cruel Combatant's Silken Shawl
-										i(145123),	-- Cruel Combatant's Silk Robe
-										i(145129),	-- Cruel Combatant's Silk Bracers
-										i(145117),	-- Cruel Combatant's Silk Handguards
-										i(145127),	-- Cruel Combatant's Silk Cord
-										i(145121),	-- Cruel Combatant's Silk Trousers
-										i(145115),	-- Cruel Combatant's Silk Treads
-									}),
+									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 147695,	-- Ensemble: Cruel Combatant's Silk Armor
+										["g"] = {
+											{	-- Cruel Combatant's Silk Cowl
+												["itemID"] = 145119,	-- Cruel Combatant's Silk Cowl
+											},
+											{	-- Cruel Combatant's Silk Amice
+												["itemID"] = 145125,	-- Cruel Combatant's Silk Amice
+											},
+											{	-- Cruel Combatant's Silken Shawl
+												["itemID"] = 145035,	-- Cruel Combatant's Silken Shawl
+											},
+											{	-- Cruel Combatant's Silk Robe
+												["itemID"] = 145123,	-- Cruel Combatant's Silk Robe
+											},
+											{	-- Cruel Combatant's Silk Bracers
+												["itemID"] = 145129,	-- Cruel Combatant's Silk Bracers
+											},
+											{	-- Cruel Combatant's Silk Handguards
+												["itemID"] = 145117,	-- Cruel Combatant's Silk Handguards
+											},
+											{	-- Cruel Combatant's Silk Cord
+												["itemID"] = 145127,	-- Cruel Combatant's Silk Cord
+											},
+											{	-- Cruel Combatant's Silk Trousers
+												["itemID"] = 145121,	-- Cruel Combatant's Silk Trousers
+											},
+											{	-- Cruel Combatant's Silk Treads
+												["itemID"] = 145115,	-- Cruel Combatant's Silk Treads
+											},
+										},
+									},
 									i(147681, {	-- Cruel Combatant's Felweave Armor
 										i(145245),	-- Cruel Combatant's Felweave Cowl
 										i(145251),	-- Cruel Combatant's Felweave Amice
@@ -537,6 +579,38 @@ _.Zones =
 											},
 										},
 									},
+									{	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 150270,	-- Ensemble: Fierce Combatant's Silk Armor
+										["g"] = {
+											{	-- Fierce Combatant's Silk Cowl
+												["itemID"] = 149599,	-- Fierce Combatant's Silk Cowl
+											},
+											{	-- Fierce Combatant's Silk Amice
+												["itemID"] = 149605,	-- Fierce Combatant's Silk Amice
+											},
+											{	-- Fierce Combatant's Silken Shawl
+												["itemID"] = 149514,	-- Fierce Combatant's Silken Shawl
+											},
+											{	-- Fierce Combatant's Silk Robe
+												["itemID"] = 149603,	-- Fierce Combatant's Silk Robe
+											},
+											{	-- Fierce Combatant's Silk Bracers
+												["itemID"] = 149609,	-- Fierce Combatant's Silk Bracers
+											},
+											{	-- Fierce Combatant's Silk Handguards
+												["itemID"] = 149597,	-- Fierce Combatant's Silk Handguards
+											},
+											{	-- Fierce Combatant's Silk Cord
+												["itemID"] = 149607,	-- Fierce Combatant's Silk Cord
+											},
+											{	-- Fierce Combatant's Silk Trousers
+												["itemID"] = 149601,	-- Fierce Combatant's Silk Trousers
+											},
+											{	-- Fierce Combatant's Silk Treads
+												["itemID"] = 149595,	-- Fierce Combatant's Silk Treads
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
 										["g"] = {
@@ -704,17 +778,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146147, {	-- Vindictive Gladiator's Silk Armor
-										i(135730),	-- Vindictive Gladiator's Silk Cowl
-										i(135733),	-- Vindictive Gladiator's Silk Amice
-										i(135793),	-- Vindictive Gladiator's Silken Shawl
-										i(135732),	-- Vindictive Gladiator's Silk Robe
-										i(135735),	-- Vindictive Gladiator's Silk Bracers
-										i(135729),	-- Vindictive Gladiator's Silk Handguards
-										i(135734),	-- Vindictive Gladiator's Silk Cord
-										i(135731),	-- Vindictive Gladiator's Silk Trousers
-										i(135728),	-- Vindictive Gladiator's Silk Treads
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 146147,	-- Ensemble: Vindictive Gladiator's Silk Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Silk Cowl
+												["itemID"] = 135730,	-- Vindictive Gladiator's Silk Cowl
+											},
+											{	-- Vindictive Gladiator's Silk Amice
+												["itemID"] = 135733,	-- Vindictive Gladiator's Silk Amice
+											},
+											{	-- Vindictive Gladiator's Silken Shawl
+												["itemID"] = 135793,	-- Vindictive Gladiator's Silken Shawl
+											},
+											{	-- Vindictive Gladiator's Silk Robe
+												["itemID"] = 135732,	-- Vindictive Gladiator's Silk Robe
+											},
+											{	-- Vindictive Gladiator's Silk Bracers
+												["itemID"] = 135735,	-- Vindictive Gladiator's Silk Bracers
+											},
+											{	-- Vindictive Gladiator's Silk Handguards
+												["itemID"] = 135729,	-- Vindictive Gladiator's Silk Handguards
+											},
+											{	-- Vindictive Gladiator's Silk Cord
+												["itemID"] = 135734,	-- Vindictive Gladiator's Silk Cord
+											},
+											{	-- Vindictive Gladiator's Silk Trousers
+												["itemID"] = 135731,	-- Vindictive Gladiator's Silk Trousers
+											},
+											{	-- Vindictive Gladiator's Silk Treads
+												["itemID"] = 135728,	-- Vindictive Gladiator's Silk Treads
+											},
+										},
+									},
 									i(146151, {	-- Vindictive Gladiator's Felweave Armor
 										i(135778),	-- Vindictive Gladiator's Felweave Cowl
 										i(135781),	-- Vindictive Gladiator's Felweave Amice
@@ -942,17 +1037,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147667, {	-- Cruel Gladiator's Silk Armor
-										i(144627),	-- Cruel Gladiator's Silk Cowl
-										i(144633),	-- Cruel Gladiator's Silk Amice
-										i(144543),	-- Cruel Gladiator's Silken Shawl
-										i(144631),	-- Cruel Gladiator's Silk Robe
-										i(144637),	-- Cruel Gladiator's Silk Bracers
-										i(144625),	-- Cruel Gladiator's Silk Handguards
-										i(144635),	-- Cruel Gladiator's Silk Cord
-										i(144629),	-- Cruel Gladiator's Silk Trousers
-										i(144623),	-- Cruel Gladiator's Silk Treads
-									}),
+									{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 147667,	-- Ensemble: Cruel Gladiator's Silk Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Silk Cowl
+												["itemID"] = 144627,	-- Cruel Gladiator's Silk Cowl
+											},
+											{	-- Cruel Gladiator's Silk Amice
+												["itemID"] = 144633,	-- Cruel Gladiator's Silk Amice
+											},
+											{	-- Cruel Gladiator's Silken Shawl
+												["itemID"] = 144543,	-- Cruel Gladiator's Silken Shawl
+											},
+											{	-- Cruel Gladiator's Silk Robe
+												["itemID"] = 144631,	-- Cruel Gladiator's Silk Robe
+											},
+											{	-- Cruel Gladiator's Silk Bracers
+												["itemID"] = 144637,	-- Cruel Gladiator's Silk Bracers
+											},
+											{	-- Cruel Gladiator's Silk Handguards
+												["itemID"] = 144625,	-- Cruel Gladiator's Silk Handguards
+											},
+											{	-- Cruel Gladiator's Silk Cord
+												["itemID"] = 144635,	-- Cruel Gladiator's Silk Cord
+											},
+											{	-- Cruel Gladiator's Silk Trousers
+												["itemID"] = 144629,	-- Cruel Gladiator's Silk Trousers
+											},
+											{	-- Cruel Gladiator's Silk Treads
+												["itemID"] = 144623,	-- Cruel Gladiator's Silk Treads
+											},
+										},
+									},
 									i(147654, {	-- Cruel Gladiator's Felweave Armor
 										i(144753),	-- Cruel Gladiator's Felweave Cowl
 										i(144759),	-- Cruel Gladiator's Felweave Amice
@@ -1177,6 +1293,38 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Satin Treads
 												["itemID"] = 148052,	-- Fierce Gladiator's Satin Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 149500,	-- Ensemble: Fierce Gladiator's Silk Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Silk Cowl
+												["itemID"] = 148002,	-- Fierce Gladiator's Silk Cowl
+											},
+											{	-- Fierce Gladiator's Silk Amice
+												["itemID"] = 148008,	-- Fierce Gladiator's Silk Amice
+											},
+											{	-- Fierce Gladiator's Silken Shawl
+												["itemID"] = 147918,	-- Fierce Gladiator's Silken Shawl
+											},
+											{	-- Fierce Gladiator's Silk Tunic
+												["itemID"] = 148006,	-- Fierce Gladiator's Silk Tunic
+											},
+											{	-- Fierce Gladiator's Silk Bracers
+												["itemID"] = 148012,	-- Fierce Gladiator's Silk Bracers
+											},
+											{	-- Fierce Gladiator's Silk Handguards
+												["itemID"] = 148000,	-- Fierce Gladiator's Silk Handguards
+											},
+											{	-- Fierce Gladiator's Silk Cord
+												["itemID"] = 148010,	-- Fierce Gladiator's Silk Cord
+											},
+											{	-- Fierce Gladiator's Silk Trousers
+												["itemID"] = 148004,	-- Fierce Gladiator's Silk Trousers
+											},
+											{	-- Fierce Gladiator's Silk Treads
+												["itemID"] = 147998,	-- Fierce Gladiator's Silk Treads
 											},
 										},
 									},
