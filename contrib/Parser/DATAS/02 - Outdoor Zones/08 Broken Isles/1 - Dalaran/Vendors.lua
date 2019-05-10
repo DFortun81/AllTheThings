@@ -241,17 +241,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146163, {	-- Vindictive Combatant's Plate Armor
-										i(136013),	-- Vindictive Combatant's Plate Helm
-										i(136015),	-- Vindictive Combatant's Plate Shoulders
-										i(136888),	-- Vindictive Combatant's Cloak of Battle
-										i(136010),	-- Vindictive Combatant's Plate Chestpiece
-										i(136017),	-- Vindictive Combatant's Plate Wristplates
-										i(136012),	-- Vindictive Combatant's Plate Gauntlets
-										i(136016),	-- Vindictive Combatant's Plate Girdle
-										i(136014),	-- Vindictive Combatant's Plate Legguards
-										i(136011),	-- Vindictive Combatant's Plate Warboots
-									}),
+									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 146163,	-- Ensemble: Vindictive Combatant's Plate Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Plate Helm
+												["itemID"] = 136013,	-- Vindictive Combatant's Plate Helm
+											},
+											{	-- Vindictive Combatant's Plate Shoulders
+												["itemID"] = 136015,	-- Vindictive Combatant's Plate Shoulders
+											},
+											{	-- Vindictive Combatant's Cloak of Battle
+												["itemID"] = 136888,	-- Vindictive Combatant's Cloak of Battle
+											},
+											{	-- Vindictive Combatant's Plate Chestpiece
+												["itemID"] = 136010,	-- Vindictive Combatant's Plate Chestpiece
+											},
+											{	-- Vindictive Combatant's Plate Wristplates
+												["itemID"] = 136017,	-- Vindictive Combatant's Plate Wristplates
+											},
+											{	-- Vindictive Combatant's Plate Gauntlets
+												["itemID"] = 136012,	-- Vindictive Combatant's Plate Gauntlets
+											},
+											{	-- Vindictive Combatant's Plate Girdle
+												["itemID"] = 136016,	-- Vindictive Combatant's Plate Girdle
+											},
+											{	-- Vindictive Combatant's Plate Legguards
+												["itemID"] = 136014,	-- Vindictive Combatant's Plate Legguards
+											},
+											{	-- Vindictive Combatant's Plate Warboots
+												["itemID"] = 136011,	-- Vindictive Combatant's Plate Warboots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
 										["g"] = {
@@ -503,17 +524,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147691, {	-- Cruel Combatant's Plate Armor
-										i(145263),	-- Cruel Combatant's Plate Helm
-										i(145267),	-- Cruel Combatant's Plate Shoulders
-										i(145049),	-- Cruel Combatant's Cloak of Battle
-										i(145257),	-- Cruel Combatant's Plate Chestpiece
-										i(145271),	-- Cruel Combatant's Plate Wristplates
-										i(145261),	-- Cruel Combatant's Plate Gauntlets
-										i(145269),	-- Cruel Combatant's Plate Girdle
-										i(145265),	-- Cruel Combatant's Plate Legguards
-										i(145259),	-- Cruel Combatant's Plate Warboots
-									}),
+									{	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 147691,	-- Ensemble: Cruel Combatant's Plate Armor
+										["g"] = {
+											{	-- Cruel Combatant's Plate Helm
+												["itemID"] = 145263,	-- Cruel Combatant's Plate Helm
+											},
+											{	-- Cruel Combatant's Plate Shoulders
+												["itemID"] = 145267,	-- Cruel Combatant's Plate Shoulders
+											},
+											{	-- Cruel Combatant's Cloak of Battle
+												["itemID"] = 145049,	-- Cruel Combatant's Cloak of Battle
+											},
+											{	-- Cruel Combatant's Plate Chestpiece
+												["itemID"] = 145257,	-- Cruel Combatant's Plate Chestpiece
+											},
+											{	-- Cruel Combatant's Plate Wristplates
+												["itemID"] = 145271,	-- Cruel Combatant's Plate Wristplates
+											},
+											{	-- Cruel Combatant's Plate Gauntlets
+												["itemID"] = 145261,	-- Cruel Combatant's Plate Gauntlets
+											},
+											{	-- Cruel Combatant's Plate Girdle
+												["itemID"] = 145269,	-- Cruel Combatant's Plate Girdle
+											},
+											{	-- Cruel Combatant's Plate Legguards
+												["itemID"] = 145265,	-- Cruel Combatant's Plate Legguards
+											},
+											{	-- Cruel Combatant's Plate Warboots
+												["itemID"] = 145259,	-- Cruel Combatant's Plate Warboots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147678,	-- Ensemble: Cruel Combatant's Dreadplate Armor
 										["g"] = {
@@ -704,6 +746,38 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Scaled Sabatons
 												["itemID"] = 149635,	-- Fierce Combatant's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 150266,	-- Ensemble: Fierce Combatant's Plate Armor
+										["g"] = {
+											{	-- Fierce Combatant's Plate Helm
+												["itemID"] = 149743,	-- Fierce Combatant's Plate Helm
+											},
+											{	-- Fierce Combatant's Plate Girdle
+												["itemID"] = 149749,	-- Fierce Combatant's Plate Girdle
+											},
+											{	-- Fierce Combatant's Cloak of Battle
+												["itemID"] = 149528,	-- Fierce Combatant's Cloak of Battle
+											},
+											{	-- Fierce Combatant's Plate Chestpiece
+												["itemID"] = 149737,	-- Fierce Combatant's Plate Chestpiece
+											},
+											{	-- Fierce Combatant's Plate Wristplates
+												["itemID"] = 149751,	-- Fierce Combatant's Plate Wristplates
+											},
+											{	-- Fierce Combatant's Plate Gauntlets
+												["itemID"] = 149741,	-- Fierce Combatant's Plate Gauntlets
+											},
+											{	-- Fierce Combatant's Plate Girdle
+												["itemID"] = 149749,	-- Fierce Combatant's Plate Girdle
+											},
+											{	-- Fierce Combatant's Plate Legguards
+												["itemID"] = 149745,	-- Fierce Combatant's Plate Legguards
+											},
+											{	-- Fierce Combatant's Plate Warboots
+												["itemID"] = 149739,	-- Fierce Combatant's Plate Warboots
 											},
 										},
 									},
@@ -961,17 +1035,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146131, {	-- Vindictive Gladiator's Plate Armor
-										i(135787),	-- Vindictive Gladiator's Plate Helm
-										i(135789),	-- Vindictive Gladiator's Plate Shoulders
-										i(136886),	-- Vindictive Gladiator's Cloak of Battle
-										i(135784),	-- Vindictive Gladiator's Plate Chestpiece
-										i(135791),	-- Vindictive Gladiator's Plate Wristplates
-										i(135786),	-- Vindictive Gladiator's Plate Gauntlets
-										i(135790),	-- Vindictive Gladiator's Plate Girdle
-										i(135788),	-- Vindictive Gladiator's Plate Legguards
-										i(135785),	-- Vindictive Gladiator's Plate Warboots
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 146131,	-- Ensemble: Vindictive Gladiator's Plate Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Plate Helm
+												["itemID"] = 135787,	-- Vindictive Gladiator's Plate Helm
+											},
+											{	-- Vindictive Gladiator's Plate Shoulders
+												["itemID"] = 135789,	-- Vindictive Gladiator's Plate Shoulders
+											},
+											{	-- Vindictive Gladiator's Cloak of Battle
+												["itemID"] = 136886,	-- Vindictive Gladiator's Cloak of Battle
+											},
+											{	-- Vindictive Gladiator's Plate Chestpiece
+												["itemID"] = 135784,	-- Vindictive Gladiator's Plate Chestpiece
+											},
+											{	-- Vindictive Gladiator's Plate Wristplates
+												["itemID"] = 135791,	-- Vindictive Gladiator's Plate Wristplates
+											},
+											{	-- Vindictive Gladiator's Plate Gauntlets
+												["itemID"] = 135786,	-- Vindictive Gladiator's Plate Gauntlets
+											},
+											{	-- Vindictive Gladiator's Plate Girdle
+												["itemID"] = 135790,	-- Vindictive Gladiator's Plate Girdle
+											},
+											{	-- Vindictive Gladiator's Plate Legguards
+												["itemID"] = 135788,	-- Vindictive Gladiator's Plate Legguards
+											},
+											{	-- Vindictive Gladiator's Plate Warboots
+												["itemID"] = 135785,	-- Vindictive Gladiator's Plate Warboots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146133,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
 										["g"] = {
@@ -1220,17 +1315,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147659, {	-- Cruel Gladiator's Plate Gaun Armor
-										i(144769),	-- Cruel Gladiator's Plate Gauntlets
-										i(144773),	-- Cruel Gladiator's Plate Legguards
-										i(144557),	-- Cruel Gladiator's Cloak of Battle
-										i(144779),	-- Cruel Gladiator's Plate Wristplates
-										i(144777),	-- Cruel Gladiator's Plate Girdle
-										i(144767),	-- Cruel Gladiator's Plate Warboots
-										i(144775),	-- Cruel Gladiator's Plate Shoulders
-										i(144771),	-- Cruel Gladiator's Plate Helm
-										i(144765),	-- Cruel Gladiator's Plate Chestpiece
-									}),
+									{	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 147659,	-- Ensemble: Cruel Gladiator's Plate Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Plate Helm
+												["itemID"] = 144771,	-- Cruel Gladiator's Plate Helm
+											},
+											{	-- Cruel Gladiator's Plate Shoulders
+												["itemID"] = 144775,	-- Cruel Gladiator's Plate Shoulders
+											},
+											{	-- Cruel Gladiator's Cloak of Battle
+												["itemID"] = 144557,	-- Cruel Gladiator's Cloak of Battle
+											},
+											{	-- Cruel Gladiator's Plate Chestpiece
+												["itemID"] = 144765,	-- Cruel Gladiator's Plate Chestpiece
+											},
+											{	-- Cruel Gladiator's Plate Wristplates
+												["itemID"] = 144779,	-- Cruel Gladiator's Plate Wristplates
+											},
+											{	-- Cruel Gladiator's Plate Gauntlets
+												["itemID"] = 144769,	-- Cruel Gladiator's Plate Gauntlets
+											},
+											{	-- Cruel Gladiator's Plate Girdle
+												["itemID"] = 144777,	-- Cruel Gladiator's Plate Girdle
+											},
+											{	-- Cruel Gladiator's Plate Legguards
+												["itemID"] = 144773,	-- Cruel Gladiator's Plate Legguards
+											},
+											{	-- Cruel Gladiator's Plate Warboots
+												["itemID"] = 144767,	-- Cruel Gladiator's Plate Warboots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147649,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
 										["g"] = {
@@ -1421,6 +1537,38 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Scaled Sabatons
 												["itemID"] = 148037,	-- Fierce Gladiator's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 149492,	-- Ensemble: Fierce Gladiator's Plate Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Plate Helm
+												["itemID"] = 148146,	-- Fierce Gladiator's Plate Helm
+											},
+											{	-- Fierce Gladiator's Plate Shoulders
+												["itemID"] = 148150,	-- Fierce Gladiator's Plate Shoulders
+											},
+											{	-- Fierce Gladiator's Cloak of Battle
+												["itemID"] = 147932,	-- Fierce Gladiator's Cloak of Battle
+											},
+											{	-- Fierce Gladiator's Plate Chestpiece
+												["itemID"] = 148140,	-- Fierce Gladiator's Plate Chestpiece
+											},
+											{	-- Fierce Gladiator's Plate Wristplates
+												["itemID"] = 148154,	-- Fierce Gladiator's Plate Wristplates
+											},
+											{	-- Fierce Gladiator's Plate Gauntlets
+												["itemID"] = 148144,	-- Fierce Gladiator's Plate Gauntlets
+											},
+											{	-- Fierce Gladiator's Plate Girdle
+												["itemID"] = 148152,	-- Fierce Gladiator's Plate Girdle
+											},
+											{	-- Fierce Gladiator's Plate Legguards
+												["itemID"] = 148148,	-- Fierce Gladiator's Plate Legguards
+											},
+											{	-- Fierce Gladiator's Plate Warboots
+												["itemID"] = 148142,	-- Fierce Gladiator's Plate Warboots
 											},
 										},
 									},
