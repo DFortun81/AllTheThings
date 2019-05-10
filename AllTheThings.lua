@@ -11729,7 +11729,10 @@ app.events.ADDON_LOADED = function(addonName)
 			
 			-- Display Test for Raw Data + Filtering
 			local window = app:GetWindow("AuctionData");
-			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
+			window:SetParent(AuctionFrame);
+			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
+			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
+			window.data = { ["shouldFullRefresh"] = true, ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
 			for key, value in pairs(searchResultsByKey) do
 				local count = 0;
 				local subdata = {};
@@ -11975,6 +11978,8 @@ app.events.ADDON_LOADED = function(addonName)
 				if not self.InitialProcess then
 					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 					self.InitialProcess = true;
+				else
+					app:GetWindow("AuctionData"):Show();
 				end
 				
 				frame:Show();
