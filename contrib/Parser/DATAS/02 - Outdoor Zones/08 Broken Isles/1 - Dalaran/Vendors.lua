@@ -29,6 +29,9 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146159,	-- Ensemble: Vindictive Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Satin Hood
 												["itemID"] = 135980,	-- Vindictive Combatant's Satin Hood
@@ -61,6 +64,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146157,	-- Ensemble: Vindictive Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Silk Cowl
 												["itemID"] = 135956,	-- Vindictive Combatant's Silk Cowl
@@ -104,6 +110,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146169,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Dragonhide Helm
 												["itemID"] = 135940,	-- Vindictive Combatant's Dragonhide Helm
@@ -147,6 +156,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Ironskin Helm
 												["itemID"] = 135964,	-- Vindictive Combatant's Ironskin Helm
@@ -177,22 +189,46 @@ _.Zones =
 											},
 										},
 									},
-									i(146265, {	-- Vindictive Combatant's Felskin Armor
-										["classes"] = { 12 },
-										["g"] = {
-											i(136305),	-- Vindictive Combatant's Felskin Helm
-											i(136308),	-- Vindictive Combatant's Felskin Spaulders
-											i(136894),	-- Vindictive Combatant's Demonthread Cloak
-											i(136307),	-- Vindictive Combatant's Felskin Tunic
-											i(136310),	-- Vindictive Combatant's Felskin Wristguards
-											i(136304),	-- Vindictive Combatant's Felskin Gloves
-											i(136309),	-- Vindictive Combatant's Felskin Belt
-											i(136306),	-- Vindictive Combatant's Felskin Legguards
-											i(136303),	-- Vindictive Combatant's Felskin Boots
+									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 146265,	-- Ensemble: Vindictive Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
 										},
-									}),
+										["g"] = {
+											{	-- Vindictive Combatant's Felskin Helm
+												["itemID"] = 136305,	-- Vindictive Combatant's Felskin Helm
+											},
+											{	-- Vindictive Combatant's Felskin Spaulders
+												["itemID"] = 136308,	-- Vindictive Combatant's Felskin Spaulders
+											},
+											{	-- Vindictive Combatant's Demonthread Cloak
+												["itemID"] = 136894,	-- Vindictive Combatant's Demonthread Cloak
+											},
+											{	-- Vindictive Combatant's Felskin Tunic
+												["itemID"] = 136307,	-- Vindictive Combatant's Felskin Tunic
+											},
+											{	-- Vindictive Combatant's Felskin Wristguards
+												["itemID"] = 136310,	-- Vindictive Combatant's Felskin Wristguards
+											},
+											{	-- Vindictive Combatant's Felskin Gloves
+												["itemID"] = 136304,	-- Vindictive Combatant's Felskin Gloves
+											},
+											{	-- Vindictive Combatant's Felskin Belt
+												["itemID"] = 136309,	-- Vindictive Combatant's Felskin Belt
+											},
+											{	-- Vindictive Combatant's Felskin Legguards
+												["itemID"] = 136306,	-- Vindictive Combatant's Felskin Legguards
+											},
+											{	-- Vindictive Combatant's Felskin Boots
+												["itemID"] = 136303,	-- Vindictive Combatant's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146155,	-- Ensemble: Vindictive Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Chain Helm
 												["itemID"] = 135949,	-- Vindictive Combatant's Chain Helm
@@ -225,6 +261,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146153,	-- Ensemble: Vindictive Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Ringmail Helm
 												["itemID"] = 135997,	-- Vindictive Combatant's Ringmail Helm
@@ -257,6 +296,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146167,	-- Ensemble: Vindictive Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Scaled Helm
 												["itemID"] = 135973,	-- Vindictive Combatant's Scaled Helm
@@ -289,6 +331,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146163,	-- Ensemble: Vindictive Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Plate Helm
 												["itemID"] = 136013,	-- Vindictive Combatant's Plate Helm
@@ -321,6 +366,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Vindictive Combatant's Dreadplate Helm
 												["itemID"] = 135933,	-- Vindictive Combatant's Dreadplate Helm
@@ -354,6 +402,9 @@ _.Zones =
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147687,	-- Ensemble: Cruel Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Satin Hood
 												["itemID"] = 145173,	-- Cruel Combatant's Satin Hood
@@ -386,6 +437,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147695,	-- Ensemble: Cruel Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Silk Cowl
 												["itemID"] = 145119,	-- Cruel Combatant's Silk Cowl
@@ -429,6 +483,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147676,	-- Ensemble: Cruel Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Dragonhide Helm
 												["itemID"] = 145089,	-- Cruel Combatant's Dragonhide Helm
@@ -472,6 +529,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147683,	-- Ensemble: Cruel Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Ironskin Helm
 												["itemID"] = 145135,	-- Cruel Combatant's Ironskin Helm
@@ -502,22 +562,46 @@ _.Zones =
 											},
 										},
 									},
-									i(147679, {	-- Cruel Combatant's Felskin Armor
-										["g"] = {
-											i(145073),	-- Cruel Combatant's Felskin Helm
-											i(145077),	-- Cruel Combatant's Felskin Spaulders
-											i(145029),	-- Cruel Combatant's Demonthread Cloak
-											i(145067),	-- Cruel Combatant's Felskin Tunic
-											i(145081),	-- Cruel Combatant's Felskin Wristguards
-											i(145071),	-- Cruel Combatant's Felskin Gloves
-											i(145079),	-- Cruel Combatant's Felskin Belt
-											i(145075),	-- Cruel Combatant's Felskin Legguards
-											i(145069),	-- Cruel Combatant's Felskin Boots
+									{	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 147679,	-- Ensemble: Cruel Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
 										},
-										["classes"] = { 12 },
-									}),
+										["g"] = {
+											{	-- Cruel Combatant's Felskin Helm
+												["itemID"] = 145073,	-- Cruel Combatant's Felskin Helm
+											},
+											{	-- Cruel Combatant's Felskin Spaulders
+												["itemID"] = 145077,	-- Cruel Combatant's Felskin Spaulders
+											},
+											{	-- Cruel Combatant's Demonthread Cloak
+												["itemID"] = 145029,	-- Cruel Combatant's Demonthread Cloak
+											},
+											{	-- Cruel Combatant's Felskin Tunic
+												["itemID"] = 145067,	-- Cruel Combatant's Felskin Tunic
+											},
+											{	-- Cruel Combatant's Felskin Wristguards
+												["itemID"] = 145081,	-- Cruel Combatant's Felskin Wristguards
+											},
+											{	-- Cruel Combatant's Felskin Gloves
+												["itemID"] = 145071,	-- Cruel Combatant's Felskin Gloves
+											},
+											{	-- Cruel Combatant's Felskin Belt
+												["itemID"] = 145079,	-- Cruel Combatant's Felskin Belt
+											},
+											{	-- Cruel Combatant's Felskin Legguards
+												["itemID"] = 145075,	-- Cruel Combatant's Felskin Legguards
+											},
+											{	-- Cruel Combatant's Felskin Boots
+												["itemID"] = 145069,	-- Cruel Combatant's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147690,	-- Ensemble: Cruel Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Chain Helm
 												["itemID"] = 145105,	-- Cruel Combatant's Chain Helm
@@ -550,6 +634,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147673,	-- Ensemble: Cruel Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Ringmail Helm
 												["itemID"] = 145213,	-- Cruel Combatant's Ringmail Helm
@@ -582,6 +669,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147694,	-- Ensemble: Cruel Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Scaled Helm
 												["itemID"] = 145159,	-- Cruel Combatant's Scaled Helm
@@ -614,6 +704,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147691,	-- Ensemble: Cruel Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Plate Helm
 												["itemID"] = 145263,	-- Cruel Combatant's Plate Helm
@@ -646,6 +739,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147678,	-- Ensemble: Cruel Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Cruel Combatant's Dreadplate Helm
 												["itemID"] = 145057,	-- Cruel Combatant's Dreadplate Helm
@@ -679,6 +775,9 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 150262,	-- Ensemble: Fierce Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Satin Hood
 												["itemID"] = 149653,	-- Fierce Combatant's Satin Hood
@@ -711,6 +810,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 150270,	-- Ensemble: Fierce Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Silk Cowl
 												["itemID"] = 149599,	-- Fierce Combatant's Silk Cowl
@@ -744,6 +846,9 @@ _.Zones =
 									
 									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Dragonhide Helm
 												["itemID"] = 149568,	-- Fierce Combatant's Dragonhide Helm
@@ -777,6 +882,9 @@ _.Zones =
 									
 									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 150258,	-- Ensemble: Fierce Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Ironskin Helm
 												["itemID"] = 149615,	-- Fierce Combatant's Ironskin Helm
@@ -807,9 +915,46 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 150254,	-- Ensemble: Fierce Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Felskin Helm
+												["itemID"] = 149552,	-- Fierce Combatant's Felskin Helm
+											},
+											{	-- Fierce Combatant's Felskin Spaulders
+												["itemID"] = 149556,	-- Fierce Combatant's Felskin Spaulders
+											},
+											{	-- Fierce Combatant's Demonthread Cloak
+												["itemID"] = 149508,	-- Fierce Combatant's Demonthread Cloak
+											},
+											{	-- Fierce Combatant's Felskin Tunic
+												["itemID"] = 149546,	-- Fierce Combatant's Felskin Tunic
+											},
+											{	-- Fierce Combatant's Felskin Wristguards
+												["itemID"] = 149560,	-- Fierce Combatant's Felskin Wristguards
+											},
+											{	-- Fierce Combatant's Felskin Gloves
+												["itemID"] = 149550,	-- Fierce Combatant's Felskin Gloves
+											},
+											{	-- Fierce Combatant's Felskin Belt
+												["itemID"] = 149558,	-- Fierce Combatant's Felskin Belt
+											},
+											{	-- Fierce Combatant's Felskin Legguards
+												["itemID"] = 149554,	-- Fierce Combatant's Felskin Legguards
+											},
+											{	-- Fierce Combatant's Felskin Boots
+												["itemID"] = 149548,	-- Fierce Combatant's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Chain Helm
 												["itemID"] = 149585,	-- Fierce Combatant's Chain Helm
@@ -842,6 +987,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 150248,	-- Ensemble: Fierce Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Ringmail Helm
 												["itemID"] = 149693,	-- Fierce Combatant's Ringmail Helm
@@ -874,6 +1022,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Scaled Helm
 												["itemID"] = 149639,	-- Fierce Combatant's Scaled Helm
@@ -906,6 +1057,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 150266,	-- Ensemble: Fierce Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Plate Helm
 												["itemID"] = 149743,	-- Fierce Combatant's Plate Helm
@@ -938,6 +1092,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 150253,	-- Ensemble: Fierce Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Fierce Combatant's Dreadplate Helm
 												["itemID"] = 149536,	-- Fierce Combatant's Dreadplate Helm
@@ -977,6 +1134,9 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146149,	-- Ensemble: Vindictive Gladiator's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Satin Hood
 												["itemID"] = 135754,	-- Vindictive Gladiator's Satin Hood
@@ -1009,6 +1169,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146147,	-- Ensemble: Vindictive Gladiator's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Silk Cowl
 												["itemID"] = 135730,	-- Vindictive Gladiator's Silk Cowl
@@ -1052,6 +1215,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146141,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Dragonhide Helm
 												["itemID"] = 135714,	-- Vindictive Gladiator's Dragonhide Helm
@@ -1095,6 +1261,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146143,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Ironskin Helm
 												["itemID"] = 135738,	-- Vindictive Gladiator's Ironskin Helm
@@ -1125,19 +1294,46 @@ _.Zones =
 											},
 										},
 									},
-									i(146263, {	-- Vindictive Gladiator's Felskin Armor
-										i(136289),	-- Vindictive Gladiator's Felskin Helm
-										i(136292),	-- Vindictive Gladiator's Felskin Spaulders
-										i(136892),	-- Vindictive Gladiator's Demonthread Cloak
-										i(136291),	-- Vindictive Gladiator's Felskin Tunic
-										i(136294),	-- Vindictive Gladiator's Felskin Wristguards
-										i(136288),	-- Vindictive Gladiator's Felskin Gloves
-										i(136293),	-- Vindictive Gladiator's Felskin Belt
-										i(136290),	-- Vindictive Gladiator's Felskin Legguards
-										i(136287),	-- Vindictive Gladiator's Felskin Boots
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 146263,	-- Ensemble: Vindictive Gladiator's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Vindictive Gladiator's Felskin Helm
+												["itemID"] = 136289,	-- Vindictive Gladiator's Felskin Helm
+											},
+											{	-- Vindictive Gladiator's Felskin Spaulders
+												["itemID"] = 136292,	-- Vindictive Gladiator's Felskin Spaulders
+											},
+											{	-- Vindictive Gladiator's Demonthread Cloak
+												["itemID"] = 136892,	-- Vindictive Gladiator's Demonthread Cloak
+											},
+											{	-- Vindictive Gladiator's Felskin Tunic
+												["itemID"] = 136291,	-- Vindictive Gladiator's Felskin Tunic
+											},
+											{	-- Vindictive Gladiator's Felskin Wristguards
+												["itemID"] = 136294,	-- Vindictive Gladiator's Felskin Wristguards
+											},
+											{	-- Vindictive Gladiator's Felskin Gloves
+												["itemID"] = 136288,	-- Vindictive Gladiator's Felskin Gloves
+											},
+											{	-- Vindictive Gladiator's Felskin Belt
+												["itemID"] = 136293,	-- Vindictive Gladiator's Felskin Belt
+											},
+											{	-- Vindictive Gladiator's Felskin Legguards
+												["itemID"] = 136290,	-- Vindictive Gladiator's Felskin Legguards
+											},
+											{	-- Vindictive Gladiator's Felskin Boots
+												["itemID"] = 136287,	-- Vindictive Gladiator's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146139,	-- Ensemble: Vindictive Gladiator's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Chain Helm
 												["itemID"] = 135723,	-- Vindictive Gladiator's Chain Helm
@@ -1170,6 +1366,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146137,	-- Ensemble: Vindictive Gladiator's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Ringmail Helm
 												["itemID"] = 135771,	-- Vindictive Gladiator's Ringmail Helm
@@ -1202,6 +1401,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146135,	-- Ensemble: Vindictive Gladiator's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Scaled Helm
 												["itemID"] = 135747,	-- Vindictive Gladiator's Scaled Helm
@@ -1234,6 +1436,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146131,	-- Ensemble: Vindictive Gladiator's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Plate Helm
 												["itemID"] = 135787,	-- Vindictive Gladiator's Plate Helm
@@ -1266,6 +1471,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146133,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Vindictive Gladiator's Dreadplate Helm
 												["itemID"] = 135707,	-- Vindictive Gladiator's Dreadplate Helm
@@ -1299,6 +1507,9 @@ _.Zones =
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147664,	-- Ensemble: Cruel Gladiator's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Satin Hood
 												["itemID"] = 144681,	-- Cruel Gladiator's Satin Hood
@@ -1331,6 +1542,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147667,	-- Ensemble: Cruel Gladiator's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Silk Cowl
 												["itemID"] = 144627,	-- Cruel Gladiator's Silk Cowl
@@ -1374,6 +1588,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147648,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Dragonhide Helm
 												["itemID"] = 144597,	-- Cruel Gladiator's Dragonhide Helm
@@ -1417,6 +1634,9 @@ _.Zones =
 									}),
 									{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147655,	-- Ensemble: Cruel Gladiator's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Ironskin Helm
 												["itemID"] = 144643,	-- Cruel Gladiator's Ironskin Helm
@@ -1447,19 +1667,46 @@ _.Zones =
 											},
 										},
 									},
-									i(147652, {	-- Cruel Gladiator's Felskin Armor
-										i(144581),	-- Cruel Gladiator's Felskin Helm
-										i(144585),	-- Cruel Gladiator's Felskin Spaulders
-										i(144537),	-- Cruel Gladiator's Demonthread Cloak
-										i(144575),	-- Cruel Gladiator's Felskin Tunic
-										i(144589),	-- Cruel Gladiator's Felskin Wristguards
-										i(144579),	-- Cruel Gladiator's Felskin Gloves
-										i(144587),	-- Cruel Gladiator's Felskin Belt
-										i(144583),	-- Cruel Gladiator's Felskin Legguards
-										i(144577),	-- Cruel Gladiator's Felskin Boots
-									}),
+									{	-- Ensemble: Cruel Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 147652,	-- Ensemble: Cruel Gladiator's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Cruel Gladiator's Felskin Helm
+												["itemID"] = 144581,	-- Cruel Gladiator's Felskin Helm
+											},
+											{	-- Cruel Gladiator's Felskin Spaulders
+												["itemID"] = 144585,	-- Cruel Gladiator's Felskin Spaulders
+											},
+											{	-- Cruel Gladiator's Demonthread Cloak
+												["itemID"] = 144537,	-- Cruel Gladiator's Demonthread Cloak
+											},
+											{	-- Cruel Gladiator's Felskin Tunic
+												["itemID"] = 144575,	-- Cruel Gladiator's Felskin Tunic
+											},
+											{	-- Cruel Gladiator's Felskin Wristguards
+												["itemID"] = 144589,	-- Cruel Gladiator's Felskin Wristguards
+											},
+											{	-- Cruel Gladiator's Felskin Gloves
+												["itemID"] = 144579,	-- Cruel Gladiator's Felskin Gloves
+											},
+											{	-- Cruel Gladiator's Felskin Belt
+												["itemID"] = 144587,	-- Cruel Gladiator's Felskin Belt
+											},
+											{	-- Cruel Gladiator's Felskin Legguards
+												["itemID"] = 144583,	-- Cruel Gladiator's Felskin Legguards
+											},
+											{	-- Cruel Gladiator's Felskin Boots
+												["itemID"] = 144577,	-- Cruel Gladiator's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147645,	-- Ensemble: Cruel Gladiator's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Chain Helm
 												["itemID"] = 144613,	-- Cruel Gladiator's Chain Helm
@@ -1492,6 +1739,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147662,	-- Ensemble: Cruel Gladiator's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Ringmail Helm
 												["itemID"] = 144721,	-- Cruel Gladiator's Ringmail Helm
@@ -1524,6 +1774,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147666,	-- Ensemble: Cruel Gladiator's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Scaled Helm
 												["itemID"] = 144666,	-- Cruel Gladiator's Scaled Helm
@@ -1556,6 +1809,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147659,	-- Ensemble: Cruel Gladiator's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Plate Helm
 												["itemID"] = 144771,	-- Cruel Gladiator's Plate Helm
@@ -1588,6 +1844,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147649,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Cruel Gladiator's Dreadplate Helm
 												["itemID"] = 144565,	-- Cruel Gladiator's Dreadplate Helm
@@ -1621,6 +1880,9 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 149497,	-- Ensemble: Fierce Gladiator's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Satin Hood
 												["itemID"] = 148056,	-- Fierce Gladiator's Satin Hood
@@ -1653,6 +1915,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 149500,	-- Ensemble: Fierce Gladiator's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Silk Cowl
 												["itemID"] = 148002,	-- Fierce Gladiator's Silk Cowl
@@ -1686,6 +1951,9 @@ _.Zones =
 									
 									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 149481,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Dragonhide Helm
 												["itemID"] = 147972,	-- Fierce Gladiator's Dragonhide Helm
@@ -1719,6 +1987,9 @@ _.Zones =
 									
 									{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 149488,	-- Ensemble: Fierce Gladiator's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Ironskin Helm
 												["itemID"] = 148018,	-- Fierce Gladiator's Ironskin Helm
@@ -1749,9 +2020,46 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 149485,	-- Ensemble: Fierce Gladiator's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Fierce Gladiator's Felskin Helm
+												["itemID"] = 147956,	-- Fierce Gladiator's Felskin Helm
+											},
+											{	-- Fierce Gladiator's Felskin Spaulders
+												["itemID"] = 147960,	-- Fierce Gladiator's Felskin Spaulders
+											},
+											{	-- Fierce Gladiator's Demonthread Cloak
+												["itemID"] = 147912,	-- Fierce Gladiator's Demonthread Cloak
+											},
+											{	-- Fierce Gladiator's Felskin Tunic
+												["itemID"] = 147950,	-- Fierce Gladiator's Felskin Tunic
+											},
+											{	-- Fierce Gladiator's Felskin Wristguards
+												["itemID"] = 147964,	-- Fierce Gladiator's Felskin Wristguards
+											},
+											{	-- Fierce Gladiator's Felskin Gloves
+												["itemID"] = 147954,	-- Fierce Gladiator's Felskin Gloves
+											},
+											{	-- Fierce Gladiator's Felskin Belt
+												["itemID"] = 147962,	-- Fierce Gladiator's Felskin Belt
+											},
+											{	-- Fierce Gladiator's Felskin Legguards
+												["itemID"] = 147958,	-- Fierce Gladiator's Felskin Legguards
+											},
+											{	-- Fierce Gladiator's Felskin Boots
+												["itemID"] = 147952,	-- Fierce Gladiator's Felskin Boots
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Chain Helm
 												["itemID"] = 147988,	-- Fierce Gladiator's Chain Helm
@@ -1784,6 +2092,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 149495,	-- Ensemble: Fierce Gladiator's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Ringmail Helm
 												["itemID"] = 148096,	-- Fierce Gladiator's Ringmail Helm
@@ -1816,6 +2127,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 149499,	-- Ensemble: Fierce Gladiator's Scaled Armor
+										["classes"] = {
+											2,	-- Pally
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Scaled Helm
 												["itemID"] = 148041,	-- Fierce Gladiator's Scaled Helm
@@ -1848,6 +2162,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 149492,	-- Ensemble: Fierce Gladiator's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Plate Helm
 												["itemID"] = 148146,	-- Fierce Gladiator's Plate Helm
@@ -1880,6 +2197,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 149482,	-- Ensemble: Fierce Gladiator's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Dreadplate Helm
 												["itemID"] = 147940,	-- Fierce Gladiator's Dreadplate Helm
