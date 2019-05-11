@@ -45,6 +45,7 @@ _.Achievements =
 							{	-- Boosting Morale
 								["achievementID"] = 5718,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 3,			-- Boosting Morale
+								["races"] = ALLIANCE_ONLY,
 								["maps"] = {
 									245,	-- Tol Barad Peninsula
 								},
@@ -156,6 +157,7 @@ _.Achievements =
 							{	-- Not The Friendliest Town
 								["achievementID"] = 5718,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 13,		-- Not The Friendliest Town
+								["races"] = ALLIANCE_ONLY,
 								["maps"] = {
 									245,	-- Tol Barad Peninsula
 								},
@@ -171,6 +173,7 @@ _.Achievements =
 							{	-- Rattling Their Cages
 								["achievementID"] = 5718,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 2,			-- Rattling Their Cages
+								["races"] = ALLIANCE_ONLY,
 								["maps"] = {
 									244,	-- Tol Barad
 								},
@@ -312,6 +315,7 @@ _.Achievements =
 							{	-- Boosting Morale
 								["achievementID"] = 5719,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 3,			-- Boosting Morale
+								["races"] = HORDE_ONLY,
 								["maps"] = {
 									245,	-- Tol Barad Peninsula
 								},
@@ -423,6 +427,7 @@ _.Achievements =
 							{	-- Not The Friendliest Town
 								["achievementID"] = 5719,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 13,		-- Not The Friendliest Town
+								["races"] = HORDE_ONLY,
 								["maps"] = {
 									245,	-- Tol Barad Peninsula
 								},
@@ -438,6 +443,7 @@ _.Achievements =
 							{	-- Rattling Their Cages
 								["achievementID"] = 5719,	-- Just Another Day in Tol Barad
 								["criteriaID"] = 2,			-- Rattling Their Cages
+								["races"] = HORDE_ONLY,
 								["maps"] = {
 									244,	-- Tol Barad
 								},
