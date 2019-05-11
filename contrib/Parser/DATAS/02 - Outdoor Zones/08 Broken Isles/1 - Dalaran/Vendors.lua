@@ -1802,8 +1802,8 @@ _.Zones =
 											{	-- Cruel Gladiator's Felweave Cloak
 												["itemID"] = 144555,	-- Cruel Gladiator's Felweave Cloak
 											},
-											{	-- Cruel Gladiator's Drape of the Tracker
-												["itemID"] = 144787,	-- Cruel Gladiator's Drape of the Tracker
+											{	-- Cruel Gladiator's Felweave Raiment
+												["itemID"] = 144757,	-- Cruel Gladiator's Felweave Raiment
 											},
 											{	-- Cruel Gladiator's Felweave Bracers
 												["itemID"] = 144763,	-- Cruel Gladiator's Felweave Bracers
