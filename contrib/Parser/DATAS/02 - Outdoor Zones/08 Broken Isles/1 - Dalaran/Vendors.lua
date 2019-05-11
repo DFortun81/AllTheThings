@@ -97,17 +97,41 @@ _.Zones =
 											},
 										},
 									},
-									i(146161, {	-- Vindictive Combatant's Felweave Armor
-										i(136004),	-- Vindictive Combatant's Felweave Cowl
-										i(136007),	-- Vindictive Combatant's Felweave Amice
-										i(136882),	-- Vindictive Combatant's Felweave Cloak
-										i(136006),	-- Vindictive Combatant's Felweave Tunic
-										i(136009),	-- Vindictive Combatant's Felweave Bracers
-										i(136003),	-- Vindictive Combatant's Felweave Handguards
-										i(136008),	-- Vindictive Combatant's Felweave Cord
-										i(136005),	-- Vindictive Combatant's Felweave Trousers
-										i(136002),	-- Vindictive Combatant's Felweave Treads
-									}),
+									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 146161,	-- Ensemble: Vindictive Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Felweave Cowl
+												["itemID"] = 136004,	-- Vindictive Combatant's Felweave Cowl
+											},
+											{	-- Vindictive Combatant's Felweave Amice
+												["itemID"] = 136007,	-- Vindictive Combatant's Felweave Amice
+											},
+											{	-- Vindictive Combatant's Felweave Cloak
+												["itemID"] = 136882,	-- Vindictive Combatant's Felweave Cloak
+											},
+											{	-- Vindictive Combatant's Felweave Tunic
+												["itemID"] = 136006,	-- Vindictive Combatant's Felweave Tunic
+											},
+											{	-- Vindictive Combatant's Felweave Bracers
+												["itemID"] = 136009,	-- Vindictive Combatant's Felweave Bracers
+											},
+											{	-- Vindictive Combatant's Felweave Handguards
+												["itemID"] = 136003,	-- Vindictive Combatant's Felweave Handguards
+											},
+											{	-- Vindictive Combatant's Felweave Cord
+												["itemID"] = 136008,	-- Vindictive Combatant's Felweave Cord
+											},
+											{	-- Vindictive Combatant's Felweave Trousers
+												["itemID"] = 136005,	-- Vindictive Combatant's Felweave Trousers
+											},
+											{	-- Vindictive Combatant's Felweave Treads
+												["itemID"] = 136002,	-- Vindictive Combatant's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146169,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
 										["classes"] = {
@@ -494,17 +518,41 @@ _.Zones =
 											},
 										},
 									},
-									i(147681, {	-- Cruel Combatant's Felweave Armor
-										i(145245),	-- Cruel Combatant's Felweave Cowl
-										i(145251),	-- Cruel Combatant's Felweave Amice
-										i(145047),	-- Cruel Combatant's Felweave Cloak
-										i(145249),	-- Cruel Combatant's Felweave Raiment
-										i(145255),	-- Cruel Combatant's Felweave Bracers
-										i(145243),	-- Cruel Combatant's Felweave Handguards
-										i(145253),	-- Cruel Combatant's Felweave Cord
-										i(145247),	-- Cruel Combatant's Felweave Trousers
-										i(145241),	-- Cruel Combatant's Felweave Treads
-									}),
+									{	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 147681,	-- Ensemble: Cruel Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Felweave Cowl
+												["itemID"] = 145245,	-- Cruel Combatant's Felweave Cowl
+											},
+											{	-- Cruel Combatant's Felweave Amice
+												["itemID"] = 145251,	-- Cruel Combatant's Felweave Amice
+											},
+											{	-- Cruel Combatant's Felweave Cloak
+												["itemID"] = 145047,	-- Cruel Combatant's Felweave Cloak
+											},
+											{	-- Cruel Combatant's Felweave Raiment
+												["itemID"] = 145249,	-- Cruel Combatant's Felweave Raiment
+											},
+											{	-- Cruel Combatant's Felweave Bracers
+												["itemID"] = 145255,	-- Cruel Combatant's Felweave Bracers
+											},
+											{	-- Cruel Combatant's Felweave Handguards
+												["itemID"] = 145243,	-- Cruel Combatant's Felweave Handguards
+											},
+											{	-- Cruel Combatant's Felweave Cord
+												["itemID"] = 145253,	-- Cruel Combatant's Felweave Cord
+											},
+											{	-- Cruel Combatant's Felweave Trousers
+												["itemID"] = 145247,	-- Cruel Combatant's Felweave Trousers
+											},
+											{	-- Cruel Combatant's Felweave Treads
+												["itemID"] = 145241,	-- Cruel Combatant's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147676,	-- Ensemble: Cruel Combatant's Dragonhide Armor
 										["classes"] = {
@@ -891,7 +939,41 @@ _.Zones =
 											},
 										},
 									},
-									
+																		{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 150256,	-- Ensemble: Fierce Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Felweave Cowl
+												["itemID"] = 149725,	-- Fierce Combatant's Felweave Cowl
+											},
+											{	-- Fierce Combatant's Felweave Amice
+												["itemID"] = 149731,	-- Fierce Combatant's Felweave Amice
+											},
+											{	-- Fierce Combatant's Felweave Cloak
+												["itemID"] = 149526,	-- Fierce Combatant's Felweave Cloak
+											},
+											{	-- Fierce Combatant's Felweave Raiment
+												["itemID"] = 149729,	-- Fierce Combatant's Felweave Raiment
+											},
+											{	-- Fierce Combatant's Felweave Bracers
+												["itemID"] = 149735,	-- Fierce Combatant's Felweave Bracers
+											},
+											{	-- Fierce Combatant's Felweave Handguards
+												["itemID"] = 149723,	-- Fierce Combatant's Felweave Handguards
+											},
+											{	-- Fierce Combatant's Felweave Cord
+												["itemID"] = 149733,	-- Fierce Combatant's Felweave Cord
+											},
+											{	-- Fierce Combatant's Felweave Trousers
+												["itemID"] = 149727,	-- Fierce Combatant's Felweave Trousers
+											},
+											{	-- Fierce Combatant's Felweave Treads
+												["itemID"] = 149721,	-- Fierce Combatant's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
 										["classes"] = {
@@ -1284,17 +1366,41 @@ _.Zones =
 											},
 										},
 									},
-									i(146151, {	-- Vindictive Gladiator's Felweave Armor
-										i(135778),	-- Vindictive Gladiator's Felweave Cowl
-										i(135781),	-- Vindictive Gladiator's Felweave Amice
-										i(136880),	-- Vindictive Gladiator's Felweave Cloak
-										i(135780),	-- Vindictive Gladiator's Felweave Raiment
-										i(135783),	-- Vindictive Gladiator's Felweave Bracers
-										i(135777),	-- Vindictive Gladiator's Felweave Handguards
-										i(135782),	-- Vindictive Gladiator's Felweave Cord
-										i(135779),	-- Vindictive Gladiator's Felweave Trousers
-										i(135776),	-- Vindictive Gladiator's Felweave Treads
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 146151,	-- Ensemble: Vindictive Gladiator's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Vindictive Gladiator's Felweave Cowl
+												["itemID"] = 135778,	-- Vindictive Gladiator's Felweave Cowl
+											},
+											{	-- Vindictive Gladiator's Felweave Amice
+												["itemID"] = 135781,	-- Vindictive Gladiator's Felweave Amice
+											},
+											{	-- Vindictive Gladiator's Felweave Cloak
+												["itemID"] = 136880,	-- Vindictive Gladiator's Felweave Cloak
+											},
+											{	-- Vindictive Gladiator's Felweave Raiment
+												["itemID"] = 135780,	-- Vindictive Gladiator's Felweave Raiment
+											},
+											{	-- Vindictive Gladiator's Felweave Bracers
+												["itemID"] = 135783,	-- Vindictive Gladiator's Felweave Bracers
+											},
+											{	-- Vindictive Gladiator's Felweave Handguards
+												["itemID"] = 135777,	-- Vindictive Gladiator's Felweave Handguards
+											},
+											{	-- Vindictive Gladiator's Felweave Cord
+												["itemID"] = 135782,	-- Vindictive Gladiator's Felweave Cord
+											},
+											{	-- Vindictive Gladiator's Felweave Trousers
+												["itemID"] = 135779,	-- Vindictive Gladiator's Felweave Trousers
+											},
+											{	-- Vindictive Gladiator's Felweave Treads
+												["itemID"] = 135776,	-- Vindictive Gladiator's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146141,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
 										["classes"] = {
@@ -1681,17 +1787,41 @@ _.Zones =
 											},
 										},
 									},
-									i(147654, {	-- Cruel Gladiator's Felweave Armor
-										i(144753),	-- Cruel Gladiator's Felweave Cowl
-										i(144759),	-- Cruel Gladiator's Felweave Amice
-										i(144555),	-- Cruel Gladiator's Felweave Cloak
-										i(144757),	-- Cruel Gladiator's Felweave Raiment
-										i(144763),	-- Cruel Gladiator's Felweave Bracers
-										i(144751),	-- Cruel Gladiator's Felweave Handguards
-										i(144761),	-- Cruel Gladiator's Felweave Cord
-										i(144755),	-- Cruel Gladiator's Felweave Trousers
-										i(144749),	-- Cruel Gladiator's Felweave Treads
-									}),
+									{	-- Ensemble: Cruel Gladiator's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 147654,	-- Ensemble: Cruel Gladiator's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Cruel Gladiator's Felweave Cowl
+												["itemID"] = 144753,	-- Cruel Gladiator's Felweave Cowl
+											},
+											{	-- Cruel Gladiator's Felweave Amice
+												["itemID"] = 144759,	-- Cruel Gladiator's Felweave Amice
+											},
+											{	-- Cruel Gladiator's Felweave Cloak
+												["itemID"] = 144555,	-- Cruel Gladiator's Felweave Cloak
+											},
+											{	-- Cruel Gladiator's Drape of the Tracker
+												["itemID"] = 144787,	-- Cruel Gladiator's Drape of the Tracker
+											},
+											{	-- Cruel Gladiator's Felweave Bracers
+												["itemID"] = 144763,	-- Cruel Gladiator's Felweave Bracers
+											},
+											{	-- Cruel Gladiator's Felweave Handguards
+												["itemID"] = 144751,	-- Cruel Gladiator's Felweave Handguards
+											},
+											{	-- Cruel Gladiator's Felweave Cord
+												["itemID"] = 144761,	-- Cruel Gladiator's Felweave Cord
+											},
+											{	-- Cruel Gladiator's Felweave Trousers
+												["itemID"] = 144755,	-- Cruel Gladiator's Felweave Trousers
+											},
+											{	-- Cruel Gladiator's Felweave Treads
+												["itemID"] = 144749,	-- Cruel Gladiator's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147648,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
 										["classes"] = {
@@ -2078,7 +2208,38 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 149487,	-- Ensemble: Fierce Gladiator's Felweave Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Felweave Cowl
+												["itemID"] = 148128,	-- Fierce Gladiator's Felweave Cowl
+											},
+											{	-- Fierce Gladiator's Felweave Amice
+												["itemID"] = 148134,	-- Fierce Gladiator's Felweave Amice
+											},
+											{	-- Fierce Gladiator's Felweave Cloak
+												["itemID"] = 147930,	-- Fierce Gladiator's Felweave Cloak
+											},
+											{	-- Fierce Gladiator's Felweave Raiment
+												["itemID"] = 148132,	-- Fierce Gladiator's Felweave Raiment
+											},
+											{	-- Fierce Gladiator's Felweave Bracers
+												["itemID"] = 148138,	-- Fierce Gladiator's Felweave Bracers
+											},
+											{	-- Fierce Gladiator's Felweave Handguards
+												["itemID"] = 148126,	-- Fierce Gladiator's Felweave Handguards
+											},
+											{	-- Fierce Gladiator's Felweave Cord
+												["itemID"] = 148136,	-- Fierce Gladiator's Felweave Cord
+											},
+											{	-- Fierce Gladiator's Felweave Trousers
+												["itemID"] = 148130,	-- Fierce Gladiator's Felweave Trousers
+											},
+											{	-- Fierce Gladiator's Felweave Treads
+												["itemID"] = 148124,	-- Fierce Gladiator's Felweave Treads
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 149481,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
 										["classes"] = {
