@@ -78,40 +78,6 @@ _.ExpansionFeatures =
 						crit(32),		-- Swamp Bait
 						crit(33),		-- The Leftovers
 					})),
-					a(ach(5489, {	-- Master of Tol Barad (Alliance)
-						crit(1),		-- Tol Barad Veteran
-						crit(2),		-- Tower Plower
-						crit(3),		-- Towers of Power
-						crit(4),		-- Tol Barad Saboteur
-						crit(5),		-- Tol Barad All-Star
-						crit(6),		-- Pit Lord Argaloth
-					})),
-					h(ach(5490, {	-- Master of Tol Barad (Horde)
-						crit(1),		-- Tol Barad Veteran
-						crit(2),		-- Tower Plower
-						crit(3),		-- Towers of Power
-						crit(4),		-- Tol Barad Saboteur
-						crit(5),		-- Tol Barad All-Star
-						crit(6),		-- Pit Lord Argaloth
-					})),
-					ach(5486, {		-- Tol Barad All-Star
-						crit(1),		-- Get 10 honorable kills at the Ironclad Garrison
-						crit(2),		-- Get 10 honorable kills at the Warden's Vigil
-						crit(3),		-- Get 10 honorable kills at the Slagworks
-					}),
-					ach(5487, {		-- Tol Barad Saboteur
-						crit(1),		-- Destroy 20 deployed Siege Engines
-					}),
-					a(ach(5417, {	-- Tol Barad Veteran (Alliance)
-						ach(5412),		-- Tol Barad Victory
-					})),
-					h(ach(5418, {	-- Tol Barad Veteran (Horde)
-						ach(5412),		-- Tol Barad Victory
-					})),
-					ach(5415),		-- Tower Plower
-					ach(5488, {		-- Towers of Power
-						crit(1),		-- Destroy 3 Siege Engines in a single battle 
-					}),						
 				},
 			}),
 			n(-25, { 	-- Pet Battle
