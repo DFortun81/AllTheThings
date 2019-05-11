@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		["groups"] = {
 			n(-25, { 	-- Pet Battle
 				p(410), 	-- Wharf Rat
-			}),			
+			}),
 			n(-16, { 	-- Rare
 				n(47676, { 	-- Baradin Fox
 					dr(0.1, i(64403)),  -- Fox Kit Pet
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 			}),
---[[				
+--[[
 			n(-17, { 	-- Quests
 				qa( 28122),	-- A Huge Problem
 				qh( 28657),	-- A Huge Problem
@@ -60,9 +60,9 @@ _.ExpansionFeatures =
 				qa( 28223),	-- The Warden
 				qh( 28669),	-- The Warden
 				qa( 28882),	-- Victory in Tol Barad
-				qh( 28884),	-- Victory in Tol Barad						
+				qh( 28884),	-- Victory in Tol Barad
 			}),
---]]				
+--]]
 			n(-2, { 	-- Vendor
 				nh(48531, {	-- Pogg
 					{	-- Tol Barad Commendation
@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			m(244, { 	-- Tol Barad 
+			m(244, { 	-- Tol Barad
 				["groups"] = {
 					n(-38, { 	-- Profession
 						n(-188, { 	-- Mining
@@ -117,10 +117,10 @@ _.ExpansionFeatures =
 							},
 							["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 						}),
-					}),	
-				},	
-				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",	
-				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",			
+					}),
+				},
+				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
+				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",
 			}),
 		},
 		["description"] = "|cff66ccffTol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.|r",

@@ -3622,7 +3622,7 @@ _.Zones =
 						["npcID"] = 106930,		-- Lieutenant Surtees <Legion Gladiator>
 						["races"] = ALLIANCE_ONLY,
 						["itemID"] = 137642,	-- Mark of Honor
-						["coords"] = { 
+						["coords"] = {
 							{ 29.41, 75.64, 627 },
 						},
 						["g"] = {

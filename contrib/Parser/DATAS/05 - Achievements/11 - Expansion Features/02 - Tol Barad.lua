@@ -2,7 +2,7 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		["groups"] = {
@@ -12,7 +12,7 @@ _.Achievements =
 						["achievementID"] = 6108,	-- Alizabal
 						["maps"] = {
 							262,	-- Baradin Hold
-						},	
+						},
 					},
 					{	-- Just Another Day in Tol Barad [Alliance]
 						["achievementID"] = 5718,	-- Just Another Day in Tol Barad
@@ -584,7 +584,7 @@ _.Achievements =
 							},
 							{	-- Tol Barad Saboteur
 								["achievementID"] = 5487,	-- Tol Barad Saboteur
-							},	
+							},
 							{	-- Tol Barad Veteran
 								["achievementID"] = 5417,	-- Tol Barad Veteran
 								["races"] = ALLIANCE_ONLY,
@@ -627,7 +627,7 @@ _.Achievements =
 							},
 							{	-- Tol Barad Saboteur
 								["achievementID"] = 5487,	-- Tol Barad Saboteur
-							},	
+							},
 							{	-- Tol Barad Veteran
 								["achievementID"] = 5418,	-- Tol Barad Veteran
 								["races"] = HORDE_ONLY,
@@ -644,7 +644,7 @@ _.Achievements =
 						["achievementID"] = 6045,	-- Occu'thar
 						["maps"] = {
 							262,	-- Baradin Hold
-						},	
+						},
 					},
 				},
 			}),

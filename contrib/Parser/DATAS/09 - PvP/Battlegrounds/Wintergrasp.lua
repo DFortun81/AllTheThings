@@ -8,55 +8,10 @@ _.PVP =
 			["maps"] = {
 				1334,	-- Wintergrasp (BG)
 			},
-			["lvl"] = 67,	
-			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",	
-			["icon"] = "Interface\\Icons\\spell_frost_chillingblast", 
+			["lvl"] = 67,
+			["description"] = "|cff66ccffWintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns. .|r",
+			["icon"] = "Interface\\Icons\\spell_frost_chillingblast",
 			["g"] = {
-				n(-4,   {	-- Achievements
-					a(ach(1737, {	-- Destruction Derby (Alliance)
-						crit(1),		-- Wintergrasp Catapult
-						crit(2),		-- Wintergrasp Demolisher
-						crit(3),		-- Wintergrasp Siege Engine
-						crit(4),		-- Wintergrasp Tower Cannon
-					})),
-					h(ach(2476, {	-- Destruction Derby (Horde)
-						crit(1),		-- Wintergrasp Catapult
-						crit(2),		-- Wintergrasp Demolisher
-						crit(3),		-- Wintergrasp Siege Engine
-						crit(4),		-- Wintergrasp Tower Cannon
-					})),
-					ach(1751),		-- Didn't Stand a Chance
-					ach(1727),		-- Leaning Tower
-					ach(1752, {		-- Master of Wintergrasp
-						crit(1),		-- Wintergrasp Veteran
-						crit(2),		-- Within Our Grasp
-						crit(3),		-- Wintergrasp Ranger
-						crit(4),		-- Black War Mammoth
-						crit(5),		-- Archavon the Stone Watcher
-						crit(6),		-- Heroic: Archavon the Stone Watcher
-						crit(7),		-- Destruction Derby
-						crit(8),		-- Vehicular Gnomeslaughter
-						crit(9),		-- Leaning Tower
-						crit(10),		-- Didn't Stand a Chance
-					}),
-					ach(1723),		-- Vehicular Gnomeslaughter
-					ach(2199, {		-- Wintergrasp Ranger
-						crit(1),		-- Wintergrasp Fortress
-						crit(2),		-- Eastspark Workshop
-						crit(3),		-- Flamewatch Tower
-						crit(4),		-- The Broken Temple
-						crit(5),		-- Shadowsight Tower
-						crit(6),		-- The Cauldron of Flames
-						crit(7),		-- The Sunken Ring
-						crit(8),		-- Winter's Edge Tower
-						crit(9),		-- Westspark Workshop
-						crit(10),		-- The Chilled Quagmire
-					}),
-					ach(1718, {		-- Wintergrasp Veteran
-						ach(1717),		-- Wintergrasp Victory
-					}),
-					ach(1755),		-- Within Our Grasp
-				}),
 				n(-228, {	-- Flight Points
 					fp(303, {	-- Valiance Landing Camp, Wintergrasp
 						["coord"] = { 72, 31 },
@@ -65,37 +20,38 @@ _.PVP =
 						["coord"] = { 21.6, 34.8 },
 					}),
 				}),
---[[			n(-17,  { 	-- Quests
-					qa( 13156),	-- A Rare Herb
-					qa( 13195),	-- A Rare Herb
-					q(13026),	-- Bluewolf the Elder
-					qh( 13193),	-- Bones and Arrows
-					qh( 13199),	-- Bones and Arrows
-					qa( 13196),	-- Bones and Arrows
-					qa( 13154),	-- Bones and Arrows
-					qa( 13222),	-- Defend the Siege
-					qh( 13223),	-- Defend the Siege
-					qa( 13197),	-- Fueling the Demolishers
-					qh( 13191),	-- Fueling the Demolishers
-					qh( 13200),	-- Fueling the Demolishers
-					qh( 13194),	-- Healing with Roses
-					qh( 13201),	-- Healing with Roses
-					qh( 13202),	-- Jinxing the Walls
-					qa( 13179),	-- No Mercy for the Merciless
-					qa( 13177),	-- No Mercy for the Merciless
-					qh( 13178),	-- Slay them all!
-					qh( 13180),	-- Slay them all!
-					qa( 13538),	-- Southern Sabotage
-					qa( 13186),	-- Stop the Siege
-					qh( 13185),	-- Stop the Siege
-					qh( 13539),	-- Toppling the Towers
-					qa( 13181),	-- Victory in Wintergrasp
-					qh( 13183),	-- Victory in Wintergrasp
-					qh( 13192),	-- Warding the Walls
-					qa( 13198),	-- Warding the Warriors
-					qa( 13153),	-- Warding the Warriors				
-				}),
-	--]]				
+				{	-- Quests
+					["npcID"] = -17,	-- Quests
+					["g"] = bubbleDown({["isWeekly"] = true}, {
+						qa(13156),	-- A Rare Herb
+						qa(13195),	-- A Rare Herb
+						qh(13193),	-- Bones and Arrows
+						qh(13199),	-- Bones and Arrows
+						qa(13196),	-- Bones and Arrows
+						qa(13154),	-- Bones and Arrows
+						qa(13222),	-- Defend the Siege
+						qh(13223),	-- Defend the Siege
+						qa(13197),	-- Fueling the Demolishers
+						qh(13191),	-- Fueling the Demolishers
+						qh(13200),	-- Fueling the Demolishers
+						qh(13194),	-- Healing with Roses
+						qh(13201),	-- Healing with Roses
+						qh(13202),	-- Jinxing the Walls
+						qa(13179),	-- No Mercy for the Merciless
+						qa(13177),	-- No Mercy for the Merciless
+						qh(13178),	-- Slay them all!
+						qh(13180),	-- Slay them all!
+						qa(13538),	-- Southern Sabotage
+						qa(13186),	-- Stop the Siege
+						qh(13185),	-- Stop the Siege
+						qh(13539),	-- Toppling the Towers
+						qa(13181),	-- Victory in Wintergrasp
+						qh(13183),	-- Victory in Wintergrasp
+						qh(13192),	-- Warding the Walls
+						qa(13198),	-- Warding the Warriors
+						qa(13153),	-- Warding the Warriors
+					}),
+				},
 				n(-2,   {	-- Vendors
 					["description"] = "|cff66ccffThese vendors will only show if your faction controls Wintergrasp.|r",
 					["g"] = {
