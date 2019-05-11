@@ -1292,7 +1292,7 @@ _.Zones =
 								},
 							},
 							{	-- Gladiator
-								["setSubHeaderID"] = 1414,	-- Combatant
+								["setSubHeaderID"] = 1414,	-- Gladiator
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION Season 1 & 2
@@ -3626,7 +3626,9 @@ _.Zones =
 							{ 29.41, 75.64, 627 },
 						},
 						["g"] = {
-							gssh(1071, {	-- Combatant
+							{	-- Combatant
+								["setSubHeaderID"] = 1071,	-- Combatant
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 								["g"] = {
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
@@ -4470,12 +4472,432 @@ _.Zones =
 											},
 										},
 									},
-
 									-- LEGION Season 5, 6, 7
+									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 150263,	-- Ensemble: Fierce Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Satin Hood
+												["itemID"] = 149652,	-- Fierce Combatant's Satin Hood
+											},
+											{	-- Fierce Combatant's Satin Mantle
+												["itemID"] = 149658,	-- Fierce Combatant's Satin Mantle
+											},
+											{	-- Fierce Combatant's Drape of Piety
+												["itemID"] = 149519,	-- Fierce Combatant's Drape of Piety
+											},
+											{	-- Fierce Combatant's Satin Robe
+												["itemID"] = 149656,	-- Fierce Combatant's Satin Robe
+											},
+											{	-- Fierce Combatant's Satin Bracers
+												["itemID"] = 149662,	-- Fierce Combatant's Satin Bracers
+											},
+											{	-- Fierce Combatant's Satin Gloves
+												["itemID"] = 149650,	-- Fierce Combatant's Satin Gloves
+											},
+											{	-- Fierce Combatant's Satin Cord
+												["itemID"] = 149660,	-- Fierce Combatant's Satin Cord
+											},
+											{	-- Fierce Combatant's Satin Leggings
+												["itemID"] = 149654,	-- Fierce Combatant's Satin Leggings
+											},
+											{	-- Fierce Combatant's Satin Treads
+												["itemID"] = 149648,	-- Fierce Combatant's Satin Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 150271,	-- Ensemble: Fierce Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Silk Cowl
+												["itemID"] = 149598,	-- Fierce Combatant's Silk Cowl
+											},
+											{	-- Fierce Combatant's Silk Amice
+												["itemID"] = 149604,	-- Fierce Combatant's Silk Amice
+											},
+											{	-- Fierce Combatant's Silken Shawl
+												["itemID"] = 149513,	-- Fierce Combatant's Silken Shawl
+											},
+											{	-- Fierce Combatant's Silk Robe
+												["itemID"] = 149602,	-- Fierce Combatant's Silk Robe
+											},
+											{	-- Fierce Combatant's Silk Bracers
+												["itemID"] = 149608,	-- Fierce Combatant's Silk Bracers
+											},
+											{	-- Fierce Combatant's Silk Handguards
+												["itemID"] = 149596,	-- Fierce Combatant's Silk Handguards
+											},
+											{	-- Fierce Combatant's Silk Cord
+												["itemID"] = 149606,	-- Fierce Combatant's Silk Cord
+											},
+											{	-- Fierce Combatant's Silk Trousers
+												["itemID"] = 149600,	-- Fierce Combatant's Silk Trousers
+											},
+											{	-- Fierce Combatant's Silk Treads
+												["itemID"] = 149594,	-- Fierce Combatant's Silk Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 150257,	-- Ensemble: Fierce Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Felweave Cowl
+												["itemID"] = 149724,	-- Fierce Combatant's Felweave Cowl
+											},
+											{	-- Fierce Combatant's Felweave Amice
+												["itemID"] = 149730,	-- Fierce Combatant's Felweave Amice
+											},
+											{	-- Fierce Combatant's Felweave Cloak
+												["itemID"] = 149525,	-- Fierce Combatant's Felweave Cloak
+											},
+											{	-- Fierce Combatant's Felweave Raiment
+												["itemID"] = 149728,	-- Fierce Combatant's Felweave Raiment
+											},
+											{	-- Fierce Combatant's Felweave Bracers
+												["itemID"] = 149734,	-- Fierce Combatant's Felweave Bracers
+											},
+											{	-- Fierce Combatant's Felweave Handguards
+												["itemID"] = 149722,	-- Fierce Combatant's Felweave Handguards
+											},
+											{	-- Fierce Combatant's Felweave Cord
+												["itemID"] = 149732,	-- Fierce Combatant's Felweave Cord
+											},
+											{	-- Fierce Combatant's Felweave Trousers
+												["itemID"] = 149726,	-- Fierce Combatant's Felweave Trousers
+											},
+											{	-- Fierce Combatant's Felweave Treads
+												["itemID"] = 149720,	-- Fierce Combatant's Felweave Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 150250,	-- Ensemble: Fierce Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Dragonhide Helm
+												["itemID"] = 149567,	-- Fierce Combatant's Dragonhide Helm
+											},
+											{	-- Fierce Combatant's Dragonhide Spaulders
+												["itemID"] = 149571,	-- Fierce Combatant's Dragonhide Spaulders
+											},
+											{	-- Fierce Combatant's Dragonhide Cloak
+												["itemID"] = 149509,	-- Fierce Combatant's Dragonhide Cloak
+											},
+											{	-- Fierce Combatant's Dragonhide Tunic
+												["itemID"] = 149561,	-- Fierce Combatant's Dragonhide Tunic
+											},
+											{	-- Fierce Combatant's Dragonhide Wristguards
+												["itemID"] = 149576,	-- Fierce Combatant's Dragonhide Wristguards
+											},
+											{	-- Fierce Combatant's Dragonhide Gloves
+												["itemID"] = 149565,	-- Fierce Combatant's Dragonhide Gloves
+											},
+											{	-- Fierce Combatant's Dragonhide Belt
+												["itemID"] = 149573,	-- Fierce Combatant's Dragonhide Belt
+											},
+											{	-- Fierce Combatant's Dragonhide Legguards
+												["itemID"] = 149569,	-- Fierce Combatant's Dragonhide Legguards
+											},
+											{	-- Fierce Combatant's Dragonhide Moccasins
+												["itemID"] = 149563,	-- Fierce Combatant's Dragonhide Moccasins
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 150260,	-- Ensemble: Fierce Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Leather Helm
+												["itemID"] = 149676,	-- Fierce Combatant's Leather Helm
+											},
+											{	-- Fierce Combatant's Leather Spaulders
+												["itemID"] = 149680,	-- Fierce Combatant's Leather Spaulders
+											},
+											{	-- Fierce Combatant's Shadowcape
+												["itemID"] = 149521,	-- Fierce Combatant's Shadowcape
+											},
+											{	-- Fierce Combatant's Leather Tunic
+												["itemID"] = 149670,	-- Fierce Combatant's Leather Tunic
+											},
+											{	-- Fierce Combatant's Leather Wristguards
+												["itemID"] = 149684,	-- Fierce Combatant's Leather Wristguards
+											},
+											{	-- Fierce Combatant's Leather Gloves
+												["itemID"] = 149674,	-- Fierce Combatant's Leather Gloves
+											},
+											{	-- Fierce Combatant's Leather Belt
+												["itemID"] = 149682,	-- Fierce Combatant's Leather Belt
+											},
+											{	-- Fierce Combatant's Leather Legguards
+												["itemID"] = 149678,	-- Fierce Combatant's Leather Legguards
+											},
+											{	-- Fierce Combatant's Leather Slippers
+												["itemID"] = 149672,	-- Fierce Combatant's Leather Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 150259,	-- Ensemble: Fierce Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Ironskin Helm
+												["itemID"] = 149614,	-- Fierce Combatant's Ironskin Helm
+											},
+											{	-- Fierce Combatant's Ironskin Spaulders
+												["itemID"] = 149618,	-- Fierce Combatant's Ironskin Spaulders
+											},
+											{	-- Fierce Combatant's Ironskin Cloak
+												["itemID"] = 149515,	-- Fierce Combatant's Ironskin Cloak
+											},
+											{	-- Fierce Combatant's Ironskin Tunic
+												["itemID"] = 149620,	-- Fierce Combatant's Ironskin Tunic
+											},
+											{	-- Fierce Combatant's Ironskin Wristguards
+												["itemID"] = 149624,	-- Fierce Combatant's Ironskin Wristguards
+											},
+											{	-- Fierce Combatant's Ironskin Gloves
+												["itemID"] = 149612,	-- Fierce Combatant's Ironskin Gloves
+											},
+											{	-- Fierce Combatant's Ironskin Belt
+												["itemID"] = 149622,	-- Fierce Combatant's Ironskin Belt
+											},
+											{	-- Fierce Combatant's Ironskin Legguards
+												["itemID"] = 149616,	-- Fierce Combatant's Ironskin Legguards
+											},
+											{	-- Fierce Combatant's Ironskin Slippers
+												["itemID"] = 149610,	-- Fierce Combatant's Ironskin Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 150255,	-- Ensemble: Fierce Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Felskin Helm
+												["itemID"] = 149551,	-- Fierce Combatant's Felskin Helm
+											},
+											{	-- Fierce Combatant's Felskin Spaulders
+												["itemID"] = 149555,	-- Fierce Combatant's Felskin Spaulders
+											},
+											{	-- Fierce Combatant's Demonthread Cloak
+												["itemID"] = 149507,	-- Fierce Combatant's Demonthread Cloak
+											},
+											{	-- Fierce Combatant's Felskin Tunic
+												["itemID"] = 149545,	-- Fierce Combatant's Felskin Tunic
+											},
+											{	-- Fierce Combatant's Felskin Wristguards
+												["itemID"] = 149559,	-- Fierce Combatant's Felskin Wristguards
+											},
+											{	-- Fierce Combatant's Felskin Gloves
+												["itemID"] = 149549,	-- Fierce Combatant's Felskin Gloves
+											},
+											{	-- Fierce Combatant's Felskin Belt
+												["itemID"] = 149557,	-- Fierce Combatant's Felskin Belt
+											},
+											{	-- Fierce Combatant's Felskin Legguards
+												["itemID"] = 149553,	-- Fierce Combatant's Felskin Legguards
+											},
+											{	-- Fierce Combatant's Felskin Boots
+												["itemID"] = 149547,	-- Fierce Combatant's Felskin Boots
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 150264,	-- Ensemble: Fierce Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Chain Helm
+												["itemID"] = 149584,	-- Fierce Combatant's Chain Helm
+											},
+											{	-- Fierce Combatant's Chain Spaulders
+												["itemID"] = 149588,	-- Fierce Combatant's Chain Spaulders
+											},
+											{	-- Fierce Combatant's Drape of the Tracker
+												["itemID"] = 149511,	-- Fierce Combatant's Drape of the Tracker
+											},
+											{	-- Fierce Combatant's Chain Armor
+												["itemID"] = 149578,	-- Fierce Combatant's Chain Armor
+											},
+											{	-- Fierce Combatant's Chain Armband
+												["itemID"] = 149592,	-- Fierce Combatant's Chain Armband
+											},
+											{	-- Fierce Combatant's Chain Gauntlets
+												["itemID"] = 149582,	-- Fierce Combatant's Chain Gauntlets
+											},
+											{	-- Fierce Combatant's Chain Clasp
+												["itemID"] = 149590,	-- Fierce Combatant's Chain Clasp
+											},
+											{	-- Fierce Combatant's Chain Leggings
+												["itemID"] = 149586,	-- Fierce Combatant's Chain Leggings
+											},
+											{	-- Fierce Combatant's Chain Treads
+												["itemID"] = 149580,	-- Fierce Combatant's Chain Treads
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 150249,	-- Ensemble: Fierce Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Ringmail Helm
+												["itemID"] = 149692,	-- Fierce Combatant's Ringmail Helm
+											},
+											{	-- Fierce Combatant's Ringmail Spaulders
+												["itemID"] = 149696,	-- Fierce Combatant's Ringmail Spaulders
+											},
+											{	-- Fierce Combatant's Totemic Cloak
+												["itemID"] = 149523,	-- Fierce Combatant's Totemic Cloak
+											},
+											{	-- Fierce Combatant's Ringmail Robe
+												["itemID"] = 149686,	-- Fierce Combatant's Ringmail Robe
+											},
+											{	-- Fierce Combatant's Ringmail Armband
+												["itemID"] = 149700,	-- Fierce Combatant's Ringmail Armband
+											},
+											{	-- Fierce Combatant's Ringmail Gauntlets
+												["itemID"] = 149690,	-- Fierce Combatant's Ringmail Gauntlets
+											},
+											{	-- Fierce Combatant's Ringmail Clasp
+												["itemID"] = 149698,	-- Fierce Combatant's Ringmail Clasp
+											},
+											{	-- Fierce Combatant's Ringmail Leggings
+												["itemID"] = 149694,	-- Fierce Combatant's Ringmail Leggings
+											},
+											{	-- Fierce Combatant's Ringmail Boots
+												["itemID"] = 149688,	-- Fierce Combatant's Ringmail Boots
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
+										["itemID"] = 150268,	-- Ensemble: Fierce Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Paladin
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Scaled Helm
+												["itemID"] = 149638,	-- Fierce Combatant's Scaled Helm
+											},
+											{	-- Fierce Combatant's Scaled Shoulders
+												["itemID"] = 149642,	-- Fierce Combatant's Scaled Shoulders
+											},
+											{	-- Fierce Combatant's Greatcloak of Faith
+												["itemID"] = 149517,	-- Fierce Combatant's Greatcloak of Faith
+											},
+											{	-- Fierce Combatant's Scaled Chestpiece
+												["itemID"] = 149632,	-- Fierce Combatant's Scaled Chestpiece
+											},
+											{	-- Fierce Combatant's Scaled Wristplates
+												["itemID"] = 149646,	-- Fierce Combatant's Scaled Wristplates
+											},
+											{	-- Fierce Combatant's Scaled Gauntlets
+												["itemID"] = 149636,	-- Fierce Combatant's Scaled Gauntlets
+											},
+											{	-- Fierce Combatant's Scaled Girdle
+												["itemID"] = 149644,	-- Fierce Combatant's Scaled Girdle
+											},
+											{	-- Fierce Combatant's Scaled Legguards
+												["itemID"] = 149640,	-- Fierce Combatant's Scaled Legguards
+											},
+											{	-- Fierce Combatant's Scaled Sabatons
+												["itemID"] = 149634,	-- Fierce Combatant's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 150267,	-- Ensemble: Fierce Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Plate Helm
+												["itemID"] = 149742,	-- Fierce Combatant's Plate Helm
+											},
+											{	-- Fierce Combatant's Plate Shoulders
+												["itemID"] = 149746,	-- Fierce Combatant's Plate Shoulders
+											},
+											{	-- Fierce Combatant's Cloak of Battle
+												["itemID"] = 149527,	-- Fierce Combatant's Cloak of Battle
+											},
+											{	-- Fierce Combatant's Plate Chestpiece
+												["itemID"] = 149736,	-- Fierce Combatant's Plate Chestpiece
+											},
+											{	-- Fierce Combatant's Plate Wristplates
+												["itemID"] = 149750,	-- Fierce Combatant's Plate Wristplates
+											},
+											{	-- Fierce Combatant's Plate Gauntlets
+												["itemID"] = 149740,	-- Fierce Combatant's Plate Gauntlets
+											},
+											{	-- Fierce Combatant's Plate Girdle
+												["itemID"] = 149748,	-- Fierce Combatant's Plate Girdle
+											},
+											{	-- Fierce Combatant's Plate Legguards
+												["itemID"] = 149744,	-- Fierce Combatant's Plate Legguards
+											},
+											{	-- Fierce Combatant's Plate Warboots
+												["itemID"] = 149738,	-- Fierce Combatant's Plate Warboots
+											},
+										},
+									},
+									{	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 150252,	-- Ensemble: Fierce Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Dreadplate Helm
+												["itemID"] = 149535,	-- Fierce Combatant's Dreadplate Helm
+											},
+											{	-- Fierce Combatant's Dreadplate Shoulders
+												["itemID"] = 149539,	-- Fierce Combatant's Dreadplate Shoulders
+											},
+											{	-- Fierce Combatant's Dreadcloak
+												["itemID"] = 149505,	-- Fierce Combatant's Dreadcloak
+											},
+											{	-- Fierce Combatant's Dreadplate Chestpiece
+												["itemID"] = 149529,	-- Fierce Combatant's Dreadplate Chestpiece
+											},
+											{	-- Fierce Combatant's Dreadplate Wristplates
+												["itemID"] = 149543,	-- Fierce Combatant's Dreadplate Wristplates
+											},
+											{	-- Fierce Combatant's Dreadplate Gauntlets
+												["itemID"] = 149533,	-- Fierce Combatant's Dreadplate Gauntlets
+											},
+											{	-- Fierce Combatant's Dreadplate Girdle
+												["itemID"] = 149541,	-- Fierce Combatant's Dreadplate Girdle
+											},
+											{	-- Fierce Combatant's Dreadplate Legguards
+												["itemID"] = 149537,	-- Fierce Combatant's Dreadplate Legguards
+											},
+											{	-- Fierce Combatant's Dreadplate Sabatons
+												["itemID"] = 149531,	-- Fierce Combatant's Dreadplate Sabatons
+											},
+										},
+									},
 								},
-								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-							}),
-							gssh(1414, {	-- Gladiator
+							},
+							{	-- Gladiator
+								["setSubHeaderID"] = 1414,	-- Gladiator
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION { Legion Season 1 & 2
 									i(146148, {	-- Vindictive Gladiator's Satin Armor
@@ -4762,8 +5184,7 @@ _.Zones =
 										i(148036),	-- Fierce Gladiator's Scaled Sabatons
 									}),
 								},
-								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
-							}),
+							},
 						},
 					},
 					a(n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
