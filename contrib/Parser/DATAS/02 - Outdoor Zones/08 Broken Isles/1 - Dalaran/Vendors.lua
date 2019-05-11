@@ -223,17 +223,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146153, {	-- Vindictive Combatant's Ringmail Armor
-										i(135997),	-- Vindictive Combatant's Ringmail Helm
-										i(135999),	-- Vindictive Combatant's Ringmail Spaulders
-										i(136872),	-- Vindictive Combatant's Totemic Cloak
-										i(135994),	-- Vindictive Combatant's Ringmail Armor
-										i(136001),	-- Vindictive Combatant's Ringmail Armband
-										i(135996),	-- Vindictive Combatant's Ringmail Gauntlets
-										i(136000),	-- Vindictive Combatant's Ringmail Clasp
-										i(135998),	-- Vindictive Combatant's Ringmail Kilt
-										i(135995),	-- Vindictive Combatant's Ringmail Boots
-									}),
+									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 146153,	-- Ensemble: Vindictive Combatant's Ringmail Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Ringmail Helm
+												["itemID"] = 135997,	-- Vindictive Combatant's Ringmail Helm
+											},
+											{	-- Vindictive Combatant's Ringmail Spaulders
+												["itemID"] = 135999,	-- Vindictive Combatant's Ringmail Spaulders
+											},
+											{	-- Vindictive Combatant's Totemic Cloak
+												["itemID"] = 136872,	-- Vindictive Combatant's Totemic Cloak
+											},
+											{	-- Vindictive Combatant's Ringmail Armor
+												["itemID"] = 135994,	-- Vindictive Combatant's Ringmail Armor
+											},
+											{	-- Vindictive Combatant's Ringmail Armband
+												["itemID"] = 136001,	-- Vindictive Combatant's Ringmail Armband
+											},
+											{	-- Vindictive Combatant's Ringmail Gauntlets
+												["itemID"] = 135996,	-- Vindictive Combatant's Ringmail Gauntlets
+											},
+											{	-- Vindictive Combatant's Ringmail Clasp
+												["itemID"] = 136000,	-- Vindictive Combatant's Ringmail Clasp
+											},
+											{	-- Vindictive Combatant's Ringmail Kilt
+												["itemID"] = 135998,	-- Vindictive Combatant's Ringmail Kilt
+											},
+											{	-- Vindictive Combatant's Ringmail Boots
+												["itemID"] = 135995,	-- Vindictive Combatant's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146167,	-- Ensemble: Vindictive Combatant's Scaled Armor
 										["g"] = {
@@ -527,17 +548,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147673, {	-- Cruel Combatant's Ringmail Armor
-										i(145213),	-- Cruel Combatant's Ringmail Helm
-										i(145217),	-- Cruel Combatant's Ringmail Spaulders
-										i(145045),	-- Cruel Combatant's Totemic Cloak
-										i(145207),	-- Cruel Combatant's Ringmail Armor
-										i(145221),	-- Cruel Combatant's Ringmail Armband
-										i(145211),	-- Cruel Combatant's Ringmail Gauntlets
-										i(145219),	-- Cruel Combatant's Ringmail Clasp
-										i(145215),	-- Cruel Combatant's Ringmail Leggings
-										i(145209),	-- Cruel Combatant's Ringmail Boots
-									}),
+									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 147673,	-- Ensemble: Cruel Combatant's Ringmail Armor
+										["g"] = {
+											{	-- Cruel Combatant's Ringmail Helm
+												["itemID"] = 145213,	-- Cruel Combatant's Ringmail Helm
+											},
+											{	-- Cruel Combatant's Ringmail Spaulders
+												["itemID"] = 145217,	-- Cruel Combatant's Ringmail Spaulders
+											},
+											{	-- Cruel Combatant's Totemic Cloak
+												["itemID"] = 145045,	-- Cruel Combatant's Totemic Cloak
+											},
+											{	-- Cruel Combatant's Ringmail Armor
+												["itemID"] = 145207,	-- Cruel Combatant's Ringmail Armor
+											},
+											{	-- Cruel Combatant's Ringmail Armband
+												["itemID"] = 145221,	-- Cruel Combatant's Ringmail Armband
+											},
+											{	-- Cruel Combatant's Ringmail Gauntlets
+												["itemID"] = 145211,	-- Cruel Combatant's Ringmail Gauntlets
+											},
+											{	-- Cruel Combatant's Ringmail Clasp
+												["itemID"] = 145219,	-- Cruel Combatant's Ringmail Clasp
+											},
+											{	-- Cruel Combatant's Ringmail Leggings
+												["itemID"] = 145215,	-- Cruel Combatant's Ringmail Leggings
+											},
+											{	-- Cruel Combatant's Ringmail Boots
+												["itemID"] = 145209,	-- Cruel Combatant's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147694,	-- Ensemble: Cruel Combatant's Scaled Armor
 										["g"] = {
@@ -798,7 +840,38 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 150248,	-- Ensemble: Fierce Combatant's Ringmail Armor
+										["g"] = {
+											{	-- Fierce Combatant's Ringmail Helm
+												["itemID"] = 149693,	-- Fierce Combatant's Ringmail Helm
+											},
+											{	-- Fierce Combatant's Ringmail Spaulders
+												["itemID"] = 149697,	-- Fierce Combatant's Ringmail Spaulders
+											},
+											{	-- Fierce Combatant's Totemic Cloak
+												["itemID"] = 149524,	-- Fierce Combatant's Totemic Cloak
+											},
+											{	-- Fierce Combatant's Ringmail Robe
+												["itemID"] = 149687,	-- Fierce Combatant's Ringmail Robe
+											},
+											{	-- Fierce Combatant's Ringmail Armband
+												["itemID"] = 149701,	-- Fierce Combatant's Ringmail Armband
+											},
+											{	-- Fierce Combatant's Ringmail Gauntlets
+												["itemID"] = 149691,	-- Fierce Combatant's Ringmail Gauntlets
+											},
+											{	-- Fierce Combatant's Ringmail Clasp
+												["itemID"] = 149699,	-- Fierce Combatant's Ringmail Clasp
+											},
+											{	-- Fierce Combatant's Ringmail Leggings
+												["itemID"] = 149695,	-- Fierce Combatant's Ringmail Leggings
+											},
+											{	-- Fierce Combatant's Ringmail Boots
+												["itemID"] = 149689,	-- Fierce Combatant's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
 										["g"] = {
@@ -1095,17 +1168,38 @@ _.Zones =
 											},
 										},
 									},
-									i(146137, {	-- Vindictive Gladiator's Ringmail Armor
-										i(135771),	-- Vindictive Gladiator's Ringmail Helm
-										i(135773),	-- Vindictive Gladiator's Ringmail Spaulders
-										i(136866),	-- Vindictive Gladiator's Totemic Cloak
-										i(135768),	-- Vindictive Gladiator's Ringmail Armor
-										i(135775),	-- Vindictive Gladiator's Ringmail Armband
-										i(135770),	-- Vindictive Gladiator's Ringmail Gauntlets
-										i(135774),	-- Vindictive Gladiator's Ringmail Clasp
-										i(135772),	-- Vindictive Gladiator's Ringmail Kilt
-										i(135769),	-- Vindictive Gladiator's Ringmail Boots
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 146137,	-- Ensemble: Vindictive Gladiator's Ringmail Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Ringmail Helm
+												["itemID"] = 135771,	-- Vindictive Gladiator's Ringmail Helm
+											},
+											{	-- Vindictive Gladiator's Ringmail Spaulders
+												["itemID"] = 135773,	-- Vindictive Gladiator's Ringmail Spaulders
+											},
+											{	-- Vindictive Gladiator's Cloak of Battle
+												["itemID"] = 136886,	-- Vindictive Gladiator's Cloak of Battle
+											},
+											{	-- Vindictive Gladiator's Ringmail Armor
+												["itemID"] = 135768,	-- Vindictive Gladiator's Ringmail Armor
+											},
+											{	-- Vindictive Gladiator's Ringmail Armband
+												["itemID"] = 135775,	-- Vindictive Gladiator's Ringmail Armband
+											},
+											{	-- Vindictive Gladiator's Ringmail Gauntlets
+												["itemID"] = 135770,	-- Vindictive Gladiator's Ringmail Gauntlets
+											},
+											{	-- Vindictive Gladiator's Ringmail Clasp
+												["itemID"] = 135774,	-- Vindictive Gladiator's Ringmail Clasp
+											},
+											{	-- Vindictive Gladiator's Ringmail Kilt
+												["itemID"] = 135772,	-- Vindictive Gladiator's Ringmail Kilt
+											},
+											{	-- Vindictive Gladiator's Ringmail Boots
+												["itemID"] = 135769,	-- Vindictive Gladiator's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146135,	-- Ensemble: Vindictive Gladiator's Scaled Armor
 										["g"] = {
@@ -1396,17 +1490,38 @@ _.Zones =
 											},
 										},
 									},
-									i(147662, {	-- Cruel Gladiator's Ringmail Armor
-										i(144721),	-- Cruel Gladiator's Ringmail Helm
-										i(144725),	-- Cruel Gladiator's Ringmail Spaulders
-										i(144553),	-- Cruel Gladiator's Totemic Cloak
-										i(144715),	-- Cruel Gladiator's Ringmail Armor
-										i(144729),	-- Cruel Gladiator's Ringmail Armband
-										i(144719),	-- Cruel Gladiator's Ringmail Gauntlets
-										i(144727),	-- Cruel Gladiator's Ringmail Clasp
-										i(144723),	-- Cruel Gladiator's Ringmail Kilt
-										i(144717),	-- Cruel Gladiator's Ringmail Boots
-									}),
+									{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 147662,	-- Ensemble: Cruel Gladiator's Ringmail Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Ringmail Helm
+												["itemID"] = 144721,	-- Cruel Gladiator's Ringmail Helm
+											},
+											{	-- Cruel Gladiator's Ringmail Spaulders
+												["itemID"] = 144725,	-- Cruel Gladiator's Ringmail Spaulders
+											},
+											{	-- Cruel Gladiator's Totemic Cloak
+												["itemID"] = 144553,	-- Cruel Gladiator's Totemic Cloak
+											},
+											{	-- Cruel Gladiator's Ringmail Armor
+												["itemID"] = 144715,	-- Cruel Gladiator's Ringmail Armor
+											},
+											{	-- Cruel Gladiator's Ringmail Armband
+												["itemID"] = 144729,	-- Cruel Gladiator's Ringmail Armband
+											},
+											{	-- Cruel Gladiator's Ringmail Gauntlets
+												["itemID"] = 144719,	-- Cruel Gladiator's Ringmail Gauntlets
+											},
+											{	-- Cruel Gladiator's Ringmail Clasp
+												["itemID"] = 144727,	-- Cruel Gladiator's Ringmail Clasp
+											},
+											{	-- Cruel Gladiator's Ringmail Kilt
+												["itemID"] = 144723,	-- Cruel Gladiator's Ringmail Kilt
+											},
+											{	-- Cruel Gladiator's Ringmail Boots
+												["itemID"] = 144717,	-- Cruel Gladiator's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147666,	-- Ensemble: Cruel Gladiator's Scaled Armor
 										["g"] = {
@@ -1667,7 +1782,38 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 149495,	-- Ensemble: Fierce Gladiator's Ringmail Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Ringmail Helm
+												["itemID"] = 148096,	-- Fierce Gladiator's Ringmail Helm
+											},
+											{	-- Fierce Gladiator's Ringmail Spaulders
+												["itemID"] = 148100,	-- Fierce Gladiator's Ringmail Spaulders
+											},
+											{	-- Fierce Gladiator's Totemic Cloak
+												["itemID"] = 147928,	-- Fierce Gladiator's Totemic Cloak
+											},
+											{	-- Fierce Gladiator's Ringmail Armor
+												["itemID"] = 148090,	-- Fierce Gladiator's Ringmail Armor
+											},
+											{	-- Fierce Gladiator's Ringmail Armband
+												["itemID"] = 148104,	-- Fierce Gladiator's Ringmail Armband
+											},
+											{	-- Fierce Gladiator's Ringmail Gauntlets
+												["itemID"] = 148094,	-- Fierce Gladiator's Ringmail Gauntlets
+											},
+											{	-- Fierce Gladiator's Ringmail Clasp
+												["itemID"] = 148102,	-- Fierce Gladiator's Ringmail Clasp
+											},
+											{	-- Fierce Gladiator's Ringmail Leggings
+												["itemID"] = 148098,	-- Fierce Gladiator's Ringmail Leggings
+											},
+											{	-- Fierce Gladiator's Ringmail Boots
+												["itemID"] = 148092,	-- Fierce Gladiator's Ringmail Boots
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 149499,	-- Ensemble: Fierce Gladiator's Scaled Armor
 										["g"] = {
