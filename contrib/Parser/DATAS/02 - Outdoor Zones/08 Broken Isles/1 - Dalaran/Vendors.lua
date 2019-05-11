@@ -1228,8 +1228,8 @@ _.Zones =
 											{	-- Fierce Combatant's Plate Helm
 												["itemID"] = 149743,	-- Fierce Combatant's Plate Helm
 											},
-											{	-- Fierce Combatant's Plate Girdle
-												["itemID"] = 149749,	-- Fierce Combatant's Plate Girdle
+											{	-- Fierce Combatant's Plate Shoulders
+												["itemID"] = 149747,	-- Fierce Combatant's Plate Shoulders
 											},
 											{	-- Fierce Combatant's Cloak of Battle
 												["itemID"] = 149528,	-- Fierce Combatant's Cloak of Battle

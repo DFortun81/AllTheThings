@@ -79,42 +79,93 @@ _.Achievements =
 						crit(32),		-- Swamp Bait
 						crit(33),		-- The Leftovers
 					})),
-					a(ach(5489, {	-- Master of Tol Barad (Alliance)
-						crit(1),		-- Tol Barad Veteran
-						crit(2),		-- Tower Plower
-						crit(3),		-- Towers of Power
-						crit(4),		-- Tol Barad Saboteur
-						crit(5),		-- Tol Barad All-Star
-						crit(6),		-- Pit Lord Argaloth
-					})),
-					h(ach(5490, {	-- Master of Tol Barad (Horde)
-						crit(1),		-- Tol Barad Veteran
-						crit(2),		-- Tower Plower
-						crit(3),		-- Towers of Power
-						crit(4),		-- Tol Barad Saboteur
-						crit(5),		-- Tol Barad All-Star
-						crit(6),		-- Pit Lord Argaloth
-					})),
+					{	-- Master of Tol Barad [Alliance]
+						["achievementID"] = 5489,	-- Master of Tol Barad
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = {
+							244,	-- Tol Barad
+							245,	-- Tol Barad Peninsula
+						},
+						["g"] = {
+							{	-- Pit Lord Argaloth
+								["achievementID"] = 5416,	-- Pit Lord Argaloth
+							},
+							{	-- Tol Barad All-Star
+								["achievementID"] = 5486,	-- Tol Barad All-Star
+								["g"] = {
+									{	-- Get 10 honorable kills at the Ironclad Garrison
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 1,			-- Get 10 honorable kills at the Ironclad Garrison
+									},
+									{	-- Get 10 honorable kills at the Slagworks
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 3,			-- Get 10 honorable kills at the Slagworks
+									},
+									{	-- Get 10 honorable kills at the Warden's Vigil
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 2,			-- Get 10 honorable kills at the Warden's Vigil
+									},
+								},
+							},
+							{	-- Tol Barad Saboteur
+								["achievementID"] = 5487,	-- Tol Barad Saboteur
+							},	
+							{	-- Tol Barad Veteran
+								["achievementID"] = 5417,	-- Tol Barad Veteran
+								["races"] = ALLIANCE_ONLY,
+							},
+							{	-- Tower Power
+								["achievementID"] = 5415,	-- Tower Power
+							},
+							{	-- Towers of Power
+								["achievementID"] = 5488,	-- Towers of Power
+							},
+						},
+					},
+					{	-- Master of Tol Barad [Horde]
+						["achievementID"] = 5490,	-- Master of Tol Barad
+						["races"] = HORDE_ONLY,
+						["maps"] = {
+							244,	-- Tol Barad
+							245,	-- Tol Barad Peninsula
+						},
+						["g"] = {
+							{	-- Pit Lord Argaloth
+								["achievementID"] = 5416,	-- Pit Lord Argaloth
+							},
+							{	-- Tol Barad All-Star
+								["achievementID"] = 5486,	-- Tol Barad All-Star
+								["g"] = {
+									{	-- Get 10 honorable kills at the Ironclad Garrison
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 1,			-- Get 10 honorable kills at the Ironclad Garrison
+									},
+									{	-- Get 10 honorable kills at the Slagworks
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 3,			-- Get 10 honorable kills at the Slagworks
+									},
+									{	-- Get 10 honorable kills at the Warden's Vigil
+										["achievementID"] = 5486,	-- Tol Barad All-Star
+										["criteriaID"] = 2,			-- Get 10 honorable kills at the Warden's Vigil
+									},
+								},
+							},
+							{	-- Tol Barad Saboteur
+								["achievementID"] = 5487,	-- Tol Barad Saboteur
+							},	
+							{	-- Tol Barad Veteran
+								["achievementID"] = 5418,	-- Tol Barad Veteran
+								["races"] = HORDE_ONLY,
+							},
+							{	-- Tower Power
+								["achievementID"] = 5415,	-- Tower Power
+							},
+							{	-- Towers of Power
+								["achievementID"] = 5488,	-- Towers of Power
+							},
+						},
+					},
 					ach(6045),		-- Occu'thar
-					ach(5416),		-- Pit Lord Argaloth
-					ach(5486, {		-- Tol Barad All-Star
-						crit(1),		-- Get 10 honorable kills at the Ironclad Garrison
-						crit(2),		-- Get 10 honorable kills at the Warden's Vigil
-						crit(3),		-- Get 10 honorable kills at the Slagworks
-					}),
-					ach(5487, {		-- Tol Barad Saboteur
-						crit(1),		-- Destroy 20 deployed Siege Engines
-					}),
-					a(ach(5417, {	-- Tol Barad Veteran (Alliance)
-						ach(5412),		-- Tol Barad Victory
-					})),
-					h(ach(5418, {	-- Tol Barad Veteran (Horde)
-						ach(5412),		-- Tol Barad Victory
-					})),
-					ach(5415),		-- Tower Plower
-					ach(5488, {		-- Towers of Power
-						crit(1),		-- Destroy 3 Siege Engines in a single battle 
-					}),
 				},
 			}),
 		},
