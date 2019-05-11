@@ -39,7 +39,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["u"] = 40,	-- Legacy Quest
 							})),
-							un(40, qh( 914, {	-- Leaders of the Fang
+							un(40, qh(914, {	-- Leaders of the Fang
 								un(2, i(6505)),	-- Crescent Staff
 								un(2, i(6504)),	-- Wingblade
 							})),

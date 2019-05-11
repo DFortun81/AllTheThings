@@ -53,7 +53,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				},
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				{
 					["itemID"] = 24246,	-- Sanguine Hibiscus
 				},

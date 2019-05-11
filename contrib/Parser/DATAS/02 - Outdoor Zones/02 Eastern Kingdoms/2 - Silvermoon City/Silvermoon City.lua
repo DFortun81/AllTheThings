@@ -42,20 +42,20 @@ _.Zones =
 					q(24635),	-- A Cloudlet of Classy Cologne
 					qh(24615),	-- A Gift for the Regent Lord of Quel'Thalas
 					q(24629),	-- A Perfect Puff of Perfume
-					qh( 9627),	-- Allegiance to the Horde
+					qh(9627),	-- Allegiance to the Horde
 					qh(27277),	-- An Audience with Ureda
 					q(24636),	-- Bonbon Blitz
 					qh(12369),	-- Candy Bucket
 					qh(12370),	-- Candy Bucket
 					qh(27334),	-- Dark Cleric Cecille
-					qh( 9621),	-- Envoy to the Horde
-					qh( 9812),	-- Envoy to the Horde
-					qh( 9133),	-- Fly to Silvermoon City
-					qh( 9811),	-- Friend of the Sin'dorei
+					qh(9621),	-- Envoy to the Horde
+					qh(9812),	-- Envoy to the Horde
+					qh(9133),	-- Fly to Silvermoon City
+					qh(9811),	-- Friend of the Sin'dorei
 					qh(32329),	-- Get My Results!
 					qh(27281),	-- Grezz Ragefist
 					qh(27278),	-- Grimshot's Call
-					qh( 9328),	-- Hero of the Sin'dorei
+					qh(9328),	-- Hero of the Sin'dorei
 					qh(11966),	-- Incense for the Festival Scorchlings
 					q(12012),	-- Inform the Elder
 					qa(29092),	-- Inform the Elder
@@ -518,7 +518,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

@@ -19,7 +19,7 @@ _.Zones =
 						["classes"] = {5},
 						["races"] = {5},
 					})),
-					qg(3441, qh( 1205)),	-- Deadmire
+					qg(3441, qh(1205)),	-- Deadmire
 --]]
 					qg(36648, qh(31036)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR TAUREN)
 --[[
@@ -80,7 +80,7 @@ _.Zones =
 					qg(3034, q(28289, {	-- Moonglade Calls
 						["classes"] = {11},
 					})),
-					qg(3978, qh( 2965)),	-- Portents of Uldum
+					qg(3978, qh(2965)),	-- Portents of Uldum
 --]]
 					{	-- Magatha's Payment to Jediga
 						["questID"] = 3562,

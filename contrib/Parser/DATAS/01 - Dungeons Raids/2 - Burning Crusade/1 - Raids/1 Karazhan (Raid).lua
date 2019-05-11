@@ -29,7 +29,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				n(16406, {	-- Phantom Attendant
 					dr(0.30, i(21903)),	-- Pattern: Soulcloth Shoulders
 				}),
@@ -205,7 +205,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			})),
-			n( 17225, {			-- Nightbane
+			n(17225, {			-- Nightbane
 				i(28604),	-- Nightstaff of the Everliving
 				i(28611),	-- Dragonheart Flameshield
 				i(28606),	-- Shield of Impenetrable Darkness

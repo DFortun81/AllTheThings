@@ -95,7 +95,7 @@ _.Zones =
 					qg(, qa(26230)),	-- Feast or Famine
 					qg(, qa(26271)),	-- Feeding the Hungry and the Hopeless
 					qg(, qa(26289)),	-- Find Agent Kearnen
-					qg(, qa(  184)),	-- Furlbrow's Deed
+					qg(, qa(184)),	-- Furlbrow's Deed
 					qg(, qh(27848)),	-- Good Intentions...Poor Execution
 					qg(, qa(26252)),	-- Heart of the Watcher
 --]]
@@ -621,7 +621,7 @@ _.Zones =
 								un(7, i(1189)),	-- Overseer's Ring
 							})),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

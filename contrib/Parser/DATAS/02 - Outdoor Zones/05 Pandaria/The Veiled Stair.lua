@@ -53,8 +53,8 @@ _.Zones =
 					q(31287),	-- Educating Saurok
 					q(31286),	-- Robbing Robbers of Robbers
 					q(31611),	-- The Kun-Lai Kicker
-					qa( 31254),	-- The Road to Kun-Lai
-					qh( 31255),	-- The Road to Kun-Lai
+					qa(31254),	-- The Road to Kun-Lai
+					qh(31255),	-- The Road to Kun-Lai
 					q(38936),	-- The Road to Kun-Lai
 					q(31285),	-- The Spring Drifter
 					q(32861),	-- Cloak of Virtue - removed from game

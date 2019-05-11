@@ -170,7 +170,7 @@ _.Zones =
 					})),
 					o(112948, {	-- Intrepid's Locked Strongbox
 						qa(25819, {	-- The Eye of Paleth
-							i( 2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
+							i(2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
 							i(59092),
 							i(59091),
 							i(59090),
@@ -770,7 +770,7 @@ _.Zones =
 								}),
 							}),
 						}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(43, n(1028, { 	-- Bluegill Muckdweller
 								un(7, i(3022)),	-- Bluegill Breeches
 							})),

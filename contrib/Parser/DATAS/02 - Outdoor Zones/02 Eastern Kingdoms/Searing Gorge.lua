@@ -757,16 +757,16 @@ _.Zones =
 								un(2, i(10741)),	-- Lordrec Helmet
 								un(2, i(10739)),	-- Ring of Fortitude
 							})),
-							un(40, q( 7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
+							un(40, q(7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 								un(2, i(19123)),	-- Everwarm Handwraps
 								un(2, i(19124)),	-- Slagplate Leggings
 							})),
-							un(40, q( 3463, {	-- Set Them Ablaze
+							un(40, q(3463, {	-- Set Them Ablaze
 								un(2, i(10744)),	-- Axe of the Ebon Blade
 								un(2, i(10742)),	-- Dragonflight Leggings
 								un(2, i(10743)),	-- Drakefire Headguard
 							})),
-							un(40, q( 3379, {	-- Shadoweaver
+							un(40, q(3379, {	-- Shadoweaver
 								["requireSkill"] = 197,	-- Tailoring
 								["qg"] = 8439,	-- Nilith Lokrav
 								["groups"] = {
@@ -774,7 +774,7 @@ _.Zones =
 									un(2, i(10479)),	-- Kovic's Trading Satchel
 								},
 							})),
-							un(40, q( 3385, {	-- The Undermarket
+							un(40, q(3385, {	-- The Undermarket
 								["sourceQuest"] = 3379,	-- Shadoweaver
 								["requireSkill"] = 197,	-- Tailoring
 								["qg"] = 8439,	-- Nilith Lokrav
@@ -782,7 +782,7 @@ _.Zones =
 									un(2, i(10462)),	-- Shadowy Belt
 								},
 							})),
-							un(40, q( 3402, {	-- The Undermarket
+							un(40, q(3402, {	-- The Undermarket
 								["sourceQuest"] = 3385,	-- The Undermarket
 								["requireSkill"] = 197,	-- Tailoring
 								["qg"] = 8439,	-- Nilith Lokrav
@@ -797,7 +797,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(2, i(21547, {	-- Recipe: Elixir of Greater Firepower
 								["crs"] = {
 									5844,	-- Dark Iron Slaver

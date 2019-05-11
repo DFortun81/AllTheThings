@@ -22,21 +22,21 @@ _.Zones =
 				}),
 --[[				
 				n(-17, { 	-- Quests
-					qa( 11786),	-- Desecrate this Fire!
-					qa( 11580),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qh( 11749),	-- Desecrate this Fire!
-					qa( 11755),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
-					qa( 13457),	-- Desecrate this Fire!
-					qh( 13447),	-- Desecrate this Fire!
-					qa( 13491),	-- Honor the Flame
-					qh( 13499),	-- Honor the Flame
-					qa( 11964),	-- Incense for the Summer Scorchlings
+					qa(11786),	-- Desecrate this Fire!
+					qa(11580),	-- Desecrate this Fire!
+					qa(11732),	-- Desecrate this Fire!
+					qh(11745),	-- Desecrate this Fire!
+					qh(11749),	-- Desecrate this Fire!
+					qa(11755),	-- Desecrate this Fire!
+					qa(11766),	-- Desecrate this Fire!
+					qh(11581),	-- Desecrate this Fire!
+					qa(13457),	-- Desecrate this Fire!
+					qh(13447),	-- Desecrate this Fire!
+					qa(13491),	-- Honor the Flame
+					qh(13499),	-- Honor the Flame
+					qa(11964),	-- Incense for the Summer Scorchlings
 					q(31932),	-- Nearly Headless Jacob
-					qa( 11882),	-- Playing with Fire				
+					qa(11882),	-- Playing with Fire				
 				}),
 --]]				
 			},

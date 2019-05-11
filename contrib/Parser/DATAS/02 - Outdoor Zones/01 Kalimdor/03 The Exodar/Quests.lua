@@ -90,8 +90,8 @@ _.Zones =
 						["sourceQuests"] = { 9605 },	-- Hippogryph Master Stephanos
 					}),
 					--[[
-					qg(17468, qa( 9762)),	-- The Unwritten Prophecy
-					qg(17468, qa( 9699)),	-- Truth or Fiction
+					qg(17468, qa(9762)),	-- The Unwritten Prophecy
+					qg(17468, qa(9699)),	-- Truth or Fiction
 					qg(17122, qa(27266, {	-- Wulf Calls
 						["classes"] = {3},
 					})),

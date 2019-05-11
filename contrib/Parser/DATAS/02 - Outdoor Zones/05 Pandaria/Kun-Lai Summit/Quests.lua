@@ -39,63 +39,63 @@ _.Zones =
 		]]--				
 		--[[
 							q(30581),	-- ... and the Pot, Too!
-							qh( 31395),	-- A Celestial Experience
-							qa( 31394),	-- A Celestial Experience
+							qh(31395),	-- A Celestial Experience
+							qa(31394),	-- A Celestial Experience
 							q(30746),	-- A Fair Trade
 							q(30820),	-- A Funeral
-							qh( 32352),	-- A Gathering Storm
+							qh(32352),	-- A Gathering Storm
 							q(30808),	-- A Grummle's Luck
-							qa( 32377),	-- A Kor'kron In Our Midst
+							qa(32377),	-- A Kor'kron In Our Midst
 							q(30715),	-- A Line Unbroken
 							q(30599),	-- A Monkey Idol
 							q(30751),	-- A Terrible Sacrifice
-							qh( 31511),	-- A Witness to History
-							qa( 31512),	-- A Witness to History
+							qh(31511),	-- A Witness to History
+							qa(31512),	-- A Witness to History
 							q(30596),	-- A Zandalari Troll?
 							q(30615),	-- A Zandalari Troll?
-							qa( 30508),	-- Admiral Taylor has Awakened
-							qa( 30506),	-- Admiral Taylor has Awakened
-							qa( 30507),	-- Admiral Taylor has Awakened
+							qa(30508),	-- Admiral Taylor has Awakened
+							qa(30506),	-- Admiral Taylor has Awakened
+							qa(30507),	-- Admiral Taylor has Awakened
 							q(30459),	-- All of the Arrows
 							q(30796),	-- An End to Everything
-							qh( 32191),	-- Ancient Guardians
-							qa( 32315),	-- Anduin's Plea
+							qh(32191),	-- Ancient Guardians
+							qa(32315),	-- Anduin's Plea
 							q(30491),	-- At the Yak Wash
 							q(30492),	-- Back in Yak
-							qh( 31253),	-- Back to Eastwind Rest
-							qa( 31252),	-- Back to Westwind Rest
-							qa( 32194),	-- Bad Blood
-							qh( 30656),	-- Barrels of Fun
-							qa( 30651),	-- Barrels of Fun
+							qh(31253),	-- Back to Eastwind Rest
+							qa(31252),	-- Back to Westwind Rest
+							qa(32194),	-- Bad Blood
+							qh(30656),	-- Barrels of Fun
+							qa(30651),	-- Barrels of Fun
 							q(31834),	-- Begin Your Training: Master Cheng
-							qh( 31251),	-- Best Meals Anywhere!
+							qh(31251),	-- Best Meals Anywhere!
 							q(31847),	-- Better Dead than Dread
 							q(31695),	-- Beyond the Wall
-							qh( 32192),	-- Bloodlines
-							qa( 30583),	-- Blue Dwarf Needs Food Badly
+							qh(32192),	-- Bloodlines
+							qa(30583),	-- Blue Dwarf Needs Food Badly
 							q(30604),	-- Breaking Broketooth
 							q(30798),	-- Breaking the Emperor's Shield
-							qh( 32399),	-- Breath of Darkest Shadow
-							qa( 32401),	-- Breath of Darkest Shadow
+							qh(32399),	-- Breath of Darkest Shadow
+							qa(32401),	-- Breath of Darkest Shadow
 							q(30605),	-- Bros Before Hozen
-							qa( 32383),	-- Bugging Out
+							qa(32383),	-- Bugging Out
 							q(30807),	-- By the Falls, For the Fallen
 							q(30457),	-- Call Out Their Leader
 							q(32041),	-- Candy Bucket
-							qh( 32040),	-- Candy Bucket
+							qh(32040),	-- Candy Bucket
 							q(32051),	-- Candy Bucket
-							qa( 32042),	-- Candy Bucket
+							qa(32042),	-- Candy Bucket
 							q(32037),	-- Candy Bucket
 							q(32039),	-- Candy Bucket
-							qa( 30514),	-- Challenge Accepted
-							qh( 30515),	-- Challenge Accepted
+							qa(30514),	-- Challenge Accepted
+							qh(30515),	-- Challenge Accepted
 							q(30802),	-- Chasing the Storm
 							q(30816),	-- Checking In
-							qh( 31459),	-- Cho's Missive
-							qa( 31460),	-- Cho's Missive
+							qh(31459),	-- Cho's Missive
+							qa(31460),	-- Cho's Missive
 							q(46347),	-- Clean-up on Aisle Sha
 							q(30828),	-- Cleansing the Mere
-							qh( 32378),	-- Clearing a Path
+							qh(32378),	-- Clearing a Path
 							q(30487),	-- Comin' Round the Mountain
 							q(31944),	-- Complete Your Training: The Final Test
 							q(31517),	-- Contending With Bullies
@@ -105,33 +105,33 @@ _.Zones =
 							q(31838),	-- Continue Your Training: Master Tsang
 							q(31833),	-- Continue Your Training: Master Woo
 							q(31836),	-- Continue Your Training: Master Yoon
-							qa( 30593),	-- Deanimate the Reanimated
-							qh( 30594),	-- Deanimate the Reanimated
+							qa(30593),	-- Deanimate the Reanimated
+							qh(30594),	-- Deanimate the Reanimated
 							q(30991),	-- Do a Barrel Roll!
-							qh( 30513),	-- Eastwind Rest
-							qh( 32351),	-- Echoes of Thunder
+							qh(30513),	-- Eastwind Rest
+							qh(32351),	-- Echoes of Thunder
 							q(30794),	-- Emergency Care
 							q(31011),	-- Enemies At Our Door
 							q(30468),	-- Enraged Vengeance
 							q(31279),	-- Everything I Know About Cooking
 							q(30571),	-- Farmhand Freedom
 							q(30834),	-- Father and Child Reunion
-							qh( 32319),	-- Find Thrall!
+							qh(32319),	-- Find Thrall!
 							q(30992),	-- Finish This!
 							q(30935),	-- Fisherman's Tale
 							q(30967),	-- Free the Dissenters
 							q(30489),	-- Fresh Needle Scent
-							qh( 30509),	-- General Nazgrim has Awakened
-							qh( 30510),	-- General Nazgrim has Awakened
-							qh( 30511),	-- General Nazgrim has Awakened
+							qh(30509),	-- General Nazgrim has Awakened
+							qh(30510),	-- General Nazgrim has Awakened
+							qh(30511),	-- General Nazgrim has Awakened
 							q(30824),	-- Gourmet Kafa
 							q(30743),	-- Gourmet Kafa
 							q(31956),	-- Grand Master Yon
 							q(30610),	-- Grummle! Grummle! Grummle!
 							q(30943),	-- Handle With Care
-							qa( 32397),	-- He Won't Even Miss It
-							qa( 32382),	-- He's In Deep
-							qa( 32316),	-- Heart Of The Alliance
+							qa(32397),	-- He Won't Even Miss It
+							qa(32382),	-- He's In Deep
+							qa(32316),	-- Heart Of The Alliance
 							q(30460),	-- Hit Medicine
 							q(30681),	-- Holed Up
 							q(30680),	-- Holed Up
@@ -141,8 +141,8 @@ _.Zones =
 							q(32497),	-- Honor the Flame
 							q(30723),	-- Honor, Even in Death
 							q(30607),	-- Hozen Love Their Keys
-							qa( 30652),	-- In Tents Channeling
-							qh( 30657),	-- In Tents Channeling
+							qa(30652),	-- In Tents Channeling
+							qh(30657),	-- In Tents Channeling
 							q(30601),	-- Instant Courage
 							q(31031),	-- Into the Monastery
 							q(30944),	-- It Takes A Village
@@ -151,24 +151,24 @@ _.Zones =
 							q(30825),	-- Kota Blend
 							q(30744),	-- Kota Blend
 							q(30994),	-- Lao-Chin's Gambit
-							qh( 32379),	-- Legacy of the Korune
+							qh(32379),	-- Legacy of the Korune
 							q(30801),	-- Lessons from History
 							q(46349),	-- Lilies for Ryuli
 							q(30942),	-- Make A Fighter Out of Me
-							qh( 32368),	-- Memory Wine
-							qa( 32371),	-- Memory Wine
-							qh( 30620),	-- Mogu?! Oh No-gu!
-							qa( 30619),	-- Mogu?! Oh No-gu!
-							qh( 31457),	-- Muskpaw Ranch
-							qa( 31456),	-- Muskpaw Ranch
+							qh(32368),	-- Memory Wine
+							qa(32371),	-- Memory Wine
+							qh(30620),	-- Mogu?! Oh No-gu!
+							qa(30619),	-- Mogu?! Oh No-gu!
+							qh(31457),	-- Muskpaw Ranch
+							qa(31456),	-- Muskpaw Ranch
 							q(30768),	-- My Husband...
 							q(30467),	-- My Son...
 							q(30600),	-- No Pack Left Behind
 							q(30750),	-- Off the Wall!
 							q(30614),	-- Oil Stop
 							q(30683),	-- One Traveler's Misfortune
-							qa( 30650),	-- Pandaren Prisoners
-							qh( 30655),	-- Pandaren Prisoners
+							qa(30650),	-- Pandaren Prisoners
+							qh(30655),	-- Pandaren Prisoners
 							q(30999),	-- Path Less Traveled
 							q(32816),	-- Path of the Last Emperor
 							q(31844),	-- Practice Makes Perfect: Master Cheng
@@ -184,14 +184,14 @@ _.Zones =
 							q(31228),	-- Prophet Khar'zul
 							q(30710),	-- Provoking the Trolls
 							q(30765),	-- Regaining Honor
-							qh( 32318),	-- Regeneration Takes Time
+							qh(32318),	-- Regeneration Takes Time
 							q(30469),	-- Repossession
 							q(30618),	-- Resupplying One Keg
 							q(46342),	-- Return to the Broken Peak
 							q(30946),	-- Revelations
 							q(30617),	-- Roadside Assistance
-							qh( 31256),	-- Round 'Em Up
-							qa( 30575),	-- Round 'Em Up
+							qh(31256),	-- Round 'Em Up
+							qa(30575),	-- Round 'Em Up
 							q(30879),	-- Round 1: Brewmaster Chani
 							q(30880),	-- Round 1: The Streetfighter
 							q(30881),	-- Round 2: Clever Ashyo & Ken-Ken
@@ -205,14 +205,14 @@ _.Zones =
 							q(30742),	-- Shut it Down
 							q(30823),	-- Shut it Down
 							q(46344),	-- Smelly's Luckydo
-							qh( 32284),	-- Someone You Should See
+							qh(32284),	-- Someone You Should See
 							q(30795),	-- Staying Connected
 							q(30800),	-- Stealing Their Thunder King
-							qa( 31392),	-- Temple of the White Tiger
-							qh( 31393),	-- Temple of the White Tiger
+							qa(31392),	-- Temple of the White Tiger
+							qh(31393),	-- Temple of the White Tiger
 							q(31207),	-- The Arena of Annihilation
-							qa( 32400),	-- The Bell Speaks
-							qh( 32398),	-- The Bell Speaks
+							qa(32400),	-- The Bell Speaks
+							qh(32398),	-- The Bell Speaks
 							q(30603),	-- The Broketooth Ravage
 							q(30821),	-- The Burlap Grind
 							q(30747),	-- The Burlap Grind
@@ -221,27 +221,27 @@ _.Zones =
 							q(43338),	-- The Codex of Ra
 							q(43334),	-- The Coming Storm
 							q(30665),	-- The Defense of Shado-Pan Fallback
-							qa( 32394),	-- The Divine Bell
-							qh( 32392),	-- The Divine Bell
+							qa(32394),	-- The Divine Bell
+							qh(32392),	-- The Divine Bell
 							q(30855),	-- The Fall of Shai Hu
 							q(30804),	-- The Fearmaster
-							qa( 32332),	-- The First Riddle: Mercy
-							qa( 32335),	-- The Greatest Prank
-							qa( 32355),	-- The Harmonic Mallet
-							qh( 32244),	-- The Korune
-							qa( 32370),	-- The Kun-Lai Expedition
-							qh( 32363),	-- The Kun-Lai Expedition
+							qa(32332),	-- The First Riddle: Mercy
+							qa(32335),	-- The Greatest Prank
+							qa(32355),	-- The Harmonic Mallet
+							qh(32244),	-- The Korune
+							qa(32370),	-- The Kun-Lai Expedition
+							qh(32363),	-- The Kun-Lai Expedition
 							q(31611),	-- The Kun-Lai Kicker
 							q(30582),	-- The Late Mrs. Muskpaw
 							q(30612),	-- The Leader Hozen
-							qa( 31452),	-- The Missing Merchant
-							qh( 31451),	-- The Missing Merchant
+							qa(31452),	-- The Missing Merchant
+							qh(31451),	-- The Missing Merchant
 							q(30488),	-- The Missing Muskpaw
-							qa( 32321),	-- The Monkey King
-							qa( 30660),	-- The Ordo Warbringer
-							qh( 30661),	-- The Ordo Warbringer
-							qh( 30663),	-- The Ordo Warbringer
-							qa( 30662),	-- The Ordo Warbringer
+							qa(32321),	-- The Monkey King
+							qa(30660),	-- The Ordo Warbringer
+							qh(30661),	-- The Ordo Warbringer
+							qh(30663),	-- The Ordo Warbringer
+							qa(30662),	-- The Ordo Warbringer
 							q(31856),	-- The Peak of Serenity - Begin Your Training
 							q(31989),	-- The Peak of Serenity - Complete Your Training
 							q(31859),	-- The Peak of Serenity - Continue Your Training
@@ -253,21 +253,21 @@ _.Zones =
 							q(30602),	-- The Rabbitsfoot
 							q(30480),	-- The Ritual
 							q(46348),	-- The River to Ban-Lu
-							qh( 31255),	-- The Road to Kun-Lai
+							qh(31255),	-- The Road to Kun-Lai
 							q(38936),	-- The Road to Kun-Lai
-							qa( 31254),	-- The Road to Kun-Lai
-							qa( 32393),	-- The Ruins of Korune
-							qh( 32391),	-- The Ruins of Korune
+							qa(31254),	-- The Road to Kun-Lai
+							qa(32393),	-- The Ruins of Korune
+							qh(32391),	-- The Ruins of Korune
 							q(30806),	-- The Scent of Life
-							qa( 32333),	-- The Second Riddle: Fellowship
-							qh( 31453),	-- The Shado-Pan
-							qa( 31455),	-- The Shado-Pan
+							qa(32333),	-- The Second Riddle: Fellowship
+							qh(31453),	-- The Shado-Pan
+							qa(31455),	-- The Shado-Pan
 							q(46346),	-- The Shadow of Ban-Lu
-							qa( 32455),	-- The Silence
+							qa(32455),	-- The Silence
 							q(30608),	-- The Snackrifice
-							qa( 32243),	-- The Source of Korune Power
+							qa(32243),	-- The Source of Korune Power
 							q(31285),	-- The Spring Drifter
-							qa( 32334),	-- The Third Riddle: Strength
+							qa(32334),	-- The Third Riddle: Strength
 							q(30799),	-- The Tomb of Shadows
 							q(30829),	-- The Tongue of Ba-Shon
 							q(31492),	-- The Torch of Strength
@@ -278,25 +278,25 @@ _.Zones =
 							q(30621),	-- They Stole My Luck!
 							q(30606),	-- Thumping Knucklethump
 							q(32441),	-- Thundering Pandaren Spirit
-							qh( 32448),	-- Ties with the Past
-							qa( 32193),	-- To Mogujia
-							qh( 32190),	-- To Mogujia
-							qh( 32376),	-- To the Valley!
+							qh(32448),	-- Ties with the Past
+							qa(32193),	-- To Mogujia
+							qh(32190),	-- To Mogujia
+							qh(32376),	-- To the Valley!
 							q(30724),	-- To the Wall!
 							q(30699),	-- To Winter's Blossom
 							q(30616),	-- Traffic Issues
-							qh( 32384),	-- Trapping the Leader
-							qa( 31380),	-- Trial At The Temple of the White Tiger
-							qh( 31381),	-- Trial At The Temple of the White Tiger
+							qh(32384),	-- Trapping the Leader
+							qa(31380),	-- Trial At The Temple of the White Tiger
+							qh(31381),	-- Trial At The Temple of the White Tiger
 							q(30826),	-- Trouble Brewing
 							q(30745),	-- Trouble Brewing
-							qa( 30569),	-- Trouble on the Farmstead
-							qh( 30570),	-- Trouble on the Farmstead
+							qa(30569),	-- Trouble on the Farmstead
+							qh(30570),	-- Trouble on the Farmstead
 							q(30670),	-- Turnabout
 							q(30752),	-- Unbelievable!
 							q(30611),	-- Unleash The Yeti!
 							q(30690),	-- Unmasking the Yaungol
-							qa( 30512),	-- Westwind Rest
+							qa(30512),	-- Westwind Rest
 							q(30945),	-- What's Yours Is Mine
 							q(30993),	-- Where are My Reinforcements?
 							q(30490),	-- Yakity Yak

@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
 			["groups"] = {
-				n( -2, {	-- Vendors
+				n(-2, {	-- Vendors
 					na(16705, {	-- Altaa <Alchemy Supplies>
 						i(22900),	-- Recipe: Elixir of Camouflage
 						i(23574),	-- Recipe: Transmute Primal Might

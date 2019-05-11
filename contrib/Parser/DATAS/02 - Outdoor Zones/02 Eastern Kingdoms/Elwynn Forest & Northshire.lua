@@ -68,15 +68,15 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 --[[
-					qg(10616, qa( 5545),	-- A Bundle of Trouble
-					qg(241, qa(   40),	-- A Fishy Peril
+					qg(10616, qa(5545),	-- A Bundle of Trouble
+					qg(241, qa( 40),	-- A Fishy Peril
 					qg(51934, qa(29430),	-- A Friend in Need
 					qg(514, qa(26393),	-- A Swift Message
 					qg(253, qa(26150),	-- A Visit With Maybell
-					qg(246, qa(   84),	-- Back to Billy
+					qg(246, qa( 84),	-- Back to Billy
 --]]
 					o(203733, {	-- Bounty Board
-						qa(   46, {	-- Bounty on Murlocs
+						qa( 46, {	-- Bounty on Murlocs
 							i(4840),
 							i(1158),
 							i(57248),
@@ -86,7 +86,7 @@ _.Zones =
 						}),
 						qa(26152),	-- Wanted: James Clark
 					}),
-					qg(261, qa(   59, {	-- Cloth and Leather Armor
+					qg(261, qa( 59, {	-- Cloth and Leather Armor
 						i(1171),
 						i(2237),
 						i(57520),
@@ -94,13 +94,13 @@ _.Zones =
 					})),
 --[[
 					qg(620, q(3861),	-- CLUCK!
-					qg(253, qa(  112),	-- Collecting Kelp
+					qg(253, qa(112),	-- Collecting Kelp
 					qg(42983, qa(26394),	-- Continue to Stormwind (add'l QG 43000)
 					o(55, {	-- A half-eaten body
 						qa(45),	  -- Discover Rolf's Fate
 					}),
-					qg(514, qa( 1097),	-- Elmore's Task
-					qg(261, qa(   37),	-- Find the Lost Guards
+					qg(514, qa(1097),	-- Elmore's Task
+					qg(261, qa( 37),	-- Find the Lost Guards
 --]]
 					{	-- Eastern Escape
 						["questID"] = 54102,
@@ -109,7 +109,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54101,	-- On Track
 					},
-					qg(278, qa(   83, {	-- Fine Linen Goods
+					qg(278, qa( 83, {	-- Fine Linen Goods
 						i(983),
 						i(57405),
 						i(57406),
@@ -120,20 +120,20 @@ _.Zones =
 					o(203734, {	-- Westfall Deed
 						qa(184),	-- Furlbrow's Deed
 					}),
-					qg(240, qa(   35),	-- Further Concerns
-					qg(255, qa(   16),	-- Give Gerard a Drink
-					qg(241, qa(   47),	-- Gold Dust Exchange
-					qg(247, qa(   87),	-- Goldtooth
+					qg(240, qa( 35),	-- Further Concerns
+					qg(255, qa( 16),	-- Give Gerard a Drink
+					qg(241, qa( 47),	-- Gold Dust Exchange
+					qg(247, qa( 87),	-- Goldtooth
 					qg(42256, qa(26378),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
-					qg(253, qa(   60),	-- Kobold Candles
+					qg(253, qa( 60),	-- Kobold Candles
 					qa(32618, {	-- Learn To Ride
 						["description"] = "This quest is available to Humans upon reaching level 20.",
 						["races"] = {1},	-- Human
 					}),
 --					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)
-					qg(246, qa(   85),	-- Lost Necklace
+					qg(246, qa( 85),	-- Lost Necklace
 --]]
-					qg(42256, qa(  147, {	-- Manhunt
+					qg(42256, qa(147, {	-- Manhunt
 						i(1183),	-- Elastic Wristguards
 						i(57522),	-- McCree's Sparring Gloves
 						i(1360),	-- Stormwind Plate Gloves
@@ -141,13 +141,13 @@ _.Zones =
 						i(57251),	-- "Collecting" Bag
 					})),
 --[[
-					qg(248, qa(  107),	-- Note to William
-					qg(384, qa( 7678),	-- Palomino Exchange
-					qg(247, qa(   86),	-- Pie for Billy
+					qg(248, qa(107),	-- Note to William
+					qg(384, qa(7678),	-- Palomino Exchange
+					qg(247, qa( 86),	-- Pie for Billy
 --					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
 
 --]]
-					qg(244, qa(   88)),	-- Princess Must Die!
+					qg(244, qa( 88)),	-- Princess Must Die!
 					{	-- On Track
 						["questID"] = 54101,
 						["qg"] = 146010,	-- Dark Ranger Lyana
@@ -155,7 +155,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54100,	-- A Way Out
 					},
-					qg(261, qa(   52, {	-- Protect the Frontier
+					qg(261, qa( 52, {	-- Protect the Frontier
 						i(57523),
 						i(57524),
 						i(57525),
@@ -166,7 +166,7 @@ _.Zones =
 						qa(71),	-- Report to Thomas
 					}),
 --]]
-					qg(963, qa(   11, {	-- Riverpaw Gnoll Bounty
+					qg(963, qa( 11, {	-- Riverpaw Gnoll Bounty
 						i(57527),
 						i(2238),
 						i(57526),
@@ -174,15 +174,15 @@ _.Zones =
 						un(2, i(2249)),	-- Militia Buckler
 					})),
 --[[
-					qg(252, qa(  111),	-- Speak with Gramma
+					qg(252, qa(111),	-- Speak with Gramma
 					n(13159, {	-- James Clark
 						i(1307, {	-- Gold Pickup Schedule
-							qa(  123),	-- The Collector
+							qa(123),	-- The Collector
 						}),
 					}),
-					qg(256, qa(  114),	-- The Escape
-					qg(240, qa(   62),	-- The Fargodeep Mine
-					qg(240, qa(   76),	-- The Jasperlode Mine
+					qg(256, qa(114),	-- The Escape
+					qg(240, qa( 62),	-- The Fargodeep Mine
+					qg(240, qa( 76),	-- The Jasperlode Mine
 --]]
 
 					qart(qa(42504, {	-- The Unseen Blade
@@ -194,18 +194,18 @@ _.Zones =
 						["classes"] = { 4 },
 					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
-						qa(  176, {	-- Wanted: "Hogger"
-							i( 6085),	-- Footman Tunic
-							i( 6084),	-- Stormwind Guard Leggings
+						qa(176, {	-- Wanted: "Hogger"
+							i(6085),	-- Footman Tunic
+							i(6084),	-- Stormwind Guard Leggings
 							i(60219),	-- Balanced Spell Staff
 							i(131199),	-- Lion Guard Chainmail
 							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),
 					}),
 --[[
-					qg(240, qa(  239),	-- Westbrook Garrison Needs Help!
-					qg(384, qa( 7677),	-- White Stallion Exchange
-					qg(251, qa(  106),	-- Young Lovers
+					qg(240, qa(239),	-- Westbrook Garrison Needs Help!
+					qg(384, qa(7677),	-- White Stallion Exchange
+					qg(251, qa(106),	-- Young Lovers
 --]]
 --					q(7937),	-- Your Fortune Awaits You... (REMOVED?)
 				}),
@@ -389,7 +389,7 @@ _.Zones =
 						},
 					},
 				}),
-				n( -2, {	-- Vendors
+				n(-2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -465,7 +465,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),
@@ -565,9 +565,9 @@ _.Zones =
 								["classes"] = {2},	-- Paladin
 --								["races"] = {11},	-- Draenei (doubtful, but what wowhead says)
 							})),
-							qg(197, qa(   54)),	-- Report to Goldshire
+							qg(197, qa( 54)),	-- Report to Goldshire
 							qg(6774, qa(37112)),	-- Rest and Relaxation
---							qg(6774, qa( 2158)),	-- Rest and Relaxation (replaced with previous quest)
+--							qg(6774, qa(2158)),	-- Rest and Relaxation (replaced with previous quest)
 --[[						qg(823, qa(28819)),	-- The Rear is Clear
 							qg(823, qa(28822)),	-- The Rear is Clear
 							qg(823, qa(31145)),	-- The Rear is Clear

@@ -25,7 +25,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 46077,	-- Lord Itharius
 				},
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
 						5721,	-- Dreamscythe
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 					}),
-					n(  0, {	-- Zone Drop (Legacy)
+					n(0, {	-- Zone Drop (Legacy)
 						un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
 					}),
 					un(2, n(-1, {	-- Common Boss Drop

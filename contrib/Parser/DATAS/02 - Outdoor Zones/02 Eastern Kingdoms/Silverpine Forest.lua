@@ -774,7 +774,7 @@ _.Zones =
 								un(7, i(4445)),	-- Flesh Carver
 							})),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

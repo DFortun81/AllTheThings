@@ -42,17 +42,17 @@ _.Instances = { tier(1, {	-- Classic
 			cr(46264, e(465, {	-- Lord Overheat
 				i(151075),	-- Cinderstitch Tunic
 				i(151076),	-- Fire-Hardened Shackles
-				i( 4676),	-- Skeletal Gauntlets
-				i( 5967),	-- Girdle of Nobility
-				i( 1929),	-- Silk-Threaded Trousers
+				i(4676),	-- Skeletal Gauntlets
+				i(5967),	-- Girdle of Nobility
+				i(1929),	-- Silk-Threaded Trousers
 			})),
 			cr(46254, e(464, {	-- Hogger
 				ach(633),	-- Stormwind Stockade
-				i( 1959),	-- Cold Iron Pick
+				i(1959),	-- Cold Iron Pick
 				i(151074), 	-- Turnkey's Pauldrons
-				i( 1934),	-- Hogger's Trousers
+				i(1934),	-- Hogger's Trousers
 				i(132569),	-- Stolen Jailer's Greaves
-				i( 2168),	-- Corpse Rompers
+				i(2168),	-- Corpse Rompers
 			})),
 			n(-40, {	-- Legacy
 				n(-17, {	-- Quests (Legacy)
@@ -69,7 +69,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(3400)),	-- Lucine Longsword
 					})),
 				}),
-				n(  0, {	-- Zone Drop (Legacy)
+				n(0, {	-- Zone Drop (Legacy)
 					un(43, n(1666, { 	-- Kam Deepfury
 						un(2, i(2280)),	-- Kam's Walking Stick
 					})),

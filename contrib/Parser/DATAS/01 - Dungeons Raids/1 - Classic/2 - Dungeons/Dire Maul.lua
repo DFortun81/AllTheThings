@@ -28,7 +28,7 @@ _.Instances = { tier(1, {	-- Classic
 						qg(44971, q(27107)),	-- Pusillin The Thief
 						qg(44969, q(27103)),	-- Shards of the Felvine
 					}),
-					n( 0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nEastern Wall of Garden\nLedge Above Garden\nBeside Lethtendris\nBeside Alzzin the Wildshaper",
 						}),
@@ -336,7 +336,7 @@ _.Instances = { tier(1, {	-- Classic
 							["qg"] = 44999,
 						}),
 					}),
-					n( 0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
 						}),
@@ -474,7 +474,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					})),
-					n( -2, {	-- Vendors
+					n(-2, {	-- Vendors
 						n(14371, {	-- Shen'dralar Provisioner
 							i(18487),	-- Pattern: Mooncloth Robe
 						}),
@@ -666,7 +666,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(18424)),	-- Sedge Boots
 							})),
 						}),
-						n( 0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(43, n(14690, {	-- Revanchion
 								["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
 								["groups"] = {

@@ -27,7 +27,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["qg"] = 54694,	-- Mamdy the "Ologist"
 				}),
 			}),
-			n( 0, {	-- Zone Drops
+			n(0, {	-- Zone Drops
 				n(18317, {	-- Ethereal Priest
 					dr(6.0, i(22543)),	-- Formula: Enchant Boots - Fortitude
 				}),

@@ -438,7 +438,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95712),	-- Inscribed Bag of Hydra-Spawn
 								},
 							})),
-							n( 68220, {			-- Gastropod
+							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 								["groups"] = {	
 									i(98136)	-- Gastropod Shell
@@ -1064,7 +1064,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					})),
-					n( 68220, {			-- Gastropod
+					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["groups"] = {	
 							i(98136)	-- Gastropod Shell
@@ -1801,7 +1801,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					})),
-					n( 68220, {			-- Gastropod
+					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["groups"] = {	
 							i(98136),	-- Gastropod Shell

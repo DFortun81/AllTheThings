@@ -745,7 +745,7 @@ _.Zones =
 								un(7, i(1287)),	-- Giant Tarantula Fang 
 							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

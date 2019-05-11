@@ -304,7 +304,7 @@ _.Zones =
 			--					n(54321, { 	-- Solix 	}),
 			--]]		
 						}),
-						n( -2, {	-- Vendors
+						n(-2, {	-- Vendors
 							n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>
 								["description"] = "This Vendor unlocks once you complete the quest Filling the Moonwell.",
 								["sourceQuest"] = 29279,	-- Filling the Moonwell

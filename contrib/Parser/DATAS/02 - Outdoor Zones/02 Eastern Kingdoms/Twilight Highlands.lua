@@ -1760,7 +1760,7 @@ _.Zones =
 						i(67245),	-- Tarvus's Poison-Scarred Boots
 					}), 
 				}),
-				n( -2,  {	-- Vendors
+				n(-2,  {	-- Vendors
 					h(n(50146, {	-- Agatian Fallanos <Shard Trader>
 						i(52555, {	-- Hypnotic Dust
 							h(i(67308)),	-- Formula: Enchanted Lantern

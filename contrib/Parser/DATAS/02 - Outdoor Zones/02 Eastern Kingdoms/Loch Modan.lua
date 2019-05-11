@@ -42,12 +42,12 @@ _.Zones =
 					qg(44345, qa(26929)),	-- A Load of Croc
 					qg(44200, qa(26846)),	-- A Nasty Exploit
 					qg(1343, qa(26843)),	-- A Tiny, Clever Commander
-					qg(2057, qa(  454)),	-- After the Ambush
+					qg(2057, qa(454)),	-- After the Ambush
 					qg(1073, qa(27115)),	-- Ando's Call
 					qg(44345, qa(26868)),	-- Axis of Awful
 --]]
 --[[
-					qg(6241, qa( 1655, {	-- Bailor's Ore Shipment (REMOVED)
+					qg(6241, qa(1655, {	-- Bailor's Ore Shipment (REMOVED)
 						["classes"] = {2},	-- Paladin
 					})),
 --]]					
@@ -129,15 +129,15 @@ _.Zones =
 					qg(1092, qa(26176)),	-- Onward to Thelsamar
 					qg(1340, qa(26842)),	-- Out of Gnoll-where
 --]]
-					qg(2057, qa(  309, { 	-- Protecting the Shipment
+					qg(2057, qa(309, { 	-- Protecting the Shipment
 						i(58981),	-- Dastardly Bracers
 						i(58982),	-- Foreman Gloves
 						i(131204),	-- Foreman Handguards
 						i(58983),	-- Ironband Legguards
 					})),
 --[[					
-					qg(1105, qa(  301)),	-- Report to Ironforge
---					qg(1105, qa(  273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
+					qg(1105, qa(301)),	-- Report to Ironforge
+--					qg(1105, qa(273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
 					qg(1105, qa(13639)),	-- Resupplying the Excavation
 ]]--
 --[[
@@ -146,7 +146,7 @@ _.Zones =
 					qg(44345, qa(26928)),	-- Smells Like A Plan
 					qg(1960, qa(13635)),	-- South Gate Status Report
 					qg(44870, qa(27035)),	-- Standing Up
---					qa( 1338),	-- Stormpike's Order (REMOVED)
+--					qa(1338),	-- Stormpike's Order (REMOVED)
 					qg(1340, qa(13636)),	-- Stormpike's Orders
 					qg(1340, qa(26927)),	-- Suddenly, Murlocs!
 					qg(1343, qa(26864)),	-- The Bearer of Gnoll-edge
@@ -784,7 +784,7 @@ _.Zones =
 								un(7, i(4949)),	-- Orcish Cleaver
 							})),
 						}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(43, n(1222, {	-- Dark Iron Sapper
 								un(7, i(2274)),	-- Sapper's Gloves
 							})),

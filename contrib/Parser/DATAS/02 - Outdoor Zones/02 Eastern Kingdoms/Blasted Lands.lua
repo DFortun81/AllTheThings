@@ -459,7 +459,7 @@ _.Zones =
 					qg(19254, qh(25696)),	-- The Sunveil Excursion
 					qg(41159, qh(25692)),	-- The Vile Blood of Demons
 					qg(42299, qa(26165)),	-- The Vile Blood of Demons
-					qg(19254, qh( 9407)),	-- Through the Dark Portal
+					qg(19254, qh(9407)),	-- Through the Dark Portal
 					qg(16841, qa(10119)),	-- Through the Dark Portal
 					qg(42298, qa(26163)),	-- Time is Short
 					qg(7783, qh(25689)),	-- Time is Short
@@ -1301,7 +1301,7 @@ _.Zones =
 								un(7, i(18665)), 	-- The Eye of Shadow
 							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

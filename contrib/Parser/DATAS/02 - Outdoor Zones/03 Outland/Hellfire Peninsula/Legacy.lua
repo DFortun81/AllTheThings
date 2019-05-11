@@ -41,15 +41,15 @@ _.Zones =
 								["sourceQuest"] = 9406,	-- The Mag'har
 								["qg"] = 3230,	-- Nazgrel
 							})),
-							un(40, qa( 47025)),	-- Blood: Aid of the Illidari
-							un(40, qa( 47024)),	-- Brewmaster: Aid of the Illidari
+							un(40, qa(47025)),	-- Blood: Aid of the Illidari
+							un(40, qa(47024)),	-- Brewmaster: Aid of the Illidari
 							un(40, q(45414)),	-- Confirming Suspicions
-							un(40, qa( 45843)),	-- Dark Omens
+							un(40, qa(45843)),	-- Dark Omens
 							un(40, q(45413)),	-- Gathering Information
-							un(40, qa( 47023)),	-- Guardian: Aid of the Illidari
-							un(40, qa( 45412)),	-- Protection: Aid of the Illidari
-							un(40, qa( 47022)),	-- Protection: Aid of the Illidari
-							un(40, qa( 46314)),	-- Vengeance: Seeking Kor'vas
+							un(40, qa(47023)),	-- Guardian: Aid of the Illidari
+							un(40, qa(45412)),	-- Protection: Aid of the Illidari
+							un(40, qa(47022)),	-- Protection: Aid of the Illidari
+							un(40, qa(46314)),	-- Vengeance: Seeking Kor'vas
 						}),
 						n(-2, {	-- Vendors
 							nh(18751, {	-- Kalaen <Jewelcrafting Trainer>

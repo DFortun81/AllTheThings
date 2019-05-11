@@ -1368,9 +1368,9 @@ _.Zones =
 					qh(32138),	-- Work Order: Lumber
 
 					Holiday quests:
-					qh( 32047),	-- Candy Bucket
+					qh(32047),	-- Candy Bucket
 					q(32034),	-- Candy Bucket
-					qh( 32020),	-- Candy Bucket
+					qh(32020),	-- Candy Bucket
 					q(32036),	-- Candy Bucket
 					q(32499),	-- Honor the Flame
 ]]--

@@ -522,7 +522,7 @@ _.Zones =
 --					n(51044, {	-- Plague	}),	
 --]]								
 				}),
-				n( -2, {	-- Vendors
+				n(-2, {	-- Vendors
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
 						i(12226),	-- Recipe: Crispy Bat Wing
 					}),
@@ -630,7 +630,7 @@ _.Zones =
 								un(7, i(3330)),	-- Dargol's Hauberk
 							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

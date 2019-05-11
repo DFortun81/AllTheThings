@@ -7,7 +7,7 @@ _.Zones =
 		m(103, {	-- The Exodar
 			["groups"] = {
 			--[[
-				n( -3, {	-- Holidays
+				n(-3, {	-- Holidays
 					n(-47, {     -- Lunar Festival
 						["groups"] = {
 							n(-17, { 	-- Quests

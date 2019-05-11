@@ -164,55 +164,55 @@ _.Zones =
 								["qg"] = 48568,	-- Eitrigg
 								["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 							}),
-							q( 28202, {	-- A Perfect Costume
+							q(28202, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 3, 29 },	-- Dwarf, Void Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							q( 28203, {	-- A Perfect Costume
+							q(28203, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 11, 22 },	-- Draenei, Worgen, Lightforged Draenei
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							q( 28204, {	-- A Perfect Costume
+							q(28204, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 7 },	-- Gnome
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							q( 28205, {	-- A Perfect Costume
+							q(28205, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 4 },	-- Night Elf
 								["sourceQuests"] = { 28254 },	-- A Needle in a Hellhole
 							}),
-							q( 28428, {	-- A Perfect Costume
+							q(28428, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 2, 5 },	-- Orc, Undead
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							q( 28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
+							q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 6, 26, 28 },	-- Tauren, Pandaren, Highmountain Tauren (UNCONFIRMED)
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							q( 28430, {	-- A Perfect Costume
+							q(28430, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 9 },	-- Goblin
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							q( 28431, {	-- A Perfect Costume
+							q(28431, {	-- A Perfect Costume
 								["qg"] = 48001,	-- Thelaron Direneedle
 								["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 								["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 							}),
-							q( 28225, {	-- Prove Yer Allegiance
+							q(28225, {	-- Prove Yer Allegiance
 								["qg"] = 48033,	-- Stebben Oreknuckle
 								["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 							}),
-							q( 28226, {	-- Scrapped Golems
+							q(28226, {	-- Scrapped Golems
 								["qg"] = 48033,	-- Stebben Oreknuckle
 								["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 							}),
-							q( 28227, {	-- Golem Training
+							q(28227, {	-- Golem Training
 								["groups"] = {
 									i(64524),	-- Chiselgrip Shield
 									i(64523),	-- Combat Training Vest
@@ -1145,7 +1145,7 @@ _.Zones =
 							un(2, i(13248)),	-- Burstshot Harquebus
 						}),
 					}),
-					--n(  0, {	-- Zone Drop (Legacy)
+					--n(0, {	-- Zone Drop (Legacy)
 					--}),
 				}),		
 			},

@@ -1228,7 +1228,7 @@ _.Zones =
 --						qa(10754),	-- Entry Into the Citadel (removed, old BT key questline)
 --						qh(11498),	-- Learning to Fly (REMOVED)
 --						qa(11497),	-- Learning to Fly (REMOVED)					
---						q( 38845),	-- Unused (NEVER IMPLEMENTED)
+--						q(38845),	-- Unused (NEVER IMPLEMENTED)
 					}),
 				},
 			},

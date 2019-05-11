@@ -35,32 +35,32 @@ _.ExpansionFeatures =
 			}),
 --[[
 			n(-17, { 	-- Quests
-				qa( 28122),	-- A Huge Problem
-				qh( 28657),	-- A Huge Problem
-				qa( 28117),	-- Clearing the Depths
-				qh( 28660),	-- Clearing the Depths
-				qa( 28186),	-- Cursed Shackles
-				qh( 28665),	-- Cursed Shackles
-				qa( 28165),	-- D-Block
-				qh( 28663),	-- D-Block
-				qh( 28670),	-- Food From Below
-				qa( 28232),	-- Food From Below
-				qa( 28120),	-- Learning From The Past
-				qh( 28662),	-- Learning From The Past
-				qa( 28188),	-- Prison Revolt
-				qh( 28668),	-- Prison Revolt
-				qh( 28664),	-- Svarnos
-				qa( 28185),	-- Svarnos
-				qa( 28162),	-- Swamp Bait
-				qh( 28658),	-- Swamp Bait
-				qh( 28661),	-- The Imprisoned Archmage
-				qa( 28118),	-- The Imprisoned Archmage
-				qh( 28659),	-- The Leftovers
-				qa( 28163),	-- The Leftovers
-				qa( 28223),	-- The Warden
-				qh( 28669),	-- The Warden
-				qa( 28882),	-- Victory in Tol Barad
-				qh( 28884),	-- Victory in Tol Barad
+				qa(28122),	-- A Huge Problem
+				qh(28657),	-- A Huge Problem
+				qa(28117),	-- Clearing the Depths
+				qh(28660),	-- Clearing the Depths
+				qa(28186),	-- Cursed Shackles
+				qh(28665),	-- Cursed Shackles
+				qa(28165),	-- D-Block
+				qh(28663),	-- D-Block
+				qh(28670),	-- Food From Below
+				qa(28232),	-- Food From Below
+				qa(28120),	-- Learning From The Past
+				qh(28662),	-- Learning From The Past
+				qa(28188),	-- Prison Revolt
+				qh(28668),	-- Prison Revolt
+				qh(28664),	-- Svarnos
+				qa(28185),	-- Svarnos
+				qa(28162),	-- Swamp Bait
+				qh(28658),	-- Swamp Bait
+				qh(28661),	-- The Imprisoned Archmage
+				qa(28118),	-- The Imprisoned Archmage
+				qh(28659),	-- The Leftovers
+				qa(28163),	-- The Leftovers
+				qa(28223),	-- The Warden
+				qh(28669),	-- The Warden
+				qa(28882),	-- Victory in Tol Barad
+				qh(28884),	-- Victory in Tol Barad
 			}),
 --]]
 			n(-2, { 	-- Vendor

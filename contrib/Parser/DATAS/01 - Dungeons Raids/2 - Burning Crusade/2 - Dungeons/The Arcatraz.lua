@@ -49,7 +49,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
 					["crs"] = {
 						20880,	-- Eredar Deathbringer

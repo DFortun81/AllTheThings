@@ -52,7 +52,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32489),	-- Ashtongue Talisman of Zeal
 				},
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(32606,	{	-- Girdle of the Lightbearer
 					["crs"] = {
 						22844,	-- Ashtongue Battlelord

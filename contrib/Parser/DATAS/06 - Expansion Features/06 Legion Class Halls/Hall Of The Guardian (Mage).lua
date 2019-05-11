@@ -138,13 +138,13 @@ _.ExpansionFeatures =
 					q(42418),	-- An Unexpected Visitor
 					q(45437),	-- An Urgent Situation
 					q(45997),	-- An Urgent Warning
-					qa( 42433),	-- Ancient Magic
+					qa(42433),	-- Ancient Magic
 					q(42126),	-- Archmage Omniara
 					q(42956, {	-- Ari's Package
 						i(141880),	-- Ari's Wooden Ring
 					}),
 					q(46000),	-- Arming Dalaran
-					qa( 45844),	-- Avocation of Antonidas
+					qa(45844),	-- Avocation of Antonidas
 					q(44766),	-- Backup Plan
 					q(42127),	-- Building Our Troops
 					q(45845),	-- Burning Within
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 					q(43509),	-- Odyn's Challenge
 					q(44269),	-- Odyn's Challenge
 					q(44268),	-- Odyn's Challenge
-					qa( 44240),	-- Orange is the New Purple
+					qa(44240),	-- Orange is the New Purple
 					q(44207),	-- Portal Full of Shiny Things
 					q(44098),	-- Recruiting Apprentices
 					q(45251),	-- Redundancy
@@ -208,7 +208,7 @@ _.ExpansionFeatures =
 					q(42703),	-- Technical Wizardry
 					q(44263),	-- The Arcway
 					q(41114),	-- The Champion's Return
-					qa( 42416),	-- The Council is in Session
+					qa(42416),	-- The Council is in Session
 					q(42476),	-- The Deadwind Site
 					q(41036),	-- The Dreadlord's Prize
 					q(41112),	-- The Great Akazamzarak							

@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
 		["groups"] = {
 			n(-17, {	-- Quests
-				q( 44930,{ -- Deadmines: Sea'in Red
+				q(44930,{ -- Deadmines: Sea'in Red
 					["groups"] = {
 						{ -- Ensemble: Blackened Defias Armor
 							["groups"] = {
@@ -69,7 +69,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 27848 },	-- Good Intentions...Poor Execution
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(10401, {	-- Blackened Defias Gloves
 					["crs"] = {
 						48421,	-- Defias Overseer
@@ -111,19 +111,19 @@ _.Instances = { tier(1, {	-- Classic
 				-- i(157628), 	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
 				})),
 				cr(47296, e(90, {	-- Helix Gearbreaker
-					i( 5200),	-- Impaling Harpoon
-					i( 5191),	-- Cruel Barb
-					i( 5443),	-- Gold-Plated Buckler
+					i(5200),	-- Impaling Harpoon
+					i(5191),	-- Cruel Barb
+					i(5443),	-- Gold-Plated Buckler
 					i(151062),	-- Armbands of Exiled Architects
 					i(151063),	-- Gear-Marked Gauntlets
 					i(132556),	-- Smelter's Britches
-					i( 5199),	-- Smelting Pants
+					i(5199),	-- Smelting Pants
 				-- i(157752), 	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
 				})),
 				cr(43778, e(91, {	-- Foe Reaper 5000
-					i( 5201),	-- Emberstone Staff
-					i( 5187),	-- Foe Reaper
-					i( 1937),	-- Buzz Saw
+					i(5201),	-- Emberstone Staff
+					i(5187),	-- Foe Reaper
+					i(1937),	-- Buzz Saw
 					i(151066),	-- Missing Diplomat's Pauldrons
 					i(151064),	-- Vest of the Curious Visitor
 					i(151065),	-- Old Friend's Gloves
@@ -161,7 +161,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(7607)),		-- Sable Wand
 						})),
 					}),
-					n(  0, {	-- Zone Drops
+					n(0, {	-- Zone Drops
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["groups"] = {

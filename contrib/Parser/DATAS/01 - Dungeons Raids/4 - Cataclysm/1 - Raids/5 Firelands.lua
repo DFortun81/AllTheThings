@@ -233,7 +233,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				},
 			},
-			n( -2, {	-- Vendors
+			n(-2, {	-- Vendors
 				n(54401, {	-- Naresir Stormfury
 					i(70930),
 					i(71229),
@@ -250,7 +250,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71253),
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				["crs"] = {
 					53134,	-- Ancient Core Hound
 					53635,	-- Cinderweb Drone
@@ -316,7 +316,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(  1, {	-- Normal
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n( -1, { 	-- Common Boss Drops
+					n(-1, { 	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
@@ -588,7 +588,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(  2, {	-- Heroic
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n( -2, {	-- Vendors
+					n(-2, {	-- Vendors
 						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
 							["groups"] = {
@@ -648,7 +648,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 					}),
-					n( -1, { 	-- Common Boss Drops
+					n(-1, { 	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>

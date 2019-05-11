@@ -599,7 +599,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 					},
---[[ 				n( 41937,	-- Marshal Paltrow
+--[[ 				n(41937,	-- Marshal Paltrow
 						i(56474,	-- Orders from Base Camp
 							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
 						}),

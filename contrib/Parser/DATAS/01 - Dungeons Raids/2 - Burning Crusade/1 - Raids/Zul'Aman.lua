@@ -63,7 +63,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							["u"] = 2,			-- Legacy Content
 						},
 					}),
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(33865, {	-- Amani Hex Stick
 							n(24396, { 	-- Forest Frog
 								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",

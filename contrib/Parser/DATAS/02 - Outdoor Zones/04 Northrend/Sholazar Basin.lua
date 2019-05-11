@@ -345,16 +345,16 @@ _.Zones =
 					q(12560),	-- Crocolisk Mastery: The Plan
 					q(12551),	-- Crocolisk Mastery: The Trial
 					q(12608),	-- Cultist Incursion
-					qa( 11786),	-- Desecrate this Fire!
-					qh( 13442),	-- Desecrate this Fire!
-					qa( 11580),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qa( 11755),	-- Desecrate this Fire!
-					qa( 13450),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qh( 11749),	-- Desecrate this Fire!
+					qa(11786),	-- Desecrate this Fire!
+					qh(13442),	-- Desecrate this Fire!
+					qa(11580),	-- Desecrate this Fire!
+					qa(11732),	-- Desecrate this Fire!
+					qa(11755),	-- Desecrate this Fire!
+					qa(13450),	-- Desecrate this Fire!
+					qa(11766),	-- Desecrate this Fire!
+					qh(11581),	-- Desecrate this Fire!
+					qh(11745),	-- Desecrate this Fire!
+					qh(11749),	-- Desecrate this Fire!
 					q(12549),	-- Dreadsaber Mastery: Becoming a Predator
 					q(12558),	-- Dreadsaber Mastery: Ready to Pounce
 					q(12550),	-- Dreadsaber Mastery: Stalking the Prey
@@ -370,11 +370,11 @@ _.Zones =
 					q(12689),	-- Hand of the Oracles
 					q(12523),	-- Have a Part, Give a Part
 					q(12577),	-- Home Time!
-					qa( 13486),	-- Honor the Flame
-					qh( 13494),	-- Honor the Flame
+					qa(13486),	-- Honor the Flame
+					qh(13494),	-- Honor the Flame
 					q(12539),	-- Hoofing It
 					q(12595),	-- In Search of Bigger Game
-					qa( 11964),	-- Incense for the Summer Scorchlings
+					qa(11964),	-- Incense for the Summer Scorchlings
 					q(12540),	-- Just Following Orders
 					q(12589),	-- Kick, What Kick?
 					q(12651),	-- Lakeside Landing
@@ -386,8 +386,8 @@ _.Zones =
 					q(12658),	-- My Pet Roc
 					q(12522),	-- Need an Engine, Take an Engine
 					q(12528),	-- Playing Along
-					qa( 11882),	-- Playing with Fire
-					qh( 11915),	-- Playing with Fire
+					qa(11882),	-- Playing with Fire
+					qh(11915),	-- Playing with Fire
 					q(12614),	-- Post-partum Aggression
 					q(12613),	-- Powering the Waygate - The Makers' Overlook
 					q(12559),	-- Powering the Waygate - The Makers' Perch

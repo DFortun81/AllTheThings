@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(15867)),	-- Prismcharm
 					})),
 				}),
-				n(  0, {	-- Zone Drop (Legacy)
+				n(0, {	-- Zone Drop (Legacy)
 					["groups"] = {
 						n(10318, {	-- Blackhand Assassin
 							un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders

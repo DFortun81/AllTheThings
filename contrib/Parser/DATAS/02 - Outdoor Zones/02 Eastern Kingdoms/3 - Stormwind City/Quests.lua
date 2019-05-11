@@ -317,7 +317,7 @@ _.Zones =
 							qg(, qa(24428)),	-- A Most Puzzling Circumstance
 							qg(, q(31450)),	-- A New Fate
 							qg(, q(336)),	-- A Noble Brew
-							qg(, qa(  335)),	-- A Noble Brew
+							qg(, qa(335)),	-- A Noble Brew
 							qg(, q(24629)),	-- A Perfect Puff of Perfume
 							qg(, qa(47202)),	-- A Personal Message
 							qg(, qa(28825)),	-- A Personal Summons
@@ -338,7 +338,7 @@ _.Zones =
 							qg(, qa(32310)),	-- A Tale of Six Masters
 							qg(, qa(31917)),	-- A Tamer's Homecoming
 							qg(, qa(43323)),	-- A Time to Reflect
-							qg(, qa(  171)),	-- A Warden of the Alliance
+							qg(, qa(171)),	-- A Warden of the Alliance
 							qg(, qa(44473)),	-- A Weapon of the Alliance
 		--]]
 							qa(27344, {	-- A Well-Earned Reward
@@ -357,7 +357,7 @@ _.Zones =
 		COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 								["classes"] = {11},
 							})),
-							qg(, qa(  325)),	-- Armed and Ready
+							qg(, qa(325)),	-- Armed and Ready
 							qg(, qh(40976)),	-- Audience with the Warchief
 							qg(, qa(32008)),	-- Audrey Burnhep
 							qg(, qa(31966)),	-- Battle Pet Tamers: Cataclysm
@@ -387,7 +387,7 @@ _.Zones =
 							qg(, qa(14482)),	-- Call of Duty
 							qg(, qa(12336)),	-- Candy Bucket
 							qg(, q(14446)),	-- Cataclysm!
-							qg(, qa( 1468)),	-- Children's Week
+							qg(, qa(1468)),	-- Children's Week
 							qg(, qa(46274)),	-- Consoling the King
 							qg(, qa(26394)),	-- Continue to Stormwind
 							qg(, qa(11356)),	-- Costumed Orphan Matron
@@ -407,7 +407,7 @@ _.Zones =
 							qg(, qa(26395)),	-- Dungar Longdrink
 							qg(, qa(25156)),	-- Elemental Goo
 							qg(, q(29481)),	-- Elixir Master
-							qg(, qa( 1097)),	-- Elmore's Task
+							qg(, qa(1097)),	-- Elmore's Task
 							qg(, qa(31981)),	-- Exceeding Expectations
 		--]]
 							qa(27361, {	-- Favored of the Light
@@ -420,20 +420,20 @@ _.Zones =
 								},
 							}),
 		--[[
-							qg(1141, qa( 1271)),	-- Feast at the Blue Recluse
+							qg(1141, qa(1271)),	-- Feast at the Blue Recluse
 							qg(, qa(26177)),	-- Feeling Crabby?
 							qg(, qa(29398)),	-- Fencing the Goods
 							qg(, qa(24848)),	-- Fireworks At The Gilded Rose
-							qg(, qa( 8356)),	-- Flexing for Nougat
+							qg(, qa(8356)),	-- Flexing for Nougat
 							qg(, qa(27675)),	-- Forged Documents
 							qg(, q(29477)),	-- Gnomish Engineering
 							qg(, q(29475)),	-- Goblin Engineering
 							qg(, qa(31593)),	-- Got one!
-							qg(, qa( 7023)),	-- Greatfather Winter is Here!
+							qg(, qa(7023)),	-- Greatfather Winter is Here!
 							qg(, qa(39800)),	-- Greymane's Gambit
 							qg(, qa(29391)),	-- Guardians of Hyjal: Call of the Ancients
 							qg(, qa(29387)),	-- Guardians of Hyjal: Firelands Invasion!
-							qg(, qa(  333)),	-- Harlan Needs a Resupply
+							qg(, qa(333)),	-- Harlan Needs a Resupply
 							qg(, qa(28579)),	-- Hero's Call: Badlands!
 							qg(, qa(28673)),	-- Hero's Call: Blasted Lands!
 							qg(, qa(28666)),	-- Hero's Call: Burning Steppes!
@@ -508,13 +508,13 @@ _.Zones =
 							})),
 							qg(, qa(11924)),	-- More Torch Catching
 							qg(, qa(11921)),	-- More Torch Tossing
-							qg(, qa( 8860)),	-- New Year Celebrations!
+							qg(, qa(8860)),	-- New Year Celebrations!
 							qg(, qa(25105)),	-- Nibbler! No!
 							qg(, qa(25155)),	-- Ogrezonians in the Mood
 							qg(, qa(31592)),	-- On The Mend
 							qg(, qa(31745)),	-- Onward and Inward
 							qg(, qa(26192)),	-- Orphans Like Cookies Too!
-							qg(, qa(  334)),	-- Package for Thurman
+							qg(, qa(334)),	-- Package for Thurman
 							qg(, qa(26153)),	-- Penny's Pumpkin Pancakes
 							qg(, qa(24656)),	-- Pilfering Perfume
 							qg(, qa(14022)),	-- Pilgrim's Bounty
@@ -560,8 +560,8 @@ _.Zones =
 		--[[
 							qg(, qa(44700)),	-- Stormheim
 							qg(, qa(39735)),	-- Stormheim
-							qg(, qa(  353)),	-- Stormpike's Delivery
-							qg(, qa( 1338)),	-- Stormpike's Order
+							qg(, qa(353)),	-- Stormpike's Delivery
+							qg(, qa(1338)),	-- Stormpike's Order
 							qg(, q(579)),	-- Stormwind Library
 							qg(, q(11954)),	-- Striking Back
 							qg(, q(11917)),	-- Striking Back
@@ -591,7 +591,7 @@ _.Zones =
 							})),
 		--[[					
 							qg(, qa(27398)),	-- The Battle Is Won, The War Goes On
-							qg(, qg(45226, qa( 29439)),	-- The Call of the World-Shaman
+							qg(, qg(45226, qa(29439)),	-- The Call of the World-Shaman
 							qg(, qa(39691)),	-- The Call of War
 							qg(, qa(27274)),	-- The Chief Surgeon
 							qg(, qa(29403)),	-- The Collector's Agent
@@ -607,7 +607,7 @@ _.Zones =
 		--[[
 							qg(, q(34398)),	-- The Dark Portal
 							qg(, q(36881)),	-- The Dark Portal
-							qg(, qa( 7905)),	-- The Darkmoon Faire
+							qg(, qa(7905)),	-- The Darkmoon Faire
 		--]]
 							qa(30095, {	-- The End Time
 								["qg"] = 52408,	-- Coridormi
@@ -642,8 +642,8 @@ _.Zones =
 		--						["sourceQuests"] = {  },	-- 
 							}),
 		--[[
-							qg(, qa( 8763)),	-- The Hero of the Day
-							qg(, qh( 8799)),	-- The Hero of the Day
+							qg(, qa(8763)),	-- The Hero of the Day
+							qg(, qh(8799)),	-- The Hero of the Day
 							qg(, qa(43471)),	-- The Historians
 		--]]					
 							qa(7497, {	-- The Journey Has Just Begun
@@ -668,11 +668,11 @@ _.Zones =
 								["classes"] = { 4 },
 								["lvl"] = 98,
 							}),
-							qg(107574, qa( 7782, {		-- The Lord of Blackrock
+							qg(107574, qa(7782, {		-- The Lord of Blackrock
 								i(19366),	-- Master Dragonslayer's Orb
 							})),
 		--[[					
-							qg(, qa( 7781)),	-- The Lord of Blackrock
+							qg(, qa(7781)),	-- The Lord of Blackrock
 							qg(, q(27203)),	-- The Maelstrom
 							qg(, qa(11970)),	-- The Master of Summer Lore
 							--]]
@@ -681,7 +681,7 @@ _.Zones =
 							}),
 							--[[
 							qg(, qa(47253)),	-- The Originals
-							qg(, qa(  543)),	-- The Perenolde Tiara
+							qg(, qa(543)),	-- The Perenolde Tiara
 							--]]
 							qa(28398, {	-- The Pyromancer's Grimoire
 								["g"] = {
@@ -696,12 +696,12 @@ _.Zones =
 							qg(, qa(31976)),	-- The Returning Champion
 							qg(, qh(40786)),	-- The Smoldering Ember
 							qg(, qa(40787)),	-- The Smoldering Ember
-							qg(, qa( 1790)),	-- The Symbol of Life
+							qg(, qa(1790)),	-- The Symbol of Life
 							qg(, qa(31985)),	-- The Triumphant Return
 							qg(, qa(29156)),	-- The Troll Incursion
 							qg(, qa(27443)),	-- The War Has Many Fronts
 							qg(, qa(29555)),	-- The White Pawn
-							qg(, q( 29158)),	-- The Zandalar Representative
+							qg(, q(29158)),	-- The Zandalar Representative
 							qg(, qa(26536)),	-- Thunder Falls
 							qg(, qa(42782)),	-- To Be Prepared
 							qg(, qa(29102)),	-- To Fort Livingston
@@ -709,7 +709,7 @@ _.Zones =
 							qg(, qa(11657)),	-- Torch Catching
 							qg(, qa(11731)),	-- Torch Tossing
 							qg(, qa(31733)),	-- Touching Ground
-							qg(, q( 29482)),	-- Transmutation Master
+							qg(, q(29482)),	-- Transmutation Master
 		--]]
 							qa(28328, {	-- Twilight Scheming
 								["sourceQuests"] = { 28285 },	-- Meet with High Priestess Laurena
@@ -753,7 +753,7 @@ _.Zones =
 							qg(, qa(29411)),	-- What Now?
 							qg(, q(32863)),	-- What We've Been Training For
 							qg(, qa(13188)),	-- Where Kings Walk
-							qg(, qa(  332)),	-- Wine Shop Advert
+							qg(, qa(332)),	-- Wine Shop Advert
 							qg(, qa(27266)),	-- Wulf Calls
 							qg(, q(397)),	-- You Have Served Us Well
 		--]]	

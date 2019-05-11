@@ -757,59 +757,59 @@ _.Zones =
 							crit(7, {	--Eons of Misery
 							}),
 						})),
-						-- qh( 12026),	-- The Damaged Journal
-						-- qh( 12054),	-- Deciphering the Journal
-						-- qh( 12073),	-- Pounding the Iron
-						-- qh( 12074),	-- An Expedient Ally
-						-- qh( 12165),	-- An Intriguing Plan
-						-- qh( 12170),	-- Blackriver Brawl
-						-- qh( 12177),	-- Jun'ik's Coverup
-						-- qh( 12178),	-- Delivery to Krenna
-						-- qh( 12195),	-- The Unexpected 'Guest'
-						-- qh( 12196),	-- From the Ground Up
-						-- qh( 12197),	-- We Have the Power
-						-- qh( 12198),	-- ... Or Maybe We Don't
-						-- qh( 12201),	-- The Overseer's Shadow
-						-- qh( 12202),	-- Cultivating an Image
-						-- qh( 12203),	-- Loken's Orders
-						-- qh( 12204),	-- In the Name of Loken
-						-- qh( 12208),	-- Good Troll Hunting
-						-- qh( 12213),	-- The Darkness Beneath
-						-- qh( 12231),	-- The Bear God's Offspring
-						-- qh( 12241),	-- Destroy the Sapling
-						-- qh( 12256),	-- The Flamebinders' Secrets
-						-- qh( 12257),	-- A Show of Strength
-						-- qh( 12270),	-- Shred the Alliance
-						-- qh( 12280),	-- Making Repairs
-						-- qh( 12284),	-- Keep 'Em on Their Heels
-						-- qh( 12288),	-- Overwhelmed!
-						-- qh( 12315),	-- Crush Captain Brightwater!
-						-- qh( 12317),	-- Keep Them at Bay
-						-- qh( 12324),	-- Smoke 'Em Out
-						-- qh( 12415),	-- The Horse Hollerer
-						-- qh( 12422),	-- Tactical Clemency
-						-- qh( 12423),	-- Mikhail's Journal
-						-- qh( 12424),	-- Gorgonna
-						-- qh( 12425),	-- Ruuna the Blind
-						-- qh( 12427),	-- The Conquest Pit: Bear Wrestling!
-						-- qh( 12428),	-- The Conquest Pit: Mad Furbolg Fighting
-						-- qh( 12429),	-- The Conquest Pit: Blood and Metal
-						-- qh( 12430),	-- The Conquest Pit: Death Is Likely
-						-- qh( 12432),	-- Riding the Red Rocket
-						-- qh( 12433),	-- Seeking Solvent -- i(37664),	-- Element 115
-						-- qh( 12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
-						-- qh( 12436),	-- Supplemental Income
-						-- qh( 12451),	-- Onward to Camp Oneqwah
+						-- qh(12026),	-- The Damaged Journal
+						-- qh(12054),	-- Deciphering the Journal
+						-- qh(12073),	-- Pounding the Iron
+						-- qh(12074),	-- An Expedient Ally
+						-- qh(12165),	-- An Intriguing Plan
+						-- qh(12170),	-- Blackriver Brawl
+						-- qh(12177),	-- Jun'ik's Coverup
+						-- qh(12178),	-- Delivery to Krenna
+						-- qh(12195),	-- The Unexpected 'Guest'
+						-- qh(12196),	-- From the Ground Up
+						-- qh(12197),	-- We Have the Power
+						-- qh(12198),	-- ... Or Maybe We Don't
+						-- qh(12201),	-- The Overseer's Shadow
+						-- qh(12202),	-- Cultivating an Image
+						-- qh(12203),	-- Loken's Orders
+						-- qh(12204),	-- In the Name of Loken
+						-- qh(12208),	-- Good Troll Hunting
+						-- qh(12213),	-- The Darkness Beneath
+						-- qh(12231),	-- The Bear God's Offspring
+						-- qh(12241),	-- Destroy the Sapling
+						-- qh(12256),	-- The Flamebinders' Secrets
+						-- qh(12257),	-- A Show of Strength
+						-- qh(12270),	-- Shred the Alliance
+						-- qh(12280),	-- Making Repairs
+						-- qh(12284),	-- Keep 'Em on Their Heels
+						-- qh(12288),	-- Overwhelmed!
+						-- qh(12315),	-- Crush Captain Brightwater!
+						-- qh(12317),	-- Keep Them at Bay
+						-- qh(12324),	-- Smoke 'Em Out
+						-- qh(12415),	-- The Horse Hollerer
+						-- qh(12422),	-- Tactical Clemency
+						-- qh(12423),	-- Mikhail's Journal
+						-- qh(12424),	-- Gorgonna
+						-- qh(12425),	-- Ruuna the Blind
+						-- qh(12427),	-- The Conquest Pit: Bear Wrestling!
+						-- qh(12428),	-- The Conquest Pit: Mad Furbolg Fighting
+						-- qh(12429),	-- The Conquest Pit: Blood and Metal
+						-- qh(12430),	-- The Conquest Pit: Death Is Likely
+						-- qh(12432),	-- Riding the Red Rocket
+						-- qh(12433),	-- Seeking Solvent -- i(37664),	-- Element 115
+						-- qh(12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
+						-- qh(12436),	-- Supplemental Income
+						-- qh(12451),	-- Onward to Camp Oneqwah
 						qh(12453,  {	-- Eyes Above
 							i(38760),
 							i(38761),
 							i(38762),
 						}),
-						-- qh( 12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
-						-- qh( 12487),	-- To Conquest Hold, But Be Careful!
-						-- qh( 12763),	-- Shifting Priorities
-						-- qh( 12791),	-- The Magical Kingdom of Dalaran
-						-- qh( 39206),	-- Warchief's Command: Grizzly Hills
+						-- qh(12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
+						-- qh(12487),	-- To Conquest Hold, But Be Careful!
+						-- qh(12763),	-- Shifting Priorities
+						-- qh(12791),	-- The Magical Kingdom of Dalaran
+						-- qh(39206),	-- Warchief's Command: Grizzly Hills
 						qh(12176,  {  -- A Minor Substitution
 							i(38735),
 							i(39034),

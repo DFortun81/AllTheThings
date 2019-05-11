@@ -52,7 +52,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 46241,	-- Aoren Sunglow
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(9420, {	-- Adventurer's Pith Helmet
 					["crs"] = {
 						4848,	-- Shadowforge Darkcaster
@@ -227,27 +227,27 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			cr( 6910, e(  467, {	-- Revelosh
 				i(132736),	-- Revelosh's Pauldrons
-				i( 9389),	-- Revelosh's Spaulders
-				i( 9388),	-- Revelosh's Armguards
-				i( 9390),	-- Revelosh's Gloves
+				i(9389),	-- Revelosh's Spaulders
+				i(9388),	-- Revelosh's Armguards
+				i(9390),	-- Revelosh's Gloves
 				i(151395),	-- Revelosh's Girdle
-				i( 9387),	-- Revelosh's Boots
+				i(9387),	-- Revelosh's Boots
 				i(7741),	-- The Shaft of Tsol
 			})),
 			cr( 7228, e(  469, {	-- Ironaya
-				i( 9408),	-- Ironshod Bludgeon
+				i(9408),	-- Ironshod Bludgeon
 				i(151398),	-- Hood of the Idle Architect
 				i(151420),	-- Vault-Watcher's Breastplate
-				i( 9409),	-- Ironaya's Bracers
-				i( 9407),	-- Stoneweaver Leggings
+				i(9409),	-- Ironaya's Bracers
+				i(9407),	-- Stoneweaver Leggings
 			})),
 			cr( 7023, e(  748, {	-- Obsidian Sentinel
 				i(151399),	-- Splintered Obsidian Shard
 			})),
 			cr( 7206, e(  470, {	-- Ancient Stone Keeper
-				i( 9411),	-- Rockshard Pauldrons
+				i(9411),	-- Rockshard Pauldrons
 				i(132733),	-- Stone Keeper's Mantle
-				i( 9410),	-- Cragfists
+				i(9410),	-- Cragfists
 				i(151401),	-- Titanic Stone Legguards
 				i(151400),	-- Sand-Scoured Treads
 			})),
@@ -270,11 +270,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(11311),	-- Emberscale Cape
 			})),
 			cr( 4854, e(  472, {	-- Grimlok
-				i( 9416),	-- Grimlock's Charge
-				i( 9415),	-- Grimlock's Tribal Vestments
+				i(9416),	-- Grimlock's Charge
+				i(9415),	-- Grimlock's Tribal Vestments
 				i(151402),	-- Grimlock's Jagged Wristguards
 				i(132735),	-- Grimlock's Chain Chaps
-				i( 9414),	-- Oilskin Leggings
+				i(9414),	-- Oilskin Leggings
 			})),
 			cr( 2748, e(  473, {	-- Archaedas
 				ach(638),	-- Uldaman
@@ -300,7 +300,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 					i(4063),	-- Imperial Leather Gloves
 					i(7475),	-- Regal Cuffs
-					i( 866),	-- Monk's Staff
+					i(866),	-- Monk's Staff
 					i(1640),	-- Monstrous War Axe
 					i(15244),	-- Razor Blade
 					i(3430),	-- Sniper Rifle

@@ -301,15 +301,15 @@ _.Zones =
 --]]						
 							}),	
 --[[					
-							qh( 34899),	-- A Choice to Make
+							qh(34899),	-- A Choice to Make
 							q(34894),	-- A Rare Bloom
 							q(37125),	-- A Rare Find
 							q(33928),	-- A Wrong of Earth and Fire
 							q(36711),	-- Abu'gar
 							q(34679),	-- Alliance Stables Tracking Event
 							q(34680),	-- Alliance Workshop Tracking Event
-							qh( 35095),	-- Along the Riverside
-							qa( 36193),	-- An Act of Kindness
+							qh(35095),	-- Along the Riverside
+							qa(36193),	-- An Act of Kindness
 							q(34943),	-- An Old Friend
 --]]					
 							qh(35171, {	-- And Justice for Thrall
@@ -321,28 +321,28 @@ _.Zones =
 --[[					
 							q(37210),	-- Aogexon's Fang
 							q(37211),	-- Bergruu's Horn
-							qa( 36274),	-- Bigger Trap, Better Rewards
-							qh( 36346),	-- Bigger Trap, Better Rewards
+							qa(36274),	-- Bigger Trap, Better Rewards
+							qh(36346),	-- Bigger Trap, Better Rewards
 							q(39299),	-- Black Marketeering
-							qh( 35143),	-- Blood of the Burning Blade
-							qa( 36998),	-- Boar Training: Cruel Ogres
-							qh( 37035),	-- Boar Training: Cruel Ogres
-							qa( 36999),	-- Boar Training: Darkwing Roc
-							qh( 37036),	-- Boar Training: Darkwing Roc
-							qa( 37002),	-- Boar Training: Ironbore
-							qh( 37039),	-- Boar Training: Ironbore
-							qa( 37000),	-- Boar Training: Moth of Wrath
-							qh( 37037),	-- Boar Training: Moth of Wrath
-							qh( 37040),	-- Boar Training: Orc Hunters
-							qa( 37003),	-- Boar Training: Orc Hunters
-							qa( 37004),	-- Boar Training: The Garn
-							qh( 37041),	-- Boar Training: The Garn
-							qa( 37001),	-- Boar Training: Thundercall
-							qh( 37038),	-- Boar Training: Thundercall
-							qh( 35922),	-- Bread and Circuses
+							qh(35143),	-- Blood of the Burning Blade
+							qa(36998),	-- Boar Training: Cruel Ogres
+							qh(37035),	-- Boar Training: Cruel Ogres
+							qa(36999),	-- Boar Training: Darkwing Roc
+							qh(37036),	-- Boar Training: Darkwing Roc
+							qa(37002),	-- Boar Training: Ironbore
+							qh(37039),	-- Boar Training: Ironbore
+							qa(37000),	-- Boar Training: Moth of Wrath
+							qh(37037),	-- Boar Training: Moth of Wrath
+							qh(37040),	-- Boar Training: Orc Hunters
+							qa(37003),	-- Boar Training: Orc Hunters
+							qa(37004),	-- Boar Training: The Garn
+							qh(37041),	-- Boar Training: The Garn
+							qa(37001),	-- Boar Training: Thundercall
+							qh(37038),	-- Boar Training: Thundercall
+							qh(35922),	-- Bread and Circuses
 							q(35973),	-- Brokyo Beatdown
 							q(37082),	-- Call of the Gladiator
-							qh( 34965),	-- Called to the Throne
+							qh(34965),	-- Called to the Throne
 --]]					
 							qh(34868, {	-- Challenge of the Masters
 								i(114700),	-- Beastrider Spaulders
@@ -351,31 +351,31 @@ _.Zones =
 								i(114702),	-- Windshaper Mantle
 							}),
 --[[					
-							qh( 37293),	-- Clearing the Mist
-							qh( 37053),	-- Clefthoof Training: Cruel Ogres
-							qa( 36988),	-- Clefthoof Training: Cruel Ogres
-							qa( 36989),	-- Clefthoof Training: Darkwing Roc
-							qh( 37054),	-- Clefthoof Training: Darkwing Roc
-							qa( 36992),	-- Clefthoof Training: Ironbore
-							qh( 37057),	-- Clefthoof Training: Ironbore
-							qh( 37055),	-- Clefthoof Training: Moth of Wrath
-							qa( 36990),	-- Clefthoof Training: Moth of Wrath
-							qh( 37058),	-- Clefthoof Training: Orc Hunters
-							qa( 36993),	-- Clefthoof Training: Orc Hunters
-							qh( 37059),	-- Clefthoof Training: The Garn
-							qa( 36994),	-- Clefthoof Training: The Garn
-							qa( 36991),	-- Clefthoof Training: Thundercall
-							qh( 37056),	-- Clefthoof Training: Thundercall
+							qh(37293),	-- Clearing the Mist
+							qh(37053),	-- Clefthoof Training: Cruel Ogres
+							qa(36988),	-- Clefthoof Training: Cruel Ogres
+							qa(36989),	-- Clefthoof Training: Darkwing Roc
+							qh(37054),	-- Clefthoof Training: Darkwing Roc
+							qa(36992),	-- Clefthoof Training: Ironbore
+							qh(37057),	-- Clefthoof Training: Ironbore
+							qh(37055),	-- Clefthoof Training: Moth of Wrath
+							qa(36990),	-- Clefthoof Training: Moth of Wrath
+							qh(37058),	-- Clefthoof Training: Orc Hunters
+							qa(36993),	-- Clefthoof Training: Orc Hunters
+							qh(37059),	-- Clefthoof Training: The Garn
+							qa(36994),	-- Clefthoof Training: The Garn
+							qa(36991),	-- Clefthoof Training: Thundercall
+							qh(37056),	-- Clefthoof Training: Thundercall
 							q(39057),	-- Command of the Seas
-							qh( 35170),	-- Consumed by Vengeance
+							qh(35170),	-- Consumed by Vengeance
 							q(39003),	-- Cooking the Books
-							qh( 35144),	-- Dark Binding
+							qh(35144),	-- Dark Binding
 							q(39004),	-- Darkness Incarnate
 							q(37221),	-- Dekorhan's Tusk
 							q(37222),	-- Direhoof's Hide
 							q(35083),	-- Disrupt the Rituals
 							q(37511),	-- Dizzy Sparkshift
-							qh( 37840),	-- Draenor's Blessing
+							qh(37840),	-- Draenor's Blessing
 --]]					
 							q(34881, {	-- Earth, Wind and Fire...and Water
 								i(119066),	-- Seal of Falling Snow
@@ -385,30 +385,30 @@ _.Zones =
 								i(118152),	--Seal of the Rising Tides
 							}),
 --[[					
-							qh( 37063),	-- Elekk Training: Cruel Ogres
-							qa( 37015),	-- Elekk Training: Cruel Ogres
-							qh( 37064),	-- Elekk Training: Darkwing Roc
-							qa( 37016),	-- Elekk Training: Darkwing Roc
-							qh( 37067),	-- Elekk Training: Ironbore
-							qa( 37019),	-- Elekk Training: Ironbore
-							qa( 37017),	-- Elekk Training: Moth of Wrath
-							qh( 37065),	-- Elekk Training: Moth of Wrath
-							qh( 37068),	-- Elekk Training: Orc Hunters
-							qa( 37020),	-- Elekk Training: Orc Hunters
-							qh( 37069),	-- Elekk Training: The Garn
-							qa( 37021),	-- Elekk Training: The Garn
-							qa( 37018),	-- Elekk Training: Thundercall
-							qh( 37066),	-- Elekk Training: Thundercall
-							qh( 34891),	-- Elemental Attunement
+							qh(37063),	-- Elekk Training: Cruel Ogres
+							qa(37015),	-- Elekk Training: Cruel Ogres
+							qh(37064),	-- Elekk Training: Darkwing Roc
+							qa(37016),	-- Elekk Training: Darkwing Roc
+							qh(37067),	-- Elekk Training: Ironbore
+							qa(37019),	-- Elekk Training: Ironbore
+							qa(37017),	-- Elekk Training: Moth of Wrath
+							qh(37065),	-- Elekk Training: Moth of Wrath
+							qh(37068),	-- Elekk Training: Orc Hunters
+							qa(37020),	-- Elekk Training: Orc Hunters
+							qh(37069),	-- Elekk Training: The Garn
+							qa(37021),	-- Elekk Training: The Garn
+							qa(37018),	-- Elekk Training: Thundercall
+							qh(37066),	-- Elekk Training: Thundercall
+							qh(34891),	-- Elemental Attunement
 							q(36221),	-- Entry Fee
 							q(35596),	-- Feline Friends Forever
 							q(37083),	-- Fight, Kill, Salute!
 							q(35147),	-- Fragments of the Past
 							q(37223),	-- Gagrog's Skull
-							qa( 35837),	-- Garrison Campaign: Deep Recon
-							qh( 35843),	-- Garrison Campaign: Deep Recon
-							qa( 35985),	-- Garrison Campaign: The Broken Precipice
-							qh( 36117),	-- Garrison Campaign: The Broken Precipice
+							qa(35837),	-- Garrison Campaign: Deep Recon
+							qh(35843),	-- Garrison Campaign: Deep Recon
+							qa(35985),	-- Garrison Campaign: The Broken Precipice
+							qh(36117),	-- Garrison Campaign: The Broken Precipice
 							q(36219),	-- Garrison Campaign: The Ring of Blood
 							q(36280),	-- Garrison Campaign: The Ring of Blood
 							q(36281),	-- Garrison Campaign: The Ring of Blood
@@ -433,30 +433,30 @@ _.Zones =
 							q(37799),	-- Gutrek's Cleaver: The Final Piece
 							q(37797),	-- Gutrek's Cleaver: The First Piece
 							q(37798),	-- Gutrek's Cleaver: The Second Piece
-							qh( 37992),	-- Gutrek's Cleaver: The Spirit Forge
-							qa( 37811),	-- Gutrek's Cleaver: The Spirit Forge
+							qh(37992),	-- Gutrek's Cleaver: The Spirit Forge
+							qa(37811),	-- Gutrek's Cleaver: The Spirit Forge
 							q(37202),	-- Hemet Nesingwary Visitor Tracking Event
 							q(35379),	-- Hemet's Happy Hunting Grounds
 							q(44572),	-- Honor the Flame
 							q(34812),	-- Horde Stables Tracking Event
 							q(34813),	-- Horde Workshop Tracking Event
 							q(36220),	-- How Tough Are You?
-							qh( 34915),	-- I Help Ya Kill Dem
-							qa( 35840),	-- Intercepting the Orders
-							qh( 35846),	-- Intercepting the Orders
+							qh(34915),	-- I Help Ya Kill Dem
+							qa(35840),	-- Intercepting the Orders
+							qh(35846),	-- Intercepting the Orders
 							q(34723),	-- Ironfist Harbor
-							qa( 37839),	-- Light Be With You
-							qh( 35098),	-- Lok-rath is Secured
-							qh( 35167),	-- Lost in Nagrand
+							qa(37839),	-- Light Be With You
+							qh(35098),	-- Lok-rath is Secured
+							qh(35167),	-- Lost in Nagrand
 							q(39697),	-- Master vs. Commander
-							qh( 34866),	-- Meet Me in the Cavern
-							qh( 34808),	-- More Lazy Peons
+							qh(34866),	-- Meet Me in the Cavern
+							qh(34808),	-- More Lazy Peons
 							q(37224),	-- Mu'gra's Head
 							q(34516),	-- My Precious!
 							q(34466),	-- Mysterious Staff
 							q(34518),	-- Nagrand Corral
-							qh( 37516),	-- News for Nixxie
-							qa( 37517),	-- News for Nixxie
+							qh(37516),	-- News for Nixxie
+							qa(37517),	-- News for Nixxie
 --]]					
 							qh(34850, {	-- Not Without My Honor
 								i(114694),	-- Beastrider Helm
@@ -465,17 +465,17 @@ _.Zones =
 								i(114692),	-- Windshaper Hood
 							}),
 --[[					
-							qh( 35157),	-- Obtaining Ogre Offensive Orders
+							qh(35157),	-- Obtaining Ogre Offensive Orders
 							q(35972),	-- Ogre Onslaught
-							qh( 36290),	-- Out of the Shadows
-							qa( 36289),	-- Out of the Shadows
+							qh(36290),	-- Out of the Shadows
+							qa(36289),	-- Out of the Shadows
 							q(36296),	-- Phylarch the Evergreen
-							qh( 35845),	-- Plans of War
-							qa( 35839),	-- Plans of War
+							qh(35845),	-- Plans of War
+							qa(35839),	-- Plans of War
 							q(36004),	-- Power Unleashed
 							q(35970),	-- Preservation Capitalization
-							qa( 35841),	-- Putting Down the Packleader
-							qh( 35842),	-- Putting Down the Packleader
+							qa(35841),	-- Putting Down the Packleader
+							qh(35842),	-- Putting Down the Packleader
 --]]					
 							qh(35158, {	-- Reglakk's Research
 								i(114917),	-- Gorian Arcanist Spellstaff
@@ -501,20 +501,20 @@ _.Zones =
 								i(114708),	-- Windshaper Wristwraps
 							}),
 --[[					
-							qa( 37007),	-- Riverbeast Training: Cruel Ogres
-							qh( 37073),	-- Riverbeast Training: Cruel Ogres
-							qa( 37008),	-- Riverbeast Training: Darkwing Roc
-							qh( 37074),	-- Riverbeast Training: Darkwing Roc
-							qa( 37011),	-- Riverbeast Training: Ironbore
-							qh( 37077),	-- Riverbeast Training: Ironbore
-							qa( 37009),	-- Riverbeast Training: Moth of Wrath
-							qh( 37075),	-- Riverbeast Training: Moth of Wrath
-							qh( 37078),	-- Riverbeast Training: Orc Hunters
-							qa( 37012),	-- Riverbeast Training: Orc Hunters
-							qa( 37013),	-- Riverbeast Training: The Garn
-							qh( 37079),	-- Riverbeast Training: The Garn
-							qh( 37076),	-- Riverbeast Training: Thundercall
-							qa( 37010),	-- Riverbeast Training: Thundercall
+							qa(37007),	-- Riverbeast Training: Cruel Ogres
+							qh(37073),	-- Riverbeast Training: Cruel Ogres
+							qa(37008),	-- Riverbeast Training: Darkwing Roc
+							qh(37074),	-- Riverbeast Training: Darkwing Roc
+							qa(37011),	-- Riverbeast Training: Ironbore
+							qh(37077),	-- Riverbeast Training: Ironbore
+							qa(37009),	-- Riverbeast Training: Moth of Wrath
+							qh(37075),	-- Riverbeast Training: Moth of Wrath
+							qh(37078),	-- Riverbeast Training: Orc Hunters
+							qa(37012),	-- Riverbeast Training: Orc Hunters
+							qa(37013),	-- Riverbeast Training: The Garn
+							qh(37079),	-- Riverbeast Training: The Garn
+							qh(37076),	-- Riverbeast Training: Thundercall
+							qa(37010),	-- Riverbeast Training: Thundercall
 --]]					
 							qh(34918, {	-- Shields Down!
 								i(114707),	-- Beastrider Belt
@@ -522,7 +522,7 @@ _.Zones =
 								i(114706),	-- Stormsteppe Belt
 								i(114705),	-- Windshaper Cord
 							}),
---							qh( 34917),	-- Shields Up!
+--							qh(34917),	-- Shields Up!
 							q(35084, {	-- Silence the Call
 								i(114889),	-- Kuhlrath's Cursed Totem
 								i(114886),	-- Twisted Elemental Focus
@@ -530,28 +530,28 @@ _.Zones =
 							}),
 --[[					
 							q(37280),	-- Snarlpaw Ledge
-							qh( 34794),	-- Taking the Fight to Nagrand
-							qa( 34674),	-- Taking the Fight to Nagrand
-							qa( 37184),	-- Taking the Fight to Nagrand
-							qh( 36952),	-- Taking the Fight to Nagrand
-							qa( 36976),	-- Talbuk Training: Cruel Ogres
-							qh( 37098),	-- Talbuk Training: Cruel Ogres
-							qh( 37099),	-- Talbuk Training: Darkwing Roc
-							qa( 36977),	-- Talbuk Training: Darkwing Roc
-							qh( 37102),	-- Talbuk Training: Ironbore
-							qa( 36980),	-- Talbuk Training: Ironbore
-							qa( 36978),	-- Talbuk Training: Moth of Wrath
-							qh( 37100),	-- Talbuk Training: Moth of Wrath
-							qh( 37103),	-- Talbuk Training: Orc Hunters
-							qa( 36981),	-- Talbuk Training: Orc Hunters
-							qa( 36982),	-- Talbuk Training: The Garn
-							qh( 37104),	-- Talbuk Training: The Garn
-							qa( 36979),	-- Talbuk Training: Thundercall
-							qh( 37101),	-- Talbuk Training: Thundercall
-							qh( 34914),	-- Target of Opportunity: Telaar
+							qh(34794),	-- Taking the Fight to Nagrand
+							qa(34674),	-- Taking the Fight to Nagrand
+							qa(37184),	-- Taking the Fight to Nagrand
+							qh(36952),	-- Taking the Fight to Nagrand
+							qa(36976),	-- Talbuk Training: Cruel Ogres
+							qh(37098),	-- Talbuk Training: Cruel Ogres
+							qh(37099),	-- Talbuk Training: Darkwing Roc
+							qa(36977),	-- Talbuk Training: Darkwing Roc
+							qh(37102),	-- Talbuk Training: Ironbore
+							qa(36980),	-- Talbuk Training: Ironbore
+							qa(36978),	-- Talbuk Training: Moth of Wrath
+							qh(37100),	-- Talbuk Training: Moth of Wrath
+							qh(37103),	-- Talbuk Training: Orc Hunters
+							qa(36981),	-- Talbuk Training: Orc Hunters
+							qa(36982),	-- Talbuk Training: The Garn
+							qh(37104),	-- Talbuk Training: The Garn
+							qa(36979),	-- Talbuk Training: Thundercall
+							qh(37101),	-- Talbuk Training: Thundercall
+							qh(34914),	-- Target of Opportunity: Telaar
 							q(37206),	-- Tarr the Terrible
-							qh( 35096),	-- Terms of Surrender
-							qh( 34849),	-- The Blade Itself
+							qh(35096),	-- Terms of Surrender
+							qh(34849),	-- The Blade Itself
 --]]					
 							qh(34916, {	-- The Blessing of Samedi
 								i(114687),	-- Beastrider Gloves
@@ -561,7 +561,7 @@ _.Zones =
 							}),
 --[[					
 							q(37286),	-- The Bloodshed Never Ends
-							qh( 35232),	-- The Call of Oshu'gun
+							qh(35232),	-- The Call of Oshu'gun
 							q(36222),	-- The Champion of Blood
 --]]					
 							qh(35317, {	-- The Dark Heart of Oshu'gun
@@ -583,15 +583,15 @@ _.Zones =
 								i(114884),	-- Gar'rok's Weathered Cloak
 							}),
 --[[					
-							qh( 34964),	-- The Farseer Awaits
+							qh(34964),	-- The Farseer Awaits
 							q(37841),	-- The Final Assault
-							qh( 34826),	-- The Friend of My Enemy
-							qa( 34747),	-- The Honor of a Blademaster
-							qh( 34770),	-- The Honor of a Blademaster
-							qh( 34795),	-- The Might of the Warsong
+							qh(34826),	-- The Friend of My Enemy
+							qa(34747),	-- The Honor of a Blademaster
+							qh(34770),	-- The Honor of a Blademaster
+							qh(34795),	-- The Might of the Warsong
 							q(39278),	-- The Missing Manifest
 							q(35087),	-- The Nether Approaches
-							qh( 35145),	-- The Pale Threat
+							qh(35145),	-- The Pale Threat
 --]]					
 							qh(35097, {	-- The Pride of Lok-rath
 								i(118142),	-- Beastrider Belt
@@ -608,36 +608,36 @@ _.Zones =
 --[[					
 							q(37835),	-- The Shadow War
 							q(35086),	-- The Void March
-							qh( 35844),	-- The Warlord's Council
-							qa( 35838),	-- The Warlord's Council
-							qh( 35271),	-- The Warsong Threat
-							qa( 35386),	-- The Warsong Threat
+							qh(35844),	-- The Warlord's Council
+							qa(35838),	-- The Warlord's Council
+							qh(35271),	-- The Warsong Threat
+							qa(35386),	-- The Warsong Threat
 							q(37981),	-- The World Famous Ring of Blood!
 							q(37225),	-- Thek'talon's Talon
-							qh( 34818),	-- They Call Him Lantresor of the Blade
+							qh(34818),	-- They Call Him Lantresor of the Blade
 							q(34514),	-- They've Got The Goods!
 							q(35085),	-- Through the Nether
 							q(37788),	-- Treasure Contract: Gutrek's Cleaver
-							qh( 35150),	-- Trouble at the Overwatch
+							qh(35150),	-- Trouble at the Overwatch
 							q(37520),	-- Vileclaw's Claw
 							q(34513),	-- WANTED: Razorpaw!
 							q(39000),	-- We Don't Need No Library Card
-							qa( 37022),	-- Wolf Training: Cruel Ogres
-							qh( 37105),	-- Wolf Training: Cruel Ogres
-							qa( 37023),	-- Wolf Training: Darkwing Roc
-							qh( 37106),	-- Wolf Training: Darkwing Roc
-							qa( 37026),	-- Wolf Training: Ironbore
-							qh( 37109),	-- Wolf Training: Ironbore
-							qh( 37107),	-- Wolf Training: Moth of Wrath
-							qa( 37024),	-- Wolf Training: Moth of Wrath
-							qh( 37110),	-- Wolf Training: Orc Hunters
-							qa( 37027),	-- Wolf Training: Orc Hunters
-							qh( 37111),	-- Wolf Training: The Garn
-							qa( 37028),	-- Wolf Training: The Garn
-							qh( 37108),	-- Wolf Training: Thundercall
-							qa( 37025),	-- Wolf Training: Thundercall
-							qa( 36914),	-- Wrangling a Wolf
-							qh( 36950),	-- Wrangling a Wolf
+							qa(37022),	-- Wolf Training: Cruel Ogres
+							qh(37105),	-- Wolf Training: Cruel Ogres
+							qa(37023),	-- Wolf Training: Darkwing Roc
+							qh(37106),	-- Wolf Training: Darkwing Roc
+							qa(37026),	-- Wolf Training: Ironbore
+							qh(37109),	-- Wolf Training: Ironbore
+							qh(37107),	-- Wolf Training: Moth of Wrath
+							qa(37024),	-- Wolf Training: Moth of Wrath
+							qh(37110),	-- Wolf Training: Orc Hunters
+							qa(37027),	-- Wolf Training: Orc Hunters
+							qh(37111),	-- Wolf Training: The Garn
+							qa(37028),	-- Wolf Training: The Garn
+							qh(37108),	-- Wolf Training: Thundercall
+							qa(37025),	-- Wolf Training: Thundercall
+							qa(36914),	-- Wrangling a Wolf
+							qh(36950),	-- Wrangling a Wolf
 							q(37226),	-- Xelganak's Stinger
 --]]					
 						},

@@ -112,7 +112,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					})),
 				}),
-				n(  0, {	-- Zone Drop (Legacy)
+				n(0, {	-- Zone Drop (Legacy)
 					un(43, n(11519, {	-- Bazzalan
 						un(2, i(68195)),	-- Bazzalan's Blade
 					})),

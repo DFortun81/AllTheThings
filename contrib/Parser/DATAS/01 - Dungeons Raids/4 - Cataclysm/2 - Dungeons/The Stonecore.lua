@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(55822, {	-- Heavy Geode Mace
 						["crs"] = {
 							42810,	-- Crystalspawn Giant

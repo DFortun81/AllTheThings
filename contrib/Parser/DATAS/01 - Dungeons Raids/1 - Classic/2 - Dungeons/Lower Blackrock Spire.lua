@@ -15,7 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(65981),	-- War Master's Pauldrons
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(17683, {	-- Book: Gift of the Wild Rank 2
 				--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 				}),

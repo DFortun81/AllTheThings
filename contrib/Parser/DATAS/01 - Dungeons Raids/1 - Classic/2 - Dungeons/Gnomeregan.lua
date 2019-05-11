@@ -135,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				{  	-- Red Punch Card
 					["itemID"] = 9281,      	-- Red Punch Card
 					["requireSkill"] = 202,  	-- Engineering
@@ -337,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(132558),	-- Bot Operator's Treads
 				i(9450),	-- Gnomebot Operating Boots
 			})),
-			n( 6228, {			-- Dark Iron Ambassador
+			n(6228, {			-- Dark Iron Ambassador
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
 					i(9456),	-- Glass Shooter

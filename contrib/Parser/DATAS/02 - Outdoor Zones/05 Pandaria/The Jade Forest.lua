@@ -2045,14 +2045,14 @@ _.Zones =
 					q(30140)	-- The Rider's Journey (Consolidated with 30319)
 
 					q(32027),	-- Candy Bucket
-					qa( 32049),	-- Candy Bucket
+					qa(32049),	-- Candy Bucket
 					q(32029),	-- Candy Bucket
-					qa( 32033),	-- Candy Bucket
+					qa(32033),	-- Candy Bucket
 					q(32021),	-- Candy Bucket
 					q(32032),	-- Candy Bucket
 					q(32031),	-- Candy Bucket
-					qh( 32050),	-- Candy Bucket
-					qh( 32028),	-- Candy Bucket
+					qh(32050),	-- Candy Bucket
+					qh(32028),	-- Candy Bucket
 					q(32497),	-- Honor the Flame
 					q(32498),	-- Honor the Flame
 --]]

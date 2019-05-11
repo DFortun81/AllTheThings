@@ -272,7 +272,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32307),	-- Design: Veiled Shadowsong Amethyst
 				},
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				["crs"] = {
 					17898,	-- Abomination
 					17905,	-- Banshee

@@ -57,7 +57,7 @@ _.Zones =
 						["sourceQuests"] = { 26037 },	-- Trelane's Defenses
 					}),
 					o(  2702, {	-- Stone of Inner Binding
-						q( 26042, {	-- Breaking the Keystone
+						q(26042, {	-- Breaking the Keystone
 							["sourceQuests"] = { 26041 },	-- Stones of Binding
 						}),
 						qa(26346, {	-- Myzrael's Tale
@@ -85,7 +85,7 @@ _.Zones =
 					qh(26429, {	-- Crush the Witherbark
 						["qg"] = 2771,	-- Drum Fel
 					}),
-					q( 26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
+					q(26628, {	-- Death From Below (awarded "Faldir's Cover" criteria)
 						["groups"] = {
 							i(59212),	-- O'Breen's Dress Robes
 							i(59213),	-- Faldir's Leggings
@@ -97,7 +97,7 @@ _.Zones =
 						["qg"] = 2610,	-- Shakes O'Breen
 						["sourceQuests"] = { 26052 },	-- Speak to Shakes
 					}),
-					q( 26055, {	-- Drowned Sorrows
+					q(26055, {	-- Drowned Sorrows
 						["groups"] = {
 							i(59205),	-- Folly's Spar
 							i(59206),	-- Steelgut Vest
@@ -121,7 +121,7 @@ _.Zones =
 						["qg"] = 2712,	-- Quae
 						["sourceQuests"] = { 26116 },	-- Kinelory Strikes
 					}),
-					q( 26050, {	-- Goggle Boggle
+					q(26050, {	-- Goggle Boggle
 						["qg"] = 2768,	-- Professor Phizzlethorpe
 						["sourceQuests"] = { 26083 },	-- Hello Lolo
 					}),
@@ -185,7 +185,7 @@ _.Zones =
 						["qg"] = 41944,	-- Galen Trollbane
 						["sourceQuests"] = { 26030 },	-- Sigil of Strom
 					}),
-					q( 26052, {	-- Speak to Shakes
+					q(26052, {	-- Speak to Shakes
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26051 },	-- Sunken Treasure
 					}),
@@ -216,7 +216,7 @@ _.Zones =
 							},
 						},
 					},
-					q( 26051, {	-- Sunken Treasure
+					q(26051, {	-- Sunken Treasure
 						["groups"] = {
 							i(59199),	-- Bottom Waders
 							i(59200),	-- Decalcified Elven Spear
@@ -300,7 +300,7 @@ _.Zones =
 						["qg"] = 2789,	-- Skuerto
 						["sourceQuests"] = { 26036 },	-- Wand Over Fist
 					}),
-					qh( 6622, {	-- Triage
+					qh(6622, {	-- Triage
 						["qg"] = 12920,	--	Doctor Gregory Victor
 						["description"] = "This quest requires a skill of 225 in First Aid.",
 						["requireSkill"] = 356,	-- First Aid
@@ -1127,7 +1127,7 @@ _.Zones =
 								un(2, i(4550)),	-- Coldwater Ring
 								un(2, i(4549)),	-- Seafire Band
 							})),
-							un(40, q(  662, {	-- Deep Sea Salvage
+							un(40, q(662, {	-- Deep Sea Salvage
 								un(2, i(4511)),	-- Black Water Hammer
 							})),
 							un(40, q(664, {		-- Drowned Sorrows
@@ -1137,18 +1137,18 @@ _.Zones =
 								un(2, i(4545)),	-- Radiant Silver Bracers
 								un(2, i(4543)),	-- White Drakeskin Cap
 							})),
-							un(40, qa( 661, {	-- Hints of a New Plague?
+							un(40, qa(661, {	-- Hints of a New Plague?
 								un(2, i(15455)),	-- Dustfall Robes
 								un(2, i(15456)),	-- Lightstep Leggings
 							})),
-							un(40, qa( 697, {	-- Malin's Request
+							un(40, qa(697, {	-- Malin's Request
 								un(2, i(4975)),	-- Vigilant Buckler
 								un(2, i(15104)),	-- Wingborne Boots
 							})),
 							un(40, qa(682, {	-- Stromgarde Badges
 								un(2, i(4741)),	-- Stromgarde Cavalry Leggings
 							})),
-							un(40, q(  666, {	-- Sunken Treasure
+							un(40, q(666, {	-- Sunken Treasure
 								un(2, i(4547)),	-- Gnomish Zapper
 								un(2, i(4548)),	-- Servomechanic Sledgehammer
 							})),
@@ -1160,17 +1160,17 @@ _.Zones =
 								un(2, i(4508)),	-- Blood-Tinged Armor
 								un(2, i(4507)),	-- Pit Fighter's Shield
 							})),
-							un(40, qa( 684, {	-- Wanted! Marez Cowl
+							un(40, qa(684, {	-- Wanted! Marez Cowl
 								un(2, i(4744)),	-- Arcane Runed Bracers
 							})),
-							un(40, qa( 685, {	-- Wanted! Otto and Falconcrest
+							un(40, qa(685, {	-- Wanted! Otto and Falconcrest
 								un(2, i(5247)),	-- Rod of Sorrow
 								un(2, i(4745)),	-- War Rider Bracers
 							})),
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(7, i(3341,  {	-- Gauntlets of Ogre Strength
 								["crs"] = {
 									2564,	-- Bounderfist Enforcer

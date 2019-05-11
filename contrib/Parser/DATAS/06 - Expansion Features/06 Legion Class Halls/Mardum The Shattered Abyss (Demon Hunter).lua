@@ -275,7 +275,7 @@ _.ExpansionFeatures =
 					q(41863),	-- Vengeance Will Be Ours
 					q(44258),	-- Violet Hold
 					q(44259),	-- Violet Hold
-					qa( 43557),	-- Violet Hold
+					qa(43557),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					q(45385),	-- We Must be Prepared!
 					q(45179),	-- Win the Crowd

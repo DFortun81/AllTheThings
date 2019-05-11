@@ -754,11 +754,11 @@ _.Zones =
 						["qg"] = 115546,	-- Lunelli
 						["requireSkill"] = 164,	-- Blacksmithing
 					}),
-					q( 10009, {	-- Crackin' Some Skulls
+					q(10009, {	-- Crackin' Some Skulls
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
 					}),
-					q( 47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
+					q(47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
 						["qg"] = 123252,	-- Vormu
 						["isWeekly"] = true,
 						["description"] = "This quest is only available during BC Timewalking.",
@@ -772,7 +772,7 @@ _.Zones =
 						["qg"] = 115546,	-- Lunelli
 						["requireSkill"] = 164,	-- Blacksmithing
 					}),
-					q( 10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
+					q(10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
 						["coord"] = { 54.2, 44.4 },
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
@@ -789,11 +789,11 @@ _.Zones =
 							i(31460),	-- Sha'tari Vindicator's Waistguard
 						},
 					}),
-					q( 10010, {	-- It's Just That Easy?
+					q(10010, {	-- It's Just That Easy?
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 					}),
-					q( 11380, {	-- Manalicious
+					q(11380, {	-- Manalicious
 						["isDaily"] = true,
 						["g"] = {
 							i(33844, {	-- Barrel of Fish
@@ -813,7 +813,7 @@ _.Zones =
 							}),
 						},
 					}),
-					q( 10037, {	-- Rather Be Fishin'
+					q(10037, {	-- Rather Be Fishin'
 						["g"] = {
 							i(25978)	-- Seth's Graphite Fishing Pole
 						},
@@ -879,20 +879,20 @@ _.Zones =
 							}),
 						},
 					}),
-					q( 13082, {	-- The Boon of A'dal
+					q(13082, {	-- The Boon of A'dal
 						["qg"] = 18481,	-- A'dal
 						["sourceQuests"] = { 13081 },	-- The Will of the Naaru *UNTESTED*
 					}),
-					q( 10550, {	-- The Bundle of Bloodthistle
+					q(10550, {	-- The Bundle of Bloodthistle
 						["qg"] = 21411,	-- Tobias the Filth Gorger
 						["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
 					}),
 					
-					q( 10251, {	-- The Master's Grand Design?
+					q(10251, {	-- The Master's Grand Design?
 						["qg"] = 19720,	-- "Dirty" Larry
 						["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
 					}),
-					q( 10883, {	-- The Tempest Key
+					q(10883, {	-- The Tempest Key
 						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 					}),
@@ -979,7 +979,7 @@ _.Zones =
 						["qg"] = 24370,	-- Nether-Stalker Mah'duun
 						["isDaily"] = true,
 					}),
-					q( 10231, {	-- What Book? I Don't See Any Book.
+					q(10231, {	-- What Book? I Don't See Any Book.
 						["qg"] = 19715,	-- Ezekiel
 						["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*
 					}),

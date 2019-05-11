@@ -37,11 +37,11 @@ _.ExpansionFeatures =
 					q(41900, {	-- A Promise of Earth
 						i(139705),	-- Farseer's Wristwraps
 					}),
-					-- q( 39746),	-- A Ring Unbroken
-					-- q( 40224),	-- The Hammer in the Deep
-					-- q( 41335),	-- The Elements Call...
-					-- q( 42931),	-- Where the Hammer Falls
-					-- q( 42932),	-- What the Stonemother Knows					  ------ QUESTS PRIOR TO THIS LINE MUST BE DONE FIRST AS IT UNLOCKS REST
+					-- q(39746),	-- A Ring Unbroken
+					-- q(40224),	-- The Hammer in the Deep
+					-- q(41335),	-- The Elements Call...
+					-- q(42931),	-- Where the Hammer Falls
+					-- q(42932),	-- What the Stonemother Knows					  ------ QUESTS PRIOR TO THIS LINE MUST BE DONE FIRST AS IT UNLOCKS REST
 					-- q(41747),	-- Champion: Avalanchion
 					-- q(41775),	-- The Great Stonemother
 					-- q(41900),	-- A Promise of Earth

@@ -28,7 +28,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 5767,	-- Nalpak
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(48114, {	-- Deviate Hatchling (PET!)
 					["crs"] = {
 						3637,	-- Deviate Guardian
@@ -49,27 +49,27 @@ _.Instances = { tier(1, {	-- Classic
 			cr(3671, e(474, { 	-- Lady Anacondra
 				i(151427), 	-- Snake-Charmer's Casque
 				i(132737), 	-- Cavern Slitherer Pauldrons
-				i( 5404), 	-- Serpent's Shoulders
+				i(5404), 	-- Serpent's Shoulders
 				i(151426),	-- Lady Anacondra's Satin Cuffs
 				i(10412), 	-- Belt of the Fang
 				i(132740), 	-- Slither-Scale Cord
-				i( 6446),	-- Snakeskin Bag
+				i(6446),	-- Snakeskin Bag
 			})),
 			cr(3653, e(477, { 	-- Kresh
 				i(13245), 	-- Kresh's Back
-				i( 6447), 	-- Worn Turtle Shell Shield
+				i(6447), 	-- Worn Turtle Shell Shield
 				i(151430),	-- Hematite Tortoise Pendant
 			})),
 			cr(3670, e(476, { 	-- Lord Pythas
-				i( 6472), 	-- Stinging Viper
+				i(6472), 	-- Stinging Viper
 				i(151429),	-- Lord Pythas' Pauldrons
-				i( 6473), 	-- Armor of the Fang
+				i(6473), 	-- Armor of the Fang
 				i(132739), 	-- Slither-Scale Hauberk
 				i(151428),	-- Slumbersilk Waistcord
 			})),
 			cr(3669, e(475, { 	-- Lord Cobrahn
-				i( 6465), 	-- Robe of the Moccasin
-				i( 6460), 	-- Cobrahn's Grasp
+				i(6465), 	-- Robe of the Moccasin
+				i(6460), 	-- Cobrahn's Grasp
 				i(10410), 	-- Leggings of the Fang
 				i(132742), 	-- Slither-Scale Britches
 			})),
@@ -77,7 +77,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(6448), 	-- Tail Spike
 				i(6449), 	-- Glowing Lizardscale Cloak
 			})),
-			n( 5912, { 			-- Deviate Faerie Dragon
+			n(5912, { 			-- Deviate Faerie Dragon
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
 					dr(46, i(5243)), 	-- Firebelcher
@@ -85,10 +85,10 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			cr(3673, e(479, { 	-- Lord Serpentis
-				i( 6469), 	-- Venomstrike
-				i( 5970), 	-- Serpent Gloves
+				i(6469), 	-- Venomstrike
+				i(5970), 	-- Serpent Gloves
 				i(10411), 	-- Footpads of the Fang
-				i( 6459), 	-- Savage Trodders
+				i(6459), 	-- Savage Trodders
 				i(132741), 	-- Slither-Scale Boots
 			})),
 			cr(5775, e(480, { 	-- Verdan the Everliving
@@ -105,7 +105,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, {	-- Legacy
 				n(-17, {	-- Quests (Legacy)
 					un(40, q(1487, {	-- Deviate Eradication
-						un( 8, i(6476)),	-- Pattern: Deviate Scale Belt
+						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
 						un(2, i(8071)),	-- Sizzle Stick
 						un(2, i(6481)),	-- Dagmire Gauntlets
 					})),

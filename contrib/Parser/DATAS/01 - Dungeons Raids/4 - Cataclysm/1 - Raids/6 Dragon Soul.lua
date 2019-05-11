@@ -504,7 +504,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						},
 					},
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						["crs"] = {
 							57333,	-- Acidic Globule
 							57160,	-- Ancient Water Lord

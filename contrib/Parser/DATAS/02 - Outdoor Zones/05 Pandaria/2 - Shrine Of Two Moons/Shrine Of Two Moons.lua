@@ -26,8 +26,8 @@ _.Zones =
 					}),
 --]]
 --[[
-					qh( 32242),	-- Buried Secrets
-					qh( 32022),	-- Candy Bucket
+					qh(32242),	-- Buried Secrets
+					qh(32022),	-- Candy Bucket
 					q(31279),	-- Everything I Know About Cooking
 --]]					
 					qh(32901, {	-- Heroic Deeds

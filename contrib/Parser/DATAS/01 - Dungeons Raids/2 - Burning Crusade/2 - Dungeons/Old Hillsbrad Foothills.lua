@@ -105,7 +105,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n( 28132, {	-- Don Carlos
+					n(28132, {	-- Don Carlos
 						["description"] = "This is a neutral mob that wanders the road.",
 						["groups"] = {	
 							i(134019),	-- Don Carlos' Famous Hat (TOY!)

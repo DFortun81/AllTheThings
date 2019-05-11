@@ -750,7 +750,7 @@ _.Zones =
 								un(2, i(7107)),	-- Belt of the Stars
 								un(2, i(7106)),	-- Zodiac Gloves
 							})),
-							un(40, qa( 55, {	-- Morbent Fel
+							un(40, qa(55, {	-- Morbent Fel
 								un(2, i(2954)),	-- Night Watch Pantaloons
 								un(2, i(1282)),	-- Sparkmetal Coif
 								un(2, i(7344)),	-- Torch of Holy Flame
@@ -760,7 +760,7 @@ _.Zones =
 								un(2, i(6832)),	-- Cloak of Blight
 								un(2, i(11265)),	-- Cragwood Maul
 							})),
-							un(40, qa( 98, {	-- The Legend of Stalvan
+							un(40, qa(98, {	-- The Legend of Stalvan
 								un(2, i(2044)),	-- Crescent of Forlorn Spirits
 								un(2, i(2043)),	-- Ring of Forlorn Spirits
 							})),
@@ -854,7 +854,7 @@ _.Zones =
 								un(7, i(899)),	-- Venom Web Fang
 							}),
 						}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(7, i(920, {	-- Wicked Spiked Mace
 								["description"] = "This dropped off of Defias mobs in Duskwood.",
 							})),

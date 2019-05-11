@@ -657,7 +657,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n( -2, {	-- Vendors
+						n(-2, {	-- Vendors
 							un(43, n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 								un(2, i(20757)),	-- Formula: Brilliant Mana Oil
 								un(2, i(20756)),	-- Formula: Brilliant Wizard Oil
@@ -743,7 +743,7 @@ _.Zones =
 					qg(42814, qh(26404)),	-- Above My Pay Grade
 					qg(7406, q(3721)),	-- An OOX of Your Own
 --]]
-					qg(17094, qh( 9457, {	-- An Unusual Patron
+					qg(17094, qh(9457, {	-- An Unusual Patron
 						i(61093),	-- Junglewalker Boots
 						i(61092),	-- Monnions of Raw Power
 						i(61091),	-- Blade of Exotic Magic
@@ -787,7 +787,7 @@ _.Zones =
 					qg(42790, qh(26334)),	-- Bloodlord Mandokir
 					qg(42790, qa(26748)),	-- Bloodlord Mandokir
 					qg(43886, qa(26742)),	-- Bloodscalp Insight
-					qg(17094, qh( 9436)),	-- Bloodscalp Insight
+					qg(17094, qh(9436)),	-- Bloodscalp Insight
 					qg(52371, qh(29232)),	-- Bury Me With Me Boots...
 					qg(52371, qa(29121)),	-- Bury Me With Me Boots...
 					qg(739, qa(26733)),	-- Control Sample
@@ -1522,7 +1522,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

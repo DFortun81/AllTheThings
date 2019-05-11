@@ -494,7 +494,7 @@ _.Zones =
 								}),
 							}),
 						}),
-						n(  -168, {	-- Other Quests
+						n(-168, {	-- Other Quests
 							q(9778, {	-- Warden Hamoot
 								["qg"] = 17841,	-- Ysiel Windsinger
 								["coord"] = { 78.4, 62.0, 102 },

@@ -69,13 +69,13 @@ _.Zones =
 						["qg"] = 48545,	-- High Warlord Cromush
 						["sourceQuests"] = { 28400 },	-- Heroes of the Horde!
 					}),
-					qpvp(qa( 7081, {	-- Alterac Valley Graveyards
+					qpvp(qa(7081, {	-- Alterac Valley Graveyards
 						["qg"] = 13777,	-- Sergeant Durgen Stormpike
 					})),
 					qh(28329, {	-- Angry Scrubbing Bubbles
 						["qg"] = 48319,	-- Angry Blight Slime
 					}),
-					q( 28733, {	-- Basic Botany
+					q(28733, {	-- Basic Botany
 						["qg"] = 49687,	-- Brazie the Botanist
 					}),
 					qh(28556, {	-- Breaking the Hand
@@ -184,7 +184,7 @@ _.Zones =
 						["qg"] = 49201,	-- Nils Beerot
 						["sourceQuests"] = { 28620 },	-- Eastpoint Tower
 					}),
-					q( 28617, {	-- Flower Power
+					q(28617, {	-- Flower Power
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28733 },	-- Basic Botany
 					}),
@@ -206,7 +206,7 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["sourceQuests"] = { 40270 },	-- The Path of Atonement
 					})),
-					q( 28744, {	-- Ghouls Hate My Grains
+					q(28744, {	-- Ghouls Hate My Grains
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28617 },	-- Flower Power
 					}),
@@ -465,7 +465,7 @@ _.Zones =
 						["qg"] = 49240,	-- Captain Ironhill's Ghost
 						["sourceQuests"] = { 28635 },	-- A Haunting in Hillsbrad
 					}),
-					q( 28747, {	-- Someone Setup the Pumpkin Bomb
+					q(28747, {	-- Someone Setup the Pumpkin Bomb
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 					}),
@@ -500,7 +500,7 @@ _.Zones =
 						["qg"] = 13817,	-- Voggah Deathgrip
 						["lvl"] = 51,
 					})),
-					q( 28751, {	-- Tending the Garden
+					q(28751, {	-- Tending the Garden
 						["qg"] = 49687,	-- Brazie the Botanist
 						["sourceQuests"] = { 28748 },	-- Lawn of the Dead
 						["isDaily"] = true,
@@ -1493,7 +1493,7 @@ _.Zones =
 								un(2, i(3758)),	-- Crusader Belt
 								un(2, i(3759)),	-- Insulated Sage Gloves
 							})),
-							un(40, q( 508, {	-- Taretha's Gift
+							un(40, q(508, {	-- Taretha's Gift
 								un(2, i(3765)),	-- Brigand's Pauldrons
 								un(2, i(3764)),	-- Mantis Boots
 							})),

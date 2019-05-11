@@ -828,25 +828,25 @@ _.Zones =
 					q(45571),	-- A Bit of Espionage
 					qg(119531, q(44720)),	-- A Call to Action
 					q(45343),	-- A Curious Contagion
-					qa( 46268),	-- A Found Memento
+					qa(46268),	-- A Found Memento
 					q(46208),	-- A Godly Invitation
 					q(46336),	-- A Golden Ticket
 					q(43407),	-- A Hero's Weapon
 					q(41920),	-- A Matter of Finesse
-					qa( 47202),	-- A Personal Message
+					qa(47202),	-- A Personal Message
 					q(42708),	-- A Personal Request
-					qa( 47097),	-- A Walk to Remember
+					qa(47097),	-- A Walk to Remember
 					q(44401),	-- A Weapon For Every Occasion
 					q(46832),	-- Aalgen Point
 					q(45342),	-- Administering Aid
 					q(39761),	-- Advanced Runecarving
 					q(43573),	-- Advancing the War Effort
-					qa( 47041),	-- Affliction: The Twisted Twin
+					qa(47041),	-- Affliction: The Twisted Twin
 					q(43928),	-- Aggregates of Anguish
 					q(45449),	-- Alchemist Korlya
 					q(46244),	-- Altar of the Aegis
 					q(46719),	-- Amal'thazad's Message
-					qa( 46065),	-- An Impossible Foe
+					qa(46065),	-- An Impossible Foe
 					q(45180),	-- An Island of War
 					q(46030),	-- An Urgent Warning
 					q(45021),	-- Answers Unknown
@@ -854,8 +854,8 @@ _.Zones =
 					q(44217),	-- Armor Fit For A Deathlord
 					q(46700),	-- Armor of the Ancients
 					q(46734),	-- Assault on Broken Shore
-					qa( 45844),	-- Avocation of Antonidas
-					qa( 47037),	-- Balance: The Twisted Twin
+					qa(45844),	-- Avocation of Antonidas
+					qa(47037),	-- Balance: The Twisted Twin
 					q(45545),	-- Barrel Toss
 					q(46245),	-- Begin Construction
 					q(42678),	-- Black Rook Hold: Into Black Rook Hold
@@ -890,13 +890,13 @@ _.Zones =
 					q(46249),	-- Championing Our Cause
 					q(47137),	-- Champions of Legionfall
 					q(45816),	-- Choose Order Hall to Support
-					qh( 40403),	-- Clandestine Operation
-					qa( 40400),	-- Clandestine Operation
-					qh( 40402),	-- Clandestine Operation
+					qh(40403),	-- Clandestine Operation
+					qa(40400),	-- Clandestine Operation
+					qh(40402),	-- Clandestine Operation
 					q(41921),	-- Closing In
 					q(44925),	-- Closing the Eye
 					q(45769),	-- Conflagration
-					qa( 46274),	-- Consoling the King
+					qa(46274),	-- Consoling the King
 					q(45350),	-- Countering the Contagion
 					q(44275),	-- Court of Stars
 					q(45347),	-- Crafting a Cure
@@ -929,7 +929,7 @@ _.Zones =
 					q(42911),	-- Drowned Mana
 					q(45829),	-- Druid
 					q(45767),	-- Elemental Cores
-					qa( 46035),	-- End of the Risen Threat
+					qa(46035),	-- End of the Risen Threat
 					q(45026),	-- Expending Fel Energy
 					q(44271),	-- Eye of Azshara
 					q(44270),	-- Eye of Azshara
@@ -939,12 +939,12 @@ _.Zones =
 					q(47040),	-- Fate Sealed
 					q(45574),	-- Fel Ingredients
 					q(45555),	-- Felbound Beasts
-					qa( 45627),	-- Feltotem's Fall
+					qa(45627),	-- Feltotem's Fall
 					q(47118),	-- Free The Tormented
 					q(47119),	-- Free The Tormented
 					q(47121),	-- Free The Tormented
 					q(47120),	-- Free The Tormented
-					qa( 45182),	-- Frost: The Twisted Twin
+					qa(45182),	-- Frost: The Twisted Twin
 					q(46720),	-- Frozen Memories
 					q(46789),	-- Further Advancement
 					q(47045),	-- Further Progress
@@ -967,23 +967,23 @@ _.Zones =
 					q(46688),	-- Leather of the Ancients
 					q(46286),	-- Legionfall Supplies
 					q(46333),	-- Livin' on the Ledge
-					qa( 47112),	-- Lost Souls
+					qa(47112),	-- Lost Souls
 					q(38804),	-- Lyrelle
 					q(45817),	-- Mage
 					q(46694),	-- Mail of the Ancients
 					q(45240),	-- Making Preparations
 					q(47139),	-- Mark of the Sentinax
-					qa( 47039),	-- Marksmanship: The Twisted Twin
+					qa(47039),	-- Marksmanship: The Twisted Twin
 					q(46353),	-- Master Who?
 					q(44266),	-- Maw of Souls
 					q(44267),	-- Maw of Souls
 					q(43253),	-- Maw of Souls: Ancient Vrykul Legends
 					q(43574),	-- Maw of Souls: Maul of the Dead
-					qa( 46260),	-- Meld Into the Shadows
+					qa(46260),	-- Meld Into the Shadows
 					q(45185),	-- Message from the Shadows
 					q(45345),	-- Mischievous Sprites
-					qh( 45632),	-- Missing in Action: Eitrigg
-					qa( 45648),	-- Missing in Action: Lord Darius Crowley
+					qh(45632),	-- Missing in Action: Eitrigg
+					qa(45648),	-- Missing in Action: Lord Darius Crowley
 					q(45827),	-- Monk
 					q(46676),	-- Nature's Touch
 					q(44264),	-- Neltharion's Lair
@@ -1023,8 +1023,8 @@ _.Zones =
 					q(45331),	-- Return to Acherus
 					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(38803),	-- Rin'thissa
-					qh( 45576),	-- Rise Up
-					qa( 45573),	-- Rise Up
+					qh(45576),	-- Rise Up
+					qa(45573),	-- Rise Up
 					q(43264),	-- Rise, Champions
 					q(45815),	-- Rogue
 					q(45192),	-- Runes of Rending
@@ -1037,7 +1037,7 @@ _.Zones =
 					q(46235),	-- Secured Surroundings
 					q(47067),	-- Seeking Lost Knowledge
 					q(46248),	-- Self-Fulfilling Prophecy
-					qa( 47042),	-- Shadow: The Twisted Twin
+					qa(47042),	-- Shadow: The Twisted Twin
 					q(45830),	-- Shaman
 					q(45346),	-- Shambling Specimens
 					q(46251),	-- Shard Times
@@ -1051,7 +1051,7 @@ _.Zones =
 					q(46145),	-- Sterile Surroundings
 					q(45459),	-- Storming the Legion
 					q(46246),	-- Strike Them Down
-					qa( 46272),	-- Summons to the Keep
+					qa(46272),	-- Summons to the Keep
 					q(46250),	-- Take Out the Head...
 					q(45554),	-- Taking Control
 					q(46317),	-- Talon's Call
@@ -1082,9 +1082,9 @@ _.Zones =
 					q(45526),	-- The God-Queen's Fury
 					q(46697),	-- The Godfighter
 					q(46699),	-- The Hellslayer
-					qa( 45416),	-- The Highlord's Return
+					qa(45416),	-- The Highlord's Return
 					q(42537),	-- The King Rises
-					qa( 46282),	-- The King's Path
+					qa(46282),	-- The King's Path
 					q(46684),	-- The Legend of the Elderhide
 					q(46696),	-- The Legend of the Four Hammers
 					q(46678),	-- The Legend of the Threads
@@ -1114,10 +1114,10 @@ _.Zones =
 					q(46686),	-- The Wisp and the Sea
 					q(46685),	-- The Wisp and the Shadow
 					q(42824),	-- The Zealot Rises
-					qa( 45628),	-- This Time, Leave a Trail
-					qh( 45629),	-- This Time, Leave a Trail
+					qa(45628),	-- This Time, Leave a Trail
+					qh(45629),	-- This Time, Leave a Trail
 					q(42684),	-- Throwing SI:7 Off the Trail
-					qa( 46127),	-- Thwarting the Twins
+					qa(46127),	-- Thwarting the Twins
 					q(45172),	-- To Battle!
 					q(45027),	-- To the Broken Shore
 					q(45349),	-- To the Broken Shore
@@ -1140,7 +1140,7 @@ _.Zones =
 					q(45385),	-- We Must be Prepared!
 					q(45103),	-- We Ride!
 					q(46511),	-- We're Treasure Hunters
-					qa( 45190),	-- Where it's Thinnest
+					qa(45190),	-- Where it's Thinnest
 					q(45179),	-- Win the Crowd
 					q(46689),	-- Wisp-Touched Elderhide
 					q(46069),	-- Worthy of the Title

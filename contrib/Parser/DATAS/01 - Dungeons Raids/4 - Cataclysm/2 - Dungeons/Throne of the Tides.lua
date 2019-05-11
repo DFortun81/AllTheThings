@@ -29,7 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(65658),	-- Stonespeaker's Belt
 					}),
 				}),
-				n(  0, {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(55260),	-- Alpheus Legguards
 					i(55262, {	-- Barnacle Pendant
 						["crs"] = {

@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 					q(43100),	-- Finding the Scepter
 					q(46784),	-- Further Advancement
 					q(46150),	-- Furthering Knowledge
-					qh( 44254),	-- Gazing Into Oblivion
+					qh(44254),	-- Gazing Into Oblivion
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(42603),	-- Information at Any Cost
@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 					}),
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
-					qa( 46241),	-- The Minions of Hel'nurath
+					qa(46241),	-- The Minions of Hel'nurath
 					q(40729),	-- The New Blood
 					q(40824),	-- The Path of the Dreadscar
 					q(41156),	-- The Power Possessed

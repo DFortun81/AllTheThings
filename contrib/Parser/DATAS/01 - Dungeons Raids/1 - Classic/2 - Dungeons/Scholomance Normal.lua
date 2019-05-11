@@ -126,7 +126,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(13982)), 	-- Warblade of Caer Darrow
 						})),
 					}),
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						un(7, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
 						n(10495, { 	-- Diseased Ghoul
 							un(7, i(16714)),	-- Wildheart Bracers
