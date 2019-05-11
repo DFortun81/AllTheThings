@@ -14,7 +14,7 @@ _.Zones =
 							i(44693),	-- Wound Dressing
 						},
 					}),
-					{	-- Apothecary Lee <Legion Gladiator>
+					{	-- Apothecary Lee <Legion Gladiator> [HORDE]
 						["npcID"] = 119486,		-- Apothecary Lee <Legion Gladiator>
 						["races"] = HORDE_ONLY,
 						["itemID"] = 137642,	-- Mark of Honor
@@ -939,7 +939,7 @@ _.Zones =
 											},
 										},
 									},
-																		{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
+									{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 150256,	-- Ensemble: Fierce Combatant's Felweave Armor
 										["classes"] = {
 											9,	-- Warlock
@@ -2210,6 +2210,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 149487,	-- Ensemble: Fierce Gladiator's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Felweave Cowl
 												["itemID"] = 148128,	-- Fierce Gladiator's Felweave Cowl
@@ -2277,6 +2280,9 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 149491,	-- Ensemble: Fierce Gladiator's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
 										["g"] = {
 											{	-- Fierce Gladiator's Leather Helm
 												["itemID"] = 148080,	-- Fierce Gladiator's Leather Helm
@@ -3612,149 +3618,439 @@ _.Zones =
 						i(138011),	-- Pattern: Silkweave Satchel
 						i(137959),	-- Pattern: Silkweave Slippers [Rank 2]
 					}),
-					na(106930, {	-- Lieutenant Surtees <Legion Gladiator>
+					{	-- Lieutenant Surtees <Legion Gladiator> [ALLIANCE]
+						["npcID"] = 106930,		-- Lieutenant Surtees <Legion Gladiator>
+						["races"] = ALLIANCE_ONLY,
 						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 29.6, 75.0, 625 },
+						["coords"] = { 
+							{ 29.41, 75.64, 627 },
+						},
 						["g"] = {
 							gssh(1071, {	-- Combatant
 								["g"] = {
-									-- LEGION { Legion Season 1 & 2
-									i(146158, {	-- Vindictive Combatant's Satin Armor
-										i(135867),	-- Vindictive Combatant's Satin Hood
-										i(135870),	-- Vindictive Combatant's Satin Mantle
-										i(136867),	-- Vindictive Combatant's Drape of Piety
-										i(135869),	-- Vindictive Combatant's Satin Tunic
-										i(135872),	-- Vindictive Combatant's Satin Bracers
-										i(135866),	-- Vindictive Combatant's Satin Gloves
-										i(135871),	-- Vindictive Combatant's Satin Cord
-										i(135868),	-- Vindictive Combatant's Satin Leggings
-										i(135865),	-- Vindictive Combatant's Satin Treads
-									}),
-									i(146156, {	-- Vindictive Combatant's Satin Armor
-										i(135843),	-- Vindictive Combatant's Silk Cowl
-										i(135846),	-- Vindictive Combatant's Silk Amice
-										i(135906),	-- Vindictive Combatant's Silken Shawl
-										i(135845),	-- Vindictive Combatant's Silk Tunic
-										i(135848),	-- Vindictive Combatant's Silk Bracers
-										i(135842),	-- Vindictive Combatant's Silk Handguards
-										i(135847),	-- Vindictive Combatant's Silk Cord
-										i(135844),	-- Vindictive Combatant's Silk Trousers
-										i(135841),	-- Vindictive Combatant's Silk Treads
-									}),
-									i(146160, {	-- Vindictive Combatant's Satin Armor
-										i(135891),	-- Vindictive Combatant's Felweave Cowl
-										i(135894),	-- Vindictive Combatant's Felweave Amice
-										i(136881),	-- Vindictive Combatant's Felweave Cloak
-										i(135893),	-- Vindictive Combatant's Felweave Tunic
-										i(135896),	-- Vindictive Combatant's Felweave Bracers
-										i(135890),	-- Vindictive Combatant's Felweave Handguards
-										i(135895),	-- Vindictive Combatant's Felweave Cord
-										i(135892),	-- Vindictive Combatant's Felweave Trousers
-										i(135889),	-- Vindictive Combatant's Felweave Treads
-									}),
-									i(146168, {	-- Vindictive Combatant's Satin Armor
-										i(135827),	-- Vindictive Combatant's Dragonhide Helm
-										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
-										i(135909),	-- Vindictive Combatant's Dragonhide Cloak
-										i(135829),	-- Vindictive Combatant's Dragonhide Tunic
-										i(135832),	-- Vindictive Combatant's Dragonhide Wristguards
-										i(135826),	-- Vindictive Combatant's Dragonhide Gloves
-										i(135831),	-- Vindictive Combatant's Dragonhide Belt
-										i(135828),	-- Vindictive Combatant's Dragonhide Legguards
-										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
-									}),
-									i(146172, {	-- Vindictive Combatant's Satin Armor
-										i(135876),	-- Vindictive Combatant's Leather Helm
-										i(135878),	-- Vindictive Combatant's Leather Spaulders
-										i(136868),	-- Vindictive Combatant's Shadowcape
-										i(135873),	-- Vindictive Combatant's Leather Tunic
-										i(135880),	-- Vindictive Combatant's Leather Wristguards
-										i(135875),	-- Vindictive Combatant's Leather Gloves
-										i(135879),	-- Vindictive Combatant's Leather Belt
-										i(135877),	-- Vindictive Combatant's Leather Legguards
-										i(135874),	-- Vindictive Combatant's Leather Slippers
-									}),
-									i(146170, {	-- Vindictive Combatant's Satin Armor
-										i(135851),	-- Vindictive Combatant's Ironskin Helm
-										i(135853),	-- Vindictive Combatant's Ironskin Spaulders
-										i(135910),	-- Vindictive Combatant's Ironskin Cloak
-										i(135854),	-- Vindictive Combatant's Ironskin Tunic
-										i(135856),	-- Vindictive Combatant's Ironskin Wristguards
-										i(135850),	-- Vindictive Combatant's Ironskin Gloves
-										i(135855),	-- Vindictive Combatant's Ironskin Belt
-										i(135852),	-- Vindictive Combatant's Ironskin Legguards
-										i(135849),	-- Vindictive Combatant's Ironskin Slippers
-									}),
-									i(146264, {	-- Vindictive Combatant's Satin Armor
-										["g"] = {
-											i(136297),	-- Vindictive Combatant's Felskin Helm
-											i(136300),	-- Vindictive Combatant's Felskin Spaulders
-											i(136893),	-- Vindictive Combatant's Demonthread Cloak
-											i(136299),	-- Vindictive Combatant's Felskin Tunic
-											i(136302),	-- Vindictive Combatant's Felskin Wristguards
-											i(136296),	-- Vindictive Combatant's Felskin Gloves
-											i(136301),	-- Vindictive Combatant's Felskin Belt
-											i(136298),	-- Vindictive Combatant's Felskin Legguards
-											i(136295),	-- Vindictive Combatant's Felskin Boots
+									-- LEGION Season 1 & 2
+									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 146158,	-- Ensemble: Vindictive Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
 										},
-										["classes"] = { 12 },
-									}),
-									i(146154, {	-- Vindictive Combatant's Satin Armor
-										i(135836),	-- Vindictive Combatant's Chain Helm
-										i(135838),	-- Vindictive Combatant's Chain Spaulders
-										i(135913),	-- Vindictive Combatant's Drape of the Tracker
-										i(135833),	-- Vindictive Combatant's Chain Armor
-										i(135840),	-- Vindictive Combatant's Chain Armband
-										i(135835),	-- Vindictive Combatant's Chain Gauntlets
-										i(135839),	-- Vindictive Combatant's Chain Clasp
-										i(135837),	-- Vindictive Combatant's Chain Leggings
-										i(135834),	-- Vindictive Combatant's Chain Treads
-									}),
-									i(146152, {	-- Vindictive Combatant's Satin Armor
-										i(135884),	-- Vindictive Combatant's Ringmail Helm
-										i(135886),	-- Vindictive Combatant's Ringmail Spaulders
-										i(136869),	-- Vindictive Combatant's Totemic Cloak
-										i(135881),	-- Vindictive Combatant's Ringmail Armor
-										i(135888),	-- Vindictive Combatant's Ringmail Armband
-										i(135883),	-- Vindictive Combatant's Ringmail Gauntlets
-										i(135887),	-- Vindictive Combatant's Ringmail Clasp
-										i(135885),	-- Vindictive Combatant's Ringmail Kilt
-										i(135882),	-- Vindictive Combatant's Ringmail Boots
-									}),
-									i(146166, {	-- Vindictive Combatant's Satin Armor
-										i(135860),	-- Vindictive Combatant's Scaled Helm
-										i(135862),	-- Vindictive Combatant's Scaled Shoulders
-										i(135914),	-- Vindictive Combatant's Greatcloak of Faith
-										i(135857),	-- Vindictive Combatant's Scaled Chestpiece
-										i(135864),	-- Vindictive Combatant's Scaled Wristplates
-										i(135859),	-- Vindictive Combatant's Scaled Gauntlets
-										i(135863),	-- Vindictive Combatant's Scaled Girdle
-										i(135861),	-- Vindictive Combatant's Scaled Legguards
-										i(135858),	-- Vindictive Combatant's Scaled Sabatons
-									}),
-									i(146162, {	-- Vindictive Combatant's Satin Armor
-										i(135900),	-- Vindictive Combatant's Plate Helm
-										i(135902),	-- Vindictive Combatant's Plate Shoulders
-										i(136887),	-- Vindictive Combatant's Cloak of Battle
-										i(135897),	-- Vindictive Combatant's Plate Chestpiece
-										i(135904),	-- Vindictive Combatant's Plate Wristplates
-										i(135899),	-- Vindictive Combatant's Plate Gauntlets
-										i(135903),	-- Vindictive Combatant's Plate Girdle
-										i(135901),	-- Vindictive Combatant's Plate Legguards
-										i(135898),	-- Vindictive Combatant's Plate Warboots
-									}),
-									i(146164, {	-- Vindictive Combatant's Satin Armor
-										i(135820),	-- Vindictive Combatant's Dreadplate Helm
-										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
-										i(135905),	-- Vindictive Combatant's Dreadcloak
-										i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece
-										i(135824),	-- Vindictive Combatant's Dreadplate Wristplates
-										i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets
-										i(135823),	-- Vindictive Combatant's Dreadplate Girdle
-										i(135821),	-- Vindictive Combatant's Dreadplate Legguards
-										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
-									}),
-									-- LEGION & 4
+										["g"] = {
+											{	-- Vindictive Combatant's Satin Hood
+												["itemID"] = 135867,	-- Vindictive Combatant's Satin Hood
+											},
+											{	-- Vindictive Combatant's Satin Mantle
+												["itemID"] = 135870,	-- Vindictive Combatant's Satin Mantle
+											},
+											{	-- Vindictive Combatant's Drape of Piety
+												["itemID"] = 136867,	-- Vindictive Combatant's Drape of Piety
+											},
+											{	-- Vindictive Combatant's Satin Tunic
+												["itemID"] = 135869,	-- Vindictive Combatant's Satin Tunic
+											},
+											{	-- Vindictive Combatant's Satin Bracers
+												["itemID"] = 135872,	-- Vindictive Combatant's Satin Bracers
+											},
+											{	-- Vindictive Combatant's Satin Gloves
+												["itemID"] = 135866,	-- Vindictive Combatant's Satin Gloves
+											},
+											{	-- Vindictive Combatant's Satin Cord
+												["itemID"] = 135871,	-- Vindictive Combatant's Satin Cord
+											},
+											{	-- Vindictive Combatant's Satin Leggings
+												["itemID"] = 135868,	-- Vindictive Combatant's Satin Leggings
+											},
+											{	-- Vindictive Combatant's Satin Treads
+												["itemID"] = 135865,	-- Vindictive Combatant's Satin Treads
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 146156,	-- Ensemble: Vindictive Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Silk Cowl
+												["itemID"] = 135843,	-- Vindictive Combatant's Silk Cowl
+											},
+											{	-- Vindictive Combatant's Silk Amice
+												["itemID"] = 135846,	-- Vindictive Combatant's Silk Amice
+											},
+											{	-- Vindictive Combatant's Silken Shawl
+												["itemID"] = 135906,	-- Vindictive Combatant's Silken Shawl
+											},
+											{	-- Vindictive Combatant's Silk Tunic
+												["itemID"] = 135845,	-- Vindictive Combatant's Silk Tunic
+											},
+											{	-- Vindictive Combatant's Silk Bracers
+												["itemID"] = 135848,	-- Vindictive Combatant's Silk Bracers
+											},
+											{	-- Vindictive Combatant's Silk Handguards
+												["itemID"] = 135842,	-- Vindictive Combatant's Silk Handguards
+											},
+											{	-- Vindictive Combatant's Silk Cord
+												["itemID"] = 135847,	-- Vindictive Combatant's Silk Cord
+											},
+											{	-- Vindictive Combatant's Silk Trousers
+												["itemID"] = 135844,	-- Vindictive Combatant's Silk Trousers
+											},
+											{	-- Vindictive Combatant's Silk Treads
+												["itemID"] = 135841,	-- Vindictive Combatant's Silk Treads
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 146160,	-- Ensemble: Vindictive Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Felweave Cowl
+												["itemID"] = 135891,	-- Vindictive Combatant's Felweave Cowl
+											},
+											{	-- Vindictive Combatant's Felweave Amice
+												["itemID"] = 135894,	-- Vindictive Combatant's Felweave Amice
+											},
+											{	-- Vindictive Combatant's Felweave Cloak
+												["itemID"] = 136881,	-- Vindictive Combatant's Felweave Cloak
+											},
+											{	-- Vindictive Combatant's Felweave Tunic
+												["itemID"] = 135893,	-- Vindictive Combatant's Felweave Tunic
+											},
+											{	-- Vindictive Combatant's Felweave Bracers
+												["itemID"] = 135896,	-- Vindictive Combatant's Felweave Bracers
+											},
+											{	-- Vindictive Combatant's Felweave Handguards
+												["itemID"] = 135890,	-- Vindictive Combatant's Felweave Handguards
+											},
+											{	-- Vindictive Combatant's Felweave Cord
+												["itemID"] = 135895,	-- Vindictive Combatant's Felweave Cord
+											},
+											{	-- Vindictive Combatant's Felweave Trousers
+												["itemID"] = 135892,	-- Vindictive Combatant's Felweave Trousers
+											},
+											{	-- Vindictive Combatant's Felweave Treads
+												["itemID"] = 135889,	-- Vindictive Combatant's Felweave Treads
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 146168,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Dragonhide Helm
+												["itemID"] = 135827,	-- Vindictive Combatant's Dragonhide Helm
+											},
+											{	-- Vindictive Combatant's Dragonhide Spaulders
+												["itemID"] = 135830,	-- Vindictive Combatant's Dragonhide Spaulders
+											},
+											{	-- Vindictive Combatant's Dragonhide Cloak
+												["itemID"] = 135909,	-- Vindictive Combatant's Dragonhide Cloak
+											},
+											{	-- Vindictive Combatant's Dragonhide Tunic
+												["itemID"] = 135829,	-- Vindictive Combatant's Dragonhide Tunic
+											},
+											{	-- Vindictive Combatant's Dragonhide Wristguards
+												["itemID"] = 135832,	-- Vindictive Combatant's Dragonhide Wristguards
+											},
+											{	-- Vindictive Combatant's Dragonhide Gloves
+												["itemID"] = 135826,	-- Vindictive Combatant's Dragonhide Gloves
+											},
+											{	-- Vindictive Combatant's Dragonhide Belt
+												["itemID"] = 135831,	-- Vindictive Combatant's Dragonhide Belt
+											},
+											{	-- Vindictive Combatant's Dragonhide Legguards
+												["itemID"] = 135828,	-- Vindictive Combatant's Dragonhide Legguards
+											},
+											{	-- Vindictive Combatant's Dragonhide Moccasins
+												["itemID"] = 135825,	-- Vindictive Combatant's Dragonhide Moccasins
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 146172,	-- Ensemble: Vindictive Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Leather Helm
+												["itemID"] = 135876,	-- Vindictive Combatant's Leather Helm
+											},
+											{	-- Vindictive Combatant's Leather Spaulders
+												["itemID"] = 135878,	-- Vindictive Combatant's Leather Spaulders
+											},
+											{	-- Vindictive Combatant's Shadowcape
+												["itemID"] = 136868,	-- Vindictive Combatant's Shadowcape
+											},
+											{	-- Vindictive Combatant's Leather Tunic
+												["itemID"] = 135873,	-- Vindictive Combatant's Leather Tunic
+											},
+											{	-- Vindictive Combatant's Leather Wristguards
+												["itemID"] = 135880,	-- Vindictive Combatant's Leather Wristguards
+											},
+											{	-- Vindictive Combatant's Leather Gloves
+												["itemID"] = 135875,	-- Vindictive Combatant's Leather Gloves
+											},
+											{	-- Vindictive Combatant's Leather Belt
+												["itemID"] = 135879,	-- Vindictive Combatant's Leather Belt
+											},
+											{	-- Vindictive Combatant's Leather Legguards
+												["itemID"] = 135877,	-- Vindictive Combatant's Leather Legguards
+											},
+											{	-- Vindictive Combatant's Leather Slippers
+												["itemID"] = 135874,	-- Vindictive Combatant's Leather Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 146170,	-- Ensemble: Vindictive Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Ironskin Helm
+												["itemID"] = 135851,	-- Vindictive Combatant's Ironskin Helm
+											},
+											{	-- Vindictive Combatant's Ironskin Spaulders
+												["itemID"] = 135853,	-- Vindictive Combatant's Ironskin Spaulders
+											},
+											{	-- Vindictive Combatant's Ironskin Cloak
+												["itemID"] = 135910,	-- Vindictive Combatant's Ironskin Cloak
+											},
+											{	-- Vindictive Combatant's Ironskin Tunic
+												["itemID"] = 135854,	-- Vindictive Combatant's Ironskin Tunic
+											},
+											{	-- Vindictive Combatant's Ironskin Wristguards
+												["itemID"] = 135856,	-- Vindictive Combatant's Ironskin Wristguards
+											},
+											{	-- Vindictive Combatant's Ironskin Gloves
+												["itemID"] = 135850,	-- Vindictive Combatant's Ironskin Gloves
+											},
+											{	-- Vindictive Combatant's Ironskin Belt
+												["itemID"] = 135855,	-- Vindictive Combatant's Ironskin Belt
+											},
+											{	-- Vindictive Combatant's Ironskin Legguards
+												["itemID"] = 135852,	-- Vindictive Combatant's Ironskin Legguards
+											},
+											{	-- Vindictive Combatant's Ironskin Slippers
+												["itemID"] = 135849,	-- Vindictive Combatant's Ironskin Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 146264,	-- Ensemble: Vindictive Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Felskin Helm
+												["itemID"] = 136297,	-- Vindictive Combatant's Felskin Helm
+											},
+											{	-- Vindictive Combatant's Felskin Spaulders
+												["itemID"] = 136300,	-- Vindictive Combatant's Felskin Spaulders
+											},
+											{	-- Vindictive Combatant's Demonthread Cloak
+												["itemID"] = 136893,	-- Vindictive Combatant's Demonthread Cloak
+											},
+											{	-- Vindictive Combatant's Felskin Tunic
+												["itemID"] = 136299,	-- Vindictive Combatant's Felskin Tunic
+											},
+											{	-- Vindictive Combatant's Felskin Wristguards
+												["itemID"] = 136302,	-- Vindictive Combatant's Felskin Wristguards
+											},
+											{	-- Vindictive Combatant's Felskin Gloves
+												["itemID"] = 136296,	-- Vindictive Combatant's Felskin Gloves
+											},
+											{	-- Vindictive Combatant's Felskin Belt
+												["itemID"] = 136301,	-- Vindictive Combatant's Felskin Belt
+											},
+											{	-- Vindictive Combatant's Felskin Legguards
+												["itemID"] = 136298,	-- Vindictive Combatant's Felskin Legguards
+											},
+											{	-- Vindictive Combatant's Felskin Boots
+												["itemID"] = 136295,	-- Vindictive Combatant's Felskin Boots
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 146154,	-- Ensemble: Vindictive Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Chain Helm
+												["itemID"] = 135836,	-- Vindictive Combatant's Chain Helm
+											},
+											{	-- Vindictive Combatant's Chain Spaulders
+												["itemID"] = 135838,	-- Vindictive Combatant's Chain Spaulders
+											},
+											{	-- Vindictive Combatant's Drape of the Tracker
+												["itemID"] = 135913,	-- Vindictive Combatant's Drape of the Tracker
+											},
+											{	-- Vindictive Combatant's Chain Armor
+												["itemID"] = 135833,	-- Vindictive Combatant's Chain Armor
+											},
+											{	-- Vindictive Combatant's Chain Armband
+												["itemID"] = 135840,	-- Vindictive Combatant's Chain Armband
+											},
+											{	-- Vindictive Combatant's Chain Gauntlets
+												["itemID"] = 135835,	-- Vindictive Combatant's Chain Gauntlets
+											},
+											{	-- Vindictive Combatant's Chain Clasp
+												["itemID"] = 135839,	-- Vindictive Combatant's Chain Clasp
+											},
+											{	-- Vindictive Combatant's Chain Leggings
+												["itemID"] = 135837,	-- Vindictive Combatant's Chain Leggings
+											},
+											{	-- Vindictive Combatant's Chain Treads
+												["itemID"] = 135834,	-- Vindictive Combatant's Chain Treads
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 146152,	-- Ensemble: Vindictive Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Ringmail Helm
+												["itemID"] = 135884,	-- Vindictive Combatant's Ringmail Helm
+											},
+											{	-- Vindictive Combatant's Ringmail Spaulders
+												["itemID"] = 135886,	-- Vindictive Combatant's Ringmail Spaulders
+											},
+											{	-- Vindictive Combatant's Totemic Cloak
+												["itemID"] = 136869,	-- Vindictive Combatant's Totemic Cloak
+											},
+											{	-- Vindictive Combatant's Ringmail Armor
+												["itemID"] = 135881,	-- Vindictive Combatant's Ringmail Armor
+											},
+											{	-- Vindictive Combatant's Ringmail Armband
+												["itemID"] = 135888,	-- Vindictive Combatant's Ringmail Armband
+											},
+											{	-- Vindictive Combatant's Ringmail Gauntlets
+												["itemID"] = 135883,	-- Vindictive Combatant's Ringmail Gauntlets
+											},
+											{	-- Vindictive Combatant's Ringmail Clasp
+												["itemID"] = 135887,	-- Vindictive Combatant's Ringmail Clasp
+											},
+											{	-- Vindictive Combatant's Ringmail Kilt
+												["itemID"] = 135885,	-- Vindictive Combatant's Ringmail Kilt
+											},
+											{	-- Vindictive Combatant's Ringmail Boots
+												["itemID"] = 135882,	-- Vindictive Combatant's Ringmail Boots
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
+										["itemID"] = 146166,	-- Ensemble: Vindictive Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Paladin
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Scaled Helm
+												["itemID"] = 135860,	-- Vindictive Combatant's Scaled Helm
+											},
+											{	-- Vindictive Combatant's Scaled Shoulders
+												["itemID"] = 135862,	-- Vindictive Combatant's Scaled Shoulders
+											},
+											{	-- Vindictive Combatant's Greatcloak of Faith
+												["itemID"] = 135914,	-- Vindictive Combatant's Greatcloak of Faith
+											},
+											{	-- Vindictive Combatant's Scaled Chestpiece
+												["itemID"] = 135857,	-- Vindictive Combatant's Scaled Chestpiece
+											},
+											{	-- Vindictive Combatant's Scaled Wristplates
+												["itemID"] = 135864,	-- Vindictive Combatant's Scaled Wristplates
+											},
+											{	-- Vindictive Combatant's Scaled Gauntlets
+												["itemID"] = 135859,	-- Vindictive Combatant's Scaled Gauntlets
+											},
+											{	-- Vindictive Combatant's Scaled Girdle
+												["itemID"] = 135863,	-- Vindictive Combatant's Scaled Girdle
+											},
+											{	-- Vindictive Combatant's Scaled Legguards
+												["itemID"] = 135861,	-- Vindictive Combatant's Scaled Legguards
+											},
+											{	-- Vindictive Combatant's Scaled Sabatons
+												["itemID"] = 135858,	-- Vindictive Combatant's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 146162,	-- Ensemble: Vindictive Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Plate Helm
+												["itemID"] = 135900,	-- Vindictive Combatant's Plate Helm
+											},
+											{	-- Vindictive Combatant's Plate Shoulders
+												["itemID"] = 135902,	-- Vindictive Combatant's Plate Shoulders
+											},
+											{	-- Vindictive Combatant's Cloak of Battle
+												["itemID"] = 136887,	-- Vindictive Combatant's Cloak of Battle
+											},
+											{	-- Vindictive Combatant's Plate Chestpiece
+												["itemID"] = 135897,	-- Vindictive Combatant's Plate Chestpiece
+											},
+											{	-- Vindictive Combatant's Plate Wristplates
+												["itemID"] = 135904,	-- Vindictive Combatant's Plate Wristplates
+											},
+											{	-- Vindictive Combatant's Plate Gauntlets
+												["itemID"] = 135899,	-- Vindictive Combatant's Plate Gauntlets
+											},
+											{	-- Vindictive Combatant's Plate Girdle
+												["itemID"] = 135903,	-- Vindictive Combatant's Plate Girdle
+											},
+											{	-- Vindictive Combatant's Plate Legguards
+												["itemID"] = 135901,	-- Vindictive Combatant's Plate Legguards
+											},
+											{	-- Vindictive Combatant's Plate Warboots
+												["itemID"] = 135898,	-- Vindictive Combatant's Plate Warboots
+											},
+										},
+									},
+									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 146164,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Dreadplate Helm
+												["itemID"] = 135820,	-- Vindictive Combatant's Dreadplate Helm
+											},
+											{	-- Vindictive Combatant's Dreadplate Shoulders
+												["itemID"] = 135822,	-- Vindictive Combatant's Dreadplate Shoulders
+											},
+											{	-- Vindictive Combatant's Dreadcloak
+												["itemID"] = 135905,	-- Vindictive Combatant's Dreadcloak
+											},
+											{	-- Vindictive Combatant's Dreadplate Chestpiece
+												["itemID"] = 135817,	-- Vindictive Combatant's Dreadplate Chestpiece
+											},
+											{	-- Vindictive Combatant's Dreadplate Wristplates
+												["itemID"] = 135824,	-- Vindictive Combatant's Dreadplate Wristplates
+											},
+											{	-- Vindictive Combatant's Dreadplate Gauntlets
+												["itemID"] = 135819,	-- Vindictive Combatant's Dreadplate Gauntlets
+											},
+											{	-- Vindictive Combatant's Dreadplate Girdle
+												["itemID"] = 135823,	-- Vindictive Combatant's Dreadplate Girdle
+											},
+											{	-- Vindictive Combatant's Dreadplate Legguards
+												["itemID"] = 135821,	-- Vindictive Combatant's Dreadplate Legguards
+											},
+											{	-- Vindictive Combatant's Dreadplate Sabatons
+												["itemID"] = 135818,	-- Vindictive Combatant's Dreadplate Sabatons
+											},
+										},
+									},
+
+									-- LEGION Season 3 & 4
 									i(147688, {	-- Cruel Combatant's Satin Armor
 										i(145172),	-- Cruel Combatant's Satin Hood
 										i(145178),	-- Cruel Combatant's Satin Mantle
@@ -3890,6 +4186,7 @@ _.Zones =
 										i(145058),	-- Cruel Combatant's Dreadplate Legguards
 										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
 									}),
+									-- LEGION Season 5, 6, 7
 								},
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 							}),
@@ -4183,7 +4480,7 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 							}),
 						},
-					}),
+					},
 					a(n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
 						gssh(1414, {	-- Gladiator
 							["g"] = {
