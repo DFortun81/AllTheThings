@@ -44,6 +44,7 @@ local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 
 -- Coroutine Helper Functions
+app.RawData = {};
 app.refreshing = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
@@ -5058,7 +5059,6 @@ app.BaseNPC = {
 app.CreateNPC = function(id, t)
 	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
 end
-app.HolidayHeader = app.CreateNPC(-3, { g = {}, expanded = true, visible = false, total = 0, progress = 0 });
 
 -- Object Lib (as in "World Object")
 app.BaseObject = {
@@ -6901,331 +6901,334 @@ app.CreateMinimapButton = CreateMinimapButton;
 local CreateRow;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
-	local popout = app:GetWindow((group.parent and group.parent.text or "") .. (group.text or ""));
-	if group.s then
-		popout.data = CloneData(group);
-		popout.data.collectible = true;
-		popout.data.hideText = true;
-		popout.data.visible = true;
-		popout.data.progress = 0;
-		popout.data.total = 0;
-		popout.data.indent = 0;
-		if not popout.data.g then
-			popout.data.g = {};
-		end
-		
-		-- Attempt to get information about the source ID.
-		local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
-		if sourceInfo then
-			-- Show a list of all of the Shared Appearances.
-			local g = {};
+	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "");
+	local popout = app.Windows[suffix];
+	if not popout then
+		popout = app:GetWindow(suffix);
+		popout.shouldFullRefresh = true;
+		if group.s then
+			popout.data = CloneData(group);
+			popout.data.collectible = true;
+			popout.data.visible = true;
+			popout.data.progress = 0;
+			popout.data.total = 0;
+			if not popout.data.g then
+				popout.data.g = {};
+			end
 			
-			-- Go through all of the shared appearances and see if we're "unlocked" any of them.
-			for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-				-- If this isn't the source we already did work on and we haven't already completed it
-				if otherSourceID ~= group.s then
-					local attSearch = SearchForSourceIDQuickly(otherSourceID);
-					if attSearch then
-						attSearch = CloneData(attSearch);
-						attSearch.collectible = true;
-						attSearch.hideText = true;
-						tinsert(g, attSearch); 
-					else
-						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-						if otherSourceInfo then
-							local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
-							if otherSourceInfo.isCollected then
-								SetDataSubMember("CollectedSources", otherSourceID, 1);
-								newItem.collected = true;
-							end
-							tinsert(g, newItem);
-						end
-					end
-				end
-			end
-			if #g > 0 then
-				table.insert(popout.data.g, {
-					["text"] = "Shared Appearances",
-					["description"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
-					["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-					["g"] = g
-				});
-			else
-				table.insert(popout.data.g, setmetatable({
-					["text"] = "Unique Appearance",
-					["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
-					["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
-					["collectible"] = true,
-				}, { __index = group }));
-			end
-		end
-		
-		-- Determine if this source is part of a set or two.
-		local allSets = GetDataMember("Sets", {});
-		local sourceSets = GetDataMember("SourceSets", {});
-		local GetVariantSets = C_TransmogSets.GetVariantSets;
-		local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
-		for i,data in ipairs(C_TransmogSets.GetAllSets()) do
-			local sources = GetAllSourceIDs(data.setID);
-			if #sources > 0 then allSets[data.setID] = sources; end
-			for j,sourceID in ipairs(sources) do
-				local s = sourceSets[sourceID];
-				if not s then
-					s = {};
-					sourceSets[sourceID] = s;
-				end
-				s[data.setID] = 1;
-			end
-			local variants = GetVariantSets(data.setID);
-			if type(variants) == "table" then
-				for j,data in ipairs(variants) do
-					local sources = GetAllSourceIDs(data.setID);
-					if #sources > 0 then allSets[data.setID] = sources; end
-					for k, sourceID in ipairs(sources) do
-						local s = sourceSets[sourceID];
-						if not s then
-							s = {};
-							sourceSets[sourceID] = s;
-						end
-						s[data.setID] = 1;
-					end
-				end
-			end
-		end
-		local data = sourceSets[group.s];
-		if data then
-			for setID,value in pairs(data) do
+			-- Attempt to get information about the source ID.
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
+			if sourceInfo then
+				-- Show a list of all of the Shared Appearances.
 				local g = {};
-				setID = tonumber(setID);
-				for i,sourceID in ipairs(allSets[setID]) do
-					local attSearch = SearchForSourceIDQuickly(sourceID);
-					if attSearch then
-						attSearch = CloneData(attSearch);
-						attSearch.collectible = true;
-						attSearch.hideText = true;
-						tinsert(g, attSearch); 
-					else
-						local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-						if otherSourceInfo then
-							local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
-							if otherSourceInfo.isCollected then
-								SetDataSubMember("CollectedSources", sourceID, 1);
-								newItem.collected = true;
+				
+				-- Go through all of the shared appearances and see if we're "unlocked" any of them.
+				for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
+					-- If this isn't the source we already did work on and we haven't already completed it
+					if otherSourceID ~= group.s then
+						local attSearch = SearchForSourceIDQuickly(otherSourceID);
+						if attSearch then
+							attSearch = CloneData(attSearch);
+							attSearch.collectible = true;
+							attSearch.hideText = true;
+							tinsert(g, attSearch); 
+						else
+							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
+							if otherSourceInfo then
+								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
+								if otherSourceInfo.isCollected then
+									SetDataSubMember("CollectedSources", otherSourceID, 1);
+									newItem.collected = true;
+								end
+								tinsert(g, newItem);
 							end
-							tinsert(g, newItem);
 						end
 					end
 				end
-				table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
+				if #g > 0 then
+					table.insert(popout.data.g, {
+						["text"] = "Shared Appearances",
+						["description"] = "The items in this list are shared appearances for the above item. In Unique Appearance Mode, this list can help you understand why or why not a specific item would be marked Collected.",
+						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+						["g"] = g
+					});
+				else
+					table.insert(popout.data.g, setmetatable({
+						["text"] = "Unique Appearance",
+						["description"] = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
+						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
+						["collectible"] = true,
+					}, { __index = group }));
+				end
 			end
-		end
-		local oldUpdate = popout.Update;
-		popout.Update = function(self)
-			-- Turn off all filters momentarily.
-			local GroupFilter = app.GroupFilter;
-			local GroupVisibilityFilter = app.GroupVisibilityFilter;
-			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
-			local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
-			app.GroupFilter = app.NoFilter;
-			app.GroupVisibilityFilter = app.NoFilter;
-			app.CollectedItemVisibilityFilter = app.NoFilter;
-			app.CollectedItemVisibilityFilter = app.NoFilter;
-			oldUpdate(self);
-			app.GroupFilter = GroupFilter;
-			app.GroupVisibilityFilter = GroupVisibilityFilter;
-			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
-			app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
-		end;
-	elseif group.questID or group.sourceQuests then
-		-- This is a quest object. Let's show prereqs and breadcrumbs.
-		local mainQuest = CloneData(group);
-		mainQuest.collectible = true;
-		mainQuest.hideText = true;
-		local g = { mainQuest };
-		
-		-- Show Quest Prereqs
-		if mainQuest.sourceQuests then
-			local breakafter = 0;
-			local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
-			while sourceQuests and #sourceQuests > 0 do
-				subSourceQuests = {}; prereqs = {};
-				for i,sourceQuestID in ipairs(sourceQuests) do
-					sourceQuest = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-					if sourceQuest and #sourceQuest > 0 then
-						local found = nil;
-						for i=1,#sourceQuest,1 do
-							-- Only care about the first search result.
-							local sq = sourceQuest[i];
-							if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
-								if sq.altQuestID then
-									-- Alt Quest IDs are always Horde.
-									if app.FactionID == 2 then
-										if sq.altQuestID == sourceQuestID then
+			
+			-- Determine if this source is part of a set or two.
+			local allSets = GetDataMember("Sets", {});
+			local sourceSets = GetDataMember("SourceSets", {});
+			local GetVariantSets = C_TransmogSets.GetVariantSets;
+			local GetAllSourceIDs = C_TransmogSets.GetAllSourceIDs;
+			for i,data in ipairs(C_TransmogSets.GetAllSets()) do
+				local sources = GetAllSourceIDs(data.setID);
+				if #sources > 0 then allSets[data.setID] = sources; end
+				for j,sourceID in ipairs(sources) do
+					local s = sourceSets[sourceID];
+					if not s then
+						s = {};
+						sourceSets[sourceID] = s;
+					end
+					s[data.setID] = 1;
+				end
+				local variants = GetVariantSets(data.setID);
+				if type(variants) == "table" then
+					for j,data in ipairs(variants) do
+						local sources = GetAllSourceIDs(data.setID);
+						if #sources > 0 then allSets[data.setID] = sources; end
+						for k, sourceID in ipairs(sources) do
+							local s = sourceSets[sourceID];
+							if not s then
+								s = {};
+								sourceSets[sourceID] = s;
+							end
+							s[data.setID] = 1;
+						end
+					end
+				end
+			end
+			local data = sourceSets[group.s];
+			if data then
+				for setID,value in pairs(data) do
+					local g = {};
+					setID = tonumber(setID);
+					for i,sourceID in ipairs(allSets[setID]) do
+						local attSearch = SearchForSourceIDQuickly(sourceID);
+						if attSearch then
+							attSearch = CloneData(attSearch);
+							attSearch.collectible = true;
+							attSearch.hideText = true;
+							tinsert(g, attSearch); 
+						else
+							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
+							if otherSourceInfo then
+								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
+								if otherSourceInfo.isCollected then
+									SetDataSubMember("CollectedSources", sourceID, 1);
+									newItem.collected = true;
+								end
+								tinsert(g, newItem);
+							end
+						end
+					end
+					table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
+				end
+			end
+			local oldUpdate = popout.Update;
+			popout.Update = function(self, ...)
+				-- Turn off all filters momentarily.
+				local GroupFilter = app.GroupFilter;
+				local GroupVisibilityFilter = app.GroupVisibilityFilter;
+				local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+				local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+				app.GroupFilter = app.NoFilter;
+				app.GroupVisibilityFilter = app.NoFilter;
+				app.CollectedItemVisibilityFilter = app.NoFilter;
+				app.CollectedItemVisibilityFilter = app.NoFilter;
+				oldUpdate(self, ...);
+				app.GroupFilter = GroupFilter;
+				app.GroupVisibilityFilter = GroupVisibilityFilter;
+				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+			end;
+		elseif group.questID or group.sourceQuests then
+			-- This is a quest object. Let's show prereqs and breadcrumbs.
+			local mainQuest = CloneData(group);
+			mainQuest.collectible = true;
+			local g = { mainQuest };
+			
+			-- Show Quest Prereqs
+			if mainQuest.sourceQuests then
+				local breakafter = 0;
+				local sourceQuests, sourceQuest, subSourceQuests, prereqs = mainQuest.sourceQuests;
+				while sourceQuests and #sourceQuests > 0 do
+					subSourceQuests = {}; prereqs = {};
+					for i,sourceQuestID in ipairs(sourceQuests) do
+						sourceQuest = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+						if sourceQuest and #sourceQuest > 0 then
+							local found = nil;
+							for i=1,#sourceQuest,1 do
+								-- Only care about the first search result.
+								local sq = sourceQuest[i];
+								if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
+									if sq.altQuestID then
+										-- Alt Quest IDs are always Horde.
+										if app.FactionID == 2 then
+											if sq.altQuestID == sourceQuestID then
+												found = sq;
+												break;
+											end
+										elseif sq.questID == sourceQuestID then
 											found = sq;
 											break;
 										end
-									elseif sq.questID == sourceQuestID then
+									elseif app.RecursiveClassAndRaceFilter(sq) then
 										found = sq;
 										break;
 									end
-								elseif app.RecursiveClassAndRaceFilter(sq) then
-									found = sq;
-									break;
 								end
 							end
-						end
-						if found then
-							sourceQuest = CloneData(found);
-							sourceQuest.collectible = true;
-							sourceQuest.visible = true;
-							sourceQuest.hideText = true;
-							if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
-								-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-								for j, subsourceQuests in ipairs(found.sourceQuests) do
-									subSourceQuests[subsourceQuests] = true;
+							if found then
+								sourceQuest = CloneData(found);
+								sourceQuest.collectible = true;
+								sourceQuest.visible = true;
+								sourceQuest.hideText = true;
+								if found.sourceQuests and #found.sourceQuests > 0 and (not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+									for j, subsourceQuests in ipairs(found.sourceQuests) do
+										subSourceQuests[subsourceQuests] = true;
+									end
 								end
+							else
+								sourceQuest = nil;
 							end
+						elseif sourceQuestID > 0 then
+							-- Create a Quest Object.
+							sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 						else
-							sourceQuest = nil;
+							-- Create a NPC Object.
+							sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
 						end
-					elseif sourceQuestID > 0 then
-						-- Create a Quest Object.
-						sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
-					else
-						-- Create a NPC Object.
-						sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
+						
+						-- If the quest was valid, attach it.
+						if sourceQuest then tinsert(prereqs, sourceQuest); end
 					end
 					
-					-- If the quest was valid, attach it.
-					if sourceQuest then tinsert(prereqs, sourceQuest); end
-				end
-				
-				-- Convert the subSourceQuests table into an array
-				sourceQuests = {};
-				if #prereqs > 0 then
-					for sourceQuestID,i in pairs(subSourceQuests) do
-						tinsert(sourceQuests, tonumber(sourceQuestID));
-					end
-					
-					-- Insert the header for the source quest
+					-- Convert the subSourceQuests table into an array
+					sourceQuests = {};
 					if #prereqs > 0 then
-						tinsert(prereqs, {
-							["text"] = "Upon Completion",
-							["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
-							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-							["visible"] = true,
-							["expanded"] = true,
-							["g"] = g,
-							["hideText"] = true
-						});
-					else
-						local prereq = prereqs[1];
-						if prereq.g then
-							for i,group in ipairs(prereq.g) do
-								tinsert(g, 1, group);
-							end
+						for sourceQuestID,i in pairs(subSourceQuests) do
+							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
-						prereq["g"] = g;
-					end
-					g = prereqs;
-					breakafter = breakafter + 1;
-					if breakafter >= 100 then
-						app.print("Likely just broke out of an infinite source quest loop. Please report this to the ATT Discord!");
-						break;
-					end
-				end
-			end
-			
-			-- Clean up the recursive hierarchy. (this removed duplicates)
-			sourceQuests = {};
-			prereqs = g;
-			local orig = g;
-			while prereqs and #prereqs > 0 do
-				for i=#prereqs,1,-1 do
-					local o = prereqs[i];
-					if o.key then
-						sourceQuest = o.key .. o[o.key];
-						if sourceQuests[sourceQuest] then
-							-- Already exists in the hierarchy. Uh oh.
-							table.remove(prereqs, i);
+						
+						-- Insert the header for the source quest
+						if #prereqs > 0 then
+							tinsert(prereqs, {
+								["text"] = "Upon Completion",
+								["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
+								["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+								["visible"] = true,
+								["expanded"] = true,
+								["g"] = g,
+								["hideText"] = true
+							});
 						else
-							sourceQuests[sourceQuest] = true;
+							local prereq = prereqs[1];
+							if prereq.g then
+								for i,group in ipairs(prereq.g) do
+									tinsert(g, 1, group);
+								end
+							end
+							prereq["g"] = g;
+						end
+						g = prereqs;
+						breakafter = breakafter + 1;
+						if breakafter >= 100 then
+							app.print("Likely just broke out of an infinite source quest loop. Please report this to the ATT Discord!");
+							break;
 						end
 					end
 				end
 				
-				if #prereqs > 1 then
-					prereqs = prereqs[#prereqs];
-					if prereqs then prereqs = prereqs.g; end
-					orig = prereqs;
-				else
-					prereqs = prereqs[#prereqs];
-					if prereqs then prereqs = prereqs.g; end
-					orig[#orig].g = prereqs;
-				end
-			end
-			
-			-- Clean up standalone "Upon Completion" headers.
-			prereqs = g;
-			repeat
-				local orig = prereqs;
-				if #orig == 2 then
-					prereqs = orig[1].g;
-					if not prereqs or #prereqs < 1 then
-						prereqs = orig[2].g;
-						orig[1].g = prereqs;
-						table.remove(orig, 2);
-					else
-						sourceQuests = orig[2].g;
-						table.remove(orig, 2);
-						if #sourceQuests == 2 then
-							sourceQuests[1].g = sourceQuests[2].g;
-							table.remove(sourceQuests, 2);
-						end
-						for i,sourceQuest in ipairs(sourceQuests) do
-							table.insert(prereqs, sourceQuest);
+				-- Clean up the recursive hierarchy. (this removed duplicates)
+				sourceQuests = {};
+				prereqs = g;
+				local orig = g;
+				while prereqs and #prereqs > 0 do
+					for i=#prereqs,1,-1 do
+						local o = prereqs[i];
+						if o.key then
+							sourceQuest = o.key .. o[o.key];
+							if sourceQuests[sourceQuest] then
+								-- Already exists in the hierarchy. Uh oh.
+								table.remove(prereqs, i);
+							else
+								sourceQuests[sourceQuest] = true;
+							end
 						end
 					end
-				else
-					prereqs = orig[#orig].g;
+					
+					if #prereqs > 1 then
+						prereqs = prereqs[#prereqs];
+						if prereqs then prereqs = prereqs.g; end
+						orig = prereqs;
+					else
+						prereqs = prereqs[#prereqs];
+						if prereqs then prereqs = prereqs.g; end
+						orig[#orig].g = prereqs;
+					end
 				end
-			until not prereqs or #prereqs < 1;
+				
+				-- Clean up standalone "Upon Completion" headers.
+				prereqs = g;
+				repeat
+					local orig = prereqs;
+					if #orig == 2 then
+						prereqs = orig[1].g;
+						if not prereqs or #prereqs < 1 then
+							prereqs = orig[2].g;
+							orig[1].g = prereqs;
+							table.remove(orig, 2);
+						else
+							sourceQuests = orig[2].g;
+							table.remove(orig, 2);
+							if #sourceQuests == 2 then
+								sourceQuests[1].g = sourceQuests[2].g;
+								table.remove(sourceQuests, 2);
+							end
+							for i,sourceQuest in ipairs(sourceQuests) do
+								table.insert(prereqs, sourceQuest);
+							end
+						end
+					else
+						prereqs = orig[#orig].g;
+					end
+				until not prereqs or #prereqs < 1;
+			end
+			popout.data = {
+				["text"] = "Quest Chain Requirements",
+				["description"] = "The following quests need to be completed before being able to complete the final quest.",
+				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+				["g"] = g,
+				["hideText"] = true
+			};
+		elseif group.g then
+			-- This is already a container with accurate numbers.
+			popout.data = group;
+		else
+			-- This is a standalone item
+			group.visible = true;
+			popout.data = {
+				["text"] = "Standalone Item",
+				["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
+				["g"] = { group },
+			};
 		end
-		popout.data = {
-			["text"] = "Quest Chain Requirements",
-			["description"] = "The following quests need to be completed before being able to complete the final quest.",
-			["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-			["g"] = g,
-			["hideText"] = true
-		};
-	elseif group.g then
-		-- This is already a container with accurate numbers.
-		popout.data = group;
-	else
-		-- This is a standalone item
-		group.visible = true;
-		group.hideText = true;
-		popout.data = {
-			["text"] = "Standalone Item",
-			["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-			["g"] = { group },
-		};
+		
+		-- Clone the data and then insert it into the Raw Data table.
+		popout.data = CloneData(popout.data);
+		popout.data.hideText = true;
+		popout.data.visible = true;
+		popout.data.indent = 0;
+		popout.data.total = 0;
+		popout.data.progress = 0;
+		BuildGroups(popout.data, popout.data.g);
+		UpdateGroups(popout.data, popout.data.g);
+		table.insert(app.RawData, popout.data);
 	end
-  
-	popout.data = CloneData(popout.data);
-	popout.data.visible = true;
-	popout.data.indent = 0;
-	popout.data.total = 0;
-	popout.data.progress = 0;
-	BuildGroups(popout.data, popout.data.g);
-	UpdateGroups(popout.data, popout.data.g);
 	if IsAltKeyDown() then
 		AddTomTomWaypoint(popout.data, false);
 	else
 		if not popout.data.expanded then
 			ExpandGroupsRecursively(popout.data, true, true);
 		end
-		--ExportData(popout.data);
 		popout:Toggle(true);
 	end
 end
@@ -8185,6 +8188,11 @@ local function UpdateWindow(self, force, got)
 	end
 	if self.data and (force or self:IsVisible()) then
 		self.data.expanded = true;
+		if self.shouldFullRefresh and (force or got) then
+			self.data.progress = 0;
+			self.data.total = 0;
+			UpdateGroups(self.data, self.data.g);
+		end
 		ProcessGroup(self.rowData, self.data);
 		
 		-- Does this user have everything?
@@ -8263,6 +8271,7 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
+		table.insert(app.RawData, allData);
 		
 		-- Dungeons & Raids
 		db = {};
@@ -8306,6 +8315,7 @@ function app:GetDataCache()
 			db = app.CreateAchievement(4496, app.Categories.Achievements);	-- It's Over Nine Thousand
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
+			db.npcID = -4;
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -8765,6 +8775,7 @@ function app:GetDataCache()
 		allData.total = 0;
 		local g, db = {};
 		allData.g = g;
+		table.insert(app.RawData, allData);
 		
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -8956,25 +8967,11 @@ function app:RefreshData(lazy, got, manual)
 		-- Send an Update to the Windows to Rebuild their Row Data
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
-			local allData = app:GetDataCache();
-			allData.progress = 0;
-			allData.total = 0;
-			UpdateGroups(allData, allData.g);
-			app.HolidayHeader.progress = 0;
-			app.HolidayHeader.total = 0;
-			UpdateGroups(app.HolidayHeader, app.HolidayHeader.g);
-			app.HolidayHeader.visible = app.HolidayHeader.total > 0 and app.GroupVisibilityFilter(app.HolidayHeader);
-			
-			-- If we're dealing with a mini list, we need to handle it differently.
-			if app.MiniListHeader then
-				if app.MiniListHeader.collectible then
-					app.MiniListHeader.progress = app.MiniListHeader.collected and 1 or 0;
-					app.MiniListHeader.total = 1;
-				else
-					app.MiniListHeader.progress = 0;
-					app.MiniListHeader.total = 0;
-				end
-				UpdateGroups(app.MiniListHeader, app.MiniListHeader.g);
+			app:GetDataCache();
+			for i,data in ipairs(app.RawData) do
+				data.progress = 0;
+				data.total = 0;
+				UpdateGroups(data, data.g);
 			end
 			
 			-- Forcibly update the windows.
@@ -9541,7 +9538,7 @@ end):Show();
 			self.initialized = true;
 			self.openedOnLogin = false;
 			self.shouldUpdateMiniList = false;
-			self.data = {
+			self.data = app.CreateMap(946, {
 				['text'] = "Mini List",
 				['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
 				["description"] = "This list contains the relevant information for your current zone.",
@@ -9559,138 +9556,164 @@ end):Show();
 						end,
 					},
 				},
-			};
+			});
+			table.insert(app.RawData, self.data);
 			self.rawData = {};
 			self.Rebuild = function(self)
-				local self = app:GetWindow("CurrentInstance");
 				local results = SearchForField("mapID", self.mapID);
 				if results then
 					-- Simplify the returned groups
-					if #results < 2 then
-						-- Only one object matched.
-						results = CloneData(results[1]);
-						app.MiniListHeader = nil;
-					else
-						-- A couple of objects matched, let's make a header.
-						local header = app.CreateMap(self.mapID, { g = {}, expanded = true, visible = true, total = 0, progress = 0 });
-						app.MiniListHeader = header;
-						table.wipe(app.HolidayHeader.g);
-						app.HolidayHeader.progress = 0;
-						app.HolidayHeader.total = 0;
-						for i, group in ipairs(results) do
-							local clone = {};
-                            for key,value in pairs(group) do
-                                if key == "maps" then
-                                    local maps = {};
-                                    for i,mapID in ipairs(value) do
-                                        tinsert(maps, mapID);
-                                    end
-                                    clone[key] = maps;
-								elseif key == "g" then
-                                    local g = {};
-                                    for i,o in ipairs(value) do
-										o = CloneData(o);
-										ExpandGroupsRecursively(o, false);
-                                        tinsert(g, o);
-                                    end
-                                    clone[key] = g;
-                                else
-                                    clone[key] = value;
-                                end
-                            end
-                            setmetatable(clone, getmetatable(group));
-                            group = clone;
-							
-							-- If this is relative to a holiday, let's do something special
-							if GetRelativeField(group, "npcID", -3) then
-								if group.achievementID then
-									if group.criteriaID then
-										if group.parent.achievementID then
-											group = app.CreateAchievement(group.parent.achievementID, 
-												{ g = { group }, total = group.total, progress = group.progress, 
-													u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-										else
-											group = app.CreateAchievement(group.achievementID,
-												{ g = { group }, total = group.total, progress = group.progress,
-													u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
-										end
-									end
-								elseif group.criteriaID and group.parent.achievementID then
-									group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-										u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+					local groups, holiday = {}, {};
+					local header = app.CreateMap(self.mapID, { g = groups });
+					for i, group in ipairs(results) do
+						local clone = {};
+						for key,value in pairs(group) do
+							if key == "maps" then
+								local maps = {};
+								for i,mapID in ipairs(value) do
+									tinsert(maps, mapID);
 								end
-								MergeObject(app.HolidayHeader.g, group);
-							elseif group.instanceID then
-								local temp = { header };
-								header.instanceID = group.instanceID;
-								setmetatable(header, app.BaseInstance);
-								MergeObject(temp, group);
-								if #temp > 1 then MergeObject(header.g, group); end
-							elseif group.classID and not header.instanceID then
-								local temp = { header };
-								header.classID = group.classID;
-								setmetatable(header, app.BaseCharacterClass);
-								MergeObject(temp, group);
-								if #temp > 1 then MergeObject(header.g, group); end
-							elseif group.mapID and not header.instanceID then
-								local temp = { header };
-								group.mapID = header.mapID;
-								MergeObject(temp, group);
-								if #temp > 1 then MergeObject(header.g, group); end
-							elseif group.achievementID then
+								clone[key] = maps;
+							elseif key == "g" then
+								local g = {};
+								for i,o in ipairs(value) do
+									o = CloneData(o);
+									ExpandGroupsRecursively(o, false);
+									tinsert(g, o);
+								end
+								clone[key] = g;
+							else
+								clone[key] = value;
+							end
+						end
+						setmetatable(clone, getmetatable(group));
+						group = clone;
+						
+						-- If this is relative to a holiday, let's do something special
+						if GetRelativeField(group, "npcID", -3) then
+							if group.achievementID then
 								if group.criteriaID then
 									if group.parent.achievementID then
 										group = app.CreateAchievement(group.parent.achievementID, 
-											{ g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
+											{ g = { group }, total = group.total, progress = group.progress, 
+												u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 									else
 										group = app.CreateAchievement(group.achievementID,
-											{ g = { group }, total = group.total, progress = group.progress, u = group.u });
+											{ g = { group }, total = group.total, progress = group.progress,
+												u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
 									end
-									MergeObject(header.g, group, 1);
-								else
-									MergeObject(header.g, group);
 								end
 							elseif group.criteriaID and group.parent.achievementID then
-								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, u = group.parent.u });
-								MergeObject(header.g, group, 1);
+								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
+									u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+							end
+							
+							local holidayID = GetRelativeValue(group, "holidayID");
+							local u = group.u or GetRelativeValue(group, "u");
+							if group.key == "npcID" then
+								if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+									if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
+								elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+									if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
+								elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
+									if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+								end
+							elseif group.key == "questID" then
+								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+							end
+							if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
+							MergeObject(holiday, group);
+						elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+							header.key = group.key;
+							header[group.key] = group[group.key];
+							MergeObject({header}, group);
+						elseif group.key == "npcID" then
+							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+								MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+								MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
+							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
+								MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
 							else
-								MergeObject(header.g, group);
+								MergeObject(groups, group);
+							end
+						elseif group.key == "questID" then
+							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+						else
+							MergeObject(groups, group);
+						end
+					end
+					
+					if #holiday > 0 then
+						-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
+						local holidays, unlinked = {}, {};
+						for i=#holiday,1,-1 do
+							local group = holiday[i];
+							if group.holidayID then
+								if group.u then holidays[group.u] = group; end
+							elseif group.u then
+								local temp = unlinked[group.u];
+								if not temp then
+									temp = {};
+									unlinked[group.u] = temp;
+								end
+								table.insert(temp, group);
+								table.remove(holiday, i);
 							end
 						end
-						
-						if #app.HolidayHeader.g > 0 then
-							app.HolidayHeader.expanded = true;
-							app.HolidayHeader.visible = true;
-							app.HolidayHeader.parent = header;
-							tinsert(header.g, 1, app.HolidayHeader);
-							app.HolidayHeader.progress = 0;
-							app.HolidayHeader.total = 0;
-							app.UpdateGroups(app.HolidayHeader, app.HolidayHeader.g);
-							app.HolidayHeader.visible = app.HolidayHeader.total > 0 and app.GroupVisibilityFilter(app.HolidayHeader);
-						else
-							app.HolidayHeader.visible = false;
-						end
-						
-						header.u = nil;
-						if #results > 1 and not header.mapID then
-							header.visible = true;
-							setmetatable(header,
-								header.instanceID and app.BaseInstance
-								or header.classID and app.BaseCharacterClass
-								or header.achievementID and app.BaseAchievement
-								or app.BaseMap);
-							if header.collectible then
-								if header.collected then header.progress = header.progress + 1; end
-								app.MiniListHeader.total = app.MiniListHeader.total + 1;
-								if GetDataMember("AutomateTomTomWaypoints", true) then
-									AddTomTomWaypoint(header, true);
+						for u,temp in pairs(unlinked) do
+							local h = holidays[u];
+							if h then
+								for i,data in ipairs(temp) do
+									MergeObject(h.g, data);
+								end
+							else
+								-- Attempt to scan for the main holiday header.
+								local done = false;
+								for j,o in ipairs(SearchForField("npcID", -3)) do
+									if o.g and #o.g > 5 and o.g[1].holidayID then
+										for k,group in ipairs(o.g) do
+											if group.holidayID and group.u == u then
+												MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
+												done = true;
+											end
+										end
+										break;
+									end
+								end
+								if not done then
+									for i,data in ipairs(temp) do
+										MergeObject(holiday, data);
+									end
 								end
 							end
 						end
 						
-						-- Swap out the map data for the header.
-						results = header;
+						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 					end
+					
+					-- Swap out the map data for the header.
+					results = header;
+					
+					if IsSameMap(self.data, results) then
+						ReapplyExpand(self.data.g, results.g);
+					else
+						ExpandGroupsRecursively(results, true);
+					end
+					
+					for key,value in pairs(self.data) do
+						self.data[key] = nil;
+					end
+					for key,value in pairs(results) do
+						self.data[key] = value;
+					end
+					
+					self.data.u = nil;
+					self.data.mapID = self.mapID;
+					setmetatable(self.data,
+						self.data.instanceID and app.BaseInstance
+						or self.data.classID and app.BaseCharacterClass
+						or app.BaseMap);
 					
 					-- If we have determined that we want to expand this section, then do it
 					if results.g then
@@ -9711,12 +9734,6 @@ end):Show();
 						end
 						for i,o in ipairs(bottom) do
 							table.insert(results.g, o);
-						end
-						
-						if self.data and IsSameMap(self.data, results) then
-							ReapplyExpand(self.data.g, results.g);
-						else
-							ExpandGroupsRecursively(results, true);
 						end
 						
 						-- if enabled minimize rows based on difficulty 
@@ -9759,8 +9776,11 @@ end):Show();
 					end
 					
 					-- Check to see completion...
-					self.data = results;
 					BuildGroups(self.data, self.data.g);
+					UpdateGroups(self.data, self.data.g);
+					if GetDataMember("AutomateTomTomWaypoints", true) then
+						AddTomTomWaypoint(self.data, true);
+					end
 				end
 				
 				-- If we don't have any map data on this area, report it to the chat window.
@@ -10723,7 +10743,7 @@ end);
 						end
 						if not selected then selected = temp[#temp - 1]; end
 						if selected then
-							MergeObject(self.data.g, selected);
+							MergeObject(self.data.g, CreateObject(selected));
 						else
 							app.print("There was nothing to randomly select from.");
 						end
@@ -10736,6 +10756,7 @@ end);
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
+				BuildGroups(self.data, self.data.g);
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
@@ -10753,6 +10774,8 @@ end);
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
+		self.data.indent = 0;
+		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
 	end);
@@ -11729,10 +11752,11 @@ app.events.ADDON_LOADED = function(addonName)
 			
 			-- Display Test for Raw Data + Filtering
 			local window = app:GetWindow("AuctionData");
+			window.shouldFullRefresh = true;
 			window:SetParent(AuctionFrame);
 			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
 			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
-			window.data = { ["shouldFullRefresh"] = true, ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
+			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
 			for key, value in pairs(searchResultsByKey) do
 				local count = 0;
 				local subdata = {};
@@ -11984,7 +12008,6 @@ app.events.ADDON_LOADED = function(addonName)
 				
 				frame:Show();
 			else
-				app:GetWindow("AuctionData"):Hide();
 				frame:Hide();
 			end
 		end);
