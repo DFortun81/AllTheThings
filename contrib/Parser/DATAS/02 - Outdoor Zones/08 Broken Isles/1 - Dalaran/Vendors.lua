@@ -14,13 +14,17 @@ _.Zones =
 							i(44693),	-- Wound Dressing
 						},
 					}),
-					nh(119486, {	-- Apothecary Lee <Legion Gladiator>
+					{	-- Apothecary Lee <Legion Gladiator>
+						["npcID"] = 119486,		-- Apothecary Lee <Legion Gladiator>
+						["races"] = HORDE_ONLY,
 						["itemID"] = 137642,	-- Mark of Honor
 						["coords"] = {
 							{ 56.59, 28.17, 627 },
 						},
 						["g"] = {
-							gssh(1071, {	-- Combatant
+							{	-- Combatant
+								["setSubHeaderID"] = 1071,	-- Combatant
+								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 								["g"] = {
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
@@ -141,17 +145,38 @@ _.Zones =
 										i(135990),	-- Vindictive Combatant's Leather Legguards
 										i(135987),	-- Vindictive Combatant's Leather Slippers
 									}),
-									i(146171, {	-- Vindictive Combatant's Ironskin Armor
-										i(135964),	-- Vindictive Combatant's Ironskin Helm
-										i(135966),	-- Vindictive Combatant's Ironskin Spaulders
-										i(136023),	-- Vindictive Combatant's Ironskin Cloak
-										i(135967),	-- Vindictive Combatant's Ironskin Tunic
-										i(135969),	-- Vindictive Combatant's Ironskin Wristguards
-										i(135963),	-- Vindictive Combatant's Ironskin Gloves
-										i(135968),	-- Vindictive Combatant's Ironskin Belt
-										i(135965),	-- Vindictive Combatant's Ironskin Legguards
-										i(135962),	-- Vindictive Combatant's Ironskin Slippers
-									}),
+									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
+										["g"] = {
+											{	-- Vindictive Combatant's Ironskin Helm
+												["itemID"] = 135964,	-- Vindictive Combatant's Ironskin Helm
+											},
+											{	-- Vindictive Combatant's Ironskin Spaulders
+												["itemID"] = 135966,	-- Vindictive Combatant's Ironskin Spaulders
+											},
+											{	-- Vindictive Combatant's Ironskin Cloak
+												["itemID"] = 136023,	-- Vindictive Combatant's Ironskin Cloak
+											},
+											{	-- Vindictive Combatant's Ironskin Tunic
+												["itemID"] = 135967,	-- Vindictive Combatant's Ironskin Tunic
+											},
+											{	-- Vindictive Combatant's Ironskin Wristguards
+												["itemID"] = 135969,	-- Vindictive Combatant's Ironskin Wristguards
+											},
+											{	-- Vindictive Combatant's Ironskin Gloves
+												["itemID"] = 135963,	-- Vindictive Combatant's Ironskin Gloves
+											},
+											{	-- Vindictive Combatant's Ironskin Belt
+												["itemID"] = 135968,	-- Vindictive Combatant's Ironskin Belt
+											},
+											{	-- Vindictive Combatant's Ironskin Legguards
+												["itemID"] = 135965,	-- Vindictive Combatant's Ironskin Legguards
+											},
+											{	-- Vindictive Combatant's Ironskin Slippers
+												["itemID"] = 135962,	-- Vindictive Combatant's Ironskin Slippers
+											},
+										},
+									},
 									i(146265, {	-- Vindictive Combatant's Felskin Armor
 										["classes"] = { 12 },
 										["g"] = {
@@ -424,17 +449,38 @@ _.Zones =
 										i(145199),	-- Cruel Combatant's Leather Legguards
 										i(145193),	-- Cruel Combatant's Leather Slippers
 									}),
-									i(147683, {	-- Cruel Combatant's Ironskin Armor
-										i(145135),	-- Cruel Combatant's Ironskin Helm
-										i(145139),	-- Cruel Combatant's Ironskin Spaulders
-										i(145037),	-- Cruel Combatant's Ironskin Cloak
-										i(145141),	-- Cruel Combatant's Ironskin Tunic
-										i(145145),	-- Cruel Combatant's Ironskin Wristguards
-										i(145133),	-- Cruel Combatant's Ironskin Gloves
-										i(145143),	-- Cruel Combatant's Ironskin Belt
-										i(145137),	-- Cruel Combatant's Ironskin Legguards
-										i(145131),	-- Cruel Combatant's Ironskin Slippers
-									}),
+									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 147683,	-- Ensemble: Cruel Combatant's Ironskin Armor
+										["g"] = {
+											{	-- Cruel Combatant's Ironskin Helm
+												["itemID"] = 145135,	-- Cruel Combatant's Ironskin Helm
+											},
+											{	-- Cruel Combatant's Ironskin Spaulders
+												["itemID"] = 145139,	-- Cruel Combatant's Ironskin Spaulders
+											},
+											{	-- Cruel Combatant's Ironskin Cloak
+												["itemID"] = 145037,	-- Cruel Combatant's Ironskin Cloak
+											},
+											{	-- Cruel Combatant's Ironskin Tunic
+												["itemID"] = 145141,	-- Cruel Combatant's Ironskin Tunic
+											},
+											{	-- Cruel Combatant's Ironskin Wristguards
+												["itemID"] = 145145,	-- Cruel Combatant's Ironskin Wristguards
+											},
+											{	-- Cruel Combatant's Ironskin Gloves
+												["itemID"] = 145133,	-- Cruel Combatant's Ironskin Gloves
+											},
+											{	-- Cruel Combatant's Ironskin Belt
+												["itemID"] = 145143,	-- Cruel Combatant's Ironskin Belt
+											},
+											{	-- Cruel Combatant's Ironskin Legguards
+												["itemID"] = 145137,	-- Cruel Combatant's Ironskin Legguards
+											},
+											{	-- Cruel Combatant's Ironskin Slippers
+												["itemID"] = 145131,	-- Cruel Combatant's Ironskin Slippers
+											},
+										},
+									},
 									i(147679, {	-- Cruel Combatant's Felskin Armor
 										["g"] = {
 											i(145073),	-- Cruel Combatant's Felskin Helm
@@ -653,6 +699,7 @@ _.Zones =
 											},
 										},
 									},
+									
 									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
 										["g"] = {
@@ -685,6 +732,40 @@ _.Zones =
 											},
 										},
 									},
+									
+									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 150258,	-- Ensemble: Fierce Combatant's Ironskin Armor
+										["g"] = {
+											{	-- Fierce Combatant's Ironskin Helm
+												["itemID"] = 149615,	-- Fierce Combatant's Ironskin Helm
+											},
+											{	-- Fierce Combatant's Ironskin Spaulders
+												["itemID"] = 149619,	-- Fierce Combatant's Ironskin Spaulders
+											},
+											{	-- Fierce Combatant's Ironskin Cloak
+												["itemID"] = 149516,	-- Fierce Combatant's Ironskin Cloak
+											},
+											{	-- Fierce Combatant's Ironskin Tunic
+												["itemID"] = 149621,	-- Fierce Combatant's Ironskin Tunic
+											},
+											{	-- Fierce Combatant's Ironskin Wristguards
+												["itemID"] = 149625,	-- Fierce Combatant's Ironskin Wristguards
+											},
+											{	-- Fierce Combatant's Ironskin Gloves
+												["itemID"] = 149613,	-- Fierce Combatant's Ironskin Gloves
+											},
+											{	-- Fierce Combatant's Ironskin Belt
+												["itemID"] = 149623,	-- Fierce Combatant's Ironskin Belt
+											},
+											{	-- Fierce Combatant's Ironskin Legguards
+												["itemID"] = 149617,	-- Fierce Combatant's Ironskin Legguards
+											},
+											{	-- Fierce Combatant's Ironskin Slippers
+												["itemID"] = 149611,	-- Fierce Combatant's Ironskin Slippers
+											},
+										},
+									},
+									
 									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
 										["g"] = {
@@ -717,6 +798,7 @@ _.Zones =
 											},
 										},
 									},
+									
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
 										["g"] = {
@@ -814,9 +896,9 @@ _.Zones =
 										},
 									},
 								},
-								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-							}),
-							gssh(1414, {	-- Gladiator
+							},
+							{	-- Gladiator
+								["setSubHeaderID"] = 1414,	-- Combatant
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION Season 1 & 2
@@ -938,17 +1020,38 @@ _.Zones =
 										i(135764),	-- Vindictive Gladiator's Leather Legguards
 										i(135761),	-- Vindictive Gladiator's Leather Slippers
 									}),
-									i(146143, {	-- Vindictive Gladiator's Ironskin Armor
-										i(135738),	-- Vindictive Gladiator's Ironskin Helm
-										i(135740),	-- Vindictive Gladiator's Ironskin Spaulders
-										i(135797),	-- Vindictive Gladiator's Ironskin Cloak
-										i(135741),	-- Vindictive Gladiator's Ironskin Tunic
-										i(135743),	-- Vindictive Gladiator's Ironskin Wristguards
-										i(135737),	-- Vindictive Gladiator's Ironskin Gloves
-										i(135742),	-- Vindictive Gladiator's Ironskin Belt
-										i(135739),	-- Vindictive Gladiator's Ironskin Legguards
-										i(135736),	-- Vindictive Gladiator's Ironskin Slippers
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 146143,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
+										["g"] = {
+											{	-- Vindictive Gladiator's Ironskin Helm
+												["itemID"] = 135738,	-- Vindictive Gladiator's Ironskin Helm
+											},
+											{	-- Vindictive Gladiator's Ironskin Spaulders
+												["itemID"] = 135740,	-- Vindictive Gladiator's Ironskin Spaulders
+											},
+											{	-- Vindictive Gladiator's Ironskin Cloak
+												["itemID"] = 135797,	-- Vindictive Gladiator's Ironskin Cloak
+											},
+											{	-- Vindictive Gladiator's Ironskin Tunic
+												["itemID"] = 135741,	-- Vindictive Gladiator's Ironskin Tunic
+											},
+											{	-- Vindictive Gladiator's Ironskin Wristguards
+												["itemID"] = 135743,	-- Vindictive Gladiator's Ironskin Wristguards
+											},
+											{	-- Vindictive Gladiator's Ironskin Gloves
+												["itemID"] = 135737,	-- Vindictive Gladiator's Ironskin Gloves
+											},
+											{	-- Vindictive Gladiator's Ironskin Belt
+												["itemID"] = 135742,	-- Vindictive Gladiator's Ironskin Belt
+											},
+											{	-- Vindictive Gladiator's Ironskin Legguards
+												["itemID"] = 135739,	-- Vindictive Gladiator's Ironskin Legguards
+											},
+											{	-- Vindictive Gladiator's Ironskin Slippers
+												["itemID"] = 135736,	-- Vindictive Gladiator's Ironskin Slippers
+											},
+										},
+									},
 									i(146263, {	-- Vindictive Gladiator's Felskin Armor
 										i(136289),	-- Vindictive Gladiator's Felskin Helm
 										i(136292),	-- Vindictive Gladiator's Felskin Spaulders
@@ -1218,17 +1321,38 @@ _.Zones =
 										i(144707),	-- Cruel Gladiator's Leather Legguards
 										i(144701),	-- Cruel Gladiator's Leather Slippers
 									}),
-									i(147655, {	-- Cruel Gladiator's Ironskin Armor
-										i(144643),	-- Cruel Gladiator's Ironskin Helm
-										i(144647),	-- Cruel Gladiator's Ironskin Spaulders
-										i(144545),	-- Cruel Gladiator's Ironskin Cloak
-										i(144649),	-- Cruel Gladiator's Ironskin Tunic
-										i(144653),	-- Cruel Gladiator's Ironskin Wristguards
-										i(144641),	-- Cruel Gladiator's Ironskin Gloves
-										i(144651),	-- Cruel Gladiator's Ironskin Belt
-										i(144645),	-- Cruel Gladiator's Ironskin Legguards
-										i(144639),	-- Cruel Gladiator's Ironskin Slippers
-									}),
+									{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 147655,	-- Ensemble: Cruel Gladiator's Ironskin Armor
+										["g"] = {
+											{	-- Cruel Gladiator's Ironskin Helm
+												["itemID"] = 144643,	-- Cruel Gladiator's Ironskin Helm
+											},
+											{	-- Cruel Gladiator's Ironskin Spaulders
+												["itemID"] = 144647,	-- Cruel Gladiator's Ironskin Spaulders
+											},
+											{	-- Cruel Gladiator's Ironskin Cloak
+												["itemID"] = 144545,	-- Cruel Gladiator's Ironskin Cloak
+											},
+											{	-- Cruel Gladiator's Ironskin Tunic
+												["itemID"] = 144649,	-- Cruel Gladiator's Ironskin Tunic
+											},
+											{	-- Cruel Gladiator's Ironskin Wristguards
+												["itemID"] = 144653,	-- Cruel Gladiator's Ironskin Wristguards
+											},
+											{	-- Cruel Gladiator's Ironskin Gloves
+												["itemID"] = 144641,	-- Cruel Gladiator's Ironskin Gloves
+											},
+											{	-- Cruel Gladiator's Ironskin Belt
+												["itemID"] = 144651,	-- Cruel Gladiator's Ironskin Belt
+											},
+											{	-- Cruel Gladiator's Ironskin Legguards
+												["itemID"] = 144645,	-- Cruel Gladiator's Ironskin Legguards
+											},
+											{	-- Cruel Gladiator's Ironskin Slippers
+												["itemID"] = 144639,	-- Cruel Gladiator's Ironskin Slippers
+											},
+										},
+									},
 									i(147652, {	-- Cruel Gladiator's Felskin Armor
 										i(144581),	-- Cruel Gladiator's Felskin Helm
 										i(144585),	-- Cruel Gladiator's Felskin Spaulders
@@ -1444,6 +1568,7 @@ _.Zones =
 											},
 										},
 									},
+									
 									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 149481,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
 										["g"] = {
@@ -1476,6 +1601,40 @@ _.Zones =
 											},
 										},
 									},
+									
+									{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 149488,	-- Ensemble: Fierce Gladiator's Ironskin Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Ironskin Helm
+												["itemID"] = 148018,	-- Fierce Gladiator's Ironskin Helm
+											},
+											{	-- Fierce Gladiator's Ironskin Spaulders
+												["itemID"] = 148022,	-- Fierce Gladiator's Ironskin Spaulders
+											},
+											{	-- Fierce Gladiator's Ironskin Cloak
+												["itemID"] = 147920,	-- Fierce Gladiator's Ironskin Cloak
+											},
+											{	-- Fierce Gladiator's Ironskin Tunic
+												["itemID"] = 148024,	-- Fierce Gladiator's Ironskin Tunic
+											},
+											{	-- Fierce Gladiator's Ironskin Wristguards
+												["itemID"] = 148028,	-- Fierce Gladiator's Ironskin Wristguards
+											},
+											{	-- Fierce Gladiator's Ironskin Gloves
+												["itemID"] = 148016,	-- Fierce Gladiator's Ironskin Gloves
+											},
+											{	-- Fierce Gladiator's Ironskin Belt
+												["itemID"] = 148026,	-- Fierce Gladiator's Ironskin Belt
+											},
+											{	-- Fierce Gladiator's Ironskin Legguards
+												["itemID"] = 148020,	-- Fierce Gladiator's Ironskin Legguards
+											},
+											{	-- Fierce Gladiator's Ironskin Slippers
+												["itemID"] = 148014,	-- Fierce Gladiator's Ironskin Slippers
+											},
+										},
+									},
+									
 									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
 										["g"] = {
@@ -1508,6 +1667,7 @@ _.Zones =
 											},
 										},
 									},
+									
 									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 149499,	-- Ensemble: Fierce Gladiator's Scaled Armor
 										["g"] = {
@@ -1605,9 +1765,9 @@ _.Zones =
 										},
 									},
 								},
-							}),
+							},
 						},
-					}),
+					},
 					n(106655,  {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 						["currencyID"] = 1533,	-- Wakening Essences
 						["coord"] = { 45.21, 29.11, 627 },
