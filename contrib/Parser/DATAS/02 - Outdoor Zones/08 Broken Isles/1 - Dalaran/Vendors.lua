@@ -143,17 +143,41 @@ _.Zones =
 											},
 										},
 									},
-									i(146173, {	-- Vindictive Combatant's Leather Armor
-										i(135989),	-- Vindictive Combatant's Leather Helm
-										i(135991),	-- Vindictive Combatant's Leather Spaulders
-										i(136871),	-- Vindictive Combatant's Shadowcape
-										i(135986),	-- Vindictive Combatant's Leather Tunic
-										i(135993),	-- Vindictive Combatant's Leather Wristguards
-										i(135988),	-- Vindictive Combatant's Leather Gloves
-										i(135992),	-- Vindictive Combatant's Leather Belt
-										i(135990),	-- Vindictive Combatant's Leather Legguards
-										i(135987),	-- Vindictive Combatant's Leather Slippers
-									}),
+									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 146173,	-- Ensemble: Vindictive Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Vindictive Combatant's Leather Helm
+												["itemID"] = 135989,	-- Vindictive Combatant's Leather Helm
+											},
+											{	-- Vindictive Combatant's Leather Spaulders
+												["itemID"] = 135991,	-- Vindictive Combatant's Leather Spaulders
+											},
+											{	-- Vindictive Combatant's Shadowcape
+												["itemID"] = 136871,	-- Vindictive Combatant's Shadowcape
+											},
+											{	-- Vindictive Combatant's Leather Tunic
+												["itemID"] = 135986,	-- Vindictive Combatant's Leather Tunic
+											},
+											{	-- Vindictive Combatant's Leather Wristguards
+												["itemID"] = 135993,	-- Vindictive Combatant's Leather Wristguards
+											},
+											{	-- Vindictive Combatant's Leather Gloves
+												["itemID"] = 135988,	-- Vindictive Combatant's Leather Gloves
+											},
+											{	-- Vindictive Combatant's Leather Belt
+												["itemID"] = 135992,	-- Vindictive Combatant's Leather Belt
+											},
+											{	-- Vindictive Combatant's Leather Legguards
+												["itemID"] = 135990,	-- Vindictive Combatant's Leather Legguards
+											},
+											{	-- Vindictive Combatant's Leather Slippers
+												["itemID"] = 135987,	-- Vindictive Combatant's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
 										["classes"] = {
@@ -516,17 +540,41 @@ _.Zones =
 											},
 										},
 									},
-									i(147686, {	-- Cruel Combatant's Leather Armor
-										i(145197),	-- Cruel Combatant's Leather Helm
-										i(145201),	-- Cruel Combatant's Leather Spaulders
-										i(145043),	-- Cruel Combatant's Shadowcape
-										i(145191),	-- Cruel Combatant's Leather Tunic
-										i(145205),	-- Cruel Combatant's Leather Wristguards
-										i(145195),	-- Cruel Combatant's Leather Gloves
-										i(145203),	-- Cruel Combatant's Leather Belt
-										i(145199),	-- Cruel Combatant's Leather Legguards
-										i(145193),	-- Cruel Combatant's Leather Slippers
-									}),
+									{	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 147686,	-- Ensemble: Cruel Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Leather Helm
+												["itemID"] = 145197,	-- Cruel Combatant's Leather Helm
+											},
+											{	-- Cruel Combatant's Leather Spaulders
+												["itemID"] = 145201,	-- Cruel Combatant's Leather Spaulders
+											},
+											{	-- Cruel Combatant's Shadowcape
+												["itemID"] = 145043,	-- Cruel Combatant's Shadowcape
+											},
+											{	-- Cruel Combatant's Leather Tunic
+												["itemID"] = 145191,	-- Cruel Combatant's Leather Tunic
+											},
+											{	-- Cruel Combatant's Leather Wristguards
+												["itemID"] = 145205,	-- Cruel Combatant's Leather Wristguards
+											},
+											{	-- Cruel Combatant's Leather Gloves
+												["itemID"] = 145195,	-- Cruel Combatant's Leather Gloves
+											},
+											{	-- Cruel Combatant's Leather Belt
+												["itemID"] = 145203,	-- Cruel Combatant's Leather Belt
+											},
+											{	-- Cruel Combatant's Leather Legguards
+												["itemID"] = 145199,	-- Cruel Combatant's Leather Legguards
+											},
+											{	-- Cruel Combatant's Leather Slippers
+												["itemID"] = 145193,	-- Cruel Combatant's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147683,	-- Ensemble: Cruel Combatant's Ironskin Armor
 										["classes"] = {
@@ -879,7 +927,41 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 150261,	-- Ensemble: Fierce Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Fierce Combatant's Leather Helm
+												["itemID"] = 149677,	-- Fierce Combatant's Leather Helm
+											},
+											{	-- Fierce Combatant's Leather Spaulders
+												["itemID"] = 149681,	-- Fierce Combatant's Leather Spaulders
+											},
+											{	-- Fierce Combatant's Shadowcape
+												["itemID"] = 149522,	-- Fierce Combatant's Shadowcape
+											},
+											{	-- Fierce Combatant's Leather Tunic
+												["itemID"] = 149671,	-- Fierce Combatant's Leather Tunic
+											},
+											{	-- Fierce Combatant's Leather Wristguards
+												["itemID"] = 149685,	-- Fierce Combatant's Leather Wristguards
+											},
+											{	-- Fierce Combatant's Leather Gloves
+												["itemID"] = 149675,	-- Fierce Combatant's Leather Gloves
+											},
+											{	-- Fierce Combatant's Leather Belt
+												["itemID"] = 149683,	-- Fierce Combatant's Leather Belt
+											},
+											{	-- Fierce Combatant's Leather Legguards
+												["itemID"] = 149679,	-- Fierce Combatant's Leather Legguards
+											},
+											{	-- Fierce Combatant's Leather Slippers
+												["itemID"] = 149673,	-- Fierce Combatant's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 150258,	-- Ensemble: Fierce Combatant's Ironskin Armor
 										["classes"] = {
@@ -1248,17 +1330,41 @@ _.Zones =
 											},
 										},
 									},
-									i(146145, {	-- Vindictive Gladiator's Leather Armor
-										i(135763),	-- Vindictive Gladiator's Leather Helm
-										i(135765),	-- Vindictive Gladiator's Leather Spaulders
-										i(136865),	-- Vindictive Gladiator's Shadowcape
-										i(135760),	-- Vindictive Gladiator's Leather Tunic
-										i(135767),	-- Vindictive Gladiator's Leather Wristguards
-										i(135762),	-- Vindictive Gladiator's Leather Gloves
-										i(135766),	-- Vindictive Gladiator's Leather Belt
-										i(135764),	-- Vindictive Gladiator's Leather Legguards
-										i(135761),	-- Vindictive Gladiator's Leather Slippers
-									}),
+									{	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 146145,	-- Ensemble: Vindictive Gladiator's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Vindictive Gladiator's Leather Helm
+												["itemID"] = 135763,	-- Vindictive Gladiator's Leather Helm
+											},
+											{	-- Vindictive Gladiator's Leather Spaulders
+												["itemID"] = 135765,	-- Vindictive Gladiator's Leather Spaulders
+											},
+											{	-- Vindictive Gladiator's Shadowcape
+												["itemID"] = 136865,	-- Vindictive Gladiator's Shadowcape
+											},
+											{	-- Vindictive Gladiator's Leather Tunic
+												["itemID"] = 135760,	-- Vindictive Gladiator's Leather Tunic
+											},
+											{	-- Vindictive Gladiator's Leather Wristguards
+												["itemID"] = 135767,	-- Vindictive Gladiator's Leather Wristguards
+											},
+											{	-- Vindictive Gladiator's Leather Gloves
+												["itemID"] = 135762,	-- Vindictive Gladiator's Leather Gloves
+											},
+											{	-- Vindictive Gladiator's Leather Belt
+												["itemID"] = 135766,	-- Vindictive Gladiator's Leather Belt
+											},
+											{	-- Vindictive Gladiator's Leather Legguards
+												["itemID"] = 135764,	-- Vindictive Gladiator's Leather Legguards
+											},
+											{	-- Vindictive Gladiator's Leather Slippers
+												["itemID"] = 135761,	-- Vindictive Gladiator's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146143,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
 										["classes"] = {
@@ -1621,17 +1727,41 @@ _.Zones =
 											},
 										},
 									},
-									i(147658, {	-- Cruel Gladiator's Leather Armor
-										i(144705),	-- Cruel Gladiator's Leather Helm
-										i(144709),	-- Cruel Gladiator's Leather Spaulders
-										i(144551),	-- Cruel Gladiator's Shadowcape
-										i(144699),	-- Cruel Gladiator's Leather Tunic
-										i(144713),	-- Cruel Gladiator's Leather Wristguards
-										i(144703),	-- Cruel Gladiator's Leather Gloves
-										i(144711),	-- Cruel Gladiator's Leather Belt
-										i(144707),	-- Cruel Gladiator's Leather Legguards
-										i(144701),	-- Cruel Gladiator's Leather Slippers
-									}),
+									{	-- Ensemble: Cruel Gladiator's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 147658,	-- Ensemble: Cruel Gladiator's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Cruel Gladiator's Leather Helm
+												["itemID"] = 144705,	-- Cruel Gladiator's Leather Helm
+											},
+											{	-- Cruel Gladiator's Leather Spaulders
+												["itemID"] = 144709,	-- Cruel Gladiator's Leather Spaulders
+											},
+											{	-- Cruel Gladiator's Shadowcape
+												["itemID"] = 144551,	-- Cruel Gladiator's Shadowcape
+											},
+											{	-- Cruel Gladiator's Leather Tunic
+												["itemID"] = 144699,	-- Cruel Gladiator's Leather Tunic
+											},
+											{	-- Cruel Gladiator's Leather Wristguards
+												["itemID"] = 144713,	-- Cruel Gladiator's Leather Wristguards
+											},
+											{	-- Cruel Gladiator's Leather Gloves
+												["itemID"] = 144703,	-- Cruel Gladiator's Leather Gloves
+											},
+											{	-- Cruel Gladiator's Leather Belt
+												["itemID"] = 144711,	-- Cruel Gladiator's Leather Belt
+											},
+											{	-- Cruel Gladiator's Leather Legguards
+												["itemID"] = 144707,	-- Cruel Gladiator's Leather Legguards
+											},
+											{	-- Cruel Gladiator's Leather Slippers
+												["itemID"] = 144701,	-- Cruel Gladiator's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147655,	-- Ensemble: Cruel Gladiator's Ironskin Armor
 										["classes"] = {
@@ -1984,7 +2114,38 @@ _.Zones =
 											},
 										},
 									},
-									
+									{	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 149491,	-- Ensemble: Fierce Gladiator's Leather Armor
+										["g"] = {
+											{	-- Fierce Gladiator's Leather Helm
+												["itemID"] = 148080,	-- Fierce Gladiator's Leather Helm
+											},
+											{	-- Fierce Gladiator's Leather Spaulders
+												["itemID"] = 148084,	-- Fierce Gladiator's Leather Spaulders
+											},
+											{	-- Fierce Gladiator's Shadowcape
+												["itemID"] = 147926,	-- Fierce Gladiator's Shadowcape
+											},
+											{	-- Fierce Gladiator's Leather Tunic
+												["itemID"] = 148074,	-- Fierce Gladiator's Leather Tunic
+											},
+											{	-- Fierce Gladiator's Leather Wristguards
+												["itemID"] = 148088,	-- Fierce Gladiator's Leather Wristguards
+											},
+											{	-- Fierce Gladiator's Leather Gloves
+												["itemID"] = 148078,	-- Fierce Gladiator's Leather Gloves
+											},
+											{	-- Fierce Gladiator's Leather Belt
+												["itemID"] = 148086,	-- Fierce Gladiator's Leather Belt
+											},
+											{	-- Fierce Gladiator's Leather Legguards
+												["itemID"] = 148082,	-- Fierce Gladiator's Leather Legguards
+											},
+											{	-- Fierce Gladiator's Leather Slippers
+												["itemID"] = 148076,	-- Fierce Gladiator's Leather Slippers
+											},
+										},
+									},
 									{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 149488,	-- Ensemble: Fierce Gladiator's Ironskin Armor
 										["classes"] = {
