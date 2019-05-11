@@ -4049,143 +4049,428 @@ _.Zones =
 											},
 										},
 									},
-
 									-- LEGION Season 3 & 4
-									i(147688, {	-- Cruel Combatant's Satin Armor
-										i(145172),	-- Cruel Combatant's Satin Hood
-										i(145178),	-- Cruel Combatant's Satin Mantle
-										i(145040),	-- Cruel Combatant's Drape of Piety
-										i(145176),	-- Cruel Combatant's Satin Robe
-										i(145182),	-- Cruel Combatant's Satin Bracers
-										i(145170),	-- Cruel Combatant's Satin Gloves
-										i(145180),	-- Cruel Combatant's Satin Cord
-										i(145174),	-- Cruel Combatant's Satin Leggings
-										i(145168),	-- Cruel Combatant's Satin Treads
-									}),
-									i(147696, {	-- Cruel Combatant's Silk Armor
-										i(145118),	-- Cruel Combatant's Silk Cowl
-										i(145124),	-- Cruel Combatant's Silk Amice
-										i(145034),	-- Cruel Combatant's Silken Shawl
-										i(145122),	-- Cruel Combatant's Silk Robe
-										i(145128),	-- Cruel Combatant's Silk Bracers
-										i(145116),	-- Cruel Combatant's Silk Handguards
-										i(145126),	-- Cruel Combatant's Silk Cord
-										i(145120),	-- Cruel Combatant's Silk Trousers
-										i(145114),	-- Cruel Combatant's Silk Treads
-									}),
-									i(147682, {	-- Cruel Combatant's Felweave Armor
-										i(145244),	-- Cruel Combatant's Felweave Cowl
-										i(145250),	-- Cruel Combatant's Felweave Amice
-										i(145046),	-- Cruel Combatant's Felweave Cloak
-										i(145248),	-- Cruel Combatant's Felweave Raiment
-										i(145254),	-- Cruel Combatant's Felweave Bracers
-										i(145242),	-- Cruel Combatant's Felweave Handguards
-										i(145252),	-- Cruel Combatant's Felweave Cord
-										i(145246),	-- Cruel Combatant's Felweave Trousers
-										i(145240),	-- Cruel Combatant's Felweave Treads
-									}),
-									i(147675, {	-- Cruel Combatant's Dragonhide Armor
-										i(145088),	-- Cruel Combatant's Dragonhide Helm
-										i(145092),	-- Cruel Combatant's Dragonhide Spaulders
-										i(145030),	-- Cruel Combatant's Dragonhide Cloak
-										i(145082),	-- Cruel Combatant's Dragonhide Tunic
-										i(145096),	-- Cruel Combatant's Dragonhide Wristguards
-										i(145086),	-- Cruel Combatant's Dragonhide Gloves
-										i(145094),	-- Cruel Combatant's Dragonhide Belt
-										i(145090),	-- Cruel Combatant's Dragonhide Legguards
-										i(145084),	-- Cruel Combatant's Dragonhide Moccasins
-									}),
-									i(147685, {	-- Cruel Combatant's Leather Armor
-										i(145196),	-- Cruel Combatant's Leather Helm
-										i(145200),	-- Cruel Combatant's Leather Spaulders
-										i(145042),	-- Cruel Combatant's Shadowcape
-										i(145190),	-- Cruel Combatant's Leather Tunic
-										i(145204),	-- Cruel Combatant's Leather Wristguards
-										i(145194),	-- Cruel Combatant's Leather Gloves
-										i(145202),	-- Cruel Combatant's Leather Belt
-										i(145198),	-- Cruel Combatant's Leather Legguards
-										i(145192),	-- Cruel Combatant's Leather Slippers
-									}),
-									i(147684, {	-- Cruel Combatant's Ironskin Armor
-										i(145134),	-- Cruel Combatant's Ironskin Helm
-										i(145138),	-- Cruel Combatant's Ironskin Spaulders
-										i(145036),	-- Cruel Combatant's Ironskin Cloak
-										i(145140),	-- Cruel Combatant's Ironskin Tunic
-										i(145144),	-- Cruel Combatant's Ironskin Wristguards
-										i(145132),	-- Cruel Combatant's Ironskin Gloves
-										i(145142),	-- Cruel Combatant's Ironskin Belt
-										i(145136),	-- Cruel Combatant's Ironskin Legguards
-										i(145130),	-- Cruel Combatant's Ironskin Slippers
-									}),
-									i(147680, {	-- Cruel Combatant's Felskin Armor
-										["g"] = {
-											i(145072),	-- Cruel Combatant's Felskin Helm
-											i(145076),	-- Cruel Combatant's Felskin Spaulders
-											i(145028),	-- Cruel Combatant's Demonthread Cloak
-											i(145066),	-- Cruel Combatant's Felskin Tunic
-											i(145080),	-- Cruel Combatant's Felskin Wristguards
-											i(145070),	-- Cruel Combatant's Felskin Gloves
-											i(145078),	-- Cruel Combatant's Felskin Belt
-											i(145074),	-- Cruel Combatant's Felskin Legguards
-											i(145068),	-- Cruel Combatant's Felskin Boots
+									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
+										["itemID"] = 147688,	-- Ensemble: Cruel Combatant's Satin Armor
+										["classes"] = {
+											5,	-- Priest
 										},
-										["classes"] = { 12 },
-									}),
-									i(147689, {	-- Cruel Combatant's Chain Armor
-										i(145104),	-- Cruel Combatant's Chain Helm
-										i(145108),	-- Cruel Combatant's Chain Spaulders
-										i(145032),	-- Cruel Combatant's Drape of the Tracker
-										i(145098),	-- Cruel Combatant's Chain Armor
-										i(145112),	-- Cruel Combatant's Chain Armband
-										i(145102),	-- Cruel Combatant's Chain Gauntlets
-										i(145110),	-- Cruel Combatant's Chain Clasp
-										i(145106),	-- Cruel Combatant's Chain Leggings
-										i(145100),	-- Cruel Combatant's Chain Treads
-									}),
-									i(147674, {	-- Cruel Combatant's Ringmail Armor
-										i(145212),	-- Cruel Combatant's Ringmail Helm
-										i(145216),	-- Cruel Combatant's Ringmail Spaulders
-										i(145044),	-- Cruel Combatant's Totemic Cloak
-										i(145206),	-- Cruel Combatant's Ringmail Armor
-										i(145220),	-- Cruel Combatant's Ringmail Armband
-										i(145210),	-- Cruel Combatant's Ringmail Gauntlets
-										i(145218),	-- Cruel Combatant's Ringmail Clasp
-										i(145214),	-- Cruel Combatant's Ringmail Kilt
-										i(145208),	-- Cruel Combatant's Ringmail Boots
-									}),
-									i(147693, {	-- Cruel Combatant's Scaled Armor
-										i(145158),	-- Cruel Combatant's Scaled Helm
-										i(145162),	-- Cruel Combatant's Scaled Shoulders
-										i(145038),	-- Cruel Combatant's Greatcloak of Faith
-										i(145152),	-- Cruel Combatant's Scaled Chestpiece
-										i(145166),	-- Cruel Combatant's Scaled Wristplates
-										i(145156),	-- Cruel Combatant's Scaled Gauntlets
-										i(145164),	-- Cruel Combatant's Scaled Girdle
-										i(145160),	-- Cruel Combatant's Scaled Legguards
-										i(145154),	-- Cruel Combatant's Scaled Sabatons
-									}),
-									i(147692, {	-- Cruel Combatant's Plate Armor
-										i(145262),	-- Cruel Combatant's Plate Helm
-										i(145266),	-- Cruel Combatant's Plate Shoulders
-										i(145048),	-- Cruel Combatant's Cloak of Battle
-										i(145256),	-- Cruel Combatant's Plate Chestpiece
-										i(145270),	-- Cruel Combatant's Plate Wristplates
-										i(145260),	-- Cruel Combatant's Plate Gauntlets
-										i(145268),	-- Cruel Combatant's Plate Girdle
-										i(145264),	-- Cruel Combatant's Plate Legguards
-										i(145258),	-- Cruel Combatant's Plate Warboots
-									}),
-									i(147677, {	-- Cruel Combatant's Dreadplate Armor
-										i(145056),	-- Cruel Combatant's Dreadplate Helm
-										i(145060),	-- Cruel Combatant's Dreadplate Shoulders
-										i(145026),	-- Cruel Combatant's Dreadcloak
-										i(145050),	-- Cruel Combatant's Dreadplate Chestpiece
-										i(145064),	-- Cruel Combatant's Dreadplate Wristplates
-										i(145054),	-- Cruel Combatant's Dreadplate Gauntlets
-										i(145062),	-- Cruel Combatant's Dreadplate Girdle
-										i(145058),	-- Cruel Combatant's Dreadplate Legguards
-										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
-									}),
+										["g"] = {
+											{	-- Cruel Combatant's Satin Hood
+												["itemID"] = 145172,	-- Cruel Combatant's Satin Hood
+											},
+											{	-- Cruel Combatant's Satin Mantle
+												["itemID"] = 145178,	-- Cruel Combatant's Satin Mantle
+											},
+											{	-- Cruel Combatant's Drape of Piety
+												["itemID"] = 145040,	-- Cruel Combatant's Drape of Piety
+											},
+											{	-- Cruel Combatant's Satin Robe
+												["itemID"] = 145176,	-- Cruel Combatant's Satin Robe
+											},
+											{	-- Cruel Combatant's Satin Bracers
+												["itemID"] = 145182,	-- Cruel Combatant's Satin Bracers
+											},
+											{	-- Cruel Combatant's Satin Gloves
+												["itemID"] = 145170,	-- Cruel Combatant's Satin Gloves
+											},
+											{	-- Cruel Combatant's Satin Cord
+												["itemID"] = 145180,	-- Cruel Combatant's Satin Cord
+											},
+											{	-- Cruel Combatant's Satin Leggings
+												["itemID"] = 145174,	-- Cruel Combatant's Satin Leggings
+											},
+											{	-- Cruel Combatant's Satin Treads
+												["itemID"] = 145168,	-- Cruel Combatant's Satin Treads
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
+										["itemID"] = 147696,	-- Ensemble: Cruel Combatant's Silk Armor
+										["classes"] = {
+											8,	-- Mage
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Silk Cowl
+												["itemID"] = 145118,	-- Cruel Combatant's Silk Cowl
+											},
+											{	-- Cruel Combatant's Silk Amice
+												["itemID"] = 145124,	-- Cruel Combatant's Silk Amice
+											},
+											{	-- Cruel Combatant's Silken Shawl
+												["itemID"] = 145034,	-- Cruel Combatant's Silken Shawl
+											},
+											{	-- Cruel Combatant's Silk Robe
+												["itemID"] = 145122,	-- Cruel Combatant's Silk Robe
+											},
+											{	-- Cruel Combatant's Silk Bracers
+												["itemID"] = 145128,	-- Cruel Combatant's Silk Bracers
+											},
+											{	-- Cruel Combatant's Silk Handguards
+												["itemID"] = 145116,	-- Cruel Combatant's Silk Handguards
+											},
+											{	-- Cruel Combatant's Silk Cord
+												["itemID"] = 145126,	-- Cruel Combatant's Silk Cord
+											},
+											{	-- Cruel Combatant's Silk Trousers
+												["itemID"] = 145120,	-- Cruel Combatant's Silk Trousers
+											},
+											{	-- Cruel Combatant's Silk Treads
+												["itemID"] = 145114,	-- Cruel Combatant's Silk Treads
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
+										["itemID"] = 147682,	-- Ensemble: Cruel Combatant's Felweave Armor
+										["classes"] = {
+											9,	-- Warlock
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Felweave Cowl
+												["itemID"] = 145244,	-- Cruel Combatant's Felweave Cowl
+											},
+											{	-- Cruel Combatant's Felweave Amice
+												["itemID"] = 145250,	-- Cruel Combatant's Felweave Amice
+											},
+											{	-- Cruel Combatant's Felweave Cloak
+												["itemID"] = 145046,	-- Cruel Combatant's Felweave Cloak
+											},
+											{	-- Cruel Combatant's Felweave Raiment
+												["itemID"] = 145248,	-- Cruel Combatant's Felweave Raiment
+											},
+											{	-- Cruel Combatant's Felweave Bracers
+												["itemID"] = 145254,	-- Cruel Combatant's Felweave Bracers
+											},
+											{	-- Cruel Combatant's Felweave Handguards
+												["itemID"] = 145242,	-- Cruel Combatant's Felweave Handguards
+											},
+											{	-- Cruel Combatant's Felweave Cord
+												["itemID"] = 145252,	-- Cruel Combatant's Felweave Cord
+											},
+											{	-- Cruel Combatant's Felweave Trousers
+												["itemID"] = 145246,	-- Cruel Combatant's Felweave Trousers
+											},
+											{	-- Cruel Combatant's Felweave Treads
+												["itemID"] = 145240,	-- Cruel Combatant's Felweave Treads
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
+										["itemID"] = 147675,	-- Ensemble: Cruel Combatant's Dragonhide Armor
+										["classes"] = {
+											11,	-- Druid
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Dragonhide Helm
+												["itemID"] = 145088,	-- Cruel Combatant's Dragonhide Helm
+											},
+											{	-- Cruel Combatant's Dragonhide Spaulders
+												["itemID"] = 145092,	-- Cruel Combatant's Dragonhide Spaulders
+											},
+											{	-- Cruel Combatant's Dragonhide Cloak
+												["itemID"] = 145030,	-- Cruel Combatant's Dragonhide Cloak
+											},
+											{	-- Cruel Combatant's Dragonhide Tunic
+												["itemID"] = 145082,	-- Cruel Combatant's Dragonhide Tunic
+											},
+											{	-- Cruel Combatant's Dragonhide Wristguards
+												["itemID"] = 145096,	-- Cruel Combatant's Dragonhide Wristguards
+											},
+											{	-- Cruel Combatant's Dragonhide Gloves
+												["itemID"] = 145086,	-- Cruel Combatant's Dragonhide Gloves
+											},
+											{	-- Cruel Combatant's Dragonhide Belt
+												["itemID"] = 145094,	-- Cruel Combatant's Dragonhide Belt
+											},
+											{	-- Cruel Combatant's Dragonhide Legguards
+												["itemID"] = 145090,	-- Cruel Combatant's Dragonhide Legguards
+											},
+											{	-- Cruel Combatant's Dragonhide Moccasins
+												["itemID"] = 145084,	-- Cruel Combatant's Dragonhide Moccasins
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
+										["itemID"] = 147685,	-- Ensemble: Cruel Combatant's Leather Armor
+										["classes"] = {
+											4,	-- Rogue
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Leather Helm
+												["itemID"] = 145196,	-- Cruel Combatant's Leather Helm
+											},
+											{	-- Cruel Combatant's Leather Spaulders
+												["itemID"] = 145200,	-- Cruel Combatant's Leather Spaulders
+											},
+											{	-- Cruel Combatant's Shadowcape
+												["itemID"] = 145042,	-- Cruel Combatant's Shadowcape
+											},
+											{	-- Cruel Combatant's Leather Tunic
+												["itemID"] = 145190,	-- Cruel Combatant's Leather Tunic
+											},
+											{	-- Cruel Combatant's Leather Wristguards
+												["itemID"] = 145204,	-- Cruel Combatant's Leather Wristguards
+											},
+											{	-- Cruel Combatant's Leather Gloves
+												["itemID"] = 145194,	-- Cruel Combatant's Leather Gloves
+											},
+											{	-- Cruel Combatant's Leather Belt
+												["itemID"] = 145202,	-- Cruel Combatant's Leather Belt
+											},
+											{	-- Cruel Combatant's Leather Legguards
+												["itemID"] = 145198,	-- Cruel Combatant's Leather Legguards
+											},
+											{	-- Cruel Combatant's Leather Slippers
+												["itemID"] = 145192,	-- Cruel Combatant's Leather Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
+										["itemID"] = 147684,	-- Ensemble: Cruel Combatant's Ironskin Armor
+										["classes"] = {
+											10,	-- Monk
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Ironskin Helm
+												["itemID"] = 145134,	-- Cruel Combatant's Ironskin Helm
+											},
+											{	-- Cruel Combatant's Ironskin Spaulders
+												["itemID"] = 145138,	-- Cruel Combatant's Ironskin Spaulders
+											},
+											{	-- Cruel Combatant's Ironskin Cloak
+												["itemID"] = 145036,	-- Cruel Combatant's Ironskin Cloak
+											},
+											{	-- Cruel Combatant's Ironskin Tunic
+												["itemID"] = 145140,	-- Cruel Combatant's Ironskin Tunic
+											},
+											{	-- Cruel Combatant's Ironskin Wristguards
+												["itemID"] = 145144,	-- Cruel Combatant's Ironskin Wristguards
+											},
+											{	-- Cruel Combatant's Ironskin Gloves
+												["itemID"] = 145132,	-- Cruel Combatant's Ironskin Gloves
+											},
+											{	-- Cruel Combatant's Ironskin Belt
+												["itemID"] = 145142,	-- Cruel Combatant's Ironskin Belt
+											},
+											{	-- Cruel Combatant's Ironskin Legguards
+												["itemID"] = 145136,	-- Cruel Combatant's Ironskin Legguards
+											},
+											{	-- Cruel Combatant's Ironskin Slippers
+												["itemID"] = 145130,	-- Cruel Combatant's Ironskin Slippers
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+										["itemID"] = 147680,	-- Ensemble: Cruel Combatant's Felskin Armor
+										["classes"] = {
+											12,	-- Demon Hunter
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Felskin Helm
+												["itemID"] = 145072,	-- Cruel Combatant's Felskin Helm
+											},
+											{	-- Cruel Combatant's Felskin Spaulders
+												["itemID"] = 145076,	-- Cruel Combatant's Felskin Spaulders
+											},
+											{	-- Cruel Combatant's Demonthread Cloak
+												["itemID"] = 145028,	-- Cruel Combatant's Demonthread Cloak
+											},
+											{	-- Cruel Combatant's Felskin Tunic
+												["itemID"] = 145066,	-- Cruel Combatant's Felskin Tunic
+											},
+											{	-- Cruel Combatant's Felskin Wristguards
+												["itemID"] = 145080,	-- Cruel Combatant's Felskin Wristguards
+											},
+											{	-- Cruel Combatant's Felskin Gloves
+												["itemID"] = 145070,	-- Cruel Combatant's Felskin Gloves
+											},
+											{	-- Cruel Combatant's Felskin Belt
+												["itemID"] = 145078,	-- Cruel Combatant's Felskin Belt
+											},
+											{	-- Cruel Combatant's Felskin Legguards
+												["itemID"] = 145074,	-- Cruel Combatant's Felskin Legguards
+											},
+											{	-- Cruel Combatant's Felskin Boots
+												["itemID"] = 145068,	-- Cruel Combatant's Felskin Boots
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
+										["itemID"] = 147689,	-- Ensemble: Cruel Combatant's Chain Armor
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Chain Helm
+												["itemID"] = 145104,	-- Cruel Combatant's Chain Helm
+											},
+											{	-- Cruel Combatant's Chain Spaulders
+												["itemID"] = 145108,	-- Cruel Combatant's Chain Spaulders
+											},
+											{	-- Cruel Combatant's Drape of the Tracker
+												["itemID"] = 145032,	-- Cruel Combatant's Drape of the Tracker
+											},
+											{	-- Cruel Combatant's Chain Armor
+												["itemID"] = 145098,	-- Cruel Combatant's Chain Armor
+											},
+											{	-- Cruel Combatant's Chain Armband
+												["itemID"] = 145112,	-- Cruel Combatant's Chain Armband
+											},
+											{	-- Cruel Combatant's Chain Gauntlets
+												["itemID"] = 145102,	-- Cruel Combatant's Chain Gauntlets
+											},
+											{	-- Cruel Combatant's Chain Clasp
+												["itemID"] = 145110,	-- Cruel Combatant's Chain Clasp
+											},
+											{	-- Cruel Combatant's Chain Leggings
+												["itemID"] = 145106,	-- Cruel Combatant's Chain Leggings
+											},
+											{	-- Cruel Combatant's Chain Treads
+												["itemID"] = 145100,	-- Cruel Combatant's Chain Treads
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
+										["itemID"] = 147674,	-- Ensemble: Cruel Combatant's Ringmail Armor
+										["classes"] = {
+											7,	-- Shaman
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Ringmail Helm
+												["itemID"] = 145212,	-- Cruel Combatant's Ringmail Helm
+											},
+											{	-- Cruel Combatant's Ringmail Spaulders
+												["itemID"] = 145216,	-- Cruel Combatant's Ringmail Spaulders
+											},
+											{	-- Cruel Combatant's Totemic Cloak
+												["itemID"] = 145044,	-- Cruel Combatant's Totemic Cloak
+											},
+											{	-- Cruel Combatant's Ringmail Armor
+												["itemID"] = 145206,	-- Cruel Combatant's Ringmail Armor
+											},
+											{	-- Cruel Combatant's Ringmail Armband
+												["itemID"] = 145220,	-- Cruel Combatant's Ringmail Armband
+											},
+											{	-- Cruel Combatant's Ringmail Gauntlets
+												["itemID"] = 145210,	-- Cruel Combatant's Ringmail Gauntlets
+											},
+											{	-- Cruel Combatant's Ringmail Clasp
+												["itemID"] = 145218,	-- Cruel Combatant's Ringmail Clasp
+											},
+											{	-- Cruel Combatant's Ringmail Kilt
+												["itemID"] = 145214,	-- Cruel Combatant's Ringmail Kilt
+											},
+											{	-- Cruel Combatant's Ringmail Boots
+												["itemID"] = 145208,	-- Cruel Combatant's Ringmail Boots
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
+										["itemID"] = 147693,	-- Ensemble: Cruel Combatant's Scaled Armor
+										["classes"] = {
+											2,	-- Paladin
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Scaled Helm
+												["itemID"] = 145158,	-- Cruel Combatant's Scaled Helm
+											},
+											{	-- Cruel Combatant's Scaled Shoulders
+												["itemID"] = 145162,	-- Cruel Combatant's Scaled Shoulders
+											},
+											{	-- Cruel Combatant's Greatcloak of Faith
+												["itemID"] = 145038,	-- Cruel Combatant's Greatcloak of Faith
+											},
+											{	-- Cruel Combatant's Scaled Chestpiece
+												["itemID"] = 145152,	-- Cruel Combatant's Scaled Chestpiece
+											},
+											{	-- Cruel Combatant's Scaled Wristplates
+												["itemID"] = 145166,	-- Cruel Combatant's Scaled Wristplates
+											},
+											{	-- Cruel Combatant's Scaled Gauntlets
+												["itemID"] = 145156,	-- Cruel Combatant's Scaled Gauntlets
+											},
+											{	-- Cruel Combatant's Scaled Girdle
+												["itemID"] = 145164,	-- Cruel Combatant's Scaled Girdle
+											},
+											{	-- Cruel Combatant's Scaled Legguards
+												["itemID"] = 145160,	-- Cruel Combatant's Scaled Legguards
+											},
+											{	-- Cruel Combatant's Scaled Sabatons
+												["itemID"] = 145154,	-- Cruel Combatant's Scaled Sabatons
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
+										["itemID"] = 147692,	-- Ensemble: Cruel Combatant's Plate Armor
+										["classes"] = {
+											1,	-- Warrior
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Plate Helm
+												["itemID"] = 145262,	-- Cruel Combatant's Plate Helm
+											},
+											{	-- Cruel Combatant's Plate Shoulders
+												["itemID"] = 145266,	-- Cruel Combatant's Plate Shoulders
+											},
+											{	-- Cruel Combatant's Cloak of Battle
+												["itemID"] = 145048,	-- Cruel Combatant's Cloak of Battle
+											},
+											{	-- Cruel Combatant's Plate Chestpiece
+												["itemID"] = 145256,	-- Cruel Combatant's Plate Chestpiece
+											},
+											{	-- Cruel Combatant's Plate Wristplates
+												["itemID"] = 145270,	-- Cruel Combatant's Plate Wristplates
+											},
+											{	-- Cruel Combatant's Plate Gauntlets
+												["itemID"] = 145260,	-- Cruel Combatant's Plate Gauntlets
+											},
+											{	-- Cruel Combatant's Plate Girdle
+												["itemID"] = 145268,	-- Cruel Combatant's Plate Girdle
+											},
+											{	-- Cruel Combatant's Plate Legguards
+												["itemID"] = 145264,	-- Cruel Combatant's Plate Legguards
+											},
+											{	-- Cruel Combatant's Plate Warboots
+												["itemID"] = 145258,	-- Cruel Combatant's Plate Warboots
+											},
+										},
+									},
+									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+										["itemID"] = 147677,	-- Ensemble: Cruel Combatant's Dreadplate Armor
+										["classes"] = {
+											6,	-- Death Knight
+										},
+										["g"] = {
+											{	-- Cruel Combatant's Dreadplate Helm
+												["itemID"] = 145056,	-- Cruel Combatant's Dreadplate Helm
+											},
+											{	-- Cruel Combatant's Dreadplate Shoulders
+												["itemID"] = 145060,	-- Cruel Combatant's Dreadplate Shoulders
+											},
+											{	-- Cruel Combatant's Dreadcloak
+												["itemID"] = 145026,	-- Cruel Combatant's Dreadcloak
+											},
+											{	-- Cruel Combatant's Dreadplate Chestpiece
+												["itemID"] = 145050,	-- Cruel Combatant's Dreadplate Chestpiece
+											},
+											{	-- Cruel Combatant's Dreadplate Wristplates
+												["itemID"] = 145064,	-- Cruel Combatant's Dreadplate Wristplates
+											},
+											{	-- Cruel Combatant's Dreadplate Gauntlets
+												["itemID"] = 145054,	-- Cruel Combatant's Dreadplate Gauntlets
+											},
+											{	-- Cruel Combatant's Dreadplate Girdle
+												["itemID"] = 145062,	-- Cruel Combatant's Dreadplate Girdle
+											},
+											{	-- Cruel Combatant's Dreadplate Legguards
+												["itemID"] = 145058,	-- Cruel Combatant's Dreadplate Legguards
+											},
+											{	-- Cruel Combatant's Dreadplate Sabatons
+												["itemID"] = 145052,	-- Cruel Combatant's Dreadplate Sabatons
+											},
+										},
+									},
+
 									-- LEGION Season 5, 6, 7
 								},
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
