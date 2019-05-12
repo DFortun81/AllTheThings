@@ -1559,9 +1559,6 @@ _.NeverImplemented =
 			un(1, i(146345)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
 			un(1, i(146365)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
 			un(1, i(146385)),	-- Vantus Rune Technique: Return to Karazhan (Upper) (likely PTR version)
-			un(1, i(165735)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
-			un(1, i(165736)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
-			un(1, i(165737)),	-- Vantus Rune Technique: Shrine of Storms Raid (likely PTR version)
 			un(1, i(146341)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
 			un(1, i(146361)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
 			un(1, i(146381)),	-- Vantus Rune Technique: The Arcway (likely PTR version)
@@ -2292,7 +2289,7 @@ _.NeverImplemented =
 --			T E M P O R A R Y			I T E M S		 	--
 ------------------------------------------------------------
 
--- Here I am going to call upon maps that don't really have any data and wouldn't make since to display a mini list in
+-- Here I am going to call upon maps that don't really have any data and wouldn't make sense to display a mini list in
 m(465),	-- Le Glas
 m(516),	-- Isle of Thunder (One of last initial scenaraio)
 m(892),	-- Azuremyst Isle (Argus Opening)

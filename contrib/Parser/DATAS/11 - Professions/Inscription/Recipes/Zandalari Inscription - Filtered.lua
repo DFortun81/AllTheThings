@@ -250,7 +250,16 @@ profession(773, {	-- Inscription
 						},
 						{	-- Vantus Rune: Uldir
 							["recipeID"] = 256305--[[Vantus Rune: Uldir]]
-						}
+						},
+						{	-- Vantus Rune: Crucible of Storms
+							["recipeID"] = 285925  --Vantus Rune: Crucible of Storms Rank 1
+						},
+						{	-- Vantus Rune: Crucible of Storms
+							["recipeID"] = 285926  --Vantus Rune: Crucible of Storms Rank 2
+						},
+						{	-- Vantus Rune: Crucible of Storms
+							["recipeID"] = 285927  --Vantus Rune: Crucible of Storms Rank 3
+						},
 					}
 				},
 				{	-- Glyphs
