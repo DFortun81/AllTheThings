@@ -8,16 +8,6 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 59.0, 31.3, 641 },
 		["lvl"] = 98,
 		["g"] = {
-			n(-17, {	-- Quests
-				o(248534, {	-- Tears of Elune
-					q(40890, {	-- The Tears of Elune
-						i(130001),	-- Shaladrassil Cuirass
-						i(129993),	-- Shaladrassil Tunic
-						i(129985),	-- Shaladrassil Vestments
-						i(130012),	-- Shaladrassil Chestguard
-					}),
-				}),
-			}),
 			d(1, {	-- Normal
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)

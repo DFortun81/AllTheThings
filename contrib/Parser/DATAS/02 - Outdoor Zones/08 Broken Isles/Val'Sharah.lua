@@ -1396,6 +1396,18 @@ _.Zones =
 							i(121649),	-- Vibrant Temple Masonry
 						},
 					}),
+					o(248534, {	-- The Tears of Elune
+						q(40890, {  -- The Tears of Elune
+							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+							["coord"] = { 53.7, 55.8, 641 },  --Needs updated to the exact location of the tears of elune, but its a few steps away from these coords.
+							["g"] = {
+								i(130001),	-- Shaladrassil Cuirass
+								i(129993),	-- Shaladrassil Tunic
+								i(129985),	-- Shaladrassil Vestments
+								i(130012),	-- Shaladrassil Chestguard
+							},
+						}),
+					}),
 					{	---------- The Chieftain's Beads
 						["questID"] = 38146,	-- The Chieftain's Beads
 						["itemID"] = 128340,
