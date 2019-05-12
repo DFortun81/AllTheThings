@@ -1954,6 +1954,7 @@ _.ExpansionFeatures =
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["isBreadcrumb"] = true,
 					["qg"] = 77209,	-- Baros Alexston
+					["requireSkill"] = 755,	-- Jewelcrafting
 					["g"] = {
 						recipe(187639),	-- Immaculate Versatility Taladite
 					},
