@@ -157,46 +157,15 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
 							--	It looks like there's a "Sabertron" WQ for each color of Sabertron, so every time a WQ is up we'll need to determine which criteria to attach to it.  Only one confirmed so far.  This way the WQs will show the correct criteria reward in /attwq, and it will reduce unnecessary duplication of information.
-								q(51978, {	-- Sabertron (unknown criteria)
+								{	-- Sabertron (COPPER)
+									["questID"] = 51974, 	-- Sabertron (COPPER)
 									["g"] = {
-										{	-- Red Sabertron
+										{	-- Copper Sabertron
 											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 1,	-- Red Sabertron
-										},
-										{	-- Yellow Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 2,	-- Yellow Sabertron
-										},
-										{	-- Orange Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 3,	--  Sabertron
-										},
-										{	-- Green Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 4,	--  Sabertron
+											["criteriaID"] = 5,			-- Copper Sabertron
 										},
 									},
-								}),
-								q(51947, {	-- Sabertron (unknown criteria)
-									["g"] = {
-										{	-- Red Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 1,	-- Red Sabertron
-										},
-										{	-- Yellow Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 2,	-- Yellow Sabertron
-										},
-										{	-- Orange Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 3,	--  Sabertron
-										},
-										{	-- Green Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 4,	--  Sabertron
-										},
-									},
-								}),
+								},
 								{	-- Sabertron (GREEN)
 									["questID"] = 51976,	-- Sabertron (GREEN)
 									["g"] = {
@@ -206,32 +175,30 @@ _.Zones =
 										},
 									},
 								},
-								q(51977, {	-- Sabertron (unknown criteria)
+								{	-- Sabertron (ORANGE)
+									["questID"] = 51978,	-- Sabertron (ORANGE)
+									["g"] = {
+										{	-- Orange Sabertron
+											["achievementID"] = 13054,	-- Sabertron Assemble
+											["criteriaID"] = 3,			--  Sabertron
+										},
+									},
+								},
+								{	-- Sabertron (RED)
+									["questID"] = 51947,	-- Sabertron (RED)
 									["g"] = {
 										{	-- Red Sabertron
 											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 1,	-- Red Sabertron
-										},
-										{	-- Yellow Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 2,	-- Yellow Sabertron
-										},
-										{	-- Orange Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 3,	--  Sabertron
-										},
-										{	-- Green Sabertron
-											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 4,	--  Sabertron
+											["criteriaID"] = 1,			-- Red Sabertron
 										},
 									},
-								}),
-								{	-- Sabertron (COPPER)
-									["questID"] = 51974, 	-- Sabertron (COPPER)
+								},
+								{	-- Sabertron (YELLOW)
+									["questID"] = 51977,	-- Sabertron (YELLOW)
 									["g"] = {
-										{	-- Copper Sabertron
+										{	-- Yellow Sabertron
 											["achievementID"] = 13054,	-- Sabertron Assemble
-											["criteriaID"] = 5,			-- Copper Sabertron
+											["criteriaID"] = 2,			-- Yellow Sabertron
 										},
 									},
 								},
