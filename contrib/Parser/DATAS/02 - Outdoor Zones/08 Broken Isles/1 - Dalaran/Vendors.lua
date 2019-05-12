@@ -11576,6 +11576,12 @@ _.Zones =
 						},
 						["currencyID"] = 1275,	-- Curious Coin
 						["g"] = {
+							{	-- Arcadian War Turtle
+								["itemID"] = 141713,	-- Arcadian War Turtle
+							},
+							{	-- Mote of Light
+								["itemID"] = 141862,	-- Mote of Light
+							},
 							{	-- Formula: Soul Fibril
 								["itemID"] = 136702,	-- Formula: Soul Fibril
 							},
@@ -11590,12 +11596,6 @@ _.Zones =
 							},
 							{	-- Technique: Straszan Mark
 								["itemID"] = 136706,	-- Technique: Straszan Mark
-							},
-							{	-- Arcadian War Turtle
-								["itemID"] = 141713,	-- Arcadian War Turtle
-							},
-							{	-- Mote of Light
-								["itemID"] = 141862,	-- Mote of Light
 							},
 						},
 					},
