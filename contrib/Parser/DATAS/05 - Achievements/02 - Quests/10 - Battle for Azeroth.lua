@@ -248,7 +248,7 @@ _.Achievements =
 						crit(3),		-- Through the Front Door
 						crit(4),		-- Fly Out to Meet Them
 					})),
-					h(ach(13037)),	-- Torcanata
+					un(1, ach(13037)),	-- Torcanata  Horde only achiev
 					ach(13517, {	-- Two Sides To Every Tale
 						i(168055),		-- Bloodflank Charger (mount)
 						i(168056),		-- Ironclad Frostclaw (mount)
