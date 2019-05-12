@@ -2045,7 +2045,7 @@ _.ExpansionFeatures =
 					},
 					{	-- Bringing the Bass
 						["questID"] = 37961,
-						["qg"] = 37961,	-- Drix Bassbolter
+						["qg"] = 91072,	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
 						["g"] = {

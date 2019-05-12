@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(10808),	-- Gloves of the Atal'ai Prophet
 				i(10807),	-- Kilt of the Atal'ai Prophet
 			})),
-			e(  459, { 			-- Wardens of the Dream
+			e(459, { 			-- Wardens of the Dream
 				["crs"] = {
 					5721,	-- Dreamscythe
 					5722,	-- Hazzas

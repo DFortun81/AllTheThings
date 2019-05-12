@@ -225,7 +225,7 @@ _.Instances = { tier(1, {	-- Classic
 			o(123329, {	-- Baelog's Chest
 				i(7740),	-- Gni'kiv Medallion
 			}),
-			cr( 6910, e(  467, {	-- Revelosh
+			cr( 6910, e(467, {	-- Revelosh
 				i(132736),	-- Revelosh's Pauldrons
 				i(9389),	-- Revelosh's Spaulders
 				i(9388),	-- Revelosh's Armguards
@@ -234,17 +234,17 @@ _.Instances = { tier(1, {	-- Classic
 				i(9387),	-- Revelosh's Boots
 				i(7741),	-- The Shaft of Tsol
 			})),
-			cr( 7228, e(  469, {	-- Ironaya
+			cr( 7228, e(469, {	-- Ironaya
 				i(9408),	-- Ironshod Bludgeon
 				i(151398),	-- Hood of the Idle Architect
 				i(151420),	-- Vault-Watcher's Breastplate
 				i(9409),	-- Ironaya's Bracers
 				i(9407),	-- Stoneweaver Leggings
 			})),
-			cr( 7023, e(  748, {	-- Obsidian Sentinel
+			cr( 7023, e(748, {	-- Obsidian Sentinel
 				i(151399),	-- Splintered Obsidian Shard
 			})),
-			cr( 7206, e(  470, {	-- Ancient Stone Keeper
+			cr( 7206, e(470, {	-- Ancient Stone Keeper
 				i(9411),	-- Rockshard Pauldrons
 				i(132733),	-- Stone Keeper's Mantle
 				i(9410),	-- Cragfists
@@ -263,20 +263,20 @@ _.Instances = { tier(1, {	-- Classic
 					i(9917),	-- Tracker's Boots
 				},
 			}),
-			cr( 7291, e(  471, {	-- Galgann Firehammer
+			cr( 7291, e(471, {	-- Galgann Firehammer
 				i(9419),	-- Galgann's Firehammer
 				i(9412),	-- Galgann's Fireblaster
 				i(11310),	-- Flameseer Mantle
 				i(11311),	-- Emberscale Cape
 			})),
-			cr( 4854, e(  472, {	-- Grimlok
+			cr( 4854, e(472, {	-- Grimlok
 				i(9416),	-- Grimlock's Charge
 				i(9415),	-- Grimlock's Tribal Vestments
 				i(151402),	-- Grimlock's Jagged Wristguards
 				i(132735),	-- Grimlock's Chain Chaps
 				i(9414),	-- Oilskin Leggings
 			})),
-			cr( 2748, e(  473, {	-- Archaedas
+			cr( 2748, e(473, {	-- Archaedas
 				ach(638),	-- Uldaman
 				i(9418),	-- Stoneslayer
 				i(9413),	-- The Rockpounder

@@ -85,7 +85,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			e( 1529, {	-- Razorgore the Untamed
+			e(1529, {	-- Razorgore the Untamed
 				["creatureID"] = 12435,
 				["groups"] = {
 					i(93036),	-- Unscathed Egg (Pet)
@@ -106,7 +106,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19337),	-- The Black Book
 				},
 			}),
-			e( 1530, {	-- Vaelastrasz the Corrupt
+			e(1530, {	-- Vaelastrasz the Corrupt
 				["creatureID"] = 13020,
 				["groups"] = {
 					i(19346),	-- Dragonfang Blade
@@ -126,7 +126,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19340),	-- Rune of Metamorphosis
 				},
 			}),
-			e( 1531, {	-- Broodlord Lashlayer
+			e(1531, {	-- Broodlord Lashlayer
 				["creatureID"] = 12017,
 				["groups"] = {
 					i(93037),	-- Blackwing Banner (Pet)
@@ -147,7 +147,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19342),	-- Venomous Totem
 				},
 			}),
-			e( 1532, {	-- Firemaw
+			e(1532, {	-- Firemaw
 				["creatureID"] = 11983,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18562),	-- Elementium Ingot
 				i(44956),	-- Goblin's Guide to Elementium
 			}),
-			e( 1533, {	-- Ebonroc
+			e(1533, {	-- Ebonroc
 				["creatureID"] = 14601,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -205,7 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19395),	-- Rejuvenating Gem
 				},
 			}),
-			e( 1534, {	-- Flamegor
+			e(1534, {	-- Flamegor
 				["creatureID"] = 11981,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -231,7 +231,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19431),	-- Styleen's Impeding Scarab
 				},
 			}),
-			e( 1535, {	-- Chromaggus
+			e(1535, {	-- Chromaggus
 				["creatureID"] = 14020,
 				["groups"] = {
 					i(93038),	-- Whistle of Chromatic Bone
@@ -259,7 +259,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19391),	-- Shimmering Geta
 				},
 			}),
-			e( 1536, {	-- Nefarian
+			e(1536, {	-- Nefarian
 				["creatureID"] = 11583,
 				["groups"] = {
 					ach(685),	-- Blackwing Lair

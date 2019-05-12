@@ -1487,7 +1487,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50783),	-- Boots of the Frozen Seed
 					i(50342),	-- Whispering Fanged Skull
 				})),
-				e(  1626, {			-- Icecrown Gunship Battle
+				e(1626, {			-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
@@ -1917,7 +1917,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(51920),	-- Boots of the Frozen Seed
 					i(50343),	-- Whispering Fanged Skull
 				})),
-				e(  1626, {			-- Icecrown Gunship Battle
+				e(1626, {			-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
@@ -2340,7 +2340,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(49985),	-- Juggernaut Band
 					i(49990),	-- Ring of Maddening Whispers
 				})),
-				e(  1626, {			-- Icecrown Gunship Battle
+				e(1626, {			-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard
@@ -2895,7 +2895,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50642),	-- Juggernaut Band
 					i(50644),	-- Ring of Maddening Whispers
 				})),
-				e(  1626, {			-- Icecrown Gunship Battle
+				e(1626, {			-- Icecrown Gunship Battle
 					["crs"] = {
 						36939,	-- High Overlord Saurfang
 						36948,	-- Muradin Bronzebeard

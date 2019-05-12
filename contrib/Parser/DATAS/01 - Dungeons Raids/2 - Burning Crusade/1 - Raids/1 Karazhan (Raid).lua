@@ -49,7 +49,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(30674),	-- Zierhut's Lost Treads
 				i(30667),	-- Ring of Unrelenting Storms
 			}),
-			e(  1552, {			-- Servant's Quarters
+			e(1552, {			-- Servant's Quarters
 				n(16181, {	-- Rokad the Ravager
 					["description"] = "This boss is repeatable if you dont kill any other bosses in raid. Reset the raid after killing.",
 					["groups"] = {		
@@ -101,7 +101,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(23809),	-- Schematic: Stabilized Eternium Scope
 				},
 			}),
-			e(  1554, {			-- Moroes
+			e(1554, {			-- Moroes
 				["creatureID"] = 15687,
 				["groups"] = {
 					i(22559),	-- Formula: Enchant Weapon - Mongoose
@@ -119,7 +119,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28528),	-- Moroes' Lucky Pocket Watch
 				},
 			}),
-			e(  1555, {			-- Maiden of Virtue
+			e(1555, {			-- Maiden of Virtue
 				["creatureID"] = 16457,
 				["groups"] = {
 					i(28522),	-- Shard of the Virtuous
@@ -219,7 +219,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				i(28610),	-- Ferocious Swift-Kickers
 				i(28608),	-- Ironstriders of Urgency
 			}),	
-			e(  1557, {			-- The Curator
+			e(1557, {			-- The Curator
 				["creatureID"] = 15691,
 				["groups"] = {
 					i(29757, {	-- Gloves of the Fallen Champion
@@ -271,7 +271,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28649),	-- Garona's Signet Ring
 				},
 			}),
-			e(  1560, {			-- Terestian Illhoof
+			e(1560, {			-- Terestian Illhoof
 				["creatureID"] = 15688,
 				["groups"] = {
 					i(22561),	-- Formula: Enchant Weapon - Soulfrost
@@ -290,7 +290,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28785),	-- The Lightning Capacitor
 				},
 			}),
-			e(  1559, {			-- Shade of Aran
+			e(1559, {			-- Shade of Aran
 				["creatureID"] = 16524,
 				["groups"] = {
 					i(22560),	-- Formula: Enchant Weapon - Sunfire
@@ -309,7 +309,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28727),	-- Pendant of the Violet Eye
 				},
 			}),
-			e(  1561, {			-- Netherspite
+			e(1561, {			-- Netherspite
 				["creatureID"] = 15689,
 				["groups"] = {
 					i(28729),	-- Spiteblade
@@ -326,7 +326,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28730),	-- Mithril Band of the Unscarred
 				},
 			}),
-			e(  1562, {			-- Chess Event
+			e(1562, {			-- Chess Event
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["groups"] = {
 					i(28749),	-- King's Defender
@@ -343,7 +343,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28753),	-- Ring of Recurrence
 				},
 			}),
-			e(  1563, {			-- Prince Malchezaar
+			e(1563, {			-- Prince Malchezaar
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690),	-- Karazhan

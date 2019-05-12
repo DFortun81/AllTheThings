@@ -237,13 +237,13 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(74446, e( 368, {	-- Ghamoo-Ra
+			cr(74446, e(368, {	-- Ghamoo-Ra
 				i(151433),	-- Thick Shellplate Shoulders
 				i(6907),	-- Tortoise Armor
 				i(6908),	-- Ghamoo-Ra's Bind
 				i(151432),	-- Twilight Turtleskin Leggings
 			})),
-			cr(74476, e( 436, {	-- Domina <Mistress of Shadows>
+			cr(74476, e(436, {	-- Domina <Mistress of Shadows>
 				i(11121),	-- Darkwater Talwar
 				i(3078),	-- Naga Heartpiercer
 				i(132554),	-- Deadly Serpentine Grips
@@ -251,7 +251,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(151435),	-- Domina's Deathmaw Greaves
 				i(151434),	-- Foul Shadowsleet Slippers
 			})),
-			cr(74565, e( 426, {	-- Subjugator Kor'ul
+			cr(74565, e(426, {	-- Subjugator Kor'ul
 				i(6905),	-- Reef Axe
 				i(6906),	-- Algae Fists
 				i(151436),	-- Murloc Oppressor's Band
@@ -262,7 +262,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(120163),	-- Thruk's Fishing Rod
 				i(151437),	-- Hook Charm Necklace
 			})),
-			cr(75410, e( 447, {	-- Guardian of the Deep
+			cr(75410, e(447, {	-- Guardian of the Deep
 				i(6904),	-- Bite of Serra'kis
 				i(132555),	-- Serra'kis Scale Wraps
 				i(6902),	-- Bands of Serra'kis
@@ -272,14 +272,14 @@ _.Instances = { tier(1, {	-- Classic
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
 			})),
-			cr(74728, e( 437, {	-- Twilight Lord Bathiel
+			cr(74728, e(437, {	-- Twilight Lord Bathiel
 				i(1155),	-- Rod of the Sleepwalker
 				i(151440),	-- Blackfathom Ascendant's Helm
 				i(151439),	-- Bathiel's Scale Spaulders
 				i(6903),	-- Gaze Dreamer Pants
 				i(151438),	-- Hungering Deepwater Treads
 			})),
-			cr(75408, e( 444, {	-- Aku'mai
+			cr(75408, e(444, {	-- Aku'mai
 				ach(632),	-- Blackfathom Deeps
 				i(6909),	-- Strike of the Hydra
 				i(6911),	-- Moss Cinch

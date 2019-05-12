@@ -11,7 +11,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["ignoreBonus"] = true,
 				["lvl"] = 85,
 				["g"] = {
-					cr(46962, e( 96, {	-- Baron Ashbury
+					cr(46962, e(96, {	-- Baron Ashbury
 						ach(5503),	-- Pardon Denied
 						i(63433),	-- Robes of Arugal
 						i(63437),	-- Baron Ashbury's Cuffs
@@ -19,14 +19,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(63436),	-- Traitor's Grips
 						i(63435),	-- Boots of the Predator
 					})),
-					cr( 3887, e( 97, {	-- Baron Silverlaine
+					cr( 3887, e(97, {	-- Baron Silverlaine
 						i(63438),	-- Baroness Silverlaine's Locket
 						i(63441),	-- Pendant of the Keep
 						i(63439),	-- Gloves of the Uplifted Cup
 						i(63444),	-- Baron Silverlaine's Greaves
 						i(63440),	-- Boots of Lingering Sorrow
 					})),
-					cr( 4278, e( 98, {	-- Commander Springvale
+					cr( 4278, e(98, {	-- Commander Springvale
 						ach(5504),	-- To the Ground!
 						i(63445),	-- Arced War Axe
 						i(63449),	-- Thieving Spaulders
@@ -34,7 +34,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(63447),	-- Breastplate of the Stilled Heart
 						i(63446),	-- Haunting Footfalls
 					})),
-					cr(46963, e( 99, {	-- Lord Walden
+					cr(46963, e(99, {	-- Lord Walden
 						i(63455),	-- Blinders of the Follower
 						i(63452),	-- Burden of Lost Humanity
 						i(63450),	-- Phantom Armor
