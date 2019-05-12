@@ -11569,26 +11569,36 @@ _.Zones =
 					n(97012, { 	-- Wanda Chanter
 						i(47658),	-- Brimstone Igniter
 					}),
-					n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
-						currency(1275, {	-- Curious Coin
-							i(136702, {	-- Formula: Soul Fibril
-								["g"] = {
-									recipe(209507),	-- Formula: Soul Fibril
-								},
-								["requireSkill"] = 333,	-- Enchanting
-							}),
-							i(136699),	-- Recipe: Flamespike
-							i(137935),	-- Recipe: Leather Love Seat
-							i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix
-								i(134125, {	-- Mecha-Bond Imprint Matric
-									["classes"] = 3,	-- Hunter/camp
-								}),
-							}),
-							i(136706),	-- Technique: Straszan Mark
-							i(141713),	-- Arcadian War Turtle Mount
-							i(141862),	-- Mote of Light Toy
-						}),
-					}),
+					{	-- Xur'ios <Vaultkeeper of the Void>
+						["npcID"] = 107109,	-- Xur'ios <Vaultkeeper of the Void>
+						["coords"] = {
+							{ 48.83, 13.54, 625 },
+						},
+						["currencyID"] = 1275,	-- Curious Coin
+						["g"] = {
+							{	-- Formula: Soul Fibril
+								["itemID"] = 136702,	-- Formula: Soul Fibril
+							},
+							{	-- Recipe: Flamespike
+								["itemID"] = 136699,	-- Recipe: Flamespike
+							},
+							{	-- Recipe: Leather Love Seat
+								["itemID"] = 137935,	-- Recipe: Leather Love Seat
+							},
+							{	-- Schematic: Mecha-Bond Imprint Matrix
+								["itemID"] = 137727,	-- Schematic: Mecha-Bond Imprint Matrix
+							},
+							{	-- Technique: Straszan Mark
+								["itemID"] = 136706,	-- Technique: Straszan Mark
+							},
+							{	-- Arcadian War Turtle
+								["itemID"] = 141713,	-- Arcadian War Turtle
+							},
+							{	-- Mote of Light
+								["itemID"] = 141862,	-- Mote of Light
+							},
+						},
+					},
 				}),
 			},
 		}),
