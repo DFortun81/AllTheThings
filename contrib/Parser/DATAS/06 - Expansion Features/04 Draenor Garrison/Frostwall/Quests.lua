@@ -2148,6 +2148,13 @@ _.ExpansionFeatures =
 										i(114556),	-- Sickened Scale Bracers
 										i(114555),	-- Yeti-Hide Bracers
 									}),
+									i(114092, {	-- Formidable Choker
+										i(114602),	-- Bladeblunter Gorget
+										i(114600),	-- Chain of Misty Vapors
+										i(114598),	-- Choker of Crimson Cuts
+										i(114601),	-- Groon-Tooth Locket
+										i(114599),	-- Scorch-Sear Necklace
+									}),
 									i(119125, {	-- Formidable Cloak
 										i(114607),	-- Bloodstained Miser's Cloak
 										i(114604),	-- Cloak of Blind Focus
