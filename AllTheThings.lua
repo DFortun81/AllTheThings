@@ -11936,6 +11936,13 @@ app.events.ADDON_LOADED = function(addonName)
 				for itemID,entry in pairs(cachedItems) do
 					if reagentCache[itemID] then
 						searchResultsByKey.reagentID[itemID] = entry;
+						if not entry.g then entry.g = {}; end
+						for itemID2,count in pairs(reagentCache[itemID][2]) do
+							local searchResults = app.SearchForField("itemID", itemID2);
+							if searchResults and #searchResults > 0 then
+								table.insert(entry.g, CloneData(searchResults[1]));
+							end
+						end
 					else
 						-- Push it back into the itemID table
 						searchResultsByKey.itemID[itemID] = entry;
