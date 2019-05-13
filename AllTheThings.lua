@@ -7717,7 +7717,7 @@ local function RowOnEnter(self)
 		GameTooltip:ClearLines();
 		GameTooltipIcon:ClearAllPoints();
 		GameTooltipModel:ClearAllPoints();
-		if self:GetCenter() > (UIParent:GetWidth() / 2) then
+		if self:GetCenter() > (UIParent:GetWidth() / 2) and (AuctionFrame and not AuctionFrame:IsVisible()) then
 			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 			GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 			GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
@@ -11619,6 +11619,22 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- Cache some functions to make them faster
 		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
+		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
+		SideDressUpFrame.Hide = function(...)
+			origSideDressUpFrameHide(...);
+			local window = app:GetWindow("AuctionData");
+			window:ClearAllPoints();
+			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
+			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
+		end
+		SideDressUpFrame.Show = function(...)
+			origSideDressUpFrameShow(...);
+			local window = app:GetWindow("AuctionData");
+			window:ClearAllPoints();
+			window:SetPoint("LEFT", SideDressUpFrame, "RIGHT", 0, 0);
+			window:SetPoint("TOP", AuctionFrame, "TOP", 0, -10);
+			window:SetPoint("BOTTOM", AuctionFrame, "BOTTOM", 0, 10);
+		end
 		
 		-- Create the Auction Tab for ATT.
 		local n = AuctionFrame.numTabs + 1;
@@ -11680,6 +11696,39 @@ app.events.ADDON_LOADED = function(addonName)
 		frame.settingsButton = f;
 		
 		-- Function to Update the State of the Scan button. (Coroutines, do not call manually.)
+		local ObjectTypeMetas = {
+			["criteriaID"] = setmetatable({	-- Achievements
+				["npcID"] = -4,
+				["description"] = "All items that can be used to obtain achievements that you are missing are displayed here.",
+				["priority"] = 1,
+			}, app.BaseNPC),
+			["s"] = setmetatable({	-- Appearances
+				["npcID"] = -10032,
+				["description"] = "All appearances that you need are displayed here.",
+				["priority"] = 2,
+			}, app.BaseNPC),
+			["mountID"] = setmetatable({	-- Mounts
+				["filterID"] = 100,
+				["description"] = "All mounts that you have not collected yet are displayed here.",
+				["priority"] = 3,
+			}, app.BaseFilter),
+			["speciesID"] = setmetatable({	-- Pets
+				["npcID"] = -25,
+				["description"] = "All pets that you have not collected yet are displayed here.",
+				["priority"] = 4,
+			}, app.BaseNPC),
+			["recipeID"] = setmetatable({	-- Recipes
+				["filterID"] = 200,
+				["description"] = "All recipes that you have not collected yet are displayed here.",
+				["priority"] = 5,
+			}, app.BaseFilter),
+			["itemID"] = {	-- Non-Collectible Items
+				["text"] = "Non-Collectible Items",
+				["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
+				["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
+				["priority"] = 6,
+			},
+		};
 		local UpdateScanButtonState = function()
 			repeat
 				local CanQuery, CanQueryAll = CanSendAuctionQuery();
@@ -11740,13 +11789,63 @@ app.events.ADDON_LOADED = function(addonName)
 						for i=2,#searchResults,1 do
 							MergeObject(data, CreateObject(searchResults[i]));
 						end
-						--data.searchResults = searchResults;
 						data.auctions = {};
 						keys[value] = data;
 					end
 					table.insert(data.auctions, itemLink);
-					
-					--print("AUCTION DATA", i, itemLink, #searchResults);
+				end
+			end
+			
+			-- Move all achievementID-based items into criteriaID
+			if searchResultsByKey.achievementID then
+				local criteria = searchResultsByKey.criteriaID;
+				if criteria then
+					for key,entry in pairs(searchResultsByKey.achievementID) do
+						criteria[key] = entry;
+					end
+				else
+					searchResultsByKey.criteriaID = searchResultsByKey.achievementID;
+				end
+				searchResultsByKey.achievementID = nil;
+			end
+			
+			-- Apply a sub-filter to items with spellID-based identifiers.
+			if searchResultsByKey.spellID then
+				local filteredItems = {};
+				for key,entry in pairs(searchResultsByKey.spellID) do
+					if entry.filterID then
+						local filterData = filteredItems[entry.filterID];
+						if not filterData then
+							filterData = {};
+							filteredItems[entry.filterID] = filterData;
+						end
+						filterData[key] = entry;
+					else
+						print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
+					end
+				end
+				
+				if filteredItems[100] then searchResultsByKey.mountID = filteredItems[100]; end	-- Mounts
+				if filteredItems[200] then searchResultsByKey.recipeID = filteredItems[200]; end	-- Recipes
+				searchResultsByKey.spellID = nil;
+			end
+			
+			if searchResultsByKey.s then
+				local filteredItems = {};
+				local cachedS = searchResultsByKey.s;
+				searchResultsByKey.s = {};
+				for sourceID,entry in pairs(cachedS) do
+					if entry.f then
+						local filterData = filteredItems[entry.f];
+						if not filterData then
+							filterData = setmetatable({ ["filterID"] = entry.f, ["g"] = {} }, app.BaseFilter);
+							filteredItems[entry.f] = filterData;
+							table.insert(searchResultsByKey.s, filterData);
+						end
+						table.insert(filterData.g, entry);
+					else
+						print("SourceID " .. entry.s .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
+					end
 				end
 			end
 			
@@ -11756,22 +11855,25 @@ app.events.ADDON_LOADED = function(addonName)
 			window:SetParent(AuctionFrame);
 			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
 			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
-			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned.", ["g"] = {}};
-			for key, value in pairs(searchResultsByKey) do
-				local count = 0;
+			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!", ["g"] = {}};
+			for key, searchResults in pairs(searchResultsByKey) do
 				local subdata = {};
-				subdata.description = "Container for '" .. key .. "' object types.";
 				subdata.visible = true;
-				subdata.text = key;
-				local g = {};
-				subdata.g = g;
-				for i,j in pairs(value) do
-					count = count + 1;
-					table.insert(g, j);
+				if ObjectTypeMetas[key] then
+					setmetatable(subdata, { __index = ObjectTypeMetas[key] });
+				else
+					subdata.description = "Container for '" .. key .. "' object types.";
+					subdata.text = key;
 				end
-				print("AUCTION DATA BY KEY", key, count);
+				subdata.g = {};
+				for i,j in pairs(searchResults) do
+					table.insert(subdata.g, j);
+				end
 				table.insert(window.data.g, subdata);
 			end
+			table.sort(window.data.g, function(a, b)
+				return (b.priority or 0) > (a.priority or 0);
+			end);
 			BuildGroups(window.data, window.data.g);
 			UpdateGroups(window.data, window.data.g);
 			window:Show();
@@ -11793,7 +11895,6 @@ app.events.ADDON_LOADED = function(addonName)
 							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
 							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
 						if itemID and itemID > 0 and saleStatus == 0 then
-							print("ItemLink nil, but we got an itemID:", itemID);
 							table.insert(AllTheThingsAuctionData, "item:" .. itemID);
 						end
 					end
@@ -11813,72 +11914,7 @@ app.events.ADDON_LOADED = function(addonName)
 			-- Process the items
 			app.CurrentAuctionIndex = 0;
 			app.CurrentAuctionTotal = 0;
-			print("Found ", #AllTheThingsAuctionData, "Auctions Item Links");
 			StartCoroutine("ProcessAuctionData", ProcessAuctionData);
-			
-			--[[
-			local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-				minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-				ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
-			if itemID and itemID > 0 and saleStatus == 0 then
-				local data = {};
-				data.itemID = itemID;
-				data.bidAmount = minBid;
-				data.buyoutPrice = buyoutPrice;
-				table.insert(auctions, data);
-			end
-			
-			-- Sort the auctions by bid amount first, then by buyout price
-			table.sort(auctions, function(a, b)
-				if a.buyoutPrice then
-					if b.buyoutPrice then
-						return a.buyoutPrice > b.buyoutPrice;
-					else
-						return false;
-					end
-				else
-					if b.buyoutPrice then
-						return true;
-					end
-				end
-				
-				if a.bidAmount then
-					if b.bidAmount then
-						return a.bidAmount > b.bidAmount;
-					else
-						return true;
-					end
-				elseif b.bidAmount then
-					return true;
-				end
-			end);
-			
-			local auctionsPerItemID = {};
-			for i,data in ipairs(auctions) do
-				-- If no Auction Data has been gathered for this Item ID yet, then create a table.
-				local auctionsForItemID = auctionsPerItemID[data.itemID];
-				if not auctionsForItemID then
-					auctionsForItemID = {};
-					auctionsPerItemID[data.itemID] = auctionsForItemID;
-				end
-				data.itemID = nil;
-				table.insert(auctionsForItemID, data);
-			end
-			
-			AllTheThingsAuctionData = {};
-			for itemID,auctionsForItemID in pairs(auctionsPerItemID) do
-				local data = {};
-				data.o = auctionsForItemID;
-				
-				-- Do something with that data.
-				local count = #auctionsForItemID;
-				local cheapest = auctionsForItemID[1];
-				local priciest = auctionsForItemID[count];
-				print("AUCTION DATA", "Item ID", itemID, "found in", count, "Auctions,", 
-					cheapest.buyoutPrice or 0, " - ", priciest.buyoutPrice or cheapest.buyoutPrice or 0, "OBO",
-					cheapest.bidAmount or 0, " - ", priciest.bidAmount or cheapest.bidAmount or 0, "BID");
-			end
-			]]--
 		end
 		
 		-- Scan Button
