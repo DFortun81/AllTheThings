@@ -1269,7 +1269,7 @@ _.Zones =
 						["coord"] = { 65.8, 59.4, 634 },
 						["qg"] = 97979,	-- Vethir
 					}),
-					{	---------- Built to Scale (Alliance)
+					{	-- Built to Scale (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["itemID"] = 122610,	-- Storm Drake Scale
 						["questID"] = 38337,	-- Built to Scale
@@ -1284,7 +1284,7 @@ _.Zones =
 							i(121519),	-- Reinforced Stormwing Waistguard
 						},
 					},
-					{	---------- Built to Scale (Horde)
+					{	-- Built to Scale (Horde)
 						["questID"] = 38616,	-- Built to Scale
 						["itemID"] = 124037,	-- Storm Drake Scale
 						["races"] = HORDE_ONLY,
@@ -1613,7 +1613,7 @@ _.Zones =
 						["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 						["coord"] = { 58.5, 64.2, 634 },
 					}),
-					{------------- Stormforged Grapple Launcher
+					{ -- Stormforged Grapple Launcher
 						["coord"] = { 36.9, 31.8, 634 },
 						["itemID"] = 138111,	-- Stormforged Grapple Launcher
 						["questID"] = 39775,	-- Stormforged Grapple Launcher

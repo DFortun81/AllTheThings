@@ -1150,7 +1150,7 @@ _.Zones =
 						["coord"] = { 66.6, 77.1, 641 },
 						["qg"] = 109631,	-- Old Grizzleback
 					}),
-					{	---------- Grotesque Remains
+					{	-- Grotesque Remains
 						-- Not sure if you have to be on Where the Wildkin Are and/or Emerald Sisters to pick up this quest.
 						["questID"] = 42786,	-- Grotesque Remains
 						["itemID"] = 138441,	-- Grotesque Remains
@@ -1269,7 +1269,7 @@ _.Zones =
 						["coord"] = { 52.2, 63.5, 641 },
 						["qg"] = 92742,	-- Ysera
 					}),
-					{	---------- Mark of the Demon
+					{	-- Mark of the Demon
 						["questID"] = 38656,	-- Mark of the Demon
 						["itemID"] = 124131,	-- Demonic Emblem
 						["coord"] = { 56.7, 54.4, 641 },
@@ -1396,19 +1396,31 @@ _.Zones =
 							i(121649),	-- Vibrant Temple Masonry
 						},
 					}),
-					o(248534, {	-- The Tears of Elune
-						q(40890, {  -- The Tears of Elune
-							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
-							["coord"] = { 53.7, 55.8, 641 },  --Needs updated to the exact location of the tears of elune, but its a few steps away from these coords.
-							["g"] = {
-								i(130001),	-- Shaladrassil Cuirass
-								i(129993),	-- Shaladrassil Tunic
-								i(129985),	-- Shaladrassil Vestments
-								i(130012),	-- Shaladrassil Chestguard
+					{	-- The Tears of Elune
+						["objectID"] = 248534,	-- The Tears of Elune
+						["questID"] = 40890,	-- The Tears of Elune
+						["sourceQuests"] = {
+							38743,	-- The Fate of Val'Sharah
+						},
+						["coords"] = {
+							{ 53.7, 55.8, 641 },
+						},
+						["g"] = {
+							{	-- Shaladrassil Cuirass
+								["itemID"] = 130001,	-- Shaladrassil Cuirass
 							},
-						}),
-					}),
-					{	---------- The Chieftain's Beads
+							{	-- Shaladrassil Tunic
+								["itemID"] = 129993,	-- Shaladrassil Tunic
+							},
+							{	-- Shaladrassil Vestments
+								["itemID"] = 129985,	-- Shaladrassil Vestments
+							},
+							{	-- Shaladrassil Chestguard
+								["itemID"] = 130012,	-- Shaladrassil Chestguard
+							},
+						},
+					},
+					{	-- The Chieftain's Beads
 						["questID"] = 38146,	-- The Chieftain's Beads
 						["itemID"] = 128340,
 						["coord"] = { 48.4, 87.9, 641 },
@@ -1522,13 +1534,13 @@ _.Zones =
 						["coord"] = { 52.4, 63.6, 641 },
 						["qg"] = 98584,	-- Ysera
 					}),
-					{	---------- The Warden's Signet
+					{	-- The Warden's Signet
 						["questID"] = 38711,	-- The Warden's Signet
 						["itemID"] = 127860,	-- Warden's Signet
 						["coord"] = { 38.9, 65.1, 641 },
 						["qg"] = 94366,	-- Lelyn Swiftshadow
 					},
-					{	---------- Thieving Thistleleaf
+					{	-- Thieving Thistleleaf
 						["questID"] = 38862,	-- Thieving Thistleleaf
 						["itemID"] = 129966,	-- Lunarwing Egg
 						["coord"] = { 53.7, 82.2, 641 },
@@ -1803,7 +1815,7 @@ _.Zones =
 							},
 						},
 					}),
-					{	---------- Unguarded Thistleleaf Treasure
+					{	-- Unguarded Thistleleaf Treasure
 						["objectID"] = 241128,	-- Unguarded Thistleleaf Treasure
 						["questID"] = 38466,	-- Grellkin Treasure
 						["coord"] = { 55.4, 77.6, 641 },

@@ -310,7 +310,7 @@ _.Zones =
 						follower(186),	-- Vindicator Onaala
 					},
 				}),
-				{	---------- Fungal Bundle
+				{	-- Fungal Bundle
 					["questID"] = 37332,	-- Fungal Bundle
 					["itemID"] = 119317,	-- Curious Growth
 					["coords"] = {
@@ -595,7 +595,7 @@ _.Zones =
 				qa(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 				}),
-				{	---------- The Prophet's Final Message
+				{	-- The Prophet's Final Message
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor
 					["description"] = "The item that starts this quest is mailed to you.",
 					["questID"] = 37322,	-- The Prophet's Final Message
@@ -626,7 +626,7 @@ _.Zones =
 					["coord"] = { 56.7, 23.0, 539 },
 					["qg"] = 82537,	-- Rangari Chel
 				}),
-				{	---------- The Strength of Iron
+				{	-- The Strength of Iron
 					["requireSkill"] = 164,	-- Blacksmithing
 					["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
 					["questID"] = 36309,	-- The Strength of Iron

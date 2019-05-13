@@ -863,7 +863,7 @@ _.ExpansionFeatures =
 						-- NOTE!! Also grants credit for Alliance Whistle Unlock == 51722
 						-- NOTE!! Also grants credit for Alliance Other Quest (Same Name) == 52450
 					},
-					{	---------- Criteria: Blood on the Sand
+					{	-- Criteria: Blood on the Sand
 						["achievementID"] = 12510,	-- Ready for War
 						["collectible"] = false,
 						["criteriaID"] = 4,	--  Blood on the Sand
@@ -972,7 +972,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
 					}),
-					{	---------- Criteria: Chasing Darkness
+					{	-- Criteria: Chasing Darkness
 						["achievementID"] = 12510,	-- Ready for War
 						["collectible"] = false,
 						["criteriaID"] = 5,	--  Chasing Darkness
@@ -1046,7 +1046,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 26.7, 1161 },	-- Boralus
 						["sourceQuests"] = { 52154 },	-- Our Next Target
 					}),
-					{	---------- Criteria: A Golden Opportunity
+					{	-- Criteria: A Golden Opportunity
 						["achievementID"] = 12510,	-- Ready for War
 						["collectible"] = false,
 						["criteriaID"] = 6,	--  A Golden Opportunity
@@ -1122,7 +1122,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 52308 },	-- Intercepted Orders
 					}),
-					{	---------- Criteria: Blood in the Water
+					{	-- Criteria: Blood in the Water
 						["achievementID"] = 12510,	-- Ready for War
 						["collectible"] = false,
 						["criteriaID"] = 7,	--  Blood in the Water
@@ -1186,7 +1186,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 53072 },	-- Operation: Heartstrike
 					}),
-					{	---------- Criteria: The Strike on Zuldazar
+					{	-- Criteria: The Strike on Zuldazar
 						["achievementID"] = 12510,	-- Ready for War
 						["collectible"] = false,
 						["criteriaID"] = 8,	--  The Strike on Zuldazar
@@ -1307,7 +1307,7 @@ _.ExpansionFeatures =
 						["coord"] = { 70.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 53098 },	-- Champion: Shandris Feathermoon
 					}),
-					{	---------- Criteria: War Marches On
+					{	-- Criteria: War Marches On
 					["achievementID"] = 13467,	-- Tides of Vengeance
 					["collectible"] = false,
 					["criteriaID"] = 1,	--  War Marches On
@@ -1426,7 +1426,7 @@ _.ExpansionFeatures =
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["sourceQuests"] = { 54191 },	-- Changing Course
 					}),
-					{	---------- Criteria: The Sleeper Agent
+					{	-- Criteria: The Sleeper Agent
 						["achievementID"] = 13467,	-- Tides of Vengeance
 						["collectible"] = false,
 						["criteriaID"] = 2,	-- The Sleeper Agent
@@ -1523,7 +1523,7 @@ _.ExpansionFeatures =
 						["description"] = "This quest will be available in Boralus when you reach 14,000 Revered reputation with 7th Legion (66.6% of Revered).",
 						["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 					}),
-					{	---------- Criteria: Mischief Managed
+					{	-- Criteria: Mischief Managed
 						["achievementID"] = 13467,	-- Tides of Vengeance
 						["collectible"] = false,
 						["criteriaID"] = 3,	-- Mischief Managed
@@ -1565,7 +1565,7 @@ _.ExpansionFeatures =
 						["coord"] = { 39.1, 77.1, 1161 },	-- Boralus
 						["sourceQuests"] = { 54302 },	-- The Fall of Zuldazar
 					}),
-					{	---------- Criteria: He Who Walks in the Light
+					{	-- Criteria: He Who Walks in the Light
 						["achievementID"] = 13467,	-- Tides of Vengeance
 						["collectible"] = false,
 						["criteriaID"] = 4,	-- He Who Walks in the Light
