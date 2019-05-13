@@ -11811,24 +11811,12 @@ app.events.ADDON_LOADED = function(addonName)
 		};
 		local UpdateScanButtonState = function()
 			repeat
-				local CanQuery, CanQueryAll = CanSendAuctionQuery();
-				-- print("UpdateScanButtonState: CanQuery", CanQuery, "CanQueryAll", CanQueryAll);
-				if app.Settings:GetTooltipSetting("LiveScan") then
-					if CanQuery then
-						frame.scanButton:Enable();
-						return true;
-					else
-						frame.scanButton:Disable();
-						for i=0,60,1 do coroutine.yield(); end
-					end
+				if select(2, CanSendAuctionQuery()) then
+					frame.scanButton:Enable();
+					return true;
 				else
-					if CanQueryAll then
-						frame.scanButton:Enable();
-						return true;
-					else
-						frame.scanButton:Disable();
-						for i=0,60,1 do coroutine.yield(); end
-					end
+					frame.scanButton:Disable();
+					for i=0,60,1 do coroutine.yield(); end
 				end
 			until not frame:IsVisible();
 		end
@@ -12018,18 +12006,7 @@ app.events.ADDON_LOADED = function(addonName)
 		
 			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 			local CanQuery, CanQueryAll = CanSendAuctionQuery();
-			if app.Settings:GetTooltipSetting("LiveScan") then
-				if CanQuery then
-					-- Disable the button and register for the event.
-					frame.scanButton:Disable();
-					frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
-					frame.descriptionLabel:SetText("Live Scan request sent.\n\nPlease wait while we wait for the server to respond.");
-					frame.descriptionLabel:Show();
-					print("TODO: Do Live Scan");
-				else
-					return false;
-				end
-			elseif CanQueryAll then
+			if CanQueryAll then
 				-- Disable the button and register for the event.
 				frame.scanButton:Disable();
 				frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
@@ -12057,16 +12034,6 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetTexCoord(0.00781250,0.10937500,0.75781250,0.95312500);
 		f:SetSize(13, 25);
 		f:Show();
-		
-		local cb = CreateFrame("CheckButton", nil, frame, "InterfaceOptionsCheckButtonTemplate");
-		cb:SetPoint("LEFT", frame.scanButton, "RIGHT", 2, 0);
-		cb:SetChecked(app.Settings:GetTooltipSetting("LiveScan"));
-		cb:SetScript("OnClick", function(self)
-			app.Settings:SetTooltipSetting("LiveScan", self:GetChecked());
-			StartCoroutine("UpdateScanButtonState", UpdateScanButtonState);
-		end);
-		cb.Text:SetText("Live Scan");
-		frame.liveScan = f;
 		
 		-- Close Button
 		f = CreateFrame("Button", nil, frame, "OptionsButtonTemplate");
