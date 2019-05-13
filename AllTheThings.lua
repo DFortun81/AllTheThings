@@ -11626,6 +11626,7 @@ app.events.ADDON_LOADED = function(addonName)
 		window.data = {
 			["text"] = "Auction Data",
 			["visible"] = true,
+			["back"] = 1,
 			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
 			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 			["options"] = {
