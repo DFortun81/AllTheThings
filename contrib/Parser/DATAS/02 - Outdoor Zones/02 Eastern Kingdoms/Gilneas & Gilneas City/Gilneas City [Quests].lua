@@ -51,7 +51,7 @@ _.Zones =
 										},
 									},
 									{	-- Brothers in Arms
-										["questID"] = 14154,	-- By the Skin of His Teeth
+										["questID"] = 26129,	-- Brothers in Arms
 										["qg"] = 35077,			-- Lord Darius Crowley
 										["sourceQuests"] = {
 											14154,	-- By the Skin of His Teeth
@@ -64,7 +64,7 @@ _.Zones =
 										},
 									},	
 									{	-- By Blood and Ash
-										["questID"] = 14212,	-- By Blood and Ash
+										["questID"] = 14218,	-- By Blood and Ash
 										["qg"] = 35552,			-- Tobias Mistmantle
 										["sourceQuests"] = {
 											14212,	-- Sacrifies
@@ -108,7 +108,7 @@ _.Zones =
 												["ignoreSource"] = true,	-- White Item
 											},
 											{	-- Darius' Handguards
-												["questID"] = 131865,		-- Darius' Hanguards
+												["itemID"] = 131865,		-- Darius' Handguards
 												["ignoreSource"] = true,	-- White Item
 											},
 											{	-- Darius' Sash
@@ -237,7 +237,7 @@ _.Zones =
 										["questID"] = 14222,	-- Last Stand
 										["qg"] = 35566,			-- Lord Darius Crowley
 										["sourceQuests"] = {
-											14212,	-- Never Surrender, Sometimes Retreat
+											14221,	-- Never Surrender, Sometimes Retreat
 										},
 										["coords"] = {
 											{ 48.93, 52.79, 202 },
@@ -304,10 +304,10 @@ _.Zones =
 										},
 									},
 									{	-- Never Surrender, Sometimes Retreat
-										["questID"] = 14212,	-- Never Surrender, Sometimes Retreat
+										["questID"] = 14221,	-- Never Surrender, Sometimes Retreat
 										["qg"] = 35552,			-- Tobias Mistmantle
 										["sourceQuests"] = {
-											14212,	-- By Blood and Ash
+											14218,	-- By Blood and Ash
 										},
 										["coords"] = {
 											{ 40.46, 39.37, 202 },
