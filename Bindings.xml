@@ -20,6 +20,10 @@
 	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="ADDONS">
 		AllTheThings.Settings:ToggleBOEItems();
 	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLESOURCETEXT" category="ADDONS">
+		AllTheThings.Settings:SetTooltipSetting("SourceLocations", 
+		not AllTheThings.Settings:GetTooltipSetting("SourceLocations"));
+	</Binding>
 	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="ADDONS">
 		AllTheThings.ToggleMainList();
 	</Binding>

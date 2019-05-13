@@ -34,6 +34,7 @@ AllTheThings.L = {
 	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
 	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
 	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
+	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
 	["MODULES"] = "Modules";
 	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
 	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
