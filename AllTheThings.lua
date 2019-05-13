@@ -2379,7 +2379,7 @@ local function SearchForLink(link)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if group.collectible and (not group.b or group.b == 2 or group.b == 3) then
+		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
 			table.insert(listing, group);
 		end
 		if group.g and group.expanded then
@@ -5477,7 +5477,7 @@ app.BaseSpecies = {
 		elseif key == "displayID" then
 			return select(12, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 		elseif key == "name" then
-			return t.text;
+			return select(1, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
 		elseif key == "link" then
 			if t.itemID then
 				local link = select(2, GetItemInfo(t.itemID));
@@ -11803,11 +11803,17 @@ app.events.ADDON_LOADED = function(addonName)
 				["description"] = "All recipes that you have not collected yet are displayed here.",
 				["priority"] = 5,
 			}, app.BaseFilter),
+			["reagentID"] = {	-- Reagents
+				["text"] = "Reagents",
+				["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
+				["description"] = "All items that can be used to craft an item using a profession on your account.",
+				["priority"] = 6,
+			},
 			["itemID"] = {	-- Non-Collectible Items
 				["text"] = "Non-Collectible Items",
 				["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
 				["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
-				["priority"] = 6,
+				["priority"] = 7,
 			},
 		};
 		local UpdateScanButtonState = function()
@@ -11921,6 +11927,22 @@ app.events.ADDON_LOADED = function(addonName)
 				end
 			end
 			
+			-- Process the Non-Collectible Items for Reagents
+			local reagentCache = app.GetDataMember("Reagents");
+			if reagentCache and searchResultsByKey.itemID then
+				local cachedItems = searchResultsByKey.itemID;
+				searchResultsByKey.itemID = {};
+				searchResultsByKey.reagentID = {};
+				for itemID,entry in pairs(cachedItems) do
+					if reagentCache[itemID] then
+						searchResultsByKey.reagentID[itemID] = entry;
+					else
+						-- Push it back into the itemID table
+						searchResultsByKey.itemID[itemID] = entry;
+					end
+				end
+			end
+			
 			-- Insert Buttons into the groups.
 			wipe(window.data.g);
 			for i,option in ipairs(window.data.options) do
@@ -11950,6 +11972,10 @@ app.events.ADDON_LOADED = function(addonName)
 			UpdateGroups(window.data, window.data.g);
 			window:Show();
 			window:Update();
+			
+			-- Change the message!
+			frame.descriptionLabel:SetText("Got the datas!\n\nShift Left click into the search bar on the Browse tab to look for items!");
+			frame.descriptionLabel:Show();
 		end
 		local ProcessAuctions = function()
 			-- Gather the Auctions
@@ -12062,9 +12088,7 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- Register for Events [Only when requests sent by ATT]
 		frame:SetScript("OnEvent", function(self, e, ...)
-			print(e, ...);
 			local numItems = GetNumAuctionItems("list");
-			print("GetNumAuctionItems", numItems);
 			if numItems > 0 then
 				-- Unregister, then begin processing the Auction Item List
 				self:UnregisterEvent("AUCTION_ITEM_LIST_UPDATE");
