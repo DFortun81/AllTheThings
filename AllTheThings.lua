@@ -11847,6 +11847,11 @@ app.events.ADDON_LOADED = function(addonName)
 						print("SourceID " .. entry.s .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
 					end
 				end
+				for f,entry in pairs(filteredItems) do
+					table.sort(entry.g, function(a,b)
+						return a.u and not b.u;
+					end);
+				end
 			end
 			
 			-- Display Test for Raw Data + Filtering
