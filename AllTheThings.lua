@@ -11617,19 +11617,99 @@ app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then
 		app:UnregisterEvent("ADDON_LOADED");
 		
+		-- Create the movable Auction Data window.
+		local window = app:GetWindow("AuctionData");
+		window.shouldFullRefresh = true;
+		window:SetParent(AuctionFrame);
+		window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
+		window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
+		window.data = {
+			["text"] = "Auction Data",
+			["visible"] = true,
+			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
+			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+			["options"] = {
+				{
+					["text"] = "Toggle Debug Mode",
+					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+					["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
+					["visible"] = true,
+					["OnClick"] = function() 
+						app.Settings:ToggleDebugMode();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						if app.Settings:Get("DebugMode") then
+							-- Novaplane made me do it
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+					end,
+				},
+				{
+					["text"] = "Toggle Account Mode",
+					["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
+					["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
+					["visible"] = true,
+					["OnClick"] = function() 
+						app.Settings:ToggleAccountMode();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						if app.Settings:Get("AccountMode") then
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+					end,
+				},
+				{
+					["text"] = "Toggle Unobtainable Items",
+					["icon"] = "INTERFACE/ICONS/INV_Misc_Book_01",
+					["description"] = "Turn this setting on if you want to show Unobtainable items.",
+					["visible"] = true,
+					["OnClick"] = function()
+						local val = app.GetDataMember("UnobtainableItemFilters");
+						val[7] = not val[7];
+						app.Settings:Refresh();
+						app:RefreshData();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						local val = app.GetDataMember("UnobtainableItemFilters");
+						if val[7] then
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+					end,
+				},
+			},
+			["g"] = {}
+		};
+		for i,option in ipairs(window.data.options) do
+			table.insert(window.data.g, option);
+		end
+		window:Hide();
+		
 		-- Cache some functions to make them faster
 		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
 		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
 		SideDressUpFrame.Hide = function(...)
 			origSideDressUpFrameHide(...);
-			local window = app:GetWindow("AuctionData");
 			window:ClearAllPoints();
 			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
 			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
 		end
 		SideDressUpFrame.Show = function(...)
 			origSideDressUpFrameShow(...);
-			local window = app:GetWindow("AuctionData");
 			window:ClearAllPoints();
 			window:SetPoint("LEFT", SideDressUpFrame, "RIGHT", 0, 0);
 			window:SetPoint("TOP", AuctionFrame, "TOP", 0, -10);
@@ -11843,8 +11923,6 @@ app.events.ADDON_LOADED = function(addonName)
 							table.insert(searchResultsByKey.s, filterData);
 						end
 						table.insert(filterData.g, entry);
-					else
-						print("SourceID " .. entry.s .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
 					end
 				end
 				for f,entry in pairs(filteredItems) do
@@ -11854,13 +11932,13 @@ app.events.ADDON_LOADED = function(addonName)
 				end
 			end
 			
+			-- Insert Buttons into the groups.
+			wipe(window.data.g);
+			for i,option in ipairs(window.data.options) do
+				table.insert(window.data.g, option);
+			end
+			
 			-- Display Test for Raw Data + Filtering
-			local window = app:GetWindow("AuctionData");
-			window.shouldFullRefresh = true;
-			window:SetParent(AuctionFrame);
-			window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
-			window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
-			window.data = { ["text"] = "Auction Data", ["visible"] = true, ["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01", ["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!", ["g"] = {}};
 			for key, searchResults in pairs(searchResultsByKey) do
 				local subdata = {};
 				subdata.visible = true;
@@ -12044,7 +12122,7 @@ app.events.ADDON_LOADED = function(addonName)
 					StartCoroutine("ProcessAuctionData", ProcessAuctionData);
 					self.InitialProcess = true;
 				else
-					app:GetWindow("AuctionData"):Show();
+					window:Show();
 				end
 				
 				frame:Show();
