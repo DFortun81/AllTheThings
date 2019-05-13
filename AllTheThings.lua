@@ -42,6 +42,10 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+local CLASSES_PLATE = { 1, 2, 6 }
+local CLASSES_MAIL = { 3, 7 }
+local CLASSES_LEATHER = { 4, 10, 11, 12 }
+local CLASSES_CLOTH = { 5, 8, 9 }
 
 -- Coroutine Helper Functions
 app.refreshing = {};
@@ -1820,7 +1824,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 												text = "   ";
 											end
 											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or "");
-											
+													
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 											if group[1].f ~= otherATTSource.f then
@@ -5888,7 +5892,7 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 	else
 		-- If at least one of the sources of this visual ID was collected, that means that we've acquired the base appearance.
 		local item = SearchForSourceIDQuickly(sourceInfo.sourceID);
-		if item then
+		if item then 
 			if item.races then
 				-- If the first item is EXPLICITLY race locked...
 				for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
@@ -6118,6 +6122,12 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 			else
 				-- If the first item is not race locked...
 				-- Okay, great! Is the first item class locked?
+				local allClasses = {}
+				if item.f == 4 then allClasses = CLASSES_CLOTH elseif
+					item.f == 5 then allClasses = CLASSES_LEATHER elseif
+					item.f == 6 then allClasses = CLASSES_MAIL elseif
+					item.f == 7 then allClasses = CLASSES_PLATE 
+				end
 				if item.c then
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
@@ -6128,7 +6138,17 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
 										if not otherItem.r and not otherItem.races then
 											-- If this item is not race or faction locked...
-											if otherItem.c then
+											local hasAllClasses = false
+											if otherItem.c and #otherItem.c > 1 and #otherItem.c == #allClasses then 
+												for index,value in pairs(otherItem.c) do
+													if value == allClasses[index] then 
+														hasAllClasses = true
+													else
+														hasAllClasses = false
+													end
+												end
+											end
+											if otherItem.c or hasAllClasses then
 												-- If this item is class locked...
 												if containsAny(otherItem.c, item.c) then
 													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
@@ -6164,7 +6184,17 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
 									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
 									if otherSource.categoryID == sourceInfo.categoryID and (otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType)) then
-										if not otherItem.r and not otherItem.races and not otherItem.c then
+										local hasAllClasses = false
+										if otherItem.c and #otherItem.c > 1 and #otherItem.c == #allClasses then 
+											for index,value in pairs(otherItem.c) do
+												if value == allClasses[index] then 
+													hasAllClasses = true
+												else
+													hasAllClasses = false
+												end
+											end
+										end
+										if not otherItem.r and not otherItem.races and (not otherItem.c or hasAllClasses) then
 											-- If this item is not class, race or faction locked, you unlock the source ID. Congrats, mate!
 											return true;
 										end
