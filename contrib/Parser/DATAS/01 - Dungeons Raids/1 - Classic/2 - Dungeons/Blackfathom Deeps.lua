@@ -262,12 +262,27 @@ _.Instances = { tier(1, {	-- Classic
 				i(120163),	-- Thruk's Fishing Rod
 				i(151437),	-- Hook Charm Necklace
 			})),
-			cr(75410, e(447, {	-- Guardian of the Deep
-				i(6904),	-- Bite of Serra'kis
-				i(132555),	-- Serra'kis Scale Wraps
-				i(6902),	-- Bands of Serra'kis
-				i(6901),	-- Glowing Thresher Cape
-			})),
+			{	-- Guardian of the Deep
+				["encounterID"] = 447,	-- Guardian of the Deep
+				["crs"] = {
+					75410,	-- Guardian of the Deep [Netted by Thruk]
+					74508,	-- Guardian of the Deep [Fight location]
+				},
+				["g"] = {
+					{	-- Bite of Serra'kis
+						["itemID"] = 6904,	-- Bite of Serra'kis
+					},
+					{	-- Serra'kis Scale Wraps
+						["itemID"] = 132555,	-- Serra'kis Scale Wraps
+					},
+					{	-- Bands of Serra'kis
+						["itemID"] = 6902,	-- Bands of Serra'kis
+					},
+					{	-- Glowing Thresher Cape
+						["itemID"] = 6901,	-- Glowing Thresher Cape
+					},
+				},
+			},
 			cr(74988, e(1144, {	-- Executioner Gore
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
