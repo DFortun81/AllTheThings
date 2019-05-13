@@ -437,6 +437,19 @@ _.Zones =
 											22,	-- Worgen
 										},
 									},
+									{	-- Save Krennan Aranas
+										["questID"] = 14293,	-- Save Krennan Aranas
+										["qg"] = 35550,			-- King Genn Greymane
+										["sourceQuests"] = {
+											14214,	-- Messsage to Greymane
+										},
+										["coords"] = {
+											{ 59.27, 83.80, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- Seek the Sister [Priest]
 										["questID"] = 14278,	-- Seek the Siter
 										["qg"] = 35840,			-- Gwen Armstead

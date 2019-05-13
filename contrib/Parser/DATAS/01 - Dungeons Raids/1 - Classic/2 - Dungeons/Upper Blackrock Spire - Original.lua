@@ -189,7 +189,9 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(18103)),	-- Band of Rumination
 				}),
 				n(10430, { 	-- The Beast
-					i(12731, { 	-- Pristine Hide of the Beast
+					{	-- Pristine Hide of the Beast
+						["itemID"] = 12731,	-- Pristine Hide of the Beast
+						["u"] = 2,			-- Removed in UBRS Revamp
 						["description"] = "This item was skinned off of The Beast with a skinning skill of 310. Prior to BC, this could only be accomplished with the Zulian Slicer or Finkle's Skinner.",
 						["groups"] = {
 							q(5068, { 	-- Breastplate of Bloodthirst
@@ -202,7 +204,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(12756)),	-- Leggings of Arcana
 							}),
 						},
-					}),
+					},
 					un(2, i(12709)),	-- Finkle's Skinner
 					un(2, i(12969)), 	-- Seeping Willow
 					un(2, i(12967)),	-- Bloodmoon Cloak
