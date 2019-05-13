@@ -58,12 +58,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["groups"] = {
 									-- Battle Pets/Companions
 									un(29, p(191)),	-- Clockwork Rocket Bot
-									un(29, i(73797, {	-- Lump of Coal
-										un(29, p(337)),		-- Lumpy
-									})),
-									un(29, i(104317, {	-- Rotten Helper Box
-										un(29, p(1349)),	-- Rotten Helper Helper
-									})),
+									un(29, i(73797)),	-- Lump of Coal
+									un(29, i(104317)),	-- Rotten Helper Box
 									un(29, p(254)),	-- Blue Clockwork Rocket Bot
 									-- Toys
 									un(29, i(151349)), 	-- Toy Weapon Set [Alliance]

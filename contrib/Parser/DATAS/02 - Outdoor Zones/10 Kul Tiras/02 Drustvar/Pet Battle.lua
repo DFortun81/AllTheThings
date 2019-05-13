@@ -328,24 +328,19 @@ _.Zones =
 							["speciesID"] = 2381,	-- Shack Crab
 							["crs"] = { 143040 },	-- Shack Crab
 						},
-						{	-- Taptaf
-							["speciesID"] = 2198,	-- Taptaf
+						{	-- Taptaf the Pig!
+							["questID"] = 52061,	-- Taptaf the Pig!
+							["qg"] = 139380,	-- Taptaf
+							["coords"] = {
+								{ 65.0, 83.2 },
+							},
+							["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 							["g"] = {
-								{	-- Taptaf the Pig!
-									["questID"] = 52061,	-- Taptaf the Pig!
-									["qg"] = 139380,	-- Taptaf
-									["coords"] = {
-										{ 65.0, 83.2 },
-									},
-									["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
-									["g"] = {
-										{	-- Taptaf
-											["itemID"] = 161081,	-- Taptaf
-											["crs"] = {
-												139380,	-- Taptaf
-												131735,	-- Idej the Wisee
-											},
-										},
+								{	-- Taptaf
+									["itemID"] = 161081,	-- Taptaf
+									["crs"] = {
+										139380,	-- Taptaf
+										131735,	-- Idej the Wisee
 									},
 								},
 							},
