@@ -9,6 +9,24 @@ _.Zones =
 			{	-- Gilneas
 				["mapID"] = 179,	-- Gilneas
 				["g"] = {
+					{	-- Quests
+						["npcID"] = -17,	-- Quests
+						["g"] = {
+							{	-- Last Chance at Humanity
+								["questID"] = 14375,	-- Last Chance at Humanity
+								["qg"] = 36332,			-- King Genn Greymane
+								["sourceQuests"] = {
+									14222,	-- Last Stand
+								},
+								["coords"] = {
+									{ 36.41, 61.25, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+						},
+					},
 					--[[
 					n(-17, { 	-- Quests
 						["races"] = {22},

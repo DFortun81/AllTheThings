@@ -63,6 +63,33 @@ _.Zones =
 											22,	-- Worgen
 										},
 									},	
+									{	-- By Blood and Ash
+										["questID"] = 14212,	-- By Blood and Ash
+										["qg"] = 35552,			-- Tobias Mistmantle
+										["sourceQuests"] = {
+											14212,	-- Sacrifies
+										},
+										["coords"] = {
+											{ 40.46, 39.37, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+										["g"] = {
+											{	-- Cannoneer's Leggings
+												["itemID"] = 55010,			-- Cannoneer's Leggings
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Steadfast Boots
+												["itemID"] = 55009,			-- Steadfast Boots
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Steadfast Greaves
+												["itemID"] = 131866,		-- Steadfast Greaves
+												["ignoreSource"] = true,	-- White Item
+											},
+										},
+									},
 									{	-- By the Skin of His Teeth
 										["questID"] = 14154,	-- By the Skin of His Teeth
 										["qg"] = 35077,			-- Lord Darius Crowley
@@ -206,6 +233,19 @@ _.Zones =
 											8,	-- Mage
 										},
 									},
+									{	-- Last Stand
+										["questID"] = 14222,	-- Last Stand
+										["qg"] = 35566,			-- Lord Darius Crowley
+										["sourceQuests"] = {
+											14212,	-- Never Surrender, Sometimes Retreat
+										},
+										["coords"] = {
+											{ 48.93, 52.79, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- Learning the Word [Priest]
 										["questID"] = 14279,	-- Learning the Word
 										["u"] = 2,				-- Quest No Longer Available
@@ -263,6 +303,19 @@ _.Zones =
 											11,	-- Druid
 										},
 									},
+									{	-- Never Surrender, Sometimes Retreat
+										["questID"] = 14212,	-- Never Surrender, Sometimes Retreat
+										["qg"] = 35552,			-- Tobias Mistmantle
+										["sourceQuests"] = {
+											14212,	-- By Blood and Ash
+										},
+										["coords"] = {
+											{ 40.46, 39.37, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- Old Divisions
 										["questID"] = 14157,	-- Old Divisions
 										["qg"] = 35112,			-- King Geen Greymane
@@ -292,6 +345,19 @@ _.Zones =
 										},
 										["coords"] = {
 											{ 59.81, 22.17, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
+									{	-- Sacrifices
+										["questID"] = 14212,	-- Sacrifies
+										["qg"] = 35552,			-- Lord Darius Crowley
+										["sourceQuests"] = {
+											14294,	-- Time to Regroup
+										},
+										["coords"] = {
+											{ 31.05, 72.33, 202 },
 										},
 										["races"] = {
 											22,	-- Worgen
@@ -584,6 +650,19 @@ _.Zones =
 										},
 										["classes"] = {
 											11,	-- Druid
+										},
+									},
+									{	-- Time to Regroup
+										["questID"] = 14294,	-- Time to Regroup
+										["qg"] = 35906,			-- Lord Godfrey
+										["sourceQuests"] = {
+											14293,	-- Save Krennan Aranas
+										},
+										["coords"] = {
+											{ 55.74, 80.73, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
 										},
 									},
 									{	-- While You're At It
