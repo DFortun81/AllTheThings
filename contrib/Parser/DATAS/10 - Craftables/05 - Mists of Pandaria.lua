@@ -202,13 +202,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Helm
 					["itemID"] = 98845,	-- Crafted Malevolent Gladiator's Scaled Helm
 				},
-				{	-- Ghost-Forged Helm
+				{	-- Ghost-Forged Helm [Green]
 					["itemID"] = 82903,	-- Ghost-Forged Helm
-					["g"] = {
-						{	-- Ghost-Forged Helm
-							["itemID"] = 82927,	-- Ghost-Forged Helm
-						},
-					},
+				},
+				{	-- Ghost-Forged Helm [Blue]
+					["itemID"] = 82927,	-- Ghost-Forged Helm
 				},
 				{	-- Haunted Steel Greathelm
 					["itemID"] = 94266,	-- Haunted Steel Greathelm
@@ -266,13 +264,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Shoulders
 					["itemID"] = 98847,	-- Crafted Malevolent Gladiator's Scaled Shoulders
 				},
-				{	-- Ghost-Forged Shoulders
+				{	-- Ghost-Forged Shoulders [Green]
 					["itemID"] = 82904,	-- Ghost-Forged Shoulders
-					["g"] = {
-						{	-- Ghost-Forged Shoulders
-							["itemID"] = 82928,	-- Ghost-Forged Shoulders
-						},
-					},
+				},
+				{	-- Ghost-Forged Shoulders [Blue]
+					["itemID"] = 82928,	-- Ghost-Forged Shoulders
 				},
 				{	-- Lightsteel Shoulders
 					["itemID"] = 82912,	-- Lightsteel Shoulders
@@ -330,13 +326,11 @@ _.Craftables =
 				{	-- Ghost Reaver's Breastplate
 					["itemID"] = 82975,	-- Ghost Reaver's Breastplate
 				},
-				{	-- Ghost-Forged Breastplate
+				{	-- Ghost-Forged Breastplate [Green]
 					["itemID"] = 82905,	-- Ghost-Forged Breastplate
-					["g"] = {
-						{	-- Ghost-Forged Breastplate
-							["itemID"] = 82929,	-- Ghost-Forged Breastplate
-						},
-					},
+				},
+				{	-- Ghost-Forged Breastplate [Blue]
+					["itemID"] = 82929,	-- Ghost-Forged Breastplate
 				},
 				{	-- Lightsteel Breastplate
 					["itemID"] = 82913,	-- Lightsteel Breastplate
@@ -363,7 +357,7 @@ _.Craftables =
 					["itemID"] = 87405,	-- Unyielding Bloodplate
 				},
 			}),
-			n(-327, {		-- Hands
+			n(-327, {	-- Hands
 				{	-- Bloodforged Warfists
 					["itemID"] = 87407,	-- Bloodforged Warfists
 				},
@@ -409,13 +403,11 @@ _.Craftables =
 				{	-- Ghost Reaver's Gauntlets
 					["itemID"] = 82976,	-- Ghost Reaver's Gauntlets
 				},
-				{	-- Ghost-Forged Gauntlets
+				{	-- Ghost-Forged Gauntlets [Green]
 					["itemID"] = 82906,	-- Ghost-Forged Gauntlets
-					["g"] = {
-						{	-- Ghost-Forged Gauntlets
-							["itemID"] = 82930,	-- Ghost-Forged Gauntlets
-						},
-					},
+				},
+				{	-- Ghost-Forged Gauntlets [Blue]
+					["itemID"] = 82930,	-- Ghost-Forged Gauntlets
 				},
 				{	-- Lightsteel Gauntlets
 					["itemID"] = 82914,	-- Lightsteel Gauntlets
@@ -467,13 +459,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Bracers of Prowess
 					["itemID"] = 98852,	-- Crafted Malevolent Gladiator's Bracers of Prowess
 				},
-				{	-- Ghost-Forged Bracers
+				{	-- Ghost-Forged Bracers [Green]
 					["itemID"] = 82908,	-- Ghost-Forged Bracers
-					["g"] = {
-						{	-- Ghost-Forged Bracers
-							["itemID"] = 82932,	-- Ghost-Forged Bracers
-						},
-					},
+				},
+				{	-- Ghost-Forged Bracers [Blue]
+					["itemID"] = 82932,	-- Ghost-Forged Bracers
 				},
 				{	-- Lightsteel Bracers
 					["itemID"] = 82916,	-- Lightsteel Bracers
@@ -526,13 +516,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Girdle of Prowess
 					["itemID"] = 98860,	-- Crafted Malevolent Gladiator's Girdle of Prowess
 				},
-				{	-- Ghost-Forged Belt
+				{	-- Ghost-Forged Belt [Green]
 					["itemID"] = 82910,	-- Ghost-Forged Belt
-					["g"] = {
-						{	-- Ghost-Forged Belt
-							["itemID"] = 82934,	-- Ghost-Forged Belt
-						},
-					},
+				},
+				{	-- Ghost-Forged Belt [Blue]
+					["itemID"] = 82934,	-- Ghost-Forged Belt
 				},
 				{	-- Lightsteel Belt
 					["itemID"] = 82918,	-- Lightsteel Belt
@@ -590,13 +578,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Legguards
 					["itemID"] = 98846,	-- Crafted Malevolent Gladiator's Scaled Legguards
 				},
-				{	-- Ghost-Forged Legplates
+				{	-- Ghost-Forged Legplates [Green]
 					["itemID"] = 82907,	-- Ghost-Forged Legplates
-					["g"] = {
-						{	-- Ghost-Forged Legplates
-							["itemID"] = 82931,	-- Ghost-Forged Legplates
-						},
-					},
+				},
+				{	-- Ghost-Forged Legplates [Blue]
+					["itemID"] = 82931,	-- Ghost-Forged Legplates
 				},
 				{	-- Lightsteel Legplates
 					["itemID"] = 82915,	-- Lightsteel Legplates
@@ -648,13 +634,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 					["itemID"] = 98861,	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 				},
-				{	-- Ghost-Forged Boots
+				{	-- Ghost-Forged Boots [Green]
 					["itemID"] = 82909,	-- Ghost-Forged Boots
-					["g"] = {
-						{	-- Ghost-Forged Boots
-							["itemID"] = 82933,	-- Ghost-Forged Boots
-						},
-					},
+				},
+				{	-- Ghost-Forged Boots [Blue]
+					["itemID"] = 82933,	-- Ghost-Forged Boots
 				},
 				{	-- Haunted Steel Greaves
 					["itemID"] = 94263,	-- Haunted Steel Greaves
