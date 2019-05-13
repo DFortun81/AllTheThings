@@ -50,6 +50,50 @@ _.Zones =
 											8,	-- Mage
 										},
 									},
+									{	-- Brothers in Arms
+										["questID"] = 14154,	-- By the Skin of His Teeth
+										["qg"] = 35077,			-- Lord Darius Crowley
+										["sourceQuests"] = {
+											14154,	-- By the Skin of His Teeth
+										},
+										["coords"] = {
+											{ 55.20, 62.93, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},	
+									{	-- By the Skin of His Teeth
+										["questID"] = 14154,	-- By the Skin of His Teeth
+										["qg"] = 35077,			-- Lord Darius Crowley
+										["sourceQuests"] = {
+											28850,	-- The Prison Rooftop
+										},
+										["coords"] = {
+											{ 55.20, 62.93, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+										["g"] = {
+											{	-- Bracers of the Queen's Gate
+												["itemID"] = 54976,			-- Bracers of the Queen's Gate
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Darius' Handguards
+												["questID"] = 131865,		-- Darius' Hanguards
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Darius' Sash
+												["itemID"] = 55055,			-- Darius' Sash
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Dempsey's Gloves
+												["itemID"] = 55006,			-- Dempsey's Gloves
+												["ignoreSource"] = true,	-- White Item
+											},
+										},
+									},	
 									{	-- Charge [Warrior]
 										["questID"] = 14266,	-- Charge
 										["u"] = 2,				-- Quest No Longer Available
@@ -114,6 +158,37 @@ _.Zones =
 											4, -- Rogue
 										},
 									},
+									{	-- From the Shadows
+										["questID"] = 14204,	-- From the Shadows
+										["qg"] = 35378,			-- Lorna Crowley
+										["sourceQuests"] = {
+											14159,	-- The Rebl Lord's Arsenal
+										},
+										["coords"] = {
+											{ 56.87, 81.41, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+										["g"] = {
+											{	-- Alarmbringer's Mace
+												["itemID"] = 54985,			-- Alarmbringer's Mace
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Houndmaster's Crossbow
+												["itemID"] = 54986,			-- Houndmaster's Crossbow
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Mastiff Trainer's Wand
+												["itemID"] = 58217,			-- Mastiff Trainer's Wand
+												["ignoreSource"] = true,	-- White Item
+											},
+											{	-- Timeworn Staff
+												["itemID"] = 66247,			-- Timeworn Staff
+												["ignoreSource"] = true,	-- White Item
+											},
+										},
+									},
 									{	-- Frost Nova [Mage]
 										["questID"] = 14281,	-- Frost Nova
 										["u"] = 2,				-- Quest No Longer Available
@@ -153,6 +228,19 @@ _.Zones =
 										["qg"] = 34850,			-- Prince Liam Greymane
 										["coords"] = {
 											{ 59.12, 23.74, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
+									{	-- Messsage to Greymane
+										["questID"] = 14214,	-- Messsage to Greymane
+										["qg"] = 35378,			-- Lorna Crowley
+										["sourceQuests"] = {
+											14159,	-- The Rebl Lord's Arsenal
+										},
+										["coords"] = {
+											{ 56.87, 81.41, 202 },
 										},
 										["races"] = {
 											22,	-- Worgen
@@ -451,6 +539,19 @@ _.Zones =
 										},
 										["coords"] = {
 											{ 57.96, 75.56, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},	
+									{	-- The Rebel Lord's Arsenal
+										["questID"] = 14159,	-- The Rebl Lord's Arsenal
+										["qg"] = 35112,			-- King Geen Greymane
+										["sourceQuests"] = {
+											14154,	-- By the Skin of His Teeth
+										},
+										["coords"] = {
+											{ 65.83, 77.84, 202 },
 										},
 										["races"] = {
 											22,	-- Worgen
