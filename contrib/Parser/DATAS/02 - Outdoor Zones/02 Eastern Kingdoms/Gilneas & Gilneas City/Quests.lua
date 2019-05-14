@@ -13,7 +13,7 @@ _.Zones =
 						["npcID"] = -17,	-- Quests
 						["g"] = {
 							{	-- Alas, Gilneas!
-								["questID"] = 14466,	-- Alas, Gilneas!
+								["questID"] = 14467,	-- Alas, Gilneas!
 								["qg"] = 36743,			-- King Genn Greymane
 								["sourceQuests"] = {
 									14466,	-- The King's Observatory
@@ -123,7 +123,7 @@ _.Zones =
 								["questID"] = 24438,	-- Exodus
 								["qg"] = 36743,			-- King Genn Greymane
 								["sourceQuests"] = {
-									14466,	-- Alas, Gilneas!
+									14467,	-- Alas, Gilneas!
 								},
 								["coords"] = {
 									{ 41.91, 20.10, 182 },
