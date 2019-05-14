@@ -2776,7 +2776,6 @@ AllTheThings.L = {
 		[233559] = "Forgotten Skull Cache",
 		[233560] = "Fragment of Oshu'gun",
 		[233561] = "Pokkar's Thirteenth Axe",
-		[233590] = "Void-Infused Crystal",
 		[233593] = "Polished Saberon Skull",
 		[233598] = "Elemental Shackles",
 		[233611] = "Highmaul Sledge",

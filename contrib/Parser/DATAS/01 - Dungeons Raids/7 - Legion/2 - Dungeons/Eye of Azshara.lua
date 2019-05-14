@@ -7,62 +7,34 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 713,
 		["lvl"] = 98,
 		["g"] = {
-			{	-- Artifacts
-				["npcID"] = -10067,	-- Artifacts
-				["g"] = {
-					{	-- Coil of the Drowned Queen [Shaman - Resto]
-						["itemID"] = 139574,	-- Coil of the Drowned Queen
-						["description"] = "Drops from the first two bosses and spec doesn't matter.",
-						["crs"] = {
-							91784,	-- Warlord Parjesh
-							91789,	-- Lady Hatecoil
-						},
-						["g"] = {
-							{	-- Coil of the Drowned Queen [Shaman - Resto]
-								["artifactID"] = 926,	-- Coil of the Drowned Queen [Shaman - Resto]
-							},
-						},
+			n(0,      {	-- Zone Drops
+				i(137726),	-- Schematic: Leystone Buoy
+			}),
+			n(-10067, {	-- Artifacts
+				i(139574, {	-- Coil of the Drowned Queen (shaman appearance)
+					["description"] = "Drops from the first two bosses on any difficulty.",
+					["crs"] = {
+						91784,	-- Warlord Parjesh
+						91789,	-- Lady Hatecoil
 					},
-				},
-			},
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
-				["g"] = {
-					{	-- Eye of Azshara: The Tidestone of Golganneth
-						["itemID"] = 137206,	-- Tidestone of Golganneth
-						["questID"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
-						["crs"] = {
-							96028,	-- Wrath of Azshara
-							106780,	-- Tidestone of Golganneth
-						},
-						["sourceQuests"] = {
-							38286,	-- Eye of Azshara: Wrath of Azshara
-						},
-						["g"] = {
-							{	-- Waistband of the Hatecoil Oracles
-								["itemID"] = 140625,	-- Waistband of the Hatecoil Oracles
-							},
-							{	-- Bitterbrine Binding
-								["itemID"] = 140624,	-- Bitterbrine Binding
-							},
-							{	-- Brightscale Waistguard
-								["itemID"] = 140623,	-- Brightscale Waistguard
-							},
-							{	-- Hardshell Greatbelt
-								["itemID"] = 140622,	-- Hardshell Greatbelt
-							},
-						},
+					["g"] = {
+						artifact(926),	-- Resto Shaman Hidden Artifact Skin
 					},
-				},
-			},
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["g"] = {
-					{	-- Schematic: Leystone Buoy
-						["itemID"] = 137726,	-- Schematic: Leystone Buoy
+				}),
+			}),
+			n(-17,    {	-- Quests
+				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
+					["qg"] = 106780,	-- Tidestone of Golganneth
+					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
+					["modelScale"] = 3,
+					["g"] = {
+						i(140622),	-- Hardshell Greatbelt
+						i(140623),	-- Brightscale Waistguard
+						i(140624),	-- Bitterbrine Binding
+						i(140625),	-- Waistband of the Hatecoil Oracles
 					},
-				},
-			},
+				}),
+			}),	
 			d(1, {	-- Normal
 				cr(91784, e(1480, {	-- Warlord Parjesh
 					i(134240),	-- Brinewashed Leather Cowl
