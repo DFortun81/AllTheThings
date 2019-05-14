@@ -499,9 +499,6 @@ _.Zones =
 												["itemID"] = 52040,	-- Salvager's Bag
 											},
 										},
-										["races"] = {
-											22,	-- Worgen
-										},
 									},
 									{	-- Save Krennan Aranas
 										["questID"] = 14293,	-- Save Krennan Aranas

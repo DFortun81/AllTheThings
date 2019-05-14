@@ -38,6 +38,33 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Escape By Sea
+								["questID"] = 14405,	-- Escape By Sea
+								["qg"] = 36456,			-- Sebastian Hayward
+								["sourceQuests"] = {
+									14404,	-- Not Quite Shipshape
+									14412,	-- Washed Up
+								},
+								["coords"] = {
+									{ 36.88, 84.18, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Evacuation
+								["questID"] = 14397,	-- Evacuation
+								["qg"] = 36451,			-- Prince Liam Greymane
+								["sourceQuests"] = {
+									14395,	-- Gasping for Breath
+								},
+								["coords"] = {
+									{ 29.03, 65.06, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Gasping for Breath
 								["questID"] = 14395,	-- Gasping for Breath
 								["qg"] = 36451,			-- Prince Liam Greymane
@@ -46,6 +73,55 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 29.03, 65.06, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Grandma Wahl
+								["questID"] = 14398,	-- Grandma Wahl
+								["qg"] = 36452,			-- Gwen Armstead
+								["sourceQuests"] = {
+									14397,	-- Evacuation
+								},
+								["coords"] = {
+									{ 37.63, 65.20, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Grandma's Cat
+								["questID"] = 14401,	-- Grandma's Cat
+								["qg"] = 36452,			-- Grandma Wahl
+								["sourceQuests"] = {
+									14400,	-- I Can't Wear This
+								},
+								["coords"] = {
+									{ 32.52, 75.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Granny's Mallet
+										["itemID"] = 55016,			-- Granny's Mallet
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Orange Blanket
+										["itemID"] = 55017,			-- Orange Blanket
+										["ignoreSource"] = true,	-- White Item
+									},
+								},
+							},
+							{	-- Grandma's Lost It Alright
+								["questID"] = 14399,	-- Grandma's Lost It Alright
+								["qg"] = 36452,			-- Grandma Wahl
+								["sourceQuests"] = {
+									14398,	-- Grandma Wahl
+								},
+								["coords"] = {
+									{ 32.52, 75.48, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -83,6 +159,32 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 35.75, 66.29, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Horses for Duskhaven
+								["questID"] = 14463,	-- Horses for Duskhaven
+								["qg"] = 36457,			-- Lorna Crowley
+								["sourceQuests"] = {
+									14416,	-- The Hungry Ettin
+								},
+								["coords"] = {
+									{ 37.68, 72.75, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- I Can't Wear This
+								["questID"] = 14400,	-- I Can't Wear This
+								["qg"] = 36452,			-- Grandma Wahl
+								["sourceQuests"] = {
+									14399,	-- Grandma's Lost It Alright
+								},
+								["coords"] = {
+									{ 32.52, 75.48, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -169,6 +271,37 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Not Quite Shipshape
+								["questID"] = 14404,	-- Not Quite Shipshape
+								["qg"] = 36456,			-- Sebastian Hayward
+								["sourceQuests"] = {
+									14403,	-- The Hayward Brothers
+								},
+								["coords"] = {
+									{ 36.88, 84.18, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Shipwright's Bag
+										["itemID"] = 52039,	-- Shipwright's Bag
+									},
+								},
+							},
+							{	-- Ready to Go
+								["questID"] = 14402,	-- Ready to Go
+								["qg"] = 36452,			-- Grandma Wahl
+								["sourceQuests"] = {
+									14401,	-- Grandma's Cat
+								},
+								["coords"] = {
+									{ 32.52, 75.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Save the Children!
 								["questID"] = 14368,	-- Save the Children!
 								["qg"] = 36291,			-- Melinda Hammond
@@ -209,6 +342,72 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- The Crowley Orchard
+								["questID"] = 14406,	-- The Crowley Orchard
+								["qg"] = 36452,			-- Gwen Armstead
+								["sourceQuests"] = {
+									14397,	-- Evacuation
+								},
+								["coords"] = {
+									{ 37.63, 65.20, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- The Hayward Brothers
+								["questID"] = 14403,	-- The Hayward Brothers
+								["qg"] = 36452,			-- Gwen Armstead
+								["sourceQuests"] = {
+									14397,	-- Evacuation
+								},
+								["coords"] = {
+									{ 37.63, 65.20, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- The Hungry Ettin
+								["questID"] = 14416,	-- The Hungry Ettin
+								["qg"] = 36457,			-- Lorna Crowley
+								["sourceQuests"] = {
+									14406,	-- The Crowley Orchard
+								},
+								["coords"] = {
+									{ 37.68, 72.75, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Crowley's Belt
+										["itemID"] = 55021,			-- Crowley's Belt
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Lorna's Gloves
+										["itemID"] = 55020,			-- Lorna's Gloves
+										["ignoreSource"] = true,	-- White Item
+									},
+								},
+							},
+							{	-- To Greymane Manor
+								["questID"] = 14465,	-- To Greymane Manor
+								["qg"] = 36452,			-- Gwen Armstead
+								["sourceQuests"] = {
+									--Note! You will only have 1 of these three at the time, but all check off on turn-in
+									14405,	-- Escape By Sea
+									14463,	-- Horses for Duskhaven
+									14402,	-- Ready to Go
+								},
+								["coords"] = {
+									{ 37.63, 65.20, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							
 							{	-- Two By Sea
 								["questID"] = 14382,	-- Two By Sea
 								["qg"] = 36290,			-- Lord Godfrey
@@ -230,6 +429,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 28.97, 63.93, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Washed Up
+								["questID"] = 14412,	-- Washed Up
+								["qg"] = 36456,			-- Sebastian Hayward
+								["sourceQuests"] = {
+									14403,	-- The Hayward Brothers
+								},
+								["coords"] = {
+									{ 36.88, 84.18, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
