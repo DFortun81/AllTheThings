@@ -17,6 +17,7 @@ BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
+BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"];
 
 BINDING_HEADER_ALLTHETHINGS_MODULES = L["MODULES"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"];
@@ -123,6 +124,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["LiveScan"] = false,
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
@@ -1545,7 +1547,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 2, 3, 10, 9 }) do
+for i,filterID in ipairs({ 11, 2, 3, 10, 9, 33, 32, 31 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
@@ -1553,17 +1555,6 @@ for i,filterID in ipairs({ 2, 3, 10, 9 }) do
 	xoffset = 0;
 	yoffset = 6;
 end
-
--- Ranged Weapons
-yoffset = -4;
-for i,filterID in ipairs({ 33, 32, 31, }) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
