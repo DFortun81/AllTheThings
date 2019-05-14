@@ -1190,16 +1190,6 @@ local function CreateObject(t)
 		
 		local meta = getmetatable(t);
 		if meta then
-			if t.key == "npcID" then
-				if t.itemID then
-					if t.isToy then
-						t = app.CreateToy(t.itemID, t);
-					else
-						t = app.CreateItem(t.itemID, t);
-					end
-					return t;
-				end
-			end
 			setmetatable(s, meta);
 			return s;
 		else
@@ -11893,6 +11883,7 @@ app.events.ADDON_LOADED = function(addonName)
 						for i=2,#searchResults,1 do
 							MergeObject(data, CreateObject(searchResults[i]));
 						end
+						if data.key == "npcID" then setmetatable(data, app.BaseItem); end
 						data.auctions = {};
 						keys[value] = data;
 					end
