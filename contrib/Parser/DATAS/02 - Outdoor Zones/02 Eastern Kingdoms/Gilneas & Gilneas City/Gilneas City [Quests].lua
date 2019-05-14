@@ -233,6 +233,19 @@ _.Zones =
 											8,	-- Mage
 										},
 									},
+									{	-- Slowing the Inevitable
+										["questID"] = 24678,	-- Knee-Deep
+										["qg"] = 38539,			-- King Genn Greymane
+										["sourceQuests"] = {
+											24920,	-- Slowing the Inevitable
+										},
+										["coords"] = {
+											{ 32.37, 57.01, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- Last Stand
 										["questID"] = 14222,	-- Last Stand
 										["qg"] = 35566,			-- Lord Darius Crowley
@@ -545,6 +558,19 @@ _.Zones =
 											9,	-- Warlock
 										},
 									},
+									{	-- Slowing the Inevitable
+										["questID"] = 24920,	-- Slowing the Inevitable
+										["qg"] = 38539,			-- King Genn Greymane
+										["sourceQuests"] = {
+											24903,	-- Vengeance or Survival
+										},
+										["coords"] = {
+											{ 32.37, 57.01, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- Someone's Keeping Track of You [Hunter]
 										["questID"] = 14275,	-- Someone's Keeping Track of You
 										["qg"] = 35840,			-- Gwen Armstead
@@ -607,6 +633,19 @@ _.Zones =
 											3,	-- Hunter
 										},
 									},
+									{	-- The Hunt For Sylvanas
+										["questID"] = 24902,	-- The Hunt For Sylvanas
+										["qg"] = 38611,			-- Lorna Crowley
+										["sourceQuests"] = {
+											24904,	-- The Battle For Gilneas City
+										},
+										["coords"] = {
+											{ 38.58, 60.22, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
 									{	-- The Prison Rooftop
 										["questID"] = 28850,	-- The Prison Rooftop
 										["qg"] = 50371,			-- Captain Broderick
@@ -657,6 +696,19 @@ _.Zones =
 										},
 										["coords"] = {
 											{ 55.74, 80.73, 202 },
+										},
+										["races"] = {
+											22,	-- Worgen
+										},
+									},
+									{	-- Vengeance or Survival
+										["questID"] = 24903,	-- Vengeance or Survival
+										["qg"] = 38611,			-- Lorna Crowley
+										["sourceQuests"] = {
+											24902,	-- The Hunt For Sylvanas
+										},
+										["coords"] = {
+											{ 38.58, 60.22, 202 },
 										},
 										["races"] = {
 											22,	-- Worgen

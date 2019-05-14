@@ -322,6 +322,19 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Laid to Rest
+								["questID"] = 24602,	-- Laid to Rest
+								["qg"] = 38144,			-- Krennan Aranas
+								["sourceQuests"] = {
+									24678,	-- Knee-Deep
+								},
+								["coords"] = {
+									{ 49.83, 56.93, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Last Chance at Humanity
 								["questID"] = 14375,	-- Last Chance at Humanity
 								["qg"] = 36332,			-- King Genn Greymane
@@ -484,6 +497,19 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Patriarch's Blessing
+								["questID"] = 24679,	-- Patriarch's Blessing
+								["qg"] = 38144,			-- Krennan Aranas
+								["sourceQuests"] = {
+									24602,	-- Laid to Rest
+								},
+								["coords"] = {
+									{ 49.83, 56.93, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Pest Control
 								["questID"] = 24484,	-- Pest Control
 								["qg"] = 37102,			-- Gwen Armstead
@@ -518,6 +544,21 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 69.28, 72.98, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Push Them Out
+								["questID"] = 24676,	-- Push Them Out
+								["qg"] = 37783,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24677,	-- Flank the Forsaken
+									24675,	-- Last Meal
+									24674,	-- Slaves to No One
+								},
+								["coords"] = {
+									{ 70.87, 39.83, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -707,6 +748,36 @@ _.Zones =
 								},
 								["races"] = {
 									22,	-- Worgen
+								},
+							},
+							{	-- The Battle For Gilneas City
+								["questID"] = 24904,	-- The Battle For Gilneas City
+								["qg"] = 37783,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24676,	-- Push Them Out
+								},
+								["coords"] = {
+									{ 70.87, 39.83, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Gilnean Shield
+										["itemID"] = 54990,		-- Gilnean Shield
+									},
+									{	-- Mace of the Blood Price
+										["itemID"] = 55011,		-- Mace of the Blood Price
+									},
+									{	-- Marshalling Point
+										["itemID"] = 54987,		-- Marshalling Point
+									},
+									{	-- Rallying Charge
+										["itemID"] = 54989,		-- Rallying Charge
+									},
+									{	-- Cloak of the Clarion Call
+										["itemID"] = 54988,		-- Cloak of the Clarion Call
+									},
 								},
 							},
 							{	-- The Blackwald
