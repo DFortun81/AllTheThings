@@ -45,15 +45,19 @@ _.ExpansionFeatures =
 					}),
 					qa(36423, {	-- Pets Versus Pests
 						["sourceQuests"] = { 38241 },	-- Unearthed Magic
-						["lvl"] = 98,
+						["lvl"] = 100,	-- wowhead says 98, but its prereq requires a level 3 garrison, which requires level 100.
 						["qg"] = 85418,	-- Lio the Lioness
 						["g"] = {
 							{ ["buildingID"] = 42, },	-- Menagerie
 						},
 					}),
 					qa(38241, {	-- Unearthed Magic
-						["lvl"] = 98,
+						["sourceQuests"] = { 36615 },	-- My Very Own Castle
+						["lvl"] = 100,	-- wowhead says 98, but it requires a level 3 garrison, which requires level 100.
 						["qg"] = 85418,	-- Lio the Lioness
+						["g"] = {
+							i(122457),	-- Ultimate Battle-Training Stone
+						},
 					}),
 				}),
 			},

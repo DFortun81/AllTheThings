@@ -1874,6 +1874,8 @@ _.ExpansionFeatures =
 					["qg"] = 77209,	-- Baros Alexston
 				}),
 				qa(38356, {	-- Bringing the Bass
+					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["lvl"] = 100,
 					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
 					["g"] = {
 						i(122613, {	-- Stash of Dusty Music Rolls
@@ -1949,6 +1951,10 @@ _.ExpansionFeatures =
 				}),
 				qa(34409, {	-- Garrison Campaign: Crows In The Field
 					["qg"] = 88112,	-- Morthis Whisperwing
+				}),
+				qa(38253, {	-- Garrison Campaign: War Council
+					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["lvl"] = 100,
 				}),
 				qa(39195, {	-- Gems of the Apexis
 					["requireSkill"] = 755,	-- Jewelcrafting
@@ -2273,8 +2279,23 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				qa(38306, {	-- Mystery Notebook
+				qa(38344, {	-- Mystery Notebook
+					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["coord"] = { 33.9, 37.2, 582 },
+					["lvl"] = 100,
 					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
+				}),
+				qa(36615, {	-- My Very Own Castle
+					["sourceQuests"] = { 36592 },	-- Bigger is Better
+					["coord"] = { 31.8, 31.0, 582 },
+					["lvl"] = 100,
+					["qg"] = 77209,	-- Baros Alexston
+				}),
+				qa(38408, {	-- New Goods
+					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["coord"] = { 29.1, 34.6, 582 },
+					["lvl"] = 100,
+					["qg"] = 79953,	-- Lieutenant Thorn
 				}),
 				qa(35174, {	-- Pale Moonlight
 					["qg"] = 79457,	-- Vindicator Maraad
@@ -2289,6 +2310,8 @@ _.ExpansionFeatures =
 					["qg"] = 86589,	-- Watchman Tilnia
 				}),
 				qa(37433, {	-- Proving Grounds
+					["coord"] = { 29.1, 34.6, 582 },
+					["lvl"] = 100,
 					["qg"] = 79953,	-- Lieutenant Thorn
 					["g"] = {
 						i(119463),	-- Staff of Trials
@@ -2318,6 +2341,15 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 34583 },	-- For the Alliance!
 					["coord"] = { 32.5, 34.2, 582 },
 					["qg"] = 79243,	-- Baros Alexston
+				}),
+				qa(37288, {	-- Resources in Ashran
+				--	unknown SQ.  wowhead says level requirement is 92, but i didn't see this until i hit 100 and upgraded to a level 3 garrison
+				--	possible that you have to pick up 'outpost building assembly notes,' which are awarded by specific quests in spires of arak and gorgrond
+				--	i had also just received my first outpost notes before finding this quest
+				--	gorgrond is a level 92 zone, so that's possible
+				--	["sourceQuests"] = {  },	-- 
+					["coord"] = { 29.5, 33.3, 582 },
+					["qg"] = 77209,	-- Baros Alexston
 				}),
 				qa(37289, {	-- Shadowmoon Invasion!
 				--	not a real invasion!  this is the trial one.

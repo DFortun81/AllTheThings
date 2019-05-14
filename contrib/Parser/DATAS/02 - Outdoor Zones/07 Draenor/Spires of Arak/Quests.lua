@@ -32,10 +32,7 @@ _.Zones =
 							["achievementID"] = 8925,	-- Between Arak and a Hard Place (Alliance)
 							["sourceQuests"] = {
 								35012,	-- Sethe, the Dead God
-								34885,	-- Mother of Thorns
 								35245,	-- A Sentimental Relic
-							--	turned in last 2 quests at the same time, and not sure which one procced the crit
-							--	definitely requires more then just "sethe, the dead god," though — i turned it in well before the other 2 and didn't get the crit from it alone
 							},
 						},
 						{	-- Criteria 5 — Legacy of the Apexis
@@ -46,7 +43,7 @@ _.Zones =
 						{	-- Criteria 6 — Terokk's Legend
 							["criteriaID"] = 6,	-- Terokk's Legend
 							["achievementID"] = 8925,	-- Between Arak and a Hard Place (Alliance)
-							["sourceQuests"] = { 35896 },	-- Terokk's Legend
+							["sourceQuests"] = { 35896 },	-- The Avatar of Terokk
 						},
 						{	-- Criteria 7 — Securing Southport
 							["criteriaID"] = 7,	-- Securing Southport
@@ -151,6 +148,27 @@ _.Zones =
 				}),
 				
 
+				qa(35482, {	-- Admiral Taylor
+					["sourceQuests"] = {
+						35408,	-- Prime the Cannons
+						35407,	-- Punishable by Death
+					},
+					["coord"] = { 37.6, 53.7, 542 },
+					["qg"] = 82278,	-- Lady Claudia
+					["g"] = {
+						i(118082),	-- Admiral Taylor's Boot Knife
+						i(118079),	-- Admiral Taylor's Ceremonial Sword
+						i(118083),	-- Admiral Taylor's Cutlass
+						i(118084),	-- Admiral Taylor's Glaive
+						i(118080),	-- Admiral Taylor's Greatsword
+						i(118081),	-- Admiral Taylor's Hunting Bow
+						i(118086),	-- Admiral Taylor's Keg Tapper
+						i(114945),	-- Admiral Taylor's Shield
+						i(118085),	-- Admiral Taylor's Staff of Wisdom
+					},
+				}),
+				
+				
 				q(34883,  { -- A Feast of Shadows
 					["sourceQuests"] = { 34830 },	-- Behind the Veil
 					["coord"] = { 44.4, 24.0, 542 },
@@ -189,6 +207,13 @@ _.Zones =
 				}),
 
 
+				qa(35739, {	-- All Natural
+					["sourceQuests"] = { 35719 },	-- Back on Track
+					["coord"] = { 60.2, 53.1, 542 },
+					["qg"] = 82788,	-- Dilbert Tinkertoss
+				}),
+
+				
 				qa(35339, {	-- A Parting Favor
 					["sourceQuests"] = { 35329 },	-- I See Dead People
 					["coord"] = { 38.9, 48.8, 542 },
@@ -212,6 +237,13 @@ _.Zones =
 					["qg"] = 80834,	-- Memory of Lithic
 				}),
 
+
+				q(36059, {	-- A Worthy Vessel
+					["sourceQuests"] = { 35895 },	-- Terokk's Fall
+					["coord"] = { 46.5, 46.5, 542 },
+					["qg"] = 80153,	-- Shadow-Sage Iskar
+				}),
+
 				
 				q(34886, {	-- Baby Bird
 					["sourceQuests"] = { 34838 },	-- Ikky's Egg
@@ -227,6 +259,16 @@ _.Zones =
 					},
 					["coord"] = { 44.4, 24.0, 542 },
 					["qg"] = 80508,	-- Talonpriest Zellek
+				}),
+
+
+				qa(35719, {	-- Back on Track
+					["sourceQuests"] = {
+						35878,	-- Safety Measures
+						35716,	-- Sticky Situation
+					},
+					["coord"] = { 56.2, 42.4, 542 },
+					["qg"] = 82759,	-- Filbert Tinkertoss
 				}),
 
 				
@@ -256,6 +298,17 @@ _.Zones =
 				}),
 				
 
+				q(35009, {	-- Call of the Raven Mother
+					["sourceQuests"] = {
+						34939,	-- Declawing the Bloodmane
+						34938,	-- Ralshiara's Demise
+						34924,	-- The Egg Thieves
+					},
+					["coord"] = { 52.0, 49.9, 542 },
+					["qg"] = 80481,	-- High Ravenspeaker Krikka
+				}),
+
+				
 				q(34921, {	-- Cult of the Ravenspeakers
 					["sourceQuests"] = {
 						35634,	-- Control is King
@@ -265,6 +318,22 @@ _.Zones =
 					["qg"] = 80648,	-- Anzu
 				}),
 
+				
+				q(34939, {  -- Declawing The Bloodmane
+					["sourceQuests"] = {
+						34923,	-- The Bloodmane
+						34922,	-- Words of the Raven Mother
+					},
+					["coord"] = { 54.8, 54.2, 542 },
+					["qg"] = 80860,	-- High Ravenspeaker Krikka
+					["g"] = {
+						i(114720),	-- Cragplate Gauntlets
+						i(114722),	-- Ravenchain Gauntlets
+						i(114721),	-- Shadowveil Gloves
+						i(114719),	-- Skysinger Gloves
+					},
+				}),
+				
 				
 				q(35077, {  -- Defungination
 					["sourceQuests"] = { 35619 },	-- Pinchwhistle Gearworks (Alliance, two versions)
@@ -290,6 +359,16 @@ _.Zones =
 					["sourceQuests"] = { 34827 },	-- Last of the Talonpriests
 					["coord"] = { 47.1, 31.6, 542 },
 					["qg"] = 85425,	-- Ravager Egg
+				}),
+
+
+				qa(36353, {	-- For Old Times' Sake
+					["sourceQuests"] = { 35482 },	-- Admiral Taylor
+					["coord"] = { 39.9, 60.6, 542 },
+					["qg"] = 85080,	-- Admiral Taylor
+					["g"] = {
+						follower(204),	-- Admiral Taylor
+					},
 				}),
 
 				
@@ -342,6 +421,13 @@ _.Zones =
 				}),
 				
 
+				qa(35549, {	-- Honoring a Hero
+					["sourceQuests"] = { 35482 },	-- Admiral Taylor
+					["coord"] = { 36.8, 56.7, 542 },
+					["qg"] = 82403,	-- Jasper Fel
+				}),
+
+				
 				q(35273, {  -- Hot Seat
 					["sourceQuests"] = { 35261 },	-- Shot Caller
 					["coord"] = { 35.5, 32.1, 542 },
@@ -379,6 +465,13 @@ _.Zones =
 				}),
 
 
+				qa(35782, {	-- I See Dead Arakkoa
+					["sourceQuests"] = { 35719 },	-- Back on Track
+					["coord"] = { 60.2, 53.1, 542 },
+					["qg"] = 82788,	-- Dilbert Tinkertoss
+				}),
+
+				
 				qa(35329, {	-- I See Dead People (Alliance)
 					["sourceQuests"] = { 35293 },	-- Old Friends
 					["coord"] = { 39.1, 48.8, 542 },
@@ -478,6 +571,13 @@ _.Zones =
 					["qg"] = 81949,	-- Jasper Fel
 				}),
 
+
+				q(36085, {	-- On Ebon Wings
+					["sourceQuests"] = { 35009 },	-- Call of the Raven Mother
+					["coord"] = { 51.3, 50.3, 542 },
+					["qg"] = 84276,	-- Reshad
+				}),
+
 				
 				qa(35274, {	-- One of Our Own (Alliance)
 					["sourceQuests"] = { 35671 },	-- A Gathering of Shadows
@@ -528,6 +628,37 @@ _.Zones =
 					["qg"] = 85598,	-- Darkscryer Raastok
 				}),
 
+
+				qa(35408, {	-- Prime the Cannons
+					["sourceQuests"] = { 82194 },	-- Sir Edward
+					["coord"] = { 37.6, 53.8, 542 },
+					["qg"] = 82212,	-- Lady Claudia
+				}),
+
+				
+				qa(35407, {	-- Punishable by Death
+					["sourceQuests"] = { 82194 },	-- Sir Edward
+					["coord"] = { 37.6, 53.8, 542 },
+					["qg"] = 82194,	-- Sir Edward
+				}),
+
+				
+				q(34938, {	-- Ralshiara's Demise
+					["sourceQuests"] = {
+						34923,	-- The Bloodmane
+						34922,	-- Words of the Raven Mother
+					},
+					["coord"] = { 54.8, 54.2, 542 },
+					["qg"] = 80740,	-- Ravenspeaker Sekara
+				}),
+
+				
+				q(35007, {	-- Rendezvous with the Ritualists
+					["sourceQuests"] = { 35010 },	-- The High Ravenspeaker
+					["coord"] = { 52.0, 49.9, 542 },
+					["qg"] = 80481,	-- High Ravenspeaker Krikka
+				}),
+
 				
 				q(35611, {	-- Return to Veil Terokk
 					["sourceQuests"] = { 35286 },	-- Orders, Commander?
@@ -560,6 +691,13 @@ _.Zones =
 				}),
 				
 
+				qa(35878, {	-- Safety Measures
+					["sourceQuests"] = { 35713 },	-- The Tinkertoss Twins
+					["coord"] = { 56.2, 42.4, 542 },
+					["qg"] = 82759,	-- Filbert Tinkertoss
+				}),
+
+				
 				qa(35380, {	-- Second in Command
 					["sourceQuests"] = { 35353 },	-- A Piece of the Puzzle
 					["coord"] = { 37.5, 50.7, 542 },
@@ -633,6 +771,13 @@ _.Zones =
 				}),
 
 
+				qa(35716, {	-- Sticky Situation
+					["sourceQuests"] = { 35713 },	-- The Tinkertoss Twins
+					["coord"] = { 56.2, 42.4, 542 },
+					["qg"] = 82759,	-- Filbert Tinkertoss
+				}),
+
+				
 				q(35668, {	-- Syth's Secret
 					["sourceQuests"] = { 35636 },	-- All Due Respect
 					["coord"] = { 50.3, 36.6, 542 },
@@ -654,6 +799,33 @@ _.Zones =
 				}),
 
 				
+				q(35896, {	-- The Avatar of Terokk
+					["sourceQuests"] = { 36059 },	-- A Worthy Vessel
+					["coord"] = { 46.6, 46.6, 542 },
+					["qg"] = 84122,	-- Shade of Terokk
+					["g"] = {
+						i(119073),	-- Talon Guard Bloodsworn Band
+						i(118070),	-- Talon Guard Bloodsworn Loop
+						i(118069),	-- Talon Guard Bloodsworn Ring
+						i(119065),	-- Talon Guard Bloodsworn Seal
+						i(118068),	-- Talon Guard Bloodsworn Signet
+					},
+				}),
+				
+				
+				q(34923, {  -- The Bloodmane
+					["sourceQuests"] = { 35007 },	-- Rendezvous with the Ritualists
+					["coord"] = { 54.8, 54.1, 542 },
+					["qg"] = 80740,	-- Ravenspeaker Sekara
+					["g"] = {
+						i(114741),	-- Cragplate Wristwraps
+						i(114742),	-- Ravenchain Wristwraps
+						i(114740),	-- Shadowveil Wristwraps
+						i(114743),	-- Skysinger Wristwraps
+					},
+				}),
+				
+				
 				q(34659, {	-- The Crone
 					["sourceQuests"] = { 34658 },	-- Orders From On High
 					["coord"] = { 45.4, 18.2, 542 },
@@ -661,6 +833,28 @@ _.Zones =
 				}),
 
 
+				qa(35835, {	-- The Ebon Hunter
+					["sourceQuests"] = {
+						35739,	-- All Natural
+						35782,	-- I See Dead Arakkoa
+					},
+					["coord"] = { 60.2, 53.1, 542 },
+					["qg"] = 82788,	-- Dilbert Tinkertoss
+				--	awards i(116394),	-- Outpost Building Assembly Notes
+				--	doesn't seem like we currently track this, not sure if it should be attached to the things it can purchase
+				}),
+
+				
+				q(34924, {	-- The Egg Thieves
+					["sourceQuests"] = {
+						34923,	-- The Bloodmane
+						34922,	-- Words of the Raven Mother
+					},
+					["coord"] = { 54.8, 54.2, 542 },
+					["qg"] = 80863,	-- Vakora of the Flock
+				}),
+
+				
 				q(35011, {	-- The False Talon King
 					["sourceQuests"] = {
 						35001,	-- Gaze of the Raven God
@@ -670,9 +864,26 @@ _.Zones =
 					["qg"] = 86475,	-- Talon Guard Kurekk
 				}),
 
+
+				q(35010, {	-- The High Ravenspeaker
+					["sourceQuests"] = { 34991 },	-- To the... Rescue?
+					["coord"] = { 48.9, 49.0, 542 },
+					["qg"] = 80639,	-- Iktis of the Flock
+				}),
+
 				
 				q(36590, {	-- The Howling Crag (bonus objective)
 					["coord"] = { 65.0, 25.9, 542 },
+				}),
+
+				
+				q(36790, {	-- The Initiate's Revenge
+					["sourceQuests"] = {
+						34923,	-- The Bloodmane
+						34922,	-- Words of the Raven Mother
+					},
+					["coord"] = { 50.9, 55.8, 542 },
+					["qg"] = 86381,	-- Mortally Wounded Initiate
 				}),
 
 					
@@ -710,6 +921,20 @@ _.Zones =
 					["qg"] = 82813,	-- Effigy of Terokk
 				}),
 
+
+				qa(35713, {	-- The Tinkertoss Twins
+					["sourceQuests"] = { 37331 },	-- Not Here, Not Now
+					["coord"] = { 39.5, 61.2, 542 },
+					["qg"] = 82709,	-- Milly Osworth
+				}),
+
+				
+				q(34991, {	-- To the... Rescue?
+					["sourceQuests"] = { 34921 },	-- Cult of the Ravenspeakers
+					["coord"] = { 48.9, 49.0, 542 },
+					["qg"] = 80639,	-- Iktis of the Flock
+				}),
+
 				
 				qa(37316, {	-- Trading Post (Smuggling Run)
 				--	triggers when creating  smuggling run.
@@ -723,6 +948,13 @@ _.Zones =
 					["qg"] = 85062,	-- Exterminator Lemmy
 				}),
 				
+
+				q(36316, {	-- Victory is Within Reach
+					["sourceQuests"] = { 35704 },	-- When All is Aligned
+					["coord"] = { 46.5, 46.5, 542 },
+					["qg"] = 81770,	-- Reshad
+				}),
+
 				
 				qa(35674, {	-- Wanted: Keeho's Severed Paw (Alliance)
 					["sourceQuests"] = { 37316 },	-- Trading Post (Smuggling Run)
@@ -745,6 +977,31 @@ _.Zones =
 				}),
 
 
+				q(35704, {  -- When All Is Aligned
+					["sourceQuests"] = { 36085 },	-- On Ebon Wings
+					["coord"] = { 46.5, 54.3, 542 },
+					["qg"] = 84262,	-- Reshad
+					["g"] = {
+						i(114905),	-- Talon Guard Bow
+						i(114910),	-- Talon Guard Cudgel
+						i(114906),	-- Talon Guard Dagger
+						i(114908),	-- Talon Guard Glaive
+						i(114903),	-- Talon Guard Shortblade
+						i(114909),	-- Talon Guard Staff
+						i(114907),	-- Talon Guard Wingclipper
+						i(114904),	-- Talon Guard Wingsmasher
+					},
+				}),
+				
+				
+				q(34922, {	-- Words of the Raven Mother
+					["sourceQuests"] = { 35007 },	-- Rendezvous with the Ritualists
+					["coord"] = { 54.8, 54.1, 542 },
+					["qg"] = 80740,	-- Ravenspeaker Sekara
+				}),
+					
+
+				
 				--[[
 					["sourceQuests"] = {  },	-- 
 					["coord"] = { , , 542 },
@@ -760,9 +1017,7 @@ _.Zones =
 				
 				
 --[[
-				q(36059),	-- A Worthy Vessel
 				qh(35738),	-- All Natural
-				qa(35739),	-- All Natural
 				qh(37993),	-- Amulet of Rukhmar: The Apexis Device
 				qa(37852),	-- Amulet of Rukhmar: The Apexis Device
 				q(37851),	-- Amulet of Rukhmar: The Final Key
@@ -775,14 +1030,12 @@ _.Zones =
 				qh(35924),	-- Assassin's Mark
 				qh(35907),	-- Attempted Murder
 				qa(35915),	-- Attempted Murder
-				qa(35719),	-- Back on Track
 				qh(35718),	-- Back on Track
 				qh(37326),	-- Befriending the Locals
 				qa(37327),	-- Befriending the Locals
 				qh(35705),	-- Best Deals Anywhere
 				qa(36997),	-- Boar Training: Bulbapore
 				qh(37034),	-- Boar Training: Bulbapore
-				q(35009),	-- Call of the Raven Mother
 				q(37177),	-- Call of the Talon King
 				q(35081),	-- Clearing Out Before Cleaning Up
 				qh(37052),	-- Clefthoof Training: Bulbapore
@@ -799,13 +1052,10 @@ _.Zones =
 				q(36112),	-- Flight Home
 				q(36577),	-- Flying Machine Completed
 				q(35285),	-- Follow that Hotrod!
-				qa(36353),	-- For Old Times' Sake
 				qa(36029),	-- Gardul Venomshiv
 				qh(36028),	-- Gardul Venomshiv
 				q(35082),	-- Getting the Crew Back Together
 				q(44570),	-- Honor the Flame
-				qa(35549),	-- Honoring a Hero
-				qa(35782),	-- I See Dead Arakkoa
 				qh(35766),	-- I See Dead Arakkoa
 				qh(35322),	-- I See Dead People (Horde — wowhead lists this as neutral, but the QG is a Horde NPC)
 				q(35290),	-- Inn
@@ -826,7 +1076,6 @@ _.Zones =
 				qa(37329),	-- Not Here, Not Now (brewery version?)
 				qh(37328),	-- Not Here, Not Now
 				qh(37330),	-- Not Here, Not Now
-				q(36085),	-- On Ebon Wings
 				qh(35272),	-- One of Our Own
 				qh(35277),	-- Orders, Commander? (Horde)
 				qh(35697),	-- Peace Offering (Horde)
@@ -837,21 +1086,15 @@ _.Zones =
 				qh(36862, {	-- Pinchwhistle Gearworks (Horde)
 					["isBreadcrumb"] = true,
 				}),
-				qa(35408),	-- Prime the Cannons
-				qa(35407),	-- Punishable by Death
-				q(34938),	-- Ralshiara's Demise
-				q(35007),	-- Rendezvous with the Ritualists
 				q(36724),	-- Reshad Tracking
 				qa(37006),	-- Riverbeast Training: Bulbapore
 				qh(37072),	-- Riverbeast Training: Bulbapore
 				q(36798),	-- Rooby Roo
 				qh(35879),	-- Safety Measures
-				qa(35878),	-- Safety Measures
 				q(35089),	-- Skimming Off the Top
 				q(35091),	-- Sporicide
 				qa(37281),	-- Standing United
 				qh(37276),	-- Standing United
-				qa(35716),	-- Sticky Situation
 				qh(35706),	-- Sticky Situation
 				qh(35550),	-- Surviving in a Savage Land
 				qh(37097),	-- Talbuk Training: Bulbapore
@@ -859,17 +1102,11 @@ _.Zones =
 				q(37144),	-- Talon Guard Kurekk
 				q(37141),	-- Talonpriest Ishaal
 				qh(35797),	-- The Ebon Hunter
-				qa(35835),	-- The Ebon Hunter
-				q(34924),	-- The Egg Thieves
-				q(35010),	-- The High Ravenspeaker
-				q(36790),	-- The Initiate's Revenge
 				q(35080),	-- The Mother Lode
 				qa(35959),	-- The Power of Poison
 				qh(35947),	-- The Power of Poison
-				qa(35713),	-- The Tinkertoss Twins
 				q(35649),	-- The Writhing Mire
 				qh(36864),	-- Three Feet Under
-				q(34991),	-- To the... Rescue?
 				qh(37314),	-- Trading Post (Smuggling Run, probably, based on questIDs)
 				qh(35284),	-- Trading Post (Brewery, probably, based on questIDs)
 				qa(35291),	-- Trading Post (Brewery)
@@ -877,26 +1114,13 @@ _.Zones =
 				q(35627),	-- Treasure: Basket of Arakkoa Goods
 				q(36179),	-- Unwanted Pests
 				q(37207),	-- Vesharr
-				q(36316),	-- Victory is Within Reach
 				qh(35669),	-- Wanted: Keeho's Severed Paw (Horde)
 				qh(35670),	-- Wanted: Spineslicer's Husk (Horde)
 				qh(35672),	-- Wanted: Venombarb (Horde)
 				qa(36048),	-- We Have Him Now
 				qh(36047),	-- We Have Him Now
 				qh(35295),	-- What's Theirs is Ours
-				q(34922),	-- Words of the Raven Mother	
 --]]
-				qa(35482, {	-- Admiral Taylor
-					i(118082),	-- Admiral Taylor's Boot Knife
-					i(118079),	-- Admiral Taylor's Ceremonial Sword
-					i(118083),	-- Admiral Taylor's Cutlass
-					i(118084),	-- Admiral Taylor's Glaive
-					i(118080),	-- Admiral Taylor's Greatsword
-					i(118081),	-- Admiral Taylor's Hunting Bow
-					i(118086),	-- Admiral Taylor's Keg Tapper
-					i(114945),	-- Admiral Taylor's Shield
-					i(118085),	-- Admiral Taylor's Staff of Wisdom
-				}),
 				qh(36183, {	-- Admiral Taylor
 					i(118082),	-- Admiral Taylor's Boot Knife
 					i(118079),	-- Admiral Taylor's Ceremonial Sword
@@ -908,46 +1132,17 @@ _.Zones =
 					i(114945),	-- Admiral Taylor's Shield
 					i(118085),	-- Admiral Taylor's Staff of Wisdom
 				}),
-				q(34939, {  -- Declawing The Bloodmane
-					i(114720),	-- Cragplate Gauntlets
-					i(114722),	-- Ravenchain Gauntlets
-					i(114721),	-- Shadowveil Gloves
-					i(114719),	-- Skysinger Gloves
-				}),
 				q(35211, {  -- Preventing the Worst
 					i(118090),	-- "Super Sterilized" Blastguard Britches
 					i(118089),	-- "Super Sterilized" Blastguard Leggings
 					i(118087),	-- "Super Sterilized" Blastguard Legplates
 					i(118088),	-- "Super Sterlized" Blastguard Legwraps
 				}),
-				q(35896, {	-- The Avatar of Terokk
-					i(119073),	-- Talon Guard Bloodsworn Band
-					i(118070),	-- Talon Guard Bloodsworn Loop
-					i(118069),	-- Talon Guard Bloodsworn Ring
-					i(119065),	-- Talon Guard Bloodsworn Seal
-					i(118068),	-- Talon Guard Bloodsworn Signet
-				}),
-				q(34923, {  -- The Bloodmane
-					i(114741),	-- Cragplate Wristwraps
-					i(114742),	-- Ravenchain Wristwraps
-					i(114740),	-- Shadowveil Wristwraps
-					i(114743),	-- Skysinger Wristwraps
-				}),
 				q(35090, {  -- The Right Parts for the Job
 					i(118077),	-- Fungal Reisistant Chainmail Boots
 					i(118075),	-- Fungal Resistant Plate Boots
 					i(118076),	-- Fungal Resistant Slippers
 					i(118078),	-- Fungal Resistant Workboots
-				}),
-				q(35704, {  -- When All Is Aligned
-					i(114905),	-- Talon Guard Bow
-					i(114910),	-- Talon Guard Cudgel
-					i(114906),	-- Talon Guard Dagger
-					i(114908),	-- Talon Guard Glaive
-					i(114903),	-- Talon Guard Shortblade
-					i(114909),	-- Talon Guard Staff
-					i(114907),	-- Talon Guard Wingclipper
-					i(114904),	-- Talon Guard Wingsmasher
 				}),
 				n(-359, {	-- Brewery
 					qa(37287,  {  -- Cleaning House
