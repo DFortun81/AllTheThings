@@ -12,18 +12,6 @@ _.Zones =
 					{	-- Quests
 						["npcID"] = -17, 	-- Quests
 						["g"] = {
-							i(122293, {	-- Trans-Dimensional Bird Whistle
-								["groups"] = {
-									{
-										["itemID"] = 127865,	-- A Tiny Viking Helmets
-										["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
-										["coord"] = {
-											80.11, 50.4	-- Pepe Location
-										},
-									},
-								},
-								["collectible"] = false,
-							}),
 							a(ach(8927, {	-- Nagrandeur (Alliance)
 								["groups"] = {
 --[[	Achievement info for Loremaster related zone quests

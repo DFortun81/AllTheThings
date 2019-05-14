@@ -7,6 +7,10 @@ _.ExpansionFeatures =
 		h(m(590, {	-- Frostwall
 			["groups"] = {
 				nh(-4, { 	-- Achievements
+					ach(10365, {	-- A Frightening Friend
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
+						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location (Horde)
+					}),
 					ach(9248),		-- Defender of Draenor (Horde)
 					ach(9928, 9901, {		-- Don't Call Me Junior (Horde)
 						follower(465),	-- Harrison Jones
