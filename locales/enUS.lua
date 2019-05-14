@@ -158,6 +158,7 @@ AllTheThings.L = {
 		[8] = GetItemSubClassInfo(4,6),							-- Shields
 		[9] = INVTYPE_TABARD,									-- Tabards
 		[10] = INVTYPE_BODY,									-- Shirts
+		[11] = "Artifacts",										-- Artifacts
 
 		-- PADDING for extra types, if necessary
 
@@ -224,6 +225,7 @@ AllTheThings.L = {
 		[8] = "Interface\\Icons\\inv_shield_06",							-- Shield
 		[9] = "Interface\\Icons\\inv_misc_tournaments_tabard_gnome",		-- Tabards
 		[10] = "Interface\\Icons\\inv_shirt_grey_01",						-- Shirts
+		[11] = "Interface\\Icons\\Paladin_Protection",						-- Artifacts
 		[20] = "Interface\\Icons\\inv_weapon_shortblade_01",				-- Daggers
 		[21] = "Interface\\Icons\\inv_axe_17",								-- 1H Axes
 		[22] = "Interface\\Icons\\inv_axe_09",								-- 2H Axes

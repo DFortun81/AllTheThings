@@ -3406,6 +3406,8 @@ app.BaseArtifact = {
 	__index = function(t, key)
 		if key == "key" then
 			return "artifactID";
+		elseif key == "f" then
+			return 11;
 		elseif key == "collectible" then
 			return app.CollectibleTransmog;
 		elseif key == "collected" then
@@ -11617,6 +11619,21 @@ app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then
 		app:UnregisterEvent("ADDON_LOADED");
 		
+		-- Create the Auction Tab for ATT.
+		local n = AuctionFrame.numTabs + 1;
+		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
+		button:SetID(n);
+		button:SetText(L["AUCTION_TAB"]);
+		button:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
+		
+		PanelTemplates_SetNumTabs (AuctionFrame, n);
+		PanelTemplates_EnableTab  (AuctionFrame, n);
+		
+		-- Create the Auction Frame
+		local frame = CreateFrame("FRAME", app:GetName() .. "-AuctionFrame", AuctionFrame );
+		frame:SetPoint("TOPLEFT", AuctionFrame, 19, -67);
+		frame:SetPoint("BOTTOMRIGHT", AuctionFrame, -8, 36);
+		
 		-- Create the movable Auction Data window.
 		local window = app:GetWindow("AuctionData");
 		window.shouldFullRefresh = true;
@@ -11624,12 +11641,39 @@ app.events.ADDON_LOADED = function(addonName)
 		window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
 		window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
 		window.data = {
-			["text"] = "Auction Data",
+			["text"] = "Auction Module",
 			["visible"] = true,
 			["back"] = 1,
 			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
 			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 			["options"] = {
+				{
+					["text"] = "Perform a Full Scan",
+					["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
+					["description"] = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
+					["visible"] = true,
+					["OnClick"] = function() 
+						-- Make sure that we're sorting the list correctly.
+						SortAuctionClearSort("list");
+						SortAuctionItems("list", "bid");
+						if IsAuctionSortReversed("list", "bid") then
+							SortAuctionItems("list", "bid");
+						end
+						SortAuctionApplySort("list");
+					
+						-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
+						if select(2, CanSendAuctionQuery()) then
+							-- Disable the button and register for the event.
+							frame:RegisterEvent("AUCTION_ITEM_LIST_UPDATE");
+							frame.descriptionLabel:SetText("Full Scan request sent.\n\nPlease wait while we wait for the server to respond.");
+							frame.descriptionLabel:Show();
+							QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
+						end
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+					end,
+				},
 				{
 					["text"] = "Toggle Debug Mode",
 					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
@@ -11716,21 +11760,6 @@ app.events.ADDON_LOADED = function(addonName)
 			window:SetPoint("TOP", AuctionFrame, "TOP", 0, -10);
 			window:SetPoint("BOTTOM", AuctionFrame, "BOTTOM", 0, 10);
 		end
-		
-		-- Create the Auction Tab for ATT.
-		local n = AuctionFrame.numTabs + 1;
-		local button = CreateFrame("Button", "AuctionFrameTab" .. n, AuctionFrame, "AuctionTabTemplate");
-		button:SetID(n);
-		button:SetText(L["AUCTION_TAB"]);
-		button:SetPoint("LEFT", _G["AuctionFrameTab" .. n-1], "RIGHT", -8, 0);
-		
-		PanelTemplates_SetNumTabs (AuctionFrame, n);
-		PanelTemplates_EnableTab  (AuctionFrame, n);
-		
-		-- Create the Auction Frame
-		local frame = CreateFrame("FRAME", app:GetName() .. "-AuctionFrame", AuctionFrame );
-		frame:SetPoint("TOPLEFT", AuctionFrame, 19, -67);
-		frame:SetPoint("BOTTOMRIGHT", AuctionFrame, -8, 36);
 		
 		-- The ALL THE THINGS Epic Logo!
 		local f = frame:CreateTexture(nil, "ARTWORK");
