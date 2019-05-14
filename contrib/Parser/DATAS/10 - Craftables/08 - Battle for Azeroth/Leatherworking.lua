@@ -85,147 +85,57 @@ _.Craftables =
 			},
 			{	-- Enhanced Mistscale Boots [A]
 				["itemID"] = 165404,	-- Enhanced Mistscale Boots [A]
-				["g"] = {
-					{	-- Recipe: Fortified Mistscale Boots
-						["itemID"] = 165648,	-- Recipe: Fortified Mistscale Boots
-					},
-				},
 			},
 			{	-- Enhanced Mistscale Boots [H]
 				["itemID"] = 165405,	-- Enhanced Mistscale Boots [H]
-				["g"] = {
-					{	-- Recipe: Fortified Mistscale Boots
-						["itemID"] = 165648,	-- Recipe: Fortified Mistscale Boots
-					},
-				},
 			},
 			{	-- Enhanced Mistscale Greaves [A]
 				["itemID"] = 165382,	-- Enhanced Mistscale Greaves [A]
-				["g"] = {
-					{	-- Recipe: Fortified Mistscale Greaves
-						["itemID"] = 165650,	-- Recipe: Fortified Mistscale Greaves
-					},
-				},
 			},
 			{	-- Enhanced Mistscale Greaves [H]
 				["itemID"] = 165381,	-- Enhanced Mistscale Greaves [H]
-				["g"] = {
-					{	-- Recipe: Fortified Mistscale Greaves
-						["itemID"] = 165650,	-- Recipe: Fortified Mistscale Greaves
-					},
-				},
 			},
 			{	-- Fortified Mistscale Boots [A]
 				["itemID"] = 165412,	-- Fortified Mistscale Boots [A]
-				["g"] = {
-					{	-- Recipe: Tempered Mistscale Boots
-						["itemID"] = 165649,	-- Recipe: Tempered Mistscale Boots
-					},
-				},
 			},
 			{	-- Fortified Mistscale Boots [H]
 				["itemID"] = 165413,	-- Fortified Mistscale Boots [H]
-				["g"] = {
-					{	-- Recipe: Tempered Mistscale Boots
-						["itemID"] = 165649,	-- Recipe: Tempered Mistscale Boots
-					},
-				},
 			},
 			{	-- Fortified Mistscale Greaves [A]
 				["itemID"] = 165388,	-- Fortified Mistscale Greaves [A]
-				["g"] = {
-					{	-- Recipe: Tempered Mistscale Greaves
-						["itemID"] = 165651,	-- Recipe: Tempered Mistscale Greaves
-					},
-				},
 			},
 			{	-- Fortified Mistscale Greaves [H]
 				["itemID"] = 165387,	-- Fortified Mistscale Greaves [H]
-				["g"] = {
-					{	-- Recipe: Tempered Mistscale Greaves
-						["itemID"] = 165651,	-- Recipe: Tempered Mistscale Greaves
-					},
-				},
 			},
 			{	-- Enhanced Tempest Boots [A]
 				["itemID"] = 165408,	-- Enhanced Tempest Boots [A]
-				["g"] = {
-					{	-- Recipe: Fortified Tempest Boots
-						["itemID"] = 165644,	-- Recipe: Fortified Tempest Boots
-					},
-				},
 			},
 			{	-- Enhanced Tempest Boots [H]
 				["itemID"] = 165409,	-- Enhanced Tempest Boots [H]
-				["g"] = {
-					{	-- Recipe: Fortified Tempest Boots
-						["itemID"] = 165644,	-- Recipe: Fortified Tempest Boots
-					},
-				},
 			},
 			{	-- Enhanced Tempest Leggings [A]
 				["itemID"] = 165383,	-- Enhanced Tempest Leggings [A]
-				["g"] = {
-					{	-- Recipe: Fortified Tempest Leggings
-						["itemID"] = 165646,	-- Recipe: Fortified Tempest Leggings
-					},
-				},
 			},
 			{	-- Enhanced Tempest Leggings [H]
 				["itemID"] = 165384,	-- Enhanced Tempest Leggings [H]
-				["g"] = {
-					{	-- Recipe: Fortified Tempest Leggings
-						["itemID"] = 165646,	-- Recipe: Fortified Tempest Leggings
-					},
-				},
 			},
 			{	-- Fortified Tempest Boots [A]
 				["itemID"] = 165416,	-- Fortified Tempest Boots [A]
-				["g"] = {
-					{	-- Recipe: Tempered Tempest Boots
-						["itemID"] = 165645,	-- Recipe: Tempered Tempest Boots
-					},
-				},
 			},
 			{	-- Fortified Tempest Boots [H]
 				["itemID"] = 165417,	-- Fortified Tempest Boots [H]
-				["g"] = {
-					{	-- Recipe: Tempered Tempest Boots
-						["itemID"] = 165645,	-- Recipe: Tempered Tempest Boots
-					},
-				},
 			},
 			{	-- Fortified Tempest Leggings [A]
 				["itemID"] = 165391,	-- Fortified Tempest Leggings [A]
-				["g"] = {
-					{	-- Recipe: Tempered Tempest Leggings
-						["itemID"] = 165647,	-- Recipe: Tempered Tempest Leggings
-					},
-				},
 			},
 			{	-- Fortified Tempest Leggings [H]
 				["itemID"] = 165392,	-- Fortified Tempest Leggings [H]
-				["g"] = {
-					{	-- Recipe: Tempered Tempest Leggings
-						["itemID"] = 165647,	-- Recipe: Tempered Tempest Leggings
-					},
-				},
 			},
 			{	-- Hardened Tempest Boots [A]
 				["itemID"] = 161946,	-- Hardened Tempest Boots [A]
-				["g"] = {
-					{	-- Recipe: Imbued Tempest Boots
-						["itemID"] = 162499,	-- Recipe: Imbued Tempest Boots
-					},
-				},
 			},
 			{	-- Hardened Tempest Boots [H]
 				["itemID"] = 154154,	-- Hardened Tempest Boots [H]
-				["g"] = {
-					{	-- Recipe: Imbued Tempest Boots
-						["itemID"] = 162499,	-- Recipe: Imbued Tempest Boots
-					},
-				},
 			},
 			{	-- Hardened Tempest Knuckles [A]
 				["itemID"] = 161972,	-- Hardened Tempest Knuckles [A]
@@ -235,19 +145,9 @@ _.Craftables =
 			},
 			{	-- Hardened Tempest Leggings [A]
 				["itemID"] = 161947,	-- Hardened Tempest Leggings [A]
-				["g"] = {
-					{	-- Recipe: Imbued Tempest Leggings
-						["itemID"] = 162501,	-- Recipe: Imbued Tempest Leggings
-					},
-				},
 			},
 			{	-- Hardened Tempest Leggings [H]
 				["itemID"] = 154155,	-- Hardened Tempest Leggings [H]
-				["g"] = {
-					{	-- Recipe: Imbued Tempest Leggings
-						["itemID"] = 162501,	-- Recipe: Imbued Tempest Leggings
-					},
-				},
 			},
 			{	-- Honorable Combatant's Bow [A]
 				["itemID"] = 161975,	-- Honorable Combatant's Bow [A]
@@ -317,67 +217,27 @@ _.Craftables =
 			},
 			{	-- Imbued Mistscale Boots [A]
 				["itemID"] = 162489,	-- Imbued Mistscale Boots [A]
-				["g"] = {
-					{	-- Recipe: Emblazoned Mistscale Boots
-						["itemID"] = 162504,	-- Recipe: Emblazoned Mistscale Boots
-					},
-				},
 			},
 			{	-- Imbued Mistscale Boots [H]
 				["itemID"] = 162471,	-- Imbued Mistscale Boots [H]
-				["g"] = {
-					{	-- Recipe: Emblazoned Mistscale Boots
-						["itemID"] = 162504,	-- Recipe: Emblazoned Mistscale Boots
-					},
-				},
 			},
 			{	-- Imbued Mistscale Leggings [A]
 				["itemID"] = 162490,	-- Imbued Mistscale Leggings [A]
-				["g"] = {
-					{	-- Recipe: Emblazoned Mistscale Leggings
-						["itemID"] = 162506,	-- Recipe: Emblazoned Mistscale Leggings
-					},
-				},
 			},
 			{	-- Imbued Mistscale Greeaves [H]
 				["itemID"] = 162473,	-- Imbued Mistscale Greeaves [H]
-				["g"] = {
-					{	-- Recipe: Emblazoned Mistscale Leggings
-						["itemID"] = 162506,	-- Recipe: Emblazoned Mistscale Leggings
-					},
-				},
 			},
 			{	-- Imbued Tempest Boots [A]
 				["itemID"] = 162493,	-- Imbued Tempest Boots [A]
-				["g"] = {
-					{	-- Recipe: Emblazoned Tempest Boots
-						["itemID"] = 162500,	-- Recipe: Emblazoned Tempest Boots
-					},
-				},
 			},
 			{	-- Imbued Tempest Boots [H]
 				["itemID"] = 162467,	-- Imbued Tempest Boots [H]
-				["g"] = {
-					{	-- Recipe: Emblazoned Tempest Boots
-						["itemID"] = 162500,	-- Recipe: Emblazoned Tempest Boots
-					},
-				},
 			},
 			{	-- Imbued Tempest Leggings [A]
 				["itemID"] = 162494,	-- Imbued Tempest Leggings [A]
-				["g"] = {
-					{	-- Recipe: Emblazoned Tempest Leggings
-						["itemID"] = 162502,	-- Recipe: Emblazoned Tempest Leggings
-					},
-				},
 			},
 			{	-- Imbued Tempest Leggings [H]
 				["itemID"] = 162469,	-- Imbued Tempest Leggings [H]
-				["g"] = {
-					{	-- Recipe: Emblazoned Tempest Leggings
-						["itemID"] = 162502,	-- Recipe: Emblazoned Tempest Leggings
-					},
-				},
 			},
 			{	-- Mistscale Boots [A]
 				["itemID"] = 161961,	-- Mistscale Boots [A]
