@@ -12,6 +12,19 @@ _.Zones =
 					{	-- Quests
 						["npcID"] = -17,	-- Quests
 						["g"] = {
+							{	-- Alas, Gilneas!
+								["questID"] = 14466,	-- Alas, Gilneas!
+								["qg"] = 36743,			-- King Genn Greymane
+								["sourceQuests"] = {
+									14466,	-- The King's Observatory
+								},
+								["coords"] = {
+									{ 41.91, 20.10, 182 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Among Humans Again
 								["questID"] = 14313,	-- Among Humans Again
 								["qg"] = 36170,			-- Lord Godfrey
@@ -60,6 +73,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 29.03, 65.06, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Exodus
+								["questID"] = 24438,	-- Exodus
+								["qg"] = 36743,			-- King Genn Greymane
+								["sourceQuests"] = {
+									14466,	-- Alas, Gilneas!
+								},
+								["coords"] = {
+									{ 41.91, 20.10, 182 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -203,6 +229,19 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Introductions Are In Order
+								["questID"] = 24472,	-- Introductions Are In Order
+								["qg"] = 37065,			-- Prince Liam Greymane
+								["sourceQuests"] = {
+									24468,	-- Stranded at the Marsh
+								},
+								["coords"] = {
+									{ 51.81, 80.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Invasion
 								["questID"] = 14321,	-- Invasion
 								["qg"] = 36205,			-- Slain Watchman
@@ -289,6 +328,60 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Pest Control
+								["questID"] = 24484,	-- Pest Control
+								["qg"] = 37102,			-- Gwen Armstead
+								["sourceQuests"] = {
+									24483,	-- Stormglen
+								},
+								["coords"] = {
+									{ 59.86, 91.70, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Pieces of the Past
+								["questID"] = 24495,	-- Pieces of the Past
+								["qg"] = 37815,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24483,	-- Stormglen
+								},
+								["coords"] = {
+									{ 60.27, 91.85, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Queen-Sized Troubles
+								["questID"] = 24501,	-- Queen-Sized Troubles
+								["qg"] = 37102,			-- Gwen Armstead
+								["sourceQuests"] = {
+									24484,	-- Pest Control
+									24495,	-- Pieces of the Past
+								},
+								["coords"] = {
+									{ 59.86, 91.70, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Rygna-Silk Leggings
+										["itemID"] = 54996,	-- Rygna-Silk Leggings
+									},
+									{	-- Arachnophobe's Breastplate
+										["itemID"] = 54997,	-- Arachnophobe's Breastplate
+									},
+									{	-- Arachnophobe's Chain Shirt
+										["itemID"] = 131369,	-- Arachnophobe's Chain Shirt
+									},
+									{	-- Braided Gossamer Armbands
+										["itemID"] = 54998,	-- Braided Gossamer Armbands
+									},
+								},
+							},
 							{	-- Ready to Go
 								["questID"] = 14402,	-- Ready to Go
 								["qg"] = 36452,			-- Grandma Wahl
@@ -326,6 +419,43 @@ _.Zones =
 									{	-- Protector's Legguards
 										["itemID"] = 131351,		-- Protector's Legguards
 										["ignoreSource"] = true,	-- White Item
+									},
+								},
+							},
+							{	-- Stormglen
+								["questID"] = 24483,	-- Stormglen
+								["qg"] = 37065,			-- Prince Liam Greymane
+								["sourceQuests"] = {
+									24472,	-- Introductions Are In Order
+								},
+								["coords"] = {
+									{ 51.81, 80.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Stranded at the Marsh
+								["questID"] = 24468,	-- Stranded at the Marsh
+								["qg"] = 37065,			-- Prince Liam Greymane
+								["sourceQuests"] = {
+									24438,	-- Exodus
+								},
+								["coords"] = {
+									{ 51.81, 80.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Paramedic Bracers
+										["itemID"] = 54994,	-- Paramedic Bracers
+									},
+									{	-- First Responder's Bindings
+										["itemID"] = 131368,	-- First Responder's Bindings
+									},
+									{	-- Hailwood Chestpiece
+										["itemID"] = 54995,		-- Hailwood Chestpiece
 									},
 								},
 							},
@@ -391,6 +521,20 @@ _.Zones =
 									},
 								},
 							},
+							{	-- The King's Observatory
+								["questID"] = 14466,	-- The King's Observatory
+								["qg"] = 36606,			-- Queen Mia Greymane
+								["sourceQuests"] = {
+									14465,	-- To Greymane Manor
+								},
+								["coords"] = {
+									{ 28.97, 51.56, 179 },	-- Building Entrance
+									{ 62.22, 49.70, 181 },	-- Queen Mia Location
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- To Greymane Manor
 								["questID"] = 14465,	-- To Greymane Manor
 								["qg"] = 36452,			-- Gwen Armstead
@@ -407,7 +551,6 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
-							
 							{	-- Two By Sea
 								["questID"] = 14382,	-- Two By Sea
 								["qg"] = 36290,			-- Lord Godfrey
