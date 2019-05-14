@@ -224,7 +224,6 @@ _.NeverImplemented =
 			un(1, i(34107)),	-- Tattered Shoulderpads
 			un(1, i(37210)),	-- Seafarer Cinch (removed in beta)
 			un(1, i(37225)),	-- Sweltering Sandals (removed in beta)
-			un(1, i(37245)),	-- Tangled Web Bindings
 			un(1, i(37273)),	-- Crimson Keeper Mitts
 			un(1, i(37295)),	-- HF28 Cloth Spell Head4
 			un(1, i(39364)),	-- Hood of the Titan Defender

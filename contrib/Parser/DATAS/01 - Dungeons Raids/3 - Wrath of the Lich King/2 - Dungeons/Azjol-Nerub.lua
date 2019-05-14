@@ -141,6 +141,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								29335,	-- Anub'ar Webspinner
 							},
 						}),
+						i(37245, {	-- Web Winder Gloves
+							["crs"] = {
+								29128,	-- Anub'ar Prime Guard
+							},
+						}),
 					}),
 					cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
 						ach(1296, {	-- Watch Him Die
