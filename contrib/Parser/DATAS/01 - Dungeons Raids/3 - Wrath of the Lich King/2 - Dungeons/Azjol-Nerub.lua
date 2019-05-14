@@ -141,7 +141,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								29335,	-- Anub'ar Webspinner
 							},
 						}),
-						i(37245, {	-- Web Winder Gloves
+						i(37245, {	-- Tangled Web Bindings
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
 							},
