@@ -65,6 +65,15 @@ _.Zones =
 								},
 							},
 						},
+						o(221673, {  -- Blazing Chest
+							["questID"] = 33210,  -- One-Time Chest - Blazing Chest
+							["coords"] = {
+								{ 47.3, 26.9, 554 },
+							},
+							["g"] = {
+								i(103982),	-- Burden of Eternity
+							},
+						}),
 						{	-- Champion of the Black Flame*
 							["npcID"] = 73171,	-- Champion of the Black Flame
 							["questID"] = 33299,
