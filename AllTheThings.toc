@@ -2,7 +2,7 @@
 ## Interface: 80100
 ## Title: AllTheThings
 ## Name: AllTheThings
-## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, AllTheThingsPCD
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 1.9.0

@@ -13,7 +13,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -67,7 +67,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -121,7 +121,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -175,7 +175,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -229,7 +229,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -283,7 +283,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -337,7 +337,7 @@ AllTheThings.Presets = {
 		true, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -391,6 +391,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
+		true, -- [11]
 		[50] = true,
 		[31] = false,
 		[32] = false,
@@ -435,7 +436,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
@@ -488,6 +489,7 @@ AllTheThings.Presets = {
 		true, -- [8]
 		true, -- [9]
 		true, -- [10]
+		true, -- [11]
 		[50] = true,
 		[57] = true,
 		[31] = false,
@@ -531,6 +533,7 @@ AllTheThings.Presets = {
 		false, -- [8]
 		true, -- [9]
 		true, -- [10]
+		true, -- [11]
 		[50] = true,
 		[30] = false,
 		[31] = false,
@@ -573,7 +576,7 @@ AllTheThings.Presets = {
 		true, -- [8]
 		true, -- [9]
 		true, -- [10]
-		nil, -- [11]
+		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
 		nil, -- [14]
