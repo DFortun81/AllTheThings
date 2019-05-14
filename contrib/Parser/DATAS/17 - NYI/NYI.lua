@@ -1901,7 +1901,6 @@ _.NeverImplemented =
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
 			un(1, i(38246)),	-- Skull-Forged Blunderbuss
 			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
-			un(1, i(164933)),	-- Sem'jin Beakblade Longrifle
 			un(1, i(165270)),	-- Unknown
 			un(1, i(165266)),	-- Unknown
 			un(1, i(108790)),	-- Unknown

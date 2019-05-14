@@ -602,6 +602,12 @@ _.Zones =
 									},
 									{	-- Grapeshotter of Khaz Modan
 										["itemID"] = 164932,	-- Grapeshotter of Khaz Modan
+										["g"] = {
+											{	-- Sen'jin Beakblade Longrifle
+												["itemID"] = 164933,	-- Sen'jin Beakblade Longrifle
+												["description"] = "This (Horde) Item will be automaticly learned after buying the Alliance Version."
+											},
+										},
 										["crs"] = {
 											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
 											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
