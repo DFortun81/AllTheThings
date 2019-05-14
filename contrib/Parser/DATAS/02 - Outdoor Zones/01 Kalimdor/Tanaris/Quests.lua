@@ -666,6 +666,7 @@ _.Zones =
 					},
 					{	-- Nice Hat...
 						["questID"] = 12513,	-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
+						-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
 						["qg"] = 28126,			-- Don Carlos
 						["coord"] = { 50.7, 27.5, 71 },
 						["isBreadcrumb"] = true,

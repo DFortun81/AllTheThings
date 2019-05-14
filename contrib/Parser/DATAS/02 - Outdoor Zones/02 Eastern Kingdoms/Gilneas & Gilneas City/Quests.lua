@@ -51,6 +51,47 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- At Our Doorstep
+								["questID"] = 24627,	-- At Our Doorstep
+								["qg"] = 37195,			-- Lord Darius Crowley
+								["sourceQuests"] = {
+									24617,	-- Tal'doren, the Wild Home
+								},
+								["coords"] = {
+									{ 68.69, 73.26, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Betrayal at Tempest's Reach
+								["questID"] = 24592,	-- Betrayal at Tempest's Reach
+								["qg"] = 37874,			-- Krennan Aranas
+								["sourceQuests"] = {
+									24672,	-- Onwards and Upwards
+								},
+								["coords"] = {
+									{ 72.73, 80.04, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Greymane Cloak
+										["itemID"] = 55003,			-- Greymane Cloak
+									},
+									{	-- Blue-Bloodied Boots
+										["itemID"] = 55002,			-- Blue-Bloodied Boots
+									},
+									{	-- Blue-Bloodied Treads
+										["itemID"] = 131378,		-- Blue-Bloodied Treads
+									},
+									{	-- Lord Walden's Top Hat
+										["itemID"] = 58255,			-- Lord Walden's Top Hat
+										["ignoreSource"] = true,	-- White Item
+									},
+								},
+							},
 							{	-- Escape By Sea
 								["questID"] = 14405,	-- Escape By Sea
 								["qg"] = 36456,			-- Sebastian Hayward
@@ -86,6 +127,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 41.91, 20.10, 182 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Flank the Forsaken
+								["questID"] = 24677,	-- Flank the Forsaken
+								["qg"] = 37876,			-- King Genn Greymane
+								["sourceQuests"] = {
+									24592,	-- Betrayal at Tempest's Reach
+								},
+								["coords"] = {
+									{ 78.27, 72.06, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -281,6 +335,22 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Last Meal
+								["questID"] = 24675,	-- Last Meal
+								["qg"] = 38143,			-- Magda Whitewall
+								["sourceQuests"] = {
+									--Note!! When you arrive in the area the quests are available, but because it requires all the others to
+									--get here we'll mark the sourceQuest as the quest before arriving here so it shows up properly
+									--in the sourceQuest minilist.
+									24592,	-- Betrayal at Tempest's Reach
+								},
+								["coords"] = {
+									{ 70.66, 39.71, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Leader of the Pack
 								["questID"] = 14386,	-- Leader of the Pack
 								["qg"] = 36290,			-- Lord Godfrey
@@ -310,6 +380,79 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Liberation Day
+								["questID"] = 24575,	-- Liberation Day
+								["qg"] = 37783,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24677,	-- Flank the Forsaken
+								},
+								["coords"] = {
+									{ 70.87, 39.83, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Losing Your Tail
+								["questID"] = 24616,	-- Losing Your Tail
+								["qg"] = 37822,			-- Belysra Starbreeze
+								["sourceQuests"] = {
+									24578,	-- The Blackwald
+								},
+								["coords"] = {
+									{ 63.35, 82.92, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Seryl's Robes
+										["itemID"] = 54999,		-- Seryl's Robes
+									},
+									{	-- Hightailing Leggings
+										["itemID"] = 55000,		-- Hightailing Leggings
+									},
+									{	-- Hightailing Greaves
+										["itemID"] = 131380,	-- Hightailing Greaves
+									},
+									{	-- Hotfoot Boots
+										["itemID"] = 55001,		-- Hotfoot Boots
+									},
+								},
+							},
+							{	-- Neither Human Nor Beast
+								["questID"] = 24593,	-- Neither Human Nor Beast
+								["qg"] = 37195,			-- Lord Darius Crowley
+								["sourceQuests"] = {
+									24646,	-- Take Back What's Ours
+								},
+								["coords"] = {
+									{ 68.69, 73.26, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Cry of the Wolf
+											["itemID"] = 66439,		-- Cry of the Wolf
+									},
+									{	-- Hammer of Controlled Fury
+											["itemID"] = 66660,		-- Hammer of Controlled Fury
+									},
+									{	-- Sharp Edge of Balance
+											["itemID"] = 66876,		-- Sharp Edge of Balance
+									},
+									{	-- Sharpened Wolf's Tooth
+											["itemID"] = 133697,	-- Sharpened Wolf's Tooth
+									},
+									{	-- Staff of Deserved Tranquility
+											["itemID"] = 156985,	-- Staff of Deserved Tranquility
+									},
+									{	-- Staff of Earned Tranquility
+											["itemID"] = 52942,		-- Staff of Earned Tranquility
+									},
+								},
+							},
 							{	-- Not Quite Shipshape
 								["questID"] = 14404,	-- Not Quite Shipshape
 								["qg"] = 36456,			-- Sebastian Hayward
@@ -326,6 +469,19 @@ _.Zones =
 									{	-- Shipwright's Bag
 										["itemID"] = 52039,	-- Shipwright's Bag
 									},
+								},
+							},
+							{	-- Onwards and Upwards
+								["questID"] = 24672,	-- Onwards and Upwards
+								["qg"] = 37102,			-- Gwen Armstead
+								["sourceQuests"] = {
+									24673,	-- Return to Stormglen
+								},
+								["coords"] = {
+									{ 59.86, 91.70, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
 								},
 							},
 							{	-- Pest Control
@@ -354,6 +510,19 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Preparations
+								["questID"] = 24628,	-- Preparations
+								["qg"] = 37873,			-- Vassandra Stormclaw
+								["sourceQuests"] = {
+									24617,	-- Tal'doren, the Wild Home
+								},
+								["coords"] = {
+									{ 69.28, 72.98, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Queen-Sized Troubles
 								["questID"] = 24501,	-- Queen-Sized Troubles
 								["qg"] = 37102,			-- Gwen Armstead
@@ -369,16 +538,16 @@ _.Zones =
 								},
 								["g"] = {
 									{	-- Rygna-Silk Leggings
-										["itemID"] = 54996,	-- Rygna-Silk Leggings
+										["itemID"] = 54996,		-- Rygna-Silk Leggings
 									},
 									{	-- Arachnophobe's Breastplate
-										["itemID"] = 54997,	-- Arachnophobe's Breastplate
+										["itemID"] = 54997,		-- Arachnophobe's Breastplate
 									},
 									{	-- Arachnophobe's Chain Shirt
 										["itemID"] = 131369,	-- Arachnophobe's Chain Shirt
 									},
 									{	-- Braided Gossamer Armbands
-										["itemID"] = 54998,	-- Braided Gossamer Armbands
+										["itemID"] = 54998,		-- Braided Gossamer Armbands
 									},
 								},
 							},
@@ -390,6 +559,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 32.52, 75.48, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Return to Stormglen
+								["questID"] = 24673,	-- Return to Stormglen
+								["qg"] = 37195,			-- Lord Darius Crowley
+								["sourceQuests"] = {
+									24593,	-- Neither Human Nor Beast
+								},
+								["coords"] = {
+									{ 68.69, 73.26, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -422,6 +604,35 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Slaves to No One
+								["questID"] = 24674,	-- Slaves to No One
+								["qg"] = 37803,			-- Marcus
+								["sourceQuests"] = {
+									--Note!! When you arrive in the area the quests are available, but because it requires all the others to
+									--get here we'll mark the sourceQuest as the quest before arriving here so it shows up properly
+									--in the sourceQuest minilist.
+									24592,	-- Betrayal at Tempest's Reach
+								},
+								["coords"] = {
+									{ 70.27, 40.04, 179 },
+									{ 70.64, 40.12, 179 },
+									{ 71.25, 39.77, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Marcus' Pickaxe
+										["itemID"] = 54991,		-- Marcus' Pickaxe
+									},
+									{	-- Laborer's Belt
+										["itemID"] = 54992,		-- Laborer's Belt
+									},
+									{	-- Emberstone Plate
+										["itemID"] = 54993,		-- Emberstone Plate
+									},
+								},
+							},
 							{	-- Stormglen
 								["questID"] = 24483,	-- Stormglen
 								["qg"] = 37065,			-- Prince Liam Greymane
@@ -449,7 +660,7 @@ _.Zones =
 								},
 								["g"] = {
 									{	-- Paramedic Bracers
-										["itemID"] = 54994,	-- Paramedic Bracers
+										["itemID"] = 54994,		-- Paramedic Bracers
 									},
 									{	-- First Responder's Bindings
 										["itemID"] = 131368,	-- First Responder's Bindings
@@ -457,6 +668,32 @@ _.Zones =
 									{	-- Hailwood Chestpiece
 										["itemID"] = 54995,		-- Hailwood Chestpiece
 									},
+								},
+							},
+							{	-- Tal'doren, the Wild Home
+								["questID"] = 24617,	-- Tal'doren, the Wild Home
+								["qg"] = 37822,			-- Belysra Starbreeze
+								["sourceQuests"] = {
+									24616,	-- Losing Your Tail
+								},
+								["coords"] = {
+									{ 63.35, 82.92, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Take Back What's Ours
+								["questID"] = 24646,	-- Take Back What's Ours
+								["qg"] = 37195,			-- Lord Darius Crowley
+								["sourceQuests"] = {
+									24627,	-- At Our Doorstep
+								},
+								["coords"] = {
+									{ 68.69, 73.26, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
 								},
 							},
 							{	-- The Allen's Storm Caller
@@ -467,6 +704,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 37.42, 63.34, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- The Blackwald
+								["questID"] = 24578,	-- The Blackwald
+								["qg"] = 37815,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24501,	-- Queen-Sized Troubles
+								},
+								["coords"] = {
+									{ 60.27, 91.85, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen

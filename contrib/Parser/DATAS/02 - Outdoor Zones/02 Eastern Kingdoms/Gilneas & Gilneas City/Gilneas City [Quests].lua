@@ -112,7 +112,7 @@ _.Zones =
 												["ignoreSource"] = true,	-- White Item
 											},
 											{	-- Darius' Sash
-												["itemID"] = 55055,			-- Darius' Sash
+												["itemID"] = 55005,			-- Darius' Sash
 												["ignoreSource"] = true,	-- White Item
 											},
 											{	-- Dempsey's Gloves
