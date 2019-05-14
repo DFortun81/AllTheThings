@@ -92,6 +92,19 @@ _.Zones =
 									},
 								},
 							},
+							{	-- Endgame
+								["questID"] = 26706,	-- Endgame
+								["qg"] = 43727,			-- Lorna Crowley
+								["sourceQuests"] = {
+									24681,	-- They Have Allies, But So Do We
+								},
+								["coords"] = {
+									{ 41.64, 36.51, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Escape By Sea
 								["questID"] = 14405,	-- Escape By Sea
 								["qg"] = 36456,			-- Sebastian Hayward
@@ -317,6 +330,19 @@ _.Zones =
 								},
 								["coords"] = {
 									{ 37.42, 63.34, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
+							{	-- Keel Harbor
+								["questID"] = 24680,	-- Keel Harbor
+								["qg"] = 38144,			-- Krennan Aranas
+								["sourceQuests"] = {
+									24679,	-- Patriarch's Blessing
+								},
+								["coords"] = {
+									{ 49.83, 56.93, 179 },
 								},
 								["races"] = {
 									22,	-- Worgen
@@ -618,6 +644,20 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- Rut'theran Village
+								--Note!! Final Quest of entire Worgen Starting Area
+								["questID"] = 14434,	-- Rut'theran Village
+								["qg"] = 36616,			-- Admiral Nightwind
+								["sourceQuests"] = {
+									26706,	-- Endgame
+								},
+								["coords"] = {
+									{ 42.58, 35.95, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+							},
 							{	-- Save the Children!
 								["questID"] = 14368,	-- Save the Children!
 								["qg"] = 36291,			-- Melinda Hammond
@@ -856,6 +896,27 @@ _.Zones =
 									22,	-- Worgen
 								},
 							},
+							{	-- They Have Allies, But So Do We
+								["questID"] = 24681,	-- They Have Allies, But So Do We
+								["qg"] = 38149,			-- Lord Darius Crowley
+								["sourceQuests"] = {
+									24680,	-- Keel Harbor
+								},
+								["coords"] = {
+									{ 41.94, 37.62, 179 },
+								},
+								["races"] = {
+									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Night Elven Bow
+										["itemID"] = 55012,		-- Night Elven Bow
+									},
+									{	-- Seryl's Promise
+										["itemID"] = 55013,		-- Seryl's Promise
+									},
+								},
+							},
 							{	-- To Greymane Manor
 								["questID"] = 14465,	-- To Greymane Manor
 								["qg"] = 36452,			-- Gwen Armstead
@@ -884,6 +945,20 @@ _.Zones =
 								["races"] = {
 									22,	-- Worgen
 								},
+								["g"] = {
+									{	-- "Flying" Worgen Robes
+										["itemID"] = 58216,			-- "Flying" Worgen Robes
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Gloves of the Two Birds
+										["itemID"] = 55015,			-- Gloves of the Two Birds
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- The Stone's Gauntlets
+										["itemID"] = 131354,		-- The Stone's Gauntlets
+										["ignoreSource"] = true,	-- White Item
+									},
+								},
 							},
 							{	-- Unleash the Beast
 								["questID"] = 14369,	-- Unleash the Beast
@@ -897,6 +972,16 @@ _.Zones =
 								["races"] = {
 									22,	-- Worgen
 								},
+								["g"] = {
+									{	-- Godfrey's Dagger
+										["itemID"] = 54979,			-- Godfrey's Dagger
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Gilded Leggings
+										["itemID"] = 54980,			-- Gilded Leggings
+										["ignoreSource"] = true,	-- White Item
+									},
+								},
 							},
 							{	-- Washed Up
 								["questID"] = 14412,	-- Washed Up
@@ -909,6 +994,20 @@ _.Zones =
 								},
 								["races"] = {
 									22,	-- Worgen
+								},
+								["g"] = {
+									{	-- Boatwork Boots
+										["itemID"] = 55018,			-- Boatwork Boots
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Repair Belt
+										["itemID"] = 55019,			-- Repair Belt
+										["ignoreSource"] = true,	-- White Item
+									},
+									{	-- Repairman's Cinch
+										["itemID"] = 131356,		-- Repairman's Cinch
+										["ignoreSource"] = true,	-- White Item
+									},
 								},
 							},
 							{	-- You Can't Take 'Em Alone
@@ -927,16 +1026,6 @@ _.Zones =
 							},
 						},
 					},
-					--[[
-					n(-17, { 	-- Quests
-						["races"] = {22},
-						["g"] = {
-							qa(14319),	-- Further Treatment (REMOVED in Beta)
-							qg(36616, qa(14434)),	-- Rut'theran Village
-							q(14220),	-- This Is the End (REMOVED in Beta)
-						},
-					}),
-					--]]
 				},
 			},
 		},
