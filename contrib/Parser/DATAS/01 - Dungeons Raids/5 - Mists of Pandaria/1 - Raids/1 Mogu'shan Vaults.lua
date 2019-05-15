@@ -366,6 +366,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85989),	-- Hood of Cursed Dreams
 							i(85984),	-- Nullification Greathelm
 							i(85986),	-- Amulet of Seven Curses
+							{	-- Arrow Breaking Windcloak	
+								["itemID"] = 86082,	-- Arrow Breaking Windcloak
+								["description"] = "|CFFFF0000This cloak only drops in 10 Man Normal|r",
+							},
 							i(86082),	-- Arrow Breaking Windcloak
 							i(85985),	-- Cloak of Peacock Feathers
 							i(85990),	-- Imperial Ghostbinder's Robes
