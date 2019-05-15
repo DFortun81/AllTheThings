@@ -315,18 +315,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
 						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
 						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
+						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
+						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
+						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
+						i(47627),	-- Plans: Sunforged Bracers [Alliance]
+						i(47642),	-- Plans: Sunforged Bracers [Horde]
+						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
+						i(47643),	-- Plans: Sunforged Breastplate [Horde]
+						i(47624),	-- Plans: Titanium Razorplate [Alliance]
+						i(47644),	-- Plans: Titanium Razorplate [Horde]
+						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
+						i(47645),	-- Plans: Titanium Spikeguards [Horde]
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
@@ -633,18 +633,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
 						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
 						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
+						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
+						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
+						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
+						i(47627),	-- Plans: Sunforged Bracers [Alliance]
+						i(47642),	-- Plans: Sunforged Bracers [Horde]
+						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
+						i(47643),	-- Plans: Sunforged Breastplate [Horde]
+						i(47624),	-- Plans: Titanium Razorplate [Alliance]
+						i(47644),	-- Plans: Titanium Razorplate [Horde]
+						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
+						i(47645),	-- Plans: Titanium Spikeguards [Horde]
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
@@ -977,18 +977,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
 						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
 						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
+						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
+						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
+						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
+						i(47627),	-- Plans: Sunforged Bracers [Alliance]
+						i(47642),	-- Plans: Sunforged Bracers [Horde]
+						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
+						i(47643),	-- Plans: Sunforged Breastplate [Horde]
+						i(47624),	-- Plans: Titanium Razorplate [Alliance]
+						i(47644),	-- Plans: Titanium Razorplate [Horde]
+						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
+						i(47645),	-- Plans: Titanium Spikeguards [Horde]
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
