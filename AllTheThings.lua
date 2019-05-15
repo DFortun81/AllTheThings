@@ -12218,7 +12218,8 @@ app.events.PET_BATTLE_OPENING_START = function(...)
 		if popout:IsVisible() then
 			popout:Toggle();
 			popoutVis = true;
-		elseif main:IsVisible() then
+		end
+		if main:IsVisible() then
 			main:Toggle();
 			mainVis = true;
 		end
@@ -12227,7 +12228,8 @@ app.events.PET_BATTLE_CLOSE = function(...)
 	if popoutVis then 
 		app:ToggleMiniListForCurrentZone() 
 		popoutVis = false;
-	elseif mainVis then 
+	end
+	if mainVis then 
 		ToggleMainList() 
 		mainVis = false;
 	end
