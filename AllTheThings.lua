@@ -11643,13 +11643,7 @@ app.events.ADDON_LOADED = function(addonName)
 					["description"] = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
 					["visible"] = true,
 					["OnClick"] = function() 
-						-- Make sure that we're sorting the list correctly.
-						SortAuctionClearSort("list");
-						SortAuctionItems("list", "bid");
-						if IsAuctionSortReversed("list", "bid") then
-							SortAuctionItems("list", "bid");
-						end
-						SortAuctionApplySort("list");
+						if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
 					
 						-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 						if select(2, CanSendAuctionQuery()) then
@@ -12050,13 +12044,7 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetWidth(120);
 		f:RegisterForClicks("AnyUp");
 		f:SetScript("OnClick", function()
-			-- Make sure that we're sorting the list correctly.
-			SortAuctionClearSort("list");
-			SortAuctionItems("list", "bid");
-			if IsAuctionSortReversed("list", "bid") then
-				SortAuctionItems("list", "bid");
-			end
-			SortAuctionApplySort("list");
+			if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
 		
 			-- QueryAuctionItems(name, minLevel, maxLevel, page, isUsable, qualityIndex, getAll, exactMatch, filterData);
 			local CanQuery, CanQueryAll = CanSendAuctionQuery();
