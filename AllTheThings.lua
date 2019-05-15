@@ -11362,6 +11362,8 @@ app:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
+app:RegisterEvent("PET_BATTLE_OPENING_START")
+app:RegisterEvent("PET_BATTLE_CLOSE")
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -11814,13 +11816,13 @@ app.events.ADDON_LOADED = function(addonName)
 			["recipeID"] = setmetatable({	-- Recipes
 				["filterID"] = 200,
 				["description"] = "All recipes that you have not collected yet are displayed here.",
-				["priority"] = 5,
+				["priority"] = 6,
 			}, app.BaseFilter),
 			["reagentID"] = {	-- Reagents
 				["text"] = "Reagents",
 				["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
 				["description"] = "All items that can be used to craft an item using a profession on your account.",
-				["priority"] = 6,
+				["priority"] = 5,
 			},
 			["itemID"] = {	-- Non-Collectible Items
 				["text"] = "Non-Collectible Items",
@@ -12209,6 +12211,26 @@ app.events.QUEST_LOG_UPDATE = function()
 	end
 	wipe(DirtyQuests);
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
+end
+app.events.PET_BATTLE_OPENING_START = function(...)
+	local popout = app:GetWindow("CurrentInstance");
+	local main = app:GetWindow("Prime");
+		if popout:IsVisible() then
+			popout:Toggle();
+			popoutVis = true;
+		elseif main:IsVisible() then
+			main:Toggle();
+			mainVis = true;
+		end
+end
+app.events.PET_BATTLE_CLOSE = function(...)
+	if popoutVis then 
+		app:ToggleMiniListForCurrentZone() 
+		popoutVis = false;
+	elseif mainVis then 
+		ToggleMainList() 
+		mainVis = false;
+	end
 end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not GetDataSubMember("CollectedToys", itemID) then
