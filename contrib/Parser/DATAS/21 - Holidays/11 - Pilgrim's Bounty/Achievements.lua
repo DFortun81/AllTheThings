@@ -1,17 +1,26 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 28}, 
+_.Holidays =  
 {
 	holiday(235466, {	-- Pilgrim's Bounty
 		n(-4, {	-- Achievements
-			ach(3478, {	-- Pilgrim
-				["groups"] = {
-					un(28, title(133)),	-- the Pilgrim
-					un(28, i(44810)),	-- Turkey Cage (Pet)
-					ach(3579, {	-- "FOOD FIGHT!"
-						
-					}),
+			{	-- Pilgrim
+				["achievementID"] = 3478,	-- Pilgrim
+				["u"] = 28,					-- Pilgrim's Bounty Filter
+				["g"] = {
+					{	-- <Name> the Pilgrim
+						["titleID"] = 133,	-- <Name> the Pilgrim
+						["u"] = 28,			-- Pilgrim's Bounty Filter
+					},
+					{	-- Turkey Cage
+						["itemID"] = 44810,	-- Turkey Cage
+						["u"] = 28,			-- Pilgrim's Bounty Filter
+					},
+					{	-- "FOOD FIGHT!"
+						["achievementID"] = 3579,	-- "FOOD FIGHT!"
+						["u"] = 28,					-- Pilgrim's Bounty Filter
+					},
 					{	-- Now We're Cookin'
 						["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
 						["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
@@ -49,93 +58,196 @@ _.Holidays = bubbleDown({["u"] = 28},
 							},
 						},
 					},
-					ach(3556, {	-- Pilgrim's Paunch (Alliance)
-						["groups"] = {
-							crit(1),	-- Darnassus
-							crit(2),	-- The Exodar
-							crit(3),	-- Ironforge
-							crit(4),	-- Stormwind
+					{	-- Pilgrim's Paunch
+						["allianceAchievementID"] = 3556,	-- Pilgrim's Paunch [Alliance]
+						["hordeAchievementID"] = 3557,		-- Pilgrim's Paunch [Horde]
+						["u"] = 28,							-- Pilgrim's Bounty Filter
+						["g"] = {
+							{	-- Darnassus // Orgrimmar
+								["allianceAchievementID"] = 3556,	-- Pilgrim's Paunch [Alliance]
+								["hordeAchievementID"] = 3557,		-- Pilgrim's Paunch [Horde]
+								["criteriaID"] = 1,					-- Darnassus // Orgrimmar
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- The Exodar // Silvermoon City
+								["allianceAchievementID"] = 3556,	-- Pilgrim's Paunch [Alliance]
+								["hordeAchievementID"] = 3557,		-- Pilgrim's Paunch [Horde]
+								["criteriaID"] = 2,					-- The Exodar // Silvermoon City
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Ironforge // Thunder Bluff
+								["allianceAchievementID"] = 3556,	-- Pilgrim's Paunch [Alliance]
+								["hordeAchievementID"] = 3557,		-- Pilgrim's Paunch [Horde]
+								["criteriaID"] = 3,					-- Ironforge // Thunder Bluff
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Stormwind // Undercity
+								["allianceAchievementID"] = 3556,	-- Pilgrim's Paunch [Alliance]
+								["hordeAchievementID"] = 3557,		-- Pilgrim's Paunch [Horde]
+								["criteriaID"] = 4,					-- Stormwind // Undercity
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(3557, {	-- Pilgrim's Paunch (Horde)
-						["groups"] = {
-							crit(1),	-- Orgrimmar
-							crit(2),	-- Silvermoon City
-							crit(3),	-- Thunder Bluff
-							crit(4),	-- Undercity
+					},
+					{	-- Pilgrim's Peril
+						["allianceAchievementID"] = 3580,	-- Pilgrim's Peril [Alliance]
+						["hordeAchievementID"] = 3581,		-- Pilgrim's Peril [Horde]
+						["u"] = 28,							-- Pilgrim's Bounty Filter
+						["g"] = {
+							{	-- Darnassus // Orgrimmar
+								["allianceAchievementID"] = 3580,	-- Pilgrim's Peril [Alliance]
+								["hordeAchievementID"] = 3581,		-- Pilgrim's Peril [Horde]
+								["criteriaID"] = 1,					-- Darnassus // Orgrimmar
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- The Exodar // Silvermoon City
+								["allianceAchievementID"] = 3580,	-- Pilgrim's Peril [Alliance]
+								["hordeAchievementID"] = 3581,		-- Pilgrim's Peril [Horde]
+								["criteriaID"] = 2,					-- The Exodar // Silvermoon City
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Ironforge // Thunder Bluff
+								["allianceAchievementID"] = 3580,	-- Pilgrim's Peril [Alliance]
+								["hordeAchievementID"] = 3581,		-- Pilgrim's Peril [Horde]
+								["criteriaID"] = 3,					-- Ironforge // Thunder Bluff
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Stormwind // Undercity
+								["allianceAchievementID"] = 3580,	-- Pilgrim's Peril [Alliance]
+								["hordeAchievementID"] = 3581,		-- Pilgrim's Peril [Horde]
+								["criteriaID"] = 4,					-- Stormwind // Undercity
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					ach(3580, {	-- Pilgrim's Peril (Alliance)
-						["groups"] = {
-							crit(1),	-- Orgrimmar
-							crit(2),	-- Silvermoon City
-							crit(3),	-- Thunder Bluff
-							crit(4),	-- Undercity
+					},
+					{	-- Pilgrim's Progress
+						["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+						["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+						["u"] = 28,							-- Pilgrim's Bounty Filter
+						["g"] = {
+							{	-- Can't Get Enough Turkey
+								["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+								["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+								["criteriaID"] = 1,					-- Can't Get Enough Turkey
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Don't Forget The Stuffing!
+								["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+								["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+								["criteriaID"] = 2,					-- Don't Forget The Stuffing!
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Easy As Pie
+								["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+								["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+								["criteriaID"] = 3,					-- Easy As Pie
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- She Says Potato
+								["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+								["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+								["criteriaID"] = 4,					-- She Says Potato
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- We're Out of Cranberry Chutney Again?
+								["allianceAchievementID"] = 3596,	-- Pilgrim's Progress [Alliance]
+								["hordeAchievementID"] = 3597,		-- Pilgrim's Progress [Horde]
+								["criteriaID"] = 5,					-- We're Out of Cranberry Chutney Again?
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(3581, {	-- Pilgrim's Peril (Horde)
-						["groups"] = {
-							crit(1),	-- Darnassus
-							crit(2),	-- The Exodar
-							crit(3),	-- Ironforge
-							crit(4),	-- Stormwind
+					},
+					{	-- Sharing is Caring
+						["achievementID"] = 3558,	-- Sharing is Caring
+						["g"] = {
+							{	-- Candied Sweet Potatoes
+								["achievementID"] = 3558,	-- Sharing is Caring
+								["criteriaID"] = 1,			-- Candied Sweet Potatoes
+							},
+							{	-- Cranberry Chutney
+								["achievementID"] = 3558,	-- Sharing is Caring
+								["criteriaID"] = 2,			-- Cranberry Chutney
+							},
+							{	-- Pumpkin Pie
+								["achievementID"] = 3558,	-- Sharing is Caring
+								["criteriaID"] = 3,			-- Pumpkin Pie
+							},
+							{	-- Slow-Roasted Turkey
+								["achievementID"] = 3558,	-- Sharing is Caring
+								["criteriaID"] = 4,			-- Slow-Roasted Turkey
+							},
+							{	-- Spice Bread Stuffing
+								["achievementID"] = 3558,	-- Sharing is Caring
+								["criteriaID"] = 5,			-- Spice Bread Stuffing
+							},
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					ach(3596, {	-- Pilgrim's Progress (Alliance)
-						["groups"] = {
-							crit(1),	-- Can't Get Enough Turkey
-							crit(2),	-- Don't Forget The Stuffing!
-							crit(3),	-- Easy As Pie
-							crit(4),	-- She Says Potato
-							crit(5),	-- We're Out of Cranberry Chutney Again?
+					},
+					{	-- Terokkar Turkey Time
+						["achievementID"] = 3582,	-- Terokkar Turkey Time
+						["u"] = 28,					-- Pilgrim's Bounty Filter
+					},
+					{	-- The Turkinator
+						["achievementID"] = 3578,	-- The Turkinator
+						["u"] = 28,					-- Pilgrim's Bounty Filter
+					},
+					{	-- Turkey Lackey
+						["achievementID"] = 3559,	-- Tukey Lackey
+						["u"] = 28,					-- Pilgrim's Bounty Filter
+						["g"] = {
+							{	-- Blood Elf Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 1,			-- Blood Elf Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Dwarf Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 2,			-- Dwarf Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Gnome Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 3,			-- Gnome Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Goblin Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 4,			-- Goblin Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Human Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 5,			-- Human Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Night Elf Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 6,			-- Night Elf Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Orc Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 7,			-- Orc Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Troll Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 8,			-- Troll Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Undead Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 9,			-- Undead Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
+							{	-- Worgen Rogue
+								["achievementID"] = 3559,	-- Tukey Lackey
+								["criteriaID"] = 10,		-- Worgen Rogue
+								["u"] = 28,					-- Pilgrim's Bounty Filter
+							},
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(3597, {	-- Pilgrim's Progress (Horde)
-						["groups"] = {
-							crit(1),	-- Can't Get Enough Turkey
-							crit(2),	-- Don't Forget The Stuffing!
-							crit(3),	-- Easy As Pie
-							crit(4),	-- She Says Potato
-							crit(5),	-- We're Out of Cranberry Chutney Again?
-						},
-						["races"] = HORDE_ONLY,
-					}),
-					ach(3558, {	-- Sharing is Caring
-						["groups"] = {
-							crit(1),	-- Candied Sweet Potatoes
-							crit(2),	-- Cranberry Chutney
-							crit(3),	-- Pumpkin Pie
-							crit(4),	-- Slow-Roasted Turkey
-							crit(5),	-- Spice Bread Stuffing
-						},
-					}),
-					ach(3582, {	-- Terokkar Turkey Time
-						
-					}),
-					ach(3578, {	-- The Turkinator
-						
-					}),
-					ach(3559, {	-- Turkey Lurkey
-						["groups"] = {
-							crit(1),	-- Blood Elf Rogue
-							crit(2),	-- Dwarf Rogue
-							crit(3),	-- Gnome Rogue
-							crit(4),	-- Goblin Rogue
-							crit(5),	-- Human Rogue
-							crit(6),	-- Night Elf Rogue
-							crit(7),	-- Orc Rogue
-							crit(8),	-- Troll Rogue
-							crit(9),	-- Undead Rogue
-							crit(10),	-- Worgen Rogue
-						},
-					}),
+					},
 				},
-			}),
+			},
 		}),
 	}),
-});
+};
