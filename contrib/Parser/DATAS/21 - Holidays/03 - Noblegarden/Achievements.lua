@@ -161,6 +161,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 										["criteriaID"] = 1,					-- Azure Watch // Bloodhoof Village
 										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
+											7,	-- Bloodhoof Village
 											97,	-- Azuremyst Isle
 										},
 									},
@@ -170,6 +171,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 										["criteriaID"] = 2,					-- Dolanaar // Brill
 										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
+											18,	-- Tirisfal Glades
 											57,	-- Teladrassil
 										},
 									},
@@ -180,6 +182,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
 											37,	-- Elwynn Forest
+											94,	-- Eversong Woods
 										},
 									},
 									{	-- Kharanos // Razor Hill
@@ -188,6 +191,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 										["criteriaID"] = 4,					-- Kharanos // Razor Hill
 										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
+											1,	-- Durotar
 											27,	-- Dun Morogh
 										},
 									},

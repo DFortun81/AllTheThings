@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({["u"] = 24}, 
+_.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
 		n(-4, {	-- Achievement
@@ -58,7 +58,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							i(33018),	-- Filled Blue Brewfest Stein [Thunder 45]
 							i(33019),	-- Filled Blue Brewfest Stein [Gordok Grog]
 							i(33020),	-- Filled Blue Brewfest Stein [Small Step]
-							i(33021),	-- Filled Blue Brewfest Stein [Jungle River 
+							i(33021),	-- Filled Blue Brewfest Stein [Jungle River
 						}),
 					}),
 					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off then refresh your collection by Shift+Clicking on this achievement. Once it has registered then you move on to the next brew and repeat.\n",

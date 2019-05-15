@@ -157,42 +157,44 @@ _.Achievements =
 					["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 					["u"] = 19,							-- Noblegarden Filter
 					["g"] = {
-						["g"] = {
-							{	-- Azure Watch // Bloodhoof Village
-								["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
-								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-								["criteriaID"] = 1,					-- Azure Watch // Bloodhoof Village
-								["u"] = 19,							-- Noblegarden Filter
-								["maps"] = {
-									97,	-- Azuremyst Isle
-								},
+						{	-- Azure Watch // Bloodhoof Village
+							["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+							["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
+							["criteriaID"] = 1,					-- Azure Watch // Bloodhoof Village
+							["u"] = 19,							-- Noblegarden Filter
+							["maps"] = {
+								7,	-- Bloodhoof Village
+								97,	-- Azuremyst Isle
 							},
-							{	-- Dolanaar // Brill
-								["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
-								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-								["criteriaID"] = 2,					-- Dolanaar // Brill
-								["u"] = 19,							-- Noblegarden Filter
-								["maps"] = {
-									57,	-- Teladrassil
-								},
+						},
+						{	-- Dolanaar // Brill
+							["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+							["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
+							["criteriaID"] = 2,					-- Dolanaar // Brill
+							["u"] = 19,							-- Noblegarden Filter
+							["maps"] = {
+								18,	-- Tirisfal Glades
+								57,	-- Teladrassil
 							},
-							{	-- Goldshire // Falconwing Square
-								["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
-								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-								["criteriaID"] = 3,					-- Goldshire // Falconwing Square
-								["u"] = 19,							-- Noblegarden Filter
-								["maps"] = {
-									37,	-- Elwynn Forest
-								},
+						},
+						{	-- Goldshire // Falconwing Square
+							["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+							["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
+							["criteriaID"] = 3,					-- Goldshire // Falconwing Square
+							["u"] = 19,							-- Noblegarden Filter
+							["maps"] = {
+								37,	-- Elwynn Forest
+								94,	-- Eversong Woods
 							},
-							{	-- Kharanos // Razor Hill
-								["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
-								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-								["criteriaID"] = 4,					-- Kharanos // Razor Hill
-								["u"] = 19,							-- Noblegarden Filter
-								["maps"] = {
-									27,	-- Dun Morogh
-								},
+						},
+						{	-- Kharanos // Razor Hill
+							["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+							["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
+							["criteriaID"] = 4,					-- Kharanos // Razor Hill
+							["u"] = 19,							-- Noblegarden Filter
+							["maps"] = {
+								1,	-- Durotar
+								27,	-- Dun Morogh
 							},
 						},
 					},
