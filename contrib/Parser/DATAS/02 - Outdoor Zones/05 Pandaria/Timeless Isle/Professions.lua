@@ -6,7 +6,7 @@ _.Zones =
 	{	-- Pandaria
 		["mapID"] = 424,	-- Pandaria
 		["g"] = {
-			{	554,	-- Timeless Isle
+			{	-- Timeless Isle
 				["mapID"] = 554,	-- Timeless Isle
 				["g"] = {
 					n(-38, {	-- Profession
