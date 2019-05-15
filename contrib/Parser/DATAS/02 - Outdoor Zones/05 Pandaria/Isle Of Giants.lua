@@ -55,40 +55,12 @@ _.Zones =
 					}),
 				}),
 				n(0, {	-- Zone Drop
-					i(94288, { 	-- Giant Dinosaur Bone
-						["description"] = "These bones can be gathered and turned into Ku'ma <The Bone Collector> on the Isle of Giants.",
-						["groups"] = {
-							{
-								["questID"] = 32613,	-- Giant Dinosaur Bone
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-								["repeatable"] = true,
-							},
-							{
-								["questID"] = 32614,	-- More Giant Dinosaur Bones
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-								["repeatable"] = true,
-							},
-							{
-								["questID"] = 32615,	-- Many More Giant Dinosaur Bones
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-								["repeatable"] = true,
-							},
-							{
-								["questID"] = 32616,	-- A Large Pile of Dinosaur Bones
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-								["repeatable"] = true,
-								["groups"] = {
-									i(94190),  -- Spectral Porcupette
-								},
-							},
-							{
-								["questID"] = 32617,	-- A Mountian of Dinosaur Bones
-								["qg"] = 70022,	-- Ku'ma <The Bone Collector>
-								["repeatable"] = true,
-								["groups"] = {
-									i(94290),  -- Bone-White Primal Raptor
-								},
-							},
+					{	-- Giant Dinosaur Bone
+						["itemID"] = 94288,  	-- Giant Dinosaur Bone
+						["description"] = "These bones can be gathered and turned into Ku'ma on the Isle of Giants.\n\n        1 Bone = 1g 14s\n      9 Bones = 1 Mote of Harmony\n    99 Bones = 1 Spirit of Harmony\n  999 Bones = Spectral Porcupette\n9999 Bones = Primal Raptor",
+						["coords"] = {
+							{ 27.32, 58.07, 507 },	-- Cave Entrance
+							{ 32.72, 54.26, 507 },	-- Ku'ma
 						},
 						["crs"] = {
 							70096,	-- War-God Dokah <Ward of Beasts>
@@ -116,7 +88,44 @@ _.Zones =
 							70006,	-- Young Primal Devilsaur [West - Gold]
 							69993,	-- Young Primal Devilsaur [West - Red]
 						},
-					}),
+						["g"] = {
+							{	-- Giant Dinosaur Bone [1g 14s]
+								["questID"] = 32613,	-- Giant Dinosaur Bone
+								["qg"] = 70022,			-- Ku'ma <The Bone Collector>
+								["repeatable"] = true,
+							},
+							{	-- More Giant Dinosaur Bones [1 Mote of Harmony]
+								["questID"] = 32614,	-- More Giant Dinosaur Bones
+								["qg"] = 70022,			-- Ku'ma <The Bone Collector>
+								["repeatable"] = true,
+							},
+							{	-- Many More Giant Dinosaur Bones [1 Spirit of Harmony]
+								["questID"] = 32615,	-- Many More Giant Dinosaur Bones
+								["qg"] = 70022,			-- Ku'ma <The Bone Collector>
+								["repeatable"] = true,
+							},
+							{	-- A Large Pile of Dinosaur Bones [1 Spectral Porcupette]
+								["questID"] = 32616,	-- A Large Pile of Dinosaur Bones
+								["qg"] = 70022,			-- Ku'ma <The Bone Collector>
+								["repeatable"] = true,
+								["g"] = {
+									{	-- Spectral Porcupette
+										["itemID"] = 94190,	-- Spectral Porcupette
+									},
+								},
+							},
+							{	-- A Mountian of Dinosaur Bones [1 Bone-White Primal Raptor]
+								["questID"] = 32617,	-- A Mountian of Dinosaur Bones
+								["qg"] = 70022,			-- Ku'ma <The Bone Collector>
+								["repeatable"] = true,
+								["g"] = {
+									{	-- Bone-White Primal Raptor
+										["itemID"] = 94290,	-- Bone-White Primal Raptor
+									},
+								},
+							},
+						},
+					},
 					i(94295, { 	-- Primal Egg
 						["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or zone wide on the Isle of Giants.",
 						["groups"] = {
