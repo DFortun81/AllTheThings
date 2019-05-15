@@ -155,38 +155,38 @@ _.Holidays = bubbleDown({["u"] = 19},
 								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 								["u"] = 19,							-- Noblegarden Filter
 								["g"] = {
-									{	-- Azure Watch
+									{	-- Azure Watch // Bloodhoof Village
 										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
 										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-										["criteriaID"] = 1,			-- Azure Watch
-										["u"] = 19,					-- Noblegarden Filter
+										["criteriaID"] = 1,					-- Azure Watch // Bloodhoof Village
+										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
 											97,	-- Azuremyst Isle
 										},
 									},
-									{	-- Dolanaar
+									{	-- Dolanaar // Brill
 										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
 										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-										["criteriaID"] = 2,			-- Dolanaar
-										["u"] = 19,					-- Noblegarden Filter
+										["criteriaID"] = 2,					-- Dolanaar // Brill
+										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
 											57,	-- Teladrassil
 										},
 									},
-									{	-- Goldshire
+									{	-- Goldshire // Falconwing Square
 										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
 										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-										["criteriaID"] = 3,			-- Goldshire
-										["u"] = 19,					-- Noblegarden Filter
+										["criteriaID"] = 3,					-- Goldshire // Falconwing Square
+										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
 											37,	-- Elwynn Forest
 										},
 									},
-									{	-- Kharanos
+									{	-- Kharanos // Razor Hill
 										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
 										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
-										["criteriaID"] = 4,			-- Kharanos
-										["u"] = 19,					-- Noblegarden Filter
+										["criteriaID"] = 4,					-- Kharanos // Razor Hill
+										["u"] = 19,							-- Noblegarden Filter
 										["maps"] = {
 											27,	-- Dun Morogh
 										},
