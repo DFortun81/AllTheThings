@@ -17,13 +17,6 @@ _.Zones =
 						["coord"] = { 51.8, 75.4 },
 					}),
 				}),
-				n(-38, { 	-- Profession
-					prof(356, {	-- Fishing
-						i(94935, {	-- Tiny White Carp Pet
-							["description"] = "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r",
-						}),
-					}),
-				}),
 				n(-16, { 	-- Rares
 					n(69983, { 		-- Primal Direhorn
 						dr(5, i(94573)),	-- Direhorn Runt

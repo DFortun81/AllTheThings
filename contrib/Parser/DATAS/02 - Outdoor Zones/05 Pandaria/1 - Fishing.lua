@@ -16,20 +16,21 @@ _.Zones =
 					371,	-- The Jade Forest
 					554,	-- Timeless Isle
 					388,	-- Townlong Steppes
+					390,	-- Vale of Eternal Blossoms
 					376,	-- Valley of the Four Winds
 				},
 				["g"] = {
 					{	-- Tiny Blue Carp Pet
 						["itemID"] = 94933,	-- Tiny Blue Carp Pet
-						["description"] = "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools. Additionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.|nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r",
+						["description"] = "The Tiny Blue Carp can be fished up from Jewel Danio Schools and Redbelly Mandarin Schools.\nAdditionally, it can be caught by casting into the Fish of the Day in Townlong Steppes and the Vale of Eternal Blossoms.\nAnother way to obtain this pet is by fishing from inland open water in Townlong Steppes and the Vale of Eternal Blossoms.|r",
 					},
 					{	-- Tiny Green Carp
 						["itemID"] = 94934,	-- Tiny Green Carp
-						["description"] = "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r",
+						["description"] = "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools.\nAdditionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.\nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r",
 					},
 					{	-- Tiny Red Carp
 						["itemID"] = 94932,	-- Tiny Red Carp
-						["description"] = "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r",
+						["description"] = "The Tiny Red Carp can be fished up from Spinefish Schools.\nAdditionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.\nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r",
 					},
 					{	-- Tiny White Carp
 						["itemID"] = 94935,	-- Tiny White Carp

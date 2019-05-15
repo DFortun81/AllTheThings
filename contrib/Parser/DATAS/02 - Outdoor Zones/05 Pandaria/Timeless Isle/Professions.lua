@@ -6,7 +6,7 @@ _.Zones =
 	{	-- Pandaria
 		["mapID"] = 424,	-- Pandaria
 		["g"] = {
-			{	-- Vale of Eternal Blossoms
+			{	554,	-- Timeless Isle
 				["mapID"] = 554,	-- Timeless Isle
 				["g"] = {
 					n(-38, {	-- Profession
