@@ -53,66 +53,66 @@ _.Achievements =
 					ach(13316),		-- Can I Get a Hek Hek Hek Yeah?
 					ach(13414),		-- Crucible of Storms
 					ach(13430),		-- De Lurker Be'loa
-					{  -- Siege of Dazar'alor [A]/Defense of Dazar'alor [H]
+					{  -- Siege of Dazar'alor [Alliance] // Defense of Dazar'alor [Horde]
 						["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 						["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 						["g"] = {
 							{
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [A]/[H]
+								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 2,	-- Grong [A]/[H]
+								["criteriaID"] = 2,	-- Grong [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 3,	-- Jadefire Masters [A]/[H]
+								["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
 							},
 						},
 					},
-					{  --  Empire's Fall [A]/Death's Bargain [H]
+					{  --  Empire's Fall [Alliance] // Death's Bargain [Horde]
 						["allianceAchievementID"] = 13287,	-- Empire's Fall
 						["hordeAchievementID"] = 13290,		-- Death's Bargain
 						["g"] = {
 							{
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["criteriaID"] = 1,	-- Opulence [A]/[H]
+								["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["criteriaID"] = 2,	-- Loa Council [A]/Conclave of the Chosen[H]
+								["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen[Horde]
 							},
 							{
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["criteriaID"] = 3,	-- King Rastakhan [A]/[H]
+								["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
 							},
 						},
 					},
-					{  -- Might of the Alliance [A]/Victory or Death [H]
-						["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-						["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+					{  -- Might of the Alliance [Alliance] // Victory or Death [Horde]
+						["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+						["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 						["g"] = {
 							{
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-								["criteriaID"] = 1,	-- Mekkatorque [A]/[H]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
 							},
 							{
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-								["criteriaID"] = 2,	-- Stormwall Blockade [A]/[H]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
 							},
 							{
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-								["criteriaID"] = 3,	-- Lady Jaina Proudmoore [A]/[H]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
 							},
 						},
 					},
@@ -126,7 +126,7 @@ _.Achievements =
 					ach(13292),		-- Mythic: Champion of the Light
 					ach(13300),		-- Mythic: Conclave of the Chosen
 					ach(13293),		-- Mythic: Grong
-					{  -- Mythic: Jadefire Masters [A]/[H]
+					{  -- Mythic: Jadefire Masters [Alliance] // [Horde]
 						["allianceAchievementID"] = 13298,	-- Mythic: Jadefire Masters (A)
 						["hordeAchievementID"] = 13295,		-- Mythic: Jadefire Masters (H)
 					},

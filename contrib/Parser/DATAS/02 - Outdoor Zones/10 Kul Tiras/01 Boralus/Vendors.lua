@@ -92,7 +92,7 @@ _.Zones =
 											["questID"] = 54859,
 											["description"] = "Cost: 25 Seafarer's Dubloons",
 										},
-										{	-- Dented Coin [A]
+										{	-- Dented Coin [Alliance]
 											["itemID"] = 163616,	-- Dented Coin
 											--["questID"] = 53118,	-- Dented Coin
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -100,7 +100,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = ALLIANCE_ONLY,
 										},
-										{	-- Exotic Spices [A]
+										{	-- Exotic Spices [Alliance]
 											["itemID"] = 163614,	-- Exotic Spices
 											--["questID"] = 53120,	-- Exotic Spices
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -108,7 +108,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = ALLIANCE_ONLY,
 										},
-										{	-- Lost Sea Scroll [A]
+										{	-- Lost Sea Scroll [Alliance]
 											["itemID"] = 163615,	-- Lost Sea Scroll
 											--["questID"] = 53119,	-- Lost Sea Scroll
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item

@@ -30,23 +30,23 @@ _.Craftables =
 				},
 			}),
 			filter(31, {	-- Guns
-				{	-- Finely-Tuned Stormsteel Destroyer [A]*
-					["itemID"] = 161930,	-- Finely-Tuned Stormsteel Destroyer [A]
+				{	-- Finely-Tuned Stormsteel Destroyer [Alliance]*
+					["itemID"] = 161930,	-- Finely-Tuned Stormsteel Destroyer [Alliance]
 				},
-				{	-- Finely-Tuned Stormsteel Destroyer [H]*
-					["itemID"] = 153506,	-- Finely-Tuned Stormsteel Destroyer [H]
+				{	-- Finely-Tuned Stormsteel Destroyer [Horde]*
+					["itemID"] = 153506,	-- Finely-Tuned Stormsteel Destroyer [Horde]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [A]*
-					["itemID"] = 161931,	-- Honorable Combatant's Stormsteel Destroyer [A]
+				{	-- Honorable Combatant's Stormsteel Destroyer [Alliance]*
+					["itemID"] = 161931,	-- Honorable Combatant's Stormsteel Destroyer [Alliance]
 				},
-				{	-- Honorable Combatant's Stormsteel Destroyer [H]*
-					["itemID"] = 159936,	-- Honorable Combatant's Stormsteel Destroyer [H]
+				{	-- Honorable Combatant's Stormsteel Destroyer [Horde]*
+					["itemID"] = 159936,	-- Honorable Combatant's Stormsteel Destroyer [Horde]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [A]*
-					["itemID"] = 164696,	-- Sinister Combatant's Stormsteel Destroyer [A]
+				{	-- Sinister Combatant's Stormsteel Destroyer [Alliance]*
+					["itemID"] = 164696,	-- Sinister Combatant's Stormsteel Destroyer [Alliance]
 				},
-				{	-- Sinister Combatant's Stormsteel Destroyer [H]*
-					["itemID"] = 164679,	-- Sinister Combatant's Stormsteel Destroyer [H]
+				{	-- Sinister Combatant's Stormsteel Destroyer [Horde]*
+					["itemID"] = 164679,	-- Sinister Combatant's Stormsteel Destroyer [Horde]
 				},
 			}),
 			n(-320,	{ 		-- Head

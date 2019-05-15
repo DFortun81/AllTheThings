@@ -50,14 +50,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									144683,	-- Frida Ironbellows (H)
 								},
 								["g"] = {
-									{  -- Champion of the Light (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+									{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 1,	-- Champion of the Light [A]/[H]
+												["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
 											},
 										},
 									},
@@ -85,14 +85,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									148270,	-- Mestrah <The Illuminated> (H)
 								},
 								["g"] = {
-									{  -- Jadefire Masters (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+									{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 3,	-- Jadefire Masters [A]/[H]
+												["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
 											},
 										},
 									},
@@ -118,14 +118,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									148117,	-- Grong the Revenant (H)
 								},
 								["g"] = {
-									{  -- Grong, the Revenant (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+									{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 2,	-- Grong, the Revenant [A]/[H]
+												["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
 											},
 										},
 									},
@@ -159,14 +159,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									145273,	-- The Hand of In'zashi
 								},
 								["g"] = {
-									{  --  Opulence Empire's Fall [A]/Death's Bargain [H]
+									{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13287,	-- Empire's Fall
 												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 1,	-- Opulence [A]/[H]
+												["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
 											},
 										},
 									},
@@ -195,14 +195,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									144747,	-- Pa'ku's Aspect
 								},
 								["g"] = {
-									{  -- Loa Council/Conclave of the Chosen; Empire's Fall [A]/Death's Bargain [H]
+									{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13287,	-- Empire's Fall
 												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 2,	-- Loa Council [A]/Conclave of the Chosen [H]
+												["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
 											},
 										},
 									},
@@ -230,14 +230,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									146322,	-- Siegebreaker Roka
 								},
 								["g"] = {
-									{  -- King Rastakhan Empire's Fall [A]/Death's Bargain [H]
+									{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
 										["g"] = {
 											{
 												["allianceAchievementID"] = 13287,	-- Empire's Fall
 												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 3,	-- King Rastakhan [A]/[H]
+												["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
 											},
 										},
 									},
@@ -266,14 +266,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								["encounterID"] = 2334,
 								["crs"] = { 144796 },	-- High Tinker Mekkatorque
 								["g"] = {
-									{  -- High Tinker Mekkatorque; Might of the Alliance [A]/Victory or Death [H]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+									{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 										["g"] = {
 											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-												["criteriaID"] = 1,	-- Mekkatorque [A]/[H]
+												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+												["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
 											},
 										},
 									},
@@ -299,14 +299,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									146251,	-- Sister Katherine
 								},
 								["g"] = {
-									{  -- Stormwall Blockade; Might of the Alliance [A]/Victory or Death [H]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+									{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 										["g"] = {
 											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-												["criteriaID"] = 2,	-- Stormwall Blockade [A]/[H]
+												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+												["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
 											},
 										},
 									},
@@ -329,14 +329,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								["encounterID"] = 2343,
 								["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 								["g"] = {
-									{  -- Lady Jaina Proudmoore; Might of the Alliance [A]/Victory or Death [H]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+									{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 										["g"] = {
 											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-												["criteriaID"] = 3,	-- Lady Jaina Proudmoore [A]/[H]
+												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+												["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
 											},
 										},
 									},
@@ -389,10 +389,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [A]/[H]
+								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
 							},
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							i(165586),	-- Dawnbreaker
@@ -419,14 +419,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [A]/[H]
+										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
 									},
 								},
 							},
@@ -453,14 +453,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [A]/[H]
+										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
 									},
 								},
 							},
@@ -489,14 +489,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [A]/Death's Bargain [H]
+							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [A]/[H]
+										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
 									},
 								},
 							},
@@ -526,14 +526,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [A]/Death's Bargain [H]
+							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [A]/Conclave of the Chosen [H]
+										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
 									},
 								},
 							},
@@ -564,14 +564,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [A]/Death's Bargain [H]
+							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [A]/[H]
+										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
 									},
 								},
 							},
@@ -594,14 +594,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2334,
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 1,	-- Mekkatorque [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
 									},
 								},
 							},
@@ -629,14 +629,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 2,	-- Stormwall Blockade [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
 									},
 								},
 							},
@@ -660,14 +660,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2343,
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
 									},
 								},
 							},
@@ -717,10 +717,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [A]/[H]
+								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
 							},
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							i(165586),	-- Dawnbreaker
@@ -747,14 +747,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [A]/[H]
+										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
 									},
 								},
 							},
@@ -781,14 +781,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [A]/[H]
+										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
 									},
 								},
 							},
@@ -817,14 +817,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [A]/Death's Bargain [H]
+							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [A]/[H]
+										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
 									},
 								},
 							},
@@ -854,14 +854,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [A]/Death's Bargain [H]
+							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [A]/Conclave of the Chosen [H]
+										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
 									},
 								},
 							},
@@ -892,14 +892,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [A]/Death's Bargain [H]
+							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [A]/[H]
+										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
 									},
 								},
 							},
@@ -922,14 +922,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2334,
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 1,	-- Mekkatorque [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
 									},
 								},
 							},
@@ -957,14 +957,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 2,	-- Stormwall Blockade [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
 									},
 								},
 							},
@@ -988,14 +988,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2343,
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1048,10 +1048,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{	-- Champion of the Light (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{	-- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [A]/[H]
+								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
 							},
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							ach(13292),	-- Mythic: Champion of the Light
@@ -1079,19 +1079,19 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [A]/[H]
+										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
 									},
 								},
 							},
 							ach(13431),		-- Hidden Dragon
-							{  -- Mythic: Jadefire Masters [A]/[H]
+							{  -- Mythic: Jadefire Masters [Alliance] // [Horde]
 								["allianceAchievementID"] = 13298,	-- Mythic: Jadefire Masters (A)
 								["hordeAchievementID"] = 13295,		-- Mythic: Jadefire Masters (H)
 							},
@@ -1117,14 +1117,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[A]/Champion of the Light (Defense of Dazar'alor)[H]
+							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [A]/[H]
+										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1154,14 +1154,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [A]/Death's Bargain [H]
+							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [A]/[H]
+										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1192,14 +1192,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [A]/Death's Bargain [H]
+							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [A]/Conclave of the Chosen [H]
+										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
 									},
 								},
 							},
@@ -1232,14 +1232,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [A]/Death's Bargain [H]
+							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
 								["allianceAchievementID"] = 13287,	-- Empire's Fall
 								["hordeAchievementID"] = 13290,		-- Death's Bargain
 								["g"] = {
 									{
 										["allianceAchievementID"] = 13287,	-- Empire's Fall
 										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [A]/[H]
+										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1263,14 +1263,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2334,
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 1,	-- Mekkatorque [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1299,14 +1299,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 2,	-- Stormwall Blockade [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
 									},
 								},
 							},
@@ -1331,14 +1331,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2343,
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [A]/Victory or Death [H]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [H]
+							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
 								["g"] = {
 									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [A]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [H]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [A]/[H]
+										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
 									},
 								},
 							},

@@ -129,27 +129,27 @@ _.Achievements =
 							{
 								["allianceAchievementID"] = 5476,	-- Fish or Cut Bait: Stormwind [Alliance]
 								["hordeAchievementID"] = 5477,		-- Fish or Cut Bait: Orgrimmar [Horde]
-								["criteriaID"] = 1,	-- Hitting a Walleye [A]/Clammy Hands [H]
+								["criteriaID"] = 1,	-- Hitting a Walleye [Alliance] // Clammy Hands [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5476,	-- Fish or Cut Bait: Stormwind [Alliance]
 								["hordeAchievementID"] = 5477,		-- Fish or Cut Bait: Orgrimmar [Horde]
-								["criteriaID"] = 2,	-- Diggin' For Worms [A]/No Dumping Allowed [H]
+								["criteriaID"] = 2,	-- Diggin' For Worms [Alliance] // No Dumping Allowed [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5476,	-- Fish or Cut Bait: Stormwind [Alliance]
 								["hordeAchievementID"] = 5477,		-- Fish or Cut Bait: Orgrimmar [Horde]
-								["criteriaID"] = 3,	-- Rock Lobster [A]/No Dumping Allowed [H]
+								["criteriaID"] = 3,	-- Rock Lobster [Alliance] // No Dumping Allowed [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5476,	-- Fish or Cut Bait: Stormwind [Alliance]
 								["hordeAchievementID"] = 5477,		-- Fish or Cut Bait: Orgrimmar [Horde]
-								["criteriaID"] = 4,	-- Big Gulp [A]/A Furious Catch [H]
+								["criteriaID"] = 4,	-- Big Gulp [Alliance] // A Furious Catch [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5476,	-- Fish or Cut Bait: Stormwind [Alliance]
 								["hordeAchievementID"] = 5477,		-- Fish or Cut Bait: Orgrimmar [Horde]
-								["criteriaID"] = 5,	-- Thunder Falls [A]/[H]
+								["criteriaID"] = 5,	-- Thunder Falls [Alliance] // [Horde]
 							},
 						},	
 					},
@@ -161,27 +161,27 @@ _.Achievements =
 							{
 								["allianceAchievementID"] = 5848,	-- Fish or Cut Bait: Darnassus [Alliance]
 								["hordeAchievementID"] = 5850,		-- Fish or Cut Bait: Undercity [Horde]
-								["criteriaID"] = 1,	-- Happy as a Clam Digger [A]/Fish Head [H]
+								["criteriaID"] = 1,	-- Happy as a Clam Digger [Alliance] // Fish Head [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5848,	-- Fish or Cut Bait: Darnassus [Alliance]
 								["hordeAchievementID"] = 5850,		-- Fish or Cut Bait: Undercity [Horde]
-								["criteriaID"] = 2,	-- Stocking Up [A]/Tadpole Terror [H]
+								["criteriaID"] = 2,	-- Stocking Up [Alliance] // Tadpole Terror [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5848,	-- Fish or Cut Bait: Darnassus [Alliance]
 								["hordeAchievementID"] = 5850,		-- Fish or Cut Bait: Undercity [Horde]
-								["criteriaID"] = 3,	-- The Sister's Pendant [A]/Like Pike? [H]
+								["criteriaID"] = 3,	-- The Sister's Pendant [Alliance] // Like Pike? [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5848,	-- Fish or Cut Bait: Darnassus [Alliance]
 								["hordeAchievementID"] = 5850,		-- Fish or Cut Bait: Undercity [Horde]
-								["criteriaID"] = 4,	-- A Slippery Snack [A]/Time for Slime [H]
+								["criteriaID"] = 4,	-- A Slippery Snack [Alliance] // Time for Slime [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5848,	-- Fish or Cut Bait: Darnassus [Alliance]
 								["hordeAchievementID"] = 5850,		-- Fish or Cut Bait: Undercity [Horde]
-								["criteriaID"] = 5,	-- An Old Favorite [A]/Moat Monster! [H]
+								["criteriaID"] = 5,	-- An Old Favorite [Alliance] // Moat Monster! [Horde]
 							},
 						},	
 					},
@@ -192,27 +192,27 @@ _.Achievements =
 							{
 								["allianceAchievementID"] = 5847,	-- Fish or Cut Bait: Ironforge [Alliance]
 								["hordeAchievementID"] = 5849,		-- Fish or Cut Bait: Thunder Bluff [Horde]
-								["criteriaID"] = 1,	-- Cold Water Fishing [A]/Pond Predators [H]
+								["criteriaID"] = 1,	-- Cold Water Fishing [Alliance] // Pond Predators [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5847,	-- Fish or Cut Bait: Ironforge [Alliance]
 								["hordeAchievementID"] = 5849,		-- Fish or Cut Bait: Thunder Bluff [Horde]
-								["criteriaID"] = 2,	-- One fer the Ages [A]/The Ring's the Thing [H]
+								["criteriaID"] = 2,	-- One fer the Ages [Alliance] // The Ring's the Thing [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5847,	-- Fish or Cut Bait: Ironforge [Alliance]
 								["hordeAchievementID"] = 5849,		-- Fish or Cut Bait: Thunder Bluff [Horde]
-								["criteriaID"] = 3,	-- One fer the Ages [A]/The Race to Restock [H]
+								["criteriaID"] = 3,	-- One fer the Ages [Alliance] // The Race to Restock [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5847,	-- Fish or Cut Bait: Ironforge [Alliance]
 								["hordeAchievementID"] = 5849,		-- Fish or Cut Bait: Thunder Bluff [Horde]
-								["criteriaID"] = 4,	-- Live Bait [A]/Craving Crayfish [H]
+								["criteriaID"] = 4,	-- Live Bait [Alliance] // Craving Crayfish [Horde]
 							},
 							{
 								["allianceAchievementID"] = 5847,	-- Fish or Cut Bait: Ironforge [Alliance]
 								["hordeAchievementID"] = 5849,		-- Fish or Cut Bait: Thunder Bluff [Horde]
-								["criteriaID"] = 5,	-- The Gnomish Bait-o-Matic [A]/Shiny Baubles [H]
+								["criteriaID"] = 5,	-- The Gnomish Bait-o-Matic [Alliance] // Shiny Baubles [Horde]
 							},
 						},	
 					},

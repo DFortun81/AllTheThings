@@ -12,26 +12,43 @@ _.Holidays = bubbleDown({["u"] = 28},
 					ach(3579, {	-- "FOOD FIGHT!"
 						
 					}),
-					ach(3576, {	-- Now We're Cookin' (Alliance)
-						["groups"] = {
-							crit(1),	-- Candied Sweet Potato
-							crit(2),	-- Cranberry Chutney
-							crit(3),	-- Pumpkin Pie
-							crit(4),	-- Slow-Roasted Turkey
-							crit(5),	-- Spice Bread Stuffing
+					{	-- Now We're Cookin'
+						["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+						["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+						["u"] = 28,							-- Pilgrim's Bounty Filter
+						["g"] = {
+							{	-- Candied Sweet Potato
+								["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+								["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+								["criteriaID"] = 1,					-- Candied Sweet Potato
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Cranberry Chutney
+								["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+								["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+								["criteriaID"] = 2,					-- Cranberry Chutney
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Pumpkin Pie
+								["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+								["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+								["criteriaID"] = 3,					-- Pumpkin Pie
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Slow-Roasted Turkey
+								["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+								["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+								["criteriaID"] = 4,					-- Slow-Roasted Turkey
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
+							{	-- Spice Bread Stuffing
+								["allianceAchievementID"] = 3576,	-- Now We're Cookin' [Alliance]
+								["hordeAchievementID"] = 3577,		-- Now We're Cookin' [Horde]
+								["criteriaID"] = 5,					-- Spice Bread Stuffing
+								["u"] = 28,							-- Pilgrim's Bounty Filter
+							},
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(3577, {	-- Now We're Cookin' (Horde)
-						["groups"] = {
-							crit(1),	-- Candied Sweet Potato
-							crit(2),	-- Cranberry Chutney
-							crit(3),	-- Pumpkin Pie
-							crit(4),	-- Slow-Roasted Turkey
-							crit(5),	-- Spice Bread Stuffing
-						},
-						["races"] = HORDE_ONLY,
-					}),
+					},
 					ach(3556, {	-- Pilgrim's Paunch (Alliance)
 						["groups"] = {
 							crit(1),	-- Darnassus

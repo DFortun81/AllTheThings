@@ -646,7 +646,7 @@ _.Zones =
 								["questID"] = 54185,	-- Gnomeregan's New Guardians
 								["qg"] = 147070,	-- Micro Zoox
 								["coord"] = { 31.67, 71.61, 30 },
-								["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [A] + [H]
+								["sourceQuests"] = { 54184, 54276 },	-- Trouble in Gnomeregan [Alliance] + [Horde]
 							},
 						}),
 					},

@@ -315,26 +315,26 @@ _.ExpansionFeatures =
 							}),
 							currency(824, {	-- Garrison Resources
 								i(122307),	-- Rush Order: Barn
-								i(122496),	-- Rush Order: Garden Shipment [H]
+								i(122496),	-- Rush Order: Garden Shipment [Horde]
 								i(122487),	-- Rush Order: Gladiator's Sanctum
-								i(122501),	-- Rush Order: Goblin Workshop [H]
-								i(122502),	-- Rush Order: Mine Shipment [H]
+								i(122501),	-- Rush Order: Goblin Workshop [Horde]
+								i(122502),	-- Rush Order: Mine Shipment [Horde]
 								i(128373),	-- Rush Order: Shipyard
-								i(122491),	-- Rush Order: War Mill [H]
-								i(122424),	-- Scouting Missive: Broken Precipice [H]
-								i(122418),	-- Scouting Missive: Darktide Roost [H]
-								i(122400),	-- Scouting Missive: Everbloom Wilds [H]
-								i(122402),	-- Scouting Missive: Iron Siegeworks [H]
-								i(122413),	-- Scouting Missive: Lost Veil Anzu [H]
-								i(122403),	-- Scouting Missive: Magnarok [H]
-								i(122421),	-- Scouting Missive: Mok'gol Watchpost [H]
-								i(122411),	-- Scouting Missive: Pillars of Fate [H]
-								i(122412),	-- Scouting Missive: Shattrath Harbor [H]
-								i(122408),	-- Scouting Missive: Skettis [H]
-								i(122416),	-- Scouting Missive: Socrethar's Rise [H]
-								i(122405),	-- Scouting Missive: Stonefury Cliffs [H]
-								i(133884),	-- Scouting Missive: The Heart of Shattrath [H]
-								i(133876),	-- Scouting Missive: The Pit [H]
+								i(122491),	-- Rush Order: War Mill [Horde]
+								i(122424),	-- Scouting Missive: Broken Precipice [Horde]
+								i(122418),	-- Scouting Missive: Darktide Roost [Horde]
+								i(122400),	-- Scouting Missive: Everbloom Wilds [Horde]
+								i(122402),	-- Scouting Missive: Iron Siegeworks [Horde]
+								i(122413),	-- Scouting Missive: Lost Veil Anzu [Horde]
+								i(122403),	-- Scouting Missive: Magnarok [Horde]
+								i(122421),	-- Scouting Missive: Mok'gol Watchpost [Horde]
+								i(122411),	-- Scouting Missive: Pillars of Fate [Horde]
+								i(122412),	-- Scouting Missive: Shattrath Harbor [Horde]
+								i(122408),	-- Scouting Missive: Skettis [Horde]
+								i(122416),	-- Scouting Missive: Socrethar's Rise [Horde]
+								i(122405),	-- Scouting Missive: Stonefury Cliffs [Horde]
+								i(133884),	-- Scouting Missive: The Heart of Shattrath [Horde]
+								i(133876),	-- Scouting Missive: The Pit [Horde]
 								i(122272),	-- Follower Ability Retraining Manual
 								i(122273),	-- Follower Trait Retraining Guide
 								i(120348),	-- Enchanted Crystal of Freezing

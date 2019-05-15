@@ -1660,7 +1660,7 @@ _.Zones =
 						q(48990),	-- The Leader Calls
 						q(48838),	-- Water Reclamation
 						]]--
-						q(51145, {	-- Curse of Jani [A]
+						q(51145, {	-- Curse of Jani [Alliance]
 							["qg"] = 136559,	-- Jani
 							["coord"] = { 36.2, 36.8 },
 							["races"] = ALLIANCE_ONLY,

@@ -22,22 +22,22 @@ _.Zones =
 							["groups"] = {
 								a({
 									["itemID"] = 50379,	-- Battered Hilt
-									["questID"] = 14443,	-- The Battered Hilt [A]
+									["questID"] = 14443,	-- The Battered Hilt [Alliance]
 								}),
 								h({
-									["itemID"] = 50380,	-- Battered Hilt [H]
-									["questID"] = 24554,	-- The Battered Hilt [H]
+									["itemID"] = 50380,	-- Battered Hilt [Horde]
+									["questID"] = 24554,	-- The Battered Hilt [Horde]
 								}),
 							},
 						}),
 						a({
 							["questID"] = 14444,	-- What The Dragons Know [Alliance]
-							["sourceQuest"] = 14443,	-- The Battered Hilt [A]
+							["sourceQuest"] = 14443,	-- The Battered Hilt [Alliance]
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
 						h({
 							["questID"] = 24555,	-- What The Dragons Know [Horde]
-							["sourceQuest"] = 24554,	-- The Battered Hilt [H]
+							["sourceQuest"] = 24554,	-- The Battered Hilt [Horde]
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
 						a({

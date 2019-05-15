@@ -224,13 +224,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 										["achievementID"] = 12850,	-- At Least You're Being Careful
 										["u"] = 29,					-- Feast of Winter Veil Filter
 									},
-									{	-- Toy Armor Set [A]
-										["itemID"] = 162643,	-- Toy Armor Set [A]
+									{	-- Toy Armor Set [Alliance]
+										["itemID"] = 162643,	-- Toy Armor Set [Alliance]
 										["u"] = 29,				-- Feast of Winter Veil Filter
 										["races"] = ALLIANCE_ONLY,
 									},
-									{	-- Toy Armor Set [H]
-										["itemID"] = 162642,	-- Toy Armor Set [H]
+									{	-- Toy Armor Set [Horde]
+										["itemID"] = 162642,	-- Toy Armor Set [Horde]
 										["u"] = 29,				-- Feast of Winter Veil Filter
 										["races"] = HORDE_ONLY,
 									},

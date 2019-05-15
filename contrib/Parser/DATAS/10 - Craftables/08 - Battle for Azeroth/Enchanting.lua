@@ -11,29 +11,29 @@ _.Craftables =
 				},
 			}),
 			filter(27, {	-- Wands
-				{	-- Enchanter's Sorcerous Scepter [A]
-					["itemID"] = 161927,	-- Enchanter's Sorcerous Scepter [A]
+				{	-- Enchanter's Sorcerous Scepter [Alliance]
+					["itemID"] = 161927,	-- Enchanter's Sorcerous Scepter [Alliance]
 				},
-				{	-- Enchanter's Sorcerous Scepter [H]
-					["itemID"] = 152874,	-- Enchanter's Sorcerous Scepter [H]
+				{	-- Enchanter's Sorcerous Scepter [Horde]
+					["itemID"] = 152874,	-- Enchanter's Sorcerous Scepter [Horde]
 				},
-				{	-- Enchanter's Umbral Wand [A]
-					["itemID"] = 161925,	-- Enchanter's Umbral Wand [A]
+				{	-- Enchanter's Umbral Wand [Alliance]
+					["itemID"] = 161925,	-- Enchanter's Umbral Wand [Alliance]
 				},
-				{	-- Enchanter's Umbral Wand [H]
-					["itemID"] = 152872,	-- Enchanter's Umbral Wand [H]
+				{	-- Enchanter's Umbral Wand [Horde]
+					["itemID"] = 152872,	-- Enchanter's Umbral Wand [Horde]
 				},
-				{	-- Honorable Combatant's Sorcerous Scepter [A]
-					["itemID"] = 161928,	-- Honorable Combatant's Sorcerous Scepter [A]
+				{	-- Honorable Combatant's Sorcerous Scepter [Alliance]
+					["itemID"] = 161928,	-- Honorable Combatant's Sorcerous Scepter [Alliance]
 				},
-				{	-- Honorable Combatant's Sorcerous Scepter [H]
-					["itemID"] = 159922,	-- Honorable Combatant's Sorcerous Scepter [H]
+				{	-- Honorable Combatant's Sorcerous Scepter [Horde]
+					["itemID"] = 159922,	-- Honorable Combatant's Sorcerous Scepter [Horde]
 				},
-				{	-- Sinister Combatant's Sorcerous Scepter [A]
-					["itemID"] = 164694,	-- Sinister Combatant's Sorcerous Scepter [A]
+				{	-- Sinister Combatant's Sorcerous Scepter [Alliance]
+					["itemID"] = 164694,	-- Sinister Combatant's Sorcerous Scepter [Alliance]
 				},
-				{	-- Sinister Combatant's Sorcerous Scepter [H]
-					["itemID"] = 164677,	-- Sinister Combatant's Sorcerous Scepter [H]
+				{	-- Sinister Combatant's Sorcerous Scepter [Horde]
+					["itemID"] = 164677,	-- Sinister Combatant's Sorcerous Scepter [Horde]
 				},
 			}),
 		}),

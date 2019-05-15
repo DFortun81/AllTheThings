@@ -11,6 +11,85 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["maps"] = { 173 },
 		["lvl"] = 80,
 		["g"] = {
+			n(-1, {	-- Common Boss Drops
+				["crs"] = {
+					34796,	-- Gormok
+					35144,	-- Acidmaw
+					34799,	-- Dreadscale
+					34797,	-- Icehowl
+					34780,	-- Lord Jaraxxus
+					34461,	-- Tyrius Duskblade
+					34460,	-- Kavina Grovesong
+					34469,	-- Melador Valestrider
+					34467,	-- Alyssia Moonstalker
+					34468,	-- Noozle Whizzlestick
+					34465,	-- Velanaa
+					34471,	-- Baelnor Lightbearer
+					34466,	-- Anthar Forgemender
+					34473,	-- Brienna Nightfell
+					34472,	-- Irieth Shadowstep
+					34463,	-- Shaabad
+					34470,	-- Saamul
+					34474,	-- Serissa Grimdabbler
+					34475,	-- Shocuul
+					34458,	-- Gorgrim Shadowcleave
+					34451,	-- Birana Stormhoof
+					34459,	-- Erin Misthoof
+					34448,	-- Ruj'kah
+					34449,	-- Ginselle Blightslinger
+					34445,	-- Liandra Suncaller
+					34456,	-- Malithas Brightblade
+					34447,	-- Caiphus the Stern
+					34441,	-- Vivienne Blackwhisper
+					34454,	-- Maz'dinah
+					34455,	-- Broln Stouthorn
+					34444,	-- Thrakgar
+					34450,	-- Harkzog
+					34453,	-- Narrhok Steelbreaker
+					34497,	-- Fjola Lightbane
+					34496,	-- Eydis Darkbane
+					34564,	-- Anub'arak
+				},
+				["description"] = "These drop on all difficulties, but 10 Man Normal.",
+				["g"] = {
+					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
+					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
+					a(i(47629)),	-- Pattern: Black Chitin Bracers [Alliance]
+					h(i(47646)),	-- Pattern: Black Chitin Bracers [Horde]
+					a(i(47635)),	-- Pattern: Bracers of Swift Death [Alliance]
+					h(i(47647)),	-- Pattern: Bracers of Swift Death [Horde]
+					a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers [Alliance]
+					h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers [Horde]
+					a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate [Alliance]
+					h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate [Horde]
+					a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate [Alliance]
+					h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate [Horde]
+					a(i(47634)),	-- Pattern: Knightbane Carapace [Alliance]
+					h(i(47651)),	-- Pattern: Knightbane Carapace [Horde]
+					a(i(47632)),	-- Pattern: Lunar Eclipse Robes [Alliance]
+					h(i(47652)),	-- Pattern: Lunar Eclipse Robes [Horde]
+					a(i(47655)),	-- Pattern: Merlin's Robe [Alliance]
+					h(i(47638)),	-- Pattern: Merlin's Robe [Horde]
+					a(i(47633)),	-- Pattern: Moonshadow Armguards [Alliance]
+					h(i(47653)),	-- Pattern: Moonshadow Armguards [Horde]
+					a(i(47656)),	-- Pattern: Royal Moonshroud Bracers [Alliance]
+					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
+					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]
+					h(i(47636)),	-- Pattern: Royal Moonshroud Robe [Horde]
+					i(47622),		-- Plans: Breastplate of the White Knight [Alliance]
+					i(47640),		-- Plans: Breastplate of the White Knight [Horde]
+					i(47623),		-- Plans: Saronite Swordbreakers [Alliance]
+					i(47641),		-- Plans: Saronite Swordbreakers [Horde]
+					i(47627),		-- Plans: Sunforged Bracers [Alliance]
+					i(47642),		-- Plans: Sunforged Bracers [Horde]
+					i(47626),		-- Plans: Sunforged Breastplate [Alliance]
+					i(47643),		-- Plans: Sunforged Breastplate [Horde]
+					i(47624),		-- Plans: Titanium Razorplate [Alliance]
+					i(47644),		-- Plans: Titanium Razorplate [Horde]
+					i(47625),		-- Plans: Titanium Spikeguards [Alliance]
+					i(47645),		-- Plans: Titanium Spikeguards [Horde]
+				},
+			}),
 			d(3, {	-- 10-Player
 				e(1618, {	-- Northrend Beasts
 					["crs"] = {
@@ -20,14 +99,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34799,	-- Dreadscale
 					},
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
+						{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						ach(3936),	-- Not One, But Two Jormungars (10 player)
-						ach(3797),	-- Upper Back Pain (10 player)
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3936),		-- Not One, But Two Jormungars (10 player)
+						ach(3797),		-- Upper Back Pain (10 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						a(i(47612)), 	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
 						a(i(47607)),	-- Collar of Ceaseless Torment
@@ -57,11 +136,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
+						{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
 						},
-						ach(3996),	-- Three Sixty Pain Spike (10 player)
+						ach(3996),		-- Three Sixty Pain Spike (10 player)
 						a(i(47676)),	-- Dirk of the Night Watch
 						h(i(47871)),	-- Orcish Deathblade
 						h(i(47619)),	-- Amulet of Binding Elements
@@ -109,9 +188,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34465,	-- Velanaa
 					},	
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Defeat the Faction Champions
+						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47874),	-- Sunreaver Disciple's Blade
@@ -145,9 +224,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34441,	-- Vivienne Blackwhisper
 					},
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Defeat the Faction Champions
+						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47724),	-- Blade of the Silver Disciple
@@ -168,11 +247,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34497,	-- Fjola Lightbane
 					},
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
+						{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						ach(3799),	-- Salt and Pepper (10 player)
+						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(47884)),	-- Edge of Agony
 						a(i(47743)),	-- Enlightenment
 						h(i(47892)),	-- Illumination
@@ -204,11 +283,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["g"] = {
-						{			-- Call of the Crusade (10 player): Complete the Trial of the Crusader
+						{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
 						},
-						ach(3800),	-- The Traitor King (10 player)
+						ach(3800),		-- The Traitor King (10 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						h(i(47911)),	-- Anguish
 						a(i(47815)),	-- Cold Convergence
@@ -290,43 +369,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34564,	-- Anub'arak
 					},
 					["g"] = {
-						i(47556),	-- Crusader Orb
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
-						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
-						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
-						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
-						i(47627),	-- Plans: Sunforged Bracers [Alliance]
-						i(47642),	-- Plans: Sunforged Bracers [Horde]
-						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
-						i(47643),	-- Plans: Sunforged Breastplate [Horde]
-						i(47624),	-- Plans: Titanium Razorplate [Alliance]
-						i(47644),	-- Plans: Titanium Razorplate [Horde]
-						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
-						i(47645),	-- Plans: Titanium Spikeguards [Horde]
+						i(47556),		-- Crusader Orb
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
@@ -337,14 +380,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34799,	-- Dreadscale
 					},
 					["g"] = {
-						{			-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
+						{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						ach(3936),	-- Not One, But Two Jormungars (10 player)
-						ach(3797),	-- Upper Back Pain (10 player)
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3936),		-- Not One, But Two Jormungars (10 player)
+						ach(3797),		-- Upper Back Pain (10 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						a(i(47922)),	-- Rod of Imprisoned Souls
 						h(i(47995)),	-- Scepter of Imprisoned Souls
 						a(i(47915)),	-- Collar of Ceaseless Torment
@@ -374,11 +417,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				e(1619, {	-- Lord Jaraxxus
 					["crs"] = { 34780 },	-- Lord Jaraxxus
 					["g"] = {
-						{			-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
+						{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
 						},
-						ach(3996),	-- Three Sixty Pain Spike (10 player)
+						ach(3996),		-- Three Sixty Pain Spike (10 player)
 						a(i(47938)),	-- Dirk of the Night Watch
 						h(i(48010)),	-- Orcish Deathblade
 						a(i(47930)),	-- Amulet of Binding Elements
@@ -426,9 +469,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34465,	-- Velanaa
 					},	
 					["g"] = {
-						{			-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
+						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(48013),	-- Sunreaver Disciple's Blade
@@ -462,9 +505,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34441,	-- Vivienne Blackwhisper
 					},
 					["g"] = {
-						{			-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
+						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47941),	-- Blade of the Silver Disciple
@@ -487,9 +530,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						ach(3799),	-- Salt and Pepper (10 player)
+						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(48023)),	-- Edge of Agony
 						a(i(47960)),	-- Enlightenment
 						h(i(48036)),	-- Illumination
@@ -521,11 +564,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				e(1623, {	-- Anub'arak
 					["crs"] = { 34564 },	-- Anub'arak
 					["g"] = {
-						{			-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
+						{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
 						},
-						ach(3800),	-- The Traitor King (10 player)
+						ach(3800),		-- The Traitor King (10 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						h(i(48056)),	-- Anguish
 						a(i(47968)),	-- Cold Convergence
@@ -607,44 +650,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34564,	-- Anub'arak
 					},
 					["g"] = {
-						i(47556),	-- Crusader Orb
-						i(47242),	-- Trophy of the Crusade
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
-						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
-						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
-						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
-						i(47627),	-- Plans: Sunforged Bracers [Alliance]
-						i(47642),	-- Plans: Sunforged Bracers [Horde]
-						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
-						i(47643),	-- Plans: Sunforged Breastplate [Horde]
-						i(47624),	-- Plans: Titanium Razorplate [Alliance]
-						i(47644),	-- Plans: Titanium Razorplate [Horde]
-						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
-						i(47645),	-- Plans: Titanium Spikeguards [Horde]
+						i(47556),		-- Crusader Orb
+						i(47242),		-- Trophy of the Crusade
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
@@ -655,14 +662,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34799,	-- Dreadscale
 					},
 					["g"] = {
-						{			-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
+						{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						ach(3937),	-- Not One, But Two Jormungars (25 player)
-						ach(3813),	-- Upper Back Pain (25 player)
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3937),		-- Not One, But Two Jormungars (25 player)
+						ach(3813),		-- Upper Back Pain (25 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						h(i(47261)),	-- Barb of Tarasque
 						a(i(46979)),	-- Blade of Tarasque
 						a(i(46958)),	-- Steel Bladebreaker
@@ -700,9 +707,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
 						},
-						ach(3997),	-- Three Sixty Pain Spike (25 player)
+						ach(3997),		-- Three Sixty Pain Spike (25 player)
 						h(i(47266)),	-- Blood Fury
 						a(i(46996)),	-- Lionhead Slasher
 						h(i(47267)),	-- Death's Head Crossbow
@@ -756,7 +763,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
@@ -796,7 +803,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity
@@ -823,9 +830,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						ach(3815),	-- Salt and Pepper (25 player)
+						ach(3815),		-- Salt and Pepper (25 player)
 						a(i(47114)),	-- Lupine Longstaff
 						h(i(47302)),	-- Twin's Pact
 						h(i(47300)),	-- Gouge of the Frigid Heart
@@ -863,9 +870,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
 						},
-						ach(3816),	-- The Traitor King (25 player)
+						ach(3816),		-- The Traitor King (25 player)
 						i(142085),		-- Nerubian Relic (PET!)
 						a(i(47233)),	-- Archon Glaive
 						h(i(47329)),	-- Hellion Glaive
@@ -951,44 +958,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34564,	-- Anub'arak
 					},
 					["g"] = {
-						i(47556),	-- Crusader Orb
-						i(47242),	-- Trophy of the Crusade
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [Alliance]
-						i(47640),	-- Plans: Breastplate of the White Knight [Horde]
-						i(47623),	-- Plans: Saronite Swordbreakers [Alliance]
-						i(47641),	-- Plans: Saronite Swordbreakers [Horde]
-						i(47627),	-- Plans: Sunforged Bracers [Alliance]
-						i(47642),	-- Plans: Sunforged Bracers [Horde]
-						i(47626),	-- Plans: Sunforged Breastplate [Alliance]
-						i(47643),	-- Plans: Sunforged Breastplate [Horde]
-						i(47624),	-- Plans: Titanium Razorplate [Alliance]
-						i(47644),	-- Plans: Titanium Razorplate [Horde]
-						i(47625),	-- Plans: Titanium Spikeguards [Alliance]
-						i(47645),	-- Plans: Titanium Spikeguards [Horde]
+						i(47556),		-- Crusader Orb
+						i(47242),		-- Trophy of the Crusade
 					},
 				}),
 				e(1618, {	-- Northrend Beasts
@@ -1001,12 +972,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						ach(3937),	-- Not One, But Two Jormungars (25 player)
-						ach(3813),	-- Upper Back Pain (25 player)
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3937),		-- Not One, But Two Jormungars (25 player)
+						ach(3813),		-- Upper Back Pain (25 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						h(i(47422)),	-- Barb of Tarasque
 						a(i(46980)),	-- Blade of Tarasque
 						a(i(46969)),	-- Steel Bladebreaker
@@ -1044,9 +1015,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
 						},
-						ach(3997),	-- Three Sixty Pain Spike (25 player)
+						ach(3997),		-- Three Sixty Pain Spike (25 player)
 						h(i(47427)),	-- Blood Fury
 						a(i(47001)),	-- Lionhead Slasher
 						h(i(47428)),	-- Death's Head Crossbow
@@ -1100,7 +1071,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47446),	-- Dual-Blade Butcher
 						i(47448),	-- Bastion of Resolve
@@ -1140,7 +1111,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47078),	-- Justicebringer
 						i(47085),	-- Bastion of Purity
@@ -1167,9 +1138,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						ach(3815),	-- Salt and Pepper (25 player)
+						ach(3815),		-- Salt and Pepper (25 player)
 						h(i(47463)),	-- Twin's Pact
 						a(i(47130)),	-- Lupine Longstaff
 						h(i(47461)),	-- Gouge of the Frigid Heart
@@ -1207,10 +1178,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
 						},
-						ach(3816),	-- The Traitor King (25 player)
-						i(142085),	-- Nerubian Relic (PET!)
+						ach(3816),		-- The Traitor King (25 player)
+						i(142085),		-- Nerubian Relic (PET!)
 						a(i(47239)),	-- Archon Glaive
 						h(i(47491)),	-- Hellion Glaive
 						h(i(47475)),	-- Hellscream Slicer

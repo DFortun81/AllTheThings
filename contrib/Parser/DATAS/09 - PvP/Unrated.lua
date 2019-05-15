@@ -304,8 +304,8 @@ _.PVP =
 		{	-- 2v2/3v3/RBG
 			["itemID"] = 165718,	-- Steel Strong Box -- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
 		},
-		i(164261),	-- Steel Strongbox [A] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
-		i(164262),	-- Steel Strongbox [H] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
+		i(164261),	-- Steel Strongbox [Alliance] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
+		i(164262),	-- Steel Strongbox [Horde] -- This item can drop any dread aspirant gear, but we dont list it cuz bloat. Rewarded from BG
 		n(-3158, {	-- Player vs. Player (Battle for Azeroth Season 1)
 			["g"] = bubbleDown({["modID"] = 8}, {
 				{	-- Dread Aspirant's Badge

@@ -116,8 +116,8 @@ _.Achievements =
 							{
 								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
 								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
-								["titleID"] = 211,	-- Conqueror of Orgrimmar [A]
-								["titleID"] = 212,	-- Liberator of Orgrimmar [H]
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
+								["titleID"] = 212,	-- Liberator of Orgrimmar [Horde]
 							},
 						},
 					},

@@ -83,11 +83,11 @@ profession(164, {	-- Blacksmithing
 						{	-- Belt of the Titans
 							["recipeID"] = 63187--[[Belt of the Titans]]
 						},
-						{	-- Breastplate of the White Knight [A]
+						{	-- Breastplate of the White Knight [Alliance]
 							["recipeID"] = 67091--[[Breastplate of the White Knight]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Breastplate of the White Knight [H]
+						{	-- Breastplate of the White Knight [Horde]
 							["recipeID"] = 67130--[[Breastplate of the White Knight]],
 							["races"] = HORDE_ONLY,
 						},
@@ -127,11 +127,11 @@ profession(164, {	-- Blacksmithing
 						{	-- Righteous Gauntlets
 							["recipeID"] = 55300--[[Righteous Gauntlets]]
 						},
-						{	-- Saronite Swordbreakers [A]
+						{	-- Saronite Swordbreakers [Alliance]
 							["recipeID"] = 67092--[[Saronite Swordbreakers]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Saronite Swordbreakers [H]
+						{	-- Saronite Swordbreakers [Horde]
 							["recipeID"] = 67131--[[Saronite Swordbreakers]],
 							["races"] = HORDE_ONLY,
 						},
@@ -156,19 +156,19 @@ profession(164, {	-- Blacksmithing
 						{	-- Spiked Titansteel Treads
 							["recipeID"] = 55375--[[Spiked Titansteel Treads]]
 						},
-						{	-- Sunforged Bracers [A]
+						{	-- Sunforged Bracers [Alliance]
 							["recipeID"] = 67096--[[Sunforged Bracers]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Sunforged Bracers [H]
+						{	-- Sunforged Bracers [Horde]
 							["recipeID"] = 67135--[[Sunforged Bracers]],
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Sunforged Breastplate [A]
+						{	-- Sunforged Breastplate [Alliance]
 							["recipeID"] = 67095--[[Sunforged Breastplate]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Sunforged Breastplate [H]
+						{	-- Sunforged Breastplate [Horde]
 							["recipeID"] = 67134--[[Sunforged Breastplate]],
 							["races"] = HORDE_ONLY,
 						},
@@ -178,19 +178,19 @@ profession(164, {	-- Blacksmithing
 						{	-- Tempered Titansteel Treads
 							["recipeID"] = 55376--[[Tempered Titansteel Treads]]
 						},
-						{	-- Titanium Razorplate [A]
+						{	-- Titanium Razorplate [Alliance]
 							["recipeID"] = 67093--[[Titanium Razorplate]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Titanium Razorplate [H]
+						{	-- Titanium Razorplate [Horde]
 							["recipeID"] = 67132--[[Titanium Razorplate]],
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Titanium Spikeguards [A]
+						{	-- Titanium Spikeguards [Alliance]
 							["recipeID"] = 67094--[[Titanium Spikeguards]],
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Titanium Spikeguards [H]
+						{	-- Titanium Spikeguards [Horde]
 							["recipeID"] = 67133--[[Titanium Spikeguards]],
 							["races"] = HORDE_ONLY,
 						},

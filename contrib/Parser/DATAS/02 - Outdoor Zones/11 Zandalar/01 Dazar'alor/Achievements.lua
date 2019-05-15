@@ -32,7 +32,7 @@ _.Zones =
 							["achievementID"] = 12944,	-- Adventurer of Zuldazar
 							["collectible"] = false,	-- Can't be completed solely in this zone
 						},
-						{	-- Bow To Your Masters [H]
+						{	-- Bow To Your Masters [Horde]
 							["achievementID"] = 13020,	-- Bow to Your Masters
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 							["races"] = HORDE_ONLY,
@@ -51,7 +51,7 @@ _.Zones =
 							}
 						},
 						--[[
-						ach(13020, {	-- Bow to Your Masters [H]
+						ach(13020, {	-- Bow to Your Masters [Horde]
 							["groups"] = {
 								crit(6, {	-- Jani respected
 									--["description"] = "Click on the trash pile to have Jani spawn then /bow. Curse of Jani questline must have completed.",
@@ -65,7 +65,7 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						-]]
-						ach(12740, {	-- Full of Scrap! [500 Items] [H]
+						ach(12740, {	-- Full of Scrap! [500 Items] [Horde]
 							["groups"] = {
 								ach(13056),	-- Giving a Scrap [1 Item - Horde]
 								ach(12738),	-- Holy Scrap! [100 Items]
@@ -73,7 +73,7 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						ach(12614, {	-- Loa Expections [H]
+						ach(12614, {	-- Loa Expections [Horde]
 							["groups"] = {
 								crit(3),	-- Boon of Akunda
 								crit(4),	-- Boon of Bwonsanmdi
@@ -89,7 +89,7 @@ _.Zones =
 								{ 43.31, 34.11, 1165 },	-- Shrines
 							},
 						}),
-						ach(13039, {	-- Paku'ai [H]
+						ach(13039, {	-- Paku'ai [Horde]
 							["races"] = HORDE_ONLY,
 							["description"] = "Travel to following coordinates and click the totem for the easiest method to get the achievement.  All of these coordinates are listed in Dazar'alor except for 65.31, 33.97 which is located in Zuldazar.\n\n01. 45.11, 5.28 - Zuldazar\n02. 46.59, 19.99 - Zuldazar\n03. 49.56, 32.82 - Zuldazar\n04. 51.37, 40.96 - Zuldazar\n05. 58.31, 32.62 - Zuldazar\n06. 53.23, 18.94 - Zuldazar\n07. 42.84, 22.97 - Zuldazar\n08. 40.78, 11.08 - Zuldazar\n09. 41.36, 37.85 - Zuldazar\n10. 46.87, 85.53 - Zuldazar\n11. 44.68, 5.9 - Zuldazar\n12. 52.87, 12.41 - Zuldazar\n13. 52.94, 11.31 - Zuldazar\n14. 59.10, 10.64 - Zuldazar\n15. 41.36, 39.00 - Zuldazar\n16. 65.31, 33.97 - Dazar'alor\n17. 40.64, 84.30 - Zuldazar",
 							["coords"] = {
@@ -112,7 +112,7 @@ _.Zones =
 								{ 40.64, 84.30, 1165 },
 							},
 						}),
-						h(ach(13038)),	-- Raptari Rider [H]
+						h(ach(13038)),	-- Raptari Rider [Horde]
 						ach(12851, {	-- Treasures of Zuldazar
 							["groups"] = {
 								o(276735, {	-- Offerings of the Chosen

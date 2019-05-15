@@ -10,7 +10,7 @@ _.Zones =
 			["groups"] = {
 				n(-2, {  -- Vendors
 					["groups"] = {
-						{	-- "Black Eye" Zenru [H]
+						{	-- "Black Eye" Zenru [Horde]
 							["npcID"] = 132153,		-- "Black Eye" Zenru
 							["coords"] = {
 								{ 53.77, 85.97, 1165 }
@@ -111,7 +111,7 @@ _.Zones =
 											["questID"] = 54859,
 											["description"] = "Cost: 25 Seafarer's Dubloons",
 										},
-										{	-- Golden Beetle [H]
+										{	-- Golden Beetle [Horde]
 											["itemID"] = 163619,	-- Golden Beetle
 											--["questID"] = 53114,	-- Golden Beetle
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -119,7 +119,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = HORDE_ONLY,
 										},
-										{	-- Island Flotsam [H]
+										{	-- Island Flotsam [Horde]
 											["itemID"] = 163620,	-- Island Flotsam
 											--["questID"] = 53115,	-- Island Flotsam
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -127,7 +127,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = HORDE_ONLY,
 										},
-										{	-- Shimmering Shell [H]
+										{	-- Shimmering Shell [Horde]
 											["itemID"] = 163618,	-- Shimmering Shell
 											--["questID"] = 53113,	-- Shimminering Shell
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -177,7 +177,7 @@ _.Zones =
 								i(168022),	-- Recipe: Khaz'gorian Smithing Hammer
 							},
 						}),
-						{	-- Granda Watae [H]
+						{	-- Granda Watae [Horde]
 							["npcID"] = 132130,		-- Granda Watae
 							["coords"] = {
 								{ 42.16, 35.78, 1165 }
@@ -195,7 +195,7 @@ _.Zones =
 								},
 							},
 						},
-						n(132114, {	-- Griftah <Amazing Amulets> [H]
+						n(132114, {	-- Griftah <Amazing Amulets> [Horde]
 							["groups"] = {
 								i(156659, {	-- Counterfeit Rastakhan Mask
 									["groups"] = {
@@ -423,7 +423,7 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Rakle the Wretched [H]
+						{	-- Rakle the Wretched [Horde]
 							["npcID"] = 126330,		-- Rakle the Wretched
 							["coords"] = {
 								{ 34.77, 11.58, 1165 }
@@ -595,7 +595,7 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Trader Nog [H]
+						{	-- Trader Nog [Horde]
 							["npcID"] = 125311,		-- Trader Nog
 							["coords"] = {
 								{ 57.15, 91.47, 1165 }

@@ -31,8 +31,8 @@ _.Zones =
 							},
 						}),
 						n(134293, {	-- Azerite-Infused Slag
-							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [A]
-							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [H]
+							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [Alliance]
+							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [Horde]
 							["coord"] = { 32.98, 26.80, 863 },
 							["g"] = {
 								i(161100, {	-- Fused-Slag Girdle

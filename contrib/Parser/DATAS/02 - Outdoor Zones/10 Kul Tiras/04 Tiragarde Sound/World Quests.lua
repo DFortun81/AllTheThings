@@ -35,7 +35,7 @@ _.Zones =
 									["questID"] = 51613,	-- Bloodmaw
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
-								q(52755, {	-- Bringing the Heat [H]
+								q(52755, {	-- Bringing the Heat [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
@@ -70,7 +70,7 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["requireSkill"] = 182,	-- Herbalism
 								},
-								{	-- Gnomish Azerite Exraction [A]
+								{	-- Gnomish Azerite Exraction [Alliance]
 									["questID"] = 52120,	-- Gnomish Azerite Extraction
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -106,7 +106,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Picturesque Norwington Estate [A]
+								{	-- Picturesque Norwington Estate [Alliance]
 									["questID"] = 51090,	-- Picturesque Norwington Estate
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -114,7 +114,7 @@ _.Zones =
 								q(51656, {	-- Saurolisk Tamer Mugg
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								{	-- Show-Off [A]
+								{	-- Show-Off [Alliance]
 									["questID"] = 53331,	-- Show-Off
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -171,7 +171,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- The Lord's Hunt [A]
+								{	-- The Lord's Hunt [Alliance]
 									["questID"] = 51406,	-- The Lord's Hunt
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,

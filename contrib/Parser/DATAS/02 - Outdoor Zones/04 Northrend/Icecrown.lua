@@ -500,7 +500,7 @@ _.Zones =
 						i(44023),
 						i(44032),
 					}),
-					{	-- Basic Chemistry [H]
+					{	-- Basic Chemistry [Horde]
 						["questID"] = 13279,	-- Basic Chemistry
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["groups"] = {
@@ -515,7 +515,7 @@ _.Zones =
 							},
 						},
 					},
-					{	-- Basic Chemistry [A]
+					{	-- Basic Chemistry [Alliance]
 						["questID"] = 13295,	-- Basic Chemistry
 						["qg"] = 29799,	-- Thassarian
 						["groups"] = {
@@ -649,7 +649,7 @@ _.Zones =
 					}),
 					q(12891, {	-- I Have an Idea, But First...
 						["qg"] = 29804,	-- Baron Sliver
-						["sourceQuests"] = { 12887, 12892 },	-- It's All Fun and Games [A/H]
+						["sourceQuests"] = { 12887, 12892 },	-- It's All Fun and Games [Alliance] // [Horde]
 						["coord"] = { 44.1, 24.7 },
 					}),
 					qa(12896, {	-- If He Cannot Be Turned
@@ -853,7 +853,7 @@ _.Zones =
 					}),
 					q(12938, {	-- The Duke
 						["qg"] = 29343,	-- Baron Sliver
-						["sourceQuests"] = { 12898, 12899 },	-- The Shadow Vault [A/H]
+						["sourceQuests"] = { 12898, 12899 },	-- The Shadow Vault [Alliance] // [Horde]
 						["coord"] = { 44.1, 24.7 },
 					}),
 					q(13164,  {  -- The Fate of Bloodbane

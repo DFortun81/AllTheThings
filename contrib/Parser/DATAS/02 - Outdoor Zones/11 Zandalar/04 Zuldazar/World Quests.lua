@@ -88,7 +88,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Enforcing the Will of the King [H]
+								{	-- Enforcing the Will of the King [Horde]
 									["questID"] = 50548,	-- Enforcing the Will of the King
 									["coords"] = {
 										{ 65.61, 27.81 },

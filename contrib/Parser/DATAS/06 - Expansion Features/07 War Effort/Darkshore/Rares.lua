@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 				n(-16,	{ -- Rares
 					["g"] = {
 						{	-- Agathe Wyrmwood [A Only]
-							["questID"] = 54889,	-- Agathe Wyrmwood [A]
+							["questID"] = 54889,	-- Agathe Wyrmwood [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149652,				-- Agathe Wyrmwood
 							["qg"] = 149652,				-- Agathe Wyrmwood
@@ -33,8 +33,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Alashanir
-							["allianceQuestID"] = 54695,	-- Alashanir [A]
-							["hordeQuestID"] = 54696,		-- Alashanir [H]
+							["allianceQuestID"] = 54695,	-- Alashanir [Alliance]
+							["hordeQuestID"] = 54696,		-- Alashanir [Horde]
 							["npcID"] = 148787,				-- Alashanir
 							["qg"] = 148787,				-- Alashanir
 							["isWeekly"] = true,
@@ -48,8 +48,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Aman
-							["allianceQuestID"] = 54405,	-- Aman [A]
-							["hordeQuestID"] = 54406,		-- Aman [H]
+							["allianceQuestID"] = 54405,	-- Aman [Alliance]
+							["hordeQuestID"] = 54406,		-- Aman [Horde]
 							["npcID"] = 147966,				-- Aman
 							["qg"] = 147966,				-- Aman
 							["isWeekly"] = true,
@@ -58,8 +58,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Amberclaw
-							["allianceQuestID"] = 54285,	-- Amberclaw [A]
-							["hordeQuestID"] = 54286,		-- Amberclaw [H]
+							["allianceQuestID"] = 54285,	-- Amberclaw [Alliance]
+							["hordeQuestID"] = 54286,		-- Amberclaw [Horde]
 							["npcID"] = 147744,				-- Amberclaw
 							["qg"] = 147744,				-- Amberclaw
 							["isWeekly"] = true,
@@ -71,7 +71,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Athil Dewfire [H Only]
-							["hordeQuestID"] = 54431,		-- Athil Dewfire [H]
+							["hordeQuestID"] = 54431,		-- Athil Dewfire [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 148037,				-- Athil Dewfire
 							["qg"] = 148037,				-- Athil Dewfire
@@ -90,8 +90,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Athrikus Narassin
-							["allianceQuestID"] = 54278,	-- Athrikus Narassin [A]
-							["hordeQuestID"] = 54279,		-- Athrikus Narassin [H]
+							["allianceQuestID"] = 54278,	-- Athrikus Narassin [Alliance]
+							["hordeQuestID"] = 54279,		-- Athrikus Narassin [Horde]
 							["npcID"] = 147708,				-- Athrikus Narassin
 							["qg"] = 147708,				-- Athrikus Narassin
 							["isWeekly"] = true,
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Blackpaw [H Only]
-							["questID"] = 54890,		-- Blackpaw [H]
+							["questID"] = 54890,		-- Blackpaw [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149660,				-- Blackpaw
 							["qg"] = 149660,				-- Blackpaw
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Burninator Mark V [A Only]
-							["questID"] = 54451,	-- Burninator Mark V [A]
+							["questID"] = 54451,	-- Burninator Mark V [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149141,				-- Burninator Mark V
 							["qg"] = 149141,				-- Burninator Mark V
@@ -142,7 +142,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Commander Drald [A Only]
-							["questID"] = 54251,	-- Commander Drald [A]
+							["questID"] = 54251,	-- Commander Drald [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147845,				-- Commander Drald
 							["qg"] = 147845,				-- Commander Drald
@@ -159,8 +159,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Commander Ralesh
-							["allianceQuestID"] = 54426,	-- Commander Ralesh [A]
-							["hordeQuestID"] = 54427,		-- Commander Ralesh [H]
+							["allianceQuestID"] = 54426,	-- Commander Ralesh [Alliance]
+							["hordeQuestID"] = 54427,		-- Commander Ralesh [Horde]
 							["npcID"] = 148025,				-- Commander Ralesh
 							["qg"] = 148025,				-- Commander Ralesh
 							["isWeekly"] = true,
@@ -174,8 +174,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Conflagros
-							["allianceQuestID"] = 54232,	-- Conflagros [A]
-							["hordeQuestID"] = 54233,		-- Conflagros [H]
+							["allianceQuestID"] = 54232,	-- Conflagros [Alliance]
+							["hordeQuestID"] = 54233,		-- Conflagros [Horde]
 							["npcID"] = 147260,				-- Conflagros
 							["qg"] = 147260,				-- Conflagros
 							["isWeekly"] = true,
@@ -189,7 +189,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Croz Bloodrage [A Only]
-							["questID"] = 54891,	-- Croz Bloodrage [A]
+							["questID"] = 54891,	-- Croz Bloodrage [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149661,				-- Croz Bloodrage
 							["qg"] = 149661,				-- Croz Bloodrage
@@ -211,8 +211,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Cyclarus
-							["allianceQuestID"] = 54229,	-- Cyclarus [A]
-							["hordeQuestID"] = 54230,		-- Cyclarus [H]
+							["allianceQuestID"] = 54229,	-- Cyclarus [Alliance]
+							["hordeQuestID"] = 54230,		-- Cyclarus [Horde]
 							["npcID"] = 147241,				-- Cyclarus
 							["qg"] = 147241,				-- Cyclarus
 							["isWeekly"] = true,
@@ -247,8 +247,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Glimmerspine
-							["allianceQuestID"] = 54884,	-- Glimmerspine [A]
-							["hordeQuestID"] = 54885,		-- Glimmerspine [H]
+							["allianceQuestID"] = 54884,	-- Glimmerspine [Alliance]
+							["hordeQuestID"] = 54885,		-- Glimmerspine [Horde]
 							["npcID"] = 149654,				-- Glimmerspine
 							["qg"] = 149654,				-- Glimmerspine
 							["isWeekly"] = true,
@@ -257,8 +257,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Granokk
-							["allianceQuestID"] = 54234,	-- Granokk [A]
-							["hordeQuestID"] = 54235,		-- Granokk [H]
+							["allianceQuestID"] = 54234,	-- Granokk [Alliance]
+							["hordeQuestID"] = 54235,		-- Granokk [Horde]
 							["npcID"] = 147261,				-- Granokk
 							["qg"] = 147261,				-- Granokk
 							["isWeekly"] = true,
@@ -267,8 +267,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Gren Tornfur
-							["allianceQuestID"] = 54428,	-- Gren Tornfur [A]
-							["hordeQuestID"] = 54429,		-- Gren Tornfur [H]
+							["allianceQuestID"] = 54428,	-- Gren Tornfur [Alliance]
+							["hordeQuestID"] = 54429,		-- Gren Tornfur [Horde]
 							["npcID"] = 148031,				-- Gren Tornfur
 							["qg"] = 148031,				-- Gren Tornfur
 							["isWeekly"] = true,
@@ -282,7 +282,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Grimhorn [H Only]
-							["questID"] = 54891,		-- Grimhorn [H]
+							["questID"] = 54891,		-- Grimhorn [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149662,				-- Grimhorn
 							["qg"] = 149662,				-- Grimhorn
@@ -303,8 +303,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Hydrath
-							["allianceQuestID"] = 54227,	-- Hydrath [A]
-							["hordeQuestID"] = 54228,		-- Hydrath [H]
+							["allianceQuestID"] = 54227,	-- Hydrath [Alliance]
+							["hordeQuestID"] = 54228,		-- Hydrath [Horde]
 							["npcID"] = 147240,				-- Hydrath
 							["qg"] = 147240,				-- Hydrath
 							["isWeekly"] = true,
@@ -318,8 +318,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Madfeather
-							["allianceQuestID"] = 54887,	-- Madfeather [A]
-							["hordeQuestID"] = 54888,		-- Madfeather [H]
+							["allianceQuestID"] = 54887,	-- Madfeather [Alliance]
+							["hordeQuestID"] = 54888,		-- Madfeather [Horde]
 							["npcID"] = 149657,				-- Madfeather
 							["qg"] = 149657,				-- Madfeather
 							["isWeekly"] = true,
@@ -328,7 +328,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Moxo The Beheader [A Only]
-							["questID"] = 54430,	-- Moxo The Beheader [A]
+							["questID"] = 54430,	-- Moxo The Beheader [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147701,				-- Moxo The Beheader
 							["qg"] = 147701,				-- Moxo The Beheader
@@ -348,8 +348,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Mrggrmarr
-							["allianceQuestID"] = 54408,	-- Mrggrmarr [A]
-							["hordeQuestID"] = 54409,		-- Mrggrmarr [H]
+							["allianceQuestID"] = 54408,	-- Mrggrmarr [Alliance]
+							["hordeQuestID"] = 54409,		-- Mrggrmarr [Horde]
 							["npcID"] = 147970,				-- Mrggrmarr
 							["qg"] = 147970,				-- Mrggrmarr
 							["isWeekly"] = true,
@@ -358,7 +358,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Onu [H Only]
-							["questID"] = 54291,		-- Onu [H]
+							["questID"] = 54291,		-- Onu [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147758,				-- Onu
 							["qg"] = 147758,				-- Onu
@@ -374,7 +374,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Orwell Stevenson [A Only]
-							["questID"] = 54890,	-- Orwell Stevenson [A]
+							["questID"] = 54890,	-- Orwell Stevenson [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 149659,				-- Orwell Stevenson
 							["qg"] = 149659,				-- Orwell Stevenson
@@ -396,7 +396,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Sapper Odette [H Only]
-							["questID"] = 54452,		-- Sapper Odette [H]
+							["questID"] = 54452,		-- Sapper Odette [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 148103,				-- Sapper Odette
 							["qg"] = 148103,				-- Sapper Odette
@@ -412,8 +412,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Scalefiend
-							["allianceQuestID"] = 54893,	-- Scalefiend [A]
-							["hordeQuestID"] = 54894,		-- Scalefiend [H]
+							["allianceQuestID"] = 54893,	-- Scalefiend [Alliance]
+							["hordeQuestID"] = 54894,		-- Scalefiend [Horde]
 							["npcID"] = 149665,				-- Scalefiend
 							["qg"] = 149665,				-- Scalefiend
 							["isWeekly"] = true,
@@ -422,7 +422,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shadowclaw [H Only]
-							["questID"] = 54892,		-- Shadowclaw [H]
+							["questID"] = 54892,		-- Shadowclaw [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 149663,				-- Shadowclaw
 							["qg"] = 149663,				-- Shadowclaw
@@ -443,8 +443,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Shattershard
-							["allianceQuestID"] = 54289,	-- Shattershard [A] 54884
-							["hordeQuestID"] = 54290,		-- Shattershard [H]
+							["allianceQuestID"] = 54289,	-- Shattershard [Alliance] 54884
+							["hordeQuestID"] = 54290,		-- Shattershard [Horde]
 							["npcID"] = 147751,				-- Shattershard
 							["qg"] = 147751,				-- Shattershard
 							["isWeekly"] = true,
@@ -453,8 +453,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Soggoth The Slitherer
-							["allianceQuestID"] = 54320,	-- Soggoth The Slitherer [A]
-							["hordeQuestID"] = 54321,		-- Soggoth The Slitherer [H]
+							["allianceQuestID"] = 54320,	-- Soggoth The Slitherer [Alliance]
+							["hordeQuestID"] = 54321,		-- Soggoth The Slitherer [Horde]
 							["npcID"] = 147897,				-- Soggoth The Slitherer
 							["qg"] = 147897,				-- Soggoth The Slitherer
 							["isWeekly"] = true,
@@ -468,8 +468,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Stonebinder Ssravess
-							["allianceQuestID"] = 54247,	-- Stonebinder Ssravess [A]
-							["hordeQuestID"] = 54248,		-- Stonebinder Ssravess [H]
+							["allianceQuestID"] = 54247,	-- Stonebinder Ssravess [Alliance]
+							["hordeQuestID"] = 54248,		-- Stonebinder Ssravess [Horde]
 							["npcID"] = 147332,				-- Stonebinder Ssravess
 							["qg"] = 147332,				-- Stonebinder Ssravess
 							["isWeekly"] = true,
@@ -478,7 +478,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Thelar Moonstrike [H Only]
-							["questID"] = 54252,		-- Thelar Moonstrike [H]
+							["questID"] = 54252,		-- Thelar Moonstrike [Horde]
 							["races"] = HORDE_ONLY,
 							["npcID"] = 147435,				-- Thelar Moonstrike
 							["qg"] = 147435,				-- Thelar Moonstrike
@@ -494,8 +494,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Twilight Prophet Graeme
-							["allianceQuestID"] = 54397,	-- Twilight Prophet Graeme [A]
-							["hordeQuestID"] = 54398,		-- Twilight Prophet Graeme [H]
+							["allianceQuestID"] = 54397,	-- Twilight Prophet Graeme [Alliance]
+							["hordeQuestID"] = 54398,		-- Twilight Prophet Graeme [Horde]
 							["npcID"] = 147942,				-- Twilight Prophet Graeme
 							["qg"] = 147942,				-- Twilight Prophet Graeme
 							["isWeekly"] = true,
@@ -509,7 +509,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Zimkaga [A Only]
-							["questID"] = 54290,	-- Zimkaga [A]
+							["questID"] = 54290,	-- Zimkaga [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 147664,				-- Zimkaga
 							["qg"] = 147664,				-- Zimkaga

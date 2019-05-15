@@ -15,13 +15,13 @@ _.Zones =
 					{	-- Flight Paths
 						["npcID"] = -228,	-- Flight Paths
 						["g"] = {
-							{	-- Huojin Landing, Timeless Isle [H]
+							{	-- Huojin Landing, Timeless Isle [Horde]
 								["flightPathID"] = 1294,	-- Huojin Landing, Timeless Isle
 								["coords"] = {
 									{ 21.8, 39.8 },
 								},
 							},
-							{	-- Tushui Landing, Timeless Isle [A]
+							{	-- Tushui Landing, Timeless Isle [Alliance]
 								["flightPathID"] = 1293,	-- Tushui Landing, Timeless Isle
 								["coords"] = {
 									{ 23.2, 71.0 },

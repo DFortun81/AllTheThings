@@ -22,23 +22,23 @@ _.Craftables =
 				}),
 			}),
 			filter(1, {	-- Off-hand
-				{	-- Honorable Combatant's Etched Vessel [A]
-					["itemID"] = 161936,	-- Honorable Combatant's Etched Vessel [A]
+				{	-- Honorable Combatant's Etched Vessel [Alliance]
+					["itemID"] = 161936,	-- Honorable Combatant's Etched Vessel [Alliance]
 				},
-				{	-- Honorable Combatant's Etched Vessel [H]
-					["itemID"] = 159940,	-- Honorable Combatant's Etched Vessel [H]
+				{	-- Honorable Combatant's Etched Vessel [Horde]
+					["itemID"] = 159940,	-- Honorable Combatant's Etched Vessel [Horde]
 				},
-				{	-- Inscribed Vessel of Mysticism [A]
-					["itemID"] = 161934,	-- Inscribed Vessel of Mysticism [A]
+				{	-- Inscribed Vessel of Mysticism [Alliance]
+					["itemID"] = 161934,	-- Inscribed Vessel of Mysticism [Alliance]
 				},
-				{	-- Inscribed Vessel of Mysticism [H]
-					["itemID"] = 153643,	-- Inscribed Vessel of Mysticism [H]
+				{	-- Inscribed Vessel of Mysticism [Horde]
+					["itemID"] = 153643,	-- Inscribed Vessel of Mysticism [Horde]
 				},
-				{	-- Sinister Combatant's Etched Vessel [A]
-					["itemID"] = 164697,	-- Sinister Combatant's Etched Vessel [A]
+				{	-- Sinister Combatant's Etched Vessel [Alliance]
+					["itemID"] = 164697,	-- Sinister Combatant's Etched Vessel [Alliance]
 				},
-				{	-- Sinister Combatant's Etched Vessel [H]
-					["itemID"] = 164682,	-- Sinister Combatant's Etched Vessel [H]
+				{	-- Sinister Combatant's Etched Vessel [Horde]
+					["itemID"] = 164682,	-- Sinister Combatant's Etched Vessel [Horde]
 				},
 			}),
 			sp(256236, {	-- Tome of the Quiet Mind

@@ -4715,8 +4715,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{
 								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
 								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
-								["titleID"] = 211,	-- Conqueror of Orgrimmar [A]
-								["titleID"] = 212,	-- Liberator of Orgrimmar [H]
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
+								["titleID"] = 212,	-- Liberator of Orgrimmar [Horde]
 							},
 						},
 					},
@@ -5973,8 +5973,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{
 								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
 								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
-								["titleID"] = 211,	-- Conqueror of Orgrimmar [A]
-								["titleID"] = 212,	-- Liberator of Orgrimmar [H]
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
+								["titleID"] = 212,	-- Liberator of Orgrimmar [Horde]
 							},
 						},
 					},

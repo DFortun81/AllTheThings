@@ -7,7 +7,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			["groups"] = {
-				n(-17, {	-- Quests [A]
+				n(-17, {	-- Quests [Alliance]
 					["groups"] = {
 						qa(50970, {	-- A Farmer's Fate
 							["qg"] = 135976,	-- Morwin Gladeheart
@@ -1212,7 +1212,7 @@ _.Zones =
 						--]]
 					},
 				}),
-				n(-17, {	-- Quests [H]
+				n(-17, {	-- Quests [Horde]
 					["groups"] = {
 						n(-90004, {	-- Anyport
 							["groups"] = {

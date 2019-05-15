@@ -10,7 +10,7 @@ _.Zones =
 				["mapID"] = 862,	-- Zuldazar
 				["g"] = {
 					n(-228, {	-- Flight Paths
-						fp(2046, {	-- Atal'dazar, Zuldazar [H]
+						fp(2046, {	-- Atal'dazar, Zuldazar [Horde]
 							["description"] = "Atal'dazar, Zuldazar",
 							["coord"] = { 46.0, 35.8 },
 						}),
@@ -23,7 +23,7 @@ _.Zones =
 							["description"] = "Atal'Gral, Zuldazar",
 							["coord"] = { 80.0, 41.4 },
 						}),
-						fp(2147, {	-- Castaway Encampment, Zuldazar [A]
+						fp(2147, {	-- Castaway Encampment, Zuldazar [Alliance]
 							["description"] = "Castaway Encampment, Zuldazar",
 							["coord"] = { 77.6, 54.4 },
 						}),
@@ -32,15 +32,15 @@ _.Zones =
 							["coord"] = { 54.4, 87 },
 						}),
 	]]--
-						fp(2045, {	-- Garden of the Loa, Zuldazar [H]
+						fp(2045, {	-- Garden of the Loa, Zuldazar [Horde]
 							["description"] = "Garden of the Loa, Zuldazar",
 							["coord"] = { 49.6, 26.2 },
 						}),
-						fp(2164, {	-- Isle of Fangs, Zuldazar [H]
+						fp(2164, {	-- Isle of Fangs, Zuldazar [Horde]
 							["description"] = "Isle of Fangs, Zuldazar",
 							["coord"] = { 54.4, 87.0 },
 						}),
-						fp(2153, {	-- Mistvine Ledge, Zuldazar [A]
+						fp(2153, {	-- Mistvine Ledge, Zuldazar [Alliance]
 							["description"] = "Mistvine Ledge, Zuldazar \n\nRequires completion of Mission Report: Mistvine Ledge and related quest line to unlock.",
 							["coord"] = { 64.4, 47.2 },
 						}),
@@ -60,39 +60,39 @@ _.Zones =
 							["description"] = "Seeker's Outpost, Zuldazar",
 							["coord"] = { 70.4, 65.2 },
 						}),
-						fp(2027, {	-- Temple of the Prophet, Zuldazar [H]
+						fp(2027, {	-- Temple of the Prophet, Zuldazar [Horde]
 							["description"] = "Temple of the Prophet, Zuldazar",
 							["coord"] = { 49.8, 44.6 },
 						}),
-						fp(2165, {	-- Tusk Isle, Zuldazar [H]
+						fp(2165, {	-- Tusk Isle, Zuldazar [Horde]
 							["description"] = "Tusk Isle, Zuldazar",
 							["coord"] = { 59.4, 78.0 },
 						}),
-						fp(2157, {	-- Veiled Grotto, Zuldazar [A] (Confrimed by Vandiel)
+						fp(2157, {	-- Veiled Grotto, Zuldazar [Alliance] (Confrimed by Vandiel)
 							["description"] = "Veiled Grotto, Zuldazar \n\nRequires completion of Mission Report: Veiled Grotto and related quest line to unlock.",
 							["coord"] = { 44.4, 36.8 },
 						}),
-						fp(2145, {	-- Verdant Hollow, Zuldazar [A]
+						fp(2145, {	-- Verdant Hollow, Zuldazar [Alliance]
 							["description"] = "Verdant Hollow, Zuldazar \n\nRequires completion of Mission Report: Verdant Hollow and related quest line to unlock.",
 							["coord"] = { 55.6, 24.8 },
 						}),
-						fp(1966, {	-- Warbeast Kraal, Zuldazar [H]
+						fp(1966, {	-- Warbeast Kraal, Zuldazar [Horde]
 							["description"] = "Warbeast Kraal, Zuldazar",
 							["coord"] = { 67.2, 43.0 },
 						}),
-						fp(2009, {	-- Warport Rastari, Zuldazar [H]
+						fp(2009, {	-- Warport Rastari, Zuldazar [Horde]
 							["description"] = "Warport Rastari, Zuldazar",
 							["coord"] = { 48.2, 60.2 },
 						}),
-						fp(1974, {	-- Xibala, Zuldazar [H]
+						fp(1974, {	-- Xibala, Zuldazar [Horde]
 							["description"] = "Xibala, Zuldazar",
 							["coord"] = { 44.8, 72.2 },
 						}),
-						fp(2012, {	-- Xibala, Zuldazar [A]
+						fp(2012, {	-- Xibala, Zuldazar [Alliance]
 							["description"] = "Xibala, Zuldazar",
 							["coord"] = { 40.6, 71.4 },
 						}),
-						fp(1975, {	-- Zeb'ahari, Zuldazar [H]
+						fp(1975, {	-- Zeb'ahari, Zuldazar [Horde]
 							["description"] = "Zeb'ahari, Zuldazar",
 							["coord"] = { 77.2, 15.4 },
 						}),

@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(-17, {	-- Quests [Tier 2]
 					["groups"] = {
-						{	-- Back to Boralus [A]
+						{	-- Back to Boralus [Alliance]
 							["questID"] = 53198,	-- Back to Boralus
 							["qg"] = 143018,		-- Captain Roderick Brewston
 							["sourceQuests"] = {
@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						{	-- Back to Zuldazar [H]
+						{	-- Back to Zuldazar [Horde]
 							["questID"] = 53212,	-- Back to Zuldazar
 							["qg"] = 143019,		-- Wistel Sliversnitch
 							["sourceQuests"] = {
@@ -43,7 +43,7 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						{	-- Boulderfist Beatdown [A]
+						{	-- Boulderfist Beatdown [Alliance]
 							["questID"] = 53146, 	-- Boulderfist Beatdown
 							["repeatable"] = true,
 							["sourceQuests"] = {
@@ -63,7 +63,7 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qh(53148, {	-- Boulderfist Beatdown [H]
+						qh(53148, {	-- Boulderfist Beatdown [Horde]
 							["repeatable"] = true,
 							["groups"] = {
 								currency(1560),
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
-						{	-- Executing Exorcisms [A]
+						{	-- Executing Exorcisms [Alliance]
 							["questID"] = 53179, 	-- Executing Exorcisms
 							["repeatable"] = true,
 							["sourceQuests"] = {
@@ -163,13 +163,13 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qh(53179, {	-- Executing Exorcisms [H]
+						qh(53179, {	-- Executing Exorcisms [Horde]
 							["repeatable"] = true,
 							["groups"] = {
 								currency(1553),
 							},
 						}),
-						{	-- Sins of the Syndicate [A]
+						{	-- Sins of the Syndicate [Alliance]
 							["questID"] = 53162, 	-- Sins of the Syndicate
 							["repeatable"] = true,
 							["sourceQuests"] = {
@@ -189,20 +189,20 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qh(53173, {	-- Sins of the Syndicate [H]
+						qh(53173, {	-- Sins of the Syndicate [Horde]
 							["repeatable"] = true,
 							["groups"] = {
 								currency(1560),
 							},
 						}),
-						qh(53210, {	-- Touring the Front [H]
+						qh(53210, {	-- Touring the Front [Horde]
 							["sourceQuests"] = { 53208 },	-- To The Front
 							["qg"] = 143019,	-- Wistel Sliversnitch
 							["coord"] = {
 								26.11, 35.59
 							},
 						}),
-						{	-- Touring the Front [A]
+						{	-- Touring the Front [Alliance]
 							["questID"] = 53197,	-- Touring the Front
 							["qg"] = 143018,		-- Captain Roderick Brewston
 							["sourceQuests"] = {
@@ -212,7 +212,7 @@ _.ExpansionFeatures =
 								{ 19.26, 61.77 },
 							},
 						},
-						{	-- Twice-Exiled [A]
+						{	-- Twice-Exiled [Alliance]
 							["questID"] = 53192, 	-- Twice-Exiled
 							["repeatable"] = true,
 							["sourceQuests"] = {
@@ -232,14 +232,14 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qh(53192, {	-- Twice-Exiled [H]
+						qh(53192, {	-- Twice-Exiled [Horde]
 							["repeatable"] = true,
 							["groups"] = {
 								currency(1560),
 							},
 						}),
-						{	-- -- The League Will Lose [H]
-							["questID"] = 53154, 	-- The League Will Lose [H]
+						{	-- -- The League Will Lose [Horde]
+							["questID"] = 53154, 	-- The League Will Lose [Horde]
 							["repeatable"] = true,
 							["u"] = 2,
 							["races"] = HORDE_ONLY,
@@ -301,7 +301,7 @@ _.ExpansionFeatures =
 								}),
 							},
 						},
-						{	-- Wiping Out the Winterbark [A]
+						{	-- Wiping Out the Winterbark [Alliance]
 							["questID"] = 53149, 	-- Wiping Out the Winterbark
 							["repeatable"] = true,
 							["sourceQuests"] = {
@@ -321,7 +321,7 @@ _.ExpansionFeatures =
 								},
 							},
 						},
-						qh(53150, {	-- Wiping Out the Winterbark [H]
+						qh(53150, {	-- Wiping Out the Winterbark [Horde]
 							["repeatable"] = true,
 							["groups"] = {
 								currency(1560),

@@ -293,11 +293,11 @@ _.Zones =
 						["coord"] = { 40.1, 48.4, 577 },
 						["sourceQuest"] = 34445,	-- A Taste of Iron
 						["g"] = {
-							{	-- Welcome to Draenor [A]
+							{	-- Welcome to Draenor [Alliance]
 								["achievementID"] = 8921,	-- Welcome to Draenor
 								["races"] = ALLIANCE_ONLY,
 							},
-							{	-- Welcome to Draenor [H]
+							{	-- Welcome to Draenor [Horde]
 								["achievementID"] = 8922,	-- Welcome to Draenor
 								["races"] = HORDE_ONLY,
 							},

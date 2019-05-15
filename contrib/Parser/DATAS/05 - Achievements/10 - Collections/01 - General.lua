@@ -79,11 +79,11 @@ _.Achievements =
 							["itemID"] = 122718,	-- Clinking Present
 							["collectible"] = false,
 							["g"] = {
-								{	-- Chauffered Chopper [H]
-									["itemID"] = 120968,	-- Chauffered Chopper [H]
+								{	-- Chauffered Chopper [Horde]
+									["itemID"] = 120968,	-- Chauffered Chopper [Horde]
 								},
-								{	-- Chauffered Chopper [A]
-									["itemID"] = 122703,	-- Chauffered Chopper [A]
+								{	-- Chauffered Chopper [Alliance]
+									["itemID"] = 122703,	-- Chauffered Chopper [Alliance]
 								},
 							},
 						},

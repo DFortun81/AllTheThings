@@ -250,7 +250,7 @@ _.Zones =
 						},
 					},
 				},
-				n(-17, {	-- Quests [A]
+				n(-17, {	-- Quests [Alliance]
 					["groups"] = bubbleDown({["races"] = ALLIANCE_ONLY }, {
 						--[[
 						a(ach(12473, {	-- A Sound Plan
@@ -720,7 +720,7 @@ _.Zones =
 						--]]
 					}),
 				}),
-				n(-17, {	-- Quests [H]
+				n(-17, {	-- Quests [Horde]
 					["groups"] = {
 						{	-- A Bitter Reunion
 							["questID"] = 54960,

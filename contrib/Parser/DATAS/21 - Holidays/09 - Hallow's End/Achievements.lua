@@ -96,13 +96,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 								["achievementID"] = 288,	-- Out With It
 								["u"] = 26,					-- Hallow's End Filter
 							},
-							{	-- Rotten Hallow [A]
+							{	-- Rotten Hallow [Alliance]
 								["achievementID"] = 1040,	-- Rotten Hallow
 								["races"] = ALLIANCE_ONLY,
 								["u"] = 26,					-- Hallow's End Filter
 								--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
 							},
-							{	-- Rotten Hallow [H]
+							{	-- Rotten Hallow [Horde]
 								["achievementID"] = 1041,	-- Rotten Hallow
 								["races"] = HORDE_ONLY,
 								["u"] = 26,					-- Hallow's End Filter
@@ -489,7 +489,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							},
 						},
 					},
-					{	-- Tricks and Treats of Kalimdor [A]
+					{	-- Tricks and Treats of Kalimdor [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 963,		-- Tricks and Treats of Kalimdor
@@ -497,7 +497,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Kalimdor [H]
+					{	-- Tricks and Treats of Kalimdor [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 965,	-- Tricks and Treats of Kalimdor
@@ -505,7 +505,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Eastern Kingdoms [A]
+					{	-- Tricks and Treats of Eastern Kingdoms [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 966,		-- Tricks and Treats of Eastern Kingdoms
@@ -513,7 +513,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Eastern Kingdoms [H]
+					{	-- Tricks and Treats of Eastern Kingdoms [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 967,	-- Tricks and Treats of Eastern Kingdoms
@@ -521,7 +521,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Outlands [A]
+					{	-- Tricks and Treats of Outlands [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 969,		-- Tricks and Treats of Outlands
@@ -529,7 +529,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Outlands [H]
+					{	-- Tricks and Treats of Outlands [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 968,	-- Tricks and Treats of Outlands
@@ -537,7 +537,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Northrend [A]
+					{	-- Tricks and Treats of Northrend [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5836,	-- Tricks and Treats of Northrend
@@ -545,7 +545,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Northrend [H]
+					{	-- Tricks and Treats of Northrend [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5835,	-- Tricks and Treats of Northrend
@@ -553,7 +553,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Cataclysm [A]
+					{	-- Tricks and Treats of Cataclysm [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
@@ -561,7 +561,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Cataclysm [H]
+					{	-- Tricks and Treats of Cataclysm [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
@@ -569,7 +569,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Pandaria [A]
+					{	-- Tricks and Treats of Pandaria [Alliance]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
@@ -577,7 +577,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["g"] = {
 						},
 					},
-					{	-- Tricks and Treats of Pandaria [H]
+					{	-- Tricks and Treats of Pandaria [Horde]
 						-- Note!! This is blank here because we are going to put all this relevant information in a separate file
 						-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
 						["achievementID"] = 7602,	-- Tricks and Treats of Pandaria

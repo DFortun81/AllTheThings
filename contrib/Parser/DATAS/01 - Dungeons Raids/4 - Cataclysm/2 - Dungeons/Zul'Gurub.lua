@@ -246,8 +246,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						}),
 						q(29208,  {	-- An Old Friend
 							["sourceQuests"] = {
-								26775,	-- Be Raptor [A]
-								26362,	-- Be Raptor [H]
+								26775,	-- Be Raptor [Alliance]
+								26362,	-- Be Raptor [Horde]
 							},
 							["qg"] = 52877,	-- Lashtail Hatchling
 							["g"] = {

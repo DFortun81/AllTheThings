@@ -74,7 +74,7 @@ _.Holidays =
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = ALLIANCE_ONLY,
 											},
-											{	-- Diamondine Sigil of Kazum [A]
+											{	-- Diamondine Sigil of Kazum [Alliance]
 												["itemID"] = 143886,	-- Diamondine Sigil of Kazum
 												["u"] = 22,				-- Micro-Holiday Filter
 												["questID"] = 45761,	-- Diamondine Sigil of Kazum
@@ -164,7 +164,7 @@ _.Holidays =
 												["lvl"] = 40,			-- Level needed for quest
 												["races"] = HORDE_ONLY,
 											},
-											{	-- Diamondine Sigil of Kazum [H]
+											{	-- Diamondine Sigil of Kazum [Horde]
 												["itemID"] = 143878,	-- Diamondine Sigil of Kazum
 												["u"] = 22,				-- Micro-Holiday Filter
 												["questID"] = 45753,	-- Diamondine Sigil of Kazum

@@ -103,20 +103,20 @@ _.Zones =
 				n(-17, { 	-- Quests
 					a(ach(35, {		-- Might of Dragonblight
 						crit(1, {	--The Warden's Task
-							q(12166, {	--  The Liquid Fire of Elune [A]
+							q(12166, {	--  The Liquid Fire of Elune [Alliance]
 								["qg"] = 26973,	-- Warden Jodi Moonsong
 							}),
-							q(12167, {	--  Kill the Cultists [A]
+							q(12167, {	--  Kill the Cultists [Alliance]
 								["qg"] = 26973,	-- Warden Jodi Moonsong
 								["sourceQuests"] = {12166},
 							}),
 							i(36958, {	-- The Favor of Zangus
-								q(12168, {	--  The Favor of Zangus [A]
+								q(12168, {	--  The Favor of Zangus [Alliance]
 									["sourceQuests"] = {12167},
 									["qg"] = 26319,	-- Anub'ar Cultist
 								}),
 							}),
-							q(12169, {	-- The High Cultist [A]
+							q(12169, {	-- The High Cultist [Alliance]
 								["groups"] = {
 									i(37961),	-- Wastewind Leggings
 									i(38003),	-- Snowfall Reaver Leggings
@@ -128,11 +128,11 @@ _.Zones =
 							}),
 						}),
 						crit(2, {	--Redirecting the Ley Lines
-							q(12000, {	--  Rifle the Bodies [A]
+							q(12000, {	--  Rifle the Bodies [Alliance]
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {11995,12439,12440,39204},
 							}),
-							q(12004, {	-- Prevent the Accord [A]
+							q(12004, {	-- Prevent the Accord [Alliance]
 								["groups"] = {
 									i(37943),	-- Kirin Tor Initiate's Cowl
 									i(37987),	-- Violet Stalker Bracers
@@ -143,7 +143,7 @@ _.Zones =
 								["sourceQuests"] = {12000},
 							}),
 							i(36742, {	-- Goramosh's Strange Device
-								q(12055, {	--  A Strange Device [A]
+								q(12055, {	--  A Strange Device [Alliance]
 									["sourceQuests"] = {12004},
 									["qg"] = 26349,	-- Goramosh
 								}),
@@ -156,7 +156,7 @@ _.Zones =
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12060},
 							}),
-							q(12083, {	-- Atop the Woodlands [A]
+							q(12083, {	-- Atop the Woodlands [Alliance]
 								["groups"] = {
 									i(37942),	-- Kirin Tor Initiate's Sandals
 									i(37985),	-- Violet Stalker Shoulderpads
@@ -170,7 +170,7 @@ _.Zones =
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12083},
 							}),
-							q(12107, {	-- The End of the Line [A]
+							q(12107, {	-- The End of the Line [Alliance]
 								["groups"] = {
 									i(38151),	-- Daschal's Discarded Shiv
 									i(38152),	-- Mace of the Violet Guardian
@@ -183,15 +183,15 @@ _.Zones =
 							}),
 						}),
 						crit(3, {	--Informing the Queen
-							q(12119, {	--  Gaining an Audience [A]
+							q(12119, {	--  Gaining an Audience [Alliance]
 								["qg"] = 26673,	-- Image of Archmage Modera
 								["sourceQuests"] = {12107},
 							}),
-							q(12766, {	--  Speak with your Ambassador [A]
+							q(12766, {	--  Speak with your Ambassador [Alliance]
 								["qg"] = 26443,	-- Tariolstrasz
 								["sourceQuests"] = {12119},
 							}),
-							q(12460, {	--  Report to the Ruby Dragonshrine [A]
+							q(12460, {	--  Report to the Ruby Dragonshrine [Alliance]
 								["qg"] = 27803,	-- Lauriel Trueblade
 								["sourceQuests"] = {12766},
 							}),
@@ -203,7 +203,7 @@ _.Zones =
 								["qg"] = 27506,	-- Ceristrasz
 								["sourceQuests"] = {12416},
 							}),
-							q(12418, {	-- Through Fields of Flame [A]
+							q(12418, {	-- Through Fields of Flame [Alliance]
 								["groups"] = {
 									i(37962),	-- Treads of the Charred Canyon
 									i(38004),	-- Scourgeslayer Belt
@@ -315,27 +315,27 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	--Angrathar the Wrathgate
-							q(12157, {	--  The Lost Courier [A]
+							q(12157, {	--  The Lost Courier [Alliance]
 								["qg"] = 26186,	-- Private Casey
 								["isBreadcrumb"] = true,
 							}),
-							q(12171, {	--  Of Traitors and Treason [A]
+							q(12171, {	--  Of Traitors and Treason [Alliance]
 								["qg"] = 27060,	-- Courier Lanson
 								["sourceQuests"] = {12157},
 							}),
-							q(12174, {	--  High Commander Halford Wyrmbane [A]
+							q(12174, {	--  High Commander Halford Wyrmbane [Alliance]
 								["qg"] = 26881,	-- Palena Silvercloud
 								["sourceQuests"] = {12171},
 							}),
-							q(12235, {	--  Naxxramas and the Fall of Wintergarde [A]
+							q(12235, {	--  Naxxramas and the Fall of Wintergarde [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12174,12298},
 							}),
-							q(12237, {	--  Flight of the Wintergarde Defender [A]
+							q(12237, {	--  Flight of the Wintergarde Defender [Alliance]
 								["qg"] = 27317,	-- Gryphon Commander Urik
 								["sourceQuests"] = {12235},
 							}),
-							q(12251, {	-- Return to the High Commander [A]
+							q(12251, {	-- Return to the High Commander [Alliance]
 								["groups"] = {
 									i(37956),	-- Frontrunner's Blessed Handwraps
 									i(37998),	-- Snowfall Reaver Boots
@@ -345,31 +345,31 @@ _.Zones =
 								["qg"] = 27317,	-- Gryphon Commander Urik
 								["sourceQuests"] = {12237},
 							}),
-							q(12253, {	--  Rescue from Town Square [A]
+							q(12253, {	--  Rescue from Town Square [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12251},
 							}),
-							q(12309, {	--  Find Durkon! [A]
+							q(12309, {	--  Find Durkon! [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12253},
 							}),
 							o(189311, {	--	Flesh-bound Tome
 								["groups"] = {
-									q(12312, {	--  Secrets of the Scourge [A]
+									q(12312, {	--  Secrets of the Scourge [Alliance]
 										["sourceQuests"] = {12309},
 									}),
 								},
 								["model"] = "World\\Goober\\g_bookopenmedium07.mdx",
 							}),
-							q(12319, {	--  Mystery of the Tome [A]
+							q(12319, {	--  Mystery of the Tome [Alliance]
 								["qg"] = 27318,	-- Cavalier Durkon
 								["sourceQuests"] = {12312},
 							}),
-							q(12320, {	--  Understanding the Language of Death [A]
+							q(12320, {	--  Understanding the Language of Death [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12319},
 							}),
-							q(12321, {	-- A Righteous Sermon [A]
+							q(12321, {	-- A Righteous Sermon [Alliance]
 								["groups"] = {
 									i(37950),	-- Highseas Wristwraps
 									i(37993),	-- Glade Wanderer Boots
@@ -379,19 +379,19 @@ _.Zones =
 								["qg"] = 27316,	-- Inquisitor Hallard
 								["sourceQuests"] = {12320},
 							}),
-							q(12275, {	--  The Demo-gnome [A]
+							q(12275, {	--  The Demo-gnome [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12251},
 							}),
-							q(12272, {	--  The Bleeding Ore [A]
+							q(12272, {	--  The Bleeding Ore [Alliance]
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12275},
 							}),
-							q(12276, {	--  The Search for Slinkin [A]
+							q(12276, {	--  The Search for Slinkin [Alliance]
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12275},
 							}),
-							q(12277, {	-- Leave Nothing to Chance [A]
+							q(12277, {	-- Leave Nothing to Chance [Alliance]
 								["groups"] = {
 									i(38293),	-- Suntouched Flowers
 									i(38002),	-- Honorborn Cloak
@@ -401,15 +401,15 @@ _.Zones =
 								["qg"] = 27412,	-- Slinkin the Demo-gnome
 								["sourceQuests"] = {12276},
 							}),
-							q(12281, {	--  Understanding the Scourge War Machine [A]
+							q(12281, {	--  Understanding the Scourge War Machine [Alliance]
 								["qg"] = 27159,	-- Siege Engineer Quarterflash
 								["sourceQuests"] = {12277,12272},
 							}),
-							q(12325, {	--  Into Hostile Territory [A]
+							q(12325, {	--  Into Hostile Territory [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12321,12281},
 							}),
-							q(12326, {	-- Steamtank Surprise [A]
+							q(12326, {	-- Steamtank Surprise [Alliance]
 								["groups"] = {
 									i(37949),	-- Saboteur's Wrap
 									i(37992),	-- Ritual Neckguard
@@ -418,27 +418,27 @@ _.Zones =
 								["qg"] = 27157,	-- Duke August Foehammer
 								["sourceQuests"] = {12325},
 							}),
-							q(12455, {	--  Scattered To The Wind [A]
+							q(12455, {	--  Scattered To The Wind [Alliance]
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12326},
 							}),
-							q(12457, {	--  The Chain Gun And You [A]
+							q(12457, {	--  The Chain Gun And You [Alliance]
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12455},
 							}),
-							q(12463, {	--  Plunderbeard Must Be Found! [A]
+							q(12463, {	--  Plunderbeard Must Be Found! [Alliance]
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12457},
 							}),
-							q(12465, {	--  Plunderbeard's Journal [A]
+							q(12465, {	--  Plunderbeard's Journal [Alliance]
 								["qg"] = 27828,	-- Plunderbeard
 								["sourceQuests"] = {12463},
 							}),
-							q(12466, {	--  Chasing Icestorm: The 7th Legion Front [A]
+							q(12466, {	--  Chasing Icestorm: The 7th Legion Front [Alliance]
 								["qg"] = 1293,	-- Ambo Cash
 								["sourceQuests"] = {12465},
 							}),
-							q(12467, {	-- Chasing Icestorm: Thel'zan's Phylactery [A]
+							q(12467, {	-- Chasing Icestorm: Thel'zan's Phylactery [Alliance]
 								["groups"] = {
 									i(37958),	-- Wastewind Headcover
 									i(38000),	-- Snowfall Reaver Breastplate
@@ -448,15 +448,15 @@ _.Zones =
 								["qg"] = 27844,	-- Legion Commander Tyralion
 								["sourceQuests"] = {12466},
 							}),
-							q(12472, {	--  Finality [A]
+							q(12472, {	--  Finality [Alliance]
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12467},
 							}),
-							q(12473, {	--  An End And A Beginning [A]
+							q(12473, {	--  An End And A Beginning [Alliance]
 								["qg"] = 27857,	-- Legion Commander Yorik
 								["sourceQuests"] = {12472},
 							}),
-							q(12474, {	-- To Fordragon Hold! [A]
+							q(12474, {	-- To Fordragon Hold! [Alliance]
 								["groups"] = {
 									i(38541),	-- Implacable Zombie Crushers
 									i(38543),	-- Reinforced Traveler's Boots
@@ -466,7 +466,7 @@ _.Zones =
 								["qg"] = 27136,	-- High Commander Halford Wyrmbane
 								["sourceQuests"] = {12473},
 							}),
-							q(12495, {	--  Audience With The Dragon Queen [A]
+							q(12495, {	--  Audience With The Dragon Queen [Alliance]
 								["qg"] = 27872,	-- Highlord Bolvar Fordragon
 								["sourceQuests"] = {12474},
 							}),
@@ -484,13 +484,13 @@ _.Zones =
 								["qg"] = 26949,	-- Torastrasza
 								["sourceQuests"] = {12497},
 							}),
-							q(12499, {	--  Return To Angrathar [A]
+							q(12499, {	--  Return To Angrathar [Alliance]
 								["qg"] = 26917,	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = {12498},
 							}),
 						}),
 						crit(6, {	--Frostmourne
-							q(12282, {	-- Imprints on the Past [A]
+							q(12282, {	-- Imprints on the Past [Alliance]
 								["groups"] = {
 									i(37938),	-- Visionary's Robes
 									i(38025),	-- Guiding Gloves of the Seer
@@ -500,23 +500,23 @@ _.Zones =
 								["qg"] = 27314,	-- Zelig the Visionary
 								["sourceQuests"] = {12251},
 							}),
-							q(12287, {	--  Orik Trueheart and the Forgotten Shore [A]
+							q(12287, {	--  Orik Trueheart and the Forgotten Shore [Alliance]
 								["qg"] = 27314,	-- Zelig the Visionary
 								["sourceQuests"] = {12282},
 							}),
-							q(12290, {	--  The Murkweed Elixir [A]
+							q(12290, {	--  The Murkweed Elixir [Alliance]
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12287},
 							}),
-							q(12291, {	--  The Forgotten Tale [A]
+							q(12291, {	--  The Forgotten Tale [Alliance]
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12290},
 							}),
-							q(12301, {	--  The Truth Shall Set Us Free [A]
+							q(12301, {	--  The Truth Shall Set Us Free [Alliance]
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12291},
 							}),
-							q(12305, {	-- Parting Thoughts [A]
+							q(12305, {	-- Parting Thoughts [Alliance]
 								["groups"] = {
 									i(38181),	-- Warblade of the Forgotten Footman
 									i(37986),	-- Hood of the Forgotten Rifleman
@@ -527,11 +527,11 @@ _.Zones =
 								["qg"] = 27347,	-- Orik Trueheart
 								["sourceQuests"] = {12301},
 							}),
-							q(12475, {	--  What Secrets Men Hide [A]
+							q(12475, {	--  What Secrets Men Hide [Alliance]
 								["qg"] = 27314,	-- Zelig the Visionary
 								["sourceQuests"] = {12305},
 							}),
-							q(12478, {	-- Frostmourne Cavern [A]
+							q(12478, {	-- Frostmourne Cavern [Alliance]
 								["groups"] = {
 									i(38530),	-- Wrap of Vigorous Destruction
 									i(38532),	-- Belt of Vengeful Purification
@@ -768,13 +768,13 @@ _.Zones =
 						}),
 						-- Need "Glittering Strand" Header
 						a(i(36756, {	-- Captain Malin's Letter
-							q(12067, {	--  A Letter for Home [A]
+							q(12067, {	--  A Letter for Home [Alliance]
 								["qg"] = 26762,	-- Captain Emmy Malin
 								["sourceQuests"] = {12065},
 							}),
 						})),
 						-- Need "Star's Rest" Header
-						q(12092, {	-- Strenthen the Ancients [A]
+						q(12092, {	-- Strenthen the Ancients [Alliance]
 							["groups"] = {
 								i(37966),	-- Bracers of Nature's Fury
 								i(38008),	-- Lothalar Woodwalker Belt
@@ -785,12 +785,12 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12065},
 						}),
-						q(12172, {	--  Attunement to Dalaran [A]
+						q(12172, {	--  Attunement to Dalaran [Alliance]
 							["classes"] = {8},
 							["qg"] = 26673,	-- Image of Archmage Modera
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(12794, {	--  The Magical Kingdom of Dalaran [A]
+						q(12794, {	--  The Magical Kingdom of Dalaran [Alliance]
 							["qg"] = 26673,	-- Image of Archmage Modera
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -823,13 +823,13 @@ _.Zones =
 							["qg"] = 26245,	-- Tua'kea
 							["sourceQuests"] = {12016},
 						}),
-						q(11995, {	--  Your Presence is Required at Stars' Rest [A]
+						q(11995, {	--  Your Presence is Required at Stars' Rest [Alliance]
 							["qg"] = 26440,	-- Emissary Skyhaven
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						-- Need "Wintergarde Keep" Header
-						q(12311, {	-- The Noble's Crypt [A]
+						q(12311, {	-- The Noble's Crypt [Alliance]
 							["groups"] = {
 								i(37953),	-- Wastewind Garments
 								i(37995),	-- Snowfall Reaver Hood
@@ -840,7 +840,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12309},
 						}),
-						q(12258, {	-- The Fate of the Dead [A]
+						q(12258, {	-- The Fate of the Dead [Alliance]
 							["groups"] = {
 								i(37954),	-- Wastewind Cinch
 								i(37996),	-- Snowfall Reaver Gloves
@@ -851,7 +851,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12251},
 						}),
-						q(12464, {	-- My Old Enemy [A]
+						q(12464, {	-- My Old Enemy [Alliance]
 							["groups"] = {
 								i(38178),	-- Battlement Enforcer's Axe
 								i(38177),	-- Siege Captain's Gun
@@ -863,16 +863,16 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12237},
 						}),
-						q(12269, {	--  Not In Our Mine [A]
+						q(12269, {	--  Not In Our Mine [Alliance]
 							["qg"] = 27156,	-- Highlord Leoric Von Zeldig
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12275},
 						}),
-						q(12511, {	--  The Hills Have Us [A]
+						q(12511, {	--  The Hills Have Us [Alliance]
 							["qg"] = 27317,	-- Gryphon Commander Urik
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(12462, {	-- Breaking Off A Piece [A]
+						q(12462, {	-- Breaking Off A Piece [Alliance]
 							["groups"] = {
 								i(37959),	-- Wastewind Pauldrons
 								i(38001),	-- Snowfall Reaver Pauldrons
@@ -883,29 +883,29 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12326},
 						}),
-						q(12477, {	--  The Path of Redemption [A]
+						q(12477, {	--  The Path of Redemption [Alliance]
 							["qg"] = 27136,	-- High Commander Halford Wyrmbane
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12305},
 						}),
-						q(12439, {	--  A Disturbance In The West [A]
+						q(12439, {	--  A Disturbance In The West [Alliance]
 							["qg"] = 27158,	-- Vas the Unstable
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,	-- For q12000 "Rifle the Bodies"
 						}),
-						q(12476, {	--  The Return of the Crusade? [A]
+						q(12476, {	--  The Return of the Crusade? [Alliance]
 							["qg"] = 27155,	-- Commander Lynore Windstryke
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {12305},
 						}),
-						q(12440, {	--  To Stars' Rest! [A]
+						q(12440, {	--  To Stars' Rest! [Alliance]
 							["qg"] = 26878,	-- Rodney Wells
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						o(190020, {	-- Wanted!
 							["groups"] = {
-								q(12441, {	-- Wanted: High Shaman Bloodpaw [A]
+								q(12441, {	-- Wanted: High Shaman Bloodpaw [Alliance]
 									["groups"] = {
 										i(38171),	-- Battleworn Magnataur Crusher
 										i(38172),	-- Crossbow of the Hardened Ranger
@@ -915,7 +915,7 @@ _.Zones =
 										i(38131),	-- Staff of Ruby Wood
 									},
 								}),
-								q(12438, {	-- Wanted: Krueg Oathbreaker [A]
+								q(12438, {	-- Wanted: Krueg Oathbreaker [Alliance]
 									["groups"] = {
 										i(37957),	-- Wastewind Bracers
 										i(37999),	-- Glade Wanderer Bracers
@@ -923,7 +923,7 @@ _.Zones =
 										i(38042),	-- Scourge Ghoul Collar
 									},
 								}),
-								qa(12442, {	-- Wanted: Onslaught Commander Iustus [A]
+								qa(12442, {	-- Wanted: Onslaught Commander Iustus [Alliance]
 									["groups"] = {
 										i(38115),	-- Sabatons of the Enforcer
 										i(38054),	-- Paingiver Wristguards
@@ -940,11 +940,11 @@ _.Zones =
 							["qg"] = 26896,	-- Nozzlerust Supply Runner
 							["isBreadcrumb"] = true,
 						}),
-						q(12142, {	--  Pest Control [A]
+						q(12142, {	--  Pest Control [Alliance]
 							["qg"] = 26978,	-- Duane
 							["races"] = ALLIANCE_ONLY,
 						}),
-						q(12143, {	-- Canyon Chase [A]
+						q(12143, {	-- Canyon Chase [Alliance]
 							["groups"] = {
 								i(37965),	-- Wyrmward Cover
 								i(38007),	-- Canyon Runner's Vest
@@ -956,7 +956,7 @@ _.Zones =
 							["sourceQuests"] = {12142},
 						}),
 						a(i(36855, {	-- Emblazoned Battle Horn
-							qa(12146, {	--  Disturbing Implications [A]
+							qa(12146, {	--  Disturbing Implications [Alliance]
 								["qg"] = 27005,	-- Chilltusk
 							}),
 						})),
@@ -1018,209 +1018,209 @@ _.Zones =
 						--
 						--
 
-						-- q(12274, {	--  A Fall From Grace [H]
+						-- q(12274, {	--  A Fall From Grace [Horde]
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
-						-- q(12085, {	--  A Letter for Home [H]
+						-- q(12085, {	--  A Letter for Home [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead
 						-- }),
-						-- q(12240, {	--  A Means to an End [H]
+						-- q(12240, {	--  A Means to an End [Horde]
 						-- 	["qg"] = 27248,	-- Apothecary Vicky Levine
 						-- }),
-						-- q(12059, {	--  A Strange Device [H]
+						-- q(12059, {	--  A Strange Device [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
-						-- q(11977, {	--  A Tauren Among Taunka [H]
+						-- q(11977, {	--  A Tauren Among Taunka [Horde]
 						-- 	["qg"] = 26156,	-- Wartook Iceborn
 						-- }),
-						-- q(11930, {	--  Across Transborea [H]
+						-- q(11930, {	--  Across Transborea [Horde]
 						-- 	["qg"] = 26158,	-- Mother Tauranook
 						-- }),
-						-- q(12008, {	--  Agmar's Hammer [H]
+						-- q(12008, {	--  Agmar's Hammer [Horde]
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
-						-- q(12040, {	--  An Enemy in Arthas [H]
+						-- q(12040, {	--  An Enemy in Arthas [Horde]
 						-- 	["qg"] = 26653,	-- Kilix the Unraveler
 						-- }),
-						-- q(12071, {	--  Attack by Air! [H]
+						-- q(12071, {	--  Attack by Air! [Horde]
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
-						-- q(12173, {	--  Attunement to Dalaran [H]
+						-- q(12173, {	--  Attunement to Dalaran [Horde]
 						--	["classes"] = {8},
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12496, {	--  Audience With The Dragon Queen [H]
+						-- q(12496, {	--  Audience With The Dragon Queen [Horde]
 						-- 	["qg"] = 25257,	-- Saurfang the Younger
 						-- }),
-						-- q(12304, {	--  Beachfront Property [H]
+						-- q(12304, {	--  Beachfront Property [Horde]
 						-- 	["qg"] = 32599,	-- Surveyor Hansen
 						-- }),
-						-- q(12039, {	--  Black Blood of Yogg-Saron [H]
+						-- q(12039, {	--  Black Blood of Yogg-Saron [Horde]
 						-- 	["qg"] = 26564,	-- Borus Ironbender
 						-- }),
-						-- q(12206, {	--  Blighted Last Rites [H]
+						-- q(12206, {	--  Blighted Last Rites [Horde]
 						-- 	["qg"] = 27248,	-- Apothecary Vicky Levine
 						-- }),
-						-- q(11983, {	--  Blood Oath of the Horde [H]
+						-- q(11983, {	--  Blood Oath of the Horde [Horde]
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
-						-- q(12100, {	--  Containing the Rot [H]
+						-- q(12100, {	--  Containing the Rot [Horde]
 						-- 	["qg"] = 26504,	-- Soar Hawkfury
 						-- }),
-						-- q(12147, {	--  Disturbing Implications [H]
+						-- q(12147, {	--  Disturbing Implications [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
-						-- q(12200, {	--  Emerald Dragon Tears [H]
+						-- q(12200, {	--  Emerald Dragon Tears [Horde]
 						-- 	["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						-- }),
-						-- q(12214, {	--  Fresh Remounts [H]
+						-- q(12214, {	--  Fresh Remounts [Horde]
 						-- 	["qg"] = 27028,	-- Hansel Bauer
 						-- }),
-						-- q(12036, {	--  From the Depths of Azjol-Nerub [H]
+						-- q(12036, {	--  From the Depths of Azjol-Nerub [Horde]
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
-						-- q(12122, {	--  Gaining an Audience [H]
+						-- q(12122, {	--  Gaining an Audience [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12448, {	--  Heated Battle [H]
+						-- q(12448, {	--  Heated Battle [Horde]
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
-						-- q(12189, {	--  Imbeciles Abound! [H]
+						-- q(12189, {	--  Imbeciles Abound! [Horde]
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
-						-- q(12102, {	--  In Search of the Ruby Lilac [H]
+						-- q(12102, {	--  In Search of the Ruby Lilac [Horde]
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
-						-- q(12125, {	--  In Service of Blood [H]
+						-- q(12125, {	--  In Service of Blood [Horde]
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
-						-- q(12127, {	--  In Service of Frost [H]
+						-- q(12127, {	--  In Service of Frost [Horde]
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
-						-- q(12126, {	--  In Service of the Unholy [H]
+						-- q(12126, {	--  In Service of the Unholy [Horde]
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
-						-- q(12124, {	--  Informing the Queen [H]
+						-- q(12124, {	--  Informing the Queen [Horde]
 						-- 	["qg"] = 26443,	-- Tariolstrasz
 						-- }),
-						-- q(11978, {	--  Into the Fold [H]
+						-- q(11978, {	--  Into the Fold [Horde]
 						-- 	["qg"] = 26181,	-- Emissary Brighthoof
 						-- }),
-						-- q(12115, {	--  Koltira and the Language of Death [H]
+						-- q(12115, {	--  Koltira and the Language of Death [Horde]
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
-						-- q(12056, {	--  Marked for Death: High Cultist Zangus [H]
+						-- q(12056, {	--  Marked for Death: High Cultist Zangus [Horde]
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
-						-- q(12209, {	--  Materiel Plunder [H]
+						-- q(12209, {	--  Materiel Plunder [Horde]
 						-- 	["qg"] = 27267,	-- Quartermaster Bartlett
 						-- }),
-						-- q(12033, {	--  Message from the West [H]
+						-- q(12033, {	--  Message from the West [Horde]
 						-- 	["qg"] = 26649,	-- Messenger Torvus
 						-- }),
-						-- q(12234, {	--  Need to Know [H]
+						-- q(12234, {	--  Need to Know [Horde]
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
-						-- q(12245, {	--  No Mercy for the Captured [H]
+						-- q(12245, {	--  No Mercy for the Captured [Horde]
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
-						-- q(12144, {	--  Pest Control [H]
+						-- q(12144, {	--  Pest Control [Horde]
 						-- 	["qg"] = 26979,	-- Kontokanis
 						-- }),
-						-- q(12061, {	--  Projections and Plans [H]
+						-- q(12061, {	--  Projections and Plans [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12461, {	--  Report to the Ruby Dragonshrine [H]
+						-- q(12461, {	--  Report to the Ruby Dragonshrine [Horde]
 						-- 	["qg"] = 27804,	-- Golluck Rockfist
 						-- }),
-						-- q(12069, {	--  Return of the High Chief [H]
+						-- q(12069, {	--  Return of the High Chief [Horde]
 						-- 	["qg"] = 26733,	-- Banthok Icemist
 						-- }),
-						-- q(12500, {	--  Return To Angrathar [H]
+						-- q(12500, {	--  Return To Angrathar [Horde]
 						-- 	["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						-- }),
-						-- q(12104, {	--  Return to Soar [H]
+						-- q(12104, {	--  Return to Soar [Horde]
 						-- 	["qg"] = 26505,	-- Doctor Sintar Malefious
 						-- }),
-						-- q(12449, {	--  Return to the Earth [H]
+						-- q(12449, {	--  Return to the Earth [Horde]
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
-						-- q(11999, {	--  Rifle the Bodies [H]
+						-- q(11999, {	--  Rifle the Bodies [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12106, {	--  Search Indu'le Village [H]
+						-- q(12106, {	--  Search Indu'le Village [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12767, {	--  Speak with your Ambassador [H]
+						-- q(12767, {	--  Speak with your Ambassador [Horde]
 						-- 	["qg"] = 26443,	-- Tariolstrasz
 						-- }),
-						-- q(12218, {	--  Spread the Good Word [H]
+						-- q(12218, {	--  Spread the Good Word [Horde]
 						-- 	["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						-- }),
-						-- q(12230, {	--  Stealing from the Siegesmiths [H]
+						-- q(12230, {	--  Stealing from the Siegesmiths [Horde]
 						-- 	["qg"] = 27320,	-- Deathguard Molder
 						-- }),
-						-- q(12063, {	--  Strength of Icemist [H]
+						-- q(12063, {	--  Strength of Icemist [Horde]
 						-- 	["qg"] = 26652,	-- Greatmother Icemist
 						-- }),
-						-- q(12057, {	--  The Flesh-Bound Tome [H]
+						-- q(12057, {	--  The Flesh-Bound Tome [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
-						-- q(12066, {	--  The Focus on the Beach [H]
+						-- q(12066, {	--  The Focus on the Beach [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12101, {	--  The Good Doctor... [H]
+						-- q(12101, {	--  The Good Doctor... [Horde]
 						-- 	["qg"] = 26504,	-- Soar Hawkfury
 						-- }),
-						-- q(12488, {	--  The High Executor Needs You [H]
+						-- q(12488, {	--  The High Executor Needs You [Horde]
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
-						-- q(12791, {	--  The Magical Kingdom of Dalaran [H]
+						-- q(12791, {	--  The Magical Kingdom of Dalaran [Horde]
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
-						-- q(12260, {	--  The Perfect Dissemblance [H]
+						-- q(12260, {	--  The Perfect Dissemblance [Horde]
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
-						-- q(12132, {	--  The Power to Destroy [H]
+						-- q(12132, {	--  The Power to Destroy [Horde]
 						-- 	["qg"] = 26581,	-- Koltira Deathweaver
 						-- }),
-						-- q(12271, {	--  The Rod of Compulsion [H]
+						-- q(12271, {	--  The Rod of Compulsion [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
-						-- q(12239, {	--  The Spy in New Hearthglen [H]
+						-- q(12239, {	--  The Spy in New Hearthglen [Horde]
 						-- 	["qg"] = 27337,	-- Spy Mistress Repine
 						-- }),
-						-- q(12769, {	--  The Steward of Wyrmrest Temple [H]
+						-- q(12769, {	--  The Steward of Wyrmrest Temple [Horde]
 						-- 	["qg"] = 27763,	-- Vargastrasz
 						-- }),
-						-- q(11979, {	--  The Taunka and the Tauren [H]
+						-- q(11979, {	--  The Taunka and the Tauren [Horde]
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
-						-- q(12283, {	--  The Truth Will Out [H]
+						-- q(12283, {	--  The Truth Will Out [Horde]
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
-						-- q(12487, {	--  To Conquest Hold, But Be Careful! [H]
+						-- q(12487, {	--  To Conquest Hold, But Be Careful! [Horde]
 						-- 	["qg"] = 27243,	-- High Executor Wroth
 						-- }),
-						-- q(12095, {	--  To Dragon's Fall [H]
+						-- q(12095, {	--  To Dragon's Fall [Horde]
 						-- 	["qg"] = 26618,	-- Captain Gort
 						-- }),
-						-- q(12182, {	--  To Venomspite! [H]
+						-- q(12182, {	--  To Venomspite! [Horde]
 						-- 	["qg"] = 24155,	-- Tobias Sarkhoff
 						-- }),
 						-- q(26012, {	--  Trouble at Wyrmrest [DALARAN]
 						-- 	["qg"] = 16128,	-- Rhonin
 						-- }),
-						-- q(12034, {	--  Victory Nears... [H]
+						-- q(12034, {	--  Victory Nears... [Horde]
 						-- 	["qg"] = 26379,	-- Overlord Agmar
 						-- }),
-						-- q(12205, {	--  Wanted: The Scarlet Onslaught [H]
+						-- q(12205, {	--  Wanted: The Scarlet Onslaught [Horde]
 						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
-						-- q(12254, {	--  Without a Prayer [H]
+						-- q(12254, {	--  Without a Prayer [Horde]
 						-- 	["qg"] = 27350,	-- Agent Skully
 						-- }),
-						-- q(11996, {	--  Your Presence is Required at Agmar's Hammer [H]
+						-- q(11996, {	--  Your Presence is Required at Agmar's Hammer [Horde]
 						-- 	["qg"] = 26441,	-- Envoy Ripfang
 						-- }),
 						--
@@ -1275,7 +1275,7 @@ _.Zones =
 							["qg"] = 26917,	-- Alexstrasza the Life-Binder
 							["sourceQuests"] = {13078},
 						}),
-						qh(12140, {	-- All Hail Roanauk! [H]
+						qh(12140, {	-- All Hail Roanauk! [Horde]
 							["groups"] = {
 								i(38293),	-- Suntouched Flowers
 								i(38002),	-- Honorborn Cloak
@@ -1284,7 +1284,7 @@ _.Zones =
 							},
 							["qg"] = 26379,	-- Overlord Agmar
 						}),
-						qh(12084, {	-- Atop the Woodlands [H]
+						qh(12084, {	-- Atop the Woodlands [Horde]
 							["groups"] = {
 								i(37942),	-- Kirin Tor Initiate's Sandals
 								i(37985),	-- Violet Stalker Shoulderpads
@@ -1293,7 +1293,7 @@ _.Zones =
 							},
 							["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						}),
-						qh(12072, {	-- Blightbeasts be Damned! [H]
+						qh(12072, {	-- Blightbeasts be Damned! [Horde]
 							["groups"] = {
 								i(37957),	-- Wastewind Bracers
 								i(37999),	-- Glade Wanderer Bracers
@@ -1302,7 +1302,7 @@ _.Zones =
 							},
 							["qg"] = 26574,	-- Valnok Windrager
 						}),
-						qh(12232, {	-- Bombard the Ballistae [H]
+						qh(12232, {	-- Bombard the Ballistae [Horde]
 							["groups"] = {
 								i(37949),	-- Saboteur's Wrap
 								i(37992),	-- Ritual Neckguard
@@ -1310,7 +1310,7 @@ _.Zones =
 							},
 							["qg"] = 27320,	-- Deathguard Molder
 						}),
-						qh(12145, {	-- Canyon Chase [H]
+						qh(12145, {	-- Canyon Chase [Horde]
 							["groups"] = {
 								i(37965),	-- Wyrmward Cover
 								i(38007),	-- Canyon Runner's Vest
@@ -1319,7 +1319,7 @@ _.Zones =
 							},
 							["qg"] = 26979,	-- Kontokanis
 						}),
-						qh(12064, {	-- Chains of the Anub'ar [H]
+						qh(12064, {	-- Chains of the Anub'ar [Horde]
 							["groups"] = {
 								i(37959),	-- Wastewind Pauldrons
 								i(38001),	-- Snowfall Reaver Pauldrons
@@ -1328,7 +1328,7 @@ _.Zones =
 							},
 							["qg"] = 26733,	-- Banthok Icemist
 						}),
-						qh(12285, {	-- Do Unto Others [H]
+						qh(12285, {	-- Do Unto Others [Horde]
 							["groups"] = {
 								i(38536),	-- Bindings of the Forceful Vanquisher
 								i(38537),	-- Cuffs of the Decapitator
@@ -1337,7 +1337,7 @@ _.Zones =
 							},
 							["qg"] = 27243,	-- High Executor Wroth
 						}),
-						qh(12243, {	-- Fire Upon the Waters [H]
+						qh(12243, {	-- Fire Upon the Waters [Horde]
 							["groups"] = {
 								i(37950),	-- Highseas Wristwraps
 								i(37993),	-- Glade Wanderer Boots
@@ -1346,7 +1346,7 @@ _.Zones =
 							},
 							["qg"] = 27248,	-- Apothecary Vicky Levine
 						}),
-						qh(12303, {	-- Funding the War Effort [H]
+						qh(12303, {	-- Funding the War Effort [Horde]
 							["groups"] = {
 								i(38181),	-- Warblade of the Forgotten Footman
 								i(37986),	-- Hood of the Forgotten Rifleman
@@ -1356,7 +1356,7 @@ _.Zones =
 							},
 							["qg"] = 27267,	-- Quartermaster Bartlett
 						}),
-						qh(12211, {	-- Let Them Not Rise! [H]
+						qh(12211, {	-- Let Them Not Rise! [Horde]
 							["groups"] = {
 								i(37971),	-- Sash of the Nibbling Plague
 								i(38014),	-- Vermin-Handler's Gauntlets
@@ -1365,7 +1365,7 @@ _.Zones =
 							},
 							["qg"] = 27248,	-- Apothecary Vicky Levine
 						}),
-						qh(12005, {	-- Prevent the Accord [H]
+						qh(12005, {	-- Prevent the Accord [Horde]
 							["groups"] = {
 								i(37943),	-- Kirin Tor Initiate's Cowl
 								i(37987),	-- Violet Stalker Bracers
@@ -1374,7 +1374,7 @@ _.Zones =
 							},
 							["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						}),
-						qh(11980, {	-- Pride of the Horde [H]
+						qh(11980, {	-- Pride of the Horde [Horde]
 							["groups"] = {
 								i(37964),	-- Spiderwarder Braces
 								i(38006),	-- Glade Wanderer Belt
@@ -1384,7 +1384,7 @@ _.Zones =
 							},
 							["qg"] = 26180,	-- Blood Guard Roh'kill
 						}),
-						qh(12097, {	-- Sarathstra, Scourge of the North [H]
+						qh(12097, {	-- Sarathstra, Scourge of the North [Horde]
 							["groups"] = {
 								i(38530),	-- Wrap of Vigorous Destruction
 								i(38532),	-- Belt of Vengeful Purification
@@ -1393,7 +1393,7 @@ _.Zones =
 							},
 							["qg"] = 26859,	-- Rokhan
 						}),
-						qh(12048, {	-- Scourge Armaments [H]
+						qh(12048, {	-- Scourge Armaments [Horde]
 							["groups"] = {
 								i(37961),	-- Wastewind Leggings
 								i(38003),	-- Snowfall Reaver Leggings
@@ -1402,7 +1402,7 @@ _.Zones =
 							},
 							["qg"] = 26564,	-- Borus Ironbender
 						}),
-						qh(12096, {	-- Strenthen the Ancients [H]
+						qh(12096, {	-- Strenthen the Ancients [Horde]
 							["groups"] = {
 								i(37966),	-- Bracers of Nature's Fury
 								i(38008),	-- Lothalar Woodwalker Belt
@@ -1411,7 +1411,7 @@ _.Zones =
 							},
 							["qg"] = 26854,	-- Earthwarden Grife
 						}),
-						qh(12273, {	-- The Denouncement [H]
+						qh(12273, {	-- The Denouncement [Horde]
 							["groups"] = {
 								i(37968),	-- Robe of Calcified Tears
 								i(38011),	-- Torturer's Fleshwoven Leggings
@@ -1420,7 +1420,7 @@ _.Zones =
 							},
 							["qg"] = 27243,	-- High Executor Wroth
 						}),
-						qh(12110, {	-- The End of the Line [H]
+						qh(12110, {	-- The End of the Line [Horde]
 							["groups"] = {
 								i(38151),	-- Daschal's Discarded Shiv
 								i(38152),	-- Mace of the Violet Guardian
@@ -1430,7 +1430,7 @@ _.Zones =
 							},
 							["qg"] = 26873,	-- Mage-Commander Evenstar
 						}),
-						qh(12221, {	-- The Forsaken Blight [H]
+						qh(12221, {	-- The Forsaken Blight [Horde]
 							["groups"] = {
 								i(38178),	-- Battlement Enforcer's Axe
 								i(38177),	-- Siege Captain's Gun
@@ -1440,7 +1440,7 @@ _.Zones =
 							},
 							["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						}),
-						qh(12188, {	-- The Forsaken Blight and You: How Not to Die [H]
+						qh(12188, {	-- The Forsaken Blight and You: How Not to Die [Horde]
 							["groups"] = {
 								i(37963),	-- Wastewind Handwraps
 								i(38005),	-- Spiritfury Bands
@@ -1449,7 +1449,7 @@ _.Zones =
 							},
 							["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						}),
-						qh(12224, {	-- The Kor'kron Vanguard! [H]
+						qh(12224, {	-- The Kor'kron Vanguard! [Horde]
 							["groups"] = {
 								i(38541),	-- Implacable Zombie Crushers
 								i(38543),	-- Reinforced Traveler's Boots
@@ -1458,7 +1458,7 @@ _.Zones =
 							},
 							["qg"] = 26379,	-- Overlord Agmar
 						}),
-						qh(12041, {	-- The Lost Empire [H]
+						qh(12041, {	-- The Lost Empire [Horde]
 							["groups"] = {
 								i(37954),	-- Wastewind Cinch
 								i(37996),	-- Snowfall Reaver Gloves
@@ -1467,7 +1467,7 @@ _.Zones =
 							},
 							["qg"] = 26653,	-- Kilix the Unraveler
 						}),
-						qh(12053, {	-- The Might of the Horde [H]
+						qh(12053, {	-- The Might of the Horde [Horde]
 							["groups"] = {
 								i(37956),	-- Frontrunner's Blessed Handwraps
 								i(37998),	-- Snowfall Reaver Boots
@@ -1476,7 +1476,7 @@ _.Zones =
 							},
 							["qg"] = 26415,	-- Senior Sergeant Juktok
 						}),
-						qh(12136, {	-- The Translated Tome [H]
+						qh(12136, {	-- The Translated Tome [Horde]
 							["groups"] = {
 								i(37958),	-- Wastewind Headcover
 								i(38000),	-- Snowfall Reaver Breastplate
@@ -1485,7 +1485,7 @@ _.Zones =
 							},
 							["qg"] = 26581,	-- Koltira Deathweaver
 						}),
-						qh(12450, {	-- Through Fields of Flame [H]
+						qh(12450, {	-- Through Fields of Flame [Horde]
 							["groups"] = {
 								i(37962),	-- Treads of the Charred Canyon
 								i(38004),	-- Scourgeslayer Belt
@@ -1494,7 +1494,7 @@ _.Zones =
 							},
 							["qg"] = 27763,	-- Vargastrasz
 						}),
-						qh(12252, {	-- Torture the Torturer [H]
+						qh(12252, {	-- Torture the Torturer [Horde]
 							["groups"] = {
 								i(37953),	-- Wastewind Garments
 								i(37995),	-- Snowfall Reaver Hood
@@ -1521,7 +1521,7 @@ _.Zones =
 						-- 	},
 						-- 	["qg"] = 24810,	-- Anuniaq
 						-- }),
-						qh(12091, {	-- Wanted: Dreadtalon [H]
+						qh(12091, {	-- Wanted: Dreadtalon [Horde]
 							["groups"] = {
 								i(37970),	-- Feathers of the Dragon Wastes
 								i(38013),	-- Lothalar Woodwalker Shoulders
@@ -1530,7 +1530,7 @@ _.Zones =
 							},
 							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
-						qh(12090, {	-- Wanted: Gigantaur [H]
+						qh(12090, {	-- Wanted: Gigantaur [Horde]
 							["groups"] = {
 								i(37969),	-- Chaos Mender Cloak
 								i(38012),	-- Lothalar Woodwalker Bracers
@@ -1539,7 +1539,7 @@ _.Zones =
 							},
 							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
-						qh(12089, {	-- Wanted: Magister Keldonus [H]
+						qh(12089, {	-- Wanted: Magister Keldonus [Horde]
 							["groups"] = {
 								i(38195),	-- Magister's Bane
 								i(38194),	-- Mageslayer Rifle
@@ -1550,7 +1550,7 @@ _.Zones =
 							},
 							["qg"] = 0,	-- Unable to pull from Wowhead.
 						}),
-						qh(12111, {	-- Where the Wild Things Roam [H]
+						qh(12111, {	-- Where the Wild Things Roam [Horde]
 							["groups"] = {
 								i(38171),	-- Battleworn Magnataur Crusher
 								i(38172),	-- Crossbow of the Hardened Ranger

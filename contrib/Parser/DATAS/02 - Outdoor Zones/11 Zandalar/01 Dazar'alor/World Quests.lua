@@ -11,11 +11,11 @@ _.Zones =
 					["groups"] = {
 						n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 							["groups"] = {
-								{	-- Scamps With Scrolls [H]
+								{	-- Scamps With Scrolls [Horde]
 									["questID"] = 49413, 	-- Scamps With Scrolls
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
-								{	-- Set Sail [H]
+								{	-- Set Sail [Horde]
 									["questID"] = 54166,	-- Set Sail
 									--["sourceQuests"] = Island Account Unlock; Add later
 									["isWeekly"] = true, 	-- Would like to swap it to WQ below
@@ -24,11 +24,11 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									-- NOTE!! Also grants credit for Alliance Equivalent == 54167
 								},
-								q(50858, {	-- Sky Queeen [A]
+								q(50858, {	-- Sky Queeen [Alliance]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51038, {	-- Supplies Needed: Akunda's Bite [H]
+								q(51038, {	-- Supplies Needed: Akunda's Bite [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -36,7 +36,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51044, {	-- Supplies Needed: Blood-Stained Bone [H]
+								q(51044, {	-- Supplies Needed: Blood-Stained Bone [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -44,7 +44,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51045, {	-- Supplies Needed: Calcified Bone [H]
+								q(51045, {	-- Supplies Needed: Calcified Bone [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -52,7 +52,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51046, {	-- Supplies Needed: Deep Sea Satin [H]
+								q(51046, {	-- Supplies Needed: Deep Sea Satin [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -60,7 +60,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52387, {	-- Supplies Needed: Frenzied Fangtooth [H]
+								q(52387, {	-- Supplies Needed: Frenzied Fangtooth [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -68,7 +68,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52382, {	-- Supplies Neeeded: Great Sea Catfish [H]
+								q(52382, {	-- Supplies Neeeded: Great Sea Catfish [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -76,7 +76,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52388, {	-- Supplies Needed: Lane Snapper [H]
+								q(52388, {	-- Supplies Needed: Lane Snapper [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -84,7 +84,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51049, {	-- Supplies Neeeded: Mistscale [H]
+								q(51049, {	-- Supplies Neeeded: Mistscale [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -92,7 +92,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51042, {	-- Supplies Needed: Monelite Ore [H]
+								q(51042, {	-- Supplies Needed: Monelite Ore [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -100,7 +100,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51036, {	-- Supplies Needed: Riverbud [H]
+								q(51036, {	-- Supplies Needed: Riverbud [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -108,7 +108,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52383, {	-- Supplies Needed: Sand Shifter [H]
+								q(52383, {	-- Supplies Needed: Sand Shifter [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -116,7 +116,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51041, {	-- Supplies Needed: Sea Stalk [H]
+								q(51041, {	-- Supplies Needed: Sea Stalk [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -124,7 +124,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51048, {	-- Supplies Needed: Shimmerscale [H]
+								q(51048, {	-- Supplies Needed: Shimmerscale [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -132,7 +132,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51040, {	-- Supplies Needed: Siren's Pollen [H]
+								q(51040, {	-- Supplies Needed: Siren's Pollen [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -140,7 +140,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51037, {	-- Supplies Needed: Star Moss [H]
+								q(51037, {	-- Supplies Needed: Star Moss [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -148,7 +148,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51043, {	-- Supplies Needed: Storm Silver Ore [H]
+								q(51043, {	-- Supplies Needed: Storm Silver Ore [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -156,7 +156,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51047, {	-- Supplies Needed: Tempest Hide [H]
+								q(51047, {	-- Supplies Needed: Tempest Hide [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -164,7 +164,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51050, {	-- Supplies Needed: Tidespray Line [H]
+								q(51050, {	-- Supplies Needed: Tidespray Line [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -172,7 +172,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(52384, {	-- Supplies Needed: Tiragarde Perch [H]
+								q(52384, {	-- Supplies Needed: Tiragarde Perch [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -180,7 +180,7 @@ _.Zones =
 										44.01, 32.21
 									},
 								}),
-								q(51039, {	-- Supplies Needed: Winter's Kiss [H]
+								q(51039, {	-- Supplies Needed: Winter's Kiss [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 									["qg"] = 141936,	-- Hanul Swiftgale <Trade Supplies>
@@ -192,7 +192,7 @@ _.Zones =
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
-								q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom [H]
+								q(52425, {	-- Work Order: Battle Flag: Spirit of Freedom [Horde]
 									["groups"] = {
 										i(162443, {	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3]
 											["spellID"] = 257133,
@@ -206,7 +206,7 @@ _.Zones =
 										65.61, 72.01,
 									},
 								}),
-								q(52395, {	-- Work Order: Contract: Zandalari Empire [H]
+								q(52395, {	-- Work Order: Contract: Zandalari Empire [Horde]
 									["groups"] = {
 										i(162366, {	-- Recipe: Contract: Zandalari Empire [Rank 3]
 											["spellID"] = 256286,
@@ -225,7 +225,7 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 									["requireSkill"] = 202,	-- Engineering
 								},
-								q(52373, {	-- Work Order: Electroshock Mount Motivator [H]
+								q(52373, {	-- Work Order: Electroshock Mount Motivator [Horde]
 									["groups"] = {
 										i(162340, {	-- Schematic: Electroshock Mount Motivator
 											["spellID"] = 256072,

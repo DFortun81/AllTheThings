@@ -28,7 +28,7 @@ _.Zones =
 							},
 							["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at 52.00, 31.00 and then click on the chest twice.",	
 						}),
-						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [A]
+						n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary> [Alliance]
 							["groups"] = {
 								i(160541),	-- Order of Embers Tabard
 								i(163036, {	-- Polished Pet Charm
@@ -97,7 +97,7 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						n(138021, {	-- Sally Boltwrench <Repairs> [H]
+						n(138021, {	-- Sally Boltwrench <Repairs> [Horde]
 							["groups"] = {
 								i(23596),	-- Plans: Adamantite Breastplate
 								i(23591),	-- Plans: Adamantite Cleaver

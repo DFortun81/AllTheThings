@@ -43,35 +43,35 @@ profession(165, {	-- Leatherworking
 					["name"] = "Chests",
 					["categoryID"] = 919,
 					["g"] = {
-						{	-- Crusader's Dragonscale Breastplate [A]
+						{	-- Crusader's Dragonscale Breastplate [Alliance]
 							["recipeID"] = 67082,  -- Crusader's Dragonscale Breastplate
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Crusader's Dragonscale Breastplate [H]
+						{	-- Crusader's Dragonscale Breastplate [Horde]
 							["recipeID"] = 67138,  -- Crusader's Dragonscale Breastplate
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Ensorcelled Nerubian Breastplate [A]
+						{	-- Ensorcelled Nerubian Breastplate [Alliance]
 							["recipeID"] = 67080,  -- Ensorcelled Nerubian Breastplate
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Ensorcelled Nerubian Breastplate [H]
+						{	-- Ensorcelled Nerubian Breastplate [Horde]
 							["recipeID"] = 67136,  -- Ensorcelled Nerubian Breastplate
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Knightbane Carapace [A]
+						{	-- Knightbane Carapace [Alliance]
 							["recipeID"] = 67086,  -- Knightbane Carapace
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Knightbane Carapace [H]
+						{	-- Knightbane Carapace [Horde]
 							["recipeID"] = 67142,  -- Knightbane Carapace
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Lunar Eclipse Robes [A]
+						{	-- Lunar Eclipse Robes [Alliance]
 							["recipeID"] = 67084,  -- Lunar Eclipse Robes
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Lunar Eclipse Robes [H]
+						{	-- Lunar Eclipse Robes [Horde]
 							["recipeID"] = 67140,  -- Lunar Eclipse Robes
 							["races"] = HORDE_ONLY,
 						},
@@ -81,35 +81,35 @@ profession(165, {	-- Leatherworking
 					["name"] = "Bracers",
 					["categoryID"] = 920,
 					["g"] = {
-						{	-- Black Chitin Bracers [A]
+						{	-- Black Chitin Bracers [Alliance]
 							["recipeID"] = 67081,  -- Black Chitin Bracers
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Black Chitin Bracers [H]
+						{	-- Black Chitin Bracers [Horde]
 							["recipeID"] = 67137,  -- Black Chitin Bracers
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Bracers of Swift Death [A]
+						{	-- Bracers of Swift Death [Alliance]
 							["recipeID"] = 67087,  -- Bracers of Swift Death
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Bracers of Swift Death [H]
+						{	-- Bracers of Swift Death [Horde]
 							["recipeID"] = 67139,  -- Bracers of Swift Death
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Crusader's Dragonscale Bracers [A]
+						{	-- Crusader's Dragonscale Bracers [Alliance]
 							["recipeID"] = 67083,  -- Crusader's Dragonscale Bracers
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Crusader's Dragonscale Bracers [H]
+						{	-- Crusader's Dragonscale Bracers [Horde]
 							["recipeID"] = 67143,  -- Crusader's Dragonscale Bracers
 							["races"] = HORDE_ONLY,
 						},
-						{	-- Moonshadow Armguards [A]
+						{	-- Moonshadow Armguards [Alliance]
 							["recipeID"] = 67085,  -- Moonshadow Armguards
 							["races"] = ALLIANCE_ONLY,
 						},
-						{	-- Moonshadow Armguards [H]
+						{	-- Moonshadow Armguards [Horde]
 							["recipeID"] = 67141,  -- Moonshadow Armguards
 							["races"] = HORDE_ONLY,
 						},

@@ -274,62 +274,62 @@ _.Achievements =
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 1,	-- Pristine Ceremonial Bonesaw [A]/[H]
+								["criteriaID"] = 1,	-- Pristine Ceremonial Bonesaw [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 2,	-- Pristine Ancient Runebound Tome [A]/[H]
+								["criteriaID"] = 2,	-- Pristine Ancient Runebound Tome [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 3,	-- Pristine Disembowling Sickle [A]/[H]
+								["criteriaID"] = 3,	-- Pristine Disembowling Sickle [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 4,	-- Pristine Jagged Blade of the Drust [A]/[H]
+								["criteriaID"] = 4,	-- Pristine Jagged Blade of the Drust [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 5,	-- Pristine Ritual Fetish [A]/[H]
+								["criteriaID"] = 5,	-- Pristine Ritual Fetish [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 6,	-- Pristine Soul Coffer [A]/[H]
+								["criteriaID"] = 6,	-- Pristine Soul Coffer [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 7,	-- Pristine Akun'Jar Vase [A]/[H]
+								["criteriaID"] = 7,	-- Pristine Akun'Jar Vase [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 8,	-- Pristine Urn of Passage [A]/[H]
+								["criteriaID"] = 8,	-- Pristine Urn of Passage [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 9,	-- Pristine Rezan Idol [A]/[H]
+								["criteriaID"] = 9,	-- Pristine Rezan Idol [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 10, -- Pristine High Apothecary's Hood [A]/[H]
+								["criteriaID"] = 10, -- Pristine High Apothecary's Hood [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 11, -- Pristine Bwonsamdi Voodoo Mask [A]/[H]
+								["criteriaID"] = 11, -- Pristine Bwonsamdi Voodoo Mask [Alliance] // [Horde]
 							},
 							{
 								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
 								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
-								["criteriaID"] = 12, -- Pristine Blowgun of the Sethrak [A]/[H]
+								["criteriaID"] = 12, -- Pristine Blowgun of the Sethrak [Alliance] // [Horde]
 							},
 						},	
 					},

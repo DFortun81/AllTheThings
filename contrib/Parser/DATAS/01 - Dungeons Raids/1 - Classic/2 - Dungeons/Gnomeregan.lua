@@ -41,8 +41,8 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						{
-							["allianceQuestID"] = 2947,	-- Return of the Ring [A]
-							["hordeQuestID"] = 	  2949,	-- Return of the Ring [H]
+							["allianceQuestID"] = 2947,	-- Return of the Ring [Alliance]
+							["hordeQuestID"] = 	  2949,	-- Return of the Ring [Horde]
 							["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
 						},
 						{
@@ -109,19 +109,19 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 				{
-					["allianceQuestID"] = 26939,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50338,	-- The G-Team [H]
+					["allianceQuestID"] = 26939,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50338,	-- The G-Team [Horde]
 					["qg"] = 44556,	-- Murd Doc
 				},
 				{
-					["allianceQuestID"] = 26941,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50337,	-- The G-Team [H]
+					["allianceQuestID"] = 26941,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50337,	-- The G-Team [Horde]
 					["qg"] = 44560,	-- Murd Doc
 					["sourceQuests"] = { 26939, 50338 },	-- The G-Team
 				},
 				{
-					["allianceQuestID"] = 26942,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50336,	-- The G-Team [H]
+					["allianceQuestID"] = 26942,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50336,	-- The G-Team [Horde]
 					["qg"] = 44561,	-- Murd Doc
 					["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 					["groups"] = {

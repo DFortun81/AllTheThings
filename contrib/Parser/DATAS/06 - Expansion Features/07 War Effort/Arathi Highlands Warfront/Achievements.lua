@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			n(-233, {	-- War Front: The Battle for Stromgarde
 				["groups"] = {
 					n(-4, {	-- Achievements
-						ach(12874, {	-- An Eventful Battle [A/H]
+						ach(12874, {	-- An Eventful Battle [Alliance] // [Horde]
 							["groups"] = {
 								crit(12),	-- Cresting Goliath
 								crit(1),	-- Fozruk
@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 							},
 							["description"] = "Typically only 1 rare per Warfront scenario.  If it lasts long enough you could have 2.",
 						}),
-						ach(12884, {	-- Leader of Troops [A]
+						ach(12884, {	-- Leader of Troops [Alliance]
 							["groups"] = {
 								crit(1),	-- Footman
 								crit(4),	-- Knights
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 							["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12878, {	-- Leader of Troops [H]
+						ach(12878, {	-- Leader of Troops [Horde]
 							["groups"] = {
 								crit(2),	-- Axe Throwers
 								crit(5),	-- Demolishers
@@ -48,9 +48,9 @@ _.ExpansionFeatures =
 							["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
 							["races"] = HORDE_ONLY,
 						}),
-						ach(12889, {	-- Strike Fast [A]
+						ach(12889, {	-- Strike Fast [Alliance]
 							["groups"] = {
-								ach(12888, {	-- Strike Hard [A]
+								ach(12888, {	-- Strike Hard [Alliance]
 									["groups"] = {
 										crit(6),	-- Circle of Elements
 										crit(1),	-- Galson's Lode
@@ -74,9 +74,9 @@ _.ExpansionFeatures =
 							["description"] = "You must personally capture each",
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12876, {	-- Strike Fast [H]
+						ach(12876, {	-- Strike Fast [Horde]
 							["groups"] = {
-								ach(12877, {	-- Strike Hard [H]
+								ach(12877, {	-- Strike Hard [Horde]
 									["groups"] = {
 										crit(1),	-- Circle of Elements
 										crit(7),	-- Drywhisker Mine
@@ -100,7 +100,7 @@ _.ExpansionFeatures =
 							["description"] = "You must personally capture each",
 							["races"] = HORDE_ONLY,
 						}),
-						ach(12886, {	-- Tour of War [A]
+						ach(12886, {	-- Tour of War [Alliance]
 							["groups"] = {
 								crit(1),	-- Eitrigg
 								crit(2),	-- Lady Liadran
@@ -109,7 +109,7 @@ _.ExpansionFeatures =
 							["description"] = "Each time the scenario is up only one of these commanders will be active.",
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12879, {	-- Tour of War [H]
+						ach(12879, {	-- Tour of War [Horde]
 							["groups"] = {
 								crit(1),	-- Danath Trollbane
 								crit(3),	-- Muradin
@@ -118,10 +118,10 @@ _.ExpansionFeatures =
 							["description"] = "Each time the scenario is up only one of these commanders will be active.",
 							["races"] = HORDE_ONLY,
 						}),
-						ach(12881, {	-- War is Hell [A]
+						ach(12881, {	-- War is Hell [Alliance]
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12873, {	-- War is Hell [H]
+						ach(12873, {	-- War is Hell [Horde]
 							["races"] = HORDE_ONLY,
 						}),
 					}),

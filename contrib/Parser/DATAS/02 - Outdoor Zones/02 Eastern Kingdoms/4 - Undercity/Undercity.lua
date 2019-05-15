@@ -14,7 +14,7 @@ _.Zones =
 			["lvl"] = 1,
 			["g"] = {
 				n(-228, {	-- Flight Path
-					fp(11, {	-- Undercity, Tirisfal [H]
+					fp(11, {	-- Undercity, Tirisfal [Horde]
 						["description"] = "Undercity, Tirisfal - Horde Only",
 						["coord"] = { 63, 48.2 },
 					}),

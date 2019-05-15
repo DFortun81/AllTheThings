@@ -64,7 +64,7 @@ _.Zones =
 									["questID"] = 53286,	-- Blooming Siren's Sting
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								},
-								{	-- Boarder Patrol [A]
+								{	-- Boarder Patrol [Alliance]
 									["questID"] = 52045,	-- Boarder Patrol
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -146,8 +146,8 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Ordnance Orders [A]
-									["questID"] = 52939,	-- Ordnance Orders [A]
+								{	-- Ordnance Orders [Alliance]
+									["questID"] = 52939,	-- Ordnance Orders [Alliance]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 									--Note!! 10/16 offered Shoalbreach Waistguard
@@ -223,7 +223,7 @@ _.Zones =
 								q(52446, {	-- Sister Absinthe
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								{	-- Son of a Bee [A]
+								{	-- Son of a Bee [Alliance]
 									["questID"] =  50591,	-- Son of a Bee
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,

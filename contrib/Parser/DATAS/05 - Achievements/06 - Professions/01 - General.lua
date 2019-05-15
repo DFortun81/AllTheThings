@@ -68,8 +68,8 @@ _.Achievements =
 						title(305),		--	Artisan
 					}),
 					{
-						["allianceAchievementID"] = 12731,	-- Professional Kul Tiran Master [A]
-						["hordeAchievementID"] = 12733,		-- Professional Zandalari Master [H]
+						["allianceAchievementID"] = 12731,	-- Professional Kul Tiran Master [Alliance]
+						["hordeAchievementID"] = 12733,		-- Professional Zandalari Master [Horde]
 					},
 					ach(10582),		-- Professional Legion Master
 					ach(734),		-- Professional Northrend Master
