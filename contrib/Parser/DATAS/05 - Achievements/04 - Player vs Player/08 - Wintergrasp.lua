@@ -22,55 +22,29 @@ _.Achievements =
 							{	-- Black War Mammoth
 								["achievementID"] = 2080,	-- Black War Mammoth
 							},
-							{	-- Destruction Derby [Alliance]
-								["achievementID"] = 1737,	-- Destruction Derby
-								["races"] = ALLIANCE_ONLY,
+							{	-- Destruction Derby
+								["allianceAchievementID"] = 1737,	-- Destruction  [Alliance]
+								["hordeAchievementID"] = 2476,		-- Destruction Derby [Horde]
 								["g"] = {
 									{	-- Wintergrasp Catapult
-										["achievementID"] = 1737,	-- Destruction Derby
-										["criteriaID"] = 1,			-- Wintergrasp Catapult
-										["races"] = ALLIANCE_ONLY,
+										["allianceAchievementID"] = 1737,	-- Destruction Derby [Alliance]
+										["hordeAchievementID"] = 2476,		-- Destruction Derby [Horde]
+										["criteriaID"] = 1,					-- Wintergrasp Catapult
 									},
 									{	-- Wintergrasp Demolisher
-										["achievementID"] = 1737,	-- Destruction Derby
-										["criteriaID"] = 2,			-- Wintergrasp Demolisher
-										["races"] = ALLIANCE_ONLY,
+										["allianceAchievementID"] = 1737,	-- Destruction Derby [Alliance]
+										["hordeAchievementID"] = 2476,		-- Destruction Derby [Horde]
+										["criteriaID"] = 2,					-- Wintergrasp Demolisher
 									},
 									{	-- Wintergrasp Siege Engine
-										["achievementID"] = 1737,	-- Destruction Derby
-										["criteriaID"] = 3,			-- Wintergrasp Siege Engine
-										["races"] = ALLIANCE_ONLY,
+										["allianceAchievementID"] = 1737,	-- Destruction Derby [Alliance]
+										["hordeAchievementID"] = 2476,		-- Destruction Derby [Horde]
+										["criteriaID"] = 3,					-- Wintergrasp Siege Engine
 									},
 									{	-- Wintergrasp Tower Cannon
-										["achievementID"] = 1737,	-- Destruction Derby
-										["criteriaID"] = 4,			-- Wintergrasp Tower Cannon
-										["races"] = ALLIANCE_ONLY,
-									},
-								},
-							},
-							{	-- Destruction Derby [HORDE]
-								["achievementID"] = 2476,	-- Destruction Derby
-								["races"] = HORDE_ONLY,
-								["g"] = {
-									{	-- Wintergrasp Catapult
-										["achievementID"] = 2476,	-- Destruction Derby
-										["criteriaID"] = 1,			-- Wintergrasp Catapult
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Wintergrasp Demolisher
-										["achievementID"] = 2476,	-- Destruction Derby
-										["criteriaID"] = 2,			-- Wintergrasp Demolisher
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Wintergrasp Siege Engine
-										["achievementID"] = 2476,	-- Destruction Derby
-										["criteriaID"] = 3,			-- Wintergrasp Siege Engine
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Wintergrasp Tower Cannon
-										["achievementID"] = 2476,	-- Destruction Derby
-										["criteriaID"] = 4,			-- Wintergrasp Tower Cannon
-										["races"] = HORDE_ONLY,
+										["allianceAchievementID"] = 1737,	-- Destruction Derby [Alliance]
+										["hordeAchievementID"] = 2476,		-- Destruction Derby [Horde]
+										["criteriaID"] = 4,					-- Wintergrasp Tower Cannon
 									},
 								},
 							},
