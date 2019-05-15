@@ -21,16 +21,19 @@ _.Holidays = bubbleDown({["u"] = 18},
 							{	-- Flirt With Disaster
 								["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
 								["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
+								["u"] = 18,							-- Love is in the Air Filter
 								["g"] = {
 									{	-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
 										["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
 										["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
 										["criteriaID"] = 1,					-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 									{	-- Handful of Rose Petals on Sraaz // Kissed Jeremiah Payson
 										["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
 										["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
 										["criteriaID"] = 2,					-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 								},
 							},
@@ -44,26 +47,31 @@ _.Holidays = bubbleDown({["u"] = 18},
 							{	-- Nation of Adoration
 								["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
 								["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+								["u"] = 18,							-- Love is in the Air Filter
 								["g"] = {
 									{	-- A Gift for the High Priestess of Elune // A Gift for the High Overlord
 										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
 										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
 										["criteriaID"] = 1,					-- A Gift for the High Priestess of Elune // A Gift for the High Overlord
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 									{	-- A Gift for the Prophet // A Gift for the Regent Lord of Quel'Thalas
 										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
 										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
 										["criteriaID"] = 2,					-- A Gift for the Prophet // A Gift for the Regent Lord of Quel'Thalas
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 									{	-- A Gift for the Lord of Ironforge // A Gift for the High Chieftain
 										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
 										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
 										["criteriaID"] = 3,					-- A Gift for the Lord of Ironforge // A Gift for the High Chieftain
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 									{	-- A Gift for the King of Stormwind // A Gift for the Banshee Queen
 										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
 										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
 										["criteriaID"] = 4,					-- A Gift for the King of Stormwind // A Gift for the Banshee Queen
+										["u"] = 18,							-- Love is in the Air Filter
 									},
 								},
 							},

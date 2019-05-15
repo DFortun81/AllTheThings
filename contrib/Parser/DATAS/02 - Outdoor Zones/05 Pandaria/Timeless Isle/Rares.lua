@@ -10,6 +10,13 @@ _.Zones =
 				["mapID"] = 554,	-- Timeless Isle
 				["g"] = {
 					n(-16, {	-- Rares
+						--[[
+						{	-- Blackguard's Jetsam
+							["coords"] = {
+								{ 22.69, 58.93, 554 },
+							},
+							-- Turns into Spectral Treasure Chest npcID 72018
+						--]]
 						{	-- Archiereus of Flame*
 							["npcID"] = 73174,	-- Archiereus of Flame
 							["questID"] = 33312,
