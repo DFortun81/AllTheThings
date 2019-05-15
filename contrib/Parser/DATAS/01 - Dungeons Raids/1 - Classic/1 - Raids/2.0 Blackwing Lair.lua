@@ -309,6 +309,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19376),	-- Archimtiros' Ring of Reckoning
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
+					--[[
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					i(12728),	-- Plans: Invulnerable Mail
 					i(1203),	-- Aegis of Stormwind
@@ -378,6 +379,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(13489),	-- Recipe: Transmute Earth to Life
 					i(13486),	-- Recipe: Transmute Undeath to Water
 					i(13487),	-- Recipe: Transmute Water to Undeath
+					--]]
 				},
 			})
 		},
