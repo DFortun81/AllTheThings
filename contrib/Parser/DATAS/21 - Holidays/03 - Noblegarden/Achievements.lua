@@ -79,15 +79,10 @@ _.Holidays = bubbleDown({["u"] = 19},
 								["achievementID"] = 2676,	-- I Found One
 								["u"] = 19,					-- Noblegarden Filter
 							},
-							{	-- Noble Garden [Alliance]
-								["achievementID"] = 2421,	-- Noble Garden [Alliance]
-								["u"] = 19,					-- Noblegarden Filter
-								["races"] = ALLIANCE_ONLY,
-							},
-							{	-- Noble Garden [Horde]
-								["achievementID"] = 2420,	-- Noble Garden [Horde]
-								["u"] = 19,					-- Noblegarden Filter
-								["races"] = HORDE_ONLY,
+							{	-- Noble Garden
+								["allianceAchievementID"] = 2421,	-- Noble Garden [Alliance]
+								["hordeAchievementID"] = 2420,		-- Noble Garden [Horde]
+								["u"] = 19,							-- Noblegarden Filter
 							},
 							{	-- Shake Your Bunny-Maker
 								["achievementID"] = 2422,	-- Shake Your Bunny-Maker
@@ -155,89 +150,46 @@ _.Holidays = bubbleDown({["u"] = 19},
 									
 								},
 							},
-							{	-- Spring Fling [Alliance]
-								["achievementID"] = 2419,	-- Spring Fling [Alliance]
-								["u"] = 19,					-- Noblegarden Filter
-								["races"] = ALLIANCE_ONLY,
+							{	-- Spring Fling
+								["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+								["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
+								["u"] = 19,							-- Noblegarden Filter
 								["g"] = {
 									{	-- Azure Watch
-										["achievementID"] = 2419,	-- Spring Fling [Alliance]
+										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 										["criteriaID"] = 1,			-- Azure Watch
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											97,	-- Azuremyst Isle
 										},
-										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Dolanaar
-										["achievementID"] = 2419,	-- Spring Fling [Alliance]
+										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 										["criteriaID"] = 2,			-- Dolanaar
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											57,	-- Teladrassil
 										},
-										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Goldshire
-										["achievementID"] = 2419,	-- Spring Fling [Alliance]
+										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 										["criteriaID"] = 3,			-- Goldshire
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											37,	-- Elwynn Forest
 										},
-										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Kharanos
-										["achievementID"] = 2419,	-- Spring Fling [Alliance]
+										["allianceAchievementID"] = 2419,	-- Spring Fling [Alliance]
+										["hordeAchievementID"] = 2497,		-- Spring Fling [Horde]
 										["criteriaID"] = 4,			-- Kharanos
 										["u"] = 19,					-- Noblegarden Filter
 										["maps"] = {
 											27,	-- Dun Morogh
 										},
-										["races"] = ALLIANCE_ONLY,
-									},
-								},
-							},
-							{	-- Spring Fling [Horde]
-								["achievementID"] = 2497,	-- Spring Fling [Alliance]
-								["u"] = 19,					-- Noblegarden Filter
-								["races"] = HORDE_ONLY,
-								["g"] = {
-									{	-- Bloodhoof Village
-										["achievementID"] = 2497,	-- Spring Fling [Alliance]
-										["criteriaID"] = 1,			-- Bloodhoof Village
-										["u"] = 19,					-- Noblegarden Filter
-										["maps"] = {
-											7,	-- Mulgore
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Brill
-										["achievementID"] = 2497,	-- Spring Fling [Alliance]
-										["criteriaID"] = 2,			-- Brill
-										["u"] = 19,					-- Noblegarden Filter
-										["maps"] = {
-											18,	-- Tirisfal Glades
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Falconwing Square
-										["achievementID"] = 2497,	-- Spring Fling [Alliance]
-										["criteriaID"] = 3,			-- Falconwing Square
-										["u"] = 19,					-- Noblegarden Filter
-										["maps"] = {
-											94,	-- Eversong Woods
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Razor Hill
-										["achievementID"] = 2497,	-- Spring Fling [Alliance]
-										["criteriaID"] = 4,			-- Razor Hill
-										["u"] = 19,					-- Noblegarden Filter
-										["maps"] = {
-											1,	-- Durotar
-										},
-										["races"] = HORDE_ONLY,
 									},
 								},
 							},
