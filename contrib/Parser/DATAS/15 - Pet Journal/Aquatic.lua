@@ -16,7 +16,7 @@ _.PetJournal =
 		p(1753), 	-- Bleakwater Jelly
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
-		p(2479),	-- Bucketshell
+		h(p(2479)),	-- Bucketshell
 		p(174), 	-- Chuck
 		p(2400),	-- Coastal Bounder
 		p(2386),	-- Coastal Scuttler
@@ -100,7 +100,7 @@ _.PetJournal =
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
-		p(2478);	-- Sir Snips
+		a(p(2478));	-- Sir Snips
 		p(2475),	-- Slippy
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
