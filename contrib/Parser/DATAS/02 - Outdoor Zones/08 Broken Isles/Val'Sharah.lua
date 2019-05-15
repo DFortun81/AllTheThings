@@ -1396,6 +1396,7 @@ _.Zones =
 							i(121649),	-- Vibrant Temple Masonry
 						},
 					}),
+					
 					{	-- The Chieftain's Beads
 						["questID"] = 38146,	-- The Chieftain's Beads
 						["itemID"] = 128340,
@@ -1494,17 +1495,31 @@ _.Zones =
 						["coord"] = { 40.7, 53.0, 641 },
 						["qg"] = 92850,	-- Commander Jarod Shadowsong
 					}),
-					q(40890,  {	-- The Tears of Elune
-						["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
-						["coord"] = { 53.5, 55.9, 641 },
+					{	-- The Tears of Elune
+						--["objectID"] = 248534,	-- The Tears of Elune
+						["questID"] = 40890,	-- The Tears of Elune
+						["sourceQuests"] = {
+							38743,	-- The Fate of Val'Sharah
+						},
+						["coords"] = {
+							{ 53.7, 55.8, 641 },
+						},
 						["icon"] = "Interface\\Icons\\inv_jewelcrafting_gem_42",
 						["g"] = {
-							i(130001),	-- Shaladrassil Cuirass
-							i(129993),	-- Shaladrassil Tunic
-							i(129985),	-- Shaladrassil Vestments
-							i(130012),	-- Shaladrassil Chestguard
+							{	-- Shaladrassil Cuirass
+								["itemID"] = 130001,	-- Shaladrassil Cuirass
+							},
+							{	-- Shaladrassil Tunic
+								["itemID"] = 129993,	-- Shaladrassil Tunic
+							},
+							{	-- Shaladrassil Vestments
+								["itemID"] = 129985,	-- Shaladrassil Vestments
+							},
+							{	-- Shaladrassil Chestguard
+								["itemID"] = 130012,	-- Shaladrassil Chestguard
+							},
 						},
-					}),
+					},
 					q(38641,  {	-- The Temple of Elune
 						["sourceQuests"] = { 38377 },	-- The Emerald Queen
 						["coord"] = { 52.4, 63.6, 641 },
