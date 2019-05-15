@@ -263,21 +263,76 @@ _.Achievements =
 						crit(6),		-- Spiked Gauntlets of Anvilrage
 						crit(7),		-- Warmaul of Burningeye
 					}),
-					a(ach(12760)),	-- Kul Tiran Archaeologist
-					a(ach(12762, {	-- Kul Tiran Curator
-						crit(1),		-- Pristine Ceremonial Bonesaw
-						crit(2),		-- Pristine Ancient Runebound Tome
-						crit(3),		-- Pristine Disembowling Sickle
-						crit(4),		-- Pristine Jagged Blade of the Drust
-						crit(5),		-- Pristine Ritual Fetish
-						crit(6),		-- Pristine Soul Coffer
-						crit(7),		-- Pristine Akun'Jar Vase
-						crit(8),		-- Pristine Urn of Passage
-						crit(9),		-- Pristine Rezan Idol
-						crit(10),		-- Pristine High Apothecary's Hood
-						crit(11),		-- Pristine Bwonsamdi Voodoo Mask
-						crit(12),		-- Pristine Blowgun of the Sethrak
-					})),
+					{  -- Kul Tiran Archaeologist/Zandalari Archaeologist
+						["allianceAchievementID"] = 12760,	-- Kul Tiran Archaeologist [Alliance]
+						["hordeAchievementID"] = 12761,		-- Zandalari Archaeologist [Horde]
+					},
+					{  -- Kul Tiran Curator/Zandalari Curator
+						["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+						["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+						["g"] = {
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 1,	-- Pristine Ceremonial Bonesaw [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 2,	-- Pristine Ancient Runebound Tome [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 3,	-- Pristine Disembowling Sickle [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 4,	-- Pristine Jagged Blade of the Drust [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 5,	-- Pristine Ritual Fetish [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 6,	-- Pristine Soul Coffer [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 7,	-- Pristine Akun'Jar Vase [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 8,	-- Pristine Urn of Passage [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 9,	-- Pristine Rezan Idol [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 10, -- Pristine High Apothecary's Hood [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 11, -- Pristine Bwonsamdi Voodoo Mask [A]/[H]
+							},
+							{
+								["allianceAchievementID"] = 12762,	-- Kul Tiran Curator [Alliance]
+								["hordeAchievementID"] = 12764,		-- Zandalari Curator [Horde]
+								["criteriaID"] = 12, -- Pristine Blowgun of the Sethrak [A]/[H]
+							},
+						},	
+					},
 					ach(10600, {	-- Legion Archaeologist
 						ach(9409),		-- Draenor Archaeologist
 						ach(6837),		-- Zen Master Archaeologist
@@ -471,21 +526,6 @@ _.Achievements =
 						crit(18),		-- Pristine Gronn-Tooth Necklace
 						crit(19),		-- Pristine Doomsday Prophecy
 					}),
-					h(ach(12761)),	-- Zandalari Archaeologist
-					h(ach(12764, {	-- Zandalari Curator
-						crit(1),		-- Pristine Ceremonial Bonesaw
-						crit(2),		-- Pristine Ancient Runebound Tome
-						crit(3),		-- Pristine Disembowling Sickle
-						crit(4),		-- Pristine Jagged Blade of the Drust
-						crit(5),		-- Pristine Ritual Fetish
-						crit(6),		-- Pristine Soul Coffer
-						crit(7),		-- Pristine Akun'Jar Vase
-						crit(8),		-- Pristine Urn of Passage
-						crit(9),		-- Pristine Rezan Idol
-						crit(10),		-- Pristine High Apothecary's Hood
-						crit(11),		-- Pristine Bwonsamdi Voodoo Mask
-						crit(12),		-- Pristine Blowgun of the Sethrak
-					})),				
 				},
 			}),
 		},
