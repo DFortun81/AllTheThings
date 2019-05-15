@@ -501,12 +501,13 @@ _.Zones =
 							}),	
 							qa(26818, {	-- Plush Pelts
 								["groups"] = {
-									i(61513),  -- Fuzzy Legwarmers
-									i(61514),  -- Velvety Vest
-									i(61515),  -- Supple Gloves
-									i(61516),  -- Hambone's Spare Collar
+									i(61123),	-- Band of Raptor Teeth
+									i(61513),	-- Fuzzy Legwarmers
+									i(61516),	-- Hambone's Spare Collar
+									i(61515),	-- Supple Gloves
 									i(131609),	-- Supple Support Harness
 									i(131610),	-- Velvet-Lined Chain Gloves
+									i(61514),	-- Velvety Vest
 								},
 								["qg"] = 44083,	-- Linzi Hewstrike
 								["sourceQuests"] = {26823},

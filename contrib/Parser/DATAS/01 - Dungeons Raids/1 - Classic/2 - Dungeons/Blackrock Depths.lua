@@ -78,9 +78,9 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					qh(27593, {	-- Rebirth of the K.E.F
 						["groups"] = {
+							i(68054),	-- Dark Iron Band
 							i(68052),	-- Kargath Cloak
 							i(68053),	-- Thaurissan's Breastplatee
-							i(65980),	-- Dark Iron Band
 						},
 						["qg"] = 45840,	-- Warlord Goretooth
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
