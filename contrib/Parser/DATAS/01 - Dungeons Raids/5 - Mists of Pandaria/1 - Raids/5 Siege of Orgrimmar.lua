@@ -4708,29 +4708,21 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					{	-- Conqueror of Orgrimmar
-						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
-						["races"] = ALLIANCE_ONLY,
+					{  -- Conqueror of Orgrimmar/Liberator of Orgrimmar
+						["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
+						["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
 						["g"] = {
-							{	-- ,Conqueror of Orgrimmar
-								["titleID"] = 211,	-- ,Conqueror of Orgrimmar
-								["races"] = ALLIANCE_ONLY,
+							{
+								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
+								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [A]
+								["titleID"] = 212,	-- Liberator of Orgrimmar [H]
 							},
 						},
 					},
 					{	-- Downfall: Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
 						["criteriaID"] = 3,	-- Garrosh Hellscream
-					},
-					{	-- Liberator of Orgrimmar
-						["achievementID"] = 8680,	-- Liberator of Orgrimmar
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							{	-- ,Liberator of Orgrimmar
-								["titleID"] = 212,	-- ,Liberator of Orgrimmar
-								["races"] = HORDE_ONLY,
-							},
-						},
 					},
 					{	-- Strike!	
 						["achievementID"] = 8537,	-- Strike!
@@ -5974,29 +5966,21 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					{	-- Conqueror of Orgrimmar
-						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
-						["races"] = ALLIANCE_ONLY,
+					{  -- Conqueror of Orgrimmar/Liberator of Orgrimmar
+						["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
+						["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
 						["g"] = {
-							{	-- ,Conqueror of Orgrimmar
-								["titleID"] = 211,	-- ,Conqueror of Orgrimmar
-								["races"] = ALLIANCE_ONLY,
+							{
+								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
+								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [A]
+								["titleID"] = 212,	-- Liberator of Orgrimmar [H]
 							},
 						},
 					},
 					{	-- Downfall: Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
 						["criteriaID"] = 3,	-- Garrosh Hellscream
-					},
-					{	-- Liberator of Orgrimmar
-						["achievementID"] = 8680,	-- Liberator of Orgrimmar
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							{	-- ,Liberator of Orgrimmar
-								["titleID"] = 212,	-- ,Liberator of Orgrimmar
-								["races"] = HORDE_ONLY,
-							},
-						},
 					},
 					{	-- Mythic: Garrosh Hellscream
 						["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
