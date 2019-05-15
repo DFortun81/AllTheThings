@@ -110,7 +110,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141517),	-- Drugon's Snowglobe
 				},
 			})),
-			cr(99929, e(1795, {	 -- Flotsam
+			cr(99929, e(1795,  {	-- Flotsam
 				["questID"] = 43985,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 650 },	-- Highmountain
@@ -224,7 +224,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141515),	-- Leystone Nugget
 				},
 			})),	
-			e(1749, {	-- Nithogg 
+			e(1749, {				-- Nithogg 
 				["questID"] = 42270,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 634 },	-- Stormheim
@@ -290,10 +290,13 @@ _.Instances = { tier(7, {	-- Legion
 					i(147761),	-- Sandblasted Conch
 				},
 			})),
-			e(1756, {	-- The Soultakers
+			e(1756, {				-- The Soultakers
 				["questID"] = 42269,	-- Change to tracking quest later.
 				["isRaid"] = true,
-				["maps"] = { 634 },	-- Stormheim
+				["maps"] = {
+					634,	-- Stormheim
+					635,	-- Shield's Rest
+				},
 				["coord"] = { 78.2, 8.60, 634 },
 				["crs"] = {
 					106981,	-- Captain Hring
