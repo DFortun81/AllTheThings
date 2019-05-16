@@ -3345,6 +3345,13 @@ _.Zones =
 							["coord"] = { 60.4, 55.2, 502 },
 							["g"] = {
 								un(2, i(24551)),	-- Talisman of the Horde
+								un(2, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
+								un(2, i(42021)),	-- Hateful Gladiator's Pendant of victory
+								un(2, i(42022)),	-- Hateful Gladiator's Pendant of dominance
+								un(2, i(42023)),	-- Hateful Gladiator's Pendant of subjugation
+								un(2, i(42024)),	-- Hateful Gladiator's Pendant of ascendance
+								un(2, i(42025)),	-- Hateful Gladiator's Pendant of deliverance
+								un(2, i(42026)),	-- Hateful Gladiator's Pendant of salvation
 								i(146646),	-- Arsenal: Hateful Gladiator's Weapons
 								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
 									i(41913),	-- Hateful Gladiator's Satin Hood
