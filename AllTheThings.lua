@@ -12230,7 +12230,7 @@ app.events.PET_BATTLE_CLOSE = function(...)
 		app.miniVis = false;
 	end
 	if app.mainVis then 
-		ToggleMainList() 
+		app:ToggleMainList() 
 		app.mainVis = false;
 	end
 end
