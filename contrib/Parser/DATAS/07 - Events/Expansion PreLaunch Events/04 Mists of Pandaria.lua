@@ -15,7 +15,7 @@ _.WorldEvents =
 						["achievementID"] = 7467,	-- Theramore's Fall
 						["collectible"] = false,	-- We only want it as a header
 						["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-						["un"] = 3,			-- Unobtainable after MoP Launch
+						["un"] = 3,					-- Unobtainable after MoP Launch
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Theramore Tabard
@@ -28,7 +28,7 @@ _.WorldEvents =
 						["achievementID"] = 7468,	-- Theramore's Fall
 						["collectible"] = false,	-- We only want it as a header
 						["description"] = "Can be bought from Zidormi in Duskwallow Marsh if you completed the level 85 version of the Theramore's Fall Scenario.",
-						["un"] = 3,			-- Unobtainable after MoP Launch
+						["un"] = 3,					-- Unobtainable after MoP Launch
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							{	-- Mini Mana Bomb Toy
