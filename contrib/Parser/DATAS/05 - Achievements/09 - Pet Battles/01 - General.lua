@@ -46,34 +46,72 @@ _.Achievements =
 						crit(5),	-- Tarr the Terrible (Nagrand)
 						crit(6),	-- Vesharr (Spires of Arak)
 					}),
-					a(ach(6603, {	-- Taming Eastern Kingdoms*
-						crit(1),	-- Julia Stevens (Elwynn Forest)
-						crit(2),	-- Old MacDonald (Westfall)
-						crit(3),	-- Lindsay (Redridge Mountains)
-						crit(4),	-- Eric Davidson (Duskwood)
-						crit(5),	-- Steven Lisbane (Northern Stranglethorn)
-						crit(6),	-- Bill Buckler (The Cape of Stranglethorn)
-						crit(7),	-- David Kosse (The Hinterlands)
-						crit(8),	-- Deiza Plaguehorn (Eastern Plaguelands)
-						crit(9),	-- Kortas Darkhammer (Searing Gorge)
-						crit(10),	-- Durin Darkhammer (Burning Steppes)
-						crit(11),	-- Everessa (Swamp of Sorrows)
-						crit(12),	-- Lydia Accoste (Deadwind Pass)
-					})),
-					h(ach(6602, {	-- Taming Kalimdor*
-						crit(1),	-- Zunta (Durotar)
-						crit(2),	-- Dagra the Fierce (Northern Barrens)
-						crit(3),	-- Analynn (Ashenvale)
-						crit(4),	-- Zonya the Sadist (Stonetalon Mountains)
-						crit(5),	-- Merda Stronghoo (Desolace)
-						crit(6),	-- Traitor Gluk (Feralas)
-						crit(7),	-- Elena Flutterfly (Moonglade)
-						crit(8),	-- Cassandra Kaboom (Southern Barrens)
-						crit(9),	-- Grazzle the Great (Dustwallow Marsh)
-						crit(10),	-- Zoltan (Felwood)
-						crit(11),	-- Kela Grimtotem (Thousand Needles)
-						crit(12),	-- Stone Cold Trixxy (Winterspring)
-					})),
+					{  -- Taming Eastern Kingdoms [A]/Taming Kalimdor [H]
+						["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+						["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+						["g"] = {
+							{	-- Julia Stevens (Elwynn Forest)[A]/Zunta (Durotar)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 1,					-- Julia Stevens (Elwynn Forest)[A]/Zunta (Durotar)[H]
+							},
+							{	-- Old MacDonald (Westfall)[A]/Dagra the Fierce (Northern Barrens)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 2,					-- Old MacDonald (Westfall)[A]/Dagra the Fierce (Northern Barrens)[H]
+							},
+							{	-- Lindsay (Redridge Mountains)[A]/Analynn (Ashenvale)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 3,					-- Lindsay (Redridge Mountains)[A]/Analynn (Ashenvale)[H]
+							},
+							{	-- Eric Davidson (Duskwood)[A]/Zonya the Sadist (Stonetalon Mountains)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 4,					-- Eric Davidson (Duskwood)[A]/Zonya the Sadist (Stonetalon Mountains)[H]
+							},
+							{	-- Steven Lisbane (Northern Stranglethorn)[A]/Merda Stronghoo (Desolace)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 5,					-- Steven Lisbane (Northern Stranglethorn)[A]/Merda Stronghoo (Desolace)[H]
+							},
+							{	-- Bill Buckler (The Cape of Stranglethorn)[A]/Traitor Gluk (Feralas)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 6,					-- Bill Buckler (The Cape of Stranglethorn)[A]/Traitor Gluk (Feralas)[H]
+							},
+							{	-- David Kosse (The Hinterlands)[A]/Elena Flutterfly (Moonglade)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 7,					-- David Kosse (The Hinterlands)[A]/Elena Flutterfly (Moonglade)[H]
+							},
+							{	-- Deiza Plaguehorn (Eastern Plaguelands)[A]/Cassandra Kaboom (Southern Barrens)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 8,					-- Deiza Plaguehorn (Eastern Plaguelands)[A]/Cassandra Kaboom (Southern Barrens)[H]
+							},
+							{	-- Kortas Darkhammer (Searing Gorge)[A]/Grazzle the Great (Dustwallow Marsh)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 9,					-- Kortas Darkhammer (Searing Gorge)[A]/Grazzle the Great (Dustwallow Marsh)[H]
+							},
+							{	-- Durin Darkhammer (Burning Steppes)[A]/Zoltan (Felwood)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 10,				-- Durin Darkhammer (Burning Steppes)[A]/Zoltan (Felwood)[H]
+							},
+							{	-- Everessa (Swamp of Sorrows)[A]/Kela Grimtotem (Thousand Needles)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 11,				-- Everessa (Swamp of Sorrows)[A]/Kela Grimtotem (Thousand Needles)[H]
+							},
+							{	-- Lydia Accoste (Deadwind Pass)[A]/Stone Cold Trixxy (Winterspring)[H]
+								["allianceAchievementID"] = 6603,	-- Taming Eastern Kingdoms [A]
+								["hordeAchievementID"] = 6602,		-- Taming Kalimdor [H]
+								["criteriaID"] = 12,				-- Lydia Accoste (Deadwind Pass)[A]/Stone Cold Trixxy (Winterspring)[H]
+							},
+						}
+					},
 					ach(6605, {	-- Taming Northrend*
 						crit(1),	-- Beegle Blastfuse (Howling Fjord)
 						crit(2),	-- Nearly Headless Jacob (Crystalsong Forest)
