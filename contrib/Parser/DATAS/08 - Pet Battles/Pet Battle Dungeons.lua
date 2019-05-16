@@ -10,9 +10,8 @@ _.PetBattles =
 		["coord"] = { 41.6, 71.2, 52 },
 		["maps"] = {
 			52,		-- Westfall
-			291,	-- Dungeon
-			292,	-- Dungeon
-			-- Pet Dungeon????
+			835,	-- Pet Dungeon 1
+			836,	-- Pet Dungeon 2
 		},
 		["isWeekly"] = true,
 		["lvl"] = 110,

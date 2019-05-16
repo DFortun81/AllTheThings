@@ -2798,7 +2798,7 @@ local function RefreshMountCollection()
 	end);
 end
 app.GetCurrentMapID = function()
-	local uiMapID = C_Map.GetBestMapForUnit("player");
+	local uiMapID = C_Map_GetBestMapForUnit("player");
 	
 	-- Onyxia's Lair fix
 	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
@@ -9164,6 +9164,7 @@ app:GetWindow("Unsorted");
 		self.data.total = 0;
 		self.data.indent = 0;
 		self.data.back = 1;
+		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
 	end);
