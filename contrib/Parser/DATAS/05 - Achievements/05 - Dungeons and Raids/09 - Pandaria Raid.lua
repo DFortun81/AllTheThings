@@ -109,15 +109,13 @@ _.Achievements =
 							},
 						},
 					},
-					{  -- Conqueror of Orgrimmar/Liberator of Orgrimmar
-						["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
-						["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
+					{	-- Conqueror of Orgrimmar
+						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{
-								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
-								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
+							{	-- Conqueror of Orgrimmar
 								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
-								["titleID"] = 212,	-- Liberator of Orgrimmar [Horde]
+								["races"] = ALLIANCE_ONLY,
 							},
 						},
 					},
@@ -405,6 +403,16 @@ _.Achievements =
 					},
 					{	-- Less Than Three
 						["achievementID"] = 6683,	-- Less Than Three
+					},
+					{	-- Liberator of Orgrimmar
+						["achievementID"] = 8680,	-- Liberator of Orgrimmar
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- ,Liberator of Orgrimmar
+								["titleID"] = 212,	-- ,Liberator of Orgrimmar
+								["races"] = HORDE_ONLY,
+							},
+						},
 					},
 					{	-- Lightning Overload
 						["achievementID"] = 8094,	-- Lightning Overload
