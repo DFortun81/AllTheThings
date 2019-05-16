@@ -202,6 +202,7 @@ _.GroupFinder =
 					i(92878),	-- Lavasoul Cloak
 					i(92886),	-- Lavasoul Collar
 					i(92884),	-- Lavasoul Ring
+					i(93052),	-- Mogubreaker Hood*				— 5/16/19
 					i(93140),	-- Scavenged Pandaren Axe
 					i(93142),	-- Scavenged Pandaren Axe
 					i(93130),	-- Scavenged Pandaren Broadaxe

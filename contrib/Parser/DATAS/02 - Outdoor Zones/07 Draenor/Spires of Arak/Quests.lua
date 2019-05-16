@@ -63,7 +63,6 @@ _.Zones =
 							["achievementID"] = 8925,	-- Between Arak and a Hard Place (Alliance)
 							["sourceQuests"] = { 35704 },	-- When All is Aligned
 						},
-						follower(218),	-- Talonpriest Ishaal
 					},
 				}),
 				ach(8926, {	-- Between Arak and a Hard Place (Horde)
@@ -87,7 +86,10 @@ _.Zones =
 						{	-- Criteria 4 — The Gods of Arak
 							["criteriaID"] = 4,	-- The Gods of Arak
 							["achievementID"] = 8926,	-- Between Arak and a Hard Place (Horde)
-							["sourceQuests"] = { 35012 },	-- Sethe, the Dead God
+							["sourceQuests"] = {
+								35012,	-- Sethe, the Dead God
+								35245,	-- A Sentimental Relic
+							},
 						},
 						{	-- Criteria 5 — Legacy of the Apexis
 							["criteriaID"] = 5,	-- Legacy of the Apexis
@@ -117,7 +119,6 @@ _.Zones =
 							["achievementID"] = 8926,	-- Between Arak and a Hard Place (Horde)
 							["sourceQuests"] = { 35704 },	-- When All is Aligned
 						},
-						follower(218),	-- Talonpriest Ishaal
 					},
 				}),
 
@@ -308,6 +309,13 @@ _.Zones =
 					["qg"] = 80481,	-- High Ravenspeaker Krikka
 				}),
 
+
+				q(35081, {	-- Clearing Out Before Cleaning Up
+					["sourceQuests"] = { 35080 },	-- The Mother Lode
+					["coord"] = { 59.1, 79.2, 542 },
+					["qg"] = 81784,	-- Engineer Gazwitz
+				}),
+
 				
 				q(34921, {	-- Cult of the Ravenspeakers
 					["sourceQuests"] = {
@@ -316,6 +324,17 @@ _.Zones =
 					},
 					["coord"] = { 46.8, 46.0, 542 },
 					["qg"] = 80648,	-- Anzu
+				}),
+
+				
+				q(36428, {	-- Curing With Force
+					["sourceQuests"] = {
+						36384,	-- Field Trial
+						35089,	-- Skimming Off the Top
+						35090,	-- The Right Parts for the Job
+					},
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81443,	-- Krixel Pinchwhistle
 				}),
 
 				
@@ -362,6 +381,37 @@ _.Zones =
 				}),
 
 
+				q(36384, {	-- Field Trial
+					["sourceQuests"] = { 35285 },	-- Follow that Hotrod!
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81443,	-- Krixel Pinchwhistle
+				}),
+
+
+				q(35298, {	-- Flame On
+					["sourceQuests"] = {
+						36428,	-- Curing With Force
+						35211,	-- Preventing the Worst
+						35091,	-- Sporicide
+					},
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81443,	-- Krixel Pinchwhistle
+					["g"] = {
+						i(111957),	-- Salvage Yard, Level 1
+					},
+				}),
+
+				
+				q(35285, {	-- Follow that Hotrod!
+					["sourceQuests"] = {
+						35081,	-- Clearing Out Before Cleaning Up
+						35082,	-- Getting the Crew Back Together
+					},
+					["coord"] = { 59.1, 79.2, 542 },
+					["qg"] = 81784,	-- Engineer Gazwitz
+				}),
+
+				
 				qa(36353, {	-- For Old Times' Sake
 					["sourceQuests"] = { 35482 },	-- Admiral Taylor
 					["coord"] = { 39.9, 60.6, 542 },
@@ -376,6 +426,13 @@ _.Zones =
 					["sourceQuests"] = { 35000 },	-- Banished From the Sky
 					["coord"] = { 62.1, 42.6, 542 },
 					["qg"] = 80758,	-- Talon Guard Kurekk
+				}),
+
+
+				q(35082, {	-- Getting the Crew Back Together
+					["sourceQuests"] = { 35080 },	-- The Mother Lode
+					["coord"] = { 59.1, 79.2, 542 },
+					["qg"] = 81773,	-- Kimzee Pinchwhistle
 				}),
 
 				
@@ -483,6 +540,16 @@ _.Zones =
 					["sourceQuests"] = { 34827 },	-- Last of the Talonpriests
 					["coord"] = { 47.9, 34.6, 542 },
 					["qg"] = 80232,	-- Talonpriest Ishaal
+				}),
+
+
+				q(36062, {	-- Kimzee Pinchwhistle
+					["sourceQuests"] = { 35298 },	-- Flame On
+					["coord"] = { 61.5, 72.7, 542 },
+					["qg"] = 82468,	-- Kimzee Pinchwhistle
+					["g"] = {
+						follower(192),	-- Kimzee Pinchwhistle
+					},
 				}),
 
 				
@@ -629,6 +696,23 @@ _.Zones =
 				}),
 
 
+				q(35211, {  -- Preventing the Worst
+					["sourceQuests"] = {
+						36384,	-- Field Trial
+						35089,	-- Skimming Off the Top
+						35090,	-- The Right Parts for the Job
+					},
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81443,	-- Krixel Pinchwhistle
+					["g"] = {
+						i(118090),	-- "Super Sterilized" Blastguard Britches
+						i(118089),	-- "Super Sterilized" Blastguard Leggings
+						i(118087),	-- "Super Sterilized" Blastguard Legplates
+						i(118088),	-- "Super Sterlized" Blastguard Legwraps
+					},
+				}),
+				
+				
 				qa(35408, {	-- Prime the Cannons
 					["sourceQuests"] = { 82194 },	-- Sir Edward
 					["coord"] = { 37.6, 53.8, 542 },
@@ -749,6 +833,13 @@ _.Zones =
 				}),
 
 				
+				q(35089, {	-- Skimming Off the Top
+					["sourceQuests"] = { 35285 },	-- Follow that Hotrod!
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81972,	-- Kimzee Pinchwhistle
+				}),
+				
+				
 				q(35259, {	-- Sol Sisters
 				--	SQ needs confirmation.
 				--	i didn't pick this up until after turning in 'back from beyond' and picking up 'power unearthed,' which is a breadcrumb that sends you to this area
@@ -771,6 +862,17 @@ _.Zones =
 				}),
 
 
+				q(35091, {	-- Sporicide
+					["sourceQuests"] = {
+						36384,	-- Field Trial
+						35089,	-- Skimming Off the Top
+						35090,	-- The Right Parts for the Job
+					},
+					["coord"] = { 58.7, 92.7, 542 },
+					["qg"] = 81978,	-- Kimzee Pinchwhistle
+				}),
+
+				
 				qa(35716, {	-- Sticky Situation
 					["sourceQuests"] = { 35713 },	-- The Tinkertoss Twins
 					["coord"] = { 56.2, 42.4, 542 },
@@ -785,6 +887,31 @@ _.Zones =
 				}),
 				
 
+				q(37141, {	-- Talonpriest Ishaal
+					["sourceQuests"] = {	-- all "Between Arak and a Hard Place" criteria
+						35671,	-- A Gathering of Shadows
+						35482,	-- Admiral Taylor (Alliance)
+						36183,	-- Admiral Taylor (Horde)
+						34942,	-- Back from Beyond
+						35012,	-- Sethe, the Dead God
+						35245,	-- A Sentimental Relic
+						35634,	-- Control is King
+						35896,	-- The Avatar of Terokk
+						36165,	-- No Time to Waste (Alliance)
+						35835,	-- The Ebon Hunter (Alliance)
+						36166,	-- No Time to Waste (Horde)
+						35797,	-- The Ebon Hunter (Horde)
+						35298,	-- Flame On
+						35704,	-- When All is Aligned
+					},
+					["coord"] = { 46.5, 46.7, 542 },
+					["qg"] = 83959,	-- Talonpriest Ishaal
+					["g"] = {
+						follower(218),	-- Talonpriest Ishaal
+					},
+				}),
+
+				
 				q(34998, {	-- Talon Watch
 					["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
 					["coord"] = { 45.9, 45.7, 542 },
@@ -903,6 +1030,30 @@ _.Zones =
 					["qg"] = 81770,	-- Reshad
 				}),
 
+				
+				q(35080, {	-- The Mother Lode
+					["sourceQuests"] = {
+						35077,	-- Defungination
+						35079,	-- Spore-be-Gone
+						36179,	-- Unwanted Pests
+					},
+					["coord"] = { 61.4, 72.9, 542 },
+					["qg"] = 81109,	-- Kimzee Pinchwhistle
+				}),
+				
+				
+				q(35090, {  -- The Right Parts for the Job
+					["sourceQuests"] = { 35285 },	-- Follow that Hotrod!
+					["coord"] = { 58.4, 92.2, 542 },
+					["qg"] = 81972,	-- Kimzee Pinchwhistle
+					["g"] = {
+						i(118077),	-- Fungal Reisistant Chainmail Boots
+						i(118075),	-- Fungal Resistant Plate Boots
+						i(118076),	-- Fungal Resistant Slippers
+						i(118078),	-- Fungal Resistant Workboots
+					},
+				}),
+				
 				
 				q(34655, {	-- The Shadows of Skettis
 					["sourceQuests"] = {
@@ -1037,24 +1188,18 @@ _.Zones =
 				qa(36997),	-- Boar Training: Bulbapore
 				qh(37034),	-- Boar Training: Bulbapore
 				q(37177),	-- Call of the Talon King
-				q(35081),	-- Clearing Out Before Cleaning Up
 				qh(37052),	-- Clefthoof Training: Bulbapore
 				qa(36987),	-- Clefthoof Training: Bulbapore
 				q(35634),	-- Control is King
-				q(36428),	-- Curing With Force
 				qa(36023),	-- Extrinsic Motivation
 				qh(36022),	-- Extrinsic Motivation
 				q(37417),	-- Feast of the Spires
 				q(37416),	-- Feast of the Spires
-				q(36384),	-- Field Trial
-				q(35298),	-- Flame On
 				q(36111),	-- Flight Home
 				q(36112),	-- Flight Home
 				q(36577),	-- Flying Machine Completed
-				q(35285),	-- Follow that Hotrod!
 				qa(36029),	-- Gardul Venomshiv
 				qh(36028),	-- Gardul Venomshiv
-				q(35082),	-- Getting the Crew Back Together
 				q(44570),	-- Honor the Flame
 				qh(35766),	-- I See Dead Arakkoa
 				qh(35322),	-- I See Dead People (Horde — wowhead lists this as neutral, but the QG is a Horde NPC)
@@ -1063,7 +1208,6 @@ _.Zones =
 				q(37315),	-- Inn
 				q(37313),	-- Inn
 				qh(35275),	-- Inspecting the Troops (Horde)
-				q(36062),	-- Kimzee Pinchwhistle
 				q(35028),	-- Krikka and Vakora Tracking
 				q(35201),	-- Krixel
 				q(36184),	-- Mother Lode
@@ -1091,8 +1235,6 @@ _.Zones =
 				qh(37072),	-- Riverbeast Training: Bulbapore
 				q(36798),	-- Rooby Roo
 				qh(35879),	-- Safety Measures
-				q(35089),	-- Skimming Off the Top
-				q(35091),	-- Sporicide
 				qa(37281),	-- Standing United
 				qh(37276),	-- Standing United
 				qh(35706),	-- Sticky Situation
@@ -1100,9 +1242,7 @@ _.Zones =
 				qh(37097),	-- Talbuk Training: Bulbapore
 				qa(36975),	-- Talbuk Training: Bulbapore
 				q(37144),	-- Talon Guard Kurekk
-				q(37141),	-- Talonpriest Ishaal
 				qh(35797),	-- The Ebon Hunter
-				q(35080),	-- The Mother Lode
 				qa(35959),	-- The Power of Poison
 				qh(35947),	-- The Power of Poison
 				q(35649),	-- The Writhing Mire
@@ -1131,18 +1271,6 @@ _.Zones =
 					i(118086),	-- Admiral Taylor's Keg Tapper
 					i(114945),	-- Admiral Taylor's Shield
 					i(118085),	-- Admiral Taylor's Staff of Wisdom
-				}),
-				q(35211, {  -- Preventing the Worst
-					i(118090),	-- "Super Sterilized" Blastguard Britches
-					i(118089),	-- "Super Sterilized" Blastguard Leggings
-					i(118087),	-- "Super Sterilized" Blastguard Legplates
-					i(118088),	-- "Super Sterlized" Blastguard Legwraps
-				}),
-				q(35090, {  -- The Right Parts for the Job
-					i(118077),	-- Fungal Reisistant Chainmail Boots
-					i(118075),	-- Fungal Resistant Plate Boots
-					i(118076),	-- Fungal Resistant Slippers
-					i(118078),	-- Fungal Resistant Workboots
 				}),
 				n(-359, {	-- Brewery
 					qa(37287,  {  -- Cleaning House
