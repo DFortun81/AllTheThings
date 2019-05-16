@@ -274,6 +274,14 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
 								},
+								{	-- This Bird You Cannot Change
+									["questID"] = 51667,	-- This Bird You Cannot Change
+									["g"] = {
+										i(157845),	-- Falconer's Whistle
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+								},
 								q(51767, {	-- Trapline [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,

@@ -428,6 +428,9 @@ _.Zones =
 							["sourceQuests"] = { 50457 },	-- Break on Through
 						}),
 						qa(50456, {	-- Hexed Hatchlings
+							["g"] = {
+								i(157845),	-- Falconer's Whistle
+							},
 							["qg"] = 131640,	-- Inquisitor Notley
 							["coord"] = { 31.2, 22.7 },
 							["sourceQuests"] = { 50446 },	-- Witchrending

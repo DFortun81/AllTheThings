@@ -389,6 +389,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95177),	-- Choker of Stygimolochy
 					i(95178),	-- Lootraptor's Amulet
 					i(95179),	-- Necklace of the Hazillosaurus
+					i(95980),	-- Necklace of the Terra-Cotta Protector
 					i(95180),	-- Overcompensating Chain of the Alpha Male
 					
 					-- Chests

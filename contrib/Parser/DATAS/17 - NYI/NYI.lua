@@ -943,6 +943,8 @@ _.NeverImplemented =
 			un(1, i(33193)),	-- Unknown
 			un(1, i(33194)),	-- Unknown
 			un(1, i(33195)),	-- Unknown
+			un(1, i(167135)),	-- Unknown
+			un(1, i(167136)),	-- Unknown
 			un(1, i(33196)),	-- Unknown
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(108813)),	-- Unknown
@@ -1839,6 +1841,9 @@ _.NeverImplemented =
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
+			un(1, i(140717)),	-- Marksman Recurve Bow
+			un(1, i(150612)),	-- Marksman Recurve Bow
+			
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 		}),
 		n(-346, {	-- Crossbows
@@ -1863,6 +1868,7 @@ _.NeverImplemented =
 			un(1, i(108785)),	-- Unknown
 			un(1, i(115295)),	-- Spectral Dagger
 			un(1, i(108786)),	-- Unknown
+			un(1, i(167148)),	-- Unknown
 			un(1, i(64848)),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
 			un(1, i(64859)),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			un(1, i(109269)),	-- Unknown
@@ -1914,6 +1920,8 @@ _.NeverImplemented =
 			un(1, i(108790)),	-- Unknown
 			un(1, i(109491)),	-- Unknown
 			un(1, i(109529)),	-- Unknown
+			un(1, i(140691)),	-- Packmasters Rifle
+			un(1, i(150586)),	-- Packmasters Rifle
 			un(1, i(122080)),	-- Warscout Shotgun (not added version)
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 			
@@ -1979,6 +1987,7 @@ _.NeverImplemented =
 			un(1, i(134562)),	-- Odyns Fury
 			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
+			un(1, i(167143)),	-- Unknown
 			un(1, i(43922)),	-- Honed Lightblade
 			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
@@ -2087,6 +2096,7 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
+			un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			un(1, i(167142)),	-- Unknown (probably discarded idea of crucible of storms loot)
 			un(1, i(167145)),	-- Unknown (probably discarded idea of crucible of storms loot)
 			un(1, i(167147)),	-- Unknown (probably discarded idea of crucible of storms loot)
@@ -2187,7 +2197,6 @@ _.NeverImplemented =
 	un(1, i(84714)),	-- Dreadful Gladiator's barrier
 	un(1, i(84715)),	-- Dreadful Gladiator's redoubt
 	--
-	un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
 	un(1, i(129899)),	-- The Eagle Spear
@@ -2196,7 +2205,7 @@ _.NeverImplemented =
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
 	un(1, i(32184)),	-- Chancellor's Painsaw
-	un(1, i(7188)),	--  Stormwind Guard Shield [This is used by NPC's]
+	un(1, i(7188)),		--  Stormwind Guard Shield [This is used by NPC's]
 	un(1, i(18303)),	-- Nimble Buckler
 	un(1, i(18342)),	-- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)),	-- Ironbark Shield [NPC Shield]
@@ -2240,7 +2249,7 @@ _.NeverImplemented =
 	un(1, i(20522)),	-- Feral Staff
 	un(1, i(20003)),	-- Devilsaur Claws
 	un(1, i(20005)),	-- Devilsaur Claws
-	un(1, i(3222)),	-- Wicked Dagger
+	un(1, i(3222)),		-- Wicked Dagger
 	un(1, i(38245)),	-- Crystalline Providence
 	un(1, i(38248)),	-- Torch of the Fallen Souls
 	un(1, i(84085)),	-- Dreadwaste Meditation Staff
@@ -2251,7 +2260,7 @@ _.NeverImplemented =
 	un(1, i(117010)),	-- Forester's Axe 										(Never added in Game)
 	un(1, i(120272)), 	-- High Warlord's Razor [This version never implemented]
 	un(1, i(120273)), 	-- High Warlord's Razor [This version never implemented]
-	un(1, i(913)),	-- Huge Ogre Sword
+	un(1, i(913)),		-- Huge Ogre Sword
 	un(1, i(12469)),	-- Mutilator
 	un(1, i(23432)),	-- Engraved Greatsword
 	un(1, i(32186)),	-- Chancellor's Warblade
@@ -2272,7 +2281,9 @@ _.NeverImplemented =
 	un(1, i(150715)),	-- Illidari Warglaive
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(128824)), 	-- Tome of the Silver Hand	
-	}),
+	}),		-- Weapons end
+	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
+	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm
 	un(1, i(151377)),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)),	-- Helm of the Stormcaller - Never Added
