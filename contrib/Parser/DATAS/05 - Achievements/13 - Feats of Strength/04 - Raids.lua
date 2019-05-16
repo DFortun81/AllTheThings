@@ -51,63 +51,45 @@ _.Achievements =
 					un(2, ach(7485)),		-- Cutting Edge: Will of the Emperor
 					un(2, ach(11191)),		-- Cutting Edge: Xavius
 					ach(5839, {				-- Dragonwrath, Tarecgosa's Rest
-						["groups"] = {
-						},
 						["classes"] = {5,7,8,9,10,11},
 					}),
 					un(9, ach(11744)),		-- Drop Dead, Gorgeous
 					ach(6181, {				-- Fangs of the Father
-						["groups"] = {
-						},
 						["classes"] = {4},
 					}),
 					un(2, ach(3004)),		-- He Feeds On Your Tears (10 player)
 					un(2, ach(3005)),		-- He Feeds On Your Tears (25 player)
 					ach(3316, {				-- Herald of the Titans
-						title(131),				-- ,Herald of the Titans
+						title(131),			-- ,Herald of the Titans
 					}),
 					un(2, ach(5313)),		-- I Can't Hear You Over the Sound of How Awesome I Am
 					un(2, ach(8089)),		-- I Thought He Was Supposed to Be Hard?
 					ach(11869, {			-- I'll Hold These For You Until You Get Out
 						i(150372, {				-- Arsenal: The Warglaives of Azzinoth
-							["groups"] = {
-							},
 							["classes"] = {12},
 						}),
 					}),
 					ach(4623, {				-- Shadowmourne
-						["groups"] = {
-						},
 						["classes"] = {1,2,6},
 					}),
 					ach(429, {				-- Sulfuras, Hand of Ragnaros
-						["groups"] = {
-						},
 						["classes"] = {1,2,6},
 					}),
 					ach(11387, {			-- The Chosen
-						title(347),				-- the Chosen
+						title(347),			-- the Chosen
 					}),
 					un(2, ach(2496)),		-- The Fifth Element
 					ach(725, {				-- Thori'dal, the Stars' Fury
-						["groups"] = {
-						},
 						["classes"] = {3},
 					}),
 					ach(428, {				-- Thunderfury, Blessed Blade of the Windseeker
-						["groups"] = {
-						},
 						["classes"] = {4,10,12},
 					}),
 					un(2, ach(9680)),		-- Time is a Flat Circle
 					ach(3142, {				-- Val'anyr, Hammer of Ancient Kings
-						["groups"] = {
-						},
 						["classes"] = {2,5,7,10,11},
 					}),
 					ach(426, {				-- Warglaives of Azzinoth
-					["groups"] = {
-						},
 						["classes"] = {1,4,6,10,12},
 					}),
 				},

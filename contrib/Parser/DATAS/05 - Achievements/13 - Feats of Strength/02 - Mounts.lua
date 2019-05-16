@@ -47,7 +47,7 @@ _.Achievements =
 					un(14, ach(6322)),	-- Ruthless Gladiator's Twilight Drake
 					un(2, ach(416)),	-- Scarab Lord
 					ach(5767, {			-- Scourer of the Eternal Sands
-						title(143),			-- the Camel-Hoarder
+						title(143),		-- the Camel-Hoarder
 					}),
 					un(14, ach(886)),	-- Swift Nether Drake
 					un(2, ach(881)),	-- Swift Razzashi Raptor
@@ -56,13 +56,15 @@ _.Achievements =
 					un(26, ach(980)),	-- The Horseman's Reins
 					un(14, ach(8678)),	-- Tyrannical Gladiator's Cloud Serpent
 					un(14, ach(888)),	-- Vengeful Nether Drake
-					h(ach(3357)),		-- Venomhide Ravasaur
+					{	-- Venomhide Ravasaur // Winterspring Frostsaber
+						["allianceAchievementID"] = 3356,	-- Winterspring Frostsaber
+						["hordeAchievementID"] = 3357,		-- Venomhide Ravasaur
+					},
 					un(14, ach(6003)),	-- Vicious Gladiator's Twilight Drake
 					un(14, ach(10999)),	-- Vindictive Gladiator's Storm Dragon
 					un(14, ach(10146)),	-- Warmongering Gladiator's Felblood Gronnling
 					ach(424),			-- Why? Because It's Red
 					un(14, ach(10137)),	-- Wild Gladiator's Felblood Gronnling
-					a(ach(3356)),		-- Winterspring Frostsaber
 					un(14, ach(4600)),	-- Wrathful Gladiator's Frost Wyrm
 				},
 			}),
