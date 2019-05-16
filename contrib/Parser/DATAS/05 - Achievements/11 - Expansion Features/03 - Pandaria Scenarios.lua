@@ -23,8 +23,6 @@ _.Achievements =
 					}),
 					ach(7271),		-- Arena of Annihilation (Arena of Annihilation)
 					ach(8016),		-- Assault on Zan'vess (Assault on Zan'vess)
-					a(ach(8314)),	-- Battle on the High Seas (Alliance) (Battle on the High Seas)
-					h(ach(8315)),	-- Battle on the High Seas (Horde) (Battle on the High Seas)
 					ach(7273),		-- Beat the Heat (Arena of Annihilation)
 					ach(6931, {		-- Binan Village All-Star (Brewmoon Festival)
 						crit(1),		-- Briaw Shan
@@ -45,7 +43,10 @@ _.Achievements =
 					ach(8317, {		-- Dark Heart of Pandaria (Dark Heart of Pandaria)
 						["maps"] = { 520, 521 },	-- Dark Heart of Pandaria
 					}),
-					h(ach(8013)),	-- Domination Point (Domination Point)
+					{	-- Domination Point [Horde] // Lion's Landing [Alliance]
+						["allianceAchievementID"] = 8010,	-- Lion's Landing [Alliance]
+						["hordeAchievementID"] = 8013,		-- Domination Point [Horde]
+					},
 					ach(7257),		-- Don't Shake the Keg (A Brewing Storm)
 					ach(7276),		-- Fancy Footwork (Crypt of the Forgotten Kings)
 					ach(8368),		-- Fight Anger with Anger (Crypt of the Forgotten Kings)
@@ -58,8 +59,16 @@ _.Achievements =
 						["maps"] = { 523 },	-- Blood in the Snow
 					}),
 					ach(8310),		-- Heroic: A Brewing Storm (A Brewing Storm)
-					a(ach(8364)),	-- Heroic: Battle on the High Seas (Alliance) (Battle on the High Seas)
-					h(ach(8366)),	-- Heroic: Battle on the High Seas (Horde) (Battle on the High Seas)
+					{	-- Heroic: Battle on the High Seas
+						["allianceAchievementID"] = 8364,	-- Heroic: Battle on the High Seas [Alliance]
+						["hordeAchievementID"] = 8366,		-- Heroic: Battle on the High Seas [Horde]
+						["g"] = {
+							{	-- Battle on the High Seas
+								["allianceAchievementID"] = 8314,	-- Battle on the High Seas [Alliance]
+								["hordeAchievementID"] = 8315,		-- Battle on the High Seas [Horde]
+							},
+						},
+					},
 					ach(8312, {		-- Heroic: Blood in the Snow (Blood in the Snow)
 						["maps"] = { 523 },	-- Blood in the Snow
 					}),
@@ -76,9 +85,10 @@ _.Achievements =
 					}),
 					ach(7275),		-- It's a Trap! (Crypt of the Forgotten Kings)
 					ach(8347),		-- Keep those Bombs Away! (From Me) (Battle on the High Seas)
-					a(ach(7526)),	-- Kite Fight (Alliance) (Theramore's Fall)
-					h(ach(7529)),	-- Kite Fight (Horde) (Theramore's Fall)
-					a(ach(8010)),	-- Lion's Landing (Lion's Landing)
+					{	-- Kite Fight
+						["allianceAchievementID"] = 7526,	-- Kite Fight [Alliance]
+						["hordeAchievementID"] = 7529,		-- Kite Fight [Horde]
+					},
 					ach(7239),		-- Monkey in the Middle (Unga Ingoo)
 					ach(7248, {		-- Monkey See, Monkey Kill (Unga Ingoo)
 						crit(1),		-- Captain Ook
@@ -90,10 +100,14 @@ _.Achievements =
 						crit(7),		-- Protected King Unga Keg
 					}),
 					ach(7987),		-- No Egg Left Behind (Dagger in the Dark)
-					a(ach(7527)),	-- No Tank You (Alliance) (Theramore's Fall)
-					h(ach(7530)),	-- No Tank You (Horde) (Theramore's Fall)
-					a(ach(8011)),	-- Number Five Is Alive (Alliance) (Lion's Landing)
-					h(ach(8014)),	-- Number Five Is Alive (Horde) (Domination Point)
+					{	-- No Tank You
+						["allianceAchievementID"] = 7527,	-- No Tank You [Alliance]
+						["hordeAchievementID"] = 7530,		-- No Tank You [Horde]
+					},
+					{	-- Number Five is Alive
+						["allianceAchievementID"] = 8011,	-- Number Five is Alive [Alliance]
+						["hordeAchievementID"] = 8014,		-- Number Five is Alive [Horde]
+					},
 					ach(7258),		-- Party of Six (A Brewing Storm)
 					ach(7267),		-- Perfect Delivery (Greenstone Village)
 					ach(7385, {		-- Pub Crawl (META)
@@ -112,52 +126,101 @@ _.Achievements =
 					}),
 					ach(6943), 		-- Queuing Spree
 					ach(7266),		-- Save it for Later (Greenstone Village)
-					a(ach(6874, {	-- Scenaturday (Alliance) (META)
-						title(206),		-- the Scenaturdist
-						crit(1),		-- A Brewing Storm
-						crit(2),		-- Greenstone Village
-						crit(3),		-- Unga Ingoo
-						crit(4),		-- Brewmoon Festival
-						crit(5),		-- Crypt of Forgotten Kings
-						crit(6),		-- Arena of Annihilation
-						crit(7),		-- Theramore's Fall
-					})),
-					h(ach(7509, {	-- Scenaturday (Horde) (META)
-						title(206),		-- the Scenaturdist
-						crit(1),		-- A Brewing Storm
-						crit(2),		-- Greenstone Village
-						crit(3),		-- Unga Ingoo
-						crit(4),		-- Brewmoon Festival
-						crit(5),		-- Crypt of Forgotten Kings
-						crit(6),		-- Arena of Annihilation
-						crit(7),		-- Theramore's Fall
-					})),
+					{	-- Scenaturday
+						["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+						["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+						["g"] = {
+							{	-- <Name> the Scenaturdist
+								["titleID"] = 206,	-- <Name> the Scenaturdist
+							},
+							{	-- A Brewing Storm
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 1,					-- A Brewing Storm
+							},
+							{	-- Arena of Annihilation
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 6,					-- Arena of Annihilation
+							},
+							{	-- Brewmoon Festival
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 4,					-- Brewmoon Festival
+							},
+							{	-- Crypt of Forgotten Kings
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 5,					-- Crypt of Forgotten Kings
+							},
+							{	-- Greenstone Village
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 2,					-- Greenstone Village
+							},
+							{	-- Theramore's Fall
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 7,					-- Theramore's Fall
+							},
+							{	-- Unga Ingoo
+								["allianceAchievementID"] = 6874,	-- Scenaturday [Alliance]
+								["hordeAchievementID"] = 7509,		-- Scenaturday [Horde]
+								["criteriaID"] = 3,					-- Unga Ingoo
+							},
+						},
+					},
 					ach(7231),		-- Spill No Evil (Unga Ingoo)
 					ach(8295),		-- The Few, the Proud, the Gob Squad (The Secrets of Ragefire)
 					ach(7232),		-- The Keg Runner (Unga Ingoo)
 					ach(7261),		-- The Perfect Pour (A Brewing Storm)
 					ach(8294),		-- The Secrets of Ragefire (The Secrets of Ragefire)
-					a(ach(7523)),	-- Theramore's Fall (Alliance) (Theramore's Fall)
-					h(ach(7524)),	-- Theramore's Fall (Horde) (Theramore's Fall)
+					{	-- Theramore's Fall
+						["allianceAchievementID"] = 7523,	-- Theramore's Fall [Alliance]
+						["hordeAchievementID"] = 7524,		-- Theramore's Fall [Horde]
+					},
 					ach(7249),		-- Unga Ingoo (Unga Ingoo)
-					a(ach(8012, {	-- Waste Not, Want Not (Alliance) (Lion's Landing)
-						crit(1),		-- Lever-Action Boomstick
-						crit(2),		-- Reaver Bomb
-						crit(3),		-- Rocket Launcher
-						crit(4),		-- Armor Power-Up
-						crit(5),		-- Beserk Power-Up
-						crit(6),		-- Restoration Power-Up
-						crit(7),		-- Speed Power-Up
-					})),
-					h(ach(8015, {	-- Waste Not, Want Not (Horde) (Domination Point)
-						crit(1),		-- Lever-Action Boomstick
-						crit(2),		-- Reaver Bomb
-						crit(3),		-- Rocket Launcher
-						crit(4),		-- Armor Power-Up
-						crit(5),		-- Beserk Power-Up
-						crit(6),		-- Restoration Power-Up
-						crit(7),		-- Speed Power-Up
-					})),
+					{	-- Waste Not, Want Not
+						["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+						["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+						["g"] = {
+							{	-- Armor Power-Up
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 4,					-- Armor Power-Up
+							},
+							{	-- Beserk Power-Up
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 5,					-- Beserk Power-Up
+							},
+							{	-- Lever-Action Boomstick
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 1,					-- Lever-Action Boomstick
+							},
+							{	-- Reaver Bomb
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 2,					-- Reaver Bomb
+							},
+							{	-- Restoration Power-Up
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 6,					-- Restoration Power-Up
+							},
+							{	-- Rocket Launcher
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 3,					-- Rocket Launcher
+							},
+							{	-- Speed Power-Up
+								["allianceAchievementID"] = 8012,	-- Waste Not, Want Not [Alliance]
+								["hordeAchievementID"] = 8015,		-- Waste Not, Want Not [Horde]
+								["criteriaID"] = 7,					-- Speed Power-Up
+							},
+						},
+					},
 					ach(7984),		-- Watery Grave (Dagger in the Dark)
 					ach(7993),		-- We've Been Dancin' (A Little Patience)
 					ach(7991),		-- Which Came First? (A Little Patience)

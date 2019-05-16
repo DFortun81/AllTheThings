@@ -2327,7 +2327,7 @@ _.NeverImplemented =
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)),	-- Helm of the Stormcaller - Never Added
 	un(3, i(19160)),	-- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
-	un(1, i(8195)),	-- Nightscape Cloak										(Pattern never actually went live)
+	un(1, i(8195)),		-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(56405)),	-- Oasis Bracers
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
