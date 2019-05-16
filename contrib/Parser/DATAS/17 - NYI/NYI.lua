@@ -70,6 +70,9 @@ _.NeverImplemented =
 		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
 		un(1, i(122069)),	-- Nurturer Spear
 		un(1, i(122074)),	-- Duskbreaker Warmaul
+		un(1, i(122078)),	-- Defiant Greataxe
+		un(1, i(122079)),	-- Defiant Headchopper
+		un(1, i(122093)),	-- Defiant Axe
 
 		-- DK -- Possible Unused Level 120/Lv 120 Classtrial
 		un(1, i(157618)),	-- Unholy Runeblade
@@ -180,6 +183,8 @@ _.NeverImplemented =
 				un(1, i(78046)),	-- Replica Dreadmist Wraps
 			}),
 			un(1, i(6243)),		-- Green Woolen Robe
+			un(1, i(105710)),	-- Lasso Bracers, Humanoid
+			un(1, i(105928)),	-- Magic Bunny Hat
 			un(1, i(78017)),	-- Replica Magister's Leggings (Cloth)
 			un(1, i(4989)),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			un(1, i(4990)),		-- Scorched Bands
@@ -638,6 +643,12 @@ _.NeverImplemented =
 			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
 			un(1, i(56485)),	-- Windbound Bracers
+			un(1, i(109416)),	-- Unknown
+			un(1, i(109425)),	-- Unknown
+			un(1, i(109433)),	-- Unknown
+			un(1, i(109441)),	-- Unknown
+			un(1, i(109457)),	-- Unknown
+			un(1, i(109484)),	-- Unknown
 			un(1, i(56486)),	-- Windbound Gloves
 			un(1, i(56487)),	-- Razorshell Bracers
 			un(1, i(56488)),	-- Razorshell Shoulders
@@ -934,6 +945,11 @@ _.NeverImplemented =
 			un(1, i(157750)),	-- Pendant of Good Fortune
 			un(1, i(23058)),	-- Life Channeling Necklace
 			un(1, i(28043)),	-- Demon Stalker Pendant
+			un(1, i(81049)),	-- Scavenger's necklace
+			un(1, i(81050)),	-- Scavenger's choker
+			un(1, i(81051)),	-- Scavenger's locket
+			un(1, i(81052)),	-- Scavenger's amulet
+			un(1, i(81053)),	-- Scavenger's pendant
 			un(1, i(108812)),	-- Unknown
 			un(1, i(108818)),	-- Unknown
 			un(1, i(108819)),	-- Unknown
@@ -1380,6 +1396,8 @@ _.NeverImplemented =
 		un(1, i(131737)),	-- Wyrmy Tunkins
 		un(1, i(154703)),	-- Hot Air Baloon
 		un(1, i(136906)),	-- Brown Piglet
+		un(1, i(115282)),	-- Draenei Micro Defender (different version is used)
+		un(1, i(118596)),	-- Sassy Sproutling
 		un(1, i(162686)),	-- Demon Goat (unused Baa'l ID)
 		un(1, i(163553)),	-- Digitized Assistant (used to be a pet)
 		un(1, i(163554)),	-- Finicky Gauntlet (used to be a pet)

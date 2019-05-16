@@ -4538,6 +4538,14 @@ _.Zones =
 								un(2, i(48422)),	-- Relentless Gladiator's Repeater
 								un(2, i(48402)),	-- Relentless Gladiator's Sunderer
 								un(2, i(48406)),	-- Relentless Gladiator's Claymore)
+								un(2, i(48404)),	-- Relentless Gladiator's crusher
+								un(2, i(48412)),	-- Relentless Gladiator's acute staff
+								un(2, i(48432)),	-- Relentless Gladiator's fleshslicer
+								un(2, i(48515)),	-- Relentless Gladiator's grasp
+								un(2, i(48440)),	-- Relentless Gladiator's splitter
+								un(2, i(48507)),	-- Relentless Gladiator's handaxe
+								un(2, i(48442)),	-- Relentless Gladiator's eviscerator
+								un(2, i(48509)),	-- Relentless Gladiator's spike
 							},
 						}),
 						n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
@@ -5103,6 +5111,7 @@ _.Zones =
 								i(41066),	-- Relentless Gladiator's Wristguards of Dominance
 								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
+								
 							},
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)

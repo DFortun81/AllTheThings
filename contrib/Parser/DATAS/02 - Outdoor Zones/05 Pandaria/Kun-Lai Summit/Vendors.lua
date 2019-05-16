@@ -207,6 +207,8 @@ _.Zones =
 							un(2, i(103636)),	-- Elite Prideful Gladiator's Tabard
 							un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 							un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
+							un(2, i(103000)),	-- Elite Prideful Gladiator's Battle Staff
+							un(2, i(103021)),	-- Elite Prideful Gladiator's Staff
 							un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
 							un(2, i(103119)),	-- Elite Prideful Gladiator's Hacker
 							un(2, i(102989)),	-- Elite Prideful Gladiator's Quick blade

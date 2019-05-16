@@ -284,6 +284,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["collectible"] = false,
 					["u"] = 15,
 				}),
+				un(2, i(30320)),	-- Bundle of Nether Spikes
 			})),
 		},
 	}),	

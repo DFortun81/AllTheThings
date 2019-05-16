@@ -251,6 +251,18 @@ _.Zones =
 						un(2, i(111220)),	-- Primal Gladiator's signet of accuracy
 						un(2, i(111271)),	-- Primal Gladiator's ring of triumph
 						un(2, i(111272)),	-- Primal Gladiator's signet of ruthlessness
+						un(2, i(111222)),	-- Primal Gladiator's badge of conquest
+						un(2, i(111223)),	-- Primal Gladiator's insignia of conquest
+						un(2, i(111224)),	-- Primal Gladiator's e,blem of cruelty
+						un(2, i(111225)),	-- Primal Gladiator's emblem of tenacity
+						un(2, i(111226)),	-- Primal Gladiator's emblem of mediation
+						un(2, i(111227)),	-- Primal Gladiator's badge of dominance
+						un(2, i(111228)),	-- Primal Gladiator's insignia of dominance
+						un(2, i(111229)),	-- Primal Gladiator's mmedallion of cruelty
+						un(2, i(111230)),	-- Primal Gladiator's medallion of tenacity
+						un(2, i(111231)),	-- Primal Gladiator's medallion of mediation
+						un(2, i(111232)),	-- Primal Gladiator's badge of citory
+						un(2, i(111233)),	-- Primal Gladiator's insignia of victory
 					}),	
 					n(88161, {	-- Challenger Sunforge
 						["groups"] = {
