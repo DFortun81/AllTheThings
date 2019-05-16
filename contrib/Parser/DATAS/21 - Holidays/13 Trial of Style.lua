@@ -220,6 +220,13 @@ _.Holidays =
 					{ 0, 0, 777 },			-- Warpweaver Sle'shal <Token Exchange> (Inside Trial of Style)
 				},
 			}),
+			n(133196, {		-- Warpweaver Sle'shal
+				["g"] = { 
+					i(156862),	-- Trial of Style Dance Floor
+					i(156863),	-- Trial of Style Spotlight
+					i(156864),	-- Trial of Style Flames
+				},
+			}),
 		}),
 		["mapID"] = -777,
 		["u"] = 22,

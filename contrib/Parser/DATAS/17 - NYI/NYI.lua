@@ -51,6 +51,24 @@ _.NeverImplemented =
 		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
 		un(1, i(122069)),	-- Nurturer Spear
 		un(1, i(122074)),	-- Duskbreaker Warmaul
+		
+		-- DK -- Possible Unused Level 120/Lv 120 Classtrial
+		un(1, i(157618)),	-- Unholy Runeblade
+		un(1, i(157646)),	-- Bloodcaked Runeblade
+		un(1, i(157658)),	-- Heart-Lesion Breastplate
+		un(1, i(157659)),	-- Heart-Lesion Sabatons
+		un(1, i(157660)),	-- Heart-Lesion Gauntlets
+		un(1, i(157662)),	-- Heart-Lesion Legplates
+		un(1, i(157664)),	-- Heart-Lesion Girdle
+		un(1, i(157665)),	-- Heart-Lesion Vambraces)
+		un(1, i(157661)),	-- Heart-Lesion Helm
+		un(1, i(157663)),	-- Heart-Lesion Pauldrons
+		-- Pala -- Possible Unused Level 120/Lv 120 Classtrial
+		un(1, i(157701)),	-- Light Soul Helm
+		un(1, i(157703)),	-- Light Soul Pauldrons
+		-- Warrior -- Possible Unused Level 120/Lv 120 Classtrial
+		un(1, i(157741)),	-- Warsinger's Helm
+		un(1, i(157743)),	-- Warsinger's  Pauldrons
 	}),
 	n(-220, {	-- Class
 		cl(12, {	-- DH
@@ -672,15 +690,6 @@ _.NeverImplemented =
 				un(1, i(119496)),	-- Heart-Lesion shouldersguards
 				un(1, i(119497)),	-- Heart-Lesion waistband
 				un(1, i(119498)),	-- Heart-Lesion armguards
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				un(1, i(157618)),	-- Unholy Runeblade
-				un(1, i(157646)),	-- Bloodcaked Runeblade
-				un(1, i(157658)),	-- Heart-Lesion Breastplate
-				un(1, i(157659)),	-- Heart-Lesion Sabatons
-				un(1, i(157660)),	-- Heart-Lesion Gauntlets
-				un(1, i(157662)),	-- Heart-Lesion Legplates
-				un(1, i(157664)),	-- Heart-Lesion Girdle
-				un(1, i(157665)),	-- Heart-Lesion Vambraces)
 			}),
 			cl(2, {	-- Paladin
 				un(1, i(48905)),	-- Liadrin's Tunic of Conquest
