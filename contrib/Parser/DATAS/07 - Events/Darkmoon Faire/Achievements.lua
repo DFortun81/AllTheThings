@@ -14,12 +14,8 @@ _.WorldEvents =
 					["achievementID"] = 6026,	-- Fairgoer's Feast
 				},
 				{	--   Taking the Show on the Road
-					["achievementID"] = 6030,	-- Taking the Show on the Road
-					["races"] = ALLIANCE_ONLY,
-				},
-				{	--   Taking the Show on the Road
-					["achievementID"] = 6031,	-- Taking the Show on the Road
-					["races"] = HORDE_ONLY,
+					["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
+					["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
 				},
 				{	-- I Was Promised a Pony
 					["achievementID"] = 6025,	-- I Was Promised a Pony
