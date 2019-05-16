@@ -12213,25 +12213,25 @@ app.events.QUEST_LOG_UPDATE = function()
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
 end
 app.events.PET_BATTLE_OPENING_START = function(...)
-	local popout = app:GetWindow("CurrentInstance");
+	local mini = app:GetWindow("CurrentInstance");
 	local main = app:GetWindow("Prime");
-		if popout:IsVisible() then
-			popout:Toggle();
-			popoutVis = true;
+		if mini:IsVisible() then
+			mini:Toggle();
+			app.miniVis = true;
 		end
 		if main:IsVisible() then
 			main:Toggle();
-			mainVis = true;
+			app.mainVis = true;
 		end
 end
 app.events.PET_BATTLE_CLOSE = function(...)
-	if popoutVis then 
+	if app.miniVis then 
 		app:ToggleMiniListForCurrentZone() 
-		popoutVis = false;
+		app.miniVis = false;
 	end
-	if mainVis then 
+	if app.mainVis then 
 		ToggleMainList() 
-		mainVis = false;
+		app.mainVis = false;
 	end
 end
 app.events.TOYS_UPDATED = function(itemID, new)
