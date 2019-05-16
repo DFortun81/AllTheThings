@@ -31,6 +31,13 @@ _.NeverImplemented =
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
 		un(1, i(165261)),	-- Unknown Cloak
+		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
+		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
+		un(1, i(165792)),	-- Worn Cloak (future WQ?)
+		un(1, p(2341)),		-- Feathers (possibly tied to a quest?)
+		
+		
+		-- Scrapped Lv20 Gear (??)
 		un(1, i(157622)),	-- Silverscope Longrifle ( Level 20 Kul Tiran Hunter Start Gear?)
 		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(1, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
@@ -38,10 +45,22 @@ _.NeverImplemented =
 		un(1, i(157624)),	--  Staff of Inner Flame (Lv20 Start Gear?)
 		un(1, i(157625)),	-- Mash Tun Mixer (Lv20 Start Gear?)
 		un(1, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
-		un(1, i(166680)),	-- Echo of Elune (maybe you will able to get it with a hotfix?)
-		un(1, i(166358)),	-- Proper Parrot/ Proper Parrot was supposed to be added in 8.1, tied to the quest Be More Uniform.A few days after 8.1 went live, it was removed from the pet journal. Nobody obtained it from the quest.
-		un(1, i(165792)),	-- Worn Cloak (future WQ?)
-		un(1, p(2341)),	-- Feathers (possibly tied to a quest?)
+		un(1, i(157645)),	-- Foebreaker's Axe (Lv20 Start Gear?)
+		un(1, i(157653)),	-- fatihful shield (Lv20 Start Gear?)
+		un(1, i(157654)),	-- stalwarts bulwark (Lv20 Start Gear?)
+		un(1, i(157656)),	-- raincallers shield (Lv20 Start Gear?)
+		un(1, i(157657)),	-- foebreakers barrier (Lv20 Start Gear?)
+		
+		-- Possible BC TW Gear (not in journal)
+		un(1, i(150450)),	-- Nether Shadow Tunic
+		un(1, i(150448)),	-- pauldrons of abyssal fury
+		un(1, i(150461)),	-- praetorians legguards
+		un(1, i(150465)),	-- myrmidons treads
+		un(1, i(150472)),	-- grips of silent justice
+		un(1, i(150449)),	-- wraps of precise flight
+		un(1, i(150457)),	-- bands of the coming storm
+		un(1, i(150502)),	-- touch of inspiration
+		
 		un(1, i(157677)),	-- Hearthbonded Helm (Hunter Future Boost Gear)
 		un(1, i(157679)),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 		un(1, i(150642)),	-- Trailseeker Spaulders
@@ -288,6 +307,26 @@ _.NeverImplemented =
 				un(1, i(48796)),	-- Runetotem's Legguards of Conquest
 				un(1, i(48797)),	-- Runetotem's Raiments of Conquest
 				un(1, i(48798)),	-- Runetotem's Shoulderpads of Conquest
+				un(1, i(32113)),	-- Chancellor's Dragonhide gloves
+				un(1, i(32114)),	-- Chancellor's Dragonhide helm
+				un(1, i(32115)),	-- Chancellor's Dragonhide legguards
+				un(1, i(32116)),	-- Chancellor's Dragonhide spaulders
+				un(1, i(32117)),	-- Chancellor's Dragonhide tunic
+				un(1, i(32118)),	-- Chancellor's kodohide gloves
+				un(1, i(32119)),	-- Chancellor's kodohide helm
+				un(1, i(32120)),	-- Chancellor's leather legguards
+				un(1, i(32121)),	-- Chancellor's kodohide spaulders
+				un(1, i(32122)),	-- Chancellor's kodohide legguards
+				un(1, i(32123)),	-- Chancellor's kodohide tunic
+				un(1, i(32124)),	-- Chancellor's leather gloves
+				un(1, i(32125)),	-- Chancellor's leather helm
+				un(1, i(32126)),	-- Chancellor's leather spaulders
+				un(1, i(32127)),	-- Chancellor's leather tunic
+				un(1, i(32128)),	-- Chancellor's wyrmhide glvoes
+				un(1, i(32129)),	-- Chancellor's wyrmhide helm
+				un(1, i(32130)),	-- Chancellor's wyrmhide legguards
+				un(1, i(32131)),	-- Chancellor's wyrmhide spaulders
+				un(1, i(32132)),	-- Chancellor's wyrmhide tunic
 				-- Unused T0 Replica
 				un(1, i(78068)),	-- Replica Wildheart Belt
 				un(1, i(78067)),	-- Replica Wildheart Boots

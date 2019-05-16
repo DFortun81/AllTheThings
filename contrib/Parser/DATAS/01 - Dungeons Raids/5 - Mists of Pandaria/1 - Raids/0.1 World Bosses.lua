@@ -360,8 +360,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(44982),	-- Enchanted Broom
 						i(64403),	-- Fox Kit
 						i(43698),	-- Giant Sewer Rat
+						i(95965),	-- Home-Warding Slippers
 						i(45002),	-- Mechanopeep
 						i(44980),	-- Mulgore Hatchling
+						i(95980),	-- Necklace of the Terra-Cotta Protector
 						i(69992),	-- Shimmering Wyrmling
 						i(44965),	-- Teldrassil Sproutling
 						i(69991),	-- Tiny Sporebat
@@ -389,7 +391,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95177),	-- Choker of Stygimolochy
 					i(95178),	-- Lootraptor's Amulet
 					i(95179),	-- Necklace of the Hazillosaurus
-					i(95980),	-- Necklace of the Terra-Cotta Protector
 					i(95180),	-- Overcompensating Chain of the Alpha Male
 					
 					-- Chests

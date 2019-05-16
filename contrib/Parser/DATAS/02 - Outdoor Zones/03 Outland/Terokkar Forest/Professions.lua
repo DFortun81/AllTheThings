@@ -11,9 +11,11 @@ _.Zones =
 				["groups"] = {
 					n(-38, {	-- Professions
 						prof(356, {	-- Fishing
-							i(27388, {	-- Mr. Pinchy
-								i(27445, {	-- Magical Crawdad Box
-									["description"] = "Fish up Mr. Pinchy in Highland Mixed School.  You then have 3 chances at getting the pet.",
+							i(27446, {	-- Mr Punchys Gift
+								i(27388, {	-- Mr. Pinchy
+									i(27445, {	-- Magical Crawdad Box
+										["description"] = "Fish up Mr. Pinchy in Highland Mixed School.  You then have 3 chances at getting the pet.",
+									}),
 								}),
 							}),
 							n(-17, {	-- Quests
