@@ -42,7 +42,7 @@ _.NeverImplemented =
 		un(1, i(157644)),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
 		un(1, i(157621)),	-- Staff of Regrowth (Lv20 Start Gear?)
 		un(1, i(157623)),	-- Frostcore Staff (Lv20 Start Gear?)
-		un(1, i(157624)),	--  Staff of Inner Flame (Lv20 Start Gear?)
+		un(1, i(157624)),	-- Staff of Inner Flame (Lv20 Start Gear?)
 		un(1, i(157625)),	-- Mash Tun Mixer (Lv20 Start Gear?)
 		un(1, i(157626)),	-- Staff of Sining mists (Lv20 Start Gear?)
 		un(1, i(157645)),	-- Foebreaker's Axe (Lv20 Start Gear?)

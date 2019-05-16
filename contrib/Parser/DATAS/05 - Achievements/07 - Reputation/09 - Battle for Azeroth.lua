@@ -24,23 +24,45 @@ _.Achievements =
 						crit(5),		-- Champions of Azeroth
 						crit(6), 		-- Tortollan Seekers
 					}),
-					a(ach(12954)), 	-- Champion of the 7th Legion
-					h(ach(12957)), 	-- Chamapion of the Honorbound
+					{	-- Champion of the 7th Legion [Alliance] // Champion of the Honorbound [Horde]
+						["allianceAchievementID"] = 12954,	-- Champion of the 7th Legion [Alliance]
+						["hordeAchievementID"] = 12957,		-- Champion of the Honorbound [Horde]
+					},
 					ach(12955), 	-- Champions of Azeroth
---[[	Appears to either not have made it from BETA yet or been removed as it is not part of Pre-Patch
-					a(ach(12946, { 	-- Kul Tiras Diplomat
-						crit(1), 		-- Proudmoore
-						crit(2), 		-- Storm's Wake
-						crit(3), 		-- Order of Embers
-					})),
-]]--
-					a(ach(12952)), 	-- Order of Embers
-					a(ach(12951)), 	-- Proudmoore Admiralty
-					a(ach(12953)), 	-- Storm's Wake
-					h(ach(12948)), 	-- Talanji's Expedition
-					h(ach(12949)), 	-- The Voldunair
+					{	-- Kul Tiras Diplomat [NYI]
+						["achievementID"] = 12946,	-- Kul Tiras Diplomat
+						["u"] = 1,					-- Removed in 8.01 Launch // Was present in Beta
+						["g"] = {
+							{	-- Order of Embers
+								["achievementID"] = 12946,	-- Kul Tiras Diplomat
+								["criteriaID"] = 3,			-- Order of Embers
+								["u"] = 1,					-- Removed in 8.01 Launch // Was present in Beta
+							},
+							{	-- Proudmoore
+								["achievementID"] = 12946,	-- Kul Tiras Diplomat
+								["criteriaID"] = 1,			-- Proudmoore
+								["u"] = 1,					-- Removed in 8.01 Launch // Was present in Beta
+							},
+							{	-- Storm's Wake
+								["achievementID"] = 12946,	-- Kul Tiras Diplomat
+								["criteriaID"] = 2,			-- Storm's Wake
+								["u"] = 1,					-- Removed in 8.01 Launch // Was present in Beta
+							},
+						},
+					},
+					{	-- Talanji's Expedition [Horde] // Storm's Wake [Alliance]
+						["allianceAchievementID"] = 12953,	-- Storm's Wake [Alliance]
+						["hordeAchievementID"] = 12948,		-- Talanji's Expedition [Horde]
+					},
+					{	-- The Voldunai [Horde] // Order of Embers [Alliance]
+						["allianceAchievementID"] = 12952,	-- Order of Embers [Alliance]
+						["hordeAchievementID"] = 12949,		-- The Voldunai [Horde]
+					},
 					ach(12956), 	-- Tortollan Seekers
-					h(ach(12950)), 	-- Zandalari Empire
+					{	-- Zandalari Empire [Horde] // Proudmoore Admiralty [Alliance]
+						["allianceAchievementID"] = 12956,	-- Proudmoore Admiralty [Alliance]
+						["hordeAchievementID"] = 12950,		-- Zandalari Empire [Horde]
+					},
 				},
 			}),
 		},

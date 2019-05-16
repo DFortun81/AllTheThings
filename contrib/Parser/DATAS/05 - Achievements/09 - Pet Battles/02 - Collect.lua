@@ -100,13 +100,9 @@ _.Achievements =
 					}),
 					ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
 						title(240, {	-- the Crazy Cat Lady
-							["groups"] = {
-							},
 							["description"] = "Must login with a female character.",
 						}),
 						title(252, {	-- the Crazy Cat Man
-							["groups"] = {
-							},
 							["description"] = "Must login with a male character.",
 						}),
 						crit(1),		-- Black Tabby Cat
