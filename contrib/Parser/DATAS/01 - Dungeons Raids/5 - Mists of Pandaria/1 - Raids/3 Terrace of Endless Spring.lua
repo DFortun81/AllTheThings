@@ -506,6 +506,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(90510),	-- Cuffs of the Corrupted Waters (Elite)
 									i(90504),	-- Legguards of Failing Purification (Elite)
 									i(90514),	-- Asani's Uncleansed Sandals (Elite)
+									i(90515),	-- Lightning Prisoner's Boots (Elite)
 									i(90507),	-- Deepwater Greatboots (Elite)
 									i(90503),	-- Regail's Band of the Endless (Elite)
 									i(90511),	-- Watersoul Signet (Elite)
@@ -523,7 +524,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87153),	-- Asani's Uncleansed Sandals
 							i(87146),	-- Deepwater Greatboots
 							i(87154),	-- Lightning Prisoner's Boots
-							i(90515),	-- Lightning Prisoner's Boots (Elite)
 							i(87144),	-- Regail's Band of the Endless
 							i(87151),	-- Watersoul Signet
 						},
