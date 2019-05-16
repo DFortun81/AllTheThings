@@ -50,7 +50,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									144683,	-- Frida Ironbellows (H)
 								},
 								["g"] = {
-									{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+									{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
@@ -85,7 +85,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									148270,	-- Mestrah <The Illuminated> (H)
 								},
 								["g"] = {
-									{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+									{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
@@ -118,7 +118,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									148117,	-- Grong the Revenant (H)
 								},
 								["g"] = {
-									{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+									{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 										["g"] = {
@@ -389,7 +389,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
@@ -419,7 +419,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
@@ -453,7 +453,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
@@ -717,7 +717,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
@@ -747,7 +747,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
@@ -781,7 +781,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
@@ -1048,7 +1048,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144683,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{	-- Champion of the Light (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{	-- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
@@ -1079,7 +1079,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {
@@ -1117,7 +1117,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor)[Alliance] // Champion of the Light (Defense of Dazar'alor)[Horde]
+							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
 								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
 								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
 								["g"] = {

@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------
 --         N E V E R       I M P L E M E N T E D       M O D U L E      	--
 ---------------------------------------------------------------------------
-_.NeverImplemented = 
-{   
-	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar	
+_.NeverImplemented =
+{
+	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
 		-- Future Emsembles!!
 		-- Mail Horde (you probably will learn both after learning one)
 		un(1, i(166923)),	-- Dread Gladiator's Chain armor
@@ -23,7 +23,7 @@ _.NeverImplemented =
 		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
 		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
 		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
-		
+
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
@@ -47,11 +47,11 @@ _.NeverImplemented =
 		un(1, i(150642)),	-- Trailseeker Spaulders
 		un(1, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
 		un(1, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
-		
+
 		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
 		un(1, i(122069)),	-- Nurturer Spear
 		un(1, i(122074)),	-- Duskbreaker Warmaul
-		
+
 		-- DK -- Possible Unused Level 120/Lv 120 Classtrial
 		un(1, i(157618)),	-- Unholy Runeblade
 		un(1, i(157646)),	-- Bloodcaked Runeblade
@@ -75,14 +75,14 @@ _.NeverImplemented =
 			un(1, i(129738)),	-- Verus
 		}),
 		cl(3, {	-- Hunter
-			un(1, i(147770)),	-- Tome of the PTR Beast		
+			un(1, i(147770)),	-- Tome of the PTR Beast
 		}),
 		cl(8, {	-- Mage
 			un(1, i(44600)),	-- Tome of Polymorph: Serpent (Never made it out of beta)
 			un(1, i(44811)),	-- Tome of Polymorph: Turkey
 		}),
 		cl(7, {	-- Shaman
-			un(1, i(136971)),	-- Tome of Hex: Snake		
+			un(1, i(136971)),	-- Tome of Hex: Snake
 		}),
 	}),
 	n(-163, {	-- Armor
@@ -584,7 +584,7 @@ _.NeverImplemented =
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
-			un(1, i(30289)),	-- Cenarion warden's belt 
+			un(1, i(30289)),	-- Cenarion warden's belt
 			un(1, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)
 			un(1, i(68844)),	-- Unknown
 			un(1, i(38527)),	-- Onslaught Scaemail haubberk
@@ -801,7 +801,7 @@ _.NeverImplemented =
 			})),
 			un(1, i(104646, { 	-- Tusks of Mannoroth [Mythic]
 				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
-			})),	
+			})),
 			un(1, i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
 				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 			})),
@@ -1237,7 +1237,7 @@ _.NeverImplemented =
 		un(1, i(60777)),  	-- Unknown
 		un(1, i(60780)),  	-- Unknown
 		un(1, i(60781)),  	-- Unknown
-		un(1, i(50329)),  	-- Unknown	
+		un(1, i(50329)),  	-- Unknown
 		un(1, i(55216)),	-- Fiery Transform
 		un(1, i(55217)),	-- Aqua Transform
 		un(1, i(55218)),	-- Rocky Transform
@@ -1246,22 +1246,22 @@ _.NeverImplemented =
 	n(-160, {	-- Mounts
 		un(1, a(model(9475, i(13325)))),		-- Fluorescent Green Mechanostrider (Never added in Game)
 		un(1, h(model(11641, i(14062, {		-- Kodo Mount 						(Never added in Game)
-			{ ["mountID"]= 18363 }	
+			{ ["mountID"]= 18363 }
 		})))),
 		a(model(10662, n(11148, {	-- Purple Mechanostrider 				(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				{ ["mountID"]= 17455 }
 			},
 			["u"] = 1,
 		}))),
 		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider 			(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				{ ["mountID"]= 17456 }
 			},
 			["u"] = 1,
 		}))),
 		a(model(9476, n(10180, {	-- Unpainted Mechanostrider 			(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				{ ["mountID"]= 15781 }
 			},
 			["u"] = 1,
@@ -1271,11 +1271,11 @@ _.NeverImplemented =
 		un(1, i(8627)),	-- Reins of the Nightsaber								(Never added in Game)
 		un(1, a(model(6447, i(8628)))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
 		un(1, a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
-			{ ["mountID"]= 10790 }	
-		})))),							
+			{ ["mountID"]= 10790 }
+		})))),
 		un(1, a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
-			{ ["mountID"]= 10788 }	
-		})))),							
+			{ ["mountID"]= 10788 }
+		})))),
 		un(1, a(model(4805, i(12325)))),	-- Reins of the Primal Leopard 			(Never added in Game)
 		un(1, a(model(6442, i(12326)))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
 		un(1, a(model(9714, i(12327)))),	-- Reins of the Golden Sabercat 		(Never added in Game)
@@ -1323,7 +1323,7 @@ _.NeverImplemented =
 		un(1, i(161908)),	-- Reins of the Dusky Waycrest Gryphon
 		un(1, i(161909)),	-- Reins of the Stormsong Coastwatcher
 		un(1, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
-		
+
 	}),
 	n(-162, {	-- Pets
 		un(1, model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
@@ -1356,11 +1356,11 @@ _.NeverImplemented =
 		model(14657, n(14629, {["u"] = 1,})), 	-- Loggerhead Snapjaw 		(Never added in Game)
 		model(36129, n(48376, {["u"] = 1,})),	-- Rumbling Rockling 		(Never added in Game)
 		model(57820, n(83592, { 	-- Sassy Sproutling 					(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				p(1433),
 			},
 			["u"] = 1,
-		})), 			
+		})),
 		model(36130, n(48377, {["u"] = 1,})),	-- Swirling Stormling 		(Never added in Game)
 		model(36131, n(48378, {["u"] = 1,})), 	-- Whirling Waveling 		(Never added in Game)
 		model(29060, n(34031, {["u"] = 1,})), 	-- XS-001 Constructor Bot 	(Never added in Game)
@@ -1368,17 +1368,17 @@ _.NeverImplemented =
 		un(1, i(118597)),	-- Never added
 		un(1, i(44972)),	-- Alarming Clockbot (NOT IN USE)
 		model(49086, n(71700, { 	-- Crafty 								(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				p(1257),
 			},
 			["u"] = 1,
-		})), 
+		})),
 		model(57821, n(83589, {		-- Kelp Sproutling				 		(Never added in Game)
-			["groups"] = {	
+			["groups"] = {
 				p(1431),
 			},
 			["u"] = 1,
-		})),  
+		})),
 		un(1, i(31665)),	-- Toy RC Mortar Tank
 		un(1, i(13342)),	-- Pet Fish
 		un(1, i(13343)),	-- Pet Stone
@@ -1386,7 +1386,7 @@ _.NeverImplemented =
 		un(1, i(62769, { 	-- Hardboiled Egg 						(Never added in Game)
 			["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
 				p(1758),
-			},							
+			},
 			["description"] = "|cff66ccffUnable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.|r",
 		})),
 		un(1, model(65670, i(136907, { 	-- Black Piglet	 						(Never added in Game)
@@ -1397,7 +1397,7 @@ _.NeverImplemented =
 		un(1, i(136913)),	-- Red Broodling (wild pet catchable, item was never used)
 		un(1, i(136902)),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		un(1, i(136921)),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
-		
+
 	}),
 	n(-38, {	-- Professions
 		n(-180, { 	-- Alchemy
@@ -1427,7 +1427,7 @@ _.NeverImplemented =
 		n(-181, {	-- Blacksmithing
 			{   	-- Plans: Elementium Shield Spike
 				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
-				["spellID"] = 0,   	-- This is available via the trainer, need to delink the unused plans from the recipe
+				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = 1,
 			},
 		}),
@@ -1496,7 +1496,7 @@ _.NeverImplemented =
 				["itemID"] = 137693,
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
 				["u"] = 1,
-			},			
+			},
 			{	-- Schematic: Reaves Module: Repair Mode
 				["itemID"] = 137694,
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
@@ -1662,7 +1662,7 @@ _.NeverImplemented =
 			un(1, i(67030)),	-- Pattern: Razorshell Leggings (never made it into game)
 			un(1, i(67004)),	-- Pattern: Razorshell Shoulders (never made it into game)
 			{	-- Pattern: Savage Cloak
-				["itemID"] = 66995,   	-- Pattern: Savage Cloak 
+				["itemID"] = 66995,   	-- Pattern: Savage Cloak
 				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = 1,
 			},
@@ -1813,18 +1813,18 @@ _.NeverImplemented =
 	n(-161, {	-- Toys
 		un(1, i(140779)),	-- Falanaar Echo
 		un(1, i(136848)),	-- Worn Doll Test
-		un(1, i(143545)),	-- Fel Focusing Crystal 
-		un(1, i(141300)), 	-- Magi Focusing Crystal	
+		un(1, i(143545)),	-- Fel Focusing Crystal
+		un(1, i(141300)), 	-- Magi Focusing Crystal
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
 		un(1, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
-		un(1, i(38569)), 	-- Unknown	
+		un(1, i(38569)), 	-- Unknown
 		un(1, i(129111)),	-- Kvaldir Raiding Horn
 		un(1, i(130249)),	-- Waywatcher's Boon
-		un(1, i(38570)), 	-- Unknown	
+		un(1, i(38570)), 	-- Unknown
 		un(1, i(119220)),	-- Alliance Gladiator's Banner
-		un(1, i(119221)),	-- Horde Gladiator's Banner	
+		un(1, i(119221)),	-- Horde Gladiator's Banner
 		un(1, i(100902)),	-- Unknown
-		un(1, i(100903)),	-- Unknown	
+		un(1, i(100903)),	-- Unknown
 		un(1, i(108638)),	-- Unknown
 		un(1, i(108639)),	-- Unknown
 		un(1, i(130867)),	-- Tag Toy
@@ -1833,7 +1833,7 @@ _.NeverImplemented =
 		un(1, i(122227)),	-- Unknown
 		un(1, i(122230)),	-- Unknown
 		un(1, i(122235)),	-- Unknown
-		un(1, i(108640)),	-- Unknown	
+		un(1, i(108640)),	-- Unknown
 		un(1, i(119179)),	-- Iron Star Roller
 	}),
 	n(-319, {	-- Weapons
@@ -1843,7 +1843,7 @@ _.NeverImplemented =
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
 			un(1, i(140717)),	-- Marksman Recurve Bow
 			un(1, i(150612)),	-- Marksman Recurve Bow
-			
+
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 		}),
 		n(-346, {	-- Crossbows
@@ -1856,7 +1856,7 @@ _.NeverImplemented =
 			un(1, i(64760)),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
 			un(1, i(103003)),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(103375)),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
-			un(1, i(102613)),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)	
+			un(1, i(102613)),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(102810)),   	-- Grievous Gladiator's Heavy Crossbow (they ditched those items)
 			un(1, i(100241)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (A)
 			un(1, i(100556)),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (H)
@@ -1924,7 +1924,7 @@ _.NeverImplemented =
 			un(1, i(150586)),	-- Packmasters Rifle
 			un(1, i(122080)),	-- Warscout Shotgun (not added version)
 			un(1, i(64824)),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
-			
+
 		}),
 		n(-331, {	-- Held in Offhand
 			un(1, i(23462)),	-- High Warlord's Tome of Destruction
@@ -2280,7 +2280,7 @@ _.NeverImplemented =
 	un(1, i(2664)),	-- Spinner Fang
 	un(1, i(150715)),	-- Illidari Warglaive
 	un(1, i(3738)),	-- Brewing Rod
-	un(1, i(128824)), 	-- Tome of the Silver Hand	
+	un(1, i(128824)), 	-- Tome of the Silver Hand
 	}),		-- Weapons end
 	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm
@@ -2294,8 +2294,8 @@ _.NeverImplemented =
 	un(1, i(59795)),	-- Harp Shell Shoulderplates
 	un(1, i(59796)), 	-- Treads of Decapod Death
 	un(1, i(59797)),	-- Abalone-Linked Robes
-	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)	
-	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)	
+	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
+	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 	un(1, i(142360)),	-- Blazing Ember Signet
 	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)
 	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)

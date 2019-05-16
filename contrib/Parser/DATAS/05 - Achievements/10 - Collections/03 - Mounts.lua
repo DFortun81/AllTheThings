@@ -16,7 +16,7 @@ _.Achievements =
 		["groups"] = {
 			n(-10031, {	-- Mounts
 				["groups"] = {
-					{	-- A Horde of Hoofbeats [A]/[H] (400)
+					{	-- A Horde of Hoofbeats [Alliance] // [Horde] (400)
 						["allianceAchievementID"] = 12933,	-- A Horde of Hoofbeats (Alliance) (400)
 						["hordeAchievementID"] = 12934,		-- A Horde of Hoofbeats (Horde) (400)
 						["g"] = {
@@ -27,66 +27,66 @@ _.Achievements =
 							}
 						},
 					},
-					{	-- No Stable Big Enough [A]/[H] (350)
+					{	-- No Stable Big Enough [Alliance] // [Horde] (350)
 						["allianceAchievementID"] = 12932,	-- No Stable Big Enough (Alliance) (350)
 						["hordeAchievementID"] = 12931,		-- No Stable Big Enough (Horde) (350)
 						["g"] = {					
-							{	-- No Stable Big Enough [A]/[H] (350)
+							{	-- No Stable Big Enough [Alliance] // [Horde] (350)
 								["allianceAchievementID"] = 12932,	-- No Stable Big Enough (Alliance) (350)
 								["hordeAchievementID"] = 12931,		-- No Stable Big Enough (Horde) (350)
 								["itemID"] = 137614, 				-- Biting Frostshard Core
 							},
 						}
 					},
-					{	-- Lord of the Reins [A]/[H] (300)
+					{	-- Lord of the Reins [Alliance] // [Horde] (300)
 						["allianceAchievementID"] = 10356,	-- Lord of the Reins (Alliance) (300)
 						["hordeAchievementID"] = 10355,		-- Lord of the Reins (Horde) (300)
 						["g"] = {	
-							{	-- Lord of the Reins [A]/[H] (300)
+							{	-- Lord of the Reins [Alliance] // [Horde] (300)
 								["allianceAchievementID"] = 10356,	-- Lord of the Reins (Alliance) (300)
 								["hordeAchievementID"] = 10355,		-- Lord of the Reins (Horde) (300)
 								["itemID"] = 87776, 				-- Heavenly Azure Cloud Serpent
 							},
 						}
 					},
-					{	-- Mountacular [A]/[H] (250)
+					{	-- Mountacular [Alliance] // [Horde] (250)
 						["allianceAchievementID"] = 9598,	-- Mountacular (Alliance) (250)
 						["hordeAchievementID"] = 9599,		-- Mountacular (Horde) (250)
 						["g"] = {
-							{	-- Mountacular [A]/[H] (250)
+							{	-- Mountacular [Alliance] // [Horde] (250)
 								["allianceAchievementID"] = 9598,	-- Mountacular (Alliance) (250)
 								["hordeAchievementID"] = 9599,		-- Mountacular (Horde) (250)
 								["itemID"] = 69226, 				-- Felfire Hawk
 							},
 						}
 					},
-					{	-- Mount Parade [A]/[H] (200)
+					{	-- Mount Parade [Alliance] // [Horde] (200)
 						["allianceAchievementID"] = 8304,	-- Mount Parade (Alliance) (200)
 						["hordeAchievementID"] = 8302,		-- Mount Parade (Horde) (200)
 						["g"] = {
-							{	-- Mount Parade [A]/[H] (200)
+							{	-- Mount Parade [Alliance] // [Horde] (200)
 								["allianceAchievementID"] = 8304,	-- Mount Parade (Alliance) (200)
 								["hordeAchievementID"] = 8302,		-- Mount Parade (Horde) (200)
 								["itemID"] = 98259, 				-- Armored Blue Dragonhawk
 							},
 						}
 					},
-					{	-- We're Going to Need More Saddles [A]/[H] (150)
+					{	-- We're Going to Need More Saddles [Alliance] // [Horde] (150)
 						["allianceAchievementID"] = 7860,	-- We're Going to Need More Saddles (Alliance) (150)
 						["hordeAchievementID"] = 7862,		-- We're Going to Need More Saddles (Horde) (150)
 						["g"] = {
-							{	-- We're Going to Need More Saddles [A]/[H] (150)
+							{	-- We're Going to Need More Saddles [Alliance] // [Horde] (150)
 								["allianceAchievementID"] = 7860,	-- We're Going to Need More Saddles (Alliance) (150)
 								["hordeAchievementID"] = 7862,		-- We're Going to Need More Saddles (Horde) (150)
 								["itemID"] = 91802, 				-- Jade Pandaren Kite String
 							},
 						},
 					},
-					{	-- Mountain o' Mounts [A]/[H] (100)
+					{	-- Mountain o' Mounts [Alliance] // [Horde] (100)
 						["allianceAchievementID"] = 2536,	-- Mountain o' Mounts (Alliance) (100)
 						["hordeAchievementID"] = 2537,		-- Mountain o' Mounts (Horde) (100)
 						["g"] = {
-							{	-- Mountain o' Mounts [A]/[H] (100)
+							{	-- Mountain o' Mounts [Alliance] // [Horde] (100)
 								["allianceAchievementID"] = 2536,	-- Mountain o' Mounts (Alliance) (100)
 								["hordeAchievementID"] = 2537,		-- Mountain o' Mounts (Horde) (100)
 								["itemID"] = 44843, 				-- Blue Dragonhawk

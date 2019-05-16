@@ -20,7 +20,6 @@ _.WorldEvents =
 					866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 				},
 				["groups"] = {
-					
 					i(139158),	-- Battle Mace of the Niskaran Guard
 					i(139163),	-- Star of Niskara
 					i(138762),	-- Niskaran Morning Star

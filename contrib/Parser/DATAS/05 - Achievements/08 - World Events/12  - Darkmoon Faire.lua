@@ -146,14 +146,14 @@ _.Achievements =
 						crit(4),		-- Tonk Battle
 						crit(5),		-- Whack-A-Gnoll
 					}),
-					{	-- Taking the Show on the Road [A]/[H]
+					{	-- Taking the Show on the Road [Alliance] // [Horde]
 						["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
 						["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
 						["g"] = {
-							{	-- Dalaran [A]/[H]
+							{	-- Dalaran [Alliance] // [Horde]
 								["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
 								["hordeAchievementID"] = 6031,		-- Taking the Show on the Road (Horde)
-								["criteriaID"] = 1,					-- Dalaran [A]/[H]
+								["criteriaID"] = 1,					-- Dalaran [Alliance] // [Horde]
 							},
 							{	-- Darnassus/Orgrimmar
 								["allianceAchievementID"] = 6030,	-- Taking the Show on the Road (Alliance)
