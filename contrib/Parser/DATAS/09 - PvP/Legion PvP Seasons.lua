@@ -73,5 +73,51 @@ _.PVP =
 			un(2, i(144903)),	-- Cruel Gladiator's pendant h
 			un(2, i(144905)),	-- Cruel Gladiator's choker h
 		}),
+		n(-654, {	-- Ferocious Gladiator: Legion Season 4
+			-- Necks Gladiator (Epic)
+			un(2, i(145496)),	-- Ferocious Gladiator's Necklace a
+			un(2, i(145498)),	-- Ferocious Gladiator's pendant a
+			un(2, i(145600)),	-- Ferocious Gladiator's choker a
+			un(2, i(145497)),	-- Ferocious Gladiator's necklace h
+			un(2, i(145499)),	-- Ferocious Gladiator's pendant h
+			un(2, i(145601)),	-- Ferocious Gladiator's choker h
+			-- Necks Combatant (Blue)
+			un(2, i(145988)),	-- Ferocious Combatant Necklace a
+			un(2, i(145990)),	-- Ferocious Combatant pendant a
+			un(2, i(145992)),	-- Ferocious Combatant choker a
+			un(2, i(145989)),	-- Ferocious Combatant necklace h
+			un(2, i(145991)),	-- Ferocious Combatant pendant h
+			un(2, i(145993)),	-- Ferocious Combatant choker h
+			-- Necks Elite
+			un(2, i(145742)),	-- Ferocious Gladiator's Necklace a
+			un(2, i(145744)),	-- Ferocious Gladiator's pendant a
+			un(2, i(145746)),	-- Ferocious Gladiator's choker a
+			un(2, i(145743)),	-- Ferocious Gladiator's necklace h
+			un(2, i(145745)),	-- Ferocious Gladiator's pendant h
+			un(2, i(145747)),	-- Ferocious Gladiator's choker h
+		}),
+		n(-655, {	-- Fierce Gladiator: Legion Season 5
+			-- Necks Gladiator (Epic)
+			un(2, i(148029)),	-- Fierce Gladiator's Necklace a
+			un(2, i(148031)),	-- Fierce Gladiator's pendant a
+			un(2, i(148033)),	-- Fierce Gladiator's choker a
+			un(2, i(148030)),	-- Fierce Gladiator's necklace h
+			un(2, i(148032)),	-- Fierce Gladiator's pendant h
+			un(2, i(148034)),	-- Fierce Gladiator's choker h
+			-- Necks Combatant (Blue)
+			un(2, i(149626)),	-- Fierce Combatant Necklace a
+			un(2, i(149628)),	-- Fierce Combatant pendant a
+			un(2, i(149630)),	-- Fierce Combatant choker a
+			un(2, i(149627)),	-- Fierce Combatant necklace h
+			un(2, i(149629)),	-- Fierce Combatant pendant h
+			un(2, i(149631)),	-- Fierce Combatant choker h
+			-- Necks Elite
+			un(2, i(148275)),	-- Fierce Gladiator's Necklace a
+			un(2, i(148277)),	-- Fierce Gladiator's pendant a
+			un(2, i(148279)),	-- Fierce Gladiator's choker a
+			un(2, i(148276)),	-- Fierce Gladiator's necklace h
+			un(2, i(148278)),	-- Fierce Gladiator's pendant h
+			un(2, i(148280)),	-- Fierce Gladiator's choker h
+		}),
 	}),
 };
