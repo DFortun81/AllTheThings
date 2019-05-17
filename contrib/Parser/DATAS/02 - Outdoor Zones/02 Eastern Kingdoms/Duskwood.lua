@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(47, {		-- Duskwood
-			["groups"] = {
+			["g"] = {
 				n(-228, {	-- Flight Path
 					fp(12, {	-- Darkshire, Duskwood
 						["coord"] = { 77.4, 44.2 },
@@ -111,9 +111,15 @@ _.Zones =
 					qg(100323, q(40834, {	-- Following the Curse
 						["classes"] = {11},	-- Druid
 					})),
-					qg(100323, q(40588, {	-- Following the Curse
-						["classes"] = {9},	-- Warlock
-					})),
+--]]
+					q(40588, {	-- Following the Curse
+						["sourceQuests"] = { 40495 },	-- Ulthalesh, the Deadwind Harvester
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 77.4, 36.1, 47 },
+						["lvl"] = 98,
+						["qg"] = 100323,	-- Revil Kost
+					}),
+--[[
 					qg(100323, q(40931, {	-- Following the Curse
 						["classes"] = {6},	-- Death Knight
 					})),
@@ -373,7 +379,7 @@ _.Zones =
 						},
 					}),
 					n(91592, {	-- Forlorn Composer
-						["groups"] = {
+						["g"] = {
 							i(122223),	-- Music Roll: Ghost
 						},
 						["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music requires you to speak to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges)."
@@ -663,7 +669,7 @@ _.Zones =
 				}),
 				n(-2,   {	-- Vendors
 					a(n(844,  {	-- Antonio Perelli <Traveling Salesman>
-						["groups"] = {
+						["g"] = {
 							i(4795),	-- Bear Bracers
 							i(4796),	-- Owl Bracers
 							i(4794),	-- Wolf Bracers
@@ -729,7 +735,7 @@ _.Zones =
 					})),
 				}),
 				n(-40,  {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-2, {
 							n(2481, {	-- Bliztik
 								un(2, i(6068)),	-- Recipe: Shadow Oil
@@ -766,7 +772,7 @@ _.Zones =
 							})),
 							un(40, qa(58, {		-- The Night Watch
 								["qg"] = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
-								["groups"] = {
+								["g"] = {
 									un(2, i(3604)),	-- Bandolier of the Night Watch
 									un(2, i(1729)),	-- Gunnysack of the Night Watch
 									un(2, i(3605)),	-- Quiver of the Night Watch

@@ -15,6 +15,7 @@ _.Zones =
 				639,	-- Aggramar's Vault
 				640,	-- Vault of Eyir
 				649,	-- Helheim
+				671,	-- The Cove of Nashal (used in introductory scenario)
 				694,	-- Helmouth Shallows
 				829,	-- Halls of Valor
 				865,	-- Stormheim (Legion Invasion)
@@ -1031,7 +1032,10 @@ _.Zones =
 					ach(10790, {	-- Vrykul Story, Bro
 						{	-- Criteria 1 — Greymane's Gambit
 							["criteriaID"] = 1,	-- Greymane's Gambit
-							["sourceQuests"] = { 39801 },	-- The Splintered Fleet
+							["sourceQuests"] = {
+								39800,	-- Greymane's Gambit (Alliance)
+								39801,	-- The Splintered Fleet (Horde)
+							},
 						},
 						{	-- Criteria 2 — The Aftermath
 							["criteriaID"] = 2,	-- The Aftermath
@@ -1110,9 +1114,9 @@ _.Zones =
 						["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38612, {	-- A Grapple a Day (Horde)
-						["qg"] = 92561,	-- Dread-Rider Cullen
-						["coord"] = { 44.8, 59.3, 634 },
 						["sourceQuests"] = { 38611 },	-- Will of the Thorignir
+						["coord"] = { 44.8, 59.3, 634 },
+						["qg"] = 92561,	-- Dread-Rider Cullen
 					}),
 					qh(38362, {	-- A Grim Trophy
 						["sourceQuests"] = {
@@ -1133,9 +1137,9 @@ _.Zones =
 						},
 					}),
 					q(39590,  {	-- Ahead of the Game
-						["qg"] = 96254,	-- Havi
-						["coord"] = { 41.8, 42.9, 634 },
 						["sourceQuests"] = { 38331 },	-- Havi's Test
+						["coord"] = { 41.8, 42.9, 634 },
+						["qg"] = 96254,	-- Havi
 					}),
 					q(40078,  {	-- A Heavy Burden
 						["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
@@ -1173,14 +1177,19 @@ _.Zones =
 						["sourceQuests"] = { 38410 },	-- Impalement Insurance
 					}),
 					qa(38053, {	-- Assault and Battery
-						i(134554),
-						i(134555),
-						i(134556),
-						i(134557),
-						i(134558),
-						i(134559),
-						i(134560),
-						i(134561),
+						["sourceQuests"] = { 39800 },	-- Greymane's Gambit
+						["coord"] = { 33.6, 50.8, 634 },
+						["qg"] = 90866,	-- Tinkmaster Overspark
+						["g"] = {
+							i(134554),	-- Runespeaker's Gloves
+							i(134555),	-- Runesworn Grips
+							i(134556),	-- Stormborn Gloves
+							i(134557),	-- Dreadsworn Gauntlets
+							i(134558),	-- Runespeaker's Robes
+							i(134559),	-- Runesworn Chestguard
+							i(134560),	-- Stormborn Tunic
+							i(134561),	-- Dreadsworn Chestguard
+						},
 					}),
 					q(39792,  {	-- A Stack of Racks
 						["sourceQuests"] = {
@@ -1255,7 +1264,11 @@ _.Zones =
 							108283,	-- Mightstone Savage
 						},
 					}),
-					qa(38052),	-- Boarded!
+					qa(38052, {	-- Boarded!
+						["sourceQuests"] = { 39800 },	-- Greymane's Gambit
+						["coord"] = { 33.7, 50.9, 634 },
+						["qg"] = 90749,	-- Sky Admiral Rogers
+					}),
 					q(38816,  {	-- Breaking the Bonespeakers
 						["qg"] = 93446,	-- Shieldmaiden Iounn
 						["coord"] = { 68.0, 48.6, 634 },
@@ -1269,10 +1282,10 @@ _.Zones =
 						["coord"] = { 65.8, 59.4, 634 },
 						["qg"] = 97979,	-- Vethir
 					}),
-					{	-- Built to Scale (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["itemID"] = 122610,	-- Storm Drake Scale
+					{	---------- Built to Scale (Alliance)
 						["questID"] = 38337,	-- Built to Scale
+						["itemID"] = 122610,	-- Storm Drake Scale
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(129320),	-- Charged Stormwing Robes
 							i(129321),	-- Electrified Stormwing Vest
@@ -1284,7 +1297,7 @@ _.Zones =
 							i(121519),	-- Reinforced Stormwing Waistguard
 						},
 					},
-					{	-- Built to Scale (Horde)
+					{	---------- Built to Scale (Horde)
 						["questID"] = 38616,	-- Built to Scale
 						["itemID"] = 124037,	-- Storm Drake Scale
 						["races"] = HORDE_ONLY,
@@ -1377,16 +1390,6 @@ _.Zones =
 							38618,	-- Above the Winter Moonlight (Horde)
 						},
 					}),
-					qa(39800, {	-- Greymane's Gambit
-						i(139914),
-						i(121760),
-						i(139950),
-						i(139955),
-						i(139976),
-						i(121762),
-						i(121753),
-						i(121761),
-					}),
 					q(40072,  {	-- Halls of Valor: Securing the Aegis
 						["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
 						["coord"] = { 70.2, 69.1, 634 },
@@ -1447,7 +1450,16 @@ _.Zones =
 							38810,	-- The Dreaming Fungus
 						},
 					}),
-					qa(38058),	-- Lightning Rod
+					qa(38058, {	-- Lightning Rod
+						["sourceQuests"] = {
+							38053,	-- Assault and Battery
+							38052,	-- Boarded!
+							38558,	-- See Ya Later, Oscillator
+							38036,	-- Supplies From the Skies
+						},
+						["coord"] = { 33.7, 50.8, 634 },
+						["qg"] = 90866,	-- Tinkmaster Overspark
+					}),
 					qa(38206),	-- Making the Rounds
 					qh(38317, {	-- Masters of Disguise
 						["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
@@ -1480,8 +1492,8 @@ _.Zones =
 						["coord"] = { 49.8, 32.5, 634 },
 					}),
 					qa(38318, {	-- No Wings Required (Alliance)
-						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
 						["sourceQuests"] = { 38312 },	-- A Grapple a Day
+						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38613, {	-- No Wings Required (Horde)
 						["sourceQuests"] = { 38612 },	-- A Grapple a Day
@@ -1553,7 +1565,11 @@ _.Zones =
 						["coord"] = { 59.0, 42.9, 634 },
 						["qg"] = 97973,	-- Havi
 					}),
-					qa(38558),	-- See Ya Later, Oscillator
+					qa(38558, {	-- See Ya Later, Oscillator
+						["sourceQuests"] = { 39800 },	-- Greymane's Gambit
+						["coord"] = { 33.6, 50.8, 634 },
+						["qg"] = 90866,	-- Tinkmaster Overspark
+					}),
 					q(40044,  {	-- Shadows in the Mists
 						["sourceQuests"] = { 39984 },	-- Remnants of the Past
 						["coord"] = { 59.0, 42.9, 634 },
@@ -1613,15 +1629,14 @@ _.Zones =
 						["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 						["coord"] = { 58.5, 64.2, 634 },
 					}),
-					{ -- Stormforged Grapple Launcher
-						["coord"] = { 36.9, 31.8, 634 },
-						["itemID"] = 138111,	-- Stormforged Grapple Launcher
-						["questID"] = 39775,	-- Stormforged Grapple Launcher
-						["creatureID"] = 107840,	-- Stormforged Grapple Launcher
+					{ ------------ Stormforged Grapple Launcher
 						["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
+						["creatureID"] = 107840,	-- Stormforged Grapple Launcher
+						["questID"] = 39775,	-- Stormforged Grapple Launcher
+						["itemID"] = 138111,	-- Stormforged Grapple Launcher
+						["coord"] = { 36.9, 31.8, 634 },
 					},
 				--	qa(44700),	-- Stormheim (probably granted by scouting map)
-				--	qa(39735),	-- Stormheim (probably granted by scouting map)
 				--	qh(44701),	-- Stormheim (probably granted by scouting map)
 					q(40005,  {	-- Stormheim's Salvation
 						["sourceQuests"] = {
@@ -1642,6 +1657,11 @@ _.Zones =
 							i(132852),	-- Horn of Helheim
 							i(132854),	-- Fel-Tainted Haze
 						},
+					}),
+					qa(38036, {	-- Supplies From the Skies
+						["sourceQuests"] = { 39800 },	-- Greymane's Gambit
+						["coord"] = { 33.6, 50.8, 634 },
+						["qg"] = 90783,	-- Mishka
 					}),
 					q(43349,  {	-- The Aegis of Aggramar
 						i(130016),	-- Valor-Bound Legplates
@@ -1705,7 +1725,16 @@ _.Zones =
 						["qg"] = 93628,	-- Eyir
 						["lvl"] = 110,
 					}),
-					qa(38057),	-- The Lost Legion
+					qa(38057, {	-- The Lost Legion
+						["sourceQuests"] = {
+							38053,	-- Assault and Battery
+							38052,	-- Boarded!
+							38558,	-- See Ya Later, Oscillator
+							38036,	-- Supplies From the Skies
+						},
+						["coord"] = { 33.7, 50.8, 634 },
+						["qg"] = 90783,	-- Mishka
+					}),
 					q(42635,  {	-- The Mystery of Dreyrgrot
 						["coord"] = { 74.8, 55.5, 634 },
 						["qg"] = 108072,	-- Sir Finley Mrrggglton
@@ -2068,7 +2097,6 @@ _.Zones =
 					q(41039),	-- Stolen Knowledge
 					q(40131),	-- Stonehide Leather Sample
 					q(42749),	-- Strange Bedfellows
-					qa(38036),	-- Supplies From the Skies
 					q(42651),	-- Svergan's Promise
 					q(38424),	-- Thane's Mead Hall
 					q(41163),	-- The Apocalypse Bringer

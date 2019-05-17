@@ -205,7 +205,9 @@ _.Zones =
 						["qg"] = 105081,	-- Archmage Kalec
 					}),
 					q(44099,  {	-- A Mutual Friend
-						["classes"] = { 9 },
+						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 101,
 						["qg"] = 112693,	-- Black Harvest Acolyte
 					}),
 					q(42006,  {	-- A New Threat
@@ -242,6 +244,7 @@ _.Zones =
 					}),
 					qa(38035, {	-- A Royal Summons
 						["sourceQuests"] = { 39735, 44700 },	-- Stormheim (2 versions)
+						["coord"] = { 29.2, 47.2, 627 },
 						["qg"] = 96644,	-- Sky Admiral Rogers
 					}),
 					q(43441,  {	-- A Second Weapon
@@ -956,10 +959,6 @@ _.Zones =
 						["classes"] = { 12 },
 						["qgs"] = { 99254, 108571 },	-- Altruis  the Sufferer
 					}),
-					qa(38206, {	-- Making the Rounds
-						["sourceQuests"] = { 38035 },	-- A Royal Summons
-						["qg"] = 96644,	-- Sky Admiral Rogers
-					}),
 					qa(47039, {	-- Marksmanship: The Twisted Twin
 						["classes"] = { 3 },
 						["qgs"] = { 90463, 115468 },	-- Archmage Karlain (2 versions)
@@ -1075,7 +1074,7 @@ _.Zones =
 						["classes"] = { 4 },
 						["qg"] = 110793,	-- Taoshi
 					}),
-					q(40821,  { 	-- Power Overwhelming
+					q(40821,  {	-- Power Overwhelming
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 						["classes"] = { 9 },
 						["qg"] = 101097,	-- Calydus
@@ -1411,6 +1410,17 @@ _.Zones =
 						["classes"] = { 8 },
 						["qg"] = 102700,	-- Meryl Felstorm
 					}),
+					q(40731, {	-- The Heart of the Dreadscar
+						["sourceQuests"] = {
+							40712,	-- The Power Possessed
+							41156,	-- The Power Possessed
+							42125,	-- Dark Whispers
+						},
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 56.4, 65.0, 628 },
+						["lvl"] = 98,
+						["qg"] = 101097,	-- Calydus
+					}),
 					q(41119,  {	-- The Hunt
 						["classes"] = { 12 },
 						["qg"] = 103156,	-- Altruis the Sufferer
@@ -1466,7 +1476,8 @@ _.Zones =
 					}),
 					q(40729,  {	-- The New Blood
 						["sourceQuests"] = { 40716 },	-- The Sixth
-						["classes"] = { 9 },
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
 						["qg"] = 101456,	-- Ritssyn Flamescowl
 					}),
 					q(42011,  {	-- The Nexus Vault
@@ -1527,12 +1538,20 @@ _.Zones =
 						["qg"] = 106337,	-- Travard
 					}),
 					q(40716,  {	-- The Sixth
-						["classes"] = { 9 },
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+						["classes"] = { 9 },	-- Warlock
 						["qg"] = 103506,	-- Ritssyn Flamescowl
 					}),
 					q(41124,  {	-- The Tirisgarde Reborn
 						["classes"] = { 8 },
 						["qg"] = 102700,	-- Meryl Felstorm
+					}),
+					q(40684, {	-- The Tome of Blighted Implements
+						["sourceQuests"] = { 40729 },	-- The New Blood
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 56.3, 65.0, 628 },
+						["lvl"] = 98,
+						["qg"] = 101097,	-- Calydus
 					}),
 				--	q(39731),	-- The Tranquil Forest -- granted by scouting map
 					qh(38307, {	-- The Warchief Beckons
@@ -1607,6 +1626,12 @@ _.Zones =
 						["sourceQuests"] = { 39731 },	-- The Tranquil Forest
 						["coord"] = { 70.1, 43.7, 627 },
 						["qg"] = 91172,	-- Archmage Khadgar
+					}),
+					q(40495, {	-- Ulthalesh, the Deadwind Harvester
+						["sourceQuests"] = { 40684 },	-- The Tome of Blighted Implements
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 56.3, 65.0, 628 },
+						["qg"] = 101097,	-- Calydus
 					}),
 					q(37494,  {	-- Under Cover of Darkness
 						["sourceQuests"] = { 37448 },	-- A Simple Plan
