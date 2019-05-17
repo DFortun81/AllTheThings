@@ -377,7 +377,7 @@ _.Zones =
 								["groups"] = {
 									i(62180),   -- Band of the Arachnid Wrangler
 									i(62179),	-- Spider Frier
-								--i(62178),	-- Not Transmoggable
+									i(62178),	-- Spider Splatter Mace
 								},
 								["qg"] = 11616,	-- Nathaniel Dumah
 								["sourceQuests"] = { 27000 },	-- Learning the Ropes
