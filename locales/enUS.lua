@@ -1205,7 +1205,7 @@ AllTheThings.L = {
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest
 		[-489] = "Weekly PVP Chest",											-- Weekly Conquest Point Cap Chest
-		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
+		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
 		[-493] = TIME_UNKNOWN.." "..SPELL_TARGET_TYPE6_DESC, 					-- Unknown location
@@ -1322,6 +1322,9 @@ AllTheThings.L = {
 		[-600] = GetSpellInfo(262954),											-- Communing with Jani [Vilescale Pearl]
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
+		
+-- Legion Pvp Seasons
+		[-651] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
