@@ -374,50 +374,217 @@ _.PVP =
 			}),
 		}),
 		n(-654, {	-- Ferocious Gladiator: Legion Season 4
-			-- Necks Gladiator (Epic)
-			un(2, i(145496)),	-- Ferocious Gladiator's Necklace a
-			un(2, i(145498)),	-- Ferocious Gladiator's pendant a
-			un(2, i(145500)),	-- Ferocious Gladiator's choker a
-			un(2, i(145497)),	-- Ferocious Gladiator's necklace h
-			un(2, i(145499)),	-- Ferocious Gladiator's pendant h
-			un(2, i(145501)),	-- Ferocious Gladiator's choker h
-			-- Necks Combatant (Blue)
-			un(2, i(145988)),	-- Ferocious Combatant Necklace a
-			un(2, i(145990)),	-- Ferocious Combatant pendant a
-			un(2, i(145992)),	-- Ferocious Combatant choker a
-			un(2, i(145989)),	-- Ferocious Combatant necklace h
-			un(2, i(145991)),	-- Ferocious Combatant pendant h
-			un(2, i(145993)),	-- Ferocious Combatant choker h
-			-- Necks Elite
-			un(2, i(145742)),	-- Ferocious Gladiator's Necklace a
-			un(2, i(145744)),	-- Ferocious Gladiator's pendant a
-			un(2, i(145746)),	-- Ferocious Gladiator's choker a
-			un(2, i(145743)),	-- Ferocious Gladiator's necklace h
-			un(2, i(145745)),	-- Ferocious Gladiator's pendant h
-			un(2, i(145747)),	-- Ferocious Gladiator's choker h
+			n(-384,	{	-- Neck
+				-- Elite
+				un(2, i(145742)),	-- Ferocious Gladiator's Necklace a
+				un(2, i(145744)),	-- Ferocious Gladiator's pendant a
+				un(2, i(145746)),	-- Ferocious Gladiator's choker a
+				un(2, i(145743)),	-- Ferocious Gladiator's necklace h
+				un(2, i(145745)),	-- Ferocious Gladiator's pendant h
+				un(2, i(145747)),	-- Ferocious Gladiator's choker h
+				-- Gladiator (Epic)
+				un(2, i(145496)),	-- Ferocious Gladiator's Necklace a
+				un(2, i(145498)),	-- Ferocious Gladiator's pendant a
+				un(2, i(145500)),	-- Ferocious Gladiator's choker a
+				un(2, i(145497)),	-- Ferocious Gladiator's necklace h
+				un(2, i(145499)),	-- Ferocious Gladiator's pendant h
+				un(2, i(145501)),	-- Ferocious Gladiator's choker h
+				-- Combatant (Blue)
+				un(2, i(145988)),	-- Ferocious Combatant Necklace a
+				un(2, i(145990)),	-- Ferocious Combatant pendant a
+				un(2, i(145992)),	-- Ferocious Combatant choker a
+				un(2, i(145989)),	-- Ferocious Combatant necklace h
+				un(2, i(145991)),	-- Ferocious Combatant pendant h
+				un(2, i(145993)),	-- Ferocious Combatant choker h
+			}),
+			n(-385,	{	-- Finger
+				-- Elite
+				un(2, i(145780)), -- Ferocious Gladiator's Ring (Alliance)
+				un(2, i(145782)), -- Ferocious Gladiator's Band (Alliance)
+				un(2, i(145784)), -- Ferocious Gladiator's Signet (Alliance)
+				un(2, i(145781)), -- Ferocious Gladiator's Ring (Horde)
+				un(2, i(145783)), -- Ferocious Gladiator's Band (Horde)
+				un(2, i(145785)), -- Ferocious Gladiator's Signet (Horde)
+				-- Gladiator (Epic)
+				un(2, i(145534)), -- Ferocious Gladiator's Ring (Alliance)
+				un(2, i(145536)), -- Ferocious Gladiator's Band (Alliance)
+				un(2, i(145538)), -- Ferocious Gladiator's Signet (Alliance)
+				un(2, i(145535)), -- Ferocious Gladiator's Ring (Horde)
+				un(2, i(145537)), -- Ferocious Gladiator's Band (Horde)
+				un(2, i(145539)), -- Ferocious Gladiator's Signet (Horde)
+				-- Combatant (Blue)
+				un(2, i(146026)), -- Ferocious Combatant's Ring (Alliance)
+				un(2, i(146028)), -- Ferocious Combatant's Band (Alliance)
+				un(2, i(146030)), -- Ferocious Combatant's Signet (Alliance)
+				un(2, i(146027)), -- Ferocious Combatant's Ring (Horde)
+				un(2, i(146029)), -- Ferocious Combatant's Band (Horde)
+				un(2, i(146031)), -- Ferocious Combatant's Signet (Horde)
+			}),
+			n(-386,	{	-- Trinket
+				-- Elite
+				un(2, i(145818)), -- Ferocious Gladiator's Badge of Conquest (Alliance)
+				un(2, i(145820)), -- Ferocious Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(145822)), -- Ferocious Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(145824)), -- Ferocious Gladiator's Badge of Dominance (Alliance)
+				un(2, i(145826)), -- Ferocious Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(145828)), -- Ferocious Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(145830)), -- Ferocious Gladiator's Badge of Victory (Alliance)
+				un(2, i(145832)), -- Ferocious Gladiator's Accolade of Victory (Alliance)
+				un(2, i(145834)), -- Ferocious Gladiator's Insignia of Victory (Alliance)
+				un(2, i(145819)), -- Ferocious Gladiator's Badge of Conquest (Horde)
+				un(2, i(145821)), -- Ferocious Gladiator's Accolade of Conquest (Horde)
+				un(2, i(145823)), -- Ferocious Gladiator's Insignia of Conquest (Horde)
+				un(2, i(145825)), -- Ferocious Gladiator's Badge of Dominance (Horde)
+				un(2, i(145827)), -- Ferocious Gladiator's Accolade of Dominance (Horde)
+				un(2, i(145829)), -- Ferocious Gladiator's Insignia of Dominance (Horde)
+				un(2, i(145831)), -- Ferocious Gladiator's Badge of Victory (Horde)
+				un(2, i(145833)), -- Ferocious Gladiator's Accolade of Victory (Horde)
+				un(2, i(145835)), -- Ferocious Gladiator's Insignia of Victory (Horde)
+				-- Gladiator (Epic)
+				un(2, i(145572)), -- Ferocious Gladiator's Badge of Conquest (Alliance)
+				un(2, i(145574)), -- Ferocious Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(145576)), -- Ferocious Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(145578)), -- Ferocious Gladiator's Badge of Dominance (Alliance)
+				un(2, i(145580)), -- Ferocious Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(145582)), -- Ferocious Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(145584)), -- Ferocious Gladiator's Badge of Victory (Alliance)
+				un(2, i(145586)), -- Ferocious Gladiator's Accolade of Victory (Alliance)
+				un(2, i(145588)), -- Ferocious Gladiator's Insignia of Victory (Alliance)
+				un(2, i(145573)), -- Ferocious Gladiator's Badge of Conquest (Horde)
+				un(2, i(145575)), -- Ferocious Gladiator's Accolade of Conquest (Horde)
+				un(2, i(145577)), -- Ferocious Gladiator's Insignia of Conquest (Horde)
+				un(2, i(145579)), -- Ferocious Gladiator's Badge of Dominance (Horde)
+				un(2, i(145581)), -- Ferocious Gladiator's Accolade of Dominance (Horde)
+				un(2, i(145583)), -- Ferocious Gladiator's Insignia of Dominance (Horde)
+				un(2, i(145585)), -- Ferocious Gladiator's Badge of Victory (Horde)
+				un(2, i(145587)), -- Ferocious Gladiator's Accolade of Victory (Horde)
+				un(2, i(145589)), -- Ferocious Gladiator's Insignia of Victory (Horde)
+				-- Combatant (Blue)
+				un(2, i(146064)), -- Ferocious Combatant's Badge of Conquest (Alliance)
+				un(2, i(146066)), -- Ferocious Combatant's Accolade of Conquest (Alliance)
+				un(2, i(146068)), -- Ferocious Combatant's Insignia of Conquest (Alliance)
+				un(2, i(146070)), -- Ferocious Combatant's Badge of Dominance (Alliance)
+				un(2, i(146072)), -- Ferocious Combatant's Accolade of Dominance (Alliance)
+				un(2, i(146074)), -- Ferocious Combatant's Insignia of Dominance (Alliance)
+				un(2, i(146076)), -- Ferocious Combatant's Badge of Victory (Alliance)
+				un(2, i(146078)), -- Ferocious Combatant's Accolade of Victory (Alliance)
+				un(2, i(146080)), -- Ferocious Combatant's Insignia of Victory (Alliance)
+				un(2, i(146067)), -- Ferocious Combatant's Accolade of Conquest (Horde)
+				un(2, i(146069)), -- Ferocious Combatant's Insignia of Conquest (Horde)
+				un(2, i(146071)), -- Ferocious Combatant's Badge of Dominance (Horde)
+				un(2, i(146073)), -- Ferocious Combatant's Accolade of Dominance (Horde)
+				un(2, i(146075)), -- Ferocious Combatant's Insignia of Dominance (Horde)
+				un(2, i(146077)), -- Ferocious Combatant's Badge of Victory (Horde)
+				un(2, i(146079)), -- Ferocious Combatant's Accolade of Victory (Horde)
+				un(2, i(146081)), -- Ferocious Combatant's Insignia of Victory (Horde)
+			}),
 		}),
 		n(-655, {	-- Fierce Gladiator: Legion Season 5
-			-- Necks Gladiator (Epic)
-			un(2, i(148029)),	-- Fierce Gladiator's Necklace a
-			un(2, i(148031)),	-- Fierce Gladiator's pendant a
-			un(2, i(148033)),	-- Fierce Gladiator's choker a
-			un(2, i(148030)),	-- Fierce Gladiator's necklace h
-			un(2, i(148032)),	-- Fierce Gladiator's pendant h
-			un(2, i(148034)),	-- Fierce Gladiator's choker h
-			-- Necks Combatant (Blue)
-			un(2, i(149626)),	-- Fierce Combatant Necklace a
-			un(2, i(149628)),	-- Fierce Combatant pendant a
-			un(2, i(149630)),	-- Fierce Combatant choker a
-			un(2, i(149627)),	-- Fierce Combatant necklace h
-			un(2, i(149629)),	-- Fierce Combatant pendant h
-			un(2, i(149631)),	-- Fierce Combatant choker h
-			-- Necks Elite
-			un(2, i(148275)),	-- Fierce Gladiator's Necklace a
-			un(2, i(148277)),	-- Fierce Gladiator's pendant a
-			un(2, i(148279)),	-- Fierce Gladiator's choker a
-			un(2, i(148276)),	-- Fierce Gladiator's necklace h
-			un(2, i(148278)),	-- Fierce Gladiator's pendant h
-			un(2, i(148280)),	-- Fierce Gladiator's choker h
+			n(-384,	{	-- Neck
+				-- Elite
+				un(2, i(148275)),	-- Fierce Gladiator's Necklace a
+				un(2, i(148277)),	-- Fierce Gladiator's pendant a
+				un(2, i(148279)),	-- Fierce Gladiator's choker a
+				un(2, i(148276)),	-- Fierce Gladiator's necklace h
+				un(2, i(148278)),	-- Fierce Gladiator's pendant h
+				un(2, i(148280)),	-- Fierce Gladiator's choker h
+				-- Gladiator (Epic)
+				un(2, i(148029)),	-- Fierce Gladiator's Necklace a
+				un(2, i(148031)),	-- Fierce Gladiator's pendant a
+				un(2, i(148033)),	-- Fierce Gladiator's choker a
+				un(2, i(148030)),	-- Fierce Gladiator's necklace h
+				un(2, i(148032)),	-- Fierce Gladiator's pendant h
+				un(2, i(148034)),	-- Fierce Gladiator's choker h
+				-- Combatant (Blue)
+				un(2, i(149626)),	-- Fierce Combatant Necklace a
+				un(2, i(149628)),	-- Fierce Combatant pendant a
+				un(2, i(149630)),	-- Fierce Combatant choker a
+				un(2, i(149627)),	-- Fierce Combatant necklace h
+				un(2, i(149629)),	-- Fierce Combatant pendant h
+				un(2, i(149631)),	-- Fierce Combatant choker h
+			}),
+			n(-385,	{	-- Finger
+				-- Elite
+				un(2, i(148313)), -- Fierce Gladiator's Ring (Alliance)
+				un(2, i(148315)), -- Fierce Gladiator's Band (Alliance)
+				un(2, i(148317)), -- Fierce Gladiator's Signet (Alliance)
+				un(2, i(148314)), -- Fierce Gladiator's Ring (Horde)
+				un(2, i(148316)), -- Fierce Gladiator's Band (Horde)
+				un(2, i(148318)), -- Fierce Gladiator's Signet (Horde)
+				-- Gladiator (Epic)
+				un(2, i(148067)), -- Fierce Gladiator's Ring (Alliance)
+				un(2, i(148069)), -- Fierce Gladiator's Band (Alliance)
+				un(2, i(148071)), -- Fierce Gladiator's Signet (Alliance)
+				un(2, i(148068)), -- Fierce Gladiator's Ring (Horde)
+				un(2, i(148070)), -- Fierce Gladiator's Band (Horde)
+				un(2, i(148072)), -- Fierce Gladiator's Signet (Horde)
+				-- Combatant (Blue)
+				un(2, i(149664)), -- Fierce Combatant's Ring (Alliance)
+				un(2, i(149666)), -- Fierce Combatant's Band (Alliance)
+				un(2, i(149668)), -- Fierce Combatant's Signet (Alliance)
+				un(2, i(149665)), -- Fierce Combatant's Ring (Horde)
+				un(2, i(149667)), -- Fierce Combatant's Band (Horde)
+				un(2, i(149669)), -- Fierce Combatant's Signet (Horde)
+			}),
+			n(-386,	{	-- Trinket
+				-- Elite
+				un(2, i(148351)), -- Fierce Gladiator's Badge of Conquest (Alliance)
+				un(2, i(148353)), -- Fierce Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(148355)), -- Fierce Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(148357)), -- Fierce Gladiator's Badge of Dominance (Alliance)
+				un(2, i(148359)), -- Fierce Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(148361)), -- Fierce Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(148363)), -- Fierce Gladiator's Badge of Victory (Alliance)
+				un(2, i(148365)), -- Fierce Gladiator's Accolade of Victory (Alliance)
+				un(2, i(148367)), -- Fierce Gladiator's Insignia of Victory (Alliance)
+				un(2, i(148352)), -- Fierce Gladiator's Badge of Conquest (Horde)
+				un(2, i(148354)), -- Fierce Gladiator's Accolade of Conquest (Horde)
+				un(2, i(148356)), -- Fierce Gladiator's Insignia of Conquest (Horde)
+				un(2, i(148358)), -- Fierce Gladiator's Badge of Dominance (Horde)
+				un(2, i(148360)), -- Fierce Gladiator's Accolade of Dominance (Horde)
+				un(2, i(148362)), -- Fierce Gladiator's Insignia of Dominance (Horde)
+				un(2, i(148364)), -- Fierce Gladiator's Badge of Victory (Horde)
+				un(2, i(148366)), -- Fierce Gladiator's Accolade of Victory (Horde)
+				un(2, i(148368)), -- Fierce Gladiator's Insignia of Victory (Horde)
+				-- Gladiator (Epic)
+				un(2, i(148105)), -- Fierce Gladiator's Badge of Conquest (Alliance)
+				un(2, i(148107)), -- Fierce Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(148109)), -- Fierce Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(148111)), -- Fierce Gladiator's Badge of Dominance (Alliance)
+				un(2, i(148113)), -- Fierce Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(148115)), -- Fierce Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(148117)), -- Fierce Gladiator's Badge of Victory (Alliance)
+				un(2, i(148119)), -- Fierce Gladiator's Accolade of Victory (Alliance)
+				un(2, i(148121)), -- Fierce Gladiator's Insignia of Victory (Alliance)
+				un(2, i(148106)), -- Fierce Gladiator's Badge of Conquest (Horde)
+				un(2, i(148108)), -- Fierce Gladiator's Accolade of Conquest (Horde)
+				un(2, i(148110)), -- Fierce Gladiator's Insignia of Conquest (Horde)
+				un(2, i(148112)), -- Fierce Gladiator's Badge of Dominance (Horde)
+				un(2, i(148114)), -- Fierce Gladiator's Accolade of Dominance (Horde)
+				un(2, i(148116)), -- Fierce Gladiator's Insignia of Dominance (Horde)
+				un(2, i(148118)), -- Fierce Gladiator's Badge of Victory (Horde)
+				un(2, i(148120)), -- Fierce Gladiator's Accolade of Victory (Horde)
+				un(2, i(148122)), -- Fierce Gladiator's Insignia of Victory (Horde)
+				-- Combatant (Blue)
+				un(2, i(149702)), -- Fierce Combatant's Badge of Conquest (Alliance)
+				un(2, i(149704)), -- Fierce Combatant's Accolade of Conquest (Alliance)
+				un(2, i(149706)), -- Fierce Combatant's Insignia of Conquest (Alliance)
+				un(2, i(149708)), -- Fierce Combatant's Badge of Dominance (Alliance)
+				un(2, i(149710)), -- Fierce Combatant's Accolade of Dominance (Alliance)
+				un(2, i(149712)), -- Fierce Combatant's Insignia of Dominance (Alliance)
+				un(2, i(149714)), -- Fierce Combatant's Badge of Victory (Alliance)
+				un(2, i(149716)), -- Fierce Combatant's Accolade of Victory (Alliance)
+				un(2, i(149718)), -- Fierce Combatant's Insignia of Victory (Alliance)
+				un(2, i(149703)), -- Fierce Combatant's Badge of Conquest (Horde)
+				un(2, i(149705)), -- Fierce Combatant's Accolade of Conquest (Horde)
+				un(2, i(149707)), -- Fierce Combatant's Insignia of Conquest (Horde)
+				un(2, i(149709)), -- Fierce Combatant's Badge of Dominance (Horde)
+				un(2, i(149711)), -- Fierce Combatant's Accolade of Dominance (Horde)
+				un(2, i(149713)), -- Fierce Combatant's Insignia of Dominance (Horde)
+				un(2, i(149715)), -- Fierce Combatant's Badge of Victory (Horde)
+				un(2, i(149717)), -- Fierce Combatant's Accolade of Victory (Horde)
+				un(2, i(149719)), -- Fierce Combatant's Insignia of Victory (Horde)
+			}),
 		}),
 	}),
 };
