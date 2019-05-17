@@ -1,5 +1,5 @@
 -----------------------------------------------
---     P L A Y E R   V S   P L A Y E R      	--
+--     P L A Y E R   V S   P L A Y E R		 --
 -----------------------------------------------
 _.PVP =
 {
@@ -53,59 +53,59 @@ _.PVP =
 			}),
 			n(-386,	{	-- Trinket
 				-- Elite
-				un(2, i(136143)), -- Vindictive Gladiator's Badge of Conquest (Alliance)
-				un(2, i(136144)), -- Vindictive Gladiator's Accolade of Conquest (Alliance)
-				un(2, i(136145)), -- Vindictive Gladiator's Insignia of Conquest (Alliance)
-				un(2, i(136146)), -- Vindictive Gladiator's Emblem of Cruelty (Alliance)
-				un(2, i(136147)), -- Vindictive Gladiator's Emblem of Tenacity (Alliance)
-				un(2, i(136148)), -- Vindictive Gladiator's Emblem of Meditation (Alliance)
-				un(2, i(136149)), -- Vindictive Gladiator's Badge of Dominance (Alliance)
-				un(2, i(136150)), -- Vindictive Gladiator's Accolade of Dominance (Alliance)
-				un(2, i(136151)), -- Vindictive Gladiator's Insignia of Dominance (Alliance)
-				un(2, i(136152)), -- Vindictive Gladiator's Badge of Victory (Alliance)
-				un(2, i(136153)), -- Vindictive Gladiator's Accolade of Victory (Alliance)
-				un(2, i(136154)), -- Vindictive Gladiator's Insignia of Victory (Alliance)
-				un(2, i(136155)), -- Vindictive Gladiator's Badge of Adaptation (Alliance)
-				un(2, i(136256)), -- Vindictive Gladiator's Badge of Conquest (Horde)	
-				un(2, i(136257)), -- Vindictive Gladiator's Accolade of Conquest (Horde)	
-				un(2, i(136258)), -- Vindictive Gladiator's Insignia of Conquest (Horde)	
-				un(2, i(136259)), -- Vindictive Gladiator's Emblem of Cruelty (Horde)	
-				un(2, i(136260)), -- Vindictive Gladiator's Emblem of Tenacity (Horde)	
-				un(2, i(136261)), -- Vindictive Gladiator's Emblem of Meditation (Horde)	
-				un(2, i(136262)), -- Vindictive Gladiator's Badge of Dominance (Horde)	
-				un(2, i(136263)), -- Vindictive Gladiator's Accolade of Dominance (Horde)	
-				un(2, i(136264)), -- Vindictive Gladiator's Insignia of Dominance (Horde)	
-				un(2, i(136265)), -- Vindictive Gladiator's Badge of Victory (Horde)	
-				un(2, i(136266)), -- Vindictive Gladiator's Accolade of Victory (Horde)	
-				un(2, i(136267)), -- Vindictive Gladiator's Insignia of Victory (Horde)	
-				un(2, i(136268)), -- Vindictive Gladiator's Badge of Adaptation (Horde)	
+				un(2, i(136143)),	-- Vindictive Gladiator's Badge of Conquest (Alliance)
+				un(2, i(136144)),	-- Vindictive Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(136145)),	-- Vindictive Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(136146)),	-- Vindictive Gladiator's Emblem of Cruelty (Alliance)
+				un(2, i(136147)),	-- Vindictive Gladiator's Emblem of Tenacity (Alliance)
+				un(2, i(136148)),	-- Vindictive Gladiator's Emblem of Meditation (Alliance)
+				un(2, i(136149)),	-- Vindictive Gladiator's Badge of Dominance (Alliance)
+				un(2, i(136150)),	-- Vindictive Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(136151)),	-- Vindictive Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(136152)),	-- Vindictive Gladiator's Badge of Victory (Alliance)
+				un(2, i(136153)),	-- Vindictive Gladiator's Accolade of Victory (Alliance)
+				un(2, i(136154)),	-- Vindictive Gladiator's Insignia of Victory (Alliance)
+				un(2, i(136155)),	-- Vindictive Gladiator's Badge of Adaptation (Alliance)
+				un(2, i(136256)),	-- Vindictive Gladiator's Badge of Conquest (Horde)	
+				un(2, i(136257)),	-- Vindictive Gladiator's Accolade of Conquest (Horde)	
+				un(2, i(136258)),	-- Vindictive Gladiator's Insignia of Conquest (Horde)	
+				un(2, i(136259)),	-- Vindictive Gladiator's Emblem of Cruelty (Horde)	
+				un(2, i(136260)),	-- Vindictive Gladiator's Emblem of Tenacity (Horde)	
+				un(2, i(136261)),	-- Vindictive Gladiator's Emblem of Meditation (Horde)	
+				un(2, i(136262)),	-- Vindictive Gladiator's Badge of Dominance (Horde)	
+				un(2, i(136263)),	-- Vindictive Gladiator's Accolade of Dominance (Horde)	
+				un(2, i(136264)),	-- Vindictive Gladiator's Insignia of Dominance (Horde)	
+				un(2, i(136265)),	-- Vindictive Gladiator's Badge of Victory (Horde)	
+				un(2, i(136266)),	-- Vindictive Gladiator's Accolade of Victory (Horde)	
+				un(2, i(136267)),	-- Vindictive Gladiator's Insignia of Victory (Horde)	
+				un(2, i(136268)),	-- Vindictive Gladiator's Badge of Adaptation (Horde)	
 				-- Gladiator (Epic)
-				un(2, i(135691)), -- Vindictive Gladiator's Badge of Conquest (Alliance)
-				un(2, i(135692)), -- Vindictive Gladiator's Accolade of Conquest (Alliance)
-				un(2, i(135693)), -- Vindictive Gladiator's Insignia of Conquest (Alliance)
-				un(2, i(135694)), -- Vindictive Gladiator's Emblem of Cruelty (Alliance)
-				un(2, i(135695)), -- Vindictive Gladiator's Emblem of Tenacity (Alliance)
-				un(2, i(135696)), -- Vindictive Gladiator's Emblem of Meditation (Alliance)
-				un(2, i(135697)), -- Vindictive Gladiator's Badge of Dominance (Alliance)
-				un(2, i(135698)), -- Vindictive Gladiator's Accolade of Dominance (Alliance)
-				un(2, i(135699)), -- Vindictive Gladiator's Insignia of Dominance (Alliance)
-				un(2, i(135700)), -- Vindictive Gladiator's Badge of Victory (Alliance)
-				un(2, i(135701)), -- Vindictive Gladiator's Accolade of Victory (Alliance)
-				un(2, i(135702)), -- Vindictive Gladiator's Insignia of Victory (Alliance)
-				un(2, i(135703)), -- Vindictive Gladiator's Badge of Adaptation (Alliance)
-				un(2, i(135804)), -- Vindictive Gladiator's Badge of Conquest (Horde)
-				un(2, i(135805)), -- Vindictive Gladiator's Accolade of Conquest (Horde)
-				un(2, i(135806)), -- Vindictive Gladiator's Insignia of Conquest (Horde)
-				un(2, i(135807)), -- Vindictive Gladiator's Emblem of Cruelty (Horde)
-				un(2, i(135808)), -- Vindictive Gladiator's Emblem of Tenacity (Horde)
-				un(2, i(135809)), -- Vindictive Gladiator's Emblem of Meditation (Horde)
-				un(2, i(135810)), -- Vindictive Gladiator's Badge of Dominance (Horde)
-				un(2, i(135811)), -- Vindictive Gladiator's Accolade of Dominance (Horde)
-				un(2, i(135812)), -- Vindictive Gladiator's Insignia of Dominance (Horde)
-				un(2, i(135813)), -- Vindictive Gladiator's Badge of Victory (Horde)
-				un(2, i(135814)), -- Vindictive Gladiator's Accolade of Victory (Horde)
-				un(2, i(135815)), -- Vindictive Gladiator's Insignia of Victory (Horde)
-				un(2, i(135816)), -- Vindictive Gladiator's Badge of Adaptation (Horde)
+				un(2, i(135691)),	-- Vindictive Gladiator's Badge of Conquest (Alliance)
+				un(2, i(135692)),	-- Vindictive Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(135693)),	-- Vindictive Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(135694)),	-- Vindictive Gladiator's Emblem of Cruelty (Alliance)
+				un(2, i(135695)),	-- Vindictive Gladiator's Emblem of Tenacity (Alliance)
+				un(2, i(135696)),	-- Vindictive Gladiator's Emblem of Meditation (Alliance)
+				un(2, i(135697)),	-- Vindictive Gladiator's Badge of Dominance (Alliance)
+				un(2, i(135698)),	-- Vindictive Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(135699)),	-- Vindictive Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(135700)),	-- Vindictive Gladiator's Badge of Victory (Alliance)
+				un(2, i(135701)),	-- Vindictive Gladiator's Accolade of Victory (Alliance)
+				un(2, i(135702)),	-- Vindictive Gladiator's Insignia of Victory (Alliance)
+				un(2, i(135703)),	-- Vindictive Gladiator's Badge of Adaptation (Alliance)
+				un(2, i(135804)),	-- Vindictive Gladiator's Badge of Conquest (Horde)
+				un(2, i(135805)),	-- Vindictive Gladiator's Accolade of Conquest (Horde)
+				un(2, i(135806)),	-- Vindictive Gladiator's Insignia of Conquest (Horde)
+				un(2, i(135807)),	-- Vindictive Gladiator's Emblem of Cruelty (Horde)
+				un(2, i(135808)),	-- Vindictive Gladiator's Emblem of Tenacity (Horde)
+				un(2, i(135809)),	-- Vindictive Gladiator's Emblem of Meditation (Horde)
+				un(2, i(135810)),	-- Vindictive Gladiator's Badge of Dominance (Horde)
+				un(2, i(135811)),	-- Vindictive Gladiator's Accolade of Dominance (Horde)
+				un(2, i(135812)),	-- Vindictive Gladiator's Insignia of Dominance (Horde)
+				un(2, i(135813)),	-- Vindictive Gladiator's Badge of Victory (Horde)
+				un(2, i(135814)),	-- Vindictive Gladiator's Accolade of Victory (Horde)
+				un(2, i(135815)),	-- Vindictive Gladiator's Insignia of Victory (Horde)
+				un(2, i(135816)),	-- Vindictive Gladiator's Badge of Adaptation (Horde)
 				-- Combantant (Blue)
 				un(2, i(135917)),	-- Vindictive Combatant's Badge of Conquest (Alliance)
 				un(2, i(135918)),	-- Vindictive Combatant's Accolade of Conquest (Alliance)
@@ -136,59 +136,251 @@ _.PVP =
 			}),	
 		}),
 		n(-652, {	-- Fearless Gladiator: Legion Season 2
-			-- Necks Gladiator (Epic)
-			un(2, i(142650)),	-- Fearless Gladiator's Necklace a
-			un(2, i(142654)),	-- Fearless Gladiator's pendant a
-			un(2, i(142658)),	-- Fearless Gladiator's choker a
-			un(2, i(142763)),	-- Fearless Gladiator's necklace h
-			un(2, i(142767)),	-- Fearless Gladiator's pendant h
-			un(2, i(142771)),	-- Fearless Gladiator's choker h
-			-- Necks Combatant (Blue)
-			un(2, i(142876)),	-- Fearless Combatant Necklace a
-			un(2, i(142880)),	-- Fearless Combatant pendant a
-			un(2, i(142884)),	-- Fearless Combatant choker a
-			un(2, i(142989)),	-- Fearless Combatant necklace h
-			un(2, i(142993)),	-- Fearless Combatant pendant h
-			un(2, i(142997)),	-- Fearless Combatant choker h
-			-- Necks Elite
-			un(2, i(143102)),	-- Fearless Gladiator's Necklace a
-			un(2, i(143106)),	-- Fearless Gladiator's pendant a
-			un(2, i(143110)),	-- Fearless Gladiator's choker a
-			un(2, i(143215)),	-- Fearless Gladiator's necklace h
-			un(2, i(143219)),	-- Fearless Gladiator's pendant h
-			un(2, i(143223)),	-- Fearless Gladiator's choker h
+			n(-384,	{	-- Neck
+				-- Elite
+				un(2, i(143102)),	-- Fearless Gladiator's Necklace a
+				un(2, i(143106)),	-- Fearless Gladiator's pendant a
+				un(2, i(143110)),	-- Fearless Gladiator's choker a
+				un(2, i(143215)),	-- Fearless Gladiator's necklace h
+				un(2, i(143219)),	-- Fearless Gladiator's pendant h
+				un(2, i(143223)),	-- Fearless Gladiator's choker h
+				-- Gladiator (Epic)
+				un(2, i(142650)),	-- Fearless Gladiator's Necklace a
+				un(2, i(142654)),	-- Fearless Gladiator's pendant a
+				un(2, i(142658)),	-- Fearless Gladiator's choker a
+				un(2, i(142763)),	-- Fearless Gladiator's necklace h
+				un(2, i(142767)),	-- Fearless Gladiator's pendant h
+				un(2, i(142771)),	-- Fearless Gladiator's choker h
+				-- Combatant (Blue)
+				un(2, i(142876)),	-- Fearless Combatant Necklace a
+				un(2, i(142880)),	-- Fearless Combatant pendant a
+				un(2, i(142884)),	-- Fearless Combatant choker a
+				un(2, i(142989)),	-- Fearless Combatant necklace h
+				un(2, i(142993)),	-- Fearless Combatant pendant h
+				un(2, i(142997)),	-- Fearless Combatant choker h
+			}),
+			n(-385,	{	-- Finger
+				-- Elite
+				un(2, i(143103)),	-- Fearless Gladiator's Ring (Alliance)
+				un(2, i(143107)),	-- Fearless Gladiator's Band (Alliance)
+				un(2, i(143111)),	-- Fearless Gladiator's Signet (Alliance)
+				un(2, i(143216)),	-- Fearless Gladiator's Ring (Horde)
+				un(2, i(143220)),	-- Fearless Gladiator's Band (Horde)
+				un(2, i(143224)),	-- Fearless Gladiator's Signet (Horde)
+				-- Gladiator (Epic)
+				un(2, i(142651)),	-- Fearless Gladiator's Ring (Alliance)
+				un(2, i(142655)),	-- Fearless Gladiator's Band (Alliance)
+				un(2, i(142659)),	-- Fearless Gladiator's Signet (Alliance)
+				un(2, i(142764)),	-- Fearless Gladiator's Ring (Horde)
+				un(2, i(142768)),	-- Fearless Gladiator's Band (Horde)
+				un(2, i(142772)),	-- Fearless Gladiator's Signet (Horde)
+				-- Combatant (Blue)
+				un(2, i(142877)),	-- Fearless Combatant's Ring (Alliance)
+				un(2, i(142881)),	-- Fearless Combatant's Band (Alliance)
+				un(2, i(142885)),	-- Fearless Combatant's Signet (Alliance)
+				un(2, i(142990)),	-- Fearless Combatant's Ring (Horde)
+				un(2, i(142994)),	-- Fearless Combatant's Band (Horde)
+				un(2, i(142998)),	-- Fearless Combatant's Signet (Horde)
+			}),
+			n(-386,	{	-- Trinket
+				-- Elite
+				un(2, i(143112)),	-- Fearless Gladiator's Badge of Conquest (Alliance)
+				un(2, i(143113)),	-- Fearless Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(143114)),	-- Fearless Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(143115)),	-- Fearless Gladiator's Emblem of Cruelty (Alliance)
+				un(2, i(143116)),	-- Fearless Gladiator's Emblem of Tenacity (Alliance)
+				un(2, i(143117)),	-- Fearless Gladiator's Emblem of Meditation (Alliance)
+				un(2, i(143118)),	-- Fearless Gladiator's Badge of Dominance (Alliance)
+				un(2, i(143119)),	-- Fearless Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(143120)),	-- Fearless Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(143121)),	-- Fearless Gladiator's Badge of Victory (Alliance)
+				un(2, i(143122)),	-- Fearless Gladiator's Accolade of Victory (Alliance)
+				un(2, i(143123)),	-- Fearless Gladiator's Insignia of Victory (Alliance)
+				un(2, i(143124)),	-- Fearless Gladiator's Badge of Adaptation (Alliance)
+				un(2, i(143225)),	-- Fearless Gladiator's Badge of Conquest (Horde)
+				un(2, i(143226)),	-- Fearless Gladiator's Accolade of Conquest (Horde)
+				un(2, i(143227)),	-- Fearless Gladiator's Insignia of Conquest (Horde)
+				un(2, i(143228)),	-- Fearless Gladiator's Emblem of Cruelty (Horde)
+				un(2, i(143229)),	-- Fearless Gladiator's Emblem of Tenacity (Horde)
+				un(2, i(143230)),	-- Fearless Gladiator's Emblem of Meditation (Horde)
+				un(2, i(143231)),	-- Fearless Gladiator's Badge of Dominance (Horde)
+				un(2, i(143232)),	-- Fearless Gladiator's Accolade of Dominance (Horde)
+				un(2, i(143233)),	-- Fearless Gladiator's Insignia of Dominance (Horde)
+				un(2, i(143234)),	-- Fearless Gladiator's Badge of Victory (Horde)
+				un(2, i(143235)),	-- Fearless Gladiator's Accolade of Victory (Horde)
+				un(2, i(143236)),	-- Fearless Gladiator's Insignia of Victory (Horde)
+				un(2, i(143237)),	-- Fearless Gladiator's Badge of Adaptation (Horde)
+				-- Gladiator (Epic)
+				un(2, i(142660)),	-- Fearless Gladiator's Badge of Conquest (Alliance)
+				un(2, i(142661)),	-- Fearless Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(142662)),	-- Fearless Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(142663)),	-- Fearless Gladiator's Emblem of Cruelty (Alliance)
+				un(2, i(142664)),	-- Fearless Gladiator's Emblem of Tenacity (Alliance)
+				un(2, i(142665)),	-- Fearless Gladiator's Emblem of Meditation (Alliance)
+				un(2, i(142666)),	-- Fearless Gladiator's Badge of Dominance (Alliance)
+				un(2, i(142667)),	-- Fearless Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(142668)),	-- Fearless Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(142669)),	-- Fearless Gladiator's Badge of Victory (Alliance)
+				un(2, i(142670)),	-- Fearless Gladiator's Accolade of Victory (Alliance)
+				un(2, i(142671)),	-- Fearless Gladiator's Insignia of Victory (Alliance)
+				un(2, i(142672)),	-- Fearless Gladiator's Badge of Adaptation (Alliance)
+				un(2, i(142773)),	-- Fearless Gladiator's Badge of Conquest (Horde)
+				un(2, i(142774)),	-- Fearless Gladiator's Accolade of Conquest (Horde)
+				un(2, i(142775)),	-- Fearless Gladiator's Insignia of Conquest (Horde)
+				un(2, i(142776)),	-- Fearless Gladiator's Emblem of Cruelty (Horde)
+				un(2, i(142777)),	-- Fearless Gladiator's Emblem of Tenacity (Horde)
+				un(2, i(142778)),	-- Fearless Gladiator's Emblem of Meditation (Horde)
+				un(2, i(142779)),	-- Fearless Gladiator's Badge of Dominance (Horde)
+				un(2, i(142780)),	-- Fearless Gladiator's Accolade of Dominance (Horde)
+				un(2, i(142781)),	-- Fearless Gladiator's Insignia of Dominance (Horde)
+				un(2, i(142782)),	-- Fearless Gladiator's Badge of Victory (Horde)
+				un(2, i(142783)),	-- Fearless Gladiator's Accolade of Victory (Horde)
+				un(2, i(142784)),	-- Fearless Gladiator's Insignia of Victory (Horde)
+				un(2, i(142785)),	-- Fearless Gladiator's Badge of Adaptation (Horde)
+				-- Combatant (Blue)
+				un(2, i(142886)),	-- Fearless Combatant's Badge of Conquest (Alliance)
+				un(2, i(142887)),	-- Fearless Combatant's Accolade of Conquest (Alliance)
+				un(2, i(142888)),	-- Fearless Combatant's Insignia of Conquest (Alliance)
+				un(2, i(142889)),	-- Fearless Combatant's Emblem of Cruelty (Alliance)
+				un(2, i(142890)),	-- Fearless Combatant's Emblem of Tenacity (Alliance)
+				un(2, i(142891)),	-- Fearless Combatant's Emblem of Meditation (Alliance)
+				un(2, i(142892)),	-- Fearless Combatant's Badge of Dominance (Alliance)
+				un(2, i(142893)),	-- Fearless Combatant's Accolade of Dominance (Alliance)
+				un(2, i(142894)),	-- Fearless Combatant's Insignia of Dominance (Alliance)
+				un(2, i(142895)),	-- Fearless Combatant's Badge of Victory (Alliance)
+				un(2, i(142896)),	-- Fearless Combatant's Accolade of Victory (Alliance)
+				un(2, i(142897)),	-- Fearless Combatant's Insignia of Victory (Alliance)
+				un(2, i(142898)),	-- Fearless Combatant's Badge of Adaptation (Alliance)
+				un(2, i(142999)),	-- Fearless Combatant's Badge of Conquest (Horde)
+				un(2, i(143000)),	-- Fearless Combatant's Accolade of Conquest (Horde)
+				un(2, i(143001)),	-- Fearless Combatant's Insignia of Conquest (Horde)
+				un(2, i(143002)),	-- Fearless Combatant's Emblem of Cruelty (Horde)
+				un(2, i(143003)),	-- Fearless Combatant's Emblem of Tenacity (Horde)
+				un(2, i(143004)),	-- Fearless Combatant's Emblem of Meditation (Horde)
+				un(2, i(143005)),	-- Fearless Combatant's Badge of Dominance (Horde)
+				un(2, i(143006)),	-- Fearless Combatant's Accolade of Dominance (Horde)
+				un(2, i(143007)),	-- Fearless Combatant's Insignia of Dominance (Horde)
+				un(2, i(143008)),	-- Fearless Combatant's Badge of Victory (Horde)
+				un(2, i(143009)),	-- Fearless Combatant's Accolade of Victory (Horde)
+				un(2, i(143010)),	-- Fearless Combatant's Insignia of Victory (Horde)
+				un(2, i(143011)),	-- Fearless Combatant's Badge of Adaptation (Horde)
+			}),
 		}),
 		n(-653, {	-- Cruel Gladiator: Legion Season 3
-			-- Necks Gladiator (Epic)
-			un(2, i(144654)),	-- Cruel Gladiator's Necklace a
-			un(2, i(144656)),	-- Cruel Gladiator's pendant a
-			un(2, i(144658)),	-- Cruel Gladiator's choker a
-			un(2, i(144655)),	-- Cruel Gladiator's necklace h
-			un(2, i(144657)),	-- Cruel Gladiator's pendant h
-			un(2, i(144659)),	-- Cruel Gladiator's choker h
-			-- Necks Combatant (Blue)
-			un(2, i(145146)),	-- Cruel Combatant Necklace a
-			un(2, i(145148)),	-- Cruel Combatant pendant a
-			un(2, i(145150)),	-- Cruel Combatant choker a
-			un(2, i(145147)),	-- Cruel Combatant necklace h
-			un(2, i(145149)),	-- Cruel Combatant pendant h
-			un(2, i(145151)),	-- Cruel Combatant choker h
-			-- Necks Elite
-			un(2, i(144900)),	-- Cruel Gladiator's Necklace a
-			un(2, i(144902)),	-- Cruel Gladiator's pendant a
-			un(2, i(144904)),	-- Cruel Gladiator's choker a
-			un(2, i(144901)),	-- Cruel Gladiator's necklace h
-			un(2, i(144903)),	-- Cruel Gladiator's pendant h
-			un(2, i(144905)),	-- Cruel Gladiator's choker h
+			n(-384,	{	-- Neck
+				-- Elite
+				un(2, i(144900)),	-- Cruel Gladiator's Necklace a
+				un(2, i(144902)),	-- Cruel Gladiator's pendant a
+				un(2, i(144904)),	-- Cruel Gladiator's choker a
+				un(2, i(144901)),	-- Cruel Gladiator's necklace h
+				un(2, i(144903)),	-- Cruel Gladiator's pendant h
+				un(2, i(144905)),	-- Cruel Gladiator's choker h
+				-- Gladiator (Epic)
+				un(2, i(144654)),	-- Cruel Gladiator's Necklace a
+				un(2, i(144656)),	-- Cruel Gladiator's pendant a
+				un(2, i(144658)),	-- Cruel Gladiator's choker a
+				un(2, i(144655)),	-- Cruel Gladiator's necklace h
+				un(2, i(144657)),	-- Cruel Gladiator's pendant h
+				un(2, i(144659)),	-- Cruel Gladiator's choker h
+				-- Combatant (Blue)
+				un(2, i(145146)),	-- Cruel Combatant Necklace a
+				un(2, i(145148)),	-- Cruel Combatant pendant a
+				un(2, i(145150)),	-- Cruel Combatant choker a
+				un(2, i(145147)),	-- Cruel Combatant necklace h
+				un(2, i(145149)),	-- Cruel Combatant pendant h
+				un(2, i(145151)),	-- Cruel Combatant choker h
+			}),
+			n(-385,	{	-- Finger
+				-- Elite
+				un(2, i(144938)),	-- Cruel Gladiator's Ring (Alliance)
+				un(2, i(144940)),	-- Cruel Gladiator's Band (Alliance)
+				un(2, i(144942)),	-- Cruel Gladiator's Signet (Alliance)
+				un(2, i(144939)),	-- Cruel Gladiator's Ring (Horde)
+				un(2, i(144941)),	-- Cruel Gladiator's Band (Horde)
+				un(2, i(144943)),	-- Cruel Gladiator's Signet (Horde)
+				-- Gladiator (Epic)
+				un(2, i(144692)),	-- Cruel Gladiator's Ring (Alliance)
+				un(2, i(144694)),	-- Cruel Gladiator's Band (Alliance)
+				un(2, i(144696)),	-- Cruel Gladiator's Signet (Alliance)
+				un(2, i(144693)),	-- Cruel Gladiator's Ring (Horde)
+				un(2, i(144695)),	-- Cruel Gladiator's Band (Horde)
+				un(2, i(144697)),	-- Cruel Gladiator's Signet (Horde)
+				-- Combatant (Blue)
+				un(2, i(145184)),	-- Cruel Combatant's Ring (Alliance)
+				un(2, i(145186)),	-- Cruel Combatant's Band (Alliance)
+				un(2, i(145188)),	-- Cruel Combatant's Signet (Alliance)
+				un(2, i(145185)),	-- Cruel Combatant's Ring (Horde)
+				un(2, i(145187)),	-- Cruel Combatant's Band (Horde)
+				un(2, i(145189)),	-- Cruel Combatant's Signet (Horde)
+			}),
+			n(-386,	{	-- Trinket
+				-- Elite
+				un(2, i(144976)),	-- Cruel Gladiator's Badge of Conquest (Alliance)
+				un(2, i(144978)),	-- Cruel Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(144980)),	-- Cruel Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(144982)),	-- Cruel Gladiator's Badge of Dominance (Alliance)
+				un(2, i(144984)),	-- Cruel Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(144986)),	-- Cruel Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(144988)),	-- Cruel Gladiator's Badge of Victory (Alliance)
+				un(2, i(144990)),	-- Cruel Gladiator's Accolade of Victory (Alliance)
+				un(2, i(144992)),	-- Cruel Gladiator's Insignia of Victory (Alliance)
+				un(2, i(144977)),	-- Cruel Gladiator's Badge of Conquest (Horde)
+				un(2, i(144979)),	-- Cruel Gladiator's Accolade of Conquest (Horde)
+				un(2, i(144981)),	-- Cruel Gladiator's Insignia of Conquest (Horde)
+				un(2, i(144983)),	-- Cruel Gladiator's Badge of Dominance (Horde)
+				un(2, i(144985)),	-- Cruel Gladiator's Accolade of Dominance (Horde)
+				un(2, i(144987)),	-- Cruel Gladiator's Insignia of Dominance (Horde)
+				un(2, i(144989)),	-- Cruel Gladiator's Badge of Victory (Horde)
+				un(2, i(144991)),	-- Cruel Gladiator's Accolade of Victory (Horde)
+				un(2, i(144993)),	-- Cruel Gladiator's Insignia of Victory (Horde)
+				-- Gladiator (Epic)
+				un(2, i(144730)),	-- Cruel Gladiator's Badge of Conquest (Alliance)
+				un(2, i(144732)),	-- Cruel Gladiator's Accolade of Conquest (Alliance)
+				un(2, i(144734)),	-- Cruel Gladiator's Insignia of Conquest (Alliance)
+				un(2, i(144736)),	-- Cruel Gladiator's Badge of Dominance (Alliance)
+				un(2, i(144738)),	-- Cruel Gladiator's Accolade of Dominance (Alliance)
+				un(2, i(144740)),	-- Cruel Gladiator's Insignia of Dominance (Alliance)
+				un(2, i(144742)),	-- Cruel Gladiator's Badge of Victory (Alliance)
+				un(2, i(144744)),	-- Cruel Gladiator's Accolade of Victory (Alliance)
+				un(2, i(144746)),	-- Cruel Gladiator's Insignia of Victory (Alliance)
+				un(2, i(144731)),	-- Cruel Gladiator's Badge of Conquest (Horde)
+				un(2, i(144733)),	-- Cruel Gladiator's Accolade of Conquest (Horde)
+				un(2, i(144735)),	-- Cruel Gladiator's Insignia of Conquest (Horde)
+				un(2, i(144737)),	-- Cruel Gladiator's Badge of Dominance (Horde)
+				un(2, i(144739)),	-- Cruel Gladiator's Accolade of Dominance (Horde)
+				un(2, i(144741)),	-- Cruel Gladiator's Insignia of Dominance (Horde)
+				un(2, i(144743)),	-- Cruel Gladiator's Badge of Victory (Horde)
+				un(2, i(144745)),	-- Cruel Gladiator's Accolade of Victory (Horde)
+				un(2, i(144747)),	-- Cruel Gladiator's Insignia of Victory (Horde)
+				-- Combatant (Blue)
+				un(2, i(145222)),	-- Cruel Combatant's Badge of Conquest (Alliance)	
+				un(2, i(145224)),	-- Cruel Combatant's Accolade of Conquest (Alliance)	
+				un(2, i(145226)),	-- Cruel Combatant's Insignia of Conquest (Alliance)	
+				un(2, i(145228)),	-- Cruel Combatant's Badge of Dominance (Alliance)	
+				un(2, i(145230)),	-- Cruel Combatant's Accolade of Dominance (Alliance)	
+				un(2, i(145232)),	-- Cruel Combatant's Insignia of Dominance (Alliance)	
+				un(2, i(145234)),	-- Cruel Combatant's Badge of Victory (Alliance)	
+				un(2, i(145236)),	-- Cruel Combatant's Accolade of Victory (Alliance)	
+				un(2, i(145238)),	-- Cruel Combatant's Insignia of Victory (Alliance)	
+				un(2, i(145223)),	-- Cruel Combatant's Badge of Conquest (Horde)	
+				un(2, i(145225)),	-- Cruel Combatant's Accolade of Conquest (Horde)	
+				un(2, i(145227)),	-- Cruel Combatant's Insignia of Conquest (Horde)	
+				un(2, i(145229)),	-- Cruel Combatant's Badge of Dominance (Horde)	
+				un(2, i(145231)),	-- Cruel Combatant's Accolade of Dominance (Horde)	
+				un(2, i(145233)),	-- Cruel Combatant's Insignia of Dominance (Horde)	
+				un(2, i(145235)),	-- Cruel Combatant's Badge of Victory (Horde)	
+				un(2, i(145237)),	-- Cruel Combatant's Accolade of Victory (Horde)	
+				un(2, i(145239)),	-- Cruel Combatant's Insignia of Victory (Horde)
+			}),
 		}),
 		n(-654, {	-- Ferocious Gladiator: Legion Season 4
 			-- Necks Gladiator (Epic)
 			un(2, i(145496)),	-- Ferocious Gladiator's Necklace a
 			un(2, i(145498)),	-- Ferocious Gladiator's pendant a
-			un(2, i(145600)),	-- Ferocious Gladiator's choker a
+			un(2, i(145500)),	-- Ferocious Gladiator's choker a
 			un(2, i(145497)),	-- Ferocious Gladiator's necklace h
 			un(2, i(145499)),	-- Ferocious Gladiator's pendant h
-			un(2, i(145601)),	-- Ferocious Gladiator's choker h
+			un(2, i(145501)),	-- Ferocious Gladiator's choker h
 			-- Necks Combatant (Blue)
 			un(2, i(145988)),	-- Ferocious Combatant Necklace a
 			un(2, i(145990)),	-- Ferocious Combatant pendant a
