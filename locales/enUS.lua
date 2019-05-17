@@ -569,6 +569,7 @@ AllTheThings.L = {
 		[-653] = "Interface\\Icons\\inv_stormdragonmount2dark",					-- Cruel Gladiator: Legion Season 3
 		[-654] = "Interface\\Icons\\inv_stormdragonmount2green",				-- Ferocious Gladiator: Legion Season 4
 		[-655] = "Interface\\Icons\\inv_stormdragonmount2light",				-- Fierce Gladiator: Legion Season 5
+		[-655] = "Interface\\Icons\\inv_stormdragonmount2yellow",				-- Dominant Gladiator: Legion Season 6
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1334,7 +1335,7 @@ AllTheThings.L = {
 		[-653] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
 		[-654] = select(2, GetAchievementInfo(11062)),							-- Ferocious Gladiator: Legion Season 4
 		[-655] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
-		--[-656] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
+		[-656] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
