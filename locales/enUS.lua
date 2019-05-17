@@ -564,6 +564,9 @@ AllTheThings.L = {
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",			-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",			-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",						-- Quest Items
+		[-651] = "Interface\\Icons\\inv_stormdragonmount2",						-- Vindictive Gladiator: Legion Season 1
+		[-652] = "Interface\\Icons\\inv_stormdragonmount2blue",					-- Fearless Gladiator: Legion Season 2
+		[-653] = "Interface\\Icons\\inv_stormdragonmount2dark",					-- Cruel Gladiator: Legion Season 3
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1325,6 +1328,8 @@ AllTheThings.L = {
 		
 -- Legion Pvp Seasons
 		[-651] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
+		[-652] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
+		[-653] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
