@@ -28,7 +28,7 @@ _.Zones =
 							["model"] = "World\\Expansion06\\Doodads\\Eredar\\7er_Ancient_RaidChest01.mdx",
 							["modelScale"] = 2.5,
 						}),
-						o(277349, {	-- Missing Augari Chest
+						o(277346, {	-- Missing Augari Chest
 							["groups"] = {
 								i(153285), --Augari Wakener's Mantle
 							},

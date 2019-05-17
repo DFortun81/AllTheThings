@@ -10,7 +10,7 @@ _.Zones =
 					["g"] = {
 						n(-78, {	-- Lucid Nightmare Mount [Note: Drops from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 							["g"] = {
-								o(270885, { 	-- Inconspicuous Note
+								o(270855, { 	-- Inconspicuous Note
 									["icon"] = "Interface\\Icons\\INV_Misc_ScrollUnrolled01b",
 									["questID"] = 47826,
 									["description"] = "|cFFFFFFFFStep 1:|r You will need to go to |cFFFFFFFF50.60, 54.13|r, and on the second floor of |cFFFFD700Curiosities & Moore|r you will see a table with three chairs.  A scroll will be on the table titled |cFFFFD700Inconspicuous Note|r.  Click this to continue. The note reads...\n\n|cFFFFFFFFIt begins in the 2104059.|r\n|cFFFFFFFFWith a most pleasing sign.|r\n|cFFFFFFFF(These letters will not always rhyme.)|r",
