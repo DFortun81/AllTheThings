@@ -607,7 +607,6 @@ _.WorldDrops =
 				}),
 				n(-329, {	-- Legs
 					i(10633),	-- Silvershell Leggings
-					i(12255),	-- Pale Leggings
 					i(12256),	-- Cindercloth Leggings
 					i(12987),	-- Darkweave Breeches
 					i(13008),	-- Dalewind Trousers
