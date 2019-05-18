@@ -1537,96 +1537,576 @@ _.Zones =
 									},
 								},
 							},
-							i(87002),	-- Yaungol Slayer's Tunic
-							i(87003),	-- Yaungol Slayer's Gloves
-							i(87004),	-- Yaungol Slayer's Headguard
-							i(87005),	-- Yaungol Slayer's Legguards
-							i(87006),	-- Yaungol Slayer's Spaulders
-							i(87084),	-- Red Crane Tunic
-							i(87085),	-- Red Crane Grips
-							i(87086),	-- Red Crane Headpiece
-							i(87087),	-- Red Crane Leggings
-							i(87088),	-- Red Crane Spaulders
-							i(87089),	-- Red Crane Handwraps
-							i(87090),	-- Red Crane Helm
-							i(87091),	-- Red Crane Legwraps
-							i(87092),	-- Red Crane Vest
-							i(87093),	-- Red Crane Mantle
-							i(87094),	-- Red Crane Chestguard
-							i(87095),	-- Red Crane Gauntlets
-							i(87096),	-- Red Crane Crown
-							i(87097),	-- Red Crane Legguards
-							i(87098),	-- Red Crane Shoulderguards
-							i(87129),	-- Firebird's Tunic
-							i(87130),	-- Firebird's Handwraps
-							i(87131),	-- Firebird's Faceguard
-							i(87132),	-- Firebird's Legwraps
-							i(87133),	-- Firebird's Mantle
-							i(87134),	-- Firebird's Cuirass
-							i(87135),	-- Firebird's Grips
-							i(87136),	-- Firebird's Helmet
-							i(87137),	-- Firebird's Legguards
-							i(87138),	-- Firebird's Spaulders
-							i(87139),	-- Firebird's Hauberk
-							i(87140),	-- Firebird's Gloves
-							i(87141),	-- Firebird's Headpiece
-							i(87142),	-- Firebird's Kilt
-							i(87143),	-- Firebird's Shoulderwraps
-							i(87192),	-- Helmet of Resounding Rings
-							i(87193),	-- Battleplate of Resounding Rings
-							i(87194),	-- Gauntlets of Resounding Rings
-							i(87195),	-- Legplates of Resounding Rings
-							i(87196),	-- Pauldrons of Resounding Rings
-							i(87197),	-- Chestguard of Resounding Rings
-							i(87198),	-- Handguards of Resounding Rings
-							i(87199),	-- Faceguard of Resounding Rings
-							i(87200),	-- Legguards of Resounding Rings
-							i(87201),	-- Shoulderguards of Resounding Rings
-							i(85284),	-- Firebird's Spaulders
-							i(85285),	-- Firebird's Legguards
-							i(85286),	-- Firebird's Helmet
-							i(85287),	-- Firebird's Grips
-							i(85288),	-- Firebird's Cuirass
-							i(85289),	-- Firebird's Hauberk
-							i(85290),	-- Firebird's Gloves
-							i(85291),	-- Firebird's Headpiece
-							i(85292),	-- Firebird's Kilt
-							i(85293),	-- Firebird's Shoulderwraps
-							i(85294),	-- Yaungol Slayer's Spaulders
-							i(85295),	-- Yaungol Slayer's Legguards
-							i(85296),	-- Yaungol Slayer's Headguard
-							i(85297),	-- Yaungol Slayer's Gloves
-							i(85298),	-- Yaungol Slayer's Tunic
-							i(85324),	-- Shoulderguards of Resounding Rings
-							i(85325),	-- Legguards of Resounding Rings
-							i(85326),	-- Faceguard of Resounding Rings
-							i(85327),	-- Handguards of Resounding Rings
-							i(85328),	-- Chestguard of Resounding Rings
-							i(85329),	-- Pauldrons of Resounding Rings
-							i(85330),	-- Legplates of Resounding Rings
-							i(85331),	-- Gauntlets of Resounding Rings
-							i(85332),	-- Battleplate of Resounding Rings
-							i(85333),	-- Helmet of Resounding Rings
-							i(85349),	-- Firebird's Mantle
-							i(85350),	-- Firebird's Legwraps
-							i(85351),	-- Firebird's Faceguard
-							i(85352),	-- Firebird's Handwraps
-							i(85353),	-- Firebird's Tunic
-							i(85384),	-- Red Crane Shoulderguards
-							i(85385),	-- Red Crane Legguards
-							i(85386),	-- Red Crane Crown
-							i(85387),	-- Red Crane Gauntlets
-							i(85388),	-- Red Crane Chestguard
-							i(85389),	-- Red Crane Handwraps
-							i(85390),	-- Red Crane Helm
-							i(85391),	-- Red Crane Legwraps
-							i(85392),	-- Red Crane Vest
-							i(85393),	-- Red Crane Mantle
-							i(85394),	-- Red Crane Tunic
-							i(85395),	-- Red Crane Grips
-							i(85396),	-- Red Crane Headpiece
-							i(85397),	-- Red Crane Leggings
-							i(85398),	-- Red Crane Spaulders
+							{	-- [LFR] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89275,	-- Helm of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Crown
+										["itemID"] = 86726,	-- Red Crane Crown
+									},
+									{	-- Red Crane Helm
+										["itemID"] = 86730,	-- Red Crane Helm
+									},
+									{	-- Red Crane Headpiece
+										["itemID"] = 86736,	-- Red Crane Headpiece
+									},
+									{	-- Yaungol Slayer's Headguard
+										["itemID"] = 86636,	-- Yaungol Slayer's Headguard
+									},
+									{	-- Firebird's Helmet
+										["itemID"] = 86626,	-- Firebird's Helmet
+									},
+									{	-- Firebird's Headpiece
+										["itemID"] = 86631,	-- Firebird's Headpiece
+									},
+									{	-- Firebird's Faceguard
+										["itemID"] = 86691,	-- Firebird's Faceguard
+									},
+									{	-- Faceguard of Resounding Rings
+										["itemID"] = 86666,	-- Faceguard of Resounding Rings
+									},
+									{	-- Helmet of Resounding Rings
+										["itemID"] = 86673,	-- Helmet of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [LFR] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89278,	-- Shoulders of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Shoulderguards
+										["itemID"] = 86724,	-- Red Crane Shoulderguards
+									},
+									{	-- Red Crane Mantle
+										["itemID"] = 86733,	-- Red Crane Mantle
+									},
+									{	-- Red Crane Spaulders
+										["itemID"] = 86738,	-- Red Crane Spaulders
+									},
+									{	-- Yaungol Slayer's Spaulders
+										["itemID"] = 86634,	-- Yaungol Slayer's Spaulders
+									},
+									{	-- Firebird's Spaulders
+										["itemID"] = 86624,	-- Firebird's Spaulders
+									},
+									{	-- Firebird's Shoulderwraps
+										["itemID"] = 86633,	-- Firebird's Shoulderwraps
+									},
+									{	-- Firebird's Mantle
+										["itemID"] = 86689,	-- Firebird's Mantle
+									},
+									{	-- Shoulderguards of Resounding Rings
+										["itemID"] = 86664,	-- Shoulderguards of Resounding Rings
+									},
+									{	-- Pauldrons of Resounding Rings
+										["itemID"] = 86669,	-- Pauldrons of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [LFR] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89266,	-- Chest of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Chestguard
+										["itemID"] = 86728,	-- Red Crane Chestguard
+									},
+									{	-- Red Crane Vest
+										["itemID"] = 86732,	-- Red Crane Vest
+									},
+									{	-- Red Crane Tunic
+										["itemID"] = 86734,	-- Red Crane Tunic
+									},
+									{	-- Yaungol Slayer's Tunic
+										["itemID"] = 86638,	-- Yaungol Slayer's Tunic
+									},
+									{	-- Firebird's Cuirass
+										["itemID"] = 86628,	-- Firebird's Cuirass
+									},
+									{	-- Firebird's Hauberk
+										["itemID"] = 86629,	-- Firebird's Hauberk
+									},
+									{	-- Firebird's Tunic
+										["itemID"] = 86693,	-- Firebird's Tunic
+									},
+									{	-- Chestguard of Resounding Rings
+										["itemID"] = 86668,	-- Chestguard of Resounding Rings
+									},
+									{	-- Battleplate of Resounding Rings
+										["itemID"] = 86672,	-- Battleplate of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [LFR] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89272,	-- Gauntlets of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Gauntlets
+										["itemID"] = 86727,	-- Red Crane Gauntlets
+									},
+									{	-- Red Crane Handwraps
+										["itemID"] = 86729,	-- Red Crane Handwraps
+									},
+									{	-- Red Crane Grips
+										["itemID"] = 86735,	-- Red Crane Grips
+									},
+									{	-- Yaungol Slayer's Gloves
+										["itemID"] = 86637,	-- Yaungol Slayer's Gloves
+									},
+									{	-- Firebird's Grips
+										["itemID"] = 86627,	-- Firebird's Grips
+									},
+									{	-- Firebird's Gloves
+										["itemID"] = 86630,	-- Firebird's Gloves
+									},
+									{	-- Firebird's Handwraps
+										["itemID"] = 86692,	-- Firebird's Handwraps
+									},
+									{	-- Handguards of Resounding Rings
+										["itemID"] = 86667,	-- Handguards of Resounding Rings
+									},
+									{	-- Gauntlets of Resounding Rings
+										["itemID"] = 86671,	-- Gauntlets of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [LFR] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89269,	-- Leggings of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Legguards
+										["itemID"] = 86725,	-- Red Crane Legguards
+									},
+									{	-- Red Crane Legwraps
+										["itemID"] = 86731,	-- Red Crane Legwraps
+									},
+									{	-- Red Crane Leggings
+										["itemID"] = 86737,	-- Red Crane Leggings
+									},
+									{	-- Yaungol Slayer's Legguards
+										["itemID"] = 86635,	-- Yaungol Slayer's Legguards
+									},
+									{	-- Firebird's Legguards
+										["itemID"] = 86625,	-- Firebird's Legguards
+									},
+									{	-- Firebird's Kilt
+										["itemID"] = 86632,	-- Firebird's Kilt
+									},
+									{	-- Firebird's Legwraps
+										["itemID"] = 86690,	-- Firebird's Legwraps
+									},
+									{	-- Legguards of Resounding Rings
+										["itemID"] = 86665,	-- Legguards of Resounding Rings
+									},
+									{	-- Legplates of Resounding Rings
+										["itemID"] = 86670,	-- Legplates of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Normal] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89236,	-- Helm of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Crown
+										["itemID"] = 85386,	-- Red Crane Crown
+									},
+									{	-- Red Crane Helm
+										["itemID"] = 85390,	-- Red Crane Helm
+									},
+									{	-- Red Crane Headpiece
+										["itemID"] = 85396,	-- Red Crane Headpiece
+									},
+									{	-- Yaungol Slayer's Headguard
+										["itemID"] = 85296,	-- Yaungol Slayer's Headguard
+									},
+									{	-- Firebird's Helmet
+										["itemID"] = 85286,	-- Firebird's Helmet
+									},
+									{	-- Firebird's Headpiece
+										["itemID"] = 85291,	-- Firebird's Headpiece
+									},
+									{	-- Firebird's Faceguard
+										["itemID"] = 85351,	-- Firebird's Faceguard
+									},
+									{	-- Faceguard of Resounding Rings
+										["itemID"] = 85326,	-- Faceguard of Resounding Rings
+									},
+									{	-- Helmet of Resounding Rings
+										["itemID"] = 85333,	-- Helmet of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Normal] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89247,	-- Shoulders of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Shoulderguards
+										["itemID"] = 85384,	-- Red Crane Shoulderguards
+									},
+									{	-- Red Crane Mantle
+										["itemID"] = 85393,	-- Red Crane Mantle
+									},
+									{	-- Red Crane Spaulders
+										["itemID"] = 85398,	-- Red Crane Spaulders
+									},
+									{	-- Yaungol Slayer's Spaulders
+										["itemID"] = 85294,	-- Yaungol Slayer's Spaulders
+									},
+									{	-- Firebird's Spaulders
+										["itemID"] = 85284,	-- Firebird's Spaulders
+									},
+									{	-- Firebird's Shoulderwraps
+										["itemID"] = 85293,	-- Firebird's Shoulderwraps
+									},
+									{	-- Firebird's Mantle
+										["itemID"] = 85349,	-- Firebird's Mantle
+									},
+									{	-- Shoulderguards of Resounding Rings
+										["itemID"] = 85324,	-- Shoulderguards of Resounding Rings
+									},
+									{	-- Pauldrons of Resounding Rings
+										["itemID"] = 85329,	-- Pauldrons of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Normal] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89238,	-- Chest of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Chestguard
+										["itemID"] = 85388,	-- Red Crane Chestguard
+									},
+									{	-- Red Crane Vest
+										["itemID"] = 85392,	-- Red Crane Vest
+									},
+									{	-- Red Crane Tunic
+										["itemID"] = 85394,	-- Red Crane Tunic
+									},
+									{	-- Yaungol Slayer's Tunic
+										["itemID"] = 85298,	-- Yaungol Slayer's Tunic
+									},
+									{	-- Firebird's Cuirass
+										["itemID"] = 85288,	-- Firebird's Cuirass
+									},
+									{	-- Firebird's Hauberk
+										["itemID"] = 85289,	-- Firebird's Hauberk
+									},
+									{	-- Firebird's Tunic
+										["itemID"] = 85353,	-- Firebird's Tunic
+									},
+									{	-- Chestguard of Resounding Rings
+										["itemID"] = 85328,	-- Chestguard of Resounding Rings
+									},
+									{	-- Battleplate of Resounding Rings
+										["itemID"] = 85332,	-- Battleplate of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Normal] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89241,	-- Gauntlets of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Gauntlets
+										["itemID"] = 85387,	-- Red Crane Gauntlets
+									},
+									{	-- Red Crane Handwraps
+										["itemID"] = 85389,	-- Red Crane Handwraps
+									},
+									{	-- Red Crane Grips
+										["itemID"] = 85395,	-- Red Crane Grips
+									},
+									{	-- Yaungol Slayer's Gloves
+										["itemID"] = 85297,	-- Yaungol Slayer's Gloves
+									},
+									{	-- Firebird's Grips
+										["itemID"] = 85287,	-- Firebird's Grips
+									},
+									{	-- Firebird's Gloves
+										["itemID"] = 85290,	-- Firebird's Gloves
+									},
+									{	-- Firebird's Handwraps
+										["itemID"] = 85352,	-- Firebird's Handwraps
+									},
+									{	-- Handguards of Resounding Rings
+										["itemID"] = 85327,	-- Handguards of Resounding Rings
+									},
+									{	-- Gauntlets of Resounding Rings
+										["itemID"] = 85331,	-- Gauntlets of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Normal] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89244,	-- Leggings of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Legguards
+										["itemID"] = 85385,	-- Red Crane Legguards
+									},
+									{	-- Red Crane Legwraps
+										["itemID"] = 85391,	-- Red Crane Legwraps
+									},
+									{	-- Red Crane Leggings
+										["itemID"] = 85397,	-- Red Crane Leggings
+									},
+									{	-- Yaungol Slayer's Legguards
+										["itemID"] = 85295,	-- Yaungol Slayer's Legguards
+									},
+									{	-- Firebird's Legguards
+										["itemID"] = 85285,	-- Firebird's Legguards
+									},
+									{	-- Firebird's Kilt
+										["itemID"] = 85292,	-- Firebird's Kilt
+									},
+									{	-- Firebird's Legwraps
+										["itemID"] = 85350,	-- Firebird's Legwraps
+									},
+									{	-- Legguards of Resounding Rings
+										["itemID"] = 85325,	-- Legguards of Resounding Rings
+									},
+									{	-- Legplates of Resounding Rings
+										["itemID"] = 85330,	-- Legplates of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Heroic] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89260,	-- Helm of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Headpiece
+										["itemID"] = 87086,	-- Red Crane Headpiece
+									},
+									{	-- Red Crane Helm
+										["itemID"] = 87090,	-- Red Crane Helm
+									},
+									{	-- Red Crane Crown
+										["itemID"] = 87096,	-- Red Crane Crown
+									},
+									{	-- Yaungol Slayer's Headguard
+										["itemID"] = 87004,	-- Yaungol Slayer's Headguard
+									},
+									{	-- Firebird's Faceguard
+										["itemID"] = 87131,	-- Firebird's Faceguard
+									},
+									{	-- Firebird's Helmet
+										["itemID"] = 87136,	-- Firebird's Helmet
+									},
+									{	-- Firebird's Headpiece
+										["itemID"] = 87141,	-- Firebird's Headpiece
+									},
+									{	-- Helmet of Resounding Rings
+										["itemID"] = 87192,	-- Helmet of Resounding Rings
+									},
+									{	-- Faceguard of Resounding Rings
+										["itemID"] = 87199,	-- Faceguard of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Heroic] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89263,	-- Shoulders of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Spaulders
+										["itemID"] = 87088,	-- Red Crane Spaulders
+									},
+									{	-- Red Crane Mantle
+										["itemID"] = 87093,	-- Red Crane Mantle
+									},
+									{	-- Red Crane Shoulderguards
+										["itemID"] = 87098,	-- Red Crane Shoulderguards
+									},
+									{	-- Yaungol Slayer's Spaulders
+										["itemID"] = 87006,	-- Yaungol Slayer's Spaulders
+									},
+									{	-- Firebird's Mantle
+										["itemID"] = 87133,	-- Firebird's Mantle
+									},
+									{	-- Firebird's Spaulders
+										["itemID"] = 87138,	-- Firebird's Spaulders
+									},
+									{	-- Firebird's Shoulderwraps
+										["itemID"] = 87143,	-- Firebird's Shoulderwraps
+									},
+									{	-- Pauldrons of Resounding Rings
+										["itemID"] = 87196,	-- Pauldrons of Resounding Rings
+									},
+									{	-- Shoulderguards of Resounding Rings
+										["itemID"] = 87201,	-- Shoulderguards of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Heroic] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89251,	-- Chest of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Tunic
+										["itemID"] = 87084,	-- Red Crane Tunic
+									},
+									{	-- Red Crane Vest
+										["itemID"] = 87092,	-- Red Crane Vest
+									},
+									{	-- Red Crane Chestguard
+										["itemID"] = 87094,	-- Red Crane Chestguard
+									},
+									{	-- Yaungol Slayer's Tunic
+										["itemID"] = 87002,	-- Yaungol Slayer's Tunic
+									},
+									{	-- Firebird's Tunic
+										["itemID"] = 87129,	-- Firebird's Tunic
+									},
+									{	-- Firebird's Cuirass
+										["itemID"] = 87134,	-- Firebird's Cuirass
+									},
+									{	-- Firebird's Hauberk
+										["itemID"] = 87139,	-- Firebird's Hauberk
+									},
+									{	-- Battleplate of Resounding Rings
+										["itemID"] = 87193,	-- Battleplate of Resounding Rings
+									},
+									{	-- Chestguard of Resounding Rings
+										["itemID"] = 87197,	-- Chestguard of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Heroic] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89257,	-- Gauntlets of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Grips
+										["itemID"] = 87085,	-- Red Crane Grips
+									},
+									{	-- Red Crane Handwraps
+										["itemID"] = 87089,	-- Red Crane Handwraps
+									},
+									{	-- Red Crane Gauntlets
+										["itemID"] = 87095,	-- Red Crane Gauntlets
+									},
+									{	-- Yaungol Slayer's Gloves
+										["itemID"] = 87003,	-- Yaungol Slayer's Gloves
+									},
+									{	-- Firebird's Handwraps
+										["itemID"] = 87130,	-- Firebird's Handwraps
+									},
+									{	-- Firebird's Grips
+										["itemID"] = 87135,	-- Firebird's Grips
+									},
+									{	-- Firebird's Gloves
+										["itemID"] = 87140,	-- Firebird's Gloves
+									},
+									{	-- Gauntlets of Resounding Rings
+										["itemID"] = 87194,	-- Gauntlets of Resounding Rings
+									},
+									{	-- Handguards of Resounding Rings
+										["itemID"] = 87198,	-- Handguards of Resounding Rings
+									},
+								},								
+							},									
+							{	-- [Heroic] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 89254,	-- Leggings of the Shadowy Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Red Crane Leggings
+										["itemID"] = 87087,	-- Red Crane Leggings
+									},
+									{	-- Red Crane Legwraps
+										["itemID"] = 87091,	-- Red Crane Legwraps
+									},
+									{	-- Red Crane Legguards
+										["itemID"] = 87097,	-- Red Crane Legguards
+									},
+									{	-- Yaungol Slayer's Legguards
+										["itemID"] = 87005,	-- Yaungol Slayer's Legguards
+									},
+									{	-- Firebird's Legwraps
+										["itemID"] = 87132,	-- Firebird's Legwraps
+									},
+									{	-- Firebird's Legguards
+										["itemID"] = 87137,	-- Firebird's Legguards
+									},
+									{	-- Firebird's Kilt
+										["itemID"] = 87142,	-- Firebird's Kilt
+									},
+									{	-- Legplates of Resounding Rings
+										["itemID"] = 87195,	-- Legplates of Resounding Rings
+									},
+									{	-- Legguards of Resounding Rings
+										["itemID"] = 87200,	-- Legguards of Resounding Rings
+									},
+								},								
+							},									
 							i(88741),	-- Gloves of Red Feathers
 							i(88742),	-- Sunspeaker's Flared Gloves
 							i(88743),	-- Ogo's Elder Gloves
@@ -1719,51 +2199,6 @@ _.Zones =
 							i(89432),	-- Mistfall Robes
 							i(89433),	-- Vestments of Thundering Skies
 							i(89434),	-- Robe of the Five Sisters
-							i(86624),	-- Firebird's Spaulders
-							i(86625),	-- Firebird's Legguards
-							i(86626),	-- Firebird's Helmet
-							i(86627),	-- Firebird's Grips
-							i(86628),	-- Firebird's Cuirass
-							i(86629),	-- Firebird's Hauberk
-							i(86630),	-- Firebird's Gloves
-							i(86631),	-- Firebird's Headpiece
-							i(86632),	-- Firebird's Kilt
-							i(86633),	-- Firebird's Shoulderwraps
-							i(86634),	-- Yaungol Slayer's Spaulders
-							i(86635),	-- Yaungol Slayer's Legguards
-							i(86636),	-- Yaungol Slayer's Headguard
-							i(86637),	-- Yaungol Slayer's Gloves
-							i(86638),	-- Yaungol Slayer's Tunic
-							i(86664),	-- Shoulderguards of Resounding Rings
-							i(86665),	-- Legguards of Resounding Rings
-							i(86666),	-- Faceguard of Resounding Rings
-							i(86667),	-- Handguards of Resounding Rings
-							i(86668),	-- Chestguard of Resounding Rings
-							i(86669),	-- Pauldrons of Resounding Rings
-							i(86670),	-- Legplates of Resounding Rings
-							i(86671),	-- Gauntlets of Resounding Rings
-							i(86672),	-- Battleplate of Resounding Rings
-							i(86673),	-- Helmet of Resounding Rings
-							i(86689),	-- Firebird's Mantle
-							i(86690),	-- Firebird's Legwraps
-							i(86691),	-- Firebird's Faceguard
-							i(86692),	-- Firebird's Handwraps
-							i(86693),	-- Firebird's Tunic
-							i(86724),	-- Red Crane Shoulderguards
-							i(86725),	-- Red Crane Legguards
-							i(86726),	-- Red Crane Crown
-							i(86727),	-- Red Crane Gauntlets
-							i(86728),	-- Red Crane Chestguard
-							i(86729),	-- Red Crane Handwraps
-							i(86730),	-- Red Crane Helm
-							i(86731),	-- Red Crane Legwraps
-							i(86732),	-- Red Crane Vest
-							i(86733),	-- Red Crane Mantle
-							i(86734),	-- Red Crane Tunic
-							i(86735),	-- Red Crane Grips
-							i(86736),	-- Red Crane Headpiece
-							i(86737),	-- Red Crane Leggings
-							i(86738),	-- Red Crane Spaulders
 						}),
 						n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
 							["coords"] = {
