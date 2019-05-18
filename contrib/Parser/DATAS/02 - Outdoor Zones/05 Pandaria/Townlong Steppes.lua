@@ -1645,6 +1645,426 @@ _.Zones =
 						i(86920),	-- Faceguard of the Lost Catacomb
 						i(86921),	-- Legguards of the Lost Catacomb
 						i(86922),	-- Shoulderguards of the Lost Catacomb
+						{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89274,	-- Helm of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Cowl
+									["itemID"] = 86702,	-- Guardian Serpent Cowl
+								},
+								{	-- Guardian Serpent Hood
+									["itemID"] = 86705,	-- Guardian Serpent Hood
+								},
+								{	-- Sha-Skin Hood
+									["itemID"] = 86710,	-- Sha-Skin Hood
+								},
+								{	-- White Tiger Faceguard
+									["itemID"] = 86661,	-- White Tiger Faceguard
+								},
+								{	-- White Tiger Helmet
+									["itemID"] = 86681,	-- White Tiger Helmet
+								},
+								{	-- White Tiger Headguard
+									["itemID"] = 86686,	-- White Tiger Headguard
+								},
+							},
+						},
+						{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89277,	-- Shoulders of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Mantle
+									["itemID"] = 86699,	-- Guardian Serpent Mantle
+								},
+								{	-- Guardian Serpent Shoulderguards
+									["itemID"] = 86708,	-- Guardian Serpent Shoulderguards
+								},
+								{	-- Sha-Skin Mantle
+									["itemID"] = 86713,	-- Sha-Skin Mantle
+								},
+								{	-- White Tiger Shoulderguards
+									["itemID"] = 86659,	-- White Tiger Shoulderguards
+								},
+								{	-- White Tiger Pauldrons
+									["itemID"] = 86679,	-- White Tiger Pauldrons
+								},
+								{	-- White Tiger Mantle
+									["itemID"] = 86684,	-- White Tiger Mantle
+								},
+							},
+						},
+						{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89265,	-- Chest of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Robes
+									["itemID"] = 86700,	-- Guardian Serpent Robes
+								},
+								{	-- Guardian Serpent Raiment
+									["itemID"] = 86707,	-- Guardian Serpent Raiment
+								},
+								{	-- Sha-Skin Robes
+									["itemID"] = 86712,	-- Sha-Skin Robes
+								},
+								{	-- White Tiger Chestguard
+									["itemID"] = 86663,	-- White Tiger Chestguard
+								},
+								{	-- White Tiger Battleplate
+									["itemID"] = 86683,	-- White Tiger Battleplate
+								},
+								{	-- White Tiger Breastplate
+									["itemID"] = 86688,	-- White Tiger Breastplate
+								},
+							},
+						},
+						{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89271,	-- Gauntlets of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Handwraps
+									["itemID"] = 86703,	-- Guardian Serpent Handwraps
+								},
+								{	-- Guardian Serpent Gloves
+									["itemID"] = 86704,	-- Guardian Serpent Gloves
+								},
+								{	-- Sha-Skin Gloves
+									["itemID"] = 86709,	-- Sha-Skin Gloves
+								},
+								{	-- White Tiger Handguards
+									["itemID"] = 86662,	-- White Tiger Handguards
+								},
+								{	-- White Tiger Gauntlets
+									["itemID"] = 86682,	-- White Tiger Gauntlets
+								},
+								{	-- White Tiger Gloves
+									["itemID"] = 86687,	-- White Tiger Gloves
+								},
+							},
+						},
+						{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89268,	-- Leggings of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Legwraps
+									["itemID"] = 86701,	-- Guardian Serpent Legwraps
+								},
+								{	-- Guardian Serpent Leggings
+									["itemID"] = 86706,	-- Guardian Serpent Leggings
+								},
+								{	-- Sha-Skin Leggings
+									["itemID"] = 86711,	-- Sha-Skin Leggings
+								},
+								{	-- White Tiger Legguards
+									["itemID"] = 86660,	-- White Tiger Legguards
+								},
+								{	-- White Tiger Legplates
+									["itemID"] = 86680,	-- White Tiger Legplates
+								},
+								{	-- White Tiger Greaves
+									["itemID"] = 86685,	-- White Tiger Greaves
+								},
+							},
+						},
+						{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89235,	-- Helm of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Cowl
+									["itemID"] = 85362,	-- Guardian Serpent Cowl
+								},
+								{	-- Guardian Serpent Hood
+									["itemID"] = 85365,	-- Guardian Serpent Hood
+								},
+								{	-- Sha-Skin Hood
+									["itemID"] = 85370,	-- Sha-Skin Hood
+								},
+								{	-- White Tiger Faceguard
+									["itemID"] = 85321,	-- White Tiger Faceguard
+								},
+								{	-- White Tiger Helmet
+									["itemID"] = 85341,	-- White Tiger Helmet
+								},
+								{	-- White Tiger Headguard
+									["itemID"] = 85346,	-- White Tiger Headguard
+								},
+							},
+						},
+						{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89246,	-- Shoulders of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Mantle
+									["itemID"] = 85359,	-- Guardian Serpent Mantle
+								},
+								{	-- Guardian Serpent Shoulderguards
+									["itemID"] = 85368,	-- Guardian Serpent Shoulderguards
+								},
+								{	-- Sha-Skin Mantle
+									["itemID"] = 85373,	-- Sha-Skin Mantle
+								},
+								{	-- White Tiger Shoulderguards
+									["itemID"] = 85319,	-- White Tiger Shoulderguards
+								},
+								{	-- White Tiger Pauldrons
+									["itemID"] = 85339,	-- White Tiger Pauldrons
+								},
+								{	-- White Tiger Mantle
+									["itemID"] = 85344,	-- White Tiger Mantle
+								},
+							},
+						},
+						{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89237,	-- Chest of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Robes
+									["itemID"] = 85360,	-- Guardian Serpent Robes
+								},
+								{	-- Guardian Serpent Raiment
+									["itemID"] = 85367,	-- Guardian Serpent Raiment
+								},
+								{	-- Sha-Skin Robes
+									["itemID"] = 85372,	-- Sha-Skin Robes
+								},
+								{	-- White Tiger Chestguard
+									["itemID"] = 85323,	-- White Tiger Chestguard
+								},
+								{	-- White Tiger Battleplate
+									["itemID"] = 85343,	-- White Tiger Battleplate
+								},
+								{	-- White Tiger Breastplate
+									["itemID"] = 85348,	-- White Tiger Breastplate
+								},
+							},
+						},
+						{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89240,	-- Gauntlets of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Handwraps
+									["itemID"] = 85363,	-- Guardian Serpent Handwraps
+								},
+								{	-- Guardian Serpent Gloves
+									["itemID"] = 85364,	-- Guardian Serpent Gloves
+								},
+								{	-- Sha-Skin Gloves
+									["itemID"] = 85369,	-- Sha-Skin Gloves
+								},
+								{	-- White Tiger Handguards
+									["itemID"] = 85322,	-- White Tiger Handguards
+								},
+								{	-- White Tiger Gauntlets
+									["itemID"] = 85342,	-- White Tiger Gauntlets
+								},
+								{	-- White Tiger Gloves
+									["itemID"] = 85347,	-- White Tiger Gloves
+								},
+							},
+						},
+						{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89243,	-- Leggings of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Legwraps
+									["itemID"] = 85361,	-- Guardian Serpent Legwraps
+								},
+								{	-- Guardian Serpent Leggings
+									["itemID"] = 85366,	-- Guardian Serpent Leggings
+								},
+								{	-- Sha-Skin Leggings
+									["itemID"] = 85371,	-- Sha-Skin Leggings
+								},
+								{	-- White Tiger Legguards
+									["itemID"] = 85320,	-- White Tiger Legguards
+								},
+								{	-- White Tiger Legplates
+									["itemID"] = 85340,	-- White Tiger Legplates
+								},
+								{	-- White Tiger Greaves
+									["itemID"] = 85345,	-- White Tiger Greaves
+								},
+							},
+						},
+						{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89259,	-- Helm of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Cowl
+									["itemID"] = 87115,	-- Guardian Serpent Cowl
+								},
+								{	-- Guardian Serpent Hood
+									["itemID"] = 87120,	-- Guardian Serpent Hood
+								},
+								{	-- Sha-Skin Hood
+									["itemID"] = 87188,	-- Sha-Skin Hood
+								},
+								{	-- White Tiger Helmet
+									["itemID"] = 87101,	-- White Tiger Helmet
+								},
+								{	-- White Tiger Headguard
+									["itemID"] = 87106,	-- White Tiger Headguard
+								},
+								{	-- White Tiger Faceguard
+									["itemID"] = 87111,	-- White Tiger Faceguard
+								},
+							},
+						},
+						{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89262,	-- Shoulders of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Mantle
+									["itemID"] = 87118,	-- Guardian Serpent Mantle
+								},
+								{	-- Guardian Serpent Shoulderguards
+									["itemID"] = 87123,	-- Guardian Serpent Shoulderguards
+								},
+								{	-- Sha-Skin Mantle
+									["itemID"] = 87191,	-- Sha-Skin Mantle
+								},
+								{	-- White Tiger Pauldrons
+									["itemID"] = 87103,	-- White Tiger Pauldrons
+								},
+								{	-- White Tiger Mantle
+									["itemID"] = 87108,	-- White Tiger Mantle
+								},
+								{	-- White Tiger Shoulderguards
+									["itemID"] = 87113,	-- White Tiger Shoulderguards
+								},
+							},
+						},
+						{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89250,	-- Chest of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Robes
+									["itemID"] = 87117,	-- Guardian Serpent Robes
+								},
+								{	-- Guardian Serpent Raiment
+									["itemID"] = 87122,	-- Guardian Serpent Raiment
+								},
+								{	-- Sha-Skin Robes
+									["itemID"] = 87190,	-- Sha-Skin Robes
+								},
+								{	-- White Tiger Battleplate
+									["itemID"] = 87099,	-- White Tiger Battleplate
+								},
+								{	-- White Tiger Breastplate
+									["itemID"] = 87104,	-- White Tiger Breastplate
+								},
+								{	-- White Tiger Chestguard
+									["itemID"] = 87109,	-- White Tiger Chestguard
+								},
+							},
+						},
+						{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89256,	-- Gauntlets of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Handwraps
+									["itemID"] = 87114,	-- Guardian Serpent Handwraps
+								},
+								{	-- Guardian Serpent Gloves
+									["itemID"] = 87119,	-- Guardian Serpent Gloves
+								},
+								{	-- Sha-Skin Gloves
+									["itemID"] = 87187,	-- Sha-Skin Gloves
+								},
+								{	-- White Tiger Gauntlets
+									["itemID"] = 87100,	-- White Tiger Gauntlets
+								},
+								{	-- White Tiger Gloves
+									["itemID"] = 87105,	-- White Tiger Gloves
+								},
+								{	-- White Tiger Handguards
+									["itemID"] = 87110,	-- White Tiger Handguards
+								},
+							},
+						},
+						{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							["itemID"] = 89253,	-- Leggings of the Shadowy Conqueror
+							["classes"] = {
+								5,	-- Priest
+								9,	-- Warlock
+								2,	-- Paladin
+							},
+							["g"] = {
+								{	-- Guardian Serpent Legwraps
+									["itemID"] = 87116,	-- Guardian Serpent Legwraps
+								},
+								{	-- Guardian Serpent Leggings
+									["itemID"] = 87121,	-- Guardian Serpent Leggings
+								},
+								{	-- Sha-Skin Leggings
+									["itemID"] = 87189,	-- Sha-Skin Leggings
+								},
+								{	-- White Tiger Legplates
+									["itemID"] = 87102,	-- White Tiger Legplates
+								},
+								{	-- White Tiger Greaves
+									["itemID"] = 87107,	-- White Tiger Greaves
+								},
+								{	-- White Tiger Legguards
+									["itemID"] = 87112,	-- White Tiger Legguards
+								},
+							},
+						},
 						i(86923),	-- Eternal Blossom Raiment
 						i(86924),	-- Eternal Blossom Grips
 						i(86925),	-- Eternal Blossom Headpiece
@@ -1690,31 +2110,6 @@ _.Zones =
 						i(87096),	-- Red Crane Crown
 						i(87097),	-- Red Crane Legguards
 						i(87098),	-- Red Crane Shoulderguards
-						i(87099),	-- White Tiger Battleplate
-						i(87100),	-- White Tiger Gauntlets
-						i(87101),	-- White Tiger Helmet
-						i(87102),	-- White Tiger Legplates
-						i(87103),	-- White Tiger Pauldron
-						i(87104),	-- White Tiger Breastplate
-						i(87105),	-- White Tiger Gloves
-						i(87106),	-- White Tiger Headguard
-						i(87107),	-- White Tiger Greaves
-						i(87108),	-- White Tiger Mantle
-						i(87109),	-- White Tiger Chestguard
-						i(87110),	-- White Tiger Handguards
-						i(87111),	-- White Tiger Faceguard
-						i(87112),	-- White Tiger Legguards
-						i(87113),	-- White Tiger Shoulderguards
-						i(87114),	-- Guardian Serpent Handwraps
-						i(87115),	-- Guardian Serpent Cowl
-						i(87116),	-- Guardian Serpent Legwraps
-						i(87117),	-- Guardian Serpent Robes
-						i(87118),	-- Guardian Serpent Mantle
-						i(87119),	-- Guardian Serpent Gloves
-						i(87120),	-- Guardian Serpent Hood
-						i(87121),	-- Guardian Serpent Leggings
-						i(87122),	-- Guardian Serpent Raiment
-						i(87123),	-- Guardian Serpent Shoulderguards
 						i(87124),	-- Tunic of the Thousandfold Blades
 						i(87125),	-- Gloves of the Thousandfold Blades
 						i(87126),	-- Helmet of the Thousandfold Blades
@@ -1735,11 +2130,6 @@ _.Zones =
 						i(87141),	-- Firebird's Headpiece
 						i(87142),	-- Firebird's Kilt
 						i(87143),	-- Firebird's Shoulderwraps
-						i(87187),	-- Sha-Skin Gloves
-						i(87188),	-- Sha-Skin Hood
-						i(87189),	-- Sha-Skin Leggings
-						i(87190),	-- Sha-Skin Robes
-						i(87191),	-- Sha-Skin Mantle
 						i(87192),	-- Helmet of Resounding Rings
 						i(87193),	-- Battleplate of Resounding Rings
 						i(87194),	-- Gauntlets of Resounding Rings
@@ -1785,11 +2175,6 @@ _.Zones =
 						i(85316),	-- Faceguard of the Lost Catacomb
 						i(85317),	-- Handguards of the Lost Catacomb
 						i(85318),	-- Chestguard of the Lost Catacomb
-						i(85319),	-- White Tiger Shoulderguards
-						i(85320),	-- White Tiger Legguards
-						i(85321),	-- White Tiger Faceguard
-						i(85322),	-- White Tiger Handguards
-						i(85323),	-- White Tiger Chetguard
 						i(85324),	-- Shoulderguards of Resounding Rings
 						i(85325),	-- Legguards of Resounding Rings
 						i(85326),	-- Faceguard of Resounding Rings
@@ -1805,16 +2190,6 @@ _.Zones =
 						i(85336),	-- Helmet of the Lost Catacomb
 						i(85337),	-- Gauntlets of the Lost Catacomb
 						i(85338),	-- Breastplate of the Lost Catacomb
-						i(85339),	-- White Tiger Pauldrons
-						i(85340),	-- White Tiger Legplates
-						i(85341),	-- White Tiger Helmet
-						i(85342),	-- White Tiger Gauntlets
-						i(85343),	-- White Tiger Battleplate
-						i(85344),	-- White Tiger Mantle
-						i(85345),	-- White Tiger Greaves
-						i(85346),	-- White Tiger Headguard
-						i(85347),	-- White Tiger Gloves
-						i(85348),	-- White Tiger Breastplate
 						i(85349),	-- Firebird's Mantle
 						i(85350),	-- Firebird's Legwraps
 						i(85351),	-- Firebird's Faceguard
@@ -1825,21 +2200,6 @@ _.Zones =
 						i(85356),	-- Eternal Blossom Legwraps
 						i(85357),	-- Eternal Blossom Helm
 						i(85358),	-- Eternal Blossom Handwraps
-						i(85359),	-- Guardian Serpent Mantle
-						i(85360),	-- Guardian Serpent Robes
-						i(85361),	-- Guardian Serpent Legwraps
-						i(85362),	-- Guardian Serpent Cowl
-						i(85363),	-- Guardian Serpent Handwraps
-						i(85364),	-- Guardian Serpent Gloves
-						i(85365),	-- Guardian Serpent Hood
-						i(85366),	-- Guardian Serpent Leggings
-						i(85367),	-- Guardian Serpent Raiment
-						i(85368),	-- Guardian Serpent Shoulderguards
-						i(85369),	-- Sha-Skin Gloves
-						i(85370),	-- Sha-Skin Hood
-						i(85371),	-- Sha-Skin Leggings
-						i(85372),	-- Sha-Skin Robes
-						i(85373),	-- Sha-Skin Mantle
 						i(85374),	-- Mantle of the Burning Scroll
 						i(85375),	-- Robes of the Burning Scroll
 						i(85376),	-- Leggings of the Burning Scroll
@@ -1992,11 +2352,6 @@ _.Zones =
 						i(86656),	-- Faceguard of the Lost Catacomb
 						i(86657),	-- Handguards of the Lost Catacomb
 						i(86658),	-- Chestguard of the Lost Catacomb
-						i(86659),	-- White Tiger Shoulderguards
-						i(86660),	-- White Tiger Legguards
-						i(86661),	-- White Tiger Faceguard
-						i(86662),	-- White Tiger Handguards
-						i(86663),	-- White Tiger Chestguard
 						i(86664),	-- Shoulderguards of Resounding Rings
 						i(86665),	-- Legguards of Resounding Rings
 						i(86666),	-- Faceguard of Resounding Rings
@@ -2012,16 +2367,6 @@ _.Zones =
 						i(86676),	-- Helmet of the Lost Catacomb
 						i(86677),	-- Gauntlets of the Lost Catacomb
 						i(86678),	-- Breastplate of the Lost Catacomb
-						i(86679),	-- White Tiger Pauldrons
-						i(86680),	-- White Tiger Legplates
-						i(86681),	-- White Tiger Helmet
-						i(86682),	-- White Tiger Gauntlets
-						i(86683),	-- White Tiger Battleplate
-						i(86684),	-- White Tiger Mantle
-						i(86685),	-- White Tiger Greaves
-						i(86686),	-- White Tiger Headguard
-						i(86687),	-- White Tiger Gloves
-						i(86688),	-- White Tiger Breastplate
 						i(86689),	-- Firebird's Mantle
 						i(86690),	-- Firebird's Legwraps
 						i(86691),	-- Firebird's Faceguard
@@ -2032,21 +2377,6 @@ _.Zones =
 						i(86696),	-- Eternal Blossom Legwraps
 						i(86697),	-- Eternal Blossom Helm
 						i(86698),	-- Eternal Blossom Handwraps
-						i(86699),	-- Guardian Serpent Mantle
-						i(86700),	-- Guardian Serpent Robes
-						i(86701),	-- Guardian Serpent Legwraps
-						i(86702),	-- Guardian Serpent Cowl
-						i(86703),	-- Guardian Serpent Handwraps
-						i(86704),	-- Guardian Serpent Gloves
-						i(86705),	-- Guardian Serpent Hood
-						i(86706),	-- Guardian Serpent Leggings
-						i(86707),	-- Guardian Serpent Raiment
-						i(86708),	-- Guardian Serpent Shoulderguards
-						i(86709),	-- Sha-Skin Gloves
-						i(86710),	-- Sha-Skin Hood
-						i(86711),	-- Sha-Skin Leggings
-						i(86712),	-- Sha-Skin Robes
-						i(86713),	-- Sha-Skin Mantle
 						i(86714),	-- Mantle of the Burning Scroll
 						i(86715),	-- Robes of the Burning Scroll
 						i(86716),	-- Leggings of the Burning Scroll
