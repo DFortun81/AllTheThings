@@ -230,13 +230,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161462),	-- Doom's Wake
 				}),
 			}),
-			--[[
-			e(, {	-- Ulmath, the Soulbinder
-				["questID"] = ,
+			e(2362, {	-- Ulmath, the Soulbinder
+				--["questID"] = ,
 				["isRaid"] = true,
-				["coord"] = { , 1355 },
+				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = { 1355 },
-				["crs"] = { },	-- Ulmath, the Soulbinder
+				["crs"] = {
+					152736,	-- Guardian Tannin
+					152729,	-- Moon Princess Liara
+					152697,	-- Ulmath
+				},
 				["g"] = bubbleDown({["modID"] = 3 }, {
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
@@ -250,7 +253,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(169317),	-- Enthraller's Bindstone
 				}),
 			}),
-			]]--
 			e(2198, {	-- Warbringer Yenajz
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				-- Note!! Kill ID: 52995
@@ -272,11 +274,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161376),	-- Prism of Dark Intensity
 				}),
 			}),
-			--[[
-			e(, {	-- Wekemara
-				["questID"] = ,
+			e(2363, {	-- Wekemara
+				--["questID"] = ,
 				["isRaid"] = true,
-				["coord"] = { , 1355 },
+				--["coord"] = { , 1355 },
 				["maps"] = { 1355 },
 				["crs"] = { 152671 },	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -289,9 +290,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(169925),	-- Serpentskin Splashers
 					i(169928),	-- Wekemara's Warboots
 					i(169318),	-- Shockbiter's Fang
-				},
+				}),
 			}),
-			]]--
 		},
 	}),
 })};
