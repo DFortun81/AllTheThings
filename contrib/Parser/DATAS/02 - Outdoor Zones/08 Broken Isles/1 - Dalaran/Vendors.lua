@@ -2060,8 +2060,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 147666,	-- Ensemble: Cruel Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 4 Items",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -2092,6 +2093,33 @@ _.Zones =
 											},
 											{	-- Cruel Gladiator's Scaled Sabatons
 												["itemID"] = 144662,	-- Cruel Gladiator's Scaled Sabatons
+											},
+											{	-- Ferocious Gladiator's Scaled Helm
+												["itemID"] = 145508,	-- Ferocious Gladiator's Scaled Helm
+											},
+											{	-- Ferocious Gladiator's Scaled Shoulders
+												["itemID"] = 145513,	-- Ferocious Gladiator's Scaled Shoulders
+											},
+											{	-- Ferocious Gladiator's Greatcloak of Faith
+												["itemID"] = 145389,	-- Ferocious Gladiator's Greatcloak of Faith
+											},
+											{	-- Ferocious Gladiator's Scaled Breastplate
+												["itemID"] = 145502,	-- Ferocious Gladiator's Scaled Breastplate
+											},
+											{	-- Ferocious Gladiator's Scaled Wristplates
+												["itemID"] = 145517,	-- Ferocious Gladiator's Scaled Wristplates
+											},
+											{	-- Ferocious Gladiator's Scaled Gauntlets
+												["itemID"] = 145506,	-- Ferocious Gladiator's Scaled Gauntlets
+											},
+											{	-- Ferocious Gladiator's Scaled Girdle
+												["itemID"] = 145515,	-- Ferocious Gladiator's Scaled Girdle
+											},
+											{	-- Ferocious Gladiator's Scaled Legguards
+												["itemID"] = 145510,	-- Ferocious Gladiator's Scaled Legguards
+											},
+											{	-- Ferocious Gladiator's Scaled Sabatons
+												["itemID"] = 145504,	-- Ferocious Gladiator's Scaled Sabatons
 											},
 										},
 									},
@@ -5691,8 +5719,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 147665,	-- Ensemble: Cruel Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 4 Items",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -5723,6 +5752,33 @@ _.Zones =
 											},
 											{	-- Cruel Gladiator's Scaled Sabatons
 												["itemID"] = 144661,	-- Cruel Gladiator's Scaled Sabatons
+											},
+											{	-- Ferocious Gladiator's Scaled Helm
+												["itemID"] = 145507,	-- Ferocious Gladiator's Scaled Helm
+											},
+											{	-- Ferocious Gladiator's Scaled Shoulders
+												["itemID"] = 145512,	-- Ferocious Gladiator's Scaled Shoulders
+											},
+											{	-- Ferocious Gladiator's Greatcloak of Faith
+												["itemID"] = 145388,	-- Ferocious Gladiator's Greatcloak of Faith
+											},
+											{	-- Ferocious Gladiator's Scaled Breastplate
+												["itemID"] = 145511,	-- Ferocious Gladiator's Scaled Breastplate
+											},
+											{	-- Ferocious Gladiator's Scaled Wristplates
+												["itemID"] = 145516,	-- Ferocious Gladiator's Scaled Wristplates
+											},
+											{	-- Ferocious Gladiator's Scaled Gauntlets
+												["itemID"] = 145505,	-- Ferocious Gladiator's Scaled Gauntlets
+											},
+											{	-- Ferocious Gladiator's Scaled Girdle
+												["itemID"] = 145514,	-- Ferocious Gladiator's Scaled Girdle
+											},
+											{	-- Ferocious Gladiator's Scaled Legguards
+												["itemID"] = 145509,	-- Ferocious Gladiator's Scaled Legguards
+											},
+											{	-- Ferocious Gladiator's Scaled Sabatons
+												["itemID"] = 145503,	-- Ferocious Gladiator's Scaled Sabatons
 											},
 										},
 									},
