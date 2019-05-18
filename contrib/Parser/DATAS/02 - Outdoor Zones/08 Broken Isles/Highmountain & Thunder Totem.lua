@@ -20,6 +20,7 @@ _.Zones =
 				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
 				869,	-- Highmountain (legion invasion ship 1)
 				870,	-- Highmountain (legion invasion ship 2)
+				1472,	-- The Dragon's Spine (Azerite Essence quest)
 			},
 			["groups"] = {
 				n(-10067, {	-- Artifacts
@@ -1464,7 +1465,31 @@ _.Zones =
 								i(140721),
 							  }),
 							}),
-						  }),
+							{	-- A Friendly Face
+								["questID"] = 55497,
+								["qg"] = 152385,	-- Highmountain Shaman (ebonhorn)
+								["coord"] = { 18.9, 58.0, 1472 },
+								["sourceQuest"] = 55425,	-- Dominating the Indomitable
+							},
+							{	-- Calming the Spine
+								["questID"] = 55407,
+								["qg"] = 151695,	-- Spiritwalker Ebonhorn
+								["coord"] = { 26.7, 46.2, 1472 },
+								["sourceQuest"] = 55400,	-- Take My Hand
+							},
+							{	-- Dominating the Indomitable
+								["questID"] = 55425,
+								["qg"] = 152385,	-- Spiritwalker Ebonhorn
+								["coord"] = { 17.5, 62.1, 1472 },
+								["sourceQuest"] = 55407,	-- Calming the Spine
+							},
+							{	-- Take My Hand
+								["questID"] = 55400,
+								["qg"] = 151641,	-- Spiritwalker Ebonhorn
+								["coord"] = { 49.5, 68.3, 650 },
+								["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
+							},
+						}),
 						--[[ These quests will be organized soon™
 									q(43423),	-- A Hero's Weapon
 									q(43370),	-- A New Invention

@@ -40,6 +40,12 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						["groups"] = {
+							{	-- A Distrubance Beneath the Earth
+								["questID"] = 55374,
+								["qg"] = 152194,	-- MOTHER
+								["coord"] = { 48.1, 72.2, 1473 },
+								["sourceQuest"] = 55533,	-- MOTHER Knows Best
+							},
 							q(52428, {	-- Infusing the Heart		
 								["groups"] = {		
 									i(160909),	-- Crown of the Champion
@@ -69,17 +75,33 @@ _.Zones =
 								},		
 								["qg"] = 136907,	-- Magni Bronzebeard		
 								["sourceQuests"] = { 53028, 51211 },	-- The Heart of Azeroth (A/H)
-								["coord"] = { 50.3, 54.4 },
+								["coord"] = { 50.3, 54.4, 1021 },
 							}),	
+							{	-- MOTHER Knows Best
+								["questID"] = 55533,
+								["qg"] = 152206,	-- Magni Bronzebeard
+								["coord"] = { 50.1, 59.1, 1473 },
+								["sourceQuest"] = 55851,	-- Essential Empowerment
+							},
+							{	-- The Heart Forge
+								["questID"] = 55618,
+								["qg"] = 152194,	-- MOTHER
+								["coord"] = { 48.1, 72.4, 1473 },
+								["sourceQuest"] = 55497,	-- A Friendly Face
+								["g"] = {
+									ach(13572),	-- The Heart Forge
+									i(168611),	-- Petrified Ebony Scale
+								},
+							},
 							qh(53031, {	-- The Speaker's Imperative	
 								["qg"] = 136907,	-- Magni Bronzebeard	
 								["sourceQuests"] = { 52428 },	-- Infusing the Heart	
-								["coord"] = { 50.1, 53.6 },
+								["coord"] = { 50.1, 53.6, 1021 },
 							}),
 							qa(51403, {	-- The Speaker's Imperative
 								["qg"] = 136907,	-- Magni Bronzebeard	
 								["sourceQuests"] = { 52428 },	-- Infusing the Heart
-								["coord"] = { 50.1, 53.6 },
+								["coord"] = { 50.1, 53.6, 1021 },
 							}),
 						},
 					}),
@@ -108,6 +130,9 @@ _.Zones =
 				},
 				["achievementID"] = 12918,	-- Have a Heart
 				["lvl"] = 110,
+				["maps"] = {
+					1473,	-- Chamber of Heart
+				},
 				["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
 			}),
 		}),

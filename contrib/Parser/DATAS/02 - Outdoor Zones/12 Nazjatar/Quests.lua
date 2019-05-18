@@ -39,7 +39,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
-				{	-- Essential Empowerment
+				{	-- Essential Empowerment (possibly breadcrumb? follow-up quest was available without turning this in)
 					["questID"] = 55851,
 					["qg"] = 154167,	-- Magni Bronzebeard
 					["coord"] = { 48.6, 61.3, 1355 },
