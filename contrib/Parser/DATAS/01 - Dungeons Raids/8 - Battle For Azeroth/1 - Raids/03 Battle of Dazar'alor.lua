@@ -47,7 +47,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								["encounterID"] = 2344,	-- 2333 Horde
 								["crs"] = {
 									144683,	-- Ra'wani Kanae (A)
-									144683,	-- Frida Ironbellows (H)
+									144680,	-- Frida Ironbellows (H)
 								},
 								["g"] = {
 									{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
@@ -386,7 +386,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2344,	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
-							144683,	-- Frida Ironbellows (H)
+							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
 							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
@@ -714,7 +714,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2344,	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
-							144683,	-- Frida Ironbellows (H)
+							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
 							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
@@ -1045,7 +1045,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						["encounterID"] = 2344,	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
-							144683,	-- Frida Ironbellows (H)
+							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
 							{	-- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]

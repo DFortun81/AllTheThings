@@ -907,10 +907,12 @@ _.Zones =
 							qh(11047, {	-- The Apprentice's Request
 								["qg"] = 23280,	-- Agadai
 								["coord"] = { 52.0, 54.4, 107 },
+								["isBreadcrumb"] = true,
 							}),
 							qa(11043, {	-- Building a Better Gryphon
 								["qg"] = 21107,	-- Rip Pedalslam
 								["coord"] = { 61.2, 70.4, 105 },
+								["isBreadcrumb"] = true,
 							}),
 							qh(11036, {	-- Out of This World Produce!
 								["qg"] = 19471,	-- Old Orok

@@ -76,6 +76,7 @@ _.Zones =
 						["questID"] = 32670,
 						["lvl"] = 20,
 						["races"] = { 6 },	-- Tauren
+						["isBreadcrumb"] = true,
 						["description"] = "This quest is available Tauren upon reaching level 20.",
 					},
 					{	-- Learn to Ride
@@ -149,6 +150,7 @@ _.Zones =
 						["coord"] = { 48.6, 59.8, 7 },
 						["races"] = { 6 },	-- Tauren
 						["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
+						["isBreadcrumb"] = true,
 					},
 					{	-- Rite of Vision
 						["questID"] = 20441,
