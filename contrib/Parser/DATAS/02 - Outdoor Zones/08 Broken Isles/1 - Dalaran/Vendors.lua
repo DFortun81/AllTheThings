@@ -1613,7 +1613,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/14/19]
 										["itemID"] = 146135,	-- Ensemble: Vindictive Gladiator's Scaled Armor
-										["description"] = "You will need to log out and back in to register Season 2 Items",
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -2062,7 +2062,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 147666,	-- Ensemble: Cruel Gladiator's Scaled Armor
-										["description"] = "You will need to log out and back in to register Season 4 Items",
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -2511,6 +2511,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 149499,	-- Ensemble: Fierce Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -2541,6 +2542,60 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Scaled Sabatons
 												["itemID"] = 148037,	-- Fierce Gladiator's Scaled Sabatons
+											},
+											{	-- Dominant Gladiator's Scaled Helm
+												["itemID"] = 148534,	-- Dominant Gladiator's Scaled Helm
+											},
+											{	-- Dominant Gladiator's Scaled Shoulders
+												["itemID"] = 148539,	-- Dominant Gladiator's Scaled Shoulders
+											},
+											{	-- Dominant Gladiator's Greatcloak of Faith
+												["itemID"] = 148415,	-- Dominant Gladiator's Greatcloak of Faith
+											},
+											{	-- Dominant Gladiator's Scaled Breastplate
+												["itemID"] = 148528,	-- Dominant Gladiator's Scaled Breastplate
+											},
+											{	-- Dominant Gladiator's Scaled Wristplates
+												["itemID"] = 148543,	-- Dominant Gladiator's Scaled Wristplates
+											},
+											{	-- Dominant Gladiator's Scaled Gauntlets
+												["itemID"] = 148532,	-- Dominant Gladiator's Scaled Gauntlets
+											},
+											{	-- Dominant Gladiator's Scaled Girdle
+												["itemID"] = 148541,	-- Dominant Gladiator's Scaled Girdle
+											},
+											{	-- Dominant Gladiator's Scaled Legguards
+												["itemID"] = 148536,	-- Dominant Gladiator's Scaled Legguards
+											},
+											{	-- Dominant Gladiator's Scaled Sabatons
+												["itemID"] = 148530,	-- Dominant Gladiator's Scaled Sabatons
+											},
+											{	-- Demonic Gladiator's Scaled Helm
+												["itemID"] = 149026,	-- Demonic Gladiator's Scaled Helm
+											},
+											{	-- Demonic Gladiator's Scaled Shoulders
+												["itemID"] = 149031,	-- Demonic Gladiator's Scaled Shoulders
+											},
+											{	-- Demonic Gladiator's Greatcloak of Faith
+												["itemID"] = 148907,	-- Demonic Gladiator's Greatcloak of Faith
+											},
+											{	-- Demonic Gladiator's Scaled Breastplate
+												["itemID"] = 149020,	-- Demonic Gladiator's Scaled Breastplate
+											},
+											{	-- Demonic Gladiator's Scaled Wristplates
+												["itemID"] = 149035,	-- Demonic Gladiator's Scaled Wristplates
+											},
+											{	-- Demonic Gladiator's Scaled Gauntlets
+												["itemID"] = 149024,	-- Demonic Gladiator's Scaled Gauntlets
+											},
+											{	-- Demonic Gladiator's Scaled Girdle
+												["itemID"] = 149033,	-- Demonic Gladiator's Scaled Girdle
+											},
+											{	-- Demonic Gladiator's Scaled Legguards
+												["itemID"] = 149028,	-- Demonic Gladiator's Scaled Legguards
+											},
+											{	-- Demonic Gladiator's Scaled Sabatons
+												["itemID"] = 149022,	-- Demonic Gladiator's Scaled Sabatons
 											},
 										},
 									},
@@ -5273,6 +5328,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 146134,	-- Ensemble: Vindictive Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -5721,7 +5777,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 147665,	-- Ensemble: Cruel Gladiator's Scaled Armor
-										["description"] = "You will need to log out and back in to register Season 4 Items",
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -6168,8 +6224,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 149498,	-- Ensemble: Fierce Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -6200,6 +6257,60 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Scaled Sabatons
 												["itemID"] = 148036,	-- Fierce Gladiator's Scaled Sabatons
+											},
+											{	-- Dominant Gladiator's Scaled Helm
+												["itemID"] = 148533,	-- Dominant Gladiator's Scaled Helm
+											},
+											{	-- Dominant Gladiator's Scaled Shoulders
+												["itemID"] = 148538,	-- Dominant Gladiator's Scaled Shoulders
+											},
+											{	-- Dominant Gladiator's Greatcloak of Faith
+												["itemID"] = 148414,	-- Dominant Gladiator's Greatcloak of Faith
+											},
+											{	-- Dominant Gladiator's Scaled Breastplate
+												["itemID"] = 148537,	-- Dominant Gladiator's Scaled Breastplate
+											},
+											{	-- Dominant Gladiator's Scaled Wristplates
+												["itemID"] = 148542,	-- Dominant Gladiator's Scaled Wristplates
+											},
+											{	-- Dominant Gladiator's Scaled Gauntlets
+												["itemID"] = 148531,	-- Dominant Gladiator's Scaled Gauntlets
+											},
+											{	-- Dominant Gladiator's Scaled Girdle
+												["itemID"] = 148540,	-- Dominant Gladiator's Scaled Girdle
+											},
+											{	-- Dominant Gladiator's Scaled Legguards
+												["itemID"] = 148535,	-- Dominant Gladiator's Scaled Legguards
+											},
+											{	-- Dominant Gladiator's Scaled Sabatons
+												["itemID"] = 148529,	-- Dominant Gladiator's Scaled Sabatons
+											},
+											{	-- Demonic Gladiator's Scaled Helm
+												["itemID"] = 149025,	-- Demonic Gladiator's Scaled Helm
+											},
+											{	-- Demonic Gladiator's Scaled Shoulders
+												["itemID"] = 149030,	-- Demonic Gladiator's Scaled Shoulders
+											},
+											{	-- Demonic Gladiator's Greatcloak of Faith
+												["itemID"] = 148906,	-- Demonic Gladiator's Greatcloak of Faith
+											},
+											{	-- Demonic Gladiator's Scaled Breastplate
+												["itemID"] = 149029,	-- Demonic Gladiator's Scaled Breastplate
+											},
+											{	-- Demonic Gladiator's Scaled Wristplates
+												["itemID"] = 149034,	-- Demonic Gladiator's Scaled Wristplates
+											},
+											{	-- Demonic Gladiator's Scaled Gauntlets
+												["itemID"] = 149023,	-- Demonic Gladiator's Scaled Gauntlets
+											},
+											{	-- Demonic Gladiator's Scaled Girdle
+												["itemID"] = 149032,	-- Demonic Gladiator's Scaled Girdle
+											},
+											{	-- Demonic Gladiator's Scaled Legguards
+												["itemID"] = 149027,	-- Demonic Gladiator's Scaled Legguards
+											},
+											{	-- Demonic Gladiator's Scaled Sabatons
+												["itemID"] = 149021,	-- Demonic Gladiator's Scaled Sabatons
 											},
 										},
 									},
