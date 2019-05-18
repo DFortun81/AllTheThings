@@ -12,10 +12,18 @@ _.Zones =
 					{	-- Nautical Nuisances of Nazjatar
 						["achievementID"] = 13626,
 						["g"] = {
+							{	-- Chomp
+								["criteriaID"] = 2,
+								["coord"] = { 71.9, 51.2, 1355 },
+							},
 							{	-- Kelpstone
 								["criteriaID"] = 9,
 								["coord"] = { 46.6, 28.0, 1355 },
 								["description"] = "Inside a case at the bottom of the waterfall.",
+							},
+							{	-- Voltgorger
+								["criteriaID"] = 10,
+								["coord"] = { 37.5, 16.7, 1355 },
 							},
 						},
 					},

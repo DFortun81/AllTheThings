@@ -29,6 +29,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
 				},
+				{	-- Brinestone Pickaxe
+					["itemID"] = 168081,
+					["crs"] = {
+						152795,	-- Sandclaw Stoneshell
+					},
+					["g"] = {
+						{	-- What Will It Mine?
+							["questID"] = 55531,
+						},
+					},
+				},
 				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
 					["questID"] = 52956,
 					["qg"] = 154641,	-- High Warlord Volrath
