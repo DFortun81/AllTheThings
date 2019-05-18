@@ -595,7 +595,7 @@ _.Zones =
 							i(89673),	-- Robe of Eternal Dynasty
 						}),
 						n(64606, {	-- Commander Oxheart <Valor Quartermaster>
-							{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89274,	-- Helm of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -623,7 +623,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89277,	-- Shoulders of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -651,7 +651,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89265,	-- Chest of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -679,7 +679,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89271,	-- Gauntlets of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -707,7 +707,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89268,	-- Leggings of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -735,7 +735,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [LFR] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89235,	-- Helm of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -763,7 +763,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Normal] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89246,	-- Shoulders of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -791,7 +791,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Normal] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89237,	-- Chest of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -819,7 +819,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Normal] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89240,	-- Gauntlets of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -847,7 +847,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Normal] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89243,	-- Leggings of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -875,7 +875,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Heroic] Helm of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89259,	-- Helm of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -903,7 +903,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Heroic] Shoulders of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89262,	-- Shoulders of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -931,7 +931,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Heroic] Chest of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89250,	-- Chest of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -959,7 +959,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Heroic] Gauntlets of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89256,	-- Gauntlets of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -987,7 +987,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
+							{	-- [Heroic] Leggings of the Shadowy Conqueror [Priest / Warlock / Priest]
 								["itemID"] = 89253,	-- Leggings of the Shadowy Conqueror
 								["classes"] = {
 									5,	-- Priest
@@ -1015,7 +1015,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [LFR] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89273,	-- Helm of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1050,7 +1050,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [LFR] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89276,	-- Shoulders of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1085,7 +1085,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [LFR] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89264,	-- Chest of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1120,7 +1120,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gloves of the Burning Scroll [Mage / Druid / Rogue / Death Knight]
+							{	-- [LFR] Gloves of the Burning Scroll [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 86718,	-- Gloves of the Burning Scroll
 								["classes"] = {
 									8,	-- Mage
@@ -1152,7 +1152,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [LFR] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89267,	-- Leggings of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1187,7 +1187,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Normal] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89234,	-- Helm of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1222,7 +1222,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Normal] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89248,	-- Shoulders of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1257,7 +1257,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Normal] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89239,	-- Chest of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1292,7 +1292,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Normal] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89242,	-- Gauntlets of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1327,7 +1327,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Normal] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89245,	-- Leggings of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1362,7 +1362,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Heroic] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89258,	-- Helm of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1397,7 +1397,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Heroic] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89261,	-- Shoulders of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1432,7 +1432,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Heroic] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89249,	-- Chest of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1467,7 +1467,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Heroic] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89255,	-- Gauntlets of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
@@ -1502,7 +1502,7 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
+							{	-- [Heroic] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
 								["itemID"] = 89252,	-- Leggings of the Shadowy Vanquisher
 								["classes"] = {
 									8,	-- Mage
