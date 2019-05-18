@@ -934,6 +934,7 @@ _.Zones =
 								i(121659),
 								i(121658),
 								i(121656),
+								i(121729),	-- Ormgul's Bug Sprayer
 							  }),
 							  q(39272),	-- Poisoned Crops
 							  q(39496),	-- The Flow of the River
@@ -952,7 +953,9 @@ _.Zones =
 							  q(39661),	-- Lifespring Cavern
 							  q(39488),	-- Balance of Elements
 							  q(39489),	-- Invading Spelunkers
-							  q(39487),	-- Crystal Fury
+							  q(39487, { -- Crystal Fury
+								i(133081),	-- Manathirster Focus
+							  }),
 							}),
 							crit(2, {	-- Riverbend
 							  q(39498),	-- High Water
@@ -983,7 +986,9 @@ _.Zones =
 								i(130306),
 							  }),
 							  q(39429),	-- Assaulting the Haglands
-							  q(39322),	-- The Witchqueen
+							  q(39322, { -- The Witchqueen
+								i(133106),	-- Fleshrender Roc Essence
+							  }),
 							  q(39387),	-- The Skies of Highmountain
 
 							}),
@@ -1030,6 +1035,7 @@ _.Zones =
 								i(121660),
 								i(121663),
 								i(121661),
+								i(130312),	-- Explorer's Delving Loop
 							  }),
 							  q(39577),	-- An Ancient Secret
 							  q(39579),	-- The Backdoor
@@ -1398,6 +1404,7 @@ _.Zones =
 									i(130285),
 									i(130284),
 									i(130283),
+									i(130275),	-- Chain of Bossing Around
 								}),
 								q(40071,  {  	-- Tamer Takedown
 									i(121681),
