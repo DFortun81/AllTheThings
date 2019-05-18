@@ -18,7 +18,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["groups"] = {
-							i(95618, {	-- Cache of Mogu Riches
+							un(2, i(95618, {	-- Cache of Mogu Riches
 								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 								["groups"] = {
 									i(86884),	-- Belt of Embodied Terror
@@ -84,7 +84,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(48124),	-- Razormaw Hatchling
 									i(48126),	-- Razzashi Hatchling
 								},
-							}),
+							})),
 						},
 						--[[
 						["crs"] = {
@@ -366,6 +366,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85989),	-- Hood of Cursed Dreams
 							i(85984),	-- Nullification Greathelm
 							i(85986),	-- Amulet of Seven Curses
+							{	-- Arrow Breaking Windcloak	
+								["itemID"] = 86082,	-- Arrow Breaking Windcloak
+								["description"] = "|CFFFF0000This cloak only drops in 10 Man Normal|r",
+							},
 							i(86082),	-- Arrow Breaking Windcloak
 							i(85985),	-- Cloak of Peacock Feathers
 							i(85990),	-- Imperial Ghostbinder's Robes

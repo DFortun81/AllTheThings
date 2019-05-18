@@ -541,6 +541,7 @@ _.Zones =
 						["questID"] = 28376,
 						["qg"] = 48428,	-- Myzerian
 						["sourceQuest"] = 48431,	-- Shroud of the Makers!
+						["coord"] = { 40.59, 22.19, 249 },
 					},
 					{	-- Nahom Must Hold
 						["questID"] = 28561,

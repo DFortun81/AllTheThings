@@ -11,6 +11,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1363,	-- Introquest (Twist the Knife)
 		},
 		["g"] = {
+			n(-1,  {	-- Common Boss Drop
+				["crs"] = {
+					144754,	-- Fa'thuul the Feared
+					146497,	-- Zaxasj the Speaker
+					145371,	-- Uu'nat, Harbinger of the Void
+				},
+				["g"] = {
+					i(165735),	-- Vantus Rune Technique: Crucible of Storms (Rank 1)
+					i(165736),	-- Vantus Rune Technique: Crucible of Storms (Rank 2)
+					i(165737),	-- Vantus Rune Technique: Crucible of Storms (Rank 3)
+				},
+			}),
 			d(17, {	-- LFR
 			--	n(0, {	-- Zone Drop
 			--	}),

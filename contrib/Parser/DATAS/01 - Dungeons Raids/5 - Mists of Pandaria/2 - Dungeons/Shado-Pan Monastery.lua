@@ -8,7 +8,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["mapID"] = 443,
 		["maps"] = { 444, 445, 446 },
 		["groups"] = {
-			n(-17, {	-- Quests 				
+			n(-17, {	-- Quests
 				q(30757, {	-- Lord of the Shado-Pan
 					i(87315),	-- Cowl of Angry Thoughts
 					i(87316),	-- Headcover of Disturbed Serenity

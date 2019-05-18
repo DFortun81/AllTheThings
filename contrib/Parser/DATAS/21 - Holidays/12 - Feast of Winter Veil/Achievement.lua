@@ -18,14 +18,11 @@ _.Holidays = bubbleDown({["u"] = 29},
 							ach(252, {	-- With a Little Helper from My Friends
 								
 							}),
-							ach(1255, {	-- Scrooge (Alliance)
-								
-								["races"] = ALLIANCE_ONLY,
-							}),
-							ach(259, {	-- Scrooge (Horde)
-								
-								["races"] = HORDE_ONLY,
-							}),
+							{	-- Scrooge
+								["allianceAchievementID"] = 1255,	-- Scrooge [Alliance]
+								["hordeAchievementID"] = 259,		-- Scrooge [Horde]
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
 							ach(1282, {	-- Fa-la-la-la-Ogri'la
 								
 							}),
@@ -110,42 +107,69 @@ _.Holidays = bubbleDown({["u"] = 29},
 					ach(8699, {	-- The Danger Zone
 						
 					}),
-					ach(5853, {	-- A-Caroling We Will Go (Alliance)
-						["groups"] = {
-							crit(1),	-- Orgrimmar
-							crit(2),	-- Silvermoon City
-							crit(3),	-- Thunder Bluff
-							crit(4),	-- Undercity
+					{	-- A-Caroling We Will Go
+						["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
+						["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
+						["u"] = 29,							-- Feast of Winter Veil Filter
+						["g"] = {
+							{	-- Orgrimmar // Darnassus
+								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
+								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
+								["criteriaID"] = 1,					-- Orgrimmar // Darnassus
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- Silvermoon City // The Exodar
+								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
+								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
+								["criteriaID"] = 2,					-- Silvermoon City // The Exodar
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- Thunder Bluff // Ironforge
+								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
+								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
+								["criteriaID"] = 3,					-- Thunder Bluff // Ironforge
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- Undercity // Stormwind City
+								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
+								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
+								["criteriaID"] = 4,					-- Undercity // Stormwind City
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
 						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(5854, {	-- A-Caroling We Will Go (Horde)
-						["groups"] = {
-							crit(1),	-- Darnassus
-							crit(2),	-- The Exodar
-							crit(3),	-- Ironforge
-							crit(4),	-- Stormwind City
+					},
+					{	-- BB King
+						["allianceAchievementID"] = 4436,	-- BB King [Alliance]
+						["hordeAchievementID"] = 4437,		-- BB King [Horde]
+						["u"] = 29,							-- Feast of Winter Veil Filter
+						["g"] = {
+							{	-- Baine Bloodhoof // Muradin Bronzebeard
+								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
+								["hordeAchievementID"] = 4437,		-- BB King [Horde]
+								["criteriaID"] = 1,					-- Baine Bloodhoof // Muradin Bronzebeard
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- Lady Sylvanas Windrunner // Prophet Velen
+								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
+								["hordeAchievementID"] = 4437,		-- BB King [Horde]
+								["criteriaID"] = 2,					-- Lady Sylvanas Windrunner // Prophet Velen
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- Lo'themar Theron // Tyrande Whisperwind
+								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
+								["hordeAchievementID"] = 4437,		-- BB King [Horde]
+								["criteriaID"] = 3,					-- Lo'themar Theron // Tyrande Whisperwind
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
+							{	-- High Overlord Saurfang // Anduin Wyrnn
+								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
+								["hordeAchievementID"] = 4437,		-- BB King [Horde]
+								["criteriaID"] = 4,					-- High Overlord Saurfang // Anduin Wyrnn
+								["u"] = 29,							-- Feast of Winter Veil Filter
+							},
 						},
-						["races"] = HORDE_ONLY,
-					}),
-					ach(4436, {	-- BB King (Alliance)
-						["groups"] = {
-							crit(1),	-- Baine Bloodhoof
-							crit(2),	-- Lady Sylvanas Windrunner
-							crit(3),	-- Lor'themar Theron
-							crit(4),	-- High Overlord Saurfang
-						},
-						["races"] = ALLIANCE_ONLY,
-					}),
-					ach(4437, {	-- BB King (Horde)
-						["groups"] = {
-							crit(1),	-- Muradin Bronzebeard
-							crit(2),	-- Prophet Velen
-							crit(3),	-- Tyrande Whisperwind
-							crit(4),	-- Anduin Wrynn
-						},
-						["races"] = HORDE_ONLY,
-					}),
+					},
+					
 					ach(1295, {	-- Crashin' & Thrashin'
 						["groups"] = {
 							crit(1),	-- Gain 25 crashes with your Crashin' Thrashin' Racer

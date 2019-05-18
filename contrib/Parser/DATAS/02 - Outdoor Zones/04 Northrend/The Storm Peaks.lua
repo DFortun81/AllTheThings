@@ -234,7 +234,7 @@ _.Zones =
 						crit(8),		-- The Sons of Hodir
 						crit(9),		-- Loken
 					}),
-]]--				
+]]--
 					i(44751, {	-- Hyldnir Spoils
 						["groups"] = {
 							i(43962),	-- Reins of the White Polar Bear
@@ -857,7 +857,7 @@ _.Zones =
 							12957,	-- Slaves of the Stormforged (probably required)
 							12964,	-- The Dark Ore (definitely required)
 						},
-						
+
 					}),
 					q(12998, {	-- The Heart of the Storm
 						["qg"] = 29801,	-- Bouldercrag the Rockshaper
@@ -915,7 +915,7 @@ _.Zones =
 								["recipeID"] = 55252,	-- Schematic: Scrapbot Construction Kit
 							},
 						},
-							
+
 					}),
 					q(13047, {	-- The Reckoning (triggered completion of "Loken" criteria even before turning quest in)
 						["g"] = {
@@ -1043,9 +1043,9 @@ _.Zones =
 
 
 --[[
-						["qg"] = ,	-- 
+						["qg"] = ,	--
 						["coord"] = {  },
-						["sourceQuests"] = {  },	-- 
+						["sourceQuests"] = {  },	--
 					}),
 
 
@@ -1074,7 +1074,7 @@ _.Zones =
 					qh(13060),	-- When All Else Fails
 					qh(13048),	-- Where Time Went Wrong
 					qh(13426),	-- Xarantaur, the Witness
---]]					
+--]]
 					qh(13058, {	-- Changing the Wind's Course
 						i(43186),
 						i(43185),
@@ -1098,7 +1098,7 @@ _.Zones =
 						i(42814),
 						i(42833),
 					}),
-				}),	
+				}),
 				n(-16,  {	-- Rares
 					{			-- Dirkee
 						["npcID"] = 32500,		-- Dirkee [NPC]
@@ -1162,7 +1162,7 @@ _.Zones =
 						["g"] = {
 							{	-- Loaned Gryphon Reins
 								["itemID"] = 44221,	-- Loaned Gryphon Reins
-								["u"] = 2, 
+								["u"] = 2,
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Loaned Wind Rider Reins
@@ -1185,8 +1185,8 @@ _.Zones =
 							},
 						},
 					},
-					{	-- Rork Sharpchin 
-						["npcID"] = 29744,	-- Rork Sharpchin 
+					{	-- Rork Sharpchin
+						["npcID"] = 29744,	-- Rork Sharpchin
 						["itemID"] = 42780,	-- Relics of Ulduar
 						["coords"] = {
 							{ 28.81, 74.01, 120 }
@@ -1259,9 +1259,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 67,	
+			["lvl"] = 67,
 			["achievementID"] = 1269,
-			["description"] = "|cff66ccffThe Storm Peaks is a leveling zone in central Northrend intended for level 77+ players. it is a frigid mountainous region that used to be the home of the titans, with Ulduar as their city. Currently, the storm giants live in the Storm Peaks. Players questing in this zone will learn about the lore behind the titans, the Hyldnir, Brann Bronzebeard, and the Sons of Hodir. |r",				
+			["description"] = "|cff66ccffThe Storm Peaks is a leveling zone in central Northrend intended for level 77+ players. it is a frigid mountainous region that used to be the home of the titans, with Ulduar as their city. Currently, the storm giants live in the Storm Peaks. Players questing in this zone will learn about the lore behind the titans, the Hyldnir, Brann Bronzebeard, and the Sons of Hodir. |r",
 		}),
 	}),
 };

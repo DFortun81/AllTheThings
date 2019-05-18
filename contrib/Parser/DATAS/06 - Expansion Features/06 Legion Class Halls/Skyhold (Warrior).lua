@@ -100,10 +100,10 @@ _.ExpansionFeatures =
 					q(43577),	-- Capturing the Gateway
 					q(44221),	-- Champion Armaments
 					q(42616),	-- Champion: Dvalen Ironrune
-					qh( 45873),	-- Champion: Eitrigg
+					qh(45873),	-- Champion: Eitrigg
 					q(42606),	-- Champion: Finna Bjornsdottir
 					q(42619),	-- Champion: Hodir
-					qa( 45876),	-- Champion: Lord Darius Crowley
+					qa(45876),	-- Champion: Lord Darius Crowley
 					q(42605),	-- Champion: Ragnvald Drakeborn
 					q(42614),	-- Champion: Svergan Stormcloak
 					q(42618),	-- Champion: Thorim
@@ -143,8 +143,8 @@ _.ExpansionFeatures =
 					q(44889),	-- Resource Management
 					q(46267),	-- Return of the Battlelord
 					q(44917),	-- Return to Karazhan: The Tower of Power
-					qa( 42815),	-- Return to the Broken Shore
-					qh( 38904),	-- Return to the Broken Shore
+					qa(42815),	-- Return to the Broken Shore
+					qh(38904),	-- Return to the Broken Shore
 					q(42651),	-- Svergan's Promise
 					q(46173),	-- Tactical Planning
 					q(44263),	-- The Arcway
@@ -187,6 +187,67 @@ _.ExpansionFeatures =
 					}),
 					q(43090, {	-- Ulduar's Oath
 						i(139688),	-- Battlelord's Bracers
+					}),
+					--Followers Sort later
+					q(42616, {	-- Champion: Dvalen Ironrune
+						["qg"] = 112766,	-- Dvalen Ironrune
+						["groups"] = {
+							follower(714),	-- Dvalen Ironrune
+						},
+					}),
+					q(42606, {	-- Champion: Finna Bjornsdottir
+						["qg"] = 107985,	-- Finna Bjornsdottir
+						["groups"] = {
+							follower(709),	-- Finna Bjornsdottir
+						},
+					}),
+					q(42619, {	-- Champion: Hodir
+						["qg"] = 113583,	-- Hodir
+						["groups"] = {
+							follower(715),	-- Hodir
+						},
+					}),
+					q(42204, {	-- Jorhuttam
+						["qg"] = 106271,	-- Jarum Skymane
+						["groups"] = {
+							follower(711),	-- Hymdall
+						},
+					}),
+					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
+						--["qg"] = ,	-- Autoaccept while on the chain
+						["groups"] = {
+							follower(712),	-- King Ymiron
+						},
+					}),
+					qa(45876, {	-- Champion: Lord Darius Crowley
+						["qg"] = 117480,	-- Lord Darius Crowley
+						["groups"] = {
+							follower(989),	-- Lord Darius Crowley / Eitrigg
+						},
+					}),
+					qh(45873, {	-- Champion: Eitrigg
+						["qg"] = 117479,	-- Eitrigg
+						["groups"] = {
+							follower(989),	-- Lord Darius Crowley / Eitrigg
+						},
+					}),
+					q(42605, {	-- Champion: Ragnvald Drakeborn
+						["qg"] = 107984,	-- Ragnvald Drakeborn
+						["groups"] = {
+							follower(708),	-- Ragnvald Drakeborn
+						},
+					}),
+					q(42614, {	-- Champion: Svergan Stormcloak
+						["qg"] = 107986,	-- Svergan Stormcloak
+						["groups"] = {
+							follower(710),	-- Svergan Stormcloak
+						},
+					}),
+					q(42618, {	-- Champion: Thorim
+						["qg"] = 112765,	-- Thorim
+						["groups"] = {
+							follower(713),	-- Thorim
+						},
 					}),
 				}),
 				n(-2, {	--  Vendors

@@ -240,6 +240,9 @@ _.WorldDrops =
 					i(160125),	-- Direbone Frill Stompers
 				}),
 			}),
+			n(-385, {	-- Finger
+				i(160136),	-- Golden City Signet
+			}),
 		},
 		["tierID"] = 8,
 	}

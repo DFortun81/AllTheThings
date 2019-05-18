@@ -4,19 +4,10 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(762, { 	-- Darkheart Thicket
-		["lvl"] = 98,
 		["mapID"] = 733,
-		["groups"] = {
-			n(-17, {	-- Quests
-				o(248534, {	-- Tears of Elune
-					q(40890, {	-- The Tears of Elune
-						i(130001),	-- Shaladrassil Cuirass
-						i(129993),	-- Shaladrassil Tunic
-						i(129985),	-- Shaladrassil Vestments
-						i(130012),	-- Shaladrassil Chestguard
-					}),
-				}),
-			}),
+		["coord"] = { 59.0, 31.3, 641 },
+		["lvl"] = 98,
+		["g"] = {
 			d(1, {	-- Normal
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
@@ -85,7 +76,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 						i(134487),	-- Arch-Druid's Tainted Seal
@@ -155,7 +146,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 						i(134487),	-- Arch-Druid's Tainted Seal

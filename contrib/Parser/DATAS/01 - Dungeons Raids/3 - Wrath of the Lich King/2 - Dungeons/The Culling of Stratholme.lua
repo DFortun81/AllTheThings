@@ -7,6 +7,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["mapID"] = 130,
 		["maps"] = { 131 },
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 56.9, 82.4, 75 },	-- actual dungeon entrance
+		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				qg(26527, q(13149, {	-- Dispelling Illusions
@@ -206,7 +210,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37105),	-- Treads of Altered History
 						i(37685),	-- Mobius Band
 					})),
-					n( 32273, {	-- Infinite Corruptor
+					n(32273, {	-- Infinite Corruptor
 						{	-- The Culling of Time
 							["achievementID"] = 1817,	-- The Culling of Time
 						},

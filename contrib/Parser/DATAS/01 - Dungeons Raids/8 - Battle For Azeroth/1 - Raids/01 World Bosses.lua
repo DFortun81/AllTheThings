@@ -4,19 +4,17 @@
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
-		["lvl"] = 120,
 		["modID"] = 14,
-		["groups"] = {
-			e(2199, {	-- Azurethos, The Winged Typhoon [QID]
+		["lvl"] = 120,
+		["g"] = {
+			e(2199, {	-- Azurethos, The Winged Typhoon
 				["questID"] = 52163,	-- The Matriarch (WQ)
 				-- Note!! Kill ID: 52997
 				-- Note!! WQ ID: 52163
 				["isRaid"] = true,
 				["maps"] = { 895 },	-- Tiragarde Sound
-				["crs"] = {
-					136385,	-- Azurethos, The Winged Typhoon
-				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["crs"] = { 136385 },	-- Azurethos, The Winged Typhoon
+				["g"] = bubbleDown({["modID"] = 3}, {
 					sz(12587, 6),	--  Azurethos Criteria
 					i(161356),	-- Feathered Galeforce Crest
 					i(161352),	-- Chestguard of Dire Winds
@@ -31,23 +29,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161378),	-- Plume of the Seaborne Avian
 				}),
 			}),
-			e(2213, {	-- Doom's Howl [Warfront] [QID]
+			e(2213, {	-- Doom's Howl [Warfront]
 				["questID"] = 52847,	-- Doom's Howl (WQ)
 				-- Note!! Kill ID: 53002
 				-- Note!! WQ ID: 52847,	-- Doom's Howl
-				["races"] = ALLIANCE_ONLY,
 				["isRaid"] = true,
-				["coord"] = { 35.55, 38.91, 14 },
-				["maps"] = { 
-					14,	-- Arathi Highlands
-				},
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 37.8, 40.2, 14 },
+				["maps"] = { 14 },	-- Arathi Highlands
 				["crs"] = {
 					138122,	-- Doom's Howl
 					--143598,	-- Doom's Howl Engineer
 					--143597,	-- Doom's Howl Dreadshield
 					--143599,	-- Doom's Howl Warcaster
 				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
 					i(163828),	-- Toy Siege Tower
 					i(161464),	-- Alliance Bowman's Coif
@@ -63,7 +59,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161474),	-- Lion's Strength
 				}),
 			}),
-			e(2210, {	-- Dunegorger Kraulok [QID]
+			e(2210, {	-- Dunegorger Kraulok
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
 				["coord"] = { 44.3, 55.5, 864 },
@@ -72,17 +68,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					138794,	-- Dunegorger Kraulok
 					139614,	-- Ravenous Ranishu
 				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
-					{
-						["questID"] = 53000,	-- Kraulok looted
+				["g"] = bubbleDown({["modID"] = 3}, {
+					q(53000, {	-- Kraulok looted
 						["title"] = "Kraulok looted",
 						["isWeekly"] = true,
-					},
-					{
-						["questID"] = 52265,	-- Kraulok Bonusroll used
-						["title"] = "Kraulok Bonusroll used",
+					}),
+					q(52265, {	-- Kraulok bonus roll used
+						["title"] = "Kraulok bonus roll used",
 						["isWeekly"] = true,
-					},
+					}),
 					sz(12587, 5),	--  Dunegorger Kraulok Criteria
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
@@ -95,16 +89,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161419),	-- Kraulok's Claw
 				}),
 			}),
-			e(2197, {	-- Hailstone Construct [QID]
+			e(2197, {	-- Hailstone Construct
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
 				-- Note!! WQ ID: 52157,	-- A Chilling Encounter
 				-- Note!! Kill ID: 52999
 				["isRaid"] = true,
 				["maps"] = { 896 },	-- Drustvar
-				["crs"] = {
-					140252,	-- Hailstone Construct
-				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["crs"] = { 140252 },	-- Hailstone Construct
+				["g"] = bubbleDown({["modID"] = 3}, {
 					sz(12587, 2),	--  Hailstone Criteria
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
@@ -119,107 +111,51 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161381),	-- Permafrost-Encrusted Heart
 				}),
 			}),
-			{	-- Ivus the Decayed [Alliance Only]
-				["encounterID"] = 2345,	-- Ivus the Decayed [Alliance Only]
+			e(2345, {	-- Ivus the Decayed [Alliance Only]
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				-- Note!! Kill ID: 54862
-				["races"] = ALLIANCE_ONLY,
 				["isRaid"] = true,
-				["maps"] = {
-					62,	-- Darkshore
-				},
+				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, 62 },
-				["crs"] = {
-					148295,	-- Ivus the Decayed
-				},
+				["maps"] = { 62 },	-- Darkshore
+				["crs"] = { 148295 },	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
-					{	-- Petrified Ironbark Crown
-						["itemID"] = 166695,	-- Petrified Ironbark Crown
-					},
-					{	-- Warring Ancient's Mask
-						["itemID"] = 166687,	-- Warring Ancient's Mask
-					},
-					{	-- Forest Protector's Shoulderguards
-						["itemID"] = 166691,	-- Forest Protector's Shoulderguards
-					},
-					{	-- Garments of the Forest Lord
-						["itemID"] = 166683,	-- Garments of the Forest Lord
-					},
-					{	-- Gnarled Bough Gauntlets
-						["itemID"] = 166694,	-- Gnarled Bough Gauntlets
-					},
-					{	-- Ivus' Tanglemoss Waistcord
-						["itemID"] = 166686,	-- Ivus' Tanglemoss Waistcord
-					},
-					{	-- Protector's Tangleroot Belt
-						["itemID"] = 166690,	-- Protector's Tangleroot Belt
-					},
-					{	-- Stoneroot Stompers
-						["itemID"] = 166698,	-- Stoneroot Stompers
-					},
-					{	-- Ancient Knot of Wisdom
-						["itemID"] = 161417,	-- Ancient Knot of Wisdom
-					},
-					{	-- Forest Lord's Razorleaf
-						["itemID"] = 161415,	-- Forest Lord's Razorleaf
-					},
-					{	-- Knot of Ancient Fury
-						["itemID"] = 161413,	-- Knot of Ancient Fury
-					},
+					i(166695),	-- Petrified Ironbark Crown
+					i(166687),	-- Warring Ancient's Mask
+					i(166691),	-- Forest Protector's Shoulderguards
+					i(166683),	-- Garments of the Forest Lord
+					i(166694),	-- Gnarled Bough Gauntlets
+					i(166686),	-- Ivus' Tanglemoss Waistcord
+					i(166690),	-- Protector's Tangleroot Belt
+					i(166698),	-- Stoneroot Stompers
+					i(161417),	-- Ancient Knot of Wisdom
+					i(161415),	-- Forest Lord's Razorleaf
+					i(161413),	-- Knot of Ancient Fury
 				}),
-			},
-			{	-- Ivus the Forest Lord [Horde Only]
-				["encounterID"] = 2329,	-- Ivus the Forest Lord [Horde Only]
+			}),
+			e(2329, {	-- Ivus the Forest Lord [Horde Only]
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				-- Note!! Kill ID: 54861
-				["races"] = HORDE_ONLY,
 				["isRaid"] = true,
-				["maps"] = {
-					62,	-- Darkshore
-				},
-				["coords"] = {
-					{ 41.47, 35.97, 62 },
-				},
-				["crs"] = {
-					144946,	-- Ivus the Forest Lord
-				},
+				["races"] = HORDE_ONLY,
+				["coord"] = { 41.47, 35.97, 62 },
+				["maps"] = { 62 },	-- Darkshore
+				["crs"] = { 144946 },	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
-					{	-- Petrified Ironbark Crown
-						["itemID"] = 166696,	-- Petrified Ironbark Crown
-					},
-					{	-- Warring Ancient's Crown
-						["itemID"] = 166688,	-- Warring Ancient's Crown
-					},
-					{	-- Forest Protector's Shoulderguards
-						["itemID"] = 166692,	-- Forest Protector's Shoulderguards
-					},
-					{	-- Garments of the Forest Lord
-						["itemID"] = 166684,	-- Garments of the Forest Lord
-					},
-					{	-- Gnarled Bough Gauntlets
-						["itemID"] = 166693,	-- Gnarled Bough Gauntlets
-					},
-					{	-- Ivus' Tanglemoss Waistcord
-						["itemID"] = 166685,	-- Ivus' Tanglemoss Waistcord
-					},
-					{	-- Protector's Tangleroot Belt
-						["itemID"] = 166689,	-- Protector's Tangleroot Belt
-					},
-					{	-- Stoneroot Stompers
-						["itemID"] = 166697,	-- Stoneroot Stompers
-					},
-					{	-- Ancient Knot of Wisdom
-						["itemID"] = 166793,	-- Ancient Knot of Wisdom
-					},
-					{	-- Forest Lord's Razorleaf
-						["itemID"] = 166794,	-- Forest Lord's Razorleaf
-					},
-					{	-- Knot of Ancient Fury
-						["itemID"] = 166795,	-- Knot of Ancient Fury
-					},
+					i(166696),	-- Petrified Ironbark Crown
+					i(166688),	-- Warring Ancient's Crown
+					i(166692),	-- Forest Protector's Shoulderguards
+					i(166684),	-- Garments of the Forest Lord
+					i(166693),	-- Gnarled Bough Gauntlets
+					i(166685),	-- Ivus' Tanglemoss Waistcord
+					i(166689),	-- Protector's Tangleroot Belt
+					i(166697),	-- Stoneroot Stompers
+					i(166793),	-- Ancient Knot of Wisdom
+					i(166794),	-- Forest Lord's Razorleaf
+					i(166795),	-- Knot of Ancient Fury
 				}),
-			},
-			e(2141, {	-- Ji'arak [QID]
+			}),
+			e(2141, {	-- Ji'arak
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				-- Note!! Kill ID: 52998
 				-- Note!! WQ ID: 52169,	-- The Matriarch
@@ -229,7 +165,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					132253,	-- Ji'arak
 					132653,	-- Ji'arak Broodling
 				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["g"] = bubbleDown({["modID"] = 3}, {
 					sz(12587, 4),	--  Ji'arak Criteria
 					i(161401),	-- Matriarch's Shadowveil
 					i(164384),	-- Windswept Dinorider's Cape
@@ -247,11 +183,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				-- Note!! Kill ID: 52996
 				-- Note!! WQ ID: 52181,	-- Smoke and Shadow
 				["isRaid"] = true,
+				["coord"] = { 35.6, 33.6, 863 },
 				["maps"] = { 863 },	-- Nazmir
-				["crs"] = {
-					132701,	-- T'zane <Tehe Soul Terror>
-				},
-				["groups"] =  bubbleDown({["modID"] = 3}, {
+				["crs"] = { 132701 },	-- T'zane <Tehe Soul Terror>
+				["g"] =  bubbleDown({["modID"] = 3}, {
 					sz(12587, 3),	--  Tzane Criteria
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
@@ -266,23 +201,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161411),	-- T'zane's Barkspines
 				}),
 			}),
-			e(2212, {	-- The Lion's Roar [Warfront] [QID]
+			e(2212, {	-- The Lion's Roar [Warfront]
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				-- Note!! Kill ID: 53001
 				-- Note!! WQ ID: 52848,	-- The Lion's Roar
-				["races"] = HORDE_ONLY,
 				["isRaid"] = true,
-				["maps"] = { 
-					14,	-- Arathi Highlands
-				}, 
+				["races"] = HORDE_ONLY,
 				["coord"] = { 35.55, 38.91, 14 },
+				["maps"] = { 14 },	-- Arathi Highlands
 				["crs"] = {
 					137374,	-- The Lion's Roar
 					--143600,	-- Lion's Engineer
 					--143601,	-- Lion's Shieldbearer
 					--143602,	-- Lion's Warcaster
 				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
 					i(161455),	-- Battlemage's Collar
 					i(161453),	-- Warscout's Horned Helm
@@ -297,16 +230,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161462),	-- Doom's Wake
 				}),
 			}),
-			e(2198, {	-- Warbringer Yenajz [QID]
+			e(2198, {	-- Warbringer Yenajz
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				-- Note!! Kill ID: 52995
 				-- Note!! WQ ID: 52166,	-- The Faceless Herald
 				["isRaid"] = true,
+				["coord"] = { 83.2, 49.6, 942 },
 				["maps"] = { 942 },	-- Stormsong Valley
-				["crs"] = {
-					140163,	-- Warbringeer Yenajz
-				},
-				["groups"] = bubbleDown({["modID"] = 3}, {
+				["crs"] = { 140163 },	-- Warbringeer Yenajz
+				["g"] = bubbleDown({["modID"] = 3}, {
 					sz(12587, 1),	--  Warbringer Yenajz Criteria
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw

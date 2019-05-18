@@ -14,55 +14,55 @@ _.Zones =
 						q(38578),	-- A Message of Terrible Import
 						q(40235),	-- Abrogator Arbitrator
 						q(38462),	-- Breaching the Barrier
-						qa( 39313),	-- Bring the Reinforcements
-						qh( 39315),	-- Bring the Reinforcements
-						qh( 38001),	-- Commander in the Field!
-						qa( 38446),	-- Commander in the Field!
+						qa(39313),	-- Bring the Reinforcements
+						qh(39315),	-- Bring the Reinforcements
+						qh(38001),	-- Commander in the Field!
+						qa(38446),	-- Commander in the Field!
 						q(38223),	-- Dark Ascension
 						q(38270),	-- Finding the Killer
 						q(38271),	-- Following the Bloody Path
-						qa( 38267),	-- Friends Above
-						qh( 38269),	-- Friends Above
-						qa( 37687),	-- Garrison Campaign: In the Shadows
-						qh( 37688),	-- Garrison Campaign: In the Shadows
-						qa( 38421),	-- Garrison Campaign: Onslaught at Auchindoun
-						qh( 38453),	-- Garrison Campaign: The Bane of the Bleeding Hollow
-						qa( 38560),	-- Garrison Campaign: The Bane of the Bleeding Hollow
-						qa( 38561),	-- Garrison Campaign: The Warlock
-						qh( 38458),	-- Garrison Campaign: The Warlock
+						qa(38267),	-- Friends Above
+						qh(38269),	-- Friends Above
+						qa(37687),	-- Garrison Campaign: In the Shadows
+						qh(37688),	-- Garrison Campaign: In the Shadows
+						qa(38421),	-- Garrison Campaign: Onslaught at Auchindoun
+						qh(38453),	-- Garrison Campaign: The Bane of the Bleeding Hollow
+						qa(38560),	-- Garrison Campaign: The Bane of the Bleeding Hollow
+						qa(38561),	-- Garrison Campaign: The Warlock
+						qh(38458),	-- Garrison Campaign: The Warlock
 						q(38213),	-- Get a Clue
-						qh( 39604),	-- I Sunk Your Battleship
-						qa( 39601),	-- I Sunk Your Battleship
+						qh(39604),	-- I Sunk Your Battleship
+						qa(39601),	-- I Sunk Your Battleship
 						q(39129),	-- Ill Tempered
-						qh( 37934),	-- In, Through, and Beyond!
-						qa( 38444),	-- In, Through, and Beyond!
-						qh( 38599),	-- Infrastructure Improvements
-						qa( 37839),	-- Light Be With You
+						qh(37934),	-- In, Through, and Beyond!
+						qa(38444),	-- In, Through, and Beyond!
+						qh(38599),	-- Infrastructure Improvements
+						qa(37839),	-- Light Be With You
 						q(39176),	-- Mastery Of Taladite
-						qh( 37890),	-- Obstacle Course
-						qa( 38436),	-- Obstacle Course
+						qh(37890),	-- Obstacle Course
+						qa(38436),	-- Obstacle Course
 						q(39395),	-- Oronok's Offer
 						q(39177),	-- Ruined Construct
-						qa( 38603),	-- Setting the Signal
-						qh( 39423),	-- Shipyard Report
-						qa( 39422),	-- Shipyard Report
+						qa(38603),	-- Setting the Signal
+						qh(39423),	-- Shipyard Report
+						qa(39422),	-- Shipyard Report
 						q(38273),	-- Spirits of the Bleeding Hollow
 						q(34366),	-- Tanaan 01: Front of the Portal
-						qa( 38445),	-- The Assault Base
-						qh( 37935),	-- The Assault Base					
-						qa( 38581),	-- The Battle for the West
-						qh( 38577),	-- The Battle for the West
+						qa(38445),	-- The Assault Base
+						qh(37935),	-- The Assault Base					
+						qa(38581),	-- The Battle for the West
+						qh(38577),	-- The Battle for the West
 						q(38272),	-- The Bleeding Hollow
-						qh( 38463),	-- The Cipher of Damnation
-						qa( 39394),	-- The Cipher of Damnation
+						qh(38463),	-- The Cipher of Damnation
+						qa(39394),	-- The Cipher of Damnation
 						q(38274),	-- The Eye of Kilrogg
-						qa( 38435),	-- The Invasion of Tanaan
-						qh( 37889),	-- The Invasion of Tanaan
-						qh( 35058),	-- The Mysterious Flask
+						qa(38435),	-- The Invasion of Tanaan
+						qh(37889),	-- The Invasion of Tanaan
+						qh(35058),	-- The Mysterious Flask
 						q(39432),	-- Unknowable Power
 						q(40237),	-- Work Work Stoppage
-						qh( 38989),	-- Your Orders, General?
-						qa( 38996),	-- Your Orders, General?	
+						qh(38989),	-- Your Orders, General?
+						qa(38996),	-- Your Orders, General?	
 	--]]
 						{	-- A Little Wetwork
 							["questID"] = 39510,

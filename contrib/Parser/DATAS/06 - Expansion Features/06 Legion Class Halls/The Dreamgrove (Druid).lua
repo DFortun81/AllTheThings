@@ -218,6 +218,61 @@ _.ExpansionFeatures =
 						sp(220679, { i(139554) }),	-- Acorn of the Endless
 					}),
 					--]]
+					--Followers Sort later
+					q(42047, {	-- Champion: Hamuul Runetotem
+						["qg"] = 107025,	-- Archdruid Hamuul Runetotem
+						["groups"] = {
+							follower(643),	-- Archdruid Hamuul Runetotem
+						},
+					}),
+					q(43368, {	-- Champion: Brightwing
+						["qg"] = 98008,		-- Brightwing
+						["groups"] = {
+							follower(645),	-- Brightwing
+						},
+					}),
+					q(42038, {	-- Champion: Broll Bearmantle
+						["qg"] = 106091,	-- Broll Bearmantle
+						["groups"] = {
+							follower(641),	-- Broll Bearmantle
+						},
+					}),
+					q(42056, {	-- Champion: Remulos
+						["qg"] = 103832,	-- Keeper Remulos
+						["groups"] = {
+							follower(646),	-- Keeper Remulos
+						},
+					}),
+					q(42048, {	-- Champion: Mylune
+						["qg"] = 107026,	-- Mylune
+						["groups"] = {
+							follower(644),	-- Mylune
+						},
+					}),
+					q(42096, {	-- Champion: Naralex
+						["qg"] = 103778,	-- Naralex
+						["groups"] = {
+							follower(639),	-- Naralex
+						},
+					}),
+					q(42039, {	-- Champion: Sylendra Gladesong
+						["qg"] = 106093,	-- Sylendra Gladesong
+						["groups"] = {
+							follower(642),	-- Sylendra Gladesong
+						},
+					}),
+					q(46044, {	-- Champion: Thisalee Crow
+						["qg"] = 106299,	-- Thisalee Crow
+						["groups"] = {
+							follower(999),	-- Thisalee Crow
+						},
+					}),
+					q(40650, {	-- Champion: Zen'tabra
+						["qg"] = 98013,		-- Zen'tabra
+						["groups"] = {
+							follower(640),	-- Zen'tabra
+						},
+					}),
 				}),
 				--[[
 				n(98000, {	-- Scouting Map

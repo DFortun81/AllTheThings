@@ -878,7 +878,7 @@ _.Zones =
 						dr(01.0, i(7369)),	-- Elder's Robe					
 					}), 
 				}),
-				n( -2,  {	-- Vendors
+				n(-2,  {	-- Vendors
 					a(n(12040, {	-- Brannik Ironbelly <Armorsmith>
 						i(12258),	-- Serpent Clasp Belt
 						i(12257),	-- Heavy Notched Belt
@@ -926,7 +926,7 @@ _.Zones =
 							un(40, qh(7850, {	-- Dark Vessels
 								un(2, i(19118)),	-- Nature's Breath
 							})),
-							un(40, q( 1446, {	-- Jammal'an the Prophet
+							un(40, q(1446, {	-- Jammal'an the Prophet
 								un(2, i(11124)),	-- Helm of Exile
 								un(2, i(11123)),	-- Rainstrider Leggings
 							})),
@@ -958,7 +958,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(43, n(7996, {	-- Qiaga the Keeper
 								un(2, i(9241, {  -- Sacred Mallet
 									i(9240),	-- Mallet of Zul'Farrak

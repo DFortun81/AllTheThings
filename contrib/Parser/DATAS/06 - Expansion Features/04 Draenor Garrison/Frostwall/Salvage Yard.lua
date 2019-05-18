@@ -15,6 +15,8 @@ _.ExpansionFeatures =
 					}),
 					un(2, i(114120, {	-- Big Crate of Salvage
 					-- Only adding items where Salvage Crates was the only source
+						un(7, i(36533)),	-- Adorned Broadsword
+						un(7, i(36603)),	-- Archaic Longspear
 						un(7, i(25285)),	-- Bloodwood Wand
 						un(7, i(55631)),	-- Frayfeather Belt
 						un(7, i(55568)),	-- Frayfeather Bracers
@@ -33,6 +35,7 @@ _.ExpansionFeatures =
 						un(7, i(55730)),	-- Galardell Sandals
 						un(7, i(55766)),	-- Galardell Shoulderpads
 						un(7, i(55712)),	-- Galardell Wristwraps
+						un(7, i(36631)),	-- Horned Crossbow
 						un(7, i(25173)),	-- Master's Bo Staff
 						un(7, i(55640)),	-- Nighthaven Bindings
 						un(7, i(55658)),	-- Nighthaven Boots
@@ -42,7 +45,13 @@ _.ExpansionFeatures =
 						un(7, i(55649)),	-- Nighthaven Jerkin
 						un(7, i(55694)),	-- Nighthaven Shoulders
 						un(7, i(55703)),	-- Nighthaven Waistband
+						un(7, i(36701)),	-- Pine Needle Staff
 						un(7, i(36659)),	-- Shivery Wand
+						un(7, i(55316)),	-- Sorrowmurk Cloak
+						un(7, i(55379)),	-- Sorrowmurk Crystal
+						un(7, i(55370)),	-- Sorrowmurk Scepter
+						un(7, i(55442)),	-- Sorrowmurk Spellblade
+						un(7, i(55487)),	-- Sorrowmurk Wand
 						un(7, i(55505)),	-- Steelgrill Breastplate
 						un(7, i(55523)),	-- Steelgrill Gauntlets
 						un(7, i(55559)),	-- Steelgrill Girdle
@@ -52,6 +61,8 @@ _.ExpansionFeatures =
 						un(7, i(55514)),	-- Steelgrill Sabatons
 						un(7, i(55496)),	-- Steelgrill Vambraces
 						un(7, i(55433)),	-- Steelgrill Shield
+						un(7, i(36645)),	-- Tuskarr Boomstick
+						un(7, i(36617)),	-- Yielding Bow
 					})),
 					i(140590, {
 						n(-140, { 	-- Communal

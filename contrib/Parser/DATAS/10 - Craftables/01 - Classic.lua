@@ -1202,200 +1202,231 @@ _.Craftables =
 				i(15138),	-- Onyxia Scale Cloak
 			}),
 			n(-44, { 	-- Leather
-				un(8, i(19688)),	-- Blood Tiger Breastplate
-				un(8, i(19689)),	-- Blood Tiger Shoulders
-				un(8, i(15074)),	-- Chimeric Gloves
-				un(8, i(6468)),		-- Deviate Scale Belt
-				un(8, i(6467)),		-- Deviate Scale Gloves
-				un(8, i(18504)),	-- Girdle of Insight
-				un(8, i(15059)),	-- Living Breastplate
-				un(8, i(15060)),	-- Living Leggings
-				un(8, i(18506)),	-- Mongoose Boots
-				un(8, i(22663)),	-- Polar Bracers
-				un(8, i(22662)),	-- Polar Gloves
-				un(8, i(22661)),	-- Polar Tunic
-				un(8, i(19687)),	-- Primal Batskin Bracers
-				un(8, i(19686)),	-- Primal Batskin Gloves
-				un(8, i(19685)),	-- Primal Batskin Jerkin
-				un(8, i(15056)),	-- Stormshroud Armor
-				un(8, i(21278)),	-- Stormshroud Gloves
-				un(8, i(15058)),	-- Stormshroud Shoulders
-				un(8, i(8213)),		-- Wild Leather Boots
-				un(8, i(8214)),		-- Wild Leather Helmet
-				un(8, i(8212)),		-- Wild Leather Leggings
-				un(8, i(8210)),		-- Wild Leather Shoulders
-				un(8, i(8211)),		-- Wild Leather Vest
-				un(8, i(8345)),		-- Wolfshead Helm
-				i(4264),	-- Barbaric Belt
-				i(18948),	-- Barbaric Bracers
-				i(4254),	-- Barbaric Gloves
-				i(5739),	-- Barbaric Harness
-				i(5963),	-- Barbaric Leggings
-				i(5964),	-- Barbaric Shoulders
-				i(8201),	-- Big Voodoo Mask
-				i(8202),	-- Big Voodoo Pants
-				i(8200),	-- Big Voodoo Robe
-				i(20575),	-- Black Whelp Tunic
-				i(22761),	-- Bramblewood Belt
-				i(22760),	-- Bramblewood Boots
-				i(22759),	-- Bramblewood Helm
-				i(15073),	-- Chimeric Boots
-				i(15072),	-- Chimeric Leggings
-				i(15075),	-- Chimeric Vest
-				i(8174),	-- Comfortable Leather Hat
-				i(19162),	-- Corehound Belt
-				i(16982),	-- Corehound Boots
-				i(4249),	-- Dark Leather Belt
-				i(2315),	-- Dark Leather Boots
-				i(4248),	-- Dark Leather Gloves
-				i(5961),	-- Dark Leather Pants
-				i(4252),	-- Dark Leather Shoulders
-				i(2317),	-- Dark Leather Tunic
-				i(19052),	-- Dawn Treaders
-				i(15063),	-- Devilsaur Gauntlets
-				i(15062),	-- Devilsaur Leggings
-				i(7387),	-- Dusky Belt
-				i(7390),	-- Dusky Boots
-				i(7378),	-- Dusky Bracers
-				i(7374),	-- Dusky Leather Armor
-				i(7373),	-- Dusky Leather Leggings
-				i(7352),	-- Earthen Leather Shoulders
-				i(2309),	-- Embossed Leather Boots
-				i(4239),	-- Embossed Leather Gloves
-				i(4242),	-- Embossed Leather Pants
-				i(2300),	-- Embossed Leather Vest
-				i(8349),	-- Feathered Breastplate
-				i(4246),	-- Fine Leather Belt
-				i(2307),	-- Fine Leather Boots
-				i(2312),	-- Fine Leather Gloves
-				i(5958),	-- Fine Leather Pants
-				i(4243),	-- Fine Leather Tunic
-				i(15071),	-- Frostsaber Boots
-				i(15070),	-- Frostsaber Gloves
-				i(15069),	-- Frostsaber Leggings
-				i(15068),	-- Frostsaber Tunic
-				un(29,i(17721)),	-- Gloves of the Greatfather
-				i(8346),	-- Gauntlets of the Sea
-				i(4262),	-- Gem-Studded Leather Belt
-				i(19058),	-- Golden Mantle of the Dawn
-				i(4255),	-- Green Leather Armor
-				i(4257),	-- Green Leather Belt
-				i(4259),	-- Green Leather Bracers
-				i(7375),	-- Green Whelp Armor
-				i(7386),	-- Green Whelp Bracers
-				i(4256),	-- Guardian Armor
-				i(4258),	-- Guardian Belt
-				i(5966),	-- Guardian Gloves
-				i(4260),	-- Guardian Leather Bracers
-				i(5962),	-- Guardian Pants
-				i(7359),	-- Heavy Earthen Gloves
-				i(8348),	-- Helm of Fire
-				i(7349),	-- Herbalist's Gloves
-				i(4250),	-- Hillman's Belt
-				i(4247),	-- Hillman's Leather Gloves
-				i(4244),	-- Hillman's Leather Vest
-				i(4251),	-- Hillman's Shoulders
-				i(15066),	-- Ironfeather Breastplate
-				i(15067),	-- Ironfeather Shoulders
-				i(19149),	-- Lava Belt
-				i(7281),	-- Light Leather Bracers
-				i(7282),	-- Light Leather Pants
-				i(15061),	-- Living Shoulders
-				i(19044),	-- Might of the Timbermaw
-				i(19163),	-- Molten Belt
-				i(16983),	-- Molten Helm
-				i(6709),	-- Moonglow Vest
-				i(5780),	-- Murloc Scale Belt
-				i(5783),	-- Murloc Scale Bracers
-				i(5781),	-- Murloc Scale Breastplate
-				i(8197),	-- Nightscape Boots
-				i(8176),	-- Nightscape Headband
-				i(8193),	-- Nightscape Pants
-				i(8192),	-- Nightscape Shoulders
-				i(8175),	-- Nightscape Tunic
-				i(7285),	-- Nimble Leather Gloves
-				i(7358),	-- Pilferer's Gloves
-				a(i(4456)),	-- Raptor Hide Belt (alliance only)
-				h(i(4455)),	-- Raptor Hide Harness (horde only)
-				i(7284),	-- Red Whelp Gloves
-				i(7280),	-- Rugged Leather Pants
-				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
-				i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
-				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
-				i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
-				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
-				i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
-				i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
-				i(18238),	-- Shadowskin Gloves
-				i(15057),	-- Stormshroud Pants
-				i(7391),	-- Swift Boots
-				i(5782),	-- Thick Murloc Armor
-				i(19049),	-- Timbermaw Brawlers
-				i(2314),	-- Toughened Leather Armor
-				i(4253),	-- Toughened Leather Gloves
-				i(15053),	-- Volcanic Breastplate
-				i(15054),	-- Volcanic Leggings
-				i(15055),	-- Volcanic Shoulders
-				i(15064),	-- Warbear Harness
-				i(15065),	-- Warbear Woolies
-				i(2311),	-- White Leather Jerkin
-				i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-				i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
-				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
-				i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-				i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
-				i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
+				n(-320, {	-- Head
+					i(22759),	-- Bramblewood Helm
+					i(16983),	-- Molten Helm
+					i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
+					i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
+					i(8348),	-- Helm of Fire
+					un(8, i(8345)),		-- Wolfshead Helm
+					un(8, i(8214)),		-- Wild Leather Helmet
+					i(8201),	-- Big Voodoo Mask
+					i(8176),	-- Nightscape Headband
+					i(8174),	-- Comfortable Leather Hat
+				}),
+				n(-321, {	-- Shoulder
+					un(8, i(19689)),	-- Blood Tiger Shoulders
+					un(8, i(15058)),	-- Stormshroud Shoulders
+					i(15055),	-- Volcanic Shoulders
+					i(19058),	-- Golden Mantle of the Dawn
+					i(15061),	-- Living Shoulders
+					i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
+					i(15067),	-- Ironfeather Shoulders
+					un(8, i(8210)),		-- Wild Leather Shoulders
+					i(8192),	-- Nightscape Shoulders
+					i(5964),	-- Barbaric Shoulders
+					i(4252),	-- Dark Leather Shoulders
+					i(7352),	-- Earthen Leather Shoulders
+					i(4251),	-- Hillman's Shoulders
+				}),
+				n(-323, {	-- Chest
+					un(8, i(22661)),	-- Polar Tunic
+					un(8, i(19688)),	-- Blood Tiger Breastplate
+					un(8, i(19685)),	-- Primal Batskin Jerkin
+					un(8, i(15059)),	-- Living Breastplate
+					i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
+					i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
+					i(15066),	-- Ironfeather Breastplate
+					un(8, i(15056)),	-- Stormshroud Armor
+					i(15075),	-- Chimeric Vest
+					i(15053),	-- Volcanic Breastplate
+					i(15064),	-- Warbear Harness
+					i(15068),	-- Frostsaber Tunic
+					i(8349),	-- Feathered Breastplate
+					un(8, i(8211)),		-- Wild Leather Vest
+					i(8200),	-- Big Voodoo Robe
+					i(8175),	-- Nightscape Tunic
+					i(5739),	-- Barbaric Harness
+					i(7375),	-- Green Whelp Armor
+					i(7374),	-- Dusky Leather Armor
+					i(4256),	-- Guardian Armor
+					i(5782),	-- Thick Murloc Armor
+					h(i(4455)),	-- Raptor Hide Harness (Horde only)
+					i(4255),	-- Green Leather Armor
+					i(2314),	-- Toughened Leather Armor
+					i(5781),	-- Murloc Scale Breastplate
+					i(2317),	-- Dark Leather Tunic
+					i(4244),	-- Hillman's Leather Vest
+					i(20575),	-- Black Whelp Tunic
+					i(6709),	-- Moonglow Vest
+					i(4243),	-- Fine Leather Tunic
+					i(2311),	-- White Leather Jerkin
+					i(2300),	-- Embossed Leather Vest
+				}),
+				n(-326, {	-- Wrists
+					un(8, i(22663)),	-- Polar Bracers
+					un(8, i(19687)),	-- Primal Batskin Bracers
+					i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
+					i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
+					i(4260),	-- Guardian Leather Bracers
+					i(7386),	-- Green Whelp Bracers
+					i(5783),	-- Murloc Scale Bracers
+					i(7378),	-- Dusky Bracers
+					i(4259),	-- Green Leather Bracers
+					i(18948),	-- Barbaric Bracers
+					i(7281),	-- Light Leather Bracers
+				}),
+				n(-327, {	-- Hands
+					i(19049),	-- Timbermaw Brawlers
+					un(8, i(22662)),	-- Polar Gloves
+					un(8, i(19686)),	-- Primal Batskin Gloves
+					i(15070),	-- Frostsaber Gloves
+					i(15063),	-- Devilsaur Gauntlets
+					un(8, i(21278)),	-- Stormshroud Gloves
+					i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
+					i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
+					un(8, i(15074)),	-- Chimeric Gloves	
+					i(8346),	-- Gauntlets of the Sea
+					i(18238),	-- Shadowskin Gloves
+					un(29, i(17721)),	-- Gloves of the Greatfather
+					i(5966),	-- Guardian Gloves
+					i(4247),	-- Hillman's Leather Gloves
+					i(7359),	-- Heavy Earthen Gloves
+					i(4254),	-- Barbaric Gloves
+					i(7358),	-- Pilferer's Gloves
+					i(4253),	-- Toughened Leather Gloves
+					i(4248),	-- Dark Leather Gloves
+					i(7285),	-- Nimble Leather Gloves
+					i(7284),	-- Red Whelp Gloves
+					i(7349),	-- Herbalist's Gloves
+					un(8, i(6467)),		-- Deviate Scale Gloves
+					i(2312),	-- Fine Leather Gloves
+					i(4239),	-- Embossed Leather Gloves
+				}),
+				n(-328, {	-- Waist
+					un(8, i(18504)),	-- Girdle of Insight
+						i(22761),	-- Bramblewood Belt
+						i(19163),	-- Molten Belt
+						i(19162),	-- Corehound Belt
+						i(19149),	-- Lava Belt
+						i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
+						i(19044),	-- Might of the Timbermaw
+						i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
+						i(4264),	-- Barbaric Belt
+						i(7387),	-- Dusky Belt
+						i(4262),	-- Gem-Studded Leather Belt
+						i(4258),	-- Guardian Belt
+						a(i(4456)),	-- Raptor Hide Belt (Alliance only)
+						i(4257),	-- Green Leather Belt
+						i(4249),	-- Dark Leather Belt
+						i(4250),	-- Hillman's Belt
+						un(8, i(6468)),		-- Deviate Scale Belt
+						i(5780),	-- Murloc Scale Belt
+						i(4246),	-- Fine Leather Belt
+					}),
+				n(-329, {	-- Legs
+					i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
+					i(15062),	-- Devilsaur Leggings
+					i(15069),	-- Frostsaber Leggings
+					i(15065),	-- Warbear Woolies
+					i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
+					un(8, i(15060)),	-- Living Leggings
+					i(15072),	-- Chimeric Leggings
+					i(15057),	-- Stormshroud Pants
+					i(15054),	-- Volcanic Leggings
+					un(8, i(8212)),		-- Wild Leather Leggings
+					i(8202),	-- Big Voodoo Pants
+					i(8193),	-- Nightscape Pants
+					i(5963),	-- Barbaric Leggings
+					i(7373),	-- Dusky Leather Leggings
+					i(5962),	-- Guardian Pants
+					i(5961),	-- Dark Leather Pants
+					i(5958),	-- Fine Leather Pants
+					i(7282),	-- Light Leather Pants
+					i(4242),	-- Embossed Leather Pants
+					i(7280),	-- Rugged Leather Pants
+				}),
+				n(-330, {	-- Feet
+					i(22760),	-- Bramblewood Boots
+					i(16982),	-- Corehound Boots
+					un(8, i(18506)),	-- Mongoose Boots
+					i(19052),	-- Dawn Treaders
+					i(15073),	-- Chimeric Boots
+					i(15071),	-- Frostsaber Boots
+					un(8, i(8213)),		-- Wild Leather Boots
+					i(8197),	-- Nightscape Boots
+					i(7391),	-- Swift Boots
+					i(7390),	-- Dusky Boots
+					i(2315),	-- Dark Leather Boots
+					i(2307),	-- Fine Leather Boots
+					i(2309),	-- Embossed Leather Boots
+				}),	
 			}),
 			n(-45, {	-- Mail
-				un(1, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
-				un(8, i(15048)),	-- Blue Dragonscale Breastplate
-				un(8, i(15049)),	-- Blue Dragonscale Shoulders
-				un(8, i(19157)),	-- Chromatic Gauntlets
-				un(8, i(8347)),		-- Dragonscale Gauntlets
-				-- Dreamscale Breastplate
-				un(8, i(20380, {
-					["description"] =  "While this recipe is still available, the mats required to craft it are not",
-				})),
-				un(8, i(15078)),	-- Heavy Scorpid Gauntlets
-				un(8, i(15079)),	-- Heavy Scorpid Leggings
-				un(8, i(15081)),	-- Heavy Scorpid Shoulders
-				un(8, i(15076)),	-- Heavy Scorpid Vest
-				un(8, i(22665)),	-- Icy Scale Bracers
-				un(8, i(22664)),	-- Icy Scale Breastplate
-				un(8, i(22666)),	-- Icy Scale Gauntlets
-				un(8, i(15047)),	-- Red Dragonscale Breastplate
-				un(8, i(18508)),	-- Swift Flight Bracers
-				i(16984),	-- Black Dragonscale Boots
-				i(15050),	-- Black Dragonscale Breastplate
-				i(15052),	-- Black Dragonscale Leggings
-				i(15051),	-- Black Dragonscale Shoulders
-				i(20295),	-- Blue Dragonscale Leggings
-				i(8367),	-- Dragonscale Breastplate
-				i(7348),	-- Fletcher's Gloves
-				i(15045),	-- Green Dragonscale Breastplate
-				i(20296),	-- Green Dragonscale Gauntlets
-				i(15046),	-- Green Dragonscale Leggings
-				i(15082),	-- Heavy Scorpid Belt
-				i(15077),	-- Heavy Scorpid Bracers
-				i(15080),	-- Heavy Scorpid Helm
-				i(20476),	-- Sandstalker Bracers
-				i(20478),	-- Sandstalker Breastplate
-				i(20477),	-- Sandstalker Gauntlets
-				i(20481),	-- Spitfire Bracers
-				i(20479),	-- Spitfire Breastplate
-				i(20480),	-- Spitfire Gauntlets
-				i(8209),	-- Tough Scorpid Boots
-				i(8205),	-- Tough Scorpid Bracers
-				i(8203),	-- Tough Scorpid Breastplate
-				i(8204),	-- Tough Scorpid Gloves
-				i(8208),	-- Tough Scorpid Helm
-				i(8206),	-- Tough Scorpid Leggings
-				i(8207),	-- Tough Scorpid Shoulders
-				i(8198),	-- Turtle Scale Bracers
-				i(8189),	-- Turtle Scale Breastplate
-				i(8187),	-- Turtle Scale Gloves
-				i(8191),	-- Turtle Scale Helm
-				i(8185),	-- Turtle Scale Leggings
+				n(-320, {	-- Head
+					i(15080),	-- Heavy Scorpid Helm
+					i(8208),	-- Tough Scorpid Helm
+					i(8191),	-- Turtle Scale Helm
+				}),
+				n(-321, {	-- Shoulder
+					un(8, i(15049)),	-- Blue Dragonscale Shoulders
+					i(15051),	-- Black Dragonscale Shoulders
+					un(8, i(15081)),	-- Heavy Scorpid Shoulders
+					i(8207),	-- Tough Scorpid Shoulders
+				}),
+				n(-323, {	-- Chest
+					un(1, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
+					i(20479),	-- Spitfire Breastplate
+					i(20478),	-- Sandstalker Breastplate
+					un(8, i(20380, {	-- Dreamscale Breastplate
+						["description"] =  "While this recipe is still available, the mats required to craft it are not",
+					})),
+					un(8, i(22664)),	-- Icy Scale Breastplate
+					un(8, i(15047)),	-- Red Dragonscale Breastplate
+					un(8, i(15048)),	-- Blue Dragonscale Breastplate
+					i(15050),	-- Black Dragonscale Breastplate
+					i(15045),	-- Green Dragonscale Breastplate
+					un(8, i(15076)),	-- Heavy Scorpid Vest
+					i(8367),	-- Dragonscale Breastplate
+					i(8203),	-- Tough Scorpid Breastplate
+					i(8189),	-- Turtle Scale Breastplate
+				}),
+				n(-326, {	-- Wrists
+					un(8, i(22665)),	-- Icy Scale Bracers
+					un(8, i(18508)),	-- Swift Flight Bracers
+					i(20481),	-- Spitfire Bracers
+					i(20476),	-- Sandstalker Bracers
+					i(15077),	-- Heavy Scorpid Bracers
+					i(8205),	-- Tough Scorpid Bracers
+					i(8198),	-- Turtle Scale Bracers
+				}),
+				n(-327, {	-- Hands
+					un(8, i(19157)),	-- Chromatic Gauntlets
+					un(8, i(22666)),	-- Icy Scale Gauntlets
+					i(20480),	-- Spitfire Gauntlets
+					i(20477),	-- Sandstalker Gauntlets
+					un(8, i(15078)),	-- Heavy Scorpid Gauntlets
+					i(20296),	-- Green Dragonscale Gauntlets
+					un(8, i(8347)),		-- Dragonscale Gauntlets
+					i(8204),	-- Tough Scorpid Gloves
+					i(8187),	-- Turtle Scale Gloves
+					i(7348),	-- Fletcher's Gloves
+				}),
+				n(-328, {	-- Waist	
+					i(15082),	-- Heavy Scorpid Belt
+				}),
+				n(-329, {	-- Legs
+					i(15052),	-- Black Dragonscale Leggings
+					i(20295),	-- Blue Dragonscale Leggings
+					un(8, i(15079)),	-- Heavy Scorpid Leggings
+					i(15046),	-- Green Dragonscale Leggings
+					i(8206),	-- Tough Scorpid Leggings
+					i(8185),	-- Turtle Scale Leggings
+				}),
+				n(-330, {	-- Feet
+					i(16984),	-- Black Dragonscale Boots
+					i(8209),	-- Tough Scorpid Boots
+				}),
 			}),
 		}),
 		n(-190, { 	-- Tailoring

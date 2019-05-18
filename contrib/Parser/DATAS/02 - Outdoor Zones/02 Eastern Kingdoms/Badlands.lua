@@ -38,16 +38,16 @@ _.Zones =
 				n(-17,  {	-- Quests
 					ach(4900, {	-- Badlands Quests
 						crit(1, { --	Rhea
-							q( 27763, {	-- To Fuselight Proper
+							q(27763, {	-- To Fuselight Proper
 								["qg"] = 46650,	-- Eddie Flofizzle
 								["isBreadcrumb"] = true,	-- for "Easily Swayed"
 								["sourceQuests"] = { 27762 },	-- Fuselight Ho!
 							}),
-							q( 27774, {	-- Easily Swayed
+							q(27774, {	-- Easily Swayed
 								["qg"] = 46652,	-- Dolph Blastus
 								["sourceQuests"] = { 27763 },	-- To Fuselight Proper
 							}),
-							q( 27764, {	-- A Strange Request
+							q(27764, {	-- A Strange Request
 								["groups"] = {
 									i(63159),	-- Parcel Bearer's Breastplate
 									i(63158),	-- Boots of Delivery
@@ -58,19 +58,19 @@ _.Zones =
 								["qg"] = 46652,	-- 
 								["sourceQuests"] = { 27774 },	-- Easily Swayed
 							}),
-							q( 27765, {	-- First Sample: Wild Eggs
+							q(27765, {	-- First Sample: Wild Eggs
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27764 },	-- A Strange Request
 							}),
-							q( 27766, {	-- Second Sample: Whelps
+							q(27766, {	-- Second Sample: Whelps
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27764 },	-- A Strange Request
 							}),
-							q( 27770, {	-- Lifting the Veil
+							q(27770, {	-- Lifting the Veil
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27765, 27766 },	-- First Sample: Wild Eggs & Second Sample: Whelps
 							}),
-							q( 27771, {	-- Third Sample: Implanted Eggs
+							q(27771, {	-- Third Sample: Implanted Eggs
 								["groups"] = {
 									i(63163),	-- Strong Arm Mace
 									i(63162),	-- Coercive Pauldrons
@@ -80,7 +80,7 @@ _.Zones =
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27770 },	-- Lifting the Veil
 							}),
-							q( 27769, {	-- Rhea Revealed
+							q(27769, {	-- Rhea Revealed
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
 							}),
@@ -90,11 +90,11 @@ _.Zones =
 						but the quest chain must be completed in this order.
 						--]]
 						crit(3, { --	The Titan's Knowledge (A/H)
-							q( 27772, {	-- The Venerable Doctor Blam
+							q(27772, {	-- The Venerable Doctor Blam
 								["qg"] = 46655,	-- Rheastrasza
 								["sourceQuests"] = { 27769 },	-- Rhea Revealed
 							}),
-							q( 27789, {	-- Troggish Troubles
+							q(27789, {	-- Troggish Troubles
 								["groups"] = {
 									i(63182),	-- Anti-Trogg Shield
 									i(63181),	-- Shrug of Disappointment
@@ -238,10 +238,10 @@ _.Zones =
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27832 },	-- The Hidden Clutch
 							}),
-							q( 27930, {	-- Devastation
+							q(27930, {	-- Devastation
 								["sourceQuests"] = { 27858 },	-- Rheastrasza's Gift
 							}),
-							q( 27859, {	-- The Egg Lives On
+							q(27859, {	-- The Egg Lives On
 								["groups"] = {
 									i(63194),	-- Rhea's Last Egg
 								},
@@ -287,28 +287,28 @@ _.Zones =
 								["qg"] = 46654,	-- Rhea
 								["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 							}),
-							q( 27930, {	-- Devastation
+							q(27930, {	-- Devastation
 								["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
 							}),
-							q( 27859, {	-- The Egg Lives On
+							q(27859, {	-- The Egg Lives On
 								["qg"] = 46664,	-- Dr. Hieronymus Blam
 								["sourceQuests"] = { 27930 },	-- Devastation
 							}),
 						})),
 						crit(4, { --	The Day that Deathwing Came
-							q( 27927, {	-- Down to the Scar
+							q(27927, {	-- Down to the Scar
 								["qgs"] = { 46660, 46930 },	-- Aidan Summerwind & Veronica Dolen
 								["isBreadcrumb"] = true,	-- for "The Day that Deathwing Came"
 							}),
-							q( 27713, {	-- The Day that Deathwing Came
+							q(27713, {	-- The Day that Deathwing Came
 								["qg"] = 2785,	-- Theldurin the Lost
 								["sourceQuests"] = { 27927 },	-- Down to the Scar
 							}),
-							q( 27714, {	-- The Day that Deathwing Came: The Real Story
+							q(27714, {	-- The Day that Deathwing Came: The Real Story
 								["qg"] = 2920,	-- Lucien Tosselwrench
 								["sourceQuests"] = { 27713 },	-- The Day that Deathwing Came
 							}),
-							q( 27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
+							q(27715, {	-- The Day that Deathwing Came: What Really Happened (awarded "The Day that Deathwing Came" criteria + overall "Badlands Quests" achievement)
 								["groups"] = {
 									i(63193),	-- Theldurin's Fist
 									i(63192),  -- Tosselwrench's Shrinker
@@ -324,7 +324,7 @@ _.Zones =
 					}),
 					n(-168, {	-- Other Quests
 						sz(765, 1, {	-- Lethlor Ravine
-							q( 27775, {	-- When the Going Gets Tough, Cheat
+							q(27775, {	-- When the Going Gets Tough, Cheat
 								["groups"] = {
 									i(63155),   -- Goat Horn Band
 									i(63154),	-- Fuselight Chainmail
@@ -334,7 +334,7 @@ _.Zones =
 								},
 								["qg"] = 46653,	-- Garyanne Fleezlebop
 							}),
-							q( 27776, {	-- It's Goat Time, Baby
+							q(27776, {	-- It's Goat Time, Baby
 								["qg"] = 46653,	-- Garyanne Fleezlebop
 								["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 							}),
@@ -372,7 +372,7 @@ _.Zones =
 							qh(27879, {	-- Survival of the Fattest
 								["qg"] = 46660,	-- Aidan Summerwind
 							}),
-							q( 28512, {	-- To the Aid of the Thorium Brotherhood
+							q(28512, {	-- To the Aid of the Thorium Brotherhood
 								["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
 								["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
 							}),
@@ -939,7 +939,7 @@ _.Zones =
 						un(40, qh(2341, {	-- Necklace Recovery, Take 3
 							un(2, i(7888)),		-- Jarkal's Enhancing Necklace
 						})),
-						un(40, q( 705, {	-- Pearl Diving
+						un(40, q(705, {	-- Pearl Diving
 							un(2, i(4086)),	-- Flash Rifle
 							un(2, i(5248)),	-- Flash Wand
 						})),
@@ -955,10 +955,10 @@ _.Zones =
 							un(2, i(4653)),	-- Ironheel Boots
 							un(2, i(4652)),	-- Salbac Shield
 						})),
-						un(40, q( 709, {	-- Solution to Doom
+						un(40, q(709, {	-- Solution to Doom
 							un(2, i(4746)),	-- Doomsayer's Robe
 						})),
-						un(40, q( 716, {	-- Stone Is Better than Cloth
+						un(40, q(716, {	-- Stone Is Better than Cloth
 							un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 						})),
 						un(40, qa(1139, {	-- The Lost Tablets of Will
@@ -1001,7 +1001,7 @@ _.Zones =
 							un(7, i(1521)),	-- Lumbering Ogre Axe
 						})),
 					}),
-					n(  0, {	-- Zone Drop (Legacy)
+					n(0, {	-- Zone Drop (Legacy)
 						un(7, i(2621, {	-- Cowl of Necromancy
 						["crs"] = {
 							2740,	-- Shadowforge Darkweaver

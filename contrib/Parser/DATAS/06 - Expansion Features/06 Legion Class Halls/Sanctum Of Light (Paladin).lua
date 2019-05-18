@@ -43,6 +43,67 @@ _.ExpansionFeatures =
 					q(43541, {	-- United As One
 						i(139697),	-- Bindings of the Silver Hand
 					}),
+					--Followers  Sort to other quests later.
+					q(43492, {	-- Champion: Aponi Brightmane
+						["qg"] = 90251,		-- Aponi Brightmane <Sunwalker Chieftain>
+						["groups"] = {
+							follower(757),	-- Aponi Brightmane
+						},
+					}),
+					q(43785, {	-- Champion: Arator the Redeemer
+						["qg"] = 99997,		-- Arator the Redeemer
+						["groups"] = {
+							follower(758),	-- Arator the Redeemer
+						},
+					}),
+					q(43933, {	-- Champion: Delas Moonfang
+						["qg"] = 113299,	-- Delas Moonfang <Priestess of the Moon>
+						["groups"] = {
+							follower(756),	-- Delas Moonfang
+						},
+					}),
+					q(42852, {	-- Champion: Justicar Julia Celeste
+						["qg"] = 99995,		-- Justicar Julia Celeste
+						["groups"] = {
+							follower(755),	-- Justicar Julia Celeste
+						},
+					}),
+					q(42881, {	-- Champion: Lady Liadrin
+						["qg"] = 92346,		-- Lady Liadrin <Blood Knight Matriarch>
+						["groups"] = {
+							follower(478),	-- Lady Liadrin
+						},
+					}),
+					q(39696, {	-- Rise, Champions
+						["qg"] = 90259,		-- Lord Maxwell Tyrosus
+						["groups"] = {
+							follower(480),	-- Lord Maxwell Tyrosus
+						},
+					}),
+					q(43701, {	-- Champion: Lothraxion
+						["qg"] = 109105,	-- Lothraxion <High Commander>
+						["groups"] = {
+							follower(759),	-- Lothraxion
+						},
+					}),
+					q(45813, {	-- Where Art Thou, My Sweet
+						["qg"] = 118088,	-- Maximillian of Northshire <Knight-Errant>
+						["groups"] = {
+							follower(1001),	-- Maximillian of Northshire
+						},
+					}),
+					q(46045, {	-- Champion: Nerus Moonfang
+						["qg"] = 119545,	-- Nerus Moonfang
+						["groups"] = {
+							follower(1000),	-- Nerus Moonfang
+						},
+					}),
+					q(42851, {	-- Champion: Vindicator Boros
+						["qg"] = 94175,		-- Vindicator Boros <Triumvirate of the Hand>
+						["groups"] = {
+							follower(479),	-- Vindicator Boros
+						},
+					}),
 				}),
 				--[[
 				n(93787, {	-- Scouting Map

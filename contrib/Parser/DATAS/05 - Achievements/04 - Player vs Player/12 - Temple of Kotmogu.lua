@@ -15,7 +15,7 @@ _.Achievements =
 	n(-9958, {	-- Player vs Player
 		["g"] = {
 			n(-9993, {	-- Temple of Kotmogu
-				-- ["maps"] = {  },	-- 
+				["maps"] = { 417 },
 				["g"] = {
 					ach(6981, {	-- Master of Temple of Kotmogu
 						ach(6882, {	-- Temple of Kotmogu Veteran

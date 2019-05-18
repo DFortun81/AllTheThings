@@ -68,28 +68,6 @@ _.Zones =
 									},
 								},
 							},
-							{	-- Shoot For the Moon
-								["achievementID"] = 9602,	-- Shoot For the Moon
-								["races"] = ALLIANCE_ONLY,
-								["g"] = {
-									{	-- Bonus Objective: Bloodthorn Cave
-										["achievementID"] = 9602,	-- Shoot For the Moon
-										["criteriaID"] = 1,	-- Bonus Objective: Bloodthorn Cave
-									},
-									{	-- Bonus Objective: The Burial Fields
-										["achievementID"] = 9602,	-- Shoot For the Moon
-										["criteriaID"] = 2,	-- Bonus Objective: The Burial Fields
-									},
-									{	-- Bonus Objective: The Hills of Valuun
-										["achievementID"] = 9602,	-- Shoot For the Moon
-										["criteriaID"] = 3,	-- Bonus Objective: The Hills of Valuun
-									},
-									{	-- Bonus Objective: The Shimmer Moor
-										["achievementID"] = 9602,	-- Shoot For the Moon
-										["criteriaID"] = 4,	-- Bonus Objective: The Shimmer Moor
-									},
-								},
-							},
 							{	-- Take From Them Everything (Socrethar's Rise)
 								["achievementID"] = 9435,	-- Take From Them Everything (Socrethar's Rise)
 							},

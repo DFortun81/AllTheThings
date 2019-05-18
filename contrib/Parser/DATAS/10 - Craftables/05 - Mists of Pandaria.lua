@@ -202,13 +202,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Helm
 					["itemID"] = 98845,	-- Crafted Malevolent Gladiator's Scaled Helm
 				},
-				{	-- Ghost-Forged Helm
+				{	-- Ghost-Forged Helm [Green]
 					["itemID"] = 82903,	-- Ghost-Forged Helm
-					["g"] = {
-						{	-- Ghost-Forged Helm
-							["itemID"] = 82927,	-- Ghost-Forged Helm
-						},
-					},
+				},
+				{	-- Ghost-Forged Helm [Blue]
+					["itemID"] = 82927,	-- Ghost-Forged Helm
 				},
 				{	-- Haunted Steel Greathelm
 					["itemID"] = 94266,	-- Haunted Steel Greathelm
@@ -266,13 +264,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Shoulders
 					["itemID"] = 98847,	-- Crafted Malevolent Gladiator's Scaled Shoulders
 				},
-				{	-- Ghost-Forged Shoulders
+				{	-- Ghost-Forged Shoulders [Green]
 					["itemID"] = 82904,	-- Ghost-Forged Shoulders
-					["g"] = {
-						{	-- Ghost-Forged Shoulders
-							["itemID"] = 82928,	-- Ghost-Forged Shoulders
-						},
-					},
+				},
+				{	-- Ghost-Forged Shoulders [Blue]
+					["itemID"] = 82928,	-- Ghost-Forged Shoulders
 				},
 				{	-- Lightsteel Shoulders
 					["itemID"] = 82912,	-- Lightsteel Shoulders
@@ -330,13 +326,11 @@ _.Craftables =
 				{	-- Ghost Reaver's Breastplate
 					["itemID"] = 82975,	-- Ghost Reaver's Breastplate
 				},
-				{	-- Ghost-Forged Breastplate
+				{	-- Ghost-Forged Breastplate [Green]
 					["itemID"] = 82905,	-- Ghost-Forged Breastplate
-					["g"] = {
-						{	-- Ghost-Forged Breastplate
-							["itemID"] = 82929,	-- Ghost-Forged Breastplate
-						},
-					},
+				},
+				{	-- Ghost-Forged Breastplate [Blue]
+					["itemID"] = 82929,	-- Ghost-Forged Breastplate
 				},
 				{	-- Lightsteel Breastplate
 					["itemID"] = 82913,	-- Lightsteel Breastplate
@@ -363,7 +357,7 @@ _.Craftables =
 					["itemID"] = 87405,	-- Unyielding Bloodplate
 				},
 			}),
-			n(-327, {		-- Hands
+			n(-327, {	-- Hands
 				{	-- Bloodforged Warfists
 					["itemID"] = 87407,	-- Bloodforged Warfists
 				},
@@ -409,13 +403,11 @@ _.Craftables =
 				{	-- Ghost Reaver's Gauntlets
 					["itemID"] = 82976,	-- Ghost Reaver's Gauntlets
 				},
-				{	-- Ghost-Forged Gauntlets
+				{	-- Ghost-Forged Gauntlets [Green]
 					["itemID"] = 82906,	-- Ghost-Forged Gauntlets
-					["g"] = {
-						{	-- Ghost-Forged Gauntlets
-							["itemID"] = 82930,	-- Ghost-Forged Gauntlets
-						},
-					},
+				},
+				{	-- Ghost-Forged Gauntlets [Blue]
+					["itemID"] = 82930,	-- Ghost-Forged Gauntlets
 				},
 				{	-- Lightsteel Gauntlets
 					["itemID"] = 82914,	-- Lightsteel Gauntlets
@@ -467,13 +459,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Bracers of Prowess
 					["itemID"] = 98852,	-- Crafted Malevolent Gladiator's Bracers of Prowess
 				},
-				{	-- Ghost-Forged Bracers
+				{	-- Ghost-Forged Bracers [Green]
 					["itemID"] = 82908,	-- Ghost-Forged Bracers
-					["g"] = {
-						{	-- Ghost-Forged Bracers
-							["itemID"] = 82932,	-- Ghost-Forged Bracers
-						},
-					},
+				},
+				{	-- Ghost-Forged Bracers [Blue]
+					["itemID"] = 82932,	-- Ghost-Forged Bracers
 				},
 				{	-- Lightsteel Bracers
 					["itemID"] = 82916,	-- Lightsteel Bracers
@@ -526,13 +516,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Girdle of Prowess
 					["itemID"] = 98860,	-- Crafted Malevolent Gladiator's Girdle of Prowess
 				},
-				{	-- Ghost-Forged Belt
+				{	-- Ghost-Forged Belt [Green]
 					["itemID"] = 82910,	-- Ghost-Forged Belt
-					["g"] = {
-						{	-- Ghost-Forged Belt
-							["itemID"] = 82934,	-- Ghost-Forged Belt
-						},
-					},
+				},
+				{	-- Ghost-Forged Belt [Blue]
+					["itemID"] = 82934,	-- Ghost-Forged Belt
 				},
 				{	-- Lightsteel Belt
 					["itemID"] = 82918,	-- Lightsteel Belt
@@ -590,13 +578,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Scaled Legguards
 					["itemID"] = 98846,	-- Crafted Malevolent Gladiator's Scaled Legguards
 				},
-				{	-- Ghost-Forged Legplates
+				{	-- Ghost-Forged Legplates [Green]
 					["itemID"] = 82907,	-- Ghost-Forged Legplates
-					["g"] = {
-						{	-- Ghost-Forged Legplates
-							["itemID"] = 82931,	-- Ghost-Forged Legplates
-						},
-					},
+				},
+				{	-- Ghost-Forged Legplates [Blue]
+					["itemID"] = 82931,	-- Ghost-Forged Legplates
 				},
 				{	-- Lightsteel Legplates
 					["itemID"] = 82915,	-- Lightsteel Legplates
@@ -648,13 +634,11 @@ _.Craftables =
 				{	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 					["itemID"] = 98861,	-- Crafted Malevolent Gladiator's Warboots of Cruelty
 				},
-				{	-- Ghost-Forged Boots
+				{	-- Ghost-Forged Boots [Green]
 					["itemID"] = 82909,	-- Ghost-Forged Boots
-					["g"] = {
-						{	-- Ghost-Forged Boots
-							["itemID"] = 82933,	-- Ghost-Forged Boots
-						},
-					},
+				},
+				{	-- Ghost-Forged Boots [Blue]
+					["itemID"] = 82933,	-- Ghost-Forged Boots
 				},
 				{	-- Haunted Steel Greaves
 					["itemID"] = 94263,	-- Haunted Steel Greaves
@@ -1143,95 +1127,8 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			n(-37, {	-- Discovery
-				["groups"] = {
-					spell(143011, {	-- Celestial Cloth
-						recipe(142964),	-- Belt of the Night Sky
-						recipe(142955),	-- Leggings of the Night Sky
-						recipe(142960),	-- White Cloud Belt
-						recipe(142951),	-- White Cloud Leggings
-						recipe(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
-						recipe(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
-						recipe(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
-						recipe(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
-						recipe(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
-						recipe(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
-						recipe(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
-						recipe(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
-						recipe(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
-						recipe(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
-						recipe(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
-						recipe(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
-						recipe(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
-						recipe(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
-						recipe(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
-						recipe(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
-						recipe(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
-						recipe(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
-						recipe(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
-						recipe(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
-						recipe(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
-						recipe(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
-						recipe(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
-						recipe(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
-						recipe(143078),	-- Crafted Malevolent Gladiator's Satin Hood
-						recipe(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
-						recipe(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
-						recipe(143080),	-- Crafted Malevolent Gladiator's Satin Robe
-						recipe(143071),	-- Crafted Malevolent Gladiator's Silk Amice
-						recipe(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
-						recipe(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
-						recipe(143070),	-- Crafted Malevolent Gladiator's Silk Robe
-						recipe(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
-						recipe(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
-						recipe(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
-						recipe(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
-					}),
-					spell(125557, {	-- Imperial Silk
-					recipe(138598),	-- Falling Blossom Cowl
-					recipe(138600),	-- Falling Blossom Hood
-					recipe(138599),	-- Falling Blossom Sandals
-					recipe(138597),	-- Falling Blossom Treads
-					recipe(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
-					recipe(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
-					recipe(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
-					recipe(137937),	-- Crafted Dreadful Gladiator's Cloak of Prowess
-					recipe(137910),	-- Crafted Dreadful Gladiator's Cord of Accuracy
-					recipe(137909),	-- Crafted Dreadful Gladiator's Cord of Cruelty
-					recipe(137911),	-- Crafted Dreadful Gladiator's Cord of Meditation
-					recipe(137915),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
-					recipe(137917),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
-					recipe(137916),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
-					recipe(137918),	-- Crafted Dreadful Gladiator's Drape of Cruelty
-					recipe(137920),	-- Crafted Dreadful Gladiator's Drape of Meditation
-					recipe(137919),	-- Crafted Dreadful Gladiator's Drape of Prowess
-					recipe(137942),	-- Crafted Dreadful Gladiator's Felweave Amice
-					recipe(137939),	-- Crafted Dreadful Gladiator's Felweave Cowl
-					recipe(137938),	-- Crafted Dreadful Gladiator's Felweave Handguards
-					recipe(137941),	-- Crafted Dreadful Gladiator's Felweave Raiment
-					recipe(137940),	-- Crafted Dreadful Gladiator's Felweave Trousers
-					recipe(137926),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
-					recipe(137927),	-- Crafted Dreadful Gladiator's Mooncloth Helm
-					recipe(137928),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
-					recipe(137930),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
-					recipe(137929),	-- Crafted Dreadful Gladiator's Mooncloth Robe
-					recipe(137931),	-- Crafted Dreadful Gladiator's Satin Gloves
-					recipe(137932),	-- Crafted Dreadful Gladiator's Satin Hood
-					recipe(137933),	-- Crafted Dreadful Gladiator's Satin Leggings
-					recipe(137935),	-- Crafted Dreadful Gladiator's Satin Mantle
-					recipe(137934),	-- Crafted Dreadful Gladiator's Satin Robe
-					recipe(137925),	-- Crafted Dreadful Gladiator's Silk Amice
-					recipe(137922),	-- Crafted Dreadful Gladiator's Silk Cowl
-					recipe(137921),	-- Crafted Dreadful Gladiator's Silk Handguards
-					recipe(137924),	-- Crafted Dreadful Gladiator's Silk Robe
-					recipe(137923),	-- Crafted Dreadful Gladiator's Silk Trousers
-					recipe(137913),	-- Crafted Dreadful Gladiator's Treads of Alacrity
-					recipe(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
-					recipe(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
-				}),
-				},
-				["requireSkill"] = 197,	-- Tailoring
-			}),
+			--[[n(-37, {	-- Discovery
+			}),]]
 			n(-25, {	-- Pet Battles
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth

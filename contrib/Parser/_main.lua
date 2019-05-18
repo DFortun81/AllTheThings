@@ -495,10 +495,6 @@ battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
 	return struct("petAbilityID", id, t);
 end
 pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
-battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
-	return struct("petTypeID", id, t);
-end
-pt = battlepettype;										-- Create a BATTLE PET TYPE Object (alternative shortcut)
 cl = function(id, t)									-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
@@ -626,11 +622,6 @@ end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
 a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
-bc = function(t) t.isBreadcrumb = true; end						-- Flag as a Breadcrumb
-classes = function(classes, t)									-- Make an object only available for a set number of classes.
-	t.classes = classes;
-	return t;
-end
 cr = function(id, t)											-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
@@ -658,7 +649,6 @@ dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 	end
 end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
-lvl = function(lvl, t) t.lvl = lvl; return t; end				-- Add a Level Requirement to an object.
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
@@ -686,14 +676,6 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 
 -- BEGIN UNFINISHED SECTION:
-bi = function(bonusID, t)
-	if type(bonusID) == "table" then
-		t.ids = bonusID;
-	else
-		t.ids = { bonusID };
-	end
-	return t;
-end
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
   if not t then t = {};
     elseif not t.groups then t = { ["groups"] = t }; end
@@ -707,19 +689,6 @@ sz = function(achievementID, criteriaID, t)  -- Create a Subzone Object (localiz
     t.criteriaID = criteriaID;
   return t;
 end
-tcat = function(itemSubClass, t) -- Create a Transmog Weapon Category Object (localized automatically)
-  if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
-    t.itemSubClass = itemSubClass;
-  return t;
-end
-
-mi = function(id, t)										-- Create a Mission Object (not fully implemented yet)
-    if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
-    t.missionID = id;
-    return t;
-end
 model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
@@ -727,7 +696,6 @@ end
 na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object 
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
 nld = function(t) return n(-40, t); end						-- Legacy dungeon items header
-nlq = function(t) return n(-39, t); end						-- Legacy dungeon quests header
 
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
 qart = function(t)						-- Gives a quest the Artifact Description

@@ -31,7 +31,7 @@ _.Instances = { tier(7, {	-- Legion
 			n(-2, {	-- Vendors
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
-					["groups"] = {	
+					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm
 						i(31393),	-- Plans: Iceguard Breastplate
 						i(31394),	-- Plans: Iceguard Leggings
@@ -325,7 +325,7 @@ _.Instances = { tier(7, {	-- Legion
 							["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
 							["description"] = "You must complete the full quest chain before this will drop from the boss.",
 							["groups"] = {
-								i(142469),	-- Violet Seal of the Grand Magus 
+								i(142469),	-- Violet Seal of the Grand Magus
 							},
 						},
 						i(142303),	-- Chestplate of Impenetrable Darkness

@@ -12,64 +12,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 73.73, 63.71, 109 },	-- The Eye, Netherstorm
 		["groups"] = {
-			n(-1, {	-- Common Boss Drops
-				["crs"] = {
-					19514,	-- Al'ar
-					19516,	-- Void Reaver
-					18805,	-- High Astromancer Solarian
-					19622,	-- Kael'thas Sunstrider
-				},
-				["g"] = {
-					{
-						["itemID"] = 30280,	-- Pattern: Belt of Blasting
-					},
-					{
-						["itemID"] = 30302,	-- Pattern: Belt of Deep Shadow
-					},
-					{
-						["itemID"] = 30301,	-- Pattern: Belt of Natural Power
-					},
-					{
-						["itemID"] = 30303,	-- Pattern: Belt of the Black Eagle
-					},
-					{
-						["itemID"] = 30281,	-- Pattern: Belt of the Long Road
-					},
-					{
-						["itemID"] = 30282,	-- Pattern: Boots of Blasting
-					},
-					{
-						["itemID"] = 30305,	-- Pattern: Boots of Natural Grace
-					},
-					{
-						["itemID"] = 30307,	-- Pattern: Boots of the Crimson Hawk
-					},
-					{
-						["itemID"] = 30283,	-- Pattern: Boots of the Long Road
-					},
-					{
-						["itemID"] = 30306,	-- Pattern: Boots of Utter Darkness
-					},
-					{
-						["itemID"] = 30308,	-- Pattern: Hurricane Boots
-					},
-					{
-						["itemID"] = 30304,	-- Pattern: Monsoon Belt
-					},
-					{
-						["itemID"] = 30321,	-- Plans: Belt of the Guardian
-					},
-					{
-						["itemID"] = 30323,	-- Plans: Boots of the Protector
-					},
-					{
-						["itemID"] = 30322,	-- Plans: Red Belt of Battle
-					},
-					{
-						["itemID"] = 30324,	-- Plans: Red Havoc Boots
-					},
-				},	
-			}),
 			n(0, {	-- Zone Drop
 				["crs"] = {
 					20043,	-- Apprentice Star Scryer
@@ -92,6 +34,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					20034,	-- Star Scryer
 					20037,	-- Tempest Falconer
 					20042,	-- Tempest-Smith
+					19514,	-- Al'ar
+					19516,	-- Void Reaver
+					18805,	-- High Astromancer Solarian
+					19622,	-- Kael'thas Sunstrider
 				},
 				["g"] = {
 					{
@@ -338,6 +284,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["collectible"] = false,
 					["u"] = 15,
 				}),
+				un(2, i(30320)),	-- Bundle of Nether Spikes
 			})),
 		},
 	}),	

@@ -93,7 +93,9 @@ _.Zones =
 								["questID"] = 32610,	-- Looted from Rare this week
 								["isWeekly"] = true,
 								["coords"] = {
-									{ 37.49, 82.64, 504 },
+									{ 33.01, 81.01, 504 },
+									{ 35.48, 82.63, 504 },
+									{ 37.59, 82.64, 504 },
 								},
 								["g"] = {
 									{	-- Ku'lai the Skyclaw

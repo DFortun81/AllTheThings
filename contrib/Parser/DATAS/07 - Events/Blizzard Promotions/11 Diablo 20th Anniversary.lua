@@ -6,6 +6,9 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-538, {	-- Diablo 20th Anniversary Promotion
+				["maps"] = {
+					47,	-- Duskwood [Where event takes place]
+				},
 				["groups"] = {
 					n(116041, {		-- Treasure Goblin
 						["groups"] = {

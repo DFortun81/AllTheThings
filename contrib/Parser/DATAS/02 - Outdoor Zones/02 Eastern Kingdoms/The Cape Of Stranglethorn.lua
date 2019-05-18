@@ -42,15 +42,15 @@ _.Zones =
 				n(-17, {	-- Quests
 					ach(4905, {	-- Cape of Strangelthorn Quests
 						crit(1, {	-- The Trolls of Zul'Gurub
-							qa( 26826, {	-- Dask "The Flask" Gobfizzle
+							qa(26826, {	-- Dask "The Flask" Gobfizzle
 								["qg"] = 44082,	-- Bronwyn Hewstrike
 								["description"] = "This quest is only available if you DID NOT complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
 							}),
-							qa( 26825, {	-- Dask "The Flask" Gobfizzle
+							qa(26825, {	-- Dask "The Flask" Gobfizzle
 								["qg"] = 44082,	-- Bronwyn Hewstrike
 								["description"] = "This quest is only available if you DID complete [The Source of the Corruption] and [The Mosh'Ogg Bounty] in Northern Stranglethorn.",
 							}),
-							qa( 26823, {	-- Too Big For His Britches
+							qa(26823, {	-- Too Big For His Britches
 								["qg"] = 44099,	-- Dask "The Flask" Gobfizzle
 								["sourceQuests"] = {26825,26826},
 							}),
@@ -123,7 +123,7 @@ _.Zones =
 								["qg"] = 43095,	-- Sassy Hardwrench
 								["sourceQuests"] = {26487,26489,26450},
 							}),
-							qh( 26495, {	-- Chabal
+							qh(26495, {	-- Chabal
 								["qg"] = 43095,	-- Sassy Hardwrench
 								["sourceQuests"] = {26493},
 							}),
@@ -501,12 +501,13 @@ _.Zones =
 							}),	
 							qa(26818, {	-- Plush Pelts
 								["groups"] = {
-									i(61513),  -- Fuzzy Legwarmers
-									i(61514),  -- Velvety Vest
-									i(61515),  -- Supple Gloves
-									i(61516),  -- Hambone's Spare Collar
+									i(61123),	-- Band of Raptor Teeth
+									i(61513),	-- Fuzzy Legwarmers
+									i(61516),	-- Hambone's Spare Collar
+									i(61515),	-- Supple Gloves
 									i(131609),	-- Supple Support Harness
 									i(131610),	-- Velvet-Lined Chain Gloves
+									i(61514),	-- Velvety Vest
 								},
 								["qg"] = 44083,	-- Linzi Hewstrike
 								["sourceQuests"] = {26823},
@@ -598,25 +599,25 @@ _.Zones =
 --[[
 					qg(, q(31851)),	-- Bill Buckler
 					qg(, q(31728)),	-- Bill Buckler
-					qg(, qh( 29252)),	-- Booty Bay's Interests
-					qg(, qh( 29251)),	-- Booty Bay's Interests
-					qg(, qa( 29153)),	-- Booty Bay's Interests
-					qg(, qa( 29154)),	-- Booty Bay's Interests
+					qg(, qh(29252)),	-- Booty Bay's Interests
+					qg(, qh(29251)),	-- Booty Bay's Interests
+					qg(, qa(29153)),	-- Booty Bay's Interests
+					qg(, qa(29154)),	-- Booty Bay's Interests
 					qg(, q(26718)),	-- Breadcrumb to Badlands
-					qg(, qh( 11446)),	-- Brewfest!
+					qg(, qh(11446)),	-- Brewfest!
 					q(12397),	-- Candy Bucket
-					qh( 28969),	-- Candy Bucket
-					qg(, qa( 11356)),	-- Costumed Orphan Matron
-					qa( 11580),	-- Desecrate this Fire!
-					qa( 11755),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qa( 11786),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qa( 11801),	-- Desecrate this Fire!
-					qh( 11749),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
-					qh( 11761),	-- Desecrate this Fire!
+					qh(28969),	-- Candy Bucket
+					qg(, qa(11356)),	-- Costumed Orphan Matron
+					qa(11580),	-- Desecrate this Fire!
+					qa(11755),	-- Desecrate this Fire!
+					qa(11732),	-- Desecrate this Fire!
+					qa(11766),	-- Desecrate this Fire!
+					qa(11786),	-- Desecrate this Fire!
+					qh(11745),	-- Desecrate this Fire!
+					qa(11801),	-- Desecrate this Fire!
+					qh(11749),	-- Desecrate this Fire!
+					qh(11581),	-- Desecrate this Fire!
+					qh(11761),	-- Desecrate this Fire!
 					qg(, qh(26592)),	-- Diffractory Chromascope
 					qg(, q(9272)),	-- Dressing the Part
 					qg(, q(38399)),	-- Fencing the Rose
@@ -657,17 +658,6 @@ _.Zones =
 					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
 					qg(, qh(26533)),	-- Zanzil's Secret	
 --]]
---[[					nlq({     -- Legacy Quests 
-						q( 617, {	-- Akiris by the Bundle
-							un(34, i(4117)),	-- Scorching Sash
-						}),
-						q( 213, {	-- Hostile Takeover
-							un(34, i(4121)),	-- Gemmed Gloves
-						}),
-						qa(611, {	-- The Curse of the Tides
-							un(34, i(4120)),	-- Robe of Crystal Waters
-						}),
-					}),--]]
 				}),
 			}),
 				n(-16, {	-- Rares
@@ -911,7 +901,7 @@ _.Zones =
 					i(8494),	-- Parrot Cage (Hyacinth Macaw)
 					i(48126),	-- Razzashi Hatchling						
 				}),
-				n( -2, {	-- Vendors
+				n(-2, {	-- Vendors
 					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 						i(5789),	-- Pattern: Murloc Scale Bracers						
 						i(5788),	-- Pattern: Thick Murloc Armor							
@@ -1022,7 +1012,7 @@ _.Zones =
 				}),
 				n(-40, {	-- Legacy
 				  	n(-17, {	-- Quests (Legacy)
-						un(40, q( 617, {	-- Akiris by the Bundle
+						un(40, q(617, {	-- Akiris by the Bundle
 							un(2, i(4117)),	-- Scorching Sash
 						})),
 						{	-- Booty Bay or Bust!
@@ -1034,6 +1024,11 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["u"] = 40,
 						},
+						qa(1041, {	-- The Caravan Road
+							["u"] = 40,
+							["qg"] = 3945,	-- Caravaneer Ruzzgot
+							["sourceQuest"] = 1040,	-- The Passage to Booty Bay
+						}),
 						un(40, qa(613, {	-- Cracking Maury's Foot
 							un(2, i(4129)),	-- Collection Plate
 						})),
@@ -1046,7 +1041,7 @@ _.Zones =
 						un(40, qh(8554, {	-- Facing Negolash
 							i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
 						})),
-						un(40, q( 213, {	-- Hostile Takeover
+						un(40, q(213, {	-- Hostile Takeover
 							un(2, i(4121)),	-- Gemmed Gloves
 						})),
 						{	-- In Search of Galvan
@@ -1067,7 +1062,7 @@ _.Zones =
 						un(40, qh(573, {	-- Mok'thardin's Enchantment
 							un(2, i(4112)),	-- Choker of the High Shaman
 						})),
-						un(40, q( 348, {	-- Stranglethorn Fever
+						un(40, q(348, {	-- Stranglethorn Fever
 							un(2, i(4113)),	-- Medicine Blanket
 						})),
 						un(40, q(608, {		-- The Bloodsail Buccaneers
@@ -1082,7 +1077,7 @@ _.Zones =
 						un(40, qa(611, {	-- The Curse of the Tides
 							un(2, i(4120)),	-- Robe of Crystal Waters
 						})),
-						un(40, q( 600, {	-- Venture Company Mining
+						un(40, q(600, {	-- Venture Company Mining
 							un(2, i(5253)),	-- Goblin Igniter
 							un(2, i(4128)),	-- Silver Spade
 						})),
@@ -1095,7 +1090,7 @@ _.Zones =
 							un(2, i(3985)),	-- Monogrammed Sash
 						}),
 					}),
-					--n(  0, {	-- Zone Drop (Legacy)
+					--n(0, {	-- Zone Drop (Legacy)
 					--}),
 				}),
 			},

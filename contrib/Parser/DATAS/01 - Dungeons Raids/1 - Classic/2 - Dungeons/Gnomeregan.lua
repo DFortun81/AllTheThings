@@ -6,13 +6,10 @@ _.Instances = { tier(1, {	-- Classic
 	inst(231, { 	-- Gnomeregan
 		["lvl"] = 19,
 		["mapID"] = 226,
-		["maps"] = { 
-			227, 
-			228, 
-			229, 
-			840,	-- Pet Dungeon
-			841,	-- Pet Dungeon
-			842,	-- Pet Dungeon
+		["maps"] = {
+			227,
+			228,
+			229,
 		},
 		["coord"] = { 30.11, 74.64, 30 },	-- Gnomeregan, Gnomeregan [Dun Morogh]
 		["groups"] = {
@@ -44,8 +41,8 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						{
-							["allianceQuestID"] = 2947,	-- Return of the Ring [A]
-							["hordeQuestID"] = 	  2949,	-- Return of the Ring [H]
+							["allianceQuestID"] = 2947,	-- Return of the Ring [Alliance]
+							["hordeQuestID"] = 	  2949,	-- Return of the Ring [Horde]
 							["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
 						},
 						{
@@ -69,7 +66,7 @@ _.Instances = { tier(1, {	-- Classic
 										i(9363),	-- Sparklematic-Wrapped Box
 									},
 								},
-								
+
 								{
 									["questID"] = 4601,	-- The Sparklematic 5200!
 								},
@@ -88,7 +85,7 @@ _.Instances = { tier(1, {	-- Classic
 										i(9363),	-- Sparklematic-Wrapped Box
 									},
 								},
-								
+
 								{
 									["questID"] = 4602,	-- The Sparklematic 5200!
 								},
@@ -112,19 +109,19 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 				{
-					["allianceQuestID"] = 26939,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50338,	-- The G-Team [H]
+					["allianceQuestID"] = 26939,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50338,	-- The G-Team [Horde]
 					["qg"] = 44556,	-- Murd Doc
 				},
 				{
-					["allianceQuestID"] = 26941,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50337,	-- The G-Team [H]
+					["allianceQuestID"] = 26941,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50337,	-- The G-Team [Horde]
 					["qg"] = 44560,	-- Murd Doc
 					["sourceQuests"] = { 26939, 50338 },	-- The G-Team
 				},
 				{
-					["allianceQuestID"] = 26942,	-- The G-Team [A]
-					["hordeQuestID"] = 	  50336,	-- The G-Team [H]
+					["allianceQuestID"] = 26942,	-- The G-Team [Alliance]
+					["hordeQuestID"] = 	  50336,	-- The G-Team [Horde]
 					["qg"] = 44561,	-- Murd Doc
 					["sourceQuests"] = { 26941, 50337 },	-- The G-Team
 					["groups"] = {
@@ -138,7 +135,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				{  	-- Red Punch Card
 					["itemID"] = 9281,      	-- Red Punch Card
 					["requireSkill"] = 202,  	-- Engineering
@@ -340,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(132558),	-- Bot Operator's Treads
 				i(9450),	-- Gnomebot Operating Boots
 			})),
-			n( 6228, {			-- Dark Iron Ambassador
+			n(6228, {			-- Dark Iron Ambassador
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
 					i(9456),	-- Glass Shooter

@@ -4,44 +4,39 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(278, { 	-- Pit of Saron
-		["lvl"] = 78,
 		["mapID"] = 184,
-		["groups"] = {
+		["coord"] = { 52.3, 89.3, 118 },
+		["lvl"] = 78,
+		["g"] = {
 			n(-17, {	-- Quests
-				a({
-					["questID"] = 24710,	-- Deliverance from the Pit
+				qa(24710, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24498,	-- The Path to the Citadel
 					["qg"] = 37591,	-- Martin Victus
 				}),
-				h({
-					["questID"] = 24712,	-- Deliverance from the Pit
+				qh(24712, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24507,	-- The Path to the Citadel
 					["qg"] = 24712,	-- Gorkun Ironskull
 				}),
-				a({
-					["questID"] = 24711,	-- Frostmourne
+				qa(24711, {	-- Frostmourne
 					["sourceQuest"] = 24710,	-- Deliverance from the Pit
 					["qg"] = 38188,	-- Lady Jaina Proudmoore
 				}),
-				h({
-					["questID"] = 24713,	-- Frostmourne
+				qh(24713, {	-- Frostmourne
 					["sourceQuest"] = 24712,	-- Deliverance from the Pit
 					["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
 				}),
-				a({
-					["questID"] = 24498,	-- The Path to the Citadel
+				qa(24498, {	-- The Path to the Citadel
 					["sourceQuest"] = 24683,	-- The Pit of Saron
 					["qg"] = 36993,	-- Lady Jaina Proudmoore
 				}),
-				h({
-					["questID"] = 24507,	-- The Path to the Citadel
+				qh(24507, {	-- The Path to the Citadel
 					["sourceQuest"] = 24682,	-- The Pit of Saron
 					["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
 				}),
 			}),
 			d(1,   {	-- Normal
 				ach(4517),	-- The Pit of Saron
-				n(0, {		-- Zone Drop
+				n(0, {	-- Zone Drop
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							37712,	-- Deathwhisper Shadowcaster
@@ -89,7 +84,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 				}),
 				cr(36494, e(608, {	-- Forgemaster Garfrost
-					{
+					{	-- Forgemaster Garfrost slain (The Pit of Saron)
 						["achievementID"] = 4517,	-- The Pit of Saron
 						["criteriaID"] = 1,	-- Forgemaster Garfrost slain
 					},
@@ -107,7 +102,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(49803),	-- Ring of Carnelian and Bone
 				})),
 				cr(36476, e(609, {	-- Ick and Krick
-					{
+					{	-- Ick and Krick slain (The Pit of Saron)
 						["achievementID"] = 4517,	-- The Pit of Saron
 						["criteriaID"] = 2,	-- Ick and Krick slain
 					},
@@ -125,7 +120,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50235),	-- Ick's Rotting Thumb
 				})),
 				cr(36658, e(610, {	-- Scourgelord Tyrannus
-					{
+					{	-- Scourgelord Tyrannus slain (The Pit of Saron)
 						["achievementID"] = 4517,	-- The Pit of Saron
 						["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
 					},
@@ -157,10 +152,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					ach(4520),	-- Heroic: The Pit of Saron
-					n(0, {		-- Zone Drop
-						["groups"] = {
+					n(0, {	-- Zone Drop
+						["g"] = {
 							i(50379),	-- Battered Hilt (Alliance)
 							i(50380),	-- Battered Hilt (Horde)
 							i(50318, {	-- Ghostly Wristwraps
@@ -184,7 +179,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					cr(36494, e(608, {	-- Forgemaster Garfrost
 						ach(4524),	-- Doesn't Go to Eleven
-						{
+						{	-- Forgemaster Garfrost slain (Heroic: The Pit of Saron)
 							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
 							["criteriaID"] = 1,	-- Forgemaster Garfrost slain
 						},
@@ -202,7 +197,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(49803),	-- Ring of Carnelian and Bone
 					})),
 					cr(36476, e(609, {	-- Ick and Krick
-						{
+						{	-- Ick and Krick slain (Heroic: The Pit of Saron)
 							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
 							["criteriaID"] = 2,	-- Ick and Krick slain
 						},
@@ -221,7 +216,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 					ach(4525),	-- Don't Look Up
 					cr(36658, e(610, {	-- Scourgelord Tyrannus
-						{
+						{	-- Scourgelord Tyrannus slain (Heroic: The Pit of Saron)
 							["achievementID"] = 4520,	-- Heroic: The Pit of Saron
 							["criteriaID"] = 3,	-- Scourgelord Tyrannus slain
 						},
@@ -254,7 +249,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d( 24, {	-- Timewalking
 				["lvl"] = 81,
-				["groups"] = {
+				["g"] = {
 					cr(36494, e(608, {	-- Forgemaster Garfrost
 						i(133486),	-- Garfrost's Two-Ton Hammer
 						i(133485),	-- Unspeakable Secret

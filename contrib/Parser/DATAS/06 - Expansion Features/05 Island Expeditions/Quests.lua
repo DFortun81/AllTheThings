@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						["repeatable"] = true,
 						["description"] = "|CFFFF0000Turn this into Magni in Silithius at 42.40, 44.29 for Champions of Azeroth rep.|r",
 					},
-					{	-- Dented Coin [A]
+					{	-- Dented Coin [Alliance]
 						["itemID"] = 163616,	-- Dented Coin
 						--["questID"] = 53118,	-- Dented Coin
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -34,7 +34,7 @@ _.ExpansionFeatures =
 						--["questID"] = 53181,	-- Druidic Fur (Quest)
 						["repeatable"] = true,
 					},
-					{	-- Exotic Spices [A]
+					{	-- Exotic Spices [Alliance]
 						["itemID"] = 163614,	-- Exotic Spices
 						--["questID"] = 53120,	-- Exotic Spices
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -42,7 +42,7 @@ _.ExpansionFeatures =
 						["description"] = "|CFFFF0000Turn this into Xun Xun in Drustvar at 20.66, 45.59 for Order of Embers rep.|r",
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Golden Beetle [H]
+					{	-- Golden Beetle [Horde]
 						["itemID"] = 163619,	-- Golden Beetle
 						--["questID"] = 53114,	-- Golden Beetle
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 						["description"] = "|CFFFF0000Turn this into Krag'wa in Nazmir at 75, 56 for Talanji's Expedition rep.|r",
 						["races"] = HORDE_ONLY
 					},
-					{	-- Island Flotsam [H]
+					{	-- Island Flotsam [Horde]
 						["itemID"] = 163620,	-- Island Flotsam
 						--["questID"] = 53115,	-- Island Flotsam
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["description"] = "Must have unlocked Jana by doing the quest \"Pests\".",
 					},
-					{	-- Lost Sea Scroll [A]
+					{	-- Lost Sea Scroll [Alliance]
 						["itemID"] = 163615,	-- Lost Sea Scroll
 						--["questID"] = 53119,	-- Lost Sea Scroll
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -67,7 +67,7 @@ _.ExpansionFeatures =
 						["description"] = "|CFFFF0000Turn this into Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Rusted Alliance Insignia [A]
+					{	-- Rusted Alliance Insignia [Alliance]
 						["itemID"] = 163617,	-- Rusted Alliance Insignia
 						--["questID"] = 53117,	-- Rusted Alliance Insignia
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -75,7 +75,7 @@ _.ExpansionFeatures =
 						["description"] = "|CFFFF0000Turn this into Jaelaana in Boralus at 69.33, 24.95 for 7th Legion rep.|r",
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Rusted Horde Insignia [H]
+					{	-- Rusted Horde Insignia [Horde]
 						["itemID"] = 163621,	-- Rusted Horde Insignia
 						--["questID"] = 53116,	-- Rusted Horde Insignia
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -83,7 +83,7 @@ _.ExpansionFeatures =
 						["description"] = "|CFFFF0000Turn this into Ransa Greyfeather for Honorbound rep.|r",
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Shimmering Shell [H]
+					{	-- Shimmering Shell [Horde]
 						["itemID"] = 163618,	-- Shimmering Shell
 						--["questID"] = 53113,	-- Shimminering Shell
 						--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item

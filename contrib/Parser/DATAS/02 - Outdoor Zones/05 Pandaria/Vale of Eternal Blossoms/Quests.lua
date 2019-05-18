@@ -43,7 +43,7 @@ _.Zones =
 								i(98133),	-- Greater Cache of Treasures
 							},
 						}),
-						q( 32815, {	-- The Old Seer
+						q(32815, {	-- The Old Seer
 							["sourceQuest"] = 32807,	-- The Warchief and the Darkness
 							["qg"] = 61962,	-- Lorewalker Cho
 						}),

@@ -118,14 +118,14 @@ _.Zones =
 							n(124185, {	-- Golrakahn [CLQS]
 								["questID"] = 47792,
 								["coord"] = { 74.12, 28.49, 862 },
-								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161035),	-- Thundercrash Footguards
 									{	-- Golrakahn (Adventurer of Zuldazar)
 										["achievementID"] = 12944,	-- Adventurer of Zuldazar
 										["criteriaID"] = 12,	-- Golrakahn
 									},
 								}),
-							}),	
+							}),
 							n(134738, {	-- Hakbi the Risen [CLQS]
 								["questID"] = 50677,
 								["coord"] = { 42.11, 36.14, 862 },
@@ -224,13 +224,13 @@ _.Zones =
 										["criteriaID"] = 23,	-- Tambano
 									},
 								}),
-							}),	
+							}),
 							n(133163, {	-- Tia'Kawan [MCLQ]
-								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon 
-								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
+								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon
+								["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 									i(161007),	-- Direhorn Studded Britches
 								}),
-							}),	
+							}),
 							n(127939, {	-- Torraske the Eternal [CLQS]
 								["questID"] = 49004,
 								["coord"] = { 46.69, 65.34, 862 },
@@ -244,12 +244,12 @@ _.Zones =
 							}),
 							n(130643, {	-- Twisted Child of Rezan [MCLQ]
 								["repeatable"] = true,	-- temp
-								["questID"] = 50847,	
+								["questID"] = 50847,
 								["coord"] = { 76.4, 27.1, 862 },
-								["g"] = { -- Level 120 mob which means no gear scaling	
+								["g"] = { -- Level 120 mob which means no gear scaling
 									i(162620),	-- Devilbone Shoulderguards
 								},
-							}),	
+							}),
 							n(122004, {	-- Umbra'jin [CLQS]
 								["questID"] = 47567,
 								["coord"] = { 70.4, 32.7, 862 },	-- cave entrance
@@ -280,7 +280,7 @@ _.Zones =
 										["criteriaID"] = 16,	-- Vukuba
 									},
 								}),
-							}),	
+							}),
 							n(133842, {	-- Warcrawler Karkithiss [CLQS]
 								["questID"] = 50438,
 								["coord"] = { 44.25, 25.21, 862 },
@@ -304,8 +304,8 @@ _.Zones =
 								}),
 							}),
 							n(136702, {	-- Zu'shin the Infused [MCMLQ]
-								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon 	
-							}),	
+								["questID"] = 9999,	-- Apparently people are upset at seeing ---  in the addon
+							}),
 						},
 					}),
 				},

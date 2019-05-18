@@ -8,14 +8,14 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 250, 251, 252, 253, 254, 255 },
 		["coord"] = { 80.46, 40.65, 33 },	-- Lower Blackrock Spire, Blackrock Mountain [Blackrock Spire]
 		["groups"] = {
-			n(-17, {	-- Quests 			
+			n(-17, {	-- Quests
 				q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 					i(65933),	-- Highlord's Chestpiece
 					i(65957),	-- Overlord's Legplates
 					i(65981),	-- War Master's Pauldrons
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(17683, {	-- Book: Gift of the Wild Rank 2
 				--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 				}),
@@ -53,10 +53,10 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(9257, {		-- Scarshield Warlock
 					["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
-					["groups"] = {	
+					["groups"] = {
 						n(10263, {	-- Burning Felguard
 							["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
-							["groups"] = {	
+							["groups"] = {
 								i(13181),	-- Demonskin Gloves
 								i(13182),	-- Phase Blade
 								un(2, i(9214)),	-- Grimoire of Inferno
@@ -75,7 +75,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ 39.0, 64.0, 252 },	-- Mok'Doom
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(13284),	-- Swiftdart Battleboots
 					i(13285),	-- The Blackrock Slicers
 				},
@@ -85,9 +85,9 @@ _.Instances = { tier(1, {	-- Classic
 					{ 54.0, 58.0, 252 },	-- Hordemar City (Upper)
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(12608),	-- Butcher's Apron
-					i(13286),	-- Rivenspike 
+					i(13286),	-- Rivenspike
 				},
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
@@ -95,7 +95,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ 39.0, 64.0, 252 },	-- Mok'Doom
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(13261),	-- Globe of D'sak
 					i(13282),	-- Ogreseer Tower Boots
 					i(13283),	-- Magus Ring
@@ -120,19 +120,19 @@ _.Instances = { tier(1, {	-- Classic
 				i(12626),	-- Funeral Cuffs
 				i(13255),	-- Trueaim Gauntlets
 				i(151413),	-- Smolderthorn Greatbelt
-				un(7, i(16712)), 	-- Shadowcraft Gloves																				
+				un(7, i(16712)), 	-- Shadowcraft Gloves
 			})),
 			n(16080, {	-- Mor Grayhoof Summonable Read Description
 				["description"] = "Requires Brazier of Invocation (Dungeon Set 2 Questline) to summon this boss.",
 				["groups"] = {
-					i(22057, {	
+					i(22057, {
 						un(11, i(22325)),	-- Belt of the Trickster
 						un(11, i(22322)),	-- The Jaw Breaker
 						un(11, i(22306)),	-- Ironweave Belt
 						un(11, i(22319)),	-- Tome of Divine Right
 					}),
 				},
-			}),	
+			}),
 			cr( 9237, e(390, {	-- War Master Voone
 				i(12582),	-- Keris of Zul'Serak
 				i(13177),	-- Talisman of Evasion
@@ -151,7 +151,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ 49.0, 55.0, 250 },	-- Hordemar City (Lower)
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(12634),	-- Chiselbrand Girdle
 					i(12621),	-- Demonfork
 					i(12637),	-- Backusarian Gauntlets
@@ -163,7 +163,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ 55.0, 75.0, 251 },	-- Skitterweb Tunnels
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(13185),	-- Sunderseer Mantle
 					i(13184),	-- Fallbrush Handgrips
 					i(13218),	-- Fang of the Crystal Spider
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			cr(10584, e(392, {	-- Urok Doomhowl
 				["description"] = "Summonable Boss. Loot a Roughshod Pike, it will be on the left wall after crossing the second bridge before heading to Highlord Omokk. Then kill Highlord Omokk and loot his head. After killing Mother Smolderweb head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
-				["groups"] = {	
+				["groups"] = {
 					i(13258),	-- Slaghide Gauntlets
 					i(22232),	-- Marksman's Girdle
 					i(13259),	-- Ribsteel Footguards
@@ -201,7 +201,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(7, i(16703)),	-- Dreadmist Bracers
 				un(7, i(16683)),	-- Magister's Bindings
 				un(7, i(16713)),	-- Shadowcraft Belt
-				un(7, i(16716)),	-- Wildheart Belt																		
+				un(7, i(16716)),	-- Wildheart Belt
 			})),
 			cr(10220, e(394, {	-- Halycon
 				i(13212),	-- Halcyon's Spiked Collar
@@ -223,7 +223,7 @@ _.Instances = { tier(1, {	-- Classic
 					{ 36.0, 60.0, 254 },	-- Hordemar City (Upper)
 				},
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {	
+				["groups"] = {
 					i(13203),	-- Armswake Cloak
 					i(13204),	-- Bashguuder
 					i(13198),	-- Hurd Smasher

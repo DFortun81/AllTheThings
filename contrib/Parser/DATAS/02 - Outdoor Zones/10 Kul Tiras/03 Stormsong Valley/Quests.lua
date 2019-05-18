@@ -862,6 +862,12 @@ _.Zones =
 						q(50810),	-- Break 'Em Out
 						q(51545),	-- Breaker Bad
 						q(51159),	-- Bring out the Big Gun
+						{	-- Bumbles the Bee
+							["questID"] = 53347,
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 131793,	-- Ancel Mildenhall
+							["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
+						},
 						q(51728),	-- Burn It All Down
 						q(50621),	-- Caught in the Net
 						q(51353),	-- Cave of Ai'twen
@@ -973,6 +979,14 @@ _.Zones =
 						},
 						q(50802),	-- Iron Low Tide
 						q(51557),	-- Irontide Warning
+						{	-- Let's Bee Friends
+							["questID"] = 53371,
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+							["qg"] = 132647,	-- Ancel Mildenhall
+							["sourceQuest"] = 53347,	-- Bumbles the Bee
+							["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
+						},
 						q(51582),	-- Make it Mildenhall
 						q(53369),	-- Make Loh Go
 						q(50383),	-- Mankrik's Wrath

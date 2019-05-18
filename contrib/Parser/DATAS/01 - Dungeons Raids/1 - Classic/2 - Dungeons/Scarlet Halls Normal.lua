@@ -4,11 +4,11 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(311, { 	-- Scarlet Halls
-		["lvl"] = 21,
+		["coord"] = { 78.0, 56.8, 19 },	-- Scarlet Halls, Scarlet Monastery [Tirisfal Glades]
 		["mapID"] = 431,
 		["maps"] = { 432 },
-		["coord"] = { 78.0, 56.8, 19 },	-- Scarlet Halls, Scarlet Monastery [Tirisfal Glades]
-		["groups"] = {
+		["lvl"] = 21,
+		["g"] = {
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
 					qg(64738, q(31493)),	-- Just for Safekeeping, Of Course
@@ -22,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 							59293,    -- Scarlet Cannoneer
 							59372,    -- Scarlet Scholar
 						},
-					}),					
+					}),
 				}),
 				cr(59303, e(660, {	-- Houndmaster Braun
 					i(88264),	-- Houndmaster's Compound Crossbow

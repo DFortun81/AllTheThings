@@ -50,17 +50,6 @@ _.Zones =
 							crit(4),	-- The Iron Approach
 						})),
 						]]--
-						{	-- Trans-Dimensional Bird Whistle
-							["itemID"] = 122293,
-							["collectible"] = false,
-							["groups"] = {
-								{
-									["itemID"] = 127867,	-- A Tiny Ninja Shroud
-									["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
-									["coord"] = { 47.51, 41.31, 543 },
-								},
-							},
-						},
 						n(-358, { 	-- Lumber Yard
 							{	-- A Green Ogron?
 								["questID"] = 36523,

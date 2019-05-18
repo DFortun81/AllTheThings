@@ -354,7 +354,7 @@ _.Zones =
 								["sourceQuests"] = { 27174 },	-- Combat Training
 								["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 							}),
-							q( 26999, {	-- A New Era for the Plaguelands
+							q(26999, {	-- A New Era for the Plaguelands
 								["groups"] = {
 									i(62174),	-- Bracers of the Returning Wild
 									i(62173),	-- Boots of the Flowering Earth
@@ -364,45 +364,45 @@ _.Zones =
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
 							}),
-							q( 26935, {	-- Northridge Lumber Mill
+							q(26935, {	-- Northridge Lumber Mill
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 26999 },	-- A New Era for the Plaguelands
 								["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 							}),
-							q( 27000, {	-- Learning the Ropes
+							q(27000, {	-- Learning the Ropes
 								["qg"] = 11616,	-- Nathaniel Dumah
 								["sourceQuests"] = { 26935 },	-- Northridge Lumber Mill
 							}),
-							q( 27001, {	-- This Means WAR (Wild Arachnid Roundup)
+							q(27001, {	-- This Means WAR (Wild Arachnid Roundup)
 								["groups"] = {
 									i(62180),   -- Band of the Arachnid Wrangler
 									i(62179),	-- Spider Frier
-								--i(62178),	-- Not Transmoggable
+									i(62178),	-- Spider Splatter Mace
 								},
 								["qg"] = 11616,	-- Nathaniel Dumah
 								["sourceQuests"] = { 27000 },	-- Learning the Ropes
 							}),
-							q( 27002, {	-- An Audience with the Highlord
+							q(27002, {	-- An Audience with the Highlord
 								["qg"] = 11616,	-- Nathaniel Dumah
 								["sourceQuests"] = { 27001 },	-- This Means WAR (Wild Arachnid Roundup)
 							}),
-							q( 27151, {	-- Taelan Fordring's Legacy
+							q(27151, {	-- Taelan Fordring's Legacy
 								["qg"] = 45147,	-- Daria L'Rayne
 								["sourceQuests"] = { 27002 },	-- An Audience With the Highlord
 							}),
-							q( 27152, {	-- Unusual Behavior... Even For Gnolls
+							q(27152, {	-- Unusual Behavior... Even For Gnolls
 								["qg"] = 45147,	-- Daria L'Rayne
 								["sourceQuests"] = { 27151 },	-- Taelan Fordring's Legacy
 							}),
-							q( 27153, {	-- The Good People of Hearthglen
+							q(27153, {	-- The Good People of Hearthglen
 								["qg"] = 45147,	-- Daria L'Rayne
 								["sourceQuests"] = { 27152 },	-- Unusual Behavior... Even For Gnolls
 							}),
-							q( 27154, {	-- Bagging Bisp
+							q(27154, {	-- Bagging Bisp
 								["qg"] = 45147,	-- Daria L'Rayne
 								["sourceQuests"] = { 27153 },	-- The Good People of Hearthglen
 							}),
-							q( 27155, {	-- Turning Yourself In
+							q(27155, {	-- Turning Yourself In
 								["groups"] = {
 									i(62191),	-- Highlord's Favor
 									i(62190),	-- Light-Imbued Lantern
@@ -410,7 +410,7 @@ _.Zones =
 								},
 								["sourceQuests"] = { 27154 },	-- Bagging Bisp
 							}),
-							q( 27053, {	-- Gahrron's Withering Cauldron
+							q(27053, {	-- Gahrron's Withering Cauldron
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 27002,26957 },	-- An Audience with the Highlord, The Long Trip Home
 							}),
@@ -419,11 +419,11 @@ _.Zones =
 									["sourceQuests"] = { 27053 },	-- Gahrron's Withering Cauldron
 								}),
 							}),
-							q( 27054, {	-- Desperate Acts
+							q(27054, {	-- Desperate Acts
 								["qg"] = 44454,	-- Field Agent Kaartish
 								["sourceQuests"] = { 27057 },	-- Return to the Stead
 							}),
-							q( 27055, {	-- Students of Krastinov
+							q(27055, {	-- Students of Krastinov
 								["groups"] = {
 									i(62201),	-- Kaartish's Sword
 									i(62200),	-- Field Agent's Belt
@@ -432,17 +432,17 @@ _.Zones =
 								},
 								["sourceQuests"] = { 27054 },	-- Desperate Acts
 							}),	
-							q( 26953, {	-- Zen'Kiki, the Druid
+							q(26953, {	-- Zen'Kiki, the Druid
 								["qg"] = 44456,	-- Adrine Towhide
 							}),
-							q( 26954, {	-- A Different Approach
+							q(26954, {	-- A Different Approach
 								["qg"] = 44456,	-- Adrine Towhide
 								["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 							}),
-							q( 26956, {	-- I Ain't Sayin' You a Gourd-Digger...
+							q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 								["qg"] = 44457,	-- Selyria Groenveld
 							}),
-							q( 26955, {	-- Zen'Kiki and the Cultists
+							q(26955, {	-- Zen'Kiki and the Cultists
 								["groups"] = {
 									i(62194),	-- Breastplate of the Patient
 									i(62193),	-- Leggings of the Slipper Shifter
@@ -456,16 +456,16 @@ _.Zones =
 					}),
 					n(-168, {	-- Other Quests
 						sz(770, 3, {	-- Sorrow Hill TODO: This should really be Chillwind Camp
-							q( 27683, {	-- Into the Woods
+							q(27683, {	-- Into the Woods
 								["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
 								["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
 							}),
 						}),
 						sz(770, 9, {	-- Northridge Lumber Camp
-							q( 27013, {	-- Too Close for Comfort
+							q(27013, {	-- Too Close for Comfort
 								["qg"] = 44472,	-- Kelly Dumah
 							}),
-							q( 27012, {	-- A Gnoll's Resolve
+							q(27012, {	-- A Gnoll's Resolve
 								["groups"] = {
 									i(62177),	-- Kelly's Booties
 									i(62176),	-- Redpine Cloak
@@ -474,23 +474,23 @@ _.Zones =
 								["qg"] = 44472,	-- Kelly Dumah
 								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 							}),
-								q( 27011, {	-- Redpine Thievery
+								q(27011, {	-- Redpine Thievery
 								["qg"] = 44472,	-- Kelly Dumah
 								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
 							}),
 						}),
 						sz(770, 10, {	-- Hearthglen
-							q( 27156, {	-- It's About Time!
+							q(27156, {	-- It's About Time!
 								["qg"] = 45157,	-- Lieutenant Myner
 							}),
-							q( 27157, {	-- Drudges... <Sigh>
+							q(27157, {	-- Drudges... <Sigh>
 								["qg"] = 45157,	-- Lieutenant Myner
 								["sourceQuests"] = { 27156 },	-- It's About Time!
 							}),
-							q( 26957, {	-- The Long Trip Home
+							q(26957, {	-- The Long Trip Home
 								["qg"] = 44905,	-- 
 							}),
-							q( 27017, {	-- Memories from a Lost Past
+							q(27017, {	-- Memories from a Lost Past
 								["groups"] = {
 									i(62198),  -- Andrea's Locket
 									i(62197),	-- Gahrron's Shoulderguard
@@ -1259,7 +1259,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

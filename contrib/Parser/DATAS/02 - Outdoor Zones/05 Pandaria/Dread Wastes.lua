@@ -5,6 +5,9 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
+			["lvl"] = 84,
+			["achievementID"] = 6978,
+			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",
 			["groups"] = {
 				n(-4, { 	-- Achievemeents
 					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
@@ -21,62 +24,62 @@ _.Zones =
 					}),
 					ach(7284, {	-- Is Another Man's Treasure
 						o(213972, {		-- Blade of the Poisoned Mind
+							["questID"] = 31438,
 							["groups"] = {
 								i(86527),	-- Blade of the Poisoned Mind
 							},
-							["questID"] = 31438,
 						}),
 						o(213967, {		-- Blade of the Prime
+							["questID"] = 31433,
 							["groups"] = {
 								i(86522),	-- Blade of the Prime
 							},
-							["questID"] = 31433,
 						}),
 						o(213970, {	-- Bloodsoaked Chitin Fragment
+							["questID"] = 31436,
 							["groups"] = {
 								i(86525),	-- Blood Soaked Chiten Fragment
 							},
-							["questID"] = 31436,
 						}),
 						o(213969, {		-- Dissector's Staff of Mutation
+							["questID"] = 31435,
 							["groups"] = {
 								i(86524),	-- Dissector's Staff of Mutation
 							},
-							["questID"] = 31435,
 						}),
 						o(213966, {	-- Lucid Amulet
+							["questID"] = 31431,
 							["groups"] = {
 								i(86521),	-- Lucid Amulet of the Agile Mind
 							},
-							["questID"] = 31431,
 						}),
 						o(213964, {		-- Malik's Stalwart Spear
+							["questID"] = 31430,
 							["groups"] = {
 								i(86520),	-- Malik's Stalwart Spear
 							},
-							["questID"] = 31430,
 						}),
 						i(86529, {
 							["qg"] = 65552,	-- Glinting Rapana Whelk
 							["questID"] = 31432,
 						}),
 						o(213968, {		-- Swarming Cleaver of Ka'roz
+							["questID"] = 31434,
 							["groups"] = {
 								i(86523),	-- Swarming Cleaver of Ka'roz
 							},
-							["questID"] = 31434,
 						}),
 						o(213971, {	-- Swarmkeeper's Medallion
+							["questID"] = 31437,
 							["groups"] = {
 								i(86526),	-- Swarmkeeper's Medallion
 							},
-							["questID"] = 31437,
 						}),
 						o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+							["questID"] = 31429,
 							["groups"] = {
 								i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
 							},
-							["questID"] = 31429,
 						}),
 					}),
 					ach(7316, {	-- Over Their Heads (Dread Wastes)
@@ -154,16 +157,6 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-38, {	-- Profession
-					prof(356, {	-- Fishing
-						i(94932, {	-- Tiny Red Carp Pet
-							["description"] = "The Tiny Red Carp can be fished up from Spinefish Schools. Additionally, it can be caught by casting into the Fish of the Day in Kun-Lai Summit.|nAnother way to obtain this pet is by fishing from open Sha-Touched water in Dread Wastes, Kun-Lai Summit, The Jade Forest (Widow's Wail only), and Townlong Steppes.|r",
-						}),
-						i(94935, {	-- Tiny White Carp Pet
-							["description"] = "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r",
-						}),
-					}),
-				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					ach(6540, {		-- Dread Haste Makes Dread Waste
@@ -172,7 +165,7 @@ _.Zones =
 						crit(3),		-- Taste of Amber
 						crit(4),		-- Like a Deck Boss
 					}),
-]]--				
+]]--
 					q(31178, {	-- A Bloody Delight
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
@@ -345,7 +338,7 @@ _.Zones =
 					q(31231, {-- Dreadspinner Extermination
 						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 						["isDaily"] = true,
-					}),	
+					}),
 					q(31439, {	-- Dropping Our Signal
 						["qg"] = 64815,	-- Kor'ik
 					}),
@@ -387,7 +380,7 @@ _.Zones =
 					}),
 					q(31076, {-- Fate of the Stormstouts
 						["qg"] = 62779,	-- Chen Stormstout
-					}),	
+					}),
 					q(31509, {	-- Fear Takes Root
 						["qgs"] = { 63072, 67091 },	-- Rik'kal the Dissector
 						["isDaily"] = true,
@@ -614,7 +607,7 @@ _.Zones =
 					q(31808, {-- Rampage Against the Machine
 						["qg"] = 63758,	-- Kaz'tik the Manipulator
 						["isDaily"] = true,
-					}),	
+					}),
 					q(31189, {	-- Reeltime Strategy
 						["qg"] = 63349,	-- Deck Boss Arie
 					}),
@@ -885,150 +878,190 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(50821, { 		-- Ai-Li Skymirror
-						dr(18, i(87629)),	-- Chestplate of Manifest
-						dr(13, i(86589)), 	-- Ai-Li's Skymirror
-						dr(11, i(87632)),	-- Fearsworn Chestpiece
-						dr(10, {
-							i(87635),	-- Amber-Starched Robes
-							i(87630),	-- Chestpiece of Twinkling Stars
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
-						dr(9, {
-							i(87631),	-- Jiao-Skin Tunic
-							i(87627),	-- Kunchong Carapace Chestguard
-							i(87634),	-- Mazu's Robe
-						}),
-						dr(8, i(87633)),	-- Sharksin Armor
+						["coord"] = { 34.8, 23.2, 422 },
+						["groups"] = {
+							dr(18, i(87629)),	-- Chestplate of Manifest
+							dr(13, i(86589)), 	-- Ai-Li's Skymirror
+							dr(11, i(87632)),	-- Fearsworn Chestpiece
+							dr(10, {
+								i(87635),	-- Amber-Starched Robes
+								i(87630),	-- Chestpiece of Twinkling Stars
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+							dr(9, {
+								i(87631),	-- Jiao-Skin Tunic
+								i(87627),	-- Kunchong Carapace Chestguard
+								i(87634),	-- Mazu's Robe
+							}),
+							dr(8, i(87633)),	-- Sharksin Armor
+						},
 					}),
 					n(66935, {	-- Clamstok
-						i(90170, {	-- Clamstok's Clamshell
-							i(90172),	-- Clamshell Band
-							i(90087),	-- Lobstmourne
-						}),
+						["coord"] = { 27, 69.2, 422 },
+						["groups"] = {
+							i(90170, {	-- Clamstok's Clamshell
+								i(90172),	-- Clamshell Band
+								i(90087),	-- Lobstmourne
+							}),
+						},
 					}),
 					n(50334, { 		-- Dak the Breaker
-						dr(28, i(86567)),	-- Yaungol Wind Chime
-						dr(24, i(87635)),	-- Amber-Starched Robes
-						dr(10, {
-							i(87627),	-- Kunchong Carapace Chestguard
-							i(87634),	-- Mazu's Robe
-						}),
-						dr(9, {
-							i(87630),	-- Chestpiece of Twinkling Stars
-							i(87629),	-- Chestplate of Manifest Dread
-							i(87632),	-- Fearsworn Chestpiece
-							i(87631),	-- Jiao-Skin Tunic
-							i(87633),	-- Sharksin Armor
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
+						["coord"] = { 25.2, 28.6, 422 },
+						["groups"] = {
+							dr(28, i(86567)),	-- Yaungol Wind Chime
+							dr(24, i(87635)),	-- Amber-Starched Robes
+							dr(10, {
+								i(87627),	-- Kunchong Carapace Chestguard
+								i(87634),	-- Mazu's Robe
+							}),
+							dr(9, {
+								i(87630),	-- Chestpiece of Twinkling Stars
+								i(87629),	-- Chestplate of Manifest Dread
+								i(87632),	-- Fearsworn Chestpiece
+								i(87631),	-- Jiao-Skin Tunic
+								i(87633),	-- Sharksin Armor
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+						},
 					}),
 					n(50739, { 		-- Gar'lok
-						dr(23, i(86578)),	-- Eternal Warrior's Sigil
-						dr(20, i(87628)),	-- Spinebreaker Chestpiece
-						dr(11, i(87627)),	-- Kunchong Carapace Chestguard
-						dr(10, {
-							i(87635),	-- Amber-Starched Robes
-							i(87630),	-- Chestpiece of Twinkling Stars
-							i(87629),	-- Chestplate of Manifest Dread
-							i(87632),	-- Fearsworn Chestpiece
-							i(87631),	-- Jiao-Skin Tunic
-						}),
-						dr(9, i(87634)),	-- Mazu's Robe
-						dr(8, i(87633)),	-- Sharkskin Robe
+						["coords"] = {
+							{ 38.8, 29.6, 422 },
+							{ 35.6, 30.8, 422 },
+							{ 39.2, 41.8, 422 },
+						},
+						["groups"] = {
+							dr(23, i(86578)),	-- Eternal Warrior's Sigil
+							dr(20, i(87628)),	-- Spinebreaker Chestpiece
+							dr(11, i(87627)),	-- Kunchong Carapace Chestguard
+							dr(10, {
+								i(87635),	-- Amber-Starched Robes
+								i(87630),	-- Chestpiece of Twinkling Stars
+								i(87629),	-- Chestplate of Manifest Dread
+								i(87632),	-- Fearsworn Chestpiece
+								i(87631),	-- Jiao-Skin Tunic
+							}),
+							dr(9, i(87634)),	-- Mazu's Robe
+							dr(8, i(87633)),	-- Sharkskin Robe
+						},
 					}),
 					n(50836, { 		-- Ik-Ik the Nimble
-						dr(17, i(87634)),	-- Mazu's Robe
-						dr(15, i(87630)),	-- Chestpiece of Twinkling Stars
-						dr(13, i(86593)), 	-- Hozen Beach Ball
-						dr(10, {
-							i(87635),	-- Amber-Starched Robes
-							i(87629),	-- Chestplate of Manifest Dread
-							i(87632),	-- Fearsworn Chestpiece
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
-						dr(9, {
-							i(87631),	-- Jiao-Skin Tunic
-							i(87627),	-- Kunchong Carapace Chestguard
-						}),
-						dr(8, i(87633)),	-- Sharkskin Armor
+						["coord"] = { 55.4, 63.4, 422 },
+						["description"] = { "Burrow entrance at 54.9, 65.7" },
+						["groups"] = {
+							dr(17, i(87634)),	-- Mazu's Robe
+							dr(15, i(87630)),	-- Chestpiece of Twinkling Stars
+							dr(13, i(86593)), 	-- Hozen Beach Ball
+							dr(10, {
+								i(87635),	-- Amber-Starched Robes
+								i(87629),	-- Chestplate of Manifest Dread
+								i(87632),	-- Fearsworn Chestpiece
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+							dr(9, {
+								i(87631),	-- Jiao-Skin Tunic
+								i(87627),	-- Kunchong Carapace Chestguard
+							}),
+							dr(8, i(87633)),	-- Sharkskin Armor
+						},
 					}),
 					n(50347, { 		-- Karr the Darkener
-						dr(18, i(87634)),	-- Mazu's Robe
-						dr(17, i(87630)),	-- Chestpiece of Twinkling Stars
-						dr(10, {
-							i(87635),	-- Amber-Starched Robes
-							i(87629),	-- Chestplate of Manifest Dread
-						}),
-						dr(9, {
-							i(87632),	-- Fearsworn Chestpiece
-							i(87627),	-- Kunchong Carapace Chestguard
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
-						dr(8, {
-							i(87633),	-- Sharkskin Armor
-							i(87631),	-- Jiao-Skin Tunic
-							i(86564),	-- Imbued Jade Fragment
-						}),
+						["coord"] = { 71.8, 37.6, 422 },
+						["groups"] = {
+							dr(18, i(87634)),	-- Mazu's Robe
+							dr(17, i(87630)),	-- Chestpiece of Twinkling Stars
+							dr(10, {
+								i(87635),	-- Amber-Starched Robes
+								i(87629),	-- Chestplate of Manifest Dread
+							}),
+							dr(9, {
+								i(87632),	-- Fearsworn Chestpiece
+								i(87627),	-- Kunchong Carapace Chestguard
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+							dr(8, {
+								i(87633),	-- Sharkskin Armor
+								i(87631),	-- Jiao-Skin Tunic
+								i(86564),	-- Imbued Jade Fragment
+							}),
+						},
 					}),
 					n(50356, { 		-- Krol the Blade
-						dr(15, i(87629)),	-- Chestplate of Manifest Dread
-						dr(12, i(87634)),	-- Mazu's Robe
-						dr(11, {
-							i(87630),	-- Chestpiece of Twinkling Stars
-							i(87631),	-- Jiao-Skin Tunic
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
-						dr(10, {
-							i(87635),	-- Amber-Starched Robes
-							i(87632),	-- Fearsworn Chestpiece
-							i(87627),	-- Kunchong Carapace Chestguard
-						}),
-						dr(8, {
-							i(87633),	-- Sharkskin Armor
-							i(86574),	-- Elixir of Ancient Knowledge
-						}),
+						["coords"] = {
+							{ 74.2, 20.4, 422 },
+							{ 72.8, 22.2, 422 },
+						},
+						["groups"] = {
+							dr(15, i(87629)),	-- Chestplate of Manifest Dread
+							dr(12, i(87634)),	-- Mazu's Robe
+							dr(11, {
+								i(87630),	-- Chestpiece of Twinkling Stars
+								i(87631),	-- Jiao-Skin Tunic
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+							dr(10, {
+								i(87635),	-- Amber-Starched Robes
+								i(87632),	-- Fearsworn Chestpiece
+								i(87627),	-- Kunchong Carapace Chestguard
+							}),
+							dr(8, {
+								i(87633),	-- Sharkskin Armor
+								i(86574),	-- Elixir of Ancient Knowledge
+							}),
+						},
 					}),
 					n(50776, { 		-- Nalash Verdantis
-						dr(15, {
-							i(87635),	-- Amber-Starched Robes
-							i(87628),	-- Spinebreaker Chestpiece
-						}),
-						dr(13, i(87630)),	-- Chestpiece of Twinkling Stars
-						dr(10, i(87632)),	-- Fearsworn Chestpiece
-						dr(9, {
-							i(87629),	-- Chestplate of Manifest Dread
-							i(86563),	-- Hollow Reed
-							i(87631),	-- Jiao-Skin Tunic
-							i(87627),	-- Kunchong Carapace Chestguard
-							i(87634),	-- Mazu's Robe
-						}),
-						dr(8, {
-							i(87633),	-- Sharkskin Armor
-						}),
+						["coord"] = { 64.2, 58.6, 422 },
+						["groups"] = {
+							dr(15, {
+								i(87635),	-- Amber-Starched Robes
+								i(87628),	-- Spinebreaker Chestpiece
+							}),
+							dr(13, i(87630)),	-- Chestpiece of Twinkling Stars
+							dr(10, i(87632)),	-- Fearsworn Chestpiece
+							dr(9, {
+								i(87629),	-- Chestplate of Manifest Dread
+								i(86563),	-- Hollow Reed
+								i(87631),	-- Jiao-Skin Tunic
+								i(87627),	-- Kunchong Carapace Chestguard
+								i(87634),	-- Mazu's Robe
+							}),
+							dr(8, {
+								i(87633),	-- Sharkskin Armor
+							}),
+						},
 					}),
 					n(50805, { 		-- Omnis Grinlok
-						dr(26, i(86585)),	-- Golden Fleece
-						dr(18, i(87628)),	-- Spinebreaker Chestpiece
-						dr(11, {
-							i(87635),	-- Amber-Starched Robes
-							i(87632),	-- Fearsworn Chestpiece
-						}),
-						dr(10, {
-							i(87629),	-- Chestplate of Manifest Dread
-							i(87631),	-- Jiao-Skin Tunic
-							i(87634),	-- Mazu's Robe
-						}),
-						dr(9, {
-							i(87627),	-- Kunchong Carapace Chestguard
-							i(87630),	-- Chestpiece of Twinkling Stars
-						}),
-						dr(8, i(87633)),	-- Sharkskin Armor
+						["coords"] = {
+							{ 38.2, 58.0, 422 },
+							{ 39.2, 62.4, 422 },
+							{ 36.6, 64.2, 422 },
+							{ 36.4, 61.2, 422 },
+						},
+						["groups"] = {
+							dr(26, i(86585)),	-- Golden Fleece
+							dr(18, i(87628)),	-- Spinebreaker Chestpiece
+							dr(11, {
+								i(87635),	-- Amber-Starched Robes
+								i(87632),	-- Fearsworn Chestpiece
+							}),
+							dr(10, {
+								i(87629),	-- Chestplate of Manifest Dread
+								i(87631),	-- Jiao-Skin Tunic
+								i(87634),	-- Mazu's Robe
+							}),
+							dr(9, {
+								i(87627),	-- Kunchong Carapace Chestguard
+								i(87630),	-- Chestpiece of Twinkling Stars
+							}),
+							dr(8, i(87633)),	-- Sharkskin Armor
+						},
 					}),
 					{	-- Zandalari Warbringer
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1043,7 +1076,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1058,7 +1091,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1147,9 +1180,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 84,
-			["achievementID"] = 6978,
-			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",
 		}),
 	}),
 };

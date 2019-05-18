@@ -122,15 +122,15 @@ _.Zones =
 								q(51527, {	-- Executioner Blackwell
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 								}),
-								q(51761, {	-- Familiar Foes [H]
+								q(51761, {	-- Familiar Foes [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
-								q(51588, {	-- Familiar Foes [A]
+								q(51588, {	-- Familiar Foes [Alliance]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
-								{	-- Fly the Coop! [A]
+								{	-- Fly the Coop! [Alliance]
 									["questID"] = 51658, 	-- Fly the Coop!
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -151,11 +151,11 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = HORDE_ONLY,
 								},
-								q(51604, {	-- Hunters Hunted [A]
+								q(51604, {	-- Hunters Hunted [Alliance]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
-								q(51764, {	-- Hunters Hunted [H]
+								q(51764, {	-- Hunters Hunted [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
@@ -173,9 +173,6 @@ _.Zones =
 									["groups"] = {
 										{
 											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
 										},
 									},
 								},
@@ -185,9 +182,6 @@ _.Zones =
 									["groups"] = {
 										{
 											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
 										},
 									},
 								},
@@ -213,7 +207,7 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
 								},
-								{	-- Once More Into Battle [A]
+								{	-- Once More Into Battle [Alliance]
 									["questID"] = 51454,	-- Once More Into Battle
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
@@ -280,15 +274,23 @@ _.Zones =
 									["isWQ"] = 120,
 									["races"] = ALLIANCE_ONLY,
 								},
-								q(51767, {	-- Trapline [H]
+								{	-- This Bird You Cannot Change
+									["questID"] = 51667,	-- This Bird You Cannot Change
+									["g"] = {
+										i(157845),	-- Falconer's Whistle
+									},
+									["isWQ"] = 120,
+									["races"] = ALLIANCE_ONLY,
+								},
+								q(51767, {	-- Trapline [Horde]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = HORDE_ONLY,
 								}),
-								q(51619, {	-- Trapline [A]
+								q(51619, {	-- Trapline [Alliance]
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,
 								}),
-								{	-- Up In Your Drill [A]
+								{	-- Up In Your Drill [Alliance]
 									["questID"] = 51397, 	-- Up In Your Drill
 									["isWQ"] = 120,		-- Enables WQ filter for Level 120
 									["races"] = ALLIANCE_ONLY,

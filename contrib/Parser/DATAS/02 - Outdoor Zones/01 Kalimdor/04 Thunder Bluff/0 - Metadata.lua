@@ -6,14 +6,14 @@ _.Zones =
 	m(12, {	-- Kalimdor	
 		m(88, {	-- Thunder Bluff
 		--[[
-			n( -3, {	-- Holidays
+			n(-3, {	-- Holidays
 				n(-47, {     -- Lunar Festival
 					["groups"] = {
 						n(-17, { 	-- Quests
 							qg(15895, q(8867)),	-- Lunar Fireworks
-							qg(15891, qh( 8873)),	-- The Lunar Festival
-							qg(15891, qh( 8874)),	-- The Lunar Festival
-							qg(15891, qh( 8875)),	-- The Lunar Festival
+							qg(15891, qh(8873)),	-- The Lunar Festival
+							qg(15891, qh(8874)),	-- The Lunar Festival
+							qg(15891, qh(8875)),	-- The Lunar Festival
 							qg(15895, q(8883)),	-- Valadar Starsong
 							q(8678, {	-- Wheathoof the Elder			
 								["groups"] = {			
@@ -125,8 +125,8 @@ _.Zones =
 				n(-61, {     -- Feast of Winter Veil
 					["groups"] = {
 						n(-17, { 	-- Quests
-							qg(13431, qh( 7021)),	-- Great-father Winter is Here!
-							qg(15732, qh( 8861)),	-- New Year Celebrations!
+							qg(13431, qh(7021)),	-- Great-father Winter is Here!
+							qg(15732, qh(8861)),	-- New Year Celebrations!
 						}),
 						n(-2, { 	-- Vendors
 							n(13432, {	-- Seersa Jinglepocket

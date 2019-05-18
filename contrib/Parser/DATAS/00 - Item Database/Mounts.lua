@@ -137,16 +137,16 @@ i(161479, 275623);	-- Nazjatar Blood Serpent
 i(159146, 267270);	-- Kua'fon's Harness
 i(164250, 281044);	-- Prestigious Bloodforged Courser
 i(163131, 278803);	-- Great Sea Ray
-i(152869, 242897);	-- Vicious War Fox [H]
-i(152870, 242896);	-- Vicious War Fox [A]
+i(152869, 242897);	-- Vicious War Fox [Horde]
+i(152870, 242896);	-- Vicious War Fox [Alliance]
 i(160589, 272770);	-- The Dreadwake
 i(161331, 271646);	-- Dark Iron Core Hound
 i(157870, 263707);	-- Zandalari Direhorn
 i(161134, 261437);	-- Mecha-Mogul Mk2
 i(153493, 243201);	-- Demonic Gladiator's Storm Dragon
 i(156879, 262022);	-- Dread Gladiator's Proto-Drake
-i(163123, 272481);	-- Vicious War Riverbeast [A]
-i(163124, 270560);	-- Vicious War Clefthoof [H]
+i(163123, 272481);	-- Vicious War Riverbeast [Alliance]
+i(163124, 270560);	-- Vicious War Clefthoof [Horde]
 i(151625, 239767);	-- Red Qiraji War Tank
 i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
 i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)

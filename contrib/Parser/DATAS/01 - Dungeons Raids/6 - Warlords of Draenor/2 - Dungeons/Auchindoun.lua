@@ -229,7 +229,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {		-- Heroic
 				["lvl"] = 100,
 				["groups"] = {
-					n(-17, {	-- Quests 		
+					n(-17, {	-- Quests
 						q(37156, {
 							i(119039),	-- Lilian's Warning Sign Toy
 						}),

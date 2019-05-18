@@ -45,7 +45,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				},
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				{	-- Acanthia's Lost Pendant
 					["itemID"] = 55791,	-- Acanthia's Lost Pendant
 					["crs"] = {

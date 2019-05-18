@@ -160,15 +160,6 @@ _.Zones =
 									["races"] = ALLIANCE_ONLY,
 								}),
 								-- INCURSIONS INFO STARTS HERE
-								-- not sure if cache should be attached to quests or just indicated with a description
-								-- also not sure where this stuff should live!  help!  i'm a libra and i can't make decisions!  it's not my fault!
-								--[[
-								qa(53711),	-- A Sound Defense (Tiragarde Sound)
-								qa(51982),	-- Storm's Rage (Stormsong Valley)
-								qa(53701),	-- A Drust Cause (Drustvar)
-								qa(54134),	-- Many Fine Heroes (Vol'dun
-								qa(54136),	-- March on the Marsh (Nazmir)
-								qa(54138),	-- Ritual Rampage (Zuldazar)
 								i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 									["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
 									["g"] = bubbleDown({["modID"] = 6}, {
@@ -226,7 +217,6 @@ _.Zones =
 										i(163883),	-- 7th Legionnaire's Warhammer
 									}),
 								}),
-								--]]
 							},
 						}),
 					},

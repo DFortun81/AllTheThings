@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(12, {	-- Kalimdor	
+	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			["groups"] = {
 				n(-25, {	-- Pet Battle

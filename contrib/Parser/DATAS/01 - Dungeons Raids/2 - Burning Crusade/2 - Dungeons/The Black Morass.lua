@@ -6,7 +6,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(255, { 	-- The Black Morass
 		["lvl"] = 65,
 		["mapID"] = 273,
-		["coord"] = { 36.05, 83.22, 75 },	-- The Black Morass, Caverns of Time [Tanaris]
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 37.2, 83.3, 75 },	-- actual dungeon entrance
+		},
 		["groups"] = {
 			n(-17, {
 				q(10297, {	-- The Opening of the Dark Portal

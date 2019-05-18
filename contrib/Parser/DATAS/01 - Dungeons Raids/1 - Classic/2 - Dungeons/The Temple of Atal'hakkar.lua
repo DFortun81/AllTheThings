@@ -24,8 +24,8 @@ _.Instances = { tier(1, {	-- Classic
 					["questID"] = 27633,	-- The Blood God Hakkar
 					["qg"] = 46077,	-- Lord Itharius
 				},
-			}),				
-			n(  0, {	-- Zone Drop
+			}),
+			n(0, {	-- Zone Drop
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
 						5721,	-- Dreamscythe
@@ -48,7 +48,7 @@ _.Instances = { tier(1, {	-- Classic
 						5283,	-- Nightmare Wanderer
 						8319,	-- Nightmare Whelp
 						5280,	-- Nightmare Wyrmkin
-						
+
 					},
 				}),
 				i(10627, {	-- Bludgeon of the Grinning Dog
@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(10808),	-- Gloves of the Atal'ai Prophet
 				i(10807),	-- Kilt of the Atal'ai Prophet
 			})),
-			e(  459, { 			-- Wardens of the Dream
+			e(459, { 			-- Wardens of the Dream
 				["crs"] = {
 					5721,	-- Dreamscythe
 					5722,	-- Hazzas
@@ -333,7 +333,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 					}),
-					n(  0, {	-- Zone Drop (Legacy)
+					n(0, {	-- Zone Drop (Legacy)
 						un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
 					}),
 					un(2, n(-1, {	-- Common Boss Drop

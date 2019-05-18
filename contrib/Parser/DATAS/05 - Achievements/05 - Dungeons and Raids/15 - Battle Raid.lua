@@ -53,21 +53,69 @@ _.Achievements =
 					ach(13316),		-- Can I Get a Hek Hek Hek Yeah?
 					ach(13414),		-- Crucible of Storms
 					ach(13430),		-- De Lurker Be'loa
-					h(ach(13290, {	-- Death's Bargain
-						crit(1),		-- Opulence
-						crit(2),		-- Conclave of the Chosen
-						crit(3),		-- King Rastakhan
-					})),
-					h(ach(13289, {	-- Defense of Dazar'alor
-						crit(1),		-- Champion of the Light
-						crit(2),		-- Grong
-						crit(3),		-- Jadefire Masters
-					})),
-					a(ach(13287, {	-- Empire's Fall
-						crit(1),		-- Opulence
-						crit(2),		-- Loa Council
-						crit(3),		-- King Rastakhan
-					})),
+					{  -- Siege of Dazar'alor [Alliance] // Defense of Dazar'alor [Horde]
+						["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
+						["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
+						["g"] = {
+							{
+								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
+								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
+								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
+							},
+							{
+								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
+								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
+								["criteriaID"] = 2,	-- Grong [Alliance] // [Horde]
+							},
+							{
+								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
+								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
+								["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
+							},
+						},
+					},
+					{  --  Empire's Fall [Alliance] // Death's Bargain [Horde]
+						["allianceAchievementID"] = 13287,	-- Empire's Fall
+						["hordeAchievementID"] = 13290,		-- Death's Bargain
+						["g"] = {
+							{
+								["allianceAchievementID"] = 13287,	-- Empire's Fall
+								["hordeAchievementID"] = 13290,		-- Death's Bargain
+								["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
+							},
+							{
+								["allianceAchievementID"] = 13287,	-- Empire's Fall
+								["hordeAchievementID"] = 13290,		-- Death's Bargain
+								["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen[Horde]
+							},
+							{
+								["allianceAchievementID"] = 13287,	-- Empire's Fall
+								["hordeAchievementID"] = 13290,		-- Death's Bargain
+								["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
+							},
+						},
+					},
+					{  -- Might of the Alliance [Alliance] // Victory or Death [Horde]
+						["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+						["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+						["g"] = {
+							{
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
+							},
+							{
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
+							},
+							{
+								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
+								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
+								["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
+							},
+						},
+					},
 					ach(13501),		-- Gotta Bounce
 					ach(13414, {	-- Crucible of Storms
 						crit(1),		-- The Restless Cabal
@@ -75,16 +123,13 @@ _.Achievements =
 					}),
 					ach(13431),		-- Hidden Dragon
 					ach(13401),		-- I Got Next!
-					a(ach(13288, {	-- Might of the Alliance
-						crit(1),		-- Mekkatorque
-						crit(2),		-- Stormwall Blockade
-						crit(3),		-- Lady Jaina Proudmoore
-					})),
 					ach(13292),		-- Mythic: Champion of the Light
 					ach(13300),		-- Mythic: Conclave of the Chosen
-					ach(12532),		-- Mythic: Grong
-					a(ach(13293)),	-- Mythic: Jadefire Masters
-					h(ach(13295)),	-- Mythic: Jadefire Masters
+					ach(13293),		-- Mythic: Grong
+					{  -- Mythic: Jadefire Masters [Alliance] // [Horde]
+						["allianceAchievementID"] = 13298,	-- Mythic: Jadefire Masters (A)
+						["hordeAchievementID"] = 13295,		-- Mythic: Jadefire Masters (H)
+					},
 					ach(13311),		-- Mythic: King Rastakhan
 					ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 						title(386),		-- Hero of Dazar'alor" [TITLE]
@@ -95,17 +140,7 @@ _.Achievements =
 					ach(13416),		-- Mythic: The Restless Cabal
 					ach(13417),		-- Mythic: Uu'nat, Harbinger of the Void
 					ach(13345),		-- Praise the Sunflower
-					a(ach(13286, {	-- Siege of Dazar'alor
-						crit(1),		-- Champion of the Light
-						crit(2),		-- Grong the Revenant
-						crit(3),		-- Jadefire Masters
-					})),
 					ach(13410),		-- Snow Fun Allowed
-					h(ach(13291, {	-- Victory or Death
-						crit(1),		-- Mekkatorque
-						crit(2),		-- Stormwall Blockade
-						crit(3),		-- Lady Jaina Proudmoore
-					})),
 					ach(13325),		-- Walk the Dinosaur
 					ach(13425),		-- We Got Spirit, How About You?
 				},

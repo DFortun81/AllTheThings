@@ -17,6 +17,7 @@ BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
+BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"];
 
 BINDING_HEADER_ALLTHETHINGS_MODULES = L["MODULES"];
 BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"];
@@ -123,6 +124,7 @@ local TooltipSettingsBase = {
 		["MinimapSize"] = 36,
 		["MinimapStyle"] = true,
 		["Models"] = true,
+		["LiveScan"] = false,
 		["Locations"] = 5,
 		["Precision"] = 2,
 		["Progress"] = true,
@@ -1545,7 +1547,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 2, 3, 10, 9 }) do
+for i,filterID in ipairs({ 11, 2, 3, 10, 9, 33, 32, 31 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
@@ -1553,17 +1555,6 @@ for i,filterID in ipairs({ 2, 3, 10, 9 }) do
 	xoffset = 0;
 	yoffset = 6;
 end
-
--- Ranged Weapons
-yoffset = -4;
-for i,filterID in ipairs({ 33, 32, 31, }) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("BOTTOMLEFT", settings, "BOTTOMLEFT", 8, 8);
@@ -1704,7 +1695,7 @@ table.insert(settings.MostRecentTab.objects, scrollFrame);
 
 local child = CreateFrame("Frame", nil, scrollFrame);
 child:SetPoint("TOP", 0, 0);
-child:SetSize(600, 2000);
+child:SetSize(600, 2500);
 scrollbar.child = child;
 table.insert(settings.MostRecentTab.objects, child);
 child.CreateCheckBox = function(self, label, onRefresh, onClick)
@@ -1825,7 +1816,7 @@ local unobtainableFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate")
 unobtainableFrame:SetPoint("TOP",unobtainable,0,-20);
 unobtainableFrame:SetPoint("LEFT", child, 4, 0);
 unobtainableFrame:SetPoint("RIGHT", child, -4, 0);
-unobtainableFrame:SetHeight(520);
+unobtainableFrame:SetHeight(535);
 
 -- unobtainable enable
 local unobtainableEnable = child:CreateCheckBox("Filter Unobtainable Items",
@@ -1966,7 +1957,7 @@ local possChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 possChanceFrame:SetPoint("TOP",possChance,0,-20);
 possChanceFrame:SetPoint("LEFT", child, 4, 0);
 possChanceFrame:SetPoint("RIGHT", child, -4, 0);
-possChanceFrame:SetHeight(60);
+possChanceFrame:SetHeight(75);
 
 -- possible Everything
 local possChanceAll = child:CreateCheckBox("Enable All \"Possible Chance\"",
@@ -2030,7 +2021,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		x = 0;
 		y = 20;
 		count = count + 1;
-		if count == 2 then
+		if count == 3 then
 			x = 300
 			y = 5
 			last = possChanceFrame
@@ -2047,7 +2038,7 @@ local highChanceFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 highChanceFrame:SetPoint("TOP",highChance,0,-20);
 highChanceFrame:SetPoint("LEFT", child, 4, 0);
 highChanceFrame:SetPoint("RIGHT", child, -4, 0);
-highChanceFrame:SetHeight(80);
+highChanceFrame:SetHeight(90);
 
 -- high Everything
 local highChanceAll = child:CreateCheckBox("Enable All \"High Chance\"",
@@ -2111,7 +2102,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		x = 0;
 		y = 20;
 		count = count + 1;
-		if count == 3 then
+		if count == 4 then
 			x = 300
 			y = 5
 			last = highChanceFrame
@@ -2121,14 +2112,14 @@ end
 
 -- Legacy
 local legacy = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*20)))
+legacy:SetPoint("TOPLEFT", highChance, 0, -(highChanceFrame:GetHeight() + (2*15)))
 legacy:SetText("Legacy");
 
 local legacyFrame = CreateFrame("Frame", nil, child, "ThinBorderTemplate");
 legacyFrame:SetPoint("TOP",legacy,0,-20);
 legacyFrame:SetPoint("LEFT", child, 4, 0);
 legacyFrame:SetPoint("RIGHT", child, -4, 0);
-legacyFrame:SetHeight(100);
+legacyFrame:SetHeight(150);
 
 -- Legacy Everything
 local legacyAll = child:CreateCheckBox("Enable All \"Legacy\"",
@@ -2714,7 +2705,7 @@ local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as Report Bugs / Missing Items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT. (general WoW Addon Programming as well)\n\n- |r|Cffff8000Crieve (DFortun81)|CFFFFFFFF\n\nPS: As a community, we're currently focussing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic. (nor should there be)\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r");
+AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as Report Bugs / Missing Items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT. (general WoW Addon Programming as well)\n\n- |r|Cffff8000Crieve (DFortun81)|CFFFFFFFF\n\nPS: As a community, we're currently focusing on Legion Raid Transmog, so if you're interested in this, we form groups on Fridays and Saturdays at 3 PM Arizona Time. Search Premade Group finder for \"CRIEVE\" around this time and you'll likely find our group!\n\n\n\nI keep getting this question:\nYes, there will be a version of ATT for Classic WoW. It will simply be a loot and quest tracker as obviously there will be no transmog collecting in Classic. (nor should there be)\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r");
 AboutText:Show();
 table.insert(settings.MostRecentTab.objects, AboutText);
 
@@ -2723,7 +2714,7 @@ ShoutoutText:SetPoint("LEFT", AboutText, "LEFT", 0, 0);
 ShoutoutText:SetPoint("RIGHT", AboutText, "RIGHT", 0, 0);
 ShoutoutText:SetPoint("BOTTOM", settings, "BOTTOM", 0, 8);
 ShoutoutText:SetJustifyH("LEFT");
-ShoutoutText:SetText("Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  " .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r");
+ShoutoutText:SetText("Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  " .. L["COLLECTED_ICON"] .. " " .. L["COLLECTED_APPEARANCE_ICON"] .. " " ..L["NOT_COLLECTED_ICON"] .. "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r");
 ShoutoutText:Show();
 table.insert(settings.MostRecentTab.objects, ShoutoutText);
 end)();

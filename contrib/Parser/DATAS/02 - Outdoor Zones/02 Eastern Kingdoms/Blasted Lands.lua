@@ -7,19 +7,19 @@ _.Zones =
 		m(17, {	-- Blasted Lands
 			["groups"] = {					
 				n(-228, {	-- Flight Paths
-					fp(604, {	-- Dreadmaul Hold, Blasted Lands [H]
+					fp(604, {	-- Dreadmaul Hold, Blasted Lands [Horde]
 						["description"] = "Dreadmaul Hold, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 43.6, 14.2 },
 					}),
-					fp(45, {	-- Nethergarde Keep, Blasted Lands [A]
+					fp(45, {	-- Nethergarde Keep, Blasted Lands [Alliance]
 						["description"] = "Nethergarde Keep, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 61.2, 21.6 },
 					}),
-					fp(603, {	-- Sunveil Excursion, Blasted Lands [H]
+					fp(603, {	-- Sunveil Excursion, Blasted Lands [Horde]
 						["description"] = "Sunveil Excursion, Blasted Lands - Horde Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 50.8, 72.8 },
 					}),
-					fp(602, {	-- Surwich, Blasted Lands [A]
+					fp(602, {	-- Surwich, Blasted Lands [Alliance]
 						["description"] = "Surwich, Blasted Lands - Alliance Only \n\nSpeak to Zidormi to visit the past to access this point.",
 						["coord"] = { 47, 89.2 },
 					}),
@@ -459,7 +459,7 @@ _.Zones =
 					qg(19254, qh(25696)),	-- The Sunveil Excursion
 					qg(41159, qh(25692)),	-- The Vile Blood of Demons
 					qg(42299, qa(26165)),	-- The Vile Blood of Demons
-					qg(19254, qh( 9407)),	-- Through the Dark Portal
+					qg(19254, qh(9407)),	-- Through the Dark Portal
 					qg(16841, qa(10119)),	-- Through the Dark Portal
 					qg(42298, qa(26163)),	-- Time is Short
 					qg(7783, qh(25689)),	-- Time is Short
@@ -1301,7 +1301,7 @@ _.Zones =
 								un(7, i(18665)), 	-- The Eye of Shadow
 							}),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

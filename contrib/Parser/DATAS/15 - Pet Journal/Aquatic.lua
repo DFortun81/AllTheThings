@@ -8,13 +8,15 @@ _.PetJournal =
 		p(836), 	-- Aqua Strider
 		p(2425),	-- Barnacled Hermit Crab
 		p(2385),	-- Barrier Hermit
-		p(2576),	-- Beakbert
+		p(2576, {	-- Beakbert
+			["u"] = 20,	-- Children's Week
+		}),
 		p(1934), 	-- Benax
 		p(649), 	-- Biletoad
 		p(1753), 	-- Bleakwater Jelly
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
-		p(2479),	-- Bucketshell
+		h(p(2479)),	-- Bucketshell
 		p(174), 	-- Chuck
 		p(2400),	-- Coastal Bounder
 		p(2386),	-- Coastal Scuttler
@@ -33,7 +35,9 @@ _.PetJournal =
 		p(2374),	-- Freshwater Crawler
 		p(2423),	-- Freshwater Pincher
 		p(495), 	-- Frog
-		p(2577),	-- Froglet
+		p(2577, {	-- Froglet
+			["u"] = 20,	-- Children's Week
+		}),
 		p(1578), 	-- Frostshell Pincher
 		p(1237), 	-- Gahz'rooki
 		p(569), 	-- Garden Frog
@@ -68,15 +72,21 @@ _.PetJournal =
 		p(737), 	-- Mongoose
 		p(739), 	-- Mongoose Pup
 		p(1447), 	-- Moonshell Crab
-		un(2, p(192)), 	-- Mr. Chilly
-		p(2575),	-- Mr. Crabs
+		p(192, { 	-- Mr. Chilly
+			["u"] = 2,	-- Removed, BoP or BoA
+		}),
+		p(2575, {	-- Mr. Crabs
+			["u"] = 20,	-- Children's Week
+		}),
 		p(164), 	-- Muckbreath
 		p(1441), 	-- Mud Jumper
 		p(2462),	-- Octopode Fry
 		p(198), 	-- Pengu
 		p(1755), 	-- Plump Jelly
 		p(1568), 	-- Puddle Terror
-		un(10, p(328)), 	-- Purple Puffer
+		p(328, { 	-- Purple Puffer
+			["u"] = 10,	-- TCG
+		}),
 		p(2373),	-- River Frog
 		p(2378),	-- River Otter
 		p(2377),	-- Sandyback Crawler
@@ -90,7 +100,7 @@ _.PetJournal =
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
-		p(2478);	-- Sir Snips
+		a(p(2478));	-- Sir Snips
 		p(2475),	-- Slippy
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
@@ -100,7 +110,9 @@ _.PetJournal =
 		p(2446),	-- Sparkleshell Sandcrawler
 		p(1201), 	-- Spawn of G'nathus
 		p(2528),	-- Spawn of Krag'wa
-		un(20, p(125)), 	-- Speedy
+		p(125, { 	-- Speedy
+			["u"] = 20,	-- Children's Week
+		}),
 		p(1337), 	-- Spineclaw Crab
 		p(723), 	-- Spiny Terrapin
 		p(572), 	-- Spirebound Crab
@@ -120,7 +132,9 @@ _.PetJournal =
 		p(420), 	-- Toad
 		p(2559),	-- Tonguelasher
 		p(163), 	-- Toothy
-		un(6, p(2143)),	-- Tottle
+		p(2143, {	-- Tottle
+			["u"] = 6,	-- Collector's Edition
+		}),
 		p(2415),	-- Tragg the Curious
 		p(65), 		-- Tree Frog
 		p(536), 	-- Tundra Penguin

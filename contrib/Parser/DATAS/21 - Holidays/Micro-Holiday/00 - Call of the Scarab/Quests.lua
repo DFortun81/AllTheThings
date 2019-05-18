@@ -5,12 +5,12 @@ _.Holidays =
 {
 	{	-- Call of the Scarab
 		["holidayID"] = 1574965,	-- Call of the Scarab
-		["u"] = 44,					-- Micro-Holiday Filter
+		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
 				["g"] = {
-					{	-- Call of the Scarab [A]
+					{	-- Call of the Scarab [Alliance]
 						["questID"] = 45787,	-- Call of the Scarab
 						["lvl"] = 40,			-- Required Level
 						["qgs"] = {
@@ -20,7 +20,7 @@ _.Holidays =
 							{ 34.06, 80.43, 81 },	-- Field Marshal Snowfall
 						},
 					},
-					{	-- Call of the Scarab [H]
+					{	-- Call of the Scarab [Horde]
 						["questID"] = 45785,	-- Call of the Scarab
 						["lvl"] = 40,			-- Required Level
 						["qgs"] = {

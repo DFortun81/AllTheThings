@@ -232,7 +232,7 @@ _.Zones =
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
+								--n(0, {	-- Zone Drop (Legacy)
 								--}),
 							},
 							["u"] = 2,
@@ -1060,7 +1060,7 @@ _.Zones =
 								}),
 								--n(-16, {	-- Rares (Legacy)
 								--}),
-								--n(  0, {	-- Zone Drop (Legacy)
+								--n(0, {	-- Zone Drop (Legacy)
 								--}),
 							},
 							["u"] = 2,

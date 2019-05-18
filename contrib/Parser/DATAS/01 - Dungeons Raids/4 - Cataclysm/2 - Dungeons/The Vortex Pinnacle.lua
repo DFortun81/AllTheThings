@@ -29,7 +29,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(1,   {	-- Normal
 				n(0, {	-- Zone Drop
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
@@ -97,9 +97,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 				})),
 				cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
-					{    -- The Vortex Pinnacle
-						["achievementID"] = 4847,    -- The Vortex Pinnacle
-					},
+					ach(4847),    -- The Vortex Pinnacle
 					i(56366),	-- Lightningflash
 					i(56374),	-- Lunar Halo
 					i(56369),	-- Billowing Cape
@@ -123,7 +121,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 				})),
 			}),
-			d(2, {	-- Heroic
+			d(2,   {	-- Heroic
 				["lvl"] = 85,
 				["ignoreBonus"] = true,
 				["groups"] = {
@@ -183,7 +181,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 				},
 			}),
-			d(24, {	-- Timewalking
+			d(24,  {	-- Timewalking
 				["lvl"] = 86,
 				["groups"] = {
 					cr(43878, e(114, {	-- Grand Vizier Ertan

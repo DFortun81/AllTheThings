@@ -37,28 +37,58 @@ _.Achievements =
 					ach(1936),		-- Does Your Wolpertinger Linger?
 					ach(1186),		-- Down With The Dark Iron
 					ach(303),		-- Have Keg, Will Travel
-					a(ach(1184, {	-- Strange Brew (Alliance)
-						crit(1),		-- Barleybrew Clear
-						crit(2),		-- Barleybrew Dark
-						crit(3),		-- Barleybrew Light
-						crit(4),		-- Gordok Grog
-						crit(5),		-- Mudder's Milk
-						crit(6),		-- Ogre Mead
-						crit(7),		-- Thunder 45
-						crit(8),		-- Thunderbrew Ale
-						crit(9),		-- Thunderbrew Stout
-					})),
-					h(ach(1203, {	-- Strange Brew (Horde)
-						crit(1),		-- Brewdoo Magic
-						crit(2),		-- Gordok Grog
-						crit(3),		-- Jungle River Water
-						crit(4),		-- Long Stride Brew
-						crit(5),		-- Mudder's Milk
-						crit(6),		-- Ogre Mead
-						crit(7),		-- Path of Brew
-						crit(8),		-- Small Step Brew
-						crit(9),		-- Stout Shrunken Head
-					})),
+					{	-- Strange Brew
+						["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+						["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+						["u"] = 24,							-- Brewfest Filter
+						["g"] = {
+							{	-- Barleybrew Clear // Brewdoo Magic
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 1,					-- Barleybrew Clear // Brewdoo Magic
+							},
+							{	-- Barleybrew Dark // Gordok Grog
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 2,					-- Barleybrew Dark // Gordok Grog
+							},
+							{	-- Barleybrew Light // Jungle River Water
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 3,					-- Barleybrew Light // Jungle River Water
+							},
+							{	-- Gordok Grog // Long Stride Brew
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 4,					-- Gordok Grog // Long Stride Brew
+							},
+							{	-- Mudder's Milk // Mudder's Milk
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 5,					-- Mudder's Milk // Mudder's Milk
+							},
+							{	-- Ogre Mead // Ogre Mead
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 6,					-- Ogre Mead // Ogre Mead
+							},
+							{	-- Thunder 45 // Path of Brew
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 7,					-- Thunder 45 // Path of Brew
+							},
+							{	-- Thunderbrew Ale // Small Step Brew
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 8,					-- Thunderbrew Ale // Small Step Brew
+							},
+							{	-- Thunderbrew Stout // Stout Shrunken Head
+								["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
+								["hordeAchievementID"] = 1203,		-- Strange Brew [Horde]
+								["criteriaID"] = 9,					-- Thunderbrew Stout // Stout Shrunken Head
+							},
+						},
+					},
 					ach(1185, {		-- The Brewfest Diet
 						crit(1),		-- Dried Sausage
 						crit(2),		-- Pickled Sausage

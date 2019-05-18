@@ -647,7 +647,7 @@ _.Instances = { tier(1, {	-- Classic
 			cr(11988, e(1526, {	-- Golemagg the Incinerator
 				i(93035),	-- Core of Hardened Ash (Pet)
 				i(17203),	-- Sulfuron Ingot
-				i(18822),	-- Obsidian Edged Blade 
+				i(18822),	-- Obsidian Edged Blade
 				i(18842),	-- Staff of Dominance
 				i(17103),	-- Azuresong Mageblade
 				i(17072),	-- Blastershot Launcher
@@ -732,7 +732,8 @@ _.Instances = { tier(1, {	-- Classic
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
 				un(2, i(17982)),	-- Ragnaros Core
-			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
+				--[[
+				BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 				i(1203),	-- Aegis of Stormwind
 				i(13036),	-- Assassination Blade
 				i(13096),	-- Band of the Hierophant
@@ -788,6 +789,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(13065),	-- Wand of Allistarj
 				i(13130),	-- Windrunner Legguards
 				i(13066),	-- Wyrmslayer Spaulders
+				]]--
 			})),
 		},
 	}),

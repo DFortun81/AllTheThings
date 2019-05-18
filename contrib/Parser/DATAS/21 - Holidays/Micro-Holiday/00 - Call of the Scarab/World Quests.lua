@@ -5,7 +5,7 @@ _.Holidays =
 {
 	{	-- Call of the Scarab
 		["holidayID"] = 1574965,	-- Call of the Scarab
-		["u"] = 44,					-- Micro-Holiday Filter
+		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
 			{	-- World Quests
 				["npcID"] = -34,	-- World Quests
@@ -14,7 +14,7 @@ _.Holidays =
 					{	-- Ahn'Qiraj: C'thun
 						["allianceQuestID"] = 45737,	-- Ahn'Qiraj: C'thun
 						["hordeQuestID"] = 45654,		-- Ahn'Qiraj: C'thun
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["isWQ"] = 60,
 						["coords"] = {
 							{ 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
@@ -28,7 +28,7 @@ _.Holidays =
 					{	-- The Ruins of Ahn'Qiraj: Ossirian
 						["allianceQuestID"] = 45736,	-- The Ruins of Ahn'Qiraj: Ossirian
 						["hordeQuestID"] = 45651,		-- The Ruins of Ahn'Qiraj: Ossirian
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["isWQ"] = 60,
 						["coords"] = {
 							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
@@ -40,10 +40,10 @@ _.Holidays =
 					{	-- Lesser Wind Stones
 						["allianceQuestID"] = 45739,	-- Lesser Wind Stones
 						["hordeQuestID"] = 45656,		-- Lesser Wind Stones
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["isWQ"] = 40,
 						["coords"] = {
-							{ 44.43, 41.09, 81 },		-- Twilight Base Camp
+							{ 22.43, 41.09, 81 },		-- Twilight Base Camp
 							{ 26.89, 75.59, 81 },		-- Twilight Outpost
 							{ 33.59, 31.45, 81 },		-- Twilight Post
 						},
@@ -51,7 +51,7 @@ _.Holidays =
 					{	-- Silithyst
 						["allianceQuestID"] = 45740,	-- Silithyst
 						["hordeQuestID"] = 45657,		-- Silithyst
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["isWQ"] = 40,
 						["coords"] = {
 							{ 39.04, 46.86, 81 },		-- Alliance Collector
@@ -61,7 +61,7 @@ _.Holidays =
 					{	-- The Colossus of Ashi
 						["allianceQuestID"] = 45738,	-- The Colossus of Ashi
 						["hordeQuestID"] = 45655,		-- The Colossus of Ashi
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["qg"] = 117491,				-- Colossus of Ashi
 						["isWQ"] = 40,
 						["coords"] = {
@@ -71,7 +71,7 @@ _.Holidays =
 					{	-- The Colossus of Regal
 						["allianceQuestID"] = 45741,	-- The Colossus of Regal
 						["hordeQuestID"] = 45674,		-- The Colossus of Regal
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["qg"] = 117490,				-- Colossus of Regal
 						["isWQ"] = 40,
 						["coords"] = {
@@ -81,7 +81,7 @@ _.Holidays =
 					{	-- The Colossus of Zora
 						["allianceQuestID"] = 45742,	-- The Colossus of Zora
 						["hordeQuestID"] = 45675,		-- The Colossus of Zora
-						["u"] = 44,						-- Micro-Holiday Filter
+						["u"] = 22,						-- Micro-Holiday Filter
 						["qg"] = 117489,				-- Colossus of Zora
 						["isWQ"] = 40,
 						["coords"] = {

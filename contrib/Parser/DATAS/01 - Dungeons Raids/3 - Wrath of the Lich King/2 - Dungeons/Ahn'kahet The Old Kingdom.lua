@@ -6,6 +6,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(271, { 	-- Ahn'kahet: The Old Kingdom
 		["lvl"] = 61,
 		["mapID"] = 132,
+		["coord"] = { 28.3, 51.6, 115 },
 		["groups"] = {
 			n(-17, {	-- Quests 	
 				q(13187,{ 	-- The Faceless Ones

@@ -7,8 +7,12 @@ _.ExpansionFeatures =
 		m(582, {	-- Lunarfall
 			["groups"] = {	
 				n(-4, { 	-- Achievements
+					ach(10365, {	-- A Frightening Friend
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
+						["coord"] = { 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
+					}),
 					ach(9630),		-- Defender of Draenor (Alliance)
-					ach(9928, 9901, {		-- Don't Call Me Junior
+					ach(9928, 9901, {	-- Don't Call Me Junior
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
 					}),

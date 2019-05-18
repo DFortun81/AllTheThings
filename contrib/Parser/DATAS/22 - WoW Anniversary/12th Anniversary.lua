@@ -27,13 +27,13 @@ _.Anniversary =
 								["itemID"] = 139285,	-- Celebration Package
 								["u"] = 36,				-- WoW Anniversary Filter
 							},
-							{	-- Letter from the Timewalker [H]
+							{	-- Letter from the Timewalker [Horde]
 								["itemID"] = 139410,	-- Letter from the Timewalker
 								["questID"] = 43472,	-- The Historians
 								["races"] = HORDE_ONLY,
 								["u"] = 31,				-- WoW Anniversary Filter
 							},
-							{	-- Letter from the Timewalker [A]
+							{	-- Letter from the Timewalker [Alliance]
 								["itemID"] = 139409,	-- Letter from the Timewalker
 								["questID"] = 43471,	-- The Historians
 								["races"] = ALLIANCE_ONLY,
@@ -73,7 +73,7 @@ _.Anniversary =
 			{	-- Vendors
 				["npcID"] = -2,		-- Vendors
 				["g"] = {
-					{	-- Historian Jupa [H]
+					{	-- Historian Jupa [Horde]
 						["npcID"] = 110035,		-- Historian Jupa
 						["races"] = HORDE_ONLY,
 						["currencyID"] = 1166,	-- Timewarped Badge
@@ -109,7 +109,7 @@ _.Anniversary =
 							},
 						},
 					},
-					{	-- Historian Llore [A]
+					{	-- Historian Llore [Alliance]
 						["npcID"] = 110034,		-- Historian Llore
 						["races"] = ALLIANCE_ONLY,
 						["currencyID"] = 1166,	-- Timewarped Badge

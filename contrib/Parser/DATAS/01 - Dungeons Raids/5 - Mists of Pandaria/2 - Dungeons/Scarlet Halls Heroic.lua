@@ -3,14 +3,15 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(311, { 	-- Scarlet Halls
+	inst(311, {	-- Scarlet Halls
+		["coord"] = { 78.0, 56.8, 19 },
 		["mapID"] = 431,
 		["maps"] = { 432 },
-		["groups"] = {
-			d(2, {		-- Heroic
+		["g"] = {
+			d(2, {	-- Heroic
 				["lvl"] = 90,
-				["groups"] = {
-					n(-17, {	-- Quests 					
+				["g"] = {
+					n(-17, {	-- Quests
 						qg(64764, q(31497, {	-- Just for Safekeeping, Of Course
 							i(87370),	-- Waistguard of the Phalanx
 							i(87371),	-- Scarlet Champion's Belt

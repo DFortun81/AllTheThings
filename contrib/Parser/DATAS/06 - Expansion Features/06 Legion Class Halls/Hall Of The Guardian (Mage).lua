@@ -138,13 +138,13 @@ _.ExpansionFeatures =
 					q(42418),	-- An Unexpected Visitor
 					q(45437),	-- An Urgent Situation
 					q(45997),	-- An Urgent Warning
-					qa( 42433),	-- Ancient Magic
+					qa(42433),	-- Ancient Magic
 					q(42126),	-- Archmage Omniara
 					q(42956, {	-- Ari's Package
 						i(141880),	-- Ari's Wooden Ring
 					}),
 					q(46000),	-- Arming Dalaran
-					qa( 45844),	-- Avocation of Antonidas
+					qa(45844),	-- Avocation of Antonidas
 					q(44766),	-- Backup Plan
 					q(42127),	-- Building Our Troops
 					q(45845),	-- Burning Within
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 					q(43509),	-- Odyn's Challenge
 					q(44269),	-- Odyn's Challenge
 					q(44268),	-- Odyn's Challenge
-					qa( 44240),	-- Orange is the New Purple
+					qa(44240),	-- Orange is the New Purple
 					q(44207),	-- Portal Full of Shiny Things
 					q(44098),	-- Recruiting Apprentices
 					q(45251),	-- Redundancy
@@ -208,7 +208,7 @@ _.ExpansionFeatures =
 					q(42703),	-- Technical Wizardry
 					q(44263),	-- The Arcway
 					q(41114),	-- The Champion's Return
-					qa( 42416),	-- The Council is in Session
+					qa(42416),	-- The Council is in Session
 					q(42476),	-- The Deadwind Site
 					q(41036),	-- The Dreadlord's Prize
 					q(41112),	-- The Great Akazamzarak							
@@ -258,6 +258,67 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
+					--Followers Sort Later
+					q(46043, {	-- Champion: Aethas Sunreaver
+						["qg"] = 117497,	-- Aethas Sunreaver
+						["groups"] = {
+							follower(994),	-- Aethas Sunreaver
+						},
+					}),
+					q(42704, {	-- Champion: Arcane Destroyer
+						["qg"] = 108368,	-- Arcane Destroyer
+						["groups"] = {
+							follower(724),	-- Arcane Destroyer
+						},
+					}),
+					q(42662, {	-- Champion: Archmage Kalec
+						["qg"] = 108247,	-- Archmage Kalec <Kirin Tor>
+						["groups"] = {
+							follower(716),	-- Archmage Kalec
+						},
+					}),
+					q(42685, {	-- Champion: Archmage Modera
+						["qg"] = 108248,	-- Archmage Modera <Kirin Tor>
+						["groups"] = {
+							follower(717),	-- Archmage Modera
+						},
+					}),
+					q(42917, {	-- Champion: Archmage Vargoth
+						["qg"] = 109226,	-- Archmage Vargoth <Kirin Tor>
+						["groups"] = {
+							follower(762),	-- Archmage Vargoth
+						},
+					}),
+					q(42706, {	-- Champion: Esara Verrinde
+						["qg"] = 108380,	-- Esara Verrinde <Magisters>
+						["groups"] = {
+							follower(726),	-- Esara Verrinde
+						},
+					}),
+					q(42914, {	-- Champion: Meryl Felstorm
+						["qg"] = 109222,	-- Meryl Felstorm
+						["groups"] = {
+							follower(761),	-- Meryl Felstorm
+						},
+					}),
+					q(42702, {	-- Champion: Millhouse Manastorm
+						["qg"] = 108342,	-- Millhouse Manastorm
+						["groups"] = {
+							follower(723),	-- Millhouse Manastorm
+						},
+					}),
+					q(42705, {	-- Champion: Ravandwyr
+						["qg"] = 108377,	-- Ravandwyr <Senior Kirin Tor Apprentice>
+						["groups"] = {
+							follower(725),	-- Ravandwyr
+						},
+					}),
+					q(46724, {	-- Champion: The Great Akazamzarak
+						--["qg"] = ,			-- Can't find QG
+						["groups"] = {
+							follower(995),	-- The Great Akazamzarak
+						},
+					}),
 				}),
 				--[[
 				n(98695, {	-- Scouting Map

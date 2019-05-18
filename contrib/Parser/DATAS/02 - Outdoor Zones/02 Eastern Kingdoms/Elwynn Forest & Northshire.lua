@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(37, {		-- Elwynn Forest
-			["groups"] = {	
+			["groups"] = {
 				n(-228, {	-- Flight Path
 					fp(589, {	-- Eastvale Logging Camp, Elwynn
 						["coord"] = { 81.8, 66.4 },
@@ -54,10 +54,10 @@ _.Zones =
 					qg(63014, qa(31550)),	-- Got one!
 					qg(64330, q(31693, {	-- Julia Stevens
 						["isDaily"] = true,
-					}),
+					})),
 					qg(64330, qa(31724, {	-- Old MacDonald
 						i(89125),	-- Sack of Pet Supplies
-					}))),					
+					})),
 				}),
 				n(-38, {	-- Profession
 					prof(356, {	-- Fishing
@@ -67,41 +67,41 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
---[[				
-					qg(10616, qa( 5545)),	-- A Bundle of Trouble
-					qg(241, qa(   40)),	-- A Fishy Peril
-					qg(51934, qa(29430)),	-- A Friend in Need
-					qg(514, qa(26393)),	-- A Swift Message
-					qg(253, qa(26150)),	-- A Visit With Maybell
-					qg(246, qa(   84)),	-- Back to Billy
---]]					
+--[[
+					qg(10616, qa(5545),	-- A Bundle of Trouble
+					qg(241, qa( 40),	-- A Fishy Peril
+					qg(51934, qa(29430),	-- A Friend in Need
+					qg(514, qa(26393),	-- A Swift Message
+					qg(253, qa(26150),	-- A Visit With Maybell
+					qg(246, qa( 84),	-- Back to Billy
+--]]
 					o(203733, {	-- Bounty Board
-						qa(   46, {	-- Bounty on Murlocs
+						qa( 46, {	-- Bounty on Murlocs
 							i(4840),
 							i(1158),
 							i(57248),
 							i(57521),
 							i(156980),	-- Solid Wooden Club
-							i(156981),	-- Field Tested Spear 
+							i(156981),	-- Field Tested Spear
 						}),
 						qa(26152),	-- Wanted: James Clark
 					}),
-					qg(261, qa(   59, {	-- Cloth and Leather Armor
+					qg(261, qa( 59, {	-- Cloth and Leather Armor
 						i(1171),
 						i(2237),
 						i(57520),
 						i(131194),
 					})),
---[[					
-					qg(620, q(3861)),	-- CLUCK!
-					qg(253, qa(  112)),	-- Collecting Kelp
-					qg(42983, qa(26394)),	-- Continue to Stormwind (add'l QG 43000)
+--[[
+					qg(620, q(3861),	-- CLUCK!
+					qg(253, qa(112),	-- Collecting Kelp
+					qg(42983, qa(26394),	-- Continue to Stormwind (add'l QG 43000)
 					o(55, {	-- A half-eaten body
 						qa(45),	  -- Discover Rolf's Fate
 					}),
-					qg(514, qa( 1097)),	-- Elmore's Task
-					qg(261, qa(   37)),	-- Find the Lost Guards
---]]					
+					qg(514, qa(1097),	-- Elmore's Task
+					qg(261, qa( 37),	-- Find the Lost Guards
+--]]
 					{	-- Eastern Escape
 						["questID"] = 54102,
 						["qg"] = 146791,	-- Dark Ranger
@@ -109,45 +109,45 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54101,	-- On Track
 					},
-					qg(278, qa(   83, {	-- Fine Linen Goods
+					qg(278, qa( 83, {	-- Fine Linen Goods
 						i(983),
 						i(57405),
 						i(57406),
 						i(131195),
 						i(2575),
 					})),
---[[					
+--[[
 					o(203734, {	-- Westfall Deed
 						qa(184),	-- Furlbrow's Deed
 					}),
-					qg(240, qa(   35)),	-- Further Concerns
-					qg(255, qa(   16)),	-- Give Gerard a Drink
-					qg(241, qa(   47)),	-- Gold Dust Exchange
-					qg(247, qa(   87)),	-- Goldtooth					
-					qg(42256, qa(26378)),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
-					qg(253, qa(   60)),	-- Kobold Candles
+					qg(240, qa( 35),	-- Further Concerns
+					qg(255, qa( 16),	-- Give Gerard a Drink
+					qg(241, qa( 47),	-- Gold Dust Exchange
+					qg(247, qa( 87),	-- Goldtooth
+					qg(42256, qa(26378),	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
+					qg(253, qa( 60),	-- Kobold Candles
 					qa(32618, {	-- Learn To Ride
 						["description"] = "This quest is available to Humans upon reaching level 20.",
 						["races"] = {1},	-- Human
 					}),
 --					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)
-					qg(246, qa(   85)),	-- Lost Necklace
---]]					
-					qg(42256, qa(  147, {	-- Manhunt
+					qg(246, qa( 85),	-- Lost Necklace
+--]]
+					qg(42256, qa(147, {	-- Manhunt
 						i(1183),	-- Elastic Wristguards
 						i(57522),	-- McCree's Sparring Gloves
 						i(1360),	-- Stormwind Plate Gloves
 						i(131198),	-- Wrangling Grips
 						i(57251),	-- "Collecting" Bag
 					})),
---[[					
-					qg(248, qa(  107)),	-- Note to William				
-					qg(384, qa( 7678)),	-- Palomino Exchange
-					qg(247, qa(   86)),	-- Pie for Billy
+--[[
+					qg(248, qa(107),	-- Note to William
+					qg(384, qa(7678),	-- Palomino Exchange
+					qg(247, qa( 86),	-- Pie for Billy
 --					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
-					
---]]				
-					qg(244, qa(   88)),	-- Princess Must Die!
+
+--]]
+					qg(244, qa( 88)),	-- Princess Must Die!
 					{	-- On Track
 						["questID"] = 54101,
 						["qg"] = 146010,	-- Dark Ranger Lyana
@@ -155,35 +155,35 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 54100,	-- A Way Out
 					},
-					qg(261, qa(   52, {	-- Protect the Frontier
+					qg(261, qa( 52, {	-- Protect the Frontier
 						i(57523),
 						i(57524),
 						i(57525),
 						i(131193),
 					})),
---[[					
+--[[
 					o(56, {	-- Rolf's corpse
 						qa(71),	-- Report to Thomas
 					}),
---]]					
-					qg(963, qa(   11, {	-- Riverpaw Gnoll Bounty
+--]]
+					qg(963, qa( 11, {	-- Riverpaw Gnoll Bounty
 						i(57527),
 						i(2238),
 						i(57526),
 						i(131192),
 						un(2, i(2249)),	-- Militia Buckler
 					})),
---[[					
-					qg(252, qa(  111)),	-- Speak with Gramma
+--[[
+					qg(252, qa(111),	-- Speak with Gramma
 					n(13159, {	-- James Clark
 						i(1307, {	-- Gold Pickup Schedule
-							qa(  123),	-- The Collector
+							qa(123),	-- The Collector
 						}),
-					}),						
-					qg(256, qa(  114)),	-- The Escape
-					qg(240, qa(   62)),	-- The Fargodeep Mine
-					qg(240, qa(   76)),	-- The Jasperlode Mine
---]]					
+					}),
+					qg(256, qa(114),	-- The Escape
+					qg(240, qa( 62),	-- The Fargodeep Mine
+					qg(240, qa( 76),	-- The Jasperlode Mine
+--]]
 
 					qart(qa(42504, {	-- The Unseen Blade
 						["qg"] = 107979,	-- Garona Halforcen
@@ -194,133 +194,180 @@ _.Zones =
 						["classes"] = { 4 },
 					})),
 					o(156561, {	-- Wanted Poster (add'l object QG 68)
-						qa(  176, {	-- Wanted: "Hogger"
-							i( 6085),	-- Footman Tunic
-							i( 6084),	-- Stormwind Guard Leggings
+						qa(176, {	-- Wanted: "Hogger"
+							i(6085),	-- Footman Tunic
+							i(6084),	-- Stormwind Guard Leggings
 							i(60219),	-- Balanced Spell Staff
 							i(131199),	-- Lion Guard Chainmail
 							un(2, i(6215)),	-- Balanced Fighting Stick
 						}),
 					}),
---[[					
-					qg(240, qa(  239)),	-- Westbrook Garrison Needs Help!
-					qg(384, qa( 7677)),	-- White Stallion Exchange
-					qg(251, qa(  106)),	-- Young Lovers
---]]					
+--[[
+					qg(240, qa(239),	-- Westbrook Garrison Needs Help!
+					qg(384, qa(7677),	-- White Stallion Exchange
+					qg(251, qa(106),	-- Young Lovers
+--]]
 --					q(7937),	-- Your Fortune Awaits You... (REMOVED?)
 				}),
-				n(-16, {	-- Rares	
+				n(-16, {	-- Rares
 					n(51077, { 	-- Bushtail
-						dr(17.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(14.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(09.0, i(6267)),	-- Disciple's Pants
-						dr(05.0, i(68750)),	-- Imbued Pioneer Belt
-						dr(04.0, i(68749)),	-- Imbued Disciple's Bracers
-						dr(03.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(03.0, i(6269)),	-- Pioneer Trousers
-						dr(01.9, i(6337)),	-- Infantry Leggings
-						dr(01.8, i(68761)),	-- Imbued Infantry Boots
-						dr(01.7, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.6, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.6, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.6, i(68758)),	-- Imbued Pioneer Boots
-						dr(01.5, i(68757)),	-- Imbued Pioneer Gloves
-						dr(01.3, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.2, i(68762)),	-- Imbued Cadet Cloak
-						dr(01.1, i(68752)),	-- Imbued Infantry Belt
-						dr(01.0, i(68755)),	-- Imbued Disciple's Gloves
-						dr(01.0, i(68759)),	-- Imbued Gypsy Cloak					
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68743),	-- Imbued Infantry Cloak
+						i(6267),	-- Disciple's Pants
+						i(68750),	-- Imbued Pioneer Belt
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(6269),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68753),	-- Imbued Infantry Bracers
+						i(68758),	-- Imbued Pioneer Boots
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68762),	-- Imbued Cadet Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68759),	-- Imbued Gypsy Cloak
 					}),
 					n(472, { 	-- Fedfennel
-						dr(13.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(11.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(04.0, i(6337)),	-- Infantry Leggings
-						dr(02.0, i(68748)),	-- Imbued Disciple's Cloak
-						dr(02.0, i(6269)),	-- Pioneer Trousers
-						dr(01.9, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.7, i(6267)),	-- Disciple's Pants
-						dr(01.7, i(68758)),	-- Imbued Pioneer Boots
-						dr(01.6, i(68749)),	-- Imbued Disciple's Bracers
-						dr(01.4, i(68761)),	-- Imbued Infantry Boots
-						dr(01.2, i(68752)),	-- Imbued Infantry Belt
-						dr(01.2, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.0, i(68753)),	-- Imbued Infantry Bracers
-						i(5744),	-- Pale Skinner		
-					}), 
+						["coords"] = {
+							{ 66.56, 40.74, 37 },
+						},
+						["g"] = {
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(6337),	-- Infantry Leggings
+							i(68748),	-- Imbued Disciple's Cloak
+							i(6269),	-- Pioneer Trousers
+							i(68751),	-- Imbued Pioneer Bracers
+							i(6267),	-- Disciple's Pants
+							i(68758),	-- Imbued Pioneer Boots
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68761),	-- Imbued Infantry Boots
+							i(68752),	-- Imbued Infantry Belt
+							i(68750),	-- Imbued Pioneer Belt
+							i(68747),	-- Imbued Disciple's Sash
+							i(68753),	-- Imbued Infantry Bracers
+							i(5744),	-- Pale Skinner
+						},
+					}),
 					n(100, {	-- Gruff Swiftbite
-						dr(17.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(11.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(03.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(02.0, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.8, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.6, i(6337)),	-- Infantry Leggings
-						dr(01.6, i(6269)),	-- Pioneer Trousers
-						dr(01.5, i(6267)),	-- Disciple's Pants
-						dr(01.3, i(68752)),	-- Imbued Infantry Belt
-						dr(01.2, i(68749)),	-- Imbued Disciple's Bracers
-						dr(01.2, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.1, i(68753)),	-- Imbued Infantry Bracers
-						i(38513), 	-- Boarhide Leggings,						
-					}), 
+						["coords"] = {
+							{ 25.99, 92.07, 37 },
+						},
+						["g"] = {
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(68747),	-- Imbued Disciple's Sash
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68750),	-- Imbued Pioneer Belt
+							i(6337),	-- Infantry Leggings
+							i(6269),	-- Pioneer Trousers
+							i(6267),	-- Disciple's Pants
+							i(68752),	-- Imbued Infantry Belt
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68753),	-- Imbued Infantry Bracers
+							i(38513), 	-- Boarhide Leggings,
+						},
+					}),
 					n(99, { 	-- Morgaine the Sly
-						dr(13.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(13.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(02.0, i(6269)),	-- Pioneer Trousers
-						dr(01.7, i(6267)),	-- Disciple's Pants
-						dr(01.7, i(6337)),	-- Infantry Leggings
-						dr(01.4, i(68752)),	-- Imbued Infantry Belt
-						dr(01.3, i(68749)),	-- Imbued Disciple's Bracers
-						dr(01.3, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.2, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.2, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.2, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.1, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i(68761)),	-- Imbued Infantry Boots
-						i(1917), 	-- Jeweled Dagger
-					}), 
+						["coords"] = {
+							{ 30.82, 64.66, 37 },
+						},
+						["g"] = {
+							i(68743),	-- Imbued Infantry Cloak
+							i(68744),	-- Imbued Pioneer Cloak
+							i(6269),	-- Pioneer Trousers
+							i(6267),	-- Disciple's Pants
+							i(6337),	-- Infantry Leggings
+							i(68752),	-- Imbued Infantry Belt
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68750),	-- Imbued Pioneer Belt
+							i(68747),	-- Imbued Disciple's Sash
+							i(68753),	-- Imbued Infantry Bracers
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68754),	-- Imbued Disciple's Boots
+							i(68761),	-- Imbued Infantry Boots
+							i(1917), 	-- Jeweled Dagger
+						},
+					}),
 					n(471, { 	-- Mother Fang
-						dr(39.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(12.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(01.9, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.9, i(6337)),	-- Infantry Leggings
-						dr(01.8, i(6267)),	-- Disciple's Pants
-						dr(01.5, i(6269)),	-- Pioneer Trousers
-						dr(01.4, i(68749)),	-- Imbued Disciple's Bracers
-						dr(01.3, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.3, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.2, i(68761)),	-- Imbued Infantry Boots
-						dr(01.1, i(68752)),	-- Imbued Infantry Belt
-						dr(01.1, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.0, i(68759)),	-- Imbued Gypsy Cloak
-						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
-						i(3000),	-- Brood Mother Carapace					
-					}), 
+						["coords"] = {
+							{ 54.33, 31.14, 40 },	-- Actual Spawn
+							{ 61.75, 53.94, 37 },	-- Mine Entrance
+						},
+						["g"] = {
+							i(68743),	-- Imbued Infantry Cloak
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68750),	-- Imbued Pioneer Belt
+							i(6337),	-- Infantry Leggings
+							i(6267),	-- Disciple's Pants
+							i(6269),	-- Pioneer Trousers
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68761),	-- Imbued Infantry Boots
+							i(68752),	-- Imbued Infantry Belt
+							i(68753),	-- Imbued Infantry Bracers
+							i(68747),	-- Imbued Disciple's Sash
+							i(68759),	-- Imbued Gypsy Cloak
+							i(68760),	-- Imbued Infantry Gauntlets
+							i(3000),	-- Brood Mother Carapace
+						},
+					}),
 					n(61, { 	-- Thuros Lightfingers
-						dr(16.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(15.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(04.0, i(68755)),	-- Imbued Disciple's Gloves
-						dr(02.0, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.9, i(6337)),	-- Infantry Leggings
-						dr(01.9, i(6269)),	-- Pioneer Trousers
-						dr(01.7, i(6267)),	-- Disciple's Pants
-						dr(01.7, i(68748)),	-- Imbued Disciple's Cloak
-						dr(01.6, i(68752)),	-- Imbued Infantry Belt
-						dr(01.5, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.3, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.2, i(68749)),	-- Imbued Disciple's Bracers
-						dr(01.1, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.1, i(68758)),	-- Imbued Pioneer Boots
-						dr(01.0, i(68757)),	-- Imbued Pioneer Gloves					
-					}), 
---					n(50926, { 	-- Grizzled Ben	}), 
---					n(50916, { 	-- Lamepaw the Whimperer	}), 
---					n(79, { 	-- Narg the Taskmaster	}), 
---					n(50942, { 	-- Snoot the Rooter	}), 
---					n(50752, { 	-- Tarantis }), 
---					n(51014, { 	-- Terrapis	}), 
+						["coords"] = {
+							{ 50.61, 83.06, 37 },
+						},
+						["g"] = {
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(68755),	-- Imbued Disciple's Gloves
+							i(68750),	-- Imbued Pioneer Belt
+							i(6337),	-- Infantry Leggings
+							i(6269),	-- Pioneer Trousers
+							i(6267),	-- Disciple's Pants
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68752),	-- Imbued Infantry Belt
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68753),	-- Imbued Infantry Bracers
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68747),	-- Imbued Disciple's Sash
+							i(68758),	-- Imbued Pioneer Boots
+							i(68757),	-- Imbued Pioneer Gloves
+						},
+					}),
+--					n(50926, { 	-- Grizzled Ben	}),
+--					n(50916, { 	-- Lamepaw the Whimperer	}),
+					n(79, { 	-- Narg the Taskmaster
+						["coords"] = {
+							{ 38.13, 83.34, 37 },
+						},
+						["g"] = {
+							i(68744),	-- Imbued Pioneer Cloak
+							i(68743),	-- Imbued Infantry Cloak
+							i(68755),	-- Imbued Disciple's Gloves
+							i(68750),	-- Imbued Pioneer Belt
+							i(6337),	-- Infantry Leggings
+							i(6269),	-- Pioneer Trousers
+							i(6267),	-- Disciple's Pants
+							i(68748),	-- Imbued Disciple's Cloak
+							i(68752),	-- Imbued Infantry Belt
+							i(68751),	-- Imbued Pioneer Bracers
+							i(68753),	-- Imbued Infantry Bracers
+							i(68749),	-- Imbued Disciple's Bracers
+							i(68747),	-- Imbued Disciple's Sash
+							i(68758),	-- Imbued Pioneer Boots
+							i(68757),	-- Imbued Pioneer Gloves
+						},
+					}),
+--					n(50942, { 	-- Snoot the Rooter	}),
+--					n(50752, { 	-- Tarantis }),
+--					n(51014, { 	-- Terrapis	}),
 				}),
 				n(-212, {	-- Treasure Chest
 					["groups"] = {
@@ -342,7 +389,7 @@ _.Zones =
 						},
 					},
 				}),
-				n( -2, {	-- Vendors
+				n(-2, {	-- Vendors
 					a(n(844, {	-- Antonio Perelli <Traveling Salesman>
 						["groups"] = {
 							i(4795),	-- Bear Bracers
@@ -418,7 +465,7 @@ _.Zones =
 						}),
 						--n(-16, {	-- Rares (Legacy)
 						--}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),
@@ -518,9 +565,9 @@ _.Zones =
 								["classes"] = {2},	-- Paladin
 --								["races"] = {11},	-- Draenei (doubtful, but what wowhead says)
 							})),
-							qg(197, qa(   54)),	-- Report to Goldshire
+							qg(197, qa( 54)),	-- Report to Goldshire
 							qg(6774, qa(37112)),	-- Rest and Relaxation
---							qg(6774, qa( 2158)),	-- Rest and Relaxation (replaced with previous quest)
+--							qg(6774, qa(2158)),	-- Rest and Relaxation (replaced with previous quest)
 --[[						qg(823, qa(28819)),	-- The Rear is Clear
 							qg(823, qa(28822)),	-- The Rear is Clear
 							qg(823, qa(31145)),	-- The Rear is Clear
@@ -532,7 +579,7 @@ _.Zones =
 							qg(823, qa(28823)),	-- The Rear is Clear
 							qg(823, qa(28820)),	-- The Rear is Clear
 							qg(823, qa(28818)),	-- The Rear is Clear
-							qg(823, qa(29083)),	-- The Rear is Clear *assuming one of these/class + one for non-human, but they aren't labeled on wowhead 
+							qg(823, qa(29083)),	-- The Rear is Clear *assuming one of these/class + one for non-human, but they aren't labeled on wowhead
 							qg(823, qa(28792)),	-- They Sent Assassins
 							qg(823, qa(31144)),	-- They Sent Assassins
 							qg(823, qa(28794)),	-- They Sent Assassins
@@ -544,12 +591,21 @@ _.Zones =
 							qg(823, qa(28797)),	-- They Sent Assassins
 							qg(823, qa(28791)),	-- They Sent Assassins
 							qg(823, qa(28796)),	-- They Sent Assassins
-							qg(823, qa(29081)),	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead 
+							qg(823, qa(29081)),	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead
 							--]]
 						}),
---[[						n(-16, {	-- Rares
-							n(62),	-- Gug Fatcandle (doesn't drop greens, just a 4-slot bag)
-						}), --]]
+						n(-16, {	-- Rares
+							n(62, {	-- Gug Fatcandle
+								["coords"] = {
+									{ 31.61, 16.69, 425 },
+								},
+								["g"] = {
+									{	-- Fatcandle Bag
+										["itemID"] = 56147,	-- Fatcandle Bag
+									},
+								},
+							}),
+						}),
 						n(-40, {	-- Legacy
 							["groups"] = {
 								n(-17, {	-- Quests (Legacy)
@@ -562,7 +618,7 @@ _.Zones =
 					},
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					["description"] = "|cff66ccffNorthshire Valley is a pristine valley in Elwynn Forest in which both Northshire Abbey and the Northshire Vineyards are located. The Northshire River also flows through it. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.|r",
-				}),	
+				}),
 			},
 			["lvl"] = 1,
 			["maps"] = {
@@ -571,7 +627,7 @@ _.Zones =
 				40,	-- Jasperlode Mine
 			},
 			["achievementID"] = 776,
-			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",				
-		}),	
+			["description"] = "|cff66ccffElwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.|r",
+		}),
 	}),
 };

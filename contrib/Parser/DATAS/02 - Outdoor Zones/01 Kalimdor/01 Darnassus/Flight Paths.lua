@@ -7,7 +7,7 @@ _.Zones =
 		m(89, {	-- Darnassus
 			["groups"] = {
 				n(-228, {	-- Flight Path
-					fp(457, {	-- Darnassus, Teldrassil [A]
+					fp(457, {	-- Darnassus, Teldrassil [Alliance]
 						["description"] = "Darnassus, Teldrassil - Alliance Only",
 						["coords"] = {
 							{ 36.61, 47.82, 89 },

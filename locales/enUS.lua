@@ -12,12 +12,13 @@
 AllTheThings.L = {
 	-- General Text
 	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
+	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
-	["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r";
+    ["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffAlt + Right Click to Plot Waypoints|r";
 	["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
@@ -33,6 +34,7 @@ AllTheThings.L = {
 	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";
 	["TOGGLE_COLLECTEDTHINGS"] = "Toggle Collected Things";
 	["TOGGLE_BOEITEMS"] = "Toggle BoE/BoA Items";
+	["TOGGLE_SOURCETEXT"] = "Toggle Source Locations";
 	["MODULES"] = "Modules";
 	["TOGGLE_MAINLIST"] = "Toggle ATT Main List";
 	["TOGGLE_MINILIST"] = "Toggle ATT Mini List";
@@ -156,6 +158,7 @@ AllTheThings.L = {
 		[8] = GetItemSubClassInfo(4,6),							-- Shields
 		[9] = INVTYPE_TABARD,									-- Tabards
 		[10] = INVTYPE_BODY,									-- Shirts
+		[11] = "Artifacts",										-- Artifacts
 
 		-- PADDING for extra types, if necessary
 
@@ -222,6 +225,7 @@ AllTheThings.L = {
 		[8] = "Interface\\Icons\\inv_shield_06",							-- Shield
 		[9] = "Interface\\Icons\\inv_misc_tournaments_tabard_gnome",		-- Tabards
 		[10] = "Interface\\Icons\\inv_shirt_grey_01",						-- Shirts
+		[11] = "Interface\\Icons\\Paladin_Protection",						-- Artifacts
 		[20] = "Interface\\Icons\\inv_weapon_shortblade_01",				-- Daggers
 		[21] = "Interface\\Icons\\inv_axe_17",								-- 1H Axes
 		[22] = "Interface\\Icons\\inv_axe_09",								-- 2H Axes
@@ -236,7 +240,7 @@ AllTheThings.L = {
 		[32] = "Interface\\Icons\\inv_weapon_bow_05",						-- Bows
 		[33] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
 		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
-		[35] = "Interface\\Icons\\inv_weapon_warglaive_01",					-- Warglaives
+		[35] = "Interface\\Icons\\inv_weapon_glave_01",						-- Warglaives
 		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
 		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
@@ -443,6 +447,7 @@ AllTheThings.L = {
 		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll",					-- Zandalari Troll
 		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",					-- Kul Tiran
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
+		[-254] = "Interface\\Icons\\Ability_warrior_bloodfrenzy",				-- Hostile NPC
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -559,6 +564,12 @@ AllTheThings.L = {
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",			-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",			-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",						-- Quest Items
+		[-651] = "Interface\\Icons\\inv_stormdragonmount2",						-- Vindictive Gladiator: Legion Season 1
+		[-652] = "Interface\\Icons\\inv_stormdragonmount2blue",					-- Fearless Gladiator: Legion Season 2
+		[-653] = "Interface\\Icons\\inv_stormdragonmount2dark",					-- Cruel Gladiator: Legion Season 3
+		[-654] = "Interface\\Icons\\inv_stormdragonmount2green",				-- Ferocious Gladiator: Legion Season 4
+		[-655] = "Interface\\Icons\\inv_stormdragonmount2light",				-- Fierce Gladiator: Legion Season 5
+		[-655] = "Interface\\Icons\\inv_stormdragonmount2yellow",				-- Dominant Gladiator: Legion Season 6
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
@@ -1112,6 +1123,7 @@ AllTheThings.L = {
 		[-251] = "Zandalari Troll",												-- Zandalari Troll
 		[-252] = "Kul Tiran",													-- Kul Tiran
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
+		[-254] = "Hostile NPC",													-- Hostile NPC
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1199,7 +1211,7 @@ AllTheThings.L = {
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest
 		[-489] = "Weekly PVP Chest",											-- Weekly Conquest Point Cap Chest
-		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
+		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
 		[-493] = TIME_UNKNOWN.." "..SPELL_TARGET_TYPE6_DESC, 					-- Unknown location
@@ -1317,6 +1329,14 @@ AllTheThings.L = {
 		[-601] = GetSpellInfo(262971),											-- Communing with Jani [Snapjaw Tail]
 		[-650] = "Quest Items",													-- Quest Items
 		
+-- Legion Pvp Seasons
+		[-651] = select(2, GetAchievementInfo(11012)),							-- Vindictive Gladiator: Legion Season 1
+		[-652] = select(2, GetAchievementInfo(11014)),							-- Fearless Gladiator: Legion Season 2
+		[-653] = select(2, GetAchievementInfo(11037)),							-- Cruel Gladiator: Legion Season 3
+		[-654] = select(2, GetAchievementInfo(11062)),							-- Ferocious Gladiator: Legion Season 4
+		[-655] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
+		[-656] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
+		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
 		
@@ -1327,6 +1347,7 @@ AllTheThings.L = {
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
 -- Other Sets
+		[-3156] = string.format(PLAYER_V_PLAYER_SEASON, 3),						-- Player vs. Player (Battle for Azeroth Season 3)
 		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
 		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season 1)
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
@@ -1859,6 +1880,9 @@ AllTheThings.L = {
 		[182032] = "Interface\\Icons\\INV_Misc_Book_09",
 		[182115] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[182165] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[182549] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[182587] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[182588] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[182952] = "Interface\\Icons\\INV_Crate_01",
 		[183770] = "Interface\\Icons\\Spell_Mage_FocusingCrystal",
 		[183811] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
@@ -2295,8 +2319,6 @@ AllTheThings.L = {
 		[20992] = "Black Shield",
 		[21042] = "Theramore Guard Badge", 
 		[35251] = "Karnitol's Chest",
-		[62483] = "A.I.D.A. Communicator",
-		[106780] = "Tidestone of Golganneth",
 		[112948] = "Intrepid's Locked Strongbox",
 		[113768] = GetSpellInfo(61820),
 		[123329] = "Baelog's Chest",
@@ -2337,6 +2359,7 @@ AllTheThings.L = {
 		[176392] = "Scourge Cauldron",
 		[177787] = "Rackmore's Log",
 		[177904] = "Wanted Poster: Besseleth",
+		[177964] = "Fathom Stone",
 		[179485] = "A Broken Trap",
 		[179501] = "Knot Thimblejack's Cache",
 		[179832] = "Pillaclencher's Ornate Pillow",
@@ -2365,6 +2388,9 @@ AllTheThings.L = {
 		[182032] = "Galaen's Journal",
 		[182115] = "Wanted Poster",
 		[182165] = "Wanted Poster",
+		[182549] = "Fel Orc Plans",
+		[182587] = "Wanted Poster",
+		[182588] = "Wanted Poster",
 		[182392] = "Garadar Bulletin Board",
 		[182939] = "Telaar Bulletin Board",
 		[182947] = "The Codex of Blood",
@@ -2387,7 +2413,6 @@ AllTheThings.L = {
 		[186648] = "Hazlek's Trunk",
 		[186667] = "Norkani's Package",
 		[186672] = "Kasha's Bag",
-		[186881] = "Dark Iron Sabotage Plans",
 		[186887] = "Large Jack-o'-Lantern",
 		[187021] = "Bakkalzu's Satchel",
 		[187273] = "Suspicious Hoofprint",
@@ -2706,6 +2731,7 @@ AllTheThings.L = {
 		[230402] = "Lucky Coin",
 		[230424] = "Snow-Covered Strongbox",
 		[230425] = "Gnawed Bone",
+		[230544] = GetSpellInfo(155334),		-- Touched By Ice
 		[230611] = "Pale Loot Sack",
 		[230643] = "Teroclaw Nest",
 		[230664] = "The Crystal Blade of Torvath",
@@ -2765,7 +2791,6 @@ AllTheThings.L = {
 		[233559] = "Forgotten Skull Cache",
 		[233560] = "Fragment of Oshu'gun",
 		[233561] = "Pokkar's Thirteenth Axe",
-		[233590] = "Void-Infused Crystal",
 		[233593] = "Polished Saberon Skull",
 		[233598] = "Elemental Shackles",
 		[233611] = "Highmaul Sledge",
@@ -2858,6 +2883,8 @@ AllTheThings.L = {
 		[239198] = "Isaari's Cache",
 		[239828] = "Edge of Reality",
 		[239901] = "Voidtalon Egg",
+		[239925] = GetSpellInfo(155346),	-- Ogrish Fortitude
+		[239926] = GetSpellInfo(155315),	-- Touched By Fire
 		[240003] = "Strange Sapphire",
 		[240289] = "Weathered Axe",
 		[240317] = "Iskar's Tome of Shadows",
@@ -2981,7 +3008,7 @@ AllTheThings.L = {
 		[266851] = "Wand of Simulated Life",
 		[268551] = "Curious Wyrmtongue Cache",
 		[269830] = "Step 9: Gift of the Mind-Seekers",
-		[270885] = "Step 1: Inconspicuous Note",
+		[270855] = "Step 1: Inconspicuous Note",
 		[270917] = "Glenbrook Register",
 		[271849] = "Eredar War Supplies",
 		[271850] = "Eredar War Supplies",
@@ -3041,74 +3068,74 @@ AllTheThings.L = {
 		[276490] = "Krokul Emergency Cache",
 		[276515] = "Fishing Rod",
 		[276513] = "Intact Mudfish",
-		[276735] = "Offerings of the Chosen", -- Offerings of the Chosen
+		[276735] = "Offerings of the Chosen",
 		[277207] = "Legion Treasure Hoard",
 		[277205] = "Ancient Legion War Cache",
 		[277327] = "Augari-Runed Chest",
-		[277333] = "Ancient Sarcophagus", --  Ancient Sarcophagus
+		[277333] = "Ancient Sarcophagus",
 		[277340] = "Secret Augari Chest",
 		[277342] = "Augari Goods",
 		[277343] = "Long-Lost Augari Treasure",
 		[277344] = "Precious Augari Keepsakes",
-		[277349] = "Missing Augari Chest",
+		[277346] = "Missing Augari Chest",
 		[277373] = "Glimmering Seaweed",
 		[277459] = "Pig Effigy",
-		[277561] = "Warlord's Cache", -- Warlord's Cache
-		[277715] = "Cursed Nazmani Chest", -- Cursed Nazmani Chest
-		[277885] = "Wunja's Trove", -- Wunja's Trove
-		[277897] = "Seething Cache", --  Seething Cache
+		[277561] = "Warlord's Cache",
+		[277715] = "Cursed Nazmani Chest",
+		[277885] = "Wunja's Trove",
+		[277897] = "Seething Cache",
 		[278313] = "Sternly Worded Letter",
 		[278368] = "Tattered Note",
-		[278436] = "Shipwrecked Chest", -- Shipwrecked Chest
-		[278437] = "Offering to Bwonsamdi", -- Offering to Bwonsamdi
+		[278436] = "Shipwrecked Chest",
+		[278437] = "Offering to Bwonsamdi",
 		[278447] = "Faithless Trapper's Spear",
 		[278669] = "Fallhaven Ledger",
 		[278675] = "Cursed Effigy",
-		[279042] = "Smuggler's Stash", -- Smuggler's Stash
-		[279253] = "Lucky Horace's Lucky Chest", -- Lucky Horace's Lucky Chest
-		[279260] = "Cleverly Disguised Chest", -- Cleverly Disguised Chest
-		[279299] = "Venomous Seal", -- Venomous Seal
+		[279042] = "Smuggler's Stash",
+		[279253] = "Lucky Horace's Lucky Chest",
+		[279260] = "Cleverly Disguised Chest",
+		[279299] = "Venomous Seal",
 		[279337] = "Heartsbane Grimoire",
-		[279609] = "Spoils of Pandaria", -- Spoils of Pandaria
-		[279689] = "Lost Nazmani Treasure", -- Lost Nazmani Treasure
-		[279750] = "Hay Covered Chest", -- Hay Covered Chest
-		[280504] = "Swallowed Naga Chest", -- Swallowed Naga Chest
-		[280522] = "Partially-Digested Treasure", -- Partially-Digested Treasure
-		[280619] = "Old Ironbound Chest", -- Old Ironbound Chest
+		[279609] = "Spoils of Pandaria",
+		[279689] = "Lost Nazmani Treasure",
+		[279750] = "Hay Covered Chest",
+		[280504] = "Swallowed Naga Chest",
+		[280522] = "Partially-Digested Treasure",
+		[280619] = "Old Ironbound Chest",
 		[280727] = "Charred Note",
 		[280751] = "Small Treasure Chest",
 		[280755] = "Quintin's Satchel",
-		[280951] = "Ashvane Spoils", -- Ashvane Spoils
+		[280951] = "Ashvane Spoils",
 		[280957] = "Zukashi's Satchel",
-		[281092] = "Witch Doctor's Hoard", -- Witch Doctor's Hoard
+		[281092] = "Witch Doctor's Hoard",
 		[281230] = "Formal Invitation",
-		[281397] = "Cutwater Treasure Chest", -- Cutwater Treasure Chest
-		[281494] = "Frosty Treasure Chest", -- Frosty Treasure Chest
+		[281397] = "Cutwater Treasure Chest",
+		[281494] = "Frosty Treasure Chest",
 		[281551] = "Help Wanted Poster",
 		[281583] = "Ancient Reliquary",
 		[281639] = "Crumbling Statue",
 		[281646] = "Honey Vat",
 		[281647] = "Posted Notice",
-		[281655] = "Gift of the Brokenhearted", -- Gift of the Brokenhearted
+		[281655] = "Gift of the Brokenhearted",
 		[281673] = "Corlain Citizen's Journal",
-		[281898] = "Dazar's Forgotten Chest", -- Dazar's Forgotten Chest
-		[282153] = "Sunken Strongbox", -- Sunken Strongbox
+		[281898] = "Dazar's Forgotten Chest",
+		[282153] = "Sunken Strongbox",
 		[282448] = "Wanted Poster",
 		[282457] = "Brambleguard Totem",
 		[282478] = "Empty Crate",
 		[282498] = "Desert Flute",
 		[282628] = GetSpellInfo(245476),	-- Sand Pile
-		[282666] = "Urn of Agussu", --  Urn of Agussu
+		[282666] = "Urn of Agussu",
 		[284426] = "Buried Mining Machine",
-		[284448] = "Hidden Scholar's Chest", -- Hidden Scholar's Chest
-		[284454] = "Da White Shark's Bounty", -- Da White Shark's Bounty
-		[284455] = "The Exile's Lament", -- The Exile's Lament
-		[287239] = "Grayal's Last Offering", -- Grayal's Last Offering
-		[287304] = "Lost Explorer's Bounty", -- Lost Explorer's Bounty
-		[287318] = "Sandfury Reserve", -- Sandfury Reserve
-		[287320] = "Stranded Cache", -- Stranded Cache
-		[287324] = "Excavator's Greed", -- Excavator's Greed
-		[287326] = "Zem'lan's Buried Treasure", -- Zem'lan's Buried Treasure
+		[284448] = "Hidden Scholar's Chest",
+		[284454] = "Da White Shark's Bounty",
+		[284455] = "The Exile's Lament",
+		[287239] = "Grayal's Last Offering",
+		[287304] = "Lost Explorer's Bounty",
+		[287318] = "Sandfury Reserve",
+		[287320] = "Stranded Cache",
+		[287324] = "Excavator's Greed",
+		[287326] = "Zem'lan's Buried Treasure",
 		[287398] = "Wanted: Za'roco",
 		[287440] = "Wanted: Taz'raka",
 		[287441] = "Wanted: Sandscout Vesarik",
@@ -3116,16 +3143,16 @@ AllTheThings.L = {
 		[287531] = "Small Treasure Chest",
 		[288157] = "WANTED: Yarsel'ghun",
 		[288214] = "Wanted Poster",		
-		[288596] = "Cache of Secrets", -- Cache of Secrets
+		[288596] = "Cache of Secrets",
 		[288622] = "Wanted Poster",
 		[288641] = "WANTED: Gryphon 'Nappers",
 		[289365] = "Wanted Poster",
-		[289647] = "Weathered Treasure Chest", -- Weathered Treasure Chest
+		[289647] = "Weathered Treasure Chest",
 		[289728] = "Captain Gulnaku's Treasure Map",
 		[290419] = "Wanted Poster",
 		[290765] = "Large Pile of Gold",
 		[290537] = "Help Wanted",
-		[290725] = "Riches of Tor'nowa", -- Riches of Tor'nowa
+		[290725] = "Riches of Tor'nowa",
 		[290993] = "Irontide Loot",
 		[291143] = "Ranah's Wrench",
 		[291201] = "Small Treasure Chest",
@@ -3154,52 +3181,48 @@ AllTheThings.L = {
 		[291265] = "Small Treasure Chest",
 		[291266] = "Small Treasure Chest",
 		[291267] = "Small Treasure Chest",
-		[294311] = "Small Treasure Chest",
 		[292523] = "Wanted Poster",
 		[292673] = "A Damp Scroll",
 		[292674] = "A Damp Scroll",
 		[292675] = "A Damp Scroll",
 		[292676] = "A Damp Scroll",
 		[292677] = "A Damp Scroll",
-		[293349] = "Discarded Lunchbox", -- Discarded Lunchbox
-		[293350] = "Carved Wooden Chest", -- Carved Wooden Chest
+		[293349] = "Discarded Lunchbox",
+		[293350] = "Carved Wooden Chest",
 		[293852] = "Buried Treasure Chest",	-- Soggy Treasure Map leads to this chest
 		[293880] = "Buried Treasure Chest",	-- Fading Treasure Map leads to this chest
 		[293881] = "Buried Treasure Chest",	-- Yellowed Treasure Map leads to this chest
 		[293884] = "Buried Treasure Chest",	-- Singed Treasure Map leads to this chest
-		[293962] = "Precarious Noble Cache", -- Precarious Noble Cache
-		[293964] = "Forgotten Smuggler's Stash", -- Forgotten Smuggler's Stash
-		[293965] = "Scrimshaw Cache", -- Scrimshaw Cache
-		[294173] = "Venture Co. Supply Chest", -- Venture Co. Supply Chest
-		[294174] = "Forgotten Chest", -- Forgotten Chest
-		[294316] = "Lost Offerings of Kimbul", -- Lost Offerings of Kimbul
-		[294317] = "Deadwood Chest", -- Deadwood Chest
-		[294319] = "Sandsunken Treasure", -- Sandsunken Treasure
+		[293962] = "Precarious Noble Cache",
+		[293964] = "Forgotten Smuggler's Stash",
+		[293965] = "Scrimshaw Cache",
+		[294173] = "Venture Co. Supply Chest",
+		[294174] = "Forgotten Chest",
+		[294311] = "Small Treasure Chest",
+		[294316] = "Lost Offerings of Kimbul",
+		[294317] = "Deadwood Chest",
+		[294319] = "Sandsunken Treasure",
 		[294703] = "Grimmy's Rusty Lockbox",
-		[297825] = "Web-Covered Chest", -- Web-Covered Chest
-		[297828] = "Merchant's Chest", -- Merchant's Chest
-		[297878] = "Hexed Chest", -- Hexed Chest
-		[297879] = "Bespelled Chest", -- Bespelled Chest
-		[297880] = "Ensorcelled Chest", -- Ensorcelled Chest
-		[297881] = "Enchanted Chest", -- Enchanted Chest
-		[297891] = "Runebound Cache", -- Runebound Cache
-		[297892] = "Runebound Chest", -- Runebound Chest
-		[297893] = "Runebound Coffer", -- Runebound Coffer
-		[298920] = "Stolen Thornspeaker Cache", -- Stolen Thornspeaker Cache
+		[297825] = "Web-Covered Chest",
+		[297828] = "Merchant's Chest",
+		[297878] = "Hexed Chest",
+		[297879] = "Bespelled Chest",
+		[297880] = "Ensorcelled Chest",
+		[297881] = "Enchanted Chest",
+		[297891] = "Runebound Cache",
+		[297892] = "Runebound Chest",
+		[297893] = "Runebound Coffer",
+		[298920] = "Stolen Thornspeaker Cache", 
 		[298858] = "Wanted Poster",
 		[298849] = "Wanted Poster",
-		[288214] = "Wanted Poster",
-		[298921] = "Ancient Nazmani Tablet",	-- Ancient Nazmani Tablet
-		[298963] = "Weathered Nazmani Tablet",	-- Weathered Nazmani Tablet
-		[298965] = "Cracked Tablet",	-- Cracked Tablet
-		[299073] = "Fractured Tablet",	-- Fractured Tablet
+		[298921] = "Ancient Nazmani Tablet",
+		[298963] = "Weathered Nazmani Tablet",
+		[298965] = "Cracked Tablet",
+		[299073] = "Fractured Tablet",
 		[310709] = "Waterlogged Chest",	-- New Chest in Elywynn since 8.1
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
-		[239925] = GetSpellInfo(155346),		-- Ogrish Fortitude
-		[239926] = GetSpellInfo(155315),		-- Touched By Fire
-		[230544] = GetSpellInfo(155334),		-- Touched By Ice
 		
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found
@@ -3299,19 +3322,19 @@ AllTheThings.L = {
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
 		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
-		{6, "|CFF00FFDEMay require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
-		{7, "|CFF00FFDEMay require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
-		{8, "|CFF00FFDEMay require Noblegarden to be active.|r", "Noblegarden (19)"};--19
-		{9, "|CFF00FFDEMay require Children's Week to be active.|r", "Children's Week (20)"};--20
-		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
-		{11, "|CFF00FFDEMay require Trial of Style to be active.|r", "Trial of Style (22)"};--22
-		{12, "|CFF00FFDEMay require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
-		{13, "|CFF00FFDEMay require Brewfest to be active.|r", "Brewfest (24)"};--24
-		{14, "|CFF00FFDEMay require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
-		{15, "|CFF00FFDEMay require Hallow's End to be active.|r", "Hallow's End (26)"};--26
-		{16, "|CFF00FFDEMay require Day of the Dead to be active.|r", "Day of the Dead (27)"};--27
-		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty (28)"};--28
-		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active.|r", "Feast of Winter Veil (29)"};--29
+		{6, "|CFF00FFDEMay require Lunar Festival to be active to obtain this item.|r", "Lunar Festival (17)"};--17
+		{7, "|CFF00FFDEMay require Love is In the Air to be active to obtain this item.|r", "Love is In the Air (18)"};--18
+		{8, "|CFF00FFDEMay require Noblegarden to be active to obtain this item.|r", "Noblegarden (19)"};--19
+		{9, "|CFF00FFDEMay require Children's Week to be active to obtain this item.|r", "Children's Week (20)"};--20
+		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active to obtain this item.|r", "Midsummer Fire Festival (21)"};--21
+		{11, "|CFF00FFDEMay require a specific Micro-Holiday to be active.|r", "Micro-Holiday (22)"};--22
+		{12, "|CFF00FFDEMay require Pirate's Day to be active to obtain this item.|r", "Pirate's Day (23)"};--23
+		{13, "|CFF00FFDEMay require Brewfest to be active to obtain this item.|r", "Brewfest (24)"};--24
+		{14, "|CFF00FFDEMay require Harvest Festival to be active to obtain this item.|r", "Harvest Festival (25)"};--25
+		{15, "|CFF00FFDEMay require Hallow's End to be active to obtain this item.|r", "Hallow's End (26)"};--26
+		{16, "|CFF00FFDEMay require Day of the Dead to be active to obtain this item.|r", "Day of the Dead (27)"};--27
+		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active to obtain this item.|r", "Pilgrim's Bounty (28)"};--28
+		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active to obtain this item.|r", "Feast of Winter Veil (29)"};--29
 		{19, "|CFF00FFDEMay require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "};--30
 		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"};--31
 		{4, "|CFFFF0000This is an original reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Reworked Rewards (32)"};--32
@@ -3326,9 +3349,9 @@ AllTheThings.L = {
 		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
-		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
+		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
 		{1, "|CFFFF0000With 7.3.2, Blizzard's shifted loot from Princess to various bosses.  In the process made this item no longer drop. |r", "BRD Broken Loot (45)"}; -- 45
-		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
 		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

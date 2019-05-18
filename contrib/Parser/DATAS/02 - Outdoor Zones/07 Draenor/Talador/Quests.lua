@@ -749,9 +749,10 @@ _.Zones =
 							["coord"] = { 70.5, 57.3, 535 },
 							["sourceQuest"] = 33579,	-- What the Draenei Found
 							["groups"] = {
-								{
+								{	-- The Plight of the Arakkoa
 									["achievementID"] = 8919,	-- Don't Let the Tala-door Hit You on the Way Out
-									["criteriaID"] = 3,
+									["criteriaID"] = 3,			-- The Plight of the Arakkoa
+									["races"] = HORDE_ONLY,
 								},
 							},
 						},
@@ -970,9 +971,10 @@ _.Zones =
 							["coord"] = { 70.7, 56.7, 535 },
 							["sourceQuest"] = 33579,	-- What the Draenei Found
 							["groups"] = {
-								{
+								{	-- The Plight of the Arakkoa
 									["achievementID"] = 8919,	-- Don't Let the Tala-door Hit You on the Way Out
-									["criteriaID"] = 3,
+									["criteriaID"] = 3,			-- The Plight of the Arakkoa
+									["races"] = HORDE_ONLY,
 								},
 							},
 						},
@@ -1038,14 +1040,17 @@ _.Zones =
 							},
 						},
 						{	-- News from Spires of Arak -- aa
+							["isBreadcrumb"] = true,
 							["questID"] = 35537,
 							["qg"] = 79627,	-- Shadow Hunter Kajassa
 							["coord"] = { 71.2, 29.9, 535 },
 							["races"] = HORDE_ONLY,
 						},
 						{	-- News from Spires of Arak
+							["isBreadcrumb"] = true,
 							["questID"] = 35554,
 							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 79618 },	-- Vindicator Icia
 						},
 						{	-- Next Steps
 							["questID"] = 34875,
@@ -1299,9 +1304,10 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 34962,	-- Khadgar's Plan
 							["groups"] = {
-								{
+								{	-- The Battle for Shattrath
 									["achievementID"] = 8919,	-- Don't Let the Tala-door Hit You on the Way Out
-									["criteriaID"] = 2,
+									["criteriaID"] = 2,			-- The Battle for Shattrath
+									["races"] = HORDE_ONLY,
 								},
 								i(112518),	-- Auchenai Keeper Gloves
 								i(112519),	-- Sha'tari Deadeye Gauntlets
@@ -1365,9 +1371,10 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 34870,	-- The Lord of the Gordunni
 							["groups"] = {
-								{
+								{	-- Establishing Your Post
 									["achievementID"] = 8919,	-- Don't Let the Tala-door Hit You on the Way Out
-									["criteriaID"] = 1,
+									["criteriaID"] = 1,			-- Establishing Your Post
+									["races"] = HORDE_ONLY,
 								},
 							},
 						},

@@ -6,7 +6,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(251, {	-- Old Hillsbrad Foothills
 		["lvl"] = 63,
 		["mapID"] = 274,
-		["coord"] = { 26.84, 35.53, 75 },	-- Old Hillsbrad Foothills, Caverns of Time [Tanaris]
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 26.8, 36.8, 75 },	-- Old Hillsbrad Foothills, Caverns of Time [Tanaris]
+		},
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29598, {	-- Taretha's Diversion
@@ -102,7 +105,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n( 28132, {	-- Don Carlos
+					n(28132, {	-- Don Carlos
 						["description"] = "This is a neutral mob that wanders the road.",
 						["groups"] = {	
 							i(134019),	-- Don Carlos' Famous Hat (TOY!)

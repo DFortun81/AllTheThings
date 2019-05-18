@@ -8,23 +8,40 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 221, 222, 223 },
 		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
-			n(-17, {	-- Quests 
-				qg(75606, qa(34672, { 	-- The Rise of Aku'mai
-					i(65986),	-- Shield Against the Evil Presence
-					i(65962),	-- Thaelrid's Greaves
-					i(65938),	-- Blackfathom Leggings
-					i(65912),	-- Robe of Kelris
-					i(131713),	-- Scales of Aku'mai
-				})),
-				qg(74409, qh(34673, { 	-- The Rise of Aku'mai
-					i(66030),	-- Plates of Aku'mai
-					i(66039),	-- Shield Against the Evil Presence
-					i(66021),	-- Blackfathom Leggings
-					i(66012),	-- Je'neu's Robes
-					i(131714),	-- Blackfathom Chain Leggings
-				})),
-			}),	
-			n(  0, {	-- Zone Drop
+			n(-17, {	-- Quests
+				o(177964, {	-- Fathom Stone
+					["u"] = 43,
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						qh(908, {	-- Amongst the Ruins
+							["u"] = 40,
+							["repeatable"] = true,
+							["sourceQuest"] = 6563,	-- The Essence of Aku'Mai
+						}),
+					},
+				}),
+				qa(34672, {	-- The Rise of Aku'mai
+					["qg"] = 75606,	-- Sentinel Aluwyn
+					["groups"] = {
+						i(65986),	-- Shield Against the Evil Presence
+						i(65962),	-- Thaelrid's Greaves
+						i(65938),	-- Blackfathom Leggings
+						i(65912),	-- Robe of Kelris
+						i(131713),	-- Scales of Aku'mai
+					},
+				}),
+				qh(34673, {	-- The Rise of Aku'mai
+					["qg"] = 74409,	-- Zeya
+					["groups"] = {
+						i(66030),	-- Plates of Aku'mai
+						i(66039),	-- Shield Against the Evil Presence
+						i(66021),	-- Blackfathom Leggings
+						i(66012),	-- Je'neu's Robes
+						i(131714),	-- Blackfathom Chain Leggings
+					},
+				}),
+			}),
+			n(0, {	-- Zone Drop
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
@@ -220,23 +237,23 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(74446, e( 368, {	-- Ghamoo-Ra
+			cr(74446, e(368, {	-- Ghamoo-Ra
 				i(151433),	-- Thick Shellplate Shoulders
-				i( 6907),	-- Tortoise Armor
-				i( 6908),	-- Ghamoo-Ra's Bind
+				i(6907),	-- Tortoise Armor
+				i(6908),	-- Ghamoo-Ra's Bind
 				i(151432),	-- Twilight Turtleskin Leggings
 			})),
-			cr(74476, e( 436, {	-- Domina <Mistress of Shadows>
+			cr(74476, e(436, {	-- Domina <Mistress of Shadows>
 				i(11121),	-- Darkwater Talwar
-				i( 3078),	-- Naga Heartpiercer
+				i(3078),	-- Naga Heartpiercer
 				i(132554),	-- Deadly Serpentine Grips
-				i(  888),		-- Naga Battle Gloves
+				i(888),		-- Naga Battle Gloves
 				i(151435),	-- Domina's Deathmaw Greaves
 				i(151434),	-- Foul Shadowsleet Slippers
 			})),
-			cr(74565, e( 426, {	-- Subjugator Kor'ul
-				i( 6905),	-- Reef Axe
-				i( 6906),	-- Algae Fists
+			cr(74565, e(426, {	-- Subjugator Kor'ul
+				i(6905),	-- Reef Axe
+				i(6906),	-- Algae Fists
 				i(151436),	-- Murloc Oppressor's Band
 			})),
 			cr(74505, e(1145, {	-- Thruk
@@ -245,29 +262,44 @@ _.Instances = { tier(1, {	-- Classic
 				i(120163),	-- Thruk's Fishing Rod
 				i(151437),	-- Hook Charm Necklace
 			})),
-			cr(75410, e( 447, {	-- Guardian of the Deep
-				i( 6904),	-- Bite of Serra'kis
-				i(132555),	-- Serra'kis Scale Wraps
-				i( 6902),	-- Bands of Serra'kis
-				i( 6901),	-- Glowing Thresher Cape
-			})),
+			{	-- Guardian of the Deep
+				["encounterID"] = 447,	-- Guardian of the Deep
+				["crs"] = {
+					75410,	-- Guardian of the Deep [Netted by Thruk]
+					74508,	-- Guardian of the Deep [Fight location]
+				},
+				["g"] = {
+					{	-- Bite of Serra'kis
+						["itemID"] = 6904,	-- Bite of Serra'kis
+					},
+					{	-- Serra'kis Scale Wraps
+						["itemID"] = 132555,	-- Serra'kis Scale Wraps
+					},
+					{	-- Bands of Serra'kis
+						["itemID"] = 6902,	-- Bands of Serra'kis
+					},
+					{	-- Glowing Thresher Cape
+						["itemID"] = 6901,	-- Glowing Thresher Cape
+					},
+				},
+			},
 			cr(74988, e(1144, {	-- Executioner Gore
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
 			})),
-			cr(74728, e( 437, {	-- Twilight Lord Bathiel
-				i( 1155),	-- Rod of the Sleepwalker
+			cr(74728, e(437, {	-- Twilight Lord Bathiel
+				i(1155),	-- Rod of the Sleepwalker
 				i(151440),	-- Blackfathom Ascendant's Helm
 				i(151439),	-- Bathiel's Scale Spaulders
-				i( 6903),	-- Gaze Dreamer Pants
+				i(6903),	-- Gaze Dreamer Pants
 				i(151438),	-- Hungering Deepwater Treads
 			})),
-			cr(75408, e( 444, {	-- Aku'mai
+			cr(75408, e(444, {	-- Aku'mai
 				ach(632),	-- Blackfathom Deeps
-				i( 6909),	-- Strike of the Hydra
-				i( 6911),	-- Moss Cinch
+				i(6909),	-- Strike of the Hydra
+				i(6911),	-- Moss Cinch
 				i(132553),	-- Algae-Twined Waistcord
-				i( 6910),	-- Leech Pants
+				i(6910),	-- Leech Pants
 				i(151441),	-- Aku'mai Worshipper's Greatboots
 			})),
 			n(-40, {	-- Legacy
@@ -297,7 +329,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(7004)),		-- Prelacy Cape
 						un(2, i(56681)),	-- Searching Wand
 						un(2, i(56680)),	-- Shadestar Mace
-					})),	
+					})),
 					un(40, qa(26883, {	-- Twilight Falls
 						un(2, i(56699)),	-- Aluwyn's Legguards
 						un(2, i(56697)),	-- Blackfathom Mace

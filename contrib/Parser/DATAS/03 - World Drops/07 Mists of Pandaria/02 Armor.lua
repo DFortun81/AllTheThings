@@ -94,16 +94,6 @@ _.WorldDrops =
 					i(86848),	-- Serrated Wasp Bracers
 					i(86849),	-- Plated Locust Bracers
 					i(86850),	-- Darting Damselfly Cuffs
-					i(86992),	-- Shining Cicada Bracers
-					i(86993),	-- Darting Damselfly Cuffs
-					i(86994),	-- Gleaming Moth Cuffs
-					i(86995),	-- Smooth Beetle Wristbands
-					i(86996),	-- Pearlescent Butterfly Wristbands
-					i(86997),	-- Jagged Hornet Bracers
-					i(86998),	-- Luminescent Firefly Wristguards
-					i(86999),	-- Inlaid Cricket Bracers
-					i(87000),	-- Plated Locust Bracers
-					i(87001),	-- Serrated Wasp Bracers
 					i(87517),	-- Bracers of Rolling Fields
 					i(87518),	-- Bracers of the Neux Dawn
 					i(87519),	-- Misty Morning Wristguards

@@ -6,17 +6,15 @@ _.WorldEvents =
 	n(-65, {	-- Blizzard Promotions
 		["groups"] = {
 			n(-382, {	-- BattleTag
-				i(41133, {	-- Unhatched Mr. Chilly
-					["groups"] = {
-					},
+				{	-- Unhatched Mr. Chilly
+					["itemID"] = 41133,	-- Unhatched Mr. Chilly
 					["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag.  No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 					["u"] = 2,
-				}),
-				i(49646, {	-- Core Hound Pup
-					["groups"] = {
-					},
+				},
+				{	-- Core Hound Pup
+					["itemID"] = 49646, 	-- Core Hound Pup
 					["description"] = "Granted to players who attach an authenticator to their account.",
-				}),
+				},
 			}),
 		},
 		["icon"] = "Interface\\Icons\\achievement_general",

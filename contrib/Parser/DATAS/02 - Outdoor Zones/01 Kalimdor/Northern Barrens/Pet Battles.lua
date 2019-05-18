@@ -51,31 +51,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
-					{	-- Wailing Critters
-						["questID"] = 45423,
-						["qg"] = 116781,	-- Muyani
-						["coord"] = { 38.8, 68.2, 10 },
-						["groups"] = {
-							i(122457),	-- Ultimate Battle-Training Stone
-						},
-					},
-					ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
-						i(147543),	-- Son of Skum
-						{	-- Pet Battle Challenge: WC
-							["questID"] = 45539,
-							["qg"] = 116781,	-- Muyani
-							["coord"] = { 38.8, 68.2, 10 },
-							["isWeekly"] = true,
-							["lvl"] = 110,
-							["groups"] = {
-								i(143753, {	-- Damp Pet Supplies
-									i(143754), 	-- Cavern Moccasin
-									i(143755),	-- Young Venomfang
-									i(143756),	-- Everliving Spore
-								}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-							},
-						},
-					}),
 				}),
 			},
 		}),

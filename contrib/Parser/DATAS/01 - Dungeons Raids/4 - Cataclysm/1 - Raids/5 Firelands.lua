@@ -32,15 +32,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["groups"] = {
 					{
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["allianceQuestID"] = 29453,	-- Your Time Has Come [A]
-						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [H]
+						["allianceQuestID"] = 29453,	-- Your Time Has Come [Alliance]
+						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [Horde]
 						["qg"] = 53115,	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					},
 					{
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
-						["allianceQuestID"] = 29129,	-- A Legendary Engagement [A]
-						["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [H]
+						["allianceQuestID"] = 29129,	-- A Legendary Engagement [Alliance]
+						["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [Horde]
 						["qg"] = 52382,	-- Ziradormi
 						["sourceQuests"] = { 29453, 29452 },	-- Your Time Has Come
 					},
@@ -185,14 +185,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 					{
 						["qg"] = 53349,	-- Kalecgos
-						["allianceQuestID"] = 29307,	-- Heart of Flame [A]
-						["hordeQuestID"] = 	  29308,	-- Heart of Flame [H]
+						["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
+						["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 						["sourceQuests"] = { 29285 },	-- Alignment
 						["groups"] = {
 							i(69848, {	-- Heart of Flame
 								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
-								["allianceQuestID"] = 29307,	-- Heart of Flame [A]
-								["hordeQuestID"] = 	  29308,	-- Heart of Flame [H]
+								["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
+								["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 								["crs"] = {
 									53691,	-- Shannox
 									52498,	-- Beth'tilac <The Red Widow>
@@ -208,8 +208,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 					{
 						["qgs"] = { 53466 },	-- Hallegosa
-						["allianceQuestID"] = 29312,	-- The Stuff of Legends [A]
-						["hordeQuestID"] = 29309,		-- The Stuff of Legends [H]
+						["allianceQuestID"] = 29312,	-- The Stuff of Legends [Alliance]
+						["hordeQuestID"] = 29309,		-- The Stuff of Legends [Horde]
 						["sourceQuests"] = { 29307, 29308 },	-- Heart of Flame
 						["groups"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
@@ -233,7 +233,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				},
 			},
-			n( -2, {	-- Vendors
+			n(-2, {	-- Vendors
 				n(54401, {	-- Naresir Stormfury
 					i(70930),
 					i(71229),
@@ -250,7 +250,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71253),
 				}),
 			}),
-			n(  0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				["crs"] = {
 					53134,	-- Ancient Core Hound
 					53635,	-- Cinderweb Drone
@@ -316,7 +316,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(  1, {	-- Normal
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n( -1, { 	-- Common Boss Drops
+					n(-1, { 	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
@@ -588,7 +588,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(  2, {	-- Heroic
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n( -2, {	-- Vendors
+					n(-2, {	-- Vendors
 						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
 							["groups"] = {
@@ -648,7 +648,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 					}),
-					n( -1, { 	-- Common Boss Drops
+					n(-1, { 	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>

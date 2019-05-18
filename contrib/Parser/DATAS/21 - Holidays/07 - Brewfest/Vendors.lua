@@ -59,7 +59,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(122339),	-- Ancient Heirloom Scabbard
 						i(119209),	-- Angry Brewfest Letter
-						i(33047),	-- Belbi's Eyesight Enhancing Romance Goggles
+						{	-- Belbi's Eyesight Enhancing Romance Goggles
+							["itemID"] = 33047,			-- Belbi's Eyesight Enhancing Romance Goggles
+							["ignoreSource"] = true,	-- White Item
+						},
 						i(116758),	-- Brewfest Banner
 						i(71137),	-- Brewfest Keg Pony
 						i(33927),	-- Brewfest Pony Keg

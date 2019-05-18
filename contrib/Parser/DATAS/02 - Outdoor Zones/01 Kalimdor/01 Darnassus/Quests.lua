@@ -28,7 +28,7 @@ _.Zones =
 							}),
 						},
 						["qg"] = 4156,	-- Astaia
-						["coord"] = { 49.0, 61.0 },
+						["coord"] = { 49.0, 61.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
@@ -36,7 +36,7 @@ _.Zones =
 					{	-- A Summons from Ander Germaine
 						["questID"] = 27225,
 						["qg"] = 4087,	-- Arias'ta Bladesinger
-						["coord"] = { 56.4, 46.2 },
+						["coord"] = { 56.4, 46.2, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 1 },	-- Warrior
 						["isBreadcrumb"] = true,
@@ -44,7 +44,7 @@ _.Zones =
 					{	-- An Audience with the Farseer
 						["questID"] = 27270,
 						["qg"] = 52292,	-- Droha
-						["coord"] = { 43.8, 78.8 },
+						["coord"] = { 43.8, 78.8, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 7 },	-- Shaman
 						["isBreadcrumb"] = true,
@@ -52,7 +52,7 @@ _.Zones =
 					{	-- An Invitation from Moonglade
 						["questID"] = 27273,
 						["qg"] = 4217,	-- Mathrengyl Bearwalker
-						["coord"] = { 40.4, 27.6 },
+						["coord"] = { 40.4, 27.6, 89 },
 						["races"] = {
 							4,	-- Night Elf
 							22,	-- Worgen
@@ -70,7 +70,7 @@ _.Zones =
 							i(67414),	-- Bag of Shiny Things
 						},
 						["qg"] = 4156,	-- Astaia
-						["coord"] = { 49.0, 61.0 },
+						["coord"] = { 49.0, 61.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
@@ -78,7 +78,7 @@ _.Zones =
 					{	-- An Unexpected Gift
 						["questID"] = 6342,
 						["qg"] = 7316,	-- Sister Aquinne
-						["coord"] = { 36.0, 53.4 },
+						["coord"] = { 36.0, 53.4, 89 },
 						["races"] = { 4 },	-- Night Elf
 						["sourceQuest"] = 6341,	-- To Darnassus
 					},
@@ -92,7 +92,7 @@ _.Zones =
 							currency(81),	-- Epicurean's Award
 						},
 						["qg"] = 4210,	-- Alegorn
-						["coord"] = { 50.0, 36.6 },
+						["coord"] = { 50.0, 36.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
@@ -100,14 +100,14 @@ _.Zones =
 					{	-- Breaking Waves of Change
 						["questID"] = 26383,
 						["qg"] = 42936,	-- Sentinel Cordressa Briarbow
-						["coord"] = { 43.8, 76.2 },
+						["coord"] = { 43.8, 76.2, 89 },
 						["races"] = exclude(22, ALLIANCE_ONLY),	-- All alliance races exception Worgen
 						["isBreadcrumb"] = true,
 					},
 					{	-- Breaking Waves of Change
 						["questID"] = 26385,
 						["qg"] = 48736,	-- Genn Greymane
-						["coord"] = { 48.2, 14.6 },
+						["coord"] = { 48.2, 14.6, 89 },
 						["races"] = { 22 },	-- Worgen
 						["isBreadcrumb"] = true,
 					},
@@ -141,7 +141,7 @@ _.Zones =
 							i(67414),	-- Bag of Shiny Things
 						},
 						["qg"] = 4156,	-- Astaia
-						["coord"] = { 49.0, 61.0 },
+						["coord"] = { 49.0, 61.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
@@ -149,7 +149,7 @@ _.Zones =
 					{	-- Journey to the Wizard's Sanctum
 						["questID"] = 27271,
 						["qg"] = 50690,	-- Tarelvir
-						["coord"] = { 37.6, 80.0 },
+						["coord"] = { 37.6, 80.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 8 },	-- Mage
 						["isBreadcrumb"] = true,
@@ -173,7 +173,7 @@ _.Zones =
 					{	-- Lord Grayson Shadowbreaker
 						["questID"] = 27265,
 						["qg"] = 35281,	-- Rukua
-						["coord"] = { 43.6, 78.4 },
+						["coord"] = { 43.6, 78.4, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 2 },	-- Paladin
 						["isBreadcrumb"] = true,
@@ -181,7 +181,7 @@ _.Zones =
 					{	-- Make Contact with SI:7
 						["questID"] = 27267,
 						["qg"] = 4214,
-						["coord"] = { 40.0, 39.6 },
+						["coord"] = { 40.0, 39.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 4 },	-- Rogue
 						["isBreadcrumb"] = true,
@@ -189,7 +189,7 @@ _.Zones =
 					{	-- Make Haste to the Cathedral
 						["questID"] = 27268,
 						["qg"] = 11401,
-						["coord"] = { 43.4, 79.2 },
+						["coord"] = { 43.4, 79.2, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 5 },	-- Priest
 						["isBreadcrumb"] = true,
@@ -207,7 +207,7 @@ _.Zones =
 					{	-- Meet with Ander Germaine
 						["questID"] = 28258,
 						["qg"] = 4087,	-- Arias'ta Bladesinger
-						["coord"] = { 56.4, 46.2 },
+						["coord"] = { 56.4, 46.2, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 1 },	-- Warrior
 						["isBreadcrumb"] = true,
@@ -215,7 +215,7 @@ _.Zones =
 					{	-- Meet with Farseer Umbrua
 						["questID"] = 28287,
 						["qg"] = 52292,	-- Droha
-						["coord"] = { 43.8, 78.8 },
+						["coord"] = { 43.8, 78.8, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 7 },	-- Shaman
 						["isBreadcrumb"] = true,
@@ -223,7 +223,7 @@ _.Zones =
 					{	-- Meet with High Priestess Laurena
 						["questID"] = 28285,
 						["qg"] = 11401,	-- Priestess Alathea
-						["coord"] = { 43.4, 79.2 },
+						["coord"] = { 43.4, 79.2, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 5 },	-- Priest
 						["isBreadcrumb"] = true,
@@ -231,7 +231,7 @@ _.Zones =
 					{	-- Meet with Lord Grayson Shadowbreaker
 						["questID"] = 28268,
 						["qg"] = 35281,	-- Rukua
-						["coord"] = { 43.6, 78.4 },
+						["coord"] = { 43.6, 78.4, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 2 },	-- Paladin
 						["isBreadcrumb"] = true,
@@ -239,7 +239,7 @@ _.Zones =
 					{	-- Meet with Lord Tony Romano
 						["questID"] = 28262,
 						["qg"] = 4214,	-- Erion Shadewhisper
-						["coord"] = { 40.0, 39.6 },
+						["coord"] = { 40.0, 39.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 4 },	-- Rogue
 						["isBreadcrumb"] = true,
@@ -247,7 +247,7 @@ _.Zones =
 					{	-- Meet with Maginor Dumas
 						["questID"] = 28263,
 						["qg"] = 50690,	-- Tarelvir
-						["coord"] = { 37.6, 80.0 },
+						["coord"] = { 37.6, 80.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 8 },	-- Mage
 						["isBreadcrumb"] = true,
@@ -255,7 +255,7 @@ _.Zones =
 					{	-- Meet with Wulf Hansreim
 						["questID"] = 28260,
 						["qg"] = 4138,	-- Jeen'ra Nightrunner
-						["coord"] = { 43.4, 26.0 },
+						["coord"] = { 43.4, 26.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 3 },	-- Hunter
 						["isBreadcrumb"] = true,
@@ -263,14 +263,14 @@ _.Zones =
 					{	-- Moonglade Calls
 						["questID"] = 28289,
 						["qg"] = 4217,	-- Mathrengyl Bearwalker
-						["coord"] = { 40.4, 27.6 },
+						["coord"] = { 40.4, 27.6, 89 },
 						["classes"] = { 11 },	-- Druid
 						["isBreadcrumb"] = true,
 					},
 					{	-- Moonglow Vest
 						["questID"] = 1582,
 						["qg"] = 6034,	-- Lotherias
-						["coord"] = { 60.4, 37.0 },
+						["coord"] = { 60.4, 37.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 165,	-- Leatherworking
 						["groups"] = {
@@ -293,7 +293,7 @@ _.Zones =
 							currency(81),	-- Epicurean's Award
 						},
 						["qg"] = 4210,	-- Alegorn
-						["coord"] = { 50.0, 36.6 },
+						["coord"] = { 50.0, 36.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
@@ -301,7 +301,7 @@ _.Zones =
 					{	-- Return to Nyoma
 						["questID"] = 6343,
 						["qg"] = 40552,	-- Leora
-						["coord"] = { 36.5, 47.8 },
+						["coord"] = { 36.5, 47.8, 89 },
 						["races"] = { 4 },	-- Night Elf
 						["sourceQuest"] = 6342,	-- An Unexpected Gift
 					},
@@ -315,7 +315,7 @@ _.Zones =
 							currency(81),	-- Epicurean's Award
 						},
 						["qg"] = 4210,	-- Alegorn
-						["coord"] = { 50.0, 36.6 },
+						["coord"] = { 50.0, 36.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
@@ -330,7 +330,7 @@ _.Zones =
 							currency(81),	-- Epicurean's Award
 						},
 						["qg"] = 4210,	-- Alegorn
-						["coord"] = { 50.0, 36.6 },
+						["coord"] = { 50.0, 36.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
@@ -345,10 +345,17 @@ _.Zones =
 							i(67414),	-- Bag of Shiny Things
 						},
 						["qg"] = 4156,	-- Astaia
-						["coord"] = { 49.0, 61.0 },
+						["coord"] = { 49.0, 61.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
+					},
+					{	-- The Barrens Port
+						["questID"] = 1039,
+						["u"] = 40,
+						["qg"] = 8026,	-- Thyn'tel Bladeweaver
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1038,	-- Velinde's Effects
 					},
 					{	-- The Secret to Perfect Kimchi
 						["questID"] = 29313,
@@ -360,7 +367,7 @@ _.Zones =
 							currency(81),	-- Epicurean's Award
 						},
 						["qg"] = 4210,	-- Alegorn
-						["coord"] = { 50.0, 36.6 },
+						["coord"] = { 50.0, 36.6, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 185,	-- Cooking
@@ -375,7 +382,7 @@ _.Zones =
 							i(67414),	-- Bag of Shiny Things
 						},
 						["qg"] = 4156,	-- Astaia
-						["coord"] = { 49.0, 61.0 },
+						["coord"] = { 49.0, 61.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 129,	-- Fishing
@@ -383,7 +390,7 @@ _.Zones =
 					{	-- The Temple of the Moon
 						["questID"] = 27269,
 						["qg"] = 11401,	-- Priestess Alathea
-						["coord"] = { 43.4, 79.2 },
+						["coord"] = { 43.4, 79.2, 89 },
 						["races"] = { 4 },	-- Night Elf
 						["classes"] = { 5 },	-- Priest
 						["isBreadcrumb"] = true,
@@ -391,9 +398,16 @@ _.Zones =
 					{	-- Tracking the Thieves
 						["questID"] = 32460,
 						["qg"] = 68651,	-- Lady Jaina Proudmoore
-						["coord"] = { 39.0, 32.8 },
+						["coord"] = { 39.0, 32.8, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+					},
+					{	-- Velinde's Effects
+						["questID"] = 1038,
+						["u"] = 40,
+						["qg"] = 8026,	-- Thyn'tel Bladeweaver
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1037,	-- Velinde Starsong
 					},
 					{	-- Weapons of Elunite
 						["questID"] = 1693,
@@ -411,7 +425,7 @@ _.Zones =
 					{	-- Wulf Calls
 						["questID"] = 27266,
 						["qg"] = 4138,	-- Jeen'ra Nightrunner
-						["coord"] = { 43.4, 26.0 },
+						["coord"] = { 43.4, 26.0, 89 },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 3 },	-- Hunter
 						["isBreadcrumb"] = true,

@@ -5,29 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(47, {		-- Duskwood
-			["groups"] = {
-				n(-538, {	-- Diablo 20th Anniversary Promotion
-					["groups"] = {	
-						n(116041, {	-- Treasure Goblin
-							["groups"] = {
-								n(116034, {	-- The Cow King
-									un(3, i(143543)),	-- Twelve String Guitar
-									i(142543, {	-- Scroll of Town Portal
-										i(143628, {	-- Blank Diabolic Tome
-											["groups"] = {
-												un(3, i(142542)),	-- Tome of Town Portal
-											},
-											["description"] = "Combine 10x Scroll of Town Portals with 1x Blank Diabolic Tome (dropped from Treasure Goblin) to create Tome of Town Portal.",
-										}),
-									}),
-									un(3, i(143327)),	-- Livestock Lochaber Axe
-								}),	
-							},
-							["description"] = "Can be found after killing the last boss in a dungeon or randomly in Legion zones. Kill him and enter his portal to fight The Cow King.",
-						}),
-					},
-					["u"] = 2,					
-				}),				
+			["g"] = {
 				n(-228, {	-- Flight Path
 					fp(12, {	-- Darkshire, Duskwood
 						["coord"] = { 77.4, 44.2 },
@@ -64,7 +42,7 @@ _.Zones =
 						crit(4),		-- Mor'ladim
 						crit(5),		-- Citizens of Darkshire
 					})),
-]]--				
+]]--
 --					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
 					qg(576, qa(26797, {	-- A Daughters Love
 						i(60937),
@@ -77,9 +55,9 @@ _.Zones =
 						i(60926),
 						i(60927),
 						i(131587),
-						i(157003),	-- Corpseweed Hewer						
+						i(157003),	-- Corpseweed Hewer
 					})),
---[[					
+--[[
 					qart(qg(101651, q(40785, {	-- A Foe of the Dark
 						["classes"] = {11},	-- Druid
 					}))),
@@ -92,6 +70,7 @@ _.Zones =
 					qg(264, qa(26686, {	-- Bones That Walk
 						i(60941),
 						i(60942),
+						i(60943), -- Signet of the Night Watch
 						i(131581),
 					})),
 --[[
@@ -106,7 +85,7 @@ _.Zones =
 						i(60909),
 						i(131580),
 					})),
---[[					
+--[[
 					qg(43453, qa(26672)),	-- Clawing at the Truth
 					qg(620, q(3861)),	-- CLUCK!
 --]]
@@ -132,9 +111,15 @@ _.Zones =
 					qg(100323, q(40834, {	-- Following the Curse
 						["classes"] = {11},	-- Druid
 					})),
-					qg(100323, q(40588, {	-- Following the Curse
-						["classes"] = {9},	-- Warlock
-					})),
+--]]
+					q(40588, {	-- Following the Curse
+						["sourceQuests"] = { 40495 },	-- Ulthalesh, the Deadwind Harvester
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 77.4, 36.1, 47 },
+						["lvl"] = 98,
+						["qg"] = 100323,	-- Revil Kost
+					}),
+--[[
 					qg(100323, q(40931, {	-- Following the Curse
 						["classes"] = {6},	-- Death Knight
 					})),
@@ -162,46 +147,51 @@ _.Zones =
 						i(60919),
 						i(60920),
 						i(131578),
-					})),					
+					})),
 --					qg(264, qa(26795)),	-- Mor'Ladim
 					o(204825, {	-- Lightforged Crest
-						qa(26754, {	-- Morbent's Bane	
+						qa(26754, {	-- Morbent's Bane
 							i(60939),
 							i(60940),
 							i(131596),
 						}),
 					}),
---[[					
+--[[
 					qg(268, qa(26794)),	-- Morgan Ladimore
 					qg(289, qa(26681)),	-- Note to the Mayor
 					qg(289, qa(26680)),	-- Ogre Thieves
 					qg(43453, qa(26785)),	-- Part of the Pack
-					qg(43731, qa(26838)),	-- Rebels Without a Clue 
+					qg(43731, qa(26838)),	-- Rebels Without a Clue
 					qg(302, qa(26654)),	-- Return the Comb
 					qg(110684, q(43393, {	-- Rising Shadows
 						["classes"] = {5},	-- Priest
 					})),
---]]					
+--]]
 					qg(267, qa(26670, {	-- Roland's Doom
 						i(60914),
 						i(60915),
 						i(60916),
 						i(131577),
 						i(157002),	-- Exorcist's Crossbow
-						i(156975),	-- Exorcist's Dagger						
+						i(156975),	-- Exorcist's Dagger
 					})),
 					qa(26620, {	-- Seasoned Wolf Kabobs
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
 					}),
 
---[[					
+--[[
 					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
 					qg(111041, q(43391, {	-- Secrets of the Void
 						["classes"] = {5},	-- Priest
 					})),
 					qg(43731, qa(26777)),	-- Soothing Spirits
 					qg(289, qa(26653)),	-- Supplies from Darkshire
---]]					
+--]]
+					qa(1042, {	-- The Carevin Family
+						["u"] = 40,
+						["qg"] = 267,	-- Clerk Daltry
+						["sourceQuest"] = 1041,	-- The Caravan Road
+					}),
 					qg(43731, qa(26778, {	-- The Cries of the Dead
 						i(60921),
 						i(60922),
@@ -214,7 +204,12 @@ _.Zones =
 						i(60906),
 						i(60907),
 					})),
---[[					
+					qa(1043, {	-- The Scythe of Elune
+						["u"] = 40,
+						["qg"] = 661,	-- Jonathan Carevin
+						["sourceQuest"] = 1042,	-- The Carevin Family
+					}),
+--[[
 					qg(43861, qa(26723)),	-- The Fate of Morbent Fel
 					qg(267, qa(26671)),	-- The Fate of Stalvan Mistmantle
 					o(204817, {	-- Lightforged Rod
@@ -227,7 +222,7 @@ _.Zones =
 					qg(43861, qa(26724)),	-- The Lurking Lich
 					qg(264, qa(26645)),	-- The Night Watch
 					qg(663, qa(26689)),	-- The Rotting Orchard
---]]					
+--]]
 					qg(267, qa(26667, {	-- The Stolen Letters
 						i(60911),
 						i(60912),
@@ -236,14 +231,14 @@ _.Zones =
 						i(156974),	-- Archivist's Walking Stick
 						i(156973),	-- Archivist's Staff
 					})),
---[[					
+--[[
 					o(61, {	-- A Weathered Grave
 						qa(26793),	-- The Weathered Grave
 					}),
 					qg(43738, qa(26717)),	-- The Yorgen Worgen
 					qg(663, qa(26690)),	-- Vile and Tainted
 					qg(888, qa(25235)),	-- Vulgar Vul'Gol
---]]					
+--]]
 					qg(264, qa(26618, {	-- Wolves at Our Heels
 						i(60896),
 						i(60897),
@@ -255,12 +250,12 @@ _.Zones =
 						i(60933),
 						i(131582),
 					})),
---[[					
-					qg(663, qa(26688)),	-- Worgen in the Woods					
+--[[
+					qg(663, qa(26688)),	-- Worgen in the Woods
 					qg(289, qa(26660)),	-- Zombie Juice
 --]]
 				}),
-				n(-16,  {	-- Rares	
+				n(-16,  {	-- Rares
 					n(45785, {	-- Carved One
 						["g"] = {
 							dr(06.0, i(9773)),	-- Greenweave Robe
@@ -302,7 +297,7 @@ _.Zones =
 							{ 50.6, 72.8 },
 							{ 49.4, 75.6 },
 						},
-					}), 
+					}),
 					n(45801, {	-- Eliza
 						["g"] = {
 							dr(09.0, i(9805)),	-- Superior Cloak
@@ -340,7 +335,7 @@ _.Zones =
 							dr(01.0, i(9801)),	-- Superior Belt
 						},
 						["coord"] = { 27.6, 31.6 },
-					}), 
+					}),
 					n(507,   {	-- Fenros
 						["g"] = {
 							dr(06.0, i(6581)),	-- Scouting Belt
@@ -382,9 +377,9 @@ _.Zones =
 							{ 64.4, 47.8 },
 							{ 64.0, 51.2 },
 						},
-					}), 
+					}),
 					n(91592, {	-- Forlorn Composer
-						["groups"] = {
+						["g"] = {
 							i(122223),	-- Music Roll: Ghost
 						},
 						["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music requires you to speak to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges)."
@@ -431,7 +426,7 @@ _.Zones =
 							{ 65.6, 19.6 },
 							{ 70.2, 24.4 },
 						},
-					}), 
+					}),
 					n(45811, { 	-- Marina DeSirrus
 						["g"] = {
 							dr(05.0, i(9814)),	-- Fortified Belt
@@ -510,8 +505,11 @@ _.Zones =
 							{ 61.0, 74.6 },
 							{ 60.8, 81.4 },
 						},
-					}), 
+					}),
 					n(574,   {	-- Naraxis
+						["coords"] = {
+							{ 86.36, 47.32, 47 },
+						},
 						["g"] = {
 							dr(10.0, i(6581)),	-- Scouting Belt
 							dr(09.0, i(6563)),	-- Shimmering Bracers
@@ -545,8 +543,7 @@ _.Zones =
 							un(7, i(4448)),	-- Husk of Naraxis
 							un(7, i(4449)),	-- Naraxis' Fang
 						},
-						["coord"] = { 86.4, 48.0 },
-					}), 
+					}),
 					n(534,   {	-- Nefaru
 						["g"] = {
 							dr(09.0, i(9814)),	-- Fortified Belt
@@ -586,7 +583,7 @@ _.Zones =
 							un(7, i(4476)),	-- Beastwalker Robe
 						},
 						["coord"] = { 74.0, 78.6 },
-					}), 
+					}),
 					n(45739, { 	-- The Unknown Soldier
 						["g"] = {
 							dr(06.0, i(9776)),	-- Bandit Boots
@@ -624,7 +621,7 @@ _.Zones =
 							dr(01.0, i(10287)),	-- Greenweave Mantle
 						},
 						["coord"] = { 90.6, 30.6 },
-					}), 
+					}),
 					n(45740, { 	-- Watcher Eva
 						["g"] = {
 							dr(09.0, i(6563)),	-- Shimmering Bracers
@@ -672,7 +669,7 @@ _.Zones =
 				}),
 				n(-2,   {	-- Vendors
 					a(n(844,  {	-- Antonio Perelli <Traveling Salesman>
-						["groups"] = {
+						["g"] = {
 							i(4795),	-- Bear Bracers
 							i(4796),	-- Owl Bracers
 							i(4794),	-- Wolf Bracers
@@ -738,7 +735,7 @@ _.Zones =
 					})),
 				}),
 				n(-40,  {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-2, {
 							n(2481, {	-- Bliztik
 								un(2, i(6068)),	-- Recipe: Shadow Oil
@@ -759,7 +756,7 @@ _.Zones =
 								un(2, i(7107)),	-- Belt of the Stars
 								un(2, i(7106)),	-- Zodiac Gloves
 							})),
-							un(40, qa( 55, {	-- Morbent Fel
+							un(40, qa(55, {	-- Morbent Fel
 								un(2, i(2954)),	-- Night Watch Pantaloons
 								un(2, i(1282)),	-- Sparkmetal Coif
 								un(2, i(7344)),	-- Torch of Holy Flame
@@ -769,13 +766,13 @@ _.Zones =
 								un(2, i(6832)),	-- Cloak of Blight
 								un(2, i(11265)),	-- Cragwood Maul
 							})),
-							un(40, qa( 98, {	-- The Legend of Stalvan
+							un(40, qa(98, {	-- The Legend of Stalvan
 								un(2, i(2044)),	-- Crescent of Forlorn Spirits
 								un(2, i(2043)),	-- Ring of Forlorn Spirits
 							})),
 							un(40, qa(58, {		-- The Night Watch
 								["qg"] = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
-								["groups"] = {
+								["g"] = {
 									un(2, i(3604)),	-- Bandolier of the Night Watch
 									un(2, i(1729)),	-- Gunnysack of the Night Watch
 									un(2, i(3605)),	-- Quiver of the Night Watch
@@ -841,7 +838,7 @@ _.Zones =
 							un(43, n(1110, {	-- Skeletal Raider
 								un(7, i(2018)),	-- Skeletal Longsword
 							})),
-							un(43, n(785, { 	-- Skeletal Warder 
+							un(43, n(785, { 	-- Skeletal Warder
 								un(7, i(2017)),	-- Glowing Leather Bracers
 							})),
 							un(43, n(1487, { 	-- Splinter Fist Enslaver
@@ -849,7 +846,7 @@ _.Zones =
 							})),
 							n(1251, { 	-- Splinter Fist Firemonger
 								un(7, i(2226)),	-- Ogremage Staff
-							}),	
+							}),
 							un(43, n(891, { 	-- Splinter Fist Fire Weaver
 								un(7, i(2226)),	-- Ogremage Staff
 							})),
@@ -863,7 +860,7 @@ _.Zones =
 								un(7, i(899)),	-- Venom Web Fang
 							}),
 						}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							un(7, i(920, {	-- Wicked Spiked Mace
 								["description"] = "This dropped off of Defias mobs in Duskwood.",
 							})),
@@ -871,9 +868,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 20,	
+			["lvl"] = 20,
 			["achievementID"] = 778,
-			["description"] = "|cff66ccffDuskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Players assist the Night Watch, who protect the tenacious town of Darkshire. They also learn several chilling stories about former residents--such as Abercrombie, Jitters, and Morbent Fel.|r",			
+			["description"] = "|cff66ccffDuskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Players assist the Night Watch, who protect the tenacious town of Darkshire. They also learn several chilling stories about former residents--such as Abercrombie, Jitters, and Morbent Fel.|r",
 		}),
 	}),
 };

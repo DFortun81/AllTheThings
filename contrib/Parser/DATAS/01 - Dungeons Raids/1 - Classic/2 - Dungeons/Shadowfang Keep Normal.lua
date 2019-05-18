@@ -4,26 +4,27 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(64, { 	-- Shadowfang Keep
-		["lvl"] = 11,
+		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
 		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
-		["groups"] = {
+		["lvl"] = 11,
+		["g"] = {
 			d(1, {		-- Normal
-				n(-17, {	-- Quests 
+				n(-17, {	-- Quests
 					qa(27917, { 	-- Sniffing Them Out
 						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 					}),
 					qa(27920, { 	-- Armored to the Teeth
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 						["sourceQuests"] = { 27917 },	-- Sniffing Them Out
+						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 					}),
 					qa(27921, { 	-- Fighting Tooth and Claw
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 						["sourceQuests"] = { 27920 },	-- Armored to the Teeth
+						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 					}),
 					qa(27968, { 	-- Fury of the Pack
-						["qg"] = 47706,	-- Packleader Ivar Bloodfang
 						["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
-						["groups"] = {
+						["qg"] = 47706,	-- Packleader Ivar Bloodfang
+						["g"] = {
 							i(65984), 	-- Breastplate of the Terrible Price
 							i(66002), 	-- Packleader's Pauldrons
 							i(65960), 	-- Shadowfang Shoulderpads
@@ -37,17 +38,17 @@ _.Instances = { tier(1, {	-- Classic
 						["qg"] = 47293,	-- Deathstalker Commander Belmont
 					}),
 					qh(27988, { 	-- Plague...Plague Everywhere!
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
 						["sourceQuests"] = { 27974 },	-- This Land is Our Land
+						["qg"] = 47293,	-- Deathstalker Commander Belmont
 					}),
 					qh(27996, { 	-- Orders Are For the Living
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
+						["qg"] = 47293,	-- Deathstalker Commander Belmont
 					}),
 					qh(27998, { 	-- Sweet, Merciless Revenge
-						["qg"] = 47293,	-- Deathstalker Commander Belmont
 						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-						["groups"] = {
+						["qg"] = 47293,	-- Deathstalker Commander Belmont
+						["g"] = {
 							i(66038), 	-- Breastplate of the Terrible Price
 							i(66044), 	-- Deathstalker Pauldrons
 							i(66029), 	-- Shadowfanger Shoulderpads
@@ -68,7 +69,7 @@ _.Instances = { tier(1, {	-- Classic
 							47146,	-- Spitebone Flayer
 							47143,	-- Spitebone Skeleton
 							3870,	-- Stone Sleeper
-							3873,	-- Tormented Officer									
+							3873,	-- Tormented Officer
 						},
 					}),
 					i(3194, {	-- Black Malice
@@ -89,14 +90,14 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(2205, {	-- Duskbringer
 						["crs"] = {
 							47132,	-- Dark Creeper
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1483, {	-- Face Smasher
@@ -118,7 +119,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(1489, {	-- Gloomshroud Armor
@@ -141,7 +142,7 @@ _.Instances = { tier(1, {	-- Classic
 							47145,	-- Spitebone Guardian
 							47143,	-- Spitebone Skeleton
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1974, {	-- Mindthrust Bracers
@@ -162,7 +163,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(2292, {	-- Necrology Robes
@@ -186,7 +187,7 @@ _.Instances = { tier(1, {	-- Classic
 							47146,	-- Spitebone Flayer
 							47145,	-- Spitebone Guardian
 							3870,	-- Stone Sleeper
-							47136,	-- Unstable Ravager									
+							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1482, {	-- Shadowfang
@@ -197,7 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 							47137,	-- Mindless Horror
 							47140,	-- Sorcerous Skeleton
 							3873,	-- Tormented Officer
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 					i(1484, {	-- Witching Stave
@@ -218,7 +219,7 @@ _.Instances = { tier(1, {	-- Classic
 							3870,	-- Stone Sleeper
 							3873,	-- Tormented Officer
 							47136,	-- Unstable Ravager
-							3877,	-- Wailing Guardsman									
+							3877,	-- Wailing Guardsman
 						},
 					}),
 				}),
@@ -249,7 +250,7 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 				n(3872, { 		-- Deathsworn Captain
 					["description"] = "This is a rare that is not always present.",
-					["groups"] = {
+					["g"] = {
 						i(6641),	-- Haunting Blade
 						i(6642),	-- Phantom Armor
 					},
@@ -274,7 +275,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-40, { 	-- Legacy
 				["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
-				["groups"] = {
+				["g"] = {
 					n(-17, { 		-- Legacy Quests
 						un(40, qh(1014, {	-- Arugal Must Die
 							un(2, i(6414)),	-- Seal of Sylvanas
@@ -288,20 +289,20 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						un(40, q(1740, {	-- The Orb of Soran'ruk
 							["classes"] = { 9 },
-							["groups"] = {
+							["g"] = {
 								un(2, i(6898)),	-- Orb of Soran'ruk
 								un(2, i(15109)),	-- Staff of Soran'ruk
 							},
 						})),
 						un(40, qh(9692, {	-- The Path of the Adept
 							["classes"] = { 2 },
-							["groups"] = {
+							["g"] = {
 								un(40, q(9707, {	-- Forging the Weapon
 									["classes"] = { 2 },
-									["groups"] = {
+									["g"] = {
 										un(40, q(9710, {	-- The Blood-Tempered Ranseur
 											["classes"] = { 2 },
-											["groups"] = {
+											["g"] = {
 												un(2, i(25464)),	-- Blood-Tempered Ranseur
 											},
 										})),
@@ -311,10 +312,10 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						un(40, qa(1654, {	-- The Test of Righteousness
 							["classes"] = { 2 },
-							["groups"] = {
+							["g"] = {
 								un(40, q(1806, {	-- The Test of Righteousness
 									["classes"] = { 2 },
-									["groups"] = {
+									["g"] = {
 										un(2, i(6953)),	-- Verigan's Fist
 									},
 								})),

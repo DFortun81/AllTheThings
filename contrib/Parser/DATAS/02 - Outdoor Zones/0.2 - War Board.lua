@@ -25,7 +25,12 @@ _.Zones =
 			q(34398, {	-- The Dark Portal
 				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
-			q(43926),	-- The Legion Returns
+			qa(40519, {	-- The Legion Returns (Alliance)
+				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
+			}),
+			qh(43926, {	-- The Legion Returns
+				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
+			}),
 			q(29157),	-- The Zandalari Menace
 			q(28493),	-- Warchief's Command: Ashenvale!
 			q(28496),	-- Warchief's Command: Azshara!
@@ -74,7 +79,10 @@ _.Zones =
 			q(29391),	-- Guardians of Hyjal: Call of the Ancients
 			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
 			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+			{
+				["questID"] = 28490,	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+				["isBreadcrumb"] = true,
+			},
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
 			q(28709),	-- Hero's Call: Borean Tundra!
 			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)

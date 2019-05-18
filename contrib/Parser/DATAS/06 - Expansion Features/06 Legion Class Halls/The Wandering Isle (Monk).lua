@@ -232,7 +232,62 @@ _.ExpansionFeatures =
 						qart(qg(47684, q(40634, {	-- Thunder on the Sands
 							["classes"] = {10},
 						}))),
-	--]]					
+	--]]			
+					--Followers  Sort to other quests later.
+					q(41739, {	-- Champion: Aegira
+						["qg"] = 105226,	-- Aegira <Brewmaster>
+						["groups"] = {
+							follower(607),	-- Aegira
+						},
+					}),
+					q(41736, {	-- Champion: Angus Ironfist
+						["qg"] = 105046,	-- Angus Ironfist
+						["groups"] = {
+							follower(605),	-- Angus Ironfist
+						},
+					}),
+					q(45790, {	-- Champion: Almai
+						["qg"] = 117504,	-- Brewer Almai
+						["groups"] = {
+							follower(998),	-- Brewer Almai
+						},
+					}),
+					q(41115, {	-- Champion: Chen Stormstout
+						["qg"] = 102820,	-- Chen Stormstout
+						["groups"] = {
+							follower(596),	-- Chen Stormstout
+						},
+					}),
+					q(41737, {	-- Champion: Hiro
+						["qg"] = 105058,	-- Hiro
+						["groups"] = {
+							follower(606),	-- Hiro
+						},
+					}),
+					q(40704, {	-- Champion: Li Li Stormstout
+						["qg"] = 101046,	-- Li Li Stormstout
+						["groups"] = {
+							follower(588),	-- Li Li Stormstout
+						},
+					}),
+					q(41738, {	-- Champion: Sylara Steelsong
+						["qg"] = 105056,	-- Sylara Steelsong
+						["groups"] = {
+							follower(604),	-- Sylara Steelsong
+						},
+					}),
+					q(41734, {	-- Champion: Taran Zhu
+						["qg"] = 104984,	-- Taran Zhu <Lord of the Shado-Pan>
+						["groups"] = {
+							follower(603),	-- Taran Zhu
+						},
+					}),
+					q(41735, {	-- Champion: The Monkey King
+						["qg"] = 102902,	-- The Monkey King
+						["groups"] = {
+							follower(602),	-- The Monkey King
+						},
+					}),
 				}),
 				--[[
 				n(99041, {	-- Scouting Map

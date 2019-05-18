@@ -52,6 +52,12 @@ _.Zones =
 							},
 						},
 					},
+					{	-- A Crew Under Fire
+						["questID"] = 3382,
+						["u"] = 40,
+						["qg"] = 8380,	-- Captain Vanessa Beltis
+						["repeatable"] = true,
+					},
 					{	-- A Gigantic Snack
 						["questID"] = 14371,
 						["qg"] = 36077,	-- Assistant Greely
@@ -75,6 +81,23 @@ _.Zones =
 							un(2, i(18398)),	-- Tidal Loop
 						},
 					},
+					{	-- A Land Filled with Hatred
+						["questID"] = 5536,
+						["u"] = 40,
+						["qg"] = 11548,	-- Loh'atu
+					},
+					{	-- A Little Pick-me-up
+						["questID"] = 14131,
+						["qg"] = 35142,	-- Ergll
+						["coord"] = { 70.3, 36.2, 76 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 14130,	-- Friends Come in All Colors
+					},
+					{	-- A Meeting with the Master
+						["questID"] = 3381,
+						["u"] = 40,
+						["qg"] = 8395,	-- Sanath Lim-yo
+					},
 					{	-- A Pale Brew
 						["questID"] = 14432,
 						["qg"] = 8586,	-- Haggrum Bloodfist
@@ -86,13 +109,6 @@ _.Zones =
 						["qg"] = 116048,	-- Joanna
 						["coord"] = { 25.2, 38.0, 76 },
 					})),
-					{	-- A Little Pick-me-up
-						["questID"] = 14131,
-						["qg"] = 35142,	-- Ergll
-						["coord"] = { 70.3, 36.2, 76 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 14130,	-- Friends Come in All Colors
-					},
 					{	-- A Quota to Meet
 						["questID"] = 14197,
 						["qg"] = 35085,	-- Foreman Fisk
@@ -112,6 +128,13 @@ _.Zones =
 						["coord"] = { 70.3, 36.2, 76 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14130,	-- Friends Come in All Colors
+					},
+					{	-- Agent of Hydraxis
+						["questID"] = 6823,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.3, 73.7, 76 },
+						["sourceQuest"] = 6822,	-- The Molten Core
 					},
 					{	-- Airborne Again
 						["questID"] = 24497,
@@ -148,6 +171,13 @@ _.Zones =
 						["qg"] = 36999,	-- Teemo
 						["coord"] = { 59.3, 50.7, 76 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Azsharite
+						["questID"] = 3602,
+						["u"] = 40,
+						["qg"] = 7783,	-- Loramus Thalipedes
+						["coord"] = { 60.8, 66.3, 76 },
+						["sourceQuest"] = 3511,	-- The Name of the Beast
 					},
 					{	-- Azsharite Experiment Number One
 						["questID"] = 14385,
@@ -196,6 +226,13 @@ _.Zones =
 							14477,	-- Push the Button!
 						},
 					},
+					{	-- Breaking the Ward
+						["questID"] = 3508,
+						["u"] = 40,
+						["qg"] = 7783,	-- Loramus Thalipedes
+						["coord"] = { 60.8, 66.3, 76 },
+						["sourceQuest"] = 3141,	-- Loramus
+					},
 					{	-- Commando Drop
 						["questID"] = 24434,
 						["qg"] = 36919,	-- Andorel Sunsworn
@@ -206,6 +243,34 @@ _.Zones =
 						["questID"] = 14146,
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14135,	-- Up a Tree
+					},
+					{	-- Delivery to Andron Gant
+						["questID"] = 3542,
+						["u"] = 40,
+						["qg"] = 8587,	-- Jediga
+						["coord"] = { 22.6, 51.4, 76 },
+						["sourceQuest"] = 3517,	-- Stealing Knowledge,
+					},
+					{	-- Delivery to Archmage Xylem
+						["questID"] = 3542,
+						["u"] = 40,
+						["qg"] = 8587,	-- Jediga
+						["coord"] = { 22.6, 51.4, 76 },
+						["sourceQuest"] = 3517,	-- Stealing Knowledge,
+					},
+					{	-- Delivery to Jes'rimon
+						["questID"] = 3542,
+						["u"] = 40,
+						["qg"] = 8587,	-- Jediga
+						["coord"] = { 22.6, 51.4, 76 },
+						["sourceQuest"] = 3517,	-- Stealing Knowledge,
+					},
+					{	-- Delivery to Magatha
+						["questID"] = 3542,
+						["u"] = 40,
+						["qg"] = 8587,	-- Jediga
+						["coord"] = { 22.6, 51.4, 76 },
+						["sourceQuest"] = 3517,	-- Stealing Knowledge,
 					},
 					{	-- Diplomacy by Another Means
 						["questID"] = 14433,
@@ -249,6 +314,16 @@ _.Zones =
 						["groups"] = {
 							i(53453),	-- Wrenchmen Belt
 							i(53418),	-- Honorary Gob Squad Shield
+						},
+					},
+					{	-- Eye of the Emberseer
+						["questID"] = 6821,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.3, 73.7, 76 },
+						["sourceQuests"] = {
+							6804,	-- Poisoned Water
+							6805,	-- Stormers and Rumblers
 						},
 					},
 					{	-- Fade to Black
@@ -378,6 +453,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14468,	-- Another Warm Body
 					},
+					{	-- Hands of the Enemy
+						["questID"] = 6824,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.3, 73.7, 76 },
+						["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					},
 					{	-- Handling the Goods
 						["questID"] = 14486,
 						["qg"] = 36894,	-- Tora Halotrix
@@ -419,6 +501,7 @@ _.Zones =
 					qart(q(45570, {	-- In Safer Hands -- possibly legacy now that mage tower is unavailable?
 						["qg"] = 117252,	-- Archmage Xylem
 						["coord"] = { 25.2, 38.0, 76 },
+						["u"] = 41,		-- Was part of the quest to unlock appearance and can't get anymore
 					})),
 					{	-- In The Face!
 						["questID"] = 14472,
@@ -438,6 +521,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14258,	-- Mortar the Point
 					},
+					{	-- Kim'jael Indeed!
+						["questID"] = 3601,
+						["u"] = 40,
+						["qg"] = 8420,	-- Kim'jael
+						["coord"] = { 53.5, 21.8, 76 },
+					},
+					{	-- Kim'jael's Missing Equipment
+						["questID"] = 5534,
+						["u"] = 40,
+						["qg"] = 8420,	-- Kim'jael
+						["coord"] = { 53.5, 21.8, 76 },
+						["sourceQuest"] = 3601,	-- Kim'jael Indeed!
+					},
 					{	-- Let Them Feast on Fear
 						["questID"] = 24433,
 						["qg"] = 36730,	-- Chawg
@@ -456,6 +552,13 @@ _.Zones =
 							i(131360),	-- Grips of the Lightning Fast Assasin
 						},
 					},
+					{	-- Loramus
+						["questID"] = 3141,
+						["u"] = 40,
+						["qg"] = 7783,	-- Loramus Thalipedes
+						["coord"] = { 60.8, 66.3, 76 },
+						["sourceQuest"] = 2744,	-- The Demon Hunter
+					},
 					{	-- Lower Scrying Stone
 						["objectID"] = 196833,
 						["coord"] = { 52.9, 29.0, 76 },
@@ -472,6 +575,16 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Magical Ledger -- part of the Scepter of Shifting Sands questline
+						["itemID"] = 20949,
+						["u"] = 2,
+						["g"] = {
+							{	-- Azuregos's Magical Ledger
+								["questID"] = 8575,
+								["u"] = 40,
+							},
+						},
+					},
 					{	-- Manual Labor
 						["questID"] = 14230,
 						["qg"] = 35756,	-- Teresa Spireleaf
@@ -482,6 +595,12 @@ _.Zones =
 							14249,	-- Shear Will
 							14263,	-- Waste of Thyme
 						},
+					},
+					{	-- Meeting with the Master
+						["questID"] = 3503,
+						["u"] = 40,
+						["qg"] = 8395,	-- Sanath Lim-yo
+						["repeatable"] = true,
 					},
 					{	-- Memories of the Dead
 						["questID"] = 14215,
@@ -580,6 +699,13 @@ _.Zones =
 							12,	-- Demon Hunter
 						},
 					})),
+					{	-- Poisoned Water
+						["questID"] = 6804,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["races"] = HORDE_ONLY,
+						["coord"] = { 79.3, 73.7, 76 },
+					},
 					{	-- Pre-Flight Checklist
 						["questID"] = 26372,
 						["qg"] = 42643,	-- Fleep
@@ -722,6 +848,12 @@ _.Zones =
 							un(2, i(10708)),	-- Skullspell Orb
 						},
 					},
+					{	-- Return Trip
+						["questID"] = 3421,
+						["u"] = 40,
+						["qg"] = 8399,	-- Nyril
+						["repeatable"] = true,
+					},
 					{	-- Rigged to Blow
 						["questID"] = 14476,
 						["qg"] = 36785,	-- Bombardier Captain Smooks
@@ -820,11 +952,28 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26358,	-- Ready the Air Force
 					},
+					{	-- Spiritual Unrest
+						["questID"] = 5535,
+						["u"] = 40,
+						["qg"] = 11548,	-- Loh'atu
+					},
+					{	-- Stealing Knowledge
+						["questID"] = 3517,
+						["u"] = 40,
+						["qg"] = 8587,	-- Jediga
+						["coord"] = { 22.6, 51.4, 76 },
+					},
 					{	-- Stone Cold
 						["questID"] = 14165,
 						["qg"] = 35091,	-- Horzak Zignibble
 						["coord"] = { 29.1, 66.2, 76 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Stormers and Rumblers
+						["questID"] = 6805,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.3, 73.7, 76 },
 					},
 					{	-- Survey the Lakeshore
 						["questID"] = 14202,
@@ -901,6 +1050,41 @@ _.Zones =
 							i(53448),	-- Stolen Talrendis Boots
 							i(131333),	-- Hill Ranger Treads
 						},
+					},
+					{	-- The Formation of Felbane
+						["questID"] = 3621,
+						["u"] = 40,
+						["qg"] = 7783,	-- Loramus Thalipedes
+						["coord"] = { 60.8, 66.3, 76 },
+						["sourceQuest"] = 3602,	-- Azsharite
+					},
+					{	-- The Molten Core
+						["questID"] = 6822,
+						["u"] = 40,
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.3, 73.7, 76 },
+						["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					},
+					{	-- The Name of the Beast
+						["questID"] = 3509,
+						["u"] = 40,
+						["qg"] = 7783,	-- Loramus Thalipedes
+						["coord"] = { 60.8, 66.3, 76 },
+						["sourceQuest"] = 3508,	-- Breaking the Ward
+					},
+					{	-- The Name of the Beast
+						["questID"] = 3510,
+						["u"] = 40,
+						["qg"] = 6134,	-- Lord Arkkoroc
+						["coord"] = { 77.1, 42.8, 76 },
+						["sourceQuest"] = 3509,	-- The Name of the Beast
+					},
+					{	-- The Name of the Beast
+						["questID"] = 3511,
+						["u"] = 40,
+						["qg"] = 6134,	-- Lord Arkkoroc
+						["coord"] = { 77.1, 42.8, 76 },
+						["sourceQuest"] = 3510,	-- The Name of the Beast
 					},
 					{	-- The Perfect Prism
 						["questID"] = 14190,
@@ -1139,6 +1323,12 @@ _.Zones =
 							24478,	-- The Trial of Frost
 							24479,	-- The Trial of Shadow
 						},
+					},
+					{	-- Xylem's Payment to Jediga
+						["questID"] = 3565,
+						["u"] = 40,
+						["qg"] = 8379,	-- Archmage Xylem
+						["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
 					},
 				}),
 			},

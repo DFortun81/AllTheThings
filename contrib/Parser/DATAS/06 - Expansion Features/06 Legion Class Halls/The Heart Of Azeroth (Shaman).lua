@@ -37,11 +37,11 @@ _.ExpansionFeatures =
 					q(41900, {	-- A Promise of Earth
 						i(139705),	-- Farseer's Wristwraps
 					}),
-					-- q( 39746),	-- A Ring Unbroken
-					-- q( 40224),	-- The Hammer in the Deep
-					-- q( 41335),	-- The Elements Call...
-					-- q( 42931),	-- Where the Hammer Falls
-					-- q( 42932),	-- What the Stonemother Knows					  ------ QUESTS PRIOR TO THIS LINE MUST BE DONE FIRST AS IT UNLOCKS REST
+					-- q(39746),	-- A Ring Unbroken
+					-- q(40224),	-- The Hammer in the Deep
+					-- q(41335),	-- The Elements Call...
+					-- q(42931),	-- Where the Hammer Falls
+					-- q(42932),	-- What the Stonemother Knows					  ------ QUESTS PRIOR TO THIS LINE MUST BE DONE FIRST AS IT UNLOCKS REST
 					-- q(41747),	-- Champion: Avalanchion
 					-- q(41775),	-- The Great Stonemother
 					-- q(41900),	-- A Promise of Earth
@@ -55,6 +55,61 @@ _.ExpansionFeatures =
 					-- q(42989),	-- Ma'haat the Indomitable
 					-- q(42995),	-- A Taste For Blood
 					-- q(43003),	-- Return to Janai
+					--Followers Sort Later
+					q(41747, {	-- Champion: Avalanchion
+						["qg"] = 106524,	-- Avalanchion the Unbroken <Fist of the Stonemother>
+						["groups"] = {
+							follower(615),	-- Avalanchion the Unbroken
+						},
+					}),
+					q(41745, {	-- Champion: Scaldius
+						["qg"] = 106649,	-- Baron Scaldius <Emissary of the Firelord>
+						["groups"] = {
+							follower(613),	-- Baron Scaldius
+						},
+					}),
+					q(41742, {	-- Champion: Celestos
+						["qg"] = 106521,	-- Consular Celestos <Emissary of the Windlord>
+						["groups"] = {
+							follower(610),	-- Consular Celestos
+						},
+					}),
+					q(42197, {	-- Champion: Duke Hydraxis
+						["qg"] = 106520,	-- Duke Hydraxis <Emissary of the Waterlord>
+						["groups"] = {
+							follower(609),	-- Duke Hydraxis
+						},
+					}),
+					q(41743, {	-- Champion: Nobundo
+						["qg"] = 106519,	-- Farseer Nobundo <The Earthen Ring>
+						["groups"] = {
+							follower(611),	-- Farseer Nobundo
+						},
+					}),
+					q(46057, {	-- Champion: Magatha Grimtotem
+						["qg"] = 120245,	-- Magatha Grimtotem <Elder Crone>
+						["groups"] = {
+							follower(992),	-- Magatha Grimtotem
+						},
+					}),
+					q(41746, {	-- Champion: Muln Earthfury
+						["qg"] = 106518,	-- Muln Earthfury <Earthen Ring>
+						["groups"] = {
+							follower(614),	-- Muln Earthfury
+						},
+					}),
+					q(41744, {	-- Champion: Rehgar Earthfury
+						["qg"] = 106517,	-- Rehgar Earthfury <Hero of the Storm>
+						["groups"] = {
+							follower(612),	-- Rehgar Earthfury
+						},
+					}),
+					q(42198, {	-- Champion: Stormcaller Mylra
+						["qg"] = 106312,	-- Stormcaller Mylra <The Earthen Ring>
+						["groups"] = {
+							follower(608),	-- Stormcaller Mylra
+						},
+					}),
 				}),
 				--[[
 				n(99428, {	-- Scouting Map

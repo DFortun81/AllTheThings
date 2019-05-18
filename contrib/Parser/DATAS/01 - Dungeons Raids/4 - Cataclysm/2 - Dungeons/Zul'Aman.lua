@@ -28,7 +28,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(69598),	-- Robes of Dissention
 						})),
 					}),
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						i(69801),	-- Amani Armguards
 						i(33865, {	-- Amani Hex Stick
 							n(24396, { 	-- Forest Frog

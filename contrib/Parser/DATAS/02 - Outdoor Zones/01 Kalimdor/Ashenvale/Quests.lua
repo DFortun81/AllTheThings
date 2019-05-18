@@ -149,11 +149,20 @@ _.Zones =
 							un(2, i(17695)),	-- Chestnut Mantle
 						},
 					},
+					{	-- An Aggressive Defense
+						["questID"] = 1025,
+						["u"] = 40,
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["coord"] = { 36.6, 49.6, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1023,	-- Raene's Cleansing
+					},
 					{	-- Answered Questions
 						["questID"] = 1044,
 						["u"] = 40,
 						["qg"] = 661,	-- Jonathan Carevin
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1043,	-- The Scythe of Elune
 						["groups"] = {
 							un(2, i(5817)),	-- Lunaris Bow
 							un(2, i(5818)),	-- Moonbeam Wand
@@ -198,6 +207,12 @@ _.Zones =
 						["qg"] = 3847,	-- Orendil Broadleaf
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13623,	-- Delivery for Orendil
+					},
+					{	-- Bathran's Hair
+						["questID"] = 1010,
+						["u"] = 40,
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Bathran's Hair
 						["questID"] = 26473,
@@ -332,6 +347,12 @@ _.Zones =
 						["qg"] = 3691,	-- Raene Wolfrunner
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- Culling the Threat
+						["questID"] = 1054,
+						["u"] = 40,
+						["qg"] = 3691,	-- Raene Wolfrunner
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Dartol's Rod
 						["questID"] = 26480,
 						["qg"] = 3691,	-- Raene Wolfrunner
@@ -438,6 +459,19 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26475,	-- Elune's Tear
 					},
+					{	-- Elemental Bracers
+						["questID"] = 1016,
+						["u"] = 40,
+						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Elune's Tear
+						["questID"] = 1033,
+						["u"] = 40,
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1020,	-- Orendil's Cure
+					},
 					{	-- Elune's Tear
 						["questID"] = 26475,
 						["qg"] = 3894,	-- Pelturas Whitemoon
@@ -462,6 +496,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 3894,	-- Pelturas Whitemoon
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1034,	-- The Ruins of Stardust
 						["groups"] = {
 							un(2, i(5814)),	-- Snapbrook Armor
 							un(2, i(6722)),	-- Beastial Manacles
@@ -486,6 +521,13 @@ _.Zones =
 						["qg"] = 3847,	-- Orendil Broadleaf
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13623,	-- Evenar Stillwhisper
+					},
+					{	-- Forsaken Diseases
+						["questID"] = 1011,
+						["u"] = 40,
+						["qg"] = 3848,	-- Kayneth Stillwind
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 4581,	-- Kayneth Stillwind
 					},
 					{	-- Freedom to Ruul
 						["questID"] = 6482,
@@ -553,6 +595,16 @@ _.Zones =
 						},
 					},
 					{	-- Insane Druids
+						["questID"] = 1012,
+						["u"] = 40,
+						["qg"] = 3848,	-- Kayneth Stillwind
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1011,	-- Forsaken Diseases
+						["groups"] = {
+							i(5813),	-- Emil's Brand -- still obtainable despite the quest being removed
+						},
+					},
+					{	-- Insane Druids
 						["questID"] = 26472,
 						["qg"] = 33777,	-- Gaivan Shadewalker
 						["races"] = ALLIANCE_ONLY,
@@ -574,6 +626,19 @@ _.Zones =
 							i(16661),	-- Soft Willow Cape
 							i(131216),	-- Nimblereed Chain
 						},
+					},
+					{	-- Journey to Stonetalon Peak
+						["questID"] = 1056,
+						["u"] = 40,
+						["qg"] = 3996,	-- Faldreas Goeth'Shael
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					},
+					{	-- Kayneth Stillwind
+						["questID"] = 4581,
+						["u"] = 40,
+						["qg"] = 3845,	-- Shindrell Swiftfire
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Keep the Fires Burning
 						["questID"] = 13890,
@@ -602,7 +667,7 @@ _.Zones =
 						["qg"] = 12696,	-- Senani Thunderheart
 						["coord"] = { 49.7, 65.1, 63 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 13967,	-- Thinning the... Heard?
+						["sourceQuest"] = 13967,	-- Thinning the... Heard? -- quest 216 was the sourceQuest in vanilla
 						["groups"] = {
 							i(17005),	-- Boorguard Tunic
 							i(17006),	-- Cobalt Legguards
@@ -614,6 +679,13 @@ _.Zones =
 						["qg"] = 34303,	-- Dagrun Ragehammer
 						["coord"] = { 11.4, 35.3, 63 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- Mage Summoner
+						["questID"] = 1017,
+						["u"] = 40,
+						["qg"] = 3885,	-- Sentinel Velene Starstrike
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1016,	-- Elemental Bracers
 					},
 					{	-- Making Stumps
 						["questID"] = 13815,
@@ -695,6 +767,19 @@ _.Zones =
 						["qg"] = 33182,	-- Bathran
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- On Guard in Stonetalon
+						["questID"] = 1070,
+						["u"] = 40,
+						["qg"] = 4079,	-- Sentinel Thenysil
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- Orendil's Cure
+						["questID"] = 1020,
+						["u"] = 40,
+						["qg"] = 3847,	-- Orendil Broadleaf
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1010,	-- Bathran's Hair
+					},
 					{	-- Orendil's Cure
 						["questID"] = 26474,
 						["qg"] = 3847,	-- Orendil Broadleaf
@@ -740,11 +825,25 @@ _.Zones =
 							i(131534),	-- Possumfoot Treads
 						},
 					},
+					{	-- Pridewings of Stonetalon
+						["questID"] = 1134,
+						["u"] = 40,
+						["qg"] = 3845,	-- Shindrell Swiftfire
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1008,	-- The Zoram Strand
+					},
 					{	-- Put Out The Fire
 						["questID"] = 13884,
 						["qg"] = 34292,	-- Arctanus
 						["coord"] = { 52.0, 56.7, 63 },
 						["sourceQuest"] = 13879,	-- Thunder Peak
+					},
+					{	-- Raene's Cleansing
+						["questID"] = 1023,
+						["u"] = 40,
+						["qg"] = 3891,	-- Teronis' Corpse
+						["coord"] = { 20.3, 42.3, 63 },
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Raene's Cleansing
 						["questID"] = 1046,
@@ -840,6 +939,16 @@ _.Zones =
 						["sourceQuest"] = 26478,	-- Playing Possum
 					},
 					{	-- Ruuzel
+						["questID"] = 1009,
+						["u"] = 40,
+						["qg"] = 3846,	-- Talen
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1007,	-- The Ancient Statuettes
+						["groups"] = {
+							i(5812),	-- Robes of Antiquity
+						},
+					},
+					{	-- Ruuzel
 						["questID"] = 26466,
 						["qg"] = 3846,	-- Talen
 						["races"] = ALLIANCE_ONLY,
@@ -854,6 +963,13 @@ _.Zones =
 						["coord"] = { 73.8, 62.4, 63 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26449,	-- Never Again!
+					},
+					{	-- Satyr Slaying!
+						["questID"] = 1032,
+						["u"] = 40,
+						["qg"] = 3901,	-- Illiyana
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1031,	-- The Branch of Cenarius
 					},
 					{	-- Satyr Slaying!
 						["questID"] = 26469,
@@ -927,7 +1043,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13871,	-- Security!
 					},
-					{	-- Simmer Down Now
+					{	-- Simmer Down Now (renamed from classic "Stonetalon Standstill")
 						["questID"] = 25,
 						["qg"] = 34559,	-- Captain Tarkan
 						["coord"] = { 50.1, 67.5, 63 },
@@ -952,6 +1068,20 @@ _.Zones =
 						["qg"] = 33727,	-- Anchorite Buurq
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 26468,	-- The Branch of Cenarius
+					},
+					{	-- Strange Water Glove
+						["itemID"] = 16782,
+						["u"] = 2,
+						["crs"] = {
+							12876,	-- Baron Aquanis
+						},
+						["groups"] = {
+							{	-- Baron Aquanis
+								["questID"] = 909,
+								["u"] = 40,
+								["races"] = HORDE_ONLY,
+							},
+						},
 					},
 					{	-- Supplies to Auberdine
 						["questID"] = 976,
@@ -982,10 +1112,37 @@ _.Zones =
 						},
 					},
 					{	-- The Ancient Statuettes
+						["questID"] = 1007,
+						["u"] = 40,
+						["qg"] = 3846,	-- Talen
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Ancient Statuettes
 						["questID"] = 26465,
 						["qg"] = 3846,	-- Talen
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 13617,	-- West to the Strand
+					},
+					{	-- The Bomb
+						["objectID"] = 195134,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{	-- They Set Them Up The Bomb!
+								["questID"] = 13981,
+								["races"] = ALLIANCE_ONLY,
+							},
+						},
+					},
+					{	-- The Branch of Cenarius
+						["questID"] = 1031,
+						["u"] = 40,
+						["qg"] = 3920,	-- Anilia
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
+						["groups"] = {
+							i(5820),	-- Faerie Mantle
+							i(11229),	-- Brightplate Girdle
+						},
 					},
 					{	-- The Branch of Cenarius
 						["questID"] = 26468,
@@ -1002,6 +1159,14 @@ _.Zones =
 						["qg"] = 34303,	-- Dagrun Ragehammer
 						["coord"] = { 11.4, 35.3, 63 },
 						["races"] = HORDE_ONLY,
+					},
+					{	-- The Essence of Aku'Mai
+						["u"] = 40,
+						["questID"] = 6563,
+						["qg"] = 12736,	-- Je'neu Sancrea
+						["coord"] = { 11.6, 34.3, 63 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					},
 					{	-- The Forest Heart
 						["questID"] = 13796,
@@ -1025,6 +1190,12 @@ _.Zones =
 							i(56705),	-- Skunkworks Sword
 							i(131326),	-- Bombgineer Blasting Vest
 						},
+					},
+					{	-- The Howling Vale
+						["questID"] = 1022,
+						["u"] = 40,
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Hunt Completed
 						["questID"] = 247,
@@ -1079,6 +1250,13 @@ _.Zones =
 						["qg"] = 33276,	-- Moon Priestess Maestra
 						["races"] = ALLIANCE_ONLY,
 					},
+					{	-- The Ruins of Stardust
+						["questID"] = 1034,
+						["u"] = 40,
+						["qg"] = 3894,	-- Pelturas Whitemoon
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1033,	-- Elune's Tear
+					},
 					{	-- The Shadewalker
 						["questID"] = 13792,
 						["qg"] = 17310,	-- Gnarl
@@ -1091,14 +1269,11 @@ _.Zones =
 						["lvl"] = 85,
 						["sourceQuest"] = 29303,	-- Tragedy and Family
 					},
-					{	-- The Bomb
-						["objectID"] = 195134,
-						["groups"] = {
-							{	-- They Set Them Up The Bomb!
-								["questID"] = 13981,
-								["races"] = ALLIANCE_ONLY,
-							},
-						},
+					{	-- The Zoram Strand
+						["questID"] = 1008,
+						["u"] = 40,
+						["qg"] = 3845,	-- Shindrell Swiftfire
+						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- They Took Our Gnomes
 						["questID"] = 13913,
@@ -1241,6 +1416,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["description"] = "Can be found roaming the woods west of Silverwind Refuge.",
 					},
+					{	-- Velinde Starsong
+						["questID"] = 1037,
+						["u"] = 40,
+						["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1022,	-- The Howling Vale
+					},
+					{	-- Vile Satyr! Dryads in Danger!
+						["questID"] = 1021,
+						["u"] = 40,
+						["qg"] = 3901,	-- Illiyana
+						["races"] = ALLIANCE_ONLY,
+					},
 					{	-- Vile Satyr! Dryads in Danger!
 						["questID"] = 26467,
 						["qg"] = 3901,	-- Illiyana
@@ -1259,15 +1447,15 @@ _.Zones =
 						["questID"] = 13886,
 						["qg"] = 34289,	-- The Vortex
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							13880,	-- Hot Lava
+							13884,	-- Put Out The Fire
+						},
 						["groups"] = {
 							i(56683),	-- Blossom of the Earthen Ring
 							i(56684),	-- Subduer's Gloves
 							i(56685),	-- Belt of Equilibrium
 							i(131312),	-- Subduer's Gauntlets
-						},
-						["sourceQuests"] = {
-							13880,	-- Hot Lava
-							13884,	-- Put Out The Fire
 						},
 					},
 					{	-- Vortex
@@ -1275,27 +1463,55 @@ _.Zones =
 						["qg"] = 34289,	-- The Vortex
 						["coord"] = { 52.3, 56.8, 63 },
 						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							13880,	-- Hot Lava
+							13884,	-- Put Out The Fire
+						},
 						["groups"] = {
 							i(56686),	-- Blossom of the Earthen Ring
 							i(56687),	-- Subduer's Gloves
 							i(56688),	-- Belt of Equilibrium
 							i(131313),	-- Subduer's Gauntlets
 						},
-						["sourceQuests"] = {
-							13880,	-- Hot Lava
-							13884,	-- Put Out The Fire
-						},
+					},
+					{	-- Warsong Outrunner Update
+						["questID"] = 6546,
+						["u"] = 40,
+						["qg"] = 12864,	-- Warsong Outrider
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					},
+					{	-- Warsong Runner Update
+						["questID"] = 6545,
+						["u"] = 40,
+						["qg"] = 12863,	-- Warsong Runner
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					},
+					{	-- Warsong Saw Blades
+						["questID"] = 6546,
+						["u"] = 40,
+						["qg"] = 12724,	-- Pixel
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+					},
+					{	-- Warsong Scout Update
+						["questID"] = 6547,
+						["u"] = 40,
+						["qg"] = 12862,	-- Warsong Scout
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 					},
 					{	-- Warsong Supplies
 						["questID"] = 6571,
 						["u"] = 40,
 						["qg"] = 11820,	-- Locke Okarr
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(16977)),	-- Warsong Boots
 							un(2, i(16978)),	-- Warsong Gauntlets
 							un(2, i(16975)),	-- Warsong Supplies
 						},
-						["races"] = HORDE_ONLY,
 					},
 					{	-- We're Here to Do One Thing, Maybe Two...
 						["questID"] = 25945,

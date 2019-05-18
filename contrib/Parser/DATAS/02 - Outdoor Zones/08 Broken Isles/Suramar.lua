@@ -5,18 +5,18 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			["groups"] = {
+			["g"] = {
 				i(141409, {	-- Candrael's Charm
 					["description"] = "Find this item on mobs in Suramar.",
 					["classes"] = { 12 },	-- Demon Hunters Only!
-					["groups"] = {
+					["g"] = {
 						n(113935, {	-- Candrael Twinshadow
 							["description"] = "They will fling you up in the air to flying demon Downfall.",
 							["coord"] = { 28.2, 70.2 },
-							["groups"] = {
+							["g"] = {
 								n(111110, {	-- Downfall
 									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
-									["groups"] = {
+									["g"] = {
 										i(139549, {	-- Guise of the Deathwalker
 											artifact(982),	-- Find Hidden Artifact Skin
 										}),
@@ -28,9 +28,9 @@ _.Zones =
 				}),
 				n(-169, { 	-- Emissary Quests
 					q(42421, {	-- The Nightfallen
-						["groups"] = {
+						["g"] = {
 							i(157826, {	-- Nightfallen Hoard
-								["groups"] = {
+								["g"] = {
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
 										i(137573),	-- Reins of the Llothien Prowler
 									}),
@@ -40,7 +40,7 @@ _.Zones =
 										i(134290),	-- Nightborne Noble's Cloak
 									}),
 									n(-3243, {	-- Manawracker Set
-										["groups"] = {
+										["g"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
 											i(134307),	-- Manawracker Vestments
@@ -52,7 +52,7 @@ _.Zones =
 										},
 									}),
 									n(-3262, {	-- Swordsinger Set
-										["groups"] = {
+										["g"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
 											i(134285),	-- Swordsinger's Vest
@@ -64,7 +64,7 @@ _.Zones =
 										},
 									}),
 									n(-3274, {	-- Ley Dragoon Set
-										["groups"] = {
+										["g"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
 											i(134302),	-- Ley Dragoon's Hauberk
@@ -76,7 +76,7 @@ _.Zones =
 										},
 									}),
 									n(-3299, {	-- Arcane Defender Set
-										["groups"] = {
+										["g"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
 											i(134267),	-- Arcane Defender's Breastplate
@@ -91,7 +91,7 @@ _.Zones =
 								},
 							}),
 							un(2, i(154907, {	-- Nightfallen Hoard
-								["groups"] = {
+								["g"] = {
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
 										i(137573),	-- Reins of the Llothien Prowler
 									}),
@@ -100,7 +100,7 @@ _.Zones =
 										i(134290),	-- Nightborne Noble's Cloak
 									}),
 									n(-3243, {	-- Manawracker Set
-										["groups"] = {
+										["g"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
 											i(134307),	-- Manawracker Vestments
@@ -112,7 +112,7 @@ _.Zones =
 										},
 									}),
 									n(-3262, {	-- Swordsinger Set
-										["groups"] = {
+										["g"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
 											i(134285),	-- Swordsinger's Vest
@@ -124,7 +124,7 @@ _.Zones =
 										},
 									}),
 									n(-3274, {	-- Ley Dragoon Set
-										["groups"] = {
+										["g"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
 											i(134302),	-- Ley Dragoon's Hauberk
@@ -136,7 +136,7 @@ _.Zones =
 										},
 									}),
 									n(-3299, {	-- Arcane Defender Set
-										["groups"] = {
+										["g"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
 											i(134267),	-- Arcane Defender's Breastplate
@@ -151,7 +151,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(151468, {	-- Nightfallen Hoard
-								["groups"] = {
+								["g"] = {
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
 										i(137573),	-- Reins of the Llothien Prowler
 									}),
@@ -160,7 +160,7 @@ _.Zones =
 										i(134290),	-- Nightborne Noble's Cloak
 									}),
 									n(-3243, {	-- Manawracker Set
-										["groups"] = {
+										["g"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
 											i(134307),	-- Manawracker Vestments
@@ -172,7 +172,7 @@ _.Zones =
 										},
 									}),
 									n(-3262, {	-- Swordsinger Set
-										["groups"] = {
+										["g"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
 											i(134285),	-- Swordsinger's Vest
@@ -184,7 +184,7 @@ _.Zones =
 										},
 									}),
 									n(-3274, {	-- Ley Dragoon Set
-										["groups"] = {
+										["g"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
 											i(134302),	-- Ley Dragoon's Hauberk
@@ -196,7 +196,7 @@ _.Zones =
 										},
 									}),
 									n(-3299, {	-- Arcane Defender Set
-										["groups"] = {
+										["g"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
 											i(134267),	-- Arcane Defender's Breastplate
@@ -211,7 +211,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(146751, {	-- Nightfallen Hoard
-								["groups"] = {
+								["g"] = {
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
 										i(137573),	-- Reins of the Llothien Prowler
 									}),
@@ -220,7 +220,7 @@ _.Zones =
 										i(134290),	-- Nightborne Noble's Cloak
 									}),
 									n(-3243, {	-- Manawracker Set
-										["groups"] = {
+										["g"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
 											i(134307),	-- Manawracker Vestments
@@ -232,7 +232,7 @@ _.Zones =
 										},
 									}),
 									n(-3262, {	-- Swordsinger Set
-										["groups"] = {
+										["g"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
 											i(134285),	-- Swordsinger's Vest
@@ -244,7 +244,7 @@ _.Zones =
 										},
 									}),
 									n(-3274, {	-- Ley Dragoon Set
-										["groups"] = {
+										["g"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
 											i(134302),	-- Ley Dragoon's Hauberk
@@ -256,7 +256,7 @@ _.Zones =
 										},
 									}),
 									n(-3299, {	-- Arcane Defender Set
-										["groups"] = {
+										["g"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
 											i(134267),	-- Arcane Defender's Breastplate
@@ -271,7 +271,7 @@ _.Zones =
 								},
 							})),
 							un(2, i(137564, {	-- Nightfallen Hoard
-								["groups"] = {
+								["g"] = {
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
 										i(137573),	-- Reins of the Llothien Prowler
 									}),
@@ -280,7 +280,7 @@ _.Zones =
 										i(134290),	-- Nightborne Noble's Cloak
 									}),
 									n(-3243, {	-- Manawracker Set
-										["groups"] = {
+										["g"] = {
 											i(134304),	-- Manawracker Crown
 											i(134309),	-- Manawracker Shoulders
 											i(134307),	-- Manawracker Vestments
@@ -292,7 +292,7 @@ _.Zones =
 										},
 									}),
 									n(-3262, {	-- Swordsinger Set
-										["groups"] = {
+										["g"] = {
 											i(134284),	-- Swordsinger's Hood
 											i(134286),	-- Swordsinger's Shoulders
 											i(134285),	-- Swordsinger's Vest
@@ -304,7 +304,7 @@ _.Zones =
 										},
 									}),
 									n(-3274, {	-- Ley Dragoon Set
-										["groups"] = {
+										["g"] = {
 											i(134299),	-- Ley Dragoon's Headgear
 											i(134301),	-- Ley Dragoon's Spaulders
 											i(134302),	-- Ley Dragoon's Hauberk
@@ -316,7 +316,7 @@ _.Zones =
 										},
 									}),
 									n(-3299, {	-- Arcane Defender Set
-										["groups"] = {
+										["g"] = {
 											i(134270),	-- Arcane Defender's Helm
 											i(134272),	-- Arcane Defender's Pauldrons
 											i(134267),	-- Arcane Defender's Breastplate
@@ -335,7 +335,7 @@ _.Zones =
 					}),
 					n(-206, {	-- Paragon
 						q(46748, {	-- Supplies From the Nightfallen
-							["groups"] = {
+							["g"] = {
 								i(152105, {	-- Nightfallen Cache
 									i(143764),	-- Leywoven Flying Carpet
 									i(140495, {	-- Torn Invitation [Fox Mount Quest]
@@ -373,17 +373,17 @@ _.Zones =
 					}),
 				}),
 				n(-214, { 	-- Nightborne Home
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests
 							q(49933, {	-- For the Horde
-								["groups"] = {
+								["g"] = {
 									--i(157028),	-- Letter from Lady Sylvanas Windrunner
 									i(157759),	-- Shal'dorei Tabard
 								},
 								["qg"] = 131326,	-- First Arcanist Thalyssra
 								["coord"] = { 59.3, 85.5 },
 							}),
-						}),	
+						}),
 					},
 					["races"]  = { 27 },	-- Nightborne
 				}),
@@ -431,26 +431,24 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 					},
 					prof(185, {	-- Cooking
-						{
-							["itemID"] = 141011,	-- Recipe: Surf
+						i(141011, {	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
-							["groups"] = {
+							["g"] = {
 								i(133817), 	-- Recipe: Suramar Surf and Turf
 							},
-						},
-						{
-							["itemID"] = 141012,	-- Recipe: Turf
+						}),
+						i(141012, {	-- Recipe: Turf
 							["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
-							["groups"] = {
+							["g"] = {
 								i(133817), 	-- Recipe: Suramar Surf and Turf
 							},
-						},
+						}),
 					}),
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 133887,	-- Luminous Pearl (Item)
 									["questID"] = 40960,	-- Luminous Pearl (Quest)
@@ -461,7 +459,7 @@ _.Zones =
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
 									["description"] = "You must be in the Great Sea when you use this item otherwise you will be unable to catch the fish you're after.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 4,			-- Axefish (Criteria)
@@ -476,19 +474,19 @@ _.Zones =
 								}),
 								i(133724, {		-- Decayed Whale Blubber
 									["description"] = "Using the item will place a whale blob in front of you as the item describes. Cast your line out and shortly after a silithid wasp will fly down and hover over the whale blubber.You'll need to click on the fly to add it to your inventory which will give you the Ravenous Fly.",
-									["groups"] = {
+									["g"] = {
 										i(133795),	-- Ravenous Fly
 									}
 								}),
 								i(133721, {		-- Message in a Bottle
 									["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
-									["groups"] = {
+									["g"] = {
 										i(133722)		-- Axefish Lure
 									},
 								}),
 								i(133795, {		-- Ravenous Fly
 									["description"] = "This item will allow you to catch the Rare fish Ancient Black Barracuda from all Coastal Waters in the Broken Isles.",
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 10596,	-- Bigger Fish to Fry
 											["criteriaID"] = 1,			-- Ancient Black Barracuda (Criteria)
@@ -503,10 +501,10 @@ _.Zones =
 								}),
 								i(133723, {		-- Stunned, Angry Shark
 									["description"] = "This item will spawn a Landlocked Shark, which will yield 7-9 Seabottom Squid when killed. Note that this item only has a 1 minute duration in your bags, and it will disappear if you don't use it by then!",
-									["groups"] = {
+									["g"] = {
 										n(102359, {		-- Landlocked Shark
 											["description"] = "Drops 7-9 Seabottom Squid when killed.",
-											["groups"] = {
+											["g"] = {
 												{
 													["achievementID"] = 10596,	-- Bigger Fish to Fry
 													["criteriaID"] = 13,		-- Seabottom Squid (Criteria)
@@ -524,7 +522,7 @@ _.Zones =
 							}),
 							i(133720, {		-- Demonic Detritus
 								["description"] = "This item will allow you to catch the Rare fish Tainted Runescale Koi in Suramar.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 14,		-- Tainted Runescale Koi (Criteria)
@@ -539,7 +537,7 @@ _.Zones =
 							}),
 							i(133717, {		-- Enchanted Lure
 								["description"] = "This item will allow you to catch the Rare fish Magic-Eater Frog in Suramar.",
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 10596,	-- Bigger Fish to Fry
 										["criteriaID"] = 9,			-- Magic-Eater Frog (Criteria)
@@ -554,10 +552,10 @@ _.Zones =
 							}),
 							i(133719, {		-- Sleeping Murloc
 								["description"] = "Using this item will awaken a Confused Seerspine Murloc, who will run around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.",
-								["groups"] = {
+								["g"] = {
 									n(102350, {		-- Confused Seerspine Murloc
 										["description"] = "Runs around briefly and drop some Seerspine Puffer (as well as other fish) onto the ground/water nearby.\n\nIn order to collect the fish, you simply have to run over them - they will be added to your bags.",
-										["groups"] = {
+										["g"] = {
 											{
 												["achievementID"] = 10596,	-- Bigger Fish to Fry
 												["criteriaID"] = 16,		-- Seerspine Puffer (Criteria)
@@ -575,7 +573,7 @@ _.Zones =
 						}),
 						ach(11725, { 	-- Fisherfriend of the Isles
 							faction(2101, {	-- Sha'leth
-								["groups"] = {
+								["g"] = {
 									i(146962, {		-- Golden Minnow
 										i(147311), 	-- Replica Gondola
 									}),
@@ -615,7 +613,7 @@ _.Zones =
 						}),
 					}),
 					n(-181, {	-- Blacksmithing
-						["groups"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
+						["g"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
 							{	-- Part of the Team
 								["questID"] = 38525,	-- Part of the Team
 								["qg"] = 92264,	-- Felsmith Nal'ryssa
@@ -640,7 +638,7 @@ _.Zones =
 								["questID"] = 38528,	-- Leystone's Potential
 								["qg"] = 92264,	-- Felsmith Nal'ryssa
 								["sourceQuest"] = 38527,	-- Nal'ryssa's Technique
-								["groups"] = {
+								["g"] = {
 									{	-- Plans: Leystone Armguards (Rank 2)
 										["itemID"] = 123928,	-- Plans: Leystone Armguards (Rank 2)
 									},
@@ -656,7 +654,7 @@ _.Zones =
 								{	-- Work Order: Leystone Pauldrons
 									["questID"] = 41637,	-- Work Order: Leystone Pauldrons
 									["qg"] = 97140,	-- First Arcanist Thalyssra
-									["groups"] = {
+									["g"] = {
 										{	-- Recipe: Leystone Pauldrons (Rank 3)
 											["itemID"] = 123938,	-- Recipe: Leystone Pauldrons (Rank 3)
 										},
@@ -795,7 +793,7 @@ _.Zones =
 						q(44024),	-- WANTED: Shal'an
 						q(44012),	-- WANTED: Siegemaster Aedrin
 						q(44023),	-- WANTED: Siegemaster Aedrin
---]]					
+--]]
 						q(43943, {	-- Withered Army Training
 							["qgs"] = {
 								97140,	-- First Arcanist Thalyssra (Frail)
@@ -805,7 +803,7 @@ _.Zones =
 								692,	-- Falanaar Arcway
 								693,	-- Falanaar Arcway
 							},
-							["groups"] = {
+							["g"] = {
 								n(109556, {	-- Treasure Chest
 									i(136914),	-- Leyline Broodling
 								}),
@@ -838,7 +836,7 @@ _.Zones =
 								}),
 							},
 						}),
---[[						
+--[[
 						q(43807),	-- Withered Wrangling: Ambervale
 						q(44158),	-- Withered Wrangling: Falanaar
 						q(44157),	-- Withered Wrangling: Tel'anor
@@ -848,8 +846,8 @@ _.Zones =
 						q(41661),	-- Work Order: Skystep Potions
 						q(41302),	-- Work Order: Starlight Roses
 						q(41350),	-- Work Order: Stonehide Leather
---]]						
-					}),						
+--]]
+					}),
 					q(44057),	-- A "Noble" Event
 					q(41173, {	-- A Beacon of Hope
 						i(131717),	-- Starlight Beacon
@@ -886,14 +884,13 @@ _.Zones =
 					q(40012),	-- An Old Ally
 					q(40157),	-- An Unseemly Task
 					q(43954),	-- Anax
-					{
-						["questID"] = 44672,	-- Ancient Mana
-						["qg"] = 97140,	-- Quest Giver: First Arcanist Thalyssra
+					q(44672, {	-- Ancient Mana
 						["sourceQuest"] = 42229,	-- Source Quest: Shal'Aran
-						["groups"] = {
+						["qg"] = 97140,	-- Quest Giver: First Arcanist Thalyssra
+						["g"] = {
 							i(141652),	-- Mana Divining Stone
 						},
-					},
+					}),
 					q(41162),	-- And Into the Fel Fire
 					q(44052),	-- And They Will Tremble
 					q(44156),	-- Another Arcan'dor Closes...
@@ -908,8 +905,8 @@ _.Zones =
 					q(40975),	-- Arluin Bribe Tracking
 					q(42443),	-- Arluin Wants In (Tracking Quest)
 					q(43569),	-- Arluin's Request
-					qh( 44862),	-- Arming the Rebels
-					qa( 44861),	-- Arming the Rebels
+					qh(44862),	-- Arming the Rebels
+					qa(44861),	-- Arming the Rebels
 					q(47051),	-- Assassination: Fate of the Tideskorn
 					q(43352),	-- Asset Security
 					q(42404),	-- Assisting the Archmage
@@ -947,7 +944,7 @@ _.Zones =
 					q(43524),	-- Court of Stars: Literary Perfection
 					q(38695),	-- Crackdown
 					q(40973),	-- Creating Time
-					qa( 44843),	-- Crystal Clearing
+					qa(44843),	-- Crystal Clearing
 					q(45239),	-- Cubic Coalescing
 					q(45160),	-- Cubic Currents
 					q(44856),	-- Cut the Cattitude
@@ -960,15 +957,15 @@ _.Zones =
 					q(43792),	-- Degren
 					q(40211),	-- Demon Flesh
 					q(47049),	-- Demonology: Fate of the Tideskorn
-					qh( 44624),	-- Desecrate this Fire!
-					qa( 44627),	-- Desecrate this Fire!
+					qh(44624),	-- Desecrate this Fire!
+					qa(44627),	-- Desecrate this Fire!
 					q(45551),	-- Devastating Effects
 					q(40683),	-- Discovery Requires Experimentation
 					q(44722),	-- Disillusioned Defector
 					q(41148),	-- Dispensing Compassion
 					q(42396),	-- Do The Thing!
-					qh( 43812),	-- Down to Business
-					qa( 43810),	-- Down to Business
+					qh(43812),	-- Down to Business
+					qa(43810),	-- Down to Business
 					q(44455),	-- Downfall Tracking
 					q(41410),	-- Dry Powder
 					q(45263),	-- Eating Before the Meeting
@@ -984,7 +981,7 @@ _.Zones =
 					q(41466),	-- Estate Jewelry: Haute Claw-ture
 					{
 						["questID"] = 38971,	-- Exotic Textiles
-						["groups"] = {
+						["g"] = {
 							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
 						},
 						["qg"] = 93978,	-- Leyweaver Athystro
@@ -1000,7 +997,7 @@ _.Zones =
 						["questID"] = 45372,	-- Fate of the Nightborne
 						["qg"] = 115710,	-- Chief Telemancer Oculeth
 						["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
-						["groups"] = {
+						["g"] = {
 							i(142436),	-- Arcanist's Manasaber
 						},
 					},
@@ -1013,7 +1010,7 @@ _.Zones =
 					q(40919),	-- Fel Bent for Leather
 					q(41167),	-- Fel Fragments
 					q(40214, {	-- Fel Tanning
-						["groups"] = {
+						["g"] = {
 							i(140636),	-- Pattern: Dreadleather Bindings (Rank 1)
 							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
 						},
@@ -1032,7 +1029,7 @@ _.Zones =
 					q(40334),	-- Fisherman's Tonic
 					q(41175),	-- Fit for an Elven Queen
 					q(43564),	-- Flow Control
-					qh( 43938),	-- Focusing Our Efforts
+					qh(43938),	-- Focusing Our Efforts
 					q(41031),	-- For the People
 					q(43361),	-- Fragments of Disaster
 					q(40308),	-- Fragments of Memory
@@ -1044,7 +1041,7 @@ _.Zones =
 					q(44053),	-- Friends With Benefits
 					q(41258),	-- Fruit of the Doom
 					q(44738, {	-- Full Might of the Elves
-						["groups"] = {
+						["g"] = {
 							i(140078),	-- Crystalized Leypetal
 							i(140077),	-- Goldleaf Arcwine Phial
 							i(140076),	-- Felborne Energist's Gem
@@ -1072,8 +1069,8 @@ _.Zones =
 					q(43993),	-- Hertha Grimdottir
 					q(43969),	-- Hired Help
 					q(41453),	-- Homeward Bounding
-					qa( 44613),	-- Honor the Flame
-					qh( 44614),	-- Honor the Flame
+					qa(44613),	-- Honor the Flame
+					qh(44614),	-- Honor the Flame
 					q(44725),	-- Hostage Situation
 					q(40213),	-- Hounds Abound
 					q(42833),	-- How It's Made: Arcwine
@@ -1084,11 +1081,11 @@ _.Zones =
 					q(42493),	-- Impending Dooooooom!
 					q(43317),	-- In the Bag
 					q(44726),	-- In the Business of Souls
-					qa( 11964),	-- Incense for the Summer Scorchlings
+					qa(11964),	-- Incense for the Summer Scorchlings
 					q(44569),	-- Inquisitor Volitix
 					{	-- Inspire Me!
 						["questID"] = 38975,
-						["groups"] = {
+						["g"] = {
 							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
 						},
 						["qg"] = 93976,	-- Leyweaver Mithrogane
@@ -1139,7 +1136,7 @@ _.Zones =
 					q(43590),	-- Leyline Feed: Ley Station Moonfall
 					q(44495),	-- Leyline Master
 					q(44493),	-- Leyline Proficiency
-					qh( 44859),	-- Liadrin's Command
+					qh(44859),	-- Liadrin's Command
 					q(40905),	-- Lieutenant Strathmar
 					q(40796),	-- Lingering on the Edge
 					q(42486),	-- Little One Lost
@@ -1181,7 +1178,7 @@ _.Zones =
 					q(42508),	-- Not A Toothless Dragon
 					q(41464),	-- Not Here, Not Now, Not Ever
 					q(40949),	-- Not Their Last Stand
-					qh( 44834),	-- Nullified
+					qh(44834),	-- Nullified
 					q(44768),	-- Nyell's Workshop
 					q(44873),	-- Oculeth Ex Machina
 					q(40011),	-- Oculeth's Workshop
@@ -1205,7 +1202,7 @@ _.Zones =
 					q(43528),	-- Planning the Assault
 					q(41028),	-- Power Grid
 					q(40642),	-- Power! Get The Power!
-					qa( 44844),	-- Powering Down the Portal
+					qa(44844),	-- Powering Down the Portal
 					q(40967),	-- Precious Little Left
 					q(43898),	-- Preparing to Move
 					q(41159),	-- Process of Elimination
@@ -1215,7 +1212,7 @@ _.Zones =
 					q(41320),	-- Pry It From Their Cold, Feral Claws
 					q(40370),	-- Purge the Unclean
 					q(40470),	-- Quality of Life
-					qa( 41108),	-- Rain Death Upon Them
+					qa(41108),	-- Rain Death Upon Them
 					q(41111),	-- Rain Death Upon Them
 					q(44739),	-- Ready for Battle
 					q(45556),	-- Ready to Strike
@@ -1237,7 +1234,7 @@ _.Zones =
 					q(40153),	-- Return to Karazhan: Scales of Legend
 					{	-- Return to Karazhan: The Big Bag Theory
 						["questID"] = 44741,
-						["groups"] = {
+						["g"] = {
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
 						},
 						["qg"] = 93969,	-- Leyweaver Tytallo
@@ -1269,7 +1266,7 @@ _.Zones =
 					q(41098),	-- Shard of Kozak
 					q(41097),	-- Shard of Vorgos
 					q(41001),	-- Shatter the Sashj'tar
-					qh( 44842),	-- Shield, Meet Spell
+					qh(44842),	-- Shield, Meet Spell
 					q(40745),	-- Shift Change
 					q(41176),	-- Sifting Through the Rubble
 					q(41030),	-- Sigil Reclamation
@@ -1278,23 +1275,24 @@ _.Zones =
 					q(38649),	-- Silence in the City
 					q(42836),	-- Silkwing Sabotage
 					q(40140, {	-- Ske'rit's Leather Handbook
-						["groups"] = {
-							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
-						},
-						["qg"] = 98720,	-- Ske'rit
+						["requireSkill"] = 393,	-- Skinning
 						["sourceQuests"] = {
 							40138,	-- Trial of the Crusader: Hides of Legend
 							40139,	-- Halls of Valor: The Hide of Fenryr
 						},
+						["qg"] = 98720,	-- Ske'rit
+						["g"] = {
+							sp(194819),	-- Skinning Technique: Stonehide Leather (Rank 3)
+						},
 					}),
 					q(40155, {	-- Ske'rit's Scale-Skinning Suggestions
-						["groups"] = {
-							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
-						},
-						["qg"] = 98720,	-- Ske'rit
 						["sourceQuests"] = {
 							40153,	-- Return to Karazhan: Scales of Legend
 							40154,	-- Eye of Azshara: The Scales of Serpentrix
+						},
+						["qg"] = 98720,	-- Ske'rit
+						["g"] = {
+							sp(194822),	-- Skinning Technique: Stormscale (Rank 3)
 						},
 					}),
 					q(44727),	-- Smuggled!
@@ -1318,11 +1316,11 @@ _.Zones =
 					q(40929),	-- Symbols of Power
 					q(41762),	-- Sympathizers Among the Shal'dorei
 					q(40765),	-- Syrana Tracker
-					qh( 40632),	-- Take Me To Your Leader
-					qa( 40391),	-- Take Me To Your Leader
+					qh(40632),	-- Take Me To Your Leader
+					qa(40391),	-- Take Me To Your Leader
 					q(40963),	-- Take Them in Claw
-					qh( 41607),	-- Taking a Promenade
-					qa( 44831),	-- Taking a Promenade
+					qh(41607),	-- Taking a Promenade
+					qa(44831),	-- Taking a Promenade
 					q(45554),	-- Taking Control
 					q(40010),	-- Tapping the Leylines
 					q(40161),	-- Tapping the Underground
@@ -1352,7 +1350,6 @@ _.Zones =
 					q(38530),	-- The Firmament Stone
 					q(45524),	-- The Forgotten Heir
 					q(42832),	-- The Fruit of Our Efforts
-					q(41802),	-- The Gates of Valor
 					q(41878),	-- The Gondolier
 					q(42228),	-- The Hidden City
 					q(41139),	-- The Key Is Around Here Somewhere...
@@ -1366,7 +1363,7 @@ _.Zones =
 					q(38967),	-- The Nightborne Connection
 					q(40123),	-- The Nightborne Pact
 					q(42421),	-- The Nightfallen
-					q(43532),	-- The Nighthold: Darkness Calls					
+					q(43532),	-- The Nighthold: Darkness Calls
 					q(43530),	-- The Nighthold: Delusions of Grandeur
 					q(45417),	-- The Nighthold: Lord of the Shadow Council
 					q(45553),	-- The Nighthuntress Beckons
@@ -1397,16 +1394,18 @@ _.Zones =
 					q(39987),	-- Trail of Echoes
 					q(41230),	-- Trapping Evolved
 					q(44790),	-- Trial by Demonfire
-					q(40138),	-- Trial of the Crusader: Hides of Legend
+					q(40138, {	-- Trial of the Crusader: Hides of Legend
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(41184),	-- Tried and True
-					qa( 44858),	-- Trolling Them
-					qh( 44860),	-- Trolling Them
+					qa(44858),	-- Trolling Them
+					qh(44860),	-- Trolling Them
 					q(41462),	-- Trouble Has Huge Feet
 					q(40617),	-- Turn Around, Nighteyes
 					q(40336),	-- Turning the Tidemistress
 					q(40368),	-- Turtle Powered
 					q(40678),	-- Twisted Power
-					qa( 44743),	-- Tyrande's Command
+					qa(44743),	-- Tyrande's Command
 					q(45525),	-- Unanswered Questions
 					q(41182),	-- Uncovering the Orb of Sciallax
 					q(41180),	-- Unspeakable Power
@@ -1423,11 +1422,13 @@ _.Zones =
 					q(44754),	-- Waxing Crescent
 					q(40779),	-- We Need Even More Power!
 					q(44829),	-- We Need Weapons
-					q(41179),	-- What Once Was Lost					
+					q(41179),	-- What Once Was Lost
 					q(43566),	-- Withered Progress
 					q(41174),	-- Worth Its Weight
 					q(41702),	-- Written in Stone
-					q(40212),	-- Wrong End of the Knife
+					q(40212, {	-- Wrong End of the Knife
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(41197),	-- You've Got to Be Kitten Me Right Meow
 					q(40762),	-- Zealot's Dues
 					q(40009,  {  -- Arcane Thirst
@@ -1436,10 +1437,10 @@ _.Zones =
 					q(42837,  {  -- Balance to Spare
 						i(139790),	-- Untethered Wyrmling
 					}),
-					q(45239,  {  -- Cubic Coalescing 
+					q(45239,  {  -- Cubic Coalescing
 						i(142536),	-- Memory Cube
 					}),
-					q(45372,  {  -- Fate of the Nightborn 
+					q(45372,  {  -- Fate of the Nightborn
 						i(142436),	-- Arcanist's Manasaber
 					}),
 					q(42722,  {  -- Friends in Cages
@@ -1453,46 +1454,46 @@ _.Zones =
 					}),
 					q(41197,  {  -- You've Got to Be Kitten Me Right Meow
 						i(139791),	-- Lurking Owl Kitten
-					}),	
+					}),
 				}),
 				n(-16, { 	-- Rares
 					n(111649, { 	-- Ambassador D'vwinn
-						["groups"] = {
+						["g"] = {
 							i(139918),
 						},
-						["questID"] = 43794,	
-					}), 
+						["questID"] = 43794,
+					}),
 					n(111197, { 	-- Anax
-						["groups"] = {	
+						["g"] = {
 							i(140934),
 						},
-						["questID"] = 43954,		
-					}), 
+						["questID"] = 43954,
+					}),
 					n(110870, { 	-- Apothecary Faldren
-						["groups"] = {	
+						["g"] = {
 							i(121754),
 						},
-						["questID"] = 43580,	
-					}), 
+						["questID"] = 43580,
+					}),
 					n(110726, { 	-- Cadraeus
-						["groups"] = {	
+						["g"] = {
 							i(139969),
 						},
-						["questID"] = 43495,		
-					}), 
+						["questID"] = 43495,
+					}),
 					n(100864, { 	-- Cora'kar
-						["groups"] = {	
+						["g"] = {
 							i(139952),
 						},
-						["questID"] = 41135,		
-					}), 
-					n(111651, { 	-- Degren 
-						["groups"] = {	
+						["questID"] = 41135,
+					}),
+					n(111651, { 	-- Degren
+						["g"] = {
 							i(121808),	-- Nether Conductors
-						},	
-					}), 
+						},
+					}),
 					n(99792, {		-- Elfbane
-						["groups"] = {	
+						["g"] = {
 							i(121806),	-- Mountain Rage Shaker
 						},
 						["questID"] = 41319,
@@ -1501,127 +1502,132 @@ _.Zones =
 							i(136901),
 					}),
 					n(99610, { 		-- Garvrulg
-						["groups"] = {	
+						["g"] = {
 							i(121755),
 						},
-						["questID"] = 40897,	
-					}), 
+						["questID"] = 40897,
+					}),
 					n(110832, { 	-- Gorgroth
-						["groups"] = {	
+						["g"] = {
 							i(121747),
 						},
-						["questID"] = 43992,		
-					}), 
+						["questID"] = 43992,
+					}),
 					n(103223, { 	-- Hertha Grimdottir
-						["groups"] = {	
+						["g"] = {
 							i(121737),
 						},
-						["questID"] = 43993,		
-					}), 
+						["questID"] = 43993,
+					}),
 					n(106526, { 	-- Lady Rivantas
-						["groups"] = {	
+						["g"] = {
 							i(141866),
 						},
-						["questID"] = 44675,	
-					}), 
+						["questID"] = 44675,
+					}),
 					n(102303, { 	-- Lieutenant Strathmar
-						["groups"] = {	
+						["g"] = {
 							i(121735),
 						},
-						["questID"] = 40905,	
-					}), 
+						["questID"] = 40905,
+					}),
 					n(113368, { 	-- Llorian
-						["groups"] = {	
+						["g"] = {
 							i(141867),
 						},
-						["questID"] = 44676,	
-					}), 
+						["questID"] = 44676,
+					}),
 					n(112497, { 	-- Maia the White
-						["groups"] = {	
+						["g"] = {
 							i(139897),
 						},
-						["questID"] = 44072,	
-					}), 
+						["questID"] = 44072,
+					}),
+					n(111653, { 	-- Miasu
+						["g"] = {
+							i(121810),	-- Pocket Void Portal
+						},
+						["questID"] = 43793,
+					}),
 					n(110340, { 	-- Myonix
-						["groups"] = {	
+						["g"] = {
 							i(133816),	-- Recipe: Leybeque Ribs
 							i(121739),	-- Felinus Manus
 						},
-						["questID"] = 43358,	
-					}), 
+						["questID"] = 43358,
+					}),
 					n(107846, { 	-- Pinchshank
-						["groups"] = {	
+						["g"] = {
 							i(140314),
 						},
-						["questID"] = 43968,	
-					}), 
+						["questID"] = 43968,
+					}),
 					n(105547, { 	-- Rauren
-						["groups"] = {	
+						["g"] = {
 							i(121759),
 						},
-						["questID"] = 43484,	
-					}), 
+						["questID"] = 43484,
+					}),
 					n(103183, { 	-- Rok'nash
-						["groups"] = {	
+						["g"] = {
 							i(140019),
 						},
-						["questID"] = 40680,	
-					}), 
+						["questID"] = 40680,
+					}),
 					n(113425, { 	-- Rovendros
 						["questID"] = 43795,	-- Tracking - Rovendros Found
 						["description"] = "This is a hdiden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
 					}),
 					n(109054, { 	-- Shal'an
-						["groups"] = {	
+						["g"] = {
 							i(139926),
 						},
-						["questID"] = 42831,	
+						["questID"] = 42831,
 					}),
 					n(110824, { 	-- Tideclaw
 						{
 							["itemID"] = 141011,	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
-							["groups"] = {
+							["g"] = {
 								i(133817), 	-- Recipe: Suramar Surf and Turf
 							},
 						},
-					}), 
---[[				
-				--	v(45478, { 		-- Achronos	}), 
-				--	v(45504, { 		-- Alteria	}), 
-				--	v(43481, { 		-- Arcanist Lylandre	}), 
-				--	v(43717, { 		-- Artificer Lothaire	}), 
-				--	v(45475, { 		-- Auditor Esiel	}), 
-				--	v(45471, { 		-- Az'jatar	}), 
-				--	n(103787, { 	-- Baconlisk	}),				
-				--	n(105632, { 	-- Broodmother Shu'malis	}), 
-				--	v(45503, { 		-- Colerian	}), 
-				--	v(43792, { 		-- Degren	}), 
-				--	v(41319, { 		-- Elfbane	}), 
-				--	v(43597, { 		-- Guardian Thor'el	}), 
-				--	v(41136, { 		-- Har'kess the Insatiable	}), 
-				--	v(44569, { 		-- Inquisitor Volitix	}), 
-				--	v(41134, { 		-- Jetsam	}), 
-				--	v(41786, { 		-- King Morgalash	}), 
-				--	v(43348, { 		-- Magister Phaedris	}), 
-				--	v(45476, { 		-- Magistrix Vilessa	}), 
-				--	v(43351, { 		-- Mal'Dreth the Corruptor	}), 
-				--	v(44124, { 		-- Mar'tura	}), 
-				--	v(43718, { 		-- Matron Hagatha	}), 
-				--	v(43793, { 		-- Miasu	}), 
-				--	v(45506, { 		-- Oglok the Furious	}), 
-				--	v(43449, { 		-- Oreth the Vile	}), 
+					}),
+--[[
+				--	v(45478, { 		-- Achronos	}),
+				--	v(45504, { 		-- Alteria	}),
+				--	v(43481, { 		-- Arcanist Lylandre	}),
+				--	v(43717, { 		-- Artificer Lothaire	}),
+				--	v(45475, { 		-- Auditor Esiel	}),
+				--	v(45471, { 		-- Az'jatar	}),
+				--	n(103787, { 	-- Baconlisk	}),
+				--	n(105632, { 	-- Broodmother Shu'malis	}),
+				--	v(45503, { 		-- Colerian	}),
+				--	v(43792, { 		-- Degren	}),
+				--	v(41319, { 		-- Elfbane	}),
+				--	v(43597, { 		-- Guardian Thor'el	}),
+				--	v(41136, { 		-- Har'kess the Insatiable	}),
+				--	v(44569, { 		-- Inquisitor Volitix	}),
+				--	v(41134, { 		-- Jetsam	}),
+				--	v(41786, { 		-- King Morgalash	}),
+				--	v(43348, { 		-- Magister Phaedris	}),
+				--	v(45476, { 		-- Magistrix Vilessa	}),
+				--	v(43351, { 		-- Mal'Dreth the Corruptor	}),
+				--	v(44124, { 		-- Mar'tura	}),
+				--	v(43718, { 		-- Matron Hagatha	}),
+				--	v(45506, { 		-- Oglok the Furious	}),
+				--	v(43449, { 		-- Oreth the Vile	}),
 				--	n(113694, { 	-- Pashya	}),
-				--	v(43603, { 		-- Randril	}), 
-				--	v(44003, { 		-- Reef Lord Raj'his	}),  
-				--	n(105739, { 	-- Sanaar	}), 
-				--	v(45505, { 		-- Scythemaster Cil'raman	}), 
-				--	v(45502, { 		-- Selenyi	}), 
-				--	v(43996, { 		-- Shadowquill	}), 
-				--	v(43369, { 		-- Siegemaster Aedrin	}), 
-				--	v(45477, { 		-- Sorallus	}), 
-				--	v(44669, { 		-- Vicious Whale Shark}), 					
-				--	v(45474, { 		-- Volshax, Breaker of Will	}), 
+				--	v(43603, { 		-- Randril	}),
+				--	v(44003, { 		-- Reef Lord Raj'his	}),
+				--	n(105739, { 	-- Sanaar	}),
+				--	v(45505, { 		-- Scythemaster Cil'raman	}),
+				--	v(45502, { 		-- Selenyi	}),
+				--	v(43996, { 		-- Shadowquill	}),
+				--	v(43369, { 		-- Siegemaster Aedrin	}),
+				--	v(45477, { 		-- Sorallus	}),
+				--	v(44669, { 		-- Vicious Whale Shark}),
+				--	v(45474, { 		-- Volshax, Breaker of Will	}),
 --]]
 				}),
 				n(-2, { 	-- Vendors
@@ -1728,7 +1734,7 @@ _.Zones =
 						i(140638),	-- Recipe: Dreadleather Shoulderguard Rank 1
 					}),
 					n(92265, {	-- Urael <Nal'ryssa's Minion>
-						["groups"] = {
+						["g"] = {
 							i(123920),	-- Recipe: Demonsteel Armguards (Rank 1)
 							i(123926),	-- Recipe: Demonsteel Boots (Rank 1)
 							i(123927),	-- Recipe: Demonsteel Breastplate (Rank 1)
@@ -1741,13 +1747,14 @@ _.Zones =
 					}),
 				}),
 				n(-34, { 	-- World Quests
-					["groups"] = {
+					["g"] = {
+						i(134275),	-- Nightborne's Jeweled Necklace
 						n(-322, {	-- Cloak
 							i(121798),	-- Moon Guard Drape
 							i(134290),	-- Nightborne Noble's Cloak
 						}),
 						n(-3243, {	-- Manawracker Set
-							["groups"] = {
+							["g"] = {
 								i(134304),	-- Manawracker Crown
 								i(134309),	-- Manawracker Shoulders
 								i(134307),	-- Manawracker Vestments
@@ -1760,7 +1767,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 						}),
 						n(-3262, {	-- Swordsinger Set
-							["groups"] = {
+							["g"] = {
 								i(134284),	-- Swordsinger's Hood
 								i(134286),	-- Swordsinger's Shoulders
 								i(134285),	-- Swordsinger's Vest
@@ -1773,7 +1780,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 						}),
 						n(-3274, {	-- Ley Dragoon Set
-							["groups"] = {
+							["g"] = {
 								i(134299),	-- Ley Dragoon's Headgear
 								i(134301),	-- Ley Dragoon's Spaulders
 								i(134302),	-- Ley Dragoon's Hauberk
@@ -1786,7 +1793,7 @@ _.Zones =
 							["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 						}),
 						n(-3299, {	-- Arcane Defender Set
-							["groups"] = {
+							["g"] = {
 								i(134270),	-- Arcane Defender's Helm
 								i(134272),	-- Arcane Defender's Pauldrons
 								i(134267),	-- Arcane Defender's Breastplate
@@ -1801,7 +1808,7 @@ _.Zones =
 						{	-- Work Order: Battlebound Leggings
 							["questID"] = 41643,
 							["qg"] = 115736,	-- First Arcanist Thalyssra
-							["groups"] = {
+							["g"] = {
 								i(137909),	-- Recipe: Battlebound Leggings (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1812,13 +1819,13 @@ _.Zones =
 							["qg"] = 115736,	-- First Arcanist Thalyssra
 							["isWQ"] = 110,
 							["requireSkill"] = 202,	-- Engineering
-							["groups"] = {
+							["g"] = {
 								i(137719),	-- Schematic: Deployable Bullet Dispenser (Rank 3)
 							},
 						},
 						{	-- Work Order: Queen's Opal Pendant
 							["questID"] = 41655,
-							["groups"] = {
+							["g"] = {
 								i(137866),	-- Design: Queen's Opal Pendant (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1826,7 +1833,7 @@ _.Zones =
 						},
 						{	-- Work Order: Silkweave Slippers
 							["questID"] = 41649,
-							["groups"] = {
+							["g"] = {
 								i(138014),	-- Pattern: Silkweave Slippers (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1835,7 +1842,7 @@ _.Zones =
 						{	-- Work Order: Word of Mastery
 							["questID"] = 41673,
 							["qg"] = 115736,	-- First Arcanist Thalyssra
-							["groups"] = {
+							["g"] = {
 								i(128598),	-- Formula: Enchant Ring - Word of Mastery (Rank 3)
 							},
 							["isWQ"] = 110,
@@ -1844,7 +1851,7 @@ _.Zones =
 					},
 				}),
 				n(0, { 		-- Zone Drops
-					["groups"] = {
+					["g"] = {
 						i(137841),	-- Design: Deep Amber Pendant (Rank 3)
 						i(136704),	-- Formula: Immaculate Fibril
 						i(137729),	-- Technique: Codex of the Tranquil Mind
@@ -2122,13 +2129,13 @@ _.Zones =
 					},
 				}),
 				n(-40, {	-- Legacy
-					["groups"] = {
+					["g"] = {
 						n(-4, {	-- Achievements
 							un(2, ach(11139, {	-- Field Medic!
-								["groups"] = {
-									un( 39, title(340, {	-- TITLE: Field Medic!
+								["g"] = {
+									un(39, title(340, {	-- TITLE: Field Medic!
 										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["groups"] = {
+										["g"] = {
 											{
 												["achievementID"] = 11139,	-- Field Medic (Achievement)
 												["criteriaID"] = 1, 		-- Bloody Letter (Criteria)
@@ -2169,7 +2176,7 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 98,	
+			["lvl"] = 98,
 			["achievementID"] = 10669,
 			["maps"] = {
 				681,	-- The Arcway Vaults #1
@@ -2187,7 +2194,7 @@ _.Zones =
 				693,	-- Falanaar Arcway
 				798,	-- The Arcway
 			},
-			["description"] = "|cff66ccffSuramar is a max-level zone located in the central Broken Isles. Once a great night elven settlement, though not as glorious as the capital of Zin-Azshari, it was famously the hometown of several important night elves: Illidan Stormrage, his brother Malfurion, their friend Tyrande Whisperwind, and the siblings Jarod and Maiev Shadowsong. Today it is the home of the Nightborne. Suramar is built on ley lines, and arcane coils in the tunnel system running beneath Suramar and the surrounding areas tap into those ley lines' power. Since the creation of the Nightwell, the ley lines have become redundant and the arcane coils abandoned.|r",				
-		}),	
+			["description"] = "|cff66ccffSuramar is a max-level zone located in the central Broken Isles. Once a great night elven settlement, though not as glorious as the capital of Zin-Azshari, it was famously the hometown of several important night elves: Illidan Stormrage, his brother Malfurion, their friend Tyrande Whisperwind, and the siblings Jarod and Maiev Shadowsong. Today it is the home of the Nightborne. Suramar is built on ley lines, and arcane coils in the tunnel system running beneath Suramar and the surrounding areas tap into those ley lines' power. Since the creation of the Nightwell, the ley lines have become redundant and the arcane coils abandoned.|r",
+		}),
 	}),
 };

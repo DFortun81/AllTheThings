@@ -10,6 +10,13 @@ _.Zones =
 				["mapID"] = 554,	-- Timeless Isle
 				["g"] = {
 					n(-16, {	-- Rares
+						--[[
+						{	-- Blackguard's Jetsam
+							["coords"] = {
+								{ 22.69, 58.93, 554 },
+							},
+							-- Turns into Spectral Treasure Chest npcID 72018
+						--]]
 						{	-- Archiereus of Flame*
 							["npcID"] = 73174,	-- Archiereus of Flame
 							["questID"] = 33312,
@@ -65,6 +72,15 @@ _.Zones =
 								},
 							},
 						},
+						o(221673, {  -- Blazing Chest
+							["questID"] = 33210,  -- One-Time Chest - Blazing Chest
+							["coords"] = {
+								{ 47.3, 26.9, 554 },
+							},
+							["g"] = {
+								i(103982),	-- Burden of Eternity
+							},
+						}),
 						{	-- Champion of the Black Flame*
 							["npcID"] = 73171,	-- Champion of the Black Flame
 							["questID"] = 33299,

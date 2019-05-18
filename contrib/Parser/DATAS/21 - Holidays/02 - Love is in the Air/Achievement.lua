@@ -18,20 +18,25 @@ _.Holidays = bubbleDown({["u"] = 18},
 									crit(1),	-- 10x Silver Shafted Arrow
 								},
 							}),
-							ach(1279, {			-- Flirt With Disaster (Alliance)
+							{	-- Flirt With Disaster
+								["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
+								["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
+								["u"] = 18,							-- Love is in the Air Filter
 								["g"] = {
-									crit(1),	-- Kissed Sraaz
-									crit(2),	-- Handful of Rose Petals on Sraaz
+									{	-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
+										["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
+										["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
+										["criteriaID"] = 1,					-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
+										["u"] = 18,							-- Love is in the Air Filter
+									},
+									{	-- Handful of Rose Petals on Sraaz // Kissed Jeremiah Payson
+										["allianceAchievementID"] = 1279,	-- Flirt With Disaster [Alliance]
+										["hordeAchievementID"] = 1280,		-- Flirt With Disaster [Horde]
+										["criteriaID"] = 2,					-- Kissed Sraaz // Handful of Rose Petals on Jeremiah Payson
+										["u"] = 18,							-- Love is in the Air Filter
+									},
 								},
-								["races"] = ALLIANCE_ONLY,
-							}),
-							ach(1280, {			-- Flirt With Disaster (Horde)
-								["g"] = {
-									crit(1),	-- Handful of Rose Petals on Jeremiah Payson
-									crit(2),	-- Kissed Jeremiah Payson
-								},
-								["races"] = HORDE_ONLY,
-							}),
+							},
 							ach(1291, {}),		-- Lonely?
 							ach(1695, {}),		-- Dangerous Love
 							ach(1696, {			-- The Rocket's Pink Glare
@@ -39,24 +44,37 @@ _.Holidays = bubbleDown({["u"] = 18},
 									crit(1),	-- Shoot off 10 Love Rockets in 20 seconds or less
 								},
 							}),
-							ach(1697, {			-- Nation of Adoration (Alliance)
+							{	-- Nation of Adoration
+								["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
+								["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+								["u"] = 18,							-- Love is in the Air Filter
 								["g"] = {
-									crit(1),	-- A Gift for the High Priestess of Elune
-									crit(2),	-- A Gift for the Prophet
-									crit(3),	-- A Gift for the Lord of Ironforge
-									crit(4),	-- A Gift for the King of Stormwind
+									{	-- A Gift for the High Priestess of Elune // A Gift for the High Overlord
+										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
+										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+										["criteriaID"] = 1,					-- A Gift for the High Priestess of Elune // A Gift for the High Overlord
+										["u"] = 18,							-- Love is in the Air Filter
+									},
+									{	-- A Gift for the Prophet // A Gift for the Regent Lord of Quel'Thalas
+										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
+										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+										["criteriaID"] = 2,					-- A Gift for the Prophet // A Gift for the Regent Lord of Quel'Thalas
+										["u"] = 18,							-- Love is in the Air Filter
+									},
+									{	-- A Gift for the Lord of Ironforge // A Gift for the High Chieftain
+										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
+										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+										["criteriaID"] = 3,					-- A Gift for the Lord of Ironforge // A Gift for the High Chieftain
+										["u"] = 18,							-- Love is in the Air Filter
+									},
+									{	-- A Gift for the King of Stormwind // A Gift for the Banshee Queen
+										["allianceAchievementID"] = 1697,	-- Nation of Adoration [Alliance]
+										["hordeAchievementID"] = 1698,		-- Nation of Adoration [Horde]
+										["criteriaID"] = 4,					-- A Gift for the King of Stormwind // A Gift for the Banshee Queen
+										["u"] = 18,							-- Love is in the Air Filter
+									},
 								},
-								["races"] = ALLIANCE_ONLY,
-							}),
-							ach(1698, {			-- Nation of Adoration (Horde)
-								["g"] = {
-									crit(1),	-- A Gift for the High Overlord
-									crit(2),	-- A Gift for the Regent Lord of Quel'Thalas
-									crit(3),	-- A Gift for the High Chieftain
-									crit(4),	-- A Gift for the Banshee Queen
-								},
-								["races"] = HORDE_ONLY,
-							}),
+							},
 							ach(1699, {			-- Fistful of Love
 								["g"] = {
 									crit(1),	-- Gnome Warlock

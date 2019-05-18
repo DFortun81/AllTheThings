@@ -92,7 +92,7 @@ _.Zones =
 											["questID"] = 54859,
 											["description"] = "Cost: 25 Seafarer's Dubloons",
 										},
-										{	-- Dented Coin [A]
+										{	-- Dented Coin [Alliance]
 											["itemID"] = 163616,	-- Dented Coin
 											--["questID"] = 53118,	-- Dented Coin
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -100,7 +100,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = ALLIANCE_ONLY,
 										},
-										{	-- Exotic Spices [A]
+										{	-- Exotic Spices [Alliance]
 											["itemID"] = 163614,	-- Exotic Spices
 											--["questID"] = 53120,	-- Exotic Spices
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -108,7 +108,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = ALLIANCE_ONLY,
 										},
-										{	-- Lost Sea Scroll [A]
+										{	-- Lost Sea Scroll [Alliance]
 											["itemID"] = 163615,	-- Lost Sea Scroll
 											--["questID"] = 53119,	-- Lost Sea Scroll
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -125,6 +125,12 @@ _.Zones =
 								},
 							},
 						},
+						n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168028),	-- Recipe: Mallet of Thunderous Skins
+							},
+						}),
 						n(141009, {	-- Col. Tenders <Chicken Vendor>
 							["groups"] = {
 								i(11023),	-- Ancona Chicken
@@ -144,6 +150,19 @@ _.Zones =
 							},
 							["coord"] = { 50.8, 46.0 },
 							["races"] = ALLIANCE_ONLY,
+						}),
+						n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
+							["coord"] = { 76.8, 11.2, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168029, {	-- Recipe: Synchronous Thread
+									["sourceQuests"] = {
+										53881,	-- Cut from the Same Cloth (Alliance)
+										53962,	-- Cut from the Same Cloth (Horde)
+									},
+									["description"] = "This recipe is for relearning the Synchronous Thread after you already did the tools of trade questline."
+								}),
+							},
 						}),
 						{	-- Dodger
 							["npcID"] = 148024,	-- Dodger
@@ -176,6 +195,24 @@ _.Zones =
 								},
 							},
 						},
+						n(136041, {	-- Emily Fairweather <Enchanting Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168024),	-- Recipe: Iwen's Enchanting Rod
+							},
+						}),
+						n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(166422),	-- Recipe: Silas' Sphere of Transmutation
+							},
+						}),
+						n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168022),	-- Recipe: Khaz'gorian Smithing Hammer
+							},
+						}),
 						{	-- Layla Evenkeel
 							["npcID"] = 136059,	-- Layla Evenkeel
 							["coords"] = {
@@ -707,6 +744,12 @@ _.Zones =
 								},
 							},
 						},
+						n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(168027),	-- Recipe: Jewelhammer's Focus
+							},
+						}),
 						n(142691, {	-- Tricky Nick
 							["groups"] = {
 								i(163568),	-- Lost Platysaur [So Cute!]

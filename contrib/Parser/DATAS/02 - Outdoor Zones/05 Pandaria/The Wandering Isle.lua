@@ -18,8 +18,8 @@ _.Zones =
 						["qg"] = 55940,	-- Jojo Ironbrow
 						["sourceQuests"] = { 29665, 29794, 29797 },	-- From Bad to Worse, None Left Behind, Medical Supplies
 					}),
-					{	-- An Ancient Evil [H]
-						["questID"] = 10593,	-- An Ancient Evil [H]
+					{	-- An Ancient Evil [Horde]
+						["questID"] = 10593,	-- An Ancient Evil [Horde]
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["groups"] = {

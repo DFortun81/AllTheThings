@@ -22,7 +22,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(1, {	-- Normal
 				cr(75964, e(965, {	-- Ranjit
 					i(110030),	-- Chakram-Breaker Greatsword
-					i(109979),	-- Blackwater Helm								
+					i(109979),	-- Blackwater Helm
 					i(109976),	-- Bloodfeather Cowl
 					i(109977),	-- Crystalbinder Helm
 					i(109974),	-- Felflame Hood
@@ -229,17 +229,17 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				["lvl"] = 100,
 				["groups"] = {
-					n(-17, {	-- Quests 			
+					n(-17, {	-- Quests
 						q(37159, {
 							i(119093), --Aviana's Feather
-						}),	
-					}),	
+						}),
+					}),
 					cr(75964, e(965, {	-- Ranjit
 						{	-- Ready for Raiding IV
 							["achievementID"] = 9033,	-- Ready for Raiding IV
 						},
 						i(110030),	-- Chakram-Breaker Greatsword
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood
@@ -458,7 +458,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["groups"] = {
 					cr(75964, e(965, {	-- Ranjit
 						i(110030),	-- Chakram-Breaker Greatsword
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood
@@ -676,7 +676,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["groups"] = {
 					cr(75964, e(965, {	-- Ranjit
 						i(110030),	-- Chakram-Breaker Greatsword
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood

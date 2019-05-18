@@ -25,6 +25,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 					{	-- The End of the Exarch
 						["questID"] = 29596,	-- The End of the Exarch
+						["sourceQuests"] = {
+							29595,	-- Everything Will Be Alright
+						},
 						["qg"] = 54725,			-- Draenei Spirit
 						["g"] = {
 							{	-- Auchenai Anchorite's Robe

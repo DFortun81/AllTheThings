@@ -709,6 +709,10 @@ _.Craftables =
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
+			filter(113, {	-- Bags
+				i(29540),	-- Reinforced Mining Bag
+				un(7, i(34099)),	-- Knothide Ammo Pouch
+			}),	
 			n(-322, { 	-- Cloak
 				i(33122),	-- Cloak of Darkness
 			}),

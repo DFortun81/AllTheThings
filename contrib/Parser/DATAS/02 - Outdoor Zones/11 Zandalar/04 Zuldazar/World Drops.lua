@@ -115,7 +115,7 @@ _.Zones =
 							i(160142),	-- Ravascale Legguards
 							i(160140),	-- Ravascale Striders
 							i(160122),	-- Direbone Frill Helmet
-							i(160124),	-- Direbone Frill Pauldrons	
+							i(160124),	-- Direbone Frill Pauldrons
 							i(160119),	-- Direbone Frill Chestplate
 							i(160126),	-- Direbone Frill Bracers
 							i(160120),	-- Direbone Frill Gauntlets

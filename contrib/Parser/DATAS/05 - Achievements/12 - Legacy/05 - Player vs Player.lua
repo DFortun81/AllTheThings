@@ -2,14 +2,6 @@
 --   A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
---[[
-8.0 Pre-Patch alignment complete
-To do: 
-1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
-2) Add [Reward] tag
-3) Source to local files if applicable
-]]--
-
 _.Achievements = 
 {
 	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
@@ -25,24 +17,55 @@ _.Achievements =
 					un(2, h(ach(449, {		-- Blood Guard
 						un(39, h(title(21))),	-- Blood Guard
 					}))),
-					un(2, a(ach(9104, {	-- Bounty Hunter (Alliance) - The criteria are item drops that can be turned in for PvP gear boxes
-							crit(1),			-- Pandaren Hide 
-							crit(2),			-- Blood Elf Ear
-							crit(3),			-- Tauren Hoof
-							crit(4),			-- Orc Tooth
-							crit(5),			-- Troll Feet
-							crit(6),			-- Forsaken Brains
-							crit(7),			-- Goblin Nose
-					}))),
-					un(2, h(ach(9103, {	-- Bounty Hunter (Horde) - The criteria are item drops that can be turned in for PvP gear boxes
-							crit(1),			-- Pandaren Hide 
-							crit(2),			-- Worgen Snout
-							crit(3),			-- Severed Night Elf Head
-							crit(4),			-- Dwarf Spine
-							crit(5),			-- Tuft of Gnome Hair
-							crit(6),			-- Human Bone Chip
-							crit(7),			-- Draenei Tail
-					}))),
+					{	-- Bounty Hunter
+						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+						["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+						["g"] = {
+							{	-- Pandaren Hide
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 1,					-- Pandaren Hide
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Blood Elf Ear // Worgen Snout
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 2,					-- Blood Elf Ear // Worgen Snout 
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Tauren Hoof // Severed Night Elf Head
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 3,					-- Tauren Hoof // Severed Night Elf Head
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Orc Tooth // Dwarf Spine
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 4,					-- Orc Tooth // Dwarf Spine
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Troll Feet // Tuft of Gnome Hair
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 5,					-- Troll Feet // Tuft of Gnome Hair
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Forsaken Brains // Human Bone Chip
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 6,					-- Forsaken Brains // Human Bone Chip
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+							{	-- Goblin Nose // Draenei Tail
+								["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
+								["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
+								["criteriaID"] = 7,					-- Goblin Nose // Draenei Tail
+								["u"] = 2,							-- Removed in Patch 8.0 with Ashran Removal
+							},
+						},
+					},
 					un(2, ach(12180)),		-- Catching Twenty-Two
 					un(2, h(ach(448, {		-- Centurion
 						un(39, h(title(23))),	-- Centurion
@@ -101,8 +124,8 @@ _.Achievements =
 					un(2, ach(11688)),		-- Floor Thirteen
 					un(2, ach(10995)),		-- For Prestige
 					un(2, ach(11689)),		-- Fourteen for the Team
-					un(2, a(ach(701))),	-- Freedom of the Alliance
-					un(2, h(ach(700))),	-- Freedom of the Horde
+					un(2, a(ach(701))),		-- Freedom of the Alliance
+					un(2, h(ach(700))),		-- Freedom of the Horde
 					un(2, h(ach(446, {		-- General
 						un(39, h(title(26))),	-- General
 					}))),
@@ -140,7 +163,7 @@ _.Achievements =
 							crit(8),			-- Oraggro
 							crit(9),			-- Goregore
 					})),
-					un(2, h(ach(617))),	-- Immortal No More
+					un(2, h(ach(617))),		-- Immortal No More
 					un(2, ach(9106)),		-- Just for Me
 					un(2, a(ach(439, {		-- Knight
 						un(39, a(title(6))),	-- Knight
@@ -188,7 +211,7 @@ _.Achievements =
 					un(2, h(ach(2192))),	-- Not Even a Scratch (Horde)
 					un(2, a(ach(9408))),	-- Operation Counterattack (Alliance)
 					un(2, h(ach(9217))),	-- Operation Counterattack (Horde)
-					un(2, a(ach(610))),	-- Orgrimmar Offensive
+					un(2, a(ach(610))),		-- Orgrimmar Offensive
 					un(2, ach(12183)),		-- Prestige Quartermaster
 					un(2, a(ach(8642))),	-- Prideful Combatant (Alliance)
 					un(2, h(ach(8641))),	-- Prideful Combatant (Horde)
@@ -226,7 +249,7 @@ _.Achievements =
 					un(2, ach(1309, {		-- Strand of the Ancients Veteran
 							un(2, ach(1308)),	-- Strand of the Ancients Victory
 					})),
-					un(2, a(ach(9225, {	-- Take Them Out
+					un(2, a(ach(9225, {		-- Take Them Out
 							crit(1),			-- Captain Hoodrych
 							crit(2),			-- Elementalist Novo
 							crit(3),			-- Elliott Van Rook
@@ -241,7 +264,7 @@ _.Achievements =
 							crit(12),			-- Rifthunter Yoske
 							crit(13),			-- Vanguard Samuelle
 					}))),
-					un(2, h(ach(9224, {	-- Take Them Out
+					un(2, h(ach(9224, {		-- Take Them Out
 							crit(1),			-- Alune Windmane
 							crit(2),			-- Anne Otther
 							crit(3),			-- Avenger Turley
@@ -264,8 +287,11 @@ _.Achievements =
 					un(2, ach(10993)),		-- Third Time's The Charm
 					un(2, a(ach(9714))),	-- Thy Kingdom Come (Alliance)
 					un(2, h(ach(9715))),	-- Thy Kingdom Come (Horde)
-					un(2, a(ach(10988))),	-- Top Honors (Alliance) - removed completely in 8.0 pre-patch
-					un(2, h(ach(10990))),	-- Top Honors (Horde) - removed completely in 8.0 pre-patch
+					{	-- Top Honors
+						["allianceAchievementID"] = 10988,	-- Top Honors [Alliance]
+						["hordeAchievementID"] = 10990,		-- Top Honors [Horde]
+						["u"] = 2,							-- Removed in Patch 8.0
+					},
 					un(2, ach(9105, {		-- Tour of Duty
 							crit(1),			-- Molten Quarry
 							crit(2),			-- Brute's Rise
@@ -275,21 +301,30 @@ _.Achievements =
 					un(2, ach(12109)),		-- Twenty-One Arms Salute
 					un(2, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 					un(2, h(ach(8093))),	-- Tyrannical Conquest (Horde)
-					un(2, h(ach(9473, {	-- Vol'jin's Spear
+					un(2, h(ach(9473, {		-- Vol'jin's Spear
 						un(39, h(title(285))),	-- ,Spear of Vol'jin
 						un(2, faction(1681)), 	-- Vol'jin's Spear
 					}))),
 					un(2, h(ach(445, {		-- Warlord
 						un(39, h(title(27))),	-- Warlord
 					}))),
-					un(2, a(ach(10091))),	-- Warmongering Conquest (Alliance)
-					un(2, h(ach(10090))),	-- Warmongering Conquest (Horde)
+					{	-- Warmongering Conquest
+						["allianceAchievementID"] = 10091,	-- Warmongering Conquest [Alliance]
+						["hordeAchievementID"] = 10090,		-- Warmongering Conquest [Horde]
+						["u"] = 2,							-- Removed in Patch 7.0
+					},
 					un(2, ach(11690)),		-- When You're Fifteen
-					un(2, a(ach(10093))),	-- Wild Combatant (Alliance)
-					un(2, h(ach(10092))),	-- Wild Combatant (Horde)
-					un(2, a(ach(10089))),	-- Wild Conquest (Alliance)
-					un(2, h(ach(10088))),	-- Wild Conquest (Horde)
-					un(2, a(ach(9474, {	-- Wrynn's Vanguard
+					{	-- Wild Combatant
+						["allianceAchievementID"] = 10093,	-- Wild Combatant [Alliance]
+						["hordeAchievementID"] = 10092,		-- Wild Combatant [Horde]
+						["u"] = 2,							-- Removed in Patch 6.2.2
+					},
+					{	-- Wild Conquest
+						["allianceAchievementID"] = 10089,	-- Wild Conquest [Alliance]
+						["hordeAchievementID"] = 10088,		-- Wild Conquest [Horde]
+						["u"] = 2,							-- Removed in Patch 6.2.2
+					},
+					un(2, a(ach(9474, {		-- Wrynn's Vanguard
 						un(39, a(title(286))),	-- ,Sword of Wrynn
 						un(2, faction(1682)),	-- Wyrnn's Vanguard
 					}))),

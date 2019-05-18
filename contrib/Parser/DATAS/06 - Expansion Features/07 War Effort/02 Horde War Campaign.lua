@@ -2,8 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
--- TODO Once War Fronts launch figure out specifically what gear is awarded from the box.  So far we've had rotating on Beta as new sets come in.
-
 _.ExpansionFeatures =
 {
 	{	-- War Effort
@@ -39,6 +37,68 @@ _.ExpansionFeatures =
 						},
 					},
 				},
+				--[[ We need to add all quests for this file at some point and make the achieve criteria.
+					 For right now (5/6/2019) just adding the quests that have known rewards so that the items
+					 are not unsorted anymore. --]]
+				n(-17, {	-- Quests
+					{	-- Champion: Hobart Grapplehammer
+						["questID"] = 51987,
+						["qg"] = 137613,	-- Hobart Grapplehammer
+						["sourceQuest"] = 51234,	-- Krazzlefrazz Outpost
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							follower(1068),	-- Hobart Grapplehammer
+						},
+					},
+					{	-- Champion: Lilian Voss
+						["questID"] = 52861,
+						["qg"] = 141961,	-- Lilian Voss
+						["sourceQuest"] = 53003,	-- A Cycle of Hatred
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							follower(1062),	-- Lilian Voss
+						},
+					},
+					{	-- Champion: Rexxar
+						["questID"] = 51753,
+						["qg"] = 138876,	-- Rexxar
+						["sourceQuest"] = 51696,	-- Reclaiming What's Ours
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							follower(1069),	-- Rexxar
+						},
+					},
+					{	-- Champion: Shadow Hunter Ty'jin
+						["questID"] = 51975,
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["sourceQuest"] = 51438,	-- Marking Our Territory
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							follower(1072),	-- Shadow Hunter Ty'jin
+						},
+					},
+					{	-- Mission from the Warchief
+						["questID"] = 51770,
+						["qg"] = 135691,	-- Nathanos Blightcaller
+						["sourceQuest"] = 53333,	-- Time for War
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							follower(1065),	-- Arcanist Valtrois
+						},
+					},
+					{	-- Return to Zuldazar (Tiragarde foothold)
+						["questID"] = 51984,
+						["qg"] = 137742,	-- Shadow Hunter Ty'jin
+						["sourceQuest"] = 51975,	-- Champion: Shadow Hunter Ty'jin
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(163675),	-- Honorbound Centurion's Breastplate
+							i(163674),	-- Honorbound Centurion's Helmet
+							i(163673),	-- Honorbound Centurion's Pauldrons
+							-- TODO: Add non-plate rewards
+						},
+					},
+				}),
 			}),
 		},
 	},

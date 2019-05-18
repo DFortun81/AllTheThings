@@ -595,3 +595,6 @@ t(165791);	-- Worn Cloak
 t(168012);	-- Apexis Focusing Shard
 t(168014);	-- Banner of the Burning Blade
 t(168123);  -- Twitching Eyeball
+t(165802);	-- Noble Gardener's Hearthstone
+t(166746);	-- Fire Eater's Hearthstone
+t(166747);	-- Brewfest Reveler's Hearthstone

@@ -29,3 +29,6 @@ contrib/Source Code/Parser/.vs/
 .vs/
 obj/
 **/desktop.ini
+
+# Backup files
+*.bak

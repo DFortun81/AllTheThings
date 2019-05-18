@@ -15,6 +15,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 			413,
 			414,
 		},
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 61.9, 27.2, 75 },	-- actual raid entrance
+		},
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
 				["classes"] = { 4 },	-- Rogue
@@ -500,7 +504,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						},
 					},
-					n(  0, {	-- Zone Drop
+					n(0, {	-- Zone Drop
 						["crs"] = {
 							57333,	-- Acidic Globule
 							57160,	-- Ancient Water Lord

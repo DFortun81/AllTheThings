@@ -165,10 +165,10 @@ _.Craftables =
 				},
 			}),
 			n(-323, {		-- Chest
-				{	-- Breastplate of the White Knight [A]
+				{	-- Breastplate of the White Knight [Alliance]
 					["itemID"] = 47591,	-- Breastplate of the White Knight
 				},
-				{	-- Breastplate of the White Knight [H]
+				{	-- Breastplate of the White Knight [Horde]
 					["itemID"] = 47592,	-- Breastplate of the White Knight
 				},
 				{	-- Brilliant Saronite Breastplate
@@ -196,19 +196,19 @@ _.Craftables =
 				{	-- Spiked Cobalt Chestpiece
 					["itemID"] = 40951,	-- Spiked Cobalt Chestpiece
 				},
-				{	-- Sunforged Breastplate [A]
+				{	-- Sunforged Breastplate [Alliance]
 					["itemID"] = 47593,	-- Sunforged Breastplate
 				},
-				{	-- Sunforged Breastplate [H]
+				{	-- Sunforged Breastplate [Horde]
 					["itemID"] = 47594,	-- Sunforged Breastplate
 				},
 				{	--	 Tempered Saronite Breastplate
 					["itemID"] = 40672,	-- Tempered Saronite Breastplate
 				},
-				{	-- Titanium Razorplate [A]
+				{	-- Titanium Razorplate [Alliance]
 					["itemID"] = 47589,	-- Titanium Razorplate
 				},
-				{	-- Titanium Razorplate [H]
+				{	-- Titanium Razorplate [Horde]
 					["itemID"] = 47590,	-- Titanium Razorplate
 				},
 			}),
@@ -248,10 +248,10 @@ _.Craftables =
 				{	-- Ornate Saronite Bracers
 					["itemID"] = 42723,	-- Ornate Saronite Bracers
 				},
-				{	-- Saronite Swordbreakers [A]
+				{	-- Saronite Swordbreakers [Alliance]
 					["itemID"] = 47570,	-- Saronite Swordbreakers
 				},
-				{	-- Saronite Swordbreakers [H]
+				{	-- Saronite Swordbreakers [Horde]
 					["itemID"] = 47571,	-- Saronite Swordbreakers
 				},
 				{	-- Savage Saronite Bracers
@@ -260,19 +260,19 @@ _.Craftables =
 				{	-- Spiked Cobalt Bracers
 					["itemID"] = 40954,	-- Spiked Cobalt Bracers
 				},
-				{	-- Sunforged Bracers [A]
+				{	-- Sunforged Bracers [Alliance]
 					["itemID"] = 47574,	-- Sunforged Bracers
 				},
-				{	-- Sunforged Bracers [H]
+				{	-- Sunforged Bracers [Horde]
 					["itemID"] = 47575,	-- Sunforged Bracers
 				},
 				{	-- Tempered Saronite Bracers
 					["itemID"] = 41116,	-- Tempered Saronite Bracers
 				},
-				{	-- Titanium Spikeguards [A]
+				{	-- Titanium Spikeguards [Alliance]
 					["itemID"] = 47572,	-- Titanium Spikeguards
 				},
-				{	-- Titanium Spikeguards [H]
+				{	-- Titanium Spikeguards [Horde]
 					["itemID"] = 47573,	-- Titanium Spikeguards
 				},
 				{	-- Vengeance Bindings

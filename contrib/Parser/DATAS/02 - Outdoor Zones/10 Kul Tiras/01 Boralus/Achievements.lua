@@ -9,7 +9,7 @@ _.Zones =
 			["groups"] = {
 				n(-4, {		-- Achievements
 					["groups"] = {
-						ach(12891, {	-- A Nation United [A]
+						ach(12891, {	-- A Nation United [Alliance]
 							["groups"] = {
 								crit(3),	-- A Nation United
 								crit(1),	-- Kul Tourist
@@ -17,7 +17,7 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12740, {	-- Full of Scrap! [500 Items] [A]
+						ach(12740, {	-- Full of Scrap! [500 Items] [Alliance]
 							["groups"] = {
 								ach(12741),	-- Giving a Scrap [1 Item - Alliance]
 								ach(12738),	-- Holy Scrap! [100 Items]
@@ -25,7 +25,7 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 						}),
-						ach(12593, {	-- Kul Tourist [A]
+						ach(12593, {	-- Kul Tourist [Alliance]
 							["groups"] = {
 								crit(1),	-- A Sound Plan
 								crit(2),	-- Drust Do It.

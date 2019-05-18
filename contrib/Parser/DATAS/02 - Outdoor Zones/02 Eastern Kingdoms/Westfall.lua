@@ -39,17 +39,6 @@ _.Zones =
 					qa(31780, {	-- Old MacDonald
 						["isDaily"] = true,
 					}),
-					ach(11856, {	-- Pet Battle Challenge: Wailing Caverns
-						i(151632),	-- Mining Monkey
-						n(119390, {	-- Marcus "Bagman" Brown
-							["groups"] = {
-								i(150742),	-- Pet Reaper 0.9
-								i(150741),	-- Tricorne
-								i(150739),	-- Pocket Cannon
-							},
-							["description"] = "Must have completed the Wailing Caverns Pet Battle Dungeon quest Wailing Critters and the breadcrumb quest Deadmines, Part Three?."
-						}),
-					}),
 				}),
 				n(-38, {	-- Professions
 						prof(356, {	-- Fishing
@@ -106,7 +95,7 @@ _.Zones =
 					qg(, qa(26230)),	-- Feast or Famine
 					qg(, qa(26271)),	-- Feeding the Hungry and the Hopeless
 					qg(, qa(26289)),	-- Find Agent Kearnen
-					qg(, qa(  184)),	-- Furlbrow's Deed
+					qg(, qa(184)),	-- Furlbrow's Deed
 					qg(, qh(27848)),	-- Good Intentions...Poor Execution
 					qg(, qa(26252)),	-- Heart of the Watcher
 --]]
@@ -632,7 +621,7 @@ _.Zones =
 								un(7, i(1189)),	-- Overseer's Ring
 							})),
 						}),
-						--n(  0, {	-- Zone Drop (Legacy)
+						--n(0, {	-- Zone Drop (Legacy)
 						--}),
 					},
 				}),

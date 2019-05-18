@@ -10,7 +10,7 @@ _.Zones =
 			["groups"] = {
 				n(-2, {  -- Vendors
 					["groups"] = {
-						{	-- "Black Eye" Zenru [H]
+						{	-- "Black Eye" Zenru [Horde]
 							["npcID"] = 132153,		-- "Black Eye" Zenru
 							["coords"] = {
 								{ 53.77, 85.97, 1165 }
@@ -111,7 +111,7 @@ _.Zones =
 											["questID"] = 54859,
 											["description"] = "Cost: 25 Seafarer's Dubloons",
 										},
-										{	-- Golden Beetle [H]
+										{	-- Golden Beetle [Horde]
 											["itemID"] = 163619,	-- Golden Beetle
 											--["questID"] = 53114,	-- Golden Beetle
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -119,7 +119,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = HORDE_ONLY,
 										},
-										{	-- Island Flotsam [H]
+										{	-- Island Flotsam [Horde]
 											["itemID"] = 163620,	-- Island Flotsam
 											--["questID"] = 53115,	-- Island Flotsam
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -127,7 +127,7 @@ _.Zones =
 											["description"] = "Cost: 100 Seafarer's Dubloons",
 											["races"] = HORDE_ONLY,
 										},
-										{	-- Shimmering Shell [H]
+										{	-- Shimmering Shell [Horde]
 											["itemID"] = 163618,	-- Shimmering Shell
 											--["questID"] = 53113,	-- Shimminering Shell
 											--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
@@ -144,6 +144,12 @@ _.Zones =
 								},
 							},
 						},
+						n(122703, {	-- Clever Kumali <Alchemist Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(166422),	-- Recipe: Silas' Sphere of Transmutation
+							},
+						}),
 						{	-- Elly Fraze <Toys and Curiosities> [AH]
 							["npcID"] = 138033, 	-- Elly Fraze <Toys and Curiosities>
 							["coords"] = {
@@ -159,7 +165,19 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Granda Watae [H]
+						n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168024),	-- Recipe: Iwen's Enchanting Rod
+							},
+						}),
+						n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168022),	-- Recipe: Khaz'gorian Smithing Hammer
+							},
+						}),
+						{	-- Granda Watae [Horde]
 							["npcID"] = 132130,		-- Granda Watae
 							["coords"] = {
 								{ 42.16, 35.78, 1165 }
@@ -177,7 +195,7 @@ _.Zones =
 								},
 							},
 						},
-						n(132114, {	-- Griftah <Amazing Amulets> [H]
+						n(132114, {	-- Griftah <Amazing Amulets> [Horde]
 							["groups"] = {
 								i(156659, {	-- Counterfeit Rastakhan Mask
 									["groups"] = {
@@ -317,6 +335,19 @@ _.Zones =
 								},
 							},
 						},
+						n(122700, {	-- Pin'jin the Patient <Tailoring Trainer>
+							["coord"] = { 44.5, 33.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168029, {	-- Recipe: Synchronous Thread
+									["sourceQuests"] = {
+										53881,	-- Cut from the Same Cloth (Alliance)
+										53962,	-- Cut from the Same Cloth (Horde)
+									},
+									["description"] = "This recipe is for relearning the Synchronous Thread after you already did the tools of trade questline."
+								}),
+							},
+						}),
 						n(122463, {	-- Plen <Unusual and Remarkable Wares>
 							["coords"] = {
 								{ 47.73, 91.64, 1165 },
@@ -392,7 +423,7 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Rakle the Wretched [H]
+						{	-- Rakle the Wretched [Horde]
 							["npcID"] = 126330,		-- Rakle the Wretched
 							["coords"] = {
 								{ 34.77, 11.58, 1165 }
@@ -521,6 +552,18 @@ _.Zones =
 							},
 							["races"] = HORDE_ONLY,
 						}),
+						n(122695, {	-- Seshuli <Jewelcrafting Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168027),	-- Recipe: Jewelhammer's Focus
+							},
+						}),
+						n(131840, {	-- Shuga Blastcaps <Engineering Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168025),	-- Book of Schematics: Ub3r-Spanner
+							},
+						}),
 						n(125879, {	-- Talutu
 							["coords"] = {
 								{ 48.58, 87.09, 1165 },
@@ -552,7 +595,7 @@ _.Zones =
 								},
 							},
 						},
-						{	-- Trader Nog [H]
+						{	-- Trader Nog [Horde]
 							["npcID"] = 125311,		-- Trader Nog
 							["coords"] = {
 								{ 57.15, 91.47, 1165 }
@@ -588,6 +631,12 @@ _.Zones =
 								},
 							},
 						},
+						n(122698, {	-- Xanjo <Leatherworking Trainer>
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(168028),	-- Recipe: Mallet of Thunderous Skins
+							},
+						}),
 					},
 				}),
 			},

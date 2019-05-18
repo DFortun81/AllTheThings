@@ -8,7 +8,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
 		["mapID"] = 329,
-		["coord"] = { 35.51, 15.62, 75 },	-- The Battle For Mount Hyjal, Caverns of Time [Tanaris]
+		["coords"] = {
+			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 36.0, 16.1, 75 },	-- actual raid entrance
+		},
 		["groups"] = {
 			n(-2, {	-- Vendors
 				n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
@@ -269,7 +272,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32307),	-- Design: Veiled Shadowsong Amethyst
 				},
 			}),
-			n( 0, {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				["crs"] = {
 					17898,	-- Abomination
 					17905,	-- Banshee

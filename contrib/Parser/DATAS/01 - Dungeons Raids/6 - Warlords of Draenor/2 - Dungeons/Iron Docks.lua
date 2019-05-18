@@ -71,7 +71,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 					i(110056),	-- Black Iron Sniper Rifle
-					i(109979),	-- Blackwater Helm								
+					i(109979),	-- Blackwater Helm
 					i(109976),	-- Bloodfeather Cowl
 					i(109977),	-- Crystalbinder Helm
 					i(109974),	-- Felflame Hood
@@ -229,11 +229,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				["lvl"] = 100,
 				["groups"] = {
-					n(-17, {	-- Quests 		
+					n(-17, {	-- Quests
 						q(37157, {
 							i(119092),	-- Moroes' Famous Polish
-						}),	
-					}),	
+						}),
+					}),
 					cr(81305, e(1235, {	-- Fleshrender Nok'gar
 						{	-- Militaristic, Expansionist
 							["achievementID"] = 9083,	-- Militaristic, Expansionist
@@ -291,7 +291,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 					cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 						i(110056),	-- Black Iron Sniper Rifle
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood
@@ -504,7 +504,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 					cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 						i(110056),	-- Black Iron Sniper Rifle
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood
@@ -714,7 +714,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 					cr(80816, e(1236, {	-- Grimrail Enforcers (Ahri'ok Dugru)
 						i(110056),	-- Black Iron Sniper Rifle
-						i(109979),	-- Blackwater Helm								
+						i(109979),	-- Blackwater Helm
 						i(109976),	-- Bloodfeather Cowl
 						i(109977),	-- Crystalbinder Helm
 						i(109974),	-- Felflame Hood

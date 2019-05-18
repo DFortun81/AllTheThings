@@ -36,8 +36,10 @@ _.Achievements =
 					un(3, ach(9618, {		-- The Iron Invasion
 						un(3, title(289)),		-- of the Iron Vanguard
 					})),
-					un(3, a(ach(7467))),	-- Theramore's Fall (Alliance)
-					un(3, h(ach(7468))),	-- Theramore's Fall (Horde)
+					{	-- Theramore's Fall
+						["allianceAchievementID"] = 7467,	-- Theramore's Fall [Alliance]
+						["hordeAchievementID"] = 7468,		-- Theramore's Fall [Horde]
+					},
 					un(3, ach(7852)),		-- They're Both Footballs?
 					un(3, ach(4887)),		-- Tripping the Rifts
 					un(3, ach(2456)),		-- Vampire Hunter

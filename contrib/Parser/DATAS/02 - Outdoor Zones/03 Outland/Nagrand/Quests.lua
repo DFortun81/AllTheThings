@@ -877,29 +877,6 @@ _.Zones =
 									["coord"] = { 27.4, 42.0, 107 },
 									["sourceQuest"] = 10001,	-- The Master Planner
 								}),
-								o(182393, {	--	Telaar Bulletin Board
-									["groups"] = {
-										qa(9936, {	-- WANTED: Giselda the Crone
-											["coord"] = { 54.7, 70.8, 107 },
-										}),
-										qa(9940, {	-- WANTED: Zorbo the Advisor
-											["coord"] = { 54.7, 70.8, 107 },
-										}),
-									},
-								}),
-								qh(9938, {	-- WANTED: Durn the Hungerer
-									["qg"] = 18407,	-- Warden Moi'bff Jill
-									["coord"] = { 54,8, 70.8, 107 },
-									["sourceQuests"] = {
-										9936,	-- WANTED: Giselda the Crone
-										9940,	-- WANTED: Zorbo the Advisor
-									},
-									["groups"] = {
-										i(25774),	-- Azure Lightblade
-										i(25772),	-- Crystalline Kopesh
-										i(25773),	-- Hungering Bone Cudgel
-									},
-								}),
 								q(10009, {	-- Crackin' Some Skulls
 									["qg"] = 18584,	-- Sal'salabim
 									["coord"] = { 77.2, 34.8, 111 },

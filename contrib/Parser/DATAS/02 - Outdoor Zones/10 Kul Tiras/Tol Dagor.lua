@@ -8,11 +8,11 @@ _.Zones =
 		m(1169, {	-- -- Tol Dagor
 			["groups"] = {
 				n(-228, {	-- Flight Paths
-					fp(2096, {	-- Tol Dagor, Tiragarde Sound [A]
+					fp(2096, {	-- Tol Dagor, Tiragarde Sound [Alliance]
 						["description"] = "Tol Dagor, Tiragarde Sound",
 						["coord"] = { 37.8, 92.4 },
 					}),
-					fp(2276, {	-- Tol Dagor, Tiragarde Sound [H]
+					fp(2276, {	-- Tol Dagor, Tiragarde Sound [Horde]
 						["description"] = "Tol Dagor, Tiragarde Sound",
 						["coord"] = { 23.4, 48.2 },
 					}),

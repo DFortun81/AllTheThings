@@ -504,8 +504,8 @@ _.Zones =
 							}),
 						}),
 						n(-494, {	-- Miscellaneous
-							qh(  9442),	-- A Debilitating Sickness
-							qa(  9355, {	-- A Job for an Intelligent Man
+							qh(9442),	-- A Debilitating Sickness
+							qa(9355, {	-- A Job for an Intelligent Man
 								i(25785),	-- Adept's Band
 								i(25784),	-- Imbued Chain
 							}),
@@ -515,74 +515,93 @@ _.Zones =
 								i(25782),	-- Sunstrider Legguards
 							}),
 							q(10367),	-- A Traitor Among Us
-							qa( 29689),	-- Advancing the Campaign
-							qh( 29688),	-- Advancing the Campaign
-							qa(  9383),	-- An Ambitious Plan
-							qa( 10058),	-- An Old Gift
-							qh( 10449),	-- Apothecary Zelana
-							qh(  9374),	-- Arelion's Journal
-							qh(  9472, {	-- Arelion's Mistress
+							qa(29689),	-- Advancing the Campaign
+							qh(29688),	-- Advancing the Campaign
+							qa(9383),	-- An Ambitious Plan
+							qa(10058),	-- An Old Gift
+							qh(10449),	-- Apothecary Zelana
+							qh(9374),	-- Arelion's Journal
+							qh(9472, {	-- Arelion's Mistress
 								i(25505),	-- Carinda's Wedding Band
 							}),
-							qh( 10286),	-- Arelion's Secret
-							qh( 10120),	-- Arrival in Outland
-							qa( 10288),	-- Arrival in Outland
+							qh(10286),	-- Arelion's Secret
+							qh(10120),	-- Arrival in Outland
+							qa(10288),	-- Arrival in Outland
 							q(10369),	-- Arzeth's Demise
-							qa(  9543),	-- Atonement
-							q(9418,  {  -- Avruu's Orb
-								i(25488),	-- Signet of Aeranas
-								i(25487),	-- Wind Dancer's Pendant
-								i(25489),	-- Windtalker's Cloak
-							}),
+							qa(9543),	-- Atonement
+							{	-- Avruu's Orb
+								["questID"] = 9418,	-- Avruu's Orb
+								["itemID"] = 23580,	-- Avruu's Orb
+								["qgs"] = {
+									17084,	-- Avruu
+								},
+								["coords"] = {
+									{ 25.57, 76.45, 100 },
+									{ 25.57, 76.33, 100 },
+									{ 25.53, 75.92, 100 },
+									{ 25.64, 75.25, 100 },
+								},
+								["g"] = {
+									{	-- Windtalker's Cloak
+										["itemID"] = 25489,	-- Windtalker's Cloak
+									},
+									{	-- Wind Dancer's Pendant
+										["itemID"] = 25487,	-- Wind Dancer's Pendant
+									},
+									{	-- Signet of Aeranas
+										["itemID"] = 25488,	-- Signet of Aeranas
+									},
+								},
+							},
 							un(40, q(45415)),	-- Between Worlds
-							qh(  9397),	-- Birds of a Feather
+							qh(9397),	-- Birds of a Feather
 							q(11516),	-- Blast the Gateway
 							q(11515),	-- Blood for Blood
-							un(40, qa( 47025)),	-- Blood: Aid of the Illidari
-							qh( 10250),	-- Bloody Vengeance
-							un(40, qa( 47024)),	-- Brewmaster: Aid of the Illidari
-							qh( 10391),	-- Cannons of Rage
+							un(40, qa(47025)),	-- Blood: Aid of the Illidari
+							qh(10250),	-- Bloody Vengeance
+							un(40, qa(47024)),	-- Brewmaster: Aid of the Illidari
+							qh(10391),	-- Cannons of Rage
 							qa(9427, {  -- Cleansing the Waters
 								i(25485),	-- Amaan's Signet
 								i(25486), 	-- Demonslayer's Wristguards
 								i(25484),	-- Telhamat Pendant
 							}),
 							un(40, q(45414)),	-- Confirming Suspicions
-							qa(  9399),	-- Cruel Taskmasters
-							qh( 10136, {	-- Cruel's Intentions
+							qa(9399),	-- Cruel Taskmasters
+							qh(10136, {	-- Cruel's Intentions
 								i(28041),	-- Bladefist's Breadth
 								i(28042),	-- Regal Protectorate
 								i(28040),	-- Vengeance of the Illidari
 							}),
-							qa( 10484),	-- Cursed Talismans
-							qa(  9398),	-- Deadly Predators
-							qh( 10229),	-- Decipher the Tome
-							qa( 10916),	-- Digging for Prayer Beads
-							qa( 10394),	-- Disruption - Forge Camp: Mageddon
-							qh( 10392),	-- Doorway to the Abyss
+							qa(10484),	-- Cursed Talismans
+							qa(9398),	-- Deadly Predators
+							qh(10229),	-- Decipher the Tome
+							qa(10916),	-- Digging for Prayer Beads
+							qa(10394),	-- Disruption - Forge Camp: Mageddon
+							qh(10392),	-- Doorway to the Abyss
 							qa(10937,  {  -- Drill the Drillmaster
 								i(31720),	-- Battlemaster's Breastplate
 								i(31718),	-- Darkstorm Tunic
 								i(31717),	-- Shadowcast Tunic
 								i(31719),	-- Stormstrike Vest
 							}),
---							qa( 10763),	-- Dumphry's Request (removed, old BT key questline)
-							qa( 10396),	-- Enemy of my Enemy...
-							qa( 10754),	-- Entry Into the Citadel
-							qa( 10143),	-- Expedition Point
-							qa( 10919),	-- Fei Fei's Treat
-							qa( 10909),	-- Fel Spirits
-							qa( 10254),	-- Force Commander Danath
-							qh( 10390),	-- Forge Camp: Mageddon
+--							qa(10763),	-- Dumphry's Request (removed, old BT key questline)
+							qa(10396),	-- Enemy of my Enemy...
+							qa(10754),	-- Entry Into the Citadel
+							qa(10143),	-- Expedition Point
+							qa(10919),	-- Fei Fei's Treat
+							qa(10909),	-- Fel Spirits
+							qa(10254),	-- Force Commander Danath
+							qh(10390),	-- Forge Camp: Mageddon
 							qh(10295,  {  -- From the Abyss
 								i(29400),	-- Abyssal Shroud
 								i(29398),	-- Circle of Banishing
 								i(29399),	-- Rod of the Void Caller
 							}),
-							qa(  9563),	-- Gaining Mirren's Trust
+							qa(9563),	-- Gaining Mirren's Trust
 							un(40, q(45413)),	-- Gathering Information
-							qa( 10382),	-- Go to the Front
---							qa( 10762),	-- Grand Master Dumphry (removed, old BT key questline)
+							qa(10382),	-- Go to the Front
+--							qa(10762),	-- Grand Master Dumphry (removed, old BT key questline)
 							qh(10834,  {  -- Grillok "Darkeye"
 								i(28057),	-- Bonechewer Berserker's Vest
 								i(28055),	-- Gilded Crimson Chestplate
@@ -590,46 +609,46 @@ _.Zones =
 								i(28051),	-- Jerkin of the Untamed Spirit
 								i(28050),	-- Sacred Feather Vest
 							}),
-							un(40, qa( 47023)),	-- Guardian: Aid of the Illidari
+							un(40, qa(47023)),	-- Guardian: Aid of the Illidari
 							q(9361),	-- Helboar, the Other White Meat
-							qa( 10106),	-- Hellfire Fortifications
-							qa( 13410),	-- Hellfire Fortifications
-							qa( 13408, {	-- Hellfire Fortifications
+							qa(10106),	-- Hellfire Fortifications
+							qa(13410),	-- Hellfire Fortifications
+							qa(13408, {	-- Hellfire Fortifications
 								i(40476),	-- Insignia of the Alliance
 							}),
-							qa( 10443),	-- Helping the Cenarion Post
+							qa(10443),	-- Helping the Cenarion Post
 							qh(10258,  {  -- Honor the Fallen
 								i(29108),	-- Blade of the Unyielding
 								i(29109),	-- Rod of the Unyielding
 							}),
-							un(21, qa( 11818)),	-- Honor the Flame
-							un(21, qh( 11851)),	-- Honor the Flame
---							qa( 10764),	-- Hotter than Hell (removed, old BT key questline)
+							un(21, qa(11818)),	-- Honor the Flame
+							un(21, qh(11851)),	-- Honor the Flame
+--							qa(10764),	-- Hotter than Hell (removed, old BT key questline)
 							q(10161,  {  -- In Case of Emergency...
 								i(25980),	-- Aerodynamic Scaled Vest
 								i(25981),	-- Dirigible Crash Helmet
 								i(25979),	-- Flintlocke's Piloting Pants
 							}),
-							qh(  9366),	-- In Need of Felblood
-							qa(  9390),	-- In Search of Sedai
-							qa( 11964),	-- Incense for the Summer Scorchlings
-							qh( 29542),	-- Invading the Citadel
-							qa( 29543),	-- Invading the Citadel
-							qa( 10397),	-- Invasion Point: Annihilator
-							qh( 10213),	-- Investigate the Crash
+							qh(9366),	-- In Need of Felblood
+							qa(9390),	-- In Search of Sedai
+							qa(11964),	-- Incense for the Summer Scorchlings
+							qh(29542),	-- Invading the Citadel
+							qa(29543),	-- Invading the Citadel
+							qa(10397),	-- Invasion Point: Annihilator
+							qh(10213),	-- Investigate the Crash
 							qa(10078,  {  -- Laying Waste to the Unwanted
 								i(29934),	-- Helm of Affinity
 								i(29930),	-- Nature-Stitched Kilt
 								i(29941),	-- Scale Brand Breastplate
 								i(29928),	-- Wanderer's Stitched Trousers
 							}),
-							qh(  9483),	-- Life's Finer Pleasures
-							qa( 10057, {	-- Looking to the Leadership
+							qh(9483),	-- Life's Finer Pleasures
+							qa(10057, {	-- Looking to the Leadership
 								i(25989),	-- Draenethyst Chaplet
 								i(25992),	-- Enforcer's Chain
 								i(25993),	-- Finely Wrought Chain
 							}),
-							qh(  9396),	-- Magic of the Arakkoa
+							qh(9396),	-- Magic of the Arakkoa
 							qa(9424,  {  -- Makuru's Vengeance
 								i(25920),	-- Sedai's Blade
 								i(25919),	-- Sedai's Necklace
@@ -651,24 +670,24 @@ _.Zones =
 							q(31922, {	-- Nicki Tinytech
 								["isDaily"] = true,
 							}),
-							qa( 10400, {	-- Overlord
+							qa(10400, {	-- Overlord
 								i(28041),	-- Bladefist's Breadth
 								i(28042),	-- Regal Protectorate
 								i(28040),	-- Vengeance of the Illidari
 							}),
-							un(40, qa( 45412)),	-- Protection: Aid of the Illidari
-							un(40, qa( 47022)),	-- Protection: Aid of the Illidari
-							qa(  9385),	-- Rampaging Ravagers
+							un(40, qa(45412)),	-- Protection: Aid of the Illidari
+							un(40, qa(47022)),	-- Protection: Aid of the Illidari
+							qa(9385),	-- Rampaging Ravagers
 							q(9349),	-- Ravager Egg Roundup
-							qh( 10291),	-- Report to Nazgrel
-							qh( 10103),	-- Report to Zurai
-							qa( 10903),	-- Return to Honor Hold
-							qa(  9423),	-- Return to Obadei
-							qa( 10346),	-- Return to the Abyssal Shelf
-							qh( 10347),	-- Return to the Abyssal Shelf
-							qa(  9430),	-- Sha'naar Relics
-							qh( 14065),	-- Sharing a Bountiful Feast
-							qa( 10340),	-- Shatter Point
+							qh(10291),	-- Report to Nazgrel
+							qh(10103),	-- Report to Zurai
+							qa(10903),	-- Return to Honor Hold
+							qa(9423),	-- Return to Obadei
+							qa(10346),	-- Return to the Abyssal Shelf
+							qh(10347),	-- Return to the Abyssal Shelf
+							qa(9430),	-- Sha'naar Relics
+							qh(14065),	-- Sharing a Bountiful Feast
+							qa(10340),	-- Shatter Point
 							q(9356, {	-- Smooth as Butter
 								i(27684),	-- Recipe: Buzzard Bites
 							}),
@@ -677,20 +696,20 @@ _.Zones =
 								i(25915),	-- Fallen Vindicator's Blade
 								i(25913),	-- Ring of the Slain Anchorite
 							}),
-							qh( 10242),	-- Spinebreaker Post
-							qh( 10389),	-- The Agony and the Darkness
-							qa(  9417),	-- The Arakkoa Threat
-							qh( 10230),	-- The Battle Horn
+							qh(10242),	-- Spinebreaker Post
+							qh(10389),	-- The Agony and the Darkness
+							qa(9417),	-- The Arakkoa Threat
+							qh(10230),	-- The Battle Horn
 							q(9912),	-- The Cenarion Expedition
 							qh(9370,  {  -- The Cleansing Must Be Stopped
 								i(25499),	-- Felblood Band
 								i(25500),	-- Felforce Medallion
 								i(25501),	-- Lost Anchorite's Cloak
 							}),
-							qa( 10395),	-- The Dark Missive
+							qa(10395),	-- The Dark Missive
 							q(10368),	-- The Dreghood Elders
-							qa( 10935),	-- The Exorcism of Colonel Jules
-							qh( 10813),	-- The Eyes of Grillok
+							qa(10935),	-- The Exorcism of Colonel Jules
+							qh(10813),	-- The Eyes of Grillok
 							qh(11003, {	-- The Fall of Magtheridon
 								i(28792),	-- A'dal's Signet of Defense
 								i(28793),	-- Band of Crimson Fury
@@ -706,16 +725,16 @@ _.Zones =
 							qa(9420,  {  -- The Finest Down
 								i(23587),	-- Mirren's Drinking Hat
 							}),
-							qh(  9340),	-- The Great Fissure
-							qa( 10399),	-- The Heart of Darkness
-							qa(  9558),	-- The Longbeards
+							qh(9340),	-- The Great Fissure
+							qa(10399),	-- The Heart of Darkness
+							qa(9558),	-- The Longbeards
 							qa(10099,  {  -- The Mastermind
 								i(25982),	-- Foreman's Sash
 								i(25983),	-- Heavy Miner's Belt
 								i(25984),	-- Miner's Brace
 							}),
 							q(11526),	-- The Missing Magistrix
-							qh( 10287),	-- The Mistress Revealed
+							qh(10287),	-- The Mistress Revealed
 							qa(10142,  {  -- The Path of Anguish
 								i(29911),	-- Agamaggan's Quill
 								i(29913),	-- Foe Reaver
@@ -723,9 +742,9 @@ _.Zones =
 								i(29909),	-- Screaming Dagger
 								i(29910),	-- The Staff of Twin Worlds
 							}),
-							qa( 10047),	-- The Path of Glory
-							qa(  9426),	-- The Pools of Aggonar
-							qh(  9375),	-- The Road to Falcon Watch
+							qa(10047),	-- The Path of Glory
+							qa(9426),	-- The Pools of Aggonar
+							qh(9375),	-- The Road to Falcon Watch
 							qa(9490,  {  -- The Rock Flayer Matriarch
 								i(25479),	-- Boots of the Earthcaller
 								i(25478),	-- Defender's Gauntlets
@@ -736,15 +755,15 @@ _.Zones =
 								i(25508),	-- Omenai Vest
 								i(25506),	-- Vindicator's Chain Helm
 							}),
-							qa( 10093),	-- The Temple of Telhamat
-							qa( 10119),	-- Through the Dark Portal
-							qh(  9407),	-- Through the Dark Portal
-							qa( 10936),	-- Trollbane is Looking for You
-							qh(  9381),	-- Trueflight Arrows
-							qa( 10050),	-- Unyielding Souls
-							un(40, qa( 46314)),	-- Vengeance: Seeking Kor'vas
-							qh( 10393),	-- Vile Plans
-							qh( 10294),	-- Void Ridge
+							qa(10093),	-- The Temple of Telhamat
+							qa(10119),	-- Through the Dark Portal
+							qh(9407),	-- Through the Dark Portal
+							qa(10936),	-- Trollbane is Looking for You
+							qh(9381),	-- Trueflight Arrows
+							qa(10050),	-- Unyielding Souls
+							un(40, qa(46314)),	-- Vengeance: Seeking Kor'vas
+							qh(10393),	-- Vile Plans
+							qh(10294),	-- Void Ridge
 							q(9351, {	-- Voidwalkers Gone Wild
 								i(25787),	-- Charm of Alacrity
 								i(25786),	-- Hypnotist's Watch
@@ -754,10 +773,10 @@ _.Zones =
 								i(25482),	-- Venn'ren's Boots
 								i(25481),	-- Sunstrider's Gauntlets
 							}),
-							qa( 10485),	-- Warlord of the Bleeding Hollow
+							qa(10485),	-- Warlord of the Bleeding Hollow
 							q(9724),	-- Warning the Cenarion Circle
-							qa( 10079),	-- When This Mine's a-Rockin'
-							qa( 10344),	-- Wing Commander Gryphongar
+							qa(10079),	-- When This Mine's a-Rockin'
+							qa(10344),	-- Wing Commander Gryphongar
 							qa(10895, {	-- Zeth'Gor Must Burn!
 								i(28057),	-- Bonechewer Berserker's Vest
 								i(28055),	-- Gilded Crimson Chestplate

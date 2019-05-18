@@ -298,6 +298,10 @@ _.Instances = { tier(7, {	-- Legion
 							},
 							["groups"] = {
 								i(152816),	-- Antoran Charhound (MOUNT!)
+								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
+								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
+								i(151732),	-- Design: Empyrial Elemental Crown (Rank 3)
+								i(151735),	-- Design: Empyrial Titan Crown (Rank 3)
 								i(152000),	-- Shadowfused Chain Coif
 								i(152004),	-- Pauldrons of the Soulburner
 								i(151949),	-- Soul-Siphon Mantle
@@ -1871,7 +1875,8 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 					i(152789),	-- Shackled Ur'zul (MOUNT! MYTHIC ONLY)
-					i(155880),	-- Scythe of the Unmaker (not in DJ)
+					i(155880),	-- Scythe of the Unmaker [RED] (not in DJ)
+					i(153115),	-- Scythe of the Unmaker [BLUE] (not in DJ)
 					i(152423),	-- Helm of the Awakened Soul
 					i(152005),	-- Pauldrons of Colossal Burden
 					i(152679),	-- Gambeson of Sargeras' Corruption

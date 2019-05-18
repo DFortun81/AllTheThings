@@ -27,13 +27,13 @@ _.Anniversary =
 								["itemID"] = 162636,	-- Celebration Package
 								["u"] = 31,				-- WoW Anniversary Filter
 							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [H]
+							{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
 								["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
 								["questID"] = 47251,	-- Interesting Things
 								["races"] = HORDE_ONLY,
 								["u"] = 31,				-- WoW Anniversary Filter
 							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [A]
+							{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
 								["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
 								["questID"] = 47252,	-- Interesting Things
 								["races"] = ALLIANCE_ONLY,
@@ -46,7 +46,7 @@ _.Anniversary =
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
 				["g"] = {
-					{	-- A Time to Reflect [H]
+					{	-- A Time to Reflect [Horde]
 						["questID"] = 43461,	-- A Time to Reflect
 						["qg"] = 110035,		-- Historian Jupa
 						["isDaily"] = true,
@@ -58,7 +58,7 @@ _.Anniversary =
 						--Note!! See Master List of quiz answers at the end in a better format
 						--Was going to list it in description, but too many and terrible looking
 					},
-					{	-- A Time to Reflect [A]
+					{	-- A Time to Reflect [Alliance]
 						["questID"] = 43323,	-- A Time to Reflect
 						["qg"] = 110034,		-- Historian Llore
 						["isDaily"] = true,
@@ -68,7 +68,7 @@ _.Anniversary =
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 31,				-- WoW Anniversary Filter
 					},
-					{	-- The Originals [H]
+					{	-- The Originals [Horde]
 						["questID"] = 47254,	-- The Originals
 						["qg"] = 110035,		-- Historian Jupa
 						["isDaily"] = true,
@@ -84,7 +84,7 @@ _.Anniversary =
 						["races"] = HORDE_ONLY,
 						["u"] = 31,				-- WoW Anniversary Filter
 					},
-					{	-- The Originals [A]
+					{	-- The Originals [Alliance]
 						["questID"] = 47253,	-- The Originals
 						["qg"] = 110034,		-- Historian Llore
 						["isDaily"] = true,
@@ -105,7 +105,7 @@ _.Anniversary =
 			{	-- Vendors
 				["npcID"] = -2,		-- Vendors
 				["g"] = {
-					{	-- Historian Jupa [H]
+					{	-- Historian Jupa [Horde]
 						["npcID"] = 110035,		-- Historian Jupa
 						["races"] = HORDE_ONLY,
 						["currencyID"] = 1166,	-- Timewarped Badge
@@ -119,7 +119,7 @@ _.Anniversary =
 							},
 						},
 					},
-					{	-- Historian Llore [A]
+					{	-- Historian Llore [Alliance]
 						["npcID"] = 110034,		-- Historian Llore
 						["races"] = ALLIANCE_ONLY,
 						["currencyID"] = 1166,	-- Timewarped Badge

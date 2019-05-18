@@ -20,12 +20,12 @@ _.Zones =
 										39198,	-- Warchief's Command: Blade's Edge Mountains!
 										9795,	-- The Ogre Threat
 									},
-								}),	
+								}),
 								qh(10487, {	-- Dust from the Drakes
 									["qg"] = 21117,	-- Gor'drek
 									["coord"] = { 52.4, 57.9, 105 },
 									["sourceQuest"] = 10486,	-- The Encroaching Wilderness
-								}),	
+								}),
 								qh(10488, {	-- Protecting Our Own
 									["qg"] = 21117,	-- Gor'drek
 									["coord"] = { 52.4, 57.9, 105 },
@@ -119,12 +119,12 @@ _.Zones =
 										39199,	-- Hero's Call: Blade's Edge Mountains!
 										9794,	-- No Time for Curiosity
 									},
-								}),	
+								}),
 								qa(10456, {	-- Marauding Wolves
 									["qg"] = 21066,	-- Rina Moonspring
 									["coord"] = { 36.2, 67.2, 105 },
 									["sourceQuest"] = 10455,	-- The Encroaching Wilderness
-								}),	
+								}),
 								qa(10457, {	-- Protecting Our Own
 									["qg"] = 21066,	-- Rina Moonspring
 									["coord"] = { 36.2, 67.2, 105 },
@@ -202,7 +202,7 @@ _.Zones =
 								}),
 								o(184825, {	-- Lashh'an Tome
 									qa(10556, {	-- Scratches
-										["coords"] = { 
+										["coords"] = {
 											{ 34.3, 77.4, 105 },
 											{ 35.4, 79.0, 105 },
 										},
@@ -380,14 +380,14 @@ _.Zones =
 								}),
 								qa(10632, {	-- Cutting Your Teeth
 									["qg"] = 21118,	-- Razak Ironsides
-									["coords"] = { 
+									["coords"] = {
 										{ 60.0, 69.3, 105 },
 										{ 59.8, 68.3, 105 },
 										{ 60.0, 67.8, 105 },
 									},
 									["groups"] = {
 										i(31447),	-- Vibro Dagger
-										i(157549),	-- Vibro Knuckles 
+										i(157549),	-- Vibro Knuckles
 										i(31446),	-- Vibro Shanker
 										i(31448),	-- Vibro Sword
 									},
@@ -627,7 +627,7 @@ _.Zones =
 								q(10998, {	-- Grim(oire) Business
 									["qg"] = 22941,	-- Mog'dorg the Wizened
 									["coord"] = { 55.5, 44.8, 105 },
-									["sourceQuests"] = { 
+									["sourceQuests"] = {
 										10997,	-- Even Gronn Have Standards
 										10995,	-- Grulloc Has Two Skulls
 										10996,	-- Maggoc's Treasure Chest
@@ -698,7 +698,7 @@ _.Zones =
 										11010,	-- Bombing Run
 										11065,	-- Wrangle Some Aether Rays!
 									},
-								}),	
+								}),
 							}),
 							crit(5, {	-- Ruuan Weald
 								q(10567, {	-- Creating the Pendant
@@ -753,7 +753,7 @@ _.Zones =
 									q(10719, {	-- Did You Get The Note?
 										["sourceQuest"] = 10682,	-- A Time for Negotiation...
 										["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item."
-									}),	
+									}),
 								}),
 								q(10747, {	-- Whelps of the Wyrmcult
 									["qg"] = 21983,	-- Samia Inkling
@@ -851,7 +851,7 @@ _.Zones =
 										i(31691),	-- Natasha's Guardian Cord
 										i(31694),	-- Natasha's Pack Collar
 									},
-								}),	
+								}),
 							}),
 						}),
 						n(-168, {   	-- Other Quests
@@ -907,10 +907,12 @@ _.Zones =
 							qh(11047, {	-- The Apprentice's Request
 								["qg"] = 23280,	-- Agadai
 								["coord"] = { 52.0, 54.4, 107 },
+								["isBreadcrumb"] = true,
 							}),
 							qa(11043, {	-- Building a Better Gryphon
 								["qg"] = 21107,	-- Rip Pedalslam
 								["coord"] = { 61.2, 70.4, 105 },
+								["isBreadcrumb"] = true,
 							}),
 							qh(11036, {	-- Out of This World Produce!
 								["qg"] = 19471,	-- Old Orok
@@ -934,12 +936,12 @@ _.Zones =
 										["coord"] = { 52.8, 15.0, 105 },
 										["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
 										["repeatable"] = true,
-									}),	
+									}),
 									q(10976, {	-- The Mark of the Nexus-King
 										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
 										["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
-									}),	
+									}),
 									q(10977, {	-- Stasis Chambers of the Mana-Tombs
 										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
@@ -947,13 +949,13 @@ _.Zones =
 										["groups"] = {
 											i(32064),	-- Protectorate Treasure Cache
 										},
-									}),	
+									}),
 									q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
 										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
 										["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 										["repeatable"] = true,
-									}),	
+									}),
 									q(10982, {	-- The Eye of Haramad
 										["qg"] = 22919,	-- Image of Commander Ameer
 										["coord"] = { 52.8, 15.0, 105 },
@@ -966,7 +968,7 @@ _.Zones =
 								},
 								["collectible"] = false,
 							}),
-						}),						
+						}),
 					}),
 				},
 			},

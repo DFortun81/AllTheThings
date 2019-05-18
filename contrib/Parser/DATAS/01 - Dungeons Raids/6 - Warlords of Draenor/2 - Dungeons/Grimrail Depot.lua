@@ -19,11 +19,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			d(1, {		-- Normal
-				n(-17, {	-- Quests 						
+				n(-17, {	-- Quests
 					q(37151, {
 						i(118918),  -- Bloody Bandanna
-					}),	
-				}),	
+					}),
+				}),
 				cr(77803, e(1138, {	-- Railmaster Rocketspark
 					i(110051),	-- Overseer's Final Word
 					i(109829),	-- Belt of Burning Focus
@@ -94,7 +94,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(109950),	-- Stormshot Choker
 					i(109960),	-- Wavesurge Choker
 					i(109953),	-- Windseal Necklace
-					i(109898),	-- Blackwater Wrap								
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard
@@ -186,10 +186,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(2, {		-- Heroic
-				n(-17, {	-- Quests 			
+				n(-17, {	-- Quests
 					q(37160, {
 						i(118937),  -- Gamon's Braid Toy
-					}),		
+					}),
 				}),
 				cr(77803, e(1138, {	-- Railmaster Rocketspark
 					{	-- This Is Why We Can't Have Nice Things
@@ -247,7 +247,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["achievementID"] = 9007,	-- No Ticket
 					},
 					i(110052),	-- Scepter of Brutality
-					i(109898),	-- Blackwater Wrap								
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard
@@ -410,7 +410,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(79545, e(1163, {	-- Nitrogg Thundertower
 					i(110052),	-- Scepter of Brutality
-					i(109898),	-- Blackwater Wrap								
+					i(109898),	-- Blackwater Wrap
 					i(109885),	-- Bloodfeather Chestwrap
 					i(109884),	-- Chestguard of Burning Focus
 					i(109886),	-- Crystalbinder Chestguard

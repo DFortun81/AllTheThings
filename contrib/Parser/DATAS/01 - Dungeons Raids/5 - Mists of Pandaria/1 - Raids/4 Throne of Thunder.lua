@@ -31,7 +31,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95959),	-- Spiderweb Tabi
 					},
 				}),
-				i(95343, {	-- Treasures of the Thunder
+				un(2, i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 					["groups"] = {
 						i(94295),	-- Primal Egg
@@ -54,7 +54,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95978),	-- Locksmasher Greaves
 						i(95968),	-- Vaultwalker Sabatons
 					},
-				}),
+				})),
 				qg(67990, qh(32589, {	-- Life Blood / Lor'themar Theron <Regent Lord of Quel'Thalas>
 					i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
 				})),
@@ -438,7 +438,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95712),	-- Inscribed Bag of Hydra-Spawn
 								},
 							})),
-							n( 68220, {			-- Gastropod
+							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 								["groups"] = {	
 									i(98136)	-- Gastropod Shell
@@ -1064,7 +1064,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					})),
-					n( 68220, {			-- Gastropod
+					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["groups"] = {	
 							i(98136)	-- Gastropod Shell
@@ -1801,7 +1801,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							}),
 						},
 					})),
-					n( 68220, {			-- Gastropod
+					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 						["groups"] = {	
 							i(98136),	-- Gastropod Shell

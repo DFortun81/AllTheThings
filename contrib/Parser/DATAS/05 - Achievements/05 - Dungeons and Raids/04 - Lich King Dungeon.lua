@@ -17,9 +17,9 @@ _.Achievements =
 					{	-- Amber Void
 						["achievementID"] = 2046,	-- Amber Void
 					},
-					{	-- Argent Confessor
+					{ 	-- Argent Confessor
 						["achievementID"] = 3802, 	-- Argent Confessor
-						["groups"] = {
+						["g"] = {
 							{	-- Algalon
 								["criteriaID"] = 25,	-- Algalon
 								["creatureID"] = 35052,	-- Memory of Algalon
@@ -49,7 +49,7 @@ _.Achievements =
 								["creatureID"] = 35039,	-- Memory of Gruul
 							},
 							{	-- Hakkar
-								["criteriaID"] = 8,	-- Hakkar
+								["criteriaID"] = 8,		-- Hakkar
 								["creatureID"] = 35034,	-- Memory of Hakkar
 							},
 							{	-- Heigan
@@ -57,11 +57,11 @@ _.Achievements =
 								["creatureID"] = 35049,	-- Memory of Heigan
 							},
 							{	-- Herod
-								["criteriaID"] = 4,	-- Herod
+								["criteriaID"] = 4,		-- Herod
 								["creatureID"] = 35030,	-- Memory of Herod
 							},
 							{	-- Hogger
-								["criteriaID"] = 1,	-- Hogger
+								["criteriaID"] = 1,		-- Hogger
 								["creatureID"] = 34942,	-- Memory of Hogger
 							},
 							{	-- Illidan
@@ -81,7 +81,7 @@ _.Achievements =
 								["creatureID"] = 35037,	-- Memory of Kalithresh
 							},
 							{	-- Lucifron
-								["criteriaID"] = 5,	-- Lucifron
+								["criteriaID"] = 5,		-- Lucifron
 								["creatureID"] = 35031,	-- Memory of Lucifron
 							},
 							{	-- M'uru (Entropius)
@@ -93,7 +93,7 @@ _.Achievements =
 								["creatureID"] = 35038,	-- Memory of Malchezaar
 							},
 							{	-- Mutanus
-								["criteriaID"] = 3,	-- Mutanus
+								["criteriaID"] = 3,		-- Mutanus
 								["creatureID"] = 35029,	-- Memory of Mutanus
 							},
 							{	-- Onyxia
@@ -101,11 +101,11 @@ _.Achievements =
 								["creatureID"] = 35048,	-- Memory of Onyxia
 							},
 							{	-- Thunderaan
-								["criteriaID"] = 6,	-- Thunderaan
+								["criteriaID"] = 6,		-- Thunderaan
 								["creatureID"] = 35032,	-- Memory of Thunderaan
 							},
 							{	-- VanCleef
-								["criteriaID"] = 2,	-- VanCleef
+								["criteriaID"] = 2,		-- VanCleef
 								["creatureID"] = 35028,	-- Memory of VanCleef
 							},
 							{	-- Vashj
@@ -113,7 +113,7 @@ _.Achievements =
 								["creatureID"] = 35040,	-- Memory of Vashj
 							},
 							{	-- Vek'nilash
-								["criteriaID"] = 9,	-- Vek'nilash
+								["criteriaID"] = 9,		-- Vek'nilash
 								["creatureID"] = 35036,	-- Memory of Vek'nilash
 							},
 							{	-- Vezax
@@ -655,155 +655,53 @@ _.Achievements =
 							},
 						},
 					},
-					{	-- Heroic: Trial of the Champion [A]
-						["achievementID"] = 4298, 	-- Heroic: Trial of the Champion
-						["races"] = ALLIANCE_ONLY,
+					{	-- Heroic: Trial of the Champion
+						["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+						["hordeAchievementID"] = 4297, 	 	-- Heroic: Trial of the Champion [Horde]
 						["groups"] = {
 							{	-- Argent Confessor Paletress
-								["criteriaID"] = 6,	-- Argent Confessor Paletress
-								["creatureID"] = 34928,	-- Argent Confessor Paletress
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 		-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 6,					-- Argent Confessor Paletress
 							},
-							{	-- Deathstalker Visceri
-								["criteriaID"] = 2,	-- Deathstalker Visceri
-								["creatureID"] = 35617,	-- Deathstalker Visceri
-							},
-							{	-- Eadric the Pure
-								["criteriaID"] = 7,	-- Eadric the Pure
-								["creatureID"] = 35119,	-- Eadric the Pure
-							},
-							{	-- Eressea Dawnsinger
-								["criteriaID"] = 4,	-- Eressea Dawnsinger
-								["creatureID"] = 35569,	-- Eressea Dawnsinger
-							},
-							{	-- Mokra the Skullcrusher
-								["criteriaID"] = 1,	-- Mokra the Skullcrusher
-								["creatureID"] = 35572,	-- Mokra the Skullcrusher
-							},
-							{	-- Runok Wildmane
-								["criteriaID"] = 3,	-- Runok Wildmane
-								["creatureID"] = 35571,	-- Runok Wildmane
-							},
-							{	-- The Black Knight
-								["criteriaID"] = 8,	-- The Black Knight
-								["creatureID"] = 35451,	-- The Black Knight
-							},
-							{	-- Zul'tore
-								["criteriaID"] = 5,	-- Zul'tore
-								["creatureID"] = 35570,	-- Zul'tore
-							},
-							{	-- Trial of the Champion [A]
-								["achievementID"] = 4296, 	-- Trial of the Champion
-								["races"] = ALLIANCE_ONLY,
-								["groups"] = {
-									{	-- Argent Confessor Paletress
-										["criteriaID"] = 6,	-- Argent Confessor Paletress
-										["creatureID"] = 34928,	-- Argent Confessor Paletress
-									},
-									{	-- Deathstalker Visceri
-										["criteriaID"] = 2,	-- Deathstalker Visceri
-										["creatureID"] = 35617,	-- Deathstalker Visceri
-									},
-									{	-- Eadric the Pure
-										["criteriaID"] = 7,	-- Eadric the Pure
-										["creatureID"] = 35119,	-- Eadric the Pure
-									},
-									{	-- Eressea Dawnsinger
-										["criteriaID"] = 4,	-- Eressea Dawnsinger
-										["creatureID"] = 35569,	-- Eressea Dawnsinger
-									},
-									{	-- Mokra the Skullcrusher
-										["criteriaID"] = 1,	-- Mokra the Skullcrusher
-										["creatureID"] = 35572,	-- Mokra the Skullcrusher
-									},
-									{	-- Runok Wildmane
-										["criteriaID"] = 3,	-- Runok Wildmane
-										["creatureID"] = 35571,	-- Runok Wildmane
-									},
-									{	-- The Black Knight
-										["criteriaID"] = 8,	-- The Black Knight
-										["creatureID"] = 35451,	-- The Black Knight
-									},
-									{	-- Zul'tore
-										["criteriaID"] = 5,	-- Zul'tore
-										["creatureID"] = 35570,	-- Zul'tore
-									},
-								},
-							},
-						},
-					},
-					{	-- Heroic: Trial of the Champion [H]
-						["achievementID"] = 4297, 	-- Heroic: Trial of the Champion
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							{	-- Ambrose Boltspark
-								["criteriaID"] = 4,	-- Ambrose Boltspark
-								["creatureID"] = 34702,	-- Ambrose Boltspark
-							},
-							{	-- Argent Confessor Paletress
-								["criteriaID"] = 6,	-- Argent Confessor Paletress
-								["creatureID"] = 34928,	-- Argent Confessor Paletress
-							},
-							{	-- Colosos
-								["criteriaID"] = 3,	-- Colosos
-								["creatureID"] = 34701,	-- Colosos
+							{	-- Deathstalker Visceri [Alliance] // Lana Stouthammer [Horde]
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 		-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 2,					-- Deathstalker Visceri [Alliance] // Lana Stouthammer [Horde]
 							},
 							{	-- Eadric the Pure
-								["criteriaID"] = 7,	-- Eadric the Pure
-								["creatureID"] = 35119,	-- Eadric the Pure
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 		-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 7,					-- Eadric the Pure
 							},
-							{	-- Jaelyne Evensong
-								["criteriaID"] = 5,	-- Jaelyne Evensong
-								["creatureID"] = 34657,	-- Jaelyne Evensong
+							{	-- Eressea Dawnsinger [Alliance] // Ambrose Boltspark [Horde]
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 		-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 4,					-- Eressea Dawnsinger [Alliance] // Ambrose Boltspark [Horde]
 							},
-							{	-- Lana Stouthammer
-								["criteriaID"] = 2,	-- Lana Stouthammer
-								["creatureID"] = 34703,	-- Lana Stouthammer
+							{	-- Mokra the Skullcrusher [Alliance] //  Marshal Jacob Alerius [Horde]
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 		-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 1,					-- Mokra the Skullcrusher [Alliance] //  Marshal Jacob Alerius [Horde]
 							},
-							{	-- Marshal Jacob Alerius
-								["criteriaID"] = 1,	-- Marshal Jacob Alerius
-								["creatureID"] = 34705,	-- Marshal Jacob Alerius
+							{	-- Runok Wildmane [Alliance] // Colosos [Horde]
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 	-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 3,	-- Runok Wildmane [Alliance] // Colosos [Horde]
 							},
 							{	-- The Black Knight
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 	-- Heroic: Trial of the Champion [Horde]
 								["criteriaID"] = 8,	-- The Black Knight
-								["creatureID"] = 35451,	-- The Black Knight
 							},
-							{	-- Trial of the Champion [H]
-								["achievementID"] = 3778, 	-- Trial of the Champion
-								["races"] = HORDE_ONLY,
-								["groups"] = {
-									{	-- Ambrose Boltspark
-										["criteriaID"] = 4,	-- Ambrose Boltspark
-										["creatureID"] = 34702,	-- Ambrose Boltspark
-									},
-									{	-- Argent Confessor Paletress
-										["criteriaID"] = 6,	-- Argent Confessor Paletress
-										["creatureID"] = 34928,	-- Argent Confessor Paletress
-									},
-									{	-- Colosos
-										["criteriaID"] = 3,	-- Colosos
-										["creatureID"] = 34701,	-- Colosos
-									},
-									{	-- Eadric the Pure
-										["criteriaID"] = 7,	-- Eadric the Pure
-										["creatureID"] = 35119,	-- Eadric the Pure
-									},
-									{	-- Jaelyne Evensong
-										["criteriaID"] = 5,	-- Jaelyne Evensong
-										["creatureID"] = 34657,	-- Jaelyne Evensong
-									},
-									{	-- Lana Stouthammer
-										["criteriaID"] = 2,	-- Lana Stouthammer
-										["creatureID"] = 34703,	-- Lana Stouthammer
-									},
-									{	-- Marshal Jacob Alerius
-										["criteriaID"] = 1,	-- Marshal Jacob Alerius
-										["creatureID"] = 34705,	-- Marshal Jacob Alerius
-									},
-									{	-- The Black Knight
-										["criteriaID"] = 8,	-- The Black Knight
-										["creatureID"] = 35451,	-- The Black Knight
-									},
-								},
+							{	-- Zul'tore [Alliance] // Jaelyne Evensong [Horde]
+								["allianceAchievementID"] = 4298, 	-- Heroic: Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 4297, 	-- Heroic: Trial of the Champion [Horde]
+								["criteriaID"] = 5,	-- Zul'tore [Alliance] // Jaelyne Evensong [Horde]
+							},
+							{	-- Trial of the Champion
+								["allianceAchievementID"] = 4296, 	-- Trial of the Champion [Alliance]
+								["hordeAchievementID"] = 3778, 		-- Trial of the Champion [Horde]
 							},
 						},
 					},

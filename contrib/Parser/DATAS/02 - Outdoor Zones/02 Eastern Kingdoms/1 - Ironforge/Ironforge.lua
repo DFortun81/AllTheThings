@@ -67,11 +67,12 @@ _.Zones =
 				}),
 				n(-17, {	-- Quests
 					q(1618, {	-- Gearing Redridge
+						["qg"] = 6031,	-- Tormus Deepforge
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 164,	-- Blacksmithing
 						["g"] = {
 							i(6735),	-- Plans: Ironforge Breastplate
 						},
-						["qg"] = 6031,	-- Tormus Deepforge
-						["races"] = ALLIANCE_ONLY,
 					}),
 					qa(4512, {	-- A Little Slime Goes a Long Way
 						["qg"] = 9616,	-- Laris Geardawdle
@@ -86,10 +87,7 @@ _.Zones =
 						["coord"] = { 75.7, 23.3, 87 },
 						["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
 					}),
-					qg(16817, qa( 9365, {	-- A Thief's Reward
-						i(23323),	-- Crown of the Fire Festival (reportedly transmoggable since 6.2.1)
-					})),
-					qa( 6625, {	-- Alliance Trauma
+					qa(6625, {	-- Alliance Trauma
 						["qg"] = 5150,	-- Nissa Firestone
 						["isBreadcrumb"] = true,	-- for Triage
 						["requireSkill"] = 129,	-- First Aid
@@ -142,16 +140,16 @@ _.Zones =
 						["classes"] = {7},	-- Shaman
 					})),
 					qg(6294, qa(38394)),	-- Completionism
-					qg(15119, qa( 8229)),	-- Could I get a Fishing Flier?
+					qg(15119, qa(8229)),	-- Could I get a Fishing Flier?
 					qg(41853, qa(26112)),	-- Demanding Answers
 					qg(5173, qa(27272, {	-- Demisette Sends Word
 						["classes"] = {9},	-- Warlock
 					})),
-					qg(6569, qa( 2039)),	-- Find Bingles
-					qg(6031, qa( 1618)),	-- Gearing Redridge
+					qg(6569, qa(2039)),	-- Find Bingles
+					qg(6031, qa(1618)),	-- Gearing Redridge
 					qg(5174, q 29477, { ["requireSkill"] = 202 })),    -- Gnomish Engineering
                     qg(5174, q 29475, { ["requireSkill"] = 202 })),    -- Goblin Engineering
-					qg(4256, qa( 6388, {	-- Gryth Thurden
+					qg(4256, qa(6388, {	-- Gryth Thurden
 						["races"] = {3,7},	-- Dwarf, Gnome
 					})),
 					o(207320, {	-- Hero's Call Board
@@ -177,8 +175,8 @@ _.Zones =
 						qa(28565),	-- Hero's Call: Wetlands!
 						qa(29156),	-- The Troll Incursion
 					}),
-					qg(5161, qa( 6609, { ["requireSkill"] = 129 })),    -- I Got Nothin' Left!
-					qg(5159, qa( 6612)),	-- I Know A Guy...
+					qg(5161, qa(6609, { ["requireSkill"] = 129 })),    -- I Got Nothin' Left!
+					qg(5159, qa(6612)),	-- I Know A Guy...
 					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
 						["classes"] = {8},	-- Mage
 					})),
@@ -188,19 +186,28 @@ _.Zones =
 					qg(5165, qa(27267, {	-- Make Contact with SI:7
 						["classes"] = {4},	-- Rogue
 					})),
-					qg(11406, qa(27268, {	-- Make Haste to the Cathedral
-						["classes"] = {5},	-- Priest
-					})),
+--]]
+					qa(27268, {	-- Make Haste to the Cathedral
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 25.0, 8.20, 87 },
+						["qg"] = 11406,	-- High Priest Rohan
+					}),
+--[[
 					qg(5173, qa(28259, {	-- Meet with Demisette Cloyce
 						["classes"] = {9},	-- Warlock
 					})),
 					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
 						["classes"] = {7},	-- Shaman
 					})),
-					qg(11406, qa(28285, {	-- Meet with High Priestess Laurena
-						["classes"] = {5},	-- Priest
-					})),
-					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
+--]]
+					qa(28285, {	-- Meet with High Priestess Laurena
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coord"] = { 25.0, 8.20, 87 },
+						["qg"] = 11406,	-- High Priest Rohan
+					}),
+--[[					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
 						["classes"] = {2},	-- Paladin
 					})),
 					qg(5165, qa(28262, {	-- Meet with Lord Tony Romano
@@ -213,21 +220,21 @@ _.Zones =
 						["classes"] = {3},	-- Hunter
 					})),
 					qg(6294, qa(38345)),	-- Numismatics
-					qa( 2963),	-- Portents of Uldum (LEGACY)
-					qg(1356, qa(  302)),	-- Powder to Ironband
-					qg(5637, qa( 1453)),	-- Reclaimers' Business in Desolace
+					qa(2963),	-- Portents of Uldum (LEGACY)
+					qg(1356, qa(302)),	-- Powder to Ironband
+					qg(5637, qa(1453)),	-- Reclaimers' Business in Desolace
 					qg(1959, qa(26131)),	-- Reinforcements for Loch Modan
-					qg(1573, qa( 6392, {	-- Return to Gremlock
+					qg(1573, qa(6392, {	-- Return to Gremlock
 						["races"] = {3,7},	-- Dwarf, Gnome
 					qg(11406, qa(27274, {	-- The Chief Surgeon
 						["races"] = {7},	-- Gnome
 						["classes"] = {5},	-- Priest
 					})),
-					qh( 8799),	-- The Hero of the Day (LEGACY)
-					qg(13433, qa( 8763)),	-- The Hero of the Day
+					qh(8799),	-- The Hero of the Day (LEGACY)
+					qg(13433, qa(8763)),	-- The Hero of the Day
 					qg(92195, qa(39955)),	-- The Plot Thickens
 					qg(6294, qa(38402)),	-- The Same, But Different
-					qg(6179, qa( 1789, {	-- The Symbol of Life
+					qg(6179, qa(1789, {	-- The Symbol of Life
 						["classes"] = {2},	-- Paladin
 					})),
 					qg(11406, qa(27269, {	-- The Temple of the Moon
@@ -247,7 +254,7 @@ _.Zones =
 						["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n"
 					}),
 				}),
-				na( -2, {	-- Vendors
+				na(-2, {	-- Vendors
 					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 						["coord"] = { 40.2, 33.4, 87 },
 						["g"] = {

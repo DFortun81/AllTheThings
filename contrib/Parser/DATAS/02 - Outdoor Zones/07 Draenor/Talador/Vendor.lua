@@ -72,7 +72,7 @@ _.Zones =
 							["coord"] = { 45.6, 38.6, 535 },
 							["description"] = "Vendor only available until you reach character level 100. Items also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 						}),
-						n(23803, {	-- Wixxa the Sapper <Explosives>
+						n(80765, {	-- Wixxa the Sapper <Explosives>
 							["groups"] = {
 								i(23799),	-- Schematic: Adamantite Rifle
 								i(23807),	-- Schematic: Adamantite Scope

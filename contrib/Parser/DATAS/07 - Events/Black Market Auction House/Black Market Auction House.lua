@@ -244,9 +244,7 @@ _.WorldEvents =
 			un(7, i(128312)),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
 			un(9, i(90176)),	-- Flintlocke's Blasthammer
-			un(1, i(110591, {	-- Flintlocke's Blasthammer
-				["description"] = "Russ Petersen@nite_moogle\nNov 10\n\n@AskMrRobot it won't be available in 6.0. we made an updated version and decided not to use it.\n\nPlease make this item use the same source ID.\n - Crieve",
-			})),
+			un(1, i(110591)),	-- Flintlocke's Blasthammer
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
 				["u"] = 9,				-- Black Market AH Filter
@@ -260,6 +258,17 @@ _.WorldEvents =
 				--or consumables displayed it doesn't hurt the end user.  We don't remove information from the
 				-- addon or the files.  No adjustments need ot be made as it affects the item everywhere in the addon.
 			},
+			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
+			un(7, i(86993)),	-- Darting Damselfly Cuffs
+			un(7, i(86994)),	-- Gleaming Moth Cuffs
+			un(7, i(86999)),	-- Inlaid Cricket Bracers
+			un(7, i(86997)),	-- Jagged Hornet Bracers
+			un(7, i(86998)),	-- Luminescent Firefly Wristguards
+			un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
+			un(7, i(87000)),	-- Plated Locust Bracers
+			un(7, i(87001)),	-- Serrated Wasp Bracers
+			un(7, i(86992)),	-- Shining Cicada Bracers
+			un(7, i(86995)),	-- Smooth Beetle Wristbands
 			un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {

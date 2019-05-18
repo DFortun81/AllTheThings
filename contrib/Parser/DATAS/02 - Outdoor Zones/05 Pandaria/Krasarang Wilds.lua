@@ -5,6 +5,9 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(418, {	-- Krasarang Wilds
+			["lvl"] = 81,
+			["achievementID"] = 6975,
+			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
 			["groups"] = {
 				n(-4, { 	-- Achievements
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
@@ -109,16 +112,6 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-38, { 	-- Profession
-					prof(356, {	-- Fishing
-						i(94934, {	-- Tiny Green Carp Pet
-							["description"] = "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r",
-						}),
-						i(94935, {	-- Tiny White Carp Pet
-							["description"] = "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r",
-						}),
-					}),
-				}),
 				n(-17, { 	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
@@ -135,7 +128,7 @@ _.Zones =
 						crit(4),		-- Temple of the Red Crane
 						crit(5),		-- Dawnchaser Retreat
 					})),
-]]--				
+]]--
 					qh(32169, {	-- A Colossal Victory
 						["isDaily"] = true,
 					}),
@@ -215,7 +208,7 @@ _.Zones =
 						["qg"] = 67631,	-- Marshal Troteman
 						["isDaily"] = true,
 					}),
-					
+
 					q(30672, {	-- Balance
 						["groups"] = {
 							i(81542),	-- Fishmonger's Blade
@@ -359,7 +352,7 @@ _.Zones =
 						["qg"] = 68166,	-- Sully "The Pickle" McLeary
 						["isDaily"] = true,
 					}),
-					
+
 					qa(31378, {	-- Challenge At The Temple of the Red Crane
 						["qg"] = 64032,	-- Sage Whiteheart
 						["isDaily"] = true,
@@ -797,7 +790,7 @@ _.Zones =
 							i(81510),	-- Korjan Armplates
 							i(81511),	-- Dojani Bracers
 						},
-						["qg"] = 56112,	-- Kang Bramblestaff 
+						["qg"] = 56112,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
 					qa(30355, {	-- Re-Reclaim
@@ -1363,100 +1356,145 @@ _.Zones =
 					qh(32131),	-- We Require More Minerals!
 					qh(32140),	-- Work Order: Iron
 					qh(32138),	-- Work Order: Lumber
-					
+
 					Holiday quests:
-					qh( 32047),	-- Candy Bucket
+					qh(32047),	-- Candy Bucket
 					q(32034),	-- Candy Bucket
-					qh( 32020),	-- Candy Bucket
+					qh(32020),	-- Candy Bucket
 					q(32036),	-- Candy Bucket
 					q(32499),	-- Honor the Flame
 ]]--
 				}),
 				n(-16, { 	-- Rares
 					n(50787, {	-- Arness the Scale
-						dr(14, i(90723)),	-- Arnness's Scaled Leggings
-						dr(12, i(87612)),	-- Ancient Krasari Helm
-						dr(11, {
-							i(87604),	-- Beachcomber's Hat
-							i(87609),	-- Brushstalker Helm
-							i(87610),	-- Deepwild Hunting Helm
-							i(87608),	-- Korjan Mystic's Hood
-							i(87606),	-- Tidehunter Helm
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87605),	-- Crest of the Red Crane
-							i(87611),	-- Shen-zin Shell Headguard
-						}),
+						["coords"] = {
+							{ 58.6, 43.8, 418 },
+							{ 56.2, 46.8, 418 },
+						},
+						["groups"] = {
+							dr(14, i(90723)),	-- Arnness's Scaled Leggings
+							dr(12, i(87612)),	-- Ancient Krasari Helm
+							dr(11, {
+								i(87604),	-- Beachcomber's Hat
+								i(87609),	-- Brushstalker Helm
+								i(87610),	-- Deepwild Hunting Helm
+								i(87608),	-- Korjan Mystic's Hood
+								i(87606),	-- Tidehunter Helm
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87605),	-- Crest of the Red Crane
+								i(87611),	-- Shen-zin Shell Headguard
+							}),
+						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
-						 ["groups"] = {
+						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
+						["coord"] = { 12.6, 82, 418 },
+						["groups"] = {
 							i(90087),	-- Lobstmourne
-						 },
-						 ["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
+						},
 					}),
 					n(50768, {	-- Cournith Waterstrider
-						dr(15, i(90721)),	-- Cournith Waterstrider's Silken Finery
-						dr(11, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87604),	-- Beachcomber's Hat
-							i(87609),	-- Brushstalker Helm
-							i(87605),	-- Crest of the Red Crane
-							i(87610),	-- Deepwild Hunting Helm
-							i(87608),	-- Korjan Mystic's Hood
-							i(87611),	-- Shen-zin Shell Headguard
-							i(87606),	-- Tidehunter Helm
-						}),
-						dr(10, i(87607)),	-- Unearthed Dojani Headcover
+						["coord"] = { 30.6, 38.2, 418 },
+						["groups"] = {
+							dr(15, i(90721)),	-- Cournith Waterstrider's Silken Finery
+							dr(11, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87604),	-- Beachcomber's Hat
+								i(87609),	-- Brushstalker Helm
+								i(87605),	-- Crest of the Red Crane
+								i(87610),	-- Deepwild Hunting Helm
+								i(87608),	-- Korjan Mystic's Hood
+								i(87611),	-- Shen-zin Shell Headguard
+								i(87606),	-- Tidehunter Helm
+							}),
+							dr(10, i(87607)),	-- Unearthed Dojani Headcover
+						},
 					}),
 					n(68318, {	-- Dalan Nightbreaker
-						dr(29, i(92783)),	-- Mark of the Hardened Grunt
+						["coords"] = {
+							{ 85.0, 27.6, 418 },
+							{ 89.6, 22.4, 418 },
+						},
+						["groups"] = {
+							dr(29, i(92783)),	-- Mark of the Hardened Grunt
+						},
 					}),
 					n(66934, {	-- Damlak
-						i(90169, {	-- Damlak's Clamshell
-							i(90172),	-- Clamshell Band
-							i(90087),	-- Lobstmourne
-						}),
+						["coords"] = {
+							{ 40.0, 88.6, 418 },
+							{ 38.8, 87.4, 418 },
+						},
+						["groups"] = {
+							i(90169, {	-- Damlak's Clamshell
+								i(90172),	-- Clamshell Band
+								i(90087),	-- Lobstmourne
+							}),
+						},
 					}),
 					n(68319, {	-- Disha Fearwarden
-						dr(26, i(92787)),	-- Horde Insignia of Conquering
+						["coord"] = { 87.4, 29.2, 418 },
+						["groups"] = {
+							dr(26, i(92787)),	-- Horde Insignia of Conquering
+						},
 					}),
 					n(50331, {	-- Go-Kan
-						dr(15, i(90719)),	-- Go-Kan's Golden Trousers
-						dr(12, {
-							i(87608),	-- Korjan Mystic's Hood
-							i(87611),	-- Shen-zin Shell Headguard
-						}),
-						dr(11, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87604),	-- Beachcomber's Hat
-							i(87609),	-- Brushstalker Helm
-							i(87606),	-- Tidehunter Helm
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87605),	-- Crest of the Red Crane
-							i(87610),	-- Deepwild Hunting Helm
-						}),
+						["coord"] = { 39.4, 28.8, 418 },
+						["groups"] = {
+							dr(15, i(90719)),	-- Go-Kan's Golden Trousers
+							dr(12, {
+								i(87608),	-- Korjan Mystic's Hood
+								i(87611),	-- Shen-zin Shell Headguard
+							}),
+							dr(11, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87604),	-- Beachcomber's Hat
+								i(87609),	-- Brushstalker Helm
+								i(87606),	-- Tidehunter Helm
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87605),	-- Crest of the Red Crane
+								i(87610),	-- Deepwild Hunting Helm
+							}),
+						},
 					}),
 					n(50340, {	-- Gaarn the Toxic
-						dr(14, i(90725)),	-- Gaarn's Leggings of Infestation
-						dr(11, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87604),	-- Beachcomber's Hat
-							i(87609),	-- Brushstalker Helm
-							i(87611),	-- Shen-zin Shell Headguard
-							i(87606),	-- Tidehunter Helm
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87605),	-- Crest of the Red Crane
-							i(87610),	-- Deepwild Hunting Helm
-							i(87608),	-- Korjan Mystic's Hood
-						}),
+						["coords"] = {
+							{ 56.2, 28, 418 },
+							{ 58.6, 31.4, 418 },
+							{ 58.6, 34.4, 418 },
+							{ 54, 32.2, 418 },
+							{ 56.2, 35.2, 418 },
+							{ 56.2, 38.2, 418 },
+							{ 53.6, 38.8, 418 },
+						},
+						["groups"] = {
+							dr(14, i(90725)),	-- Gaarn's Leggings of Infestation
+							dr(11, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87604),	-- Beachcomber's Hat
+								i(87609),	-- Brushstalker Helm
+								i(87611),	-- Shen-zin Shell Headguard
+								i(87606),	-- Tidehunter Helm
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87605),	-- Crest of the Red Crane
+								i(87610),	-- Deepwild Hunting Helm
+								i(87608),	-- Korjan Mystic's Hood
+							}),
+						},
 					}),
 					n(68321, {	-- Kar Warmaker
-						dr(29, i(92782)),	-- Steadfast Footman's Medallion
+						["coords"] = {
+							{ 13.4, 55.0, 418 },
+							{ 14.0, 57.0, 418 },
+						},
+						["groups"] = {
+							dr(29, i(92782)),	-- Steadfast Footman's Medallion
+						},
 					}),
 					n(70323, {	-- Krakkanon
 						dr(14, {
@@ -1468,87 +1506,123 @@ _.Zones =
 						}),
 					}),
 					n(68317, {	-- Mavis Harms
-						dr(29, i(92785)),	-- Kor'kron Book of Hurting
+						["coords"] = {
+							{ 89, 26.8, 418 },
+							{ 84.6, 31, 418 },
+						},
+						["groups"] = {
+							dr(29, i(92785)),	-- Kor'kron Book of Hurting
+						},
 					}),
 				 	n(68322, {	-- Muerta
-						dr(30, i(92786)),	-- Alliance Insignia of Conquering
+						["coords"] = {
+							{ 10.6, 57, 418 },
+							{ 9.6, 54.6, 418 },
+						},
+						["groups"] = {
+							dr(30, i(92786)),	-- Alliance Insignia of Conquering
+						},
 					}),
 					n(50352, {	-- Qu'nas
-						dr(16, i(90717)),	-- Qu'nas' Apocryphal Legplates
-						dr(12, {
-							i(87606),	-- Tidehunter Helm
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(11, {
-							i(87604),	-- Beachcomber's Hat
-							i(87609),	-- Brushstalker Helm
-							i(87605),	-- Crest of the Red Crane
-							i(87610),	-- Deepwild Hunting Helm
-							i(87608),	-- Korjan Mystic's Hood
-							i(87611),	-- Shen-zin Shell Headguard
-						}),
-						dr(10, i(87612)),	-- Ancient Krasari Helm
+						["coord"] = { 67.2, 23, 418 },
+						["groups"] = {
+							dr(16, i(90717)),	-- Qu'nas' Apocryphal Legplates
+							dr(12, {
+								i(87606),	-- Tidehunter Helm
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(11, {
+								i(87604),	-- Beachcomber's Hat
+								i(87609),	-- Brushstalker Helm
+								i(87605),	-- Crest of the Red Crane
+								i(87610),	-- Deepwild Hunting Helm
+								i(87608),	-- Korjan Mystic's Hood
+								i(87611),	-- Shen-zin Shell Headguard
+							}),
+							dr(10, i(87612)),	-- Ancient Krasari Helm
+						},
 					}),
 					n(50816, {	-- Ruun Ghostpaw
-						dr(16, i(90720)),	-- Silent Leggings of the Ghostpaw
-						dr(12, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87610),	-- Deepwild Hunting Helm
-						}),
-						dr(11, {
-							i(87609),	-- Brushstalker Helm
-							i(87608),	-- Korjan Mystic's Hood
-							i(87611),	-- Shen-zin Shell Headguard
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87604),	-- Beachcomber's Hat
-							i(87605),	-- Crest of the Red Crane
-							i(87606),	-- Tidehunter Helm
-						}),
+						["coords"] = {
+							{ 39.4, 55.2, 418 },
+							{ 41.6, 55.2, 418 },
+							{ 40.4, 52.8, 418 },
+							{ 42.8, 52.8, 418 },
+						},
+						["groups"] = {
+							dr(16, i(90720)),	-- Silent Leggings of the Ghostpaw
+							dr(12, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87610),	-- Deepwild Hunting Helm
+							}),
+							dr(11, {
+								i(87609),	-- Brushstalker Helm
+								i(87608),	-- Korjan Mystic's Hood
+								i(87611),	-- Shen-zin Shell Headguard
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87604),	-- Beachcomber's Hat
+								i(87605),	-- Crest of the Red Crane
+								i(87606),	-- Tidehunter Helm
+							}),
+						},
 					}),
 					n(50830, {	-- Spriggin
-						dr(14, i(90724)),	-- Spriggin's Sproggin' Leggin'
-						dr(11, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87604),	-- Beachcomber's Hat
-							i(87610),	-- Deepwild Hunting Helm
-							i(87611),	-- Shen-zin Shell Headguard
-							i(87606),	-- Tidehunter Helm
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87609),	-- Brushstalker Helm
-							i(87605),	-- Crest of the Red Crane
-							i(87608),	-- Korjan Mystic's Hood
-						}),
+						["coord"] = { 52.2, 88.8, 418 },
+						["groups"] = {
+							dr(14, i(90724)),	-- Spriggin's Sproggin' Leggin'
+							dr(11, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87604),	-- Beachcomber's Hat
+								i(87610),	-- Deepwild Hunting Helm
+								i(87611),	-- Shen-zin Shell Headguard
+								i(87606),	-- Tidehunter Helm
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87609),	-- Brushstalker Helm
+								i(87605),	-- Crest of the Red Crane
+								i(87608),	-- Korjan Mystic's Hood
+							}),
+						},
 					}),
 					n(50388, {	-- Torik-Ethis
-						dr(13, i(90718)),	-- Torik-Ethis' Bloodied Legguards
-						dr(12, {
-							i(87609),	-- Brushstalker Helm
-							i(87608),	-- Korjan Mystic's Hood
-						}),
-						dr(11, {
-							i(87605),	-- Crest of the Red Crane
-							i(87610),	-- Deepwild Hunting Helm
-							i(87611),	-- Shen-zin Shell Headguard
-							i(87607),	-- Unearthed Dojani Headcover
-						}),
-						dr(10, {
-							i(87612),	-- Ancient Krasari Helm
-							i(87604),	-- Beachcomber's Hat
-							i(87606),	-- Tidehunter Helm
-						}),
+						["coords"] = {
+							{ 14.6, 31.0, 418 },
+							{ 14.4, 35.6, 418 },
+							{ 15.6, 35.6, 418 },
+						},
+						["groups"] = {
+							dr(13, i(90718)),	-- Torik-Ethis' Bloodied Legguards
+							dr(12, {
+								i(87609),	-- Brushstalker Helm
+								i(87608),	-- Korjan Mystic's Hood
+							}),
+							dr(11, {
+								i(87605),	-- Crest of the Red Crane
+								i(87610),	-- Deepwild Hunting Helm
+								i(87611),	-- Shen-zin Shell Headguard
+								i(87607),	-- Unearthed Dojani Headcover
+							}),
+							dr(10, {
+								i(87612),	-- Ancient Krasari Helm
+								i(87604),	-- Beachcomber's Hat
+								i(87606),	-- Tidehunter Helm
+							}),
+						},
 					}),
 					n(68320, {	-- Ubunti the Shade
-						dr(28, i(92784)),	-- SI:7 Operative's Manual
+						["coord"] = { 13.2, 66.0, 418 },
+						["groups"] = {
+							dr(28, i(92784)),	-- SI:7 Operative's Manual
+						},
 					}),
 					{	-- Zandalari Warbringer
 						["npcID"] = 69841,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1563,7 +1637,7 @@ _.Zones =
 						["npcID"] = 69842,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1578,7 +1652,7 @@ _.Zones =
 						["npcID"] = 69769,	-- Zandalari Warbringer
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 38.81, 67.38, 418 },	-- Krasarang Wilds
+							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 							{ 52.56, 18.85, 371 },	-- The Jade Forest
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -1592,12 +1666,13 @@ _.Zones =
 				}),
 				n(-222, {	-- Treasure Hunter
 					o(214403, {	-- Stack of Papers
+						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
+						["coord"] = { 52.1, 73.4, 418 },
 						["groups"] = {
 							i(87798, {	-- Stack of Papers
 								["questID"] = 31869,
 							}),
 						},
-						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
 					}),
 				}),
 				n(-2, {		-- Vendor
@@ -1659,10 +1734,10 @@ _.Zones =
 						i(91838, {  -- Lion's Landing Commission
 							i(122211),	-- Music Roll: War March
 							i(92527, {	-- Rodent Crate
+								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 								["groups"] = {
 									p(1128), 	-- Sumprush Rodent
 								},
-								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 							}),
 						}),
 					}),
@@ -1670,10 +1745,10 @@ _.Zones =
 						i(91877, {	--  Domination Point Commission
 							i(122202),	-- Music Roll: High Seas
 							i(92532, {	-- Rodent Crate
+								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 								["groups"] = {
 									p(1128), 	-- Sumprush Rodent
 								},
-								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
 							}),
 						}),
 					}),
@@ -1716,9 +1791,6 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 81,
-			["achievementID"] = 6975,
-			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
 		}),
 	}),
 };

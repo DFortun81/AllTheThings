@@ -295,11 +295,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests 
+				n(-17, {	-- Quests
 					q(37179, {
 						i(118938),	-- Manastorm's Duplicator
-					}),	
-				}),	
+					}),
+				}),
 				cr(76413, e(1226, {	-- Orebender Gor'ashan
 					{	-- Magnets, How Do They Work?
 						["achievementID"] = 9045,	-- Magnets, How Do They Work?
@@ -771,7 +771,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(77120, e(1234, {	-- Warlord Zaela
 					{	-- Mythic: Upper Blackrock Spire
-						["achievementID"] = 10085,	-- Mythic: Upper Blackrock Spire	
+						["achievementID"] = 10085,	-- Mythic: Upper Blackrock Spire
 					},
 					i(118740),	-- Bleakblade of Shahram
 					i(118738),	-- Felshanker

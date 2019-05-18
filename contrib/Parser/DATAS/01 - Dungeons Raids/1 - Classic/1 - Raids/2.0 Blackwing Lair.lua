@@ -85,7 +85,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			e( 1529, {	-- Razorgore the Untamed
+			e(1529, {	-- Razorgore the Untamed
 				["creatureID"] = 12435,
 				["groups"] = {
 					i(93036),	-- Unscathed Egg (Pet)
@@ -106,7 +106,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19337),	-- The Black Book
 				},
 			}),
-			e( 1530, {	-- Vaelastrasz the Corrupt
+			e(1530, {	-- Vaelastrasz the Corrupt
 				["creatureID"] = 13020,
 				["groups"] = {
 					i(19346),	-- Dragonfang Blade
@@ -126,7 +126,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19340),	-- Rune of Metamorphosis
 				},
 			}),
-			e( 1531, {	-- Broodlord Lashlayer
+			e(1531, {	-- Broodlord Lashlayer
 				["creatureID"] = 12017,
 				["groups"] = {
 					i(93037),	-- Blackwing Banner (Pet)
@@ -147,7 +147,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19342),	-- Venomous Totem
 				},
 			}),
-			e( 1532, {	-- Firemaw
+			e(1532, {	-- Firemaw
 				["creatureID"] = 11983,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(18562),	-- Elementium Ingot
 				i(44956),	-- Goblin's Guide to Elementium
 			}),
-			e( 1533, {	-- Ebonroc
+			e(1533, {	-- Ebonroc
 				["creatureID"] = 14601,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -205,7 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19395),	-- Rejuvenating Gem
 				},
 			}),
-			e( 1534, {	-- Flamegor
+			e(1534, {	-- Flamegor
 				["creatureID"] = 11981,
 				["groups"] = {
 					i(19353),	-- Drake Talon Cleaver
@@ -231,7 +231,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19431),	-- Styleen's Impeding Scarab
 				},
 			}),
-			e( 1535, {	-- Chromaggus
+			e(1535, {	-- Chromaggus
 				["creatureID"] = 14020,
 				["groups"] = {
 					i(93038),	-- Whistle of Chromatic Bone
@@ -259,7 +259,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19391),	-- Shimmering Geta
 				},
 			}),
-			e( 1536, {	-- Nefarian
+			e(1536, {	-- Nefarian
 				["creatureID"] = 11583,
 				["groups"] = {
 					ach(685),	-- Blackwing Lair
@@ -309,6 +309,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19376),	-- Archimtiros' Ring of Reckoning
 					i(19382),	-- Pure Elementium Band
 					i(19379),	-- Neltharion's Tear
+					--[[
 				 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
 					i(12728),	-- Plans: Invulnerable Mail
 					i(1203),	-- Aegis of Stormwind
@@ -365,7 +366,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11302),	-- Uther's Strength
 					i(13065),	-- Wand of Allistarj
 					i(13130),	-- Windrunner Legguards
-					i(13066),	-- Wyrmslayer 
+					i(13066),	-- Wyrmslayer
 				 -- PROFESSIONS
 					i(14511),	-- Pattern: Gloves of Spell Mastery
 					i(14509),	-- Pattern: Mooncloth Circlet
@@ -378,6 +379,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(13489),	-- Recipe: Transmute Earth to Life
 					i(13486),	-- Recipe: Transmute Undeath to Water
 					i(13487),	-- Recipe: Transmute Water to Undeath
+					--]]
 				},
 			})
 		},

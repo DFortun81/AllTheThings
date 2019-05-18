@@ -30,9 +30,9 @@ _.Zones =
 					p(1238), 	-- Unborn Val'kyr
 				}),
 				n(-17, { 	-- Quests
-					a(ach(37, {	-- Fo' Grizzle My Shizzle [A]
+					a(ach(37, {	-- Fo' Grizzle My Shizzle [Alliance]
 						crit(1, {	-- Ursoc, the Bear God
-							q(12292, {	-- Local Support [A]
+							q(12292, {	-- Local Support [Alliance]
 								["groups"] = {
 									i(38732),	-- Bramble-Proof Leggings
 									i(39030),	-- Patchhide Pants
@@ -43,19 +43,19 @@ _.Zones =
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12511,39207},
 							}),
-							q(12293, {	--  Close the Deal [A]
+							q(12293, {	--  Close the Deal [Alliance]
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12292},
 							}),
-							q(12294, {	--  A Tentative Pact [A]
+							q(12294, {	--  A Tentative Pact [Alliance]
 								["qg"] = 27469,	-- Ivan
 								["sourceQuests"] = {12293},
 							}),
-							q(12295, {	--  An Exercise in Diplomacy [A]
+							q(12295, {	--  An Exercise in Diplomacy [Alliance]
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12294},
 							}),
-							qa(12307, {	-- Wolfsbane Root [A]
+							qa(12307, {	-- Wolfsbane Root [Alliance]
 								["groups"] = {
 									i(39062),	-- Herbalist's Pauldrons
 									i(39105),	-- Girdle of Growing Vines
@@ -64,7 +64,7 @@ _.Zones =
 								},
 								["qg"] = 27545,	-- Katja
 							}),
-							q(12299, {	--  Northern Hospitality [A]
+							q(12299, {	--  Northern Hospitality [Alliance]
 								["groups"] = {
 									i(38760),	-- Mendicant's Charm
 									i(38761),	-- Talon of Hatred
@@ -73,15 +73,15 @@ _.Zones =
 								["qg"] = 27486,	-- Sergei
 								["sourceQuests"] = {12295},
 							}),
-							q(12300, {	--  Test of Mettle [A]
+							q(12300, {	--  Test of Mettle [Alliance]
 								["qg"] = 27486,	-- Sergei
 								["sourceQuests"] = {12307,12299},
 							}),
-							q(12302, {	--  Words of Warning [A]
+							q(12302, {	--  Words of Warning [Alliance]
 								["qg"] = 27497,	-- Captured Trapper
 								["sourceQuests"] = {12300},
 							}),
-							q(12308, {	-- Escape from Silverbrook [A]
+							q(12308, {	-- Escape from Silverbrook [Alliance]
 								["groups"] = {
 									i(38733),	-- Raiment of the Caged Beast
 									i(39031),	-- Boots of Internal Strife
@@ -92,11 +92,11 @@ _.Zones =
 								["qg"] = 27499,	-- Caged Prisoner
 								["sourceQuests"] = {12302},
 							}),
-							q(12310, {	--  A Swift Response [A]
+							q(12310, {	--  A Swift Response [Alliance]
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["sourceQuests"] = {12308},
 							}),
-							q(12219, {	-- The Failed World Tree [A]
+							q(12219, {	-- The Failed World Tree [Alliance]
 								["groups"] = {
 									i(38719),	-- Robe of Expurgation
 									i(39023),	-- Wax-Coated Chestguard
@@ -106,29 +106,29 @@ _.Zones =
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12310},
 							}),
-							q(12220, {	--  A Dark Influence [A]
+							q(12220, {	--  A Dark Influence [Alliance]
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12310},
 							}),
-							q(12246, {	-- A Possible Link [A]
+							q(12246, {	-- A Possible Link [Alliance]
 								["groups"] = {
 									i(38726),	-- Instigator's Gloves
 									i(39025),	-- Shackles of Sanity
 									i(39053),	-- Helm of the Furbolg Purifier
 									i(39091),	-- Blood-Spattered Spaulders
 								},
-								["qg"] = 27295,	-- Hierophant Thayreen 
-								["sourceQuests"] = {12219,12220},
-							}),
-							q(12247, {	--  Children of Ursoc [A]
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12219,12220},
 							}),
-							q(12248, {	--  Vordrassil's Sapling [A]
+							q(12247, {	--  Children of Ursoc [Alliance]
+								["qg"] = 27295,	-- Hierophant Thayreen
+								["sourceQuests"] = {12219,12220},
+							}),
+							q(12248, {	--  Vordrassil's Sapling [Alliance]
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12246,12247},
 							}),
-							q(12250, {	-- Vordrassil's Seeds [A]
+							q(12250, {	-- Vordrassil's Seeds [Alliance]
 								["groups"] = {
 										i(38753),	-- Hoarder's Necklace
 										i(38743),	-- Ring of the Tender
@@ -137,7 +137,7 @@ _.Zones =
 								["qg"] = 27295,	-- Hierophant Thayreen
 								["sourceQuests"] = {12246,12247},
 							}),
-							q(12249, {	-- Ursoc, the Bear God [A]
+							q(12249, {	-- Ursoc, the Bear God [Alliance]
 								["groups"] = {
 									i(39176),	-- Kilt of Deific Torment
 									i(39177),	-- Pants of Purified Wind
@@ -151,22 +151,22 @@ _.Zones =
 							}),
 						}),
 						crit(2, {	--The Iron Thane
-							q(11998, {	--  Softening the Blow [A]
+							q(11998, {	--  Softening the Blow [Alliance]
 								["qg"] = 26212,	-- Captain Gryan Stoutmantle
 							}),
-							q(12002, {	--  Brothers in Battle [A]
+							q(12002, {	--  Brothers in Battle [Alliance]
 								["qg"] = 26226,	-- Brugar Stoneshear
 								["sourceQuests"] = {11998},
 							}),
-							q(12003, {	--  Uncovering the Tunnels [A]
+							q(12003, {	--  Uncovering the Tunnels [Alliance]
 								["qg"] = 26226,	-- Brugar Stoneshear
 								["sourceQuests"] = {12002},
 							}),
-							q(12010, {	--  The Fate of Orlond [A]
+							q(12010, {	--  The Fate of Orlond [Alliance]
 								["qg"] = 26226,	-- Brugar Stoneshear
 								["sourceQuests"] = {12003},
 							}),
-							qa(12014, {	-- Steady as a Rock? [A]
+							qa(12014, {	-- Steady as a Rock? [Alliance]
 								["groups"] = {
 									i(38717),	-- Dusty Miner's Leggings
 									i(39021),	-- Ectoplasm Stained Wristguards
@@ -176,27 +176,27 @@ _.Zones =
 								["qg"] = 26514,	-- Surveyor Orlond
 								["sourceQuests"] = {12010},
 							}),
-							q(12128, {	--  Check Up on Raegar [A]
+							q(12128, {	--  Check Up on Raegar [Alliance]
 								["qg"] = 26226,	-- Brugar Stoneshear
 								["sourceQuests"] = {12014},
 							}),
-							q(12129, {	--  The Perfect Plan [A]
+							q(12129, {	--  The Perfect Plan [Alliance]
 								["qg"] = 26883,	-- Raegar Breakbrow
 								["sourceQuests"] = {12128},
 							}),
-							q(12130, {	--  Why Fabricate When You Can Appropriate? [A]
+							q(12130, {	--  Why Fabricate When You Can Appropriate? [Alliance]
 								["qg"] = 26883,	-- Raegar Breakbrow
 								["sourceQuests"] = {12129},
 							}),
-							q(12131, {	--  We Have the Power [A]
+							q(12131, {	--  We Have the Power [Alliance]
 								["qg"] = 26883,	-- Raegar Breakbrow
 								["sourceQuests"] = {12130},
 							}),
-							q(12138, {	--  ... Or Maybe We Don't [A]
+							q(12138, {	--  ... Or Maybe We Don't [Alliance]
 								["qg"] = 26883,	-- Raegar Breakbrow
 								["sourceQuests"] = {12131},
 							}),
-							q(12153, {	-- The Iron Thane and His Anvil [A]
+							q(12153, {	-- The Iron Thane and His Anvil [Alliance]
 								["groups"] = {
 									i(38711),	-- Grounded Gloves
 									i(39015),	-- Crackpot Spaulders
@@ -208,19 +208,19 @@ _.Zones =
 							}),
 						}),
 						crit(3, {	--Loken's Orders
-							q(12180, {	--  The Captive Prospectors [A]
+							q(12180, {	--  The Captive Prospectors [Alliance]
 								["qg"] = 26885,	-- Mountaineer Kilian
 								["sourceQuests"] = {12014},
 							}),
-							q(12183, {	--  Looking the Part [A]
+							q(12183, {	--  Looking the Part [Alliance]
 								["qg"] = 26885,	-- Mountaineer Kilian
 								["sourceQuests"] = {12180},
 							}),
-							q(12184, {	--  Cultivating an Image [A]
+							q(12184, {	--  Cultivating an Image [Alliance]
 								["qg"] = 26885,	-- Mountaineer Kilian
 								["sourceQuests"] = {12183},
 							}),
-							q(12185, {	-- Put on Your Best Face for Loken [A]
+							q(12185, {	-- Put on Your Best Face for Loken [Alliance]
 								["groups"] = {
 									i(38713),	-- Spaulders of Foresight
 									i(39017),	-- Belt of Keen Hearing
@@ -291,11 +291,11 @@ _.Zones =
 							}),
 						}),
 						crit(5, {	--Hour of the Worg
-							q(12158, {	--  Hollowstone Mine [A]
+							q(12158, {	--  Hollowstone Mine [Alliance]
 								["qg"] = 26212,	-- Captain Gryan Stoutmantle
 								["sourceQuests"] = {12109},
 							}),
-							q(12159, {	-- Souls at Unrest [A]
+							q(12159, {	-- Souls at Unrest [Alliance]
 								["groups"] = {
 									i(38735),	-- Specially Treated Robes
 									i(39034),	-- Bearskin Helm
@@ -305,11 +305,11 @@ _.Zones =
 								["qg"] = 26932,	-- Petrov
 								["sourceQuests"] = {12158},
 							}),
-							q(12160, {	--  A Name from the Past [A]
+							q(12160, {	--  A Name from the Past [Alliance]
 								["qg"] = 26932,	-- Petrov
 								["sourceQuests"] = {12159},
 							}),
-							q(12161, {	--  Ruuna the Blind [A]
+							q(12161, {	--  Ruuna the Blind [Alliance]
 								["qg"] = 27582,	-- Private Arun
 								["sourceQuests"] = {12160},
 							}),
@@ -393,39 +393,39 @@ _.Zones =
 						}),
 					})),
 					a(ach(2016, {	-- Grizzled Veteran
-						q(12244, {	--  Shredder Repair [A]
+						q(12244, {	--  Shredder Repair [Alliance]
 							["qg"] = 27371,	-- Synipus
 							["isDaily"] = true,
 						}),
-						q(12268, {	--  Pieces Parts [A]
+						q(12268, {	--  Pieces Parts [Alliance]
 							["qg"] = 27416,	-- Pipthwack
 							["isDaily"] = true,
 						}),
-						q(12289, {	--  Kick 'Em While They're Down [A]
+						q(12289, {	--  Kick 'Em While They're Down [Alliance]
 							["qg"] = 27468,	-- Sergeant Hartsman
 							["isDaily"] = true,
 						}),
-						q(12296, {	--  Life or Death [A]
+						q(12296, {	--  Life or Death [Alliance]
 							["qg"] = 27484,	-- Rheanna
 							["isDaily"] = true,
 						}),
-						q(12314, {	--  Down With Captain Zorna! [A]
+						q(12314, {	--  Down With Captain Zorna! [Alliance]
 							["qg"] = 27520,	-- Baron Freeman
 							["isDaily"] = true,
 						}),
-						q(12316, {	--  Keep Them at Bay! [A]
+						q(12316, {	--  Keep Them at Bay! [Alliance]
 							["qg"] = 27562,	-- Lieutenant Stuart
 							["isDaily"] = true,
 						}),
-						q(12323, {	--  Smoke 'Em Out [A]
+						q(12323, {	--  Smoke 'Em Out [Alliance]
 							["qg"] = 27602,	-- Sergeant Downey
 							["isDaily"] = true,
 						}),
-						q(12437, {	--  Riding the Red Rocket [A]
+						q(12437, {	--  Riding the Red Rocket [Alliance]
 							["qg"] = 27759,	-- Commander Howser
 							["isDaily"] = true,
 						}),
-						q(12444, {	--  Blackriver Skirmish [A]
+						q(12444, {	--  Blackriver Skirmish [Alliance]
 							["qg"] = 27783,	-- Scout Captain Carter
 							["isDaily"] = true,
 						}),
@@ -542,17 +542,17 @@ _.Zones =
 							}),
 							o(188261, {	-- Battered Journal
 								["groups"] = {
-									q(11986),	--  The Damaged Journal [A]
+									q(11986),	--  The Damaged Journal [Alliance]
 								},
 								["races"] = ALLIANCE_ONLY,
 								["model"] = "World\\Goober\\g_booktraplightgood.mdx",
 							}),
-							q(11988, {	--  The Runic Keystone [A]
+							q(11988, {	--  The Runic Keystone [Alliance]
 								["qg"] = 26361,	-- Torthen Deepdig
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11986},
 							}),
-							q(11993, {	-- The Runic Prophecies [A]
+							q(11993, {	-- The Runic Prophecies [Alliance]
 								["groups"] = {
 									i(38710),	-- Wayfinder's Bracers
 									i(39013),	-- Discoverer's Mitts
@@ -565,7 +565,7 @@ _.Zones =
 							}),
 						}),
 						sz(1266, 9, {	--Venture Bay
-							q(12443, {	--  Seeking Solvent [A]
+							q(12443, {	--  Seeking Solvent [Alliance]
 								["qg"] = 27495,	-- Barblefink
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -581,23 +581,23 @@ _.Zones =
 						sz(1266, 10, {	--Voldrune
 						}),
 						sz(1266, 11, {	--Amberpine Lodge
-							q(12794, {	--  The Magical Kingdom of Dalaran [A]
+							q(12794, {	--  The Magical Kingdom of Dalaran [Alliance]
 								["qg"] = 29161, --	Magistrix Haelenai
 								["races"] = ALLIANCE_ONLY,
 							}),
 							o(188667, {	-- Amberseed
 								["groups"] = {
-									q(12225),	--  Mmm... Amberseeds! [A]
+									q(12225),	--  Mmm... Amberseeds! [Alliance]
 								},
 								["races"] = ALLIANCE_ONLY,
 								["model"] = "World\\Kalimdor\\Mulgore\\Passivedoodads\\Pinecone\\Pinecone.mdx",
 							}),
-							q(12226, {	--  Just Passing Through [A]
+							q(12226, {	--  Just Passing Through [Alliance]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12225},
 							}),
-							q(12227, {	--  Doing Your Duty [A]
+							q(12227, {	--  Doing Your Duty [Alliance]
 								["groups"] = {
 									i(38745),	-- Fetid Loop
 									i(38746),	-- Rancid Signet
@@ -607,35 +607,35 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12226},
 							}),
-							q(12212, {	--  Replenishing the Storehouse [A]
+							q(12212, {	--  Replenishing the Storehouse [Alliance]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(12216, {	--  Take Their Rear! [A]
+							q(12216, {	--  Take Their Rear! [Alliance]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12212},
 							}),
-							q(12215, {	--  Them or Us! [A]
+							q(12215, {	--  Them or Us! [Alliance]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(12217, {	--  Eagle Eyes [A]
+							q(12217, {	--  Eagle Eyes [Alliance]
 								["qg"] = 27277,	-- Master Woodsman Anderhol
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12215},
 							}),
-							q(12222, {	--  Secrets of the Flamebinders [A]
+							q(12222, {	--  Secrets of the Flamebinders [Alliance]
 								["qg"] = 27391,	-- Woodsman Drake
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12294},
 							}),
-							q(12223, {	--  Thinning the Ranks [A]
+							q(12223, {	--  Thinning the Ranks [Alliance]
 								["qg"] = 27391,	-- Woodsman Drake
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12294},
 							}),
-							q(12255, {	-- The Thane of Voldrune [A]
+							q(12255, {	-- The Thane of Voldrune [Alliance]
 								["groups"] = {
 									i(38712),	-- Headbinder's Crown
 									i(39016),	-- Tunic of the Rectified Thane
@@ -647,12 +647,12 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12222,12223},
 							}),
-							q(12109, {	--  Report to Gryan Stoutmantle... Again [A]
+							q(12109, {	--  Report to Gryan Stoutmantle... Again [Alliance]
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
-							q(12210, {	--  Troll Season! [A]
+							q(12210, {	--  Troll Season! [Alliance]
 								["qg"] = 26875,	-- Lieutenant Dumont
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12212},
@@ -664,11 +664,11 @@ _.Zones =
 						sz(1266, 13, {	--Camp Oneqwah
 						}),
 						sz(1266, 14, {	--Westfall Brigade Encampment
-							q(12414, {	--  Mounting Up [A]
+							q(12414, {	--  Mounting Up [Alliance]
 								["qg"] = 26377,	-- Squire Percy
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(12770, {	--  Reallocating Resources [A]
+							q(12770, {	--  Reallocating Resources [Alliance]
 								-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 								["qg"] = 26212,	-- Captain Gryan Stoutmantle
 								["races"] = ALLIANCE_ONLY,
@@ -676,7 +676,7 @@ _.Zones =
 						}),
 						-- Need Header for "Forest's Edge Post"
 							i(36940, {	-- Mikhail's Journal
-								q(12105, {	-- Descent into Darkness [A]
+								q(12105, {	-- Descent into Darkness [Alliance]
 									["groups"] = {
 										i(38734),	-- Abandoned Hood
 										i(39033),	-- Discarded Miner's Jerkin
@@ -688,7 +688,7 @@ _.Zones =
 								}),
 							}),
 						-- Need Header for "Prospector's Point"
-							q(12154, {	--  Blackout [A]
+							q(12154, {	--  Blackout [Alliance]
 								["qg"] = 26883,	-- Raegar Breakbrow
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12138},
@@ -708,7 +708,7 @@ _.Zones =
 								["sourceQuests"] = {12329},
 							}),
 						-- Need Header for "Heartwood Trading Post"
-							qa(12027, {	-- Mr. Floppy's Perilous Adventure [A]
+							qa(12027, {	-- Mr. Floppy's Perilous Adventure [Alliance]
 								["groups"] = {
 									i(38714),	-- Path-Cutter's Cord
 									i(39018),	-- Boots of Safe Travel
@@ -730,7 +730,7 @@ _.Zones =
 									i(39093),	-- Chestguard of Expressed Fury
 									i(38758),	-- Therapeutic Cloak
 								},
-								["qg"] = 26884,	-- Harkor 
+								["qg"] = 26884,	-- Harkor
 							}),
 						q(12238,{ 	-- Cleansing Drak'Tharon [Lucetia Note: We need to keep this quest in this zone.  It's picked up from here and having both in the dungeon is confusing to the end user as we had comments in Discord]
 							i(40755), 	-- Enticing Sabatons
@@ -738,10 +738,10 @@ _.Zones =
 							i(40756), 	-- Shoulders of the Seducer
 							i(40758), 	-- Shroud of Temptation
 						}),
-						
+
 					}),
 					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
-						h(ach(1357, {	-- Fo' Grizzle My Shizzle [H]
+						h(ach(1357, {	-- Fo' Grizzle My Shizzle [Horde]
 							crit(1, {	--Ursoc, the Bear God
 							}),
 							crit(2, {	--The Final Showdown
@@ -757,59 +757,59 @@ _.Zones =
 							crit(7, {	--Eons of Misery
 							}),
 						})),
-						-- qh( 12026),	-- The Damaged Journal
-						-- qh( 12054),	-- Deciphering the Journal
-						-- qh( 12073),	-- Pounding the Iron
-						-- qh( 12074),	-- An Expedient Ally
-						-- qh( 12165),	-- An Intriguing Plan
-						-- qh( 12170),	-- Blackriver Brawl
-						-- qh( 12177),	-- Jun'ik's Coverup
-						-- qh( 12178),	-- Delivery to Krenna
-						-- qh( 12195),	-- The Unexpected 'Guest'
-						-- qh( 12196),	-- From the Ground Up
-						-- qh( 12197),	-- We Have the Power
-						-- qh( 12198),	-- ... Or Maybe We Don't
-						-- qh( 12201),	-- The Overseer's Shadow
-						-- qh( 12202),	-- Cultivating an Image
-						-- qh( 12203),	-- Loken's Orders
-						-- qh( 12204),	-- In the Name of Loken
-						-- qh( 12208),	-- Good Troll Hunting
-						-- qh( 12213),	-- The Darkness Beneath
-						-- qh( 12231),	-- The Bear God's Offspring
-						-- qh( 12241),	-- Destroy the Sapling
-						-- qh( 12256),	-- The Flamebinders' Secrets
-						-- qh( 12257),	-- A Show of Strength
-						-- qh( 12270),	-- Shred the Alliance
-						-- qh( 12280),	-- Making Repairs
-						-- qh( 12284),	-- Keep 'Em on Their Heels
-						-- qh( 12288),	-- Overwhelmed!
-						-- qh( 12315),	-- Crush Captain Brightwater!
-						-- qh( 12317),	-- Keep Them at Bay
-						-- qh( 12324),	-- Smoke 'Em Out
-						-- qh( 12415),	-- The Horse Hollerer
-						-- qh( 12422),	-- Tactical Clemency
-						-- qh( 12423),	-- Mikhail's Journal
-						-- qh( 12424),	-- Gorgonna
-						-- qh( 12425),	-- Ruuna the Blind
-						-- qh( 12427),	-- The Conquest Pit: Bear Wrestling!
-						-- qh( 12428),	-- The Conquest Pit: Mad Furbolg Fighting
-						-- qh( 12429),	-- The Conquest Pit: Blood and Metal
-						-- qh( 12430),	-- The Conquest Pit: Death Is Likely
-						-- qh( 12432),	-- Riding the Red Rocket
-						-- qh( 12433),	-- Seeking Solvent -- i(37664),	-- Element 115
-						-- qh( 12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
-						-- qh( 12436),	-- Supplemental Income
-						-- qh( 12451),	-- Onward to Camp Oneqwah
+						-- qh(12026),	-- The Damaged Journal
+						-- qh(12054),	-- Deciphering the Journal
+						-- qh(12073),	-- Pounding the Iron
+						-- qh(12074),	-- An Expedient Ally
+						-- qh(12165),	-- An Intriguing Plan
+						-- qh(12170),	-- Blackriver Brawl
+						-- qh(12177),	-- Jun'ik's Coverup
+						-- qh(12178),	-- Delivery to Krenna
+						-- qh(12195),	-- The Unexpected 'Guest'
+						-- qh(12196),	-- From the Ground Up
+						-- qh(12197),	-- We Have the Power
+						-- qh(12198),	-- ... Or Maybe We Don't
+						-- qh(12201),	-- The Overseer's Shadow
+						-- qh(12202),	-- Cultivating an Image
+						-- qh(12203),	-- Loken's Orders
+						-- qh(12204),	-- In the Name of Loken
+						-- qh(12208),	-- Good Troll Hunting
+						-- qh(12213),	-- The Darkness Beneath
+						-- qh(12231),	-- The Bear God's Offspring
+						-- qh(12241),	-- Destroy the Sapling
+						-- qh(12256),	-- The Flamebinders' Secrets
+						-- qh(12257),	-- A Show of Strength
+						-- qh(12270),	-- Shred the Alliance
+						-- qh(12280),	-- Making Repairs
+						-- qh(12284),	-- Keep 'Em on Their Heels
+						-- qh(12288),	-- Overwhelmed!
+						-- qh(12315),	-- Crush Captain Brightwater!
+						-- qh(12317),	-- Keep Them at Bay
+						-- qh(12324),	-- Smoke 'Em Out
+						-- qh(12415),	-- The Horse Hollerer
+						-- qh(12422),	-- Tactical Clemency
+						-- qh(12423),	-- Mikhail's Journal
+						-- qh(12424),	-- Gorgonna
+						-- qh(12425),	-- Ruuna the Blind
+						-- qh(12427),	-- The Conquest Pit: Bear Wrestling!
+						-- qh(12428),	-- The Conquest Pit: Mad Furbolg Fighting
+						-- qh(12429),	-- The Conquest Pit: Blood and Metal
+						-- qh(12430),	-- The Conquest Pit: Death Is Likely
+						-- qh(12432),	-- Riding the Red Rocket
+						-- qh(12433),	-- Seeking Solvent -- i(37664),	-- Element 115
+						-- qh(12434),	--  Always Seeking Solvent -- i(37664),	-- Element 115
+						-- qh(12436),	-- Supplemental Income
+						-- qh(12451),	-- Onward to Camp Oneqwah
 						qh(12453,  {	-- Eyes Above
 							i(38760),
 							i(38761),
 							i(38762),
 						}),
-						-- qh( 12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
-						-- qh( 12487),	-- To Conquest Hold, But Be Careful!
-						-- qh( 12763),	-- Shifting Priorities
-						-- qh( 12791),	-- The Magical Kingdom of Dalaran
-						-- qh( 39206),	-- Warchief's Command: Grizzly Hills
+						-- qh(12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
+						-- qh(12487),	-- To Conquest Hold, But Be Careful!
+						-- qh(12763),	-- Shifting Priorities
+						-- qh(12791),	-- The Magical Kingdom of Dalaran
+						-- qh(39206),	-- Warchief's Command: Grizzly Hills
 						qh(12176,  {  -- A Minor Substitution
 							i(38735),
 							i(39034),
@@ -888,7 +888,7 @@ _.Zones =
 							i(38757),
 						}),
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					n(38453, {	-- Arcturis
 						["description"] = "This is a very sought after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
@@ -1030,7 +1030,7 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 63,	
+			["lvl"] = 63,
 			["achievementID"] = 1266,
 			["description"] = "|cff66ccffGrizzly Hills is a stunning but sinister pine forest in eastern Northrend. Players investigate Arugal and the curse of the Worgen, PvP for control of the Blackriver Logging Camp and Venture Bay, escort Harrison Jones and the rest of the Zul'Aman crew through troll ruins, and heal Vordrassil, a defective World Tree. Grizzly Hills is home to trappers, ice trolls, iron dwarves, and furbolgs.|r",
 		}),

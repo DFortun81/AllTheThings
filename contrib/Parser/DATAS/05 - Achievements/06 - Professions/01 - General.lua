@@ -31,8 +31,10 @@ _.Achievements =
 						ach(12739),		-- Scraptastic!
 						ach(12738),		-- Holy Scrap!
 					}),
-					a(ach(12741)),	-- Giving a Scrap (Alliance)
-					h(ach(13056)),	-- Giving a Scrap (Horde)
+					{
+						["allianceAchievementID"] = 12741,	-- Giving a Scrap (Alliance)
+						["hordeAchievementID"] = 13056,		-- Giving a Scrap (Horde)
+					},
 					ach(10587), 	-- Hot Swapper
 					ach(9071, {		-- Inspector Gagetzan
 						["groups"] = {
@@ -48,7 +50,10 @@ _.Achievements =
 							}),
 						},
 					}),
-					a(ach(12736)),	-- Kul Tiran Master of All
+					{
+						["allianceAchievementID"] = 12736,	-- Kul Tiran Master of All [Alliance]
+						["hordeAchievementID"] = 12737,		-- Zandalari Master of All [Horde]
+					},
 					ach(10583),		-- Legion Master of All
 					ach(10586),		-- Mass Obliteration
 					ach(7379, {		-- Pandaren Master of All
@@ -62,11 +67,13 @@ _.Achievements =
 					ach(9464, {		-- Professional Draenor Master
 						title(305),		--	Artisan
 					}),
-					a(ach(12731)),	-- Professional Kul Tiran Master
+					{
+						["allianceAchievementID"] = 12731,	-- Professional Kul Tiran Master [Alliance]
+						["hordeAchievementID"] = 12733,		-- Professional Zandalari Master [Horde]
+					},
 					ach(10582),		-- Professional Legion Master
 					ach(734),		-- Professional Northrend Master
 					ach(733),		-- Professional Outland Master
-					h(ach(12733)),	-- Professional Zandalari Master
 					ach(6830),		-- Professional Zen Master
 					ach(10761, {	-- Resourceful
 						crit(1),		-- Alchemy
@@ -84,12 +91,13 @@ _.Achievements =
 					ach(10588), 	-- The Shortest Distance
 					ach(6835),		-- Working For a Living
 					ach(9507),		-- Working in Draenor
-					a(ach(12734)),	-- Working in Kul Tiras
+					{
+						["allianceAchievementID"] = 12734,	-- Working in Kul Tiras [Alliance]
+						["hordeAchievementID"] = 12735,		-- Working in Zandalar [Horde]
+					},
 					ach(735),		-- Working In the Cold
 					ach(4914),		-- Working In the Heat
-					h(ach(12735)),	-- Working in Zandalar
 					ach(10581),		-- Working the Isles
-					h(ach(12737)),	-- Zandalari Master of All
 					ach(13516, {	-- Massive Tool
 						--[[crit(1),		-- Alchemy: Silas' Sphere of Transmutation
 						crit(2),		-- Blacksmithing: Khaz'gorian Smithing Hammer

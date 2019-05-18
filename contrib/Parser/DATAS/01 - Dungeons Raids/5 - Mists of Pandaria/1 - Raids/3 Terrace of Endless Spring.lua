@@ -32,7 +32,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					n(-1, {	-- Common Boss Drop
 						["groups"] = {
-							i(95617, {	-- Dividends of the Everlasting Spring
+							un(2, i(95617, {	-- Dividends of the Everlasting Spring
 								["description"] = "Since the introduction of Legacy Loot, this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1.",
 								["groups"] = {
 									i(86884),	-- Belt of Embodied Terror
@@ -98,7 +98,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(48124),	-- Razormaw Hatchling
 									i(48126),	-- Razzashi Hatchling
 								},
-							}),
+							})),
 						},
 						--[[
 						["crs"] = {
@@ -162,12 +162,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							cr(62983, e(729, {	-- Lei Shi
 								i(167052),	-- Spirit of the Spring (PET!)
 								i(89277, {	-- Shoulders of the Shadowy Conqueror
-									i(86684),	-- White Tiger Mantle
-									i(86679),	-- White Tiger Pauldrons
-									i(86659),	-- White Tiger Shoulderguards
-									i(86699),	-- Guardian Serpent Mantle
-									i(86708),	-- Guardian Serpent Shoulderguards
-									i(86713),	-- Sha-Skin Mantle
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+									["g"] = {
+										i(86684),	-- White Tiger Mantle
+										i(86679),	-- White Tiger Pauldrons
+										i(86659),	-- White Tiger Shoulderguards
+										i(86699),	-- Guardian Serpent Mantle
+										i(86708),	-- Guardian Serpent Shoulderguards
+										i(86713),	-- Sha-Skin Mantle
+									},
 								}),
 								i(89278, {	-- Shoulders of the Shadowy Protector
 									i(86634),	-- Yaungol Slayer's Spaulders
@@ -210,12 +213,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							cr(60999, e(709, {	-- Sha of Fear
 								i(89274, {	-- Helm of the Shadowy Conqueror
-									i(86661),	-- White Tiger Faceguard
-									i(86686),	-- White Tiger Headguard
-									i(86681),	-- White Tiger Helmet
-									i(86702),	-- Guardian Serpent Cowl
-									i(86705),	-- Guardian Serpent Hood
-									i(86710),	-- Sha-Skin Hood
+									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+									["g"] = {
+										i(86661),	-- White Tiger Faceguard
+										i(86686),	-- White Tiger Headguard
+										i(86681),	-- White Tiger Helmet
+										i(86702),	-- Guardian Serpent Cowl
+										i(86705),	-- Guardian Serpent Hood
+										i(86710),	-- Sha-Skin Hood
+									},
 								}),
 								i(89275, {	-- Helm of the Shadowy Protector
 									i(86636),	-- Yaungol Slayer's Headguard
@@ -361,12 +367,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6824),	-- Face Clutchers
 						i(167052),	-- Spirit of the Spring (PET!)
 						i(89246, {	-- Shoulders of the Shadowy Conqueror
-							i(85344),	-- White Tiger Mantle
-							i(85339),	-- White Tiger Pauldrons
-							i(85319),	-- White Tiger Shoulderguards
-							i(85359),	-- Guardian Serpent Mantle
-							i(85368),	-- Guardian Serpent Shoulderguards
-							i(85373),	-- Sha-Skin Mantle
+							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							["g"] = {
+								i(85344),	-- White Tiger Mantle
+								i(85339),	-- White Tiger Pauldrons
+								i(85319),	-- White Tiger Shoulderguards
+								i(85359),	-- Guardian Serpent Mantle
+								i(85368),	-- Guardian Serpent Shoulderguards
+								i(85373),	-- Sha-Skin Mantle
+							},
 						}),
 						i(89247, {	-- Shoulders of the Shadowy Protector
 							i(85294),	-- Yaungol Slayer's Spaulders
@@ -410,12 +419,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					cr(60999, e(709, {	-- Sha of Fear
 						ach(6825),	-- The Mind-Killer
 						i(89235, {	-- Helm of the Shadowy Conqueror
-							i(85321),	-- White Tiger Faceguard
-							i(85346),	-- White Tiger Headguard
-							i(85341),	-- White Tiger Helmet
-							i(85362),	-- Guardian Serpent Cowl
-							i(85365),	-- Guardian Serpent Hood
-							i(85370),	-- Sha-Skin Hood
+							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							["g"] = {
+								i(85321),	-- White Tiger Faceguard
+								i(85346),	-- White Tiger Headguard
+								i(85341),	-- White Tiger Helmet
+								i(85362),	-- Guardian Serpent Cowl
+								i(85365),	-- Guardian Serpent Hood
+								i(85370),	-- Sha-Skin Hood
+							},
 						}),
 						i(89236, {	-- Helm of the Shadowy Protector
 							i(85296),	-- Yaungol Slayer's Headguard
@@ -506,6 +518,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(90510),	-- Cuffs of the Corrupted Waters (Elite)
 									i(90504),	-- Legguards of Failing Purification (Elite)
 									i(90514),	-- Asani's Uncleansed Sandals (Elite)
+									i(90515),	-- Lightning Prisoner's Boots (Elite)
 									i(90507),	-- Deepwater Greatboots (Elite)
 									i(90503),	-- Regail's Band of the Endless (Elite)
 									i(90511),	-- Watersoul Signet (Elite)
@@ -523,7 +536,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87153),	-- Asani's Uncleansed Sandals
 							i(87146),	-- Deepwater Greatboots
 							i(87154),	-- Lightning Prisoner's Boots
-							i(90515),	-- Lightning Prisoner's Boots (Elite)
 							i(87144),	-- Regail's Band of the Endless
 							i(87151),	-- Watersoul Signet
 						},
@@ -562,12 +574,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6733),	-- Heroic: Lei Shi
 						i(167052),	-- Spirit of the Spring (PET!)
 						i(89262, {	-- Shoulders of the Shadowy Conqueror
-							i(87108),	-- White Tiger Mantle
-							i(87103),	-- White Tiger Pauldrons
-							i(87113),	-- White Tiger Shoulderguards
-							i(87118),	-- Guardian Serpent Mantle
-							i(87123),	-- Guardian Serpent Shoulderguards
-							i(87191),	-- Sha-Skin Mantle
+							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							["g"] = {
+								i(87108),	-- White Tiger Mantle
+								i(87103),	-- White Tiger Pauldrons
+								i(87113),	-- White Tiger Shoulderguards
+								i(87118),	-- Guardian Serpent Mantle
+								i(87123),	-- Guardian Serpent Shoulderguards
+								i(87191),	-- Sha-Skin Mantle
+							},
 						}),
 						i(89263, {	-- Shoulders of the Shadowy Protector
 							i(87006),	-- Yaungol Slayer's Spaulders
@@ -619,12 +634,15 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						ach(6825),	-- The Mind-Killer
 						i(89259, {	-- Helm of the Shadowy Conqueror
-							i(87111),	-- White Tiger Faceguard
-							i(87106),	-- White Tiger Headguard
-							i(87101),	-- White Tiger Helmet
-							i(87115),	-- Guardian Serpent Cowl
-							i(87120),	-- Guardian Serpent Hood
-							i(87188),	-- Sha-Skin Hood
+							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
+							["g"] = {
+								i(87111),	-- White Tiger Faceguard
+								i(87106),	-- White Tiger Headguard
+								i(87101),	-- White Tiger Helmet
+								i(87115),	-- Guardian Serpent Cowl
+								i(87120),	-- Guardian Serpent Hood
+								i(87188),	-- Sha-Skin Hood
+							},
 						}),
 						i(89260, {	-- Helm of the Shadowy Protector
 							i(87004),	-- Yaungol Slayer's Hood

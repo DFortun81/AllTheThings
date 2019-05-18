@@ -3,34 +3,110 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(757, { 	-- Trial of the Crusader
-		["isRaid"] = true,
+	inst(757, {	-- Trial of the Crusader
 		["sharedLockout"] = 1,
-		["lvl"] = 80,
+		["isRaid"] = true,
+		["coord"] = { 75.0, 21.8, 118 },	-- Trial of the Crusader, Icecrown (Argent Tournament Grounds)
 		["mapID"] = 172,
 		["maps"] = { 173 },
-		["coord"] = { 75.0, 21.8, 118 },	-- Trial of the Crusader, Icecrown (Argent Tournament Grounds)
-		["groups"] = {
+		["lvl"] = 80,
+		["g"] = {
+			n(-1, {	-- Common Boss Drops
+				["crs"] = {
+					34796,	-- Gormok
+					35144,	-- Acidmaw
+					34799,	-- Dreadscale
+					34797,	-- Icehowl
+					34780,	-- Lord Jaraxxus
+					34461,	-- Tyrius Duskblade
+					34460,	-- Kavina Grovesong
+					34469,	-- Melador Valestrider
+					34467,	-- Alyssia Moonstalker
+					34468,	-- Noozle Whizzlestick
+					34465,	-- Velanaa
+					34471,	-- Baelnor Lightbearer
+					34466,	-- Anthar Forgemender
+					34473,	-- Brienna Nightfell
+					34472,	-- Irieth Shadowstep
+					34463,	-- Shaabad
+					34470,	-- Saamul
+					34474,	-- Serissa Grimdabbler
+					34475,	-- Shocuul
+					34458,	-- Gorgrim Shadowcleave
+					34451,	-- Birana Stormhoof
+					34459,	-- Erin Misthoof
+					34448,	-- Ruj'kah
+					34449,	-- Ginselle Blightslinger
+					34445,	-- Liandra Suncaller
+					34456,	-- Malithas Brightblade
+					34447,	-- Caiphus the Stern
+					34441,	-- Vivienne Blackwhisper
+					34454,	-- Maz'dinah
+					34455,	-- Broln Stouthorn
+					34444,	-- Thrakgar
+					34450,	-- Harkzog
+					34453,	-- Narrhok Steelbreaker
+					34497,	-- Fjola Lightbane
+					34496,	-- Eydis Darkbane
+					34564,	-- Anub'arak
+				},
+				["description"] = "These drop on all difficulties, but 10 Man Normal.",
+				["g"] = {
+					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
+					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
+					a(i(47629)),	-- Pattern: Black Chitin Bracers [Alliance]
+					h(i(47646)),	-- Pattern: Black Chitin Bracers [Horde]
+					a(i(47635)),	-- Pattern: Bracers of Swift Death [Alliance]
+					h(i(47647)),	-- Pattern: Bracers of Swift Death [Horde]
+					a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers [Alliance]
+					h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers [Horde]
+					a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate [Alliance]
+					h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate [Horde]
+					a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate [Alliance]
+					h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate [Horde]
+					a(i(47634)),	-- Pattern: Knightbane Carapace [Alliance]
+					h(i(47651)),	-- Pattern: Knightbane Carapace [Horde]
+					a(i(47632)),	-- Pattern: Lunar Eclipse Robes [Alliance]
+					h(i(47652)),	-- Pattern: Lunar Eclipse Robes [Horde]
+					a(i(47655)),	-- Pattern: Merlin's Robe [Alliance]
+					h(i(47638)),	-- Pattern: Merlin's Robe [Horde]
+					a(i(47633)),	-- Pattern: Moonshadow Armguards [Alliance]
+					h(i(47653)),	-- Pattern: Moonshadow Armguards [Horde]
+					a(i(47656)),	-- Pattern: Royal Moonshroud Bracers [Alliance]
+					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
+					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]
+					h(i(47636)),	-- Pattern: Royal Moonshroud Robe [Horde]
+					i(47622),		-- Plans: Breastplate of the White Knight [Alliance]
+					i(47640),		-- Plans: Breastplate of the White Knight [Horde]
+					i(47623),		-- Plans: Saronite Swordbreakers [Alliance]
+					i(47641),		-- Plans: Saronite Swordbreakers [Horde]
+					i(47627),		-- Plans: Sunforged Bracers [Alliance]
+					i(47642),		-- Plans: Sunforged Bracers [Horde]
+					i(47626),		-- Plans: Sunforged Breastplate [Alliance]
+					i(47643),		-- Plans: Sunforged Breastplate [Horde]
+					i(47624),		-- Plans: Titanium Razorplate [Alliance]
+					i(47644),		-- Plans: Titanium Razorplate [Horde]
+					i(47625),		-- Plans: Titanium Spikeguards [Alliance]
+					i(47645),		-- Plans: Titanium Spikeguards [Horde]
+				},
+			}),
 			d(3, {	-- 10-Player
-				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
+				e(1618, {	-- Northrend Beasts
 					["crs"] = {
+						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						{	-- Not One, But Two Jormungars (10 player)
-							["achievementID"] = 3936,	-- Not One, But Two Jormungars (10 player)
-						},
-						{	-- Upper Back Pain (10 player)
-							["achievementID"] = 3797,	-- Upper Back Pain (10 player)
-						},
-						  i(142083),	-- Giant Worm Egg (PET!)
-						  i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3936),		-- Not One, But Two Jormungars (10 player)
+						ach(3797),		-- Upper Back Pain (10 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						a(i(47612)), 	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
 						a(i(47607)),	-- Collar of Ceaseless Torment
@@ -56,67 +132,67 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						a(i(47578)),	-- Carnivorous Band
 						h(i(47854)),	-- Gormok's Band
 					},
-				})),
-				cr(34780, e(1619, {	-- Lord Jaraxxus
-					{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
-						["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-						["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+				}),
+				e(1619, {	-- Lord Jaraxxus
+					["crs"] = { 34780 },	-- Lord Jaraxxus
+					["g"] = {
+						{	-- Call of the Crusade (10 player): Defeat Lord Jaraxxus
+							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
+						},
+						ach(3996),		-- Three Sixty Pain Spike (10 player)
+						a(i(47676)),	-- Dirk of the Night Watch
+						h(i(47871)),	-- Orcish Deathblade
+						h(i(47619)),	-- Amulet of Binding Elements
+						a(i(47679)),	-- Endurance of the Infernal
+						h(i(47872)),	-- Fortitude of the Infernal
+						h(i(47864)),	-- Pendant of Binding Elements
+						a(i(47680)),	-- Armguards of the Nether Lord
+						h(i(47869)),	-- Armplates of the Nether Lord
+						a(i(47663)),	-- Felspark Bindings
+						h(i(47861)),	-- Felspark Bracers
+						h(i(47863)),	-- Belt of the Bloodhoof Emissary
+						a(i(47669)),	-- Belt of the Winter Solstice
+						h(i(47870)),	-- Belt of the Nether Champion
+						a(i(47711)),	-- Girdle of the Nether Champion
+						h(i(47866)),	-- Darkspear Ritual Binding
+						a(i(47621)),	-- Girdle of the Farseer
+						a(i(47620)),	-- Leggings of the Demonic Messenger
+						h(i(47865)),	-- Legwraps of the Demonic Messenger
+						a(i(49235)),	-- Boots of Tortured Space
+						h(i(49236)),	-- Sabatons of Tortured Space
+						a(i(47683)),	-- Sentinel Scouting Greaves
+						h(i(47867)),	-- Warsong Poacher's Greaves
+						h(i(47862)),	-- Firestorm Band
+						a(i(47618)),	-- Firestorm Ring
+						h(i(47868)),	-- Planestalker Band
+						a(i(47703)),	-- Planestalker Signet
 					},
-					{	-- Three Sixty Pain Spike (10 player)
-						["achievementID"] = 3996,	-- Three Sixty Pain Spike (10 player)
-					},
-					a(i(47676)),	-- Dirk of the Night Watch
-					h(i(47871)),	-- Orcish Deathblade
-					h(i(47619)),	-- Amulet of Binding Elements
-					a(i(47679)),	-- Endurance of the Infernal
-					h(i(47872)),	-- Fortitude of the Infernal
-					h(i(47864)),	-- Pendant of Binding Elements
-					a(i(47680)),	-- Armguards of the Nether Lord
-					h(i(47869)),	-- Armplates of the Nether Lord
-					a(i(47663)),	-- Felspark Bindings
-					h(i(47861)),	-- Felspark Bracers
-					h(i(47863)),	-- Belt of the Bloodhoof Emissary
-					a(i(47669)),	-- Belt of the Winter Solstice
-					h(i(47870)),	-- Belt of the Nether Champion
-					a(i(47711)),	-- Girdle of the Nether Champion
-					h(i(47866)),	-- Darkspear Ritual Binding
-					a(i(47621)),	-- Girdle of the Farseer
-					a(i(47620)),	-- Leggings of the Demonic Messenger
-					h(i(47865)),	-- Legwraps of the Demonic Messenger
-					a(i(49235)),	-- Boots of Tortured Space
-					h(i(49236)),	-- Sabatons of Tortured Space
-					a(i(47683)),	-- Sentinel Scouting Greaves
-					h(i(47867)),	-- Warsong Poacher's Greaves
-					h(i(47862)),	-- Firestorm Band
-					a(i(47618)),	-- Firestorm Ring
-					h(i(47868)),	-- Planestalker Band
-					a(i(47703)),	-- Planestalker Signet
-				})),
-				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
+				}),
+				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
 						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
 						34466,	-- Anthar Forgemender
+						34471,	-- Baelnor Lightbearer
 						34473,	-- Brienna Nightfell
 						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34468,	-- Noozle Whizzlestick
 						34470,	-- Saamul
 						34474,	-- Serissa Grimdabbler
+						34463,	-- Shaabad
 						34475,	-- Shocuul
+						34461,	-- Tyrius Duskblade
+						34465,	-- Velanaa
 					},	
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
-						{	-- Resilience Will Fix It (10 player)
-							["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
-						},
+						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47874),	-- Sunreaver Disciple's Blade
 						i(47876),	-- Sunreaver Champion's Faceplate
 						i(47875),	-- Sunreaver Ranger's Helm
@@ -128,32 +204,31 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47879),	-- Fetish of Volatile Power
 						i(47881),	-- Vengeance of the Forsaken
 					},
-				})),
-				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
+				}),
+				e(1621, {	-- Champions of the Horde
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						34451,	-- Birana Stormhoof
+						34455,	-- Broln Stouthorn
+						34447,	-- Caiphus the Stern
 						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
 						34449,	-- Ginselle Blightslinger
+						34458,	-- Gorgrim Shadowcleave
+						34450,	-- Harkzog
 						34445,	-- Liandra Suncaller
 						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
 						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
 						34453,	-- Narrhok Steelbreaker
+						34448,	-- Ruj'kah
+						34444,	-- Thrakgar
+						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
-						{	-- Resilience Will Fix It (10 player)
-							["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
-						},
+						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47724),	-- Blade of the Silver Disciple
 						i(47717),	-- Faceplate of the Silver Champion
 						i(47718),	-- Helm of the Silver Ranger
@@ -165,19 +240,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47726),	-- Talisman of Volatile Power
 						i(47725),	-- Victor's Call
 					},
-				})),
-				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
+				}),
+				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
 						34496,	-- Eydis Darkbane	
+						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						{	-- Salt and Pepper (10 player)
-							["achievementID"] = 3799,	-- Salt and Pepper (10 player)
-						},
+						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(47884)),	-- Edge of Agony
 						a(i(47743)),	-- Enlightenment
 						h(i(47892)),	-- Illumination
@@ -205,53 +279,54 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47888)),	-- Band of the Twin Val'kyr
 						a(i(47700)),	-- Loop of the Twin Val'kyr
 					},
-				})),
-				cr(34564, e(1623, {	-- Anub'arak
-					{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
-						["achievementID"] = 3917,	-- Call of the Crusade (10 player)
-						["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+				}),
+				e(1623, {	-- Anub'arak
+					["crs"] = { 34564 },	-- Anub'arak
+					["g"] = {
+						{	-- Call of the Crusade (10 player): Complete the Trial of the Crusader
+							["achievementID"] = 3917,	-- Call of the Crusade (10 player)
+							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
+						},
+						ach(3800),		-- The Traitor King (10 player)
+						i(142085),		-- Nerubian Relic (PET!)
+						h(i(47911)),	-- Anguish
+						a(i(47815)),	-- Cold Convergence
+						a(i(47834)),	-- Fordragon Blades
+						h(i(47900)),	-- Perdition
+						h(i(47899)),	-- Ardent Guard
+						a(i(47809)),	-- Argent Resolve
+						h(i(47905)),	-- Blackhorn Bludgeon
+						a(i(47810)),	-- Crusader's Glory
+						h(i(47903)),	-- Forsaken Bonecarver
+						h(i(47898)),	-- Frostblade Hatchet
+						h(i(47894)),	-- Mace of the Earthborn Chieftain
+						a(i(47816)),	-- The Grinder
+						a(i(47814)),	-- Westfall Saber
+						a(i(47808)),	-- The Lion's Maw
+						a(i(47741)),	-- Baelgun's Heavy Crossbow
+						h(i(47907)),	-- Darkmaw Crossbow
+						h(i(47910)),	-- Aegis of the Coliseum
+						a(i(47835)),	-- Bulwark of the Royal Guard
+						h(i(47895)),	-- Pride of the Kor'kron
+						a(i(47812)),	-- Vigilant Ward
+						a(i(47813)),	-- Helmet of the Crypt Lord
+						h(i(47897)),	-- Helm of the Crypt Lord
+						h(i(47901)),	-- Pauldrons of the Shadow Hunter
+						a(i(47829)),	-- Pauldrons of the Timeless Hunter
+						h(i(47904)),	-- Shoulderpads of the Snow Bandit
+						a(i(47832)),	-- Spaulders of the Snow Bandit
+						a(i(47811)),	-- Chestguard of the Warden
+						h(i(47906)),	-- Robes of the Sleepless
+						h(i(47896)),	-- Stoneskin Chestplate
+						a(i(47838)),	-- Vestments of the Sleepless
+						h(i(47909)),	-- Belt of the Eternal
+						a(i(47837)),	-- Cinch of the Undying
+						h(i(47902)),	-- Legplates of Redeemed Blood
+						a(i(47836)),	-- Legplates of the Immortal Spider
+						a(i(47830)),	-- Legplates of the Silver Hand
+						h(i(47908)),	-- Sunwalker Legguards
 					},
-					{	-- The Traitor King (10 player)
-						["achievementID"] = 3800,	-- The Traitor King (10 player)
-					},
-					i(142085),		-- Nerubian Relic (PET!)
-					h(i(47911)),	-- Anguish
-					a(i(47815)),	-- Cold Convergence
-					a(i(47834)),	-- Fordragon Blades
-					h(i(47900)),	-- Perdition
-					h(i(47899)),	-- Ardent Guard
-					a(i(47809)),	-- Argent Resolve
-					h(i(47905)),	-- Blackhorn Bludgeon
-					a(i(47810)),	-- Crusader's Glory
-					h(i(47903)),	-- Forsaken Bonecarver
-					h(i(47898)),	-- Frostblade Hatchet
-					h(i(47894)),	-- Mace of the Earthborn Chieftain
-					a(i(47816)),	-- The Grinder
-					a(i(47814)),	-- Westfall Saber
-					a(i(47808)),	-- The Lion's Maw
-					a(i(47741)),	-- Baelgun's Heavy Crossbow
-					h(i(47907)),	-- Darkmaw Crossbow
-					h(i(47910)),	-- Aegis of the Coliseum
-					a(i(47835)),	-- Bulwark of the Royal Guard
-					h(i(47895)),	-- Pride of the Kor'kron
-					a(i(47812)),	-- Vigilant Ward
-					a(i(47813)),	-- Helmet of the Crypt Lord
-					h(i(47897)),	-- Helm of the Crypt Lord
-					h(i(47901)),	-- Pauldrons of the Shadow Hunter
-					a(i(47829)),	-- Pauldrons of the Timeless Hunter
-					h(i(47904)),	-- Shoulderpads of the Snow Bandit
-					a(i(47832)),	-- Spaulders of the Snow Bandit
-					a(i(47811)),	-- Chestguard of the Warden
-					h(i(47906)),	-- Robes of the Sleepless
-					h(i(47896)),	-- Stoneskin Chestplate
-					a(i(47838)),	-- Vestments of the Sleepless
-					h(i(47909)),	-- Belt of the Eternal
-					a(i(47837)),	-- Cinch of the Undying
-					h(i(47902)),	-- Legplates of Redeemed Blood
-					a(i(47836)),	-- Legplates of the Immortal Spider
-					a(i(47830)),	-- Legplates of the Silver Hand
-					h(i(47908)),	-- Sunwalker Legguards
-				})),
+				}),
 			}),
 			d(5, {	-- 10-Player Heroic
 				n(-1, {	-- Common Boss Drops
@@ -293,65 +368,26 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["groups"] = {
-						i(47556),	-- Crusader Orb
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+					["g"] = {
+						i(47556),		-- Crusader Orb
 					},
 				}),
-				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
+				e(1618, {	-- Northrend Beasts
 					["crs"] = {
+						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						{	-- Not One, But Two Jormungars (10 player)
-							["achievementID"] = 3936,	-- Not One, But Two Jormungars (10 player)
-						},
-						{	-- Upper Back Pain (10 player)
-							["achievementID"] = 3797,	-- Upper Back Pain (10 player)
-						},
-						  i(142083),	-- Giant Worm Egg (PET!)
-						  i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3936),		-- Not One, But Two Jormungars (10 player)
+						ach(3797),		-- Upper Back Pain (10 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						a(i(47922)),	-- Rod of Imprisoned Souls
 						h(i(47995)),	-- Scepter of Imprisoned Souls
 						a(i(47915)),	-- Collar of Ceaseless Torment
@@ -377,67 +413,67 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						a(i(47920)),	-- Carnivorous Band
 						h(i(47993)),	-- Gormok's Band
 					},
-				})),
-				cr(34780, e(1619, {	-- Lord Jaraxxus
-					{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
-						["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-						["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+				}),
+				e(1619, {	-- Lord Jaraxxus
+					["crs"] = { 34780 },	-- Lord Jaraxxus
+					["g"] = {
+						{	-- Call of the Grand Crusade (10 player): Defeat Lord Jaraxxus
+							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
+						},
+						ach(3996),		-- Three Sixty Pain Spike (10 player)
+						a(i(47938)),	-- Dirk of the Night Watch
+						h(i(48010)),	-- Orcish Deathblade
+						a(i(47930)),	-- Amulet of Binding Elements
+						a(i(47939)),	-- Endurance of the Infernal
+						h(i(48011)),	-- Fortitude of the Infernal
+						h(i(48003)),	-- Pendant of Binding Elements
+						a(i(47935)),	-- Armguards of the Nether Lord
+						h(i(48008)),	-- Armplates of the Nether Lord
+						a(i(47927)),	-- Felspark Bindings
+						h(i(48000)),	-- Felspark Bracers
+						h(i(48002)),	-- Belt of the Bloodhoof Emissary
+						h(i(48009)),	-- Belt of the Nether Champion
+						a(i(47929)),	-- Belt of the Winter Solstice
+						h(i(48005)),	-- Darkspear Ritual Binding
+						a(i(47932)),	-- Girdle of the Farseer
+						a(i(47937)),	-- Girdle of the Nether Champion
+						a(i(47931)),	-- Leggings of the Demonic Messenger
+						h(i(48004)),	-- Legwraps of the Demonic Messenger
+						a(i(49238)),	-- Boots of Tortured Space
+						h(i(49237)),	-- Sabatons of Tortured Space
+						a(i(47933)),	-- Sentinel Scouting Greaves
+						h(i(48006)),	-- Warsong Poacher's Greaves
+						h(i(48001)),	-- Firestorm Band
+						a(i(47928)),	-- Firestorm Ring
+						h(i(48007)),	-- Planestalker Band
+						a(i(47934)),	-- Planestalker Signet
 					},
-					{	-- Three Sixty Pain Spike (10 player)
-						["achievementID"] = 3996,	-- Three Sixty Pain Spike (10 player)
-					},
-					a(i(47938)),	-- Dirk of the Night Watch
-					h(i(48010)),	-- Orcish Deathblade
-					a(i(47930)),	-- Amulet of Binding Elements
-					a(i(47939)),	-- Endurance of the Infernal
-					h(i(48011)),	-- Fortitude of the Infernal
-					h(i(48003)),	-- Pendant of Binding Elements
-					a(i(47935)),	-- Armguards of the Nether Lord
-					h(i(48008)),	-- Armplates of the Nether Lord
-					a(i(47927)),	-- Felspark Bindings
-					h(i(48000)),	-- Felspark Bracers
-					h(i(48002)),	-- Belt of the Bloodhoof Emissary
-					h(i(48009)),	-- Belt of the Nether Champion
-					a(i(47929)),	-- Belt of the Winter Solstice
-					h(i(48005)),	-- Darkspear Ritual Binding
-					a(i(47932)),	-- Girdle of the Farseer
-					a(i(47937)),	-- Girdle of the Nether Champion
-					a(i(47931)),	-- Leggings of the Demonic Messenger
-					h(i(48004)),	-- Legwraps of the Demonic Messenger
-					a(i(49238)),	-- Boots of Tortured Space
-					h(i(49237)),	-- Sabatons of Tortured Space
-					a(i(47933)),	-- Sentinel Scouting Greaves
-					h(i(48006)),	-- Warsong Poacher's Greaves
-					h(i(48001)),	-- Firestorm Band
-					a(i(47928)),	-- Firestorm Ring
-					h(i(48007)),	-- Planestalker Band
-					a(i(47934)),	-- Planestalker Signet
-				})),
-				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
+				}),
+				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
 						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
 						34466,	-- Anthar Forgemender
+						34471,	-- Baelnor Lightbearer
 						34473,	-- Brienna Nightfell
 						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34468,	-- Noozle Whizzlestick
 						34470,	-- Saamul
 						34474,	-- Serissa Grimdabbler
+						34463,	-- Shaabad
 						34475,	-- Shocuul
+						34461,	-- Tyrius Duskblade
+						34465,	-- Velanaa
 					},	
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
-						{	-- Resilience Will Fix It (10 player)
-							["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
-						},
+						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(48013),	-- Sunreaver Disciple's Blade
 						i(48015),	-- Sunreaver Champion's Faceplate
 						i(48014),	-- Sunreaver Ranger's Helm
@@ -449,32 +485,31 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(48018),	-- Fetish of Volatile Power
 						i(48020),	-- Vengeance of the Forsaken
 					},
-				})),
-				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
+				}),
+				e(1621, {	-- Champions of the Horde
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						34451,	-- Birana Stormhoof
+						34455,	-- Broln Stouthorn
+						34447,	-- Caiphus the Stern
 						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
 						34449,	-- Ginselle Blightslinger
+						34458,	-- Gorgrim Shadowcleave
+						34450,	-- Harkzog
 						34445,	-- Liandra Suncaller
 						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
 						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
 						34453,	-- Narrhok Steelbreaker
+						34448,	-- Ruj'kah
+						34444,	-- Thrakgar
+						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Faction Champions
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
-						{	-- Resilience Will Fix It (10 player)
-							["achievementID"] = 3798,	-- Resilience Will Fix It (10 player)
-						},
+						ach(3798),	-- Resilience Will Fix It (10 player)
 						i(47941),	-- Blade of the Silver Disciple
 						i(47943),	-- Faceplate of the Silver Champion
 						i(47942),	-- Helm of the Silver Ranger
@@ -486,19 +521,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47946),	-- Talisman of Volatile Power
 						i(47948),	-- Victor's Call
 					},
-				})),
-				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
+				}),
+				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34497,	-- Fjola Lightbane	
+						34496,	-- Eydis Darkbane	
+						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (10 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						{	-- Salt and Pepper (10 player)
-							["achievementID"] = 3799,	-- Salt and Pepper (10 player)
-						},
+						ach(3799),		-- Salt and Pepper (10 player)
 						h(i(48023)),	-- Edge of Agony
 						a(i(47960)),	-- Enlightenment
 						h(i(48036)),	-- Illumination
@@ -526,53 +560,54 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(48027)),	-- Band of the Twin Val'kyr
 						a(i(47955)),	-- Loop of the Twin Val'kyr
 					},
-				})),
-				cr(34564, e(1623, {	-- Anub'arak
-					{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
-						["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
-						["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+				}),
+				e(1623, {	-- Anub'arak
+					["crs"] = { 34564 },	-- Anub'arak
+					["g"] = {
+						{	-- Call of the Grand Crusade (10 player): Complete the Trial of the Grand Crusader
+							["achievementID"] = 3918,	-- Call of the Grand Crusade (10 player)
+							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
+						},
+						ach(3800),		-- The Traitor King (10 player)
+						i(142085),		-- Nerubian Relic (PET!)
+						h(i(48056)),	-- Anguish
+						a(i(47968)),	-- Cold Convergence
+						a(i(47979)),	-- Fordragon Blades
+						h(i(48045)),	-- Perdition
+						h(i(48044)),	-- Ardent Guard
+						a(i(47962)),	-- Argent Resolve
+						h(i(48050)),	-- Blackhorn Bludgeon
+						a(i(47967)),	-- Crusader's Glory
+						h(i(48048)),	-- Forsaken Bonecarver
+						h(i(48043)),	-- Frostblade Hatchet
+						h(i(48039)),	-- Mace of the Earthborn Chieftain
+						a(i(47973)),	-- The Grinder
+						a(i(47966)),	-- The Lion's Maw
+						a(i(47971)),	-- Westfall Saber
+						h(i(48052)),	-- Darkmaw Crossbow
+						a(i(47975)),	-- Baelgun's Heavy Crossbow
+						h(i(48055)),	-- Aegis of the Coliseum
+						a(i(47978)),	-- Bulwark of the Royal Guard
+						h(i(48040)),	-- Pride of the Kor'kron
+						a(i(47963)),	-- Vigilant Ward
+						a(i(47965)),	-- Helmet of the Crypt Lord
+						h(i(48042)),	-- Helm of the Crypt Lord
+						h(i(48046)),	-- Pauldrons of the Shadow Hunter
+						a(i(47969)),	-- Pauldrons of the Timeless Hunter
+						h(i(48049)),	-- Shoulderpads of the Snow Bandit
+						a(i(47972)),	-- Spaulders of the Snow Bandit
+						a(i(47964)),	-- Chestguard of the Warden
+						h(i(48051)),	-- Robes of the Sleepless
+						h(i(48041)),	-- Stoneskin Chestplate
+						a(i(47974)),	-- Vestments of the Sleepless
+						h(i(48054)),	-- Belt of the Eternal
+						a(i(47977)),	-- Cinch of the Undying
+						a(i(47976)),	-- Legplates of the Immortal Spider
+						h(i(48047)),	-- Legplates of the Redeemed Blood Knight
+						a(i(47970)),	-- Legplates of the Silver Hand
+						h(i(48053)),	-- Sunwalker Legguards
 					},
-					{	-- The Traitor King (10 player)
-						["achievementID"] = 3800,	-- The Traitor King (10 player)
-					},
-					i(142085),		-- Nerubian Relic (PET!)
-					h(i(48056)),	-- Anguish
-					a(i(47968)),	-- Cold Convergence
-					a(i(47979)),	-- Fordragon Blades
-					h(i(48045)),	-- Perdition
-					h(i(48044)),	-- Ardent Guard
-					a(i(47962)),	-- Argent Resolve
-					h(i(48050)),	-- Blackhorn Bludgeon
-					a(i(47967)),	-- Crusader's Glory
-					h(i(48048)),	-- Forsaken Bonecarver
-					h(i(48043)),	-- Frostblade Hatchet
-					h(i(48039)),	-- Mace of the Earthborn Chieftain
-					a(i(47973)),	-- The Grinder
-					a(i(47966)),	-- The Lion's Maw
-					a(i(47971)),	-- Westfall Saber
-					h(i(48052)),	-- Darkmaw Crossbow
-					a(i(47975)),	-- Baelgun's Heavy Crossbow
-					h(i(48055)),	-- Aegis of the Coliseum
-					a(i(47978)),	-- Bulwark of the Royal Guard
-					h(i(48040)),	-- Pride of the Kor'kron
-					a(i(47963)),	-- Vigilant Ward
-					a(i(47965)),	-- Helmet of the Crypt Lord
-					h(i(48042)),	-- Helm of the Crypt Lord
-					h(i(48046)),	-- Pauldrons of the Shadow Hunter
-					a(i(47969)),	-- Pauldrons of the Timeless Hunter
-					h(i(48049)),	-- Shoulderpads of the Snow Bandit
-					a(i(47972)),	-- Spaulders of the Snow Bandit
-					a(i(47964)),	-- Chestguard of the Warden
-					h(i(48051)),	-- Robes of the Sleepless
-					h(i(48041)),	-- Stoneskin Chestplate
-					a(i(47974)),	-- Vestments of the Sleepless
-					h(i(48054)),	-- Belt of the Eternal
-					a(i(47977)),	-- Cinch of the Undying
-					a(i(47976)),	-- Legplates of the Immortal Spider
-					h(i(48047)),	-- Legplates of the Redeemed Blood Knight
-					a(i(47970)),	-- Legplates of the Silver Hand
-					h(i(48053)),	-- Sunwalker Legguards
-				})),
+				}),
 			}),
 			d(4, {	-- 25-Player
 				n(-1, {	-- Common Boss Drops
@@ -614,66 +649,27 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["groups"] = {
-						i(47556),	-- Crusader Orb
-						i(47242),	-- Trophy of the Crusade
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+					["g"] = {
+						i(47556),		-- Crusader Orb
+						i(47242),		-- Trophy of the Crusade
 					},
 				}),
-				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
+				e(1618, {	-- Northrend Beasts
 					["crs"] = {
+						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						{	-- Not One, But Two Jormungars (25 player)
-							["achievementID"] = 3937,	-- Not One, But Two Jormungars (25 player)
-						},
-						{	-- Upper Back Pain (25 player)
-							["achievementID"] = 3813,	-- Upper Back Pain (25 player)
-						},
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3937),		-- Not One, But Two Jormungars (25 player)
+						ach(3813),		-- Upper Back Pain (25 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						h(i(47261)),	-- Barb of Tarasque
 						a(i(46979)),	-- Blade of Tarasque
 						a(i(46958)),	-- Steel Bladebreaker
@@ -705,67 +701,69 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						a(i(46959)),	-- Band of the Violent Temperament
 						h(i(47252)),	-- Ring of the Violent Temperament
 					},
-				})),
-				cr(34780, e(1619, {	-- Lord Jaraxxus
-					{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
-						["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-						["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+				}),
+				e(1619, {	-- Lord Jaraxxus
+					["crs"] = { 34780 },	-- Lord Jaraxxus
+					["g"] = {
+						{	-- Call of the Crusade (25 player): Defeat Lord Jaraxxus
+							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
+						},
+						ach(3997),		-- Three Sixty Pain Spike (25 player)
+						h(i(47266)),	-- Blood Fury
+						a(i(46996)),	-- Lionhead Slasher
+						h(i(47267)),	-- Death's Head Crossbow
+						a(i(46994)),	-- Talonstrike
+						a(i(47053)),	-- Symbol of Transgression
+						h(i(47276)),	-- Talisman of Heedless Sins
+						a(i(47043)),	-- Charge of the Demon Lord
+						h(i(47272)),	-- Charge of the Eredar
+						h(i(47275)),	-- Pride of the Demon Lord
+						a(i(47042)),	-- Pride of the Eredar
+						a(i(47000)),	-- Cuirass of Calamitous Fate
+						h(i(47270)),	-- Vest of Calamitous Fate
+						h(i(47277)),	-- Bindings of the Autumn Willow
+						a(i(47055)),	-- Bracers of the Autumn Willow
+						a(i(47056)),	-- Bracers of Cloudy Omen
+						h(i(47280)),	-- Wristwraps of Cloudy Omen
+						a(i(46999)),	-- Bloodbath Belt
+						h(i(47268)),	-- Bloodbath Girdle
+						h(i(47279)),	-- Leggings of Failing Light
+						a(i(47051)),	-- Leggings of the Soothing Touch
+						a(i(47052)),	-- Legguards of Feverish Dedication
+						a(i(47057)),	-- Legplates of Failing Light
+						h(i(47273)),	-- Legplates of Feverish Dedication
+						h(i(47274)),	-- Pants of the Soothing Touch
+						a(i(46997)),	-- Dawnbreaker Greaves
+						h(i(47269)),	-- Dawnbreaker Sabatons
+						h(i(47278)),	-- Circle of the Darkmender
+						a(i(47223)),	-- Ring of the Darkmender
+						a(i(47041)),	-- Solace of the Defeated
+						h(i(47271)),	-- Solace of the Fallen
 					},
-					{	-- Three Sixty Pain Spike (25 player)
-						["achievementID"] = 3997,	-- Three Sixty Pain Spike (25 player)
-					},
-					h(i(47266)),	-- Blood Fury
-					a(i(46996)),	-- Lionhead Slasher
-					h(i(47267)),	-- Death's Head Crossbow
-					a(i(46994)),	-- Talonstrike
-					a(i(47053)),	-- Symbol of Transgression
-					h(i(47276)),	-- Talisman of Heedless Sins
-					a(i(47043)),	-- Charge of the Demon Lord
-					h(i(47272)),	-- Charge of the Eredar
-					h(i(47275)),	-- Pride of the Demon Lord
-					a(i(47042)),	-- Pride of the Eredar
-					a(i(47000)),	-- Cuirass of Calamitous Fate
-					h(i(47270)),	-- Vest of Calamitous Fate
-					h(i(47277)),	-- Bindings of the Autumn Willow
-					a(i(47055)),	-- Bracers of the Autumn Willow
-					a(i(47056)),	-- Bracers of Cloudy Omen
-					h(i(47280)),	-- Wristwraps of Cloudy Omen
-					a(i(46999)),	-- Bloodbath Belt
-					h(i(47268)),	-- Bloodbath Girdle
-					h(i(47279)),	-- Leggings of Failing Light
-					a(i(47051)),	-- Leggings of the Soothing Touch
-					a(i(47052)),	-- Legguards of Feverish Dedication
-					a(i(47057)),	-- Legplates of Failing Light
-					h(i(47273)),	-- Legplates of Feverish Dedication
-					h(i(47274)),	-- Pants of the Soothing Touch
-					a(i(46997)),	-- Dawnbreaker Greaves
-					h(i(47269)),	-- Dawnbreaker Sabatons
-					h(i(47278)),	-- Circle of the Darkmender
-					a(i(47223)),	-- Ring of the Darkmender
-					a(i(47041)),	-- Solace of the Defeated
-					h(i(47271)),	-- Solace of the Fallen
-				})),
-				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
+				}),
+				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
 					["crs"] = {	
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
 						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
 						34466,	-- Anthar Forgemender
+						34471,	-- Baelnor Lightbearer
 						34473,	-- Brienna Nightfell
 						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34468,	-- Noozle Whizzlestick
 						34470,	-- Saamul
 						34474,	-- Serissa Grimdabbler
+						34463,	-- Shaabad
 						34475,	-- Shocuul
-					},
-					["groups"] = {
+						34461,	-- Tyrius Duskblade
+						34465,	-- Velanaa
+					},	
+					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47285),	-- Dual-Blade Butcher
 						i(47287),	-- Bastion of Resolve
@@ -783,28 +781,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47282),	-- Band of Callous Aggression
 						i(47290),	-- Juggernaut's Vitality
 					},
-				})),
-				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
+				}),
+				e(1621, {	-- Champions of the Horde
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						34451,	-- Birana Stormhoof
+						34455,	-- Broln Stouthorn
+						34447,	-- Caiphus the Stern
 						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
 						34449,	-- Ginselle Blightslinger
+						34458,	-- Gorgrim Shadowcleave
+						34450,	-- Harkzog
 						34445,	-- Liandra Suncaller
 						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
 						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
 						34453,	-- Narrhok Steelbreaker
+						34448,	-- Ruj'kah
+						34444,	-- Thrakgar
+						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47069),	-- Justicebringer
 						i(47079),	-- Bastion of Purity
@@ -822,19 +821,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47070),	-- Ring of Callous Aggression
 						i(47080),	-- Satrina's Impeding Scarab
 					},
-				})),
-				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
+				}),
+				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
 						34496,	-- Eydis Darkbane	
+						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						{	-- Salt and Pepper (25 player)
-							["achievementID"] = 3815,	-- Salt and Pepper (25 player)
-						},
+						ach(3815),		-- Salt and Pepper (25 player)
 						a(i(47114)),	-- Lupine Longstaff
 						h(i(47302)),	-- Twin's Pact
 						h(i(47300)),	-- Gouge of the Frigid Heart
@@ -866,57 +864,58 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47303)),	-- Death's Choice
 						a(i(47115)),	-- Death's Verdict
 					},
-				})),
-				cr(34564, e(1623, {	-- Anub'arak
-					{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
-						["achievementID"] = 3916,	-- Call of the Crusade (25 player)
-						["criteriaID"] = 5,	-- Complete the Trial of the Crusader
+				}),
+				e(1623, {	-- Anub'arak
+					["crs"] = { 34564 },	-- Anub'arak
+					["g"] = {
+						{	-- Call of the Crusade (25 player): Complete the Trial of the Crusader
+							["achievementID"] = 3916,	-- Call of the Crusade (25 player)
+							["criteriaID"] = 5,			-- Complete the Trial of the Crusader
+						},
+						ach(3816),		-- The Traitor King (25 player)
+						i(142085),		-- Nerubian Relic (PET!)
+						a(i(47233)),	-- Archon Glaive
+						h(i(47329)),	-- Hellion Glaive
+						h(i(47314)),	-- Hellscream Slicer
+						a(i(47193)),	-- Misery's End
+						a(i(47148)),	-- Stormpike Cleaver
+						h(i(47322)),	-- Suffering's End
+						h(i(47328)),	-- Maiden's Adoration
+						a(i(47225)),	-- Maiden's Favor
+						h(i(47320)),	-- Might of the Nerub
+						a(i(47183)),	-- Strength of the Nerub
+						a(i(47204)),	-- Chestguard of Flowing Elements
+						h(i(47325)),	-- Cuirass of Flowing Elements
+						h(i(47313)),	-- Armbands of Dark Determination
+						a(i(47203)),	-- Armbands of the Ashen Saint
+						h(i(47324)),	-- Bindings of the Ashen Saint
+						a(i(47151)),	-- Bracers of Dark Determination
+						h(i(47330)),	-- Gauntlets of Bitter Reprisal
+						a(i(47234)),	-- Gloves of Bitter Reprisal
+						a(i(47235)),	-- Gloves of the Lifeless Touch
+						h(i(47326)),	-- Handwraps of the Lifeless Touch
+						a(i(47152)),	-- Belt of Deathly Dominion
+						a(i(47195)),	-- Belt of the Forgotten Martyr
+						h(i(47323)),	-- Girdle of the Forgotten Martyr
+						h(i(47311)),	-- Waistguard of Deathly Dominion
+						h(i(47317)),	-- Breeches of the Deepening Void
+						h(i(47318)),	-- Leggings of the Awakening
+						a(i(47187)),	-- Leggings of the Deepening Void
+						h(i(47319)),	-- Leggings of the Lurking Threat
+						a(i(47184)),	-- Legguards of the Lurking Threat
+						a(i(47186)),	-- Legwraps of the Awakening
+						h(i(47321)),	-- Boots of the Icy Floe
+						a(i(47194)),	-- Footpads of the Icy Floe
+						a(i(47150)),	-- Greaves of the 7th Legion
+						h(i(47312)),	-- Greaves of the Saronite Citadel
+						a(i(47054)),	-- Band of Deplorable Violence
+						h(i(47315)),	-- Band of the Traitor King
+						h(i(47327)),	-- Lurid Manifestation
+						a(i(47149)),	-- Signet of the Traitor King
+						h(i(47316)),	-- Reign of the Dead
+						a(i(47182)),	-- Reign of the Unliving
 					},
-					{	-- The Traitor King (25 player)
-						["achievementID"] = 3816,	-- The Traitor King (25 player)
-					},
-					i(142085),		-- Nerubian Relic (PET!)
-					a(i(47233)),	-- Archon Glaive
-					h(i(47329)),	-- Hellion Glaive
-					h(i(47314)),	-- Hellscream Slicer
-					a(i(47193)),	-- Misery's End
-					a(i(47148)),	-- Stormpike Cleaver
-					h(i(47322)),	-- Suffering's End
-					h(i(47328)),	-- Maiden's Adoration
-					a(i(47225)),	-- Maiden's Favor
-					h(i(47320)),	-- Might of the Nerub
-					a(i(47183)),	-- Strength of the Nerub
-					a(i(47204)),	-- Chestguard of Flowing Elements
-					h(i(47325)),	-- Cuirass of Flowing Elements
-					h(i(47313)),	-- Armbands of Dark Determination
-					a(i(47203)),	-- Armbands of the Ashen Saint
-					h(i(47324)),	-- Bindings of the Ashen Saint
-					a(i(47151)),	-- Bracers of Dark Determination
-					h(i(47330)),	-- Gauntlets of Bitter Reprisal
-					a(i(47234)),	-- Gloves of Bitter Reprisal
-					a(i(47235)),	-- Gloves of the Lifeless Touch
-					h(i(47326)),	-- Handwraps of the Lifeless Touch
-					a(i(47152)),	-- Belt of Deathly Dominion
-					a(i(47195)),	-- Belt of the Forgotten Martyr
-					h(i(47323)),	-- Girdle of the Forgotten Martyr
-					h(i(47311)),	-- Waistguard of Deathly Dominion
-					h(i(47317)),	-- Breeches of the Deepening Void
-					h(i(47318)),	-- Leggings of the Awakening
-					a(i(47187)),	-- Leggings of the Deepening Void
-					h(i(47319)),	-- Leggings of the Lurking Threat
-					a(i(47184)),	-- Legguards of the Lurking Threat
-					a(i(47186)),	-- Legwraps of the Awakening
-					h(i(47321)),	-- Boots of the Icy Floe
-					a(i(47194)),	-- Footpads of the Icy Floe
-					a(i(47150)),	-- Greaves of the 7th Legion
-					h(i(47312)),	-- Greaves of the Saronite Citadel
-					a(i(47054)),	-- Band of Deplorable Violence
-					h(i(47315)),	-- Band of the Traitor King
-					h(i(47327)),	-- Lurid Manifestation
-					a(i(47149)),	-- Signet of the Traitor King
-					h(i(47316)),	-- Reign of the Dead
-					a(i(47182)),	-- Reign of the Unliving
-				})),
+				}),
 			}),
 			d(6, {	-- 25-Player Heroic	
 				n(-1, {	-- Common Boss Drops
@@ -958,66 +957,27 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34496,	-- Eydis Darkbane
 						34564,	-- Anub'arak
 					},
-					["groups"] = {
-						i(47556),	-- Crusader Orb
-						i(47242),	-- Trophy of the Crusade
-						a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers
-						h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers
-						a(i(47629)),	-- Pattern: Black Chitin Bracers
-						h(i(47646)),	-- Pattern: Black Chitin Bracers
-						a(i(47635)),	-- Pattern: Bracers of Swift Death
-						h(i(47647)),	-- Pattern: Bracers of Swift Death
-						a(i(47631)),	-- Pattern: Crusader's Dragonscale Bracers
-						h(i(47648)),	-- Pattern: Crusader's Dragonscale Bracers
-						a(i(47630)),	-- Pattern: Crusader's Dragonscale Breastplate
-						h(i(47649)),	-- Pattern: Crusader's Dragonscale Breastplate
-						a(i(47628)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						h(i(47650)),	-- Pattern: Ensorcelled Nerubian Breastplate
-						a(i(47634)),	-- Pattern: Knightbane Carapace
-						h(i(47651)),	-- Pattern: Knightbane Carapace
-						a(i(47632)),	-- Pattern: Lunar Eclipse Robes
-						h(i(47652)),	-- Pattern: Lunar Eclipse Robes
-						a(i(47655)),	-- Pattern: Merlin's Robe
-						h(i(47638)),	-- Pattern: Merlin's Robe
-						a(i(47633)),	-- Pattern: Moonshadow Armguards
-						h(i(47653)),	-- Pattern: Moonshadow Armguards
-						a(i(47656)),	-- Pattern: Royal Moonshroud Bracers
-						h(i(47637)),	-- Pattern: Royal Moonshroud Bracers
-						a(i(47657)),	-- Pattern: Royal Moonshroud Robe
-						h(i(47636)),	-- Pattern: Royal Moonshroud Robe
-						i(47622),	-- Plans: Breastplate of the White Knight [A]
-						i(47640),	-- Plans: Breastplate of the White Knight [H]
-						i(47623),	-- Plans: Saronite Swordbreakers [A]
-						i(47641),	-- Plans: Saronite Swordbreakers [H]
-						i(47627),	-- Plans: Sunforged Bracers [A]
-						i(47642),	-- Plans: Sunforged Bracers [H]
-						i(47626),	-- Plans: Sunforged Breastplate [A]
-						i(47643),	-- Plans: Sunforged Breastplate [H]
-						i(47624),	-- Plans: Titanium Razorplate [A]
-						i(47644),	-- Plans: Titanium Razorplate [H]
-						i(47625),	-- Plans: Titanium Spikeguards [A]
-						i(47645),	-- Plans: Titanium Spikeguards [H]
+					["g"] = {
+						i(47556),		-- Crusader Orb
+						i(47242),		-- Trophy of the Crusade
 					},
 				}),
-				cr(34797, e(1618, {	-- Northrend Beasts [Icehowl]
+				e(1618, {	-- Northrend Beasts
 					["crs"] = {
+						34797,	-- Icehowl
 						34796,	-- Gormok
 						35144,	-- Acidmaw
 						34799,	-- Dreadscale
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Beasts of Northrend
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 1,	-- Defeat the Beasts of Northrend
+							["criteriaID"] = 1,			-- Defeat the Beasts of Northrend
 						},
-						{	-- Not One, But Two Jormungars (25 player)
-							["achievementID"] = 3937,	-- Not One, But Two Jormungars (25 player)
-						},
-						{	-- Upper Back Pain (25 player)
-							["achievementID"] = 3813,	-- Upper Back Pain (25 player)
-						},
-						i(142083),	-- Giant Worm Egg (PET!)
-						i(142084),	-- Magnataur Hunting Horn (PET!)
+						ach(3937),		-- Not One, But Two Jormungars (25 player)
+						ach(3813),		-- Upper Back Pain (25 player)
+						i(142083),		-- Giant Worm Egg (PET!)
+						i(142084),		-- Magnataur Hunting Horn (PET!)
 						h(i(47422)),	-- Barb of Tarasque
 						a(i(46980)),	-- Blade of Tarasque
 						a(i(46969)),	-- Steel Bladebreaker
@@ -1049,67 +1009,69 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47413)),	-- Ring of the Violent Temperament
 						a(i(46966)),	-- Band of the Violent Temperament
 					},
-				})),
-				cr(34780, e(1619, {	-- Lord Jaraxxus
-					{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
-						["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-						["criteriaID"] = 2,	-- Defeat Lord Jaraxxus
+				}),
+				e(1619, {	-- Lord Jaraxxus
+					["crs"] = { 34780 },	-- Lord Jaraxxus
+					["g"] = {
+						{	-- Call of the Grand Crusade (25 player): Defeat Lord Jaraxxus
+							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+							["criteriaID"] = 2,			-- Defeat Lord Jaraxxus
+						},
+						ach(3997),		-- Three Sixty Pain Spike (25 player)
+						h(i(47427)),	-- Blood Fury
+						a(i(47001)),	-- Lionhead Slasher
+						h(i(47428)),	-- Death's Head Crossbow
+						a(i(46995)),	-- Talonstrike
+						a(i(47064)),	-- Symbol of Transgression
+						h(i(47437)),	-- Talisman of Heedless Sins
+						a(i(47060)),	-- Charge of the Demon Lord
+						h(i(47433)),	-- Charge of the Eredar
+						h(i(47436)),	-- Pride of the Demon Lord
+						a(i(47063)),	-- Pride of the Eredar
+						a(i(47004)),	-- Cuirass of Calamitous Fate
+						h(i(47431)),	-- Vest of Calamitous Fate
+						h(i(47438)),	-- Bindings of the Autumn Willow
+						a(i(47068)),	-- Bracers of Cloudy Omen
+						a(i(47066)),	-- Bracers of the Autumn Willow
+						h(i(47441)),	-- Wristwraps of Cloudy Omen
+						a(i(47002)),	-- Bloodbath Belt
+						h(i(47429)),	-- Bloodbath Girdle
+						h(i(47440)),	-- Leggings of Failing Light
+						a(i(47062)),	-- Leggings of the Soothing Touch
+						a(i(47061)),	-- Legguards of Feverish Dedication
+						a(i(47067)),	-- Legplates of Failing Light
+						h(i(47434)),	-- Legplates of Feverish Dedication
+						h(i(47435)),	-- Pants of the Soothing Touch
+						a(i(47003)),	-- Dawnbreaker Greaves
+						h(i(47430)),	-- Dawnbreaker Sabatons
+						h(i(47439)),	-- Circle of the Darkmender
+						a(i(47224)),	-- Ring of the Darkmender
+						a(i(47059)),	-- Solace of the Defeated
+						h(i(47432)),	-- Solace of the Fallen
 					},
-					{	-- Three Sixty Pain Spike (25 player)
-						["achievementID"] = 3997,	-- Three Sixty Pain Spike (25 player)
-					},
-					h(i(47427)),	-- Blood Fury
-					a(i(47001)),	-- Lionhead Slasher
-					h(i(47428)),	-- Death's Head Crossbow
-					a(i(46995)),	-- Talonstrike
-					a(i(47064)),	-- Symbol of Transgression
-					h(i(47437)),	-- Talisman of Heedless Sins
-					a(i(47060)),	-- Charge of the Demon Lord
-					h(i(47433)),	-- Charge of the Eredar
-					h(i(47436)),	-- Pride of the Demon Lord
-					a(i(47063)),	-- Pride of the Eredar
-					a(i(47004)),	-- Cuirass of Calamitous Fate
-					h(i(47431)),	-- Vest of Calamitous Fate
-					h(i(47438)),	-- Bindings of the Autumn Willow
-					a(i(47068)),	-- Bracers of Cloudy Omen
-					a(i(47066)),	-- Bracers of the Autumn Willow
-					h(i(47441)),	-- Wristwraps of Cloudy Omen
-					a(i(47002)),	-- Bloodbath Belt
-					h(i(47429)),	-- Bloodbath Girdle
-					h(i(47440)),	-- Leggings of Failing Light
-					a(i(47062)),	-- Leggings of the Soothing Touch
-					a(i(47061)),	-- Legguards of Feverish Dedication
-					a(i(47067)),	-- Legplates of Failing Light
-					h(i(47434)),	-- Legplates of Feverish Dedication
-					h(i(47435)),	-- Pants of the Soothing Touch
-					a(i(47003)),	-- Dawnbreaker Greaves
-					h(i(47430)),	-- Dawnbreaker Sabatons
-					h(i(47439)),	-- Circle of the Darkmender
-					a(i(47224)),	-- Ring of the Darkmender
-					a(i(47059)),	-- Solace of the Defeated
-					h(i(47432)),	-- Solace of the Fallen
-				})),
-				cr(34461, e(1620, {	-- Champions of the Alliance [Tyrius Duskblade]
+				}),
+				e(1620, {	-- Champions of the Alliance
 					["races"] = HORDE_ONLY,
-					["crs"] = {
-						34460,	-- Kavina Grovesong
-						34469,	-- Melador Valestrider
+					["crs"] = {	
 						34467,	-- Alyssia Moonstalker
-						34468,	-- Noozle Whizzlestick
-						34465,	-- Velanaa
-						34471,	-- Baelnor Lightbearer
 						34466,	-- Anthar Forgemender
+						34471,	-- Baelnor Lightbearer
 						34473,	-- Brienna Nightfell
 						34472,	-- Irieth Shadowstep
-						34463,	-- Shaabad
+						34460,	-- Kavina Grovesong
+						34469,	-- Melador Valestrider
+						34468,	-- Noozle Whizzlestick
 						34470,	-- Saamul
 						34474,	-- Serissa Grimdabbler
+						34463,	-- Shaabad
 						34475,	-- Shocuul
-					},
-					["groups"] = {
+						34461,	-- Tyrius Duskblade
+						34465,	-- Velanaa
+					},	
+					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47446),	-- Dual-Blade Butcher
 						i(47448),	-- Bastion of Resolve
@@ -1127,28 +1089,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47443),	-- Band of Callous Aggression
 						i(47451),	-- Juggernaut's Vitality
 					},
-				})),
-				cr(34458, e(1621, {	-- Champions of the Horde [Gorgrim Shadowcleave]
+				}),
+				e(1621, {	-- Champions of the Horde
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						34451,	-- Birana Stormhoof
+						34455,	-- Broln Stouthorn
+						34447,	-- Caiphus the Stern
 						34459,	-- Erin Misthoof
-						34448,	-- Ruj'kah
 						34449,	-- Ginselle Blightslinger
+						34458,	-- Gorgrim Shadowcleave
+						34450,	-- Harkzog
 						34445,	-- Liandra Suncaller
 						34456,	-- Malithas Brightblade
-						34447,	-- Caiphus the Stern
-						34441,	-- Vivienne Blackwhisper
 						34454,	-- Maz'dinah
-						34455,	-- Broln Stouthorn
-						34444,	-- Thrakgar
-						34450,	-- Harkzog
 						34453,	-- Narrhok Steelbreaker
+						34448,	-- Ruj'kah
+						34444,	-- Thrakgar
+						34441,	-- Vivienne Blackwhisper
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Faction Champions
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 3,	-- Defeat the Faction Champions
+							["criteriaID"] = 3,			-- Defeat the Faction Champions
 						},
 						i(47078),	-- Justicebringer
 						i(47085),	-- Bastion of Purity
@@ -1166,19 +1129,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(47075),	-- Ring of Callous Aggression
 						i(47088),	-- Satrina's Impeding Scarab
 					},
-				})),
-				cr(34497, e(1622, {	-- Twin Val'kyr [Fjola Lightane]
+				}),
+				e(1622, {	-- Twin Val'kyr
 					["crs"] = {
-						34496,	-- Eydis Darkbane
+						34496,	-- Eydis Darkbane	
+						34497,	-- Fjola Lightbane
 					},
-					["groups"] = {
+					["g"] = {
 						{	-- Call of the Grand Crusade (25 player): Defeat the Twin Val'kyr
 							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-							["criteriaID"] = 4,	-- Defeat the Twin Val'kyr
+							["criteriaID"] = 4,			-- Defeat the Twin Val'kyr
 						},
-						{	-- Salt and Pepper (25 player)
-							["achievementID"] = 3815,	-- Salt and Pepper (25 player)
-						},
+						ach(3815),		-- Salt and Pepper (25 player)
 						h(i(47463)),	-- Twin's Pact
 						a(i(47130)),	-- Lupine Longstaff
 						h(i(47461)),	-- Gouge of the Frigid Heart
@@ -1210,61 +1172,62 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						h(i(47464)),	-- Death's Choice
 						a(i(47131)),	-- Death's Verdict
 					},
-				})),
-				cr(34564, e(1623, {	-- Anub'arak
-					{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
-						["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
-						["criteriaID"] = 5,	-- Complete the Trial of the Grand Crusader
+				}),
+				e(1623, {	-- Anub'arak
+					["crs"] = { 34564 },	-- Anub'arak
+					["g"] = {
+						{	-- Call of the Grand Crusade (25 player): Complete the Trial of the Grand Crusader
+							["achievementID"] = 3812,	-- Call of the Grand Crusade (25 player)
+							["criteriaID"] = 5,			-- Complete the Trial of the Grand Crusader
+						},
+						ach(3816),		-- The Traitor King (25 player)
+						i(142085),		-- Nerubian Relic (PET!)
+						a(i(47239)),	-- Archon Glaive
+						h(i(47491)),	-- Hellion Glaive
+						h(i(47475)),	-- Hellscream Slicer
+						a(i(47206)),	-- Misery's End
+						a(i(47156)),	-- Stormpike Cleaver
+						h(i(47483)),	-- Suffering's End
+						h(i(47490)),	-- Maiden's Adoration
+						a(i(47238)),	-- Maiden's Favor
+						h(i(47481)),	-- Might of the Nerub
+						a(i(47192)),	-- Strength of the Nerub
+						a(i(47209)),	-- Chestguard of Flowing Elements
+						h(i(47486)),	-- Cuirass of Flowing Elements
+						h(i(47474)),	-- Armbands of Dark Determination
+						a(i(47208)),	-- Armbands of the Ashen Saint
+						h(i(47485)),	-- Bindings of the Ashen Saint
+						a(i(47155)),	-- Bracers of Dark Determination
+						h(i(47492)),	-- Gauntlets of Bitter Reprisal
+						a(i(47240)),	-- Gloves of Bitter Reprisal
+						a(i(47236)),	-- Gloves of the Lifeless Touch
+						h(i(47487)),	-- Handwraps of the Lifeless Touch
+						a(i(47153)),	-- Belt of Deathly Dominion
+						a(i(47207)),	-- Belt of the Forgotten Martyr
+						h(i(47484)),	-- Girdle of the Forgotten Martyr
+						h(i(47472)),	-- Waistguard of Deathly Dominion
+						h(i(47478)),	-- Breeches of the Deepening Void
+						h(i(47479)),	-- Leggings of the Awakening
+						a(i(47189)),	-- Leggings of the Deepening Void
+						h(i(47480)),	-- Leggings of the Lurking Threat
+						a(i(47191)),	-- Legguards of the Lurking Threat
+						a(i(47190)),	-- Legwraps of the Awakening
+						h(i(47482)),	-- Boots of the Icy Floe
+						a(i(47205)),	-- Footpads of the Icy Floe
+						a(i(47154)),	-- Greaves of the 7th Legion
+						h(i(47473)),	-- Greaves of the Saronite Citadel
+						a(i(47237)),	-- Band of Deplorable Violence
+						h(i(47476)),	-- Band of the Traitor King
+						h(i(47489)),	-- Lurid Manifestation
+						a(i(47157)),	-- Signet of the Traitor King
+						h(i(47477)),	-- Reign of the Dead
+						a(i(47188)),	-- Reign of the Unliving
 					},
-					{	-- The Traitor King (25 player)
-						["achievementID"] = 3816,	-- The Traitor King (25 player)
-					},
-					i(142085),	-- Nerubian Relic (PET!)
-					a(i(47239)),	-- Archon Glaive
-					h(i(47491)),	-- Hellion Glaive
-					h(i(47475)),	-- Hellscream Slicer
-					a(i(47206)),	-- Misery's End
-					a(i(47156)),	-- Stormpike Cleaver
-					h(i(47483)),	-- Suffering's End
-					h(i(47490)),	-- Maiden's Adoration
-					a(i(47238)),	-- Maiden's Favor
-					h(i(47481)),	-- Might of the Nerub
-					a(i(47192)),	-- Strength of the Nerub
-					a(i(47209)),	-- Chestguard of Flowing Elements
-					h(i(47486)),	-- Cuirass of Flowing Elements
-					h(i(47474)),	-- Armbands of Dark Determination
-					a(i(47208)),	-- Armbands of the Ashen Saint
-					h(i(47485)),	-- Bindings of the Ashen Saint
-					a(i(47155)),	-- Bracers of Dark Determination
-					h(i(47492)),	-- Gauntlets of Bitter Reprisal
-					a(i(47240)),	-- Gloves of Bitter Reprisal
-					a(i(47236)),	-- Gloves of the Lifeless Touch
-					h(i(47487)),	-- Handwraps of the Lifeless Touch
-					a(i(47153)),	-- Belt of Deathly Dominion
-					a(i(47207)),	-- Belt of the Forgotten Martyr
-					h(i(47484)),	-- Girdle of the Forgotten Martyr
-					h(i(47472)),	-- Waistguard of Deathly Dominion
-					h(i(47478)),	-- Breeches of the Deepening Void
-					h(i(47479)),	-- Leggings of the Awakening
-					a(i(47189)),	-- Leggings of the Deepening Void
-					h(i(47480)),	-- Leggings of the Lurking Threat
-					a(i(47191)),	-- Legguards of the Lurking Threat
-					a(i(47190)),	-- Legwraps of the Awakening
-					h(i(47482)),	-- Boots of the Icy Floe
-					a(i(47205)),	-- Footpads of the Icy Floe
-					a(i(47154)),	-- Greaves of the 7th Legion
-					h(i(47473)),	-- Greaves of the Saronite Citadel
-					a(i(47237)),	-- Band of Deplorable Violence
-					h(i(47476)),	-- Band of the Traitor King
-					h(i(47489)),	-- Lurid Manifestation
-					a(i(47157)),	-- Signet of the Traitor King
-					h(i(47477)),	-- Reign of the Dead
-					a(i(47188)),	-- Reign of the Unliving
-				})),
+				}),
 			}),
 			n(-40, {	-- Legacy
 				["u"] = 2,
-				["groups"] = {
+				["g"] = {
 					ach(4080, {		-- A Tribute to Dedicated Insanity
 						un(37, title(136)),	-- the Argent Defender
 					}),

@@ -8,22 +8,36 @@ _.Zones =
 			["g"] = {
 				n(-2, {	-- Vendors
 					n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
-					["description"] = "This NPC walks around the Drag.",
-					["coord"] = { 58.6, 53.8, 85 },
 						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 57.13, 51.12, 85 },	-- Blax Bottlerocket Path
+							{ 57.24, 52.54, 85 },	-- Blax Bottlerocket Path
+							{ 57.87, 54.21, 85 },	-- Blax Bottlerocket Path
+							{ 58.08, 51.11, 85 },	-- Blax Bottlerocket Path
+							{ 58.29, 62.41, 85 },	-- Blax Bottlerocket Path
+							{ 58.34, 62.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.48, 55.55, 85 },	-- Blax Bottlerocket Path
+							{ 58.67, 62.27, 85 },	-- Blax Bottlerocket Path
+							{ 58.78, 53.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.79, 50.93, 85 },	-- Blax Bottlerocket Path
+							{ 58.81, 57.61, 85 },	-- Blax Bottlerocket Path
+							{ 58.85, 58.67, 85 },	-- Blax Bottlerocket Path
+							{ 58.86, 60.16, 85 },	-- Blax Bottlerocket Path
+							{ 59.32, 51.86, 85 },	-- Blax Bottlerocket Path
+						},
 						["g"] = {
 							i(54436),	-- Blue Clockwork Rocket Bot Pet
 							i(95621),	-- Warbot Ignition Key Pet
 							i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy
 							i(104324),	-- Foot Ball Toy
-							i(69895),	-- Green Balloon Toy
+							--i(69895),	-- Green Balloon Toy [Not listing normally since it's only available during Children's Week]
 							i(137663),	-- Soft Foam Sword Toy
 							i(104323),	-- The Pigskin Toy
 							i(54438),	-- Tiny Blue Ragdoll Toy
 							i(54437),	-- Tiny Green Ragdoll Toy
 							i(44606),	-- Toy Train Set Toy
 							i(45057),	-- Wind-Up Train Wrecker Toy
-							i(69896),	-- Yellow Balloon Toy
+							--i(69896),	-- Yellow Balloon Toy [Not listing normally since it's only available during Children's Week]
 						},
 					}),
 					n(69977, {	-- Blood Guard Zar'shi <Ruthless Gladiator>
@@ -408,18 +422,18 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["coord"] = { 41.8, 73.0, 85 },
 						["g"] = {
-							un(2, i(103533, {	-- Vicious Saddle
-								un(2, i(70910)),	-- Horn of the Vicious War Wolf Mount
-								un(2, i(102533)),	-- Reins of the Vicious Skeletal Warhorse Mount
-								un(2, i(142235)),	-- Vicious War Bear
-								un(2, i(152869)),	-- Vicious War Fox
-								un(2, i(124540)),	-- Vicious War Kodo Mount
-								un(2, i(116778)),	-- Vicious War Raptor Mount
-								un(2, i(142437)),	-- Vicious War Scorpion Mount
-								un(2, i(140354)),	-- Vicious War Trike Mount
-								un(2, i(143649)),	-- Vicious War Turtle Mount
-								un(2, i(140348)),	-- Vicious Warstrider Mount
-							})),
+							i(103533, {	-- Vicious Saddle
+								i(70910),	-- Horn of the Vicious War Wolf Mount
+								i(102533),	-- Reins of the Vicious Skeletal Warhorse Mount
+								i(142235),	-- Vicious War Bear
+								i(152869),	-- Vicious War Fox
+								i(124540),	-- Vicious War Kodo Mount
+								i(116778),	-- Vicious War Raptor Mount
+								i(142437),	-- Vicious War Scorpion Mount
+								i(140354),	-- Vicious War Trike Mount
+								i(143649),	-- Vicious War Turtle Mount
+								i(140348),	-- Vicious Warstrider Mount
+							}),
 						},
 					}),
 					n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
@@ -1043,6 +1057,7 @@ _.Zones =
 							i(16486), 	-- First Sergeant's Silk Cuffs
 							i(16497), 	-- First Sergeant's Leather Armguards
 							i(16532), 	-- First Sergeant's Mail Wristguards
+							un(2, i(24551)),	-- Talisman of the Horde
 							i(16533), 	-- Warlord's Silk Cowl
 							i(16534), 	-- General's Silk Trousers
 							i(16535), 	-- Warlord's Silk Raiment

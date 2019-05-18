@@ -50,46 +50,46 @@ _.Zones =
 						}),
 						n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 							["groups"] = {
-								un(4, a(i(77549))),	-- Replica Grand Marshal's Demolisher
-								un(4, a(i(77550))),	-- Replica Grand Marshal's Swiftblade
-								un(4, a(i(77551))),	-- Replica Grand Marshal's Dirk
-								un(4, a(i(77552))),	-- Replica Grand Marshal's Mageblade
-								un(4, a(i(77553))),	-- Replica Grand Marshal's Warhammer
-								un(4, a(i(77554))),	-- Replica Grand Marshal's Sunderer
-								un(4, a(i(77555))),	-- Replica Grand Marshal's Hand Cannon
-								un(4, a(i(77556))),	-- Replica Grand Marshal's Stave
-								un(4, a(i(77557))),	-- Replica Grand Marshal's Hand Blade
-								un(4, a(i(77558))),	-- Replica Grand Marshal's Punisher
-								un(4, a(i(77560))),	-- Replica Grand Marshal's Claymore
-								un(4, a(i(77561))),	-- Replica Grand Marshal's Longsword
-								un(4, a(i(77562))),	-- Replica Grand Marshal's Handaxe
-								un(4, a(i(77563))),	-- Replica Grand Marshal's Battle Hammer
-								un(4, a(i(77564))),	-- Replica Grand Marshal's Glaive
-								un(4, a(i(77565))),	-- Replica Grand Marshal's Bullseye
-								un(4, a(i(77566))),	-- Replica Grand Marshal's Repeater
-								un(4, a(i(77594))),	-- Replica Grand Marshal's Tome of Restoration
-								un(4, a(i(77595))),	-- Replica Grand Marshal's Tome of Power
-								un(4, a(i(77596))),	-- Replica Grand Marshal's Aegis
-								un(4, h(i(77567))),	-- Replica High Warlord's Battle Mace
-								un(4, h(i(77568))),	-- Replica High Warlord's Spellblade
-								un(4, h(i(77569))),	-- Replica High Warlord's Quickblade
-								un(4, h(i(77571))),	-- Replica High Warlord's Destroyer
-								un(4, h(i(77572))),	-- Replica High Warlord's Pig Sticker
-								un(4, h(i(77573))),	-- Replica High Warlord's Pulverizer
-								un(4, h(i(77574))),	-- Replica High Warlord's Battle Axe
-								un(4, h(i(77575))),	-- Replica High Warlord's Claw
-								un(4, h(i(77576))),	-- Replica High Warlord's Razor
-								un(4, h(i(77577))),	-- Replica High Warlord's Greatsword
-								un(4, h(i(77578))),	-- Replica High Warlord's Recurve
-								un(4, h(i(77579))),	-- Replica High Warlord's Street Sweeper
-								un(4, h(i(77580))),	-- Replica High Warlord's Cleaver
-								un(4, h(i(77581))),	-- Replica High Warlord's War Staff
-								un(4, h(i(77582))),	-- Replica High Warlord's Blade
-								un(4, h(i(77584))),	-- Replica High Warlord's Bludgeon
-								un(4, h(i(77585))),	-- Replica High Warlord's Crossbow
-								un(4, h(i(77592))),	-- Replica High Warlord's Tome of Mending
-								un(4, h(i(77593))),	-- Replica High Warlord's Tome of Destruction
-								un(4, h(i(77597))),	-- Replica High Warlord's Shield Wall
+								 a(i(77549)),	-- Replica Grand Marshal's Demolisher
+								 a(i(77550)),	-- Replica Grand Marshal's Swiftblade
+								 a(i(77551)),	-- Replica Grand Marshal's Dirk
+								 a(i(77552)),	-- Replica Grand Marshal's Mageblade
+								 a(i(77553)),	-- Replica Grand Marshal's Warhammer
+								 a(i(77554)),	-- Replica Grand Marshal's Sunderer
+								 a(i(77555)),	-- Replica Grand Marshal's Hand Cannon
+								 a(i(77556)),	-- Replica Grand Marshal's Stave
+								 a(i(77557)),	-- Replica Grand Marshal's Hand Blade
+								 a(i(77558)),	-- Replica Grand Marshal's Punisher
+								 a(i(77560)),	-- Replica Grand Marshal's Claymore
+								 a(i(77561)),	-- Replica Grand Marshal's Longsword
+								 a(i(77562)),	-- Replica Grand Marshal's Handaxe
+								 a(i(77563)),	-- Replica Grand Marshal's Battle Hammer
+								 a(i(77564)),	-- Replica Grand Marshal's Glaive
+								 a(i(77565)),	-- Replica Grand Marshal's Bullseye
+								 a(i(77566)),	-- Replica Grand Marshal's Repeater
+								 a(i(77594)),	-- Replica Grand Marshal's Tome of Restoration
+								 a(i(77595)),	-- Replica Grand Marshal's Tome of Power
+								 a(i(77596)),	-- Replica Grand Marshal's Aegis
+								 h(i(77567)),	-- Replica High Warlord's Battle Mace
+								 h(i(77568)),	-- Replica High Warlord's Spellblade
+								 h(i(77569)),	-- Replica High Warlord's Quickblade
+								 h(i(77571)),	-- Replica High Warlord's Destroyer
+								 h(i(77572)),	-- Replica High Warlord's Pig Sticker
+								 h(i(77573)),	-- Replica High Warlord's Pulverizer
+								 h(i(77574)),	-- Replica High Warlord's Battle Axe
+								 h(i(77575)),	-- Replica High Warlord's Claw
+								 h(i(77576)),	-- Replica High Warlord's Razor
+								 h(i(77577)),	-- Replica High Warlord's Greatsword
+								 h(i(77578)),	-- Replica High Warlord's Recurve
+								 h(i(77579)),	-- Replica High Warlord's Street Sweeper
+								 h(i(77580)),	-- Replica High Warlord's Cleaver
+								 h(i(77581)),	-- Replica High Warlord's War Staff
+								 h(i(77582)),	-- Replica High Warlord's Blade
+								 h(i(77584)),	-- Replica High Warlord's Bludgeon
+								 h(i(77585)),	-- Replica High Warlord's Crossbow
+								 h(i(77592)),	-- Replica High Warlord's Tome of Mending
+								 h(i(77593)),	-- Replica High Warlord's Tome of Destruction
+								 h(i(77597)),	-- Replica High Warlord's Shield Wall
 							},
 							["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 						}),

@@ -632,27 +632,27 @@ _.Zones =
 						-- sz(4864, 5, {	--Storm's Fury Wreckage
 						-- }),
 						sz(4864, 6, {	--Temple of Earth
-							q(27952, {	--  The Explorers [A]
+							q(27952, {	--  The Explorers [Alliance]
 								["qg"] = 42573,	-- Earthcaller Yevaa
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 								["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
 							}),
-							q(27004, {	--  The Twilight Plot [A]
+							q(27004, {	--  The Twilight Plot [Alliance]
 								["qg"] = 44799,	-- Explorer Mowi
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {27952},
 							}),
-							q(27006, {	--  Fly Over [A]
+							q(27006, {	--  Fly Over [Alliance]
 								["qg"] = 44802,	-- Prospector Brewer
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(27040, {	--  Decryption Made Easy [A]
+							q(27040, {	--  Decryption Made Easy [Alliance]
 								["qg"] = 44799,	-- Explorer Mowi
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {27004,27006},
 							}),
-							q(27042, {	--  Fight Fire and Water and Air with... [A]
+							q(27042, {	--  Fight Fire and Water and Air with... [Alliance]
 								["groups"] = {
 									i(61447),	-- Wardfire Shoulders
 									i(61446),	-- Kaulslayer Grips
@@ -662,7 +662,7 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {27004,27006},
 							}),
-							q(27058, {	--  The Wrong Sequence [A]
+							q(27058, {	--  The Wrong Sequence [Alliance]
 								["groups"] = {
 									i(61439),	-- Gateshattering Hauberk
 									i(61441),	-- Starscraper Signet
@@ -671,32 +671,32 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {27040},
 							}),
-							q(28292, {	--  That's No Pyramid! [A]
+							q(28292, {	--  That's No Pyramid! [Alliance]
 								["qg"] = 44799,	-- Explorer Mowi
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {27058},
 							}),
-							q(27953, {	--  The Reliquary [H]
+							q(27953, {	--  The Reliquary [Horde]
 								["qg"] = 42573,	-- Earthcaller Yevaa
 								["races"] = HORDE_ONLY,
 								["isBreadcrumb"] = true,
 								["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
 							}),
-							q(27005, {	--  The Twilight Plot [H]
+							q(27005, {	--  The Twilight Plot [Horde]
 								["qg"] = 44823,	-- Examiner Rowe
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {27953},
 							}),
-							q(27008, {	--  Fly Over [H]
+							q(27008, {	--  Fly Over [Horde]
 								["qg"] = 44818,	-- Reliquary Jes'ca Darksun
 								["races"] = HORDE_ONLY,
 							}),
-							q(27041, {	--  Decryption Made Easy [H]
+							q(27041, {	--  Decryption Made Easy [Horde]
 								["qg"] = 44823,	-- Examiner Rowe
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {27005,27008},
 							}),
-							q(27043, {	--  Fight Fire and Water and Air with... [H]
+							q(27043, {	--  Fight Fire and Water and Air with... [Horde]
 								["groups"] = {
 									i(61444),	-- Bondshatter Shoulders
 									i(61443),	-- Silencer's Gauntlets
@@ -706,7 +706,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {27005,27008},
 							}),
-							q(27059, {	--  The Wrong Sequence [H]
+							q(27059, {	--  The Wrong Sequence [Horde]
 								["groups"] = {
 									i(61436),	-- Gateshattering Hauberk
 									i(61438),	-- Starscraper Signet
@@ -715,7 +715,7 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {27041},
 							}),
-							q(28293, {	--  That's No Pyramid! [H]
+							q(28293, {	--  That's No Pyramid! [Horde]
 								["qg"] = 44823,	-- Examiner Rowe
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = {27059},

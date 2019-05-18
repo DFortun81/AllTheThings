@@ -8,7 +8,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["mapID"] = 429,
 		["maps"] = { 430 },
 		["groups"] = {
-			n(-17, {	-- Quests 					
+			n(-17, {	-- Quests
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					i(87283),	-- Windstrong Leggings
 					i(87284),	-- Leggings of the Fifth Sun
@@ -59,7 +59,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 				cr(56448, e(672, {	-- Wise Mari
 					i(144017),	-- Waterburst Helm
-					i(144111),	-- Wind-Soaked 
+					i(144111),	-- Wind-Soaked
 					i(143960),	-- Riverbed Chestguard
 					i(143973),	-- Treads of Corrupted Water
 					i(144112),	-- Crystallized Droplet
@@ -114,7 +114,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					cr(56448, e(672, {	-- Wise Mari
 						ach(6460),	-- Hydrophobia
 						i(144017),	-- Waterburst Helm
-						i(144111),	-- Wind-Soaked 
+						i(144111),	-- Wind-Soaked
 						i(143960),	-- Riverbed Chestguard
 						i(143973),	-- Treads of Corrupted Water
 						i(144112),	-- Crystallized Droplet
@@ -184,7 +184,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["groups"] = {
 					cr(56448, e(672, {	-- Wise Mari
 						i(144017),	-- Waterburst Helm
-						i(144111),	-- Wind-Soaked 
+						i(144111),	-- Wind-Soaked
 						i(143960),	-- Riverbed Chestguard
 						i(143973),	-- Treads of Corrupted Water
 						i(144112),	-- Crystallized Droplet

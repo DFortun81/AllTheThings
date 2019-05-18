@@ -51,7 +51,7 @@ _.Zones =
 								["questID"] = 6032,
 								["qg"] = 11557,	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
-								["sourceQuest"] = 6031,	-- Runecloth
+								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["requireSkill"] = 197,	-- Requires: Tailoring
 								["groups"] = {
 									recipe(19435),	-- Mooncloth Boots

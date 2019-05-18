@@ -88,7 +88,7 @@ _.Zones =
 										},
 									},
 								},
-								{	-- Enforcing the Will of the King [H]
+								{	-- Enforcing the Will of the King [Horde]
 									["questID"] = 50548,	-- Enforcing the Will of the King
 									["coords"] = {
 										{ 65.61, 27.81 },
@@ -151,9 +151,6 @@ _.Zones =
 									["groups"] = {
 										{
 											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
 										},
 									},
 								},
@@ -163,21 +160,6 @@ _.Zones =
 									["groups"] = {
 										{
 											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
-										},
-									},
-								},
-								{ -- Naga Attack!
-									["questID"] = 54051,	-- Naga Attack!
-									["isWQ"] = 120,
-									["groups"] = {
-										{
-											["itemID"] = 165605,  -- Azsharan Medallion
-											["groups"] = {
-												i(168123),  -- Twitching Eyeball
-											},
 										},
 									},
 								},

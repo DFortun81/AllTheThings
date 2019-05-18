@@ -79,11 +79,11 @@ _.Achievements =
 							["itemID"] = 122718,	-- Clinking Present
 							["collectible"] = false,
 							["g"] = {
-								{	-- Chauffered Chopper [H]
-									["itemID"] = 120968,	-- Chauffered Chopper [H]
+								{	-- Chauffered Chopper [Horde]
+									["itemID"] = 120968,	-- Chauffered Chopper [Horde]
 								},
-								{	-- Chauffered Chopper [A]
-									["itemID"] = 122703,	-- Chauffered Chopper [A]
+								{	-- Chauffered Chopper [Alliance]
+									["itemID"] = 122703,	-- Chauffered Chopper [Alliance]
 								},
 							},
 						},
@@ -95,22 +95,22 @@ _.Achievements =
 						["groups"] = {
 							{
 								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
-								["criteriaID"] = 1,	-- Pirate Pepe (Spires of Arak 54.1 83.6)
+								["criteriaID"] = 1,			-- Pirate Pepe (Spires of Arak 54.1 83.6)
 								["description"] = "Located in Spires of Arak at 54.1 83.6"
 							},
 							{
 								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
-								["criteriaID"] = 2,	-- Viking Pepe (Nagrand 80.1 50.4)
+								["criteriaID"] = 2,			-- Viking Pepe (Nagrand 80.1 50.4)
 								["description"] = "Located in Nagrand at 80.1 50.4"
 							},
 							{
 								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
-								["criteriaID"] = 3,	-- Knight Pepe (Talador 51.0 63.3)
+								["criteriaID"] = 3,			-- Knight Pepe (Talador 51.0 63.3)
 								["description"] = "Located in Talador at 51.0 63.3"
 							},
 							{
 								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
-								["criteriaID"] = 4,	-- Ninja Pepe (Gorgrond 47.5 41.3)
+								["criteriaID"] = 4,			-- Ninja Pepe (Gorgrond 47.5 41.3)
 								["description"] = "Located in Gorgrond at 47.5 41.3"
 							},
 						},

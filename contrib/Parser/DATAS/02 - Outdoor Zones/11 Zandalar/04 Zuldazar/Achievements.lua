@@ -123,7 +123,7 @@ _.Zones =
 										["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
 										["questID"] = 50332,	-- Big Hunter Mon
 										["criteriaID"] = 4,	-- Big Hunter Mon
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											51145,	-- Curse of Jani (Alliance)
 											47442,	-- Curse of Jani (Horde)
 										},
@@ -137,7 +137,7 @@ _.Zones =
 										["itemID"] = 156963,	-- Golden Ravasaur Egg
 										["questID"] = 50308,	-- 50311 for giving her the actual item
 										["criteriaID"] = 1,	-- Golden Ravasaur Egg
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											51145,	-- Curse of Jani (Alliance)
 											47442,	-- Curse of Jani (Horde)
 										},
@@ -147,7 +147,7 @@ _.Zones =
 										["coord"] = { 61.8, 46.8 },	-- Trashpile pick-up
 										["questID"] = 50381,	-- The Great Hat Robbery
 										["criteriaID"] = 7,	-- The Great Hat Robbery
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											51145,	-- Curse of Jani (Alliance)
 											47442,	-- Curse of Jani (Horde)
 										},
@@ -161,7 +161,7 @@ _.Zones =
 										["itemID"] = 157794,	-- Feathered Viper Scale
 										["questID"] = 50431,	-- 50430 for giving Jani the item
 										["criteriaID"] = 10,	-- Feathered Viper Scale
-										["sourceQuests"] = { 
+										["sourceQuests"] = {
 											51145,	-- Curse of Jani (Alliance)
 											47442,	-- Curse of Jani (Horde)
 										},
@@ -177,19 +177,19 @@ _.Zones =
 							}),
 							ach(12851, {	-- Treasures of Zuldazar
 								["groups"] = {
-									o(281092, {	-- Witch Doctor's Hoard	
+									o(281092, {	-- Witch Doctor's Hoard
 										["criteriaID"] = 2,
 										["questID"] = 50259,
 										["coord"] = { 64.7, 21.7, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(279609, {	-- Spoils of Pandaria	
+									o(279609, {	-- Spoils of Pandaria
 										["criteriaID"] = 3,
 										["questID"] = 49936,
 										["coord"] = { 24.5, 27.0, 1177 },	-- lower level of Breath of Pa'ku
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(281655, {	-- Gift of the Brokenhearted	
+									o(281655, {	-- Gift of the Brokenhearted
 										["criteriaID"] = 4,
 										["questID"] = 50582,	-- 50950 for using the Incense prior to opening the chest itself.
 										["coord"] = { 51.5, 26.7, 862 },
@@ -201,19 +201,19 @@ _.Zones =
 										["coord"] = { 49.5, 65.3, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(281898, {	-- Dazar's Forgotten Chest	
+									o(281898, {	-- Dazar's Forgotten Chest
 										["criteriaID"] = 6,
 										["questID"] = 50707,
 										["coord"] = { 38.8, 34.4, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(284455, {	-- The Exile's Lament	
+									o(284455, {	-- The Exile's Lament
 										["criteriaID"] = 8,
 										["questID"] = 50949,
 										["coord"] = { 71.8, 16.7, 862 },
 										["icon"] = "Interface\\Icons\\garrison_bronzechest",
 									}),
-									o(290725, {	-- Riches of Tor'nowa	
+									o(290725, {	-- Riches of Tor'nowa
 										["criteriaID"] = 10,
 										["questID"] = 51624,
 										["coord"] = { 52.9, 47.2, 862 },
@@ -243,7 +243,7 @@ _.Zones =
 										["groups"] = {
 											qh(50394, {	-- Your Problem Now
 												["qg"] = 127377,	-- Pa'ku
-												["coord"] = { 71.4, 49.2 },	
+												["coord"] = { 71.4, 49.2 },
 												["sourceQuest"] = 50393,	-- A Child of Pa'ku
 											}),
 											qh(50402, {	-- SKREEEEE!

@@ -12,56 +12,56 @@ _.Zones =
 						["description"] = "Anyport, Drustvar",
 						["coord"] = { 19.2, 43.2 },
 					}),
-					fp(2106, {	-- Arom's Stand, Drustvar [A]
+					fp(2106, {	-- Arom's Stand, Drustvar [Alliance]
 						["description"] = "Arom's Stand, Drustvar",
 						["coords"] = {
 							{ 38.14, 52.53, 896 },
 						},
 					}),
-					fp(2037, {	-- Barbthorn Ridge, Drustvar [A]
+					fp(2037, {	-- Barbthorn Ridge, Drustvar [Alliance]
 						["description"] = "Barbthorn Ridge, Drustvar",
 						["coord"] = { 62.6, 23.8 },
 					}),
-					fp(2108, {	-- Falconhurst, Drustvar [A]
+					fp(2108, {	-- Falconhurst, Drustvar [Alliance]
 						["description"] = "Falconhurst, Drustvar",
 						["coord"] = { 27, 72.2 },
 					}),
-					fp(2056, {	-- Fallhaven, Drustvar (Ferry) [A]
+					fp(2056, {	-- Fallhaven, Drustvar (Ferry) [Alliance]
 						["description"] = "Fallhaven, Drustvar (Ferry)",
 						["coord"] = { 61.6, 36.6 },
 						--["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2033, {	-- Fallhaven, Drustvar [A]
+					fp(2033, {	-- Fallhaven, Drustvar [Alliance]
 						["description"] = "Fallhaven, Drustvar",
 						["coord"] = { 55.2, 34.8 },
 					}),
-					fp(2057, {	-- Fletcher's Hollow, Drustvar (Ferry) [A]
+					fp(2057, {	-- Fletcher's Hollow, Drustvar (Ferry) [Alliance]
 						["description"] = "Fletcher's Hollow, Drustvar (Ferry)",
 						["coord"] = { 69.4, 57.2 },
 						--["races"] = ALLIANCE_ONLY,
 					}),
-					fp(2035, {	-- Fletcher's Hollow, Drustvar [A]
+					fp(2035, {	-- Fletcher's Hollow, Drustvar [Alliance]
 						["description"] = "Fletcher's Hollow, Drustvar",
 						["coord"] = { 70.2, 60.4 },
 					}),
-					fp(2034, {	-- Hangman's Point, Drustvar [A]
+					fp(2034, {	-- Hangman's Point, Drustvar [Alliance]
 						["description"] = "Hangman's Point, Drustvar",
 						["coord"] = { 71, 40.8 },
 					}),
-					fp(2135, {	-- Krazzlefrazz Outpost, Drustvar [H] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
+					fp(2135, {	-- Krazzlefrazz Outpost, Drustvar [Horde] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 						["description"] = "Krazzlefrazz Outpost, Drustvar",
 						["coord"] = { 37.4, 24 },
 						--["races"] = HORDE_ONLY,
 					}),
-					fp(2275, {	-- Mudfisher Cove, Drustvar [H]
+					fp(2275, {	-- Mudfisher Cove, Drustvar [Horde]
 						["description"] = "Mudfisher Cove, Drustvar \n\nRequires completion of Mission Report: Mudfisher Cove and related quest line to unlock.",
 						["coord"] = { 62, 16.8 },
 					}),
-					fp(2274, {	-- Swiftwind Post, Drustvar [H]
+					fp(2274, {	-- Swiftwind Post, Drustvar [Horde]
 						["description"] = "Swiftwind Post, Drustvar \n\nRequires completion of Mission Report: Swiftwind Post and related quest line to unlock.",
 						["coord"] = { 66.4, 59.2 },
 					}),
-					fp(2107, {	-- Watchman's Rise, Drustvar [A]
+					fp(2107, {	-- Watchman's Rise, Drustvar [Alliance]
 						["description"] = "Watchman's Rise, Drustvar",
 						["coord"] = { 31.8, 30.4 },
 					}),

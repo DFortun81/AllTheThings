@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(-228, {	-- Flight Points
-					fp(248, {	-- Apothecary Camp, Howling Fjord	
+					fp(248, {	-- Apothecary Camp, Howling Fjord
 						["coord"] = { 26, 25 },
 					}),
 					fp(192, {	-- Camp Winterhoof, Howling Fjord
@@ -48,7 +48,7 @@ _.Zones =
 					fp(295, {	-- Kamagua, Howling Fjord
 						["coord"] = { 24.6, 57.8 },
 					}),
-					fp(190, {	-- New Agamand, Howling Fjord	
+					fp(190, {	-- New Agamand, Howling Fjord
 						["coord"] = { 52, 67.4 },
 					}),
 					fp(183, {	-- Valgarde Port, Howling Fjord
@@ -84,16 +84,16 @@ _.Zones =
 					}),
 				}),
 				n(-17, { 	-- Quests
-					a(ach(34, {	-- I've Toured the Fjord [A]
+					a(ach(34, {	-- I've Toured the Fjord [Alliance]
 						crit(1, {	--The Ill-Equipped Port
-							q(11228, {	--  Hell Has Frozen Over... [A]
+							q(11228, {	--  Hell Has Frozen Over... [Alliance]
 								["qg"] = 23547,	-- Macalroy
 							}),
-							q(11243, {	--  If Valgarde Falls... [A]
+							q(11243, {	--  If Valgarde Falls... [Alliance]
 								["qg"] = 23546,	-- Vice Admiral Keller
 								["sourceQuests"] = {11228},
 							}),
-							q(11244, {	--  Rescuing the Rescuers [A]
+							q(11244, {	--  Rescuing the Rescuers [Alliance]
 								["groups"] = {
 									i(35809),	-- Earthspike
 									i(35811),	-- Elekk-Horn Crossbow
@@ -105,27 +105,27 @@ _.Zones =
 								["qg"] = 23546,	-- Vice Admiral Keller
 								["sourceQuests"] = {11243},
 							}),
-							q(11420, {	--  The Path to Payback [A]
+							q(11420, {	--  The Path to Payback [Alliance]
 								["qg"] = 23728,	-- Guard Captain Zorek
 								["sourceQuests"] = {11244},
 							}),
-							q(11426, {	--  Locating the Mechanism [A]
+							q(11426, {	--  Locating the Mechanism [Alliance]
 								["qg"] = 23728,	-- Guard Captain Zorek
 								["sourceQuests"] = {11420},
 							}),
-							q(11427, {	--  Meet Lieutenant Icehammer... [A]
+							q(11427, {	--  Meet Lieutenant Icehammer... [Alliance]
 								["qg"] = 23728,	-- Guard Captain Zorek
 								["sourceQuests"] = {11426},
 							}),
-							q(11429, {	--  Drop It then Rock It! [A]
+							q(11429, {	--  Drop It then Rock It! [Alliance]
 								["qg"] = 24634,	-- Lieutenant Icehammer
 								["sourceQuests"] = {11427},
 							}),
-							q(11430, {	--  Harpoon Master Yavus [A]
+							q(11430, {	--  Harpoon Master Yavus [Alliance]
 								["qg"] = 24634,	-- Lieutenant Icehammer
 								["sourceQuests"] = {11429},
 							}),
-							q(11421, {	--  It Goes to 11... [A]
+							q(11421, {	--  It Goes to 11... [Alliance]
 								["groups"] = {
 									i(35841),	-- Frost-Trimmed Gauntlets
 									i(35842),	-- Azure Chain Hauberk
@@ -135,60 +135,60 @@ _.Zones =
 								["qg"] = 24634,	-- Lieutenant Icehammer
 								["sourceQuests"] = {11430},
 							}),
-							q(11436, {	--  Let's Go Surfing Now [A]
+							q(11436, {	--  Let's Go Surfing Now [Alliance]
 								["qg"] = 24634,	-- Lieutenant Icehammer
 								["sourceQuests"] = {11421},
 							}),
 						}),
 						crit(2, {	--Descendants of the Vrykul
-							q(11333, {	--  Into the World of Spirits [A]
+							q(11333, {	--  Into the World of Spirits [Alliance]
 								["qg"] = 23975,	-- Thoralius the Wise
 								["sourceQuests"] = {11244},
 							}),
-							q(11343, {	--  The Echo of Ymiron [A]
+							q(11343, {	--  The Echo of Ymiron [Alliance]
 								["qg"] = 23975,	-- Thoralius the Wise
 								["sourceQuests"] = {11333},
 							}),
-							q(11344, {	-- Anguish of Nifflevar [A]
+							q(11344, {	-- Anguish of Nifflevar [Alliance]
 								["groups"] = {
 									i(35832),	-- Blauvelt's Special Occasion Gloves
 									i(35834),	-- Nimblefinger Scaled Gloves
 									i(35835),	-- Antique Reinforced Legguards
 									i(35833),	-- Imperious Worghide Cap
-								},	
+								},
 								["sourceQuests"] = {11343},
-							}),	
-							q(11291, {	--  To Westguard Keep! [A]
+							}),
+							q(11291, {	--  To Westguard Keep! [Alliance]
 								["qg"] = 23546,	-- Vice Admiral Keller
 								["sourceQuests"] = {11290},
 							}),
 						}),
 						crit(3, {	--Iron Rune Constructs
-							q(11273, {	--  The Human League [A]
+							q(11273, {	--  The Human League [Alliance]
 								["qg"] = 23548,	-- Beltrand McSorf
 								["sourceQuests"] = {11244},
 							}),
-							q(11274, {	--  Zedd's Probably Dead [A]
+							q(11274, {	--  Zedd's Probably Dead [Alliance]
 								["qg"] = 24122,	-- Pulroy the Archaeologist
 								["sourceQuests"] = {11273},
 							}),
-							q(11276, {	--  And Then There Were Two... [A]
+							q(11276, {	--  And Then There Were Two... [Alliance]
 								["qg"] = 24145,	-- Zedd
 								["sourceQuests"] = {11274},
 							}),
-							q(11277, {	--  The Depths of Depravity [A]
+							q(11277, {	--  The Depths of Depravity [Alliance]
 								["qg"] = 24150,	-- Glorenfeld
 								["sourceQuests"] = {11276},
 							}),
-							q(11299, {	--  The Ring of Judgment [A]
+							q(11299, {	--  The Ring of Judgment [Alliance]
 								["qg"] = 24150,	-- Glorenfeld
 								["sourceQuests"] = {11277},
 							}),
-							q(11300, {	--  Stunning Defeat at the Ring [A]
+							q(11300, {	--  Stunning Defeat at the Ring [Alliance]
 								["qg"] = 24151,	-- Daegarn
 								["sourceQuests"] = {11299},
 							}),
-							q(11278, {	-- Return to Valgarde [A]
+							q(11278, {	-- Return to Valgarde [Alliance]
 								["groups"] = {
 									i(35820),	-- Deacon's Wraps
 									i(35818),	-- Stretch-Hide Spaulders
@@ -197,35 +197,35 @@ _.Zones =
 								},
 								["sourceQuests"] = {11300},
 							}),
-							q(11448, {	--  The Explorers' League Outpost [A]
+							q(11448, {	--  The Explorers' League Outpost [Alliance]
 								["qg"] = 23548,	-- Beltrand McSorf
 								["sourceQuests"] = {11278},
 							}),
-							q(11475, {	--  Tools to Get the Job Done [A]
+							q(11475, {	--  Tools to Get the Job Done [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11478,11474},
 							}),
-							q(11483, {	--  We Can Rebuild It [A]
+							q(11483, {	--  We Can Rebuild It [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11475},
 							}),
-							q(11484, {	--  We Have the Technology [A]
+							q(11484, {	--  We Have the Technology [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11475},
 							}),
-							q(11485, {	--  Iron Rune Constructs and You: Rocket Jumping [A]
+							q(11485, {	--  Iron Rune Constructs and You: Rocket Jumping [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11483,11484},
 							}),
-							q(11489, {	--  Iron Rune Constructs and You: Collecting Data [A]
+							q(11489, {	--  Iron Rune Constructs and You: Collecting Data [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11485},
 							}),
-							q(11491, {	--  Iron Rune Constructs and You: The Bluff [A]
+							q(11491, {	--  Iron Rune Constructs and You: The Bluff [Alliance]
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11489},
 							}),
-							q(11494, {	--  Lightning Infused Relics [A]
+							q(11494, {	--  Lightning Infused Relics [Alliance]
 								["groups"] = {
 									i(35844),	-- Shock-Resistant Hood
 									i(35846),	-- Banded Chain Gloves
@@ -234,7 +234,7 @@ _.Zones =
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11491},
 							}),
-							q(11495, {	--  The Delicate Sound of Thunder [A]
+							q(11495, {	--  The Delicate Sound of Thunder [Alliance]
 								["groups"] = {
 									i(35851),	-- Acid-Etched Knuckles
 									i(35849),	-- Featherweight Claymore
@@ -244,7 +244,7 @@ _.Zones =
 								["qg"] = 24807,	-- Walt
 								["sourceQuests"] = {11491},
 							}),
-							q(11501, {	-- News From the East [A]
+							q(11501, {	-- News From the East [Alliance]
 								["groups"] = {
 									i(35857),	-- Munificent Bulwark
 									i(35858),	-- Tome of Alacrity
@@ -372,11 +372,11 @@ _.Zones =
 							q(11157, {	--  The Clutches of Evil
 								["qg"] = 23749,	-- Captain Adams
 							}),
-							q(11187, {	--  Mage-Lieutenant Malister [A]
+							q(11187, {	--  Mage-Lieutenant Malister [Alliance]
 								["qg"] = 23749,	-- Captain Adams
 								["sourceQuests"] = {11157},
 							}),
-							q(11188, {	--  Two Wrongs... [A]
+							q(11188, {	--  Two Wrongs... [Alliance]
 								["groups"] = {
 									i(35871),	-- Indigo Robe of Replenishment
 									i(35873),	-- Interlinked Chain Girdle
@@ -386,11 +386,11 @@ _.Zones =
 								["qg"] = 23888,	-- Mage-Lieutenant Malister
 								["sourceQuests"] = {11187},
 							}),
-							q(11199, {	--  Report to Scout Knowles [A]
+							q(11199, {	--  Report to Scout Knowles [Alliance]
 								["qg"] = 23749,	-- Captain Adams
 								["sourceQuests"] = {11188},
 							}),
-							q(11202, {	-- Mission: Eternal Flame [A]
+							q(11202, {	-- Mission: Eternal Flame [Alliance]
 								["groups"] = {
 									i(35889),	-- Bone-Inlaid Bracers
 									i(35888),	-- Embossed Ermine Girdle
@@ -399,23 +399,23 @@ _.Zones =
 								},
 								["sourceQuests"] = {11199},
 							}),
-							q(11327, {	--  Mission: Package Retrieval [A]
+							q(11327, {	--  Mission: Package Retrieval [Alliance]
 								["qg"] = 23906,	-- Scout Knowles
 								["sourceQuests"] = {11202},
 							}),
-							q(11328, {	--  Mission: Forsaken Intel [A]
+							q(11328, {	--  Mission: Forsaken Intel [Alliance]
 								["qg"] = 23906,	-- Scout Knowles
 								["sourceQuests"] = {11327},
 							}),
-							q(11330, {	--  Absholutely... Thish Will Work! [A]
+							q(11330, {	--  Absholutely... Thish Will Work! [Alliance]
 								["qg"] = 24283,	-- Peppy Wrongnozzle
 								["sourceQuests"] = {11328},
 							}),
-							q(11331, {	--  You Tell Him ...Hic! [A]
+							q(11331, {	--  You Tell Him ...Hic! [Alliance]
 								["qg"] = 24283,	-- Peppy Wrongnozzle
 								["sourceQuests"] = {11330},
 							}),
-							q(11332, {	-- Mission: Plague This! [A]
+							q(11332, {	-- Mission: Plague This! [Alliance]
 								["groups"] = {
 									i(35893),	-- Coldstone-Inlaid Waistguard
 									i(35892),	-- Flamebinder Handwraps
@@ -426,23 +426,23 @@ _.Zones =
 							}),
 						}),
 						crit(8, {	--The Conqueror of Skorn
-							q(11248, {	--  Operation: Skornful Wrath [A]
+							q(11248, {	--  Operation: Skornful Wrath [Alliance]
 								["qg"] = 23749,	-- Captain Adams
 								["sourceQuests"] = {11332},
 							}),
-							q(11245, {	--  Towers of Certain Doom [A]
+							q(11245, {	--  Towers of Certain Doom [Alliance]
 								["qg"] = 24060,	-- Westguard Sergeant
 								["sourceQuests"] = {11248},
 							}),
-							q(11246, {	--  Gruesome, But Necessary [A]
+							q(11246, {	--  Gruesome, But Necessary [Alliance]
 								["qg"] = 24060,	-- Westguard Sergeant
 								["sourceQuests"] = {11248},
 							}),
-							q(11247, {	--  Burn Skorn, Burn! [A]
+							q(11247, {	--  Burn Skorn, Burn! [Alliance]
 								["qg"] = 24060,	-- Westguard Sergeant
 								["sourceQuests"] = {11248},
 							}),
-							q(11250, {	-- All Hail the Conqueror of Skorn! [A]
+							q(11250, {	-- All Hail the Conqueror of Skorn! [Alliance]
 								["groups"] = {
 									i(35909),	-- Sun-Fired Striders
 									i(35910),	-- Shaleground Bracers
@@ -453,11 +453,11 @@ _.Zones =
 							}),
 						}),
 						crit(9, {	--The Scourge and the Vrykul
-							q(11235, {	--  Dealing With Gjalerbron [A]
+							q(11235, {	--  Dealing With Gjalerbron [Alliance]
 								["qg"] = 23749,	-- Captain Adams
 								["sourceQuests"] = {11250},
 							}),
-							q(11236, {	--  Necro Overlord Mezhen [A]
+							q(11236, {	--  Necro Overlord Mezhen [Alliance]
 								["groups"] = {
 									i(35938),	-- Drape of Munificence
 									i(35878),	-- Dusk-Linked Leggings
@@ -473,11 +473,11 @@ _.Zones =
 								}),
 							}),
 							i(33289, {	-- Gjalerbron Attack Plans
-								q(11237, {	--  Gjalerbron Attack Plans [A]
+								q(11237, {	--  Gjalerbron Attack Plans [Alliance]
 									["qgs"] = {23991,23990,23989,24014},
 								}),
 							}),
-							q(11238, {	--  The Frost Wyrm and its Master [A]
+							q(11238, {	--  The Frost Wyrm and its Master [Alliance]
 								["groups"] = {
 									i(35880),	-- Earthwell Footwraps
 									i(35882),	-- Magispike Helm
@@ -487,11 +487,11 @@ _.Zones =
 								["qg"] = 23888,	-- Mage-Lieutenant Malister
 								["sourceQuests"] = {11237},
 							}),
-							q(11231, {	--  Of Keys and Cages [A]
+							q(11231, {	--  Of Keys and Cages [Alliance]
 								["qg"] = 24038,	-- Father Levariol
 								["sourceQuests"] = {11250},
 							}),
-							q(11239, {	--  In Service to the Light [A]
+							q(11239, {	--  In Service to the Light [Alliance]
 								["groups"] = {
 									i(35884),	-- Regal Pantaloons
 									i(35887),	-- Loam-Stained Greaves
@@ -501,7 +501,7 @@ _.Zones =
 								["qg"] = 24038,	-- Father Levariol
 								["sourceQuests"] = {11231},
 							}),
-							q(11432, {	--  Sleeping Giants [A]
+							q(11432, {	--  Sleeping Giants [Alliance]
 								["qg"] = 23888,	-- Mage-Lieutenant Malister
 								["sourceQuests"] = {11231},
 							}),
@@ -537,18 +537,18 @@ _.Zones =
 							}),
 						}),
 						crit(11, {	--The Iron Dwarves
-							q(11329, {	--  I'll Try Anything! [A]
+							q(11329, {	--  I'll Try Anything! [Alliance]
 								["qg"] = 24056,	-- Christopher Sloan
 							}),
-							q(11355, {	--  March of the Giants [A]
+							q(11355, {	--  March of the Giants [Alliance]
 								["qg"] = 24376,	-- Researcher Aderan
 								["sourceQuests"] = {11329},
 							}),
-							q(11358, {	--  The Lodestone [A]
+							q(11358, {	--  The Lodestone [Alliance]
 								["qg"] = 24376,	-- Researcher Aderan
 								["sourceQuests"] = {11355},
 							}),
-							q(11359, {	--  Demolishing Megalith [A]
+							q(11359, {	--  Demolishing Megalith [Alliance]
 								["qg"] = 24376,	-- Researcher Aderan
 								["sourceQuests"] = {11358},
 							}),
@@ -566,22 +566,22 @@ _.Zones =
 							}),
 						}),
 						crit(12, {	--Alpha Worg
-							q(11322, {	--  The Cleansing [A]
+							q(11322, {	--  The Cleansing [Alliance]
 								["qg"] = 24273,	-- Watcher Moonleaf
 							}),
-							q(11325, {	--  In Worg's Clothing [A]
+							q(11325, {	--  In Worg's Clothing [Alliance]
 								["qg"] = 24273,	-- Watcher Moonleaf
 								["sourceQuests"] = {11322},
 							}),
-							q(11414, {	--  Brother Betrayers [A]
+							q(11414, {	--  Brother Betrayers [Alliance]
 								["qg"] = 24261,	-- Ulfang
 								["sourceQuests"] = {11325},
 							}),
-							q(11416, {	--  Eyes of the Eagle [A]
+							q(11416, {	--  Eyes of the Eagle [Alliance]
 								["qg"] = 24261,	-- Ulfang
 								["sourceQuests"] = {11414},
 							}),
-							q(11326, {	-- Alpha Worg [A]
+							q(11326, {	-- Alpha Worg [Alliance]
 								["groups"] = {
 									i(35913),	-- Gholamweave Leggings
 									i(35915),	-- Darksteel Ringmail Greaves
@@ -625,7 +625,7 @@ _.Zones =
 						sz(1263, 5, {	--Vengeance Landing
 						}),
 						sz(1263, 6, {	--Steel Gate
-							q(11154, {	--  Scare the Guano Out of Them! [A]
+							q(11154, {	--  Scare the Guano Out of Them! [Alliance]
 								["groups"] = {
 									i(35896),	-- Icestriker Bands
 									i(35898),	-- Reinforced Tuskhide Hauberk
@@ -635,12 +635,12 @@ _.Zones =
 								["qg"] = 24227,	-- Engineer Feknut
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11176, {	--  See to the Operations [A]
+							q(11176, {	--  See to the Operations [Alliance]
 								["qg"] = 23891,	-- Overseer Irena Stonemantle
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11175},
 							}),
-							q(11390, {	-- I've Got a Flying Machine! [A]
+							q(11390, {	-- I've Got a Flying Machine! [Alliance]
 								["groups"] = {
 									i(35912),	-- Crackling Cloak
 									i(35911),	-- Unsparing Band
@@ -649,13 +649,13 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11176},
 							}),
-							q(11391, {	--  Steel Gate Patrol [A]
+							q(11391, {	--  Steel Gate Patrol [Alliance]
 								["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 								["isDaily"] = true,
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11390},
 							}),
-							q(11393, {	--  Where is Explorer Jaren? [A]
+							q(11393, {	--  Where is Explorer Jaren? [Alliance]
 								["qg"] = 23891,	-- Overseer Irena Stonemantle
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
@@ -684,7 +684,7 @@ _.Zones =
 						sz(1263, 11, {	--Giant's Run
 						}),
 						sz(1263, 12, {	--Fort Wildervar
-							q(11269, {	-- Down to the Wire [A]
+							q(11269, {	-- Down to the Wire [Alliance]
 								["groups"] = {
 									i(35926),	-- Artfully Tooled Leggings
 									i(35927),	-- Songscale Breastplate
@@ -693,12 +693,12 @@ _.Zones =
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11418, {	--  We Call Him Steelfeather [A]
+							q(11418, {	--  We Call Him Steelfeather [Alliance]
 								["qg"] = 24139,	-- Gil Grisert
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11269},
 							}),
-							q(11292, {	--  Preying Upon the Weak [A]
+							q(11292, {	--  Preying Upon the Weak [Alliance]
 								["groups"] = {
 									i(35864),	-- Fizznik's Patented Earwarmer
 									i(35863),	-- Earth-Infused Leggings
@@ -708,13 +708,13 @@ _.Zones =
 								["qg"] = 24131,	-- Trapper Jethan
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11302, {	--  The Enigmatic Frost Nymphs [A]
+							q(11302, {	--  The Enigmatic Frost Nymphs [Alliance]
 								["qg"] = 24282,	-- Lieutenant Maeve
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11329},
 								["isBreadcrumb"] = true,
 							}),
-							q(11284, {	--  The Yeti Next Door [A]
+							q(11284, {	--  The Yeti Next Door [Alliance]
 								["groups"] = {
 									i(35937),	-- Braxley's Backyard Moonshine
 									i(35929),	-- Gholamcloth Wrap
@@ -724,18 +724,18 @@ _.Zones =
 								["qg"] = 24176,	-- Foreman Colbey
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11410, {	--  The One That Got Away [A]
+							q(11410, {	--  The One That Got Away [Alliance]
 								["qg"] = 24056,	-- Christopher Sloan
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11329},
 							}),
 						}),
 						sz(1263, 13, {	--Ivald's Ruin
-							q(11477, {	--  Out of My Element? [A]
+							q(11477, {	--  Out of My Element? [Alliance]
 								["qg"] = 24811,	-- Donny
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11478, {	--  Outpost Over Yonder... [A]
+							q(11478, {	--  Outpost Over Yonder... [Alliance]
 								["qg"] = 24811,	-- Donny
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
@@ -747,7 +747,7 @@ _.Zones =
 						}),
 						sz(1263, 16, {	--Skorn
 							i(33314, {	-- Vrykul Scroll of Ascension
-								q(11249, {	--  Stop the Ascension! [A]
+								q(11249, {	--  Stop the Ascension! [Alliance]
 									["groups"] = {
 										i(35900),	-- Supple Doeskin Moccasins
 										i(35902),	-- Shock-Bound Spaulders
@@ -762,47 +762,47 @@ _.Zones =
 						sz(1263, 17, {	--The Twisted Glade
 						}),
 						sz(1263, 18, {	--Utgarde Keep
-							q(11251, {	--  Fresh Legs [A]
+							q(11251, {	--  Fresh Legs [Alliance]
 								["qg"] = 24106,	-- Scout Valory
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
 						}),
 						sz(1263, 19, {	--Westguard Keep
-							q(11153, {	--  Break the Blockade [A]
+							q(11153, {	--  Break the Blockade [Alliance]
 								["qg"] = 23895,	-- Bombardier Petrov
 								["isDaily"] = true,
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11406, {	--  Everything Must Be Ready [A]
+							q(11406, {	--  Everything Must Be Ready [Alliance]
 								["qg"] = 24494,	-- Quartermaster Brevin
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11332},
 							}),
-							q(11190, {	--  One Size Does Not Fit All [A]
+							q(11190, {	--  One Size Does Not Fit All [Alliance]
 								["qg"] = 23770,	-- Cannoneer Ely
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11155, {	--  Shoveltusk Soup Again? [A]
+							q(11155, {	--  Shoveltusk Soup Again? [Alliance]
 								["qg"] = 23773,	-- Chef Kettleblack
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11573, {	--  Orfus of Kamagua [A]
+							q(11573, {	--  Orfus of Kamagua [Alliance]
 								["qg"] = 25233,	-- Lunk-tusk
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
 							}),
-							q(11224, {	--  Send Them Packing [A]
+							q(11224, {	--  Send Them Packing [Alliance]
 								["qg"] = 23978,	-- Explorer Abigail
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11188},
 							}),
-							q(11218, {	--  Danger! Explosives! [A]
+							q(11218, {	--  Danger! Explosives! [Alliance]
 								["qg"] = 23976,	-- Sapper Steelring
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11188},
 							}),
-							q(11240, {	--  Leader of the Deranged [A]
+							q(11240, {	--  Leader of the Deranged [Alliance]
 								["groups"] = {
 									i(35917),	-- Wrathwrought Shoulderpads
 									i(35919),	-- Whispersteel Handguards
@@ -813,18 +813,18 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11218},
 							}),
-							q(11175, {	--  My Daughter [A]
+							q(11175, {	--  My Daughter [Alliance]
 								["qg"] = 23831,	-- Old Man Stonemantle
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11240,11224},
 								["isBreadcrumb"] = true,
 							}),
-							q(12297, {	--  Of Traitors and Treason [A]
+							q(12297, {	--  Of Traitors and Treason [Alliance]
 								["qg"] = 23749,	-- Captain Adams
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11250},
 							}),
-							q(12298, {	--  High Commander Halford Wyrmbane [A]
+							q(12298, {	--  High Commander Halford Wyrmbane [Alliance]
 								["qg"] = 23859,	-- Greer Orehammer
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {12297},
@@ -835,17 +835,17 @@ _.Zones =
 						sz(1263, 21, {	--Baleheim
 						}),
 						-- Need "Valgarde" Header
-							q(29608, {	--  Allies in Dalaran [A]
+							q(29608, {	--  Allies in Dalaran [Alliance]
 								["qg"] = 23736,	-- Pricilla Winterwind
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 							}),
-							q(13268, {	--  Cloth Scavenging [A]
+							q(13268, {	--  Cloth Scavenging [Alliance]
 								["qg"] = 26914,	-- Benjamin Clegg
 								["races"] = ALLIANCE_ONLY,
 								["requireSkill"] = 197,	-- Tailoring
 							}),
-							q(13087, {	-- Northern Cooking [A]
+							q(13087, {	-- Northern Cooking [Alliance]
 								["groups"] = {
 									recipe(57421),	-- Northern Stew
 								},
@@ -855,16 +855,16 @@ _.Zones =
 								--Requires Cooking at 350 to pick up
 								--BfA: Northrend Cooking is 2546
 							}),
-							q(12794, {	--  The Magical Kingdom of Dalaran [A]
+							q(12794, {	--  The Magical Kingdom of Dalaran [Alliance]
 								["qg"] = 23729,	-- Baron Ulrik von Stromhearth
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11255, {	--  Prisoners of Wyrmskull [A]
+							q(11255, {	--  Prisoners of Wyrmskull [Alliance]
 								["qg"] = 23546,	-- Vice Admiral Keller
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11244},
 							}),
-							q(11290, {	-- Dragonflayer Battle Plans [A]
+							q(11290, {	-- Dragonflayer Battle Plans [Alliance]
 								["groups"] = {
 									i(35814),	-- Benevolent Hood
 									i(35816),	-- Blood-Stained Chain Leggings
@@ -876,7 +876,7 @@ _.Zones =
 								["sourceQuests"] = {11255},
 							}),
 						-- Need "Daggercap Bay" Header
-							q(11443, {	--  Daggercap Divin' [A]
+							q(11443, {	--  Daggercap Divin' [Alliance]
 								["qg"] = 23730,	-- Harold Lagras
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -904,19 +904,19 @@ _.Zones =
 								["qg"] = 24544,	-- Old Icefin
 								["coord"] = { 19.8, 22.2 }
 							}),
-							q(11394, {	--  And You Thought Murlocs Smelled Bad! [A]
+							q(11394, {	--  And You Thought Murlocs Smelled Bad! [Alliance]
 								["qg"] = 23833,	-- Explorer Jaren
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11393},
 							}),
 							i(33961, {	-- Scourge Device
-								q(11395, {	--  It's a Scourge Device [A]
+								q(11395, {	--  It's a Scourge Device [Alliance]
 									["qgs"] = {24485,23644,24540,23645,23643},
 								["races"] = ALLIANCE_ONLY,
 									["sourceQuests"] = {11394},
 								}),
 							}),
-							q(11396, {	-- Bring Down Those Shields [A]
+							q(11396, {	-- Bring Down Those Shields [Alliance]
 								["groups"] = {
 									i(35932),	-- Earthbinder's Regenerating Band
 									i(35933),	-- Ramshorn Greathelm
@@ -928,21 +928,21 @@ _.Zones =
 								["sourceQuests"] = {11395},
 							}),
 						-- Need "Explorer's League" Header
-							q(11460, {	--  Trust is Earned [A]
+							q(11460, {	--  Trust is Earned [Alliance]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(11465, {	--  The Ransacked Caravan [A]
+							q(11465, {	--  The Ransacked Caravan [Alliance]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11460},
 							}),
-							q(11468, {	--  Falcon Versus Hawk [A]
+							q(11468, {	--  Falcon Versus Hawk [Alliance]
 								["qg"] = 24750,	-- Hidalgo the Master Falconer
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11465},
 							}),
-							q(11470, {	--  There Exists No Honor Among Birds [A]
+							q(11470, {	--  There Exists No Honor Among Birds [Alliance]
 								["groups"] = {
 									i(35860),	-- Flexible Leather Footwraps
 									i(35859),	-- Fire-Purifying Tunic
@@ -953,7 +953,7 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = {11465},
 							}),
-							q(11474, {	--  Problems on the High Bluff [A]
+							q(11474, {	--  Problems on the High Bluff [Alliance]
 								["qg"] = 24717,	-- Stanwad
 								["isBreadcrumb"] = true,
 								["races"] = ALLIANCE_ONLY,
@@ -961,7 +961,7 @@ _.Zones =
 							}),
 					}),
 					n(-9913, {	-- Horde [THESE QUESTS HAVE NOT BEEN SORTED YET!!]
-						h(ach(1356,	{	-- I've Toured the Fjord [H]
+						h(ach(1356,	{	-- I've Toured the Fjord [Horde]
 							crit(1, {	--Visitors from the Keep
 							}),
 							crit(2, {	--Assassinating Bjorn Halgurdsson
@@ -1051,13 +1051,13 @@ _.Zones =
 						-- 	["qg"] = 24135,	-- Greatmother Ankha
 						-- }),
 						-- qh(29609, {	--  Friends in Dalaran
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(12181, {	--  Give it a Name
 						-- 	["qg"] = 24251,	-- Chief Plaguebringer Harris
 						-- }),
 						-- qh(11266, {	--  Gjalerbron Attack Plans
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11279, {	--  Green Eggs and Whelps
 						-- 	["qg"] = 24157,	-- Plaguebringer Tillinghast
@@ -1078,7 +1078,7 @@ _.Zones =
 						-- 	["qg"] = 24137,	-- Dark Ranger Marrah
 						-- }),
 						-- qh(11398, {	--  It's a Scourge Device
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11297, {	--  Keeping Watch on the Interlopers
 						-- 	["qg"] = 24234,	-- Junat the Wanderer
@@ -1135,7 +1135,7 @@ _.Zones =
 						-- 	["qg"] = 24126,	-- Apothecary Lysander
 						-- }),
 						-- qh(11260, {	--  Stop the Ascension!
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11311, {	--  Suppressing the Elements
 						-- 	["qg"] = 24256,	-- Wind Tamer Kagan
@@ -1150,7 +1150,7 @@ _.Zones =
 						-- 	["qg"] = 24186,	-- Sage Mistwalker
 						-- }),
 						-- qh(11254, {	--  The Dragonskin Map
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11423, {	--  The Enemy's Legacy
 						-- 	["qg"] = 24548,	-- Scribe Seguine
@@ -1162,7 +1162,7 @@ _.Zones =
 						-- 	["qg"] = 24390,	-- Sage Edan
 						-- }),
 						-- qh(12791, {	--  The Magical Kingdom of Dalaran
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11167, {	--  The New Plague
 						-- 	["qg"] = 24126,	-- Apothecary Lysander
@@ -1174,7 +1174,7 @@ _.Zones =
 						-- 	["qg"] = 24362,	-- Longrunner Pembe
 						-- }),
 						-- qh(11453, {	--  The Slumbering King
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead. 
+						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
 						-- }),
 						-- qh(11229, {	--  The Windrunner Fleet
 						-- 	["qg"] = 23780,	-- High Executor Anselm
@@ -1518,9 +1518,9 @@ _.Zones =
 					})),
 				}),
 			},
-			["lvl"] = 58,	
+			["lvl"] = 58,
 			["achievementID"] = 1263,
-			["description"] = "|cff66ccffHowling Fjord is the eastern-most zone in Northrend, with breathtaking mountains, cliffs, and fortresses. Like Borean Tundra, it is intended for fresh level 68-72 players and introduces them to a variety of factions and lore plots. However, it is considered more challenging to level in this zone because of the steep mountains and windy paths between quest objectives compared to the flat plains of Borean Tundra. Alliance players learn about the reawakened vrykul, the prototype for humans, while Horde players assist the Forsaken in developing a new plague (perhaps with ethical qualms) to defeat the Lich King. Both sides also assist the Tuskarr in putting the spirits of their ancestors to rest, as well as aiding a group of humorous pirates.|r",				
+			["description"] = "|cff66ccffHowling Fjord is the eastern-most zone in Northrend, with breathtaking mountains, cliffs, and fortresses. Like Borean Tundra, it is intended for fresh level 68-72 players and introduces them to a variety of factions and lore plots. However, it is considered more challenging to level in this zone because of the steep mountains and windy paths between quest objectives compared to the flat plains of Borean Tundra. Alliance players learn about the reawakened vrykul, the prototype for humans, while Horde players assist the Forsaken in developing a new plague (perhaps with ethical qualms) to defeat the Lich King. Both sides also assist the Tuskarr in putting the spirits of their ancestors to rest, as well as aiding a group of humorous pirates.|r",
 		}),
 	}),
 };

@@ -1573,18 +1573,18 @@ _.Zones =
 				}),
 				n(-17,  {	-- Quests
 --[[				
-					qh( 29400),	-- A Season for Celebration
-					qh( 32406),	-- A Tactical Assault
-					qa( 29608),	-- Allies in Dalaran
+					qh(29400),	-- A Season for Celebration
+					qh(32406),	-- A Tactical Assault
+					qa(29608),	-- Allies in Dalaran
 					q(24580),	-- Anub'Rekhan Must Die!
 					q(28880),	-- Back To The Orphanage
 					q(28879),	-- Back To The Orphanage
 					q(13960),	-- Back To The Orphanage
 					q(13959),	-- Back To The Orphanage
 					q(13833),	-- Blood Is Thicker
-					qh( 11446),	-- Brewfest!
-					qh( 13474),	-- Candy Bucket
-					qa( 13473),	-- Candy Bucket
+					qh(11446),	-- Brewfest!
+					qh(13474),	-- Candy Bucket
+					qa(13473),	-- Candy Bucket
 					q(13472),	-- Candy Bucket
 					q(13463),	-- Candy Bucket
 					q(13272),	-- Cloth Scavenging
@@ -1593,19 +1593,18 @@ _.Zones =
 					q(29829),	-- Discretion is Key
 					q(13041),	-- Finish the Shipment
 					q(24585),	-- Flame Leviathan Must Die!
-					qh( 29609),	-- Friends in Dalaran
-					qh( 32405),	-- Hand of the Silver Covenant
+					qh(29609),	-- Friends in Dalaran
+					qh(32405),	-- Hand of the Silver Covenant
 					q(24587),	-- Ignis the Furnace Master Must Die!
 					q(24582),	-- Instructor Razuvious Must Die!
-					qh( 32403),	-- It Starts in the Sewers
+					qh(32403),	-- It Starts in the Sewers
 					q(13832),	-- Jewel Of The Sewers
-					qh( 32410),	-- Krasus' Landing
+					qh(32410),	-- Krasus' Landing
 					q(12790),	-- Learning to Leave and Return: the Magical Way
 					q(13927),	-- Little Orphan Kekek Of The Wolvar
 					q(13926),	-- Little Orphan Roo Of The Oracles
 					q(24589),	-- Lord Jaraxxus Must Die!
 					q(24590),	-- Lord Marrowgar Must Die!
-					q(8867),	-- Lunar Fireworks
 --]]
 					{
 						["questID"] = 14151,	-- Cardinal Ruby
@@ -1626,18 +1625,18 @@ _.Zones =
 						},
 					}),
 --[[
-					qh( 29073),	-- Make Haste to Orgrimmar!
-					qa( 29071),	-- Make Haste to Stormwind!
+					qh(29073),	-- Make Haste to Orgrimmar!
+					qa(29071),	-- Make Haste to Stormwind!
 					q(24584),	-- Malygos Must Die!
-					qh( 11357),	-- Masked Orphan Matron
+					qh(11357),	-- Masked Orphan Matron
 					q(13148),	-- Necklace Repair
 					q(24581),	-- Noth the Plaguebringer Must Die!
-					qh( 32412),	-- One Last Grasp
+					qh(32412),	-- One Last Grasp
 					q(24583),	-- Patchwerk Must Die!
-					qh( 14036),	-- Pilgrim's Bounty
+					qh(14036),	-- Pilgrim's Bounty
 					qa(13418),	-- Preparations for War
 						["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
-					qh( 13419),	-- Preparations for War
+					qh(13419),	-- Preparations for War
 						["sourceQuests"] = { 49555 }	-- Hero's Call: Icecrown!
 					q(24586),	-- Razorscale Must Die!
 					q(24579),	-- Sartharion Must Die!
@@ -1648,31 +1647,25 @@ _.Zones =
 					q(12961),	-- Shipment: Intricate Bone Figurine
 					q(12963),	-- Shipment: Shifting Sun Curio
 					q(12960),	-- Shipment: Wicked Sun Brooch
-					qh( 13483),	-- Spring Gatherers
+					qh(13483),	-- Spring Gatherers
 					q(12974),	-- The Champion's Call!
 					q(13830),	-- The Ghostfish
 					q(14166),	-- The Grateful Dead
-					qh( 32409),	-- The Kirin Tor's True Colors
-					qa(  8871),	-- The Lunar Festival
-					qh(  8874),	-- The Lunar Festival
-					qh(  8875),	-- The Lunar Festival
-					qa(  8870),	-- The Lunar Festival
-					qa(  8872),	-- The Lunar Festival
-					qh(  8873),	-- The Lunar Festival
+					qh(32409),	-- The Kirin Tor's True Colors
 					q(12796),	-- The Magical Kingdom of Dalaran
-					qh( 12791),	-- The Magical Kingdom of Dalaran
-					qa( 12794),	-- The Magical Kingdom of Dalaran
+					qh(12791),	-- The Magical Kingdom of Dalaran
+					qa(12794),	-- The Magical Kingdom of Dalaran
 					q(39210),	-- The Magical Kingdom of Dalaran
-					qh( 32411),	-- The Remaining Sunreavers
-					qh( 32408),	-- The Silver Covenant's Stronghold
-					qh( 32402),	-- The Situation In Dalaran
-					qh( 11971),	-- The Spinner of Summer Tales
+					qh(32411),	-- The Remaining Sunreavers
+					qh(32408),	-- The Silver Covenant's Stronghold
+					qh(32402),	-- The Situation In Dalaran
+					qh(11971),	-- The Spinner of Summer Tales
 					q(40173),	-- The Unstable Prism
 					q(14103),	-- Titanium Powder
 					q(26012),	-- Trouble at Wyrmrest
 					q(8883),	-- Valadar Starsong
-					qh( 32404),	-- Violence in the Arena
-					qa( 14203),	-- Waterlogged Recipe
+					qh(32404),	-- Violence in the Arena
+					qa(14203),	-- Waterlogged Recipe
 					q(12521),	-- Where in the World is Hemet Nesingwary?
 						["sourceQuests"] = { 
 							{ 49535 }	-- Warchief's Command: Sholazar Basin!
@@ -3351,6 +3344,14 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 60.4, 55.2, 502 },
 							["g"] = {
+								un(2, i(24551)),	-- Talisman of the Horde
+								un(2, i(42020)),	-- Hateful Gladiator's Pendant of Triumph
+								un(2, i(42021)),	-- Hateful Gladiator's Pendant of victory
+								un(2, i(42022)),	-- Hateful Gladiator's Pendant of dominance
+								un(2, i(42023)),	-- Hateful Gladiator's Pendant of subjugation
+								un(2, i(42024)),	-- Hateful Gladiator's Pendant of ascendance
+								un(2, i(42025)),	-- Hateful Gladiator's Pendant of deliverance
+								un(2, i(42026)),	-- Hateful Gladiator's Pendant of salvation
 								i(146646),	-- Arsenal: Hateful Gladiator's Weapons
 								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
 									i(41913),	-- Hateful Gladiator's Satin Hood
@@ -4537,6 +4538,14 @@ _.Zones =
 								un(2, i(48422)),	-- Relentless Gladiator's Repeater
 								un(2, i(48402)),	-- Relentless Gladiator's Sunderer
 								un(2, i(48406)),	-- Relentless Gladiator's Claymore)
+								un(2, i(48404)),	-- Relentless Gladiator's crusher
+								un(2, i(48412)),	-- Relentless Gladiator's acute staff
+								un(2, i(48432)),	-- Relentless Gladiator's fleshslicer
+								un(2, i(48515)),	-- Relentless Gladiator's grasp
+								un(2, i(48440)),	-- Relentless Gladiator's splitter
+								un(2, i(48507)),	-- Relentless Gladiator's handaxe
+								un(2, i(48442)),	-- Relentless Gladiator's eviscerator
+								un(2, i(48509)),	-- Relentless Gladiator's spike
 							},
 						}),
 						n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
@@ -5102,6 +5111,7 @@ _.Zones =
 								i(41066),	-- Relentless Gladiator's Wristguards of Dominance
 								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
+								
 							},
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)

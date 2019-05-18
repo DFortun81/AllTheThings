@@ -499,7 +499,7 @@ _.Zones =
 								["repeatable"] = true,
 								["sourceQuests"] = {27464},
 							}),
-							q( 27762, {	-- Fuselight, Ho!
+							q(27762, {	-- Fuselight, Ho!
 								["qg"] = 48704,	-- Gek Nozzlerocket
 								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
 								["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
@@ -1578,7 +1578,7 @@ _.Zones =
 								un(2, i(15815)),	-- Hameya's Cloak
 								un(2, i(15814)),	-- Hameya's Slayer
 							})),
-							un(40, q( 5942, {	-- Hidden Treasures
+							un(40, q(5942, {	-- Hidden Treasures
 								un(2, i(15856)),	-- Archlight Talisman
 								un(2, i(15857)),	-- Magebane Scion
 								un(2, i(15855)),	-- Ring of Protection
@@ -1599,7 +1599,7 @@ _.Zones =
 								un(2, i(19812)),	-- Rune of the Dawn
 								un(2, i(13209)),	-- Seal of the Dawn
 							})),
-							un(40, q( 5265, {	-- The Argent Hold
+							un(40, q(5265, {	-- The Argent Hold
 								un(2, i(13246)),	-- Argent Avenger
 								un(2, i(13249)),	-- Argent Crusader
 								un(2, i(13243)),	-- Argent Defender
@@ -1618,13 +1618,13 @@ _.Zones =
 							un(40, q(9213, {	-- The Shadow Guard
 								un(2, i(22638)),	-- Shadow Guard
 							})),
-							un(40, q( 6041, {	-- When Smokey Sings, I Get Violent
+							un(40, q(6041, {	-- When Smokey Sings, I Get Violent
 								un(2, i(17523)),	-- Smokey's Drape
 								un(2, i(16992)),	-- Smokey's Explosive Launcher
 								un(2, i(16993)),	-- Smokey's Fireshooter
 							})),
 						}),
-						n(  0, {	-- Zone Drop (Legacy)
+						n(0, {	-- Zone Drop (Legacy)
 							n(8546, {	-- Dark Adept <Cult of the Damned>
 								un(7, i(13499)),	-- Recipe: Greater Shadow Protection Potion
 							}),

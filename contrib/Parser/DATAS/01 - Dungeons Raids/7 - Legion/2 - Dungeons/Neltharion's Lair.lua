@@ -6,15 +6,16 @@ _.Instances = { tier(7, {	-- Legion
 	inst(767, { 	-- Neltharion's Lair
 		["lvl"] = 98,
 		["mapID"] = 731,
-		["groups"] = {
-			n(-4, {
-				ach(10996, {
+		["coord"] = { 49.5, 68.5, 650 },
+		["g"] = {
+			n(-4,  {	-- Achievements
+				ach(10996, {	-- Got to Ketchum All
 					["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
 					["crs"] = { 111746	},	-- Mushroom Merchant
-					["groups"] = {
+					["g"] = {
 						{
 							["itemID"] = 140212,	-- Ketchum Tablet
-							["groups"] = {
+							["g"] = {
 								{
 									["criteriaID"] = 7,	-- Scaly's Imprint Collected
 									["qg"] = 113204,	-- Scaly
@@ -59,7 +60,7 @@ _.Instances = { tier(7, {	-- Legion
 				o(250548, {	-- The Hammer of Khaz'goroth
 					q(42454, {	-- The Hammer of Khaz'goroth
 						["sourceQuest"] = 39781,	-- Neltharion's Lair: Death to the Underking
-						["groups"] = {
+						["g"] = {
 							i(141007),	-- Earthguard Handwraps
 							i(141008),	-- Earthguard Grips
 							i(141009),	-- Earthguard Gloves
@@ -68,7 +69,7 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 				}),
 			}),
-			d(1, {		-- Normal
+			d(1,  {		-- Normal
 				cr(91003, e(1662, {	-- Rokmora
 					i(134481),	-- Boulderbuckle Strap
 					i(137337),	-- Deepfurrow Bracers
@@ -131,9 +132,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(137359),	-- Pebble of Ages
 				})),
 			}),
-			d(2, {		-- Heroic
+			d(2,  {		-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers
@@ -202,7 +203,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(23, {		-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers

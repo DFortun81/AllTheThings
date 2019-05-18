@@ -47,8 +47,8 @@ _.Zones =
 						crit(7),		-- Betrayal
 						crit(8),		-- The Argent Patrol
 					}),
-]]--				
---[[				
+]]--
+--[[
 					q(12912),	-- A Great Storm Approaches
 					q(12555),	-- A Tangled Skein
 					q(12647),	-- An End to the Suffering
@@ -74,16 +74,16 @@ _.Zones =
 					q(12633),	-- Darkness Calling
 					q(12552),	-- Death to the Necromagi
 					q(12503),	-- Defend the Stand
-					qa( 11755),	-- Desecrate this Fire!
-					qh( 13449),	-- Desecrate this Fire!
-					qa( 11766),	-- Desecrate this Fire!
-					qh( 11749),	-- Desecrate this Fire!
-					qa( 11732),	-- Desecrate this Fire!
-					qh( 11745),	-- Desecrate this Fire!
-					qa( 11580),	-- Desecrate this Fire!
-					qh( 11581),	-- Desecrate this Fire!
-					qa( 13458),	-- Desecrate this Fire!
-					qa( 11786),	-- Desecrate this Fire!
+					qa(11755),	-- Desecrate this Fire!
+					qh(13449),	-- Desecrate this Fire!
+					qa(11766),	-- Desecrate this Fire!
+					qh(11749),	-- Desecrate this Fire!
+					qa(11732),	-- Desecrate this Fire!
+					qh(11745),	-- Desecrate this Fire!
+					qa(11580),	-- Desecrate this Fire!
+					qh(11581),	-- Desecrate this Fire!
+					qa(13458),	-- Desecrate this Fire!
+					qa(11786),	-- Desecrate this Fire!
 					q(12710),	-- Disclosure
 					q(12648),	-- Dressing Down
 					q(13556),	-- Eggs for Dubra'Jin
@@ -98,11 +98,11 @@ _.Zones =
 					q(12677),	-- Hazardous Materials
 					q(12674),	-- Hell Hath a Fury
 					q(12709),	-- Hexed Caches
-					qh( 13500),	-- Honor the Flame
-					qa( 13492),	-- Honor the Flame
+					qh(13500),	-- Honor the Flame
+					qa(13492),	-- Honor the Flame
 					q(12665),	-- I Sense a Disturbance
-					q(12902),	-- In Search Of Answers 
-						["sourceQuests"] = { 
+					q(12902),	-- In Search Of Answers
+						["sourceQuests"] = {
 							{ 49534 }	-- Warchief's Command: Zul'Drak!
 							{ 49552 }	-- Hero's Call: Zul'Drak!
 						},
@@ -126,13 +126,13 @@ _.Zones =
 					q(12916),	-- Our Only Hope
 					q(12596),	-- Pa'Troll
 					q(12740),	-- Parachutes for the Argent Crusade
-					qa( 11882),	-- Playing with Fire
+					qa(11882),	-- Playing with Fire
 					q(12650),	-- Plundering Their Own
 					q(12510),	-- Precious Elemental Fluids
 					q(12666),	-- Preparations for the Underworld
 					q(12584),	-- Pure Evil
 					q(12721),	-- Rampage
-					qa( 12770),	-- Reallocating Resources
+					qa(12770),	-- Reallocating Resources
 					q(12635),	-- Relics of the Snow Leopard Goddess
 					q(12663),	-- Reunited
 					q(12676),	-- Sabotage
@@ -140,7 +140,7 @@ _.Zones =
 					q(12640),	-- Sealing the Rifts
 					q(12667),	-- Seek the Wind Serpent Goddess
 					q(12672),	-- Setting the Stage
-					qh( 12763),	-- Shifting Priorities
+					qh(12763),	-- Shifting Priorities
 					q(12643),	-- Silver Lining
 					q(12799),	-- Siphoning the Spirits
 					q(12553),	-- Skimmer Spinnerets
@@ -149,7 +149,7 @@ _.Zones =
 					q(12597),	-- Something for the Pain
 					q(12642),	-- Spirit of Rhunok
 					q(12609),	-- Stocking the Shelves
-					q(12507),	-- Strange Mojo					
+					q(12507),	-- Strange Mojo
 					q(12649),	-- Suit Up!
 					q(13549),	-- Tails Up
 					q(12795),	-- Taking a Stand
@@ -196,8 +196,8 @@ _.Zones =
 					q(12629),	-- You Can Run, But You Can't Hide
 					q(12685),	-- You Reap What You Sow
 					q(12686),	-- Zero Tolerance
-					q(39208),	-- Zul'Drak	
---]]					
+					q(39208),	-- Zul'Drak
+--]]
 					q(12555,  {  -- A Tangled Skein
 						i(39806),
 						i(39822),
@@ -441,7 +441,7 @@ _.Zones =
 						i(39845),	-- Ancestral Gauntlets
 						i(39826),	-- Bloodletter's Blade
 					}),
-				}),	
+				}),
 				n(-16, { 	-- Rares
 					{	-- Gondria
 						["npcID"] = 33776,
@@ -551,9 +551,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 64,	
+			["lvl"] = 64,
 			["achievementID"] = 1267,
-			["description"] = "|cff66ccffZul'Drak is a zone in central Northrend, intended for level 75+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.|r",				
+			["description"] = "|cff66ccffZul'Drak is a zone in central Northrend, intended for level 75+ players leveling. It is the home of the Drakkari ice trolls, who have gone insane after sacrificing their loa gods to fight off the Scourge. The Argent Dawn and the Zandalari tribe have tried to restore order to the zone, after its decimation and betrayal by Drakkuru. The zone is covered in Scourge blight and abandoned ziggurats, with Gundrak at its pinnacle.|r",
 		}),
 	}),
 };

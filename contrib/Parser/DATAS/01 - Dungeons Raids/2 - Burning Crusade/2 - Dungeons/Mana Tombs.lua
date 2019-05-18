@@ -8,7 +8,26 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 272,
 		["coord"] = { 39.63, 57.67, 108 },	-- Mana-Tombs, Terokkar Forest
 		["groups"] = {
-			n( 0, {	-- Zone Drops
+			n(-17, {	-- Quests
+				q(29573, {	-- Safety is Job One
+					["qg"] = 54692,	-- Artificer Morphalius
+					["sourceQuests"] = {
+						29582,	-- Grek's Crazy Night
+						29583,	-- Eckert the Mad
+					},
+				}),
+				q(29575, {	-- Undercutting the Competition
+					["qg"] = 54692,	-- Artificer Morphalius
+					["sourceQuests"] = {
+						29582,	-- Grek's Crazy Night
+						29583,	-- Eckert the Mad
+					},
+				}),
+				q(29574, {	-- Intriguing Specimens
+					["qg"] = 54694,	-- Mamdy the "Ologist"
+				}),
+			}),
+			n(0, {	-- Zone Drops
 				n(18317, {	-- Ethereal Priest
 					dr(6.0, i(22543)),	-- Formula: Enchant Boots - Fortitude
 				}),

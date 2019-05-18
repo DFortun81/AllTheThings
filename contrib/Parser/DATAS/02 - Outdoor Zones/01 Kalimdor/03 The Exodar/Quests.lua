@@ -11,7 +11,6 @@ _.Zones =
 					qg(17120, qa(27225, {	-- A Summons from Ander Germaine
 						["classes"] = {1},
 					})),
-					qg(16817, qa( 9365)),	-- A Thief's Reward
 					qg(17538, qa(10968)),	-- Call on the Farseer
 					]]--
 					qa(9625, {	-- Elekks Are Serious Business
@@ -40,7 +39,7 @@ _.Zones =
 						qa(27724),	-- Hero's Call: Vashj'ir!
 						qa(28544),	-- Hero's Call: Winterspring!
 						qa(29156),	-- The Troll Incursion
-					}),	
+					}),
 					]]--
 					q(605, {	-- Hippogryph Master Stephanos
 						["qg"] = 16768,	-- Nurguni
@@ -60,9 +59,17 @@ _.Zones =
 					qg(16761, qa(27265, {	-- Lord Grayson Shadowbreaker
 						["classes"] = {2},
 					})),
-					qg(16756, qa(27268, {	-- Make Haste to the Cathedral
-						["classes"] = {5},
-					})),
+--]]
+					qa(27268, {	-- Make Haste to the Cathedral
+						["isBreadcrumb"] = true,
+						["classes"] = { 5 },	-- Priest
+						["coords"] = {
+							{ 33.0, 65.4, 103 },
+							{ 38.8, 51.0, 103 },
+						},
+						["qg"] = 16756,	-- Caedmos
+					}),
+--[[
 					qg(17120, qa(28258, {	-- Meet with Ander Germaine
 						["classes"] = {1},
 					})),
@@ -83,12 +90,12 @@ _.Zones =
 						["sourceQuests"] = { 9605 },	-- Hippogryph Master Stephanos
 					}),
 					--[[
-					qg(17468, qa( 9762)),	-- The Unwritten Prophecy
-					qg(17468, qa( 9699)),	-- Truth or Fiction
+					qg(17468, qa(9762)),	-- The Unwritten Prophecy
+					qg(17468, qa(9699)),	-- Truth or Fiction
 					qg(17122, qa(27266, {	-- Wulf Calls
 						["classes"] = {3},
-					})),				
---]]				
+					})),
+--]]
 				}),
 			},
 		}),

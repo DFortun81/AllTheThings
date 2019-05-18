@@ -44,7 +44,6 @@ _.WorldDrops =
 					i(36614),	-- Yew Bow
 					i(36615),	-- Expert's Longbow
 					i(36616),	-- Dutiful Longbow
-					i(36617),	-- Yielding Bow
 					i(36618),	-- Twisted Longbow
 					i(36619),	-- Astral Light Bow
 					i(36620),	-- Tracking Bow
@@ -61,7 +60,6 @@ _.WorldDrops =
 					i(36628),	-- Under-Arm Crossbow
 					i(36629),	-- Ferocious Crossbow
 					i(36630),	-- Sinewed Crossbow
-					i(36631),	-- Horned Crossbow
 					i(36632),	-- Slingshot Crossbow
 					i(36633),	-- Palisade Crossbow
 					i(36634),	-- Pain Repeater
@@ -134,7 +132,6 @@ _.WorldDrops =
 					i(36642),	-- Flintlock Gun
 					i(36643),	-- Tracker's Musket
 					i(36644),	-- Inelegant Musket
-					i(36645),	-- Tuskarr Boomstick
 					i(36646),	-- Haggard Gun
 					i(36647),	-- Noisy Blaster
 					i(36648),	-- Trapper's Rifle
@@ -221,7 +218,6 @@ _.WorldDrops =
 					i(36600),	-- Village Scythe
 					i(36601),	-- Patient Harpoon
 					i(36602),	-- Rust-Covered Polearm
-					i(36603),	-- Archaic Longspear
 					i(36604),	-- Grizzly Glaive
 					i(36605),	-- Wind Scythe
 					i(36606),	-- Rugged Polearm
@@ -272,7 +268,6 @@ _.WorldDrops =
 					i(36698),	-- Conifer Cone Staff
 					i(36699),	-- Iceberg Staff
 					i(36700),	-- Peat Greatstaff
-					i(36701),	-- Pine Needle Staff
 					i(36702),	-- Melting Icestaff
 					i(36703),	-- Tusked Greatstaff
 					i(36704),	-- Hive Comb Staff
@@ -310,7 +305,6 @@ _.WorldDrops =
 					i(36530),	-- Whetted Ironblade
 					i(36531),	-- Sawtooth Greatsword
 					i(36532),	-- Shark Fin Blade
-					i(36533),	-- Adorned Broadsword
 					i(36534),	-- Tempered-Steel Blade
 					i(36535),	-- Dragon's Rib Sword
 					i(36536),	-- Inlaid Greatsword

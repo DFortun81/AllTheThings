@@ -13,10 +13,12 @@ To do:
 _.Achievements = 
 {
 	n(-9958, {	-- Player vs Player
+		["achievementID"] = 12412,
 		["g"] = {
 			n(-10001, {	-- Seething Shore
 				["maps"] = { 
-					--907,	-- Seething Shore (Trial Map) BROKEN MINILIST TECH MAKES ALL PVP ACHIEVEMENTS SHOW EVEN ON TRIAL CHARACTERS!?!J!@
+					907,	-- Seething Shore
+					-- 907 doubles as the trial map, but i feel like it's better to have it show the achievements in the BG for consistency across battlegrounds.  confusing for trials, but oh well!
 				},
 				["g"] = {
 					ach(12412, {	-- Master of Seething Shore
@@ -46,6 +48,5 @@ _.Achievements =
 				},
 			}),
 		},
-		["achievementID"] = 12412,
 	}),
 };

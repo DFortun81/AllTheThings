@@ -31,8 +31,8 @@ _.Zones =
 							},
 						}),
 						n(134293, {	-- Azerite-Infused Slag
-							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [A]
-							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [H]
+							["allianceQuestID"] = 50563, 	-- Azerite-Infused Slag [Alliance]
+							["hordeQuestID"] = 49305,		-- Azerite-Infused Slag [Horde]
 							["coord"] = { 32.98, 26.80, 863 },
 							["g"] = {
 								i(161100, {	-- Fused-Slag Girdle
@@ -387,7 +387,7 @@ _.Zones =
 							["questID"] = 49469,
 							["coords"] = {
 								{ 38.7, 29.0, 863 },	-- entrance
-							 -- { 38.7, 26.7, 863 },	-- mob (if we ever have ability to 
+							 -- { 38.7, 26.7, 863 },	-- mob (if we ever have ability to
 							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(161095),	-- Queensguard Specter Legwraps

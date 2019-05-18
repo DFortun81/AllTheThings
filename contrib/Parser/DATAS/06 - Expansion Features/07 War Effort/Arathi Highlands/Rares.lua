@@ -11,8 +11,8 @@ _.ExpansionFeatures =
 					-- Note!! Parser why do you have to hate altQuestID but export to it >>
 					["g"] = {
 						{	-- Beastmaster Kaman
-							["allianceQuestID"] = 53083, 	-- Beastrider Kama [A]
-							["hordeQuestID"] = 53504,		-- Beastrider Kama [H]
+							["allianceQuestID"] = 53083, 	-- Beastrider Kama [Alliance]
+							["hordeQuestID"] = 53504,		-- Beastrider Kama [Horde]
 							["npcID"] = 142709,				-- Beastrider Kama
 							["qg"] = 142709,				-- Beastrider Kama
 							["isWeekly"] = true,
@@ -26,8 +26,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Branchlord Aldrus
-							["allianceQuestID"] = 53013,	-- Branchlord Aldrus [A]
-							["hordeQuestID"] = 53505,		-- Branchlord Aldrus [H]
+							["allianceQuestID"] = 53013,	-- Branchlord Aldrus [Alliance]
+							["hordeQuestID"] = 53505,		-- Branchlord Aldrus [Horde]
 							["npcID"] = 142508,				-- Branchlord Aldrus
 							["qg"] = 142508,				-- Branchlord Aldrus
 							["isWeekly"] = true,
@@ -41,8 +41,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Burning Goliath
-							["allianceQuestID"] = 53017,	-- Burning Goliath [A]
-							["hordeQuestID"] = 53506,		-- Burning Goliath [H]
+							["allianceQuestID"] = 53017,	-- Burning Goliath [Alliance]
+							["hordeQuestID"] = 53506,		-- Burning Goliath [Horde]
 							["npcID"] = 141615,				-- Burning Goliath
 							["qg"] =  141615,				-- Burning Goliath
 							["isWeekly"] = true,
@@ -56,8 +56,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Cresting Goliath
-							["allianceQuestID"] = 53018,	-- Cresting Goliath [A]
-							["hordeQuestID"] = 53531,		-- Cresting Goliath [H]
+							["allianceQuestID"] = 53018,	-- Cresting Goliath [Alliance]
+							["hordeQuestID"] = 53531,		-- Cresting Goliath [Horde]
 							["npcID"] = 141618,				-- Cresting Goliath
 							["qg"] = 141618,				-- Cresting Goliath
 							["isWeekly"] = true,
@@ -71,8 +71,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Darbel Montrose
-							["allianceQuestID"] = 53084,	-- Darbel Montrose [A]
-							["hordeQuestID"] = 53507,		-- Darbel Montrose [H]
+							["allianceQuestID"] = 53084,	-- Darbel Montrose [Alliance]
+							["hordeQuestID"] = 53507,		-- Darbel Montrose [Horde]
 							["npcID"] = 142688,				-- Darbel Montrose
 							["qg"] =  142688,				-- Darbel Montrose
 							["isWeekly"] = true,
@@ -87,7 +87,7 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Doomrider Helgrim [A Only]
-							["allianceQuestID"] = 53085,	-- Doomrider Helgrim [A]
+							["allianceQuestID"] = 53085,	-- Doomrider Helgrim [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["npcID"] = 142741,				-- Doomrider Helgrim
 							["qg"] = 142741,				-- Doomrider Helgrim
@@ -103,8 +103,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Echo of Myzrael
-							["allianceQuestID"] = 53059,	-- Echo of Myzrael [A]
-							["hordeQuestID"] = 53508,		-- Echo of Myzrael [H]
+							["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
+							["hordeQuestID"] = 53508,		-- Echo of Myzrael [Horde]
 							["npcID"] = 141668,				-- Echo of Myzrael
 							["qg"] = 1416668,				-- Echo of Myzrael
 							["isWeekly"] = true,
@@ -118,8 +118,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Foulbelly
-							["allianceQuestID"] = 53086,	-- Foulbelly [A]
-							["hordeQuestID"] = 53509,		-- Foulbelly [H]
+							["allianceQuestID"] = 53086,	-- Foulbelly [Alliance]
+							["hordeQuestID"] = 53509,		-- Foulbelly [Horde]
 							["npcID"] = 142686,				-- Foulbelly
 							["qg"] = 142686,				-- Foulbelly
 							["isWeekly"] = true,
@@ -134,8 +134,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Fozruk
-							["allianceQuestID"] = 53019,	-- Fozruk [A]
-							["hordeQuestID"] = 53510,		-- Fozruk [H]
+							["allianceQuestID"] = 53019,	-- Fozruk [Alliance]
+							["hordeQuestID"] = 53510,		-- Fozruk [Horde]
 							["npcID"] = 142433,				-- Fozruk
 							["qg"] = 142433,				-- Fozruk
 							["isWeekly"] = true,
@@ -150,8 +150,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Geomancer Flintdagger 
-							["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [A]
-							["hordeQuestID"] = 53511,		-- Geomancer Flintdagger [H]
+							["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [Alliance]
+							["hordeQuestID"] = 53511,		-- Geomancer Flintdagger [Horde]
 							["npcID"] = 142662,				-- Geomancer Flintdagger
 							["qg"] = 142662,				-- Geomancer Flintdagger
 							["isWeekly"] = true,
@@ -165,8 +165,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Horrific Apparition
-							["allianceQuestID"] = 53087,	-- Horrific Apparition [A]
-							["hordeQuestID"] = 53512,		-- Horrific Apparition [H]
+							["allianceQuestID"] = 53087,	-- Horrific Apparition [Alliance]
+							["hordeQuestID"] = 53512,		-- Horrific Apparition [Horde]
 							["qg"] = 142725,				-- Horrific Apparition
 							["npcID"] = 142725,				-- Horrific Apparition
 							["isWeekly"] = true,
@@ -197,8 +197,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Kor'gresh Coldrage
-							["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [A]
-							["hordeQuestID"] = 53513,		-- Kor'gresh Coldrage [H]
+							["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [Alliance]
+							["hordeQuestID"] = 53513,		-- Kor'gresh Coldrage [Horde]
 							["npcID"] = 142112,				-- Kor'gresh Coldrage
 							["qg"] = 142112,				-- Kor'gresh Coldrage
 							["isWeekly"] = true,
@@ -212,8 +212,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Kovork
-							["allianceQuestID"] = 53089,	-- Kovork [A]
-							["hordeQuestID"] = 53514,		-- Kovork [H]
+							["allianceQuestID"] = 53089,	-- Kovork [Alliance]
+							["hordeQuestID"] = 53514,		-- Kovork [Horde]
 							["npcID"] = 142684,				-- Kovork
 							["isWeekly"] = true,
 							["coords"] = {
@@ -227,8 +227,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Man-Hunter Rog
-							["allianceQuestID"] = 53090,	-- Man-Hunter Rog [A]
-							["hordeQuestID"] = 53515,		-- Man-Hunter Rog [H]
+							["allianceQuestID"] = 53090,	-- Man-Hunter Rog [Alliance]
+							["hordeQuestID"] = 53515,		-- Man-Hunter Rog [Horde]
 							["npcID"] = 142716,				-- Man-Hunter Rog
 							["qg"] = 142716,				-- Man-Hunter Rog
 							["crs"] = {
@@ -245,8 +245,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Molok the Crusher
-							["allianceQuestID"] = 53057,	-- Molok the Crusher [A]
-							["hordeQuestID"] = 53516,		-- Molok the Crusher [H]
+							["allianceQuestID"] = 53057,	-- Molok the Crusher [Alliance]
+							["hordeQuestID"] = 53516,		-- Molok the Crusher [Horde]
 							["npcID"] = 141942,				-- Molok the Crusher
 							["qg"] = 141942,				-- Molok the Crusher
 							["isWeekly"] = true,
@@ -260,8 +260,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Nimar the Slayer
-							["allianceQuestID"] = 53091,	-- Nimar the Slayer [A]
-							["hordeQuestID"] = 53517,		-- Nimar the Slayer [H]
+							["allianceQuestID"] = 53091,	-- Nimar the Slayer [Alliance]
+							["hordeQuestID"] = 53517,		-- Nimar the Slayer [Horde]
 							["npcID"] = 142692,				-- Nimar the Slayer
 							["qg"] = 142692,				-- Nimar the Slayer
 							["isWeekly"] = true,
@@ -275,8 +275,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Overseer Krix 
-							["allianceQuestID"] = 53014,	-- Overseer Krix [A]
-							["hordeQuestID"] = 53518,		-- Overseer Krix [H]
+							["allianceQuestID"] = 53014,	-- Overseer Krix [Alliance]
+							["hordeQuestID"] = 53518,		-- Overseer Krix [Horde]
 							["npcID"] = 142423,				-- Overseer Krix
 							["qg"] = 142423,				-- Overseer Krix
 							["isWeekly"] = true,
@@ -291,8 +291,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Plaguefeather
-							["allianceQuestID"] = 53020,	-- Plaguefeather [A]
-							["hordeQuestID"] = 53519,		-- Plaguefeather [H]
+							["allianceQuestID"] = 53020,	-- Plaguefeather [Alliance]
+							["hordeQuestID"] = 53519,		-- Plaguefeather [Horde]
 							["npcID"] = 142435,				-- Plaguefeather
 							["qg"] = 142435,				-- Plaguefeather
 							["isWeekly"] = true,
@@ -306,8 +306,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Ragebeak
-							["allianceQuestID"] = 53016,	-- Ragebeak [A]
-							["hordeQuestID"] = 53522,		-- Ragebeak [H]
+							["allianceQuestID"] = 53016,	-- Ragebeak [Alliance]
+							["hordeQuestID"] = 53522,		-- Ragebeak [Horde]
 							["npcID"] = 142436,				-- Ragebeak
 							["qg"] = 142436,				-- Ragebeak
 							["isWeekly"] = true,
@@ -322,8 +322,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Rumbling Goliath
-							["allianceQuestID"] = 53021,	-- Rumbling Goliath [A]
-							["hordeQuestID"] = 53523,	-- Rumbling Goliath [H]
+							["allianceQuestID"] = 53021,	-- Rumbling Goliath [Alliance]
+							["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
 							["npcID"] = 141620,		-- Rumbling Goliath
 							["qg"] = 141620,		-- Rumbling Goliath
 							["isWeekly"] = true,
@@ -337,8 +337,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Ruul Onestone
-							["allianceQuestID"] = 53092,	-- Ruul Onestone [A]
-							["hordeQuestID"] = 53524,		-- Ruul Onestone [H]
+							["allianceQuestID"] = 53092,	-- Ruul Onestone [Alliance]
+							["hordeQuestID"] = 53524,		-- Ruul Onestone [Horde]
 							["npcID"] = 142683,				-- Ruul Onestone
 							["qg"] = 142683,				-- Ruul Onestone
 							["isWeekly"] = true,
@@ -352,8 +352,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Singer
-							["allianceQuestID"] = 53093,	-- Singer [A]
-							["hordeQuestID"] = 53525,		-- Singer [H]
+							["allianceQuestID"] = 53093,	-- Singer [Alliance]
+							["hordeQuestID"] = 53525,		-- Singer [Horde]
 							["npcID"] = 142690,				-- Singer
 							["qg"] = 142690,				-- Singer
 							["isWeekly"] = true,
@@ -368,8 +368,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Skullripper
-							["allianceQuestID"] = 53022,	-- Skullripper [A]
-							["hordeQuestID"] = 53526,		-- Skullripper [H]
+							["allianceQuestID"] = 53022,	-- Skullripper [Alliance]
+							["hordeQuestID"] = 53526,		-- Skullripper [Horde]
 							["npcID"] = 142437,				-- Skullripper
 							["qg"] = 142437,				-- Skullripper
 							["isWeekly"] = true,
@@ -383,8 +383,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Thundering Goliath
-							["allianceQuestID"] = 53023,	-- Thundering Goliath [A]
-							["hordeQuestID"] = 53527,		-- Thundering Goliath [H]
+							["allianceQuestID"] = 53023,	-- Thundering Goliath [Alliance]
+							["hordeQuestID"] = 53527,		-- Thundering Goliath [Horde]
 							["npcID"] = 141616,				-- Thundering Goliath
 							["qg"] = 141616,				-- Thundering Goliath
 							["isWeekly"] = true,
@@ -398,8 +398,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Venomarus 
-							["allianceQuestID"] = 53024,	-- Venomarus [A]
-							["hordeQuestID"] = 53528,		-- Venomarus [H]
+							["allianceQuestID"] = 53024,	-- Venomarus [Alliance]
+							["hordeQuestID"] = 53528,		-- Venomarus [Horde]
 							["npcID"] = 142438,				-- Venomarus
 							["qg"] = 142438,				-- Venomarus
 							["isWeekly"] = true,
@@ -413,8 +413,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Yogursa
-							["allianceQuestID"] = 53015,	-- Yogursa [A]
-							["hordeQuestID"] = 53529,		-- Yogursa [H]
+							["allianceQuestID"] = 53015,	-- Yogursa [Alliance]
+							["hordeQuestID"] = 53529,		-- Yogursa [Horde]
 							["npcID"] = 142440,				-- Yogursa
 							["qg"] = 142440,				-- Yogursa
 							["isWeekly"] = true,
@@ -428,8 +428,8 @@ _.ExpansionFeatures =
 							},
 						},
 						{	-- Zalas Witherbark <Warband Leader>
-							["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [A]
-							["hordeQuestID"] = 53530,		-- Zalas Witherbark <Warband Leader> [H]
+							["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [Alliance]
+							["hordeQuestID"] = 53530,		-- Zalas Witherbark <Warband Leader> [Horde]
 							["npcID"] = 142682,				-- Zalas Witherbark <Warband Leader>
 							["qg"] = 142682,				-- Zalas Witherbark <Warband Leader>
 							["isWeekly"] = true,

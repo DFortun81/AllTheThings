@@ -53,6 +53,13 @@ _.Zones =
 							},
 						},
 					},
+					{	-- A Gnome's Respite
+						["questID"] = 1071,
+						["u"] = 40,
+						["qg"] = 4077,	-- Gaxim Rustfizzle
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1085,	-- On Guard in Stonetalon
+					},
 					{	-- A Proper Peace Offerin'
 						["questID"] = 25837,
 						["qg"] = 41278,	-- "Cookie" McWeaksauce
@@ -356,9 +363,10 @@ _.Zones =
 					},
 					{	-- Gerenzo the Traitor
 						["questID"] = 25729,
+						["qg"] = 40895,	-- Professor Xakxak Gyromate
 						["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "To start this quest, go to the end of the small bridge at 64.5 43.8 and it will auto-prompt.  To reach it, you will have to fly or walk up the mountain path that starts at 67.9 46.4.",
+						["coord"] = { 35.36, 71.14, 63 },
 					},
 					{	-- Gerenzo Wrenchwhistle
 						["questID"] = 1096,
@@ -398,6 +406,7 @@ _.Zones =
 					{	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 						["questID"] = 25938,
 						["qg"] = 41487,	-- Hierophant Malyk
+						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Hungry Pups
@@ -590,11 +599,18 @@ _.Zones =
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 					},
---[[ 				n( 41937,	-- Marshal Paltrow
+--[[ 				n(41937,	-- Marshal Paltrow
 						i(56474,	-- Orders from Base Camp
 							qh(26016),	-- Orders from Base Camp (I didn't receive this while questing - Wholly has it marked as REMOVED)
 						}),
 					}), --]]
+					{	-- On Guard in Stonetalon
+						["questID"] = 1085,
+						["u"] = 40,
+						["qg"] = 4080,	-- Kaela Shadowspear
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1070,	-- On Guard in Stonetalon
+					},
 					{	-- Orders from High Command
 						["questID"] = 25650,
 						["qg"] = 40881,	-- Minx
@@ -717,6 +733,7 @@ _.Zones =
 						["qg"] = 41023,	-- Overlord Krom'gar
 						["coord"] = { 66.1, 63.7, 65 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 						["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 						["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					},
@@ -884,8 +901,10 @@ _.Zones =
 						["questID"] = 25671,
 						["qg"] = 40896,	-- Lord Fallowmere
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 						["description"] = "This quest cannot be completed after reaching Exalted with Darnassus, and possibly cannot be completed after reaching level 30 or finishing the Stonetalon Mountains questline.",
 						["sourceQuest"] = 25652,	-- Commandeer That Ballon!
+						["coord"] = { 59.57, 56.95, 65 },
 					},
 					{	-- They Put the Assass in... Never Mind
 						["questID"] = 25806,
@@ -918,6 +937,14 @@ _.Zones =
 							i(57510),	-- Masha's Armbands
 							i(131486),	-- Cinch of the Grieving Father
 						},
+					},
+					{	-- Trouble in the Deeps
+						["u"] = 40,
+						["questID"] = 6562,
+						["qg"] = 11862,	-- Tsunaman
+						["races"] = HORDE_ONLY,
+						["coord"] = { 47.2, 64.3, 65 },
+						["isBreadcrumb"] = true,
 					},
 					{	-- Wanted Poster: Besseleth
 						["objectID"] = 177904,

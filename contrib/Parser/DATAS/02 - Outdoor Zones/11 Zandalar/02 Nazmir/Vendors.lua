@@ -35,7 +35,7 @@ _.Zones =
 								},
 							},
 						},
-						n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary> [H]
+						n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary> [Horde]
 							["groups"] = {
 								i(160547),	-- Talanji's Expedition Tabard*
 								i(161774),	-- Reins of the Expedition Bloodswarmer*

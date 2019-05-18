@@ -66,80 +66,165 @@ _.Zones =
 							crit(10),		-- Pristine High Apothecary's Hood
 							crit(11),		-- Pristine Bwonsamdi Voodoo Mask
 							crit(12),		-- Pristine Blowgun of the Sethrak
-						})),	
+						})),
 						h(ach(12754)),	-- Zandalari Fisherman
 						h(ach(12737)),	-- Zandalari Master of All
 						--]]
-						qh(51962, {	-- Lumbering Away
-							["description"] = "Requires 50 Zandalari Mining",
-							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
-							["groups"] = {
-								recipe(253334),	-- Monelite Deposit Rank 2
-							},
-						}),
-						qh(52014, {	-- Ritualistic Prepartions
-							["description"] = "Requires 50 Zandalari Mining",
-							["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
-							["groups"] = {
-								recipe(253337),	-- Storm Silver Deposit Rank 2
-							},
-						}),
-						-- Alchemy Questline
-						qh(50112, {	-- Casting the First Stone
-							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
-							["coord"] = { 42.2, 38.0, 1165 },
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50113, {	-- Ocular Extracts
-							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
-							["coord"] = { 42.2, 38.0, 1165 },
-							["sourceQuest"] = 50112,	-- Casting the First Stone
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50115, {	-- Changing the Scenery
-							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
-							["coord"] = { 42.2, 38.0, 1165 },
-							["sourceQuest"] = 50112,	-- Casting the First Stone
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50116, {	-- A Possible Solution
-							["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
-							["coord"] = { 42.2, 38.0, 1165 },
-							["sourceQuests"] = { 
-								50115,	-- Changing the Scenery
-								50113,	-- Ocular Extracts
-							},
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50117, {	-- A Deathly Draught
-							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
-							["coord"] = { 65.2, 36.9, 863 },
-							["sourceQuest"] = 50116,
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50118, {	-- A Stone's Throw
-							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
-							["coord"] = { 65.2, 36.9, 863 },
-							["sourceQuest"] = 50116,
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						qh(50119, {	-- Chemically Compounded
-							["qg"] = 132680,	-- Zukashi <Master of Transmutations>
-							["coord"] = { 65.2, 36.9, 863 },
-							["sourceQuests"] = { 
-								50117,	-- A Deathly Draught
-								50118,	-- A Stone's Throw	
-							},
-							["requireSkill"] = 171,	-- Alchemy
-						}),
-						o(280957, {	-- Zukashi's Satchel
-							qh(50120, {	-- A Recipe for Success
-								["coord"] = { 62.9, 28.9, 863 },
-								["sourceQuest"] = 50119,
+						n(-180, {	-- Alchemy
+							-- Tools of Trade Questline
+							qh(50112, {	-- Casting the First Stone
+								["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+								["coord"] = { 42.2, 38.0, 1165 },
 								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50113, {	-- Ocular Extracts
+								["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+								["coord"] = { 42.2, 38.0, 1165 },
+								["sourceQuest"] = 50112,	-- Casting the First Stone
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50115, {	-- Changing the Scenery
+								["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+								["coord"] = { 42.2, 38.0, 1165 },
+								["sourceQuest"] = 50112,	-- Casting the First Stone
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50116, {	-- A Possible Solution
+								["qg"] = 122703,	-- Clever Kumali <Alchemist Trainer>
+								["coord"] = { 42.2, 38.0, 1165 },
+								["sourceQuests"] = {
+									50115,	-- Changing the Scenery
+									50113,	-- Ocular Extracts
+								},
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50117, {	-- A Deathly Draught
+								["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+								["coord"] = { 65.2, 36.9, 863 },
+								["sourceQuest"] = 50116,	-- A Possible Solution
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50118, {	-- A Stone's Throw
+								["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+								["coord"] = { 65.2, 36.9, 863 },
+								["sourceQuest"] = 50116,	-- A Possible Solution
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							qh(50119, {	-- Chemically Compounded
+								["qg"] = 132680,	-- Zukashi <Master of Transmutations>
+								["coord"] = { 65.2, 36.9, 863 },
+								["sourceQuests"] = {
+									50117,	-- A Deathly Draught
+									50118,	-- A Stone's Throw
+								},
+								["requireSkill"] = 171,	-- Alchemy
+							}),
+							o(280957, {	-- Zukashi's Satchel
+								qh(50120, {	-- A Recipe for Success
+									["coord"] = { 62.9, 28.9, 863 },
+									["sourceQuest"] = 50119,	-- Chemically Compounded
+									["requireSkill"] = 171,	-- Alchemy
+									["groups"] = {
+										recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+									},
+								}),
+							}),
+						}),
+						n(-188, {	-- Mining
+							qh(51962, {	-- Lumbering Away
+								["description"] = "Requires 50 Zandalari Mining",
+								["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
 								["groups"] = {
-									recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-								},	
+									recipe(253334),	-- Monelite Deposit Rank 2
+								},
+							}),
+							qh(52014, {	-- Ritualistic Prepartions
+								["description"] = "Requires 50 Zandalari Mining",
+								["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
+								["groups"] = {
+									recipe(253337),	-- Storm Silver Deposit Rank 2
+								},
+							}),
+						}),
+						n(-190, {	-- Tailoring
+							-- Tools of Trade Questline
+							qh(53938, {	-- A Friend in Needle
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 43.5, 34.8, 1165 },
+								["requireSkill"] = 197,
+							}),
+							qh(53940, {	-- A Stitch in Time
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 43.5, 34.8, 1165 },
+								["sourceQuest"] = 53938,	-- A Friend in Needle
+								["requireSkill"] = 197,
+							}),
+							qh(55188, {	-- Tearing at the Seams
+								["qg"] = 145022,	-- Timeweaver Delormi <Synchronous Tailors>
+								["sourceQuest"] = 53940,	-- A Stitch in Time
+								["requireSkill"] = 197,
+							}),
+							q(53810, {	-- The Severed Thread
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 62.0, 53.9, 75 },
+								["sourceQuests"] = {
+									55177,	-- Tearing at the Seams (Alliance)
+									55188,	-- Tearing at the Seams (Horde)
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53813, {	-- Rolling Up the Sleeves
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 43.5, 34.8, 75 },
+								["sourceQuests"] = {
+									55177,	-- Tearing at the Seams (Alliance)
+									55188,	-- Tearing at the Seams (Horde)
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53858, {	-- Step Into Her Shoes
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 39.1, 63.3, 75 },
+								["sourceQuests"] = {
+									53810,	-- The Severed Thread
+									53813,	-- Rolling Up the Sleeves
+								},
+								["requireSkill"] = 197,
+							}),
+							q(53866, {	-- If The Shoe Fits...
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 63.8, 68.8, 680 },
+								["sourceQuest"] = 53858,	-- Step Into Her Shoes
+								["requireSkill"] = 197,
+							}),
+							q(55214, {	-- Seam Stress
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 64.2, 69.5, 680 },
+								["sourceQuest"] = 53866,	-- If The Shoe Fits...
+								["requireSkill"] = 197,
+							}),
+							q(53868, {	-- Saving Nine
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 7.2, 24.5, 942 },
+								["sourceQuest"] = 55214,	-- Seam Stress
+								["requireSkill"] = 197,
+							}),
+							q(53869, {	-- Killing Time
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 71.6, 39.8, 115 },
+								["sourceQuest"] = 53868,	-- Saving Nine
+								["requireSkill"] = 197,
+							}),
+							qh(53962, {	-- Cut from the Same Cloth
+								["qg"] = 151134,	-- Timeweaver Delormi <Synchronous Tailors>
+								["coord"] = { 71.6, 39.8, 115 },
+								["sourceQuest"] = 53869,	-- Killing Time
+								["requireSkill"] = 197,
+								["groups"] = {
+									recipe(292946, {	-- Recipe: Synchronous Thread
+										["requireSkill"] = 197,
+									}),
+								},
 							}),
 						}),
 					},
@@ -157,4 +242,3 @@ _.Zones =
 		}),
 	}),
 };
---]]

@@ -417,20 +417,39 @@ _.Zones =
 							},
 							{	-- Craggle Wobbletop <Toys and Novelties>
 								["npcID"] = 52358,	-- Craggle Wobbletop <Toys and Novelties>
-								["description"] = "Walks around the canals outside the Trade District.",
+								["coords"] = {
+									{ 56.31, 68.45, 84 },	-- Craggle Wobbletop Path
+									{ 56.67, 66.57, 84 },	-- Craggle Wobbletop Path
+									{ 56.75, 70.04, 84 },	-- Craggle Wobbletop Path
+									{ 57.19, 71.63, 84 },	-- Craggle Wobbletop Path
+									{ 57.57, 65.42, 84 },	-- Craggle Wobbletop Path
+									{ 57.63, 73.23, 84 },	-- Craggle Wobbletop Path
+									{ 58.07, 74.83, 84 },	-- Craggle Wobbletop Path
+									{ 58.44, 64.31, 84 },	-- Craggle Wobbletop Path
+									{ 58.51, 76.42, 84 },	-- Craggle Wobbletop Path
+									{ 59.12, 77.98, 84 },	-- Craggle Wobbletop Path
+									{ 59.44, 63.31, 84 },	-- Craggle Wobbletop Path
+									{ 60.44, 62.44, 84 },	-- Craggle Wobbletop Path
+									{ 61.21, 61.78, 84 },	-- Craggle Wobbletop Path
+									{ 62.31, 61.34, 84 },	-- Craggle Wobbletop Path
+									{ 63.44, 61.05, 84 },	-- Craggle Wobbletop Path
+									{ 64.62, 61.54, 84 },	-- Craggle Wobbletop Path
+									{ 65.63, 62.99, 84 },	-- Craggle Wobbletop Path
+									{ 66.61, 64.43, 84 },	-- Craggle Wobbletop Path
+								},
 								["g"] = {
 									i(54436),	-- Blue Clockwork Rocket Bot Pet**
 									i(95621),	-- Warbot Ignition Key Pet
 									i(54343),	-- Blue Crashin' Thrashin' Racer Controller Toy**
 									i(104324),	-- Foot Ball Toy**
-									un(20, i(69895)),	-- Green Balloon Toy
+									--i(69895),	-- Green Balloon Toy [Not listing normally since it's only available during Children's Week]
 									i(137663),	-- Soft Foam Sword Toy
 									i(104323),	-- The Pigskin Toy
 									i(54438),	-- Tiny Blue Ragdoll Toy**
 									i(54437),	-- Tiny Green Ragdoll Toy**
 									i(44606),	-- Toy Train Set Toy**
 									i(45057),	-- Wind-Up Train Wrecker Toy**
-									un(20, i(69896)),	-- Yellow Balloon Toy
+									--i(69896),	-- Yellow Balloon Toy [Not listing normally since it's only available during Children's Week]
 								},
 							},
 							{	-- Dalia Skyblossom <Cooking Trainer>
@@ -2902,7 +2921,7 @@ _.Zones =
 							{	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["npcID"] = 73190,	-- Necrolord Sipe <Combatant Mount Quartermaster>
 								["coord"] = { 76.88, 65.60, 84 },
-								["g"] = bubbleDown({["u"] = 2}, {
+								["g"] = {
 									i(103533, {	-- Vicious Saddle
 										i(70909),	-- Reins of the Vicious War Steed
 										i(102514),	-- Reins of the Vicious Warsaber
@@ -2915,7 +2934,7 @@ _.Zones =
 										i(116777),	-- Vicious War Ram
 										i(143648),	-- Vicious War Turtle
 									}),
-								}),
+								},
 							},
 							{	-- Old Whitenose <Dragon Turtle Breeder>
 								["npcID"] = 65068,	-- Old Whitenose <Dragon Turtle Breeder>

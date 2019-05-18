@@ -18,7 +18,13 @@ _.Achievements =
 					}),
 					ach(4959),		-- Beware of the 'Unbeatable?' Pterodactyl (Mount Hyjal)
 					ach(5483),		-- Bounce
-					ach(4874),		-- Breaking Out of Tol Barad
+					{	-- Breaking Out of Tol Barad
+						["achievementID"] = 4874,	-- Breaking Out of Tol Barad
+						["maps"] = {
+							244,	-- Tol Barad
+							245,	-- Tol Barad Peninsula
+						},
+					},
 					ach(4870, {		-- Coming Down the Mountain
 						crit(1),		-- The Return of the Ancients
 						crit(2),		-- Shrine of Goldrinn

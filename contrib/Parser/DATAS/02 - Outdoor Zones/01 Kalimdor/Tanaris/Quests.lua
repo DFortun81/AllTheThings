@@ -665,9 +665,29 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					},
 					{	-- Nice Hat...
-						["questID"] = 12513,
-						["qg"] = 28126,	-- Don Carlos
+						["questID"] = 12513,	-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
+						-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
+						["qg"] = 28126,			-- Don Carlos
 						["coord"] = { 50.7, 27.5, 71 },
+						["isBreadcrumb"] = true,
+						["g"] = {
+							{	-- Haliscan Brimmed Hat
+								["itemID"] = 38276,			-- Haliscan Brimmed Hat
+								["ignoreSource"] = true,	-- White Item
+							},
+						},
+					},
+					{	-- Nice Hat...
+						["questID"] = 12515,	-- CRIEVE NOTE: Got this on Druid, who doesn't have 12513 completed. [5/4/2019]
+						["qg"] = 28126,			-- Don Carlos
+						["coord"] = { 50.7, 27.5, 71 },
+						["isBreadcrumb"] = true,
+						["g"] = {
+							{	-- Haliscan Brimmed Hat
+								["itemID"] = 38276,			-- Haliscan Brimmed Hat
+								["ignoreSource"] = true,	-- White Item
+							},
+						},
 					},
 					{	-- Not Dead Yet! -- never went live
 						["questID"] = 38890,
@@ -713,6 +733,7 @@ _.Zones =
 						["qg"] = 151132,	-- Feathers
 						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 						["sourceQuest"] = 53816,	-- Some Reassembly Required
+						["lvl"] = 120,
 					},
 					{	-- Rescue OOX-17/TN!
 						["questID"] = 648,
@@ -729,6 +750,7 @@ _.Zones =
 						["qg"] = 151132,	-- Feathers
 						["coord"] = { 62.1, 45.3, 71 },	-- Tanaris
 						["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
+						["lvl"] = 120,
 					},
 					{	-- Return to Apothecary Zinge
 						["questID"] = 864,
@@ -896,6 +918,7 @@ _.Zones =
 							53815,	-- Whatever Happened to Saffy Flivvers?
 							53817,	-- Whatever Happened to Grizzek Fizzwrench?
 						},
+						["lvl"] = 120,
 					},
 					{	-- Southsea Shakedown
 						["questID"] = 8366,
@@ -989,10 +1012,7 @@ _.Zones =
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8754,
-						--["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8753,	-- The Path of the Conquerer
 						["groups"] = {
@@ -1001,10 +1021,7 @@ _.Zones =
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8755,
-						--["isBreadcrumb"] = true,	-- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8754,	-- The Path of the Conquerer
 						["groups"] = {
@@ -1013,10 +1030,7 @@ _.Zones =
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8753,
-						--["isBreadcrumb"] = true,	-- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8752,	-- The Path of the Conquerer
 						["groups"] = {
@@ -1025,10 +1039,7 @@ _.Zones =
 					},
 					{	-- The Path of the Conqueror
 						["questID"] = 8752,
-						--["isBreadcrumb"] = true,	-- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["groups"] = {
 							i(21201),	-- Signet Ring of the Bronze Dragonflight
@@ -1036,10 +1047,7 @@ _.Zones =
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8760,
-						--["isBreadcrumb"] = true,	-- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8759,	-- The Path of the Invoker
 						["groups"] = {
@@ -1048,10 +1056,7 @@ _.Zones =
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8759,
-						--["isBreadcrumb"] = true,	-- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8758,	-- The Path of the Invoker
 						["groups"] = {
@@ -1060,10 +1065,7 @@ _.Zones =
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8758,
-						--["isBreadcrumb"] = true,	-- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8757,	-- The Path of the Invoker
 						["groups"] = {
@@ -1072,10 +1074,7 @@ _.Zones =
 					},
 					{	-- The Path of the Invoker
 						["questID"] = 8757,
-						--["isBreadcrumb"] = true,	-- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["groups"] = {
 							i(21206),	-- Signet Ring of the Bronze Dragonflight
@@ -1083,10 +1082,7 @@ _.Zones =
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8747,
-						--["isBreadcrumb"] = true,	-- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["groups"] = {
 							i(21196),	-- Signet Ring of the Bronze Dragonflight
@@ -1094,10 +1090,7 @@ _.Zones =
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8748,
-						--["isBreadcrumb"] = true,	-- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8747,	-- The Path of the Protector
 						["groups"] = {
@@ -1106,10 +1099,7 @@ _.Zones =
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8749,
-						--["isBreadcrumb"] = true,	-- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8748,	-- The Path of the Protector
 						["groups"] = {
@@ -1118,10 +1108,7 @@ _.Zones =
 					},
 					{	-- The Path of the Protector
 						["questID"] = 8750,
-						--["isBreadcrumb"] = true,	-- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8749,	-- The Path of the Protector
 						["groups"] = {
@@ -1130,10 +1117,7 @@ _.Zones =
 					},
 					{	-- The Protector of Kalimdor
 						["questID"] = 8751,
-						--["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 8750,	-- The Path of the Protector
 						["groups"] = {
@@ -1143,10 +1127,7 @@ _.Zones =
 					{	-- The Qiraji Conqueror
 						["questID"] = 8756,
 						["qg"] = 15192,	-- Anachronos
-						--["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 						["sourceQuest"] = 8755,	-- The Path of the Conqueror
 					},
 					{	-- The Secrets of Uldum
@@ -1364,10 +1345,7 @@ _.Zones =
 					-- Scale of Sands / Agility/Strength Rings
 					{	-- Champion's Covenant
 						["questID"] = 10474,
-						--["isBreadcrumb"] = true,	-- Exalted Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 						["sourceQuest"] = 10470,	-- Champion's Oath
 						["groups"] = {
 							i(29301),	-- Band of the Eternal Champion
@@ -1379,10 +1357,7 @@ _.Zones =
 					},
 					{	-- Champion's Oath
 						["questID"] = 10470,
-						--["isBreadcrumb"] = true,	-- Revered Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 						["sourceQuest"] = 10466,	-- Champion's Vow
 						["groups"] = {
 							i(29300),	-- Band of Eternity
@@ -1394,10 +1369,7 @@ _.Zones =
 					},
 					{	-- Champion's Pledge
 						["questID"] = 10462,
-						--["isBreadcrumb"] = true,	-- Prequest/Friendly Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Prequest/Friendly Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19936,	-- Arazmodu
 						["groups"] = {
 							i(29298),	-- Band of Eternity
@@ -1405,10 +1377,7 @@ _.Zones =
 					},
 					{	-- Champion's Vow
 						["questID"] = 10466,
-						--["isBreadcrumb"] = true,	-- Honored Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 						["groups"] = {
 							i(29299),	-- Band of Eternity
 						},
@@ -1420,10 +1389,7 @@ _.Zones =
 					-- Scale of Sands / Tank Ring
 					{	-- Defender's Covenant
 						["questID"] = 10475,
-						--["isBreadcrumb"] = true,	-- Exalted Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["sourceQuest"] = 10471,	-- Defender's Oath
 						["groups"] = {
 							i(29297),	-- Band of the Eternal Defender
@@ -1435,10 +1401,7 @@ _.Zones =
 					},
 					{	-- Defender's Oath
 						["questID"] = 10471,
-						--["isBreadcrumb"] = true,	-- Revered Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["sourceQuest"] = 10467,	-- Defender's Vow
 						["groups"] = {
 							i(29296),	-- Band of Eternity
@@ -1450,10 +1413,7 @@ _.Zones =
 					},
 					{	-- Defender's Pledge
 						["questID"] = 10460,
-						--["isBreadcrumb"] = true,	-- Prequest/Friendly Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Prequest/Friendly Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19936,	-- Arazmodu
 						["groups"] = {
 							i(29294),	-- Band of Eternity
@@ -1461,10 +1421,7 @@ _.Zones =
 					},
 					{	-- Defender's Vow
 						["questID"] = 10467,
-						--["isBreadcrumb"] = true,	-- Honored Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["groups"] = {
 							i(29295),	-- Band of Eternity
 						},
@@ -1476,10 +1433,7 @@ _.Zones =
 					-- Scale of Sands / Healer Ring
 					{	-- Restorer's Covenant
 						["questID"] = 10473,
-						--["isBreadcrumb"] = true,	-- Exalted Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19935,	-- Soridormi
 						["sourceQuest"] = 10469,	-- Restorer's Oath
 						["groups"] = {
@@ -1488,10 +1442,7 @@ _.Zones =
 					},
 					{	-- Restorer's Oath
 						["questID"] = 10469,
-						--["isBreadcrumb"] = true,	-- Revered Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19935,	-- Soridormi
 						["sourceQuest"] = 10465,	-- Restorer's Vow
 						["groups"] = {
@@ -1500,10 +1451,7 @@ _.Zones =
 					},
 					{	-- Restorer's Pledge
 						["questID"] = 10461,
-						--["isBreadcrumb"] = true,	-- Prequest/Friendly Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Prequest/Friendly Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19936,	-- Arazmodu
 						["groups"] = {
 							i(29307),	-- Band of Eternity
@@ -1511,10 +1459,7 @@ _.Zones =
 					},
 					{	-- Restorer's Vow
 						["questID"] = 10465,
-						--["isBreadcrumb"] = true,	-- Honored Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["groups"] = {
 							i(29306),	-- Band of Eternity
 						},
@@ -1526,10 +1471,7 @@ _.Zones =
 					-- Scale of Sands / Caster Ring
 					{	-- Sage's Covenant
 						["questID"] = 10472,
-						--["isBreadcrumb"] = true,	-- Exalted Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Exalted Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19935,	-- Soridormi
 						["sourceQuest"] = 10468,	-- Sage's Oath
 						["groups"] = {
@@ -1538,10 +1480,7 @@ _.Zones =
 					},
 					{	-- Sage's Oath
 						["questID"] = 10468,
-						--["isBreadcrumb"] = true,	-- Revered Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Revered Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["sourceQuest"] = 10464,	-- Sage's Vow
 						["groups"] = {
 							i(29304),	-- Band of Eternity
@@ -1553,10 +1492,7 @@ _.Zones =
 					},
 					{	-- Sage's Pledge
 						["questID"] = 10463,
-						--["isBreadcrumb"] = true,	-- Prequest/Friendly Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Prequest/Friendly Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["qg"] = 19936,	-- Arazmodu
 						["groups"] = {
 							i(29302),	-- Band of Eternity
@@ -1564,10 +1500,7 @@ _.Zones =
 					},
 					{	-- Sage's Vow
 						["questID"] = 10464,
-						--["isBreadcrumb"] = true,	-- Honored Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
-						--Note!! Despite this being a choice only quest and only displays if you are obtaining that specific ring
-						--It still isn't a breadcrumb.  We use those only for actual breadcrumbs that you can no longer go back and get
-						--These types of quests are why Crieve says Quest Tracking isn't always suppose to be on
+						["isBreadcrumb"] = true,	-- Honored Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 						["groups"] = {
 							i(29303),	-- Band of Eternity
 						},

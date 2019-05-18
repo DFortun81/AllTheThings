@@ -113,8 +113,8 @@ _.Achievements =
 						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{	-- ,Conqueror of Orgrimmar
-								["titleID"] = 211,	-- ,Conqueror of Orgrimmar
+							{	-- Conqueror of Orgrimmar
+								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
 								["races"] = ALLIANCE_ONLY,
 							},
 						},

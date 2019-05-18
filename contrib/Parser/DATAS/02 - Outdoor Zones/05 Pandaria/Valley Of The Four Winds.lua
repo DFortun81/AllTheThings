@@ -5,21 +5,24 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(376, {	-- Valley of the Four Winds
+			["lvl"] = 81,
+			["achievementID"] = 6969,
+			["description"] = "|cff66ccffValley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year�s harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.|r",
 			["g"] = {
 				n(-4,   {	-- Achievement
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
 					ach(7292),	-- Green Acres (Halfhill)
 					ach(7284, {	-- Is Another Man's Treasure
 						n(64004, { 		-- Ghostly Pandaren Fisherman
+							["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
+							["questID"] = 31284,
 							["g"] = {
 								i(85973), 	-- Ancient Pandaren Fishing Charm Toy
 							},
-							["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
-							["questID"] = 31284,
 						}),
 						n(64191, {	-- Ghostly Pandaren Craftsman
 							["g"] = {
-								{
+								{	-- Ancient Pandaren Woodcutter
 									["itemID"] = 86079,	-- Ancient Pandaren Woodcutter
 									["questID"] = 31292,
 									["ignoreSource"] = true
@@ -55,34 +58,34 @@ _.Zones =
 					}),
 					ach(7997, {	-- Riches of Pandaria
 						o(214340, {	-- Boat-Building Instructions
+							["coord"] = { 92.2, 39.2, 376 },
 							["g"] = {
 								i(87524, {-- Boat-Building Instructions
 									["questID"] = 31869,
 								}),
 							},
-							["description"] = "Located inside a hut on the far east side of the Valley near water. (92.2,39.2)",
 						}),
 						o(213650, {	-- Virmen Treasure Cache
+							["coord"] = { 23.2, 30.8, 376 },
 							["g"] = {
 								q(31405),
 							},
-							["description"] = "Located in a cave hidden under some bushes in the mountains of north-east Paoquan Hollow at (23.2,30.8)",
 						}),
 					}),
 					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1052, {	-- Grassy Cline, Valley of the Four Winds
-						["coord"] = { 70.8, 24.2 },
+						["coord"] = { 70.8, 24.2, 376 },
 					}),
 					fp(985, {	-- Halfhill, Valley of the Four Winds
-						["coord"] = { 56.4, 50.2 },
+						["coord"] = { 56.4, 50.2, 376 },
 					}),
 					fp(984, {	-- Pang's Stead, Valley of the Four Winds
-						["coord"] = { 84.4, 21 },
+						["coord"] = { 84.4, 21.0, 376 },
 					}),
 					fp(989, {	-- Stoneplow, Valley of the Four Winds
-						["coord"] = { 20.2, 58.6 },
+						["coord"] = { 20.2, 58.6, 376 },
 					}),
 				}),
 				n(-25,  {	-- Pet Battles
@@ -96,79 +99,79 @@ _.Zones =
 					p(711), 	-- Sifang Otter
 					p(713), 	-- Softshell Snapling
 					q(31955, {	-- Grand Master Nishi
+						["isDaily"] = true,
+						["qg"] = 66734,	-- Farmer Nishi
 						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-						["qg"] = 66734,	-- Farmer Nishi
-						["isDaily"] = true,
-					}),
-				}),
-				n(-38,  {	-- Profession
-					prof(356, {	-- Fishing
-						i(94934, {	-- Tiny Green Carp Pet
-							["description"] = "The Tiny Green Carp can be fished up from Emperor Salmon Schools, Jade Lungfish Schools, and Krasarang Paddlefish Schools. Additionally, it can be caught by casting into the Fish of the Day in the Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|nAnother way to obtain this pet is by fishing from inland open water in Krasarang Wilds, The Jade Forest, and Valley of the Four Winds.|r",
-						}),
-						i(94935, {	-- Tiny White Carp Pet
-							["description"] = "The Tiny White Carp can be fished up from Giant Mantis Shrimp Swarms, Reef Octopus Swarms, and Tiger Gourami Schools. Additionally, it can be caught by casting into the Fish of the Day in the Dread Wastes, Kun-Lai Summit, and The Jade Forest.|nAnother way to obtain this pet is by fishing in open water, mainly on the coast of most zones. For inland open water fishing, head to Kun-Lai Summit or The Veiled Stair.|r",
-						}),
 					}),
 				}),
 				n(-17,  {	-- Quests
 					n(-192, {	-- Cooking
+						["requireSkill"] = 185,
 						["g"] = {
 							q(31471, {	-- Agile as a Tiger
-								["qg"] = 58713,	-- Anthea Ironpaw (52.7,52.0)
 								["sourceQuests"] = { 31470 },	-- Way of the Wok
+								["coord"] = { 52.7, 52.0, 376 },
+								["qg"] = 58713,	-- Anthea Ironpaw
 							}),
 							q(33022, {	-- Catch and Carry
+								["sourceQuests"] = { 33021 },	-- Secrets Lost, Forever?
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									recipe(145038),	-- Noodle Cart Kit
 									un(1, i(101631)),	-- Recipe: Noodle Cart Kit
 									un(1, i(101728)),	-- Recipe: Grand Noodle Cart Kit
 									un(1, recipe(145167)),	-- Grand Noodle Cart Kit
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 33021 },	-- Secrets Lost, Forever?
 							}),
 							q(30329, {	-- Cindergut Peppers
-								["qg"] = 58713,	-- Anthea Ironpaw (52.7,52.0)
 								["isDaily"] = true,
+								["coord"] = { 52.7, 52.0, 376 },
+								["qg"] = 58713,	-- Anthea Ironpaw
 							}),
 							q(31477, {	-- Endurance
-								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
 								["sourceQuests"] = { 31478 },	-- Way of the Oven
+								["coord"] = { 53.4, 51.6, 376 },
+								["qg"] = 58716,	-- Jian Ironpaw
 							}),
 							q(31279, {	-- Everything I Know About Cooking
-								["qg"] = 65528,	-- Nan Thunderfoot (63.6,20.2)
+								["coord"] = { 63.6, 20.2, 376 },
+								["qg"] = 65528,	-- Nan Thunderfoot
 							}),
 							q(30332, {	-- Fatty Goatsteak
-								["qg"] = 58712,	-- Kol Ironpaw (53.0,51.3)
 								["isDaily"] = true,
+								["coord"] = { 53.0, 51.3, 376 },
+								["qg"] = 58712,	-- Kol Ironpaw
 							}),
 							q(31480, {	-- Have a Drink
-								["qg"] = 58717,	-- Bobo Ironpaw (53.2,52.2)
 								["sourceQuests"] = { 31479 },	-- Way of the Brew
+								["coord"] = { 53.2, 52.2, 376 },
+								["qg"] = 58717,	-- Bobo Ironpaw
 							}),
 							q(33024, {	-- Is That A Real Measurement?
+								["sourceQuests"] = { 33022 },	-- Catch and Carry
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									recipe(145061),	-- Deluxe Noodle Cart Kit
 									un(1, i(101664)),	-- Recipe: Deluxe Noodle Cart Kit
 									un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
 									un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 33022 },	-- Catch and Carry
 							}),
 							q(33146, {	-- Noodle Time
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["isDaily"] = true,
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(33358, {	-- Noodle Time: Bonus
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["isDaily"] = true,
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31536, {	-- Preserving Freshness
-								["qg"] = 64395,	-- Nam Ironpaw (53.5,51.2)
 								["sourceQuests"] = {
 									31479,	-- Way of the Brew
 									31311,	-- Way of the Grill
@@ -177,124 +180,146 @@ _.Zones =
 									31475,	-- Way of the Steamer
 									31470,	-- Way of the Wok
 								},
+								["coord"] = { 53.5, 51.2, 376 },
+								["qg"] = 64395,	-- Nam Ironpaw
 							}),
 							q(31302, {	-- Ready for Greatness
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 31281 },	-- So You Want to be a Chef...
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31535, {	-- Replenishing the Pantry
-								["qg"] = 64395,	-- Nam Ironpaw (53.5,51.2)
-								["repeatable"] = true,
 								["sourceQuests"] = { 31536 },	-- Preserving Freshness
+								["repeatable"] = true,
+								["coord"] = { 53.5, 51.2, 376 },
+								["qg"] = 64395,	-- Nam Ironpaw
 							}),
 							q(33021, {	-- Secrets Lost, Forever?
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33107 },	-- Bad Feeling, Worse Result
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31281, {	-- So You Want to Be a Chef... -- available any time (53.6,51.2)
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31467, {	-- Strong as a Tiger
-								["qg"] = 58712,	-- Kol Ironpaw (53.0,51.3)
 								["sourceQuests"] = { 31311 },	-- Way of the Grill
+								["coord"] = { 53.0, 51.3, 376 },
+								["qg"] = 58712,	-- Kol Ironpaw
 							}),
 							q(30331, {	-- The Mile-High Grub
-								["qg"] = 58714,	-- Mei Mei Ironpaw (52.5,51.6)
 								["isDaily"] = true,
+								["coord"] = { 52.5, 51.6, 376 },
+								["qg"] = 58714,	-- Mei Mei Ironpaw
 							}),
 							q(33027, {	-- The Secret Ingredient Is...
+								["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									recipe(145062),	-- Pandaren Treasure Noodle Cart Kit
 									un(1, i(101663)),	-- Recipe: Pandaren Treasure Noodle Cart Kit
 									un(1, i(101741)),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
 									un(1, recipe(145197)),	-- Grand Pandaren Treasure Noodle Cart Kit
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
 							}),
 							q(31474, {	-- The Soup of Contemplation
-								["qg"] = 58714,	-- Mei Mei Ironpaw (52.5,51.6)
 								["sourceQuests"] = { 31472 },	-- Way of the Pot
+								["coord"] = { 52.5, 51.6, 376 },
+								["qg"] = 58714,	-- Mei Mei Ironpaw
 							}),
 							q(31476, {	-- The Spirit of Cooking
-								["qg"] = 58715,	-- Yan Ironpaw (52.5,51.7)
 								["sourceQuests"] = { 31475 },	-- Way of the Steamer
+								["coord"] = { 52.5, 51.7, 376 },
+								["qg"] = 58715,	-- Yan Ironpaw
 							}),
 							q(30328, {	-- The Thousand-Year Dumpling
-								["qg"] = 58715,	-- Yan Ironpaw (52.6,51.7)
 								["isDaily"] = true,
+								["coord"] = { 52.6, 51.7, 376 },
+								["qg"] = 58715,	-- Yan Ironpaw
 							}),
 							q(30330, {	-- The Truffle Shuffle
-								["qg"] = 58716,	-- Jian Ironpaw (53.4,51.6)
 								["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 								["isDaily"] = true,
+								["coord"] = { 53.4, 51.6, 376 },
+								["qg"] = 58716,	-- Jian Ironpaw
 							}),
 							q(33026, {	-- These Aren't Your Fatty Goatsteaks
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 33024 },	-- Is That a Real Measurement?
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31521, {	-- To Be a Master
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.", 
+								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.",
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(31479, {	-- Way of the Brew
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(125589),	-- Way of the Brew
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 							q(31311, {	-- Way of the Grill
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(124694),	-- Way of the Grill
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 							q(31478, {	-- Way of the Oven
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(125588),	-- Way of the Oven
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 							q(31472, {	-- Way of the Pot
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(125586),	-- Way of the Pot
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 							q(31475, {	-- Way of the Steamer
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(125587),	-- Way of the Steamer
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 							q(31470, {	-- Way of the Wok
+								["sourceQuests"] = { 31302 },	-- Ready for Greatness
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["g"] = {
 									sp(125584),	-- Way of the Wok
 								},
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
-								["sourceQuests"] = { 31302 },	-- Ready for Greatness
 							}),
 						},
-						["requireSkill"] = 185,
 					}),
 					n(-194, {	-- Fishing
+						["requireSkill"] = 356,
 						["g"] = {
 							q(32684, {	-- You Want Fish?
-								["qg"] = 64231,	-- Sungshin Ironpaw (53.6,51.2)
 								["sourceQuests"] = { 31281 },	-- So You Want to be a Chef...
+								["coord"] = { 53.6, 51.2, 376 },
+								["qg"] = 64231,	-- Sungshin Ironpaw
 							}),
 							q(32685, {	-- No Fishing Pole Necessary!
+								["coord"] = { 58.9, 46.9, 376 },
 								["qg"] = 70398,	-- Ben of the Booming Voice (58.9,46.9)
 							}),
 						},
-						["requireSkill"] = 356,
-					}),					
---[[	Achievement info for Loremaster related zone quests
+					}),
+--[[				Achievement info for Loremaster related zone quests
 					ach(6301, {		-- Rally the Valley
 						crit(1),		-- Thunderfoot Fields
 						crit(2),		-- Mudmug's Place
@@ -303,91 +328,108 @@ _.Zones =
 						crit(5),		-- The Hidden Master
 						crit(6),		-- Nesingwary's Safari
 					}),
-]]--					
+]]--
 					q(30402, {	-- A Dish for Chee Chee
-						["qg"] = 58709,	-- Chee Chee
 						["isDaily"] = true,
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(30386, {	-- A Dish for Ella
-						["qg"] = 58647,	-- Ella
 						["isDaily"] = true,
+						["qg"] = 58647,	-- Ella
 					}),
 					q(30421, {	-- A Dish for Farmer Fung
-						["qg"] = 57298,	-- Farmer Fung
 						["isDaily"] = true,
+						["qg"] = 57298,	-- Farmer Fung
 					}),
 					q(30427, {	-- A Dish for Fish
-						["qg"] = 58705,	-- Fish
 						["isDaily"] = true,
+						["qg"] = 58705,	-- Fish
 					}),
 					q(30390, {	-- A Dish for Gina
-						["qg"] = 58706,	-- Gina
 						["isDaily"] = true,
+						["qg"] = 58706,	-- Gina
 					}),
 					q(30414, {	-- A Dish for Haohan
-						["qg"] = 57402,	-- Haohan
 						["isDaily"] = true,
+						["qg"] = 57402,	-- Haohan
 					}),
 					q(30439, {	-- A Dish for Jogu
-						["qg"] = 58710,	-- Jogu
 						["isDaily"] = true,
+						["qg"] = 58710,	-- Jogu
 					}),
 					q(30396, {	-- A Dish for Old Hillpaw
-						["qg"] = 58707,	-- Old Hillpaw
 						["isDaily"] = true,
+						["qg"] = 58707,	-- Old Hillpaw
 					}),
 					q(30408, {	-- A Dish for Sho
-						["qg"] = 58708,	-- Sho
 						["isDaily"] = true,
+						["qg"] = 58708,	-- Sho
 					}),
 					q(30433, {	-- A Dish for Tina
-						["qg"] = 58761,	-- Tina Mudclaw
 						["isDaily"] = true,
+						["qg"] = 58761,	-- Tina Mudclaw
 					}),
 					q(30471, {	-- A Gift For Chee Chee
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30474, {	-- A Gift For Ella
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30473, {	-- A Gift For Fish
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30475, {	-- A Gift For Fung
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30479, {	-- A Gift For Gina
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30477, {	-- A Gift For Haohan
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30478, {	-- A Gift For Jogu
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30476, {	-- A Gift For Old Hillpaw
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30472, {	-- A Gift For Sho
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30470, {	-- A Gift For Tina
-						["qg"] = 64464,	-- Andi (52.7,50.4)
 						["isDaily"] = true,
+						["coord"] = { 52.7, 50.4, 376 },
+						["qg"] = 64464,	-- Andi
 					}),
 					q(30252, {	-- A Helping Hand
-						["qg"] = 58721,	-- Farmer Yoon (52.0,48.1)
+						["coord"] = { 52.0, 48.1, 376 },
+						["qg"] = 58721,	-- Farmer Yoon
 					}),
 					q(29918, {	-- A Lesson in Bravery
+						["sourceQuests"] = {
+							29917,	-- Lupello
+							29916,	-- Piercing Talons and Slavering Jaws
+						},
+						["coord"] = { 78.2, 32.8, 376 },
+						["qg"] = 56312,	-- Shang Thunderfoot
 						["g"] = {
 							i(81824),	-- Hawk Feather Band
 							i(81825),	-- Lariat Loop
@@ -395,41 +437,43 @@ _.Zones =
 							i(81827),	-- Band of Bravery
 							i(81828),	-- Ring of Courage
 						},
-						["qg"] = 56312,	-- Shang Thunderfoot (78.2,32.8)
-						["sourceQuests"] = {
-							29917,	-- Lupello
-							29916,	-- Piercing Talons and Slavering Jaws
-						},
 					}),
 					q(29915, {	-- A Neighbor's Duty
-						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.1)
 						["sourceQuests"] = {
 							29914,	-- Back to the Sty
 							29913,	-- The Meat They'll Eat
-						}
+						},
+						["coord"] = { 75.2, 24.1, 376 },
+						["qg"] = 56205,	-- Liang Thunderfoot
 					}),
 					q(29877, {	-- A Poor Grasp of the Basics
-						["qg"] = 56440,	-- Muno the Farmhand (82.7,21.2)
 						["sourceQuests"] = { 29907 },	-- Chen and Li Li
+						["coord"] = { 82.7, 21.2, 376 },
+						["qg"] = 56440,	-- Muno the Farmhand
 					}),
-					q(31820,  {		-- A Present for Teacher
+					q(31820, {	-- A Present for Teacher
+						["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r",
+						["qg"] = 64337,	-- Nomi
 						["g"] = {
 							i(86468),	-- Apron
 						},
-						["qg"] = 64337,	-- Nomi
-						["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.|r"
 					}),
 					q(31672, {	-- A Pumpkin-y Perfume
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
-					o(215705, {	-- Tillers Shrine (52.1,49)
+					o(215705, {	-- Tillers Shrine
 						q(30534, {	-- A Second Hand
 							["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
+							["coord"] = { 52.1, 49.0, 376 },
 						}),
 					}),
 					q(29908, {	-- A Seemingly Endless Nuisance
-						["g"] = { 
+						["sourceQuests"] = { 29907 },	-- Chen and Li Li
+						["coord"] = { 83.7, 21.1, 376 },
+						["qg"] = 56204,	-- Pang Thunderfoot
+						["g"] = {
 							i(81769),	-- Silkmaster's Satin Leggings
 							i(81770),	-- Sunsoaked Legguards
 							i(81771),	-- Huangtze Scale Leggings
@@ -440,43 +484,47 @@ _.Zones =
 							i(81776),	-- Thunderfoot Heavy Legguards
 							i(81777),	-- Sunsong Armored Legguards
 						},
-						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.1)
-						["sourceQuests"] = { 29907 },	-- Chen and Li Li
 					}),
 					q(32189, {	-- A Shabby New Face
-						["qg"] = 58718,	-- Merchant Greenfield (52.8,52)
-						["description"] = "Available only on days where Barnaby Fletcher is in Halfhill."
+						["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
+						["coord"] = { 52.8, 52.0, 376 },
+						["qg"] = 58718,	-- Merchant Greenfield
 					}),
 					q(29988, {	-- A Taste For Eggs
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.3)
 						["sourceQuests"] = { 29987 },	-- Unyielding Fists: Trial of Wood
+						["coord"] = { 18.3, 31.3, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw
 					}),
 					q(31341, {	-- A Wolf In Sheep's Clothing
-						["qg"] = 58709,	-- Chee Chee
 						["sourceQuests"] = { 31340 },	-- Oh Sheepie....
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(31538, {	-- A Worthy Brew
-						["qg"] = 58647,	-- Ella
 						["description"] = "Requires reputation level of \"Good Friend\" or better with Ella.",
+						["qg"] = 58647,	-- Ella
 					}),
 					q(29577, {	-- Ashyo's Vision
-						["qg"] = 56113,	-- Clever Ashyo (61.2,34.2)
 						["sourceQuests"] = { 29871 },	-- Clever Ashyo
+						["coord"] = { 61.2, 34.2, 376 },
+						["qg"] = 56113,	-- Clever Ashyo
 					}),
 					q(29914, {	-- Back to the Sty
-						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.0)
 						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
+						["coord"] = { 75.2, 24.0, 376 },
+						["qg"] = 56205,	-- Liang Thunderfoot
 					}),
 					q(30172, {	-- Barreling Along
-						["qgs"] = { 56474, 58785 },	-- Mudmug
 						["sourceQuests"] = { 30051 },	-- The Great Water Hunt
+						["qgs"] = { 56474, 58785 },	-- Mudmug
 					}),
 					q(30077, {	-- Barrels, Man
-						["qg"] = 56138,	-- Li Li (32.3,68.5)
 						["sourceQuests"] = { 30074 },	-- Knocking on the Door
+						["coord"] = { 32.3, 68.5, 376 },
+						["qg"] = 56138,	-- Li Li
 					}),
 					i(86436, {	-- Beautiful Brooch
 						q(31329, {	-- A Beautiful Brooch
+							["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
 							["qgs"] = {
 								59120,	-- Kunzen Rockflinger
 								59126,	-- Jokka-Jokka
@@ -496,39 +544,44 @@ _.Zones =
 								59119,	-- Kunzen Ravager
 								59122,	-- Kunzen Herdskeeper
 							},
-							["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop."
 						}),
 					}),
 					q(29757, {	-- Bottletoads
-						["qg"] = 56773,	-- Yan (60.6,33.7)
 						["sourceQuests"] = { 29871 },	-- Clever Ashyo
+						["coord"] = { 60.6, 33.7, 376 },
+						["qg"] = 56773,	-- Yan
 					}),
 					q(29952, {	-- Broken Dreams
-						["qg"] = 56133,	-- Chen Stormstout (68.8,43.4)
 						["sourceQuests"] = { 29950 },	-- Li Li's Day Off
+						["coord"] = { 68.8, 43.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(31323, {	-- Buy A Fish A Brewery?
-						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
-						["description"] = "Requires reputation level of \"Good Friend\" or better with Jogu the Drunk."
+						["description"] = "Requires reputation level of \"Good Friend\" or better with Jogu the Drunk.",
+						["coord"] = { 53.6, 52.6, 376 },
+						["qg"] = 58710,	-- Jogu the Drunk
 					}),
 					q(31320, {	-- Buy A Fish A Drink?
-						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
-						["description"] = "Requires reputation level of \"Acquaintance\" or better with Jogu the Drunk."
+						["description"] = "Requires reputation level of \"Acquaintance\" or better with Jogu the Drunk.",
+						["coord"] = { 53.6, 52.6, 376 },
+						["qg"] = 58710,	-- Jogu the Drunk
 					}),
 					q(31322, {	-- Buy A Fish A Keg?
-						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
-						["description"] = "Requires reputation level of \"Friend\" or better with Jogu the Drunk."
+						["description"] = "Requires reputation level of \"Friend\" or better with Jogu the Drunk.",
+						["coord"] = { 53.6, 52.6, 376 },
+						["qg"] = 58710,	-- Jogu the Drunk
 					}),
 					q(31321, {	-- Buy A Fish A Round?
-						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
-						["description"] = "Requires reputation level of \"Buddy\" or better with Jogu the Drunk."
+						["description"] = "Requires reputation level of \"Buddy\" or better with Jogu the Drunk.",
+						["coord"] = { 53.6, 52.6, 376 },
+						["qg"] = 58710,	-- Jogu the Drunk
 					}),
 					q(30318, {	-- Chasing the Chicken
-						["qg"] = 58707,	-- Old Hillpaw (53.1,51.9)
 						["isDaily"] = true,
+						["coord"] = { 53.1, 51.9, 376 },
+						["qg"] = 58707,	-- Old Hillpaw
 					}),
 					q(29907, {	-- Chen and Li Li
-						["qg"] = 56133,	-- Chen Stormstout (86.0,22.2)
 						["sourceQuests"] = {
 							32018,	-- His Name Was... Stormstout
 							32019,	-- They Call Him... Stormstout
@@ -536,15 +589,26 @@ _.Zones =
 							49539,	-- Warchief's Command: Valley of the Four Winds!
 							49557,	-- Hero's Call: Valley of the Four Winds!
 						},
+						["coord"] = { 86.0, 22.2, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(30046, {	-- Chen's Resolution
-						["qg"] = 56133,	-- Chen Stormstout (68.9,43.4)
 						["sourceQuests"] = { 29952 },	-- Broken Dreams
+						["coord"] = { 68.9, 43.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(32045, {	-- Children of the Water
-						["qg"] = 64315,	-- Stonecarver Mac (55.1,47.4)
+						["coord"] = { 55.1, 47.4, 376 },
+						["qg"] = 64315,	-- Stonecarver Mac
 					}),
-					q(30078,  {  	-- Cleaning House
+					q(30078, {	-- Cleaning House
+						["sourceQuests"] = {
+							30077,	-- Barrels, Man
+							30075,	-- Clear the Way
+							30076,	-- The Fanciest Water
+						},
+						["coord"] = { 83.6, 21.5, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 						["g"] = {
 							i(81742),	-- Silkmaster's Satin Hood
 							i(81743),	-- Sunsoaked Helm
@@ -556,14 +620,11 @@ _.Zones =
 							i(81749),	-- Thunderfoot Heavy Helm
 							i(81750),	-- Sunsong Armored Helm
 						},
-						["qg"] = 56133,	-- Chen Stormstout (83.6,21.5)
-						["sourceQuests"] = {
-							30077,	-- Barrels, Man
-							30075,	-- Clear the Way
-							30076,	-- The Fanciest Water
-						},
 					}),
 					q(30075, {	-- Clear the Way
+						["sourceQuests"] = { 30074 },	-- Knocking on the Door
+						["coord"] = { 32.1, 68.3, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 						["g"] = {
 							i(81834),	-- Silkspawn Wing
 							i(81835),	-- Plainshawk Feather
@@ -571,46 +632,52 @@ _.Zones =
 							i(81837),	-- Viseclaw Carapace
 							i(81838),	-- Tawnyhide Antler
 						},
-						["qg"] = 56133,	-- Chen Stormstout (32.1,68.3)
-						["sourceQuests"] = { 30074 },	-- Knocking on the Door
 					}),
 					q(29871, {	-- Clever Ashyo
-						["qg"] = 56110,	-- Xiao (84.0,21.1)
+						["coord"] = { 84.0, 21.1, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					q(29947, {	-- Crouching Carrot, Hidden Turnip
+						["sourceQuests"] = { 29945 },	-- Yellow and Red Make Orange
+						["coord"] = { 68.9, 43.3, 376 },
+						["qg"] = 56138,	-- Li Li
 						["g"] = {
 							i(88376),	-- Orange Painted Turnip
 						},
-						["qg"] = 56138,	-- Li Li (68.9,43.3)
-						["sourceQuests"] = { 29945 },	-- Yellow and Red Make Orange
 					}),
 					q(30049, {	-- Doesn't Hold Water
-						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["coord"] = { 55.9, 49.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					i(89814, {	-- "Earth-Slasher" Master Plow
 						q(31938, {	-- The "Earth-Slasher" Master Plow
-							["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
-							["description"] = "Begins with a purchase of the \"Earth-Slasher\" Master Plow from Gina Mudclaw",
 							["sourceQuests"] = { 30529 },	-- Growing the Farm III: The Mossy Boulder
+							["description"] = "Begins with a purchase of the \"Earth-Slasher\" Master Plow from Gina Mudclaw",
+							["coord"] = { 53.2, 51.8, 376 },
+							["qg"] = 58706,	-- Gina Mudclaw
 						}),
 					}),
 					q(31537, {	-- Ella's Taste Test
-						["qg"] = 58647,	-- Ella (53,51.6)
 						["description"] = "Requires reputation level of \"Friend\" or better.",
+						["coord"] = { 53.0, 51.6, 376 },
+						["qg"] = 58647,	-- Ella
 					}),
 					i(79238, {	-- Enormous Crocolisk Tail
 						q(30275, {	-- A Crocolisk Tale
-							["qg"] = 58755,	-- Manglemaw's Mother
 							["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+							["qg"] = 58755,	-- Manglemaw's Mother
 						}),
 					}),
 					q(30054, {	-- Enough is Ookin' Enough
-						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["coord"] = { 44.2, 34.2, 376 },
+						["qg"] = 57401,	-- Mung-Mung
 					}),
 					q(29982, {	-- Evacuation Orders
+						["coord"] = { 19.5, 56.9, 376 },
+						["qg"] = 56720,	-- Loon Mai
 						["g"] = {
 							i(88027),	-- Silkmaster's Satin Pauldrons
 							i(88026),	-- Sunsoaked Pauldron
@@ -622,10 +689,10 @@ _.Zones =
 							i(88020),	-- Thunderfoot Heavy Pauldrons
 							i(88019),	-- Sunsong Armored Pauldrons
 						},
-						["qg"] = 56720,	-- Loon Mai (19.5,56.9)
 					}),
 					i(86435, {	-- Exquisite Earring
 						q(31328, {	-- An Exquisite Earring
+							["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop.",
 							["qgs"] = {
 								59120,	-- Kunzen Rockflinger
 								59126,	-- Jokka-Jokka
@@ -645,22 +712,27 @@ _.Zones =
 								59119,	-- Kunzen Ravager
 								59122,	-- Kunzen Herdskeeper
 							},
-							["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop."
 						}),
 					}),
 					q(30517, {	-- Farmer Fung's Vote I: Yak Attack
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["description"] = "Must be revered with at least 4500 reputation with The Tillers.",
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30518, {	-- Farmer Fung's Vote II: On the Loose
-						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
 						["sourceQuests"] = { 30517 },	-- Farmer Fung's Vote I: Yak Attack
+						["coord"] = { 48.3, 33.9, 376 },
+						["qg"] = 57298,	-- Farmer Fung
 					}),
 					q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
-						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
 						["sourceQuests"] = { 30518 },	-- Farmer Fung's Vote II: On the Loose
+						["coord"] = { 48.3, 33.9, 376 },
+						["qg"] = 57298,	-- Farmer Fung
 					}),
 					q(29986, {	-- Fog Wards
+						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+						["coord"] = { 18.3, 31.2, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw
 						["g"] = {
 							i(81814),	-- Necklace of Three Sins
 							i(81815),	-- Jhuuroon's Collar
@@ -668,17 +740,21 @@ _.Zones =
 							i(81817),	-- Amulet of the Singing Marshes
 							i(81818),	-- Otouxian Amulet
 						},
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
-						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
 					}),
 					q(30182, {	-- Fox Mastery
-						["qg"] = 63822,	-- Tani (16.2,82.5)
 						["sourceQuests"] = { 30183 },	-- Stalker Mastery
+						["coord"] = { 16.2, 82.5, 376 },
+						["qg"] = 63822,	-- Tani
 					}),
-					q(32035, {	-- Got Silk? -- available anytime. Breadcrumb? (55.6,52.1)
-						["qg"] = 59585,	-- Lolo Lio (55.6,52.1)
+					q(32035, {	-- Got Silk?
+						["coord"] = { 55.6, 52.1, 376 },
+						["qg"] = 59585,	-- Lolo Lio
 					}),
 					q(30050, {	-- Gardener Fran and the Watering Can
+						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["coord"] = { 48.3, 33.4, 376 },
+						["qg"] = 62377,	-- Gardener Fran
 						["g"] = {
 							i(81844),	-- Gardener's Sickle
 							i(81845),	-- Gardener's Wand
@@ -691,208 +767,252 @@ _.Zones =
 							i(81852),	-- Fran's Dagger
 							i(81853),	-- Fran's Bronze Mace
 						},
-						["qg"] = 62377,	-- Gardener Fran (48.3,33.4)
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
-						["sourceQuests"] = { 30046 },	-- Chen's Resolution
 					}),
 					q(30028, {	-- Grain Recovery
-						["qg"] = 57211,	-- Grainlord Kai (52.7,62.9)
 						["sourceQuests"] = {
 							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 							30029,	-- Wee Little Shenanigans
 						},
+						["coord"] = { 52.7, 62.9, 376 },
+						["qg"] = 57211,	-- Grainlord Kai
 					}),
 					q(29919, {	-- Great Minds Drink Alike
-						["qg"] = 56133,	-- Chen Stormsout (75.3,35.5)
 						["sourceQuests"] = { 29918 },	-- A Lesson in Bravery
+						["coord"] = { 75.3, 35.5, 376 },
+						["qg"] = 56133,	-- Chen Stormsout
 					}),
 					q(30516, {	-- Growing the Farm I: A Little Problem
-						["qg"] = 57385,	-- Gai Lan (38.7,51.7)
 						["sourceQuests"] = { 30260 },	-- Growing the Farm I: The Weeds
+						["coord"] = { 38.7, 51.7, 376 },
+						["qg"] = 57385,	-- Gai Lan
 					}),
 					q(30260, {	-- Growing the Farm I: The Weeds
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["description"] = "Must be Honored with The Tillers to start this quest.",
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30524, {	-- Growing the Farm II: Knock on Wood
-						["qg"] = 58705,	-- Fish Fellreed
 						["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
+						["qg"] = 58705,	-- Fish Fellreed
 					}),
 					q(30523, {	-- Growing the Farm II: The Broken Wagon
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["description"] = "Must be Revered with The Tillers to start this quest.",
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30529, {	-- Growing the Farm III: The Mossy Boulder
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["description"] = "Must be Exalted with The Tillers with all Tillers votes collected to start this quest.",
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30521, {	-- Haohan's Vote I: Bungalow Break-In
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["description"] = "Must be revered with at least 16,800 reputation with The Tillers.",
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30522, {	-- Haohan's Vote II: The Real Culprits
-						["qg"] = 57402,	-- Haohan Mudclaw (44.7,34.1)
 						["sourceQuests"] = { 30521 },	-- Haohan's Vote I: Bungalow Break-In
+						["coord"] = { 44.7, 34.1, 376 },
+						["qg"] = 57402,	-- Haohan Mudclaw
 					}),
 					q(30525, {	-- Haohan's Vote III: Pure Poison
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30522 },	-- Haohan's Vote II: The Real Culprits
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30527, {	-- Haohan's Vote IV: Melons For Felons
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30525 },	-- Haohan's Vote III: Pure Poison
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30528, {	-- Haohan's Vote V: Chief Yip-Yip
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30527 },	-- Haohan's Vote IV: Melons For Felons
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					o(213767, {	-- Hidden Treasure
 						q(31315, {	-- The Heartland Legacy
+							["sourceQuests"] = { 31314 },	-- Old Man Thistle's Treasure
 							["g"] = {
 								ach(7296),	-- Ain't Lost No More
 							},
-							["sourceQuests"] = { 31314 },	-- Old Man Thistle's Treasure
 						}),
 					}),
 					q(30053, {	-- Hop Hunting
-						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["coord"] = { 55.9, 49.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(32682, {	-- Inherit the Earth
-						["qg"] = 64597,	-- Nana Mudclaw (54.6,47)
 						["description"] = "Must be Exalted with The Tillers and have a fully unlocked farm.",
+						["coord"] = { 54.6, 47.0, 376 },
+						["qg"] = 64597,	-- Nana Mudclaw
 					}),
 					q(30085, {	-- Into the Brewery
-						["qg"] = 56133,	-- Chen Stormstout (36.0,69.1)
 						["sourceQuests"] = { 30078 },	-- Cleaning House
+						["coord"] = { 36.0, 69.1, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					qh(30653, {	-- It Does You No Good In The Keg
-						["qg"] = 56474,	-- Mudmug (18.1,55.7)
 						["sourceQuests"] = { 29990 },	-- Training and Discipline
+						["coord"] = { 18.1, 55.7, 376 },
+						["qg"] = 56474,	-- Mudmug
 					}),
 					qa(30624, {	-- It Does You No Good In The Keg
-						["qg"] = 56474,	-- Mudmug (18.1,55.7)
 						["sourceQuests"] = { 29990 },	-- Training and Discipline
+						["coord"] = { 18.1, 55.7, 376 },
+						["qg"] = 56474,	-- Mudmug
 					}),
 					q(31942, {	-- It's Melon Time
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31313, {	-- Just A Folk Story
-						["qg"] = 58705,	-- Fish Fellreed
 						["sourceQuests"] = { 31312 },	-- The Old Map
+						["qg"] = 58705,	-- Fish Fellreed
 					}),
 					qa(29874, {	-- Kang Bramblestaff
-						["qg"] = 56110,	-- Xiao (84.0,21.1)
+						["coord"] = { 84.0, 21.1, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					qh(29875, {	-- Kang Bramblestaff
-						["qg"] = 56110,	-- Xiao (84.0,21.1)
+						["coord"] = { 84.0, 21.1, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					q(29873, {	-- Ken-Ken
-						["qg"] = 56110,	-- Xiao (84.0,21.1)
 						["isBreadcrumb"] = true,
+						["coord"] = { 84.0, 21.1, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					q(30074, {	-- Knocking on the Door
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = { 30073 },	-- The Emperor
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					i(83767, {	-- Krosh's Back
 						q(29758, {	-- Guess Whose Back
-							["qg"] = 56833,	-- Krosh (64.5,25.7)
+							["coord"] = { 64.5, 25.7, 376 },
+							["qg"] = 56833,	-- Krosh
 						}),
 					}),
 					q(29944,  {  	-- Leaders Among Breeders
+						["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike
+						["coord"] = { 68.9, 43.2, 376 },
+						["qg"] = 56133,	-- Chen Stormsout
 						["g"] = {
 							i(88375),  -- Turnip Punching Bag
 						},
-						["qg"] = 56133,	-- Chen Stormsout (68.9,43.2)
-						["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike
 					}),
 					q(30535, {	-- Learn and Grow I: Seeds
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30252 },	-- A Helping Hand
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30254, {	-- Learn and Grow II: Tilling and Planting
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30535 },	-- Learn and Grow I: Seeds
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30255, {	-- Learn and Grow III: Tending Crops
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30254 },	-- Learn and Grow II: Tilling and Planting
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30256, {	-- Learn and Grow IV: Harvesting
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30255 },	-- Learn and Grow III: Tending Crops
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30257, {	-- Learn and Grow V: Halfhill Market
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30256 },	-- Learn and Grow IV: Harvesting
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31945, {	-- Learn and Grow VI: Gina's Vote
-						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
 						["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
+						["coord"] = { 53.2, 51.8, 376 },
+						["qg"] = 58706,	-- Gina Mudclaw
 					}),
 					q(29949, {	-- Legacy
-						["qg"] = 56133,	-- Chen Stormstout (68.9,43.1)
 						["sourceQuests"] = {
 							29947,	-- Crouching Carrot, Hidden Turnip
 							29946,	-- The Warren-Mother
 							29948,	-- Thieves to the Core
 						},
+						["coord"] = { 68.9, 43.1, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(30048, {	-- Li Li and the Grain
-						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["coord"] = { 55.9, 49.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(29950, {	-- Li Li's Day Off
-						["qg"] = 56138,	-- Li Li (68.8,43.4)
 						["sourceQuests"] = { 29949 },	-- Legacy
+						["coord"] = { 68.8, 43.4, 376 },
+						["qg"] = 56138,	-- Li Li
 					}),
 					q(29872, {	-- Lin Tenderpaw
-						["qg"] = 56110,	-- Xiao (84.0,21.1)
 						["isBreadcrumb"] = true,
+						["coord"] = { 84.0, 21.1, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					q(30526, {	-- Lost and Lonely
-						["qg"] = 59533,	-- Lost Dog (42.4,50.2)
 						["description"] = "Requires reputation level of 12,600 Revered with The Tillers to start",
+						["coord"] = { 42.4, 50.2, 376 },
+						["qg"] = 59533,	-- Lost Dog
 					}),
 					q(31338, {	-- Lost Sheepie
-						["qg"] = 58709,	-- Chee Chee (53,52)
-						["description"] = "Requires reputation level of \"Acquaintance\" with Chee Chee."
+						["description"] = "Requires reputation level of \"Acquaintance\" with Chee Chee.",
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(31339, {	-- Lost Sheepie... Again
-						["qg"] = 58709,	-- Chee Chee (53,52)
-						["description"] = "Requires reputation level of \"Friend\" with Chee Chee."
+						["description"] = "Requires reputation level of \"Friend\" with Chee Chee.",
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(29909, {	-- Low Turnip Turnout
-						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.0)
 						["sourceQuests"] = {
 							29877,	-- A Poor Grasp of the Basics
 							29908,	-- A Seemingly Endless Nuisance
 						},
+						["coord"] = { 83.7, 21.0, 376 },
+						["qg"] = 56204,	-- Pang Thunderfoot
 					}),
 					q(29917, {	-- Lupello
-						["qg"] = 56208,	-- Francis the Shepherd Boy (78.2,32.9)
 						["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
+						["coord"] = { 78.2, 32.9, 376 },
+						["qg"] = 56208,	-- Francis the Shepherd Boy
 					}),
 					q(31531, {	-- Mission: Aerial Threat
-						["qg"] = 58708,	-- Sho (53,52)
 						["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58708,	-- Sho
 					}),
 					q(31529, {	-- Mission: Culling The Vermin
-						["qg"] = 58708,	-- Sho (53,52)
 						["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58708,	-- Sho
 					}),
 					q(31532, {	-- Mission: Predator of the Cliffs
-						["qg"] = 58708,	-- Sho (53,52)
 						["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58708,	-- Sho
 					}),
 					q(30322, {	-- Money Matters
-						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
 						["isDaily"] = true,
+						["coord"] = { 53.2, 51.8, 376 },
+						["qg"] = 58706,	-- Gina Mudclaw
 					}),
 					q(30058, {	-- Mothallus!
+						["sourceQuests"] = {
+							30059,	-- The Moth Rebellion
+							30072,	-- Where Silk Comes From
+						},
+						["coord"] = { 63.6, 58.5, 376 },
+						["qg"] = 57407,	-- Master Goh
 						["g"] = {
 							i(88034),	-- Sunsoaked Vest
 							i(88033),	-- Huangtze Scale Vest
@@ -902,13 +1022,11 @@ _.Zones =
 							i(88029),	-- Thunderfoot Vest
 							i(88028),	-- Sunsong Vest
 						},
-						["qg"] = 57407,	-- Master Goh (63.6,58.5)
-						["sourceQuests"] = {
-							30059,	-- The Moth Rebellion
-							30072,	-- Where Silk Comes From
-						},
 					}),
 					q(29951, {	-- Muddy Water
+						["sourceQuests"] = { 29949 },	-- Legacy
+						["coord"] = { 68.7, 43.1, 376 },
+						["qg"] = 56474,	-- Mudmug
 						["g"] = {
 							i(81778),	-- Silkmaster's Satin Treads
 							i(81779),	-- Sunsoaked Footguards
@@ -920,25 +1038,30 @@ _.Zones =
 							i(81785),	-- Thunderfoot Heavy Warboots
 							i(81786),	-- Sunsong Armored Warboots
 						},
-						["qg"] = 56474,	-- Mudmug (68.7,43.1)
-						["sourceQuests"] = { 29949 },	-- Legacy
 					}),
 					q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 31945 },	-- Learn and Grow VI: Gina's Vote
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30259, {	-- Mung-Mung's Vote II: Rotten to the Core
-						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
 						["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote I: A Hozen's Problem
+						["coord"] = { 44.2, 34.2, 376 },
+						["qg"] = 57401,	-- Mung-Mung
 					}),
 					q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
-						["qg"] = 57401,	-- Mung-Mung (44.2,34.2)
 						["sourceQuests"] = { 30258 },	-- Mung-Mung's Vote II: Rotten to the Core
+						["coord"] = { 44.2, 34.2, 376 },
+						["qg"] = 57401,	-- Mung-Mung
 					}),
 					q(30181, {	-- Mushan Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr. (16.1,82.6)
+						["coord"] = { 16.1, 82.6, 376 },
+						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 					}),
 					q(30184, {	-- Mushan Mastery: Darkhide
+						["sourceQuests"] = { 30181 },	-- Mushan Mastery
+						["coord"] = { 16.0, 82.5, 376 },
+						["qg"] = 58421,	-- Hemet Nesingwary
 						["g"] = {
 							i(81854),	-- Mushan Chopper
 							i(81855),	-- Darkhide Blade
@@ -949,23 +1072,25 @@ _.Zones =
 							i(90542),	-- Safari Journal
 							i(90545),	-- Safari Lantern
 						},
-						["qg"] = 58421,	-- Hemet Nesingwary (16.0,82.5)
-						["sourceQuests"] = { 30181 },	-- Mushan Mastery
 					}),
 					q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
-						["qg"] = 58646,	-- Farmer Yoon (52.3,48.8)
 						["description"] = "Must be revered with at least 8400 reputation with The Tillers.",
+						["coord"] = { 52.3, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31948, {	-- Nana's Vote II: The Sacred Springs
-						["qg"] = 64597,	-- Nana Mudclaw (54.7,47.0)
 						["sourceQuests"] = { 30519 },	-- Nana's Vote I: Nana's Secret Recipe
+						["coord"] = { 54.7, 47.0, 376 },
+						["qg"] = 64597,	-- Nana Mudclaw
 					}),
 					q(31949, {	-- Nana's Vote III: Witchberry Julep
-						["qg"] = 64597,	-- Nana Mudclaw (54.7,47.0)
 						["sourceQuests"] = { 31948 },	-- Nana's Vote II: The Sacred Springs
+						["coord"] = { 54.7, 47.0, 376 },
+						["qg"] = 64597,	-- Nana Mudclaw
 					}),
 					i(86433, {	-- Nice Necklace
 						q(31325, {	-- A Very Nice Necklace
+							["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop.",
 							["qgs"] = {
 								59120,	-- Kunzen Rockflinger
 								59126,	-- Jokka-Jokka
@@ -985,37 +1110,41 @@ _.Zones =
 								59119,	-- Kunzen Ravager
 								59122,	-- Kunzen Herdskeeper
 							},
-							["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop."
 						}),
 					}),
 					q(30324, {	-- Not in Chee-Chee's Backyard
-						["qg"] = 58709,	-- Chee Chee (53,52)
 						["isDaily"] = true,
+						["coord"] = { 53.0, 52.0, 376 },
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(31340, {	-- Oh Sheepie...
-						["qg"] = 58709,	-- Chee Chee
 						["description"] = "Requires reputation level of \"Good Friend\" or better with Chee Chee",
+						["qg"] = 58709,	-- Chee Chee
 					}),
 					q(31314, {	-- Old Man Thistle's Treasure
-						["qg"] = 58705,	-- Fish Fellreed
 						["sourceQuests"] = { 31313 },	-- Just a Folk Story
+						["qg"] = 58705,	-- Fish Fellreed
 					}),
 					i(86404, {	-- Old Map
 						q(31312, {	-- The Old Map
-							["qg"] = 59639,	-- Enormous Cattail Grouper
 							["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
+							["qg"] = 59639,	-- Enormous Cattail Grouper
 						}),
 					}),
 					q(32198, {	-- One Magical, Flying Kingdom's Trash...
-						["qg"] = 67565,	-- Barnaby Fletcher (53.2,51.4)
-						["description"] = "Appears in Halfhill on random days.",
 						["sourceQuests"] = { 32189 },	-- A Shabby New Face
+						["description"] = "Appears in Halfhill on random days.",
+						["coord"] = { 53.2, 51.4, 376 },
+						["qg"] = 67565,	-- Barnaby Fletcher
 					}),
 					q(30030, {	-- Out of Sprite
-						["qg"] = 57209,	-- Grainer Pan
 						["sourceQuests"] = { 30048 },	-- Li Li and the Grain
+						["qg"] = 57209,	-- Grainer Pan
 					}),
 					q(30186, {	-- Parental Mastery
+						["sourceQuests"] = { 30185 },	-- Tortoise Mastery
+						["coord"] = { 19.9, 75.6, 376 },
+						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 						["g"] = {
 							i(81819),	-- Band of the Big Thing o' the Deep
 							i(81820),	-- Band of the Dance Ritual
@@ -1023,38 +1152,45 @@ _.Zones =
 							i(81822),	-- Band of Parental Mastery
 							i(81823),	-- Ring of Torjar's Bane
 						},
-						["qg"] = 58422,	-- Hemet Nesingwary Jr. (19.9,75.6)
-						["sourceQuests"] = { 30185 },	-- Tortoise Mastery
 					}),
 					q(30319, {	-- Pest Problems
-						["qgs"] = { 57402, 59594 },	-- Haohan Mudclaw (2 versions) (53.0,51.7)
 						["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 						["isDaily"] = true,
+						["coord"] = { 53.0, 51.7, 376 },
+						["qgs"] = { 57402, 59594 },	-- Haohan Mudclaw (2 versions)
 					}),
 					q(29916, {	-- Piercing Talons and Slavering Jaws
-						["qg"] = 56208,	-- Francis the Shepherd Boy (78.2,32.9)
 						["sourceQuests"] = { 29915 },	-- A Neighbor's Duty
+						["coord"] = { 78.2, 32.9, 376 },
+						["qg"] = 56208,	-- Francis the Shepherd Boy
 					}),
 					q(29911, {	-- Practically Perfect Produce
-						["qg"] = 56207,	-- Ang Thunderfoot (81.4,24.9)
 						["sourceQuests"] = { 29940 },	-- Taking a Crop
+						["coord"] = { 81.4, 24.9, 376 },
+						["qg"] = 56207,	-- Ang Thunderfoot
 					}),
 					q(29910, {	-- Rampaging Rodents
+						["sourceQuests"] = { 29909 },	-- Low Turnip Turnout
+						["coord"] = { 82.6, 26.2, 376 },
+						["qg"] = 56465,	-- Ana Thunderfoot
 						["g"] = {
 							i(88370),	-- Puntable Marmot
 						},
-						["qg"] = 56465,	-- Ana Thunderfoot (82.6,26.2)
-						["sourceQuests"] = { 29909 },	-- Low Turnip Turnout
 					}),
 					q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30626, {	-- Retreat!
-						["qg"] = 57198,	-- Guard Captain Oakenshield (11.6,49.5)
 						["sourceQuests"] = { 30625 },	-- Students No More
+						["coord"] = { 11.6, 49.5, 376 },
+						["qg"] = 57198,	-- Guard Captain Oakenshield
 					}),
 					q(30057, {	-- Seeing Orange
+						["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
+						["coord"] = { 41.3, 38.2, 376 },
+						["qg"] = 57408,	-- Mina Mudclaw
 						["g"] = {
 							i(81751),	-- Silkmaster's Satin Mantle
 							i(81752),	-- Sunsoaked Spaulder
@@ -1066,18 +1202,19 @@ _.Zones =
 							i(81758),	-- Thunderfoot Heavy Shoulders
 							i(81759),	-- Sunsong Armored Shoulders
 						},
-						["qg"] = 57408,	-- Mina Mudclaw (41.3,38.2)
-						["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
 					}),
 					q(30337, {	-- Simian Sabotage
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31941, {	-- Squash Those Foul Odors
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(29600, {	-- Snap Judgment
+						["qg"] = 56802,	-- Zhang Yue
 						["g"] = {
 							i(81805),	-- Silkmaster's Satin Cuffs
 							i(81806),	-- Sunsoaked Bindings
@@ -1089,9 +1226,10 @@ _.Zones =
 							i(81812),	-- Thunderfoot Heavy Armplates
 							i(81813),	-- Sunsong Armored Bracers
 						},
-						["qg"] = 56802,	-- Zhang Yue
 					}),
 					q(30183, {	-- Stalker Mastery
+						["coord"] = { 16.2, 82.5, 376 },
+						["qg"] = 63822,	-- Tani
 						["g"] = {
 							i(84320),	-- Hemet's Satin Leggings
 							i(84321),	-- Hemet's Hide Legguards
@@ -1103,35 +1241,38 @@ _.Zones =
 							i(84327),	-- Hemet's Heavy Legguards
 							i(84328),	-- Hemet's Armored Legguards
 						},
-						["qg"] = 63822,	-- Tani (16.2,82.5)
 					}),
 					q(32038, {	-- Stag Mastery
-						["qg"] = 58434,	-- Matt "Lucky" Gotcher (15.9,82.2)
 						["sourceQuests"] = {
 							30181,	-- Mushan Mastery
 							30183,	-- Stalker Mastery
-						}
+						},
+						["coord"] = { 15.9, 82.2, 376 },
+						["qg"] = 58434,	-- Matt "Lucky" Gotcher
 					}),
 					q(30335, {	-- Stalling the Ravage
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30334, {	-- Stealing is Bad... Re-Stealing is OK
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(29981, {	-- Stemming the Swarm
-						["qg"] = 56111,	-- Lin Tenderpaw (19.9,56.9)
 						["sourceQuests"] = { 29872 },	-- Lin Tenderpaw
+						["coord"] = { 19.9, 56.9, 376 },
+						["qg"] = 56111,	-- Lin Tenderpaw
 					}),
 					q(30117, {	-- Stoneplow Thirsts
-						["qg"] = 61026,	-- Emmi (36.2,68.4)
 						["sourceQuests"] = { 30078 },	-- Cleaning House
 						["isBreadcrumb"] = true,
+						["coord"] = { 36.2, 68.4, 376 },
+						["qg"] = 61026,	-- Emmi
 					}),
 					q(30055, {	-- Stormstout's Hops
-						["description"] = "Automatically given to you upon completion of all pre-requisites.",
 						["sourceQuests"] = {
 							30054,	-- Enough is Ookin' Enough
 							30052,	-- Weed War
@@ -1139,10 +1280,14 @@ _.Zones =
 						},
 					}),
 					q(30625, {	-- Students No More
-						["qg"] = 57198,	-- Guard Captain Oakenshield (11.6,49.5)
 						["sourceQuests"] = { 30622 },	-- The Swarm Begins
+						["coord"] = { 11.6, 49.5, 376 },
+						["qg"] = 57198,	-- Guard Captain Oakenshield
 					}),
 					q(29940, {	-- Taking a Crop
+						["sourceQuests"] = { 29909 },	-- Low Turnip Turnout
+						["coord"] = { 81.4, 24.9, 376 },
+						["qg"] = 56207,	-- Ang Thunderfoot
 						["g"] = {
 							i(81796),	-- Silkmaster's Satin Gloves
 							i(81797),	-- Sunsoaked Gloves
@@ -1154,15 +1299,15 @@ _.Zones =
 							i(81803),	-- Thunderfoot Heavy Gauntlets
 							i(81804),	-- Sunsong Armored Gauntlets
 						},
-						["qg"] = 56207,	-- Ang Thunderfoot (81.4,24.9)
-						["sourceQuests"] = { 29909 },	-- Low Turnip Turnout
 					}),
 					q(30031, {	-- Taste Test
-						["qg"] = 56138,	-- Li Li (52.7,62.8)
 						["sourceQuests"] = { 30048 },	-- Li Li and the Grain
+						["coord"] = { 52.7, 62.8, 376 },
+						["qg"] = 56138,	-- Li Li
 					}),
 					i(86434, {	-- Tasteful Tiara
 						q(31326, {	-- Tina's Tasteful Tiara
+							["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop.",
 							["qgs"] = {
 								59120,	-- Kunzen Rockflinger
 								59126,	-- Jokka-Jokka
@@ -1182,59 +1327,71 @@ _.Zones =
 								59119,	-- Kunzen Ravager
 								59122,	-- Kunzen Herdskeeper
 							},
-							["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop."
 						}),
 					}),
 					qa(31392, {	-- Temple of the White Tiger
-						["qg"] = 64448,	-- Hopsmaster Chang (55.8,51.8)
+						["coord"] = { 55.8, 51.8, 376 },
+						["qg"] = 64448,	-- Hopsmaster Chang
 					}),
 					qh(31393, {	-- Temple of the White Tiger
-						["qg"] = 64448,	-- Hopsmaster Chang (55.8,51.8)
+						["coord"] = { 55.8, 51.8, 376 },
+						["qg"] = 64448,	-- Hopsmaster Chang
 					}),
 					q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
-						["qg"] = 56111,	-- Lin Tenderpaw (18.1,31.0)
 						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+						["coord"] = { 18.1, 31.1, 376 },
+						["qg"] = 56111,	-- Lin Tenderpaw
 					}),
 					q(31670, {	-- That Dangling Carrot
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31534, {	-- The Beginner's Brew
-						["qg"] = 58647,	-- Ella (53,51.6)
 						["description"] = "Requires reputation level of \"Buddy\" or better with Ella.",
+						["coord"] = { 53.0, 51.6, 376 },
+						["qg"] = 58647,	-- Ella
 					}),
 					q(31669, {	-- The Cabbage Test
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30047, {	-- The Chen Taste Test
-						["qg"] = 56138,	-- Li Li (52.7,62..8)
 						["sourceQuests"] = { 30032 },	-- The Quest for Better Barley
+						["coord"] = { 52.7, 62.8, 376 },
+						["qg"] = 56138,	-- Li Li
 					}),
 					q(30073, {	-- The Emperor
-						["qg"] = 56133,	-- Chen Stormstout (55.9,49.4)
 						["sourceQuests"] = {
 							30055,	-- Stormstout's Hops
 						},
+						["coord"] = { 55.9, 49.4, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(29912, {	-- The Fabulous Miss Fanny
-						["qg"] = 56204,	-- Pang Thunderfoot (83.7,21.0)
 						["sourceQuests"] = { 29911 },	-- Practically Perfect Produce
+						["coord"] = { 83.7, 21.0, 376 },
+						["qg"] = 56204,	-- Pang Thunderfoot
 					}),
 					q(30076, {	-- The Fanciest Water
-						["qg"] = 56474,	-- Mudmug (32.3,68.3)
 						["sourceQuests"] = { 30074 },	-- Knocking on the Door
+						["coord"] = { 32.3, 68.3, 376 },
+						["qg"] = 56474,	-- Mudmug
 					}),
 					q(30056, {	-- The Farmer's Daughter
-						["qg"] = 62385,	-- Den Mudclaw (44.3,34.2)
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["coord"] = { 44.3, 34.2, 376 },
+						["qg"] = 62385,	-- Den Mudclaw
 					}),
 					q(29581, {	-- The Golden Dream
-						["qg"] = 56802,	-- Zhang Yue
 						["sourceQuests"] = { 29577 },	-- Ashyo's Vision
+						["qg"] = 56802,	-- Zhang Yue
 					}),
 					q(30628, {	-- The Gratitude of Stoneplow
+						["sourceQuests"] = { 30627 },	-- The Gratitude of Stoneplow
+						["qg"] = 56720,	-- Loon Mai
 						["g"] = {
 							i(81476),	-- Nayeli Treads
 							i(81477),	-- Mortbreath Footguards
@@ -1246,10 +1403,10 @@ _.Zones =
 							i(81483),	-- Korjan Warboots
 							i(81484),	-- Dojani Warboots
 						},
-						["qg"] = 56720,	-- Loon Mai
-						["sourceQuests"] = { 30627 },	-- The Gratitude of Stoneplow
 					}),
 					q(30051, {	-- The Great Water Hunt
+						["sourceQuests"] = { 30049 },	-- Doesn't Hold Water
+						["qg"] = 56474,	-- Mudmug
 						["g"] = {
 							i(81839),	-- Embrace of Trees
 							i(81840),	-- Dustback Cloak
@@ -1257,38 +1414,45 @@ _.Zones =
 							i(81842),	-- Mudmug's Cloak
 							i(81843),	-- Cloak of the Grassy Cline
 						},
-						["qg"] = 56474,	-- Mudmug
-						["sourceQuests"] = { 30049 },	-- Doesn't Hold Water
 					}),
 					q(29983, {	-- The Hidden Master
-						["qg"] = 56720,	-- Loon Mai (19.6,56.8)
 						["sourceQuests"] = {
 							29981,	-- Stemming the Swarm
 							29982,	-- Evacuation Orders
 						},
+						["coord"] = { 19.6, 56.8, 376 },
+						["qg"] = 56720,	-- Loon Mai
 					}),
 					q(31936, {	-- The "Jinyu Princess" Irrigation System
-						["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
-						["description"] = "Begins with a purchase of the \"Jinyu Princess\" Irrigation System from Gina Mudclaw",
 						["sourceQuests"] = { 30516 },	-- Growing the Farm I: A Little Problem
+						["description"] = "Begins with a purchase of the \"Jinyu Princess\" Irrigation System from Gina Mudclaw",
+						["coord"] = { 53.2, 51.8, 376 },
+						["qg"] = 58706,	-- Gina Mudclaw
 					}),
 					q(30336, {	-- The Kunzen Hunter-Chief
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30326, {	-- The Kunzen Legend-Chief
-						["qgs"] = { 58705, 59517 },	-- Fish Fellreed (2 versions) (52.8,51.8)
 						["isDaily"] = true,
+						["coord"] = { 52.8, 51.8, 376 },
+						["qgs"] = { 58705, 59517 },	-- Fish Fellreed (2 versions)
 					}),
 					q(30333, {	-- The Lesser of Two Evils
-						["qg"] = 58646,	-- Farmer Yoon (52.3,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.3, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30623, {	-- The Mantidote
-						["qg"] = 59855,	-- Mei Barrelbottom (18.0,56.5)
 						["sourceQuests"] = { 29990 },	-- Training and Discipline
+						["coord"] = { 18.0, 56.5, 376 },
+						["qg"] = 59855,	-- Mei Barrelbottom
 					}),
 					q(29913, {	-- The Meat They'll Eat
+						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
+						["coord"] = { 75.2, 24.0, 376 },
+						["qg"] = 56205,	-- Liang Thunderfoot
 						["g"] = {
 							i(88018),	-- Thunderfoot Heavy Cap
 							i(88017),	-- Sunsong Armored Cap
@@ -1300,18 +1464,21 @@ _.Zones =
 							i(88011),	-- Wild Plains Headguard
 							i(88010),	-- Plainshawk Cap
 						},
-						["qg"] = 56205,	-- Liang Thunderfoot (75.2,24.0)
-						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
 					}),
 					q(30059, {	-- The Moth Rebellion
-						["qg"] = 57424,	-- Journeyman Chu (63.5,58.4)
 						["sourceQuests"] = { 32035 },	-- Got Silk?
+						["coord"] = { 63.5, 58.4, 376 },
+						["qg"] = 57424,	-- Journeyman Chu
 					}),
 					q(31674, {	-- The Pink Turnip Challenge
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30032,  {	-- The Quest for Better Barley
+						["sourceQuests"] = { 30029 },	-- Wee Little Shenanigans
+						["coord"] = { 52.7, 63.0, 376 },
+						["qg"] = 57211,	-- Grainlord Kai
 						["g"] = {
 							i(81787),	-- Silkmaster's Satin Cord
 							i(81788),	-- Sunsoaked Belt
@@ -1323,79 +1490,93 @@ _.Zones =
 							i(81794),	-- Thunderfoot Heavy Girdle
 							i(81795),	-- Sunsong Armored Girdle
 						},
-						["qg"] = 57211,	-- Grainlord Kai (52.7,63.0)
-						["sourceQuests"] = { 30029 },	-- Wee Little Shenanigans
 					}),
 					qh(31255, {	-- The Road to Kun-Lai
-						["qg"] = 63778,	-- Messenger Grummle (70,23.6)
 						["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
+						["coord"] = { 70.0, 23.6, 376 },
+						["qg"] = 63778,	-- Messenger Grummle
 					}),
 					qa(31254, {	-- The Road to Kun-Lai
-						["qg"] = 63778,	-- Messenger Grummle (70,23.6)
 						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+						["coord"] = { 70.0, 23.6, 376 },
+						["qg"] = 63778,	-- Messenger Grummle
 					}),
 					q(30627, {	-- The Savior of Stoneplow
+						["sourceQuests"] = { 30626 },	-- Retreat!
+						["coord"] = { 17.9, 55.7, 376 },
+						["qg"] = 59856,	-- Master Bruised Paw
 						["g"] = {
 							ach(7502),	-- Savior of Stoneplow
 						},
-						["qg"] = 59856,	-- Master Bruised Paw (17.9,55.7)
-						["sourceQuests"] = { 30626 },	-- Retreat!
 					}),
 					q(30086, {	-- The Search for the Hidden Master
-						["qg"] = 56110,	-- Xiao (84,21.2)
 						["isBreadcrumb"] = true,
+						["coord"] = { 84.0, 21.2, 376 },
+						["qg"] = 56110,	-- Xiao
 					}),
 					q(30622, {	-- The Swarm Begins
-						["qg"] = 56720,	-- Loon Mai
 						["sourceQuests"] = { 29990 },	-- Training and Discipline
+						["qg"] = 56720,	-- Loon Mai
 					}),
 					q(29946, {	-- The Warren-Mother
-						["qg"] = 56133,	-- Chen Stormstout (68.9,43.2)
 						["sourceQuests"] = { 29944 },	-- Leaders Among Breeders
+						["coord"] = { 68.9, 43.2, 376 },
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(31675, {	-- The White Turnip Treatment
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(30323, {	-- They Don't Even Wear Them
-						["qg"] = 58761,	-- Tina Mudclaw (53.0,51.8)
 						["isDaily"] = true,
+						["coord"] = { 53.0, 51.8, 376 },
+						["qg"] = 58761,	-- Tina Mudclaw
 					}),
 					q(29985, {	-- They Will Be Mist
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
+						["coord"] = { 18.3, 31.2, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw
 					}),
 					q(29948, {	-- Thieves to the Core
-						["qg"] = 56474,	-- Mudmug (68.7,43.2)
 						["sourceQuests"] = {
 							29944,	-- Leaders Among Breeders
 							29945,	-- Yellow and Red Make Orange
 						},
+						["coord"] = { 68.7, 43.2, 376 },
+						["qg"] = 56474,	-- Mudmug
 					}),
 					i(89813, {	-- "Thunder King" Pest Repellers
 						q(31937, {	-- "Thunder King" Pest Repellers
-							["qg"] = 58706,	-- Gina Mudclaw (53.2,51.8)
-							["description"] = "Begins with a purchase of the \"Thunder King\" Pest Repellers from Gina Mudclaw",
 							["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
+							["description"] = "Begins with a purchase of the \"Thunder King\" Pest Repellers from Gina Mudclaw",
+							["coord"] = { 53.2, 51.8, 376 },
+							["qg"] = 58706,	-- Gina Mudclaw
 						}),
 					}),
 					q(30185, {	-- Tortoise Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr. (16.1,82.6)
 						["sourceQuests"] = {
 							30182,	-- Fox Mastery
 							30184,	-- Mushan Mastery: Darkhide
 							32038,	-- Stag Mastery
 						},
+						["coord"] = { 16.1, 82.6, 376 },
+						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 					}),
 					q(29990, {	-- Training and Discipline
-						["qg"] = 56111,	-- Lin Tenderpaw (18.1,31.0)
 						["sourceQuests"] = { 29989 },	-- Unyielding Fists: Trial of Stone
+						["coord"] = { 18.1, 31.0, 376 },
+						["qg"] = 56111,	-- Lin Tenderpaw
 					}),
 					q(29984, {	-- Unyielding Fists: Trial of Bamboo
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["sourceQuests"] = { 29983 },	-- The Hidden Master
+						["coord"] = { 18.3, 31.2, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw
 					}),
 					q(29989, {	-- Unyielding Fists: Trial of Stone
+						["sourceQuests"] = { 29988 },	-- A Taste For Eggs
+						["coord"] = { 18.3, 31.2, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["g"] = {
 							i(81760),	-- Silkmaster's Satin Robe
 							i(81761),	-- Sunsoaked Breastplate
@@ -1407,26 +1588,30 @@ _.Zones =
 							i(81767),	-- Thunderfoot Heavy Chestpiece
 							i(81768),	-- Sunsong Armored Chestpiece
 						},
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
-						["sourceQuests"] = { 29988 },	-- A Taste For Eggs
 					}),
 					q(29987, {	-- Unyielding Fists: Trial of Wood
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["sourceQuests"] = {
 							29986,	-- Fog Wards
 							29992,	-- Tenderpaw By Name, Tender Paw By Reputation
 							29985,	-- They Will Be Mist
 						},
+						["coord"] = { 18.3, 31.2, 376 },
+						["qg"] = 56714,	-- Master Bruised Paw
 					}),
 					q(30317, {	-- Water, Water Everywhere
-						["qg"] = 57298,	-- Farmer Fung (48.3,33.9)
 						["isDaily"] = true,
+						["coord"] = { 48.3, 33.9, 376 },
+						["qg"] = 57298,	-- Farmer Fung
 					}),
 					q(30267, {	-- Watery Woes
-						["qg"] = 58736,	-- Gladecaster Lang (61.0,32.9)
 						["sourceQuests"] = { 29871 },	-- Clever Ashyo
+						["coord"] = { 61.0, 32.9, 376 },
+						["qg"] = 58736,	-- Gladecaster Lang
 					}),
 					q(30029, {	-- Wee Little Shenanigans
+						["sourceQuests"] = { 30048 },	-- Li Li and the Grain
+						["coord"] = { 52.7, 63.0, 376 },
+						["qg"] = 57211,	-- Grainlord Kai
 						["g"] = {
 							i(84333),	-- Grainlord's Amulet
 							i(84332),	-- Grainlord's Pendant
@@ -1434,24 +1619,28 @@ _.Zones =
 							i(84330),	-- Grainlord's Choker
 							i(84329),	-- Grainlord's Locket
 						},
-						["qg"] = 57211,	-- Grainlord Kai (52.7,63.0)
-						["sourceQuests"] = { 30048 },	-- Li Li and the Grain
 					}),
 					q(30052, {	-- Weed War
-						["qg"] = 57385,	-- Gai Lan (38.6,51.6)
-						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
+						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["coord"] = { 38.6, 51.6, 376 },
+						["qg"] = 57385,	-- Gai Lan
 					}),
 					q(30321, {	-- Weed War II
-						["qg"] = 58710,	-- Jogu the Drunk (53.6,52.6)
 						["isDaily"] = true,
+						["coord"] = { 53.6, 52.6, 376 },
+						["qg"] = 58710,	-- Jogu the Drunk
 					}),
 					q(30325, {	-- Where It Counts
-						["qg"] = 58708,	-- Sho (53.1,52.0)
 						["sourceQuests"] = { 30257 },	-- Learn and Grow V: Halfhill Market
 						["isDaily"] = true,
+						["coord"] = { 53.1, 52.0, 376 },
+						["qg"] = 58708,	-- Sho
 					}),
 					q(30072, {	-- Where Silk Comes From
+						["sourceQuests"] = { 32035 },	-- Got Silk?
+						["coord"] = { 62.7, 59.7, 376 },
+						["qg"] = 57405,	-- Silkmaster Tsai
 						["g"] = {
 							i(84343),	-- Silkmaster's Cloak
 							i(84342),	-- Silkmaster's Manteau
@@ -1459,18 +1648,19 @@ _.Zones =
 							i(84340),	-- Silkmaster's Drape
 							i(84339),	-- Silkmaster's Shawl
 						},
-						["qg"] = 57405,	-- Silkmaster Tsai (62.7,59.7)
-						["sourceQuests"] = { 32035 },	-- Got Silk?
 					}),
 					q(31943, {	-- Which Berries? Witchberries.
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
 					q(31671, {	-- Why Not Scallions?
-						["qg"] = 58646,	-- Farmer Yoon (52.2,48.8)
 						["isDaily"] = true,
+						["coord"] = { 52.2, 48.8, 376 },
+						["qg"] = 58646,	-- Farmer Yoon
 					}),
-					o(218750, {
+					o(218750, {	-- Work Orders
+						["description"] = "All work order quests are available after completing \"Inherit the Earth\".",
 						["g"] = {
 							qh(32642, {	-- Work Order: Dominance Offensive I
 								["sourceQuests"] = { 32682 },	-- Inherit the Earth
@@ -1537,18 +1727,18 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 						},
-						["description"] = "All work order quests are available after completing \"Inherit the Earth\".",
 					}),
-					q(29945,  {  	-- Yellow and Red Make Orange
-						["g"] = {
-							i(88377), 		-- Turnip Paint "Gun"
-						},
-						["qg"] = 56138,	-- Li Li (68.9,43.3)
+					q(29945,  {	-- Yellow and Red Make Orange
 						["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike
+						["coord"] = { 68.9, 43.3, 376 },
+						["qg"] = 56138,	-- Li Li
+						["g"] = {
+							i(88377),	-- Turnip Paint "Gun"
+						},
 					}),
 					q(30327, {	-- You Have to Burn the Ropes
-						["qg"] = 58647,	-- Ella
 						["isDaily"] = true,
+						["qg"] = 58647,	-- Ella
 					}),
 --[[
 					q(30400),	-- A Blue Feather for Chee Chee
@@ -1603,11 +1793,6 @@ _.Zones =
 					q(30428),	-- A Ruby Shard for Tina
 ]]--
 --[[
-					-- Holiday quests
-					q(32046),	-- Candy Bucket
-					q(32048),	-- Candy Bucket
-					q(32502),	-- Honor the Flame
-					q(32497),	-- Honor the Flame
 					-- No available information
 					q(33139),	-- Secrets Lost, Forever? -- Removed
 					q(31530),	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
@@ -1635,67 +1820,72 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					n(51059, {	-- Blackhoof
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(19, i(86565, {
-							["achievementID"] = 8728,	-- Going to Need a Bigger Bag
-							["criteriaID"] = 5
-						})),
-						dr(12, {
+						["coords"] = {
+							{ 39.6, 57.6, 376 },
+							{ 32.8, 62.8, 376 },
+						},
+						["g"] = {
+							i(87217),	-- Small Bag of Goods
+							i(86565, {	-- Battle Horn (TOY!)
+								["achievementID"] = 8728,	-- Going to Need a Bigger Bag
+								["criteriaID"] = 5
+							}),
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87596),	-- Mudmug's Mitts
 							i(87597),	-- Gloves of Congealed Mist
-						}),
-						dr(11, {
 							i(87600),	-- Marshsong Gloves
 							i(87601),	-- Plough Driving Grips
 							i(87602),	-- Grain Warden's Gauntlets
-						}),
-						dr(10, {
 							i(87598),	-- Monstrous Silk Gloves
 							i(87599),	-- Grower's Gloves
 							i(87603),	-- Thunderfall Gauntlets
-						}),
+						},
 					}),
 					n(50828, {	-- Bonobos
-						dr(21, i(87217)),	-- Small Bag of Goods
-						dr(12, {
+						["coords"] = {
+							{ 15.6, 32.2, 376 },
+							{ 19.0, 35.8, 376 },
+							{ 14.0, 38.2, 376 },
+							{ 16.6, 41.0, 376 },
+						},
+						["g"] = {
+							i(87217),	-- Small Bag of Goods
 							i(87597),	-- Gloves of Congealed Mist
 							i(87598),	-- Monstrous Silk Gloves
-						}),
-						dr(11, {
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87596),	-- Mudmug's Mitts
 							i(87601),	-- Plough Driving Grips
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87603),	-- Thunderfall Gauntlets
-						}),
-						dr(10, {
 							i(87599),	-- Grower's Gloves
 							i(87600),	-- Marshsong Gloves
-						--	i(86591),	-- Should be a toy
-						}),
+						--	i(86591),	-- Magic Banana (should be a toy)
+						},
 					}),
 					n(50351, {	-- Jonn-Dar
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(14, i(86572)),	-- Terracotta Fragment
-						dr(11, {
+						["coord"] = { 18.6, 77.6, 376 },
+						["g"] = {
+							i(87217),	-- Small Bag of Goods
+							i(86572),	-- Terracotta Fragment
 							i(87596),	-- Mudmug's Mitts
 							i(87598),	-- Monstrous Silk Gloves
 							i(87600),	-- Marshsong Gloves
 							i(87601),	-- Plough Driving Grips
 							i(87603),	-- Thunderfall Gauntlets
-						}),
-						dr(10, {
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87597),	-- Gloves of Congealed Mist
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87599),	-- Grower's Gloves
-						}),
+						},
 					}),
 					n(50364, {	-- Nal'lak the Ripper
-						dr(20, i(86576)),	-- Dynasty of Steel
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(11, {
+						["coords"] = {
+							{ 10.8, 49.0, 376 },
+							{ 9.20, 59.8, 376 },
+						},
+						["g"] = {
+							i(86576),	-- Dynasty of Steel
+							i(87217),	-- Small Bag of Goods
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87596),	-- Mudmug's Mitts
 							i(87597),	-- Gloves of Congealed Mist
@@ -1703,88 +1893,86 @@ _.Zones =
 							i(87599),	-- Grower's Gloves
 							i(87601),	-- Plough Driving Grips
 							i(87602),	-- Grain Warden's Gauntlets
-						}),
-						dr(10, {
 							i(87600),	-- Marshsong Gloves
 							i(87603),	-- Thunderfall Gauntlets
-						}),
+						},
 					}),
 					n(50811, {	-- Nasra Spothide
-						dr(20, i(86587)),	-- Seed of Tranquil Growth
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(12, i(87600)),	-- Marshsong Gloves
-						dr(11, {
+						["coord"] = { 88.6, 18.0, 376 },
+						["g"] = {
+							i(86587),	-- Seed of Tranquil Growth
+							i(87217),	-- Small Bag of Goods
+							i(87600),	-- Marshsong Gloves
 							i(87596),	-- Mudmug's Mitts
 							i(87597),	-- Gloves of Congealed Mist
 							i(87598),	-- Monstrous Silk Gloves
 							i(87599),	-- Grower's Gloves
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87603),	-- Thunderfall Gauntlets
-						}),
-						dr(10, {
 							i(87601),	-- Plough Driving Grips
 							i(87595),	-- Gloves of Burrow Spelunking
-						}),
+						},
 					}),
 					n(50783, {	-- Salyin Warscout
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(15, i(86583)),	-- Salyin Battle Banner
-						dr(12, {
+						["coords"] = {
+							{ 67.6, 59.6, 376 },
+							{ 75.8, 46.8, 376 },
+						},
+						["g"] = {
+							i(87217),	-- Small Bag of Goods
+							i(86583),	-- Salyin Battle Banner (TOY!)
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87599),	-- Grower's Gloves
 							i(87601),	-- Plough Driving Grips
-						}),
-						dr(11, {
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87598),	-- Monstrous Silk Gloves
 							i(87596),	-- Mudmug's Mitts
-						}),
-						dr(10, {
 							i(87597),	-- Gloves of Congealed Mist
 							i(87600),	-- Marshsong Gloves
 							i(87603),	-- Thunderfall Gauntlets
-						}),
+						},
 					}),
 					n(50766, {	-- Sele'na
-						dr(20, i(86580, {	-- Wilted Lilypad
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							["criteriaID"] = 8,		-- Overgrown Lilypad
-							["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
-						})),
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(12, i(87595)),	-- Gloves of Burrow Spelunking
-						dr(11, {
+						["coords"] = {
+							{ 52.8, 28.6, 376 },
+							{ 60.2, 39.2, 376 },
+						},
+						["g"] = {
+							i(86580, {	-- Wilted Lilypad
+								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+								["criteriaID"] = 8,	-- Overgrown Lilypad
+								["description"] = "This item used to be the Overgrown Lilypad. This item instead is required for the Bigger Bag achievement in its place.",
+							}),
+							i(87217),	-- Small Bag of Goods
+							i(87595),	-- Gloves of Burrow Spelunking
 							i(87596),	-- Mudmug's Mitts
 							i(87597),	-- Gloves of Congealed Mist
 							i(87600),	-- Marshsong Gloves
 							i(87601),	-- Plough Driving Grips
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87603),	-- Thunderfall Gauntlets
-						}),
-						dr(10, {
 							i(87599),	-- Grower's Gloves
 							i(87598),	-- Monstrous Silk Gloves
-						}),
+						},
 					}),
 					n(50339, {	-- Sulik'shor
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(12, i(87599)),	-- Grower's Gloves
-						dr(11, {
+						["coord"] = { 37.0, 25.6, 376 },
+						["g"] = {
+							i(87217),	-- Small Bag of Goods
+							i(87599),	-- Grower's Gloves
 							i(87595),	-- Gloves of Burrow Spelunking
 							i(87596),	-- Mudmug's Mitts
 							i(87598),	-- Monstrous Silk Gloves
 							i(87602),	-- Grain Warden's Gauntlets
 							i(87603),	-- Thunderfall Gauntlets
-						}),
-						dr(10, {
 							i(87597),	-- Gloves of Congealed Mist
 							i(87601),	-- Plough Driving Grips
 							i(87600),	-- Marshsong Gloves
-						}),
-						dr(9, i(86569, {	-- Crystal of Insanity
-							["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							["criteriaID"] = 4,
-						})),
+							i(86569, {	-- Crystal of Insanity
+								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+								["criteriaID"] = 4,	-- Crystal of Insanity
+							}),
+						},
 					}),
 				}),
 				n(-222, {	-- Treasure Hunter
@@ -1794,18 +1982,22 @@ _.Zones =
 				}),
 				n(-2,   {	-- Vendors
 					n(58713,  {	-- Anthea Ironpaw <Master of the Wok>
-						un(1, i(74666)),	-- Recipe: Sauteed Carrots
-						recipe(104301),	-- Sauteed Carrots
-						un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
-						recipe(104303),	-- Sea Mist Rice Noodles
-						un(1, i(74667)),	-- Recipe: Valley Stir Fry
-						recipe(104302),	-- Valley Stir Fry
-						un(1, i(87231)),	-- Recipe: Banquet of the Wok
-						recipe(125594),	-- Banquet of the Wok
-						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
-						recipe(125595),	-- Great Banquet of the Wok
+						["coord"] = { 52.8, 51.8, 376 },
+						["g"] = {
+							un(1, i(74666)),	-- Recipe: Sauteed Carrots
+							recipe(104301),		-- Sauteed Carrots
+							un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
+							recipe(104303),		-- Sea Mist Rice Noodles
+							un(1, i(74667)),	-- Recipe: Valley Stir Fry
+							recipe(104302),		-- Valley Stir Fry
+							un(1, i(87231)),	-- Recipe: Banquet of the Wok
+							recipe(125594),		-- Banquet of the Wok
+							un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
+							recipe(125595),		-- Great Banquet of the Wok
+						},
 					}),
 					na(70101, {	-- Armsmaster Holinka >S13< Elite
+						["u"] = 43,	-- Removed NPCs
 						["g"] = {
 							un(2, i(98336)),	-- Tyrannical Gladiator's Greatcloak
 							un(2, i(91133)),	-- Tyrannical Gladiator's Staff
@@ -1893,16 +2085,46 @@ _.Zones =
 							un(2, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
 							un(2, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
 							un(2, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
-							un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of alacrity
-							un(2, i(91355)),	-- Tyrannical Gladiator's footguards of meditation
-							--
+							un(2, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity
+							un(2, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation
 						},
-						["u"] = 43,
 					}),
 					na(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
+						-- These are the Season 13 ensembles.
+						-- Other than these ensembles, it looks like the only source for lots of this gear is Nalak.
+						-- Take note of the opposite-faction appearances that are awarded so we can fill out both factions!
+						--	i(138689),	-- Ensemble: Tyrannical Gladiator's Chain Armor (Hunter)
+						--	i(138691),	-- Ensemble: Tyrannical Gladiator's Dragonhide Armor (Druid)
+						--	i(138683),	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor (Death Knight)
+							i(138701, {	-- Ensemble: Tyrannical Gladiator's Felweave Armor (Warlock)
+								i(99953),	-- Tyrannical Gladiator's Felweave Cowl
+								i(99956),	-- Tyrannical Gladiator's Felweave Amice
+								i(99955),	-- Tyrannical Gladiator's Felweave Raiment
+								i(99787),	-- Tyrannical Gladiator's Cuffs of Accuracy
+								i(99952),	-- Tyrannical Gladiator's Felweave Handguards
+								i(99782),	-- Tyrannical Gladiator's Cord of Accuracy
+								i(99954),	-- Tyrannical Gladiator's Felweave Trousers
+								i(99785),	-- Tyrannical Gladiator's Treads of Alacrity
+							}),
+						--	i(138693),	-- Ensemble: Tyrannical Gladiator's Ironskin Armor (Monk)
+						--	i(138695),	-- Ensemble: Tyrannical Gladiator's Leather Armor (Rogue)
+						--	i(138681),	-- Ensemble: Tyrannical Gladiator's Plate Armor (Warrior)
+						--	i(138687),	-- Ensemble: Tyrannical Gladiator's Ringmail Armor (Shaman)
+						--	i(138699),	-- Ensemble: Tyrannical Gladiator's Satin Armor (Priest)
+						--	i(138685),	-- Ensemble: Tyrannical Gladiator's Scaled Armor (Paladin)
+							i(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor (Mage)
+								i(91234),	-- Tyrannical Gladiator's Silk Cowl
+								i(91240),	-- Tyrannical Gladiator's Silk Amice
+								i(91238),	-- Tyrannical Gladiator's Silk Robe
+								i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess (the vendor sells the Seasion 14 version of this item, ID 99788)
+								i(91232),	-- Tyrannical Gladiator's Silk Handguards
+								-- there's probably a belt missing here that i already knew the appearance of.
+								i(91236),	-- Tyrannical Gladiator's Silk Trousers
+								-- there's probably shoes missing here that i already knew the appearance of.
+							}),
 							i(144246),	-- Arsenal: Tyrannical Gladiator's Weapons
 							i(99794),	-- Tyrannical Gladiator's Barrier
 							i(99796),	-- Tyrannical Gladiator's Battle Staff
@@ -2070,165 +2292,182 @@ _.Zones =
 							i(99960),	-- Tyrannical Gladiator's Plate Legguards
 							i(99961),	-- Tyrannical Gladiator's Plate Shoulders
 							-- Alliance only Set. Replaced with a normal set
-							un(2, i(91234)),	-- Tyrannical Gladiator's Silk Cowl)
-							un(2, i(91238)),	-- Tyrannical Gladiator's Silk Robe
-							un(2, i(91240)),	-- Tyrannical Gladiator's Silk Amice
-							un(2, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm)
+							-- un(2, i(91234)),	-- Tyrannical Gladiator's Silk Cowl) (available via S13 ensemble)
+							-- un(2, i(91238)),	-- Tyrannical Gladiator's Silk Robe (available via S13 ensemble)
+							-- un(2, i(91240)),	-- Tyrannical Gladiator's Silk Amice (available via S13 ensemble)
+							un(2, i(91311)),	-- Tyrannical Gladiator's Mooncloth Helm
 							un(2, i(91315)),	-- Tyrannical Gladiator's Mooncloth Robe
 							un(2, i(91317)),	-- Tyrannical Gladiator's Mooncloth Mantle
 						},
 					}),
 					n(58717,  {	-- Bobo Ironpaw <Master of the Brew>
-						recipe(124052),	-- Ginseng Tea
-						recipe(124053),	-- Jade Witch Brew
-						recipe(124054),	-- Mad Brewer's Breakfast
-						un(1, i(87247)),	-- Recipe: Banquet of the Brew
-						recipe(125602),	-- Banquet of the Brew
-						un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
-						recipe(125603),	-- Great Banquet of the Brew
+						["coord"] = { 53.0, 52.0, 376 },
+						["g"] = {
+							recipe(124052),		-- Ginseng Tea
+							recipe(124053),		-- Jade Witch Brew
+							recipe(124054),		-- Mad Brewer's Breakfast
+							un(1, i(87247)),	-- Recipe: Banquet of the Brew
+							recipe(125602),		-- Banquet of the Brew
+							un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
+							recipe(125603),		-- Great Banquet of the Brew
+						},
 					}),
 					n(61215,  {	-- Claretta <Adventuring Supplies>
-						-- Weapons
-						i(81686),	-- Faded Forest Axe
-						i(81683),	-- Faded Forest Barrier
-						i(81674),	-- Faded Forest Battlemace
-						i(81685),	-- Faded Forest Blade
-						i(81676),	-- Faded Forest Crossbow
-						i(81673),	-- Faded Forest Combat Staff
-						i(81679),	-- Faded Forest Dagger
-						i(81672),	-- Faded Forest Diviner's Rod
-						i(81681),	-- Faded Forest Greatsword
-						i(81675),	-- Faded Forest Handaxe
-						i(81682),	-- Faded Forest Mace
-						i(81671),	-- Faded Forest Meditation Staff
-						i(81677),	-- Faded Forest Saber
-						i(81678),	-- Faded Forest Scepter
-						i(81684),	-- Faded Forest Shield
-						i(81680),	-- Faded Forest Smasher
-						
-						-- Helms
-						i(81587),	-- Faded Forest Armored Helm
-						i(81582),	-- Faded Forest Burnished Headcover
-						i(81585),	-- Faded Forest Chain Helm
-						i(81586),	-- Faded Forest Heavy Helm
-						i(81580),	-- Faded Forest Hide Helm
-						i(81584),	-- Faded Forest Leather Helm
-						i(81581),	-- Faded Forest Ringmail Helm
-						i(81579),	-- Faded Forest Satin Hood
-						i(81583),	-- Faded Forest Silk Cowl
-						
-						-- Necklaces
-						i(81655),	-- Faded Forest Amulet
-						i(81652),	-- Faded Forest Choker
-						i(81651),	-- Faded Forest Locket
-						i(81653),	-- Faded Forest Necklace
-						i(81654),	-- Faded Forest Pendant
-						
-						-- Cloak
-						i(81668),	-- Faded Forest Cape
-						i(81670),	-- Faded Forest Cloak
-						i(81667),	-- Faded Forest Drape
-						i(81669),	-- Faded Forest Manteau
-						i(81666),	-- Faded Forest Shawl
-						
-						-- Shoulders
-						i(81596),	-- Faded Forest Armored Shoulders
-						i(81591),	-- Faded Forest Burnished Spaulders
-						i(81594),	-- Faded Forest Chain Spaulders
-						i(81595),	-- Faded Forest Heavy Shoulders
-						i(81589),	-- Faded Forest Hide Spaulders
-						i(81593),	-- Faded Forest Leather Spaulders
-						i(81590),	-- Faded Forest Ringmail Spaulders
-						i(81588),	-- Faded Forest Satin Mantle
-						i(81592),	-- Faded Forest Silk Amice
-						
-						-- Chest
-						i(81605),	-- Faded Forest Armored Chestpiece
-						i(81600),	-- Faded Forest Burnished Chestguard
-						i(81603),	-- Faded Forest Chain Armor
-						i(81604),	-- Faded Forest Heavy Chestpiece
-						i(81598),	-- Faded Forest Hide Robes
-						i(81602),	-- Faded Forest Leather Tunic
-						i(81599),	-- Faded Forest Ringmail Armor
-						i(81597),	-- Faded Forest Satin Robe
-						i(81601),	-- Faded Forest Silk Robe
-						
-						-- Wrists
-						i(81650),	-- Faded Forest Armored Bracers
-						i(81645),	-- Faded Forest Burnished Bracers
-						i(81648),	-- Faded Forest Chain Wristguards
-						i(81649),	-- Faded Forest Heavy Armplates
-						i(81643),	-- Faded Forest Hide Bindings
-						i(81647),	-- Faded Forest Leather Armwraps
-						i(81644),	-- Faded Forest Ringmail Armbands
-						i(81642),	-- Faded Forest Satin Cuffs
-						i(81646),	-- Faded Forest Silk Cuffs
-						
-						-- Gloves
-						i(81641),	-- Faded Forest Armored Gauntlets
-						i(81636),	-- Faded Forest Burnished Gloves
-						i(81639),	-- Faded Forest Chain Gauntlets
-						i(81640),	-- Faded Forest Heavy Gauntlets
-						i(81634),	-- Faded Forest Hide Gloves
-						i(81638),	-- Faded Forest Leather Gloves
-						i(81635),	-- Faded Forest Ringmail Gauntlets
-						i(81633),	-- Faded Forest Satin Gloves
-						i(81637),	-- Faded Forest Silk Handguards
-						
-						-- Waist
-						i(81632),	-- Faded Forest Armored Girdle
-						i(81627),	-- Faded Forest Burnished Clasp
-						i(81630),	-- Faded Forest Chain Links
-						i(81631),	-- Faded Forest Heavy Girdle
-						i(81625),	-- Faded Forest Hide Belt
-						i(81629),	-- Faded Forest Leather Belt
-						i(81626),	-- Faded Forest Ringmail Waistguard
-						i(81624),	-- Faded Forest Satin Cord
-						i(81628),	-- Faded Forest Silk Cord
-						
-						-- Legs
-						i(81614),	-- Faded Forest Armored Legguards
-						i(81609),	-- Faded Forest Burnished Legplates
-						i(81612),	-- Faded Forest Chain Leggings
-						i(81613),	-- Faded Forest Heavy Legguards
-						i(81607),	-- Faded Forest Hide Legguards
-						i(81611),	-- Faded Forest Leather Legguards
-						i(81608),	-- Faded Forest Ringmail Leggings
-						i(81606),	-- Faded Forest Satin Leggings
-						i(81610),	-- Faded Forest Silk Trousers
-						
-						-- Feet
-						i(81623),	-- Faded Forest Armored Warboots
-						i(81618),	-- Faded Forest Burnished Greaves
-						i(81621),	-- Faded Forest Chain Sabatons
-						i(81622),	-- Faded Forest Heavy Warboots
-						i(81616),	-- Faded Forest Hide Footguards
-						i(81620),	-- Faded Forest Leather Boots
-						i(81617),	-- Faded Forest Ringmail Sabatons
-						i(81615),	-- Faded Forest Satin Treads
-						i(81619),	-- Faded Forest Silk Treads
-						
-						-- Finger
-						i(81656),	-- Faded Forest Band
-						i(81658),	-- Faded Forest Loop
-						i(81657),	-- Faded Forest Ring
-						i(81660),	-- Faded Forest Seal
-						i(81659),	-- Faded Forest Signet
-						
-						-- Trinkets
-						i(81665),	-- Faded Forest Badge
-						i(81662),	-- Faded Forest Emblem
-						i(81664),	-- Faded Forest Insignia
-						i(81663),	-- Faded Forest Medal
-						i(81661),	-- Faded Forest Medallion
+						["coord"] = { 84.8, 21.6, 376 },
+						["g"] = {
+							-- Weapons
+							i(81686),	-- Faded Forest Axe
+							i(81683),	-- Faded Forest Barrier
+							i(81674),	-- Faded Forest Battlemace
+							i(81685),	-- Faded Forest Blade
+							i(81676),	-- Faded Forest Crossbow
+							i(81673),	-- Faded Forest Combat Staff
+							i(81679),	-- Faded Forest Dagger
+							i(81672),	-- Faded Forest Diviner's Rod
+							i(81681),	-- Faded Forest Greatsword
+							i(81675),	-- Faded Forest Handaxe
+							i(81682),	-- Faded Forest Mace
+							i(81671),	-- Faded Forest Meditation Staff
+							i(81677),	-- Faded Forest Saber
+							i(81678),	-- Faded Forest Scepter
+							i(81684),	-- Faded Forest Shield
+							i(81680),	-- Faded Forest Smasher
+
+							-- Helms
+							i(81587),	-- Faded Forest Armored Helm
+							i(81582),	-- Faded Forest Burnished Headcover
+							i(81585),	-- Faded Forest Chain Helm
+							i(81586),	-- Faded Forest Heavy Helm
+							i(81580),	-- Faded Forest Hide Helm
+							i(81584),	-- Faded Forest Leather Helm
+							i(81581),	-- Faded Forest Ringmail Helm
+							i(81579),	-- Faded Forest Satin Hood
+							i(81583),	-- Faded Forest Silk Cowl
+
+							-- Necklaces
+							i(81655),	-- Faded Forest Amulet
+							i(81652),	-- Faded Forest Choker
+							i(81651),	-- Faded Forest Locket
+							i(81653),	-- Faded Forest Necklace
+							i(81654),	-- Faded Forest Pendant
+
+							-- Cloak
+							i(81668),	-- Faded Forest Cape
+							i(81670),	-- Faded Forest Cloak
+							i(81667),	-- Faded Forest Drape
+							i(81669),	-- Faded Forest Manteau
+							i(81666),	-- Faded Forest Shawl
+
+							-- Shoulders
+							i(81596),	-- Faded Forest Armored Shoulders
+							i(81591),	-- Faded Forest Burnished Spaulders
+							i(81594),	-- Faded Forest Chain Spaulders
+							i(81595),	-- Faded Forest Heavy Shoulders
+							i(81589),	-- Faded Forest Hide Spaulders
+							i(81593),	-- Faded Forest Leather Spaulders
+							i(81590),	-- Faded Forest Ringmail Spaulders
+							i(81588),	-- Faded Forest Satin Mantle
+							i(81592),	-- Faded Forest Silk Amice
+
+							-- Chest
+							i(81605),	-- Faded Forest Armored Chestpiece
+							i(81600),	-- Faded Forest Burnished Chestguard
+							i(81603),	-- Faded Forest Chain Armor
+							i(81604),	-- Faded Forest Heavy Chestpiece
+							i(81598),	-- Faded Forest Hide Robes
+							i(81602),	-- Faded Forest Leather Tunic
+							i(81599),	-- Faded Forest Ringmail Armor
+							i(81597),	-- Faded Forest Satin Robe
+							i(81601),	-- Faded Forest Silk Robe
+
+							-- Wrists
+							i(81650),	-- Faded Forest Armored Bracers
+							i(81645),	-- Faded Forest Burnished Bracers
+							i(81648),	-- Faded Forest Chain Wristguards
+							i(81649),	-- Faded Forest Heavy Armplates
+							i(81643),	-- Faded Forest Hide Bindings
+							i(81647),	-- Faded Forest Leather Armwraps
+							i(81644),	-- Faded Forest Ringmail Armbands
+							i(81642),	-- Faded Forest Satin Cuffs
+							i(81646),	-- Faded Forest Silk Cuffs
+
+							-- Gloves
+							i(81641),	-- Faded Forest Armored Gauntlets
+							i(81636),	-- Faded Forest Burnished Gloves
+							i(81639),	-- Faded Forest Chain Gauntlets
+							i(81640),	-- Faded Forest Heavy Gauntlets
+							i(81634),	-- Faded Forest Hide Gloves
+							i(81638),	-- Faded Forest Leather Gloves
+							i(81635),	-- Faded Forest Ringmail Gauntlets
+							i(81633),	-- Faded Forest Satin Gloves
+							i(81637),	-- Faded Forest Silk Handguards
+
+							-- Waist
+							i(81632),	-- Faded Forest Armored Girdle
+							i(81627),	-- Faded Forest Burnished Clasp
+							i(81630),	-- Faded Forest Chain Links
+							i(81631),	-- Faded Forest Heavy Girdle
+							i(81625),	-- Faded Forest Hide Belt
+							i(81629),	-- Faded Forest Leather Belt
+							i(81626),	-- Faded Forest Ringmail Waistguard
+							i(81624),	-- Faded Forest Satin Cord
+							i(81628),	-- Faded Forest Silk Cord
+
+							-- Legs
+							i(81614),	-- Faded Forest Armored Legguards
+							i(81609),	-- Faded Forest Burnished Legplates
+							i(81612),	-- Faded Forest Chain Leggings
+							i(81613),	-- Faded Forest Heavy Legguards
+							i(81607),	-- Faded Forest Hide Legguards
+							i(81611),	-- Faded Forest Leather Legguards
+							i(81608),	-- Faded Forest Ringmail Leggings
+							i(81606),	-- Faded Forest Satin Leggings
+							i(81610),	-- Faded Forest Silk Trousers
+
+							-- Feet
+							i(81623),	-- Faded Forest Armored Warboots
+							i(81618),	-- Faded Forest Burnished Greaves
+							i(81621),	-- Faded Forest Chain Sabatons
+							i(81622),	-- Faded Forest Heavy Warboots
+							i(81616),	-- Faded Forest Hide Footguards
+							i(81620),	-- Faded Forest Leather Boots
+							i(81617),	-- Faded Forest Ringmail Sabatons
+							i(81615),	-- Faded Forest Satin Treads
+							i(81619),	-- Faded Forest Silk Treads
+
+							-- Finger
+							i(81656),	-- Faded Forest Band
+							i(81658),	-- Faded Forest Loop
+							i(81657),	-- Faded Forest Ring
+							i(81660),	-- Faded Forest Seal
+							i(81659),	-- Faded Forest Signet
+
+							-- Trinkets
+							i(81665),	-- Faded Forest Badge
+							i(81662),	-- Faded Forest Emblem
+							i(81664),	-- Faded Forest Insignia
+							i(81663),	-- Faded Forest Medal
+							i(81661),	-- Faded Forest Medallion
+						},
 					}),
 					na(69968, {	-- Ethan Natice Season 14 Elite-- Link for all the Items
-						["u"] = 2,	-- Vendor no longer exists
+						["u"] = 43,	-- Removed NPCs
 					}),
 					na(75692, {	-- Ethan Natice <Grievous Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 12.0, 34.2, 376 },
 						["g"] = {
+						--	i(138667),	-- Ensemble: Grievous Gladiator's Chain Armor (Hunter)
+						--	i(138669),	-- Ensemble: Grievous Gladiator's Dragonhide Armor (Druid)
+						--	i(138661),	-- Ensemble: Grievous Gladiator's Dreadplate Armor (Death Knight)
+						--	i(138679),	-- Ensemble: Grievous Gladiator's Felweave Armor (Warlock)
+						--	i(138671),	-- Ensemble: Grievous Gladiator's Ironskin Armor (Monk)
+						--	i(138673),	-- Ensemble: Grievous Gladiator's Leather Armor (Rogue)
+						--	i(138659),	-- Ensemble: Grievous Gladiator's Plate Armor (Warrior)
+						--	i(138665),	-- Ensemble: Grievous Gladiator's Ringmail Armor (Shaman)
+						--	i(138677),	-- Ensemble: Grievous Gladiator's Satin Armor (Priest)
+						--	i(138663),	-- Ensemble: Grievous Gladiator's Scaled Armor (Paladin)
+						--	i(138675),	-- Ensemble: Grievous Gladiator's Silk Armor (Mage)
 							i(144252),	-- Arsenal: Grievous Gladiator's Weapons
 							i(103139),	-- Grievous Gladiator's Decapitator
 							i(103141),	-- Grievous Gladiator's Greatsword
@@ -2408,12 +2647,14 @@ _.Zones =
 						},
 					}),
 					nh(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
-						["u"] = 2,	-- Vendor no longer exists
+						["u"] = 43,	-- Removed NPCs
 						["g"] = {
 							un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
 							un(2, i(103636)),	-- Elite Prideful Gladiator's Tabard
 							un(2, i(102984)),	-- Elite Prideful Gladiator's Decapitator
 							un(2, i(103032)),	-- Elite Prideful Gladiator's Energy Staff
+							un(2, i(103000)),	-- Elite Prideful Gladiator's Battle Staff
+							un(2, i(103021)),	-- Elite Prideful Gladiator's Staff
 							un(2, i(102987)),	-- Elite Prideful Gladiator's Cleaver
 							un(2, i(103119)),	-- Elite Prideful Gladiator's Hacker
 							un(2, i(102989)),	-- Elite Prideful Gladiator's Quick blade
@@ -2454,7 +2695,7 @@ _.Zones =
 							un(2, i(103034)),	-- Elite Prideful Gladiator's Linked Waistband
 							un(2, i(103106)),	-- Elite Prideful Gladiator's Linked Leggings
 							un(2, i(103036)),	-- Elite Prideful Gladiator's Linked Sabatons
-						
+
 							un(2, i(103100)),	-- Elite Prideful Gladiator's Ringmail Helm
 							un(2, i(103102)),	-- Elite Prideful Gladiator's Ringmail Spaulders
 							un(2, i(103098)),	-- Elite Prideful Gladiator's Ringmail Armor
@@ -2463,7 +2704,7 @@ _.Zones =
 							un(2, i(103095)),	-- Elite Prideful Gladiator's Ringmail Waistband
 							un(2, i(103101)),	-- Elite Prideful Gladiator's Ringmail Leggings
 							un(2, i(103096)),	-- Elite Prideful Gladiator's Ringmail Footguards
-							
+
 							un(2, i(103111)),	-- Elite Prideful Gladiator's Mail Helm
 							un(2, i(103113)),	-- Elite Prideful Gladiator's Mail Spaulders
 							un(2, i(103109)),	-- Elite Prideful Gladiator's Mail Armor
@@ -2532,22 +2773,25 @@ _.Zones =
 						},
 					}),
 					n(58706,  {	-- Gina Mudclaw <Tillers Quartermaster>
-						i(93226),	-- Grand Commendation of the Tillers
-						i(74657),	-- Recipe: Spicy Salmon
-						i(74658),	-- Recipe: Spicy Vegetable Chips
-						i(90175),	-- Gin'Ji Knife Set Toy
-						i(89869),	-- Pandaren Scarecrow Toy
-						i(89391),	-- Reins of the Black Riding Goat Mount
-						i(89362),	-- Reins of the Brown Riding Goat Mount
-						i(89390),	-- Reins of the White Riding Goat Mount
-						i(90893),	-- Straw Hat - Cloth
-						i(90894),	-- Straw Hat - Leather
-						i(90895),	-- Straw Hat - Mail
-						i(90896),	-- Straw Hat - Plate
-						i(89784),	-- Tillers Tabard
+						["coord"] = { 53.2, 51.6, 376 },
+						["g"] = {
+							i(93226),	-- Grand Commendation of the Tillers
+							i(74657),	-- Recipe: Spicy Salmon
+							i(74658),	-- Recipe: Spicy Vegetable Chips
+							i(90175),	-- Gin'Ji Knife Set Toy
+							i(89869),	-- Pandaren Scarecrow Toy
+							i(89391),	-- Reins of the Black Riding Goat Mount
+							i(89362),	-- Reins of the Brown Riding Goat Mount
+							i(89390),	-- Reins of the White Riding Goat Mount
+							i(90893),	-- Straw Hat - Cloth
+							i(90894),	-- Straw Hat - Leather
+							i(90895),	-- Straw Hat - Mail
+							i(90896),	-- Straw Hat - Plate
+							i(89784),	-- Tillers Tabard
+						},
 					}),
 					na(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
-						["u"] = 2,	-- Vendor no longer exists
+						["u"] = 43,	-- Removed NPCs
 						["g"] = {
 							un(2, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
 							un(2, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
@@ -2562,6 +2806,17 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 12.2, 34.2, 376 },
 						["g"] = {
+						--	i(138718),	-- Ensemble: Dreadful Gladiator's Chain Armor (Hunter)
+						--	i(138719),	-- Ensemble: Dreadful Gladiator's Dragonhide Armor (Druid)
+						--	i(138715),	-- Ensemble: Dreadful Gladiator's Dreadplate Armor (Death Knight)
+						--	i(138724),	-- Ensemble: Dreadful Gladiator's Felweave Armor (Warlock)
+						--	i(138720),	-- Ensemble: Dreadful Gladiator's Ironskin Armor (Monk)
+						--	i(138721),	-- Ensemble: Dreadful Gladiator's Leather Armor (Rogue)
+						--	i(138714),	-- Ensemble: Dreadful Gladiator's Plate Armor (Warrior)
+						--	i(138717),	-- Ensemble: Dreadful Gladiator's Ringmail Armor (Shaman)
+						--	i(138723),	-- Ensemble: Dreadful Gladiator's Satin Armor (Priest)
+						--	i(138716),	-- Ensemble: Dreadful Gladiator's Scaled Armor (Paladin)
+						--	i(138722),	-- Ensemble: Dreadful Gladiator's Silk Armor (Mage)
 							i(84345),	-- Dreadful Gladiator's Cape of Cruelty
 							i(84346),	-- Dreadful Gladiator's Cape of Prowess
 							i(84353),	-- Dreadful Gladiator's Cord of Cruelty
@@ -2704,55 +2959,37 @@ _.Zones =
 							i(84506),	-- Dreadful Gladiator's Plate Helm
 							i(84507),	-- Dreadful Gladiator's Plate Legguards
 							i(84508),	-- Dreadful Gladiator's Plate Shoulders
-							--[[
-							i(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor - Warrior
-							}),
-							i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor - Death Knight
-							}),
-							i(138716, {	-- Ensemble: Dreadful Gladiator's Scaled Armor - Paladin
-							}),
-							i(138717, {	-- Ensemble: Dreadful Gladiator's Ringmail Armor - Shaman
-							}),
-							i(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor - Hunter
-							}),
-							i(138719, {	-- Ensemble: Dreadful Gladiator's Dragonhide Armor - Druid
-							}),
-							i(138720, {	-- Ensemble: Dreadful Gladiator's Ironskin Armor - Monk
-							}),
-							i(138721, {	-- Ensemble: Dreadful Gladiator's Leather Armor - Rogue
-							}),
-							i(138722, {	-- Ensemble: Dreadful Gladiator's Silk Armor - Mage
-							}),
-							i(138723, {	-- Ensemble: Dreadful Gladiator's Satin Armor - Priest
-							}),
-							i(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor - Warlock
-							}),
-							--]]				
 						},
 					}),
 					n(58716,  {	-- Jian Ironpaw <Master of the Oven>
-						un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
-						recipe(104312),	-- Chun Tian Spring Rolls
-						un(1, i(74676)),	-- Recipe: Twin Fish Platter
-						recipe(104311),	-- Twin Fish Platter
-						un(1, i(74675)),	-- Recipe: Wildfowl Roast
-						recipe(104310),	-- Wildfowl Roast
-						un(1, i(87243)),	-- Recipe: Banquet of the Oven
-						recipe(125600),	-- Banquet of the Oven
-						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
-						recipe(125601),	-- Great Banquet of the Oven
+						["coord"] = { 53.2, 51.6, 376 },
+						["g"] = {
+							un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
+							recipe(104312),		-- Chun Tian Spring Rolls
+							un(1, i(74676)),	-- Recipe: Twin Fish Platter
+							recipe(104311),		-- Twin Fish Platter
+							un(1, i(74675)),	-- Recipe: Wildfowl Roast
+							recipe(104310),		-- Wildfowl Roast
+							un(1, i(87243)),	-- Recipe: Banquet of the Oven
+							recipe(125600),		-- Banquet of the Oven
+							un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
+							recipe(125601),		-- Great Banquet of the Oven
+						},
 					}),
 					n(58712,  {	-- Kol Ironpaw <Master of the Grill>
-						un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
-						recipe(104300),	-- Black Pepper Ribs and Shrimp
-						un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
-						recipe(104298),	-- Charbroiled Tiger Steak
-						un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
-						recipe(104299),	-- Eternal Blossom Fish
-						un(1, i(87227)),	-- Recipe: Banquet of the Grill
-						recipe(125141),	-- Banquet of the Grill
-						un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
-						recipe(125142),	-- Great Banquet of the Grill
+						["coord"] = { 53.0, 51.4, 376 },
+						["g"] = {
+							un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
+							recipe(104300),		-- Black Pepper Ribs and Shrimp
+							un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
+							recipe(104298),		-- Charbroiled Tiger Steak
+							un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
+							recipe(104299),		-- Eternal Blossom Fish
+							un(1, i(87227)),	-- Recipe: Banquet of the Grill
+							recipe(125141),		-- Banquet of the Grill
+							un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
+							recipe(125142),		-- Great Banquet of the Grill
+						},
 					}),
 					na(65167, {	-- Lucan Malory <Conquest Quartermaster>
 						["u"] = 43,	-- Vendor no longer exists
@@ -2838,7 +3075,7 @@ _.Zones =
 							un(2, i(85064)),	-- Elite Malevolent Gladiator's Ironskin Legguards
 							un(2, i(85066)),	-- Elite Malevolent Gladiator's Ironskin Tunic
 							un(2, i(85087)),	-- Elite Malevolent Gladiator's Ironskin Spaulders
-							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin 
+							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin
 							un(2, i(85030)),	-- Elite Malevolent Gladiator's Copperskin Helm
 							un(2, i(85060)),	-- Elite Malevolent Gladiator's Copperskin Legguards
 							un(2, i(85067)),	-- Elite Malevolent Gladiator's Copperskin Tunic
@@ -2909,6 +3146,17 @@ _.Zones =
 							un(2, i(98162)),	-- Tyrannical Gladiator's Tabard [Elite Rating]
 							un(2, i(101697)),	-- Grievous Gladiator's Tabard [Elite Rating]
 							un(2, i(103636)),	-- Prideful Gladiator's Tabard [Elite Rating]
+						--	i(138707),	-- Ensemble: Malevolent Gladiator's Chain Armor (Hunter)
+						--	i(138708),	-- Ensemble: Malevolent Gladiator's Dragonhide Armor (Druid)
+						--	i(138704),	-- Ensemble: Malevolent Gladiator's Dreadplate Armor (Death Knight)
+						--	i(138713),	-- Ensemble: Malevolent Gladiator's Felweave Armor (Warlock)
+						--	i(138709),	-- Ensemble: Malevolent Gladiator's Ironskin Armor (Monk)
+						--	i(138710),	-- Ensemble: Malevolent Gladiator's Leather Armor (Rogue)
+						--	i(138703),	-- Ensemble: Malevolent Gladiator's Plate Armor (Warrior)
+						--	i(138706),	-- Ensemble: Malevolent Gladiator's Ringmail Armor (Shaman)
+						--	i(138712),	-- Ensemble: Malevolent Gladiator's Satin Armor (Priest)
+						--	i(138705),	-- Ensemble: Malevolent Gladiator's Scaled Armor (Paladin)
+						--	i(138711),	-- Ensemble: Malevolent Gladiator's Silk Armor (Mage)
 							i(144243),	-- Arsenal: Malevolent Gladiator's Weapons
 							i(91482),	-- Malevolent Gladiator's Barrier
 							i(91480),	-- Malevolent Gladiator's Endgame
@@ -2992,7 +3240,7 @@ _.Zones =
 							i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
 							i(91624),	-- Malevolent Gladiator's Scaled Helm
 							i(91626),	-- Malevolent Gladiator's Scaled Legguards
-							i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented 
+							i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented
 							i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
 							i(91642),	-- Malevolent Gladiator's Ornamented Gloves
 							i(91644),	-- Malevolent Gladiator's Ornamented Headcover
@@ -3080,57 +3328,70 @@ _.Zones =
 						},
 					}),
 					n(58714,  {	-- Mei Mei Ironpaw <Master of the Pot>
-						un(1, i(74670)),	-- Recipe: Braised Turtle
-						recipe(104305),	-- Braised Turtle
-						un(1, i(74671)),	-- Recipe: Mogu Fish Stew
-						recipe(104306),	-- Mogu Fish Stew
-						un(1, i(74669)),	-- Recipe: Swirling Mist Soup
-						recipe(104304),	-- Swirling Mist Soup
-						un(1, i(87235)),	-- Recipe: Banquet of the Pot
-						recipe(125596),	-- Banquet of the Pot
-						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
-						recipe(125597),	-- Great Banquet of the Pot
+						["coord"] = { 52.6, 51.6, 376 },
+						["g"] = {
+							un(1, i(74670)),	-- Recipe: Braised Turtle
+							recipe(104305),		-- Braised Turtle
+							un(1, i(74671)),	-- Recipe: Mogu Fish Stew
+							recipe(104306),		-- Mogu Fish Stew
+							un(1, i(74669)),	-- Recipe: Swirling Mist Soup
+							recipe(104304),		-- Swirling Mist Soup
+							un(1, i(87235)),	-- Recipe: Banquet of the Pot
+							recipe(125596),		-- Banquet of the Pot
+							un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
+							recipe(125597),		-- Great Banquet of the Pot
+						},
 					}),
 					n(58718,  {	-- Merchant Greenfield
+						["coord"] = { 52.8, 52.0, 376 },
 						["g"] = {
 							i(85219, {	-- Ominous Seeds
+								["description"] = "You get this seed by planting any seeds this vendor sells and waiting for it to drop.  Once dropped, then plant it and wait a day to harvest the pet.",
 								["g"] = {
 									i(85220),	-- Terrible Turnip
 								},
-								["description"] = "You get this seed by planting any seeds this vendor sells and wait for it to drop.  Once dropped then plant and wait a day.",
 							}),
 						},
 					}),
 					n(64395,  {	-- Nam Ironpaw <Stockmaster>
-						currency(402, {	-- Ironpaw Token
-							i(75013),	-- Recipe: Pandaren Banquet
-							i(75017),	-- Recipe: Great Pandaren Banquet
-							i(86425),	-- Cooking School Bell
-							i(88801),	-- Flippable Table
-							i(86468),	-- Apron
-							i(86559, {	-- Frying Pan
-								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+						["coord"] = { 53.6, 51.2, 376 },
+						["g"] = {
+							currency(402, {	-- Ironpaw Token
+								i(75013),	-- Recipe: Pandaren Banquet
+								i(75017),	-- Recipe: Great Pandaren Banquet
+								i(86425),	-- Cooking School Bell
+								i(88801),	-- Flippable Table
+								i(86468),	-- Apron
+								i(86559, {	-- Frying Pan
+									["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
+								}),
+								i(86558, {	-- Rolling Pin
+									["description"] = "In order to mark this item as collected you will need to shift+click the ATT header.",
+								}),
 							}),
-							i(86558, {	-- Rolling Pin
-								["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-							}),
-						}),
+						},
 					}),
 					n(64465,  {	-- Noodles <Cooking Supplies>
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
+						["coord"] = { 52.6, 51.6, 376 },
+						["g"] = {
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+						},
 					}),
 					n(55143,  {	-- Sally Fizzlefury <Engineering Trainer>
-						i(88802),	-- Foxicopter Controller Toy
-						i(91904),	-- Stackable Stag Toy
+						["coord"] = { 16.0, 83.0, 376 },
+						["g"] = {
+							i(88802),	-- Foxicopter Controller Toy
+							i(91904),	-- Stackable Stag Toy
+						},
 					}),
 					faction(1278, {	-- Sho
 						["g"] = {
 							i(85497, {	-- Chirping Package
+								["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
 								["g"] = {
 									i(85222),	-- Red Cricket
 								},
-								["description"] = "Once you hit exalted with Sho you receive this in the mail.",
 							}),
 						},
 					}),
@@ -3139,6 +3400,17 @@ _.Zones =
 						["coord"] = { 12.0, 34.0, 376 },
 						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
+						--	i(138645),	-- Prideful Gladiator's Chain Armor (Hunter)
+						--	i(138647),	-- Prideful Gladiator's Dragonhide Armor (Druid)
+						--	i(138639),	-- Prideful Gladiator's Dreadplate Armor (Death Knight)
+						--	i(138657),	-- Prideful Gladiator's Felweave Armor (Warlock)
+						--	i(138649),	-- Prideful Gladiator's Ironskin Armor (Monk)
+						--	i(138651),	-- Prideful Gladiator's Leather Armor (Rogue)
+						--	i(138637),	-- Prideful Gladiator's Plate Armor (Warrior)
+						--	i(138643),	-- Prideful Gladiator's Ringmail Armor (Shaman)
+						--	i(138655),	-- Prideful Gladiator's Satin Armor (Priest)
+						--	i(138641),	-- Prideful Gladiator's Scaled Armor (Paladin)
+						--	i(138653),	-- Prideful Gladiator's Silk Armor (Mage)
 							i(144248),	-- Arsenal: Prideful Gladiator's Weapons
 							i(102610),	-- Prideful Gladiator's Decapitator
 							i(102599),	-- Prideful Gladiator's Greatsword
@@ -3311,180 +3583,189 @@ _.Zones =
 						},
 					}),
 					n(64231,  {	-- Sungshin Ironpaw <Guide to the Ways>
-						-- TODO: https://www.wowhead.com/npc=64231/sungshin-ironpaw#starts
-						recipe(124233),	-- Blanched Needle Mushrooms
-						recipe(124228),	-- Boiled Silkworm Pupa
-						recipe(124227),	-- Dried Needle Mushrooms
-						recipe(124226),	-- Dried Peaches
-						recipe(104297),	-- Fish Cake
-						recipe(104237),	-- Golden Carp Consomme
-						recipe(124231),	-- Green Curry Fish
-						recipe(124232),	-- Peach Pie
-						recipe(125080),	-- Pearl Milk Tea
-						recipe(125067),	-- Perfectly Cooked Instant Noodles
-						recipe(124223),	-- Pounded Rice Cake
-						recipe(124229),	-- Red Bean Bun
-						recipe(125122),	-- Rice Pudding
-						recipe(125078),	-- Roasted Barley Tea
-						recipe(124234),	-- Skewered Peanut Chicken
-						recipe(125117),	-- Sliced Peaches
-						recipe(124230),	-- Tangy Yogurt
-						recipe(124225),	-- Toasted Fish Jerky
-						recipe(125121),	-- Wildfowl Ginseng Soup
-						recipe(124224),	-- Yak Cheese Curds
+						["coord"] = { 53.6, 51.2, 376 },
+						["g"] = {
+							-- TODO: https://www.wowhead.com/npc=64231/sungshin-ironpaw#starts
+							recipe(124233),	-- Blanched Needle Mushrooms
+							recipe(124228),	-- Boiled Silkworm Pupa
+							recipe(124227),	-- Dried Needle Mushrooms
+							recipe(124226),	-- Dried Peaches
+							recipe(104297),	-- Fish Cake
+							recipe(104237),	-- Golden Carp Consomme
+							recipe(124231),	-- Green Curry Fish
+							recipe(124232),	-- Peach Pie
+							recipe(125080),	-- Pearl Milk Tea
+							recipe(125067),	-- Perfectly Cooked Instant Noodles
+							recipe(124223),	-- Pounded Rice Cake
+							recipe(124229),	-- Red Bean Bun
+							recipe(125122),	-- Rice Pudding
+							recipe(125078),	-- Roasted Barley Tea
+							recipe(124234),	-- Skewered Peanut Chicken
+							recipe(125117),	-- Sliced Peaches
+							recipe(124230),	-- Tangy Yogurt
+							recipe(124225),	-- Toasted Fish Jerky
+							recipe(125121),	-- Wildfowl Ginseng Soup
+							recipe(124224),	-- Yak Cheese Curds
+						},
 					}),
 					n(59583,  {	-- Trader Jambeezi <Adventuring Supplies>
-						-- Weapons
-						i(81686),	-- Faded Forest Axe
-						i(81683),	-- Faded Forest Barrier
-						i(81674),	-- Faded Forest Battlemace
-						i(81685),	-- Faded Forest Blade
-						i(81676),	-- Faded Forest Crossbow
-						i(81673),	-- Faded Forest Combat Staff
-						i(81679),	-- Faded Forest Dagger
-						i(81672),	-- Faded Forest Diviner's Rod
-						i(81681),	-- Faded Forest Greatsword
-						i(81675),	-- Faded Forest Handaxe
-						i(81682),	-- Faded Forest Mace
-						i(81671),	-- Faded Forest Meditation Staff
-						i(81677),	-- Faded Forest Saber
-						i(81678),	-- Faded Forest Scepter
-						i(81684),	-- Faded Forest Shield
-						i(81680),	-- Faded Forest Smasher
-						
-						-- Helms
-						i(81587),	-- Faded Forest Armored Helm
-						i(81582),	-- Faded Forest Burnished Headcover
-						i(81585),	-- Faded Forest Chain Helm
-						i(81586),	-- Faded Forest Heavy Helm
-						i(81580),	-- Faded Forest Hide Helm
-						i(81584),	-- Faded Forest Leather Helm
-						i(81581),	-- Faded Forest Ringmail Helm
-						i(81579),	-- Faded Forest Satin Hood
-						i(81583),	-- Faded Forest Silk Cowl
-						
-						-- Necklaces
-						i(81655),	-- Faded Forest Amulet
-						i(81652),	-- Faded Forest Choker
-						i(81651),	-- Faded Forest Locket
-						i(81653),	-- Faded Forest Necklace
-						i(81654),	-- Faded Forest Pendant
-						
-						-- Cloak
-						i(81668),	-- Faded Forest Cape
-						i(81670),	-- Faded Forest Cloak
-						i(81667),	-- Faded Forest Drape
-						i(81669),	-- Faded Forest Manteau
-						i(81666),	-- Faded Forest Shawl
-						
-						-- Shoulders
-						i(81596),	-- Faded Forest Armored Shoulders
-						i(81591),	-- Faded Forest Burnished Spaulders
-						i(81594),	-- Faded Forest Chain Spaulders
-						i(81595),	-- Faded Forest Heavy Shoulders
-						i(81589),	-- Faded Forest Hide Spaulders
-						i(81593),	-- Faded Forest Leather Spaulders
-						i(81590),	-- Faded Forest Ringmail Spaulders
-						i(81588),	-- Faded Forest Satin Mantle
-						i(81592),	-- Faded Forest Silk Amice
-						
-						-- Chest
-						i(81605),	-- Faded Forest Armored Chestpiece
-						i(81600),	-- Faded Forest Burnished Chestguard
-						i(81603),	-- Faded Forest Chain Armor
-						i(81604),	-- Faded Forest Heavy Chestpiece
-						i(81598),	-- Faded Forest Hide Robes
-						i(81602),	-- Faded Forest Leather Tunic
-						i(81599),	-- Faded Forest Ringmail Armor
-						i(81597),	-- Faded Forest Satin Robe
-						i(81601),	-- Faded Forest Silk Robe
-						
-						-- Wrists
-						i(81650),	-- Faded Forest Armored Bracers
-						i(81645),	-- Faded Forest Burnished Bracers
-						i(81648),	-- Faded Forest Chain Wristguards
-						i(81649),	-- Faded Forest Heavy Armplates
-						i(81643),	-- Faded Forest Hide Bindings
-						i(81647),	-- Faded Forest Leather Armwraps
-						i(81644),	-- Faded Forest Ringmail Armbands
-						i(81642),	-- Faded Forest Satin Cuffs
-						i(81646),	-- Faded Forest Silk Cuffs
-						
-						-- Gloves
-						i(81641),	-- Faded Forest Armored Gauntlets
-						i(81636),	-- Faded Forest Burnished Gloves
-						i(81639),	-- Faded Forest Chain Gauntlets
-						i(81640),	-- Faded Forest Heavy Gauntlets
-						i(81634),	-- Faded Forest Hide Gloves
-						i(81638),	-- Faded Forest Leather Gloves
-						i(81635),	-- Faded Forest Ringmail Gauntlets
-						i(81633),	-- Faded Forest Satin Gloves
-						i(81637),	-- Faded Forest Silk Handguards
-						
-						-- Waist
-						i(81632),	-- Faded Forest Armored Girdle
-						i(81627),	-- Faded Forest Burnished Clasp
-						i(81630),	-- Faded Forest Chain Links
-						i(81631),	-- Faded Forest Heavy Girdle
-						i(81625),	-- Faded Forest Hide Belt
-						i(81629),	-- Faded Forest Leather Belt
-						i(81626),	-- Faded Forest Ringmail Waistguard
-						i(81624),	-- Faded Forest Satin Cord
-						i(81628),	-- Faded Forest Silk Cord
-						
-						-- Legs
-						i(81614),	-- Faded Forest Armored Legguards
-						i(81609),	-- Faded Forest Burnished Legplates
-						i(81612),	-- Faded Forest Chain Leggings
-						i(81613),	-- Faded Forest Heavy Legguards
-						i(81607),	-- Faded Forest Hide Legguards
-						i(81611),	-- Faded Forest Leather Legguards
-						i(81608),	-- Faded Forest Ringmail Leggings
-						i(81606),	-- Faded Forest Satin Leggings
-						i(81610),	-- Faded Forest Silk Trousers
-						
-						-- Feet
-						i(81623),	-- Faded Forest Armored Warboots
-						i(81618),	-- Faded Forest Burnished Greaves
-						i(81621),	-- Faded Forest Chain Sabatons
-						i(81622),	-- Faded Forest Heavy Warboots
-						i(81616),	-- Faded Forest Hide Footguards
-						i(81620),	-- Faded Forest Leather Boots
-						i(81617),	-- Faded Forest Ringmail Sabatons
-						i(81615),	-- Faded Forest Satin Treads
-						i(81619),	-- Faded Forest Silk Treads
-						
-						-- Finger
-						i(81656),	-- Faded Forest Band
-						i(81658),	-- Faded Forest Loop
-						i(81657),	-- Faded Forest Ring
-						i(81660),	-- Faded Forest Seal
-						i(81659),	-- Faded Forest Signet
-						
-						-- Trinkets
-						i(81665),	-- Faded Forest Badge
-						i(81662),	-- Faded Forest Emblem
-						i(81664),	-- Faded Forest Insignia
-						i(81663),	-- Faded Forest Medal
-						i(81661),	-- Faded Forest Medallion
+						["coords"] = {
+							{ 56.2, 47.0, 376 },
+							{ 55.6, 49.8, 376 },
+						},
+						["g"] = {
+							-- Weapons
+							i(81686),	-- Faded Forest Axe
+							i(81683),	-- Faded Forest Barrier
+							i(81674),	-- Faded Forest Battlemace
+							i(81685),	-- Faded Forest Blade
+							i(81676),	-- Faded Forest Crossbow
+							i(81673),	-- Faded Forest Combat Staff
+							i(81679),	-- Faded Forest Dagger
+							i(81672),	-- Faded Forest Diviner's Rod
+							i(81681),	-- Faded Forest Greatsword
+							i(81675),	-- Faded Forest Handaxe
+							i(81682),	-- Faded Forest Mace
+							i(81671),	-- Faded Forest Meditation Staff
+							i(81677),	-- Faded Forest Saber
+							i(81678),	-- Faded Forest Scepter
+							i(81684),	-- Faded Forest Shield
+							i(81680),	-- Faded Forest Smasher
+
+							-- Helms
+							i(81587),	-- Faded Forest Armored Helm
+							i(81582),	-- Faded Forest Burnished Headcover
+							i(81585),	-- Faded Forest Chain Helm
+							i(81586),	-- Faded Forest Heavy Helm
+							i(81580),	-- Faded Forest Hide Helm
+							i(81584),	-- Faded Forest Leather Helm
+							i(81581),	-- Faded Forest Ringmail Helm
+							i(81579),	-- Faded Forest Satin Hood
+							i(81583),	-- Faded Forest Silk Cowl
+
+							-- Necklaces
+							i(81655),	-- Faded Forest Amulet
+							i(81652),	-- Faded Forest Choker
+							i(81651),	-- Faded Forest Locket
+							i(81653),	-- Faded Forest Necklace
+							i(81654),	-- Faded Forest Pendant
+
+							-- Cloak
+							i(81668),	-- Faded Forest Cape
+							i(81670),	-- Faded Forest Cloak
+							i(81667),	-- Faded Forest Drape
+							i(81669),	-- Faded Forest Manteau
+							i(81666),	-- Faded Forest Shawl
+
+							-- Shoulders
+							i(81596),	-- Faded Forest Armored Shoulders
+							i(81591),	-- Faded Forest Burnished Spaulders
+							i(81594),	-- Faded Forest Chain Spaulders
+							i(81595),	-- Faded Forest Heavy Shoulders
+							i(81589),	-- Faded Forest Hide Spaulders
+							i(81593),	-- Faded Forest Leather Spaulders
+							i(81590),	-- Faded Forest Ringmail Spaulders
+							i(81588),	-- Faded Forest Satin Mantle
+							i(81592),	-- Faded Forest Silk Amice
+
+							-- Chest
+							i(81605),	-- Faded Forest Armored Chestpiece
+							i(81600),	-- Faded Forest Burnished Chestguard
+							i(81603),	-- Faded Forest Chain Armor
+							i(81604),	-- Faded Forest Heavy Chestpiece
+							i(81598),	-- Faded Forest Hide Robes
+							i(81602),	-- Faded Forest Leather Tunic
+							i(81599),	-- Faded Forest Ringmail Armor
+							i(81597),	-- Faded Forest Satin Robe
+							i(81601),	-- Faded Forest Silk Robe
+
+							-- Wrists
+							i(81650),	-- Faded Forest Armored Bracers
+							i(81645),	-- Faded Forest Burnished Bracers
+							i(81648),	-- Faded Forest Chain Wristguards
+							i(81649),	-- Faded Forest Heavy Armplates
+							i(81643),	-- Faded Forest Hide Bindings
+							i(81647),	-- Faded Forest Leather Armwraps
+							i(81644),	-- Faded Forest Ringmail Armbands
+							i(81642),	-- Faded Forest Satin Cuffs
+							i(81646),	-- Faded Forest Silk Cuffs
+
+							-- Gloves
+							i(81641),	-- Faded Forest Armored Gauntlets
+							i(81636),	-- Faded Forest Burnished Gloves
+							i(81639),	-- Faded Forest Chain Gauntlets
+							i(81640),	-- Faded Forest Heavy Gauntlets
+							i(81634),	-- Faded Forest Hide Gloves
+							i(81638),	-- Faded Forest Leather Gloves
+							i(81635),	-- Faded Forest Ringmail Gauntlets
+							i(81633),	-- Faded Forest Satin Gloves
+							i(81637),	-- Faded Forest Silk Handguards
+
+							-- Waist
+							i(81632),	-- Faded Forest Armored Girdle
+							i(81627),	-- Faded Forest Burnished Clasp
+							i(81630),	-- Faded Forest Chain Links
+							i(81631),	-- Faded Forest Heavy Girdle
+							i(81625),	-- Faded Forest Hide Belt
+							i(81629),	-- Faded Forest Leather Belt
+							i(81626),	-- Faded Forest Ringmail Waistguard
+							i(81624),	-- Faded Forest Satin Cord
+							i(81628),	-- Faded Forest Silk Cord
+
+							-- Legs
+							i(81614),	-- Faded Forest Armored Legguards
+							i(81609),	-- Faded Forest Burnished Legplates
+							i(81612),	-- Faded Forest Chain Leggings
+							i(81613),	-- Faded Forest Heavy Legguards
+							i(81607),	-- Faded Forest Hide Legguards
+							i(81611),	-- Faded Forest Leather Legguards
+							i(81608),	-- Faded Forest Ringmail Leggings
+							i(81606),	-- Faded Forest Satin Leggings
+							i(81610),	-- Faded Forest Silk Trousers
+
+							-- Feet
+							i(81623),	-- Faded Forest Armored Warboots
+							i(81618),	-- Faded Forest Burnished Greaves
+							i(81621),	-- Faded Forest Chain Sabatons
+							i(81622),	-- Faded Forest Heavy Warboots
+							i(81616),	-- Faded Forest Hide Footguards
+							i(81620),	-- Faded Forest Leather Boots
+							i(81617),	-- Faded Forest Ringmail Sabatons
+							i(81615),	-- Faded Forest Satin Treads
+							i(81619),	-- Faded Forest Silk Treads
+
+							-- Finger
+							i(81656),	-- Faded Forest Band
+							i(81658),	-- Faded Forest Loop
+							i(81657),	-- Faded Forest Ring
+							i(81660),	-- Faded Forest Seal
+							i(81659),	-- Faded Forest Signet
+
+							-- Trinkets
+							i(81665),	-- Faded Forest Badge
+							i(81662),	-- Faded Forest Emblem
+							i(81664),	-- Faded Forest Insignia
+							i(81663),	-- Faded Forest Medal
+							i(81661),	-- Faded Forest Medallion
+						},
 					}),
 					n(58715,  {	-- Yan Ironpaw <Master of the Steamer>
-						un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
-						recipe(104308),	-- Fire Spirit Salmon
-						un(1, i(74672)),	-- Recipe: Shrimp Dumplings
-						recipe(104307),	-- Shrimp Dumplings
-						un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
-						recipe(104309),	-- Steamed Crab Surprise
-						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
-						recipe(125598),	-- Banquet of the Steamer
-						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
-						recipe(125599),	-- Great Banquet of the Steamer
+						["coord"] = { 52.6, 51.6, 376 },
+						["g"] = {
+							un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
+							recipe(104308),		-- Fire Spirit Salmon
+							un(1, i(74672)),	-- Recipe: Shrimp Dumplings
+							recipe(104307),		-- Shrimp Dumplings
+							un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
+							recipe(104309),		-- Steamed Crab Surprise
+							un(1, i(87239)),	-- Recipe: Banquet of the Steamer
+							recipe(125598),		-- Banquet of the Steamer
+							un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
+							recipe(125599),		-- Great Banquet of the Steamer
+						},
 					}),
 				}),
 			},
-			["lvl"] = 81,
-			["achievementID"] = 6969,
-			["description"] = "|cff66ccffValley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year�s harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.|r",
 		}),
 	}),
 };

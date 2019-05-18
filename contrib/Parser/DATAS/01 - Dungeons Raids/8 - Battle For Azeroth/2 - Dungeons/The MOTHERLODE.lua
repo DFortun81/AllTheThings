@@ -80,6 +80,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158307),	-- Shrapnel-Dampening Chestguard
 						i(159298),	-- Venture Co. Plenipotentiary Vest
 						i(159611),	-- Razdunk's Big Red Button
+						i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
 					}),
 				}),
 			}),
@@ -149,6 +150,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
+							i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
 						},
 					}),
 				},
@@ -225,6 +227,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158307),	-- Shrapnel-Dampening Chestguard
 							i(159298),	-- Venture Co. Plenipotentiary Vest
 							i(159611),	-- Razdunk's Big Red Button
+							i(163708),	-- Ironfoe (Dark Iron Dwarf Quest Item)
 						},
 					}),
 				},
