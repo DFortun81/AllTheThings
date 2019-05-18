@@ -9530,7 +9530,6 @@ end):Show();
 		if not self.initialized then
 			self.initialized = true;
 			self.openedOnLogin = false;
-			self.shouldUpdateMiniList = false;
 			self.data = app.CreateMap(946, {
 				['text'] = "Mini List",
 				['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
