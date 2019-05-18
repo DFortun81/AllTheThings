@@ -3224,6 +3224,9 @@ AllTheThings.L = {
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
 		[327427] = "Sack of Tasks",
+		[327585] = "Bounty Board",
+		[327596] = "Broken Abyssal Focus",
+		[329805] = "Strange Crystal",
 		
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found

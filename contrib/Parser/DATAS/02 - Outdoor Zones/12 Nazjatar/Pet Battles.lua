@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		["groups"] = {
+		["g"] = {
 			{	-- Pet Battle
 				["npcID"] = -25,	-- Pet Battle
 				["f"] = 101,		-- Battle Pets
@@ -28,6 +28,7 @@ _.Zones =
 							{	-- Giant Opaline Conch
 								["criteriaID"] = 12,
 								["crs"] = { 154921 },	-- Giant Opaline Conch
+								["coord"] = { 28.1, 26.7, 1355 },
 							},
 							{	-- Kelpstone
 								["criteriaID"] = 9,

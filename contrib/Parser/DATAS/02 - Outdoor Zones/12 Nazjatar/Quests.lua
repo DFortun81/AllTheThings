@@ -29,13 +29,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
 				},
+				{	-- An Abyssal Opportunity
+					["questID"] = 56353,
+					["qg"] = 154408,	-- Rolm
+					["coord"] = { 49.3, 61.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56354,	-- Ancient Technology
+				},
 				{	-- Bounty Board (rewards seem to change over time?)
 					["objectID"] = 327585,
 					["coord"] = { 47.9, 61.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Wanted: Commander Sarj'eth
-							["questID"] = 56223
+							["questID"] = 56223,
+							["isDaily"] = true,
 						},
 					},
 				},
@@ -47,6 +55,16 @@ _.Zones =
 					["g"] = {
 						{	-- What Will It Mine?
 							["questID"] = 55531,
+						},
+					},
+				},
+				{	-- Broken Abyssal Focus
+					["objectID"] = 327596,
+					["coord"] = { 38.1, 36.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Ancient Technology
+							["questID"] = 56354,
 						},
 					},
 				},
@@ -140,6 +158,13 @@ _.Zones =
 						56063,	-- Ritual of Tides
 					},
 				},
+				{	-- Preserved Clues
+					["questID"] = 56242,
+					["qg"] = 153514,	-- Finder Palta
+					["coord"] = { 49.2, 62.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56240,	-- Strange Silver Knife
+				},
 				{	-- Ritual of Tides
 					["questID"] = 56063,
 					["qg"] = 150196,	-- First Arcanist Thalyssra
@@ -191,7 +216,7 @@ _.Zones =
 					["sourceQuest"] = 55384,	-- Settling In
 				},
 				{	-- Scrying Stones -- TODO:: confirm sourceQuest
-					["questID"] = 56210,
+					["questID"] = 56210, -- also completed 56239
 					["qg"] = 153512,	-- Finder Pruc
 					["coord"] = { 49.0, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
@@ -210,6 +235,22 @@ _.Zones =
 					["coord"] = { 37.2, 67.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56429,	-- Up Against It
+				},
+				{	-- Strange Crystal
+					["objectID"] = 329805,
+					["coord"] = { 32.8, 39.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- A Curious Discovery
+							["questID"] = 56560,
+						},
+					},
+				},
+				{	-- Strange Silver Knife (inside arcane chest at coords)
+					["itemID"] = 169216,
+					["questID"] = 56240, -- also completed 56346
+					["coord"] = { 39.8, 49.2, 1355 },
+					["races"] = HORDE_ONLY,
 				},
 				{	-- The First Arcanist
 					["questID"] = 54021,

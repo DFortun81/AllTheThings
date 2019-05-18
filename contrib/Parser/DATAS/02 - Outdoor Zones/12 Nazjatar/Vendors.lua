@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		["groups"] = {
+		["g"] = {
 			n(-2, {	-- Vendors
 				n(154002, {	-- Atolia Seapearl
 					["coord"] = { 51.0, 65.5, 1355 },

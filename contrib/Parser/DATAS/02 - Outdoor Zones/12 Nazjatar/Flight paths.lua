@@ -3,20 +3,22 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Nazjatar
-		["mapID"] = 1355,	-- Nazjatar
+	m(1355, {	-- Nazjatar
 		["g"] = {
-			{	-- Flight Paths
-				["npcID"] = -228,	-- Flight Paths
+			n(-228, {	-- Flight Paths
 				["g"] = {
 					--[[ placeholders. These coords are correct, but need to extract flightPathIDs
 					{	-- Newhome, Nazjatar
 						["flightPathID"] = ,
 						["coord"] = { 47.5, 63.3, 1355 },
 					},
+					{	-- Ashen Strand, Nazjatar
+						["flightPathID"] = ,
+						["coord"] = { 34.5, 37.3, 1355 },
+					},
 					]]--
 				},
-			},
+			}),
 		},
-	},
+	}),
 };
