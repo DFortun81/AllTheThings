@@ -1611,8 +1611,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/14/19]
 										["itemID"] = 146135,	-- Ensemble: Vindictive Gladiator's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 2 Items",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -1643,6 +1644,33 @@ _.Zones =
 											},
 											{	-- Vindictive Gladiator's Scaled Sabatons
 												["itemID"] = 135745,	-- Vindictive Gladiator's Scaled Sabatons
+											},
+											{	-- Fearless Gladiator's Scaled Helm
+												["itemID"] = 142716,	-- Fearless Gladiator's Scaled Helm
+											},
+											{	-- Fearless Gladiator's Scaled Shoulders
+												["itemID"] = 142718,	-- Fearless Gladiator's Scaled Shoulders
+											},
+											{	-- Fearless Gladiator's Greatcloak of Faith
+												["itemID"] = 142770,	-- Fearless Gladiator's Greatcloak of Faith
+											},
+											{	-- Fearless Gladiator's Scaled Battlerobe
+												["itemID"] = 142713,	-- Fearless Gladiator's Scaled Battlerobe
+											},
+											{	-- Fearless Gladiator's Scaled Wristplates
+												["itemID"] = 142720,	-- Fearless Gladiator's Scaled Wristplates
+											},
+											{	-- Fearless Gladiator's Scaled Gauntlets
+												["itemID"] = 142715,	-- Fearless Gladiator's Scaled Gauntlets
+											},
+											{	-- Fearless Gladiator's Scaled Girdle
+												["itemID"] = 142719,	-- Fearless Gladiator's Scaled Girdle
+											},
+											{	-- Fearless Gladiator's Scaled Legguards
+												["itemID"] = 142717,	-- Fearless Gladiator's Scaled Legguards
+											},
+											{	-- Fearless Gladiator's Scaled Sabatons
+												["itemID"] = 142714,	-- Fearless Gladiator's Scaled Sabatons
 											},
 										},
 									},
@@ -5215,7 +5243,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 										["itemID"] = 146134,	-- Ensemble: Vindictive Gladiator's Scaled Armor
 										["classes"] = {
 											2,	-- Paladin
@@ -5247,6 +5275,33 @@ _.Zones =
 											},
 											{	-- Vindictive Gladiator's Scaled Sabatons
 												["itemID"] = 135632,	-- Vindictive Gladiator's Scaled Sabatons
+											},
+											{	-- Fearless Gladiator's Scaled Helm
+												["itemID"] = 142603,	-- Fearless Gladiator's Scaled Helm
+											},
+											{	-- Fearless Gladiator's Scaled Shoulders
+												["itemID"] = 142605,	-- Fearless Gladiator's Scaled Shoulders
+											},
+											{	-- Fearless Gladiator's Greatcloak of Faith
+												["itemID"] = 142657,	-- Fearless Gladiator's Greatcloak of Faith
+											},
+											{	-- Fearless Gladiator's Scaled Battlerobe
+												["itemID"] = 142600,	-- Fearless Gladiator's Scaled Battlerobe
+											},
+											{	-- Fearless Gladiator's Scaled Wristplates
+												["itemID"] = 142607,	-- Fearless Gladiator's Scaled Wristplates
+											},
+											{	-- Fearless Gladiator's Scaled Gauntlets
+												["itemID"] = 142602,	-- Fearless Gladiator's Scaled Gauntlets
+											},
+											{	-- Fearless Gladiator's Scaled Girdle
+												["itemID"] = 142606,	-- Fearless Gladiator's Scaled Girdle
+											},
+											{	-- Fearless Gladiator's Scaled Legguards
+												["itemID"] = 142604,	-- Fearless Gladiator's Scaled Legguards
+											},
+											{	-- Fearless Gladiator's Scaled Sabatons
+												["itemID"] = 142601,	-- Fearless Gladiator's Scaled Sabatons
 											},
 										},
 									},
