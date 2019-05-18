@@ -234,6 +234,11 @@ _.Zones =
 							["qg"] = 135441,	-- Zolani
 							["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
 						}),
+						qh(56044, {	-- Send the Fleet
+							["qg"] = 135691,	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, 1165 },
+							["sourceQuest"] = 56030,	-- The Warchief's Order
+						}),
 						qh(46926, {	-- Shakedown
 							["qg"] = 135441,	-- Zolani
 							["sourceQuests"] = { 50835 },	-- The Port of Zandalar
@@ -281,6 +286,9 @@ _.Zones =
 							["qg"] = 145396,	-- Xal'atath
 							["coord"] = { 75.0, 77.7, 895 },
 							["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
+						}),
+						qh(56030, {	-- The Warchief's Order
+							["description"] = "Automated granted when logging in.",
 						}),
 						qh(46846, {	-- The Word of Zul
 							["qg"] = 126684,	-- Yazma
