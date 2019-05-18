@@ -500,36 +500,22 @@ _.Zones =
 						i(44023),
 						i(44032),
 					}),
-					{	-- Basic Chemistry [Horde]
-						["questID"] = 13279,	-- Basic Chemistry
+					qh(13279, {	-- Basic Chemistry
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["groups"] = {
-							{	-- Bat-Wool Signet
-								["itemID"] = 44387,	-- Bat-Wool Signet
-							},
-							{	-- Frog-Toe Band
-								["itemID"] = 44388,	-- Frog-Toe Band
-							},
-							{	-- Newt-Eye Ring
-								["itemID"] = 44386,	-- Newt-Eye Ring
-							},
+							i(44387),	-- Bat-Wool Signet
+							i(44388),	-- Frog-Toe Band
+							i(44386),	-- Newt-Eye Ring
 						},
-					},
-					{	-- Basic Chemistry [Alliance]
-						["questID"] = 13295,	-- Basic Chemistry
+					}),
+					qa(13295, {	-- Basic Chemistry
 						["qg"] = 29799,	-- Thassarian
 						["groups"] = {
-							{	-- Bat-Wool Signet
-								["itemID"] = 44387,	-- Bat-Wool Signet
-							},
-							{	-- Frog-Toe Band
-								["itemID"] = 44388,	-- Frog-Toe Band
-							},
-							{	-- Newt-Eye Ring
-								["itemID"] = 44386,	-- Newt-Eye Ring
-							},
+							i(44387),	-- Bat-Wool Signet
+							i(44388),	-- Frog-Toe Band
+							i(44386),	-- Newt-Eye Ring
 						},
-					},
+					}),
 					q(13219,  {  -- Battle at Valhalas: Final Challenge
 						i(44382),
 						i(44383),
