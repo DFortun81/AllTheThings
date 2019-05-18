@@ -230,6 +230,27 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161462),	-- Doom's Wake
 				}),
 			}),
+			--[[
+			e(, {	-- Ulmath, the Soulbinder
+				["questID"] = ,
+				["isRaid"] = true,
+				["coord"] = { , 1355 },
+				["maps"] = { 1355 },
+				["crs"] = { },	-- Ulmath, the Soulbinder
+				["g"] = bubbleDown({["modID"] = 3 }, {
+					i(170089),	-- Liara's Spire
+					i(170093),	-- Tyr'mar's Greatsword
+					i(170091),	-- Willbinder's Halberd
+					i(170090),	-- Merciless Pincher
+					i(170095),	-- Moon Priestess' Baton
+					i(170092),	-- Netherdancer's Knife
+					i(170094),	-- Temple Guardian's Saber
+					i(170088),	-- Ulmath's Soulseeker
+					i(168603),	-- Cloak of Restless Spirits
+					i(169317),	-- Enthraller's Bindstone
+				}),
+			}),
+			]]--
 			e(2198, {	-- Warbringer Yenajz
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				-- Note!! Kill ID: 52995
@@ -251,6 +272,26 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161376),	-- Prism of Dark Intensity
 				}),
 			}),
+			--[[
+			e(, {	-- Wekemara
+				["questID"] = ,
+				["isRaid"] = true,
+				["coord"] = { , 1355 },
+				["maps"] = { 1355 },
+				["crs"] = { 152671 },	-- Wekemara
+				["g"] = bubbleDown({["modID"] = 3}, {
+					i(168340),	-- Naga Ritualist's Mantle
+					i(168366),	-- Tidal Lurker's Greathelm
+					i(168351),	-- Spitcharged Shoulderguards
+					i(168358),	-- Chestguard of the Submerged
+					i(169926),	-- Belt of Rising Guardians
+					i(169927),	-- Deepcaller's Clasp
+					i(169925),	-- Serpentskin Splashers
+					i(169928),	-- Wekemara's Warboots
+					i(169318),	-- Shockbiter's Fang
+				},
+			}),
+			]]--
 		},
 	}),
 })};
