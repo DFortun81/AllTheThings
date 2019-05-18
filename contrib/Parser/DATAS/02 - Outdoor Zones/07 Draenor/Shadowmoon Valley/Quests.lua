@@ -299,6 +299,11 @@ _.Zones =
 					["coord"] = { 53.4, 57.2, 539 },
 					["qg"] = 80761,	-- Beezil Linkspanner
 				}),
+				{	-- Free Their Minds
+					["questID"] = 34455,
+					["qg"] = 89158,	-- Goblin Mind Control Device
+					["coord"] = { 59.8, 94.4 },
+				},				
 				qa(34788, {	-- Friend of the Exarchs
 					["sourceQuests"] = { 34792 },	-- The Traitor's True Name
 					["description"] = "You can only pick one of these followers per character.",
