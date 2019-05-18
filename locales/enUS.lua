@@ -3223,6 +3223,7 @@ AllTheThings.L = {
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
+		[327427] = "Sack of Tasks",
 		
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found

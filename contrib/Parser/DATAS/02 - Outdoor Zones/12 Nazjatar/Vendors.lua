@@ -10,7 +10,7 @@ _.Zones =
 					["coord"] = { 51.0, 65.5, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						currency(1721, {
+						currency(1721, {	-- Prismatic Manapearl
 							i(168846),	-- Pearl of Lucid Dreams
 							i(168847),	-- Pearl of Manifest Ambitions
 							i(168848),	-- Pearl of Perspicuous Intentions
@@ -126,8 +126,10 @@ _.Zones =
 					["coord"] = { 49.1, 62.2, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(169352),	-- Pearlescent Glimmershell
-						i(167170),	-- Unshackled Waveray
+						currency(1721, {	-- Prismatic Manapearl
+							i(169352),	-- Pearlescent Glimmershell
+							i(167170),	-- Unshackled Waveray
+						}),
 					},
 				}),
 				n(153024, {	-- Suva

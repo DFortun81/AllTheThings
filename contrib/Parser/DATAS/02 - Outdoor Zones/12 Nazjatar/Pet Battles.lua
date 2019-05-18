@@ -14,15 +14,55 @@ _.Zones =
 						["g"] = {
 							{	-- Chomp
 								["criteriaID"] = 2,
+								["crs"] = { 154911 },	-- Chomp
 								["coord"] = { 71.9, 51.2, 1355 },
+							},
+							{	-- Elderspawn of Nalaada
+								["criteriaID"] = 6,
+								["crs"] = { 154915 },	-- Elderspawn of Nalaada
+							},
+							{	-- Frenzied Knifefang
+								["criteriaID"] = 11,
+								["crs"] = { 154920 },	-- Frenzied Knifefang
+							},
+							{	-- Giant Opaline Conch
+								["criteriaID"] = 12,
+								["crs"] = { 154921 },	-- Giant Opaline Conch
 							},
 							{	-- Kelpstone
 								["criteriaID"] = 9,
+								["crs"] = { 154918 },	-- Kelpstone
 								["coord"] = { 46.6, 28.0, 1355 },
 								["description"] = "Inside a case at the bottom of the waterfall.",
 							},
+							{	-- Mindshackle
+								["criteriaID"] = 8,
+								["crs"] = { 154917 },	-- Mindshackle
+							},
+							{	-- Pearlhusk Crawler
+								["criteriaID"] = 5,
+								["crs"] = { 154914 },	-- Pearlhusk Crawler
+								["coord"] = { 50.5, 50.2, 1355 },
+							},
+							{	-- Prince Wiggletail
+								["criteriaID"] = 1,
+								["crs"] = { 154910 },	-- Prince Wiggletail
+							},
+							{	-- Ravenous Scalespawn
+								["criteriaID"] = 7,
+								["crs"] = { 154916 },	-- Ravenous Scalespawn
+							},
+							{	-- Shadowspike Lurker
+								["criteriaID"] = 4,
+								["crs"] = { 154913 },	-- Shadowspike Lurker
+							},
+							{	-- Silence
+								["criteriaID"] = 3,
+								["crs"] = { 154912 },	-- Silence
+							},
 							{	-- Voltgorger
 								["criteriaID"] = 10,
+								["crs"] = { 154919 },	-- Voltgorger
 								["coord"] = { 37.5, 16.7, 1355 },
 							},
 						},

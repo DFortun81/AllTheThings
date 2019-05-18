@@ -29,6 +29,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
 				},
+				{	-- Bounty Board (rewards seem to change over time?)
+					["objectID"] = 327585,
+					["coord"] = { 47.9, 61.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Wanted: Commander Sarj'eth
+							["questID"] = 56223
+						},
+					},
+				},
 				{	-- Brinestone Pickaxe
 					["itemID"] = 168081,
 					["crs"] = {
@@ -70,12 +80,29 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55054,	-- Upheaval
 				},
+				{	-- Desperate Need
+					["questID"] = 56176,
+					["qg"] = 154208,	-- Jonah Lowtide
+					["coord"] = { 50.5, 66.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save a Friend
+				},
 				{	-- Disruption of Power
 					["questID"] = 55092,
 					["qg"] = 150196,	-- First Arcanist Thalyssra
 					["coord"] = { 41.9, 80.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
+				},
+				{	-- Down Into Nazjatar -- TODO:: confirm sourceQuest
+					["questID"] = 56235,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save A Friend
+					["g"] = {
+						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
+					},
 				},
 				{	-- Essential Empowerment (possibly breadcrumb? follow-up quest was available without turning this in)
 					["questID"] = 55851,
@@ -120,6 +147,32 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
+				{	-- Sack of Tasks (rewards appear to change over time?)
+					["objectID"] = 327427,
+					["coord"] = { 51.0, 65.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Bounty: A Few Fathom Rays
+							["questID"] = 55825,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: Dangerous Creatures
+							["questID"] = 55837,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Seaweek
+							["questID"] = 55786,
+							["isDaily"] = true,
+						},
+					},
+				},
+				{	-- Save a Friend
+					["questID"] = 55500,
+					["qg"] = 152047,	-- Poen Gillbrack
+					["coord"] = { 38.8, 42.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 152108,	-- Scouting the Pens
+				},
 				{	-- Scouting the Palace
 					["questID"] = 55481,
 					["qg"] = 151848,	-- Lor'themar Theron
@@ -129,6 +182,27 @@ _.Zones =
 						56161,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
 						55618,	-- The Heart Forge
 					},
+				},
+				{	-- Scouting the Pens
+					["questID"] = 55385,
+					["qg"] = 152108,	-- Kelfin Scout (neri sharpfin)
+					["coord"] = { 49.7, 64.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55384,	-- Settling In
+				},
+				{	-- Scrying Stones -- TODO:: confirm sourceQuest
+					["questID"] = 56210,
+					["qg"] = 153512,	-- Finder Pruc
+					["coord"] = { 49.0, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save A Friend
+				},
+				{	-- Settling In
+					["questID"] = 55384,
+					["qg"] = 149904,	-- Neri Sharpfin
+					["coord"] = { 49.7, 64.6, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55481,	-- Scouting the Palace
 				},
 				{	-- Stay Low, Stay Fast!
 					["questID"] = 55094,
@@ -143,6 +217,13 @@ _.Zones =
 					["coord"] = { 36.3, 82.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54018,	-- Descent
+				},
+				{	-- The Needs of the People
+					["questID"] = 56179,
+					["qg"] = 154208,	-- Jonah Lowtide
+					["coord"] = { 50.5, 66.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56176,	-- Desperate Need
 				},
 				{	-- Up Against It
 					["questID"] = 56429,
