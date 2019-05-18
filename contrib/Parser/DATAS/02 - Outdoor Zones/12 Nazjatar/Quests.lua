@@ -41,6 +41,17 @@ _.Zones =
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
+				{	-- Chum
+					["itemID"] = 168155,
+					["crs"] = {
+						152542,	-- Scale Matriarch Zodia
+					},
+					["g"] = {
+						{	-- What Will It Lure?
+							["questID"] = 55602,
+						},
+					},
+				},
 				{	-- Descent
 					["questID"] = 54018,
 					["qg"] = 150206,	-- Chief Telemancer Oculeth
@@ -68,6 +79,17 @@ _.Zones =
 					["coord"] = { 41.9, 80.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
+				},
+				{	-- Germinating Seed
+					["itemID"] = 167786,
+					["crs"] = {
+						152416,	-- Allseer Oma'kil
+					},
+					["g"] = {
+						{	-- What Will It Grow?
+							["questID"] = 55426,
+						},
+					},
 				},
 				{	-- In Deep
 					["questID"] = 54015,
