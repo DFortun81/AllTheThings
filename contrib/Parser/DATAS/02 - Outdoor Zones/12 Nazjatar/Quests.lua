@@ -6,6 +6,22 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		["groups"] = {
 			n(-17,  {	-- Quests
+				{	-- Unfathomable
+					["achievementID"] = 13709,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Welcome to Nazjatar
+							["criteriaID"] = 1,
+							["sourceQuest"] = 55481,	-- Scouting the Palace
+						},
+						{	-- Secrets in the Sea
+							["criteriaID"] = 2,
+						},
+						{	-- Turning the Tide
+							["criteriaID"] = 3,
+						},
+					},
+				},
 				{	-- A Way Home
 					["questID"] = 55053,
 					["qg"] = 151851,	-- Chief Telemancer Oculeth
@@ -70,6 +86,16 @@ _.Zones =
 					["coord"] = { 41.9, 80.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
+				},
+				{	-- Scouting the Palace
+					["questID"] = 55481,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						56161,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
+						55618,	-- The Heart Forge
+					},
 				},
 				{	-- Stay Low, Stay Fast!
 					["questID"] = 55094,

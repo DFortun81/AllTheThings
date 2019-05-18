@@ -46,6 +46,13 @@ _.Zones =
 								["coord"] = { 48.1, 72.2, 1473 },
 								["sourceQuest"] = 55533,	-- MOTHER Knows Best
 							},
+							{	-- Back Out to Sea
+								["questID"] = 56161,
+								["qg"] = 152206,	-- Magni Bronzebeard
+								["coord"] = { 50.0, 59.1, 1473 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 55618,	-- The Heart Forge
+							},
 							q(52428, {	-- Infusing the Heart		
 								["groups"] = {		
 									i(160909),	-- Crown of the Champion
