@@ -134,6 +134,7 @@ _.Zones =
 					}),
 					n(3485, {	-- Wrahk <Tailoring Supplies>
 						["coord"] = { 50.0, 61.0, 10 },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(6272),	-- Pattern: Blue Linen Robe
 							i(6270),	-- Pattern: Blue Linen Vest
