@@ -1,0 +1,760 @@
+-----------------------------------------------------
+--   D U N G E O N S  &  R A I D S  M O D U L E    --
+-----------------------------------------------------
+_.Instances = { tier(8, {	-- Battle for Azeroth
+	inst(1179, { 	-- The Eternal Palace
+		["isRaid"] = true,
+		["lvl"] = 120,
+		["g"] = {
+			d(17, {	-- LFR
+				ach(13718, {	-- The Grand Reception
+					["g"] = {
+						e(2352, {	-- Abyssal Commander Sivara
+							["g"] = {
+								i(168306),	-- Shiver Venom Lance
+								i(168276),	-- Claw of the Myrmidon
+								i(168901),	-- Royal Scaleguard's Battleaxe
+								i(168903),	-- Scepter of the Azsh'ari
+								i(168818),	-- Sivar's Slitherblade
+								i(168273),	-- Shiver Venom Crossbow
+								i(168477),	-- Tidebinder's Driftglobe
+								i(168345),	-- Helm of the Inexorable Tide
+								i(168359),	-- Abyssal Commander's Mantle
+								i(168361),	-- Naga Centaur's Shellplate
+								i(168341),	-- Siren Mystic's Vestments
+								i(168387),	-- Palace Sentinel Vambraces
+								i(168377),	-- Tideblood Bracers
+								i(168386),	-- Gauntlets of Overflowing Chill
+								i(168384),	-- Wavespine Clutch
+								i(168371),	-- Seawrath Legwraps
+								i(168390),	-- Sabatons of the Stalwart
+								i(168905),	-- Shiver Venom Relic
+							},
+						}),
+						e(2347, {	-- Blackwater Behemoth
+							["g"] = {
+								i(168900),	-- Diver's Folly
+								i(168397),	-- Fang of the Behemoth
+								i(168353),	-- Hood of Lightless Depths
+								i(168342),	-- Fathom-Feeder's Mantle
+								i(168362),	-- Trench Tyrant's Shoulderplates
+								i(168343),	-- Blackwater Shimmerscale Vest
+								i(168376),	-- Anglerfish Feelers
+								i(168885),	-- Undercove Crushers
+								i(168379),	-- Ship Swallower's Belt
+								i(168389),	-- Fleetwrecker's Greaves
+								i(168383),	-- Pelagos Predator's Legguards
+								i(168373),	-- Eelskin Flippers
+								i(168385),	-- Slipstreamer's Saltwalkers
+								i(169304),	-- Leviathan's Lure
+								i(169312),	-- Luminous Jellyweed
+							},
+						}),
+						e(2353, {	-- Radiance of Azshara
+							["g"] = {
+								i(168478),	-- Monstrosity's Shipbreaker
+								i(168475),	-- Bulwark of the Seaborn Avatar
+								i(168336),	-- Handmaiden's Cowl of Sacrifice
+								i(168360),	-- Warhelm of Dread Waters
+								i(168348),	-- Shoulderpads of Frothing Rage
+								i(168355),	-- Servitor's Heartguard
+								i(168382),	-- Arcanamental Bindings
+								i(168372),	-- Sea Sculptor's Cuffs
+								i(168375),	-- Gloves of Unschackled Arcana
+								i(168381),	-- Grips of the Scaled Arcanist
+								i(168374),	-- Belt of Blind Devotion
+								i(168388),	-- Storm-Tempered Girdle
+								i(168378),	-- Leggings of the Stormborn
+								i(168380),	-- Ancient Tempest Striders
+								i(169313),	-- Phial of the Frigid Tempest
+							},
+						}),
+					},
+				}),
+				ach(13719, {	-- Depths of the Devoted
+					["g"] = {
+						e(2354, {	-- Lady Ashvane
+							["g"] = {
+								i(168904),	-- Current-Weaver's Gavel
+								i(168347),	-- Helm of Hideous Transformation
+								i(168354),	-- Shoulderguards of Crushing Depths
+								i(168367),	-- Barnacle-Crusted Breastplate
+								i(168335),	-- Robes of Sunken Nobility
+								i(168883),	-- Cultured Pearl Armbands
+								i(168870),	-- Tanglekelp Waistwrap
+								i(168876),	-- Priscilla's Fishnets
+								i(168877),	-- Coralshell Warboots
+								i(168889),	-- Boralus Noble's Seal
+								i(169305),	-- Aquipotent Nautilus
+								i(169311),	-- Arcing Razor Coral
+								i(169310),	-- Ashvane's Bloodthirsty Coral
+							},
+						}),
+						e(2351, {	-- Orgozoa
+							["g"] = {
+								i(168274),	-- Aqua-Pulse Trident
+								i(168897),	-- Tentacle Crusher
+								i(168893),	-- Hatchery Scraper
+								i(168899),	-- Orgozoa's Paralytic Barb
+								i(168894),	-- Squidhunter Speargun
+								i(168476),	-- Great Reef Barrier
+								i(168365),	-- Greathelm of the Tender
+								i(168339),	-- Incubator's Bellcap
+								i(168346),	-- Tidal Drifter's Shoulders
+								i(168604),	-- Drape of the Hatcher
+								i(168352),	-- Scalemail of Unnatural Selection
+								i(168872),	-- Cephalid's Sash
+								i(168875),	-- Formcrafter's Pants
+								i(169319),	-- Dribbling Inkpod
+								i(169309),	-- Zoatroid Egg Sac
+							},
+						}),
+						e(2359, {	-- The Queen's Court
+							["g"] = {
+								i(168892),	-- Court Dagger of Sentencing
+								i(168898),	-- Pashmar's Finial
+								i(168896),	-- Stormtamer's Orb
+								i(168357),	-- Silivaz's Skullguard
+								i(168338),	-- Amice of the Reef Witch
+								i(168364),	-- Pauldrons of Fanatical Might
+								i(168350),	-- Tunic of the Sycophant
+								i(168881),	-- Naga Executor's Greatbelt
+								i(168886),	-- Hands of the Fanatic
+								i(168879),	-- Ardent Worshipper's Boots
+								i(168890),	-- Ring of the H ighborne Courtier
+								i(169315),	-- Edicts of the Faithless
+								i(169316),	-- Stay of Execution
+							},
+						}),
+					},
+				}),
+				ach(13725, {	-- The Circle of Stars
+					["g"] = {
+						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+							["g"] = {
+								i(168902),	-- Dream's End
+								i(168301),	-- Sever, Edge of Madness
+								i(168349),	-- Shroud of Unmooring Whispers
+								i(169588),	-- Gardbrace of Fractured Reality
+								i(168391),	-- Cloak of Ill Tidings
+								i(168363),	-- Dark Passenger's Breastplate
+								i(168337),	-- Vestments of Creeping Terror
+								i(168884),	-- Bindings of the Herald
+								i(168882),	-- Shackles of Dissonance
+								i(169308),	-- Chain of Suffering
+								i(169307),	-- Vision of Demise
+								i(169306),	-- Za'qul's Portal Key
+							},
+						}),
+						e(2361, {	-- Queen Azshara
+							["g"] = {
+								i(168854),	-- Animated Elemental Heart
+								i(168328),	-- Hardened Azerite Formation
+								i(168941),	-- Vitality Redistribution Lattice
+								i(169694),	-- Aqueous Reliquary
+								i(168275),	-- Anu-Azshara, Staff of the Eternal
+								i(168895),	-- Mel'nalore, Javelin of Suramar
+								i(168887),	-- Gloves of Incomparable Beauty
+								i(168888),	-- Handguards of the Highest-Born
+								i(168871),	-- Beloved Monarch's Waistwrap
+								i(168869),	-- Eternity Keeper's Greatbelt
+								i(168874),	-- Cherished Empress's Leggings
+								i(168873),	-- Tide Goddess's Wargreaves
+								i(168880),	-- Slippers of the Sorceress-Queen
+								i(168878),	-- Vethan's Icewalkers
+								i(168891),	-- Cursed Lover's Ring
+								i(169314),	-- Azshara's Font of Power
+							},
+						}),
+					
+					},
+				}),
+			}),
+			d(14, {	-- Normal
+				e(2352, {	-- Abyssal Commander Sivara
+					["g"] = {
+						{	-- The Grand Reception (Abyssal Commander Sivara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 1,
+						},
+						ach(13684),	-- You and What Army?
+						i(168306),	-- Shiver Venom Lance
+						i(168276),	-- Claw of the Myrmidon
+						i(168901),	-- Royal Scaleguard's Battleaxe
+						i(168903),	-- Scepter of the Azsh'ari
+						i(168818),	-- Sivar's Slitherblade
+						i(168273),	-- Shiver Venom Crossbow
+						i(168477),	-- Tidebinder's Driftglobe
+						i(168345),	-- Helm of the Inexorable Tide
+						i(168359),	-- Abyssal Commander's Mantle
+						i(168361),	-- Naga Centaur's Shellplate
+						i(168341),	-- Siren Mystic's Vestments
+						i(168387),	-- Palace Sentinel Vambraces
+						i(168377),	-- Tideblood Bracers
+						i(168386),	-- Gauntlets of Overflowing Chill
+						i(168384),	-- Wavespine Clutch
+						i(168371),	-- Seawrath Legwraps
+						i(168390),	-- Sabatons of the Stalwart
+						i(168905),	-- Shiver Venom Relic
+					},
+				}),
+				e(2347, {	-- Blackwater Behemoth
+					["g"] = {
+						{	-- The Grand Reception (Blackwater Behemoth)
+							["achievementID"] = 13718,
+							["criteriaID"] = 2,
+						},
+						ach(13628),	-- Intro to Marine Biology
+						i(168900),	-- Diver's Folly
+						i(168397),	-- Fang of the Behemoth
+						i(168353),	-- Hood of Lightless Depths
+						i(168342),	-- Fathom-Feeder's Mantle
+						i(168362),	-- Trench Tyrant's Shoulderplates
+						i(168343),	-- Blackwater Shimmerscale Vest
+						i(168376),	-- Anglerfish Feelers
+						i(168885),	-- Undercove Crushers
+						i(168379),	-- Ship Swallower's Belt
+						i(168389),	-- Fleetwrecker's Greaves
+						i(168383),	-- Pelagos Predator's Legguards
+						i(168373),	-- Eelskin Flippers
+						i(168385),	-- Slipstreamer's Saltwalkers
+						i(169304),	-- Leviathan's Lure
+						i(169312),	-- Luminous Jellyweed
+					},
+				}),
+				e(2353, {	-- Radiance of Azshara
+					["g"] = {
+						{	-- The Grand Reception (Radiance of Azshara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 3,
+						},
+						ach(13767),	-- Fun Run
+						i(168478),	-- Monstrosity's Shipbreaker
+						i(168475),	-- Bulwark of the Seaborn Avatar
+						i(168336),	-- Handmaiden's Cowl of Sacrifice
+						i(168360),	-- Warhelm of Dread Waters
+						i(168348),	-- Shoulderpads of Frothing Rage
+						i(168355),	-- Servitor's Heartguard
+						i(168382),	-- Arcanamental Bindings
+						i(168372),	-- Sea Sculptor's Cuffs
+						i(168375),	-- Gloves of Unschackled Arcana
+						i(168381),	-- Grips of the Scaled Arcanist
+						i(168374),	-- Belt of Blind Devotion
+						i(168388),	-- Storm-Tempered Girdle
+						i(168378),	-- Leggings of the Stormborn
+						i(168380),	-- Ancient Tempest Striders
+						i(169313),	-- Phial of the Frigid Tempest
+					},
+				}),
+				e(2354, {	-- Lady Ashvane
+					["g"] = {
+						{	-- Depths of the Devoted (Lady Ashvane)
+							["achievementID"] = 13719,
+							["criteriaID"] = 1,
+						},
+						ach(13629),	-- Simple Geometry
+						i(168904),	-- Current-Weaver's Gavel
+						i(168347),	-- Helm of Hideous Transformation
+						i(168354),	-- Shoulderguards of Crushing Depths
+						i(168367),	-- Barnacle-Crusted Breastplate
+						i(168335),	-- Robes of Sunken Nobility
+						i(168883),	-- Cultured Pearl Armbands
+						i(168870),	-- Tanglekelp Waistwrap
+						i(168876),	-- Priscilla's Fishnets
+						i(168877),	-- Coralshell Warboots
+						i(168889),	-- Boralus Noble's Seal
+						i(169305),	-- Aquipotent Nautilus
+						i(169311),	-- Arcing Razor Coral
+						i(169310),	-- Ashvane's Bloodthirsty Coral
+					},
+				}),
+				e(2351, {	-- Orgozoa
+					["g"] = {
+						{	-- Depths of the Devoted (Orgozoa)
+							["achievementID"] = 13719,
+							["criteriaID"] = 2,
+						},
+						ach(13724),	-- A Smack of Jellyfish
+						i(168274),	-- Aqua-Pulse Trident
+						i(168897),	-- Tentacle Crusher
+						i(168893),	-- Hatchery Scraper
+						i(168899),	-- Orgozoa's Paralytic Barb
+						i(168894),	-- Squidhunter Speargun
+						i(168476),	-- Great Reef Barrier
+						i(168365),	-- Greathelm of the Tender
+						i(168339),	-- Incubator's Bellcap
+						i(168346),	-- Tidal Drifter's Shoulders
+						i(168604),	-- Drape of the Hatcher
+						i(168352),	-- Scalemail of Unnatural Selection
+						i(168872),	-- Cephalid's Sash
+						i(168875),	-- Formcrafter's Pants
+						i(169319),	-- Dribbling Inkpod
+						i(169309),	-- Zoatroid Egg Sac
+					},
+				}),
+				e(2359, {	-- The Queen's Court
+					["g"] = {
+						{	-- Depths of the Devoted (The Queen's Court)
+							["achievementID"] = 13719,
+							["criteriaID"] = 3,
+						},
+						ach(13633),	-- If It Please the Court
+						i(168892),	-- Court Dagger of Sentencing
+						i(168898),	-- Pashmar's Finial
+						i(168896),	-- Stormtamer's Orb
+						i(168357),	-- Silivaz's Skullguard
+						i(168338),	-- Amice of the Reef Witch
+						i(168364),	-- Pauldrons of Fanatical Might
+						i(168350),	-- Tunic of the Sycophant
+						i(168881),	-- Naga Executor's Greatbelt
+						i(168886),	-- Hands of the Fanatic
+						i(168879),	-- Ardent Worshipper's Boots
+						i(168890),	-- Ring of the H ighborne Courtier
+						i(169315),	-- Edicts of the Faithless
+						i(169316),	-- Stay of Execution
+					},
+				}),
+				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["g"] = {
+						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
+							["achievementID"] = 13725,
+							["criteriaID"] = 1,
+						},
+						ach(13716),	-- Lactose Intolerant
+						i(168902),	-- Dream's End
+						i(168301),	-- Sever, Edge of Madness
+						i(168349),	-- Shroud of Unmooring Whispers
+						i(169588),	-- Gardbrace of Fractured Reality
+						i(168391),	-- Cloak of Ill Tidings
+						i(168363),	-- Dark Passenger's Breastplate
+						i(168337),	-- Vestments of Creeping Terror
+						i(168884),	-- Bindings of the Herald
+						i(168882),	-- Shackles of Dissonance
+						i(169308),	-- Chain of Suffering
+						i(169307),	-- Vision of Demise
+						i(169306),	-- Za'qul's Portal Key
+					},
+				}),
+				e(2361, {	-- Queen Azshara
+					["g"] = {
+						{	-- The Circle of Stars (Queen Azshara)
+							["achievementID"] = 13725,
+							["criteriaID"] = 2,
+						},
+						ach(13768),	-- The Best of Us
+						i(168854),	-- Animated Elemental Heart
+						i(168328),	-- Hardened Azerite Formation
+						i(168941),	-- Vitality Redistribution Lattice
+						i(169694),	-- Aqueous Reliquary
+						i(168275),	-- Anu-Azshara, Staff of the Eternal
+						i(168895),	-- Mel'nalore, Javelin of Suramar
+						i(168887),	-- Gloves of Incomparable Beauty
+						i(168888),	-- Handguards of the Highest-Born
+						i(168871),	-- Beloved Monarch's Waistwrap
+						i(168869),	-- Eternity Keeper's Greatbelt
+						i(168874),	-- Cherished Empress's Leggings
+						i(168873),	-- Tide Goddess's Wargreaves
+						i(168880),	-- Slippers of the Sorceress-Queen
+						i(168878),	-- Vethan's Icewalkers
+						i(168891),	-- Cursed Lover's Ring
+						i(169314),	-- Azshara's Font of Power
+					},
+				}),
+			}),
+			d(15, {	-- Heroic
+				e(2352, {	-- Abyssal Commander Sivara
+					["g"] = {
+						{	-- The Grand Reception (Abyssal Commander Sivara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 1,
+						},
+						ach(13684),	-- You and What Army?
+						i(168306),	-- Shiver Venom Lance
+						i(168276),	-- Claw of the Myrmidon
+						i(168901),	-- Royal Scaleguard's Battleaxe
+						i(168903),	-- Scepter of the Azsh'ari
+						i(168818),	-- Sivar's Slitherblade
+						i(168273),	-- Shiver Venom Crossbow
+						i(168477),	-- Tidebinder's Driftglobe
+						i(168345),	-- Helm of the Inexorable Tide
+						i(168359),	-- Abyssal Commander's Mantle
+						i(168361),	-- Naga Centaur's Shellplate
+						i(168341),	-- Siren Mystic's Vestments
+						i(168387),	-- Palace Sentinel Vambraces
+						i(168377),	-- Tideblood Bracers
+						i(168386),	-- Gauntlets of Overflowing Chill
+						i(168384),	-- Wavespine Clutch
+						i(168371),	-- Seawrath Legwraps
+						i(168390),	-- Sabatons of the Stalwart
+						i(168905),	-- Shiver Venom Relic
+					},
+				}),
+				e(2347, {	-- Blackwater Behemoth
+					["g"] = {
+						{	-- The Grand Reception (Blackwater Behemoth)
+							["achievementID"] = 13718,
+							["criteriaID"] = 2,
+						},
+						ach(13628),	-- Intro to Marine Biology
+						i(168900),	-- Diver's Folly
+						i(168397),	-- Fang of the Behemoth
+						i(168353),	-- Hood of Lightless Depths
+						i(168342),	-- Fathom-Feeder's Mantle
+						i(168362),	-- Trench Tyrant's Shoulderplates
+						i(168343),	-- Blackwater Shimmerscale Vest
+						i(168376),	-- Anglerfish Feelers
+						i(168885),	-- Undercove Crushers
+						i(168379),	-- Ship Swallower's Belt
+						i(168389),	-- Fleetwrecker's Greaves
+						i(168383),	-- Pelagos Predator's Legguards
+						i(168373),	-- Eelskin Flippers
+						i(168385),	-- Slipstreamer's Saltwalkers
+						i(169304),	-- Leviathan's Lure
+						i(169312),	-- Luminous Jellyweed
+					},
+				}),
+				e(2353, {	-- Radiance of Azshara
+					["g"] = {
+						{	-- The Grand Reception (Radiance of Azshara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 3,
+						},
+						ach(13767),	-- Fun Run
+						i(168478),	-- Monstrosity's Shipbreaker
+						i(168475),	-- Bulwark of the Seaborn Avatar
+						i(168336),	-- Handmaiden's Cowl of Sacrifice
+						i(168360),	-- Warhelm of Dread Waters
+						i(168348),	-- Shoulderpads of Frothing Rage
+						i(168355),	-- Servitor's Heartguard
+						i(168382),	-- Arcanamental Bindings
+						i(168372),	-- Sea Sculptor's Cuffs
+						i(168375),	-- Gloves of Unschackled Arcana
+						i(168381),	-- Grips of the Scaled Arcanist
+						i(168374),	-- Belt of Blind Devotion
+						i(168388),	-- Storm-Tempered Girdle
+						i(168378),	-- Leggings of the Stormborn
+						i(168380),	-- Ancient Tempest Striders
+						i(169313),	-- Phial of the Frigid Tempest
+					},
+				}),
+				e(2354, {	-- Lady Ashvane
+					["g"] = {
+						{	-- Depths of the Devoted (Lady Ashvane)
+							["achievementID"] = 13719,
+							["criteriaID"] = 1,
+						},
+						ach(13629),	-- Simple Geometry
+						i(168904),	-- Current-Weaver's Gavel
+						i(168347),	-- Helm of Hideous Transformation
+						i(168354),	-- Shoulderguards of Crushing Depths
+						i(168367),	-- Barnacle-Crusted Breastplate
+						i(168335),	-- Robes of Sunken Nobility
+						i(168883),	-- Cultured Pearl Armbands
+						i(168870),	-- Tanglekelp Waistwrap
+						i(168876),	-- Priscilla's Fishnets
+						i(168877),	-- Coralshell Warboots
+						i(168889),	-- Boralus Noble's Seal
+						i(169305),	-- Aquipotent Nautilus
+						i(169311),	-- Arcing Razor Coral
+						i(169310),	-- Ashvane's Bloodthirsty Coral
+					},
+				}),
+				e(2351, {	-- Orgozoa
+					["g"] = {
+						{	-- Depths of the Devoted (Orgozoa)
+							["achievementID"] = 13719,
+							["criteriaID"] = 2,
+						},
+						ach(13724),	-- A Smack of Jellyfish
+						i(168274),	-- Aqua-Pulse Trident
+						i(168897),	-- Tentacle Crusher
+						i(168893),	-- Hatchery Scraper
+						i(168899),	-- Orgozoa's Paralytic Barb
+						i(168894),	-- Squidhunter Speargun
+						i(168476),	-- Great Reef Barrier
+						i(168365),	-- Greathelm of the Tender
+						i(168339),	-- Incubator's Bellcap
+						i(168346),	-- Tidal Drifter's Shoulders
+						i(168604),	-- Drape of the Hatcher
+						i(168352),	-- Scalemail of Unnatural Selection
+						i(168872),	-- Cephalid's Sash
+						i(168875),	-- Formcrafter's Pants
+						i(169319),	-- Dribbling Inkpod
+						i(169309),	-- Zoatroid Egg Sac
+					},
+				}),
+				e(2359, {	-- The Queen's Court
+					["g"] = {
+						{	-- Depths of the Devoted (The Queen's Court)
+							["achievementID"] = 13719,
+							["criteriaID"] = 3,
+						},
+						ach(13633),	-- If It Please the Court
+						i(168892),	-- Court Dagger of Sentencing
+						i(168898),	-- Pashmar's Finial
+						i(168896),	-- Stormtamer's Orb
+						i(168357),	-- Silivaz's Skullguard
+						i(168338),	-- Amice of the Reef Witch
+						i(168364),	-- Pauldrons of Fanatical Might
+						i(168350),	-- Tunic of the Sycophant
+						i(168881),	-- Naga Executor's Greatbelt
+						i(168886),	-- Hands of the Fanatic
+						i(168879),	-- Ardent Worshipper's Boots
+						i(168890),	-- Ring of the H ighborne Courtier
+						i(169315),	-- Edicts of the Faithless
+						i(169316),	-- Stay of Execution
+					},
+				}),
+				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["g"] = {
+						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
+							["achievementID"] = 13725,
+							["criteriaID"] = 1,
+						},
+						ach(13716),	-- Lactose Intolerant
+						i(168902),	-- Dream's End
+						i(168301),	-- Sever, Edge of Madness
+						i(168349),	-- Shroud of Unmooring Whispers
+						i(169588),	-- Gardbrace of Fractured Reality
+						i(168391),	-- Cloak of Ill Tidings
+						i(168363),	-- Dark Passenger's Breastplate
+						i(168337),	-- Vestments of Creeping Terror
+						i(168884),	-- Bindings of the Herald
+						i(168882),	-- Shackles of Dissonance
+						i(169308),	-- Chain of Suffering
+						i(169307),	-- Vision of Demise
+						i(169306),	-- Za'qul's Portal Key
+					},
+				}),
+				e(2361, {	-- Queen Azshara
+					["g"] = {
+						ach(13784),	-- Ahead of the Curve: Queen Azshara
+						{	-- The Circle of Stars (Queen Azshara)
+							["achievementID"] = 13725,
+							["criteriaID"] = 2,
+						},
+						ach(13768),	-- The Best of Us
+						i(168942),	-- Mesh of Expanding Vitality
+						i(168855),	-- Pulsing Elemental Hearth
+						i(168536),	-- Recrystalizing Azerite Formation
+						i(169694),	-- Aqueous Reliquary
+						i(168275),	-- Anu-Azshara, Staff of the Eternal
+						i(168895),	-- Mel'nalore, Javelin of Suramar
+						i(168887),	-- Gloves of Incomparable Beauty
+						i(168888),	-- Handguards of the Highest-Born
+						i(168871),	-- Beloved Monarch's Waistwrap
+						i(168869),	-- Eternity Keeper's Greatbelt
+						i(168874),	-- Cherished Empress's Leggings
+						i(168873),	-- Tide Goddess's Wargreaves
+						i(168880),	-- Slippers of the Sorceress-Queen
+						i(168878),	-- Vethan's Icewalkers
+						i(168891),	-- Cursed Lover's Ring
+						i(169314),	-- Azshara's Font of Power
+					},
+				}),
+			}),
+			d(16, {	-- Mythic
+				e(2352, {	-- Abyssal Commander Sivara
+					["g"] = {
+						ach(13726),	-- Mythic: Abyssal Commander Sivara
+						{	-- The Grand Reception (Abyssal Commander Sivara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 1,
+						},
+						ach(13684),	-- You and What Army?
+						i(168306),	-- Shiver Venom Lance
+						i(168276),	-- Claw of the Myrmidon
+						i(168901),	-- Royal Scaleguard's Battleaxe
+						i(168903),	-- Scepter of the Azsh'ari
+						i(168818),	-- Sivar's Slitherblade
+						i(168273),	-- Shiver Venom Crossbow
+						i(168477),	-- Tidebinder's Driftglobe
+						i(168345),	-- Helm of the Inexorable Tide
+						i(168359),	-- Abyssal Commander's Mantle
+						i(168361),	-- Naga Centaur's Shellplate
+						i(168341),	-- Siren Mystic's Vestments
+						i(168387),	-- Palace Sentinel Vambraces
+						i(168377),	-- Tideblood Bracers
+						i(168386),	-- Gauntlets of Overflowing Chill
+						i(168384),	-- Wavespine Clutch
+						i(168371),	-- Seawrath Legwraps
+						i(168390),	-- Sabatons of the Stalwart
+						i(168905),	-- Shiver Venom Relic
+					},
+				}),
+				e(2347, {	-- Blackwater Behemoth
+					["g"] = {
+						ach(13728),	-- Mythic: Blackwater Behemoth
+						{	-- The Grand Reception (Blackwater Behemoth)
+							["achievementID"] = 13718,
+							["criteriaID"] = 2,
+						},
+						ach(13628),	-- Intro to Marine Biology
+						i(168900),	-- Diver's Folly
+						i(168397),	-- Fang of the Behemoth
+						i(168353),	-- Hood of Lightless Depths
+						i(168342),	-- Fathom-Feeder's Mantle
+						i(168362),	-- Trench Tyrant's Shoulderplates
+						i(168343),	-- Blackwater Shimmerscale Vest
+						i(168376),	-- Anglerfish Feelers
+						i(168885),	-- Undercove Crushers
+						i(168379),	-- Ship Swallower's Belt
+						i(168389),	-- Fleetwrecker's Greaves
+						i(168383),	-- Pelagos Predator's Legguards
+						i(168373),	-- Eelskin Flippers
+						i(168385),	-- Slipstreamer's Saltwalkers
+						i(169304),	-- Leviathan's Lure
+						i(169312),	-- Luminous Jellyweed
+					},
+				}),
+				e(2353, {	-- Radiance of Azshara
+					["g"] = {
+						ach(13727),	-- Mythic: Radiance of Azshara
+						{	-- The Grand Reception (Radiance of Azshara)
+							["achievementID"] = 13718,
+							["criteriaID"] = 3,
+						},
+						ach(13767),	-- Fun Run
+						i(168478),	-- Monstrosity's Shipbreaker
+						i(168475),	-- Bulwark of the Seaborn Avatar
+						i(168336),	-- Handmaiden's Cowl of Sacrifice
+						i(168360),	-- Warhelm of Dread Waters
+						i(168348),	-- Shoulderpads of Frothing Rage
+						i(168355),	-- Servitor's Heartguard
+						i(168382),	-- Arcanamental Bindings
+						i(168372),	-- Sea Sculptor's Cuffs
+						i(168375),	-- Gloves of Unschackled Arcana
+						i(168381),	-- Grips of the Scaled Arcanist
+						i(168374),	-- Belt of Blind Devotion
+						i(168388),	-- Storm-Tempered Girdle
+						i(168378),	-- Leggings of the Stormborn
+						i(168380),	-- Ancient Tempest Striders
+						i(169313),	-- Phial of the Frigid Tempest
+					},
+				}),
+				e(2354, {	-- Lady Ashvane
+					["g"] = {
+						ach(13729),	-- Mythic: Lady Ashvane
+						{	-- Depths of the Devoted (Lady Ashvane)
+							["achievementID"] = 13719,
+							["criteriaID"] = 1,
+						},
+						ach(13629),	-- Simple Geometry
+						i(168904),	-- Current-Weaver's Gavel
+						i(168347),	-- Helm of Hideous Transformation
+						i(168354),	-- Shoulderguards of Crushing Depths
+						i(168367),	-- Barnacle-Crusted Breastplate
+						i(168335),	-- Robes of Sunken Nobility
+						i(168883),	-- Cultured Pearl Armbands
+						i(168870),	-- Tanglekelp Waistwrap
+						i(168876),	-- Priscilla's Fishnets
+						i(168877),	-- Coralshell Warboots
+						i(168889),	-- Boralus Noble's Seal
+						i(169305),	-- Aquipotent Nautilus
+						i(169311),	-- Arcing Razor Coral
+						i(169310),	-- Ashvane's Bloodthirsty Coral
+					},
+				}),
+				e(2351, {	-- Orgozoa
+					["g"] = {
+						ach(13730),	-- Mythic: Orgozoa
+						{	-- Depths of the Devoted (Orgozoa)
+							["achievementID"] = 13719,
+							["criteriaID"] = 2,
+						},
+						ach(13724),	-- A Smack of Jellyfish
+						i(168274),	-- Aqua-Pulse Trident
+						i(168897),	-- Tentacle Crusher
+						i(168893),	-- Hatchery Scraper
+						i(168899),	-- Orgozoa's Paralytic Barb
+						i(168894),	-- Squidhunter Speargun
+						i(168476),	-- Great Reef Barrier
+						i(168365),	-- Greathelm of the Tender
+						i(168339),	-- Incubator's Bellcap
+						i(168346),	-- Tidal Drifter's Shoulders
+						i(168604),	-- Drape of the Hatcher
+						i(168352),	-- Scalemail of Unnatural Selection
+						i(168872),	-- Cephalid's Sash
+						i(168875),	-- Formcrafter's Pants
+						i(169319),	-- Dribbling Inkpod
+						i(169309),	-- Zoatroid Egg Sac
+					},
+				}),
+				e(2359, {	-- The Queen's Court
+					["g"] = {
+						ach(13731),	-- Mythic:The Queen's Court
+						{	-- Depths of the Devoted (The Queen's Court)
+							["achievementID"] = 13719,
+							["criteriaID"] = 3,
+						},
+						ach(13633),	-- If It Please the Court
+						i(168892),	-- Court Dagger of Sentencing
+						i(168898),	-- Pashmar's Finial
+						i(168896),	-- Stormtamer's Orb
+						i(168357),	-- Silivaz's Skullguard
+						i(168338),	-- Amice of the Reef Witch
+						i(168364),	-- Pauldrons of Fanatical Might
+						i(168350),	-- Tunic of the Sycophant
+						i(168881),	-- Naga Executor's Greatbelt
+						i(168886),	-- Hands of the Fanatic
+						i(168879),	-- Ardent Worshipper's Boots
+						i(168890),	-- Ring of the H ighborne Courtier
+						i(169315),	-- Edicts of the Faithless
+						i(169316),	-- Stay of Execution
+					},
+				}),
+				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["g"] = {
+						ach(13732),	-- Mythic: Za'qul
+						{	-- The Circle of Stars (Za'qul, Harbinger of Ny'alotha)
+							["achievementID"] = 13725,
+							["criteriaID"] = 1,
+						},
+						ach(13716),	-- Lactose Intolerant
+						i(168902),	-- Dream's End
+						i(168301),	-- Sever, Edge of Madness
+						i(168349),	-- Shroud of Unmooring Whispers
+						i(169588),	-- Gardbrace of Fractured Reality
+						i(168391),	-- Cloak of Ill Tidings
+						i(168363),	-- Dark Passenger's Breastplate
+						i(168337),	-- Vestments of Creeping Terror
+						i(168884),	-- Bindings of the Herald
+						i(168882),	-- Shackles of Dissonance
+						i(169308),	-- Chain of Suffering
+						i(169307),	-- Vision of Demise
+						i(169306),	-- Za'qul's Portal Key
+					},
+				}),
+				e(2361, {	-- Queen Azshara
+					["g"] = {
+						ach(13733, {	-- Mythic: Queen Azshara
+							title(404),	-- the Eternal
+						}),
+						ach(13785),	-- Cutting Edge: Queen Azshara
+						{	-- The Circle of Stars (Queen Azshara)
+							["achievementID"] = 13725,
+							["criteriaID"] = 2,
+						},
+						ach(13768),	-- The Best of Us
+						i(168538),	-- Dazzling Azerite Formation
+						i(168857),	-- Sparkling Elemental Heart
+						i(168944),	-- Web of Unbridled Vitality
+						i(169694),	-- Aqueous Reliquary
+						i(168275),	-- Anu-Azshara, Staff of the Eternal
+						i(168895),	-- Mel'nalore, Javelin of Suramar
+						i(168887),	-- Gloves of Incomparable Beauty
+						i(168888),	-- Handguards of the Highest-Born
+						i(168871),	-- Beloved Monarch's Waistwrap
+						i(168869),	-- Eternity Keeper's Greatbelt
+						i(168874),	-- Cherished Empress's Leggings
+						i(168873),	-- Tide Goddess's Wargreaves
+						i(168880),	-- Slippers of the Sorceress-Queen
+						i(168878),	-- Vethan's Icewalkers
+						i(168891),	-- Cursed Lover's Ring
+						i(169314),	-- Azshara's Font of Power
+					},
+				}),
+			}),
+		},
+	}),
+})};
