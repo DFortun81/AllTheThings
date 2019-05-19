@@ -43,7 +43,8 @@ _.Zones =
 					["coord"] = { 64.3, 34.7, 1355 },
 				}),
 				n(152555, {	-- Elderspawn Nalaada
-					--["questID"] = ,
+					-- 56285 and 56598 popped on first kill. One must be first kill, the other for subsequent kills?
+					["questID"] = 56285,
 					["coord"] = { 52.1, 75.4, 1355 },
 					["g"] = {
 						i(169359),	-- Spawn of Nalaada
@@ -70,8 +71,12 @@ _.Zones =
 						i(168155),	-- Chum
 					},
 				}),
+				n(155841, {	-- Shadowbinder Athissa (nothing happened on the kill. No quest ID, no ach criteria, no drops, etc...)
+					--["questID"] = ,
+					["coord"] = { 74.0, 31.3, 1355 },
+				}),
 				n(153658, {	-- Shiz'narasz the Consumer
-					--["questID"] = 
+					--["questID"] = ,
 					["coord"] = { 38.9, 9.4, 1355 },
 				}),
 				n(152359, {	-- Siltstalker the Packmother

@@ -269,6 +269,21 @@ _.Zones =
 							},
 							["qg"] = 127489,	-- Hexlord Raal
 						}),
+						{	-- The Legend of Mechagon
+							["questID"] = 55646,
+							["qg"] = 152522,	-- Gazlowe
+							["coord"] = { 53.0, 43.2, 1165 },
+							["races"] = HORDE_ONLY,
+						},
+						{	-- The Missing Crew
+							["questID"] = 56379,
+							["qg"] = 135690,	-- Dread-Admiral Tattersail
+							["coord"] = { 58.4, 62.9, 862 },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								follower(1182),	-- Dread-Admiral Tattersail
+							},
+						},
 						q(53761,  {	-- The Pirate's Treasure
 							["sourceQuests"] = { 53760 },	-- Unintended Consequences
 							["coord"] = { 20.0, 35.8, 896 },
