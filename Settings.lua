@@ -1481,8 +1481,6 @@ function(self)
 	self:SetScript("OnEvent", function(self, ...)
 		-- print(self, "OnEvent", ...);
 		MovieFrame:Hide();
-		CinematicFrameCloseDialogConfirmButton:Click()
-		CinematicFrameCloseDialog:Hide();
 		CinematicFrame_CancelCinematic();
 	end);
 	ChangeSkipCutsceneState(self, checked);
