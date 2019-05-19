@@ -42,6 +42,13 @@ _.Achievements =
 						crit(4),		-- Ruby Sandworm Scale
 						crit(5),		-- Onyx Sandworm Scale
 					})),
+					ach(13790, {	-- Armed for Action
+						crit(1),	-- Volatile Blaster
+						crit(2),	-- Ricket's Special Delivery
+						crit(3),	-- Lightning Zap 5000
+						crit(4),	-- Supercollider
+						crit(5),	-- Boltspitter
+					}),
 					ach(13050, {	-- Bless the Rains Down in Freehold
 						crit(1),		-- Banana Hoard
 						crit(2),		-- Sweete's Feast
@@ -97,11 +104,21 @@ _.Achievements =
 						crit(6),		-- Horde of Heroes
 					})),
 					ach(12918),		-- Have a Heart
-					h(ach(13030, {	-- How to Ptrain Your Pterrordax
-						crit(1),		-- Nature Versus Nurture
-						crit(2),		-- Room To Grow
-						crit(3),		-- Eyes on the Skies
-						crit(4),		-- Down, But Not Out
+					ach(13542, {	-- How to Train Your Direhorn
+						crit(1),	-- Naptime
+						crit(2),	-- Held for Observation
+						crit(3),	-- Sleep, Eat, Repeat
+						crit(4),	-- Torcali's Blessing
+						crit(5),	-- Wander Not Alone
+					}),
+					h(ach(13573, {	-- How to Ptrain Your Pterrordax
+						crit(1),	-- Just Ptrust Me On This
+						ach(13030, {	-- How to Ptrain Your Pterrordax
+							crit(1),		-- Nature Versus Nurture
+							crit(2),		-- Room To Grow
+							crit(3),		-- Eyes on the Skies
+							crit(4),		-- Down, But Not Out
+						}),
 					})),
 					h(ach(13041)),	-- Hungry, Hungry Ranishu
 					a(ach(13251)),	-- In Teldrassil's Shadow
@@ -143,6 +160,20 @@ _.Achievements =
 						ach(11868),		-- The Dark Heart of Nazmir
 						ach(12478),		-- Secrets in the Sands
 					})),
+					ach(13791, {	-- Making the Mount
+						crit(1),	-- Shop Project
+						crit(2),	-- Right Bot for the Job
+						crit(3),	-- Ready to Rumble
+						crit(4),	-- Knock 'Em Out The Box
+						crit(5),	-- A Little Leg Work
+						crit(6),	-- The Nuts and Bolts of It
+						crit(7),	-- Factory Refurbished
+						crit(8),	-- Grease the Wheels
+						crit(9),	-- Emission Free
+						crit(10),	-- Test Drive
+						crit(11),	-- Knock His Bot Off
+						crit(12),	-- Drive it Away Today
+					}),
 					ach(13512, {	-- Master Calligrapher
 						crit(1),		-- Master of Calligraphy - Circle
 						crit(2),		-- Master of Calligraphy - Square
