@@ -9,6 +9,26 @@ _.Zones =
 				n(-17,  {	-- Quests
 					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
 					-- most of the zone unlocks once you get the Welcome to the Resistance achievement for your faction.
+					
+					{	-- Aid from Nordrassil
+						["questID"] = 55463,
+						["qg"] = 151936,	-- Mylune
+						["coord"] = { 72.1, 37.2, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Outside Influences
+								["achievementID"] = 13556,
+								["criteriaID"] = 1,
+							},
+						},
+					},
+					{	-- Batteries Not Included -- TODO:: verify sourceQuest. This quest is not always available
+						["questID"] = 55210,
+						["qg"] = 150630,	-- Flip Quickcharge
+						["coord"] = { 70.8, 39.1, 1462 },
+						["races"] = HORDE_ONLY,
+					},
 					{	-- Blueprint: Beastbot Powerpack
 						["itemID"] = 168219,
 						["questID"] = 55066,
@@ -47,6 +67,30 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Blueprint: Rustbolt Gramophone
+						["itemID"] = 168062,
+						["questID"] = 55064,
+						["crs"] = {
+							153226,	-- Steel Singer Freza
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Junkyard Architect (Rustbolt Gramophone
+								["achievementID"] = 13479,
+								["criteriaID"] = 12,
+							},
+						},
+					},
+					{	-- Blueprint: Rustbolt Kegerator
+						["itemID"] = 168063,
+						["questID"] = 55535,	-- The Tipsy Tinkerer
+						["crs"] = {
+							150937,	-- Sea Spit
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+						},
+					},
 					{	-- Build a Bigger Fish Trap
 						["questID"] = 55055,
 						["qg"] = 151462,	-- Danielle Anglers
@@ -55,11 +99,17 @@ _.Zones =
 						["sourceQuest"] = 55339,	-- Tidying Up
 						["g"] = {
 							{	-- Junkyard Architect (Hundred-Fathom Lure)
-								["achievementID"] = 13478,
+								["achievementID"] = 13479,
 								["criteriaID"] = 3,
 							},
 							i(167649),	-- Hundred-Fathom Lure
 						},
+					},
+					{	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation?
+						["questID"] = 54965, -- also popped 55480
+						["qg"] = 150086,	-- Bolten Springspark
+						["coord"] = { 63.1, 39.2, 1462 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Collaborative Construction (wasn't available initially, but became available the first reset after completing Welcome to the Resistance)
 						["questID"] = 55153,
@@ -97,6 +147,13 @@ _.Zones =
 						["coord"] = { 37.0, 47.1, 1462 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Grounded
+						["questID"] = 56380, -- also popped 56330
+						["qg"] = 154906,	-- Brian Pitchspark
+						["coord"] = { 42.8, 29.3, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Junkyard Tinkering and You
 						["questID"] = 55101,
 						["qg"] = 152295,	-- Pascal
@@ -124,6 +181,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55729,	-- The Resistance Needs You!
 					},
+					{	-- Off-the-Books Brawlin'
+						["questID"] = 56552,
+						["qg"] = 155355,	-- Usha Eyegouge
+						["coord"] = { 70.0, 31.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Outside Influences
+								["achievementID"] = 13556,
+								["criteriaID"] = 25,
+							},
+						},
+					},
 					{	-- Prospectus Bay
 						["questID"] = 55652,
 						["qg"] = 152783,	-- Gazlowe
@@ -137,6 +207,62 @@ _.Zones =
 						["coord"] = { 58.9, 54.8, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55729,	-- The Resistance Needs You!
+					},
+					{	-- Right Bot for the Job
+						["questID"] = 54086, -- 55907 and 56100 also popped
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.4, 38.7, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55608,	-- Shop Project
+					},
+					{	-- Rustbolt Requisitions: Deap Sea Satin
+						["questID"] = 56752,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Frenzied Fangtooth
+						["questID"] = 56364,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Shimmerscale
+						["questID"] = 55382,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Star Moss
+						["questID"] = 55383,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Storm Silver Ore
+						["questID"] = 55381,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Tempest Hide
+						["questID"] = 56759,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
+					{	-- Rustbolt Requisitions: Tidespray Linen
+						["questID"] = 56362,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					},
 					{	-- Send My Father a Message
 						["questID"] = 55096,-- also popped 55495
@@ -201,6 +327,13 @@ _.Zones =
 						["isDaily"] = true,
 						["sourceQuest"] = 55736,	-- Welcome to the Resistance
 					},
+					{	-- Wanted: Junkbrat and Roadtrogg
+						["objectID"] = 329641,
+						["questID"] = 56434,
+						["coord"] = { 67.3, 35.2, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- We Can Fix It
 						["questID"] = 55995,
 						["qg"] = 150956,	-- Broken Drill Rig
@@ -226,6 +359,19 @@ _.Zones =
 								["achievementID"] = 13700,
 							},
 						},
+					},
+					{	-- Your First Charge is Free!
+						["questID"] = 56320,
+						["qg"] = 150630,	-- Flip Quickcharge
+						["coord"] = { 70.8, 39.1, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55210,	-- Batteries Not Included
+					},
+					{	-- Your First Charge Ain't Free! -- the NPC quest marker shows repeatable, but it isn't. Possibly a daily? Not marking until we know
+						["questID"] = 56324,
+						["qg"] = 154534,	-- Flux
+						["coord"] = { 61.2, 37.4, 1462 },
+						["races"] = HORDE_ONLY,
 					},
 				}),
 			},

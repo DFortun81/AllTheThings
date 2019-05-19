@@ -3241,6 +3241,7 @@ AllTheThings.L = {
 		[327591] = "Preserved Journal",
 		[327592] = "Enchanted Lock",
 		[327596] = "Broken Abyssal Focus",
+		[329641] = "Wanted: Junkbrat and Roadtrogg",
 		[329805] = "Strange Crystal",
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found
