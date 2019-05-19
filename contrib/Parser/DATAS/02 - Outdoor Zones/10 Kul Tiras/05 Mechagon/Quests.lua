@@ -7,12 +7,20 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			["groups"] = {
 				n(-17,  {	-- Quests
+					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
 					{	-- Drill Rig Construction -- TODO:: Verify if this is the only sourceQuest. Possibly 55730 and 55731 too?
 						["questID"] = 55734,
 						["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prince Erazmin)
 						["coord"] = { 55.7, 60.2, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55995,	-- We Can Fix It
+					},
+					{	-- Junkyard Tinkering and You
+						["questID"] = 55101,
+						["qg"] = 152295,	-- Pascal
+						["coord"] = { 71.2, 32.3, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55736,	-- Welcome to the Resistance
 					},
 					{	-- My Father's Armies
 						["questID"] = 55731,
@@ -46,12 +54,29 @@ _.Zones =
 							55730,	-- Rescuing the Resistance
 						},
 					},
+					{	-- Shop Project
+						["questID"] = 55608,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.4, 38.7, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55736,	-- Welcome to the Resistance
+					},
 					{	-- The Resistance Needs You!
 						["questID"] = 55729,
 						["qg"] = 152851,	-- Prince Erazmin
 						["coord"] = { 71.0, 38.3, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55685,	-- We Come in Peace... and Profit
+					},
+					{	-- Upgraded
+						["questID"] = 55708,
+						["qg"] = 152747,	-- Christy Punchcog
+						["coord"] = { 69.7, 32.3, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55736,	-- Welcome to the Resistance
+						["g"] = {
+							i(167555),	-- Pocket-Sized Computation Device
+						},
 					},
 					{	-- We Can Fix It
 						["questID"] = 55995,
