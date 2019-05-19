@@ -378,9 +378,9 @@ _.Zones =
 								["questID"] = 24675,	-- Last Meal
 								["qg"] = 38143,			-- Magda Whitewall
 								["sourceQuests"] = {
-									--Note!! When you arrive in the area the quests are available, but because it requires all the others to
-									--get here we'll mark the sourceQuest as the quest before arriving here so it shows up properly
-									--in the sourceQuest minilist.
+									--Note!! Technically this opens up the same time as "To Greymane Manor", but going to the area only has
+									--this and one other quest making it not worth it overall to list it as the pre-req and to just continue
+									--the chain as normal until you get here.
 									24592,	-- Betrayal at Tempest's Reach
 								},
 								["coords"] = {
@@ -689,9 +689,9 @@ _.Zones =
 								["questID"] = 24674,	-- Slaves to No One
 								["qg"] = 37803,			-- Marcus
 								["sourceQuests"] = {
-									--Note!! When you arrive in the area the quests are available, but because it requires all the others to
-									--get here we'll mark the sourceQuest as the quest before arriving here so it shows up properly
-									--in the sourceQuest minilist.
+									--Note!! Technically this opens up the same time as "To Greymane Manor", but going to the area only has
+									--this and one other quest making it not worth it overall to list it as the pre-req and to just continue
+									--the chain as normal until you get here.
 									24592,	-- Betrayal at Tempest's Reach
 								},
 								["coords"] = {
