@@ -33,6 +33,11 @@ _.Zones =
 						i(167786),	-- Germinating Seed
 					},
 				}),
+				n(152413, {	-- Elder Unu
+					-- 56284 and 56599 popped on first kill. One must be first kill, the other for subsequent kills?
+					["questID"] = 56284,
+					["coord"] = { 64.3, 34.7, 1355 },
+				}),
 				n(152795, {	-- Sandclaw Stoneshell
 					-- 56277 and 56606 popped on first kill. One must be first kill, the other for subsequent kills?
 					["questID"] = 56277,

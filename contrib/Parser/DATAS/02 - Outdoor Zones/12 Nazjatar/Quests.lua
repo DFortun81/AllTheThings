@@ -158,6 +158,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55053,	-- A Way Home
 				},
+				{	-- Extra Shiny
+					["questID"] = 55985,
+					["qg"] = 153685,	-- Mari Lazarfin
+					["coord"] = { 60.8, 30.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 					["questID"] = 55661,
 					["qg"] = 153777,	-- Cando Mikfin
