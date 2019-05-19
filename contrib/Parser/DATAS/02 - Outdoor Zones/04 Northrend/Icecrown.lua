@@ -77,7 +77,7 @@ _.Zones =
 						["coord"] = { 43.6, 24.4 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battles
+				n(-25, {	-- Pet Battles
 					p(641),		-- Arctic Hare
 					p(393),		-- Cockroach
 					p(633),		-- Mountain Skunk
@@ -87,7 +87,7 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 					ach(40, {		-- Icecrown: The Final Goal
 						crit(1),		-- Crusader Bridenbrad
@@ -475,25 +475,23 @@ _.Zones =
 					q(12814),	-- You'll Need a Gryphon
 					qa(13290),	-- Your Attention, Please
 --]]
-					qa(13702,  {  -- A Champion Rises
+					qa(13702, {	-- A Champion Rises
 						i(44998),
 					}),
-					qh(13736,  {  -- A Champion Rises
+					qh(13736, {	-- A Champion Rises
 						i(45022),
 					}),
-					{
-						["questID"] = 13072,	-- A Hero Remains
+					q(13072,  {	-- A Hero Remains
 						["qg"] = 30562,	-- Quest Giver: Crusader Bridenbrad
 						["sourceQuest"] = 13068,	-- Source Quest: A Tale of Valor
 						["lvl"] = 67,
-					},
-					{
-						["questID"] = 13068,	-- A Tale of Valor
+					}),
+					q(13068,  {	-- A Tale of Valor
 						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
 						["lvl"] = 67,
-						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.",
-					},
-					q(13142,  {  -- Banshee's Revenge
+						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
+					}),
+					q(13142,  {	-- Banshee's Revenge
 						i(44028),
 						i(44029),
 						i(44022),
@@ -503,55 +501,55 @@ _.Zones =
 					qh(13279, {	-- Basic Chemistry
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["groups"] = {
+							i(44386),	-- Newt-Eye Ring
 							i(44387),	-- Bat-Wool Signet
 							i(44388),	-- Frog-Toe Band
-							i(44386),	-- Newt-Eye Ring
 						},
 					}),
 					qa(13295, {	-- Basic Chemistry
 						["qg"] = 29799,	-- Thassarian
 						["groups"] = {
+							i(44386),	-- Newt-Eye Ring
 							i(44387),	-- Bat-Wool Signet
 							i(44388),	-- Frog-Toe Band
-							i(44386),	-- Newt-Eye Ring
 						},
 					}),
-					q(13219,  {  -- Battle at Valhalas: Final Challenge
+					q(13219,  {	-- Battle at Valhalas: Final Challenge
 						i(44382),
 						i(44383),
 						i(44384),
 						i(44385),
 					}),
-					qa(13291,  {  -- Borrowed Technology
+					qa(13291, {	-- Borrowed Technology
 						i(38736),
 						i(39035),
 						i(39065),
 						i(39100),
 					}),
-					q(13211,  {  -- By Fire Be Purged
+					q(13211,  {	-- By Fire Be Purged
 						i(43880),
 						i(43893),
 					}),
-					qa(13319,  {  -- Chain of Command
+					qa(13319, {	-- Chain of Command
 						i(43882),
 						i(43891),
 						i(43931),
 						i(39458),
 					}),
-					qh(13354,  {  -- Chain of Command
+					qh(13354, {	-- Chain of Command
 						i(43882),
 						i(43891),
 						i(43931),
 						i(39458),
 					}),
-					qh(13349,  {  -- Cradle of the Frostbrood
+					qh(13349, {	-- Cradle of the Frostbrood
 						i(39115),
 						i(39135),
 						i(39136),
 						i(39130),
 						i(39133),
 					}),
-					q(12992, {	-- Crush Dem Vrykuls!
+					q(12992,  {	-- Crush Dem Vrykuls!
 						["qg"] = 30216,	-- Vile
 						["sourceQuests"] = { 12951 },	-- Let the Baron Know
 						["coord"] = { 43.6, 24.2 },
@@ -563,7 +561,7 @@ _.Zones =
 							i(43927),	-- Wrought-Iron Staff
 						},
 					}),
-					q(13039, {	-- Defending The Vanguard
+					q(13039,  {	-- Defending The Vanguard
 						i(43828),	-- Touch of Light
 						i(43841),	-- Argent Girdle
 						i(43829),	-- Crusader's Locket
@@ -583,7 +581,7 @@ _.Zones =
 						i(43930),
 						i(43847),
 					}),
-					q(12982, {	-- Ebon Blade Prisoners
+					q(12982,  {	-- Ebon Blade Prisoners
 						["qg"] = 30218,	-- Vaelen the Flayed
 						["sourceQuests"] = { 13085 },	-- Vaelen Has Returned
 						["coord"] = { 43.1, 21.0 },
@@ -594,7 +592,7 @@ _.Zones =
 							i(43910),	-- Gloves of the Flayed
 						},
 					}),
-					q(12955,  {  -- Eliminate the Competition
+					q(12955,  {	-- Eliminate the Competition
 						["qg"] = 30074,	-- The Leaper
 						["sourceQuests"] = { 12938 },	-- The Duke
 						["coord"] = { 43.4, 25.0 },
@@ -606,13 +604,13 @@ _.Zones =
 							i(43856),	-- Sigrid's Mittens
 						},
 					}),
-					qh(13259,  {  -- Establishing Superiority
+					qh(13259, {	-- Establishing Superiority
 						i(38737),
 						i(39036),
 						i(39070),
 						i(39102),
 					}),
-					q(12893,  {  -- Free Your Mind
+					q(12893,  {	-- Free Your Mind
 						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuests"] = { 12891 },	-- I Have an Idea, But First...
 						["coord"] = { 44.1, 24.7 },
@@ -623,17 +621,17 @@ _.Zones =
 							i(43926),	-- Signet of Baron Sliver
 						},
 					}),
-					q(12949, {	-- Get the Key
+					q(12949,  {	-- Get the Key
 						["qg"] = 30056,	-- Vaelen the Flayed
 						["sourceQuests"] = { 12943 },	-- Shadow Vault Decree
 						["coord"] = { 41.0, 23.8 },
 					}),
-					q(12939, {	-- Honor Challenge
+					q(12939,  {	-- Honor Challenge
 						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuests"] = { 12938 },	-- The Duke
 						["coord"] = { 44.6, 20.4 },
 					}),
-					q(12891, {	-- I Have an Idea, But First...
+					q(12891,  {	-- I Have an Idea, But First...
 						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuests"] = { 12887, 12892 },	-- It's All Fun and Games [Alliance] // [Horde]
 						["coord"] = { 44.1, 24.7 },
@@ -648,7 +646,7 @@ _.Zones =
 						["sourceQuests"] = { 12893 },	-- Free Your Mind
 						["coord"] = { 44.1, 24.7 },
 					}),
-					q(12840,  {  -- In Strict Confidence
+					q(12840,  {	-- In Strict Confidence
 						i(43883),
 						i(43920),
 						i(43919),
@@ -663,109 +661,109 @@ _.Zones =
 						["qg"] = 29799,	-- Thassarian
 						["coord"] = { 59.6, 44.4 },
 					}),
-					q(13144, {	-- Killing Two Scourge With One Skeleton
+					q(13144,  {	-- Killing Two Scourge With One Skeleton
 						i(38739),
 						i(39038),
 						i(39068),
 						i(39104),
 					}),
-					q(12995, {	-- Leave Our Mark
+					q(12995,  {	-- Leave Our Mark
 						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuests"] = { 12951 },	-- Let the Baron Know
 						["coord"] = { 42.8, 25.0 },
 						["isDaily"] = true,
 					}),
-					q(12951, {	-- Let the Baron Know
+					q(12951,  {	-- Let the Baron Know
 						["qg"] = 30056,	-- Vaelen the Flayed
 						["sourceQuests"] = { 12949 },	-- Get the Key
 						["coord"] = { 41.0, 23.8 },
 					}),
-					q(13083,  {  -- Light Within the Darkness
+					q(13083,  {	-- Light Within the Darkness
 						i(44018),	-- Bridenbrad's Sash
 						i(44041),	-- Belt of the Never-Forgotten
 						i(44042),	-- Chained Belt of Remembrance
 						i(44043),	-- Girdle of Eternal Memory
 						i(44039),	-- Signet of Bridenbrad
 					}),
-					q(13308,  {  -- Mind Tricks
+					q(13308,  {	-- Mind Tricks
 						i(44021),
 						i(44024),
 						i(44030),
 						i(44031),
 					}),
-					qa(13346,  {  -- No Rest For The Wicked
+					qa(13346, {	-- No Rest For The Wicked
 						i(44394),
 						i(44393),
 						i(44395),
 					}),
-					qh(13367,  {  -- No Rest For The Wicked
+					qh(13367, {	-- No Rest For The Wicked
 						i(44393),
 						i(44394),
 						i(44395),
 					}),
-					qa(13342,  {  -- Not a Bug
+					qa(13342, {	-- Not a Bug
 						i(39372),
 						i(39414),
 						i(39443),
 						i(39462),
 						i(39471),
 					}),
-					qh(13358,  {  -- Not a Bug
+					qh(13358, {	-- Not a Bug
 						i(39372),
 						i(39414),
 						i(39443),
 						i(39462),
 						i(39471),
 					}),
-					q(13137,  {  -- Not-So-Honorable Combat
+					q(13137,  {	-- Not-So-Honorable Combat
 						i(44016),
 						i(44036),
 						i(44037),
 						i(44038),
 					}),
-					qa(13287,  {  -- Poke and Prod
+					qa(13287, {	-- Poke and Prod
 						i(43903),	-- Ring of the Fallen Shadow Adept
 						i(43889),	-- Hulking Abomination Hide Cloak
 						i(43884),	-- Amulet of the Malefic Necromancer
 					}),
-					qh(13237,  {  -- Poke and Prod
+					qh(13237, {	-- Poke and Prod
 						i(43903),	-- Ring of the Fallen Shadow Adept
 						i(43889),	-- Hulking Abomination Hide Cloak
 						i(43884),	-- Amulet of the Malefic Necromancer
 					}),
-					qa(13321,  {  -- Retest Now
+					qa(13321, {	-- Retest Now
 						i(39134),
 						i(39144),
 						i(39143),
 						i(39121),
 					}),
-					qh(13356,  {  -- Retest Now
+					qh(13356, {	-- Retest Now
 						i(39134),
 						i(39144),
 						i(39143),
 						i(39121),
 					}),
-					q(13059,  {  -- Revenge for the Vargul
+					q(13059,  {	-- Revenge for the Vargul
 						i(43862),
 						i(43908),
 						i(43978),
 						i(43943),
 						i(43924),
 					}),
-					qa(13387,  {  -- Securing the Perimeter
+					qa(13387, {	-- Securing the Perimeter
 						i(38737),
 						i(39036),
 						i(39070),
 						i(39102),
 					}),
-					q(13172,  {  -- Seeds of Chaos
+					q(13172,  {	-- Seeds of Chaos
 						i(43872),
 						i(43905),
 						i(43976),
 						i(43941),
 						i(43923),
 					}),
-					q(12943, {	-- Shadow Vault Decree
+					q(12943,  {	-- Shadow Vault Decree
 						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuests"] = { 12939 },	-- Honor Challenge
 						["coord"] = { 44.6, 20.4 },
@@ -776,136 +774,119 @@ _.Zones =
 							i(43857),	-- Duke Lankral's Velvet Slippers
 						},
 					}),
-					qa(13397,  {  -- Sindragosa's Fall
+					qa(13397, {	-- Sindragosa's Fall
 						i(39115),
 						i(39135),
 						i(39136),
 						i(39130),
 						i(39133),
 					}),
-					qa(13288,  {  -- That's Abominable!
+					qa(13288, {	-- That's Abominable!
 						i(39814),
 						i(39881),
 						i(39887),
 						i(39888),
 					}),
-					qh(13264,  {  -- That's Abominable!
+					qh(13264, {	-- That's Abominable!
 						i(39814),
 						i(39881),
 						i(39887),
 						i(39888),
 					}),
-					{	-- The Admiral Revealed
-						["questID"] = 12852,	-- The Admiral Revealed
+					q(12852,  {	-- The Admiral Revealed
 						["qg"] = 29560,	-- Lord-Commander Arete
 						["groups"] = {
-							{	-- Amulet of the Crusade
-								["itemID"] = 44034,	--Amulet of the Crusade
-							},
-							{	-- Emeline's Locket
-								["itemID"] = 44017,	-- Emeline's Locket
-							},
-							{	-- Reinforced Titanium Neckguard
-								["itemID"] = 44035,	-- Reinforced Titanium Neckguard
-							},
-							{	-- The Severed Noose of Westwind
-								["itemID"] = 44033,	-- The Severed Noose of Westwind
-							},
+							i(44034),	--Amulet of the Crusade
+							i(44017),	-- Emeline's Locket
+							i(44035),	-- Reinforced Titanium Neckguard
+							i(44033),	-- The Severed Noose of Westwind
 						},
-					},
-					q(13125,  {  -- The Air Stands Still
+					}),
+					q(13125,  {	-- The Air Stands Still
 						i(43839),
 						i(43840),
 						i(43830),
 						i(43842),
 					}),
-					q(13091,  {  -- The Art of Being a Water Terror
+					q(13091,  {	-- The Art of Being a Water Terror
 						i(43863),
 						i(43907),
 						i(43977),
 						i(43942),
 					}),
-					q(12999,  {  -- The Bone Witch
+					q(12999,  {	-- The Bone Witch
 						["qg"] = 30074,	-- The Leaper
 						["sourceQuests"] = { 12955 },	-- Eliminate the Competition
 						["coord"] = { 43.4, 25.0 },
 					}),
-					q(13157,  {  -- The Crusaders' Pinnacle
+					q(13157,  {	-- The Crusaders' Pinnacle
 						i(44019),
 						i(44044),
 						i(44045),
 						i(44046),
 						i(44040),
 					}),
-					q(12938, {	-- The Duke
+					q(12938,  {	-- The Duke
 						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuests"] = { 12898, 12899 },	-- The Shadow Vault [Alliance] // [Horde]
 						["coord"] = { 44.1, 24.7 },
 					}),
-					q(13164,  {  -- The Fate of Bloodbane
+					q(13164,  {	-- The Fate of Bloodbane
 						i(44027),
 						i(44025),
 						i(44020),
 						i(44026),
 					}),
-					q(13235,  {  -- The Flesh Giant Champion
+					q(13235,  {	-- The Flesh Giant Champion
 						i(44378),
 						i(44379),
 						i(44380),
 						i(44381),
 					}),
-					qa(13400,  {  -- The Hunter and the Prince
+					qa(13400, {	-- The Hunter and the Prince
 						i(38741),
 						i(39040),
 						i(39066),
 						i(39108),
 					}),
-					qh(13361,  {  -- The Hunter and the Prince
+					qh(13361, {	-- The Hunter and the Prince
 						i(38741),
 						i(39040),
 						i(39066),
 						i(39108),
 					}),
-					{
-						["questID"] = 13073,	-- The Keeper's Favor
-						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
+					q(13073,  {	-- The Keeper's Favor
 						["sourceQuest"] = 13072,	-- Source Quest: A Hero Remains
 						["lvl"] = 67,
-					},
-					{	-- The Last Line Of Defense
-						["questID"] = 13086,	-- The Last Line Of Defense
+						["qg"] = 31044,	-- Quest Giver: Highlord Tirion Fordring
+					}),
+					q(13086,  {	-- The Last Line Of Defense
 						["qg"] = 30657,	-- Siegemaster Fezzik
 						["groups"] = {
-							{	-- Cannoneer's Fuselighter
-								["itemID"] = 44013,	-- Cannoneer's Fuselighter
-							},
-							{	-- Cannoneer's Morale
-								["itemID"] = 44015,	-- Cannoneer's Morale
-							},
-							{	-- Fezzik's Pocketwatch
-								["itemID"] = 44014,	-- Fezzik's Pocketwatch
-							},
+							i(44013),	-- Cannoneer's Fuselighter
+							i(44015),	-- Cannoneer's Morale
+							i(44014),	-- Fezzik's Pocketwatch
 						},
-					},
-					q(13110,  {  -- The Restless Dead
+					}),
+					q(13110,  {	-- The Restless Dead
 						i(43833),
 						i(43832),
 						i(43835),
 						i(43834),
 					}),
-					q(13163,  {  -- The Rider of Blood
+					q(13163,  {	-- The Rider of Blood
 						i(43877),	-- Blood-Forged Circle
 						i(43896),	-- Grotesque Butcher's Pants
 						i(43937),	-- Blood-Stalker's Cover
 						i(43939),	-- Breastplate of Splattered Blood
 					}),
-					q(13162,  {  -- The Rider of Frost
+					q(13162,  {	-- The Rider of Frost
 						i(43899),
 						i(43897),
 						i(43898),
 						i(43875),
 					}),
-					q(13161,  {  -- The Rider of the Unholy
+					q(13161,  {	-- The Rider of the Unholy
 						i(43904),
 						i(43948),
 						i(43940),
@@ -931,32 +912,32 @@ _.Zones =
 							i(43836),	-- Thorny Rose Brooch
 						},
 					}),
-					q(12840,  {  -- In Strict Confidence
+					q(12840,  {	-- In Strict Confidence
 						i(43883),
 						i(43920),
 						i(43919),
 						i(43890),
 						i(43921),
 					}),
-					q(13130,  {  -- The Stone That Started A Revolution
+					q(13130,  {	-- The Stone That Started A Revolution
 						i(43855),
 						i(43914),
 						i(43982),
 						i(43947),
 					}),
-					q(13043,  {  -- The Sum is Greater than the Parts
+					q(13043,  {	-- The Sum is Greater than the Parts
 						i(43861),
 						i(43909),
 						i(43979),
 						i(43944),
 					}),
-					q(13145,  {  -- The Vile Hold
+					q(13145,  {	-- The Vile Hold
 						i(43866),
 						i(43906),
 						i(43934),
 						i(43845),
 					}),
-					qa(13391,  {  -- Time to Hide
+					qa(13391, {	-- Time to Hide
 						i(43885),
 						i(43918),
 						i(43915),
@@ -964,7 +945,7 @@ _.Zones =
 						i(43888),
 						i(43917),
 					}),
-					qh(13275,  {  -- Time to Hide
+					qh(13275, {	-- Time to Hide
 						i(43885),
 						i(43918),
 						i(43915),
@@ -972,42 +953,42 @@ _.Zones =
 						i(43888),
 						i(43917),
 					}),
-					qa(13403,  {  -- Tirion's Gambit
+					qa(13403, {	-- Tirion's Gambit
 						i(44745),
 						i(44746),
 						i(44747),
 						i(44748),
 					}),
-					qh(13364,  {  -- Tirion's Gambit
+					qh(13364, {	-- Tirion's Gambit
 						i(44745),
 						i(44747),
 						i(44746),
 						i(44748),
 					}),
-					q(13085, {	-- Vaelen Has Returned
+					q(13085,  {	-- Vaelen Has Returned
 						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuests"] = { 12951 },	-- Let the Baron Know
 						["coord"] = { 42.8, 25.0 },
 					}),
-					q(13084, {	-- Vandalizing Jotunheim
+					q(13084,  {	-- Vandalizing Jotunheim
 						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuests"] = { 12951 },	-- Let the Baron Know
 						["coord"] = { 44.6, 20.4 },
 					}),
-					qh(13239,  {  -- Volatility
+					qh(13239, {	-- Volatility
 						i(38736),
 						i(39035),
 						i(39065),
 						i(39100),
 					}),
-					q(12814,  {  -- You'll Need a Gryphon
+					q(12814,  {	-- You'll Need a Gryphon
 						i(43879),
 						i(43894),
 						i(43933),
 						i(43846),
 					}),
 				}),
-				n(-16, { 	-- Rares
+				n(-16, {	-- Rares
 					{
 						["npcID"] = 32501,		-- High Thane Jorfus [NPC]
 						["coords"] = {
@@ -1062,7 +1043,7 @@ _.Zones =
 						},
 					},
 				}),
-				n(0, {		-- Zone Drops
+				n(0,   {	-- Zone Drops
 					n(32290, {	-- Cult Alchemist <Cult of the Damned>
 						{
 							["itemID"] = 37330,		-- Formula: Enchant Cloak - Superior Nature Resistance

@@ -808,7 +808,10 @@ _.Zones =
 						-- qh(12468),	-- The Conqueror's Task ["Sourecequest"] = { 39206 }	-- Warchief's Command: Grizzly Hills!
 						-- qh(12487),	-- To Conquest Hold, But Be Careful!
 						-- qh(12763),	-- Shifting Priorities
-						-- qh(12791),	-- The Magical Kingdom of Dalaran
+						qh(12791, {	-- The Magical Kingdom of Dalaran
+							["isBreadcrumb"] = true,
+							["qg"] = 29160,	-- Magistrix Phaelista
+						}),
 						-- qh(39206),	-- Warchief's Command: Grizzly Hills
 						qh(12176,  {  -- A Minor Substitution
 							i(38735),
