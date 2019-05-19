@@ -22,6 +22,13 @@ _.Zones =
 						},
 					},
 				},
+				{	-- A Safer Place
+					["questID"] = 55530,
+					["qg"] = 152084,	-- Mrrl
+					["coord"] = { 48.1, 45.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- A Way Home
 					["questID"] = 55053,
 					["qg"] = 151851,	-- Chief Telemancer Oculeth
@@ -131,10 +138,18 @@ _.Zones =
 				},
 				{	-- Enchanted Lock
 					["objectID"] = 327592,
-					["questID"] = 56245,
 					["coord"] = { 78.8, 41.1, 1355 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56244,	-- Diaries of the Dead
+					["g"] = {
+						{	-- Enchanted Lock
+							["questID"] = 56245, -- also completed 56243, 56246
+							["sourceQuest"] = 56244,	-- Diaries of the Dead
+						},
+						{	-- Treasure Tale
+							["questID"] = 56248,
+							["sourceQuest"] = 56245,	-- Enchanted Lock
+						},
+					},
 				},
 				{	-- Essential Empowerment (possibly breadcrumb? follow-up quest was available without turning this in)
 					["questID"] = 55851,
@@ -186,6 +201,19 @@ _.Zones =
 					["coord"] = { 66.4, 47.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- No Backs
+					["questID"] = 55529,
+					["qg"] = 152084,	-- Mrrl
+					["coord"] = { 46.9, 61.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55530,	-- A Safer Place
+					["g"] = {
+						{	-- Tour of the Depths (Find and Assist Mrrl)
+							["achievementID"] = 13635,
+							["criteriaID"] = 7,
+						},
+					},
 				},
 				{	-- Preserved Clues
 					["questID"] = 56242,
@@ -260,6 +288,12 @@ _.Zones =
 					["coord"] = { 49.0, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save A Friend
+					["g"] = {
+						{	-- Tour of the Depths (Learn about the Scrying Stones of Nazjatar)
+							["achievementID"] = 13635,
+							["criteriaID"] = 3,
+						},
+					},
 				},
 				{	-- Settling In
 					["questID"] = 55384,
