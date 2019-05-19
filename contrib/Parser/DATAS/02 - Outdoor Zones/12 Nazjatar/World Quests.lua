@@ -11,8 +11,16 @@ _.Zones =
 						["questID"] = 55891,
 						["isWQ"] = 120,
 					},
+					{	-- Jumping Jellies
+						["questID"] = 56121,
+						["isWQ"] = 120,
+					},
 					{	-- Hungry Hungry Hydras
 						["questID"] = 55997,
+						["isWQ"] = 120,
+					},
+					{	-- Leylocked Chest
+						["questID"] = 169482,
 						["isWQ"] = 120,
 					},
 					{	-- Runelocked Chest
@@ -47,6 +55,18 @@ _.Zones =
 								["criteriaID"] = 12,
 							},
 						},
+					},
+					{	-- The Drowned Oracles
+						["questID"] = 56048,
+						["isWQ"] = 120,
+					},
+					{	-- The Soulbinder
+						["questID"] = 56057,
+						["isWQ"] = 120,
+					},
+					{	-- The Zanj'ir Brutalizer
+						["questID"] = 55886,
+						["isWQ"] = 120,
 					},
 				}),
 			}),

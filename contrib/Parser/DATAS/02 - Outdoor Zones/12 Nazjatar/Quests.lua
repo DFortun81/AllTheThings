@@ -271,16 +271,128 @@ _.Zones =
 					["coord"] = { 51.0, 65.5, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						{	-- Bounty: A Few Coral Ancients
+							["questID"] = 55821,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Crabs
+							["questID"] = 55823,
+							["isDaily"] = true,
+						},
 						{	-- Bounty: A Few Fathom Rays
 							["questID"] = 55825,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Hydra
+							["questID"] = 55820,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Naga
+							["questID"] = 55818,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Snapdragons
+							["questID"] = 55824,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: Dangerous Creatures
 							["questID"] = 55837,
 							["isDaily"] = true,
 						},
+						{	-- Bounty: Elite Naga Forces
+							["questID"] = 55836,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Coral Ancients
+							["questID"] = 55830,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Crabs
+							["questID"] = 55832,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Hydra
+							["questID"] = 55829,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Makrura
+							["questID"] = 55831,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Murlocs
+							["questID"] = 55828,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Naga
+							["questID"] = 55827,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: More Snapdragons
+							["questID"] = 55833,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Carp
+							["questID"] = 55723,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Cone Shells
+							["questID"] = 55726,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Deepcoral Buds
+							["questID"] = 55724,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Flotsam
+							["questID"] = 55727,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Kelp Buds
+							["questID"] = 55721,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Seaweed
+							["questID"] = 55720,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Spiral Leaf
+							["questID"] = 55725,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: A Few Starfish
+							["questID"] = 55719,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Carp
+							["questID"] = 55789,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Cone Shells
+							["questID"] = 55792,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Deepcoral Buds
+							["questID"] = 55790,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Kelp Buds
+							["questID"] = 55787,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Spiral Leaf
+							["questID"] = 55791,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: More Starfish
+							["questID"] = 55785,
+							["isDaily"] = true,
+						},
 						{	-- Requisition: More Seaweek
 							["questID"] = 55786,
+							["isDaily"] = true,
+						},
+						{	-- Requisition: We Need It All
+							["questID"] = 55801,
 							["isDaily"] = true,
 						},
 					},
