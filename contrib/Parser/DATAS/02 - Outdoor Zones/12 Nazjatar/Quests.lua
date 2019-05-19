@@ -210,6 +210,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
+				{	-- Mardivas's Tome of the Elements
+					["objectID"] = 322533,
+					["coord"] = { 60.6, 33.2, 1355 },
+					["g"] = {
+						{	-- The Laboratory of Mardivas
+							["questID"] = 55121,
+							["g"] = {
+								currency(1721),	-- Prismatic Manapearl x5
+							},
+						},
+					},
+				},
 				{	-- No Backs
 					["questID"] = 55529,
 					["qg"] = 152084,	-- Mrrl

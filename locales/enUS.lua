@@ -3225,6 +3225,7 @@ AllTheThings.L = {
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
+		[322533] = "Mardivas's Tome of the Elements",
 		[327427] = "Sack of Tasks",
 		[327585] = "Bounty Board",
 		[327591] = "Preserved Journal",
