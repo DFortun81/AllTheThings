@@ -7709,7 +7709,7 @@ local function RowOnEnter(self)
 		GameTooltip:ClearLines();
 		GameTooltipIcon:ClearAllPoints();
 		GameTooltipModel:ClearAllPoints();
-		if self:GetCenter() > (UIParent:GetWidth() / 2) and (AuctionFrame and not AuctionFrame:IsVisible()) then
+		if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 			GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 			GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);

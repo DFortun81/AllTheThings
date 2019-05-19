@@ -80,6 +80,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 19077,
 							["u"] = 7,
 						},
+						{	-- Frostsaber Tunic
+							["recipeID"] = 19104,
+							["u"] = 7,
+						},
 						{	-- Heavy Scorpid Vest
 							["recipeID"] = 19051,
 							["u"] = 7,
@@ -161,6 +165,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 10619,
 							["u"] = 2,	-- specialization removed from game
 						},
+						{	-- Frostsaber Gloves
+							["recipeID"] = 19087,
+							["u"] = 7,
+						},
 						{	-- Gloves of the Greatfather
 							["recipeID"] = 21943,
 							["u"] = 29,
@@ -210,6 +218,10 @@ profession(165, {	-- Leatherworking
 					["name"] = "Pants",
 					["categoryID"] = 257,
 					["g"] = {
+						{	-- Frostsaber Leggings
+							["recipeID"] = 19074,
+							["u"] = 7,
+						},
 						{	-- Heavy Scorpid Leggings
 							["recipeID"] = 19075,
 							["u"] = 7,
