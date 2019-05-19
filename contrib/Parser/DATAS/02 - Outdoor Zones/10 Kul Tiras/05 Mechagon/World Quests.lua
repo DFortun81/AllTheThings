@@ -8,6 +8,12 @@ _.Zones =
 			["g"] = {
 				n(-34,  {	-- World Quests
 					n(-17, {	-- Quests
+						{	-- Security First
+							["questID"] = 56131,
+							["g"] = {
+								i(168832),	-- Galvanic Oscillator
+							},
+						},
 					}),
 				}),
 			},

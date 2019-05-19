@@ -7,6 +7,10 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			["g"] = {
 				n(-228, {	-- Flight Paths
+					{	-- Prospectus Bay
+						["flightPathID"] = 2441,
+						["coord"] = { 73.5, 25.8, 1462 },
+					}
 				}),
 			},
 		}),

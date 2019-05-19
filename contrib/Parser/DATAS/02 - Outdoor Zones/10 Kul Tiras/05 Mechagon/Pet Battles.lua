@@ -15,6 +15,7 @@ _.Zones =
 								{	-- CK-9 Micro-Oppression Unit
 									["criteriaID"] = 5,
 									["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+									["coord"] = { 65.4, 57.6, 1462 },
 								},
 								{	-- Creakclank
 									["criteriaID"] = 4,
@@ -42,6 +43,7 @@ _.Zones =
 								{	-- Unit 6
 									["criteriaID"] = 7,
 									["crs"] = { 154928 },	-- Unit 6
+									["coord"] = { 39.5, 40.2, 1462 },
 								},
 								{	-- Unit 17
 									["criteriaID"] = 8,

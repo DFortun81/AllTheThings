@@ -47,12 +47,55 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Build a Bigger Fish Trap
+						["questID"] = 55055,
+						["qg"] = 151462,	-- Danielle Anglers
+						["coord"] = { 37.0, 47.1, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55339,	-- Tidying Up
+						["g"] = {
+							{	-- Junkyard Architect (Hundred-Fathom Lure)
+								["achievementID"] = 13478,
+								["criteriaID"] = 3,
+							},
+							i(167649),	-- Hundred-Fathom Lure
+						},
+					},
+					{	-- Collaborative Construction (wasn't available initially, but became available the first reset after completing Welcome to the Resistance)
+						["questID"] = 55153,
+						["qg"] = 150555,	-- Waren Gearhart
+						["coord"] = { 73.1, 33.3, 1462 },
+						["races"] = HORDE_ONLY,
+					},
+					{	-- Do Not Drink
+						["questID"] = 56328, -- 56329 also popped. Possibly a daily?
+						["qg"] = 153750,	-- Koupal Oilshins
+						["coord"] = { 59.0, 31.6, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55729,	-- The Resistance Needs You!
+					},
 					{	-- Drill Rig Construction -- TODO:: Verify if this is the only sourceQuest. Possibly 55730 and 55731 too?
 						["questID"] = 55734,
 						["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prince Erazmin)
 						["coord"] = { 55.7, 60.2, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55995,	-- We Can Fix It
+					},
+					{	-- First One's Free
+						["questID"] = 55707,
+						["qg"] = 152747,	-- Christy Punchcog
+						["coord"] = { 69.7, 32.3, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55708,	-- Upgraded
+						["g"] = {
+							i(168752),	-- Omnipurpose Efficient Logic Board
+						},
+					},
+					{	-- Fishing for Something Bigger (possibly only available after Welcome to the Resistance?)
+						["questID"] = 55298,
+						["qg"] = 151462,	-- Danielle Anglers
+						["coord"] = { 37.0, 47.1, 1462 },
+						["races"] = HORDE_ONLY,
 					},
 					{	-- Junkyard Tinkering and You
 						["questID"] = 55101,
@@ -66,6 +109,13 @@ _.Zones =
 								["criteriaID"] = 1,
 							},
 						},
+					},
+					{	-- Let's Fish!
+						["questID"] = 56305,
+						["qg"] = 151462,	-- Danielle Anglers
+						["coord"] = { 37.0, 47.1, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55055,	-- Build A Bigger Fish Trap
 					},
 					{	-- My Father's Armies
 						["questID"] = 55731,
@@ -126,6 +176,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55685,	-- We Come in Peace... and Profit
 					},
+					{	-- Tidying Up
+						["questID"] = 55339,
+						["qg"] = 151462,	-- Danielle Anglers
+						["coord"] = { 37.0, 47.1, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55298,	-- Fishing For Something Bigger
+					},
 					{	-- Upgraded
 						["questID"] = 55708,
 						["qg"] = 152747,	-- Christy Punchcog
@@ -135,6 +192,14 @@ _.Zones =
 						["g"] = {
 							i(167555),	-- Pocket-Sized Computation Device
 						},
+					},
+					{	-- Unsafe Work Conditions
+						["questID"] = 56083,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.7, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["sourceQuest"] = 55736,	-- Welcome to the Resistance
 					},
 					{	-- We Can Fix It
 						["questID"] = 55995,
