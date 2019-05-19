@@ -452,6 +452,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(151942),	-- Cord of Surging Hysteria
 								i(152015),	-- Greaves of Mercurial Alliegance
 								i(151997),	-- Nathrezim Shade-Walkers
+								i(151966),	-- Riveted Choker of Delirium
 							},
 						}),
 						e(1986, {	-- The Coven of Shivarra
@@ -898,6 +899,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151942),	-- Cord of Surging Hysteria
 						i(152015),	-- Greaves of Mercurial Alliegance
 						i(151997),	-- Nathrezim Shade-Walkers
+						i(151966),	-- Riveted Choker of Delirium
 					},
 				}),
 				e(1986, {	-- The Coven of Shivarra
@@ -1344,6 +1346,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151942),	-- Cord of Surging Hysteria
 						i(152015),	-- Greaves of Mercurial Alliegance
 						i(151997),	-- Nathrezim Shade-Walkers
+						i(151966),	-- Riveted Choker of Delirium
 					},
 				}),
 				e(1986, {	-- The Coven of Shivarra
