@@ -103,6 +103,10 @@ _.Zones =
 						i(169376),	-- Skittering Eel
 					},
 				}),
+				n(153305, {	-- Zanj'ir Brutalizer (tied to world quest uptime)
+					["questID"] = 55886,
+					["coord"] = { 63.9, 57.0, 1355 },
+				}),
 			}),
 		},
 	}),
