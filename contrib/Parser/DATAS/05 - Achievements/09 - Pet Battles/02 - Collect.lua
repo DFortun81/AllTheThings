@@ -446,6 +446,33 @@ _.Achievements =
 						ach(15),		-- Plenty of Pets (15)
 						ach(1017),		-- Can I Keep Him? (1)
 					}),
+					ach(13693, {	-- Mecha-Safari
+						crit(1),	-- Junkheap Roach
+						crit(2),	-- Fleeting Frog
+						crit(3),	-- Mechagon Marmot
+						crit(4),	-- Motorized Croaker
+						crit(5),	-- Scrapyard Tunneler
+						crit(6),	-- Duskytooth Snooter
+						crit(7),	-- Rustbolt Clucker
+						crit(8),	-- Rustyroot Snooter
+						crit(9),	-- Yellow Junkhopper
+						crit(10),	-- Experimental Roach
+						crit(11),	-- Specimen 97
+						crit(12),	-- Malfunctioning Microbot
+					}),
+					ach(13694, {	-- Nazjatari Safari
+						crit(1),	-- Spireshell Snail
+						crit(2),	-- Muck Slug
+						crit(3),	-- Sandclaw Sunshell
+						crit(4),	-- Abyssal Slitherling
+						crit(5),	-- Chitterspine Skitterling
+						crit(6),	-- Deeptide Fingerling
+						crit(7),	-- Sandclaw Pincher
+						crit(8),	-- Glimmershell Scuttler
+						crit(9),	-- Hissing Chitterspine
+						crit(10),	-- Great Sea Albatross
+						crit(11),	-- Bloodseeker
+					}),
 					ach(6588, {		-- Northrend Safari*
 						crit(1),		-- Arctic Fox Kit (The Storm Peaks)
 						crit(2),		-- Arctic Hare (Dragonblight, The Storm Peaks, Borean Tundra, Zul'Drak)

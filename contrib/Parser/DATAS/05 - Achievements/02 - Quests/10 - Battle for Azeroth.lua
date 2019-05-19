@@ -223,6 +223,42 @@ _.Achievements =
 						crit(4),		-- A Bad Deal
 						crit(5),		-- The Long Con
 					})),
+					a(ach(13553, {	-- The Mechagonian Threat (A)
+						crit(1),	-- The Legend of Mechagon
+						crit(2),	-- Looking Inside
+						crit(3),	-- Let's Get It Started
+						crit(4),	-- You Must be This Height
+						crit(5),	-- Report to Gila
+						crit(6),	-- A Small Team
+						crit(7),	-- The Start of Something Bigger
+						crit(8),	-- Princely Visit
+						crit(9),	-- The Resistance Needs YOU!
+						crit(10),	-- Rescuing the Resistance
+						crit(12),	-- My Father's Armies
+						crit(13),	-- We Can Fix It
+						crit(14),	-- Drill Rig Construction
+						crit(15),	-- Send My Father a Message
+						crit(16),	-- Welcome to the Resistance
+						crit(17),	-- Operation: Mechagon - The Mechoriginator
+					})),
+					h(ach(13700, {	-- The Mechagonian Threat (H)
+						crit(1),	-- The Legend of Mechagon
+						crit(2),	-- A Quick Ear Hustle
+						crit(3),	-- This is Our Vault Now
+						crit(4),	-- Let's Get It Started
+						crit(5),	-- You Must be This Height
+						crit(6),	-- Machinations for Mechagon
+						crit(7),	-- Only the Best Will Do
+						crit(8),	-- To Mechagon!
+						crit(9),	-- Prospectus Bay
+						crit(10),	-- We Come in Peace... and Profit
+						crit(12),	-- The Resistance Needs YOU!
+						crit(13),	-- My Father's Armies
+						crit(14),	-- We Can Fix It
+						crit(15),	-- Drill Rig Construction
+						crit(16),	-- Send My Father a Message
+						crit(17),	-- Welcome to the Resistance
+					})),
 					a(ach(12997)),	-- The Pride of Kul Tiras
 					a(ach(12087)),	-- The Reining Champion
 					h(ach(13263)),	-- The Shadow Hunter
@@ -260,7 +296,12 @@ _.Achievements =
 						crit(2),		-- Tides of Vengeance (A)
 						crit(3),		-- Zandalar Forever!
 						crit(4),		-- Tides of Vengeance (H)
-					}),		
+					}),
+					ach(13709, {	-- Unfathomable
+						crit(1),	-- Welcome to Nazjatar
+						crit(2),	-- Secrets in the Sea
+						crit(3),	-- Turning the Tide
+					}),
 					a(ach(13285, {	-- Upright Citizens
 						i(166247),		-- Citizens Brigade Whistle (toy)
 						crit(1),		-- Russel the Bard recruited

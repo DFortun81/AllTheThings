@@ -143,6 +143,38 @@ _.Achievements =
 					ach(13410),		-- Snow Fun Allowed
 					ach(13325),		-- Walk the Dinosaur
 					ach(13425),		-- We Got Spirit, How About You?
+					ach(13718, {	-- The Grand Reception
+						crit(1),	-- Abyssal Commander Sivara
+						crit(2),	-- Blackwater Behemoth
+						crit(3),	-- Radiance of Azshara
+					}),
+					ach(13719, {	-- Depths of the Devoted
+						crit(1),	-- Lady Ashvane
+						crit(2),	-- Orgozoa
+						crit(3),	-- The Queen's Court
+					}),
+					ach(13725, {	-- The Circle of Stars
+						crit(1),	-- Za'Qul
+						crit(2),	-- Queen Azshara
+					}),
+					ach(13726),		-- Mythic: Abyssal Commander Sivara
+					ach(13727),		-- Mythic: Radiance of Azshara
+					ach(13728),		-- Mythic: Blackwater Behemoth
+					ach(13729),		-- Mythic: Lady Ashvane
+					ach(13730),		-- Mythic: Orgozoa
+					ach(13731),		-- Mythic: The Queen's Court
+					ach(13732),		-- Mythic: Za'qul
+					ach(13733, {	-- Mythic: Queen Azshara
+						title(404),	-- the Eternal
+					}),
+					ach(13684),		-- You and What Army?
+					ach(13628),		-- Intro to Marine Biology
+					ach(13767),		-- Fun Run
+					ach(13629),		-- Simple Geometry
+					ach(13724),		-- A Smack of Jellyfish
+					ach(13633),		-- If It Please the Court
+					ach(13716),		-- Lactose Intolerant
+					ach(13768),		-- The Best of Us
 				},
 			}),
 		},

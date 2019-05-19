@@ -117,6 +117,15 @@ _.Achievements =
 					ach(2078),			-- Traveler's Tundra Mammoth (Dalaran - NR)
 					ach(5749),			-- Vial of the Sands (Alchemy / Archeaology)
 					ach(2077),			-- Wooly Mammoth (Dalaran - NR)
+					ach(13513, {		-- Available in Eight Colors (unlocks paint: Battletorn Blue)
+						crit(1),	-- Big-ol Bronze
+						crit(2),	-- Fel Mint Green
+						crit(3),	-- Mechagon Gold
+						crit(4),	-- Copper Trim
+						crit(5),	-- Lemonade Steel
+						crit(6),	-- Fireball Red
+						crit(7),	-- Overload Orange
+					}),
 				},
 			}),
 		},

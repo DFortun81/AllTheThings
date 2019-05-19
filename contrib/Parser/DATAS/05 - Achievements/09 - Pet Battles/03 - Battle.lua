@@ -722,6 +722,16 @@ _.Achievements =
 						crit(17),		-- Minixis (Antoran Wastes)
 						crit(18),		-- One-of-Many (Antoran Wastes)
 					}),
+					ach(13625, {	-- Mighty Minions of Mechagon
+						crit(1),	-- Gnomefeaster
+						crit(2),	-- Sputtertube
+						crit(3),	-- Goldenbot XD
+						crit(4),	-- Creakclank
+						crit(5),	-- CK-9 Micro-Oppression Unit
+						crit(6),	-- Unit 35
+						crit(7),	-- Unit 6
+						crit(8),	-- Unit 17
+					}),
 					ach(9688, {		-- Mousing Around
 						crit(1),		-- Nightwatcher Merayl (Azsuna)
 						crit(2),		-- Bodhi Sunwayver (Dalaran)
@@ -755,6 +765,20 @@ _.Achievements =
 						crit(13),		-- Varenne (Suramar)
 						crit(14),		-- Durian Strongfruit (Val'sharah)
 						crit(15),		-- Xorvasc (Val'sharah)
+					}),
+					ach(13626, {	-- Nautical Nuisances of Nazjatar
+						crit(1),	-- Prince Wiggletail
+						crit(2),	-- Chomp
+						crit(3),	-- Silence
+						crit(4),	-- Shadowspike Lurker
+						crit(5),	-- Pearlhusk Crawler
+						crit(6),	-- Elderspawn of Nalaada
+						crit(7),	-- Ravenous Scalespawn
+						crit(8),	-- Mindshackle
+						crit(9),	-- Kelpstone
+						crit(10),	-- Voltgorger
+						crit(11),	-- Frenzied Knifefang
+						crit(12),	-- Giant Opaline Conch
 					}),
 					ach(6620),		-- No Time To Heal
 					ach(13278, {	-- Not Quite Dead Yet

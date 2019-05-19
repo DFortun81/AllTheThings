@@ -821,6 +821,7 @@ AllTheThings.L = {
 		[-10058] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10059] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-10060] = "Interface\\Icons\\achievement_faction_celestials",						-- The Four Celestials
+		[-10070] = "Interface\\Icons\\Paladin_Protection",						-- 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1783,6 +1784,7 @@ AllTheThings.L = {
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Scenario's",
+		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
