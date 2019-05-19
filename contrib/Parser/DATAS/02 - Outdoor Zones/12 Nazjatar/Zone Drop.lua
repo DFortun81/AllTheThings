@@ -6,7 +6,8 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		["g"] = {
 			n(0, {	-- Zone Drop
-				i(169435),	-- Deeptide Drape of the Peerless
+				i(169400),	-- Deeptide Cover
+				i(169435),	-- Deeptide Drape
 			}),
 		},
 	}),

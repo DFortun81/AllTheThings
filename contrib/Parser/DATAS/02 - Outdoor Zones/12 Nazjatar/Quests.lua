@@ -235,6 +235,13 @@ _.Zones =
 						},
 					},
 				},
+				{	-- On Ghostly Wings
+					["questID"] = 56422,
+					["qg"] = 154601,	-- Kelya Moonfall
+					["coord"] = { 80.2, 31.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 154514,	-- Saving Corin
+				},
 				{	-- Preserved Clues
 					["questID"] = 56242,
 					["qg"] = 153514,	-- Finder Palta
@@ -284,6 +291,13 @@ _.Zones =
 					["coord"] = { 38.8, 42.4, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 152108,	-- Scouting the Pens
+				},
+				{	-- Saving Corin
+					["questID"] = 56321,
+					["qg"] = 154514,	-- Kelya Moonfall
+					["coord"] = { 80.0, 31.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56304,	-- The High Life
 				},
 				{	-- Scouting the Palace
 					["questID"] = 55481,
@@ -376,6 +390,13 @@ _.Zones =
 					["coord"] = { 36.3, 82.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54018,	-- Descent
+				},
+				{	-- The High Life -- TODO:: verify sourceQuest
+					["questID"] = 56304,
+					["qg"] = 154574,	-- Kelya Moonfall
+					["coord"] = { 74.1, 24.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- The Needs of the People
 					["questID"] = 56179,

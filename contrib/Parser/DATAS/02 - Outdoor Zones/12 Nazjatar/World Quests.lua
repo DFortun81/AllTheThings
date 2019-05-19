@@ -7,6 +7,10 @@ _.Zones =
 		["g"] = {
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
+					{	-- Champion Aldrantiss, Defender of Her Kingdom
+						["questID"] = 55891,
+						["isWQ"] = 120,
+					},
 					{	-- Hungry Hungry Hydras
 						["questID"] = 55997,
 						["isWQ"] = 120,
@@ -19,6 +23,17 @@ _.Zones =
 							{	-- Puzzle Performer (Medium Runelocked Chest: Green)
 								["achievementID"] = 13764,
 								["criteriaID"] = 21,
+							},
+						},
+					},
+					{	-- Runelocked Chest
+						["questID"] = 56019,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Hard Runelocked Chest: Orange)
+								["achievementID"] = 13764,
+								["criteriaID"] = 7,
 							},
 						},
 					},

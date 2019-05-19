@@ -7,24 +7,31 @@ _.Zones =
 		["g"] = {
 			n(-228, {	-- Flight Paths
 				["g"] = {
-					--[[ placeholders. These coords are correct, but need to extract flightPathIDs
-					{	-- Ashen Strand, Nazjatar
-						["flightPathID"] = ,
+					{	-- Ashen Strand
+						["flightPathID"] = 2411,
 						["coord"] = { 34.5, 37.3, 1355 },
 					},
-					{	-- Elun'alor Temple
-						["flightPathID"] = ,
+					{	-- Zin'Azshari
+						["flightPathID"] = 2405,
 						["coord"] = { 79.5, 37.9, 1355 },
 					},
-					{	-- Nar'anan
-						["flightPathID"] = ,
+					{	-- Ekka's Hideaway
+						["flightPathID"] = 2437,
 						["coord"] = { 64.0, 51.8, 1355 },
 					},
-					{	-- Newhome, Nazjatar
-						["flightPathID"] = ,
+					{	-- Newhome
+						["flightPathID"] = 2404,
 						["coord"] = { 47.5, 63.3, 1355 },
 					},
-					]]--
+					{	-- Wreck of the Hungry Riverbeast
+						["flightPathID"] = 2412,
+						["coord"] = { 36.1, 82.3, 1355 },
+					},
+					{	-- Kelya's Grave
+						["flightPathID"] = 2403,
+						["coord"] = { 74.2, 24.9, 1355 },
+						["description"] = "Must complete the On Ghostly Wings quest to unlock this path.",
+					},
 				},
 			}),
 		},
