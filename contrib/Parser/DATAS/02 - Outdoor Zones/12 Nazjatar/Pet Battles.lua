@@ -30,6 +30,10 @@ _.Zones =
 								["crs"] = { 154921 },	-- Giant Opaline Conch
 								["coord"] = { 28.1, 26.7, 1355 },
 							},
+							{	-- Hissing Chitterspine
+								["speciesID"] = 2649,	-- Hissing Chitterspine
+								["crs"] = { 154708 },	-- Hissing Chitterspine
+							},
 							{	-- Kelpstone
 								["criteriaID"] = 9,
 								["crs"] = { 154918 },	-- Kelpstone
@@ -48,6 +52,7 @@ _.Zones =
 							{	-- Prince Wiggletail
 								["criteriaID"] = 1,
 								["crs"] = { 154910 },	-- Prince Wiggletail
+								["coord"] = { 34.7, 27.4, 1355 },
 							},
 							{	-- Ravenous Scalespawn
 								["criteriaID"] = 7,
@@ -56,6 +61,7 @@ _.Zones =
 							{	-- Shadowspike Lurker
 								["criteriaID"] = 4,
 								["crs"] = { 154913 },	-- Shadowspike Lurker
+								["coord"] = { 42.2, 14.0, 1355 },
 							},
 							{	-- Silence
 								["criteriaID"] = 3,
