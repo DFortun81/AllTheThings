@@ -8,6 +8,45 @@ _.Zones =
 			["groups"] = {
 				n(-17,  {	-- Quests
 					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
+					-- most of the zone unlocks once you get the Welcome to the Resistance achievement for your faction.
+					{	-- Blueprint: Beastbot Powerpack
+						["itemID"] = 168219,
+						["questID"] = 55066,
+						["coord"] = { 60.9, 41.5, 1462 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Junkyard Architect (Beastbot Powerpack)
+								["achievementID"] = 13479,
+								["criteriaID"] = 14,
+							},
+						},
+					},
+					{	-- Blueprint: Experimental Adventurer Augment
+						["itemID"] = 168908,
+						["questID"] = 56087,
+						["crs"] = {
+							151934,	-- Arachnoid Harvester
+						},
+						["g"] = {
+							{	-- Junkyard Architect (Experimental Adventurer Augment)
+								["achievementID"] = 13479,
+								["criteriaID"] = 22,
+							},
+						},
+					},
+					{	-- Blueprint: Mechanocat Laser Pointer
+						["itemID"] = 167787,
+						["questID"] = 55056,
+						["coord"] = { 63.3, 42.9, 1462 },
+						["races"] = HORDE_ONLY,
+						["description"] = "Purchase the Blueprint from Cork Stuttguard",
+						["g"] = {
+							{	-- Junkyard Architect (Mechanocat Laser Pointer)
+								["achievementID"] = 13479,
+								["criteriaID"] = 4,
+							},
+						},
+					},
 					{	-- Drill Rig Construction -- TODO:: Verify if this is the only sourceQuest. Possibly 55730 and 55731 too?
 						["questID"] = 55734,
 						["qg"] = 153670,	-- Rustbolt Resistance Fighter (Prince Erazmin)
@@ -21,6 +60,12 @@ _.Zones =
 						["coord"] = { 71.2, 32.3, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55736,	-- Welcome to the Resistance
+						["g"] = {
+							{	-- Junkyard Architect (Scrap Grenade)
+								["achievementID"] = 13479,
+								["criteriaID"] = 1,
+							},
+						},
 					},
 					{	-- My Father's Armies
 						["questID"] = 55731,
@@ -60,6 +105,19 @@ _.Zones =
 						["coord"] = { 71.4, 38.7, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55736,	-- Welcome to the Resistance
+					},
+					{	-- S.P.A.R.E. Crates
+						["questID"] = 56740,
+						["qg"] = 152295,	-- Pascal
+						["coord"] = { 71.2, 32.3, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
+						["g"] = {
+							{	-- Junkyard Architect (S.P.A.R.E. Crate)
+								["achievementID"] = 13479,
+								["criteriaID"] = 38,
+							},
+						},
 					},
 					{	-- The Resistance Needs You!
 						["questID"] = 55729,

@@ -12,29 +12,32 @@ _.Zones =
 						{	-- Mighty Minions of Mechagon
 							["achievementID"] = 13625,
 							["g"] = {
+								{	-- CK-9 Micro-Oppression Unit
+									["criteriaID"] = 5,
+									["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+								},
+								{	-- Creakclank
+									["criteriaID"] = 4,
+									["crs"] = { 154925 },	-- Creakclank
+									["coord"] = { 59.2, 50.9, 1462 },
+								},
 								{	-- Gnomefeaster
 									["criteriaID"] = 1,
 									["crs"] = { 154922 },	-- Gnomefeaster
-								},
-								{	-- Sputtertube
-									["criteriaID"] = 2,
-									["crs"] = { 154923 },	-- Sputtertube
 								},
 								{	-- Goldenbot XD
 									["criteriaID"] = 3,
 									["crs"] = { 154924 },	-- Goldenbot XD
 								},
-								{	-- Creakclank
-									["criteriaID"] = 4,
-									["crs"] = { 154925 },	-- Creakclank
-								},
-								{	-- CK-9 Micro-Oppression Unit
-									["criteriaID"] = 5,
-									["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+								{	-- Sputtertube
+									["criteriaID"] = 2,
+									["crs"] = { 154923 },	-- Sputtertube
+									["coord"] = { 60.7, 46.5, 1462 },
 								},
 								{	-- Unit 35
 									["criteriaID"] = 6,
 									["crs"] = { 154927 },	-- Unit 35
+									["coord"] = { 51.1, 45.4, 1462 },
 								},
 								{	-- Unit 6
 									["criteriaID"] = 7,
