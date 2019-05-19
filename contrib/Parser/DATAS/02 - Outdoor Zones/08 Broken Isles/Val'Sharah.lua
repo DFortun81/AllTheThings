@@ -635,7 +635,7 @@ _.Zones =
 						["requireSkill"] = 182,	-- Herbalism
 					},
 					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129112,	-- Felwort Sample
+						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
