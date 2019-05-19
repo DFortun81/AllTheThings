@@ -10,6 +10,22 @@ _.Zones =
 			56278, 56297, 56586, 56605, 56669, 56670, 56118
 			]]--
 			n(-16,  {	-- Rares
+				n(152415, {-- alga the eyeless
+					-- 56279 and 56604 popped on first kill. One must be first kill, the other for subsequent kills?
+					["questID"] = 56279,
+					["description"] = "Patrols in stealth along the path",
+					["coords"] = {
+						{ 62.1, 50.3, 1355 },
+						{ 60.9, 43.6, 1355 },
+						{ 60.1, 42.8, 1355 },
+						{ 56.9, 44.5, 1355 },
+						{ 55.0, 52.5, 1355 },
+						{ 57.2, 54.5, 1355 },
+						{ 59.0, 53.7, 1355 },
+						{ 60.8, 51.7, 1355 },
+						{ 61.8, 47.7, 1355 },
+					},
+				}),
 				n(152416, {	-- Allseer Oma'kil
 					--["questID"] = ,
 					["coord"] = { 69.0, 37.4, 1355 },
