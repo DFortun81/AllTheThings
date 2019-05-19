@@ -1488,9 +1488,7 @@ function(self)
 	ChangeSkipCutsceneState(self, checked);
 end,
 function(self)
-	local checked = self:GetChecked();
-	settings:SetTooltipSetting("Skip:Cutscenes", checked);
-	ChangeSkipCutsceneState(self, checked);
+	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
 end);
 AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
 AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ReportUnsortedCompletedQuestsCheckBox, "BOTTOMLEFT", -4, 4);
