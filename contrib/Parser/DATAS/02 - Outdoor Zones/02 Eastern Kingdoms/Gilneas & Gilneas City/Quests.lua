@@ -595,7 +595,6 @@ _.Zones =
 								["qg"] = 37102,			-- Gwen Armstead
 								["sourceQuests"] = {
 									24484,	-- Pest Control
-									24495,	-- Pieces of the Past
 								},
 								["coords"] = {
 									{ 59.86, 91.70, 179 },
@@ -824,6 +823,7 @@ _.Zones =
 								["questID"] = 24578,	-- The Blackwald
 								["qg"] = 37815,			-- Lorna Crowley
 								["sourceQuests"] = {
+									24495,	-- Pieces of the Past
 									24501,	-- Queen-Sized Troubles
 								},
 								["coords"] = {
