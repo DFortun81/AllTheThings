@@ -91,6 +91,13 @@ _.Zones =
 						},
 					},
 				},
+				{	-- City of Drowned Friends -- TODO:: verify sourceQuest
+					["questID"] = 56310,
+					["qg"] = 154520,	-- First Arcanist Thalyssra
+					["coord"] = { 73.4, 47.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Descent
 					["questID"] = 54018,
 					["qg"] = 150206,	-- Chief Telemancer Oculeth
@@ -122,12 +129,27 @@ _.Zones =
 						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 					},
 				},
+				{	-- Enchanted Lock
+					["objectID"] = 327592,
+					["questID"] = 56245,
+					["coord"] = { 78.8, 41.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56244,	-- Diaries of the Dead
+				},
 				{	-- Essential Empowerment (possibly breadcrumb? follow-up quest was available without turning this in)
 					["questID"] = 55851,
 					["qg"] = 154167,	-- Magni Bronzebeard
 					["coord"] = { 48.6, 61.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55053,	-- A Way Home
+				},
+				{	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
+					["questID"] = 55661,
+					["qg"] = 153777,	-- Cando Mikfin
+					["coord"] = { 64.5, 48.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Fortunate Souls
 					["questID"] = 54012,
@@ -158,12 +180,29 @@ _.Zones =
 						56063,	-- Ritual of Tides
 					},
 				},
+				{	-- Legacy of Nar'anan
+					["questID"] = 56095,
+					["qg"] = 154143,	-- Collector Kojo
+					["coord"] = { 66.4, 47.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Preserved Clues
 					["questID"] = 56242,
 					["qg"] = 153514,	-- Finder Palta
 					["coord"] = { 49.2, 62.0, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56240,	-- Strange Silver Knife
+				},
+				{	-- Preserved Journal
+					["objectID"] = 327591,
+					["coord"] = { 81.4, 45.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Diaries of the Dead
+							["questID"] = 56244,
+						},
+					},
 				},
 				{	-- Ritual of Tides
 					["questID"] = 56063,
@@ -229,6 +268,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55481,	-- Scouting the Palace
 				},
+				{	-- Snap Back
+					["questID"] = 56118,
+					["qg"] = 154143,	-- Collector Kojo
+					["coord"] = { 66.4, 47.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Stay Low, Stay Fast!
 					["questID"] = 55094,
 					["qg"] = 150209,	-- Neri Sharpfin
@@ -252,6 +298,24 @@ _.Zones =
 					["coord"] = { 39.8, 49.2, 1355 },
 					["races"] = HORDE_ONLY,
 				},
+				{	-- The Ever Drowning
+					["questID"] = 56312,
+					["qg"] = 154661,	-- First Arcanist Thalyssra
+					["coord"] = { 73.9, 41.7, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56310,	-- City of Drowned Friends
+					["description"] = "Dodge the fleeing civilians",
+				},
+				{	-- The Fate of Professor Elryna
+					["questID"] = 56143,
+					["qg"] = 154143,	-- Collector Kojo
+					["coord"] = { 66.4, 47.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						56095,	-- Legacy of Nar'anan
+						56118,	-- Snap Back (TODO:: verify if this is really needed)
+					},
+				},
 				{	-- The First Arcanist
 					["questID"] = 54021,
 					["qg"] = 150207,	-- Lor'thermar Theron
@@ -265,6 +329,20 @@ _.Zones =
 					["coord"] = { 50.5, 66.2, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56176,	-- Desperate Need
+				},
+				{	-- The Warbringer
+					["questID"] = 56314,
+					["qg"] = 155325,	-- First Arcanist Thalyssra
+					["coord"] = { 79.7, 44.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56312,	-- The Ever Drowning
+				},
+				{	-- They Made Their Choice (possibly opens up a new quest line?)
+					["questID"] = 56316,
+					["qg"] = 155325,	-- First Arcanist Thalyssra
+					["coord"] = { 79.7, 44.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56314,	-- The Warbringer
 				},
 				{	-- Up Against It
 					["questID"] = 56429,

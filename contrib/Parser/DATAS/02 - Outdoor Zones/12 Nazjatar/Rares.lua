@@ -5,6 +5,10 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		["g"] = {
+			--[[
+			Possible KillIDs that need to be confirmed and tagged to mob:
+			56278, 56297, 56586, 56605, 56669, 56670, 56118
+			]]--
 			n(-16,  {	-- Rares
 				n(152416, {	-- Allseer Oma'kil
 					--["questID"] = ,
@@ -30,7 +34,21 @@ _.Zones =
 						i(168155),	-- Chum
 					},
 				}),
+				n(152359, {	-- Siltstalker the Packmother
+					--["questID"] = ,
+					["coord"] = { 71.6, 54.8, 1355 },
+				}),
+				n(152290, {	-- Soundless
+					--["questID"] = ,
+					["coord"] = { 59.9, 47.6, 1355 },
+					["description"] = "On top of the coral reef. May require Flying to get to.",
+				}),
+				n(152360, {	-- Toxigore the Alpha
+					--["questID"] = ,
+					["coord"] = { 64.8, 46.4, 1355 },
+				}),
 				n(151719, {	-- Voice in the Deeps -- TODO:: add description on how to actually release it
+					--["questID"] = ,
 					["coord"] = { 67.5, 34.6, 1355 },
 				}),
 			}),

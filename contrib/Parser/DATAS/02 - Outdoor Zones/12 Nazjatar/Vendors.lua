@@ -122,6 +122,14 @@ _.Zones =
 						}),
 					},
 				}),
+				n(154860, {
+					["coord"] = { 73.6, 46.0, 1355 },
+					["g"] = {
+						currency(1721, {	-- Prismatic Manapearl
+							i(169377),	-- Drowned Hatchling
+						}),
+					},
+				}),
 				n(153512, {	-- Finder Pruc
 					["coord"] = { 49.1, 62.2, 1355 },
 					["races"] = HORDE_ONLY,

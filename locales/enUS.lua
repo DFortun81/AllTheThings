@@ -3225,9 +3225,10 @@ AllTheThings.L = {
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
 		[327427] = "Sack of Tasks",
 		[327585] = "Bounty Board",
+		[327591] = "Preserved Journal",
+		[327592] = "Enchanted Lock",
 		[327596] = "Broken Abyssal Focus",
 		[329805] = "Strange Crystal",
-		
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found
 		[9999998] = "Treasure Chest",	-- Use these until objectID is found

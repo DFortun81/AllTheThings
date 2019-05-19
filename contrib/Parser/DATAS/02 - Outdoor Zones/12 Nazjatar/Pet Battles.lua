@@ -60,6 +60,7 @@ _.Zones =
 							{	-- Silence
 								["criteriaID"] = 3,
 								["crs"] = { 154912 },	-- Silence
+								["coord"] = { 58.3, 48.1, 1355 },
 							},
 							{	-- Voltgorger
 								["criteriaID"] = 10,
