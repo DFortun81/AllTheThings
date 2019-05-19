@@ -247,6 +247,8 @@ t(134026);	-- Honorable Pennant
 t(87528);	-- Honorary Brewmaster Keg
 t(119218);	-- Horde Flag of Victory (Horde)
 t(119221);	-- Horde Gladiator's Banner (Never Implemented)
+t(169276);	-- Horde War Banner
+t(169277);	-- Horde War Standard
 t(151271);	-- Horse Head Costume
 t(151270);	-- Horse Tail Costume
 t(162539);	-- Hot Buttered Popcorn
@@ -335,6 +337,7 @@ t(136849);	-- Nature's Beacon
 t(130209);	-- Never Ending Toy Chest
 t(112324);	-- Nightmarish Hitching Post
 t(134004);	-- Noble's Eternal Elementium Signet
+t(168824);	-- Ocean Simulator
 t(104262);	-- Odd Polished Stone
 t(118224);	-- Ogre Brewing Kit
 t(46780);	-- Ogre Pinata

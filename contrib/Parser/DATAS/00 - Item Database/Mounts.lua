@@ -197,3 +197,10 @@ i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
 
 i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+
+i(169203, 300151);	-- Inkscale Deepseeker
+i(167170, 291538);	-- Unshackled Waveray

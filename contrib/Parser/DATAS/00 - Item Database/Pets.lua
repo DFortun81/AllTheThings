@@ -129,6 +129,7 @@ pet(102145, 1303);	-- Chi-Chi, Hatchling of Chi-Ji
 pet(89368, 849); 	-- Chi-Ji Kite
 pet(11110, 84); 	-- Chicken Egg (Westfall Chicken)
 pet(163504, 2418);	-- Child of Jani
+pet(169357, 2691);	-- Chitterspine Devourer
 pet(35350, 174); 	-- Chuck's Bucket (Chuck)
 pet(92707, 1117);	-- Cinder Kitten
 pet(127748, 1662); 	-- Cinder Pup
@@ -166,6 +167,7 @@ pet(97556, 1234); 	-- Crystal of the Void (Lesser Voidcaller)
 pet(46545, 225); 	-- Curious Oracle Hatchling
 pet(46544, 226); 	-- Curious Wolvar Pup
 pet(116801, 1521);	-- Cursed Birman
+pet(169365, 2699);	-- Damplight Slug
 pet(104160, 1329); 	-- Dandelion Frolicker
 pet(63138, 270);	-- Dark Phoenix Hatchling
 pet(97960, 1244); 	-- Dark Quivering Blob (Viscous Horror)
@@ -203,6 +205,7 @@ pet(109014, 1386);	-- Dread Hatchling
 pet(163634, 2431);	-- Dreadtick Leecher
 pet(97554, 1232); 	-- Dripping Strider Egg (Coilfang Stalker)
 pet(104162, 1331); 	-- Droplet of Y'Shaarj
+pet(169377, 2710);	-- Drowned Hatchling
 pet(142098, 1967); 	-- Drudge Remains (Drudge Ghoul)
 pet(163492, 2406);	-- Drustvar Piglet
 pet(44970, 205); 	-- Dun Morogh Cub
@@ -493,6 +496,7 @@ pet(8496, 47); 		-- Parrot Cage (Cockatiel) - (Cockatiel)
 pet(8492, 50); 		-- Parrot Cage (Green Wing Macaw) - (Green Wing Macaw)
 pet(8494, 49); 		-- Parrot Cage (Hyacinth Macaw) - (Hyacinth Macaw)
 pet(8495, 51);	 	-- Parrot Cage (Senegal) - (Senegal)
+pet(169352, 2686);	-- Pearlescent Glimmershell
 pet(60869, 265);	-- Pebble
 pet(127754, 1663);	-- Periwinkle Calf
 pet(49912, 250);	-- Perky Pug
@@ -562,6 +566,7 @@ pet(104159, 1328);	-- Ruby Droplet
 pet(63355, 271);	-- Rustberg Gull (Alliance)
 pet(64996, 271);	-- Rustberg Gull (Horde)
 pet(72153, 665);	-- Sand Scarab
+pet(169351, 2685);	-- Sandclaw Nestseeker
 pet(163808, 2463);	-- Sandshell Chitterer
 pet(163512, 2426);	-- Sandstinger Wasp
 pet(167008, 2575);	-- Sandy Hermit Crab Shell (Mr. Crabs)
@@ -598,6 +603,7 @@ pet(34519, 171);	-- Silver Pig Coin (Silver Pig)
 pet(88147, 820); 	-- Singing Cricket Cage
 pet(33154, 162); 	-- Sinister Squashling
 pet(163975, 2478);	-- Sir Snips
+pet(169376, 2709);	-- Skittering Eel
 pet(142097, 1966); 	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
 pet(104167, 1336); 	-- Skunky Alemental
 pet(119150, 1575); 	-- Sky Fry
