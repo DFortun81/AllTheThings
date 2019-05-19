@@ -638,6 +638,7 @@ pet(167054, 2587);	-- Spawn of Garalon
 pet(94595, 1201); 	-- Spawn of G'nathus
 pet(165848, 2528);	-- Spawn of Krag'wa
 pet(160702, 2186);	-- Spawn of Merektha
+pet(169359, 2693);	-- Spawn of Nalaada
 pet(113623, 1442); 	-- Spectral Bell (Ghastly Kid)
 pet(90953, 1127);	-- Spectral Cub
 pet(94190, 1185);	-- Spectral Porcupette

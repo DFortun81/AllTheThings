@@ -42,6 +42,13 @@ _.Zones =
 					["questID"] = 56284,
 					["coord"] = { 64.3, 34.7, 1355 },
 				}),
+				n(152555, {	-- Elderspawn Nalaada
+					--["questID"] = ,
+					["coord"] = { 52.1, 75.4, 1355 },
+					["g"] = {
+						i(169359),	-- Spawn of Nalaada
+					},
+				}),
 				n(152465, {	-- Needlespine
 					--["questID"] = ,
 					["coord"] = { 50.2, 19.1, 1355 },

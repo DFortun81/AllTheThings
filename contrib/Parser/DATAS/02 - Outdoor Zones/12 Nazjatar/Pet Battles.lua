@@ -19,6 +19,7 @@ _.Zones =
 							{	-- Elderspawn of Nalaada
 								["criteriaID"] = 6,
 								["crs"] = { 154915 },	-- Elderspawn of Nalaada
+								["coord"] = { 51.3, 75.0, 1355 },
 							},
 							{	-- Frenzied Knifefang
 								["criteriaID"] = 11,
