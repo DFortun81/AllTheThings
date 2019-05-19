@@ -5,8 +5,7 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		["g"] = {
-			{	-- Pet Battle
-				["npcID"] = -25,	-- Pet Battle
+			n(-25, {	-- Pet Battle
 				["f"] = 101,		-- Battle Pets
 				["g"] = {
 					{	-- Nautical Nuisances of Nazjatar
@@ -24,15 +23,12 @@ _.Zones =
 							{	-- Frenzied Knifefang
 								["criteriaID"] = 11,
 								["crs"] = { 154920 },	-- Frenzied Knifefang
+								["coord"] = { 59.1, 26.6, 1355 },
 							},
 							{	-- Giant Opaline Conch
 								["criteriaID"] = 12,
 								["crs"] = { 154921 },	-- Giant Opaline Conch
 								["coord"] = { 28.1, 26.7, 1355 },
-							},
-							{	-- Hissing Chitterspine
-								["speciesID"] = 2649,	-- Hissing Chitterspine
-								["crs"] = { 154708 },	-- Hissing Chitterspine
 							},
 							{	-- Kelpstone
 								["criteriaID"] = 9,
@@ -99,6 +95,10 @@ _.Zones =
 						["speciesID"] = 2650,	-- Great Sea Albatross
 						["crs"] = { 154710 },	-- Great Sea Albatross
 					},
+					{	-- Hissing Chitterspine
+						["speciesID"] = 2649,	-- Hissing Chitterspine
+						["crs"] = { 154708 },	-- Hissing Chitterspine
+					},
 					{	-- Muck Slug
 						["speciesID"] = 2660,	-- Muck Slug
 						["crs"] = { 154724 },	-- Muck Slug
@@ -107,12 +107,16 @@ _.Zones =
 						["speciesID"] = 2645,	-- Sandclaw Pincher
 						["crs"] = { 154697 },	-- Sandclaw Pincher
 					},
+					{	-- Sandclaw Sunshell
+						["speciesID"] = 2646,	-- Sandclaw Sunshell
+						["crs"] = { 154702 },	-- Sandclaw Sunshell
+					},
 					{	-- Spireshell Snail
 						["speciesID"] = 2653,	-- Spireshell Snail
 						["crs"] = { 154716 },	-- Spireshell Snail
 					},
 				},
-			},
+			}),
 		},
 	}),
 };
