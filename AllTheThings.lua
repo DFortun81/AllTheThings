@@ -8283,11 +8283,12 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- World Drops
+		-- World Drops / Bind on Equips
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
-			db.text = TRANSMOG_SOURCE_4;
+			--db.text = TRANSMOG_SOURCE_4;
+			db.text = ITEM_BIND_ON_EQUIP;
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
