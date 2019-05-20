@@ -3236,6 +3236,7 @@ AllTheThings.L = {
 		[325666] = "Mechanized Chest",
 		[325667] = "Mechanized Chest",
 		[325668] = "Mechanized Chest",
+		[326140] = "Bounty Board",
 		[326394] = "Arcane Chest",
 		[326395] = "Glowing Arcane Trunk",
 		[326396] = "Glowing Arcane Trunk",

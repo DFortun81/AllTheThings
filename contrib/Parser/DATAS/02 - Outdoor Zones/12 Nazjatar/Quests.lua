@@ -38,12 +38,29 @@ _.Zones =
 						},
 					},
 				},
+				{	-- A Brief Respite (when this quest is offered, the rest of the zone is available.)
+					["questID"] = 54975,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
+					["g"] = {
+						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
+					},
+				},
 				{	-- A Safer Place
 					["questID"] = 55530,
 					["qg"] = 152084,	-- Mrrl
 					["coord"] = { 48.1, 45.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- A Tempered Blade
+					["questID"] = 56156,
+					["qg"] = 154248,	-- Bladesman Inowari
+					["coord"] = { 39.4, 53.4, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55363,	-- Rescue the Farseer (TODO - verify: 55362 "Elemental Fury" as well?)
 				},
 				{	-- A Way Home
 					["questID"] = 54972,
@@ -65,6 +82,17 @@ _.Zones =
 					["coord"] = { 49.3, 61.8, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56354,	-- Ancient Technology
+				},
+				{	-- Bounty Board
+					["objectID"] = 326140,
+					["coord"] = { 39.1, 54.1, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{	-- Wanted: Braxicus
+							["questID"] = 55777,
+							["isDaily"] = true,
+						},
+					},
 				},
 				{	-- Bounty Board (rewards seem to change over time?)
 					["objectID"] = 327585,
@@ -155,6 +183,13 @@ _.Zones =
 					["sourceQuest"] = 55054,	-- Upheaval
 				},
 				{	-- Desperate Need
+					["questID"] = 56164,
+					["qg"] = 151763,	-- Isla
+					["coord"] = { 37.7, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 154248,	-- A Tempered Blade
+				},
+				{	-- Desperate Need
 					["questID"] = 56176,
 					["qg"] = 154208,	-- Jonah Lowtide
 					["coord"] = { 50.5, 66.2, 1355 },
@@ -175,7 +210,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
-				{	-- Down Into Nazjatar -- TODO:: confirm sourceQuest
+				{	-- Down Into Nazjatar (when this quest is offered, the rest of the zone is available)
 					["questID"] = 56235,
 					["qg"] = 151848,	-- Lor'themar Theron
 					["coord"] = { 48.5, 62.1, 1355 },
@@ -184,6 +219,13 @@ _.Zones =
 					["g"] = {
 						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 					},
+				},
+				{	-- Elemental Fury
+					["questID"] = 55362,
+					["qg"] = 151741,	-- Apprentice Odari
+					["coord"] = { 43.5, 49.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55361,	-- The Lost Shaman
 				},
 				{	-- Enchanted Lock
 					["objectID"] = 327592,
@@ -333,6 +375,13 @@ _.Zones =
 							["questID"] = 56244,
 						},
 					},
+				},
+				{	-- Rescue The Farseer
+					["questID"] = 55363,
+					["qg"] = 151741,	-- Apprentice Odari
+					["coord"] = { 43.5, 49.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55361,	-- The Lost Shaman
 				},
 				{	-- Ritual of Tides
 					["questID"] = 56642,
@@ -520,7 +569,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55384,	-- Settling In
 				},
-				{	-- Scrying Stones -- TODO:: confirm sourceQuest
+				{	-- Scrying Stones
+					["questID"] = 56211,
+					["qg"] = 153509,	-- Artisan Okata
+					["coord"] = { 37.8, 55.8, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 154248,	-- A Tempered Blade
+					["g"] = {
+						{	-- Tour of the Depths (Learn about the Scrying Stones of Nazjatar)
+							["achievementID"] = 13635,
+							["criteriaID"] = 3,
+						},
+					},
+				},
+				{	-- Scrying Stones
 					["questID"] = 56210, -- also completed 56239
 					["qg"] = 153512,	-- Finder Pruc
 					["coord"] = { 49.0, 62.1, 1355 },
@@ -556,18 +618,29 @@ _.Zones =
 				},
 				{	-- Strange Crystal
 					["objectID"] = 329805,
-					["coord"] = { 32.8, 39.5, 1355 },
-					["races"] = HORDE_ONLY,
+					["coords"] = {
+						{ 32.8, 39.5, 1355 },
+						{ 55.2, 48.8, 1355 },
+					},
 					["g"] = {
 						{	-- A Curious Discovery
 							["questID"] = 56560,
+							["races"] = HORDE_ONLY,
+						},
+						{	-- A Curious Discovery
+							["questID"] = 56561,
+							["races"] = ALLIANCE_ONLY,
 						},
 					},
 				},
-				{	-- Strange Silver Knife (inside arcane chest at coords)
+				{	-- Silver Knife (inside first looted arcane chest)
+					["itemID"] = 169215,
+					["questID"] = 56239,	-- Strange Silver Knife
+					["races"] = ALLIANCE_ONLY,
+				},
+				{	-- Silver Knife (inside first looted arcane chest)
 					["itemID"] = 169216,
-					["questID"] = 56240, -- also completed 56346
-					["coord"] = { 39.8, 49.2, 1355 },
+					["questID"] = 56240,	-- Strange Silver Knife, also completed 56346
 					["races"] = HORDE_ONLY,
 				},
 				{	-- The Ever Drowning
@@ -601,6 +674,20 @@ _.Zones =
 					["coord"] = { 74.1, 24.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- The Lost Shaman
+					["questID"] = 55361,
+					["qg"] = 151626,	-- Hunter Akana
+					["coord"] = { 39.4, 53.4, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56350,	-- Scouting the Palace
+				},
+				{	-- The Needs of the People
+					["questID"] = 56166,
+					["qg"] = 151763,	-- Isla
+					["coord"] = { 37.7, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56164,	-- Desperate Need
 				},
 				{	-- The Needs of the People
 					["questID"] = 56179,

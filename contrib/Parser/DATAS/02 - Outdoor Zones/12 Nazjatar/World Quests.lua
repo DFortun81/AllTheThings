@@ -11,6 +11,18 @@ _.Zones =
 						["questID"] = 55891,
 						["isWQ"] = 120,
 					},
+					{	-- Champion Qalina, Spear of Ice
+						["questID"] = 55888,
+						["isWQ"] = 120,
+					},
+					{	-- Frozen Winds of Zhiela
+						["questID"] = 55895,
+						["isWQ"] = 120,
+					},
+					{	-- Give 'Em Shell
+						["questID"] = 56041,
+						["isWQ"] = 120,
+					},
 					{	-- Jumping Jellies
 						["questID"] = 56121,
 						["isWQ"] = 120,
@@ -18,6 +30,10 @@ _.Zones =
 					{	-- Hungry Hungry Hydras
 						["questID"] = 55997,
 						["isWQ"] = 120,
+					},
+					{	-- Infestation of Madness
+						["questID"] = 55884,
+						["isWQ"] = 12,
 					},
 					{	-- Leylocked Chest
 						["questID"] = 56023, -- 56277 and 56606 popped at the same time
