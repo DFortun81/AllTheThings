@@ -249,7 +249,7 @@ _.WorldDrops =
 						["itemID"] = 12691,	-- Plans: Wildthorn Mail
 					},
 				}),
-				prof(333, {	-- Enchanting
+				n(-182, {	-- Enchanting
 					i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
 					{			-- Formula: Enchant Boots - Greater Agility
 						["itemID"] = 16245,	-- Formula: Enchant Boots - Greater Agility
@@ -276,7 +276,7 @@ _.WorldDrops =
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 					i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
 				}),
-				prof(202, {	-- Engineering
+				n(-183, {	-- Engineering
 					i(16055),	-- Schematic: Arcane Bomb
 					i(10601),	-- Schematic: Bright-Eye Goggles
 					i(10603),	-- Schematic: Catseye Ultra Goggles
@@ -317,7 +317,7 @@ _.WorldDrops =
 					i(21945),	-- Design: The Aquamarine Ward
 					i(21944),	-- Design: Truesilver Boar
 				}),
-				prof(165, {	-- Leatherworking
+				n(-187, {	-- Leatherworking
 					i(4301),	-- Pattern: Barbaric Belt
 					i(4297),	-- Pattern: Barbaric Gloves
 					i(8390),	-- Pattern: Big Voodoo Cloak

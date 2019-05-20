@@ -178,7 +178,7 @@ _.WorldDrops =
 						["u"] = 1,
 					},
 				}),
-				prof(333, {	-- Enchanting
+				n(-182, {	-- Enchanting
 					i(68787),	-- Formula: Enchant Bracer - Agility
 					i(68788),	-- Formula: Enchant Bracer - Major Strength
 					i(68789),	-- Formula: Enchant Bracer - Mighty Intellect
