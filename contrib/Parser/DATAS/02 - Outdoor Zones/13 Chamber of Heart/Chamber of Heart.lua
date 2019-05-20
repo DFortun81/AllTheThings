@@ -47,6 +47,13 @@ _.Zones =
 								["sourceQuest"] = 55533,	-- MOTHER Knows Best
 							},
 							{	-- Back Out to Sea
+								["questID"] = 56162,
+								["qg"] = 152206,	-- Magni Bronzebeard
+								["coord"] = { 50.0, 59.1, 1355 },
+								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 55618,	-- The Heart Forge
+							},
+							{	-- Back Out to Sea
 								["questID"] = 56161,
 								["qg"] = 152206,	-- Magni Bronzebeard
 								["coord"] = { 50.0, 59.1, 1473 },
@@ -88,7 +95,7 @@ _.Zones =
 								["questID"] = 55533,
 								["qg"] = 152206,	-- Magni Bronzebeard
 								["coord"] = { 50.1, 59.1, 1473 },
-								["sourceQuest"] = 55851,	-- Essential Empowerment
+								--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
 							},
 							{	-- The Heart Forge
 								["questID"] = 55618,

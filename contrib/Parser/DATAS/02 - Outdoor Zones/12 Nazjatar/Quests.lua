@@ -6,6 +6,22 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		["groups"] = {
 			n(-17,  {	-- Quests
+				{	-- Sunken Ambitions
+					["achievementID"] = 13710,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{	-- Welcome to Nazjatar
+							["criteriaID"] = 1,
+							["sourceQuest"] = 56350,	-- Scouting the Palace
+						},
+						{	-- Secrets in the Sea
+							["criteriaID"] = 2,
+						},
+						{	-- Turning the Tide
+							["criteriaID"] = 3,
+						},
+					},
+				},
 				{	-- Unfathomable
 					["achievementID"] = 13709,
 					["races"] = HORDE_ONLY,
@@ -28,6 +44,13 @@ _.Zones =
 					["coord"] = { 48.1, 45.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- A Way Home
+					["questID"] = 54972,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
 				{	-- A Way Home
 					["questID"] = 55053,
@@ -75,14 +98,26 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
-					["questID"] = 52956,
+				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+					["questID"] = 56649,
+					["qg"] = 154640,	-- Grand Marshal Tremblade
+					["coord"] = { 38.0, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+				},
+				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+					["questID"] = 56650,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
-					["questID"] = 56650,
+				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+					["questID"] = 52948,
+					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["coord"] = { 38.0, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+				},
+				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+					["questID"] = 52956,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
@@ -106,6 +141,13 @@ _.Zones =
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Descent
+					["questID"] = 54969,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 48.8, 89.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55095,	-- Upheaval
+				},
+				{	-- Descent
 					["questID"] = 54018,
 					["qg"] = 150206,	-- Chief Telemancer Oculeth
 					["coord"] = { 36.6, 86.9, 1355 },
@@ -118,6 +160,13 @@ _.Zones =
 					["coord"] = { 50.5, 66.2, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save a Friend
+				},
+				{	-- Disruption of Power
+					["questID"] = 56641,
+					["qg"] = 155482,	-- Sentinel (Shadris Feathermoon)
+					["coord"] = { 48.8, 86.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 54969,	-- Descent
 				},
 				{	-- Disruption of Power
 					["questID"] = 55092,
@@ -151,12 +200,20 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Essential Empowerment (possibly breadcrumb? follow-up quest was available without turning this in)
+				{	-- Essential Empowerment
 					["questID"] = 55851,
-					["qg"] = 154167,	-- Magni Bronzebeard
-					["coord"] = { 48.6, 61.3, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55053,	-- A Way Home
+					["qgs"] = {
+						154166,	-- Magni Bronzebeard (Alliance)
+						154167,	-- Magni Bronzebeard (Horde)
+					},
+					["coords"] = {
+						{ 40.1, 52.5, 1355 },	-- Alliance
+						{ 48.6, 61.3, 1355 },	-- Horde
+					},
+					["sourceQuests"] = {
+						54972,	-- A Way Home (Alliance)
+						55053,	-- A Way Home (Horde)
+					},
 				},
 				{	-- Extra Shiny
 					["questID"] = 55985,
@@ -175,6 +232,13 @@ _.Zones =
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Fortunate Souls
+					["questID"] = 56640,
+					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
+					["coord"] = { 48.8, 86.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 54969,	-- Descent
+				},
+				{	-- Fortunate Souls
 					["questID"] = 54012,
 					["qg"] = 150196,	-- First Arcanist Thalyssra
 					["coord"] = { 41.9, 80.6, 1355 },
@@ -190,6 +254,17 @@ _.Zones =
 						{	-- What Will It Grow?
 							["questID"] = 55426,
 						},
+					},
+				},
+				{	-- In Deep
+					["questID"] = 56643,
+					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
+					--["coord"] = { , 1355 }, -- can be picked up anywhere Shandris is located
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						56641,	-- Disruption of Power
+						56640,	-- Fortunate Souls
+						56642,	-- Ritual of Tides
 					},
 				},
 				{	-- In Deep
@@ -258,6 +333,13 @@ _.Zones =
 							["questID"] = 56244,
 						},
 					},
+				},
+				{	-- Ritual of Tides
+					["questID"] = 56642,
+					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
+					["coord"] = { 48.8, 86.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 54969,	-- Descent
 				},
 				{	-- Ritual of Tides
 					["questID"] = 56063,
@@ -412,6 +494,16 @@ _.Zones =
 					["sourceQuest"] = 56304,	-- The High Life
 				},
 				{	-- Scouting the Palace
+					["questID"] = 56350,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						56162,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
+						55618,	-- The Heart Forge
+					},
+				},
+				{	-- Scouting the Palace
 					["questID"] = 55481,
 					["qg"] = 151848,	-- Lor'themar Theron
 					["coord"] = { 48.5, 62.1, 1355 },
@@ -531,6 +623,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56314,	-- The Warbringer
 				},
+				{	-- Up Against it
+					["questID"] = 56644,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 45.4, 74.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 155482,	-- In Deep
+				},
 				{	-- Up Against It
 					["questID"] = 56429,
 					["qg"] = 150196,	-- First Arcanist Thalyssra
@@ -539,11 +638,25 @@ _.Zones =
 					["sourceQuest"] = 54015,	-- In Deep
 				},
 				{	-- Upheaval
+					["questID"] = 55095,
+					["qg"] = 150087,	-- Genn Greymane
+					["coord"] = { 48.3, 92.6, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56043,	-- Send the Fleet
+				},
+				{	-- Upheaval
 					["questID"] = 55054,
 					["qg"] = 150187,	-- Nathanos Blightcaller
 					["coord"] = { 36.7, 93.5, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56044,	-- Send the Fleet
+				},
+				{	-- Where the Road Leads
+					["questID"] = 55175,
+					["qg"] = 151000,	-- Blademaster Okani
+					["coord"] = { 49.0, 67.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56644,	-- Up Against It
 				},
 			}),
 		},

@@ -289,6 +289,13 @@ _.Zones =
 							["sourceQuests"] = { 47952 },	-- The Missing Fleet [Alliance Only]
 							-- NOTE: This might have to move to a different map. - Crieve
 						}),
+						{	-- Send the Fleet
+							["questID"] = 56043,
+							["qg"] = 153932,	-- Genn Greymane
+							["coord"] = { 70.6, 27.2, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56031,	-- The Wolf's Offensive
+						},
 						qa(47962, {	-- Stormsong Valley
 							["qg"] = 139522,	-- Scouting Map
 							["sourceQuests"] = { 47189 },	-- A Nation Divided
@@ -299,6 +306,9 @@ _.Zones =
 							["sourceQuests"] = { 47962 },	-- Stormsong Valley [Alliance Only]
 							["isBreadcrumb"] = true,
 						}),
+						{	-- The Wolf's Offensive
+							["questID"] = 56031,
+						},
 						qa(48622, {	-- The Vanishing Lord
 							["qg"] = 121235,	-- Taelia
 							["coord"] = { 68.0, 22.0 },
