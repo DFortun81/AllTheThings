@@ -230,14 +230,20 @@ _.Zones =
 				{	-- Enchanted Lock
 					["objectID"] = 327592,
 					["coord"] = { 78.8, 41.1, 1355 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Enchanted Lock
+							["questID"] = 56246,
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56243,	-- Diaries of the Dead
+						},
+						{	-- Enchanted Lock
 							["questID"] = 56245, -- also completed 56243, 56246
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56244,	-- Diaries of the Dead
 						},
 						{	-- Treasure Tale
 							["questID"] = 56248,
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56245,	-- Enchanted Lock
 						},
 					},
@@ -360,6 +366,13 @@ _.Zones =
 					["sourceQuest"] = 154514,	-- Saving Corin
 				},
 				{	-- Preserved Clues
+					["questID"] = 56241,
+					["qg"] = 153510,	-- Artisan Itanu
+					["coord"] = { 37.8, 55.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56239,	-- Strange Silver Knife
+				},
+				{	-- Preserved Clues
 					["questID"] = 56242,
 					["qg"] = 153514,	-- Finder Palta
 					["coord"] = { 49.2, 62.0, 1355 },
@@ -369,10 +382,16 @@ _.Zones =
 				{	-- Preserved Journal
 					["objectID"] = 327591,
 					["coord"] = { 81.4, 45.4, 1355 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Diaries of the Dead
+							["questID"] = 56243,
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56241,	-- Preserved Clues
+						},
+						{	-- Diaries of the Dead
 							["questID"] = 56244,
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 56242,	-- Preserved Clues
 						},
 					},
 				},
@@ -399,8 +418,14 @@ _.Zones =
 				},
 				{	-- Sack of Tasks (rewards appear to change over time?)
 					["objectID"] = 327427,
-					["coord"] = { 51.0, 65.5, 1355 },
-					["races"] = HORDE_ONLY,
+					["coords"] = {
+						{ 38.0, 55.6, 1355 },	-- Alliance
+						{ 51.0, 65.5, 1355 },	-- Horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (Alliance)
+						56179,	-- The Needs of the People (Horde)
+					},
 					["g"] = {
 						{	-- Bounty: A Few Coral Ancients
 							["questID"] = 55821,
@@ -635,13 +660,25 @@ _.Zones =
 				},
 				{	-- Silver Knife (inside first looted arcane chest)
 					["itemID"] = 169215,
-					["questID"] = 56239,	-- Strange Silver Knife
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "Obtained from the first Arcane Chest you find.",
+					["g"] = {
+						{	-- Strange Silver Knife
+							["questID"] = 56239,
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
 				},
 				{	-- Silver Knife (inside first looted arcane chest)
 					["itemID"] = 169216,
-					["questID"] = 56240,	-- Strange Silver Knife, also completed 56346
 					["races"] = HORDE_ONLY,
+					["description"] = "Obtained from the first Arcane Chest you find.",
+					["g"] = {
+						{	-- Strange Silver Knife
+							["questID"] = 56240,
+							["races"] = HORDE_ONLY,
+						},
+					},
 				},
 				{	-- The Ever Drowning
 					["questID"] = 56312,

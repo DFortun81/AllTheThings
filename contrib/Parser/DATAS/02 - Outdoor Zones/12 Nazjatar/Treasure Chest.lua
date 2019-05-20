@@ -20,6 +20,18 @@ _.Zones =
 						["questID"] = 55945,
 						["coord"] = { 52.8, 49.8, 1355 },
 					}),
+					o(326403, {	-- Arcane Chest -- verify
+						["questID"] = 55949, -- 56212, 56220, 56221 also popped, but given the questID range, this should be right
+						["coord"] = { 49.6, 64.5, 1355 },
+					}),
+					o(326404, {	-- Arcane Chest
+						["questID"] = 55951,
+						["coord"] = { 48.5, 87.4, 1355 },
+					}),
+					o(326405, { -- Arcane Chest
+						["questID"] = 55938,
+						["coord"] = { 85.3, 38.6, 1355 },
+					}),
 					--[[ -- these are the remaining known objectIDs for each chest
 					[326395] = "Glowing Arcane Trunk",
 					[326396] = "Glowing Arcane Trunk",
@@ -28,8 +40,6 @@ _.Zones =
 					[326399] = "Glowing Arcane Trunk",
 					[326400] = "Glowing Arcane Trunk",
 					[329783] = "Glowing Arcane Trunk",
-					[326403] = "Arcane Chest",
-					[326404] = "Arcane Chest",
 					[326405] = "Arcane Chest",
 					[326406] = "Arcane Chest",
 					[326407] = "Arcane Chest",

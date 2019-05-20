@@ -45,6 +45,9 @@ _.Zones =
 						i(169359),	-- Spawn of Nalaada
 					},
 				}),
+				n(153302, {	-- Glacier Mage Zhiela -- ach 13635 crit 4, no killid
+					["coord"] = { 42.4, 68.4, 1355 },
+				}),
 				n(152465, {	-- Needlespine
 					["coord"] = { 50.2, 19.1, 1355 },
 				}),
