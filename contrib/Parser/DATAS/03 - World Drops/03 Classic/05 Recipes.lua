@@ -285,6 +285,9 @@ _.WorldDrops =
 						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 					i(6716),	-- Schematic: EZ-Thro Dynamite
+					{	-- Schematic: Flame Deflector
+						["itemID"] = 4411,	-- Schematic: Flame Deflector
+					},
 					i(4416),	-- Schematic: Goblin Land Mine
 					i(4417),	-- Schematic: Large Seaforium Charge
 					i(16044),	-- Schematic: Lifelike Mechanical Toad
@@ -323,7 +326,10 @@ _.WorldDrops =
 					i(8386),	-- Pattern: Big Voodoo Robe
 					i(15737),	-- Pattern: Chimeric Boots		
 					i(15746),	-- Pattern: Chimeric Leggings
-					i(15755),	-- Pattern: Chimeric Vest	
+					i(15755),	-- Pattern: Chimeric Vest
+					{	-- Pattern: Comfortable Leather Hat
+						["itemID"] = 8384,	-- Pattern: Comfortable Leather Hat
+					},
 					i(4296),	-- Pattern: Dark Leather Shoulders
 					i(2409),	-- Pattern: Dark Leather Tunic
 					i(7452),	-- Pattern: Dusky Boots
