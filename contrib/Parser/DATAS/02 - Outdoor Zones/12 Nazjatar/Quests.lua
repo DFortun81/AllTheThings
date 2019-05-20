@@ -348,7 +348,7 @@ _.Zones =
 							["isDaily"] = true,
 						},
 						{	-- Requisition: A Few Kelp Buds
-							["questID"] = 55721,
+							["questID"] = 55721, -- also popped 56278, 56605
 							["isDaily"] = true,
 						},
 						{	-- Requisition: A Few Seaweed

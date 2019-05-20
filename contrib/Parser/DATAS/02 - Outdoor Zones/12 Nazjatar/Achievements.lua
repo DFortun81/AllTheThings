@@ -30,6 +30,21 @@ _.Zones =
 				ach(13763),	-- Back to the Depths!
 				ach(13707),	-- Mrrl's Secret Stash
 				ach(13713),	-- Nothing to Scry About
+				--[[ confirmed spawn points for glimmering chests for "Nothing to Scry About"
+					{ 28.8, 43.5, 1355 },
+					{ 29.2, 40.3, 1355 },
+					{ 28.9, 47.8, 1355 },	-- dropped an Abyssal Conch i(170079) for rep
+					{ 52.3, 41.7, 1355 },
+					{ 58.5, 42.1, 1355 },
+					{ 60.1, 45.2, 1355 },
+					{ 63.0, 44.0, 1355 },
+					{ 70.9, 28.7, 1355 },
+					{ 73.9, 31.0, 1355 },	-- dropped an Extra-Slimy Snail i(167907)
+					{ 77.8, 26.4, 1355 },
+					{ 65.3, 47.5, 1355 },
+					{ 65.5, 50.5, 1355 },
+					{ 65.2, 50.6, 1355 },
+				]]--
 				ach(13699, {	-- Periodic Destruction
 					["coord"] = { 60.7, 32.1, 1355 },
 					["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.",

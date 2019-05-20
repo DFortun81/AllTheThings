@@ -54,6 +54,7 @@ _.Zones =
 							{	-- Ravenous Scalespawn
 								["criteriaID"] = 7,
 								["crs"] = { 154916 },	-- Ravenous Scalespawn
+								["coord"] = { 29.6, 49.7, 1355 },
 							},
 							{	-- Shadowspike Lurker
 								["criteriaID"] = 4,
