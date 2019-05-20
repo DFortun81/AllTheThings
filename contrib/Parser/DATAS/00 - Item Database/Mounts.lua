@@ -205,5 +205,7 @@ i(167895, 294569);	-- Beastlord's Warwolf
 i(169203, 300151);	-- Inkscale Deepseeker
 i(167170, 291538);	-- Unshackled Waveray
 
+i(168830, 290718);	-- Aerial Unit R-21/X
+i(168826, 299158);	-- Mechagon Peacekeeper
 i(168829, 299170);	-- Rustbolt Resistor
 i(167751, 294143);	-- X-995 Mechanocat

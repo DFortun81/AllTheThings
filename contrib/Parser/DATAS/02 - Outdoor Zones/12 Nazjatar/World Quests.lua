@@ -20,8 +20,14 @@ _.Zones =
 						["isWQ"] = 120,
 					},
 					{	-- Leylocked Chest
-						["questID"] = 169482,
+						["questID"] = 56023, -- 56277 and 56606 popped at the same time
 						["isWQ"] = 120,
+						["g"] = {
+							{	-- Puzzle Performer (Hard Leylocked Chest)
+								["achievementID"] = 13764,
+								["criteriaID"] = 3,
+							},
+						},
 					},
 					{	-- Runelocked Chest
 						["questID"] = 56003,

@@ -298,6 +298,7 @@ pet(37297, 179);	-- Gold Medallion (Spirit of Competition)
 pet(65662, 260); 	-- Gold Mini Jouster
 pet(29953, 142); 	-- Golden Dragonhawk Hatchling
 pet(34518, 170);	-- Golden Pig Coin (Golden Pig)
+pet(169378, 2711);	-- Golden Snorf
 pet(104163, 1332); 	-- Gooey Sha-ling
 pet(153056, 2120);	-- Grasping Manifestation
 pet(8500, 68); 		-- Great Horned Owl
@@ -426,6 +427,7 @@ pet(118741, 1565); 	-- Mechanical Scorpid
 pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep
 pet(165849, 2530);	-- Mechantula
+pet(169385, 2718);	-- Microbot 8D
 pet(101426, 666); 	-- Micronax Controller (Micronax)
 pet(165894, 2534);	-- Mini Spider Tank
 pet(56806, 258);	-- Mini Thor
