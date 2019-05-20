@@ -92,6 +92,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 28222,
 							["u"] = 2,
 						},
+						{	-- Ironfeather Breastplate
+							["recipeID"] = 19086,
+							["u"] = 7,
+						},
 						{	-- Living Breastplate
 							["recipeID"] = 19095,
 							["u"] = 7,
