@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+_.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
@@ -265,7 +265,7 @@ _.WorldDrops =
 					i(6344),	-- Formula: Enchant Bracer - Minor Versatility
 					i(16251),	-- Formula: Enchant Bracer - Superior Stamina
 					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
-					i(6342),	-- Formula: Enchant Chest - Minor Mana 
+					i(6342),	-- Formula: Enchant Chest - Minor Mana
 					i(11039),	-- Formula: Enchant Cloak - Minor Agility
 					i(11226),	-- Formula: Enchant Gloves - Riding Skill
 					i(11168),	-- Formula: Enchant Shield - Lesser Parry
@@ -324,7 +324,7 @@ _.WorldDrops =
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8389),	-- Pattern: Big Voodoo Pants
 					i(8386),	-- Pattern: Big Voodoo Robe
-					i(15737),	-- Pattern: Chimeric Boots		
+					i(15737),	-- Pattern: Chimeric Boots
 					i(15746),	-- Pattern: Chimeric Leggings
 					i(15755),	-- Pattern: Chimeric Vest
 					{	-- Pattern: Comfortable Leather Hat
@@ -436,5 +436,5 @@ _.WorldDrops =
 			}),
 		},
 		["tierID"] = 1,
-	},	
+	},
 };
