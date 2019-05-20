@@ -902,26 +902,50 @@ _.Zones =
 					i(48126),	-- Razzashi Hatchling						
 				}),
 				n(-2, {	-- Vendors
-					n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
-						i(5789),	-- Pattern: Murloc Scale Bracers						
-						i(5788),	-- Pattern: Thick Murloc Armor							
-					}),
-					n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
-						i(10318), 	-- Pattern: Admiral's Hat
-					}),
-					n(2838, {	-- Crazk Sparks <Fireworks Merchant>
-						i(18648),	-- Schematic: Green Firework
-					}),
-					n(2845, {	-- Fargon Mortalak <Superior Armorer>
-						i(12257),	-- Heavy Notched Belt
-					}),
-					n(2848, {	-- Glyx Brewright <Alchemy Supplies>
-						i(6056),	-- Recipe: Frost Protection Potion
-						i(6057),	-- Recipe: Nature Protection Potion
-					}),
-					n(2839, {	-- Haren Kanmae <Superior Bowyer>
-						i(11305),	-- Dense Shortbow
-					}),
+					{	-- Blixrez Goodstitch <Leatherworking Supplies>
+						["npcID"] = 2846,
+						["coord"] = { 42.8, 74.1 },
+						["groups"] = {
+							i(5789),	-- Pattern: Murloc Scale Bracers						
+							i(5788),	-- Pattern: Thick Murloc Armor
+						},
+					},
+					{	-- Cowardly Crosby <Tailoring Supplies>
+						["npcID"] = 2672,
+						["coord"] = { 40.8, 82.1 },
+						["groups"] = {
+							i(10318), 	-- Pattern: Admiral's Hat
+						},
+					},
+					{	-- Crazk Sparks <Fireworks Merchant>
+						["npcID"] = 2838,
+						["coord"] = { 43.0, 72.7 },
+						["groups"] = {
+							i(18648),	-- Schematic: Green Firework
+						},
+					},
+					{	-- Fargon Mortalak <Superior Armorer>
+						["npcID"] = 2845,
+						["coord"] = { 44.1, 70.0 },
+						["groups"] = {
+							i(12257),	-- Heavy Notched Belt
+						},
+					},
+					{	-- Glyx Brewright <Alchemy Supplies>
+						["npcID"] = 2848,
+						["coord"] = { 42.7, 75.1 },
+						["groups"] = {
+							i(6056),	-- Recipe: Frost Protection Potion
+							i(6057),	-- Recipe: Nature Protection Potion
+						},
+					},
+					{	-- Haren Kanmae <Superior Bowyer>
+						["npcID"] = 2839,
+						["coord"] = { 42.9, 69.3 },
+						["groups"] = {
+							i(11305),	-- Dense Shortbow
+						},
+					},
 					n(44179, {	-- Harry No-Hooks <Birds and Rum>
 						["groups"] = {
 							i(8495),	-- Parrot Cage (Senegal) pet
@@ -931,6 +955,7 @@ _.Zones =
 					}),
 					{	-- Jutak <Blade Trader>
 						["npcID"] = 2843,	-- Jutak <Blade Trader>
+						["coord"] = { 41.6, 74.1 },
 						["g"] = {
 							{	-- Plans: Hardened Iron Shortsword
 								["itemID"] = 12162,	-- Plans: Hardened Iron Shortsword
@@ -940,26 +965,40 @@ _.Zones =
 							},
 						},
 					},
-					n(2664, {	-- Kelsey Yance <Cook>
-						i(13940),	-- Recipe: Cooked Glossy Mightfish
-						i(13941),	-- Recipe: Filet of Redgill
-						i(6039),	-- Recipe: Giant Clam Scorcho
-						i(13943),	-- Recipe: Hot Smoked Bass
-						i(13948),	-- Recipe: Mightfish Steak
-						i(17062),	-- Recipe: Mithril Head Trout
-						i(6369),	-- Recipe: Rockscale Cod
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-					}),
-					n(2840, {	-- Kizz Bluntstrike <Macecrafter>
-						i(4778),	-- Heavy Spiked Mace
-						i(4777),	-- Ironwood Maul
-					}),
-					n(17249, {	-- Landro Longshot
-						un(2, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
-						un(2, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
-					}),
-					n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
+					{	-- Kelsey Yance <Cook>
+						["npcID"] = 2664,
+						["coord"] = { 42.8, 69.0 },
+						["groups"] = {
+							i(13940),	-- Recipe: Cooked Glossy Mightfish
+							i(13941),	-- Recipe: Filet of Redgill
+							i(6039),	-- Recipe: Giant Clam Scorcho
+							i(13943),	-- Recipe: Hot Smoked Bass
+							i(13948),	-- Recipe: Mightfish Steak
+							i(17062),	-- Recipe: Mithril Head Trout
+							i(6369),	-- Recipe: Rockscale Cod
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+						},
+					},
+					{	-- Kizz Bluntstrike <Macecrafter>
+						["npcID"] = 2840,
+						["coord"] = { 42.9, 70.4 },
+						["groups"] = {
+							i(4778),	-- Heavy Spiked Mace
+							i(4777),	-- Ironwood Maul
+						},
+					},
+					{	-- Landro Longshot <The Black Flame>
+						["npcID"] = 17249,
+						["coord"] = { 42.6, 71.5 },
+						["groups"] = {
+							un(2, i(23716)),	-- Carved Ogre Idol (before they changed it to not be a trinket)
+							un(2, i(23714)),	-- Perpetual Purple Fireworks (before they changed it to not be a trinket)
+						},
+					},
+					{	-- Mazk Snipeshot <Engineering Supplies>
+						["npcID"] = 2685,
+						["coord"] = { 43.2, 70.2 },
 						["groups"] = {
 							{	-- Schematic: Accurate Scope
 								["itemID"] = 13310,	-- Schematic: Accurate Scope
@@ -970,21 +1009,33 @@ _.Zones =
 								["u"] = 7,	-- now learned from trainer, schematic was removed from game
 							},
 						},
-					}),
-					n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
-						i(21219),	-- Recipe: Sagefish Delight
-						i(21099),	-- Recipe: Smoked Sagefish
-						i(16767),	-- Recipe: Undermine Clam Chowder
-					}),
-					n(2663, {	-- Narkk <Pirate Supplies>
-						i(10728), 	-- Pattern: Black Swashbuckler's Shirt
-						i(8495),	-- Parrot Cage (Senegal) pet
-						i(8496),	-- Parrot Cage (Cockatiel) pet
-					}),
-					n(2699, {	-- Rikqiz <Leatherworking Supplies>
-						i(18239),	-- Pattern: Shadowskin Gloves							
-						i(14635),	-- Pattern: Gem-Studded Leather Belt						
-					}),
+					},
+					{	-- Mrs. Gant <Cooking Trainer & Supplies>
+						["npcID"] = 54232,
+						["coord"] = { 42.7, 72.7 },
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight
+							i(21099),	-- Recipe: Smoked Sagefish
+							i(16767),	-- Recipe: Undermine Clam Chowder
+						},
+					},
+					{	-- Narkk <Pirate Supplies>
+						["npcID"] = 2663,
+						["coord"] = { 42.6, 69.1 },
+						["groups"] = {
+							i(10728), 	-- Pattern: Black Swashbuckler's Shirt
+							i(8496),	-- Parrot Cage (Cockatiel) pet
+							i(8495),	-- Parrot Cage (Senegal) pet
+						},
+					},
+					{	-- Rikqiz <Leatherworking Supplies>
+						["npcID"] = 2699,
+						["coord"] = { 43.2, 71.7 },
+						["groups"] = {
+							i(14635),	-- Pattern: Gem-Studded Leather Belt						
+							i(18239),	-- Pattern: Shadowskin Gloves							
+						},
+					},
 					n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
 						["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\b - Crieve",
 						["groups"] = {
@@ -1000,15 +1051,23 @@ _.Zones =
 							i(140093),	-- The Untold Tales of the War of the Ancients
 						},
 					}),
-					n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
-						i(7087), 	-- Pattern: Crimson Silk Cloak
-						i(14630), 	-- Pattern: Enchanter's Cowl
-					}),
-					n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
-						i(12252),	-- Staff of Protection
-						i(12251),	-- Big Stick
-						i(12163), 	-- Plans: Moonsteel Broadsword
-					}),
+					{	-- Xizk Goodstitch <Tailoring Supplies>
+						["npcID"] = 2670,
+						["coord"] = { 43.6, 73.1 },
+						["groups"] = {
+							i(7087), 	-- Pattern: Crimson Silk Cloak
+							i(14630), 	-- Pattern: Enchanter's Cowl
+						},
+					},
+					{	-- Zarena Cromwind <Superior Weaponsmith>
+						["npcID"] = 2482,
+						["coord"] = { 43.0, 70.8 },
+						["groups"] = {
+							i(12163), 	-- Plans: Moonsteel Broadsword
+							i(12251),	-- Big Stick
+							i(12252),	-- Staff of Protection
+						},
+					},
 				}),
 				n(-40, {	-- Legacy
 				  	n(-17, {	-- Quests (Legacy)

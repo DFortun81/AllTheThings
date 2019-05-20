@@ -607,8 +607,9 @@ _.Zones =
 								["sourceQuests"] = {11457},
 							}),
 							q(12118, {	--  Travel to Moa'ki Harbor
-								["qg"] = 24810,	-- Anuniaq
 								["sourceQuests"] = {11458},
+								["isBreadcrumb"] = true,
+								["qg"] = 24810,	-- Anuniaq
 							}),
 							q(11472, {	--  The Way to His Heart...
 								["qg"] = 24810,	-- Anuniaq
@@ -1162,7 +1163,8 @@ _.Zones =
 						-- 	["qg"] = 24390,	-- Sage Edan
 						-- }),
 						-- qh(12791, {	--  The Magical Kingdom of Dalaran
-						-- 	["qg"] = 0,	-- Unable to pull from Wowhead.
+						--	["isBreadcrumb"] = true,
+						-- 	["qg"] = 29159,	-- Magister Varenthas
 						-- }),
 						-- qh(11167, {	--  The New Plague
 						-- 	["qg"] = 24126,	-- Apothecary Lysander

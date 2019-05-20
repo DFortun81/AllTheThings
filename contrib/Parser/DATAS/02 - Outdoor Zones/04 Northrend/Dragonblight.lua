@@ -1176,6 +1176,7 @@ _.Zones =
 						-- 	["qg"] = 26415,	-- Senior Sergeant Juktok
 						-- }),
 						-- q(12791, {	--  The Magical Kingdom of Dalaran [Horde]
+						--	["isBreadcrumb"] = true,
 						-- 	["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						-- }),
 						-- q(12260, {	--  The Perfect Dissemblance [Horde]

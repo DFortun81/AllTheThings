@@ -21,16 +21,19 @@ _.Zones =
 						},
 					}),
 					i(15761, {	-- Pattern: Frostsaber Gloves
+						["u"] = 7,
 						["crs"] = {
 							7441,	-- Winterfall Totemic
 						},
 					}),
 					i(15747, {	-- Pattern: Frostsaber Leggings
+						["u"] = 7,
 						["crs"] = {
 							7440,	-- Winterfall Den Watcher
 						},
 					}),
 					i(15779, {	-- Pattern: Frostsaber Tunic
+						["u"] = 7,
 						["crs"] = {
 							7438,	-- Winterfall Ursa
 						},

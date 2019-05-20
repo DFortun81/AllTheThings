@@ -156,11 +156,15 @@ _.Zones =
 							}),
 							qh(26926, {	-- Victory, For Now
 								["qg"] = 44452,	-- Koltira Deathweaver
+							--	["isBreadcrumb"] = true,	-- for Go Fletch! (not marking as such because this quest is a mandatory SQ for another quest in the zone)
 								["sourceQuests"] = { 26925, 27117, 26924 },	-- Araj the Summoner, Brute Strength, & Scholomancer
 							}),
 						}),
 						crit(2, {	-- A Temporary Peace
 							qa(27166, {	-- Go Fletch!
+							--	["sourceQuests"] = { 27165 },	-- Victory, For Now
+							--	"Victory, For Now" is technically a breadcrumb for this quest.
+							--	not marking it as SQ because it's not required for this quest, but is required/mandatory for another quest in the zone
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
 							}),
 							qa(27167, {	-- A Mighty Hunger
@@ -175,11 +179,18 @@ _.Zones =
 							}),
 							qa(27169, {	-- Uther's Blessing
 								["qg"] = 10838,	-- Commander Ashlam Valorfist
-								["sourceQuests"] = { 27167, 27166 },	-- A Mighty Hunger & Go Fletch!
+								["sourceQuests"] = {
+									27167,	-- A Mighty Hunger
+									27166,	-- Go Fletch!
+								--	2 quests above may not be required, actually.
+								--	needs confirmation to see if they're required in addition to "Victory, For Now," or if they can be skipped for this.	
+									26926,	-- Victory, For Now
+								},
 							}),
 							qa(27170, {	-- The Abandoned Crypt
-								["qg"] = 1854,	-- High Priest Thel'danis
 								["sourceQuests"] = { 27169 },	-- Uther's Blessing
+								["coord"] = { 52.0, 82.9, 22 },
+								["qg"] = 1854,	-- High Priest Thel'danis
 							}),
 							o(205258, {	-- Broken Weapons Crate	
 								qa(27171, {	-- Ambushed!

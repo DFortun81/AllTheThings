@@ -663,7 +663,8 @@ _.Zones =
 										["questID"] = 14159,	-- The Rebl Lord's Arsenal
 										["qg"] = 35112,			-- King Geen Greymane
 										["sourceQuests"] = {
-											14154,	-- By the Skin of His Teeth
+											26129,	-- Brothers in Arms
+											24930,	-- While You're At It
 										},
 										["coords"] = {
 											{ 65.83, 77.84, 202 },

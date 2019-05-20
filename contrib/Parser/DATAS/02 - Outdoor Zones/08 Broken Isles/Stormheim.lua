@@ -682,7 +682,7 @@ _.Zones =
 				}),
 				n(-38, { 	-- Profession
 					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129112,	-- Felwort Sample
+						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
@@ -1505,7 +1505,11 @@ _.Zones =
 						["coord"] = { 51.4, 57.0, 634 },
 						["qg"] = 107675,		-- Rax Sixtrigger
 					}),
-					qa(38059),	-- Pins and Needles
+					qa(38059, {	-- Pins and Needles
+						["sourceQuests"] = { 38057 },	-- The Lost Legion
+						["coord"] = { 77.6, 49.5, 636 },	-- Stormscale Cavern
+						["qg"] = 92414,	-- Knight-Captain Rhodes
+					}),
 					q(42444,  {	-- Plight of the Blackfeather
 						["qg"] = 107499,	-- Frightened Ravenbear
 						["coord"] = { 50.2, 34.1, 634 }

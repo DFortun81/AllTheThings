@@ -1241,7 +1241,7 @@ _.Craftables =
 					i(15075),	-- Chimeric Vest
 					i(15053),	-- Volcanic Breastplate
 					i(15064),	-- Warbear Harness
-					i(15068),	-- Frostsaber Tunic
+					un(8, i(15068)),	-- Frostsaber Tunic
 					i(8349),	-- Feathered Breastplate
 					un(8, i(8211)),		-- Wild Leather Vest
 					i(8200),	-- Big Voodoo Robe
@@ -1280,7 +1280,7 @@ _.Craftables =
 					i(19049),	-- Timbermaw Brawlers
 					un(8, i(22662)),	-- Polar Gloves
 					un(8, i(19686)),	-- Primal Batskin Gloves
-					i(15070),	-- Frostsaber Gloves
+					un(8, i(15070)),	-- Frostsaber Gloves
 					i(15063),	-- Devilsaur Gauntlets
 					un(8, i(21278)),	-- Stormshroud Gloves
 					i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
@@ -1327,7 +1327,7 @@ _.Craftables =
 				n(-329, {	-- Legs
 					i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
 					i(15062),	-- Devilsaur Leggings
-					i(15069),	-- Frostsaber Leggings
+					un(8, i(15069)),	-- Frostsaber Leggings
 					i(15065),	-- Warbear Woolies
 					i(15087),	-- Wicked Leather Pants (Trainable now, old Pattern id 15757 used to teach this.)
 					un(8, i(15060)),	-- Living Leggings

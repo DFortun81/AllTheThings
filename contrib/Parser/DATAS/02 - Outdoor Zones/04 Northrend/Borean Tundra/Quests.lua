@@ -1943,6 +1943,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- The Magical Kingdom of Dalaran	-- aa
+							["isBreadcrumb"] = true,
 							["questID"] = 12791,
 							["qg"] = 29155,	-- Magistrix Kaelana
 							["coord"] = { 41.5, 53.5, 114 },
@@ -2122,6 +2123,7 @@ _.Zones =
 							["questID"] = 12117,
 							["qg"] = 28382,	-- Hotawa
 							["coord"] = { 67.2, 54.8, 114 },
+							["isBreadcrumb"] = true,
 							["sourceQuest"] = 11968,	-- The Tides Turn
 							["groups"] = {
 								i(37283),	-- Wandering Healer's Kilt

@@ -264,7 +264,8 @@ _.Instances = { tier(7, {	-- Legion
 							i(147151),
 							i(147175),
 							i(146993),
-							i(147060)
+							i(147060),
+							i(147025),	-- Recompiled Guardian Module
 --[[ Removed Beta
 		--					i(147058),
 		--					i(147074),
@@ -522,6 +523,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147151),
 					i(146993),
 					i(147194),	-- Band of Rescinded Truths
+					i(147025),	-- Recompiled Guardian Module
 --[[ Removed Beta
 --					i(147074), 
 --					i(147036),
@@ -1018,6 +1020,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147151),
 					i(146993),
 					i(147194),	-- Band of Rescinded Truths
+					i(147025),	-- Recompiled Guardian Module
 --[[Removed Beta
 --					i(147074),
 --					i(147036),

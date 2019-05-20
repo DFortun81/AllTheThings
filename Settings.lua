@@ -133,6 +133,7 @@ local TooltipSettingsBase = {
 		["Report:Collected"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
+		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
@@ -1463,6 +1464,32 @@ function(self)
 end);
 ReportUnsortedCompletedQuestsCheckBox:SetATTTooltip("Enable this option if you only want to see the Quest ID for any quest you complete that isn't already listed in the addon.");
 ReportUnsortedCompletedQuestsCheckBox:SetPoint("TOPLEFT", ReportCompletedQuestsCheckBox, "BOTTOMLEFT", 4, 4);
+
+local ChangeSkipCutsceneState = function(self, checked)
+	if checked then
+		self:RegisterEvent("PLAY_MOVIE");
+		self:RegisterEvent("CINEMATIC_START");
+	else
+		self:UnregisterEvent("PLAY_MOVIE");
+		self:UnregisterEvent("CINEMATIC_START");
+	end
+end
+local AutomaticallySkipCutscenesCheckBox = settings:CreateCheckBox("Automatically Skip Cutscenes",
+function(self)
+	local checked = settings:GetTooltipSetting("Skip:Cutscenes");
+	self:SetChecked(checked);
+	self:SetScript("OnEvent", function(self, ...)
+		-- print(self, "OnEvent", ...);
+		MovieFrame:Hide();
+		CinematicFrame_CancelCinematic();
+	end);
+	ChangeSkipCutsceneState(self, checked);
+end,
+function(self)
+	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked());
+end);
+AutomaticallySkipCutscenesCheckBox:SetATTTooltip("Enable this option if you want ATT to automatically skip all cutscenes on your behalf.");
+AutomaticallySkipCutscenesCheckBox:SetPoint("TOPLEFT", ReportUnsortedCompletedQuestsCheckBox, "BOTTOMLEFT", -4, 4);
 end)();
 
 ------------------------------------------

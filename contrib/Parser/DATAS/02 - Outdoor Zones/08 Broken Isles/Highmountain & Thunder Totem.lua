@@ -707,7 +707,7 @@ _.Zones =
 						--It does NOT receive repeatable/daily/weekly filter due to this.
 					},
 					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129112,	-- Felwort Sample
+						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
@@ -1005,12 +1005,18 @@ _.Zones =
 								i(121671),
 								i(121670),
 								i(121668),
+								i(121730),	-- Ironbull's Sacrifice
 							  }),
 							  q(39381),	-- Rock Troll in a Hard Place
 							  q(39391),	-- Pet Rocks
 							  q(39425),	-- Stonedark Crystal
 							  q(39588),	-- They Will Pay With Blood
-							  q(39426),	-- Blood Debt
+							  q(39426, { -- Blood Debt
+								i(133122),	-- Betrayal of the Bloodtotem
+								i(133120),	-- Frag's Core
+								i(133115),	-- Stonedark Focus
+								i(133117),	-- Torok's Heart
+							  }),
 							  q(40229),	-- Step into the Dark
 							  q(39456),	-- Unexpected Allies
 							}),
@@ -1039,7 +1045,9 @@ _.Zones =
 								i(130312),	-- Explorer's Delving Loop
 							  }),
 							  q(39577),	-- An Ancient Secret
-							  q(39579),	-- The Backdoor
+							  q(39579, { -- The Backdoor
+								i(133144),	-- Memory of Neltharion
+							  }),
 							  q(39580),	-- The High Chieftain
 							}),
 							crit(7, {	-- Battle of Snowblind Mesa
