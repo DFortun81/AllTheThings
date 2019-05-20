@@ -1221,12 +1221,13 @@ AllTheThings.L = {
 		[-497] = GetSpellInfo(213410).." "..GetSpellInfo(76724),				-- Demonic Offering
 		[-498] = GetSpellInfo(23700),											-- Twisting Nether
 		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
-		[-500] = "WoW Anniversary",-- Dark Iron Dwarves Mole Machine
-		[-501] = GetSpellInfo(265225),											-- Mole Machine
-		[-502] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
+		[-500] = "WoW Anniversary",
+		-- Dark Iron Dwarves Mole Machine
+		[-517] = GetSpellInfo(265225),											-- Mole Machine
+		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
+		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak
 		[-503] = C_Map.GetAreaInfo(8771),										-- Honor's Stand
-		[-503] = C_Map.GetAreaInfo(348),										-- Fire Plume Ridge
-		[-504] = C_Map.GetAreaInfo(537),										-- Aerie Peak
+		[-504] = C_Map.GetAreaInfo(537),										-- Fire Plume Ridge
 		[-505] = C_Map.GetAreaInfo(1584),										-- Blackrock Depths
 		[-506] = C_Map.GetAreaInfo(1438),										-- Nethergarde Keep
 		[-507] = C_Map.GetAreaInfo(3746),										-- The Hand of Gul'dan [Outlands]
@@ -1239,7 +1240,7 @@ AllTheThings.L = {
 		[-514] = C_Map.GetAreaInfo(7139),										-- Elemental Plateau
 		[-515] = C_Map.GetAreaInfo(8648),										-- Aalgen Point
 		[-516] = C_Map.GetAreaInfo(7806),										-- Neltharion's Vault
-		-- Note!! -517 through -519 reserved for if they add drills to BfA content
+		-- Note!! -518 through -519 reserved for if they add drills to BfA content
 				
 		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
