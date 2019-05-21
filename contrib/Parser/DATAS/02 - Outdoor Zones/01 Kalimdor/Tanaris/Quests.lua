@@ -701,10 +701,10 @@ _.Zones =
 					},
 					{	-- OOX-17/TN Distress Beacon
 						["itemID"] = 8623,
-						["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 						["groups"] = {
 							{	-- Find OOX-17/TN!
 								["questID"] = 351,
+								["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 							},
 						},
 					},

@@ -189,6 +189,7 @@ _.Zones =
 					}),
 					qh(24994, {	-- Doom Weed -- anytime
 						["qg"] = 38977,	-- Apothecary Jerrod
+						["coord"] = { 61.7, 34.6, 18 },
 					}),
 					qh(25007, {	-- East... Always to the East
 						["qg"] = 1499,	-- Magistrate Sevren
@@ -297,6 +298,7 @@ _.Zones =
 					}),
 					qh(25003, {	-- The Family Crypt
 						["qg"] = 1500,	-- Coleman Farthing
+						["coord"] = { 54.6, 29.9, 18 },
 						["sourceQuests"] = {
 							25031,	-- Head for the Mills (breadcrumb)
 							24999,	-- Planting the Seed of Fear (unlocks this quest)
