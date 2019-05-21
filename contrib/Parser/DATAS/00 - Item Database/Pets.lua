@@ -518,6 +518,7 @@ pet(89587, 381); 	-- Porcupette
 pet(158464, 2188);	-- Poda
 pet(163800, 2452);	-- Poro
 pet(10394, 70); 	-- Prairie Dog Whistle (Brown Prairie Dog)
+pet(169364, 2698);	-- Prismatic Softshell
 pet(166791, 2405);	-- Pristine Falcon Feather
 pet(166358, 2541);	-- Proper Parrot
 pet(44721, 196); 	-- Proto-Drake Whelp

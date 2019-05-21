@@ -18,6 +18,8 @@ t(147838);	-- Akazamzarak's Spare Hat
 t(163211);	-- Akunda's Firesticks
 t(119217);	-- Alliance Flag of Victory (Alliance)
 t(119220);	-- Alliance Gladiator's Banner (Never Implemented)
+t(169275);	-- Alliance War Banner
+t(169278);	-- Alliance War Standard
 t(153204);	-- All-Seer's Eye
 t(89614);	-- Anatomical Dummy
 t(69776);	-- Ancient Amber

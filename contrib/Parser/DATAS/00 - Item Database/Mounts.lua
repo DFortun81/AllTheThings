@@ -202,6 +202,7 @@ i(167895, 294569);	-- Beastlord's Warwolf
 -- PATCH 8.2.0 --
 -----------------
 
+i(167167, 292407);	-- Ankoan Waveray
 i(169203, 300151);	-- Inkscale Deepseeker
 i(167170, 291538);	-- Unshackled Waveray
 
