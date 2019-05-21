@@ -330,7 +330,7 @@ ItemClassInfo = {
 	},
 };
 WOD_CRAFTED_ITEM = function(id)
-	return 
+	return
 	{
 		["itemID"] = id,
 		["bonusID"] = 525,
@@ -474,7 +474,7 @@ end
 artifact = function(id, t)								-- Create an ARTIFACT Object
 	return struct("artifactID", id, t);
 end
-ach = function(id, altID, t)									-- Create an ACHIEVEMENT Object
+ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
 		t["hordeAchievementID"] = altID;
@@ -650,7 +650,7 @@ dr = function(dropRate, t)										-- Add a Drop Rate to an object.
 end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
-qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object 
+qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
 qg = function(id, t)											-- Add a Quest Giver to an object.
 	if type(id) == "number" then
@@ -693,7 +693,7 @@ model = function(displayID, t)
 	t.displayID = displayID;
 	return t;
 end
-na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object 
+na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
 nld = function(t) return n(-40, t); end						-- Legacy dungeon items header
 
