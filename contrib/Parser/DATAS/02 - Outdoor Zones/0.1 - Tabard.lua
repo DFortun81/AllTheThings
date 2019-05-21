@@ -66,11 +66,17 @@ _.Zones =
 			{	-- Consortium Tabard
 				["itemID"] = 31776,	-- Consortium Tabard
 			},
+			{	-- Frostwolf Battle Tabard
+				["itemID"] = 19031,	-- Frostwolf Battle Tabard
+			},
 			{	-- Green Trophy Tabard of the Illidari
 				["itemID"] = 31404,	-- Green Trophy Tabard of the Illidari
 				["sourceQuests"] = {
 					10781,	-- Battle of the Crimson Watch
 				},
+			},
+			{	-- Mag'har Tabard
+				["itemID"] = 31773,	-- Mag'har Tabard
 			},
 			{	-- Guild Tabard
 				["itemID"] = 5976,	-- Guild Tabard
@@ -108,6 +114,9 @@ _.Zones =
 			{	-- Scryers Tabard
 				["itemID"] = 31780,	-- Scryers Tabard
 			},
+			{	-- Scout's Tabard
+				["itemID"] = 15197,	-- Scout's Tabard
+			},
 			{	-- Sha'tar Tabard
 				["itemID"] = 31781,	-- Sha'tar Tabard
 			},
@@ -119,6 +128,9 @@ _.Zones =
 			},
 			{	-- Sporeggar Tabard
 				["itemID"] = 31775,	-- Sporeggar Tabard
+			},
+			{	-- Stone Guard's Herald
+				["itemID"] = 15199,	-- Stone Guard's Herald
 			},
 			{	-- Stormpike Battle Tabard
 				["itemID"] = 19032,	-- Stormpike Battle Tabard
@@ -156,9 +168,16 @@ _.Zones =
 					9762,	-- The Unwritten Prophecy
 				},
 				["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
+				["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
 			},
 			{	-- Tabard of the Shattered Sun
 				["itemID"] = 35221,	-- Tabard of the Shattered Sun
+			},
+			{	-- Thrallmar Tabard
+				["itemID"] = 24004,	-- Thrallmar Tabard
+			},
+			{	-- Warsong Battle Tabard
+				["itemID"] = 19505,	-- Warsong Battle Tabard
 			},
 		},
 	},
