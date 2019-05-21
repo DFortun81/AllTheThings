@@ -29,6 +29,7 @@ _.Zones =
 					},
 				}),
 				n(152416, {	-- Allseer Oma'kil
+					-- 56280 and 56603 popped kill
 					["coord"] = { 69.0, 37.4, 1355 },
 					["g"] = {
 						i(167786),	-- Germinating Seed
@@ -50,6 +51,9 @@ _.Zones =
 				}),
 				n(152465, {	-- Needlespine
 					["coord"] = { 50.2, 19.1, 1355 },
+				}),
+				n(152681, {	-- Prince Typhonus
+					["coord"] = { 44.2, 70.8, 1355 },
 				}),
 				n(152795, {	-- Sandclaw Stoneshell
 					-- 56277, 56606 popped on first kill
