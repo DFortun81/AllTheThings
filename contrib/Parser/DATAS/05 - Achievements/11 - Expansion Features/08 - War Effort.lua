@@ -30,189 +30,422 @@ _.Achievements =
 						crit(11),		-- Venomarus
 						crit(12),		-- Cresting Goliath
 					}),
-					a(ach(12898, {	-- Azeroth at War: After Lordaeron (Alliance)
-						crit(1),		-- Lordamere Lake
-						crit(2),		-- Undead Rising
-						crit(3),		-- Shadowfang Plague
-						crit(4),		-- Alterac Scouting
-						crit(5),		-- Damming Them All
-						crit(6),		-- Destroying the Keep
-						crit(7),		-- Dalaran Ritual
-						crit(8),		-- Dancing with the Dark Rangers
-						crit(9),		-- Exorcising Dun Garok
-						crit(10),		-- Hillsbrad Mine
-						crit(11),		-- Silverpine Reinforcements
-						crit(12),		-- Deep Elem Mine
-						crit(13),		-- Southshore Sabotage
-					})),
-					h(ach(12869, {	-- Azeroth at War: After Lordaeron (Horde)
-						crit(1),		-- Gilnean Assault
-						crit(2),		-- Wall Them Off
-						crit(3),		-- Lordamere Lake
-						crit(4),		-- Mounted Resistance
-						crit(5),		-- Shadowfang Plague
-						crit(6),		-- Rebuilding Alterac
-						crit(7),		-- Dancing with Dark Rangers
-						crit(8),		-- Dalaran Ritual
-						crit(9),		-- Exorcising Dun Garok
-						crit(10),		-- Azurelode Mine
-						crit(11),		-- Silverpine Reinforcements
-						crit(12),		-- Deep Elem Mine
-						crit(13),		-- Southshore Sabotage
-					})),
-					a(ach(12899, {	-- Azeroth at War: Kalimdor on Fire (Alliance)
-						crit(1),		-- Bilgewater Sabotage
-						crit(2),		-- Siege of Astranaar
-						crit(3),		-- Teldrassil Evacuation
-						crit(4),		-- Ashenvale Pass
-						crit(5),		-- Shreds of Warsong
-						crit(6),		-- Out of Our Depth
-						crit(7),		-- Deeps Scouting
-						crit(8),		-- Darkshore Drilling
-						crit(9),		-- Stardust Spire Counterattack
-						crit(10),		-- Ancient Defenses
-						crit(11),		-- Posting Reinforcements
-						crit(12),		-- Recapture Silverwind Refuge
-						crit(13),		-- Return to Auberdine
-					})),
-					h(ach(12870, {	-- Azeroth at War: Kalimdor on Fire (Horde)
-						crit(1),		-- Shreds of Warsong
-						crit(2),		-- Ashenvale Pass
-						crit(3),		-- Siege of Astranaar
-						crit(4),		-- Teldrassil Evacuation
-						crit(5),		-- Bilgewater Sabotage
-						crit(6),		-- Out of your Depth
-						crit(7),		-- Investigate Stardust Spire
-						crit(8),		-- Return to Auberdine
-						crit(9),		-- Deeps Scouting
-						crit(10),		-- Darkshore Drilling
-						crit(11),		-- Posting Reinforcements
-						crit(12),		-- Recapture Silverwind Refuge
-						crit(13),		-- Ancient Defenses
-					})),
-					a(ach(12896, {	-- Azeroth at War: The Barrens (Alliance)
-						crit(1),		-- Our Fort Was a Triumph
-						crit(2),		-- At a Crossroads
-						crit(3),		-- Razor Hill Supplies
-						crit(4),		-- Lingering in Theramore
-						crit(5),		-- Salvaging Tiragarde
-						crit(6),		-- The Defense of Northwatch Hold
-						crit(7),		-- Barrens at War
-						crit(8),		-- Great Gate of Mulgore
-						crit(9),		-- Azerite Weaponry
-						crit(10),		-- Steamwheedle Alliance
-						crit(11),		-- Echo Isles Navy
-						crit(12),		-- Investigate Wailing Caverns
-						crit(13),		-- Barren Supplies
-					})),
-					h(ach(12867, {	-- Azeroth at War: The Barrens (Horde)
-						crit(1),		-- Defending Durotar
-						crit(2),		-- Tiragarde Ruins
-						crit(3),		-- Blockade of Northwatch
-						crit(4),		-- Salvaging the Battlescar
-						crit(5),		-- At a Crossroads
-						crit(6),		-- Lingering in Theramore
-						crit(7),		-- Great Gate of Mulgore
-						crit(8),		-- Barrens at War
-						crit(9),		-- Orgrimmar Armory
-						crit(10),		-- Echo Isles Navy
-						crit(11),		-- Steamwheedle Alliance
-						crit(12),		-- Investigate Wailing Caverns
-						crit(13),		-- Barren Supplies
-					})),
-					a(ach(13310, {	-- By Nature's Call
-						crit(1),	-- Dryad
-						crit(2),	-- Faerie Dragon
-						crit(3),	-- Keeper of the Grove
-					})),
-					h(ach(13309, {	-- Deforester
-						crit(1),	-- Banshee
-						crit(2),	-- AzerMEK Prototype
-						crit(3),	-- Abomination
-					})),
-					a(ach(12884, {	-- Leader of Troops (Alliance)
-						crit(1),		-- Footmen
-						crit(2),		-- Riflemen
-						crit(3),		-- Priests
-						crit(4),		-- Knights
-						crit(5),		-- Siege Engine
-					})),
-					h(ach(12878, {	-- Leader of Troops (Horde)
-						crit(1),		-- Grunts
-						crit(2),		-- Axe Throwers
-						crit(3),		-- Shaman
-						crit(4),		-- Raiders
-						crit(5),		-- Demolishers
-					})),
-					a(ach(13305, {	-- Night Moves
-						crit(1),	-- Bashal'Aran
-						crit(2),	-- Gloomtide Strand
-						crit(3),	-- Cinderfall Grove
-						crit(4),	-- Lornesta Mine
-						crit(5),	-- Forlorn Crossing
-						crit(6),	-- Ashwood Depot
-						crit(7),	-- Lor'danel Landing
-						a(ach(13302)),	-- Under Cover of Darkness
-					})),
-					h(ach(13306, {	-- Night Moves
-						crit(1),	-- Bashal'Aran
-						crit(2),	-- Gloomtide Strand
-						crit(3),	-- Cinderfall Grove
-						crit(4),	-- Lornesta Mine
-						crit(5),	-- Forlorn Crossing
-						crit(6),	-- Ashwood Depot
-						crit(7),	-- Lor'danel Landing
-						h(ach(13301)),	-- Under Cover of Darkness
-					})),
-					a(ach(13308, {	-- Recruitment Officer
-						crit(1),	-- Kaldorei Archer
-						crit(2),	-- Druid of the Branch
-						crit(3),	-- Kaldorei Hunter
-						crit(4),	-- Kaldorei Sentinel
-						crit(5),	-- Glaive Thrower
-					})),
-					h(ach(13307, {	-- Recruitment Officer
-						crit(1),	-- Forsaken Alchemist
-						crit(2),	-- Forsaken Lancer
-						crit(3),	-- Forsaken Deathguard
-						crit(4),	-- Forsaken Deadshot
-						crit(5),	-- Catapult
-					})),
-					a(ach(12889, {	-- Strike Fast (Alliance)
-						crit(1),		-- Galson's Lode
-						crit(2),		-- Highlands Mill
-						crit(3),		-- Valorcall Pass
-						crit(4),		-- High Perch
-						crit(5),		-- Newstead
-						crit(6),		-- Circle of Elements
-						crit(7),		-- Northfold Crossing
-						a(ach(12888)),	-- Strike Hard
-					})),
-					h(ach(12876, {	-- Strike Fast (Horde)
-						crit(1),		-- Circle of Elements
-						crit(2),		-- Hatchet Ridge
-						crit(3),		-- High Perch
-						crit(4),		-- Northfold Crossing
-						crit(5),		-- Newstead
-						crit(6),		-- Valorcall Pass
-						crit(7),		-- Drywhisker Mine
-						h(ach(12877)),	-- Strike Hard
-					})),
+					{	-- Azeroth at War: After Lordaeron [Alliance] // [Horde]
+						["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+						["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+						["g"] = {
+							{	-- Lordamere Lake [A] / Gilnean Assault [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 1,					-- Lordamere Lake [A] / Gilnean Assault [H]
+							},
+							{	-- Undead Rising [A] / Wall Them Off [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 2,					-- Undead Rising [A] / Wall Them Off [H]
+							},
+							{	-- Shadowfang Plague [A] / Lordamere Lake [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 3,					-- Shadowfang Plague [A] / Lordamere Lake [H]
+							},
+							{	-- Alterac Scouting [A] / Mounted Resistance [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 4,					-- Alterac Scouting [A]/ Mounted Resistance [H]
+							},
+							{	-- Damming Them All [A] / Shadowfang Plague [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 5,					-- Damming Them All [A]/ Shadowfang Plague [H]
+							},
+							{	-- Destroying the Keep [A]/ Rebuilding Alterac [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 6,					-- Destroying the Keep[A]/ Rebuilding Alterac[H]
+							},
+							{	-- Dalaran Ritual [A] / Dancing with the Dark Rangers [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 7,					-- Dalaran Ritual [A]/ Dancing with the Dark Rangers[H]
+							},
+							{	-- Dancing with the Dark Rangers [A] / Dalaran Ritual [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 8,					-- Dancing with the Dark Rangers [A]/ Dalaran Ritual[H]
+							},
+							{	-- Exorcising Dun Garok [A] / [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 9,					-- Exorcising Dun Garok [A]/[H]
+							},
+							{	-- Hillsbrad Mine [A] / Azurelode Mine[H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 10,					-- Hillsbrad Mine [A]/ Azurelode Mine[H]
+							},
+							{	-- Silverpine Reinforcements [A] / [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 11,					-- Silverpine Reinforcements [A]/[H]
+							},
+							{	-- Deep Elem Mine [A] / [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 12,					-- Deep Elem Mine [A]/[H]
+							},
+							{	-- Southshore Sabotage [A] / [H]
+								["allianceAchievementID"] = 12898,	-- Azeroth at War: After Lordaeron (Alliance)
+								["hordeAchievementID"] = 12869,		-- Azeroth at War: After Lordaeron (Horde)
+								["criteriaID"] = 13,					-- Southshore Sabotage [A]/[H]
+							},
+						}
+					},
+					{	-- Azeroth at War: Kalimdor on Fire [Alliance] // [Horde]
+						["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+						["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+						["g"] = {
+							{	-- Bilgewater Sabotage [A] / Shreds of Warsong [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 1,					-- Bilgewater Sabotage [A] / Shreds of Warsong [H]
+							},
+							{	-- Siege of Astranaar [A] / Ashenvale Pass [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 2,					-- Siege of Astranaar [A] / Ashenvale Pass [H]
+							},
+							{	-- Teldrassil Evacuation [A] / Siege of Astranaar [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 3,					-- Teldrassil Evacuation [A] / Siege of Astranaar [H]
+							},
+							{	-- Ashenvale Pass [A]/ Teldrassil Evacuation [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 4,					-- Ashenvale Pass [A]/ Teldrassil Evacuation [H]
+							},
+							{	-- Shreds of Warsong [A]/ Bilgewater Sabotage [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 5,					-- Shreds of Warsong [A]/ Bilgewater Sabotage [H]
+							},
+							{	-- Out of Our Depth [A]/ Out of your Depth [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 6,					-- Out of Our Depth [A]/ Out of your Depth [H]
+							},
+							{	-- Deeps Scouting [A]/ Investigate Stardust Spire [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 7,					-- Deeps Scouting [A]/ Investigate Stardust Spire [H]
+							},
+							{	-- Darkshore Drilling [A]/ Return to Auberdine [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 8,					-- Darkshore Drilling [A]/ Return to Auberdine [H]
+							},
+							{	-- Stardust Spire Counterattack [A]/ Deeps Scouting [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 9,					-- Stardust Spire Counterattack [A]/ Deeps Scouting [H]
+							},
+							{	-- Ancient Defenses [A]/ Darkshore Drilling [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 10,					-- Ancient Defenses [A]/ Darkshore Drilling [H]
+							},
+							{	-- Posting Reinforcements [A]/[H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 11,					-- Posting Reinforcements [A]/[H]
+							},
+							{	-- Recapture Silverwind Refuge [A]/[H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 12,					-- Recapture Silverwind Refuge [A]/[H]
+							},
+							{	-- Return to Auberdine [A]/ Ancient Defenses [H]
+								["allianceAchievementID"] = 12899,	-- Azeroth at War: Kalimdor on Fire (Alliance)
+								["hordeAchievementID"] = 12870,		-- Azeroth at War: Kalimdor on Fire (Horde)
+								["criteriaID"] = 13,					-- Return to Auberdine [A]/ Ancient Defenses [H]
+							},
+						}
+					},
+					{	-- Azeroth at War: The Barrens [Alliance] // [Horde]
+						["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+						["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+						["g"] = {
+							{	-- Our Fort Was a Triumph [A] / Defending Durotar [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 1,					-- Our Fort Was a Triumph [A] / Defending Durotar [H]
+							},
+							{	-- At a Crossroads [A] / Tiragarde Ruins [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 2,					-- At a Crossroads [A] / Tiragarde Ruins [H]
+							},
+							{	-- Razor Hill Supplies [A] / Blockade of Northwatch [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 3,					-- Razor Hill Supplies [A] / Blockade of Northwatch [H]
+							},
+							{	-- Lingering in Theramore [A]/ Salvaging the Battlescar [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 4,					-- Lingering in Theramore [A]/ Salvaging the Battlescar [H]
+							},
+							{	-- Salvaging Tiragarde [A]/ At a Crossroads [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 5,					-- Salvaging Tiragarde [A]/ At a Crossroads [H]
+							},
+							{	-- The Defense of Northwatch Hold [A]/ Lingering in Theramore [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 6,					-- The Defense of Northwatch Hold [A]/ Lingering in Theramore [H]
+							},
+							{	-- Barrens at War [A]/ Great Gate of Mulgore [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 7,					-- Barrens at War [A]/ Great Gate of Mulgore [H]
+							},
+							{	-- Great Gate of Mulgore [A]/ Barrens at War [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 8,					-- Great Gate of Mulgore [A]/ Barrens at War [H]
+							},
+							{	-- Azerite Weaponry [A]/ Orgrimmar Armory [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 9,					-- Azerite Weaponry [A]/ Orgrimmar Armory [H]
+							},
+							{	-- Steamwheedle Alliance [A]/ Echo Isles Navy [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 10,					-- Steamwheedle Alliance [A]/ Echo Isles Navy [H]
+							},
+							{	-- Echo Isles Navy [A]/ Steamwheedle Alliance [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 11,					-- Echo Isles Navy [A]/ Steamwheedle Alliance [H]
+							},
+							{	-- Investigate Wailing Caverns [A]/[H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 12,					-- Investigate Wailing Caverns [A]/[H]
+							},
+							{	-- Barren Supplies [A]/ [H]
+								["allianceAchievementID"] = 12896,	-- Azeroth at War: The Barrens (Alliance)
+								["hordeAchievementID"] = 12867,		-- Azeroth at War: The Barrens (Horde)
+								["criteriaID"] = 13,					-- Barren Supplies [A]/ [H]
+							},
+						}
+					},
+					{	-- By Nature's Call [Alliance] // Deforester [Horde]
+						["allianceAchievementID"] = 13310,	-- By Nature's Call (Alliance)
+						["hordeAchievementID"] = 13309,		-- Deforester (Horde)
+						["g"] = {
+							{	-- Dryad [A] / Banshee [H]
+								["allianceAchievementID"] = 13310,	-- By Nature's Call (Alliance)
+								["hordeAchievementID"] = 13309,		-- Deforester (Horde)
+								["criteriaID"] = 1,					-- Dryad [A] / Banshee [H]
+							},
+							{	-- Faerie Dragon [A] / AzerMEK Prototype [H]
+								["allianceAchievementID"] = 13310,	-- By Nature's Call (Alliance)
+								["hordeAchievementID"] = 13309,		-- Deforester (Horde)
+								["criteriaID"] = 2,					-- Faerie Dragon [A] / AzerMEK Prototype [H]
+							},
+							{	-- Keeper of the Grove [A] / Abomination [H]
+								["allianceAchievementID"] = 13310,	-- By Nature's Call (Alliance)
+								["hordeAchievementID"] = 13309,		-- Deforester (Horde)
+								["criteriaID"] = 3,					-- Keeper of the Grove [A] / Abomination [H]
+							},
+						}
+					},
+					{	-- Leader of Troops [Alliance] // [Horde]
+						["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+						["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+						["g"] = {
+							{	-- Footmen [Alliance] // Grunts [Horde]
+								["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+								["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+								["criteriaID"] = 1,					-- Footmen [Alliance] // Grunts [Horde]
+							},
+							{	-- Riflemen [A]/ Axe Throwers [H]
+								["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+								["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+								["criteriaID"] = 2,					-- Riflemen [A]/ Axe Throwers [H]
+							},
+							{	-- Priests [A]/Shaman [H]
+								["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+								["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+								["criteriaID"] = 3,					-- Priests [A]/Shaman [H]
+							},
+							{	-- Knights [A]/ Raiders [H]
+								["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+								["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+								["criteriaID"] = 4,					-- Knights [A]/ Raiders [H]
+							},
+							{	-- Siege Engine [A]/ Demolishers [H]
+								["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
+								["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
+								["criteriaID"] = 5,					-- Siege Engine [A]/ Demolishers [H]
+							},
+						}
+					},
+					{	-- Night Moves [Alliance] // [Horde]
+						["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+						["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+						["g"] = {
+							{	-- Under Cover of Darkness [A]/ [H]
+								["allianceAchievementID"] = 13302,	-- Under Cover of Darkness (Alliance)
+								["hordeAchievementID"] = 13301,		-- Under Cover of Darkness (Horde)
+							},
+							{	-- Bashal'Aran [Alliance] // [Horde]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 1,					-- Bashal'Aran [Alliance] // [Horde]
+							},
+							{	-- Gloomtide Strand [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 2,					-- Gloomtide Strand [A]/ [H]
+							},
+							{	-- Cinderfall Grove [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 3,					-- Cinderfall Grove [A]/ [H]
+							},
+							{	-- Lornesta Mine [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 4,					-- Lornesta Mine [A]/ [H]
+							},
+							{	-- Forlorn Crossing [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 5,					-- Forlorn Crossing [A]/ [H]
+							},
+							{	-- Ashwood Depot [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 6,					-- Ashwood Depot [A]/ [H]
+							},
+							{	-- Lor'danel Landing [A]/ [H]
+								["allianceAchievementID"] = 13305,	-- Night Moves (Alliance)
+								["hordeAchievementID"] = 13306,		-- Night Moves (Horde)
+								["criteriaID"] = 7,					-- Lor'danel Landing [A]/ [H]
+							},
+						}
+					},
+					{	-- Recruitment Officer [Alliance] // [Horde]
+						["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+						["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+						["g"] = {
+							{	-- Kaldorei Archer [Alliance] // Forsaken Alchemist [Horde]
+								["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+								["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+								["criteriaID"] = 1,					-- Kaldorei Archer [Alliance] // Forsaken Alchemist [Horde]
+							},
+							{	-- Druid of the Branch [A]/ Forsaken Lancer [H]
+								["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+								["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+								["criteriaID"] = 2,					-- Druid of the Branch [A]/ Forsaken Lancer [H]
+							},
+							{	-- Kaldorei Hunter [A]/ Forsaken Deathguard [H]
+								["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+								["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+								["criteriaID"] = 3,					-- Kaldorei Hunter [A]/ Forsaken Deathguard [H]
+							},
+							{	-- Kaldorei Sentinel [A]/ Forsaken Deadshot [H]
+								["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+								["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+								["criteriaID"] = 4,					-- Kaldorei Sentinel [A]/ Forsaken Deadshot [H]
+							},
+							{	-- Glaive Thrower [A]/ Catapult [H]
+								["allianceAchievementID"] = 13308,	-- Recruitment Officer (Alliance)
+								["hordeAchievementID"] = 13307,		-- Recruitment Officer (Horde)
+								["criteriaID"] = 5,					-- Glaive Thrower [A]/ Catapult [H]
+							},
+						}
+					},
+					{	-- Strike Fast [Alliance] // [Horde]
+						["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+						["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+						["g"] = {
+							{	-- Strike Hard [A]/ [H]
+								["allianceAchievementID"] = 12888,	-- Strike Hard (Alliance)
+								["hordeAchievementID"] = 12877,		-- Strike Hard (Horde)
+							},
+							{	-- Galson's Lode [Alliance] // Circle of Elements [Horde]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 1,					-- Galson's Lode [Alliance] // Circle of Elements [Horde]
+							},
+							{	-- Highlands Mill [A]/ Hatchet Ridge [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 2,					-- Highlands Mill [A]/ Hatchet Ridge [H]
+							},
+							{	-- Valorcall Pass [A]/ High Perch [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 3,					-- Valorcall Pass [A]/ High Perch [H]
+							},
+							{	-- High Perch [A]/ Northfold Crossing [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 4,					-- High Perch [A]/ Northfold Crossing [H]
+							},
+							{	-- Newstead [A]/ [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 5,					-- Newstead [A]/ [H]
+							},
+							{	-- Circle of Elements [A]/ Valorcall Pass [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 6,					-- Circle of Elements [A]/ Valorcall Pass [H]
+							},
+							{	-- Northfold Crossing [A]/ Drywhisker Mine [H]
+								["allianceAchievementID"] = 12889,	-- Strike Fast (Alliance)
+								["hordeAchievementID"] = 12876,		-- Strike Fast (Horde)
+								["criteriaID"] = 7,					-- Northfold Crossing [A]/ Drywhisker Mine [H]
+							},
+						}
+					},
 					ach(12872),		-- The Dirty Five
-					a(ach(12886, {	-- Tour of War (Alliance)
-						crit(1),		-- Eitrigg
-						crit(2),		-- Lady Liadrin
-						crit(3),		-- Rokhan
-					})),
-					h(ach(12879, {	-- Tour of War (Horde)
-						crit(1),		-- Danath Trollbane
-						crit(2),		-- Turalyon
-						crit(3),		-- Muradin
-					})),
-					a(ach(13297)),	-- War for the Shore (Alliance)
-					h(ach(13296)),	-- War for the Shore (Horde)
-					a(ach(12881)),	-- War is Hell (Alliance)
-					h(ach(12873)),	-- War is Hell (Horde)
+					{	-- Tour of War [Alliance] // [Horde]
+						["allianceAchievementID"] = 12886,	-- Tour of War (Alliance)
+						["hordeAchievementID"] = 12879,		-- Tour of War (Horde)
+						["g"] = {
+							{	-- Eitrigg [Alliance] // Danath Trollbane [Horde]
+								["allianceAchievementID"] = 12886,	-- Tour of War (Alliance)
+								["hordeAchievementID"] = 12879,		-- Tour of War (Horde)
+								["criteriaID"] = 1,					-- Eitrigg [Alliance] // Danath Trollbane [Horde]
+							},
+							{	-- Lady Liadrin [A] / Turalyon [H]
+								["allianceAchievementID"] = 12886,	-- Tour of War (Alliance)
+								["hordeAchievementID"] = 12879,		-- Tour of War (Horde)
+								["criteriaID"] = 2,					-- Lady Liadrin [A] / Turalyon [H]
+							},
+							{	-- Rokhan [A] / Muradin [H]
+								["allianceAchievementID"] = 12886,	-- Tour of War (Alliance)
+								["hordeAchievementID"] = 12879,		-- Tour of War (Horde)
+								["criteriaID"] = 3,					-- Rokhan [A] / Muradin [H]
+							},
+						}
+					},
+					{	-- War for the Shore [Alliance] // [Horde]
+						["allianceAchievementID"] = 13297,	-- War for the Shore (Alliance)
+						["hordeAchievementID"] = 13296,		-- War for the Shore (Horde)
+					},
+					{	-- War is Hell [Alliance] // [Horde]
+						["allianceAchievementID"] = 12881,	-- War is Hell (Alliance)
+						["hordeAchievementID"] = 12873,		-- War is Hell (Horde)
+					},
 				},
 			}),
 		},
