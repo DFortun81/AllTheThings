@@ -7,7 +7,7 @@ _.Zones =
 		["g"] = {
 			--[[
 			Possible KillIDs that need to be confirmed and tagged to mob:
-			56278, 56297, 56586, 56605, 56669, 56670, 56118
+			56278, 56297, 56586, 56605, 56669, 56670
 			]]--
 			n(-16,  {	-- Rares
 				n(153314, {	-- Aldrantiss
@@ -65,6 +65,9 @@ _.Zones =
 					["g"] = {
 						i(168155),	-- Chum
 					},
+				}),
+				n(152545, {	-- Scale Matriarch Vynara
+					["coord"] = { 27.2, 37.1, 13555 },
 				}),
 				n(155841, {	-- Shadowbinder Athissa (nothing happened on the kill. No quest ID, no ach criteria, no drops, etc...)
 					["coord"] = { 74.0, 31.3, 1355 },

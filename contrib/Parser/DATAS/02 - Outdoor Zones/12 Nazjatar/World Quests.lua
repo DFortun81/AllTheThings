@@ -20,7 +20,7 @@ _.Zones =
 						["isWQ"] = 120,
 					},
 					{	-- Give 'Em Shell
-						["questID"] = 56041,
+						["questID"] = 56041, -- also popped 56293, 56590
 						["isWQ"] = 120,
 					},
 					{	-- Jumping Jellies
@@ -42,6 +42,26 @@ _.Zones =
 							{	-- Puzzle Performer (Hard Leylocked Chest)
 								["achievementID"] = 13764,
 								["criteriaID"] = 3,
+							},
+						},
+					},
+					{	-- Leylocked Chest
+						["questID"] = 56024,
+						["isWQ"] = 120,
+						["g"] = {
+							{	-- Puzzle Performer (Medium Leylocked Chest)
+								["achievementID"] = 13764,
+								["criteriaID"] = 2,
+							},
+						},
+					},
+					{	-- Leylocked Chest
+						["questID"] = 56025,
+						["isWQ"] = 120,
+						["g"] = {
+							{	-- Puzzle Performer (Easy Leylocked Chest)
+								["achievementID"] = 13764,
+								["criteriaID"] = 1,
 							},
 						},
 					},

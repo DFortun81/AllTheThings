@@ -55,7 +55,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
-				{	-- A Tempered Blade
+				{	-- A Tempered Blade (Unlocks the rest of the zone?)
 					["questID"] = 56156,
 					["qg"] = 154248,	-- Bladesman Inowari
 					["coord"] = { 39.4, 53.4, 1355 },
@@ -75,6 +75,13 @@ _.Zones =
 					["coord"] = { 48.4, 62.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
+				},
+				{	-- An Abyssal Opportunity
+					["questID"] = 56347,
+					["qg"] = 154257,	-- Instructor Ulooaka
+					["coord"] = { 37.9, 52.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56346,	-- Ancient Technology
 				},
 				{	-- An Abyssal Opportunity
 					["questID"] = 56353,
@@ -105,7 +112,7 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Brinestone Pickaxe
+				{	-- Brinestone Pickaxe -- possibly drops from any rare?
 					["itemID"] = 168081,
 					["crs"] = {
 						152795,	-- Sandclaw Stoneshell
@@ -119,10 +126,14 @@ _.Zones =
 				{	-- Broken Abyssal Focus
 					["objectID"] = 327596,
 					["coord"] = { 38.1, 36.9, 1355 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Ancient Technology
+							["questID"] = 56346,
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- Ancient Technology
 							["questID"] = 56354,
+							["races"] = HORDE_ONLY,
 						},
 					},
 				},
@@ -150,16 +161,24 @@ _.Zones =
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Chum
+				{	-- Chum -- possibly drops from any rare?
 					["itemID"] = 168155,
 					["crs"] = {
 						152542,	-- Scale Matriarch Zodia
+						152545,	-- Scale Matriarch Vynara
 					},
 					["g"] = {
 						{	-- What Will It Lure?
 							["questID"] = 55602,
 						},
 					},
+				},
+				{	-- City of Drowned Friends -- TODO:: verify sourceQuest
+					["questID"] = 56309,
+					["qg"] = 154522,	-- Shandris Feathermoon
+					["coord"] = { 76.1, 45.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
 				},
 				{	-- City of Drowned Friends -- TODO:: verify sourceQuest
 					["questID"] = 56310,
@@ -242,6 +261,11 @@ _.Zones =
 							["sourceQuest"] = 56244,	-- Diaries of the Dead
 						},
 						{	-- Treasure Tale
+							["questID"] = 56247,
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 26246,	-- Enchanted Lock
+						},
+						{	-- Treasure Tale
 							["questID"] = 56248,
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56245,	-- Enchanted Lock
@@ -293,10 +317,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
-				{	-- Germinating Seed
+				{	-- Germinating Seed -- possibly drops from any rare?
 					["itemID"] = 167786,
 					["crs"] = {
 						152416,	-- Allseer Oma'kil
+						152545,	-- Scale Matriarch Vynara
 					},
 					["g"] = {
 						{	-- What Will It Grow?
@@ -362,7 +387,6 @@ _.Zones =
 					["questID"] = 56422,
 					["qg"] = 154601,	-- Kelya Moonfall
 					["coord"] = { 80.2, 31.8, 1355 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 154514,	-- Saving Corin
 				},
 				{	-- Preserved Clues
@@ -553,7 +577,7 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Save a Friend
+				{	-- Save a Friend (unlocks the rest of the zone?)
 					["questID"] = 55500,
 					["qg"] = 152047,	-- Poen Gillbrack
 					["coord"] = { 38.8, 42.4, 1355 },
@@ -564,7 +588,6 @@ _.Zones =
 					["questID"] = 56321,
 					["qg"] = 154514,	-- Kelya Moonfall
 					["coord"] = { 80.0, 31.4, 1355 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56304,	-- The High Life
 				},
 				{	-- Scouting the Palace
@@ -627,6 +650,28 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55481,	-- Scouting the Palace
 				},
+				{	-- Silver Knife (inside first looted arcane chest)
+					["itemID"] = 169215,
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Obtained from the first Arcane Chest you find.",
+					["g"] = {
+						{	-- Strange Silver Knife
+							["questID"] = 56239,
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
+				},
+				{	-- Silver Knife (inside first looted arcane chest)
+					["itemID"] = 169216,
+					["races"] = HORDE_ONLY,
+					["description"] = "Obtained from the first Arcane Chest you find.",
+					["g"] = {
+						{	-- Strange Silver Knife
+							["questID"] = 56240,
+							["races"] = HORDE_ONLY,
+						},
+					},
+				},
 				{	-- Snap Back
 					["questID"] = 56118,
 					["qg"] = 154143,	-- Collector Kojo
@@ -658,27 +703,12 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Silver Knife (inside first looted arcane chest)
-					["itemID"] = 169215,
+				{	-- The Ever Drowning
+					["questID"] = 56311,
+					["qg"] = 154660,	-- Shandris Feathermoon
+					["coord"] = { 73.9, 41.7, 1355 },
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "Obtained from the first Arcane Chest you find.",
-					["g"] = {
-						{	-- Strange Silver Knife
-							["questID"] = 56239,
-							["races"] = ALLIANCE_ONLY,
-						},
-					},
-				},
-				{	-- Silver Knife (inside first looted arcane chest)
-					["itemID"] = 169216,
-					["races"] = HORDE_ONLY,
-					["description"] = "Obtained from the first Arcane Chest you find.",
-					["g"] = {
-						{	-- Strange Silver Knife
-							["questID"] = 56240,
-							["races"] = HORDE_ONLY,
-						},
-					},
+					["sourceQuest"] = 56309,	-- City of Drowned Friends
 				},
 				{	-- The Ever Drowning
 					["questID"] = 56312,
@@ -705,12 +735,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54018,	-- Descent
 				},
-				{	-- The High Life -- TODO:: verify sourceQuest
+				{	-- The High Life
 					["questID"] = 56304,
 					["qg"] = 154574,	-- Kelya Moonfall
 					["coord"] = { 74.1, 24.9, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["sourceQuests"] = {
+						56156,	-- A Tempered Blade
+						55500,	-- Save a Friend
+					},
 				},
 				{	-- The Lost Shaman
 					["questID"] = 55361,
@@ -734,6 +766,13 @@ _.Zones =
 					["sourceQuest"] = 56176,	-- Desperate Need
 				},
 				{	-- The Warbringer
+					["questID"] = 56313,
+					["qg"] = 155071,	-- Shandris Feathermoon
+					["coord"] = { 79.7, 44.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56311,	-- The Ever Drowning
+				},
+				{	-- The Warbringer
 					["questID"] = 56314,
 					["qg"] = 155325,	-- First Arcanist Thalyssra
 					["coord"] = { 79.7, 44.9, 1355 },
@@ -741,11 +780,25 @@ _.Zones =
 					["sourceQuest"] = 56312,	-- The Ever Drowning
 				},
 				{	-- They Made Their Choice (possibly opens up a new quest line?)
+					["questID"] = 56315,
+					["qg"] = 155071,	-- Shandris Feathermoon
+					["coord"] = { 79.7, 44.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56313,	-- The Warbringer
+				},
+				{	-- They Made Their Choice (possibly opens up a new quest line?)
 					["questID"] = 56316,
 					["qg"] = 155325,	-- First Arcanist Thalyssra
 					["coord"] = { 79.7, 44.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56314,	-- The Warbringer
+				},
+				{	-- Turn the Scale
+					["questID"] = 56152,
+					["qg"] = 154238,	-- Tracker Akatani
+					["coord"] = { 31.2, 37.5, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
 				},
 				{	-- Up Against it
 					["questID"] = 56644,
