@@ -10081,11 +10081,11 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					['OnUpdate'] = function(data)
 						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
 						if data.visible and data.saved then
-							if IsInInstance() then
+							if IsInInstance() or C_Scenario.IsInScenario() then
 								data.shouldReset = true;
 							elseif data.shouldReset then
 								data.shouldReset = nil;
-								ResetInstances();
+								C_Timer.After(0.5, ResetInstances);
 							end
 						end
 					end,
