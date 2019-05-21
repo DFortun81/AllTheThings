@@ -9,7 +9,13 @@ _.Zones =
 				n(-17,  {	-- Quests
 					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
 					-- most of the zone unlocks once you get the Welcome to the Resistance achievement for your faction.
-					
+					{	-- Abduction Reduction
+						["questID"] = 55905,
+						["qg"] = 153373,	-- Penny Clobberbottom
+						["coord"] = { 70.9, 37.6, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Aid from Nordrassil
 						["questID"] = 55463,
 						["qg"] = 151936,	-- Mylune
@@ -201,6 +207,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55651,	-- To Mechagon!
 					},
+					{	-- Ready to Rumble
+						["questID"] = 54929,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.4, 38.7, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54086,	-- Right Bot for the Job
+					},
 					{	-- Rescuing the Resistance
 						["questID"] = 55730, -- also popped 56004, 56005
 						["qg"] = 152820,	-- Prince Erazmin
@@ -308,6 +321,38 @@ _.Zones =
 						["coord"] = { 37.0, 47.1, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55298,	-- Fishing For Something Bigger
+					},
+					{	-- Toys Like Us
+						["questID"] = 56572,
+						["qg"] = 155450,	-- Jepetto Joybuzz
+						["coord"] = { 70.2, 32.9, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["g"] = {
+							i(169838, {	-- Azeroth Mini: Starter Pack
+								i(169796, {	-- Azeroth Mini Collection: Mechagon
+									["questID"] = 56426,
+								}),
+								i(169794, {	-- Azeroth Mini: Izira Gearsworn
+									{	-- Most Minis Wins (Izira Gearsworn)
+										["achievementID"] = 13708,
+										["criteriaID"] = 1,
+									},
+								}),
+								i(169844, {	-- Azeroth Mini: Overspark
+									{	-- Most Minis Wins (Overspark)
+										["achievementID"] = 13708,
+										["criteriaID"] = 4,
+									},
+								}),
+								i(169797, {	-- Azeroth Mini: Wrenchbot
+									{	-- Most Minis Wins (Wrenchbot)
+										["achievementID"] = 13708,
+										["criteriaID"] = 2,
+									},
+								}),
+							}),
+						},
 					},
 					{	-- Upgraded
 						["questID"] = 55708,

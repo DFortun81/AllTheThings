@@ -25,10 +25,12 @@ _.Zones =
 								{	-- Gnomefeaster
 									["criteriaID"] = 1,
 									["crs"] = { 154922 },	-- Gnomefeaster
+									["coord"] = { 64.7, 64.6, 1462 },
 								},
 								{	-- Goldenbot XD
 									["criteriaID"] = 3,
 									["crs"] = { 154924 },	-- Goldenbot XD
+									["coord"] = { 60.6, 56.9, 1462 },
 								},
 								{	-- Sputtertube
 									["criteriaID"] = 2,
