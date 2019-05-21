@@ -811,7 +811,6 @@ _.Zones =
 						["questID"] = 866,
 						["qg"] = 3446,	-- Mebok Mizzyrix
 						["coord"] = { 67.8, 71.6, 10 },
-						["races"] = HORDE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
 						["groups"] = {
 							i(5341),	-- Spore-Covered Tunic
