@@ -39,6 +39,7 @@ _.Achievements =
 					{	-- Theramore's Fall
 						["allianceAchievementID"] = 7467,	-- Theramore's Fall [Alliance]
 						["hordeAchievementID"] = 7468,		-- Theramore's Fall [Horde]
+						["un"] = 3,							-- Unobtainable after MoP Launch
 					},
 					un(3, ach(7852)),		-- They're Both Footballs?
 					un(3, ach(4887)),		-- Tripping the Rifts
