@@ -254,7 +254,21 @@ _.Achievements =
 						crit(7),		-- I Came, I Clawed, I Conquered
 						crit(8),		-- The Legion Will NOT Conquer All
 					}),
-					a(ach(9564, {	-- Securing Draenor (Alliance)
+					ach(9564, 9562, {	-- Securing Draenor [A] / [H]
+						crit(1),		-- Assault on the Iron Siegeworks [A] / [H]
+						crit(2),		-- Assault on Stonefury Cliffs [A] / [H]
+						crit(3),		-- Assault on Magnarok [A] / [H]
+						crit(4),		-- Assault on the Pit [A] / [H]
+						crit(5),		-- Assault on the Everbloom Wilds [A] / [H]
+						crit(6),		-- Assault on the Broken Precipice [A] / [H]
+						crit(7),		-- Assault on Mok'gol Watchpost [A] / Shattrath Harbor [H]
+						crit(8),		-- Assault on Socrethar's Rise [A] / Mok'gol Watchpost [H]
+						crit(9),		-- Assault on Darktide Roost [A] / Socrethar's Rise [H]
+						crit(10),		-- Assault on Skettis [A] / Darktide Roost [H]
+						crit(11),		-- Assault on Pillars of Fate [A] / [H]
+						crit(12),		-- Assault on Shattrath Harbor [A] / Skettis [H]
+					}),
+					--[[a(ach(9564, {	-- Securing Draenor (Alliance)
 						crit(9),		-- Assault on Darktide Roost
 						crit(3),		-- Assault on Magnarok
 						crit(7),		-- Assault on Mok'gol Watchpost
@@ -281,7 +295,7 @@ _.Achievements =
 						crit(5),		-- Assault on the Everbloom Wilds
 						crit(1),		-- Assault on the Iron Siegeworks
 						crit(4),		-- Assault on the Pit
-					})),
+					})),]]
 					a(ach(9602, {	-- Shoot For the Moon
 						crit(1),		-- Bonus Objective: Bloodthorn Cave
 						crit(2),		-- Bonus Objective: The Burial Fields
@@ -320,8 +334,7 @@ _.Achievements =
 						crit(3),		-- Bonus Objective: Snarlpaw Ledge
 					}),
 					ach(9432),		-- Would You Like a Pamphlet? (Shadowmoon Enclave)
-					a(ach(9530)),	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
-					h(ach(9531)),	-- Writing in the Snow (Horde) (Bloodmaul Stronghold)
+					ach(9530, 9531), -- Writing in the Snow (Alliance) / (Horde) (Bloodmaul Stronghold)
 					ach(9479),		-- You Can't Make a Giant Omelette... (Darktide Roost)
 					ach(9481),		-- You Have Been Rylakinated! (Darktide Roost)
 					h(ach(8671, {	-- You'll Get Caught Up In The... Frostfire! (unlocks ability to buy Frostfire Treasure Map from Srikka in Warspear)

@@ -8,7 +8,16 @@ _.Achievements =
 		["groups"] = {
 			n(-9976, {	-- Kalimdor
 				["groups"] = {
-					a(ach(4925, {	-- Ashenvale Quests (Alliance)
+					ach(4925, 4976, {	-- Ashenvale Quests (Alliance) / (Horde)
+						crit(1),		-- Maestra's Post [A] / The Corrupted Heart of the Forest [H]
+						crit(2),		-- Saving Astranaar [A] / The Diplomat from Silvermoon [H]
+						crit(3),		-- Stardust Spire [A] / Splintertree's Demonic Defense [H]
+						crit(4),		-- The Power of Dartol's Rod [A] / Zoram'gar Outpost [H]
+						crit(5),		-- Bringing Harmony to the Elements [A] / The Bombing of Astranaar [H]
+						crit(6),		-- The Satyr of Satyrnaar [A] / Weapons of Their Destruction [H]
+						crit(7),		-- The Corrupted Heart of the Forest [A] / Bringing Harmony to the Elements [H]
+					}),
+					--[[a(ach(4925, {	-- Ashenvale Quests (Alliance)
 						crit(1),		-- Maestra's Post
 						crit(2),		-- Saving Astranaar
 						crit(3),		-- Stardust Spire
@@ -25,7 +34,7 @@ _.Achievements =
 						crit(5),		-- The Bombing of Astranaar
 						crit(6),		-- Weapons of Their Destruction
 						crit(7),		-- Bringing Harmony to the Elements
-					})),
+					})),]]
 					h(ach(4927, {	-- Azshara Quests
 						crit(1),		-- Defending Orgrimmar
 						crit(2),		-- Redirecting the Ley Lines
@@ -61,7 +70,16 @@ _.Achievements =
 						crit(4),		-- Uniting the Tribes
 						crit(5),		-- Nijel's Point
 					}),
-					a(ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
+					ach(4929, 4978, {	-- Dustwallow Marsh Quests (Alliance) / (Horde)
+						crit(1),		-- 	Disgrace the Defectors [A] / Wild Threats [H]
+						crit(2),		-- "Swamp Eye" Story [A] / Work Left Undone [H]
+						crit(3),		-- The Terror of Theramore [A] / "Swamp Eye" Story [H]
+						crit(4),		-- Defias in Dustwallow [A] /  Connection to the Grimtotem [H]
+						crit(5),		-- Prisoners of the Grimtotem [A] / Onyxia's Brood [H]
+						crit(6),		-- The Hyal Family [A] / Challenging the Overlord [H]
+						crit(7),		-- The Challenge of the Stonemaul [A] / [H]
+					}),
+					--[[a(ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 						crit(1),		-- 	Disgrace the Defectors
 						crit(2),		-- "Swamp Eye" Story
 						crit(3),		-- The Terror of Theramore
@@ -78,7 +96,7 @@ _.Achievements =
 						crit(5),		-- Onyxia's Brood
 						crit(6),		-- Challenging the Overlord
 						crit(7),		-- The Challenge of the Stonemaul
-					})),
+					})),]]
 					ach(5443, {		-- E'ko Madness (Winterspring)
 						crit(1),		-- Winterspring Furbolg
 						crit(2),		-- Wildkin
@@ -99,7 +117,14 @@ _.Achievements =
 						crit(8),		-- War in the Forest
 						crit(9),		-- The Timbermaw's Ally
 					}),
-					a(ach(4932, {	-- Feralas Quests (Alliance)
+					ach(4932, 4979, {	-- Feralas Quests (Alliance) / (Horde)
+						crit(1),		-- The Fate of Taerar [A] / [H]
+						crit(2),		-- The Twilight Sermon [A] / [H]
+						crit(3),		-- Freed [A] / Muisek [H]
+						crit(4),		-- Forces of Nature [A] / Freed [H]
+						crit(5),		-- The Dragons of Nightmare [A] / [H]
+					}),
+					--[[a(ach(4932, {	-- Feralas Quests (Alliance)
 						crit(1),		-- The Fate of Taerar
 						crit(2),		-- The Twilight Sermon
 						crit(3),		-- Freed
@@ -112,7 +137,7 @@ _.Achievements =
 						crit(3),		-- Muisek
 						crit(4),		-- Freed
 						crit(5),		-- The Dragons of Nightmare
-					})),
+					})),]]
 					a(ach(5453)),	-- Ghosts in the Dark (Darkshore)
 					ach(5448),		-- Glutton for Fiery Punishment (Azshara)
 					ach(5546),		-- Glutton for Icy Punishment (Azshara)
@@ -150,7 +175,16 @@ _.Achievements =
 						crit(4),		-- A Terrible Purpose
 						crit(5),		-- Twilight Lexicon
 					}),
-					a(ach(4937, {	-- Southern Barrens Quests (Alliance)
+					ach(4937, 4981, {	-- Southern Barrens Quests (Alliance) / (Horde)
+						crit(1),		-- Honor's Stand [A] / Hunter's Hill [H]
+						crit(2),		-- Northwatch Hold [A] / Camp Una'fe [H]
+						crit(3),		-- Teegan's Expedition [A] / Life from the Dream [H]
+						crit(4),		-- Life from the Dream [A] / Vendetta Point [H]
+						crit(5),		-- Forward Command [A] / Desolation Hold [H]
+						crit(6),		-- Firestone Point [A] / [H]
+						crit(7),		-- Fort Triumph [A] / Spearhead [H]
+					}),
+					--[[a(ach(4937, {	-- Southern Barrens Quests (Alliance)
 						crit(1),		-- Honor's Stand
 						crit(2),		-- Northwatch Hold
 						crit(3),		-- Teegan's Expedition
@@ -167,8 +201,14 @@ _.Achievements =
 						crit(5),		-- Desolation Hold
 						crit(6),		-- Firestone Point
 						crit(7),		-- Spearhead
-					})),
-					a(ach(4936, {	-- Stonetalon Mountains Quests (Alliance)
+					})),]]
+					ach(4936, 4980, {	-- Stonetalon Mountains Quests (Alliance) / (Horde)
+						crit(1),		-- Clearing a Path [A] / A Short-Lived Victory [H]
+						crit(2),		-- Slay the Warlord [A] / Legionnaire [H]
+						crit(3),		-- Seldarria [A] / Da Voodoo [H]
+						crit(4),		-- An Unconventional Ally [A] / Honor... Never Forsake It [H]
+					}),
+					--[[a(ach(4936, {	-- Stonetalon Mountains Quests (Alliance)
 						crit(1),		-- Clearing a Path
 						crit(2),		-- Slay the Warlord
 						crit(3),		-- Seldarria
@@ -179,7 +219,7 @@ _.Achievements =
 						crit(2),		-- Legionnaire
 						crit(3),		-- Da Voodoo
 						crit(4),		-- Honor... Never Forsake It
-					})),
+					})),]]
 					ach(4935, {		-- Tanaris Quests
 						crit(1),		-- Southsea Pirates
 						crit(2),		-- Bug Free
