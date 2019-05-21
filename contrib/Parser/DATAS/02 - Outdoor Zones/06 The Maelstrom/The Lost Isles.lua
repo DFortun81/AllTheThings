@@ -10,6 +10,9 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",
 			["maps"] = {
 				175,	-- Kaja'mite Cavern
+				176,	-- Volcanoth's Lair
+				177,	-- Gallywix Labor Mine - Mine Tunnels
+				178,	-- Gallywix Labor Mine - Mine Shaft
 			},
 			["groups"] = {
 				n(-17, {	-- Quests
