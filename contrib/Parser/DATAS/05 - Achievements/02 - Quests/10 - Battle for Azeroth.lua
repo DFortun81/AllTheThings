@@ -142,9 +142,9 @@ _.Achievements =
 						crit(6),		-- Boon of Krag'wa
 					})),
 					ach(12593, 13294, {	-- Loremaster of Kul Tiras [A] / Loremaster of Zandalar [H]
-						ach(12473),		-- A Sound Plan [A] / The Throne of Zuldazar [H]
-						ach(12497),		-- Drust Do It. [A] / The Dark Heart of Nazmir [H]
-						ach(12496),		-- Stormsong and Dance [A] / Secrets in the Sands [H]
+						ach(12473, 11861),		-- A Sound Plan [A] / The Throne of Zuldazar [H]
+						ach(12497, 11868),		-- Drust Do It. [A] / The Dark Heart of Nazmir [H]
+						ach(12496, 12478),		-- Stormsong and Dance [A] / Secrets in the Sands [H]
 					}),
 					--[[a(ach(12593, {	-- Loremaster of Kul Tiras
 						ach(12473),		-- A Sound Plan
