@@ -221,7 +221,6 @@ _.Zones =
 						{	-- Dread Ship Vazuvius
 							["npcID"] = 73281,		-- Dread Ship Vazuvius
 							["questID"] = 33290,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
-							
 							["isDaily"] = true,
 							["description"] = "Need to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 							["g"] = {
@@ -284,13 +283,14 @@ _.Zones =
 						}),
 						n(73172, {	-- Flintlord Gairan
 								["questID"] = 33309,
+								["isDaily"] = true,
 								["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 28,		-- Ordon Death Chime [Criteria]
-								["itemID"] = 104298,	-- Ordon Death Chime [Item]
-								["dr"] = 3,
-							},
+									{
+										["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+										["criteriaID"] = 28,		-- Ordon Death Chime [Criteria]
+										["itemID"] = 104298,	-- Ordon Death Chime [Item]
+										["dr"] = 3,
+									},
 							},
 						}),
 						n(73282, { 	-- Garnia
@@ -520,6 +520,7 @@ _.Zones =
 						}),
 						n(72808, {	-- Tsavo'ka
 							["questID"] = 33304,
+							["isDaily"] = true,
 							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -531,6 +532,7 @@ _.Zones =
 						}),
 						n(73173, {	-- Urdur the Cauterizer
 							["questID"] = 33308,
+							["isDaily"] = true,
 							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
@@ -547,31 +549,33 @@ _.Zones =
 							},
 						}),
 						n(73170, {	-- Watcher Osu
-								["questID"] = 33322,
+							["questID"] = 33322,
+							["isDaily"] = true,
 							["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
-								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 2.0,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 23,		-- Ashen Stone [Criteria]
-								["itemID"] = 104305,	-- Ashen Stone [Item]
-								["dr"] = 1.0,
-							},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
+									["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
+									["dr"] = 2.0,
+								},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 23,		-- Ashen Stone [Criteria]
+									["itemID"] = 104305,	-- Ashen Stone [Item]
+									["dr"] = 1.0,
+								},
 							},
 						}),
 						n(72245, {	-- Zesqua
-								["questID"] = 33316,
+							["questID"] = 33316,
+							["isDaily"] = true,
 							["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 25,		-- Rain Stone [Criteria]
-								["itemID"] = 104303,	-- Rain Stone [Item]
-								["dr"] = 0.9,
-							},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 25,		-- Rain Stone [Criteria]
+									["itemID"] = 104303,	-- Rain Stone [Item]
+									["dr"] = 0.9,
+								},
 							},
 						}),
 						n(71919, { 	-- Zhu-Gon the Sour
