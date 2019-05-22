@@ -29,6 +29,7 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146159,	-- Ensemble: Vindictive Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -64,6 +65,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146157,	-- Ensemble: Vindictive Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -99,6 +101,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 146161,	-- Ensemble: Vindictive Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -132,8 +135,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 146169,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -165,10 +169,38 @@ _.Zones =
 											{	-- Vindictive Combatant's Dragonhide Moccasins
 												["itemID"] = 135938,	-- Vindictive Combatant's Dragonhide Moccasins
 											},
+											{	-- Fearless Combatant's Dragonhide Helm
+												["itemID"] = 142909,	-- Fearless Combatant's Dragonhide Helm
+											},
+											{	-- Fearless Combatant's Dragonhide Spaulders
+												["itemID"] = 142912,	-- Fearless Combatant's Dragonhide Spaulders
+											},
+											{	-- Fearless Combatant's Dragonhide Cloak
+												["itemID"] = 142991,	-- Fearless Combatant's Dragonhide Cloak
+											},
+											{	-- Fearless Combatant's Dragonhide Tunic
+												["itemID"] = 142911,	-- Fearless Combatant's Dragonhide Tunic
+											},
+											{	-- Fearless Combatant's Dragonhide Wristguards
+												["itemID"] = 142914,	-- Fearless Combatant's Dragonhide Wristguards
+											},
+											{	-- Fearless Combatant's Dragonhide Gloves
+												["itemID"] = 142908,	-- Fearless Combatant's Dragonhide Gloves
+											},
+											{	-- Fearless Combatant's Dragonhide Belt
+												["itemID"] = 142913,	-- Fearless Combatant's Dragonhide Belt
+											},
+											{	-- Fearless Combatant's Dragonhide Legguards
+												["itemID"] = 142910,	-- Fearless Combatant's Dragonhide Legguards
+											},
+											{	-- Fearless Combatant's Dragonhide Moccasins
+												["itemID"] = 142907,	-- Fearless Combatant's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 146173,	-- Ensemble: Vindictive Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -204,6 +236,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -239,6 +272,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 146265,	-- Ensemble: Vindictive Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -274,6 +308,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146155,	-- Ensemble: Vindictive Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -309,6 +344,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146153,	-- Ensemble: Vindictive Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -344,6 +380,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146167,	-- Ensemble: Vindictive Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -375,10 +412,38 @@ _.Zones =
 											{	-- Vindictive Combatant's Scaled Sabatons
 												["itemID"] = 135971,	-- Vindictive Combatant's Scaled Sabatons
 											},
+											{	-- Fearless Combatant's Scaled Helm
+												["itemID"] = 142942,	-- Fearless Combatant's Scaled Helm
+											},
+											{	-- Fearless Combatant's Scaled Shoulders
+												["itemID"] = 142944,	-- Fearless Combatant's Scaled Shoulders
+											},
+											{	-- Fearless Combatant's Greatcloak of Faith
+												["itemID"] = 142996,	-- Fearless Combatant's Greatcloak of Faith
+											},
+											{	-- Fearless Combatant's Scaled Chestpiece
+												["itemID"] = 142939,	-- Fearless Combatant's Scaled Chestpiece
+											},
+											{	-- Fearless Combatant's Scaled Wristplates
+												["itemID"] = 142946,	-- Fearless Combatant's Scaled Wristplates
+											},
+											{	-- Fearless Combatant's Scaled Gauntlets
+												["itemID"] = 142941,	-- Fearless Combatant's Scaled Gauntlets
+											},
+											{	-- Fearless Combatant's Scaled Girdle
+												["itemID"] = 142945,	-- Fearless Combatant's Scaled Girdle
+											},
+											{	-- Fearless Combatant's Scaled Legguards
+												["itemID"] = 142943,	-- Fearless Combatant's Scaled Legguards
+											},
+											{	-- Fearless Combatant's Scaled Sabatons
+												["itemID"] = 142940,	-- Fearless Combatant's Scaled Sabatons
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146163,	-- Ensemble: Vindictive Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -414,6 +479,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -450,6 +516,7 @@ _.Zones =
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147687,	-- Ensemble: Cruel Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -485,6 +552,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147695,	-- Ensemble: Cruel Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -520,6 +588,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 147681,	-- Ensemble: Cruel Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -553,8 +622,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 147676,	-- Ensemble: Cruel Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -586,10 +656,38 @@ _.Zones =
 											{	-- Cruel Combatant's Dragonhide Moccasins
 												["itemID"] = 145085,	-- Cruel Combatant's Dragonhide Moccasins
 											},
+											{	-- Ferocious Combatant's Dragonhide Helm
+												["itemID"] = 145931,	-- Ferocious Combatant's Dragonhide Helm
+											},
+											{	-- Ferocious Combatant's Dragonhide Spaulders
+												["itemID"] = 145935,	-- Ferocious Combatant's Dragonhide Spaulders
+											},
+											{	-- Ferocious Combatant's Dragonhide Cloak
+												["itemID"] = 145873,	-- Ferocious Combatant's Dragonhide Cloak
+											},
+											{	-- Ferocious Combatant's Dragonhide Tunic
+												["itemID"] = 145925,	-- Ferocious Combatant's Dragonhide Tunic
+											},
+											{	-- Ferocious Combatant's Dragonhide Wristguards
+												["itemID"] = 145939,	-- Ferocious Combatant's Dragonhide Wristguards
+											},
+											{	-- Ferocious Combatant's Dragonhide Gloves
+												["itemID"] = 145929,	-- Ferocious Combatant's Dragonhide Gloves
+											},
+											{	-- Ferocious Combatant's Dragonhide Belt
+												["itemID"] = 145937,	-- Ferocious Combatant's Dragonhide Belt
+											},
+											{	-- Ferocious Combatant's Dragonhide Legguards
+												["itemID"] = 145933,	-- Ferocious Combatant's Dragonhide Legguards
+											},
+											{	-- Ferocious Combatant's Dragonhide Moccasins
+												["itemID"] = 145927,	-- Ferocious Combatant's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 147686,	-- Ensemble: Cruel Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -625,6 +723,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147683,	-- Ensemble: Cruel Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -660,6 +759,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 147679,	-- Ensemble: Cruel Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -695,6 +795,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147690,	-- Ensemble: Cruel Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -730,6 +831,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147673,	-- Ensemble: Cruel Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -765,6 +867,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147694,	-- Ensemble: Cruel Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -796,10 +899,38 @@ _.Zones =
 											{	-- Cruel Combatant's Scaled Sabatons
 												["itemID"] = 145155,	-- Cruel Combatant's Scaled Sabatons
 											},
+											{	-- Ferocious Combatant's Scaled Helm
+												["itemID"] = 146001,	-- Ferocious Combatant's Scaled Helm
+											},
+											{	-- Ferocious Combatant's Scaled Shoulders
+												["itemID"] = 146005,	-- Ferocious Combatant's Scaled Shoulders
+											},
+											{	-- Ferocious Combatant's Greatcloak of Faith
+												["itemID"] = 145881,	-- Ferocious Combatant's Greatcloak of Faith
+											},
+											{	-- Ferocious Combatant's Scaled Chestpiece
+												["itemID"] = 145995,	-- Ferocious Combatant's Scaled Chestpiece
+											},
+											{	-- Ferocious Combatant's Scaled Wristplates
+												["itemID"] = 146009,	-- Ferocious Combatant's Scaled Wristplates
+											},
+											{	-- Ferocious Combatant's Scaled Gauntlets
+												["itemID"] = 145999,	-- Ferocious Combatant's Scaled Gauntlets
+											},
+											{	-- Ferocious Combatant's Scaled Girdle
+												["itemID"] = 146007,	-- Ferocious Combatant's Scaled Girdle
+											},
+											{	-- Ferocious Combatant's Scaled Legguards
+												["itemID"] = 146003,	-- Ferocious Combatant's Scaled Legguards
+											},
+											{	-- Ferocious Combatant's Scaled Sabatons
+												["itemID"] = 145997,	-- Ferocious Combatant's Scaled Sabatons
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147691,	-- Ensemble: Cruel Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -835,6 +966,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147678,	-- Ensemble: Cruel Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -871,6 +1003,7 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 150262,	-- Ensemble: Fierce Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -906,6 +1039,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 150270,	-- Ensemble: Fierce Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -941,6 +1075,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 150256,	-- Ensemble: Fierce Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -974,8 +1109,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 150251,	-- Ensemble: Fierce Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -1007,10 +1143,65 @@ _.Zones =
 											{	-- Fierce Combatant's Dragonhide Moccasins
 												["itemID"] = 149564,	-- Fierce Combatant's Dragonhide Moccasins
 											},
+											{	-- Dominant Combatant's Dragonhide Helm
+												["itemID"] = 149819,	-- Dominant Combatant's Dragonhide Helm
+											},
+											{	-- Dominant Combatant's Dragonhide Spaulders
+												["itemID"] = 149823,	-- Dominant Combatant's Dragonhide Spaulders
+											},
+											{	-- Dominant Combatant's Dragonhide Cloak
+												["itemID"] = 149761,	-- Dominant Combatant's Dragonhide Cloak
+											},
+											{	-- Dominant Combatant's Dragonhide Tunic
+												["itemID"] = 149813,	-- Dominant Combatant's Dragonhide Tunic
+											},
+											{	-- Dominant Combatant's Dragonhide Wristguards
+												["itemID"] = 149827,	-- Dominant Combatant's Dragonhide Wristguards
+											},
+											{	-- Dominant Combatant's Dragonhide Gloves
+												["itemID"] = 149817,	-- Dominant Combatant's Dragonhide Gloves
+											},
+											{	-- Dominant Combatant's Dragonhide Belt
+												["itemID"] = 149825,	-- Dominant Combatant's Dragonhide Belt
+											},
+											{	-- Dominant Combatant's Dragonhide Legguards
+												["itemID"] = 149821,	-- Dominant Combatant's Dragonhide Legguards
+											},
+											{	-- Dominant Combatant's Dragonhide Moccasins
+												["itemID"] = 149815,	-- Dominant Combatant's Dragonhide Moccasins
+											},
+											{	-- Demonic Gladiator's Dragonhide Helm
+												["itemID"] = 148957,	-- Demonic Gladiator's Dragonhide Helm
+											},
+											{	-- Demonic Gladiator's Dragonhide Spaulders
+												["itemID"] = 148961,	-- Demonic Gladiator's Dragonhide Spaulders
+											},
+											{	-- Demonic Gladiator's Dragonhide Cloak
+												["itemID"] = 148899,	-- Demonic Gladiator's Dragonhide Cloak
+											},
+											{	-- Demonic Gladiator's Dragonhide Vest
+												["itemID"] = 148951,	-- Demonic Gladiator's Dragonhide Vest
+											},
+											{	-- Demonic Gladiator's Dragonhide Wristguards
+												["itemID"] = 148965,	-- Demonic Gladiator's Dragonhide Wristguards
+											},
+											{	-- Demonic Gladiator's Dragonhide Gloves
+												["itemID"] = 148955,	-- Demonic Gladiator's Dragonhide Gloves
+											},
+											{	-- Demonic Gladiator's Dragonhide Belt
+												["itemID"] = 148963,	-- Demonic Gladiator's Dragonhide Belt
+											},
+											{	-- Demonic Gladiator's Dragonhide Legguards
+												["itemID"] = 148959,	-- Demonic Gladiator's Dragonhide Legguards
+											},
+											{	-- Demonic Gladiator's Dragonhide Moccasins
+												["itemID"] = 148953,	-- Demonic Gladiator's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 150261,	-- Ensemble: Fierce Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -1046,6 +1237,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 150258,	-- Ensemble: Fierce Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -1081,6 +1273,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 150254,	-- Ensemble: Fierce Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -1116,6 +1309,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -1151,6 +1345,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 150248,	-- Ensemble: Fierce Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -1186,6 +1381,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150269,	-- Ensemble: Fierce Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Pally
 										},
@@ -1217,10 +1413,65 @@ _.Zones =
 											{	-- Fierce Combatant's Scaled Sabatons
 												["itemID"] = 149635,	-- Fierce Combatant's Scaled Sabatons
 											},
+											{	-- Dominant Combatant's Scaled Helm
+												["itemID"] = 149889,	-- Dominant Combatant's Scaled Helm
+											},
+											{	-- Dominant Combatant's Scaled Shoulders
+												["itemID"] = 149893,	-- Dominant Combatant's Scaled Shoulders
+											},
+											{	-- Dominant Combatant's Greatcloak of Faith
+												["itemID"] = 149769,	-- Dominant Combatant's Greatcloak of Faith
+											},
+											{	-- Dominant Combatant's Scaled Chestpiece
+												["itemID"] = 149883,	-- Dominant Combatant's Scaled Chestpiece
+											},
+											{	-- Dominant Combatant's Scaled Wristplates
+												["itemID"] = 149897,	-- Dominant Combatant's Scaled Wristplates
+											},
+											{	-- Dominant Combatant's Scaled Gauntlets
+												["itemID"] = 149887,	-- Dominant Combatant's Scaled Gauntlets
+											},
+											{	-- Dominant Combatant's Scaled Girdle
+												["itemID"] = 149895,	-- Dominant Combatant's Scaled Girdle
+											},
+											{	-- Dominant Combatant's Scaled Legguards
+												["itemID"] = 149891,	-- Dominant Combatant's Scaled Legguards
+											},
+											{	-- Dominant Combatant's Scaled Sabatons
+												["itemID"] = 149885,	-- Dominant Combatant's Scaled Sabatons
+											},
+											{	-- Demonic Combatant's Scaled Helm
+												["itemID"] = 150135,	-- Demonic Combatant's Scaled Helm
+											},
+											{	-- Demonic Combatant's Scaled Shoulders
+												["itemID"] = 150139,	-- Demonic Combatant's Scaled Shoulders
+											},
+											{	-- Demonic Combatant's Greatcloak of Faith
+												["itemID"] = 150015,	-- Demonic Combatant's Greatcloak of Faith
+											},
+											{	-- Demonic Combatant's Scaled Chestpiece
+												["itemID"] = 150129,	-- Demonic Combatant's Scaled Chestpiece
+											},
+											{	-- Demonic Combatant's Scaled Wristplates
+												["itemID"] = 150143,	-- Demonic Combatant's Scaled Wristplates
+											},
+											{	-- Demonic Combatant's Scaled Gauntlets
+												["itemID"] = 150133,	-- Demonic Combatant's Scaled Gauntlets
+											},
+											{	-- Demonic Combatant's Scaled Girdle
+												["itemID"] = 150141,	-- Demonic Combatant's Scaled Girdle
+											},
+											{	-- Demonic Combatant's Scaled Legguards
+												["itemID"] = 150137,	-- Demonic Combatant's Scaled Legguards
+											},
+											{	-- Demonic Combatant's Scaled Sabatons
+												["itemID"] = 150131,	-- Demonic Combatant's Scaled Sabatons
+											},
 										},
 									},
 									{	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 150266,	-- Ensemble: Fierce Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -1256,6 +1507,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 150253,	-- Ensemble: Fierce Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -1298,6 +1550,7 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146149,	-- Ensemble: Vindictive Gladiator's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -1333,6 +1586,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146147,	-- Ensemble: Vindictive Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -1368,6 +1622,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 146151,	-- Ensemble: Vindictive Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -1401,8 +1656,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 146141,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -1434,10 +1690,38 @@ _.Zones =
 											{	-- Vindictive Gladiator's Dragonhide Moccasins
 												["itemID"] = 135712,	-- Vindictive Gladiator's Dragonhide Moccasins
 											},
+											{	-- Fearless Gladiator's Dragonhide Helm
+												["itemID"] = 142683,	-- Fearless Gladiator's Dragonhide Helm
+											},
+											{	-- Fearless Gladiator's Dragonhide Spaulders
+												["itemID"] = 142686,	-- Fearless Gladiator's Dragonhide Spaulders
+											},
+											{	-- Fearless Gladiator's Dragonhide Cloak
+												["itemID"] = 142765,	-- Fearless Gladiator's Dragonhide Cloak
+											},
+											{	-- Fearless Gladiator's Dragonhide Robe
+												["itemID"] = 142685,	-- Fearless Gladiator's Dragonhide Robe
+											},
+											{	-- Fearless Gladiator's Dragonhide Wristguards
+												["itemID"] = 142688,	-- Fearless Gladiator's Dragonhide Wristguards
+											},
+											{	-- Fearless Gladiator's Dragonhide Gloves
+												["itemID"] = 142682,	-- Fearless Gladiator's Dragonhide Gloves
+											},
+											{	-- Fearless Gladiator's Dragonhide Belt
+												["itemID"] = 142687,	-- Fearless Gladiator's Dragonhide Belt
+											},
+											{	-- Fearless Gladiator's Dragonhide Legguards
+												["itemID"] = 142684,	-- Fearless Gladiator's Dragonhide Legguards
+											},
+											{	-- Fearless Gladiator's Dragonhide Moccasins
+												["itemID"] = 142681,	-- Fearless Gladiator's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 146145,	-- Ensemble: Vindictive Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -1473,6 +1757,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146143,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -1508,6 +1793,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 146263,	-- Ensemble: Vindictive Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -1543,6 +1829,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146139,	-- Ensemble: Vindictive Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -1578,6 +1865,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146137,	-- Ensemble: Vindictive Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -1676,6 +1964,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146131,	-- Ensemble: Vindictive Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -1711,6 +2000,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146133,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -1747,6 +2037,7 @@ _.Zones =
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147664,	-- Ensemble: Cruel Gladiator's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -1782,6 +2073,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147667,	-- Ensemble: Cruel Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -1817,6 +2109,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 147654,	-- Ensemble: Cruel Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -1850,8 +2143,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 147648,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -1883,10 +2177,38 @@ _.Zones =
 											{	-- Cruel Gladiator's Dragonhide Moccasins
 												["itemID"] = 144593,	-- Cruel Gladiator's Dragonhide Moccasins
 											},
+											{	-- Ferocious Gladiator's Dragonhide Helm
+												["itemID"] = 145439,	-- Ferocious Gladiator's Dragonhide Helm
+											},
+											{	-- Ferocious Gladiator's Dragonhide Spaulders
+												["itemID"] = 145443,	-- Ferocious Gladiator's Dragonhide Spaulders
+											},
+											{	-- Ferocious Gladiator's Dragonhide Cloak
+												["itemID"] = 145381,	-- Ferocious Gladiator's Dragonhide Cloak
+											},
+											{	-- Ferocious Gladiator's Dragonhide Robe
+												["itemID"] = 145433,	-- Ferocious Gladiator's Dragonhide Robe
+											},
+											{	-- Ferocious Gladiator's Dragonhide Wristguards
+												["itemID"] = 145447,	-- Ferocious Gladiator's Dragonhide Wristguards
+											},
+											{	-- Ferocious Gladiator's Dragonhide Gloves
+												["itemID"] = 145437,	-- Ferocious Gladiator's Dragonhide Gloves
+											},
+											{	-- Ferocious Gladiator's Dragonhide Belt
+												["itemID"] = 145445,	-- Ferocious Gladiator's Dragonhide Belt
+											},
+											{	-- Ferocious Gladiator's Dragonhide Legguards
+												["itemID"] = 145441,	-- Ferocious Gladiator's Dragonhide Legguards
+											},
+											{	-- Ferocious Gladiator's Dragonhide Moccasins
+												["itemID"] = 145435,	-- Ferocious Gladiator's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 147658,	-- Ensemble: Cruel Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -1922,6 +2244,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147655,	-- Ensemble: Cruel Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -1957,6 +2280,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 147652,	-- Ensemble: Cruel Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -1992,6 +2316,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147645,	-- Ensemble: Cruel Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -2027,6 +2352,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147662,	-- Ensemble: Cruel Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -2125,6 +2451,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147659,	-- Ensemble: Cruel Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -2160,6 +2487,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147649,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -2196,6 +2524,7 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 149497,	-- Ensemble: Fierce Gladiator's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -2231,6 +2560,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 149500,	-- Ensemble: Fierce Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -2266,6 +2596,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 149487,	-- Ensemble: Fierce Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -2299,8 +2630,9 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
+									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
 										["itemID"] = 149481,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -2332,10 +2664,65 @@ _.Zones =
 											{	-- Fierce Gladiator's Dragonhide Moccasins
 												["itemID"] = 147968,	-- Fierce Gladiator's Dragonhide Moccasins
 											},
+											{	-- Dominant Gladiator's Dragonhide Helm
+												["itemID"] = 148465,	-- Dominant Gladiator's Dragonhide Helm
+											},
+											{	-- Dominant Gladiator's Dragonhide Spaulders
+												["itemID"] = 148469,	-- Dominant Gladiator's Dragonhide Spaulders
+											},
+											{	-- Dominant Gladiator's Dragonhide Cloak
+												["itemID"] = 148407,	-- Dominant Gladiator's Dragonhide Cloak
+											},
+											{	-- Dominant Gladiator's Dragonhide Vest
+												["itemID"] = 148459,	-- Dominant Gladiator's Dragonhide Vest
+											},
+											{	-- Dominant Gladiator's Dragonhide Wristguards
+												["itemID"] = 148473,	-- Dominant Gladiator's Dragonhide Wristguards
+											},
+											{	-- Dominant Gladiator's Dragonhide Gloves
+												["itemID"] = 148463,	-- Dominant Gladiator's Dragonhide Gloves
+											},
+											{	-- Dominant Gladiator's Dragonhide Belt
+												["itemID"] = 148471,	-- Dominant Gladiator's Dragonhide Belt
+											},
+											{	-- Dominant Gladiator's Dragonhide Legguards
+												["itemID"] = 148467,	-- Dominant Gladiator's Dragonhide Legguards
+											},
+											{	-- Dominant Gladiator's Dragonhide Moccasins
+												["itemID"] = 148461,	-- Dominant Gladiator's Dragonhide Moccasins
+											},
+											{	-- Demonic Gladiator's Dragonhide Helm
+												["itemID"] = 148957,	-- Demonic Gladiator's Dragonhide Helm
+											},
+											{	-- Demonic Gladiator's Dragonhide Spaulders
+												["itemID"] = 148961,	-- Demonic Gladiator's Dragonhide Spaulders
+											},
+											{	-- Demonic Gladiator's Dragonhide Cloak
+												["itemID"] = 148899,	-- Demonic Gladiator's Dragonhide Cloak
+											},
+											{	-- Demonic Gladiator's Dragonhide Vest
+												["itemID"] = 148951,	-- Demonic Gladiator's Dragonhide Vest
+											},
+											{	-- Demonic Gladiator's Dragonhide Wristguards
+												["itemID"] = 148965,	-- Demonic Gladiator's Dragonhide Wristguards
+											},
+											{	-- Demonic Gladiator's Dragonhide Gloves
+												["itemID"] = 148955,	-- Demonic Gladiator's Dragonhide Gloves
+											},
+											{	-- Demonic Gladiator's Dragonhide Belt
+												["itemID"] = 148963,	-- Demonic Gladiator's Dragonhide Belt
+											},
+											{	-- Demonic Gladiator's Dragonhide Legguards
+												["itemID"] = 148959,	-- Demonic Gladiator's Dragonhide Legguards
+											},
+											{	-- Demonic Gladiator's Dragonhide Moccasins
+												["itemID"] = 148953,	-- Demonic Gladiator's Dragonhide Moccasins
+											},
 										},
 									},
 									{	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 149491,	-- Ensemble: Fierce Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -2371,6 +2758,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 149488,	-- Ensemble: Fierce Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -2406,6 +2794,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 149485,	-- Ensemble: Fierce Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -2441,6 +2830,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -2476,6 +2866,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 149495,	-- Ensemble: Fierce Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -2601,6 +2992,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 149492,	-- Ensemble: Fierce Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -2636,6 +3028,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 149482,	-- Ensemble: Fierce Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -3744,6 +4137,7 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146158,	-- Ensemble: Vindictive Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -3779,6 +4173,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146156,	-- Ensemble: Vindictive Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -3814,6 +4209,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 146160,	-- Ensemble: Vindictive Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -3849,6 +4245,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146168,	-- Ensemble: Vindictive Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -3884,6 +4281,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 146172,	-- Ensemble: Vindictive Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -3919,6 +4317,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146170,	-- Ensemble: Vindictive Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -3954,6 +4353,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 146264,	-- Ensemble: Vindictive Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -3989,6 +4389,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146154,	-- Ensemble: Vindictive Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -4024,6 +4425,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146152,	-- Ensemble: Vindictive Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -4059,6 +4461,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 146166,	-- Ensemble: Vindictive Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -4094,6 +4497,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146162,	-- Ensemble: Vindictive Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -4129,6 +4533,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146164,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -4165,6 +4570,7 @@ _.Zones =
 									-- LEGION Season 3 & 4
 									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 147688,	-- Ensemble: Cruel Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -4200,6 +4606,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147696,	-- Ensemble: Cruel Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -4235,6 +4642,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 147682,	-- Ensemble: Cruel Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -4270,6 +4678,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147675,	-- Ensemble: Cruel Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -4305,6 +4714,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 147685,	-- Ensemble: Cruel Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -4340,6 +4750,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147684,	-- Ensemble: Cruel Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -4375,6 +4786,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 147680,	-- Ensemble: Cruel Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -4410,6 +4822,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147689,	-- Ensemble: Cruel Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -4445,6 +4858,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147674,	-- Ensemble: Cruel Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -4480,6 +4894,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 147693,	-- Ensemble: Cruel Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -4515,6 +4930,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147692,	-- Ensemble: Cruel Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -4550,6 +4966,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147677,	-- Ensemble: Cruel Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -4586,6 +5003,7 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 150263,	-- Ensemble: Fierce Combatant's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -4621,6 +5039,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 150271,	-- Ensemble: Fierce Combatant's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -4656,6 +5075,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 150257,	-- Ensemble: Fierce Combatant's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -4691,6 +5111,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 150250,	-- Ensemble: Fierce Combatant's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -4726,6 +5147,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 150260,	-- Ensemble: Fierce Combatant's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -4761,6 +5183,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 150259,	-- Ensemble: Fierce Combatant's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -4796,6 +5219,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 150255,	-- Ensemble: Fierce Combatant's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -4831,6 +5255,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 150264,	-- Ensemble: Fierce Combatant's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -4866,6 +5291,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 150249,	-- Ensemble: Fierce Combatant's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -4901,6 +5327,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 										["itemID"] = 150268,	-- Ensemble: Fierce Combatant's Scaled Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											2,	-- Paladin
 										},
@@ -4936,6 +5363,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 150267,	-- Ensemble: Fierce Combatant's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -4971,6 +5399,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 150252,	-- Ensemble: Fierce Combatant's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -5013,6 +5442,7 @@ _.Zones =
 									-- LEGION Season 1 & 2
 									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 146148,	-- Ensemble: Vindictive Gladiator's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -5048,6 +5478,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 146146,	-- Ensemble: Vindictive Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -5083,6 +5514,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 146150,	-- Ensemble: Vindictive Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -5118,6 +5550,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 146140,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -5153,6 +5586,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 146144,	-- Ensemble: Vindictive Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -5188,6 +5622,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 146142,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -5223,6 +5658,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 146262,	-- Ensemble: Vindictive Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -5258,6 +5694,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 146138,	-- Ensemble: Vindictive Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -5293,6 +5730,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 146136,	-- Ensemble: Vindictive Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -5391,6 +5829,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 146130,	-- Ensemble: Vindictive Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -5426,6 +5865,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 146132,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -5497,6 +5937,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 147668,	-- Ensemble: Cruel Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -5532,6 +5973,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 147653,	-- Ensemble: Cruel Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -5567,6 +6009,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 147647,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -5602,6 +6045,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 147657,	-- Ensemble: Cruel Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -5637,6 +6081,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 147656,	-- Ensemble: Cruel Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -5672,6 +6117,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 147651,	-- Ensemble: Cruel Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -5707,6 +6153,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 147646,	-- Ensemble: Cruel Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -5742,6 +6189,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 147661,	-- Ensemble: Cruel Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -5840,6 +6288,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 147660,	-- Ensemble: Cruel Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -5875,6 +6324,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 147650,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
@@ -5911,6 +6361,7 @@ _.Zones =
 									-- LEGION Season 5, 6, 7
 									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
 										["itemID"] = 149496,	-- Ensemble: Fierce Gladiator's Satin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											5,	-- Priest
 										},
@@ -5946,6 +6397,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
 										["itemID"] = 149501,	-- Ensemble: Fierce Gladiator's Silk Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											8,	-- Mage
 										},
@@ -5981,6 +6433,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
 										["itemID"] = 149486,	-- Ensemble: Fierce Gladiator's Felweave Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											9,	-- Warlock
 										},
@@ -6016,6 +6469,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
 										["itemID"] = 149480,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											11,	-- Druid
 										},
@@ -6051,6 +6505,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
 										["itemID"] = 149490,	-- Ensemble: Fierce Gladiator's Leather Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											4,	-- Rogue
 										},
@@ -6086,6 +6541,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
 										["itemID"] = 149489,	-- Ensemble: Fierce Gladiator's Ironskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											10,	-- Monk
 										},
@@ -6121,6 +6577,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 										["itemID"] = 149484,	-- Ensemble: Fierce Gladiator's Felskin Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											12,	-- Demon Hunter
 										},
@@ -6156,6 +6613,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
 										["itemID"] = 149479,	-- Ensemble: Fierce Gladiator's Chain Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											3,	-- Hunter
 										},
@@ -6191,6 +6649,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
 										["itemID"] = 149494,	-- Ensemble: Fierce Gladiator's Ringmail Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											7,	-- Shaman
 										},
@@ -6316,6 +6775,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
 										["itemID"] = 149493,	-- Ensemble: Fierce Gladiator's Plate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											1,	-- Warrior
 										},
@@ -6351,6 +6811,7 @@ _.Zones =
 									},
 									{	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 										["itemID"] = 149483,	-- Ensemble: Fierce Gladiator's Dreadplate Armor
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
 											6,	-- Death Knight
 										},
