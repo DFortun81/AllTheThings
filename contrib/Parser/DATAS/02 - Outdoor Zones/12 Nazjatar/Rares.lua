@@ -8,6 +8,8 @@ _.Zones =
 			--[[
 			Possible KillIDs that need to be confirmed and tagged to mob:
 			56278, 56297, 56586, 56605, 56669, 56670
+			
+			Should rares that are tied specifically to world quest uptime be listed here at all?
 			]]--
 			n(-16,  {	-- Rares
 				n(153314, {	-- Aldrantiss
@@ -103,7 +105,10 @@ _.Zones =
 				}),
 				n(153305, {	-- Zanj'ir Brutalizer (tied to world quest uptime)
 					["questID"] = 55886,
-					["coord"] = { 63.9, 57.0, 1355 },
+					["coords"] = {
+						{ 63.9, 57.0, 1355 },
+						{ 33.2, 40.1, 1355 },
+					},
 				}),
 			}),
 		},

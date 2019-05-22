@@ -73,6 +73,21 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Blueprint: Personal Time Displacer
+						["itemID"] = 168491,
+						["questID"] = 55070,
+						["description"] = "Can only be found during the |cFFFFD700The Other Place|r world quest.",
+						["races"] = HORDE_ONLY,
+						["crs"] = {
+							153991,	-- Clockwork Giant
+						},
+						["g"] = {
+							{	-- Junkyard Architect (Personal Time Displacer
+								["achievementID"] = 13479,
+								["criteriaID"] = 26,
+							},
+						},
+					},
 					{	-- Blueprint: Rustbolt Gramophone
 						["itemID"] = 168062,
 						["questID"] = 55064,
@@ -117,6 +132,13 @@ _.Zones =
 						["coord"] = { 63.1, 39.2, 1462 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Clues Abound
+						["questID"] = 55658,
+						["qg"] = 152501,	-- Elise Starseeker
+						["coord"] = { 70.4, 31.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Collaborative Construction (wasn't available initially, but became available the first reset after completing Welcome to the Resistance)
 						["questID"] = 55153,
 						["qg"] = 150555,	-- Waren Gearhart
@@ -136,6 +158,13 @@ _.Zones =
 						["coord"] = { 55.7, 60.2, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55995,	-- We Can Fix It
+					},
+					{	-- Energy Cells for Everyone
+						["questID"] = 55213,
+						["qg"] = 150631,	-- Pristy Quickcharge
+						["coord"] = { 70.7, 38.4, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					},
 					{	-- First One's Free
 						["questID"] = 55707,
@@ -172,6 +201,13 @@ _.Zones =
 								["criteriaID"] = 1,
 							},
 						},
+					},
+					{	-- Knock 'Em Out The Box
+						["questID"] = 55373,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.4, 38.7, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54929,	-- Ready to Rumble
 					},
 					{	-- Let's Fish!
 						["questID"] = 56305,
@@ -242,6 +278,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
+					{	-- Rustbolt Requisitions: Monelite Ore
+						["questID"] = 56754,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Rustbolt Requisitions: Shimmerscale
 						["questID"] = 55382,
 						["qg"] = 150563,	-- Skaggit
@@ -307,6 +350,13 @@ _.Zones =
 								["criteriaID"] = 38,
 							},
 						},
+					},
+					{	-- The Other Place
+						["questID"] = 55816,
+						["qg"] = 153993,	-- Chromie
+						["coord"] = { 70.2, 30.9, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					},
 					{	-- The Resistance Needs You!
 						["questID"] = 55729,

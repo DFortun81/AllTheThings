@@ -15,6 +15,10 @@ _.Zones =
 						["questID"] = 55888,
 						["isWQ"] = 120,
 					},
+					{	-- Deepcoil Experiments
+						["questID"] = 55973,
+						["isWQ"] = 120,
+					},
 					{	-- Frozen Winds of Zhiela
 						["questID"] = 55895,
 						["isWQ"] = 120,
@@ -77,6 +81,17 @@ _.Zones =
 						},
 					},
 					{	-- Runelocked Chest
+						["questID"] = 56016,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Hard Runelocked Chest: Yellow)
+								["achievementID"] = 13764,
+								["criteriaID"] = 10,
+							},
+						},
+					},
+					{	-- Runelocked Chest
 						["questID"] = 56019,
 						["isWQ"] = 120,
 						["sourceQuest"] = 56248,	-- Treasure Tale
@@ -98,13 +113,23 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Terror of the Depths
+						["questID"] = 56056,
+						["isWQ"] = 120,
+						["isRaid"] = true,
+					},
 					{	-- The Drowned Oracles
 						["questID"] = 56048,
+						["isWQ"] = 120,
+					},
+					{	-- The Lords of Water
+						["questID"] = 55982,
 						["isWQ"] = 120,
 					},
 					{	-- The Soulbinder
 						["questID"] = 56057,
 						["isWQ"] = 120,
+						["isRaid"] = true,
 					},
 					{	-- The Zanj'ir Brutalizer
 						["questID"] = 55886,
