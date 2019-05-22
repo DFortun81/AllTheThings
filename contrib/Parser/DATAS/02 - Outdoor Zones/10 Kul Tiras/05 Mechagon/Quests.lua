@@ -9,6 +9,13 @@ _.Zones =
 				n(-17,  {	-- Quests
 					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
 					-- most of the zone unlocks once you get the Welcome to the Resistance achievement for your faction.
+					{	-- A Little Leg Work
+						["questID"] = 55697,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.4, 38.7, 1462 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55373,	-- Knock 'Em Out The Box
+					},
 					{	-- Abduction Reduction
 						["questID"] = 55905,
 						["qg"] = 153373,	-- Penny Clobberbottom
@@ -145,6 +152,13 @@ _.Zones =
 						["coord"] = { 73.1, 33.3, 1462 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Discs of Norgannon
+						["questID"] = 56410,
+						["qg"] = 154982,	-- Archivist Bitbyte
+						["coord"] = { 72.0, 36.5, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Do Not Drink
 						["questID"] = 56328, -- 56329 also popped. Possibly a daily?
 						["qg"] = 153750,	-- Koupal Oilshins
@@ -278,6 +292,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
+					{	-- Rustbolt Requisitions: Lane Snapper
+						["questID"] = 56765,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Rustbolt Requisitions: Monelite Ore
 						["questID"] = 56754,
 						["qg"] = 150563,	-- Skaggit
@@ -371,6 +392,13 @@ _.Zones =
 						["coord"] = { 37.0, 47.1, 1462 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55298,	-- Fishing For Something Bigger
+					},
+					{	-- Toys For Destruction
+						["questID"] = 54090,
+						["qg"] = 151006,	-- Rocket-Chief Fuselage
+						["coord"] = { 69.7, 33.1, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 					},
 					{	-- Toys Like Us
 						["questID"] = 56572,

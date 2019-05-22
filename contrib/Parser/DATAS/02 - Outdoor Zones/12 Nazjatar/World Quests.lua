@@ -135,6 +135,14 @@ _.Zones =
 						["questID"] = 55886,
 						["isWQ"] = 120,
 					},
+					{	-- Time to Krill
+						["questID"] = 56078,
+						["isWQ"] = 120,
+					},
+					{	-- Zoko, Her Iron Defender
+						["questID"] = 55894,
+						["isWQ"] = 120,
+					},
 				}),
 			}),
 		},
