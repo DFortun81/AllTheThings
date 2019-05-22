@@ -37,6 +37,11 @@ _.Zones =
 						i(167786),	-- Germinating Seed
 					},
 				}),
+				n(152556, {	-- Chasm-Haunter
+					["questID"] = 56270, -- also popped 56613
+					["coord"] = { 49.2, 88.8, 1355 },
+					["description"] = "Inside a hidden cave beneath the waterfall.",
+				}),
 				n(152413, {	-- Elder Unu
 					-- 56284 and 56599 popped on first kill. One must be first kill, the other for subsequent kills?
 					["coord"] = { 64.3, 34.7, 1355 },
