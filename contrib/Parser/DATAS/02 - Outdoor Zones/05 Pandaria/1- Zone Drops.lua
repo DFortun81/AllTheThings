@@ -8,11 +8,9 @@ _.Zones =
 			["npcID"] = 0,	-- Zone Drops
 			["maps"] = {
 				422,	-- Dread Wastes
+				371,	-- Jade Forest
+				388,	-- Towlong Steppes
 				418,	-- Krasarang Wilds
-				379,	-- Kun-Lai Summit
-				371,	-- The Jade Forest
-				388,	-- Townlong Steppes
-				376,	-- Valley of the Four Winds
 			},
 			["g"] = {
 				{	-- Big Bag of Zandalari Supplies
@@ -25,12 +23,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 					["g"] = {
 						{	-- Arness's Scaled Leggings
 							["itemID"] = 90723,	-- Arness's Scaled Leggings
@@ -95,12 +95,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 				},
 				{	-- Stolen Golden Lotus Insignia
 					["itemID"] = 94227,	-- Stolen Golden Lotus Insignia
@@ -112,12 +114,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 				},
 				{	-- Stolen Klaxxi Insignia
 					["itemID"] = 94226,	-- Stolen Klaxxi Insignia
@@ -129,12 +133,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 				},
 				{	-- Stolen Shado-Pan Insignia
 					["itemID"] = 94223,	-- Stolen Shado-Pan Insignia
@@ -146,12 +152,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 				},
 				{	-- Small Bag of Zandalari Supplies
 					["itemID"] = 94159,	-- Small Bag of Zandalari Supplies
@@ -163,12 +171,14 @@ _.Zones =
 						69842,	-- Zandarlari Warbringer
 						69768,	-- Zandarlari Warscout
 					},
+					--[[
 					["maps"] = {
 						422,	-- Dread Wastes
 						371,	-- Jade Forest
 						388,	-- Towlong Steppes
 						418,	-- Krasarang Wilds
 					},
+					--]]
 				},
 			},
 		},
