@@ -18,8 +18,6 @@ t(147838);	-- Akazamzarak's Spare Hat
 t(163211);	-- Akunda's Firesticks
 t(119217);	-- Alliance Flag of Victory (Alliance)
 t(119220);	-- Alliance Gladiator's Banner (Never Implemented)
-t(169275);	-- Alliance War Banner
-t(169278);	-- Alliance War Standard
 t(153204);	-- All-Seer's Eye
 t(89614);	-- Anatomical Dummy
 t(69776);	-- Ancient Amber
@@ -249,8 +247,6 @@ t(134026);	-- Honorable Pennant
 t(87528);	-- Honorary Brewmaster Keg
 t(119218);	-- Horde Flag of Victory (Horde)
 t(119221);	-- Horde Gladiator's Banner (Never Implemented)
-t(169276);	-- Horde War Banner
-t(169277);	-- Horde War Standard
 t(151271);	-- Horse Head Costume
 t(151270);	-- Horse Tail Costume
 t(162539);	-- Hot Buttered Popcorn
@@ -339,7 +335,6 @@ t(136849);	-- Nature's Beacon
 t(130209);	-- Never Ending Toy Chest
 t(112324);	-- Nightmarish Hitching Post
 t(134004);	-- Noble's Eternal Elementium Signet
-t(168824);	-- Ocean Simulator
 t(104262);	-- Odd Polished Stone
 t(118224);	-- Ogre Brewing Kit
 t(46780);	-- Ogre Pinata
@@ -603,3 +598,22 @@ t(168123);  -- Twitching Eyeball
 t(165802);	-- Noble Gardener's Hearthstone
 t(166746);	-- Fire Eater's Hearthstone
 t(166747);	-- Brewfest Reveler's Hearthstone
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+
+t(169275);	-- Alliance War Banner
+t(169278);	-- Alliance War Standard
+t(170198);	-- Eternal Palace Dining Set
+t(170203);	-- Flopping Fish
+t(169276);	-- Horde War Banner
+t(169277);	-- Horde War Standard
+t(170380);	-- Jar of Sunwarmed Sand
+t(168824);	-- Ocean Simulator
+t(170187);	-- Shadescale
+t(170196);	-- Shirakess Warning Sign
+t(170204);	-- Symbol of Gral
+t(170476);	-- Underlight Sealamp
+t(170199);	-- Zanj'ir Weapon Rack
+

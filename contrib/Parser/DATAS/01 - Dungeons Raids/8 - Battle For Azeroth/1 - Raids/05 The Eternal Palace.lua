@@ -33,6 +33,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 						e(2347, {	-- Blackwater Behemoth
 							["g"] = {
+								i(169360),	-- Mindlost Bloodfrenzy
 								i(168900),	-- Diver's Folly
 								i(168397),	-- Fang of the Behemoth
 								i(168353),	-- Hood of Lightless Depths
@@ -52,6 +53,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 						e(2353, {	-- Radiance of Azshara
 							["g"] = {
+								i(170163),	-- Technique: Glyph of the Dark Depths
+								i(169694),	-- Aqueous Reliquary
 								i(168478),	-- Monstrosity's Shipbreaker
 								i(168475),	-- Bulwark of the Seaborn Avatar
 								i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -75,6 +78,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						e(2354, {	-- Lady Ashvane
 							["g"] = {
+								i(169358),	-- Lightless Ambusher
 								i(168904),	-- Current-Weaver's Gavel
 								i(168347),	-- Helm of Hideous Transformation
 								i(168354),	-- Shoulderguards of Crushing Depths
@@ -111,6 +115,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 						e(2359, {	-- The Queen's Court
 							["g"] = {
+								i(169694),	-- Aqueous Reliquary
 								i(168892),	-- Court Dagger of Sentencing
 								i(168898),	-- Pashmar's Finial
 								i(168896),	-- Stormtamer's Orb
@@ -121,7 +126,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								i(168881),	-- Naga Executor's Greatbelt
 								i(168886),	-- Hands of the Fanatic
 								i(168879),	-- Ardent Worshipper's Boots
-								i(168890),	-- Ring of the H ighborne Courtier
+								i(168890),	-- Ring of the Highborne Courtier
 								i(169315),	-- Edicts of the Faithless
 								i(169316),	-- Stay of Execution
 							},
@@ -132,6 +137,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 							["g"] = {
+								i(169362),	-- Nameless Octopode
 								i(168902),	-- Dream's End
 								i(168301),	-- Sever, Edge of Madness
 								i(168349),	-- Shroud of Unmooring Whispers
@@ -148,10 +154,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 						e(2361, {	-- Queen Azshara
 							["g"] = {
+								i(169348),	-- Zanj'ir Poker
+								i(169694),	-- Aqueous Reliquary
 								i(168854),	-- Animated Elemental Heart
 								i(168328),	-- Hardened Azerite Formation
 								i(168941),	-- Vitality Redistribution Lattice
-								i(169694),	-- Aqueous Reliquary
 								i(168275),	-- Anu-Azshara, Staff of the Eternal
 								i(168895),	-- Mel'nalore, Javelin of Suramar
 								i(168887),	-- Gloves of Incomparable Beauty
@@ -166,7 +173,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								i(169314),	-- Azshara's Font of Power
 							},
 						}),
-					
 					},
 				}),
 			}),
@@ -205,6 +211,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13628),	-- Intro to Marine Biology
+						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
 						i(168353),	-- Hood of Lightless Depths
@@ -229,6 +236,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13767),	-- Fun Run
+						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -253,6 +262,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13629),	-- Simple Geometry
+						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -299,6 +309,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13633),	-- If It Please the Court
+						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -321,6 +332,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13716),	-- Lactose Intolerant
+						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168349),	-- Shroud of Unmooring Whispers
@@ -342,10 +354,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13768),	-- The Best of Us
+						i(169348),	-- Zanj'ir Poker
+						i(169694),	-- Aqueous Reliquary
 						i(168854),	-- Animated Elemental Heart
 						i(168328),	-- Hardened Azerite Formation
 						i(168941),	-- Vitality Redistribution Lattice
-						i(169694),	-- Aqueous Reliquary
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						i(168895),	-- Mel'nalore, Javelin of Suramar
 						i(168887),	-- Gloves of Incomparable Beauty
@@ -396,6 +409,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13628),	-- Intro to Marine Biology
+						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
 						i(168353),	-- Hood of Lightless Depths
@@ -420,6 +434,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13767),	-- Fun Run
+						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -444,6 +460,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13629),	-- Simple Geometry
+						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -490,6 +507,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13633),	-- If It Please the Court
+						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -512,6 +530,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13716),	-- Lactose Intolerant
+						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168349),	-- Shroud of Unmooring Whispers
@@ -534,10 +553,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13768),	-- The Best of Us
+						i(169348),	-- Zanj'ir Poker
+						i(169694),	-- Aqueous Reliquary
 						i(168942),	-- Mesh of Expanding Vitality
 						i(168855),	-- Pulsing Elemental Hearth
 						i(168536),	-- Recrystalizing Azerite Formation
-						i(169694),	-- Aqueous Reliquary
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						i(168895),	-- Mel'nalore, Javelin of Suramar
 						i(168887),	-- Gloves of Incomparable Beauty
@@ -590,6 +610,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13628),	-- Intro to Marine Biology
+						i(169360),	-- Mindlost Bloodfrenzy
 						i(168900),	-- Diver's Folly
 						i(168397),	-- Fang of the Behemoth
 						i(168353),	-- Hood of Lightless Depths
@@ -615,6 +636,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13767),	-- Fun Run
+						i(170163),	-- Technique: Glyph of the Dark Depths
+						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -640,6 +663,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13629),	-- Simple Geometry
+						i(169358),	-- Lightless Ambusher
 						i(168904),	-- Current-Weaver's Gavel
 						i(168347),	-- Helm of Hideous Transformation
 						i(168354),	-- Shoulderguards of Crushing Depths
@@ -688,6 +712,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 3,
 						},
 						ach(13633),	-- If It Please the Court
+						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -711,6 +736,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 1,
 						},
 						ach(13716),	-- Lactose Intolerant
+						i(169362),	-- Nameless Octopode
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
 						i(168349),	-- Shroud of Unmooring Whispers
@@ -736,10 +762,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["criteriaID"] = 2,
 						},
 						ach(13768),	-- The Best of Us
+						i(169348),	-- Zanj'ir Poker
+						i(169694),	-- Aqueous Reliquary
 						i(168538),	-- Dazzling Azerite Formation
 						i(168857),	-- Sparkling Elemental Heart
 						i(168944),	-- Web of Unbridled Vitality
-						i(169694),	-- Aqueous Reliquary
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						i(168895),	-- Mel'nalore, Javelin of Suramar
 						i(168887),	-- Gloves of Incomparable Beauty

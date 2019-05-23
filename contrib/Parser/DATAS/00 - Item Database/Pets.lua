@@ -387,6 +387,7 @@ pet(122104, 1623); 	-- Leviathan Egg (Leviathan Hatchling)
 pet(136914, 1808);	-- Leyline Broodling
 pet(112057, 1412); 	-- Lifelike Mechanical Frostboar
 pet(15996, 95); 	-- Lifelike Mechanical Toad (Lifelike Toad)
+pet(169358, 2692);	-- Lightless Ambusher
 pet(103670, 1320);	-- Lil' Bling
 pet(163502, 2416);	-- Lil Ben'fon
 pet(62540, 268);	-- Lil' Deathwing
@@ -429,6 +430,7 @@ pet(45002, 215); 	-- Mechanopeep
 pet(165849, 2530);	-- Mechantula
 pet(169385, 2718);	-- Microbot 8D
 pet(101426, 666); 	-- Micronax Controller (Micronax)
+pet(169360, 2694);	-- Mindlost Bloodfrenzy
 pet(165894, 2534);	-- Mini Spider Tank
 pet(56806, 258);	-- Mini Thor
 pet(151632, 2064); 	-- Mining Monkey
@@ -456,6 +458,7 @@ pet(71726, 329); 	-- Murky's Little Soulstone (Murkablo)
 pet(164971, 2483);	-- Murloc Balloon
 pet(163820, 2458);	-- Muskflank Calfling
 pet(116258, 1514);	-- Mystical Spring Bouquet
+pet(169362, 2696);	-- Nameless Octopode
 pet(151269, 2002);	-- Naxxy
 pet(166489, 2554);	-- Needleback Pup
 pet(142085, 1954); 	-- Nerubian Relic (Nerubian Swarmer)
@@ -791,6 +794,7 @@ pet(102146, 1305);	-- Zao, Calfling of Niuzao
 pet(152973, 2084);	-- Zephyrian Prince
 pet(128423, 1255);	-- Zeradar
 pet(13582, 94); 	-- Zergling Leash (Zergling)
+pet(169348, 2680);	-- Zanj'ir Poker
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted
