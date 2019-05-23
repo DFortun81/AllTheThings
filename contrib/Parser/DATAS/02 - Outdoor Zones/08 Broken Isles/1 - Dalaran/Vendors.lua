@@ -27,7 +27,7 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 								["g"] = {
 									-- LEGION Season 1 & 2
-									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 146159,	-- Ensemble: Vindictive Combatant's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -541,7 +541,7 @@ _.Zones =
 										},
 									},
 									-- LEGION Season 3 & 4
-									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Cruel Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 147687,	-- Ensemble: Cruel Combatant's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1055,7 +1055,7 @@ _.Zones =
 										},
 									},
 									-- LEGION Season 5, 6, 7
-									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Fierce Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 150262,	-- Ensemble: Fierce Combatant's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1656,7 +1656,7 @@ _.Zones =
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
 									-- LEGION Season 1 & 2
-									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 146149,	-- Ensemble: Vindictive Gladiator's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -2170,7 +2170,7 @@ _.Zones =
 										},
 									},
 									-- LEGION Season 3 & 4
-									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 147664,	-- Ensemble: Cruel Gladiator's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -2684,7 +2684,7 @@ _.Zones =
 										},
 									},
 									-- LEGION Season 5, 6, 7
-									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
+									{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19 & 5/22/19]
 										["itemID"] = 149497,	-- Ensemble: Fierce Gladiator's Satin Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
