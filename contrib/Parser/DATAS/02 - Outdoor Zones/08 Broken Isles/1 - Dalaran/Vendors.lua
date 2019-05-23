@@ -61,6 +61,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Satin Treads
 												["itemID"] = 135978,	-- Vindictive Combatant's Satin Treads
 											},
+											{	-- Fearless Combatant's Satin Hood
+												["itemID"] = 142949,	-- Fearless Combatant's Satin Hood
+											},
+											{	-- Fearless Combatant's Satin Mantle
+												["itemID"] = 142952,	-- Fearless Combatant's Satin Mantle
+											},
+											{	-- Fearless Combatant's Drape of Piety
+												["itemID"] = 143295,	-- Fearless Combatant's Drape of Piety
+											},
+											{	-- Fearless Combatant's Satin Robe
+												["itemID"] = 142951,	-- Fearless Combatant's Satin Robe
+											},
+											{	-- Fearless Combatant's Satin Bracers
+												["itemID"] = 142954,	-- Fearless Combatant's Satin Bracers
+											},
+											{	-- Fearless Combatant's Satin Gloves
+												["itemID"] = 142948,	-- Fearless Combatant's Satin Gloves
+											},
+											{	-- Fearless Combatant's Satin Cord
+												["itemID"] = 142953,	-- Fearless Combatant's Satin Cord
+											},
+											{	-- Fearless Combatant's Satin Leggings
+												["itemID"] = 142950,	-- Fearless Combatant's Satin Leggings
+											},
+											{	-- Fearless Combatant's Satin Treads
+												["itemID"] = 142947,	-- Fearless Combatant's Satin Treads
+											},	
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
@@ -548,6 +575,33 @@ _.Zones =
 											{	-- Cruel Combatant's Satin Treads
 												["itemID"] = 145169,	-- Cruel Combatant's Satin Treads
 											},
+											{	-- Ferocious Combatant's Satin Hood
+												["itemID"] = 146015,	-- Ferocious Combatant's Satin Hood
+											},
+											{	-- Ferocious Combatant's Satin Mantle
+												["itemID"] = 146021,	-- Ferocious Combatant's Satin Mantle
+											},
+											{	-- Ferocious Combatant's Drape of Piety
+												["itemID"] = 145883,	-- Ferocious Combatant's Drape of Piety
+											},
+											{	-- Ferocious Combatant's Satin Robe
+												["itemID"] = 146019,	-- Ferocious Combatant's Satin Robe
+											},
+											{	-- Ferocious Combatant's Satin Bracers
+												["itemID"] = 146025,	-- Ferocious Combatant's Satin Bracers
+											},
+											{	-- Ferocious Combatant's Satin Gloves
+												["itemID"] = 146013,	-- Ferocious Combatant's Satin Gloves
+											},
+											{	-- Ferocious Combatant's Satin Cord
+												["itemID"] = 146023,	-- Ferocious Combatant's Satin Cord
+											},
+											{	-- Ferocious Combatant's Satin Leggings
+												["itemID"] = 146017,	-- Ferocious Combatant's Satin Leggings
+											},
+											{	-- Ferocious Combatant's Satin Treads
+												["itemID"] = 146011,	-- Ferocious Combatant's Satin Treads
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
@@ -1034,6 +1088,60 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Satin Treads
 												["itemID"] = 149649,	-- Fierce Combatant's Satin Treads
+											},
+											{	-- Dominant Combatant's Satin Hood
+												["itemID"] = 149903,	-- Dominant Combatant's Satin Hood
+											},
+											{	-- Dominant Combatant's Satin Mantle
+												["itemID"] = 149909,	-- Dominant Combatant's Satin Mantle
+											},
+											{	-- Dominant Combatant's Drape of Piety
+												["itemID"] = 149771,	-- Dominant Combatant's Drape of Piety
+											},
+											{	-- Dominant Combatant's Satin Robe
+												["itemID"] = 149907,	-- Dominant Combatant's Satin Robe
+											},
+											{	-- Dominant Combatant's Satin Bracers
+												["itemID"] = 149913,	-- Dominant Combatant's Satin Bracers
+											},
+											{	-- Dominant Combatant's Satin Gloves
+												["itemID"] = 149901,	-- Dominant Combatant's Satin Gloves
+											},
+											{	-- Dominant Combatant's Satin Cord
+												["itemID"] = 149911,	-- Dominant Combatant's Satin Cord
+											},
+											{	-- Dominant Combatant's Satin Leggings
+												["itemID"] = 149905,	-- Dominant Combatant's Satin Leggings
+											},
+											{	-- Dominant Combatant's Satin Treads
+												["itemID"] = 149899,	-- Dominant Combatant's Satin Treads
+											},
+											{	-- Demonic Combatant's Satin Hood
+												["itemID"] = 150149,	-- Demonic Combatant's Satin Hood
+											},
+											{	-- Demonic Combatant's Satin Mantle
+												["itemID"] = 150155,	-- Demonic Combatant's Satin Mantle
+											},
+											{	-- Demonic Combatant's Drape of Piety
+												["itemID"] = 150017,	-- Demonic Combatant's Drape of Piety
+											},
+											{	-- Demonic Combatant's Satin Robe
+												["itemID"] = 150153,	-- Demonic Combatant's Satin Robe
+											},
+											{	-- Demonic Combatant's Satin Bracers
+												["itemID"] = 150159,	-- Demonic Combatant's Satin Bracers
+											},
+											{	-- Demonic Combatant's Satin Gloves
+												["itemID"] = 150147,	-- Demonic Combatant's Satin Gloves
+											},
+											{	-- Demonic Combatant's Satin Cord
+												["itemID"] = 150157,	-- Demonic Combatant's Satin Cord
+											},
+											{	-- Demonic Combatant's Satin Leggings
+												["itemID"] = 150151,	-- Demonic Combatant's Satin Leggings
+											},
+											{	-- Demonic Combatant's Satin Treads
+												["itemID"] = 150145,	-- Demonic Combatant's Satin Treads
 											},
 										},
 									},
@@ -1582,6 +1690,33 @@ _.Zones =
 											{	-- Vindictive Gladiator's Satin Treads
 												["itemID"] = 135752,	-- Vindictive Gladiator's Satin Treads
 											},
+											{	-- Fearless Gladiator's Satin Hood
+												["itemID"] = 142723,	-- Fearless Gladiator's Satin Hood
+											},
+											{	-- Fearless Gladiator's Satin Mantle
+												["itemID"] = 142726,	-- Fearless Gladiator's Satin Mantle
+											},
+											{	-- Fearless Gladiator's Drape of Piety
+												["itemID"] = 143289,	-- Fearless Gladiator's Drape of Piety
+											},
+											{	-- Fearless Gladiator's Satin Robe
+												["itemID"] = 142725,	-- Fearless Gladiator's Satin Robe
+											},
+											{	-- Fearless Gladiator's Satin Bracers
+												["itemID"] = 142728,	-- Fearless Gladiator's Satin Bracers
+											},
+											{	-- Fearless Gladiator's Satin Gloves
+												["itemID"] = 142722,	-- Fearless Gladiator's Satin Gloves
+											},
+											{	-- Fearless Gladiator's Satin Cord
+												["itemID"] = 142727,	-- Fearless Gladiator's Satin Cord
+											},
+											{	-- Fearless Gladiator's Satin Leggings
+												["itemID"] = 142724,	-- Fearless Gladiator's Satin Leggings
+											},
+											{	-- Fearless Gladiator's Satin Treads
+												["itemID"] = 142721,	-- Fearless Gladiator's Satin Treads
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
@@ -2069,6 +2204,33 @@ _.Zones =
 											{	-- Cruel Gladiator's Satin Treads
 												["itemID"] = 144677,	-- Cruel Gladiator's Satin Treads
 											},
+											{	-- Ferocious Gladiator's Satin Hood
+												["itemID"] = 145523,	-- Ferocious Gladiator's Satin Hood
+											},
+											{	-- Ferocious Gladiator's Satin Mantle
+												["itemID"] = 145529,	-- Ferocious Gladiator's Satin Mantle
+											},
+											{	-- Ferocious Gladiator's Drape of Piety
+												["itemID"] = 145391,	-- Ferocious Gladiator's Drape of Piety
+											},
+											{	-- Ferocious Gladiator's Satin Robe
+												["itemID"] = 145527,	-- Ferocious Gladiator's Satin Robe
+											},
+											{	-- Ferocious Gladiator's Satin Bracers
+												["itemID"] = 145533,	-- Ferocious Gladiator's Satin Bracers
+											},
+											{	-- Ferocious Gladiator's Satin Gloves
+												["itemID"] = 145521,	-- Ferocious Gladiator's Satin Gloves
+											},
+											{	-- Ferocious Gladiator's Satin Cord
+												["itemID"] = 145531,	-- Ferocious Gladiator's Satin Cord
+											},
+											{	-- Ferocious Gladiator's Satin Leggings
+												["itemID"] = 145525,	-- Ferocious Gladiator's Satin Leggings
+											},
+											{	-- Ferocious Gladiator's Satin Treads
+												["itemID"] = 145519,	-- Ferocious Gladiator's Satin Treads
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
@@ -2555,6 +2717,60 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Satin Treads
 												["itemID"] = 148052,	-- Fierce Gladiator's Satin Treads
+											},
+											{	-- Dominant Gladiator's Satin Hood
+												["itemID"] = 148549,	-- Dominant Gladiator's Satin Hood
+											},
+											{	-- Dominant Gladiator's Satin Mantle
+												["itemID"] = 148555,	-- Dominant Gladiator's Satin Mantle
+											},
+											{	-- Dominant Gladiator's Drape of Piety
+												["itemID"] = 148417,	-- Dominant Gladiator's Drape of Piety
+											},
+											{	-- Dominant Gladiator's Satin Robe
+												["itemID"] = 148553,	-- Dominant Gladiator's Satin Robe
+											},
+											{	-- Dominant Gladiator's Satin Bracers
+												["itemID"] = 148559,	-- Dominant Gladiator's Satin Bracers
+											},
+											{	-- Dominant Gladiator's Satin Gloves
+												["itemID"] = 148547,	-- Dominant Gladiator's Satin Gloves
+											},
+											{	-- Dominant Gladiator's Satin Cord
+												["itemID"] = 148557,	-- Dominant Gladiator's Satin Cord
+											},
+											{	-- Dominant Gladiator's Satin Leggings
+												["itemID"] = 148551,	-- Dominant Gladiator's Satin Leggings
+											},
+											{	-- Dominant Gladiator's Satin Treads
+												["itemID"] = 148545,	-- Dominant Gladiator's Satin Treads
+											},
+											{	-- Demonic Gladiator's Satin Hood
+												["itemID"] = 149041,	-- Demonic Gladiator's Satin Hood
+											},
+											{	-- Demonic Gladiator's Satin Mantle
+												["itemID"] = 149047,	-- Demonic Gladiator's Satin Mantle
+											},
+											{	-- Demonic Gladiator's Drape of Piety
+												["itemID"] = 148908,	-- Demonic Gladiator's Drape of Piety
+											},
+											{	-- Demonic Gladiator's Satin Robe
+												["itemID"] = 149045,	-- Demonic Gladiator's Satin Robe
+											},
+											{	-- Demonic Gladiator's Satin Bracers
+												["itemID"] = 149051,	-- Demonic Gladiator's Satin Bracers
+											},
+											{	-- Demonic Gladiator's Satin Gloves
+												["itemID"] = 149039,	-- Demonic Gladiator's Satin Gloves
+											},
+											{	-- Demonic Gladiator's Satin Cord
+												["itemID"] = 149049,	-- Demonic Gladiator's Satin Cord
+											},
+											{	-- Demonic Gladiator's Satin Leggings
+												["itemID"] = 149043,	-- Demonic Gladiator's Satin Leggings
+											},
+											{	-- Demonic Gladiator's Satin Treads
+												["itemID"] = 149037,	-- Demonic Gladiator's Satin Treads
 											},
 										},
 									},
