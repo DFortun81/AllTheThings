@@ -7,6 +7,10 @@ _.Zones =
 		["g"] = {
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
+					{	-- Aranz, the Slitherblade
+						["questID"] = 55893,
+						["isWQ"] = 120,
+					},
 					{	-- Champion Aldrantiss, Defender of Her Kingdom
 						["questID"] = 55891,
 						["isWQ"] = 120,
@@ -17,6 +21,10 @@ _.Zones =
 					},
 					{	-- Deepcoil Experiments
 						["questID"] = 55973,
+						["isWQ"] = 120,
+					},
+					{	-- Dirty Dozen
+						["questID"] = 56032,
 						["isWQ"] = 120,
 					},
 					{	-- Frozen Winds of Zhiela
