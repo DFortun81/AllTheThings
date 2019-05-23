@@ -96,8 +96,10 @@ _.Achievements =
 					ach(11214),		-- Many Missions (10)
 				}),
 				ach(11219),		-- Need Backup
-				a(ach(10743)),	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
-				h(ach(10745)),	-- The Prestige (Horde) [Still in WoW UI as of 8.0]
+				{	-- The Prestige [A]/ [H]
+					["allianceAchievementID"] = 10743,	-- The Prestige (Alliance) [Still in WoW UI as of 8.0]
+					["hordeAchievementID"] = 10745,		-- The Prestige (Horde) [Still in WoW UI as of 8.0]
+				},
 			},
 		}),
 	}),

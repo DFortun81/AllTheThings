@@ -8,8 +8,9 @@ _.Achievements =
 		["groups"] = {
 			n(-9979, {	-- Cataclysm
 				["groups"] = {
-					a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
-					h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
+					ach(5318, 5319),  -- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance) / (Horde)
+					--[[a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
+					h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)]]
 					ach(5868, {		-- And the Meek Shall Inherit Kalimdor (Mount Hyjal)
 						crit(1),		-- Angry Little Squirrel
 						crit(2),		-- Hyjal Bear Cub
@@ -59,7 +60,16 @@ _.Achievements =
 						crit(5),		-- The Black Recluse spider slain
 						crit(6),		-- Korthalon the Black slain
 					})),
-					a(ach(4873, {	-- Fading into Twilight (Alliance)
+					ach(4873, 5501, {  -- Fading into Twilight (Alliance) / (Horde)
+						crit(1),		-- Good News, For Once [A] / Goblin Work Ethic [H]
+						crit(2),		-- Firebeard [A] / Returning to the Highlands [H]
+						crit(3),		-- The Dunwalds [A] / Krazzworks [H]
+						crit(4),		-- The Eye of Twilight [A] / The Dragonmaw [H]
+						crit(5),		-- Wild, Wild, Wildhammer Wedding [A] / The Eye of Twilight [H]
+						crit(6),		-- The Attack Begins [A] / [H]
+						crit(7),		-- Send Them Packing [A] / [H]
+					}),
+					--[[a(ach(4873, {	-- Fading into Twilight (Alliance)
 						crit(1),		-- Good News, For Once
 						crit(2),		-- Firebeard
 						crit(3),		-- The Dunwalds
@@ -76,7 +86,7 @@ _.Achievements =
 						crit(5),		-- The Eye of Twilight
 						crit(6),		-- The Attack Begins
 						crit(7),		-- Send Them Packing
-					})),
+					})),]]
 					ach(5870, {		-- Fireside Chat (Mount Hyjal)
 						crit(1),		-- Malfurion Stormrage
 						crit(2),		-- Matoclaw
@@ -108,8 +118,9 @@ _.Achievements =
 						crit(4),		-- Slay Galenges before he is weakened a second time
 						crit(5),		-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury. slain
 					}),
-					a(ach(5320)),	-- King of the Mountain (Twilight Highlands) (Alliance)
-					h(ach(5321)),	-- King of the Mountain (Twilight Highlands) (Horde)
+					ach(5320, 5321),  -- King of the Mountain (Twilight Highlands) (Alliance) / (Horde)
+					--[[a(ach(5320)),	-- King of the Mountain (Twilight Highlands) (Alliance)
+					h(ach(5321)),	-- King of the Mountain (Twilight Highlands) (Horde)]]
 					ach(5872),		-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 					ach(5859, {		-- Legacy of Leyara (Mount Hyjal)
 						i(69854, {		-- Smoke-Stained Locket
@@ -165,7 +176,19 @@ _.Achievements =
 						i(60869),		-- Pebble
 					}),
 					ach(4960),		-- Round Three. Fight! (Twilight Highlands)
-					a(ach(4869, {	-- Sinking into Vashj'ir (Alliance)
+					ach(4869, 4982, {	-- Sinking into Vashj'ir (Alliance) / (Horde)
+						crit(1),		-- Defense of The Briny Cutter [A] / Defense of The Immortal Coil [H]
+						crit(2),		-- Smuggler's Scar [A] / [H]
+						crit(3),		-- A Budding Treasure Hunter [A] / [H]
+						crit(4),		-- The Clutch [A] / [H]
+						crit(5),		-- Silver Tide Hollow [A] / [H]
+						crit(6),		-- Nespirah [A] / [H]
+						crit(7),		-- Visions of the Past [A] / [H]
+						crit(8),		-- The Merciless One [A] / [H]
+						crit(9),		-- L'ghorek [A] / [H]
+						crit(10),		-- The Tidehunter [A] / [H]
+					}),
+					--[[a(ach(4869, {	-- Sinking into Vashj'ir (Alliance)
 						crit(1),		-- Defense of The Briny Cutter
 						crit(2),		-- Smuggler's Scar
 						crit(3),		-- A Budding Treasure Hunter
@@ -188,7 +211,7 @@ _.Achievements =
 						crit(8),		-- The Merciless One
 						crit(9),		-- L'ghorek
 						crit(10),		-- The Tidehunter
-					})),
+					})),]]
 					ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN. (Mount Hyjal)
 						i(69838, {		-- Chirping Box (Blue / Gold Mini Jouster - which ever wasnt picked during !Vigilance on Wings)
 							["description"] = "Contains either the Blue or Gold Mini Jouster, whichever was not picked during the quest Vigilance on Wings.",

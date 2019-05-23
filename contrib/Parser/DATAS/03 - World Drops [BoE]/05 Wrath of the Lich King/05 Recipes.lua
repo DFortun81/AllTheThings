@@ -10,7 +10,7 @@ _.WorldDrops =
 				n(-180, {	-- Alchemy
 					un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 				}),
-				prof(333, {	-- Enchanting
+				n(-182, {	-- Enchanting
 					{	-- Formula: Enchant Boots - Superior Agility
 						["itemID"] = 37341,	-- Formula: Enchant Boots - Superior Agility
 						["u"] = 7,	-- now learned from trainer, formula was removed from game

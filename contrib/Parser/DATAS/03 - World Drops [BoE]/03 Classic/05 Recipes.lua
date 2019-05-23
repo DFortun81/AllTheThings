@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+_.WorldDrops =
 {
 	{
 		["groups"] = {	-- Classic
@@ -249,7 +249,7 @@ _.WorldDrops =
 						["itemID"] = 12691,	-- Plans: Wildthorn Mail
 					},
 				}),
-				prof(333, {	-- Enchanting
+				n(-182, {	-- Enchanting
 					i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
 					{			-- Formula: Enchant Boots - Greater Agility
 						["itemID"] = 16245,	-- Formula: Enchant Boots - Greater Agility
@@ -265,7 +265,7 @@ _.WorldDrops =
 					i(6344),	-- Formula: Enchant Bracer - Minor Versatility
 					i(16251),	-- Formula: Enchant Bracer - Superior Stamina
 					i(16218),	-- Formula: Enchant Bracer - Superior Versatility
-					i(6342),	-- Formula: Enchant Chest - Minor Mana 
+					i(6342),	-- Formula: Enchant Chest - Minor Mana
 					i(11039),	-- Formula: Enchant Cloak - Minor Agility
 					i(11226),	-- Formula: Enchant Gloves - Riding Skill
 					i(11168),	-- Formula: Enchant Shield - Lesser Parry
@@ -276,7 +276,7 @@ _.WorldDrops =
 					i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 					i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
 				}),
-				prof(202, {	-- Engineering
+				n(-183, {	-- Engineering
 					i(16055),	-- Schematic: Arcane Bomb
 					i(10601),	-- Schematic: Bright-Eye Goggles
 					i(10603),	-- Schematic: Catseye Ultra Goggles
@@ -285,6 +285,9 @@ _.WorldDrops =
 						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 					i(6716),	-- Schematic: EZ-Thro Dynamite
+					{	-- Schematic: Flame Deflector
+						["itemID"] = 4411,	-- Schematic: Flame Deflector
+					},
 					i(4416),	-- Schematic: Goblin Land Mine
 					i(4417),	-- Schematic: Large Seaforium Charge
 					i(16044),	-- Schematic: Lifelike Mechanical Toad
@@ -314,16 +317,19 @@ _.WorldDrops =
 					i(21945),	-- Design: The Aquamarine Ward
 					i(21944),	-- Design: Truesilver Boar
 				}),
-				prof(165, {	-- Leatherworking
+				n(-187, {	-- Leatherworking
 					i(4301),	-- Pattern: Barbaric Belt
 					i(4297),	-- Pattern: Barbaric Gloves
 					i(8390),	-- Pattern: Big Voodoo Cloak
 					i(8387),	-- Pattern: Big Voodoo Mask
 					i(8389),	-- Pattern: Big Voodoo Pants
 					i(8386),	-- Pattern: Big Voodoo Robe
-					i(15737),	-- Pattern: Chimeric Boots		
+					i(15737),	-- Pattern: Chimeric Boots
 					i(15746),	-- Pattern: Chimeric Leggings
-					i(15755),	-- Pattern: Chimeric Vest	
+					i(15755),	-- Pattern: Chimeric Vest
+					{	-- Pattern: Comfortable Leather Hat
+						["itemID"] = 8384,	-- Pattern: Comfortable Leather Hat
+					},
 					i(4296),	-- Pattern: Dark Leather Shoulders
 					i(2409),	-- Pattern: Dark Leather Tunic
 					i(7452),	-- Pattern: Dusky Boots
@@ -430,5 +436,5 @@ _.WorldDrops =
 			}),
 		},
 		["tierID"] = 1,
-	},	
+	},
 };

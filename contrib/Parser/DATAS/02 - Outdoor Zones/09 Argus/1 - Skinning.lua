@@ -16,7 +16,7 @@ _.Zones =
 				["g"] = {
 					{	-- Fossorial Bile Larva
 						["itemID"] = 153057,	-- Fossorial Bile Larva
-						["description"] = "This is fished from the green pools around Krokuun and Antoran Wastes or the water on Mac'Aree."
+						["description"] = "This can be obtained from any skinnable Argus mob."
 					},
 				},
 			},

@@ -262,7 +262,8 @@ _.Zones =
 							}),
 							qh(28553, {	-- Okrilla and the Blasted Lands
 								["qg"] = 7623,
-								["sourceQuests"] = { 27196 },
+								["isBreadcrumb"] = true,
+								["sourceQuests"] = { 27916 },
 							}),
 							qh(27852, {	-- Orcs and Humans
 								["qg"] = 7623,

@@ -907,11 +907,13 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drop
-					i(15760, {	-- Pattern: Ironfeather Breastplate
+					{	-- Pattern: Ironfeather Breastplate
+						["itemID"] = 15760,
 						["crs"] = {
 							2644,	-- Vilebranch Hideskinner						
 						},
-					}),
+						["u"] = 7,
+					},
 					{	-- Formula: Enchant Bracer - Greater Intellect
 						["itemID"] = 16214,
 						["crs"] = {

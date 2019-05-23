@@ -40,7 +40,21 @@ _.Achievements =
 						crit(7),		-- Rejek: First Blood
 						crit(8),		-- A Hero's Headgear
 					}),
-					a(ach(34, {		-- I've Toured the Fjord (Alliance)
+					ach(34, 1356, {	-- I've Toured the Fjord (Alliance) / (Horde)
+						crit(1),		-- The Ill-Equipped Port [A] / Visitors from the Keep [H]
+						crit(2),		-- Descendants of the Vrykul [A] / Assassinating Bjorn Halgurdsson [H]
+						crit(3),		-- Iron Rune Constructs [A] / A New Plague [H]
+						crit(4),		-- Doom Approaches [A] / [H]
+						crit(5),		-- The End of Jonah Sterling [A] / [H]
+						crit(6),		-- The Debt Collector [A] / [H]
+						crit(7),		-- A New Plague [A] / Volatile Viscera [H]
+						crit(8),		-- The Conqueror of Skorn [A] / Sisters of the Fjord [H]
+						crit(9),		-- The Scourge and the Vrykul [A] / The Iron Dwarves [H]
+						crit(10),		-- Sisters of the Fjord [A] / The Conqueror of Skorn [H]
+						crit(11),		-- The Iron Dwarves [A] / The Scourge and the Vrykul [H]
+						crit(12),		-- Alpha Worg [A] / [H]
+					}),
+					--[[a(ach(34, {		-- I've Toured the Fjord (Alliance)
 						crit(1),		-- The Ill-Equipped Port
 						crit(2),		-- Descendants of the Vrykul
 						crit(3),		-- Iron Rune Constructs
@@ -67,7 +81,7 @@ _.Achievements =
 						crit(10),		-- The Conqueror of Skorn
 						crit(11),		-- The Scourge and the Vrykul
 						crit(12),		-- Alpha Worg
-					})),
+					})),]]
 					ach(40, {		-- Icecrown: The Final Goal
 						crit(1),		-- Crusader Bridenbrad
 						crit(2),		-- The Unthinkable

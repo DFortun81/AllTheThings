@@ -5511,35 +5511,104 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["achievementID"] = 8458,	-- Vale of Eternal Sorrows
 						["criteriaID"] = 4,	-- Sha of Pride
 					},
-					i(99715, {	-- Chest of the Cursed Conqueror
-						i(99387),	-- Battleplate of Winged Triumph
-						i(99374),	-- Breastplate of Winged Triumph
-						i(99368),	-- Chestguard of Winged Triumph
-						i(99362),	-- Raiment of the Ternion Glory
-						i(99357),	-- Robes of the Ternion Glory
-						i(99416),	-- Robes of the Horned Nightmare
-					}),
-					i(99716, {	-- Chest of the Cursed Protector
-						i(99405),	-- Tunic of the Unblinking Vigil
-						i(99382),	-- Chestguard of Seven Sacred Seals
-						i(99396),	-- Tunic of Seven Sacred Seals
-						i(99391),	-- Vest of Seven Sacred Seals
-						i(99347),	-- Cuirass of Celestial Harmony
-						i(99344),	-- Hauberk of Celestial Harmony
-						i(99351),	-- Tunic of Celestial Harmony
-						i(99411),	-- Battleplate of the Prehistoric Marauder
-						i(99415),	-- Chestguard of the Prehistoric Marauder
-					}),
-					i(99714, {	-- Chest of the Cursed Vanquisher
-						i(99335),	-- Breastplate of Cyclopean Dread
-						i(99330),	-- Chestguard of Cyclopean Dread
-						i(99326),	-- Raiment of the Shattered Vale
-						i(99430),	-- Robes of the Shattered Vale
-						i(99419),	-- Tunic of the Shattered Vale
-						i(99427),	-- Vestment of the Shattered Vale
-						i(99400),	-- Chronomancer Robes
-						i(99356),	-- Tunic of the Barbed Assassin
-					}),
+					{	-- Chest of the Cursed Conqueror [Priest / Warlock / Priest]
+						["itemID"] = 99715,	-- Chest of the Cursed Conqueror
+						["classes"] = {
+							5,	-- Priest
+							9,	-- Warlock
+							2,	-- Paladin
+						},
+						["g"] = {
+							{	-- Raiment of the Ternion Glory
+								["itemID"] = 99362,	-- Raiment of the Ternion Glory
+							},
+							{	-- Robes of the Ternion Glory
+								["itemID"] = 99357,	-- Robes of the Ternion Glory
+							},
+							{	-- Robes of the Horned Nightmare
+								["itemID"] = 99416,	-- Robes of the Horned Nightmare
+							},
+							{	-- Battleplate of Winged Triumph
+								["itemID"] = 99387,	-- Battleplate of Winged Triumph
+							},
+							{	-- Breastplate of Winged Triumph
+								["itemID"] = 99374,	-- Breastplate of Winged Triumph
+							},
+							{	-- Chestguard of Winged Triumph
+								["itemID"] = 99368,	-- Chestguard of Winged Triumph
+							},
+						},
+					},
+					{	-- Chest of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
+						["itemID"] = 99716,	-- Chest of the Cursed Protector
+						["classes"] = {
+							10,	-- Monk
+							3,	-- Hunter
+							7,	-- Shaman
+							1,	-- Warrior
+						},
+						["g"] = {
+							{	-- Tunic of Seven Sacred Seals
+								["itemID"] = 99396,	-- Tunic of Seven Sacred Seals
+							},
+							{	-- Vest of Seven Sacred Seals
+								["itemID"] = 99391,	-- Vest of Seven Sacred Seals
+							},
+							{	-- Tunic of the Unblinking Vigil
+								["itemID"] = 99405,	-- Tunic of the Unblinking Vigil
+							},
+							{	-- Cuirass of Celestial Harmony
+								["itemID"] = 99347,	-- Cuirass of Celestial Harmony
+							},
+							{	-- Hauberk of Celestial Harmony
+								["itemID"] = 99344,	-- Hauberk of Celestial Harmony
+							},
+							{	-- Tunic of Celestial Harmony
+								["itemID"] = 99351,	-- Tunic of Celestial Harmony
+							},
+							{	-- Battleplate of the Prehistoric Marauder
+								["itemID"] = 99411,	-- Battleplate of the Prehistoric Marauder
+							},
+							{	-- Chestguard of the Prehistoric Marauder
+								["itemID"] = 99415,	-- Chestguard of the Prehistoric Marauder
+							},
+						},
+					},
+					{	-- Chest of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
+						["itemID"] = 99714,	-- Chest of the Cursed Vanquisher
+						["classes"] = {
+							8,	-- Mage
+							11,	-- Druid
+							4,	-- Rogue
+							6,	-- Death Knight
+						},
+						["g"] = {
+							{	-- Chronomancer Robes
+								["itemID"] = 99400,	-- Chronomancer Robes
+							},
+							{	-- Raiment of the Shattered Vale
+								["itemID"] = 99326,	-- Raiment of the Shattered Vale
+							},
+							{	-- Robes of the Shattered Vale
+								["itemID"] = 99430,	-- Robes of the Shattered Vale
+							},
+							{	-- Tunic of the Shattered Vale
+								["itemID"] = 99419,	-- Tunic of the Shattered Vale
+							},
+							{	-- Vestment of the Shattered Vale
+								["itemID"] = 99427,	-- Vestment of the Shattered Vale
+							},
+							{	-- Tunic of the Barbed Assassin
+								["itemID"] = 99356,	-- Tunic of the Barbed Assassin
+							},
+							{	-- Breastplate of Cyclopean Dread
+								["itemID"] = 99335,	-- Breastplate of Cyclopean Dread
+							},
+							{	-- Chestguard of Cyclopean Dread
+								["itemID"] = 99330,	-- Chestguard of Cyclopean Dread
+							},
+						},
+					},
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -5681,35 +5750,104 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					{	-- Mythic: General Nazgrim
 						["achievementID"] = 8471,	-- Mythic: General Nazgrim
 					},
-					i(99721, {	-- Gauntlets of the Cursed Conqueror
-						i(99380),	-- Gauntlets of Winged Triumph
-						i(99375),	-- Gloves of Winged Triumph
-						i(99369),	-- Handguards of Winged Triumph
-						i(99359),	-- Gloves of the Ternion Glory
-						i(99365),	-- Handwraps of the Ternion Glory
-						i(99424),	-- Gloves of the Horned Nightmare
-					}),
-					i(99722, {	-- Gauntlets of the Cursed Protector
-						i(99406),	-- Gloves of the Unblinking Vigil
-						i(99383),	-- Gauntlets of Seven Sacred Seals
-						i(99392),	-- Grips of Seven Sacred Seals
-						i(99388),	-- Handwraps of Seven Sacred Seals
-						i(99345),	-- Gloves of Celestial Harmony
-						i(99340),	-- Grips of Celestial Harmony
-						i(99352),	-- Handwraps of Celestial Harmony
-						i(99412),	-- Gauntlets of the Prehistoric Marauder
-						i(99408),	-- Handguards of the Prehistoric Marauder
-					}),
-					i(99720, {	-- Gauntlets of the Cursed Vanquisher
-						i(99336),	-- Gauntlets of Cyclopean Dread
-						i(99331),	-- Handguards of Cyclopean Dread
-						i(99432),	-- Gloves of the Shattered Vale
-						i(99327),	-- Grips of the Shattered Vale
-						i(99420),	-- Handguards of the Shattered Vale
-						i(99435),	-- Handwraps of the Shattered Vale
-						i(99397),	-- Chronomancer Gloves
-						i(99355),	-- Gloves of the Barbed Assassin
-					}),
+					{	-- Gauntlets of the Cursed Conqueror [Priest / Warlock / Priest]
+						["itemID"] = 99721,	-- Gauntlets of the Cursed Conqueror
+						["classes"] = {
+							5,	-- Priest
+							9,	-- Warlock
+							2,	-- Paladin
+						},
+						["g"] = {
+							{	-- Gloves of the Ternion Glory
+								["itemID"] = 99359,	-- Gloves of the Ternion Glory
+							},
+							{	-- Handwraps of the Ternion Glory
+								["itemID"] = 99365,	-- Handwraps of the Ternion Glory
+							},
+							{	-- Gloves of the Horned Nightmare
+								["itemID"] = 99424,	-- Gloves of the Horned Nightmare
+							},
+							{	-- Gauntlets of Winged Triumph
+								["itemID"] = 99380,	-- Gauntlets of Winged Triumph
+							},
+							{	-- Gloves of Winged Triumph
+								["itemID"] = 99375,	-- Gloves of Winged Triumph
+							},
+							{	-- Handguards of Winged Triumph
+								["itemID"] = 99369,	-- Handguards of Winged Triumph
+							},
+						},								
+					},									
+					{	-- Gauntlets of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
+						["itemID"] = 99722,	-- Gauntlets of the Cursed Protector
+						["classes"] = {
+							10,	-- Monk
+							3,	-- Hunter
+							7,	-- Shaman
+							1,	-- Warrior
+						},
+						["g"] = {
+							{	-- Gauntlets of Seven Sacred Seals
+								["itemID"] = 99383,	-- Gauntlets of Seven Sacred Seals
+							},
+							{	-- Grips of Seven Sacred Seals
+								["itemID"] = 99392,	-- Grips of Seven Sacred Seals
+							},
+							{	-- Handwraps of Seven Sacred Seals
+								["itemID"] = 99388,	-- Handwraps of Seven Sacred Seals
+							},
+							{	-- Gloves of the Unblinking Vigil
+								["itemID"] = 99406,	-- Gloves of the Unblinking Vigil
+							},
+							{	-- Gloves of Celestial Harmony
+								["itemID"] = 99345,	-- Gloves of Celestial Harmony
+							},
+							{	-- Grips of Celestial Harmony
+								["itemID"] = 99340,	-- Grips of Celestial Harmony
+							},
+							{	-- Handwraps of Celestial Harmony
+								["itemID"] = 99352,	-- Handwraps of Celestial Harmony
+							},
+							{	-- Gauntlets of the Prehistoric Marauder
+								["itemID"] = 99412,	-- Gauntlets of the Prehistoric Marauder
+							},
+							{	-- Handguards of the Prehistoric Marauder
+								["itemID"] = 99408,	-- Handguards of the Prehistoric Marauder
+							},
+						},								
+					},									
+					{	-- Gauntlets of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
+						["itemID"] = 99720,	-- Gauntlets of the Cursed Vanquisher
+						["classes"] = {
+							8,	-- Mage
+							11,	-- Druid
+							4,	-- Rogue
+							6,	-- Death Knight
+						},
+						["g"] = {
+							{	-- Chronomancer Gloves
+								["itemID"] = 99397,	-- Chronomancer Gloves
+							},
+							{	-- Grips of the Shattered Vale
+								["itemID"] = 99327,	-- Grips of the Shattered Vale
+							},
+							{	-- Handguards of the Shattered Vale
+								["itemID"] = 99420,	-- Handguards of the Shattered Vale
+							},
+							{	-- Handwraps of the Shattered Vale
+								["itemID"] = 99435,	-- Handwraps of the Shattered Vale
+							},
+							{	-- Gloves of the Barbed Assassin
+								["itemID"] = 99355,	-- Gloves of the Barbed Assassin
+							},
+							{	-- Gauntlets of Cyclopean Dread
+								["itemID"] = 99336,	-- Gauntlets of Cyclopean Dread
+							},
+							{	-- Handguards of Cyclopean Dread
+								["itemID"] = 99331,	-- Handguards of Cyclopean Dread
+							},
+						},								
+					},	
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -6001,12 +6139,244 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					{	-- Strike!	
 						["achievementID"] = 8537,	-- Strike!
 					},
-					i(105867),	-- Essence of the Cursed Conqueror
-					i(105866),	-- Essence of the Cursed Protector
-					i(105868),	-- Essence of the Cursed Vanquisher
-					i(112935, {	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
+					{	-- Essence of the Cursed Conqueror [Priest / Warlock / Priest]
+						["itemID"] = 105867,	-- Essence of the Cursed Conqueror
+						["classes"] = {
+							5,	-- Priest
+							9,	-- Warlock
+							2,	-- Paladin
+						},
+						["g"] = {
+							--[[
+							{	-- Chest of the Cursed Conqueror [Priest / Warlock / Priest]
+								["itemID"] = 99715,	-- Chest of the Cursed Conqueror
+								["classes"] = {
+									5,	-- Priest
+									9,	-- Warlock
+									2,	-- Paladin
+								},
+								["g"] = {
+									{	-- Raiment of the Ternion Glory
+										["itemID"] = 99362,	-- Raiment of the Ternion Glory
+									},
+									{	-- Robes of the Ternion Glory
+										["itemID"] = 99357,	-- Robes of the Ternion Glory
+									},
+									{	-- Robes of the Horned Nightmare
+										["itemID"] = 99416,	-- Robes of the Horned Nightmare
+									},
+									{	-- Battleplate of Winged Triumph
+										["itemID"] = 99387,	-- Battleplate of Winged Triumph
+									},
+									{	-- Breastplate of Winged Triumph
+										["itemID"] = 99374,	-- Breastplate of Winged Triumph
+									},
+									{	-- Chestguard of Winged Triumph
+										["itemID"] = 99368,	-- Chestguard of Winged Triumph
+									},
+								},
+							},
+							{	-- Gauntlets of the Cursed Conqueror [Priest / Warlock / Priest]
+								["itemID"] = 99721,	-- Gauntlets of the Cursed Conqueror
+								["classes"] = {
+									5,	-- Priest
+									9,	-- Warlock
+									2,	-- Paladin
+								},
+								["g"] = {
+									{	-- Gloves of the Ternion Glory
+										["itemID"] = 99359,	-- Gloves of the Ternion Glory
+									},
+									{	-- Handwraps of the Ternion Glory
+										["itemID"] = 99365,	-- Handwraps of the Ternion Glory
+									},
+									{	-- Gloves of the Horned Nightmare
+										["itemID"] = 99424,	-- Gloves of the Horned Nightmare
+									},
+									{	-- Gauntlets of Winged Triumph
+										["itemID"] = 99380,	-- Gauntlets of Winged Triumph
+									},
+									{	-- Gloves of Winged Triumph
+										["itemID"] = 99375,	-- Gloves of Winged Triumph
+									},
+									{	-- Handguards of Winged Triumph
+										["itemID"] = 99369,	-- Handguards of Winged Triumph
+									},
+								},								
+							},	
+							--]]
+						},
+					},
+					{	-- Essence of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
+						["itemID"] = 105866,	-- Essence of the Cursed Protector
+						["classes"] = {
+							10,	-- Monk
+							3,	-- Hunter
+							7,	-- Shaman
+							1,	-- Warrior
+						},
+						["g"] = {
+							--[[
+							{	-- Chest of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 99716,	-- Chest of the Cursed Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Tunic of Seven Sacred Seals
+										["itemID"] = 99396,	-- Tunic of Seven Sacred Seals
+									},
+									{	-- Vest of Seven Sacred Seals
+										["itemID"] = 99391,	-- Vest of Seven Sacred Seals
+									},
+									{	-- Tunic of the Unblinking Vigil
+										["itemID"] = 99405,	-- Tunic of the Unblinking Vigil
+									},
+									{	-- Cuirass of Celestial Harmony
+										["itemID"] = 99347,	-- Cuirass of Celestial Harmony
+									},
+									{	-- Hauberk of Celestial Harmony
+										["itemID"] = 99344,	-- Hauberk of Celestial Harmony
+									},
+									{	-- Tunic of Celestial Harmony
+										["itemID"] = 99351,	-- Tunic of Celestial Harmony
+									},
+									{	-- Battleplate of the Prehistoric Marauder
+										["itemID"] = 99411,	-- Battleplate of the Prehistoric Marauder
+									},
+									{	-- Chestguard of the Prehistoric Marauder
+										["itemID"] = 99415,	-- Chestguard of the Prehistoric Marauder
+									},
+								},
+							},
+							{	-- Gauntlets of the Cursed Protector [Monk / Hunter / Shaman / Warrior]
+								["itemID"] = 99722,	-- Gauntlets of the Cursed Protector
+								["classes"] = {
+									10,	-- Monk
+									3,	-- Hunter
+									7,	-- Shaman
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Gauntlets of Seven Sacred Seals
+										["itemID"] = 99383,	-- Gauntlets of Seven Sacred Seals
+									},
+									{	-- Grips of Seven Sacred Seals
+										["itemID"] = 99392,	-- Grips of Seven Sacred Seals
+									},
+									{	-- Handwraps of Seven Sacred Seals
+										["itemID"] = 99388,	-- Handwraps of Seven Sacred Seals
+									},
+									{	-- Gloves of the Unblinking Vigil
+										["itemID"] = 99406,	-- Gloves of the Unblinking Vigil
+									},
+									{	-- Gloves of Celestial Harmony
+										["itemID"] = 99345,	-- Gloves of Celestial Harmony
+									},
+									{	-- Grips of Celestial Harmony
+										["itemID"] = 99340,	-- Grips of Celestial Harmony
+									},
+									{	-- Handwraps of Celestial Harmony
+										["itemID"] = 99352,	-- Handwraps of Celestial Harmony
+									},
+									{	-- Gauntlets of the Prehistoric Marauder
+										["itemID"] = 99412,	-- Gauntlets of the Prehistoric Marauder
+									},
+									{	-- Handguards of the Prehistoric Marauder
+										["itemID"] = 99408,	-- Handguards of the Prehistoric Marauder
+									},
+								},								
+							},	
+							--]]
+						},
+					},
+					{	-- Essence of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
+						["itemID"] = 105868,	-- Essence of the Cursed Vanquisher
+						["classes"] = {
+							8,	-- Mage
+							11,	-- Druid
+							4,	-- Rogue
+							6,	-- Death Knight
+						},
+						["g"] = {
+							--[[
+							{	-- Chest of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
+								["itemID"] = 99714,	-- Chest of the Cursed Vanquisher
+								["classes"] = {
+									8,	-- Mage
+									11,	-- Druid
+									4,	-- Rogue
+									6,	-- Death Knight
+								},
+								["g"] = {
+									{	-- Chronomancer Robes
+										["itemID"] = 99400,	-- Chronomancer Robes
+									},
+									{	-- Raiment of the Shattered Vale
+										["itemID"] = 99326,	-- Raiment of the Shattered Vale
+									},
+									{	-- Robes of the Shattered Vale
+										["itemID"] = 99430,	-- Robes of the Shattered Vale
+									},
+									{	-- Tunic of the Shattered Vale
+										["itemID"] = 99419,	-- Tunic of the Shattered Vale
+									},
+									{	-- Vestment of the Shattered Vale
+										["itemID"] = 99427,	-- Vestment of the Shattered Vale
+									},
+									{	-- Tunic of the Barbed Assassin
+										["itemID"] = 99356,	-- Tunic of the Barbed Assassin
+									},
+									{	-- Breastplate of Cyclopean Dread
+										["itemID"] = 99335,	-- Breastplate of Cyclopean Dread
+									},
+									{	-- Chestguard of Cyclopean Dread
+										["itemID"] = 99330,	-- Chestguard of Cyclopean Dread
+									},
+								},
+							},
+							{	-- Gauntlets of the Cursed Vanquisher [Mage / Druid / Rogue / Death Knight]
+								["itemID"] = 99720,	-- Gauntlets of the Cursed Vanquisher
+								["classes"] = {
+									8,	-- Mage
+									11,	-- Druid
+									4,	-- Rogue
+									6,	-- Death Knight
+								},
+								["g"] = {
+									{	-- Chronomancer Gloves
+										["itemID"] = 99397,	-- Chronomancer Gloves
+									},
+									{	-- Grips of the Shattered Vale
+										["itemID"] = 99327,	-- Grips of the Shattered Vale
+									},
+									{	-- Handguards of the Shattered Vale
+										["itemID"] = 99420,	-- Handguards of the Shattered Vale
+									},
+									{	-- Handwraps of the Shattered Vale
+										["itemID"] = 99435,	-- Handwraps of the Shattered Vale
+									},
+									{	-- Gloves of the Barbed Assassin
+										["itemID"] = 99355,	-- Gloves of the Barbed Assassin
+									},
+									{	-- Gauntlets of Cyclopean Dread
+										["itemID"] = 99336,	-- Gauntlets of Cyclopean Dread
+									},
+									{	-- Handguards of Cyclopean Dread
+										["itemID"] = 99331,	-- Handguards of Cyclopean Dread
+									},
+								},								
+							},	
+							--]]
+						},
+					},
+					{	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
+						["itemID"] = 112935,	-- Tusks of Mannoroth [Normal that scales to Heroic/Mythic]
 						["bonusID"] = 450,
-					}),
+					},
 					i(104253),	-- Kor'kron Juggernaut (MOUNT!)
 					i(112932),	-- Kor'kron Spire of Supremacy
 					i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl

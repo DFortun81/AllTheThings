@@ -643,8 +643,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qa(43471)),	-- The Historians
 --]]					
 					qa(7497, {	-- The Journey Has Just Begun
-						["sourceQuests"] = {24428}, --A Most Puzzling Circumstance
+						["sourceQuests"] = { 24428 }, --A Most Puzzling Circumstance
 						["requireSkill"] = 165,	-- Leatherworking
+						["coord"] = { 67.2, 85.1, 84 },
 						["qg"] = 14394,	-- Major Mattingly
 						["g"] = {
 							recipe(19093),		-- Onyxia Scale Cloak

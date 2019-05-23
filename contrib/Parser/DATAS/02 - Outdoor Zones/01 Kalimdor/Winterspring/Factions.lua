@@ -53,45 +53,48 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				faction(589, {	-- Wintersaber Trainers
-					{	-- Get Them While They're Young
-						["questID"] = 29032,
-						["qg"] = 10618,	-- Rivern Frostwind
-						["coord"] = { 46.6, 17.6, 83 },
-						["races"] = ALLIANCE_ONLY,
-					},
-					{	-- 'Borrowing' From the Winterfall
-						["questID"] = 29037,
-						["qg"] = 51677,	-- Winterspring Cub
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					},
-					{	-- A Cub's Cravings
-						["questID"] = 29035,
-						["qg"] = 51677,	-- Winterspring Cub
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					},
-					{	-- Cub's First Toy
-						["questID"] = 29040,
-						["qg"] = 51677,	-- Winterspring Cub
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					},
-					{	-- Hunting Practice
-						["questID"] = 29038,
-						["qg"] = 51677,	-- Winterspring Cub
-						["races"] = ALLIANCE_ONLY,
-						["isDaily"] = true,
-					},
-					{	-- They Grow Up So Fast
-						["questID"] = 29034,
-						["qg"] = 10618,	-- Rivern Frostwind
-						["coord"] = { 46.6, 17.6 },
-						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
-						["sourceQuest"] = 29032,	-- Get Them While They're Young
-						["groups"] = {
-							i(13086),	-- Reins of the Winterspring Frostsaber
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{	-- Get Them While They're Young
+							["questID"] = 29032,
+							["qg"] = 10618,	-- Rivern Frostwind
+							["coord"] = { 46.6, 17.6, 83 },
+							["races"] = ALLIANCE_ONLY,
+						},
+						{	-- 'Borrowing' From the Winterfall
+							["questID"] = 29037,
+							["qg"] = 51677,	-- Winterspring Cub
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- A Cub's Cravings
+							["questID"] = 29035,
+							["qg"] = 51677,	-- Winterspring Cub
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Cub's First Toy
+							["questID"] = 29040,
+							["qg"] = 51677,	-- Winterspring Cub
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- Hunting Practice
+							["questID"] = 29038,
+							["qg"] = 51677,	-- Winterspring Cub
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						},
+						{	-- They Grow Up So Fast
+							["questID"] = 29034,
+							["qg"] = 10618,	-- Rivern Frostwind
+							["coord"] = { 46.6, 17.6 },
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
+							["sourceQuest"] = 29032,	-- Get Them While They're Young
+							["groups"] = {
+								i(13086),	-- Reins of the Winterspring Frostsaber
+							},
 						},
 					},
 				}),

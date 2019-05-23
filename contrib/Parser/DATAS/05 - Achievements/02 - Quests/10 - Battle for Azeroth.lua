@@ -87,7 +87,15 @@ _.Achievements =
 						crit(10),		-- Stick It To 'Em!
 					})),
 					ach(13045),		-- Every Day I'm Truffling
-					a(ach(13283, {	-- Frontline Warrior (A)
+					ach(13283, 13284, {	-- Frontline Warrior [A] / [H]
+						crit(1),		-- A Sound Defense [A] / Breaching Boralus [H]
+						crit(2),		-- Storm's Rage [A] / Romp in the Swamp [H]
+						crit(3),		-- A Drust Cause [A] / Isolated Victory [H]
+						crit(4),		-- Many Fine Heroes [A] / Shores of Zuldazar [H]
+						crit(5),		-- March on the Marsh [A] / In Every Dark Corner [H]
+						crit(6),		-- Ritual Rampage [A] / Horde of Heroes [H]
+					}),
+					--[[a(ach(13283, {	-- Frontline Warrior (A)
 						crit(1),		-- A Sound Defense
 						crit(2),		-- Storm's Rage
 						crit(3),		-- A Drust Cause
@@ -102,7 +110,7 @@ _.Achievements =
 						crit(4),		-- Shores of Zuldazar
 						crit(5),		-- In Every Dark Corner
 						crit(6),		-- Horde of Heroes
-					})),
+					})),]]
 					ach(12918),		-- Have a Heart
 					ach(13542, {	-- How to Train Your Direhorn
 						crit(1),	-- Naptime
@@ -150,16 +158,11 @@ _.Achievements =
 						crit(5),		-- Boon of Kimbul
 						crit(6),		-- Boon of Krag'wa
 					})),
-					a(ach(12593, {	-- Loremaster of Kul Tiras
-						ach(12473),		-- A Sound Plan
-						ach(12497),		-- Drust Do It.
-						ach(12496),		-- Stormsong and Dance
-					})),
-					h(ach(13294, {	-- Loremaster of Zandalar
-						ach(11861),		-- The Throne of Zuldazar
-						ach(11868),		-- The Dark Heart of Nazmir
-						ach(12478),		-- Secrets in the Sands
-					})),
+					ach(12593, 13294, {	-- Loremaster of Kul Tiras [A] / Loremaster of Zandalar [H]
+						ach(12473, 11861),		-- A Sound Plan [A] / The Throne of Zuldazar [H]
+						ach(12497, 11868),		-- Drust Do It. [A] / The Dark Heart of Nazmir [H]
+						ach(12496, 12478),		-- Stormsong and Dance [A] / Secrets in the Sands [H]
+					}),
 					ach(13791, {	-- Making the Mount
 						crit(1),	-- Shop Project
 						crit(2),	-- Right Bot for the Job
@@ -180,8 +183,9 @@ _.Achievements =
 						crit(3),		-- Master of Calligraphy - Triangle
 					}),
 					h(ach(13039)),	-- Paku'ai
-					a(ach(13440)),	-- Pushing the Payload (A)
-					h(ach(13441)),	-- Pushing the Payload (H)
+					ach(13440, 13441),	-- Pushing the Payload [A] / [H]
+					--a(ach(13440)),	-- Pushing the Payload (A)
+					--h(ach(13441)),	-- Pushing the Payload (H)
 					h(ach(13038)),	-- Raptari Rider
 					a(ach(12510, {	-- Ready for War (Alliance)
 						crit(1),		-- Nazmir Foothold

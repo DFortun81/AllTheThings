@@ -1236,7 +1236,7 @@ _.Craftables =
 					un(8, i(15059)),	-- Living Breastplate
 					i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 					i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
-					i(15066),	-- Ironfeather Breastplate
+					un(8, i(15066)),	-- Ironfeather Breastplate
 					un(8, i(15056)),	-- Stormshroud Armor
 					i(15075),	-- Chimeric Vest
 					i(15053),	-- Volcanic Breastplate

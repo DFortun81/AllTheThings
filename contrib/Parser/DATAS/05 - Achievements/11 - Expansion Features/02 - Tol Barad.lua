@@ -10,7 +10,7 @@ _.Achievements =
 					{	-- Alizabal
 						["achievementID"] = 6108,	-- Alizabal
 						["maps"] = {
-							262,	-- Baradin Hold
+							282,	-- Baradin Hold
 						},
 					},
 					{	-- Just Another Day in Tol Barad
@@ -329,7 +329,7 @@ _.Achievements =
 					{	-- Occu'thar
 						["achievementID"] = 6045,	-- Occu'thar
 						["maps"] = {
-							262,	-- Baradin Hold
+							282,	-- Baradin Hold
 						},
 					},
 				},

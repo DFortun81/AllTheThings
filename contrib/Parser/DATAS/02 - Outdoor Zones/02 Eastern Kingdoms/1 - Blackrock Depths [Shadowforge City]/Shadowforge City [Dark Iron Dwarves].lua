@@ -4,16 +4,11 @@
 
 _.Zones =
 {
-	{	-- Broken Isles
+	{	-- Eastern Kingdom
 		["mapID"] = 13,	-- Eastern Kingdom
 		["g"] = {
 			{	-- Blackrock Depths: Shadowforge City
 				["mapID"] = 1186,	-- Blackrock Depths: Shadowforge City
-				["races"] = {
-					34,	-- Dark Iron Dwarves
-				},
-				["icon"] = "Interface\\Icons\\ability_racial_fireblood",
-				["description"] = "Known for their fiery tempers and fierce determination, Dark Iron dwarves have a turbulent history with the other clans. A failed coup in Ironforge ignited the War of the Three Hammers, and many of the Dark Iron once fought in the service of Ragnaros the Firelord. Though one faction of the dwarves is pledged to Queen-Regent Moira Thaurissan, others refuse to stand alongside their kin. The Alliance seeks a united Dark Iron clan to harness the power of azerite and aid their struggle against the Horde",
 				["g"] = {
 					{	-- Fer the Alliance
 						["questID"] = 51486,	-- Fer the Alliance
@@ -73,7 +68,7 @@ _.Zones =
 						},
 					},
 					{	-- Mole Machine Locations
-						["npcID"] = -501,	-- Mole Machine
+						["npcID"] = -517,	-- Mole Machine
 						["g"] = {
 							{	-- Kalimdor
 								["npcID"] = -9976,	-- Kalimdor
@@ -110,7 +105,7 @@ _.Zones =
 										},
 									},
 									{	-- Sulfuron Spire
-										["npcID"] = -502,	-- Sulfuron Spire
+										["npcID"] = -501,	-- Sulfuron Spire
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 										["questID"] = 53601,
 										["collectible"] = true,
@@ -131,7 +126,7 @@ _.Zones =
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
 									{	-- Aerie Peak
-										["npcID"] = -504,	-- Aerie Peak
+										["npcID"] = -502,	-- Aerie Peak
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 										["questID"] = 53585,
 										["collectible"] = true,
@@ -181,190 +176,180 @@ _.Zones =
 								["npcID"] = -9977,	-- Outlands
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
-									--[[
-									{	-- 
-										["npcID"] = -
+									{	-- The Hand of Gul'dan [Outlands]
+										["npcID"] = -507,	-- The Hand of Gul'dan [Outlands]
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53599,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 50.77, 35.28, 104 },
 										},
 										["maps"] = {
-											
+											104,	-- Shadowmoon Valley [Outlands]
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									{	-- 
-										["npcID"] = -
+									{	-- Skald [Outlands]
+										["npcID"] = -508,	-- Skald [Outlands]
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53597,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 72.41, 17.65, 105 },
 										},
 										["maps"] = {
-											
+											105,	-- Blade's Edge Mountain
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									--]]
 								},
 							},
 							{	-- Northrend
 								["npcID"] = -9978,	-- Northrend
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
-									--[[
-									{	-- 
-										["npcID"] = -
+									{	-- Argent Tournament Grounds
+										["npcID"] = -510,	-- Argent Tournament Grounds
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53586,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 76.97, 18.68, 118 },
 										},
 										["maps"] = {
-											
+											118,	-- Icecrown
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									{	-- 
-										["npcID"] = -
+									{	-- Ruby Dragonshrine
+										["npcID"] = -509,	-- Ruby Dragonshrine
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53596,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 45.34, 49.92, 115 },
 										},
 										["maps"] = {
-											
+											115,	-- Dragonblight
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									--]]
 								},
 							},
 							{	-- Pandaria
 								["npcID"] = -9980,	-- Pandaria
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
-									--[[
-									{	-- 
-										["npcID"] = -
+									{	-- One Keg
+										["npcID"] = -512,	-- One Keg
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53595,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 57.68, 62.81, 379 },
 										},
 										["maps"] = {
-											
+											379,	-- Kun-Lai Summit
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									{	-- 
-										["npcID"] = -
+									{	-- Stormstout Brewery
+										["npcID"] = -511,	-- Stormstout Brewery
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53598,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 31.51, 73.57, 376 },
 										},
 										["maps"] = {
-											
+											376,	-- Valley of the Four Winds
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									--]]
 								},
 							},
 							{	-- Draenor
 								["npcID"] = -9981,	-- Draenor
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
-									--[[
-									{	-- 
-										["npcID"] = -
+									{	-- Elemental Plateau
+										["npcID"] = -514,	-- Elemental Plateau
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53590,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 65.74, 08.24, 550 },
 										},
 										["maps"] = {
-											
+											550,	-- Nagrand
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									{	-- 
-										["npcID"] = -
+									{	-- The Pit
+										["npcID"] = -513,	-- The Pit
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53588,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 46.69, 38.75, 543 },
 										},
 										["maps"] = {
-											
+											543,	-- Gorgrond
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									--]]
 								},
 							},
 							{	-- Broken Isles
 								["npcID"] = -528,	-- Broken Isles
 								["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 								["g"] = {
-									--[[
-									{	-- 
-										["npcID"] = -
+									{	-- Aalgen Point
+										["npcID"] = -515,	-- Aalgen Point
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53589,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 71.68, 48.01, 646 },
 										},
 										["maps"] = {
-											
+											646,	-- Broken Shore
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									{	-- 
-										["npcID"] = -
+									{	-- Neltharion's Vault
+										["npcID"] = -516,	-- Neltharion's Vault
 										["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-										["questID"] = 
+										["questID"] = 53593,
 										["collectible"] = true,
 										["coords"] = {
-											{  },
+											{ 44.66, 72.87, 650 },
 										},
 										["maps"] = {
-											
+											650,	-- Highmountain
 										},
 										["races"] = {
 											34,	-- Dark Iron Dwarves
 										},
 									},
-									--]]
 								},
 							},
 						},

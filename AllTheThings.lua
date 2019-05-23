@@ -8283,11 +8283,12 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- World Drops
+		-- World Drops / Bind on Equips
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
-			db.text = TRANSMOG_SOURCE_4;
+			--db.text = TRANSMOG_SOURCE_4;
+			db.text = ITEM_BIND_ON_EQUIP;
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
@@ -9990,82 +9991,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 					end,
 				},
-				{
-					['text'] = "Reset Instances",
-					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-					['basedescription'] = "Click here to reset your instances.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						ResetInstances();
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						local locks = GetTempDataMember("lockouts");
-						if locks then
-							local description = data.basedescription .. "\n\nCurrent Instance Locks:";
-							for name, instance in pairs(locks) do
-								description = description .. "\n  " .. name;
-								if instance.shared then
-									-- shared raid lockout
-									local count, total = 0, 0;
-									for i,encounter in ipairs(instance.shared.encounters) do
-										if encounter.isKilled then count = count + 1; end
-										total = total + 1;
-									end
-									description = description .. " (" .. count .. " / " .. total .. ")";
-								else
-									-- specific difficulties
-									description = description .. "\n";
-									for difficultyID,difficulty in pairs(instance) do
-										description = description .. "    " .. "TODO " .. difficultyID;
-										
-										local count, total = 0, 0;
-										for i,encounter in ipairs(difficulty.encounters) do
-											if encounter.isKilled then count = count + 1; end
-											total = total + 1;
-										end
-										description = description .. " (" .. count .. " / " .. total .. ")";
-									end
-								end
-							end
-							data.description = description;
-							UpdateWindow(self, true);
-						elseif not data.description then
-							data.description = data.basedescription;
-							UpdateWindow(self, true);
-						end
-					end,
-				},
-				{
-					['text'] = "Delist Group",
-					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						C_LFGList.RemoveListing();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-				},
-				{
-					['text'] = "Leave Group",
-					['icon'] = "Interface\\Icons\\Ability_Vanish",
-					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						LeaveParty();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-				},
 				app.CreateDifficulty(1, {
 					['title'] = "Dungeon Difficulty",
 					["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
@@ -10126,6 +10051,81 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 					end,
 				}),
+				{
+					['text'] = "Teleport to/from Dungeon",
+					['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+					['description'] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LFGTeleport(IsInLFGDungeon());
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsAllowedToUserTeleport();
+					end,
+				},
+				{
+					['text'] = "Reset Instances",
+					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+					['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						if IsAltKeyDown() then
+							row.ref.saved = not row.ref.saved;
+							self:Update();
+						else
+							ResetInstances();
+						end
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
+						if data.visible and data.saved then
+							if IsInInstance() or C_Scenario.IsInScenario() then
+								data.shouldReset = true;
+							elseif data.shouldReset then
+								data.shouldReset = nil;
+								C_Timer.After(0.5, ResetInstances);
+							end
+						end
+					end,
+				},
+				{
+					['text'] = "Delist Group",
+					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						C_LFGList.RemoveListing();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = C_LFGList.GetActiveEntryInfo();
+					end,
+				},
+				{
+					['text'] = "Leave Group",
+					['icon'] = "Interface\\Icons\\Ability_Vanish",
+					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LeaveParty();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsInGroup();
+					end,
+				},
 			}
 		};
 		lootspecialization = {
@@ -10283,6 +10283,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 	end
 	
 	-- Update the window and all of its row data

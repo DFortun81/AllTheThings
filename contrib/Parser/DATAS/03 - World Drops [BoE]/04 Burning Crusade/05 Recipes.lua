@@ -77,7 +77,7 @@ _.WorldDrops =
 						["itemID"] = 23623,	-- Plans: Storm Helm
 					},
 				}),
-				prof(333, {	-- Enchanting
+				n(-182, {	-- Enchanting
 					i(28280),	-- Formula: Enchant Boots - Boar's Speed (BoE version)
 					i(28279),	-- Formula: Enchant Boots - Cat's Swiftness (BoE version)
 					i(22542),	-- Formula: Enchant Boots - Vitality
