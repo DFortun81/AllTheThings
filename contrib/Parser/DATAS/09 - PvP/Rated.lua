@@ -11,47 +11,6 @@ _.PVP =
 				["npcID"] = -241,	-- Seasonal Rewards
 				["icon"] = "Interface\\Icons\\inv_misc_diachest01",
 				["g"] = {
-					{	-- Player vs. Player (Battle for Azeroth Season 1)
-						["npcID"] = -3158,	-- Player vs. Player (Battle for Azeroth Season 1)
-						["g"] = {
-							{	-- Mounts
-								["filter"] = 100,	-- Mounts
-								["g"] = {
-									{	-- Vicious War Clefthoof
-										["itemID"] = 163124,	-- Vicious War Clefthoof
-										["races"] = HORDE_ONLY,
-										["u"] = 2,
-									},
-									{	-- Vicious War Riverbeast
-										["itemID"] = 163123,	-- Vicious War Riverbeast
-										["races"] = ALLIANCE_ONLY,
-										["u"] = 2,
-									},
-								},
-							["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
-							},
-						{	-- Battleborn Sigil Dread Combatant
-							["itemID"] = 159570,	-- Battleborn Sigil Dread Combatant
-							["u"] = 2,
-						},
-						{	-- Battleborn Sigil Dread Challenger
-							["itemID"] = 164580,	-- Battleborn Sigil Dread Challenger
-							["u"] = 2,
-						},
-						{	-- Battleborn Sigil Dread Rival
-							["itemID"] = 164581,	-- Battleborn Sigil Dread Rival
-							["u"] = 2,
-						},
-						{	-- Battleborn Sigil Dread Duelist
-							["itemID"] = 164582,	-- Battleborn Sigil Dread Duelist
-							["u"] = 2,
-						},
-						{	-- Battleborn Sigil Dread Elite
-							["itemID"] = 164583,	-- Battleborn Sigil Dread Elite
-							["u"] = 2,
-						},
-						},
-					},
 					{	-- Player vs. Player (Battle for Azeroth Season 2)
 						["npcID"] = -3157,	-- Player vs. Player (Battle for Azeroth Season 2
 						["g"] = {

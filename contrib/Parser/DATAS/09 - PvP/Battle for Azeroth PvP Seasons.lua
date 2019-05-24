@@ -735,6 +735,542 @@ _.PVP =
 					["itemID"] = 164587,	-- Warlord's Trophy Dread Elite
 					["u"] = 2,	
 				},
+				{	-- Dread Aspirant's Badge
+					["itemID"] = 162966,	-- Dread Aspirant's Badge
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Band
+					["itemID"] = 162896,	-- Dread Aspirant's Band
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Barrier
+					["itemID"] = 162866,	-- Dread Aspirant's Barrier
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Bonegrinder
+					["itemID"] = 162872,	-- Dread Aspirant's Bonegrinder
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cape
+					["itemID"] = 162968,	-- Dread Aspirant's Cape
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Armbands
+					["itemID"] = 162961,	-- Dread Aspirant's Chain Armbands
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Armor
+					["itemID"] = 162935,	-- Dread Aspirant's Chain Armor
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Gauntlets
+					["itemID"] = 162944,	-- Dread Aspirant's Chain Gauntlets
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Helm
+					["itemID"] = 162946,	-- Dread Aspirant's Chain Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Leggings
+					["itemID"] = 162950,	-- Dread Aspirant's Chain Leggings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Sabatons
+					["itemID"] = 162939,	-- Dread Aspirant's Chain Sabatons
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Spaulders
+					["itemID"] = 162955,	-- Dread Aspirant's Chain Spaulders
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Waistguard
+					["itemID"] = 162957,	-- Dread Aspirant's Chain Waistguard
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cleaver
+					["itemID"] = 162868,	-- Dread Aspirant's Cleaver
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cloak
+					["itemID"] = 162864,	-- Dread Aspirant's Cloak
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Decapitator
+					["itemID"] = 162877,	-- Dread Aspirant's Decapitator
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Drape
+					["itemID"] = 162967,	-- Dread Aspirant's Drape
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Emblem
+					["itemID"] = 162898,	-- Dread Aspirant's Emblem
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Gavel
+					["itemID"] = 162893,	-- Dread Aspirant's Gavel
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Greatcloak
+					["itemID"] = 162895,	-- Dread Aspirant's Greatcloak
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Insignia
+					["itemID"] = 162899,	-- Dread Aspirant's Insignia
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Belt
+					["itemID"] = 162958,	-- Dread Aspirant's Leather Belt
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Bindings
+					["itemID"] = 162962,	-- Dread Aspirant's Leather Bindings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Boots
+					["itemID"] = 162940,	-- Dread Aspirant's Leather Boots
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Gloves
+					["itemID"] = 162941,	-- Dread Aspirant's Leather Gloves
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Helm
+					["itemID"] = 162947,	-- Dread Aspirant's Leather Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Legguards
+					["itemID"] = 162951,	-- Dread Aspirant's Leather Legguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Spaulders
+					["itemID"] = 162952,	-- Dread Aspirant's Leather Spaulders
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Tunic
+					["itemID"] = 162936,	-- Dread Aspirant's Leather Tunic
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Longbow
+					["itemID"] = 162889,	-- Dread Aspirant's Longbow
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Medallion
+					["itemID"] = 162897,	-- Dread Aspirant's Medallion
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Pike
+					["itemID"] = 162873,	-- Dread Aspirant's Pike
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Armguards
+					["itemID"] = 162960,	-- Dread Aspirant's Plate Armguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Chestpiece
+					["itemID"] = 162934,	-- Dread Aspirant's Plate Chestpiece
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Gauntlets
+					["itemID"] = 162942,	-- Dread Aspirant's Plate Gauntlets
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Girdle
+					["itemID"] = 162956,	-- Dread Aspirant's Plate Girdle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Helm
+					["itemID"] = 162932,	-- Dread Aspirant's Plate Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Legguards
+					["itemID"] = 162948,	-- Dread Aspirant's Plate Legguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Pauldrons
+					["itemID"] = 162953,	-- Dread Aspirant's Plate Pauldrons
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Warboots
+					["itemID"] = 162937,	-- Dread Aspirant's Plate Warboots
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Reprieve
+					["itemID"] = 162867,	-- Dread Aspirant's Reprieve
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Rifle
+					["itemID"] = 162878,	-- Dread Aspirant's Rifle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Ring
+					["itemID"] = 162865,	-- Dread Aspirant's Ring
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Seal
+					["itemID"] = 162965,	-- Dread Aspirant's Seal
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Shanker
+					["itemID"] = 162970,	-- Dread Aspirant's Shanker
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Shield Wall
+					["itemID"] = 162882,	-- Dread Aspirant's Shield Wall
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Signet
+					["itemID"] = 162964,	-- Dread Aspirant's Signet
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Cord
+					["itemID"] = 162963,	-- Dread Aspirant's Silk Cord
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Cuffs
+					["itemID"] = 162959,	-- Dread Aspirant's Silk Cuffs
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Gloves
+					["itemID"] = 162943,	-- Dread Aspirant's Silk Gloves
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Hood
+					["itemID"] = 162945,	-- Dread Aspirant's Silk Hood
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Leggings
+					["itemID"] = 162949,	-- Dread Aspirant's Silk Leggings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Mantle
+					["itemID"] = 162954,	-- Dread Aspirant's Silk Mantle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Robe
+					["itemID"] = 162933,	-- Dread Aspirant's Silk Robe
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Treads
+					["itemID"] = 162938,	-- Dread Aspirant's Silk Treads
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Slicer
+					["itemID"] = 162875,	-- Dread Aspirant's Slicer
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Spellblade
+					["itemID"] = 162894,	-- Dread Aspirant's Spellblade
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Staff
+					["itemID"] = 162874,	-- Dread Aspirant's Staff
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Wand
+					["itemID"] = 162876,	-- Dread Aspirant's Wand
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Warglaive
+					["itemID"] = 162880,	-- Dread Aspirant's Warglaive
+					["u"] = 46,
+				},
+				{	-- Raider's Supply Cache
+					["itemID"] = 163826,	-- Raider's Supply Cache
+				},
+				{	-- Dread Aspirant's Badge
+					["itemID"] = 162966,	-- Dread Aspirant's Badge
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Band
+					["itemID"] = 162896,	-- Dread Aspirant's Band
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Band
+					["itemID"] = 163726,	-- Dread Aspirant's Band
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Barrier
+					["itemID"] = 162885,	-- Dread Aspirant's Barrier
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Bonegrinder
+					["itemID"] = 162890,	-- Dread Aspirant's Bonegrinder
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cape
+					["itemID"] = 163724,	-- Dread Aspirant's Cape
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Armbands
+					["itemID"] = 162930,	-- Dread Aspirant's Chain Armbands
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Armor
+					["itemID"] = 162903,	-- Dread Aspirant's Chain Armor
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Gauntlets
+					["itemID"] = 162912,	-- Dread Aspirant's Chain Gauntlets
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Helm
+					["itemID"] = 162914,	-- Dread Aspirant's Chain Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Leggings
+					["itemID"] = 162918,	-- Dread Aspirant's Chain Leggings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Sabatons
+					["itemID"] = 162907,	-- Dread Aspirant's Chain Sabatons
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Spaulders
+					["itemID"] = 162923,	-- Dread Aspirant's Chain Spaulders
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Chain Waistguard
+					["itemID"] = 162926,	-- Dread Aspirant's Chain Waistguard
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cleaver
+					["itemID"] = 166729,	-- Dread Aspirant's Cleaver
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Cloak
+					["itemID"] = 163721,	-- Dread Aspirant's Cloak
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Drape
+					["itemID"] = 163723,	-- Dread Aspirant's Drape
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Emblem
+					["itemID"] = 162898,	-- Dread Aspirant's Emblem
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Gavel
+					["itemID"] = 162871,	-- Dread Aspirant's Gavel
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Greatcloak
+					["itemID"] = 163722,	-- Dread Aspirant's Greatcloak
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Greatsword
+					["itemID"] = 162879,	-- Dread Aspirant's Greatsword
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Insignia
+					["itemID"] = 162899,	-- Dread Aspirant's Insignia
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Belt
+					["itemID"] = 162927,	-- Dread Aspirant's Leather Belt
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Bindings
+					["itemID"] = 162931,	-- Dread Aspirant's Leather Bindings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Boots
+					["itemID"] = 162908,	-- Dread Aspirant's Leather Boots
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Gloves
+					["itemID"] = 162909,	-- Dread Aspirant's Leather Gloves
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Helm
+					["itemID"] = 162915,	-- Dread Aspirant's Leather Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Legguards
+					["itemID"] = 162919,	-- Dread Aspirant's Leather Legguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Spaulders
+					["itemID"] = 162920,	-- Dread Aspirant's Leather Spaulders
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Leather Tunic
+					["itemID"] = 162904,	-- Dread Aspirant's Leather Tunic
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Longbow
+					["itemID"] = 162869,	-- Dread Aspirant's Longbow
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Medallion
+					["itemID"] = 162897,	-- Dread Aspirant's Medallion
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Pike
+					["itemID"] = 162887,	-- Dread Aspirant's Pike
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Armguards
+					["itemID"] = 162929,	-- Dread Aspirant's Plate Armguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Chestpiece
+					["itemID"] = 162902,	-- Dread Aspirant's Plate Chestpiece
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Gauntlets
+					["itemID"] = 162910,	-- Dread Aspirant's Plate Gauntlets
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Girdle
+					["itemID"] = 162924,	-- Dread Aspirant's Plate Girdle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Helm
+					["itemID"] = 162900,	-- Dread Aspirant's Plate Helm
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Legguards
+					["itemID"] = 162916,	-- Dread Aspirant's Plate Legguards
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Pauldrons
+					["itemID"] = 162921,	-- Dread Aspirant's Plate Pauldrons
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Plate Warboots
+					["itemID"] = 162905,	-- Dread Aspirant's Plate Warboots
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Pummeler
+					["itemID"] = 162969,	-- Dread Aspirant's Pummeler
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Reprieve
+					["itemID"] = 162883,	-- Dread Aspirant's Reprieve
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Rifle
+					["itemID"] = 162888,	-- Dread Aspirant's Rifle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Ring
+					["itemID"] = 162865,	-- Dread Aspirant's Ring
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Ring
+					["itemID"] = 163725,	-- Dread Aspirant's Ring
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Seal
+					["itemID"] = 162965,	-- Dread Aspirant's Seal
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Seal
+					["itemID"] = 163728,	-- Dread Aspirant's Seal
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Shanker
+					["itemID"] = 162971,	-- Dread Aspirant's Shanker
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Shield Wall
+					["itemID"] = 162884,	-- Dread Aspirant's Shield Wall
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Signet
+					["itemID"] = 162964,	-- Dread Aspirant's Signet
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Signet
+					["itemID"] = 163727,	-- Dread Aspirant's Signet
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Cord
+					["itemID"] = 162925,	-- Dread Aspirant's Silk Cord
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Cuffs
+					["itemID"] = 162928,	-- Dread Aspirant's Silk Cuffs
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Gloves
+					["itemID"] = 162911,	-- Dread Aspirant's Silk Gloves
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Hood
+					["itemID"] = 162913,	-- Dread Aspirant's Silk Hood
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Leggings
+					["itemID"] = 162917,	-- Dread Aspirant's Silk Leggings
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Mantle
+					["itemID"] = 162922,	-- Dread Aspirant's Silk Mantle
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Robe
+					["itemID"] = 162901,	-- Dread Aspirant's Silk Robe
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Silk Treads
+					["itemID"] = 162906,	-- Dread Aspirant's Silk Treads
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Slicer
+					["itemID"] = 162892,	-- Dread Aspirant's Slicer
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Spellblade
+					["itemID"] = 162870,	-- Dread Aspirant's Spellblade
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Staff
+					["itemID"] = 162886,	-- Dread Aspirant's Staff
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Wand
+					["itemID"] = 162891,	-- Dread Aspirant's Wand
+					["u"] = 46,
+				},
+				{	-- Dread Aspirant's Warglaive
+					["itemID"] = 162881,	-- Dread Aspirant's Warglaive
+					["u"] = 46,
+				},
+				{	-- Raider's Supply Cache
+					["itemID"] = 163826,	-- Raider's Supply Cache
+				},
+				{	-- Battleborn Sigil Dread Combatant
+					["itemID"] = 159570,	-- Battleborn Sigil Dread Combatant
+					["u"] = 2,
+				},
+				{	-- Battleborn Sigil Dread Challenger
+					["itemID"] = 164580,	-- Battleborn Sigil Dread Challenger
+					["u"] = 2,
+				},
+				{	-- Battleborn Sigil Dread Rival
+					["itemID"] = 164581,	-- Battleborn Sigil Dread Rival
+					["u"] = 2,
+				},
+				{	-- Battleborn Sigil Dread Duelist
+					["itemID"] = 164582,	-- Battleborn Sigil Dread Duelist
+					["u"] = 2,
+				},
+				{	-- Battleborn Sigil Dread Elite
+					["itemID"] = 164583,	-- Battleborn Sigil Dread Elite
+					["u"] = 2,
+				},
+				{	-- Vicious War Clefthoof
+					["itemID"] = 163124,	-- Vicious War Clefthoof
+					["races"] = HORDE_ONLY,
+					["u"] = 2,
+				},
+				{	-- Vicious War Riverbeast
+					["itemID"] = 163123,	-- Vicious War Riverbeast
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 2,
+				},
 			}),
 		}),
 	}),
