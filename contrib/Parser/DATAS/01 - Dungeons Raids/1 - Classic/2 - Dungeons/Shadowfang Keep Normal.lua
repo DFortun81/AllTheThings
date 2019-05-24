@@ -132,12 +132,14 @@ _.Instances = { tier(1, {	-- Classic
 						["crs"] = {
 							47134,	-- Corpse Eater
 							47132,	-- Dark Creeper
+							3864,	-- Fel Steed
 							47135,	-- Fetid Ghoul
 							47131,	-- Frantic Geist
 							3875,	-- Haunted Servitor
 							47137,	-- Mindless Horror
 							47138,	-- Pustulant Monstrosity
 							47231,	-- Shadowy Attendant
+							47140,	-- Sorcerous Skeleton
 							47146,	-- Spitebone Flayer
 							47145,	-- Spitebone Guardian
 							47143,	-- Spitebone Skeleton

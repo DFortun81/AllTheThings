@@ -139,9 +139,13 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9383, {	-- Obsidian Cleaver
 					["crs"] = {
+						7011,	-- Earthen Rocksmasher
+						7030,	-- Shadowforge Geologist
+						7290,	-- Shadowforge Sharpshooter
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
 						4850,	-- Stonevault Cave Lurker
+						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},

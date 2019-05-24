@@ -102,7 +102,8 @@ _.Instances = { tier(1, {	-- Classic
 				i(10623, {	-- Winter's Bite
 					["crs"] = {
 						5271,	-- Atal'ai Deathwalker
-						5291,	-- Hakkari Frostwalker
+						5291,	-- Hakkari Frostwing
+						8336,	-- Hakkari Sapper
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
 						5280,	-- Nightmare Wyrmkin

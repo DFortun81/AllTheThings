@@ -69,27 +69,27 @@ _.Instances = { tier(1, {	-- Classic
 			n(10080, {			-- Sandarr Dunereaver
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					dr(10.0, i(9512)), 	-- Blackmetal Cape
-					dr(10.0, i(5616)), 	-- Gutwrencher
-					dr(9.00, i(9483)), 	-- Flaming Incinerator
-					dr(9.00, i(9482)), 	-- Witch Doctor's Cane
-					dr(8.00, i(9511)), 	-- Bloodletter Scalpel
-					dr(8.00, i(9484)), 	-- Spellshock Leggings
-					dr(8.00, i(6440)),	-- Brainlash
-					dr(7.00, i(9481)), 	-- The Minotaur
-					dr(6.00, i(9480)), 	-- Eyegougeer
-					dr(6.00, i(2040)), 	-- Troll Protector
-					dr(5.00, i(862)),	-- Runed Ring
+					i(9512), 	-- Blackmetal Cape
+					i(9511), 	-- Bloodletter Scalpel
+					i(6440),	-- Brainlash
+					i(9480), 	-- Eyegouger
+					i(9483), 	-- Flaming Incinerator
+					i(5616), 	-- Gutwrencher
+					i(862),		-- Runed Ring
+					i(9484), 	-- Spellshock Leggings
+					i(9481), 	-- The Minotaur
+					i(2040), 	-- Troll Protector
+					i(9482), 	-- Witch Doctor's Cane
 				},
 			}),
 			n(10082, {			-- Zerillis
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					dr(87, i(12470)),	-- Sandstalker Ankleguardss
+					i(12470),	-- Sandstalker Ankleguards
 				},
 			}),
 			n(7272, { 			-- Theka the Martyr
-				dr(0.16, i(142402)),	-- Plans: Light Earthforged Blade
+				i(142402),	-- Plans: Light Earthforged Blade
 				i(151456),	-- Theka's Seal of Vigilance
 			}),
 			cr(8127, e(484, { 	-- Antu'sul
@@ -108,7 +108,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(10081, {			-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					dr(87, i(12471)),	-- Desertwalker Cane
+					i(12471),	-- Desertwalker Cane
 				},
 			}),
 			cr(7275, e(487, { 	-- Nekrum & Sezzi'ziz

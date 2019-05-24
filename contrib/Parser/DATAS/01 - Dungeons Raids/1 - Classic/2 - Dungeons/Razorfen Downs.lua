@@ -118,6 +118,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						74412,	-- Aarux
 						74490,	-- Boneflayer Ghoul
+						74483,	-- Death's Head Arachnomancer
 						74478,	-- Death's Head Shadowmender
 					},
 				}),

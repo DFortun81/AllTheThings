@@ -7,102 +7,101 @@ _.WorldDrops =
 		["groups"] = {	-- Classic
 			n(-319, {	-- Weapons		
 				n(-334, {	-- 1H Axes
-					i(10623),	-- Winter's Bite
-					i(12527),	-- Ribsplitter
-					i(12990),	-- Razor's Edge
 					i(13014),	-- Axe of Rin'ji
-					i(13015),	-- Serathil
-					i(1454),	-- Axe of the Enforcer
-					un(7, i(1459)),	-- Shadowhide Scalper
-					i(1481),	-- Grimclaw
-					i(15230),	-- Ridge Cleaver
-					i(15231),	-- Splitting Hatchet
-					i(15232),	-- Hacking Cleaver
-					i(15233),	-- Savage Axe
-					i(15234),	-- Greater Scythe
-					i(15235),	-- Crescent Edge
-					i(15236),	-- Moon Cleaver
-					i(15237),	-- Corpse Harvester
-					i(15238),	-- Warlord's Axe
-					i(15239),	-- Felstone Reaver
-					i(15240),	-- Demon's Claw
-					un(7, i(1602)),	-- Sickle Axe
-					i(1927),	-- Deadmines Cleaver
-					un(7, i(19921)),	-- Zulian Hacker
-					i(1994),	-- Ebonclaw Reaver
-					i(2073),	-- Dwarven Hatchet
-					i(2080),	-- Hillborne Axe
-					un(7, i(2265)),	-- Stonesplinter Axe
-					un(7, i(2281)),	-- Rodentia Flint Axe
-					i(2807),	-- Guillotine Axe
-					i(2815),	-- Curve-Bladed Ripper
-					i(2878),	-- Bearded Boneaxe
-					i(31268),	-- Abomination Cleaver
-					un(7, i(4445)),	-- Flesh Carver
-					i(4561),	-- Scalping Tomahawk
-					i(4568),	-- Grunt Axe
-					i(4824),	-- Blurred Axe
-					i(4825),	-- Callous Axe
-					i(4826),	-- Marauder Axe
-					un(7, i(4949)),	-- Orcish Cleaver
-					i(5426),	-- Serpent's Kiss
-					i(7761),	-- Steelclaw Reaver
-					i(7786),	-- Headsplitter
-					i(790),		-- Forester's Axe
 					i(811),		-- Axe of the Deep Woods
-					un(7, i(826)),	-- Brutish Riverpaw Axe
-					i(863),		-- Gloom Reaper
+					i(2878),	-- Bearded Boneaxe
+					i(15237),	-- Corpse Harvester
+					i(15235),	-- Crescent Edge
+					i(2815),	-- Curve-Bladed Ripper
+					i(15240),	-- Demon's Claw
+					i(2073),	-- Dwarven Hatchet
+					i(1994),	-- Ebonclaw Reaver
+					i(15239),	-- Felstone Reaver
 					i(871),		-- Flurry Axe
-					un(7, i(885)),		-- Black Metal Axe
+					i(790),		-- Forester's Axe
+					i(863),		-- Gloom Reaper
+					i(15234),	-- Greater Scythe
+					i(4568),	-- Grunt Axe
+					i(15232),	-- Hacking Cleaver
+					i(7786),	-- Headsplitter
+					i(2080),	-- Hillborne Axe
+					i(15236),	-- Moon Cleaver
+					i(12990),	-- Razor's Edge
+					i(15230),	-- Ridge Cleaver
+					i(15233),	-- Savage Axe
+					i(4561),	-- Scalping Tomahawk
+					i(13015),	-- Serathil
+					i(15231),	-- Splitting Hatchet
 					i(934),		-- Stalvan's Reaper
-					un(7, i(9378)),	-- Shovelphlange's Mining Axe
-					i(9465),	-- Digmaster 5000
-					i(9485),	-- Vibroblade
+					i(15238),	-- Warlord's Axe
+					-- [removed non-world drops below]
+                    --i(31268),	-- Abomination Cleaver
+                    --i(1454),	-- Axe of the Enforcer
+                    --un(7, i(885)),	-- Black Metal Axe
+                    --i(4824),	-- Blurred Axe
+                    --un(7, i(826)),	-- Brutish Riverpaw Axe
+                    --i(4825),	-- Callous Axe
+                    --i(1927),	-- Deadmines Cleaver
+                    --un(7, i(4445)),	-- Flesh Carver
+                    --i(1481),	-- Grimclaw
+                    --i(2807),	-- Guillotine Axe
+                    --i(4826),	-- Marauder Axe
+                    --un(7, i(4949)),	-- Orcish Cleaver
+                    --i(12527),	-- Ribsplitter
+                    --un(7, i(2281)),	-- Rodentia Flint Axe
+                    --un(7, i(1459)),	-- Shadowhide Scalper
+                    --i(5426),	-- Serpent's Kiss
+                    --un(7, i(1602)),	-- Sickle Axe
+                    --i(7761),	-- Steelclaw Reaver
+                    --un(7, i(2265)),	-- Stonesplinter Axe
+					--i(10623),	-- Winter's Bite
+                    --un(7, i(19921)),	-- Zulian Hacker
 				}),
 				n(-335, {	-- 2H Axes
-					i(10570),	-- Manslayer
-					un(7, i(1220)),	-- Lupine Axe
-					i(12249),	-- Merciless Axe
-					i(12250),	-- Midnight Axe
-					i(1263),	-- Brain Hacker
-					i(12975),	-- Prospector Axe
-					i(13003),	-- Lord Alexander's Battle Axe
-					i(13016),	-- Killmaim
-					i(13017),	-- Hellslayer Battle Axe
-					i(13018),	-- Executioner's Cleaver
-					i(1318),	-- Night Reaver
-					un(7, i(1455)),	-- Blackrock Champion's Axe
-					un(7, i(1461)),	-- Slayer's Battle Axe
-					un(7, i(1521)),	-- Lumbering Ogre Axe
-					i(15268),	-- Twin-Bladed Axe
-					i(15269),	-- Massive Battle Axe
-					i(15270),	-- Gigantic War Axe
-					i(15271),	-- Colossal Great Axe
-					i(15272),	-- Razor Axe
-					i(15273),	-- Death Striker
-					i(1639),	-- Grinning Axe
-					i(1640),	-- Monstrous War Axe
-					i(1680),	-- Headchopper
-					un(7, i(2015)),	-- Black Metal War Axe
-					un(7, i(2175)),	-- Shadowhide Battle Axe
-					un(7, i(2203)),	-- Brashclaw's Chopper
-					un(7, i(2227)),	-- Heavy Ogre War Axe
-					i(2291),	-- Kang the Decapitator
-					i(2299),	-- Burning War Axe
-					un(7, i(2823)),	-- Mo'grosh Can Opener
+					i(3201),	-- Barbarian War Axe
 					i(3195),	-- Barbaric Battle Axe
 					i(3199),	-- Battle Slayer
-					i(3201),	-- Barbarian War Axe
+					i(1263),	-- Brain Hacker
 					i(3210),	-- Brutal War Axe
-					i(4562),	-- Severing Axe
-					i(5423),	-- Boahn's Fang
-					un(7, i(5749)),	-- Scythe Axe
-					un(7, i(756)),		-- Tunnel Pick
-					i(7753),	-- Bloodspiller
+					i(2299),	-- Burning War Axe
+					i(15271),	-- Colossal Great Axe
+					i(15273),	-- Death Striker
+					i(13018),	-- Executioner's Cleaver
 					i(870),		-- Fiery War Axe
-					i(9383),	-- Obsidian Cleaver
-					i(9481),	-- The Minotaur
-					i(9486),	-- Supercharger Battle Axe
+					i(15270),	-- Gigantic War Axe
+					i(1639),	-- Grinning Axe
+					i(13017),	-- Hellslayer Battle Axe
+					i(2291),	-- Kang the Decapitator
+					i(13016),	-- Killmaim
+					i(13003),	-- Lord Alexander's Battle Axe
+					i(15269),	-- Massive Battle Axe
+					i(1640),	-- Monstrous War Axe
+					i(12975),	-- Prospector Axe
+					i(15272),	-- Razor Axe
+					i(4562),	-- Severing Axe
+					i(15268),	-- Twin-Bladed Axe
+					-- [removed non-world drops below]
+					--un(7, i(2015)),	-- Black Metal War Axe
+					--un(7, i(1455)),	-- Blackrock Champion's Axe
+					--i(7753),	-- Bloodspiller
+					--i(5423),	-- Boahn's Fang
+					--un(7, i(2203)),	-- Brashclaw's Chopper
+					--i(1680),	-- Headchopper
+					--un(7, i(2227)),	-- Heavy Ogre War Axe
+					--un(7, i(1521)),	-- Lumbering Ogre Axe
+					--un(7, i(1220)),	-- Lupine Axe
+					--i(10570),	-- Manslayer
+					--i(12249),	-- Merciless Axe
+					--i(12250),	-- Midnight Axe
+					--un(7, i(2823)),	-- Mo'grosh Can Opener
+					--i(1318),	-- Night Reaver
+					--i(9383),	-- Obsidian Cleaver
+					--un(7, i(5749)),	-- Scythe Axe
+					--un(7, i(2175)),	-- Shadowhide Battle Axe
+					--un(7, i(1461)),	-- Slayer's Battle Axe
+					--i(9486),	-- Supercharger Battle Axe
+					--i(9481),	-- The Minotaur
+					--un(7, i(756)),		-- Tunnel Pick
 				}),	
 				n(-346, {	-- Bows
 					i(10567),	-- Quillshooter

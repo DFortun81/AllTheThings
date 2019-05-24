@@ -581,7 +581,7 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				m(19, {	-- Scarlet Monastery Entrace
+				m(19, {	-- Scarlet Monastery Entrance
 					["g"] = {
 						i(7753),	-- Bloodspiller
 						i(7729),	-- Chesterfall Musket
@@ -605,7 +605,6 @@ _.Zones =
 						i(13114),	-- Troll's Bane Leggings
 						i(6592),	-- Battleforge Armor
 						i(7728),	-- Beguiler Robes
-						i(7786),    -- Headsplitter
 					},
 					["crs"] = {
 						4284,	-- Scarlet Augur		
