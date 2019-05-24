@@ -1338,7 +1338,7 @@ AllTheThings.L = {
 		[-654] = select(2, GetAchievementInfo(11062)),							-- Ferocious Gladiator: Legion Season 4
 		[-655] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
 		[-656] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
-		[-657] = select(2, GetAchievementInfo(12185)),							-- Dominant Gladiator: Legion Season 6
+		[-657] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
