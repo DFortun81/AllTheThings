@@ -2518,9 +2518,372 @@ _.Zones =
 							},
 							{	-- Laughing Skull Gloves
 								["itemID"] = 24608,	-- Laughing Skull Gloves
+								["crs"] = {
+									18120,	-- Ango'rosh Mauler
+									18117,	-- Ango'rosh Ogre
+									18118,	-- Ango'rosh Shaman
+									18121,	-- Ango'rosh Souleater
+									19191,	-- Arazzius the Cruel
+									19354,	-- Arzeth the Merciless
+									17057,	-- Blacktalon the Savage
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									16901,	-- Blistering Rot
+									18088,	-- Bloodscale Enchantress
+									20088,	-- Bloodscale Overseer
+									18089,	-- Bloodscale Slavedriver
+									20089,	-- Bloodscale Wavecaller
+									17723,	-- Bog Giant
+									20197,	-- Bogflare Needler
+									18281,	-- Boglash
+									17816,	-- Bogstrok
+									16810,	-- Bonechewer Backbreaker
+									17271,	-- Bonechewer Destroyer
+									16772,	-- Bonechewer Devastator
+									17259,	-- Bonechewer Hungerer
+									17264,	-- Bonechewer Ravener
+									17281,	-- Bonechewer Ripper
+									16972,	-- Bonestripper Buzzard
+									16973,	-- Bonestripper Vulture
+									21660,	-- Cabal Abjurist
+									21907,	-- Cabal Initiate
+									21661,	-- Cabal Skirmisher
+									21902,	-- Cabal Spell-weaver
+									21662,	-- Cabal Tomb-Raider
+									17957,	-- Coilfang Champion
+									17962,	-- Coilfang Collaborator
+									17958,	-- Coilfang Defender
+									17961,	-- Coilfang Enchantress
+									17938,	-- Coilfang Observer
+									21126,	-- Coilfang Scale-Healer
+									17959,	-- Coilfang Slavehandler
+									17960,	-- Coilfang Soothsayer
+									17940,	-- Coilfang Technician
+									21127,	-- Coilfang Tempest
+									17014,	-- Collapsing Voidwalker
+									18116,	-- Daggerfen Assassin
+									18115,	-- Daggerfen Muckdweller
+									18461,	-- Dampscale Basilisk
+									18463,	-- Dampscale Devourer
+									18087,	-- Darkcrest Siren
+									19946,	-- Darkcrest Slaver
+									19947,	-- Darkcrest Sorceress
+									18086,	-- Darkcrest Taskmaster
+									16847,	-- Debilitated Mag'har Grunt
+									16863,	-- Deranged Helboar
+									18466,	-- Dreadfang Lurker
+									18467,	-- Dreadfang Widow
+									18122,	-- Dreghood Drudge
+									17429,	-- Fel Orc Neophyte
+									17400,	-- Felguard Annihilator
+									18894,	-- Felguard Brute
+									17401,	-- Felhound Manastalker
+									17731,	-- Fen Ray
+									18134,	-- Fen Strider
+									18214,	-- Fenclaw Thrasher
+									20270,	-- Feralfen Druid
+									18113,	-- Feralfen Hunter
+									18114,	-- Feralfen Mystic
+									1410,	-- Firewing Bloodwarder
+									5355,	-- Firewing Defender
+									16769,	-- Firewing Warlock
+									19136,	-- Flamewaker Imp
+									19264,	-- Force-Commander Gorax
+									16954,	-- Forge Camp Legionnaire
+									19734,	-- Fungal Giant
+									16947,	-- Gan'arg Servant
+									17817,	-- Greater Bogstrok
+									18129,	-- Greater Sporebat
+									16967,	-- Haal'eshi Talonguard
+									16966,	-- Haal'eshi Windwalker
+									16880,	-- Hulking Helboar
+									17058,	-- Illidari Taskmaster
+									22323,	-- Incandescent Fel Spark
+									21854,	-- Ironspine Petrifier
+									17035,	-- Kaliri Matriarch
+									17053,	-- Kaliri Swooper
+									18080,	-- Kataru
+									17370,	-- Laughing Skull Enforcer
+									17626,	-- Laughing Skull Legionnaire
+									17491,	-- Laughing Skull Rogue
+									17624,	-- Laughing Skull Warden
+									18460,	-- Lost Spirit
+									17732,	-- Lykul Wasp
+									16846,	-- Mag'har Grunt
+									16912,	-- Mag'har Hunter
+									19408,	-- Maiden of Pain
+									16857,	-- Marauding Crust Burster
+									18137,	-- Marsh Dredger
+									18136,	-- Marsh Lurker
+									18130,	-- Marshfang Ripper
+									18131,	-- Marshfang Slicer
+									18133,	-- Marshlight Bleeder
+									18213,	-- Mire Hydra
+									19192,	-- Mistress of Doom
+									16946,	-- Mo'arg Forgefiend
+									17730,	-- Murkblood Healer
+									17771,	-- Murkblood Oracle
+									17729,	-- Murkblood Spearman
+									17728,	-- Murkblood Tribesman
+									17398,	-- Nascent Fel Orc
+									20324,	-- Parched Hydra
+									16934,	-- Quillfang Ravager
+									19189,	-- Quillfang Skitterer
+									19188,	-- Raging Colossus
+									18046,	-- Rajah Haghazed
+									16933,	-- Razorfang Ravager
+									20798,	-- Razorsaw
+									16974,	-- Rogue Voidwalker
+									17397,	-- Shadowmoon Adept
+									17395,	-- Shadowmoon Summoner
+									17414,	-- Shadowmoon Technician
+									17371,	-- Shadowmoon Warlock
+									16519,	-- Shadowy Executioner
+									17088,	-- Shadowy Summoner
+									18454,	-- Shalassi Talonguard
+									19415,	-- Shattered Hand Acolyte
+									16878,	-- Shattered Hand Berserker
+									16870,	-- Shattered Hand Captain
+									16867,	-- Shattered Hand Grunt
+									19414,	-- Shattered Hand Guard
+									19413,	-- Shattered Hand Mage
+									19410,	-- Shattered Hand Neophyte
+									17280,	-- Shattered Hand Warhound
+									18450,	-- Shienor Sorcerer
+									18449,	-- Shienor Talonite
+									18451,	-- Shienor Wing Guard
+									18750,	-- Shimmerscale Eel
+									18452,	-- Skithian Dreadhawk
+									18453,	-- Skithian Windripper
+									18128,	-- Sporebat
+									18125,	-- Starving Fungal Giant
+									18340,	-- Steam Pump Overseer
+									16929,	-- Stonescythe Alpha
+									16927,	-- Stonescythe Whelp
+									19443,	-- Tagar Spinebreaker
+									18468,	-- Teromoth
+									16951,	-- Terrorfiend
+									19349,	-- Thornfang Ravager
+									19350,	-- Thornfang Venomspitter
+									18476,	-- Timber Worg
+									18477,	-- Timber Worg Alpha
+									21651,	-- Time-Lost Skettis Reaver
+									21763,	-- Time-Lost Skettis Worshipper
+									18457,	-- Tuurem Hunter
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									17724,	-- Underbat
+									17725,	-- Underbog Lurker
+									17871,	-- Underbog Shambler
+									19527,	-- Vacillating Voidcaller
+									18437,	-- Vicious Teromoth
+									18464,	-- Warp Stalker
+									18595,	-- Warped Peon
+									17963,	-- Wastewalker Slave
+									17964,	-- Wastewalker Worker
+									19402,	-- Withered Bog Lord
+									18124,	-- Withered Giant
+									17735,	-- Wrathfin Warrior
+									17143,	-- Wrekt Seer
+									18123,	-- Wrekt Slave
+									18974,	-- Z'kral
+								},
 							},
 							{	-- Laughing Skull Pants
 								["itemID"] = 24610,	-- Laughing Skull Pants
+								["crs"] = {
+									18120,	-- Ango'rosh Mauler
+									18117,	-- Ango'rosh Ogre
+									18118,	-- Ango'rosh Shaman
+									19354,	-- Arzeth the Merciless
+									18540,	-- Ayit
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									16901,	-- Blistering Rot
+									18088,	-- Bloodscale Enchantress
+									20088,	-- Bloodscale Overseer
+									18089,	-- Bloodscale Slavedriver
+									20089,	-- Bloodscale Wavecaller
+									17723,	-- Bog Giant
+									20197,	-- Bogflare Needler
+									18281,	-- Boglash
+									17816,	-- Bogstrok
+									20295,	-- Bogstrok Crusher
+									17271,	-- Bonechewer Destroyer
+									16772,	-- Bonechewer Devastator
+									17259,	-- Bonechewer Hungerer
+									16876,	-- Bonechewer Mutant
+									17264,	-- Bonechewer Ravener
+									17281,	-- Bonechewer Ripper
+									18952,	-- Bonechewer Scavenger
+									16972,	-- Bonestripper Buzzard
+									16973,	-- Bonestripper Vulture
+									21907,	-- Cabal Initiate
+									21661,	-- Cabal Skirmisher
+									21902,	-- Cabal Spell-weaver
+									17957,	-- Coilfang Champion
+									17962,	-- Coilfang Collaborator
+									17958,	-- Coilfang Defender
+									17961,	-- Coilfang Enchantress
+									17938,	-- Coilfang Observer
+									21126,	-- Coilfang Scale-Healer
+									17959,	-- Coilfang Slavehandler
+									17960,	-- Coilfang Soothsayer
+									17940,	-- Coilfang Technician
+									21127,	-- Coilfang Tempest
+									17014,	-- Collapsing Voidwalker
+									18116,	-- Daggerfen Assassin
+									18115,	-- Daggerfen Muckdweller
+									18461,	-- Dampscale Basilisk
+									18463,	-- Dampscale Devourer
+									20079,	-- Darkcrest Sentry
+									18087,	-- Darkcrest Siren
+									19946,	-- Darkcrest Slaver
+									19947,	-- Darkcrest Sorceress
+									18086,	-- Darkcrest Taskmaster
+									16863,	-- Deranged Helboar
+									18466,	-- Dreadfang Lurker
+									16938,	-- Dreghood Brute
+									18122,	-- Dreghood Drudge
+									19312,	-- Drillmaster Zurok
+									17429,	-- Fel Orc Neophyte
+									17400,	-- Felguard Annihilator
+									18894,	-- Felguard Brute
+									17401,	-- Felhound Manastalker
+									17034,	-- Female Kaliri Hatchling
+									18134,	-- Fen Strider
+									18214,	-- Fenclaw Thrasher
+									20198,	-- Fenglow Stinger
+									18113,	-- Feralfen Hunter
+									18114,	-- Feralfen Mystic
+									1410,	-- Firewing Bloodwarder
+									5355,	-- Firewing Defender
+									16769,	-- Firewing Warlock
+									16954,	-- Forge Camp Legionnaire
+									19734,	-- Fungal Giant
+									16947,	-- Gan'arg Servant
+									22143,	-- Gordunni Back-Breaker
+									17817,	-- Greater Bogstrok
+									18129,	-- Greater Sporebat
+									16967,	-- Haal'eshi Talonguard
+									16966,	-- Haal'eshi Windwalker
+									16880,	-- Hulking Helboar
+									17058,	-- Illidari Taskmaster
+									22323,	-- Incandescent Fel Spark
+									21816,	-- Ironspine Chomper
+									21854,	-- Ironspine Petrifier
+									17035,	-- Kaliri Matriarch
+									17053,	-- Kaliri Swooper
+									17370,	-- Laughing Skull Enforcer
+									17626,	-- Laughing Skull Legionnaire
+									17491,	-- Laughing Skull Rogue
+									17624,	-- Laughing Skull Warden
+									19632,	-- Lykul Stinger
+									17732,	-- Lykul Wasp
+									16846,	-- Mag'har Grunt
+									16911,	-- Mag'har Watcher
+									19408,	-- Maiden of Pain
+									16857,	-- Marauding Crust Burster
+									18137,	-- Marsh Dredger
+									18136,	-- Marsh Lurker
+									18130,	-- Marshfang Ripper
+									18131,	-- Marshfang Slicer
+									18133,	-- Marshlight Bleeder
+									19706,	-- Marshrock Threshalisk
+									18213,	-- Mire Hydra
+									19192,	-- Mistress of Doom
+									16946,	-- Mo'arg Forgefiend
+									17730,	-- Murkblood Healer
+									17771,	-- Murkblood Oracle
+									17729,	-- Murkblood Spearman
+									17728,	-- Murkblood Tribesman
+									17398,	-- Nascent Fel Orc
+									20324,	-- Parched Hydra
+									16934,	-- Quillfang Ravager
+									19189,	-- Quillfang Skitterer
+									19188,	-- Raging Colossus
+									18046,	-- Rajah Haghazed
+									18044,	-- Rajis Fyashe
+									16932,	-- Razorfang Hatchling
+									16933,	-- Razorfang Ravager
+									16974,	-- Rogue Voidwalker
+									17397,	-- Shadowmoon Adept
+									17395,	-- Shadowmoon Summoner
+									17414,	-- Shadowmoon Technician
+									17371,	-- Shadowmoon Warlock
+									16519,	-- Shadowy Executioner
+									17088,	-- Shadowy Summoner
+									19415,	-- Shattered Hand Acolyte
+									16878,	-- Shattered Hand Berserker
+									16870,	-- Shattered Hand Captain
+									16867,	-- Shattered Hand Grunt
+									19414,	-- Shattered Hand Guard
+									19410,	-- Shattered Hand Neophyte
+									17280,	-- Shattered Hand Warhound
+									19411,	-- Shattered Hand Warlock
+									18450,	-- Shienor Sorcerer
+									18449,	-- Shienor Talonite
+									18750,	-- Shimmerscale Eel
+									16960,	-- Sister of Grief
+									21804,	-- Skettis Kaliri
+									21728,	-- Skettis Surger
+									21650,	-- Skettis Talonite
+									18452,	-- Skithian Dreadhawk
+									18453,	-- Skithian Windripper
+									18128,	-- Sporebat
+									19519,	-- Starving Bog Lord
+									18125,	-- Starving Fungal Giant
+									18340,	-- Steam Pump Overseer
+									16929,	-- Stonescythe Alpha
+									16927,	-- Stonescythe Whelp
+									18468,	-- Teromoth
+									20477,	-- Terrorclaw
+									16951,	-- Terrorfiend
+									19349,	-- Thornfang Ravager
+									19350,	-- Thornfang Venomspitter
+									18476,	-- Timber Worg
+									18477,	-- Timber Worg Alpha
+									21787,	-- Time-Lost Skettis High Priest
+									18457,	-- Tuurem Hunter
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									17724,	-- Underbat
+									17734,	-- Underbog Lord
+									17725,	-- Underbog Lurker
+									17871,	-- Underbog Shambler
+									18541,	-- Urdak
+									19527,	-- Vacillating Voidcaller
+									18437,	-- Vicious Teromoth
+									18464,	-- Warp Stalker
+									18595,	-- Warped Peon
+									17963,	-- Wastewalker Slave
+									17964,	-- Wastewalker Worker
+									19402,	-- Withered Bog Lord
+									18124,	-- Withered Giant
+									18123,	-- Wrekt Slave
+									20387,	-- Young Sporebat
+								},
 							},
 							{	-- Mahogany Wand
 								["itemID"] = 25282,	-- Mahogany Wand
@@ -2615,9 +2978,138 @@ _.Zones =
 							},
 							{	-- Outlander's Bracers
 								["itemID"] = 24588,	-- Outlander's Bracers
+								["crs"] = {
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									17455,	-- Bonechewer Beastmaster
+									17271,	-- Bonechewer Destroyer
+									19701,	-- Bonechewer Evoker
+									17259,	-- Bonechewer Hungerer
+									16876,	-- Bonechewer Mutant
+									16925,	-- Bonechewer Raider
+									17264,	-- Bonechewer Ravener
+									18952,	-- Bonechewer Scavenger
+									16972,	-- Bonestripper Buzzard
+									17014,	-- Collapsing Voidwalker
+									16844,	-- Crust Burster
+									16847,	-- Debilitated Mag'har Grunt
+									16863,	-- Deranged Helboar
+									18981,	-- Doomwhisperer
+									19434,	-- Dreadcaller
+									19190,	-- Fel Handler
+									18977,	-- Felguard Destroyer
+									17401,	-- Felhound Manastalker
+									19136,	-- Flamewaker Imp
+									16954,	-- Forge Camp Legionnaire
+									18827,	-- Gan'arg Sapper
+									16947,	-- Gan'arg Servant
+									17517,	-- Hellfire Sentry
+									17309,	-- Hellfire Watcher
+									16880,	-- Hulking Helboar
+									19261,	-- Infernal Warbringer
+									17053,	-- Kaliri Swooper
+									19408,	-- Maiden of Pain
+									16857,	-- Marauding Crust Burster
+									18130,	-- Marshfang Ripper
+									18213,	-- Mire Hydra
+									17398,	-- Nascent Fel Orc
+									16950,	-- Netherhound
+									16932,	-- Razorfang Hatchling
+									16974,	-- Rogue Voidwalker
+									17414,	-- Shadowmoon Technician
+									17280,	-- Shattered Hand Warhound
+									16960,	-- Sister of Grief
+									16879,	-- Starving Helboar
+									16927,	-- Stonescythe Whelp
+									19349,	-- Thornfang Ravager
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									16904,	-- Unyielding Footman
+									16906,	-- Unyielding Knight
+									16905,	-- Unyielding Sorcerer
+									19298,	-- Warbringer Arix'Amal
+									18124,	-- Withered Giant
+									24919,	-- Wrath Herald
+									18975,	-- Wrathguard
+								},
 							},
 							{	-- Outlander's Leggings
 								["itemID"] = 24586,	-- Outlander's Leggings
+								["crs"] = {
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									17455,	-- Bonechewer Beastmaster
+									17271,	-- Bonechewer Destroyer
+									19701,	-- Bonechewer Evoker
+									17259,	-- Bonechewer Hungerer
+									16876,	-- Bonechewer Mutant
+									16925,	-- Bonechewer Raider
+									17264,	-- Bonechewer Ravener
+									18952,	-- Bonechewer Scavenger
+									16972,	-- Bonestripper Buzzard
+									16844,	-- Crust Burster
+									16847,	-- Debilitated Mag'har Grunt
+									16863,	-- Deranged Helboar
+									18981,	-- Doomwhisperer
+									19434,	-- Dreadcaller
+									16938,	-- Dreghood Brute
+									19190,	-- Fel Handler
+									17429,	-- Fel Orc Neophyte
+									17401,	-- Felhound Manastalker
+									16954,	-- Forge Camp Legionnaire
+									18827,	-- Gan'arg Sapper
+									16947,	-- Gan'arg Servant
+									16966,	-- Haal'eshi Windwalker
+									17517,	-- Hellfire Sentry
+									17309,	-- Hellfire Watcher
+									22323,	-- Incandescent Fel Spark
+									19261,	-- Infernal Warbringer
+									17035,	-- Kaliri Matriarch
+									17053,	-- Kaliri Swooper
+									17626,	-- Laughing Skull Legionnaire
+									17491,	-- Laughing Skull Rogue
+									16857,	-- Marauding Crust Burster
+									18130,	-- Marshfang Ripper
+									18213,	-- Mire Hydra
+									16950,	-- Netherhound
+									16932,	-- Razorfang Hatchling
+									16974,	-- Rogue Voidwalker
+									17414,	-- Shadowmoon Technician
+									17371,	-- Shadowmoon Warlock
+									16867,	-- Shattered Hand Grunt
+									17280,	-- Shattered Hand Warhound
+									16960,	-- Sister of Grief
+									16879,	-- Starving Helboar
+									16927,	-- Stonescythe Whelp
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									16904,	-- Unyielding Footman
+									16906,	-- Unyielding Knight
+									16905,	-- Unyielding Sorcerer
+									18975,	-- Wrathguard
+								},
 							},
 							{	-- Purpleheart Wand
 								["itemID"] = 25284,	-- Purpleheart Wand
@@ -2713,12 +3205,336 @@ _.Zones =
 							},
 							{	-- Tourmaline Loop
 								["itemID"] = 25047,	-- Tourmaline Loop
+								["crs"] = {
+									18120,	-- Ango'rosh Mauler
+									18117,	-- Ango'rosh Ogre
+									20444,	-- Ango'rosh Shadowmage
+									18118,	-- Ango'rosh Shaman
+									18121,	-- Ango'rosh Souleater
+									19191,	-- Arazzius the Cruel
+									16977,	-- Arch Mage Xintor
+									19354,	-- Arzeth the Merciless
+									18539,	-- Ashkaz
+									17057,	-- Blacktalon the Savage
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									16901,	-- Blistering Rot
+									18088,	-- Bloodscale Enchantress
+									20088,	-- Bloodscale Overseer
+									18089,	-- Bloodscale Slavedriver
+									20089,	-- Bloodscale Wavecaller
+									17723,	-- Bog Giant
+									20197,	-- Bogflare Needler
+									18281,	-- Boglash
+									17816,	-- Bogstrok
+									16810,	-- Bonechewer Backbreaker
+									17271,	-- Bonechewer Destroyer
+									16772,	-- Bonechewer Devastator
+									17259,	-- Bonechewer Hungerer
+									17264,	-- Bonechewer Ravener
+									17281,	-- Bonechewer Ripper
+									18952,	-- Bonechewer Scavenger
+									16973,	-- Bonestripper Vulture
+									18159,	-- Boss Grog'ak
+									21660,	-- Cabal Abjurist
+									21907,	-- Cabal Initiate
+									21661,	-- Cabal Skirmisher
+									21902,	-- Cabal Spell-weaver
+									21662,	-- Cabal Tomb-Raider
+									17957,	-- Coilfang Champion
+									17962,	-- Coilfang Collaborator
+									17958,	-- Coilfang Defender
+									17961,	-- Coilfang Enchantress
+									17938,	-- Coilfang Observer
+									21126,	-- Coilfang Scale-Healer
+									17959,	-- Coilfang Slavehandler
+									17960,	-- Coilfang Soothsayer
+									17940,	-- Coilfang Technician
+									21127,	-- Coilfang Tempest
+									17014,	-- Collapsing Voidwalker
+									18116,	-- Daggerfen Assassin
+									18115,	-- Daggerfen Muckdweller
+									18461,	-- Dampscale Basilisk
+									18463,	-- Dampscale Devourer
+									18087,	-- Darkcrest Siren
+									19946,	-- Darkcrest Slaver
+									19947,	-- Darkcrest Sorceress
+									18086,	-- Darkcrest Taskmaster
+									21198,	-- Deathtalon Spirit
+									16863,	-- Deranged Helboar
+									18466,	-- Dreadfang Lurker
+									18122,	-- Dreghood Drudge
+									19312,	-- Drillmaster Zurok
+									17429,	-- Fel Orc Neophyte
+									17400,	-- Felguard Annihilator
+									18894,	-- Felguard Brute
+									17401,	-- Felhound Manastalker
+									17731,	-- Fen Ray
+									18134,	-- Fen Strider
+									18214,	-- Fenclaw Thrasher
+									20198,	-- Fenglow Stinger
+									20270,	-- Feralfen Druid
+									18113,	-- Feralfen Hunter
+									18114,	-- Feralfen Mystic
+									1410,	-- Firewing Bloodwarder
+									5355,	-- Firewing Defender
+									16769,	-- Firewing Warlock
+									16954,	-- Forge Camp Legionnaire
+									19734,	-- Fungal Giant
+									16947,	-- Gan'arg Servant
+									17817,	-- Greater Bogstrok
+									18129,	-- Greater Sporebat
+									19457,	-- Grillok "Darkeye"
+									16967,	-- Haal'eshi Talonguard
+									16966,	-- Haal'eshi Windwalker
+									18978,	-- Heckling Fel Sprite
+									16880,	-- Hulking Helboar
+									17058,	-- Illidari Taskmaster
+									22323,	-- Incandescent Fel Spark
+									22095,	-- Infested Root-Walker
+									21854,	-- Ironspine Petrifier
+									17035,	-- Kaliri Matriarch
+									17053,	-- Kaliri Swooper
+									18080,	-- Kataru
+									17370,	-- Laughing Skull Enforcer
+									17626,	-- Laughing Skull Legionnaire
+									17491,	-- Laughing Skull Rogue
+									17624,	-- Laughing Skull Warden
+									16978,	-- Lieutenant Commander Thalvos
+									17732,	-- Lykul Wasp
+									16846,	-- Mag'har Grunt
+									16912,	-- Mag'har Hunter
+									19408,	-- Maiden of Pain
+									17039,	-- Male Kaliri Hatchling
+									18137,	-- Marsh Dredger
+									18136,	-- Marsh Lurker
+									18135,	-- Marsh Walker
+									18130,	-- Marshfang Ripper
+									18131,	-- Marshfang Slicer
+									18133,	-- Marshlight Bleeder
+									20283,	-- Marshrock Stomper
+									18213,	-- Mire Hydra
+									19192,	-- Mistress of Doom
+									16946,	-- Mo'arg Forgefiend
+									23051,	-- Monstrous Kaliri
+									18212,	-- Mudfin Frenzy
+									17730,	-- Murkblood Healer
+									17771,	-- Murkblood Oracle
+									17729,	-- Murkblood Spearman
+									17728,	-- Murkblood Tribesman
+									17398,	-- Nascent Fel Orc
+									20324,	-- Parched Hydra
+									16934,	-- Quillfang Ravager
+									19189,	-- Quillfang Skitterer
+									19188,	-- Raging Colossus
+									18046,	-- Rajah Haghazed
+									18044,	-- Rajis Fyashe
+									16933,	-- Razorfang Ravager
+									20798,	-- Razorsaw
+									16974,	-- Rogue Voidwalker
+									21200,	-- Screeching Spirit
+									17397,	-- Shadowmoon Adept
+									17395,	-- Shadowmoon Summoner
+									17414,	-- Shadowmoon Technician
+									17371,	-- Shadowmoon Warlock
+									16519,	-- Shadowy Executioner
+									17088,	-- Shadowy Summoner
+									18454,	-- Shalassi Talonguard
+									19415,	-- Shattered Hand Acolyte
+									16878,	-- Shattered Hand Berserker
+									16870,	-- Shattered Hand Captain
+									16867,	-- Shattered Hand Grunt
+									19414,	-- Shattered Hand Guard
+									19413,	-- Shattered Hand Mage
+									19410,	-- Shattered Hand Neophyte
+									19411,	-- Shattered Hand Warlock
+									18450,	-- Shienor Sorcerer
+									18449,	-- Shienor Talonite
+									18451,	-- Shienor Wing Guard
+									18750,	-- Shimmerscale Eel
+									16960,	-- Sister of Grief
+									21644,	-- Skettis Wing Guard
+									18452,	-- Skithian Dreadhawk
+									18453,	-- Skithian Windripper
+									18128,	-- Sporebat
+									18125,	-- Starving Fungal Giant
+									16879,	-- Starving Helboar
+									18340,	-- Steam Pump Overseer
+									16929,	-- Stonescythe Alpha
+									16927,	-- Stonescythe Whelp
+									19282,	-- Subjugator Shi'aziv
+									21838,	-- Terokk
+									18468,	-- Teromoth
+									20477,	-- Terrorclaw
+									16951,	-- Terrorfiend
+									19349,	-- Thornfang Ravager
+									19350,	-- Thornfang Venomspitter
+									18476,	-- Timber Worg
+									18477,	-- Timber Worg Alpha
+									21787,	-- Time-Lost Skettis High Priest
+									21763,	-- Time-Lost Skettis Worshipper
+									16968,	-- Tunneler
+									18457,	-- Tuurem Hunter
+									18456,	-- Tuurem Scavenger
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									17724,	-- Underbat
+									17725,	-- Underbog Lurker
+									17871,	-- Underbog Shambler
+									16904,	-- Unyielding Footman
+									19527,	-- Vacillating Voidcaller
+									23162,	-- Vakkiz the Windrager
+									18437,	-- Vicious Teromoth
+									19298,	-- Warbringer Arix'Amal
+									16964,	-- Warlord Morkh
+									18464,	-- Warp Stalker
+									18595,	-- Warped Peon
+									17963,	-- Wastewalker Slave
+									17964,	-- Wastewalker Worker
+									19402,	-- Withered Bog Lord
+									18124,	-- Withered Giant
+									17735,	-- Wrathfin Warrior
+									18975,	-- Wrathguard
+									18123,	-- Wrekt Slave
+								},
 							},
 							{	-- Unyielding Chain Vest
 								["itemID"] = 24808,	-- Unyielding Chain Vest
+								["crs"] = {
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									17455,	-- Bonechewer Beastmaster
+									17271,	-- Bonechewer Destroyer
+									19701,	-- Bonechewer Evoker
+									17259,	-- Bonechewer Hungerer
+									16876,	-- Bonechewer Mutant
+									16925,	-- Bonechewer Raider
+									17264,	-- Bonechewer Ravener
+									18952,	-- Bonechewer Scavenger
+									16972,	-- Bonestripper Buzzard
+									16847,	-- Debilitated Mag'har Grunt
+									16863,	-- Deranged Helboar
+									18981,	-- Doomwhisperer
+									19434,	-- Dreadcaller
+									19190,	-- Fel Handler
+									17401,	-- Felhound Manastalker
+									16954,	-- Forge Camp Legionnaire
+									18827,	-- Gan'arg Sapper
+									16947,	-- Gan'arg Servant
+									25084,	-- Greengill Slave
+									16966,	-- Haal'eshi Windwalker
+									17517,	-- Hellfire Sentry
+									17309,	-- Hellfire Watcher
+									17058,	-- Illidari Taskmaster
+									22323,	-- Incandescent Fel Spark
+									19261,	-- Infernal Warbringer
+									17053,	-- Kaliri Swooper
+									16846,	-- Mag'har Grunt
+									16857,	-- Marauding Crust Burster
+									18130,	-- Marshfang Ripper
+									18677,	-- Mekthorg the Wild
+									18213,	-- Mire Hydra
+									16950,	-- Netherhound
+									16932,	-- Razorfang Hatchling
+									16878,	-- Shattered Hand Berserker
+									17280,	-- Shattered Hand Warhound
+									16960,	-- Sister of Grief
+									16879,	-- Starving Helboar
+									16927,	-- Stonescythe Whelp
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									16904,	-- Unyielding Footman
+									16906,	-- Unyielding Knight
+									16905,	-- Unyielding Sorcerer
+									18976,	-- Urga'zz
+									24919,	-- Wrath Herald
+									18975,	-- Wrathguard
+								},
 							},
 							{	-- Unyielding Leggings
 								["itemID"] = 24811,	-- Unyielding Leggings
+								["crs"] = {
+									17270,	-- Bleeding Hollow Archer
+									16873,	-- Bleeding Hollow Dark Shaman
+									17269,	-- Bleeding Hollow Darkcaster
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									17478,	-- Bleeding Hollow Scryer
+									19424,	-- Bleeding Hollow Tormentor
+									16903,	-- Blistering Oozeling
+									17455,	-- Bonechewer Beastmaster
+									17271,	-- Bonechewer Destroyer
+									19701,	-- Bonechewer Evoker
+									17259,	-- Bonechewer Hungerer
+									16876,	-- Bonechewer Mutant
+									16925,	-- Bonechewer Raider
+									17264,	-- Bonechewer Ravener
+									18952,	-- Bonechewer Scavenger
+									16972,	-- Bonestripper Buzzard
+									16847,	-- Debilitated Mag'har Grunt
+									16863,	-- Deranged Helboar
+									18981,	-- Doomwhisperer
+									19434,	-- Dreadcaller
+									19190,	-- Fel Handler
+									17401,	-- Felhound Manastalker
+									16954,	-- Forge Camp Legionnaire
+									18827,	-- Gan'arg Sapper
+									16947,	-- Gan'arg Servant
+									25084,	-- Greengill Slave
+									16966,	-- Haal'eshi Windwalker
+									17517,	-- Hellfire Sentry
+									17309,	-- Hellfire Watcher
+									17058,	-- Illidari Taskmaster
+									22323,	-- Incandescent Fel Spark
+									19261,	-- Infernal Warbringer
+									17053,	-- Kaliri Swooper
+									16846,	-- Mag'har Grunt
+									16857,	-- Marauding Crust Burster
+									18130,	-- Marshfang Ripper
+									18677,	-- Mekthorg the Wild
+									18213,	-- Mire Hydra
+									16950,	-- Netherhound
+									16932,	-- Razorfang Hatchling
+									16878,	-- Shattered Hand Berserker
+									17280,	-- Shattered Hand Warhound
+									16960,	-- Sister of Grief
+									16879,	-- Starving Helboar
+									16927,	-- Stonescythe Whelp
+									18138,	-- Umbrafen Eel
+									18077,	-- Umbrafen Oracle
+									18079,	-- Umbrafen Seer
+									20115,	-- Umbrafen Witchdoctor
+									18132,	-- Umbraglow Stinger
+									16975,	-- Uncontrolled Voidwalker
+									16904,	-- Unyielding Footman
+									16906,	-- Unyielding Knight
+									16905,	-- Unyielding Sorcerer
+									18976,	-- Urga'zz
+									24919,	-- Wrath Herald
+									18975,	-- Wrathguard
+								},
 							},
 							{	-- Vengeance Bands
 								["itemID"] = 24716,	-- Vengeance Bands
