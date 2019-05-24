@@ -44,12 +44,12 @@ _.PVP =
 				un(2, i(135795)),	-- Vindictive Gladiator's Ring (Horde)
 				un(2, i(135803)),	-- Vindictive Gladiator's Signet (Horde)
 				-- Combatant (Blue)
-				un(2, i(135686)),	-- Vindictive Combatant's Band (Alliance)
-				un(2, i(135803)),	-- Vindictive Combatant's Ring (Alliance)
-				un(2, i(135690)),	-- Vindictive Combatant's Signet (Alliance)
-				un(2, i(135682)),	-- Vindictive Combatant's Band (Horde)
-				un(2, i(135799)),	-- Vindictive Combatant's Ring (Horde)
-				un(2, i(135795)),	-- Vindictive Combatant's Signet (Horde)
+				un(2, i(135912)),	-- Vindictive Combatant's Band (Alliance)
+				un(2, i(135908)),	-- Vindictive Combatant's Ring (Alliance)
+				un(2, i(135916)),	-- Vindictive Combatant's Signet (Alliance)
+				un(2, i(136025)),	-- Vindictive Combatant's Band (Horde)
+				un(2, i(136021)),	-- Vindictive Combatant's Ring (Horde)
+				un(2, i(136029)),	-- Vindictive Combatant's Signet (Horde)
 			}),
 			n(-386,	{	-- Trinket
 				-- Elite
@@ -662,6 +662,7 @@ _.PVP =
 				un(2, i(148610)), -- Dominant Gladiator's Badge of Victory (Alliance)
 				un(2, i(148612)), -- Dominant Gladiator's Accolade of Victory (Alliance)
 				un(2, i(148614)), -- Dominant Gladiator's Insignia of Victory (Alliance)
+				un(2, i(148598)), -- Dominant Gladiator's Badge of Conquest (Alliance)
 				un(2, i(148599)), -- Dominant Gladiator's Badge of Conquest (Horde)
 				un(2, i(148601)), -- Dominant Gladiator's Accolade of Conquest (Horde)
 				un(2, i(148603)), -- Dominant Gladiator's Insignia of Conquest (Horde)

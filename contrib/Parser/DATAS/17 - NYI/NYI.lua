@@ -955,6 +955,7 @@ _.NeverImplemented =
 			un(1, i(108819)),	-- Unknown
 			un(1, i(109267)),	-- Unknown
 			un(1, i(33197)),	-- Mossy necklace
+			un(1, i(153484)),	-- Fierce Combatant's Necklace
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
 			un(1, i(31930)),	-- Unknown
@@ -1011,8 +1012,11 @@ _.NeverImplemented =
 			un(1, i(144455)),	-- rating min item level reward
 			un(1, i(147397)),	-- rating min item level reward
 			un(1, i(147421)),	-- rating min item level reward
+			un(1, i(150368)),	-- rating min item level reward
 			un(1, i(109365)),	-- Unknown
 			un(1, i(109410)),	-- Unknown
+			un(1, i(150369)),	-- rating min item level reward
+			un(1, i(150370)),	-- rating min item level reward
 			un(1, i(109418)),	-- Unknown
 			un(1, i(109447)),	-- Unknown
 			un(1, i(109454)),	-- Unknown
@@ -1082,6 +1086,8 @@ _.NeverImplemented =
 			un(1, i(109263)),	-- Unknown
 			un(1, i(109286)),	-- Unknown
 			un(1, i(109360)),	-- Unknown
+			un(1, i(150367)),	-- Unknown
+			un(1, i(151967)),	-- Unknown
 			un(1, i(109370)),	-- Unknown
 			un(1, i(109376)),	-- Unknown
 			un(1, i(109378)),	-- Unknown
