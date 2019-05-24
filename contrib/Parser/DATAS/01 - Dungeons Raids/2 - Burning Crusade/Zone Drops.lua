@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = 
+_.Instances =
 {
 	{	-- The Burning Crusade
 		["tierID"] = 2,	-- The Burning Crusade
@@ -1696,6 +1696,18 @@ _.Instances =
 							18875,	-- Zaxxis Raider
 						},
 					},
+					-- Amulet of Unstable Power
+					-- Axe of the Legionnaire
+					-- Blade Dancer's Wristguards
+					-- Breastplate of Blade Turning
+					-- Chestguard of Illumination
+					-- Cloak of Entrophy
+					-- Fist of Reckoning
+					-- Girdle of Siege
+					-- Gloves of Pandemonium
+					-- Gloves of Piety
+					-- Pendant of Cunning
+					-- Shroud of Frenzy
 				},
 			},
 		},
