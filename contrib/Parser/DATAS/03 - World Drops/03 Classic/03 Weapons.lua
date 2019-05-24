@@ -101,7 +101,6 @@ _.WorldDrops =
 					i(7753),	-- Bloodspiller
 					i(870),		-- Fiery War Axe
 					i(9383),	-- Obsidian Cleaver
-					i(9425),	-- Pendulum of Doom
 					i(9481),	-- The Minotaur
 					i(9486),	-- Supercharger Battle Axe
 				}),	
