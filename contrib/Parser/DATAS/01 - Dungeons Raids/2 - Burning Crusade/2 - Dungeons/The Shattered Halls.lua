@@ -8,11 +8,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 246,
 		["coord"] = { 47.66, 51.98, 100 },	-- The Shattered Halls, Hellfire Peninsula
 		["groups"] = {
-			n(0, {	-- Zone Drops
-				n(17465, {	-- Shattered Hand Centurion
-					dr(11, i(22554)),	-- Formula: Enchant 2H Weapon - Savagery
-				}),
-			}),
 			n(-17, {	-- Quests
 				h({
 					["questID"] = 29655,	-- A Very Special Cloth
@@ -73,6 +68,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				["g"] = {
+					{	-- Formula: Enchant 2H Weapon - Savagery
+						["itemID"] = 22554,	-- Formula: Enchant 2H Weapon - Savagery
+						["crs"] = {
+							17465,	-- Shattered Hand Centurion
+						},
+					},
+				},
+			},
 			d(1, {	-- Normal
 				cr(16807, e(566, {	-- Grand Warlock Nethekurse
 					i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
