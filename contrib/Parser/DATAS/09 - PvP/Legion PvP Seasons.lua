@@ -586,5 +586,9 @@ _.PVP =
 				un(2, i(149719)), -- Fierce Combatant's Insignia of Victory (Horde)
 			}),
 		}),
+		n(-656, {	-- Dominant Gladiator: Legion Season 6
+		}),
+		n(-657, {	-- Demonic Gladiator: Legion Season 7
+		}),
 	}),
 };
