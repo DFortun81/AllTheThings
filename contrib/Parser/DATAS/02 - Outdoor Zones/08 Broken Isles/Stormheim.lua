@@ -2364,6 +2364,10 @@ _.Zones =
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 24,	-- Marius & Tehd versus an Inquisitor
 							},
+							{	-- Tehd & Marius' Excellent Adventure
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 4,	-- Stormheim
+							},
 						},
 					}), 
 					n(94413,  {	-- Isel the Hammer

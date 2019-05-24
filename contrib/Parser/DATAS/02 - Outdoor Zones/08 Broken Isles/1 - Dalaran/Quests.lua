@@ -567,7 +567,8 @@ _.Zones =
 							41155,	-- The Dark Riders
 							42168,	-- Looking into the Darkness
 						},
-						["classes"] = { 9 },
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 54.0, 47.0, 627 },
 						["qg"] = 106610,	-- Calydus
 					}),
 				--	q(44272)	-- Darkheart Thicket -- mission board
@@ -715,7 +716,13 @@ _.Zones =
 						["qgs"] = { 102700, 109222 },	-- Meryl Felstorm (2 versions)
 					}),
 					q(43100,  {	-- Finding the Scepter
-						["classes"] = { 9 },
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
+						},
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 56.3, 65.0, 628 },
 						["qg"] = 101097,	-- Calydus
 					}),
 					q(42501,  {	-- Finishing the Job
@@ -904,6 +911,7 @@ _.Zones =
 					}),
 					q(38907,  {	-- Keepers of the Hammer
 						["sourceQuests"] = { 39733 },	-- The Lone Mountain
+						["coord"] = { 69.9, 43.8, 627 },
 						["qg"] = 97666,	-- Warbrave Oro
 					}),
 					q(44555,  {	-- Khadgar's Discovery
@@ -931,7 +939,8 @@ _.Zones =
 							40611,	-- The Fate of Deadwind
 							42128,	-- Ritual Reagents
 						},
-						["classes"] = { 9 },
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 54.0, 47.0, 627 },
 						["qg"] = 106610,	-- Calydus
 					}),
 			--[[	Attached Lost Mail to the Object. One is looted from the Object, the other one is looted from completion of the quest
@@ -1202,16 +1211,21 @@ _.Zones =
 						["classes"] = { 4 },
 						["qg"] = 101513,	-- Lord Jorach Ravenholdt
 					}),
-					q(42128,  {	-- Ritual Reagents
-						["sourceQuests"] = {
-							40606,	-- To Point the Way
-							42952,	-- Tracking Down the Skull
+					q(42128, {	-- Ritual Reagents
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
 						},
-						["classes"] = { 9 },
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 56.3, 65.0, 628 },
+						["lvl"] = 98,
 						["qg"] = 101097,	-- Calydus
 					}),
 					q(43254,  {	-- Ritual Ruination
-						["classes"] = { 9 },
+						["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 73.8, 42.9, 627 },
 						["qg"] = 109838,	-- Calydus
 					}),
 					q(45192,  {	-- Runes of Rending
@@ -1628,7 +1642,11 @@ _.Zones =
 						["qg"] = 91172,	-- Archmage Khadgar
 					}),
 					q(40495, {	-- Ulthalesh, the Deadwind Harvester
-						["sourceQuests"] = { 40684 },	-- The Tome of Blighted Implements
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
+						},
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 56.3, 65.0, 628 },
 						["qg"] = 101097,	-- Calydus
