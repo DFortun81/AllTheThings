@@ -21,7 +21,6 @@ _.WorldDrops =
 					i(18698),	-- Tattered Leather Hood
 					un(7, i(20263)),	-- Gurubashi Helm
 					i(21803),	-- Helm of the Holy Avenger
-					i(21804),	-- Coif of Elemental Fury
 					i(2245),	-- Helm of Narv
 					un(7, i(2620)),	-- Augural Shroud
 					un(7, i(2621)),	-- Cowl of Necromancy

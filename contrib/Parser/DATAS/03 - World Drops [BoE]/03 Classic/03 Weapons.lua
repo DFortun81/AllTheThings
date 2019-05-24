@@ -227,7 +227,6 @@ _.WorldDrops =
 					i(2098),	-- Double-Barreled Shotgun
 					i(2099),	-- Dwarven Hand Cannon
 					i(2100),	-- Precisely Calibrated Boomstick
-					i(21800),	-- Silithid Husked Launcher
 					i(3040),	-- Hunter's Muzzle Loader
 					i(3041),	-- "Mage-Eye" Blunderbuss
 					i(3042),	-- BKP "Sparrow" Smallbore
@@ -791,7 +790,6 @@ _.WorldDrops =
 					i(15282),	-- Dragon Finger
 					i(15283),	-- Lunar Wand
 					i(18338),	-- Wand of Arcane Potency
-					i(21801),	-- Antenna of Invigoration
 					i(31270),	-- Banshee Rod
 					i(5069),	-- Fire Wand
 					i(5071),	-- Shadow Wand
