@@ -1219,6 +1219,13 @@ _.Zones =
 						["qg"] = 94409,	-- Hemet Nesingwary
 					}),
 
+
+					q(39429, {	-- Assaulting the Haglands
+						["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
+						["coord"] = { 52.3, 36.5, 650 },
+						["qg"] = 95410,	-- Lasan Skyhorn
+					}),
+
 					
 					q(40000, {	-- A True Hunter
 						["coord"] = { 57.5, 56.4, 650 },
@@ -1226,10 +1233,27 @@ _.Zones =
 					}),
 
 
+					q(40515, {	-- A Walk With the Spirits
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+						["qg"] = 93826,	-- Mayla Highmountain
+					}),
+					
+					
 					q(39488, {	-- Balance of Elements
 						["sourceQuests"] = { 39661 },	-- Lifespring Cavern
 						["coord"] = { 38.4, 61.3, 650 },
 						["qgs"] = { 96520, 96038 },	-- Jale Rivermane, two different versions
+					}),
+
+
+					q(39043, {	-- Bitestone Enclave
+						["sourceQuests"] = {
+							39025,	-- Grasp of the Underking
+							39026,	-- The Drogbar
+						},
+						["coord"] = { 11.4, 24.7, 650 },
+						["qg"] = 97553,	-- Warbrave Oro
 					}),
 
 					
@@ -1245,7 +1269,7 @@ _.Zones =
 					}),
 
 
-					q(39487, { -- Crystal Fury
+					q(39487, {	-- Crystal Fury
 						["sourceQuests"] = {
 							39488,	-- Balance of Elements
 							39489,	-- Invading Spelunkers
@@ -1272,6 +1296,20 @@ _.Zones =
 					}),
 					
 					
+					q(39027, {	-- Dargrul and the Hammer
+						["sourceQuests"] = { 39043 },	-- Bitestone Enclave
+						["coord"] = { 46.6, 44.0, 651 },	-- Bitestone Enclave
+						["qg"] = 97553,	-- Warbrave Oro
+						["g"] = {
+							i(121722),	-- Staunch Warbrave Loop
+							i(130287),	-- Snowblind Bracers
+							i(130288),	-- Drogstitch Wristwraps
+							i(130289),	-- Whitewater Wristguards
+							i(130290),	-- Thunderpeak Bracers
+						},
+					}),
+					
+					
 					q(39274, {	-- Defend the Riverlands (bonus objective)
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
 						["coord"] = { 41.1, 61.6, 650 },
@@ -1284,6 +1322,20 @@ _.Zones =
 					}),
 
 
+					q(39305, {	-- Empty Nest
+						["sourceQuests"] = {
+							40070,	-- Eagle Egg Recovery
+							42425,	-- Going Down, Going Up
+						--	may also require "Tamer Takedown"
+						},
+						["coord"] = { 49.4, 39.2, 650 },
+						["qg"] = 94068,	-- Oren Windstrider
+						["g"] = {
+							i(129277), 		-- Skyhorn Nestling (PET!)
+						},
+					}),
+					
+					
 					q(39614, {	-- Fish Out of Water
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
 						["coord"] = { 41.2, 61.5, 650 },
@@ -1297,6 +1349,21 @@ _.Zones =
 					}),
 					
 
+					q(38909, {	-- Get to High Ground
+						["sourceQuests"] = { 39027 },	-- Dargrul and the Hammer
+						["coord"] = { 38.6, 68.3, 650 },
+						["qg"] = 93805,	-- Spiritwalker Ebonhorn
+					}),
+
+
+					q(42425, {	-- Going Down, Going Up
+						["sourceQuests"] = { 40069 },	-- Fledgling Worm Guts
+					--	didn't require "Eagle Egg Recovery" or "Tamer Takedown." 
+						["coord"] = { 49.4, 39.2, 650 },
+						["qg"] = 94068,	-- Oren Windstrider
+					}),
+
+					
 					q(39025, {	-- Grasp of the Underking
 						["sourceQuests"] = { 42104 },	-- The Underking Comes
 						["coord"] = { 38.6, 68.3, 650 },
@@ -1314,6 +1381,13 @@ _.Zones =
 						["sourceQuests"] = { 39487 },	-- Crystal Fury
 						["coord"] = { 42.6, 33.4, 656 },	-- Lifespring Cavern
 						["qg"] = 96038,	-- Jale Rivermane
+					}),
+
+
+					q(39983, {	-- Huln's War - The Arrival
+						["sourceQuests"] = { 40520 },	-- To See the Past
+						["coord"] = { 73.9, 74.5, 652 },	-- Thunder Totem
+						["qg"] = 98825,	-- Spiritwalker Ebonhorn
 					}),
 
 					
@@ -1381,6 +1455,13 @@ _.Zones =
 						["qg"] = 96083,	-- Rordan Waterwise
 					}),
 
+
+					q(42596, {	-- Mountainstrider Round-Up
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 53.5, 45.7, 750 },	-- Thunder Totem
+						["qg"] = 97854,	-- Liza Galestride
+					}),
+
 					
 					q(40045, {	-- Nature vs. Nurture
 						["coord"] = { 42.7, 10.8, 650 },
@@ -1399,6 +1480,20 @@ _.Zones =
 						},
 					}),
 					
+					
+					q(39133, {	-- No Time to Talk
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 49.0, 55.2, 650 },
+						["qg"] = 94561,	-- Warbrave Nava
+					}),
+
+
+					q(39318, {	-- Nursing the Wounds
+						["sourceQuests"] = { 38913 },	-- The Skyhorn Tribe
+						["coord"] = { 52.4, 44.7, 650 },
+						["qg"] = 93841,	-- Lasan Skyhorn
+					}),
+
 					
 					q(39491, {	-- Ormgul the Pestilent
 						["sourceQuests"] = { 38911 },	-- The Rivermane Tribe
@@ -1422,6 +1517,13 @@ _.Zones =
 						["qg"] = 95191,	-- Farmer Maya
 					}),
 					
+
+					q(38910, {	-- Rocs vs Eagles
+						["sourceQuests"] = { 39318 },	-- Nursing the Wounds
+						["coord"] = { 52.4, 44.7, 650 },
+						["qg"] = 93841,	-- Lasan Skyhorn
+					}),
+
 					
 					q(39764, {	-- Shiny, But Deadly
 						["coord"] = { 51.8, 82.0, 654 },	-- Mucksnout Den
@@ -1465,6 +1567,13 @@ _.Zones =
 					}),
 					
 
+					q(38912, {	-- The Bloodtotem Tribe
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+						["qg"] = 93826,	-- Mayla Highmountain
+					}),
+					
+					
 					q(39026, {	-- The Drogbar
 						["sourceQuests"] = { 42104 },	-- The Underking Comes
 						["coord"] = { 38.6, 68.3, 650 },
@@ -1495,16 +1604,93 @@ _.Zones =
 					}),
 
 
+					q(39387, {	-- The Skies of Highmountain
+						["sourceQuests"] = { 39322 },	-- The Witchqueen
+						["coord"] = { 45.7, 39.1, 650 },
+						["qg"] = 95410,	-- Lasan Skyhorn
+					}),
+
+					
+					q(38913, {	-- The Skyhorn Tribe
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+						["qg"] = 93826,	-- Mayla Highmountain
+					}),
+
+					
 					q(39773, {	-- The Soulkeeper's Fate
 						["coord"] = { 51.8, 82.0, 654 },	-- Mucksnout Den
 						["qg"] = 97094,	-- Apprentice Rosalyn
 					}),
 
 
+					q(40167, {	-- The Story of Huln
+						["sourceQuests"] = { 40515 },	-- A Walk With the Spirits
+						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+						["qg"] = 98825,	-- Spiritwalker Ebonhorn
+					}),
+
+					
+					q(39321, {	-- The Three
+						["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
+						["coord"] = { 52.3, 36.5, 650 },
+						["qg"] = 95410,	-- Lasan Skyhorn
+						["g"] = {
+							i(121665),	-- Snowblind Cowl
+							i(121667),	-- Drogstitch Hood
+							i(121666),	-- Whitewater Helmet
+							i(121664),	-- Thunderpeak Faceguard
+							i(130303),	-- Snowblind Footwraps
+							i(130304),	-- Drogstitch Boots
+							i(130305),	-- Whitewater Boots
+							i(130306),	-- Thunderpeak Greatboots
+						},
+					}),
+					
+					
 					q(42104, {	-- The Underking Comes
 						["sourceQuests"] = { 39498 },	-- High Water
 						["coord"] = { 40.3, 71.6, 650 },
 						["qg"] = 97662,	-- Jale Rivermane
+					}),
+
+
+					q(39322, { -- The Witchqueen
+						["sourceQuests"] = {
+							39429,	-- Assaulting the Haglands
+							39321,	-- The Three
+						},
+						["coord"] = { 49.2, 36.5, 650 },
+						["qg"] = 95410,	-- Lasan Skyhorn
+						["g"] = {
+							i(133093),	-- Crawliac Charming Draught
+							i(133104),	-- Errant Mana
+							i(133094),	-- Heart of the Witchqueen
+							i(133105),	-- Skyhorn Survivalist's Blood
+							i(133095),	-- Crawliac Death Scream
+							i(133106),	-- Fleshrender Roc Essence
+							i(133096),	-- Scorched Skyhorn Shawl
+							i(133107),	-- Cinderwitch Flame-Song
+							i(133097),	-- Haglands Ice Shard
+							i(133108),	-- Frosted Great Eagle Egg
+							i(133092),	-- Honor of the Skyhorn
+							i(133103),	-- Lasan's Hope
+							i(133098),	-- Rockcrawler Jaw
+							i(133109),	-- Lasan's Determination
+							i(133099),	-- Darkfeather Seedling
+							i(133110),	-- Hex-Cleansed Charm
+							i(133100),	-- Crawliac Hexrune
+							i(133111),	-- Vengeful Skyhorn Spirit
+							i(133102),	-- Julan's Suppressing Wind
+							i(133113),	-- Skyhorn Eagle Feather
+						},
+					}),
+					
+					
+					q(40520, {	-- To See the Past
+						["sourceQuests"] = { 40167 },	-- The Story of Huln
+						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+						["qg"] = 98825,	-- Spiritwalker Ebonhorn
 					}),
 
 					
@@ -1526,6 +1712,22 @@ _.Zones =
 					}),
 					
 					
+					q(39134, {	-- Wrathshard
+						["sourceQuests"] = { 38909 },	-- Get to High Ground
+						["coord"] = { 49.0, 55.2, 650 },
+						["qg"] = 94561,	-- Warbrave Nava
+						["g"] = {
+							i(121678),	-- Snowblind Cord
+							i(121680),	-- Drogstitch Belt
+							i(121679),	-- Whitewater Cinch
+							i(121677),	-- Thunderpeak Girdle
+							i(130299),	-- Snowblind Leggings
+							i(130300),	-- Drogstitch Breeches
+							i(130301),	-- Whitewater Legwraps
+							i(130302),	-- Thunderpeak Legplates
+						},
+					}),
+					
 					
 					
 					
@@ -1543,33 +1745,6 @@ _.Zones =
 
 				--]]
 					
-					q(39043),	-- Bitestone Enclave
-					q(39027, {  	-- Dargrul and the Hammer
-						i(130287),	-- 
-						i(130288),	-- 
-						i(130289),	-- 
-						i(130290),	-- 
-					}),
-					q(38909),	-- Get to High Ground
-					q(38913),	-- The Skyhorn Tribe
-					q(39318),	-- Nursing the Wounds
-					q(38910),	-- Rocs vs Eagles
-					q(39321, {	-- The Three
-						i(121665),	-- 
-						i(121667),	-- 
-						i(121666),	-- 
-						i(121664),	-- 
-						i(130303),	-- 
-						i(130304),	-- 
-						i(130305),	-- 
-						i(130306),	-- 
-					}),
-					q(39429),	-- Assaulting the Haglands
-					q(39322, { -- The Witchqueen
-						i(133106),	-- Fleshrender Roc Essence
-					}),
-					q(39387),	-- The Skies of Highmountain
-					q(38912),	-- The Bloodtotem Tribe
 					q(39372),	-- Witch of the Wood
 					q(39373),	-- Hags of a Feather
 					q(39873),	-- I Have a Bad Feeling About This
@@ -1594,10 +1769,6 @@ _.Zones =
 					}),
 					q(40229),	-- Step into the Dark
 					q(39456),	-- Unexpected Allies
-					q(40515),	-- A Walk With the Spirits
-					q(40167),	-- The Story of Huln
-					q(40520),	-- To See the Past
-					q(39983),	-- Huln's War - The Arrival
 					q(40112),	-- Huln's War - Malorne's Favored
 					q(39988),	-- Huln's War - Stormrage
 					q(39990),	-- Huln's War - Reinforcements
@@ -1699,10 +1870,6 @@ _.Zones =
 						i(130283),
 						i(130275),	-- Chain of Bossing Around
 					}),
-					q(42425),	-- Going Down, Going Up
-					q(39305, {	-- Empty Nest
-						i(129277), 		-- Skyhorn Nestling
-					}),
 					q(39440),	-- You Lift, Brul?
 					q(39437),	-- Deep in the Cavern
 					q(39438,  {  	-- Guhruhlruhlruh
@@ -1716,17 +1883,6 @@ _.Zones =
 						i(130316),
 					}),
 					q(39439),	-- Stonedark Relics
-					q(39133),	-- No Time to Talk
-					q(39134, {	-- Wrathshard
-						i(121678),
-						i(121680),
-						i(121679),
-						i(121677),
-						i(130299),
-						i(130300),
-						i(130301),
-						i(130302),
-					}),
 					q(44055,  {  	-- They Have a Pitlord
 						i(140726),
 						i(140728),
@@ -1875,7 +2031,6 @@ _.Zones =
 					q(42657),	-- Meeting in Moonclaw Vale
 					q(40242),	-- Mellok, Son of Torok
 					q(42400),	-- Missing Mages
-					q(42596),	-- Mountainstrider Round-Up
 					q(43554),	-- Neltharion's Lair
 					q(44265),	-- Neltharion's Lair
 					q(44264),	-- Neltharion's Lair
@@ -2166,6 +2321,7 @@ _.Zones =
 				n(-16,  {	-- Rares
 					v(40413,  {	-- "Sure Shot" Arnie (Amateur Hunters)
 						["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
+						["coord"] = { 43.1, 47.9, 650 },
 						["qgs"] = {
 							100232,	-- Ryael Dawndrifter <Amateur Hunter>
 							100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
@@ -2176,12 +2332,17 @@ _.Zones =
 								["displayID"] = 65118,
 								["g"] = {
 									i(131781),	-- Plate Hiking Boots
+									{	-- Amateur Hunters (Adventurer of Highmountain)
+										["achievementID"] = 11264,	-- Adventurer of Highmountain
+										["criteriaID"] = 16,	-- Amateur Hunters
+									},
 								},
 							}),
 						},
 					}),
 					v(39784,  {	-- Beastmaster Pao'lek & Arru
 						["description"] = "|cff66ccffSpeak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.|r",
+						["coord"] = { 48.6, 50.0, 650 },
 						["qgs"] = {
 							97215,	-- Beastmaster Pao'lek
 							97220, 	-- Arru <The Terror>
@@ -2189,6 +2350,10 @@ _.Zones =
 						["g"] = {
 							o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
 								i(131756), 	-- Fletcher's Nimble Grips
+								{	-- Beastmaster Pao'lek (Adventurer of Highmountain)
+									["achievementID"] = 11264,	-- Adventurer of Highmountain
+									["criteriaID"] = 10,	-- Beastmaster Pao'lek
+								},
 							}),
 						},
 					}),
@@ -2197,7 +2362,6 @@ _.Zones =
 							i(131761),
 						},
 						["questID"] = 40405,
-
 					}),
 					n(94877,  {	-- Brogrul the Mighty
 						["g"] = {
@@ -2224,7 +2388,6 @@ _.Zones =
 							i(131780),
 						},
 						["questID"] = 40414,
-
 						["description"] = "|cff66ccffClick all candles to summon mob|r"
 					}),
 					n(96072,  {	-- Durguth
@@ -2257,10 +2420,18 @@ _.Zones =
 						},
 					}),
 					n(98024,  {	-- Luggut the Eggeater
-						["g"] = {
-							i(131776),
-						},
 						["questID"] = 40406,
+						["coords"] = {
+							{ 51.4, 37.3, 650 },	-- cave entrance
+							{ 50.8, 34.7, 650 },	-- actual rare
+						},
+						["g"] = {
+							i(131776),	-- Scale Cord of the Eggeater
+							{	-- Luggut the Eggeater (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 19,	-- Luggut the Eggeater
+							},
+						},
 					}),
 					n(96410,  {	-- Majestic Elderhorn
 						["g"] = {
@@ -2324,11 +2495,15 @@ _.Zones =
 						},
 					}),
 					n(95872,  {	-- Skullhat
-						["g"] = {
-							i(131769),
-						},
 						["questID"] = 39465,
-
+						["coord"] = { 50.9, 32.0, 650 },
+						["g"] = {
+							i(131769),	-- The Taskmaster's Wristwraps
+							{	-- Skywhisker Taskmasker (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 7,	-- Skywhisker Taskmasker
+							},
+						},
 					}),
 					n(97653,  {	-- Taurson
 						["g"] = {
@@ -2343,16 +2518,20 @@ _.Zones =
 
 					}),
 					n(97203,  {	-- Tenpak Flametotem
-						["g"] = {
-							i(129175),	-- Pet
-						},
 						["questID"] = 39782,
-
+						["coord"] = { 41.9, 41.5, 650 },
+						["g"] = {
+							i(129175),	-- Crispin (PET!)
+							{	-- The Exiled Shaman (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 9,	-- The Exiled Shaman
+							},
+						},
 					}),
 					n(97116,  {	-- Treasure Chest 244519
 						["g"] = {
 							i(131810, {	-- Derelict Skyhorn Kite
-								i(131811),	-- Toy
+								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
 						},
 						["modelID"] = 73098,
@@ -2361,20 +2540,21 @@ _.Zones =
 					n(72409,  {	-- Treasure Chest 243668
 						["g"] = {
 							i(131927, {	-- Shimmering Roc Feather
-								i(131811),	-- Toy
+								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
 						},
 						["modelID"] = 73098,
 						["questID"] = 39466,
 					}),
 					n(109556, {	-- Treasure Chest 243773
-						["g"] = {
-							i(131926, {	-- Delicate Roc Feather
-								i(131811),	-- Toy
-							}),
-						},
 						["modelID"] = 73098,
 						["questID"] = 39503,
+						["coord"] = { 47.6, 44.0, 650 },
+						["g"] = {
+							i(131926, {	-- Delicate Roc Feather
+								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
+							}),
+						},
 					}),
 --[[
 	--				n(104481, { 	-- Ala'washte	}),
