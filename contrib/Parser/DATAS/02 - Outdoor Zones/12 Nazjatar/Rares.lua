@@ -31,19 +31,19 @@ _.Zones =
 					},
 				}),
 				n(152416, {	-- Allseer Oma'kil
-					-- 56280 and 56603 popped kill
-					["coord"] = { 69.0, 37.4, 1355 },
+					["questID"] = 56280, -- 56603 popped as well
+					["coord"] = { 65.4, 36.5, 1355 },
 					["g"] = {
 						i(167786),	-- Germinating Seed
 					},
 				}),
 				n(152556, {	-- Chasm-Haunter
-					["questID"] = 56270, -- also popped 56613
+					["questID"] = 56270, -- 56613 also popped
 					["coord"] = { 49.2, 88.8, 1355 },
 					["description"] = "Inside a hidden cave beneath the waterfall.",
 				}),
 				n(152413, {	-- Elder Unu
-					-- 56284 and 56599 popped on first kill. One must be first kill, the other for subsequent kills?
+					["questID"] = 56284, -- 56599 also popped
 					["coord"] = { 64.3, 34.7, 1355 },
 				}),
 				n(152555, {	-- Elderspawn Nalaada
@@ -56,6 +56,17 @@ _.Zones =
 				n(153302, {	-- Glacier Mage Zhiela -- ach 13635 crit 4, no killid
 					["coord"] = { 42.4, 68.4, 1355 },
 				}),
+				n(152448, {	-- Iridescent Glimmershell
+					["questID"] = 56286, -- also popped 56597
+					["coord"] = { 45.3, 56.2, 1355 },
+					["g"] = {
+						currency(1721),	-- Prismatic Manapearl
+					},
+				}),
+				n(144644, {	-- Mireclaw
+					["questID"] = 56274, -- also popped 56609
+					["coord"] = { 61.0, 31.7, 1355 },
+				}),
 				n(152465, {	-- Needlespine
 					["coord"] = { 50.2, 19.1, 1355 },
 				}),
@@ -63,8 +74,11 @@ _.Zones =
 					["coord"] = { 44.2, 70.8, 1355 },
 				}),
 				n(152795, {	-- Sandclaw Stoneshell
-					-- 56277, 56606 popped on first kill
-					["coord"] = { 74.5, 44.0, 1355 },
+					["questID"] = 56277, -- 56606 also popped
+					["coords"] = {
+						{ 84.5, 40.7, 1355 },
+						{ 74.5, 44.0, 1355 }, -- first time finding him. Possibly spawns in multiple places
+					},
 					["g"] = {
 						i(169351),	-- Sandclaw Nestseeker
 						i(168081),	-- Brinestone Pickaxe
@@ -87,6 +101,7 @@ _.Zones =
 					["coord"] = { 38.9, 9.4, 1355 },
 				}),
 				n(152359, {	-- Siltstalker the Packmother
+					["questID"] = 56297, -- also popped 56586
 					["coord"] = { 71.6, 54.8, 1355 },
 				}),
 				n(152290, {	-- Soundless

@@ -141,16 +141,16 @@ _.Zones =
 						}),
 						i(169365),	-- Damplight Slug
 						i(169274),	-- Tabard of the Unshackled
-						i(169606),	-- Formula: Accord of Mastery (Rank 3)
+						un(1,i(170076)),	-- Recipe: Unagi Skewer
 						i(169549),	-- Recipe: Contract: Unshackled
+						i(169606),	-- Formula: Accord of Mastery (Rank 3)
 						i(169605),	-- Formula: Accord of Haste (Rank 3)
-						i(169607),	-- Formula: Accord of Versatility (Rank 3)
-						i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
-						i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 						i(169604),	-- Formula: Accord of Critical Strike (Rank 3)
+						i(169607),	-- Formula: Accord of Versatility (Rank 3)
+						--i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
+						i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 						i(169600),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 						i(169603),	-- Recipe: Greater Mystical Cauldron (Rank 3)
-						i(170076),	-- Recipe: Unagi Skewer
 					},
 				}),
 				n(154653, {	-- Crafticus Mindbender
@@ -158,13 +158,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168802, {	-- Nazjatar Battle Commendation
+							i(168850),	-- Time-Lost Battlefield Memento
+							i(168851),	-- Enduring Battlefield Memento
+							i(168852),	-- Stalwart Battlefield Memento
+							i(168853),	-- Glinting Battlefield Memento
 							i(169203),	-- Inkscale Deepseeker
 							i(169357),	-- Chitterspine Devourer
 							i(169275),	-- Alliance War Banner
 							i(169278),	-- Alliance War Standard
-							i(168850),	-- Time-Lost Battlefield Memento
-							i(168851),	-- Enduring Battlefield Memento
-							i(168852),	-- Stalwart Battlefield Memento
 						}),
 						i(137642, {	-- Mark of Honor
 							i(169509),	-- Recipe: Notorious Combatant's Plate Waistguard (Rank 2)
@@ -241,13 +242,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168802, {	-- Nazjatar Battle Commendation
+							i(168850),	-- Time-Lost Battlefield Memento
+							i(168851),	-- Enduring Battlefield Memento
+							i(168852),	-- Stalwart Battlefield Memento
+							i(168853),	-- Glinting Battlefield Memento
 							i(169203),	-- Inkscale Deepseeker
 							i(169357),	-- Chitterspine Devourer
 							i(169276),	-- Horde War Banner
 							i(169277),	-- Horde War Standard
-							i(168850),	-- Time-Lost Battlefield Memento
-							i(168851),	-- Enduring Battlefield Memento
-							i(168852),	-- Stalwart Battlefield Memento
 						}),
 						i(137642, {	-- Mark of Honor
 							i(169509),	-- Recipe: Notorious Combatant's Plate Waistguard (Rank 2)
@@ -438,6 +440,7 @@ _.Zones =
 						currency(1721, {	-- Prismatic Manapearl
 							i(169352),	-- Pearlescent Glimmershell
 							i(167170),	-- Unshackled Waveray
+							i(170204),	-- Symbol of Gral
 						}),
 					},
 				}),

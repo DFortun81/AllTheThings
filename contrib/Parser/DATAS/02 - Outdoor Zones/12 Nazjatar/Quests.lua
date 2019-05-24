@@ -6,6 +6,13 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		["groups"] = {
 			n(-17,  {	-- Quests
+			--[[
+			possible secrets:
+			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
+			"Vim's Round" npc at 64.1, 57.4
+			
+			56521 popped randomly. possibly a progress flag for 55663?
+			]]--
 				{	-- Sunken Ambitions
 					["achievementID"] = 13710,
 					["races"] = ALLIANCE_ONLY,
@@ -90,6 +97,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56354,	-- Ancient Technology
 				},
+				{	-- An Unexpected Friend
+					["questID"] = 56813,
+					["qg"] = 149904,	-- Neri Sharpfin
+					["coord"] = { 50.2, 64.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(169903),	-- Nazjatar Survival Pack
+					},
+				},
+				{	-- Anytime You Need a Friend
+					["questID"] = 56814,
+					["qg"] = 149904,	-- Nari Sharpfin
+					["coord"] = { 50.2, 64.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(169908),	-- Cleverly Concealed Supplies
+					},
+				},
 				{	-- Bounty Board
 					["objectID"] = 326140,
 					["coord"] = { 39.1, 54.1, 1355 },
@@ -136,6 +161,13 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 						},
 					},
+				},
+				{	-- Broken Controller
+					["questID"] = 55663,
+					["qg"] = 152717,	-- Escaped Kelfin
+					["coord"] = { 58.0, 56.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
 				},
 				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
 					["questID"] = 56649,
@@ -364,6 +396,7 @@ _.Zones =
 					["g"] = {
 						{	-- The Laboratory of Mardivas
 							["questID"] = 55121,
+							["isWeekly"] = true,
 							["g"] = {
 								currency(1721),	-- Prismatic Manapearl x5
 							},
@@ -465,6 +498,10 @@ _.Zones =
 						},
 						{	-- Bounty: A Few Hydra
 							["questID"] = 55820,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Murlocs
+							["questID"] = 55819,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: A Few Naga

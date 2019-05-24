@@ -51,7 +51,7 @@ _.Zones =
 					["g"] = {
 						{	-- Arcane Amalgamation
 							["criteriaID"] = 1,
-							["description"] = "Activate Lesser Benthic, Lithic, and Pyroclasmic Arcanocrystals",
+							["description"] = "Activate no crystals.",
 						},
 						{	-- Watery Amalgamation
 							["criteriaID"] = 2,
