@@ -5,8 +5,10 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(252, { 	-- Sethekk Halls
 		["lvl"] = 63,
-		["mapID"] = 258,
-		["maps"] = { 259 },
+		["maps"] = { 
+			258,	-- Veil Sethekk
+			259,	-- Halls of Mourning
+		},
 		["coord"] = { 44.93, 65.61, 108 },	-- Sethekk Halls, Terokkar Forest
 		["groups"] = {
 			n(0, {	-- Zone Drop

@@ -5,8 +5,11 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(254, { 	-- The Arcatraz
 		["lvl"] = 65,
-		["mapID"] = 269,
-		["maps"] = { 270, 271 },
+		["maps"] = { 
+			269,	-- Stasis Block: Trion
+			270,	-- Stasis Block: Maximus
+			271,	-- Containment Core
+		},
 		["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
 		["groups"] = {
 			n(-17, {	-- Quests

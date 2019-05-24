@@ -40,48 +40,56 @@ _.Zones =
 								{ 54.5, 40.2, 109 },
 							},
 						}),
-						i(24162, {  -- Design: Arcane Khorium Band
+						{	-- Design: Arcane Khorium Band
+							["itemID"] = 24162,	-- Design: Arcane Khorium Band
 							["crs"] = {
 								18866,  -- Mageslayer
 							},
-						}),
-						i(22530, {	-- Formula: Enchant Bracer - Greater Dodge
+						},
+						{	-- Formula: Enchant Bracer - Greater Dodge
+							["itemID"] = 22530,	-- Formula: Enchant Bracer - Greater Dodge
 							["crs"] = {
 								23008,	-- Ethereum Jailor
 								22822, 	-- Ethereum Nullifier
 							},
-						}),
-						i(22551, {	-- Formula: Enchant Weapon - Major Intellect
+						},
+						{	-- Formula: Enchant Weapon - Major Intellect
+							["itemID"] = 22551,	-- Formula: Enchant Weapon - Major Intellect
 							["crs"] = {
 								20136,	-- Sunfury Researcher
 							},
-						}),
-						i(21919, {	-- Pattern: Primal Mooncloth Bag
+						},
+						{	-- Pattern: Primal Mooncloth Bag
+							["itemID"] = 21919, -- Pattern: Primal Mooncloth Bag
 							["crs"] = {
 								18872,	-- Disembodied Vindicator
 							},
-						}),
-						i(21911, {	-- Pattern: Spellfire Bag
+						},
+						{	-- Pattern: Spellfire Bag
+							["itemID"] = 21911, -- Pattern: Spellfire Bag
 							["crs"] = {
 								20134,	-- Sunfury Arcanist
 							},
-						}),
-						i(23639, {	-- Plans: Greater Ward of Shielding
+						},
+						{	-- Plans: Greater Ward of Shielding
+							["itemID"] = 23639, -- Plans: Greater Ward of Shielding
 							["crs"] = {
 								18856,	-- Arcane Annihilator
 								18853,	-- Sunfury Bloodwarder
 							},
-						}),
-						i(23610, {	-- Plans: Khorium Boots
+						},
+						{	-- Plans: Khorium Boots
+							["itemID"] = 23610, -- Plans: Khorium Boots
 							["crs"] = {
 								18873,	-- Disembodied Protector
 							},
-						}),
-						i(23808, {	-- Schematic: Khorium Scope
+						},
+						{	-- Schematic: Khorium Scope
+							["itemID"] = 23808, -- Schematic: Khorium Scope
 							["crs"] = {
 								20207,	-- Sunfury Bowman
 							},
-						}),
+						},
 					}),
 				},
 			},
