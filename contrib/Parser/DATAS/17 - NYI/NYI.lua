@@ -1006,6 +1006,11 @@ _.NeverImplemented =
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
+			un(1, i(141907)),	-- Arena Victory Bonus
+			un(1, i(143604)),	-- rating min item level reward
+			un(1, i(144455)),	-- rating min item level reward
+			un(1, i(147397)),	-- rating min item level reward
+			un(1, i(147421)),	-- rating min item level reward
 			un(1, i(109365)),	-- Unknown
 			un(1, i(109410)),	-- Unknown
 			un(1, i(109418)),	-- Unknown

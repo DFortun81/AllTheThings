@@ -38,6 +38,7 @@ _.WorldDrops =
 						["bonusID"] = 1812,
 					}),
 					i(141589),	-- Treia's Handcrafted Shroud
+					i(141590),	-- Cloak of the Martayl Oceanstrider
 				}),
 				n(-323, {	-- Chest
 					i(141570),	-- Cainen's Preeminent Chestguard
