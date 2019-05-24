@@ -994,7 +994,6 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
-			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(33097)),	-- Unknown
 			un(1, i(33193)),	-- Unknown
 			un(1, i(33194)),	-- Unknown
@@ -2380,13 +2379,4 @@ m(465),	-- Le Glas
 m(516),	-- Isle of Thunder (One of last initial scenaraio)
 m(892),	-- Azuremyst Isle (Argus Opening)
 m(893),	-- Azuremyst Isle (Argus Opening)
-
--- These maps are used in the Siege of Lordaeron
-m(998),	-- Undercity
-m(908),	-- Ruins of Lordaeron
--- These maps are used in the Horde invasion of Stormwind as part of the BFA entry scenario
-m(1012),	-- Stormwind City
-m(1013),	-- The Stockade
-
-
 };

@@ -3346,6 +3346,7 @@ _.Zones =
 								i(137276),	-- N'ero, Band of Promises
 								i(151646),	-- Soul of the High Priest
 								i(144258),	-- Velen's Future Sight
+								i(132449),	-- Phyrix's Embrace
 							}),
 							i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
