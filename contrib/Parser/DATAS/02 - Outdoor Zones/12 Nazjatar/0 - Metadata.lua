@@ -8,6 +8,7 @@ _.Zones =
 		["icon"] = "Interface\\Icons\\inv_misc_map02",
 		["maps"] = {
 			1499,	-- 
+			1524,	-- Deepsea Slave Pen
 		},
 		["description"] = "|cff66ccffDESCRIPTION PENDING|r",
 	}),

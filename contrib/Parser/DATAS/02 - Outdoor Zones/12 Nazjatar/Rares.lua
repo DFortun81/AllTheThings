@@ -53,6 +53,10 @@ _.Zones =
 						i(169359),	-- Spawn of Nalaada
 					},
 				}),
+				n(152553, {	-- Garnetscale
+					["questID"] = 56273, -- screwed up and forgot to list the other quest ID for this
+					["coord"] = { 37.3, 40.3, 1355 },
+				}),
 				n(153302, {	-- Glacier Mage Zhiela -- ach 13635 crit 4, no killid
 					["coord"] = { 42.4, 68.4, 1355 },
 				}),
@@ -98,6 +102,7 @@ _.Zones =
 					["coord"] = { 74.0, 31.3, 1355 },
 				}),
 				n(153658, {	-- Shiz'narasz the Consumer
+					["questID"] = 56296, -- also popped 56587
 					["coord"] = { 38.9, 9.4, 1355 },
 				}),
 				n(152359, {	-- Siltstalker the Packmother

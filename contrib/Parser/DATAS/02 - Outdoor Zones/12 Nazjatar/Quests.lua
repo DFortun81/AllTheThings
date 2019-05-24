@@ -39,6 +39,7 @@ _.Zones =
 						},
 						{	-- Secrets in the Sea
 							["criteriaID"] = 2,
+							["sourceQuest"] = 55869,	-- Clearing Out the Cache
 						},
 						{	-- Turning the Tide
 							["criteriaID"] = 3,
@@ -113,6 +114,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(169908),	-- Cleverly Concealed Supplies
+					},
+				},
+				{	-- Azerite Weapons Cache
+					["objectID"] = 55869,
+					["coord"] = { 46.0, 51.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Clearing Out the Cache
+							["questID"] = 55869,
+							["sourceQuest"] = 55868,	-- Let the Residue Lead You
+						},
 					},
 				},
 				{	-- Bounty Board
@@ -219,6 +231,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
+				{	-- Coveted Crystals
+					["questID"] = 55867,
+					["qg"] = 153422,	-- Chief Telemancer Oculeth
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
+				},
 				{	-- Descent
 					["questID"] = 54969,
 					["qg"] = 150101,	-- Lady Jaina Proudmoore
@@ -247,6 +266,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save a Friend
 				},
+				{	-- Deteriorating Knowledge
+					["questID"] = 55863,
+					["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55862,	-- Insight into Our Enemies
+				},
 				{	-- Disruption of Power
 					["questID"] = 56641,
 					["qg"] = 155482,	-- Sentinel (Shadris Feathermoon)
@@ -260,6 +286,13 @@ _.Zones =
 					["coord"] = { 41.9, 80.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
+				},
+				{	-- Down But Not Out
+					["questID"] = 56236,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55869,	-- Clearing Out the Cache
 				},
 				{	-- Down Into Nazjatar (when this quest is offered, the rest of the zone is available)
 					["questID"] = 56235,
@@ -383,12 +416,29 @@ _.Zones =
 						56063,	-- Ritual of Tides
 					},
 				},
+				{	-- Insight into Our Enemies
+					["questID"] = 55862,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56235,	-- Down Into Nazjatar
+				},
 				{	-- Legacy of Nar'anan
 					["questID"] = 56095,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Let the Residue Lead You
+					["questID"] = 55868,
+					["qg"] = 153422,	-- 
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						55867,	-- Coveted Crystals
+						55870,	-- Sea Slug Liquidation
+					},
 				},
 				{	-- Mardivas's Tome of the Elements
 					["objectID"] = 322533,
@@ -614,6 +664,13 @@ _.Zones =
 						},
 					},
 				},
+				{	-- Sating Snapdragons
+					["questID"] = 55967,
+					["qg"] = 153936,	-- Overseer Hajeer
+					["coord"] = { 36.9, 27.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55866,	-- Scouting Undercover
+				},
 				{	-- Save a Friend (unlocks the rest of the zone?)
 					["questID"] = 55500,
 					["qg"] = 152047,	-- Poen Gillbrack
@@ -654,6 +711,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55384,	-- Settling In
 				},
+				{	-- Scouting Undercover
+					["questID"] = 55866,
+					["qg"] = 153492,	-- Fenn
+					["coord"] = { 38.9, 30.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55865,	-- What We Know of the Naga
+				},
 				{	-- Scrying Stones
 					["questID"] = 56211,
 					["qg"] = 153509,	-- Artisan Okata
@@ -679,6 +743,13 @@ _.Zones =
 							["criteriaID"] = 3,
 						},
 					},
+				},
+				{	-- Sea Slug Liquidation
+					["questID"] = 55870,
+					["qg"] = 153422,	-- Chief Telemancer Oculeth
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
 				},
 				{	-- Settling In
 					["questID"] = 55384,
@@ -802,6 +873,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56176,	-- Desperate Need
 				},
+				{	-- The Price is Death
+					["questID"] = 55864,
+					["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55862,	-- Insight into Our Enemies
+				},
 				{	-- The Warbringer
 					["questID"] = 56313,
 					["qg"] = 155071,	-- Shandris Feathermoon
@@ -865,12 +943,57 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56044,	-- Send the Fleet
 				},
+				{	-- Visions of Danger
+					["questID"] = 55778,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55869,	-- Clearing Out the Cache
+				},
+				{	-- We Can't Have Dull Weapons
+					["questID"] = 56047,
+					["qg"] = 153936,	-- Overseer Hajeer
+					["coord"] = { 36.9, 27.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						55967,	-- Sating Snapdragons
+						56046,	-- Working with Purpose
+					},
+				},
+				{	-- Weapon Rack
+					["objectID"] = 327170,
+					["coord"] = { 34.6, 21.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Stealing the Naga's Secrets
+							["questID"] = 56045,
+							["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
+						},
+					},
+				},
+				{	-- What We Know of the Naga
+					["questID"] = 55865,
+					["qg"] = 153492,	-- Fenn
+					["coord"] = { 38.9, 30.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						55863,	-- Deteriorating Knowledge
+						55864,	-- The Price is Death
+					},
+				},
 				{	-- Where the Road Leads
 					["questID"] = 55175,
 					["qg"] = 151000,	-- Blademaster Okani
 					["coord"] = { 49.0, 67.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56644,	-- Up Against It
+				},
+				{	-- Working with Purpose
+					["questID"] = 56046,
+					["qg"] = 153936,	-- Overseer Hajeer
+					["coord"] = { 36.9, 27.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55866,	-- Scouting Undercover
 				},
 			}),
 		},
