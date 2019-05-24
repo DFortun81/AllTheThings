@@ -4,7 +4,7 @@
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
-		n(-490, {	-- Dread Gladiator: Battle for Azeroth Season 1
+		n(-3158, {	-- Player vs. Player (Battle for Azeroth Season 1)
 			["g"] = bubbleDown({["bonusID"] = 5080}, {
 				--Note!! Yes it uses BonusID's rather than ModID.  Will check again later
 				{	-- Dread Gladiator's Barrier
