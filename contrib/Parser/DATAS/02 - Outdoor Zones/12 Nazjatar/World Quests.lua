@@ -52,7 +52,7 @@ _.Zones =
 						["isWQ"] = 120,
 					},
 					{	-- Leylocked Chest
-						["questID"] = 56023, -- 56277 and 56606 popped at the same time
+						["questID"] = 56023,
 						["isWQ"] = 120,
 						["g"] = {
 							{	-- Puzzle Performer (Hard Leylocked Chest)
@@ -111,6 +111,17 @@ _.Zones =
 							{	-- Puzzle Performer (Hard Runelocked Chest: Orange)
 								["achievementID"] = 13764,
 								["criteriaID"] = 7,
+							},
+						},
+					},
+					{	-- Runelocked Chest
+						["questID"] = 56020,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Hard Runelocked Chest: Purple)
+								["achievementID"] = 13764,
+								["criteriaID"] = 6,
 							},
 						},
 					},

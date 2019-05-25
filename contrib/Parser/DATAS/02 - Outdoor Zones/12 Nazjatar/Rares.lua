@@ -85,7 +85,12 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				n(152465, {	-- Needlespine
-					["coord"] = { 50.2, 19.1, 1355 },
+					["allianceQuestID"] = 56608,
+					["hordeQuestID"] = 56275,
+					["coords"] = {
+						{ 57.0, 20.8, 1355 },
+						{ 50.2, 19.1, 1355 },
+					},
 					["isDaily"] = true,
 				}),
 				n(152681, {	-- Prince Typhonus
