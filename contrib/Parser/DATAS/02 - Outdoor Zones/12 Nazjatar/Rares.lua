@@ -48,7 +48,7 @@ _.Zones =
 						i(169361),	-- Daggertooth Frenzy
 					},
 				}),
-				n(152413, {	-- Elder Unu
+				n(152414, {	-- Elder Unu
 					["allianceQuestID"] = 56599,
 					["hordeQuestID"] = 56284,
 					["coord"] = { 64.3, 34.7, 1355 },
