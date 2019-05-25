@@ -628,16 +628,16 @@ _.GearSets =
 							}),
 							n(-9925, {	-- Feral
 								i(117075),	-- Springrain Spear
-								--	i(101030),	-- Springrain Helm
+								i(117073),	-- Springrain Helm
 								i(117051),	-- Springrain Choker
 								i(117050),	-- Springrain Cloak of Rage
-								--	i(101033),	-- Springrain Pauldrons
-								--	i(101027),	-- Springrain Vest
-								--	i(101035),	-- Springrain Cuffs
-								--	i(101029),	-- Springrain Handguards
-								--	i(101034),	-- Springrain Cord
-								--	i(101031),	-- Springrain Legguards
-								--	i(101028),	-- Springrain Footpads
+								i(117076),	-- Springrain Pauldrons
+								i(117070),	-- Springrain Vest
+								i(117078),	-- Springrain Cuffs
+								i(117072),	-- Springrain Handguards
+								i(117077),	-- Springrain Cord
+								i(117074),	-- Springrain Legguards
+								i(117071),	-- Springrain Footpads
 								i(117053),	-- Springrain Ring of Onslaught
 								i(117054),	-- Springrain Band of Onslaught
 								i(117052),	-- Springrain Idol of Rage
@@ -701,16 +701,16 @@ _.GearSets =
 								--	i(101087),	-- Mistdancer Defender Stone
 							}),
 							n(-9933, {	-- Mistweaver
-								--	i(101100),	-- Mistdancer Hood
+								i(117143),	-- Mistdancer Hood
 								i(117147),	-- Mistdancer Necklace
 								i(117144),	-- Mistdancer Cloak of Wisdom
-								--	i(101108),	-- Mistdancer Shoulders
-								--	i(101119),	-- Mistdancer Jerkin
-								--	i(101111),	-- Mistdancer Bindings
-								--	i(101099),	-- Mistdancer Gloves
-								--	i(101110),	-- Mistdancer Waistband
-								--	i(101103),	-- Mistdancer Britches
-								--	i(101098),	-- Mistdancer Boots
+								i(117151),	-- Mistdancer Shoulders
+								i(117162),	-- Mistdancer Jerkin
+								i(117154),	-- Mistdancer Bindings
+								i(117142),	-- Mistdancer Gloves
+								i(117153),	-- Mistdancer Waistband
+								i(117146),	-- Mistdancer Britches
+								i(117141),	-- Mistdancer Boots
 								i(117149),	-- Mistdancer Band of Wisdom
 								i(117148),	-- Mistdancer Ring of Wisdom
 								--	i(101102),	-- Mistdancer Idol of Wisdom
@@ -721,12 +721,12 @@ _.GearSets =
 								i(117157),	-- Mistdancer Choker
 								i(117161),	-- Mistdancer Cloak of Rage
 								--	i(101095),	-- Mistdancer Pauldrons [Hidden Shoulders]
-								--	i(101090),	-- Mistdancer Vest
+								i(117133),	-- Mistdancer Vest
 								--	i(101097),	-- Mistdancer Cuffs
 								--	i(101092),	-- Mistdancer Handguards
 								--	i(101096),	-- Mistdancer Cord
 								--	i(101094),	-- Mistdancer Legguards
-								--	i(101091),	-- Mistdancer Footpads
+								i(117134),	-- Mistdancer Footpads
 								i(117158),	-- Mistdancer Band of Onslaught
 								i(117159),	-- Mistdancer Ring of Onslaught
 								--	i(101113),	-- Mistdancer Idol of Rage
