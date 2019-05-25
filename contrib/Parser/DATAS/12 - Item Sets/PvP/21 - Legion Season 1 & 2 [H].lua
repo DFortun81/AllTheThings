@@ -257,6 +257,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Leather Armor [Rogue - 5/10/19 & 5/22/19]
+								["setID"] = 1068,	-- Vindictive Combatant's Leather Armor
+								["classes"] = {
+									4,	-- Rogue
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Leather Helm
+										["itemID"] = 135989,	-- Vindictive Combatant's Leather Helm
+									},
+									{	-- Vindictive Combatant's Leather Spaulders
+										["itemID"] = 135991,	-- Vindictive Combatant's Leather Spaulders
+									},
+									{	-- Vindictive Combatant's Shadowcape
+										["itemID"] = 136871,	-- Vindictive Combatant's Shadowcape
+									},
+									{	-- Vindictive Combatant's Leather Tunic
+										["itemID"] = 135986,	-- Vindictive Combatant's Leather Tunic
+									},
+									{	-- Vindictive Combatant's Leather Wristguards
+										["itemID"] = 135993,	-- Vindictive Combatant's Leather Wristguards
+									},
+									{	-- Vindictive Combatant's Leather Gloves
+										["itemID"] = 135988,	-- Vindictive Combatant's Leather Gloves
+									},
+									{	-- Vindictive Combatant's Leather Belt
+										["itemID"] = 135992,	-- Vindictive Combatant's Leather Belt
+									},
+									{	-- Vindictive Combatant's Leather Legguards
+										["itemID"] = 135990,	-- Vindictive Combatant's Leather Legguards
+									},
+									{	-- Vindictive Combatant's Leather Slippers
+										["itemID"] = 135987,	-- Vindictive Combatant's Leather Slippers
+									},
+									{	-- Fearless Combatant's Leather Helm
+										["itemID"] = 142958,	-- Fearless Combatant's Leather Helm
+									},
+									{	-- Fearless Combatant's Leather Spaulders
+										["itemID"] = 142960,	-- Fearless Combatant's Leather Spaulders
+									},
+									{	-- Fearless Combatant's Shadowcape
+										["itemID"] = 143296,	-- Fearless Combatant's Shadowcape
+									},
+									{	-- Fearless Combatant's Leather Tunic
+										["itemID"] = 142955,	-- Fearless Combatant's Leather Tunic
+									},
+									{	-- Fearless Combatant's Leather Wristguards
+										["itemID"] = 142962,	-- Fearless Combatant's Leather Wristguards
+									},
+									{	-- Fearless Combatant's Leather Gloves
+										["itemID"] = 142957,	-- Fearless Combatant's Leather Gloves
+									},
+									{	-- Fearless Combatant's Leather Belt
+										["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+									},
+									{	-- Fearless Combatant's Leather Legguards
+										["itemID"] = 142959,	-- Fearless Combatant's Leather Legguards
+									},
+									{	-- Fearless Combatant's Leather Slippers
+										["itemID"] = 142956,	-- Fearless Combatant's Leather Slippers
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
