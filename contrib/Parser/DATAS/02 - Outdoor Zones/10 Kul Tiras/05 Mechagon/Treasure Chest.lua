@@ -9,7 +9,7 @@ _.Zones =
 				n(-212, {	-- Treasure Chest
 					-- these chests may just be random spawns instead of set locations, so the questIDs may not be predetermined either
 					--[[
-					55553, 55549, 55550, 55552, 55547, 55555 (85.1, 63.3)
+					55553, 55549, 55550, 55552, 55547, 55555 (85.1, 63.3), 55554 (48.4, 76.0)
 					]]--
 					o(325659, {	-- Mechanized Chest
 						["questID"] = 55553, -- popped on a completely different set of coords

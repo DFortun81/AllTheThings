@@ -82,7 +82,7 @@ _.Zones =
 						},
 					}),
 					n(152569, {	-- Crazed Trogg
-						--["questID"] = 55161,
+						["questID"] = 55812,
 						["coord"] = { 82.3, 21.0, 1462 },
 						["isDaily"] = true,
 						["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
@@ -387,7 +387,7 @@ _.Zones =
 						},
 					}),
 					n(151625, {	-- The Scrap King
-						--["questID"] = 55364,	-- 55161, 55908 and 55210 also popped
+						["questID"] = 55364,
 						["coord"] = { 72.3, 49.8, 1462 },
 						["isDaily"] = true,
 						["crs"] = {
