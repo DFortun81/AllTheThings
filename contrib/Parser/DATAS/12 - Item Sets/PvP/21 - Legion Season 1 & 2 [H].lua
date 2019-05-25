@@ -381,6 +381,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19 & 5/22/19]
+								["setID"] = 1167,	-- Vindictive Combatant's Felskin Armor
+								["classes"] = {
+									12,	-- Demon Hunter
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Felskin Helm
+										["itemID"] = 136305,	-- Vindictive Combatant's Felskin Helm
+									},
+									{	-- Vindictive Combatant's Felskin Spaulders
+										["itemID"] = 136308,	-- Vindictive Combatant's Felskin Spaulders
+									},
+									{	-- Vindictive Combatant's Demonthread Cloak
+										["itemID"] = 136894,	-- Vindictive Combatant's Demonthread Cloak
+									},
+									{	-- Vindictive Combatant's Felskin Tunic
+										["itemID"] = 136307,	-- Vindictive Combatant's Felskin Tunic
+									},
+									{	-- Vindictive Combatant's Felskin Wristguards
+										["itemID"] = 136310,	-- Vindictive Combatant's Felskin Wristguards
+									},
+									{	-- Vindictive Combatant's Felskin Gloves
+										["itemID"] = 136304,	-- Vindictive Combatant's Felskin Gloves
+									},
+									{	-- Vindictive Combatant's Felskin Belt
+										["itemID"] = 136309,	-- Vindictive Combatant's Felskin Belt
+									},
+									{	-- Vindictive Combatant's Felskin Legguards
+										["itemID"] = 136306,	-- Vindictive Combatant's Felskin Legguards
+									},
+									{	-- Vindictive Combatant's Felskin Boots
+										["itemID"] = 136303,	-- Vindictive Combatant's Felskin Boots
+									},
+									{	-- Fearless Combatant's Felskin Helm
+										["itemID"] = 143264,	-- Fearless Combatant's Felskin Helm
+									},
+									{	-- Fearless Combatant's Felskin Spaulders
+										["itemID"] = 143267,	-- Fearless Combatant's Felskin Spaulders
+									},
+									{	-- Fearless Combatant's Demonthread Cloak
+										["itemID"] = 143319,	-- Fearless Combatant's Demonthread Cloak
+									},
+									{	-- Fearless Combatant's Felskin Tunic
+										["itemID"] = 143266,	-- Fearless Combatant's Felskin Tunic
+									},
+									{	-- Fearless Combatant's Felskin Wristguards
+										["itemID"] = 143269,	-- Fearless Combatant's Felskin Wristguards
+									},
+									{	-- Fearless Combatant's Felskin Gloves
+										["itemID"] = 143263,	-- Fearless Combatant's Felskin Gloves
+									},
+									{	-- Fearless Combatant's Felskin Belt
+										["itemID"] = 143268,	-- Fearless Combatant's Felskin Belt
+									},
+									{	-- Fearless Combatant's Felskin Legguards
+										["itemID"] = 143265,	-- Fearless Combatant's Felskin Legguards
+									},
+									{	-- Fearless Combatant's Felskin Boots
+										["itemID"] = 143262,	-- Fearless Combatant's Felskin Boots
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
