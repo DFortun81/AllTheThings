@@ -22,7 +22,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["repeatable"] = true,
 					["qg"] = 54674,	-- T'shu
-					},
 				},
 				{	-- Rescuing the Expedition
 					["questID"] = 29570,	-- Rescuing the Expedition
