@@ -87,7 +87,7 @@ _.Zones =
 							{	-- Cold-Iron Scepter
 								["itemID"] = 25313,	-- Cold-Iron Scepter
 							},
-							{	-- Combustion Dagger
+							{	-- Combustion Dagger**
 								["itemID"] = 25298,	-- Combustion Dagger
 							},
 							{	-- Darkcrest Belt
@@ -96,16 +96,16 @@ _.Zones =
 							{	-- Darkcrest Bracers
 								["itemID"] = 24941,	-- Darkcrest Bracers
 							},
-							{	-- Darkcrest Breastplate
+							{	-- Darkcrest Breastplate**
 								["itemID"] = 24936,	-- Darkcrest Breastplate
 							},
-							{	-- Darkcrest Gauntlets
+							{	-- Darkcrest Gauntlets**
 								["itemID"] = 24937,	-- Darkcrest Gauntlets
 							},
 							{	-- Darkcrest Helm
 								["itemID"] = 24938,	-- Darkcrest Helm
 							},
-							{	-- Darkcrest Legguards
+							{	-- Darkcrest Legguards**
 								["itemID"] = 24939,	-- Darkcrest Legguards
 							},
 							{	-- Darkcrest Pauldrons
@@ -117,7 +117,7 @@ _.Zones =
 							{	-- Dementia Armguards
 								["itemID"] = 24732,	-- Dementia Armguards
 							},
-							{	-- Dementia Boots
+							{	-- Dementia Boots**
 								["itemID"] = 24726,	-- Dementia Boots
 							},
 							{	-- Dementia Cord
@@ -132,7 +132,7 @@ _.Zones =
 							{	-- Dementia Shoulderguards
 								["itemID"] = 24731,	-- Dementia Shoulderguards
 							},
-							{	-- Dementia Trousers
+							{	-- Dementia Trousers**
 								["itemID"] = 24730,	-- Dementia Trousers
 							},
 							{	-- Dementia Vest
@@ -150,7 +150,7 @@ _.Zones =
 							{	-- Dreghood Chestpiece
 								["itemID"] = 24719,	-- Dreghood Chestpiece
 							},
-							{	-- Dreghood Cowl
+							{	-- Dreghood Cowl**
 								["itemID"] = 24721,	-- Dreghood Cowl
 							},
 							{	-- Dreghood Gloves
@@ -174,7 +174,7 @@ _.Zones =
 							{	-- Frenzied Staff
 								["itemID"] = 25327,	-- Frenzied Staff
 							},
-							{	-- Glorious Scepter
+							{	-- Glorious Scepter**
 								["itemID"] = 25312,	-- Glorious Scepter
 							},
 							{	-- Gronn-Bone Club
@@ -228,7 +228,7 @@ _.Zones =
 							{	-- Khan'aish Helmet
 								["itemID"] = 24962,	-- Khan'aish Helmet
 							},
-							{	-- Khan'aish Gloves
+							{	-- Khan'aish Gloves**
 								["itemID"] = 24961,	-- Khan'aish Gloves
 							},
 							{	-- Khan'aish Epaulets
@@ -249,10 +249,10 @@ _.Zones =
 							{	-- Laughing Skull Tunic
 								["itemID"] = 24607,	-- Laughing Skull Tunic
 							},
-							{	-- Laughing Skull Pants
+							{	-- Laughing Skull Pants**
 								["itemID"] = 24610,	-- Laughing Skull Pants
 							},
-							{	-- Laughing Skull Gloves
+							{	-- Laughing Skull Gloves**
 								["itemID"] = 24608,	-- Laughing Skull Gloves
 							},
 							{	-- Laughing Skull Bracelets
@@ -273,7 +273,7 @@ _.Zones =
 							{	-- Netherstalker Armor
 								["itemID"] = 24824,	-- Netherstalker Armor
 							},
-							{	-- Netherstalker Mantle
+							{	-- Netherstalker Mantle**
 								["itemID"] = 24828,	-- Netherstalker Mantle
 							},
 							{	-- Netherstalker Legguards
@@ -291,25 +291,25 @@ _.Zones =
 							{	-- Netherstalker Belt
 								["itemID"] = 24822,	-- Netherstalker Belt
 							},
-							{	-- Netherstalker Bracer
+							{	-- Netherstalker Bracer**
 								["itemID"] = 24829,	-- Netherstalker Bracer
 							},
-							{	-- Nexus-Strider Breastplate
+							{	-- Nexus-Strider Breastplate**
 								["itemID"] = 24832,	-- Nexus-Strider Breastplate
 							},
-							{	-- Nexus-Strider Greaves
+							{	-- Nexus-Strider Greaves**
 								["itemID"] = 24831,	-- Nexus-Strider Greaves
 							},
 							{	-- Nexus-Strider Gloves
 								["itemID"] = 24833,	-- Nexus-Strider Gloves
 							},
-							{	-- Nexus-Strider Mantle
+							{	-- Nexus-Strider Mantle**
 								["itemID"] = 24836,	-- Nexus-Strider Mantle
 							},
 							{	-- Nexus-Strider Helmet
 								["itemID"] = 24834,	-- Nexus-Strider Helmet
 							},
-							{	-- Nexus-Strider Bracer
+							{	-- Nexus-Strider Bracer**
 								["itemID"] = 24837,	-- Nexus-Strider Bracer
 							},
 							{	-- Nexus-Strider Belt

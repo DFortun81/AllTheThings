@@ -826,7 +826,7 @@ _.Craftables =
 		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				{	-- Arcane Tarot
-					["spellID"] = 59487,	-- Arcane Tarot
+					["itemID"] = 44161,	-- Arcane Tarot
 					["g"] = {
 						{	-- Mages Deck
 							["itemID"] = 44148,	-- Mages Deck
@@ -839,10 +839,30 @@ _.Craftables =
 								},
 							},
 						},
+						{	-- Ace of Mages
+							["itemID"] = 44165,									-- Ace of Mages
+							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+						},
+						{	-- Two of Mages
+							["itemID"] = 44144,									-- Two of Mages
+							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+						},
+						{	-- Three of Mages
+							["itemID"] = 44145,									-- Three of Mages
+							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+						},
+						{	-- Four of Mages
+							["itemID"] = 44146,									-- Four of Mages
+							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+						},
+						{	-- Five of Mages
+							["itemID"] = 44147,									-- Five of Mages
+							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+						},
 					},
 				},
 				{	-- Darkmoon Card
-					["spellID"] = 59502,	-- Darkmoon Card
+					["itemID"] = 44316,	-- Darkmoon Card
 					["g"] = {
 						{	-- Beasts Deck
 							["itemID"] = 19228,	-- Beasts Deck
@@ -876,32 +896,212 @@ _.Craftables =
 								},
 							},
 						},
+						{	-- Ace of Beasts
+							["itemID"] = 19227,									-- Ace of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Two of Beasts
+							["itemID"] = 19230,									-- Two of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Three of Beasts
+							["itemID"] = 19231,									-- Three of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Four of Beasts
+							["itemID"] = 19232,									-- Four of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Five of Beasts
+							["itemID"] = 19233,									-- Five of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Six of Beasts
+							["itemID"] = 19234,									-- Six of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Seven of Beasts
+							["itemID"] = 19235,									-- Seven of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Eight of Beasts
+							["itemID"] = 19236,									-- Eight of Beasts
+							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+						},
+						{	-- Ace of Elementals
+							["itemID"] = 19268,									-- Ace of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Two of Elementals
+							["itemID"] = 19269,									-- Two of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Three of Elementals
+							["itemID"] = 19270,									-- Three of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Four of Elementals
+							["itemID"] = 19271,									-- Four of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Five of Elementals
+							["itemID"] = 19272,									-- Five of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Six of Elementals
+							["itemID"] = 19273,									-- Six of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Seven of Elementals
+							["itemID"] = 19274,									-- Seven of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Eight of Elementals
+							["itemID"] = 19275,									-- Eight of Elementals
+							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+						},
+						{	-- Ace of Portals
+							["itemID"] = 19276,									-- Ace of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Two of Portals
+							["itemID"] = 19278,									-- Two of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Three of Portals
+							["itemID"] = 19279,									-- Three of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Four of Portals
+							["itemID"] = 19280,									-- Four of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Five of Portals
+							["itemID"] = 19281,									-- Five of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Six of Portals
+							["itemID"] = 19282,									-- Six of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Seven of Portals
+							["itemID"] = 19283,									-- Seven of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Eight of Portals
+							["itemID"] = 19284,									-- Eight of Portals
+							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+						},
+						{	-- Ace of Warlords
+							["itemID"] = 19258,									-- Ace of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Two of Warlords
+							["itemID"] = 19259,									-- Two of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Three of Warlords
+							["itemID"] = 19260,									-- Three of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Four of Warlords
+							["itemID"] = 19261,									-- Four of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Five of Warlords
+							["itemID"] = 19262,									-- Five of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Six of Warlords
+							["itemID"] = 19263,									-- Six of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Seven of Warlords
+							["itemID"] = 19264,									-- Seven of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
+						{	-- Eight of Warlords
+							["itemID"] = 19265,									-- Eight of Warlords
+							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+						},
 					},
 				},
 				{	-- Mysterious Tarot
-					["spellID"] = 48247,	-- Mysterious Tarot
+					--["spellID"] = 48247,	-- Mysterious Tarot
+					["itemID"] = 37168,	-- Mysterious Tarot
 					["g"] = {
 						{	-- Rogues Deck
 							["itemID"] = 37163,	-- Rogues Deck
 							["g"] = {
 								{	-- Darkmoon Breastplate
-									["itemID"] = 39507,	-- Darkmoon Breastplate
+									["itemID"] = 39507,		-- Darkmoon Breastplate
 								},
 								{	-- Darkmoon Chainmail
 									["itemID"] = 131276,	-- Darkmoon Chainmail
 								},
 								{	-- Darkmoon Robe
-									["itemID"] = 38318,	-- Darkmoon Robe
+									["itemID"] = 38318,		-- Darkmoon Robe
 								},
 								{	-- Darkmoon Vest
-									["itemID"] = 39509,	-- Darkmoon Vest
+									["itemID"] = 39509,		-- Darkmoon Vest
 								},
 							},
+						},
+						{	-- Ace of Rogues
+							["itemID"] = 37140,									-- Ace of Rogues
+							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+						},
+						{	-- Two of Rogues
+							["itemID"] = 37143,									-- Two of Rogues
+							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+						},
+						{	-- Three of Rogues
+							["itemID"] = 37156,									-- Three of Rogues
+							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+						},
+					},
+				},
+				{	-- Shadowy Tarot
+					["itemID"] = 44163,	-- Shadowy Tarot
+					["g"] = {
+						{	-- Demons Deck
+							["itemID"] = 44158,	-- Demons Deck
+							["g"] = {
+								{	-- Darkmoon Dirk
+									["itemID"] = 44217,	-- Darkmoon Dirk
+								},
+								{	-- Darkmoon Executioner
+									["itemID"] = 44218,	-- Darkmoon Executioner
+								},
+								{	-- Darkmoon Magestaff
+									["itemID"] = 44219	-- Darkmoon Magestaff
+								},
+							},
+						},
+						{	-- Ace of Demons
+							["itemID"] = 44143,									-- Ace of Demons
+							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+						},
+						{	-- Two of Demons
+							["itemID"] = 44154,									-- Two of Demons
+							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+						},
+						{	-- Three of Demons
+							["itemID"] = 44155,									-- Three of Demons
+							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+						},
+						{	-- Four of Demons
+							["itemID"] = 44156,									-- Four of Demons
+							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+						},
+						{	-- Five of Demons
+							["itemID"] = 44157,									-- Five of Demons
+							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
 						},
 					},
 				},
 				{	-- Strange Tarot
-					["spellID"] = 59480,	-- Strange Tarot
+					["itemID"] = 44142,	-- Strange Tarot
 					["g"] = {
 						{	-- Swords Deck
 							["itemID"] = 37164,	-- Swords Deck
@@ -920,24 +1120,21 @@ _.Craftables =
 								},
 							},
 						},
-					},
-				},
-				{	-- Shadowy Tarot
-					["spellID"] = 59491,	-- Shadowy Tarot
-					["g"] = {
-						{	-- Demons Deck
-							["itemID"] = 44158,	-- Demons Deck
-							["g"] = {
-								{	-- Darkmoon Dirk
-									["itemID"] = 44217,	-- Darkmoon Dirk
-								},
-								{	-- Darkmoon Executioner
-									["itemID"] = 44218,	-- Darkmoon Executioner
-								},
-								{	-- Darkmoon Magestaff
-									["itemID"] = 44219	-- Darkmoon Magestaff
-								},
-							},
+						{	-- Ace of Swords
+							["itemID"] = 37145,									-- Ace of Swords
+							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+						},
+						{	-- Two of Swords
+							["itemID"] = 37147,									-- Two of Swords
+							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+						},
+						{	-- Three of Swords
+							["itemID"] = 37159,									-- Three of Swords
+							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+						},
+						{	-- Four of Swords
+							["itemID"] = 37160,									-- Four of Swords
+							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
 						},
 					},
 				},
