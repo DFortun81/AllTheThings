@@ -584,6 +584,20 @@ _.Zones =
 									i(158432),	-- Zanchuli Trousers
 								},
 							}),
+							{	-- A Loa Without a Temple
+								["questID"] = 55252,
+								["qg"] = 121706,	-- Beastlord L'kala
+								["coord"] = { 66.8, 42.5, 862 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 55254,	-- An Unending Sleep
+							},
+							{	-- A Show of Faith
+								["questID"] = 55253,
+								["qg"] = 151257,	-- Torcali
+								["coord"] = { 68.3, 29.6, 862 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 55252,	-- A Loa Without a Temple
+							},
 							q(49289, {	-- A Special Stone
 								["qg"] = 128925,	-- Deyon
 								["g"] = {
@@ -595,6 +609,12 @@ _.Zones =
 									i(157539),	-- Scroll of Storm Control
 								},
 							}),
+							{	-- An Unending Sleep
+								["questID"] = 55254,
+								["qg"] = 151283,	-- Direhorn Hatchling
+								["coord"] = { 68.1, 41.7, 862 },
+								["races"] = HORDE_ONLY,
+							},
 							qh(51516, {	-- Atal'Dazr: Ashes of a Warchief
 								["qg"] = 138138,	-- Princess Telanji
 								["coord"] = { 43.7, 39.5 },
@@ -678,6 +698,19 @@ _.Zones =
 									i(155309),	-- Lightning Caller's Band
 								},
 							}),
+							{	-- Sleep, Eat, Repeat
+								["questID"] = 55258, -- also triggered 55259. I suspect 55259 is a daily questID
+								["qg"] = 151286,	-- Child of Torcali
+								["coord"] = { 68.1, 41.7, 862 },
+								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 55253,	-- A Show of Faith
+								["g"] = {
+									{	-- How To Train Your Direhorn (Sleep, Eat, Repeat)
+										["achievementID"] = 13542,
+										["criteriaID"] = 3,
+									},
+								},
+							},
 							{	-- The Dark Lady Calls
 								["questID"] = 54097,
 								["qg"] = 146013,	-- Dark Ranger Alina
