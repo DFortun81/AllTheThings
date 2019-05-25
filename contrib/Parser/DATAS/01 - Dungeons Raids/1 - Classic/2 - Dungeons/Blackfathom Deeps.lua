@@ -206,8 +206,12 @@ _.Instances = { tier(1, {	-- Classic
 						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
 						74720,	-- Blindlight Murloc
+						74719,	-- Blindlight Rotmouth
 						74353,	-- Twilight Aquamancer
 						75058,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
 						74382,	-- Twilight Shadowmage
 						74980,	-- Twilight Storm Mender
 						74380,	-- Twilight Storm Mender

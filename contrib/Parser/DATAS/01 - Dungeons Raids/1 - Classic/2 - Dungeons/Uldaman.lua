@@ -62,11 +62,16 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9392, {	-- Annealed Blade
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						4849,	-- Shadowforge Archaeologist
 						4848,	-- Shadowforge Darkcaster
+						4847,	-- Shadowforge Relic Hunter
 						4860,	-- Stone Steward
+						7175,	-- Stonevault Ambusher
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
-						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},
 				}),
@@ -90,11 +95,18 @@ _.Instances = { tier(1, {	-- Classic
 				i(9465),	-- Digmaster 5000
 				i(9381, {	-- Earthen Rod
 					["crs"] = {
-						4844,	-- Shadowforge Surveyor
+						7011,	-- Earthen Rocksmasher
+						7012,	-- Earthen Sculptor
+						4863,	-- Jadespine Basilisk
+						4847,	-- Shadowforge Relic Hunter
+						4861,	-- Shrike Bat
+						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9397, {	-- Energy Cloak
@@ -133,8 +145,14 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9424, {	-- Ginn-Su Sword
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						7030,	-- Shadowforge Geologist
 						4861,	-- Shrike Bat
-						4855,	-- Stonevault Brawler
+						7175,	-- Stonevault Ambusher
+						7321,	-- Stonevault Flameweaver
+						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
 					},
 				}),
 				i(9396, {	-- Legguards of the Vault

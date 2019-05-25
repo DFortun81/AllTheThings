@@ -171,13 +171,25 @@ _.Instances = { tier(1, {	-- Classic
 				i(12535, {	-- Doomforged Straightedge
 					["crs"] = {
 						8903,	-- Anvilrage Captain
+						8892,	-- Anvilrage Footman
+						8891,	-- Anvilrage Guardsman
+						8898,	-- Anvilrage Marshal
 						8894,	-- Anvilrage Medic
+						8895,	-- Anvilrage Officer
+						8889,	-- Anvilrage Overseer
 						9541,	-- Blackbreath Crony
 						8910,	-- Blazing Fireguard
+						8921,	-- Bloodhound
 						8899,	-- Doomforge Dragoon
+						8909,	-- Fireguard
 						8911,	-- Fireguard Destroyer
 						8908,	-- Molten War Golem
+						8906,	-- Ragereaver Golem
+						8904,	-- Shadowforge Senator
 						8914,	-- Twilight Bodyguard
+						8915,	-- Twilight's Hammer Ambassador
+						8912,	-- Twilight's Hammer Torturer
+						8905,	-- Warbringer Construct
 						8907,	-- Wrath Hammer Construct
 					},
 				}),
@@ -321,9 +333,13 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(12532, {	-- Spire of the Stoneshaper
 					["crs"] = {
+						8892,	-- Anvilrage Footman
+						8891,	-- Anvilrage Guardsman
+						8899,	-- Doomforge Dragoon
 						8911,	-- Fireguard Destroyer
 						8908,	-- Molten War Golem
 						8906,	-- Ragereaver Golem
+						8920,	-- Weapon Technician
 					},
 				}),
 				i(14552, {	-- Stockade Pauldrons

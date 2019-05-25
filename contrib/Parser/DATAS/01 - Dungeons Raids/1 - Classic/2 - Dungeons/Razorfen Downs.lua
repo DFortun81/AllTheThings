@@ -119,7 +119,12 @@ _.Instances = { tier(1, {	-- Classic
 						74584,	-- Plague-Rotted Webslinger
 					},
 				}),
-				i(10572),	-- Freezing Shard
+				i(10572, {	-- Freezing Shard
+					["crs"] = {
+						74411,	-- Death's Head Necrolyte
+						74950,	-- Gelatanized Plague Gunk
+					},
+				}),
 				i(10570, {	-- Manslayer
 					["crs"] = {
 						74412,	-- Aarux

@@ -60,9 +60,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(1975, {	-- Pysan's Old Greatsword
 					["crs"] = {
-						74545,	-- Razorfen Geomagus
 						74551,	-- Razorfen Beast Stalker
+						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(1976, {	-- Slaghammer
@@ -82,18 +84,25 @@ _.Instances = { tier(1, {	-- Classic
 				i(2549, {	-- Staff of the Shade
 					["crs"] = {
 						74553,	-- Blood-Branded Razorfen
+						74534,	-- Crystalline Behemoth
+						75384,	-- Kraulshaped Monstrosity
 						74551,	-- Razorfen Beast Stalker
 						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
+						74652,	-- Razorfen Thornbolt
 						75110,	-- Razorfen Torchbearer
 					},
 				}),
 				i(1727, {	-- Sword of Decay
 					["crs"] = {
+						74620,	-- Battle Boar
 						74551,	-- Razorfen Beast Stalker
 						74545,	-- Razorfen Geomagus
 						74555,	-- Razorfen Hidecrusher
 						74552,	-- Razorfen Huntmaster
 						74550,	-- Razorfen Kraulshaper
+						74554,	-- Razorfen Scarblade
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(776, { 	-- Vendetta

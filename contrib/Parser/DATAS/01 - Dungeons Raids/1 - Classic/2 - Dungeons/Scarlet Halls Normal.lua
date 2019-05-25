@@ -17,10 +17,26 @@ _.Instances = { tier(1, {	-- Classic
 				n(0, { 		-- Zone Drop
 					i(7786, {    -- Headsplitter
 						["crs"] = {
-							59241,    -- Scarlet Treasurer
-							58876,    -- Starving Hound
-							59293,    -- Scarlet Cannoneer
-							59372,    -- Scarlet Scholar
+							59293,	-- Scarlet Cannoneer
+							59372,	-- Scarlet Scholar
+							59241,	-- Scarlet Treasurer
+							58876,	-- Starving Hound
+						},
+					}),
+					i(7787, {	-- Resplendent Guardian
+						["crs"] = {
+							59175,	-- Master Archer
+							59293,	-- Scarlet Cannoneer
+							58685,	-- Scarlet Evangelist
+						},
+					}),
+					i(8226, {	-- The Butcher
+						["crs"] = {
+							59175,	-- Master Archer
+							58685,	-- Scarlet Evangelist
+							58684,	-- Scarlet Scourge Hewer
+							58876,	-- Starving Hound
+							58898,	-- Vigilant Watchman
 						},
 					}),
 				}),

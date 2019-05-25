@@ -79,6 +79,14 @@ _.Instances = { tier(1, {	-- Classic
 							60033,	-- Frenzied Spirit
 						},
 					}),
+					i(7787, {	-- Resplendent Guardian
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+						},
+					}),
 					un(7, i(7758)),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
@@ -93,9 +101,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(7761),	-- Steelclaw Reaver
 					i(5819),	-- Sunblaze Coif
 					i(1992),	-- Swampchill Fetish
+					i(8225),	-- Tainted Pierce
 					i(8226, {	-- The Butcher
 						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							58605,	-- Scarlet Judicator
 							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
 						},
 					}),
 					un(7, i(7760)),	-- Warchief Kilt

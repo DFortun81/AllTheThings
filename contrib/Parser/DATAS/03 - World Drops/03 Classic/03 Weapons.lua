@@ -464,352 +464,356 @@ _.WorldDrops =
 				}),			
 				n(-332, {	-- Shield
 					i(1203),	-- Aegis of Stormwind
+					i(8320),	-- Alabaster Shield
+					i(15604),	-- Ancient Defender
+					i(9858),	-- Archer's Buckler
+					i(9843),	-- Banded Shield
+					i(9778),	-- Bandit Buckler
+					i(6559),	-- Bard's Buckler
+					i(6599),	-- Battleforge Shield
+					i(4069),	-- Blackforge Buckler
 					i(1169),	-- Blackskull Shield
+					i(14954),	-- Bloodforged Shield
+					i(14800),	-- Bloodlust Buckler
+					i(15494),	-- Bloodspattered Shield
+					i(15618),	-- Bonelink Wall Shield
+					i(3654),	-- Brackwater Shield
+					i(9918),	-- Brigade Defender
+					i(15894),	-- Bristlebark Buckler
+					i(14912),	-- Brutish Shield
+					i(3655),	-- Burnished Shield
+					i(9764),	-- Cadet Shield
+					i(7495),	-- Captain's Buckler
+					i(3653),	-- Ceremonial Buckler
+					i(7536),	-- Champion's Wall Shield
+					i(4068),	-- Chief Brigadier Shield
+					i(8135),	-- Chromite Shield
+					i(4065),	-- Combat Shield
 					i(10195),	-- Crusader's Shield
+					i(15133),	-- Cutthroat's Buckler
+					i(6572),	-- Defender Shield
 					i(10366),	-- Demon Guard
+					i(6598),	-- Dervish Buckler
+					i(14608),	-- Dokebi Buckler
+					i(8275),	-- Ebonhold Buckler
+					i(4064),	-- Emblazoned Buckler
+					i(9935),	-- Embossed Plate Shield
 					i(10365),	-- Emerald Shield
+					i(25073),	-- Emperor Shield
+					i(15990),	-- Enduring Shield
 					i(10363),	-- Engraved Wall
+					i(14982),	-- Exalted Shield
+					i(15307),	-- Feral Buckler
+					i(7496),	-- Field Plate Shield
+					i(6383),	-- Forest Buckler
+					i(15633),	-- Formidable Crest
+					i(9816),	-- Fortified Shield
 					i(13083),	-- Garrett Family Crest
+					i(15145),	-- Ghostwalker Buckler
+					i(6400),	-- Glimmering Shield
+					i(14973),	-- Glorious Shield
+					i(4067),	-- Glyphed Buckler
+					i(7537),	-- Gothic Shield
+					i(15298),	-- Grizzly Buckler
+					i(15512),	-- Grunt's Shield
+					i(15621),	-- Gryphon Mail Buckler
+					i(9753),	-- Gypsy Buckler
 					i(14607),	-- Hawkeye's Buckler
+					i(15352),	-- Headhunter's Buckler
 					i(10204),	-- Heavy Lamellar Shield
+					i(8313),	-- Hero's Buckler
+					i(15887),	-- Heroic Guard
+					i(14964),	-- High Chief's Shield
+					i(15891),	-- Hulking Shield
+					i(3652),	-- Hunting Buckler
 					i(10367),	-- Hyperion Shield
+					i(15943),	-- Imbued Shield
+					i(15667),	-- Impenetrable Wall
+					i(7108),	-- Infantry Shield
+					i(7330),	-- Infiltrator Buckler
+					i(6380),	-- Inscribed Buckler
+					i(4066),	-- Insignia Buckler
+					i(15648),	-- Ironhide Shield
+					i(14916),	-- Jade Deflector
+					i(9899),	-- Jazeraint Shield
+					i(4070),	-- Jouster's Crest
+					i(14780),	-- Khan's Buckler
+					i(7465),	-- Knight's Crest
+					i(3656),	-- Lambent Scale Shield
+					i(14930),	-- Lofty Shield
 					i(10078),	-- Lord's Crest
+					i(15014),	-- Lupine Buckler
+					i(15675),	-- Magnificent Guard
+					i(15569),	-- Marauder's Crest
 					i(10271),	-- Masterwork Shield
+					i(15657),	-- Merciless Shield
 					i(10158),	-- Mercurial Guard
 					i(13082),	-- Mountainside Buckler
+					i(8134),	-- Myrmidon's Defender
 					i(10362),	-- Ornate Shield
+					i(15504),	-- Outrunner's Shield
+					i(9974),	-- Overlord's Shield
+					i(15342),	-- Pathfinder Guard
+					i(7331),	-- Phalanx Shield
+					i(15563),	-- Pillager's Shield
+					i(15893),	-- Prospector's Buckler
+					i(14790),	-- Protector Buckler
+					i(9790),	-- Raider's Shield
+					i(14777),	-- Ravager's Shield
 					i(12997),	-- Redbeard Crest
+					i(9873),	-- Renegade Shield
 					i(10093),	-- Revenant Deflector
+					i(15113),	-- Rigid Buckler
+					i(15123),	-- Robust Buckler
+					i(14902),	-- Saltstone Shield
+					i(9830),	-- Scaled Shield
+					i(6571),	-- Scouting Buckler
+					i(7463),	-- Sentinel Buckler
+					i(15530),	-- Sentry's Shield
 					i(13079),	-- Shield of Thorsen
 					i(13081),	-- Skullance Shield
 					i(1168),	-- Skullflame Shield
+					i(15892),	-- Slayer's Shield
+					i(6560),	-- Soldier's Shield
+					i(15584),	-- Sparkleshell Shield
+					i(15522),	-- Spiked Chain Shield
+					i(15592),	-- Steadfast Buckler
+					i(14852),	-- Sunscale Shield
+					i(9804),	-- Superior Buckler
+					i(14825),	-- Symbolic Crest
 					i(10364),	-- Templar Shield
 					i(1204),	-- The Green Tower
-					i(14608),	-- Dokebi Buckler
-					i(14729),	-- War Paint Shield
-					i(14777),	-- Ravager's Shield
-					i(14780),	-- Khan's Buckler
-					i(14790),	-- Protector Buckler
-					i(14800),	-- Bloodlust Buckler
-					i(14812),	-- Warstrike Buckler
-					i(14825),	-- Symbolic Crest
-					i(14842),	-- Tyrant's Shield
-					i(14852),	-- Sunscale Shield
-					i(14902),	-- Saltstone Shield
-					i(14912),	-- Brutish Shield
-					i(14916),	-- Jade Deflector
-					i(14930),	-- Lofty Shield
-					i(14947),	-- Warbringer's Shield
-					i(14954),	-- Bloodforged Shield
-					i(14964),	-- High Chief's Shield
-					i(14973),	-- Glorious Shield
-					i(14982),	-- Exalted Shield
-					i(15014),	-- Lupine Buckler
-					i(15113),	-- Rigid Buckler
-					i(15123),	-- Robust Buckler
-					i(15133),	-- Cutthroat's Buckler
-					i(15145),	-- Ghostwalker Buckler
-					i(15298),	-- Grizzly Buckler
-					i(15307),	-- Feral Buckler
-					i(15332),	-- Wrangler's Buckler
-					i(15342),	-- Pathfinder Guard
-					i(15352),	-- Headhunter's Buckler
-					i(15367),	-- Trickster's Protector
-					i(15486),	-- War Torn Shield
-					i(15494),	-- Bloodspattered Shield
-					i(15504),	-- Outrunner's Shield
-					i(15512),	-- Grunt's Shield
-					i(15522),	-- Spiked Chain Shield
-					i(15530),	-- Sentry's Shield
-					i(15543),	-- Wicked Chain Shield
 					i(15552),	-- Thick Scale Shield
-					i(15563),	-- Pillager's Shield
-					i(15569),	-- Marauder's Crest
-					i(15584),	-- Sparkleshell Shield
-					i(15592),	-- Steadfast Buckler
-					i(15604),	-- Ancient Defender
-					i(15618),	-- Bonelink Wall Shield
-					i(15621),	-- Gryphon Mail Buckler
-					i(15633),	-- Formidable Crest
-					i(15648),	-- Ironhide Shield
-					i(15657),	-- Merciless Shield
-					i(15667),	-- Impenetrable Wall
-					i(15675),	-- Magnificent Guard
+					i(15367),	-- Trickster's Protector
 					i(15687),	-- Triumphant Shield
-					i(15887),	-- Heroic Guard
+					i(14842),	-- Tyrant's Shield
 					i(15890),	-- Vanguard Shield
-					i(15891),	-- Hulking Shield
-					i(15892),	-- Slayer's Shield
-					i(15893),	-- Prospector's Buckler
-					i(15894),	-- Bristlebark Buckler
-					i(15943),	-- Imbued Shield
-					i(15990),	-- Enduring Shield
-					i(15991),	-- Warleader's Shield
-					un(7, i(18673)),	-- Avalanchion's Stony Hide
-					i(1979),	-- Wall of the Dead
-					un(7, i(2021)),	-- Green Carapace Shield
-					i(2040),	-- Troll Protector
-					i(25073),	-- Emperor Shield
-					i(25075),	-- Hardened Steel Shield
-					i(3651),	-- Veteran Shield
-					i(3652),	-- Hunting Buckler
-					i(3653),	-- Ceremonial Buckler
-					i(3654),	-- Brackwater Shield
-					i(3655),	-- Burnished Shield
-					i(3656),	-- Lambent Scale Shield
-					i(4064),	-- Emblazoned Buckler
-					i(4065),	-- Combat Shield
-					i(4066),	-- Insignia Buckler
-					i(4067),	-- Glyphed Buckler
-					i(4068),	-- Chief Brigadier Shield
-					i(4069),	-- Blackforge Buckler
-					i(4070),	-- Jouster's Crest
-					un(7, i(4290)),	-- Dust Bowl
-					i(4444),	-- Black Husk Shield
-					un(7, i(4477)),	-- Nefarious Buckler
-					i(4820),	-- Guardian Buckler
-					i(4821),	-- Bear Buckler
-					i(4822),	-- Owl's Disk
-					i(6380),	-- Inscribed Buckler
-					i(6383),	-- Forest Buckler
-					i(6400),	-- Glimmering Shield
-					i(6559),	-- Bard's Buckler
-					i(6560),	-- Soldier's Shield
-					i(6571),	-- Scouting Buckler
-					i(6572),	-- Defender Shield
-					i(6598),	-- Dervish Buckler
-					i(6599),	-- Battleforge Shield
-					i(7108),	-- Infantry Shield
-					i(7330),	-- Infiltrator Buckler
-					i(7331),	-- Phalanx Shield
-					i(7463),	-- Sentinel Buckler
-					i(7465),	-- Knight's Crest
-					i(7495),	-- Captain's Buckler
-					i(7496),	-- Field Plate Shield
-					i(7536),	-- Champion's Wall Shield
-					i(7537),	-- Gothic Shield
-					i(7787),	-- Resplendent Guardian
-					i(8134),	-- Myrmidon's Defender
-					i(8135),	-- Chromite Shield
-					i(8275),	-- Ebonhold Buckler
 					i(8282),	-- Valorous Shield
-					i(8313),	-- Hero's Buckler
-					i(8320),	-- Alabaster Shield
-					i(9753),	-- Gypsy Buckler
-					i(9764),	-- Cadet Shield
-					i(9778),	-- Bandit Buckler
-					i(9790),	-- Raider's Shield
-					i(9804),	-- Superior Buckler
-					i(9816),	-- Fortified Shield
-					i(9830),	-- Scaled Shield
-					i(9843),	-- Banded Shield
-					i(9858),	-- Archer's Buckler
-					i(9873),	-- Renegade Shield
-					i(9899),	-- Jazeraint Shield
-					i(9918),	-- Brigade Defender
-					i(9935),	-- Embossed Plate Shield
+					i(3651),	-- Veteran Shield
+					i(1979),	-- Wall of the Dead
+					i(14729),	-- War Paint Shield
+					i(15486),	-- War Torn Shield
+					i(14947),	-- Warbringer's Shield
+					i(15991),	-- Warleader's Shield
 					i(9958),	-- Warmonger's Buckler
-					i(9974),	-- Overlord's Shield
+					i(14812),	-- Warstrike Buckler
+					i(15543),	-- Wicked Chain Shield
+					i(15332),	-- Wrangler's Buckler
+					-- [removed non-world drops below]
+					--un(7, i(18673)),	-- Avalanchion's Stony Hide
+					--i(4821),	-- Bear Buckler
+					--i(4444),	-- Black Husk Shield
+					--un(7, i(4290)),	-- Dust Bowl
+					--un(7, i(2021)),	-- Green Carapace Shield
+					--i(4820),	-- Guardian Buckler
+					--un(7, i(4477)),	-- Nefarious Buckler
+					--i(4822),	-- Owl's Disk
+					--i(7787),	-- Resplendent Guardian
+					--i(2040),	-- Troll Protector
 				}),
 				n(-342, {	-- Staves
 					i(3185),	-- Acrobatic Staff
-					i(12251),	-- Big Stick
-					i(1998),	-- Bloodscalp Channeling Staff
-					i(10627),	-- Bludgeon of the Grinning Dog
-					un(7, i(2013)),	-- Cryptbone Staff
-					un(7, i(1928)),	-- Defias Mage Staff
+					i(937),		-- Black Duskwood Staff
 					i(15274),	-- Diviner Long Staff
 					i(2072),	-- Dwarven Magestaff
-					i(1405),	-- Foamspittle Staff
-					un(7, i(1539)),	-- Gnarled Hermit's Staff
-					un(7, i(1300)),	-- Lesser Staff of the Spire
+					i(944),		-- Elemental Mage Staff
+					i(812),		-- Glowing Brightwood Staff
+					i(791),		-- Gnarled Ash Staff
 					i(2077),	-- Magician Staff
 					i(15276),	-- Magus Long Staff
 					i(4575),	-- Medicine Staff
 					i(866),		-- Monk's Staff
-					un(7, i(2226)),	-- Ogremage Staff
-					i(1391),	-- Riverpaw Mystic Staff
 					i(15278),	-- Solstice Staff
 					i(1607),	-- Soulkeeper
-					i(1664),	-- Spellforce Rod
 					i(12532),	-- Spire of the Stoneshaper
 					i(1613),	-- Spiritchaser Staff
-					un(7, i(1933)),	-- Staff of Conjuring
 					i(13000),	-- Staff of Hale Magefire
-					un(7, i(880)),		-- Staff of Horrors
 					i(873),		-- Staff of Jordan
-					un(7, i(3902)),	-- Staff of Nobles
-					i(12252),	-- Staff of Protection
-					i(2271),	-- Staff of the Blessed Seer
-					i(3415),	-- Staff of the Friar
-					i(2549),	-- Staff of the Shade
+					i(4566),	-- Sturdy Quarterstaff
 					i(1720),	-- Tanglewood Staff
 					i(15275),	-- Thaumaturgist Staff
-					i(943),		-- Warden Staff
-					i(7757),	-- Windweaver Staff
-					i(9482),	-- Witch Doctor's Cane
-					i(1484),	-- Witching Stave
-					un(7, i(20258)),	-- Zulian Ceremonial Staff
-					un(7, i(3227)),	-- Nightbane Staff
-					un(7, i(4437)),	-- Channeler's Staff
-					i(4566),	-- Sturdy Quarterstaff
-					i(791),		-- Gnarled Ash Staff
-					i(812),		-- Glowing Brightwood Staff
 					i(890),		-- Twisted Chanter's Staff
-					i(937),		-- Black Duskwood Staff
-					i(944),		-- Elemental Mage Staff
+					i(943),		-- Warden Staff
+					-- [removed non-world drops below]
+					--i(12251),	-- Big Stick
+					--i(1998),	-- Bloodscalp Channeling Staff
+					--i(10627),	-- Bludgeon of the Grinning Dog
+					--un(7, i(4437)),	-- Channeler's Staff
+					--un(7, i(2013)),	-- Cryptbone Staff
+					--un(7, i(1928)),	-- Defias Mage Staff
+					--i(1405),	-- Foamspittle Staff
+					--un(7, i(1539)),	-- Gnarled Hermit's Staff
+					--un(7, i(1300)),	-- Lesser Staff of the Spire
+					--un(7, i(3227)),	-- Nightbane Staff
+					--un(7, i(2226)),	-- Ogremage Staff
+					--i(1391),	-- Riverpaw Mystic Staff
+					--i(1664),	-- Spellforce Rod
+					--un(7, i(1933)),	-- Staff of Conjuring
+					--un(7, i(880)),		-- Staff of Horrors
+					--un(7, i(3902)),	-- Staff of Nobles
+					--i(12252),	-- Staff of Protection
+					--i(2271),	-- Staff of the Blessed Seer
+					--i(3415),	-- Staff of the Friar
+					--i(2549),	-- Staff of the Shade
+					--i(7757),	-- Windweaver Staff
+					--i(9482),	-- Witch Doctor's Cane
+					--i(1484),	-- Witching Stave
+					--un(7, i(20258)),	-- Zulian Ceremonial Staff
 				}),
 				n(-338, {	-- 1H Swords
-					un(7, i(1219)),	-- Redridge Machete
-					i(12535),	-- Doomforged Straightedge
-					i(1265),	-- Scorpion Sting
-					i(12974),	-- The Black Knight
-					i(12976),	-- Ironpatch Blade
-					i(13032),	-- Sword of Corruption
-					i(13033),	-- Zealot Blade
-					i(13034),	-- Speedsteel Rapier
-					i(13035),	-- Serpent Slicer
 					i(13036),	-- Assassination Blade
-					un(7, i(1469)),	-- Scimitar of Atun
-					i(1482),	-- Shadowfang
-					un(7, i(1493)),	-- Heavy Marauder Scimitar
-					i(15210),	-- Raider Shortsword
-					i(15211),	-- Militant Shortsword
-					i(15212),	-- Fighter Broadsword
-					i(15213),	-- Mercenary Blade
-					i(15214),	-- Nobles Brand
-					i(15215),	-- Furious Falchion
-					i(15216),	-- Rune Sword
-					i(15217),	-- Widow Blade
-					i(15218),	-- Crystal Sword
-					i(15219),	-- Dimensional Blade
 					i(15220),	-- Battlefell Sabre
-					i(15221),	-- Holy War Sword
-					un(7, i(17054)),	-- Joonho's Mercy
-					i(1727),	-- Sword of Decay
-					i(1728),	-- Teebu's Blazing Longsword
-					un(7, i(1925)),	-- Defias Rapier
-					i(1951),	-- Blackwater Cutlass
-					i(2011),	-- Twisted Sabre
-					un(7, i(2018)),	-- Skeletal Longsword
-					un(7, i(2035)),	-- Sword of the Night Sky
-					un(7, i(2046)),	-- Bluegill Kukri
-					un(7, i(20698)),	-- Elemental Attuned Blade
-					i(2078),	-- Northern Shortsword
-					i(2244),	-- Krol Blade
-					i(29583),	-- Sinister Scimitar
-					i(3186),	-- Viking Sword
-					i(3740),	-- Decapitating Sword
-					i(4765),	-- Enamelled Broadsword
-					i(4766),	-- Feral Blade
-					i(5744),	-- Pale Skinner
-					i(6622),	-- Sword of Zeal
-					i(727),		-- Notched Shortsword
-					un(7, i(753)),		-- Dragonmaw Shortsword
-					i(754),		-- Shortsword of Vengeance
-					i(809),		-- Bloodrazor
-					i(8190),	-- Hanzo Sword
-					i(8196),	-- Ebon Scimitar
-					un(7, i(8223)),	-- Blade of the Basilisk
-					un(7, i(8224)),	-- Silithid Ripper
-					i(8225),	-- Tainted Pierce
-					i(8226),	-- The Butcher
-					i(864),		-- Knightly Longsword
-					i(869),		-- Dazzling Longsword
-					i(886),		-- Black Metal Shortsword
-					i(935),		-- Night Watch Shortsword
-					i(9392),	-- Annealed Blade
-					i(9424),	-- Ginn-Su Sword
 					i(9511),	-- Bloodletter Scalpel
+					i(809),		-- Bloodrazor
 					i(9719, {	-- Broken Blade of Heroes
 						["groups"] = {
 							i(9718),  -- Reforged Blade of Heroes
 						},
 						["description"] = "This item is a world drop from level 29-46 creatures. Once reforged by a blacksmith, it becomes the Reforged Blade of Heroes. ",
 					}), 
+					i(15218),	-- Crystal Sword
+					i(869),		-- Dazzling Longsword
+					i(3740),	-- Decapitating Sword
+					i(15219),	-- Dimensional Blade
+					i(8196),	-- Ebon Scimitar
+					i(15212),	-- Fighter Broadsword
+					i(15215),	-- Furious Falchion
+					i(8190),	-- Hanzo Sword
+					i(15221),	-- Holy War Sword
+					i(12976),	-- Ironpatch Blade
+					i(864),		-- Knightly Longsword
+					i(2244),	-- Krol Blade
+					i(15213),	-- Mercenary Blade
+					i(15211),	-- Militant Shortsword
+					i(935),		-- Night Watch Shortsword
+					i(15214),	-- Nobles Brand
+					i(2078),	-- Northern Shortsword
+					i(727),		-- Notched Shortsword
+					i(15210),	-- Raider Shortsword
+					i(15216),	-- Rune Sword
+					i(1265),	-- Scorpion Sting
+					i(13035),	-- Serpent Slicer
+					i(754),		-- Shortsword of Vengeance
+					i(13034),	-- Speedsteel Rapier
+					i(13032),	-- Sword of Corruption
+					i(6622),	-- Sword of Zeal
+					i(1728),	-- Teebu's Blazing Longsword
+					i(12974),	-- The Black Knight
+					i(2011),	-- Twisted Sabre
+					i(3186),	-- Viking Sword
+					i(15217),	-- Widow Blade
+					i(13033),	-- Zealot Blade
+					-- [removed non-world drops below]
+					--i(9392),	-- Annealed Blade
+					--un(7, i(886)),		-- Black Metal Shortsword
+					--i(1951),	-- Blackwater Cutlass
+					--un(7, i(8223)),	-- Blade of the Basilisk
+					--un(7, i(2046)),	-- Bluegill Kukri
+					--un(7, i(1925)),	-- Defias Rapier
+					--i(12535),	-- Doomforged Straightedge
+					--un(7, i(753)),		-- Dragonmaw Shortsword
+					--un(7, i(20698)),	-- Elemental Attuned Blade
+					--i(4765),	-- Enamelled Broadsword
+					--i(4766),	-- Feral Blade
+					--i(9424),	-- Ginn-Su Sword
+					--un(7, i(1493)),	-- Heavy Marauder Scimitar
+					--un(7, i(17054)),	-- Joonho's Mercy
+					--i(5744),	-- Pale Skinner
+					--un(7, i(1219)),	-- Redridge Machete
+					--un(7, i(1469)),	-- Scimitar of Atun
+					--i(1482),	-- Shadowfang
+					--un(7, i(8224)),	-- Silithid Ripper
+					--i(29583),	-- Sinister Scimitar
+					--un(7, i(2018)),	-- Skeletal Longsword
+					--i(1727),	-- Sword of Decay
+					--un(7, i(2035)),	-- Sword of the Night Sky
+					--i(8225),	-- Tainted Pierce
+					--i(8226),	-- The Butcher
 				}),
 				n(-339, {	-- 2H Swords
-					i(10573),	-- Boneslasher
-					i(10628),	-- Deathblow
-					i(12992),	-- Searing Blade
-					i(13041),	-- Guardian Blade
-					i(13042),	-- Sword of the Magistrate
-					i(13043),	-- Blade of the Titans
-					i(13044),	-- Demonslayer
-					i(13049),	-- Deanship Claymore
-					i(13051),	-- Witchfury
-					i(13052),	-- Warmonger
-					i(13053),	-- Doombringer
-					un(7, i(1387)),	-- Ghoulfang
-					un(7, i(1460)),	-- Shadowhide Two-Handed Sword
-					i(15248),	-- Gleaming Claymore
-					i(15249),	-- Polished Zweihander
-					i(15250),	-- Glimmering Flamberge
-					i(15251),	-- Headstriker Sword
-					i(15252),	-- Tusker Sword
-					i(15253),	-- Beheading Blade
-					i(15254),	-- Dark Espadon
-					i(15255),	-- Gallant Flamberge
-					i(15256),	-- Massacre Sword
-					i(15257),	-- Shin Blade
-					i(15258),	-- Divine Warblade
-					un(7, i(16039)),	-- Ta'Kierthan Songblade
-					i(1604),	-- Chromatic Sword
-					i(1625),	-- Exquisite Flamberge
-					i(1975),	-- Pysan's Old Greatsword
-					i(1982),	-- Nightblade
-					i(1986),	-- Gutrender
-					un(7, i(2014)),	-- Black Metal Greatsword
-					un(7, i(2084)),	-- Darksteel Bastard Sword
-					un(7, i(2204)),	-- Brashclaw's Skewer
-					i(2205),	-- Duskbringer
-					i(2801),	-- Blade of Hanna
-					un(7, i(2822)),	-- Mo'grosh Toothpick
-					i(2877),	-- Combatant Claymore
-					un(7, i(3188)),	-- Coral Claymore
-					i(3192),	-- Short Bastard Sword
-					i(3196),	-- Edged Bastard Sword
-					i(3197),	-- Stonecutter Claymore
-					i(3206),	-- Cavalier Two-Hander
-					i(3417),	-- Onyx Claymore
-					i(4567),	-- Merc Sword
-					i(4817),	-- Blessed Claymore
-					i(4818),	-- Executioner's Sword
-					un(7, i(5182)),	-- Shiver Blade
-					i(647),		-- Destiny
-					i(8178),	-- Training Sword
-					i(8199),	-- Battlefield Destroyer
 					i(9385),	-- Archaic Defender
-					i(9490),	-- Gizmotron Megachopper
+					i(8199),	-- Battlefield Destroyer
+					i(15253),	-- Beheading Blade
+					i(2801),	-- Blade of Hanna
+					i(13043),	-- Blade of the Titans
+					i(3206),	-- Cavalier Two-Hander
+					i(2877),	-- Combatant Claymore
+					i(15254),	-- Dark Espadon
+					i(13049),	-- Deanship Claymore
+					i(13044),	-- Demonslayer
+					i(647),		-- Destiny
+					i(15258),	-- Divine Warblade
+					i(13053),	-- Doombringer
+					i(3196),	-- Edged Bastard Sword
+					i(1625),	-- Exquisite Flamberge
+					i(15255),	-- Gallant Flamberge
+					i(15248),	-- Gleaming Claymore
+					i(15250),	-- Glimmering Flamberge
+					i(13041),	-- Guardian Blade
+					i(15251),	-- Headstriker Sword
+					i(15256),	-- Massacre Sword
+					i(4567),	-- Merc Sword
+					i(1982),	-- Nightblade
+					i(15249),	-- Polished Zweihander
+					i(12992),	-- Searing Blade
+					i(15257),	-- Shin Blade
+					i(3192),	-- Short Bastard Sword
+					i(3197),	-- Stonecutter Claymore
+					i(13042),	-- Sword of the Magistrate
+					i(8178),	-- Training Sword
+					i(15252),	-- Tusker Sword
+					i(13052),	-- Warmonger
+					i(13051),	-- Witchfury
+					-- [removed non-world drops below]
+					--un(7, i(2014)),	-- Black Metal Greatsword
+					--i(4817),	-- Blessed Claymore
+					--i(10573),	-- Boneslasher
+					--un(7, i(2204)),	-- Brashclaw's Skewer
+					--i(1604),	-- Chromatic Sword
+					--un(7, i(3188)),	-- Coral Claymore
+					--un(7, i(2084)),	-- Darksteel Bastard Sword
+					--i(10628),	-- Deathblow
+					--i(2205),	-- Duskbringer
+					--i(4818),	-- Executioner's Sword
+					--un(7, i(1387)),	-- Ghoulfang
+					--i(9490),	-- Gizmotron Megachopper
+					--i(1986),	-- Gutrender
+					--un(7, i(2822)),	-- Mo'grosh Toothpick
+					--i(3417),	-- Onyx Claymore
+					--i(1975),	-- Pysan's Old Greatsword
+					--un(7, i(1460)),	-- Shadowhide Two-Handed Sword
+					--un(7, i(5182)),	-- Shiver Blade
+					--un(7, i(16039)),	-- Ta'Kierthan Songblade
 				}),
 				n(-341, {	-- Wands
-					i(10572),	-- Freezing Shard
-					i(12984),	-- Skycaller
-					i(13004),	-- Torch of Austen
-					i(13062),	-- Thunderwood
-					i(13063),	-- Starfaller
-					i(13064),	-- Jaina's Firestarter
-					i(13065),	-- Wand of Allistarj
-					i(15279),	-- Ivory Wand
-					i(15280),	-- Wizard's Hand
-					i(15281),	-- Glowstar Rod
-					i(15282),	-- Dragon Finger
-					i(15283),	-- Lunar Wand
-					i(18338),	-- Wand of Arcane Potency
-					i(31270),	-- Banshee Rod
-					i(5069),	-- Fire Wand
-					i(5071),	-- Shadow Wand
-					i(5207),	-- Opaque Wand
 					i(5212),	-- Blazing Wand
-					i(5213),	-- Scorching Wand
-					i(5214),	-- Wand of Eventide
-					i(5215),	-- Ember Wand
-					i(5216),	-- Umbral Wand
-					i(5245),	-- Summoner's Wand
-					i(8184),	-- Firestarter
 					i(8186),	-- Dire Wand
-					i(9381),	-- Earthen Rod
-					i(9483),	-- Flaming Incinerator
+					i(15282),	-- Dragon Finger
+					i(5215),	-- Ember Wand
+					i(5069),	-- Fire Wand
+					i(8184),	-- Firestarter
+					i(15281),	-- Glowstar Rod
+					i(15279),	-- Ivory Wand
+					i(13064),	-- Jaina's Firestarter
+					i(15283),	-- Lunar Wand
+					i(5207),	-- Opaque Wand
+					i(5213),	-- Scorching Wand
+					i(5071),	-- Shadow Wand
+					i(12984),	-- Skycaller
+					i(13063),	-- Starfaller
+					i(13062),	-- Thunderwood
+					i(13004),	-- Torch of Austen
+					i(5216),	-- Umbral Wand
+					i(13065),	-- Wand of Allistarj
+					i(5214),	-- Wand of Eventide
+					i(15280),	-- Wizard's Hand
+					-- [removed non-world drops below]
+					--i(31270),	-- Banshee Rod
+					--i(9381),	-- Earthen Rod
+					--i(9483),	-- Flaming Incinerator
+					--i(10572),	-- Freezing Shard
+					--un(7, i(5245)), 	-- Summoner's Wand
+					--i(18338),	-- Wand of Arcane Potency
 				}),
 			}),	
 		},

@@ -215,6 +215,7 @@ _.Instances = { tier(1, {	-- Classic
 							47137,	-- Mindless Horror
 							47138,	-- Pustulant Monstrosity
 							47231,	-- Shadowy Attendant
+							47140,	-- Sorcerous Skeleton
 							47146,	-- Spitebone Flayer
 							47145,	-- Spitebone Guardian
 							47143,	-- Spitebone Skeleton

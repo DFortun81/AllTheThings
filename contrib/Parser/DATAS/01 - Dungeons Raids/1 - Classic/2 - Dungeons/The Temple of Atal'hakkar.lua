@@ -48,7 +48,6 @@ _.Instances = { tier(1, {	-- Classic
 						5283,	-- Nightmare Wanderer
 						8319,	-- Nightmare Whelp
 						5280,	-- Nightmare Wyrmkin
-
 					},
 				}),
 				i(10627, {	-- Bludgeon of the Grinning Dog
@@ -56,6 +55,7 @@ _.Instances = { tier(1, {	-- Classic
 						5270,	-- Atal'ai Corpse Eater
 						5271,	-- Atal'ai Deathwalker
 						5225,	-- Murk Spitter
+						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
 						5280,	-- Nightmare Wyrmkin
 					},
@@ -71,6 +71,8 @@ _.Instances = { tier(1, {	-- Classic
 						8336,	-- Hakkari Sapper
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						8319,	-- Nightmare Whelp
+						5280,	-- Nightmare Wyrmkin
 					},
 				}),
 				i(10626, {	-- Ragehammer
