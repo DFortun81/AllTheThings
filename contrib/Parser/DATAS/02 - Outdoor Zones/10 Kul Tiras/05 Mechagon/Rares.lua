@@ -9,7 +9,7 @@ _.Zones =
 				n(-16,  {	-- Rares
 					-- TODO:: Verify all kill questIDs
 					n(151934, {	-- Arachnoid Harvester
-						--["questID"] = 55512,	-- also popped 55913, 56089
+						["questID"] = 55512,
 						["coord"] = { 52.6, 41.0, 1462 },
 						["g"] = {
 							{	-- Rest in Pistons (Arachnoid Harvester)
@@ -33,6 +33,16 @@ _.Zones =
 							{	-- Rest in Pistons (Vaultbot)
 								["achievementID"] = 13470,
 								["criteriaID"] = 30,
+							},
+						},
+					}),
+					n(153200, {	-- Boilburn
+						["questID"] = 55857, -- no second questID
+						["coord"] = { 51.1, 50.4, 1462 },
+						["description"] = "Activate the |cFFFFD700Drill Rig|r.",
+						["g"] = {
+							{	-- Rest in Pistons (Boilburn)
+								["achievementID"] = 25,
 							},
 						},
 					}),
@@ -125,6 +135,17 @@ _.Zones =
 							},
 							i(169393),	-- Arachnoid Skitterbot
 							i(168327),	-- Chain Ignitercoil
+						},
+					}),
+					n(151627, {	-- Mr. Fixthis
+						["allianceQuestID"] = 55859,
+						["hordeQuestID"] = 55935,
+						["coord"] = { 61.0, 61.4, 1462 },
+						["g"] = {
+							{	-- Rest in Pistons (Mr. Fixthis)
+								["achievementID"] = 13470,
+								["criteriaID"] = 29,
+							},
 						},
 					}),
 					n(151702, {	-- Paol Pondwader

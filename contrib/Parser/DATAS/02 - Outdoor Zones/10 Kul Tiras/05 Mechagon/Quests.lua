@@ -172,6 +172,12 @@ _.Zones =
 						["coord"] = { 73.1, 33.3, 1462 },
 						["races"] = HORDE_ONLY,
 					},
+					{	-- Deck 'Em -- only available during "Time for Heroics" ?
+						["questID"] = 56049,
+						["qg"] = 153538,	-- Adalin Halfheight
+						["coord"] = { 75.2, 69.8, 862 },
+						["races"] = HORDE_ONLY,	-- QG is tauren. probably horde only? verify this
+					},
 					{	-- Discs of Norgannon
 						["questID"] = 56410,
 						["qg"] = 154982,	-- Archivist Bitbyte
@@ -420,6 +426,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55298,	-- Fishing For Something Bigger
 					},
+					{	-- Time for Heroics
+						["questID"] = 55717,
+						["qg"] = 152633,	-- Sir Finley Mrrgglton
+						["sourceQuest"] = 55658,	-- Clues Abound
+					},
 					{	-- Toys For Destruction
 						["questID"] = 54090,
 						["qg"] = 151006,	-- Rocket-Chief Fuselage
@@ -483,7 +494,7 @@ _.Zones =
 						["isDaily"] = true,
 						["sourceQuest"] = 55736,	-- Welcome to the Resistance
 					},
-					{	-- Taking The Air Out
+					{	-- Taking The Air Out -- only available during "Unprofitable Ventures"? Is this also considered a daily, then?
 						["itemID"] = 169682,	-- Venture Co. Rocket Box
 						["questID"] = 56501,
 						["coord"] = { 42.8, 41.9, 862 }, 
