@@ -18,12 +18,6 @@ _.Zones =
 							262,	-- The Underbog
 						},
 						["g"] = {
-							{	-- Captured Firefly
-								["itemID"] = 29960,	-- Captured Firefly
-								["crs"] = {
-									20197,	-- Bogflare Needler
-								},
-							},
 							{	-- Anzac Dagger
 								["itemID"] = 25104,	-- Anzac Dagger
 							},
