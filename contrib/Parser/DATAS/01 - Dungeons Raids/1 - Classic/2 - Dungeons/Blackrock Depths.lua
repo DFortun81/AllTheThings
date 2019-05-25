@@ -344,7 +344,10 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(12528, {	-- The Judge's Gavel
 					["crs"] = {
+						8903,	-- Anvilrage Captain
 						8892,	-- Anvilrage Footman
+						8891,	-- Anvilrage Guardsman
+						8898,	-- Anvilrage Marshal
 						8894,	-- Anvilrage Medic
 						8889,	-- Anvilrage Overseer
 						8893,	-- Anvilrage Soldier
@@ -354,7 +357,10 @@ _.Instances = { tier(1, {	-- Classic
 						8899,	-- Doomforge Dragoon
 						8909,	-- Fireguard
 						8911,	-- Fireguard Destroyer
+						9547,	-- Guzzling Patron
 						9554,	-- Hammered Patron
+						8908,	-- Molten War Golem
+						8904,	-- Shadowforge Senator
 						8914,	-- Twilight Bodyguard
 						8912,	-- Twilight's Hammer Torturer
 						8905,	-- Warbringer Construct

@@ -72,12 +72,18 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9393, {	-- Beacon of Hope
 					["crs"] = {
+						7309,	-- Earthen Custodian
 						7012,	-- Earthen Sculptor
 						4863,	-- Jadespine Basilisk
 						4847,	-- Shadowforge Relic Hunter
 						7290,	-- Shadowforge Sharpshooter
+						4844,	-- Shadowforge Surveyor
 						4860,	-- Stone Steward
+						7175,	-- Stonevault Ambusher
+						4855,	-- Stonevault Brawler
+						4850,	-- Stonevault Cave Lurker
 						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},
 				}),
@@ -103,14 +109,26 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9386, {	-- Excavator's Brand
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7405,	-- Deadly Cleft Scorpid
+						7076,	-- Earthen Guardian
 						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
+						7397,	-- Earthen Stonecarver
+						4849,	-- Shadowforge Archaeologist
 						7030,	-- Shadowforge Geologist
 						4847,	-- Shadowforge Relic Hunter
+						4844,	-- Shadowforge Surveyor
 						4861,	-- Shrike Bat
+						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
+						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
+						7022,	-- Venomlash Scorpid
 					},
 				}),
 				i(9424, {	-- Ginn-Su Sword
@@ -176,8 +194,10 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9427, {	-- Stonevault Bonebreaker
 					["crs"] = {
+						7011,	-- Earthen Rocksmasher
 						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
+						7321,	-- Stonevault Flameweaver
 					},
 				}),
 				i(9384, {	-- Stonevault Shiv
@@ -198,8 +218,10 @@ _.Instances = { tier(1, {	-- Classic
 				i(9423),	-- The Jackhammer
 				i(9391, {	-- The Shoveler
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7405,	-- Deadly Cleft Scorpid
 						4863,	-- Jadespine Basilisk
-						4846,	-- Shadowforge Digger
+						4849,	-- Shadowforge Archaeologist
 						4847,	-- Shadowforge Relic Hunter
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
@@ -207,6 +229,8 @@ _.Instances = { tier(1, {	-- Classic
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9428, {	-- Unearthed Bands

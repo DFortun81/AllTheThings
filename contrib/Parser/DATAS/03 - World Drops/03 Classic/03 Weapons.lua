@@ -215,271 +215,276 @@ _.WorldDrops =
 					--i(11603),	-- Vilerend Slicer
 				}),
 				n(-345, {	-- Guns
-					i(13136),	-- Lil Timmy's Peashooter
-					i(13137),	-- Ironweaver
-					i(13138),	-- The Silencer
-					i(13139),	-- Guttbuster
-					i(13146),	-- Shell Launcher Shotgun
-					i(15322),	-- Smoothbore Gun
-					i(15323),	-- Percussion Shotgun
-					i(15324),	-- Burnside Rifle
-					i(15325),	-- Sharpshooter Harquebus
-					un(7, i(20722)),	-- Crystal Slugthrower
-					i(2098),	-- Double-Barreled Shotgun
-					i(2099),	-- Dwarven Hand Cannon
-					i(2100),	-- Precisely Calibrated Boomstick
-					i(3040),	-- Hunter's Muzzle Loader
 					i(3041),	-- "Mage-Eye" Blunderbuss
 					i(3042),	-- BKP "Sparrow" Smallbore
-					i(3430),	-- Sniper Rifle
-					i(4089),	-- Ricochet Blunderbuss
+					i(15324),	-- Burnside Rifle
 					i(4577),	-- Compact Shotgun
-					i(7729),	-- Chesterfall Musket
+					i(2098),	-- Double-Barreled Shotgun
+					i(2099),	-- Dwarven Hand Cannon
 					i(8188),	-- Explosive Shotgun
-					i(9422),	-- Shadowforge Bushmaster
-					i(9487),	-- Hi-Tech Supergun
+					i(13139),	-- Guttbuster
+					i(3040),	-- Hunter's Muzzle Loader
+					i(13137),	-- Ironweaver
+					i(13136),	-- Lil Timmy's Peashooter
+					i(15323),	-- Percussion Shotgun
+					i(2100),	-- Precisely Calibrated Boomstick
+					i(4089),	-- Ricochet Blunderbuss
+					i(15325),	-- Sharpshooter Harquebus
+					i(13146),	-- Shell Launcher Shotgun
+					i(15322),	-- Smoothbore Gun
+					i(3430),	-- Sniper Rifle
+					i(13138),	-- The Silencer
+					-- [removed non-world drops below]
+					--i(7729),	-- Chesterfall Musket
+					--un(7, i(20722)),	-- Crystal Slugthrower
+					--i(9487),	-- Hi-Tech Supergun
+					--i(9422),	-- Shadowforge Bushmaster
 				}),			
 				n(-331, {	-- Held in Off-hand
-					i(13029),	-- Umbral Crystal
+					i(9944),	-- Abjurer's Crystal
+					i(15971),	-- Aboriginal Rod
+					i(15944),	-- Ancestral Orb
+					i(2879),	-- Antipodean Rod
+					i(15985),	-- Arachnidian Branch
+					i(15931),	-- Arcane Star
+					i(15987),	-- Astral Orb
+					i(7610),	-- Aurora Sphere
 					i(13030),	-- Basilisk Bone
-					i(13031),	-- Orb of Mistmantle
+					i(15969),	-- Beaded Orb
+					i(15982),	-- Bloodwoven Rod
+					i(15986),	-- Bonecaster's Star
+					i(15927),	-- Bright Sphere
 					i(15912),	-- Buccaneer's Orb
 					i(15918),	-- Conjurer's Sphere
-					i(15925),	-- Journeyman's Stave
-					i(15926),	-- Spellbinder Orb
-					i(15927),	-- Bright Sphere
-					i(15928),	-- Silver-Thread Rod
-					i(15929),	-- Nightsky Orb
-					i(15930),	-- Imperial Red Scepter
-					i(15931),	-- Arcane Star
+					i(15939),	-- Councillor's Scepter
+					i(15980),	-- Darkmist Orb
 					i(15932),	-- Disciple's Stein
-					i(15933),	-- Simple Branch
-					i(15934),	-- Sage's Stave
 					i(15935),	-- Durable Rod
 					i(15936),	-- Duskwoven Branch
-					i(15937),	-- Hibernal Sphere
-					i(15938),	-- Mystical Orb
-					i(15939),	-- Councillor's Scepter
+					i(7609),	-- Elder's Amber Stave
 					i(15940),	-- Elegant Scepter
+					i(15968),	-- Elunarian Sphere
+					i(15989),	-- Eternal Rod
+					i(15979),	-- Flamecloth Stave
+					i(15983),	-- Gaea's Scepter
+					i(15978),	-- Geomancer's Rod
+					i(7557),	-- Gossamer Rod
+					i(9769),	-- Greenweave Branch
+					i(15937),	-- Hibernal Sphere
 					i(15941),	-- High Councillor's Scepter
+					i(15967),	-- Highborne Star
+					i(15930),	-- Imperial Red Scepter
+					i(9800),	-- Ivy Orb
+					i(15925),	-- Journeyman's Stave
+					i(4696),	-- Lapidis Tankard of Tidesippe
+					i(15981),	-- Lunar Sphere
 					i(15942),	-- Master's Rod
-					i(15944),	-- Ancestral Orb
+					i(7611),	-- Mistscape Stave
+					i(25091),	-- Mistyreed Torch
+					i(15946),	-- Mystic's Sphere
+					i(15938),	-- Mystical Orb
+					i(15970),	-- Native Branch
+					i(15929),	-- Nightsky Orb
+					i(15984),	-- Opulent Scepter
+					i(13031),	-- Orb of Mistmantle
+					i(15974),	-- Pagan Rod
+					i(15975),	-- Raincaller Scepter
+					i(7555),	-- Regal Star
+					i(15988),	-- Resplendent Orb
+					i(15972),	-- Ritual Stein
+					i(2565),	-- Rod of Molten Fire
+					i(9914),	-- Royal Scepter
 					{	-- Runic Stave
 						["itemID"] = 15945,	-- Runic Stave
 						["f"] = 28,			-- Staves	Note!! This is needed since Blizzard changed it from OH to Stave and removed it's filter
 					},
-					i(15946),	-- Mystic's Sphere
+					i(15934),	-- Sage's Stave
 					i(15947),	-- Sanguine Star
 					i(15962),	-- Satyr's Rod
-					i(15963),	-- Stonecloth Branch
-					i(15964),	-- Silksand Star
-					i(15965),	-- Windchaser Orb
-					i(15966),	-- Venomshroud Orb
-					i(15967),	-- Highborne Star
-					i(15968),	-- Elunarian Sphere
-					i(15969),	-- Beaded Orb
-					i(15970),	-- Native Branch
-					i(15971),	-- Aboriginal Rod
-					i(15972),	-- Ritual Stein
-					i(15973),	-- Watcher's Star
-					i(15974),	-- Pagan Rod
-					i(15975),	-- Raincaller Scepter
-					i(15976),	-- Thistlefur Branch
-					i(15977),	-- Vital Orb
-					i(15978),	-- Geomancer's Rod
-					i(15979),	-- Flamecloth Stave
-					i(15980),	-- Darkmist Orb
-					i(15981),	-- Lunar Sphere
-					i(15982),	-- Bloodwoven Rod
-					i(15983),	-- Gaea's Scepter
-					i(15984),	-- Opulent Scepter
-					i(15985),	-- Arachnidian Branch
-					i(15986),	-- Bonecaster's Star
-					i(15987),	-- Astral Orb
-					i(15988),	-- Resplendent Orb
-					i(15989),	-- Eternal Rod
-					un(7, i(18672)),	-- Elemental Ember
-					i(1992),	-- Swampchill Fetish
-					un(7, i(20694)),	-- Glowing Black Orb
-					i(25091),	-- Mistyreed Torch
-					i(2565),	-- Rod of Molten Fire
-					i(2879),	-- Antipodean Rod
-					i(4696),	-- Lapidis Tankard of Tidesippe
-					i(4836),	-- Fireproof Orb
-					i(4837),	-- Strength of Will
-					i(4838),	-- Orb of Power
-					un(7, i(5028)),	-- Lord Sakrasis' Scepter
-					un(7, i(5183)),	-- Pulsating Hydra Heart
-					i(7554),	-- Willow Branch
-					i(7555),	-- Regal Star
-					i(7556),	-- Twilight Orb
-					i(7557),	-- Gossamer Rod
-					i(7558),	-- Shimmering Stave
-					un(7, i(7559)),	-- Runic Cane
 					i(7608),	-- Seer's Fine Stein
-					i(7609),	-- Elder's Amber Stave
-					i(7610),	-- Aurora Sphere
-					i(7611),	-- Mistscape Stave
-					i(9393),	-- Beacon of Hope
-					i(9769),	-- Greenweave Branch
-					i(9800),	-- Ivy Orb
+					i(7558),	-- Shimmering Stave
+					i(15964),	-- Silksand Star
+					i(15928),	-- Silver-Thread Rod
+					i(15933),	-- Simple Branch
 					i(9882),	-- Sorcerer Sphere
-					i(9914),	-- Royal Scepter
-					i(9944),	-- Abjurer's Crystal
+					i(15926),	-- Spellbinder Orb
+					i(15963),	-- Stonecloth Branch
+					i(15976),	-- Thistlefur Branch
+					i(7556),	-- Twilight Orb
+					i(13029),	-- Umbral Crystal
+					i(15966),	-- Venomshroud Orb
+					i(15977),	-- Vital Orb
+					i(15973),	-- Watcher's Star
+					i(7554),	-- Willow Branch
+					i(15965),	-- Windchaser Orb
+					-- [removed non-world drops below]
+					--i(9393),	-- Beacon of Hope
+					--un(7, i(18672)),	-- Elemental Ember
+					--i(4836),	-- Fireproof Orb
+					--un(7, i(20694)),	-- Glowing Black Orb
+					--un(7, i(5028)),	-- Lord Sakrasis' Scepter
+					--i(4838),	-- Orb of Power
+					--un(7, i(5183)),	-- Pulsating Hydra Heart
+					--un(7, i(7559)),	-- Runic Cane
+					--i(4837),	-- Strength of Will
+					--i(1992),	-- Swampchill Fetish
 				}),
 				n(-336, {	-- 1H Maces
-					i(10571),	-- Ebony Boneclub
-					i(1207),	-- Murphstar
-					un(7, i(1214)),	-- Gnoll Punisher
-					un(7, i(1296)),	-- Blackrock Mace
-					i(13006),	-- Mass of McGowan
-					i(13024),	-- Beazel's Basher
-					i(13025),	-- Deadwood Sledge
-					i(13026),	-- Heaven's Light
-					i(13027),	-- Bonesnapper
-					i(13028),	-- Bludstone Hammer
-					i(13048),	-- Looming Gavel
-					un(7, i(1394)),	-- Driftwood Club
-					un(7, i(1440)),	-- Gnoll Skull Basher
-					un(7, i(1457)),	-- Shadowhide Mace
-					i(1483),	-- Face Smasher
-					i(15222),	-- Barbed Club
-					i(15223),	-- Jagged Star
-					i(15224),	-- Battlesmasher
-					i(15225),	-- Sequoia Hammer
-					i(15226),	-- Giant Club
-					i(15227),	-- Diamond-Tip Bludgeon
-					i(15228),	-- Smashing Star
-					i(15229),	-- Blesswind Hammer
-					i(1608),	-- Skullcrusher Mace
-					un(7, i(17055)),	-- Changuk Smasher
-					i(1721),	-- Viking Warhammer
-					un(7, i(18671)),	-- Baron Charr's Sceptre
-					i(1926),	-- Weighted Sap
-					un(7, i(1938)),	-- Block Mallet
-					i(1958, {	-- Petrified Shinbone
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					}),
-					i(19808, {  -- Rockhide Strongfish
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					}),
-					i(2075),	-- Heavy Mace
-					i(2079),	-- Sergeant's Warhammer
-					i(2194),	-- Diamond Hammer
-					i(2243),	-- Hand of Edward the Odd
-					i(2256),	-- Skeletal Club
-					un(7, i(2267)),	-- Stonesplinter Mace
-					un(7, i(2821)),	-- Mo'grosh Masher
-					i(31269),	-- Ghoul Hammer
-					un(7, i(3223)),	-- Frostmane Scepter
-					i(3414),	-- Crested Scepter
-					i(4090),	-- cannot be transmogged Mug O' Hurt
-					un(7, i(4303)),	-- Cranial Thumper
-					un(7, i(4439)),	-- Bruiser Club
-					i(4569),	-- Staunch Hammer
-					un(7, i(5256)),	-- Kovork's Rattle
-					i(6360, {	-- Steelscale Crushfish
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					}),
-					un(7, i(68194, {	-- Oggleflint's Inspirer
-						["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					})),
-					i(7736),	-- Fight Club
-					i(7752),	-- Dreamslayer
-					i(789),		-- Stout Battlehammer
-					i(810),		-- Hammer of the Northern Wind
-					i(8194),	-- Goblin Nutcracker
-					i(827),		-- Wicked Blackjack
-					i(865),		-- Leaden Mace
 					i(868),		-- Ardent Custodian
-					un(7, i(920)),		-- Wicked Spiked Mace
-					i(9359),	-- Wirt's Third Leg
+					i(15222),	-- Barbed Club
+					i(15224),	-- Battlesmasher
+					i(13024),	-- Beazel's Basher
+					i(15229),	-- Blesswind Hammer
+					i(13028),	-- Bludstone Hammer
+					i(13027),	-- Bonesnapper
+					un(7, i(4303)),	-- Cranial Thumper
+					i(13025),	-- Deadwood Sledge
+					i(15227),	-- Diamond-Tip Bludgeon
+					i(2194),	-- Diamond Hammer
+					i(15226),	-- Giant Club
+					i(8194),	-- Goblin Nutcracker
+					i(810),		-- Hammer of the Northern Wind
+					i(2243),	-- Hand of Edward the Odd
+					i(13026),	-- Heaven's Light
+					i(2075),	-- Heavy Mace
+					i(15223),	-- Jagged Star
+					i(865),		-- Leaden Mace
+					i(13048),	-- Looming Gavel
+					i(13006),	-- Mass of McGowan
 					i(936),		-- Midnight Mace
-					i(9386),	-- Excavator's Brand
-					i(9427),	-- Stonevault Bonebreaker
-					i(9488),	-- Oscillating Power Hammer
+					i(4090),	-- Mug O' Hurt (cannot be transmogged)
+					i(1207),	-- Murphstar
+					i(15225),	-- Sequoia Hammer
+					i(2079),	-- Sergeant's Warhammer
+					i(2256),	-- Skeletal Club
+					i(1608),	-- Skullcrusher Mace
+					i(15228),	-- Smashing Star
+					i(4569),	-- Staunch Hammer
+					un(7, i(2267)),	-- Stonesplinter Mace
+					i(789),		-- Stout Battlehammer
+					i(1721),	-- Viking Warhammer
+					-- [removed non-world drops below]
+					--un(7, i(18671)),	-- Baron Charr's Sceptre
+					--un(7, i(1296)),	-- Blackrock Mace
+					--un(7, i(1938)),	-- Block Mallet
+					--un(7, i(4439)),	-- Bruiser Club
+					--un(7, i(17055)),	-- Changuk Smasher
+					--i(3414),	-- Crested Scepter
+					--i(7752),	-- Dreamslayer
+					--un(7, i(1394)),	-- Driftwood Club
+					--i(10571),	-- Ebony Boneclub
+					--i(9386),	-- Excavator's Brand
+					--i(1483),	-- Face Smasher
+					--un(7, i(7736)),	-- Fight Club
+					--un(7, i(3223)),	-- Frostmane Scepter
+					--i(31269),	-- Ghoul Hammer
+					--un(7, i(1214)),	-- Gnoll Punisher
+					--un(7, i(1440)),	-- Gnoll Skull Basher
+					--un(7, i(5256)),	-- Kovork's Rattle
+					--un(7, i(2821)),	-- Mo'grosh Masher
+					--un(7, i(68194, {	-- Oggleflint's Inspirer
+						--["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					--})),
+					--i(9488),	-- Oscillating Power Hammer
+					--i(1958, {	-- Petrified Shinbone
+						--["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					--}),
+					--i(19808, {  -- Rockhide Strongfish
+						--["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					--}),
+					--un(7, i(1457)),	-- Shadowhide Mace
+					--i(6360, {	-- Steelscale Crushfish
+						--["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+					--}),
+					--i(9427),	-- Stonevault Bonebreaker
+					--i(1926),	-- Weighted Sap
+					--i(827),		-- Wicked Blackjack
+					--un(7, i(920)),		-- Wicked Spiked Mace
+					--i(9359),	-- Wirt's Third Leg
 				}),
 				n(-337, {	-- 2H Maces
-					un(7, i(911)),	-- Ironwood Treebranch
-					i(10626),	-- Ragehammer
-					un(7, i(1218)),	-- Heavy Gnoll War Club
-					i(12528),	-- The Judge's Gavel
-					i(12983),	-- Rakzur Club
-					i(13045),	-- Viscous Hammer
-					i(13046),	-- Blanchard's Stout
-					i(13047),	-- Twig of the World Tree
-					un(7, i(1458)),	-- Shadowhide Maul
-					i(1523),	-- Huge Stone Club
-					i(15259),	-- Hefty Battlehammer
-					i(15260),	-- Stone Hammer
-					i(15261),	-- Sequoia Branch
-					i(15262),	-- Greater Maul
-					i(15263),	-- Royal Mallet
 					i(15264),	-- Backbreaker
-					i(15265),	-- Painbringer
-					i(15266),	-- Fierce Mauler
-					i(15267),	-- Brutehammer
-					i(1679),	-- Korg Bat
-					i(1722),	-- Thornstone Sledgehammer
-					i(1976),	-- Slaghammer
 					i(1990),	-- Ballast Maul
-					i(1991),	-- Goblin Power Shovel
-					un(7, i(2058)),	-- Kazon's Maul
-					un(7, i(20696)),	-- Crystal Spiked Maul
-					i(2915),	-- Taran Icebreaker
-					i(3193),	-- Oak Mallet
-					i(3194),	-- Black Malice
 					i(3198),	-- Battering Hammer
-					i(3203),	-- Dense Triangle Mace
-					i(3208),	-- Conk Hammer
-					un(7, i(3571)),	-- Trogg Beater
-					i(4564),	-- Spiked Club
 					i(4570),	-- Birchwood Maul
-					i(4777),	-- Ironwood Maul
-					i(4778),	-- Heavy Spiked Mace
-					un(7, i(6205)),	-- Burrowing Shovel
-					i(6327),	-- The Pacifier
-					i(7730),	-- Cobalt Crusher
-					i(9391),	-- The Shoveler
-					i(9423),	-- The Jackhammer
+					i(13046),	-- Blanchard's Stout
+					i(15267),	-- Brutehammer
+					i(3208),	-- Conk Hammer
+					i(3203),	-- Dense Triangle Mace
+					i(15266),	-- Fierce Mauler
+					i(15262),	-- Greater Maul
+					i(15259),	-- Hefty Battlehammer
+					i(3193),	-- Oak Mallet
+					i(15265),	-- Painbringer
+					i(12983),	-- Rakzur Club
+					i(15263),	-- Royal Mallet
+					i(15261),	-- Sequoia Branch
+					i(4564),	-- Spiked Club
+					i(15260),	-- Stone Hammer
+					i(2915),	-- Taran Icebreaker
+					i(1722),	-- Thornstone Sledgehammer
+					i(13047),	-- Twig of the World Tree
+					i(13045),	-- Viscous Hammer
+					-- [removed non-world drops below]
+					--i(3194),	-- Black Malice
+					--un(7, i(6205)),	-- Burrowing Shovel
+					--i(7730),	-- Cobalt Crusher
+					--un(7, i(20696)),	-- Crystal Spiked Maul
+					--i(1991),	-- Goblin Power Shovel
+					--un(7, i(1218)),	-- Heavy Gnoll War Club
+					--i(4778),	-- Heavy Spiked Mace
+					--i(1523),	-- Huge Stone Club
+					--i(4777),	-- Ironwood Maul
+					--un(7, i(911)),	-- Ironwood Treebranch
+					--un(7, i(2058)),	-- Kazon's Maul
+					--i(1679),	-- Korg Bat
+					--i(10626),	-- Ragehammer
+					--un(7, i(1458)),	-- Shadowhide Maul
+					--i(1976),	-- Slaghammer
+					--i(9423),	-- The Jackhammer
+					--i(12528),	-- The Judge's Gavel
+					--i(6327),	-- The Pacifier
+					--i(9391),	-- The Shoveler
+					--un(7, i(3571)),	-- Trogg Beater
 				}),
 				n(-343, {	-- Polearms
-					i(12989),	-- Gargoyle's Bite
-					i(13054),	-- Grim Reaper
+					i(13057),	-- Bloodpike
 					i(13055),	-- Bonechewer
 					i(13056),	-- Frenzied Striker
-					i(13057),	-- Bloodpike
+					i(12989),	-- Gargoyle's Bite
+					i(13054),	-- Grim Reaper
 					i(13058),	-- Khoo's Point
+					i(1726),	-- Poison-Tipped Bone Spear
 					i(13059),	-- Stoneraven
 					i(13060),	-- The Needler
-					i(1522),	-- Headhunting Spear
-					i(1726),	-- Poison-Tipped Bone Spear
-					un(7, i(7758)),	-- Ruthless Shiv (Old World Drop)
-					i(9480),	-- Eyegouger
+					-- [removed non-world drops below]
+					--i(9480),	-- Eyegouger
+					--i(1522),	-- Headhunting Spear
+					--un(7, i(7758)),	-- Ruthless Shiv
 				}),			
 				n(-332, {	-- Shield
-					i(10078),	-- Lord's Crest
-					i(10093),	-- Revenant Deflector
-					i(10158),	-- Mercurial Guard
-					i(10195),	-- Crusader's Shield
-					i(10204),	-- Heavy Lamellar Shield
-					i(10271),	-- Masterwork Shield
-					i(10362),	-- Ornate Shield
-					i(10363),	-- Engraved Wall
-					i(10364),	-- Templar Shield
-					i(10365),	-- Emerald Shield
-					i(10366),	-- Demon Guard
-					i(10367),	-- Hyperion Shield
-					i(1168),	-- Skullflame Shield
-					i(1169),	-- Blackskull Shield
 					i(1203),	-- Aegis of Stormwind
-					i(1204),	-- The Green Tower
-					i(12997),	-- Redbeard Crest
-					i(13079),	-- Shield of Thorsen
-					i(13081),	-- Skullance Shield
-					i(13082),	-- Mountainside Buckler
+					i(1169),	-- Blackskull Shield
+					i(10195),	-- Crusader's Shield
+					i(10366),	-- Demon Guard
+					i(10365),	-- Emerald Shield
+					i(10363),	-- Engraved Wall
 					i(13083),	-- Garrett Family Crest
 					i(14607),	-- Hawkeye's Buckler
+					i(10204),	-- Heavy Lamellar Shield
+					i(10367),	-- Hyperion Shield
+					i(10078),	-- Lord's Crest
+					i(10271),	-- Masterwork Shield
+					i(10158),	-- Mercurial Guard
+					i(13082),	-- Mountainside Buckler
+					i(10362),	-- Ornate Shield
+					i(12997),	-- Redbeard Crest
+					i(10093),	-- Revenant Deflector
+					i(13079),	-- Shield of Thorsen
+					i(13081),	-- Skullance Shield
+					i(1168),	-- Skullflame Shield
+					i(10364),	-- Templar Shield
+					i(1204),	-- The Green Tower
 					i(14608),	-- Dokebi Buckler
 					i(14729),	-- War Paint Shield
 					i(14777),	-- Ravager's Shield
@@ -607,52 +612,52 @@ _.WorldDrops =
 					i(9974),	-- Overlord's Shield
 				}),
 				n(-342, {	-- Staves
-					i(10627),	-- Bludgeon of the Grinning Dog
-					i(12251),	-- Big Stick
-					i(12252),	-- Staff of Protection
-					i(12532),	-- Spire of the Stoneshaper
-					un(7, i(1300)),	-- Lesser Staff of the Spire
-					i(13000),	-- Staff of Hale Magefire
-					i(1391),	-- Riverpaw Mystic Staff
-					i(1405),	-- Foamspittle Staff
-					i(1484),	-- Witching Stave
-					i(15274),	-- Diviner Long Staff
-					i(15275),	-- Thaumaturgist Staff
-					i(15276),	-- Magus Long Staff
-					i(15278),	-- Solstice Staff
-					un(7, i(1539)),	-- Gnarled Hermit's Staff
-					i(1607),	-- Soulkeeper
-					i(1613),	-- Spiritchaser Staff
-					i(1664),	-- Spellforce Rod
-					i(1720),	-- Tanglewood Staff
-					un(7, i(1928)),	-- Defias Mage Staff
-					un(7, i(1933)),	-- Staff of Conjuring
-					i(1998),	-- Bloodscalp Channeling Staff
-					un(7, i(2013)),	-- Cryptbone Staff
-					un(7, i(20258)),	-- Zulian Ceremonial Staff
-					i(2072),	-- Dwarven Magestaff
-					i(2077),	-- Magician Staff
-					un(7, i(2226)),	-- Ogremage Staff
-					i(2271),	-- Staff of the Blessed Seer
-					i(2549),	-- Staff of the Shade
 					i(3185),	-- Acrobatic Staff
-					un(7, i(3227)),	-- Nightbane Staff
-					i(3415),	-- Staff of the Friar
+					i(12251),	-- Big Stick
+					i(1998),	-- Bloodscalp Channeling Staff
+					i(10627),	-- Bludgeon of the Grinning Dog
+					un(7, i(2013)),	-- Cryptbone Staff
+					un(7, i(1928)),	-- Defias Mage Staff
+					i(15274),	-- Diviner Long Staff
+					i(2072),	-- Dwarven Magestaff
+					i(1405),	-- Foamspittle Staff
+					un(7, i(1539)),	-- Gnarled Hermit's Staff
+					un(7, i(1300)),	-- Lesser Staff of the Spire
+					i(2077),	-- Magician Staff
+					i(15276),	-- Magus Long Staff
+					i(4575),	-- Medicine Staff
+					i(866),		-- Monk's Staff
+					un(7, i(2226)),	-- Ogremage Staff
+					i(1391),	-- Riverpaw Mystic Staff
+					i(15278),	-- Solstice Staff
+					i(1607),	-- Soulkeeper
+					i(1664),	-- Spellforce Rod
+					i(12532),	-- Spire of the Stoneshaper
+					i(1613),	-- Spiritchaser Staff
+					un(7, i(1933)),	-- Staff of Conjuring
+					i(13000),	-- Staff of Hale Magefire
+					un(7, i(880)),		-- Staff of Horrors
+					i(873),		-- Staff of Jordan
 					un(7, i(3902)),	-- Staff of Nobles
+					i(12252),	-- Staff of Protection
+					i(2271),	-- Staff of the Blessed Seer
+					i(3415),	-- Staff of the Friar
+					i(2549),	-- Staff of the Shade
+					i(1720),	-- Tanglewood Staff
+					i(15275),	-- Thaumaturgist Staff
+					i(943),		-- Warden Staff
+					i(7757),	-- Windweaver Staff
+					i(9482),	-- Witch Doctor's Cane
+					i(1484),	-- Witching Stave
+					un(7, i(20258)),	-- Zulian Ceremonial Staff
+					un(7, i(3227)),	-- Nightbane Staff
 					un(7, i(4437)),	-- Channeler's Staff
 					i(4566),	-- Sturdy Quarterstaff
-					i(4575),	-- Medicine Staff
-					i(7757),	-- Windweaver Staff
 					i(791),		-- Gnarled Ash Staff
 					i(812),		-- Glowing Brightwood Staff
-					i(866),		-- Monk's Staff
-					i(873),		-- Staff of Jordan
-					un(7, i(880)),		-- Staff of Horrors
 					i(890),		-- Twisted Chanter's Staff
 					i(937),		-- Black Duskwood Staff
-					i(943),		-- Warden Staff
 					i(944),		-- Elemental Mage Staff
-					i(9482),	-- Witch Doctor's Cane
 				}),
 				n(-338, {	-- 1H Swords
 					un(7, i(1219)),	-- Redridge Machete

@@ -78,6 +78,7 @@ _.Instances = { tier(1, {	-- Classic
 						5721,	-- Dreamscythe
 						5270,	-- Atal'ai Corpse Eater
 						5271,	-- Atal'ai Deathwalker
+						5273,	-- Atal'ai High Priest
 						5291,	-- Hakkari Frostwing
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer

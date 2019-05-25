@@ -67,10 +67,16 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(1976, {	-- Slaghammer
 					["crs"] = {
+						74620,	-- Battle Boar
 						74553,	-- Blood-Branded Razorfen
 						75247,	-- Groyat, the Blind Hunter
 						74900,	-- Kraulshaper Tukaar
 						74551,	-- Razorfen Beast Stalker
+						74555,	-- Razorfen Hidecrusher
+						74552,	-- Razorfen Huntmaster
+						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2549, {	-- Staff of the Shade

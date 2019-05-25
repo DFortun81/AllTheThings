@@ -548,6 +548,12 @@ _.Zones =
 							453,	-- Riverpaw Mystic
 						},
 					}),
+					i(827, {	-- Wicked Blackjack
+						["crs"] = {
+							122,	-- Defias Highwayman
+							449,	-- Defias Knuckleduster
+						},
+					}),
 				}),
 				n(-40, {	-- Legacy
 					["groups"] = {

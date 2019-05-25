@@ -36,9 +36,28 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					i(7729),	-- Chesterfall Musket
-					i(7730),	-- Cobalt Crusher
-					i(7752),	-- Dreamslayer
+					i(7729, {	-- Chesterfall Musket
+						["crs"] = {
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58590,	-- Scarlet Zealot
+						},
+					}),
+					i(7730, {	-- Cobalt Crusher
+						["crs"] = {
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
+					i(7752, {	-- Dreamslayer
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					un(7, i(7736)),	-- Fight Club
 					un(7, i(7755)),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
@@ -60,6 +79,7 @@ _.Instances = { tier(1, {	-- Classic
 							60033,	-- Frenzied Spirit
 						},
 					}),
+					un(7, i(7758)),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece

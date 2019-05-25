@@ -100,17 +100,23 @@ _.Instances = { tier(1, {	-- Classic
 						74947,	-- Boneflayer Ghoul
 						74411,	-- Death's Head Necrolyte
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
 					},
 				}),
 				i(10581, {	-- Death's Head Vestment
 					["crs"] = {
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
 					},
 				}),
 				i(10571, {	-- Ebony Boneclub
 					["crs"] = {
 						74492,	-- Bubonic Geist
 						74483,	-- Death's Head Arachnomancer
+						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
+						74950,	-- Gelatanized Plague Gunk
+						74584,	-- Plague-Rotted Webslinger
 					},
 				}),
 				i(10572),	-- Freezing Shard
@@ -127,6 +133,7 @@ _.Instances = { tier(1, {	-- Classic
 						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
 						74379,	-- Splinterbone Frostweaver
 					},
 				}),

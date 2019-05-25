@@ -63,6 +63,9 @@ _.Instances = { tier(1, {	-- Classic
 						75058,	-- Twilight Aquamancer
 						76036,	-- Twilight Shadow
 						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
 					},
 				}),
 				i(3413, {	-- Doomspike
