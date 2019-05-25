@@ -65,6 +65,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(10328),	-- Scarlet Chestpiece
 					i(10331),	-- Scarlet Gauntlets
 					i(10333),	-- Scarlet Wristguards
+					i(5756, {	-- Sliverblade
+						["crs"] = {
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					i(7761),	-- Steelclaw Reaver
 					i(5819),	-- Sunblaze Coif
 					i(1992),	-- Swampchill Fetish

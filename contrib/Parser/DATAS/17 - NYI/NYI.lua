@@ -1905,6 +1905,7 @@ _.NeverImplemented =
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
+			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow

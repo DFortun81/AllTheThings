@@ -124,9 +124,10 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(10567, {	-- Quillshooter
 					["crs"] = {
-						74411,	-- Death's Head Necrolyte
 						74483,	-- Death's Head Arachnomancer
-						74950,	-- Gelatanized Plague Gunk
+						74411,	-- Death's Head Necrolyte
+						74478,	-- Death's Head Shadowmender
+						74379,	-- Splinterbone Frostweaver
 					},
 				}),
 				i(10583, {	-- Quillward Harness

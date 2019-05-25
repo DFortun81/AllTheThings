@@ -104,112 +104,115 @@ _.WorldDrops =
 					--un(7, i(756)),		-- Tunnel Pick
 				}),	
 				n(-346, {	-- Bows
-					i(10567),	-- Quillshooter
-					un(1, i(5748)),	-- Centaur Longbow
-					i(10624),	-- Stinging Bow
-					i(11303),	-- Fine Shortbow
-					i(11304),	-- Fine Longbow
-					i(11305),	-- Dense Shortbow
-					i(11306),	-- Sturdy Recurve
-					i(11307),	-- Massive Longbow
-					i(11308),	-- Sylvan Shortbow
-					i(13019),	-- Harpyclaw Short Bow
-					i(13020),	-- Skystriker Bow
-					i(13021),	-- Needle Threader
-					i(13022),	-- Gryphonwing Long Bow
-					i(13023),	-- Eaglehorn Long Bow
-					i(15284),	-- Long Battle Bow
 					i(15285),	-- Archer's Longbow
-					i(15286),	-- Long Redwood Bow
-					i(15287),	-- Crusader Bow
-					i(15288),	-- Blasthorn Bow
 					i(15289),	-- Archstrike Bow
-					i(15291),	-- Harpy Needler
-					i(15294),	-- Siege Bow
-					i(15295),	-- Quillfire Bow
-					i(15296),	-- Hawkeye Bow
-					i(2824),	-- Hurricane
+					i(15288),	-- Blasthorn Bow
 					i(2825),	-- Bow of Searing Arrows
-					i(3021),	-- Ranger Bow
+					i(15287),	-- Crusader Bow
+					i(13023),	-- Eaglehorn Long Bow
+					i(13022),	-- Gryphonwing Long Bow
+					i(15291),	-- Harpy Needler
+					i(13019),	-- Harpyclaw Short Bow
+					i(15296),	-- Hawkeye Bow
 					i(3036),	-- Heavy Shortbow
-					i(3037),	-- Whipwood Recurve Bow
-					i(3039),	-- Short Ash Bow
-					i(4087),	-- Trueshot Bow
-					un(7, i(4474)),	-- Ravenwood Bow
-					i(4576),	-- Light Bow
 					i(8180),	-- Hunting Bow
+					i(2824),	-- Hurricane
+					i(4576),	-- Light Bow
+					i(15284),	-- Long Battle Bow
+					i(15286),	-- Long Redwood Bow
+					i(13021),	-- Needle Threader
 					i(8183),	-- Precision Bow
-					i(9426),	-- Monolithic Bow
+					i(15295),	-- Quillfire Bow
+					i(3021),	-- Ranger Bow
+					i(3039),	-- Short Ash Bow
+					i(15294),	-- Siege Bow
+					i(13020),	-- Skystriker Bow
+					i(4087),	-- Trueshot Bow
+					i(3037),	-- Whipwood Recurve Bow
+					-- [removed non-world drops below]
+					--i(11305),	-- Dense Shortbow
+					--i(11304),	-- Fine Longbow
+					--i(11303),	-- Fine Shortbow
+					--i(11307),	-- Massive Longbow
+					--i(9426),	-- Monolithic Bow
+					--i(10567),	-- Quillshooter
+					--un(7, i(4474)),	-- Ravenwood Bow
+					--i(10624),	-- Stinging Bow
+					--i(11306),	-- Sturdy Recurve
+					--i(11308),	-- Sylvan Shortbow
 				}),
 				n(-347, {	-- Crossbows
 					i(13037),	-- Crystalpine Stinger
-					i(13038),	-- Swiftwind
-					i(13039),	-- Skull Splitting Crossbow
 					i(13040),	-- Heartseeking Crossbow
-					un(7, i(6315)),	-- Steelarrow Crossbow
+					i(13039),	-- Skull Splitting Crossbow
+					i(13038),	-- Swiftwind
+					-- [removed non-world drops below]
+					--un(7, i(6315)),	-- Steelarrow Crossbow
 				}),			
 				n(-333, {	-- Daggers	
-					i(10625),	-- Stealthblade
-					i(115349),	-- Talon of Vultros
-					i(12247),	-- Broad Bladed Knife
-					i(12248),	-- Daring Dirk
-					i(12531),	-- Searing Needle
-					un(7, i(1287)),	-- Giant Tarantula Fang
 					i(14555),	-- Alcor's Sunrazor
-					i(1465),	-- Tigerbane
 					i(15241),	-- Battle Knife
-					i(15242),	-- Honed Stiletto
-					i(15243),	-- Deadly Kris
-					i(15244),	-- Razor Blade
-					i(15245),	-- Vorpal Dagger
-					i(15246),	-- Demon Blade
-					i(15247),	-- Bloodstrike Dagger
-					i(1917),	-- Jeweled Dagger
-					i(1935),	-- Assassin's Blade
-					un(7, i(1936)),	-- Goblin Screwdriver
-					un(7, i(2020)),	-- Hollowfang Blade
-					un(7, i(20720)),	-- Dark Whisper Blade
-					i(2088),	-- Long Crawler Limb
-					i(2140),	-- Carving Knife
-					i(2163),	-- Shadowblade
-					i(2164),	-- Gut Ripper
-					i(21802),	-- The Lost Kris of Zedd
-					un(7, i(2235)),	-- Brackclaw
 					i(2236),	-- Blackfang
-					un(7, i(2266)),	-- Stonesplinter Dagger
-					i(24222),	-- The Shadowfoot Stabber
-					i(2567),	-- Evocator's Blade
-					i(2632),	-- Curved Dagger
-					i(2819),	-- Cross Dagger
+					i(15247),	-- Bloodstrike Dagger
+					i(2140),	-- Carving Knife
 					i(2912),	-- Claw of the Shadowmancer
-					i(3184),	-- Hook Dagger
-					i(3187),	-- Sacrificial Kris
-					un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
-					i(3413),	-- Doomspike
+					i(2819),	-- Cross Dagger
+					i(2632),	-- Curved Dagger
+					i(15243),	-- Deadly Kris
+					i(15246),	-- Demon Blade
 					i(4088),	-- Dreadblade
-					i(4091),	-- Widowmaker
-					i(4446),	-- Blackvenom Blade
-					un(7, i(4449)),	-- Naraxis' Fang
-					un(7, i(4454)),	-- Talon of Vultros
-					i(4571),	-- War Knife
-					un(7, i(5112)),	-- Ritual Blade
-					i(5267),	-- Scarlet Kris
-					i(5616),	-- Gutwrencher
-					un(7, i(5742)),	-- Gemstone Dagger
-					un(7, i(5752)),	-- Wyvern Tailspike
-					i(5756),	-- Sliverblade
-					i(6331),	-- Howling Blade
-					un(7, i(6333)),	-- Spikelash Dagger
+					un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
+					i(2164),	-- Gut Ripper
+					i(15242),	-- Honed Stiletto
+					i(3184),	-- Hook Dagger
 					i(6660),	-- Julie's Dagger
-					i(776),		-- Vendetta
+					i(15244),	-- Razor Blade
+					i(3187),	-- Sacrificial Kris
+					i(5267),	-- Scarlet Kris
+					i(2163),	-- Shadowblade
+					i(24222),	-- The Shadowfoot Stabber
 					i(8006),	-- The Ziggler
-					un(7, i(816)),	-- Small Hand Blade
-					i(820),		-- Slicer Blade
-					un(7, i(899)),		-- Venom Web Fang
-					i(9384),	-- Stonevault Shiv
+					i(1465),	-- Tigerbane
+					i(15245),	-- Vorpal Dagger
+					i(4571),	-- War Knife
+					i(4091),	-- Widowmaker
+					-- [removed non-world drops below]
+					--i(1935),	-- Assassin's Blade
+					--i(4446),	-- Blackvenom Blade
+					--un(7, i(2235)),	-- Brackclaw
+					--i(12247),	-- Broad Bladed Knife
+					--i(12248),	-- Daring Dirk
+					--un(7, i(20720)),	-- Dark Whisper Blade
+					--i(3413),	-- Doomspike
+					--i(2567),	-- Evocator's Blade
+					--un(7, i(5742)),	-- Gemstone Dagger
+					--un(7, i(1287)),	-- Giant Tarantula Fang
+					--un(7, i(1936)),	-- Goblin Screwdriver
+					--i(5616),	-- Gutwrencher
+					--un(7, i(2020)),	-- Hollowfang Blade
+					--i(6331),	-- Howling Blade
+					--i(1917),	-- Jeweled Dagger
+					--i(2088),	-- Long Crawler Limb
+					--un(7, i(4449)),	-- Naraxis' Fang
+					--un(7, i(5112)),	-- Ritual Blade
+					--i(12531),	-- Searing Needle
+					--i(820),		-- Slicer Blade
+					--i(5756),	-- Sliverblade
+					--un(7, i(816)),	-- Small Hand Blade
+					--un(7, i(6333)),	-- Spikelash Dagger
+					--i(10625),	-- Stealthblade
+					--un(7, i(2266)),	-- Stonesplinter Dagger
+					--i(9384),	-- Stonevault Shiv
+					--un(7, i(4454)),	-- Talon of Vultros
+					--i(115349),	-- Talon of Vultros
+					--i(21802),	-- The Lost Kris of Zedd
+					--i(776),		-- Vendetta
+					--un(7, i(899)),	-- Venom Web Fang
+					--un(7, i(5752)),	-- Wyvern Tailspike
 				}),
 				n(-348, {	-- Fist Weapons	
-					i(11603),	-- Vilerend Slicer
+					-- [removed non-world drops below]
+					--i(11603),	-- Vilerend Slicer
 				}),
 				n(-345, {	-- Guns
 					i(13136),	-- Lil Timmy's Peashooter
