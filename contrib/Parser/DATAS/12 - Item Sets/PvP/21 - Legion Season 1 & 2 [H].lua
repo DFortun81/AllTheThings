@@ -9,174 +9,69 @@ _.GearSets =
 				h(n(-9913, {	-- Horde
 					gssh(1071, { 	-- Combatant
 						["groups"] = {
-							gs(1071, {	-- Vindictive Combatant's Satin Armor
-								["groups"] = {
-									i(135980),	-- Vindictive Combatant's Satin Hood
-									i(135983),	-- Vindictive Combatant's Satin Mantle
-									i(136870),	-- Vindictive Combatant's Drape of Piety
-									i(135982),	-- Vindictive Combatant's Satin Tunic
-									i(135985),	-- Vindictive Combatant's Satin Bracers
-									i(135979),	-- Vindictive Combatant's Satin Gloves
-									i(135984),	-- Vindictive Combatant's Satin Cord
-									i(135981),	-- Vindictive Combatant's Satin Leggings
-								i(135978),	-- Vindictive Combatant's Satin Treads
+							{	-- Vindictive Combatant's Satin Armor [Priest - 5/10/19 & 5/22/19]
+								["setID"] = 1071,	-- Vindictive Combatant's Satin Armor
+								["classes"] = {
+									5,	-- Priest
 								},
-								["classes"] = { 5 },
-							}),
-							gs(1137, {	-- Vindictive Combatant's Silk Armor
-								["groups"] = {
-									i(135956),	-- Vindictive Combatant's Silk Cowl
-									i(135959),	-- Vindictive Combatant's Silk Amice
-									i(136019),	-- Vindictive Combatant's Silken Shawl
-									i(135958),	-- Vindictive Combatant's Silk Tunic
-									i(135961),	-- Vindictive Combatant's Silk Bracers
-									i(135955),	-- Vindictive Combatant's Silk Handguards
-									i(135960),	-- Vindictive Combatant's Silk Cord
-									i(135957),	-- Vindictive Combatant's Silk Trousers
-									i(135954),	-- Vindictive Combatant's Silk Treads
+								["g"] = {
+									{	-- Vindictive Combatant's Satin Hood
+										["itemID"] = 135980,	-- Vindictive Combatant's Satin Hood
+									},
+									{	-- Vindictive Combatant's Satin Mantle
+										["itemID"] = 135983,	-- Vindictive Combatant's Satin Mantle
+									},
+									{	-- Vindictive Combatant's Drape of Piety
+										["itemID"] = 136870,	-- Vindictive Combatant's Drape of Piety
+									},
+									{	-- Vindictive Combatant's Satin Tunic
+										["itemID"] = 135982,	-- Vindictive Combatant's Satin Tunic
+									},
+									{	-- Vindictive Combatant's Satin Bracers
+										["itemID"] = 135985,	-- Vindictive Combatant's Satin Bracers
+									},
+									{	-- Vindictive Combatant's Satin Gloves
+										["itemID"] = 135979,	-- Vindictive Combatant's Satin Gloves
+									},
+									{	-- Vindictive Combatant's Satin Cord
+										["itemID"] = 135984,	-- Vindictive Combatant's Satin Cord
+									},
+									{	-- Vindictive Combatant's Satin Leggings
+										["itemID"] = 135981,	-- Vindictive Combatant's Satin Leggings
+									},
+									{	-- Vindictive Combatant's Satin Treads
+										["itemID"] = 135978,	-- Vindictive Combatant's Satin Treads
+									},
+									{	-- Fearless Combatant's Satin Hood
+										["itemID"] = 142949,	-- Fearless Combatant's Satin Hood
+									},
+									{	-- Fearless Combatant's Satin Mantle
+										["itemID"] = 142952,	-- Fearless Combatant's Satin Mantle
+									},
+									{	-- Fearless Combatant's Drape of Piety
+										["itemID"] = 143295,	-- Fearless Combatant's Drape of Piety
+									},
+									{	-- Fearless Combatant's Satin Robe
+										["itemID"] = 142951,	-- Fearless Combatant's Satin Robe
+									},
+									{	-- Fearless Combatant's Satin Bracers
+										["itemID"] = 142954,	-- Fearless Combatant's Satin Bracers
+									},
+									{	-- Fearless Combatant's Satin Gloves
+										["itemID"] = 142948,	-- Fearless Combatant's Satin Gloves
+									},
+									{	-- Fearless Combatant's Satin Cord
+										["itemID"] = 142953,	-- Fearless Combatant's Satin Cord
+									},
+									{	-- Fearless Combatant's Satin Leggings
+										["itemID"] = 142950,	-- Fearless Combatant's Satin Leggings
+									},
+									{	-- Fearless Combatant's Satin Treads
+										["itemID"] = 142947,	-- Fearless Combatant's Satin Treads
+									},	
 								},
-								["classes"] = { 8 },
-							}),
-							gs(1160, {	-- Vindictive Combatant's Felweave Armor
-								["groups"] = {
-									i(136004),	-- Vindictive Combatant's Felweave Cowl
-									i(136007),	-- Vindictive Combatant's Felweave Amice
-									i(136882),	-- Vindictive Combatant's Felweave Cloak
-									i(136006),	-- Vindictive Combatant's Felweave Tunic
-									i(136009),	-- Vindictive Combatant's Felweave Bracers
-									i(136003),	-- Vindictive Combatant's Felweave Handguards
-									i(136008),	-- Vindictive Combatant's Felweave Cord
-									i(136005),	-- Vindictive Combatant's Felweave Trousers
-									i(136002),	-- Vindictive Combatant's Felweave Treads
-								},
-								["classes"] = { 9 },
-							}),
-							gs(1168, {	-- Vindictive Combatant's Dragonhide Armor
-								["groups"] = {
-									i(135940),	-- Vindictive Combatant's Dragonhide Helm
-									i(135943),	-- Vindictive Combatant's Dragonhide Spaulders
-									i(136022),	-- Vindictive Combatant's Dragonhide Cloak
-									i(135942),	-- Vindictive Combatant's Dragonhide Tunic
-									i(135945),	-- Vindictive Combatant's Dragonhide Wristguards
-									i(135939),	-- Vindictive Combatant's Dragonhide Gloves
-									i(135944),	-- Vindictive Combatant's Dragonhide Belt
-									i(135941),	-- Vindictive Combatant's Dragonhide Legguards
-									i(135938),	-- Vindictive Combatant's Dragonhide Moccasins
-								},
-								["classes"] = { 11 },
-							}),
-							gs(1068, {	-- Vindictive Combatant's Leather Armor
-								["groups"] = {
-									i(135989),	-- Vindictive Combatant's Leather Helm
-									i(135991),	-- Vindictive Combatant's Leather Spaulders
-									i(136871),	-- Vindictive Combatant's Shadowcape
-									i(135986),	-- Vindictive Combatant's Leather Tunic
-									i(135993),	-- Vindictive Combatant's Leather Wristguards
-									i(135988),	-- Vindictive Combatant's Leather Gloves
-									i(135992),	-- Vindictive Combatant's Leather Belt
-									i(135990),	-- Vindictive Combatant's Leather Legguards
-									i(135987),	-- Vindictive Combatant's Leather Slippers
-								},
-								["classes"] = { 4 },
-							}),
-							gs(1172, {	-- Vindictive Combatant's Ironskin Armor
-								["groups"] = {
-									i(135964),	-- Vindictive Combatant's Ironskin Helm
-									i(135966),	-- Vindictive Combatant's Ironskin Spaulders
-									i(136023),	-- Vindictive Combatant's Ironskin Cloak
-									i(135967),	-- Vindictive Combatant's Ironskin Tunic
-									i(135969),	-- Vindictive Combatant's Ironskin Wristguards
-									i(135963),	-- Vindictive Combatant's Ironskin Gloves
-									i(135968),	-- Vindictive Combatant's Ironskin Belt
-									i(135965),	-- Vindictive Combatant's Ironskin Legguards
-									i(135962),	-- Vindictive Combatant's Ironskin Slippers
-								},
-								["classes"] = { 10 },
-							}),
-							gs(1167, {	-- Vindictive Combatant's Felskin Armor
-								["groups"] = {
-									i(136305),	-- Vindictive Combatant's Felskin Helm
-									i(136308),	-- Vindictive Combatant's Felskin Spaulders
-									i(136894),	-- Vindictive Combatant's Demonthread Cloak
-									i(136307),	-- Vindictive Combatant's Felskin Tunic
-									i(136310),	-- Vindictive Combatant's Felskin Wristguards
-									i(136304),	-- Vindictive Combatant's Felskin Gloves
-									i(136309),	-- Vindictive Combatant's Felskin Belt
-									i(136306),	-- Vindictive Combatant's Felskin Legguards
-									i(136303),	-- Vindictive Combatant's Felskin Boots
-								},
-								["classes"] = { 12 },
-							}),
-							gs(409, {	-- Vindictive Combatant's Chain Armor
-								["groups"] = {
-									i(135949),	-- Vindictive Combatant's Chain Helm
-									i(135951),	-- Vindictive Combatant's Chain Spaulders
-									i(136026),	-- Vindictive Combatant's Drape of the Tracker
-									i(135946),	-- Vindictive Combatant's Chain Armor
-									i(135953),	-- Vindictive Combatant's Chain Armband
-									i(135948),	-- Vindictive Combatant's Chain Gauntlets
-									i(135952),	-- Vindictive Combatant's Chain Clasp
-									i(135950),	-- Vindictive Combatant's Chain Leggings
-									i(135947),	-- Vindictive Combatant's Chain Treads
-								},
-								["classes"] = { 3 },
-							}),
-							gs(1161, {	-- Vindictive Combatant's Ringmail Armor
-								["groups"] = {
-									i(135997),	-- Vindictive Combatant's Ringmail Helm
-									i(135999),	-- Vindictive Combatant's Ringmail Spaulders
-									i(136872),	-- Vindictive Combatant's Totemic Cloak
-									i(135994),	-- Vindictive Combatant's Ringmail Armor
-									i(136001),	-- Vindictive Combatant's Ringmail Armband
-									i(135996),	-- Vindictive Combatant's Ringmail Gauntlets
-									i(136000),	-- Vindictive Combatant's Ringmail Clasp
-									i(135998),	-- Vindictive Combatant's Ringmail Kilt
-									i(135995),	-- Vindictive Combatant's Ringmail Boots
-								},
-								["classes"] = { 7 },
-							}),
-							gs(1164, {	-- Vindictive Combatant's Scaled Armor
-								["groups"] = {
-									i(135973),	-- Vindictive Combatant's Scaled Helm
-									i(135975),	-- Vindictive Combatant's Scaled Shoulders
-									i(136027),	-- Vindictive Combatant's Greatcloak of Faith
-									i(135970),	-- Vindictive Combatant's Scaled Chestpiece
-									i(135977),	-- Vindictive Combatant's Scaled Wristplates
-									i(135972),	-- Vindictive Combatant's Scaled Gauntlets
-									i(135976),	-- Vindictive Combatant's Scaled Girdle
-									i(135974),	-- Vindictive Combatant's Scaled Legguards
-									i(135971),	-- Vindictive Combatant's Scaled Sabatons
-								},
-								["classes"] = { 2 },
-							}),
-							gs(1069, {	-- Vindictive Combatant's Plate Armor
-								["groups"] = {
-									i(136013),	-- Vindictive Combatant's Plate Helm
-									i(136015),	-- Vindictive Combatant's Plate Shoulders
-									i(136888),	-- Vindictive Combatant's Cloak of Battle
-									i(136010),	-- Vindictive Combatant's Plate Chestpiece
-									i(136017),	-- Vindictive Combatant's Plate Wristplates
-									i(136012),	-- Vindictive Combatant's Plate Gauntlets
-									i(136016),	-- Vindictive Combatant's Plate Girdle
-									i(136014),	-- Vindictive Combatant's Plate Legguards
-									i(136011),	-- Vindictive Combatant's Plate Warboots
-								},
-								["classes"] = { 1 },
-							}),
-							gs(1163, {	-- Vindictive Combatant's Dreadplate Armor
-								["groups"] = {
-									i(135933),	-- Vindictive Combatant's Dreadplate Helm
-									i(135935),	-- Vindictive Combatant's Dreadplate Shoulders
-									i(136018),	-- Vindictive Combatant's Dreadcloak
-									i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece
-									i(135937),	-- Vindictive Combatant's Dreadplate Wristplates
-									i(135932),	-- Vindictive Combatant's Dreadplate Gauntlets
-									i(135936),	-- Vindictive Combatant's Dreadplate Girdle
-									i(135934),	-- Vindictive Combatant's Dreadplate Legguards
-									i(135931),	-- Vindictive Combatant's Dreadplate Sabatons
-								},
-								["classes"] = { 6 },
-							}),
+							},
+							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
 					}),
