@@ -133,6 +133,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Felweave Armor [Warlock - 5/10/19 & 5/22/19]
+								["setID"] = 1160,	-- Vindictive Combatant's Felweave Armor
+								["classes"] = {
+									9,	-- Warlock
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Felweave Cowl
+										["itemID"] = 136004,	-- Vindictive Combatant's Felweave Cowl
+									},
+									{	-- Vindictive Combatant's Felweave Amice
+										["itemID"] = 136007,	-- Vindictive Combatant's Felweave Amice
+									},
+									{	-- Vindictive Combatant's Felweave Cloak
+										["itemID"] = 136882,	-- Vindictive Combatant's Felweave Cloak
+									},
+									{	-- Vindictive Combatant's Felweave Tunic
+										["itemID"] = 136006,	-- Vindictive Combatant's Felweave Tunic
+									},
+									{	-- Vindictive Combatant's Felweave Bracers
+										["itemID"] = 136009,	-- Vindictive Combatant's Felweave Bracers
+									},
+									{	-- Vindictive Combatant's Felweave Handguards
+										["itemID"] = 136003,	-- Vindictive Combatant's Felweave Handguards
+									},
+									{	-- Vindictive Combatant's Felweave Cord
+										["itemID"] = 136008,	-- Vindictive Combatant's Felweave Cord
+									},
+									{	-- Vindictive Combatant's Felweave Trousers
+										["itemID"] = 136005,	-- Vindictive Combatant's Felweave Trousers
+									},
+									{	-- Vindictive Combatant's Felweave Treads
+										["itemID"] = 136002,	-- Vindictive Combatant's Felweave Treads
+									},
+									{	-- Fearless Combatant's Felweave Cowl
+										["itemID"] = 142973,	-- Fearless Combatant's Felweave Cowl
+									},
+									{	-- Fearless Combatant's Felweave Amice
+										["itemID"] = 142976,	-- Fearless Combatant's Felweave Amice
+									},
+									{	-- Fearless Combatant's Felweave Cloak
+										["itemID"] = 143307,	-- Fearless Combatant's Felweave Cloak
+									},
+									{	-- Fearless Combatant's Felweave Raiment
+										["itemID"] = 142975,	-- Fearless Combatant's Felweave Raiment
+									},
+									{	-- Fearless Combatant's Felweave Bracers
+										["itemID"] = 142978,	-- Fearless Combatant's Felweave Bracers
+									},
+									{	-- Fearless Combatant's Felweave Handguards
+										["itemID"] = 142972,	-- Fearless Combatant's Felweave Handguards
+									},
+									{	-- Fearless Combatant's Felweave Cord
+										["itemID"] = 142977,	-- Fearless Combatant's Felweave Cord
+									},
+									{	-- Fearless Combatant's Felweave Trousers
+										["itemID"] = 142974,	-- Fearless Combatant's Felweave Trousers
+									},
+									{	-- Fearless Combatant's Felweave Treads
+										["itemID"] = 142971,	-- Fearless Combatant's Felweave Treads
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
