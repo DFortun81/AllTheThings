@@ -231,7 +231,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2362, {	-- Ulmath, the Soulbinder
-				--["questID"] = ,
+				["questID"] = 56057,
 				["isRaid"] = true,
 				["coord"] = { 84.2, 35.9, 1355 },
 				["maps"] = { 1355 },
@@ -275,9 +275,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2363, {	-- Wekemara
-				--["questID"] = ,
+				["questID"] = 56056,
 				["isRaid"] = true,
-				--["coord"] = { , 1355 },
+				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = { 1355 },
 				["crs"] = { 152671 },	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {

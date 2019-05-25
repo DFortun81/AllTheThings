@@ -5,19 +5,12 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		["g"] = {
-			--[[
-			Possible KillIDs that need to be confirmed and tagged to mob:
-			56278, 56297, 56586, 56605, 56669, 56670
-			
-			Should rares that are tied specifically to world quest uptime be listed here at all?
-			]]--
 			n(-16,  {	-- Rares
-				n(153314, {	-- Aldrantiss
-					["coord"] = { 53.3, 24.0, 1355 },
-				}),
 				n(152415, { -- Alga the Eyeless
-					-- 56279 and 56604 popped on first kill. One must be first kill, the other for subsequent kills?
+					["allianceQuestID"] = 56604,
+					["hordeQuestID"] = 56279,
 					["description"] = "Patrols in stealth along the path",
+					["isDaily"] = true,
 					["coords"] = {
 						{ 62.1, 50.3, 1355 },
 						{ 60.9, 43.6, 1355 },
@@ -31,56 +24,84 @@ _.Zones =
 					},
 				}),
 				n(152416, {	-- Allseer Oma'kil
-					["questID"] = 56280, -- 56603 popped as well
+					["allianceQuestID"] = 56603,
+					["hordeQuestID"] = 56280,
 					["coord"] = { 65.4, 36.5, 1355 },
+					["isDaily"] = true,
 					["g"] = {
 						i(167786),	-- Germinating Seed
 					},
 				}),
 				n(152556, {	-- Chasm-Haunter
-					["questID"] = 56270, -- 56613 also popped
+					["allianceQuestID"] = 56613,
+					["hordeQuestID"] = 56270,
 					["coord"] = { 49.2, 88.8, 1355 },
+					["isDaily"] = true,
 					["description"] = "Inside a hidden cave beneath the waterfall.",
 				}),
+				n(152756, {	-- Daggertooth Frenzy
+					["allianceQuestID"] = 56612,
+					["hordeQuestID"] = 56271,
+					["coord"] = { 71.0, 33.3, 1355 },
+					["isDaily"] = true,
+					["g"] = {
+						i(169361),	-- Daggertooth Frenzy
+					},
+				}),
 				n(152413, {	-- Elder Unu
-					["questID"] = 56284, -- 56599 also popped
+					["allianceQuestID"] = 56599,
+					["hordeQuestID"] = 56284,
 					["coord"] = { 64.3, 34.7, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152555, {	-- Elderspawn Nalaada
-					-- 56285 and 56598 popped on first kill. One must be first kill, the other for subsequent kills?
+					["allianceQuestID"] = 56598,
+					["hordeQuestID"] = 56285,
 					["coord"] = { 52.1, 75.4, 1355 },
+					["isDaily"] = true,
 					["g"] = {
 						i(169359),	-- Spawn of Nalaada
 					},
 				}),
 				n(152553, {	-- Garnetscale
-					["questID"] = 56273, -- screwed up and forgot to list the other quest ID for this
+					["hordeQuestID"] = 56273, -- screwed up and forgot to list the other quest ID for this
 					["coord"] = { 37.3, 40.3, 1355 },
+					["isDaily"] = true,
 				}),
-				n(153302, {	-- Glacier Mage Zhiela -- ach 13635 crit 4, no killid
-					["coord"] = { 42.4, 68.4, 1355 },
+				n(155838, {	-- Incantatrix Vazina
+					["coord"] = { 79.2, 51.1, 1355 },
+					["description"] = "One of many Naga commanders that spawn over time.",
 				}),
 				n(152448, {	-- Iridescent Glimmershell
-					["questID"] = 56286, -- also popped 56597
+					["allianceQuestID"] = 56597,
+					["hordeQuestID"] = 56286,
 					["coord"] = { 45.3, 56.2, 1355 },
-					["g"] = {
-						currency(1721),	-- Prismatic Manapearl
-					},
+					["isDaily"] = true,
 				}),
 				n(144644, {	-- Mireclaw
-					["questID"] = 56274, -- also popped 56609
+					["allianceQuestID"] = 56609,
+					["hordeQuestID"] = 56274,
 					["coord"] = { 61.0, 31.7, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152465, {	-- Needlespine
 					["coord"] = { 50.2, 19.1, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152681, {	-- Prince Typhonus
+					["allianceQuestID"] = 56594,
+					["hordeQuestID"] = 56289,
 					["coord"] = { 44.2, 70.8, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152795, {	-- Sandclaw Stoneshell
-					["questID"] = 56277, -- 56606 also popped
+					["allianceQuestID"] = 56606,
+					["hordeQuestID"] = 56277,
+					["isDaily"] = true,
 					["coords"] = {
-						{ 84.5, 40.7, 1355 },
+						{ 74.7, 31.4, 1355 },
+						{ 80.5, 42.2, 1355 }, -- on top of a building. Requires the Deepcoral Pod buff to get to him
+						{ 84.5, 40.7, 1355 }, -- second time on land
 						{ 74.5, 44.0, 1355 }, -- first time finding him. Possibly spawns in multiple places
 					},
 					["g"] = {
@@ -89,37 +110,57 @@ _.Zones =
 					},
 				}),
 				n(152542, {	-- Scale Matriarch Zodia
-					-- 56294 and 56589 popped on first kill. One must be first kill, the other for subsequent kills?
+					["allianceQuestID"] = 56589,
+					["hordeQuestID"] = 56294,
 					["coord"] = { 28.6, 46.6, 1355 },
+					["isDaily"] = true,
 					["g"] = {
 						i(168155),	-- Chum
 					},
 				}),
 				n(152545, {	-- Scale Matriarch Vynara
 					["coord"] = { 27.2, 37.1, 13555 },
+					["isDaily"] = true,
 				}),
 				n(155841, {	-- Shadowbinder Athissa (nothing happened on the kill. No quest ID, no ach criteria, no drops, etc...)
 					["coord"] = { 74.0, 31.3, 1355 },
 				}),
 				n(153658, {	-- Shiz'narasz the Consumer
-					["questID"] = 56296, -- also popped 56587
+					["allianceQuestID"] = 56587,
+					["hordeQuestID"] = 56296,
 					["coord"] = { 38.9, 9.4, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152359, {	-- Siltstalker the Packmother
-					["questID"] = 56297, -- also popped 56586
+					["allianceQuestID"] = 56586,
+					["hordeQuestID"] = 56297,
 					["coord"] = { 71.6, 54.8, 1355 },
+					["isDaily"] = true,
 				}),
 				n(152290, {	-- Soundless
 					["coord"] = { 59.9, 47.6, 1355 },
-					["description"] = "On top of the coral reef. May require Flying to get to.",
+					["isDaily"] = true,
+					["description"] = "On top of the coral reef. Requires Flying or the |cFFFFD700Deepcoral Bud|r buff.", -- the coralbud ree
+				}),
+				n(154148, {	-- Tidemistress Leth'sindra
+					["allianceQuestID"] = 56620,
+					["hordeQuestID"] = 56106,
+					["coord"] = { 65.9, 22.9, 1355 },
+					["isDaily"] = true,
+					["description"] = "Pop 3 |cFFFFD700Undisturbed Specimens|r to spawn her.",
 				}),
 				n(152360, {	-- Toxigore the Alpha
+					["allianceQuestID"] = 56605,
+					["hordeQuestID"] = 56278,
 					["coord"] = { 64.8, 46.4, 1355 },
+					["isDaily"] = true,
 				}),
 				n(151719, {	-- Voice in the Deeps -- TODO:: add description on how to actually release it
 					["coord"] = { 67.5, 34.6, 1355 },
+					["isDaily"] = true,
 				}),
 				n(150468, {	-- Vor'koth
+					["isDaily"] = true,
 					["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws",
 					["g"] = {
 						i(169376),	-- Skittering Eel
@@ -127,13 +168,6 @@ _.Zones =
 				}),
 				n(155840, {	-- Warlord Zalzjar
 					["coord"] = { 47.4, 32.2, 1355 },
-				}),
-				n(153305, {	-- Zanj'ir Brutalizer (tied to world quest uptime)
-					["questID"] = 55886,
-					["coords"] = {
-						{ 63.9, 57.0, 1355 },
-						{ 33.2, 40.1, 1355 },
-					},
 				}),
 			}),
 		},

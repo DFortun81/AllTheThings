@@ -466,6 +466,13 @@ _.Zones =
 						},
 					},
 				},
+				{	-- Old Allies
+					["questID"] = 55781,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55778,	-- Visions of Danger
+				},
 				{	-- On Ghostly Wings
 					["questID"] = 56422,
 					["qg"] = 154601,	-- Kelya Moonfall
@@ -548,6 +555,10 @@ _.Zones =
 						},
 						{	-- Bounty: A Few Hydra
 							["questID"] = 55820,
+							["isDaily"] = true,
+						},
+						{	-- Bounty: A Few Makura
+							["questID"] = 55822,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: A Few Murlocs

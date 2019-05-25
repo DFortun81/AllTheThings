@@ -47,6 +47,10 @@ _.Zones =
 						["questID"] = 55884,
 						["isWQ"] = 12,
 					},
+					{	-- Kassar, Wielder of Dark Blades
+						["questID"] = 55900,
+						["isWQ"] = 120,
+					},
 					{	-- Leylocked Chest
 						["questID"] = 56023, -- 56277 and 56606 popped at the same time
 						["isWQ"] = 120,

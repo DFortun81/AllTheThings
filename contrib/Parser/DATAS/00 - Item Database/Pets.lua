@@ -167,6 +167,7 @@ pet(97556, 1234); 	-- Crystal of the Void (Lesser Voidcaller)
 pet(46545, 225); 	-- Curious Oracle Hatchling
 pet(46544, 226); 	-- Curious Wolvar Pup
 pet(116801, 1521);	-- Cursed Birman
+pet(169361, 2695);	-- Daggertooth Frenzy
 pet(169365, 2699);	-- Damplight Slug
 pet(104160, 1329); 	-- Dandelion Frolicker
 pet(63138, 270);	-- Dark Phoenix Hatchling

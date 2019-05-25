@@ -1482,7 +1482,14 @@ _.Zones =
 						["groups"] = {
 							i(65478),	-- Staff of the Sunchaser
 						},
-					},	
+					},
+					{	-- Stay of Execution
+						["questID"] = 55779,
+						["qg"] = 152977,	-- Thrall
+						["coord"] = { 56.1, 68.0, 85 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55781,	-- Old Allies
+					},
 					{	-- Stealing From Our Own
 						["questID"] = 26234,
 						["qg"] = 42506,	-- Marogg
