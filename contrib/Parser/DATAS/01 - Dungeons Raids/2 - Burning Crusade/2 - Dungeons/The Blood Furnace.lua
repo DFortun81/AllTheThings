@@ -8,6 +8,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 261,
 		["coord"] = { 46.06, 51.74, 100 },	-- The Blood Furnace, Hellfire Peninsula
 		["groups"] = {
+			{	-- Quests
+				["npcID"] = -17,	-- Quests
+			},
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				-- Note!! Blank so when map merges into the list it's in this spot rather than top
+			},
 			d(1, {	-- Normal
 				n(-17, {	-- Quests 					
 					qa(29539, {	-- Heart of Rage

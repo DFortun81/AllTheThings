@@ -44,7 +44,7 @@ _.Zones =
 							n(73666, {	-- Archiereus of Flame
 								["description"] = "This is the summonable version of this rare. It drops more things.",
 								["groups"] = {
-									dr(6, i(103982)),	-- Burden of Eternity
+									i(103982),	-- Burden of Eternity
 									un(2, i(86574)),	-- Elixir of Ancient Knowledge
 								},
 							}),
@@ -214,14 +214,12 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
 									["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
-									["dr"] = 1.8,
 								},
 							},
 						}),
 						{	-- Dread Ship Vazuvius
 							["npcID"] = 73281,		-- Dread Ship Vazuvius
 							["questID"] = 33290,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
-							
 							["isDaily"] = true,
 							["description"] = "Need to have Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 							["g"] = {
@@ -238,7 +236,6 @@ _.Zones =
 						},
 						n(73281, { 	-- Dread Ship Vazuvius
 							["groups"] = {
-								
 							},
 							["questID"] = 33314,
 						}),
@@ -279,18 +276,17 @@ _.Zones =
 								["criteriaID"] = 31,		-- Rime of the Time-Lost Mariner [Criteria]
 								["itemID"] = 104115,	-- Mist-Filled Spirit Lantern [Item]
 								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius. This item will mark itself collected when you get the Rime of the Time-Lost Mariner criteria for the Bigger Bag achievement.",
-								["dr"] = 97,
 							},
 						}),
 						n(73172, {	-- Flintlord Gairan
-								["questID"] = 33309,
-								["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 28,		-- Ordon Death Chime [Criteria]
-								["itemID"] = 104298,	-- Ordon Death Chime [Item]
-								["dr"] = 3,
-							},
+							["questID"] = 33309,
+							["isDaily"] = true,
+							["g"] = {
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 28,		-- Ordon Death Chime [Criteria]
+									["itemID"] = 104298,	-- Ordon Death Chime [Item]
+								},
 							},
 						}),
 						n(73282, { 	-- Garnia
@@ -299,7 +295,6 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 54,		-- Ruby Droplet [Criteria]
 									["itemID"] = 104159,	-- Ruby Droplet [Item]
-									["dr"] = 3,
 								},
 							},
 							["questID"] = 33300,
@@ -311,13 +306,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 43,		-- Odd Polished Stone [Criteria]
 									["itemID"] = 104262,	-- Odd Polished Stone [Item]
-									["dr"] = 22,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 42,		-- Glinting Pile of Stone [Criteria]
 									["itemID"] = 104263,	-- Glinting Pile of Stone [Item]
-									["dr"] = 2,
 								},
 							},
 							["questID"] = 33315,
@@ -329,7 +322,6 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 9,		-- Hardened Shell [Criteria]
 									["itemID"] = 86584,		-- Hardened Shell [Item]
-									["dr"] = 1.7,
 								},
 							},
 							["questID"] = 33297,
@@ -341,13 +333,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 35,		-- Sticky Silkworm Goo [Criteria]
 									["itemID"] = 104290,		-- Sticky Silkworm Goo [Item]
-									["dr"] = 48,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 34,		-- Swarmling of Gu'chi [Criteria]
 									["itemID"] = 104291,		-- Swarmling of Gu'chi [Item]
-									["dr"] = 2,
 								},
 							},
 							["questID"] = 33294,
@@ -359,13 +349,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 39,		-- Quivering Firestorm Egg [Criteria]
 									["itemID"] = 104286,	-- Quivering Firestorm Egg [Item]
-									["dr"] = 24,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 40,		-- Reins of the Thundering Onyx Cloud Serpent [Criteria]
 									["itemID"] = 104269,	-- Reins of the Thundering Onyx Cloud Serpent [Item]
-									["dr"] = 1,
 								},
 							},
 							["questID"] = 33311,
@@ -377,13 +365,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 52,		-- Death Adder Hatchling [Criteria]
 									["itemID"] = 104161,	-- Death Adder Hatchling [Item]
-									["dr"] = 3,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 33,		-- Partially-Digested Meal [Criteria]
 									["itemID"] = 104292,	-- Partially-Digested Meal [Item]
-									["dr"] = 2,
 								},
 							},
 							["questID"] = 33303,
@@ -402,14 +388,12 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 13,		-- Warning Sign [Criteria]
 									["itemID"] = 104331,	-- Warning Sign [Item]
-									["dr"] = 1,
 								},
-								dr(0.8, i(104245)),	-- Technique: Glyph of the Weaponmaster
+								i(104245),	-- Technique: Glyph of the Weaponmaster
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
 									["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-									["dr"] = 0.03,
 								},
 							},
 							["questID"] = 33306,
@@ -420,7 +404,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 3,		-- Giant Purse of Timeless Coins [Criteria]
 								["itemID"] = 104035,	-- Giant Purse of Timeless Coins [Item]
-								["dr"] = 24,
 							},
 						}),
 						n(73277, { 	-- Leafmender
@@ -429,13 +412,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 36,		-- Faintly-Glowing Herb [Criteria]
 									["itemID"] = 104289,	-- Faintly-Glowing Herb [Item]
-									["dr"] = 50,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 56,		-- Ashleaf Spriteling [Criteria]
 									["itemID"] = 104156,	-- Ashleaf Spriteling [Item]
-									["dr"] = 3,
 								},
 							},
 							["questID"] = 33298,
@@ -447,13 +428,11 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 32,		-- Scuttler's Shell [Criteria]
 									["itemID"] = 104293,	-- Scuttler's Shell [Item]
-									["dr"] = 45,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 48,		-- Spineclaw Crab [Criteria]
 									["itemID"] = 104168,	-- Spineclaw Crab [Item]
-									["dr"] = 1.8,
 								},
 							},
 							["questID"] = 33302,
@@ -464,11 +443,9 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 16,		-- Captain Zvezdan's Lost Leg [Criteria]
 								["itemID"] = 104321,		-- Captain Zvezdan's Lost Leg [Item]
-								["dr"] = 3,
 							},
 							{
 								["itemID"] = 104219,		-- Technique: Glyph of Skeleton
-								["dr"] = 0.7,
 							},
 						}),
 						{	-- Spelurk*
@@ -505,73 +482,69 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 45,		-- Glowing Green Ash [Criteria]
 									["itemID"] = 104258,	-- Glowing Green Ash [Item]
-									["dr"] = 1.9,
 								},
 								{
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 21,		-- Jadefire Spirit [Criteria]
 									["itemID"] = 104307,		-- Jadefire Spirit [Item]
-									["dr"] = 1.9,
 								},
-								dr(0.8, i(104227)),	-- Technique: Glyph of Pillar of Light
+								i(104227),	-- Technique: Glyph of Pillar of Light
 							},
 							["questID"] = 33293,
 							["isDaily"] = true,
 						}),
 						n(72808, {	-- Tsavo'ka
 							["questID"] = 33304,
+							["isDaily"] = true,
 							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
 								["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
-								["dr"] = 1.9,
 							},
 							},
 						}),
 						n(73173, {	-- Urdur the Cauterizer
 							["questID"] = 33308,
+							["isDaily"] = true,
 							["g"] = {
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 22,		-- Sunset Stone [Criteria]
 								["itemID"] = 104306,	-- Sunset Stone [Item]
-								["dr"] = 3.0,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
 								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 2.0,
 							},
 							},
 						}),
 						n(73170, {	-- Watcher Osu
-								["questID"] = 33322,
+							["questID"] = 33322,
+							["isDaily"] = true,
 							["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
-								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 2.0,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 23,		-- Ashen Stone [Criteria]
-								["itemID"] = 104305,	-- Ashen Stone [Item]
-								["dr"] = 1.0,
-							},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
+									["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
+								},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 23,		-- Ashen Stone [Criteria]
+									["itemID"] = 104305,	-- Ashen Stone [Item]
+								},
 							},
 						}),
 						n(72245, {	-- Zesqua
-								["questID"] = 33316,
+							["questID"] = 33316,
+							["isDaily"] = true,
 							["g"] = {
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 25,		-- Rain Stone [Criteria]
-								["itemID"] = 104303,	-- Rain Stone [Item]
-								["dr"] = 0.9,
-							},
+								{
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+									["criteriaID"] = 25,		-- Rain Stone [Criteria]
+									["itemID"] = 104303,	-- Rain Stone [Item]
+								},
 							},
 						}),
 						n(71919, { 	-- Zhu-Gon the Sour
@@ -580,7 +553,6 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 49,		-- Skunky Alemental [Criteria]
 									["itemID"] = 104167,	-- Skunky Alemental [Item]
-									["dr"] = 3,
 								},
 							},
 							["questID"] = 32959,

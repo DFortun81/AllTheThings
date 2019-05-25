@@ -29,11 +29,11 @@ profession(197, {	-- Tailoring
 					["name"] = "Tools of the Trade",
 					["categoryID"] = 1266,
 					["groups"] = {  -- Synchronous Thread
-						{
+						{	-- Synchronous Thread
 							["name"] = "Synchronous Thread",
 							["recipeID"] = 292946,
 							["groups"] = { 
-								{
+								{	-- Time-Lost Trader
 									["npcID"] = 151903,		-- Time-Lost Trader
 									["description"] = "This vendor spawns randomly when you close a time rift",
 									["coords"] = {

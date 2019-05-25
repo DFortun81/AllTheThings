@@ -96,6 +96,8 @@ _.Instances = { tier(1, {	-- Classic
 						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
 						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
+						74652,	-- Razorfen Thornbolt
 					},
 				}),
 				i(6688, {	-- Whisperwind Headdress

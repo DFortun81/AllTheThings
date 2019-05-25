@@ -45,7 +45,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
+						75980,	-- Blindlight Razorjaw
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
+						77232,	-- Twilight Disciple
 						76036,	-- Twilight Shadow
 						74363,	-- Twilight Shadow
 						74980,	-- Twilight Storm Mender
@@ -65,6 +67,8 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(3413, {	-- Doomspike
 					["crs"] = {
+						74984,	-- Blindlight Murloc
+						74720,	-- Blindlight Murloc
 						74719,	-- Blindlight Rotmouth
 						76954,	-- Pahboo-Ra <Son of Ghamoo-Ra>
 						75135,	-- Tormented Sacrifice
@@ -95,19 +99,27 @@ _.Instances = { tier(1, {	-- Classic
 						74351,	-- Twilight Disciple
 						76036,	-- Twilight Shadow
 						74363,	-- Twilight Shadow
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
 					},
 				}),
 				i(1481, {	-- Grimclaw
 					["crs"] = {
+						74721,	-- Blindlight Bilefin
 						74984,	-- Blindlight Murloc
 						74720,	-- Blindlight Murloc
 						75980,	-- Blindlight Razorjaw
 						74719,	-- Blindlight Rotmouth
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
 						74983,	-- Twilight Disciple
 						75286,	-- Twilight Disciple
 						74351,	-- Twilight Disciple
 						76036,	-- Twilight Shadow
 						74363,	-- Twilight Shadow
+						74382,	-- Twilight Shadowmage
+						76038,	-- Twilight Shadowmage
 					},
 				}),
 				i(3416, {	-- Martyr's Chain

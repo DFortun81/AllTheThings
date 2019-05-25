@@ -40,6 +40,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),	
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				-- Note!! Blank so when map merges into the list it's in this spot rather than top
+			},
 			d(1, {		-- Normal
 				e(527, { 	-- Watchkeeper Gargolmar
 					["creatureID"] = 17306,

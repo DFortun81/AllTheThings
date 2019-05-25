@@ -364,6 +364,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(45002),	-- Mechanopeep
 						i(44980),	-- Mulgore Hatchling
 						i(95980),	-- Necklace of the Terra-Cotta Protector
+						i(95958),	-- Necklace of the Terra-Cotta Archer
 						i(69992),	-- Shimmering Wyrmling
 						i(44965),	-- Teldrassil Sproutling
 						i(69991),	-- Tiny Sporebat

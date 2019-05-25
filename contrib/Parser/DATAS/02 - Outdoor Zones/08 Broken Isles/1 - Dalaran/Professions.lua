@@ -1241,6 +1241,7 @@ _.Zones =
 							}),
 							q(40132, {	-- In One Piece
 								["sourceQuests"] = { 40131 },	-- Stonehide Leather Sample
+								["coord"] = { 35.9, 28.6, 627 },
 								["qg"] = 93541,	-- Kondal Huntersworn
 								["g"] = {
 									recipe(194161),	-- Stonehide Leather (Rank 1)
@@ -1260,6 +1261,7 @@ _.Zones =
 						--	q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
 						--	q(40141),	-- Stormscale Sample -- granted by i(129862)
 							q(40142, {	-- The Core of the Stormscale
+								["sourceQuests"] = { 40141 },	-- Stormscale Sample
 								["qg"] = 93541,	-- Kondal Huntsworn
 								["g"] = {
 									recipe(194164),	-- Stormscale (Rank 1)

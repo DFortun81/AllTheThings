@@ -889,6 +889,12 @@ _.Zones =
 							2725,	-- Scalding Whelp
 						},
 					}),
+					i(9384, {	-- Stonevault Shiv
+						["crs"] = {
+							4846,	-- Shadowforge Digger
+							4844,	-- Shadowforge Surveyor
+						},
+					}),
 					i(2624, {	-- Thinking Cap
 						["crs"] = {
 							2718,	-- Dustbelcher Shaman

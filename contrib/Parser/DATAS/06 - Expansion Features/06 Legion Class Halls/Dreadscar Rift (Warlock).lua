@@ -63,6 +63,20 @@ _.ExpansionFeatures =
 				}),
 				]]--
 				n(-17, { 	-- Quests
+					q(44089, {	-- A Greater Arsenal
+						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 37.6, 31.9, 717 },
+						["lvl"] = 102,
+						["qg"] = 101097,	-- Calydus
+					}),
+					q(41759, {	-- An Unlikely Ally
+						["sourceQuests"] = { 42097 },	-- Searching the Archives
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 65.9, 47.0, 717 },
+						["lvl"] = 103,
+						["qg"] = 104795,	-- Ritssyn Flamescowl
+					}),
 					q(41750, {	-- Champion: Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
 						["classes"] = { 9 },	-- Warlock
@@ -83,10 +97,21 @@ _.ExpansionFeatures =
 							follower(589),	-- Ritssyn Flamescowl
 						},
 					}),
+					q(43100, {	-- Finding the Scepter
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
+						},
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 37.7, 31.8, 717 },
+						["lvl"] = 98,
+						["qg"] = 101097,	-- Calydus
+					}),
 					q(42603, {	-- Information at Any Cost
 						["sourceQuests"] = {
 							41750,	-- Champion: Calydus
-							41748,	-- Champion: Rittsyn Flamescowl
+							41748,	-- Champion: Ritssyn Flamescowl
 						},
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 66.3, 46.2, 717 },
@@ -112,6 +137,17 @@ _.ExpansionFeatures =
 						["classes"] = { 9 },	-- Warlock
 						["coord"] = { 37.6, 31.8, 717 },
 						["lvl"] = 101,
+						["qg"] = 101097,	-- Calydus
+					}),
+					q(42128, {	-- Ritual Reagents
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
+						},
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 37.7, 31.8, 717 },
+						["lvl"] = 98,
 						["qg"] = 101097,	-- Calydus
 					}),
 					q(42097, {	-- Searching the Archives
@@ -141,6 +177,9 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["qg"] = 101921,	-- Ritssyn Flamescowl
 					}),
+					q(43984, {	-- The Tome Opens Again
+						["qg"] = 101097,	-- Calydus
+					}),
 					q(42602, {	-- Troops in the Field
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
 						["classes"] = { 9 },	-- Warlock
@@ -148,7 +187,17 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["qg"] = 106199,	-- Gakin the Darkbinder
 					}),
-
+					q(40495, {	-- Ulthalesh, the Deadwind Harvester
+						["sourceQuests"] = { 
+							40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
+							43984,	-- The Tome Opens Again (if this artifact is chosen second)
+							44089,	-- A Greater Arsenal (if this artifact is picked last)
+						},
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 37.7, 31.8, 717 },
+						["lvl"] = 98,
+						["qg"] = 101097,	-- Calydus
+					}),
 						
 						
 						
@@ -169,11 +218,9 @@ _.ExpansionFeatures =
 
 				--	not organized/sourced yet.
 					q(41767),	-- A Daring Rescue
-					qart(qg(101097, q(44089))),	-- A Greater Arsenal
 					q(43414),	-- A Hero's Weapon
 					q(44099),	-- A Mutual Friend
 					q(45180),	-- An Island of War
-					q(41759),	-- An Unlikely Ally
 					q(45989),	-- An Urgent Warning
 					q(45021),	-- Answers Unknown
 					q(42098),	-- Black Rook Hold: An Unclaimed Soul
@@ -201,7 +248,6 @@ _.ExpansionFeatures =
 					q(44271),	-- Eye of Azshara
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
-					q(43100),	-- Finding the Scepter
 					q(46784),	-- Further Advancement
 					q(46150),	-- Furthering Knowledge
 					qh(44254),	-- Gazing Into Oblivion
@@ -225,7 +271,6 @@ _.ExpansionFeatures =
 					q(41798),	-- Recruiting More Troops
 					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42517),	-- Ritual of Doom
-					q(42128),	-- Ritual Reagents
 					q(43254),	-- Ritual Ruination
 					q(43895),	-- Sealing Fate: Gold
 					q(41796),	-- Selecting a Sixth
@@ -239,9 +284,6 @@ _.ExpansionFeatures =
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(40712),	-- The Power Possessed
-					q(43984, {	-- The Tome Opens Again
-						["qg"] = 101097,	-- Calydus
-					}),
 					q(46243),	-- The Wrathsteed of Xoroth
 					q(45172),	-- To Battle!
 					q(45027),	-- To the Broken Shore

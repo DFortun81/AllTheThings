@@ -517,12 +517,13 @@ _.Zones =
 						}),
 
 -- CLASS HALL QUESTS
-						qart(q(43153, {	-- An Eye for a Scepter
-							["qg"] = 109698,	-- Calydus
-							["lvl"] = 98,
-							["classes"] = { 9 },	-- Warlock
+						q(43153, {	-- An Eye for a Scepter
 							["sourceQuests"] = { 43100 },	-- Finding the Scepter
-						})),
+							["classes"] = { 9 },	-- Warlock
+							["coord"] = { 69.2, 79.0, 22 },
+							["lvl"] = 98,
+							["qg"] = 109698,	-- Calydus
+						}),
 						qart(q(42774, {	-- Hope Prevails
 							["lvl"] = 98,
 							["qg"] = 108776,	-- Lord Maxwell Tyrosus

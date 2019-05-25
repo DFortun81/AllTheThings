@@ -528,23 +528,38 @@ _.Zones =
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
 						i(12226),	-- Recipe: Crispy Bat Wing
 					}),
-					n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
-						i(19447),	-- Formula: Enchant Bracer - Healing Power
-						i(19442),	-- Formula: Powerful Anti-Venom
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
-						i(13482),	-- Recipe: Transmute Air to Fire
-						i(18171),	-- Arcane Mantle of the Dawn
-						i(18169),	-- Flame Mantle of the Dawn
-						i(18170),	-- Frost Mantle of the Dawn
-						i(18172),	-- Nature Mantle of the Dawn
-						i(18173),	-- Shadow Mantle of the Dawn
-					}),
+					{	-- Argent Quartermaster Hasana <The Argent Dawn>
+						["npcID"] = 10856, -- Argent Quartermaster Hasana <The Argent Dawn>
+						["coords"] = {
+							{ 83.26, 68.14, 18 },
+						},
+						["g"] = {
+							{	-- Formula: Enchant Bracer - Argent Versatility
+								["itemID"] = 19446,	-- Formula: Enchant Bracer - Argent Versatility
+							},
+							{	-- Formula: Enchant Bracer - Healing Power
+								["itemID"] = 19447,	-- Formula: Enchant Bracer - Healing Power
+							},
+							{	-- Formula: Powerful Anti-Venom
+								["itemID"] = 19442,	-- Formula: Powerful Anti-Venom
+							},
+							{	-- Pattern: Argent Boots
+								["itemID"] = 19216,	-- Pattern: Argent Boots
+							},
+							{	-- Pattern: Argent Shoulders
+								["itemID"] = 19217,	-- Pattern: Argent Shoulders
+							},
+							{	-- Pattern: Dawn Treaders
+								["itemID"] = 19328,	-- Pattern: Dawn Treaders
+							},
+							{	-- Pattern: Golden Mantle of the Dawn
+								["itemID"] = 19329,	-- Pattern: Golden Mantle of the Dawn
+							},
+							{	-- Plans: Girdle of the Dawn
+								["itemID"] = 19203,	-- Plans: Girdle of the Dawn
+							},
+						},
+					},
 					nh(3522, {	-- Constance Brisboise <Apprentice Clothier>
 						i(6270),	-- Pattern: Blue Linen Vest
 					}),
@@ -566,7 +581,7 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				m(19, {	-- Scarlet Monastery Entrace
+				m(19, {	-- Scarlet Monastery Entrance
 					["g"] = {
 						i(7753),	-- Bloodspiller
 						i(7729),	-- Chesterfall Musket
@@ -590,7 +605,6 @@ _.Zones =
 						i(13114),	-- Troll's Bane Leggings
 						i(6592),	-- Battleforge Armor
 						i(7728),	-- Beguiler Robes
-						i(7786),    -- Headsplitter
 					},
 					["crs"] = {
 						4284,	-- Scarlet Augur		

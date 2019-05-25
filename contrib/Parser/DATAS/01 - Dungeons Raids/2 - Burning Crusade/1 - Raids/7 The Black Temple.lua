@@ -6,15 +6,15 @@ _.Instances = { tier(2, {	-- Burning Crusade
 	inst(751, {	-- The Black Temple
 		["isRaid"] = true,
 		["lvl"] = 68,
-		["mapID"] = 339,
 		["maps"] = {
-			340,
-			341,
-			342,
-			343,
-			344,
-			345,
-			346,
+			339,	-- Karabor Sewers
+			340,	-- Black Temple
+			341,	-- Sanctuary of Shadows
+			342,	-- Halls of Anguish
+			343,	-- Gorefiend's Vigil
+			344,	-- Den of Mortal Delights
+			345,	-- Chamber of Command
+			346,	-- Temple Summit
 		},
 		["coords"] = {
 			{ 71.04, 46.52, 104 },	-- Black Temple, Shadowmoon Valley

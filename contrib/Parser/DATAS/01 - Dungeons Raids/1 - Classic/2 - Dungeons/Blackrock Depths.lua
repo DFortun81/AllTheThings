@@ -227,9 +227,20 @@ _.Instances = { tier(1, {	-- Classic
 						8891,	-- Anvilrage Guardsman
 						8898,	-- Anvilrage Marshal
 						8894,	-- Anvilrage Medic
+						8895,	-- Anvilrage Officer
 						8893,	-- Anvilrage Soldier
+						8910,	-- Blazing Fireguard
+						9541,	-- Blackbreath Crony
+						8921,	-- Bloodhound
+						8932,	-- Borer Beetle
+						8928,	-- Burrowing Thundersnout
 						8899,	-- Doomforge Dragoon
 						8909,	-- Fireguard
+						8911,	-- Fireguard Destroyer
+						9554,	-- Hammered Patron
+						8906,	-- Ragereaver Golem
+						8896,	-- Shadowforge Peasant
+						8914,	-- Twilight Bodyguard
 						8912,	-- Twilight's Hammer Torturer
 						8905,	-- Warbringer Construct
 						8907,	-- Wrath Hammer Construct
@@ -285,13 +296,27 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						8892,	-- Anvilrage Footman
 						8891,	-- Anvilrage Guardsman
+						8898,	-- Anvilrage Marshal
 						8894,	-- Anvilrage Medic
 						8889,	-- Anvilrage Overseer
 						8893,	-- Anvilrage Soldier
 						8890,	-- Anvilrage Warden
+						9541,	-- Blackbreath Crony
 						8910,	-- Blazing Fireguard
+						8932,	-- Borer Beetle
 						8899,	-- Doomforge Dragoon
+						8925,	-- Dredge Worm
+						8909,	-- Fireguard
+						8911,	-- Fireguard Destroyer
+						9554,	-- Hammered Patron
+						8908,	-- Molten War Golem
 						8906,	-- Ragereaver Golem
+						8904,	-- Shadowforge Senator
+						8914,	-- Twilight Bodyguard
+						8913,	-- Twilight Emissary
+						8912,	-- Twilight's Hammer Torturer
+						8905,	-- Warbringer Construct
+						8907,	-- Wrath Hammer Construct
 					},
 				}),
 				i(12532, {	-- Spire of the Stoneshaper

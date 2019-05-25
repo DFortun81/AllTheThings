@@ -5,8 +5,10 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(261, { 	-- The Steamvault
 		["lvl"] = 65,
-		["mapID"] = 263,
-		["maps"] = { 264 },
+		["maps"] = { 
+			263,	-- The Steamvault
+			264,	-- The Cooling Pools
+		},
 		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
 		["groups"] = {
 			n(-17, {	-- Quests

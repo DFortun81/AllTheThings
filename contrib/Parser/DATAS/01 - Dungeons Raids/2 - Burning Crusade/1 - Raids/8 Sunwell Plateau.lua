@@ -6,8 +6,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
-		["mapID"] = 335,
-		["maps"] = { 336 },
+		["maps"] = { 
+			335,	-- Sunwell Plateau
+			336,	-- Shrine of the Eclipse
+		},
 		["coord"] = { 44.28, 45.71, 122 },	-- Sunwell Plateau, Isle of Quel'Danas
 		["groups"] = {
 			n(0, {	-- Zone Drop

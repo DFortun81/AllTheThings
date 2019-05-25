@@ -282,6 +282,7 @@ _.Instances = { tier(1, {	-- Classic
 						6206,	-- Caverndeep Burrower
 						6211,	-- Caverndeep Reaver
 						6212,	-- Dark Iron Agent
+						6392,	-- Holdout Medic
 						6220,	-- Irradiated Horror
 						6329,	-- Irradiated Pillager
 						6223,	-- Leprous Defender

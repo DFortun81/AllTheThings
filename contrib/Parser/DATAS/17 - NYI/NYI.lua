@@ -955,6 +955,7 @@ _.NeverImplemented =
 			un(1, i(108819)),	-- Unknown
 			un(1, i(109267)),	-- Unknown
 			un(1, i(33197)),	-- Mossy necklace
+			un(1, i(153484)),	-- Fierce Combatant's Necklace
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
 			un(1, i(31930)),	-- Unknown
@@ -993,7 +994,6 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
-			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(33097)),	-- Unknown
 			un(1, i(33193)),	-- Unknown
 			un(1, i(33194)),	-- Unknown
@@ -1006,8 +1006,16 @@ _.NeverImplemented =
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
+			un(1, i(141907)),	-- Arena Victory Bonus
+			un(1, i(143604)),	-- rating min item level reward
+			un(1, i(144455)),	-- rating min item level reward
+			un(1, i(147397)),	-- rating min item level reward
+			un(1, i(147421)),	-- rating min item level reward
+			un(1, i(150368)),	-- rating min item level reward
 			un(1, i(109365)),	-- Unknown
 			un(1, i(109410)),	-- Unknown
+			un(1, i(150369)),	-- rating min item level reward
+			un(1, i(150370)),	-- rating min item level reward
 			un(1, i(109418)),	-- Unknown
 			un(1, i(109447)),	-- Unknown
 			un(1, i(109454)),	-- Unknown
@@ -1077,6 +1085,8 @@ _.NeverImplemented =
 			un(1, i(109263)),	-- Unknown
 			un(1, i(109286)),	-- Unknown
 			un(1, i(109360)),	-- Unknown
+			un(1, i(150367)),	-- Unknown
+			un(1, i(151967)),	-- Unknown
 			un(1, i(109370)),	-- Unknown
 			un(1, i(109376)),	-- Unknown
 			un(1, i(109378)),	-- Unknown
@@ -1895,6 +1905,7 @@ _.NeverImplemented =
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
+			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
@@ -2369,13 +2380,4 @@ m(465),	-- Le Glas
 m(516),	-- Isle of Thunder (One of last initial scenaraio)
 m(892),	-- Azuremyst Isle (Argus Opening)
 m(893),	-- Azuremyst Isle (Argus Opening)
-
--- These maps are used in the Siege of Lordaeron
-m(998),	-- Undercity
-m(908),	-- Ruins of Lordaeron
--- These maps are used in the Horde invasion of Stormwind as part of the BFA entry scenario
-m(1012),	-- Stormwind City
-m(1013),	-- The Stockade
-
-
 };

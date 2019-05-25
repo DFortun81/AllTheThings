@@ -133,15 +133,24 @@ _.Instances = { tier(1, {	-- Classic
 				i(9429),	-- Miner's Hat of the Deep
 				i(9426, {	-- Monolithic Bow
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						7396,	-- Earthen Stonebreaker
+						7175,	-- Stonevault Ambusher
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
+						7022,	-- Venomlash Scorpid
 					},
 				}),
 				i(9383, {	-- Obsidian Cleaver
 					["crs"] = {
+						7011,	-- Earthen Rocksmasher
+						7030,	-- Shadowforge Geologist
+						7290,	-- Shadowforge Sharpshooter
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
 						4850,	-- Stonevault Cave Lurker
+						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},
@@ -173,10 +182,17 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9384, {	-- Stonevault Shiv
 					["crs"] = {
+						7078,	-- Cleft Scorpid
 						4848,	-- Shadowforge Darkcaster
 						4847,	-- Shadowforge Relic Hunter
 						4861,	-- Shrike Bat
+						7175,	-- Stonevault Ambusher
+						4855,	-- Stonevault Brawler
+						4850,	-- Stonevault Cave Lurker
+						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9423),	-- The Jackhammer

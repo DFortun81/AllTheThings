@@ -448,6 +448,9 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_boss_helyra",
 					["g"] = {
 						n(-17, {	-- Quests
+							q(38343, {	-- Raze Hel (bonus objective)
+								["icon"] = "Interface\\Icons\\sha_spell_warlock_demonsoul",
+							}),
 							q(39837, {	-- An Unworthy Task
 								["qg"] = 97319,	-- Ashildir
 								["coord"] = { 65.3, 46.9, 649 },
@@ -486,6 +489,7 @@ _.Zones =
 							q(39857, {	-- The Eternal Nemesis
 								["sourceQuests"] = { 39848 },	-- A Desperate Bargain
 								["coord"] = { 34.2, 28.1, 649 },
+								["icon"] = "Interface\\Icons\\spell_priest_finalprayer",
 							}),
 							q(39849, {	-- To Light the Way
 								["sourceQuests"] = { 39857 },	-- The Eternal Nemesis
@@ -1039,7 +1043,10 @@ _.Zones =
 						},
 						{	-- Criteria 2 — The Aftermath
 							["criteriaID"] = 2,	-- The Aftermath
-							["sourceQuests"] = { 38362 },	-- A Grim Trophy
+							["sourceQuests"] = {
+								38362,	-- A Grim Trophy (Horde)
+								38060,	-- Signal Boost (Alliance)
+							},
 						},
 						{	-- Criteria 3 — The Trial of Might
 							["criteriaID"] = 3,	-- The Trial of Might
@@ -1059,7 +1066,10 @@ _.Zones =
 						},
 						{	-- Criteria 7 — Secrets of the Shieldmaidens
 							["criteriaID"] = 7,	-- Secrets of the Shieldmaidens
-							["sourceQuests"] = { 38882 },	-- A New Life for Undeath
+							["sourceQuests"] = {
+								39122,	-- Ending the New Beginning (Alliance)
+								38882,	-- A New Life for Undeath (Horde)
+							},
 						},
 						{	-- Criteria 8 — The Champion of Stormheim
 							["criteriaID"] = 8,	-- The Champion of Stormheim
@@ -1083,6 +1093,7 @@ _.Zones =
 					}),
 					qa(38412, {	-- Above the Winter Moonlight (Alliance)
 						["sourceQuests"] = { 38342 },	-- Another Way
+						["coord"] = { 45.7, 72.9, 634 },
 						["qg"] = 91558,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38618, {	-- Above the Winter Moonlight (Horde)
@@ -1111,6 +1122,7 @@ _.Zones =
 					}),
 					qa(38312, {	-- A Grapple a Day (Alliance)
 						["sourceQuests"] = { 38473 },	-- Will of the Thorignir
+						["coord"] = { 37.4, 63.8, 634 },
 						["qg"] = 91222,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38612, {	-- A Grapple a Day (Horde)
@@ -1169,6 +1181,7 @@ _.Zones =
 					}),
 					qa(38342, {	-- Another Way (Alliance)
 						["sourceQuests"] = { 38410 },	-- Impalement Insurance
+						["coord"] = { 46.2, 70.3, 634 },
 						["qg"] = 91553,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38617, {	-- Another Way (Horde)
@@ -1227,7 +1240,11 @@ _.Zones =
 						["coord"] = { 46.6, 44.4, 634 },
 						["sourceQuests"] = { 39590 },	-- Ahead of the Game
 					}),
-					qa(39092),	-- Becoming the Ascendant (Alliance)
+					qa(39092, {	-- Becoming the Ascendant (Alliance)
+						["sourceQuests"] = { 39063 },	-- Shielded Secrets
+						["coord"] = { 60.5, 65.0, 634 },
+						["qg"] = 95921,	-- Commander Lorna Crowley
+					}),
 					qh(39155, {	-- Becoming the Ascendant (Horde)
 						["sourceQuests"] = { 38878 },	-- Shielded Secrets
 						["coord"] = { 60.9, 65.1, 634 },
@@ -1322,21 +1339,30 @@ _.Zones =
 						["coord"] = { 54.9, 72.5, 634 },
 						["qg"] = 93603,	-- Nathanos Blightcaller
 					}),
-					qa(39060),	-- Combustible Contagion
+					qa(39060, {	-- Combustible Contagion
+						["sourceQuests"] = { 39059 },	-- To Catch a Banshee
+						["coord"] = { 71.5, 59.9, 634 },
+						["qg"] = 94318,	-- Genn Greymane
+					}),
 					q(38624,  {	-- Cry Thunder!
 						["qg"] = 92218,	-- Thymjaris
 						["coord"] = { 40.8, 80.8, 634 },
 						["sourceQuests"] = { 39652 },	-- Where Dragons Rule
 					}),
 					qa(39472, {	-- Cut Out the Heart
-						i(129252),
-						i(129255),
-						i(129256),
-						i(129257),
-						i(129250),
-						i(129251),
-						i(129253),
-						i(129254),
+						["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
+						["coord"] = { 72.3, 61.0, 634 },
+						["icon"] = "Interface\\Icons\\inv_misc_map_01",
+						["g"] = {
+							i(129252),	-- Lorna's Bracelet
+							i(129255),	-- Worgen Kings Wraps
+							i(129256),	-- Shotgun Rider's Bracers
+							i(129257),	-- Greywatch Vambraces
+							i(129250),	-- Shotgun Rider's Shoulderpads
+							i(129251),	-- Lorna's Mantle
+							i(129253),	-- Greywatch Spaulders
+							i(129254),	-- Worgen King Shoulderguards
+						},
 					}),
 					q(42447,  {	-- Dances With Ravenbears
 						["sourceQuests"] = {
@@ -1370,16 +1396,24 @@ _.Zones =
 						["coord"] = { 51.4, 56.9, 634 },
 					}),
 					qa(39122, {	-- Ending the New Beginning
-						i(129346),
-						i(129347),
-						i(129348),
-						i(129349),
+						["sourceQuests"] = { 39092 },	-- Becoming the Ascendant
+						["coord"] = { 62.2, 68.1, 634 },
+						["qg"] = 95804,	-- Genn Greymane
+						["g"] = {
+							i(129258),	-- Sylvanas' Broken Arrow
+							i(129259),	-- Bane of the Darklady
+							i(129260),	-- Tenacity of Cursed Blood
+							i(129346),	-- Stylish Gilnean Collar
+							i(129347),	-- Raging Worgen Hood
+							i(129348),	-- Wall Watcher's Coif
+							i(129349),	-- Refined Rage Headcage
+						},
 					}),
 					qh(38308, {	-- Eyes in the Overlook
 						["coord"] = { 36.7, 31.0, 634 },
 						["sourceQuests"] = { 38362 },	-- A Grim Trophy
 					}),
-					q(40568,  {	-- Fury of the Storm
+					q(40568,  {	-- Fury of the Storm	
 						["qgs"] = {
 							91249,	-- Vethir
 							96465,	-- Vethir
@@ -1419,6 +1453,7 @@ _.Zones =
 							38318,	-- No Wings Required
 							38405,	-- To Weather the Storm
 						},
+						["coord"] = { 43.8, 68.2, 634 },
 						["qg"] = 91519,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38615, {	-- Impalement Insurance (Horde)
@@ -1460,7 +1495,6 @@ _.Zones =
 						["coord"] = { 33.7, 50.8, 634 },
 						["qg"] = 90866,	-- Tinkmaster Overspark
 					}),
-					qa(38206),	-- Making the Rounds
 					qh(38317, {	-- Masters of Disguise
 						["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
 						["coord"] = { 33.3, 31.4, 634 },
@@ -1493,6 +1527,7 @@ _.Zones =
 					}),
 					qa(38318, {	-- No Wings Required (Alliance)
 						["sourceQuests"] = { 38312 },	-- A Grapple a Day
+						["coord"] = { 42.0, 64.4, 634 },
 						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
 					}),
 					qh(38613, {	-- No Wings Required (Horde)
@@ -1586,7 +1621,11 @@ _.Zones =
 							i(132770),	-- Runespeaker's Waistcord
 						},
 					}),
-					qa(39063),	-- Shielded Secrets (Alliance)
+					qa(39063, {	-- Shielded Secrets (Alliance)
+						["sourceQuests"] = { 39062 },	-- To Skold-Ashil
+						["coord"] = { 63.5, 61.8, 634 },
+						["qg"] = 93779,	-- Commander Lorna Crowley
+					}),
 					qh(38878, {	-- Shielded Secrets (Horde)
 						["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 						["coord"] = { 56.8, 66.3, 634 },
@@ -1597,14 +1636,17 @@ _.Zones =
 						["qg"] = 91590,	-- Apothecary Withers
 					}),
 					qa(38060, {	-- Signal Boost
-						i(129233),
-						i(129234),
-						i(129235),
-						i(129236),
-						i(129310),
-						i(129311),
-						i(129312),
-						i(129313),
+						["sourceQuests"] = { 38058 },	-- Lightning Rod
+						["g"] = {
+							i(129233),	-- Tinkmaster's Spare Shoes
+							i(129234),	-- Tinkmaster's Insulated Boots
+							i(129235),	-- Tinkmaster's Buzzing Kickers
+							i(129236),	-- Tinkmaster's Cog Stompers
+							i(129310),	-- Skyfire Hood
+							i(129311),	-- Gryphon Rider's Mask
+							i(129312),	-- Tinkerer's Thinking Hat
+							i(129313),	-- Tinkmaster's Mindvault
+						},
 					}),
 					q(42446,  {	-- Singed Feathers
 						["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
@@ -1674,7 +1716,9 @@ _.Zones =
 						i(130005),	-- Valor-Bound Greaves
 					}),
 					qa(38210, {	-- The Ancient Trials (Alliance)
-						["qg"] = 97306,	-- Muninn (Alliance)
+						["sourceQuests"] = { 38060 },	-- Signal Boost
+						["coord"] = { 33.7, 45.9, 634 },
+						["qg"] = 97306,	-- Muninn
 					}),
 					qh(38459, {	-- The Ancient Trials (Horde)
 						["sourceQuests"] = { 38362 },	-- A Grim Trophy
@@ -1753,6 +1797,7 @@ _.Zones =
 							39791,	-- Lay Them to Rest
 						},
 						["coord"] = { 69.8, 45.6, 634 },
+						["icon"] = "Interface\\Icons\\INV_Archaeology_Ogres_Pictogram_Tablet",
 					}),
 					q(39788,  {	-- The Runewood's Revenge
 						["sourceQuests"] = { 39796 },	-- To Haustvald
@@ -1780,7 +1825,11 @@ _.Zones =
 						["coord"] = { 37.8, 21.6, 634 },
 						["qg"] = 91158,	-- Nathanos Blightcaller
 					}),
-					qa(39059),	-- To Catch a Banshee
+					qa(39059, {	-- To Catch a Banshee
+						["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
+						["coord"] = { 60.0, 51.2, 634 },
+						["qg"] = 94346,	-- Ensign Ward
+					}),
 					q(39796,  {	-- To Haustvald
 						["sourceQuests"] = { 39804 },	-- Speaking of Bones
 						["coord"] = { 60.0, 50.8, 634 },
@@ -1791,7 +1840,15 @@ _.Zones =
 						["coord"] = { 59.0, 42.9, 634 },
 						["qg"] = 97973,	-- Havi
 					}),
-					qa(39062),	-- To Skold-Ashil (Alliance)
+					qa(39062, {	-- To Skold-Ashil (Alliance)
+						["sourceQuests"] = {
+							39060,	-- Combustible Contagion
+							39472,	-- Cut Out the Heart
+							39061,	-- Whispers From the Dark
+						},
+						["coord"] = { 71.5, 59.8, 634 },
+						["qg"] = 94318,	-- Genn Greymane
+					}),
 					qh(39154, {	-- To Skold-Ashil (Horde)
 						["sourceQuests"] = {
 							39385,	-- A Gift for Greymane
@@ -1803,6 +1860,7 @@ _.Zones =
 					}),
 					qa(38405, {	-- To Weather the Storm (Alliance)
 						["sourceQuests"] = { 38312 },	-- A Grapple a Day
+						["coord"] = { 42.0, 64.4, 634 },
 						["qg"] = 91481,	-- Commander Lorna Crowley <Gilneas Brigade>
 						["g"] = {
 							i(121567),	-- Galeborn's Oiled Cloak
@@ -1878,9 +1936,14 @@ _.Zones =
 							i(132799),	-- Thrymjaris' Grace
 						},
 					}),
-					qa(39061),	-- Whispers from the Dark
+					qa(39061, {	-- Whispers from the Dark
+						["sourceQuests"] = { 39059 },	-- To Catch a Banshee
+						["coord"] = { 71.5, 59.9, 634 },
+						["qg"] = 94318,	-- Genn Greymane
+					}),
 					qa(38473, {	-- Will of the Thorignir (Alliance)
 						["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
+						["coord"] = { 43.1, 49.1, 634 },
 						["qg"] = 96254,	-- Havi
 					}),
 					qh(38611, {	-- Will of the Thorignir (Horde)
@@ -2300,6 +2363,10 @@ _.Zones =
 							{	-- Marius & Tehd versus an Inquisitor (Adventurer of Stormheim)
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 								["criteriaID"] = 24,	-- Marius & Tehd versus an Inquisitor
+							},
+							{	-- Tehd & Marius' Excellent Adventure
+								["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
+								["criteriaID"] = 4,	-- Stormheim
 							},
 						},
 					}), 
