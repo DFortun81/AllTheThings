@@ -153,6 +153,13 @@ _.Zones =
 							i(167649),	-- Hundred-Fathom Lure
 						},
 					},
+					{	-- Bots Gone Wild
+						["questID"] = 56334,
+						["qg"] = 154655,	-- Tyler Swaptech
+						["coord"] = { 59.9, 69.6, 1462 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Chopped Bots -- TODO: verify sourceQuest. Not always available. Possibly on some kind of a rotation?
 						["questID"] = 54965, -- also popped 55480
 						["qg"] = 150086,	-- Bolten Springspark
