@@ -27,6 +27,7 @@ _.NeverImplemented =
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
+		un(1, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		un(1, i(166700)),	-- Durable Sailor's Duffel
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -50,6 +51,7 @@ _.NeverImplemented =
 		un(1, i(157654)),	-- stalwarts bulwark (Lv20 Start Gear?)
 		un(1, i(157656)),	-- raincallers shield (Lv20 Start Gear?)
 		un(1, i(157657)),	-- foebreakers barrier (Lv20 Start Gear?)
+		un(1, i(157629)),	-- hammer of faith
 		
 		-- Possible BC TW Gear (not in journal)
 		un(1, i(150450)),	-- Nether Shadow Tunic
@@ -375,8 +377,10 @@ _.NeverImplemented =
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(54708)),	-- Ceremonial Leather Gloves
 			un(1, i(54666)),	-- Ceremonial Leather Harness
+			un(1, i(37176)),	-- Cavern Leather Treads
+			un(1, i(30288)),	-- Cenarion wardens gloves
 			un(1, i(54698)),	-- Ceremonial Leather Loincloth
-			un(1, i(5821)),	-- Darkstalker Boots (Leather)
+			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(54683)),	-- Dusky Leather Armor
 			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
 			un(1, i(54674)),	-- Gloomshroud Armor
@@ -2045,6 +2049,8 @@ _.NeverImplemented =
 			un(1, i(109470)),	-- Unknown
 			un(1, i(109533)),	-- Unknown
 			un(1, i(90331)),	-- Face Smasher Warhammer
+			un(1, i(140697)),	-- Justicar's Hammer
+			un(1, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
