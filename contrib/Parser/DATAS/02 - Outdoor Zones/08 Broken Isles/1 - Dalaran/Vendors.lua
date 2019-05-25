@@ -376,6 +376,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Ironskin Slippers
 												["itemID"] = 135962,	-- Vindictive Combatant's Ironskin Slippers
 											},
+											{	-- Fearless Combatant's Ironskin Helm
+												["itemID"] = 142933,	-- Fearless Combatant's Ironskin Helm
+											},
+											{	-- Fearless Combatant's Ironskin Spaulders
+												["itemID"] = 142935,	-- Fearless Combatant's Ironskin Spaulders
+											},
+											{	-- Fearless Combatant's Ironskin Cloak
+												["itemID"] = 142992,	-- Fearless Combatant's Ironskin Cloak
+											},
+											{	-- Fearless Combatant's Ironskin Tunic
+												["itemID"] = 142936,	-- Fearless Combatant's Ironskin Tunic
+											},
+											{	-- Fearless Combatant's Ironskin Wristguards
+												["itemID"] = 142938,	-- Fearless Combatant's Ironskin Wristguards
+											},
+											{	-- Fearless Combatant's Ironskin Gloves
+												["itemID"] = 142932,	-- Fearless Combatant's Ironskin Gloves
+											},
+											{	-- Fearless Combatant's Leather Belt
+												["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+											},
+											{	-- Fearless Combatant's Ironskin Legguards
+												["itemID"] = 142934,	-- Fearless Combatant's Ironskin Legguards
+											},
+											{	-- Fearless Combatant's Ironskin Slippers
+												["itemID"] = 142931,	-- Fearless Combatant's Ironskin Slippers
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
