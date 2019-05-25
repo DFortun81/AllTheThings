@@ -691,7 +691,68 @@ _.GearSets =
 									},
 								},
 							},
-							
+							{	-- Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19 & 5/22/19]
+								["setID"] = 1163,	-- Vindictive Combatant's Dreadplate Armor
+								["classes"] = {
+									6,	-- Death Knight
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Dreadplate Helm
+										["itemID"] = 135933,	-- Vindictive Combatant's Dreadplate Helm
+									},
+									{	-- Vindictive Combatant's Dreadplate Shoulders
+										["itemID"] = 135935,	-- Vindictive Combatant's Dreadplate Shoulders
+									},
+									{	-- Vindictive Combatant's Dreadcloak
+										["itemID"] = 136018,	-- Vindictive Combatant's Dreadcloak
+									},
+									{	-- Vindictive Combatant's Dreadplate Chestpiece
+										["itemID"] = 135930,	-- Vindictive Combatant's Dreadplate Chestpiece
+									},
+									{	-- Vindictive Combatant's Dreadplate Wristplates
+										["itemID"] = 135937,	-- Vindictive Combatant's Dreadplate Wristplates
+									},
+									{	-- Vindictive Combatant's Dreadplate Gauntlets
+										["itemID"] = 135932,	-- Vindictive Combatant's Dreadplate Gauntlets
+									},
+									{	-- Vindictive Combatant's Dreadplate Girdle
+										["itemID"] = 135936,	-- Vindictive Combatant's Dreadplate Girdle
+									},
+									{	-- Vindictive Combatant's Dreadplate Legguards
+										["itemID"] = 135934,	-- Vindictive Combatant's Dreadplate Legguards
+									},
+									{	-- Vindictive Combatant's Dreadplate Sabatons
+										["itemID"] = 135931,	-- Vindictive Combatant's Dreadplate Sabatons
+									},
+									{	-- Fearless Combatant's Dreadplate Helm
+										["itemID"] = 142904,	-- Fearless Combatant's Dreadplate Helm
+									},
+									{	-- Fearless Combatant's Dreadplate Shoulders
+										["itemID"] = 142987,	-- Fearless Combatant's Dreadplate Shoulders
+									},
+									{	-- Fearless Combatant's Dreadcloak
+										["itemID"] = 142899,	-- Fearless Combatant's Dreadcloak
+									},
+									{	-- Fearless Combatant's Dreadplate Chestpiece
+										["itemID"] = 142906,	-- Fearless Combatant's Dreadplate Chestpiece
+									},
+									{	-- Fearless Combatant's Dreadplate Wristplates
+										["itemID"] = 142901,	-- Fearless Combatant's Dreadplate Wristplates
+									},
+									{	-- Fearless Combatant's Dreadplate Gauntlets
+										["itemID"] = 142905,	-- Fearless Combatant's Dreadplate Gauntlets
+									},
+									{	-- Fearless Combatant's Dreadplate Girdle
+										["itemID"] = 142903,	-- Fearless Combatant's Dreadplate Girdle
+									},
+									{	-- Fearless Combatant's Dreadplate Legguards
+										["itemID"] = 142900,	-- Fearless Combatant's Dreadplate Legguards
+									},
+									{	-- Fearless Combatant's Dreadplate Sabatons
+										["itemID"] = ,	-- Fearless Combatant's Dreadplate Sabatons
+									},
+								},
+							},
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
 					}),
