@@ -697,8 +697,8 @@ _.GearSets =
 								i(117127),	-- Mistdancer Amulet
 								i(117128),	-- Mistdancer Band of Stoicism
 								i(117129),	-- Mistdancer Ring of Stoicism
-								--	i(101089),	-- Mistdancer Defender Idol
-								--	i(101087),	-- Mistdancer Defender Stone
+								i(117312),	-- Mistdancer Defender Idol
+								i(117310),	-- Mistdancer Defender Stone
 							}),
 							n(-9933, {	-- Mistweaver
 								i(117143),	-- Mistdancer Hood
@@ -713,8 +713,8 @@ _.GearSets =
 								i(117141),	-- Mistdancer Boots
 								i(117149),	-- Mistdancer Band of Wisdom
 								i(117148),	-- Mistdancer Ring of Wisdom
-								--	i(101102),	-- Mistdancer Idol of Wisdom
-								--	i(101107),	-- Mistdancer Stone of Wisdom
+								i(117145),	-- Mistdancer Idol of Wisdom
+								i(117150),	-- Mistdancer Stone of Wisdom
 							}),
 							n(-9932, {	-- Windwalker
 								--	i(101093),	-- Mistdancer Helm
@@ -729,8 +729,8 @@ _.GearSets =
 								i(117134),	-- Mistdancer Footpads
 								i(117158),	-- Mistdancer Band of Onslaught
 								i(117159),	-- Mistdancer Ring of Onslaught
-								--	i(101113),	-- Mistdancer Idol of Rage
-								--	i(101117),	-- Mistdancer Stone of Rage
+								i(117156),	-- Mistdancer Idol of Rage
+								i(117160),	-- Mistdancer Stone of Rage
 							}),
 						},
 						["classes"] = { 10 }
@@ -903,10 +903,10 @@ _.GearSets =
 					}),
 					n(-149, {	-- Sunsoul 
 						["groups"] = {
-							--	i(101143),	-- Sunsoul Shield
-							--	i(101145),	-- Sunsoul Bulwark
+							i(117186),	-- Sunsoul Shield
+							i(117188),	-- Sunsoul Bulwark
 							n(-9942, {	-- Holy
-								--	i(101142),	-- Sunsoul Scepter
+								i(117185),	-- Sunsoul Scepter
 								i(117175),	-- Sunsoul Headpiece
 								i(117177),	-- Sunsoul Necklace
 								i(117172),	-- Sunsoul Cloak of Wisdom
@@ -919,8 +919,8 @@ _.GearSets =
 								i(117173),	-- Sunsoul Boots
 								i(117179),	-- Sunsoul Band of Wisdom
 								i(117180),	-- Sunsoul Ring of Wisdom
-								--	i(101135),	-- Sunsoul Idol of Wisome
-								--	i(101138),	-- Sunsoul Stone of Wisdom
+								i(117178),	-- Sunsoul Idol of Wisome
+								i(117181),	-- Sunsoul Stone of Wisdom
 							}),
 							n(-9943, {	-- Protection
 								i(117187),	-- Sunsoul Sword
@@ -936,8 +936,8 @@ _.GearSets =
 								i(117198),	-- Sunsoul Greaves
 								i(117205),	-- Sunsoul Band of Stoicism
 								i(117204),	-- Sunsoul Ring of Stoicism
-								--	i(101160),	-- Oathsworn Defender Idol
-								--	i(101163),	-- Oathsworn Defender Stone
+								i(117203),	-- Sunsoul Defender Idol
+								i(117206),	-- Sunsoul Defender Stone
 							}),
 							n(-9944, {	-- Retributon
 								--	i(101146),	-- Sunsoul Greatsword
@@ -954,8 +954,8 @@ _.GearSets =
 								i(117164),	-- Sunsoul Sabatons
 								i(117193),	-- Sunsoul Band of Might
 								i(117192),	-- Sunsoul Ring of Might
-								--	i(101151),	-- Sunsoul Stone of Battle
-								--	i(101152),	-- Sunsoul Idol of Battle
+								i(117194),	-- Sunsoul Stone of Battle
+								i(117195),	-- Sunsoul Idol of Battle
 							}),
 						},
 						["classes"] = { 2 }
@@ -969,37 +969,37 @@ _.GearSets =
 								i(117330),	-- Oathsworn Headchopper
 								i(117321),	-- Oathsworn Greataxe
 								i(117331),	-- Oathsworn Axe
-								--	i(101282),	-- Oathsworn Helm
+								i(117325),	-- Oathsworn Helm
 								i(117334),	-- Oathsworn Pendant
 								i(117333),	-- Oathsworn Cloak of Battle
-								--	i(101284),	-- Oathsworn Pauldrons
-								--	i(101279),	-- Oathsworn Breastplate
-								--	i(101286),	-- Oathsworn Vambraces
-								--	i(101281),	-- Oathsworn Gauntlets
-								--	i(101285),	-- Oathsworn Girdle
-								--	i(101283),	-- Oathsworn Legplates
-								--	i(101280),	-- Oathsworn Sabatons
+								i(117327),	-- Oathsworn Pauldrons
+								i(117322),	-- Oathsworn Breastplate
+								i(117329),	-- Oathsworn Vambraces
+								i(117324),	-- Oathsworn Gauntlets
+								i(117328),	-- Oathsworn Girdle
+								i(117326),	-- Oathsworn Legplates
+								i(117323),	-- Oathsworn Sabatons
 								i(117335),	-- Oathsworn Band of Might
 								i(117336),	-- Oathsworn Ring of Might
-								--	i(101295),	-- Oathsworn Idol of Battle
-								--	i(101294),	-- Oathsworn Stone of Battle
+								i(117338),	-- Oathsworn Idol of Battle
+								i(117337),	-- Oathsworn Stone of Battle
 							}),
 							n(-9947, {	-- Protection
 								--	i(101288),	-- Oathsworn Sword
-								--	i(101300),	-- Oathsworn Faceguard
+								i(117343),	-- Oathsworn Faceguard
 								i(117345),	-- Oathsworn Amulet
 								i(117340),	-- Oathsworn Cloak of Stoicism
-								--	i(101307),	-- Oathsworn Shoulderguards
-								--	i(101296),	-- Oathsworn Chestguard
-								--	i(101309),	-- Oathsworn Armguards
-								--	i(101299),	-- Oathsworn Handguards
-								--	i(101308),	-- Oathsworn Waistband
-								--	i(101301),	-- Oathsworn Legguards
-								--	i(101298),	-- Oathsworn Greaves
+								i(117350),	-- Oathsworn Shoulderguards
+								i(117339),	-- Oathsworn Chestguard
+								i(117352),	-- Oathsworn Armguards
+								i(117342),	-- Oathsworn Handguards
+								i(117351),	-- Oathsworn Waistband
+								i(117344),	-- Oathsworn Legguards
+								i(117341),	-- Oathsworn Greaves
 								i(117347),	-- Oathsworn Band of Stoicism
 								i(117348),	-- Oathsworn Ring of Stoicism
-								--	i(101303),	-- Oathsworn Defender Idol
-								--	i(101306),	-- Oathsworn Defender Stone
+								i(117346),	-- Oathsworn Defender Idol
+								i(117349),	-- Oathsworn Defender Stone
 							}),
 						},
 						["classes"] = { 1 }
