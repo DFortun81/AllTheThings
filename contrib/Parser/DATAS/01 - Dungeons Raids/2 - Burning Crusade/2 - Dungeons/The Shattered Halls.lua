@@ -7,78 +7,74 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 65,
 		["mapID"] = 246,
 		["coord"] = { 47.66, 51.98, 100 },	-- The Shattered Halls, Hellfire Peninsula
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
-				h({
+				{	-- A Very Special Cloth
 					["questID"] = 29655,	-- A Very Special Cloth
-					["qg"] = 54931,	-- Stone Guard Stok'ton
-				}),
-				h({
+					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["races"] = HORDE_ONLY,
+				},
+				{	-- Fel Ember
 					["questID"] = 29650,	-- Fel Ember
-					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["groups"] = {
+					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(25790),	-- Expedition Scout's Epaulets
 						i(25788),	-- Dauntless Handguards
 						i(25791),	-- Gloves of Preservation
 						i(25789),	-- Rune-Engraved Belt
 						i(25792),	-- Curate's Boots
 					},
-				}),
-				h({
+				},
+				{	-- Honor the Dying
 					["questID"] = 29651,	-- Honor the Dying
-					["qg"] = 54932,	-- Caza'rez
-				}),
-				a({
+					["qg"] = 54932,			-- Caza'rez
+					["races"] = HORDE_ONLY,
+				},
+				{	-- How to Save a Life
 					["questID"] = 29649,	-- How to Save a Life
-					["qg"] = 54933,	-- Advance Scout Chadwick
-					["groups"] = {
+					["qg"] = 54933,			-- Advance Scout Chadwick
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
 						i(25790),	-- Expedition Scout's Epaulets
 						i(25788),	-- Dauntless Handguards
 						i(25791),	-- Gloves of Preservation
 						i(25789),	-- Rune-Engraved Belt
 						i(25792),	-- Curate's Boots
 					},
-				}),
-				a({
+				},
+				{	-- O'mrogg's Warcloth
 					["questID"] = 29656,	-- O'mrogg's Warcloth
-					["qg"] = 54933,	-- Advance Scout Chadwick
-				}),
-				a({
+					["qg"] = 54933,			-- Advance Scout Chadwick
+					["races"] = ALLIANCE_ONLY,
+				},
+				{	-- One Last Favor
 					["questID"] = 29652,	-- One Last Favor
-					["qg"] = 54934,	-- Gunny
-				}),
-				h({
+					["qg"] = 54934,			-- Gunny
+					["races"] = ALLIANCE_ONLY,
+				},
+				{	-- The Will of the Warchief
 					["questID"] = 29653,	-- The Will of the Warchief
-					["qg"] = 54931,	-- Stone Guard Stok'ton
-					["groups"] = {
+					["qg"] = 54931,			-- Stone Guard Stok'ton
+					["g"] = {
 						i(25808),	-- Rod of Dire Shadows
 						i(25809),	-- Maimfist's Choker
 						i(25810),	-- Vicar's Cloak
 						i(25811),	-- Conqueror's Band
 					},
-				}),
-				a({
+				},
+				{	-- Turning the Tide
 					["questID"] = 29654,	-- Turning the Tide
-					["qg"] = 54933,	-- Advance Scout Chadwick
-					["groups"] = {
+					["qg"] = 54933,			-- Advance Scout Chadwick
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(25806),	-- Nethekurse's Rod of Torment
 						i(25803),	-- Medallion of the Valiant Guardian
 						i(25805),	-- Mantle of Vivification
 						i(25804),	-- Naliko's Revenge
 					},
-				}),
-			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["g"] = {
-					{	-- Formula: Enchant 2H Weapon - Savagery
-						["itemID"] = 22554,	-- Formula: Enchant 2H Weapon - Savagery
-						["crs"] = {
-							17465,	-- Shattered Hand Centurion
-						},
-					},
 				},
-			},
+			}),
 			d(1, {	-- Normal
 				cr(16807, e(566, {	-- Grand Warlock Nethekurse
 					i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
@@ -133,7 +129,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(16807, e(566, {	-- Grand Warlock Nethekurse
 						i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
 						i(27520),	-- Greathelm of the Unbreakable
@@ -185,7 +181,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
-				["groups"] = {
+				["g"] = {
 					cr(16807, e(566, {	-- Grand Warlock Nethekurse
 						i(123995),	-- Hortus' Seal of Brilliance
 						i(123984),	-- Greathelm of the Unbreakable
@@ -226,6 +222,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				["g"] = {
+					{	-- Formula: Enchant 2H Weapon - Savagery
+						["itemID"] = 22554,	-- Formula: Enchant 2H Weapon - Savagery
+						["crs"] = {
+							17465,	-- Shattered Hand Centurion
+						},
+					},
+				},
+			},
 		},
 	}),
 })};
