@@ -187,6 +187,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Felweave Treads
 												["itemID"] = 136002,	-- Vindictive Combatant's Felweave Treads
 											},
+											{	-- Fearless Combatant's Felweave Cowl
+												["itemID"] = 142973,	-- Fearless Combatant's Felweave Cowl
+											},
+											{	-- Fearless Combatant's Felweave Amice
+												["itemID"] = 142976,	-- Fearless Combatant's Felweave Amice
+											},
+											{	-- Fearless Combatant's Felweave Cloak
+												["itemID"] = 143307,	-- Fearless Combatant's Felweave Cloak
+											},
+											{	-- Fearless Combatant's Felweave Raiment
+												["itemID"] = 142975,	-- Fearless Combatant's Felweave Raiment
+											},
+											{	-- Fearless Combatant's Felweave Bracers
+												["itemID"] = 142978,	-- Fearless Combatant's Felweave Bracers
+											},
+											{	-- Fearless Combatant's Felweave Handguards
+												["itemID"] = 142972,	-- Fearless Combatant's Felweave Handguards
+											},
+											{	-- Fearless Combatant's Felweave Cord
+												["itemID"] = 142977,	-- Fearless Combatant's Felweave Cord
+											},
+											{	-- Fearless Combatant's Felweave Trousers
+												["itemID"] = 142974,	-- Fearless Combatant's Felweave Trousers
+											},
+											{	-- Fearless Combatant's Felweave Treads
+												["itemID"] = 142971,	-- Fearless Combatant's Felweave Treads
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
