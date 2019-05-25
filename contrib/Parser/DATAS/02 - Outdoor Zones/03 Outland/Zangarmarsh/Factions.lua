@@ -5,20 +5,20 @@ _.Zones =
 {
 	{	-- Outland
 		["mapID"] = 101,	-- Outland
-		["groups"] = {
+		["g"] = {
 			{	-- Zangarmarsh
 				["mapID"] = 102,	-- Zangarmarsh
-				["groups"] = {
+				["g"] = {
 					{	-- Faction
 						["npcID"] = -6013,	-- Faction
 						["g"] = {
 							faction(942, {	-- Cenarion Expedition
-								["groups"] = {
+								["g"] = {
 									n(-17,  {	-- Quests
 										q(9802, {	-- Plants of Zangarmarsh
 											["qg"] = 17909,	-- Lauranna Thar'well
 											["coord"] = { 80.3, 64.2, 102 },
-											["groups"] = {
+											["g"] = {
 												i(24402)	-- Package of Identified Plants
 											},
 										}),
@@ -28,7 +28,7 @@ _.Zones =
 											["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 											["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
 											["repeatable"] = true,
-											["groups"] = {
+											["g"] = {
 												i(24402)	-- Package of Identified Plants
 											},
 										}),
@@ -44,8 +44,10 @@ _.Zones =
 									}),
 									n(-2,   {	-- Vendors
 										n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
-											["coord"] = { 79.2, 63.7, 102 },
-											["groups"] = {
+											["coords"] = { 
+												{ 79.25, 63.66, 102 },
+											},
+											["g"] = {
 												i(31804),	-- Cenarion Expedition Tabard
 												i(33999),	-- Cenarion War Hippogryph Mount
 												i(35403),	-- Crusader's Ornamented Gloves
@@ -99,8 +101,7 @@ _.Zones =
 								},
 							}),
 							faction(970, {	-- Sporeggar
-								["groups"] = {
-									ach(900),	-- The Czar of Sporeggar
+								["g"] = {
 									n(-17,  {	-- Quests
 										q(9809, {	-- More Glowcaps 
 											["qg"] = 17924,	-- Mshii'fn
@@ -137,24 +138,45 @@ _.Zones =
 											["repeatable"] = true,
 										}),
 									}),
-									n(-2,   {	-- Vendors
-										n(18382,  {		-- Mycah <Sporeggar Quartermaster>
-											["coord"] = { 17.8, 51.2, 102 },
-											["groups"] = {
-												i(24245, {	-- Glowcap
-													i(38229),	-- Pattern: Mycah's Botanical Bag
-													i(30156),	-- Recipe: Clam Bar
-													i(22906),	-- Recipe: Shrouding Potion
-													i(22916),	-- Recipe: Transmute Primal Earth to Water
-													i(34478),	-- Tiny Sporebat Pet
-													i(29150),	-- Hardened Stone Shard
-													i(25828),	-- Petrified Lichen Guard
-													i(29149),	-- Sporeling's Firestick
-													i(25827),	-- Muck-Covered Drape
-													i(31775),	-- Sporeggar Tabard
-												}),
+									{	-- Vendors
+										["npcID"] = -2,	-- Vendors
+										["g"] = {
+										{	-- Mycah <Sporeggar Quartermaster>
+											["npcID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
+											["itemID"] = 24245,	-- Glowcap
+											["coords"] = { 
+												{ 18.27, 51.12, 102 },
 											},
-										}),
+											["g"] = {
+												{	-- Tiny Sporebat
+													["itemID"] = 34478,	-- Tiny Sporebat
+												},
+												{	-- Pattern: Mycah's Botanical Bag
+													["itemID"] = 38229,	-- Pattern: Mycah's Botanical Bag
+												},
+												{	-- Recipe: Clam Bar
+													["itemID"] = 30156,	-- Recipe: Clam Bar
+												},
+												{	-- Recipe: Shrouding Potion
+													["itemID"] = 22906,	-- Recipe: Shrouding Potion
+												},
+												{	-- Recipe: Transmute Primal Earth to Water
+													["itemID"] = 22916,	-- Recipe: Transmute Primal Earth to Water
+												},
+												{	-- Hardened Stone Shard
+													["itemID"] = 29150,	-- Hardened Stone Shard
+												},
+												{	-- Petrified Lichen Guard
+													["itemID"] = 25828,	-- Petrified Lichen Guard
+												},
+												{	-- Sporeling's Firestick
+													["itemID"] = 29149,	-- Sporeling's Firestick
+												},
+												{	-- Muck-Covered Drape
+													["itemID"] = 25827,	-- Muck-Covered Drape
+												},
+											},
+										},
 									}),
 								},
 							}),
