@@ -11,6 +11,7 @@ _.Zones =
 					n(151934, {	-- Arachnoid Harvester
 						["questID"] = 55512,
 						["coord"] = { 52.6, 41.0, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Arachnoid Harvester)
 								["achievementID"] = 13470,
@@ -23,8 +24,9 @@ _.Zones =
 					}),
 					n(150394, {	-- Armored Vaultbot
 						--["questID"] = ,
-						["coords"] = {
+						["isDaily"] = true,
 						["description"] = "Requires an |cFFFFD700Armored Vaultbot Key|r.",
+						["coords"] = {
 							{ 53.6, 46.4, 1462 },
 							{ 53.8, 49.4, 1462 },
 							{ 53.2, 49.7, 1462 },
@@ -36,25 +38,24 @@ _.Zones =
 							},
 						},
 					}),
-					n(153200, {	-- Boilburn
-						["questID"] = 55857, -- no second questID
-						["coord"] = { 51.1, 50.4, 1462 },
-						["description"] = "Activate the |cFFFFD700Drill Rig|r.",
+					n(151308, {	-- Boggac Skullbash
+						["isDaily"] = true,
 						["g"] = {
-							{	-- Rest in Pistons (Boilburn)
-								["achievementID"] = 25,
+							{	-- Rest in Pistons (Boggac Skullbash)
+								["achievementID"] = 13470,
+								["criteriaID"] = 14,
 							},
 						},
 					}),
-					n(153206, {	-- Ol' Big Tusk
-						["allianceQuestID"] = 55853,
-						["hordeQuestID"] = 55928,
-						["coord"] = { 55.6, 39.5, 1462 },
-						["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
+					n(153200, {	-- Boilburn
+						["questID"] = 55857, -- no second questID
+						["coord"] = { 51.1, 50.4, 1462 },
+						["isDaily"] = true,
+						["description"] = "Activate the |cFFFFD700Drill Rig|r.",
 						["g"] = {
-							{	-- Rest In Pistons (Ol' Big Tusk)
+							{	-- Rest in Pistons (Boilburn)
 								["achievementID"] = 13470,
-								["criteriaID"] = 22,
+								["criteriaID"] = 25,
 							},
 						},
 					}),
@@ -62,6 +63,7 @@ _.Zones =
 						["allianceQuestID"] = 55537,
 						["hordeQuestID"] = 55919,
 						["coord"] = { 65.8, 22.9, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest In Pistons (Bonepicker)
 								["achievementID"] = 13470,
@@ -70,9 +72,19 @@ _.Zones =
 							i(169392),	-- Bonebiter
 						},
 					}),
+					n(154739, {	-- Caustic Mechaslime
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Caustic Mechaslime)
+								["achievementID"] = 13470,
+								["criteriaID"] = 34,
+							},
+						},
+					}),
 					n(152569, {	-- Crazed Trogg
 						--["questID"] = 55161,
 						["coord"] = { 82.3, 21.0, 1462 },
+						["isDaily"] = true,
 						["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
 						["g"] = {
 							{	-- Rest in Pistons (Crazed Trogg)
@@ -85,6 +97,7 @@ _.Zones =
 					n(151569, {	-- Deepwater Maw
 						--["questID"] = 55514,	-- also popped 55917
 						["coord"] = { 35.3, 43.0, 1462 },
+						["isDaily"] = true,
 						["description"] = "Must complete the |cFFFFD7000Let's Fish!|r questline to spawn him.",
 						["g"] = {
 							{	-- Rest in Pistons (Deepwater Maw)
@@ -94,10 +107,40 @@ _.Zones =
 							i(168804),	-- Powered Piscine Procurement Pole
 						},
 					}),
+					n(155060, {	-- Doppel Ganger
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (The Doppel Gang)
+								["achievementID"] = 13470,
+								["criteriaID"] = 35,
+							},
+						},
+					}),
+					n(150342, {	-- Earthbreaker Gulroc
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Earthbreaker Gulroc)
+								["achievementID"] = 13470,
+								["criteriaID"] = 21,
+							},
+						},
+					}),
+					--[[
+					n(, {	-- Enforcer KX-T57
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Enforcer KX-T57)
+								["achievementID"] = 13470,
+								["criteriaID"] = 31,
+							},
+						},
+					}),
+					]]--
 					n(151202, {	-- Foul Manifestation
 						["allianceQuestID"] = 55513,
 						["hordeQuestID"] = 55916,
 						["coord"] = { 65.7, 51.7, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Foul Manifestation)
 								["achievementID"] = 13470,
@@ -108,19 +151,83 @@ _.Zones =
 							}),
 						},
 					}),
+					n(151884, {	-- Fungarian Furor
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Fungarian Furor)
+								["achievementID"] = 13470,
+								["criteriaID"] = 9,
+							},
+							i(169379),	-- Snowsoft Nibbler
+						},
+					}),
+					n(153228, {	-- Gear Checker Cogstar -- possibly 154184?
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Gear Checker Cogstar)
+								["achievementID"] = 13470,
+								["criteriaID"] = 28,
+							},
+						},
+					}),
+					n(153205, {	-- Gemicide
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Gemicide)
+								["achievementID"] = 13470,
+								["criteriaID"] = 23,
+							},
+						},
+					}),
+					n(154701, {	-- Gorged Gear-Cruncher
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Gorged Gear-Cruncher)
+								["achievementID"] = 13470,
+								["criteriaID"] = 33,
+							},
+						},
+					}),
 					n(151684, {	-- Jawbreaker
 						--["questID"] = ,
 						["coord"] = { 77.3, 44.8, 1462 },
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Jawbreaker)
+								["achievementID"] = 13470,
+								["criteriaID"] = 4,
+							},
+						},
+					}),
+					n(152007, {	-- Killsaw
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Killsaw)
+								["achievementID"] = 13470,
+								["criteriaID"] = 8,
+							},
+						},
 					}),
 					n(151933, {	-- Malfunctioning Beastbot
 						["allianceQuestID"] = 55544,
 						["hordeQuestID"] = 55926,
 						["coord"] = { 60.7, 42.2, 1462 },
+						["isDaily"] = true,
 						["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
 						["g"] = {
 							{	-- Rest in Pistons (Malfunctioning Beastbot)
 								["achievementID"] = 13470,
 								["criteriaID"] = 19,
+							},
+							i(169382),	-- Lost Robogrip
+						},
+					}),
+					n(151124, {	-- Mechagonian Nullifier
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest In Pistons (Mechagonian Nullifier)
+								["achievementID"] = 13470,
+								["criteriaID"] = 1,
 							},
 						},
 					}),
@@ -128,6 +235,7 @@ _.Zones =
 						["allianceQuestID"] = 56100,
 						["hordeQuestID"] = 55386,
 						["coord"] = { 88.3, 20.6, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Mecharantuala)
 								["achievementID"] = 13470,
@@ -141,6 +249,7 @@ _.Zones =
 						["allianceQuestID"] = 55859,
 						["hordeQuestID"] = 55935,
 						["coord"] = { 61.0, 61.4, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Mr. Fixthis)
 								["achievementID"] = 13470,
@@ -148,9 +257,41 @@ _.Zones =
 							},
 						},
 					}),
+					n(153206, {	-- Ol' Big Tusk
+						["allianceQuestID"] = 55853,
+						["hordeQuestID"] = 55928,
+						["coord"] = { 55.6, 39.5, 1462 },
+						["isDaily"] = true,
+						["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
+						["g"] = {
+							{	-- Rest In Pistons (Ol' Big Tusk)
+								["achievementID"] = 13470,
+								["criteriaID"] = 22,
+							},
+						},
+					}),
+					n(151296, {	-- OOX-Avenger/MG
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (OOX-Avenger/MG)
+								["achievementID"] = 13470,
+								["criteriaID"] = 12,
+							},
+						},
+					}),
+					n(152764, {	-- Oxidized Leachbeast
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Oxidized Leachbeast)
+								["achievementID"] = 13470,
+								["criteriaID"] = 24,
+							},
+						},
+					}),
 					n(151702, {	-- Paol Pondwader
 						--["questID"] = , -- 55405, 55911, 56141
 						["coord"] = { 23.0, 68.4, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Paol Pondwader)
 								["achievementID"] = 13470,
@@ -159,21 +300,41 @@ _.Zones =
 							i(168832),	-- Galvanic Oscillator
 						},
 					}),
+					n(150575, {	-- Rumblerocks
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Rumblerocks)
+								["achievementID"] = 13470,
+								["criteriaID"] = 6,
+							},
+						},
+					}),
 					n(152182, {	-- Rustfeather
 						["coord"] = { 65.6, 78.3, 1462 },
+						["isDaily"] = true,
 						["g"] = {
+							{	-- Rest in Pistons (Rustfeather)
+								["achievementID"] = 13470,
+								["criteriaID"] = 18,
+							},
 							i(168370),	-- Rusted Keys to the Junkheap Drifter
 						},
 					}),
 					n(155583, {	-- Scrapclaw
 						--["questID"] = ,
 						["coord"] = { 82.3, 77.8, 1462 },
+						["isDaily"] = true,
 						["g"] = {
+							{	-- Rest in Pistons (Scrapclaw)
+								["achievementID"] = 13470,
+								["criteriaID"] = 36,
+							},
 							i(168327),	-- Chain Ignitercoil
 						},
 					}),
 					n(150937, {	-- Seaspit
 						["coord"] = { 19.3, 80.4, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Seaspit)
 								["achievementID"] = 13470,
@@ -184,8 +345,18 @@ _.Zones =
 							}),
 						},
 					}),
+					n(153000, {	-- Sparkqueen P'Emp
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Sparkqueen P'Emp)
+								["achievementID"] = 13470,
+								["criteriaID"] = 17,
+							},
+						},
+					}),
 					n(153226, {	-- Steel Singer Freza
 						["coord"] = { 25.1, 77.4, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Steel Singer Freza)
 								["achievementID"] = 13470,
@@ -196,9 +367,29 @@ _.Zones =
 							}),
 						},
 					}),
+					n(152113, {	-- The Kleptoboss
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (The Kleptoboss)
+								["achievementID"] = 13470,
+								["criteriaID"] = 26,
+							},
+							i(169886),	-- Spraybot 0D
+						},
+					}),
+					n(154225, {	-- The Rusty Prince
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (The Rusty Prince)
+								["achievementID"] = 13470,
+								["criteriaID"] = 32,
+							},
+						},
+					}),
 					n(151625, {	-- The Scrap King
 						--["questID"] = 55364,	-- 55161, 55908 and 55210 also popped
 						["coord"] = { 72.3, 49.8, 1462 },
+						["isDaily"] = true,
 						["crs"] = {
 							151623,	-- The Scrap King (while mounted on goretusk)
 						},
@@ -213,12 +404,22 @@ _.Zones =
 						["allianceQuestID"] = 55538,
 						["hordeQuestID"] = 55921,
 						["coord"] = { 57.3, 20.7, 1462 },
+						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest In Pistons (Uncle T'Rogg)
 								["achievementID"] = 13470,
 								["criteriaID"] = 15,
 							},
 							i(168749),	-- Performant Effective Logic Board
+						},
+					}),
+					n(150394, {	-- Vaultbot -- possibly 154968
+						["isDaily"] = true,
+						["g"] = {
+							{	-- Rest in Pistons (Vaultbot)
+								["achievementID"] = 13470,
+								["criteriaID"] = 30,
+							},
 						},
 					}),
 				}),

@@ -415,6 +415,7 @@ pet(94125, 1177); 	-- Living Sandling
 pet(166494, 2558);	-- Lord Woofington
 pet(127705, 1661); 	-- Lost Netherpup
 pet(163568, 2430);	-- Lost Platysaur [So Cute!]
+pet(169382, 2715);	-- Lost Robogrip
 pet(116155, 1511); 	-- Lovebird Hatchling
 pet(85871, 671);	-- Lucky Quilen Cub
 pet(73797, 337); 	-- Lump of Coal (Lumpy)
@@ -647,6 +648,7 @@ pet(151569, 2063); 	-- Sneaky Marmot
 pet(163819, 2459);	-- Snort
 pet(141530, 1941);	-- Snowfang
 pet(21309, 117); 	-- Snowman Kit (Tiny Snowman)
+pet(169379, 2712);	-- Snowsoft Nibbler
 pet(94209, 1197);	-- Snowy Panda
 pet(94152, 1183); 	-- Son of Animus
 pet(119143, 1574);	-- Son of Sethe
@@ -668,6 +670,7 @@ pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
 pet(167052, 2584);	-- Spirit of the Spring
 pet(163789, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
+pet(169886, 2753);	-- Spraybot 0D
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
