@@ -505,6 +505,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19 & 5/22/19]
+								["setID"] = 1161,	-- Vindictive Combatant's Ringmail Armor
+								["classes"] = {
+									7,	-- Shaman
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Ringmail Helm
+										["itemID"] = 135997,	-- Vindictive Combatant's Ringmail Helm
+									},
+									{	-- Vindictive Combatant's Ringmail Spaulders
+										["itemID"] = 135999,	-- Vindictive Combatant's Ringmail Spaulders
+									},
+									{	-- Vindictive Combatant's Totemic Cloak
+										["itemID"] = 136872,	-- Vindictive Combatant's Totemic Cloak
+									},
+									{	-- Vindictive Combatant's Ringmail Armor
+										["itemID"] = 135994,	-- Vindictive Combatant's Ringmail Armor
+									},
+									{	-- Vindictive Combatant's Ringmail Armband
+										["itemID"] = 136001,	-- Vindictive Combatant's Ringmail Armband
+									},
+									{	-- Vindictive Combatant's Ringmail Gauntlets
+										["itemID"] = 135996,	-- Vindictive Combatant's Ringmail Gauntlets
+									},
+									{	-- Vindictive Combatant's Ringmail Clasp
+										["itemID"] = 136000,	-- Vindictive Combatant's Ringmail Clasp
+									},
+									{	-- Vindictive Combatant's Ringmail Kilt
+										["itemID"] = 135998,	-- Vindictive Combatant's Ringmail Kilt
+									},
+									{	-- Vindictive Combatant's Ringmail Boots
+										["itemID"] = 135995,	-- Vindictive Combatant's Ringmail Boots
+									},
+									{	-- Fearless Combatant's Ringmail Helm
+										["itemID"] = 142966,	-- Fearless Combatant's Ringmail Helm
+									},
+									{	-- Fearless Combatant's Ringmail Spaulders
+										["itemID"] = 142968,	-- Fearless Combatant's Ringmail Spaulders
+									},
+									{	-- Fearless Combatant's Totemic Cloak
+										["itemID"] = 143297,	-- Fearless Combatant's Totemic Cloak
+									},
+									{	-- Fearless Combatant's Ringmail Armor
+										["itemID"] = 142963,	-- Fearless Combatant's Ringmail Armor
+									},
+									{	-- Fearless Combatant's Ringmail Armband
+										["itemID"] = 142970,	-- Fearless Combatant's Ringmail Armband
+									},
+									{	-- Fearless Combatant's Ringmail Gauntlets
+										["itemID"] = 142965,	-- Fearless Combatant's Ringmail Gauntlets
+									},
+									{	-- Fearless Combatant's Ringmail Clasp
+										["itemID"] = 142969,	-- Fearless Combatant's Ringmail Clasp
+									},
+									{	-- Fearless Combatant's Ringmail Leggings
+										["itemID"] = 142967,	-- Fearless Combatant's Ringmail Leggings
+									},
+									{	-- Fearless Combatant's Ringmail Boots
+										["itemID"] = 142964,	-- Fearless Combatant's Ringmail Boots
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
