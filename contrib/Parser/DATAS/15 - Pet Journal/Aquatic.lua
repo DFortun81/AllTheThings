@@ -110,6 +110,7 @@ _.PetJournal =
 		p(2378),	-- River Otter
 		p(2685),	-- Sandclaw Nestseeker
 		p(2646),	-- Sandclaw Pincher
+		p(2646),	-- Sandclaw Sunshell
 		p(2377),	-- Sandyback Crawler
 		p(2704),	-- Scalebrood Hydra
 		p(2445),	-- Scuttle
