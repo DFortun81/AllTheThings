@@ -44,6 +44,18 @@ _.Zones =
 						["questID"] = 55941,
 						["coord"] = { 73.2, 35.8, 1355 },
 					}),
+					o(326409, {	-- Arcane Chest
+						["questID"] = 55942,
+						["coord"] = { 79.5, 27.2, 1355 },
+					}),
+					o(326410, {	-- Arcane Chest
+						["questID"] = 55939,
+						["coord"] = { 80.4, 29.8, 1355 },
+					}),
+					o(326411, {	-- Arcane Chest
+						["questID"] = 55947,
+						["coord"] = { 44.7, 48.9, 1355 },
+					}),
 					--[[ -- these are the remaining known objectIDs for each chest
 					[326395] = "Glowing Arcane Trunk",
 					[326396] = "Glowing Arcane Trunk",
@@ -52,9 +64,6 @@ _.Zones =
 					[326399] = "Glowing Arcane Trunk",
 					[326400] = "Glowing Arcane Trunk",
 					[329783] = "Glowing Arcane Trunk",
-					[326409] = "Arcane Chest",
-					[326410] = "Arcane Chest",
-					[326411] = "Arcane Chest",
 					[326412] = "Arcane Chest",
 					[326413] = "Arcane Chest",
 					[326414] = "Arcane Chest",

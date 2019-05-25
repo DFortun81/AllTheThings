@@ -12,6 +12,7 @@ _.Zones =
 			"Vim's Round" npc at 64.1, 57.4
 			
 			56521 popped randomly. possibly a progress flag for 55663?
+			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
 			]]--
 				{	-- Sunken Ambitions
 					["achievementID"] = 13710,
@@ -43,6 +44,7 @@ _.Zones =
 						},
 						{	-- Turning the Tide
 							["criteriaID"] = 3,
+							["sourceQuest"] = 55799,	-- The Tide Turns
 						},
 					},
 				},
@@ -440,6 +442,13 @@ _.Zones =
 						55870,	-- Sea Slug Liquidation
 					},
 				},
+				{	-- Making the Connection
+					["questID"] = 55482,
+					["qg"] = 152066,	-- First Arcanist Thalyssra
+					["coord"] = { 64.2, 52.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55469,	-- To Zin-Azshari
+				},
 				{	-- Mardivas's Tome of the Elements
 					["objectID"] = 322533,
 					["coord"] = { 60.6, 33.2, 1355 },
@@ -762,6 +771,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
 				},
+				{	-- Secrets of Telemancy
+					["questID"] = 55486,
+					["qg"] = 152316,	-- Image of Thalyssra
+					["coord"] = { 76.4, 29.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55485,	-- Terrors in the Deep
+				},
 				{	-- Settling In
 					["questID"] = 55384,
 					["qg"] = 149904,	-- Neri Sharpfin
@@ -798,6 +814,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
+				{	-- Speak with the Dead
+					["questID"] = 55488,
+					["qg"] = 152316,	-- Image of Thalyssra
+					["coord"] = { 76.4, 29.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55485,	-- Terrors in the Deep
+				},
 				{	-- Stay Low, Stay Fast!
 					["questID"] = 55094,
 					["qg"] = 150209,	-- Neri Sharpfin
@@ -821,6 +844,20 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						},
 					},
+				},
+				{	-- Terrors in the Deep
+					["questID"] = 55485,
+					["qg"] = 152066,	-- First Arcanist Thalyssra
+					["coord"] = { 64.2, 52.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55482,	-- Making the Connection
+				},
+				{	-- The Eternal Palace: Queen's Gambit
+					["questID"] = 56356,
+					["qg"] = 153251,	-- Lor'themar Theron
+					["coord"] = { 50.6, 24.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55799,	-- The Tide Turns
 				},
 				{	-- The Ever Drowning
 					["questID"] = 56311,
@@ -853,6 +890,16 @@ _.Zones =
 					["coord"] = { 36.3, 82.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54018,	-- Descent
+				},
+				{	-- The Handmaiden's Tale
+					["questID"] = 55489,
+					["qg"] = 152316,	-- Image of Thalyssra
+					["coord"] = { 76.4, 29.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						55486,	-- Secrets of Telemancy
+						55488,	-- Speak with the Dead
+					},
 				},
 				{	-- The High Life
 					["questID"] = 56304,
@@ -891,6 +938,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55862,	-- Insight into Our Enemies
 				},
+				{	-- The Tide Turns
+					["questID"] = 55799,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55490,	-- We'll Poke Their Eye Out
+				},
 				{	-- The Warbringer
 					["questID"] = 56313,
 					["qg"] = 155071,	-- Shandris Feathermoon
@@ -918,6 +972,16 @@ _.Zones =
 					["coord"] = { 79.7, 44.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56314,	-- The Warbringer
+				},
+				{	-- To Zin-Azshari
+					["questID"] = 55469,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56236,	-- Down But Not Out
+					["g"] = {
+						spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
+					},
 				},
 				{	-- Turn the Scale
 					["questID"] = 56152,
@@ -970,6 +1034,13 @@ _.Zones =
 						55967,	-- Sating Snapdragons
 						56046,	-- Working with Purpose
 					},
+				},
+				{	-- We'll Poke Their Eye Out
+					["questID"] = 55490,
+					["qg"] = 152316,	-- Image of Thalyssra
+					["coord"] = { 79.8, 38.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55489,	-- The Handmaiden's Tale
 				},
 				{	-- Weapon Rack
 					["objectID"] = 327170,

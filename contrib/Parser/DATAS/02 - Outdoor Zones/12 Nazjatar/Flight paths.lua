@@ -36,6 +36,11 @@ _.Zones =
 						["flightPathID"] = 2404,
 						["coord"] = { 47.5, 63.3, 1355 },
 					},
+					{	-- The Tidal Conflux
+						["flightPathID"] = 2482,
+						["coord"] = { 51.1, 23.6, 1355 },
+						["description"] = "Must complete the zone storyline to unlock this path.",
+					},
 					{	-- Utama's Stand
 						["flightPathID"] = 2407,
 						["coord"] = { 61.7, 36.5, 1355 },
