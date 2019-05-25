@@ -10,6 +10,7 @@ _.Zones =
 			possible secrets:
 			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
 			"Vim's Round" npc at 64.1, 57.4
+			"Gorm's Lantern" npc at 36.2, 87.0
 			
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)

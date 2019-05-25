@@ -275,7 +275,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2363, {	-- Wekemara
-				["questID"] = 56056,
+				["questID"] = 56055,
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },
 				["maps"] = { 1355 },

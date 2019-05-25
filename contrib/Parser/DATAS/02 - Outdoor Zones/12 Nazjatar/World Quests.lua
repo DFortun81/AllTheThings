@@ -158,7 +158,6 @@ _.Zones =
 					{	-- Terror of the Depths
 						["questID"] = 56056,
 						["isWQ"] = 120,
-						["isRaid"] = true,
 					},
 					{	-- The Drowned Oracles
 						["questID"] = 56048,
@@ -171,7 +170,6 @@ _.Zones =
 					{	-- The Soulbinder
 						["questID"] = 56057,
 						["isWQ"] = 120,
-						["isRaid"] = true,
 					},
 					{	-- The Zanj'ir Brutalizer
 						["questID"] = 55886,
