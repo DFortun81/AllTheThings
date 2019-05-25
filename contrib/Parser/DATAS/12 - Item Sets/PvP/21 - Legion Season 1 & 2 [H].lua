@@ -629,6 +629,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Plate Armor [Warrior - 5/10/19 & 5/22/19]
+								["setID"] = 1069,	-- Vindictive Combatant's Plate Armor
+								["classes"] = {
+									1,	-- Warrior
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Plate Helm
+										["itemID"] = 136013,	-- Vindictive Combatant's Plate Helm
+									},
+									{	-- Vindictive Combatant's Plate Shoulders
+										["itemID"] = 136015,	-- Vindictive Combatant's Plate Shoulders
+									},
+									{	-- Vindictive Combatant's Cloak of Battle
+										["itemID"] = 136888,	-- Vindictive Combatant's Cloak of Battle
+									},
+									{	-- Vindictive Combatant's Plate Chestpiece
+										["itemID"] = 136010,	-- Vindictive Combatant's Plate Chestpiece
+									},
+									{	-- Vindictive Combatant's Plate Wristplates
+										["itemID"] = 136017,	-- Vindictive Combatant's Plate Wristplates
+									},
+									{	-- Vindictive Combatant's Plate Gauntlets
+										["itemID"] = 136012,	-- Vindictive Combatant's Plate Gauntlets
+									},
+									{	-- Vindictive Combatant's Plate Girdle
+										["itemID"] = 136016,	-- Vindictive Combatant's Plate Girdle
+									},
+									{	-- Vindictive Combatant's Plate Legguards
+										["itemID"] = 136014,	-- Vindictive Combatant's Plate Legguards
+									},
+									{	-- Vindictive Combatant's Plate Warboots
+										["itemID"] = 136011,	-- Vindictive Combatant's Plate Warboots
+									},
+									{	-- Fearless Combatant's Plate Helm
+										["itemID"] = 142982,	-- Fearless Combatant's Plate Helm
+									},
+									{	-- Fearless Combatant's Plate Shoulders
+										["itemID"] = 142984,	-- Fearless Combatant's Plate Shoulders
+									},
+									{	-- Fearless Combatant's Cloak of Battle
+										["itemID"] = 143313,	-- Fearless Combatant's Cloak of Battle
+									},
+									{	-- Fearless Combatant's Plate Chestpiece
+										["itemID"] = 142979,	-- Fearless Combatant's Plate Chestpiece
+									},
+									{	-- Fearless Combatant's Plate Wristplates
+										["itemID"] = 142986,	-- Fearless Combatant's Plate Wristplates
+									},
+									{	-- Fearless Combatant's Plate Gauntlets
+										["itemID"] = 142981,	-- Fearless Combatant's Plate Gauntlets
+									},
+									{	-- Fearless Combatant's Plate Girdle
+										["itemID"] = 142985,	-- Fearless Combatant's Plate Girdle
+									},
+									{	-- Fearless Combatant's Plate Legguards
+										["itemID"] = 142983,	-- Fearless Combatant's Plate Legguards
+									},
+									{	-- Fearless Combatant's Plate Warboots
+										["itemID"] = 142980,	-- Fearless Combatant's Plate Warboots
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
