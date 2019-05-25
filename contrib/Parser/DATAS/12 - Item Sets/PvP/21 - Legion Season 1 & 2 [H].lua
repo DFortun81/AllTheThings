@@ -443,6 +443,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Chain Armor [Hunter - 5/10/19 & 5/22/19]
+								["setID"] = 409,	-- Vindictive Combatant's Chain Armor
+								["classes"] = {
+									3,	-- Hunter
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Chain Helm
+										["itemID"] = 135949,	-- Vindictive Combatant's Chain Helm
+									},
+									{	-- Vindictive Combatant's Chain Spaulders
+										["itemID"] = 135951,	-- Vindictive Combatant's Chain Spaulders
+									},
+									{	-- Vindictive Combatant's Drape of the Tracker
+										["itemID"] = 136026,	-- Vindictive Combatant's Drape of the Tracker
+									},
+									{	-- Vindictive Combatant's Chain Armor
+										["itemID"] = 135946,	-- Vindictive Combatant's Chain Armor
+									},
+									{	-- Vindictive Combatant's Chain Armband
+										["itemID"] = 135953,	-- Vindictive Combatant's Chain Armband
+									},
+									{	-- Vindictive Combatant's Chain Gauntlets
+										["itemID"] = 135948,	-- Vindictive Combatant's Chain Gauntlets
+									},
+									{	-- Vindictive Combatant's Chain Clasp
+										["itemID"] = 135952,	-- Vindictive Combatant's Chain Clasp
+									},
+									{	-- Vindictive Combatant's Chain Leggings
+										["itemID"] = 135950,	-- Vindictive Combatant's Chain Leggings
+									},
+									{	-- Vindictive Combatant's Chain Treads
+										["itemID"] = 135947,	-- Vindictive Combatant's Chain Treads
+									},
+									{	-- Fearless Combatant's Chain Helm
+										["itemID"] = 142918,	-- Fearless Combatant's Chain Helm
+									},
+									{	-- Fearless Combatant's Chain Spaulders
+										["itemID"] = 142920,	-- Fearless Combatant's Chain Spaulders
+									},
+									{	-- Fearless Combatant's Drape of the Tracker
+										["itemID"] = 142995,	-- Fearless Combatant's Drape of the Tracker
+									},
+									{	-- Fearless Combatant's Chain Armor
+										["itemID"] = 142915,	-- Fearless Combatant's Chain Armor
+									},
+									{	-- Fearless Combatant's Chain Armband
+										["itemID"] = 142922,	-- Fearless Combatant's Chain Armband
+									},
+									{	-- Fearless Combatant's Chain Gauntlets
+										["itemID"] = 142917,	-- Fearless Combatant's Chain Gauntlets
+									},
+									{	-- Fearless Combatant's Chain Clasp
+										["itemID"] = 142921,	-- Fearless Combatant's Chain Clasp
+									},
+									{	-- Fearless Combatant's Chain Leggings
+										["itemID"] = 142919,	-- Fearless Combatant's Chain Leggings
+									},
+									{	-- Fearless Combatant's Chain Treads
+										["itemID"] = 142916,	-- Fearless Combatant's Chain Treads
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
