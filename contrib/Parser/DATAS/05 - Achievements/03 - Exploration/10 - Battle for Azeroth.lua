@@ -251,6 +251,7 @@ _.Achievements =
 						crit(5),		-- Ready for War
 					}),
 					ach(13250, {	-- Battle for Azeroth Pathfinder, Part Two
+						i(169162),	-- Wonderwing 2.0
 						crit(1),	-- Rustbolt Resistance Revered
 						crit(2),	-- Unshackled Revered
 						crit(3),	-- Battle for Azeroth Pathfinder, Part One
@@ -1491,6 +1492,7 @@ _.Achievements =
 						crit(2),	-- 7 Glowing Arcane Trunks
 					}),
 					ach(13638, {	-- Undersea Usurper
+						i(169194),	-- Snapback Scuttler
 						title(405),	-- of the Deeps
 						crit(1),	-- Tour of the Depths
 						crit(2),	-- Nazjatarget Elminated

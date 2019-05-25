@@ -15,6 +15,7 @@ _.Mounts =
 			{	-- Amber Scorpion
 				["itemID"] = 85262,	-- Amber Scorpion
 			},
+			i(167167),	-- Ankoan Waveray
 			{	-- Arcadian War Turtle
 				["itemID"] = 141713,	-- Arcadian War Turtle
 			},
@@ -246,6 +247,7 @@ _.Mounts =
 			{	-- Crimson Primal Direhorn
 				["itemID"] = 95565,	-- Crimson Primal Direhorn
 			},
+			i(169202),	-- Crimson Tidestallion
 			{	-- Crimson Water Strider
 				["itemID"] = 87791,	-- Crimson Water Strider
 			},
@@ -552,6 +554,7 @@ _.Mounts =
 			{	-- Ice Mammoth [Horde Only]
 				["itemID"] = 44080,	-- Ice Mammoth [Horde Only]
 			},
+			i(169203),	-- Inkscale Deepseeker
 			{	-- Ironforge Ram
 				["itemID"] = 45586,	-- Ironforge Ram
 			},
@@ -698,6 +701,7 @@ _.Mounts =
 			{	-- Rocktusk Battleboar
 				["itemID"] = 116667,	-- Rocktusk Battleboar
 			},
+			i(168829),	-- Rustbolt Resistor
 			{	-- Shadowblade's Baneful Omen [Rogue Only]
 				["itemID"] = 143491,	-- Shadowblade's Baneful Omen
 				["classes"] = {
@@ -995,6 +999,7 @@ _.Mounts =
 			{	-- Unpainted Mechanostrider
 				["itemID"] = 13322,	-- Unpainted Mechanostrider
 			},
+			i(167170),	-- Unshackled Waveray
 			{	-- Violet Raptor
 				["itemID"] = 8592,	-- Violet Raptor
 			},
@@ -1040,6 +1045,7 @@ _.Mounts =
 			{	-- Wooly Mammoth [Horde Only]
 				["itemID"] = 44231,	-- Wooly Mammoth [Horde Only]
 			},
+			i(167751),	-- X-995 Mechanocat
 		},
 	},
 };

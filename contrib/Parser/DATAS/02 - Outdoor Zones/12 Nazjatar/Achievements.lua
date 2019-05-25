@@ -100,6 +100,27 @@ _.Zones =
 					["description"] = "Tadpoles are easily found in and around Bloodfin Village.",
 				}),
 				ach(13549),	-- Trove Tracker
+				ach(13638, {	-- Undersea Usurper
+					i(169194),	-- Snapback Scuttler
+					title(405),	-- of the Deeps
+					crit(1),	-- Tour of the Depths
+					crit(2),	-- Nazjatarget Elminated
+					crit(3),	-- I Thought You Said They'd Be Rare?
+					crit(4),	-- Give Me the Biggest Bag You've Got
+					crit(5),	-- Aqua Team Murder Force
+					crit(6),	-- Trove Tracker
+					crit(7),	-- A Fistful of Manapearls
+					crit(8),	-- Terror of the Tadpoles
+					crit(9),	-- Periodic Destruction
+					crit(10),	-- Nothing to Scry About
+					crit(11),	-- Mrrl's Secret Stash
+					crit(12),	-- Back to the Depths!
+					crit(13),	-- Puzzle Performer
+					crit(14),	-- Explore Nazjatar
+					crit(15),	-- The Unshackled
+					crit(16),	-- Subaquatic Support
+					crit(17),	-- Unfathomable
+				}),
 			}),
 		},
 	}),

@@ -97,6 +97,12 @@ _.Zones =
 							i(168832),	-- Galvanic Oscillator
 						},
 					}),
+					n(152182, {	-- Rustfeather
+						["coord"] = { 65.6, 78.3, 1462 },
+						["g"] = {
+							i(168370),	-- Rusted Keys to the Junkheap Drifter
+						},
+					}),
 					n(155583, {	-- Scrapclaw
 						--["questID"] = ,
 						["coord"] = { 82.3, 77.8, 1462 },

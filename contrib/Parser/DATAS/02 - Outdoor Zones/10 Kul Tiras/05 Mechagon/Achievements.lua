@@ -77,6 +77,19 @@ _.Zones =
 						crit(1),	-- Junkyard Tinkerer
 						crit(2),	-- Head Financier of Mechagon
 					}),
+					ach(13541, {	-- Mecha-Done
+						i(168329),	-- Keys to the Model W
+						crit(1),	-- The Mechagonian Threat
+						crit(2),	-- Rest in Pisons
+						crit(3),	-- Outside Influences
+						crit(4),	-- Junkyard Architect
+						crit(5),	-- Junkyard Apprentice
+						crit(6),	-- Junkyard Machinist
+						crit(7),	-- Available in Eight Colors
+						crit(8),	-- Junkyard Melomanic
+						crit(9),	-- Making the Mount
+						crit(10),	-- Armed for Action
+					}),
 				}),
 			},
 		}),

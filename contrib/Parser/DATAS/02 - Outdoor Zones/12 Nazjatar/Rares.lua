@@ -146,6 +146,9 @@ _.Zones =
 					["coord"] = { 59.9, 47.6, 1355 },
 					["isDaily"] = true,
 					["description"] = "On top of the coral reef. Requires Flying or the |cFFFFD700Deepcoral Bud|r buff.", -- the coralbud ree
+					["g"] = {
+						i(169163),	-- Silent Glider
+					},
 				}),
 				n(154148, {	-- Tidemistress Leth'sindra
 					["allianceQuestID"] = 56620,

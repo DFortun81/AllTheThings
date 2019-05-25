@@ -453,6 +453,20 @@ _.Zones =
 						i(163975),	-- Sir Snips
 					},
 				}),
+				n(152153, {	-- Mrrl (alliance)
+					--["coord"] = { , 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(169202),	-- Crimson Tidestallion
+					}
+				}),
+				n(152084, {	-- Mrrl (horde)
+					["coord"] = { 47.0, 61.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(169202),	-- Crimson Tidestallion
+					}
+				}),
 				n(154140, {	-- Speaker Utia
 					["coord"] = { 38.0, 55.7, 1355 },
 					["races"] = ALLIANCE_ONLY,

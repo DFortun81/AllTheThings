@@ -177,6 +177,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
+				ach(13687, {	-- Glory of the Palace Raider
+					i(167171),	-- Azshari Bloatray
+				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["g"] = {
 						{	-- The Grand Reception (Abyssal Commander Sivara)
@@ -375,6 +378,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
+				ach(13687, {	-- Glory of the Palace Raider
+					i(167171),	-- Azshari Bloatray
+				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["g"] = {
 						{	-- The Grand Reception (Abyssal Commander Sivara)
@@ -574,6 +580,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
+				ach(13687, {	-- Glory of the Palace Raider
+					i(167171),	-- Azshari Bloatray
+				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["g"] = {
 						ach(13726),	-- Mythic: Abyssal Commander Sivara
