@@ -12,6 +12,12 @@ _.Zones =
 					{	-- Pet Battle
 						["npcID"] = -25,	-- Pet Battle
 						["groups"] = {
+							{	-- Captured Firefly
+								["itemID"] = 29960,	-- Captured Firefly
+								["crs"] = {
+									20197,	-- Bogflare Needler
+								},
+							},
 							{	-- Small Frog
 								["crs"] = { 61071 },	-- Small Frog 
 								["speciesID"] = 419,	-- Small Frog 
@@ -24,11 +30,14 @@ _.Zones =
 								["crs"] = { 62564 },	-- Sporeling Sprout 
 								["speciesID"] = 515,	-- Sporeling Sprout 
 							},
-							q(31923, { 	-- Ras'an
-								["qg"] = 66551,	-- Ras'an <Master Pet Tamer>
-								["coord"] = { 17.2, 50.6, 102 },
+							{	-- Ras'an
+								["questID"] = 31923,	-- Ras'an
 								["isDaily"] = true,
-							}),
+								["qg"] = 66551,	-- Ras'an <Master Pet Tamer>
+								["coords"] = {
+									{ 17.23, 50.51, 102 },
+								},
+							},
 						},
 					},
 				},

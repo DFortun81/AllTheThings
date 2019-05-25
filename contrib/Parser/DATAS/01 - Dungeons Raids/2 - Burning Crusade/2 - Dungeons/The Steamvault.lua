@@ -10,32 +10,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			264,	-- The Cooling Pools
 		},
 		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				{	-- A Proper Fate
 					["questID"] = 29613,	-- A Proper Fate
-					["qg"] = 54848, 	-- Watcher Jhang
+					["qg"] = 54848, 		-- Watcher Jhang
 				},
 				{	-- Containment is Key
 					["questID"] = 29614,	-- Containment is Key
-					["qg"] = 54849, 	-- Naturalist Bite
+					["qg"] = 54849, 		-- Naturalist Bite
 				},
 				{	-- Windcaller Claw and the Water Thief
 					["questID"] = 29615,	-- Windcaller Claw and the Water Thief
-					["qg"] = 54851, 	-- Windcaller Claw
+					["qg"] = 54851, 		-- Windcaller Claw
 				},
-			}),
-			n(0, {	-- Zone Drops
-				i(24159, {  -- Design: Khorium Band of Frost
-					["crs"] = {
-						17722,	-- Coilfang Sorceress 
-					},
-				}),
-				i(22533, {	-- Formula: Enchant Bracer - Fortitude
-					["crs"] = {
-						17803,	-- Coilfang Oracle
-					},
-				}),
 			}),
 			d(1, {	-- Normal
 				cr(17797, e(573, {	-- Hydromancer Thespia
@@ -81,7 +69,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(2, {	-- Heroic
 				["lvl"] = 60,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(17797, e(573, {	-- Hydromancer Thespia
 						i(27789),	-- Cloak of Whispering Shells
 						i(27806),	-- Fathomheart Gauntlets (7.3.5 - Moved from Warlord Kalithresh)
@@ -123,6 +111,23 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				["g"] = {
+					{	-- Design: Khorium Band of Frost
+						["itemID"] = 24159,	-- Design: Khorium Band of Frost
+						["crs"] = {
+							17722,	-- Coilfang Sorceress 
+						},
+					},
+					{	-- Formula: Enchant Bracer - Fortitude
+						["itemID"] = 22533,	-- Formula: Enchant Bracer - Fortitude
+						["crs"] = {
+							17803,	-- Coilfang Oracle
+						},
+					},
+				},
+			},
 		},
 	}),
 })};

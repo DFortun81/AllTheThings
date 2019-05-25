@@ -7,16 +7,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 58,
 		["mapID"] = 261,
 		["coord"] = { 46.06, 51.74, 100 },	-- The Blood Furnace, Hellfire Peninsula
-		["groups"] = {
+		["g"] = {
 			{	-- Quests
 				["npcID"] = -17,	-- Quests
-			},
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				-- Note!! Blank so when map merges into the list it's in this spot rather than top
-			},
-			d(1, {	-- Normal
-				n(-17, {	-- Quests 					
+				["g"] = {
 					qa(29539, {	-- Heart of Rage
 						i(25714),	-- Crimson Pendant of Clarity
 						i(25713),	-- Holy Healing Band
@@ -39,7 +33,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25710),	-- Moonkin Headdress
 						i(25702),	-- Scaled Legs of Ruination
 					}),
-				}),
+				},
+			},
+			d(1, {	-- Normal
 				cr(17381, e(555, {	-- The Maker
 					i(24384),	-- Diamond-Core Sledgemace
 					i(24388),	-- Mage-Collar of the Firestorm
@@ -92,7 +88,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(17381, e(555, {	-- The Maker
 						i(24384),	-- Diamond-Core Sledgemace
 						i(24388),	-- Mage-Collar of the Firestorm
@@ -143,6 +139,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				}
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				-- Note!! Blank so when map merges into the list it's in this spot rather than top
+			},
 		},
 	}),
 })};

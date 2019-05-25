@@ -90,7 +90,7 @@ _.Zones =
 											},	
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19 & 5/22/19]
 										["itemID"] = 146157,	-- Ensemble: Vindictive Combatant's Silk Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -124,9 +124,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Silk Treads
 												["itemID"] = 135954,	-- Vindictive Combatant's Silk Treads
 											},
+											{	-- Fearless Combatant's Silk Cowl
+												["itemID"] = 142925,	-- Fearless Combatant's Silk Cowl
+											},
+											{	-- Fearless Combatant's Silk Amice
+												["itemID"] = 142928,	-- Fearless Combatant's Silk Amice
+											},
+											{	-- Fearless Combatant's Silken Shawl
+												["itemID"] = 142988,	-- Fearless Combatant's Silken Shawl
+											},
+											{	-- Fearless Combatant's Silk Robe
+												["itemID"] = 142927,	-- Fearless Combatant's Silk Robe
+											},
+											{	-- Fearless Combatant's Silk Bracers
+												["itemID"] = 142930,	-- Fearless Combatant's Silk Bracers
+											},
+											{	-- Fearless Combatant's Silk Handguards
+												["itemID"] = 142924,	-- Fearless Combatant's Silk Handguards
+											},
+											{	-- Fearless Combatant's Silk Cord
+												["itemID"] = 142929,	-- Fearless Combatant's Silk Cord
+											},
+											{	-- Fearless Combatant's Silk Trousers
+												["itemID"] = 142926,	-- Fearless Combatant's Silk Trousers
+											},
+											{	-- Fearless Combatant's Silk Treads
+												["itemID"] = 142923,	-- Fearless Combatant's Silk Treads
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19 & 5/22/19]
 										["itemID"] = 146161,	-- Ensemble: Vindictive Combatant's Felweave Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -159,6 +186,33 @@ _.Zones =
 											},
 											{	-- Vindictive Combatant's Felweave Treads
 												["itemID"] = 136002,	-- Vindictive Combatant's Felweave Treads
+											},
+											{	-- Fearless Combatant's Felweave Cowl
+												["itemID"] = 142973,	-- Fearless Combatant's Felweave Cowl
+											},
+											{	-- Fearless Combatant's Felweave Amice
+												["itemID"] = 142976,	-- Fearless Combatant's Felweave Amice
+											},
+											{	-- Fearless Combatant's Felweave Cloak
+												["itemID"] = 143307,	-- Fearless Combatant's Felweave Cloak
+											},
+											{	-- Fearless Combatant's Felweave Raiment
+												["itemID"] = 142975,	-- Fearless Combatant's Felweave Raiment
+											},
+											{	-- Fearless Combatant's Felweave Bracers
+												["itemID"] = 142978,	-- Fearless Combatant's Felweave Bracers
+											},
+											{	-- Fearless Combatant's Felweave Handguards
+												["itemID"] = 142972,	-- Fearless Combatant's Felweave Handguards
+											},
+											{	-- Fearless Combatant's Felweave Cord
+												["itemID"] = 142977,	-- Fearless Combatant's Felweave Cord
+											},
+											{	-- Fearless Combatant's Felweave Trousers
+												["itemID"] = 142974,	-- Fearless Combatant's Felweave Trousers
+											},
+											{	-- Fearless Combatant's Felweave Treads
+												["itemID"] = 142971,	-- Fearless Combatant's Felweave Treads
 											},
 										},
 									},
@@ -225,7 +279,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19 & 5/22/19]
 										["itemID"] = 146173,	-- Ensemble: Vindictive Combatant's Leather Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -259,9 +313,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Leather Slippers
 												["itemID"] = 135987,	-- Vindictive Combatant's Leather Slippers
 											},
+											{	-- Fearless Combatant's Leather Helm
+												["itemID"] = 142958,	-- Fearless Combatant's Leather Helm
+											},
+											{	-- Fearless Combatant's Leather Spaulders
+												["itemID"] = 142960,	-- Fearless Combatant's Leather Spaulders
+											},
+											{	-- Fearless Combatant's Shadowcape
+												["itemID"] = 143296,	-- Fearless Combatant's Shadowcape
+											},
+											{	-- Fearless Combatant's Leather Tunic
+												["itemID"] = 142955,	-- Fearless Combatant's Leather Tunic
+											},
+											{	-- Fearless Combatant's Leather Wristguards
+												["itemID"] = 142962,	-- Fearless Combatant's Leather Wristguards
+											},
+											{	-- Fearless Combatant's Leather Gloves
+												["itemID"] = 142957,	-- Fearless Combatant's Leather Gloves
+											},
+											{	-- Fearless Combatant's Leather Belt
+												["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+											},
+											{	-- Fearless Combatant's Leather Legguards
+												["itemID"] = 142959,	-- Fearless Combatant's Leather Legguards
+											},
+											{	-- Fearless Combatant's Leather Slippers
+												["itemID"] = 142956,	-- Fearless Combatant's Leather Slippers
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19 & 5/22/19]
 										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -295,9 +376,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Ironskin Slippers
 												["itemID"] = 135962,	-- Vindictive Combatant's Ironskin Slippers
 											},
+											{	-- Fearless Combatant's Ironskin Helm
+												["itemID"] = 142933,	-- Fearless Combatant's Ironskin Helm
+											},
+											{	-- Fearless Combatant's Ironskin Spaulders
+												["itemID"] = 142935,	-- Fearless Combatant's Ironskin Spaulders
+											},
+											{	-- Fearless Combatant's Ironskin Cloak
+												["itemID"] = 142992,	-- Fearless Combatant's Ironskin Cloak
+											},
+											{	-- Fearless Combatant's Ironskin Tunic
+												["itemID"] = 142936,	-- Fearless Combatant's Ironskin Tunic
+											},
+											{	-- Fearless Combatant's Ironskin Wristguards
+												["itemID"] = 142938,	-- Fearless Combatant's Ironskin Wristguards
+											},
+											{	-- Fearless Combatant's Ironskin Gloves
+												["itemID"] = 142932,	-- Fearless Combatant's Ironskin Gloves
+											},
+											{	-- Fearless Combatant's Ironskin Belt
+												["itemID"] = 142937,	-- Fearless Combatant's Ironskin Belt
+											},
+											{	-- Fearless Combatant's Ironskin Legguards
+												["itemID"] = 142934,	-- Fearless Combatant's Ironskin Legguards
+											},
+											{	-- Fearless Combatant's Ironskin Slippers
+												["itemID"] = 142931,	-- Fearless Combatant's Ironskin Slippers
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19 & 5/22/19]
 										["itemID"] = 146265,	-- Ensemble: Vindictive Combatant's Felskin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -331,9 +439,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Felskin Boots
 												["itemID"] = 136303,	-- Vindictive Combatant's Felskin Boots
 											},
+											{	-- Fearless Combatant's Felskin Helm
+												["itemID"] = 143264,	-- Fearless Combatant's Felskin Helm
+											},
+											{	-- Fearless Combatant's Felskin Spaulders
+												["itemID"] = 143267,	-- Fearless Combatant's Felskin Spaulders
+											},
+											{	-- Fearless Combatant's Demonthread Cloak
+												["itemID"] = 143319,	-- Fearless Combatant's Demonthread Cloak
+											},
+											{	-- Fearless Combatant's Felskin Tunic
+												["itemID"] = 143266,	-- Fearless Combatant's Felskin Tunic
+											},
+											{	-- Fearless Combatant's Felskin Wristguards
+												["itemID"] = 143269,	-- Fearless Combatant's Felskin Wristguards
+											},
+											{	-- Fearless Combatant's Felskin Gloves
+												["itemID"] = 143263,	-- Fearless Combatant's Felskin Gloves
+											},
+											{	-- Fearless Combatant's Felskin Belt
+												["itemID"] = 143268,	-- Fearless Combatant's Felskin Belt
+											},
+											{	-- Fearless Combatant's Felskin Legguards
+												["itemID"] = 143265,	-- Fearless Combatant's Felskin Legguards
+											},
+											{	-- Fearless Combatant's Felskin Boots
+												["itemID"] = 143262,	-- Fearless Combatant's Felskin Boots
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19 & 5/22/19]
 										["itemID"] = 146155,	-- Ensemble: Vindictive Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -367,9 +502,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Chain Treads
 												["itemID"] = 135947,	-- Vindictive Combatant's Chain Treads
 											},
+											{	-- Fearless Combatant's Chain Helm
+												["itemID"] = 142918,	-- Fearless Combatant's Chain Helm
+											},
+											{	-- Fearless Combatant's Chain Spaulders
+												["itemID"] = 142920,	-- Fearless Combatant's Chain Spaulders
+											},
+											{	-- Fearless Combatant's Drape of the Tracker
+												["itemID"] = 142995,	-- Fearless Combatant's Drape of the Tracker
+											},
+											{	-- Fearless Combatant's Chain Armor
+												["itemID"] = 142915,	-- Fearless Combatant's Chain Armor
+											},
+											{	-- Fearless Combatant's Chain Armband
+												["itemID"] = 142922,	-- Fearless Combatant's Chain Armband
+											},
+											{	-- Fearless Combatant's Chain Gauntlets
+												["itemID"] = 142917,	-- Fearless Combatant's Chain Gauntlets
+											},
+											{	-- Fearless Combatant's Chain Clasp
+												["itemID"] = 142921,	-- Fearless Combatant's Chain Clasp
+											},
+											{	-- Fearless Combatant's Chain Leggings
+												["itemID"] = 142919,	-- Fearless Combatant's Chain Leggings
+											},
+											{	-- Fearless Combatant's Chain Treads
+												["itemID"] = 142916,	-- Fearless Combatant's Chain Treads
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19 & 5/22/19]
 										["itemID"] = 146153,	-- Ensemble: Vindictive Combatant's Ringmail Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -403,9 +565,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Ringmail Boots
 												["itemID"] = 135995,	-- Vindictive Combatant's Ringmail Boots
 											},
+											{	-- Fearless Combatant's Ringmail Helm
+												["itemID"] = 142966,	-- Fearless Combatant's Ringmail Helm
+											},
+											{	-- Fearless Combatant's Ringmail Spaulders
+												["itemID"] = 142968,	-- Fearless Combatant's Ringmail Spaulders
+											},
+											{	-- Fearless Combatant's Totemic Cloak
+												["itemID"] = 143297,	-- Fearless Combatant's Totemic Cloak
+											},
+											{	-- Fearless Combatant's Ringmail Armor
+												["itemID"] = 142963,	-- Fearless Combatant's Ringmail Armor
+											},
+											{	-- Fearless Combatant's Ringmail Armband
+												["itemID"] = 142970,	-- Fearless Combatant's Ringmail Armband
+											},
+											{	-- Fearless Combatant's Ringmail Gauntlets
+												["itemID"] = 142965,	-- Fearless Combatant's Ringmail Gauntlets
+											},
+											{	-- Fearless Combatant's Ringmail Clasp
+												["itemID"] = 142969,	-- Fearless Combatant's Ringmail Clasp
+											},
+											{	-- Fearless Combatant's Ringmail Leggings
+												["itemID"] = 142967,	-- Fearless Combatant's Ringmail Leggings
+											},
+											{	-- Fearless Combatant's Ringmail Boots
+												["itemID"] = 142964,	-- Fearless Combatant's Ringmail Boots
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19 & 5/22/19]
 										["itemID"] = 146167,	-- Ensemble: Vindictive Combatant's Scaled Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -468,7 +657,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19 & 5/22/19]
 										["itemID"] = 146163,	-- Ensemble: Vindictive Combatant's Plate Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -502,9 +691,36 @@ _.Zones =
 											{	-- Vindictive Combatant's Plate Warboots
 												["itemID"] = 136011,	-- Vindictive Combatant's Plate Warboots
 											},
+											{	-- Fearless Combatant's Plate Helm
+												["itemID"] = 142982,	-- Fearless Combatant's Plate Helm
+											},
+											{	-- Fearless Combatant's Plate Shoulders
+												["itemID"] = 142984,	-- Fearless Combatant's Plate Shoulders
+											},
+											{	-- Fearless Combatant's Cloak of Battle
+												["itemID"] = 143313,	-- Fearless Combatant's Cloak of Battle
+											},
+											{	-- Fearless Combatant's Plate Chestpiece
+												["itemID"] = 142979,	-- Fearless Combatant's Plate Chestpiece
+											},
+											{	-- Fearless Combatant's Plate Wristplates
+												["itemID"] = 142986,	-- Fearless Combatant's Plate Wristplates
+											},
+											{	-- Fearless Combatant's Plate Gauntlets
+												["itemID"] = 142981,	-- Fearless Combatant's Plate Gauntlets
+											},
+											{	-- Fearless Combatant's Plate Girdle
+												["itemID"] = 142985,	-- Fearless Combatant's Plate Girdle
+											},
+											{	-- Fearless Combatant's Plate Legguards
+												["itemID"] = 142983,	-- Fearless Combatant's Plate Legguards
+											},
+											{	-- Fearless Combatant's Plate Warboots
+												["itemID"] = 142980,	-- Fearless Combatant's Plate Warboots
+											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19 & 5/22/19]
 										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -537,6 +753,33 @@ _.Zones =
 											},
 											{	-- Vindictive Combatant's Dreadplate Sabatons
 												["itemID"] = 135931,	-- Vindictive Combatant's Dreadplate Sabatons
+											},
+											{	-- Fearless Combatant's Dreadplate Helm
+												["itemID"] = 142902,	-- Fearless Combatant's Dreadplate Helm
+											},
+											{	-- Fearless Combatant's Dreadplate Shoulders
+												["itemID"] = 142904,	-- Fearless Combatant's Dreadplate Shoulders
+											},
+											{	-- Fearless Combatant's Dreadcloak
+												["itemID"] = 142987,	-- Fearless Combatant's Dreadcloak
+											},
+											{	-- Fearless Combatant's Dreadplate Chestpiece
+												["itemID"] = 142899,	-- Fearless Combatant's Dreadplate Chestpiece
+											},
+											{	-- Fearless Combatant's Dreadplate Wristplates
+												["itemID"] = 142906,	-- Fearless Combatant's Dreadplate Wristplates
+											},
+											{	-- Fearless Combatant's Dreadplate Gauntlets
+												["itemID"] = 142901,	-- Fearless Combatant's Dreadplate Gauntlets
+											},
+											{	-- Fearless Combatant's Dreadplate Girdle
+												["itemID"] = 142905,	-- Fearless Combatant's Dreadplate Girdle
+											},
+											{	-- Fearless Combatant's Dreadplate Legguards
+												["itemID"] = 142903,	-- Fearless Combatant's Dreadplate Legguards
+											},
+											{	-- Fearless Combatant's Dreadplate Sabatons
+												["itemID"] = 142900,	-- Fearless Combatant's Dreadplate Sabatons
 											},
 										},
 									},
