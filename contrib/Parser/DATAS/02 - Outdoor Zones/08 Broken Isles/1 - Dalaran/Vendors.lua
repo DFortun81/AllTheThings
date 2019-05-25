@@ -313,6 +313,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Leather Slippers
 												["itemID"] = 135987,	-- Vindictive Combatant's Leather Slippers
 											},
+											{	-- Fearless Combatant's Leather Helm
+												["itemID"] = 142958,	-- Fearless Combatant's Leather Helm
+											},
+											{	-- Fearless Combatant's Leather Spaulders
+												["itemID"] = 142960,	-- Fearless Combatant's Leather Spaulders
+											},
+											{	-- Fearless Combatant's Shadowcape
+												["itemID"] = 143296,	-- Fearless Combatant's Shadowcape
+											},
+											{	-- Fearless Combatant's Leather Tunic
+												["itemID"] = 142955,	-- Fearless Combatant's Leather Tunic
+											},
+											{	-- Fearless Combatant's Leather Wristguards
+												["itemID"] = 142962,	-- Fearless Combatant's Leather Wristguards
+											},
+											{	-- Fearless Combatant's Leather Gloves
+												["itemID"] = 142957,	-- Fearless Combatant's Leather Gloves
+											},
+											{	-- Fearless Combatant's Leather Belt
+												["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+											},
+											{	-- Fearless Combatant's Leather Legguards
+												["itemID"] = 142959,	-- Fearless Combatant's Leather Legguards
+											},
+											{	-- Fearless Combatant's Leather Slippers
+												["itemID"] = 142956,	-- Fearless Combatant's Leather Slippers
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
