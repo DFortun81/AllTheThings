@@ -754,6 +754,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Dreadplate Sabatons
 												["itemID"] = 135931,	-- Vindictive Combatant's Dreadplate Sabatons
 											},
+											{	-- Fearless Combatant's Dreadplate Helm
+												["itemID"] = 142904,	-- Fearless Combatant's Dreadplate Helm
+											},
+											{	-- Fearless Combatant's Dreadplate Shoulders
+												["itemID"] = 142987,	-- Fearless Combatant's Dreadplate Shoulders
+											},
+											{	-- Fearless Combatant's Dreadcloak
+												["itemID"] = 142899,	-- Fearless Combatant's Dreadcloak
+											},
+											{	-- Fearless Combatant's Dreadplate Chestpiece
+												["itemID"] = 142906,	-- Fearless Combatant's Dreadplate Chestpiece
+											},
+											{	-- Fearless Combatant's Dreadplate Wristplates
+												["itemID"] = 142901,	-- Fearless Combatant's Dreadplate Wristplates
+											},
+											{	-- Fearless Combatant's Dreadplate Gauntlets
+												["itemID"] = 142905,	-- Fearless Combatant's Dreadplate Gauntlets
+											},
+											{	-- Fearless Combatant's Dreadplate Girdle
+												["itemID"] = 142903,	-- Fearless Combatant's Dreadplate Girdle
+											},
+											{	-- Fearless Combatant's Dreadplate Legguards
+												["itemID"] = 142900,	-- Fearless Combatant's Dreadplate Legguards
+											},
+											{	-- Fearless Combatant's Dreadplate Sabatons
+												["itemID"] = ,	-- Fearless Combatant's Dreadplate Sabatons
+											},
 										},
 									},
 									-- LEGION Season 3 & 4
