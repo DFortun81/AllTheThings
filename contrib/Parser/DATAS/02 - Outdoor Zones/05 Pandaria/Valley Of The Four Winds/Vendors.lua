@@ -508,6 +508,19 @@ _.Zones =
 								un(2, i(100497)),	-- Grievous Gladiator's Bonecracker
 								un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
 								un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
+								un(2, i(100204)),	-- Grievous Gladiator's longbow
+								-- Removed Weapons
+								un(2, i(100301)),	-- Grievous Gladiator's Redoubt a
+								un(2, i(100508)),	-- Grievous Gladiator's Shield Wall a
+								un(2, i(100225)),	-- Grievous Gladiator's barrier a
+								un(2, i(100223)),	-- Grievous Gladiator's Endgame a
+								un(2, i(100237)),	-- Grievous Gladiator's Reprieve a
+								un(2, i(100203)),	-- Grievous Gladiator's longbow a
+								un(2, i(100297)),	-- Grievous Gladiator's Rifle a
+								un(2, i(100227)),	-- Grievous Gladiator's Spellblade a
+								un(2, i(100480)),	-- Grievous Gladiator's Shanker a
+								un(2, i(100482)),	-- Grievous Gladiator's Ripper a
+								un(2, i(100486)),	-- Grievous Gladiator's Render a
 							}),
 							cl(6, {	-- Death Knight
 								-- Elite
