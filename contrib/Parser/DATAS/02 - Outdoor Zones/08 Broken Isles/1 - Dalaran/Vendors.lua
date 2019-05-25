@@ -90,7 +90,7 @@ _.Zones =
 											},	
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Silk Armor [Mage - 5/10/19 & 5/22/19]
 										["itemID"] = 146157,	-- Ensemble: Vindictive Combatant's Silk Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -153,7 +153,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19 & 5/22/19]
 										["itemID"] = 146161,	-- Ensemble: Vindictive Combatant's Felweave Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -279,7 +279,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19 & 5/22/19]
 										["itemID"] = 146173,	-- Ensemble: Vindictive Combatant's Leather Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -342,7 +342,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19 & 5/22/19]
 										["itemID"] = 146171,	-- Ensemble: Vindictive Combatant's Ironskin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -405,7 +405,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19 & 5/22/19]
 										["itemID"] = 146265,	-- Ensemble: Vindictive Combatant's Felskin Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -468,7 +468,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19 & 5/22/19]
 										["itemID"] = 146155,	-- Ensemble: Vindictive Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -531,7 +531,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19 & 5/22/19]
 										["itemID"] = 146153,	-- Ensemble: Vindictive Combatant's Ringmail Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -657,7 +657,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19 & 5/22/19]
 										["itemID"] = 146163,	-- Ensemble: Vindictive Combatant's Plate Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -720,7 +720,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
+									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19 & 5/22/19]
 										["itemID"] = 146165,	-- Ensemble: Vindictive Combatant's Dreadplate Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
