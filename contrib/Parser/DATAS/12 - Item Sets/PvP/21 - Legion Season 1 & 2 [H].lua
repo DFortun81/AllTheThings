@@ -319,6 +319,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Ironskin Armor [Monk - 5/10/19 & 5/22/19]
+								["setID"] = 1172,	-- Vindictive Combatant's Ironskin Armor
+								["classes"] = {
+									10,	-- Monk
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Ironskin Helm
+										["itemID"] = 135964,	-- Vindictive Combatant's Ironskin Helm
+									},
+									{	-- Vindictive Combatant's Ironskin Spaulders
+										["itemID"] = 135966,	-- Vindictive Combatant's Ironskin Spaulders
+									},
+									{	-- Vindictive Combatant's Ironskin Cloak
+										["itemID"] = 136023,	-- Vindictive Combatant's Ironskin Cloak
+									},
+									{	-- Vindictive Combatant's Ironskin Tunic
+										["itemID"] = 135967,	-- Vindictive Combatant's Ironskin Tunic
+									},
+									{	-- Vindictive Combatant's Ironskin Wristguards
+										["itemID"] = 135969,	-- Vindictive Combatant's Ironskin Wristguards
+									},
+									{	-- Vindictive Combatant's Ironskin Gloves
+										["itemID"] = 135963,	-- Vindictive Combatant's Ironskin Gloves
+									},
+									{	-- Vindictive Combatant's Ironskin Belt
+										["itemID"] = 135968,	-- Vindictive Combatant's Ironskin Belt
+									},
+									{	-- Vindictive Combatant's Ironskin Legguards
+										["itemID"] = 135965,	-- Vindictive Combatant's Ironskin Legguards
+									},
+									{	-- Vindictive Combatant's Ironskin Slippers
+										["itemID"] = 135962,	-- Vindictive Combatant's Ironskin Slippers
+									},
+									{	-- Fearless Combatant's Ironskin Helm
+										["itemID"] = 142933,	-- Fearless Combatant's Ironskin Helm
+									},
+									{	-- Fearless Combatant's Ironskin Spaulders
+										["itemID"] = 142935,	-- Fearless Combatant's Ironskin Spaulders
+									},
+									{	-- Fearless Combatant's Ironskin Cloak
+										["itemID"] = 142992,	-- Fearless Combatant's Ironskin Cloak
+									},
+									{	-- Fearless Combatant's Ironskin Tunic
+										["itemID"] = 142936,	-- Fearless Combatant's Ironskin Tunic
+									},
+									{	-- Fearless Combatant's Ironskin Wristguards
+										["itemID"] = 142938,	-- Fearless Combatant's Ironskin Wristguards
+									},
+									{	-- Fearless Combatant's Ironskin Gloves
+										["itemID"] = 142932,	-- Fearless Combatant's Ironskin Gloves
+									},
+									{	-- Fearless Combatant's Leather Belt
+										["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+									},
+									{	-- Fearless Combatant's Ironskin Legguards
+										["itemID"] = 142934,	-- Fearless Combatant's Ironskin Legguards
+									},
+									{	-- Fearless Combatant's Ironskin Slippers
+										["itemID"] = 142931,	-- Fearless Combatant's Ironskin Slippers
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
