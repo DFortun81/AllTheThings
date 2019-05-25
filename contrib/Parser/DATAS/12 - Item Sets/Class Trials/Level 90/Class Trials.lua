@@ -644,16 +644,16 @@ _.GearSets =
 								i(117055),	-- Springrain Stone of Rage
 							}),
 							n(-9927, {	-- Restoration
-								--	i(101046),	-- Springrain Hood
+								i(117089),	-- Springrain Hood
 								i(117065),	-- Springrain Medallion
 								i(117079),	-- Springrain Cloak of Wisdom
-								--	i(101048),	-- Springrain Shoulders
-								--	i(101043),	-- Springrain Jerkin
-								--	i(101050),	-- Springrain Bindings
-								--	i(101045),	-- Springrain Gloves
-								--	i(101049),	-- Springrain Waistband
-								--	i(101047),	-- Springrain Britches
-								--	i(101044),	-- Springrain Boots
+								i(117091),	-- Springrain Shoulders
+								i(117086),	-- Springrain Jerkin
+								i(117093),	-- Springrain Bindings
+								i(117088),	-- Springrain Gloves
+								i(117092),	-- Springrain Waistband
+								i(117090),	-- Springrain Britches
+								i(117087),	-- Springrain Boots
 								i(117082),	-- Springrain Band of Wisdom
 								i(117083),	-- Springrain Ring of Wisom
 								i(117081),	-- Springrain Idol of Wisdom
@@ -717,15 +717,15 @@ _.GearSets =
 								i(117150),	-- Mistdancer Stone of Wisdom
 							}),
 							n(-9932, {	-- Windwalker
-								--	i(101093),	-- Mistdancer Helm
+								--	i(117136),	-- Mistdancer Helm
 								i(117157),	-- Mistdancer Choker
 								i(117161),	-- Mistdancer Cloak of Rage
-								--	i(101095),	-- Mistdancer Pauldrons [Hidden Shoulders]
+								i(117138),	-- Mistdancer Pauldrons [Hidden Shoulders]
 								i(117133),	-- Mistdancer Vest
-								--	i(101097),	-- Mistdancer Cuffs
-								--	i(101092),	-- Mistdancer Handguards
-								--	i(101096),	-- Mistdancer Cord
-								--	i(101094),	-- Mistdancer Legguards
+								i(117140),	-- Mistdancer Cuffs
+								i(117135),	-- Mistdancer Handguards
+								i(117139),	-- Mistdancer Cord
+								i(117137),	-- Mistdancer Legguards
 								i(117134),	-- Mistdancer Footpads
 								i(117158),	-- Mistdancer Band of Onslaught
 								i(117159),	-- Mistdancer Ring of Onslaught
@@ -962,13 +962,9 @@ _.GearSets =
 					}),
 					n(-146, {	-- Oathsworn 
 						["groups"] = {
-							--	i(101287),	-- Oathsworn Maul
-							--	i(101289),	-- Oathsworn Bulwark
 							n(-9945, {	-- Arms / Fury
-								--	i(101278),	-- Oathsworn Greatsword
 								i(117330),	-- Oathsworn Headchopper
 								i(117321),	-- Oathsworn Greataxe
-								i(117331),	-- Oathsworn Axe
 								i(117325),	-- Oathsworn Helm
 								i(117334),	-- Oathsworn Pendant
 								i(117333),	-- Oathsworn Cloak of Battle
@@ -985,7 +981,8 @@ _.GearSets =
 								i(117337),	-- Oathsworn Stone of Battle
 							}),
 							n(-9947, {	-- Protection
-								--	i(101288),	-- Oathsworn Sword
+								i(117331),	-- Oathsworn Axe
+								i(117332),	-- Oathsworn Bulwark
 								i(117343),	-- Oathsworn Faceguard
 								i(117345),	-- Oathsworn Amulet
 								i(117340),	-- Oathsworn Cloak of Stoicism
