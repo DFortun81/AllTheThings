@@ -32,6 +32,14 @@ _.Zones =
 						i(167786),	-- Germinating Seed
 					},
 				}),
+				n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
+					["allianceQuestID"] = 56887,
+					["hordeQuestID"] = 56888,
+					["coord"] = { 54.7, 41.7, 1355 },
+					["g"] = {
+						i(169375),	-- Coral Lashling
+					},
+				}),
 				n(152556, {	-- Chasm-Haunter
 					["allianceQuestID"] = 56613,
 					["hordeQuestID"] = 56270,

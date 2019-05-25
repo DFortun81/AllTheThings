@@ -56,6 +56,11 @@ _.Zones =
 						["questID"] = 55947,
 						["coord"] = { 44.7, 48.9, 1355 },
 					}),
+					o(326412, {	-- Arcane Chest
+						["questID"] = 55946,
+						["coord"] = { 58.0, 35.0, 1355 },
+						["description"] = "In an underwater cave.",
+					}),
 					o(326395, {	-- Glowing Arcane Trunk
 						["questID"] = 55959, -- 56343 triggered after completing the minigame, 56974 trigger at same time of chest opening
 						["coord"] = { 37.9, 6.4, 1355 },

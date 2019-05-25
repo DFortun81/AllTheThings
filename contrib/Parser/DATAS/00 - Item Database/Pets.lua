@@ -142,6 +142,7 @@ pet(166718, 2568);	-- Cobalt Raven Hatchling (Cobalt Raven)
 pet(39898, 197); 	-- Cobra Hatchling
 pet(163823, 2457);	-- Coldlight Surfrunner
 pet(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
+pet(169375, 2708);	-- Coral Lashling
 pet(49646, 244);	-- Core Hound Pup
 pet(93035, 1150); 	-- Core of Hardened Ash (Ashstone Core)
 pet(136925, 1890); 	-- Corgi Pup
