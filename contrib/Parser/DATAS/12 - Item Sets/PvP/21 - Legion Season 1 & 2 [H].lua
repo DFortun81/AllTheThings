@@ -195,6 +195,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19 & 5/22/19]
+								["setID"] = 1168,	-- Vindictive Combatant's Dragonhide Armor
+								["classes"] = {
+									11,	-- Druid
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Dragonhide Helm
+										["itemID"] = 135940,	-- Vindictive Combatant's Dragonhide Helm
+									},
+									{	-- Vindictive Combatant's Dragonhide Spaulders
+										["itemID"] = 135943,	-- Vindictive Combatant's Dragonhide Spaulders
+									},
+									{	-- Vindictive Combatant's Dragonhide Cloak
+										["itemID"] = 136022,	-- Vindictive Combatant's Dragonhide Cloak
+									},
+									{	-- Vindictive Combatant's Dragonhide Tunic
+										["itemID"] = 135942,	-- Vindictive Combatant's Dragonhide Tunic
+									},
+									{	-- Vindictive Combatant's Dragonhide Wristguards
+										["itemID"] = 135945,	-- Vindictive Combatant's Dragonhide Wristguards
+									},
+									{	-- Vindictive Combatant's Dragonhide Gloves
+										["itemID"] = 135939,	-- Vindictive Combatant's Dragonhide Gloves
+									},
+									{	-- Vindictive Combatant's Dragonhide Belt
+										["itemID"] = 135944,	-- Vindictive Combatant's Dragonhide Belt
+									},
+									{	-- Vindictive Combatant's Dragonhide Legguards
+										["itemID"] = 135941,	-- Vindictive Combatant's Dragonhide Legguards
+									},
+									{	-- Vindictive Combatant's Dragonhide Moccasins
+										["itemID"] = 135938,	-- Vindictive Combatant's Dragonhide Moccasins
+									},
+									{	-- Fearless Combatant's Dragonhide Helm
+										["itemID"] = 142909,	-- Fearless Combatant's Dragonhide Helm
+									},
+									{	-- Fearless Combatant's Dragonhide Spaulders
+										["itemID"] = 142912,	-- Fearless Combatant's Dragonhide Spaulders
+									},
+									{	-- Fearless Combatant's Dragonhide Cloak
+										["itemID"] = 142991,	-- Fearless Combatant's Dragonhide Cloak
+									},
+									{	-- Fearless Combatant's Dragonhide Tunic
+										["itemID"] = 142911,	-- Fearless Combatant's Dragonhide Tunic
+									},
+									{	-- Fearless Combatant's Dragonhide Wristguards
+										["itemID"] = 142914,	-- Fearless Combatant's Dragonhide Wristguards
+									},
+									{	-- Fearless Combatant's Dragonhide Gloves
+										["itemID"] = 142908,	-- Fearless Combatant's Dragonhide Gloves
+									},
+									{	-- Fearless Combatant's Dragonhide Belt
+										["itemID"] = 142913,	-- Fearless Combatant's Dragonhide Belt
+									},
+									{	-- Fearless Combatant's Dragonhide Legguards
+										["itemID"] = 142910,	-- Fearless Combatant's Dragonhide Legguards
+									},
+									{	-- Fearless Combatant's Dragonhide Moccasins
+										["itemID"] = 142907,	-- Fearless Combatant's Dragonhide Moccasins
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
