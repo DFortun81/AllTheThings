@@ -198,6 +198,9 @@ _.NeverImplemented =
 			un(1, i(109344)),	-- Unknown
 			un(1, i(109363)),	-- Unknown
 			un(1, i(109379)),	-- Unknown
+			un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
+			un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
+			un(1, i(147074)),	-- Vambraces of Resoulte Justice 
 			un(1, i(109398)),	-- Unknown
 			un(1, i(109405)),	-- Unknown
 			un(1, i(109411)),	-- Unknown
@@ -2382,12 +2385,12 @@ _.NeverImplemented =
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(128824)), 	-- Tome of the Silver Hand
 	}),		-- Weapons end
+	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm
 	un(1, i(151377)),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)),	-- Helm of the Stormcaller - Never Added
-	un(3, i(19160)),	-- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(8195)),		-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(56405)),	-- Oasis Bracers
@@ -2397,11 +2400,7 @@ _.NeverImplemented =
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 	un(1, i(142360)),	-- Blazing Ember Signet
-	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)
-	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
-	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
-	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
-	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
+	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		 	--
