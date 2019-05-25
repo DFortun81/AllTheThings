@@ -108,7 +108,7 @@ _.Zones =
 							["coords"] = {
 								{ 29.78, 46.47, 864 },
 							},
-							["description"] = "This rare is only up when the WQ is avaialable",
+							["description"] = "This rare is only up when the WQ is available.",
 							["lvl"] = 120,			-- Note!! This is due to him being tied to the WQ
 							["g"] = {
 								{	-- Tideflat Brute's Greatbelt
@@ -162,7 +162,7 @@ _.Zones =
 						{	-- Fangcaller Xorreth **
 							["npcID"] = 136323,	-- Fangcaller Xorreth
 							["questID"] = 51065,
-							["description"] = "This rare is only up when the WQ is avaialable",
+							["description"] = "This rare is only up when the WQ is available.",
 							["lvl"] = 120,			-- Note!! This is due to him being tied to the WQ
 							["coords"] = {
 								{ 53.60, 35.01, 864 },
@@ -176,7 +176,7 @@ _.Zones =
 						{	-- Golanar **
 							["npcID"] = 129027, 	-- Golanar
 							["questID"] = 50362,
-							["description"] = "This rare is only up when the WQ is avaialable",
+							["description"] = "This rare is only up when the WQ is available.",
 							["lvl"] = 120,			-- Note!! This is due to him being tied to the WQ
 							["coords"] = {
 								{ 55.43, 05.73, 864 },
@@ -282,7 +282,7 @@ _.Zones =
 						{	-- Mor'fani the Exile **
 							["npcID"] = 134694,	-- Mor'fani the Exile
 							["questID"] = 50666,
-							["description"] = "This rare is only up when the WQ is avaialable",
+							["description"] = "This rare is only up when the WQ is available.",
 							["lvl"] = 120,			-- Note!! This is due to him being tied to the WQ
 							["coords"] = { 
 								{ 37.41, 88.71, 864 },
