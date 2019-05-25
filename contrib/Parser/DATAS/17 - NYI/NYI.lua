@@ -52,6 +52,11 @@ _.NeverImplemented =
 		un(1, i(157656)),	-- raincallers shield (Lv20 Start Gear?)
 		un(1, i(157657)),	-- foebreakers barrier (Lv20 Start Gear?)
 		un(1, i(157629)),	-- hammer of faith
+		un(1, i(157635)),	-- Duskfall Daggers
+		un(1, i(140703)),	-- Duskfall Daggers
+		un(1, i(150598)),	-- Duskfall Daggers
+		un(1, i(140704)),	-- Assassins Serrated Dagger
+		un(1, i(150599)),	-- Assassins Serrated Dagger
 		
 		-- Possible BC TW Gear (not in journal)
 		un(1, i(150450)),	-- Nether Shadow Tunic
@@ -662,6 +667,10 @@ _.NeverImplemented =
 			un(1, i(46276)),	-- Scourgestalker spaulders
 			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
+			un(1, i(43936)),	-- Battlesurgeons Gauntlets
+			un(1, i(54549)),	-- Saline-Soaked Spaulders
+			un(1, i(80987)),	-- Scavenger's chain spaulders
+			un(1, i(80991)),	-- Scavenger's ringmail spaulders
 			un(1, i(56485)),	-- Windbound Bracers
 			un(1, i(109416)),	-- Unknown
 			un(1, i(109425)),	-- Unknown
@@ -995,6 +1004,7 @@ _.NeverImplemented =
 			un(1, i(109459)),	-- Unknown
 			un(1, i(109522)),	-- Unknown
 			un(1, i(109526)),	-- Unknown
+			un(1, i(117536)),	-- Springrain Choker
 			un(1, i(42856)),	-- Unknown (might be Frosthowl Amulet)
 			un(1, i(44389)),	-- Unknown (might be Curative Necklace)
 			un(1, i(44390)),	-- Unknown (might be Venomous Pendant)

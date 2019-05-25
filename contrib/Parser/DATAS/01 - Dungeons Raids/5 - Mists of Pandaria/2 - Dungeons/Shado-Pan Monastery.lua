@@ -98,6 +98,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144126),	-- Star Summoner Bracers
 						i(144096),	-- Sparkbreath Girdle
 						i(143978),	-- Leggings of the Charging Soul
+						un(2, i(81180)),	-- Cloudstrike Pendant (7.1 - Removed from Game!)
 						un(2, i(81110)),	-- Azure Serpent Chestguard (7.1 - Removed from Game!)
 						un(2, i(81179)),	-- Star Summoner Bracers (7.1 - Removed from Game!)
 						un(2, i(81086)),	-- Sparkbreath Girdle (7.1 - Removed from Game!)
@@ -121,6 +122,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144131),	-- Bladed Smoke Bracers
 						i(144107),	-- Gloves of Enraged Slaughter
 						i(143985),	-- Spike-Soled Stompers
+						un(2, i(81084)),	-- Necklace of Disorientation (7.1 - Removed from Game!)
 						un(2, i(81089)),	-- Crescent of Ichor (7.1 - Removed from Game!)
 						un(2, i(81185)),	-- Bladed Smoke Bracers (7.1 - Removed from Game!)
 						un(2, i(81102)),	-- Gloves of Enraged Slaughter (7.1 - Removed from Game!)

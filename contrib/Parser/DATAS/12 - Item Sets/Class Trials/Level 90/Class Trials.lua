@@ -539,7 +539,7 @@ _.GearSets =
 								i(117220),	-- Communal Leggings
 								i(117217),	-- Communal Sandals
 								i(117223),	-- Communal Band of Wisdom
-								i(117223),	-- Communal Ring of Wisdom
+								i(117224),	-- Communal Ring of Wisdom
 								i(117222),	-- Communal Idol of Wisdom
 								i(117226),	-- Communal Stone of Wisdom
 							}),
@@ -659,6 +659,10 @@ _.GearSets =
 								i(117081),	-- Springrain Idol of Wisdom
 								i(117084),	-- Springrain Stone of Wisom
 							}),
+							n(-9924, {	-- Guardian
+								i(117539),	-- Springrain Band of Durability
+								i(117538),	-- Springrain Ring of Durability
+							}),
 						},
 						["classes"] = { 11 }
 					}),
@@ -691,8 +695,8 @@ _.GearSets =
 							n(-9931, {	-- Brewmaster
 								i(117131),	-- Mistdancer Spire
 								i(117127),	-- Mistdancer Amulet
-								--	i(101085),	-- Mistdancer Band of Stoicism
-								--	i(101086),	-- Mistdancer Ring of Stoicism
+								i(117128),	-- Mistdancer Band of Stoicism
+								i(117129),	-- Mistdancer Ring of Stoicism
 								--	i(101089),	-- Mistdancer Defender Idol
 								--	i(101087),	-- Mistdancer Defender Stone
 							}),
@@ -723,8 +727,8 @@ _.GearSets =
 								--	i(101096),	-- Mistdancer Cord
 								--	i(101094),	-- Mistdancer Legguards
 								--	i(101091),	-- Mistdancer Footpads
-								--	i(101115),	-- Mistdancer Band of Onslaught
-								--	i(101116),	-- Mistdancer Ring of Onslaught
+								i(117158),	-- Mistdancer Band of Onslaught
+								i(117159),	-- Mistdancer Ring of Onslaught
 								--	i(101113),	-- Mistdancer Idol of Rage
 								--	i(101117),	-- Mistdancer Stone of Rage
 							}),
@@ -904,7 +908,7 @@ _.GearSets =
 							n(-9942, {	-- Holy
 								--	i(101142),	-- Sunsoul Scepter
 								i(117175),	-- Sunsoul Headpiece
-								--	i(101134),	-- Sunsoul Necklace
+								i(117177),	-- Sunsoul Necklace
 								i(117172),	-- Sunsoul Cloak of Wisdom
 								i(117182),	-- Sunsoul Spaulders
 								i(117171),	-- Sunsoul Breastplate
@@ -913,15 +917,15 @@ _.GearSets =
 								i(117183),	-- Sunsoul Belt
 								i(117176),	-- Sunsoul Leggings
 								i(117173),	-- Sunsoul Boots
-								--	i(101137),	-- Sunsoul Band of Wisdom
-								--	i(101136),	-- Sunsoul Ring of Wisdom
+								i(117179),	-- Sunsoul Band of Wisdom
+								i(117180),	-- Sunsoul Ring of Wisdom
 								--	i(101135),	-- Sunsoul Idol of Wisome
 								--	i(101138),	-- Sunsoul Stone of Wisdom
 							}),
 							n(-9943, {	-- Protection
 								i(117187),	-- Sunsoul Sword
 								i(117200),	-- Sunsoul Faceguard
-								--	i(101159),	-- Sunsoul Amulet
+								i(117202),	-- Sunsoul Amulet
 								i(117197),	-- Sunsoul Cloak of Stoicism
 								i(117207),	-- Sunsoul Shoulderguards
 								i(117196),	-- Sunsoul Chestguard
@@ -939,7 +943,7 @@ _.GearSets =
 								--	i(101146),	-- Sunsoul Greatsword
 								i(117189),	-- Sunsoul Warmaul
 								i(117166),	-- Sunsoul Helm
-								--	i(101148),	-- Sunsoul Pendant
+								i(117191),	-- Sunsoul Pendant
 								i(117190),	-- Sunsoul Cloak of Battle
 								i(117168),	-- Sunsoul Pauldrons
 								i(117163),	-- Sunsoul Battleplate
@@ -964,6 +968,7 @@ _.GearSets =
 								--	i(101278),	-- Oathsworn Greatsword
 								i(117330),	-- Oathsworn Headchopper
 								i(117321),	-- Oathsworn Greataxe
+								i(117331),	-- Oathsworn Axe
 								--	i(101282),	-- Oathsworn Helm
 								i(117334),	-- Oathsworn Pendant
 								i(117333),	-- Oathsworn Cloak of Battle

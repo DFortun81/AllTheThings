@@ -166,6 +166,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144091),	-- Hopecrusher Gauntlets
 						i(144118),	-- Paralyzing Gloves
 						i(144116),	-- Binding of Broken Dreams
+						un(2, i(81131)),	-- Mindbreaker Pendant (7.1 - Removed from Game!)
 						un(2, i(81079)),	-- Staff of Trembling Will (7.1 - Removed from Game!)
 						un(2, i(81063)),	-- Dubious Handaxe (7.1 - Removed from Game!)
 						un(2, i(87544)),	-- Je'lyu, Spirit of the Serpent (7.1 - Removed from Game!)
