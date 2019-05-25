@@ -567,6 +567,68 @@ _.GearSets =
 									},
 								},
 							},
+							{	-- Vindictive Combatant's Scaled Armor [Paladin - 5/10/19 & 5/22/19]
+								["setID"] = 1164,	-- Vindictive Combatant's Scaled Armor
+								["classes"] = {
+									2,	-- Pally
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Scaled Helm
+										["itemID"] = 135973,	-- Vindictive Combatant's Scaled Helm
+									},
+									{	-- Vindictive Combatant's Scaled Shoulders
+										["itemID"] = 135975,	-- Vindictive Combatant's Scaled Shoulders
+									},
+									{	-- Vindictive Combatant's Greatcloak of Faith
+										["itemID"] = 136027,	-- Vindictive Combatant's Greatcloak of Faith
+									},
+									{	-- Vindictive Combatant's Scaled Chestpiece
+										["itemID"] = 135970,	-- Vindictive Combatant's Scaled Chestpiece
+									},
+									{	-- Vindictive Combatant's Scaled Wristplates
+										["itemID"] = 135977,	-- Vindictive Combatant's Scaled Wristplates
+									},
+									{	-- Vindictive Combatant's Scaled Gauntlets
+										["itemID"] = 135972,	-- Vindictive Combatant's Scaled Gauntlets
+									},
+									{	-- Vindictive Combatant's Scaled Girdle
+										["itemID"] = 135976,	-- Vindictive Combatant's Scaled Girdle
+									},
+									{	-- Vindictive Combatant's Scaled Legguards
+										["itemID"] = 135974,	-- Vindictive Combatant's Scaled Legguards
+									},
+									{	-- Vindictive Combatant's Scaled Sabatons
+										["itemID"] = 135971,	-- Vindictive Combatant's Scaled Sabatons
+									},
+									{	-- Fearless Combatant's Scaled Helm
+										["itemID"] = 142942,	-- Fearless Combatant's Scaled Helm
+									},
+									{	-- Fearless Combatant's Scaled Shoulders
+										["itemID"] = 142944,	-- Fearless Combatant's Scaled Shoulders
+									},
+									{	-- Fearless Combatant's Greatcloak of Faith
+										["itemID"] = 142996,	-- Fearless Combatant's Greatcloak of Faith
+									},
+									{	-- Fearless Combatant's Scaled Chestpiece
+										["itemID"] = 142939,	-- Fearless Combatant's Scaled Chestpiece
+									},
+									{	-- Fearless Combatant's Scaled Wristplates
+										["itemID"] = 142946,	-- Fearless Combatant's Scaled Wristplates
+									},
+									{	-- Fearless Combatant's Scaled Gauntlets
+										["itemID"] = 142941,	-- Fearless Combatant's Scaled Gauntlets
+									},
+									{	-- Fearless Combatant's Scaled Girdle
+										["itemID"] = 142945,	-- Fearless Combatant's Scaled Girdle
+									},
+									{	-- Fearless Combatant's Scaled Legguards
+										["itemID"] = 142943,	-- Fearless Combatant's Scaled Legguards
+									},
+									{	-- Fearless Combatant's Scaled Sabatons
+										["itemID"] = 142940,	-- Fearless Combatant's Scaled Sabatons
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
