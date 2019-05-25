@@ -171,6 +171,7 @@ _.Zones =
 					["hordeQuestID"] = 56277,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 64.4, 55.0, 1355 },
 						{ 74.7, 31.4, 1355 },
 						{ 80.5, 42.2, 1355 }, -- on top of a building. Requires the Deepcoral Pod buff to get to him
 						{ 84.5, 40.7, 1355 }, -- second time on land

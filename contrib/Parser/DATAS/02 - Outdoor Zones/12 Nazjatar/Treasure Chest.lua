@@ -8,7 +8,7 @@ _.Zones =
 			n(-212, {	-- Treasure Chest
 				["description"] = "Must complete A Tempered Blade (Alliance) or Save a Friend (Horde) before the chests become available.",
 				["g"] = {
-					o(326394, {	-- Arcane Chest -- confirmed
+					o(326394, {	-- Arcane Chest
 						["questID"] = 55954,
 						["coord"] = { 34.5, 40.4, 1355 },
 					}),
@@ -16,12 +16,12 @@ _.Zones =
 						--["questID"] = ,
 						["coord"] = { 52.4, 52.1, 1355 },
 					}),
-					o(326402, {	-- Arcane Chest -- confirmed
+					o(326402, {	-- Arcane Chest
 						["questID"] = 55945,
 						["coord"] = { 52.8, 49.8, 1355 },
 					}),
-					o(326403, {	-- Arcane Chest -- verify
-						["questID"] = 55949, -- 56212, 56220, 56221 also popped, but given the questID range, this should be right
+					o(326403, {	-- Arcane Chest
+						["questID"] = 55949,
 						["coord"] = { 49.6, 64.5, 1355 },
 					}),
 					o(326404, {	-- Arcane Chest
@@ -66,6 +66,10 @@ _.Zones =
 						["coord"] = { 34.6, 43.6, 1355 },
 						["description"] = "At the back of a cave.",
 					}),
+					o(326414, {	-- Arcane Chest
+						["questID"] = 55940,
+						["coord"] = { 74.8, 53.2, 1355 },
+					}),
 					o(326395, {	-- Glowing Arcane Trunk
 						["questID"] = 55959, -- 56343 triggered after completing the minigame, 56974 trigger at same time of chest opening
 						["coord"] = { 37.9, 6.4, 1355 },
@@ -80,7 +84,6 @@ _.Zones =
 					[326399] = "Glowing Arcane Trunk",
 					[326400] = "Glowing Arcane Trunk",
 					[329783] = "Glowing Arcane Trunk",
-					[326414] = "Arcane Chest",
 					[326415] = "Arcane Chest",
 					[326416] = "Arcane Chest",
 					[326417] = "Arcane Chest",

@@ -9,8 +9,11 @@ _.Zones =
 			--[[
 			possible secrets:
 			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
+			"Neri's Find" npc at 44.9, 60.7 atop of the overhand above Newhome. Approach from ~45.3, 64.8
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
+			
+			flopping fish at (47.4, 61.0), (48.5, 60.5), (50.5, 58.8). interacting knocks it away, but it bounces right back
 			
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
