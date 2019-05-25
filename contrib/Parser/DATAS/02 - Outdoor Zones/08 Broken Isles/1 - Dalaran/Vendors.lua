@@ -502,6 +502,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Chain Treads
 												["itemID"] = 135947,	-- Vindictive Combatant's Chain Treads
 											},
+											{	-- Fearless Combatant's Chain Helm
+												["itemID"] = 142918,	-- Fearless Combatant's Chain Helm
+											},
+											{	-- Fearless Combatant's Chain Spaulders
+												["itemID"] = 142920,	-- Fearless Combatant's Chain Spaulders
+											},
+											{	-- Fearless Combatant's Drape of the Tracker
+												["itemID"] = 142995,	-- Fearless Combatant's Drape of the Tracker
+											},
+											{	-- Fearless Combatant's Chain Armor
+												["itemID"] = 142915,	-- Fearless Combatant's Chain Armor
+											},
+											{	-- Fearless Combatant's Chain Armband
+												["itemID"] = 142922,	-- Fearless Combatant's Chain Armband
+											},
+											{	-- Fearless Combatant's Chain Gauntlets
+												["itemID"] = 142917,	-- Fearless Combatant's Chain Gauntlets
+											},
+											{	-- Fearless Combatant's Chain Clasp
+												["itemID"] = 142921,	-- Fearless Combatant's Chain Clasp
+											},
+											{	-- Fearless Combatant's Chain Leggings
+												["itemID"] = 142919,	-- Fearless Combatant's Chain Leggings
+											},
+											{	-- Fearless Combatant's Chain Treads
+												["itemID"] = 142916,	-- Fearless Combatant's Chain Treads
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
