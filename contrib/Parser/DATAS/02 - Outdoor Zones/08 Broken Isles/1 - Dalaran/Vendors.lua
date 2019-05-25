@@ -124,6 +124,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Silk Treads
 												["itemID"] = 135954,	-- Vindictive Combatant's Silk Treads
 											},
+											{	-- Fearless Combatant's Silk Cowl
+												["itemID"] = 142925,	-- Fearless Combatant's Silk Cowl
+											},
+											{	-- Fearless Combatant's Silk Amice
+												["itemID"] = 142928,	-- Fearless Combatant's Silk Amice
+											},
+											{	-- Fearless Combatant's Silken Shawl
+												["itemID"] = 142988,	-- Fearless Combatant's Silken Shawl
+											},
+											{	-- Fearless Combatant's Silk Robe
+												["itemID"] = 142927,	-- Fearless Combatant's Silk Robe
+											},
+											{	-- Fearless Combatant's Silk Bracers
+												["itemID"] = 142930,	-- Fearless Combatant's Silk Bracers
+											},
+											{	-- Fearless Combatant's Silk Handguards
+												["itemID"] = 142924,	-- Fearless Combatant's Silk Handguards
+											},
+											{	-- Fearless Combatant's Silk Cord
+												["itemID"] = 142929,	-- Fearless Combatant's Silk Cord
+											},
+											{	-- Fearless Combatant's Silk Trousers
+												["itemID"] = 142926,	-- Fearless Combatant's Silk Trousers
+											},
+											{	-- Fearless Combatant's Silk Treads
+												["itemID"] = 142923,	-- Fearless Combatant's Silk Treads
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
