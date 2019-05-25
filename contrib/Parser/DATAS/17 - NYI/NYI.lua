@@ -421,6 +421,22 @@ _.NeverImplemented =
 			un(1, i(54681)),	-- Thick Murloc Armor
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(54727)),	-- Traveler's Boots
+			un(1, i(54543)),	-- Orca tooth treads
+			un(1, i(60584)),	-- Vicious Gladiator's boots of dominance
+			un(1, i(60585)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60588)),	-- Vicious Gladiator's armwraps of triump
+			un(1, i(60590)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60592)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60595)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60596)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60597)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60598)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60599)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60600)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60606)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60608)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60609)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60610)),	-- Vicious Gladiator's boots of dominance
 			un(1, i(54649)),	-- Unknown
 			un(1, i(54650)),	-- Unknown
 			un(1, i(54652)),	-- Unknown

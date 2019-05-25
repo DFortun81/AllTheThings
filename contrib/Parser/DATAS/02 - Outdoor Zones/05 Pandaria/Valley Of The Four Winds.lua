@@ -2011,6 +2011,7 @@ _.Zones =
 							un(2, i(91130)),	-- Tyrannical Gladiator's Barrier
 							un(2, i(91206)),	-- Tyrannical Gladiator's Redoubt
 							un(2, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+							un(2, i(91094)),	-- Tyrannical Gladiator's Cleaver
 							un(2, i(91087)),	-- Tyrannical Gladiator's Decapitator (used 2 upgrade to elite)
 							un(2, i(91088)),	-- Tyrannical Gladiator's Decapitator
 							un(2, i(91108)),	-- Tyrannical Gladiator's Longbow
@@ -2452,6 +2453,36 @@ _.Zones =
 					}),
 					na(69968, {	-- Ethan Natice Season 14 Elite-- Link for all the Items
 						["u"] = 43,	-- Removed NPCs
+						["g"] = {
+							un(2, i(101698)),	-- Elite grievous Gladiator's Greatcloak
+							un(2, i(100184)),	-- Elite grievous Gladiator's Decapitator
+							un(2, i(100194)),	-- Elite grievous Gladiator's Quick blade
+							un(2, i(100489)),	-- Elite grievous Gladiator's Mageblade
+							un(2, i(100499)),	-- Elite grievous Gladiator's Slicer
+							un(2, i(100224)),	-- Elite grievous Gladiator's Endgame
+							un(2, i(100238)),	-- Elite grievous Gladiator's Reprieve
+							un(2, i(100228)),	-- Elite grievous Gladiator's Spellblade
+							un(2, i(100481)),	-- Elite grievous Gladiator's Shanker
+							un(2, i(100298)),	-- Elite grievous Gladiator's Rifle
+							un(2, i(100404)),	-- Elite grievous Gladiator's Pike
+							un(2, i(100483)),	-- Elite grievous Gladiator's Ripper
+							un(2, i(100487)),	-- Elite grievous Gladiator's Render
+							un(2, i(100188)),	-- Elite grievous Gladiator's Greatsword
+							un(2, i(100226)),	-- Elite grievous Gladiator's barrier
+							un(2, i(100304)),	-- Elite grievous Gladiator's Energy Staff
+							un(2, i(100230)),	-- Elite grievous Gladiator's Battle Staff
+							un(2, i(100304)),	-- Elite grievous Gladiator's Staff
+							un(2, i(100190)),	-- Elite grievous Gladiator's Cleaver
+							un(2, i(100495)),	-- Elite grievous Gladiator's Hacker
+							un(2, i(100302)),	-- Elite grievous Gladiator's redoubt
+							un(2, i(100509)),	-- Elite grievous Gladiator's shield wall
+							un(2, i(100192)),	-- Elite grievous Gladiator's pummeler
+							un(2, i(100300)),	-- Elite grievous Gladiator's gravel
+							un(2, i(100497)),	-- Elite grievous Gladiator's bonecracker
+							un(2, i(100240)),	-- Elite grievous Gladiator's Touch of Defeat
+							un(2, i(100493)),	-- Elite grievous Gladiator's baton of light
+							un(2, i(100533)),	-- Elite grievous Gladiator's Longbow
+						},
 					}),
 					na(75692, {	-- Ethan Natice <Grievous Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
