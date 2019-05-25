@@ -40,41 +40,21 @@ _.Craftables =
 				},
 				{	-- Imbued Alchemist Stone
 					["itemID"] = 166975,	-- Imbued Alchemist Stone
-					["g"] = {
-						{	-- Recipe: Emblazoned Alchemist Stone
-							["itemID"] = 166978,	-- Recipe: Emblazoned Alchemist Stone
-						},
-					},
 				},
 				{	-- Sanguinated Alchemist Stone
 					["itemID"] = 166974,	-- Sanguinated Alchemist Stone
-					["g"] = {
-						{	-- Recipe: Imbued Alchemist Stone
-							["itemID"] = 166977,	-- Recipe: Imbued Alchemist Stone
-						},
-					},
 				},
 				{	-- Siren's Alchemist Stone
 					["itemID"] = 152637,	-- Siren's Alchemist Stone
 				},
 				{	-- Spirited Alchemist Stone
 					["itemID"] = 165927,	-- Spirited Alchemist Stone
-					["g"] = {
-						{	-- Recipe: Eternal Alchemist Stone
-							["itemID"] = 165930,	-- Recipe: Eternal Alchemist Stone
-						},
-					},
 				},
 				{	-- Surging Alchemist Stone
 					["itemID"] = 152632,	-- Surging Alchemist Stone
 				},
 				{	-- Tidal Alchemist Stone
 					["itemID"] = 165926,	-- Tidal Alchemist Stone
-					["g"] = {
-						{	-- Recipe: Spirited Alchemist Stone
-							["itemID"] = 165929,	-- Recipe: Spirited Alchemist Stone
-						},
-					},
 				},
 			}),
 		}),

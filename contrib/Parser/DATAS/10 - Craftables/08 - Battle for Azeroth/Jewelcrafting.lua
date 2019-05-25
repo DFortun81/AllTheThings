@@ -40,19 +40,9 @@ _.Craftables =
 				},
 				{	-- Imbued Kraken's Eye Loop
 					["itemID"] = 166520,	-- Imbued Kraken's Eye Loop
-					["g"] = {
-						{	-- Recipe: Emblazoned Kraken's Eye Loop
-							["itemID"] = 166541,	-- Recipe: Emblazoned Kraken's Eye Loop
-						},
-					},
 				},
 				{	-- Kraken's Eye Loop
 					["itemID"] = 166519,	-- Kraken's Eye Loop
-					["g"] = {
-						{	-- Recipe: Imbued Kraken's Eye Loop
-							["itemID"] = 166540,	-- Recipe: Imbued Kraken's Eye Loop
-						},
-					},
 				},
 				{	-- Kubiline Ring
 					["itemID"] = 153688,	-- Kubiline Ring
@@ -71,22 +61,12 @@ _.Craftables =
 				},
 				{	-- Spirited Kraken's Eye Loop
 					["itemID"] = 166523,	-- Spirited Kraken's Eye Loop
-					["g"] = {
-						{	-- Recipe: Eternal Kraken's Eye Loop
-							["itemID"] = 166543,	-- Recipe: Eternal Kraken's Eye Loop
-						},
-					},
 				},
 				{	-- Tidal Amethyst Loop
 					["itemID"] = 153684,	-- Tidal Amethyst Loop
 				},
 				{	-- Tidal Kraken's Eye Loop
 					["itemID"] = 166522,	-- Tidal Kraken's Eye Loop
-					["g"] = {
-						{	-- Recipe: Spirited Kraken's Eye Loop
-							["itemID"] = 166542,	-- Recipe: Spirited Kraken's Eye Loop
-						},
-					},
 				},
 			}),
 		}),

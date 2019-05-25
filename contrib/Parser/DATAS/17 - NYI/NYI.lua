@@ -27,6 +27,7 @@ _.NeverImplemented =
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
+		un(1, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		un(1, i(166700)),	-- Durable Sailor's Duffel
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -50,6 +51,12 @@ _.NeverImplemented =
 		un(1, i(157654)),	-- stalwarts bulwark (Lv20 Start Gear?)
 		un(1, i(157656)),	-- raincallers shield (Lv20 Start Gear?)
 		un(1, i(157657)),	-- foebreakers barrier (Lv20 Start Gear?)
+		un(1, i(157629)),	-- hammer of faith
+		un(1, i(157635)),	-- Duskfall Daggers
+		un(1, i(140703)),	-- Duskfall Daggers
+		un(1, i(150598)),	-- Duskfall Daggers
+		un(1, i(140704)),	-- Assassins Serrated Dagger
+		un(1, i(150599)),	-- Assassins Serrated Dagger
 		
 		-- Possible BC TW Gear (not in journal)
 		un(1, i(150450)),	-- Nether Shadow Tunic
@@ -191,6 +198,9 @@ _.NeverImplemented =
 			un(1, i(109344)),	-- Unknown
 			un(1, i(109363)),	-- Unknown
 			un(1, i(109379)),	-- Unknown
+			un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
+			un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
+			un(1, i(147074)),	-- Vambraces of Resoulte Justice 
 			un(1, i(109398)),	-- Unknown
 			un(1, i(109405)),	-- Unknown
 			un(1, i(109411)),	-- Unknown
@@ -375,8 +385,10 @@ _.NeverImplemented =
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(54708)),	-- Ceremonial Leather Gloves
 			un(1, i(54666)),	-- Ceremonial Leather Harness
+			un(1, i(37176)),	-- Cavern Leather Treads
+			un(1, i(30288)),	-- Cenarion wardens gloves
 			un(1, i(54698)),	-- Ceremonial Leather Loincloth
-			un(1, i(5821)),	-- Darkstalker Boots (Leather)
+			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(54683)),	-- Dusky Leather Armor
 			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
 			un(1, i(54674)),	-- Gloomshroud Armor
@@ -421,6 +433,22 @@ _.NeverImplemented =
 			un(1, i(54681)),	-- Thick Murloc Armor
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(54727)),	-- Traveler's Boots
+			un(1, i(54543)),	-- Orca tooth treads
+			un(1, i(60584)),	-- Vicious Gladiator's boots of dominance
+			un(1, i(60585)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60588)),	-- Vicious Gladiator's armwraps of triump
+			un(1, i(60590)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60592)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60595)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60596)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60597)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60598)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60599)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60600)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60606)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60608)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60609)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60610)),	-- Vicious Gladiator's boots of dominance
 			un(1, i(54649)),	-- Unknown
 			un(1, i(54650)),	-- Unknown
 			un(1, i(54652)),	-- Unknown
@@ -642,6 +670,10 @@ _.NeverImplemented =
 			un(1, i(46276)),	-- Scourgestalker spaulders
 			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
+			un(1, i(43936)),	-- Battlesurgeons Gauntlets
+			un(1, i(54549)),	-- Saline-Soaked Spaulders
+			un(1, i(80987)),	-- Scavenger's chain spaulders
+			un(1, i(80991)),	-- Scavenger's ringmail spaulders
 			un(1, i(56485)),	-- Windbound Bracers
 			un(1, i(109416)),	-- Unknown
 			un(1, i(109425)),	-- Unknown
@@ -975,6 +1007,7 @@ _.NeverImplemented =
 			un(1, i(109459)),	-- Unknown
 			un(1, i(109522)),	-- Unknown
 			un(1, i(109526)),	-- Unknown
+			un(1, i(117536)),	-- Springrain Choker
 			un(1, i(42856)),	-- Unknown (might be Frosthowl Amulet)
 			un(1, i(44389)),	-- Unknown (might be Curative Necklace)
 			un(1, i(44390)),	-- Unknown (might be Venomous Pendant)
@@ -2029,6 +2062,8 @@ _.NeverImplemented =
 			un(1, i(109470)),	-- Unknown
 			un(1, i(109533)),	-- Unknown
 			un(1, i(90331)),	-- Face Smasher Warhammer
+			un(1, i(140697)),	-- Justicar's Hammer
+			un(1, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
@@ -2350,12 +2385,12 @@ _.NeverImplemented =
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(128824)), 	-- Tome of the Silver Hand
 	}),		-- Weapons end
+	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm
 	un(1, i(151377)),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)),	-- Helm of the Stormcaller - Never Added
-	un(3, i(19160)),	-- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(8195)),		-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(56405)),	-- Oasis Bracers
@@ -2365,11 +2400,7 @@ _.NeverImplemented =
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 	un(1, i(142360)),	-- Blazing Ember Signet
-	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)
-	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
-	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
-	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
-	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
+	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		 	--
