@@ -36,6 +36,7 @@ pet(44984, 212); 	-- Ammen Vale Lashling
 pet(117354, 1531); 	-- Ancient Nest Guardian
 pet(11023, 52); 	-- Ancona Chicken
 pet(93040, 1155); 	-- Anubisath Idol
+pet(169393, 2720);	-- Arachnoid Skitterbot
 pet(45022, 216); 	-- Argent Gruntling
 pet(44998, 214); 	-- Argent Squire
 pet(118516, 1603);	-- Argi
@@ -90,6 +91,7 @@ pet(29901, 138); 	-- Blue Moth Egg (Blue Moth)
 pet(20371, 107); 	-- Blue Murloc Egg (Murky)
 pet(122532, 1600); 	-- Bone Serpent
 pet(119146, 1458); 	-- Bone Wasp
+pet(169392, 2719);	-- Bonebiter
 pet(104202, 1343); 	-- Bonkers
 pet(166452, 2547);	-- Bottled Essence of Hydrath (Hydrath Droplet)
 pet(152970, 2082);	-- Bound Stream
@@ -466,6 +468,7 @@ pet(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
 pet(71726, 329); 	-- Murky's Little Soulstone (Murkablo)
 pet(164971, 2483);	-- Murloc Balloon
 pet(163820, 2458);	-- Muskflank Calfling
+pet(169380, 2713);	-- Mustyfur Snooter
 pet(116258, 1514);	-- Mystical Spring Bouquet
 pet(169362, 2696);	-- Nameless Octopode
 pet(151269, 2002);	-- Naxxy

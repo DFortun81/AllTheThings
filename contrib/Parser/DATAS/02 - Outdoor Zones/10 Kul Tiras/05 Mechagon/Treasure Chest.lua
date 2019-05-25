@@ -8,9 +8,12 @@ _.Zones =
 			["g"] = {
 				n(-212, {	-- Treasure Chest
 					-- these chests may just be random spawns instead of set locations, so the questIDs may not be predetermined either
+					--[[
+					55553, 55549, 55550, 55552
+					]]--
 					o(325659, {	-- Mechanized Chest
-						["questID"] = 55553,
-						["coord"] = { 80.7, 18.7, 1462 },
+						["questID"] = 55553, -- popped on a completely different set of coords
+						["coord"] = { 80.7, 18.7, 1462 }, 
 						["g"] = {
 							i(169123),	-- Functional Fiddleswitch
 							i(166971),	-- Empty Energy Cell

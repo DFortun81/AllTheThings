@@ -36,12 +36,36 @@ _.Zones =
 							},
 						},
 					}),
+					n(153206, {	-- Ol' Big Tusk
+						["allianceQuestID"] = 55853,
+						["hordeQuestID"] = 55928,
+						["coord"] = { 55.6, 39.5, 1462 },
+						["description"] = "Must activate the |cFFFFD700Drill Rig|r.",
+						["g"] = {
+							{	-- Rest In Pistons (Ol' Big Tusk)
+								["achievementID"] = 13470,
+								["criteriaID"] = 22,
+							},
+						},
+					}),
+					n(152001, {	-- Bonepicker
+						["allianceQuestID"] = 55537,
+						["hordeQuestID"] = 55919,
+						["coord"] = { 65.8, 22.9, 1462 },
+						["g"] = {
+							{	-- Rest In Pistons (Bonepicker)
+								["achievementID"] = 13470,
+								["criteriaID"] = 13,
+							},
+							i(169392),	-- Bonebiter
+						},
+					}),
 					n(152569, {	-- Crazed Trogg
 						--["questID"] = 55161,
 						["coord"] = { 82.3, 21.0, 1462 },
 						["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
 						["g"] = {
-							{	-- Rest in Pisons (Crazed Trogg)
+							{	-- Rest in Pistons (Crazed Trogg)
 								["achievementID"] = 13470,
 								["criteriaID"] = 20,
 							},
@@ -60,12 +84,27 @@ _.Zones =
 							i(168804),	-- Powered Piscine Procurement Pole
 						},
 					}),
+					n(151202, {	-- Foul Manifestation
+						["allianceQuestID"] = 55513,
+						["hordeQuestID"] = 55916,
+						["coord"] = { 65.7, 51.7, 1462 },
+						["g"] = {
+							{	-- Rest in Pistons (Foul Manifestation)
+								["achievementID"] = 13470,
+								["criteriaID"] = 10,
+							},
+							i(167871, {	-- Blueprint: G99.99 Landshark
+								["questID"] = 55063,
+							}),
+						},
+					}),
 					n(151684, {	-- Jawbreaker
 						--["questID"] = ,
 						["coord"] = { 77.3, 44.8, 1462 },
 					}),
 					n(151933, {	-- Malfunctioning Beastbot
-						--["questID"] = ,
+						["allianceQuestID"] = 55544,
+						["hordeQuestID"] = 55926,
 						["coord"] = { 60.7, 42.2, 1462 },
 						["description"] = "Requires a |cFFFFD700Beastbot Powerpack|r.",
 						["g"] = {
@@ -76,13 +115,15 @@ _.Zones =
 						},
 					}),
 					n(151672, {	-- Mecharantula
-						--["questID"] = 55386, -- also popped 55909, 56506
+						["allianceQuestID"] = 56100,
+						["hordeQuestID"] = 55386,
 						["coord"] = { 88.3, 20.6, 1462 },
 						["g"] = {
 							{	-- Rest in Pistons (Mecharantuala)
 								["achievementID"] = 13470,
 								["criteriaID"] = 3,
 							},
+							i(169393),	-- Arachnoid Skitterbot
 							i(168327),	-- Chain Ignitercoil
 						},
 					}),
@@ -145,6 +186,18 @@ _.Zones =
 								["achievementID"] = 13470,
 								["criteriaID"] = 2,
 							},
+						},
+					}),
+					n(151940, {	-- Uncle T'Rogg
+						["allianceQuestID"] = 55538,
+						["hordeQuestID"] = 55921,
+						["coord"] = { 57.3, 20.7, 1462 },
+						["g"] = {
+							{	-- Rest In Pistons (Uncle T'Rogg)
+								["achievementID"] = 13470,
+								["criteriaID"] = 15,
+							},
+							i(168749),	-- Performant Effective Logic Board
 						},
 					}),
 				}),

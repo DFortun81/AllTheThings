@@ -9,6 +9,12 @@ _.Zones =
 				n(-17,  {	-- Quests
 					-- TODO:: Going through as horde initially, so all quests being marked HORDE_ONLY. If you get these as alliance, remove the races tag
 					-- most of the zone unlocks once you get the Welcome to the Resistance achievement for your faction.
+					{	-- A Direct Approach
+						["questID"] = 56493,
+						["qg"] = 155188,	-- Scrollsage Nola
+						["coord"] = { 72.2, 37.2, 862 },
+						["isDaily"] = true,
+					},
 					{	-- A Little Leg Work
 						["questID"] = 55697,
 						["qg"] = 150573,	-- Recycler Kerchunk
@@ -64,6 +70,20 @@ _.Zones =
 							{	-- Junkyard Architect (Experimental Adventurer Augment)
 								["achievementID"] = 13479,
 								["criteriaID"] = 22,
+							},
+						},
+					},
+					{	-- Blueprint: G99.99 Landshark
+						["itemID"] = 167871,
+						["questID"] = 55063,
+						["coord"] = { 65.6, 51.5, 1462 },
+						["crs"] = {
+							151202,	-- Foul Manifestation
+						},
+						["g"] = {
+							{	-- Junkyard Architect (G99.99 Landshark)
+								["achievementID"] = 13479,
+								["criteriaID"] = 11,
 							},
 						},
 					},
@@ -292,6 +312,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
+					{	-- Rustbolt Requisitions: Great Sea Catfish
+						["questID"] = 56762,
+						["qg"] = 150563,	-- Skaggit
+						["coord"] = { 73.8, 26.0, 862 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					},
 					{	-- Rustbolt Requisitions: Lane Snapper
 						["questID"] = 56765,
 						["qg"] = 150563,	-- Skaggit
@@ -442,6 +469,12 @@ _.Zones =
 							i(167555),	-- Pocket-Sized Computation Device
 						},
 					},
+					{	-- Unprofitable Ventures
+						["questID"] = 56471,
+						["qg"] = 155187,	-- Maokka
+						["coord"] = { 72.1, 37.1, 862 },
+						["isDaily"] = true,
+					},
 					{	-- Unsafe Work Conditions
 						["questID"] = 56083,
 						["qg"] = 150563,	-- Skaggit
@@ -449,6 +482,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["sourceQuest"] = 55736,	-- Welcome to the Resistance
+					},
+					{	-- Taking The Air Out
+						["itemID"] = 169682,	-- Venture Co. Rocket Box
+						["questID"] = 56501,
+						["coord"] = { 42.8, 41.9, 862 }, 
+						["crs"] = {
+							155259,	-- Lifting Specialist Gogo
+						},
 					},
 					{	-- Wanted: Junkbrat and Roadtrogg
 						["objectID"] = 329641,
