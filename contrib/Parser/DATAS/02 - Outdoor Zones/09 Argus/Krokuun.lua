@@ -106,7 +106,7 @@ _.Zones =
 						},
 					}),
 					i(140764, {	-- Grimoire of the First Necrolyte
-						["description"] = "The Skull of the Executed items can drop off of any Rare Elite World Quest target. (Such as the \"DANGER: Name\" quests.) It also requires a reasonably humanoid target, be that an undead, a rokbar, giant or similar. You can NOT be in a raid group and get the drop.",
+						["description"] = "The Skull of the Executed items can drop off of any Rare Elite World Quest target. (Such as the \"DANGER: Name\" quests.) It also requires a reasonably humanoid target, be that an undead, a rokbar, giant or similar.",
 						["crs"] = {
 							127116,	-- Eredar Bonebreaker
 							119597,	-- Felsiege Champion
