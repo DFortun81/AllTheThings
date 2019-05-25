@@ -394,8 +394,8 @@ _.Zones =
 											{	-- Fearless Combatant's Ironskin Gloves
 												["itemID"] = 142932,	-- Fearless Combatant's Ironskin Gloves
 											},
-											{	-- Fearless Combatant's Leather Belt
-												["itemID"] = 142961,	-- Fearless Combatant's Leather Belt
+											{	-- Fearless Combatant's Ironskin Belt
+												["itemID"] = 142937,	-- Fearless Combatant's Ironskin Belt
 											},
 											{	-- Fearless Combatant's Ironskin Legguards
 												["itemID"] = 142934,	-- Fearless Combatant's Ironskin Legguards
