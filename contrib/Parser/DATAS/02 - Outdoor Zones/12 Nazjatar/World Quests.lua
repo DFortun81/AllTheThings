@@ -7,8 +7,16 @@ _.Zones =
 		["g"] = {
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
+					{	-- A Steamy Situation
+						["questID"] = 56036,
+						["isWQ"] = 120,
+					},
 					{	-- Aranz, the Slitherblade
 						["questID"] = 55893,
+						["isWQ"] = 120,
+					},
+					{	-- Attrition
+						["questID"] = 55970,
 						["isWQ"] = 120,
 					},
 					{	-- Champion Aldrantiss, Defender of Her Kingdom
@@ -93,11 +101,22 @@ _.Zones =
 						},
 					},
 					{	-- Runelocked Chest
+						["questID"] = 56011,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Medium Runelocked Chest: Blue)
+								["achievementID"] = 13764,
+								["criteriaID"] = 15,
+							},
+						},
+					},
+					{	-- Runelocked Chest
 						["questID"] = 56016,
 						["isWQ"] = 120,
 						["sourceQuest"] = 56248,	-- Treasure Tale
 						["g"] = {
-							{	-- Puzzle Performer (Hard Runelocked Chest: Yellow)
+							{	-- Puzzle Performer (Medium Runelocked Chest: Yellow)
 								["achievementID"] = 13764,
 								["criteriaID"] = 10,
 							},
@@ -160,6 +179,10 @@ _.Zones =
 					},
 					{	-- Time to Krill
 						["questID"] = 56078,
+						["isWQ"] = 120,
+					},
+					{	-- Undana, Chilling Assassin
+						["questID"] = 55896,
 						["isWQ"] = 120,
 					},
 					{	-- Zoko, Her Iron Defender

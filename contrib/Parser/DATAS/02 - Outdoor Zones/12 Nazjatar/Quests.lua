@@ -149,6 +149,10 @@ _.Zones =
 							["questID"] = 56223,
 							["isDaily"] = true,
 						},
+						{	-- Wanted: Lady Narjiss
+							["questID"] = 56225,
+							["isDaily"] = true,
+						},
 					},
 				},
 				{	-- Brinestone Pickaxe -- possibly drops from any rare?
@@ -1069,6 +1073,15 @@ _.Zones =
 					["coord"] = { 49.0, 67.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 56644,	-- Up Against It
+				},
+				{	-- With A Little Help From My Friends
+					["questID"] = 56815,
+					["qg"] = 151300,	-- Kelfin Scout (Neri Sharpfin)
+					["races"] = HORDE_ONLY,
+					["description"] = "Unlocks when |nFFFFD700Neri Sharpfin|r hits rank 7.",
+					["g"] = {
+						i(169919),	-- Unshackled Commendation Crate
+					},
 				},
 				{	-- Working with Purpose
 					["questID"] = 56046,

@@ -87,11 +87,15 @@ _.Zones =
 				n(152465, {	-- Needlespine
 					["allianceQuestID"] = 56608,
 					["hordeQuestID"] = 56275,
+					["isDaily"] = true,
 					["coords"] = {
+						{ 48.7, 26.2, 1355 },
 						{ 57.0, 20.8, 1355 },
 						{ 50.2, 19.1, 1355 },
 					},
-					["isDaily"] = true,
+					["g"] = {
+						i(169355),	-- Chitterspine Needler
+					},
 				}),
 				n(152681, {	-- Prince Typhonus
 					["allianceQuestID"] = 56594,
@@ -110,6 +114,7 @@ _.Zones =
 						{ 74.5, 44.0, 1355 }, -- first time finding him. Possibly spawns in multiple places
 					},
 					["g"] = {
+						i(169350),	-- Glittering Diamondshell
 						i(169351),	-- Sandclaw Nestseeker
 						i(168081),	-- Brinestone Pickaxe
 					},
@@ -168,7 +173,9 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				n(150468, {	-- Vor'koth
+					["questID"] = 55603,
 					["isDaily"] = true,
+					["coord"] = { 48.1, 24.3, 1355 },
 					["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws",
 					["g"] = {
 						i(169376),	-- Skittering Eel

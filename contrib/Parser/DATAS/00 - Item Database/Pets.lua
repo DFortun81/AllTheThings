@@ -130,6 +130,7 @@ pet(89368, 849); 	-- Chi-Ji Kite
 pet(11110, 84); 	-- Chicken Egg (Westfall Chicken)
 pet(163504, 2418);	-- Child of Jani
 pet(169357, 2691);	-- Chitterspine Devourer
+pet(169355, 2689);	-- Chitterspine Needler
 pet(35350, 174); 	-- Chuck's Bucket (Chuck)
 pet(92707, 1117);	-- Cinder Kitten
 pet(127748, 1662); 	-- Cinder Pup
@@ -293,6 +294,7 @@ pet(163811, 2466);	-- Giggling Flame
 pet(120309, 1543); 	-- Glass of Warm Milk (Pygmy Cow)
 pet(129218, 1765); 	-- Glittering Arcane Crystal (Empyreal Manafiend)
 pet(142089, 1958); 	-- Glittering Ball of Yarn (Sanctum Cub)
+pet(169350, 2684);	-- Glittering Diamondshell
 pet(127701, 1598); 	-- Glowing Sporebat
 pet(93029, 1146); 	-- Gluth's Bone (Stitched Pup)
 pet(37297, 179);	-- Gold Medallion (Spirit of Competition)

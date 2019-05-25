@@ -56,9 +56,15 @@ _.Zones =
 						["questID"] = 55947,
 						["coord"] = { 44.7, 48.9, 1355 },
 					}),
+					o(326395, {	-- Glowing Arcane Trunk
+						["questID"] = 55959, -- 56343 triggered after completing the minigame, 56974 trigger at same time of chest opening
+						["coord"] = { 37.9, 6.4, 1355 },
+					}),
+					o(326396, {	-- Glowing Arcane Trunk
+						["questID"] = 55963, -- 55987 triggered after completing the minigame
+						["coord"] = { 43.8, 16.5, 1355 },
+					}),
 					--[[ -- these are the remaining known objectIDs for each chest
-					[326395] = "Glowing Arcane Trunk",
-					[326396] = "Glowing Arcane Trunk",
 					[326397] = "Glowing Arcane Trunk",
 					[326398] = "Glowing Arcane Trunk",
 					[326399] = "Glowing Arcane Trunk",
