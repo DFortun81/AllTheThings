@@ -691,6 +691,33 @@ _.Zones =
 											{	-- Vindictive Combatant's Plate Warboots
 												["itemID"] = 136011,	-- Vindictive Combatant's Plate Warboots
 											},
+											{	-- Fearless Combatant's Plate Helm
+												["itemID"] = 142982,	-- Fearless Combatant's Plate Helm
+											},
+											{	-- Fearless Combatant's Plate Shoulders
+												["itemID"] = 142984,	-- Fearless Combatant's Plate Shoulders
+											},
+											{	-- Fearless Combatant's Cloak of Battle
+												["itemID"] = 143313,	-- Fearless Combatant's Cloak of Battle
+											},
+											{	-- Fearless Combatant's Plate Chestpiece
+												["itemID"] = 142979,	-- Fearless Combatant's Plate Chestpiece
+											},
+											{	-- Fearless Combatant's Plate Wristplates
+												["itemID"] = 142986,	-- Fearless Combatant's Plate Wristplates
+											},
+											{	-- Fearless Combatant's Plate Gauntlets
+												["itemID"] = 142981,	-- Fearless Combatant's Plate Gauntlets
+											},
+											{	-- Fearless Combatant's Plate Girdle
+												["itemID"] = 142985,	-- Fearless Combatant's Plate Girdle
+											},
+											{	-- Fearless Combatant's Plate Legguards
+												["itemID"] = 142983,	-- Fearless Combatant's Plate Legguards
+											},
+											{	-- Fearless Combatant's Plate Warboots
+												["itemID"] = 142980,	-- Fearless Combatant's Plate Warboots
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
