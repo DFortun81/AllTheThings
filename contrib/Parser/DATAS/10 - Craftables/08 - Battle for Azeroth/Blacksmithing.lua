@@ -223,35 +223,15 @@ _.Craftables =
 				},
 				{	-- Enhanced Stormsteel Girdle [Alliance]
 					["itemID"] = 165406,	-- Enhanced Stormsteel Girdle [Alliance]
-					["g"] = {
-						{	-- Recipe: Fortified Stormsteel Girdle
-							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Enhanced Stormsteel Girdle [Horde]
 					["itemID"] = 165407,	-- Enhanced Stormsteel Girdle [Horde]
-					["g"] = {
-						{	-- Recipe: Fortified Stormsteel Girdle
-							["itemID"] = 165642,	-- Recipe: Fortified Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Fortified Stormsteel Girdle [Alliance]
 					["itemID"] = 165414,	-- Fortified Stormsteel Girdle [Alliance]
-					["g"] = {
-						{	-- Recipe: Tempered Stormsteel Girdle
-							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Fortified Stormsteel Girdle [Horde]
 					["itemID"] = 165415,	-- Fortified Stormsteel Girdle [Horde]
-					["g"] = {
-						{	-- Recipe: Tempered Stormsteel Girdle
-							["itemID"] = 165643,	-- Recipe: Tempered Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Honorable Combatant's Plate Waistguard [Alliance]
 					["itemID"] = 161896,	-- Honorable Combatant's Plate Waistguard [Alliance]
@@ -261,19 +241,9 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Girdle [Alliance]
 					["itemID"] = 162492,	-- Imbued Stormsteel Girdle [Alliance]
-					["g"] = {
-						{	-- Recipe: Emblazoned Stormsteel Girdle
-							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Imbued Stormsteel Girdle [Horde]
 					["itemID"] = 162465,	-- Imbued Stormsteel Girdle [Horde]
-					["g"] = {
-						{	-- Recipe: Emblazoned Stormsteel Girdle
-							["itemID"] = 162498,	-- Recipe: Emblazoned Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Monel-Hardened Waistguard [Alliance]
 					["itemID"] = 161886,	-- Monel-Hardened Waistguard [Alliance]
@@ -289,19 +259,9 @@ _.Craftables =
 				},
 				{	-- Stormsteel Girdle [Alliance]
 					["itemID"] = 161889,	-- Stormsteel Girdle [Alliance]
-					["g"] = {
-						{	-- Recipe: Imbued Stormsteel Girdle
-							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Stormsteel Girdle [Horde]
 					["itemID"] = 152811,	-- Stormsteel Girdle [Horde]
-					["g"] = {
-						{	-- Recipe: Imbued Stormsteel Girdle
-							["itemID"] = 162497,	-- Recipe: Imbued Stormsteel Girdle
-						},
-					},
 				},
 				{	-- Tempered Stormsteel Girdle [Alliance]
 					["itemID"] = 165422,	-- Tempered Stormsteel Girdle [Alliance]
@@ -319,27 +279,12 @@ _.Craftables =
 				},
 				{	-- Enhanced Stormsteel Legguards [Alliance]
 					["itemID"] = 165379,	-- Enhanced Stormsteel Legguards [Alliance]
-					["g"] = {
-						{	-- Recipe: Fortified Stormsteel Legguards
-							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Enhanced Stormsteel Legguards [Horde]
 					["itemID"] = 165380,	-- Enhanced Stormsteel Legguards [Horde]
-					["g"] = {
-						{	-- Recipe: Fortified Stormsteel Legguards
-							["itemID"] = 165640,	-- Recipe: Fortified Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Fortified Stormsteel Legguards [Alliance]
 					["itemID"] = 165389,	-- Fortified Stormsteel Legguards [Alliance]
-					["g"] = {
-						{	-- Recipe: Tempered Stormsteel Legguards
-							["itemID"] = 165641,	-- Recipe: Tempered Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Fortified Stormsteel Legguards [Horde]
 					["itemID"] = 165390,	-- Fortified Stormsteel Legguards [Horde]
@@ -352,19 +297,9 @@ _.Craftables =
 				},
 				{	-- Imbued Stormsteel Legguards [Alliance]
 					["itemID"] = 162491,	-- Imbued Stormsteel Legguards [Alliance]
-					["g"] = {
-						{	-- Recipe: Emblazoned Stormsteel Legguards
-							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Imbued Stormsteel Legguards [Horde]
 					["itemID"] = 162463,	-- Imbued Stormsteel Legguards [Horde]
-					["g"] = {
-						{	-- Recipe: Emblazoned Stormsteel Legguards
-							["itemID"] = 162496,	-- Recipe: Emblazoned Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Monel-Hardened Greaves [Alliance]
 					["itemID"] = 161884,	-- Monel-Hardened Greaves [Alliance]
@@ -380,19 +315,9 @@ _.Craftables =
 				},
 				{	-- Stormsteel Legguards [Alliance]
 					["itemID"] = 161888,	-- Stormsteel Legguards [Alliance]
-					["g"] = {
-						{	-- Recipe: Imbued Stormsteel Legguards
-							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Stormsteel Legguards [Horde]
 					["itemID"] = 152810,	-- Stormsteel Legguards [Horde]
-					["g"] = {
-						{	-- Recipe: Imbued Stormsteel Legguards
-							["itemID"] = 162495,	-- Recipe: Imbued Stormsteel Legguards
-						},
-					},
 				},
 				{	-- Tempered Stormsteel Legguards [Alliance]
 					["itemID"] = 165397,	-- Tempered Stormsteel Legguards [Alliance]
