@@ -77,6 +77,7 @@ _.PetJournal =
 		p(205),				-- Dun Morogh Cub
 		p(207),				-- Durotar Scorpion
 		p(396),				-- Dusk Spiderling
+		p(2662),			-- Duskytooth Snooter
 		p(1181),			-- Elder Python
 		p(631),				-- Emerald Boa
 		p(1760),			-- Fel Piglet
@@ -93,6 +94,7 @@ _.PetJournal =
 		p(1542),			-- Frostwolf Pup
 		p(2432),			-- Fuzzy Creepling
 		p(475),				-- Giraffe Calf
+		p(2711),			-- Golden Snorf
 		p(571),				-- Grove Viper
 		p(1705),			-- Grumpy
 		p(2190),			-- Guardian Cobra Hatchling
@@ -101,7 +103,7 @@ _.PetJournal =
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
 		p(2089),			-- Infernal Pyreclaw
-		p(699),				-- Jumping SPider
+		p(699),				-- Jumping Spider
 		p(678),				-- Jungle Grub
 		p(438),				-- King Snake
 		p(1334),			-- Kovok
@@ -132,6 +134,7 @@ _.PetJournal =
 		p(286),				-- Mr. Grubbs
 		p(1594),			-- Mudback Calf
 		p(2458),			-- Muskflank Calfling
+		p(2713),			-- Mustyfur Snooter
 		un(10, p(303)),		-- Nightsaber Cub
 		p(1727),			-- Nursery Spider
 		p(236),				-- Obsidian Hatchling
@@ -157,6 +160,7 @@ _.PetJournal =
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
 		p(1749),			-- Rose Taipan
+		p(2661),			-- Rustyroot Snooter
 		p(491),				-- Sand Kitten
 		p(1692),			-- Savage Cub
 		p(2436),			-- Scabby
@@ -177,6 +181,7 @@ _.PetJournal =
 		p(2459),			-- Snort
 		p(440),				-- Snow Cub
 		p(1941),			-- Snowfang
+		p(2712),			-- Snowsoft Nibbler
 		p(1197),			-- Snowy Panda
 		p(2049),			-- Son of Skum
 		p(2587),			-- Spawn of Garalon
@@ -228,6 +233,6 @@ _.PetJournal =
 		p(2413),			-- Zandalari Shinchomper
 		p(1213),			-- Zandalari Toenibbler
 		p(1305),			-- Zao, Calfling of Niuzao
-		p(731),				-- Zooey Snake		
+		p(731),				-- Zooey Snake
 	}),
 };

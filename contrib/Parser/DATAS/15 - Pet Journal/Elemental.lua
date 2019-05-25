@@ -15,10 +15,13 @@ _.PetJournal =
 		p(1517),	-- Blazing Cindercrawler
 		un(35, p(1248)),	-- Blossoming Ancient
 		p(2082), 	-- Bound Stream
+		p(2706),	-- Brinestone Algan
 		p(1777),	-- Broot
+		p(2707),	-- Budding Algan
 		p(2428),	-- Carnivorous Lasher
 		un(35, p(1117)),	-- Cinder Kitten
 		p(2087), 	-- Cinderweb Recluse
+		p(2708),	-- Coral Lashling
 		p(244),		-- Core Hound Pup
 		p(2091), 	-- Corrupted Blood
 		p(1396),	-- Crazy Carrot
@@ -50,11 +53,13 @@ _.PetJournal =
 		p(2003),	-- Hearthy
 		p(2547), 	-- Hydrath Droplet
 		p(1949),	-- Igneous Flameling
+		p(2756),	-- Irradiated Elementaling
 		p(856),		-- Jade Tentacle
 		p(1348),	-- Jadefire Spirit
 		p(1333),	-- Jademist Dancer
 		p(2447),	-- Kindleweb Spiderling
 		p(199),		-- Kirin Tor Familiar
+		p(2468),	-- Laughing Stoneskin
 		p(423),		-- Lava Crab
 		un(35, p(297)),		-- Lil' Ragnaros
 		p(1177),	-- Living Sandling
@@ -77,6 +82,8 @@ _.PetJournal =
 		p(2590),	-- Ravenous Prideling
 		p(1328),	-- Ruby Droplet
 		p(460),		-- Ruby Sapling
+		p(2703),	-- Sandkeep
+		p(2701),	-- Seafury
 		p(172),		-- Searing Scorchling
 		p(1690),	-- Shard of Cyrukh
 		p(291),		-- Singing Sunflower
@@ -87,6 +94,7 @@ _.PetJournal =
 		p(128),		-- Spirit of Summer
 		p(2584),	-- Spirit of the Spring
 		p(1917),	-- Stormstruck Beaver
+		p(2702),	-- Stormwrath
 		p(1518),	-- Stout Alemental
 		p(1434),	-- Sun Sproutling
 		p(2088), 	-- Surger
