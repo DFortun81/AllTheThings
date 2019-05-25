@@ -71,6 +71,68 @@ _.GearSets =
 									},	
 								},
 							},
+							{	-- Vindictive Combatant's Silk Armor [Mage - 5/10/19 & 5/22/19]
+								["setID"] = 1137,	-- Vindictive Combatant's Silk Armor
+								["classes"] = {
+									8,	-- Mage
+								},
+								["g"] = {
+									{	-- Vindictive Combatant's Silk Cowl
+										["itemID"] = 135956,	-- Vindictive Combatant's Silk Cowl
+									},
+									{	-- Vindictive Combatant's Silk Amice
+										["itemID"] = 135959,	-- Vindictive Combatant's Silk Amice
+									},
+									{	-- Vindictive Combatant's Silken Shawl
+										["itemID"] = 136019,	-- Vindictive Combatant's Silken Shawl
+									},
+									{	-- Vindictive Combatant's Silk Tunic
+										["itemID"] = 135958,	-- Vindictive Combatant's Silk Tunic
+									},
+									{	-- Vindictive Combatant's Silk Bracers
+										["itemID"] = 135961,	-- Vindictive Combatant's Silk Bracers
+									},
+									{	-- Vindictive Combatant's Silk Handguards
+										["itemID"] = 135955,	-- Vindictive Combatant's Silk Handguards
+									},
+									{	-- Vindictive Combatant's Silk Cord
+										["itemID"] = 135960,	-- Vindictive Combatant's Silk Cord
+									},
+									{	-- Vindictive Combatant's Silk Trousers
+										["itemID"] = 135957,	-- Vindictive Combatant's Silk Trousers
+									},
+									{	-- Vindictive Combatant's Silk Treads
+										["itemID"] = 135954,	-- Vindictive Combatant's Silk Treads
+									},
+									{	-- Fearless Combatant's Silk Cowl
+										["itemID"] = 142925,	-- Fearless Combatant's Silk Cowl
+									},
+									{	-- Fearless Combatant's Silk Amice
+										["itemID"] = 142928,	-- Fearless Combatant's Silk Amice
+									},
+									{	-- Fearless Combatant's Silken Shawl
+										["itemID"] = 142988,	-- Fearless Combatant's Silken Shawl
+									},
+									{	-- Fearless Combatant's Silk Robe
+										["itemID"] = 142927,	-- Fearless Combatant's Silk Robe
+									},
+									{	-- Fearless Combatant's Silk Bracers
+										["itemID"] = 142930,	-- Fearless Combatant's Silk Bracers
+									},
+									{	-- Fearless Combatant's Silk Handguards
+										["itemID"] = 142924,	-- Fearless Combatant's Silk Handguards
+									},
+									{	-- Fearless Combatant's Silk Cord
+										["itemID"] = 142929,	-- Fearless Combatant's Silk Cord
+									},
+									{	-- Fearless Combatant's Silk Trousers
+										["itemID"] = 142926,	-- Fearless Combatant's Silk Trousers
+									},
+									{	-- Fearless Combatant's Silk Treads
+										["itemID"] = 142923,	-- Fearless Combatant's Silk Treads
+									},
+								},
+							},
 							
 						},
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Blue",	-- Blue Skull
