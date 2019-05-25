@@ -32,12 +32,37 @@ _.Zones =
 						i(167786),	-- Germinating Seed
 					},
 				}),
+				n(152794, {	-- Amethyst Spireshell
+					["isDaily"] = true,
+					["g"] = {
+						i(169363),	-- Amethyst Softshell
+					},
+				}),
+				n(150191, {	-- Avarius
+					["isDaily"] = true,
+					["g"] = {
+						i(169373),	-- Brinestone Algan
+					},
+				}),
+				n(152712, {	-- Blindlight
+					["isDaily"] = true,
+					["g"] = {
+						i(169372),	-- Necrofin Tadpole
+					},
+				}),
 				n(149653, {	-- Carnivorous Lasher -- to spawn him, it procs quest 55366? verify IDs
 					["allianceQuestID"] = 56887,
 					["hordeQuestID"] = 56888,
 					["coord"] = { 54.7, 41.7, 1355 },
+					["isDaily"] = true,
 					["g"] = {
 						i(169375),	-- Coral Lashling
+					},
+				}),
+				n(152464, {	-- Caverndark Terror
+					["isDaily"] = true,
+					["g"] = {
+						i(169356),	-- Caverndark Nightmare
 					},
 				}),
 				n(152556, {	-- Chasm-Haunter
@@ -86,11 +111,20 @@ _.Zones =
 					["coord"] = { 45.3, 56.2, 1355 },
 					["isDaily"] = true,
 				}),
+				n(152323, {	-- King Gakula
+					["isDaily"] = true,
+					["g"] = {
+						i(169371),	-- Murgle
+					},
+				}),
 				n(144644, {	-- Mireclaw
 					["allianceQuestID"] = 56609,
 					["hordeQuestID"] = 56274,
 					["coord"] = { 61.0, 31.7, 1355 },
 					["isDaily"] = true,
+					["g"] = {
+						i(169366),	-- Wriggler
+					},
 				}),
 				n(152465, {	-- Needlespine
 					["allianceQuestID"] = 56608,
@@ -110,6 +144,27 @@ _.Zones =
 					["hordeQuestID"] = 56289,
 					["coord"] = { 44.2, 70.8, 1355 },
 					["isDaily"] = true,
+					["g"] = {
+						i(169367),	-- Seafury
+					},
+				}),
+				n(152682, {	-- Prince Vortran
+					["isDaily"] = true,
+					["g"] = {
+						i(169368),	-- Stormwrath
+					},
+				}),
+				n(150583, {	-- Rockweed Shambler
+					["isDaily"] = true,
+					["g"] = {
+						i(169374),	-- Budding Algan
+					},
+				}),
+				n(151870, {	-- Sandcastle
+					["isDaily"] = true,
+					["g"] = {
+						i(169369),	-- Sandkeep
+					},
 				}),
 				n(152795, {	-- Sandclaw Stoneshell
 					["allianceQuestID"] = 56606,

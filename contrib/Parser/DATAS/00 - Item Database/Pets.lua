@@ -31,6 +31,7 @@ pet(139775, 1918); 	-- Alliance Enthusiast
 pet(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
 pet(152963, 2093);	-- Amalgam of Destruction
 pet(167055, 2589);	-- Amber Goo Puddle (Living Amber)
+pet(169363, 2697);	-- Amethyst Spireshell
 pet(44984, 212); 	-- Ammen Vale Lashling
 pet(117354, 1531); 	-- Ancient Nest Guardian
 pet(11023, 52); 	-- Ancona Chicken
@@ -97,12 +98,14 @@ pet(128424, 1466);	-- Brightpaw
 pet(71387, 325);	-- Brilliant Kaliri
 pet(97557, 1235); 	-- Brilliant Phoenix Hawk Feather (Pheonix Hawk Hatchling)
 pet(118107, 1540); 	-- Brilliant Spore
+pet(169373, 2706);	-- Brinestone Algan
 pet(151829, 2071); 	-- Bronze Proto-Whelp
 pet(129362, 1777); 	-- Broot
 pet(29364, 137); 	-- Brown Rabbit Crate (Brown Rabbit)
 pet(10361, 77); 	-- Brown Snake
 pet(163244, 2402);	-- Brutus
 pet(163974, 2479);	-- Bucketshell
+pet(169374, 2707);	-- Budding Algan
 pet(163776, 2442);	-- Bumbles
 pet(163508, 2422); 	-- Butterfly in A Jar
 pet(142099, 1968); 	-- Call of the Frozen Blade (Wicked Soul)
@@ -121,6 +124,7 @@ pet(8490, 44);		-- Cat Carrier (Siamese) - (Siamese Cat)
 pet(8488, 45); 		-- Cat Carrier (Silver Tabby) - (Silver Tabby Cat)
 pet(8489, 46);	 	-- Cat Carrier (White Kitten) - (White Kitten)
 pet(143754, 1999); 	-- Cavern Moccasin
+pet(169356, 2690);	-- Caverndark Nightmare
 pet(136923, 1888);	-- Celestial Calf
 pet(54810, 255);	-- Celestial Dragon
 pet(167049, 2581);	-- Celestial Gift (Comet)
@@ -453,6 +457,7 @@ pet(41133, 192);	-- Mr. Chilly
 pet(66076, 286);	-- Mr. Grubbs
 pet(33818, 164); 	-- Muckbreath's Bucket (Muckbreath)
 pet(44980, 210); 	-- Mulgore Hatchling
+pet(169371, 2681);	-- Murgle
 pet(106244, 1364);	-- Murkalot's Flail (Murkalot)
 pet(128427, 1454);	-- Murkidan
 pet(45180, 217);	-- Murkimus' Little Spear (Murkimus the Gladiator)
@@ -464,6 +469,7 @@ pet(163820, 2458);	-- Muskflank Calfling
 pet(116258, 1514);	-- Mystical Spring Bouquet
 pet(169362, 2696);	-- Nameless Octopode
 pet(151269, 2002);	-- Naxxy
+pet(169372, 2682);	-- Necrofin Tadpole
 pet(166489, 2554);	-- Needleback Pup
 pet(142085, 1954); 	-- Nerubian Relic (Nerubian Swarmer)
 pet(38628, 186);	-- Nether Ray Fry
@@ -577,6 +583,7 @@ pet(63355, 271);	-- Rustberg Gull (Alliance)
 pet(64996, 271);	-- Rustberg Gull (Horde)
 pet(72153, 665);	-- Sand Scarab
 pet(169351, 2685);	-- Sandclaw Nestseeker
+pet(169369, 2703);	-- Sandkeep
 pet(163808, 2463);	-- Sandshell Chitterer
 pet(163512, 2426);	-- Sandstinger Wasp
 pet(167008, 2575);	-- Sandy Hermit Crab Shell (Mr. Crabs)
@@ -594,6 +601,7 @@ pet(114919, 1448); 	-- Sea Calf
 pet(73953, 340);	-- Sea Pony
 pet(118105, 1539);	-- Seaborne Spore
 pet(163490, 2404);	-- Seabreeze Bumblebee
+pet(169367, 2701);	-- Seafury
 pet(45606, 218); 	-- Sen'jin Fetish
 pet(118923, 1567); 	-- Sentinel's Companion
 pet(119431, 1601); 	-- Servant of Demidos
@@ -668,6 +676,7 @@ pet(116402, 1515); 	-- Stonegrinder
 pet(129208, 1721); 	-- Stormborne Whelpling
 pet(142088, 1957); 	-- Stormforged Rune (Runeforged Servitor)
 pet(118577, 1546);	-- Stormwing
+pet(169368, 2702);	-- Stormwrath
 pet(116756, 1518); 	-- Stout Alemental
 pet(44983, 211); 	-- Strand Crawler
 pet(94191, 1184); 	-- Stunted Direhorn
@@ -779,6 +788,7 @@ pet(32233, 153); 	-- Wolpertinger's Tankard (Wolpertinger)
 pet(141348, 1937); 	-- Wondrous Wisdomball
 pet(11027, 64); 	-- Wood Frog Box (Wood Frog)
 pet(12264, 89); 	-- Worg Carrier (Worg Pup)
+pet(169366, 2700);	-- Wriggler
 pet(142093, 1962); 	-- Wriggling Darkness (Creeping Tentacle)
 pet(136922, 1887); 	-- Wyrmy Tunkins
 pet(101771, 1266);	-- Xu-Fu, Cub of Xuen
