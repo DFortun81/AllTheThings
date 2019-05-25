@@ -136,6 +136,8 @@ i(29426, 934);		-- Firewing Signet [The Scryers]
 i(30810, 934);		-- Sunfury Signet [The Scryers]
 i(29739, 934);		-- Arcane Tome [The Scryers]
 i(32506, 1015);		-- Netherwing Egg [Netherwing]
+i(24245, 970);		-- Glowcap [Sporegeggar]
+i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
 
 -- Wrath of the Lich King
 i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]
