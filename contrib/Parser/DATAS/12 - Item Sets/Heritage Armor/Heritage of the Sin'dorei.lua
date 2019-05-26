@@ -24,56 +24,29 @@ _.GearSets =
 				},
 				["lvl"] = 120,
 				["g"] = {
-					{	-- The Pride of the Sin'dorei [1]
-						["questID"] = 53791,	-- The Pride of the Sin'dorei
-						["qg"] = 146939,		-- Ambassador Dawnsworn
-						["description"] = "Requires exalted with Silvermoon City.",
-						["coords"] = {
-							{ 39.13, 78.96, 85 },
-						},
-						["races"] = {
-							10,	-- Blood Elves
-						},
-						["lvl"] = 120,
-					},
-					{	-- Walk Among Ghosts [2]
-						["questID"] = 53734,	-- Walk Among Ghosts
-						["qg"] = 16802,			-- Lor'themar Theron
+					{	-- A People Shattered [8]
+						["questID"] = 53725,	-- A People Shattered
+						["qg"] = 145793,		-- Lady Liadrin
 						["sourceQuests"] = {
-							53791,	-- The Pride of the Sin'dorei
+							53738,	-- Defense of Qual'Danas
 						},
 						["coords"] = {
-							{ 53.77, 20.23, 110 },
+							{ 48.36, 35.99, 122 },	-- Pickup Quest
+							{ 48.55, 37.14, 122 },	-- Lantern
 						},
 						["races"] = {
 							10,	-- Blood Elves
 						},
 						["lvl"] = 120,
 					},
-					{	-- Writing on the Wall [3]
-						["questID"] = 53882,	-- Writing on the Wall
-						["qg"] = 145015,		-- Lor'themar Theron
-						["sourceQuests"] = {
-							53734,	-- Walk Among Ghosts
-						},
-						["coords"] = {
-							{ 46.31, 32.01, 95 },	-- Pickup Quest
-							{ 47.74, 84.01, 95 },	-- Lantern
-						},
-						["races"] = {
-							10,	-- Blood Elves
-						},
-						["lvl"] = 120,
-					},
-					{	-- The First to Fall [4]
-						["questID"] = 53735,	-- The First to Fall
+					{	-- Defense of Qual'Danas [7]
+						["questID"] = 53738,	-- Defense of Qual'Danas
 						["qg"] = 145005,		-- Lor'themar Theron
 						["sourceQuests"] = {
-							53882,	-- Writing on the Wall
+							53737,	-- The Day Hope Died
 						},
 						["coords"] = {
-							{ 47.48, 84.07, 95 },	-- Pickup Quest
-							{ 37.08, 65.51, 95 },	-- Lantern
+							{ 51.21, 69.28, 94 },
 						},
 						["races"] = {
 							10,	-- Blood Elves
@@ -105,50 +78,6 @@ _.GearSets =
 						["coords"] = {
 							{ 12.67, 56.86, 95 },	-- Pickup Quest
 							{ 51.21, 69.28, 94 },	-- Lantern
-						},
-						["races"] = {
-							10,	-- Blood Elves
-						},
-						["lvl"] = 120,
-					},
-					{	-- Defense of Qual'Danas [7]
-						["questID"] = 53738,	-- Defense of Qual'Danas
-						["qg"] = 145005,		-- Lor'themar Theron
-						["sourceQuests"] = {
-							53737,	-- The Day Hope Died
-						},
-						["coords"] = {
-							{ 51.21, 69.28, 94 },
-						},
-						["races"] = {
-							10,	-- Blood Elves
-						},
-						["lvl"] = 120,
-					},
-					{	-- A People Shattered [8]
-						["questID"] = 53725,	-- A People Shattered
-						["qg"] = 145793,		-- Lady Liadrin
-						["sourceQuests"] = {
-							53738,	-- Defense of Qual'Danas
-						},
-						["coords"] = {
-							{ 48.36, 35.99, 122 },	-- Pickup Quest
-							{ 48.55, 37.14, 122 },	-- Lantern
-						},
-						["races"] = {
-							10,	-- Blood Elves
-						},
-						["lvl"] = 120,
-					},
-					{	-- The Setting Sun [9]
-						["questID"] = 53853,	-- The Setting Sun
-						["qg"] = 145793,		-- Lady Liadrin
-						["sourceQuests"] = {
-							53725,	-- A People Shattered
-						},
-						["coords"] = {
-							{ 48.36, 35.99, 122 },	-- Pickup Quest
-							{ 53.49, 87.16, 122 },	-- Lantern
 						},
 						["races"] = {
 							10,	-- Blood Elves
@@ -205,6 +134,76 @@ _.GearSets =
 								},
 							},
 						},
+					},{	-- The Pride of the Sin'dorei [1]
+						["questID"] = 53791,	-- The Pride of the Sin'dorei
+						["qg"] = 146939,		-- Ambassador Dawnsworn
+						["description"] = "Requires exalted with Silvermoon City.",
+						["coords"] = {
+							{ 39.13, 78.96, 85 },
+						},
+						["races"] = {
+							10,	-- Blood Elves
+						},
+						["lvl"] = 120,
+					},
+					{	-- The First to Fall [4]
+						["questID"] = 53735,	-- The First to Fall
+						["qg"] = 145005,		-- Lor'themar Theron
+						["sourceQuests"] = {
+							53882,	-- Writing on the Wall
+						},
+						["coords"] = {
+							{ 47.48, 84.07, 95 },	-- Pickup Quest
+							{ 37.08, 65.51, 95 },	-- Lantern
+						},
+						["races"] = {
+							10,	-- Blood Elves
+						},
+						["lvl"] = 120,
+					},
+					{	-- The Setting Sun [9]
+						["questID"] = 53853,	-- The Setting Sun
+						["qg"] = 145793,		-- Lady Liadrin
+						["sourceQuests"] = {
+							53725,	-- A People Shattered
+						},
+						["coords"] = {
+							{ 48.36, 35.99, 122 },	-- Pickup Quest
+							{ 53.49, 87.16, 122 },	-- Lantern
+						},
+						["races"] = {
+							10,	-- Blood Elves
+						},
+						["lvl"] = 120,
+					},
+					{	-- Walk Among Ghosts [2]
+						["questID"] = 53734,	-- Walk Among Ghosts
+						["qg"] = 16802,			-- Lor'themar Theron
+						["sourceQuests"] = {
+							53791,	-- The Pride of the Sin'dorei
+						},
+						["coords"] = {
+							{ 53.77, 20.23, 110 },
+						},
+						["races"] = {
+							10,	-- Blood Elves
+						},
+						["lvl"] = 120,
+					},
+					{	-- Writing on the Wall [3]
+						["questID"] = 53882,	-- Writing on the Wall
+						["qg"] = 145015,		-- Lor'themar Theron
+						["sourceQuests"] = {
+							53734,	-- Walk Among Ghosts
+						},
+						["coords"] = {
+							{ 46.31, 32.01, 95 },	-- Pickup Quest
+							{ 47.74, 84.01, 95 },	-- Lantern
+						},
+						["races"] = {
+							10,	-- Blood Elves
+						},
+						["lvl"] = 120,
 					},
 				},
 			},
