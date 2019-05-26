@@ -95,14 +95,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9358,	-- Ranger Sareyn
 					},
-					{	-- Defense of Qual'Danas
-						["questID"] = 53738,
-						["qg"] = 145005,	-- Farstrider Elite
-						["lvl"] = 120,
-						["coord"] = { 51.4, 68.7, 94 },
-						["races"] = { 10 },	-- Blood Elf
-						["sourceQuest"] = 53737,	-- The Day Hope Died
-					},
 					{	-- Delivery to the North Sanctum
 						["questID"] = 8895,
 						["qg"] = 15418,	-- Magister Jaronis

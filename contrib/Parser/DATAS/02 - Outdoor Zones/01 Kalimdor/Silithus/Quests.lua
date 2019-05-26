@@ -226,6 +226,7 @@ _.Zones =
 						},
 					},
 					{	-- Encrypted Twilight Text [Item]
+						--Note!! This method allows the AH module to scan for this item now
 						["itemID"] = 20404,	-- Encrypted
 						["g"] = {
 							{	-- Encrypted Twilight Texts
