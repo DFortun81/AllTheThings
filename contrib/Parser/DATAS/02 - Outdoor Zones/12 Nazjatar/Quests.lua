@@ -55,7 +55,7 @@ _.Zones =
 						},
 					},
 				},
-				{	-- A Brief Respite (when this quest is offered, the rest of the zone is available.)
+				{	-- A Brief Respite
 					["questID"] = 54975,
 					["qg"] = 150101,	-- Lady Jaina Proudmoore
 					["coord"] = { 40.3, 55.2, 1355 },
@@ -72,7 +72,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
-				{	-- A Tempered Blade (Unlocks the rest of the zone?)
+				{	-- A Tempered Blade (Unlocks the rest of the zone)
 					["questID"] = 56156,
 					["qg"] = 154248,	-- Bladesman Inowari
 					["coord"] = { 39.4, 53.4, 1355 },
@@ -85,6 +85,11 @@ _.Zones =
 					["coord"] = { 40.3, 55.2, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
+					["g"] = {
+						i(163380),	-- 7th Legionnaire's Visage
+						i(163377),	-- 7th Legionnaire's Leather Mantle
+						i(163251),	-- 7th Legionnaire's Vest
+					},
 				},
 				{	-- A Way Home
 					["questID"] = 55053,
@@ -194,11 +199,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
-				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+				{	-- Call to Arms: Mechagon
 					["questID"] = 56649,
 					["qg"] = 154640,	-- Grand Marshal Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
 				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
 					["questID"] = 56650,
@@ -206,17 +212,32 @@ _.Zones =
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+				{	-- Call to Arms: Nazjatar
+					["questID"] = 56648,
+					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["coord"] = { 38.0, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55175,	-- Where the Road Leads
+				},
+				{	-- Call to Arms: Tirigarde Sound
 					["questID"] = 52948,
 					["qg"] = 145640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
 				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
 					["questID"] = 52956,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
+				},
+				{	-- Call to Arms: Zuldazar
+					["questID"] = 52951,
+					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["coord"] = { 38.0, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
 				{	-- Chum -- possibly drops from any rare?
 					["itemID"] = 168155,
@@ -250,6 +271,25 @@ _.Zones =
 					["coord"] = { 38.8, 30.4, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
+				},
+				{	-- Dark Tides
+					["questID"] = 56642,
+					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
+					["coord"] = { 48.8, 86.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 54969,	-- Descent
+					["g"] = {
+						i(163885),	-- 7th Legionnaire's Halberd
+						i(163886),	-- 7th Legionnaire's Stave
+						i(170274),	-- 7th Legionnaire's Greathammer
+					},
+				},
+				{	-- Dark Tides
+					["questID"] = 56063,
+					["qg"] = 150196,	-- First Arcanist Thalyssra
+					["coord"] = { 41.9, 80.6, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
 				{	-- Descent
 					["questID"] = 54969,
@@ -415,7 +455,7 @@ _.Zones =
 					["sourceQuests"] = {
 						56641,	-- Disruption of Power
 						56640,	-- Fortunate Souls
-						56642,	-- Ritual of Tides
+						56642,	-- Dark Tides
 					},
 				},
 				{	-- In Deep
@@ -426,7 +466,7 @@ _.Zones =
 					["sourceQuests"] = {
 						55092,	-- Distruption of Power
 						54012,	-- Fortunate Souls
-						56063,	-- Ritual of Tides
+						56063,	-- Dark Tides
 					},
 				},
 				{	-- Insight into Our Enemies
@@ -536,21 +576,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55361,	-- The Lost Shaman
 				},
-				{	-- Ritual of Tides
-					["questID"] = 56642,
-					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
-					["coord"] = { 48.8, 86.9, 1355 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 54969,	-- Descent
-				},
-				{	-- Ritual of Tides
-					["questID"] = 56063,
-					["qg"] = 150196,	-- First Arcanist Thalyssra
-					["coord"] = { 41.9, 80.6, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54021,	-- The First Arcanist
-				},
-				{	-- Sack of Tasks (rewards appear to change over time?)
+				{	-- Sack of Tasks (rewards appear to change over time)
 					["objectID"] = 327427,
 					["coords"] = {
 						{ 38.0, 55.6, 1355 },	-- Alliance

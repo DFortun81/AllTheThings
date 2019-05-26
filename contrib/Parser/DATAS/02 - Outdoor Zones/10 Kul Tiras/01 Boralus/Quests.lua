@@ -290,7 +290,7 @@ _.Zones =
 							-- NOTE: This might have to move to a different map. - Crieve
 						}),
 						{	-- Send the Fleet
-							["questID"] = 56043,
+							["questID"] = 56043, -- also triggered 56881
 							["qg"] = 153932,	-- Genn Greymane
 							["coord"] = { 70.6, 27.2, 1161 },
 							["races"] = ALLIANCE_ONLY,
