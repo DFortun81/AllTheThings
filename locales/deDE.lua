@@ -188,6 +188,7 @@ for key,value in pairs({
 	[190936] = "Seuchenkessel",
 	[191760] = "Konsole der Bibliothek des Erfinders",
 	[191761] = "Prototypenkonsole",
+	[192049] = "Ein Schwarm Fangzahnheringe",
 	[192060] = "Fjorns Amboss",
 	[192072] = "Harpunenkiste",
 	[194105] = "Dröhnkiste 413",
