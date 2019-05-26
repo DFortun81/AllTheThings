@@ -9,7 +9,15 @@ _.GearSets =
 			{	-- Heritage of the Sin'dorei
 				["setID"] = 1804, 	-- Heritage of the Sin'dorei
 				["maps"] = {
+					--Note!! Here we'll attach each zone the quest resides in so that the player can check quest progress and
+					--use it as a reminder in case they stopped before finishing.
+					94,		-- Eversong Woods
+					95,		-- Ghostlands
+					122,	-- Isle of Quel'danas
+					85,		-- Orgrimmar City
+					86,		-- Orgrimmar City: The Drag
 					110,	-- Silvermoon City
+					973,	-- The Sunwell: Shrine of the Eclipse [Scenario]
 				},
 				["races"] = {
 					10,	-- Blood Elves
