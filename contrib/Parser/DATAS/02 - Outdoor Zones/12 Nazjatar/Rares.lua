@@ -97,7 +97,8 @@ _.Zones =
 					},
 				}),
 				n(152553, {	-- Garnetscale
-					["hordeQuestID"] = 56273, -- screwed up and forgot to list the other quest ID for this
+					["allianceQuestID"] = 56610,
+					["hordeQuestID"] = 56273,
 					["coord"] = { 37.3, 40.3, 1355 },
 					["isDaily"] = true,
 				}),
@@ -171,6 +172,7 @@ _.Zones =
 					["hordeQuestID"] = 56277,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 67.2, 52.2, 1355 },
 						{ 64.4, 55.0, 1355 },
 						{ 74.7, 31.4, 1355 },
 						{ 80.5, 42.2, 1355 }, -- on top of a building. Requires the Deepcoral Pod buff to get to him

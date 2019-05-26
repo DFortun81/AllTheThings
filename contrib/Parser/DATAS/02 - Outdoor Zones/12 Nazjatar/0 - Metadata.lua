@@ -9,6 +9,7 @@ _.Zones =
 		["maps"] = {
 			1499,	-- 
 			1524,	-- Deepsea Slave Pen
+			1528,	-- The Eternal Palace
 		},
 		["description"] = "|cff66ccffDESCRIPTION PENDING|r",
 	}),
