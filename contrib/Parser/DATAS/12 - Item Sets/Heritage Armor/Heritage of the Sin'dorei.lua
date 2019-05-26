@@ -138,7 +138,8 @@ _.GearSets =
 							53725,	-- A People Shattered
 						},
 						["coords"] = {
-							{ 48.36, 35.99, 122 },
+							{ 48.36, 35.99, 122 },	-- Pickup Quest
+							{ 53.49, 87.16, 122 },	-- Lantern
 						},
 						["races"] = {
 							10,	-- Blood Elves
@@ -158,36 +159,43 @@ _.GearSets =
 							10,	-- Blood Elves
 						},
 						["lvl"] = 120,
-					},
-					{	-- Sin'dorei Helm
-						["itemID"] = 166348,	-- Sin'dorei Helm
-					},
-					{	-- Sin'dorei Pauldrons
-						["itemID"] = 166349,	-- Sin'dorei Pauldrons
-					},
-					{	-- Sin'dorei Cloak
-						["itemID"] = 166357,	-- Sin'dorei Cloak
-					},
-					{	-- Sin'dorei Raiment
-						["itemID"] = 166356,	-- Sin'dorei Raiment
-					},
-					{	-- Sin'dorei Tunic
-						["itemID"] = 166350,	-- Sin'dorei Tunic
-					},
-					{	-- Sin'dorei Bracers
-						["itemID"] = 166355,	-- Sin'dorei Bracers
-					},
-					{	-- Sin'dorei Gauntlets
-						["itemID"] = 166351,	-- Sin'dorei Gauntlets
-					},
-					{	-- Sin'dorei Belt
-						["itemID"] = 166352,	-- Sin'dorei Belt
-					},
-					{	-- Sin'dorei Leggings
-						["itemID"] = 166353,	-- Sin'dorei Leggings
-					},
-					{	-- Sin'dorei Slippers
-						["itemID"] = 166354,	-- Sin'dorei Slippers
+						["g"] = {
+							{	-- Heritage of the Sin'dorei
+								["spellID"] = 286948,	-- Heritage of the Sin'dorei
+								["g"] = {
+									{	-- Sin'dorei Helm
+										["itemID"] = 166348,	-- Sin'dorei Helm
+									},
+									{	-- Sin'dorei Pauldrons
+										["itemID"] = 166349,	-- Sin'dorei Pauldrons
+									},
+									{	-- Sin'dorei Cloak
+										["itemID"] = 166357,	-- Sin'dorei Cloak
+									},
+									{	-- Sin'dorei Raiment
+										["itemID"] = 166356,	-- Sin'dorei Raiment
+									},
+									{	-- Sin'dorei Tunic
+										["itemID"] = 166350,	-- Sin'dorei Tunic
+									},
+									{	-- Sin'dorei Bracers
+										["itemID"] = 166355,	-- Sin'dorei Bracers
+									},
+									{	-- Sin'dorei Gauntlets
+										["itemID"] = 166351,	-- Sin'dorei Gauntlets
+									},
+									{	-- Sin'dorei Belt
+										["itemID"] = 166352,	-- Sin'dorei Belt
+									},
+									{	-- Sin'dorei Leggings
+										["itemID"] = 166353,	-- Sin'dorei Leggings
+									},
+									{	-- Sin'dorei Slippers
+										["itemID"] = 166354,	-- Sin'dorei Slippers
+									},
+								},
+							},
+						},
 					},
 				},
 			},
