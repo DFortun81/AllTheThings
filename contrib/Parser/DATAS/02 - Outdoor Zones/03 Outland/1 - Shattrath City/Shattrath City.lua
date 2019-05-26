@@ -12,7 +12,180 @@ _.Zones =
 			["g"] = {
 				{	-- Faction
 					["npcID"] = -6013,	-- Faction
-					["g"] = {
+					["g"] = {	
+						faction(1011, {	-- Lower City
+							n(-17, {	-- Quests
+								q(10917,  {  -- The Outcast's Plight
+									["g"] = {
+										i(31800,  {  -- Outcasts Cache
+											i(28495),	-- Windwalker's Sash
+											i(28496),	-- Talonite's Belt
+											i(28497),	-- Dreadhawk's Girdle
+											i(28498),	-- Ravenguard's Baldric
+											i(28491),	-- Windwalker's Footwraps
+											i(28493),	-- Dreadhawk's Schynbald
+											i(28492),	-- Talonite's Boots
+											i(28494),	-- Ravenguard's Greaves
+										}),
+									},
+									["qg"] = 22429,	-- Vekax
+								}),
+								q(10918,  {  -- More Feathers
+									["qg"] = 22429,	-- Vekax
+									["repeatable"] = true,
+									["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
+									["sourceQuests"] = { 10917 },	-- The Outcast's Plight
+									["g"] = {
+										i(31800,  {  -- Outcasts Cache
+											i(28495),	-- Windwalker's Sash
+											i(28496),	-- Talonite's Belt
+											i(28497),	-- Dreadhawk's Girdle
+											i(28498),	-- Ravenguard's Baldric
+											i(28491),	-- Windwalker's Footwraps
+											i(28493),	-- Dreadhawk's Schynbald
+											i(28492),	-- Talonite's Boots
+											i(28494),	-- Ravenguard's Greaves
+										}),
+									},	
+								}),
+							}),
+							n(-2,  {	-- Vendors
+								n(21655, {	-- Nakodu <Lower City Quartermaster>
+									["coord" ] = { 62.6, 69.0, 111 },
+									["g"] = {
+										i(35405),	-- Crusader's Ornamented Leggings
+										i(35412),	-- Crusader's Scaled Chestpiece
+										i(33157),	-- Design: Falling Star
+										i(24179),	-- Design: Felsteel Boar
+										i(24175),	-- Design: Pendant of Thawing
+										i(23138),	-- Design: Potent Flame Spessarite
+										i(35357),	-- Dragonhide Helm
+										i(35331),	-- Dreadweave Mantle
+										i(35344),	-- Evoker's Silk Cowl
+										i(33148),	-- Formula: Enchant Cloak - Dodge
+										i(30832),	-- Gavel of Unearthed Secrets
+										i(35361),	-- Kodohide Gloves
+										i(30836),	-- Leggings of the Skettis Exile
+										i(30841),	-- Lower City Prayerbook
+										i(31778),	-- Lower City Tabard
+										i(35335),	-- Mooncloth Mitts
+										i(35370),	-- Opportunist's Leather Tunic
+										i(30833),	-- Pattern: Cloak of Arcane Evasion
+										i(22910),	-- Recipe: Elixir of Major Shadow Power
+										i(30835),	-- Salvager's Hauberk
+										i(35340),	-- Satin Leggings
+										i(35411),	-- Savage Plate Shoulders
+										i(35382),	-- Seer's Linked Gauntlets
+										i(35389),	-- Seer's Mail Leggings
+										i(35391),	-- Seer's Ringmail Chestguard
+										i(30834),	-- Shapeshifter's Signet
+										i(35378),	-- Stalker's Chain Helm
+										i(30830),	-- Trident of the Outcast Tribe
+										i(35373),	-- Wyrmhide Legguards
+									},
+								}),
+							}),
+						}),
+						faction(1015, {	-- Netherwing
+							["collectible"] = false,	-- Netherwing isn't based in Shattrath, so shouldn't be collectible here.
+							["g"] = {
+								q(11109, {	-- Jorus the Cobalt Netherwing Drake
+									["g"] = {
+										i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+								q(11110, {	-- Malfas the Purple Netherwing Drake
+									["g"] = {
+										i(32860),	-- Reins of the Purple Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+								q(11111, {	-- Onyxien the Onyx Netherwing Drake
+									["g"] = {
+										i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+								q(11112, {	-- Suraku the Azure Netherwing Drake
+									["g"] = {
+										i(32858),	-- Reins of the Azure Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+								q(11113, {	-- Voranaku the Violet Netherwing Drake
+									["g"] = {
+										i(32862),	-- Reins of the Violet Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+								q(11114, {	-- Zoya the Veridian Netherwing Drake
+									["g"] = {
+										i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+									},
+									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
+								}),
+							},
+						}),
+						faction(1038, {	-- Ogri'la
+							["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
+							["g"] = {
+								q(10984, {	-- Speak with the Ogre
+									["qg"] = 22497,	-- V'eru
+									["coord"] = { 56.4, 49.2, 111 },
+									["isBreadcrumb"] = true,
+								}),
+								q(10983, {	-- Mog'dorg the Wizened
+									["qg"] = 22940,	-- Grok
+									["coord"] = { 65.0, 68.4, 111 },
+									["sourceQuest"] = 10984,	-- Speak with the Ogre
+									["isBreadcrumb"] = true,
+								}),
+							},
+						}),
+						faction(1031, {	-- Sha'tari Skyguard
+							["collectible"] = false,	-- Sha'tari Skyguard isn't based in Shattrath, so shouldn't be collectible here.
+							["g"] = {
+								q(11096, {	-- Threat from Above
+									["coord"] = { 64.0, 42.0, 111 },
+									["qg"] = 23449,	-- Yuula
+									
+								}),
+								q(11098, {	-- To Skettis!
+									["sourceQuest"] = 11096,	-- Threat From Above
+									["coord"] = { 64.0, 42.0, 111 },
+									["qg"] = 23449,	-- Yuula
+								}),
+							},
+						}),
+						faction(1077, {	-- Shattered Sun Offensive
+							["collectible"] = false,	-- Shattered Sun Offensive isn't based in Shattrath, so shouldn't be collectible here.
+							["g"] = {
+								q(11877, {	-- Sunfury Attack Plans
+									["qg"] = 25140,	-- Lord Torvos
+									["repeatable"] = true,
+								}),
+								q(11880, {	-- The Multiphase Survey
+									["qg"] = 19475,	-- Harbinger Haronem
+									["repeatable"] = true,
+								}),
+								q(11875, {	-- Gaining the Advantage
+									["qg"] = 19202,	-- Emissary Mordin
+									["repeatable"] = true,
+									["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
+								}),
+								un(40, q(11513, {	-- Intercepting the Mana Cells
+									["qg"] = 24932,	-- Exarch Nasuun
+									["coord"] = { 49.8, 42.6, 111 },
+									["repeatable"] = true,
+								})),	
+								q(11514, {	-- Maintaining the Sunwell Portal
+									["qg"] = 24932,	-- Exarch Nasuun
+									["coord"] = { 49.8, 42.6, 111 },
+									["repeatable"] = true,
+								}),
+							},
+						}),
 						faction(932,  {	-- The Aldor
 							n(-17, {	-- Quests
 								q(10551, {	-- Allegiance to the Aldor
@@ -535,136 +708,6 @@ _.Zones =
 								}),
 							}),
 						}),
-						faction(1011, {	-- Lower City
-							n(-17, {	-- Quests
-								q(10917,  {  -- The Outcast's Plight
-									["g"] = {
-										i(31800,  {  -- Outcasts Cache
-											i(28495),	-- Windwalker's Sash
-											i(28496),	-- Talonite's Belt
-											i(28497),	-- Dreadhawk's Girdle
-											i(28498),	-- Ravenguard's Baldric
-											i(28491),	-- Windwalker's Footwraps
-											i(28493),	-- Dreadhawk's Schynbald
-											i(28492),	-- Talonite's Boots
-											i(28494),	-- Ravenguard's Greaves
-										}),
-									},
-									["qg"] = 22429,	-- Vekax
-								}),
-								q(10918,  {  -- More Feathers
-									["qg"] = 22429,	-- Vekax
-									["repeatable"] = true,
-									["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",					
-									["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-									["g"] = {
-										i(31800,  {  -- Outcasts Cache
-											i(28495),	-- Windwalker's Sash
-											i(28496),	-- Talonite's Belt
-											i(28497),	-- Dreadhawk's Girdle
-											i(28498),	-- Ravenguard's Baldric
-											i(28491),	-- Windwalker's Footwraps
-											i(28493),	-- Dreadhawk's Schynbald
-											i(28492),	-- Talonite's Boots
-											i(28494),	-- Ravenguard's Greaves
-										}),
-									},	
-								}),
-							}),
-							n(-2,  {	-- Vendors
-								n(21655, {	-- Nakodu <Lower City Quartermaster>
-									["coord" ] = { 62.6, 69.0, 111 },
-									["g"] = {
-										i(35405),	-- Crusader's Ornamented Leggings
-										i(35412),	-- Crusader's Scaled Chestpiece
-										i(33157),	-- Design: Falling Star
-										i(24179),	-- Design: Felsteel Boar
-										i(24175),	-- Design: Pendant of Thawing
-										i(23138),	-- Design: Potent Flame Spessarite
-										i(35357),	-- Dragonhide Helm
-										i(35331),	-- Dreadweave Mantle
-										i(35344),	-- Evoker's Silk Cowl
-										i(33148),	-- Formula: Enchant Cloak - Dodge
-										i(30832),	-- Gavel of Unearthed Secrets
-										i(35361),	-- Kodohide Gloves
-										i(30836),	-- Leggings of the Skettis Exile
-										i(30841),	-- Lower City Prayerbook
-										i(31778),	-- Lower City Tabard
-										i(35335),	-- Mooncloth Mitts
-										i(35370),	-- Opportunist's Leather Tunic
-										i(30833),	-- Pattern: Cloak of Arcane Evasion
-										i(22910),	-- Recipe: Elixir of Major Shadow Power
-										i(30835),	-- Salvager's Hauberk
-										i(35340),	-- Satin Leggings
-										i(35411),	-- Savage Plate Shoulders
-										i(35382),	-- Seer's Linked Gauntlets
-										i(35389),	-- Seer's Mail Leggings
-										i(35391),	-- Seer's Ringmail Chestguard
-										i(30834),	-- Shapeshifter's Signet
-										i(35378),	-- Stalker's Chain Helm
-										i(30830),	-- Trident of the Outcast Tribe
-										i(35373),	-- Wyrmhide Legguards
-									},
-								}),
-							}),
-						}),
-						faction(1015, {	-- Netherwing
-							["collectible"] = false,	-- Netherwing isn't based in Shattrath, so shouldn't be collectible here.
-							["g"] = {
-								q(11109, {	-- Jorus the Cobalt Netherwing Drake
-									["g"] = {
-										i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-								q(11110, {	-- Malfas the Purple Netherwing Drake
-									["g"] = {
-										i(32860),	-- Reins of the Purple Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-								q(11111, {	-- Onyxien the Onyx Netherwing Drake
-									["g"] = {
-										i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-								q(11112, {	-- Suraku the Azure Netherwing Drake
-									["g"] = {
-										i(32858),	-- Reins of the Azure Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-								q(11113, {	-- Voranaku the Violet Netherwing Drake
-									["g"] = {
-										i(32862),	-- Reins of the Violet Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-								q(11114, {	-- Zoya the Veridian Netherwing Drake
-									["g"] = {
-										i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-									},
-									["description"] = "To get this quest you must you must reach exalted with the Netherwing and complete the quest 'Bow to the Highlord, Lord Illidan Stormrage'|r",
-								}),
-							},
-						}),
-						faction(1038, {	-- Ogri'la
-							["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
-							["g"] = {
-								q(10984, {	-- Speak with the Ogre
-									["qg"] = 22497,	-- V'eru
-									["coord"] = { 56.4, 49.2, 111 },
-									["isBreadcrumb"] = true,
-								}),
-								q(10983, {	-- Mog'dorg the Wizened
-									["qg"] = 22940,	-- Grok
-									["coord"] = { 65.0, 68.4, 111 },
-									["sourceQuest"] = 10984,	-- Speak with the Ogre
-									["isBreadcrumb"] = true,
-								}),
-							},
-						}),
 						faction(935,  {	-- The Sha'tar
 							q(13430, {	-- Trial of the Naaru: Magtheridon
 								["sourceQuests"] = { 
@@ -717,49 +760,6 @@ _.Zones =
 									},
 								}),
 							}),
-						}),
-						faction(1031, {	-- Sha'tari Skyguard
-							["collectible"] = false,	-- Sha'tari Skyguard isn't based in Shattrath, so shouldn't be collectible here.
-							["g"] = {
-								q(11096, {	-- Threat from Above
-									["coord"] = { 64.0, 42.0, 111 },
-									["qg"] = 23449,	-- Yuula
-									
-								}),
-								q(11098, {	-- To Skettis!
-									["sourceQuest"] = 11096,	-- Threat From Above
-									["coord"] = { 64.0, 42.0, 111 },
-									["qg"] = 23449,	-- Yuula
-								}),
-							},
-						}),
-						faction(1077, {	-- Shattered Sun Offensive
-							["collectible"] = false,	-- Shattered Sun Offensive isn't based in Shattrath, so shouldn't be collectible here.
-							["g"] = {
-								q(11877, {	-- Sunfury Attack Plans
-									["qg"] = 25140,	-- Lord Torvos
-									["repeatable"] = true,
-								}),
-								q(11880, {	-- The Multiphase Survey
-									["qg"] = 19475,	-- Harbinger Haronem
-									["repeatable"] = true,
-								}),
-								q(11875, {	-- Gaining the Advantage
-									["qg"] = 19202,	-- Emissary Mordin
-									["repeatable"] = true,
-									["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
-								}),
-								un(40, q(11513, {	-- Intercepting the Mana Cells
-									["qg"] = 24932,	-- Exarch Nasuun
-									["coord"] = { 49.8, 42.6, 111 },
-									["repeatable"] = true,
-								})),	
-								q(11514, {	-- Maintaining the Sunwell Portal
-									["qg"] = 24932,	-- Exarch Nasuun
-									["coord"] = { 49.8, 42.6, 111 },
-									["repeatable"] = true,
-								}),
-							},
 						}),
 					},
 				},
