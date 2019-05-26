@@ -33,15 +33,26 @@ _.Instances = { tier(1, {	-- Classic
 			n(0, {	-- Zone Drop
 				i(1488, {	-- Avenger's Armor
 					["crs"] = {
+						74620,	-- Battle Boar
 						74553,	-- Blood-Branded Razorfen
+						75467,	-- Cave Bat
+						74551,	-- Razorfen Beast Stalker
 						74550,	-- Razorfen Kraulshaper
 						74554,	-- Razorfen Scarblade
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(2264, {	-- Mantle of Thieves
 					["crs"] = {
+						74620,	-- Battle Boar
+						75467,	-- Cave Bat
+						74900,	-- Kraulshaper Tukaar
+						74551,	-- Razorfen Beast Stalker
+						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74549,	-- Razorfen Stonechanter
 						74652,	-- Razorfen Thornbolt
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2039, {	-- Plains Ring

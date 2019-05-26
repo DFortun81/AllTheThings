@@ -7,43 +7,44 @@ _.WorldDrops =
 		["groups"] = {	-- Classic
 			n(-318, {	-- Armor
 				n(-320, {	-- Head
-					i(10574),	-- Corpseshroud
-					i(10630),	-- Soulcatcher Halo
-					i(12549),	-- Braincage
-					un(7, i(1280)),	-- Cloaked Hood
-					i(13073),	-- Mugthol's Helm
 					i(13102),	-- Cassandra's Grace
-					i(13112),	-- Winged Helm
-					i(13113),	-- Feathermoon Headdress
-					i(13127),	-- Frostreaver Crown
-					i(13128),	-- High Bergg Helm
-					i(1624),	-- Skullsplitter Helm
-					i(18698),	-- Tattered Leather Hood
-					un(7, i(20263)),	-- Gurubashi Helm
-					i(21803),	-- Helm of the Holy Avenger
-					i(2245),	-- Helm of Narv
-					un(7, i(2620)),	-- Augural Shroud
-					un(7, i(2621)),	-- Cowl of Necromancy
-					un(7, i(2622)),	-- Nimar's Tribal Headdress
-					un(7, i(2623)),	-- Holy Diadem
-					i(2624),	-- Thinking Cap
-					i(2721),	-- Holy Shroud
-					i(2955),	-- First Mate Hat
-					i(3011),	-- Feathered Headdress
 					i(3020),	-- Enduring Cap
 					i(3075),	-- Eye of Flame
+					i(13113),	-- Feathermoon Headdress
+					i(13127),	-- Frostreaver Crown
+					i(2245),	-- Helm of Narv
+					i(13128),	-- High Bergg Helm
+					i(2721),	-- Holy Shroud
+					i(13073),	-- Mugthol's Helm
 					i(3345),	-- Silk Wizard Hat
-					un(7, i(3392)),	-- Ringed Helm
-					un(7, i(4724)),	-- Humbert's Helm
-					i(5608),	-- Living Cowl
-					un(7, i(5624)),	-- Circlet of the Order
-					un(7, i(5753)),	-- Ruffled Chaplet
-					i(5819),	-- Sunblaze Coif
-					un(7, i(6204)),	-- Tribal Worg Helm
-					un(7, i(9375)),	-- Expert Goldminer's Helmet
-					i(9420),	-- Adventurer's Pith Helmet
-					i(9429),	-- Miner's Hat of the Deep
-					i(9431),	-- Papal Fez
+					i(13112),	-- Winged Helm
+					-- [removed non-world drops below]
+					--i(9420),	-- Adventurer's Pith Helmet
+					--un(7, i(2620)),	-- Augural Shroud
+					--i(12549),	-- Braincage
+					--un(7, i(5624)),	-- Circlet of the Order
+					--un(7, i(1280)),	-- Cloaked Hood
+					--i(10574),	-- Corpseshroud
+					--un(7, i(2621)),	-- Cowl of Necromancy
+					--un(7, i(9375)),	-- Expert Goldminer's Helmet
+					--i(3011),	-- Feathered Headdress
+					--i(2955),	-- First Mate Hat
+					--un(7, i(20263)),	-- Gurubashi Helm
+					--i(21803),	-- Helm of the Holy Avenger
+					--un(7, i(2623)),	-- Holy Diadem
+					--un(7, i(4724)),	-- Humbert's Helm
+					--i(5608),	-- Living Cowl
+					--i(9429),	-- Miner's Hat of the Deep
+					--un(7, i(2622)),	-- Nimar's Tribal Headdress
+					--i(9431),	-- Papal Fez
+					--un(7, i(3392)),	-- Ringed Helm
+					--un(7, i(5753)),	-- Ruffled Chaplet
+					--i(1624),	-- Skullsplitter Helm
+					--i(10630),	-- Soulcatcher Halo
+					--i(5819),	-- Sunblaze Coif
+					--i(18698),	-- Tattered Leather Hood
+					--i(2624),	-- Thinking Cap
+					--un(7, i(6204)),	-- Tribal Worg Helm
 				}),
 				filter(51, {	-- Neck
 					un(7, i(20695)),	-- Abyssal War Beads
@@ -99,28 +100,29 @@ _.WorldDrops =
 					un(7, i(5754)),	-- Wolfpack Medallion
 				}),
 				n(-321, {	-- Shoulder
-					un(7, i(3231)),	-- Cutthroat Pauldrons
-					i(12998),	-- Magician's Mantle
+					i(13133),	-- Drakesfire Epaulets
 					i(13013),	-- Elder Wizard's Mantle
-					i(13066),	-- Wyrmslayer Spaulders
+					i(2278),	-- Forest Tracker Epaulets
+					i(12998),	-- Magician's Mantle
 					i(13103),	-- Pads of the Venom Spider
 					i(13115),	-- Sheepshear Mantle
-					i(13116),	-- Spaulders of the Unseen
-					i(13131),	-- Sparkleshell Mantle
 					i(13132),	-- Skeletal Shoulders
-					i(13133),	-- Drakesfire Epaulets
+					i(13131),	-- Sparkleshell Mantle
+					i(13116),	-- Spaulders of the Unseen
 					i(14552),	-- Stockade Pauldrons
-					i(18699),	-- Icy Tomb Spaulders
-					i(18742),	-- Stratholme Militia Shoulderguard
-					i(21805),	-- Polished Obsidian Pauldrons
-					i(2264),	-- Mantle of Thieves
-					i(2278),	-- Forest Tracker Epaulets
-					i(4810),	-- Boulder Pads
-					i(4833),	-- Glorious Shoulders
-					i(4835),	-- Elite Shoulders
-					i(7727),	-- Watchman Pauldrons
-					i(7755),	-- Flintrock Shoulders
-					i(9430),	-- Spaulders of a Lost Age
+					i(13066),	-- Wyrmslayer Spaulders
+					-- [removed non-world drops below]
+					--i(4810),	-- Boulder Pads
+					--un(7, i(3231)),	-- Cutthroat Pauldrons
+					--i(4835),	-- Elite Shoulders
+					--un(7, i(7755)),	-- Flintrock Shoulders
+					--i(4833),	-- Glorious Shoulders
+					--i(18699),	-- Icy Tomb Spaulders
+					--i(2264),	-- Mantle of Thieves
+					--i(21805),	-- Polished Obsidian Pauldrons
+					--i(9430),	-- Spaulders of a Lost Age
+					--i(18742),	-- Stratholme Militia Shoulderguard
+					--i(7727),	-- Watchman Pauldrons
 				}),
 				n(-322, {	-- Back
 					i(10060),	-- Duskwoven Cape
@@ -349,68 +351,68 @@ _.WorldDrops =
 					i(9959),	-- Warmonger's Cloak
 				}),
 				n(-323, {	-- Chest
+					i(2800),	-- Black Velvet Robes
 					un(7, i(54784, {	-- Burnished Tunic
 						["description"] = "Added in WOD only to Big Crate of Salvage",
 					})),
-					i(10328),	-- Scarlet Chestpiece
-					i(10581),	-- Death's Head Vestment
-					i(10583),	-- Quillward Harness
-					i(120166),	-- Gorestained Garb
+					i(17050),	-- Chan's Imperial Robes
+					i(13009),	-- Cow King's Hide
+					i(1717),	-- Double Link Tunic
+					i(13123),	-- Dreamwalker Armor
+					un(7, i(2016)),	-- Dusty Chain Armor
+					i(9434),	-- Elemental Raiment
+					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
+					i(13067),	-- Hydralick Armor
+					i(1981),	-- Icemail Jerkin
+					i(1715),	-- Polished Jazeraint Armor
+					i(1716),	-- Robe of the Magi
+					i(940),		-- Robes of Insight
 					un(7, i(120952, {	-- Slarkhide
 						["description"] = "Added in WOD only to Big Crate of Salvage",
 					})),
-					un(7, i(1211)),	-- Gnoll War Harness
-					i(12542),	-- Funeral Pyre Vestment
-					i(1297),	-- Robes of the Shadowcaster
 					i(12988),	-- Starsight Tunic
-					i(13009),	-- Cow King's Hide
-					i(13067),	-- Hydralick Armor
 					i(13110),	-- Wolffear Harness
-					i(13123),	-- Dreamwalker Armor
-					i(14536),	-- Bonebrace Hauberk
-					i(1486),	-- Tree Bark Jacket
-					i(1488),	-- Avenger's Armor
-					i(1489),	-- Gloomshroud Armor
-					i(1677),	-- Drake-Scale Vest
-					i(17050),	-- Chan's Imperial Robes
-					i(1715),	-- Polished Jazeraint Armor
-					i(1716),	-- Robe of the Magi
-					i(1717),	-- Double Link Tunic
-					un(7, i(17922)),	-- Lionfur Armor
-					i(1981),	-- Icemail Jerkin
-					i(1997),	-- Pressed Felt Robe
-					un(7, i(2016)),	-- Dusty Chain Armor
-					i(2034),	-- Scholarly Robes
-					i(2087),	-- Hard Crawler Carapace
-					un(7, i(2234)),	-- Nightwalker Armor
-					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
-					i(2292),	-- Necrology Robes
-					i(24808),	-- Unyielding Chain Vest
-					un(7, i(2566)),	-- Sacrificial Robes
-					i(2800),	-- Black Velvet Robes
-					i(3000),	-- Brood Mother Carapace
-					un(7, i(3019)),	-- Noble's Robe
-					i(3053),	-- Humbert's Chestpiece
-					un(7, i(3330)),	-- Dargol's Hauberk
-					i(3416),	-- Martyr's Chain
-					un(7, i(3569)),	-- Vicar's Robe
-					un(7, i(4448)),	-- Husk of Naraxis
-					un(7, i(4476)),	-- Beastwalker Robe
-					i(4781),	-- Whispering Vest
-					i(4782),	-- Solstice Robe
-					un(7, i(4861)),	-- Sleek Feathered Tunic
-					i(5755),	-- Onyx Shredder Plate
-					un(7, i(6180)),	-- Slarkskin
-					un(7, i(6195)),	-- Wax-Polished Armor
-					un(7, i(6197)),	-- Loch Croc Hide Vest
-					i(7728),	-- Beguiler Robes
-					i(7759),	-- Archon Chestpiece
-					i(821),		-- Riverpaw Leather Vest
-					un(7, i(914)),		-- Large Ogre Chain Armor
-					i(940),		-- Robes of Insight
-					i(9406),	-- Spirewind Fetter
-					i(9434),	-- Elemental Raiment
-					i(9508),	-- Mechbuilder's Overalls
+					-- [removed non-world drops below]
+					--i(7759),	-- Archon Chestpiece
+					--i(1488),	-- Avenger's Armor
+					--un(7, i(4476)),	-- Beastwalker Robe
+					--i(7728),	-- Beguiler Robes
+					--i(14536),	-- Bonebrace Hauberk
+					--i(3000),	-- Brood Mother Carapace
+					--un(7, i(3330)),	-- Dargol's Hauberk
+					--i(10581),	-- Death's Head Vestment
+					--i(1677),	-- Drake-Scale Vest
+					--i(12542),	-- Funeral Pyre Vestment
+					--i(1489),	-- Gloomshroud Armor
+					--un(7, i(1211)),	-- Gnoll War Harness
+					--i(120166),	-- Gorestained Garb
+					--i(2087),	-- Hard Crawler Carapace
+					--i(3053),	-- Humbert's Chestpiece
+					--un(7, i(4448)),	-- Husk of Naraxis
+					--un(7, i(914)),	-- Large Ogre Chain Armor
+					--un(7, i(17922)),	-- Lionfur Armor
+					--un(7, i(6197)),	-- Loch Croc Hide Vest
+					--i(3416),	-- Martyr's Chain
+					--i(9508),	-- Mechbuilder's Overalls
+					--i(2292),	-- Necrology Robes
+					--un(7, i(2234)),	-- Nightwalker Armor
+					--un(7, i(3019)),	-- Noble's Robe
+					--i(5755),	-- Onyx Shredder Plate
+					--i(1997),	-- Pressed Felt Robe
+					--i(10583),	-- Quillward Harness
+					--i(821),		-- Riverpaw Leather Vest
+					--i(1297),	-- Robes of the Shadowcaster
+					--un(7, i(2566)),	-- Sacrificial Robes
+					--i(10328),	-- Scarlet Chestpiece
+					--i(2034),	-- Scholarly Robes
+					--un(7, i(6180)),	-- Slarkskin
+					--un(7, i(4861)),	-- Sleek Feathered Tunic
+					--i(4782),	-- Solstice Robe
+					--i(9406),	-- Spirewind Fetter
+					--i(1486),	-- Tree Bark Jacket
+					--un(7, i(3569)),	-- Vicar's Robe
+					--un(7, i(6195)),	-- Wax-Polished Armor
+					--i(4781),	-- Whispering Vest
 				}),
 				n(-324, {	-- Shirt
 					un(7, i(127)),	-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)

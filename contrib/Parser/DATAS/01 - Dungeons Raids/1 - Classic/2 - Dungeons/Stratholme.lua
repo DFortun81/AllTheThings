@@ -94,7 +94,6 @@ _.Instances = { tier(1, {	-- Classic
 								10426,  -- Risen Inquisitor
 							},
 						}),
-						i(18742),	-- Stratholme Militia Shoulderguard
 					}),
 					n(10393, {			-- Skul
 						["description"] = "This is a rare that is not always present.",
@@ -344,7 +343,14 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						i(18745),	-- Sacred Cloth Leggings
-						i(18742),	-- Stratholme Militia Shoulderguard
+						i(18742, {	-- Stratholme Militia Shoulderguard
+							["crs"] = {
+								10416,	-- Bile Spewer
+								10405,	-- Plague Ghoul
+								10408,	-- Rockwing Gargoyle
+								10464,	-- Wailing Banshee
+							},
+						}),
 					}),
 					n(10809, {			-- Stonespine
 						["description"] = "This is a rare that is not always present.",

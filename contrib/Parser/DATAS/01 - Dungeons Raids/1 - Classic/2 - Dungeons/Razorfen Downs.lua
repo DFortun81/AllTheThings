@@ -98,15 +98,22 @@ _.Instances = { tier(1, {	-- Classic
 				i(10574, {	-- Corpseshroud
 					["crs"] = {
 						74947,	-- Boneflayer Ghoul
+						74492,	-- Bubonic Geist
+						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
 						74478,	-- Death's Head Shadowmender
 						74583,	-- Festering Spiderling
+						74488,	-- Frozen Soul
+						74950,	-- Gelatanized Plague Gunk
 					},
 				}),
 				i(10581, {	-- Death's Head Vestment
 					["crs"] = {
+						74947,	-- Boneflayer Ghoul
 						74478,	-- Death's Head Shadowmender
 						74583,	-- Festering Spiderling
+						74379,	-- Splinterbone Frostweaver
+						74489,	-- Thorn Eater Ghoul
 					},
 				}),
 				i(10571, {	-- Ebony Boneclub
@@ -144,8 +151,8 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(10583, {	-- Quillward Harness
 					["crs"] = {
-						74379,	-- Splinterbone Frostweaver
 						74478,	-- Death's Head Shadowmender
+						74379,	-- Splinterbone Frostweaver
 					},
 				}),
 				i(10584, {	-- Stormgale Fists

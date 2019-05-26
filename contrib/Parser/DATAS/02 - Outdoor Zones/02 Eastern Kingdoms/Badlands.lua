@@ -901,6 +901,13 @@ _.Zones =
 							4846,	-- Shadowforge Digger
 						},
 					}),
+					i(9406, {	-- Spirewind Fetter
+						["crs"] = {
+							4846,	-- Shadowforge Digger
+							4845,	-- Shadowforge Ruffian
+							4844,	-- Shadowforge Surveyor
+						},
+					}),
 					i(9384, {	-- Stonevault Shiv
 						["crs"] = {
 							4846,	-- Shadowforge Digger

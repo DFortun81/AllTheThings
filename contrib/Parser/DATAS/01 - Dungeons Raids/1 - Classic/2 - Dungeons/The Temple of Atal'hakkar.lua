@@ -123,8 +123,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(10630, {	-- Soulcatcher Halo
 					["crs"] = {
 						5271,	-- Atal'ai Deathwalker
+						5273,	-- Atal'ai High Priest
+						5291,	-- Hakkari Frostwing
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						5280,	-- Nightmare Wyrmkin
 					},
 				}),
 				i(10632, {	-- Slimescale Bracers

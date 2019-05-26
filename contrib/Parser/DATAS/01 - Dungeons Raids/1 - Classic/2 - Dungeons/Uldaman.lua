@@ -202,12 +202,21 @@ _.Instances = { tier(1, {	-- Classic
 				i(9430),	-- Spaulders of a Lost Age
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7076,	-- Earthen Guardian
+						7011,	-- Earthen Rocksmasher
+						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
 						4863,	-- Jadespine Basilisk
+						7290,	-- Shadowforge Sharpshooter
+						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
 					},
 				}),
 				i(9427, {	-- Stonevault Bonebreaker

@@ -24,7 +24,13 @@ _.Instances = { tier(1, {	-- Classic
 			d(1,   {	-- Normal
 				n(0,   {	-- Zone Drop
 					i(7759),	-- Archon Chestpiece
-					i(7728),	-- Beguiler's Robes
+					i(7728, {	-- Beguiler's Robes
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							58605,	-- Scarlet Judicator
+						},
+					}),
 					i(7753, {	-- Bloodspiller
 						["crs"] = {
 							60033,	-- Frenzied Spirit
@@ -99,7 +105,13 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					i(7761),	-- Steelclaw Reaver
-					i(5819),	-- Sunblaze Coif
+					i(5819, {	-- Sunblaze Coif
+						["crs"] = {
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					i(1992),	-- Swampchill Fetish
 					i(8225),	-- Tainted Pierce
 					i(8226, {	-- The Butcher
@@ -114,6 +126,10 @@ _.Instances = { tier(1, {	-- Classic
 					un(7, i(7760)),	-- Warchief Kilt
 					i(7727, {	-- Watchman Pauldrons
 						["crs"] = {
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
 							4283,	-- Scarlet Sentry
 						},
 					}),

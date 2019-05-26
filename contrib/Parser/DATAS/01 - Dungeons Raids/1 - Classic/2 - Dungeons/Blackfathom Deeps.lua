@@ -129,6 +129,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						74721,	-- Blindlight Bilefin
 						75980,	-- Blindlight Razorjaw
+						75135,	-- Tormented Sacrifice
 						74983,	-- Twilight Disciple
 						75286,	-- Twilight Disciple
 						74351,	-- Twilight Disciple
@@ -164,6 +165,24 @@ _.Instances = { tier(1, {	-- Classic
 						74380,	-- Twilight Storm Mender
 						75285,	-- Twilight Storm Mender
 						76037,	-- Twilight Storm Mender
+					},
+				}),
+				i(2034, {	-- Scholarly Robes
+					["crs"] = {
+						75135,	-- Tormented Sacrifice
+						74353,	-- Twilight Aquamancer
+						75058,	-- Twilight Aquamancer
+						76039,	-- Twilight Aquamancer
+						74983,	-- Twilight Disciple
+						75286,	-- Twilight Disciple
+						74351,	-- Twilight Disciple
+						76036,	-- Twilight Shadow
+						74363,	-- Twilight Shadow
+						74382,	-- Twilight Shadowmage
+						76038,	-- Twilight Shadowmage
+						74980,	-- Twilight Storm Mender
+						74380,	-- Twilight Storm Mender
+						75285,	-- Twilight Storm Mender
 					},
 				}),
 				i(3039, {	-- Short Ash Bow

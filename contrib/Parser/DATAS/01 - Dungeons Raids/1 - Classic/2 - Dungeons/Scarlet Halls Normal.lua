@@ -39,6 +39,14 @@ _.Instances = { tier(1, {	-- Classic
 							58898,	-- Vigilant Watchman
 						},
 					}),
+					i(7727, {	-- Watchman Pauldrons
+						["crs"] = {
+							59373,	-- Scarlet Pupil
+							59372,	-- Scarlet Scholar
+							58684,	-- Scarlet Scourge Hewer
+							58876,	-- Starving Hound
+						},
+					}),
 				}),
 				cr(59303, e(660, {	-- Houndmaster Braun
 					i(88264),	-- Houndmaster's Compound Crossbow
