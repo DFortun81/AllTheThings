@@ -638,7 +638,7 @@ _.Zones =
 								["sourceQuests"] = { 27535 },
 							}),
 						}),
-					--[[
+											--[[
 						Exploration Achievement: 771
 					1	Thondroril River
 					2	The Marris Stead
@@ -703,6 +703,21 @@ _.Zones =
 					qg(31084, qa(13188)),	-- Where Kings Walk
 --]]
 					}),
+					{	-- Corrupter's Scourgestones
+						["questID"] = 5408,	-- Corruptor's Scourgestones
+						["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 75.76, 53.81, 23 },
+						},
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
+
 				}),
 				n(-16, {	-- Rares
 					n(10819, { 	-- Baron Bloodbane

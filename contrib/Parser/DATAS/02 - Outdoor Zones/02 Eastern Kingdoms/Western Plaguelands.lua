@@ -554,6 +554,20 @@ _.Zones =
 							["classes"] = { 2 },	-- Paladin
 	--						["sourceQuests"] = {  },	-- 
 						})),
+						{	-- Corrupter's Scourgestones
+							["questID"] = 5408,	-- Corruptor's Scourgestones
+							["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+							["u"] = 2,			-- Removed in Patch 4.0.3
+							["coords"] = {
+								{ 75.76, 53.81, 23 },
+							},
+							["g"] = {
+								{	-- Argent Dawn Valor Token
+									["itemID"] = 12844,	-- Argent Dawn Valor Token
+									["u"] = 2,			-- Removed in Patch 4.0.3
+								},
+							},
+						},
 					}),
 				}),
 				n(-16, {	-- Rares

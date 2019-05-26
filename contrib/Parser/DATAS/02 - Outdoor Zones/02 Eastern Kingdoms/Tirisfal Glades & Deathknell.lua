@@ -176,6 +176,21 @@ _.Zones =
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 					})),
+					{	-- Corrupter's Scourgestones [H]
+						["questID"] = 5406,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24990, {	-- Darkhound Pounding -- anytime
 						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
