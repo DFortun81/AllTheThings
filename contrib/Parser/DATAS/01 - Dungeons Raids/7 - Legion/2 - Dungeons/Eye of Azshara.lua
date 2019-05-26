@@ -5,6 +5,7 @@
 _.Instances = { tier(7, {	-- Legion
 	inst(716, {	-- Eye of Azshara
 		["mapID"] = 713,
+		["coord"] = { 61.2, 41.1, 630 },
 		["lvl"] = 98,
 		["g"] = {
 			n(0,      {	-- Zone Drops
