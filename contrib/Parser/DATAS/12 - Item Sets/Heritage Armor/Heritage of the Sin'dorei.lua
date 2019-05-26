@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1804, {	-- Heritage of the Sin'dorei
 				["groups"] = {
 					i(166348),	-- Sin'dorei Helm
@@ -21,6 +22,5 @@ _.GearSets =
 				["races"] = { 10 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},	
 };

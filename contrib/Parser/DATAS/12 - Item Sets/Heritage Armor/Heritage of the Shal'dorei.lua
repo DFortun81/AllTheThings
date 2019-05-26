@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1523, {	-- Heritage of the Shal'dorei
 				["groups"] = {
 					i(156675),	-- Shal'dorei Crown
@@ -20,6 +21,5 @@ _.GearSets =
 				["races"] = { 27 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},	
 };

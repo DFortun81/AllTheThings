@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1742, {	-- Heritage of the Zandalari
 				["groups"] = {
 				{	-- Zandalari Mask
@@ -38,6 +39,5 @@ _.GearSets =
 				["races"] = { 31 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},	
 };

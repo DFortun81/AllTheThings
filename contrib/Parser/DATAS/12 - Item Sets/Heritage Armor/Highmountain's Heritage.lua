@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1522, {	-- Highmountain's Heritage
 				["groups"] = {
 					i(156668),	-- Highmountain Headdress
@@ -21,6 +22,5 @@ _.GearSets =
 			}),
 			
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},	
 };
