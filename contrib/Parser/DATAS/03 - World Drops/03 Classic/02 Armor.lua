@@ -16,7 +16,6 @@ _.WorldDrops =
 					i(13128),	-- High Bergg Helm
 					i(2721),	-- Holy Shroud
 					i(13073),	-- Mugthol's Helm
-					i(3345),	-- Silk Wizard Hat
 					i(13112),	-- Winged Helm
 					-- [removed non-world drops below]
 					--i(9420),	-- Adventurer's Pith Helmet
@@ -39,6 +38,7 @@ _.WorldDrops =
 					--i(9431),	-- Papal Fez
 					--un(7, i(3392)),	-- Ringed Helm
 					--un(7, i(5753)),	-- Ruffled Chaplet
+					--i(3345),	-- Silk Wizard Hat
 					--i(1624),	-- Skullsplitter Helm
 					--i(10630),	-- Soulcatcher Halo
 					--i(5819),	-- Sunblaze Coif
