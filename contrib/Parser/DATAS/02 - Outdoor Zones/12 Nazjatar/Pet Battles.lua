@@ -40,6 +40,7 @@ _.Zones =
 							{	-- Mindshackle
 								["criteriaID"] = 8,
 								["crs"] = { 154917 },	-- Mindshackle
+								["coord"] = { 56.4, 8.1, 1355 },
 							},
 							{	-- Pearlhusk Crawler
 								["criteriaID"] = 5,

@@ -6,6 +6,9 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		["g"] = {
 			n(-212, {	-- Treasure Chest
+				--[[
+				void cache: locked chest, unknown pre-reqs. 56.3, 15.1
+				]]--
 				["description"] = "Must complete A Tempered Blade (Alliance) or Save a Friend (Horde) before the chests become available.",
 				["g"] = {
 					o(326394, {	-- Arcane Chest
@@ -82,9 +85,11 @@ _.Zones =
 						["questID"] = 56975, -- 56913 triggers after completing the minigame, 56912 also triggered
 						["coord"] = { 24.8, 35.2, 1355 },
 					}),
+					o(326398, {	-- Glowing Arcane Trunk
+						["questID"] = 55961, -- 55998 triggers after completing the minigame
+						["coord"] = { 55.7, 14.5, 1355 },
+					}),
 					--[[ -- these are the remaining known objectIDs for each chest
-					[326397] = "Glowing Arcane Trunk",
-					[326398] = "Glowing Arcane Trunk",
 					[326399] = "Glowing Arcane Trunk",
 					[326400] = "Glowing Arcane Trunk",
 					[329783] = "Glowing Arcane Trunk",
