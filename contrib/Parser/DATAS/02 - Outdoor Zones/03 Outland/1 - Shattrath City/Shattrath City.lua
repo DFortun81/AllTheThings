@@ -12,7 +12,7 @@ _.Zones =
 			["g"] = {
 				n(-228, {	-- Flight Master
 					fp(128, {	-- Shattrath, Terokkar Forest
-						["coord"] = { 63.8, 41 },
+						["coord"] = { 63.8, 41, 111 },
 					}),
 				}),
 				n(-25,  {	-- Pet Battle
@@ -20,7 +20,7 @@ _.Zones =
 						["qg"] = 66553,	-- Morulu The Elder
 						["repeatable"] = true,
 						["isDaily"] = true,
-						["coord"] = { 59.0, 70.0 },
+						["coord"] = { 59.0, 70.0, 111 },
 					}),
 				}),
 				faction(932,  {	-- The Aldor
@@ -746,13 +746,14 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 					}),
 					q(44863, {	-- Clearing the Air
+						["requireSkill"] = 164,	-- Blacksmithing
+						["coord"] = { 64.1, 71.5, 111 },
+						["qg"] = 115546,	-- Lunelli
 						["g"] = {
 							i(142279),	-- Plans: Windforged Rapier
 							i(142283),	-- Plans: Skyforged Great Axe
 							i(142282),	-- Plans: Stormforged Axe
 						},
-						["qg"] = 115546,	-- Lunelli
-						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q(10009, {	-- Crackin' Some Skulls
 						["qg"] = 18584,	-- Sal'salabim
@@ -764,17 +765,18 @@ _.Zones =
 						["description"] = "This quest is only available during BC Timewalking.",
 					}),
 					q(41160, {	-- Earth to Earth
+						["requireSkill"] = 164,	-- Blacksmithing
+						["coord"] = { 64.1, 71.5, 111 },
+						["qg"] = 115546,	-- Lunelli
 						["g"] = {
 							i(142284),	-- Plans: Stoneforged Claymore
 							i(142287),	-- Plans: Great Earthforged Hammer
 							i(142286),	-- Plans: Lavaforged Warhammer
 						},
-						["qg"] = 115546,	-- Lunelli
-						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					q(10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
 						["qg"] = 18481,	-- A'dal
-						["coord"] = { 54.2, 44.4 },
+						["coord"] = { 54.2, 44.4, 111 },
 						["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
 					}),
 					q(10704, {	-- How to Break Into the Arcatraz
