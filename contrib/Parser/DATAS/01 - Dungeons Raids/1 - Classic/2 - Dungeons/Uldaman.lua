@@ -111,8 +111,14 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9397, {	-- Energy Cloak
 					["crs"] = {
+						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
+						4848,	-- Shadowforge Darkcaster
 						7030,	-- Shadowforge Geologist
+						4847,	-- Shadowforge Relic Hunter
+						4844,	-- Shadowforge Surveyor
 						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler

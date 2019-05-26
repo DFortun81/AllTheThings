@@ -125,230 +125,231 @@ _.WorldDrops =
 					--i(7727),	-- Watchman Pauldrons
 				}),
 				n(-322, {	-- Back
-					i(10060),	-- Duskwoven Cape
-					i(10071),	-- Righteous Cloak
-					i(10079),	-- Lord's Cape
-					i(10098),	-- Councillor's Cloak
-					i(10108),	-- Wanderer's Cloak
-					i(10120),	-- Ornate Cloak
-					i(10138),	-- High Councillor's Cloak
-					i(10148),	-- Mighty Cloak
-					i(10159),	-- Mercurial Cloak
-					i(10174),	-- Mystical Cape
-					i(10185),	-- Swashbuckler's Cape
-					i(10194),	-- Crusader's Cloak
-					i(10212),	-- Elegant Cloak
-					i(10224),	-- Nightshade Cloak
-					i(10231),	-- Engraved Cape
-					i(10249),	-- Master's Cloak
+					i(9938),	-- Abjurer's Cloak
 					i(10258),	-- Adventurer's Cape
-					i(10267),	-- Masterwork Cape
-					i(115348),	-- Feathered Cape
-					un(7, i(1190)),	-- Overseer's Cloak
-					i(12253),	-- Brilliant Red Cloak
-					i(12254),	-- Well Oiled Cloak
-					i(12551),	-- Stoneshield Cloak
-					i(12552),	-- Blisterbane Wrap
-					i(12979),	-- Firebane Cloak
 					i(13005),	-- Amy's Blanket
-					i(13007),	-- Mageflame Cloak
-					i(13108),	-- Tigerstrike Mantle
-					i(13109),	-- Blackflame Cape
-					i(13121),	-- Wing of the Whelpling
-					i(13122),	-- Dark Phantom Cape
-					un(7, i(1355)),	-- Buckskin Cape
-					i(14123),	-- Ritual Cape
-					i(14161),	-- Pagan Cape
-					i(14167),	-- Buccaneer's Cape
-					i(14179),	-- Watcher's Cape
-					i(14188),	-- Raincaller Cloak
-					i(14198),	-- Thistlefur Cloak
-					i(14210),	-- Vital Cape
-					i(14219),	-- Geomancer's Cloak
-					i(14229),	-- Embersilk Cloak
-					i(14239),	-- Darkmist Cape
-					i(14251),	-- Lunar Cloak
-					i(14261),	-- Bloodwoven Cloak
-					i(14270),	-- Gaea's Cloak
-					i(14280),	-- Opulent Cape
-					i(14292),	-- Arachnidian Cape
-					i(14300),	-- Bonecaster's Cape
-					i(14313),	-- Celestial Cape
-					i(14321),	-- Resplendent Cloak
-					i(14331),	-- Eternal Cloak
-					i(14365),	-- Mystic's Cape
-					i(14376),	-- Sanguine Cape
-					i(14400),	-- Resilient Cape
-					i(14409),	-- Stonecloth Cape
-					i(14420),	-- Silksand Cape
-					i(14430),	-- Windchaser Cloak
-					i(14440),	-- Venomshroud Cape
-					i(14450),	-- Highborne Cloak
-					i(14459),	-- Elunarian Cloak
-					i(14563),	-- Prospector's Cloak
-					i(14571),	-- Bristlebark Cape
-					i(14582),	-- Dokebi Cape
-					i(14593),	-- Hawkeye's Cloak
-					i(14602),	-- Warden's Cloak
-					i(14656),	-- Scorpashi Cape
-					i(14665),	-- Keeper's Cloak
-					i(14673),	-- Pridelord Cape
-					i(14683),	-- Indomitable Cloak
-					i(14724),	-- War Paint Cloak
-					i(14745),	-- Hulking Cloak
-					i(14752),	-- Slayer's Cape
-					i(14763),	-- Enduring Cape
-					i(14771),	-- Ravager's Cloak
-					i(14781),	-- Khan's Cloak
-					i(14791),	-- Protector Cape
-					i(14801),	-- Bloodlust Cape
-					i(14813),	-- Warstrike Cape
-					i(15114),	-- Rigid Cape
-					i(15124),	-- Robust Cloak
-					i(15135),	-- Cutthroat's Cape
-					i(15147),	-- Ghostwalker Cloak
-					i(15153),	-- Nocturnal Cloak
-					i(15165),	-- Imposing Cape
-					i(15173),	-- Potent Cape
-					i(15183),	-- Praetorian Cloak
-					i(15190),	-- Grand Cloak
-					i(15309),	-- Feral Cloak
-					i(15333),	-- Wrangler's Cloak
-					i(15340),	-- Pathfinder Cloak
-					i(15354),	-- Headhunter's Cloak
-					i(15364),	-- Trickster's Cloak
-					i(15371),	-- Wolf Rider's Cloak
-					i(15382),	-- Rageclaw Cloak
-					i(15392),	-- Jadefire Cloak
-					i(15427),	-- Peerless Cloak
-					i(15437),	-- Supreme Cape
-					i(15501),	-- Outrunner's Cloak
-					i(15508),	-- Grunt's Cape
-					i(15519),	-- Spiked Chain Cloak
-					i(15526),	-- Sentry's Cape
-					i(15537),	-- Wicked Chain Cloak
-					i(15547),	-- Thick Scale Cloak
-					i(15559),	-- Pillager's Cloak
-					i(15568),	-- Marauder's Cloak
-					i(15579),	-- Sparkleshell Cloak
-					i(15594),	-- Steadfast Cloak
 					i(15603),	-- Ancient Cloak
-					i(15611),	-- Bonelink Cape
-					i(15624),	-- Gryphon Cloak
-					i(15632),	-- Formidable Cape
-					i(15643),	-- Ironhide Cloak
-					i(15652),	-- Merciless Cloak
-					i(15661),	-- Impenetrable Cloak
-					i(15671),	-- Magnificent Cloak
-					i(15681),	-- Triumphant Cloak
-					i(17061),	-- Juno's Shadow
-					i(18339),	-- Eidolon Cloak
-					un(7, i(18677)),	-- Zephyr Cloak
-					i(18743),	-- Gracious Cape
-					i(1930),	-- Stonemason Cloak
-					i(2059),	-- Sentry Cloak
-					un(7, i(20693)),	-- Weighted Cloak
-					un(7, i(20697)),	-- Crystalline Threaded Cape
-					un(7, i(2241)),	-- Desperado Cape
-					un(7, i(22782, {	-- Sin'dorei Cloak of Warding
-						["description"] = "Added in WOD only to Big Crate of Salvage",
-					})),
-					un(7, i(2284)),	-- Rat Cloth Cloak
-					un(7, i(3018)),	-- Hide of Lupos
-					i(3475),	-- Cloak of Flames
-					un(7, i(4447)),	-- Cloak of Night
-					un(7, i(4462)),	-- Cloak of Rot
-					i(4695),	-- Burnished Cloak
-					i(4701),	-- Inscribed Cloak
-					i(4706),	-- Lambent Scale Cloak
-					i(4710),	-- Forest Cloak
-					i(4711),	-- Glimmering Cloak
-					i(4713),	-- Silver-Thread Cloak
-					i(4715),	-- Emblazoned Cloak
-					i(4716),	-- Combat Cloak
-					i(4719),	-- Nightsky Cloak
-					i(4722),	-- Insignia Cloak
-					i(4726),	-- Chief Brigadier Cloak
-					i(4732),	-- Glyphed Cloak
-					i(4735),	-- Mistscape Cloak
-					i(4771),	-- Harvest Cloak
-					i(4790),	-- Inferno Cloak
-					i(4792),	-- Spirit Cloak
-					i(4793),	-- Sylvan Cloak
-					i(4797),	-- Fiery Cloak
-					i(4798),	-- Heavy Runed Cloak
-					i(4799),	-- Antiquated Cloak
-					un(7, i(5111)),	-- Rathorian's Cape
-					un(7, i(5181)),	-- Vibrant Silk Cape
-					un(7, i(5257)),	-- Dark Hooded Cape
-					un(7, i(5751)),	-- Webwing Cloak
-					un(7, i(5969)),	-- Regent's Cloak
-					un(7, i(5971)),	-- Feathered Cape
-					un(7, i(6179)),	-- Privateer's Cape
-					i(6378),	-- Seer's Cape
-					i(6381),	-- Bright Cloak
+					i(14292),	-- Arachnidian Cape
+					i(8286),	-- Arcane Cloak
+					i(9860),	-- Archer's Cloak
 					i(6417),	-- Aurora Cloak
-					i(6424),	-- Blackforge Cape
-					i(6432),	-- Imperial Cloak
-					i(6542),	-- Willow Cape
-					i(6564),	-- Shimmering Cloak
-					i(6575),	-- Defender Cloak
-					i(6585),	-- Scouting Cloak
+					i(9838),	-- Banded Cloak
+					i(9779),	-- Bandit Cloak
 					i(6593),	-- Battleforge Cloak
+					i(13109),	-- Blackflame Cape
+					i(6424),	-- Blackforge Cape
+					i(14801),	-- Bloodlust Cape
+					i(14261),	-- Bloodwoven Cloak
+					i(14300),	-- Bonecaster's Cape
+					i(15611),	-- Bonelink Cape
+					i(9929),	-- Brigade Cloak
+					i(6381),	-- Bright Cloak
+					i(14571),	-- Bristlebark Cape
+					i(14167),	-- Buccaneer's Cape
+					i(4695),	-- Burnished Cloak
+					i(7533),	-- Cabalist Cloak
+					i(7492),	-- Captain's Cloak
+					i(14313),	-- Celestial Cape
+					i(7544),	-- Champion's Cape
+					i(4726),	-- Chief Brigadier Cloak
+					i(9951),	-- Chieftain's Cloak
+					i(3475),	-- Cloak of Flames
+					i(4716),	-- Combat Cloak
+					i(9847),	-- Conjurer's Cloak
+					i(10098),	-- Councillor's Cloak
+					i(10194),	-- Crusader's Cloak
+					i(15135),	-- Cutthroat's Cape
+					i(13122),	-- Dark Phantom Cape
+					i(14239),	-- Darkmist Cape
+					i(6575),	-- Defender Cloak
 					i(6604),	-- Dervish Cape
-					i(6614),	-- Sage's Cloak
+					i(14582),	-- Dokebi Cape
+					i(9822),	-- Durable Cape
+					i(10060),	-- Duskwoven Cape
+					i(8266),	-- Ebonhold Cloak
+					i(7356),	-- Elder's Cloak
+					i(10212),	-- Elegant Cloak
+					i(14459),	-- Elunarian Cloak
+					i(14229),	-- Embersilk Cloak
+					i(4715),	-- Emblazoned Cloak
+					i(14763),	-- Enduring Cape
+					i(10231),	-- Engraved Cape
+					i(14331),	-- Eternal Cloak
+					i(15309),	-- Feral Cloak
+					i(12979),	-- Firebane Cloak
+					i(4710),	-- Forest Cloak
+					i(15632),	-- Formidable Cape
+					i(9812),	-- Fortified Cloak
+					i(14270),	-- Gaea's Cloak
+					i(14219),	-- Geomancer's Cloak
+					i(15147),	-- Ghostwalker Cloak
+					i(4711),	-- Glimmering Cloak
+					i(4732),	-- Glyphed Cloak
+					i(7524),	-- Gossamer Cape
+					i(15190),	-- Grand Cloak
+					i(9770),	-- Greenweave Cloak
+					i(15508),	-- Grunt's Cape
+					i(15624),	-- Gryphon Cloak
+					i(14593),	-- Hawkeye's Cloak
+					i(15354),	-- Headhunter's Cloak
+					i(8120),	-- Heraldic Cloak
+					i(8304),	-- Hero's Cape
+					i(8109),	-- Hibernal Cloak
+					i(10138),	-- High Councillor's Cloak
+					i(14450),	-- Highborne Cloak
+					i(14745),	-- Hulking Cloak
+					i(9890),	-- Huntsman's Cape
+					i(68762),	-- Imbued Cadet Cloak
+					i(68748),	-- Imbued Disciple's Cloak
+					i(68759),	-- Imbued Gypsy Cloak
 					i(68743),	-- Imbued Infantry Cloak
 					i(68744),	-- Imbued Pioneer Cloak
 					i(68746),	-- Imbued Primal Cape
-					i(68748),	-- Imbued Disciple's Cloak
 					i(68756),	-- Imbued Simple Cape
-					i(68759),	-- Imbued Gypsy Cloak
-					i(68762),	-- Imbued Cadet Cloak
-					i(7356),	-- Elder's Cloak
-					i(7411),	-- Infiltrator Cloak
-					i(7419),	-- Phalanx Cloak
-					i(7436),	-- Twilight Cape
-					i(7446),	-- Sentinel Cloak
-					i(7460),	-- Knight's Cloak
-					i(7474),	-- Regal Cloak
-					i(7483),	-- Ranger Cloak
-					i(7492),	-- Captain's Cloak
-					i(7524),	-- Gossamer Cape
-					i(7533),	-- Cabalist Cloak
-					i(7544),	-- Champion's Cape
-					i(78340),	-- Cloak of the Darkmoon Faire
-					i(8109),	-- Hibernal Cloak
-					i(8120),	-- Heraldic Cloak
-					i(8127),	-- Myrmidon's Cape
+					i(15661),	-- Impenetrable Cloak
+					i(6432),	-- Imperial Cloak
 					i(8248),	-- Imperial Red Cloak
-					i(8259),	-- Serpentskin Cloak
-					i(8266),	-- Ebonhold Cloak
-					i(8286),	-- Arcane Cloak
-					i(8297),	-- Traveler's Cloak
-					i(8304),	-- Hero's Cape
-					i(9397),	-- Energy Cloak
-					i(9512),	-- Blackmetal Cape
-					i(9770),	-- Greenweave Cloak
-					i(9779),	-- Bandit Cloak
-					i(9786),	-- Raider's Cloak
+					i(15165),	-- Imposing Cape
+					i(14683),	-- Indomitable Cloak
+					i(7411),	-- Infiltrator Cloak
+					i(4701),	-- Inscribed Cloak
+					i(4722),	-- Insignia Cloak
+					i(15643),	-- Ironhide Cloak
 					i(9794),	-- Ivycloth Cloak
-					i(9805),	-- Superior Cloak
-					i(9812),	-- Fortified Cloak
-					i(9822),	-- Durable Cape
-					i(9831),	-- Scaled Cloak
-					i(9838),	-- Banded Cloak
-					i(9847),	-- Conjurer's Cloak
-					i(9860),	-- Archer's Cloak
-					i(9867),	-- Renegade Cloak
-					i(9877),	-- Sorcerer Cloak
-					i(9890),	-- Huntsman's Cape
+					i(15392),	-- Jadefire Cloak
 					i(9898),	-- Jazeraint Cloak
+					i(14665),	-- Keeper's Cloak
+					i(14781),	-- Khan's Cloak
+					i(7460),	-- Knight's Cloak
+					i(4706),	-- Lambent Scale Cloak
+					i(10079),	-- Lord's Cape
+					i(14251),	-- Lunar Cloak
+					i(13007),	-- Mageflame Cloak
+					i(15671),	-- Magnificent Cloak
+					i(15568),	-- Marauder's Cloak
+					i(10249),	-- Master's Cloak
+					i(10267),	-- Masterwork Cape
+					i(15652),	-- Merciless Cloak
+					i(10159),	-- Mercurial Cloak
+					i(10148),	-- Mighty Cloak
+					i(4735),	-- Mistscape Cloak
+					i(8127),	-- Myrmidon's Cape
+					i(10174),	-- Mystical Cape
+					i(14365),	-- Mystic's Cape
+					i(10224),	-- Nightshade Cloak
+					i(4719),	-- Nightsky Cloak
+					i(15153),	-- Nocturnal Cloak
+					i(14280),	-- Opulent Cape
+					i(10120),	-- Ornate Cloak
+					i(15501),	-- Outrunner's Cloak
+					i(14161),	-- Pagan Cape
+					i(15340),	-- Pathfinder Cloak
+					i(15427),	-- Peerless Cloak
+					i(7419),	-- Phalanx Cloak
+					i(15559),	-- Pillager's Cloak
+					i(15173),	-- Potent Cape
+					i(15183),	-- Praetorian Cloak
+					i(14673),	-- Pridelord Cape
+					i(14563),	-- Prospector's Cloak
+					i(14791),	-- Protector Cape
+					i(15382),	-- Rageclaw Cloak
+					i(9786),	-- Raider's Cloak
+					i(14188),	-- Raincaller Cloak
+					i(7483),	-- Ranger Cloak
+					i(14771),	-- Ravager's Cloak
+					i(7474),	-- Regal Cloak
+					i(9867),	-- Renegade Cloak
+					i(14400),	-- Resilient Cape
+					i(14321),	-- Resplendent Cloak
+					i(10071),	-- Righteous Cloak
+					i(15114),	-- Rigid Cape
+					i(14123),	-- Ritual Cape
+					i(15124),	-- Robust Cloak
 					i(9908),	-- Royal Cape
+					i(6614),	-- Sage's Cloak
+					i(14376),	-- Sanguine Cape
+					i(9831),	-- Scaled Cloak
+					i(14656),	-- Scorpashi Cape
+					i(6585),	-- Scouting Cloak
+					i(6378),	-- Seer's Cape
+					i(7446),	-- Sentinel Cloak
+					i(2059),	-- Sentry Cloak
+					i(15526),	-- Sentry's Cape
+					i(8259),	-- Serpentskin Cloak
+					i(6564),	-- Shimmering Cloak
+					i(14420),	-- Silksand Cape
+					i(4713),	-- Silver-Thread Cloak
+					un(7, i(22782, {	-- Sin'dorei Cloak of Warding
+						["description"] = "Added in WOD only to Big Crate of Salvage",
+					})),
+					i(14752),	-- Slayer's Cape
+					i(9877),	-- Sorcerer Cloak
+					i(15579),	-- Sparkleshell Cloak
+					i(15519),	-- Spiked Chain Cloak
+					i(15594),	-- Steadfast Cloak
+					i(14409),	-- Stonecloth Cape
+					i(9805),	-- Superior Cloak
+					i(15437),	-- Supreme Cape
+					i(10185),	-- Swashbuckler's Cape
+					i(15547),	-- Thick Scale Cloak
+					i(14198),	-- Thistlefur Cloak
+					i(13108),	-- Tigerstrike Mantle
 					i(9919),	-- Tracker's Cloak
-					i(9929),	-- Brigade Cloak
-					i(9938),	-- Abjurer's Cloak
-					i(9951),	-- Chieftain's Cloak
+					i(8297),	-- Traveler's Cloak
+					i(15364),	-- Trickster's Cloak
+					i(15681),	-- Triumphant Cloak
+					i(7436),	-- Twilight Cape
+					i(14440),	-- Venomshroud Cape
+					i(14210),	-- Vital Cape
+					i(10108),	-- Wanderer's Cloak
+					i(14724),	-- War Paint Cloak
+					i(14602),	-- Warden's Cloak
 					i(9959),	-- Warmonger's Cloak
+					i(14813),	-- Warstrike Cape
+					i(14179),	-- Watcher's Cape
+					i(15537),	-- Wicked Chain Cloak
+					i(6542),	-- Willow Cape
+					i(14430),	-- Windchaser Cloak
+					i(13121),	-- Wing of the Whelpling
+					i(15371),	-- Wolf Rider's Cloak
+					i(15333),	-- Wrangler's Cloak
+					-- [removed non-world drops below]
+					--i(4799),	-- Antiquated Cloak
+					--i(9512),	-- Blackmetal Cape
+					--i(12552),	-- Blisterbane Wrap
+					--i(12253),	-- Brilliant Red Cloak
+					--un(7, i(1355)),	-- Buckskin Cape
+					--un(7, i(4447)),	-- Cloak of Night
+					--un(7, i(4462)),	-- Cloak of Rot
+					--i(78340),	-- Cloak of the Darkmoon Faire
+					--un(7, i(20697)),	-- Crystalline Threaded Cape
+					--un(7, i(5257)),	-- Dark Hooded Cape
+					--un(7, i(2241)),	-- Desperado Cape
+					--i(18339),	-- Eidolon Cloak
+					--i(9397),	-- Energy Cloak
+					--un(7, i(5971)),	-- Feathered Cape
+					--i(115348),	-- Feathered Cape
+					--i(4797),	-- Fiery Cloak
+					--i(18743),	-- Gracious Cape
+					--un(7, i(4771)),	-- Harvest Cloak
+					--i(4798),	-- Heavy Runed Cloak
+					--un(7, i(3018)),	-- Hide of Lupos
+					--i(4790),	-- Inferno Cloak
+					--i(17061),	-- Juno's Shadow
+					--un(7, i(1190)),	-- Overseer's Cloak
+					--un(7, i(6179)),	-- Privateer's Cape
+					--un(7, i(2284)),	-- Rat Cloth Cloak
+					--un(7, i(5111)),	-- Rathorian's Cape
+					--un(7, i(5969)),	-- Regent's Cloak
+					--i(4792),	-- Spirit Cloak
+					--i(1930),	-- Stonemason Cloak
+					--i(12551),	-- Stoneshield Cloak
+					--i(4793),	-- Sylvan Cloak
+					--un(7, i(5181)),	-- Vibrant Silk Cape
+					--un(7, i(5751)),	-- Webwing Cloak
+					--un(7, i(20693)),	-- Weighted Cloak
+					--i(12254),	-- Well Oiled Cloak
+					--un(7, i(18677)),	-- Zephyr Cloak
 				}),
 				n(-323, {	-- Chest
 					i(2800),	-- Black Velvet Robes
@@ -364,6 +365,7 @@ _.WorldDrops =
 					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 					i(13067),	-- Hydralick Armor
 					i(1981),	-- Icemail Jerkin
+					i(2234),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this must be dropping again, but don't know where)
 					i(1715),	-- Polished Jazeraint Armor
 					i(1716),	-- Robe of the Magi
 					i(940),		-- Robes of Insight
@@ -395,7 +397,6 @@ _.WorldDrops =
 					--i(3416),	-- Martyr's Chain
 					--i(9508),	-- Mechbuilder's Overalls
 					--i(2292),	-- Necrology Robes
-					--un(7, i(2234)),	-- Nightwalker Armor
 					--un(7, i(3019)),	-- Noble's Robe
 					--i(5755),	-- Onyx Shredder Plate
 					--i(1997),	-- Pressed Felt Robe
@@ -415,63 +416,67 @@ _.WorldDrops =
 					--i(4781),	-- Whispering Vest
 				}),
 				n(-324, {	-- Shirt
-					un(7, i(127)),	-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
-					i(138385),	-- Lucky Shirt
-					un(7, i(148)),	-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
-					un(7, i(154)),	-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
-					i(16059),	-- Common Brown Shirt
-					i(16060),	-- Common White Shirt
-					i(18231),	-- Sleeveless T-Shirt
-					un(7, i(20897)),	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
-					un(7, i(20901)),	-- Warder's Shirt (Starter Shirt Blood Elf Hunters)
-					un(7, i(2105)),	 -- Thug Shirt
-					un(7, i(23345)),	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
-					un(7, i(23473)),	-- Recruit's Shirt	(Starter Shirt Draenei Warriors)
-					un(7, i(23476)),	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
-					un(7, i(24143)),	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
-					i(3426),	-- Bold Yellow Shirt
-					i(3427),	-- Stylish Black Shirt
-					i(3428),	-- Common Gray Shirt
-					i(38),		-- Recruit's Shirt
-					i(42360),	-- Ebon Filigreed Doublet
-					i(42361),	-- Cerulean Filigreed Doublet
-					i(42363),	-- Golden Filigreed Doublet
-					i(42365),	-- Amber Filigreed Doublet
-					i(42369),	-- Ebon Filigreed Shirt
-					i(42370),	-- Cerulean Filigreed Shirt
-					i(42371),	-- Amber Filigreed Shirt
-					i(42372),	-- Scarlet Filigreed Shirt
-					i(42373),	-- Golden Filigreed Shirt
-					i(42374),	-- Blue Martial Shirt
-					i(42375),	-- Green Martial Shirt
-					i(42376),	-- Yellow Martial Shirt
-					i(42377),	-- Purple Martial Shirt
-					i(42378),	-- Red Martial Shirt
-					i(44693),	-- Wound Dressing
-					i(44694),	-- Antiseptic-Soaked Dressing
-					i(45),		-- Squire's Shirt
-					i(45664),	-- Silvermoon Doublet
-					i(45666),	-- Ironforge Doublet
-					i(45667),	-- Stormwind Doublet
-					i(45668),	-- Exodar Doublet
-					i(45669),	-- Sen'jin Doublet
-					i(45670),	-- Darnassus Doublet
-					i(45671),	-- Gnomeregan Doublet
-					i(45672),	-- Orgrimmar Doublet
-					i(45673),	-- Thunder Bluff Doublet
-					i(45674),	-- Undercity Doublet
-					un(7, i(49)),	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
-					i(49567),	-- Gilnean Adventurer's Shirt
-					i(5107),	-- Deckhand's Shirt
-					i(53),		-- Neophyte's Shirt
-					i(6096),	-- Apprentice's Shirt
-					i(6097),	-- Acolyte's Shirt
-					un(7, i(6117)),	-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
-					un(7, i(6120)),	-- Recruit's Shirt (Former starter shirt for NE Warriors)
 					un(7, i(6125)),	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
+					un(7, i(49)),	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
+					{
+						["itemID"] = 49567,	-- Gilnean Adventurer's Shirt
+						["description"] = "New Worgen hunters, rogues, and warriors start out with this shirt.",
+					},
+					un(7, i(24143)),	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
+					un(7, i(20897)),	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
+					un(7, i(154)),	-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
 					un(7, i(6134)),	-- Primitive Mantle (Former starter shirt for Troll Shaman)
+					un(7, i(23473)),	-- Recruit's Shirt	(Starter Shirt Draenei Warriors)
+					un(7, i(6120)),	-- Recruit's Shirt (Former starter shirt for NE Warriors)
+					un(7, i(148)),	-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
+					un(7, i(23345)),	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
+					un(7, i(6117)),	-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
+					un(7, i(23476)),	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
+					un(7, i(2105)),	 -- Thug Shirt (Former starter shirt for Undead/Orc Rogues)
+					un(7, i(127)),	-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
 					un(7, i(6136)),	-- Trapper's Shirt (Former starter shirt for Troll Rogues)
-					i(68611),	-- Red Shirt
+					un(7, i(20901)),	-- Warder's Shirt (Starter Shirt Blood Elf Hunters)
+					-- [removed non-world drops below]
+					--i(6097),	-- Acolyte's Shirt
+					--i(45),	-- Squire's Shirt
+					--i(42365),	-- Amber Filigreed Doublet
+					--i(42371),	-- Amber Filigreed Shirt
+					--i(44694),	-- Antiseptic-Soaked Dressing
+					--i(6096),	-- Apprentice's Shirt
+					--i(42374),	-- Blue Martial Shirt
+					--i(3426),	-- Bold Yellow Shirt
+					--i(42361),	-- Cerulean Filigreed Doublet
+					--i(42370),	-- Cerulean Filigreed Shirt
+					--i(16059),	-- Common Brown Shirt
+					--i(3428),	-- Common Gray Shirt
+					--i(16060),	-- Common White Shirt
+					--i(45670),	-- Darnassus Doublet
+					--i(5107),	-- Deckhand's Shirt
+					--i(42360),	-- Ebon Filigreed Doublet
+					--i(42369),	-- Ebon Filigreed Shirt
+					--i(45668),	-- Exodar Doublet
+					--i(45671),	-- Gnomeregan Doublet
+					--i(42363),	-- Golden Filigreed Doublet
+					--i(42373),	-- Golden Filigreed Shirt
+					--i(42375),	-- Green Martial Shirt
+					--i(45666),	-- Ironforge Doublet
+					--i(138385),	-- Lucky Shirt
+					--i(53),		-- Neophyte's Shirt
+					--i(45672),	-- Orgrimmar Doublet
+					--i(42377),	-- Purple Martial Shirt
+					--i(38),		-- Recruit's Shirt
+					--i(42378),	-- Red Martial Shirt
+					--i(68611),	-- Red Shirt
+					--i(42372),	-- Scarlet Filigreed Shirt
+					--i(45669),	-- Sen'jin Doublet
+					--i(45664),	-- Silvermoon Doublet
+					--i(18231),	-- Sleeveless T-Shirt
+					--i(45667),	-- Stormwind Doublet
+					--i(3427),	-- Stylish Black Shirt
+					--i(45673),	-- Thunder Bluff Doublet
+					--i(45674),	-- Undercity Doublet
+					--i(44693),	-- Wound Dressing
+					--i(42376),	-- Yellow Martial Shirt
 				}),
 				n(-326, {	-- Wrist
 					i(13199),	-- Crushridge Bindings

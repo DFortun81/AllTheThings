@@ -49,7 +49,6 @@ _.Instances = { tier(1, {	-- Classic
 								10422,  -- Risen Sorcerer
 							},
 						}),
-						i(18743),	-- Gracious Cape
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
 						i(18744,  {  -- Plaguebat Fur Gloves
@@ -306,7 +305,16 @@ _.Instances = { tier(1, {	-- Classic
 								10398,	-- Thuzadin Shadowcaster
 							},
 						}),
-						i(18743),	-- Gracious Cape
+						i(18743,  {  -- Gracious Cape
+							["crs"] = {
+								10413,	-- Crypt Beast
+								10412,	-- Crypt Crawler
+								10405,	-- Plague Ghoul
+								10463,	-- Shrieking Banshee
+								10390,	-- Skeletal Guardian
+								10399,	-- Thuzadin Acolyte
+							},
+						}),
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
 						i(18744,  {  -- Plaguebat Fur Gloves

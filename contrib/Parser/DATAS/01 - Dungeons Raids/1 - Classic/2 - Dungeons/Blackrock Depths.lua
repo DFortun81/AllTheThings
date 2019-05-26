@@ -164,10 +164,20 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(12552, {	-- Blisterbane Wrap
 					["crs"] = {
+						8903,	-- Anvilrage Captain
+						8892,	-- Anvilrage Footman
 						8898,	-- Anvilrage Marshal
+						9541,	-- Blackbreath Crony
 						8910,	-- Blazing Fireguard
+						8932,	-- Borer Beetle
+						8900,	-- Doomforge Arcanasmith
 						8899,	-- Doomforge Dragoon
+						8911,	-- Fireguard Destroyer
+						9545,	-- Grim Patron
 						8908,	-- Molten War Golem
+						8904,	-- Shadowforge Senator
+						8913,	-- Twilight Emissary
+						8920,	-- Weapon Technician
 					},
 				}),
 				i(17682),	-- Book: Gift of the Wild Rank 1
@@ -412,20 +422,13 @@ _.Instances = { tier(1, {	-- Classic
 						8920,	-- Weapon Technician
 					},
 				}),
-				i(14552, {	-- Stockade Pauldrons
-					["crs"] = {
-						8903,	-- Anvilrage Captain
-						8908,	-- Molten War Golem
-						8911,	-- Fireguard Destroyer
-						8898,	-- Anvilrage Marshal
-						9097,	-- Scarshield Legionnaire
-						9239,	-- Smolderthorn Mystic
-					},
-				}),
 				i(12551, {	-- Stoneshield Cloak
 					["crs"] = {
-						8899,	-- Doomforge Dragoon
+						8891,	-- Anvilrage Guardsman
 						8911,	-- Fireguard Destroyer
+						9545,	-- Grim Patron
+						8908,	-- Molten War Golem
+						8896,	-- Shadowforge Peasant
 					},
 				}),
 				i(12528, {	-- The Judge's Gavel
