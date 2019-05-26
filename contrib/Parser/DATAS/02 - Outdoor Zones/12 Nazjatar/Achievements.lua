@@ -39,6 +39,10 @@ _.Zones =
 						["coord"] = { 71.4, 23.7, 1355 },
 						["description"] = "Hidden behind a starfish.",
 					},
+					{	-- Figurine 3
+						["questID"] = 56992,
+						["coord"] = { 73.6, 25.9, 1355 },
+					},
 					{	-- Figurine 4
 						["questID"] = 56990,
 						["coord"] = { 58.2, 22.0, 1355 },
@@ -57,9 +61,6 @@ _.Zones =
 						["coord"] = { 59.1, 30.4, 1355 },
 					},
 					-- these ones are still not found:
-					{	-- Figurine 3
-						["questID"] = 56992,
-					},
 					{	-- Figurine 5
 						["questID"] = 56986,
 					},

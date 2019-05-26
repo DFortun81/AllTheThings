@@ -9,6 +9,7 @@ _.Zones =
 				--[[
 				void cache: locked chest, unknown pre-reqs. 56.3, 15.1
 				arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3
+				reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
 				]]--
 				["description"] = "Must complete A Tempered Blade (Alliance) or Save a Friend (Horde) before the chests become available.",
 				["g"] = {

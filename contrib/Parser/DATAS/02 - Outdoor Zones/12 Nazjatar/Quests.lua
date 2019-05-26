@@ -10,6 +10,7 @@ _.Zones =
 			possible secrets:
 			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
 			"Neri's Find" npc at 44.9, 60.7 atop of the overhand above Newhome. Approach from ~45.3, 64.8
+			"Neri's Ruse" npc at 36.1, 70.3
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
 			
