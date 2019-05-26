@@ -365,7 +365,6 @@ _.WorldDrops =
 					un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 					i(13067),	-- Hydralick Armor
 					i(1981),	-- Icemail Jerkin
-					i(2234),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this must be dropping again, but don't know where)
 					i(1715),	-- Polished Jazeraint Armor
 					i(1716),	-- Robe of the Magi
 					i(940),		-- Robes of Insight
@@ -397,6 +396,7 @@ _.WorldDrops =
 					--i(3416),	-- Martyr's Chain
 					--i(9508),	-- Mechbuilder's Overalls
 					--i(2292),	-- Necrology Robes
+					--un(7, i(2234)),	-- Nightwalker Armor 
 					--un(7, i(3019)),	-- Noble's Robe
 					--i(5755),	-- Onyx Shredder Plate
 					--i(1997),	-- Pressed Felt Robe
