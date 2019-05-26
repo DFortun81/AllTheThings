@@ -14,14 +14,6 @@ _.Zones =
 							["questID"] = 11554,	-- A Friend in the Frontlines
 							["qg"] = 25032,	-- Eldara Dawnrunner
 						},
-						{	-- A People Shattered
-							["questID"] = 53725,
-							["qg"] = 145793,	-- Lady Liadrin
-							["lvl"] = 120,
-							["coord"] = { 48.3, 35.9, 122 },
-							["races"] = { 10 },	-- Blood Elf
-							["sourceQuest"] = 53738,	-- Defense of Quel'Danas
-						},
 						{	-- Exalted Among All Combatants
 							["questID"]	= 11557,	-- Exalted Among All Combatants
 							["qg"] = 25032,	-- Eldara Dawnrunner
@@ -33,36 +25,6 @@ _.Zones =
 						{	-- Revered in the Field of Battle
 							["questID"]	= 11556,	-- Revered in the Field of Battle
 							["qg"] = 25032,	-- Eldara Dawnrunner
-						},
-						{	-- The Fall of the Sunwell
-							["questID"] = 54096,
-							["qg"] = 145793,	-- lady Liadrin
-							["lvl"] = 120,
-							["coord"] = { 48.3, 35.9, 122 },
-							["races"] = { 10 },	-- Blood Elf
-							["sourceQuest"] = 53853,	-- The Setting Sun
-							["groups"] = {
-								-- all items granted via spell(286948) - Heritage of the Sin'dorei
-								-- no items are given to you, but the appearances for them are
-								i(166348),	-- Sin'dorei Helm
-								i(166349),	-- Sin'dorei Pauldrons
-								i(166350),	-- Sin'dorei Tunic
-								i(166351),	-- Sin'dorei Gauntlets
-								i(166352),	-- Sin'dorei Belt
-								i(166353),	-- Sin'dorei Leggings
-								i(166354),	-- Sin'dorei Slippers
-								i(166355),	-- Sin'dorei Bracers
-								i(166356),	-- Sin'dorei Raiment
-								i(166357),	-- Sin'dorei Cloak
-							},
-						},
-						{	-- The Setting Sun
-							["questID"] = 53853,
-							["qg"] = 145793,	-- Lady Liadrin
-							["lvl"] = 120,
-							["coord"] = { 48.3, 35.9, 122 },
-							["races"] = { 10 },	-- Blood Elf
-							["sourceQuest"] = 53725,	-- A People Shattered
 						},
 					}),
 					--[[
