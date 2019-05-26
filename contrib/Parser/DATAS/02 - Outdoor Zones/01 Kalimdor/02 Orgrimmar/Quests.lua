@@ -1664,14 +1664,6 @@ _.Zones =
 							un(2, i(7994)),	-- Plans: Orcish War Leggings
 						},
 					},
-					{	-- The Pride of the Sin'dorei
-						["questID"] = 53791,
-						["qg"] = 146939,	-- Ambassador Dawnsworn
-						["lvl"] = 120,
-						["coord"] = { 39.1, 7930, 85 },
-						["races"] = { 10 },	-- Blood Elf
-						["description"] = "Must be exalted with |cFFFFD700Silvermoon City|r to accept this quest.",
-					},
 					{	-- The Pyromancer's Grimoire
 						["questID"] = 28458,
 						["qg"] = 47246,	-- Ureda
