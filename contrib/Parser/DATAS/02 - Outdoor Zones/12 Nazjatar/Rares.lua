@@ -201,6 +201,11 @@ _.Zones =
 				n(155841, {	-- Shadowbinder Athissa (nothing happened on the kill. No quest ID, no ach criteria, no drops, etc...)
 					["coord"] = { 74.0, 31.3, 1355 },
 				}),
+				n(152552, {	-- Shassera
+					["allianceQuestID"] = 56295,
+					["hordeQuestID"] = 56588,
+					["coord"] = { 63.7, 6.0, 1355 },
+				}),
 				n(153658, {	-- Shiz'narasz the Consumer
 					["allianceQuestID"] = 56587,
 					["hordeQuestID"] = 56296,
