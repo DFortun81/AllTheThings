@@ -52,6 +52,10 @@ _.Zones =
 						},
 						["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
 					},
+					{	-- Figurine 10
+						["questID"] = 56985,
+						["coord"] = { 59.1, 30.4, 1355 },
+					},
 					-- these ones are still not found:
 					{	-- Figurine 3
 						["questID"] = 56992,
@@ -67,9 +71,6 @@ _.Zones =
 					},
 					{	-- Figurine 8
 						["questID"] = 56989,
-					},
-					{	-- Figurine 10
-						["questID"] = 56985,
 					},
 				}),
 				ach(13707),	-- Mrrl's Secret Stash
