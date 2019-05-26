@@ -172,13 +172,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 						i(37364, {	-- Frostbridge Orb
 							["crs"] = {
+								27633,	-- Azure Inquisitor
 								27636,	-- Azure Ley-Whelp
 								27635,	-- Azure Spellbinder
+								27641,	-- Centrifuge Construct
+								27650,	-- Phantasmal Air
 								27645,	-- Phantasmal Cloudscraper
 								27651,	-- Phantasmal Fire
+								27642,	-- Phantasmal Mammoth
 								27649,	-- Phantasmal Murloc
+								27648,	-- Phantasmal Naga
 								27647,	-- Phantasmal Ogre
 								27653,	-- Phantasmal Water
+								27644,	-- Phantasmal Wolf
 								27640,	-- Ring-Lord Conjurer
 								27639,	-- Ring-Lord Sorceress
 							},

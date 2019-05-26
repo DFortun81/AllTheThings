@@ -54,11 +54,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(35681, {	-- Unrelenting Blade
 						["crs"] = {
+							27962,	-- Dark Rune Elementalist
 							27969,	-- Dark Rune Giant
+							27964,	-- Dark Rune Scholar
 							27965,	-- Dark Rune Shaper
 							27963,	-- Dark Rune Theurgist
+							27960,	-- Dark Rune Warrior
 							27961,	-- Dark Rune Worker
 							27972,	-- Lightning Construct
+							27970,	-- Raging Construct
 							27971,	-- Unrelenting Construct
 						},
 					}),

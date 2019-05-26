@@ -1519,6 +1519,18 @@ _.Zones =
 						i(11307),	-- Massive Longbow
 					})),
 				}),
+				n(-38, {	-- Profession
+					prof(356, {	-- Fishing
+						o(192049, {	-- Fangtooth Herring School
+							["groups"] = {
+								{	-- Dark Herring
+									["itemID"] = 44703,
+									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
+								},
+							},
+						}),
+					}),
+				}),
 			},
 			["lvl"] = 58,
 			["achievementID"] = 1263,
