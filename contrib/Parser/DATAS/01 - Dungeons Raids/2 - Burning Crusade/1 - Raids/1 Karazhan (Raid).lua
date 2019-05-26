@@ -341,6 +341,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28740),	-- Rip-Flayer Leggings
 					i(28741),	-- Skulker's Greaves
 					i(28730),	-- Mithril Band of the Unscarred
+					{	-- Netheriwng Egg
+						["itemID"] = 32506,	-- Netherwing Egg
+					},
 				},
 			}),
 			e(1562, {			-- Chess Event
