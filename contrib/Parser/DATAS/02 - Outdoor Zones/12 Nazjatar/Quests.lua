@@ -123,7 +123,7 @@ _.Zones =
 					},
 				},
 				{	-- Azerite Weapons Cache
-					["objectID"] = 55869,
+					["objectID"] = 326588,
 					["coord"] = { 46.0, 51.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
