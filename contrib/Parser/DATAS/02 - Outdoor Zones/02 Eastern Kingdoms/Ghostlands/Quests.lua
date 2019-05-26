@@ -13,7 +13,7 @@ _.Zones =
 						crit(2),	-- Farstrider Enclave
 						crit(3),	-- Dar'Khan Drathir
 					})),
-]]--				
+]]--
 					{	-- A Discreet Inquiry
 						["questID"] = 10372,
 						["u"] = 40,
@@ -111,7 +111,7 @@ _.Zones =
 							i(22997),	-- Ley-Keeper's Wand
 							i(22998),	-- Ghostclaw Leggings
 							i(131245),	-- Scourge Lieutenant Breeches
-							i(156942),	-- Spiky Legbone 
+							i(156942),	-- Spiky Legbone
 						},
 						["qg"] = 16204,	-- Magister Idonis
 						["sourceQuests"] = { 9176 }	-- The Twin Ziggurats
@@ -180,7 +180,7 @@ _.Zones =
 					q(9328, {	-- Hero of the Sin'dorei
 						["qg"] = 16239,	-- Magister Kaendris
 						["races"] = { 10 },	-- Blood Elf
-						["sourceQuests"] = { 9167 },						
+						["sourceQuests"] = { 9167 },
 					}),
 					o(181150, {	-- Dusty Journal
 						qh(9162, {	-- Hints of the Past
@@ -204,14 +204,6 @@ _.Zones =
 						["races"] = { 10 },	-- Blood Elf
 						["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					}),
-					{	-- Lament of the Highborne
-						["questID"] = 53736,
-						["qg"] = 145005,	-- Farstrider Elite
-						["lvl"] = 120,
-						["coord"] = { 36.9, 66.9, 95 },
-						["races"] = { 10 },	-- Blood Elf
-						["sourceQuest"] = 53735,	-- The First to Fall
-					},
 					qh(9217, {	-- More Rotting Hearts
 						["qg"] = 16205,	-- Magistrix Aminel
 						["sourceQuests"] = { 9216 },	-- Rotting Hearts
@@ -274,33 +266,17 @@ _.Zones =
 						["qg"] = 16197,	-- Arcanist Vandril
 						["sourceQuests"] = { 9758 },	-- Return to Arcanist Vandril
 					}),
-					{	-- The Day Hope Died
-						["questID"] = 53737,
-						["qg"] = 145005,	-- Farstrider Elite
-						["lvl"] = 120,
-						["coord"] = { 12.6, 56.8, 95 },
-						["races"] = { 10 },	-- Blood Elf
-						["sourceQuest"] = 53736,	-- Lament of the Highborne
-					},
 					qh(9282, {	-- The Farstrider Enclave
 						["qg"] = 16239,	-- Magister Kaendris
 						["sourceQuests"] = { 9151 },	-- The Sanctum of the Sun
 						["isBreadcrumb"] = true,
 					}),
-					{	-- The First to Fall
-						["questID"] = 53735,
-						["qg"] = 145005,	-- Farstrider Elite (debugger shows Farstrider Elite, but lor'thermar offered this instead?)
-						["lvl"] = 120,
-						["coord"] = { 47.4, 84.0, 95 },
-						["races"] = { 10 },	-- Blood Elf
-						["sourceQuest"] = 53882,	-- Writing on the Wall
-					},
 					q(9327, {	-- The Forsaken
 						["qg"] = 16197,	-- Arcanist Vandril
 						["races"] = {10},	-- Blood Elf
 					}),
 					q(9329, {	-- The Forsaken
-						["qg"] = 16197,	-- Arcanist Vandril					
+						["qg"] = 16197,	-- Arcanist Vandril
 						["races"] = { 2, 5, 6, 8, 9, 26, 27, 28 },	-- Horde, not Blood Elf
 					}),
 					{
@@ -409,14 +385,6 @@ _.Zones =
 						["qg"] = 16197,	-- Arcanist Vandril
 						["sourceQuests"] = { 9139 },	-- Goldenmist Village
 					}),
-					{	-- Writing on the Wall
-						["questID"] = 53882,
-						["qg"] = 145015,	-- Lor'themar Theron
-						["lvl"] = 120,
-						["coord"] = { 46.3, 31.9, 95 },
-						["races"] = { 10 },
-						["sourceQuest"] = 53734,	-- Walk Among Ghosts
-					},
 				}),
 			},
 		}),
