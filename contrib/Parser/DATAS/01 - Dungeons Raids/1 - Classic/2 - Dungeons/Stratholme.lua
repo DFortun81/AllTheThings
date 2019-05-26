@@ -52,7 +52,11 @@ _.Instances = { tier(1, {	-- Classic
 						i(18743),	-- Gracious Cape
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
-						i(18744),	-- Plaguebat Fur Gloves
+						i(18744,  {  -- Plaguebat Fur Gloves
+							["crs"] = {
+								10423,	-- Risen Priest
+							},
+						}),
 						i(18736),	-- Plaguehound Leggings
 						i(142337, {	-- Plans: Blight
 							["crs"] = {
@@ -305,7 +309,13 @@ _.Instances = { tier(1, {	-- Classic
 						i(18743),	-- Gracious Cape
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
-						i(18744),	-- Plaguebat Fur Gloves
+						i(18744,  {  -- Plaguebat Fur Gloves
+							["crs"] = {
+								10381,	-- Ravaged Cadaver
+								10463,	-- Shrieking Banshee
+								10400,	-- Thuzadin Necromancer
+							},
+						}),
 						i(18736),	-- Plaguehound Leggings
 						i(142337, {	-- Plans: Blight
 							["crs"] = {

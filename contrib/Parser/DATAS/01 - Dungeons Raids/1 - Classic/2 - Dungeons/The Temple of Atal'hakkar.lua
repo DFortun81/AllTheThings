@@ -132,31 +132,43 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(10632, {	-- Slimescale Bracers
 					["crs"] = {
-						5270,	-- Atal'ai Corpse Walker
+						5270,	-- Atal'ai Corpse Eater
 						5271,	-- Atal'ai Deathwalker
+						5273,	-- Atal'ai High Priest
+						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						8319,	-- Nightmare Whelp
 						5280,	-- Nightmare Wyrmkin
 					},
 				}),
 				i(10631, {	-- Murkwater Gauntlets
 					["crs"] = {
 						5271,	-- Atal'ai Deathwalker
+						8336,	-- Hakkari Sapper
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						5280,	-- Nightmare Wyrmkin
 					},
 				}),
 				i(10633, {	-- Silvershell Leggings
 					["crs"] = {
+						5270,	-- Atal'ai Corpse Eater
+						5271,	-- Atal'ai Deathwalker
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						5280,	-- Nightmare Wyrmkin
 					},
 				}),
 				i(10629, {	-- Mistwalker Boots
 					["crs"] = {
+						5270,	-- Atal'ai Corpse Eater
 						5271,	-- Atal'ai Deathwalker
+						5273,	-- Atal'ai High Priest
+						5291,	-- Hakkari Frostwing
 						8336,	-- Hakkari Sapper
 						5277,	-- Nightmare Scalebane
 						5283,	-- Nightmare Wanderer
+						8319,	-- Nightmare Whelp
 						5280,	-- Nightmare Wyrmkin
 					},
 				}),

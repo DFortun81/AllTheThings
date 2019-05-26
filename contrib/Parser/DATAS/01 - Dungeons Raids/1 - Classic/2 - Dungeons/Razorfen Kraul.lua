@@ -64,9 +64,11 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(4438, {	-- Pugilist Bracers
 					["crs"] = {
+						74620,	-- Battle Boar
 						75467,	-- Cave Bat
 						74551,	-- Razorfen Beast Stalker
 						74552,	-- Razorfen Huntmaster
+						75466,	-- Vile Bat
 					},
 				}),
 				i(1975, {	-- Pysan's Old Greatsword
@@ -140,11 +142,15 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(1978, {	-- Wolfclaw Gloves
 					["crs"] = {
+						74620,	-- Battle Boar
 						74900,	-- Kraulshaper Tukaar
+						74551,	-- Razorfen Beast Stalker
 						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74554,	-- Razorfen Scarblade
 						74549,	-- Razorfen Stonechanter
 						75110,	-- Razorfen Torchbearer
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2039, {	-- Plains Ring

@@ -93,6 +93,10 @@ _.Instances = { tier(1, {	-- Classic
 						74492,	-- Bubonic Geist
 						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
+						74486,	-- Freezing Spirit
+						74488,	-- Frozen Soul
+						74950,	-- Gelatanized Plague Gunk
+						74489,	-- Thorn Eater Ghoul
 					},
 				}),
 				i(10574, {	-- Corpseshroud
@@ -157,14 +161,16 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(10584, {	-- Stormgale Fists
 					["crs"] = {
-						74489,	-- Thorn Eater Ghoul
-						74492,	-- Bubonic Geist
+						74583,	-- Festering Spiderling
+						74488,	-- Frozen Soul
 					},
 				}),
 				i(10578, {	-- Thoughtcast Boots
 					["crs"] = {
-						74478,	-- Death's Head Shadowmender
+						74490,	-- Boneflayer Ghoul
 						74483,	-- Death's Head Arachnomancer
+						74478,	-- Death's Head Shadowmender
+						74488,	-- Frozen Soul
 						74950,	-- Gelatanized Plague Gunk
 					},
 				}),

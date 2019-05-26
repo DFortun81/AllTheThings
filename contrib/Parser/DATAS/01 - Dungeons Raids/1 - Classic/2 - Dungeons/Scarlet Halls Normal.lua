@@ -15,6 +15,15 @@ _.Instances = { tier(1, {	-- Classic
 					qg(64738, q(31490)),	-- Rank and File
 				}),
 				n(0, { 		-- Zone Drop
+					i(7754, {    -- Harbinger Boots
+						["crs"] = {
+							59175,	-- Master Archer
+							59293,	-- Scarlet Cannoneer
+							58683,	-- Scarlet Myrmidon
+							59373,	-- Scarlet Pupil
+							58876,	-- Starving Hound
+						},
+					}),
 					i(7786, {    -- Headsplitter
 						["crs"] = {
 							59293,	-- Scarlet Cannoneer

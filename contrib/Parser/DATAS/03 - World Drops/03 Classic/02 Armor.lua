@@ -474,211 +474,216 @@ _.WorldDrops =
 					i(68611),	-- Red Shirt
 				}),
 				n(-326, {	-- Wrist
-					i(10632),	-- Slimescale Bracers
-					i(12546),	-- Aristocratic Cuffs
-					i(12550),	-- Runed Golem Shackles
-					i(12999),	-- Drakewing Bands
-					i(13012),	-- Yorgen Bracers
-					i(13106),	-- Glowing Magical Bracelets
-					i(13107),	-- Magiskull Cuffs
-					i(13119),	-- Enchanted Kodo Bracers
-					i(13120),	-- Deepfury Bracers
-					i(13135),	-- Lordly Armguards
 					i(13199),	-- Crushridge Bindings
-					un(7, i(1351)),	-- Fingerbone Bracers
-					i(18296),	-- Marksman Bands
-					i(18337),	-- Orphic Bracers
-					i(18700),	-- Malefic Bracers
-					i(18709),	-- Arena Wristguards
-					i(18710),	-- Arena Bracers
-					i(18711),	-- Arena Bands
-					i(18712),	-- Arena Vambraces
-					i(18741),	-- Morlune's Bracer
-					i(1974),	-- Mindthrust Bracers
-					un(7, i(2017)),	-- Glowing Leather Bracers
-					un(7, i(3204)),	-- Deepwood Bracers
-					i(4438),	-- Pugilist Bracers
-					i(4794),	-- Wolf Bracers
-					i(4795),	-- Bear Bracers
-					i(4796),	-- Owl Bracers
-					un(7, i(6198)),	-- Jurassic Wristguards
-					un(7, i(897)),		-- Madwolf Bracers
-					i(9428),	-- Unearthed Bands
-					i(9432),	-- Skullplate Bracers
+					i(13120),	-- Deepfury Bracers
+					i(12999),	-- Drakewing Bands
+					i(13119),	-- Enchanted Kodo Bracers
 					i(9433),	-- Forgotten Wraps
+					i(13106),	-- Glowing Magical Bracelets
+					i(13135),	-- Lordly Armguards
+					i(13107),	-- Magiskull Cuffs
+					i(13012),	-- Yorgen Bracers
+					-- [removed non-world drops below]
+					--i(18711),	-- Arena Bands
+					--i(18710),	-- Arena Bracers
+					--i(18712),	-- Arena Vambraces
+					--i(18709),	-- Arena Wristguards
+					--i(12546),	-- Aristocratic Cuffs
+					--i(4795),	-- Bear Bracers
+					--un(7, i(3204)),	-- Deepwood Bracers
+					--un(7, i(1351)),	-- Fingerbone Bracers
+					--un(7, i(2017)),	-- Glowing Leather Bracers
+					--un(7, i(6198)),	-- Jurassic Wristguards
+					--un(7, i(897)),	-- Madwolf Bracers
+					--i(18700),	-- Malefic Bracers
+					--i(18296),	-- Marksman Bands
+					--i(1974),	-- Mindthrust Bracers
+					--i(18741),	-- Morlune's Bracer
+					--i(18337),	-- Orphic Bracers
+					--i(4796),	-- Owl Bracers
+					--i(4438),	-- Pugilist Bracers
+					--i(12550),	-- Runed Golem Shackles
+					--i(9432),	-- Skullplate Bracers
+					--i(10632),	-- Slimescale Bracers
+					--i(9428),	-- Unearthed Bands
+					--i(4794),	-- Wolf Bracers
 				}),
 				n(-327, {	-- Hands
-					i(10413),	-- Gloves of the Fang
-					i(10584),	-- Stormgale Fists
-					i(10631),	-- Murkwater Gauntlets
-					i(12547),	-- Mar Alom's Grip
-					i(12977),	-- Magefist Gloves
-					i(12994),	-- Thorbia's Gauntlets
-					i(13071),	-- Plated Fist of Hakoo
-					i(13072),	-- Stonegrip Gauntlets
 					i(13126),	-- Battlecaller Gauntlets
-					un(7, i(1314)),	-- Ghoul Fingers
-					i(132743),	-- Slither-Scale Gauntlets
+					i(720),		-- Brawler Gloves
 					i(14551),	-- Edgemaster's Handguards
-					i(1659),	-- Engineering Gloves
-					un(7, i(16672)),	-- Gauntlets of Elements
-					un(7, i(16676)),	-- Beaststalker's Gloves
-					un(7, i(16684)),	-- Magister's Gloves
-					un(7, i(16692)),	-- Devout Gloves
-					un(7, i(16705)),	-- Dreadmist Wraps
-					un(7, i(16712)),	-- Shadowcraft Gloves
-					un(7, i(16717)),	-- Wildheart Gloves
-					un(7, i(16724)),	-- Lightforge Gauntlets
-					un(7, i(16737)),	-- Gauntlets of Valor
-					i(17007),	-- Stonerender Gauntlets
-					i(18344),	-- Stonebark Gauntlets
-					i(18744),	-- Plaguebat Fur Gloves
-					un(7, i(1944)),	-- Metalworking Gloves
-					un(7, i(1945)),	-- Woodworking Gloves
-					i(1978),	-- Wolfclaw Gloves
-					i(2167),	-- Foreman's Gloves
-					un(7, i(2274)),	-- Sapper's Gloves
 					i(2564),	-- Elven Spirit Claws
 					i(31126),	-- Gloves of Ferocity
-					un(7, i(3341)),	-- Gauntlets of Ogre Strength
-					un(7, i(4465)),	-- Felstrom's Gauntlets
-					un(7, i(4767)),	-- Coppercloth Gloves
-					un(7, i(4768)),	-- Adept's Gloves
-					un(7, i(6628)),	-- Raven's Claws
-					i(720),		-- Brawler Gloves
 					i(867),		-- Gloves of Holy Might
-					un(7, i(892)),		-- Gnoll Casting Gloves
 					i(9395),	-- Gloves of Old
+					i(12977),	-- Magefist Gloves
+					i(13071),	-- Plated Fist of Hakoo
 					i(9435),	-- Reticulated Bone Gauntlets
-					i(9491),	-- Hotshot Pilot's Gloves
+					i(13072),	-- Stonegrip Gauntlets
+					i(17007),	-- Stonerender Gauntlets
+					i(12994),	-- Thorbia's Gauntlets
+					-- [removed non-world drops below]
+					--un(7, i(4768)),	-- Adept's Gloves
+					--un(7, i(16676)),	-- Beaststalker's Gloves
+					--un(7, i(4767)),	-- Coppercloth Gloves
+					--un(7, i(16692)),	-- Devout Gloves
+					--un(7, i(16705)),	-- Dreadmist Wraps
+					--i(1659),	-- Engineering Gloves
+					--un(7, i(4465)),	-- Felstrom's Gauntlets
+					--i(2167),	-- Foreman's Gloves
+					--un(7, i(16672)),	-- Gauntlets of Elements
+					--un(7, i(3341)),	-- Gauntlets of Ogre Strength
+					--un(7, i(16737)),	-- Gauntlets of Valor
+					--un(7, i(1314)),	-- Ghoul Fingers
+					--i(10413),	-- Gloves of the Fang
+					--un(7, i(892)),	-- Gnoll Casting Gloves
+					--i(9491),	-- Hotshot Pilot's Gloves
+					--un(7, i(16724)),	-- Lightforge Gauntlets
+					--un(7, i(16684)),	-- Magister's Gloves
+					--i(12547),	-- Mar Alom's Grip
+					--un(7, i(1944)),	-- Metalworking Gloves
+					--i(10631),	-- Murkwater Gauntlets
+					--i(18744),	-- Plaguebat Fur Gloves
+					--un(7, i(6628)),	-- Raven's Claws
+					--un(7, i(2274)),	-- Sapper's Gloves
+					--un(7, i(16712)),	-- Shadowcraft Gloves
+					--i(132743),	-- Slither-Scale Gauntlets
+					--i(18344),	-- Stonebark Gauntlets
+					--i(10584),	-- Stormgale Fists
+					--un(7, i(16717)),	-- Wildheart Gloves
+					--i(1978),	-- Wolfclaw Gloves
+					--un(7, i(1945)),	-- Woodworking Gloves
 				}),
 				n(-328, {	-- Waist
-					un(7, i(1215)),	-- Support Girdle
-					i(12257),	-- Heavy Notched Belt
-					i(12258),	-- Serpent Clasp Belt
-					i(12978),	-- Stormbringer Belt
-					un(7, i(1299)),	-- Lesser Belt of the Spire
-					i(13011),	-- Silver-Lined Belt
-					i(13077),	-- Girdle of Uther
-					i(13105),	-- Sutarn's Ring
-					i(13117),	-- Ogron's Sash
-					i(13118),	-- Serpentine Sash
 					i(13134),	-- Belt of the Gladiator
-					i(13144),	-- Serenity Belt
 					i(13145),	-- Enormous Ogre Belt
-					i(14553),	-- Sash of Mercy
-					un(7, i(16673)),	-- Cord of Elements
-					un(7, i(16680)),	-- Beaststalker's Belt
-					un(7, i(16685)),	-- Magister's Belt
-					un(7, i(16696)),	-- Devout Belt
-					un(7, i(16702)),	-- Dreadmist Belt
-					un(7, i(16713)),	-- Shadowcraft Belt
-					un(7, i(16716)),	-- Wildheart Belt
-					un(7, i(16723)),	-- Lightforge Belt
-					un(7, i(16736)),	-- Belt of Valor
-					i(16802),	-- Arcanist Belt
-					i(16806),	-- Felheart Belt
-					i(16817),	-- Girdle of Prophecy
-					i(16827),	-- Nightslayer Belt
-					i(16828),	-- Cenarion Belt
-					i(16838),	-- Earthfury Belt
-					i(16851),	-- Giantstalker's Belt
-					i(16858),	-- Lawbringer Belt
-					i(16864),	-- Belt of Might
-					un(7, i(18676)),	-- Sash of the Windreaver
-					i(18702),	-- Belt of the Ordained
-					un(7, i(2283)),	-- Rat Cloth Belt
-					un(7, i(2899)),	-- Wendigo Collar
-					i(2911),	-- Keller's Girdle
-					un(7, i(3229)),	-- Tarantula Silk Sash
-					un(7, i(3429)),	-- Guardsman Belt
-					un(7, i(4436)),	-- Jewel-Encrusted Sash
-					un(7, i(4463)),	-- Beaded Raptor Collar
-					un(7, i(4785)),	-- Brimstone Belt
-					i(4786),	-- Wise Man's Belt
-					i(4827),	-- Wizard's Belt
-					i(4828),	-- Nightwind Belt
-					i(4829),	-- Dreamer's Belt
-					i(5425),	-- RuneChain Girdle
-					un(7, i(5750)),	-- Warchief's Girdle
-					un(7, i(5975)),	-- Ruffian Belt
-					un(7, i(6200)),	-- Garneg's War Belt
-					un(7, i(832)),	-- Silver Defias Belt
 					i(9405),	-- Girdle of Golem Strength	
+					i(13077),	-- Girdle of Uther
+					i(2911),	-- Keller's Girdle
+					i(13117),	-- Ogron's Sash
+					i(14553),	-- Sash of Mercy
+					i(13144),	-- Serenity Belt
+					i(13118),	-- Serpentine Sash
+					i(13011),	-- Silver-Lined Belt
+					i(12978),	-- Stormbringer Belt
+					i(13105),	-- Sutarn's Ring
+					-- [removed non-world drops below]
+					--i(16802),	-- Arcanist Belt
+					--un(7, i(4463)),	-- Beaded Raptor Collar
+					--un(7, i(16680)),	-- Beaststalker's Belt
+					--i(16864),	-- Belt of Might
+					--i(18702),	-- Belt of the Ordained
+					--un(7, i(16736)),	-- Belt of Valor
+					--un(7, i(4785)),	-- Brimstone Belt
+					--i(16828),	-- Cenarion Belt
+					--un(7, i(16673)),	-- Cord of Elements
+					--un(7, i(16696)),	-- Devout Belt
+					--un(7, i(16702)),	-- Dreadmist Belt
+					--i(4829),	-- Dreamer's Belt
+					--i(16838),	-- Earthfury Belt
+					--i(16806),	-- Felheart Belt
+					--un(7, i(6200)),	-- Garneg's War Belt
+					--i(16851),	-- Giantstalker's Belt
+					--i(16817),	-- Girdle of Prophecy
+					--un(7, i(3429)),	-- Guardsman Belt
+					--i(12257),	-- Heavy Notched Belt
+					--un(7, i(4436)),	-- Jewel-Encrusted Sash
+					--i(16858),	-- Lawbringer Belt
+					--un(7, i(16723)),	-- Lightforge Belt
+					--un(7, i(1299)),	-- Lesser Belt of the Spire
+					--un(7, i(1299)),	-- Lesser Belt of the Spire
+					--un(7, i(16685)),	-- Magister's Belt
+					--i(16827),	-- Nightslayer Belt
+					--i(4828),	-- Nightwind Belt
+					--un(7, i(2283)),	-- Rat Cloth Belt
+					--un(7, i(5975)),	-- Ruffian Belt
+					--i(5425),	-- RuneChain Girdle
+					--un(7, i(18676)),	-- Sash of the Windreaver
+					--i(12258),	-- Serpent Clasp Belt
+					--un(7, i(16713)),	-- Shadowcraft Belt
+					--un(7, i(832)),	-- Silver Defias Belt
+					--un(7, i(1215)),	-- Support Girdle
+					--un(7, i(3229)),	-- Tarantula Silk Sash
+					--un(7, i(5750)),	-- Warchief's Girdle
+					--un(7, i(2899)),	-- Wendigo Collar
+					--un(7, i(16716)),	-- Wildheart Belt
+					--i(4786),	-- Wise Man's Belt
+					--i(4827),	-- Wizard's Belt
 				}),
 				n(-329, {	-- Legs
-					i(10633),	-- Silvershell Leggings
-					i(12256),	-- Cindercloth Leggings
-					i(12987),	-- Darkweave Breeches
-					i(13008),	-- Dalewind Trousers
-					i(13010),	-- Dreamsinger Legguards
-					i(13074),	-- Golem Shard Leggings
-					i(13075),	-- Direwing Legguards
-					i(13114),	-- Troll's Bane Leggings
-					i(13129),	-- Firemane Leggings
-					i(13130),	-- Windrunner Legguards
-					i(14554),	-- Cloudkeeper Legplates
 					i(1718),	-- Basilisk Hide Pants
-					i(18298),	-- Unbridled Leggings
-					i(18736),	-- Plaguehound Leggings
-					i(18745),	-- Sacred Cloth Leggings
-					un(7, i(1943)),	-- Goblin Mail Leggings
-					i(2166),	-- Foreman's Leggings
-					un(7, i(2233)),	-- Shadow Weaver Leggings
-					i(2277),	-- Necromancer Leggings
-					un(7, i(3022)),	-- Bluegill Breeches
-					un(7, i(3563)),	-- Seafarer's Pantaloons
-					i(38513),	-- Boarhide Leggings
-					un(7, i(4434)),	-- Scarecrow Trousers
-					i(4478),	-- Iridescent Scale Leggings
-					i(45052),	-- Gruffscale Leggings
-					un(7, i(4723)),	-- Humbert's Pants
-					i(4800),	-- Mighty Chain Pants
-					i(4816),	-- Legionnaire's Leggings
-					i(4830),	-- Saber Leggings
-					i(4831),	-- Stalking Pants
-					i(4832),	-- Mystic Sarong
-					i(5422),	-- Brambleweed Leggings
-					i(7760),	-- Warchief Kilt
-					i(9396),	-- Legguards of the Vault
+					i(14554),	-- Cloudkeeper Legplates
+					i(13008),	-- Dalewind Trousers
+					i(12987),	-- Darkweave Breeches
+					i(13075),	-- Direwing Legguards
+					i(13010),	-- Dreamsinger Legguards
 					i(9402),	-- Earthborn Kilt
-					i(9484),	-- Spellshock Leggings
-					i(9509),	-- Petrolspill Leggings
+					i(13129),	-- Firemane Leggings
+					i(13074),	-- Golem Shard Leggings
+					i(2277),	-- Necromancer Leggings
+					i(13114),	-- Troll's Bane Leggings
+					i(13130),	-- Windrunner Legguards
+					-- [removed non-world drops below]
+					--un(7, i(3022)),	-- Bluegill Breeches
+					--i(38513),	-- Boarhide Leggings
+					--i(5422),	-- Brambleweed Leggings
+					--i(12256),	-- Cindercloth Leggings
+					--i(2166),	-- Foreman's Leggings
+					--un(7, i(1943)),	-- Goblin Mail Leggings
+					--i(45052),	-- Gruffscale Leggings
+					--un(7, i(4723)),	-- Humbert's Pants
+					--i(4478),	-- Iridescent Scale Leggings
+					--i(9396),	-- Legguards of the Vault
+					--i(4816),	-- Legionnaire's Leggings
+					--i(4800),	-- Mighty Chain Pants
+					--i(4832),	-- Mystic Sarong
+					--i(9509),	-- Petrolspill Leggings
+					--i(18736),	-- Plaguehound Leggings
+					--i(4830),	-- Saber Leggings
+					--i(18745),	-- Sacred Cloth Leggings
+					--un(7, i(4434)),	-- Scarecrow Trousers
+					--un(7, i(3563)),	-- Seafarer's Pantaloons
+					--un(7, i(2233)),	-- Shadow Weaver Leggings
+					--i(10633),	-- Silvershell Leggings
+					--i(9484),	-- Spellshock Leggings
+					--i(4831),	-- Stalking Pants
+					--i(18298),	-- Unbridled Leggings
+					--un(7, i(7760)),	-- Warchief Kilt
 				}),
 				n(-330, {	-- Feet
-					i(10332),	-- Scarlet Boots
-					i(10578),	-- Thoughtcast Boots
-					i(10582),	-- Briar Tredders
-					i(10629),	-- Mistwalker Boots
-					i(1121),	-- Feet of the Lynx
-					i(12555),	-- Battlechaser's Greaves
-					i(12982),	-- Silver-Linked Footguards
-					i(13068),	-- Obsidian Greaves
-					i(13070),	-- Sapphiron's Scale Boots
-					i(13099),	-- Moccasins of the White Hare
-					i(13100),	-- Furen's Boots
-					i(13101),	-- Wolfrunner Shoes
-					i(13111),	-- Sandals of the Insurgent
-					i(13124),	-- Ravasaur Scale Boots
-					i(13125),	-- Elven Chain Boots
-					i(132548),	-- Shamanic Treads
-					i(13260),	-- Wind Dancer Boots
 					i(14549),	-- Boots of Avoidance
-					un(7, i(1560)),	-- Bluegill Sandals
-					i(1678),	-- Black Ogre Kickers
-					i(18295),	-- Phasing Boots
-					i(18697),	-- Coldstone Slippers
-					un(7, i(1955)),	-- Dragonmaw Chain Boots
-					un(7, i(2232)),	-- Dark Runner Boots
-					i(2276),	-- Swampwalker Boots
-					un(7, i(4464)),	-- Trouncing Boots
-					un(7, i(4660)),	-- Walking Boots
-					i(4788),	-- Agile Boots
-					i(4789),	-- Stable Boots
+					i(13125),	-- Elven Chain Boots
+					i(1121),	-- Feet of the Lynx
+					i(13100),	-- Furen's Boots
+					i(13099),	-- Moccasins of the White Hare
+					i(13068),	-- Obsidian Greaves
+					i(13124),	-- Ravasaur Scale Boots
 					un(7, i(5968)),	-- Rugged Boots (Added during WoD to Salvage Crates)
-					i(7754),	-- Harbinger Boots
-					un(7, i(9382)),	-- Tromping Miner's Boots
-					i(9510),	-- Caverndeep Trudgers
+					i(13111),	-- Sandals of the Insurgent
+					i(13070),	-- Sapphiron's Scale Boots
+					i(12982),	-- Silver-Linked Footguards
+					i(2276),	-- Swampwalker Boots
+					i(13101),	-- Wolfrunner Shoes
+					-- [removed non-world drops below]
+					--i(4788),	-- Agile Boots
+					--i(12555),	-- Battlechaser's Greaves
+					--i(1678),	-- Black Ogre Kickers
+					--un(7, i(1560)),	-- Bluegill Sandals
+					--i(10582),	-- Briar Tredders
+					--i(9510),	-- Caverndeep Trudgers
+					--i(18697),	-- Coldstone Slippers
+					--un(7, i(2232)),	-- Dark Runner Boots
+					--un(7, i(1955)),	-- Dragonmaw Chain Boots
+					--i(7754),	-- Harbinger Boots
+					--i(10629),	-- Mistwalker Boots
+					--i(18295),	-- Phasing Boots
+					--i(10332),	-- Scarlet Boots
+					--i(4789),	-- Stable Boots
+					--i(10578),	-- Thoughtcast Boots
+					--un(7, i(9382)),	-- Tromping Miner's Boots
+					--un(7, i(4464)),	-- Trouncing Boots
+					--un(7, i(4660)),	-- Walking Boots
+					--i(13260),	-- Wind Dancer Boots
 				}),
 				filter(52, {	-- Finger
 					i(11968),	-- Amber Hoop

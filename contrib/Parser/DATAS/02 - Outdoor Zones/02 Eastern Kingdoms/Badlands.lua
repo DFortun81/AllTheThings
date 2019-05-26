@@ -925,6 +925,12 @@ _.Zones =
 							2718,	-- Dustbelcher Shaman
 						},
 					}),
+					i(9428, {	-- Unearthed Bands
+						["crs"] = {
+							4846,	-- Shadowforge Digger
+							4844,	-- Shadowforge Surveyor
+						},
+					}),
 				}),
 				n(-40,  {	-- Legacy
 					n(-17, {	-- Quests (Legacy)

@@ -68,7 +68,11 @@ _.Instances = { tier(1, {	-- Classic
 					un(7, i(7755)),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
 							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
 						},
 					}),
 					i(7786, {	-- Headsplitter

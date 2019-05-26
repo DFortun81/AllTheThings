@@ -258,6 +258,7 @@ _.Instances = { tier(1, {	-- Classic
 						6207,	-- Caverndeep Ambusher
 						6206,	-- Caverndeep Burrower
 						6212,	-- Dark Iron Agent
+						6391,	-- Holdout Warrior
 						6220,	-- Irradiated Horror
 						6329,	-- Irradiated Pillager
 						6218,	-- Irradiated Slime

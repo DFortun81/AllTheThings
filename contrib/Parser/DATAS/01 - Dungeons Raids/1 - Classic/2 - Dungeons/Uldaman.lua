@@ -157,13 +157,17 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9396, {	-- Legguards of the Vault
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
 						7012,	-- Earthen Sculptor
+						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9429),	-- Miner's Hat of the Deep
@@ -262,12 +266,20 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9428, {	-- Unearthed Bands
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						4863,	-- Jadespine Basilisk
+						4849,	-- Shadowforge Archaeologist
+						4848,	-- Shadowforge Darkcaster
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
+						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 			}),

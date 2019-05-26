@@ -112,19 +112,37 @@ _.Instances = { tier(1, {	-- Classic
 						8903,	-- Anvilrage Captain
 						8892,	-- Anvilrage Footman
 						8891,	-- Anvilrage Guardsman
+						8898,	-- Anvilrage Marshal
+						8894,	-- Anvilrage Medic
+						8895,	-- Anvilrage Officer
+						8893,	-- Anvilrage Soldier
+						8890,	-- Anvilrage Warden
+						8910,	-- Blazing Fireguard
+						8921,	-- Bloodhound
 						8899,	-- Doomforge Dragoon
 						8911,	-- Fireguard Destroyer
+						8908,	-- Molten War Golem
+						8906,	-- Ragereaver Golem
 						8905,	-- Warbringer Construct
+						8920,	-- Weapon Technician
+						8907,	-- Wrath Hammer Construct
 					},
 				}),
 				i(12555, {	-- Battlechaser's Greaves
 					["crs"] = {
 						8903,	-- Anvilrage Captain
+						8891,	-- Anvilrage Guardsman
 						8898,	-- Anvilrage Marshal
 						9541,	-- Blackbreath Crony
 						8910,	-- Blazing Fireguard
+						8921,	-- Bloodhound
+						8897,	-- Doomforge Craftsman
+						8899,	-- Doomforge Dragoon
 						8911,	-- Fireguard Destroyer
+						9545,	-- Grim Patron
 						8908,	-- Molten War Golem
+						8906,	-- Ragereaver Golem
+						8904,	-- Shadowforge Senator
 						8914,	-- Twilight Bodyguard
 						8905,	-- Warbringer Construct
 						8907,	-- Wrath Hammer Construct
@@ -244,8 +262,12 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(12547, {	-- Mar Alom's Grip
 					["crs"] = {
+						8893,	-- Anvilrage Soldier
+						8910,	-- Blazing Fireguard
 						8899,	-- Doomforge Dragoon
 						8911,	-- Fireguard Destroyer
+						8908,	-- Molten War Golem
+						8905,	-- Warbringer Construct
 					},
 				}),
 				i(15781, {	-- Pattern: Black Dragonscale Leggings
@@ -294,14 +316,31 @@ _.Instances = { tier(1, {	-- Classic
 						8892,	-- Anvilrage Footman
 						8891,	-- Anvilrage Guardsman
 						8898,	-- Anvilrage Marshal
+						8894,	-- Anvilrage Medic
 						8895,	-- Anvilrage Officer
+						8889,	-- Anvilrage Overseer
+						8893,	-- Anvilrage Soldier
 						8890,	-- Anvilrage Warden
 						9541,	-- Blackbreath Crony
 						8910,	-- Blazing Fireguard
+						8921,	-- Bloodhound
+						8932,	-- Borer Beetle
 						9445,	-- Dark Guard
+						8900,	-- Doomforge Arcanasmith
+						8897,	-- Doomforge Craftsman
 						8899,	-- Doomforge Dragoon
 						8909,	-- Fireguard
+						8911,	-- Fireguard Destroyer
+						9547,	-- Guzzling Patron
+						9554,	-- Hammered Patron
 						8908,	-- Molten War Golem
+						8906,	-- Ragereaver Golem
+						8902,	-- Shadowforge Citizen
+						8896,	-- Shadowforge Peasant
+						8904,	-- Shadowforge Senator
+						8914,	-- Twilight Bodyguard
+						8912,	-- Twilight's Hammer Torturer
+						8905,	-- Warbringer Construct
 					},
 				}),
 				i(16049, {  -- Schematic: Dark Iron Bomb
