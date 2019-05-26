@@ -23,7 +23,25 @@ _.NeverImplemented =
 		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
 		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
 		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
-
+		-- Leather Horde (you probably will learn both after learning one)
+		un(1, i(166915)),	-- Dread Gladiator's leather tunic
+		un(1, i(166916)),	-- Dread Gladiator's leather boots
+		un(1, i(166917)),	-- Dread Gladiator's leather gloves
+		un(1, i(166918)),	-- Dread Gladiator's leather helm
+		un(1, i(166919)),	-- Dread Gladiator's leather legguards
+		un(1, i(166920)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166921)),	-- Dread Gladiator's leather belt
+		un(1, i(166922)),	-- Dread Gladiator's leather bindings
+		-- Leather Ally (you probably will learn both after learning one)
+		un(1, i(166946)),	-- Dread Gladiator's leather tunic
+		un(1, i(166947)),	-- Dread Gladiator's leather boots
+		un(1, i(166948)),	-- Dread Gladiator's leather gloves
+		un(1, i(166949)),	-- Dread Gladiator's leather helm
+		un(1, i(166950)),	-- Dread Gladiator's leather legguards
+		un(1, i(166951)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166952)),	-- Dread Gladiator's leather belt
+		un(1, i(166953)),	-- Dread Gladiator's leather bindings
+		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
@@ -440,6 +458,7 @@ _.NeverImplemented =
 			un(1, i(109349)),	-- Unknown
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(157693)),	-- asceitcs helm
 			un(1, i(54681)),	-- Thick Murloc Armor
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(54727)),	-- Traveler's Boots

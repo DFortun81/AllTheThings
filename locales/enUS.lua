@@ -573,6 +573,7 @@ AllTheThings.L = {
 		[-657] = "Interface\\Icons\\inv_stormdragonmount2_fel",					-- Demonic Gladiator: Legion Season 7
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
+		[-3158] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",	-- BFA PvP Season 1
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",		-- Tier 3.5
 		[-3181] = "Interface\\Icons\\achievement_boss_ossiriantheunscarred",	-- Cenarion Circle Set (Ruins of Ahn'Qiraj)
 		[-3183] = "Interface\\Icons\\achievement_boss_hakkar",					-- Tier 1.5
