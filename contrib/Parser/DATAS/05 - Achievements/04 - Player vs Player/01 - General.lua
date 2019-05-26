@@ -45,7 +45,15 @@ _.Achievements =
 						crit(3),		-- Master of Warsong Gulch
 						crit(4),		-- Master of Eye of the Storm
 					})),
-					a(ach(611)),	-- Bleeding Bloodhoof
+					ach(611, 615),	-- Bleeding Bloodhoof [A] / Storming Stormwind [H]
+					ach(612, 616),	-- Downing the Dark Lady [A] / Overthrow the Council [H]
+					ach(613, 618),	-- Killed in Quel'Thalas [A] / Putting Out the Light [H]
+					--a(ach(611)),	-- Bleeding Bloodhoof
+					--a(ach(612)),	-- Downing the Dark Lady
+					--a(ach(613)),	-- Killed in Quel'Thalas
+					--h(ach(615)),	-- Storming Stormwind
+					--h(ach(616)),	-- Overthrow the Council
+					--h(ach(618)),	-- Putting Out the Light
 					ach(727, {		-- Call in the Cavalry
 						crit(1),		-- Black Battlestrider
 						crit(2),		-- Black War Elekk
@@ -61,7 +69,6 @@ _.Achievements =
 					ach(908, 909),	-- Call to Arms!
 					ach(388, 1006),	-- City Defender
 					ach(227),		-- Damage Control
-					a(ach(612)),	-- Downing the Dark Lady
 					ach(1157),		-- Duel-icious
 					ach(614, 619, {	-- For the Alliance! / For the Horde!
 						a(i(44223)),	-- Reins of the Black War Bear
@@ -83,7 +90,18 @@ _.Achievements =
 						crit(3),		-- Putting Out the Light
 					})),
 					]]--
-					a(ach(2016, {	-- Grizzled Veteran (Alliance)
+					ach(2016, 2017, {	-- Grizzled Veteran [A] / [H]
+						crit(1),		-- Blackriver Skirmish [A] / Blackriver Brawl [H]
+						crit(2),		-- Pieces Parts [A] / Shred the Alliance [H]
+						crit(3),		-- Life or Death [A] / Making Repairs [H]
+						crit(4),		-- Shredder Repair [A] / Keep 'Em on Their Heels [H]
+						crit(5),		-- Kick 'Em While They're Down [A] / Overwhelmed! [H]
+						crit(6),		-- Keep Them at Bay! [A] / Riding the Red Rocket [H]
+						crit(7),		-- Down With Captain Zorna! [A] / Crush Captain Brightwater! [H]
+						crit(8),		-- Smoke 'Em Out [A] / Keep Them at Bay [H]
+						crit(9),		-- Riding the Red Rocket [A] / Smoke 'Em Out [H]
+					}),
+					--[[a(ach(2016, {	-- Grizzled Veteran (Alliance)
 						crit(1),		-- Blackriver Skirmish
 						crit(2),		-- Pieces Parts
 						crit(3),		-- Life or Death
@@ -104,7 +122,7 @@ _.Achievements =
 						crit(7),		-- Crush Captain Brightwater!
 						crit(8),		-- Keep Them at Bay
 						crit(9),		-- Smoke 'Em Out
-					})),
+					})),]]
 					ach(396),		-- Gurubashi Arena Grand Master
 					ach(389),		-- Gurubashi Arena Master
 					ach(10561),		-- Honorable Medallion
@@ -116,8 +134,18 @@ _.Achievements =
 						crit(4),		-- Master of Silvershard Mines
 						crit(5),		-- Master of Temple of Kotmogu
 					}),
-					a(ach(613)),	-- Killed in Quel'Thalas
-					a(ach(246, {	-- Know Thy Enemy (Alliance)
+					ach(246, 1005, {	-- Know Thy Enemy [A] / [H]
+						crit(1),		-- Pandaren [A] / [H]
+						crit(2),		-- Blood Elf [A] / Draenei [H]
+						crit(3),		-- Goblin [A] / Dwarf H]
+						crit(4),		-- Orc [A] / Gnome [H]
+						crit(5),		-- Tauren [A] / Human [H]
+						crit(6),		-- Troll [A] / Night Elf [H]
+						crit(7),		-- Undead [A] / Worgen [H]
+						crit(8),		-- Nightborne [A] / Lightforged Draenei [H]
+						crit(9),		-- Highmountain Tauren [A] / Void Elf [H]
+					}),
+					--[[a(ach(246, {	-- Know Thy Enemy (Alliance)
 						crit(1),		-- Pandaren
 						crit(2),		-- Blood Elf
 						crit(3),		-- Goblin
@@ -138,11 +166,8 @@ _.Achievements =
 						crit(7),		-- Worgen
 						crit(8),		-- Lightforged Draenei
 						crit(9),		-- Void Elf
-					})),
+					})),]]
 					ach(247),		-- Make Love, Not Warcraft
-					h(ach(616)),	-- Overthrow the Council
-					h(ach(618)),	-- Putting Out the Light
-					h(ach(615)),	-- Storming Stormwind
 					ach(245, {		-- That Takes Class
 						crit(1),		-- Death Knight
 						crit(2),		-- Demon Hunter
@@ -170,7 +195,13 @@ _.Achievements =
 						crit(2),		-- Knight of Arathor
 						crit(3),		-- 	Silverwing Sentinel
 					})),
-					a(ach(604, {	-- Wrath of the Alliance
+					ach(604, 603, {	-- Wrath of the Alliance [A] / Wrath of the Horde [H]
+						crit(1),		-- Thunder Bluff [A] / Ironforge [H]
+						crit(2),		-- Silvermoon City [A] / Darnassus [H]
+						crit(3),		-- Orgrimmar [A] / The Exodar [H]
+						crit(4),		-- Undercity [A] / Stormwind City [H]
+					}),
+					--[[a(ach(604, {	-- Wrath of the Alliance
 						crit(1),		-- Thunder Bluff
 						crit(2),		-- Silvermoon City
 						crit(3),		-- Orgrimmar
@@ -181,7 +212,7 @@ _.Achievements =
 						crit(2),		-- Darnassus
 						crit(3),		-- The Exodar
 						crit(4),		-- Stormwind City
-					})),
+					})),]]
 					ach(231),		-- Wrecking Ball
 				},
 			}),
