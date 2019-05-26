@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
-			["groups"] = {
+			["g"] = {
 				n(-17, {	-- Quests
 					{	-- Silithus Quests
 						["achievementID"] = 4934,
-						["groups"] = {
+						["g"] = {
 							{	-- Twilight's Run
 								["criteriaID"] = 1,
 								["sourceQuest"] = 8321,	-- Vyral the Vile
@@ -36,7 +36,7 @@ _.Zones =
 						["questID"] = 9248,
 						["u"] = 40,
 						["qg"] = 15282,	-- Aurel Goldleaf
-						["groups"] = {
+						["g"] = {
 							un(2, i(22725)),	-- Band of Cenarius
 						},
 					},
@@ -45,7 +45,7 @@ _.Zones =
 						["qg"] = 15194,	-- Hermit Ortell
 						["coord"] = { 68.6, 63.0, 81 },
 						["sourceQuest"] = 8279,	-- The Twilight Lexicon
-						["groups"] = {
+						["g"] = {
 							i(20645),	-- Nature's Whisper (arrives in mail)
 						},
 					},
@@ -53,7 +53,7 @@ _.Zones =
 						["questID"] = 8361,
 						["u"] = 40,
 						["qg"] = 15306,	-- Bor Wildmane
-						["groups"] = {
+						["g"] = {
 							un(2, i(20603, { 	-- Bag of Spoils
 								un(7, i(20694)), 	-- Glowing Black Orb
 								un(7, i(20693)), 	-- Weighted Cloak
@@ -67,7 +67,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 1 },	-- Warrior
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20699)),	-- Cenarion Reservist's Legplates
 							un(2, i(20710)),	-- Crystal Encrusted Greaves
 						},
@@ -78,7 +78,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 2 },	-- Paladin
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20700)),	-- Cenarion Reservist's Legplates
 							un(2, i(20711)),	-- Crystal Lined Greaves
 						},
@@ -89,7 +89,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 3 },	-- Hunter
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20702)),	-- Cenarion Reservist's Legguards
 							un(2, i(20713)),	-- Desertstalkers' Gauntlets
 						},
@@ -100,7 +100,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20703)),	-- Cenarion Reservist's Leggings
 							un(2, i(20715)),	-- Dunestalker's Boots
 						},
@@ -111,7 +111,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 5 },	-- Priest
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20707)),	-- Cenarion Reservist's Pants
 							un(2, i(20717)),	-- Desert Bloom Gloves
 						},
@@ -122,7 +122,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 7 },	-- Shaman
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20701)),	-- Cenarion Reservist's Legguards
 							un(2, i(20712)),	-- Wastewalker's Gauntlets
 						},
@@ -133,7 +133,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 8, 9 },	-- Mage, Warlock
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20705)),	-- Cenarion Reservist's Pants
 							un(2, i(20706)),	-- Cenarion Reservist's Pants
 							un(2, i(20716)),	-- Sandworm Skin Gloves
@@ -145,7 +145,7 @@ _.Zones =
 						["qg"] = 15183,	-- Geologist Larksbane
 						["classes"] = { 11 },	-- Druid
 						["sourceQuest"] = 8315,	-- The Calling
-						["groups"] = {
+						["g"] = {
 							un(2, i(20704)),	-- Cenarion Reservist's Leggings
 							un(2, i(20714)),	-- Sandstorm Boots
 						},
@@ -171,7 +171,7 @@ _.Zones =
 							11729,	-- Hive'Zora Hive Sister
 							11726,	-- Hive'Zora Tunneler
 						},
-						["groups"] = {
+						["g"] = {
 							i(20723),	-- Brann's Trusty Pick
 						},
 					},
@@ -198,7 +198,7 @@ _.Zones =
 						["questID"] = 8573,
 						["u"] = 40,
 						["qg"] = 15176,	-- Vargus
-						["groups"] = {
+						["g"] = {
 							un(2, i(21180)),	-- Earthstrike
 							un(2, i(21188)),	-- Fist of Cenarius
 							un(2, i(21190)),	-- Wrath of Cenarius
@@ -221,16 +221,85 @@ _.Zones =
 						["coord"] = { 55.4, 36.6, 81 },
 						["description"] = "This quest is invisible until you reach Cooking 285.",
 						["requiredSkill"] = 185,	-- Cooking
-						["groups"] = {
+						["g"] = {
 							recipe(24801),	-- Smoked Desert Dumplings
 						},
 					},
-					{	-- Encrypted Twilight Texts
-						["questID"] = 8319,
-						["qg"] = 15306,	-- Bor Wildmane
-						["coord"] = { 53.2, 35.1, 81 },
-						["repeatable"] = true,
-						["sourceQuest"] = 8318,	-- Secret Communication
+					{	-- Encrypted Twilight Text [Item]
+						["itemID"] = 20404,	-- Encrypted
+						["g"] = {
+							{	-- Encrypted Twilight Texts
+								["questID"] = 8319,	-- Encrypted Twilight Texts
+								["qg"] = 15306,		-- Bor Wildmane
+								["repeatable"] = true,
+								["coords"] = {
+									{ 53.15, 35.12, 81 },
+								},
+								["sourceQuests"] = {
+									8318,	-- Secret Communication
+								},
+							},
+							{	-- Secret Communication
+								["questID"] = 8318,	-- Secret Communication
+								["qg"] = 15306,		-- Bor Wildmane
+								["coords"] = {
+									{ 53.15, 35.12, 81 },
+								},
+							},
+							{	-- Still Believing
+								["questID"] = 8324,
+								["qg"] = 15194,	-- Hermit Ortell
+								["repeatable"] = true,
+								["coords"] = {
+									{ 68.66, 63.03, 81 },
+								},
+								["sourceQuests"] = {
+									8323,	-- True Believers
+								},
+								["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.|r",
+								["g"] = {
+									{	-- Mailbox
+										["npcID"] = -297,	-- Mailbox
+										["g"] = {
+											{	-- Decoded True Believer Clippings
+												["itemID"] = 20469,	-- Decoded True Believer Clippings
+												["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.|r",
+												["g"] = {
+													{	-- Pattern: Runed Stygian Boots
+														["itemID"] = 20547,	-- Pattern: Runed Stygian Boots
+													},
+													{	-- Pattern: Runed Stygian Belt
+														["itemID"] = 20548,	-- Pattern: Runed Stygian Belt
+													},
+													{	-- Pattern: Runed Stygian Leggings
+														["itemID"] = 20546,	-- Pattern: Runed Stygian Leggings
+													},
+													{	-- Plans: Darkrune Breastplate
+														["itemID"] = 20554,	-- Plans: Darkrune Breastplate
+													},
+													{	-- Plans: Darkrune Gauntlets
+														["itemID"] = 20553,	-- Plans: Darkrune Gauntlets
+													},
+													{	-- Plans: Darkrune Helm
+														["itemID"] = 20555,	-- Plans: Darkrune Helm
+													},
+												},
+											},
+										},
+									},
+								},
+							},
+							{	-- True Believers
+								["questID"] = 8323,	-- True Believers
+								["qg"] = 15194,		-- Hermit Ortell
+								["coords"] = {
+									{ 68.66, 63.03, 81 },
+								},
+								["sourceQuests"] = {
+									8279,	-- The Twilight Lexicon
+								},
+							},
+						},
 					},
 					{	-- Glyph Chasing
 						["questID"] = 8309,
@@ -242,7 +311,7 @@ _.Zones =
 						["questID"] = 8306,
 						["coord"] = { 53.2, 32.5, 81 },
 						["sourceQuest"] = 8304,	-- Dearest Natalia
-						["groups"] = {
+						["g"] = {
 							i(20724),	-- Corrupted Blackwood Staff
 						},
 					},
@@ -284,11 +353,6 @@ _.Zones =
 						["coord"] = { 54.5, 32.9, 81 },
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Secret Communication
-						["questID"] = 8318,
-						["qg"] = 15306,	-- Bor Wildmane
-						["coord"] = { 53.1, 35.1, 81 },
-					},
 					{	-- Securing the Supply Lines
 						["questID"] = 8280,
 						["qg"] = 15191,	-- Windcaller Proudhorn
@@ -303,7 +367,7 @@ _.Zones =
 					{	-- Sandy Cookbook
 						["objectID"] = 180503,
 						["coord"] = { 43.6, 42.0, 81 },
-						["groups"] = {
+						["g"] = {
 							{	-- Sharing the Knowledge
 								["questID"] = 8313,
 								["sourceQuest"] = 8307,	-- Desert Recipe
@@ -315,7 +379,7 @@ _.Zones =
 						["questID"] = 8352,
 						["u"] = 40,
 						["qg"] = 15306,	-- Bor Wildmane
-						["groups"] = {
+						["g"] = {
 							un(2, i(20602, { 	-- Chest of Spoils
 								un(7, i(20722)), 	-- Crystal Slugthrower
 								un(7, i(20720)), 	-- Dark Whisper Blade
@@ -327,23 +391,23 @@ _.Zones =
 						["questID"] = 8857,
 						["u"] = 40,
 						["qg"] = 15798,	-- Colossus Researcher Nestor
-						["groups"] = {
+						["g"] = {
 							un(2, i(21528)), 	-- Colossal Bag of Loot
 						},
 					},
 					{	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
-						["questID"] = 8858, 
+						["questID"] = 8858,
 						["u"] = 40,
 						["qg"] = 15799,	-- Colossus Researcher Eazel
-						["groups"] = {
+						["g"] = {
 							un(2, i(21528)), 	-- Colossal Bag of Loot
 						},
 					},
 					{	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
-						["questID"] = 8859, 
+						["questID"] = 8859,
 						["u"] = 40,
 						["qg"] = 15797,	-- Colossus Researcher Sophia
-						["groups"] = {
+						["g"] = {
 							un(2, i(21528)), 	-- Colossal Bag of Loot
 						},
 					},
@@ -351,7 +415,7 @@ _.Zones =
 						["questID"] = 8348,
 						["u"] = 40,
 						["qg"] = 15306,	-- Bor Wildmane
-						["groups"] = {
+						["g"] = {
 							un(2, i(20601, { 	-- Sack of Spoils
 								un(7, i(20696)), 	-- Crystal Spiked Maul
 							})),
@@ -361,7 +425,7 @@ _.Zones =
 						["questID"] = 8574,
 						["u"] = 40,
 						["qg"] = 15176,	-- Vargus
-						["groups"] = {
+						["g"] = {
 							un(2, i(21184)),	-- Deeprock Bracers
 							un(2, i(21185)),	-- Earthcalm Orb
 							un(2, i(21189)),	-- Might of Cenarius
@@ -373,24 +437,6 @@ _.Zones =
 						["qg"] = 15191,	-- Windcaller Proudhorn
 						["coord"] = { 54.8, 36.0, 81 },
 						["sourceQuest"] = 8280,	-- Securing the Suppy Lines
-					},
-					{	-- Still Believing
-						["questID"] = 8324,
-						["qg"] = 15194,	-- Hermit Ortell
-						["coord"] = { 68.6, 63.0, 81 },
-						["repeatable"] = true,
-						["sourceQuest"] = 8323,	-- True Believers
-						["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.|r", 
-						["groups"] = {
-							i(20469, {	-- Decoded True Believer Clippings
-								i(20547), 	-- Pattern: Runed Stygian Boots
-								i(20548), 	-- Pattern: Runed Stygian Belt
-								i(20546), 	-- Pattern: Runed Stygian Leggings
-								i(20554), 	-- Plans: Darkrune Breastplate
-								i(20553), 	-- Plans: Darkrune Gauntlets
-								i(20555), 	-- Plans: Darkrune Helm
-							}),
-						},
 					},
 					{	-- The Calling
 						["questID"] = 8315,
@@ -409,7 +455,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 15180,	-- Baristolth of the Shifting Sands
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(20403)),	-- 	Proxy of Nozdormu
 						},
 					},
@@ -417,7 +463,7 @@ _.Zones =
 						["questID"] = 8301,
 						["u"] = 40,
 						["qg"] = 15180,	-- Baristolth of the Shifting Sands
-						["groups"] = {
+						["g"] = {
 							un(2, i(20402)),	-- 	Agent of Nozdormu
 						},
 					},
@@ -425,7 +471,7 @@ _.Zones =
 						["questID"] = 9023,
 						["u"] = 40,
 						["qg"] = 16091,	-- Dirk Thunderwood
-						["groups"] = {
+						["g"] = {
 							un(2, i(22348)),	-- Doomulus Prime
 							un(2, i(22347)),	-- Fahrad's Reloading Repeater
 							un(2, i(22378)),	-- Ravenholdt Slicer
@@ -446,12 +492,6 @@ _.Zones =
 						["coord"] = { 53.6, 35.3, 81 },
 						["sourceQuest"] = 8321,	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
 					},
-					{	-- True Believers
-						["questID"] = 8323,
-						["qg"] = 15194,	-- Hermit Ortell
-						["coord"] = { 68.6, 63.0, 81 },
-						["sourceQuest"] = 8279,	-- The Twilight Lexicon
-					},
 					{	-- Twilight Geolords
 						["questID"] = 8320,
 						["qg"] = 15270,	-- Huum Wildmane
@@ -470,7 +510,7 @@ _.Zones =
 						["questID"] = 8572,
 						["u"] = 40,
 						["qg"] = 15176,	-- Vargus
-						["groups"] = {
+						["g"] = {
 							un(2, i(21182)),	-- Band of Earthen Might
 							un(2, i(21183)),	-- Earthpower Vest
 							un(2, i(21181)),	-- Grace of Earth
@@ -480,7 +520,7 @@ _.Zones =
 						["questID"] = 8548,
 						["u"] = 40,
 						["qg"] = 15176,	-- Vargus
-						["groups"] = {
+						["g"] = {
 							un(2, i(21179)),	-- Band of Earthen Wrath
 							un(2, i(21187)),	-- Earthweave Cloak
 							un(2, i(21178)),	-- Gloves of Earthen Power
@@ -491,7 +531,7 @@ _.Zones =
 						["qg"] = 15270,	-- Huum Wildmane
 						["coord"] = { 53.2, 35.1, 81 },
 						["sourceQuest"] = 8320,	-- Twilight Geolords
-						["groups"] = {
+						["g"] = {
 							i(20650),	-- Desert Wind Gauntlets
 							i(20649),	-- Sunprism Pendant
 						},
@@ -499,10 +539,10 @@ _.Zones =
 					{	-- Wanted Poster: Deathclasp
 						["objectID"] = 180448,
 						["coord"] = { 55.0, 35.9, 81 },
-						["groups"] = {
+						["g"] = {
 							{  -- Wanted - Deathclasp, Terror of the Sands
 								["questID"] = 8283,
-								["groups"] = {
+								["g"] = {
 									i(20646),	-- Sandstrider's Mark
 									i(20647),	-- Black Crystal Dagger
 								},
@@ -517,12 +557,12 @@ _.Zones =
 					}),
 					{	-- Dormant Wind Kissed Blade
 						["itemID"] = 19018,
-						["groups"] = {
+						["g"] = {
 							ql({	-- Rise, Thunderfury!
 								["questID"] = 7787,
 								["qg"] = 14435,	-- Prince Thunderaan
 								["classes"] = { 2, 3, 4, 6, 8, 10, 12 },	-- Paladin, Hunter, Rogue, DK, Mage, Monk, DH
-								["groups"] = {
+								["g"] = {
 									i(19019),	-- Thunderfury, Blessed Blade of the Windseeker (LEGENDARY!)
 								},
 							}),
