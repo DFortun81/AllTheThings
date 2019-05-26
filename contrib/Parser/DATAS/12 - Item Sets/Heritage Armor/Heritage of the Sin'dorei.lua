@@ -22,6 +22,7 @@ _.GearSets =
 				["races"] = {
 					10,	-- Blood Elves
 				},
+				["lvl"] = 120,
 				["g"] = {
 					{	-- The Pride of the Sin'dorei [1]
 						["questID"] = 53791,	-- The Pride of the Sin'dorei
