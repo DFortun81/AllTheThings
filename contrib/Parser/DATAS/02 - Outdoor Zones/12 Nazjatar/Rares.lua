@@ -45,6 +45,12 @@ _.Zones =
 					},
 				}),
 				n(152712, {	-- Blindlight
+					["allianceQuestID"] = 56269,
+					["hordeQuestID"] = 56614,
+					["coords"] = {
+						{ 39.8, 77.2, 1355 },	-- cave entrance
+						{ 37.4, 82.6, 1355 },	-- mob
+					},
 					["isDaily"] = true,
 					["g"] = {
 						i(169372),	-- Necrofin Tadpole
