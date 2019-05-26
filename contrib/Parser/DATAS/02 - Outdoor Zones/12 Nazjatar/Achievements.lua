@@ -44,6 +44,11 @@ _.Zones =
 						["coord"] = { 58.2, 22.0, 1355 },
 						["description"] = "In an underwater cave.",
 					},
+					{	-- Figurine 9
+						["questID"] = 56987,
+						["coord"] = { 40.1, 86.5, 1355 },
+						["description"] = "At the back of an underwater cave filled with |cFFFFD700Murkbloom Reefwalkers|r.",
+					},
 					-- these ones are still not found:
 					{	-- Figurine 3
 						["questID"] = 56992,
@@ -59,9 +64,6 @@ _.Zones =
 					},
 					{	-- Figurine 8
 						["questID"] = 56989,
-					},
-					{	-- Figurine 9
-						["questID"] = 56987,
 					},
 					{	-- Figurine 10
 						["questID"] = 56985,
