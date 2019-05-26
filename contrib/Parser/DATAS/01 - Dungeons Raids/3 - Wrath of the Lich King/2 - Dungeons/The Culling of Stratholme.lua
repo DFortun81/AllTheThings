@@ -32,6 +32,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				i(37115, {	-- Crusader's Square Pauldrons
 					["crs"] = {
 						27731,	-- Acolyte	
+						28201,	-- Bile Golem	
 						27734,	-- Crypt Fiend	
 						28200,	-- Dark Necromancer	
 						28249,	-- Devouring Ghoul	
@@ -51,8 +52,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				i(37116, {	-- Epaulets of Market Row
 					["crs"] = {
+						27731,	-- Acolyte	
 						28201,	-- Bile Golem	
 						27734,	-- Crypt Fiend	
+						28200,	-- Dark Necromancer	
 						28249,	-- Devouring Ghoul	
 						27729,	-- Enraging Ghoul	
 						27742,	-- Infinite Adversary	

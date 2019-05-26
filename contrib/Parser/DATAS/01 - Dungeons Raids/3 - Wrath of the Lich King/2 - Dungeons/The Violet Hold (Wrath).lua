@@ -19,9 +19,42 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				n(0, {	-- Zone Drop
-					i(35654),	-- Bindings of the Bastille
-					i(35653),	-- Girdle of the Mystical Prison
-					i(35652),	-- Incessant Torch
+					i(35654, {	-- Bindings of the Bastille
+						["crs"] = {
+							30666,	-- Azure Captain
+							30668,	-- Azure Raider
+							30667,	-- Azure Sorceror
+							32191,	-- Azure Stalker
+							30892,	-- Portal Guardian
+							30660,	-- Portal Guardian
+							30695,	-- Portal Keeper
+							30893,	-- Portal Keeper
+						},
+					}),
+					i(35653, {	-- Girdle of the Mystical Prison
+						["crs"] = {
+							30666,	-- Azure Captain
+							30668,	-- Azure Raider
+							30667,	-- Azure Sorceror
+							32191,	-- Azure Stalker
+							30892,	-- Portal Guardian
+							30660,	-- Portal Guardian
+							30695,	-- Portal Keeper
+							30893,	-- Portal Keeper
+						},
+					}),
+					i(35652, {	-- Incessant Torch
+						["crs"] = {
+							30666,	-- Azure Captain
+							30668,	-- Azure Raider
+							30667,	-- Azure Sorceror
+							32191,	-- Azure Stalker
+							30892,	-- Portal Guardian
+							30660,	-- Portal Guardian
+							30695,	-- Portal Keeper
+							30893,	-- Portal Keeper
+						},
+					}),
 				}),
 				cr(29315, e(626, {	-- Erekem
 					i(43407),	-- Stormstrike Mace
@@ -94,10 +127,54 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["groups"] = {
 					n(0, {	-- Zone Drop
-						i(35654),	-- Bindings of the Bastille
-						i(37891),	-- Cast Iron Shackles
-						i(37890),	-- Chain Gang Legguards
-						i(35653),	-- Girdle of the Mystical Prison
+						i(35654, {	-- Bindings of the Bastille
+							["crs"] = {
+								30666,	-- Azure Captain
+								30668,	-- Azure Raider
+								30667,	-- Azure Sorceror
+								32191,	-- Azure Stalker
+								30892,	-- Portal Guardian
+								30660,	-- Portal Guardian
+								30695,	-- Portal Keeper
+								30893,	-- Portal Keeper
+							},
+						}),
+						i(37891, {	-- Cast Iron Shackles
+							["crs"] = {
+								30666,	-- Azure Captain
+								30668,	-- Azure Raider
+								30667,	-- Azure Sorceror
+								32191,	-- Azure Stalker
+								30892,	-- Portal Guardian
+								30660,	-- Portal Guardian
+								30695,	-- Portal Keeper
+								30893,	-- Portal Keeper
+							},
+						}),
+						i(37890, {	-- Chain Gang Legguards
+							["crs"] = {
+								30666,	-- Azure Captain
+								30668,	-- Azure Raider
+								30667,	-- Azure Sorceror
+								32191,	-- Azure Stalker
+								30892,	-- Portal Guardian
+								30660,	-- Portal Guardian
+								30695,	-- Portal Keeper
+								30893,	-- Portal Keeper
+							},
+						}),
+						i(35653, {	-- Girdle of the Mystical Prison
+							["crs"] = {
+								30666,	-- Azure Captain
+								30668,	-- Azure Raider
+								30667,	-- Azure Sorceror
+								32191,	-- Azure Stalker
+								30892,	-- Portal Guardian
+								30660,	-- Portal Guardian
+								30695,	-- Portal Keeper
+								30893,	-- Portal Keeper
+							},
+						}),
 						i(35652, {	-- Incessant Torch
 							["crs"] = {
 								30666,	-- Azure Captain
