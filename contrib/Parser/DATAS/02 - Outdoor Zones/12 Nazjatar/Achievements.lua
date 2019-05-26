@@ -28,6 +28,43 @@ _.Zones =
 					}),
 				})),
 				ach(13763),	-- Back to the Depths!
+				ach(13836, {	-- Feline Figurines Found
+					-- TODO:: For the sake recording IDs and coords, I'm putting them there but there should be a better way of listing these
+					{	-- Figurine 1
+						["questID"] = 56983,
+						["coord"] = { 28.8, 29.1, 1355 },
+					},
+					{	-- Figurine 2
+						["questID"] = 56988,
+						["coord"] = { 71.4, 23.7, 1355 },
+						["description"] = "Hidden behind a starfish.",
+					},
+					-- these ones are still not found:
+					{	-- Figurine 3
+						["questID"] = 56992,
+					},
+					{	-- Figurine 4
+						["questID"] = 56990,
+					},
+					{	-- Figurine 5
+						["questID"] = 56986,
+					},
+					{	-- Figurine 6
+						["questID"] = 56984,
+					},
+					{	-- Figurine 7
+						["questID"] = 56991,
+					},
+					{	-- Figurine 8
+						["questID"] = 56989,
+					},
+					{	-- Figurine 9
+						["questID"] = 56987,
+					},
+					{	-- Figurine 10
+						["questID"] = 56985,
+					},
+				}),
 				ach(13707),	-- Mrrl's Secret Stash
 				ach(13713),	-- Nothing to Scry About
 				--[[ confirmed spawn points for glimmering chests for "Nothing to Scry About"
