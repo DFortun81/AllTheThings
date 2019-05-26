@@ -250,6 +250,21 @@ _.Zones =
 						["qg"] = 10665,	-- Junior Apothecary Holland
 						["sourceQuests"] = { 24990 },	-- Darkhound Pounding
 					}),
+					{	-- Invader's Scourgestones [H]
+						["questID"] = 5403,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24977, {	-- Johaan's Experiment
 						["qg"] = 1518,	-- Apothecary Johaan
 						["sourceQuests"] = { 24976 },	-- Variety is the Spice of Death

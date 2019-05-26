@@ -568,6 +568,21 @@ _.Zones =
 								},
 							},
 						},
+						{	-- Invader's Scourgestones [A]
+							["questID"] = 5407,	-- Corruptor's Scourgestones
+							["qg"] = 10840,		-- Argent Officer Pureheart
+							["u"] = 2,			-- Removed in Patch 4.0.3
+							["coords"] = {
+								{ 42.96, 83.55, 22 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Argent Dawn Valor Token
+									["itemID"] = 12844,	-- Argent Dawn Valor Token
+									["u"] = 2,			-- Removed in Patch 4.0.3
+								},
+							},
+						},
 					}),
 				}),
 				n(-16, {	-- Rares
