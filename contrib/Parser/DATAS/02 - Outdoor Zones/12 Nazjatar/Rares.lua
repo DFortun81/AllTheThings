@@ -60,6 +60,8 @@ _.Zones =
 					},
 				}),
 				n(152464, {	-- Caverndark Terror
+					["allianceQuestID"] = 56283,
+					["hordeQuestID"] = 56600,
 					["isDaily"] = true,
 					["g"] = {
 						i(169356),	-- Caverndark Nightmare
