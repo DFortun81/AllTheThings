@@ -273,6 +273,21 @@ _.Zones =
 						["qg"] = 38978,	-- Apprentice Crispin
 						["sourceQuests"] = { 24997 },	-- Graverobbers
 					}),
+					{	-- Minion's Scourgestones [H]
+						["questID"] = 5402,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24995, {	-- Off the Scales
 						["qg"] = 38977,	-- Apothecary Jerrod
 						["sourceQuests"] = { 24994 },	-- Doom Weed
@@ -439,8 +454,8 @@ _.Zones =
 						dr(1, i(6543)),		-- Willow Bracers
 						dr(0.9, i(9763)),	-- Cadet Leggings
 						dr(0.9, i(6512)),	-- Disciple's Robe
-						un(7, i(4303)),	-- Cranial Thumper							
-					}), 
+						un(7, i(4303)),	-- Cranial Thumper
+					}),
 					o(240624, {	-- Faerie Dragon Nest
 						["g"] = {
 							i(122234)	-- Music Roll: Faerie Dragon
@@ -474,7 +489,7 @@ _.Zones =
 						dr(1.4, i(9747)),	-- Simple Britches
 						dr(1.4, i(9763)),	-- Cadet Leggings
 						dr(1.4, i(6336)),	-- Infantry Tunic
-					}), 
+					}),
 					n(50908, { 	-- Nighthowl
 						dr(19, i(68744)),	-- Imbued Pioneer Cloak
 						dr(11, i(68743)),	-- Imbued Infantry Cloak
@@ -484,7 +499,7 @@ _.Zones =
 						dr(1.3, i(6269)),	-- Pioneer Trousers
 						dr(0.9, i(68758)),	-- Imbued Pioneer Boots
 						dr(0.9, i(68751)),	-- Imbued Pioneer Bracers
-					}), 
+					}),
 					n(10357, { 	-- Ressan the Needler
 						dr(20, i(68744)),	-- Imbued Pioneer Cloak
 						dr(19, i(68743)),	-- Imbued Infantry Cloak
@@ -533,7 +548,7 @@ _.Zones =
 						dr(1.1, i(68762)),	-- Imbued Cadet Cloak
 						dr(1.1, i(68757)),	-- Imbued Pioneer Gloves
 						dr(0.9, i(9749)),	-- Simple Blouse
-					}), 
+					}),
 					n(1533, { 	-- Tormented Spirit
 						dr(8, i(68744)),	-- Imbued Pioneer Cloak
 						dr(7, i(68743)),	-- Imbued Infantry Cloak
@@ -544,15 +559,15 @@ _.Zones =
 						dr(0.9, i(68748)),	-- Imbued Disciple's Cloak
 					}),
 --[[
---					n(1531, {	-- Lost Soul	}), 
---					n(1910, {	-- Muad	}), 
---					n(1936, {	-- Farmer Solliden	}), 
---					n(10356, {	-- Bayne	}), 
---					n(50763, {	-- Shadowstalker	}), 
---					n(50803, {	-- Bonechewer	}), 
---					n(50930, {	-- Hibernus the Sleeper	}), 
---					n(51044, {	-- Plague	}),	
---]]								
+--					n(1531, {	-- Lost Soul	}),
+--					n(1910, {	-- Muad	}),
+--					n(1936, {	-- Farmer Solliden	}),
+--					n(10356, {	-- Bayne	}),
+--					n(50763, {	-- Shadowstalker	}),
+--					n(50803, {	-- Bonechewer	}),
+--					n(50930, {	-- Hibernus the Sleeper	}),
+--					n(51044, {	-- Plague	}),
+--]]
 				}),
 				n(-2, {	-- Vendors
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
@@ -637,11 +652,11 @@ _.Zones =
 						i(7728),	-- Beguiler Robes
 					},
 					["crs"] = {
-						4284,	-- Scarlet Augur		
-						4285,	-- Scarlet Disciple		
-						4282,	-- Scarlet Magician		
-						4280,	-- Scarlet Preserver		
-						4281,	-- Scarlet Scout		
+						4284,	-- Scarlet Augur
+						4285,	-- Scarlet Disciple
+						4282,	-- Scarlet Magician
+						4280,	-- Scarlet Preserver
+						4281,	-- Scarlet Scout
 						4283,	-- Scarlet Sentry
 					},
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
@@ -839,11 +854,11 @@ _.Zones =
 								}),
 							},
 						}),
-					},	
-					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",	
+					},
+					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
-			},				
+			},
 		}),
 	}),
 };

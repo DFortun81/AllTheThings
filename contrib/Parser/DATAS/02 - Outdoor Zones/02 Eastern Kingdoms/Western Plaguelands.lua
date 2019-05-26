@@ -183,7 +183,7 @@ _.Zones =
 									27167,	-- A Mighty Hunger
 									27166,	-- Go Fletch!
 								--	2 quests above may not be required, actually.
-								--	needs confirmation to see if they're required in addition to "Victory, For Now," or if they can be skipped for this.	
+								--	needs confirmation to see if they're required in addition to "Victory, For Now," or if they can be skipped for this.
 									26926,	-- Victory, For Now
 								},
 							}),
@@ -192,7 +192,7 @@ _.Zones =
 								["coord"] = { 52.0, 82.9, 22 },
 								["qg"] = 1854,	-- High Priest Thel'danis
 							}),
-							o(205258, {	-- Broken Weapons Crate	
+							o(205258, {	-- Broken Weapons Crate
 								qa(27171, {	-- Ambushed!
 									["groups"] = {
 										i(62167),	-- Cloak of the Unrestful
@@ -236,7 +236,6 @@ _.Zones =
 								},
 								["sourceQuests"] = { 26937 },	-- When Death is Not Enough
 							}),
-
 						}),
 						crit(3, {	-- The Second Battle for Andorhal
 							qa(27197, {	-- The Battle Resumes!
@@ -442,7 +441,7 @@ _.Zones =
 									i(131635),	-- Plague-Free Disciple Belt
 								},
 								["sourceQuests"] = { 27054 },	-- Desperate Acts
-							}),	
+							}),
 							q(26953, {	-- Zen'Kiki, the Druid
 								["qg"] = 44456,	-- Adrine Towhide
 							}),
@@ -499,7 +498,7 @@ _.Zones =
 								["sourceQuests"] = { 27156 },	-- It's About Time!
 							}),
 							q(26957, {	-- The Long Trip Home
-								["qg"] = 44905,	-- 
+								["qg"] = 44905,	--
 							}),
 							q(27017, {	-- Memories from a Lost Past
 								["groups"] = {
@@ -513,9 +512,7 @@ _.Zones =
 								["qg"] = 44458,	-- Del Gahrron
 								["sourceQuests"] = { 26957 },	-- The Long Trip Home
 							}),
-
 						}),
-
 -- CLASS HALL QUESTS
 						q(43153, {	-- An Eye for a Scepter
 							["sourceQuests"] = { 43100 },	-- Finding the Scepter
@@ -528,31 +525,31 @@ _.Zones =
 							["lvl"] = 98,
 							["qg"] = 108776,	-- Lord Maxwell Tyrosus
 							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
+	--						["sourceQuests"] = {  },	--
 						})),
 						qart(q(42771, {	-- Keeping the Peace
 							["qg"] = 108778,	-- Mehlar Dawnblade
 							["lvl"] = 98,
 							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
+	--						["sourceQuests"] = {  },	--
 						})),
 						qart(q(42772, {	-- Sacred Ground
 							["qg"] = 108777,	-- High Priest Thel'danis
 							["lvl"] = 98,
 							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
+	--						["sourceQuests"] = {  },	--
 						})),
 						qart(q(42770, {	-- Seeking Guidance
 							["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
 							["lvl"] = 98,
 							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
+	--						["sourceQuests"] = {  },	--
 						})),
 						qart(q(42773, {	-- The Light Reveals
 							["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
 							["lvl"] = 98,
 							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	-- 
+	--						["sourceQuests"] = {  },	--
 						})),
 						{	-- Corrupter's Scourgestones
 							["questID"] = 5408,	-- Corruptor's Scourgestones
@@ -570,6 +567,21 @@ _.Zones =
 						},
 						{	-- Invader's Scourgestones [A]
 							["questID"] = 5407,	-- Corruptor's Scourgestones
+							["qg"] = 10840,		-- Argent Officer Pureheart
+							["u"] = 2,			-- Removed in Patch 4.0.3
+							["coords"] = {
+								{ 42.96, 83.55, 22 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								{	-- Argent Dawn Valor Token
+									["itemID"] = 12844,	-- Argent Dawn Valor Token
+									["u"] = 2,			-- Removed in Patch 4.0.3
+								},
+							},
+						},
+						{	-- Minion's Scourgestones [A]
+							["questID"] = 5408,	-- Corruptor's Scourgestones
 							["qg"] = 10840,		-- Argent Officer Pureheart
 							["u"] = 2,			-- Removed in Patch 4.0.3
 							["coords"] = {
@@ -613,7 +625,7 @@ _.Zones =
 						dr(01.0, i(7368)),	-- Elder's Pants
 						dr(01.0, i(7417)),	-- Phalanx Boots
 						dr(01.0, i(9865)),	-- Renegade Bracers
-					}), 
+					}),
 					n(51058, { 	-- Aphis
 						dr(12.0, i(9875)),	-- Sorcerer Sash
 						dr(07.0, i(9886)),	-- Huntsman's Bands
@@ -626,8 +638,8 @@ _.Zones =
 						dr(02.0, i(7455)),	-- Knight's Legguards
 						dr(02.0, i(7431)),	-- Twilight Pants
 						dr(01.3, i(9896)),	-- Jazeraint Bracers
-						dr(01.3, i(7454)),	-- Knight's Breastplate					
-					}), 
+						dr(01.3, i(7454)),	-- Knight's Breastplate
+					}),
 					n(1849, { 	-- Dreadwhisper
 						dr(09.0, i(7457)),	-- Knight's Gauntlets
 						dr(04.0, i(9890)),	-- Huntsman's Cape
@@ -664,8 +676,8 @@ _.Zones =
 						dr(01.4, i(7455)),	-- Knight's Legguards
 						dr(01.4, i(7431)),	-- Twilight Pants
 						dr(01.3, i(7492)),	-- Captain's Cloak
-						dr(01.0, i(9880)),	-- Sorcerer Gloves					
-					}), 
+						dr(01.0, i(9880)),	-- Sorcerer Gloves
+					}),
 					n(1847, { 	-- Foulmane
 						dr(03.0, i(9856)),	-- Archer's Boots
 						dr(03.0, i(9859)),	-- Archer's Cap
@@ -703,8 +715,8 @@ _.Zones =
 						dr(01.1, i(9877)),	-- Sorcerer Cloak
 						dr(01.1, i(7434)),	-- Twilight Boots
 						dr(01.1, i(7433)),	-- Twilight Gloves
-						dr(01.0, i(9854)),	-- Archer's Jerkin					
-					}), 
+						dr(01.0, i(9854)),	-- Archer's Jerkin
+					}),
 					n(50937, { 	-- Hamhide
 						dr(07.0, i(9890)),	-- Huntsman's Cape
 						dr(06.0, i(7444)),	-- Sentinel Boots
@@ -727,8 +739,8 @@ _.Zones =
 						dr(01.0, i(9848)),	-- Conjurer's Gloves
 						dr(01.0, i(9891)),	-- Huntsman's Belt
 						dr(01.0, i(9866)),	-- Renegade Chestguard
-						dr(01.0, i(7431)),	-- Twilight Pants					
-					}), 
+						dr(01.0, i(7431)),	-- Twilight Pants
+					}),
 					n(50809, { 	-- Heress
 						dr(06.0, i(9875)),	-- Sorcerer Sash
 						dr(05.0, i(7492)),	-- Captain's Cloak
@@ -746,8 +758,8 @@ _.Zones =
 						dr(01.7, i(7441)),	-- Sentinel Cap
 						dr(01.5, i(9844)),	-- Conjurer's Vest
 						dr(01.3, i(7432)),	-- Twilight Cowl
-						dr(01.1, i(9877)),	-- Sorcerer Cloak					
-					}), 
+						dr(01.1, i(9877)),	-- Sorcerer Cloak
+					}),
 					n(50778, { 	-- Ironweb
 						dr(05.0, i(9863)),	-- Archer's Shoulderpads
 						dr(04.0, i(7454)),	-- Knight's Breastplate
@@ -772,8 +784,8 @@ _.Zones =
 						dr(01.3, i(7446)),	-- Sentinel Cloak
 						dr(01.0, i(9848)),	-- Conjurer's Gloves
 						dr(01.0, i(9890)),	-- Huntsman's Cape
-						dr(01.0, i(9877)),	-- Sorcerer Cloak					
-					}), 
+						dr(01.0, i(9877)),	-- Sorcerer Cloak
+					}),
 					n(1848, { 	-- Lord Maldazzar
 						dr(04.0, i(9287)),	-- Field Plate Gauntlets
 						dr(03.0, i(7456)),	-- Knight's Headguard
@@ -817,8 +829,8 @@ _.Zones =
 						dr(01.1, i(7447)),	-- Sentinel Bracers
 						dr(01.0, i(9856)),	-- Archer's Boots
 						dr(01.0, i(9848)),	-- Conjurer's Gloves
-						dr(01.0, i(7431)),	-- Twilight Pants					
-					}), 
+						dr(01.0, i(7431)),	-- Twilight Pants
+					}),
 					n(50931, { 	-- Mange
 						dr(15.0, i(7418)),	-- Phalanx Breastplate
 						dr(12.0, i(9870)),	-- Renegade Circlet
@@ -838,8 +850,8 @@ _.Zones =
 						dr(01.2, i(9864)),	-- Renegade Boots
 						dr(01.0, i(9855)),	-- Archer's Belt
 						dr(01.0, i(7414)),	-- Infiltrator Pants
-						dr(01.0, i(7435)),	-- Twilight Mantle					
-					}), 
+						dr(01.0, i(7435)),	-- Twilight Mantle
+					}),
 					n(50906, { 	-- Mutilax
 						dr(05.0, i(7458)),	-- Knight's Boots
 						dr(04.0, i(9877)),	-- Sorcerer Cloak
@@ -861,8 +873,8 @@ _.Zones =
 						dr(01.7, i(9862)),	-- Archer's Trousers
 						dr(01.7, i(9886)),	-- Huntsman's Bands
 						dr(01.2, i(9852)),	-- Conjurer's Robe
-						dr(01.0, i(9863)),	-- Archer's Shoulderpads					
-					}), 
+						dr(01.0, i(9863)),	-- Archer's Shoulderpads
+					}),
 					n(51029, { 	-- Parasitus
 						dr(08.0, i(9866)),	-- Renegade Chestguard
 						dr(04.0, i(9852)),	-- Conjurer's Robe
@@ -880,8 +892,8 @@ _.Zones =
 						dr(01.6, i(7444)),	-- Sentinel Boots
 						dr(01.3, i(7476)),	-- Regal Sash
 						dr(01.3, i(7435)),	-- Twilight Mantle
-						dr(01.1, i(7494)),	-- Captain's Waistguard					
-					}), 
+						dr(01.1, i(7494)),	-- Captain's Waistguard
+					}),
 					n(1850, { 	-- Putridius
 						dr(09.0, i(7494)),	-- Captain's Waistguard
 						dr(04.0, i(7476)),	-- Regal Sash
@@ -910,8 +922,8 @@ _.Zones =
 						dr(01.6, i(7473)),	-- Regal Mantle
 						dr(01.5, i(7492)),	-- Captain's Cloak
 						dr(01.5, i(7431)),	-- Twilight Pants
-						dr(01.1, i(7484)),	-- Ranger Wristguards					
-					}), 
+						dr(01.1, i(7484)),	-- Ranger Wristguards
+					}),
 					n(1841, { 	-- Scarlet Executioner
 						dr(05.0, i(7462)),	-- Knight's Girdle
 						dr(04.0, i(9863)),	-- Archer's Shoulderpads
@@ -955,8 +967,8 @@ _.Zones =
 						dr(01.1, i(7441)),	-- Sentinel Cap
 						dr(01.0, i(9852)),	-- Conjurer's Robe
 						dr(01.0, i(7445)),	-- Sentinel Shoulders
-						dr(01.0, i(9879)),	-- Sorcerer Bracelets					
-					}), 
+						dr(01.0, i(9879)),	-- Sorcerer Bracelets
+					}),
 					n(1839, { 	-- Scarlet High Clerist
 						dr(04.0, i(9856)),	-- Archer's Boots
 						dr(04.0, i(7446)),	-- Sentinel Cloak
@@ -997,8 +1009,8 @@ _.Zones =
 						dr(01.1, i(9852)),	-- Conjurer's Robe
 						dr(01.1, i(9898)),	-- Jazeraint Cloak
 						dr(01.1, i(7457)),	-- Knight's Gauntlets
-						dr(01.1, i(7444)),	-- Sentinel Boots					
-					}), 
+						dr(01.1, i(7444)),	-- Sentinel Boots
+					}),
 					n(1838, { 	-- Scarlet Interrogator
 						dr(04.0, i(9871)),	-- Renegade Leggings
 						dr(04.0, i(7441)),	-- Sentinel Cap
@@ -1045,8 +1057,8 @@ _.Zones =
 						dr(01.2, i(7437)),	-- Twilight Cuffs
 						dr(01.1, i(9886)),	-- Huntsman's Bands
 						dr(01.1, i(9898)),	-- Jazeraint Cloak
-						dr(01.0, i(9848)),	-- Conjurer's Gloves					
-					}), 
+						dr(01.0, i(9848)),	-- Conjurer's Gloves
+					}),
 					n(1837, { 	-- Scarlet Judge
 						dr(05.0, i(9854)),	-- Archer's Jerkin
 						dr(05.0, i(7456)),	-- Knight's Headguard
@@ -1083,8 +1095,8 @@ _.Zones =
 						dr(01.2, i(9891)),	-- Huntsman's Belt
 						dr(01.2, i(7431)),	-- Twilight Pants
 						dr(01.1, i(9896)),	-- Jazeraint Bracers
-						dr(01.0, i(9879)),	-- Sorcerer Bracelets					
-					}), 
+						dr(01.0, i(9879)),	-- Sorcerer Bracelets
+					}),
 					n(1885, { 	-- Scarlet Smith
 						{	-- Plans: Runic Plate Leggings
 							["itemID"] = 12719,	-- Plans: Runic Plate Leggings
@@ -1131,8 +1143,8 @@ _.Zones =
 						dr(01.0, i(9891)),	-- Huntsman's Belt
 						dr(01.0, i(7454)),	-- Knight's Breastplate
 						dr(01.0, i(7441)),	-- Sentinel Cap
-						dr(01.0, i(7435)),	-- Twilight Mantle					
-					}), 
+						dr(01.0, i(7435)),	-- Twilight Mantle
+					}),
 					n(1851, { 	-- The Husk
 						dr(12.0, i(7437)),	-- Twilight Cuffs
 						dr(05.0, i(9868)),	-- Renegade Gauntlets
@@ -1168,8 +1180,8 @@ _.Zones =
 						dr(01.2, i(7423)),	-- Phalanx Leggings
 						dr(01.2, i(9864)),	-- Renegade Boots
 						dr(01.0, i(9859)),	-- Archer's Cap
-						dr(01.0, i(9849)),	-- Conjurer's Hood				
-					}), 
+						dr(01.0, i(9849)),	-- Conjurer's Hood
+					}),
 					n(51031, { 	-- Tracker
 						dr(14.0, i(9862)),	-- Archer's Trousers
 						dr(14.0, i(7418)),	-- Phalanx Breastplate
@@ -1187,8 +1199,8 @@ _.Zones =
 						dr(01.4, i(7436)),	-- Twilight Cape
 						dr(01.3, i(7437)),	-- Twilight Cuffs
 						dr(01.1, i(9871)),	-- Renegade Leggings
-						dr(01.1, i(9879)),	-- Sorcerer Bracelets					
-					}), 
+						dr(01.1, i(9879)),	-- Sorcerer Bracelets
+					}),
 					n(50922, { 	-- Warg
 						dr(14.0, i(7448)),	-- Sentinel Girdle
 						dr(05.0, i(7461)),	-- Knight's Bracers
@@ -1206,8 +1218,8 @@ _.Zones =
 						dr(01.4, i(9845)),	-- Conjurer's Shoes
 						dr(01.4, i(9869)),	-- Renegade Belt
 						dr(01.2, i(7418)),	-- Phalanx Breastplate
-						dr(01.1, i(7446)),	-- Sentinel Cloak					
-					}), 
+						dr(01.1, i(7446)),	-- Sentinel Cloak
+					}),
 --					n(111122, {	-- Large Vile Slime	}),
 				}),
 				n(-2,  {	-- Vendors
@@ -1305,9 +1317,9 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 35,	
+			["lvl"] = 35,
 			["achievementID"] = 770,
-			["description"] = "|cff66ccffWestern Plaguelands is starting to mend thanks to the efforts of the Cenarion Circle, but other parts are torn apart by war, such as Andorhal. After the fall of the Scarlet Crusade and victory in Northrend, Hearthglen was reclaimed by Tirion Fordring and now serves as a major friendly quest hub (in contrast to the pre-Cataclysm elites). The Battle for Andorhal questline also features reappearances of Thassarian and Koltira Deathweaver, two favorite deathknights who wanted to remain friends after their experiences at Acherus instead of picking a side to fight on.|r",				
+			["description"] = "|cff66ccffWestern Plaguelands is starting to mend thanks to the efforts of the Cenarion Circle, but other parts are torn apart by war, such as Andorhal. After the fall of the Scarlet Crusade and victory in Northrend, Hearthglen was reclaimed by Tirion Fordring and now serves as a major friendly quest hub (in contrast to the pre-Cataclysm elites). The Battle for Andorhal questline also features reappearances of Thassarian and Koltira Deathweaver, two favorite deathknights who wanted to remain friends after their experiences at Acherus instead of picking a side to fight on.|r",
 		}),
 	}),
 };

@@ -167,7 +167,7 @@ _.Zones =
 								["qg"] = 11036,	-- Leonid Barthalomew the Revered
 							}),
 							q(27460, {	-- Soft Landing
-								["qg"] = 16116,	-- 
+								["qg"] = 16116,	--
 								["sourceQuests"] = {27459},
 							}),
 							o(205875, {	-- Crusader's Flare
@@ -484,7 +484,7 @@ _.Zones =
 							q(27467, {	-- Buried Blades
 								["groups"] = {
 									i(62984),	-- Omarion's Gift
-									i(62983),	-- Cowl of the Noxious Glade		
+									i(62983),	-- Cowl of the Noxious Glade
 									i(62982),	-- Light-Touched Pendant
 								},
 								["qg"] = 16365,	-- Master Craftsman Omarion
@@ -608,7 +608,7 @@ _.Zones =
 									i(63015),
 								},
 								["qg"] = 45831,	-- Crusader Kevin Frost
-								["sourceQuests"] = {27528,27529,27539}, 
+								["sourceQuests"] = {27528,27529,27539},
 							}),
 							q(27535, {	-- Just a Little Touched
 								["qg"] = 45828,	-- Argent Apotehcary Judkins
@@ -664,7 +664,6 @@ _.Zones =
 					22	Stratholme
 					23	Ruins of the Scarlet Enclave
 					--]]
-
 					--[[
 					Fiona's Caravan Repeatable Quests (for a zone-wide buff)
 					qg(45400, q(27560)),	-- Argus' Journal
@@ -676,7 +675,6 @@ _.Zones =
 					qg(45400, q(27557)),	-- Tarenar's Talisman
 					qg(45400, q(27559)),	-- Vex'tul's Armbands
 					--]]
-
 					--[[
 					Class Hall Quests
 					qg(111616, q(43797, {	-- Aiding the Conclave (QG in Paladin order hall?)
@@ -694,7 +692,6 @@ _.Zones =
 					qg(90259, q(39696)),	-- Rise, Champions
 					qg(90259, q(42919)),	-- The Scion's Legacy
 					--]]
-
 --[[
 					qg(31084, qh(13189)),	-- Saurfang's Blessing
 					qg(31084, q(13166, {	-- The Battle For The Ebon Hold
@@ -719,6 +716,20 @@ _.Zones =
 					},
 					{	-- Invader's Scourgestones
 						["questID"] = 5509,	-- Corruptor's Scourgestones
+						["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 75.76, 53.81, 23 },
+						},
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
+					{	-- Minion's Scourgestones
+						["questID"] = 5510,	-- Corruptor's Scourgestones
 						["qg"] = 11039,		-- Duke Nicholas Zverenhoff
 						["u"] = 2,			-- Removed in Patch 4.0.3
 						["coords"] = {
@@ -1659,7 +1670,7 @@ _.Zones =
 							n(8550, {	-- Shadowmage <Cult of the Damned>
 								un(7, i(13499)),	-- Recipe: Greater Shadow Protection Potion
 							}),
-						}),					
+						}),
 					},
 				}),
 			},
