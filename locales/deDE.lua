@@ -17,13 +17,13 @@ L.SAVED_TO_DJ_INSTANCES["Eiskronenzitadelle"] = "Die Eiskronenzitadelle";
 L.SAVED_TO_DJ_INSTANCES["Rubinsanktum"] = "Das Rubinsanktum";
 L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
---[[
-["NPC_ID_NAMES"] = {
 
+local a = L.NPC_ID_NAMES;
+for key,value in pairs({
 	[-1] = "Gemeinsame Bossbeute",										-- Common Boss Drop
-	
-},
---]]
+})
+do a[key] = value; end
+
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
     [31] = "Alte Löwenstatue",
