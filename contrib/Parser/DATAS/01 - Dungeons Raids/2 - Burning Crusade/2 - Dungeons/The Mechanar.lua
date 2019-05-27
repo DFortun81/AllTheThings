@@ -5,8 +5,10 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(258, {	-- The Mechanar
 		["lvl"] = 65,
-		["mapID"] = 267,
-		["maps"] = { 268 },
+		["maps"] = { 
+			267,	-- The Mechanar
+			268,	-- Calculation Chamber
+		},
 		["coord"] = { 70.61, 69.75, 109 },	-- The Mechanar, Netherstorm
 		["groups"] = {
 			n(0, {	-- Zone Drops

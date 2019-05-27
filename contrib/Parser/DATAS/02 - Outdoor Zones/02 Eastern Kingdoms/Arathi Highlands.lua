@@ -1090,16 +1090,21 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drop
-					i(11166,       {	-- Formula: Enchant Gloves - Skinning
+					i(11166, {	-- Formula: Enchant Gloves - Skinning
 						["crs"] = {
 							2558,	-- Witherbark Berserker
 							2556,	-- Witherbark Headhunter
 							2557,	-- Witherbark Shadow Hunter
 						},
 					}),
-					i(1297,        {	-- Robes of the Shadowcaster
+					i(1297, {	-- Robes of the Shadowcaster
 						["crs"] = {
 							2553,	-- Witherbark Shadowcaster
+						},
+					}),
+					i(3345, {	-- Silk Wizard Hat
+						["crs"] = {
+							2591,	-- Syndicate Magus
 						},
 					}),
 					i(1993, {	-- Ogremind Ring

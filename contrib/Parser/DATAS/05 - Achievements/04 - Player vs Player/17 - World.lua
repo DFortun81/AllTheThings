@@ -23,7 +23,19 @@ _.Achievements =
 						crit(4),		-- Loot War Supply Chest
 					}),
 					ach(12571),		-- Bounty Hunting
-					a(ach(12605, {	-- Conqueror of Azeroth (Alliance)
+					ach(12605, 12604, {	-- Conqueror of Azeroth [A] / [H]
+						title(377),		-- , Conqueror of Azeroth [A] / [H]
+						crit(1),		-- Band of Brothers [A] / [H]
+						crit(2),		-- Bounty Hunting [A] / [H]
+						crit(3),		-- War Supplied [A] / [H]
+						crit(4),		-- Tour of Duty: Nazmir [A] / [H]
+						crit(5),		-- Tour of Duty: Vol'dun [A] / [H]
+						crit(6),		-- Tour of Duty: Drustvar [A] / [H]
+						crit(7),		-- Tour of Duty: Stormsong Valley [A] / [H]
+						crit(8),		-- Tour of Duty: Tiragarde Sound [A] / [H]
+						crit(9),		-- Tour of Duty: Zuldazar [A] / [H]
+					}),
+					--[[a(ach(12605, {	-- Conqueror of Azeroth (Alliance)
 						title(377),		-- , Conqueror of Azeroth
 						crit(1),		-- Band of Brothers
 						crit(2),		-- Bounty Hunting
@@ -46,7 +58,7 @@ _.Achievements =
 						crit(7),		-- Tour of Duty: Stormsong Valley
 						crit(8),		-- Tour of Duty: Tiragarde Sound
 						crit(9),		-- Tour of Duty: Zuldazar
-					})),
+					})),]]
 					ach(12863, {	-- Dueling Master
 						i(163055),		-- Dueler's Tabard
 						ach(12860),		-- Contender

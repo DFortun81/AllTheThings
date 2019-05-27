@@ -49,10 +49,13 @@ _.Instances = { tier(1, {	-- Classic
 								10422,  -- Risen Sorcerer
 							},
 						}),
-						i(18743),	-- Gracious Cape
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
-						i(18744),	-- Plaguebat Fur Gloves
+						i(18744,  {  -- Plaguebat Fur Gloves
+							["crs"] = {
+								10423,	-- Risen Priest
+							},
+						}),
 						i(18736),	-- Plaguehound Leggings
 						i(142337, {	-- Plans: Blight
 							["crs"] = {
@@ -94,7 +97,6 @@ _.Instances = { tier(1, {	-- Classic
 								10426,  -- Risen Inquisitor
 							},
 						}),
-						i(18742),	-- Stratholme Militia Shoulderguard
 					}),
 					n(10393, {			-- Skul
 						["description"] = "This is a rare that is not always present.",
@@ -303,10 +305,25 @@ _.Instances = { tier(1, {	-- Classic
 								10398,	-- Thuzadin Shadowcaster
 							},
 						}),
-						i(18743),	-- Gracious Cape
+						i(18743,  {  -- Gracious Cape
+							["crs"] = {
+								10413,	-- Crypt Beast
+								10412,	-- Crypt Crawler
+								10405,	-- Plague Ghoul
+								10463,	-- Shrieking Banshee
+								10390,	-- Skeletal Guardian
+								10399,	-- Thuzadin Acolyte
+							},
+						}),
 						i(17061),	-- Juno's Shadow
 						i(18741),	-- Morlune's Bracer
-						i(18744),	-- Plaguebat Fur Gloves
+						i(18744,  {  -- Plaguebat Fur Gloves
+							["crs"] = {
+								10381,	-- Ravaged Cadaver
+								10463,	-- Shrieking Banshee
+								10400,	-- Thuzadin Necromancer
+							},
+						}),
 						i(18736),	-- Plaguehound Leggings
 						i(142337, {	-- Plans: Blight
 							["crs"] = {
@@ -344,7 +361,14 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						i(18745),	-- Sacred Cloth Leggings
-						i(18742),	-- Stratholme Militia Shoulderguard
+						i(18742, {	-- Stratholme Militia Shoulderguard
+							["crs"] = {
+								10416,	-- Bile Spewer
+								10405,	-- Plague Ghoul
+								10408,	-- Rockwing Gargoyle
+								10464,	-- Wailing Banshee
+							},
+						}),
 					}),
 					n(10809, {			-- Stonespine
 						["description"] = "This is a rare that is not always present.",

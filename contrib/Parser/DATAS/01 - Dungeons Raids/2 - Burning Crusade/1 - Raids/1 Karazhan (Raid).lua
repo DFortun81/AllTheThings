@@ -7,8 +7,25 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
-		["mapID"] = 350,
-		["maps"] = { 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366 },
+		["maps"] = {
+			350,	-- Servant's Quarters
+			351,	-- Upper Livery Stables
+			352,	-- The Banquet Hall
+			353,	-- The Guest Chambers
+			354,	-- Opera Hall Balcony
+			355,	-- Master's Terrace
+			356,	-- Lower Broken Stair
+			357,	-- Upper Broken Stair
+			358,	-- The Menagerie
+			359,	-- Guardian's Library
+			360,	-- The Repository
+			361,	-- Upper Library
+			362,	-- The Celestial Watch
+			363,	-- Gamesman's Hall
+			364,	-- Medivh's Chambers
+			365,	-- The Power Station
+			366,	-- Netherspace
+		},
 		["coord"] = { 46.87, 74.69, 42 },	-- Karazhan, Deadwind Pass
 		["groups"] = {
 			ach(960),	-- The Violet Eye
@@ -324,6 +341,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28740),	-- Rip-Flayer Leggings
 					i(28741),	-- Skulker's Greaves
 					i(28730),	-- Mithril Band of the Unscarred
+					{	-- Netheriwng Egg
+						["itemID"] = 32506,	-- Netherwing Egg
+					},
 				},
 			}),
 			e(1562, {			-- Chess Event

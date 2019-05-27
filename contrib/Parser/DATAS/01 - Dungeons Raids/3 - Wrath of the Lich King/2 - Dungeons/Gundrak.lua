@@ -51,11 +51,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				n(0, {	-- Zone Drop
 					i(35593, {	-- Steel Bear Trap Bracers
 						["crs"] = {
+							29836,	-- Drakkari Battle Rider
 							29829,	-- Drakkari Earthshaker
 							29822,	-- Drakkari Fire Weaver
+							29820,	-- Drakkari God Hunter
 							29832,	-- Drakkari Golem
 							29874,	-- Drakkari Inciter
 							29819,	-- Drakkari Lancer
+							29826,	-- Drakkari Medicine Man
+							29838,	-- Drakkari Rhino
 							29931,	-- Drakkari Rhino
 							29830,	-- Living Mojo
 							29768,	-- Unyielding Constrictor
@@ -63,11 +67,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(35594, {	-- Snowmelt Silken Cinch
 						["crs"] = {
+							29836,	-- Drakkari Battle Rider
 							29829,	-- Drakkari Earthshaker
+							29822,	-- Drakkari Fire Weaver
 							29820,	-- Drakkari God Hunter
 							29832,	-- Drakkari Golem
+							29874,	-- Drakkari Inciter
 							29819,	-- Drakkari Lancer
 							29826,	-- Drakkari Medicine Man
+							29838,	-- Drakkari Rhino
 							29931,	-- Drakkari Rhino
 							29830,	-- Living Mojo
 							29768,	-- Unyielding Constrictor
@@ -156,6 +164,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								29820,	-- Drakkari God Hunter
 								29832,	-- Drakkari Golem
 								29874,	-- Drakkari Inciter
+								29819,	-- Drakkari Lancer
 								29826,	-- Drakkari Medicine Man
 								29838,	-- Drakkari Rhino
 								29931,	-- Drakkari Rhino
@@ -167,13 +176,19 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 						i(37648, {	-- Belt of Tasseled Lanterns
 							["crs"] = {
+								29836,	-- Drakkari Battle Rider
 								29829,	-- Drakkari Earthshaker
 								29822,	-- Drakkari Fire Weaver
 								29820,	-- Drakkari God Hunter
+								29832,	-- Drakkari Golem
+								29874,	-- Drakkari Inciter
+								29819,	-- Drakkari Lancer
 								29826,	-- Drakkari Medicine Man
+								29838,	-- Drakkari Rhino
 								29931,	-- Drakkari Rhino
 								29830,	-- Living Mojo
 								29920,	-- Ruins Dweller
+								29774,	-- Spitting Cobra
 								29768,	-- Unyielding Constrictor
 							},
 						}),

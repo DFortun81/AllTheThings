@@ -5,7 +5,10 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(249, { 	-- Magisters' Terrace
 		["lvl"] = 65,
-		["maps"] = { 348, 349 },
+		["maps"] = { 
+			348,	-- Grand Magister's Asylum
+			349,	-- Observation Grounds
+		},
 		["coord"] = { 61.23, 30.94, 122 },	-- Magister's Terrace, Isle of Quel'Danas
 		["groups"] = {
 			n(-17, {	-- Quests

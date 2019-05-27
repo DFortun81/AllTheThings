@@ -50,14 +50,12 @@ _.Zones =
 						n(23489, {	-- Drake Dealer Hurlunk
 							["coord"] = { 65.6, 86.0, 104 },
 							["groups"] = {
-								i(32506, {	-- Netherwing Egg
-									i(32858),	-- Reins of the Azure Netherwing Drake Mount
-									i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
-									i(32857),	-- Reins of the Onyx Netherwing Drake Mount
-									i(32860),	-- Reins of the Purple Netherwing Drake Mount
-									i(32861),	-- Reins of the Veridian Netherwing Drake Mount
-									i(32862),	-- Reins of the Violet Netherwing Drake Mount
-								}),
+								i(32858),	-- Reins of the Azure Netherwing Drake Mount
+								i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
+								i(32857),	-- Reins of the Onyx Netherwing Drake Mount
+								i(32860),	-- Reins of the Purple Netherwing Drake Mount
+								i(32861),	-- Reins of the Veridian Netherwing Drake Mount
+								i(32862),	-- Reins of the Violet Netherwing Drake Mount
 							},
 							["description"] = "To access this vendor, you must reach exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
 						}),

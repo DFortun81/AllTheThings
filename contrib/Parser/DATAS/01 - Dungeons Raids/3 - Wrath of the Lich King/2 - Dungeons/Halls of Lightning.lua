@@ -38,26 +38,36 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(36999, {	-- Boots of the Terrestrial Guardian
 						["crs"] = {
 							28583,	-- Blistering Steamrager
-							28579,	-- Hardened Steel Berserker
-							28578,	-- Hardened Steel Reaver
-							28580,	-- Hardened Steel Skycaller
-							28835,	-- Stormforged Construct
-							28582,	-- Stormforged Mender
-							28826,	-- Stormfury Revenant
-							28961,	-- Titanium Siegebreaker
-							28965,	-- Titanium Thunderer
-							28838,	-- Titanium Vanguard
-						},
-					}),
-					i(36997, {	-- Sash of the Hardened Watcher
-						["crs"] = {
 							27966,	-- Dark Rune Controller
+							28579,	-- Hardened Steel Berserker
 							28578,	-- Hardened Steel Reaver
 							28580,	-- Hardened Steel Skycaller
 							28835,	-- Stormforged Construct
 							28920,	-- Stormforged Giant
 							28582,	-- Stormforged Mender
+							28836,	-- Stormforged Runeshaper
 							28837,	-- Stormforged Sentinel
+							28581,	-- Stormforged Tactician
+							28547,	-- Storming Vortex
+							28961,	-- Titanium Siegebreaker
+							28965,	-- Titanium Thunderer
+							28838,	-- Titanium Vanguard
+							28584,	-- Unbound Firestorm
+						},
+					}),
+					i(36997, {	-- Sash of the Hardened Watcher
+						["crs"] = {
+							28583,	-- Blistering Steamrager
+							27966,	-- Dark Rune Controller
+							28579,	-- Hardened Steel Berserker
+							28578,	-- Hardened Steel Reaver
+							28580,	-- Hardened Steel Skycaller
+							28835,	-- Stormforged Construct
+							28920,	-- Stormforged Giant
+							28582,	-- Stormforged Mender
+							28836,	-- Stormforged Runeshaper
+							28837,	-- Stormforged Sentinel
+							28581,	-- Stormforged Tactician
 							28547,	-- Storming Vortex
 							28961,	-- Titanium Siegebreaker
 							28965,	-- Titanium Thunderer
@@ -67,10 +77,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(37000, {	-- Storming Vortex Bracers
 						["crs"] = {
+							28583,	-- Blistering Steamrager
+							27966,	-- Dark Rune Controller
+							28579,	-- Hardened Steel Berserker
+							28578,	-- Hardened Steel Reaver
+							28580,	-- Hardened Steel Skycaller
+							28835,	-- Stormforged Construct
 							28920,	-- Stormforged Giant
 							28582,	-- Stormforged Mender
 							28836,	-- Stormforged Runeshaper
 							28837,	-- Stormforged Sentinel
+							28581,	-- Stormforged Tactician
 							28826,	-- Stormfury Revenant
 							28547,	-- Storming Vortex
 							28961,	-- Titanium Siegebreaker
@@ -155,28 +172,40 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					n(0, {		-- Zone Drop
 						i(37858, {	-- Awakened Handguards
 							["crs"] = {
+								28583,	-- Blistering Steamrager
 								28579,	-- Hardened Steel Berserker
 								28578,	-- Hardened Steel Reaver
 								28580,	-- Hardened Steel Skycaller
+								28835,	-- Stormforged Construct
 								28920,	-- Stormforged Giant
 								28582,	-- Stormforged Mender
 								28836,	-- Stormforged Runeshaper
+								28837,	-- Stormforged Sentinel
 								28581,	-- Stormforged Tactician
+								28826,	-- Stormfury Remnant
 								28547,	-- Storming Vortex
 								28961,	-- Titanium Siegebreaker
+								28965,	-- Titanium Thunderer
+								28838,	-- Titanium Vanguard
 								28584,	-- Unbound Firestorm
 							},
 						}),
 						i(37857, {	-- Helm of the Lightning Halls
 							["crs"] = {
 								28583,	-- Blistering Steamrager
+								28579,	-- Hardened Steel Berserker
 								28578,	-- Hardened Steel Reaver
 								28580,	-- Hardened Steel Skycaller
+								28835,	-- Stormforged Construct
 								28920,	-- Stormforged Giant
 								28582,	-- Stormforged Mender
+								28836,	-- Stormforged Runeshaper
 								28837,	-- Stormforged Sentinel
+								28581,	-- Stormforged Tactician
+								28826,	-- Stormfury Remnant
 								28547,	-- Storming Vortex
 								28961,	-- Titanium Siegebreaker
+								28965,	-- Titanium Thunderer
 								28838,	-- Titanium Vanguard
 								28584,	-- Unbound Firestorm
 							},

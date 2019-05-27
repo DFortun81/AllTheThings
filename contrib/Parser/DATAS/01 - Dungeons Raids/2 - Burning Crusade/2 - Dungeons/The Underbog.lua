@@ -7,55 +7,37 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 60,
 		["mapID"] = 262,
 		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
-				{
+				{	-- A Necessary Evil
 					["questID"] = 29568,	-- A Necessary Evil
-					["qg"] = 54678,	-- Naturalist Bite
+					["qg"] = 54678,			-- Naturalist Bite
 				},
-				{
+				{	-- Bring Me A Shrubbery!
 					["questID"] = 29691,	-- Bring Me A Shrubbery!
-					["qg"] = 54674,	-- T'shu
-					["groups"] = {
-						{
-							["itemID"] = 24246,	-- Sanguine Hibiscus
-							["questID"] = 29691,	-- Bring Me A Shrubbery!
-						},
-					},
+					["qg"] = 54674,			-- T'shu
 				},
-				{
-					["questID"] = 29692,	-- Bring Me Another Shrubbery!
+				{	-- Bring Me Another Shrubbery!
+					["questID"] = 29692,		-- Bring Me Another Shrubbery!
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["repeatable"] = true,
 					["qg"] = 54674,	-- T'shu
-					["groups"] = {
-						{
-							["itemID"] = 24246,	-- Sanguine Hibiscus
-							["groups"] = {
-								{
-									["factionID"] = 970,	-- Sporeggar
-									["icon"] = "Interface\\Icons\\Ability_Hunter_Pet_Sporebat",
-								}
-							},
+				},
+				{	-- Rescuing the Expedition
+					["questID"] = 29570,	-- Rescuing the Expedition
+					["qg"] = 54675,			-- Watcher Jhang
+				},
+				{	-- Stalk the Stalker
+					["questID"] = 29567,	-- Stalk the Stalker
+					["qg"] = 54674,			-- T'shu
+					["g"] = {
+						{	-- Essence Infused Mushroom
+							["itemID"] = 28109,	-- Essence Infused Mushroom
+						},
+						{	-- Power Infused Mushroom
+							["itemID"] = 28108,	-- Power Infused Mushroom
 						},
 					},
-				},
-				{
-					["questID"] = 29570,	-- Rescuing the Expedition
-					["qg"] = 54675,	-- Watcher Jhang
-				},
-				{
-					["questID"] = 29567,	-- Stalk the Stalker
-					["qg"] = 54674,	-- T'shu
-					["groups"] = {
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
-					},
-				},
-			}),
-			n(0, {	-- Zone Drop
-				{
-					["itemID"] = 24246,	-- Sanguine Hibiscus
 				},
 			}),
 			d(1, {	-- Normal
@@ -123,7 +105,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(17770, e(576, {	-- Hungarfen
 						i(27747),	-- Boggspine Knuckles
 						i(27746),	-- Arcanium Signet Bands
@@ -186,6 +168,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				["g"] = {
+					{	-- Sanguine Hibiscus
+						["itemID"] = 24246,	-- Sanguine Hibiscus
+					},
+				},
+			},
 		},
 	}),
 })};

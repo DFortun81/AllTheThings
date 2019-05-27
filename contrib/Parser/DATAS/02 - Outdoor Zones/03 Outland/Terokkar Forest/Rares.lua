@@ -29,6 +29,7 @@ _.Zones =
 								{ 41.2, 65.4, 108 },
 							},
 							["groups"] = {
+								ach(1312, crit(2)),	-- Bloody Rare
 								i(31238),	-- Dragonbone Ring
 							},
 						}),
@@ -51,6 +52,7 @@ _.Zones =
 								{ 55.4, 32.6, 108 },
 							},
 							["groups"] = {
+								ach(1312, crit(7)),	-- Bloody Rare
 								i(31235),	-- Grim Boots
 								i(31233),	-- Grim Greaves
 								i(31232),	-- Grim Sabatons
@@ -77,6 +79,7 @@ _.Zones =
 								{ 59.8, 25.2, 108 },
 							},
 							["groups"] = {
+								ach(1312, crit(17)),	-- Bloody Rare
 								i(31228),	-- Feathered Belt
 								i(31227),	-- Feathered Girdle
 								i(31231),	-- Feathered Sash

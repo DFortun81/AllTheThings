@@ -130,6 +130,10 @@ _.Zones =
 					}),
 
 					qg(40950, qa(313)),	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
+					q(7673, { -- Frost Ram Exchange
+						["qg"] = 1261,	-- Veron Amberstill
+						["u"] = 40,		-- Legacy Quest
+					}),
 					qg(1261, qa(7673)),	-- Frost Ram Exchange
 					qg(40950, qa(25724)),	-- Frostmane Aggression
 --]]

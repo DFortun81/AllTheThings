@@ -537,6 +537,43 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					},
 				}),
+				{	-- Ancient Qiraji Artifact
+					["itemID"] = 21230,	-- Ancient Qiraji Artifact
+					["crs"] = {
+						15277,	-- Anubisath Defender
+						15264,	-- Anubisath Sentinel
+						15311,	-- Anubisath Warder
+						15262,	-- Obsidian Eradicator
+						15312,	-- Obsidian Nullifier
+						15247,	-- Qiraji Brainwasher
+						15252,	-- Qiraji Champion
+						15249,	-- Qiraji Lasher
+						15246,	-- Qiraji Mindslayer
+						15250,	-- Qiraji Slayer
+						15233,	-- Vekniss Guardian
+						15240,	-- Vekniss Hive Crawler
+						15229,	-- Vekniss Soldier
+						15235,	-- Vekniss Stinger
+						15230,	-- Vekniss Warrior
+						15236,	-- Vekniss Wasp
+					},
+				},
+				{	-- Qiraji Lord's Insignia
+					["itemID"] = 21229,	-- Qiraji Lord's Insignia
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				},
 			}),
 			n(0, {	-- Zone Drop
 				i(21218, {	-- Blue Qiraji Resonating Crystal

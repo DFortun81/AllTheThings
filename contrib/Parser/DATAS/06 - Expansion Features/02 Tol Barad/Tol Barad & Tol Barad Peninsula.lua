@@ -4,7 +4,7 @@
 _.ExpansionFeatures =
 {
 	m(245, {	-- Tol Barad Peninsula
-		["groups"] = {
+		["g"] = {
 			n(-25, { 	-- Pet Battle
 				p(410), 	-- Wharf Rat
 			}),
@@ -15,19 +15,19 @@ _.ExpansionFeatures =
 			}),
 			n(-38, { 	-- Profession
 				n(-188, { 	-- Mining
-					["groups"] = {
+					["g"] = {
 						i(67282), 	-- Pet Elementium Geode
 					},
 					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 				}),
 				prof(356, {
 					o(207724, {	-- Shipwreck Debris
-						["groups"] = {
+						["g"] = {
 							i(22739),	-- Tome of Polymorph: Turtle
 						},
 					}),
 					o(202780, {	-- Fathom Eel Swarm
-						["groups"] = {
+						["g"] = {
 							i(22739),	-- Tome of Polymorph: Turtle
 						},
 					}),
@@ -109,18 +109,19 @@ _.ExpansionFeatures =
 				}),
 			}),
 			m(244, { 	-- Tol Barad
-				["groups"] = {
+				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",
+				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
+				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario
+				["g"] = {
 					n(-38, { 	-- Profession
 						n(-188, { 	-- Mining
-							["groups"] = {
+							["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
+							["g"] = {
 								i(67282), 	-- Pet Elementium Geode
 							},
-							["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.|r",
 						}),
 					}),
 				},
-				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
-				["description"] = "|cff66ccffTol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.|r",
 			}),
 		},
 		["description"] = "|cff66ccffTol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.|r",

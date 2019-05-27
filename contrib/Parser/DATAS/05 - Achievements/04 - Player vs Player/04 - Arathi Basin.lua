@@ -48,8 +48,9 @@ _.Achievements =
 							crit(5),	-- Kill 5 people at the stables
 						}),
 					}),
-					a(ach(711)),	-- Knight of Arathor
-					h(ach(710)),	-- The Defiler
+					ach(711, 710),	-- Knight of Arathor [A] / The Defiler [H]
+					--a(ach(711)),	-- Knight of Arathor
+					--h(ach(710)),	-- The Defiler
 				},
 			}),
 		},

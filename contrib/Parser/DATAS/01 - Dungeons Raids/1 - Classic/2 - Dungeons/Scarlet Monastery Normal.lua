@@ -24,20 +24,64 @@ _.Instances = { tier(1, {	-- Classic
 			d(1,   {	-- Normal
 				n(0,   {	-- Zone Drop
 					i(7759),	-- Archon Chestpiece
-					i(7728),	-- Beguiler's Robes
-					i(7729),	-- Chesterfall Musket
-					i(7730),	-- Cobalt Crusher
-					i(7752),	-- Dreamslayer
+					i(7728, {	-- Beguiler's Robes
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							58605,	-- Scarlet Judicator
+						},
+					}),
+					i(7753, {	-- Bloodspiller
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58783,	-- Scarlet Initiate
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
+						},
+					}),
+					i(7729, {	-- Chesterfall Musket
+						["crs"] = {
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58590,	-- Scarlet Zealot
+						},
+					}),
+					i(7730, {	-- Cobalt Crusher
+						["crs"] = {
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
+					i(7752, {	-- Dreamslayer
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					un(7, i(7736)),	-- Fight Club
 					un(7, i(7755)),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
-							7754,	-- Scarlet Sentry
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
 						},
 					}),
 					i(7786, {	-- Headsplitter
 						["crs"] = {
-							7754,	-- Scarlet Sentry
+							59705,	-- Scarlet Flamethrower
+							58783,	-- Scarlet Initiate
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
 						},
 					}),
 					i(2262, {	-- Mark of Kern
@@ -45,23 +89,52 @@ _.Instances = { tier(1, {	-- Classic
 							60033,	-- Frenzied Spirit
 						},
 					}),
+					i(7787, {	-- Resplendent Guardian
+						["crs"] = {
+							60033,	-- Frenzied Spirit
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+						},
+					}),
+					un(7, i(7758)),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece
 					i(10331),	-- Scarlet Gauntlets
 					i(10333),	-- Scarlet Wristguards
+					i(5756, {	-- Sliverblade
+						["crs"] = {
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					i(7761),	-- Steelclaw Reaver
-					i(5819),	-- Sunblaze Coif
+					i(5819, {	-- Sunblaze Coif
+						["crs"] = {
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+						},
+					}),
 					i(1992),	-- Swampchill Fetish
+					i(8225),	-- Tainted Pierce
 					i(8226, {	-- The Butcher
 						["crs"] = {
-							7754,	-- Scarlet Sentry
+							60033,	-- Frenzied Spirit
+							59746,	-- Scarlet Centurion
+							58605,	-- Scarlet Judicator
+							4283,	-- Scarlet Sentry
+							58590,	-- Scarlet Zealot
 						},
 					}),
 					un(7, i(7760)),	-- Warchief Kilt
 					i(7727, {	-- Watchman Pauldrons
 						["crs"] = {
-							7754,	-- Scarlet Sentry
+							59746,	-- Scarlet Centurion
+							59705,	-- Scarlet Flamethrower
+							58605,	-- Scarlet Judicator
+							58590,	-- Scarlet Zealot
+							4283,	-- Scarlet Sentry
 						},
 					}),
 					i(7757),	-- Windweaver Staff

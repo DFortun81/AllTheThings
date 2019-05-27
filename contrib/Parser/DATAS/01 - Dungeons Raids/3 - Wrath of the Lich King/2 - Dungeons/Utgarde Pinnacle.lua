@@ -25,11 +25,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				q(29864),	-- Working at the Source, No actual awards.
 			}),
 			n(0, {	-- Zone Drop
-				i(37068),	-- Berserker's Sabatons
-				i(37069),	-- Dragonflayer Seer's Bindings
-				i(37070),	-- Tundra Wolf Boots
-				{	-- Ymirjar Physician's Robe
-					["itemID"] = 37587,	-- Ymirjar Physician's Robe
+				{	-- Bands of Fading Light
+					["itemID"] = 37590,	-- Bands of Fading Light
 					["crs"] = {
 						26672,	-- Bloodthirsty Tundra Wolf
 						26550,	-- Dragonflayer Deathseeker
@@ -42,8 +39,53 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						26669,	-- Ymirjar Savage
 					},
 				},
-				{	-- Bands of Fading Light
-					["itemID"] = 37590,	-- Bands of Fading Light
+				{	-- Berserker's Sabatons
+					["itemID"] = 37068,	-- Berserker's Sabatons
+					["crs"] = {
+						26672,	-- Bloodthirsty Tundra Wolf
+						26550,	-- Dragonflayer Deathseeker
+						26553,	-- Dragonflayer Fanatic
+						26554,	-- Dragonflayer Seer
+						26555,	-- Scourge Hulk
+						26696,	-- Ymirjar Berserker
+						26694,	-- Ymirjar Dusk Shaman
+						26670,	-- Ymirjar Flesh Hunter
+						28368,	-- Ymirjar Necromancer
+						26669,	-- Ymirjar Savage
+					},
+				},
+				{	-- Dragonflayer Seer's Bindings
+					["itemID"] = 37069,	-- Dragonflayer Seer's Bindings
+					["crs"] = {
+						26672,	-- Bloodthirsty Tundra Wolf
+						26550,	-- Dragonflayer Deathseeker
+						26553,	-- Dragonflayer Fanatic
+						26554,	-- Dragonflayer Seer
+						26555,	-- Scourge Hulk
+						26696,	-- Ymirjar Berserker
+						26694,	-- Ymirjar Dusk Shaman
+						26670,	-- Ymirjar Flesh Hunter
+						28368,	-- Ymirjar Necromancer
+						26669,	-- Ymirjar Savage
+					},
+				},
+				{	-- Tundra Wolf Boots
+					["itemID"] = 37070,	-- Tundra Wolf Boots
+					["crs"] = {
+						26672,	-- Bloodthirsty Tundra Wolf
+						26550,	-- Dragonflayer Deathseeker
+						26553,	-- Dragonflayer Fanatic
+						26554,	-- Dragonflayer Seer
+						26555,	-- Scourge Hulk
+						26696,	-- Ymirjar Berserker
+						26694,	-- Ymirjar Dusk Shaman
+						26670,	-- Ymirjar Flesh Hunter
+						28368,	-- Ymirjar Necromancer
+						26669,	-- Ymirjar Savage
+					},
+				},
+				{	-- Ymirjar Physician's Robe
+					["itemID"] = 37587,	-- Ymirjar Physician's Robe
 					["crs"] = {
 						26672,	-- Bloodthirsty Tundra Wolf
 						26550,	-- Dragonflayer Deathseeker

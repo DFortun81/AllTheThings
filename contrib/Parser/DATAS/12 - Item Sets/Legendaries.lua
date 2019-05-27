@@ -225,6 +225,7 @@ _.GearSets =
 					i(133973),	-- The Twins' Painful Touch
 					i(137276),	-- N'ero, Band of Promises
 					i(151646),	-- Soul of the High Priest
+					i(132449),	-- Phyrix's Embrace
 				}),
 				cl(4, { 	-- Rogue		
 					i(151815),	-- The Empty Crown

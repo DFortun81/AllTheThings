@@ -23,10 +23,29 @@ _.NeverImplemented =
 		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
 		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
 		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
-
+		-- Leather Horde (you probably will learn both after learning one)
+		un(1, i(166915)),	-- Dread Gladiator's leather tunic
+		un(1, i(166916)),	-- Dread Gladiator's leather boots
+		un(1, i(166917)),	-- Dread Gladiator's leather gloves
+		un(1, i(166918)),	-- Dread Gladiator's leather helm
+		un(1, i(166919)),	-- Dread Gladiator's leather legguards
+		un(1, i(166920)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166921)),	-- Dread Gladiator's leather belt
+		un(1, i(166922)),	-- Dread Gladiator's leather bindings
+		-- Leather Ally (you probably will learn both after learning one)
+		un(1, i(166946)),	-- Dread Gladiator's leather tunic
+		un(1, i(166947)),	-- Dread Gladiator's leather boots
+		un(1, i(166948)),	-- Dread Gladiator's leather gloves
+		un(1, i(166949)),	-- Dread Gladiator's leather helm
+		un(1, i(166950)),	-- Dread Gladiator's leather legguards
+		un(1, i(166951)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166952)),	-- Dread Gladiator's leather belt
+		un(1, i(166953)),	-- Dread Gladiator's leather bindings
+		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
+		un(1, i(161118)),	-- Marrow Shatter (TW Vendor/Tw drop?)
 		un(1, i(166700)),	-- Durable Sailor's Duffel
 		un(1, i(161988)),	-- Tidespray Linen Cloak of the Feather
 		un(1, i(161991)),	-- Tidespray Linen Cloak of Resilience
@@ -50,6 +69,12 @@ _.NeverImplemented =
 		un(1, i(157654)),	-- stalwarts bulwark (Lv20 Start Gear?)
 		un(1, i(157656)),	-- raincallers shield (Lv20 Start Gear?)
 		un(1, i(157657)),	-- foebreakers barrier (Lv20 Start Gear?)
+		un(1, i(157629)),	-- hammer of faith
+		un(1, i(157635)),	-- Duskfall Daggers
+		un(1, i(140703)),	-- Duskfall Daggers
+		un(1, i(150598)),	-- Duskfall Daggers
+		un(1, i(140704)),	-- Assassins Serrated Dagger
+		un(1, i(150599)),	-- Assassins Serrated Dagger
 		
 		-- Possible BC TW Gear (not in journal)
 		un(1, i(150450)),	-- Nether Shadow Tunic
@@ -191,6 +216,9 @@ _.NeverImplemented =
 			un(1, i(109344)),	-- Unknown
 			un(1, i(109363)),	-- Unknown
 			un(1, i(109379)),	-- Unknown
+			un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
+			un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
+			un(1, i(147074)),	-- Vambraces of Resoulte Justice 
 			un(1, i(109398)),	-- Unknown
 			un(1, i(109405)),	-- Unknown
 			un(1, i(109411)),	-- Unknown
@@ -210,6 +238,16 @@ _.NeverImplemented =
 			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
 			un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
 			un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
+			un(1, i(167711)),	-- Unknown
+			un(1, i(167712)),	-- Unknown
+			un(1, i(167713)),	-- Unknown
+			un(1, i(167714)),	-- Unknow
+			un(1, i(167715)),	-- Unknow
+			un(1, i(167716)),	-- Unknow
+			un(1, i(167717)),	-- Unknow
+			un(1, i(167718)),	-- Unknow
+			un(1, i(166406)),	-- flaskzertaurens cloth robes
+			un(1, i(166407)),	-- flaskzertaurens cloth shoulders
 			un(1, i(32103)),	-- Chancellor's Satin Gloves
 			un(1, i(32104)),	-- Chancellor's Satin Hood
 			un(1, i(32105)),	-- Chancellor's Satin Legs
@@ -375,8 +413,10 @@ _.NeverImplemented =
 			un(1, i(12104)),	-- Brindlethorn Tunic (Leather)
 			un(1, i(54708)),	-- Ceremonial Leather Gloves
 			un(1, i(54666)),	-- Ceremonial Leather Harness
+			un(1, i(37176)),	-- Cavern Leather Treads
+			un(1, i(30288)),	-- Cenarion wardens gloves
 			un(1, i(54698)),	-- Ceremonial Leather Loincloth
-			un(1, i(5821)),	-- Darkstalker Boots (Leather)
+			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(54683)),	-- Dusky Leather Armor
 			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
 			un(1, i(54674)),	-- Gloomshroud Armor
@@ -418,11 +458,30 @@ _.NeverImplemented =
 			un(1, i(109349)),	-- Unknown
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(157693)),	-- asceitcs helm
 			un(1, i(54681)),	-- Thick Murloc Armor
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(54727)),	-- Traveler's Boots
+			un(1, i(54543)),	-- Orca tooth treads
+			un(1, i(60584)),	-- Vicious Gladiator's boots of dominance
+			un(1, i(60585)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60588)),	-- Vicious Gladiator's armwraps of triump
+			un(1, i(60590)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60592)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60595)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60596)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60597)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60598)),	-- Vicious Gladiator's armwraps of triumph
+			un(1, i(60599)),	-- Vicious Gladiator's boots of triumph
+			un(1, i(60600)),	-- Vicious Gladiator's belt of triumph
+			un(1, i(60606)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60608)),	-- Vicious Gladiator's armwraps of dominance
+			un(1, i(60609)),	-- Vicious Gladiator's belt of dominance
+			un(1, i(60610)),	-- Vicious Gladiator's boots of dominance
 			un(1, i(54649)),	-- Unknown
 			un(1, i(54650)),	-- Unknown
+			un(1, i(80946)),	-- peacebreaker's leather helm
+			un(1, i(80950)),	-- peacebreaker's hide helm
 			un(1, i(54652)),	-- Unknown
 			un(1, i(54658)),	-- Unknown
 			un(1, i(54665)),	-- Unknown
@@ -642,6 +701,10 @@ _.NeverImplemented =
 			un(1, i(46276)),	-- Scourgestalker spaulders
 			un(1, i(46277)),	-- Scourgestalker tunic
 			un(1, i(109270)),	-- Unknown
+			un(1, i(43936)),	-- Battlesurgeons Gauntlets
+			un(1, i(54549)),	-- Saline-Soaked Spaulders
+			un(1, i(80987)),	-- Scavenger's chain spaulders
+			un(1, i(80991)),	-- Scavenger's ringmail spaulders
 			un(1, i(56485)),	-- Windbound Bracers
 			un(1, i(109416)),	-- Unknown
 			un(1, i(109425)),	-- Unknown
@@ -876,6 +939,8 @@ _.NeverImplemented =
 			un(1, i(39828)),	-- Punisher's Cloak
 			un(1, i(80965)),	-- Scavenger's cape
 			un(1, i(80966)),	-- Scavenger's drape
+			un(1, i(56355)),	-- Skin of Stone
+			un(1, i(65815)),	-- Drape of the mortal guardians beta only
 			un(1, i(80967)),	-- Scavenger's shawl
 			un(1, i(80968)),	-- Scavenger's cloak
 			un(1, i(80969)),	-- Scavenger's manteua
@@ -955,6 +1020,7 @@ _.NeverImplemented =
 			un(1, i(108819)),	-- Unknown
 			un(1, i(109267)),	-- Unknown
 			un(1, i(33197)),	-- Mossy necklace
+			un(1, i(153484)),	-- Fierce Combatant's Necklace
 			un(1, i(109293)),	-- Unknown
 			un(1, i(109295)),	-- Unknown
 			un(1, i(31930)),	-- Unknown
@@ -974,6 +1040,7 @@ _.NeverImplemented =
 			un(1, i(109459)),	-- Unknown
 			un(1, i(109522)),	-- Unknown
 			un(1, i(109526)),	-- Unknown
+			un(1, i(117536)),	-- Springrain Choker
 			un(1, i(42856)),	-- Unknown (might be Frosthowl Amulet)
 			un(1, i(44389)),	-- Unknown (might be Curative Necklace)
 			un(1, i(44390)),	-- Unknown (might be Venomous Pendant)
@@ -993,7 +1060,6 @@ _.NeverImplemented =
 			un(1, i(4988)),		-- Burning Obsidian Band
 			un(1, i(17000)),	-- Band of the Wraith
 			un(1, i(17108)),	-- Mark of Deflection
-			un(1, i(132449)),	-- Phyrix's Embrace
 			un(1, i(33097)),	-- Unknown
 			un(1, i(33193)),	-- Unknown
 			un(1, i(33194)),	-- Unknown
@@ -1006,8 +1072,16 @@ _.NeverImplemented =
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
+			un(1, i(141907)),	-- Arena Victory Bonus
+			un(1, i(143604)),	-- rating min item level reward
+			un(1, i(144455)),	-- rating min item level reward
+			un(1, i(147397)),	-- rating min item level reward
+			un(1, i(147421)),	-- rating min item level reward
+			un(1, i(150368)),	-- rating min item level reward
 			un(1, i(109365)),	-- Unknown
 			un(1, i(109410)),	-- Unknown
+			un(1, i(150369)),	-- rating min item level reward
+			un(1, i(150370)),	-- rating min item level reward
 			un(1, i(109418)),	-- Unknown
 			un(1, i(109447)),	-- Unknown
 			un(1, i(109454)),	-- Unknown
@@ -1077,6 +1151,8 @@ _.NeverImplemented =
 			un(1, i(109263)),	-- Unknown
 			un(1, i(109286)),	-- Unknown
 			un(1, i(109360)),	-- Unknown
+			un(1, i(150367)),	-- Unknown
+			un(1, i(151967)),	-- Unknown
 			un(1, i(109370)),	-- Unknown
 			un(1, i(109376)),	-- Unknown
 			un(1, i(109378)),	-- Unknown
@@ -1145,6 +1221,8 @@ _.NeverImplemented =
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown
+		un(1, i(167026)),	-- cache of crucible treasures
+		un(1, i(164774)),	-- unknown
 		un(1, spell(5264)),	-- dsouth sea defias disguise
 		un(1, spell(5268)),	-- dark iron dwarf disguise
 		un(1, spell(5267)),	-- dalaran wizard disguise
@@ -1895,6 +1973,7 @@ _.NeverImplemented =
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
+			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
@@ -2018,11 +2097,14 @@ _.NeverImplemented =
 			un(1, i(109470)),	-- Unknown
 			un(1, i(109533)),	-- Unknown
 			un(1, i(90331)),	-- Face Smasher Warhammer
+			un(1, i(140697)),	-- Justicar's Hammer
+			un(1, i(150592)),	-- Justicar's Hammer
 		}),
 		n(-334, {	-- One-Handed Axes
 			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(115292)),	-- spectral axe
 			un(1, i(42214)),	-- Savage Gladiator's Waraxe
 			un(1, i(64717)),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
 			un(1, i(64758)),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
@@ -2338,13 +2420,15 @@ _.NeverImplemented =
 	un(1, i(150715)),	-- Illidari Warglaive
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(128824)), 	-- Tome of the Silver Hand
-	}),		-- Weapons end
+	}),		
+	-- Weapons end
+	
+	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm
 	un(1, i(151377)),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
 	un(1, i(140011)),	-- Duskwatch Adjudicator's Pauldrons
 	un(1, i(33964)),	-- Helm of the Stormcaller - Never Added
-	un(3, i(19160)),	-- Contest Winner's Tabard   [NOTE: Temporarily here until we get groups working with un/u tag again}
 	un(1, i(8195)),		-- Nightscape Cloak										(Pattern never actually went live)
 	un(15, i(31279)),	-- Enchanted Illidari Tabard [Temp Quest Item]
 	un(1, i(56405)),	-- Oasis Bracers
@@ -2354,11 +2438,7 @@ _.NeverImplemented =
 	un(1, i(67600)), 	-- Lil' Alexstrasza										(Never added in Game)
 	un(1, i(136593)), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 	un(1, i(142360)),	-- Blazing Ember Signet
-	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)
-	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
-	un(1, i(147036)),	-- Fel-Stippled Legguards 								(removed Beta)
-	un(1, i(147058)), 	-- Chaos-Calming Wristguards 							(removed Beta)
-	un(1, i(147074)),	-- Vambraces of Resoulte Justice 						(removed Beta)
+	un(1, i(146307)), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		 	--
@@ -2369,13 +2449,4 @@ m(465),	-- Le Glas
 m(516),	-- Isle of Thunder (One of last initial scenaraio)
 m(892),	-- Azuremyst Isle (Argus Opening)
 m(893),	-- Azuremyst Isle (Argus Opening)
-
--- These maps are used in the Siege of Lordaeron
-m(998),	-- Undercity
-m(908),	-- Ruins of Lordaeron
--- These maps are used in the Horde invasion of Stormwind as part of the BFA entry scenario
-m(1012),	-- Stormwind City
-m(1013),	-- The Stockade
-
-
 };

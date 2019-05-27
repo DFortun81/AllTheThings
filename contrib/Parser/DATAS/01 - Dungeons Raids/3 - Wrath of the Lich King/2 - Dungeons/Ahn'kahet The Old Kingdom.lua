@@ -23,18 +23,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35615, {	-- Glowworm Cavern Bindings
 						["crs"] = {
 							30277,	-- Ahn'kahar Slasher
-							30276,	-- Ahn'kahar Web Winder
-							30279,	-- Deep Crawler
-							30285,	-- Eye of Taldaram
-							30414,	-- Forgotten One
-							30329,	-- Savage Cave Beast
-							30179,	-- Twilight Apostle
-							30111,	-- Twilight Worshipper
-						},
-					}),
-					i(35616, {	-- Spored Tendrils Spaulders
-						["crs"] = {
-							30277,	-- Ahn'kahar Slasher
+							30278,	-- Ahn'kahar Spell Flinger
+							31104,	-- Ahn'kahar Watcher
 							30276,	-- Ahn'kahar Web Winder
 							30284,	-- Bonegrinder
 							30279,	-- Deep Crawler
@@ -43,6 +33,26 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							30286,	-- Frostbringer
 							30283,	-- Plague Walker
 							30287,	-- Plundering Geist
+							30329,	-- Savage Cave Beast
+							30179,	-- Twilight Apostle
+							30319,	-- Twilight Darkcaster
+							30111,	-- Twilight Worshipper
+						},
+					}),
+					i(35616, {	-- Spored Tendrils Spaulders
+						["crs"] = {
+							30277,	-- Ahn'kahar Slasher
+							30278,	-- Ahn'kahar Spell Flinger
+							31104,	-- Ahn'kahar Watcher
+							30276,	-- Ahn'kahar Web Winder
+							30284,	-- Bonegrinder
+							30279,	-- Deep Crawler
+							30285,	-- Eye of Taldaram
+							30414,	-- Forgotten One
+							30286,	-- Frostbringer
+							30283,	-- Plague Walker
+							30287,	-- Plundering Geist
+							30329,	-- Savage Cave Beast
 							30179,	-- Twilight Apostle
 							30319,	-- Twilight Darkcaster
 							30111,	-- Twilight Worshipper

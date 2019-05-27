@@ -42,7 +42,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Stonemason Cloak
 							["itemID"] = 1930,	-- Stonemason Cloak
 							["crs"] = {
-								48419,	-- Defias Digger
+								48419,	-- Defias Miner
 							},
 						},
 						{	-- Weighted Sap

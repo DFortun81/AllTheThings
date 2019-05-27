@@ -8,6 +8,10 @@ _.Zones =
 		["g"] = {
 			{	-- Stormwind City
 				["mapID"] = 84,	-- Stormwind City
+				["maps"] = {
+					1012,	-- Stormwind City (BFA Szenario)
+					1013,	-- The Stockade (BFA Szenario)
+				},
 				["lvl"] = 1,
 				["isRaid"] = true,
 				["icon"] = "Interface\\Icons\\inv_misc_tournaments_banner_human",

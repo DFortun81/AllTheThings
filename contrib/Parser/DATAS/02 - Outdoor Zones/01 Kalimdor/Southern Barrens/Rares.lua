@@ -132,6 +132,7 @@ _.Zones =
 							i(7436),	-- Twilight Cape
 							i(7369),	-- Elder's Robe
 							i(9870),	-- Renegade Circlet
+							un(7, i(4785)),	-- Brimstone Belt
 						},
 					}), 
 					n(5863, {	-- Geopriest Gukk'rok

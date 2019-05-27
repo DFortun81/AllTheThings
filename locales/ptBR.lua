@@ -173,6 +173,7 @@ for key,value in pairs({
 	[190936] = "Caldeirão da Praga",
 	[191760] = "Console da Biblioteca do Inventor",
 	[191761] = "Console de Protótipo",
+	[192049] = "Cardume de Arenques Presadentes",
 	[192060] = "Bigorna de Fjorn",
 	[192072] = "Caixote de Arpões",
 	[194105] = "Caixazorra 413",

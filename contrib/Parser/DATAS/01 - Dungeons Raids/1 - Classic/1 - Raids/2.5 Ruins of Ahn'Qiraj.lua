@@ -12,9 +12,158 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
-			n(0,   {	-- Zone Drops
-				i(21802),	-- The Lost Kris of Zedd
-			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				["g"] = {
+					{	-- Antenna of Invigoration
+						["itemID"] = 21801,	-- Antenna of Invigoration
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- Coif of Elemental Fury
+						["itemID"] = 21804,	-- Coif of Elemental Fury
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15392,	-- Captain Tuubid
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15388,	-- Major Pakkon
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- Helm of the Holy Avenger
+						["itemID"] = 21803,	-- Helm of the Holy Avenger
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15392,	-- Captain Tuubid
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- Polished Obsidian Pauldrons
+						["itemID"] = 21805,	-- Polished Obsidian Pauldrons
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- Silithid Husked Launcher
+						["itemID"] = 21800,	-- Silithid Husked Launcher
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15390,	-- Captain Xurrem
+							15385,	-- Colonel Zerran
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15388,	-- Major Pakkon
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- The Lost Kris of Zedd
+						["itemID"] = 21802,	-- The Lost Kris of Zedd
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15392,	-- Captain Tuubid
+							15390,	-- Captain Xurrem
+							15385,	-- Colonel Zerran
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15388,	-- Major Pakkon
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+				},
+			},
 			n(-1, {	-- Common Boss Drop
 				["groups"] = { -- The class items are grey, adding them for classic in summer
 					-- Enchants

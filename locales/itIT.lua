@@ -174,6 +174,7 @@ for key,value in pairs({
 	[190936] = "Calderone della Piaga",
 	[191760] = "Console della Biblioteca dell'Intelletto",
 	[191761] = "Console dei Prototipi",
+	[192049] = "Banco di Aringhe Zannute",
 	[192060] = "Incudine di Fjorn",
 	[192072] = "Cassa degli Arpioni",
 	[194105] = "Transanalizzatore 413",

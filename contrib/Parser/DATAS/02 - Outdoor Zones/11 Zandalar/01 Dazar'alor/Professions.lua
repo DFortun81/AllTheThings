@@ -132,18 +132,92 @@ _.Zones =
 						}),
 						n(-188, {	-- Mining
 							qh(51962, {	-- Lumbering Away
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
 								["description"] = "Requires 50 Zandalari Mining",
-								["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
 								["groups"] = {
 									recipe(253334),	-- Monelite Deposit Rank 2
 								},
 							}),
-							qh(52014, {	-- Ritualistic Prepartions
+							qh(51964, {	-- Insufferable Bloodsuckers
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 130 Zandalari Mining",
+								["groups"] = {
+									recipe(253335),	-- Monelite Deposit Rank 2
+								},
+							}),
+							qh(51965, {	-- Lending a Hand
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
 								["description"] = "Requires 50 Zandalari Mining",
-								["requireSkill"] = 2565,	-- Kul'Tiran Mining [Need to find out what Zandalari Mining is]
+								["groups"] = {
+									recipe(253343),	-- Monelite Seam Rank 2
+								},
+							}),
+							qh(51971, {	-- An Exquisite Brooch
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 150 Zandalari Mining",
+								["groups"] = {
+									recipe(253344),	-- Monelite Seam Rank 3
+								},
+							}),
+							qh(52014, {	-- Ritualistic Prepartions
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 50 Zandalari Mining",
 								["groups"] = {
 									recipe(253337),	-- Storm Silver Deposit Rank 2
 								},
+							}),
+							qh(52015, {	-- Brined Justice
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 135 Zandalari Mining",
+								["groups"] = {
+									recipe(253338),	-- Storm Silver Deposit Rank 3
+								},
+							}),
+							qh(52016, {	-- Three Sheets to the Wind
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 125 Zandalari Mining",
+								["groups"] = {
+									recipe(253346),	-- Storm Silver Seam Rank 2
+								},
+							}),
+							qh(52017, {	-- Back to Biru
+								["qg"] = 122694,	-- Secott the Goldsmith
+								["coord"] = { 44.0, 39.0, 1165 },
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 150 Zandalari Mining",
+							}),
+							qh(52043, {	-- The Wrath of Grapes
+								["qg"] = 139634,	-- Biru The Drunk
+								["coord"] = { 52.7, 84.3, 1165 },
+								["sourceQuest"] = 52017,	-- Back to Biru
+								["requireSkill"] = 186,	-- Mining
+								["description"] = "Requires 150 Zandalari Mining",
+								["groups"] = {
+									recipe(253347),	-- Storm Silver Seam Rank 3
+								},
+							}),
+							i(161079, {	-- Exceptional Platinum Shard
+								qh(52046, {	-- An Exceptional Platinum Shard
+									["requireSkill"] = 186,	--  Mining
+									["description"] = "Requires 130 Zandalari Mining",
+									["groups"] = {
+										recipe(253340),	-- Platinum Deposit Rank 2
+									},
+								}),
 							}),
 						}),
 						n(-190, {	-- Tailoring

@@ -176,6 +176,21 @@ _.Zones =
 						["classes"] = { 5 },	-- Priest
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 					})),
+					{	-- Corrupter's Scourgestones [H]
+						["questID"] = 5406,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24990, {	-- Darkhound Pounding -- anytime
 						["qg"] = 10665,	-- Junior Apothecary Holland
 					}),
@@ -235,6 +250,21 @@ _.Zones =
 						["qg"] = 10665,	-- Junior Apothecary Holland
 						["sourceQuests"] = { 24990 },	-- Darkhound Pounding
 					}),
+					{	-- Invader's Scourgestones [H]
+						["questID"] = 5403,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24977, {	-- Johaan's Experiment
 						["qg"] = 1518,	-- Apothecary Johaan
 						["sourceQuests"] = { 24976 },	-- Variety is the Spice of Death
@@ -243,6 +273,21 @@ _.Zones =
 						["qg"] = 38978,	-- Apprentice Crispin
 						["sourceQuests"] = { 24997 },	-- Graverobbers
 					}),
+					{	-- Minion's Scourgestones [H]
+						["questID"] = 5402,	-- Corruptor's Scourgestones
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coords"] = {
+							{ 83.18, 68.45, 18 },
+						},
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							{	-- Argent Dawn Valor Token
+								["itemID"] = 12844,	-- Argent Dawn Valor Token
+								["u"] = 2,			-- Removed in Patch 4.0.3
+							},
+						},
+					},
 					qh(24995, {	-- Off the Scales
 						["qg"] = 38977,	-- Apothecary Jerrod
 						["sourceQuests"] = { 24994 },	-- Doom Weed
@@ -409,8 +454,8 @@ _.Zones =
 						dr(1, i(6543)),		-- Willow Bracers
 						dr(0.9, i(9763)),	-- Cadet Leggings
 						dr(0.9, i(6512)),	-- Disciple's Robe
-						un(7, i(4303)),	-- Cranial Thumper							
-					}), 
+						un(7, i(4303)),	-- Cranial Thumper
+					}),
 					o(240624, {	-- Faerie Dragon Nest
 						["g"] = {
 							i(122234)	-- Music Roll: Faerie Dragon
@@ -444,7 +489,7 @@ _.Zones =
 						dr(1.4, i(9747)),	-- Simple Britches
 						dr(1.4, i(9763)),	-- Cadet Leggings
 						dr(1.4, i(6336)),	-- Infantry Tunic
-					}), 
+					}),
 					n(50908, { 	-- Nighthowl
 						dr(19, i(68744)),	-- Imbued Pioneer Cloak
 						dr(11, i(68743)),	-- Imbued Infantry Cloak
@@ -454,7 +499,7 @@ _.Zones =
 						dr(1.3, i(6269)),	-- Pioneer Trousers
 						dr(0.9, i(68758)),	-- Imbued Pioneer Boots
 						dr(0.9, i(68751)),	-- Imbued Pioneer Bracers
-					}), 
+					}),
 					n(10357, { 	-- Ressan the Needler
 						dr(20, i(68744)),	-- Imbued Pioneer Cloak
 						dr(19, i(68743)),	-- Imbued Infantry Cloak
@@ -503,7 +548,7 @@ _.Zones =
 						dr(1.1, i(68762)),	-- Imbued Cadet Cloak
 						dr(1.1, i(68757)),	-- Imbued Pioneer Gloves
 						dr(0.9, i(9749)),	-- Simple Blouse
-					}), 
+					}),
 					n(1533, { 	-- Tormented Spirit
 						dr(8, i(68744)),	-- Imbued Pioneer Cloak
 						dr(7, i(68743)),	-- Imbued Infantry Cloak
@@ -514,37 +559,52 @@ _.Zones =
 						dr(0.9, i(68748)),	-- Imbued Disciple's Cloak
 					}),
 --[[
---					n(1531, {	-- Lost Soul	}), 
---					n(1910, {	-- Muad	}), 
---					n(1936, {	-- Farmer Solliden	}), 
---					n(10356, {	-- Bayne	}), 
---					n(50763, {	-- Shadowstalker	}), 
---					n(50803, {	-- Bonechewer	}), 
---					n(50930, {	-- Hibernus the Sleeper	}), 
---					n(51044, {	-- Plague	}),	
---]]								
+--					n(1531, {	-- Lost Soul	}),
+--					n(1910, {	-- Muad	}),
+--					n(1936, {	-- Farmer Solliden	}),
+--					n(10356, {	-- Bayne	}),
+--					n(50763, {	-- Shadowstalker	}),
+--					n(50803, {	-- Bonechewer	}),
+--					n(50930, {	-- Hibernus the Sleeper	}),
+--					n(51044, {	-- Plague	}),
+--]]
 				}),
 				n(-2, {	-- Vendors
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
 						i(12226),	-- Recipe: Crispy Bat Wing
 					}),
-					n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
-						i(19447),	-- Formula: Enchant Bracer - Healing Power
-						i(19442),	-- Formula: Powerful Anti-Venom
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
-						i(13482),	-- Recipe: Transmute Air to Fire
-						i(18171),	-- Arcane Mantle of the Dawn
-						i(18169),	-- Flame Mantle of the Dawn
-						i(18170),	-- Frost Mantle of the Dawn
-						i(18172),	-- Nature Mantle of the Dawn
-						i(18173),	-- Shadow Mantle of the Dawn
-					}),
+					{	-- Argent Quartermaster Hasana <The Argent Dawn>
+						["npcID"] = 10856, -- Argent Quartermaster Hasana <The Argent Dawn>
+						["coords"] = {
+							{ 83.26, 68.14, 18 },
+						},
+						["g"] = {
+							{	-- Formula: Enchant Bracer - Argent Versatility
+								["itemID"] = 19446,	-- Formula: Enchant Bracer - Argent Versatility
+							},
+							{	-- Formula: Enchant Bracer - Healing Power
+								["itemID"] = 19447,	-- Formula: Enchant Bracer - Healing Power
+							},
+							{	-- Formula: Powerful Anti-Venom
+								["itemID"] = 19442,	-- Formula: Powerful Anti-Venom
+							},
+							{	-- Pattern: Argent Boots
+								["itemID"] = 19216,	-- Pattern: Argent Boots
+							},
+							{	-- Pattern: Argent Shoulders
+								["itemID"] = 19217,	-- Pattern: Argent Shoulders
+							},
+							{	-- Pattern: Dawn Treaders
+								["itemID"] = 19328,	-- Pattern: Dawn Treaders
+							},
+							{	-- Pattern: Golden Mantle of the Dawn
+								["itemID"] = 19329,	-- Pattern: Golden Mantle of the Dawn
+							},
+							{	-- Plans: Girdle of the Dawn
+								["itemID"] = 19203,	-- Plans: Girdle of the Dawn
+							},
+						},
+					},
 					nh(3522, {	-- Constance Brisboise <Apprentice Clothier>
 						i(6270),	-- Pattern: Blue Linen Vest
 					}),
@@ -566,7 +626,7 @@ _.Zones =
 						i(46308),
 					})
 				}),
-				m(19, {	-- Scarlet Monastery Entrace
+				m(19, {	-- Scarlet Monastery Entrance
 					["g"] = {
 						i(7753),	-- Bloodspiller
 						i(7729),	-- Chesterfall Musket
@@ -590,14 +650,13 @@ _.Zones =
 						i(13114),	-- Troll's Bane Leggings
 						i(6592),	-- Battleforge Armor
 						i(7728),	-- Beguiler Robes
-						i(7786),    -- Headsplitter
 					},
 					["crs"] = {
-						4284,	-- Scarlet Augur		
-						4285,	-- Scarlet Disciple		
-						4282,	-- Scarlet Magician		
-						4280,	-- Scarlet Preserver		
-						4281,	-- Scarlet Scout		
+						4284,	-- Scarlet Augur
+						4285,	-- Scarlet Disciple
+						4282,	-- Scarlet Magician
+						4280,	-- Scarlet Preserver
+						4281,	-- Scarlet Scout
 						4283,	-- Scarlet Sentry
 					},
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
@@ -795,11 +854,11 @@ _.Zones =
 								}),
 							},
 						}),
-					},	
-					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",	
+					},
+					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
-			},				
+			},
 		}),
 	}),
 };

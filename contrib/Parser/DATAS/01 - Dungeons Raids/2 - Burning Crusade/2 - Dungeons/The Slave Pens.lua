@@ -7,7 +7,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 59,
 		["mapID"] = 265,
 		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests 					
 				{	-- A Brother Betrayed
 					["questID"] = 29564,	-- A Brother Betrayed
@@ -20,7 +20,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				{	-- The Heart of the Matter
 					["questID"] = 29565,	-- The Heart of the Matter
 					["qg"] = 54667,	-- Watcher Jhang
-					["groups"]	= {
+					["g"]	= {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
@@ -81,7 +81,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d( 2, {	-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					cr(17941, e(570, {	-- Mennu the Betrayer
 						i(24361),	-- Spellfire Longsword
 						i(27543),	-- Starlight Dagger
@@ -135,7 +135,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 71,
-				["groups"] = {
+				["g"] = {
 					cr(17941, e(570, {	-- Mennu the Betrayer
 						i(127183),	-- Spellfire Longsword
 						i(127191),	-- Starlight Dagger
@@ -181,6 +181,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				-- Note!! Blank so when map merges into the list it's in this spot rather than top
+			},
 		},
 	}),
 })};

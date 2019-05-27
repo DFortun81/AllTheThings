@@ -40,6 +40,9 @@ _.GearSets =
 								{	-- Springrain Tunic	*LA0404Balance
 									["itemID"] = 153754,	-- Springrain Tunic
 								},
+								{	-- Springrain Wrists	Balance
+									["itemID"] = 153762,	-- Springrain Wrists
+								},
 								{	-- Springrain Grips	*LA0404Balance
 									["itemID"] = 153756,	-- Springrain Grips
 								},
@@ -49,6 +52,9 @@ _.GearSets =
 								{	-- Springrain Leggings	*LA0404Balance
 									["itemID"] = 153758,	-- Springrain Leggings
 								},
+								{	-- Springrain Treads	*Balance
+									["itemID"] = 153755,	-- Springrain Treads
+								},
 								{	-- Springrain Band of Destruction	*LA0404Balance
 									["itemID"] = 153765,	-- Springrain Band of Destruction
 								},
@@ -57,6 +63,9 @@ _.GearSets =
 								},
 								{	-- Springrain Stone of Destruction	*LA0404Balance
 									["itemID"] = 153767,	-- Springrain Stone of Destruction
+								},
+								{	-- Springrain Idol of Destruction	Balance
+									["itemID"] = 153764,	-- Springrain Idol of Destruction
 								},
 								
 							},

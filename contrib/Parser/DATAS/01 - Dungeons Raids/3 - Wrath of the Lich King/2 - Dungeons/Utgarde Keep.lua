@@ -74,8 +74,42 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(  1, {	-- Normal
 				n(0, {	-- Zone Drop
-					i(35580),	-- Skein Woven Mantle
-					i(35579),	-- Vrykul Shackles
+					{	-- Skein Woven Mantle
+						["itemID"] = 35580,	-- Skein Woven Mantle
+						["crs"]	= {
+							24069,	-- Dragonflayer Bonecrusher
+							24079,	-- Dragonflayer Forge Master
+							24071,	-- Dragonflayer Heartsplitter
+							23961,	-- Dragonflayer Ironhelm
+							24078,	-- Dragonflayer Metalworker
+							24085,	-- Dragonflayer Overseer
+							23960,	-- Dragonflayer Runecaster
+							28410,	-- Dragonflayer Spiritualist
+							23956,	-- Dragonflayer Strategist
+							24080,	-- Dragonflayer Weaponsmith
+							24083,	-- Enslaved Proto-Drake
+							24082,	-- Proto-Drake Handler
+							24849,	-- Proto-Drake Rider
+						},
+					},
+					{	-- Vrykul Shackles
+						["itemID"] = 35579,	-- Vrykul Shackles
+						["crs"]	= {
+							24069,	-- Dragonflayer Bonecrusher
+							24079,	-- Dragonflayer Forge Master
+							24071,	-- Dragonflayer Heartsplitter
+							23961,	-- Dragonflayer Ironhelm
+							24078,	-- Dragonflayer Metalworker
+							24085,	-- Dragonflayer Overseer
+							23960,	-- Dragonflayer Runecaster
+							28410,	-- Dragonflayer Spiritualist
+							23956,	-- Dragonflayer Strategist
+							24080,	-- Dragonflayer Weaponsmith
+							24083,	-- Enslaved Proto-Drake
+							24082,	-- Proto-Drake Handler
+							24849,	-- Proto-Drake Rider
+						},
+					},
 				}),
 				cr(23953, e(638, {	-- Prince Keleseth <The San'layn>
 					{	-- Utgarde Keep: Prince Keleseth

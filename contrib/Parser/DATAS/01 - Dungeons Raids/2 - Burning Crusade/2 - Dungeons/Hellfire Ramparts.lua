@@ -7,7 +7,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 57,
 		["mapID"] = 347,
 		["coord"] = { 47.65, 53.57, 100 },	-- Hellfire Ramparts, Hellfire Peninsula
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				qa(29529, {	-- Demons in the Citadel
 					["qg"] = 54603,	-- Advance Scout Chadwick
@@ -17,7 +17,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				qa(29528, {	-- War on the Ramparts
 					["qg"] = 54603,	-- Advance Scout Chadwick
-					["groups"] = {
+					["g"] = {
 						i(25718),	-- Mantle of Magical Might
 						i(25717),	-- Sure-Step Boots
 						i(25716),	-- Handguards of Precision
@@ -32,7 +32,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				qh(29527, {	-- War on the Ramparts
 					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["groups"] = {
+					["g"] = {
 						i(25718),	-- Mantle of Magical Might
 						i(25717),	-- Sure-Step Boots
 						i(25716),	-- Handguards of Precision
@@ -43,7 +43,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(1, {		-- Normal
 				e(527, { 	-- Watchkeeper Gargolmar
 					["creatureID"] = 17306,
-					["groups"] = {
+					["g"] = {
 						i(24020),	-- Shadowrend Longblade
 						i(27449),	-- Blood Knight Defender
 						i(24024),	-- Pauldrons of Arcane Rage
@@ -58,7 +58,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				e(528, {	-- Omor the Unscarred
 					["creatureID"] = 17308,
-					["groups"] = {
+					["g"] = {
 						ach(647),	-- Hellfire Ramparts
 						i(24069),	-- Crystalfire Staff
 						i(24094),	-- Heart Fire Warhammer
@@ -82,7 +82,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 				e(529, {	-- Vazruden the Herald
 					["creatureID"] = 17307,
-					["groups"] = {
+					["g"] = {
 						model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
 							i(24044),	-- Hellreaver
 							i(24155),	-- Ursol's Claw
@@ -115,11 +115,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(2, {		-- Heroic
 				["lvl"] = 70,
 				["ignoreBonus"] = true,
-				["groups"] = {
+				["g"] = {
 					ach(667),	-- Heroic: Hellfire Ramparts
 					e(527, {	-- Watchkeeper Gargolmar
 						["creatureID"] = 17306,
-						["groups"] = {
+						["g"] = {
 							i(24020),	-- Shadowrend Longblade
 							i(27449),	-- Blood Knight Defender
 							i(24024),	-- Pauldrons of Arcane Rage
@@ -134,7 +134,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 					e(528, {	-- Omor the Unscarred
 						["creatureID"] = 17308,
-						["groups"] = {
+						["g"] = {
 							i(24069),	-- Crystalfire Staff
 							i(24094),	-- Heart Fire Warhammer
 							i(27463),	-- Terror Flame Dagger
@@ -157,7 +157,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 					e(529, {	-- Vazruden the Herald
 						["creatureID"] = 17307,
-						["groups"] = {
+						["g"] = {
 							model(34286, o(185168, { 	-- Reinforced Fel Iron Chest
 								i(24044),	-- Hellreaver
 								i(24155),	-- Ursol's Claw
@@ -188,6 +188,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				}
 			}),
+			{	-- Zone Drops
+				["npcID"] = 0,	-- Zone Drops
+				-- Note!! Blank so when map merges into the list it's in this spot rather than top
+			},
 		},
 	}),
 })};

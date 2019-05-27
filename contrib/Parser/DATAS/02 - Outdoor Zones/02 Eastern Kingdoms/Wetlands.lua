@@ -361,39 +361,40 @@ _.Zones =
 						dr(01.1, i(6573)),	-- Defender Boots
 					}), 
 					n(1112, { 	-- Leech Widow
-						dr(09.0, i(6564)),	-- Shimmering Cloak
-						dr(08.0, i(6583)),	-- Scouting Bracers
-						dr(08.0, i(6562)),	-- Shimmering Boots
-						dr(08.0, i(6563)),	-- Shimmering Bracers
-						dr(07.0, i(6581)),	-- Scouting Belt
-						dr(04.0, i(9780)),	-- Bandit Gloves
-						dr(04.0, i(9771)),	-- Greenweave Gloves
-						dr(04.0, i(9766)),	-- Greenweave Sash
-						dr(04.0, i(6585)),	-- Scouting Cloak
-						dr(03.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(6575)),	-- Defender Cloak
-						dr(03.0, i(9814)),	-- Fortified Belt
-						dr(03.0, i(9783)),	-- Raider's Chestpiece
-						dr(02.0, i(9781)),	-- Bandit Pants
-						dr(02.0, i(6582)),	-- Scouting Boots
-						dr(02.0, i(6570)),	-- Shimmering Sash
-						dr(01.9, i(10287)),	-- Greenweave Mantle
-						dr(01.7, i(6574)),	-- Defender Bracers
-						dr(01.7, i(6587)),	-- Scouting Trousers
-						dr(01.5, i(6580)),	-- Defender Tunic
-						dr(01.4, i(6576)),	-- Defender Girdle
-						dr(01.3, i(6573)),	-- Defender Boots
-						dr(01.3, i(9812)),	-- Fortified Cloak
-						dr(01.3, i(9772)),	-- Greenweave Leggings
-						dr(01.3, i(6568)),	-- Shimmering Trousers
-						dr(01.2, i(9782)),	-- Bandit Jerkin
-						dr(01.2, i(6577)),	-- Defender Gauntlets
-						dr(01.2, i(9811)),	-- Fortified Bracers
-						dr(01.2, i(9773)),	-- Greenweave Robe
-						dr(01.2, i(6565)),	-- Shimmering Gloves
-						dr(01.2, i(9805)),	-- Superior Cloak
-						dr(01.0, i(9774)),	-- Greenweave Vest
+						i(6564),	-- Shimmering Cloak
+						i(6583),	-- Scouting Bracers
+						i(6562),	-- Shimmering Boots
+						i(6563),	-- Shimmering Bracers
+						i(6581),	-- Scouting Belt
+						i(9780),	-- Bandit Gloves
+						i(9771),	-- Greenweave Gloves
+						i(9766),	-- Greenweave Sash
+						i(6585),	-- Scouting Cloak
+						i(9776),	-- Bandit Boots
+						i(6575),	-- Defender Cloak
+						i(9814),	-- Fortified Belt
+						i(9783),	-- Raider's Chestpiece
+						i(9781),	-- Bandit Pants
+						i(6582),	-- Scouting Boots
+						i(6570),	-- Shimmering Sash
+						i(10287),	-- Greenweave Mantle
+						i(6574),	-- Defender Bracers
+						i(6587),	-- Scouting Trousers
+						i(6580),	-- Defender Tunic
+						i(6576),	-- Defender Girdle
+						i(6573),	-- Defender Boots
+						i(9812),	-- Fortified Cloak
+						i(9772),	-- Greenweave Leggings
+						i(6568),	-- Shimmering Trousers
+						i(9782),	-- Bandit Jerkin
+						i(6577),	-- Defender Gauntlets
+						i(9811),	-- Fortified Bracers
+						i(9773),	-- Greenweave Robe
+						i(6565),	-- Shimmering Gloves
+						i(9805),	-- Superior Cloak
+						i(9774),	-- Greenweave Vest
 						i(6199),	-- Black Widow Band
+						i(4444),	-- Black Husk Shield
 					}), 
 					n(2090, { 	-- Ma'ruk Wyrmscale
 						dr(07.0, i(9776)),	-- Bandit Boots

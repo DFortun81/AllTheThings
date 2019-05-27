@@ -104,8 +104,9 @@ i(143941, 1272);	-- Commendation of The Tillers
 -- Miscellaneous Rep Items
 
 -- Classic
-i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
+i(12844, 529);		-- Argent Dawn Valor Token [Argent Dawn]
 i(21230, 910);		-- Ancient Qiraji Artifact [Brood of Nozdormu]
+i(21229, 910);		-- Qiraji Lord's Insignia [Brood of Nozdormu]
 i(19708, 270);		-- Blue Hakkari Bijou [Zandalar Tribe]
 i(19713, 270);		-- Bronze Hakkari Bijou [Zandalar Tribe]
 i(19715, 270);		-- Golden Hakkari Bijou [Zandalar Tribe]
@@ -136,6 +137,8 @@ i(29426, 934);		-- Firewing Signet [The Scryers]
 i(30810, 934);		-- Sunfury Signet [The Scryers]
 i(29739, 934);		-- Arcane Tome [The Scryers]
 i(32506, 1015);		-- Netherwing Egg [Netherwing]
+i(24245, 970);		-- Glowcap [Sporegeggar]
+i(24246, 970);		-- Sanguine Hibiscus [Sporeggar]
 
 -- Wrath of the Lich King
 i(42780, 1119);		-- Relics of Ulduar [Sons of Hodir]

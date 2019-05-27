@@ -174,6 +174,7 @@ for key,value in pairs({
 	[190936] = "Caldera de peste",
 	[191760] = "Consola de la Biblioteca del Inventor",
 	[191761] = "Consola prototipo",
+	[192049] = "Banco de arenques colmillo",
 	[192060] = "Yunque de Fjorn",
 	[192072] = "Cajón de arpones",
 	[194105] = "Caja mecánica 413",

@@ -809,7 +809,7 @@ _.Zones =
 								un(7, i(885)),		-- Black Metal Axe
 							}),
 							un(43, n(569, { 	-- Green Recluse
-								un(7, i(2021)), 	-- Green Carapace Shield
+								un(7, i(2021)), 	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
 							})),
 							un(43, n(503, {	-- Lord Malathrom
 								un(7, i(4462)),	-- Cloak of Rot
@@ -821,7 +821,7 @@ _.Zones =
 								un(7, i(2233)),	 -- Shadow Weaver Leggings
 							}),
 							n(920, { 	-- Nightbane Tainted Ones
-								un(7, i(2234)),	-- Nightwalker Armor
+								un(7, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
 							}),
 							n(206, {	-- Nightbane Vile Fang
 								un(7, i(897)),		-- Madwolf Bracers
