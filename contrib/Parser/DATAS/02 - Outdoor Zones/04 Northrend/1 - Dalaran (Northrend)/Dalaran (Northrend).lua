@@ -2431,12 +2431,26 @@ _.Zones =
 						i(51313),	-- Sanctified Scourgelord Legplates
 						i(51314),	-- Sanctified Scourgelord Shoulderplates
 					}),
-					n(28714,  {	-- Ildine Sorrowspear <Enchanting Supplies>
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					{	-- Ildine Sorrowspear
+						["npcID"] = 28714,	-- Ildine Sorrowspear
+						["coords"] = {
+							{ 38.78, 41.56, 125 },
+						},
+						["g"] = {
+							{	-- Formula: Lesser Wizard Oil
+								["itemID"] = 20753,	-- Formula: Lesser Wizard Oil
+							},
+							{	-- Formula: Minor Mana Oil
+								["itemID"] = 20752,	-- Formula: Minor Mana Oil
+							},
+							{	-- Formula: Minor Wizard Oil
+								["itemID"] = 20758,	-- Formula: Minor Wizard Oil
+							},
+							{	-- Pattern: Enchanted Mageweave Pouch
+								["itemID"] = 22307,	-- Pattern: Enchanted Mageweave Pouch
+							},
+						},
+					},
 					n(96483,  { 	-- Jepetto Joybuzz <Toymaker>
 						i(54436),	-- Blue Clockwork Rocket Bot Pet
 						i(95621),	-- Warbot Ignition Key Pet
