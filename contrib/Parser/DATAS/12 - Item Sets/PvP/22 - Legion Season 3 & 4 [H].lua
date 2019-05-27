@@ -446,7 +446,7 @@ _.GearSets =
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 					}),
 					gssh(394, {	-- Elite
-						["groups"] = {
+						["groups"] = bubbleDown({["u"] = 14}, {
 							gs(394, {	-- Cruel Gladiator's Satin Armor
 								i(144927),	-- Cruel Gladiator's Satin Hood
 								i(144933),	-- Cruel Gladiator's Satin Mantle
@@ -649,7 +649,7 @@ _.GearSets =
 								i(144813),	-- Cruel Gladiator's Dreadplate Legguards
 								i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
 							}),
-						},
+						}),
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 					}),
 				})),

@@ -402,7 +402,7 @@ _.GearSets =
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 					}),
 					gssh(392, { 	-- Elite
-						["groups"] = {
+						["groups"] = bubbleDown({["u"] = 14}, {
 							gs(392, {	-- Vindictive Gladiator's Satin Armor
 								["groups"] = {
 									i(136093),	-- Vindictive Gladiator's Satin Hood
@@ -571,7 +571,7 @@ _.GearSets =
 								},
 								["classes"] = { 6 },
 							}),
-						},
+						}),
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 					}),
 				})),

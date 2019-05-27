@@ -527,7 +527,7 @@ _.GearSets =
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
 					}),
 					gssh(1391, {	-- Elite
-						["groups"] = {
+						["groups"] = bubbleDown({["u"] = 14}, {
 							gs(1391, {	-- Fierce Gladiator's Satin Armor
 								i(148302),	-- Fierce Gladiator's Satin Hood
 								i(148308),	-- Fierce Gladiator's Satin Mantle
@@ -766,7 +766,7 @@ _.GearSets =
 								i(148188),	-- Fierce Gladiator's Dreadplate Legguards
 								i(148182),	-- Fierce Gladiator's Dreadplate Sabatons
 							}),
-						},
+						}),
 						["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 					}),
 				})),
