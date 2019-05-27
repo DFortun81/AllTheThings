@@ -510,7 +510,7 @@ _.Zones =
 								["coord"] = { 46.6, 49.4, 649 },
 								["qg"] = 97480,	-- Ashildir
 							}),
-						--	sq(39849, qg(97319, q(39852))),	-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
+						--	un(1, qg(97319, q(39852))),	-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
 							q(39853, {	-- Victory is Eternal
 								["sourceQuests"] = {
 									39851,	-- Allies in Death
