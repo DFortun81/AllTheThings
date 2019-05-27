@@ -67,6 +67,13 @@ _.Zones =
 							i(65498),	-- Recipe: Big Cauldron of Battle
 						},
 					}),
+					ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
+						["collectible"] = false,
+						["groups"] = {
+						--	i(85513),	-- Thundering Serpent Hatchling.
+						-- Actually they removed it from every guild in 6.0.
+						},
+					}),
 					ach(9651, {	-- Challenge Warlord: Gold - Guild Edition
 						["collectible"] = false,
 						["groups"] = {
