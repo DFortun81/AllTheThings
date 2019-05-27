@@ -11,7 +11,9 @@ _.Zones =
 				["g"] = {
 					n(-228, {	-- Flight Master
 						fp(128, {	-- Shattrath, Terokkar Forest
-							["coord"] = { 63.8, 41, 111 },
+							["coords"] = {
+								{ 64.08, 41.12, 111 },
+							},
 						}),
 					}),
 				},
