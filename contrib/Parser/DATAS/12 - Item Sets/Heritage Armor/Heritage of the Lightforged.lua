@@ -3,8 +3,8 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["icon"] = "Interface\\Icons\\achievement_level_110",
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
 		["g"] = {
 			gs(1525, {	-- Heritage of the Lightforged
 				["races"] = { 30 },
@@ -39,5 +39,5 @@ _.GearSets =
 				},
 			}),
 		},
-	}),	
+	},	
 };

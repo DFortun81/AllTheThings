@@ -19,6 +19,8 @@ _.Holidays =
 						["coords"] = {
 							{ 34.06, 80.43, 81 },	-- Field Marshal Snowfall
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Call of the Scarab [Horde]
 						["questID"] = 45785,	-- Call of the Scarab
@@ -29,6 +31,8 @@ _.Holidays =
 						["coords"] = {
 							{ 33.96, 81.91, 81 },	-- Warlord Gorchuk
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Chilled Meat
 						["allianceQuestID"] = 45731,	-- Chilled Meat
@@ -43,6 +47,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Crocolisk Tails
 						["allianceQuestID"] = 45732,	-- Crocolisk Tails
@@ -57,6 +63,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Crunchy Spider Legs
 						["allianceQuestID"] = 45730,	-- Crunchy Spider Legs
@@ -71,6 +79,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Lean Shanks
 						["allianceQuestID"] = 45735,	-- Lean Shanks
@@ -85,6 +95,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Raw Clefthoof Meat
 						["allianceQuestID"] = 45734,	-- Raw Clefthoof Meat
@@ -99,6 +111,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Raw Tiger Steaks
 						["allianceQuestID"] = 45733,	-- Raw Tiger Steaks
@@ -113,6 +127,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 					{	-- Sandworm Meat
 						["allianceQuestID"] = 45729,	-- Sandworm Meat
@@ -127,6 +143,8 @@ _.Holidays =
 							{ 34.01, 80.47, 81 },		-- Master Sergeant Fizzlebolt
 							{ 33.91, 81.83, 81 },		-- Senior Sergeant Kai'jin
 						},
+						["u"] = 22,				-- Micro-Holiday Filter
+						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 				},
 			},

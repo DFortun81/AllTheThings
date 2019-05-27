@@ -3,10 +3,11 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1741, {	-- Heritage of Kul'Tiras
-				["groups"] = {
+				["g"] = {
 					{	-- Kul'Tiran Bicorne
 						["itemID"] = 165002,	-- Kul'Tiran Bicorne
 					},
@@ -38,6 +39,5 @@ _.GearSets =
 				["races"] = { 32 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},
 };

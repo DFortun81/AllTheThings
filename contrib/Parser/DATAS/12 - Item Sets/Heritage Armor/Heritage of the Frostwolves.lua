@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1682, {	-- Heritage of the Frostwolves
 				["groups"] = {
 					i(161059),	-- Frostwolf Clan Helm
@@ -20,6 +21,5 @@ _.GearSets =
 				["races"] = { 36 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},	
 };

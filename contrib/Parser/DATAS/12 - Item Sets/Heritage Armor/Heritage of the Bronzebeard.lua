@@ -3,8 +3,9 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	gsh(1522, {	-- Allied Races
-		["groups"] = {
+	{	-- Heritage Armor
+		["npcID"] = -254,	-- Heritage Armor
+		["g"] = {
 			gs(1803, {	-- Heritage of the Bronzebeard
 				["groups"] = {
 					i(165931),	-- Bronzebeard Helm
@@ -19,6 +20,5 @@ _.GearSets =
 				["races"] = { 3 },
 			}),
 		},
-		["icon"] = "Interface\\Icons\\achievement_level_110",
-	}),	
+	},
 };
