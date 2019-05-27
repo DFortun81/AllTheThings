@@ -571,6 +571,9 @@ AllTheThings.L = {
 		[-655] = "Interface\\Icons\\inv_stormdragonmount2light",				-- Fierce Gladiator: Legion Season 5
 		[-656] = "Interface\\Icons\\inv_stormdragonmount2yellow",				-- Dominant Gladiator: Legion Season 6
 		[-657] = "Interface\\Icons\\inv_stormdragonmount2_fel",					-- Demonic Gladiator: Legion Season 7
+		[-658] = "Interface\\Worldmap\\GlowSkull_64Blue",						-- Combatant PvP Gear
+		[-659] = "Interface\\Worldmap\\GlowSkull_64Purple",						-- Gladator PvP Gear
+		[-660] = "Interface\\Worldmap\\GlowSkull_64Red",						-- Elite PvP Gear
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",			-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",				-- The Black Vault
 		[-3158] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",	-- BFA PvP Season 1
@@ -937,7 +940,7 @@ AllTheThings.L = {
 		[-87] = "Armory",
 		[-88] = "Cathedral",
 		[-89] = "Scorn",
-		[-90] = ELITE,															-- Elite
+		[-90] = ELITE,															-- Elite (Terrace of Endless Spring)
 		[-91] = "Deprecated",
 		[-92] = "How to obtain Meatball",										-- Meatball Instructions
 		[-93] = "Silithus (The Wound)",
@@ -1340,6 +1343,11 @@ AllTheThings.L = {
 		[-655] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
 		[-656] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
 		[-657] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
+		
+-- PvP Set Names
+		[-658] = "Combatant",													-- Combatant PvP Gear
+		[-659] = "Gladiator",													-- Gladator PvP Gear
+		[-660] = "Elite",														-- Elite PvP Gear
 		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
