@@ -337,7 +337,11 @@ _.Zones =
 							["sourceQuests"] = { 27039 },	-- Dangerous Intentions
 						}),
 					}),
---					qg(44640, qh(28089)),	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125 -- couldn't find this to pick up -- may overlap with Empire of Dirt, which is also a Hillsbrad breadcrumb quest)
+					--[[
+--					qh(28089, {	-- Warchief's Command: Hillsbrad Foothills! (secondary QG IDs 45631 and 46125 -- couldn't find this to pick up -- may overlap with Empire of Dirt, which is also a Hillsbrad breadcrumb quest)
+						["qg"] = 44640,	-- 
+					}),
+					]]--
 				}),			
 				n(-16, {	-- Rares
 					n(47009, { 	-- Aquarius the Unbound

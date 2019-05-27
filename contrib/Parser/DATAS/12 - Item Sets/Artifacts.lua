@@ -3045,7 +3045,14 @@ _.GearSets =
 						{
 							["artifactID"] = 841,	-- Base Skin
 						},
-						qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+						ach(11725, { 	-- Fisherfriend of the Isles
+							["qgs"] = {
+								120456,	-- Keeper Raynae
+								120457,	-- Akule Riverhorn
+								120458,	-- Corbyn
+								120459,	-- Sha'leth
+								120460,	-- Impus
+							},
 							["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 							["groups"] = {
 								i(152583, {	-- Underlight Emerald
@@ -3057,7 +3064,7 @@ _.GearSets =
 									},
 								})
 							},
-						})),
+						}),
 					},
 				}),
 			}),

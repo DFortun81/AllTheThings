@@ -17,16 +17,27 @@ _.Instances = { tier(1, {	-- Classic
 				["coord"] = { 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
 				["groups"] = {
 					n(-17, {	-- Quests
-						qg(44969, q(27104, {	-- Alzzin the Wildshaper
-							i(65948),	-- Warpwood Bark Vest
-							i(65972),	-- Warpwood Bow
-							i(65922),	-- Warpwood Leaf Mantle
-							i(65993),	-- Warpwood Shield
-						})),
-						qg(44969, q(27105)),	-- An Unwelcome Guest
-						qg(44971, q(27108)),	-- Lethtendris's Web
-						qg(44971, q(27107)),	-- Pusillin The Thief
-						qg(44969, q(27103)),	-- Shards of the Felvine
+						q(27104, {	-- Alzzin the Wildshaper
+							["qg"] = 44969,	-- Furgus Warpwood
+							["g"] = {
+								i(65948),	-- Warpwood Bark Vest
+								i(65972),	-- Warpwood Bow
+								i(65922),	-- Warpwood Leaf Mantle
+								i(65993),	-- Warpwood Shield
+							},
+						}),
+						q(27105, {	-- An Unwelcome Guest
+							["qg"] = 44969,	-- Furgus Warpwood
+						}),
+						q(27108, {	-- Lethtendris's Web
+							["qg"] = 44971,	-- "Ambassador" Dagg'thol
+						}),
+						q(27107, {	-- Pusillin The Thief
+							["qg"] = 44971,	-- "Ambassador" Dagg'thol
+						}),
+						q(27103, {	-- Shards of the Felvine
+							["qg"] = 44969,	-- Furgus Warpwood
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
@@ -151,37 +162,56 @@ _.Instances = { tier(1, {	-- Classic
 								["repeatable"] = true,
 							}),
 						}),
-						qg(3936, qa(27133)),	-- Eyes in the Sky
-						qg(45040, qa(27125, {	-- King of the Gordok
-							i(65976),	-- Pauldrons of Tribute
-							i(65927),	-- Slippers of Tribute
-							i(65997),	-- Tribute Gun
-							i(65952),	-- Wristbands of Tribute
-						})),
-						qg(45052, qh(27128, {	-- King of the Gordok
-							i(66036),	-- Pauldrons of Tribute
-							i(66018),	-- Slippers of Tribute
-							i(66043),	-- Tribute Gun
-							i(66027),	-- Wristbands of Tribute
-						})),
-						qg(39656, qh(27134)),	-- Ogre in the Field
-						qg(14338, q(27119, {	-- The Gordok Ogre Suit
-							i(18258),	-- Gordok Ogre Suit
-						})),
-						qg(14338, q(27120, {	-- The Gordok Ogre Suit
+						qa(27133, {	-- Eyes in the Sky
+							["qg"] = 3936,	-- Shandris Feathermoon
+						}),
+						qa(27125, {	-- King of the Gordok
+							["qg"] = 45040,	-- Druid of the Talon
+							["g"] = {
+								i(65976),	-- Pauldrons of Tribute
+								i(65927),	-- Slippers of Tribute
+								i(65997),	-- Tribute Gun
+								i(65952),	-- Wristbands of Tribute
+							},
+						}),
+						qh(27128, {	-- King of the Gordok
+							["qg"] = 45052,	-- Stonemaul Ogre
+							["g"] = {
+								i(66036),	-- Pauldrons of Tribute
+								i(66018),	-- Slippers of Tribute
+								i(66043),	-- Tribute Gun
+								i(66027),	-- Wristbands of Tribute
+							},
+						}),
+						qh(27134, {	-- Ogre in the Field
+							["qg"] = 39656,	-- Orhan Ogreblade
+						}),
+						q(27119, {	-- The Gordok Ogre Suit
+							["qg"] = 14338,	-- 
+							["g"] = {
+								i(18258),	-- Gordok Ogre Suit
+							},
+						}),
+						q(27120, {	-- The Gordok Ogre Suit
+							["qg"] = 14338,	-- Knot Thimblejack
 							["repeatable"] = true,
 							["groups"] = {
 								un(2, recipe(22813)),	-- Gordok Ogre Suit
 								i(18258),	-- Gordok Ogre Suit
 							},
-						})),
-						qg(14322, q(27114)),	-- The Gordok Taste Test
-						qg(14325, q(27124, {	-- Unfinished Gordok Business
-							i(18367),	-- Gordok's Gauntlets
-							i(18368),	-- Gordok's Gloves
-							i(18366),	-- Gordok's Handguards
-							i(18369),	-- Gordok's Handwraps
-						})),
+						}),
+						q(27114, {	-- The Gordok Taste Test
+							["qg"] = 14322,	-- Stomper Kreeg
+						}),
+						q(27124, {	-- Unfinished Gordok Business
+							["qg"] = 14325,	-- Captain Kromcrush
+							["g"] = {
+								i(18367),	-- Gordok's Gauntlets
+								i(18368),	-- Gordok's Gloves
+								i(18366),	-- Gordok's Handguards
+								i(18369),	-- Gordok's Handwraps
+							},
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."

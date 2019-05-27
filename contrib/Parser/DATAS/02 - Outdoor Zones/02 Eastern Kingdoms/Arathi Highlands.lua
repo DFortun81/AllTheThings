@@ -82,6 +82,14 @@ _.Zones =
 					qh(26053, {	-- Clearing the Highlands
 						["qg"] = 41966,	-- Deathstalker Maudria
 					}),
+					qa(8115, {	-- Control Five Bases (pvp)
+						["u"] = 40,
+						["qg"] = 14983,	-- Field Marshal Oslight
+					}),
+					qa(8114, {	-- Control Four Bases (pvp)
+						["u"] = 40,
+						["qg"] = 14983,	-- Field Marshal Oslight
+					}),
 					qh(26429, {	-- Crush the Witherbark
 						["qg"] = 2771,	-- Drum Fel
 					}),
@@ -226,6 +234,22 @@ _.Zones =
 						["qg"] = 2774,	-- Doctor Draxlegauge
 						["sourceQuests"] = { 26050 },	-- Goggle Boggle
 					}),
+					qh(8122, {	-- Take Five Bases (pvp)
+						["u"] = 40,
+						["qg"] = 15021,	-- Deathmaster Dwire
+					}),
+					qh(8121, {	-- Take Four Bases (pvp)
+						["u"] = 40,
+						["qg"] = 15021,	-- Deathmaster Dwire
+					}),
+					qa(8105, {	-- The Battle for Arathi Basin! (pvp)
+						["u"] = 40,
+						["qg"] = 14983,	-- Field Marshal Oslight
+					}),
+					qh(8120, {	-- The Battle for Arathi Basin! (pvp)
+						["u"] = 40,
+						["qg"] = 15021,	-- Deathmaster Dwire
+					}),
 					qh(26023, {	-- The Forsaken Trollbane
 						["qg"] = 41949,	-- Dark Ranger Alina
 						["sourceQuests"] = { 26022 },	-- First Blood
@@ -368,26 +392,22 @@ _.Zones =
 					})),
 					
 -- CLASS HALL QUESTS
-					qg(107806, q(42535, {	-- Death... and Decay
+					q(42535, {	-- Death... and Decay
+						["qg"] = 107806,	-- Prince Galen Trollbane
 						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(107806, q(42534, {	-- Our Oldest Enemies
+					}),
+					q(42534, {	-- Our Oldest Enemies
+						["qg"] = 107806,	-- Prince Galen Trollbane
 						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(108042, q(42536, {	-- Regicide
+					}),
+					q(42536, {	-- Regicide
+						["qg"] = 108042,	-- Thassarian
 						["classes"] = { 6 },	-- Death Knight
-					})),
-					qg(108042, q(42537, {	-- The King Rises
+					}),
+					q(42537, {	-- The King Rises
+						["qg"] = 108042,	-- Thassarian
 						["classes"] = { 6 },	-- Death Knight
-					})),	
-					
--- LEGACY QUESTS
---[[				qpvp(qg(14986, qa(8115))),	-- Control Five Bases
-					qpvp(qg(14983, qa(8114))),	-- Control Four Bases
-					qpvp(qg(15021, qh(8122))),	-- Take Five Bases
-					qpvp(qg(15021, qh(8121))),	-- Take Four Bases
-					qpvp(qg(14983, qa(8105))),	-- The Battle for Arathi Basin!
-					qpvp(qg(15021, qh(8120))),	-- The Battle for Arathi Basin!		--]]
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(50891, { 	-- Boros

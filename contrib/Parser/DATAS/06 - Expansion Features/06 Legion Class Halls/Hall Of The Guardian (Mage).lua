@@ -119,15 +119,19 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-17, {	-- Quests
-					qart(qg(103092, q(41141, { 	-- A Conjuror's Duty (mage class hall)
+					qart(q(41141, { 	-- A Conjuror's Duty (mage class hall)
+						["qg"] = 103092,	-- The Great Akazamzarak
 						["classes"] = {8},
-					}))),					
+					})),					
 					q(42434),	-- A Covert Operation
-					qg(108247, q(46338)),	-- A Creative Solution (mage class hall)
+					q(46338, {	-- A Creative Solution (mage class hall)
+						["qg"] = 108247,	-- Archmage Kalec
+					}),
 					q(43415),	-- A Hero's Weapon
-					qart(qg(41085, q(41085, {	-- A Mage's Weapon (mage class hall)
+					qart(q(41085, {	-- A Mage's Weapon (mage class hall)
+						["qg"] = 102700,	-- Meryl Felstorm
 						["classes"] = {8},
-					}))),		
+					})),		
 					q(43441),	-- A Second Weapon
 					q(42954),	-- A Small Favor
 					q(42520),	-- A Terrible Loss

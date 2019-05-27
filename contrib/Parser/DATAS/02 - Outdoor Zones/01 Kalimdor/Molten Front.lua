@@ -218,46 +218,117 @@ _.Zones =
 							
 							--[[
 							
-							qg(53196, q(29263)),	-- A Bitter Pill
-							qg(52493, q(29244)),	-- A Lieutenant of Flame
-							
-							qg(54163, q(29297)),	-- Bye Bye Burdy
-							qg(52921, q(29160)),	-- Egg-stinction
-							qg(52489, q(29255)),	-- Embergris
-							qg(52494, q(29210)),	-- Enduring the Heat
-							qg(52478, q(29275)),	-- Fandral's Methods
-							qg(52444, q(29265)),	-- Fire Flowers
-							qg(52491, q(29290)),	-- Fire in the Skies
-							qg(52444, q(29264)),	-- Flamewakers of the Molten Flow
-							qg(52478, q(29274)),	-- Hounds of Shannox
-							qg(52477, q(29273)),	-- How Hot
-							qg(52135, q(29203)),	-- Into the Depths
-							qg(52494, q(29209)),	-- Into the Fiery Depths
-							qg(52824, q(29206)),	-- Into the Fire
-							qg(52489, q(29254)),	-- Little Lasher
-							qg(53196, q(29278)),	-- Living Obsidium
-							qg(52491, q(29289)),	-- Mother's Malice
-							qg(53233, q(29272)),	-- Need... Water... Badly...
-							qg(52491, q(29287)),	-- Peaked Interest
-							qg(52489, q(29249)),	-- Planting Season
-							qg(52921, q(29159)),	-- Pyrorachnophobia
-							qg(53259, q(29293)),	-- Singed Wings
-							qg(52494, q(29211)),	-- Solar Core Destruction
-							qg(52491, q(29288)),	-- Starting Young
-							qg(52489, q(29257)),	-- Steal Magmolias
-							qg(52495, q(29243)),	-- Strike at the Heart (addtl questgiver 53056)
-							qg(52490, q(29305)),	-- Strike at the Heart (addtl questgiver 52492)
-							qg(53259, q(29296)),	-- Territorial Birds
-							qg(53304, q(29295)),	-- The Bigger They Are
-							qg(52824, q(29304)),	-- The Dogs of War
-							qg(52477, q(29276)),	-- The Flame Spider Queen
-							qg(52824, q(29205)),	-- The Forlorn Spire
+							q(29263, {	-- A Bitter Pill
+								["qg"] = 53196,	-- 
+							}),
+							q(29244, {	-- A Lieutenant of Flame
+								["qg"] = 52493,	-- 
+							}),
+							q(29297, {	-- Bye Bye Burdy
+								["qg"] = 54163,	-- 
+							}),
+							q(29160, {	-- Egg-stinction
+								["qg"] = 52921,	-- 
+							}),
+							q(29255, {	-- Embergris
+								["qg"] = 52489,	-- 
+							}),
+							q(29210, {	-- Enduring the Heat
+								["qg"] = 52494,	-- 
+							}),
+							q(29275, {	-- Fandral's Methods
+								["qg"] = 52478,	-- 
+							}),
+							q(29265, {	-- Fire Flowers
+								["qg"] = 52444,	-- 
+							}),
+							q(29290, {	-- Fire in the Skies
+								["qg"] = 52491,	-- 
+							}),
+							q(29264, {	-- Flamewakers of the Molten Flow
+								["qg"] = 52444,	-- 
+							}),
+							q(29274, {	-- Hounds of Shannox
+								["qg"] = 52478,	-- 
+							}),
+							q(29273, {	-- How Hot
+								["qg"] = 52477,	-- 
+							}),
+							q(29203, {	-- Into the Depths
+								["qg"] = 52135,	-- 
+							}),
+							q(29209, {	-- Into the Fiery Depths
+								["qg"] = 52494,	-- 
+							}),
+							q(29206, {	-- Into the Fire
+								["qg"] = 52824,	-- 
+							}),
+							q(29254, {	-- Little Lasher
+								["qg"] = 52489,	-- 
+							}),
+							q(29278, {	-- Living Obsidium
+								["qg"] = 53196,	-- 
+							}),
+							q(29289, {	-- Mother's Malice
+								["qg"] = 52491,	-- 
+							}),
+							q(29272, {	-- Need... Water... Badly...
+								["qg"] = 53233,	-- 
+							}),
+							q(29287, {	-- Peaked Interest
+								["qg"] = 52491,	-- 
+							}),
+							q(29249, {	-- Planting Season
+								["qg"] = 52489,	-- 
+							}),
+							q(29159, {	-- Pyrorachnophobia
+								["qg"] = 52921,	-- 
+							}),
+							q(29293, {	-- Singed Wings
+								["qg"] = 53259,	-- 
+							}),
+							q(29211, {	-- Solar Core Destruction
+								["qg"] = 52494,	-- 
+							}),
+							q(29288, {	-- Starting Young
+								["qg"] = 52491,	-- 
+							}),
+							q(29257, {	-- Steal Magmolias
+								["qg"] = 52489,	-- 
+							}),
+							q(29243, {	-- Strike at the Heart
+								["qg"] = 52495,	-- 
+							}),
+							q(29305, {	-- Strike at the Heart
+								["qg"] = 52490,	-- 
+							}),
+							q(29296, {	-- Territorial Birds
+								["qg"] = 53259,	-- 
+							}),
+							q(29295, {	-- The Bigger They Are
+								["qg"] = 53304,	-- 
+							}),
+							q(29304, {	-- The Dogs of War
+								["qg"] = 52824,	-- 
+							}),
+							q(29276, {	-- The Flame Spider Queen
+								["qg"] = 52477,	-- 
+							}),
+							q(29205, {	-- The Forlorn Spire
+								["qg"] = 52824,	-- 
+							}),
 							o(208535, {	-- Dried Acorn
 								q(29245),	-- The Mysterious Seed
 							}),
-							qg(52824, q(29204)),	-- The Warden's Charge
-							qg(52494, q(29192)),	-- The Wardens are Watching
-							qg(52921, q(29189)),	-- Wicked Webs
+							q(29204, {	-- The Warden's Charge
+								["qg"] = 52824,	-- 
+							}),
+							q(29192, {	-- The Wardens are Watching
+								["qg"] = 52494,	-- 
+							}),
+							q(29189, {	-- Wicked Webs
+								["qg"] = 52921,	-- 
+							}),
 							]]--
 						}),
 						n(-16, {	-- Rares

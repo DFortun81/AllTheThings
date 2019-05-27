@@ -2485,12 +2485,15 @@ _.Zones =
 						["qg"] = 93967,	-- Lyndras
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 					}),
-					qg(89341, q(37727, {	-- The Magister of Mixology
-						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
-					})),
+					q(37727, {	-- The Magister of Mixology
+						["qg"] = 89341,	-- Magister Garuhod
+						["g"]  = {
+							i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
+						},
+					}),
 					q(37728, {	-- Presentation is Everything
-						["qg"] = 89341,
-						["sourceQuest"] = 37727,
+						["qg"] = 89341,	-- Magister Garuhod
+						["sourceQuest"] = 37727,	-- The Magister of Mixology
 					}),
 					q(40210, {	-- Time Well Spent
 						["qg"] = 98964,	-- Celea

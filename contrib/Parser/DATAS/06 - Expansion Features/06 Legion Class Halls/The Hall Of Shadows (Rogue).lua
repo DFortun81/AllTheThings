@@ -79,19 +79,30 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-17, {	-- Quests
-					qg(101513, q(45571)),	-- A Bit of Espionage 
-					qg(101513, q(43958)),	-- A Body of Evidence 
-					qg(98100, q(43485)),	-- A Burning Distraction 
-					qart(qg(94159, q(40847, {	-- A Friendly Accord 
+					q(45571, {	-- A Bit of Espionage
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					}),
+					q(43958, {	-- A Body of Evidence
+						["qg"] = 101513,	-- Lord Jorach Ravenholdt
+					}),
+					q(43485, {	-- A Burning Distraction
+						["qg"] = 98100,	-- Taoshi
+					}),
+					qart(q(40847, {	-- A Friendly Accord
+						["qg"] = 94159,	-- Fleet Admiral Tethys
 						["classes"] = {4},
-					}))),								
-					qart(qg(113362, q(43422, {	-- A Hero's Weapon 
+					})),
+					qart(q(43422, {	-- A Hero's Weapon
+						["qg"] = 113362,	-- Lord Jorach Ravenholdt
 						["classes"] = {4},
-					}))),	
-					qart(qg(98102, q(41920, {	-- A Matter of Finesse 
+					})),
+					qart(q(41920, {	-- A Matter of Finesse
+						["qg"] = 98102,	-- Valeera Sanguinara
 						["classes"] = {4},
-					}))),						
-					qg(98092, q(42140)),	-- A More Wretched Hive of Scum and Villainy 
+					})),
+					q(42140, {
+						["qg"] = 98092,	-- Nikki the Gossip
+					}),	-- A More Wretched Hive of Scum and Villainy
 					qa(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
 						["classes"] = {4},

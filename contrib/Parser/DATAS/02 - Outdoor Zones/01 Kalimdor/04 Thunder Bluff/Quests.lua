@@ -8,38 +8,48 @@ _.Zones =
 			["groups"] = {
 				n(-17, {	-- Quests
 --[[
-					qg(3034, qh(27283, {	-- A Journey to Moonglade
+					qh(27283, {	-- A Journey to Moonglade
+						["qg"] = 3034,	-- Sheal Runetotem
 						["classes"] = {11},
-					})),
-					qg(3047, qh(27277, {	-- An Audience with Ureda
+					}),
+					qh(27277, {	-- An Audience with Ureda
+						["qg"] = 3047,	-- Archmage Shymm
 						["classes"] = {8},
-					})),
-					qg(34679, qh(14041)),	-- Cranberry Chutney
-					qg(3045, q(27334, {	-- Dark Cleric Cecille
+					}),
+					q(27334, {	-- Dark Cleric Cecille
+						["qg"] = 3045,	-- Malakai Cross
 						["classes"] = {5},
 						["races"] = {5},
-					})),
-					qg(3441, qh(1205)),	-- Deadmire
+					}),
+					qh(1205, {	-- Deadmire
+						["qg"] = 3441,	-- Melor Stonehoof
+					}),
 --]]
-					qg(36648, qh(31036)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR TAUREN)
+					qh(31036, {	-- Enemies Below (MAY ONLY BE AVAILABLE FOR TAUREN)
+						["qg"] = 36648,	-- Baine Bloodhoof
+					}),
 --[[
-					qg(43795, qh(27304, {	-- Follow the Sun
+					qh(27304, {	-- Follow the Sun
+						["qg"] = 43795,	-- 
 						["classes"] = {2},
-					})),
+					}),
 					qh(768, {    -- Gathering Leather
 						["qg"] = 3050,    -- Veren Tallstrider
 						["requireSkill"] = 393,    -- Skinning
 					}),
-					qg(3042, qh(27281, {	-- Grezz Ragefist
+					qh(27281, {	-- Grezz Ragefist
+						["qg"] = 3042,	-- 
 						["classes"] = {1},
-					})),
-					qg(3039, qh(27278, {	-- Grimshot's Call
+					}),
+					qh(27278, {	-- Grimshot's Call
+						["qg"] = 3039,	-- 
 						["classes"] = {3},
-					})),
-					qg(43870, q(27335, {	-- Journey to Orgrimmar
+					}),
+					q(27335, {	-- Journey to Orgrimmar
+						["qg"] = 43870,	-- 
 						["classes"] = {5},
 						["races"] = {10},
-					})),
+					}),
 --]]
 					qh(769, {	-- Kodo Hide Bag
 						["qg"] = 3050,	-- Veren Tallstrider
@@ -49,38 +59,53 @@ _.Zones =
 						},
 					}),
 --[[
-					qg(43881, qh(27282, {	-- Kranosh's Behest
+					qh(27282, {	-- Kranosh's Behest
+						["qg"] = 43881,	-- 
 						["classes"] = {9},
-					})),
-					qg(3045, qh(28323)),	-- Meet with Brother Silverhallow
-					qg(3045, q(28304, {	-- Meet with Dark Cleric Cecille
+					}),
+					qh(28323, {	-- Meet with Brother Silverhallow
+						["qg"] = 3045,	-- 
+					}),
+					q(28304, {	-- Meet with Dark Cleric Cecille
+						["qg"] = 3045,	-- 
 						["classes"] = {5},
 						["races"] = {5},
-					})),
-					qg(3042, qh(28290, {	-- Meet with Grezz Ragefist
+					}),
+					qh(28290, {	-- Meet with Grezz Ragefist
+						["qg"] = 3042,	-- 
 						["classes"] = {1},
-					})),
-					qg(43881, qh(28299, {	-- Meet with Kranosh
+					}),
+					qh(28299, {	-- Meet with Kranosh
+						["qg"] = 43881,	-- 
 						["classes"] = {9},
-					})),
-					qg(3039, qh(28297, {	-- Meet with Ormak Grimshot
+					}),
+					qh(28297, {	-- Meet with Ormak Grimshot
+						["qg"] = 3039,	-- 
 						["classes"] = {3},
-					})),
-					qg(43870, qh(28308)),	-- Meet with Seer Liwatha
-					qg(51639, qh(28301, {	-- Meet with Terga Earthbreaker
+					}),
+					qh(28308, {	-- Meet with Seer Liwatha
+						["qg"] = 43870,	-- 
+					}),
+					qh(28301, {	-- Meet with Terga Earthbreaker
+						["qg"] = 51639,	-- 
 						["classes"] = {7},
-					})),
-					qg(30458, q(28307, {	-- Meet with Tyelis
+					}),
+					q(28307, {	-- Meet with Tyelis
+						["qg"] = 30458,	-- 
 						["classes"] = {5},
 						["races"] = {10},
-					})),
-					qg(3047, qh(28300, {	-- Meet with Ureda
+					}),
+					qh(28300, {	-- Meet with Ureda
+						["qg"] = 3047,	-- 
 						["classes"] = {8},
-					})),
-					qg(3034, q(28289, {	-- Moonglade Calls
+					}),
+					q(28289, {	-- Moonglade Calls
+						["qg"] = 3034,	-- 
 						["classes"] = {11},
-					})),
-					qg(3978, qh(2965)),	-- Portents of Uldum
+					}),
+					qh(2965, {	-- Portents of Uldum
+						["qg"] = 3978,	-- 
+					}),
 --]]
 					{	-- Magatha's Payment to Jediga
 						["questID"] = 3562,
@@ -105,16 +130,16 @@ _.Zones =
 					},
 					{	-- Return to Krog
 						["questID"] = 27292,
-						["groups"] = {
-							i(33267),	-- Fleshripper
-							i(33259),	-- Crimson Barbut
-							i(156977),	-- Serrated Gladius
-						},
 						["qg"] = 4943,	-- Mosarn
 						["lvl"] = 35,
 						["coord"] = { 54.1, 80.7 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 27258,	-- The Black Shield
+						["groups"] = {
+							i(33267),	-- Fleshripper
+							i(33259),	-- Crimson Barbut
+							i(156977),	-- Serrated Gladius
+						},
 					},
 					{	-- Return to Varg
 						["questID"] = 6364,
@@ -131,26 +156,32 @@ _.Zones =
 						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
 					},
 --[[
-					qg(43870, qh(28164, {	-- Seek Brother Silverhallow
+					qh(28164, {	-- Seek Brother Silverhallow
+						["qg"] = 43870,	-- 
 						["classes"] = {5},
-					})),
-					qg(43795, q(27298, {	-- Seek Out Master Pyreanor
+					}),
+					q(27298, {	-- Seek Out Master Pyreanor
+						["qg"] = 43795,	-- 
 						["classes"] = {2},
 						["races"] = {10},
-					})),
-					qg(43870, q(27332, {	-- Seek the Shadow-Walker
+					}),
+					q(27332, {	-- Seek the Shadow-Walker
+						["qg"] = 43870,	-- 
 						["classes"] = {5},
 						["races"] = {8},
-					})),
-					qg(51639, qh(27280, {	-- The Earthbreaker Calls
+					}),
+					qh(27280, {	-- The Earthbreaker Calls
+						["qg"] = 51639,	-- 
 						["classes"] = {7},
-					})),
-					qg(3045, qh(27331, {	-- The Seer's Call
+					}),
+					qh(27331, {	-- The Seer's Call
+						["qg"] = 3045,	-- 
 						["classes"] = {5},
-					})),
-					qg(36648, q(26397, {	-- Walk With The Earth Mother
+					}),
+					q(26397, {	-- Walk With The Earth Mother
+						["qg"] = 36648,	-- 
 						["races"] = {6},
-					})),
+					}),
 --]]
 					{	-- Until Death Do Us Part
 						["questID"] = 264,

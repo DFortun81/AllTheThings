@@ -11,8 +11,12 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			d(1, {		-- Normal
 				n(-17, {	-- Quests
-					qg(64738, q(31493)),	-- Just for Safekeeping, Of Course
-					qg(64738, q(31490)),	-- Rank and File
+					q(31493, {	-- Just for Safekeeping, Of Course
+						["qg"] = 64738,	-- Hooded Crusader
+					}),
+					q(31490, {	-- Rank and File
+						["qg"] = 64738,	-- Hooded Crusader
+					}),
 				}),
 				n(0, { 		-- Zone Drop
 					i(7754, {    -- Harbinger Boots

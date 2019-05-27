@@ -11,22 +11,30 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["groups"] = {
 					n(-17, {	-- Quests
-						{
-							["questID"] = 29188,	-- A Troll Among Trolls
+						{	-- A Troll Among Trolls
+							["questID"] = 29188,
 							["qg"] = 23761,	-- Quest Giver: Prigmon
 							["u"] = 2,			-- Legacy Content
 						},
-						qg(52933, q(29217)),	-- The Captive Scouts
-						qg(52925, q(29186, {	-- The Hex Lord's Fetish
-							i(69595),	-- Fetish Greaves
-							i(69594),	-- T'wansi's Handwraps
-							i(69596),	-- Voodoo Hunting Bow
-							i(69748),	-- Tattered Hexcloth Bag
-						})),
-						qg(52924, q(11196, {	-- Warlord of the Amani
-							i(69599),	-- Pauldrons of Ambition
-							i(69598),	-- Robes of Dissention
-						})),
+						q(29217, {	-- The Captive Scouts
+							["qg"] = 52933,	-- Blood Guard Hakkuz
+						}),
+						q(29186, {	-- The Hex Lord's Fetish
+							["qg"] = 52925,	-- Witch Doctor T'wansi
+							["g"] = {
+								i(69595),	-- Fetish Greaves
+								i(69594),	-- T'wansi's Handwraps
+								i(69596),	-- Voodoo Hunting Bow
+								i(69748),	-- Tattered Hexcloth Bag
+							},
+						}),
+						q(11196, {	-- Warlord of the Amani
+							["qg"] = 52924,	-- Vol'jin
+							["g"] = {
+								i(69599),	-- Pauldrons of Ambition
+								i(69598),	-- Robes of Dissention
+							},
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						i(69801, {	-- Amani Armguards
