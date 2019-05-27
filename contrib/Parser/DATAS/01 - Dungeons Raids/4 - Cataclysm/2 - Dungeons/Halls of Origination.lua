@@ -62,13 +62,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56410),	-- Belt of Petrified Tears
 					i(56408),	-- Awakening Footfalls
 					i(56407),	-- Anhuur's Hymnal
-					nld({     	-- Legacy
-						un(2, i(55888)),	-- Darkhowl Amulet (7.3.5 - Removed from Game!)
-						un(2, i(55886)),	-- Poison Fang Bracers (7.3.5 - Removed from Game!)
-						un(2, i(55887)),	-- Belt of Petrified Tears (7.3.5 - Removed from Game!)
-						un(2, i(55890)),	-- Awakening Footfalls (7.3.5 - Removed from Game!)
-						un(2, i(55889)),	-- Anhuur's Hymnal (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55888)),	-- Darkhowl Amulet (7.3.5 - Removed from Game!)
+					un(2, i(55886)),	-- Poison Fang Bracers (7.3.5 - Removed from Game!)
+					un(2, i(55887)),	-- Belt of Petrified Tears (7.3.5 - Removed from Game!)
+					un(2, i(55890)),	-- Awakening Footfalls (7.3.5 - Removed from Game!)
+					un(2, i(55889)),	-- Anhuur's Hymnal (7.3.5 - Removed from Game!)
 				})),
 				cr(39428, e(125, {	-- Earthrager Ptah
 					i(56424),	-- Soul Releaser
@@ -76,13 +74,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56422),	-- Mouth of the Earth
 					i(56425),	-- Breastplate of the Risen Land
 					i(56423),	-- Underworld Cord
-					nld({     	-- Legacy
-						un(2, i(56097)),	-- Soul Releaser (7.3.5 - Removed from Game!)
-						un(2, i(56096)),	-- Bulwark of the Primordial Mound (7.3.5 - Removed from Game!)
-						un(2, i(56095)),	-- Mouth of the Earth (7.3.5 - Removed from Game!)
-						un(2, i(56093)),	-- Breastplate of the Risen Land (7.3.5 - Removed from Game!)
-						un(2, i(56094)),	-- Underworld Cord (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(56097)),	-- Soul Releaser (7.3.5 - Removed from Game!)
+					un(2, i(56096)),	-- Bulwark of the Primordial Mound (7.3.5 - Removed from Game!)
+					un(2, i(56095)),	-- Mouth of the Earth (7.3.5 - Removed from Game!)
+					un(2, i(56093)),	-- Breastplate of the Risen Land (7.3.5 - Removed from Game!)
+					un(2, i(56094)),	-- Underworld Cord (7.3.5 - Removed from Game!)
 				})),
 				cr(39788, e(126, {	-- Anraphet
 					i(157611),  	-- Crown of Patient Vigil
@@ -91,13 +87,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(57869),  	-- Omega Breastplate
 					i(57870),  	-- Alpha Bracers
 					i(57867),  	-- Boots of Crumbling Ruin
-					nld({     	-- Legacy
-						un(2, i(57858)),	-- Mantle of Soft Shadows (7.3.5 - Removed from Game!)
-						un(2, i(57860)),	-- Anraphet's Regalia (7.3.5 - Removed from Game!)
-						un(2, i(57856)),	-- Omega Breastplate (7.3.5 - Removed from Game!)
-						un(2, i(57855)),	-- Alpha Bracers (7.3.5 - Removed from Game!)
-						un(2, i(57857)),	-- Boots of Crumbling Ruin (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(57858)),	-- Mantle of Soft Shadows (7.3.5 - Removed from Game!)
+					un(2, i(57860)),	-- Anraphet's Regalia (7.3.5 - Removed from Game!)
+					un(2, i(57856)),	-- Omega Breastplate (7.3.5 - Removed from Game!)
+					un(2, i(57855)),	-- Alpha Bracers (7.3.5 - Removed from Game!)
+					un(2, i(57857)),	-- Boots of Crumbling Ruin (7.3.5 - Removed from Game!)
 				})),
 				cr(39587, e(127, {	-- Isiset, Construct of Magic
 					i(157609), 	-- Scepter of Stargazing
@@ -106,25 +100,21 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56415),	-- Nova Band
 					i(56412),	-- Ring of Blinding Stars
 					i(56414),	-- Blood of Isiset
-					nld({     	-- Legacy
-						un(2, i(55992)),	-- Armguards of Unearthly Light (7.3.5 - Removed from Game!)
-						un(2, i(55993)),	-- Legwraps of Astral Rain (7.3.5 - Removed from Game!)
-						un(2, i(55996)),	-- Nova Band (7.3.5 - Removed from Game!)
-						un(2, i(55994)),	-- Ring of Blinding Stars (7.3.5 - Removed from Game!)
-						un(2, i(55995)),	-- Blood of Isiset (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55992)),	-- Armguards of Unearthly Light (7.3.5 - Removed from Game!)
+					un(2, i(55993)),	-- Legwraps of Astral Rain (7.3.5 - Removed from Game!)
+					un(2, i(55996)),	-- Nova Band (7.3.5 - Removed from Game!)
+					un(2, i(55994)),	-- Ring of Blinding Stars (7.3.5 - Removed from Game!)
+					un(2, i(55995)),	-- Blood of Isiset (7.3.5 - Removed from Game!)
 				})),
 				cr(39731, e(128, {	-- Ammunae, Construct of Life
 					i(56421),	-- Seedling Pod
 					i(56419), 	-- Bloodpetal Mantle
 					i(56417), 	-- Robes of Rampant Growth
 					i(56418),	-- Band of Life Energy
-					nld({     	-- Legacy
-						un(2, i(55999)),	-- Seedling Pod (7.3.5 - Removed from Game!)
-						un(2, i(55997)),	-- Bloodpetal Mantle (7.3.5 - Removed from Game!)
-						un(2, i(55998)),	-- Robes of Rampant Growth (7.3.5 - Removed from Game!)
-						un(2, i(56000)),	-- Band of Life Energy (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55999)),	-- Seedling Pod (7.3.5 - Removed from Game!)
+					un(2, i(55997)),	-- Bloodpetal Mantle (7.3.5 - Removed from Game!)
+					un(2, i(55998)),	-- Robes of Rampant Growth (7.3.5 - Removed from Game!)
+					un(2, i(56000)),	-- Band of Life Energy (7.3.5 - Removed from Game!)
 				})),
 				cr(39732, e(129, {	-- Setesh, Construct of Destruction
 					i(57872), 	-- Scepter of Power
@@ -132,13 +122,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(57871), 	-- Helm of the Typhonic Beast
 					i(57874), 	-- Hieroglyphic Vest
 					i(57875), 	-- Chaotic Wrappings
-					nld({     	-- Legacy
-						un(2, i(57865)),	-- Scepter of Power (7.3.5 - Removed from Game!)
-						un(2, i(57861)),	-- Helm of Setesh (7.3.5 - Removed from Game!)
-						un(2, i(57864)),	-- Helm of the Typhonic Beast (7.3.5 - Removed from Game!)
-						un(2, i(57863)),	-- Hieroglyphic Vest (7.3.5 - Removed from Game!)
-						un(2, i(57862)),	-- Chaotic Wrappings (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(57865)),	-- Scepter of Power (7.3.5 - Removed from Game!)
+					un(2, i(57861)),	-- Helm of Setesh (7.3.5 - Removed from Game!)
+					un(2, i(57864)),	-- Helm of the Typhonic Beast (7.3.5 - Removed from Game!)
+					un(2, i(57863)),	-- Hieroglyphic Vest (7.3.5 - Removed from Game!)
+					un(2, i(57862)),	-- Chaotic Wrappings (7.3.5 - Removed from Game!)
 				})),
 				cr(39378, e(130, {	-- Rajh, Construct of Sun
 					{	-- Halls of Origination
@@ -154,18 +142,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56432),	-- Band of Rays
 					i(56427),	-- Left Eye of Rajh
 					i(56431),	-- Right Eye of Rajh
-					nld({     	-- Legacy
-						un(2, i(56108)),	-- Blade of the Burning Sun (7.3.5 - Removed from Game!)
-						un(2, i(56101)),	-- Sun Strike (7.3.5 - Removed from Game!)
-						un(2, i(56107)),	-- Solar Wind Cloak (7.3.5 - Removed from Game!)
-						un(2, i(56099)),	-- Fingers of Light (7.3.5 - Removed from Game!)
-						un(2, i(56098)),	-- Red Beam Cord (7.3.5 - Removed from Game!)
-						un(2, i(56104)),	-- Legguards of Noon (7.3.5 - Removed from Game!)
-						un(2, i(56105)),	-- Hekatic Slippers (7.3.5 - Removed from Game!)
-						un(2, i(56106)),	-- Band of Rays (7.3.5 - Removed from Game!)
-						un(2, i(56102)),	-- Left Eye of Rajh (7.3.5 - Removed from Game!)
-						un(2, i(56100)),	-- Right Eye of Rajh (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(56108)),	-- Blade of the Burning Sun (7.3.5 - Removed from Game!)
+					un(2, i(56101)),	-- Sun Strike (7.3.5 - Removed from Game!)
+					un(2, i(56107)),	-- Solar Wind Cloak (7.3.5 - Removed from Game!)
+					un(2, i(56099)),	-- Fingers of Light (7.3.5 - Removed from Game!)
+					un(2, i(56098)),	-- Red Beam Cord (7.3.5 - Removed from Game!)
+					un(2, i(56104)),	-- Legguards of Noon (7.3.5 - Removed from Game!)
+					un(2, i(56105)),	-- Hekatic Slippers (7.3.5 - Removed from Game!)
+					un(2, i(56106)),	-- Band of Rays (7.3.5 - Removed from Game!)
+					un(2, i(56102)),	-- Left Eye of Rajh (7.3.5 - Removed from Game!)
+					un(2, i(56100)),	-- Right Eye of Rajh (7.3.5 - Removed from Game!)
 				})),
 			}),
 			d(2, {	-- Heroic
@@ -197,9 +183,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								39802,	-- Water Warden
 							},
 						}),
-						nld({     	-- Legacy
-							un(2, i(56438)),	-- Book of Origination									
-						}),
+						un(2, i(56438)),	-- Book of Origination
 					}),
 					cr(39425, e(124, {	-- Temple Guardian Anhuur
 						ach(5293),	-- I Hate That Song

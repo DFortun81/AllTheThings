@@ -71,13 +71,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56360),	-- Red Sky Pendant
 					i(56359),	-- Fallen Snow Shoulderguards
 					i(56356),	-- Stratosphere Belt
-					nld({	-- Legacy
-						un(2, i(55834)),	-- Biting Wind (7.3.5 - Removed from Game!)
-						un(2, i(55831)),	-- Headcover of Fog (7.3.5 - Removed from Game!)
-						un(2, i(55833)),	-- Red Sky Pendant (7.3.5 - Removed from Game!)
-						un(2, i(55832)),	-- Fallen Snow Shoulderguards (7.3.5 - Removed from Game!)
-						un(2, i(55830)),	-- Stratosphere Belt (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55834)),	-- Biting Wind (7.3.5 - Removed from Game!)
+					un(2, i(55831)),	-- Headcover of Fog (7.3.5 - Removed from Game!)
+					un(2, i(55833)),	-- Red Sky Pendant (7.3.5 - Removed from Game!)
+					un(2, i(55832)),	-- Fallen Snow Shoulderguards (7.3.5 - Removed from Game!)
+					un(2, i(55830)),	-- Stratosphere Belt (7.3.5 - Removed from Game!)
 				})),
 				cr(43873, e(115, {	-- Altairus
 					i(63040),	-- Reins of the Drake of the North Wind (MOUNT!)
@@ -88,13 +86,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56363),	-- Hail-Strung Belt
 					i(157605),	-- Sandals of the West Wind
 					i(56365),	-- Skyshard Ring
-					nld({	-- Legacy
-						un(2, i(55841)),	-- Axe of the Eclipse (7.3.5 - Removed from Game!)
-						un(2, i(55840)),	-- Amulet of Tender Breath (7.3.5 - Removed from Game!)
-						un(2, i(55838)),	-- Mantle of Bestilled Winds (7.3.5 - Removed from Game!)
-						un(2, i(55835)),	-- Hail-Strung Belt (7.3.5 - Removed from Game!)
-						un(2, i(55839)),	-- Skyshard Ring (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55841)),	-- Axe of the Eclipse (7.3.5 - Removed from Game!)
+					un(2, i(55840)),	-- Amulet of Tender Breath (7.3.5 - Removed from Game!)
+					un(2, i(55838)),	-- Mantle of Bestilled Winds (7.3.5 - Removed from Game!)
+					un(2, i(55835)),	-- Hail-Strung Belt (7.3.5 - Removed from Game!)
+					un(2, i(55839)),	-- Skyshard Ring (7.3.5 - Removed from Game!)
 				})),
 				cr(43875, e(116, {	-- Asaad, Caliph of Zephyrs
 					ach(4847),    -- The Vortex Pinnacle
@@ -107,18 +103,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56367),	-- Legguards of Winnowing Wind
 					i(56373),	-- Ring of Frozen Rain
 					i(56370),	-- Heart of Thunder
-					nld({	-- Legacy
-						un(2, i(55846)),	-- Lightningflash (7.3.5 - Removed from Game!)
-						un(2, i(55848)),	-- Thundercall (7.3.5 - Removed from Game!)
-						un(2, i(55853)),	-- Lunar Halo (7.3.5 - Removed from Game!)
-						un(2, i(55847)),	-- Billowing Cape (7.3.5 - Removed from Game!)
-						un(2, i(55850)),	-- Shadow of Perfect Bliss (7.3.5 - Removed from Game!)
-						un(2, i(55844)),	-- Gloves of Haze (7.3.5 - Removed from Game!)
-						un(2, i(55849)),	-- Leggings of Iridescent Clouds (7.3.5 - Removed from Game!)
-						un(2, i(55842)),	-- Legguards of Winnowing Wind (7.3.5 - Removed from Game!)
-						un(2, i(55851)),	-- Ring of Frozen Rain (7.3.5 - Removed from Game!)
-						un(2, i(55845)),	-- Heart of Thunder (7.3.5 - Removed from Game!)
-					}),
+					un(2, i(55846)),	-- Lightningflash (7.3.5 - Removed from Game!)
+					un(2, i(55848)),	-- Thundercall (7.3.5 - Removed from Game!)
+					un(2, i(55853)),	-- Lunar Halo (7.3.5 - Removed from Game!)
+					un(2, i(55847)),	-- Billowing Cape (7.3.5 - Removed from Game!)
+					un(2, i(55850)),	-- Shadow of Perfect Bliss (7.3.5 - Removed from Game!)
+					un(2, i(55844)),	-- Gloves of Haze (7.3.5 - Removed from Game!)
+					un(2, i(55849)),	-- Leggings of Iridescent Clouds (7.3.5 - Removed from Game!)
+					un(2, i(55842)),	-- Legguards of Winnowing Wind (7.3.5 - Removed from Game!)
+					un(2, i(55851)),	-- Ring of Frozen Rain (7.3.5 - Removed from Game!)
+					un(2, i(55845)),	-- Heart of Thunder (7.3.5 - Removed from Game!)
 				})),
 			}),
 			d(2,   {	-- Heroic

@@ -1981,6 +1981,7 @@ _.NeverImplemented =
 			un(1, i(150612)),	-- Marksman Recurve Bow
 
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
+			un(1, i(111783)),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		n(-346, {	-- Crossbows
 			un(1, i(32187)),   	-- Chancellor's Heavy Crossbow

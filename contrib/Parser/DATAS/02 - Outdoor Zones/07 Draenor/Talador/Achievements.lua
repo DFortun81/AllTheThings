@@ -19,7 +19,13 @@ _.Zones =
 						},
 					},
 				}),
-				ach(10067, {	-- In Pursuit of Gul'dan (Alliance) (Garrison)
+				ach(10067, 10074, {	-- In Pursuit of Gul'dan(Garrison) [A] / [H]
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["g"] = {
+						crit(5),	-- The Fate of Teron'gor [A] / [H]
+					},
+				}),
+				--[[ach(10067, {	-- In Pursuit of Gul'dan (Alliance) (Garrison)
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -32,7 +38,7 @@ _.Zones =
 					["g"] = {
 						crit(5),	-- The Fate of Teron'gor
 					},
-				}),
+				}),]]
 				ach(9674,  {	-- I Want More Talador
 					crit(1),		-- Bonus Objective: Aruuna's Desolation
 					crit(2),		-- Bonus Objective: Court of Souls

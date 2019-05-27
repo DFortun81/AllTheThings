@@ -23,15 +23,13 @@ _.WorldEvents =
 				un(10, i(54068)),	-- Wooly White Rhino
 				un(10, i(49285)),	-- X-51 Nether-Rocket
 				un(10, i(49286)),	-- X-51 Nether-Rocket X-TREME
-				nld({	-- Legacy
-					un(10, i(38576)),	-- Big Battle Bear
-					un(10, i(74269)),	-- Blazing Hippogryph
-					un(10, i(46778)),	-- Magic Rooster Egg
-					un(10, i(33224)),	-- Spectral Tiger
-					un(10, i(33225)),	-- Swift Spectral Tiger
-					un(10, i(35225)),	-- X-51 Nether-Rocket
-					un(10, i(35226)),	-- X-51 Nether-Rocket X-TREME
-				}),
+				un(10, i(38576)),	-- Big Battle Bear
+				un(10, i(74269)),	-- Blazing Hippogryph
+				un(10, i(46778)),	-- Magic Rooster Egg
+				un(10, i(33224)),	-- Spectral Tiger
+				un(10, i(33225)),	-- Swift Spectral Tiger
+				un(10, i(35225)),	-- X-51 Nether-Rocket
+				un(10, i(35226)),	-- X-51 Nether-Rocket X-TREME
 			}),
 			n(-25, {	-- Pet Battles
 				un(10, i(50301, {	-- Landro's Pet Box
