@@ -45,7 +45,30 @@ _.Zones =
 							{	-- Poisoning the Well (Iron Siegeworks)
 								["achievementID"] = 9710,	-- Poisoning the Well (Iron Siegeworks)
 							},
-							{	-- Securing Draenor (Alliance)
+							{	-- Securing Draenor [A] / [H]
+								-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
+								["allianceAchievementID"] = 9564,	-- Securing Draenor [A]
+								["hordeAchievementID"] = 9562,		-- Securing Draenor [H]
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+								["g"] = {
+									{	-- Assault on the Iron Siegeworks [A] / [H]
+										["allianceAchievementID"] = 9564,	-- Securing Draenor [A]
+										["hordeAchievementID"] = 9562,		-- Securing Draenor [H]
+										["criteriaID"] = 1,					-- Assault on the Iron Siegeworks [A] / [H]
+									},
+									{	-- Assault on Stonefury Cliffs [A] / [H]
+										["allianceAchievementID"] = 9564,	-- Securing Draenor [A]
+										["hordeAchievementID"] = 9562,		-- Securing Draenor [H]
+										["criteriaID"] = 2,					-- Assault on Stonefury Cliffs [A] / [H]
+									},
+									{	--Assault on Magnarok [A] / [H]
+										["allianceAchievementID"] = 9564,	-- Securing Draenor [A]
+										["hordeAchievementID"] = 9562,		-- Securing Draenor [H]
+										["criteriaID"] = 3,					--Assault on Magnarok [A] / [H]
+									},
+								}
+							},
+							--[[{	-- Securing Draenor (Alliance)
 								-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
 								["achievementID"] = 9564,	-- Securing Draenor (Alliance)
 								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -84,21 +107,22 @@ _.Zones =
 										["criteriaID"] = 2,		-- Assault on Stonefury Cliffs
 									},
 								},
-							},
+							},]]
 							{	-- Slagnarok (Magnarok)
 								["achievementID"] = 9536,	-- Slagnarok (Magnarok)
 							},
 							{	-- That Was Entirely Unnecessary (Magnarok)
 								["achievementID"] = 9535,	-- That Was Entirely Unnecessary (Magnarok)
 							},
-							{	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
+							ach(9530, 9531),	-- Writing in the Snow(Bloodmaul Stronghold) [A] / [H]
+							--[[{	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
 								["achievementID"] = 9530,	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
 								["races"] = ALLIANCE_ONLY,
 							},
 							{	-- Writing in the Snow (Horde) (Bloodmaul Stronghold)
 								["achievementID"]= 9531,	-- Writing in the Snow (Horde) (Bloodmaul Stronghold)
 								["races"] = HORDE_ONLY,
-							},
+							},]]
 						},
 					},
 				},
