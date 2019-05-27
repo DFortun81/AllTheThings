@@ -20,15 +20,15 @@ _.Zones =
 						}),
 						o(213651, { 	-- Equipment Locker
 							["groups"] = {
-								dr(20.0, i(86122)),	-- Plankwalking Greaves
-								dr(19.0, i(86115)),	-- Swashbuckling Boots
-								dr(18.0, i(86117)),	-- Seafarer's Treads of Precision
-								dr(16.0, i(86116)),	-- Agile Seafarer's Jackboots
-								dr(09.0, i(86123)),	-- Seafarer's Sturdy Boots
-								dr(08.0, i(86118)),	-- Seafaring Advisor's Slippers
-								dr(05.0, i(86119)),	-- Seafarer's Boots of Meditation
-								dr(04.0, i(86120)),	-- Seafaring Sabatons of Meditation
-								dr(00.9, i(86121)),	-- Radiant Seafarer's Boots
+								i(86122),	-- Plankwalking Greaves
+								i(86115),	-- Swashbuckling Boots
+								i(86117),	-- Seafarer's Treads of Precision
+								i(86116),	-- Agile Seafarer's Jackboots
+								i(86123),	-- Seafarer's Sturdy Boots
+								i(86118),	-- Seafaring Advisor's Slippers
+								i(86119),	-- Seafarer's Boots of Meditation
+								i(86120),	-- Seafaring Sabatons of Meditation
+								i(86121),	-- Radiant Seafarer's Boots
 							},
 							["coord"] = { 42.3, 92.0 },
 							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
@@ -1372,20 +1372,16 @@ _.Zones =
 							{ 56.2, 46.8, 418 },
 						},
 						["groups"] = {
-							dr(14, i(90723)),	-- Arnness's Scaled Leggings
-							dr(12, i(87612)),	-- Ancient Krasari Helm
-							dr(11, {
-								i(87604),	-- Beachcomber's Hat
-								i(87609),	-- Brushstalker Helm
-								i(87610),	-- Deepwild Hunting Helm
-								i(87608),	-- Korjan Mystic's Hood
-								i(87606),	-- Tidehunter Helm
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87605),	-- Crest of the Red Crane
-								i(87611),	-- Shen-zin Shell Headguard
-							}),
+							i(90723),	-- Arnness's Scaled Leggings
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87605),	-- Crest of the Red Crane
+							i(87611),	-- Shen-zin Shell Headguard
 						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
@@ -1398,18 +1394,16 @@ _.Zones =
 					n(50768, {	-- Cournith Waterstrider
 						["coord"] = { 30.6, 38.2, 418 },
 						["groups"] = {
-							dr(15, i(90721)),	-- Cournith Waterstrider's Silken Finery
-							dr(11, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87604),	-- Beachcomber's Hat
-								i(87609),	-- Brushstalker Helm
-								i(87605),	-- Crest of the Red Crane
-								i(87610),	-- Deepwild Hunting Helm
-								i(87608),	-- Korjan Mystic's Hood
-								i(87611),	-- Shen-zin Shell Headguard
-								i(87606),	-- Tidehunter Helm
-							}),
-							dr(10, i(87607)),	-- Unearthed Dojani Headcover
+							i(90721),	-- Cournith Waterstrider's Silken Finery
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
 						},
 					}),
 					n(68318, {	-- Dalan Nightbreaker
@@ -1418,7 +1412,7 @@ _.Zones =
 							{ 89.6, 22.4, 418 },
 						},
 						["groups"] = {
-							dr(29, i(92783)),	-- Mark of the Hardened Grunt
+							i(92783),	-- Mark of the Hardened Grunt
 						},
 					}),
 					n(66934, {	-- Damlak
@@ -1436,28 +1430,22 @@ _.Zones =
 					n(68319, {	-- Disha Fearwarden
 						["coord"] = { 87.4, 29.2, 418 },
 						["groups"] = {
-							dr(26, i(92787)),	-- Horde Insignia of Conquering
+							i(92787),	-- Horde Insignia of Conquering
 						},
 					}),
 					n(50331, {	-- Go-Kan
 						["coord"] = { 39.4, 28.8, 418 },
 						["groups"] = {
-							dr(15, i(90719)),	-- Go-Kan's Golden Trousers
-							dr(12, {
-								i(87608),	-- Korjan Mystic's Hood
-								i(87611),	-- Shen-zin Shell Headguard
-							}),
-							dr(11, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87604),	-- Beachcomber's Hat
-								i(87609),	-- Brushstalker Helm
-								i(87606),	-- Tidehunter Helm
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87605),	-- Crest of the Red Crane
-								i(87610),	-- Deepwild Hunting Helm
-							}),
+							i(90719),	-- Go-Kan's Golden Trousers
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
 						},
 					}),
 					n(50340, {	-- Gaarn the Toxic
@@ -1471,20 +1459,16 @@ _.Zones =
 							{ 53.6, 38.8, 418 },
 						},
 						["groups"] = {
-							dr(14, i(90725)),	-- Gaarn's Leggings of Infestation
-							dr(11, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87604),	-- Beachcomber's Hat
-								i(87609),	-- Brushstalker Helm
-								i(87611),	-- Shen-zin Shell Headguard
-								i(87606),	-- Tidehunter Helm
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87605),	-- Crest of the Red Crane
-								i(87610),	-- Deepwild Hunting Helm
-								i(87608),	-- Korjan Mystic's Hood
-							}),
+							i(90725),	-- Gaarn's Leggings of Infestation
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
 						},
 					}),
 					n(68321, {	-- Kar Warmaker
@@ -1493,17 +1477,17 @@ _.Zones =
 							{ 14.0, 57.0, 418 },
 						},
 						["groups"] = {
-							dr(29, i(92782)),	-- Steadfast Footman's Medallion
+							i(92782),	-- Steadfast Footman's Medallion
 						},
 					}),
 					n(70323, {	-- Krakkanon
-						dr(14, {
-							["itemID"] = 88563,	-- Nat's Fishing Journal
+						{	-- Nat's Fishing Journal
+							["itemID"] = 88563,
 							--["questID"] = 31664,	-- An Angler's Quest
 							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\inv_misc_book_11",
 							["collectible"] = false,
-						}),
+						},
 					}),
 					n(68317, {	-- Mavis Harms
 						["coords"] = {
@@ -1511,7 +1495,7 @@ _.Zones =
 							{ 84.6, 31, 418 },
 						},
 						["groups"] = {
-							dr(29, i(92785)),	-- Kor'kron Book of Hurting
+							i(92785),	-- Kor'kron Book of Hurting
 						},
 					}),
 				 	n(68322, {	-- Muerta
@@ -1520,26 +1504,22 @@ _.Zones =
 							{ 9.6, 54.6, 418 },
 						},
 						["groups"] = {
-							dr(30, i(92786)),	-- Alliance Insignia of Conquering
+							i(92786),	-- Alliance Insignia of Conquering
 						},
 					}),
 					n(50352, {	-- Qu'nas
 						["coord"] = { 67.2, 23, 418 },
 						["groups"] = {
-							dr(16, i(90717)),	-- Qu'nas' Apocryphal Legplates
-							dr(12, {
-								i(87606),	-- Tidehunter Helm
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(11, {
-								i(87604),	-- Beachcomber's Hat
-								i(87609),	-- Brushstalker Helm
-								i(87605),	-- Crest of the Red Crane
-								i(87610),	-- Deepwild Hunting Helm
-								i(87608),	-- Korjan Mystic's Hood
-								i(87611),	-- Shen-zin Shell Headguard
-							}),
-							dr(10, i(87612)),	-- Ancient Krasari Helm
+							i(90717),	-- Qu'nas' Apocryphal Legplates
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87604),	-- Beachcomber's Hat
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87612),	-- Ancient Krasari Helm
 						},
 					}),
 					n(50816, {	-- Ruun Ghostpaw
@@ -1550,41 +1530,31 @@ _.Zones =
 							{ 42.8, 52.8, 418 },
 						},
 						["groups"] = {
-							dr(16, i(90720)),	-- Silent Leggings of the Ghostpaw
-							dr(12, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87610),	-- Deepwild Hunting Helm
-							}),
-							dr(11, {
-								i(87609),	-- Brushstalker Helm
-								i(87608),	-- Korjan Mystic's Hood
-								i(87611),	-- Shen-zin Shell Headguard
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87604),	-- Beachcomber's Hat
-								i(87605),	-- Crest of the Red Crane
-								i(87606),	-- Tidehunter Helm
-							}),
+							i(90720),	-- Silent Leggings of the Ghostpaw
+							i(87612),	-- Ancient Krasari Helm
+							i(87610),	-- Deepwild Hunting Helm
+							i(87609),	-- Brushstalker Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87604),	-- Beachcomber's Hat
+							i(87605),	-- Crest of the Red Crane
+							i(87606),	-- Tidehunter Helm
 						},
 					}),
 					n(50830, {	-- Spriggin
 						["coord"] = { 52.2, 88.8, 418 },
 						["groups"] = {
-							dr(14, i(90724)),	-- Spriggin's Sproggin' Leggin'
-							dr(11, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87604),	-- Beachcomber's Hat
-								i(87610),	-- Deepwild Hunting Helm
-								i(87611),	-- Shen-zin Shell Headguard
-								i(87606),	-- Tidehunter Helm
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87609),	-- Brushstalker Helm
-								i(87605),	-- Crest of the Red Crane
-								i(87608),	-- Korjan Mystic's Hood
-							}),
+							i(90724),	-- Spriggin's Sproggin' Leggin'
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87610),	-- Deepwild Hunting Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87606),	-- Tidehunter Helm
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87609),	-- Brushstalker Helm
+							i(87605),	-- Crest of the Red Crane
+							i(87608),	-- Korjan Mystic's Hood
 						},
 					}),
 					n(50388, {	-- Torik-Ethis
@@ -1594,28 +1564,22 @@ _.Zones =
 							{ 15.6, 35.6, 418 },
 						},
 						["groups"] = {
-							dr(13, i(90718)),	-- Torik-Ethis' Bloodied Legguards
-							dr(12, {
-								i(87609),	-- Brushstalker Helm
-								i(87608),	-- Korjan Mystic's Hood
-							}),
-							dr(11, {
-								i(87605),	-- Crest of the Red Crane
-								i(87610),	-- Deepwild Hunting Helm
-								i(87611),	-- Shen-zin Shell Headguard
-								i(87607),	-- Unearthed Dojani Headcover
-							}),
-							dr(10, {
-								i(87612),	-- Ancient Krasari Helm
-								i(87604),	-- Beachcomber's Hat
-								i(87606),	-- Tidehunter Helm
-							}),
+							i(90718),	-- Torik-Ethis' Bloodied Legguards
+							i(87609),	-- Brushstalker Helm
+							i(87608),	-- Korjan Mystic's Hood
+							i(87605),	-- Crest of the Red Crane
+							i(87610),	-- Deepwild Hunting Helm
+							i(87611),	-- Shen-zin Shell Headguard
+							i(87607),	-- Unearthed Dojani Headcover
+							i(87612),	-- Ancient Krasari Helm
+							i(87604),	-- Beachcomber's Hat
+							i(87606),	-- Tidehunter Helm
 						},
 					}),
 					n(68320, {	-- Ubunti the Shade
 						["coord"] = { 13.2, 66.0, 418 },
 						["groups"] = {
-							dr(28, i(92784)),	-- SI:7 Operative's Manual
+							i(92784),	-- SI:7 Operative's Manual
 						},
 					}),
 					{	-- Zandalari Warbringer
