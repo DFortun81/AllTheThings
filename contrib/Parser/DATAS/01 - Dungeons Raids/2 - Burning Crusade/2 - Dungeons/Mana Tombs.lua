@@ -29,10 +29,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(0, {	-- Zone Drops
 				n(18317, {	-- Ethereal Priest
-					dr(6.0, i(22543)),	-- Formula: Enchant Boots - Fortitude
+					i(22543),	-- Formula: Enchant Boots - Fortitude
 				}),
 				n(18314, {	-- Nexus Stalker
-					dr(0.9, i(23615)),	-- Plans: Swiftsteel Gloves
+					i(23615),	-- Plans: Swiftsteel Gloves
 				}),
 			}),
 			d( 1, {	-- Normal
@@ -64,7 +64,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 				cr(18344, e(537, {	-- Nexus-Prince Shaffar
 					ach(651),	-- Mana-Tombs
-					dr(2.0, i(22921)),	-- Recipe: Major Frost Protection Potion
+					i(22921),	-- Recipe: Major Frost Protection Potion
 					i(27829),	-- Axe of the Nexus-Kings
 					i(27842),	-- Grand Scepter of the Nexus-Kings
 					i(27840),	-- Scepter of Sha'tar
@@ -135,7 +135,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 					cr(18344, e(537, {		-- Nexus-Prince Shaffar
 						ach(671),	-- Heroic: Mana-Tombs
-						dr(2.0, i(22921)),	-- Recipe: Major Frost Protection Potion
+						i(22921),	-- Recipe: Major Frost Protection Potion
 						i(27829),	-- Axe of the Nexus-Kings
 						i(27842),	-- Grand Scepter of the Nexus-Kings
 						i(27840),	-- Scepter of Sha'tar

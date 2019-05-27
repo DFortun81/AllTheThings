@@ -1078,10 +1078,10 @@ _.Zones =
 						q(46745, {	-- Supplies from the Court
 							["g"] = {
 								i(152102, {	-- Farondis Chest
-									dr(3, i(147806)),	-- Cloudwing Hippogryph
+									i(147806),	-- Cloudwing Hippogryph
 								}),
 								un(2,  i(146897, {	-- Farondis Chest
-									dr(3, i(147806)),	-- Cloudwing Hippogryph
+									i(147806),	-- Cloudwing Hippogryph
 								})),
 							},
 							["repeatable"] = true,
@@ -1097,7 +1097,7 @@ _.Zones =
 									},
 								},
 								un(2, i(146902, {	-- Warden's Supply Kit
-									dr(3, i(147843)),	-- Sira's Extra Cloak
+									i(147843),	-- Sira's Extra Cloak
 								})),
 							},
 							["repeatable"] = true,
@@ -1360,7 +1360,7 @@ _.Zones =
 								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
 								["g"] = {
 									n(102338, {		-- Salteye Skrog-Hunter
-										dr(93, i(133702)),	-- Aromatic Murloc Slime
+										i(133702),	-- Aromatic Murloc Slime
 									}),
 								},
 							}),
