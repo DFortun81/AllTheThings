@@ -82,7 +82,8 @@ _.Zones =
 						},
 					}),
 					n(152569, {	-- Crazed Trogg
-						["questID"] = 55812,
+						["allianceQuestID"] = 55927,
+						["hordeQuestID"] = 55812,
 						["coord"] = { 82.3, 21.0, 1462 },
 						["isDaily"] = true,
 						["description"] = "The trogg will yell a specific color. Go to Bondo's Yard |cFFFFFFFF(63.3, 42.5)|r to paint yourself that color, then return to his cave.",
@@ -95,7 +96,8 @@ _.Zones =
 						},
 					}),
 					n(151569, {	-- Deepwater Maw
-						--["questID"] = 55514,	-- also popped 55917
+						["allianceQuestID"] = 55514,
+						["hordeQuestID"] = 55917,
 						["coord"] = { 35.3, 43.0, 1462 },
 						["isDaily"] = true,
 						["description"] = "Must complete the |cFFFFD7000Let's Fish!|r questline to spawn him.",
@@ -125,8 +127,9 @@ _.Zones =
 							},
 						},
 					}),
-					--[[
-					n(, {	-- Enforcer KX-T57
+					n(154153, {	-- Enforcer KX-T57
+						["allianceQuestID"] = 56207,
+						["hordeQuestID"] = 56994,
 						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Enforcer KX-T57)
@@ -135,7 +138,6 @@ _.Zones =
 							},
 						},
 					}),
-					]]--
 					n(151202, {	-- Foul Manifestation
 						["allianceQuestID"] = 55513,
 						["hordeQuestID"] = 55916,
@@ -189,7 +191,8 @@ _.Zones =
 						},
 					}),
 					n(151684, {	-- Jawbreaker
-						--["questID"] = ,
+						["allianceQuestID"] = 55399,
+						["hordeQuestID"] = 55910, -- 56089 also popped. Need to verify which one applies here
 						["coord"] = { 77.3, 44.8, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -197,15 +200,23 @@ _.Zones =
 								["achievementID"] = 13470,
 								["criteriaID"] = 4,
 							},
+							i(168908, {	-- Blueprint: Experimental Adventurer Augment
+								["questID"] = 56087,
+							}),
+							i(168752),	-- Omnipurpose Efficient Logic Board (possibly random drop from rares? I got one, but my friend didn't)
 						},
 					}),
 					n(152007, {	-- Killsaw
+						["allianceQuestID"] = 55369,
+						["hordeQuestID"] = 55914, -- 56506 also triggered. verify on next kill
+						["coord"] = { 42.6, 48.7, 1462 },
 						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Killsaw)
 								["achievementID"] = 13470,
 								["criteriaID"] = 8,
 							},
+							i(168327),	-- Chain Ignitercoil
 						},
 					}),
 					n(151933, {	-- Malfunctioning Beastbot
@@ -232,7 +243,7 @@ _.Zones =
 						},
 					}),
 					n(151672, {	-- Mecharantula
-						["allianceQuestID"] = 56100,
+						["allianceQuestID"] = 55909,
 						["hordeQuestID"] = 55386,
 						["coord"] = { 88.3, 20.6, 1462 },
 						["isDaily"] = true,
@@ -255,6 +266,9 @@ _.Zones =
 								["achievementID"] = 13470,
 								["criteriaID"] = 29,
 							},
+							i(168248, {	-- Blueprint: BAWLD-371
+								["questID"] = 55068,
+							}),
 						},
 					}),
 					n(153206, {	-- Ol' Big Tusk
@@ -289,7 +303,8 @@ _.Zones =
 						},
 					}),
 					n(151702, {	-- Paol Pondwader
-						--["questID"] = , -- 55405, 55911, 56141
+						["allianceQuestID"] = 55405,
+						["hordeQuestID"] = 55911,
 						["coord"] = { 23.0, 68.4, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -301,6 +316,9 @@ _.Zones =
 						},
 					}),
 					n(150575, {	-- Rumblerocks
+						["allianceQuestID"] = 55368,
+						["hordeQuestID"] = 55912,
+						["coord"] = { 39.9, 53.2, 1462 },
 						["isDaily"] = true,
 						["g"] = {
 							{	-- Rest in Pistons (Rumblerocks)
@@ -310,6 +328,8 @@ _.Zones =
 						},
 					}),
 					n(152182, {	-- Rustfeather
+						["allianceQuestID"] = 55811,
+						["hordeQuestID"] = 55924,
 						["coord"] = { 65.6, 78.3, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -321,7 +341,8 @@ _.Zones =
 						},
 					}),
 					n(155583, {	-- Scrapclaw
-						--["questID"] = ,
+						["allianceQuestID"] = 55907,
+						["hordeQuestID"] = 56307,
 						["coord"] = { 82.3, 77.8, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -333,6 +354,8 @@ _.Zones =
 						},
 					}),
 					n(150937, {	-- Seaspit
+						["allianceQuestID"] = 55545,
+						["hordeQuestID"] = 55922,
 						["coord"] = { 19.3, 80.4, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -355,6 +378,8 @@ _.Zones =
 						},
 					}),
 					n(153226, {	-- Steel Singer Freza
+						["allianceQuestID"] = 55854,
+						["hordeQuestID"] = 55933,
 						["coord"] = { 25.1, 77.4, 1462 },
 						["isDaily"] = true,
 						["g"] = {
@@ -387,7 +412,8 @@ _.Zones =
 						},
 					}),
 					n(151625, {	-- The Scrap King
-						["questID"] = 55364,
+						["allianceQuestID"] = 55908,
+						["hordeQuestID"] = 55364,
 						["coord"] = { 72.3, 49.8, 1462 },
 						["isDaily"] = true,
 						["crs"] = {
@@ -401,7 +427,7 @@ _.Zones =
 						},
 					}),
 					n(151940, {	-- Uncle T'Rogg
-						["allianceQuestID"] = 55538,
+						["allianceQuestID"] = 55538, -- 56333 also triggered (alliance)
 						["hordeQuestID"] = 55921,
 						["coord"] = { 57.3, 20.7, 1462 },
 						["isDaily"] = true,

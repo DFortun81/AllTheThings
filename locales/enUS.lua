@@ -3267,6 +3267,7 @@ AllTheThings.L = {
 		[326588] = "Azerite Weapons Cache",
 		[327170] = "Weapon Rack",
 		[327427] = "Sack of Tasks",
+		[327548] = "Powerpack Blueprints",
 		[327585] = "Bounty Board",
 		[327591] = "Preserved Journal",
 		[327592] = "Enchanted Lock",

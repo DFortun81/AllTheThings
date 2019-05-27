@@ -9,7 +9,22 @@ _.Zones =
 				n(-212, {	-- Treasure Chest
 					-- these chests may just be random spawns instead of set locations, so the questIDs may not be predetermined either
 					--[[
+					paint vial: fireball red(167790) from chest
+					paint vial: big-ol bronze (168001) from Rumblerocks. Possibly from all rares?
+					
+					horde:
 					55553, 55549, 55550, 55552, 55547, 55555 (85.1, 63.3), 55554 (48.4, 76.0)
+					
+					alliance: (first run)
+					55550 (72.6, 47.3)
+					55547 (57.0, 38.6)
+					55553 (80.7, 18.7)
+					55552 (64.1, 26.3)
+					55549 (60.0, 63.6)
+					55555 (63.6, 67.2)
+					55554 (57.3, 82.1)
+					55548 (40.1, 54.2)
+					55556 (20.5, 76.9)
 					]]--
 					o(325659, {	-- Mechanized Chest
 						["questID"] = 55553, -- popped on a completely different set of coords
