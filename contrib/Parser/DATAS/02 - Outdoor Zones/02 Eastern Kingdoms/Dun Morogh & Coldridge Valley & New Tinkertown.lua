@@ -304,29 +304,29 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares	
 					n(1130, { 	-- Bjarn
-						dr(01.4, i(6337)),	-- Infantry Leggings
-						dr(01.2, i(6269)),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
 						un(7, i(3283)),	-- Battle Chain Tunic					
 					}),
 					n(1119, { 	-- Hammerspine
-						dr(20.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(18.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(03.0, i(6337)),	-- Infantry Leggings
-						dr(03.0, i(6269)),	-- Pioneer Trousers
-						dr(02.0, i(6267)),	-- Disciple's Pants
-						dr(02.0, i(68749)),	-- Imbued Disciple's Bracers
-						dr(02.0, i(68748)),	-- Imbued Disciple's Cloak
-						dr(02.0, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.9, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.8, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.7, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.5, i(68759)),	-- Imbued Gypsy Cloak
-						dr(01.5, i(68752)),	-- Imbued Infantry Belt
-						dr(01.2, i(68755)),	-- Imbued Disciple's Gloves
-						dr(01.2, i(68757)),	-- Imbued Pioneer Gloves
-						dr(01.1, i(68761)),	-- Imbued Infantry Boots
-						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
+						i(68743),	-- Imbued Infantry Cloak
+						i(68744),	-- Imbued Pioneer Cloak
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(6267),	-- Disciple's Pants
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68750),	-- Imbued Pioneer Belt
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68753),	-- Imbued Infantry Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(68760),	-- Imbued Infantry Gauntlets
 						un(7, i(2254)),	-- Icepane Warhammer
 					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 

@@ -880,20 +880,16 @@ _.Zones =
 					n(50821, { 		-- Ai-Li Skymirror
 						["coord"] = { 34.8, 23.2, 422 },
 						["groups"] = {
-							dr(18, i(87629)),	-- Chestplate of Manifest
-							dr(13, i(86589)), 	-- Ai-Li's Skymirror
-							dr(11, i(87632)),	-- Fearsworn Chestpiece
-							dr(10, {
-								i(87635),	-- Amber-Starched Robes
-								i(87630),	-- Chestpiece of Twinkling Stars
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
-							dr(9, {
-								i(87631),	-- Jiao-Skin Tunic
-								i(87627),	-- Kunchong Carapace Chestguard
-								i(87634),	-- Mazu's Robe
-							}),
-							dr(8, i(87633)),	-- Sharksin Armor
+							i(87629),	-- Chestplate of Manifest
+							i(86589), 	-- Ai-Li's Skymirror
+							i(87632),	-- Fearsworn Chestpiece
+							i(87635),	-- Amber-Starched Robes
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
+							i(87633),	-- Sharksin Armor
 						},
 					}),
 					n(66935, {	-- Clamstok
@@ -908,20 +904,16 @@ _.Zones =
 					n(50334, { 		-- Dak the Breaker
 						["coord"] = { 25.2, 28.6, 422 },
 						["groups"] = {
-							dr(28, i(86567)),	-- Yaungol Wind Chime
-							dr(24, i(87635)),	-- Amber-Starched Robes
-							dr(10, {
-								i(87627),	-- Kunchong Carapace Chestguard
-								i(87634),	-- Mazu's Robe
-							}),
-							dr(9, {
-								i(87630),	-- Chestpiece of Twinkling Stars
-								i(87629),	-- Chestplate of Manifest Dread
-								i(87632),	-- Fearsworn Chestpiece
-								i(87631),	-- Jiao-Skin Tunic
-								i(87633),	-- Sharksin Armor
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
+							i(86567),	-- Yaungol Wind Chime
+							i(87635),	-- Amber-Starched Robes
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
+							i(87633),	-- Sharksin Armor
+							i(87628),	-- Spinebreaker Chestpiece
 						},
 					}),
 					n(50739, { 		-- Gar'lok
@@ -931,59 +923,47 @@ _.Zones =
 							{ 39.2, 41.8, 422 },
 						},
 						["groups"] = {
-							dr(23, i(86578)),	-- Eternal Warrior's Sigil
-							dr(20, i(87628)),	-- Spinebreaker Chestpiece
-							dr(11, i(87627)),	-- Kunchong Carapace Chestguard
-							dr(10, {
-								i(87635),	-- Amber-Starched Robes
-								i(87630),	-- Chestpiece of Twinkling Stars
-								i(87629),	-- Chestplate of Manifest Dread
-								i(87632),	-- Fearsworn Chestpiece
-								i(87631),	-- Jiao-Skin Tunic
-							}),
-							dr(9, i(87634)),	-- Mazu's Robe
-							dr(8, i(87633)),	-- Sharkskin Robe
+							i(86578),	-- Eternal Warrior's Sigil
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87635),	-- Amber-Starched Robes
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
+							i(87634),	-- Mazu's Robe
+							i(87633),	-- Sharkskin Robe
 						},
 					}),
 					n(50836, { 		-- Ik-Ik the Nimble
 						["coord"] = { 55.4, 63.4, 422 },
 						["description"] = { "Burrow entrance at 54.9, 65.7" },
 						["groups"] = {
-							dr(17, i(87634)),	-- Mazu's Robe
-							dr(15, i(87630)),	-- Chestpiece of Twinkling Stars
-							dr(13, i(86593)), 	-- Hozen Beach Ball
-							dr(10, {
-								i(87635),	-- Amber-Starched Robes
-								i(87629),	-- Chestplate of Manifest Dread
-								i(87632),	-- Fearsworn Chestpiece
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
-							dr(9, {
-								i(87631),	-- Jiao-Skin Tunic
-								i(87627),	-- Kunchong Carapace Chestguard
-							}),
-							dr(8, i(87633)),	-- Sharkskin Armor
+							i(87634),	-- Mazu's Robe
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(86593), 	-- Hozen Beach Ball
+							i(87635),	-- Amber-Starched Robes
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87633),	-- Sharkskin Armor
 						},
 					}),
 					n(50347, { 		-- Karr the Darkener
 						["coord"] = { 71.8, 37.6, 422 },
 						["groups"] = {
-							dr(18, i(87634)),	-- Mazu's Robe
-							dr(17, i(87630)),	-- Chestpiece of Twinkling Stars
-							dr(10, {
-								i(87635),	-- Amber-Starched Robes
-								i(87629),	-- Chestplate of Manifest Dread
-							}),
-							dr(9, {
-								i(87632),	-- Fearsworn Chestpiece
-								i(87627),	-- Kunchong Carapace Chestguard
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
-							dr(8, {
-								i(87633),	-- Sharkskin Armor
-								i(87631),	-- Jiao-Skin Tunic
-								i(86564),	-- Imbued Jade Fragment
-							}),
+							i(87634),	-- Mazu's Robe
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87635),	-- Amber-Starched Robes
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87632),	-- Fearsworn Chestpiece
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87633),	-- Sharkskin Armor
+							i(87631),	-- Jiao-Skin Tunic
+							i(86564),	-- Imbued Jade Fragment
 						},
 					}),
 					n(50356, { 		-- Krol the Blade
@@ -992,43 +972,31 @@ _.Zones =
 							{ 72.8, 22.2, 422 },
 						},
 						["groups"] = {
-							dr(15, i(87629)),	-- Chestplate of Manifest Dread
-							dr(12, i(87634)),	-- Mazu's Robe
-							dr(11, {
-								i(87630),	-- Chestpiece of Twinkling Stars
-								i(87631),	-- Jiao-Skin Tunic
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
-							dr(10, {
-								i(87635),	-- Amber-Starched Robes
-								i(87632),	-- Fearsworn Chestpiece
-								i(87627),	-- Kunchong Carapace Chestguard
-							}),
-							dr(8, {
-								i(87633),	-- Sharkskin Armor
-								i(86574),	-- Elixir of Ancient Knowledge
-							}),
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87634),	-- Mazu's Robe
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87631),	-- Jiao-Skin Tunic
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87635),	-- Amber-Starched Robes
+							i(87632),	-- Fearsworn Chestpiece
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87633),	-- Sharkskin Armor
+							i(86574),	-- Elixir of Ancient Knowledge
 						},
 					}),
 					n(50776, { 		-- Nalash Verdantis
 						["coord"] = { 64.2, 58.6, 422 },
 						["groups"] = {
-							dr(15, {
-								i(87635),	-- Amber-Starched Robes
-								i(87628),	-- Spinebreaker Chestpiece
-							}),
-							dr(13, i(87630)),	-- Chestpiece of Twinkling Stars
-							dr(10, i(87632)),	-- Fearsworn Chestpiece
-							dr(9, {
-								i(87629),	-- Chestplate of Manifest Dread
-								i(86563),	-- Hollow Reed
-								i(87631),	-- Jiao-Skin Tunic
-								i(87627),	-- Kunchong Carapace Chestguard
-								i(87634),	-- Mazu's Robe
-							}),
-							dr(8, {
-								i(87633),	-- Sharkskin Armor
-							}),
+							i(87635),	-- Amber-Starched Robes
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87632),	-- Fearsworn Chestpiece
+							i(87629),	-- Chestplate of Manifest Dread
+							i(86563),	-- Hollow Reed
+							i(87631),	-- Jiao-Skin Tunic
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87634),	-- Mazu's Robe
+							i(87633),	-- Sharkskin Armor
 						},
 					}),
 					n(50805, { 		-- Omnis Grinlok
@@ -1039,22 +1007,16 @@ _.Zones =
 							{ 36.4, 61.2, 422 },
 						},
 						["groups"] = {
-							dr(26, i(86585)),	-- Golden Fleece
-							dr(18, i(87628)),	-- Spinebreaker Chestpiece
-							dr(11, {
-								i(87635),	-- Amber-Starched Robes
-								i(87632),	-- Fearsworn Chestpiece
-							}),
-							dr(10, {
-								i(87629),	-- Chestplate of Manifest Dread
-								i(87631),	-- Jiao-Skin Tunic
-								i(87634),	-- Mazu's Robe
-							}),
-							dr(9, {
-								i(87627),	-- Kunchong Carapace Chestguard
-								i(87630),	-- Chestpiece of Twinkling Stars
-							}),
-							dr(8, i(87633)),	-- Sharkskin Armor
+							i(86585),	-- Golden Fleece
+							i(87628),	-- Spinebreaker Chestpiece
+							i(87635),	-- Amber-Starched Robes
+							i(87632),	-- Fearsworn Chestpiece
+							i(87629),	-- Chestplate of Manifest Dread
+							i(87631),	-- Jiao-Skin Tunic
+							i(87634),	-- Mazu's Robe
+							i(87627),	-- Kunchong Carapace Chestguard
+							i(87630),	-- Chestpiece of Twinkling Stars
+							i(87633),	-- Sharkskin Armor
 						},
 					}),
 					{	-- Zandalari Warbringer

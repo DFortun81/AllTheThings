@@ -1055,7 +1055,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.3, i(44567)),	-- Recipe: Mighty Nature Protection Potion
+						i(44567),	-- Recipe: Mighty Nature Protection Potion
 					}),
 					n(32297, {	-- Cult Researcher <Cult of the Damned>
 						{
@@ -1068,7 +1068,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.6, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
+						i(44564),	-- Recipe: Mighty Arcane Protection Potion
 					}),
 					n(32349, {	-- Cultist Shard Watcher <Cult of the Damned>
 						{
@@ -1081,7 +1081,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.6, i(44568)),	-- Recipe: Mighty Shadow Protection Potion
+						i(44568),	-- Recipe: Mighty Shadow Protection Potion
 					}),
 					n(32289, {	-- Damned Apothecary <Cult of the Damned>
 						{
@@ -1094,7 +1094,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.3, i(44566)),	-- Recipe: Mighty Frost Protection Potion
+						i(44566),	-- Recipe: Mighty Frost Protection Potion
 					}),
 					n(31702, {	-- Frostbrood Spawn
 						{
@@ -1107,7 +1107,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.18, i(44564)),	-- Recipe: Mighty Arcane Protection Potion
+						i(44564),	-- Recipe: Mighty Arcane Protection Potion
 					}),
 					n(31321, {	-- Skeletal Runesmith
 						{
@@ -1120,7 +1120,7 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.9, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+						i(44565),	-- Recipe: Mighty Fire Protection Potion
 					}),
 					n(30921, {	-- Skeletal Runesmith
 						{
@@ -1133,10 +1133,10 @@ _.Zones =
 							["spellID"] = 0,
 							["u"] = 2,
 						},
-						dr(0.5, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+						i(44565),	-- Recipe: Mighty Fire Protection Potion
 					}),
 					n(31320, {	-- Umbral Brute
-						dr(0.11, i(44565)),	-- Recipe: Mighty Fire Protection Potion
+						i(44565),	-- Recipe: Mighty Fire Protection Potion
 					}),
 				}),
 			},

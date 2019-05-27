@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(69983, { 		-- Primal Direhorn
-						dr(5, i(94573)),	-- Direhorn Runt
+						i(94573),	-- Direhorn Runt
 					}),
 					n(70096, { 		-- War-God Dokah
 						["coords"] = {
@@ -34,16 +34,12 @@ _.Zones =
 						},
 					}),
 					n(69925, { 		-- Zandalari Dinomancer
-						dr(2, {
-							i(95422),	-- Zandalari Anklerender
-							i(95424),	-- Zandalari Toenibbler
-						}),
-						dr(1, {
-							i(95423),	-- Zandalari Footlsasher
-							i(94126),	-- Zandalari Kneebiter
-							i(94232, {	-- Ancient Tome of Dinomancy
-								["classes"] = { 3 },	-- Hunter
-							}),
+						i(95422),	-- Zandalari Anklerender
+						i(95424),	-- Zandalari Toenibbler
+						i(95423),	-- Zandalari Footlsasher
+						i(94126),	-- Zandalari Kneebiter
+						i(94232, {	-- Ancient Tome of Dinomancy
+							["classes"] = { 3 },	-- Hunter
 						}),
 					}),
 				}),

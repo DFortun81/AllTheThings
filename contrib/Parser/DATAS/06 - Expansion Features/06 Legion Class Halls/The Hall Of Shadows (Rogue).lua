@@ -16,32 +16,32 @@ _.ExpansionFeatures =
 					["qg"] = 102594,	-- Marin Noggenfogger <Baron of Gadgetzan>
 					["groups"] = {
 						o(252273, {	-- Box of Throwing Daggers
-							dr(100, i(139589)),	-- Poisoned Throwing Knives
-							dr(0.6, i(130322)),	-- Mask of Artful Dodging
-							dr(0.2, i(130324)),	-- Boots of Artful Dodging
+							i(139589),	-- Poisoned Throwing Knives
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252267, {	-- Large Plundered Sack
-							dr(98.0, i(141408)),	-- Uncrowned Shadowcraft Cap
-							dr(3.0, i(130322)),	-- Mask of Artful Dodging
+							i(141408),	-- Uncrowned Shadowcraft Cap
+							i(130322),	-- Mask of Artful Dodging
 						}),
 						o(252270, {	-- Mysterious Crate
-							dr(100, i(139587)),	-- Suspicious Crate [Toy]
-							dr(0.8, i(130322)),	-- Mask of Artful Dodging
-							dr(0.5, i(130324)),	-- Boots of Artful Dodging
+							i(139587),	-- Suspicious Crate [Toy]
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252269, {	-- Pack of Battle Potions
-							dr(100, i(139588)),	-- Pack of Battle Potions
-							dr(4.0, i(130322)),	-- Mask of Artful Dodging
-							dr(1.6, i(130324)),	-- Boots of Artful Dodging
+							i(139588),	-- Pack of Battle Potions
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252284, {	-- Pile of Sticky Bombs
-							dr(100, i(139584)),	-- Sticky Bombs
-							dr(0.4, i(130322)),	-- Mask of Artful Dodging
-							dr(0.2, i(130324)),	-- Boots of Artful Dodging
+							i(139584),	-- Sticky Bombs
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252272, {	-- Smoky Boots
-							dr(100, i(139592)),	-- Smoky Boots
-							dr(3.0, i(130324)),	-- Boots of Artful Dodging
+							i(139592),	-- Smoky Boots
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252282, {	-- Sparkling Set of Keys
 							i(94222, {	-- Key to the Palace of Lei Shen
@@ -59,22 +59,22 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							dr(1.0, i(130322)),	-- Mask of Artful Dodging
-							dr(0.9, i(130324)),	-- Boots of Artful Dodging
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252279, {	-- Stolen Tome of Artifact Lore
-							dr(100, i(139591)),	-- Stolen Tome of Artifact Lore
-							dr(0.6, i(130322)),	-- Mask of Artful Dodging
+							i(139591),	-- Stolen Tome of Artifact Lore
+							i(130322),	-- Mask of Artful Dodging
 						}),
 						o(252277, {	-- Thistle Tea
-							dr(100, i(139586)),	-- Thistle Tea
-							dr(1.2, i(130322)),	-- Mask of Artful Dodging
-							dr(0.6, i(130324)),	-- Boots of Artful Dodging
+							i(139586),	-- Thistle Tea
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 						o(252289, {	-- Vanishing Powder
-							dr(100, i(139586)),	-- Thistle Tea
-							dr(0.5, i(130322)),	-- Mask of Artful Dodging
-							dr(0.4, i(130324)),	-- Boots of Artful Dodging
+							i(139586),	-- Thistle Tea
+							i(130322),	-- Mask of Artful Dodging
+							i(130324),	-- Boots of Artful Dodging
 						}),
 					},
 				}),
