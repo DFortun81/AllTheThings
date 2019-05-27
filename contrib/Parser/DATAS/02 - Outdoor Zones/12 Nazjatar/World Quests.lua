@@ -127,6 +127,17 @@ _.Zones =
 						},
 					},
 					{	-- Runelocked Chest
+						["questID"] = 56012,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Medium Runelocked Chest: Green)
+								["achievementID"] = 13764,
+								["criteriaID"] = 14,
+							},
+						},
+					},
+					{	-- Runelocked Chest
 						["questID"] = 56016,
 						["isWQ"] = 120,
 						["sourceQuest"] = 56248,	-- Treasure Tale
@@ -172,6 +183,10 @@ _.Zones =
 					},
 					{	-- Szun, Breaker of Slaves
 						["questID"] = 55897,
+						["isWQ"] = 120,
+					},
+					{	-- Tempest-Speaker Shalan'ali
+						["questID"] = 55898,
 						["isWQ"] = 120,
 					},
 					{	-- Terror of the Depths

@@ -48,6 +48,11 @@ _.Zones =
 						["coord"] = { 58.2, 22.0, 1355 },
 						["description"] = "In an underwater cave.",
 					},
+					{	-- Figurine 6
+						["questID"] = 56984,
+						["coord"] = { 61.1, 26.8, 1355 },
+						["description"] = "Behind the sea urchin.",
+					},
 					{	-- Figurine 9
 						["questID"] = 56987,
 						["coords"] = {
@@ -63,9 +68,6 @@ _.Zones =
 					-- these ones are still not found:
 					{	-- Figurine 5
 						["questID"] = 56986,
-					},
-					{	-- Figurine 6
-						["questID"] = 56984,
 					},
 					{	-- Figurine 7
 						["questID"] = 56991,

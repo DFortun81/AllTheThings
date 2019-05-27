@@ -497,7 +497,6 @@ _.Zones =
 						i(169492),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 						i(169494),	-- Recipe: Potion of Focused Resolve (Rank 3)
 						i(169493),	-- Recipe: Potion of Reconstitution (Rank 3)
-						i(170075),	-- Recipe: Unagi Skewer
 					},
 				}),
 				n(153024, {	-- Suva

@@ -187,6 +187,7 @@ _.Zones =
 							["questID"] = 56225,
 							["isDaily"] = true,
 						},
+						i(170075),	-- Recipe: Unagi Skewer
 					},
 				},
 				{	-- Brinestone Pickaxe -- possibly drops from any rare?
