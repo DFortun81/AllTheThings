@@ -2780,6 +2780,33 @@ _.Zones =
 											{	-- Cruel Gladiator's Chain Treads
 												["itemID"] = 144609,	-- Cruel Gladiator's Chain Treads
 											},
+											{	-- Ferocious Gladiator's Chain Helm
+												["itemID"] = 145455,	-- Ferocious Gladiator's Chain Helm
+											},
+											{	-- Ferocious Gladiator's Chain Spaulders
+												["itemID"] = 145459,	-- Ferocious Gladiator's Chain Spaulders
+											},
+											{	-- Ferocious Gladiator's Drape of the Tracker
+												["itemID"] = 145383,	-- Ferocious Gladiator's Drape of the Tracker
+											},
+											{	-- Ferocious Gladiator's Chain Armor
+												["itemID"] = 145449,	-- Ferocious Gladiator's Chain Armor
+											},
+											{	-- Ferocious Gladiator's Chain Armband
+												["itemID"] = 145463,	-- Ferocious Gladiator's Chain Armband
+											},
+											{	-- Ferocious Gladiator's Chain Gauntlets
+												["itemID"] = 145453,	-- Ferocious Gladiator's Chain Gauntlets
+											},
+											{	-- Ferocious Gladiator's Chain Clasp
+												["itemID"] = 145461,	-- Ferocious Gladiator's Chain Clasp
+											},
+											{	-- Ferocious Gladiator's Chain Leggings
+												["itemID"] = 145457,	-- Ferocious Gladiator's Chain Leggings
+											},
+											{	-- Ferocious Gladiator's Chain Treads
+												["itemID"] = 145451,	-- Ferocious Gladiator's Chain Treads
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]

@@ -856,7 +856,8 @@ _.GearSets =
 								},
 								["classes"] = { 12 },
 							}),
-							gs(1114, {	-- Vindictive Gladiator's Chain Armor
+							{	-- Vindictive Gladiator's Chain Armor
+								["setID"] = 1114,	-- Vindictive Gladiator's Chain Armor
 								["classes"] = {
 									3,	-- Hunter
 								},
@@ -916,7 +917,7 @@ _.GearSets =
 										["itemID"] = 142690,	-- Fearless Gladiator's Chain Treads
 									},
 								},
-							}),
+							},
 							gs(1129, {	-- Vindictive Gladiator's Ringmail Armor
 								["groups"] = {
 									i(135773),	-- Vindictive Gladiator's Ringmail Spaulders

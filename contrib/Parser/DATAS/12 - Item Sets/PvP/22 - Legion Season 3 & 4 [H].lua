@@ -223,17 +223,68 @@ _.GearSets =
 								i(144583),	-- Cruel Gladiator's Felskin Legguards
 								i(144577),	-- Cruel Gladiator's Felskin Boots
 							}),
-							gs(1253, {	-- Cruel Gladiator's Chain Armor
-								i(144613),	-- Cruel Gladiator's Chain Helm
-								i(144617),	-- Cruel Gladiator's Chain Spaulders
-								i(144541),	-- Cruel Gladiator's Drape of the Tracker
-								i(144607),	-- Cruel Gladiator's Chain Armor
-								i(144621),	-- Cruel Gladiator's Chain Armband
-								i(144611),	-- Cruel Gladiator's Chain Gauntlets
-								i(144619),	-- Cruel Gladiator's Chain Clasp
-								i(144615),	-- Cruel Gladiator's Chain Leggings
-								i(144609),	-- Cruel Gladiator's Chain Treads
-							}),
+							{	-- Cruel Gladiator's Chain Armor
+								["setID"] = 1253,	-- Cruel Gladiator's Chain Armor
+								["classes"] = {
+									3,	-- Hunter
+								},
+								["g"] = {
+									{	-- Cruel Gladiator's Chain Helm
+										["itemID"] = 144613,	-- Cruel Gladiator's Chain Helm
+									},
+									{	-- Cruel Gladiator's Chain Spaulders
+										["itemID"] = 144617,	-- Cruel Gladiator's Chain Spaulders
+									},
+									{	-- Cruel Gladiator's Drape of the Tracker
+										["itemID"] = 144541,	-- Cruel Gladiator's Drape of the Tracker
+									},
+									{	-- Cruel Gladiator's Chain Armor
+										["itemID"] = 144607,	-- Cruel Gladiator's Chain Armor
+									},
+									{	-- Cruel Gladiator's Chain Armband
+										["itemID"] = 144621,	-- Cruel Gladiator's Chain Armband
+									},
+									{	-- Cruel Gladiator's Chain Gauntlets
+										["itemID"] = 144611,	-- Cruel Gladiator's Chain Gauntlets
+									},
+									{	-- Cruel Gladiator's Chain Clasp
+										["itemID"] = 144619,	-- Cruel Gladiator's Chain Clasp
+									},
+									{	-- Cruel Gladiator's Chain Leggings
+										["itemID"] = 144615,	-- Cruel Gladiator's Chain Leggings
+									},
+									{	-- Cruel Gladiator's Chain Treads
+										["itemID"] = 144609,	-- Cruel Gladiator's Chain Treads
+									},
+									{	-- Ferocious Gladiator's Chain Helm
+										["itemID"] = 145455,	-- Ferocious Gladiator's Chain Helm
+									},
+									{	-- Ferocious Gladiator's Chain Spaulders
+										["itemID"] = 145459,	-- Ferocious Gladiator's Chain Spaulders
+									},
+									{	-- Ferocious Gladiator's Drape of the Tracker
+										["itemID"] = 145383,	-- Ferocious Gladiator's Drape of the Tracker
+									},
+									{	-- Ferocious Gladiator's Chain Armor
+										["itemID"] = 145449,	-- Ferocious Gladiator's Chain Armor
+									},
+									{	-- Ferocious Gladiator's Chain Armband
+										["itemID"] = 145463,	-- Ferocious Gladiator's Chain Armband
+									},
+									{	-- Ferocious Gladiator's Chain Gauntlets
+										["itemID"] = 145453,	-- Ferocious Gladiator's Chain Gauntlets
+									},
+									{	-- Ferocious Gladiator's Chain Clasp
+										["itemID"] = 145461,	-- Ferocious Gladiator's Chain Clasp
+									},
+									{	-- Ferocious Gladiator's Chain Leggings
+										["itemID"] = 145457,	-- Ferocious Gladiator's Chain Leggings
+									},
+									{	-- Ferocious Gladiator's Chain Treads
+										["itemID"] = 145451,	-- Ferocious Gladiator's Chain Treads
+									},
+								},
+							},
 							gs(1233, {	-- Cruel Gladiator's Ringmail Armor
 								i(144721),	-- Cruel Gladiator's Ringmail Helm
 								i(144725),	-- Cruel Gladiator's Ringmail Spaulders
