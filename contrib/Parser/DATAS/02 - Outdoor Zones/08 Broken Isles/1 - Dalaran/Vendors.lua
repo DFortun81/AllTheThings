@@ -2239,6 +2239,33 @@ _.Zones =
 											{	-- Vindictive Gladiator's Chain Treads
 												["itemID"] = 135721,	-- Vindictive Gladiator's Chain Treads
 											},
+											{	-- Fearless Gladiator's Chain Helm
+												["itemID"] = 142692,	-- Fearless Gladiator's Chain Helm
+											},
+											{	-- Fearless Gladiator's Chain Spaulders
+												["itemID"] = 142694,	-- Fearless Gladiator's Chain Spaulders
+											},
+											{	-- Fearless Gladiator's Drape of the Tracker
+												["itemID"] = 142769,	-- Fearless Gladiator's Drape of the Tracker
+											},
+											{	-- Fearless Gladiator's Chain Armor
+												["itemID"] = 142689,	-- Fearless Gladiator's Chain Armor
+											},
+											{	-- Fearless Gladiator's Chain Armband
+												["itemID"] = 142696,	-- Fearless Gladiator's Chain Armband
+											},
+											{	-- Fearless Gladiator's Chain Gauntlets
+												["itemID"] = 142691,	-- Fearless Gladiator's Chain Gauntlets
+											},
+											{	-- Fearless Gladiator's Chain Clasp
+												["itemID"] = 142695,	-- Fearless Gladiator's Chain Clasp
+											},
+											{	-- Fearless Gladiator's Chain Leggings
+												["itemID"] = 142693,	-- Fearless Gladiator's Chain Leggings
+											},
+											{	-- Fearless Gladiator's Chain Treads
+												["itemID"] = 142690,	-- Fearless Gladiator's Chain Treads
+											},
 										},
 									},
 									{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]

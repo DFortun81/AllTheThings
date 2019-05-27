@@ -857,18 +857,65 @@ _.GearSets =
 								["classes"] = { 12 },
 							}),
 							gs(1114, {	-- Vindictive Gladiator's Chain Armor
-								["groups"] = {
-									i(135725),	-- Vindictive Gladiator's Chain Spaulders
-									i(135800),	-- Vindictive Gladiator's Drape of the Tracker
-									i(135720),	-- Vindictive Gladiator's Chain Armor
-									i(135727),	-- Vindictive Gladiator's Chain Armband
-									i(135722),	-- Vindictive Gladiator's Chain Gauntlets
-									i(135726),	-- Vindictive Gladiator's Chain Clasp
-									i(135724),	-- Vindictive Gladiator's Chain Leggings
-									i(135721),	-- Vindictive Gladiator's Chain Treads
-									i(135771),	-- Vindictive Gladiator's Ringmail Helm
+								["classes"] = {
+									3,	-- Hunter
 								},
-								["classes"] = { 3 },
+								["g"] = {
+									{	-- Vindictive Gladiator's Chain Helm
+										["itemID"] = 135723,	-- Vindictive Gladiator's Chain Helm
+									},
+									{	-- Vindictive Gladiator's Chain Spaulders
+										["itemID"] = 135725,	-- Vindictive Gladiator's Chain Spaulders
+									},
+									{	-- Vindictive Gladiator's Drape of the Tracker
+										["itemID"] = 135800,	-- Vindictive Gladiator's Drape of the Tracker
+									},
+									{	-- Vindictive Gladiator's Chain Armor
+										["itemID"] = 135720,	-- Vindictive Gladiator's Chain Armor
+									},
+									{	-- Vindictive Gladiator's Chain Armband
+										["itemID"] = 135727,	-- Vindictive Gladiator's Chain Armband
+									},
+									{	-- Vindictive Gladiator's Chain Gauntlets
+										["itemID"] = 135722,	-- Vindictive Gladiator's Chain Gauntlets
+									},
+									{	-- Vindictive Gladiator's Chain Clasp
+										["itemID"] = 135726,	-- Vindictive Gladiator's Chain Clasp
+									},
+									{	-- Vindictive Gladiator's Chain Leggings
+										["itemID"] = 135724,	-- Vindictive Gladiator's Chain Leggings
+									},
+									{	-- Vindictive Gladiator's Chain Treads
+										["itemID"] = 135721,	-- Vindictive Gladiator's Chain Treads
+									},
+									{	-- Fearless Gladiator's Chain Helm
+										["itemID"] = 142692,	-- Fearless Gladiator's Chain Helm
+									},
+									{	-- Fearless Gladiator's Chain Spaulders
+										["itemID"] = 142694,	-- Fearless Gladiator's Chain Spaulders
+									},
+									{	-- Fearless Gladiator's Drape of the Tracker
+										["itemID"] = 142769,	-- Fearless Gladiator's Drape of the Tracker
+									},
+									{	-- Fearless Gladiator's Chain Armor
+										["itemID"] = 142689,	-- Fearless Gladiator's Chain Armor
+									},
+									{	-- Fearless Gladiator's Chain Armband
+										["itemID"] = 142696,	-- Fearless Gladiator's Chain Armband
+									},
+									{	-- Fearless Gladiator's Chain Gauntlets
+										["itemID"] = 142691,	-- Fearless Gladiator's Chain Gauntlets
+									},
+									{	-- Fearless Gladiator's Chain Clasp
+										["itemID"] = 142695,	-- Fearless Gladiator's Chain Clasp
+									},
+									{	-- Fearless Gladiator's Chain Leggings
+										["itemID"] = 142693,	-- Fearless Gladiator's Chain Leggings
+									},
+									{	-- Fearless Gladiator's Chain Treads
+										["itemID"] = 142690,	-- Fearless Gladiator's Chain Treads
+									},
+								},
 							}),
 							gs(1129, {	-- Vindictive Gladiator's Ringmail Armor
 								["groups"] = {
