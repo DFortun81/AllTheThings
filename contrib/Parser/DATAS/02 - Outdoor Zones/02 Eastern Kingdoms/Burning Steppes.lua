@@ -27,9 +27,10 @@ _.Zones =
 					p(429), 	-- Lava Beetle
 					p(423), 	-- Lava Crab
 					p(414), 	-- Scorpid
-					qg(66520, q(31914, {	-- Durin Darkhammer
+					q(31914, {	-- Durin Darkhammer
+						["qg"] = 66520,	-- Durin Darkhammer
 						["isDaily"] = true,
-					})),
+					}),
 				}),
 				n(-17, { 	-- Quests
 					ach(4901, {	-- Burning Steppes Quests
@@ -487,8 +488,6 @@ _.Zones =
 						}),
 					}),
 					n(-168, {	-- Other Quests
-						-- sz(775, 1, {	-- Dreadmaul Rock
-						-- }),
 						sz(775, 2, {	-- Morgan's Vigil
 							qa(27471, {	-- Blackrock Anomaly
 								["qg"] = 9562,	-- Hellendis Riverhorn
@@ -508,10 +507,6 @@ _.Zones =
 								["sourceQuests"] = { 28310 },	-- Morgan's Vigil
 							}),
 						}),
-						-- sz(775, 3, {	-- Terror Wing Path
-						-- }),
-						-- sz(775, 4, {	-- Blackrock Pass
-						-- }),
 						sz(775, 5, {	-- Ruins of Thaurissan NOTE: Should be Flame Crest
 							qh(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
 								["qg"] = 10260,	-- Kibler
@@ -529,8 +524,6 @@ _.Zones =
 								["sourceQuests"] = { 28442 },	-- Flame Crest
 							}),
 						}),
-						-- sz(775, 6, {	-- Black Tooth Hovel
-						-- }),
 						sz(775, 7, {	-- Blackrock Stronghold
 							i(142344, {	-- Broken Axe Blade
 								["groups"] = {
@@ -555,10 +548,6 @@ _.Zones =
 								["requireSkill"] = 164,	-- Classic Blacksmithing
 							}),
 						}),
-						-- sz(775, 8, {	-- The Whelping Downs
-						-- }),
-						-- sz(775, 9, {	-- Altar of Storms
-						-- }),
 						sz(775, 10, {	-- Blackrock Mountain
 							q(7848, {	-- Attunement to the Core
 								["qg"] = 14387,	-- Lothos Riftwalker
@@ -571,9 +560,9 @@ _.Zones =
 						o(207303, {	-- Adventure Board
 							qh(28069),	-- Adventurers Wanted: Blackrock Depths
 						}), --]]					
-	--[[				qg(9563, qa(27469)),	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
+	--[[				qa(27469, {	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
 							["qg"] = 9563,	-- Ragged John
-						})),	--]]
+						}),	--]]
 						q(27469, {	-- Friends on The Other Side
 							["qg"] = 56899,	-- Ragged Jong
 						}),

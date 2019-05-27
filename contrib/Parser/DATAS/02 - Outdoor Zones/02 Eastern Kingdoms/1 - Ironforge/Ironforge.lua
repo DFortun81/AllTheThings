@@ -135,23 +135,44 @@ _.Zones =
 						},
 					}),
 --[[
-					qg(6294, qa(38396)),	-- A Curious Oddity			
-					qg(23127, qa(27270, {	-- An Audience with the Farseer
+					qa(38396, {	-- A Curious Oddity
+						["qg"] = 6294,	-- 
+					}),	
+					qa(27270, {	-- An Audience with the Farseer
+						["qg"] = 23127,	-- 
 						["classes"] = {7},	-- Shaman
-					})),
-					qg(6294, qa(38394)),	-- Completionism
-					qg(15119, qa(8229)),	-- Could I get a Fishing Flier?
-					qg(41853, qa(26112)),	-- Demanding Answers
-					qg(5173, qa(27272, {	-- Demisette Sends Word
+					}),
+					qa(38394, {	-- Completionism
+						["qg"] = 6294,	-- 
+					}),
+					qa(8229, {	-- Could I get a Fishing Flier?
+						["qg"] = 15119,	-- 
+					}),
+					qa(26112, {	-- Demanding Answers
+						["qg"] = 41853,	-- 
+					}),
+					qa(27272, {	-- Demisette Sends Word
+						["qg"] = 5173,	-- 
 						["classes"] = {9},	-- Warlock
-					})),
-					qg(6569, qa(2039)),	-- Find Bingles
-					qg(6031, qa(1618)),	-- Gearing Redridge
-					qg(5174, q 29477, { ["requireSkill"] = 202 })),    -- Gnomish Engineering
-                    qg(5174, q 29475, { ["requireSkill"] = 202 })),    -- Goblin Engineering
-					qg(4256, qa(6388, {	-- Gryth Thurden
+					}),
+					qa(2039, {	-- Find Bingles
+						["qg"] = 6569,	-- 
+					}),
+					qa(1618, {	-- Gearing Redridge
+						["qg"] = 6031,	-- 
+					}),
+					q(29477, {	-- Gnomish Engineering
+						["qg"] = 5174,	-- 
+						["requireSkill"] = 202,
+					}),
+                    q(29475, {	-- Goblin Engineering
+						["qg"] = 5174,	-- 
+						["requireSkill"] = 202,
+					}),
+					qa(6388, {	-- Gryth Thurden
+						["qg"] = 4256,	-- 
 						["races"] = {3,7},	-- Dwarf, Gnome
-					})),
+					}),
 					o(207320, {	-- Hero's Call Board
 						qa(29391),	-- Guardians of Hyjal: Call of the Ancients
 						qa(29387),	-- Guardians of Hyjal: Firelands Invasion!
@@ -175,17 +196,25 @@ _.Zones =
 						qa(28565),	-- Hero's Call: Wetlands!
 						qa(29156),	-- The Troll Incursion
 					}),
-					qg(5161, qa(6609, { ["requireSkill"] = 129 })),    -- I Got Nothin' Left!
-					qg(5159, qa(6612)),	-- I Know A Guy...
-					qg(5146, qa(27271, {	-- Journey to the Wizard's Sanctum
+					qa(6609, {	-- I Got Nothin' Left!
+						["qg"] = 5161,	-- 
+						["requireSkill"] = 129
+					}),
+					qa(6612, {	-- I Know A Guy...
+						["qg"] = 5159,	-- 
+					}),
+					qa(27271, {	-- Journey to the Wizard's Sanctum
+						["qg"] = 5146,	-- 
 						["classes"] = {8},	-- Mage
-					})),
-					qg(5147, qa(27265, {	-- Lord Grayson Shadowbreaker
+					}),
+					qa(27265, {	-- Lord Grayson Shadowbreaker
+						["qg"] = 5147,	-- 
 						["classes"] = {2},	-- Paladin
-					})),
-					qg(5165, qa(27267, {	-- Make Contact with SI:7
+					}),
+					qa(27267, {	-- Make Contact with SI:7
+						["qg"] = 5165,	-- 
 						["classes"] = {4},	-- Rogue
-					})),
+					}),
 --]]
 					qa(27268, {	-- Make Haste to the Cathedral
 						["isBreadcrumb"] = true,
@@ -194,12 +223,14 @@ _.Zones =
 						["qg"] = 11406,	-- High Priest Rohan
 					}),
 --[[
-					qg(5173, qa(28259, {	-- Meet with Demisette Cloyce
+					qa(28259, {	-- Meet with Demisette Cloyce
+						["qg"] = 5173,	-- 
 						["classes"] = {9},	-- Warlock
-					})),
-					qg(23127, qa(28287, {	-- Meet with Farseer Umbrua
+					}),
+					qa(28287, {	-- Meet with Farseer Umbrua
+						["qg"] = 23127,	-- 
 						["classes"] = {7},	-- Shaman
-					})),
+					}),
 --]]
 					qa(28285, {	-- Meet with High Priestess Laurena
 						["isBreadcrumb"] = true,
@@ -207,43 +238,67 @@ _.Zones =
 						["coord"] = { 25.0, 8.20, 87 },
 						["qg"] = 11406,	-- High Priest Rohan
 					}),
---[[					qg(5147, qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
+--[[				qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
+						["qg"] = 5147,	-- 
 						["classes"] = {2},	-- Paladin
-					})),
-					qg(5165, qa(28262, {	-- Meet with Lord Tony Romano
+					}),
+					qa(28262, {	-- Meet with Lord Tony Romano
+						["qg"] = 5165,	-- 
 						["classes"] = {4},	-- Rogue
-					})),
-					qg(5146, qa(28263, {	-- Meet with Maginor Dumas
+					}),
+					qa(28263, {	-- Meet with Maginor Dumas
+						["qg"] = 5146,	-- 
 						["classes"] = {8},	-- Mage
-					})),
-					qg(5115, qa(28260, {	-- Meet with Wulf Hansreim
+					}),
+					qa(28260, {	-- Meet with Wulf Hansreim
+						["qg"] = 5115,	-- 
 						["classes"] = {3},	-- Hunter
-					})),
-					qg(6294, qa(38345)),	-- Numismatics
+					}),
+					qa(38345, {	-- Numismatics
+						["qg"] = 6294,	-- 
+					}),
 					qa(2963),	-- Portents of Uldum (LEGACY)
-					qg(1356, qa(302)),	-- Powder to Ironband
-					qg(5637, qa(1453)),	-- Reclaimers' Business in Desolace
-					qg(1959, qa(26131)),	-- Reinforcements for Loch Modan
-					qg(1573, qa(6392, {	-- Return to Gremlock
+					qa(302, {	-- Powder to Ironband
+						["qg"] = 1356,	-- 
+					}),
+					qa(1453, {	-- Reclaimers' Business in Desolace
+						["qg"] = 5637,	-- 
+					}),
+					qa(26131, {	-- Reinforcements for Loch Modan
+						["qg"] = 1959,	-- 
+					}),
+					qa(6392, {	-- Return to Gremlock
+						["qg"] = 1573,	-- 
 						["races"] = {3,7},	-- Dwarf, Gnome
-					qg(11406, qa(27274, {	-- The Chief Surgeon
+					}),
+					qa(27274, {	-- The Chief Surgeon
+						["qg"] = 11406,	-- 
 						["races"] = {7},	-- Gnome
 						["classes"] = {5},	-- Priest
-					})),
+					}),
 					qh(8799),	-- The Hero of the Day (LEGACY)
-					qg(13433, qa(8763)),	-- The Hero of the Day
-					qg(92195, qa(39955)),	-- The Plot Thickens
-					qg(6294, qa(38402)),	-- The Same, But Different
-					qg(6179, qa(1789, {	-- The Symbol of Life
+					qa(8763, {	-- The Hero of the Day
+						["qg"] = 13433,	-- 
+					}),
+					qa(39955, {	-- The Plot Thickens
+						["qg"] = 92195,	-- 
+					}),
+					qa(38402, {	-- The Same, But Different
+						["qg"] = 6294,	-- 
+					}),
+					qa(1789, {	-- The Symbol of Life
+						["qg"] = 6179,	-- 
 						["classes"] = {2},	-- Paladin
-					})),
-					qg(11406, qa(27269, {	-- The Temple of the Moon
+					}),
+					qa(27269, {	-- The Temple of the Moon
+						["qg"] = 11406,	-- 
 						["races"] = {4},	-- Night Elf
 						["classes"] = {5},	-- Priest
-					})),
-					qg(5115, qa(27266, {	-- Wulf Calls
+					}),
+					qa(27266, {	-- Wulf Calls
+						["qg"] = 5115,	-- 
 						["classes"] = {3},	-- Hunter
-					})),
+					}),
 --]]
 				}),
 				n(-16, {	-- Rares

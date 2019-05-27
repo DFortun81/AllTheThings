@@ -32,7 +32,9 @@ _.Zones =
 						["coord"] = { 54.8, 76.3, 90 },
 						["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					},
-					qg(10181, qh(31037)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+					qh(31037, {	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+						["qg"] = 10181,	-- Lady Sylvanas Windrunner
+					}),
 					qh(39960, {	-- The Legacy Passed On
 						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
 						["sourceQuests"] = { 39959 },	-- The Plot Thickens
