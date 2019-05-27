@@ -155,6 +155,10 @@ _.Zones =
 							},
 						},
 					},
+					{	-- Szun, Breaker of Slaves
+						["questID"] = 55897,
+						["isWQ"] = 120,
+					},
 					{	-- Terror of the Depths
 						["questID"] = 56056,
 						["isWQ"] = 120,

@@ -65,6 +65,21 @@ _.Zones =
 						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 					},
 				},
+				{	-- A Gift From The Clan
+					["questID"] = 56777,
+					["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Available when your bodyguard hits lvl 5",
+					["g"] = {
+						i(169903),	-- Nazjatar Survival Pack
+					},
+				},
+				{	-- A Glint of the Darkness
+					["questID"] = 56778,
+					["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Available when your bodyguard hits lvl 5",
+				},
 				{	-- A Safer Place
 					["questID"] = 55530,
 					["qg"] = 152084,	-- Mrrl
@@ -72,11 +87,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
-				{	-- A Tempered Blade (Unlocks the rest of the zone)
+				{	-- A Tempered Blade
 					["questID"] = 56156,
 					["qg"] = 154248,	-- Bladesman Inowari
 					["coord"] = { 39.4, 53.4, 1355 },
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "Must complete this quest for the rest of the zone to become available.",
 					["sourceQuest"] = 55363,	-- Rescue the Farseer (TODO - verify: 55362 "Elemental Fury" as well?)
 				},
 				{	-- A Way Home
@@ -123,7 +139,7 @@ _.Zones =
 				},
 				{	-- Anytime You Need a Friend
 					["questID"] = 56814,
-					["qg"] = 149904,	-- Nari Sharpfin
+					["qg"] = 149904,	-- Neri Sharpfin
 					["coord"] = { 50.2, 64.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -152,11 +168,17 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Bounty Board (rewards seem to change over time?)
+				{	-- Bounty Board (rewards change over time)
 					["objectID"] = 327585,
 					["coord"] = { 47.9, 61.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						--[[ -- todo:: verify
+						{	-- Wanted: Braxicus
+							["questID"] = 55404,
+							["isDaily"] = true,
+						},
+						]]--
 						{	-- Wanted: Commander Sarj'eth
 							["questID"] = 56223,
 							["isDaily"] = true,
@@ -251,7 +273,7 @@ _.Zones =
 						},
 					},
 				},
-				{	-- City of Drowned Friends -- TODO:: verify sourceQuest
+				{	-- City of Drowned Friends
 					["questID"] = 56309,
 					["qg"] = 154522,	-- Shandris Feathermoon
 					["coord"] = { 76.1, 45.7, 1355 },
@@ -347,7 +369,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55869,	-- Clearing Out the Cache
 				},
-				{	-- Down Into Nazjatar (when this quest is offered, the rest of the zone is available)
+				{	-- Down Into Nazjatar
 					["questID"] = 56235,
 					["qg"] = 151848,	-- Lor'themar Theron
 					["coord"] = { 48.5, 62.1, 1355 },
@@ -480,8 +502,6 @@ _.Zones =
 					["questID"] = 56095,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Let the Residue Lead You
 					["questID"] = 55868,
@@ -505,7 +525,7 @@ _.Zones =
 					["coord"] = { 60.6, 33.2, 1355 },
 					["g"] = {
 						{	-- The Laboratory of Mardivas
-							["questID"] = 55121,
+							["questID"] = 55121, -- 55145, 56481, 56725, 56891, 56982 also popped
 							["isWeekly"] = true,
 							["g"] = {
 								currency(1721),	-- Prismatic Manapearl x5
@@ -789,7 +809,7 @@ _.Zones =
 					},
 				},
 				{	-- Scrying Stones
-					["questID"] = 56210, -- also completed 56239
+					["questID"] = 56210,
 					["qg"] = 153512,	-- Finder Pruc
 					["coord"] = { 49.0, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
@@ -822,7 +842,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55481,	-- Scouting the Palace
 				},
-				{	-- Silver Knife (inside first looted arcane chest)
+				{	-- Silver Knife
 					["itemID"] = 169215,
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Obtained from the first Arcane Chest you find.",
@@ -833,7 +853,7 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Silver Knife (inside first looted arcane chest)
+				{	-- Silver Knife
 					["itemID"] = 169216,
 					["races"] = HORDE_ONLY,
 					["description"] = "Obtained from the first Arcane Chest you find.",
@@ -848,8 +868,6 @@ _.Zones =
 					["questID"] = 56118,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Speak with the Dead
 					["questID"] = 55488,
@@ -915,10 +933,9 @@ _.Zones =
 					["questID"] = 56143,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						56095,	-- Legacy of Nar'anan
-						56118,	-- Snap Back (TODO:: verify if this is really needed)
+						56118,	-- Snap Back
 					},
 				},
 				{	-- The First Arcanist

@@ -45,15 +45,15 @@ _.Zones =
 						["questID"] = 55957,
 						["coord"] = { 37.9, 60.5, 1355 },
 					}),
-					o(326408, {	-- Arcane Chest
+					o(326408, {	-- Arcane Chest -- confirmed
 						["questID"] = 55941,
 						["coord"] = { 73.2, 35.8, 1355 },
 					}),
-					o(326409, {	-- Arcane Chest
+					o(326409, {	-- Arcane Chest -- confirmed
 						["questID"] = 55942,
 						["coord"] = { 79.5, 27.2, 1355 },
 					}),
-					o(326410, {	-- Arcane Chest
+					o(326410, {	-- Arcane Chest -- confirmed
 						["questID"] = 55939,
 						["coord"] = { 80.4, 29.8, 1355 },
 					}),
@@ -61,7 +61,7 @@ _.Zones =
 						["questID"] = 55947,
 						["coord"] = { 44.7, 48.9, 1355 },
 					}),
-					o(326412, {	-- Arcane Chest
+					o(326412, {	-- Arcane Chest -- confirmed
 						["questID"] = 55946,
 						["coord"] = { 58.0, 35.0, 1355 },
 						["description"] = "In an underwater cave.",
@@ -71,36 +71,40 @@ _.Zones =
 						["coord"] = { 34.6, 43.6, 1355 },
 						["description"] = "At the back of a cave.",
 					}),
-					o(326414, {	-- Arcane Chest
+					o(326414, {	-- Arcane Chest -- confirmed
 						["questID"] = 55940,
 						["coord"] = { 74.8, 53.2, 1355 },
 					}),
 					o(326395, {	-- Glowing Arcane Trunk
-						["questID"] = 55959, -- 56343 triggered after completing the minigame, 56974 trigger at same time of chest opening
+						["questID"] = 55959, -- 56343 triggered after completing the minigame, 56974 trigger at same time of chest opening for horde
 						["coord"] = { 37.9, 6.4, 1355 },
 					}),
-					o(326396, {	-- Glowing Arcane Trunk
+					o(326396, {	-- Glowing Arcane Trunk -- completed this one third on alliance, but it also triggered 56912
 						["questID"] = 55963, -- 55987 triggered after completing the minigame
 						["coord"] = { 43.8, 16.5, 1355 },
 					}),
 					o(326397, {	-- Glowing Arcane Trunk
-						["questID"] = 56975, -- 56913 triggers after completing the minigame, 56912 also triggered
+						["questID"] = 56975, -- 56913 triggers after completing the minigame, 56912 also triggered. On alliance
 						["coord"] = { 24.8, 35.2, 1355 },
 					}),
-					o(326398, {	-- Glowing Arcane Trunk
+					o(326398, {	-- Glowing Arcane Trunk -- confirmed
 						["questID"] = 55961, -- 55998 triggers after completing the minigame
 						["coord"] = { 55.7, 14.5, 1355 },
+						["description"] = "Match 3 red runes.",
 					}),
-					o(326399, {	-- Glowing Arcane Trunk
+					o(326399, {	-- Glowing Arcane Trunk -- confirmed
 						["questID"] = 55958, -- 56359 triggers after completing the minigame, 56976 also triggered
 						["coord"] = { 61.4, 22.9, 1355 },
 					}),
-					o(326400, {	-- Glowing Arcane Trunk
+					o(326400, {	-- Glowing Arcane Trunk -- confirmed
 						["questID"] = 55962, -- 55996 triggers after completing the minigame
 						["coord"] = { 64.1, 28.6, 1355 },
 					}),
+					o(329783, {	-- Glowing Arcane Trunk
+						["questID"] = 55960, -- 55999 triggers after completing the minigame, 56974 also triggered for alliance. Possibly first completion id?
+						["coord"] = { 37.2, 19.2, 1355 },
+					}),
 					--[[ -- these are the remaining known objectIDs for each chest
-					[329783] = "Glowing Arcane Trunk",
 					[326415] = "Arcane Chest",
 					[326416] = "Arcane Chest",
 					[326417] = "Arcane Chest",
