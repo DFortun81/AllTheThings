@@ -1041,242 +1041,242 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					n(14487, { 	-- Gluggl
-						dr(07.0, i(6604)),	-- Dervish Cape
-						dr(07.0, i(9803)),	-- Superior Bracers
-						dr(06.0, i(6593)),	-- Battleforge Cloak
-						dr(06.0, i(9799)),	-- Ivycloth Sash
-						dr(05.0, i(9817)),	-- Fortified Spaulders
-						dr(05.0, i(9795)),	-- Ivycloth Gloves
-						dr(05.0, i(9802)),	-- Superior Boots
-						dr(04.0, i(9818)),	-- Fortified Chain
-						dr(03.0, i(6600)),	-- Dervish Belt
-						dr(03.0, i(6602)),	-- Dervish Bracers
-						dr(03.0, i(6584)),	-- Scouting Tunic
-						dr(02.0, i(6591)),	-- Battleforge Wristguards
-						dr(02.0, i(4715)),	-- Emblazoned Cloak
-						dr(02.0, i(9813)),	-- Fortified Gauntlets
-						dr(02.0, i(9793)),	-- Ivycloth Bracelets
-						dr(02.0, i(9794)),	-- Ivycloth Cloak
-						dr(02.0, i(9796)),	-- Ivycloth Mantle
-						dr(02.0, i(6569)),	-- Shimmering Robe
-						dr(02.0, i(9801)),	-- Superior Belt
-						dr(02.0, i(9806)),	-- Superior Gloves
-						dr(01.9, i(9792)),	-- Ivycloth Boots
-						dr(01.9, i(6567)),	-- Shimmering Armor
-						dr(01.8, i(9810)),	-- Fortified Boots
-						dr(01.8, i(9815)),	-- Fortified Leggings
-						dr(01.7, i(9807)),	-- Superior Shoulders
-						dr(01.6, i(6605)),	-- Dervish Gloves
-						dr(01.5, i(6601)),	-- Dervish Boots
-						dr(01.1, i(6597)),	-- Battleforge Shoulderguards
-						dr(01.1, i(9809)),	-- Superior Tunic
-						dr(01.0, i(6612)),	-- Sage's Boots
-						dr(01.0, i(6614)),	-- Sage's Cloak
+						i(6604),	-- Dervish Cape
+						i(9803),	-- Superior Bracers
+						i(6593),	-- Battleforge Cloak
+						i(9799),	-- Ivycloth Sash
+						i(9817),	-- Fortified Spaulders
+						i(9795),	-- Ivycloth Gloves
+						i(9802),	-- Superior Boots
+						i(9818),	-- Fortified Chain
+						i(6600),	-- Dervish Belt
+						i(6602),	-- Dervish Bracers
+						i(6584),	-- Scouting Tunic
+						i(6591),	-- Battleforge Wristguards
+						i(4715),	-- Emblazoned Cloak
+						i(9813),	-- Fortified Gauntlets
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(9796),	-- Ivycloth Mantle
+						i(6569),	-- Shimmering Robe
+						i(9801),	-- Superior Belt
+						i(9806),	-- Superior Gloves
+						i(9792),	-- Ivycloth Boots
+						i(6567),	-- Shimmering Armor
+						i(9810),	-- Fortified Boots
+						i(9815),	-- Fortified Leggings
+						i(9807),	-- Superior Shoulders
+						i(6605),	-- Dervish Gloves
+						i(6601),	-- Dervish Boots
+						i(6597),	-- Battleforge Shoulderguards
+						i(9809),	-- Superior Tunic
+						i(6612),	-- Sage's Boots
+						i(6614),	-- Sage's Cloak
 					}),
 					n(11383, { 	-- High Priestess Hai'watna
-						dr(14.0, i(9796)),	-- Ivycloth Mantle
-						dr(10.0, i(6591)),	-- Battleforge Wristguards
-						dr(10.0, i(6602)),	-- Dervish Bracers
-						dr(10.0, i(9806)),	-- Superior Gloves
-						dr(08.0, i(6596)),	-- Battleforge Legguards
-						dr(05.0, i(6600)),	-- Dervish Belt
-						dr(04.0, i(4715)),	-- Emblazoned Cloak
-						dr(03.0, i(9795)),	-- Ivycloth Gloves
-						dr(03.0, i(9803)),	-- Superior Bracers
-						dr(03.0, i(9807)),	-- Superior Shoulders
-						dr(02.0, i(9799)),	-- Ivycloth Sash
-						dr(02.0, i(9802)),	-- Superior Boots
-						dr(01.9, i(6604)),	-- Dervish Cape
-						dr(01.8, i(9797)),	-- Ivycloth Pants
-						dr(01.5, i(9827)),	-- Scaled Leather Belt
-						dr(01.4, i(6593)),	-- Battleforge Cloak
-						dr(01.4, i(9817)),	-- Fortified Spaulders
-						dr(01.1, i(6597)),	-- Battleforge Shoulderguards
+						i(9796),	-- Ivycloth Mantle
+						i(6591),	-- Battleforge Wristguards
+						i(6602),	-- Dervish Bracers
+						i(9806),	-- Superior Gloves
+						i(6596),	-- Battleforge Legguards
+						i(6600),	-- Dervish Belt
+						i(4715),	-- Emblazoned Cloak
+						i(9795),	-- Ivycloth Gloves
+						i(9803),	-- Superior Bracers
+						i(9807),	-- Superior Shoulders
+						i(9799),	-- Ivycloth Sash
+						i(9802),	-- Superior Boots
+						i(6604),	-- Dervish Cape
+						i(9797),	-- Ivycloth Pants
+						i(9827),	-- Scaled Leather Belt
+						i(6593),	-- Battleforge Cloak
+						i(9817),	-- Fortified Spaulders
+						i(6597),	-- Battleforge Shoulderguards
 					}),
 					n(51662, { 	-- Mahamba
-						dr(05.0, i(6602)),	-- Dervish Bracers
-						dr(04.0, i(6595)),	-- Battleforge Gauntlets
-						dr(04.0, i(6596)),	-- Battleforge Legguards
-						dr(04.0, i(6600)),	-- Dervish Belt
-						dr(04.0, i(6601)),	-- Dervish Boots
-						dr(04.0, i(6605)),	-- Dervish Gloves
-						dr(04.0, i(6612)),	-- Sage's Boots
-						dr(04.0, i(9809)),	-- Superior Tunic
-						dr(03.0, i(6594)),	-- Battleforge Girdle
-						dr(03.0, i(6597)),	-- Battleforge Shoulderguards
-						dr(03.0, i(4715)),	-- Emblazoned Cloak
-						dr(03.0, i(9796)),	-- Ivycloth Mantle
-						dr(03.0, i(9797)),	-- Ivycloth Pants
-						dr(03.0, i(6613)),	-- Sage's Bracers
-						dr(03.0, i(6614)),	-- Sage's Cloak
-						dr(03.0, i(9806)),	-- Superior Gloves
-						dr(03.0, i(9808)),	-- Superior Leggings
-						dr(03.0, i(9807)),	-- Superior Shoulders
-						dr(02.0, i(6591)),	-- Battleforge Wristguards
-						dr(02.0, i(9798)),	-- Ivycloth Robe
-						dr(02.0, i(7416)),	-- Phalanx Bracers
-						dr(01.7, i(9829)),	-- Scaled Leather Bracers
-						dr(01.6, i(10404)),	-- Durable Belt
-						dr(01.5, i(9822)),	-- Durable Cape
-						dr(01.5, i(6615)),	-- Sage's Gloves
-						dr(01.4, i(6590)),	-- Battleforge Boots
-						dr(01.4, i(9791)),	-- Ivycloth Tunic
-						dr(01.4, i(6611)),	-- Sage's Sash
-						dr(01.3, i(7415)),	-- Dervish Spaulders
-						dr(01.3, i(9831)),	-- Scaled Cloak
-						dr(01.3, i(9832)),	-- Scaled Leather Gloves
-						dr(01.2, i(9838)),	-- Banded Cloak
-						dr(01.2, i(6592)),	-- Battleforge Armor
-						dr(01.2, i(6607)),	-- Dervish Leggings
-						dr(01.2, i(7419)),	-- Phalanx Cloak
-						dr(01.1, i(6603)),	-- Dervish Tunic
-						dr(01.0, i(9821)),	-- Durable Bracers
-						dr(01.0, i(7356)),	-- Elder's Cloak
-						dr(01.0, i(9827)),	-- Scaled Leather Belt
+						i(6602),	-- Dervish Bracers
+						i(6595),	-- Battleforge Gauntlets
+						i(6596),	-- Battleforge Legguards
+						i(6600),	-- Dervish Belt
+						i(6601),	-- Dervish Boots
+						i(6605),	-- Dervish Gloves
+						i(6612),	-- Sage's Boots
+						i(9809),	-- Superior Tunic
+						i(6594),	-- Battleforge Girdle
+						i(6597),	-- Battleforge Shoulderguards
+						i(4715),	-- Emblazoned Cloak
+						i(9796),	-- Ivycloth Mantle
+						i(9797),	-- Ivycloth Pants
+						i(6613),	-- Sage's Bracers
+						i(6614),	-- Sage's Cloak
+						i(9806),	-- Superior Gloves
+						i(9808),	-- Superior Leggings
+						i(9807),	-- Superior Shoulders
+						i(6591),	-- Battleforge Wristguards
+						i(9798),	-- Ivycloth Robe
+						i(7416),	-- Phalanx Bracers
+						i(9829),	-- Scaled Leather Bracers
+						i(10404),	-- Durable Belt
+						i(9822),	-- Durable Cape
+						i(6615),	-- Sage's Gloves
+						i(6590),	-- Battleforge Boots
+						i(9791),	-- Ivycloth Tunic
+						i(6611),	-- Sage's Sash
+						i(7415),	-- Dervish Spaulders
+						i(9831),	-- Scaled Cloak
+						i(9832),	-- Scaled Leather Gloves
+						i(9838),	-- Banded Cloak
+						i(6592),	-- Battleforge Armor
+						i(6607),	-- Dervish Leggings
+						i(7419),	-- Phalanx Cloak
+						i(6603),	-- Dervish Tunic
+						i(9821),	-- Durable Bracers
+						i(7356),	-- Elder's Cloak
+						i(9827),	-- Scaled Leather Belt
 					}),
 					n(51658, { 	-- Mogh the Dead
-						dr(04.0, i(7415)),	-- Dervish Spaulders
-						dr(03.0, i(9838)),	-- Banded Cloak
-						dr(03.0, i(6592)),	-- Battleforge Armor
-						dr(03.0, i(6590)),	-- Battleforge Boots
-						dr(03.0, i(9798)),	-- Ivycloth Robe
-						dr(03.0, i(9791)),	-- Ivycloth Tunic
-						dr(03.0, i(6615)),	-- Sage's Gloves
-						dr(03.0, i(6611)),	-- Sage's Sash
-						dr(03.0, i(9831)),	-- Scaled Cloak
-						dr(03.0, i(9829)),	-- Scaled Leather Bracers
-						dr(02.0, i(6605)),	-- Dervish Gloves
-						dr(02.0, i(6603)),	-- Dervish Tunic
-						dr(02.0, i(9822)),	-- Durable Cape
-						dr(02.0, i(6609)),	-- Sage's Cloth
-						dr(01.9, i(6596)),	-- Battleforge Legguards
-						dr(01.9, i(6601)),	-- Dervish Boots
-						dr(01.8, i(9837)),	-- Banded Bracers
-						dr(01.8, i(6612)),	-- Sage's Boots
-						dr(01.7, i(6607)),	-- Dervish Leggings
-						dr(01.7, i(9808)),	-- Superior Leggings
-						dr(01.6, i(9797)),	-- Ivycloth Pants
-						dr(01.6, i(6614)),	-- Sage's Cloak
-						dr(01.6, i(9809)),	-- Superior Tunic
-						dr(01.5, i(6595)),	-- Battleforge Gauntlets
-						dr(01.5, i(6597)),	-- Battleforge Shoulderguards
-						dr(01.5, i(10404)),	-- Durable Belt
-						dr(01.5, i(6617)),	-- Sage's Mantle
-						dr(01.4, i(7356)),	-- Elder's Cloak
-						dr(01.3, i(6613)),	-- Sage's Bracers
-						dr(01.2, i(6594)),	-- Battleforge Girdle
-						dr(01.2, i(7419)),	-- Phalanx Cloak
-						dr(01.1, i(9821)),	-- Durable Bracers
-						dr(01.0, i(9827)),	-- Scaled Leather Belt
+						i(7415),	-- Dervish Spaulders
+						i(9838),	-- Banded Cloak
+						i(6592),	-- Battleforge Armor
+						i(6590),	-- Battleforge Boots
+						i(9798),	-- Ivycloth Robe
+						i(9791),	-- Ivycloth Tunic
+						i(6615),	-- Sage's Gloves
+						i(6611),	-- Sage's Sash
+						i(9831),	-- Scaled Cloak
+						i(9829),	-- Scaled Leather Bracers
+						i(6605),	-- Dervish Gloves
+						i(6603),	-- Dervish Tunic
+						i(9822),	-- Durable Cape
+						i(6609),	-- Sage's Cloth
+						i(6596),	-- Battleforge Legguards
+						i(6601),	-- Dervish Boots
+						i(9837),	-- Banded Bracers
+						i(6612),	-- Sage's Boots
+						i(6607),	-- Dervish Leggings
+						i(9808),	-- Superior Leggings
+						i(9797),	-- Ivycloth Pants
+						i(6614),	-- Sage's Cloak
+						i(9809),	-- Superior Tunic
+						i(6595),	-- Battleforge Gauntlets
+						i(6597),	-- Battleforge Shoulderguards
+						i(10404),	-- Durable Belt
+						i(6617),	-- Sage's Mantle
+						i(7356),	-- Elder's Cloak
+						i(6613),	-- Sage's Bracers
+						i(6594),	-- Battleforge Girdle
+						i(7419),	-- Phalanx Cloak
+						i(9821),	-- Durable Bracers
+						i(9827),	-- Scaled Leather Belt
 					}),
 					n(51663, { 	-- Pogeyan
-						dr(05.0, i(6601)),	-- Dervish Boots
-						dr(04.0, i(6596)),	-- Battleforge Legguards
-						dr(04.0, i(6597)),	-- Battleforge Shoulderguards
-						dr(04.0, i(6602)),	-- Dervish Bracers
-						dr(04.0, i(4715)),	-- Emblazoned Cloak
-						dr(04.0, i(6614)),	-- Sage's Cloak
-						dr(04.0, i(9808)),	-- Superior Leggings
-						dr(04.0, i(9807)),	-- Superior Shoulders
-						dr(03.0, i(6595)),	-- Battleforge Gauntlets
-						dr(03.0, i(6594)),	-- Battleforge Girdle
-						dr(03.0, i(6591)),	-- Battleforge Wristguards
-						dr(03.0, i(6600)),	-- Dervish Belt
-						dr(03.0, i(6605)),	-- Dervish Gloves
-						dr(03.0, i(9821)),	-- Durable Bracers
-						dr(03.0, i(9796)),	-- Ivycloth Mantle
-						dr(03.0, i(9797)),	-- Ivycloth Pants
-						dr(03.0, i(6612)),	-- Sage's Boots
-						dr(03.0, i(6613)),	-- Sage's Bracers
-						dr(03.0, i(9806)),	-- Superior Gloves
-						dr(03.0, i(9809)),	-- Superior Tunic
-						dr(02.0, i(7356)),	-- Elder's Cloak
-						dr(01.8, i(6611)),	-- Sage's Sash
-						dr(01.7, i(9831)),	-- Scaled Cloak
-						dr(01.7, i(9829)),	-- Scaled Leather Bracers
-						dr(01.5, i(6592)),	-- Battleforge Armor
-						dr(01.4, i(6590)),	-- Battleforge Boots
-						dr(01.4, i(6615)),	-- Sage's Gloves
-						dr(01.4, i(6617)),	-- Sage's Mantle
-						dr(01.3, i(9838)),	-- Banded Cloak
-						dr(01.3, i(7415)),	-- Dervish Spaulders
-						dr(01.3, i(10404)),	-- Durable Belt
-						dr(01.1, i(9840)),	-- Banded Girdle
-						dr(01.1, i(6603)),	-- Dervish Tunic
-						dr(01.1, i(9822)),	-- Durable Cape
-						dr(01.1, i(7410)),	-- Infiltrator Bracers
-						dr(01.1, i(9827)),	-- Scaled Leather Belt
-						dr(01.0, i(9791)),	-- Ivycloth Tunic
+						i(6601),	-- Dervish Boots
+						i(6596),	-- Battleforge Legguards
+						i(6597),	-- Battleforge Shoulderguards
+						i(6602),	-- Dervish Bracers
+						i(4715),	-- Emblazoned Cloak
+						i(6614),	-- Sage's Cloak
+						i(9808),	-- Superior Leggings
+						i(9807),	-- Superior Shoulders
+						i(6595),	-- Battleforge Gauntlets
+						i(6594),	-- Battleforge Girdle
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(6605),	-- Dervish Gloves
+						i(9821),	-- Durable Bracers
+						i(9796),	-- Ivycloth Mantle
+						i(9797),	-- Ivycloth Pants
+						i(6612),	-- Sage's Boots
+						i(6613),	-- Sage's Bracers
+						i(9806),	-- Superior Gloves
+						i(9809),	-- Superior Tunic
+						i(7356),	-- Elder's Cloak
+						i(6611),	-- Sage's Sash
+						i(9831),	-- Scaled Cloak
+						i(9829),	-- Scaled Leather Bracers
+						i(6592),	-- Battleforge Armor
+						i(6590),	-- Battleforge Boots
+						i(6615),	-- Sage's Gloves
+						i(6617),	-- Sage's Mantle
+						i(9838),	-- Banded Cloak
+						i(7415),	-- Dervish Spaulders
+						i(10404),	-- Durable Belt
+						i(9840),	-- Banded Girdle
+						i(6603),	-- Dervish Tunic
+						i(9822),	-- Durable Cape
+						i(7410),	-- Infiltrator Bracers
+						i(9827),	-- Scaled Leather Belt
+						i(9791),	-- Ivycloth Tunic
 					}),
 					n(14488, { 	-- Roloch
-						dr(08.0, i(9817)),	-- Fortified Spaulders
-						dr(07.0, i(6604)),	-- Dervish Cape
-						dr(07.0, i(9802)),	-- Superior Boots
-						dr(06.0, i(6593)),	-- Battleforge Cloak
-						dr(06.0, i(9799)),	-- Ivycloth Sash
-						dr(05.0, i(9795)),	-- Ivycloth Gloves
-						dr(05.0, i(9803)),	-- Superior Bracers
-						dr(04.0, i(9796)),	-- Ivycloth Mantle
-						dr(03.0, i(6602)),	-- Dervish Bracers
-						dr(02.0, i(6591)),	-- Battleforge Wristguards
-						dr(02.0, i(6600)),	-- Dervish Belt
-						dr(02.0, i(4715)),	-- Emblazoned Cloak
-						dr(02.0, i(9818)),	-- Fortified Chain
-						dr(02.0, i(9815)),	-- Fortified Leggings
-						dr(02.0, i(9793)),	-- Ivycloth Bracelets
-						dr(02.0, i(9794)),	-- Ivycloth Cloak
-						dr(02.0, i(6584)),	-- Scouting Tunic
-						dr(02.0, i(9801)),	-- Superior Belt
-						dr(02.0, i(9806)),	-- Superior Gloves
-						dr(02.0, i(9807)),	-- Superior Shoulders
-						dr(01.9, i(9810)),	-- Fortified Boots
-						dr(01.8, i(6567)),	-- Shimmering Armor
-						dr(01.8, i(6569)),	-- Shimmering Robe
-						dr(01.7, i(9813)),	-- Fortified Gauntlets
-						dr(01.3, i(6597)),	-- Battleforge Shoulderguards
-						dr(01.3, i(9792)),	-- Ivycloth Boots
-						dr(01.1, i(6613)),	-- Sage's Bracers
-						dr(01.0, i(6594)),	-- Battleforge Girdle
-						dr(01.0, i(6605)),	-- Dervish Gloves
+						i(9817),	-- Fortified Spaulders
+						i(6604),	-- Dervish Cape
+						i(9802),	-- Superior Boots
+						i(6593),	-- Battleforge Cloak
+						i(9799),	-- Ivycloth Sash
+						i(9795),	-- Ivycloth Gloves
+						i(9803),	-- Superior Bracers
+						i(9796),	-- Ivycloth Mantle
+						i(6602),	-- Dervish Bracers
+						i(6591),	-- Battleforge Wristguards
+						i(6600),	-- Dervish Belt
+						i(4715),	-- Emblazoned Cloak
+						i(9818),	-- Fortified Chain
+						i(9815),	-- Fortified Leggings
+						i(9793),	-- Ivycloth Bracelets
+						i(9794),	-- Ivycloth Cloak
+						i(6584),	-- Scouting Tunic
+						i(9801),	-- Superior Belt
+						i(9806),	-- Superior Gloves
+						i(9807),	-- Superior Shoulders
+						i(9810),	-- Fortified Boots
+						i(6567),	-- Shimmering Armor
+						i(6569),	-- Shimmering Robe
+						i(9813),	-- Fortified Gauntlets
+						i(6597),	-- Battleforge Shoulderguards
+						i(9792),	-- Ivycloth Boots
+						i(6613),	-- Sage's Bracers
+						i(6594),	-- Battleforge Girdle
+						i(6605),	-- Dervish Gloves
 					}),
 					n(51661, { 	-- Tsul'Kalu
-						dr(04.0, i(6594)),	-- Battleforge Girdle
-						dr(04.0, i(6596)),	-- Battleforge Legguards
-						dr(04.0, i(6597)),	-- Battleforge Shoulderguards
-						dr(04.0, i(6591)),	-- Battleforge Wristguards
-						dr(04.0, i(6601)),	-- Dervish Boots
-						dr(04.0, i(6605)),	-- Dervish Gloves
-						dr(04.0, i(9796)),	-- Ivycloth Mantle
-						dr(04.0, i(6614)),	-- Sage's Cloak
-						dr(04.0, i(9808)),	-- Superior Leggings
-						dr(03.0, i(6595)),	-- Battleforge Gauntlets
-						dr(03.0, i(6600)),	-- Dervish Belt
-						dr(03.0, i(6602)),	-- Dervish Bracers
-						dr(03.0, i(4715)),	-- Emblazoned Cloak
-						dr(03.0, i(9797)),	-- Ivycloth Pants
-						dr(03.0, i(6612)),	-- Sage's Boots
-						dr(03.0, i(6613)),	-- Sage's Bracers
-						dr(03.0, i(9829)),	-- Scaled Leather Bracers
-						dr(03.0, i(9806)),	-- Superior Gloves
-						dr(03.0, i(9807)),	-- Superior Shoulders
-						dr(03.0, i(9809)),	-- Superior Tunic
-						dr(01.7, i(9822)),	-- Durable Cape
-						dr(01.6, i(6607)),	-- Dervish Leggings
-						dr(01.6, i(7415)),	-- Dervish Spaulders
-						dr(01.6, i(9831)),	-- Scaled Cloak
-						dr(01.4, i(9821)),	-- Durable Bracers
-						dr(01.3, i(9837)),	-- Banded Bracers
-						dr(01.3, i(6592)),	-- Battleforge Armor
-						dr(01.3, i(6590)),	-- Battleforge Boots
-						dr(01.3, i(6603)),	-- Dervish Tunic
-						dr(01.3, i(10404)),	-- Durable Belt
-						dr(01.3, i(6617)),	-- Sage's Mantle
-						dr(01.3, i(6611)),	-- Sage's Sash
-						dr(01.3, i(9827)),	-- Scaled Leather Belt
-						dr(01.2, i(9791)),	-- Ivycloth Tunic
-						dr(01.1, i(9838)),	-- Banded Cloak
-						dr(01.1, i(7356)),	-- Elder's Cloak
-						dr(01.0, i(7419)),	-- Phalanx Cloak
+						i(6594),	-- Battleforge Girdle
+						i(6596),	-- Battleforge Legguards
+						i(6597),	-- Battleforge Shoulderguards
+						i(6591),	-- Battleforge Wristguards
+						i(6601),	-- Dervish Boots
+						i(6605),	-- Dervish Gloves
+						i(9796),	-- Ivycloth Mantle
+						i(6614),	-- Sage's Cloak
+						i(9808),	-- Superior Leggings
+						i(6595),	-- Battleforge Gauntlets
+						i(6600),	-- Dervish Belt
+						i(6602),	-- Dervish Bracers
+						i(4715),	-- Emblazoned Cloak
+						i(9797),	-- Ivycloth Pants
+						i(6612),	-- Sage's Boots
+						i(6613),	-- Sage's Bracers
+						i(9829),	-- Scaled Leather Bracers
+						i(9806),	-- Superior Gloves
+						i(9807),	-- Superior Shoulders
+						i(9809),	-- Superior Tunic
+						i(9822),	-- Durable Cape
+						i(6607),	-- Dervish Leggings
+						i(7415),	-- Dervish Spaulders
+						i(9831),	-- Scaled Cloak
+						i(9821),	-- Durable Bracers
+						i(9837),	-- Banded Bracers
+						i(6592),	-- Battleforge Armor
+						i(6590),	-- Battleforge Boots
+						i(6603),	-- Dervish Tunic
+						i(10404),	-- Durable Belt
+						i(6617),	-- Sage's Mantle
+						i(6611),	-- Sage's Sash
+						i(9827),	-- Scaled Leather Belt
+						i(9791),	-- Ivycloth Tunic
+						i(9838),	-- Banded Cloak
+						i(7356),	-- Elder's Cloak
+						i(7419),	-- Phalanx Cloak
 					}),
 				}),
 				n(0,    {	-- Zone Drop
