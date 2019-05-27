@@ -440,6 +440,7 @@ pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep
 pet(165849, 2530);	-- Mechantula
 pet(169385, 2718);	-- Microbot 8D
+pet(169384, 2717);	-- Microbot XD
 pet(101426, 666); 	-- Micronax Controller (Micronax)
 pet(169360, 2694);	-- Mindlost Bloodfrenzy
 pet(165894, 2534);	-- Mini Spider Tank
