@@ -473,17 +473,52 @@ _.GearSets =
 								i(144829),	-- Cruel Gladiator's Felskin Legguards
 								i(144823),	-- Cruel Gladiator's Felskin Boots
 							}),
-							gs(1255, {	-- Cruel Gladiator's Chain Armor
-								i(144859),	-- Cruel Gladiator's Chain Helm
-								i(144863),	-- Cruel Gladiator's Chain Spaulders
-								i(144787),	-- Cruel Gladiator's Drape of the Tracker
-								i(144853),	-- Cruel Gladiator's Chain Armor
-								i(144867),	-- Cruel Gladiator's Chain Armband
-								i(144857),	-- Cruel Gladiator's Chain Gauntlets
-								i(144865),	-- Cruel Gladiator's Chain Clasp
-								i(144861),	-- Cruel Gladiator's Chain Leggings
-								i(144855),	-- Cruel Gladiator's Chain Treads
-							}),
+							{	-- Elite Vindictive Gladiator's Chain Armor
+								["setID"] = 1255,	-- Elite Cruel Gladiator's Chain Armor
+								["u"] = 14,			-- Elite PvP Filter
+								["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+								["classes"] = {
+									3,	-- Hunter
+								},
+								["g"] = {
+									{	-- Cruel Gladiator's Chain Helm
+										["itemID"] = 144859,	-- Cruel Gladiator's Chain Helm
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Spaulders
+										["itemID"] = 144863,	-- Cruel Gladiator's Chain Spaulders
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Drape of the Tracker
+										["itemID"] = 144787,	-- Cruel Gladiator's Drape of the Tracker
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Armor
+										["itemID"] = 144853,	-- Cruel Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Armband
+										["itemID"] = 144867,	-- Cruel Gladiator's Chain Armband
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Gauntlets
+										["itemID"] = 144857,	-- Cruel Gladiator's Chain Gauntlets
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Clasp
+										["itemID"] = 144865,	-- Cruel Gladiator's Chain Clasp
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Leggings
+										["itemID"] = 144861,	-- Cruel Gladiator's Chain Leggings
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Cruel Gladiator's Chain Treads
+										["itemID"] = 144855,	-- Cruel Gladiator's Chain Treads
+										["u"] = 14,				-- Elite PvP Filter
+									},
+								},
+							},
 							gs(1235, {	-- Cruel Gladiator's Ringmail Armor
 								i(144967),	-- Cruel Gladiator's Ringmail Helm
 								i(144971),	-- Cruel Gladiator's Ringmail Spaulders
