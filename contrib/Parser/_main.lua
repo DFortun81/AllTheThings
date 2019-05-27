@@ -661,7 +661,6 @@ qg = function(id, t)											-- Add a Quest Giver to an object.
 	return t;
 end
 qgs = qg;														-- Add a Quest Giver to an object. (Alternative)
-races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
 style = function(s, t) t.style = s; return t; end				-- Stylize an object.
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
