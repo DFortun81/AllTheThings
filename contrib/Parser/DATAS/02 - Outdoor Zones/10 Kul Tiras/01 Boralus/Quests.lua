@@ -212,6 +212,13 @@ _.Zones =
 								},
 							},
 						},
+						{	-- A Small Team
+							["questID"] = 54947,
+							["qg"] = 151100,	-- Gila Crosswires
+							["coord"] = { 67.2, 15.9, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 54946,	-- Report to Gila
+						},
 						{	-- Azerite for the Alliance
 							["groups"] = {
 								i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
@@ -432,11 +439,24 @@ _.Zones =
 								["classes"] = { 5 },	-- Priest
 							}),
 						}),
+						{	-- The Legend of Mechagon
+							["questID"] = 54088,
+							["qg"] = 150208,	-- Tinkmaster Overspark
+							["coord"] = { 67.2, 15.6, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						},
 						q(53761, {	-- The Pirate's Treasure
 							["qg"] = 144773,	-- Xal'atath
 							["coord"] = { 20.0, 35.8, 896 },
 							["sourceQuest"] = 53760,	-- Unintended Consequences
 						}),
+						{	-- The Start of Something Bigger
+							["questID"] = 54992,
+							["qg"] = 150145,	-- Gila Crosswires
+							["coord"] = { 43.2, 31.9, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 54947,	-- A Small Team
+						},
 						q(53762, {	-- The Tempest Crown
 							["qg"] = 145396,	-- Xal'atath
 							["coord"] = { 75.0, 77.7, 895 },
