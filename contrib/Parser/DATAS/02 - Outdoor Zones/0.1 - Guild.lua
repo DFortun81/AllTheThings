@@ -5,22 +5,24 @@ _.Zones =
 {
 	{	-- Faction
 		["npcID"] = -6013,	-- Factions
+		["maps"] = {
+			89,		-- Darnassus
+			125,	-- Dalaran: Northrend
+			501,	-- Dalaran (operation shieldwall)
+			87,		-- Ironforge
+			1361,	-- Old Ironforge
+			85,		-- Orgrimmar
+			86,		-- Orgrimmar: The Drag
+			103,	-- The Exodar
+			111,	-- Shattrath
+			110,	-- Silvermoon City
+			84,		-- Stormwind
+			88,		-- Thunder Bluff
+			90,		-- Undercity
+		},
 		["g"] = {
 			faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 				["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-				["maps"] = {
-					89,		-- Darnassus
-					125,	-- Dalaran: Northrend
-					501,	-- Dalaran (operation shieldwall)
-					87,		-- Ironforge
-					1361,	-- Old Ironforge
-					103,	-- The Exodar
-					111,	-- Shattrath
-					110,	-- Silvermoon City
-					84,		-- Stormwind
-					88,		-- Thunder Bluff
-					90,		-- Undercity
-				},
 				["coords"] = {
 					{ 48.47, 75.58, 85 },	-- Goram [Orgrimmar]
 					{ 69.84, 43.72, 90 },	-- Kim Horn [Undercity]
