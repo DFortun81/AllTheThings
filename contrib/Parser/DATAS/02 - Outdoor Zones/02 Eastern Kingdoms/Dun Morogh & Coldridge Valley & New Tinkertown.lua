@@ -208,14 +208,24 @@ _.Zones =
 							--Might be racial locked and not unobtainable
 							{	-- Coldridge Hammer
 								["itemID"] = 3103,	-- Coldridge Hammer
+								["u"] = 2,			-- Was a quest reward prior to Cataclysm and no longer isn't.
 							},
 							{	-- Rancher's Trousers
 								["itemID"] = 10549,			-- Rancher's Trousers
-								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+								["ignoreSource"] = true,	-- White Item
 							},
-							{	-- Soft Leather Tunic
-								["itemID"] = 2817,	-- Soft Leather Tunic
-								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+							{	-- Hard Leather Tunic
+								--Note!! Prior to Cataclysm this was called "Soft Leather Tunic" with the same itemID
+								["itemID"] = 2817,			-- Hard Leather Tunic
+								["ignoreSource"] = true,	-- White Item
+							},
+							{	-- Ram Rescue Vest
+								["itemID"] = 131205,		-- Ram Rescue Vest
+								["ignoreSource"] = true,	-- White Item
+							},
+							{	-- Vagash Breastplate
+								["itemID"] = 57552,			-- Vagash Breastplate
+								["ignoreSource"] = true,	-- White Item
 							},
 						},
 					},
