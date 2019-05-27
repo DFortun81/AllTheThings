@@ -162,7 +162,7 @@ _.Zones =
 								-- INCURSIONS INFO STARTS HERE
 								i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
 									["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
-									["g"] = bubbleDown({["modID"] = 6}, {
+									["g"] = bubbleDown({["modID"] = 5}, {
 										i(163891),	-- 7th Legionnaire's Aegis
 										i(163337),	-- 7th Legionnaire's Amice
 										i(163403),	-- 7th Legionnaire's Armguards

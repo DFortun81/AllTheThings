@@ -1090,7 +1090,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 147690,	-- Ensemble: Cruel Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1123,6 +1123,33 @@ _.Zones =
 											},
 											{	-- Cruel Combatant's Chain Treads
 												["itemID"] = 145101,	-- Cruel Combatant's Chain Treads
+											},
+											{	-- Ferocious Combatant's Chain Helm
+												["itemID"] = 145947,	-- Ferocious Combatant's Chain Helm
+											},
+											{	-- Ferocious Combatant's Chain Spaulders
+												["itemID"] = 145951,	-- Ferocious Combatant's Chain Spaulders
+											},
+											{	-- Ferocious Combatant's Drape of the Tracker
+												["itemID"] = 145875,	-- Ferocious Combatant's Drape of the Tracker
+											},
+											{	-- Ferocious Combatant's Chain Armor
+												["itemID"] = 145941,	-- Ferocious Combatant's Chain Armor
+											},
+											{	-- Ferocious Combatant's Chain Armband
+												["itemID"] = 145955,	-- Ferocious Combatant's Chain Armband
+											},
+											{	-- Ferocious Combatant's Chain Gauntlets
+												["itemID"] = 145945,	-- Ferocious Combatant's Chain Gauntlets
+											},
+											{	-- Ferocious Combatant's Chain Clasp
+												["itemID"] = 145953,	-- Ferocious Combatant's Chain Clasp
+											},
+											{	-- Ferocious Combatant's Chain Leggings
+												["itemID"] = 145949,	-- Ferocious Combatant's Chain Leggings
+											},
+											{	-- Ferocious Combatant's Chain Treads
+												["itemID"] = 145943,	-- Ferocious Combatant's Chain Treads
 											},
 										},
 									},
@@ -1658,7 +1685,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1691,6 +1718,60 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Chain Treads
 												["itemID"] = 149581,	-- Fierce Combatant's Chain Treads
+											},
+											{	-- Dominant Combatant's Chain Helm
+												["itemID"] = 149835,	-- Dominant Combatant's Chain Helm
+											},
+											{	-- Dominant Combatant's Chain Spaulders
+												["itemID"] = 149839,	-- Dominant Combatant's Chain Spaulders
+											},
+											{	-- Dominant Combatant's Drape of the Tracker
+												["itemID"] = 149763,	-- Dominant Combatant's Drape of the Tracker
+											},
+											{	-- Dominant Combatant's Chain Armor
+												["itemID"] = 149829,	-- Dominant Combatant's Chain Armor
+											},
+											{	-- Dominant Combatant's Chain Armband
+												["itemID"] = 149843,	-- Dominant Combatant's Chain Armband
+											},
+											{	-- Dominant Combatant's Chain Gauntlets
+												["itemID"] = 149833,	-- Dominant Combatant's Chain Gauntlets
+											},
+											{	-- Dominant Combatant's Chain Clasp
+												["itemID"] = 149841,	-- Dominant Combatant's Chain Clasp
+											},
+											{	-- Dominant Combatant's Chain Leggings
+												["itemID"] = 149837,	-- Dominant Combatant's Chain Leggings
+											},
+											{	-- Dominant Combatant's Chain Treads
+												["itemID"] = 149831,	-- Dominant Combatant's Chain Treads
+											},
+											{	-- Demonic Combatant's Chain Helm
+												["itemID"] = 150081,	-- Demonic Combatant's Chain Helm
+											},
+											{	-- Demonic Combatant's Chain Spaulders
+												["itemID"] = 150085,	-- Demonic Combatant's Chain Spaulders
+											},
+											{	-- Demonic Combatant's Drape of the Tracker
+												["itemID"] = 150009,	-- Demonic Combatant's Drape of the Tracker
+											},
+											{	-- Demonic Combatant's Chain Armor
+												["itemID"] = 150075,	-- Demonic Combatant's Chain Armor
+											},
+											{	-- Demonic Combatant's Chain Armband
+												["itemID"] = 150089,	-- Demonic Combatant's Chain Armband
+											},
+											{	-- Demonic Combatant's Chain Gauntlets
+												["itemID"] = 150079,	-- Demonic Combatant's Chain Gauntlets
+											},
+											{	-- Demonic Combatant's Chain Clasp
+												["itemID"] = 150087,	-- Demonic Combatant's Chain Clasp
+											},
+											{	-- Demonic Combatant's Chain Leggings
+												["itemID"] = 150083,	-- Demonic Combatant's Chain Leggings
+											},
+											{	-- Demonic Combatant's Chain Treads
+												["itemID"] = 150077,	-- Demonic Combatant's Chain Treads
 											},
 										},
 									},
@@ -2205,7 +2286,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 146139,	-- Ensemble: Vindictive Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -2238,6 +2319,33 @@ _.Zones =
 											},
 											{	-- Vindictive Gladiator's Chain Treads
 												["itemID"] = 135721,	-- Vindictive Gladiator's Chain Treads
+											},
+											{	-- Fearless Gladiator's Chain Helm
+												["itemID"] = 142692,	-- Fearless Gladiator's Chain Helm
+											},
+											{	-- Fearless Gladiator's Chain Spaulders
+												["itemID"] = 142694,	-- Fearless Gladiator's Chain Spaulders
+											},
+											{	-- Fearless Gladiator's Drape of the Tracker
+												["itemID"] = 142769,	-- Fearless Gladiator's Drape of the Tracker
+											},
+											{	-- Fearless Gladiator's Chain Armor
+												["itemID"] = 142689,	-- Fearless Gladiator's Chain Armor
+											},
+											{	-- Fearless Gladiator's Chain Armband
+												["itemID"] = 142696,	-- Fearless Gladiator's Chain Armband
+											},
+											{	-- Fearless Gladiator's Chain Gauntlets
+												["itemID"] = 142691,	-- Fearless Gladiator's Chain Gauntlets
+											},
+											{	-- Fearless Gladiator's Chain Clasp
+												["itemID"] = 142695,	-- Fearless Gladiator's Chain Clasp
+											},
+											{	-- Fearless Gladiator's Chain Leggings
+												["itemID"] = 142693,	-- Fearless Gladiator's Chain Leggings
+											},
+											{	-- Fearless Gladiator's Chain Treads
+												["itemID"] = 142690,	-- Fearless Gladiator's Chain Treads
 											},
 										},
 									},
@@ -2719,7 +2827,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 147645,	-- Ensemble: Cruel Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -2752,6 +2860,33 @@ _.Zones =
 											},
 											{	-- Cruel Gladiator's Chain Treads
 												["itemID"] = 144609,	-- Cruel Gladiator's Chain Treads
+											},
+											{	-- Ferocious Gladiator's Chain Helm
+												["itemID"] = 145455,	-- Ferocious Gladiator's Chain Helm
+											},
+											{	-- Ferocious Gladiator's Chain Spaulders
+												["itemID"] = 145459,	-- Ferocious Gladiator's Chain Spaulders
+											},
+											{	-- Ferocious Gladiator's Drape of the Tracker
+												["itemID"] = 145383,	-- Ferocious Gladiator's Drape of the Tracker
+											},
+											{	-- Ferocious Gladiator's Chain Armor
+												["itemID"] = 145449,	-- Ferocious Gladiator's Chain Armor
+											},
+											{	-- Ferocious Gladiator's Chain Armband
+												["itemID"] = 145463,	-- Ferocious Gladiator's Chain Armband
+											},
+											{	-- Ferocious Gladiator's Chain Gauntlets
+												["itemID"] = 145453,	-- Ferocious Gladiator's Chain Gauntlets
+											},
+											{	-- Ferocious Gladiator's Chain Clasp
+												["itemID"] = 145461,	-- Ferocious Gladiator's Chain Clasp
+											},
+											{	-- Ferocious Gladiator's Chain Leggings
+												["itemID"] = 145457,	-- Ferocious Gladiator's Chain Leggings
+											},
+											{	-- Ferocious Gladiator's Chain Treads
+												["itemID"] = 145451,	-- Ferocious Gladiator's Chain Treads
 											},
 										},
 									},
@@ -3287,7 +3422,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -3320,6 +3455,60 @@ _.Zones =
 											},
 											{	-- Fierce Gladiator's Chain Treads
 												["itemID"] = 147984,	-- Fierce Gladiator's Chain Treads
+											},
+											{	-- Dominant Gladiator's Chain Helm
+												["itemID"] = 148481,	-- Dominant Gladiator's Chain Helm
+											},
+											{	-- Dominant Gladiator's Chain Spaulders
+												["itemID"] = 148485,	-- Dominant Gladiator's Chain Spaulders
+											},
+											{	-- Dominant Gladiator's Drape of the Tracker
+												["itemID"] = 148409,	-- Dominant Gladiator's Drape of the Tracker
+											},
+											{	-- Dominant Gladiator's Chain Armor
+												["itemID"] = 148475,	-- Dominant Gladiator's Chain Armor
+											},
+											{	-- Dominant Gladiator's Chain Armband
+												["itemID"] = 148489,	-- Dominant Gladiator's Chain Armband
+											},
+											{	-- Dominant Gladiator's Chain Gauntlets
+												["itemID"] = 148479,	-- Dominant Gladiator's Chain Gauntlets
+											},
+											{	-- Dominant Gladiator's Chain Clasp
+												["itemID"] = 148487,	-- Dominant Gladiator's Chain Clasp
+											},
+											{	-- Dominant Gladiator's Chain Leggings
+												["itemID"] = 148483,	-- Dominant Gladiator's Chain Leggings
+											},
+											{	-- Dominant Gladiator's Chain Treads
+												["itemID"] = 148477,	-- Dominant Gladiator's Chain Treads
+											},
+											{	-- Demonic Gladiator's Chain Helm
+												["itemID"] = 148973,	-- Demonic Gladiator's Chain Helm
+											},
+											{	-- Demonic Gladiator's Chain Spaulders
+												["itemID"] = 148977,	-- Demonic Gladiator's Chain Spaulders
+											},
+											{	-- Demonic Gladiator's Drape of the Tracker
+												["itemID"] = 148901,	-- Demonic Gladiator's Drape of the Tracker
+											},
+											{	-- Demonic Gladiator's Chain Armor
+												["itemID"] = 148967,	-- Demonic Gladiator's Chain Armor
+											},
+											{	-- Demonic Gladiator's Chain Armband
+												["itemID"] = 148981,	-- Demonic Gladiator's Chain Armband
+											},
+											{	-- Demonic Gladiator's Chain Gauntlets
+												["itemID"] = 148971,	-- Demonic Gladiator's Chain Gauntlets
+											},
+											{	-- Demonic Gladiator's Chain Clasp
+												["itemID"] = 148979,	-- Demonic Gladiator's Chain Clasp
+											},
+											{	-- Demonic Gladiator's Chain Leggings
+												["itemID"] = 148975,	-- Demonic Gladiator's Chain Leggings
+											},
+											{	-- Demonic Gladiator's Chain Treads
+												["itemID"] = 148969,	-- Demonic Gladiator's Chain Treads
 											},
 										},
 									},
@@ -10018,7 +10207,7 @@ _.Zones =
 							gssh(1391, {	-- Elite
 								["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 								["g"] = {
-									-- LEGION { Legion Season 1 & 2
+									-- LEGION Season 1 & 2
 									i(146237, {	-- Vindictive Gladiator's Satin Armor
 										i(136206),	-- Vindictive Gladiator's Satin Hood
 										i(136209),	-- Vindictive Gladiator's Satin Mantle
@@ -10099,17 +10288,88 @@ _.Zones =
 										},
 										["classes"] = { 12 },
 									}),
-									i(146227, {	-- Vindictive Gladiator's Satin Armor
-										i(136175),	-- Vindictive Gladiator's Chain Helm
-										i(136177),	-- Vindictive Gladiator's Chain Spaulders
-										i(136252),	-- Vindictive Gladiator's Drape of the Tracker
-										i(136172),	-- Vindictive Gladiator's Chain Armor
-										i(136179),	-- Vindictive Gladiator's Chain Armband
-										i(136174),	-- Vindictive Gladiator's Chain Gauntlets
-										i(136178),	-- Vindictive Gladiator's Chain Clasp
-										i(136176),	-- Vindictive Gladiator's Chain Leggings
-										i(136173),	-- Vindictive Gladiator's Chain Treads
-									}),
+									{	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
+										["itemID"] = 146227,	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Vindictive Gladiator's Chain Helm
+												["itemID"] = 136175,	-- Vindictive Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Spaulders
+												["itemID"] = 136177,	-- Vindictive Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Drape of the Tracker
+												["itemID"] = 136252,	-- Vindictive Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Armor
+												["itemID"] = 136172,	-- Vindictive Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Armband
+												["itemID"] = 136179,	-- Vindictive Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Gauntlets
+												["itemID"] = 136174,	-- Vindictive Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Clasp
+												["itemID"] = 136178,	-- Vindictive Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Leggings
+												["itemID"] = 136176,	-- Vindictive Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Treads
+												["itemID"] = 136173,	-- Vindictive Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Helm
+												["itemID"] = 143144,	-- Fearless Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Spaulders
+												["itemID"] = 143146,	-- Fearless Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Drape of the Tracker
+												["itemID"] = 143221,	-- Fearless Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Armor
+												["itemID"] = 143141,	-- Fearless Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Armband
+												["itemID"] = 143148,	-- Fearless Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Gauntlets
+												["itemID"] = 143143,	-- Fearless Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Clasp
+												["itemID"] = 143147,	-- Fearless Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Leggings
+												["itemID"] = 143145,	-- Fearless Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fearless Gladiator's Chain Treads
+												["itemID"] = 143142,	-- Fearless Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+										},
+									},
 									i(146225, {	-- Vindictive Gladiator's Satin Armor
 										i(136223),	-- Vindictive Gladiator's Ringmail Helm
 										i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
@@ -10154,7 +10414,7 @@ _.Zones =
 										i(136160),	-- Vindictive Gladiator's Dreadplate Legguards
 										i(136157),	-- Vindictive Gladiator's Dreadplate Sabatons
 									}),
-									-- LEGION 3 & 4
+									-- LEGION Season 3 & 4
 									i(147639, {	-- Cruel Gladiator's Satin Armor
 										i(144927),	-- Cruel Gladiator's Satin Hood
 										i(144933),	-- Cruel Gladiator's Satin Mantle
@@ -10235,17 +10495,88 @@ _.Zones =
 										},
 										["classes"] = { 12 },
 									}),
-									i(147622, {	-- Cruel Gladiator's Chain Armor
-										i(144859),	-- Cruel Gladiator's Chain Helm
-										i(144863),	-- Cruel Gladiator's Chain Spaulders
-										i(144787),	-- Cruel Gladiator's Drape of the Tracker
-										i(144853),	-- Cruel Gladiator's Chain Armor
-										i(144867),	-- Cruel Gladiator's Chain Armband
-										i(144857),	-- Cruel Gladiator's Chain Gauntlets
-										i(144865),	-- Cruel Gladiator's Chain Clasp
-										i(144861),	-- Cruel Gladiator's Chain Leggings
-										i(144855),	-- Cruel Gladiator's Chain Treads
-									}),
+									{	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
+										["itemID"] = 147622,	-- Ensemble: Elite Cruel Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Cruel Gladiator's Chain Helm
+												["itemID"] = 144859,	-- Cruel Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Spaulders
+												["itemID"] = 144863,	-- Cruel Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Drape of the Tracker
+												["itemID"] = 144787,	-- Cruel Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Armor
+												["itemID"] = 144853,	-- Cruel Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Armband
+												["itemID"] = 144867,	-- Cruel Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Gauntlets
+												["itemID"] = 144857,	-- Cruel Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Clasp
+												["itemID"] = 144865,	-- Cruel Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Leggings
+												["itemID"] = 144861,	-- Cruel Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Cruel Gladiator's Chain Treads
+												["itemID"] = 144855,	-- Cruel Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Helm
+												["itemID"] = 145701,	-- Ferocious Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Spaulders
+												["itemID"] = 145705,	-- Ferocious Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Drape of the Tracker
+												["itemID"] = 145629,	-- Ferocious Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Armor
+												["itemID"] = 145695,	-- Ferocious Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Armband
+												["itemID"] = 145709,	-- Ferocious Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Gauntlets
+												["itemID"] = 145699,	-- Ferocious Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Clasp
+												["itemID"] = 145707,	-- Ferocious Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Leggings
+												["itemID"] = 145703,	-- Ferocious Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Treads
+												["itemID"] = 145697,	-- Ferocious Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+										},
+									},
 									i(147638, {	-- Cruel Gladiator's Ringmail Armor
 										i(144967),	-- Cruel Gladiator's Ringmail Helm
 										i(144971),	-- Cruel Gladiator's Ringmail Spaulders
@@ -10290,6 +10621,125 @@ _.Zones =
 										i(144813),	-- Cruel Gladiator's Dreadplate Legguards
 										i(144807),	-- Cruel Gladiator's Dreadplate Sabatons
 									}),
+									-- LEGION Season 5 & 6
+									{	-- Ensemble: Elite Fierce Gladiator's Chain Armor
+										["itemID"] = 149455,	-- Ensemble: Elite Fierce Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Fierce Gladiator's Chain Helm
+												["itemID"] = 148234,	-- Fierce Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Spaulders
+												["itemID"] = 148238,	-- Fierce Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Drape of the Tracker
+												["itemID"] = 148162,	-- Fierce Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Armor
+												["itemID"] = 148228,	-- Fierce Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Armband
+												["itemID"] = 148242,	-- Fierce Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Gauntlets
+												["itemID"] = 148232,	-- Fierce Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Clasp
+												["itemID"] = 148240,	-- Fierce Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Leggings
+												["itemID"] = 148236,	-- Fierce Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Fierce Gladiator's Chain Treads
+												["itemID"] = 148230,	-- Fierce Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Helm
+												["itemID"] = 149835,	-- Dominant Combatant's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Spaulders
+												["itemID"] = 149839,	-- Dominant Combatant's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Drape of the Tracker
+												["itemID"] = 149763,	-- Dominant Combatant's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Armor
+												["itemID"] = 149829,	-- Dominant Combatant's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Armband
+												["itemID"] = 149843,	-- Dominant Combatant's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Gauntlets
+												["itemID"] = 149833,	-- Dominant Combatant's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Clasp
+												["itemID"] = 149841,	-- Dominant Combatant's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Leggings
+												["itemID"] = 149837,	-- Dominant Combatant's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Dominant Combatant's Chain Treads
+												["itemID"] = 149831,	-- Dominant Combatant's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Helm
+												["itemID"] = 149219,	-- Demonic Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Spaulders
+												["itemID"] = 149223,	-- Demonic Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Drape of the Tracker
+												["itemID"] = 149147,	-- Demonic Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Armor
+												["itemID"] = 149213,	-- Demonic Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Armband
+												["itemID"] = 149227,	-- Demonic Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Gauntlets
+												["itemID"] = 149217,	-- Demonic Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Clasp
+												["itemID"] = 149225,	-- Demonic Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Leggings
+												["itemID"] = 149221,	-- Demonic Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Demonic Gladiator's Chain Treads
+												["itemID"] = 149215,	-- Demonic Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+										},
+									},
 								},
 							}),
 						},
