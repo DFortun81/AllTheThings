@@ -195,26 +195,26 @@ _.Zones =
 						}),
 						n(-16,  {	-- Rares
 							n(50005, {	-- Poseidus
-								dr(99, i(67151)),	-- Reins of Poseidus
-								dr(9, i(67132)),	-- Grips of the Failed Immortal
-								dr(6, i(67140)),	-- Drape of Inimitable Fate
-								dr(6, i(67131)),	-- Ritssyn's Ruminous Drape
-								dr(5, i(67150)),	-- Arrowsinger Legguards
-								dr(5, i(67143)),	-- Icebone Hauberk
-								dr(5, i(67147)),	-- Je'Tze's Sparkling Tiara
-								dr(5, i(67146)),	-- Woundsplicer Handwraps
-								dr(4, i(67149)),	-- Heartbound Tome
-								dr(4, i(67148)),	-- Kilt of Trollish Dreams
-								dr(3, i(67144)),	-- Pauldrons of Edward the Odd
-								dr(3, i(67142)),	-- Zom's Electrostatic Cloak
-								dr(1.4, i(67141)),	-- Corefire Legplates
-								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
-								dr(1.4, i(67134)),	-- Dory's Finery
+								i(67151),	-- Reins of Poseidus
+								i(67132),	-- Grips of the Failed Immortal
+								i(67140),	-- Drape of Inimitable Fate
+								i(67131),	-- Ritssyn's Ruminous Drape
+								i(67150),	-- Arrowsinger Legguards
+								i(67143),	-- Icebone Hauberk
+								i(67147),	-- Je'Tze's Sparkling Tiara
+								i(67146),	-- Woundsplicer Handwraps
+								i(67149),	-- Heartbound Tome
+								i(67148),	-- Kilt of Trollish Dreams
+								i(67144),	-- Pauldrons of Edward the Odd
+								i(67142),	-- Zom's Electrostatic Cloak
+								i(67141),	-- Corefire Legplates
+								i(67133),	-- Dizze's Whirling Robe
+								i(67134),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
 								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50050, {	-- Shok'sharak
-								dr(100, i(67233))	-- Sussurating Treads of Shok'sharak
+								i(67233)	-- Sussurating Treads of Shok'sharak
 							}),
 							--[[
 							n(50051, {	-- Ghostcrawler: Hunter Pet Tamable
@@ -1001,26 +1001,26 @@ _.Zones =
 						}),
 						n(-16,  {	-- Rares
 							n(50005, {	-- Poseidus
-								dr(99, i(67151)),	-- Reins of Poseidus
-								dr(9, i(67132)),	-- Grips of the Failed Immortal
-								dr(6, i(67140)),	-- Drape of Inimitable Fate
-								dr(6, i(67131)),	-- Ritssyn's Ruminous Drape
-								dr(5, i(67150)),	-- Arrowsinger Legguards
-								dr(5, i(67143)),	-- Icebone Hauberk
-								dr(5, i(67147)),	-- Je'Tze's Sparkling Tiara
-								dr(5, i(67146)),	-- Woundsplicer Handwraps
-								dr(4, i(67149)),	-- Heartbound Tome
-								dr(4, i(67148)),	-- Kilt of Trollish Dreams
-								dr(3, i(67144)),	-- Pauldrons of Edward the Odd
-								dr(3, i(67142)),	-- Zom's Electrostatic Cloak
-								dr(1.4, i(67141)),	-- Corefire Legplates
-								dr(1.4, i(67133)),	-- Dizze's Whirling Robe
-								dr(1.4, i(67134)),	-- Dory's Finery
+								i(67151),	-- Reins of Poseidus
+								i(67132),	-- Grips of the Failed Immortal
+								i(67140),	-- Drape of Inimitable Fate
+								i(67131),	-- Ritssyn's Ruminous Drape
+								i(67150),	-- Arrowsinger Legguards
+								i(67143),	-- Icebone Hauberk
+								i(67147),	-- Je'Tze's Sparkling Tiara
+								i(67146),	-- Woundsplicer Handwraps
+								i(67149),	-- Heartbound Tome
+								i(67148),	-- Kilt of Trollish Dreams
+								i(67144),	-- Pauldrons of Edward the Odd
+								i(67142),	-- Zom's Electrostatic Cloak
+								i(67141),	-- Corefire Legplates
+								i(67133),	-- Dizze's Whirling Robe
+								i(67134),	-- Dory's Finery
 								i(67129),	-- Signet of High Arcanist Savor
 								i(67130),	-- Dorian's Lost Necklace
 							}), 
 							n(50052, {	-- Burgy Blackheart
-								dr(100, i(134022))	-- Burgy Blackheart's Handsome Hat
+								i(134022)	-- Burgy Blackheart's Handsome Hat
 							}), 
 							--[[
 							n(51071, {	-- Captain Florence: Does not drop collectible loot.
@@ -1054,17 +1054,6 @@ _.Zones =
 								["itemID"] = 65649,	--	-- Technique: Origami Slime
 							},
 						}),
---[[					n(-40, {	-- Legacy
-							["groups"] = {
-								n(-17, {	-- Quests (Legacy)
-								}),
-								--n(-16, {	-- Rares (Legacy)
-								--}),
-								--n(0, {	-- Zone Drop (Legacy)
-								--}),
-							},
-							["u"] = 2,
-						}),	--]]
 					},
 					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
 					["description"] = "|cff66ccffThe Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.|r",
