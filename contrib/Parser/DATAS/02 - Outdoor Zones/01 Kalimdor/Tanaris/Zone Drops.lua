@@ -23,6 +23,18 @@ _.Zones =
 					un(7, i(8401)),	-- Pattern: Tough Scorpid Leggings (old BoE version was removed from game)
 					i(72027),	-- Pattern: Tough Scorpid Shoulders
 					un(7, i(8400)),	-- Pattern: Tough Scorpid Shoulders (old BoE version was removed from game)
+					{	-- Pirate's Footlocker
+						["itemID"] = 9276,
+						["crs"] = {
+							7857,	-- Southsea Dock Worker
+							7856,	-- Southsea Freebooter
+							15685,	-- Southsea Kidnapper
+							7858,	-- Southsea Swashbuckler
+						},
+						["g"] = {
+							i(9359),	-- Wirt's Third Leg
+						},
+					},
 				}),
 			},
 		}),

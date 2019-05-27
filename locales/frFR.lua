@@ -177,6 +177,7 @@ for key,value in pairs({
 	[190936] = "Chaudron de peste",
 	[191760] = "Console de la bibliothèque de l'inventeur",
 	[191761] = "Console prototype",
+	[192049] = "Banc de harengs crocs-pointus",
 	[192060] = "L’enclume de Fjorn",
 	[192072] = "Caisse de harpons",
 	[194105] = "Bigobox 413",

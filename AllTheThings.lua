@@ -6822,7 +6822,9 @@ local function CreateMinimapButton()
 	
 	-- Create the Button Texture
 	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
+	texture:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
+	--texture:SetATTSprite("in_game_logo", 430, 75, 53, 59, 512, 256);
+	--texture:SetScale(53 / 64, 59 / 64);
 	texture:SetPoint("CENTER", 0, 0);
 	texture:SetAllPoints();
 	button.texture = texture;
@@ -6850,7 +6852,7 @@ local function CreateMinimapButton()
 			self.oldtexture:Show();
 			self.border:Show();
 		else
-			self:SetATTHighlightSprite("epic_36x36", 429, 179, 36, 36, 512, 256):SetAlpha(0.2);
+			self:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
 			self.texture:Show();
 			self.oldtexture:Hide();
 			self.border:Hide();
@@ -8252,8 +8254,8 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
 		allData.description = L["DESCRIPTION"];
@@ -8756,8 +8758,8 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
 		allData.text = L["TITLE"];
@@ -11746,7 +11748,7 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- The ALL THE THINGS Epic Logo!
 		local f = frame:CreateTexture(nil, "ARTWORK");
-		f:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
+		f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
 		f:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 72, 0);
 		f:SetSize(36, 36);
 		f:SetScale(0.8);

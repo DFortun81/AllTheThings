@@ -33,15 +33,26 @@ _.Instances = { tier(1, {	-- Classic
 			n(0, {	-- Zone Drop
 				i(1488, {	-- Avenger's Armor
 					["crs"] = {
+						74620,	-- Battle Boar
 						74553,	-- Blood-Branded Razorfen
+						75467,	-- Cave Bat
+						74551,	-- Razorfen Beast Stalker
 						74550,	-- Razorfen Kraulshaper
 						74554,	-- Razorfen Scarblade
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(2264, {	-- Mantle of Thieves
 					["crs"] = {
+						74620,	-- Battle Boar
+						75467,	-- Cave Bat
+						74900,	-- Kraulshaper Tukaar
+						74551,	-- Razorfen Beast Stalker
+						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74549,	-- Razorfen Stonechanter
 						74652,	-- Razorfen Thornbolt
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2039, {	-- Plains Ring
@@ -53,41 +64,58 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(4438, {	-- Pugilist Bracers
 					["crs"] = {
+						74620,	-- Battle Boar
 						75467,	-- Cave Bat
 						74551,	-- Razorfen Beast Stalker
 						74552,	-- Razorfen Huntmaster
+						75466,	-- Vile Bat
 					},
 				}),
 				i(1975, {	-- Pysan's Old Greatsword
 					["crs"] = {
-						74545,	-- Razorfen Geomagus
 						74551,	-- Razorfen Beast Stalker
+						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(1976, {	-- Slaghammer
 					["crs"] = {
+						74620,	-- Battle Boar
 						74553,	-- Blood-Branded Razorfen
 						75247,	-- Groyat, the Blind Hunter
 						74900,	-- Kraulshaper Tukaar
 						74551,	-- Razorfen Beast Stalker
+						74555,	-- Razorfen Hidecrusher
+						74552,	-- Razorfen Huntmaster
+						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2549, {	-- Staff of the Shade
 					["crs"] = {
 						74553,	-- Blood-Branded Razorfen
+						74534,	-- Crystalline Behemoth
+						75384,	-- Kraulshaped Monstrosity
 						74551,	-- Razorfen Beast Stalker
 						74550,	-- Razorfen Kraulshaper
+						74549,	-- Razorfen Stonechanter
+						74652,	-- Razorfen Thornbolt
 						75110,	-- Razorfen Torchbearer
 					},
 				}),
 				i(1727, {	-- Sword of Decay
 					["crs"] = {
+						74620,	-- Battle Boar
 						74551,	-- Razorfen Beast Stalker
 						74545,	-- Razorfen Geomagus
 						74555,	-- Razorfen Hidecrusher
 						74552,	-- Razorfen Huntmaster
 						74550,	-- Razorfen Kraulshaper
+						74554,	-- Razorfen Scarblade
+						74549,	-- Razorfen Stonechanter
 					},
 				}),
 				i(776, { 	-- Vendetta
@@ -114,11 +142,15 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(1978, {	-- Wolfclaw Gloves
 					["crs"] = {
+						74620,	-- Battle Boar
 						74900,	-- Kraulshaper Tukaar
+						74551,	-- Razorfen Beast Stalker
 						74545,	-- Razorfen Geomagus
 						74552,	-- Razorfen Huntmaster
+						74554,	-- Razorfen Scarblade
 						74549,	-- Razorfen Stonechanter
 						75110,	-- Razorfen Torchbearer
+						75466,	-- Vile Bat
 					},
 				}),
 				i(2039, {	-- Plains Ring

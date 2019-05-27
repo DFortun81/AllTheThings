@@ -64,6 +64,55 @@ _.Instances = { tier(1, {	-- Classic
 							15462,	-- Spitting Scarab
 						},
 					},
+					{	-- Helm of the Holy Avenger
+						["itemID"] = 21803,	-- Helm of the Holy Avenger
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15392,	-- Captain Tuubid
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
+					{	-- Polished Obsidian Pauldrons
+						["itemID"] = 21805,	-- Polished Obsidian Pauldrons
+						["crs"] = {
+							15355,	-- Anubisath Guardian
+							15389,	-- Captain Drenn
+							15391,	-- Captain Qeez
+							15390,	-- Captain Xurrem
+							15335,	-- Flesh Hunter
+							15319,	-- Hive'Zara Collector
+							15318,	-- Hive'Zara Drone
+							15323,	-- Hive'Zara Sandstalker
+							15320,	-- Hive'Zara Soldier
+							15327,	-- Hive'Zara Stinger
+							15336,	-- Hive'Zara Tail Lasher
+							15325,	-- Hive'Zara Wasp
+							15386,	-- Major Yeggeth
+							15338,	-- Obsidian Destroyer
+							15324,	-- Qiraji Gladiator
+							15343,	-- Qiraji Swarmguard
+							15461,	-- Shrieker Scarab
+							15333,	-- Silicate Feeder
+							15462,	-- Spitting Scarab
+						},
+					},
 					{	-- Silithid Husked Launcher
 						["itemID"] = 21800,	-- Silithid Husked Launcher
 						["crs"] = {

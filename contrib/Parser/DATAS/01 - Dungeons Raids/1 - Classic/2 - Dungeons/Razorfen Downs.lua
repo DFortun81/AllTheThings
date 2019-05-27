@@ -93,27 +93,49 @@ _.Instances = { tier(1, {	-- Classic
 						74492,	-- Bubonic Geist
 						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
+						74486,	-- Freezing Spirit
+						74488,	-- Frozen Soul
+						74950,	-- Gelatanized Plague Gunk
+						74489,	-- Thorn Eater Ghoul
 					},
 				}),
 				i(10574, {	-- Corpseshroud
 					["crs"] = {
 						74947,	-- Boneflayer Ghoul
+						74492,	-- Bubonic Geist
+						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
+						74488,	-- Frozen Soul
+						74950,	-- Gelatanized Plague Gunk
 					},
 				}),
 				i(10581, {	-- Death's Head Vestment
 					["crs"] = {
+						74947,	-- Boneflayer Ghoul
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
+						74379,	-- Splinterbone Frostweaver
+						74489,	-- Thorn Eater Ghoul
 					},
 				}),
 				i(10571, {	-- Ebony Boneclub
 					["crs"] = {
 						74492,	-- Bubonic Geist
 						74483,	-- Death's Head Arachnomancer
+						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
+						74950,	-- Gelatanized Plague Gunk
+						74584,	-- Plague-Rotted Webslinger
 					},
 				}),
-				i(10572),	-- Freezing Shard
+				i(10572, {	-- Freezing Shard
+					["crs"] = {
+						74411,	-- Death's Head Necrolyte
+						74950,	-- Gelatanized Plague Gunk
+					},
+				}),
 				i(10570, {	-- Manslayer
 					["crs"] = {
 						74412,	-- Aarux
@@ -127,25 +149,28 @@ _.Instances = { tier(1, {	-- Classic
 						74483,	-- Death's Head Arachnomancer
 						74411,	-- Death's Head Necrolyte
 						74478,	-- Death's Head Shadowmender
+						74583,	-- Festering Spiderling
 						74379,	-- Splinterbone Frostweaver
 					},
 				}),
 				i(10583, {	-- Quillward Harness
 					["crs"] = {
-						74379,	-- Splinterbone Frostweaver
 						74478,	-- Death's Head Shadowmender
+						74379,	-- Splinterbone Frostweaver
 					},
 				}),
 				i(10584, {	-- Stormgale Fists
 					["crs"] = {
-						74489,	-- Thorn Eater Ghoul
-						74492,	-- Bubonic Geist
+						74583,	-- Festering Spiderling
+						74488,	-- Frozen Soul
 					},
 				}),
 				i(10578, {	-- Thoughtcast Boots
 					["crs"] = {
-						74478,	-- Death's Head Shadowmender
+						74490,	-- Boneflayer Ghoul
 						74483,	-- Death's Head Arachnomancer
+						74478,	-- Death's Head Shadowmender
+						74488,	-- Frozen Soul
 						74950,	-- Gelatanized Plague Gunk
 					},
 				}),

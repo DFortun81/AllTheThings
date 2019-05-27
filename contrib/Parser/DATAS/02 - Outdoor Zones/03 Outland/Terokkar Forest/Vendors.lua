@@ -5,31 +5,44 @@ _.Zones =
 {
 	{	-- Outland
 		["mapID"] = 101,	-- Outland
-		["groups"] = {
+		["g"] = {
 			{	-- Terokkar Forest
 				["mapID"] = 108,	-- Terokkar Forest
-				["groups"] = {
+				["g"] = {
 					n(-2, {		-- Vendors
 						na(19296, {	-- Innkeeper Biribi <Innkeeper>
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							["coord"] = { 56.6, 53.2, 108 },
+							["g"] = {
+								i(27699),	-- Recipe: Golden Fish Sticks
+								i(27700),	-- Recipe: Spicy Crawdad
+							},
 						}),
 						nh(18957, {	-- Innkeeper Grilka <Innkeeper>
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							["coord"] = { 48.8, 45.0, 108 },
+							["g"] = {
+								i(27690),	-- Recipe: Blackened Basilisk
+								i(27692),	-- Recipe: Warp Burger
+							},
 						}),
 						na(19042, {	-- Leeli Longhaggle <Trade Goods>
-							i(22911),	-- Recipe: Major Dreamless Sleep Potion
-							i(22901),	-- Recipe: Sneaking Potion
+							["coord"] = { 57.6, 53.4, 108 },
+							["g"] = {
+								i(22911),	-- Recipe: Major Dreamless Sleep Potion
+								i(22901),	-- Recipe: Sneaking Potion
+							},
 						}),
 						nh(18960, {	-- Rungor <Trade Goods>
-							i(27699),	-- Recipe: Golden Fish Sticks
-							i(27700),	-- Recipe: Spicy Crawdad
+							["coord"] = { 48.8, 46.0, 108 },
+							["g"] = {
+								i(27699),	-- Recipe: Golden Fish Sticks
+								i(27700),	-- Recipe: Spicy Crawdad
+							},
 						}),
 						nh(19772, {	-- Spirit Sage Gartok
-							["groups"] = {
+							["coord"] = { 49.8, 46.6, 108 },
+							["g"] = {
 								currency(1704, {	-- Spirit Shard
-									["groups"] = {
+									["g"] = {
 										i(28553),	-- Band of the Exorcist
 										i(28576),	-- Exorcist's Chain Helm
 										i(28574),	-- Exorcist's Dragonhide Helm
@@ -48,9 +61,10 @@ _.Zones =
 							},
 						}),
 						na(19773, {	-- Spirit Sage Zran
-							["groups"] = {
+							["coord"] = { 56.0, 53.6, 108 },
+							["g"] = {
 								currency(1704, {	-- Spirit Shard
-									["groups"] = {
+									["g"] = {
 										i(28553),	-- Band of the Exorcist
 										i(28576),	-- Exorcist's Chain Helm
 										i(28574),	-- Exorcist's Dragonhide Helm
@@ -69,8 +83,11 @@ _.Zones =
 							},
 						}),
 						na(19038, {	-- Supply Officer Mills <Rations>
-							i(27690),	-- Recipe: Blackened Basilisk
-							i(27692),	-- Recipe: Warp Burger
+							["coord"] = { 55.8, 53.0, 108 },
+							["g"] = {
+								i(27690),	-- Recipe: Blackened Basilisk
+								i(27692),	-- Recipe: Warp Burger
+							},
 						}),
 					}),
 				},

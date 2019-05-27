@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S        M O D U L E         --
+--          Z O N E S        M O D U L E       	 --
 ---------------------------------------------------
 _.Zones =
 {
@@ -480,206 +480,313 @@ _.Zones =
 					na(69968, {	-- Ethan Natice Season 14 Elite
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {
-							n(-319, {	-- Weapons
-								-- Elite
-								un(2, i(100184)),	-- Grievous Gladiator's Decapitator
-								un(2, i(100194)),	-- Grievous Gladiator's Quick blade
-								un(2, i(100489)),	-- Grievous Gladiator's Mageblade
-								un(2, i(100499)),	-- Grievous Gladiator's Slicer
-								un(2, i(100224)),	-- Grievous Gladiator's Endgame
-								un(2, i(100238)),	-- Grievous Gladiator's Reprieve
-								un(2, i(100228)),	-- Grievous Gladiator's Spellblade
-								un(2, i(100481)),	-- Grievous Gladiator's Shanker
-								un(2, i(100298)),	-- Grievous Gladiator's Rifle
-								un(2, i(100404)),	-- Grievous Gladiator's Pike
-								un(2, i(100483)),	-- Grievous Gladiator's Ripper
-								un(2, i(100487)),	-- Grievous Gladiator's Render
-								un(2, i(100188)),	-- Grievous Gladiator's Greatsword
-								un(2, i(100226)),	-- Grievous Gladiator's Garrier
-								un(2, i(100304)),	-- Grievous Gladiator's Energy Staff
-								un(2, i(100230)),	-- Grievous Gladiator's Battle Staff
-								un(2, i(100304)),	-- Grievous Gladiator's Staff
-								un(2, i(100190)),	-- Grievous Gladiator's Cleaver
-								un(2, i(100495)),	-- Grievous Gladiator's Hacker
-								un(2, i(100302)),	-- Grievous Gladiator's Redoubt
-								un(2, i(100509)),	-- Grievous Gladiator's Shield Wall
-								un(2, i(100192)),	-- Grievous Gladiator's Pummeler
-								un(2, i(100300)),	-- Grievous Gladiator's Gravel
-								un(2, i(100497)),	-- Grievous Gladiator's Bonecracker
-								un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
-								un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
-								un(2, i(100204)),	-- Grievous Gladiator's longbow
-								-- Removed Weapons
-								un(2, i(100301)),	-- Grievous Gladiator's Redoubt a
-								un(2, i(100508)),	-- Grievous Gladiator's Shield Wall a
-								un(2, i(100225)),	-- Grievous Gladiator's barrier a
-								un(2, i(100223)),	-- Grievous Gladiator's Endgame a
-								un(2, i(100237)),	-- Grievous Gladiator's Reprieve a
-								un(2, i(100203)),	-- Grievous Gladiator's longbow a
-								un(2, i(100297)),	-- Grievous Gladiator's Rifle a
-								un(2, i(100227)),	-- Grievous Gladiator's Spellblade a
-								un(2, i(100480)),	-- Grievous Gladiator's Shanker a
-								un(2, i(100482)),	-- Grievous Gladiator's Ripper a
-								un(2, i(100486)),	-- Grievous Gladiator's Render a
+							n(-659, {	-- Gladiator
+								n(-319, {	-- Weapons
+									
+									-- Removed Weapons
+									un(2, i(100301)),	-- Grievous Gladiator's Redoubt a
+									un(2, i(100508)),	-- Grievous Gladiator's Shield Wall a
+									un(2, i(100225)),	-- Grievous Gladiator's barrier a
+									un(2, i(100223)),	-- Grievous Gladiator's Endgame a
+									un(2, i(100237)),	-- Grievous Gladiator's Reprieve a
+									un(2, i(100203)),	-- Grievous Gladiator's longbow a
+									un(2, i(100297)),	-- Grievous Gladiator's Rifle a
+									un(2, i(100227)),	-- Grievous Gladiator's Spellblade a
+									un(2, i(100480)),	-- Grievous Gladiator's Shanker a
+									un(2, i(100482)),	-- Grievous Gladiator's Ripper a
+									un(2, i(100486)),	-- Grievous Gladiator's Render a
+								}),
+								cl(6, {	-- Death Knight
+									un(2, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
+									un(2, i(100245)), -- Grievous Gladiator's Dreadplate Gauntlets (Alliance)
+									un(2, i(100247)), -- Grievous Gladiator's Dreadplate Helm (Alliance)
+									un(2, i(100249)), -- Grievous Gladiator's Dreadplate Legguards (Alliance)
+									un(2, i(100251)), -- Grievous Gladiator's Dreadplate Shoulders (Alliance)
+								}),
+								cl(11, {	-- Druid
+									un(2, i(100253)),	-- Grievous Gladiator's Dragonhide Gloves (Alliance)
+									un(2, i(100255)),	-- Grievous Gladiator's Dragonhide Helm (Alliance)
+									un(2, i(100257)),	-- Grievous Gladiator's Dragonhide Legguards (Alliance)
+									un(2, i(100259)),	-- Grievous Gladiator's Dragonhide Robes (Alliance)
+									un(2, i(100261)),	-- Grievous Gladiator's Dragonhide Spaulders (Alliance)
+									un(2, i(100268)),	-- Grievous Gladiator's Kodohide Gloves (Alliance)
+									un(2, i(100270)),	-- Grievous Gladiator's Kodohide Helm (Alliance)
+									un(2, i(100272)),	-- Grievous Gladiator's Kodohide Legguards (Alliance)
+									un(2, i(100274)),	-- Grievous Gladiator's Kodohide Robes (Alliance)
+									un(2, i(100276)),	-- Grievous Gladiator's Kodohide Spaulders (Alliance)
+									un(2, i(100285)),	-- Grievous Gladiator's Wyrmhide Gloves (Alliance)
+									un(2, i(100287)),	-- Grievous Gladiator's Wyrmhide Helm (Alliance)
+									un(2, i(100289)),	-- Grievous Gladiator's Wyrmhide Legguards (Alliance)
+									un(2, i(100291)),	-- Grievous Gladiator's Wyrmhide Robes (Alliance)
+									un(2, i(100293)),	-- Grievous Gladiator's Wyrmhide Spaulders (Alliance)
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(100320)), -- Grievous Gladiator's Chain Gauntlets (Alliance)
+									un(2, i(100322)), -- Grievous Gladiator's Chain Helm (Alliance)
+									un(2, i(100326)), -- Grievous Gladiator's Chain Spaulders (Alliance)
+									un(2, i(100318)), -- Grievous Gladiator's Chain Armor (Alliance)
+									un(2, i(100324)), -- Grievous Gladiator's Chain Leggings (Alliance)
+								}),
+								cl(8, {	-- Mage
+									un(2, i(100328)), -- Grievous Gladiator's Silk Handguards (Alliance)
+									un(2, i(100332)), -- Grievous Gladiator's Silk Trousers (Alliance)
+									un(2, i(100334)), -- Grievous Gladiator's Silk Robe (Alliance)
+									un(2, i(100330)), -- Grievous Gladiator's Silk Cowl (Alliance)
+									un(2, i(100336)), -- Grievous Gladiator's Silk Amice (Alliance)
+								}),
+								cl(10, {	-- Monk
+									un(2, i(100345)), -- Grievous Gladiator's Ironskin Helm (Alliance)
+									un(2, i(100343)), -- Grievous Gladiator's Ironskin Gloves (Alliance)
+									un(2, i(100347)), -- Grievous Gladiator's Ironskin Legguards (Alliance)
+									un(2, i(100349)), -- Grievous Gladiator's Ironskin Spaulders (Alliance)
+									un(2, i(100351)), -- Grievous Gladiator's Ironskin Tunic (Alliance)
+									un(2, i(100353)), -- Grievous Gladiator's Copperskin Gloves (Alliance)
+									un(2, i(100355)), -- Grievous Gladiator's Copperskin Helm (Alliance)
+									un(2, i(100357)), -- Grievous Gladiator's Copperskin Legguards (Alliance)
+									un(2, i(100359)), -- Grievous Gladiator's Copperskin Spaulders (Alliance)
+									un(2, i(100361)), -- Grievous Gladiator's Copperskin Tunic (Alliance)
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(100367)), -- Grievous Gladiator's Scaled Helm (Alliance)
+									un(2, i(100363)), -- Grievous Gladiator's Scaled Chestpiece (Alliance)
+									un(2, i(100365)), -- Grievous Gladiator's Scaled Gauntlets (Alliance)
+									un(2, i(100369)), -- Grievous Gladiator's Scaled Legguards (Alliance)
+									un(2, i(100371)), -- Grievous Gladiator's Scaled Shoulders (Alliance)
+									un(2, i(100383)), -- Grievous Gladiator's Ornamented Chestguard (Alliance)
+									un(2, i(100385)), -- Grievous Gladiator's Ornamented Gloves (Alliance)
+									un(2, i(100387)), -- Grievous Gladiator's Ornamented Headcover (Alliance)
+									un(2, i(100389)), -- Grievous Gladiator's Ornamented Legplates (Alliance)
+									un(2, i(100391)), -- Grievous Gladiator's Ornamented Spaulders (Alliance)
+								}),
+								cl(5, {	-- Priest
+									un(2, i(100405)), -- Grievous Gladiator's Mooncloth Gloves (Alliance)
+									un(2, i(100407)), -- Grievous Gladiator's Mooncloth Helm (Alliance)
+									un(2, i(100409)), -- Grievous Gladiator's Mooncloth Leggings (Alliance)
+									un(2, i(100411)), -- Grievous Gladiator's Mooncloth Robe (Alliance)
+									un(2, i(100413)), -- Grievous Gladiator's Mooncloth Mantle (Alliance)
+									un(2, i(100415)), -- Grievous Gladiator's Satin Gloves (Alliance)
+									un(2, i(100417)), -- Grievous Gladiator's Satin Hood (Alliance)
+									un(2, i(100419)), -- Grievous Gladiator's Satin Leggings (Alliance)
+									un(2, i(100421)), -- Grievous Gladiator's Satin Robe (Alliance)
+									un(2, i(100423)), -- Grievous Gladiator's Satin Mantle (Alliance)
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(100434)), -- Grievous Gladiator's Leather Helm (Alliance)
+									un(2, i(100430)), -- Grievous Gladiator's Leather Tunic (Alliance)
+									un(2, i(100432)), -- Grievous Gladiator's Leather Gloves (Alliance)
+									un(2, i(100436)), -- Grievous Gladiator's Leather Legguards (Alliance)
+									un(2, i(100438)), -- Grievous Gladiator's Leather Spaulders (Alliance)
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(100452)), -- Grievous Gladiator's Ringmail Helm (Alliance)
+									un(2, i(100448)), -- Grievous Gladiator's Ringmail Armor (Alliance)
+									un(2, i(100450)), -- Grievous Gladiator's Ringmail Gauntlets (Alliance)
+									un(2, i(100454)), -- Grievous Gladiator's Ringmail Leggings (Alliance)
+									un(2, i(100456)), -- Grievous Gladiator's Ringmail Spaulders (Alliance)
+									un(2, i(100458)), -- Grievous Gladiator's Linked Armor (Alliance)
+									un(2, i(100460)), -- Grievous Gladiator's Linked Gauntlets (Alliance)
+									un(2, i(100462)), -- Grievous Gladiator's Linked Helm (Alliance)
+									un(2, i(100464)), -- Grievous Gladiator's Linked Leggings (Alliance)
+									un(2, i(100466)), -- Grievous Gladiator's Linked Spaulders (Alliance)
+									un(2, i(100470)), -- Grievous Gladiator's Mail Armor (Alliance)
+									un(2, i(100472)), -- Grievous Gladiator's Mail Gauntlets (Alliance)
+									un(2, i(100474)), -- Grievous Gladiator's Mail Helm (Alliance)
+									un(2, i(100476)), -- Grievous Gladiator's Mail Leggings (Alliance)
+									un(2, i(100478)), -- Grievous Gladiator's Mail Spaulders (Alliance)
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(100512)), -- Grievous Gladiator's Felweave Cowl (Alliance)
+									un(2, i(100510)), -- Grievous Gladiator's Felweave Handguards (Alliance)
+									un(2, i(100514)), -- Grievous Gladiator's Felweave Trousers (Alliance)
+									un(2, i(100516)), -- Grievous Gladiator's Felweave Raiment (Alliance)
+									un(2, i(100518)), -- Grievous Gladiator's Felweave Amice (Alliance)
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(100524)), -- Grievous Gladiator's Plate Helm (Alliance)
+									un(2, i(100520)), -- Grievous Gladiator's Plate Chestpiece (Alliance)
+									un(2, i(100522)), -- Grievous Gladiator's Plate Gauntlets (Alliance)
+									un(2, i(100526)), -- Grievous Gladiator's Plate Legguards (Alliance)
+									un(2, i(100528)), -- Grievous Gladiator's Plate Shoulders (Alliance)
+								}),
 							}),
-							cl(6, {	-- Death Knight
-								-- Elite
-								un(2, i(100244)), -- Grievous Gladiator's Dreadplate Chestpiece
-								un(2, i(100246)), -- Grievous Gladiator's Dreadplate Gauntlets
-								un(2, i(100248)), -- Grievous Gladiator's Dreadplate Helm
-								un(2, i(100250)), -- Grievous Gladiator's Dreadplate Legguards
-								un(2, i(100252)), -- Grievous Gladiator's Dreadplate Shoulders
-								un(2, i(100394)), -- Grievous Gladiator's Dreadplate Girdle
-								un(2, i(100400)), -- Grievous Gladiator's Dreadplate Warboots
-							}),
-							cl(11, {	-- Druid
-								-- Elite
-								un(2, i(100264)), -- Grievous Gladiator's Kodohide Belt
-								un(2, i(100266)), -- Grievous Gladiator's Kodohide Footguards
-								un(2, i(100269)), -- Grievous Gladiator's Kodohide Gloves
-								un(2, i(100271)), -- Grievous Gladiator's Kodohide Helm
-								un(2, i(100273)), -- Grievous Gladiator's Kodohide Legguards
-								un(2, i(100275)), -- Grievous Gladiator's Kodohide Robes
-								un(2, i(100277)), -- Grievous Gladiator's Kodohide Spaulders
-								un(2, i(100281)), -- Grievous Gladiator's Wyrmhide Belt
-								un(2, i(100283)), -- Grievous Gladiator's Wyrmhide Footguards
-								un(2, i(100286)), -- Grievous Gladiator's Wyrmhide Gloves
-								un(2, i(100288)), -- Grievous Gladiator's Wyrmhide Helm
-								un(2, i(100290)), -- Grievous Gladiator's Wyrmhide Legguards
-								un(2, i(100292)), -- Grievous Gladiator's Wyrmhide Robes
-								un(2, i(100294)), -- Grievous Gladiator's Wyrmhide Spaulders
-								un(2, i(102143)), -- Grievous Gladiator's Dragonhide Belt
-								un(2, i(102142)), -- Grievous Gladiator's Dragonhide Footguards
-								un(2, i(100254)), -- Grievous Gladiator's Dragonhide Gloves
-								un(2, i(100256)), -- Grievous Gladiator's Dragonhide Helm
-								un(2, i(100258)), -- Grievous Gladiator's Dragonhide Legguards
-								un(2, i(100260)), -- Grievous Gladiator's Dragonhide Robes
-								un(2, i(100262)), -- Grievous Gladiator's Dragonhide Spaulders
-							}),
-							cl(3, {	-- Hunter
-								-- Elite
-								un(2, i(100309)), -- Grievous Gladiator's Chain Links
-								un(2, i(100313)), -- Grievous Gladiator's Chain Sabatons
-								un(2, i(100319)), -- Grievous Gladiator's Chain Armor
-								un(2, i(100321)), -- Grievous Gladiator's Chain Gauntlets
-								un(2, i(100323)), -- Grievous Gladiator's Chain Helm
-								un(2, i(100325)), -- Grievous Gladiator's Chain Leggings
-								un(2, i(100327)), -- Grievous Gladiator's Chain Spaulders
-							}),
-							cl(8, {	-- Mage
-								-- Elite
-								un(2, i(100206)), -- Grievous Gladiator's Silk Cord
-								un(2, i(100212)), -- Grievous Gladiator's Silk Treads
-								un(2, i(100329)), -- Grievous Gladiator's Silk Handguards
-								un(2, i(100331)), -- Grievous Gladiator's Silk Cowl
-								un(2, i(100333)), -- Grievous Gladiator's Silk Trousers
-								un(2, i(100335)), -- Grievous Gladiator's Silk Robe
-								un(2, i(100337)), -- Grievous Gladiator's Silk Amice
-							}),
-							cl(10, {	-- Monk
-								-- Elite
-								un(2, i(100339)), -- Grievous Gladiator's Ironskin Waistband
-								un(2, i(100341)), -- Grievous Gladiator's Ironskin Boots
-								un(2, i(100344)), -- Grievous Gladiator's Ironskin Gloves
-								un(2, i(100346)), -- Grievous Gladiator's Ironskin Helm
-								un(2, i(100348)), -- Grievous Gladiator's Ironskin Legguards
-								un(2, i(100350)), -- Grievous Gladiator's Ironskin Spaulders
-								un(2, i(100352)), -- Grievous Gladiator's Ironskin Tunic
-								un(2, i(102139)), -- Grievous Gladiator's Copperskin Waistband
-								un(2, i(102138)), -- Grievous Gladiator's Copperskin Boots
-								un(2, i(100354)), -- Grievous Gladiator's Copperskin Gloves
-								un(2, i(100356)), -- Grievous Gladiator's Copperskin Helm
-								un(2, i(100358)), -- Grievous Gladiator's Copperskin Legguards
-								un(2, i(100360)), -- Grievous Gladiator's Copperskin Spaulders
-								un(2, i(100362)), -- Grievous Gladiator's Copperskin Tunic	
-							}),
-							cl(2, {	-- Paladin
-								-- Elite
-								un(2, i(100374)), -- Grievous Gladiator's Scaled Clasp
-								un(2, i(100380)), -- Grievous Gladiator's Scaled Greaves
-								un(2, i(100364)), -- Grievous Gladiator's Scaled Chestpiece
-								un(2, i(100366)), -- Grievous Gladiator's Scaled Gauntlets
-								un(2, i(100368)), -- Grievous Gladiator's Scaled Helm
-								un(2, i(100370)), -- Grievous Gladiator's Scaled Legguards
-								un(2, i(100372)), -- Grievous Gladiator's Scaled Shoulders
-								un(2, i(100376)), -- Grievous Gladiator's Ornamented Clasp
-								un(2, i(100378)), -- Grievous Gladiator's Ornamented Greaves
-								un(2, i(100384)), -- Grievous Gladiator's Ornamented Chestguard
-								un(2, i(100386)), -- Grievous Gladiator's Ornamented Gloves
-								un(2, i(100388)), -- Grievous Gladiator's Ornamented Headcover
-								un(2, i(100390)), -- Grievous Gladiator's Ornamented Legplates
-								un(2, i(100392)), -- Grievous Gladiator's Ornamented Spaulders
-							}),
-							cl(5, {	-- Priest
-								-- Elite
-								un(2, i(102141)), -- Grievous Gladiator's Satin Cord
-								un(2, i(102140)), -- Grievous Gladiator's Satin Treads
-								un(2, i(100416)), -- Grievous Gladiator's Satin Gloves
-								un(2, i(100418)), -- Grievous Gladiator's Satin Hood
-								un(2, i(100420)), -- Grievous Gladiator's Satin Leggings
-								un(2, i(100422)), -- Grievous Gladiator's Satin Robe
-								un(2, i(100424)), -- Grievous Gladiator's Satin Mantle
-								un(2, i(100210)), -- Grievous Gladiator's Mooncloth Cord
-								un(2, i(100216)), -- Grievous Gladiator's Mooncloth Treads
-								un(2, i(100406)), -- Grievous Gladiator's Mooncloth Gloves
-								un(2, i(100408)), -- Grievous Gladiator's Mooncloth Helm
-								un(2, i(100410)), -- Grievous Gladiator's Mooncloth Leggings
-								un(2, i(100412)), -- Grievous Gladiator's Mooncloth Robe
-								un(2, i(100414)), -- Grievous Gladiator's Mooncloth Mantle
-							}),
-							cl(4, {	-- Rogue
-								-- Elite
-								un(2, i(100426)), -- Grievous Gladiator's Leather Waistband
-								un(2, i(100428)), -- Grievous Gladiator's Leather Boots
-								un(2, i(100431)), -- Grievous Gladiator's Leather Tunic
-								un(2, i(100433)), -- Grievous Gladiator's Leather Gloves
-								un(2, i(100435)), -- Grievous Gladiator's Leather Helm
-								un(2, i(100437)), -- Grievous Gladiator's Leather Legguards
-								un(2, i(100439)), -- Grievous Gladiator's Leather Spaulders
-							}),
-							cl(7, {	-- Shaman
-								-- Elite
-								un(2, i(100441)), -- Grievous Gladiator's Ringmail Waistguard
-								un(2, i(100443)), -- Grievous Gladiator's Ringmail Footguards
-								un(2, i(100449)), -- Grievous Gladiator's Ringmail Armor
-								un(2, i(100451)), -- Grievous Gladiator's Ringmail Gauntlets
-								un(2, i(100453)), -- Grievous Gladiator's Ringmail Helm
-								un(2, i(100455)), -- Grievous Gladiator's Ringmail Leggings
-								un(2, i(100457)), -- Grievous Gladiator's Ringmail Spaulders
-								un(2, i(100445)), -- Grievous Gladiator's Mail Footguards
-								un(2, i(100469)), -- Grievous Gladiator's Mail Waistguard
-								un(2, i(100471)), -- Grievous Gladiator's Mail Armor
-								un(2, i(100473)), -- Grievous Gladiator's Mail Gauntlets
-								un(2, i(100475)), -- Grievous Gladiator's Mail Helm
-								un(2, i(100477)), -- Grievous Gladiator's Mail Leggings
-								un(2, i(100479)), -- Grievous Gladiator's Mail Spaulders
-								un(2, i(100311)), -- Grievous Gladiator's Linked Waistband
-								un(2, i(100315)), -- Grievous Gladiator's Linked Sabatons
-								un(2, i(100459)), -- Grievous Gladiator's Linked Armor
-								un(2, i(100461)), -- Grievous Gladiator's Linked Gauntlets
-								un(2, i(100463)), -- Grievous Gladiator's Linked Helm
-								un(2, i(100465)), -- Grievous Gladiator's Linked Leggings
-								un(2, i(100467)), -- Grievous Gladiator's Linked Spaulders
-							}),
-							cl(9, {	-- Warlock
-								-- Elite
-								un(2, i(100208)), -- Grievous Gladiator's Felweave Cord
-								un(2, i(100214)), -- Grievous Gladiator's Felweave Treads
-								un(2, i(100511)), -- Grievous Gladiator's Felweave Handguards
-								un(2, i(100513)), -- Grievous Gladiator's Felweave Cowl
-								un(2, i(100515)), -- Grievous Gladiator's Felweave Trousers
-								un(2, i(100517)), -- Grievous Gladiator's Felweave Raiment
-								un(2, i(100519)), -- Grievous Gladiator's Felweave Amice
-							}),
-							cl(1, {	-- Warrior
-								-- Elite
-								un(2, i(100396)), -- Grievous Gladiator's Plate Girdle
-								un(2, i(100398)), -- Grievous Gladiator's Plate Warboots
-								un(2, i(100521)), -- Grievous Gladiator's Plate Chestpiece
-								un(2, i(100523)), -- Grievous Gladiator's Plate Gauntlets
-								un(2, i(100525)), -- Grievous Gladiator's Plate Helm
-								un(2, i(100527)), -- Grievous Gladiator's Plate Legguards
-								un(2, i(100529)), -- Grievous Gladiator's Plate Shoulders
+							n(-660, {	-- Elite
+								n(-319, {	-- Weapons
+									un(2, i(100184)),	-- Grievous Gladiator's Decapitator
+									un(2, i(100194)),	-- Grievous Gladiator's Quick blade
+									un(2, i(100489)),	-- Grievous Gladiator's Mageblade
+									un(2, i(100499)),	-- Grievous Gladiator's Slicer
+									un(2, i(100224)),	-- Grievous Gladiator's Endgame
+									un(2, i(100238)),	-- Grievous Gladiator's Reprieve
+									un(2, i(100228)),	-- Grievous Gladiator's Spellblade
+									un(2, i(100481)),	-- Grievous Gladiator's Shanker
+									un(2, i(100298)),	-- Grievous Gladiator's Rifle
+									un(2, i(100404)),	-- Grievous Gladiator's Pike
+									un(2, i(100483)),	-- Grievous Gladiator's Ripper
+									un(2, i(100487)),	-- Grievous Gladiator's Render
+									un(2, i(100188)),	-- Grievous Gladiator's Greatsword
+									un(2, i(100226)),	-- Grievous Gladiator's Garrier
+									un(2, i(100304)),	-- Grievous Gladiator's Energy Staff
+									un(2, i(100230)),	-- Grievous Gladiator's Battle Staff
+									un(2, i(100304)),	-- Grievous Gladiator's Staff
+									un(2, i(100190)),	-- Grievous Gladiator's Cleaver
+									un(2, i(100495)),	-- Grievous Gladiator's Hacker
+									un(2, i(100302)),	-- Grievous Gladiator's Redoubt
+									un(2, i(100509)),	-- Grievous Gladiator's Shield Wall
+									un(2, i(100192)),	-- Grievous Gladiator's Pummeler
+									un(2, i(100300)),	-- Grievous Gladiator's Gravel
+									un(2, i(100497)),	-- Grievous Gladiator's Bonecracker
+									un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
+									un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
+									un(2, i(100204)),	-- Grievous Gladiator's longbow
+								}),
+								cl(6, {	-- Death Knight
+									un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
+									un(2, i(100246)),	-- Grievous Gladiator's Dreadplate Gauntlets
+									un(2, i(100248)),	-- Grievous Gladiator's Dreadplate Helm
+									un(2, i(100250)),	-- Grievous Gladiator's Dreadplate Legguards
+									un(2, i(100252)),	-- Grievous Gladiator's Dreadplate Shoulders
+									un(2, i(100394)),	-- Grievous Gladiator's Dreadplate Girdle
+									un(2, i(100400)),	-- Grievous Gladiator's Dreadplate Warboots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(100264)),	-- Grievous Gladiator's Kodohide Belt
+									un(2, i(100266)),	-- Grievous Gladiator's Kodohide Footguards
+									un(2, i(100269)),	-- Grievous Gladiator's Kodohide Gloves
+									un(2, i(100271)),	-- Grievous Gladiator's Kodohide Helm
+									un(2, i(100273)),	-- Grievous Gladiator's Kodohide Legguards
+									un(2, i(100275)),	-- Grievous Gladiator's Kodohide Robes
+									un(2, i(100277)),	-- Grievous Gladiator's Kodohide Spaulders
+									un(2, i(100281)),	-- Grievous Gladiator's Wyrmhide Belt
+									un(2, i(100283)),	-- Grievous Gladiator's Wyrmhide Footguards
+									un(2, i(100286)),	-- Grievous Gladiator's Wyrmhide Gloves
+									un(2, i(100288)),	-- Grievous Gladiator's Wyrmhide Helm
+									un(2, i(100290)),	-- Grievous Gladiator's Wyrmhide Legguards
+									un(2, i(100292)),	-- Grievous Gladiator's Wyrmhide Robes
+									un(2, i(100294)),	-- Grievous Gladiator's Wyrmhide Spaulders
+									un(2, i(102143)),	-- Grievous Gladiator's Dragonhide Belt
+									un(2, i(102142)),	-- Grievous Gladiator's Dragonhide Footguards
+									un(2, i(100254)),	-- Grievous Gladiator's Dragonhide Gloves
+									un(2, i(100256)),	-- Grievous Gladiator's Dragonhide Helm
+									un(2, i(100258)),	-- Grievous Gladiator's Dragonhide Legguards
+									un(2, i(100260)),	-- Grievous Gladiator's Dragonhide Robes
+									un(2, i(100262)),	-- Grievous Gladiator's Dragonhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(100309)),	-- Grievous Gladiator's Chain Links
+									un(2, i(100313)),	-- Grievous Gladiator's Chain Sabatons
+									un(2, i(100319)),	-- Grievous Gladiator's Chain Armor
+									un(2, i(100321)),	-- Grievous Gladiator's Chain Gauntlets
+									un(2, i(100323)),	-- Grievous Gladiator's Chain Helm
+									un(2, i(100325)),	-- Grievous Gladiator's Chain Leggings
+									un(2, i(100327)),	-- Grievous Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(100206)),	-- Grievous Gladiator's Silk Cord
+									un(2, i(100212)),	-- Grievous Gladiator's Silk Treads
+									un(2, i(100329)),	-- Grievous Gladiator's Silk Handguards
+									un(2, i(100331)),	-- Grievous Gladiator's Silk Cowl
+									un(2, i(100333)),	-- Grievous Gladiator's Silk Trousers
+									un(2, i(100335)),	-- Grievous Gladiator's Silk Robe
+									un(2, i(100337)),	-- Grievous Gladiator's Silk Amice
+								}),
+								cl(10, {	-- Monk
+									un(2, i(100339)),	-- Grievous Gladiator's Ironskin Waistband
+									un(2, i(100341)),	-- Grievous Gladiator's Ironskin Boots
+									un(2, i(100344)),	-- Grievous Gladiator's Ironskin Gloves
+									un(2, i(100346)),	-- Grievous Gladiator's Ironskin Helm
+									un(2, i(100348)),	-- Grievous Gladiator's Ironskin Legguards
+									un(2, i(100350)),	-- Grievous Gladiator's Ironskin Spaulders
+									un(2, i(100352)),	-- Grievous Gladiator's Ironskin Tunic
+									un(2, i(102139)),	-- Grievous Gladiator's Copperskin Waistband
+									un(2, i(102138)),	-- Grievous Gladiator's Copperskin Boots
+									un(2, i(100354)),	-- Grievous Gladiator's Copperskin Gloves
+									un(2, i(100356)),	-- Grievous Gladiator's Copperskin Helm
+									un(2, i(100358)),	-- Grievous Gladiator's Copperskin Legguards
+									un(2, i(100360)),	-- Grievous Gladiator's Copperskin Spaulders
+									un(2, i(100362)),	-- Grievous Gladiator's Copperskin Tunic	
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(100374)),	-- Grievous Gladiator's Scaled Clasp
+									un(2, i(100380)),	-- Grievous Gladiator's Scaled Greaves
+									un(2, i(100364)),	-- Grievous Gladiator's Scaled Chestpiece
+									un(2, i(100366)),	-- Grievous Gladiator's Scaled Gauntlets
+									un(2, i(100368)),	-- Grievous Gladiator's Scaled Helm
+									un(2, i(100370)),	-- Grievous Gladiator's Scaled Legguards
+									un(2, i(100372)),	-- Grievous Gladiator's Scaled Shoulders
+									un(2, i(100376)),	-- Grievous Gladiator's Ornamented Clasp
+									un(2, i(100378)),	-- Grievous Gladiator's Ornamented Greaves
+									un(2, i(100384)),	-- Grievous Gladiator's Ornamented Chestguard
+									un(2, i(100386)),	-- Grievous Gladiator's Ornamented Gloves
+									un(2, i(100388)),	-- Grievous Gladiator's Ornamented Headcover
+									un(2, i(100390)),	-- Grievous Gladiator's Ornamented Legplates
+									un(2, i(100392)),	-- Grievous Gladiator's Ornamented Spaulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(102141)),	-- Grievous Gladiator's Satin Cord
+									un(2, i(102140)),	-- Grievous Gladiator's Satin Treads
+									un(2, i(100416)),	-- Grievous Gladiator's Satin Gloves
+									un(2, i(100418)),	-- Grievous Gladiator's Satin Hood
+									un(2, i(100420)),	-- Grievous Gladiator's Satin Leggings
+									un(2, i(100422)),	-- Grievous Gladiator's Satin Robe
+									un(2, i(100424)),	-- Grievous Gladiator's Satin Mantle
+									un(2, i(100210)),	-- Grievous Gladiator's Mooncloth Cord
+									un(2, i(100216)),	-- Grievous Gladiator's Mooncloth Treads
+									un(2, i(100406)),	-- Grievous Gladiator's Mooncloth Gloves
+									un(2, i(100408)),	-- Grievous Gladiator's Mooncloth Helm
+									un(2, i(100410)),	-- Grievous Gladiator's Mooncloth Leggings
+									un(2, i(100412)),	-- Grievous Gladiator's Mooncloth Robe
+									un(2, i(100414)),	-- Grievous Gladiator's Mooncloth Mantle
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(100426)),	-- Grievous Gladiator's Leather Waistband
+									un(2, i(100428)),	-- Grievous Gladiator's Leather Boots
+									un(2, i(100431)),	-- Grievous Gladiator's Leather Tunic
+									un(2, i(100433)),	-- Grievous Gladiator's Leather Gloves
+									un(2, i(100435)),	-- Grievous Gladiator's Leather Helm
+									un(2, i(100437)),	-- Grievous Gladiator's Leather Legguards
+									un(2, i(100439)),	-- Grievous Gladiator's Leather Spaulders
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(100441)),	-- Grievous Gladiator's Ringmail Waistguard
+									un(2, i(100443)),	-- Grievous Gladiator's Ringmail Footguards
+									un(2, i(100449)),	-- Grievous Gladiator's Ringmail Armor
+									un(2, i(100451)),	-- Grievous Gladiator's Ringmail Gauntlets
+									un(2, i(100453)),	-- Grievous Gladiator's Ringmail Helm
+									un(2, i(100455)),	-- Grievous Gladiator's Ringmail Leggings
+									un(2, i(100457)),	-- Grievous Gladiator's Ringmail Spaulders
+									un(2, i(100445)),	-- Grievous Gladiator's Mail Footguards
+									un(2, i(100469)),	-- Grievous Gladiator's Mail Waistguard
+									un(2, i(100471)),	-- Grievous Gladiator's Mail Armor
+									un(2, i(100473)),	-- Grievous Gladiator's Mail Gauntlets
+									un(2, i(100475)),	-- Grievous Gladiator's Mail Helm
+									un(2, i(100477)),	-- Grievous Gladiator's Mail Leggings
+									un(2, i(100479)),	-- Grievous Gladiator's Mail Spaulders
+									un(2, i(100311)),	-- Grievous Gladiator's Linked Waistband
+									un(2, i(100315)),	-- Grievous Gladiator's Linked Sabatons
+									un(2, i(100459)),	-- Grievous Gladiator's Linked Armor
+									un(2, i(100461)),	-- Grievous Gladiator's Linked Gauntlets
+									un(2, i(100463)),	-- Grievous Gladiator's Linked Helm
+									un(2, i(100465)),	-- Grievous Gladiator's Linked Leggings
+									un(2, i(100467)),	-- Grievous Gladiator's Linked Spaulders
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(100208)),	-- Grievous Gladiator's Felweave Cord
+									un(2, i(100214)),	-- Grievous Gladiator's Felweave Treads
+									un(2, i(100511)),	-- Grievous Gladiator's Felweave Handguards
+									un(2, i(100513)),	-- Grievous Gladiator's Felweave Cowl
+									un(2, i(100515)),	-- Grievous Gladiator's Felweave Trousers
+									un(2, i(100517)),	-- Grievous Gladiator's Felweave Raiment
+									un(2, i(100519)),	-- Grievous Gladiator's Felweave Amice
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(100396)),	-- Grievous Gladiator's Plate Girdle
+									un(2, i(100398)),	-- Grievous Gladiator's Plate Warboots
+									un(2, i(100521)),	-- Grievous Gladiator's Plate Chestpiece
+									un(2, i(100523)),	-- Grievous Gladiator's Plate Gauntlets
+									un(2, i(100525)),	-- Grievous Gladiator's Plate Helm
+									un(2, i(100527)),	-- Grievous Gladiator's Plate Legguards
+									un(2, i(100529)),	-- Grievous Gladiator's Plate Shoulders
+								}),
 							}),
 						},
 					}),
@@ -876,7 +983,7 @@ _.Zones =
 							un(2, i(103321)),	-- Grievous Gladiator's Signet of Accuracy
 						},
 					}),
-					nh(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version) -- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
+					nh(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version)	-- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {
 							un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
@@ -1227,33 +1334,33 @@ _.Zones =
 							un(2, i(84787)),	-- Malevolent Gladiator's Battle Staff
 							un(2, i(84788)),	-- Malevolent Gladiator's Energy Staff
 							un(2, i(84789)),	-- Malevolent Gladiator's Staff
-							un(2, i(85127)),	-- Elite Malevolent Gladiator's Spellblade  -- Daggers
+							un(2, i(85127)),	-- Elite Malevolent Gladiator's Spellblade 	-- Daggers
 							un(2, i(85133)),	-- Elite Malevolent Gladiator's Shanker
-							un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff  -- Staffs
+							un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff 	-- Staffs
 							un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
 							un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
 							un(2, i(85108)),	-- Elite Malevolent Gladiator's Pike
 							un(2, i(84786)),	-- Malevolent Gladiator's Pike (used to upgrade to elite)
 							un(2, i(84790)),	-- Malevolent Gladiator's Greatsword (used to upgrade to elite)
 							un(2, i(84791)),	-- Malevolent Gladiator's Decapitator (used to upgrade to elite)
-							un(2, i(85135)),	-- Elite Malevolent Gladiator's Quickblade  -- Swords
+							un(2, i(85135)),	-- Elite Malevolent Gladiator's Quickblade 	-- Swords
 							un(2, i(85134)),	-- Elite Malevolent Gladiator's Slicer
 							un(2, i(84969)),	-- Malevolent Gladiator's Quickblade(used to upgrade to elite)
 							un(2, i(84968)),	-- Malevolent Gladiator's Slicer(used to upgrade to elite)
 							un(2, i(85112)),	-- Elite Malevolent Gladiator's Greatsword
-							un(2, i(85129)),	-- Elite Malevolent Gladiator's Render  -- Fist Weapons
+							un(2, i(85129)),	-- Elite Malevolent Gladiator's Render 	-- Fist Weapons
 							un(2, i(85128)),	-- Elite Malevolent Gladiator's Ripper
 							un(2, i(85117)),	-- Elite Malevolent Gladiator's Slasher
 							un(2, i(85116)),	-- Elite Malevolent Gladiator's Fleshslicer
-							un(2, i(85113)),	-- Elite Malevolent Gladiator's Decapitator  -- Axes
+							un(2, i(85113)),	-- Elite Malevolent Gladiator's Decapitator 	-- Axes
 							un(2, i(85132)),	-- Elite Malevolent Gladiator's Hacker
 							un(2, i(85131)),	-- Elite Malevolent Gladiator's Cleaver
-							un(2, i(85119)),	-- Elite Malevolent Gladiator's Longbow  -- Ranged Weapons
+							un(2, i(85119)),	-- Elite Malevolent Gladiator's Longbow 	-- Ranged Weapons
 							un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
 							un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
 							un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
 							un(2, i(85120)),	-- Elite Malevolent Gladiator's Heavy Crossbow
-							un(2, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker  -- Maces
+							un(2, i(85136)),	-- Elite Malevolent Gladiator's Bonecracker 	-- Maces
 							un(2, i(85130)),	-- Elite Malevolent Gladiator's Pummeler
 							un(2, i(85137)),	-- Elite Malevolent Gladiator's Gavel
 							un(2, i(85107)),	-- Elite Malevolent Gladiator's Bonegrinder
@@ -1270,47 +1377,47 @@ _.Zones =
 							un(2, i(84910)),	-- Malevolent Gladiator's shield wall (used to upgrade to elite)
 							un(2, i(84911)),	-- Malevolent Gladiator's barrier (used to upgrade to elite)
 							un(2, i(84912)),	-- Malevolent GLadiator's redoubt (used to upgrade to elite)
-							un(2, i(84993)),	-- Elite Malevolent Gladiator's Dreadplate Chestpiece  -- DK
+							un(2, i(84993)),	-- Elite Malevolent Gladiator's Dreadplate Chestpiece 	-- DK
 							un(2, i(85028)),	-- Elite Malevolent Gladiator's Dreadplate Gauntlets
 							un(2, i(85046)),	-- Elite Malevolent Gladiator's Dreadplate Helm
 							un(2, i(85059)),	-- Elite Malevolent Gladiator's Dreadplate Legguards
 							un(2, i(85086)),	-- Elite Malevolent Gladiator's Dreadplate Shoulders
-							un(2, i(85025)),	-- Elite Malevolent Gladiator's Dragonhide Gloves  -- Druid Dragonhide
+							un(2, i(85025)),	-- Elite Malevolent Gladiator's Dragonhide Gloves 	-- Druid Dragonhide
 							un(2, i(85045)),	-- Elite Malevolent Gladiator's Dragonhide Helm
 							un(2, i(85058)),	-- Elite Malevolent Gladiator's Dragonhide Legguards
 							un(2, i(85065)),	-- Elite Malevolent Gladiator's Dragonhide Robes
 							un(2, i(85084)),	-- Elite Malevolent Gladiator's Dragonhide Spaulders
-							un(2, i(85026)),	-- Elite Malevolent Gladiator's Kodohide Gloves  -- Druid Kodohide
+							un(2, i(85026)),	-- Elite Malevolent Gladiator's Kodohide Gloves 	-- Druid Kodohide
 							un(2, i(85043)),	-- Elite Malevolent Gladiator's Kodohide Helm
 							un(2, i(85051)),	-- Elite Malevolent Gladiator's Kodohide Legguards
 							un(2, i(85071)),	-- Elite Malevolent Gladiator's Kodohide Robes
 							un(2, i(85082)),	-- Elite Malevolent Gladiator's Kodohide Spaulders
-							un(2, i(85022)),	-- Elite Malevolent Gladiator's Wyrmhide Gloves  -- Druid Wyrmhide
+							un(2, i(85022)),	-- Elite Malevolent Gladiator's Wyrmhide Gloves 	-- Druid Wyrmhide
 							un(2, i(85037)),	-- Elite Malevolent Gladiator's Wyrmhide Helm
 							un(2, i(85049)),	-- Elite Malevolent Gladiator's Wyrmhide Legguards
 							un(2, i(85070)),	-- Elite Malevolent Gladiator's Wyrmhide Robes
 							un(2, i(85080)),	-- Elite Malevolent Gladiator's Wyrmhide Spaulders
-							un(2, i(84994)),	-- Elite Malevolent Gladiator's Chain Armor  -- Hunter
+							un(2, i(84994)),	-- Elite Malevolent Gladiator's Chain Armor 	-- Hunter
 							un(2, i(85020)),	-- Elite Malevolent Gladiator's Chain Gauntlets
 							un(2, i(85034)),	-- Elite Malevolent Gladiator's Chain Helm
 							un(2, i(85061)),	-- Elite Malevolent Gladiator's Chain Leggings
 							un(2, i(85076)),	-- Elite Malevolent Gladiator's Chain Spaulders
-							un(2, i(85016)),	-- Elite Malevolent Gladiator's Silk Handguards  -- Mage
+							un(2, i(85016)),	-- Elite Malevolent Gladiator's Silk Handguards 	-- Mage
 							un(2, i(85031)),	-- Elite Malevolent Gladiator's Silk Cowl
 							un(2, i(85062)),	-- Elite Malevolent Gladiator's Silk Trousers
 							un(2, i(85068)),	-- Elite Malevolent Gladiator's Silk Robe
 							un(2, i(85085)),	-- Elite Malevolent Gladiator's Silk Amice
-							un(2, i(85018)),	-- Elite Malevolent Gladiator's Ironskin Gloves  -- Monk Ironskin
+							un(2, i(85018)),	-- Elite Malevolent Gladiator's Ironskin Gloves 	-- Monk Ironskin
 							un(2, i(85033)),	-- Elite Malevolent Gladiator's Ironskin Helm
 							un(2, i(85064)),	-- Elite Malevolent Gladiator's Ironskin Legguards
 							un(2, i(85066)),	-- Elite Malevolent Gladiator's Ironskin Tunic
 							un(2, i(85087)),	-- Elite Malevolent Gladiator's Ironskin Spaulders
-							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves  -- Monk Copperskin
+							un(2, i(85015)),	-- Elite Malevolent Gladiator's Copperskin Gloves 	-- Monk Copperskin
 							un(2, i(85030)),	-- Elite Malevolent Gladiator's Copperskin Helm
 							un(2, i(85060)),	-- Elite Malevolent Gladiator's Copperskin Legguards
 							un(2, i(85067)),	-- Elite Malevolent Gladiator's Copperskin Tunic
 							un(2, i(85088)),	-- Elite Malevolent Gladiator's Copperskin Spaulders
-							un(2, i(84992)),	-- Elite Malevolent Gladiator's Scaled Chestpiece  -- Paladin Scaled
+							un(2, i(84992)),	-- Elite Malevolent Gladiator's Scaled Chestpiece 	-- Paladin Scaled
 							un(2, i(85027)),	-- Elite Malevolent Gladiator's Scaled Gauntlet
 							un(2, i(85044)),	-- Elite Malevolent Gladiator's Scaled Helm
 							un(2, i(85057)),	-- Elite Malevolent Gladiator's Scaled Legguards
@@ -1320,12 +1427,12 @@ _.Zones =
 							un(2, i(85042)),	-- Elite Malevolent Gladiator's Ornamented Headcover
 							un(2, i(85056)),	-- Elite Malevolent Gladiator's Ornamented Legplates
 							un(2, i(85090)),	-- Elite Malevolent Gladiator's Ornamented Spaulders
-							un(2, i(85013)),	-- Elite Malevolent Gladiator's Mooncloth Gloves  -- Priest Mooncloth
+							un(2, i(85013)),	-- Elite Malevolent Gladiator's Mooncloth Gloves 	-- Priest Mooncloth
 							un(2, i(85039)),	-- Elite Malevolent Gladiator's Mooncloth Helm
 							un(2, i(85052)),	-- Elite Malevolent Gladiator's Mooncloth Leggings
 							un(2, i(85072)),	-- Elite Malevolent Gladiator's Mooncloth Robe
 							un(2, i(85083)),	-- Elite Malevolent Gladiator's Mooncloth Mantle
-							un(2, i(85017)),	-- Elite Malevolent Gladiator's Satin Gloves  -- Priest Satin
+							un(2, i(85017)),	-- Elite Malevolent Gladiator's Satin Gloves 	-- Priest Satin
 							un(2, i(85040)),	-- Elite Malevolent Gladiator's Satin Hood
 							un(2, i(85053)),	-- Elite Malevolent Gladiator's Satin Leggings
 							un(2, i(85073)),	-- Elite Malevolent Gladiator's Satin Robe
@@ -1338,27 +1445,27 @@ _.Zones =
 							un(2, i(85089)),	-- Elite Malevolent Gladiator's Leather Spaulders
 							un(2, i(84792)),	-- Malevolent Gladiator's Leather Tunic  (used to upgrade to elite)
 							un(2, i(84848)),	-- Malevolent Gladiator's Leather Helm		(used to upgrade to elite)
-							un(2, i(84990)),	-- Elite Malevolent Gladiator's Ringmail Armor  -- Shaman RingMail
+							un(2, i(84990)),	-- Elite Malevolent Gladiator's Ringmail Armor 	-- Shaman RingMail
 							un(2, i(85014)),	-- Elite Malevolent Gladiator's Ringmail Gauntlets
 							un(2, i(85029)),	-- Elite Malevolent Gladiator's Ringmail Helm
 							un(2, i(85054)),	-- Elite Malevolent Gladiator's Ringmail Leggings
 							un(2, i(85075)),	-- Elite Malevolent Gladiator's Ringmail Spaulders
-							un(2, i(84988)),	-- Elite Malevolent Gladiator's Mail Armor  -- Shaman Mail
+							un(2, i(84988)),	-- Elite Malevolent Gladiator's Mail Armor 	-- Shaman Mail
 							un(2, i(85012)),	-- Elite Malevolent Gladiator's Mail Gauntlets
 							un(2, i(85036)),	-- Elite Malevolent Gladiator's Mail Helm
 							un(2, i(85048)),	-- Elite Malevolent Gladiator's Mail Leggings
 							un(2, i(85079)),	-- Elite Malevolent Gladiator's Mail Spaulders
-							un(2, i(84989)),	-- Elite Malevolent Gladiator's Linked Armor  -- Shaman Linked
+							un(2, i(84989)),	-- Elite Malevolent Gladiator's Linked Armor 	-- Shaman Linked
 							un(2, i(85011)),	-- Elite Malevolent Gladiator's Linked Gauntlets
 							un(2, i(85038)),	-- Elite Malevolent Gladiator's Linked Helm
 							un(2, i(85050)),	-- Elite Malevolent Gladiator's Linked Leggings
 							un(2, i(85081)), 	-- Elite Malevolent Gladiator's Linked Spaulders
-							un(2, i(85021)), 	-- Elite Malevolent Gladiator's Felweave Armor  -- Warlock
+							un(2, i(85021)), 	-- Elite Malevolent Gladiator's Felweave Armor 	-- Warlock
 							un(2, i(85035)), 	-- Elite Malevolent Gladiator's Felweave Cowl
 							un(2, i(85047)), 	-- Elite Malevolent Gladiator's Felweave Trousers
 							un(2, i(85069)), 	-- Elite Malevolent Gladiator's Felweave Rainment
 							un(2, i(85078)), 	-- Elite Malevolent Gladiator's Felweave Amice
-							un(2, i(84987)), 	-- Elite Malevolent Gladiator's Plate Chestpiece  -- Warrior
+							un(2, i(84987)), 	-- Elite Malevolent Gladiator's Plate Chestpiece 	-- Warrior
 							un(2, i(85019)), 	-- Elite Malevolent Gladiator's Plate Gauntlets
 							un(2, i(85032)), 	-- Elite Malevolent Gladiator's Plate Helm
 							un(2, i(85063)), 	-- Elite Malevolent Gladiator's Plate Legguards
@@ -1470,7 +1577,7 @@ _.Zones =
 							i(91622),	-- Malevolent Gladiator's Scaled Gauntlets
 							i(91624),	-- Malevolent Gladiator's Scaled Helm
 							i(91626),	-- Malevolent Gladiator's Scaled Legguards
-							i(91628),	-- Malevolent Gladiator's Scaled Shoulders -- Paladin Ornamented
+							i(91628),	-- Malevolent Gladiator's Scaled Shoulders	-- Paladin Ornamented
 							i(91640),	-- Malevolent Gladiator's Ornamented Chestguard
 							i(91642),	-- Malevolent Gladiator's Ornamented Gloves
 							i(91644),	-- Malevolent Gladiator's Ornamented Headcover

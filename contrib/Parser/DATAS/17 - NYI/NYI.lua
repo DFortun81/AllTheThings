@@ -23,7 +23,25 @@ _.NeverImplemented =
 		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
 		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
 		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
-
+		-- Leather Horde (you probably will learn both after learning one)
+		un(1, i(166915)),	-- Dread Gladiator's leather tunic
+		un(1, i(166916)),	-- Dread Gladiator's leather boots
+		un(1, i(166917)),	-- Dread Gladiator's leather gloves
+		un(1, i(166918)),	-- Dread Gladiator's leather helm
+		un(1, i(166919)),	-- Dread Gladiator's leather legguards
+		un(1, i(166920)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166921)),	-- Dread Gladiator's leather belt
+		un(1, i(166922)),	-- Dread Gladiator's leather bindings
+		-- Leather Ally (you probably will learn both after learning one)
+		un(1, i(166946)),	-- Dread Gladiator's leather tunic
+		un(1, i(166947)),	-- Dread Gladiator's leather boots
+		un(1, i(166948)),	-- Dread Gladiator's leather gloves
+		un(1, i(166949)),	-- Dread Gladiator's leather helm
+		un(1, i(166950)),	-- Dread Gladiator's leather legguards
+		un(1, i(166951)),	-- Dread Gladiator's leather spaulders
+		un(1, i(166952)),	-- Dread Gladiator's leather belt
+		un(1, i(166953)),	-- Dread Gladiator's leather bindings
+		
 		-- Some of those Items are currently not possible to load ingame (BFA Items), but they might be with a new patch
 		un(1, i(166405)),	-- Blindside (TW Vendor?)
 		un(1, i(166364)),	-- Song of the Fallen (TW Vendor?)
@@ -220,6 +238,16 @@ _.NeverImplemented =
 			un(1, i(32100)),	-- Chancellor's Mooncloth Mitts
 			un(1, i(32101)),	-- Chancellor's Mooncloth Shoulderpads
 			un(1, i(32102)),	-- Chancellor's Mooncloth Vestments
+			un(1, i(167711)),	-- Unknown
+			un(1, i(167712)),	-- Unknown
+			un(1, i(167713)),	-- Unknown
+			un(1, i(167714)),	-- Unknow
+			un(1, i(167715)),	-- Unknow
+			un(1, i(167716)),	-- Unknow
+			un(1, i(167717)),	-- Unknow
+			un(1, i(167718)),	-- Unknow
+			un(1, i(166406)),	-- flaskzertaurens cloth robes
+			un(1, i(166407)),	-- flaskzertaurens cloth shoulders
 			un(1, i(32103)),	-- Chancellor's Satin Gloves
 			un(1, i(32104)),	-- Chancellor's Satin Hood
 			un(1, i(32105)),	-- Chancellor's Satin Legs
@@ -430,6 +458,7 @@ _.NeverImplemented =
 			un(1, i(109349)),	-- Unknown
 			un(1, i(20524)),	-- Shadowhide Leggings (Leather)
 			un(1, i(54655)),	-- Stormshroud Armor (Leather)
+			un(1, i(157693)),	-- asceitcs helm
 			un(1, i(54681)),	-- Thick Murloc Armor
 			un(1, i(28145)),	-- Tranquillien Wraps (Leather)
 			un(1, i(54727)),	-- Traveler's Boots
@@ -451,6 +480,8 @@ _.NeverImplemented =
 			un(1, i(60610)),	-- Vicious Gladiator's boots of dominance
 			un(1, i(54649)),	-- Unknown
 			un(1, i(54650)),	-- Unknown
+			un(1, i(80946)),	-- peacebreaker's leather helm
+			un(1, i(80950)),	-- peacebreaker's hide helm
 			un(1, i(54652)),	-- Unknown
 			un(1, i(54658)),	-- Unknown
 			un(1, i(54665)),	-- Unknown
@@ -908,6 +939,8 @@ _.NeverImplemented =
 			un(1, i(39828)),	-- Punisher's Cloak
 			un(1, i(80965)),	-- Scavenger's cape
 			un(1, i(80966)),	-- Scavenger's drape
+			un(1, i(56355)),	-- Skin of Stone
+			un(1, i(65815)),	-- Drape of the mortal guardians beta only
 			un(1, i(80967)),	-- Scavenger's shawl
 			un(1, i(80968)),	-- Scavenger's cloak
 			un(1, i(80969)),	-- Scavenger's manteua
@@ -1188,6 +1221,8 @@ _.NeverImplemented =
 		un(1, spell(5169)),	-- defias disguise
 		un(1, i(45818)),	-- Unknown
 		un(1, i(46056)),	-- Unknown
+		un(1, i(167026)),	-- cache of crucible treasures
+		un(1, i(164774)),	-- unknown
 		un(1, spell(5264)),	-- dsouth sea defias disguise
 		un(1, spell(5268)),	-- dark iron dwarf disguise
 		un(1, spell(5267)),	-- dalaran wizard disguise
@@ -2069,6 +2104,7 @@ _.NeverImplemented =
 			un(1, i(68050)),	-- Shatterscale Mightfish
 			un(1, i(49456)),	-- Will of the Earth
 			un(1, i(50251)),	-- Unknown
+			un(1, i(115292)),	-- spectral axe
 			un(1, i(42214)),	-- Savage Gladiator's Waraxe
 			un(1, i(64717)),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
 			un(1, i(64758)),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
@@ -2384,7 +2420,9 @@ _.NeverImplemented =
 	un(1, i(150715)),	-- Illidari Warglaive
 	un(1, i(3738)),	-- Brewing Rod
 	un(1, i(128824)), 	-- Tome of the Silver Hand
-	}),		-- Weapons end
+	}),		
+	-- Weapons end
+	
 	un(1, i(146651)),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	un(1, i(133018)),	-- Azsuna Packe 3 Holy 1 Unused
 	un(1, i(138229)),	-- Nightmare Boss 3 Relic Storm

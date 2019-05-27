@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, {	-- Burning Crusade
-	inst(259, { 	-- The Shattered Halls
+	inst(259, {	-- The Shattered Halls
 		["lvl"] = 65,
 		["mapID"] = 246,
 		["coord"] = { 47.66, 51.98, 100 },	-- The Shattered Halls, Hellfire Peninsula
@@ -55,6 +55,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 				{	-- The Will of the Warchief
 					["questID"] = 29653,	-- The Will of the Warchief
+					["races"] = HORDE_ONLY,
 					["qg"] = 54931,			-- Stone Guard Stok'ton
 					["g"] = {
 						i(25808),	-- Rod of Dire Shadows

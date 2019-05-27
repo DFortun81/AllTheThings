@@ -44,8 +44,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(35682, {	-- Rune Giant Bindings
 						["crs"] = {
+							27962,	-- Dark Rune Elementalist
+							27969,	-- Dark Rune Giant
 							27964,	-- Dark Rune Scholar
+							27965,	-- Dark Rune Shaper
 							27963,	-- Dark Rune Theurgist
+							27960,	-- Dark Rune Warrior
 							27961,	-- Dark Rune Worker
 							27972,	-- Lightning Construct
 							27970,	-- Raging Construct
@@ -54,11 +58,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(35681, {	-- Unrelenting Blade
 						["crs"] = {
+							27962,	-- Dark Rune Elementalist
 							27969,	-- Dark Rune Giant
+							27964,	-- Dark Rune Scholar
 							27965,	-- Dark Rune Shaper
 							27963,	-- Dark Rune Theurgist
+							27960,	-- Dark Rune Warrior
 							27961,	-- Dark Rune Worker
 							27972,	-- Lightning Construct
+							27970,	-- Raging Construct
 							27971,	-- Unrelenting Construct
 						},
 					}),
@@ -132,29 +140,41 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								27962,	-- Dark Rune Elementalist
 								27969,	-- Dark Rune Giant
 								27964,	-- Dark Rune Scholar
+								27965,	-- Dark Rune Shaper
 								27963,	-- Dark Rune Theurgist
+								27960,	-- Dark Rune Warrior
 								27961,	-- Dark Rune Worker
+								27972,	-- Lightning Construct
 								27970,	-- Raging Construct
+								27971,	-- Unrelenting Construct
 							},
 						}),
 						i(37672, {	-- Patina-Coated Breastplate
 							["crs"] = {
 								27966,	-- Dark Rune Controller
 								27962,	-- Dark Rune Elementalist
+								27969,	-- Dark Rune Giant
+								27964,	-- Dark Rune Scholar
 								27965,	-- Dark Rune Shaper
 								27963,	-- Dark Rune Theurgist
 								27960,	-- Dark Rune Warrior
 								27961,	-- Dark Rune Worker
+								27972,	-- Lightning Construct
 								27970,	-- Raging Construct
 								27971,	-- Unrelenting Construct
 							},
 						}),
 						i(37671, {	-- Refined Ore Gloves
 							["crs"] = {
+								27966,	-- Dark Rune Controller
+								27962,	-- Dark Rune Elementalist
 								27969,	-- Dark Rune Giant
 								27964,	-- Dark Rune Scholar
+								27965,	-- Dark Rune Shaper
 								27963,	-- Dark Rune Theurgist
 								27960,	-- Dark Rune Warrior
+								27961,	-- Dark Rune Worker
+								27972,	-- Lightning Construct
 								27970,	-- Raging Construct
 								27971,	-- Unrelenting Construct
 							},

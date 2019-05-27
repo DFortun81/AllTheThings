@@ -36,10 +36,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37800, {	-- Aviary Guardsman's Hauberk
 						["crs"] = {
 							26625,	-- Darkweb Recluse
+							26622,	-- Drakkari Bat
 							27431,	-- Drakkari Commander
 							26620,	-- Drakkari Guardian
+							26641,	-- Drakkari Gutripper
+							26628,	-- Drakkari Scytheclaw
 							26639,	-- Drakkari Shaman
+							27871,	-- Flesheating Ghoul
+							26621,	-- Ghoul Tormentor
+							26638,	-- Risen Drakkari Bat Rider
+							26830,	-- Risen Drakkari Death Knight
 							26637,	-- Risen Drakkari Handler
+							26636,	-- Risen Drakkari Soulmage
 							26635,	-- Risen Drakkari Warrior
 							26623,	-- Scourge Brute
 							26626,	-- Scourge Reanimator
@@ -48,37 +56,61 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(35639, {	-- Brighthelm of Guarding
 						["crs"] = {
+							26625,	-- Darkweb Recluse
+							26622,	-- Drakkari Bat
+							27431,	-- Drakkari Commander
 							26620,	-- Drakkari Guardian
+							26641,	-- Drakkari Gutripper
 							26628,	-- Drakkari Scytheclaw
 							26639,	-- Drakkari Shaman
-							26621,	-- Ghoul Tormentor
-							26637,	-- Risen Drakkari Handler
-							26635,	-- Risen Drakkari Warrior
-							26623,	-- Scourge Brute
-						},
-					}),
-					i(35640, {	-- Darkweb Bindings
-						["crs"] = {
-							27431,	-- Drakkari Commander
-							26620,	-- Drakkari Guardian
-							26628,	-- Drakkari Scytheclaw
-							26621,	-- Ghoul Tormentor
-							26638,	-- Risen Drakkari Bat Rider
-							26635,	-- Risen Drakkari Warrior
-							26626,	-- Scourge Reanimator
-							26624,	-- Wretched Belcher
-						},
-					}),
-					i(37799, {	-- Reanimator's Cloak
-						["crs"] = {
-							27431,	-- Drakkari Commander
-							26641,	-- Drakkari Gutripper
 							26621,	-- Ghoul Tormentor
 							26638,	-- Risen Drakkari Bat Rider
 							26830,	-- Risen Drakkari Death Knight
 							26637,	-- Risen Drakkari Handler
 							26636,	-- Risen Drakkari Soulmage
 							26635,	-- Risen Drakkari Warrior
+							26623,	-- Scourge Brute
+							26626,	-- Scourge Reanimator
+							26624,	-- Wretched Belcher
+						},
+					}),
+					i(35640, {	-- Darkweb Bindings
+						["crs"] = {
+							26625,	-- Darkweb Recluse
+							26622,	-- Drakkari Bat
+							27431,	-- Drakkari Commander
+							26620,	-- Drakkari Guardian
+							26641,	-- Drakkari Gutripper
+							26628,	-- Drakkari Scytheclaw
+							26639,	-- Drakkari Shaman
+							26621,	-- Ghoul Tormentor
+							26638,	-- Risen Drakkari Bat Rider
+							26830,	-- Risen Drakkari Death Knight
+							26637,	-- Risen Drakkari Handler
+							26636,	-- Risen Drakkari Soulmage
+							26635,	-- Risen Drakkari Warrior
+							26623,	-- Scourge Brute
+							26626,	-- Scourge Reanimator
+							26624,	-- Wretched Belcher
+						},
+					}),
+					i(37799, {	-- Reanimator's Cloak
+						["crs"] = {
+							26625,	-- Darkweb Recluse
+							26622,	-- Drakkari Bat
+							27431,	-- Drakkari Commander
+							26620,	-- Drakkari Guardian
+							26641,	-- Drakkari Gutripper
+							26628,	-- Drakkari Scytheclaw
+							26639,	-- Drakkari Shaman
+							27871,	-- Flesheating Ghoul
+							26621,	-- Ghoul Tormentor
+							26638,	-- Risen Drakkari Bat Rider
+							26830,	-- Risen Drakkari Death Knight
+							26637,	-- Risen Drakkari Handler
+							26636,	-- Risen Drakkari Soulmage
+							26635,	-- Risen Drakkari Warrior
+							26623,	-- Scourge Brute
 							26626,	-- Scourge Reanimator
 							26624,	-- Wretched Belcher
 						},
@@ -91,6 +123,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							26641,	-- Drakkari Gutripper
 							26628,	-- Drakkari Scytheclaw
 							26639,	-- Drakkari Shaman
+							26621,	-- Ghoul Tormentor
 							26638,	-- Risen Drakkari Bat Rider
 							26830,	-- Risen Drakkari Death Knight
 							26637,	-- Risen Drakkari Handler
@@ -98,19 +131,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							26635,	-- Risen Drakkari Warrior
 							26623,	-- Scourge Brute
 							26626,	-- Scourge Reanimator
+							26624,	-- Wretched Belcher
 						},
 					}),
 					i(37801, {	-- Waistguard of the Risen Knight
 						["crs"] = {
+							26625,	-- Darkweb Recluse
+							26622,	-- Drakkari Bat
 							27431,	-- Drakkari Commander
 							26620,	-- Drakkari Guardian
 							26641,	-- Drakkari Gutripper
 							26628,	-- Drakkari Scytheclaw
 							26639,	-- Drakkari Shaman
 							27871,	-- Flesheating Ghoul
+							26621,	-- Ghoul Tormentor
 							26638,	-- Risen Drakkari Bat Rider
+							26830,	-- Risen Drakkari Death Knight
 							26637,	-- Risen Drakkari Handler
+							26636,	-- Risen Drakkari Soulmage
+							26635,	-- Risen Drakkari Warrior
 							26623,	-- Scourge Brute
+							26626,	-- Scourge Reanimator
+							26624,	-- Wretched Belcher
 						},
 					}),
 				}),
@@ -181,10 +223,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37800, {	-- Aviary Guardsman's Hauberk
 							["crs"] = {
 								26625,	-- Darkweb Recluse
+								26622,	-- Drakkari Bat
 								27431,	-- Drakkari Commander
 								26620,	-- Drakkari Guardian
+								26641,	-- Drakkari Gutripper
+								26628,	-- Drakkari Scytheclaw
 								26639,	-- Drakkari Shaman
+								27871,	-- Flesheating Ghoul
+								26621,	-- Ghoul Tormentor
+								26638,	-- Risen Drakkari Bat Rider
+								26830,	-- Risen Drakkari Death Knight
 								26637,	-- Risen Drakkari Handler
+								26636,	-- Risen Drakkari Soulmage
 								26635,	-- Risen Drakkari Warrior
 								26623,	-- Scourge Brute
 								26626,	-- Scourge Reanimator
@@ -204,14 +254,23 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 						i(35640, {	-- Darkweb Bindings
 							["crs"] = {
+								26625,	-- Darkweb Recluse
+								26622,	-- Drakkari Bat
 								27431,	-- Drakkari Commander
 								26620,	-- Drakkari Guardian
+								26641,	-- Drakkari Gutripper
 								26628,	-- Drakkari Scytheclaw
+								26639,	-- Drakkari Shaman
 								26621,	-- Ghoul Tormentor
 								26638,	-- Risen Drakkari Bat Rider
+								26830,	-- Risen Drakkari Death Knight
+								26637,	-- Risen Drakkari Handler
+								26636,	-- Risen Drakkari Soulmage
 								26635,	-- Risen Drakkari Warrior
+								26623,	-- Scourge Brute
 								26626,	-- Scourge Reanimator
 								26624,	-- Wretched Belcher
+
 							},
 						}),
 						i(37799, {	-- Reanimator's Cloak
@@ -236,6 +295,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								26641,	-- Drakkari Gutripper
 								26628,	-- Drakkari Scytheclaw
 								26639,	-- Drakkari Shaman
+								26621,	-- Ghoul Tormentor
 								26638,	-- Risen Drakkari Bat Rider
 								26830,	-- Risen Drakkari Death Knight
 								26637,	-- Risen Drakkari Handler
@@ -243,19 +303,28 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								26635,	-- Risen Drakkari Warrior
 								26623,	-- Scourge Brute
 								26626,	-- Scourge Reanimator
+								26624,	-- Wretched Belcher
 							},
 						}),
 						i(37801, {	-- Waistguard of the Risen Knight
 							["crs"] = {
+								26625,	-- Darkweb Recluse
+								26622,	-- Drakkari Bat
 								27431,	-- Drakkari Commander
 								26620,	-- Drakkari Guardian
 								26641,	-- Drakkari Gutripper
 								26628,	-- Drakkari Scytheclaw
 								26639,	-- Drakkari Shaman
 								27871,	-- Flesheating Ghoul
+								26621,	-- Ghoul Tormentor
 								26638,	-- Risen Drakkari Bat Rider
+								26830,	-- Risen Drakkari Death Knight
 								26637,	-- Risen Drakkari Handler
+								26636,	-- Risen Drakkari Soulmage
+								26635,	-- Risen Drakkari Warrior
 								26623,	-- Scourge Brute
+								26626,	-- Scourge Reanimator
+								26624,	-- Wretched Belcher
 							},
 						}),
 					}),

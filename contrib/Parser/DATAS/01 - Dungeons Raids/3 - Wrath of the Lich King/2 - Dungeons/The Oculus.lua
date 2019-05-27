@@ -43,10 +43,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							27633,	-- Azure Inquisitor
 							27636,	-- Azure Ley-Whelp
 							27635,	-- Azure Spellbinder
+							27641,	-- Centrifuge Construct
 							27650,	-- Phantasmal Air
+							27645,	-- Phantasmal Cloudscraper
+							27651,	-- Phantasmal Fire
+							27642,	-- Phantasmal Mammoth
+							27649,	-- Phantasmal Murloc
 							27648,	-- Phantasmal Naga
 							27647,	-- Phantasmal Ogre
+							27653,	-- Phantasmal Water
+							27644,	-- Phantasmal Wolf
 							27640,	-- Ring-Lord Conjurer
+							27639,	-- Ring-Lord Sorceress
 						},
 					}),
 					i(36978, {	-- Ley-Whelphide Belt
@@ -54,10 +62,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							27633,	-- Azure Inquisitor
 							27636,	-- Azure Ley-Whelp
 							27635,	-- Azure Spellbinder
+							27641,	-- Centrifuge Construct
+							27650,	-- Phantasmal Air
 							27645,	-- Phantasmal Cloudscraper
 							27651,	-- Phantasmal Fire
+							27642,	-- Phantasmal Mammoth
 							27649,	-- Phantasmal Murloc
 							27648,	-- Phantasmal Naga
+							27647,	-- Phantasmal Ogre
 							27653,	-- Phantasmal Water
 							27644,	-- Phantasmal Wolf
 							27640,	-- Ring-Lord Conjurer
@@ -66,13 +78,20 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					i(36976, {	-- Ring-Lord's Leggings
 						["crs"] = {
+							27633,	-- Azure Inquisitor
 							27636,	-- Azure Ley-Whelp
+							27635,	-- Azure Spellbinder
 							27641,	-- Centrifuge Construct
+							27650,	-- Phantasmal Air
+							27645,	-- Phantasmal Cloudscraper
 							27651,	-- Phantasmal Fire
 							27642,	-- Phantasmal Mammoth
+							27649,	-- Phantasmal Murloc
 							27648,	-- Phantasmal Naga
 							27647,	-- Phantasmal Ogre
+							27653,	-- Phantasmal Water
 							27644,	-- Phantasmal Wolf
+							27640,	-- Ring-Lord Conjurer
 							27639,	-- Ring-Lord Sorceress
 						},
 					}),
@@ -150,35 +169,57 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					n(0, {	-- Zone Drop
 						i(37365, {	-- Bands of the Sky Ring
 							["crs"] = {
+								27633,	-- Azure Inquisitor
 								27636,	-- Azure Ley-Whelp
 								27635,	-- Azure Spellbinder
 								27641,	-- Centrifuge Construct
 								27650,	-- Phantasmal Air
+								27645,	-- Phantasmal Cloudscraper
+								27651,	-- Phantasmal Fire
 								27642,	-- Phantasmal Mammoth
+								27649,	-- Phantasmal Murloc
 								27648,	-- Phantasmal Naga
+								27647,	-- Phantasmal Ogre
+								27653,	-- Phantasmal Water
+								27644,	-- Phantasmal Wolf
 								27640,	-- Ring-Lord Conjurer
+								27639,	-- Ring-Lord Sorceress
 							},
 						}),
 						i(37366, {	-- Drake-Champion's Bracers
 							["crs"] = {
+								27633,	-- Azure Inquisitor
 								27636,	-- Azure Ley-Whelp
+								27635,	-- Azure Spellbinder
 								27641,	-- Centrifuge Construct
+								27650,	-- Phantasmal Air
 								27645,	-- Phantasmal Cloudscraper
+								27651,	-- Phantasmal Fire
 								27642,	-- Phantasmal Mammoth
 								27649,	-- Phantasmal Murloc
 								27648,	-- Phantasmal Naga
+								27647,	-- Phantasmal Ogre
+								27653,	-- Phantasmal Water
+								27644,	-- Phantasmal Wolf
 								27640,	-- Ring-Lord Conjurer
+								27639,	-- Ring-Lord Sorceress
 							},
 						}),
 						i(37364, {	-- Frostbridge Orb
 							["crs"] = {
+								27633,	-- Azure Inquisitor
 								27636,	-- Azure Ley-Whelp
 								27635,	-- Azure Spellbinder
+								27641,	-- Centrifuge Construct
+								27650,	-- Phantasmal Air
 								27645,	-- Phantasmal Cloudscraper
 								27651,	-- Phantasmal Fire
+								27642,	-- Phantasmal Mammoth
 								27649,	-- Phantasmal Murloc
+								27648,	-- Phantasmal Naga
 								27647,	-- Phantasmal Ogre
 								27653,	-- Phantasmal Water
+								27644,	-- Phantasmal Wolf
 								27640,	-- Ring-Lord Conjurer
 								27639,	-- Ring-Lord Sorceress
 							},

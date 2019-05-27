@@ -62,39 +62,63 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9392, {	-- Annealed Blade
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						4849,	-- Shadowforge Archaeologist
 						4848,	-- Shadowforge Darkcaster
+						4847,	-- Shadowforge Relic Hunter
 						4860,	-- Stone Steward
+						7175,	-- Stonevault Ambusher
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
-						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},
 				}),
 				i(9393, {	-- Beacon of Hope
 					["crs"] = {
+						7309,	-- Earthen Custodian
 						7012,	-- Earthen Sculptor
 						4863,	-- Jadespine Basilisk
 						4847,	-- Shadowforge Relic Hunter
 						7290,	-- Shadowforge Sharpshooter
+						4844,	-- Shadowforge Surveyor
 						4860,	-- Stone Steward
+						7175,	-- Stonevault Ambusher
+						4855,	-- Stonevault Brawler
+						4850,	-- Stonevault Cave Lurker
 						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
 					},
 				}),
 				i(9465),	-- Digmaster 5000
 				i(9381, {	-- Earthen Rod
 					["crs"] = {
-						4844,	-- Shadowforge Surveyor
+						7011,	-- Earthen Rocksmasher
+						7012,	-- Earthen Sculptor
+						4863,	-- Jadespine Basilisk
+						4847,	-- Shadowforge Relic Hunter
+						4861,	-- Shrike Bat
+						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
+						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9397, {	-- Energy Cloak
 					["crs"] = {
+						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
+						4848,	-- Shadowforge Darkcaster
 						7030,	-- Shadowforge Geologist
+						4847,	-- Shadowforge Relic Hunter
+						4844,	-- Shadowforge Surveyor
 						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
@@ -103,31 +127,53 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(9386, {	-- Excavator's Brand
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7405,	-- Deadly Cleft Scorpid
+						7076,	-- Earthen Guardian
 						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
+						7397,	-- Earthen Stonecarver
+						4849,	-- Shadowforge Archaeologist
 						7030,	-- Shadowforge Geologist
 						4847,	-- Shadowforge Relic Hunter
+						4844,	-- Shadowforge Surveyor
 						4861,	-- Shrike Bat
-						4850,	-- Stonevault Cave Lurker
-						4853,	-- Stonevault Geomancer
-						7320,	-- Stonevault Mauler
-						4852,	-- Stonevault Oracle
-					},
-				}),
-				i(9424, {	-- Ginn-Su Sword
-					["crs"] = {
-						4861,	-- Shrike Bat
-						4855,	-- Stonevault Brawler
-					},
-				}),
-				i(9396, {	-- Legguards of the Vault
-					["crs"] = {
-						7012,	-- Earthen Sculptor
+						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
+						7022,	-- Venomlash Scorpid
+					},
+				}),
+				i(9424, {	-- Ginn-Su Sword
+					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						7030,	-- Shadowforge Geologist
+						4861,	-- Shrike Bat
+						7175,	-- Stonevault Ambusher
+						7321,	-- Stonevault Flameweaver
+						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
+					},
+				}),
+				i(9396, {	-- Legguards of the Vault
+					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						7012,	-- Earthen Sculptor
+						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
+						4850,	-- Stonevault Cave Lurker
+						7321,	-- Stonevault Flameweaver
+						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9429),	-- Miner's Hat of the Deep
@@ -166,18 +212,29 @@ _.Instances = { tier(1, {	-- Classic
 				i(9430),	-- Spaulders of a Lost Age
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7076,	-- Earthen Guardian
+						7011,	-- Earthen Rocksmasher
+						7012,	-- Earthen Sculptor
+						7396,	-- Earthen Stonebreaker
 						4863,	-- Jadespine Basilisk
+						7290,	-- Shadowforge Sharpshooter
+						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
+						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
 					},
 				}),
 				i(9427, {	-- Stonevault Bonebreaker
 					["crs"] = {
+						7011,	-- Earthen Rocksmasher
 						4860,	-- Stone Steward
 						4855,	-- Stonevault Brawler
+						7321,	-- Stonevault Flameweaver
 					},
 				}),
 				i(9384, {	-- Stonevault Shiv
@@ -198,8 +255,10 @@ _.Instances = { tier(1, {	-- Classic
 				i(9423),	-- The Jackhammer
 				i(9391, {	-- The Shoveler
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7405,	-- Deadly Cleft Scorpid
 						4863,	-- Jadespine Basilisk
-						4846,	-- Shadowforge Digger
+						4849,	-- Shadowforge Archaeologist
 						4847,	-- Shadowforge Relic Hunter
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
@@ -207,16 +266,26 @@ _.Instances = { tier(1, {	-- Classic
 						4850,	-- Stonevault Cave Lurker
 						7321,	-- Stonevault Flameweaver
 						7320,	-- Stonevault Mauler
+						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 				i(9428, {	-- Unearthed Bands
 					["crs"] = {
+						7078,	-- Cleft Scorpid
+						7011,	-- Earthen Rocksmasher
+						4863,	-- Jadespine Basilisk
+						4849,	-- Shadowforge Archaeologist
+						4848,	-- Shadowforge Darkcaster
 						4861,	-- Shrike Bat
 						4860,	-- Stone Steward
+						4855,	-- Stonevault Brawler
 						4850,	-- Stonevault Cave Lurker
+						7321,	-- Stonevault Flameweaver
 						4853,	-- Stonevault Geomancer
 						7320,	-- Stonevault Mauler
 						4852,	-- Stonevault Oracle
+						24830,	-- Stonevault Pillager
 					},
 				}),
 			}),

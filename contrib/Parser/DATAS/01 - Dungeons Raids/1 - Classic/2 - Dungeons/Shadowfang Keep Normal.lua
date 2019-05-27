@@ -170,10 +170,8 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					i(2292, {	-- Necrology Robes
 						["crs"] = {
-							3875,	-- Haunted Servitor
-							47137,	-- Mindless Horror
+							3870,	-- Stone Sleeper
 							47146,	-- Spitebone Flayer
-							47136,	-- Unstable Ravager
 						},
 					}),
 					i(1318, {	-- Night Reaver
@@ -215,6 +213,7 @@ _.Instances = { tier(1, {	-- Classic
 							47137,	-- Mindless Horror
 							47138,	-- Pustulant Monstrosity
 							47231,	-- Shadowy Attendant
+							47140,	-- Sorcerous Skeleton
 							47146,	-- Spitebone Flayer
 							47145,	-- Spitebone Guardian
 							47143,	-- Spitebone Skeleton

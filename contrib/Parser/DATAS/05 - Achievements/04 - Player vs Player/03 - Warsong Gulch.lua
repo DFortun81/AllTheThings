@@ -30,17 +30,21 @@ _.Achievements =
 						ach(168), 		-- Warsong Gulch Perfection
 						ach(201), 		-- Warsong Expedience
 						ach(204), 		-- Ironman
-						a(ach(203)),	-- Not in My House (Alliance)
-						h(ach(1251)),	-- Not in My House (Horde)
-						a(ach(202)),	-- Quick Cap (Alliance)
-						h(ach(1502)),	-- Quick Cap (Horde)
-						a(ach(206)),	-- Supreme Defender (Alliance)
-						h(ach(1252)),	-- Supreme Defender (Horde)
+						ach(203, 1251),	-- Not in My House [A] / [H]
+						--a(ach(203)),	-- Not in My House (Alliance)
+						--h(ach(1251)),	-- Not in My House (Horde)
+						ach(202, 1502),	-- Quick Cap [A] / [H]
+						--a(ach(202)),	-- Quick Cap (Alliance)
+						--h(ach(1502)),	-- Quick Cap (Horde)
+						ach(206, 1252),	-- Supreme Defender [A] / [H]
+						--a(ach(206)),	-- Supreme Defender (Alliance)
+						--h(ach(1252)),	-- Supreme Defender (Horde)
 						ach(207), 		-- Save the Day
 					}),
 					ach(1259), 		-- Not So Fast	
-					a(ach(713)),	-- Silverwing Sentinel (Alliance)
-					h(ach(712)),	-- Warsong Outrider (Horde)			
+					ach(713, 712),	-- Silverwing Sentinel [A] / Warsong Outrider [H]
+					--a(ach(713)),	-- Silverwing Sentinel (Alliance)
+					--h(ach(712)),	-- Warsong Outrider (Horde)			
 				},
 			}),
 		},
