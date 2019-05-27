@@ -605,7 +605,6 @@ _.GearSets =
 								i(148204),	-- Fierce Gladiator's Felskin Legguards
 								i(148198),	-- Fierce Gladiator's Felskin Boots
 							}),
-							gs(1382, {	-- Fierce Gladiator's Chain Armor
 							{	-- Elite Fierce Gladiator's Chain Armor
 								["setID"] = 1382,	-- Elite Fierce Gladiator's Chain Armor
 								["u"] = 14,			-- Elite PvP Filter
