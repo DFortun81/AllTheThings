@@ -606,16 +606,123 @@ _.GearSets =
 								i(148198),	-- Fierce Gladiator's Felskin Boots
 							}),
 							gs(1382, {	-- Fierce Gladiator's Chain Armor
-								i(148234),	-- Fierce Gladiator's Chain Helm
-								i(148238),	-- Fierce Gladiator's Chain Spaulders
-								i(148162),	-- Fierce Gladiator's Drape of the Tracker
-								i(148228),	-- Fierce Gladiator's Chain Armor
-								i(148242),	-- Fierce Gladiator's Chain Armband
-								i(148232),	-- Fierce Gladiator's Chain Gauntlets
-								i(148240),	-- Fierce Gladiator's Chain Clasp
-								i(148236),	-- Fierce Gladiator's Chain Leggings
-								i(148230),	-- Fierce Gladiator's Chain Treads
-							}),
+							{	-- Elite Fierce Gladiator's Chain Armor
+								["setID"] = 1382,	-- Elite Fierce Gladiator's Chain Armor
+								["u"] = 14,			-- Elite PvP Filter
+								["classes"] = {
+									3,	-- Hunter
+								},
+								["g"] = {
+									{	-- Fierce Gladiator's Chain Helm
+										["itemID"] = 148234,	-- Fierce Gladiator's Chain Helm
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Spaulders
+										["itemID"] = 148238,	-- Fierce Gladiator's Chain Spaulders
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Drape of the Tracker
+										["itemID"] = 148162,	-- Fierce Gladiator's Drape of the Tracker
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Armor
+										["itemID"] = 148228,	-- Fierce Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Armband
+										["itemID"] = 148242,	-- Fierce Gladiator's Chain Armband
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Gauntlets
+										["itemID"] = 148232,	-- Fierce Gladiator's Chain Gauntlets
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Clasp
+										["itemID"] = 148240,	-- Fierce Gladiator's Chain Clasp
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Leggings
+										["itemID"] = 148236,	-- Fierce Gladiator's Chain Leggings
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fierce Gladiator's Chain Treads
+										["itemID"] = 148230,	-- Fierce Gladiator's Chain Treads
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Helm
+										["itemID"] = 149835,	-- Dominant Combatant's Chain Helm
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Spaulders
+										["itemID"] = 149839,	-- Dominant Combatant's Chain Spaulders
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Drape of the Tracker
+										["itemID"] = 149763,	-- Dominant Combatant's Drape of the Tracker
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Armor
+										["itemID"] = 149829,	-- Dominant Combatant's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Armband
+										["itemID"] = 149843,	-- Dominant Combatant's Chain Armband
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Gauntlets
+										["itemID"] = 149833,	-- Dominant Combatant's Chain Gauntlets
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Clasp
+										["itemID"] = 149841,	-- Dominant Combatant's Chain Clasp
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Leggings
+										["itemID"] = 149837,	-- Dominant Combatant's Chain Leggings
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Dominant Combatant's Chain Treads
+										["itemID"] = 149831,	-- Dominant Combatant's Chain Treads
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Helm
+										["itemID"] = 149219,	-- Demonic Gladiator's Chain Helm
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Spaulders
+										["itemID"] = 149223,	-- Demonic Gladiator's Chain Spaulders
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Drape of the Tracker
+										["itemID"] = 149147,	-- Demonic Gladiator's Drape of the Tracker
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Armor
+										["itemID"] = 149213,	-- Demonic Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Armband
+										["itemID"] = 149227,	-- Demonic Gladiator's Chain Armband
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Gauntlets
+										["itemID"] = 149217,	-- Demonic Gladiator's Chain Gauntlets
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Clasp
+										["itemID"] = 149225,	-- Demonic Gladiator's Chain Clasp
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Leggings
+										["itemID"] = 149221,	-- Demonic Gladiator's Chain Leggings
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Demonic Gladiator's Chain Treads
+										["itemID"] = 149215,	-- Demonic Gladiator's Chain Treads
+										["u"] = 14,				-- Elite PvP Filter
+									},
+								},
+							},
 							gs(1394, {	-- Fierce Gladiator's Ringmail Armor
 								i(148342),	-- Fierce Gladiator's Ringmail Helm
 								i(148346),	-- Fierce Gladiator's Ringmail Spaulders
