@@ -149,7 +149,9 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					},
 					q(43991),	-- The Protectors
-					qart(qg(103778, q(40783))),	-- The Scythe of Elune
+					qart(q(40783, {	-- The Scythe of Elune
+						["qg"] = 103778,	-- Naralex
+					})),
 					q(40651),	-- The Seed of Ages
 					q(42428),	-- The Shrine of Ashamane
 					q(42040),	-- The Way to Nordrassil

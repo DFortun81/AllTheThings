@@ -85,9 +85,10 @@ _.Instances = { tier(1, {	-- Classic
 						["qg"] = 45840,	-- Warlord Goretooth
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 					}),
-					qg(9503, q(4295, {	-- Rocknot's Ale
+					q(4295, {	-- Rocknot's Ale
+						["qg"] = 9503,	-- Private Rocknot
 						["repeatable"] = true,
-					})),
+					}),
 					qa(27573, {	-- The Dark Iron Pact [Alliance]
 						["qg"] = 45899,	-- Mountaineer Orfus
 						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]

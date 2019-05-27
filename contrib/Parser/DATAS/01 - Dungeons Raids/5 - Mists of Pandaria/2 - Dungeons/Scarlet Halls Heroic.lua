@@ -12,18 +12,23 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["lvl"] = 90,
 				["g"] = {
 					n(-17, {	-- Quests
-						qg(64764, q(31497, {	-- Just for Safekeeping, Of Course
-							i(87370),	-- Waistguard of the Phalanx
-							i(87371),	-- Scarlet Champion's Belt
-							i(87372),	-- Verdone's Chewed Waistplate
-							i(87373),	-- Belt of Singed Shame
-							i(87374),	-- Bucket Tosser's Girdle
-							i(87375),	-- Cord of Bloody Evangelism
-							i(87376),	-- Scholarly Cord
-							i(87377),	-- Scarlet Archer's Links
-							i(87378),	-- Loksey's Lost Belt
-						})),
-						qg(64764, q(31495)),	-- Rank and File
+						q(31497, {	-- Just for Safekeeping, Of Course
+							["qg"] = 64764,	-- Hooded Crusader
+							["g"] = {
+								i(87370),	-- Waistguard of the Phalanx
+								i(87371),	-- Scarlet Champion's Belt
+								i(87372),	-- Verdone's Chewed Waistplate
+								i(87373),	-- Belt of Singed Shame
+								i(87374),	-- Bucket Tosser's Girdle
+								i(87375),	-- Cord of Bloody Evangelism
+								i(87376),	-- Scholarly Cord
+								i(87377),	-- Scarlet Archer's Links
+								i(87378),	-- Loksey's Lost Belt
+							},
+						}),
+						q(31495, {	-- Rank and File
+							["qg"] = 64764,	-- Hooded Crusader
+						}),
 					}),
 					cr(59303, e(660, {	-- Houndmaster Braun
 						ach(6684),	-- Humane Society

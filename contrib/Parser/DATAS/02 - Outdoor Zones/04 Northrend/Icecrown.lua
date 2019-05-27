@@ -117,7 +117,9 @@ _.Zones =
 					qa(13752),	-- A Blade Fit For A Champion
 					qh(13673),	-- A Blade Fit For A Champion
 					qa(13757),	-- A Blade Fit For A Champion
-					qg(66675, qh(31983)),	-- A Brief Reprieve
+					qh(31983, {	-- A Brief Reprieve
+						["qg"] = 66675,	-- Major Payne
+					}),
 					qa(31984),	-- A Brief Reprieve
 					qh(13736),	-- A Champion Rises
 					qh(13737),	-- A Champion Rises

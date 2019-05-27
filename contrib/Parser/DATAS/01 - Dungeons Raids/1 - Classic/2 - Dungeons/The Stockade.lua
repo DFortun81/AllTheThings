@@ -9,20 +9,30 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 50.48, 66.46, 84 },	-- The Stockade, Stormwind City
 		["groups"] = {
 			n(-17, {			-- Quests
-				qg(46410, qa(27737)),	-- By Fire Be Saved!
-				qg(46409, qh(50335, {	-- Grant Me Revenge
-					i(65915),	-- Rifle Commander's Eyepatch
-					i(65941),	-- Riot Stick
-					i(65965),	-- Shield of the Stockades
-					i(131683),	-- Thelwater's Steelwoven Eyepatch
-				})),
-				qg(46409, qa(27739,{	-- The Gnoll King
-					i(65915),	-- Rifle Commander's Eyepatch
-					i(65941),	-- Riot Stick
-					i(65965),	-- Shield of the Stockades
-					i(131683),	-- Thelwater's Steelwoven Eyepatch
-				})),
-				qg(46417, qa(27733)),	-- The Good Ol' Switcheroo
+				qa(27737, {	-- By Fire Be Saved!
+					["qg"] = 46410,	-- Nurse Lillian
+				}),
+				qh(50335, {	-- Grant Me Revenge
+					["qg"] = 46409,	-- Warden Thelwater
+					["g"] = {
+						i(65915),	-- Rifle Commander's Eyepatch
+						i(65941),	-- Riot Stick
+						i(65965),	-- Shield of the Stockades
+						i(131683),	-- Thelwater's Steelwoven Eyepatch
+					},
+				}),
+				qa(27739,{	-- The Gnoll King
+					["qg"] = 46409,	-- Warden Thelwater
+					["g"] = {
+						i(65915),	-- Rifle Commander's Eyepatch
+						i(65941),	-- Riot Stick
+						i(65965),	-- Shield of the Stockades
+						i(131683),	-- Thelwater's Steelwoven Eyepatch
+					},
+				}),
+				qa(27733, {	-- The Good Ol' Switcheroo
+					["qg"] = 46417,	-- Rifle Commander Coe
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(7360, {  -- Recipe: Dark Leather Gloves

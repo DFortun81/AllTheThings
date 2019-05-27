@@ -55,12 +55,18 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95968),	-- Vaultwalker Sabatons
 					},
 				})),
-				qg(67990, qh(32589, {	-- Life Blood / Lor'themar Theron <Regent Lord of Quel'Thalas>
-					i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
-				})),
-				qg(67992, qa(32599, {	-- Securing A Future / Lady Jaina Proudmoore <Leader of the Kirin Tor>
-					i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
-				})),
+				qh(32589, {	-- Life Blood
+					["qg"] = 67990,	-- Lor'themar Theron
+					["g"] = {
+						i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
+					},
+				}),
+				qa(32599, {	-- Securing A Future
+					["qg"] = 67992,	-- Lady Jaina Proudmoore
+					["g"] = {
+						i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
+					},
+				}),
 				n(-176, {	-- Weekly World Events
 					["description"] = "Only one of these quests are available in the raid at a time. As you progress through the raid, you should see ",
 					["groups"] = {
