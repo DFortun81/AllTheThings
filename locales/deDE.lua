@@ -26,6 +26,7 @@ do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
+	-- Enter translated OBJECTID's here
     [31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[55] = "Ein halb aufgefressener Körper",
