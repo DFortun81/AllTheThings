@@ -10261,17 +10261,52 @@ _.Zones =
 										},
 										["classes"] = { 12 },
 									}),
-									i(146227, {	-- Vindictive Gladiator's Satin Armor
-										i(136175),	-- Vindictive Gladiator's Chain Helm
-										i(136177),	-- Vindictive Gladiator's Chain Spaulders
-										i(136252),	-- Vindictive Gladiator's Drape of the Tracker
-										i(136172),	-- Vindictive Gladiator's Chain Armor
-										i(136179),	-- Vindictive Gladiator's Chain Armband
-										i(136174),	-- Vindictive Gladiator's Chain Gauntlets
-										i(136178),	-- Vindictive Gladiator's Chain Clasp
-										i(136176),	-- Vindictive Gladiator's Chain Leggings
-										i(136173),	-- Vindictive Gladiator's Chain Treads
-									}),
+									{	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
+										["itemID"] = 146227,	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+										["classes"] = {
+											3,	-- Hunter
+										},
+										["g"] = {
+											{	-- Vindictive Gladiator's Chain Helm
+												["itemID"] = 136175,	-- Vindictive Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Spaulders
+												["itemID"] = 136177,	-- Vindictive Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Drape of the Tracker
+												["itemID"] = 136252,	-- Vindictive Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Armor
+												["itemID"] = 136172,	-- Vindictive Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Armband
+												["itemID"] = 136179,	-- Vindictive Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Gauntlets
+												["itemID"] = 136174,	-- Vindictive Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Clasp
+												["itemID"] = 136178,	-- Vindictive Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Leggings
+												["itemID"] = 136176,	-- Vindictive Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Vindictive Gladiator's Chain Treads
+												["itemID"] = 136173,	-- Vindictive Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+										},
+									},
 									i(146225, {	-- Vindictive Gladiator's Satin Armor
 										i(136223),	-- Vindictive Gladiator's Ringmail Helm
 										i(136225),	-- Vindictive Gladiator's Ringmail Spaulders
