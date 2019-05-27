@@ -3375,6 +3375,60 @@ _.Zones =
 											{	-- Fierce Gladiator's Chain Treads
 												["itemID"] = 147984,	-- Fierce Gladiator's Chain Treads
 											},
+											{	-- Dominant Gladiator's Chain Helm
+												["itemID"] = 148481,	-- Dominant Gladiator's Chain Helm
+											},
+											{	-- Dominant Gladiator's Chain Spaulders
+												["itemID"] = 148485,	-- Dominant Gladiator's Chain Spaulders
+											},
+											{	-- Dominant Gladiator's Drape of the Tracker
+												["itemID"] = 148409,	-- Dominant Gladiator's Drape of the Tracker
+											},
+											{	-- Dominant Gladiator's Chain Armor
+												["itemID"] = 148475,	-- Dominant Gladiator's Chain Armor
+											},
+											{	-- Dominant Gladiator's Chain Armband
+												["itemID"] = 148489,	-- Dominant Gladiator's Chain Armband
+											},
+											{	-- Dominant Gladiator's Chain Gauntlets
+												["itemID"] = 148479,	-- Dominant Gladiator's Chain Gauntlets
+											},
+											{	-- Dominant Gladiator's Chain Clasp
+												["itemID"] = 148487,	-- Dominant Gladiator's Chain Clasp
+											},
+											{	-- Dominant Gladiator's Chain Leggings
+												["itemID"] = 148483,	-- Dominant Gladiator's Chain Leggings
+											},
+											{	-- Dominant Gladiator's Chain Treads
+												["itemID"] = 148477,	-- Dominant Gladiator's Chain Treads
+											},
+											{	-- Demonic Gladiator's Chain Helm
+												["itemID"] = 148973,	-- Demonic Gladiator's Chain Helm
+											},
+											{	-- Demonic Gladiator's Chain Spaulders
+												["itemID"] = 148977,	-- Demonic Gladiator's Chain Spaulders
+											},
+											{	-- Demonic Gladiator's Drape of the Tracker
+												["itemID"] = 148901,	-- Demonic Gladiator's Drape of the Tracker
+											},
+											{	-- Demonic Gladiator's Chain Armor
+												["itemID"] = 148967,	-- Demonic Gladiator's Chain Armor
+											},
+											{	-- Demonic Gladiator's Chain Armband
+												["itemID"] = 148981,	-- Demonic Gladiator's Chain Armband
+											},
+											{	-- Demonic Gladiator's Chain Gauntlets
+												["itemID"] = 148971,	-- Demonic Gladiator's Chain Gauntlets
+											},
+											{	-- Demonic Gladiator's Chain Clasp
+												["itemID"] = 148979,	-- Demonic Gladiator's Chain Clasp
+											},
+											{	-- Demonic Gladiator's Chain Leggings
+												["itemID"] = 148975,	-- Demonic Gladiator's Chain Leggings
+											},
+											{	-- Demonic Gladiator's Chain Treads
+												["itemID"] = 148969,	-- Demonic Gladiator's Chain Treads
+											},
 										},
 									},
 									{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
