@@ -1729,56 +1729,217 @@ _.Zones =
 						i(40704),	-- Pride
 						i(40702),	-- Rolfsen's Ripper
 					}),
-					n(32515,  {	-- Braeg Stoutbeard <Fur & Leather Trader>
-						i(44553),	-- Pattern: Earthgiving Boots
-						i(44552),	-- Pattern: Earthgiving Legguards
-						i(44516),	-- Pattern: Eviscerator's Bindings
-						i(44515),	-- Pattern: Eviscerator's Chestguard
-						i(44513),	-- Pattern: Eviscerator's Facemask
-						i(44517),	-- Pattern: Eviscerator's Gauntlets
-						i(44519),	-- Pattern: Eviscerator's Legguards
-						i(44514),	-- Pattern: Eviscerator's Shoulderpads
-						i(44520),	-- Pattern: Eviscerator's Treads
-						i(44518),	-- Pattern: Eviscerator's Waistguard
-						i(44547),	-- Pattern: Giantmaim Bracers
-						i(44546),	-- Pattern: Giantmaim Legguards
-						i(44588),	-- Pattern: Icy Scale Belt
-						i(44589),	-- Pattern: Icy Scale Boots
-						i(44587),	-- Pattern: Icy Scale Chestguard
-						i(44526),	-- Pattern: Overcast Belt
-						i(44528),	-- Pattern: Overcast Boots
-						i(44524),	-- Pattern: Overcast Bracers
-						i(44523),	-- Pattern: Overcast Chestguard
-						i(44525),	-- Pattern: Overcast Handwraps
-						i(44521),	-- Pattern: Overcast Headguard
-						i(44527),	-- Pattern: Overcast Leggings
-						i(44522),	-- Pattern: Overcast Spaulders
-						i(44586),	-- Pattern: Polar Boots
-						i(44585),	-- Pattern: Polar Cord
-						i(44584),	-- Pattern: Polar Vest
-						i(44548),	-- Pattern: Revenant's Breastplate
-						i(44549),	-- Pattern: Revenant's Treads
-						i(44543),	-- Pattern: Stormhide Belt
-						i(44538),	-- Pattern: Stormhide Crown
-						i(44542),	-- Pattern: Stormhide Grips
-						i(44540),	-- Pattern: Stormhide Hauberk
-						i(44544),	-- Pattern: Stormhide Legguards
-						i(44539),	-- Pattern: Stormhide Shoulders
-						i(44545),	-- Pattern: Stormhide Stompers
-						i(44541),	-- Pattern: Stormhide Wristguards
-						i(44535),	-- Pattern: Swiftarrow Belt
-						i(44537),	-- Pattern: Swiftarrow Boots
-						i(44533),	-- Pattern: Swiftarrow Bracers
-						i(44534),	-- Pattern: Swiftarrow Gauntlets
-						i(44532),	-- Pattern: Swiftarrow Hauberk
-						i(44530),	-- Pattern: Swiftarrow Helm
-						i(44536),	-- Pattern: Swiftarrow Leggings
-						i(44531),	-- Pattern: Swiftarrow Shoulderguards
-						i(44551),	-- Pattern: Trollwoven Girdle
-						i(44550),	-- Pattern: Trollwoven Spaulders
-						i(44932),	-- Pattern: Windripper Boots
-						i(44933),	-- Pattern: Windripper Leggings
-					}),
+					{	-- Braeg Stoutbeard
+						["npcID"] = 32515,	-- Braeg Stoutbeard
+						["coords"] = {
+							{ 37.33, 28.69, 125 },
+						},
+						["g"] = {
+							{	-- Artic Fur
+								["itemID"] = 44128,	-- Artic Fur
+								["g"] = {
+									{	-- Pattern: Earthgiving Boots
+										["itemID"] = 44553,	-- Pattern: Earthgiving Boots
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Earthgiving Legguards
+										["itemID"] = 44552,	-- Pattern: Earthgiving Legguards
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Giantmaim Bracers
+										["itemID"] = 44547,	-- Pattern: Giantmaim Bracers
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Giantmaim Legguards
+										["itemID"] = 44546,	-- Pattern: Giantmaim Legguards
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Revenant's Breastplate
+										["itemID"] = 44548,	-- Pattern: Revenant's Breastplate
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Revenant's Treads
+										["itemID"] = 44549,	-- Pattern: Revenant's Treads
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Swiftarrow Belt
+										["itemID"] = 44535,	-- Pattern: Swiftarrow Belt
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Trollwoven Girdle
+										["itemID"] = 44551,	-- Pattern: Trollwoven Girdle
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Trollwoven Spaulders
+										["itemID"] = 44550,	-- Pattern: Trollwoven Spaulders
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Windripper Boots
+										["itemID"] = 44932,	-- Pattern: Windripper Boots
+										["description"] = "Cost: 2 Artic Fur",
+									},
+									{	-- Pattern: Windripper Leggings
+										["itemID"] = 44933,	-- Pattern: Windripper Leggings
+										["description"] = "Cost: 2 Artic Fur",
+									},
+								},
+							},
+							{	-- Heavy Borean Leather
+								["itemID"] = 38425,	-- Heavy Borean Leather
+								["g"] = {
+									{	-- Pattern: Icy Scale Belt
+										["itemID"] = 44588,	-- Pattern: Icy Scale Belt
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Icy Scale Boots
+										["itemID"] = 44589,	-- Pattern: Icy Scale Boots
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Icy Scale Chestguard
+										["itemID"] = 44587,	-- Pattern: Icy Scale Chestguard
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Polar Boots
+										["itemID"] = 44586,	-- Pattern: Polar Boots
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Polar Cord
+										["itemID"] = 44585,	-- Pattern: Polar Cord
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Polar Vest
+										["itemID"] = 44584,	-- Pattern: Polar Vest
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Bindings
+										["itemID"] = 44516,	-- Pattern: Eviscerator's Bindings
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Chestguard
+										["itemID"] = 44515,	-- Pattern: Eviscerator's Chestguard
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Facemask
+										["itemID"] = 44513,	-- Pattern: Eviscerator's Facemask
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Gauntlets
+										["itemID"] = 44517,	-- Pattern: Eviscerator's Gauntlets
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Legguards
+										["itemID"] = 44519,	-- Pattern: Eviscerator's Legguards
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Shoulderpads
+										["itemID"] = 44514,	-- Pattern: Eviscerator's Shoulderpads
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Treads
+										["itemID"] = 44520,	-- Pattern: Eviscerator's Treads
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Eviscerator's Waistguard
+										["itemID"] = 44518,	-- Pattern: Eviscerator's Waistguard
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Belt
+										["itemID"] = 44526,	-- Pattern: Overcast Belt
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Boots
+										["itemID"] = 44528,	-- Pattern: Overcast Boots
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Bracers
+										["itemID"] = 44524,	-- Pattern: Overcast Bracers
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Chestguard
+										["itemID"] = 44523,	-- Pattern: Overcast Chestguard
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Handwraps
+										["itemID"] = 44525,	-- Pattern: Overcast Handwraps
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Headguard
+										["itemID"] = 44521,	-- Pattern: Overcast Headguard
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Leggings
+										["itemID"] = 44527,	-- Pattern: Overcast Leggings
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Overcast Spaulders
+										["itemID"] = 44522,	-- Pattern: Overcast Spaulders
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Belt
+										["itemID"] = 44543,	-- Pattern: Stormhide Belt
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Crown
+										["itemID"] = 44538,	-- Pattern: Stormhide Crown
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Grips
+										["itemID"] = 44542,	-- Pattern: Stormhide Grips
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Hauberk
+										["itemID"] = 44540,	-- Pattern: Stormhide Hauberk
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Legguards
+										["itemID"] = 44544,	-- Pattern: Stormhide Legguards
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Shoulders
+										["itemID"] = 44539,	-- Pattern: Stormhide Shoulders
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Stompers
+										["itemID"] = 44545,	-- Pattern: Stormhide Stompers
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Stormhide Wristguards
+										["itemID"] = 44541,	-- Pattern: Stormhide Wristguards
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Boots
+										["itemID"] = 44537,	-- Pattern: Swiftarrow Boots
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Bracers
+										["itemID"] = 44533,	-- Pattern: Swiftarrow Bracers
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Gauntlets
+										["itemID"] = 44534,	-- Pattern: Swiftarrow Gauntlets
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Hauberk
+										["itemID"] = 44532,	-- Pattern: Swiftarrow Hauberk
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Helm
+										["itemID"] = 44530,	-- Pattern: Swiftarrow Helm
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Leggings
+										["itemID"] = 44536,	-- Pattern: Swiftarrow Leggings
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									{	-- Pattern: Swiftarrow Shoulderguards
+										["itemID"] = 44531,	-- Pattern: Swiftarrow Shoulderguards
+										["description"] = "Cost: 3 Heavy Borean Leather",
+									},
+									
+								},
+							},
+						},
+					},
 					n(29523,  {	-- Bragund Brightlink <Mail Armor Merchant>
 						i(50993),	-- Band of the Night Raven
 						i(50980),	-- Blizzard Keeper's Mitts
