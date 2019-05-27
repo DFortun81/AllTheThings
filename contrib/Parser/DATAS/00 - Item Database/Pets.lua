@@ -760,6 +760,7 @@ pet(10393, 55); 	-- Undercity Cockroach
 pet(93036, 1151); 	-- Unscathed Egg (Untamed Hatchling)
 pet(152981, 2092);	-- Unstable Tendril
 pet(139790, 1921); 	-- Untethered Wyrmling
+pet(169383, 2716);	-- Utility Mechanoclaw
 pet(153195, 2136);	-- Uuna
 pet(38658, 187); 	-- Vampiric Batling
 pet(120050, 1596);	-- Veilwatcher Hatchling

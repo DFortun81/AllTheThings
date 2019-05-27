@@ -20,6 +20,7 @@ _.Zones =
 						["coord"] = { 71.4, 32.3, 1462 },
 						["g"] = {
 							i(167751),	-- Mechanocat Laser Pointer
+							i(169383),	-- Utility Mechanoclaw
 						},
 					}),
 					n(150716, {	-- Stolen Royal Vendorbot
