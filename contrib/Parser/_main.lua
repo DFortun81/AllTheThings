@@ -631,23 +631,6 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-dr = function(dropRate, t)										-- Add a Drop Rate to an object.
-	if t and t.itemID then
-		t.dr = dropRate;
-		return t;
-	else
-		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
-		for i,group in pairs(t) do
-			if type(group) == "table" then
-				group.dr = dropRate;
-			end
-		end
-		return {
-			["bubble"] = true, -- This will tell the constructor to "bubble up" the objects in t.
-			["groups"] = t
-		};
-	end
-end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
