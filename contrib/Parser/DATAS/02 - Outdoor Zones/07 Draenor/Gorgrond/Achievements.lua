@@ -61,22 +61,22 @@ _.Zones =
 				ach(9654),		-- Mean and Green (Everbloom Wilds)
 				ach(9663),		-- Picky Palate (Everbloom Wilds)
 				ach(9658),		-- Pillars of Draenor (Everbloom Wilds)
-				ach(9564,  {	-- Securing Draenor (Alliance)
+				ach(9564, 9562, {	-- Securing Draenor [A] / [H]
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					["races"] = ALLIANCE_ONLY,
+					--["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(4),	-- Assault on the Pit
-						crit(5),	-- Assault on the Everbloom Wilds
+						crit(4),	-- Assault on the Pit  [A] / [H]
+						crit(5),	-- Assault on the Everbloom Wilds  [A] / [H]
 					},
 				}),
-				ach(9562,  {	-- Securing Draenor (Horde)
+				--[[ach(9562,  {	-- Securing Draenor (Horde)
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(5),		-- Assault on the Everbloom Wilds
 						crit(4),		-- Assault on the Pit
 					},
-				}),
+				}),]]
 			}),
 		}),	
 	}),

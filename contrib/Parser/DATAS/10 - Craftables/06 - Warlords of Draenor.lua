@@ -534,6 +534,7 @@ _.Craftables =
 					n(77789, {	-- Blingtron 5000
 						i(113258, {	-- Blingtron 5000 Gift Package
 							["questID"] = 34774,
+							["isDaily"] = true,
 							["groups"] = {
 								i(87250),	-- Depleted-Kyparium Rocket Mount
 								i(87251), 	-- Geosynchronous World Spinner Mount
