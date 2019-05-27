@@ -2056,20 +2056,53 @@ _.Zones =
 						i(48635),	-- Turalyon's Legguards of Conquest
 						i(48636),	-- Turalyon's Shoulderguards of Conquest
 					}),
-					n(28715,  {	-- Endora Moorehead <Magical Goods>
-						i(82470),	-- Ancient Tome of Portal: Dalaran [Mage only]
-						i(137294),	-- Dalaran Initiates' Pin Toy [Mage only]
-						i(136846),	-- Familiar Stone Toy [Mage only]
-						i(136797),	-- Mystical Tome: Arcane Linguist [Mage only]
-						i(167733),	-- Technique: Glyph of Dalaran Brilliance
-						un(2, i(44714)),	-- Tome of Dalaran Brilliance. Deprecated and removed in 7.0.3. Any existing copies were renamed to [Magic Consumed Book]. 
-						--i(136799),	-- Mystical Tome: Illusion [Mage only]
-						{
-							["itemID"] = 136799,	-- Mystical Tome: Illusion [Mage only]
-							["spellID"] = 131784	-- Illusion
+					{	-- Endora Moorehead
+						["npcID"] = 28715,	-- Endora Moorehead
+						["coords"] = {
+							{ 38.62, 55.57, 125 }
 						},
-						i(44709),	-- Tome of Polymorph: Black Cat [Mage only]
-					}),
+						["g"] = {
+							{	-- Ancient Tome of Portal: Dalaran [Mage only]
+								["itemID"] = 82470,		-- Ancient Tome of Portal: Dalaran
+								["spellID"] = 120146,	-- Ancient Portal: Dalaran
+								["collectible"] = true,
+							},
+							{	-- Dalaran Initiates' Pin Toy [Mage only]
+								["itemID"] = 137294,	-- Dalaran Initiates' Pin Toy
+							},
+							{	-- Familiar Stone Toy [Mage only]
+								["itemID"] = 136846,	-- Familiar Stone Toy
+							},
+							{	-- Mystical Tome: Arcane Linguist [Mage only]
+								["itemID"] = 136797,	-- Mystical Tome: Arcane Linguist
+								["spellID"] = 210086,	-- Arcane Linguist
+								["collectible"] = true,
+							},
+							
+							{	-- Mystical Tome: Illusion [Mage only]
+								["itemID"] = 136799,	-- Mystical Tome: Illusion
+								["spellID"] = 131784,	-- Illusion
+								["collectible"] = true,
+							},
+							{	-- Technique: Glyph of Dalaran Brilliance
+								["itemID"] = 167733,	-- Technique: Glyph of Dalaran Brilliance
+							},
+							{	-- Tome of Dalaran Brilliance
+								["itemID"] = 44714,		-- Tome of Dalaran Brilliance.
+								["u"] = 2,				-- Removed in 7.0.3
+								["g"] = {
+									{	-- Magic Consumed Book
+										["itemID"] = 44602,	-- Magic Consumed Book
+									},
+								},
+							},
+							{	-- Tome of Polymorph: Black Cat [Mage only]
+								["itemID"] = 44709,		-- Tome of Polymorph: Black Cat
+								["spellID"] = 61305,	-- Polymorph
+								["collectible"] = true,
+							},
+						},
+					},
 					n(40160,  {	-- Frozo the Renowned <Frozen Orb Trader>
 						["itemID"] = 43102,	-- Frozen Orb	Note!! This is the currency used for all items on this vendor!
 						["g"] = {
