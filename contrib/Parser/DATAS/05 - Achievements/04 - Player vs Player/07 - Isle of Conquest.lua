@@ -15,7 +15,7 @@ _.Achievements =
 	n(-9958, {	-- Player vs Player
 		["g"] = {
 			n(-9988, {	-- Isle of Conquest
-				-- ["maps"] = {  },	-- 
+				["maps"] = { 169 },	-- Isle of Conquest (normal BG)
 				["g"] = {
 					ach(3857, 3957, {	-- Master of Isle of Conquest (Alliance, Horde)
 						ach(3777, {			-- Isle of Conquest Veteran
