@@ -58,13 +58,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56267),	-- Periwinkle Cloak
 					i(56268),	-- Wrasse Handwraps
 					i(56270),	-- Entwined Nereis
-					nld({     	-- Legacy
-						un(2, i(55203)),	-- Lightning Whelk Axe (7.3.5 - Removed from Game!)
-						un(2, i(55198)),	-- Aurelian Mitre (7.3.5 - Removed from Game!)
-						un(2, i(55202)),	-- Periwinkle Cloak (7.3.5 - Removed from Game!)
-						un(2, i(55195)),	-- Wrasse Handwraps (7.3.5 - Removed from Game!)
-						un(2, i(55201)),	-- Entwined Nereis (7.3.5 - Removed from Game!)
-					}),	
+					un(2, i(55203)),	-- Lightning Whelk Axe (7.3.5 - Removed from Game!)
+					un(2, i(55198)),	-- Aurelian Mitre (7.3.5 - Removed from Game!)
+					un(2, i(55202)),	-- Periwinkle Cloak (7.3.5 - Removed from Game!)
+					un(2, i(55195)),	-- Wrasse Handwraps (7.3.5 - Removed from Game!)
+					un(2, i(55201)),	-- Entwined Nereis (7.3.5 - Removed from Game!)
 				})),
 				cr(40765, e(102, {	-- Commander Ulthok
 					i(56271),	-- Cerith Spire Staff
@@ -72,13 +70,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56272),	-- Harp Shell Pauldrons
 					i(56275),	-- Eagle Ray Cloak
 					i(56274),	-- Chromis Chestpiece
-					nld({     	-- Legacy
-						un(2, i(55228)),	-- Cerith Spire Staff (7.3.5 - Removed from Game!)
-						un(2, i(55204)),	-- Caridean Epaulettes (7.3.5 - Removed from Game!)
-						un(2, i(55207)),	-- Harp Shell Pauldrons (7.3.5 - Removed from Game!)
-						un(2, i(55206)),	-- Eagle Ray Cloak (7.3.5 - Removed from Game!)
-						un(2, i(55205)),	-- Chromis Chestpiece (7.3.5 - Removed from Game!)
-					}),	
+					un(2, i(55228)),	-- Cerith Spire Staff (7.3.5 - Removed from Game!)
+					un(2, i(55204)),	-- Caridean Epaulettes (7.3.5 - Removed from Game!)
+					un(2, i(55207)),	-- Harp Shell Pauldrons (7.3.5 - Removed from Game!)
+					un(2, i(55206)),	-- Eagle Ray Cloak (7.3.5 - Removed from Game!)
+					un(2, i(55205)),	-- Chromis Chestpiece (7.3.5 - Removed from Game!)
 				})),
 				cr(40788, e(103, {	-- Mindbender Ghur'sha
 					i(56278),	-- Anomuran Helm
@@ -86,12 +82,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56277),	-- Decapod Slippers
 					i(56276),	-- Anthia's Ring
 					i(56280),	-- Porcelain Crab
-					nld({     	-- Legacy
-						un(2, i(55229)),	-- Anomuran Helm (7.3.5 - Removed from Game!)
-						un(2, i(55235)),	-- Decapod Slippers (7.3.5 - Removed from Game!)
-						un(2, i(55236)),	-- Anthia's Ring (7.3.5 - Removed from Game!)
-						un(2, i(55237)),	-- Porcelain Crab (7.3.5 - Removed from Game!)
-					}),	
+					un(2, i(55229)),	-- Anomuran Helm (7.3.5 - Removed from Game!)
+					un(2, i(55235)),	-- Decapod Slippers (7.3.5 - Removed from Game!)
+					un(2, i(55236)),	-- Anthia's Ring (7.3.5 - Removed from Game!)
+					un(2, i(55237)),	-- Porcelain Crab (7.3.5 - Removed from Game!)
 				})),
 				cr(44566, e(104, {	-- Ozumat
 					{	-- Throne of the Tides
@@ -108,18 +102,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56282),	-- Nautilus Ring
 					i(56285),	-- Might of the Ocean
 					i(56290),	-- Sea Star
-					nld({     	-- Legacy
-						un(2, i(55252)),	-- Whitefin Axe (7.3.5 - Removed from Game!)
-						un(2, i(55259)),	-- Bioluminescent Lamp (7.3.5 - Removed from Game!)
-						un(2, i(55258)),	-- Pipefish Cord (7.3.5 - Removed from Game!)
-						un(2, i(55254)),	-- Abalone Plate Armor (7.3.5 - Removed from Game!)
-						un(2, i(55253)),	-- Wentletrap Vest (7.3.5 - Removed from Game!)
-						un(2, i(55255)),	-- Mnemiopsis Gloves (7.3.5 - Removed from Game!)
-						un(2, i(55249)),	-- Triton Legplates (7.3.5 - Removed from Game!)
-						un(2, i(55250)),	-- Nautilus Ring (7.3.5 - Removed from Game!)
-						un(2, i(55251)),	-- Might of the Ocean (7.3.5 - Removed from Game!)
-						un(2, i(55256)),	-- Sea Star (7.3.5 - Removed from Game!)
-					}),	
+					un(2, i(55252)),	-- Whitefin Axe (7.3.5 - Removed from Game!)
+					un(2, i(55259)),	-- Bioluminescent Lamp (7.3.5 - Removed from Game!)
+					un(2, i(55258)),	-- Pipefish Cord (7.3.5 - Removed from Game!)
+					un(2, i(55254)),	-- Abalone Plate Armor (7.3.5 - Removed from Game!)
+					un(2, i(55253)),	-- Wentletrap Vest (7.3.5 - Removed from Game!)
+					un(2, i(55255)),	-- Mnemiopsis Gloves (7.3.5 - Removed from Game!)
+					un(2, i(55249)),	-- Triton Legplates (7.3.5 - Removed from Game!)
+					un(2, i(55250)),	-- Nautilus Ring (7.3.5 - Removed from Game!)
+					un(2, i(55251)),	-- Might of the Ocean (7.3.5 - Removed from Game!)
+					un(2, i(55256)),	-- Sea Star (7.3.5 - Removed from Game!)
 				}))
 			}),
 			d( 2, {	-- Heroic

@@ -695,7 +695,6 @@ model = function(displayID, t)
 end
 na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
-nld = function(t) return n(-40, t); end						-- Legacy dungeon items header
 
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
 qart = function(t)						-- Gives a quest the Artifact Description

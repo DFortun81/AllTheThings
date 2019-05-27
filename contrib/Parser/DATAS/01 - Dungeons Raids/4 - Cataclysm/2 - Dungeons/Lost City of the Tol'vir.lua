@@ -101,13 +101,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56383),	-- Ionic Gloves
 						i(56381),	-- Greaves of Wu the Elder
 						i(56380),	-- Spirit Creeper Ring
-						nld({     	-- Legacy
-							un(2, i(55860)),	-- Siliza's Spear (7.3.5 - Removed from Game!)
-							un(2, i(55858)),	-- Kaleti Cloak (7.3.5 - Removed from Game!)
-							un(2, i(55857)),	-- Ionic Gloves (7.3.5 - Removed from Game!)
-							un(2, i(55856)),	-- Greaves of Wu the Elder (7.3.5 - Removed from Game!)
-							un(2, i(55859)),	-- Spirit Creeper Ring (7.3.5 - Removed from Game!)
-						}),	
+						un(2, i(55860)),	-- Siliza's Spear (7.3.5 - Removed from Game!)
+						un(2, i(55858)),	-- Kaleti Cloak (7.3.5 - Removed from Game!)
+						un(2, i(55857)),	-- Ionic Gloves (7.3.5 - Removed from Game!)
+						un(2, i(55856)),	-- Greaves of Wu the Elder (7.3.5 - Removed from Game!)
+						un(2, i(55859)),	-- Spirit Creeper Ring (7.3.5 - Removed from Game!)
 					},
 				}),
 				e(118, {	-- Lockmaw
@@ -118,13 +116,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56386),	-- Balkar's Waders (7.3.5 - Moved from High Prophet Barim)
 						i(56387),	-- Greaves of Wu the Younger (7.3.5 - Moved from High Prophet Barim)
 						i(56388),	-- Ring of the Darkest Day
-						nld({     	-- Legacy
-							un(2, i(55870)),	-- Barim's Main Gauche (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-							un(2, i(55864)),	-- Tauntka's Necklace (7.3.5 - Removed from Game)
-							un(2, i(55866)),	-- Sand Silk Wristband (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-							un(2, i(55867)),	-- Sand Dune Belt (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
-							un(2, i(55863)),	-- Ring of the Darkest Day (7.3.5 - Removed from Game)
-						}),
+						un(2, i(55870)),	-- Barim's Main Gauche (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
+						un(2, i(55864)),	-- Tauntka's Necklace (7.3.5 - Removed from Game)
+						un(2, i(55866)),	-- Sand Silk Wristband (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
+						un(2, i(55867)),	-- Sand Dune Belt (7.3.5 - Removed from Game And Moved to High Prophet Barim!)
+						un(2, i(55863)),	-- Ring of the Darkest Day (7.3.5 - Removed from Game)
 					},
 				}),
 				e(119, {	-- High Prophet Barim
@@ -138,13 +134,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56392),	-- Sand Dune Belt (7.3.5 - Moved from Lockmaw/Augh!)
 						i(56391),	-- Veneficial Band
 						i(56393),	-- Heart of Solace
-						nld({     	-- Legacy
-							un(2, i(55865)),	-- Resonant Kris (7.3.5 - Removed from Game And Moved to Lockmaw!)
-							un(2, i(55861)),	-- Balkar's Waders (7.3.5 - Removed from Game And Moved to Lockmaw!)
-							un(2, i(55862)),	-- Greaves of Wu the Younger (7.3.5 - Removed from Game And Moved to Lockmaw!)
-							un(2, i(55869)),	-- Veneficial Band (7.3.5 - Removed from Game)
-							un(2, i(55868)),	-- Heart of Solace (7.3.5 - Removed from Game)
-						}),
+						un(2, i(55865)),	-- Resonant Kris (7.3.5 - Removed from Game And Moved to Lockmaw!)
+						un(2, i(55861)),	-- Balkar's Waders (7.3.5 - Removed from Game And Moved to Lockmaw!)
+						un(2, i(55862)),	-- Greaves of Wu the Younger (7.3.5 - Removed from Game And Moved to Lockmaw!)
+						un(2, i(55869)),	-- Veneficial Band (7.3.5 - Removed from Game)
+						un(2, i(55868)),	-- Heart of Solace (7.3.5 - Removed from Game)
 					},
 				}),
 				e(122, {	-- Siamat
@@ -162,18 +156,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56398),	-- Ring of Three Lights
 						i(56400),	-- Sorrowsong
 						i(56394),	-- Tia's Grace
-						nld({     	-- Legacy
-							un(2, i(55875)),	-- Hammer of Sparks (7.3.5 - Removed from Game!)
-							un(2, i(55880)),	-- Zora's Ward (7.3.5 - Removed from Game!)
-							un(2, i(55876)),	-- Mantle of Master Cho (7.3.5 - Removed from Game!)
-							un(2, i(55872)),	-- Geordan's Cloak (7.3.5 - Removed from Game!)
-							un(2, i(55878)),	-- Evelyn's Belt (7.3.5 - Removed from Game!)
-							un(2, i(55877)),	-- Leggings of the Path (7.3.5 - Removed from Game!)
-							un(2, i(55871)),	-- Crafty's Gaiters (7.3.5 - Removed from Game!)
-							un(2, i(55873)),	-- Ring of Three Lights (7.3.5 - Removed from Game!)
-							un(2, i(55879)),	-- Sorrowsong (7.3.5 - Removed from Game!)
-							un(2, i(55874)),	-- Tia's Grace (7.3.5 - Removed from Game!)
-						}),
+						un(2, i(55875)),	-- Hammer of Sparks (7.3.5 - Removed from Game!)
+						un(2, i(55880)),	-- Zora's Ward (7.3.5 - Removed from Game!)
+						un(2, i(55876)),	-- Mantle of Master Cho (7.3.5 - Removed from Game!)
+						un(2, i(55872)),	-- Geordan's Cloak (7.3.5 - Removed from Game!)
+						un(2, i(55878)),	-- Evelyn's Belt (7.3.5 - Removed from Game!)
+						un(2, i(55877)),	-- Leggings of the Path (7.3.5 - Removed from Game!)
+						un(2, i(55871)),	-- Crafty's Gaiters (7.3.5 - Removed from Game!)
+						un(2, i(55873)),	-- Ring of Three Lights (7.3.5 - Removed from Game!)
+						un(2, i(55879)),	-- Sorrowsong (7.3.5 - Removed from Game!)
+						un(2, i(55874)),	-- Tia's Grace (7.3.5 - Removed from Game!)
 					},
 				}),
 			}),
