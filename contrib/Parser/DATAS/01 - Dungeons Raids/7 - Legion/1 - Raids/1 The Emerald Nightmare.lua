@@ -5,7 +5,7 @@ dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(768, { 	-- The Emerald Nightmare
 		["isRaid"] = true,
-		["lvl"] = 110,
+		["coord"] = { 56.3, 36.9, 641 },
 		["maps"] = {
 			777,
 			778,
@@ -21,7 +21,8 @@ _.Instances = { tier(7, {	-- Legion
 			788,
 			789
 		},
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(-68, {	-- The Emerald Dream
 				n(-25, {	-- Pet Battles
 					p(1722, {	-- Dream Whelpling
@@ -29,16 +30,16 @@ _.Instances = { tier(7, {	-- Legion
 					}),
 				}),
 			}),
-			d(17, {		-- LFR
+			d(17, {	-- LFR
 				n(-17, { 	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
+					["g"] = {
+						{	-- Cache of Nightmarish Treasures [Raid Finder]
 							["itemID"] = 139484,	-- Cache of Nightmarish Treasures [Raid Finder]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						},
-						{
+						{	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
 							["itemID"] = 139480,	-- Corrupted Egg Fragment [Raid Finder]
 							["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
 							["repeatable"] = true,
@@ -47,7 +48,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
 							["itemID"] = 140163,	-- Tainted Moonglade Leaf [Raid Finder]
 							["questID"] = 43902,	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
 							["repeatable"] = true,
@@ -56,7 +57,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Xavius [Raid Finder]
 							["itemID"] = 140164,	-- Vial of Swirling Shadow [Raid Finder]
 							["questID"] = 43903,	-- The Emerald Nightmare: Xavius [Raid Finder]
 							["repeatable"] = true,
@@ -67,10 +68,8 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+				n(0,   {	-- Zone Drop
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						i(141696),	-- Pendant of Liquid Horror
 						i(141694),	-- Gauntlets of Fractured Dreams
@@ -80,12 +79,10 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(10818, { 	-- Darkbough
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						cr(102672, e(1703, {	-- Nythendra
-							{
+							{	-- Darkbough (Nythendra)
 								["achievementID"] = 10818,	-- Darkbough
 								["criteriaID"] = 1,			-- Nythendra
 							},
@@ -107,7 +104,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139250),	-- Unwaking Slumber
 						})),
 						cr(106087, e(1744, {	-- Elerethe Renferal
-							{
+							{	-- Darkbough (Elerethe Renferal)
 								["achievementID"] = 10818,	-- Darkbough
 								["criteriaID"] = 2,			-- Elerethe Renferal
 							},
@@ -131,7 +128,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(137008),	-- Stormfury Diamond
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-							{
+							{	-- Darkbough (Il'gynoth, Heart of Corruption)
 								["achievementID"] = 10818,	-- Darkbough
 								["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
 							},
@@ -161,12 +158,10 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(10819, { 	-- Tormented Guardians
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						cr(100497, e(1667, {	-- Ursoc
-							{
+							{	-- Tormented Guardians (Ursoc)
 								["achievementID"] = 10819,	-- Tormented Guardians
 								["criteriaID"] = 1,			-- Ursoc
 							},
@@ -197,7 +192,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139261),	-- Tuft of Ironfur
 						})),
 						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-							{
+							{	-- Tormented Guardians (Dragons of Nightmare)
 								["achievementID"] = 10819,	-- Tormented Guardians
 								["criteriaID"] = 2,			-- Dragons of Nightmare
 							},
@@ -224,7 +219,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(138226),	-- Nightmare Engulfed Jewel
 						})),
 						cr(104636, e(1750, {	-- Cenarius
-							{
+							{	-- Tormented Guardians (Cenarius)
 								["achievementID"] = 10819,	-- Tormented Guardians
 								["criteriaID"] = 3,			-- Cenarius
 							},
@@ -249,9 +244,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(10820, { 	-- Rift of Aln
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
+					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 							i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3]
@@ -274,20 +267,20 @@ _.Instances = { tier(7, {	-- Legion
 							i(139269),	-- Crystallized Drop of Eternity
 							i(139266),	-- Fragment of Eternal Spite
 							i(139268),	-- Nightmarish Elm Branch
-						}))
+						})),
 					},
 				}),
 			}),
-			d(14, {		-- Normal
-				n(-17, { 	-- Quests
+			d(14, {	-- Normal
+				n(-17, {	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						{
+						{	-- Cache of Nightmarish Treasures [Normal]
 							["itemID"] = 139486,	-- Cache of Nightmarish Treasures [Normal]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						},
-						{
+						{	-- The Emerald Nightmare: Il'gynoth [Normal]
 							["itemID"] = 139481,	-- Corrupted Egg Fragment [Normal]
 							["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
 							["repeatable"] = true,
@@ -296,7 +289,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Fall of Cenarius [Normal]
 							["itemID"] = 140165,	-- Tainted Moonglade Leaf [Normal]
 							["questID"] = 43904,	-- The Emerald Nightmare: Fall of Cenarius [Normal]
 							["repeatable"] = true,
@@ -305,7 +298,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Xavius [Normal]
 							["itemID"] = 140166,	-- Vial of Swirling Shadow [Normal]
 							["questID"] = 43905,	-- The Emerald Nightmare: Xavius [Normal]
 							["repeatable"] = true,
@@ -314,14 +307,14 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Piercing the Veil
 							["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
 							["qg"] = 106482,	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -329,11 +322,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{
+					{	-- Buggy Fight
 						["achievementID"] = 10555,	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
 					},
-					{
+					{	-- Darkbough (Nythendra)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 1,			-- Nythendra
 					},
@@ -356,7 +349,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{
+					{	-- Darkbough (Il'gynoth, Heart of Corruption)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
 					},
@@ -385,7 +378,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
-					{
+					{	-- Darkbough (Elereth Renferal)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 2,			-- Elerethe Renferal
 					},
@@ -410,7 +403,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
-					{
+					{	-- Tormented Guardians (Ursoc)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 1,			-- Ursoc
 					},
@@ -442,7 +435,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
-					{
+					{	-- Tormented Guardians (Dragons of Nightmare)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 2,			-- Dragons of Nightmare
 					},
@@ -469,20 +462,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(138226),	-- Nightmare Engulfed Jewel
 				})),
 				cr(104636, e(1750, {	-- Cenarius
-					{
-						["achievementID"] = 10772,	-- Use the Force(s)
-						["groups"] = {
-							crit(1),	-- Dryads Uncleansed
-							crit(2),	-- Treants Uncleansed
-							crit(3),	-- Wisps Uncleansed
-							crit(4),	-- Drakes Uncleansed
-						},
-					},
-					{
+					ach(10772, {	-- Use the Force(s)
+						crit(1),	-- Dryads Uncleansed
+						crit(2),	-- Treants Uncleansed
+						crit(3),	-- Wisps Uncleansed
+						crit(4),	-- Drakes Uncleansed
+					}),
+					{	-- Tormented Guardians (Cenarius)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 3,			-- Cenarius
 					},
-					{
+					{	-- The Emerald Nightmare: Piercing the Veil
 						["itemID"] = 141303,	-- Essence of Clarity
 						["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
 					},
@@ -529,16 +519,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(139268),	-- Nightmarish Elm Branch
 				})),
 			}),
-			d(15, {		-- Heroic
-				n(-17, { 	-- Quests
+			d(15, {	-- Heroic
+				n(-17, {	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						{
+						{	-- Cache of Nightmarish Treasures [Heroic]
 							["itemID"] = 139487,	-- Cache of Nightmarish Treasures [Heroic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						},
-						{
+						{	-- The Emerald Nightmare: Il'gynoth [Heroic]
 							["itemID"] = 139482,	-- Corrupted Egg Fragment [Heroic]
 							["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
 							["repeatable"] = true,
@@ -547,7 +537,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
 							["itemID"] = 140167,	-- Tainted Moonglade Leaf [Heroic]
 							["questID"] = 43906,	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
 							["repeatable"] = true,
@@ -556,7 +546,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Xavius [Heroic]
 							["itemID"] = 140168,	-- Vial of Swirling Shadow [Heroic]
 							["questID"] = 43907,	-- The Emerald Nightmare: Xavius [Heroic]
 							["repeatable"] = true,
@@ -565,14 +555,14 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 							["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 							["qg"] = 106482,	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -580,11 +570,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{
+					{	-- Buggy Fight
 						["achievementID"] = 10555,	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
 					},
-					{
+					{	-- Darkbough (Nythendra)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 1,			-- Nythendra
 					},
@@ -607,7 +597,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{
+					{	-- Darkbough (Il'gynoth)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
 					},
@@ -636,7 +626,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
-					{
+					{	-- Darkbough (Elerethe Renferal)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 2,			-- Elerethe Renferal
 					},
@@ -661,7 +651,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
-					{
+					{	-- Tormented Guardians (Ursoc)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 1,			-- Ursoc
 					},
@@ -693,7 +683,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
-					{
+					{	-- Tormented Guardians (Dragons of Nightmare)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 2,			-- Dragons of Nightmare
 					},
@@ -720,20 +710,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(138226),	-- Nightmare Engulfed Jewel
 				})),
 				cr(104636, e(1750, {	-- Cenarius
-					{
-						["achievementID"] = 10772,	-- Use the Force(s)
-						["groups"] = {
-							crit(1),	-- Dryads Uncleansed
-							crit(2),	-- Treants Uncleansed
-							crit(3),	-- Wisps Uncleansed
-							crit(4),	-- Drakes Uncleansed
-						},
-					},
-					{
+					ach(10772, {	-- Use the Force(s)
+						crit(1),	-- Dryads Uncleansed
+						crit(2),	-- Treants Uncleansed
+						crit(3),	-- Wisps Uncleansed
+						crit(4),	-- Drakes Uncleansed
+					}),
+					{	-- Tormented Guardians (Cenarius)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 3,			-- Cenarius
 					},
-					{
+					{	-- The Emerald Nightmare: Piercing the Veil
 						["itemID"] = 141304,	-- Essence of Clarity [Heroic]
 						["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 					},
@@ -756,7 +743,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139264),	-- Uplifting Emerald
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
-					{
+					{	-- Ahead of the Curve: Xavius
 						["achievementID"] = 11194,	-- Ahead of the Curve: Xavius
 						["u"] = 2,	-- Legacy Achievement
 					},
@@ -785,16 +772,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(139268),	-- Nightmarish Elm Branch
 				})),
 			}),
-			d(16, {		-- Mythic
-				n(-17, { 	-- Quests
+			d(16, {	-- Mythic
+				n(-17, {	-- Quests
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
-						{
+						{	-- Cache of Nightmarish Treasures [Mythic]
 							["itemID"] = 139488,	-- Cache of Nightmarish Treasures [Mythic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						},
-						{
+						{	-- The Emerald Nightmare: Il'gynoth [Mythic]
 							["itemID"] = 139483,	-- Corrupted Egg Fragment [Mythic]
 							["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
 							["repeatable"] = true,
@@ -803,7 +790,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
 							["itemID"] = 140169,	-- Tainted Moonglade Leaf [Mythic]
 							["questID"] = 43908,	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
 							["repeatable"] = true,
@@ -812,7 +799,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Xavius [Mythic]
 							["itemID"] = 140170,	-- Vial of Swirling Shadow [Mythic]
 							["questID"] = 43909,	-- The Emerald Nightmare: Xavius [Mythic]
 							["repeatable"] = true,
@@ -821,14 +808,14 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						},
-						{
+						{	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 							["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 							["qg"] = 106482,	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(0,   {	-- Zone Drop
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -836,12 +823,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{
+					{	-- Buggy Fight
 						["achievementID"] = 10555,	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
 					},
 					ach(10821),	-- Mythic: Nythendra
-					{
+					{	-- Darkbough (Nythendra)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 1,			-- Nythendra
 					},
@@ -864,7 +851,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{
+					{	-- Darkbough (Il'gynoth)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
 					},
@@ -894,7 +881,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
 					ach(10822),	-- Mythic: Elerethe Renferal
-					{
+					{	-- Darkbough (Elerethe Renferal)
 						["achievementID"] = 10818,	-- Darkbough
 						["criteriaID"] = 2,			-- Elerethe Renferal
 					},
@@ -920,7 +907,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
 					ach(10824),	-- Mythic: Ursoc
-					{
+					{	-- Tormented Guardians (Ursoc)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 1,			-- Ursoc
 					},
@@ -953,7 +940,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
 					ach(10825),	-- Mythic: Dragons of Nightmare
-					{
+					{	-- Tormented Guardians (Dragons of Nightmare)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 2,			-- Dragons of Nightmare
 					},
@@ -980,21 +967,18 @@ _.Instances = { tier(7, {	-- Legion
 					i(138226),	-- Nightmare Engulfed Jewel
 				})),
 				cr(104636, e(1750, {	-- Cenarius
-					{
-						["achievementID"] = 10772,	-- Use the Force(s)
-						["groups"] = {
-							crit(1),	-- Dryads Uncleansed
-							crit(2),	-- Treants Uncleansed
-							crit(3),	-- Wisps Uncleansed
-							crit(4),	-- Drakes Uncleansed
-						},
-					},
+					ach(10772, {	-- Use the Force(s)
+						crit(1),	-- Dryads Uncleansed
+						crit(2),	-- Treants Uncleansed
+						crit(3),	-- Wisps Uncleansed
+						crit(4),	-- Drakes Uncleansed
+					}),
 					ach(10826),	-- Mythic: Cenarius
-					{
+					{	-- Tormented Guardians (Cenarius)
 						["achievementID"] = 10819,	-- Tormented Guardians
 						["criteriaID"] = 3,			-- Cenarius
 					},
-					{
+					{	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 						["itemID"] = 141305,	-- Essence of Clarity [Mythic]
 						["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 					},
@@ -1017,15 +1001,15 @@ _.Instances = { tier(7, {	-- Legion
 					i(139264),	-- Uplifting Emerald
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
-					{
+					{	-- Ahead of the Curve: Xavius
 						["achievementID"] = 11194,	-- Ahead of the Curve: Xavius
 						["u"] = 2,	-- Legacy Achievement
 					},
-					{
+					{	-- Cutting Edge: Xavius
 						["achievementID"] = 11191,	-- Cutting Edge: Xavius
 						["u"] = 2,	-- Legacy Achievement
 					},
-					{
+					{	-- Realm First! Xavius
 						["achievementID"] = 10854,	-- Realm First! Xavius
 						["u"] = 2,	-- Legacy Achievement
 					},
