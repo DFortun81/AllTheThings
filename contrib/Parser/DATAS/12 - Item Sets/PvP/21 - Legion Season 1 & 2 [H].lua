@@ -1169,6 +1169,42 @@ _.GearSets =
 										["itemID"] = 136173,	-- Vindictive Gladiator's Chain Treads
 										["u"] = 14,				-- Elite PvP Filter
 									},
+									{	-- Fearless Gladiator's Chain Helm
+										["itemID"] = 143144,	-- Fearless Gladiator's Chain Helm
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Spaulders
+										["itemID"] = 143146,	-- Fearless Gladiator's Chain Spaulders
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Drape of the Tracker
+										["itemID"] = 143221,	-- Fearless Gladiator's Drape of the Tracker
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Armor
+										["itemID"] = 143141,	-- Fearless Gladiator's Chain Armor
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Armband
+										["itemID"] = 143148,	-- Fearless Gladiator's Chain Armband
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Gauntlets
+										["itemID"] = 143143,	-- Fearless Gladiator's Chain Gauntlets
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Clasp
+										["itemID"] = 143147,	-- Fearless Gladiator's Chain Clasp
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Leggings
+										["itemID"] = 143145,	-- Fearless Gladiator's Chain Leggings
+										["u"] = 14,				-- Elite PvP Filter
+									},
+									{	-- Fearless Gladiator's Chain Treads
+										["itemID"] = 143142,	-- Fearless Gladiator's Chain Treads
+										["u"] = 14,				-- Elite PvP Filter
+									},
 								},
 							},
 							gs(1131, {	-- Vindictive Gladiator's Ringmail Armor
