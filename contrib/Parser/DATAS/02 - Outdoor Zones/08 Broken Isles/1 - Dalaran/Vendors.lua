@@ -1124,6 +1124,33 @@ _.Zones =
 											{	-- Cruel Combatant's Chain Treads
 												["itemID"] = 145101,	-- Cruel Combatant's Chain Treads
 											},
+											{	-- Ferocious Combatant's Chain Helm
+												["itemID"] = 145947,	-- Ferocious Combatant's Chain Helm
+											},
+											{	-- Ferocious Combatant's Chain Spaulders
+												["itemID"] = 145951,	-- Ferocious Combatant's Chain Spaulders
+											},
+											{	-- Ferocious Combatant's Drape of the Tracker
+												["itemID"] = 145875,	-- Ferocious Combatant's Drape of the Tracker
+											},
+											{	-- Ferocious Combatant's Chain Armor
+												["itemID"] = 145941,	-- Ferocious Combatant's Chain Armor
+											},
+											{	-- Ferocious Combatant's Chain Armband
+												["itemID"] = 145955,	-- Ferocious Combatant's Chain Armband
+											},
+											{	-- Ferocious Combatant's Chain Gauntlets
+												["itemID"] = 145945,	-- Ferocious Combatant's Chain Gauntlets
+											},
+											{	-- Ferocious Combatant's Chain Clasp
+												["itemID"] = 145953,	-- Ferocious Combatant's Chain Clasp
+											},
+											{	-- Ferocious Combatant's Chain Leggings
+												["itemID"] = 145949,	-- Ferocious Combatant's Chain Leggings
+											},
+											{	-- Ferocious Combatant's Chain Treads
+												["itemID"] = 145943,	-- Ferocious Combatant's Chain Treads
+											},
 										},
 									},
 									{	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
@@ -10511,6 +10538,42 @@ _.Zones =
 											},
 											{	-- Cruel Gladiator's Chain Treads
 												["itemID"] = 144855,	-- Cruel Gladiator's Chain Treads
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Helm
+												["itemID"] = 145701,	-- Ferocious Gladiator's Chain Helm
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Spaulders
+												["itemID"] = 145705,	-- Ferocious Gladiator's Chain Spaulders
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Drape of the Tracker
+												["itemID"] = 145629,	-- Ferocious Gladiator's Drape of the Tracker
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Armor
+												["itemID"] = 145695,	-- Ferocious Gladiator's Chain Armor
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Armband
+												["itemID"] = 145709,	-- Ferocious Gladiator's Chain Armband
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Gauntlets
+												["itemID"] = 145699,	-- Ferocious Gladiator's Chain Gauntlets
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Clasp
+												["itemID"] = 145707,	-- Ferocious Gladiator's Chain Clasp
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Leggings
+												["itemID"] = 145703,	-- Ferocious Gladiator's Chain Leggings
+												["u"] = 14,				-- Elite PvP Filter
+											},
+											{	-- Ferocious Gladiator's Chain Treads
+												["itemID"] = 145697,	-- Ferocious Gladiator's Chain Treads
 												["u"] = 14,				-- Elite PvP Filter
 											},
 										},
