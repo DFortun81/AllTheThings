@@ -44,7 +44,9 @@ _.Achievements =
 					{	-- Leeeeeeeeeeeeeroy...?
 						["achievementID"] = 9058,	-- Leeeeeeeeeeeeeroy...?
 						["groups"] = {
-							style(2, title(110)),	-- Jenkins
+							title(110, {	-- Jenkins
+								["style"] = 2,
+							}),
 							follower(178),	-- Leeroy Jenkins
 						},
 					},

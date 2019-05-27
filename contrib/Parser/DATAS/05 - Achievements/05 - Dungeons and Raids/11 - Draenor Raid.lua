@@ -84,7 +84,9 @@ _.Achievements =
 					}),
 					ach(8956),		-- Mythic: Beastlord Darmac
 					ach(8973, {		-- Mythic: Blackhand's Crucible
-						style(2, title(301)),	-- Ironbane
+						title(301, {	-- Ironbane
+							["style"] = 2,
+						}),
 					}),
 					ach(8970),		-- Mythic: Blast Furnace
 					ach(8962),		-- Mythic: Brackenspore
