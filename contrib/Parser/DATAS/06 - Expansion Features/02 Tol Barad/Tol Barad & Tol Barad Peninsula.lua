@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			}),
 			n(-16, { 	-- Rare
 				n(47676, { 	-- Baradin Fox
-					dr(0.1, i(64403)),  -- Fox Kit Pet
+					i(64403),  -- Fox Kit Pet
 				}),
 			}),
 			n(-38, { 	-- Profession

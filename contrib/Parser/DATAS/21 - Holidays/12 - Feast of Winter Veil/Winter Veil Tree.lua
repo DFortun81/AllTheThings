@@ -13,9 +13,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 					q(8744, { 	-- A Carefully Wrapped Present
 						["groups"] = {
 							i(21191, {	-- Carefully Wrapped Present
-								un(29, dr(5.0, i(116451))),	-- Warm Blue Woolen Socks
-								un(29, dr(5.0, i(116450))),	-- Warm Green Woolen Socks
-								un(29, dr(5.0, i(116448))),	-- Warm Red Woolen Socks
+								un(29, i(116451)),	-- Warm Blue Woolen Socks
+								un(29, i(116450)),	-- Warm Green Woolen Socks
+								un(29, i(116448)),	-- Warm Red Woolen Socks
 								un(29, i(128650)),	-- "Merry Munchkin" Costume
 								un(29, i(21254)),	-- Winter Veil Cookie
 							}),

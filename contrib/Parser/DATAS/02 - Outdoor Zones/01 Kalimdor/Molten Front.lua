@@ -379,7 +379,7 @@ _.Zones =
 									i(70153),	-- Thunder Bluff Writ of Commendation
 									i(70154),	-- Undercity Writ of Commendation
 									i(71631, {	-- Zen'Vorka's Cache
-										dr(5, i(34955)),	-- Scorched Stone
+										i(34955),	-- Scorched Stone
 										i(55405),	-- Blackwolf Amulet
 										i(55315),	-- Blackwolf Cloak
 										i(55378),	-- Blackwolf Crystal

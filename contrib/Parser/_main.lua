@@ -631,23 +631,6 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-dr = function(dropRate, t)										-- Add a Drop Rate to an object.
-	if t and t.itemID then
-		t.dr = dropRate;
-		return t;
-	else
-		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
-		for i,group in pairs(t) do
-			if type(group) == "table" then
-				group.dr = dropRate;
-			end
-		end
-		return {
-			["bubble"] = true, -- This will tell the constructor to "bubble up" the objects in t.
-			["groups"] = t
-		};
-	end
-end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
@@ -661,16 +644,6 @@ qg = function(id, t)											-- Add a Quest Giver to an object.
 	return t;
 end
 qgs = qg;														-- Add a Quest Giver to an object. (Alternative)
-races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
-sq = function(id, t)											-- Add a 'sourceQuests' field to an object.
-	if type(id) == "number" then
-		t.sourceQuest = id;
-	else
-		t.sourceQuests = id;
-	end
-	return t;
-end
-style = function(s, t) t.style = s; return t; end				-- Stylize an object.
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
 

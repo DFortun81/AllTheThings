@@ -94,15 +94,15 @@ _.Zones =
 									["groups"] = {
 										i(32535),	-- Gift of the Talonpriests
 										i(32534),	-- Brooch of the Immortal King
-										dr(13, i(31564)),	--	Skystalker's Leggings
-										dr(12, i(31580)),	--	Slatesteel Leggings
-										dr(12, i(31556)),	--	Windchanneller's Leggings
-										dr(11, i(31572)),	--	Mistshroud Pants
-										dr(10, i(32536)),	--	Terokk's Gavel
-										dr(9, i(32537)),	--	Terokk's Gavel
-										dr(9, i(32782)),	--	Time-Lost Figurine
-										dr(6, i(32540)),	--	Terokk's Might
-										dr(5, i(32541)),	--	Terokk's Wisdom
+										i(31564),	--	Skystalker's Leggings
+										i(31580),	--	Slatesteel Leggings
+										i(31556),	--	Windchanneller's Leggings
+										i(31572),	--	Mistshroud Pants
+										i(32536),	--	Terokk's Gavel
+										i(32537),	--	Terokk's Gavel
+										i(32782),	--	Time-Lost Figurine
+										i(32540),	--	Terokk's Might
+										i(32541),	--	Terokk's Wisdom
 									},
 								}),
 							},	
@@ -124,16 +124,16 @@ _.Zones =
 									},
 									["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk description for more info.",
 									["groups"] = {
-										dr(20, i(32529)),	-- Heretic's Gauntlets
-										dr(6, i(31571)),	-- Mistshroud Belt
-										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32529),	-- Heretic's Gauntlets
+										i(31571),	-- Mistshroud Belt
+										i(31574),	-- Mistshroud Bracers
 										i(32514),	-- Skettis Band
-										dr(6, i(31566)),	-- Skystalker's Bracers
-										dr(6, i(31582)),	-- Slatesteel Bracers
-										dr(6, i(31579)),	-- Slatesteel Girdle
-										dr(6, i(31558)),	-- Windchanneller's Bindings
-										dr(6, i(31555)),	-- Windchanneller's Ceinture
-										dr(5, i(31563)),	-- Skystalker's Cord
+										i(31566),	-- Skystalker's Bracers
+										i(31582),	-- Slatesteel Bracers
+										i(31579),	-- Slatesteel Girdle
+										i(31558),	-- Windchanneller's Bindings
+										i(31555),	-- Windchanneller's Ceinture
+										i(31563),	-- Skystalker's Cord
 										i(32715),	-- Akkarai's Talons
 									},	
 								}),
@@ -152,15 +152,15 @@ _.Zones =
 									["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk description for more info.",	
 									["groups"] = {
 										i(32531),	-- Gezzarak's Fang
-										dr(6, i(31571)),	-- Mistshroud Belt
-										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(31571),	-- Mistshroud Belt
+										i(31574),	-- Mistshroud Bracers
 										i(32514),	-- Skettis Band
-										dr(6, i(31566)),	-- Skystalker's Bracers
-										dr(6, i(31563)),	-- Skystalker's Cord							
-										dr(6, i(31582)),	-- Slatesteel Bracers
-										dr(6, i(31579)),	-- Slatesteel Girdle
-										dr(6, i(31558)),	-- Windchanneller's Bindings
-										dr(6, i(31555)),	-- Windchanneller's Ceinture
+										i(31566),	-- Skystalker's Bracers
+										i(31563),	-- Skystalker's Cord							
+										i(31582),	-- Slatesteel Bracers
+										i(31579),	-- Slatesteel Girdle
+										i(31558),	-- Windchanneller's Bindings
+										i(31555),	-- Windchanneller's Ceinture
 										i(32716),	-- Gazzarak's Claws
 									},				
 								}),
@@ -178,16 +178,16 @@ _.Zones =
 									},
 									["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk description for more info.",					
 									["groups"] = {
-										dr(20, i(32533)),	-- Karrog's Shard
-										dr(6, i(31571)),	-- Mistshroud Belt
-										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32533),	-- Karrog's Shard
+										i(31571),	-- Mistshroud Belt
+										i(31574),	-- Mistshroud Bracers
 										i(32514),	-- Skettis Band
-										dr(6, i(31566)),	-- Skystalker's Bracers
-										dr(6, i(31563)),	-- Skystalker's Cord							
-										dr(6, i(31582)),	-- Slatesteel Bracers
-										dr(6, i(31579)),	-- Slatesteel Girdle
-										dr(6, i(31558)),	-- Windchanneller's Bindings
-										dr(6, i(31555)),	-- Windchanneller's Ceinture
+										i(31566),	-- Skystalker's Bracers
+										i(31563),	-- Skystalker's Cord							
+										i(31582),	-- Slatesteel Bracers
+										i(31579),	-- Slatesteel Girdle
+										i(31558),	-- Windchanneller's Bindings
+										i(31555),	-- Windchanneller's Ceinture
 										i(32717),	-- Karro's Spine
 									},
 								}),
@@ -205,16 +205,16 @@ _.Zones =
 									},
 									["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk description for more info.",
 									["groups"] = {
-										dr(20, i(32532)),	-- Windrager's Coils
-										dr(6, i(31571)),	-- Mistshroud Belt
-										dr(6, i(31574)),	-- Mistshroud Bracers
+										i(32532),	-- Windrager's Coils
+										i(31571),	-- Mistshroud Belt
+										i(31574),	-- Mistshroud Bracers
 										i(32514),	-- Skettis Band
-										dr(6, i(31566)),	-- Skystalker's Bracers							
-										dr(6, i(31582)),	-- Slatesteel Bracers
-										dr(6, i(31579)),	-- Slatesteel Girdle
-										dr(6, i(31558)),	-- Windchanneller's Bindings
-										dr(6, i(31555)),	-- Windchanneller's Ceinture	
-										dr(5, i(31563)),	-- Skystalker's Cord
+										i(31566),	-- Skystalker's Bracers							
+										i(31582),	-- Slatesteel Bracers
+										i(31579),	-- Slatesteel Girdle
+										i(31558),	-- Windchanneller's Bindings
+										i(31555),	-- Windchanneller's Ceinture	
+										i(31563),	-- Skystalker's Cord
 										i(32718),	-- Vakkiz's Scale
 									},
 								}),

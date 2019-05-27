@@ -857,16 +857,16 @@ _.Zones =
 				}),	
 				n(-16, {	-- Rares
 					n(50062, {	-- Aeonaxx <Mate of Aeosera>
-						dr(100.0, i(63042)),	-- Reins of the Phosphorescent Stone Drake
+						i(63042),	-- Reins of the Phosphorescent Stone Drake
 					}), 
 					n(50059, {	-- Golgarok <The Crimson Shatterer>
-						dr(100.0, i(67237)),	-- Golgarok's Tenderized Treads
+						i(67237),	-- Golgarok's Tenderized Treads
 					}), 
 					n(49822, {	-- Jadefang
-						dr(100.0, i(64494)),	-- Tiny Shale Spider
+						i(64494),	-- Tiny Shale Spider
 					}), 
 					n(50060, {	-- Terborus
-						dr(100.0, i(67238)),	-- Terborus's Rotating Bands
+						i(67238),	-- Terborus's Rotating Bands
 					}),
 				}),
 				n(-2, {	-- Vendors

@@ -1711,15 +1711,15 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							ach(263),	-- Ice the Frost Lord
 							un(21, i(149753, {	-- Knapsack of Chilled Goods [Uncommon Quality]
 								["groups"] = {
-									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
+									un(21, i(117373)),	-- Frostscythe of Lord Ahune
 								},
 								["lvl"] = 23,
 							})),
 							un(21, i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 								["groups"] = {
-									un(21, dr(6, i(138838))), 	-- Illusion: Deathfrost
-									un(21, dr(5, i(117373))),	-- Frostscythe of Lord Ahune
-									un(21, dr(3, i(53641))), 	-- Ice Chip (Pet)
+									un(21, i(138838)), 	-- Illusion: Deathfrost
+									un(21, i(117373)),	-- Frostscythe of Lord Ahune
+									un(21, i(53641)), 	-- Ice Chip (Pet)
 								},
 								["lvl"] = 98,
 							})),

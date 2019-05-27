@@ -1033,7 +1033,7 @@ _.Zones =
 									n(102347, {
 										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
 										["g"] = {
-											dr(95, i(133710)), 	-- Salmon Lure
+											i(133710), 	-- Salmon Lure
 										},
 									}),
 								},

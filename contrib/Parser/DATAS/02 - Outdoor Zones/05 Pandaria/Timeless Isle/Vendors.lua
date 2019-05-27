@@ -211,7 +211,6 @@ _.Zones =
 										["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 										["criteriaID"] = 46,		-- Bonkers [Criteria]
 										["itemID"] = 104202,	-- Bonkers [Item]
-										["dr"] = 1.6,
 									},
 								}),
 							},

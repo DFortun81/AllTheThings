@@ -470,412 +470,412 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous
-						dr(04.0, i(7412)),	-- Infiltrator Gloves
-						dr(04.0, i(6609)),	-- Sage's Cloth
-						dr(03.0, i(10409)),	-- Banded Boots
-						dr(03.0, i(9841)),	-- Banded Leggings
-						dr(03.0, i(9842)),	-- Banded Pauldrons
-						dr(03.0, i(10289)),	-- Durable Hat
-						dr(03.0, i(9824)),	-- Durable Shoulders
-						dr(03.0, i(7357)),	-- Elder's Hat
-						dr(03.0, i(7406)),	-- Infiltrator Cord
-						dr(03.0, i(6616)),	-- Sage's Pants
-						dr(03.0, i(9834)),	-- Scaled Leather Shoulders
-						dr(02.0, i(10408)),	-- Banded Helm
-						dr(02.0, i(7366)),	-- Elder's Gloves
-						dr(02.0, i(7410)),	-- Infiltrator Bracers
-						dr(02.0, i(7416)),	-- Phalanx Bracers
-						dr(02.0, i(7422)),	-- Phalanx Girdle
-						dr(02.0, i(10288)),	-- Sage's Circlet
-						dr(02.0, i(6610)),	-- Sage's Robe
-						dr(02.0, i(9828)),	-- Scaled Leather Boots
-						dr(02.0, i(10406)),	-- Scaled Leather Headband
-						dr(01.9, i(7355)),	-- Elder's Bracers
-						dr(01.8, i(7409)),	-- Infiltrator Boots
-						dr(01.8, i(7411)),	-- Infiltrator Cloak
-						dr(01.7, i(9840)),	-- Banded Girdle
-						dr(01.7, i(7370)),	-- Elder's Sash
-						dr(01.7, i(7408)),	-- Infiltrator Shoulders
-						dr(01.6, i(7420)),	-- Phalanx Headguard
-						dr(01.5, i(9823)),	-- Durable Gloves
-						dr(01.5, i(7460)),	-- Knight's Cloak
-						dr(01.5, i(9832)),	-- Scaled Leather Gloves
-						dr(01.4, i(9839)),	-- Banded Gauntlets
-						dr(01.4, i(9820)),	-- Durable Boots
-						dr(01.2, i(9857)),	-- Archer's Bracers
-						dr(01.2, i(9819)),	-- Durable Tunic
-						dr(01.2, i(7354)),	-- Elder's Boots
-						dr(01.2, i(9835)),	-- Scaled Leather Tunic
-						dr(01.1, i(7413)),	-- Infiltrator Cap
-						dr(01.1, i(7423)),	-- Phalanx Leggings
-						dr(01.0, i(9860)),	-- Archer's Cloak
-						dr(01.0, i(9825)),	-- Durable Pants
-						dr(01.0, i(7353)),	-- Elder's Padded Armor
-						dr(01.0, i(7368)),	-- Elder's Pants
-						dr(01.0, i(7414)),	-- Infiltrator Pants
-						dr(01.0, i(7424)),	-- Phalanx Spaulders
-						dr(01.0, i(9865)),	-- Renegade Bracers
-						dr(01.0, i(9833)),	-- Scaled Leather Leggings					
+						i(7412),	-- Infiltrator Gloves
+						i(6609),	-- Sage's Cloth
+						i(10409),	-- Banded Boots
+						i(9841),	-- Banded Leggings
+						i(9842),	-- Banded Pauldrons
+						i(10289),	-- Durable Hat
+						i(9824),	-- Durable Shoulders
+						i(7357),	-- Elder's Hat
+						i(7406),	-- Infiltrator Cord
+						i(6616),	-- Sage's Pants
+						i(9834),	-- Scaled Leather Shoulders
+						i(10408),	-- Banded Helm
+						i(7366),	-- Elder's Gloves
+						i(7410),	-- Infiltrator Bracers
+						i(7416),	-- Phalanx Bracers
+						i(7422),	-- Phalanx Girdle
+						i(10288),	-- Sage's Circlet
+						i(6610),	-- Sage's Robe
+						i(9828),	-- Scaled Leather Boots
+						i(10406),	-- Scaled Leather Headband
+						i(7355),	-- Elder's Bracers
+						i(7409),	-- Infiltrator Boots
+						i(7411),	-- Infiltrator Cloak
+						i(9840),	-- Banded Girdle
+						i(7370),	-- Elder's Sash
+						i(7408),	-- Infiltrator Shoulders
+						i(7420),	-- Phalanx Headguard
+						i(9823),	-- Durable Gloves
+						i(7460),	-- Knight's Cloak
+						i(9832),	-- Scaled Leather Gloves
+						i(9839),	-- Banded Gauntlets
+						i(9820),	-- Durable Boots
+						i(9857),	-- Archer's Bracers
+						i(9819),	-- Durable Tunic
+						i(7354),	-- Elder's Boots
+						i(9835),	-- Scaled Leather Tunic
+						i(7413),	-- Infiltrator Cap
+						i(7423),	-- Phalanx Leggings
+						i(9860),	-- Archer's Cloak
+						i(9825),	-- Durable Pants
+						i(7353),	-- Elder's Padded Armor
+						i(7368),	-- Elder's Pants
+						i(7414),	-- Infiltrator Pants
+						i(7424),	-- Phalanx Spaulders
+						i(9865),	-- Renegade Bracers
+						i(9833),	-- Scaled Leather Leggings
 					}), 
 					n(8213, { 	-- Ironback
-						dr(05.0, i(9839)),	-- Banded Gauntlets
-						dr(04.0, i(7355)),	-- Elder's Bracers
-						dr(04.0, i(10288)),	-- Sage's Circlet
-						dr(04.0, i(9828)),	-- Scaled Leather Boots
-						dr(04.0, i(9832)),	-- Scaled Leather Gloves
-						dr(03.0, i(9840)),	-- Banded Girdle
-						dr(03.0, i(6607)),	-- Dervish Leggings
-						dr(03.0, i(6603)),	-- Dervish Tunic
-						dr(03.0, i(9820)),	-- Durable Boots
-						dr(03.0, i(9821)),	-- Durable Bracers
-						dr(03.0, i(9823)),	-- Durable Gloves
-						dr(03.0, i(7370)),	-- Elder's Sash
-						dr(03.0, i(7410)),	-- Infiltrator Bracers
-						dr(03.0, i(7411)),	-- Infiltrator Cloak
-						dr(03.0, i(7408)),	-- Infiltrator Shoulders
-						dr(03.0, i(7416)),	-- Phalanx Bracers
-						dr(03.0, i(9827)),	-- Scaled Leather Belt
-						dr(02.0, i(9837)),	-- Banded Bracers
-						dr(02.0, i(10404)),	-- Durable Belt
-						dr(02.0, i(7356)),	-- Elder's Cloak
-						dr(02.0, i(7419)),	-- Phalanx Cloak
-						dr(01.6, i(6617)),	-- Sage's Mantle
-						dr(01.2, i(9847)),	-- Conjurer's Cloak
-						dr(01.1, i(7412)),	-- Infiltrator Gloves
-						dr(01.1, i(7460)),	-- Knight's Cloak
-						dr(01.1, i(6609)),	-- Sage's Cloth
-						dr(01.0, i(10409)),	-- Banded Boots
-						dr(01.0, i(9841)),	-- Banded Leggings
-						dr(01.0, i(10289)),	-- Durable Hat
-						dr(01.0, i(9824)),	-- Durable Shoulders
-						dr(01.0, i(7406)),	-- Infiltrator Cord
-						dr(01.0, i(7420)),	-- Phalanx Headguard
-						dr(01.0, i(9867)),	-- Renegade Cloak
-						dr(01.0, i(10406)),	-- Scaled Leather Headband
-						dr(01.0, i(9834)),	-- Scaled Leather Shoulders					
+						i(9839),	-- Banded Gauntlets
+						i(7355),	-- Elder's Bracers
+						i(10288),	-- Sage's Circlet
+						i(9828),	-- Scaled Leather Boots
+						i(9832),	-- Scaled Leather Gloves
+						i(9840),	-- Banded Girdle
+						i(6607),	-- Dervish Leggings
+						i(6603),	-- Dervish Tunic
+						i(9820),	-- Durable Boots
+						i(9821),	-- Durable Bracers
+						i(9823),	-- Durable Gloves
+						i(7370),	-- Elder's Sash
+						i(7410),	-- Infiltrator Bracers
+						i(7411),	-- Infiltrator Cloak
+						i(7408),	-- Infiltrator Shoulders
+						i(7416),	-- Phalanx Bracers
+						i(9827),	-- Scaled Leather Belt
+						i(9837),	-- Banded Bracers
+						i(10404),	-- Durable Belt
+						i(7356),	-- Elder's Cloak
+						i(7419),	-- Phalanx Cloak
+						i(6617),	-- Sage's Mantle
+						i(9847),	-- Conjurer's Cloak
+						i(7412),	-- Infiltrator Gloves
+						i(7460),	-- Knight's Cloak
+						i(6609),	-- Sage's Cloth
+						i(10409),	-- Banded Boots
+						i(9841),	-- Banded Leggings
+						i(10289),	-- Durable Hat
+						i(9824),	-- Durable Shoulders
+						i(7406),	-- Infiltrator Cord
+						i(7420),	-- Phalanx Headguard
+						i(9867),	-- Renegade Cloak
+						i(10406),	-- Scaled Leather Headband
+						i(9834),	-- Scaled Leather Shoulders
 					}), 
 					nh(8214, { 	-- Jalinde Summerdrake
-						dr(05.0, i(9866)),	-- Renegade Chestguard
-						dr(04.0, i(9855)),	-- Archer's Belt
-						dr(04.0, i(9846)),	-- Conjurer's Bracers
-						dr(04.0, i(9845)),	-- Conjurer's Shoes
-						dr(04.0, i(7407)),	-- Infiltrator Armor
-						dr(04.0, i(9868)),	-- Renegade Gauntlets
-						dr(03.0, i(9861)),	-- Archer's Gloves
-						dr(03.0, i(7357)),	-- Elder's Hat
-						dr(03.0, i(7353)),	-- Elder's Padded Armor
-						dr(03.0, i(7369)),	-- Elder's Robe
-						dr(03.0, i(7418)),	-- Phalanx Breastplate
-						dr(03.0, i(7423)),	-- Phalanx Leggings
-						dr(03.0, i(9869)),	-- Renegade Belt
-						dr(03.0, i(7436)),	-- Twilight Cape
-						dr(02.0, i(9857)),	-- Archer's Bracers
-						dr(02.0, i(9860)),	-- Archer's Cloak
-						dr(02.0, i(7457)),	-- Knight's Gauntlets
-						dr(01.9, i(7414)),	-- Infiltrator Pants
-						dr(01.8, i(9826)),	-- Durable Robe
-						dr(01.6, i(9848)),	-- Conjurer's Gloves
-						dr(01.5, i(9853)),	-- Conjurer's Cinch
-						dr(01.5, i(7417)),	-- Phalanx Boots
-						dr(01.4, i(9859)),	-- Archer's Cap
-						dr(01.4, i(7368)),	-- Elder's Pants
-						dr(01.3, i(9819)),	-- Durable Tunic
-						dr(01.3, i(9865)),	-- Renegade Bracers
-						dr(01.2, i(9862)),	-- Archer's Trousers
-						dr(01.1, i(7458)),	-- Knight's Boots
-						dr(01.1, i(7461)),	-- Knight's Bracers
-						dr(01.1, i(9871)),	-- Renegade Leggings
-						dr(01.1, i(7446)),	-- Sentinel Cloak
-						dr(01.1, i(7438)),	-- Twilight Belt
-						dr(01.1, i(7434)),	-- Twilight Boots
-						dr(01.1, i(7433)),	-- Twilight Gloves
-						dr(01.0, i(9849)),	-- Conjurer's Hood
-						dr(01.0, i(9850)),	-- Conjurer's Mantle
-						dr(01.0, i(7460)),	-- Knight's Cloak					
+						i(9866),	-- Renegade Chestguard
+						i(9855),	-- Archer's Belt
+						i(9846),	-- Conjurer's Bracers
+						i(9845),	-- Conjurer's Shoes
+						i(7407),	-- Infiltrator Armor
+						i(9868),	-- Renegade Gauntlets
+						i(9861),	-- Archer's Gloves
+						i(7357),	-- Elder's Hat
+						i(7353),	-- Elder's Padded Armor
+						i(7369),	-- Elder's Robe
+						i(7418),	-- Phalanx Breastplate
+						i(7423),	-- Phalanx Leggings
+						i(9869),	-- Renegade Belt
+						i(7436),	-- Twilight Cape
+						i(9857),	-- Archer's Bracers
+						i(9860),	-- Archer's Cloak
+						i(7457),	-- Knight's Gauntlets
+						i(7414),	-- Infiltrator Pants
+						i(9826),	-- Durable Robe
+						i(9848),	-- Conjurer's Gloves
+						i(9853),	-- Conjurer's Cinch
+						i(7417),	-- Phalanx Boots
+						i(9859),	-- Archer's Cap
+						i(7368),	-- Elder's Pants
+						i(9819),	-- Durable Tunic
+						i(9865),	-- Renegade Bracers
+						i(9862),	-- Archer's Trousers
+						i(7458),	-- Knight's Boots
+						i(7461),	-- Knight's Bracers
+						i(9871),	-- Renegade Leggings
+						i(7446),	-- Sentinel Cloak
+						i(7438),	-- Twilight Belt
+						i(7434),	-- Twilight Boots
+						i(7433),	-- Twilight Gloves
+						i(9849),	-- Conjurer's Hood
+						i(9850),	-- Conjurer's Mantle
+						i(7460),	-- Knight's Cloak
 					}), 
 					n(8217, { 	-- Mith'rethis the Enchanter
-						dr(05.0, i(7421)),	-- Phalanx Gauntlets
-						dr(03.0, i(9836)),	-- Banded Armor
-						dr(03.0, i(9847)),	-- Conjurer's Cloak
-						dr(03.0, i(9825)),	-- Durable Pants
-						dr(03.0, i(7367)),	-- Elder's Mantle
-						dr(03.0, i(7409)),	-- Infiltrator Boots
-						dr(03.0, i(7413)),	-- Infiltrator Cap
-						dr(03.0, i(7408)),	-- Infiltrator Shoulders
-						dr(03.0, i(7420)),	-- Phalanx Headguard
-						dr(03.0, i(9867)),	-- Renegade Cloak
-						dr(03.0, i(9833)),	-- Scaled Leather Leggings
-						dr(03.0, i(9835)),	-- Scaled Leather Tunic
-						dr(02.0, i(7354)),	-- Elder's Boots
-						dr(02.0, i(7406)),	-- Infiltrator Cord
-						dr(02.0, i(7424)),	-- Phalanx Spaulders
-						dr(01.9, i(10406)),	-- Scaled Leather Headband
-						dr(01.7, i(9841)),	-- Banded Leggings
-						dr(01.7, i(7422)),	-- Phalanx Girdle
-						dr(01.6, i(10289)),	-- Durable Hat
-						dr(01.6, i(9824)),	-- Durable Shoulders
-						dr(01.5, i(9826)),	-- Durable Robe
-						dr(01.5, i(9865)),	-- Renegade Bracers
-						dr(01.5, i(9834)),	-- Scaled Leather Shoulders
-						dr(01.4, i(9857)),	-- Archer's Bracers
-						dr(01.4, i(9842)),	-- Banded Pauldrons
-						dr(01.4, i(7353)),	-- Elder's Padded Armor
-						dr(01.4, i(7417)),	-- Phalanx Boots
-						dr(01.4, i(7423)),	-- Phalanx Leggings
-						dr(01.4, i(6616)),	-- Sage's Pants
-						dr(01.3, i(10409)),	-- Banded Boots
-						dr(01.3, i(10408)),	-- Banded Helm
-						dr(01.3, i(9853)),	-- Conjurer's Cinch
-						dr(01.3, i(7366)),	-- Elder's Gloves
-						dr(01.3, i(7412)),	-- Infiltrator Gloves
-						dr(01.3, i(7414)),	-- Infiltrator Pants
-						dr(01.2, i(9819)),	-- Durable Tunic
-						dr(01.2, i(7368)),	-- Elder's Pants
-						dr(01.1, i(9860)),	-- Archer's Cloak
-						dr(01.1, i(9861)),	-- Archer's Gloves
-						dr(01.1, i(9846)),	-- Conjurer's Bracers
-						dr(01.1, i(7357)),	-- Elder's Hat
-						dr(01.1, i(7407)),	-- Infiltrator Armor
-						dr(01.1, i(9869)),	-- Renegade Belt
-						dr(01.1, i(6609)),	-- Sage's Cloth
-						dr(01.0, i(6610)),	-- Sage's Robe					
+						i(7421),	-- Phalanx Gauntlets
+						i(9836),	-- Banded Armor
+						i(9847),	-- Conjurer's Cloak
+						i(9825),	-- Durable Pants
+						i(7367),	-- Elder's Mantle
+						i(7409),	-- Infiltrator Boots
+						i(7413),	-- Infiltrator Cap
+						i(7408),	-- Infiltrator Shoulders
+						i(7420),	-- Phalanx Headguard
+						i(9867),	-- Renegade Cloak
+						i(9833),	-- Scaled Leather Leggings
+						i(9835),	-- Scaled Leather Tunic
+						i(7354),	-- Elder's Boots
+						i(7406),	-- Infiltrator Cord
+						i(7424),	-- Phalanx Spaulders
+						i(10406),	-- Scaled Leather Headband
+						i(9841),	-- Banded Leggings
+						i(7422),	-- Phalanx Girdle
+						i(10289),	-- Durable Hat
+						i(9824),	-- Durable Shoulders
+						i(9826),	-- Durable Robe
+						i(9865),	-- Renegade Bracers
+						i(9834),	-- Scaled Leather Shoulders
+						i(9857),	-- Archer's Bracers
+						i(9842),	-- Banded Pauldrons
+						i(7353),	-- Elder's Padded Armor
+						i(7417),	-- Phalanx Boots
+						i(7423),	-- Phalanx Leggings
+						i(6616),	-- Sage's Pants
+						i(10409),	-- Banded Boots
+						i(10408),	-- Banded Helm
+						i(9853),	-- Conjurer's Cinch
+						i(7366),	-- Elder's Gloves
+						i(7412),	-- Infiltrator Gloves
+						i(7414),	-- Infiltrator Pants
+						i(9819),	-- Durable Tunic
+						i(7368),	-- Elder's Pants
+						i(9860),	-- Archer's Cloak
+						i(9861),	-- Archer's Gloves
+						i(9846),	-- Conjurer's Bracers
+						i(7357),	-- Elder's Hat
+						i(7407),	-- Infiltrator Armor
+						i(9869),	-- Renegade Belt
+						i(6609),	-- Sage's Cloth
+						i(6610),	-- Sage's Robe
 					}), 
 					n(8211, { 	-- Old Cliff Jumper
-						dr(07.0, i(6607)),	-- Dervish Leggings
-						dr(06.0, i(6603)),	-- Dervish Tunic
-						dr(05.0, i(10404)),	-- Durable Belt
-						dr(05.0, i(9821)),	-- Durable Bracers
-						dr(05.0, i(6617)),	-- Sage's Mantle
-						dr(04.0, i(9837)),	-- Banded Bracers
-						dr(04.0, i(9822)),	-- Durable Cape
-						dr(04.0, i(7356)),	-- Elder's Cloak
-						dr(04.0, i(7419)),	-- Phalanx Cloak
-						dr(04.0, i(9827)),	-- Scaled Leather Belt
-						dr(03.0, i(9841)),	-- Banded Leggings
-						dr(02.0, i(9838)),	-- Banded Cloak
-						dr(02.0, i(6590)),	-- Battleforge Boots
-						dr(02.0, i(7415)),	-- Dervish Spaulders
-						dr(02.0, i(6615)),	-- Sage's Gloves
-						dr(02.0, i(6611)),	-- Sage's Sash
-						dr(02.0, i(9832)),	-- Scaled Leather Gloves
-						dr(01.8, i(6592)),	-- Battleforge Armor
-						dr(01.8, i(9798)),	-- Ivycloth Robe
-						dr(01.8, i(9831)),	-- Scaled Cloak
-						dr(01.7, i(9829)),	-- Scaled Leather Bracers
-						dr(01.6, i(7411)),	-- Infiltrator Cloak
-						dr(01.5, i(9791)),	-- Ivycloth Tunic
-						dr(01.5, i(10288)),	-- Sage's Circlet
-						dr(01.3, i(9840)),	-- Banded Girdle
-						dr(01.3, i(7370)),	-- Elder's Sash
-						dr(01.3, i(9828)),	-- Scaled Leather Boots
-						dr(01.2, i(7410)),	-- Infiltrator Bracers
-						dr(01.1, i(9820)),	-- Durable Boots
-						dr(01.1, i(7355)),	-- Elder's Bracers
-						dr(01.0, i(9823)),	-- Durable Gloves
-						dr(01.0, i(7416)),	-- Phalanx Bracers					
+						i(6607),	-- Dervish Leggings
+						i(6603),	-- Dervish Tunic
+						i(10404),	-- Durable Belt
+						i(9821),	-- Durable Bracers
+						i(6617),	-- Sage's Mantle
+						i(9837),	-- Banded Bracers
+						i(9822),	-- Durable Cape
+						i(7356),	-- Elder's Cloak
+						i(7419),	-- Phalanx Cloak
+						i(9827),	-- Scaled Leather Belt
+						i(9841),	-- Banded Leggings
+						i(9838),	-- Banded Cloak
+						i(6590),	-- Battleforge Boots
+						i(7415),	-- Dervish Spaulders
+						i(6615),	-- Sage's Gloves
+						i(6611),	-- Sage's Sash
+						i(9832),	-- Scaled Leather Gloves
+						i(6592),	-- Battleforge Armor
+						i(9798),	-- Ivycloth Robe
+						i(9831),	-- Scaled Cloak
+						i(9829),	-- Scaled Leather Bracers
+						i(7411),	-- Infiltrator Cloak
+						i(9791),	-- Ivycloth Tunic
+						i(10288),	-- Sage's Circlet
+						i(9840),	-- Banded Girdle
+						i(7370),	-- Elder's Sash
+						i(9828),	-- Scaled Leather Boots
+						i(7410),	-- Infiltrator Bracers
+						i(9820),	-- Durable Boots
+						i(7355),	-- Elder's Bracers
+						i(9823),	-- Durable Gloves
+						i(7416),	-- Phalanx Bracers
 					}), 
 					n(107617, {	-- Ol' Muddle
-						dr(02.0, i(9846)),	-- Conjurer's Bracers					
+						i(9846),	-- Conjurer's Bracers
 					}),
 					n(8210, { 	-- Razortalon
-						dr(03.0, i(10408)),	-- Banded Helm
-						dr(03.0, i(9820)),	-- Durable Boots
-						dr(03.0, i(10289)),	-- Durable Hat
-						dr(03.0, i(9824)),	-- Durable Shoulders
-						dr(03.0, i(7366)),	-- Elder's Gloves
-						dr(03.0, i(7406)),	-- Infiltrator Cord
-						dr(03.0, i(7412)),	-- Infiltrator Gloves
-						dr(03.0, i(7422)),	-- Phalanx Girdle
-						dr(03.0, i(10406)),	-- Scaled Leather Headband
-						dr(03.0, i(9834)),	-- Scaled Leather Shoulders
-						dr(02.0, i(10409)),	-- Banded Boots
-						dr(02.0, i(9841)),	-- Banded Leggings
-						dr(02.0, i(9842)),	-- Banded Pauldrons
-						dr(02.0, i(7414)),	-- Infiltrator Pants
-						dr(02.0, i(7424)),	-- Phalanx Spaulders
-						dr(02.0, i(6609)),	-- Sage's Cloth
-						dr(02.0, i(6616)),	-- Sage's Pants
-						dr(02.0, i(6610)),	-- Sage's Robe
-						dr(02.0, i(9828)),	-- Scaled Leather Boots
-						dr(01.9, i(9823)),	-- Durable Gloves
-						dr(01.9, i(7411)),	-- Infiltrator Cloak
-						dr(01.9, i(7416)),	-- Phalanx Bracers
-						dr(01.8, i(7409)),	-- Infiltrator Boots
-						dr(01.8, i(7410)),	-- Infiltrator Bracers
-						dr(01.8, i(10288)),	-- Sage's Circlet
-						dr(01.7, i(9857)),	-- Archer's Bracers
-						dr(01.5, i(9839)),	-- Banded Gauntlets
-						dr(01.5, i(7355)),	-- Elder's Bracers
-						dr(01.4, i(9840)),	-- Banded Girdle
-						dr(01.4, i(7370)),	-- Elder's Sash
-						dr(01.4, i(7413)),	-- Infiltrator Cap
-						dr(01.4, i(7408)),	-- Infiltrator Shoulders
-						dr(01.4, i(7460)),	-- Knight's Cloak
-						dr(01.4, i(9832)),	-- Scaled Leather Gloves
-						dr(01.3, i(9836)),	-- Banded Armor
-						dr(01.3, i(9847)),	-- Conjurer's Cloak
-						dr(01.2, i(7357)),	-- Elder's Hat
-						dr(01.1, i(9825)),	-- Durable Pants
-						dr(01.1, i(7354)),	-- Elder's Boots
-						dr(01.1, i(7421)),	-- Phalanx Gauntlets
-						dr(01.1, i(9867)),	-- Renegade Cloak
-						dr(01.1, i(9833)),	-- Scaled Leather Leggings
-						dr(01.0, i(9853)),	-- Conjurer's Cinch
-						dr(01.0, i(9819)),	-- Durable Tunic
-						dr(01.0, i(7367)),	-- Elder's Mantle
-						dr(01.0, i(7420)),	-- Phalanx Headguard					
+						i(10408),	-- Banded Helm
+						i(9820),	-- Durable Boots
+						i(10289),	-- Durable Hat
+						i(9824),	-- Durable Shoulders
+						i(7366),	-- Elder's Gloves
+						i(7406),	-- Infiltrator Cord
+						i(7412),	-- Infiltrator Gloves
+						i(7422),	-- Phalanx Girdle
+						i(10406),	-- Scaled Leather Headband
+						i(9834),	-- Scaled Leather Shoulders
+						i(10409),	-- Banded Boots
+						i(9841),	-- Banded Leggings
+						i(9842),	-- Banded Pauldrons
+						i(7414),	-- Infiltrator Pants
+						i(7424),	-- Phalanx Spaulders
+						i(6609),	-- Sage's Cloth
+						i(6616),	-- Sage's Pants
+						i(6610),	-- Sage's Robe
+						i(9828),	-- Scaled Leather Boots
+						i(9823),	-- Durable Gloves
+						i(7411),	-- Infiltrator Cloak
+						i(7416),	-- Phalanx Bracers
+						i(7409),	-- Infiltrator Boots
+						i(7410),	-- Infiltrator Bracers
+						i(10288),	-- Sage's Circlet
+						i(9857),	-- Archer's Bracers
+						i(9839),	-- Banded Gauntlets
+						i(7355),	-- Elder's Bracers
+						i(9840),	-- Banded Girdle
+						i(7370),	-- Elder's Sash
+						i(7413),	-- Infiltrator Cap
+						i(7408),	-- Infiltrator Shoulders
+						i(7460),	-- Knight's Cloak
+						i(9832),	-- Scaled Leather Gloves
+						i(9836),	-- Banded Armor
+						i(9847),	-- Conjurer's Cloak
+						i(7357),	-- Elder's Hat
+						i(9825),	-- Durable Pants
+						i(7354),	-- Elder's Boots
+						i(7421),	-- Phalanx Gauntlets
+						i(9867),	-- Renegade Cloak
+						i(9833),	-- Scaled Leather Leggings
+						i(9853),	-- Conjurer's Cinch
+						i(9819),	-- Durable Tunic
+						i(7367),	-- Elder's Mantle
+						i(7420),	-- Phalanx Headguard
 					}), 
 					n(8216, { 	-- Retherokk the Berserker
-						dr(05.0, i(7421)),	-- Phalanx Gauntlets
-						dr(04.0, i(7413)),	-- Infiltrator Cap
-						dr(03.0, i(9836)),	-- Banded Armor
-						dr(03.0, i(9825)),	-- Durable Pants
-						dr(03.0, i(7354)),	-- Elder's Boots
-						dr(03.0, i(7367)),	-- Elder's Mantle
-						dr(03.0, i(7409)),	-- Infiltrator Boots
-						dr(03.0, i(7408)),	-- Infiltrator Shoulders
-						dr(03.0, i(7420)),	-- Phalanx Headguard
-						dr(03.0, i(7424)),	-- Phalanx Spaulders
-						dr(03.0, i(9867)),	-- Renegade Cloak
-						dr(03.0, i(9833)),	-- Scaled Leather Leggings
-						dr(02.0, i(9847)),	-- Conjurer's Cloak
-						dr(02.0, i(7406)),	-- Infiltrator Cord
-						dr(02.0, i(7412)),	-- Infiltrator Gloves
-						dr(02.0, i(6610)),	-- Sage's Robe
-						dr(02.0, i(9835)),	-- Scaled Leather Tunic
-						dr(01.9, i(9842)),	-- Banded Pauldrons
-						dr(01.8, i(9824)),	-- Durable Shoulders
-						dr(01.8, i(9819)),	-- Durable Tunic
-						dr(01.7, i(9841)),	-- Banded Leggings
-						dr(01.6, i(9860)),	-- Archer's Cloak
-						dr(01.6, i(7422)),	-- Phalanx Girdle
-						dr(01.6, i(9834)),	-- Scaled Leather Shoulders
-						dr(01.4, i(10289)),	-- Durable Hat
-						dr(01.3, i(9845)),	-- Conjurer's Shoes
-						dr(01.3, i(9865)),	-- Renegade Bracers
-						dr(01.2, i(9855)),	-- Archer's Belt
-						dr(01.2, i(9857)),	-- Archer's Bracers
-						dr(01.2, i(9826)),	-- Durable Robe
-						dr(01.2, i(7366)),	-- Elder's Gloves
-						dr(01.2, i(7357)),	-- Elder's Hat
-						dr(01.2, i(7368)),	-- Elder's Pants
-						dr(01.2, i(7369)),	-- Elder's Robe
-						dr(01.2, i(7414)),	-- Infiltrator Pants
-						dr(01.2, i(6609)),	-- Sage's Cloth
-						dr(01.2, i(10406)),	-- Scaled Leather Headband
-						dr(01.1, i(9846)),	-- Conjurer's Bracers
-						dr(01.1, i(9853)),	-- Conjurer's Cinch
-						dr(01.1, i(7417)),	-- Phalanx Boots
-						dr(01.1, i(6616)),	-- Sage's Pants
-						dr(01.0, i(10409)),	-- Banded Boots
-						dr(01.0, i(10408)),	-- Banded Helm
-						dr(01.0, i(7460)),	-- Knight's Cloak					
+						i(7421),	-- Phalanx Gauntlets
+						i(7413),	-- Infiltrator Cap
+						i(9836),	-- Banded Armor
+						i(9825),	-- Durable Pants
+						i(7354),	-- Elder's Boots
+						i(7367),	-- Elder's Mantle
+						i(7409),	-- Infiltrator Boots
+						i(7408),	-- Infiltrator Shoulders
+						i(7420),	-- Phalanx Headguard
+						i(7424),	-- Phalanx Spaulders
+						i(9867),	-- Renegade Cloak
+						i(9833),	-- Scaled Leather Leggings
+						i(9847),	-- Conjurer's Cloak
+						i(7406),	-- Infiltrator Cord
+						i(7412),	-- Infiltrator Gloves
+						i(6610),	-- Sage's Robe
+						i(9835),	-- Scaled Leather Tunic
+						i(9842),	-- Banded Pauldrons
+						i(9824),	-- Durable Shoulders
+						i(9819),	-- Durable Tunic
+						i(9841),	-- Banded Leggings
+						i(9860),	-- Archer's Cloak
+						i(7422),	-- Phalanx Girdle
+						i(9834),	-- Scaled Leather Shoulders
+						i(10289),	-- Durable Hat
+						i(9845),	-- Conjurer's Shoes
+						i(9865),	-- Renegade Bracers
+						i(9855),	-- Archer's Belt
+						i(9857),	-- Archer's Bracers
+						i(9826),	-- Durable Robe
+						i(7366),	-- Elder's Gloves
+						i(7357),	-- Elder's Hat
+						i(7368),	-- Elder's Pants
+						i(7369),	-- Elder's Robe
+						i(7414),	-- Infiltrator Pants
+						i(6609),	-- Sage's Cloth
+						i(10406),	-- Scaled Leather Headband
+						i(9846),	-- Conjurer's Bracers
+						i(9853),	-- Conjurer's Cinch
+						i(7417),	-- Phalanx Boots
+						i(6616),	-- Sage's Pants
+						i(10409),	-- Banded Boots
+						i(10408),	-- Banded Helm
+						i(7460),	-- Knight's Cloak
 					}), 
 					n(8212, { 	-- The Reak
-						dr(05.0, i(9837)),	-- Banded Bracers
-						dr(04.0, i(9839)),	-- Banded Gauntlets
-						dr(04.0, i(7355)),	-- Elder's Bracers
-						dr(04.0, i(7370)),	-- Elder's Sash
-						dr(04.0, i(10288)),	-- Sage's Circlet
-						dr(04.0, i(9828)),	-- Scaled Leather Boots
-						dr(04.0, i(9832)),	-- Scaled Leather Gloves
-						dr(03.0, i(9840)),	-- Banded Girdle
-						dr(03.0, i(6607)),	-- Dervish Leggings
-						dr(03.0, i(6603)),	-- Dervish Tunic
-						dr(03.0, i(9820)),	-- Durable Boots
-						dr(03.0, i(9823)),	-- Durable Gloves
-						dr(03.0, i(7410)),	-- Infiltrator Bracers
-						dr(03.0, i(7411)),	-- Infiltrator Cloak
-						dr(03.0, i(7416)),	-- Phalanx Bracers
-						dr(02.0, i(10404)),	-- Durable Belt
-						dr(02.0, i(9821)),	-- Durable Bracers
-						dr(02.0, i(7356)),	-- Elder's Cloak
-						dr(02.0, i(7419)),	-- Phalanx Cloak
-						dr(02.0, i(6617)),	-- Sage's Mantle
-						dr(02.0, i(9827)),	-- Scaled Leather Belt
-						dr(01.9, i(7367)),	-- Elder's Mantle
-						dr(01.5, i(9824)),	-- Durable Shoulders
-						dr(01.5, i(7422)),	-- Phalanx Girdle
-						dr(01.2, i(10289)),	-- Durable Hat
-						dr(01.2, i(10406)),	-- Scaled Leather Headband
-						dr(01.1, i(9841)),	-- Banded Leggings
-						dr(01.1, i(7366)),	-- Elder's Gloves
-						dr(01.1, i(7406)),	-- Infiltrator Cord
-						dr(01.1, i(6609)),	-- Sage's Cloth
-						dr(01.1, i(9834)),	-- Scaled Leather Shoulders
-						dr(01.0, i(9842)),	-- Banded Pauldrons
-						dr(01.0, i(7412)),	-- Infiltrator Gloves
-						dr(01.0, i(6616)),	-- Sage's Pants
-						dr(01.0, i(6610)),	-- Sage's Robe					
+						i(9837),	-- Banded Bracers
+						i(9839),	-- Banded Gauntlets
+						i(7355),	-- Elder's Bracers
+						i(7370),	-- Elder's Sash
+						i(10288),	-- Sage's Circlet
+						i(9828),	-- Scaled Leather Boots
+						i(9832),	-- Scaled Leather Gloves
+						i(9840),	-- Banded Girdle
+						i(6607),	-- Dervish Leggings
+						i(6603),	-- Dervish Tunic
+						i(9820),	-- Durable Boots
+						i(9823),	-- Durable Gloves
+						i(7410),	-- Infiltrator Bracers
+						i(7411),	-- Infiltrator Cloak
+						i(7416),	-- Phalanx Bracers
+						i(10404),	-- Durable Belt
+						i(9821),	-- Durable Bracers
+						i(7356),	-- Elder's Cloak
+						i(7419),	-- Phalanx Cloak
+						i(6617),	-- Sage's Mantle
+						i(9827),	-- Scaled Leather Belt
+						i(7367),	-- Elder's Mantle
+						i(9824),	-- Durable Shoulders
+						i(7422),	-- Phalanx Girdle
+						i(10289),	-- Durable Hat
+						i(10406),	-- Scaled Leather Headband
+						i(9841),	-- Banded Leggings
+						i(7366),	-- Elder's Gloves
+						i(7406),	-- Infiltrator Cord
+						i(6609),	-- Sage's Cloth
+						i(9834),	-- Scaled Leather Shoulders
+						i(9842),	-- Banded Pauldrons
+						i(7412),	-- Infiltrator Gloves
+						i(6616),	-- Sage's Pants
+						i(6610),	-- Sage's Robe
 					}), 
 					n(8218, { 	-- Witherheart the Stalker
-						dr(05.0, i(7357)),	-- Elder's Hat
-						dr(05.0, i(7417)),	-- Phalanx Boots
-						dr(05.0, i(9865)),	-- Renegade Bracers
-						dr(04.0, i(9826)),	-- Durable Robe
-						dr(04.0, i(7414)),	-- Infiltrator Pants
-						dr(04.0, i(7460)),	-- Knight's Cloak
-						dr(03.0, i(9853)),	-- Conjurer's Cinch
-						dr(03.0, i(9819)),	-- Durable Tunic
-						dr(03.0, i(7368)),	-- Elder's Pants
-						dr(03.0, i(7421)),	-- Phalanx Gauntlets
-						dr(03.0, i(7423)),	-- Phalanx Leggings
-						dr(03.0, i(9835)),	-- Scaled Leather Tunic
-						dr(02.0, i(9857)),	-- Archer's Bracers
-						dr(01.8, i(9869)),	-- Renegade Belt
-						dr(01.7, i(7354)),	-- Elder's Boots
-						dr(01.7, i(7408)),	-- Infiltrator Shoulders
-						dr(01.6, i(7407)),	-- Infiltrator Armor
-						dr(01.4, i(7424)),	-- Phalanx Spaulders
-						dr(01.3, i(9860)),	-- Archer's Cloak
-						dr(01.2, i(7409)),	-- Infiltrator Boots
-						dr(01.1, i(9836)),	-- Banded Armor
-						dr(01.1, i(7367)),	-- Elder's Mantle
-						dr(01.1, i(7418)),	-- Phalanx Breastplate
-						dr(01.1, i(9871)),	-- Renegade Leggings
-						dr(01.0, i(9855)),	-- Archer's Belt
-						dr(01.0, i(7413)),	-- Infiltrator Cap
-						dr(01.0, i(7436)),	-- Twilight Cape
-						dr(01.0, i(7437)),	-- Twilight Cuffs					
+						i(7357),	-- Elder's Hat
+						i(7417),	-- Phalanx Boots
+						i(9865),	-- Renegade Bracers
+						i(9826),	-- Durable Robe
+						i(7414),	-- Infiltrator Pants
+						i(7460),	-- Knight's Cloak
+						i(9853),	-- Conjurer's Cinch
+						i(9819),	-- Durable Tunic
+						i(7368),	-- Elder's Pants
+						i(7421),	-- Phalanx Gauntlets
+						i(7423),	-- Phalanx Leggings
+						i(9835),	-- Scaled Leather Tunic
+						i(9857),	-- Archer's Bracers
+						i(9869),	-- Renegade Belt
+						i(7354),	-- Elder's Boots
+						i(7408),	-- Infiltrator Shoulders
+						i(7407),	-- Infiltrator Armor
+						i(7424),	-- Phalanx Spaulders
+						i(9860),	-- Archer's Cloak
+						i(7409),	-- Infiltrator Boots
+						i(9836),	-- Banded Armor
+						i(7367),	-- Elder's Mantle
+						i(7418),	-- Phalanx Breastplate
+						i(9871),	-- Renegade Leggings
+						i(9855),	-- Archer's Belt
+						i(7413),	-- Infiltrator Cap
+						i(7436),	-- Twilight Cape
+						i(7437),	-- Twilight Cuffs
 					}), 
 					n(8219, { 	-- Zul'arek Hatefowler
-						dr(06.0, i(7414)),	-- Infiltrator Pants
-						dr(05.0, i(7420)),	-- Phalanx Headguard
-						dr(04.0, i(9857)),	-- Archer's Bracers
-						dr(04.0, i(9848)),	-- Conjurer's Gloves
-						dr(04.0, i(7417)),	-- Phalanx Boots
-						dr(04.0, i(9835)),	-- Scaled Leather Tunic
-						dr(03.0, i(9860)),	-- Archer's Cloak
-						dr(03.0, i(9853)),	-- Conjurer's Cinch
-						dr(03.0, i(7460)),	-- Knight's Cloak
-						dr(03.0, i(7423)),	-- Phalanx Leggings
-						dr(03.0, i(9865)),	-- Renegade Bracers
-						dr(02.0, i(9826)),	-- Durable Robe
-						dr(02.0, i(9819)),	-- Durable Tunic
-						dr(02.0, i(7357)),	-- Elder's Hat
-						dr(02.0, i(7368)),	-- Elder's Pants
-						dr(02.0, i(7409)),	-- Infiltrator Boots
-						dr(02.0, i(7443)),	-- Sentinel Gloves
-						dr(01.8, i(9861)),	-- Archer's Gloves
-						dr(01.7, i(9849)),	-- Conjurer's Hood
-						dr(01.7, i(9845)),	-- Conjurer's Shoes
-						dr(01.5, i(9846)),	-- Conjurer's Bracers
-						dr(01.5, i(7418)),	-- Phalanx Breastplate
-						dr(01.5, i(7421)),	-- Phalanx Gauntlets
-						dr(01.4, i(7413)),	-- Infiltrator Cap
-						dr(01.4, i(7436)),	-- Twilight Cape
-						dr(01.3, i(9836)),	-- Banded Armor
-						dr(01.3, i(9847)),	-- Conjurer's Cloak
-						dr(01.3, i(7408)),	-- Infiltrator Shoulders
-						dr(01.3, i(9833)),	-- Scaled Leather Leggings
-						dr(01.2, i(9825)),	-- Durable Pants
-						dr(01.2, i(7424)),	-- Phalanx Spaulders
-						dr(01.2, i(9869)),	-- Renegade Belt
-						dr(01.2, i(9868)),	-- Renegade Gauntlets
-						dr(01.0, i(7354)),	-- Elder's Boots
-						dr(01.0, i(7367)),	-- Elder's Mantle
-						dr(01.0, i(7353)),	-- Elder's Padded Armor
-						dr(01.0, i(7369)),	-- Elder's Robe					
+						i(7414),	-- Infiltrator Pants
+						i(7420),	-- Phalanx Headguard
+						i(9857),	-- Archer's Bracers
+						i(9848),	-- Conjurer's Gloves
+						i(7417),	-- Phalanx Boots
+						i(9835),	-- Scaled Leather Tunic
+						i(9860),	-- Archer's Cloak
+						i(9853),	-- Conjurer's Cinch
+						i(7460),	-- Knight's Cloak
+						i(7423),	-- Phalanx Leggings
+						i(9865),	-- Renegade Bracers
+						i(9826),	-- Durable Robe
+						i(9819),	-- Durable Tunic
+						i(7357),	-- Elder's Hat
+						i(7368),	-- Elder's Pants
+						i(7409),	-- Infiltrator Boots
+						i(7443),	-- Sentinel Gloves
+						i(9861),	-- Archer's Gloves
+						i(9849),	-- Conjurer's Hood
+						i(9845),	-- Conjurer's Shoes
+						i(9846),	-- Conjurer's Bracers
+						i(7418),	-- Phalanx Breastplate
+						i(7421),	-- Phalanx Gauntlets
+						i(7413),	-- Infiltrator Cap
+						i(7436),	-- Twilight Cape
+						i(9836),	-- Banded Armor
+						i(9847),	-- Conjurer's Cloak
+						i(7408),	-- Infiltrator Shoulders
+						i(9833),	-- Scaled Leather Leggings
+						i(9825),	-- Durable Pants
+						i(7424),	-- Phalanx Spaulders
+						i(9869),	-- Renegade Belt
+						i(9868),	-- Renegade Gauntlets
+						i(7354),	-- Elder's Boots
+						i(7367),	-- Elder's Mantle
+						i(7353),	-- Elder's Padded Armor
+						i(7369),	-- Elder's Robe
 					}), 
 				}),
 				n(-2,  {	-- Vendors

@@ -18,8 +18,15 @@ L.SAVED_TO_DJ_INSTANCES["Rubinsanktum"] = "Das Rubinsanktum";
 L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
+local a = L.NPC_ID_NAMES;
+for key,value in pairs({
+	[-1] = "Gemeinsame Bossbeute",										-- Common Boss Drop
+})
+do a[key] = value; end
+
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
+	-- Enter translated OBJECTID's here
     [31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[55] = "Ein halb aufgefressener Körper",

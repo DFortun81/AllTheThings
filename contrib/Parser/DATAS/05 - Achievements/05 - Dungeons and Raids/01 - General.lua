@@ -546,7 +546,9 @@ _.Achievements =
 						crit(23),		-- A Complete Circuit
 					}),
 					ach(11763, {	-- Glory of the Tomb Raider
-						style(3, title(362)),	-- ,the Tomb Raider
+						title(362, {	-- , the Tomb Raider
+							["style"] = 3,
+						}),
 						i(101426),		-- Micronax Controller (you also get this - Crieve)
 						crit(1),		-- Fel Turkey!
 						crit(2),		-- Grin and Bear It

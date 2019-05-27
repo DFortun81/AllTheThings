@@ -905,12 +905,12 @@ _.Zones =
 						["groups"] = {
 							i(153190, {	-- Fel-Spotted Egg
 								i(153191, {	-- Cracked Fel-Spotted Egg
-									dr(7.25, i(152843)),	-- Darkspore Mana Ray Mount
-									dr(7.25, i(152841)),	-- Felglow Mana Ray Mount
-									dr(7.25, i(152840)),	-- Scintillating Mana Ray Mount
-									dr(7.25, i(152842)),	-- Vibrant Mana Ray Mount
-									dr(22, i(153054)),	-- Docile Skyfin Pet
-									dr(22, i(153055)),	-- Fel-Afflicted Skyfin Pet
+									i(152843),	-- Darkspore Mana Ray Mount
+									i(152841),	-- Felglow Mana Ray Mount
+									i(152840),	-- Scintillating Mana Ray Mount
+									i(152842),	-- Vibrant Mana Ray Mount
+									i(153054),	-- Docile Skyfin Pet
+									i(153055),	-- Fel-Afflicted Skyfin Pet
 								}),
 							}),
 						},

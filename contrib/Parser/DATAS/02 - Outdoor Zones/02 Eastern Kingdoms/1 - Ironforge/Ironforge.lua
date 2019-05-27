@@ -249,7 +249,7 @@ _.Zones =
 				n(-16, {	-- Rares
 					nh(51596, { 	-- Wildhammer Fact Checker
 						["g"] = {
-							dr(0.19, i(68611)),	-- Red Shirt
+							i(68611),	-- Red Shirt
 						},
 						["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n"
 					}),
@@ -375,10 +375,10 @@ _.Zones =
 						["g"] = {
 							ach(5847, {	-- Fish or Cut Bait: Ironforge
 								i(67414, {	-- Bag of Shiny Things
-									dr(1.1, i(44983)),	-- Strand Crawler Pet
-									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-									dr(0.5, i(45991)),	-- Bone Fishing Pole
-									dr(0.5, i(45992)),	-- Jeweled Fishing Pole
+									i(44983),	-- Strand Crawler Pet
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
 								}),
 							}),
 						},
