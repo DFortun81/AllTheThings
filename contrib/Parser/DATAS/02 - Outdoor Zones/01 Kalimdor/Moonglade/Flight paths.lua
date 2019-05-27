@@ -15,11 +15,17 @@ _.Zones =
 					}),
 					fp(62, {	-- Nighthaven, Moonglade
 						["coord"] = { 44, 45.4, 80 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = {
+							11	-- Druid
+						},
+						["collectible"] = false,	-- This flight path does not cache
 					}),
 					fp(63, {	-- Nighthaven, Moonglade
 						["coord"] = { 44.2, 45.6, 80 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = {
+							11	-- Druid
+						},
+						["collectible"] = false,	-- This
 					}),
 				}),
 			},

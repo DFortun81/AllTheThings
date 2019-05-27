@@ -99,6 +99,30 @@ _.Zones =
 									q(11482),	-- Duty Calls
 								}),
 								n(-2,  {	-- Vendors
+									{	-- Arcanist Xorith
+										["npcID"] = 23483,	-- Arcanist Xorith
+										["itemID"] = 32897,	-- Mark of the Illidari
+										["g"] = {
+											{	-- Shattrath Flask of Blinding Light
+												["itemID"] = 35717,	-- Shattrath Flask of Blinding Light
+											},
+											{	-- Shattrath Flask of Fortification
+												["itemID"] = 32898,	-- Shattrath Flask of Fortification
+											},
+											{	-- Shattrath Flask of Mighty Restoration
+												["itemID"] = 32899,	-- Shattrath Flask of Mighty Restoration
+											},
+											{	-- Shattrath Flask of Pure Death
+												["itemID"] = 35716,	-- Shattrath Flask of Pure Death
+											},
+											{	-- Shattrath Flask of Relentless Assault
+												["itemID"] = 32901,	-- Shattrath Flask of Relentless Assault
+											},
+											{	-- Shattrath Flask of Supreme Power
+												["itemID"] = 32900,	-- Shattrath Flask of Supreme Power
+											},
+										},
+									},
 									n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
 										["coord"] = { 42.6, 90.6, 111 },
 										["g"] = {
