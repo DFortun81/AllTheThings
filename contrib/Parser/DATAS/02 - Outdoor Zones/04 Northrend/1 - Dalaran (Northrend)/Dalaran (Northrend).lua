@@ -1740,11 +1740,11 @@ _.Zones =
 								["g"] = {
 									{	-- Pattern: Earthgiving Boots
 										["itemID"] = 44553,	-- Pattern: Earthgiving Boots
-										["description"] = "Cost: 3 Heavy Borean Leather",
+										["description"] = "Cost: 2 Artic Fur",
 									},
 									{	-- Pattern: Earthgiving Legguards
 										["itemID"] = 44552,	-- Pattern: Earthgiving Legguards
-										["description"] = "Cost: 3 Heavy Borean Leather",
+										["description"] = "Cost: 2 Artic Fur",
 									},
 									{	-- Pattern: Giantmaim Bracers
 										["itemID"] = 44547,	-- Pattern: Giantmaim Bracers
