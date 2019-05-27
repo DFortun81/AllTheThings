@@ -681,6 +681,7 @@ _.Craftables =
 				i(87214, {	-- Blingtron 4000*
 					n(43929, {	-- Blingtron 4000
 						i(86623, {	-- Blingtron 4000 Gift Package
+							["isDaily"] = true,
 							["questID"] = 31752,
 							["groups"] = {
 								i(87250),	-- Depleted-Kyparium Rocket Mount

@@ -280,6 +280,7 @@ _.Craftables =
 							i(136632),	-- Chaos Blaster
 						},
 						["questID"] = 40753,
+						["isDaily"] = true,
 					}),
 				}),
 			}),
