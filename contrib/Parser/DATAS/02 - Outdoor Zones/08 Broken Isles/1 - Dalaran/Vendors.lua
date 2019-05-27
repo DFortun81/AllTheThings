@@ -10495,7 +10495,6 @@ _.Zones =
 										},
 										["classes"] = { 12 },
 									}),
-									i(147622, {	-- Cruel Gladiator's Chain Armor
 									{	-- Ensemble: Elite Vindictive Gladiator's Chain Armor
 										["itemID"] = 147622,	-- Ensemble: Elite Cruel Gladiator's Chain Armor
 										["u"] = 14,				-- Elite PvP Filter
