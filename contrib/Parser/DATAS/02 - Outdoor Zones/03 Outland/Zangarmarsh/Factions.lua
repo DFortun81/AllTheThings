@@ -141,73 +141,70 @@ _.Zones =
 									{	-- Vendors
 										["npcID"] = -2,	-- Vendors
 										["g"] = {
-										{	-- Mycah <Sporeggar Quartermaster>
-											["npcID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
-											["itemID"] = 24245,	-- Glowcap
-											["description"] = "This vendor requires Glowcaps to purchase items"
-											["coords"] = { 
-												{ 18.27, 51.12, 102 },
-											},
-											["g"] = {
-												{	-- Tiny Sporebat
-													["itemID"] = 34478,	-- Tiny Sporebat
-													["description"] = "Cost: 30 Glowcaps",
+											{	-- Mycah <Sporeggar Quartermaster>
+												["npcID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
+												["itemID"] = 24245,	-- Glowcap
+												["description"] = "This vendor requires Glowcaps to purchase items",
+												["coords"] = { 
+													{ 18.27, 51.12, 102 },
 												},
-												{	-- Sporeggar Tabard
-													["itemID"] = 31775,	-- Sporeggar Tabard
-													["description"] = "Cost: 10 Glowcaps",
-												},
-												{	-- Pattern: Mycah's Botanical Bag
-													["itemID"] = 38229,	-- Pattern: Mycah's Botanical Bag
-													["description"] = "Cost: 25 Glowcaps",
-												},
-												{	-- Recipe: Clam Bar
-													["itemID"] = 30156,	-- Recipe: Clam Bar
-													["description"] = "Cost: 1 Glowcap",
-												},
-												{	-- Recipe: Shrouding Potion
-													["itemID"] = 22906,	-- Recipe: Shrouding Potion
-													["description"] = "Cost: 30 Glowcaps",
-												},
-												{	-- Recipe: Transmute Primal Earth to Water
-													["itemID"] = 22916,	-- Recipe: Transmute Primal Earth to Water
-													["description"] = "Cost: 25 Glowcaps",
-												},
-												{	-- Hardened Stone Shard
-													["itemID"] = 29150,	-- Hardened Stone Shard
-													["description"] = "Cost: 45 Glowcaps",
-												},
-												{	-- Petrified Lichen Guard
-													["itemID"] = 25828,	-- Petrified Lichen Guard
-													["description"] = "Cost: 15 Glowcaps",
-												},
-												{	-- Sporeling's Firestick
-													["itemID"] = 29149,	-- Sporeling's Firestick
-													["description"] = "Cost: 20 Glowcaps",
-												},
-												{	-- Muck-Covered Drape
-													["itemID"] = 25827,	-- Muck-Covered Drape
-													["description"] = "Cost: 25 Glowcaps",
-												},
-												{	-- Marsh Lichen
-													["itemID"] = 24539,	-- Marsh Lichen
-													["description"] = "Cost: 2 Glowcaps",
-												},
-												},
-												{	-- Redcap Toadstool
-													["itemID"] = 25550,	-- Redcap Toadstool
-													["description"] = "Cost: 1 Glowcap",
-												},
-												},
-												{	-- Tallstalk Mushroom
-													["itemID"] = 25548,	-- Tallstalk Mushroom
-													["description"] = "Cost: 1 Glowcap",
-												},
+												["g"] = {
+													{	-- Tiny Sporebat
+														["itemID"] = 34478,	-- Tiny Sporebat
+														["description"] = "Cost: 30 Glowcaps",
+													},
+													{	-- Sporeggar Tabard
+														["itemID"] = 31775,	-- Sporeggar Tabard
+														["description"] = "Cost: 10 Glowcaps",
+													},
+													{	-- Pattern: Mycah's Botanical Bag
+														["itemID"] = 38229,	-- Pattern: Mycah's Botanical Bag
+														["description"] = "Cost: 25 Glowcaps",
+													},
+													{	-- Recipe: Clam Bar
+														["itemID"] = 30156,	-- Recipe: Clam Bar
+														["description"] = "Cost: 1 Glowcap",
+													},
+													{	-- Recipe: Shrouding Potion
+														["itemID"] = 22906,	-- Recipe: Shrouding Potion
+														["description"] = "Cost: 30 Glowcaps",
+													},
+													{	-- Recipe: Transmute Primal Earth to Water
+														["itemID"] = 22916,	-- Recipe: Transmute Primal Earth to Water
+														["description"] = "Cost: 25 Glowcaps",
+													},
+													{	-- Hardened Stone Shard
+														["itemID"] = 29150,	-- Hardened Stone Shard
+														["description"] = "Cost: 45 Glowcaps",
+													},
+													{	-- Petrified Lichen Guard
+														["itemID"] = 25828,	-- Petrified Lichen Guard
+														["description"] = "Cost: 15 Glowcaps",
+													},
+													{	-- Sporeling's Firestick
+														["itemID"] = 29149,	-- Sporeling's Firestick
+														["description"] = "Cost: 20 Glowcaps",
+													},
+													{	-- Muck-Covered Drape
+														["itemID"] = 25827,	-- Muck-Covered Drape
+														["description"] = "Cost: 25 Glowcaps",
+													},
+													{	-- Marsh Lichen
+														["itemID"] = 24539,	-- Marsh Lichen
+														["description"] = "Cost: 2 Glowcaps",
+													},
+													{	-- Redcap Toadstool
+														["itemID"] = 25550,	-- Redcap Toadstool
+														["description"] = "Cost: 1 Glowcap",
+													},
+													{	-- Tallstalk Mushroom
+														["itemID"] = 25548,	-- Tallstalk Mushroom
+														["description"] = "Cost: 1 Glowcap",
+													},
 												},
 											},
 										},
 									},
-								},
 								},
 							}),
 						},
