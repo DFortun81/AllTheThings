@@ -1090,7 +1090,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 147690,	-- Ensemble: Cruel Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1658,7 +1658,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 150265,	-- Ensemble: Fierce Combatant's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -1691,6 +1691,60 @@ _.Zones =
 											},
 											{	-- Fierce Combatant's Chain Treads
 												["itemID"] = 149581,	-- Fierce Combatant's Chain Treads
+											},
+											{	-- Dominant Combatant's Chain Helm
+												["itemID"] = 149835,	-- Dominant Combatant's Chain Helm
+											},
+											{	-- Dominant Combatant's Chain Spaulders
+												["itemID"] = 149839,	-- Dominant Combatant's Chain Spaulders
+											},
+											{	-- Dominant Combatant's Drape of the Tracker
+												["itemID"] = 149763,	-- Dominant Combatant's Drape of the Tracker
+											},
+											{	-- Dominant Combatant's Chain Armor
+												["itemID"] = 149829,	-- Dominant Combatant's Chain Armor
+											},
+											{	-- Dominant Combatant's Chain Armband
+												["itemID"] = 149843,	-- Dominant Combatant's Chain Armband
+											},
+											{	-- Dominant Combatant's Chain Gauntlets
+												["itemID"] = 149833,	-- Dominant Combatant's Chain Gauntlets
+											},
+											{	-- Dominant Combatant's Chain Clasp
+												["itemID"] = 149841,	-- Dominant Combatant's Chain Clasp
+											},
+											{	-- Dominant Combatant's Chain Leggings
+												["itemID"] = 149837,	-- Dominant Combatant's Chain Leggings
+											},
+											{	-- Dominant Combatant's Chain Treads
+												["itemID"] = 149831,	-- Dominant Combatant's Chain Treads
+											},
+											{	-- Demonic Combatant's Chain Helm
+												["itemID"] = 150081,	-- Demonic Combatant's Chain Helm
+											},
+											{	-- Demonic Combatant's Chain Spaulders
+												["itemID"] = 150085,	-- Demonic Combatant's Chain Spaulders
+											},
+											{	-- Demonic Combatant's Drape of the Tracker
+												["itemID"] = 150009,	-- Demonic Combatant's Drape of the Tracker
+											},
+											{	-- Demonic Combatant's Chain Armor
+												["itemID"] = 150075,	-- Demonic Combatant's Chain Armor
+											},
+											{	-- Demonic Combatant's Chain Armband
+												["itemID"] = 150089,	-- Demonic Combatant's Chain Armband
+											},
+											{	-- Demonic Combatant's Chain Gauntlets
+												["itemID"] = 150079,	-- Demonic Combatant's Chain Gauntlets
+											},
+											{	-- Demonic Combatant's Chain Clasp
+												["itemID"] = 150087,	-- Demonic Combatant's Chain Clasp
+											},
+											{	-- Demonic Combatant's Chain Leggings
+												["itemID"] = 150083,	-- Demonic Combatant's Chain Leggings
+											},
+											{	-- Demonic Combatant's Chain Treads
+												["itemID"] = 150077,	-- Demonic Combatant's Chain Treads
 											},
 										},
 									},
@@ -2205,7 +2259,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 146139,	-- Ensemble: Vindictive Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -2746,7 +2800,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 147645,	-- Ensemble: Cruel Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {
@@ -3341,7 +3395,7 @@ _.Zones =
 											},
 										},
 									},
-									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
+									{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19 & 5/27/19]
 										["itemID"] = 149478,	-- Ensemble: Fierce Gladiator's Chain Armor
 										["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 										["classes"] = {

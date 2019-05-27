@@ -97,6 +97,95 @@ _.GearSets =
 								i(149587),	-- Fierce Combatant's Chain Leggings
 								i(149581),	-- Fierce Combatant's Chain Treads
 							}),
+							{	-- Fierce Combatant's Chain Armor
+								["setID"] = 1362,	-- Fierce Combatant's Chain Armor
+								["classes"] = {
+									3,	-- Hunter
+								},
+								["g"] = {
+									{	-- Fierce Combatant's Chain Helm
+										["itemID"] = 149585,	-- Fierce Combatant's Chain Helm
+									},
+									{	-- Fierce Combatant's Chain Spaulders
+										["itemID"] = 149589,	-- Fierce Combatant's Chain Spaulders
+									},
+									{	-- Fierce Combatant's Drape of the Tracker
+										["itemID"] = 149512,	-- Fierce Combatant's Drape of the Tracker
+									},
+									{	-- Fierce Combatant's Chain Armor
+										["itemID"] = 149579,	-- Fierce Combatant's Chain Armor
+									},
+									{	-- Fierce Combatant's Chain Armband
+										["itemID"] = 149593,	-- Fierce Combatant's Chain Armband
+									},
+									{	-- Fierce Combatant's Chain Gauntlets
+										["itemID"] = 149583,	-- Fierce Combatant's Chain Gauntlets
+									},
+									{	-- Fierce Combatant's Chain Clasp
+										["itemID"] = 149591,	-- Fierce Combatant's Chain Clasp
+									},
+									{	-- Fierce Combatant's Chain Leggings
+										["itemID"] = 149587,	-- Fierce Combatant's Chain Leggings
+									},
+									{	-- Fierce Combatant's Chain Treads
+										["itemID"] = 149581,	-- Fierce Combatant's Chain Treads
+									},
+									{	-- Dominant Combatant's Chain Helm
+										["itemID"] = 149835,	-- Dominant Combatant's Chain Helm
+									},
+									{	-- Dominant Combatant's Chain Spaulders
+										["itemID"] = 149839,	-- Dominant Combatant's Chain Spaulders
+									},
+									{	-- Dominant Combatant's Drape of the Tracker
+										["itemID"] = 149763,	-- Dominant Combatant's Drape of the Tracker
+									},
+									{	-- Dominant Combatant's Chain Armor
+										["itemID"] = 149829,	-- Dominant Combatant's Chain Armor
+									},
+									{	-- Dominant Combatant's Chain Armband
+										["itemID"] = 149843,	-- Dominant Combatant's Chain Armband
+									},
+									{	-- Dominant Combatant's Chain Gauntlets
+										["itemID"] = 149833,	-- Dominant Combatant's Chain Gauntlets
+									},
+									{	-- Dominant Combatant's Chain Clasp
+										["itemID"] = 149841,	-- Dominant Combatant's Chain Clasp
+									},
+									{	-- Dominant Combatant's Chain Leggings
+										["itemID"] = 149837,	-- Dominant Combatant's Chain Leggings
+									},
+									{	-- Dominant Combatant's Chain Treads
+										["itemID"] = 149831,	-- Dominant Combatant's Chain Treads
+									},
+									{	-- Demonic Combatant's Chain Helm
+										["itemID"] = 150081,	-- Demonic Combatant's Chain Helm
+									},
+									{	-- Demonic Combatant's Chain Spaulders
+										["itemID"] = 150085,	-- Demonic Combatant's Chain Spaulders
+									},
+									{	-- Demonic Combatant's Drape of the Tracker
+										["itemID"] = 150009,	-- Demonic Combatant's Drape of the Tracker
+									},
+									{	-- Demonic Combatant's Chain Armor
+										["itemID"] = 150075,	-- Demonic Combatant's Chain Armor
+									},
+									{	-- Demonic Combatant's Chain Armband
+										["itemID"] = 150089,	-- Demonic Combatant's Chain Armband
+									},
+									{	-- Demonic Combatant's Chain Gauntlets
+										["itemID"] = 150079,	-- Demonic Combatant's Chain Gauntlets
+									},
+									{	-- Demonic Combatant's Chain Clasp
+										["itemID"] = 150087,	-- Demonic Combatant's Chain Clasp
+									},
+									{	-- Demonic Combatant's Chain Leggings
+										["itemID"] = 150083,	-- Demonic Combatant's Chain Leggings
+									},
+									{	-- Demonic Combatant's Chain Treads
+										["itemID"] = 150077,	-- Demonic Combatant's Chain Treads
+									},
+								},
+							},
 							gs(1374, { 	-- Fierce Combatant's Ringmail Armor
 								i(149693),	-- Fierce Combatant's Ringmail Helm
 								i(149697),	-- Fierce Combatant's Ringmail Spaulders
