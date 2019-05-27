@@ -39,16 +39,22 @@ _.Zones =
 						crit(3),		-- Avenging the Rockpool
 					}),
 --]]
-					qg(42298, qa(26172, {	-- A Bloodmage's Gotta Eat Too
-						i(59384),
-						i(59386),
-						i(59385),
-					})),
-					qg(7505, qh(25690, {	-- A Bloodmage's Gotta Eat Too
-						i(59422),
-						i(59424),
-						i(59423),
-					})),
+					qa(26172, {	-- A Bloodmage's Gotta Eat Too
+						["qg"] = 42298,	-- 
+						["g"] = {
+							i(59384),	-- 
+							i(59386),	-- 
+							i(59385),	-- 
+						},
+					}),
+					qh(25690, {	-- A Bloodmage's Gotta Eat Too
+						["qg"] = 7505,	-- 
+						["g"] = {
+							i(59422),	-- 
+							i(59424),	-- 
+							i(59423),	-- 
+						},
+					}),
 					{	-- Attack of the Iron Horde
 						["questID"] = 35745,
 						["races"] = HORDE_ONLY,
@@ -76,13 +82,27 @@ _.Zones =
 						},
 					},
 --[[
-					qg(9540, qa(25715)),	-- A Closer Look
-					qg(42349, qa(26185)),	-- Advice from the Cenarion Circle
-					qg(41354, q(25703)),	-- Atrocities
-					qg(7506, qh(25684)),	-- Attune the Bloodstone
-					qg(42298, qa(26158)),	-- Attune the Bloodstone
-					qg(42298, qa(26160)),	-- Blood Ritual
-					qg(7506, qh(25686)),	-- Blood Ritual
+					qa(25715, {	-- A Closer Look
+						["qg"] = 9540,	-- 
+					}),
+					qa(26185, {	-- Advice from the Cenarion Circle
+						["qg"] = 42349,	-- 
+					}),
+					q(25703, {	-- Atrocities
+						["qg"] = 41354,	-- 
+					}),
+					qh(25684, {	-- Attune the Bloodstone
+						["qg"] = 7506,	-- 
+					}),
+					qa(26158, {	-- Attune the Bloodstone
+						["qg"] = 42298,	-- 
+					}),
+					qa(26160, {	-- Blood Ritual
+						["qg"] = 42298,	-- 
+					}),
+					qh(25686, {	-- Blood Ritual
+						["qg"] = 7506,	-- 
+					}),
 --					q(35499),	-- Blow up towers (NOT IN GAME?)
 --]]
 					{	-- Attack on Nethergarde
@@ -92,24 +112,24 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36292,	-- Investigating the Invasion
 					},
-					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
-						["questID"] = 37677,
-					},
-					{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
-						["questID"] = 37676,
-					},
-					qg(5385, qa(25716, {	-- Cultists at our Doorstep
-						i(59378),
-						i(59376),
-						i(59379),
-						i(59377),
-					})),
-					qg(9540, qa(25709, {	-- Curtail the Darktail
-						i(59371),
-						i(59369),
-						i(59370),
-						i(59368),
-					})),
+					qa(25716, {	-- Cultists at our Doorstep
+						["qg"] = 5385,	-- 
+						["g"] = {
+							i(59378),	-- 
+							i(59376),	-- 
+							i(59379),	-- 
+							i(59377),	-- 
+						},
+					}),
+					qa(25709, {	-- Curtail the Darktail
+						["qg"] = 9540,	-- 
+						["g"] = {
+							i(59371),	-- 
+							i(59369),	-- 
+							i(59370),	-- 
+							i(59368),	-- 
+						},
+					}),
 					{	-- Death to the Dreadmaul
 						["questID"] = 35762,
 						["qg"] = 84928,	-- Thrall
@@ -133,15 +153,22 @@ _.Zones =
 						},
 					},
 --[[
-					qg(42348, qh(25719)),	-- Demoniac Vessel
-					qg(42352, qa(26186)),	-- Demoniac Vessel
+					qh(25719, {	-- Demoniac Vessel
+						["qg"] = 42348,	-- 
+					}),
+					qa(26186, {	-- Demoniac Vessel
+						["qg"] = 42352,	-- 
+					}),
 --]]
-					qg(5393, qa(25711, {	-- Eliminate the Okril'lon
-						i(59373),
-						i(59374),
-						i(59372),
-						i(59375),
-					})),
+					qa(25711, {	-- Eliminate the Okril'lon
+						["qg"] = 5393,	-- 
+						["g"] = {
+							i(59373),	-- 
+							i(59374),	-- 
+							i(59372),	-- 
+							i(59375),	-- 
+						},
+					}),
 					{	-- Ending Executions
 						["questID"] = 35744,
 						["qg"] = 85247,	-- Rokhan
@@ -198,24 +225,50 @@ _.Zones =
 						},
 					},
 --[[					
-					qg(41159, qh(25693)),	-- Enhancing the Stone
-					qg(42299, qa(26166)),	-- Enhancing the Stone
-					qg(41354, q(25705)),	-- False Idols
-					qg(41124, qh(25674)),	-- Futile Pride
-					qg(41124, qh(25676)),	-- Heartstrike
-					qg(41265, q(25702)),	-- Home... Gone... Naga...
-					qg(42344, qh(25718)),	-- How Best to Proceed
-					qg(41333, qh(25679)),	-- Into the Mountain
-					qg(41133, qh(25677)),	-- It's All Mine
-					qg(5385, qa(26157)),	-- Kasim Sharim
-					qg(79675, qh(34741)),	-- Keli'dan the Breaker
+					qh(25693, {	-- Enhancing the Stone
+						["qg"] = 41159,	-- 
+					}),
+					qa(26166, {	-- Enhancing the Stone
+						["qg"] = 42299,	-- 
+					}),
+					q(25705, {	-- False Idols
+						["qg"] = 41354,	-- 
+					}),
+					qh(25674, {	-- Futile Pride
+						["qg"] = 41124,	-- 
+					}),
+					qh(25676, {	-- Heartstrike
+						["qg"] = 41124,	-- 
+					}),
+					q(25702, {	-- Home... Gone... Naga...
+						["qg"] = 41265,	-- 
+					}),
+					qh(25718, {	-- How Best to Proceed
+						["qg"] = 42344,	-- 
+					}),
+					qh(25679, {	-- Into the Mountain
+						["qg"] = 41333,	-- 
+					}),
+					qh(25677, {	-- It's All Mine
+						["qg"] = 41133,	-- 
+					}),
+					qa(26157, {	-- Kasim Sharim
+						["qg"] = 5385,	-- 
+					}),
+					qh(34741, {	-- Keli'dan the Breaker
+						["qg"] = 79675,	-- 
+					}),
 					i(8244, {	-- Flawless Draenethyst Sphere
 						q(25772, {	-- Kum'isha's Endeavors
 							["repeatable"] = true,
 						}),
 					}),
-					qg(7506, qh(25700)),	-- Loramus Thalipedes Awaits
-					qg(5393, qa(25710)),	-- Minor Distractions
+					qh(25700, {	-- Loramus Thalipedes Awaits
+						["qg"] = 7506,	-- 
+					}),
+					qa(25710, {	-- Minor Distractions
+						["qg"] = 5393,	-- 
+					}),
 --]]					
 					{	-- For Nethergarde!
 						["questID"] = 35492,
@@ -279,27 +332,42 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36307,	-- Investigating the Invasion
 					},
-					qg(41134, qh(25682, {	-- Mission Complete
-						i(59414),
-						i(59416),
-						i(59415),
-						i(59417),
-					})),
-					qg(41354, q(25706, {	-- Neptool's Revenge
-						i(59403),
-						i(59404),
-					})),
+					qh(25682, {	-- Mission Complete
+						["qg"] = 41134,	-- 
+						["g"] = {
+							i(59414),	-- 
+							i(59416),	-- 
+							i(59415),	-- 
+							i(59417),	-- 
+						},
+					}),
+					q(25706, {	-- Neptool's Revenge
+						["qg"] = 41354,	-- 
+						["g"] = {
+							i(59403),	-- 
+							i(59404),	-- 
+						},
+					}),
 --[[					
-					qg(42262, qa(25712)),	-- Nethergarde Reigns
-					qg(7506, qh(25687)),	-- Not Just Any Body
-					qg(42298, qa(26161)),	-- Not Just Any Body
+					qa(25712, {	-- Nethergarde Reigns
+						["qg"] = 42262,	-- 
+					}),
+					qh(25687, {	-- Not Just Any Body
+						["qg"] = 7506,	-- 
+					}),
+					qa(26161, {	-- Not Just Any Body
+						["qg"] = 42298,	-- 
+					}),
 --]]						
-					qg(41125, qh(25675, {	-- Ogre Combat
-						i(59407),
-						i(59408),
-						i(59409),
-						i(59406),
-					})),
+					qh(25675, {	-- Ogre Combat
+						["qg"] = 41125,	-- 
+						["g"] = {
+							i(59407),	-- 
+							i(59408),	-- 
+							i(59409),	-- 
+							i(59406),	-- 
+						},
+					}),
 					{	-- Okrilla's Revenge
 						["questID"] = 35764,
 						["qg"] = 76609,	-- Okrilla
@@ -317,7 +385,9 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 					}),
-					qg(9540, qa(25708)),	-- Our Fallen Friends
+					qa(25708, {	-- Our Fallen Friends
+						["qg"] = 9540,	-- 
+					}),
 --]]					
 					{	-- Peeking into the Portal
 						["questID"] = 36379,
@@ -331,16 +401,25 @@ _.Zones =
 						["coord"] = { 71.8, 48.9 },
 						["races"] = HORDE_ONLY,
 					},
-					qg(41133, qh(25678, {	-- Pick Your Fate
-						i(59411),
-						i(59412),
-						i(59413),
-						i(59410),
-					})),
+					qh(25678, {	-- Pick Your Fate
+						["qg"] = 41133,	-- 
+						["g"] = {
+							i(59411),	-- 
+							i(59412),	-- 
+							i(59413),	-- 
+							i(59410),	-- 
+						},
+					}),
 --[[					
-					qg(19254, qh(25694)),	-- Protecting Our Rear
-					qg(16841, qa(26173)),	-- Protecting Our Rear
-					qg(42264, qa(25713)),	-- Remove Their Arms
+					qh(25694, {	-- Protecting Our Rear
+						["qg"] = 19254,	-- 
+					}),
+					qa(26173, {	-- Protecting Our Rear
+						["qg"] = 16841,	-- 
+					}),
+					qa(25713, {	-- Remove Their Arms
+						["qg"] = 42264,	-- 
+					}),
 --]]					
 					{	-- Ransacking Nethergarde
 						["questID"] = 35761,
@@ -386,46 +465,78 @@ _.Zones =
 						},
 					},
 --[[					
-					qg(41134, qh(25681)),	-- Some People Just Need Killing
-					qg(16841, qa(26175)),	-- Surwich
-					qg(41134, qh(25680)),	-- That's Not Us
+					qh(25681, {	-- Some People Just Need Killing
+						["qg"] = 41134,	-- 
+					}),
+					qa(26175, {	-- Surwich
+						["qg"] = 16841,	-- 
+					}),
+					qh(25680, {	-- That's Not Us
+						["qg"] = 41134,	-- 
+					}),
 --]]					
-					qg(7506, qh(25688, {	-- The Altar of Storms
-						i(59428),
-						i(59425),
-						i(59427),
-						i(59429),
-						i(59426),
-					})),
-					qg(42298, qa(26162, {	-- The Altar of Storms	
-						i(59390),
-						i(59387),
-						i(59389),
-						i(59391),
-						i(59388),
-					})),
+					qh(25688, {	-- The Altar of Storms
+						["qg"] = 7506,	-- 
+						["g"] = {
+							i(59428),	-- 
+							i(59425),	-- 
+							i(59427),	-- 
+							i(59429),	-- 
+							i(59426),	-- 
+						},
+					}),
+					qa(26162, {	-- The Altar of Storms
+						["qg"] = 42298,	-- 
+						["g"] = {
+							i(59390),	-- 
+							i(59387),	-- 
+							i(59389),	-- 
+							i(59391),	-- 
+							i(59388),	-- 
+						},
+					}),
 --[[					
-					qg(42298, qa(26167)),	-- The Amulet of Allistarj
-					qg(7783, qh(25697)),	-- The Amulet of Allistarj
+					qa(26167, {	-- The Amulet of Allistarj
+						["qg"] = 42298,	-- 
+					}),
+					qh(25697, {	-- The Amulet of Allistarj
+						["qg"] = 7783,	-- 
+					}),
 --]]					
-					qg(42298, qa(26169, {	-- The Amulet of Grol
-						i(59381),
-						i(59382),
-						i(59380),
-						i(59383),
-					})),
-					qg(7783, qh(25699, {	-- The Amulet of Grol
-						i(59419),
-						i(59420),
-						i(59418),
-						i(59421),
-					})),
+					qa(26169, {	-- The Amulet of Grol
+						["qg"] = 42298,	-- 
+						["g"] = {
+							i(59381),	-- 
+							i(59382),	-- 
+							i(59380),	-- 
+							i(59383),	-- 
+						},
+					}),
+					qh(25699, {	-- The Amulet of Grol
+						["qg"] = 7783,	-- 
+						["g"] = {
+							i(59419),	-- 
+							i(59420),	-- 
+							i(59418),	-- 
+							i(59421),	-- 
+						},
+					}),
 --[[					
-					qg(42298, qa(26168)),	-- The Amulet of Sevine
-					qg(7783, qh(25698)),	-- The Amulet of Sevine
-					qg(41159, qh(25691)),	-- The Charred Granite of the Dark Portal
-					qg(42299, qa(26164)),	-- The Charred Granite of the Dark Portal
-					qg(42344, qh(25717)),	-- The Demons and the Druid
+					qa(26168, {	-- The Amulet of Sevine
+						["qg"] = 42298,	-- 
+					}),
+					qh(25698, {	-- The Amulet of Sevine
+						["qg"] = 7783,	-- 
+					}),
+					qh(25691, {	-- The Charred Granite of the Dark Portal
+						["qg"] = 41159,	-- 
+					}),
+					qa(26164, {	-- The Charred Granite of the Dark Portal
+						["qg"] = 42299,	-- 
+					}),
+					qh(25717, {	-- The Demons and the Druid
+						["qg"] = 42344,	-- 
+					}),
 --]]					
 					{	-- The Dark Portal
 						["questID"] = 36881,
@@ -436,50 +547,78 @@ _.Zones =
 					{	-- The Dark Portal (tracking quest?)
 						["questID"] = 37187,
 					},
-					qg(42349, qa(26187, {	-- The Downfall of Marl Wormthorn
-						i(59400),
-						i(59402),
-						i(59401),
-						i(59399),
-					})),
-					qg(42344, qh(25720, {	-- The Downfall of Marl Wormthorn
-						i(59439),
-						i(59438),
-						i(59440),
-						i(59437),
-					})),
+					qa(26187, {	-- The Downfall of Marl Wormthorn
+						["qg"] = 42349,	-- 
+						["g"] = {
+							i(59400),	-- 
+							i(59402),	-- 
+							i(59401),	-- 
+							i(59399),	-- 
+						},
+					}),
+					qh(25720, {	-- The Downfall of Marl Wormthorn
+						["qg"] = 42344,	-- 
+						["g"] = {
+							i(59439),	-- 
+							i(59438),	--
+							i(59440),	-- 
+							i(59437),	-- 
+						},
+					}),
 --[[					
-					qg(41124, qh(25683)),	-- The Dreadmaul Furnace
-					qg(42298, qa(26170)),	-- The Final Ritual
-					qg(42298, qa(26159)),	-- The First Step
-					qg(7506, qh(25685)),	-- The First Step
+					qh(25683, {	-- The Dreadmaul Furnace
+						["qg"] = 41124,	-- 
+					}),
+					qa(26170, {	-- The Final Ritual
+						["qg"] = 42298,	-- 
+					}),
+					qa(26159, {	-- The First Step
+						["qg"] = 42298,	-- 
+					}),
+					qh(25685, {	-- The First Step
+						["qg"] = 7506,	-- 
+					}),
 					q(25707, {	-- The Future of the Rockpool
 						["description"] = "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
 					}),
-					qg(19254, qh(25696)),	-- The Sunveil Excursion
-					qg(41159, qh(25692)),	-- The Vile Blood of Demons
-					qg(42299, qa(26165)),	-- The Vile Blood of Demons
-					qg(19254, qh(9407)),	-- Through the Dark Portal
-					qg(16841, qa(10119)),	-- Through the Dark Portal
-					qg(42298, qa(26163)),	-- Time is Short
-					qg(7783, qh(25689)),	-- Time is Short
+					qh(25696, {	-- The Sunveil Excursion
+						["qg"] = 19254,	-- 
+					}),
+					qh(25692, {	-- The Vile Blood of Demons
+						["qg"] = 41159,	-- 
+					}),
+					qa(26165, {	-- The Vile Blood of Demons
+						["qg"] = 42299,	-- 
+					}),
+					qh(9407, {	-- Through the Dark Portal
+						["qg"] = 19254,	-- 
+					}),
+					qa(10119, {	-- Through the Dark Portal
+						["qg"] = 16841,	-- 
+					}),
+					qa(26163, {	-- Time is Short
+						["qg"] = 42298,	-- 
+					}),
+					qh(25689, {	-- Time is Short
+						["qg"] = 7783,	-- 
+					}),
 --]]					
 					{	-- Toothsmash the Annihilator
 						["questID"] = 35495,
 						["qg"] = 84929,	-- Vindicator Maraad
 						["coord"] = { 52.0, 28.6 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							35492,	-- For Nethergarde!
+							35486,	-- Lunatic Lieutenants
+							35494,	-- Mementos of the Fallen
+						},
 						["groups"] = {
 							i(118771),	-- Wildfire Windcloak
 							i(118772),	-- Frostshaper Cape
 							i(118773),	-- Butcher's Wrap
 							i(118774),	-- Armswake Greatcloak
 							i(118775),	-- Night Prowler's Cloak
-						},
-						["sourceQuests"] = {
-							35492,	-- For Nethergarde!
-							35486,	-- Lunatic Lieutenants
-							35494,	-- Mementos of the Fallen
 						},
 					},
 					{	-- Toothsmash the Annihilator
@@ -487,17 +626,17 @@ _.Zones =
 						["qg"] = 84928,	-- Thrall
 						["coord"] = { 48.7, 31.7 },
 						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							35751,	-- Attack on Nethergarde
+							35750,	-- Lunatic Lieutenants
+							35761,	-- Ransacking Nethergarde
+						},
 						["groups"] = {
 							i(118771),	-- Wildfire Windcloak
 							i(118772),	-- Frostshaper Cape
 							i(118773),	-- Butcher's Wrap
 							i(118774),	-- Armswake Greatcloak
 							i(118775),	-- Night Prowler's Cloak
-						},
-						["sourceQuests"] = {
-							35751,	-- Attack on Nethergarde
-							35750,	-- Lunatic Lieutenants
-							35761,	-- Ransacking Nethergarde
 						},
 					},
 					{	-- Under Siege
@@ -526,21 +665,37 @@ _.Zones =
 							i(111600),	-- Iron Starlette
 						},
 					},
---					qg(5393, qa(25714)),	-- Watcher Mahar Ba (add'l QG 9540)
-					qg(16841, qa(26174, {	-- Watching Our Back
-						i(59394),
-						i(59393),
-						i(59395),
-					})),
-					qg(19254, qh(25695, {	-- Watching Our Back
-						i(59433),
-						i(59432),
-						i(59431),
-					})),
+--[[				
+					qa(25714, {	-- Watcher Mahar Ba (add'l QG 9540)
+						["qg"] = 5393,	-- 
+					}),
+]]--
+					qa(26174, {	-- Watching Our Back
+						["qg"] = 16841,	-- 
+						["g"] = {
+							i(59394),	-- 
+							i(59393),	-- 
+							i(59395),	-- 
+						},
+					}),
+					qh(25695, {	-- Watching Our Back
+						["qg"] = 19254,	-- 
+						["g"] = {
+							i(59433),	-- 
+							i(59432),	-- 
+							i(59431),	-- 
+						},
+					}),
 --[[					
-					qg(42349, qa(26184)),	-- Wormthorn's Dream
-					qg(7783, qa(26171)),	-- You Are Rakh'likh, Demon
-					qg(7783, qh(25701)),	-- You Are Rakh'likh, Demon
+					qa(26184, {	-- Wormthorn's Dream
+						["qg"] = 42349,	-- 
+					}),
+					qa(26171, {	-- You Are Rakh'likh, Demon
+						["qg"] = 7783,	-- 
+					}),
+					qh(25701, {	-- You Are Rakh'likh, Demon
+						["qg"] = 7783,	-- 
+					}),
 --]]
 				}),
 				n(-16,  {	-- Rares

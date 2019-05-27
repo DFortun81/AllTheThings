@@ -26,12 +26,16 @@ _.Zones =
 					p(419), 	-- Small Frog
 					p(379), 	-- Squirrel
 					p(400), 	-- Widow Spiderling
-					qg(65655, q(31850, {	-- Eric Davidson
+					q(31850, {	-- Eric Davidson
+						["qg"] = 65655,	-- 
 						["isDaily"] = true,
-					})),
-					qg(65655, qa(31729, {	-- Steven Lisbane
-						i(89125),	-- Sack of Pet Supplies
-					})),
+					}),
+					qa(31729, {	-- Steven Lisbane
+						["qg"] = 65655,	-- 
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
 				}),
 				n(-17,  {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
@@ -43,74 +47,111 @@ _.Zones =
 						crit(5),		-- Citizens of Darkshire
 					})),
 ]]--
---					qg(43730, qa(26720)),	-- A Curse We Cannot Lift
-					qg(576, qa(26797, {	-- A Daughters Love
-						i(60937),
-						i(156954),	-- Refurbished Archeus
-						i(156955),	-- Reconditioned Archeus
-					})),
-					qg(43738, qa(26707, {	-- A Deadly Vine
-						i(60924),
-						i(60925),
-						i(60926),
-						i(60927),
-						i(131587),
-						i(157003),	-- Corpseweed Hewer
-					})),
 --[[
-					qart(qg(101651, q(40785, {	-- A Foe of the Dark
+					qa(26720, {	-- A Curse We Cannot Lift
+						["qg"] = 43730,	-- 
+					}),
+]]--
+					qa(26797, {	-- A Daughters Love
+						["qg"] = 576,	-- 
+						["g"] = {
+							i(60937),	-- 
+							i(156954),	-- Refurbished Archeus
+							i(156955),	-- Reconditioned Archeus
+						},
+					}),
+					qa(26707, {	-- A Deadly Vine
+						["qg"] = 43738,	-- 
+						["g"] = {
+							i(60924),	-- 
+							i(60925),	-- 
+							i(60926),	-- 
+							i(60927),	-- 
+							i(131587),	-- 
+							i(157003),	-- Corpseweed Hewer
+						},
+					}),
+--[[
+					qart(q(40785, {	-- A Foe of the Dark
+						["qg"] = 101651,	-- 
 						["classes"] = {11},	-- Druid
-					}))),
+					})))
 --]]
-					qg(288, qa(26787, {	-- Bear In Mind
-						i(60934),
-						i(60935),
-						i(131604),
-					})),
-					qg(264, qa(26686, {	-- Bones That Walk
-						i(60941),
-						i(60942),
-						i(60943), -- Signet of the Night Watch
-						i(131581),
-					})),
+					qa(26787, {	-- Bear In Mind
+						["qg"] = 288,	-- 
+						["g"] = {
+							i(60934),	-- 
+							i(60935),	-- 
+							i(131604),	-- 
+						},
+					}),
+					qa(26686, {	-- Bones That Walk
+						["qg"] = 264,	-- 
+						["g"] = {
+							i(60941),	-- 
+							i(60942),	-- 
+							i(60943), -- Signet of the Night Watch
+							i(131581),	-- 
+						},
+					}),
 --[[
 					o(204824, {	-- Lightforged Arch
 						qa(26722),	-- Buried Below
 					}),
-					qg(110684, q(43382, {	-- Champion: Natalie Seline
+					q(43382, {	-- Champion: Natalie Seline
+						["qg"] = 110684,	-- 
 						["classes"] = {5},	-- Priest
-					})),
---]]					qg(276, qa(26685, {	-- Classy Glass
-						i(60908),
-						i(60909),
-						i(131580),
-					})),
+					}),
+--]]				qa(26685, {	-- Classy Glass
+						["qg"] = 276,	-- 
+						["g"] = {
+							i(60908),	-- 
+							i(60909),	-- 
+							i(131580),	-- 
+						},
+					}),
 --[[
-					qg(43453, qa(26672)),	-- Clawing at the Truth
-					qg(620, q(3861)),	-- CLUCK!
+					qa(26672, {	-- Clawing at the Truth
+						["qg"] = 43453,	-- 
+					}),
+					q(3861, {	-- CLUCK!
+						["qg"] = 620,	-- 
+					}),
 --]]
-					qg(43730, qa(26760, {	-- Cry For The Moon
-						i(60928),
-						i(60929),
-						i(60930),
-						i(131597),
-					})),
-					qg(265, qa(26655, {	-- Deliver the Thread
-						i(60899),
-						i(60900),
-						i(60901),
-						i(131574),
-					})),
+					qa(26760, {	-- Cry For The Moon
+						["qg"] = 43730,	-- 
+						["g"] = {
+							i(60928),	-- 
+							i(60929),	-- 
+							i(60930),	-- 
+							i(131597),	-- 
+						},
+					}),
+					qa(26655, {	-- Deliver the Thread
+						["qg"] = 265,	-- 
+						["g"] = {
+							i(60899),	-- 
+							i(60900),	-- 
+							i(60901),	-- 
+							i(131574),	-- 
+						},
+					}),
 --[[
-					qg(43738, qa(26719)),	-- Delivery to Master Harris
+					qa(26719, {	-- Delivery to Master Harris
+						["qg"] = 43738,	-- 
+					}),
 ]]--
-					qg(272, qa(26623, {	-- Dusky Crab Cakes
-						i(3683),	-- Recipe: Gooey Spider Cake
-					})),
+					qa(26623, {	-- Dusky Crab Cakes
+						["qg"] = 272,	-- 
+						["g"] = {
+							i(3683),	-- Recipe: Gooey Spider Cake
+						},
+					}),
 --[[
-					qg(100323, q(40834, {	-- Following the Curse
+					q(40834, {	-- Following the Curse
+						["qg"] = 100323,	-- 
 						["classes"] = {11},	-- Druid
-					})),
+					}),
 --]]
 					q(40588, {	-- Following the Curse
 						["sourceQuests"] = { 40495 },	-- Ulthalesh, the Deadwind Harvester
@@ -120,139 +161,236 @@ _.Zones =
 						["qg"] = 100323,	-- Revil Kost
 					}),
 --[[
-					qg(100323, q(40931, {	-- Following the Curse
+					q(40931, {	-- Following the Curse
+						["qg"] = 100323,	-- 
 						["classes"] = {6},	-- Death Knight
-					})),
-					qg(273, qa(26661)),	-- Gather Rot Blossoms
-					qg(265, qa(26652)),	-- Ghost Hair Thread
-					qg(289, qa(26677)),	-- Ghoulish Effigy
-					qg(43731, qa(26725)),	-- Guided by the Light
-					qg(267, qa(26669)),	-- In A Dark Corner
-					qg(111041, q(43392, {	-- Into the Void
+					}),
+					qa(26661, {
+						["qg"] = 273,	-- 
+					}),	-- Gather Rot Blossoms
+					qa(26652, {
+						["qg"] = 265,	-- 
+					}),	-- Ghost Hair Thread
+					qa(26677, {
+						["qg"] = 289,	-- 
+					}),	-- Ghoulish Effigy
+					qa(26725, {
+						["qg"] = 43731,	-- 
+					}),	-- Guided by the Light
+					qa(26669, {
+						["qg"] = 267,	-- 
+					}),	-- In A Dark Corner
+					q(43392, {	-- Into the Void
+						["qg"] = 111041,	-- 
 						["classes"] = {5},	-- Priest
-					})),
-					qg(101656, q(40784, {	-- Its Rightful Place
+					}),
+					q(40784, {	-- Its Rightful Place
+						["qg"] = 101656,	-- 
 						["classes"] = {11},	-- Druid
-					})),
+					}),
 --]]
-					qg(273, qa(26676, {	-- Juice Delivery
-						i(60902),
-						i(60903),
-						i(131579),
-					})),
---					qg(276, qa(26683)),	-- Look To The Stars
-					qg(265, qa(26674, {	-- Mistmantle's Revenge
-						i(60917),
-						i(60918),
-						i(60919),
-						i(60920),
-						i(131578),
-					})),
---					qg(264, qa(26795)),	-- Mor'Ladim
+					qa(26676, {	-- Juice Delivery
+						["qg"] = 273,	-- 
+						["g"] = {
+							i(60902),	-- 
+							i(60903),	-- 
+							i(131579),	-- 
+						},
+					}),
+--[[
+					qa(26683, {	-- Look To The Stars
+						["qg"] = 276,	-- 
+					}),
+]]--
+					qa(26674, {	-- Mistmantle's Revenge
+						["qg"] = 265,	-- 
+						["g"] = {
+							i(60917),	-- 
+							i(60918),	-- 
+							i(60919),	-- 
+							i(60920),	-- 
+							i(131578),	-- 
+						},
+					}),
+--[[
+					qa(26795, {	-- Mor'Ladim
+						["qg"] = 264,	-- 
+					}),
+]]--
 					o(204825, {	-- Lightforged Crest
 						qa(26754, {	-- Morbent's Bane
-							i(60939),
-							i(60940),
-							i(131596),
+							i(60939),	-- 
+							i(60940),	-- 
+							i(131596),	-- 
 						}),
 					}),
 --[[
-					qg(268, qa(26794)),	-- Morgan Ladimore
-					qg(289, qa(26681)),	-- Note to the Mayor
-					qg(289, qa(26680)),	-- Ogre Thieves
-					qg(43453, qa(26785)),	-- Part of the Pack
-					qg(43731, qa(26838)),	-- Rebels Without a Clue
-					qg(302, qa(26654)),	-- Return the Comb
-					qg(110684, q(43393, {	-- Rising Shadows
+					qa(26794, {	-- Morgan Ladimore
+						["qg"] = 268,	-- 
+					}),
+					qa(26681, {	-- Note to the Mayor
+						["qg"] = 289,	-- 
+					}),
+					qa(26680, {	-- Ogre Thieves
+						["qg"] = 289,	-- 
+					}),
+					qa(26785, {	-- Part of the Pack
+						["qg"] = 43453,	-- 
+					}),
+					qa(26838, {	-- Rebels Without a Clue
+						["qg"] = 43731,	-- 
+					}),
+					qa(26654, {	-- Return the Comb
+						["qg"] = 302,	-- 
+					}),
+					q(43393, {	-- Rising Shadows
+						["qg"] = 110684,	-- 
 						["classes"] = {5},	-- Priest
-					})),
+					}),
 --]]
-					qg(267, qa(26670, {	-- Roland's Doom
-						i(60914),
-						i(60915),
-						i(60916),
-						i(131577),
-						i(157002),	-- Exorcist's Crossbow
-						i(156975),	-- Exorcist's Dagger
-					})),
+					qa(26670, {	-- Roland's Doom
+						["qg"] = 267,	-- 
+						["g"] = {
+							i(60914),	-- 
+							i(60915),	-- 
+							i(60916),	-- 
+							i(131577),	-- 
+							i(157002),	-- Exorcist's Crossbow
+							i(156975),	-- Exorcist's Dagger
+						},
+					}),
 					qa(26620, {	-- Seasoned Wolf Kabobs
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
 					}),
 
 --[[
-					qg(272, qa(26620)),	-- Seasoned Wolf Kabobs
-					qg(111041, q(43391, {	-- Secrets of the Void
+					qa(26620, {	-- Seasoned Wolf Kabobs
+						["qg"] = 272,	-- 
+					}),
+					q(43391, {	-- Secrets of the Void
+						["qg"] = 111041,	-- 
 						["classes"] = {5},	-- Priest
 					})),
-					qg(43731, qa(26777)),	-- Soothing Spirits
-					qg(289, qa(26653)),	-- Supplies from Darkshire
+					qa(26777, {	-- Soothing Spirits
+						["qg"] = 43731,	-- 
+					}),
+					qa(26653, {	-- Supplies from Darkshire
+						["qg"] = 289,	-- 
+					}),
 --]]
 					qa(1042, {	-- The Carevin Family
 						["u"] = 40,
 						["qg"] = 267,	-- Clerk Daltry
 						["sourceQuest"] = 1041,	-- The Caravan Road
 					}),
-					qg(43731, qa(26778, {	-- The Cries of the Dead
-						i(60921),
-						i(60922),
-						i(60923),
-						i(131600),
-					})),
---					qg(264, qa(26796)),	-- The Daughter Who Lived
-					qg(263, qa(26727, {	-- The Embalmer's Revenge
-						i(60905),	-- Ello's Band
-						i(60906),
-						i(60907),
-					})),
+					qa(26778, {	-- The Cries of the Dead
+						["qg"] = 43731,	-- 
+						["g"] = {
+							i(60921),	-- 
+							i(60922),	-- 
+							i(60923),	-- 
+							i(131600),	-- 
+						},
+					}),
+--[[
+					qa(26796, {	-- The Daughter Who Lived
+						["qg"] = 264,	-- 
+					}),
+]]--
+					qa(26727, {	-- The Embalmer's Revenge
+						["qg"] = 263,
+						["g"] = {
+							i(60905),	-- Ello's Band
+							i(60906),	-- 
+							i(60907),	-- 
+						},
+					}),
 					qa(1043, {	-- The Scythe of Elune
 						["u"] = 40,
 						["qg"] = 661,	-- Jonathan Carevin
 						["sourceQuest"] = 1042,	-- The Carevin Family
 					}),
 --[[
-					qg(43861, qa(26723)),	-- The Fate of Morbent Fel
-					qg(267, qa(26671)),	-- The Fate of Stalvan Mistmantle
+					qa(26723, {	-- The Fate of Morbent Fel
+						["qg"] = 43861,	-- 
+					}),
+					qa(26671, {	-- The Fate of Stalvan Mistmantle
+						["qg"] = 267,	-- 
+					}),
 					o(204817, {	-- Lightforged Rod
 						qa(26753),	-- The Halls of the Dead
 					}),
-					qg(264, qa(26627)),	-- The Hermit
-					qg(302, qa(26684)),	-- The Insane Ghoul
-					qg(288, qa(26721)),	-- The Jitters-Bugs
-					qg(43453, qa(26666)),	-- The Legend of Stalvan
-					qg(43861, qa(26724)),	-- The Lurking Lich
-					qg(264, qa(26645)),	-- The Night Watch
-					qg(663, qa(26689)),	-- The Rotting Orchard
+					qa(26627, {	-- The Hermit
+						["qg"] = 264,	-- 
+					}),
+					qa(26684, {	-- The Insane Ghoul
+						["qg"] = 302,	-- 
+					}),
+					qa(26721, {	-- The Jitters-Bugs
+						["qg"] = 288,	-- 
+					}),
+					qa(26666, {	-- The Legend of Stalvan
+						["qg"] = 43453,	-- 
+					}),
+					qa(26724, {	-- The Lurking Lich
+						["qg"] = 43861,	-- 
+					}),
+					qa(26645, {	-- The Night Watch
+						["qg"] = 264,	-- 
+					}),
+					qa(26689, {	-- The Rotting Orchard
+						["qg"] = 663,	-- 
+					}),
 --]]
-					qg(267, qa(26667, {	-- The Stolen Letters
-						i(60911),
-						i(60912),
-						i(60913),
-						i(131575),
-						i(156974),	-- Archivist's Walking Stick
-						i(156973),	-- Archivist's Staff
-					})),
+					qa(26667, {	-- The Stolen Letters
+						["qg"] = 267,	-- 
+						["g"] = {
+							i(60911),	-- 
+							i(60912),	-- 
+							i(60913),	-- 
+							i(131575),	-- 
+							i(156974),	-- Archivist's Walking Stick
+							i(156973),	-- Archivist's Staff
+						},
+					}),
 --[[
 					o(61, {	-- A Weathered Grave
 						qa(26793),	-- The Weathered Grave
 					}),
-					qg(43738, qa(26717)),	-- The Yorgen Worgen
-					qg(663, qa(26690)),	-- Vile and Tainted
-					qg(888, qa(25235)),	-- Vulgar Vul'Gol
+					qa(26717, {	-- The Yorgen Worgen
+						["qg"] = 43738,	-- 
+					}),
+					qa(26690, {	-- Vile and Tainted
+						["qg"] = 663,	-- 
+					}),
+					qa(25235, {	-- Vulgar Vul'Gol
+						["qg"] = 888,	-- 
+					}),
 --]]
-					qg(264, qa(26618, {	-- Wolves at Our Heels
-						i(60896),
-						i(60897),
-						i(131564),
-					})),
-					qg(663, qa(26691, {	-- Worgen in the Woods
-						i(60931),
-						i(60932),
-						i(60933),
-						i(131582),
-					})),
+					qa(26618, {	-- Wolves at Our Heels
+						["qg"] = 264,	-- 
+						["g"] = {
+							i(60896),	-- 
+							i(60897),	-- 
+							i(131564),	-- 
+						},
+					}),
+					qa(26691, {	-- Worgen in the Woods
+						["qg"] = 663,	-- 
+						["g"] = {
+							i(60931),	-- 
+							i(60932),	-- 
+							i(60933),	-- 
+							i(131582),	-- 
+						},
+					}),
 --[[
-					qg(663, qa(26688)),	-- Worgen in the Woods
-					qg(289, qa(26660)),	-- Zombie Juice
+					qa(26688, {	-- Worgen in the Woods
+						["qg"] = 663,	-- 
+					}),
+					qa(26660, {	-- Zombie Juice
+						["qg"] = 289,	-- 
+					}),
 --]]
 				}),
 				n(-16,  {	-- Rares

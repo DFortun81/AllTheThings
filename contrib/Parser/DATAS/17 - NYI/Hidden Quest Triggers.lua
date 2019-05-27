@@ -12,4 +12,10 @@ _.NeverImplemented =
 	{	-- Triggered by completing The Blood Furnace
 		["questID"] = 35566,
 	},
+	{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
+		["questID"] = 37677,
+	},
+	{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+		["questID"] = 37676,
+	},
 };
