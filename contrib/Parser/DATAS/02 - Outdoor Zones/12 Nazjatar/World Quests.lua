@@ -23,6 +23,10 @@ _.Zones =
 						["questID"] = 55891,
 						["isWQ"] = 120,
 					},
+					{	-- Champion Kyx'zhul the Deepspeaker
+						["questID"] = 55889,
+						["isWQ"] = 120,
+					},
 					{	-- Champion Qalina, Spear of Ice
 						["questID"] = 55888,
 						["isWQ"] = 120,
@@ -97,6 +101,17 @@ _.Zones =
 							{	-- Puzzle Performer (Medium Runelocked Chest: Green)
 								["achievementID"] = 13764,
 								["criteriaID"] = 21,
+							},
+						},
+					},
+					{	-- Runelocked Chest
+						["questID"] = 56006,
+						["isWQ"] = 120,
+						["sourceQuest"] = 56248,	-- Treasure Tale
+						["g"] = {
+							{	-- Puzzle Performer (Medium Runelocked Chest: Orange)
+								["achievementID"] = 13764,
+								["criteriaID"] = 20,
 							},
 						},
 					},
