@@ -39,7 +39,7 @@ _.Zones =
 								i(40584),	-- Valorous Redemption Shoulderguards
 								i(40578),	-- Valorous Redemption Shoulderplates
 								i(40573),	-- Valorous Redemption Spaulders
-							}), 
+							}),
 							i(40638, {	-- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
 								i(40507),	-- Valorous Crypstalker Spaulders
 								i(40548),	-- Valorous Dreadnaught Pauldrons
@@ -47,7 +47,7 @@ _.Zones =
 								i(40524),	-- Valorous Earthshatter Shoulderguards
 								i(40518),	-- Valorous Earthshatter Shoulderpads
 								i(40513),	-- Valorous Earthshatter Spaulders
-							}), 
+							}),
 							i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
 								i(40502),	-- Valorous Valorous Bonescythe Pauldrons
 								i(40470),	-- Valorous Dreamwalker Mantle
@@ -64,7 +64,7 @@ _.Zones =
 								i(40572),	-- Valorous Redemption Greaves
 								i(40583),	-- Valorous Redemption Legguards
 								i(40577),	-- Valorous Redemption Legplates
-							}), 
+							}),
 							i(40635, {	-- Legplates of the Lost Protector (Hunter, Shaman, Warrior)
 								i(40506),	-- Valorous Crypstalker Legguards
 								i(40547),	-- Valorous Dreadnaught Legguards
@@ -72,7 +72,7 @@ _.Zones =
 								i(40517),	-- Valorous Earthshatter Kilt
 								i(40512),	-- Valorous Earthshatter Legguards
 								i(40522),	-- Valorous Earthshatter War-Kilt
-							}), 
+							}),
 							i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
 								i(40500),	-- Valorous Valorous Bonescythe Legplates
 								i(40462),	-- Valorous Dreamwalker Leggings
@@ -91,7 +91,7 @@ _.Zones =
 							i(40741),	-- Cuffs of the Shadow Ascendant
 							i(40723),	-- Disguise of the Kumiho
 							i(40721),	-- Hammerhead Sharkskin Cloak
-							i(40743),	-- Kyzoc's Ground Stompers 
+							i(40743),	-- Kyzoc's Ground Stompers
 							i(40746),	-- Pack-Ice Striders
 							i(40737),	-- Pigmented Clan Bindings
 							i(40722),	-- Platinum Mesh Cloak
@@ -121,7 +121,7 @@ _.Zones =
 							i(41963),	-- Hateful Gladiator's Silk Amice
 							i(41950),	-- Hateful Gladiator's Silk Raiment
 							i(41969),	-- Hateful Gladiator's Silk Handguards
-							i(41957),	-- Hateful Gladiator's Silk Trousers	
+							i(41957),	-- Hateful Gladiator's Silk Trousers
 							-- WARLOCK
 							i(41991),	-- Hateful Gladiator's Felweave Cowl
 							i(42009),	-- Hateful Gladiator's Felweave Amice
@@ -147,7 +147,7 @@ _.Zones =
 							-- ROGUE
 							i(41670),	-- Hateful Gladiator's Leather Helm
 							i(41681),	-- Hateful Gladiator's Leather Spaulders
-							i(41648),	-- Hateful Gladiator's Leather Tunic	
+							i(41648),	-- Hateful Gladiator's Leather Tunic
 							i(41765),	-- Hateful Gladiator's Leather Gloves
 							i(41653),	-- Hateful Gladiator's Leather Legguards
 							-- HUNTER
@@ -171,7 +171,7 @@ _.Zones =
 							i(41036),	-- Hateful Gladiator's Ringmail Spaulders
 							i(40988),	-- Hateful Gladiator's Ringmail Armor
 							i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
-							i(41025),	-- Hateful Gladiator's Ringmail Leggings		
+							i(41025),	-- Hateful Gladiator's Ringmail Leggings
 							-- PALADIN
 							i(40931),	-- Hateful Gladiator's Ornamented Headcover
 							i(40961),	-- Hateful Gladiator's Ornamented Spaulders
@@ -949,7 +949,7 @@ _.Zones =
 								i(40584),	-- Valorous Redemption Shoulderguards
 								i(40578),	-- Valorous Redemption Shoulderplates
 								i(40573),	-- Valorous Redemption Spaulders
-							}), 
+							}),
 							i(40638, {	-- Mantle of the Lost Protector (Hunter, Shaman, Warrior)
 								i(40507),	-- Valorous Crypstalker Spaulders
 								i(40548),	-- Valorous Dreadnaught Pauldrons
@@ -957,7 +957,7 @@ _.Zones =
 								i(40524),	-- Valorous Earthshatter Shoulderguards
 								i(40518),	-- Valorous Earthshatter Shoulderpads
 								i(40513),	-- Valorous Earthshatter Spaulders
-							}), 
+							}),
 							i(40639, {	-- Mantle of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
 								i(40502),	-- Valorous Valorous Bonescythe Pauldrons
 								i(40470),	-- Valorous Dreamwalker Mantle
@@ -974,7 +974,7 @@ _.Zones =
 								i(40572),	-- Valorous Redemption Greaves
 								i(40583),	-- Valorous Redemption Legguards
 								i(40577),	-- Valorous Redemption Legplates
-							}), 
+							}),
 							i(40635, {	-- Legplates of the Lost Protector (Hunter, Shaman, Warrior)
 								i(40506),	-- Valorous Crypstalker Legguards
 								i(40547),	-- Valorous Dreadnaught Legguards
@@ -982,7 +982,7 @@ _.Zones =
 								i(40517),	-- Valorous Earthshatter Kilt
 								i(40512),	-- Valorous Earthshatter Legguards
 								i(40522),	-- Valorous Earthshatter War-Kilt
-							}), 
+							}),
 							i(40636, {	-- Legplates of the Lost Vanquisher (Death Knight, Druid, Mage, Rogue)
 								i(40500),	-- Valorous Valorous Bonescythe Legplates
 								i(40462),	-- Valorous Dreamwalker Leggings
@@ -1001,7 +1001,7 @@ _.Zones =
 							i(40741),	-- Cuffs of the Shadow Ascendant
 							i(40723),	-- Disguise of the Kumiho
 							i(40721),	-- Hammerhead Sharkskin Cloak
-							i(40743),	-- Kyzoc's Ground Stompers 
+							i(40743),	-- Kyzoc's Ground Stompers
 							i(40746),	-- Pack-Ice Striders
 							i(40737),	-- Pigmented Clan Bindings
 							i(40722),	-- Platinum Mesh Cloak
@@ -1031,7 +1031,7 @@ _.Zones =
 							i(41963),	-- Hateful Gladiator's Silk Amice
 							i(41950),	-- Hateful Gladiator's Silk Raiment
 							i(41969),	-- Hateful Gladiator's Silk Handguards
-							i(41957),	-- Hateful Gladiator's Silk Trousers	
+							i(41957),	-- Hateful Gladiator's Silk Trousers
 							-- WARLOCK
 							i(41991),	-- Hateful Gladiator's Felweave Cowl
 							i(42009),	-- Hateful Gladiator's Felweave Amice
@@ -1057,7 +1057,7 @@ _.Zones =
 							-- ROGUE
 							i(41670),	-- Hateful Gladiator's Leather Helm
 							i(41681),	-- Hateful Gladiator's Leather Spaulders
-							i(41648),	-- Hateful Gladiator's Leather Tunic	
+							i(41648),	-- Hateful Gladiator's Leather Tunic
 							i(41765),	-- Hateful Gladiator's Leather Gloves
 							i(41653),	-- Hateful Gladiator's Leather Legguards
 							-- HUNTER
@@ -1081,7 +1081,7 @@ _.Zones =
 							i(41036),	-- Hateful Gladiator's Ringmail Spaulders
 							i(40988),	-- Hateful Gladiator's Ringmail Armor
 							i(40999),	-- Hateful Gladiator's Ringmail Gauntlets
-							i(41025),	-- Hateful Gladiator's Ringmail Leggings		
+							i(41025),	-- Hateful Gladiator's Ringmail Leggings
 							-- PALADIN
 							i(40931),	-- Hateful Gladiator's Ornamented Headcover
 							i(40961),	-- Hateful Gladiator's Ornamented Spaulders
@@ -1518,7 +1518,7 @@ _.Zones =
 							i(47735),	-- Glyph of Indomitability
 							i(47734),	-- Mark of Supremacy
 							i(48722),	-- Shard of the Crystal Heart
-							i(48724),	-- Talisman of Resurgence							
+							i(48724),	-- Talisman of Resurgence
 						}),
 						nh(31031, {	-- Misensi <Cooking Supplies>
 							currency(81, {	-- Epicurean's Award
@@ -1572,7 +1572,7 @@ _.Zones =
 					}),
 				}),
 				n(-17,  {	-- Quests
---[[				
+--[[
 					qh(29400),	-- A Season for Celebration
 					qh(32406),	-- A Tactical Assault
 					qa(29608),	-- Allies in Dalaran
@@ -1619,7 +1619,7 @@ _.Zones =
 					q(12853, {	-- Luxurious Getaway!
 						["qg"] = 30490,	-- Rin Duoctane
 						["coord"] = { 31.2, 49.6 },
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							49554,	-- Hero's Call: Storm Peaks!
 							49536,	-- Warchief's Command: Storm Peaks!
 						},
@@ -1667,7 +1667,7 @@ _.Zones =
 					qh(32404),	-- Violence in the Arena
 					qa(14203),	-- Waterlogged Recipe
 					q(12521),	-- Where in the World is Hemet Nesingwary?
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							{ 49535 }	-- Warchief's Command: Sholazar Basin!
 							{ 49553 }	-- Hero's Call: Sholazar Basin!
 						},
@@ -1741,7 +1741,7 @@ _.Zones =
 						i(44520),	-- Pattern: Eviscerator's Treads
 						i(44518),	-- Pattern: Eviscerator's Waistguard
 						i(44547),	-- Pattern: Giantmaim Bracers
-						i(44546),	-- Pattern: Giantmaim Legguards	
+						i(44546),	-- Pattern: Giantmaim Legguards
 						i(44588),	-- Pattern: Icy Scale Belt
 						i(44589),	-- Pattern: Icy Scale Boots
 						i(44587),	-- Pattern: Icy Scale Chestguard
@@ -1775,7 +1775,7 @@ _.Zones =
 						i(44536),	-- Pattern: Swiftarrow Leggings
 						i(44531),	-- Pattern: Swiftarrow Shoulderguards
 						i(44551),	-- Pattern: Trollwoven Girdle
-						i(44550),	-- Pattern: Trollwoven Spaulders					
+						i(44550),	-- Pattern: Trollwoven Spaulders
 						i(44932),	-- Pattern: Windripper Boots
 						i(44933),	-- Pattern: Windripper Leggings
 					}),
@@ -1829,7 +1829,7 @@ _.Zones =
 						i(45360),	-- Valorous Scourgestalker Handguards
 						i(45361),	-- Valorous Scourgestalker Headpiece
 						i(45362),	-- Valorous Scourgestalker Legguards
-						i(45402),	-- Valorous Worldbreaker Headpiece				
+						i(45402),	-- Valorous Worldbreaker Headpiece
 						i(45364),	-- Valorous Scourgestalker Tunic
 						i(45401),	-- Valorous Worldbreaker Handguards
 						i(40515),	-- Valorous Earthshatter Gloves
@@ -1878,7 +1878,7 @@ _.Zones =
 						i(39581),	-- Heroes' Cryptstalker Spaulders
 						i(39580),	-- Heroes' Cryptstalker Legguards
 						i(39578),	-- Heroes' Cryptstalker Headpiece
-					
+
 					}),
 					n(28951,  {	-- Breanni <Pet Supplies>
 						i(44822),	-- Albino Snake Pet
@@ -2062,6 +2062,7 @@ _.Zones =
 							{ 38.62, 55.57, 125 }
 						},
 						["g"] = {
+							--Note!! Yes, these are actually collectible spells!
 							{	-- Ancient Tome of Portal: Dalaran [Mage only]
 								["itemID"] = 82470,		-- Ancient Tome of Portal: Dalaran
 								["spellID"] = 120146,	-- Ancient Portal: Dalaran
@@ -2078,7 +2079,7 @@ _.Zones =
 								["spellID"] = 210086,	-- Arcane Linguist
 								["collectible"] = true,
 							},
-							
+
 							{	-- Mystical Tome: Illusion [Mage only]
 								["itemID"] = 136799,	-- Mystical Tome: Illusion
 								["spellID"] = 131784,	-- Illusion
@@ -2254,7 +2255,7 @@ _.Zones =
 						i(40585),	-- Signet of the Kirin Tor
 					}),
 					n(35498,  { 	-- Horace Hunderland <Plate Armor Merchant>
-						i(48371),	-- Wrynn's Helmet of Conquest			
+						i(48371),	-- Wrynn's Helmet of Conquest
 						i(48372),	-- Wrynn's Battleplate of Conquest
 						i(48373),	-- Wrynn's Legplates of Conquest
 						i(48374),	-- Wrynn's Shoulderplates of Conquest
@@ -2597,7 +2598,7 @@ _.Zones =
 						i(25470),	-- Golden Gryphon
 						i(25476),	-- Green Wind Rider
 						i(25472),	-- Snowy Gryphon
-						i(25474),	-- Tawny Wind Rider 
+						i(25474),	-- Tawny Wind Rider
 						i(44690),	-- Armored Blue Wind Rider
 						i(44689),	-- Armored Snowy Gryphon
 						i(44226),	-- Reins of the Armored Brown Bear
@@ -2630,7 +2631,7 @@ _.Zones =
 						i(40698),	-- Ward of the Violet Citadel
 						i(40699),	-- Handbook of Obscure Remedies
 					}),
-					n(28995,  { 	-- Paldesse <Cloth Armor Merchant>	
+					n(28995,  { 	-- Paldesse <Cloth Armor Merchant>
 						i(50997),	-- Circle of Ossus
 						i(50984),	-- Gloves of Ambivalence
 						i(50983),	-- Gloves of False Gestures
@@ -2725,8 +2726,8 @@ _.Zones =
 						i(39494),	-- Heroes' Frostfire Shoulderpads
 						i(39493),	-- Heroes' Frostfire Leggings
 						i(39491),	-- Heroes' Frostfire Circlet
-					
-					
+
+
 					}),
 					n(35497,  { 	-- Rafael Langrom <Leather Armor Merchant>
 						i(48102),	-- Malfurion's Headpiece of Conquest
@@ -3325,38 +3326,122 @@ _.Zones =
 						i(39543),	-- Heroes' Dreamwalker Handguards
 						i(39542),	-- Heroes' Dreamwalker Spaulders
 						i(39539),	-- Heroes' Dreamwalker Leggings
-						i(39531),	-- Heroes' Dreamwalker Headpiece				
+						i(39531),	-- Heroes' Dreamwalker Headpiece
 					}),
-					n(32514,  {	-- Vanessa Sellers <Shard Trader>
-						i(34057, {	-- Abyss Crystal
-							i(44944),	-- Formula: Enchant Bracer - Major Stamina
-						}),
-						i(34052, {	-- Dream Shard
-							i(44490),	-- Formula: Enchant Boots - Greater Assault
-							i(44491),	-- Formula: Enchant Boots - Tuskarr's Vitality
-							i(44484),	-- Formula: Enchant Bracer - Greater Assault
-							i(44498),	-- Formula: Enchant Bracer - Superior Spellpower
-							i(37340),	-- Formula: Enchant Chest - Exceptional Resilience
-							i(44489),	-- Formula: Enchant Chest - Powerful Stats
-							i(44472),	-- Formula: Enchant Cloak - Greater Speed
-							i(44471),	-- Formula: Enchant Cloak - Mighty Stamina
-							i(37349),	-- Formula: Enchant Cloak - Shadow Armor
-							i(37347),	-- Formula: Enchant Cloak - Superior Dodge
-							i(44488),	-- Formula: Enchant Cloak - Wisdom
-							i(44485),	-- Formula: Enchant Gloves - Armsman
-							i(45059),	-- Formula: Enchant Staff - Greater Spellpower
-							i(44483),	-- Formula: Enchant 2H Weapon - Massacre
-							i(44496),	-- Formula: Enchant Weapon - Accuracy
-							i(44492),	-- Formula: Enchant Weapon - Berserking
-							i(44495),	-- Formula: Enchant Weapon - Black Magic
-							i(37339),	-- Formula: Enchant Weapon - Giant Slayer
-							i(37344),	-- Formula: Enchant Weapon - Icebreaker
-							i(44494),	-- Formula: Enchant Weapon - Lifeward
-							i(44487),	-- Formula: Enchant Weapon - Mighty Spellpower
-							i(44473),	-- Formula: Enchant Weapon - Scourgebane
-							i(44486),	-- Formula: Enchant Weapon - Superior Potency
-						}),
-					}),
+					{	-- Vanessa Sellers
+						["npcID"] = 32514,	-- Vanessa Sellers
+						["coords"] = {
+							{ 38.45, 41.12, 125 },
+						},
+						["g"] = {
+							{	-- Abyss Crystal
+								["itemID"] = 34057,	-- Abyss Crystal
+								["g"] = {
+									{	-- Formula: Enchant Bracer - Major Stamina
+										["itemID"] = 44944,	-- Formula: Enchant Bracer - Major Stamina
+										["description"] = "Cost: 5 Abyss Crystals",
+									},
+								},
+							},
+							{	-- Dream Shard
+								["itemID"] = 34052,	-- Dream Shard
+								["g"] = {
+									{	-- Formula: Enchant Boots - Greater Assault
+										["itemID"] = 44490,	-- Formula: Enchant Boots - Greater Assault
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Boots - Tuskarr's Vitality
+										["itemID"] = 44491,	-- Formula: Enchant Boots - Tuskarr's Vitality
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Bracer - Greater Assault
+										["itemID"] = 44484,	-- Formula: Enchant Bracer - Greater Assault
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Bracer - Superior Spellpower
+										["itemID"] = 44498,	-- Formula: Enchant Bracer - Superior Spellpower
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Chest - Exceptional Resilience
+										["itemID"] = 37340,	-- Formula: Enchant Chest - Exceptional Resilience
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Chest - Powerful Stats
+										["itemID"] = 44489,	-- Formula: Enchant Chest - Powerful Stats
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Cloak - Greater Speed
+										["itemID"] = 44472,	-- Formula: Enchant Cloak - Greater Speed
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Cloak - Mighty Stamina
+										["itemID"] = 44471,	-- Formula: Enchant Cloak - Mighty Stamina
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Cloak - Shadow Armor
+										["itemID"] = 37349,	-- Formula: Enchant Cloak - Shadow Armor
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Cloak - Superior Dodge
+										["itemID"] = 37347,	-- Formula: Enchant Cloak - Superior Dodge
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Cloak - Wisdom
+										["itemID"] = 44488,	-- Formula: Enchant Cloak - Wisdom
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Gloves - Armsman
+										["itemID"] = 44485,	-- Formula: Enchant Gloves - Armsman
+										["description"] = "Cost: 4 Dream Shards",
+									},
+									{	-- Formula: Enchant Staff - Greater Spellpower
+										["itemID"] = 45059,	-- Formula: Enchant Staff - Greater Spellpower
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant 2H Weapon - Massacre
+										["itemID"] = 44483,	-- Formula: Enchant 2H Weapon - Massacre
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Accuracy
+										["itemID"] = 44496,	-- Formula: Enchant Weapon - Accuracy
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Berserking
+										["itemID"] = 44492,	-- Formula: Enchant Weapon - Berserking
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Black Magic
+										["itemID"] = 44495,	-- Formula: Enchant Weapon - Black Magic
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Giant Slayer
+										["itemID"] = 37339,	-- Formula: Enchant Weapon - Giant Slayer
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Icebreaker
+										["itemID"] = 37344,	-- Formula: Enchant Weapon - Icebreaker
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Lifeward
+										["itemID"] = 44494,	-- Formula: Enchant Weapon - Lifeward
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Mighty Spellpower
+										["itemID"] = 44487,	-- Formula: Enchant Weapon - Mighty Spellpower
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Scourgebane
+										["itemID"] = 44473,	-- Formula: Enchant Weapon - Scourgebane
+										["description"] = "Cost: 10 Dream Shards",
+									},
+									{	-- Formula: Enchant Weapon - Superior Potency
+										["itemID"] = 44486,	-- Formula: Enchant Weapon - Superior Potency
+										["description"] = "Cost: 10 Dream Shards",
+									},
+								},
+							},
+						},
+					},
 				}),
 				n(-213, {	-- The Underbelly
 					prof(356, {	-- Fishing
@@ -3386,7 +3471,7 @@ _.Zones =
 								un(2, i(42025)),	-- Hateful Gladiator's Pendant of deliverance
 								un(2, i(42026)),	-- Hateful Gladiator's Pendant of salvation
 								i(146646),	-- Arsenal: Hateful Gladiator's Weapons
-								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor		
+								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
 									i(41913),	-- Hateful Gladiator's Satin Hood
 									i(41931),	-- Hateful Gladiator's Satin Mantle
 									i(41919),	-- Hateful Gladiator's Satin Robe
@@ -3394,9 +3479,9 @@ _.Zones =
 									i(41938),	-- Hateful Gladiator's Satin Gloves
 									i(41877),	-- Hateful Gladiator's Cord of Salvation
 									i(41925),	-- Hateful Gladiator's Satin Leggings
-									i(41879),	-- Hateful Gladiator's Satin 
-								}),		
-								i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor		
+									i(41879),	-- Hateful Gladiator's Satin
+								}),
+								i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
 									i(41944),	-- Hateful Gladiator's Silk Cowl
 									i(41963),	-- Hateful Gladiator's Silk Amice
 									i(41950),	-- Hateful Gladiator's Silk Raiment
@@ -3405,8 +3490,8 @@ _.Zones =
 									i(41896),	-- Hateful Gladiator's Cord of Dominance
 									i(41957),	-- Hateful Gladiator's Silk Trousers
 									i(41901),	-- Hateful Gladiator's Slippers of Dominance
-								}),		
-								i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor		
+								}),
+								i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
 									i(41991),	-- Hateful Gladiator's Felweave Cowl
 									i(42009),	-- Hateful Gladiator's Felweave Amice
 									i(42001),	-- Hateful Gladiator's Felweave Raiment
@@ -3415,8 +3500,8 @@ _.Zones =
 									i(147587),	-- Hateful Gladiator's Cord of Ascendancy
 									i(42003),	-- Hateful Gladiator's Felweave Trousers
 									i(147588),	-- Hateful Gladiator's Slippers of Ascendancy
-								}),		
-								i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor		
+								}),
+								i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
 									i(41676),	-- Hateful Gladiator's Dragonhide Helm
 									i(41713),	-- Hateful Gladiator's Dragonhide Spaulders
 									i(41659),	-- Hateful Gladiator's Dragonhide Robes
@@ -3425,8 +3510,8 @@ _.Zones =
 									i(41330),	-- Hateful Gladiator's Waistguard of Triumph
 									i(41665),	-- Hateful Gladiator's Dragonhide Legguards
 									i(41633),	-- Hateful Gladiator's Sabatons of Triumph
-								}),		
-								i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor		
+								}),
+								i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
 									i(41670),	-- Hateful Gladiator's Leather Helm
 									i(41681),	-- Hateful Gladiator's Leather Spaulders
 									i(41648),	-- Hateful Gladiator's Leather Tunic
@@ -3435,8 +3520,8 @@ _.Zones =
 									i(41827),	-- Hateful Gladiator's Belt of Triumph
 									i(41653),	-- Hateful Gladiator's Leather Legguards
 									i(41828),	-- Hateful Gladiator's Boots of Triumph
-								}),		
-								i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor		
+								}),
+								i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
 									i(41155),	-- Hateful Gladiator's Chain Helm
 									i(41215),	-- Hateful Gladiator's Chain Spaulders
 									i(41085),	-- Hateful Gladiator's Chain Armor
@@ -3445,8 +3530,8 @@ _.Zones =
 									i(41233),	-- Hateful Gladiator's Waistguard of Triumph
 									i(41203),	-- Hateful Gladiator's Chain Leggings
 									i(41228),	-- Hateful Gladiator's Sabatons of Triumph
-								}),		
-								i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor		
+								}),
+								i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
 									i(41011),	-- Hateful Gladiator's Ringmail Helm
 									i(41036),	-- Hateful Gladiator's Ringmail Spaulders
 									i(40988),	-- Hateful Gladiator's Ringmail Armor
@@ -3455,8 +3540,8 @@ _.Zones =
 									i(41050),	-- Hateful Gladiator's Waistguard of Domincance
 									i(41025),	-- Hateful Gladiator's Ringmail Leggings
 									i(41049),	-- Hateful Gladiator's Sabatons of Dominance
-								}),		
-								i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor		
+								}),
+								i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
 									i(40821),	-- Hateful Gladiator's Scaled Helm
 									i(40861),	-- Hateful Gladiator's Scaled Shoulders
 									i(40782),	-- Hateful Gladiator's Scaled Chestpiece
@@ -3465,27 +3550,27 @@ _.Zones =
 									i(40966),	-- Hateful Gladiator's Girdle of Salvation
 									i(40842),	-- Hateful Gladiator's Scaled Legguards
 									i(40973),	-- Titan-Forged Greaves of Salvation
-								}),		
-								i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor		
+								}),
+								i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
 									i(40819),	-- Hateful Gladiator's Plate Helm
 									i(40859),	-- Hateful Gladiator's Plate Shoulders
 									i(40783),	-- Hateful Gladiator's Plate Chestpiece
 									i(40887),	-- Hateful Gladiator's Bracers of Triumph
-									i(40801),	-- Hateful Gladiator's Plate 
+									i(40801),	-- Hateful Gladiator's Plate
 									i(40877),	-- Hateful Gladiator's Girdle of Triumph
-									i(40840),	-- Hateful Gladiator's Plate 
+									i(40840),	-- Hateful Gladiator's Plate
 									i(40878),	-- Hateful Gladiator's Greaves of Triumph
-								}),		
-								i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor		
+								}),
+								i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
 									i(40820),	-- Hateful Gladiator's Dreadplate Helm
 									i(40860),	-- Hateful Gladiator's Dreadplate Shoulders
 									i(40781),	-- Hateful Gladiator's Dreadplate Chestpiece
 									i(147583),	-- Hateful Gladiator's Bracers of Victory
-									i(40803),	-- Hateful Gladiator's Dreadplate 
+									i(40803),	-- Hateful Gladiator's Dreadplate
 									i(147584),	-- Hateful Gladiator's Girdle of Victory
-									i(40841),	-- Hateful Gladiator's Dreadplate 
+									i(40841),	-- Hateful Gladiator's Dreadplate
 									i(147585),	-- Hateful Gladiator's Greaves of Victory
-								}),	
+								}),
 								i(42563),	-- Hateful Gladiator's Barrier
 								i(42512),	-- Hateful Gladiator's Baton of Light
 								i(42359),	-- Hateful Gladiator's Battle Staff
@@ -3522,7 +3607,7 @@ _.Zones =
 								i(42389),	-- Hateful Gladiator's Staff
 								i(42501),	-- Hateful Gladiator's Touch of Defeat
 								i(44417),	-- Hateful Gladiator's War Staff
-								i(42236),	-- Hateful Gladiator's Waraxe	
+								i(42236),	-- Hateful Gladiator's Waraxe
 								i(41638),	-- Hateful Gladiator's Armwraps of Dominance
 								i(41332),	-- Hateful Gladiator's Armwraps of Salvation
 								i(41830),	-- Hateful Gladiator's Armwraps of Triumph
@@ -4114,7 +4199,7 @@ _.Zones =
 								un(2, i(67461)),	-- Vicious Gladiator's Longbow
 								un(2, i(67471)),	-- Vicious Gladiator's Pummeler
 								un(2, i(67457)),	-- Vicious Gladiator's Spellblade
-								un(2, i(67460)),	-- Vicious Gladiator's 
+								un(2, i(67460)),	-- Vicious Gladiator's
 								un(2, i(67472)),	-- Vicious Gladiator's Shanker
 								un(2, i(67473)),	-- Vicious Gladiator's Hacker
 								un(2, i(67474)),	-- Vicious Gladiator's Cleaver
@@ -4210,7 +4295,7 @@ _.Zones =
 								un(2, i(65578)),	-- Vicious Gladiator's mooncloth mantle
 								un(2, i(65598)),	-- Vicious Gladiator's treads of cruelty
 								un(2, i(65599)),	-- Vicious Gladiator's treads of alacrity
-								un(2, i(65600)),	-- Vicious Gladiator's treads of mediation 
+								un(2, i(65600)),	-- Vicious Gladiator's treads of mediation
 								un(2, i(65518)),	-- Vicious Gladiator's Ornamented Spaulders
 								un(2, i(65519)),	-- Vicious Gladiator's Ornamented Legs
 								un(2, i(65520)),	-- Vicious Gladiator's Ornamented Head
@@ -4295,7 +4380,7 @@ _.Zones =
 								un(2, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
 								un(2, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
 								un(2, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-								un(2, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+								un(2, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
 								un(2, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
 								un(2, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
 								un(2, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
@@ -4474,7 +4559,7 @@ _.Zones =
 								un(2, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
 								un(2, i(73743)),	-- Cataclysmic Gladiator's Treads of Medi
 								un(2, i(73744)),	-- Cataclysmic Gladiator's Treads of Alacrity
-								un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty 
+								un(2, i(73745)),	-- Cataclysmic Gladiator's Treads of Cruelty
 								un(2, i(73651)),	-- Cataclysmic Gladiator's Plate Soulders
 								un(2, i(73652)),	-- Cataclysmic Gladiator's Plate Legs
 								un(2, i(73653)),	-- Cataclysmic Gladiator's Plate Helm
@@ -4620,76 +4705,76 @@ _.Zones =
 							["coord"] = { 59.6, 57.6, 502 },
 							["g"] = {
 								i(146647),	-- Arsenal: Savage Gladiator's Weapons
-								i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor		
+								i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
 									i(41912),	-- Savage Gladiator's Satin Hood
 									i(41930),	-- Savage Gladiator's Satin Mantle
 									i(41918),	-- Savage Gladiator's Satin Robe
 									i(41937),	-- Savage Gladiator's Satin Gloves
 									i(41924),	-- Savage Gladiator's Satin Leggings
-								}),		
-								i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor		
+								}),
+								i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
 									i(41943),	-- Savage Gladiator's Silk Cowl
 									i(41962),	-- Savage Gladiator's Silk Amice
 									i(41949),	-- Savage Gladiator's Silk Raiment
 									i(41968),	-- Savage Gladiator's Silk Handguards
 									i(41956),	-- Savage Gladiator's Silk Trousers
-								}),		
-								i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor		
+								}),
+								i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
 									i(41990),	-- Savage Gladiator's Felweave Cowl
 									i(42008),	-- Savage Gladiator's Felweave Amice
 									i(41996),	-- Savage Gladiator's Felweave Raiment
 									i(42014),	-- Savage Gladiator's Felweave Handguards
 									i(42002),	-- Savage Gladiator's Felweave Trousers
-								}),		
-								i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor		
+								}),
+								i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
 									i(41675),	-- Savage Gladiator's Dragonhide Helm
 									i(41712),	-- Savage Gladiator's Dragonhide Spaulders
 									i(41658),	-- Savage Gladiator's Dragonhide Robes
 									i(41770),	-- Savage Gladiator's Dragonhide Gloves
 									i(41664),	-- Savage Gladiator's Dragonhide Legguards
-								}),		
-								i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor		
+								}),
+								i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
 									i(41644),	-- Savage Gladiator's Leather Helm
 									i(41646),	-- Savage Gladiator's Leather Spaulders
 									i(41647),	-- Savage Gladiator's Leather Tunic
 									i(41643),	-- Savage Gladiator's Leather Gloves
 									i(41645),	-- Savage Gladiator's Leather Legguards
-								}),		
-								i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor		
+								}),
+								i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
 									i(41154),	-- Savage Gladiator's Chain Helm
 									i(41214),	-- Savage Gladiator's Chain Spaulders
 									i(41084),	-- Savage Gladiator's Chain Armor
 									i(41140),	-- Savage Gladiator's Chain Gauntlets
 									i(41202),	-- Savage Gladiator's Chain Leggings
-								}),		
-								i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor		
+								}),
+								i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
 									i(41010),	-- Savage Gladiator's Ringmail Helm
 									i(41024),	-- Savage Gladiator's Ringmail Spaulders
 									i(40986),	-- Savage Gladiator's Ringmail Armor
 									i(40998),	-- Savage Gladiator's Ringmail Gauntlets
 									i(41023),	-- Savage Gladiator's Ringmail Leggings
-								}),		
-								i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor		
+								}),
+								i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
 									i(40818),	-- Savage Gladiator's Scaled Helm
 									i(40858),	-- Savage Gladiator's Scaled Shoulders
 									i(40780),	-- Savage Gladiator's Scaled Chestpiece
 									i(40798),	-- Savage Gladiator's Scaled Gauntlets
 									i(40838),	-- Savage Gladiator's Scaled Legguards
-								}),		
-								i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor		
+								}),
+								i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
 									i(40816),	-- Savage Gladiator's Plate Helm
 									i(40856),	-- Savage Gladiator's Plate Shoulders
 									i(40778),	-- Savage Gladiator's Plate Chestpiece
-									i(40797),	-- Savage Gladiator's Plate 
-									i(40836),	-- Savage Gladiator's Plate 
-								}),		
-								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor		
+									i(40797),	-- Savage Gladiator's Plate
+									i(40836),	-- Savage Gladiator's Plate
+								}),
+								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
 									i(40817),	-- Savage Gladiator's Dreadplate Helm
 									i(40857),	-- Savage Gladiator's Dreadplate Shoulders
 									i(40779),	-- Savage Gladiator's Dreadplate Chestpiece
-									i(40799),	-- Savage Gladiator's Dreadplate 
-									i(40837),	-- Savage Gladiator's Dreadplate 
-								}),		
+									i(40799),	-- Savage Gladiator's Dreadplate
+									i(40837),	-- Savage Gladiator's Dreadplate
+								}),
 								i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 								i(40778),	-- Savage Gladiator's Plate Chestpiece
 								i(40780),	-- Savage Gladiator's Scaled Chestpiece
@@ -4809,44 +4894,44 @@ _.Zones =
 							["coord"] = { 59.0, 58.8, 502 },
 							["g"] = {
 								i(146642),	-- Arsenal: Wrathful Gladiator's Weapons
-								i(51452),	-- Wrathful Gladiator's Barrier	
-								i(51532),	-- Wrathful Gladiator's Baton of Light	
-								i(51404),	-- Wrathful Gladiator's Battle Staff	
-								i(51406),	-- Wrathful Gladiator's Blade of Alacrity	
-								i(51445),	-- Wrathful Gladiator's Bonecracker	
-								i(51390),	-- Wrathful Gladiator's Bonegrinder	
-								i(51525),	-- Wrathful Gladiator's Chopper	
-								i(51515),	-- Wrathful Gladiator's Cleaver	
-								i(51407),	-- Wrathful Gladiator's Compendium	
-								i(51388),	-- Wrathful Gladiator's Decapitator	
-								i(51396),	-- Wrathful Gladiator's Endgame	
-								i(51456),	-- Wrathful Gladiator's Energy Staff	
-								i(51443),	-- Wrathful Gladiator's Fleshslicer	
-								i(51402),	-- Wrathful Gladiator's Focus Staff	
-								i(51453),	-- Wrathful Gladiator's Gavel	
-								i(51392),	-- Wrathful Gladiator's Greatsword	
-								i(51408),	-- Wrathful Gladiator's Grimoire	
-								i(51439),	-- Wrathful Gladiator's Hacker	
-								i(51411),	-- Wrathful Gladiator's Heavy Crossbow	
-								i(51394),	-- Wrathful Gladiator's Longbow	
-								i(51527),	-- Wrathful Gladiator's Mutilator	
-								i(51531),	-- Wrathful Gladiator's Piercing Touch	
-								i(51480),	-- Wrathful Gladiator's Pike	
-								i(51519),	-- Wrathful Gladiator's Pummeler	
-								i(51447),	-- Wrathful Gladiator's Quickblade	
-								i(51455),	-- Wrathful Gladiator's Redoubt	
-								i(51409),	-- Wrathful Gladiator's Reprieve	
-								i(51449),	-- Wrathful Gladiator's Rifle	
-								i(51523),	-- Wrathful Gladiator's Ripper	
-								i(51517),	-- Wrathful Gladiator's Shanker	
-								i(51533),	-- Wrathful Gladiator's Shield Wall	
-								i(51441),	-- Wrathful Gladiator's Shiv	
-								i(51530),	-- Wrathful Gladiator's Slasher	
-								i(51521),	-- Wrathful Gladiator's Slicer	
-								i(51397),	-- Wrathful Gladiator's Spellblade	
-								i(51431),	-- Wrathful Gladiator's Staff	
-								i(51410),	-- Wrathful Gladiator's Touch of Defeat	
-								i(51451),	-- Wrathful Gladiator's Wand of Alacrity	
+								i(51452),	-- Wrathful Gladiator's Barrier
+								i(51532),	-- Wrathful Gladiator's Baton of Light
+								i(51404),	-- Wrathful Gladiator's Battle Staff
+								i(51406),	-- Wrathful Gladiator's Blade of Alacrity
+								i(51445),	-- Wrathful Gladiator's Bonecracker
+								i(51390),	-- Wrathful Gladiator's Bonegrinder
+								i(51525),	-- Wrathful Gladiator's Chopper
+								i(51515),	-- Wrathful Gladiator's Cleaver
+								i(51407),	-- Wrathful Gladiator's Compendium
+								i(51388),	-- Wrathful Gladiator's Decapitator
+								i(51396),	-- Wrathful Gladiator's Endgame
+								i(51456),	-- Wrathful Gladiator's Energy Staff
+								i(51443),	-- Wrathful Gladiator's Fleshslicer
+								i(51402),	-- Wrathful Gladiator's Focus Staff
+								i(51453),	-- Wrathful Gladiator's Gavel
+								i(51392),	-- Wrathful Gladiator's Greatsword
+								i(51408),	-- Wrathful Gladiator's Grimoire
+								i(51439),	-- Wrathful Gladiator's Hacker
+								i(51411),	-- Wrathful Gladiator's Heavy Crossbow
+								i(51394),	-- Wrathful Gladiator's Longbow
+								i(51527),	-- Wrathful Gladiator's Mutilator
+								i(51531),	-- Wrathful Gladiator's Piercing Touch
+								i(51480),	-- Wrathful Gladiator's Pike
+								i(51519),	-- Wrathful Gladiator's Pummeler
+								i(51447),	-- Wrathful Gladiator's Quickblade
+								i(51455),	-- Wrathful Gladiator's Redoubt
+								i(51409),	-- Wrathful Gladiator's Reprieve
+								i(51449),	-- Wrathful Gladiator's Rifle
+								i(51523),	-- Wrathful Gladiator's Ripper
+								i(51517),	-- Wrathful Gladiator's Shanker
+								i(51533),	-- Wrathful Gladiator's Shield Wall
+								i(51441),	-- Wrathful Gladiator's Shiv
+								i(51530),	-- Wrathful Gladiator's Slasher
+								i(51521),	-- Wrathful Gladiator's Slicer
+								i(51397),	-- Wrathful Gladiator's Spellblade
+								i(51431),	-- Wrathful Gladiator's Staff
+								i(51410),	-- Wrathful Gladiator's Touch of Defeat
+								i(51451),	-- Wrathful Gladiator's Wand of Alacrity
 								i(51400),	-- Wrathful Gladiator's War Staff
 								i(51476),	-- Wrathful Gladiator's Scaled Helm
 								i(51458),	-- Wrathful Gladiator's Chain Armor
@@ -4891,7 +4976,7 @@ _.Zones =
 								i(51482),	-- Wrathful Gladiator's Mooncloth Robe
 								i(51483),	-- Wrathful Gladiator's Mooncloth Gloves
 								i(51484),	-- Wrathful Gladiator's Mooncloth Hood
-								i(51485),	-- Wrathful Gladiator's Mooncloth Leggings			
+								i(51485),	-- Wrathful Gladiator's Mooncloth Leggings
 								i(51486),	-- Wrathful Gladiator's Mooncloth Mantle
 								i(51487),	-- Wrathful Gladiator's Satin Robe
 								i(51488),	-- Wrathful Gladiator's Satin Gloves
@@ -5144,7 +5229,7 @@ _.Zones =
 								i(41066),	-- Relentless Gladiator's Wristguards of Dominance
 								i(41061),	-- Relentless Gladiator's Wristguards of Salvation
 								i(41226),	-- Relentless Gladiator's Wristguards of Triumph
-								
+
 							},
 						}),
 						n(54651, {	-- Zom Bocom (Same name, different npc)
@@ -5301,7 +5386,7 @@ _.Zones =
 				502,	-- Dalaran (sewers, operation shieldwall)
 			},
 			["icon"] = "Interface\\Icons\\spell_arcane_teleportdalaran",
-			["description"] = "|cff66ccffDalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.|r",				
+			["description"] = "|cff66ccffDalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.|r",
 		}),
 	}),
 };
