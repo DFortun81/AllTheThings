@@ -599,626 +599,626 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(50345, { 	-- Alit
-						dr(12.0, i(7458)),	-- Knight's Boots
-						dr(04.0, i(9845)),	-- Conjurer's Shoes
-						dr(04.0, i(9868)),	-- Renegade Gauntlets
-						dr(04.0, i(7436)),	-- Twilight Cape
-						dr(03.0, i(7369)),	-- Elder's Robe
-						dr(03.0, i(7407)),	-- Infiltrator Armor
-						dr(03.0, i(7423)),	-- Phalanx Leggings
-						dr(02.0, i(9855)),	-- Archer's Belt
-						dr(02.0, i(9869)),	-- Renegade Belt
-						dr(02.0, i(7444)),	-- Sentinel Boots
-						dr(01.9, i(9861)),	-- Archer's Gloves
-						dr(01.9, i(7353)),	-- Elder's Padded Armor
-						dr(01.8, i(9853)),	-- Conjurer's Cinch
-						dr(01.8, i(9870)),	-- Renegade Circlet
-						dr(01.8, i(7433)),	-- Twilight Gloves
-						dr(01.6, i(9819)),	-- Durable Tunic
-						dr(01.6, i(7414)),	-- Infiltrator Pants
-						dr(01.6, i(7457)),	-- Knight's Gauntlets
-						dr(01.5, i(7418)),	-- Phalanx Breastplate
-						dr(01.3, i(9860)),	-- Archer's Cloak
-						dr(01.2, i(9846)),	-- Conjurer's Bracers
-						dr(01.2, i(9848)),	-- Conjurer's Gloves
-						dr(01.2, i(7460)),	-- Knight's Cloak
-						dr(01.0, i(7368)),	-- Elder's Pants
-						dr(01.0, i(7417)),	-- Phalanx Boots
-						dr(01.0, i(9865)),	-- Renegade Bracers
+						i(7458),	-- Knight's Boots
+						i(9845),	-- Conjurer's Shoes
+						i(9868),	-- Renegade Gauntlets
+						i(7436),	-- Twilight Cape
+						i(7369),	-- Elder's Robe
+						i(7407),	-- Infiltrator Armor
+						i(7423),	-- Phalanx Leggings
+						i(9855),	-- Archer's Belt
+						i(9869),	-- Renegade Belt
+						i(7444),	-- Sentinel Boots
+						i(9861),	-- Archer's Gloves
+						i(7353),	-- Elder's Padded Armor
+						i(9853),	-- Conjurer's Cinch
+						i(9870),	-- Renegade Circlet
+						i(7433),	-- Twilight Gloves
+						i(9819),	-- Durable Tunic
+						i(7414),	-- Infiltrator Pants
+						i(7457),	-- Knight's Gauntlets
+						i(7418),	-- Phalanx Breastplate
+						i(9860),	-- Archer's Cloak
+						i(9846),	-- Conjurer's Bracers
+						i(9848),	-- Conjurer's Gloves
+						i(7460),	-- Knight's Cloak
+						i(7368),	-- Elder's Pants
+						i(7417),	-- Phalanx Boots
+						i(9865),	-- Renegade Bracers
 					}),
 					n(51058, { 	-- Aphis
-						dr(12.0, i(9875)),	-- Sorcerer Sash
-						dr(07.0, i(9886)),	-- Huntsman's Bands
-						dr(06.0, i(9972)),	-- Embossed Plate Bracers
-						dr(05.0, i(7440)),	-- Sentinel Trousers
-						dr(04.0, i(7492)),	-- Captain's Cloak
-						dr(03.0, i(9891)),	-- Huntsman's Belt
-						dr(03.0, i(7445)),	-- Sentinel Shoulders
-						dr(02.0, i(9900)),	-- Jazeraint Gauntlets
-						dr(02.0, i(7455)),	-- Knight's Legguards
-						dr(02.0, i(7431)),	-- Twilight Pants
-						dr(01.3, i(9896)),	-- Jazeraint Bracers
-						dr(01.3, i(7454)),	-- Knight's Breastplate
+						i(9875),	-- Sorcerer Sash
+						i(9886),	-- Huntsman's Bands
+						i(9972),	-- Embossed Plate Bracers
+						i(7440),	-- Sentinel Trousers
+						i(7492),	-- Captain's Cloak
+						i(9891),	-- Huntsman's Belt
+						i(7445),	-- Sentinel Shoulders
+						i(9900),	-- Jazeraint Gauntlets
+						i(7455),	-- Knight's Legguards
+						i(7431),	-- Twilight Pants
+						i(9896),	-- Jazeraint Bracers
+						i(7454),	-- Knight's Breastplate
 					}),
 					n(1849, { 	-- Dreadwhisper
-						dr(09.0, i(7457)),	-- Knight's Gauntlets
-						dr(04.0, i(9890)),	-- Huntsman's Cape
-						dr(03.0, i(9889)),	-- Huntsman's Cap
-						dr(03.0, i(7441)),	-- Sentinel Cap
-						dr(03.0, i(7443)),	-- Sentinel Gloves
-						dr(03.0, i(7445)),	-- Sentinel Shoulders
-						dr(03.0, i(7435)),	-- Twilight Mantle
-						dr(02.0, i(9854)),	-- Archer's Jerkin
-						dr(02.0, i(9863)),	-- Archer's Shoulderpads
-						dr(02.0, i(9862)),	-- Archer's Trousers
-						dr(02.0, i(9852)),	-- Conjurer's Robe
-						dr(02.0, i(9844)),	-- Conjurer's Vest
-						dr(02.0, i(9886)),	-- Huntsman's Bands
-						dr(02.0, i(9898)),	-- Jazeraint Cloak
-						dr(02.0, i(7456)),	-- Knight's Headguard
-						dr(02.0, i(9866)),	-- Renegade Chestguard
-						dr(02.0, i(9871)),	-- Renegade Leggings
-						dr(02.0, i(7444)),	-- Sentinel Boots
-						dr(02.0, i(9879)),	-- Sorcerer Bracelets
-						dr(02.0, i(7432)),	-- Twilight Cowl
-						dr(02.0, i(7433)),	-- Twilight Gloves
-						dr(01.9, i(7458)),	-- Knight's Boots
-						dr(01.9, i(9872)),	-- Renegade Pauldrons
-						dr(01.9, i(7434)),	-- Twilight Boots
-						dr(01.8, i(7459)),	-- Knight's Pauldrons
-						dr(01.7, i(7440)),	-- Sentinel Trousers
-						dr(01.6, i(7462)),	-- Knight's Girdle
-						dr(01.6, i(9875)),	-- Sorcerer Sash
-						dr(01.5, i(9851)),	-- Conjurer's Breeches
-						dr(01.5, i(9891)),	-- Huntsman's Belt
-						dr(01.5, i(9877)),	-- Sorcerer Cloak
-						dr(01.4, i(9896)),	-- Jazeraint Bracers
-						dr(01.4, i(7455)),	-- Knight's Legguards
-						dr(01.4, i(7431)),	-- Twilight Pants
-						dr(01.3, i(7492)),	-- Captain's Cloak
-						dr(01.0, i(9880)),	-- Sorcerer Gloves
+						i(7457),	-- Knight's Gauntlets
+						i(9890),	-- Huntsman's Cape
+						i(9889),	-- Huntsman's Cap
+						i(7441),	-- Sentinel Cap
+						i(7443),	-- Sentinel Gloves
+						i(7445),	-- Sentinel Shoulders
+						i(7435),	-- Twilight Mantle
+						i(9854),	-- Archer's Jerkin
+						i(9863),	-- Archer's Shoulderpads
+						i(9862),	-- Archer's Trousers
+						i(9852),	-- Conjurer's Robe
+						i(9844),	-- Conjurer's Vest
+						i(9886),	-- Huntsman's Bands
+						i(9898),	-- Jazeraint Cloak
+						i(7456),	-- Knight's Headguard
+						i(9866),	-- Renegade Chestguard
+						i(9871),	-- Renegade Leggings
+						i(7444),	-- Sentinel Boots
+						i(9879),	-- Sorcerer Bracelets
+						i(7432),	-- Twilight Cowl
+						i(7433),	-- Twilight Gloves
+						i(7458),	-- Knight's Boots
+						i(9872),	-- Renegade Pauldrons
+						i(7434),	-- Twilight Boots
+						i(7459),	-- Knight's Pauldrons
+						i(7440),	-- Sentinel Trousers
+						i(7462),	-- Knight's Girdle
+						i(9875),	-- Sorcerer Sash
+						i(9851),	-- Conjurer's Breeches
+						i(9891),	-- Huntsman's Belt
+						i(9877),	-- Sorcerer Cloak
+						i(9896),	-- Jazeraint Bracers
+						i(7455),	-- Knight's Legguards
+						i(7431),	-- Twilight Pants
+						i(7492),	-- Captain's Cloak
+						i(9880),	-- Sorcerer Gloves
 					}),
 					n(1847, { 	-- Foulmane
-						dr(03.0, i(9856)),	-- Archer's Boots
-						dr(03.0, i(9859)),	-- Archer's Cap
-						dr(03.0, i(9848)),	-- Conjurer's Gloves
-						dr(03.0, i(9849)),	-- Conjurer's Hood
-						dr(03.0, i(9850)),	-- Conjurer's Mantle
-						dr(03.0, i(7353)),	-- Elder's Padded Armor
-						dr(03.0, i(7407)),	-- Infiltrator Armor
-						dr(03.0, i(7461)),	-- Knight's Bracers
-						dr(03.0, i(9864)),	-- Renegade Boots
-						dr(03.0, i(9870)),	-- Renegade Circlet
-						dr(03.0, i(7447)),	-- Sentinel Bracers
-						dr(03.0, i(7448)),	-- Sentinel Girdle
-						dr(03.0, i(7437)),	-- Twilight Cuffs
-						dr(02.0, i(9855)),	-- Archer's Belt
-						dr(02.0, i(9861)),	-- Archer's Gloves
-						dr(02.0, i(9845)),	-- Conjurer's Shoes
-						dr(02.0, i(9868)),	-- Renegade Gauntlets
-						dr(02.0, i(7446)),	-- Sentinel Cloak
-						dr(02.0, i(7438)),	-- Twilight Belt
-						dr(02.0, i(7436)),	-- Twilight Cape
-						dr(01.9, i(7369)),	-- Elder's Robe
-						dr(01.9, i(7418)),	-- Phalanx Breastplate
-						dr(01.8, i(9862)),	-- Archer's Trousers
-						dr(01.7, i(7457)),	-- Knight's Gauntlets
-						dr(01.6, i(9846)),	-- Conjurer's Bracers
-						dr(01.5, i(9869)),	-- Renegade Belt
-						dr(01.5, i(7444)),	-- Sentinel Boots
-						dr(01.2, i(7458)),	-- Knight's Boots
-						dr(01.2, i(7443)),	-- Sentinel Gloves
-						dr(01.1, i(9863)),	-- Archer's Shoulderpads
-						dr(01.1, i(9851)),	-- Conjurer's Breeches
-						dr(01.1, i(7455)),	-- Knight's Legguards
-						dr(01.1, i(9871)),	-- Renegade Leggings
-						dr(01.1, i(9877)),	-- Sorcerer Cloak
-						dr(01.1, i(7434)),	-- Twilight Boots
-						dr(01.1, i(7433)),	-- Twilight Gloves
-						dr(01.0, i(9854)),	-- Archer's Jerkin
+						i(9856),	-- Archer's Boots
+						i(9859),	-- Archer's Cap
+						i(9848),	-- Conjurer's Gloves
+						i(9849),	-- Conjurer's Hood
+						i(9850),	-- Conjurer's Mantle
+						i(7353),	-- Elder's Padded Armor
+						i(7407),	-- Infiltrator Armor
+						i(7461),	-- Knight's Bracers
+						i(9864),	-- Renegade Boots
+						i(9870),	-- Renegade Circlet
+						i(7447),	-- Sentinel Bracers
+						i(7448),	-- Sentinel Girdle
+						i(7437),	-- Twilight Cuffs
+						i(9855),	-- Archer's Belt
+						i(9861),	-- Archer's Gloves
+						i(9845),	-- Conjurer's Shoes
+						i(9868),	-- Renegade Gauntlets
+						i(7446),	-- Sentinel Cloak
+						i(7438),	-- Twilight Belt
+						i(7436),	-- Twilight Cape
+						i(7369),	-- Elder's Robe
+						i(7418),	-- Phalanx Breastplate
+						i(9862),	-- Archer's Trousers
+						i(7457),	-- Knight's Gauntlets
+						i(9846),	-- Conjurer's Bracers
+						i(9869),	-- Renegade Belt
+						i(7444),	-- Sentinel Boots
+						i(7458),	-- Knight's Boots
+						i(7443),	-- Sentinel Gloves
+						i(9863),	-- Archer's Shoulderpads
+						i(9851),	-- Conjurer's Breeches
+						i(7455),	-- Knight's Legguards
+						i(9871),	-- Renegade Leggings
+						i(9877),	-- Sorcerer Cloak
+						i(7434),	-- Twilight Boots
+						i(7433),	-- Twilight Gloves
+						i(9854),	-- Archer's Jerkin
 					}),
 					n(50937, { 	-- Hamhide
-						dr(07.0, i(9890)),	-- Huntsman's Cape
-						dr(06.0, i(7444)),	-- Sentinel Boots
-						dr(06.0, i(7433)),	-- Twilight Gloves
-						dr(05.0, i(9863)),	-- Archer's Shoulderpads
-						dr(03.0, i(9851)),	-- Conjurer's Breeches
-						dr(03.0, i(9849)),	-- Conjurer's Hood
-						dr(02.0, i(7458)),	-- Knight's Boots
-						dr(02.0, i(9871)),	-- Renegade Leggings
-						dr(02.0, i(7447)),	-- Sentinel Bracers
-						dr(02.0, i(7438)),	-- Twilight Belt
-						dr(02.0, i(7434)),	-- Twilight Boots
-						dr(01.8, i(7462)),	-- Knight's Girdle
-						dr(01.6, i(9872)),	-- Renegade Pauldrons
-						dr(01.4, i(9856)),	-- Archer's Boots
-						dr(01.4, i(7432)),	-- Twilight Cowl
-						dr(01.2, i(9862)),	-- Archer's Trousers
-						dr(01.2, i(7456)),	-- Knight's Headguard
-						dr(01.2, i(7459)),	-- Knight's Pauldrons
-						dr(01.0, i(9848)),	-- Conjurer's Gloves
-						dr(01.0, i(9891)),	-- Huntsman's Belt
-						dr(01.0, i(9866)),	-- Renegade Chestguard
-						dr(01.0, i(7431)),	-- Twilight Pants
+						i(9890),	-- Huntsman's Cape
+						i(7444),	-- Sentinel Boots
+						i(7433),	-- Twilight Gloves
+						i(9863),	-- Archer's Shoulderpads
+						i(9851),	-- Conjurer's Breeches
+						i(9849),	-- Conjurer's Hood
+						i(7458),	-- Knight's Boots
+						i(9871),	-- Renegade Leggings
+						i(7447),	-- Sentinel Bracers
+						i(7438),	-- Twilight Belt
+						i(7434),	-- Twilight Boots
+						i(7462),	-- Knight's Girdle
+						i(9872),	-- Renegade Pauldrons
+						i(9856),	-- Archer's Boots
+						i(7432),	-- Twilight Cowl
+						i(9862),	-- Archer's Trousers
+						i(7456),	-- Knight's Headguard
+						i(7459),	-- Knight's Pauldrons
+						i(9848),	-- Conjurer's Gloves
+						i(9891),	-- Huntsman's Belt
+						i(9866),	-- Renegade Chestguard
+						i(7431),	-- Twilight Pants
 					}),
 					n(50809, { 	-- Heress
-						dr(06.0, i(9875)),	-- Sorcerer Sash
-						dr(05.0, i(7492)),	-- Captain's Cloak
-						dr(05.0, i(7431)),	-- Twilight Pants
-						dr(04.0, i(9891)),	-- Huntsman's Belt
-						dr(04.0, i(7454)),	-- Knight's Breastplate
-						dr(04.0, i(7456)),	-- Knight's Headguard
-						dr(04.0, i(7455)),	-- Knight's Legguards
-						dr(04.0, i(7440)),	-- Sentinel Trousers
-						dr(04.0, i(9879)),	-- Sorcerer Bracelets
-						dr(03.0, i(9886)),	-- Huntsman's Bands
-						dr(03.0, i(7429)),	-- Twilight Armor
-						dr(02.0, i(9896)),	-- Jazeraint Bracers
-						dr(02.0, i(7474)),	-- Regal Cloak
-						dr(01.7, i(7441)),	-- Sentinel Cap
-						dr(01.5, i(9844)),	-- Conjurer's Vest
-						dr(01.3, i(7432)),	-- Twilight Cowl
-						dr(01.1, i(9877)),	-- Sorcerer Cloak
+						i(9875),	-- Sorcerer Sash
+						i(7492),	-- Captain's Cloak
+						i(7431),	-- Twilight Pants
+						i(9891),	-- Huntsman's Belt
+						i(7454),	-- Knight's Breastplate
+						i(7456),	-- Knight's Headguard
+						i(7455),	-- Knight's Legguards
+						i(7440),	-- Sentinel Trousers
+						i(9879),	-- Sorcerer Bracelets
+						i(9886),	-- Huntsman's Bands
+						i(7429),	-- Twilight Armor
+						i(9896),	-- Jazeraint Bracers
+						i(7474),	-- Regal Cloak
+						i(7441),	-- Sentinel Cap
+						i(9844),	-- Conjurer's Vest
+						i(7432),	-- Twilight Cowl
+						i(9877),	-- Sorcerer Cloak
 					}),
 					n(50778, { 	-- Ironweb
-						dr(05.0, i(9863)),	-- Archer's Shoulderpads
-						dr(04.0, i(7454)),	-- Knight's Breastplate
-						dr(04.0, i(7462)),	-- Knight's Girdle
-						dr(03.0, i(9856)),	-- Archer's Boots
-						dr(03.0, i(9862)),	-- Archer's Trousers
-						dr(03.0, i(7457)),	-- Knight's Gauntlets
-						dr(03.0, i(9872)),	-- Renegade Pauldrons
-						dr(03.0, i(7444)),	-- Sentinel Boots
-						dr(03.0, i(9875)),	-- Sorcerer Sash
-						dr(02.0, i(7458)),	-- Knight's Boots
-						dr(02.0, i(7438)),	-- Twilight Belt
-						dr(01.9, i(9851)),	-- Conjurer's Breeches
-						dr(01.9, i(9879)),	-- Sorcerer Bracelets
-						dr(01.7, i(9849)),	-- Conjurer's Hood
-						dr(01.7, i(9871)),	-- Renegade Leggings
-						dr(01.7, i(7448)),	-- Sentinel Girdle
-						dr(01.7, i(7433)),	-- Twilight Gloves
-						dr(01.5, i(9859)),	-- Archer's Cap
-						dr(01.5, i(7445)),	-- Sentinel Shoulders
-						dr(01.3, i(9850)),	-- Conjurer's Mantle
-						dr(01.3, i(7446)),	-- Sentinel Cloak
-						dr(01.0, i(9848)),	-- Conjurer's Gloves
-						dr(01.0, i(9890)),	-- Huntsman's Cape
-						dr(01.0, i(9877)),	-- Sorcerer Cloak
+						i(9863),	-- Archer's Shoulderpads
+						i(7454),	-- Knight's Breastplate
+						i(7462),	-- Knight's Girdle
+						i(9856),	-- Archer's Boots
+						i(9862),	-- Archer's Trousers
+						i(7457),	-- Knight's Gauntlets
+						i(9872),	-- Renegade Pauldrons
+						i(7444),	-- Sentinel Boots
+						i(9875),	-- Sorcerer Sash
+						i(7458),	-- Knight's Boots
+						i(7438),	-- Twilight Belt
+						i(9851),	-- Conjurer's Breeches
+						i(9879),	-- Sorcerer Bracelets
+						i(9849),	-- Conjurer's Hood
+						i(9871),	-- Renegade Leggings
+						i(7448),	-- Sentinel Girdle
+						i(7433),	-- Twilight Gloves
+						i(9859),	-- Archer's Cap
+						i(7445),	-- Sentinel Shoulders
+						i(9850),	-- Conjurer's Mantle
+						i(7446),	-- Sentinel Cloak
+						i(9848),	-- Conjurer's Gloves
+						i(9890),	-- Huntsman's Cape
+						i(9877),	-- Sorcerer Cloak
 					}),
 					n(1848, { 	-- Lord Maldazzar
-						dr(04.0, i(9287)),	-- Field Plate Gauntlets
-						dr(03.0, i(7456)),	-- Knight's Headguard
-						dr(03.0, i(7445)),	-- Sentinel Shoulders
-						dr(03.0, i(7432)),	-- Twilight Cowl
-						dr(03.0, i(7435)),	-- Twilight Mantle
-						dr(02.0, i(9854)),	-- Archer's Jerkin
-						dr(02.0, i(9863)),	-- Archer's Shoulderpads
-						dr(02.0, i(9844)),	-- Conjurer's Vest
-						dr(02.0, i(9890)),	-- Huntsman's Cape
-						dr(02.0, i(7458)),	-- Knight's Boots
-						dr(02.0, i(7459)),	-- Knight's Pauldrons
-						dr(02.0, i(9866)),	-- Renegade Chestguard
-						dr(02.0, i(7441)),	-- Sentinel Cap
-						dr(02.0, i(9877)),	-- Sorcerer Cloak
-						dr(02.0, i(7434)),	-- Twilight Boots
-						dr(02.0, i(7433)),	-- Twilight Gloves
-						dr(01.7, i(9851)),	-- Conjurer's Breeches
-						dr(01.7, i(9852)),	-- Conjurer's Robe
-						dr(01.7, i(7444)),	-- Sentinel Boots
-						dr(01.6, i(9862)),	-- Archer's Trousers
-						dr(01.6, i(9898)),	-- Jazeraint Cloak
-						dr(01.6, i(7457)),	-- Knight's Gauntlets
-						dr(01.6, i(7443)),	-- Sentinel Gloves
-						dr(01.5, i(7353)),	-- Elder's Padded Armor
-						dr(01.5, i(9871)),	-- Renegade Leggings
-						dr(01.5, i(9879)),	-- Sorcerer Bracelets
-						dr(01.5, i(9875)),	-- Sorcerer Sash
-						dr(01.4, i(9859)),	-- Archer's Cap
-						dr(01.4, i(9886)),	-- Huntsman's Bands
-						dr(01.4, i(7440)),	-- Sentinel Trousers
-						dr(01.4, i(7438)),	-- Twilight Belt
-						dr(01.3, i(7492)),	-- Captain's Cloak
-						dr(01.3, i(9846)),	-- Conjurer's Bracers
-						dr(01.3, i(7461)),	-- Knight's Bracers
-						dr(01.2, i(9891)),	-- Huntsman's Belt
-						dr(01.2, i(7454)),	-- Knight's Breastplate
-						dr(01.2, i(7455)),	-- Knight's Legguards
-						dr(01.2, i(7448)),	-- Sentinel Girdle
-						dr(01.1, i(9872)),	-- Renegade Pauldrons
-						dr(01.1, i(7447)),	-- Sentinel Bracers
-						dr(01.0, i(9856)),	-- Archer's Boots
-						dr(01.0, i(9848)),	-- Conjurer's Gloves
-						dr(01.0, i(7431)),	-- Twilight Pants
+						i(9287),	-- Field Plate Gauntlets
+						i(7456),	-- Knight's Headguard
+						i(7445),	-- Sentinel Shoulders
+						i(7432),	-- Twilight Cowl
+						i(7435),	-- Twilight Mantle
+						i(9854),	-- Archer's Jerkin
+						i(9863),	-- Archer's Shoulderpads
+						i(9844),	-- Conjurer's Vest
+						i(9890),	-- Huntsman's Cape
+						i(7458),	-- Knight's Boots
+						i(7459),	-- Knight's Pauldrons
+						i(9866),	-- Renegade Chestguard
+						i(7441),	-- Sentinel Cap
+						i(9877),	-- Sorcerer Cloak
+						i(7434),	-- Twilight Boots
+						i(7433),	-- Twilight Gloves
+						i(9851),	-- Conjurer's Breeches
+						i(9852),	-- Conjurer's Robe
+						i(7444),	-- Sentinel Boots
+						i(9862),	-- Archer's Trousers
+						i(9898),	-- Jazeraint Cloak
+						i(7457),	-- Knight's Gauntlets
+						i(7443),	-- Sentinel Gloves
+						i(7353),	-- Elder's Padded Armor
+						i(9871),	-- Renegade Leggings
+						i(9879),	-- Sorcerer Bracelets
+						i(9875),	-- Sorcerer Sash
+						i(9859),	-- Archer's Cap
+						i(9886),	-- Huntsman's Bands
+						i(7440),	-- Sentinel Trousers
+						i(7438),	-- Twilight Belt
+						i(7492),	-- Captain's Cloak
+						i(9846),	-- Conjurer's Bracers
+						i(7461),	-- Knight's Bracers
+						i(9891),	-- Huntsman's Belt
+						i(7454),	-- Knight's Breastplate
+						i(7455),	-- Knight's Legguards
+						i(7448),	-- Sentinel Girdle
+						i(9872),	-- Renegade Pauldrons
+						i(7447),	-- Sentinel Bracers
+						i(9856),	-- Archer's Boots
+						i(9848),	-- Conjurer's Gloves
+						i(7431),	-- Twilight Pants
 					}),
 					n(50931, { 	-- Mange
-						dr(15.0, i(7418)),	-- Phalanx Breastplate
-						dr(12.0, i(9870)),	-- Renegade Circlet
-						dr(04.0, i(7407)),	-- Infiltrator Armor
-						dr(03.0, i(9861)),	-- Archer's Gloves
-						dr(03.0, i(9846)),	-- Conjurer's Bracers
-						dr(03.0, i(9869)),	-- Renegade Belt
-						dr(02.0, i(9857)),	-- Archer's Bracers
-						dr(02.0, i(9845)),	-- Conjurer's Shoes
-						dr(02.0, i(7357)),	-- Elder's Hat
-						dr(02.0, i(7353)),	-- Elder's Padded Armor
-						dr(02.0, i(9868)),	-- Renegade Gauntlets
-						dr(01.8, i(7423)),	-- Phalanx Leggings
-						dr(01.3, i(7369)),	-- Elder's Robe
-						dr(01.2, i(7458)),	-- Knight's Boots
-						dr(01.2, i(7417)),	-- Phalanx Boots
-						dr(01.2, i(9864)),	-- Renegade Boots
-						dr(01.0, i(9855)),	-- Archer's Belt
-						dr(01.0, i(7414)),	-- Infiltrator Pants
-						dr(01.0, i(7435)),	-- Twilight Mantle
+						i(7418),	-- Phalanx Breastplate
+						i(9870),	-- Renegade Circlet
+						i(7407),	-- Infiltrator Armor
+						i(9861),	-- Archer's Gloves
+						i(9846),	-- Conjurer's Bracers
+						i(9869),	-- Renegade Belt
+						i(9857),	-- Archer's Bracers
+						i(9845),	-- Conjurer's Shoes
+						i(7357),	-- Elder's Hat
+						i(7353),	-- Elder's Padded Armor
+						i(9868),	-- Renegade Gauntlets
+						i(7423),	-- Phalanx Leggings
+						i(7369),	-- Elder's Robe
+						i(7458),	-- Knight's Boots
+						i(7417),	-- Phalanx Boots
+						i(9864),	-- Renegade Boots
+						i(9855),	-- Archer's Belt
+						i(7414),	-- Infiltrator Pants
+						i(7435),	-- Twilight Mantle
 					}),
 					n(50906, { 	-- Mutilax
-						dr(05.0, i(7458)),	-- Knight's Boots
-						dr(04.0, i(9877)),	-- Sorcerer Cloak
-						dr(03.0, i(9851)),	-- Conjurer's Breeches
-						dr(03.0, i(9844)),	-- Conjurer's Vest
-						dr(03.0, i(9287)),	-- Field Plate Gauntlets
-						dr(03.0, i(9890)),	-- Huntsman's Cape
-						dr(03.0, i(7454)),	-- Knight's Breastplate
-						dr(03.0, i(7462)),	-- Knight's Girdle
-						dr(03.0, i(9866)),	-- Renegade Chestguard
-						dr(03.0, i(7441)),	-- Sentinel Cap
-						dr(03.0, i(9879)),	-- Sorcerer Bracelets
-						dr(03.0, i(7435)),	-- Twilight Mantle
-						dr(02.0, i(7432)),	-- Twilight Cowl
-						dr(01.9, i(9854)),	-- Archer's Jerkin
-						dr(01.9, i(9898)),	-- Jazeraint Cloak
-						dr(01.9, i(7456)),	-- Knight's Headguard
-						dr(01.9, i(9876)),	-- Sorcerer Slippers
-						dr(01.7, i(9862)),	-- Archer's Trousers
-						dr(01.7, i(9886)),	-- Huntsman's Bands
-						dr(01.2, i(9852)),	-- Conjurer's Robe
-						dr(01.0, i(9863)),	-- Archer's Shoulderpads
+						i(7458),	-- Knight's Boots
+						i(9877),	-- Sorcerer Cloak
+						i(9851),	-- Conjurer's Breeches
+						i(9844),	-- Conjurer's Vest
+						i(9287),	-- Field Plate Gauntlets
+						i(9890),	-- Huntsman's Cape
+						i(7454),	-- Knight's Breastplate
+						i(7462),	-- Knight's Girdle
+						i(9866),	-- Renegade Chestguard
+						i(7441),	-- Sentinel Cap
+						i(9879),	-- Sorcerer Bracelets
+						i(7435),	-- Twilight Mantle
+						i(7432),	-- Twilight Cowl
+						i(9854),	-- Archer's Jerkin
+						i(9898),	-- Jazeraint Cloak
+						i(7456),	-- Knight's Headguard
+						i(9876),	-- Sorcerer Slippers
+						i(9862),	-- Archer's Trousers
+						i(9886),	-- Huntsman's Bands
+						i(9852),	-- Conjurer's Robe
+						i(9863),	-- Archer's Shoulderpads
 					}),
 					n(51029, { 	-- Parasitus
-						dr(08.0, i(9866)),	-- Renegade Chestguard
-						dr(04.0, i(9852)),	-- Conjurer's Robe
-						dr(03.0, i(9890)),	-- Huntsman's Cape
-						dr(03.0, i(7455)),	-- Knight's Legguards
-						dr(03.0, i(7459)),	-- Knight's Pauldrons
-						dr(03.0, i(9872)),	-- Renegade Pauldrons
-						dr(03.0, i(7445)),	-- Sentinel Shoulders
-						dr(02.0, i(7456)),	-- Knight's Headguard
-						dr(02.0, i(7443)),	-- Sentinel Gloves
-						dr(01.9, i(7458)),	-- Knight's Boots
-						dr(01.9, i(7485)),	-- Ranger Cord
-						dr(01.9, i(9877)),	-- Sorcerer Cloak
-						dr(01.6, i(9844)),	-- Conjurer's Vest
-						dr(01.6, i(7444)),	-- Sentinel Boots
-						dr(01.3, i(7476)),	-- Regal Sash
-						dr(01.3, i(7435)),	-- Twilight Mantle
-						dr(01.1, i(7494)),	-- Captain's Waistguard
+						i(9866),	-- Renegade Chestguard
+						i(9852),	-- Conjurer's Robe
+						i(9890),	-- Huntsman's Cape
+						i(7455),	-- Knight's Legguards
+						i(7459),	-- Knight's Pauldrons
+						i(9872),	-- Renegade Pauldrons
+						i(7445),	-- Sentinel Shoulders
+						i(7456),	-- Knight's Headguard
+						i(7443),	-- Sentinel Gloves
+						i(7458),	-- Knight's Boots
+						i(7485),	-- Ranger Cord
+						i(9877),	-- Sorcerer Cloak
+						i(9844),	-- Conjurer's Vest
+						i(7444),	-- Sentinel Boots
+						i(7476),	-- Regal Sash
+						i(7435),	-- Twilight Mantle
+						i(7494),	-- Captain's Waistguard
 					}),
 					n(1850, { 	-- Putridius
-						dr(09.0, i(7494)),	-- Captain's Waistguard
-						dr(04.0, i(7476)),	-- Regal Sash
-						dr(03.0, i(9889)),	-- Huntsman's Cap
-						dr(03.0, i(9892)),	-- Huntsman's Gloves
-						dr(03.0, i(9895)),	-- Jazeraint Boots
-						dr(03.0, i(9900)),	-- Jazeraint Gauntlets
-						dr(03.0, i(7455)),	-- Knight's Legguards
-						dr(03.0, i(7474)),	-- Regal Cloak
-						dr(02.0, i(9891)),	-- Huntsman's Belt
-						dr(02.0, i(9885)),	-- Huntsman's Boots
-						dr(02.0, i(9901)),	-- Jazeraint Belt
-						dr(02.0, i(7454)),	-- Knight's Breastplate
-						dr(02.0, i(7439)),	-- Sentinel Breastplate
-						dr(02.0, i(9880)),	-- Sorcerer Gloves
-						dr(01.9, i(7493)),	-- Captain's Bracers
-						dr(01.9, i(9875)),	-- Sorcerer Sash
-						dr(01.9, i(9876)),	-- Sorcerer Slippers
-						dr(01.8, i(9879)),	-- Sorcerer Bracelets
-						dr(01.7, i(9886)),	-- Huntsman's Bands
-						dr(01.7, i(9896)),	-- Jazeraint Bracers
-						dr(01.7, i(7440)),	-- Sentinel Trousers
-						dr(01.7, i(7429)),	-- Twilight Armor
-						dr(01.7, i(7430)),	-- Twilight Robe
-						dr(01.6, i(7483)),	-- Ranger Cloak
-						dr(01.6, i(7473)),	-- Regal Mantle
-						dr(01.5, i(7492)),	-- Captain's Cloak
-						dr(01.5, i(7431)),	-- Twilight Pants
-						dr(01.1, i(7484)),	-- Ranger Wristguards
+						i(7494),	-- Captain's Waistguard
+						i(7476),	-- Regal Sash
+						i(9889),	-- Huntsman's Cap
+						i(9892),	-- Huntsman's Gloves
+						i(9895),	-- Jazeraint Boots
+						i(9900),	-- Jazeraint Gauntlets
+						i(7455),	-- Knight's Legguards
+						i(7474),	-- Regal Cloak
+						i(9891),	-- Huntsman's Belt
+						i(9885),	-- Huntsman's Boots
+						i(9901),	-- Jazeraint Belt
+						i(7454),	-- Knight's Breastplate
+						i(7439),	-- Sentinel Breastplate
+						i(9880),	-- Sorcerer Gloves
+						i(7493),	-- Captain's Bracers
+						i(9875),	-- Sorcerer Sash
+						i(9876),	-- Sorcerer Slippers
+						i(9879),	-- Sorcerer Bracelets
+						i(9886),	-- Huntsman's Bands
+						i(9896),	-- Jazeraint Bracers
+						i(7440),	-- Sentinel Trousers
+						i(7429),	-- Twilight Armor
+						i(7430),	-- Twilight Robe
+						i(7483),	-- Ranger Cloak
+						i(7473),	-- Regal Mantle
+						i(7492),	-- Captain's Cloak
+						i(7431),	-- Twilight Pants
+						i(7484),	-- Ranger Wristguards
 					}),
 					n(1841, { 	-- Scarlet Executioner
-						dr(05.0, i(7462)),	-- Knight's Girdle
-						dr(04.0, i(9863)),	-- Archer's Shoulderpads
-						dr(04.0, i(9862)),	-- Archer's Trousers
-						dr(04.0, i(7457)),	-- Knight's Gauntlets
-						dr(04.0, i(9871)),	-- Renegade Leggings
-						dr(04.0, i(7433)),	-- Twilight Gloves
-						dr(03.0, i(9851)),	-- Conjurer's Breeches
-						dr(03.0, i(7458)),	-- Knight's Boots
-						dr(03.0, i(9872)),	-- Renegade Pauldrons
-						dr(03.0, i(7444)),	-- Sentinel Boots
-						dr(03.0, i(7443)),	-- Sentinel Gloves
-						dr(03.0, i(7434)),	-- Twilight Boots
-						dr(02.0, i(9898)),	-- Jazeraint Cloak
-						dr(02.0, i(9864)),	-- Renegade Boots
-						dr(02.0, i(9870)),	-- Renegade Circlet
-						dr(02.0, i(7446)),	-- Sentinel Cloak
-						dr(01.9, i(9859)),	-- Archer's Cap
-						dr(01.8, i(9848)),	-- Conjurer's Gloves
-						dr(01.7, i(7437)),	-- Twilight Cuffs
-						dr(01.6, i(7447)),	-- Sentinel Bracers
-						dr(01.6, i(7448)),	-- Sentinel Girdle
-						dr(01.6, i(7438)),	-- Twilight Belt
-						dr(01.5, i(9856)),	-- Archer's Boots
-						dr(01.4, i(7456)),	-- Knight's Headguard
-						dr(01.4, i(7440)),	-- Sentinel Trousers
-						dr(01.4, i(7432)),	-- Twilight Cowl
-						dr(01.3, i(7492)),	-- Captain's Cloak
-						dr(01.3, i(9850)),	-- Conjurer's Mantle
-						dr(01.3, i(9891)),	-- Huntsman's Belt
-						dr(01.3, i(7461)),	-- Knight's Bracers
-						dr(01.3, i(7455)),	-- Knight's Legguards
-						dr(01.3, i(7435)),	-- Twilight Mantle
-						dr(01.2, i(9854)),	-- Archer's Jerkin
-						dr(01.2, i(9849)),	-- Conjurer's Hood
-						dr(01.2, i(9886)),	-- Huntsman's Bands
-						dr(01.2, i(9866)),	-- Renegade Chestguard
-						dr(01.2, i(9877)),	-- Sorcerer Cloak
-						dr(01.1, i(9844)),	-- Conjurer's Vest
-						dr(01.1, i(9896)),	-- Jazeraint Bracers
-						dr(01.1, i(7441)),	-- Sentinel Cap
-						dr(01.0, i(9852)),	-- Conjurer's Robe
-						dr(01.0, i(7445)),	-- Sentinel Shoulders
-						dr(01.0, i(9879)),	-- Sorcerer Bracelets
+						i(7462),	-- Knight's Girdle
+						i(9863),	-- Archer's Shoulderpads
+						i(9862),	-- Archer's Trousers
+						i(7457),	-- Knight's Gauntlets
+						i(9871),	-- Renegade Leggings
+						i(7433),	-- Twilight Gloves
+						i(9851),	-- Conjurer's Breeches
+						i(7458),	-- Knight's Boots
+						i(9872),	-- Renegade Pauldrons
+						i(7444),	-- Sentinel Boots
+						i(7443),	-- Sentinel Gloves
+						i(7434),	-- Twilight Boots
+						i(9898),	-- Jazeraint Cloak
+						i(9864),	-- Renegade Boots
+						i(9870),	-- Renegade Circlet
+						i(7446),	-- Sentinel Cloak
+						i(9859),	-- Archer's Cap
+						i(9848),	-- Conjurer's Gloves
+						i(7437),	-- Twilight Cuffs
+						i(7447),	-- Sentinel Bracers
+						i(7448),	-- Sentinel Girdle
+						i(7438),	-- Twilight Belt
+						i(9856),	-- Archer's Boots
+						i(7456),	-- Knight's Headguard
+						i(7440),	-- Sentinel Trousers
+						i(7432),	-- Twilight Cowl
+						i(7492),	-- Captain's Cloak
+						i(9850),	-- Conjurer's Mantle
+						i(9891),	-- Huntsman's Belt
+						i(7461),	-- Knight's Bracers
+						i(7455),	-- Knight's Legguards
+						i(7435),	-- Twilight Mantle
+						i(9854),	-- Archer's Jerkin
+						i(9849),	-- Conjurer's Hood
+						i(9886),	-- Huntsman's Bands
+						i(9866),	-- Renegade Chestguard
+						i(9877),	-- Sorcerer Cloak
+						i(9844),	-- Conjurer's Vest
+						i(9896),	-- Jazeraint Bracers
+						i(7441),	-- Sentinel Cap
+						i(9852),	-- Conjurer's Robe
+						i(7445),	-- Sentinel Shoulders
+						i(9879),	-- Sorcerer Bracelets
 					}),
 					n(1839, { 	-- Scarlet High Clerist
-						dr(04.0, i(9856)),	-- Archer's Boots
-						dr(04.0, i(7446)),	-- Sentinel Cloak
-						dr(03.0, i(9859)),	-- Archer's Cap
-						dr(03.0, i(9846)),	-- Conjurer's Bracers
-						dr(03.0, i(9848)),	-- Conjurer's Gloves
-						dr(03.0, i(9849)),	-- Conjurer's Hood
-						dr(03.0, i(9850)),	-- Conjurer's Mantle
-						dr(03.0, i(7461)),	-- Knight's Bracers
-						dr(03.0, i(7418)),	-- Phalanx Breastplate
-						dr(03.0, i(9864)),	-- Renegade Boots
-						dr(03.0, i(9870)),	-- Renegade Circlet
-						dr(03.0, i(7447)),	-- Sentinel Bracers
-						dr(03.0, i(7448)),	-- Sentinel Girdle
-						dr(03.0, i(7438)),	-- Twilight Belt
-						dr(03.0, i(7437)),	-- Twilight Cuffs
-						dr(02.0, i(9855)),	-- Archer's Belt
-						dr(02.0, i(9861)),	-- Archer's Gloves
-						dr(02.0, i(7407)),	-- Infiltrator Armor
-						dr(01.7, i(9869)),	-- Renegade Belt
-						dr(01.6, i(9854)),	-- Archer's Jerkin
-						dr(01.6, i(9845)),	-- Conjurer's Shoes
-						dr(01.6, i(7369)),	-- Elder's Robe
-						dr(01.6, i(7458)),	-- Knight's Boots
-						dr(01.6, i(7436)),	-- Twilight Cape
-						dr(01.5, i(9863)),	-- Archer's Shoulderpads
-						dr(01.5, i(7456)),	-- Knight's Headguard
-						dr(01.5, i(7443)),	-- Sentinel Gloves
-						dr(01.4, i(7353)),	-- Elder's Padded Armor
-						dr(01.4, i(7462)),	-- Knight's Girdle
-						dr(01.4, i(9868)),	-- Renegade Gauntlets
-						dr(01.4, i(9871)),	-- Renegade Leggings
-						dr(01.4, i(9872)),	-- Renegade Pauldrons
-						dr(01.4, i(7433)),	-- Twilight Gloves
-						dr(01.2, i(9862)),	-- Archer's Trousers
-						dr(01.2, i(9851)),	-- Conjurer's Breeches
-						dr(01.2, i(7434)),	-- Twilight Boots
-						dr(01.1, i(9852)),	-- Conjurer's Robe
-						dr(01.1, i(9898)),	-- Jazeraint Cloak
-						dr(01.1, i(7457)),	-- Knight's Gauntlets
-						dr(01.1, i(7444)),	-- Sentinel Boots
+						i(9856),	-- Archer's Boots
+						i(7446),	-- Sentinel Cloak
+						i(9859),	-- Archer's Cap
+						i(9846),	-- Conjurer's Bracers
+						i(9848),	-- Conjurer's Gloves
+						i(9849),	-- Conjurer's Hood
+						i(9850),	-- Conjurer's Mantle
+						i(7461),	-- Knight's Bracers
+						i(7418),	-- Phalanx Breastplate
+						i(9864),	-- Renegade Boots
+						i(9870),	-- Renegade Circlet
+						i(7447),	-- Sentinel Bracers
+						i(7448),	-- Sentinel Girdle
+						i(7438),	-- Twilight Belt
+						i(7437),	-- Twilight Cuffs
+						i(9855),	-- Archer's Belt
+						i(9861),	-- Archer's Gloves
+						i(7407),	-- Infiltrator Armor
+						i(9869),	-- Renegade Belt
+						i(9854),	-- Archer's Jerkin
+						i(9845),	-- Conjurer's Shoes
+						i(7369),	-- Elder's Robe
+						i(7458),	-- Knight's Boots
+						i(7436),	-- Twilight Cape
+						i(9863),	-- Archer's Shoulderpads
+						i(7456),	-- Knight's Headguard
+						i(7443),	-- Sentinel Gloves
+						i(7353),	-- Elder's Padded Armor
+						i(7462),	-- Knight's Girdle
+						i(9868),	-- Renegade Gauntlets
+						i(9871),	-- Renegade Leggings
+						i(9872),	-- Renegade Pauldrons
+						i(7433),	-- Twilight Gloves
+						i(9862),	-- Archer's Trousers
+						i(9851),	-- Conjurer's Breeches
+						i(7434),	-- Twilight Boots
+						i(9852),	-- Conjurer's Robe
+						i(9898),	-- Jazeraint Cloak
+						i(7457),	-- Knight's Gauntlets
+						i(7444),	-- Sentinel Boots
 					}),
 					n(1838, { 	-- Scarlet Interrogator
-						dr(04.0, i(9871)),	-- Renegade Leggings
-						dr(04.0, i(7441)),	-- Sentinel Cap
-						dr(04.0, i(7434)),	-- Twilight Boots
-						dr(03.0, i(9863)),	-- Archer's Shoulderpads
-						dr(03.0, i(9862)),	-- Archer's Trousers
-						dr(03.0, i(9851)),	-- Conjurer's Breeches
-						dr(03.0, i(7458)),	-- Knight's Boots
-						dr(03.0, i(7457)),	-- Knight's Gauntlets
-						dr(03.0, i(7462)),	-- Knight's Girdle
-						dr(03.0, i(7444)),	-- Sentinel Boots
-						dr(03.0, i(7443)),	-- Sentinel Gloves
-						dr(03.0, i(7433)),	-- Twilight Gloves
-						dr(02.0, i(9872)),	-- Renegade Pauldrons
-						dr(02.0, i(7432)),	-- Twilight Cowl
-						dr(01.9, i(7435)),	-- Twilight Mantle
-						dr(01.8, i(9856)),	-- Archer's Boots
-						dr(01.7, i(9859)),	-- Archer's Cap
-						dr(01.7, i(9890)),	-- Huntsman's Cape
-						dr(01.7, i(7456)),	-- Knight's Headguard
-						dr(01.6, i(7461)),	-- Knight's Bracers
-						dr(01.6, i(7459)),	-- Knight's Pauldrons
-						dr(01.5, i(9891)),	-- Huntsman's Belt
-						dr(01.5, i(9866)),	-- Renegade Chestguard
-						dr(01.5, i(9875)),	-- Sorcerer Sash
-						dr(01.4, i(9854)),	-- Archer's Jerkin
-						dr(01.4, i(9849)),	-- Conjurer's Hood
-						dr(01.4, i(7446)),	-- Sentinel Cloak
-						dr(01.4, i(7440)),	-- Sentinel Trousers
-						dr(01.4, i(7438)),	-- Twilight Belt
-						dr(01.3, i(9850)),	-- Conjurer's Mantle
-						dr(01.3, i(9852)),	-- Conjurer's Robe
-						dr(01.3, i(9896)),	-- Jazeraint Bracers
-						dr(01.3, i(7454)),	-- Knight's Breastplate
-						dr(01.3, i(7455)),	-- Knight's Legguards
-						dr(01.3, i(9864)),	-- Renegade Boots
-						dr(01.3, i(9870)),	-- Renegade Circlet
-						dr(01.3, i(7447)),	-- Sentinel Bracers
-						dr(01.3, i(7445)),	-- Sentinel Shoulders
-						dr(01.3, i(9879)),	-- Sorcerer Bracelets
-						dr(01.3, i(9877)),	-- Sorcerer Cloak
-						dr(01.2, i(9844)),	-- Conjurer's Vest
-						dr(01.2, i(7448)),	-- Sentinel Girdle
-						dr(01.2, i(7437)),	-- Twilight Cuffs
-						dr(01.1, i(9886)),	-- Huntsman's Bands
-						dr(01.1, i(9898)),	-- Jazeraint Cloak
-						dr(01.0, i(9848)),	-- Conjurer's Gloves
+						i(9871),	-- Renegade Leggings
+						i(7441),	-- Sentinel Cap
+						i(7434),	-- Twilight Boots
+						i(9863),	-- Archer's Shoulderpads
+						i(9862),	-- Archer's Trousers
+						i(9851),	-- Conjurer's Breeches
+						i(7458),	-- Knight's Boots
+						i(7457),	-- Knight's Gauntlets
+						i(7462),	-- Knight's Girdle
+						i(7444),	-- Sentinel Boots
+						i(7443),	-- Sentinel Gloves
+						i(7433),	-- Twilight Gloves
+						i(9872),	-- Renegade Pauldrons
+						i(7432),	-- Twilight Cowl
+						i(7435),	-- Twilight Mantle
+						i(9856),	-- Archer's Boots
+						i(9859),	-- Archer's Cap
+						i(9890),	-- Huntsman's Cape
+						i(7456),	-- Knight's Headguard
+						i(7461),	-- Knight's Bracers
+						i(7459),	-- Knight's Pauldrons
+						i(9891),	-- Huntsman's Belt
+						i(9866),	-- Renegade Chestguard
+						i(9875),	-- Sorcerer Sash
+						i(9854),	-- Archer's Jerkin
+						i(9849),	-- Conjurer's Hood
+						i(7446),	-- Sentinel Cloak
+						i(7440),	-- Sentinel Trousers
+						i(7438),	-- Twilight Belt
+						i(9850),	-- Conjurer's Mantle
+						i(9852),	-- Conjurer's Robe
+						i(9896),	-- Jazeraint Bracers
+						i(7454),	-- Knight's Breastplate
+						i(7455),	-- Knight's Legguards
+						i(9864),	-- Renegade Boots
+						i(9870),	-- Renegade Circlet
+						i(7447),	-- Sentinel Bracers
+						i(7445),	-- Sentinel Shoulders
+						i(9879),	-- Sorcerer Bracelets
+						i(9877),	-- Sorcerer Cloak
+						i(9844),	-- Conjurer's Vest
+						i(7448),	-- Sentinel Girdle
+						i(7437),	-- Twilight Cuffs
+						i(9886),	-- Huntsman's Bands
+						i(9898),	-- Jazeraint Cloak
+						i(9848),	-- Conjurer's Gloves
 					}),
 					n(1837, { 	-- Scarlet Judge
-						dr(05.0, i(9854)),	-- Archer's Jerkin
-						dr(05.0, i(7456)),	-- Knight's Headguard
-						dr(04.0, i(9890)),	-- Huntsman's Cape
-						dr(04.0, i(7435)),	-- Twilight Mantle
-						dr(03.0, i(9852)),	-- Conjurer's Robe
-						dr(03.0, i(9844)),	-- Conjurer's Vest
-						dr(03.0, i(9898)),	-- Jazeraint Cloak
-						dr(03.0, i(7459)),	-- Knight's Pauldrons
-						dr(03.0, i(9866)),	-- Renegade Chestguard
-						dr(03.0, i(9871)),	-- Renegade Leggings
-						dr(03.0, i(7441)),	-- Sentinel Cap
-						dr(03.0, i(7445)),	-- Sentinel Shoulders
-						dr(03.0, i(9877)),	-- Sorcerer Cloak
-						dr(03.0, i(7432)),	-- Twilight Cowl
-						dr(02.0, i(7457)),	-- Knight's Gauntlets
-						dr(02.0, i(7444)),	-- Sentinel Boots
-						dr(02.0, i(7443)),	-- Sentinel Gloves
-						dr(01.9, i(9863)),	-- Archer's Shoulderpads
-						dr(01.9, i(7492)),	-- Captain's Cloak
-						dr(01.8, i(9886)),	-- Huntsman's Bands
-						dr(01.8, i(7433)),	-- Twilight Gloves
-						dr(01.7, i(7434)),	-- Twilight Boots
-						dr(01.6, i(9862)),	-- Archer's Trousers
-						dr(01.6, i(9851)),	-- Conjurer's Breeches
-						dr(01.6, i(7458)),	-- Knight's Boots
-						dr(01.6, i(7454)),	-- Knight's Breastplate
-						dr(01.5, i(7455)),	-- Knight's Legguards
-						dr(01.5, i(7440)),	-- Sentinel Trousers
-						dr(01.4, i(7462)),	-- Knight's Girdle
-						dr(01.4, i(9875)),	-- Sorcerer Sash
-						dr(01.3, i(9889)),	-- Huntsman's Cap
-						dr(01.3, i(9872)),	-- Renegade Pauldrons
-						dr(01.2, i(9891)),	-- Huntsman's Belt
-						dr(01.2, i(7431)),	-- Twilight Pants
-						dr(01.1, i(9896)),	-- Jazeraint Bracers
-						dr(01.0, i(9879)),	-- Sorcerer Bracelets
+						i(9854),	-- Archer's Jerkin
+						i(7456),	-- Knight's Headguard
+						i(9890),	-- Huntsman's Cape
+						i(7435),	-- Twilight Mantle
+						i(9852),	-- Conjurer's Robe
+						i(9844),	-- Conjurer's Vest
+						i(9898),	-- Jazeraint Cloak
+						i(7459),	-- Knight's Pauldrons
+						i(9866),	-- Renegade Chestguard
+						i(9871),	-- Renegade Leggings
+						i(7441),	-- Sentinel Cap
+						i(7445),	-- Sentinel Shoulders
+						i(9877),	-- Sorcerer Cloak
+						i(7432),	-- Twilight Cowl
+						i(7457),	-- Knight's Gauntlets
+						i(7444),	-- Sentinel Boots
+						i(7443),	-- Sentinel Gloves
+						i(9863),	-- Archer's Shoulderpads
+						i(7492),	-- Captain's Cloak
+						i(9886),	-- Huntsman's Bands
+						i(7433),	-- Twilight Gloves
+						i(7434),	-- Twilight Boots
+						i(9862),	-- Archer's Trousers
+						i(9851),	-- Conjurer's Breeches
+						i(7458),	-- Knight's Boots
+						i(7454),	-- Knight's Breastplate
+						i(7455),	-- Knight's Legguards
+						i(7440),	-- Sentinel Trousers
+						i(7462),	-- Knight's Girdle
+						i(9875),	-- Sorcerer Sash
+						i(9889),	-- Huntsman's Cap
+						i(9872),	-- Renegade Pauldrons
+						i(9891),	-- Huntsman's Belt
+						i(7431),	-- Twilight Pants
+						i(9896),	-- Jazeraint Bracers
+						i(9879),	-- Sorcerer Bracelets
 					}),
 					n(1885, { 	-- Scarlet Smith
 						{	-- Plans: Runic Plate Leggings
 							["itemID"] = 12719,	-- Plans: Runic Plate Leggings
 						},
-						dr(06.0, i(7433)),	-- Twilight Gloves
-						dr(04.0, i(9862)),	-- Archer's Trousers
-						dr(04.0, i(7458)),	-- Knight's Boots
-						dr(04.0, i(9871)),	-- Renegade Leggings
-						dr(04.0, i(7443)),	-- Sentinel Gloves
-						dr(03.0, i(9863)),	-- Archer's Shoulderpads
-						dr(03.0, i(9851)),	-- Conjurer's Breeches
-						dr(03.0, i(7457)),	-- Knight's Gauntlets
-						dr(03.0, i(7462)),	-- Knight's Girdle
-						dr(03.0, i(9872)),	-- Renegade Pauldrons
-						dr(03.0, i(7444)),	-- Sentinel Boots
-						dr(03.0, i(7447)),	-- Sentinel Bracers
-						dr(03.0, i(7434)),	-- Twilight Boots
-						dr(02.0, i(9859)),	-- Archer's Cap
-						dr(02.0, i(7461)),	-- Knight's Bracers
-						dr(02.0, i(7448)),	-- Sentinel Girdle
-						dr(01.9, i(9856)),	-- Archer's Boots
-						dr(01.8, i(9848)),	-- Conjurer's Gloves
-						dr(01.8, i(9866)),	-- Renegade Chestguard
-						dr(01.8, i(7431)),	-- Twilight Pants
-						dr(01.7, i(7437)),	-- Twilight Cuffs
-						dr(01.6, i(9886)),	-- Huntsman's Bands
-						dr(01.6, i(9864)),	-- Renegade Boots
-						dr(01.6, i(7438)),	-- Twilight Belt
-						dr(01.5, i(9850)),	-- Conjurer's Mantle
-						dr(01.5, i(7456)),	-- Knight's Headguard
-						dr(01.5, i(7455)),	-- Knight's Legguards
-						dr(01.5, i(9870)),	-- Renegade Circlet
-						dr(01.2, i(9854)),	-- Archer's Jerkin
-						dr(01.2, i(7459)),	-- Knight's Pauldrons
-						dr(01.2, i(7445)),	-- Sentinel Shoulders
-						dr(01.1, i(7492)),	-- Captain's Cloak
-						dr(01.1, i(9849)),	-- Conjurer's Hood
-						dr(01.1, i(9890)),	-- Huntsman's Cape
-						dr(01.1, i(7446)),	-- Sentinel Cloak
-						dr(01.1, i(9875)),	-- Sorcerer Sash
-						dr(01.1, i(7429)),	-- Twilight Armor
-						dr(01.1, i(7432)),	-- Twilight Cowl
-						dr(01.0, i(9844)),	-- Conjurer's Vest
-						dr(01.0, i(9891)),	-- Huntsman's Belt
-						dr(01.0, i(7454)),	-- Knight's Breastplate
-						dr(01.0, i(7441)),	-- Sentinel Cap
-						dr(01.0, i(7435)),	-- Twilight Mantle
+						i(7433),	-- Twilight Gloves
+						i(9862),	-- Archer's Trousers
+						i(7458),	-- Knight's Boots
+						i(9871),	-- Renegade Leggings
+						i(7443),	-- Sentinel Gloves
+						i(9863),	-- Archer's Shoulderpads
+						i(9851),	-- Conjurer's Breeches
+						i(7457),	-- Knight's Gauntlets
+						i(7462),	-- Knight's Girdle
+						i(9872),	-- Renegade Pauldrons
+						i(7444),	-- Sentinel Boots
+						i(7447),	-- Sentinel Bracers
+						i(7434),	-- Twilight Boots
+						i(9859),	-- Archer's Cap
+						i(7461),	-- Knight's Bracers
+						i(7448),	-- Sentinel Girdle
+						i(9856),	-- Archer's Boots
+						i(9848),	-- Conjurer's Gloves
+						i(9866),	-- Renegade Chestguard
+						i(7431),	-- Twilight Pants
+						i(7437),	-- Twilight Cuffs
+						i(9886),	-- Huntsman's Bands
+						i(9864),	-- Renegade Boots
+						i(7438),	-- Twilight Belt
+						i(9850),	-- Conjurer's Mantle
+						i(7456),	-- Knight's Headguard
+						i(7455),	-- Knight's Legguards
+						i(9870),	-- Renegade Circlet
+						i(9854),	-- Archer's Jerkin
+						i(7459),	-- Knight's Pauldrons
+						i(7445),	-- Sentinel Shoulders
+						i(7492),	-- Captain's Cloak
+						i(9849),	-- Conjurer's Hood
+						i(9890),	-- Huntsman's Cape
+						i(7446),	-- Sentinel Cloak
+						i(9875),	-- Sorcerer Sash
+						i(7429),	-- Twilight Armor
+						i(7432),	-- Twilight Cowl
+						i(9844),	-- Conjurer's Vest
+						i(9891),	-- Huntsman's Belt
+						i(7454),	-- Knight's Breastplate
+						i(7441),	-- Sentinel Cap
+						i(7435),	-- Twilight Mantle
 					}),
 					n(1851, { 	-- The Husk
-						dr(12.0, i(7437)),	-- Twilight Cuffs
-						dr(05.0, i(9868)),	-- Renegade Gauntlets
-						dr(04.0, i(9845)),	-- Conjurer's Shoes
-						dr(04.0, i(7407)),	-- Infiltrator Armor
-						dr(03.0, i(9855)),	-- Archer's Belt
-						dr(03.0, i(9861)),	-- Archer's Gloves
-						dr(03.0, i(7353)),	-- Elder's Padded Armor
-						dr(03.0, i(7369)),	-- Elder's Robe
-						dr(03.0, i(7418)),	-- Phalanx Breastplate
-						dr(03.0, i(9869)),	-- Renegade Belt
-						dr(03.0, i(7436)),	-- Twilight Cape
-						dr(02.0, i(9857)),	-- Archer's Bracers
-						dr(02.0, i(9862)),	-- Archer's Trousers
-						dr(02.0, i(9846)),	-- Conjurer's Bracers
-						dr(02.0, i(9853)),	-- Conjurer's Cinch
-						dr(02.0, i(7443)),	-- Sentinel Gloves
-						dr(01.9, i(9865)),	-- Renegade Bracers
-						dr(01.8, i(9860)),	-- Archer's Cloak
-						dr(01.8, i(7357)),	-- Elder's Hat
-						dr(01.7, i(9819)),	-- Durable Tunic
-						dr(01.7, i(7417)),	-- Phalanx Boots
-						dr(01.6, i(9872)),	-- Renegade Pauldrons
-						dr(01.5, i(9826)),	-- Durable Robe
-						dr(01.5, i(7414)),	-- Infiltrator Pants
-						dr(01.4, i(7461)),	-- Knight's Bracers
-						dr(01.4, i(7460)),	-- Knight's Cloak
-						dr(01.4, i(7446)),	-- Sentinel Cloak
-						dr(01.3, i(7368)),	-- Elder's Pants
-						dr(01.3, i(9870)),	-- Renegade Circlet
-						dr(01.3, i(7448)),	-- Sentinel Girdle
-						dr(01.2, i(9856)),	-- Archer's Boots
-						dr(01.2, i(7423)),	-- Phalanx Leggings
-						dr(01.2, i(9864)),	-- Renegade Boots
-						dr(01.0, i(9859)),	-- Archer's Cap
-						dr(01.0, i(9849)),	-- Conjurer's Hood
+						i(7437),	-- Twilight Cuffs
+						i(9868),	-- Renegade Gauntlets
+						i(9845),	-- Conjurer's Shoes
+						i(7407),	-- Infiltrator Armor
+						i(9855),	-- Archer's Belt
+						i(9861),	-- Archer's Gloves
+						i(7353),	-- Elder's Padded Armor
+						i(7369),	-- Elder's Robe
+						i(7418),	-- Phalanx Breastplate
+						i(9869),	-- Renegade Belt
+						i(7436),	-- Twilight Cape
+						i(9857),	-- Archer's Bracers
+						i(9862),	-- Archer's Trousers
+						i(9846),	-- Conjurer's Bracers
+						i(9853),	-- Conjurer's Cinch
+						i(7443),	-- Sentinel Gloves
+						i(9865),	-- Renegade Bracers
+						i(9860),	-- Archer's Cloak
+						i(7357),	-- Elder's Hat
+						i(9819),	-- Durable Tunic
+						i(7417),	-- Phalanx Boots
+						i(9872),	-- Renegade Pauldrons
+						i(9826),	-- Durable Robe
+						i(7414),	-- Infiltrator Pants
+						i(7461),	-- Knight's Bracers
+						i(7460),	-- Knight's Cloak
+						i(7446),	-- Sentinel Cloak
+						i(7368),	-- Elder's Pants
+						i(9870),	-- Renegade Circlet
+						i(7448),	-- Sentinel Girdle
+						i(9856),	-- Archer's Boots
+						i(7423),	-- Phalanx Leggings
+						i(9864),	-- Renegade Boots
+						i(9859),	-- Archer's Cap
+						i(9849),	-- Conjurer's Hood
 					}),
 					n(51031, { 	-- Tracker
-						dr(14.0, i(9862)),	-- Archer's Trousers
-						dr(14.0, i(7418)),	-- Phalanx Breastplate
-						dr(03.0, i(9849)),	-- Conjurer's Hood
-						dr(03.0, i(9850)),	-- Conjurer's Mantle
-						dr(03.0, i(9864)),	-- Renegade Boots
-						dr(03.0, i(9870)),	-- Renegade Circlet
-						dr(03.0, i(7438)),	-- Twilight Belt
-						dr(01.9, i(9856)),	-- Archer's Boots
-						dr(01.7, i(7407)),	-- Infiltrator Armor
-						dr(01.4, i(9846)),	-- Conjurer's Bracers
-						dr(01.4, i(7461)),	-- Knight's Bracers
-						dr(01.4, i(7447)),	-- Sentinel Bracers
-						dr(01.4, i(7448)),	-- Sentinel Girdle
-						dr(01.4, i(7436)),	-- Twilight Cape
-						dr(01.3, i(7437)),	-- Twilight Cuffs
-						dr(01.1, i(9871)),	-- Renegade Leggings
-						dr(01.1, i(9879)),	-- Sorcerer Bracelets
+						i(9862),	-- Archer's Trousers
+						i(7418),	-- Phalanx Breastplate
+						i(9849),	-- Conjurer's Hood
+						i(9850),	-- Conjurer's Mantle
+						i(9864),	-- Renegade Boots
+						i(9870),	-- Renegade Circlet
+						i(7438),	-- Twilight Belt
+						i(9856),	-- Archer's Boots
+						i(7407),	-- Infiltrator Armor
+						i(9846),	-- Conjurer's Bracers
+						i(7461),	-- Knight's Bracers
+						i(7447),	-- Sentinel Bracers
+						i(7448),	-- Sentinel Girdle
+						i(7436),	-- Twilight Cape
+						i(7437),	-- Twilight Cuffs
+						i(9871),	-- Renegade Leggings
+						i(9879),	-- Sorcerer Bracelets
 					}),
 					n(50922, { 	-- Warg
-						dr(14.0, i(7448)),	-- Sentinel Girdle
-						dr(05.0, i(7461)),	-- Knight's Bracers
-						dr(05.0, i(9870)),	-- Renegade Circlet
-						dr(04.0, i(9856)),	-- Archer's Boots
-						dr(04.0, i(9859)),	-- Archer's Cap
-						dr(03.0, i(9861)),	-- Archer's Gloves
-						dr(03.0, i(9849)),	-- Conjurer's Hood
-						dr(02.0, i(9846)),	-- Conjurer's Bracers
-						dr(02.0, i(9850)),	-- Conjurer's Mantle
-						dr(02.0, i(7369)),	-- Elder's Robe
-						dr(02.0, i(9864)),	-- Renegade Boots
-						dr(02.0, i(9872)),	-- Renegade Pauldrons
-						dr(01.7, i(9848)),	-- Conjurer's Gloves
-						dr(01.4, i(9845)),	-- Conjurer's Shoes
-						dr(01.4, i(9869)),	-- Renegade Belt
-						dr(01.2, i(7418)),	-- Phalanx Breastplate
-						dr(01.1, i(7446)),	-- Sentinel Cloak
+						i(7448),	-- Sentinel Girdle
+						i(7461),	-- Knight's Bracers
+						i(9870),	-- Renegade Circlet
+						i(9856),	-- Archer's Boots
+						i(9859),	-- Archer's Cap
+						i(9861),	-- Archer's Gloves
+						i(9849),	-- Conjurer's Hood
+						i(9846),	-- Conjurer's Bracers
+						i(9850),	-- Conjurer's Mantle
+						i(7369),	-- Elder's Robe
+						i(9864),	-- Renegade Boots
+						i(9872),	-- Renegade Pauldrons
+						i(9848),	-- Conjurer's Gloves
+						i(9845),	-- Conjurer's Shoes
+						i(9869),	-- Renegade Belt
+						i(7418),	-- Phalanx Breastplate
+						i(7446),	-- Sentinel Cloak
 					}),
 --					n(111122, {	-- Large Vile Slime	}),
 				}),

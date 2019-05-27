@@ -559,7 +559,6 @@ _.Zones =
 									i(144437, {	-- Lost Legend of the Valarjar
 										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 										["classes"] = {1},
-										["dr"] = 100,
 										["g"] = {
 											q(46229, {	-- Valarjar Lore Unlock 1
 												["description"] = "His Name Is Dragonblood",
