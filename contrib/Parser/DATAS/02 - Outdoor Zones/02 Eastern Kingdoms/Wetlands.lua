@@ -299,8 +299,8 @@ _.Zones =
 						i(6591),	-- Battleforge Wristguards
 						i(6601),	-- Dervish Boots
 						i(9806),	-- Superior Gloves
-						i(6200), 	-- Garneg's War Belt
-						i(3392), 	-- Ringed Helm
+						un(7, i(6200)), 	-- Garneg's War Belt
+						un(7, i(3392)), 	-- Ringed Helm
 					}), 
 					n(44227, { 	-- Gazz the Loch-Hunter
 						i(6563),	-- Shimmering Bracers
@@ -429,8 +429,8 @@ _.Zones =
 						i(9772),	-- Greenweave Leggings
 						i(6576),	-- Defender Girdle
 						i(9812),	-- Fortified Cloak
-						i(5749),	-- Scythe Axe
-						i(5750), 	-- Warchief's Girdle
+						un(7, i(5749)),	-- Scythe Axe
+						un(7, i(5750)),	-- Warchief's Girdle
 					}), 
 					n(14424, { 	-- Mirelow
 						i(9811),	-- Fortified Bracers
@@ -500,8 +500,8 @@ _.Zones =
 						i(6591),	-- Battleforge Wristguards
 						i(6602),	-- Dervish Bracers
 						i(9807),	-- Superior Shoulders
-						i(4463),	-- Beaded Raptor Collar
-						i(6198), 	-- Jurassic Wristguards
+						un(7, i(4463)),	-- Beaded Raptor Collar
+						un(7, i(6198)),	-- Jurassic Wristguards
 					}), 
 					o(202083, {	-- Razormaw Matriarch's Nest
 						["model"] = "World\\Generic\\Orc\\Passive Doodads\\Raptornests\\WailingCavernsRaptorNest01.mdx",

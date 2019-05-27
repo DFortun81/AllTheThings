@@ -412,7 +412,7 @@ _.Zones =
 						i(9786),	-- Raider's Cloak
 						i(6556),	-- Bard's Bracers
 						i(6537),	-- Willow Boots
-						i(6195),	-- Wax-Polished Armor
+						un(7, i(6195)),	-- Wax-Polished Armor
 					}), 
 					n(14268, { 	-- Lord Condar
 						i(6547),	-- Soldier's Gauntlets

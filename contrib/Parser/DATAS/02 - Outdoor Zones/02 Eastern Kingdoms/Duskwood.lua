@@ -365,8 +365,8 @@ _.Zones =
 							i(6578),	-- Defender Leggings
 							i(6577),	-- Defender Gauntlets
 							i(9773),	-- Greenweave Robe
-							i(4474), 	-- Ravenwood Bow
-							i(6204),		-- Tribal Worg Helm
+							un(7, i(4474)), 	-- Ravenwood Bow
+							un(7, i(6204)),		-- Tribal Worg Helm
 						},
 						["coords"] = {	-- pats?  and multiple spawnpoints, coords not exhaustive
 							{ 58.4, 29.8 },
@@ -418,8 +418,8 @@ _.Zones =
 							i(6576),	-- Defender Girdle
 							i(9812),	-- Fortified Cloak
 							i(9774),	-- Greenweave Vest
-							i(3018),	-- Hide of Lupos
-							i(3227),	-- Nightbane Staff
+							un(7, i(3018)),	-- Hide of Lupos
+							un(7, i(3227)),	-- Nightbane Staff
 						},
 						["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 							{ 60.8, 20.6 },
@@ -540,8 +540,8 @@ _.Zones =
 							i(6577),	-- Defender Gauntlets
 							i(9772),	-- Greenweave Leggings
 							i(6587),	-- Scouting Trousers
-							i(4448),	-- Husk of Naraxis
-							i(4449),	-- Naraxis' Fang
+							un(7, i(4448)),	-- Husk of Naraxis
+							un(7, i(4449)),	-- Naraxis' Fang
 						},
 					}),
 					n(534,   {	-- Nefaru
@@ -579,8 +579,8 @@ _.Zones =
 							i(6602),	-- Dervish Bracers
 							i(9817),	-- Fortified Spaulders
 							i(9795),	-- Ivycloth Gloves
-							i(4477),	-- Nefarious Buckler
-							i(4476),	-- Beastwalker Robe
+							un(7, i(4477)),	-- Nefarious Buckler
+							un(7, i(4476)),	-- Beastwalker Robe
 						},
 						["coord"] = { 74.0, 78.6 },
 					}),

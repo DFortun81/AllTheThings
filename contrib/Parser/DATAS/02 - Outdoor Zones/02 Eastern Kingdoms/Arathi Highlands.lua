@@ -551,7 +551,7 @@ _.Zones =
 							i(6594),	-- Battleforge Girdle
 							i(6612),	-- Sage's Boots
 							i(9823),	-- Durable Gloves
-							i(5742),	-- Gemstone Dagger
+							un(7, i(5742)),	-- Gemstone Dagger
 							i(5743),	-- Prismstone Ring
 						},
 					}), 
@@ -618,7 +618,7 @@ _.Zones =
 							i(6613),	-- Sage's Bracers
 							i(6594),	-- Battleforge Girdle
 							i(6605),	-- Dervish Gloves
-							i(5256),	-- Kovork's Rattle
+							un(7, i(5256)),	-- Kovork's Rattle
 						},
 					}), 
 					n(2604, { 	-- Molok the Crusher
@@ -693,8 +693,8 @@ _.Zones =
 							i(6605),	-- Dervish Gloves
 							i(9797),	-- Ivycloth Pants
 							i(9831),	-- Scaled Cloak
-							i(5257),	-- Dark Hooded Cape
-							i(2622),	-- Nimar's Tribal Headdress
+							un(7, i(5257)),	-- Dark Hooded Cape
+							un(7, i(2622)),	-- Nimar's Tribal Headdress
 						},
 					}), 
 					n(2779, { 	-- Prince Nazjak
@@ -892,7 +892,7 @@ _.Zones =
 							i(9822),	-- Durable Cape
 							i(9791),	-- Ivycloth Tunic
 							i(5180),	-- Necklace of Harmony
-							i(5181), 	-- Vibrant Silk Cape
+							un(7, i(5181)), 	-- Vibrant Silk Cape
 						},
 					}), 
 					n(51040, { 	-- Snuffles

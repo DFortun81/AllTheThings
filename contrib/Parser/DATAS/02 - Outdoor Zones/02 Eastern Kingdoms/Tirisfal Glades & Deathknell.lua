@@ -454,7 +454,7 @@ _.Zones =
 						i(6543),	-- Willow Bracers
 						i(9763),	-- Cadet Leggings
 						i(6512),	-- Disciple's Robe
-						i(4303),	-- Cranial Thumper
+						un(7, i(4303)),	-- Cranial Thumper
 					}),
 					o(240624, {	-- Faerie Dragon Nest
 						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
