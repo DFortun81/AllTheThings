@@ -191,7 +191,7 @@ _.Zones =
 								-- INCURSIONS INFO STARTS HERE
 								i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 									["description"] = "This cache is awarded for completing any incursion on a Horde character.",
-									["g"] = bubbleDown({["modID"] = 6}, {
+									["g"] = bubbleDown({["modID"] = 5}, {
 										i(163424),	-- Honorbound Artificer's Amice
 										i(163357),	-- Honorbound Artificer's Cloak
 										i(163430),	-- Honorbound Artificer's Cord
