@@ -737,6 +737,15 @@ _.Zones =
 									un(2, i(100674)), -- Grievous Gladiator's Plate Chestpiece (Horde)
 									un(2, i(100678)), -- Grievous Gladiator's Plate Legguards (Horde)
 								}),
+								n(-322, {	-- Back
+									un(2, i(100718)), -- Grievous Gladiator's Drape of Prowess (Horde)
+									un(2, i(100702)), -- Grievous Gladiator's Drape of Meditation (Horde)
+									un(2, i(100613)), -- Grievous Gladiator's Drape of Cruelty (Horde)
+									un(2, i(100716)), -- Grievous Gladiator's Cloak of Prowess (Horde)
+									un(2, i(100715)), -- Grievous Gladiator's Cloak of Alacrity (Horde)
+									un(2, i(100585)), -- Grievous Gladiator's Cape of Prowess (Horde)
+									un(2, i(100651)), -- Grievous Gladiator's Cape of Cruelty (Horde)
+								}),
 								n(-326, {	-- Wrists
 									un(2, i(100634)), -- Grievous Gladiator's Wristguards of Alacrity (Horde)
 									un(2, i(100699)), -- Grievous Gladiator's Wristguards of Accuracy (Horde)
@@ -787,6 +796,38 @@ _.Zones =
 									un(2, i(100608)), -- Grievous Gladiator's Footguards of Alacrity (Horde)
 									un(2, i(100604)), -- Grievous Gladiator's Boots of Cruelty (Horde)
 									un(2, i(100662)), -- Grievous Gladiator's Boots of Alacrity (Horde)
+								}),
+								n(-384, {	-- Neck
+									un(2, i(100682)), -- Grievous Gladiator's Pendant of Meditation (Horde)
+									un(2, i(100719)), -- Grievous Gladiator's Pendant of Cruelty (Horde)
+									un(2, i(100703)), -- Grievous Gladiator's Pendant of Alacrity (Horde)
+									un(2, i(100625)), -- Grievous Gladiator's Necklace of Prowess (Horde)
+									un(2, i(100624)), -- Grievous Gladiator's Necklace of Proficiency (Horde)
+									un(2, i(100695)), -- Grievous Gladiator's Choker of Proficiency (Horde)
+									un(2, i(100584)), -- Grievous Gladiator's Choker of Accuracy (Horde)
+								}),
+								n(-385, {	-- Finger
+									un(2, i(100647)), -- Grievous Gladiator's Signet of Cruelty (Horde)
+									un(2, i(100692)), -- Grievous Gladiator's Signet of Accuracy (Horde)
+									un(2, i(100587)), -- Grievous Gladiator's Ring of Cruelty (Horde)
+									un(2, i(100629)), -- Grievous Gladiator's Ring of Accuracy (Horde)
+									un(2, i(100704)), -- Grievous Gladiator's Band of Meditation (Horde)
+									un(2, i(100620)), -- Grievous Gladiator's Band of Cruelty (Horde)
+									un(2, i(100593)), -- Grievous Gladiator's Band of Accuracy (Horde)
+								}),
+								n(-386, {	-- Trinkets
+									un(2, i(100617)), -- Grievous Gladiator's Medallion of Tenacity (Horde)
+									un(2, i(100568)), -- Grievous Gladiator's Medallion of Meditation (Horde)
+									un(2, i(100684)), -- Grievous Gladiator's Medallion of Cruelty (Horde)
+									un(2, i(100645)), -- Grievous Gladiator's Insignia of Victory (Horde)
+									un(2, i(100712)), -- Grievous Gladiator's Insignia of Dominance (Horde)
+									un(2, i(100586)), -- Grievous Gladiator's Insignia of Conquest (Horde)
+									un(2, i(100652)), -- Grievous Gladiator's Emblem of Tenacity (Horde)
+									un(2, i(100559)), -- Grievous Gladiator's Emblem of Meditation (Horde)
+									un(2, i(100626)), -- Grievous Gladiator's Emblem of Cruelty (Horde)
+									un(2, i(100579)), -- Grievous Gladiator's Badge of Victory (Horde)
+									un(2, i(100576)), -- Grievous Gladiator's Badge of Dominance (Horde)
+									un(2, i(100603)), -- Grievous Gladiator's Badge of Conquest (Horde)
 								}),
 							}),
 							n(-660, {	-- Elite
@@ -966,6 +1007,9 @@ _.Zones =
 									un(2, i(100525)),	-- Grievous Gladiator's Plate Helm
 									un(2, i(100527)),	-- Grievous Gladiator's Plate Legguards
 									un(2, i(100529)),	-- Grievous Gladiator's Plate Shoulders
+								}),
+								n(-322, {	-- Back
+									un(2, i(101698)), -- Grievous Gladiator's Greatcloak
 								}),
 							}),
 						},
