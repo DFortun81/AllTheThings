@@ -297,6 +297,7 @@ _.Achievements =
 					un(2, ach(8214)),		-- Malevolent Gladiator
 					un(2, ach(418)),		-- Merciless Gladiator
 					un(2, ach(3618)),		-- Murkimus the Gladiator
+						un(2, i(100870)),	-- Murkismus the gladiator
 					un(2, ach(8666, {		-- Prideful Gladiator: Season 15
 						un(39, title(254)),		-- Prideful Gladiator
 					})),
