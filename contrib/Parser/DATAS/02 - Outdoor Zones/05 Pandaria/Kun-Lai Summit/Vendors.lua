@@ -232,6 +232,7 @@ _.Zones =
 							un(2, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
 							un(2, i(103118)),	-- Elite Prideful Gladiator's baton of light
 							un(2, i(102990)),	-- Elite Prideful Gladiator's Longbow
+							un(2, i(102985)),	-- Elite Prideful Gladiator's Bonegrinder
 							un(2, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
 							un(2, i(103041)),	-- Elite Prideful Gladiator's Chain Spaulders
 							un(2, i(103037)),	-- Elite Prideful Gladiator's Chain Armor
@@ -453,6 +454,8 @@ _.Zones =
 							un(2, i(84789)),	-- Malevolent Gladiator's Staff
 							un(2, i(85127)),	-- Elite Malevolent Gladiator's Spellblade 	-- Daggers
 							un(2, i(85133)),	-- Elite Malevolent Gladiator's Shanker
+							un(2, i(84961)),		-- Malevolent Gladiator's shellblade (used to upgrade to elite)
+							un(2, i(84967)),		-- Malevolent Gladiator's shanker (used to upgrade to elite)
 							un(2, i(85109)),	-- Elite Malevolent Gladiator's Battle Staff 	-- Staffs
 							un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
 							un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
@@ -472,8 +475,10 @@ _.Zones =
 							un(2, i(85113)),	-- Elite Malevolent Gladiator's Decapitator 	-- Axes
 							un(2, i(85132)),	-- Elite Malevolent Gladiator's Hacker
 							un(2, i(85131)),	-- Elite Malevolent Gladiator's Cleaver
+							un(2, i(84896)),	-- Malevolent Gladiator's Longbow (used to upgrade to elite)
 							un(2, i(85119)),	-- Elite Malevolent Gladiator's Longbow 	-- Ranged Weapons
 							un(2, i(85123)),	-- Elite Malevolent Gladiator's Rifle
+							un(2, i(84900)),		-- Malevolent Gladiator's Rifle(used to upgrade to elite)
 							un(2, i(85120)),	-- Elite Malevolent Gladiator's Crossbow
 							un(2, i(85122)),	-- Elite Malevolent Gladiator's Baton of Light
 							un(2, i(85120)),	-- Elite Malevolent Gladiator's Heavy Crossbow
@@ -624,6 +629,7 @@ _.Zones =
 									un(2, i(100730)), -- Grievous Gladiator's Shield Wall (Horde)
 									un(2, i(100728)), -- Grievous Gladiator's Redoubt (Horde)
 									un(2, i(100731)), -- Grievous Gladiator's Barrier (Horde)
+									un(2, i(100554)), -- Grievous Gladiator's Bonegrinder (Horde)
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100594)), -- Grievous Gladiator's Dreadplate Gauntlets (Horde)
@@ -827,6 +833,7 @@ _.Zones =
 									un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
 									un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
 									un(2, i(100204)),	-- Grievous Gladiator's Longbow
+									un(2, i(100186)), 	-- Grievous Gladiator's Bonegrinder 
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece

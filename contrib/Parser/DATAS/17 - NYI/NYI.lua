@@ -1483,7 +1483,6 @@ _.NeverImplemented =
 		un(1, i(166791)),	-- Pristine Falcon Feather (unsued version)
 		un(1, i(113569)),	-- Autumnal Sproutling (unused ver)
 		un(1, i(91031)),	-- Darkmoon Glowfly (you get it via pet battles)
-		un(1, i(100870)),	-- Murkimus' Tyrannical Spear
 		un(1, i(119147)),	-- Nether Ray Fry (unsed Version)
 		un(1, i(119112)),	-- Son of Sethe (unsed Version)
 		model(38311, n(51634, {["u"] = 1,} )),	-- Bubbles 					(Never added in Game)
@@ -2243,6 +2242,7 @@ _.NeverImplemented =
 			un(1, i(69916)),	-- Trollbane (Test)
 			un(1, i(109519)),	-- Unknown
 			un(1, i(165265)),	-- Unknown
+			un(1, i(115293)),	-- Spectral Greataxe
 			un(1, i(80984)),	-- Expropriator's Greataxe
 			un(1, i(117994)),	-- Rename karabor honor guard axe
 			un(1, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
