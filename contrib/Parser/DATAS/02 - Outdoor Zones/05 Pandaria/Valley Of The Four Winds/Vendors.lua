@@ -681,38 +681,6 @@ _.Zones =
 									un(2, i(100427)), -- Grievous Gladiator's Boots of Cruelty (Alliance)
 									un(2, i(100340)), -- Grievous Gladiator's Boots of Alacrity (Alliance)
 								}),
-								n(-384, {	-- Neck
-									un(2, i(100233)), -- Grievous Gladiator's Pendant of Meditation (Alliance)
-									un(2, i(100231)), -- Grievous Gladiator's Pendant of Cruelty (Alliance)
-									un(2, i(100232)), -- Grievous Gladiator's Pendant of Alacrity (Alliance)
-									un(2, i(100199)), -- Grievous Gladiator's Necklace of Prowess (Alliance)
-									un(2, i(100198)), -- Grievous Gladiator's Necklace of Proficiency (Alliance)
-									un(2, i(100503)), -- Grievous Gladiator's Choker of Proficiency (Alliance)
-									un(2, i(100504)), -- Grievous Gladiator's Choker of Accuracy (Alliance)
-								}),
-								n(-385, {	-- Finger
-									un(2, i(100506)), -- Grievous Gladiator's Signet of Cruelty (Alliance)
-									un(2, i(100507)), -- Grievous Gladiator's Signet of Accuracy (Alliance)
-									un(2, i(100201)), -- Grievous Gladiator's Ring of Cruelty (Alliance)
-									un(2, i(100202)), -- Grievous Gladiator's Ring of Accuracy (Alliance)
-									un(2, i(100236)), -- Grievous Gladiator's Band of Meditation (Alliance)
-									un(2, i(100234)), -- Grievous Gladiator's Band of Cruelty (Alliance)
-									un(2, i(100235)), -- Grievous Gladiator's Band of Accuracy (Alliance)
-								}),
-								n(-386, {	-- Trinkets
-									un(2, i(100591)), -- Grievous Gladiator's Medallion of Tenacity (Alliance)
-									un(2, i(100618)), -- Grievous Gladiator's Medallion of Meditation (Alliance)
-									un(2, i(100616)), -- Grievous Gladiator's Medallion of Cruelty (Alliance)
-									un(2, i(100505)), -- Grievous Gladiator's Insignia of Victory (Alliance)
-									un(2, i(100491)), -- Grievous Gladiator's Insignia of Dominance (Alliance)
-									un(2, i(100200)), -- Grievous Gladiator's Insignia of Conquest (Alliance)
-									un(2, i(100306)), -- Grievous Gladiator's Emblem of Tenacity (Alliance)
-									un(2, i(100307)), -- Grievous Gladiator's Emblem of Meditation (Alliance)
-									un(2, i(100305)), -- Grievous Gladiator's Emblem of Cruelty (Alliance)
-									un(2, i(100500)), -- Grievous Gladiator's Badge of Victory (Alliance)
-									un(2, i(100490)), -- Grievous Gladiator's Badge of Dominance (Alliance)
-									un(2, i(100195)), -- Grievous Gladiator's Badge of Conquest (Alliance)
-								}),
 							}),
 							n(-660, {	-- Elite
 								n(-319, {	-- Weapons
@@ -1082,16 +1050,41 @@ _.Zones =
 							i(103330),	-- Grievous Gladiator's Plate Helm
 							i(103331),	-- Grievous Gladiator's Plate Legguards
 							i(103332),	-- Grievous Gladiator's Plate Shoulders
-							un(2, i(103151)),	-- Grievous Gladiator's Ring of Cruelty
-							un(2, i(103152)),	-- Grievous Gladiator's Ring of Accuracy
-							un(2, i(103173)),	-- Grievous Gladiator's Band of Cruelty
-							un(2, i(103174)),	-- Grievous Gladiator's Band of Accurcy
-							un(2, i(103175)),	-- Grievous Gladiator's Band of Mediation
-							un(2, i(103320)),	-- Grievous Gladiator's Signet of Cruelty
-							un(2, i(103321)),	-- Grievous Gladiator's Signet of Accuracy
+							n(-384, {	-- Neck
+								un(2, i(100233)), -- Grievous Gladiator's Pendant of Meditation (Alliance)
+								un(2, i(100231)), -- Grievous Gladiator's Pendant of Cruelty (Alliance)
+								un(2, i(100232)), -- Grievous Gladiator's Pendant of Alacrity (Alliance)
+								un(2, i(100199)), -- Grievous Gladiator's Necklace of Prowess (Alliance)
+								un(2, i(100198)), -- Grievous Gladiator's Necklace of Proficiency (Alliance)
+								un(2, i(100503)), -- Grievous Gladiator's Choker of Proficiency (Alliance)
+								un(2, i(100504)), -- Grievous Gladiator's Choker of Accuracy (Alliance)
+							}),
+							n(-385, {	-- Finger
+								un(2, i(100506)), -- Grievous Gladiator's Signet of Cruelty (Alliance)
+								un(2, i(100507)), -- Grievous Gladiator's Signet of Accuracy (Alliance)
+								un(2, i(100201)), -- Grievous Gladiator's Ring of Cruelty (Alliance)
+								un(2, i(100202)), -- Grievous Gladiator's Ring of Accuracy (Alliance)
+								un(2, i(100236)), -- Grievous Gladiator's Band of Meditation (Alliance)
+								un(2, i(100234)), -- Grievous Gladiator's Band of Cruelty (Alliance)
+								un(2, i(100235)), -- Grievous Gladiator's Band of Accuracy (Alliance)
+							}),
+							n(-386, {	-- Trinkets
+								un(2, i(100591)), -- Grievous Gladiator's Medallion of Tenacity (Alliance)
+								un(2, i(100618)), -- Grievous Gladiator's Medallion of Meditation (Alliance)
+								un(2, i(100616)), -- Grievous Gladiator's Medallion of Cruelty (Alliance)
+								un(2, i(100505)), -- Grievous Gladiator's Insignia of Victory (Alliance)
+								un(2, i(100491)), -- Grievous Gladiator's Insignia of Dominance (Alliance)
+								un(2, i(100200)), -- Grievous Gladiator's Insignia of Conquest (Alliance)
+								un(2, i(100306)), -- Grievous Gladiator's Emblem of Tenacity (Alliance)
+								un(2, i(100307)), -- Grievous Gladiator's Emblem of Meditation (Alliance)
+								un(2, i(100305)), -- Grievous Gladiator's Emblem of Cruelty (Alliance)
+								un(2, i(100500)), -- Grievous Gladiator's Badge of Victory (Alliance)
+								un(2, i(100490)), -- Grievous Gladiator's Badge of Dominance (Alliance)
+								un(2, i(100195)), -- Grievous Gladiator's Badge of Conquest (Alliance)
+							}),
 						},
 					}),
-					nh(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version)	-- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
+					nh(73147, {	-- Ethan Natice Season 15 Elite(5.4.7 Elite and removed Version)
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {
 							un(2, i(103635)),	-- Elite Prideful Gladiator's Greatcloak
