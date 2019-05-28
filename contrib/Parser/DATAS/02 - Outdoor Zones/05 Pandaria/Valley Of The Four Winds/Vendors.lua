@@ -482,19 +482,32 @@ _.Zones =
 						["g"] = {
 							n(-659, {	-- Gladiator
 								n(-319, {	-- Weapons
-									
-									-- Removed Weapons
-									un(2, i(100301)),	-- Grievous Gladiator's Redoubt a
-									un(2, i(100508)),	-- Grievous Gladiator's Shield Wall a
-									un(2, i(100225)),	-- Grievous Gladiator's barrier a
-									un(2, i(100223)),	-- Grievous Gladiator's Endgame a
-									un(2, i(100237)),	-- Grievous Gladiator's Reprieve a
-									un(2, i(100203)),	-- Grievous Gladiator's longbow a
-									un(2, i(100297)),	-- Grievous Gladiator's Rifle a
-									un(2, i(100227)),	-- Grievous Gladiator's Spellblade a
-									un(2, i(100480)),	-- Grievous Gladiator's Shanker a
-									un(2, i(100482)),	-- Grievous Gladiator's Ripper a
-									un(2, i(100486)),	-- Grievous Gladiator's Render a
+									un(2, i(100227)), -- Grievous Gladiator's Spellblade (Alliance)
+									un(2, i(100498)), -- Grievous Gladiator's Slicer (Alliance)
+									un(2, i(100480)), -- Grievous Gladiator's Shanker (Alliance)
+									un(2, i(100482)), -- Grievous Gladiator's Ripper (Alliance)
+									un(2, i(100486)), -- Grievous Gladiator's Render (Alliance)
+									un(2, i(100193)), -- Grievous Gladiator's Quickblade (Alliance)
+									un(2, i(100191)), -- Grievous Gladiator's Pummeler (Alliance)
+									un(2, i(100488)), -- Grievous Gladiator's Mageblade (Alliance)
+									un(2, i(100494)), -- Grievous Gladiator's Hacker (Alliance)
+									un(2, i(100299)), -- Grievous Gladiator's Gavel (Alliance)
+									un(2, i(100189)), -- Grievous Gladiator's Cleaver (Alliance)
+									un(2, i(100496)), -- Grievous Gladiator's Bonecracker (Alliance)
+									un(2, i(100403)), -- Grievous Gladiator's Pike (Alliance)
+									un(2, i(100187)), -- Grievous Gladiator's Greatsword (Alliance)
+									un(2, i(100303)), -- Grievous Gladiator's Energy Staff (Alliance)
+									un(2, i(100183)), -- Grievous Gladiator's Decapitator (Alliance)
+									un(2, i(100229)), -- Grievous Gladiator's Battle Staff (Alliance)
+									un(2, i(100237)), -- Grievous Gladiator's Reprieve (Alliance)
+									un(2, i(100223)), -- Grievous Gladiator's Endgame (Alliance)
+									un(2, i(100508)), -- Grievous Gladiator's Shield Wall (Alliance)
+									un(2, i(100301)), -- Grievous Gladiator's Redoubt (Alliance)
+									un(2, i(100225)), -- Grievous Gladiator's Barrier (Alliance)
+									un(2, i(100239)), -- Grievous Gladiator's Touch of Defeat (Alliance)
+									un(2, i(100297)), -- Grievous Gladiator's Rifle (Alliance)
+									un(2, i(100203)), -- Grievous Gladiator's Longbow (Alliance)
+									un(2, i(100492)), -- Grievous Gladiator's Baton of Light (Alliance)
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
@@ -607,6 +620,57 @@ _.Zones =
 									un(2, i(100522)), -- Grievous Gladiator's Plate Gauntlets (Alliance)
 									un(2, i(100526)), -- Grievous Gladiator's Plate Legguards (Alliance)
 									un(2, i(100528)), -- Grievous Gladiator's Plate Shoulders (Alliance)
+								}),
+								n(-326, {	-- Wrists
+									un(2, i(100316)), -- Grievous Gladiator's Wristguards of Alacrity (Alliance)
+									un(2, i(100317)), -- Grievous Gladiator's Wristguards of Accuracy (Alliance)
+									un(2, i(100218)), -- Grievous Gladiator's Cuffs of Prowess (Alliance)
+									un(2, i(100219)), -- Grievous Gladiator's Cuffs of Meditation (Alliance)
+									un(2, i(100217)), -- Grievous Gladiator's Cuffs of Accuracy (Alliance)
+									un(2, i(100381)), -- Grievous Gladiator's Bracers of Prowess (Alliance)
+									un(2, i(100382)), -- Grievous Gladiator's Bracers of Meditation (Alliance)
+									un(2, i(100284)), -- Grievous Gladiator's Bindings of Prowess (Alliance)
+									un(2, i(100267)), -- Grievous Gladiator's Bindings of Meditation (Alliance)
+									un(2, i(100429)), -- Grievous Gladiator's Armwraps of Alacrity (Alliance)
+									un(2, i(100342)), -- Grievous Gladiator's Armwraps of Accuracy (Alliance)
+									un(2, i(100401)), -- Grievous Gladiator's Armplates of Proficiency (Alliance)
+									un(2, i(100402)), -- Grievous Gladiator's Armplates of Alacrity (Alliance)
+									un(2, i(100446)), -- Grievous Gladiator's Armbands of Prowess (Alliance)
+									un(2, i(100447)), -- Grievous Gladiator's Armbands of Meditation (Alliance)
+								}),
+								n(-328, {	-- Waist
+									un(2, i(100440)), -- Grievous Gladiator's Waistguard of Meditation (Alliance)
+									un(2, i(100468)), -- Grievous Gladiator's Waistguard of Cruelty (Alliance)
+									un(2, i(100338)), -- Grievous Gladiator's Waistband of Cruelty (Alliance)
+									un(2, i(100425)), -- Grievous Gladiator's Waistband of Accuracy (Alliance)
+									un(2, i(100308)), -- Grievous Gladiator's Links of Cruelty (Alliance)
+									un(2, i(100310)), -- Grievous Gladiator's Links of Accuracy (Alliance)
+									un(2, i(100395)), -- Grievous Gladiator's Girdle of Prowess (Alliance)
+									un(2, i(100393)), -- Grievous Gladiator's Girdle of Accuracy (Alliance)
+									un(2, i(100209)), -- Grievous Gladiator's Cord of Meditation (Alliance)
+									un(2, i(100205)), -- Grievous Gladiator's Cord of Cruelty (Alliance)
+									un(2, i(100207)), -- Grievous Gladiator's Cord of Accuracy (Alliance)
+									un(2, i(100375)), -- Grievous Gladiator's Clasp of Meditation (Alliance)
+									un(2, i(100373)), -- Grievous Gladiator's Clasp of Cruelty (Alliance)
+									un(2, i(100263)), -- Grievous Gladiator's Belt of Meditation (Alliance)
+									un(2, i(100280)), -- Grievous Gladiator's Belt of Cruelty (Alliance)
+								}),
+								n(-330, {	-- Feet
+									un(2, i(100397)), -- Grievous Gladiator's Warboots of Cruelty (Alliance)
+									un(2, i(100399)), -- Grievous Gladiator's Warboots of Alacrity (Alliance)
+									un(2, i(100215)), -- Grievous Gladiator's Treads of Meditation (Alliance)
+									un(2, i(100211)), -- Grievous Gladiator's Treads of Cruelty (Alliance)
+									un(2, i(100213)), -- Grievous Gladiator's Treads of Alacrity (Alliance)
+									un(2, i(100312)), -- Grievous Gladiator's Sabatons of Cruelty (Alliance)
+									un(2, i(100314)), -- Grievous Gladiator's Sabatons of Alacrity (Alliance)
+									un(2, i(100379)), -- Grievous Gladiator's Greaves of Meditation (Alliance)
+									un(2, i(100377)), -- Grievous Gladiator's Greaves of Alacrity (Alliance)
+									un(2, i(100265)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
+									un(2, i(100444)), -- Grievous Gladiator's Footguards of Meditation (Alliance)
+									un(2, i(100282)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
+									un(2, i(100442)), -- Grievous Gladiator's Footguards of Alacrity (Alliance)
+									un(2, i(100427)), -- Grievous Gladiator's Boots of Cruelty (Alliance)
+									un(2, i(100340)), -- Grievous Gladiator's Boots of Alacrity (Alliance)
 								}),
 							}),
 							n(-660, {	-- Elite
