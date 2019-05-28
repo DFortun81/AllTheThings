@@ -8,6 +8,8 @@ _.Zones =
 			["groups"] = {
 				n (-2, {	-- Vendors
 					n(12384, {	-- Agustus the Touched
+						["coord"] = { 11.4, 28.6, 23 },
+						["description"]	= "Vendor will not sell to you until you complete his quest. A Crazy Grab Bag is a limited supply item. Good luck!|r",
 						["groups"] = {
 							i(15902, {	-- A Crazy Grab Bag
 								i(7545),	-- Champion Bracers
@@ -16,15 +18,14 @@ _.Zones =
 								i(7531),	-- Cabalist Boots
 							}),
 						},
-						["description"]	= "Vendor will not sell to you until you complete his quest. A Crazy Grab Bag is a limited supply item. Good luck!|r",
 					}),
 					n(29587, {	-- Dread Commander Thalanor
+						["coord"] = { 84.0, 49.8 },
+						["classes"] = { 6 },	-- Death Knight
 						["groups"] = {
 							i(40775),	-- Winged Steed of the Ebon Blade
 							i(136796),	-- Necrophile Tome: Corpse Exploder
 						},
-						["coord"] = { 84.0, 49.8 },
-						["classes"] = { 6 },	-- Death Knight
 					}),
 					{	-- Jase Farlane <Trade Supplies>
 						["npcID"] = 12941,	-- Jase Farlane <Trade Supplies>
@@ -37,29 +38,34 @@ _.Zones =
 						},
 					},
 					n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
-						{
-							["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]
-							--["recipeID"] = 121183,	-- Contemplation
+						["coord"]= { 75.8, 54.0, 23 },
+						["groups"] = {
+							{
+								["itemID"] = 136801,	-- Divine Tome: Contemplation [Paladin]
+								--["recipeID"] = 121183,	-- Contemplation
+							},
+							i(136928),	-- Thaumaturgist's Orb Toy - Priest only
+							i(19446),	-- Formula: Enchant Bracer - Argent Versatility
+							i(19447),	-- Formula: Enchant Bracer - Healing Power
+							i(19442),	-- Formula: Powerful Anti-Venom
+							i(19216), 	-- Pattern: Argent Boots
+							i(19217), 	-- Pattern: Argent Shoulders
+							i(19328), 	-- Pattern: Dawn Treaders
+							i(19329), 	-- Pattern: Golden Mantle of the Dawn
+							i(19203), 	-- Plans: Girdle of the Dawn
+							i(19205), 	-- Plans: Gloves of the Dawn
+							i(13482),	-- Recipe: Transmute Air to Fire
+							i(18171),	-- Arcane Mantle of the Dawn
+							i(18182),	-- Chromatic Mantle of the Dawn
+							i(18169),	-- Flame Mantle of the Dawn
+							i(18170),	-- Frost Mantle of the Dawn
+							i(18172),	-- Nature Mantle of the Dawn
+							i(18173),	-- Shadow Mantle of the Dawn
 						},
-						i(136928),	-- Thaumaturgist's Orb Toy - Priest only
-						i(19446),	-- Formula: Enchant Bracer - Argent Versatility
-						i(19447),	-- Formula: Enchant Bracer - Healing Power
-						i(19442),	-- Formula: Powerful Anti-Venom
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
-						i(13482),	-- Recipe: Transmute Air to Fire
-						i(18171),	-- Arcane Mantle of the Dawn
-						i(18182),	-- Chromatic Mantle of the Dawn
-						i(18169),	-- Flame Mantle of the Dawn
-						i(18170),	-- Frost Mantle of the Dawn
-						i(18172),	-- Nature Mantle of the Dawn
-						i(18173),	-- Shadow Mantle of the Dawn
 					}),
 					n(28512, {	-- Quartermaster Ozorg
+						["coord"] = { 81.9, 48.4 },
+						["classes"] = { 6 },	-- Death Knight
 						["groups"] = {
 							i(34652),	-- Archerus Knight's Hood
 							i(34655),	-- Archerus Knight's Pauldrons
@@ -89,8 +95,6 @@ _.Zones =
 							i(38669),	-- Engraved Saronite Legplates
 							i(38670),	-- Greaves of the Slaughter
 						},
-						["coord"] = { 81.9, 48.4 },
-						["classes"] = { 6 },	-- Death Knight
 					}),
 				}),
 			},
