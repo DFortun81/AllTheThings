@@ -601,46 +601,46 @@ _.Zones =
 						["sourceQuests"] = {26817},
 					}),
 				--	q(8194),	-- Apprentice Angler
---[[				qg(, q(31851)),	-- Bill Buckler
-					qg(, q(31728)),	-- Bill Buckler
-					qg(, qh(29252)),	-- Booty Bay's Interests
-					qg(, qh(29251)),	-- Booty Bay's Interests
-					qg(, qa(29153)),	-- Booty Bay's Interests
-					qg(, qa(29154)),	-- Booty Bay's Interests
-					qg(, q(26718)),	-- Breadcrumb to Badlands
-					qg(, qh(26592)),	-- Diffractory Chromascope
-					qg(, q(9272)),	-- Dressing the Part
-					qg(, q(38399)),	-- Fencing the Rose
-					qg(, q(26839)),	-- Get Away From It All!
-					qg(, q(8193)),	-- Grand Prize
-					qg(, q(26452)),	-- Gurubashi Challenge
-					qg(, q(26451)),	-- Gurubashi Challenge: Free-For-All Arena Combat
-					qg(, qh(26435)),	-- I'm A Huge Liar and a Fraud
-					qg(, qh(26534)),	-- Let's See What You've Got, Zanzil
-					qg(, q(26630)),	-- Looks Like a Tauren Pirate to Me
-					qg(, qa(29152)),	-- Making Contact
-					qg(, qh(29250)),	-- Making Contact
-					qg(, qh(11357)),	-- Masked Orphan Matron
-					qg(, qh(26494)),	-- Mixmaster Jasper
-					qg(, q(8225)),	-- Rare Fish - Brownell's Blue Striped Racer
-					qg(, q(8224)),	-- Rare Fish - Dezian Queenfish
-					qg(, q(8221)),	-- Rare Fish - Keefer's Angelfish
-					qg(, q(32435)),	-- Second Place
-					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
-					qg(, q(40849)),	-- The Dreadblades
+--[[				q(31851)	-- Bill Buckler
+					q(31728)	-- Bill Buckler
+					qh(29252)	-- Booty Bay's Interests
+					qh(29251)	-- Booty Bay's Interests
+					qa(29153)	-- Booty Bay's Interests
+					qa(29154)	-- Booty Bay's Interests
+					q(26718)	-- Breadcrumb to Badlands
+					qh(26592)	-- Diffractory Chromascope
+					q(9272)	-- Dressing the Part
+					q(38399)	-- Fencing the Rose
+					q(26839)	-- Get Away From It All!
+					q(8193)	-- Grand Prize
+					q(26452)	-- Gurubashi Challenge
+					q(26451)	-- Gurubashi Challenge: Free-For-All Arena Combat
+					qh(26435)	-- I'm A Huge Liar and a Fraud
+					qh(26534)	-- Let's See What You've Got, Zanzil
+					q(26630)	-- Looks Like a Tauren Pirate to Me
+					qa(29152)	-- Making Contact
+					qh(29250)	-- Making Contact
+					qh(11357)	-- Masked Orphan Matron
+					qh(26494)	-- Mixmaster Jasper
+					q(8225)	-- Rare Fish - Brownell's Blue Striped Racer
+					q(8224)	-- Rare Fish - Dezian Queenfish
+					q(8221)	-- Rare Fish - Keefer's Angelfish
+					q(32435)	-- Second Place
+					q(44765)	-- Stranglethorn Fishing Extravaganza
+					q(40849)	-- The Dreadblades
 					q(26837),	-- The Explorers' League Digsite //REMOVED
-					qg(, qa(47709)),	-- The Great Gnomeregan Race
-					qg(, qh(26590)),	-- The Holy Water of Clarity
-					qg(, qh(26433)),	-- The Holy Water of Clarity
-					qg(, qa(11970)),	-- The Master of Summer Lore
-					qg(, qh(11971)),	-- The Spinner of Summer Tales
-					qg(, q(32436)),	-- Third Place
+					qa(47709),	-- The Great Gnomeregan Race
+					qh(26590),	-- The Holy Water of Clarity
+					qh(26433),	-- The Holy Water of Clarity
+					qa(11970),	-- The Master of Summer Lore
+					qh(11971),	-- The Spinner of Summer Tales
+					q(32436),	-- Third Place
 					qa(26805),	-- To the Cape! //Starts in Northern Stranglethorn
-					qg(, q(9259)),	-- Traitor to the Bloodsail
-					qg(, qh(28704)),	-- Warchief's Command: The Cape of Stranglethorn!
-					qg(, q(8674)),	-- Winterhoof the Elder
-					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
-					qg(, qh(26533)),	-- Zanzil's Secret	
+					q(9259),	-- Traitor to the Bloodsail
+					qh(28704),	-- Warchief's Command: The Cape of Stranglethorn!
+					q(8674),	-- Winterhoof the Elder
+					q(42758),	-- You're Gonna Need A Bigger Boat!
+					qh(26533),	-- Zanzil's Secret	
 --]]
 				}),
 				n(-16, {	-- Rares

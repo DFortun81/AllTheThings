@@ -43,94 +43,112 @@ _.Zones =
 					})),
 ]]--				
 --[[
-					qg(, qa(25726)),	-- A Dumpy Job
-					qg(, qa(25820)),	-- A Mother's Worries
-					qg(, qa(26327)),	-- Anvilmar the Hero
+					qa(25726),	-- A Dumpy Job
+					qa(25820),	-- A Mother's Worries
+					qa(26327),	-- Anvilmar the Hero
 --]]
-					qg(2104, qa(25780, {	-- Assault on Menethil Keep
-						i(59078),
-						i(59077),
-						i(59076),
-						i(131441),
-						i(157005),	-- Stout Fist 
-					})),
+					qa(25780, {	-- Assault on Menethil Keep
+						["qg"] = 2104,	-- 
+						["g"] = {
+							i(59078),	-- 
+							i(59077),	-- 
+							i(59076),	-- 
+							i(131441),	-- 
+							i(157005),	-- Stout Fist 
+						},
+					}),
 --[[					
 					qa(12343),	-- Candy Bucket
 					qa(28990),	-- Candy Bucket
 					qa(28991),	-- Candy Bucket
-					qg(, qa(26137)),	-- Checking on the Boys
+					qa(26137),	-- Checking on the Boys
 --]]
-					qg(41297, qa(25801, {	-- Claws from the Deep
-						i(59082),
-						i(59081),
-						i(59080),
-						i(59079),
-						i(131442),
-						i(131443),
-					})),
+					qa(25801, {	-- Claws from the Deep
+						["qg"] = 41297,	-- 
+						["g"] = {
+							i(59082),	-- 
+							i(59081),	-- 
+							i(59080),	-- 
+							i(59079),	-- 
+							i(131442),	-- 
+							i(131443),	-- 
+						},
+					}),
 --[[
-					qg(, qa(25211)),	-- Cleaning Hovel
-					qg(, qa(25856)),	-- Crocolisk Hides
-					qg(, q(25816)),	-- Cursed to Roam
-					qg(, qa(25866)),	-- Dark Iron Trappers
+					qa(25211),	-- Cleaning Hovel
+					qa(25856),	-- Crocolisk Hides
+					q(25816),	-- Cursed to Roam
+					qa(25866),	-- Dark Iron Trappers
 					qh(11745),	-- Desecrate this Fire!
 					qh(11757),	-- Desecrate this Fire!
 					qh(11581),	-- Desecrate this Fire!
 					qh(11749),	-- Desecrate this Fire!
-					qg(, q(38841)),	-- Die, Fish-People
+					q(38841),	-- Die, Fish-People
 --]]
-					qg(41415, qa(25864, {	-- Dinosaur Crisis
-						i(59095),
-						i(59094),
-						i(59093),
-						i(131451),
-					})),
---					qg(, qa(25734)),	-- Down In Thelgen Rock
-					qg(41086, qa(25727, {	-- Drungeld Glowerglare
-						i(59072),	-- Addled Blotter Bracers
-						i(59071),	-- Bad Belt
-						i(59070),	-- Surveyor's Leggings
-						i(131438),	-- Bad Waistguard
-					})),
+					qa(25864, {	-- Dinosaur Crisis
+						["qg"] = 41415,	-- 
+						["g"] = {
+							i(59095),	-- 
+							i(59094),	-- 
+							i(59093),	-- 
+							i(131451),	-- 
+						},
+					}),
+--					qa(25734),	-- Down In Thelgen Rock
+					qa(25727, {	-- Drungeld Glowerglare
+						["qg"] = 41086,	-- 
+						["g"] = {
+							i(59072),	-- Addled Blotter Bracers
+							i(59071),	-- Bad Belt
+							i(59070),	-- Surveyor's Leggings
+							i(131438),	-- Bad Waistguard
+						},
+					}),
 --[[
-					qg(, qa(25725)),	-- Fenbush Berries
-					qg(, q(26138)),	-- Ferilon Leafborn
-					qg(, qa(25721)),	-- Fight the Flood
+					qa(25725),	-- Fenbush Berries
+					q(26138),	-- Ferilon Leafborn
+					qa(25721),	-- Fight the Flood
 --]]
-					qg(41615, qa(25939, {	-- For Peat's Sake
-						i(59109),
-						i(59108),
-						i(59107),
-						i(59106),
-						i(131460),
-						i(131461),
-					})),
+					qa(25939, {	-- For Peat's Sake
+						["qg"] = 41615,	-- 
+						["g"] = {
+							i(59109),	-- 
+							i(59108),	-- 
+							i(59107),	-- 
+							i(59106),	-- 
+							i(131460),	-- 
+							i(131461),	-- 
+						},
+					}),
 --[[
-					qg(, qa(25733)),	-- Get Out Of Here, Stalkers
-					qg(, qa(25855)),	-- Gizmos and Gadgets
-					qg(, qa(25867)),	-- Gnoll Escape
-					qg(, qa(28565)),	-- Hero's Call: Wetlands!
-					qg(, qa(11828)),	-- Honor the Flame
-					qg(, qa(25857)),	-- Hunting Horrorjaw
-					qg(, qa(25854)),	-- I'll Call Him Bitey
+					qa(25733),	-- Get Out Of Here, Stalkers
+					qa(25855),	-- Gizmos and Gadgets
+					qa(25867),	-- Gnoll Escape
+					qa(28565),	-- Hero's Call: Wetlands!
+					qa(11828),	-- Honor the Flame
+					qa(25857),	-- Hunting Horrorjaw
+					qa(25854),	-- I'll Call Him Bitey
 --]]
-					qg(41128, qa(25735, {	-- Incendicite Ore
-						i(59066),
-						i(59065),
-						i(59064),
-						i(131439),
-					})),
+					qa(25735, {	-- Incendicite Ore
+						["qg"] = 41128,	-- 
+						["g"] = {
+							i(59066),	-- 
+							i(59065),	-- 
+							i(59064),	-- 
+							i(131439),	-- 
+						},
+					}),
 --[[					
-					qg(, qa(11964)),	-- Incense for the Summer Scorchlings
-					qg(, qa(26139)),	-- Into Arathi
-					qg(, qa(25770)),	-- Keg Run
-					qg(, qa(25818)),	-- Lifting the Curse
-					qg(, qa(26196)),	-- Longbraid the Grim
-					qg(, q(647)),	-- MacKreel's Moonshine
-					qg(, qa(25926)),	-- Mired in Hatred
-					qg(, qa(25777)),	-- Onwards to Menethil
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, qa(25802)),	-- Reclaiming Goods
+					qa(11964),	-- Incense for the Summer Scorchlings
+					qa(26139),	-- Into Arathi
+					qa(25770),	-- Keg Run
+					qa(25818),	-- Lifting the Curse
+					qa(26196),	-- Longbraid the Grim
+					q(647),	-- MacKreel's Moonshine
+					qa(25926),	-- Mired in Hatred
+					qa(25777),	-- Onwards to Menethil
+					qa(11882),	-- Playing with Fire
+					qa(25802),	-- Reclaiming Goods
 --]]
 					o(259, {	-- Half-buried Barrel	
 						qa(25805, {	-- Return the Statuette
@@ -140,34 +158,43 @@ _.Zones =
 							i(131444),
 						}),
 					}),
---					qg(, qa(25804)),	-- Search More Hovels
-					qg(41129, qa(25722, {	-- Sedimentary, My Dear
-						i(59075),
-						i(59074),
-						i(59073),
-						i(131437),
-					})),
+--					qa(25804),	-- Search More Hovels
+					qa(25722, {	-- Sedimentary, My Dear
+						["qg"] = 41129,	-- 
+						["g"] = {
+							i(59075),	-- 
+							i(59074),	-- 
+							i(59073),	-- 
+							i(131437),	-- 
+						},
+					}),
 --[[					
-					qg(, qa(25850)),	-- Strike the Earth!
-					qg(, qa(26980)),	-- Swiftgear Station
-					qg(, qa(26189)),	-- The Angerfang Menace
+					qa(25850),	-- Strike the Earth!
+					qa(26980),	-- Swiftgear Station
+					qa(26189),	-- The Angerfang Menace
 --]]	
-					qg(42160, qa(26128, {	-- The Battle of Thandol Span
-						i(59113),
-						i(59112),
-						i(59111),
-						i(59110),
-						i(131488),
-						i(131489),
-					})),
---					qg(, qa(26120)),	-- The Crazed Dragonmaw
-					qg(41307, qa(25817, {	-- The Cursed Crew
-						i(59089),
-						i(59088),
-						i(59087),
-						i(59086),
-						i(131445),
-					})),
+					qa(26128, {	-- The Battle of Thandol Span
+						["qg"] = 42160,	-- 
+						["g"] = {
+							i(59113),	-- 
+							i(59112),	-- 
+							i(59111),	-- 
+							i(59110),	-- 
+							i(131488),	-- 
+							i(131489),	-- 
+						},
+					}),
+--					qa(26120),	-- The Crazed Dragonmaw
+					qa(25817, {	-- The Cursed Crew
+						["qg"] = 41307,	-- 
+						["g"] = {
+							i(59089),	-- 
+							i(59088),	-- 
+							i(59087),	-- 
+							i(59086),	-- 
+							i(131445),	-- 
+						},
+					}),
 					o(112948, {	-- Intrepid's Locked Strongbox
 						qa(25819, {	-- The Eye of Paleth
 							i(2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
@@ -187,42 +214,51 @@ _.Zones =
 							}),
 						}),
 					}),
-					qg(41415, qa(25865, {	-- The Mosshide Job
-						i(59098),
-						i(59097),
-						i(59096),
-						i(131452),
-					})),
+					qa(25865, {	-- The Mosshide Job
+						["qg"] = 41415,	-- 
+						["g"] = {
+							i(59098),	-- 
+							i(59097),	-- 
+							i(59096),	-- 
+							i(131452),	-- 
+						},
+					}),
 --[[					
-					qg(, q(25803)),	-- The Search Continues
-					qg(, qa(25395)),	-- The Stolen Keg
-					qg(, q(25815)),	-- The Third Fleet
-					qg(, qa(25927)),	-- The Threat of Flame
-					qg(, qa(26127)),	-- The Twilight's Hammer Revealed
-					qg(, qa(25723)),	-- Thresh Out of Luck
+					q(25803),	-- The Search Continues
+					qa(25395),	-- The Stolen Keg
+					q(25815),	-- The Third Fleet
+					qa(25927),	-- The Threat of Flame
+					qa(26127),	-- The Twilight's Hammer Revealed
+					qa(25723),	-- Thresh Out of Luck
 --]]					
-					qg(41413, qa(25853, {	-- Tooling Around
-						i(59105),
-						i(59104),
-						i(59103),
-						i(60338),
-						i(131450),
-						i(157026),	-- Fresh-Haft Axe
-					})),
+					qa(25853, {	-- Tooling Around
+						["qg"] = 41413,	-- 
+						["g"] = {
+							i(59105),	-- 
+							i(59104),	-- 
+							i(59103),	-- 
+							i(60338),	-- 
+							i(131450),	-- 
+							i(157026),	-- Fresh-Haft Axe
+						},
+					}),
 --[[					
-					qg(, qa(26981)),	-- Whelgar's Retreat
-					qg(, qa(25849)),	-- When Archaeology Attacks
-					qg(, qa(25800)),	-- When Life Gives You Crabs
-					qg(, qa(26195)),	-- Who Wards The Greenwarden
+					qa(26981),	-- Whelgar's Retreat
+					qa(25849),	-- When Archaeology Attacks
+					qa(25800),	-- When Life Gives You Crabs
+					qa(26195),	-- Who Wards The Greenwarden
 --]]					
-					qg(41415, qa(25868, {	-- Yorla Darksnare
-						i(59102),
-						i(59101),
-						i(59100),
-						i(59099),
-						i(157006),	-- Old Guard's Bow
-						i(157004),	-- Old Guard's Poleaxe 
-					})),
+					qa(25868, {	-- Yorla Darksnare
+						["qg"] = 41415,	-- 
+						["g"] = {
+							i(59102),	-- 
+							i(59101),	-- 
+							i(59100),	-- 
+							i(59099),	-- 
+							i(157006),	-- Old Guard's Bow
+							i(157004),	-- Old Guard's Poleaxe
+						},
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(50964, { 	-- Chops

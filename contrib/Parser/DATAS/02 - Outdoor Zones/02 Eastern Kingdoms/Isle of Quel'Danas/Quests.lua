@@ -29,24 +29,60 @@ _.Zones =
 					}),
 					--[[
 					n(-17, { 	-- Quests
-						qg(25163, q(11549)),	-- A Magnanimous Benefactor
-						qg(24967, q(11523)),	-- Arm the Wards!
-						qg(25046, q(11544)),	-- Ata'mal Armaments
-						qg(25069, q(11540)),	-- Crush the Dawnblade
-						qg(25088, q(11541)),	-- Disrupt the Greengill Coast
-						qg(25046, q(11536)),	-- Don't Stop Now....
-						qg(24965, q(11525)),	-- Further Conversions
-						qg(25108, q(11543)),	-- Keeping the Enemy at Bay
-						qg(25133, q(11547)),	-- Know Your Ley Lines
-						qg(24967, q(29682)),	-- Magisters' Terrace
-	--					qg(25046, q(11535)),	-- Making Ready (REMOVED?  no info about where to pick up -- attached QG mentioned in quest text, but wowhead doesn't say she starts it)
-						qg(24975, q(11546)),	-- Open for Business
-						qg(24975, q(11521)),	-- Rediscovering Your Roots
-						qg(25034, q(11534)),	-- Report to Nasuun
-						qg(25057, q(11533)),	-- The Air Strikes Must Continue
-						qg(25061, q(11537)),	-- The Battle Must Go On
-						qg(24967, q(11526)),	-- The Missing Magistrix
-						qg(25112, q(11548)),	-- Your Continued Support
+						q(11549, {	-- A Magnanimous Benefactor
+							["qg"] = 25163,	-- 
+						}),
+						q(11523, {	-- Arm the Wards!
+							["qg"] = 24967,	-- 
+						}),
+						q(11544, {	-- Ata'mal Armaments
+							["qg"] = 25046,	-- 
+						}),
+						q(11540, {	-- Crush the Dawnblade
+							["qg"] = 25069,	-- 
+						}),
+						q(11541, {	-- Disrupt the Greengill Coast
+							["qg"] = 25088,	-- 
+						}),
+						q(11536, {	-- Don't Stop Now....
+							["qg"] = 25046,	-- 
+						}),
+						q(11525, {	-- Further Conversions
+							["qg"] = 24965,	-- 
+						}),
+						q(11543, {	-- Keeping the Enemy at Bay
+							["qg"] = 25108,	-- 
+						}),
+						q(11547, {	-- Know Your Ley Lines
+							["qg"] = 25133,	-- 
+						}),
+						q(29682, {	-- Magisters' Terrace
+							["qg"] = 24967,	-- 
+						}),
+						q(11535, {	-- Making Ready (REMOVED?  no info about where to pick up -- attached QG mentioned in quest text, but wowhead doesn't say she starts it)
+							["qg"] = 25046,	-- 
+						}),
+						q(11546, {	-- Open for Business
+							["qg"] = 24975,	-- 
+						}),
+						q(11521, {	-- Rediscovering Your Roots
+							["qg"] = 24975,	-- 
+						}),
+						q(11534, {	-- Report to Nasuun
+							["qg"] = 25034,	-- 
+						}),
+						q(11533, {	-- The Air Strikes Must Continue
+							["qg"] = 25057,	-- 
+						}),
+						q(11537, {	-- The Battle Must Go On
+							["qg"] = 25061,	-- 
+						}),
+						q(11526, {	-- The Missing Magistrix
+							["qg"] = 24967,	-- 
+						}),
+						q(11548, {	-- Your Continued Support
+							["qg"] = 25112,	-- 
+						}),
 	--]]					
 	--[[					
 						q(11524),	-- Erratic Behavior (Removed completion of Phase 1)

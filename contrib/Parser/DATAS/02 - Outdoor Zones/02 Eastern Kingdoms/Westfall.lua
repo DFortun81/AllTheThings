@@ -55,13 +55,16 @@ _.Zones =
 						crit(3),		-- The Defias Brotherhood Reborn
 					})),
 ]]--
---					qg(, qa(26320)),	-- A Vision of the Past
-					qg(7024, qa(26291, {	-- Big Trouble in Moonbrook
-						i(58926),	-- Gryan's Boots
-						i(58924),	-- Legwork Trousers
-						i(58925),	-- Troublesome Gloves
-						i(131504),	-- Troublesome Grips
-					})),
+--					qa(26320)),	-- A Vision of the Past
+					qa(26291, {	-- Big Trouble in Moonbrook
+						["qg"] = 7024,	-- 
+						["g"] = {
+							i(58926),	-- Gryan's Boots
+							i(58924),	-- Legwork Trousers
+							i(58925),	-- Troublesome Gloves
+							i(131504),	-- Troublesome Grips
+						},
+					}),
 --					qa(12340),	-- Candy Bucket
 					o(34, {	-- Old Jug
 						q(26356, {	-- Captain Sanders' Hidden Treasure
@@ -71,12 +74,12 @@ _.Zones =
 						}),
 					}),
 --[[
-					qg(, q(26353)),	-- Captain Sanders' Hidden Treasure
-					qg(, q(26355)),	-- Captain Sanders' Hidden Treasure
-					qg(, q(26354)),	-- Captain Sanders' Hidden Treasure
-					qg(, q(46293)),	-- Deadmines, Part Three?
-					qg(, q(43287)),	-- Defend
-					qg(, q(43242)),	-- Demon Commander
+					q(26353),	-- Captain Sanders' Hidden Treasure
+					q(26355),	-- Captain Sanders' Hidden Treasure
+					q(26354),	-- Captain Sanders' Hidden Treasure
+					q(46293),	-- Deadmines, Part Three?
+					q(43287),	-- Defend
+					q(43242),	-- Demon Commander
 					qh(11749),	-- Desecrate this Fire!
 					qh(11745),	-- Desecrate this Fire!
 					qh(11581),	-- Desecrate this Fire!
@@ -92,117 +95,144 @@ _.Zones =
 						}),
 					}),
 --[[					
-					qg(, qa(26230)),	-- Feast or Famine
-					qg(, qa(26271)),	-- Feeding the Hungry and the Hopeless
-					qg(, qa(26289)),	-- Find Agent Kearnen
-					qg(, qa(184)),	-- Furlbrow's Deed
-					qg(, qh(27848)),	-- Good Intentions...Poor Execution
-					qg(, qa(26252)),	-- Heart of the Watcher
+					qa(26230),	-- Feast or Famine
+					qa(26271),	-- Feeding the Hungry and the Hopeless
+					qa(26289),	-- Find Agent Kearnen
+					qa(184),	-- Furlbrow's Deed
+					qh(27848),	-- Good Intentions...Poor Execution
+					qa(26252),	-- Heart of the Watcher
 --]]
-					qg(821, qa(26365, {	-- Hero's Call: Redridge Mountains!
-						i(60689),	-- Belt of Unsolvable Problems
-						i(60690),	-- Doody Boots
-						i(131517),	-- Doody Shoes
-						i(60688),	-- Parker's Yardstick
-						i(60691),	-- Unfortunate Treads
-					})),
+					qa(26365, {	-- Hero's Call: Redridge Mountains!
+						["qg"] = 821,	-- 
+						["g"] = {
+							i(60689),	-- Belt of Unsolvable Problems
+							i(60690),	-- Doody Boots
+							i(131517),	-- Doody Shoes
+							i(60688),	-- Parker's Yardstick
+							i(60691),	-- Unfortunate Treads
+						},
+					}),
 --[[					
-					qg(, qa(28562)),	-- Hero's Call: Westfall!
-					qg(, qa(26378)),	-- Hero's Call: Westfall!
-					qg(, qa(11583)),	-- Honor the Flame
-					qg(, qa(26266)),	-- Hope for the People
-					qg(, qa(26214)),	-- Hot On the Trail: Murlocs
-					qg(, qa(26213)),	-- Hot On the Trail: The Riverpaw Clan
+					qa(28562),	-- Hero's Call: Westfall!
+					qa(26378),	-- Hero's Call: Westfall!
+					qa(11583),	-- Honor the Flame
+					qa(26266),	-- Hope for the People
+					qa(26214),	-- Hot On the Trail: Murlocs
+					qa(26213),	-- Hot On the Trail: The Riverpaw Clan
 --]]
-					qg(234, qa(26286, {	-- In Defense of Westfall
-						i(58914),	-- Sentinel Hill Breastplate
-						i(131502),	-- Sentinel Hill Hauberk
-						i(58912),	-- Sentinel Hill Surcoat
-						i(58913),	-- Sentinel Hill Vest
-					})),
+					qa(26286, {	-- In Defense of Westfall
+						["qg"] = 234,	-- 
+						["g"] = {
+							i(58914),	-- Sentinel Hill Breastplate
+							i(131502),	-- Sentinel Hill Hauberk
+							i(58912),	-- Sentinel Hill Surcoat
+							i(58913),	-- Sentinel Hill Vest
+						},
+					}),
 --[[
-					qg(, q(43245)),	-- Invasion: Westfall
-					qg(, q(42235)),	-- Invasion: Westfall
+					q(43245),	-- Invasion: Westfall
+					q(42235),	-- Invasion: Westfall
 --]]
-					qg(42498, qa(26229, {	-- "I TAKE Candle!"
-						i(58905),	-- Kobold Basher
-						i(58903),	-- Kobold Candle
-						i(58902),	-- Kobold Sticker
-						i(156935), 	-- Kobold Torch
-						i(58904),	-- Wax Catcher
-					})),
-					qg(233, qa(26257, {	-- It's Alive!
-						i(58916),	-- Chewed Belt
-						i(131497),	-- Chewed Chain Cord
-						i(58915),	-- Harvester Boots
-						i(58917),	-- Saldean's Working Gloves
-					})),
-					qg(821, qa(26288, {	-- Jango Spothide
-						i(58920),	-- Dust Plains Greaves
-						i(58918),	-- Mystic Riverpaw Wand
-						i(58919),	-- Spothide Leggings
-						i(131503),	-- Spothide Legguards
-					})),
+					qa(26229, {	-- "I TAKE Candle!"
+						["qg"] = 42498,	-- 
+						["g"] = {
+							i(58905),	-- Kobold Basher
+							i(58903),	-- Kobold Candle
+							i(58902),	-- Kobold Sticker
+							i(156935), 	-- Kobold Torch
+							i(58904),	-- Wax Catcher
+						},
+					}),
+					qa(26257, {	-- It's Alive!
+						["qg"] = 233,	-- 
+						["g"] = {
+							i(58916),	-- Chewed Belt
+							i(131497),	-- Chewed Chain Cord
+							i(58915),	-- Harvester Boots
+							i(58917),	-- Saldean's Working Gloves
+						},
+					}),
+					qa(26288, {	-- Jango Spothide
+						["qg"] = 821,	-- 
+						["g"] = {
+							i(58920),	-- Dust Plains Greaves
+							i(58918),	-- Mystic Riverpaw Wand
+							i(58919),	-- Spothide Leggings
+							i(131503),	-- Spothide Legguards
+						},
+					}),
 --[[
-					qg(, qa(26347)),	-- Keeper of the Flame
-					qg(, q(31725)),	-- Lindsay
-					qg(, qa(26228)),	-- Livin' the Life
-					qg(, qa(26232)),	-- Lou's Parting Thoughts
-					qg(, qa(26215)),	-- Meet Two-Shoed Lou
+					qa(26347),	-- Keeper of the Flame
+					q(31725),	-- Lindsay
+					qa(26228),	-- Livin' the Life
+					qa(26232),	-- Lou's Parting Thoughts
+					qa(26215),	-- Meet Two-Shoed Lou
 --]]
-					qg(42308, qa(26209, {	-- Murder Was The Case That They Gave Me
-						i(58907),	-- Crime Scene Tape
-						i(58906),	-- Equicide Cloak
-						i(58908),	-- Scene Investigator's Wrap
-					})),
+					qa(26209, {	-- Murder Was The Case That They Gave Me
+						["qg"] = 42308,	-- 
+						["g"] = {
+							i(58907),	-- Crime Scene Tape
+							i(58906),	-- Equicide Cloak
+							i(58908),	-- Scene Investigator's Wrap
+						},
+					}),
 --[[
-					qg(, qa(31724)),	-- Old MacDonald
-					qg(, q(31780)),	-- Old MacDonald
-					qg(, qh(27842)),	-- Only the Beginning
-					qg(, q(46292)),	-- Pet Battle Challenge: Deadmines
-					qg(, qa(11882)),	-- Playing with Fire
-					qg(, qa(26295)),	-- Propaganda
-					qg(, q(43288)),	-- Repel
-					qg(, qa(26370)),	-- Return to Sentinel Hill
+					qa(31724),	-- Old MacDonald
+					q(31780),	-- Old MacDonald
+					qh(27842),	-- Only the Beginning
+					q(46292),	-- Pet Battle Challenge: Deadmines
+					qa(11882),	-- Playing with Fire
+					qa(26295),	-- Propaganda
+					q(43288),	-- Repel
+					qa(26370),	-- Return to Sentinel Hill
 --]]
-					qg(42750, qa(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
-						i(58931),	-- House Wrynn Claymore
-						i(58929),	-- House Wrynn Crossbow
-						i(58927),	-- House Wrynn Dagger
-						i(156934),	-- House Wrynn Gavel
-						i(58928),	-- House Wrynn Halberd
-						i(58930),	-- House Wrynn Staff
-					})),
+					qa(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
+						["qg"] = 42750,	-- 
+						["g"] = {
+							i(58931),	-- House Wrynn Claymore
+							i(58929),	-- House Wrynn Crossbow
+							i(58927),	-- House Wrynn Dagger
+							i(156934),	-- House Wrynn Gavel
+							i(58928),	-- House Wrynn Halberd
+							i(58930),	-- House Wrynn Staff
+						},
+					}),
 --[[
-					qg(, qa(26290)),	-- Secrets of the Tower
-					qg(, qa(26319)),	-- Secrets Revealed
-					qg(, qa(26236)),	-- Shakedown at the Saldean's
-					qg(, q(8675)),	-- Skychaser the Elder
-					qg(, qa(26348)),	-- The Coast Isn't Clear
+					qa(26290),	-- Secrets of the Tower
+					qa(26319),	-- Secrets Revealed
+					qa(26236),	-- Shakedown at the Saldean's
+					q(8675),	-- Skychaser the Elder
+					qa(26348),	-- The Coast Isn't Clear
 --]]
-					qg(392, qa(26349, {	-- The Coastal Menace
-						i(1557),	-- Buckler of the Seas
-						i(1172),	-- Grayson's Torch
-						i(5240),	-- Torchlight Wand
-					})),
+					qa(26349, {	-- The Coastal Menace
+						["qg"] = 392,	-- 
+						["g"] = {
+							i(1557),	-- Buckler of the Seas
+							i(1172),	-- Grayson's Torch
+							i(5240),	-- Torchlight Wand
+						},
+					}),
 --[[
-					qg(, qa(26297)),	-- The Dawning of a New Day
-					qg(, q(46291)),	-- The Deadmines Strike Back
-					qg(, qh(27850)),	-- The Defias Kingpin
-					qg(, qa(26371)),	-- The Legend of Captain Grayson
-					qg(, qa(26287)),	-- The Westfall Brigade
-					qg(, qa(26761)),	-- Threat to the Kingdom
-					qg(, qa(26237)),	-- Times are Tough
-					qg(, qa(26292)),	-- To Moonbrook!
-					qg(, qh(27844)),	-- Traitors!!!
+					qa(26297),	-- The Dawning of a New Day
+					q(46291),	-- The Deadmines Strike Back
+					qh(27850),	-- The Defias Kingpin
+					qa(26371),	-- The Legend of Captain Grayson
+					qa(26287),	-- The Westfall Brigade
+					qa(26761),	-- Threat to the Kingdom
+					qa(26237),	-- Times are Tough
+					qa(26292),	-- To Moonbrook!
+					qh(27844),	-- Traitors!!!
 --]]
-					qg(235, qa(26241, {	-- Westfall Stew
-						i(58910),	-- Boiled Boots
-						i(131496),	-- Boiled Chain Footpads
-						i(58909),	-- Golden Sunshine Cloak
-						i(58911),	-- Tightly Cinched Belt
-					})),
---					qg(, qa(26270)),	-- You Have Our Thanks	
+					qa(26241, {	-- Westfall Stew
+						["qg"] = 235,	-- 
+						["g"] = {
+							i(58910),	-- Boiled Boots
+							i(131496),	-- Boiled Chain Footpads
+							i(58909),	-- Golden Sunshine Cloak
+							i(58911),	-- Tightly Cinched Belt
+						},
+					}),
+--					qa(26270),	-- You Have Our Thanks	
 				}),
 				n(-16, {	-- Rares
 					n(520, { 	-- Brack
