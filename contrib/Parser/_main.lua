@@ -635,15 +635,6 @@ h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
-qg = function(id, t)											-- Add a Quest Giver to an object.
-	if type(id) == "number" then
-		t.qg = id;
-	else
-		t.qgs = id;
-	end
-	return t;
-end
-qgs = qg;														-- Add a Quest Giver to an object. (Alternative)
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
 
