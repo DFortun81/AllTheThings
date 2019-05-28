@@ -9,7 +9,7 @@ profession(165, {	-- Leatherworking
 			["name"] = "Outland Patterns",
 			["categoryID"] = 882,
 			["g"] = {
-				-- Legacy specilizations for posterity
+				-- Legacy specializations for posterity
 				n(-40, { -- Legacy
 					un(34, recipe(10656)),  -- Dragonscale Leatherworking
 					un(34, recipe(10660)),  -- Tribal Leatherworking
@@ -31,6 +31,11 @@ profession(165, {	-- Leatherworking
 					["name"] = "Bags",
 					["categoryID"] = 929,
 					["g"] = {
+						{
+							-- Quiver of a Thousand Feathers
+							["recipeID"] = 44359,
+							["u"] = 2,
+						},
 					}
 				},
 				{

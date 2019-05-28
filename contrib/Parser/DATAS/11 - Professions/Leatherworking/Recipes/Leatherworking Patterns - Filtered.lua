@@ -58,6 +58,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 19089,
 							["u"] = 7,
 						},
+						{	-- Heavy Scorpid Shoulders
+							["recipeID"] = 19100,
+							["u"] = 7,
+						},
 						{	-- Stormshroud Shoulders
 							["recipeID"] = 19090,
 							["u"] = 7,
@@ -232,6 +236,11 @@ profession(165, {	-- Leatherworking
 						},
 						{	-- Living Leggings
 							["recipeID"] = 19078,
+							["u"] = 7,
+						},
+						{
+							-- Volcanic Leggings
+							["recipeID"] = 19059,
 							["u"] = 7,
 						},
 						{	-- Wild Leather Leggings

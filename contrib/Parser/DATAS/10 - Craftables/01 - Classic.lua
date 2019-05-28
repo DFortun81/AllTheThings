@@ -1530,7 +1530,7 @@ _.Craftables =
 					un(8, i(15060)),	-- Living Leggings
 					i(15072),	-- Chimeric Leggings
 					i(15057),	-- Stormshroud Pants
-					i(15054),	-- Volcanic Leggings
+					un(8, i(15054)),	-- Volcanic Leggings
 					un(8, i(8212)),		-- Wild Leather Leggings
 					i(8202),	-- Big Voodoo Pants
 					i(8193),	-- Nightscape Pants

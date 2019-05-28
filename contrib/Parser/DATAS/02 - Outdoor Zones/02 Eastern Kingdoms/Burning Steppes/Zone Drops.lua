@@ -35,6 +35,7 @@ _.Zones =
 						},
 					}),
 					i(15732, {	-- Pattern: Volcanic Leggings
+						["u"] = 7,
 						["crs"] = {
 							7035,	-- Firegut Brute
 						},
