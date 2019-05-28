@@ -676,9 +676,4 @@ qpvp = function(t)						-- Gives a quest the PvP Description
 	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
 	return t;
 end
-qwe = function(t)						-- Gives a quest the World Event Description
-	t.description = "This quest requires a specific world event to be active.";
-	t.icon = "Interface\\Worldmap\\QuestionMark_Gold_64Grey";
-	return t;
-end
 -- End Specific Quest Types
