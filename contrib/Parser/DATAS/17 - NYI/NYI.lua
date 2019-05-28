@@ -2221,7 +2221,10 @@ _.NeverImplemented =
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
 			un(1, i(140717)),	-- Marksman Recurve Bow
 			un(1, i(150612)),	-- Marksman Recurve Bow
-
+			un(1, i(91089)),	-- Tyrannical Gladiator's longbow a s13
+			un(1, i(94303)),	-- Tyrannical Gladiator's longbow h s13
+			un(1, i(99780)),	-- Tyrannical Gladiator's longbow a s14
+			un(1, i(99964)),	-- Tyrannical Gladiator's longbow h s14
 			un(1, i(64783)),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
 			un(1, i(111783)),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
@@ -2296,6 +2299,10 @@ _.NeverImplemented =
 			un(1, i(161296)),	-- Autumnvale Hunting Rifle (they added a different version)
 			un(1, i(165270)),	-- Unknown
 			un(1, i(165266)),	-- Unknown
+			un(1, i(91201)),	-- Tyrannical Gladiator's Rifle a s13
+			un(1, i(94309)),	-- Tyrannical Gladiator's Rifle h s13
+			un(1, i(99834)),	-- Tyrannical Gladiator's Rifle a s14
+			un(1, i(99970)),	-- Tyrannical Gladiator's Rifle h s14
 			un(1, i(108790)),	-- Unknown
 			un(1, i(109491)),	-- Unknown
 			un(1, i(109529)),	-- Unknown
@@ -2312,6 +2319,8 @@ _.NeverImplemented =
 			un(1, i(42523)),	-- Savage Gladiator's Endgame
 			un(1, i(42529)),	-- Savage Gladiator's Reprieve
 			un(1, i(42535)),	-- Savage Gladiator's Grimoire
+			un(1, i(93440)),	-- crafted dreadful gladiator's endgame
+			un(1, i(93450)),	-- crafted dreadful gladiator's reprieve
 			un(1, i(159941)),	-- Unknown
 			un(1, i(161933)),	-- Unknown
 			un(1, i(161937)),	-- Unknown
@@ -2505,6 +2514,11 @@ _.NeverImplemented =
 			un(1, i(150594)),	-- Warhammer of Retribution
 			un(1, i(159555)),	-- Unknown
 			un(1, i(165263)),	-- Unknown
+			un(1, i(91089)),	-- Tyrannical Gladiator's Bonegrinder a s13
+			un(1, i(94324)),	-- Tyrannical Gladiator's Bonegrinder h s13
+			un(1, i(99767)),	-- Tyrannical Gladiator's Bonegrinder a s14
+			un(1, i(99985)),	-- Tyrannical Gladiator's Bonegrinder h s14
+			un(1, i(102611)),	-- Prideful Gladiator's Bonegrinder
 			un(1, i(108794)),	-- Unknown
 			un(1, i(108795)),	-- Unknown
 			un(1, i(100186)),	-- Grievous Gladiator's Bonegrinder

@@ -61,6 +61,8 @@ _.Zones =
 							un(2, i(91183)),	-- Tyrannical Gladiator's Staff
 							un(2, i(91208)),	-- Tyrannical Gladiator's Engery Staff
 							un(2, i(91308)),	-- Tyrannical Gladiator's Pike
+							un(2, i(91131)),	-- Tyrannical Gladiator's Spellblade (used 2 upgrade to elite)
+							un(2, i(91390)),	-- Tyrannical Gladiator's Shanker (used 2 upgrade to elite)
 							un(2, i(91132)),	-- Tyrannical Gladiator's Spellblade
 							un(2, i(91391)),	-- Tyrannical Gladiator's Shanker
 							un(2, i(91145)),	-- Tyrannical Gladiator's Heavy Crossbow (used 2 upgrade to elite)
