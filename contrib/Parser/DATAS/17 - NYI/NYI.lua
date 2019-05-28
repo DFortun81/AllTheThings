@@ -2186,6 +2186,7 @@ _.NeverImplemented =
 			un(1, i(132475)),	-- Unknown - was under Legion>Staves
 			un(1, i(132476)),	-- Unknown - was under Legion>Staves
 			un(1, i(49458)),	-- Unknown
+			un(1, i(115298)),	-- Spectral Spire
 			un(1, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
 			un(1, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
 			un(1, i(64860)),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
@@ -2221,7 +2222,9 @@ _.NeverImplemented =
 			un(1, i(129968)),	-- Sheilun
 			un(1, i(129969)),	-- Sheilun
 			un(1, i(129970)),	-- Sheilun
-			un(1, i(102595)),	-- Prideful Gladiator's Staff
+			un(1, i(103394)),	-- Prideful Gladiator's Staff (Not in Weapon Arsenal) (Horde)
+			un(1, i(102595)),	-- Prideful Gladiator's Staff (unique look, never added)
+			un(1, i(102792)),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Horde)
 			un(1, i(159579)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159580)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159581)),	-- 8.0 PH - Weapon - Staff

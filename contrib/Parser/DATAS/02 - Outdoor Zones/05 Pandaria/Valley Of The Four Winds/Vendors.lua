@@ -508,7 +508,9 @@ _.Zones =
 									un(2, i(100297)), -- Grievous Gladiator's Rifle (Alliance)
 									un(2, i(100203)), -- Grievous Gladiator's Longbow (Alliance)
 									un(2, i(100492)), -- Grievous Gladiator's Baton of Light (Alliance)
-									un(2, i(1001)), 	-- Grievous Gladiator's Bonegrinder (Alliance)
+									un(2, i(100185)), 	-- Grievous Gladiator's Bonegrinder (Alliance)
+									un(2, i(100278)),	-- Grievous Gladiator's Staff (Alliance)
+									un(2, i(103197)),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Alliance)
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
@@ -713,6 +715,7 @@ _.Zones =
 									un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
 									un(2, i(100204)),	-- Grievous Gladiator's longbow
 									un(2, i(100186)), 	-- Grievous Gladiator's Bonegrinder 
+									un(2, i(100279)),	-- Grievous Gladiator's Staff
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
@@ -1446,6 +1449,12 @@ _.Zones =
 							un(2, i(85111)),	-- Elite Malevolent Gladiator's Staff
 							un(2, i(85110)),	-- Elite Malevolent Gladiator's Energy Staff
 							un(2, i(85108)),	-- Elite Malevolent Gladiator's Pike
+							un(2, i(84962)),	-- Malevolent Gladiator's ripper (used to upgrade to elite)
+							un(2, i(84963)),	-- Malevolent Gladiator's render (used to upgrade to elite)
+							un(2, i(84866)),	-- Malevolent Gladiator's endgame (used to upgrade to elite)
+							un(2, i(84867)),	-- Malevolent Gladiator's reprieve (used to upgrade to elite)
+							un(2, i(84965)),	-- Malevolent Gladiator's cleaver(used to upgrade to elite)
+							un(2, i(84966)),	-- Malevolent Gladiator's hacker (used to upgrade to elite)
 							un(2, i(84786)),	-- Malevolent Gladiator's Pike (used to upgrade to elite)
 							un(2, i(84790)),	-- Malevolent Gladiator's Greatsword (used to upgrade to elite)
 							un(2, i(84791)),	-- Malevolent Gladiator's Decapitator (used to upgrade to elite)
