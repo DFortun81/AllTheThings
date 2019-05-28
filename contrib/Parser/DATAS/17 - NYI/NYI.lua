@@ -2222,9 +2222,13 @@ _.NeverImplemented =
 			un(1, i(129968)),	-- Sheilun
 			un(1, i(129969)),	-- Sheilun
 			un(1, i(129970)),	-- Sheilun
+			un(1, i(100537)),	-- Grievous Gladiator's Staff (S14, not in weapon arsenal) (Horde)
 			un(1, i(103394)),	-- Prideful Gladiator's Staff (Not in Weapon Arsenal) (Horde)
 			un(1, i(102595)),	-- Prideful Gladiator's Staff (unique look, never added)
 			un(1, i(102792)),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Horde)
+			un(1, i(100278)),	-- Grievous Gladiator's Staff (Alliance)
+			un(1, i(103197)),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Alliance)
+			un(1, i(100279)),	-- Grievous Gladiator's Staff
 			un(1, i(159579)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159580)),	-- 8.0 PH - Weapon - Staff
 			un(1, i(159581)),	-- 8.0 PH - Weapon - Staff
@@ -2260,6 +2264,9 @@ _.NeverImplemented =
 			un(1, i(165263)),	-- Unknown
 			un(1, i(108794)),	-- Unknown
 			un(1, i(108795)),	-- Unknown
+			un(1, i(100186)), 	-- Grievous Gladiator's Bonegrinder
+			un(1, i(100185)), 	-- Grievous Gladiator's Bonegrinder (Alliance)
+			un(1, i(100554)), -- Grievous Gladiator's Bonegrinder (Horde)
 			un(1, i(108796)),	-- Unknown
 			un(1, i(109401)),	-- Unknown
 		}),

@@ -635,8 +635,6 @@ _.Zones =
 									un(2, i(100730)), -- Grievous Gladiator's Shield Wall (Horde)
 									un(2, i(100728)), -- Grievous Gladiator's Redoubt (Horde)
 									un(2, i(100731)), -- Grievous Gladiator's Barrier (Horde)
-									un(2, i(100554)), -- Grievous Gladiator's Bonegrinder (Horde)
-									un(2, i(100537)),	-- Grievous Gladiator's Staff (S14, not in weapon arsenal) (Horde)
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100594)), -- Grievous Gladiator's Dreadplate Gauntlets (Horde)
@@ -840,8 +838,6 @@ _.Zones =
 									un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
 									un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
 									un(2, i(100204)),	-- Grievous Gladiator's Longbow
-									un(2, i(100186)), 	-- Grievous Gladiator's Bonegrinder 
-									un(2, i(100279)),	-- Grievous Gladiator's Staff
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece

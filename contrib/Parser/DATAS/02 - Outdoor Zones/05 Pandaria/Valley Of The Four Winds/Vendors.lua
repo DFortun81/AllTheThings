@@ -508,9 +508,6 @@ _.Zones =
 									un(2, i(100297)), -- Grievous Gladiator's Rifle (Alliance)
 									un(2, i(100203)), -- Grievous Gladiator's Longbow (Alliance)
 									un(2, i(100492)), -- Grievous Gladiator's Baton of Light (Alliance)
-									un(2, i(100185)), 	-- Grievous Gladiator's Bonegrinder (Alliance)
-									un(2, i(100278)),	-- Grievous Gladiator's Staff (Alliance)
-									un(2, i(103197)),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Alliance)
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100243)), -- Grievous Gladiator's Dreadplate Chestpiece (Alliance)
@@ -713,9 +710,7 @@ _.Zones =
 									un(2, i(100497)),	-- Grievous Gladiator's Bonecracker
 									un(2, i(100240)),	-- Grievous Gladiator's Touch of Defeat
 									un(2, i(100493)),	-- Grievous Gladiator's Baton of Light
-									un(2, i(100204)),	-- Grievous Gladiator's longbow
-									un(2, i(100186)), 	-- Grievous Gladiator's Bonegrinder 
-									un(2, i(100279)),	-- Grievous Gladiator's Staff
+									un(2, i(100204)),	-- Grievous Gladiator's longbow 
 								}),
 								cl(6, {	-- Death Knight
 									un(2, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece

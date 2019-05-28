@@ -62,7 +62,7 @@ _.PetJournal =
 		p(1721),	-- Stormborne Whelpling
 		p(382),		-- Sun Darter Hatchling
 		p(802, {	-- Thundering Serpent Hatchling
-			["u"] = 9,	-- BMAH
+			["u"] = 2,	-- Unobtainable since 6.0. It dropping from BMAH was never confirmed
 		}),
 		p(2561),	-- Thunderscale Whelpling
 		p(757, {	-- Tiny Green Dragon
