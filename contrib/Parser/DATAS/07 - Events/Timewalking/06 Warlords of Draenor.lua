@@ -4,9 +4,10 @@
 _.WorldEvents =
 {
 	n(-173, {  -- Timewalking
-		["groups"] = {
+		["u"] = 42,	--  Timewalking
+		["g"] = {
 			tier(6, { 	-- Warlords of Draenor
-				["groups"] = {
+				["g"] = {
 					{	-- Shimmering Timewarped Crystal
 						["itemID"] = 167921,	-- Shimmering Timewarped Crystal
 						["questID"] = 55498,	-- The Shimmering Crystal
@@ -29,14 +30,10 @@ _.WorldEvents =
 					},
 					n(151987, {	-- Kronnus <Timewalking Vendor> [Horde Side]
 						["currencyID"] = 1166,	-- Timewarped Badge
-						["maps"] = {
-							624	-- Warspear
-						},
+						["maps"] = { 624 },	-- Warspear
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
-						--[[["coords"] = {
-							{ X, Y, Z },
-						},--]]
+						["coord"] = { 42.8, 54.5, 624 },	-- Warspear
 						["g"] = {
 							i(167894),	-- Beastlord's Irontusk -
 							i(167895),	-- Beastlord's Warwolf
@@ -81,14 +78,10 @@ _.WorldEvents =
 					}),
 					n(151955, {	-- Tempra <Timewalking Vendor> [Alliance Side]
 						["currencyID"] = 1166,	-- Timewarped Badge
-						["maps"] = {
-							622	-- Stormshield
-						},
+						["maps"] = { 622 },	-- Stormshield
 						["lvl"] = 100,
 						["races"] = ALLIANCE_ONLY,
-						--[[["coords"] = {
-							{ R, S, T },
-						},--]]
+						["coord"] = { 36.9, 72.5, 622 },	-- Stormshield
 						["g"] = {
 							i(167894),	-- Beastlord's Irontusk
 							i(167895),	-- Beastlord's Warwolf
@@ -134,6 +127,5 @@ _.WorldEvents =
 				},
 			}),
 		},
-		["u"] = 42,	--  Timewalking
 	}),
 };
