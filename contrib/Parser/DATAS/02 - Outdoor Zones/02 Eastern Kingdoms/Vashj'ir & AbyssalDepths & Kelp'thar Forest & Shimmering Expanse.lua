@@ -7,8 +7,9 @@ _.Zones =
 		m(203, {	-- Vashj'ir
 			["groups"] = {
 				n(-4,  {	-- Achievements
-					a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
-					h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
+					ach(5318, 5319),	-- 20,000 Leagues Under the Sea(Vashj'ir) [A] / [H]
+					--a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
+					--h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)
 					a(ach(4869, {	-- Sinking into Vashj'ir (Alliance)
 						crit(1),	-- Defense of The Briny Cutter
 						crit(2),	-- Smuggler's Scar
