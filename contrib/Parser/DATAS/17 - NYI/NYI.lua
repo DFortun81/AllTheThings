@@ -2267,6 +2267,10 @@ _.NeverImplemented =
 			un(1, i(100186)), 	-- Grievous Gladiator's Bonegrinder
 			un(1, i(100185)), 	-- Grievous Gladiator's Bonegrinder (Alliance)
 			un(1, i(100554)), -- Grievous Gladiator's Bonegrinder (Horde)
+			un(1, i(102611)), -- Prideful Gladiator's Bonegrinder
+			un(1, i(102808)), -- Grievous Gladiator's Bonegrinder
+			un(1, i(103140)), -- Grievous Gladiator's Bonegrinder
+			un(1, i(103337)), -- Prideful Gladiator's Bonegrinder
 			un(1, i(108796)),	-- Unknown
 			un(1, i(109401)),	-- Unknown
 		}),
