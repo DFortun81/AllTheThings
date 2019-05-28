@@ -96,8 +96,8 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 				},
 			},
 			{	-- The Grateful Dead [Dun Morogh - Gnome]
-				["questID"] = 14167,	-- The Grateful Dead
-				["qg"] = 34478,			-- Cheerful Gnome Spirit
+				["questID"] = 14168,	-- The Grateful Dead
+				["qg"] = 34481,			-- Cheerful Gnome Spirit
 				["races"] = {
 					7,	-- Gnome
 				},

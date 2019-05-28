@@ -11,11 +11,21 @@ _.Zones =
 					n(-50, {     -- Love is in the Air
 						["groups"] = {
 							n(-17, { 	-- Quests
-								qg(37675, q(24635)),	-- A Cloudlet of Classy Cologne
-								qg(38040, qa(24611)),	-- A Gift for the Prophet
-								qg(37675, q(24629)),	-- A Perfect Puff of Perfume
-								qg(37675, q(24636)),	-- Bonbon Blitz
-								qg(38293, qa(24804)),	-- Uncommon Scents
+								q(24635, {	-- A Cloudlet of Classy Cologne
+									["qg"] = 37675,	-- 
+								}),
+								qa(24611, {	-- A Gift for the Prophet
+									["qg"] = 38040,	-- 
+								}),
+								q(24629, {	-- A Perfect Puff of Perfume
+									["qg"] = 37675,	-- 
+								}),
+								q(24636, {	-- Bonbon Blitz
+									["qg"] = 37675,	-- 
+								}),
+								qa(24804, {	-- Uncommon Scents
+									["qg"] = 38293,	-- 
+								}),
 							}),
 							n(-2, { 	-- Vendors
 								n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
