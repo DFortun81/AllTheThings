@@ -2632,6 +2632,14 @@ _.Zones =
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
 				}),
+				i(118093),	-- Dented Ashmaul Strongbox A
+				i(118094),	-- Dented Ashmaul Strongbox H
+				i(118066),	-- Ashmaul Strongbox S1
+				i(118065),	-- Gleaming Ashmaul Strongbox S1
+				i(120184),	-- Ashmaul Strongbox S2-S3
+				i(120151),	-- Gleaming Ashmaul Strongbox S2-S3
+				i(128213),	-- Dented Ashmaul Strongbox A S2-S3
+				i(128214),	-- Dented Ashmaul Strongbox H S2-S3
 			},
 			--["maps"] = {622, 624},	-- We want to show Ashran in both maps.
 			["lvl"] = 100,	

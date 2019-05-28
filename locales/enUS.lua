@@ -1348,7 +1348,12 @@ AllTheThings.L = {
 		[-658] = "Combatant Set",													-- Combatant PvP Gear
 		[-659] = "Gladiator Set",													-- Gladiator PvP Gear
 		[-660] = "Elite Set",														-- Elite PvP Gear
-	
+		
+-- Warlods Pvp Seasons
+		[-661] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
+		[-662] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
+		[-663] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
+		
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
 		
