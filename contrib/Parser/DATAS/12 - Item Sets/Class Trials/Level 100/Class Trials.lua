@@ -436,6 +436,7 @@ _.GearSets =
 							i(129526),	-- Oathsworn Greataxe
 						}),
 						n(-9945, {	-- Arms / Fury
+							i(140712),	-- Greataxe of Fury. Added after Legion Prepatch due class changes
 							i(129530),	-- Oathsworn Helm
 							i(129539),	-- Oathsworn Pendant
 							i(129538),	-- Oathsworn Cloak of Battle

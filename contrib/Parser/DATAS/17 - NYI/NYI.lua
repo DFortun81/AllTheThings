@@ -1313,6 +1313,7 @@ _.NeverImplemented =
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(108813)),	-- Unknown
 			un(1, i(108820)),	-- Unknown
+			un(1, i(134738)),	-- cold-touched ring
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
 			un(1, i(141907)),	-- Arena Victory Bonus
@@ -1450,6 +1451,7 @@ _.NeverImplemented =
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
+		un(1, i(78892)),	-- Perfect Geode (PTR Only)
 		un(1, i(31503)),	-- Unknown
 		un(1, i(107474)),	-- ph6 engorged innards
 		un(1, i(103535)),	-- Bulging Bag of Charms (was planned for asia store
@@ -2494,6 +2496,8 @@ _.NeverImplemented =
 		n(-335, {	-- Two Handed Axes
 			un(1, i(134563)),	-- Unknown
 			un(1, i(108782)),	-- Unknown
+			un(1, i(150606)),	-- Armsmaster's Greataxe
+			un(1, i(140711)),	-- Armsmaster's Greataxe
 			un(1, i(80980)),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			un(1, i(167142)),	-- Unknown (probably discarded idea of crucible of storms loot)
 			un(1, i(167145)),	-- Unknown (probably discarded idea of crucible of storms loot)

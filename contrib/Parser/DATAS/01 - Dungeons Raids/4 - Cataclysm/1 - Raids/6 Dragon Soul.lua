@@ -1412,6 +1412,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 				},
 			}),
+			n(-2, {	-- Vendors
+				n(58153, {	-- Dasnurimi <Geologist & Conservator>
+					i(78890),	-- Crystalline Geode
+					i(78891),	-- Elementium-coated Geode
+				}),
+			}),
 		},
 	}),
 })};
