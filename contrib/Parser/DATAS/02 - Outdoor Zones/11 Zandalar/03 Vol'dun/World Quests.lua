@@ -8,11 +8,11 @@ _.Zones =
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 					q(52798, {	-- A Few More Charges
-						["races"] = HORDE_ONLY,
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
+						["races"] = HORDE_ONLY,
 					}),
 					q(51422, {	-- Azerite Madness
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -27,13 +27,9 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWQ"] = 120,
 						["g"] = {
-							{	-- Master Calligrapher
+							{	-- Square (Master Calligrapher)
 								["achievementID"] = 13512,	-- Master Calligrapher
-								["g"] = {
-									{	-- Master of Calligraphy - Square
-										["criteriaID"] = 2,	-- Master of Calligraphy - Square
-									},
-								},
+								["criteriaID"] = 2,	-- Square
 							},
 						},
 					}),
@@ -49,14 +45,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(52878, {	-- Desert Survivors
-						["qg"] = 142054,		-- Kusa
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
-							{	-- Desert Survivors
+							{	-- Desert Survivors (Battle on Zandalar and Kul Tiras)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 20,	-- Desert Survivors
 							},
 						},
+						["qg"] = 142054,	-- Kusa
+						["isWQ"] = 120,	-- Enables WQ filter for Level 120
 					}),
 					q(51792, {	-- Erupting Totem Testing
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -130,14 +126,14 @@ _.Zones =
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(52856, {	-- Snakes on a Terrace
-						["qg"] = 141945,	-- Sizzik
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							{	-- Snakes on a Terrace
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 18,	-- Snakes on a Terrace
 							},
 						},
+						["qg"] = 141945,	-- Sizzik
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(51558, {	-- Spider Scorching
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -151,45 +147,45 @@ _.Zones =
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(52864, {	-- What Do You Mean, Mind Controlling Plants?
-						["qg"] = 141969,	-- Spineleaf
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							{	-- What Do You Mean, Mind Controlling Plants?
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 19,	-- What Do You Mean, Mind Controlling Plants?
 							},
 						},
+						["qg"] = 141969,	-- Spineleaf
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(51322, {	-- Wings and Stingers
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
-						["requireSkill"] = 197,	-- Tailoring
-						["races"] = HORDE_ONLY,
-						["isWQ"] = 120,
 						["g"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
+						["isWQ"] = 120,
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 197,	-- Tailoring
 					}),
 					q(52397, {	-- Work Order: Contract: Voldunai
-						["requireSkill"] = 773,	-- Inscription
-						["races"] = HORDE_ONLY,
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							i(162370, {	-- Contract: Voldunai [Rank 3]
 								["spellID"] = 256293,
 							}),
 						},
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 773,	-- Inscription
 					}),
 					q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
-						["requireSkill"] = 333,	-- Enchanting
-						["races"] = HORDE_ONLY,
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							i(162314, {	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
 								["spellID"] = 268897,
 							}),
 						},
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 333,	-- Enchanting
 					}),
 					q(52371, {	-- Work Order: F.R.I.E.D.
 						["g"] = {

@@ -38,6 +38,10 @@ _.Zones =
 						}),
 						n(139968, {	-- Corrupted Tideskipper	
 							["questID"] = 52121,
+							["coords"] = {
+								{ 66.0, 51.6, 942 },
+								{ 68.6, 48.0, 942 },
+							},
 							["g"] = {
 								i(154183),	-- Boralus-Captain's Chain Boots
 								i(162028, {	-- Technique: Glyph of the Tideskipper
