@@ -464,136 +464,179 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(770, 3, {	-- Sorrow Hill TODO: This should really be Chillwind Camp
-							q(27683, {	-- Into the Woods
-								["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
-								["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
-							}),
-						}),
-						sz(770, 9, {	-- Northridge Lumber Camp
-							q(27013, {	-- Too Close for Comfort
-								["qg"] = 44472,	-- Kelly Dumah
-							}),
-							q(27012, {	-- A Gnoll's Resolve
-								["groups"] = {
-									i(62177),	-- Kelly's Booties
-									i(62176),	-- Redpine Cloak
-									i(62175),	-- Lumberjack's Hatchet
-								},
-								["qg"] = 44472,	-- Kelly Dumah
-								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
-							}),
-								q(27011, {	-- Redpine Thievery
-								["qg"] = 44472,	-- Kelly Dumah
-								["sourceQuests"] = { 27013 },	-- Too Close for Comfort
-							}),
-						}),
-						sz(770, 10, {	-- Hearthglen
-							q(27156, {	-- It's About Time!
-								["qg"] = 45157,	-- Lieutenant Myner
-							}),
-							q(27157, {	-- Drudges... <Sigh>
-								["qg"] = 45157,	-- Lieutenant Myner
-								["sourceQuests"] = { 27156 },	-- It's About Time!
-							}),
-							q(26957, {	-- The Long Trip Home
-								["qg"] = 44905,	--
-							}),
-							q(27017, {	-- Memories from a Lost Past
-								["groups"] = {
-									i(62198),  -- Andrea's Locket
-									i(62197),	-- Gahrron's Shoulderguard
-									i(62196),	-- Gloria's Work Vest
-									i(62195),	-- Footfalls of Memories
-									i(131631),	-- Del's Discarded Shoulderguard
-									i(131632),	-- Dusty Gahrron Chainmail
-								},
-								["qg"] = 44458,	-- Del Gahrron
-								["sourceQuests"] = { 26957 },	-- The Long Trip Home
-							}),
-						}),
--- CLASS HALL QUESTS
-						q(43153, {	-- An Eye for a Scepter
-							["sourceQuests"] = { 43100 },	-- Finding the Scepter
-							["classes"] = { 9 },	-- Warlock
-							["coord"] = { 69.2, 79.0, 22 },
-							["lvl"] = 98,
-							["qg"] = 109698,	-- Calydus
-						}),
-						qart(q(42774, {	-- Hope Prevails
-							["lvl"] = 98,
-							["qg"] = 108776,	-- Lord Maxwell Tyrosus
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	--
-						})),
-						qart(q(42771, {	-- Keeping the Peace
-							["qg"] = 108778,	-- Mehlar Dawnblade
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	--
-						})),
-						qart(q(42772, {	-- Sacred Ground
-							["qg"] = 108777,	-- High Priest Thel'danis
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	--
-						})),
-						qart(q(42770, {	-- Seeking Guidance
-							["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	--
-						})),
-						qart(q(42773, {	-- The Light Reveals
-							["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
-							["lvl"] = 98,
-							["classes"] = { 2 },	-- Paladin
-	--						["sourceQuests"] = {  },	--
-						})),
-						{	-- Corrupter's Scourgestones
-							["questID"] = 5408,	-- Corruptor's Scourgestones
-							["qg"] = 11039,		-- Duke Nicholas Zverenhoff
-							["u"] = 2,			-- Removed in Patch 4.0.3
-							["coords"] = {
-								{ 75.76, 53.81, 23 },
-							},
-							["g"] = {
-								{	-- Argent Dawn Valor Token
-									["itemID"] = 12844,	-- Argent Dawn Valor Token
-									["u"] = 2,			-- Removed in Patch 4.0.3
-								},
-							},
+					q(27012, {	-- A Gnoll's Resolve
+						["groups"] = {
+							i(62177),	-- Kelly's Booties
+							i(62176),	-- Redpine Cloak
+							i(62175),	-- Lumberjack's Hatchet
 						},
-						{	-- Invader's Scourgestones [A]
-							["questID"] = 5407,	-- Corruptor's Scourgestones
-							["qg"] = 10840,		-- Argent Officer Pureheart
-							["u"] = 2,			-- Removed in Patch 4.0.3
-							["coords"] = {
-								{ 42.96, 83.55, 22 },
-							},
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								{	-- Argent Dawn Valor Token
-									["itemID"] = 12844,	-- Argent Dawn Valor Token
-									["u"] = 2,			-- Removed in Patch 4.0.3
-								},
-							},
+						["qg"] = 44472,	-- Kelly Dumah
+						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
+					}),
+					qa(211, {	-- Alas, Andorhal
+						["u"] = 40,
+						["g"] = {
+							un(2, i(17759)),	-- Mark of Resolution
 						},
-						{	-- Minion's Scourgestones [A]
-							["questID"] = 5408,	-- Corruptor's Scourgestones
-							["qg"] = 10840,		-- Argent Officer Pureheart
-							["u"] = 2,			-- Removed in Patch 4.0.3
-							["coords"] = {
-								{ 42.96, 83.55, 22 },
-							},
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								{	-- Argent Dawn Valor Token
-									["itemID"] = 12844,	-- Argent Dawn Valor Token
-									["u"] = 2,			-- Removed in Patch 4.0.3
-								},
-							},
+					}),
+					qh(105, {	-- Alas, Andorhal
+						["u"] = 40,
+						["g"] = {
+							un(2, i(17759)),	-- Mark of Resolution
+						},
+					}),
+					q(43153, {	-- An Eye for a Scepter
+						["sourceQuests"] = { 43100 },	-- Finding the Scepter
+						["classes"] = { 9 },	-- Warlock
+						["coord"] = { 69.2, 79.0, 22 },
+						["lvl"] = 98,
+						["qg"] = 109698,	-- Calydus
+					}),
+					{	-- Corrupter's Scourgestones
+						["questID"] = 5408,	-- Corruptor's Scourgestones
+						["qg"] = 11039,		-- Duke Nicholas Zverenhoff
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coord"] = { 75.76, 53.81, 23 },
+						["g"] = {
+							un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						},
+					},
+					q(27157, {	-- Drudges... <Sigh>
+						["qg"] = 45157,	-- Lieutenant Myner
+						["sourceQuests"] = { 27156 },	-- It's About Time!
+					}),
+					qa(4986, {	-- Glyphed Oaken Branch
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15804)),	-- Cerise Drape
+						},
+					}),
+					qh(4987, {	-- Glyphed Oaken Branch
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15804)),	-- Cerise Drape
+						},
+					}),
+					qart(q(42774, {	-- Hope Prevails
+						["lvl"] = 98,
+						["qg"] = 108776,	-- Lord Maxwell Tyrosus
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	--
+					})),
+					q(5944, {	-- In Dreams
+						["u"] = 40,
+						["g"] = {
+							un(2, i(16058)),	-- Fordring's Seal
+							un(2, i(15411)),	-- Mark of Fordring
+							un(2, i(15413)),	-- Ornate Adamantium Breastplate
+							un(2, i(15418)),	-- Shimmering Platinum Warhammer
+							un(2, i(15421)),	-- Shroud of the Exile
+						},
+					}),
+					{	-- Invader's Scourgestones [A]
+						["questID"] = 5407,	-- Corruptor's Scourgestones
+						["qg"] = 10840,		-- Argent Officer Pureheart
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coord"] = { 42.96, 83.55, 22 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						},
+					},
+					q(27683, {	-- Into the Woods
+						["qgs"] = { 10840, 44462, 44456 } ,	-- Argent Office Pureheart, Jearl Donald, Adrine Towhide
+						["isBreadcrumb"] = true,	-- for Eastern Plaguelands (mutually exclusive with other EP bcrumbs)
+					}),
+					q(27156, {	-- It's About Time!
+						["qg"] = 45157,	-- Lieutenant Myner
+					}),
+					qart(q(42771, {	-- Keeping the Peace
+						["qg"] = 108778,	-- Mehlar Dawnblade
+						["lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	--
+					})),
+					q(5060, {	-- Locked Away
+						["u"] = 40,
+						["g"] = {
+							un(2, i(13474)),	-- Farmer Dalson's Shotgun
+							un(2, i(13475)),	-- Dalson Family Wedding Ring
+						},
+					}),
+					q(27017, {	-- Memories from a Lost Past
+						["groups"] = {
+							i(62198),  -- Andrea's Locket
+							i(62197),	-- Gahrron's Shoulderguard
+							i(62196),	-- Gloria's Work Vest
+							i(62195),	-- Footfalls of Memories
+							i(131631),	-- Del's Discarded Shoulderguard
+							i(131632),	-- Dusty Gahrron Chainmail
+						},
+						["qg"] = 44458,	-- Del Gahrron
+						["sourceQuests"] = { 26957 },	-- The Long Trip Home
+					}),
+					{	-- Minion's Scourgestones [A]
+						["questID"] = 5408,	-- Corruptor's Scourgestones
+						["qg"] = 10840,		-- Argent Officer Pureheart
+						["u"] = 2,			-- Removed in Patch 4.0.3
+						["coord"] = { 43.0, 84.0, 22 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
+						},
+					},
+					qa(5238, {	-- Mission Accomplished!
+						["u"] = 40,
+						["g"] = {
+							un(2, i(15799)),	-- Heroic Commendation Medal
+							un(2, i(15800)),	-- Intrepid Shortsword
+							un(2, i(15801)),	-- Valiant Shortsword
+						},
+					}),
+					q(27011, {	-- Redpine Thievery
+						["qg"] = 44472,	-- Kelly Dumah
+						["sourceQuests"] = { 27013 },	-- Too Close for Comfort
+					}),
+					qart(q(42772, {	-- Sacred Ground
+						["qg"] = 108777,	-- High Priest Thel'danis
+						["lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	--
+					})),
+					qart(q(42770, {	-- Seeking Guidance
+						["qgs"] = { 90259, 90369 },	-- Lord Maxwell Tyrosus (same QG, different IDs)
+						["lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	--
+					})),
+					qa(5344, {	-- The Last Barov
+						["u"] = 40,
+						["g"] = {
+							un(2, i(14023)),	-- Barov Peasant Caller
+						},
+					}),
+					qh(5342, {	-- The Last Barov
+						["u"] = 40,
+						["g"] = {
+							un(2, i(14022)),	-- Barov Peasant Caller
+						},
+					}),
+					qart(q(42773, {	-- The Light Reveals
+						["qgs"] = { 108776 },	-- Lord Maxwell Tyrosus
+						["lvl"] = 98,
+						["classes"] = { 2 },	-- Paladin
+--						["sourceQuests"] = {  },	--
+					})),
+					q(26957, {	-- The Long Trip Home
+						["qg"] = 44905,	--
+					}),
+					q(27013, {	-- Too Close for Comfort
+						["qg"] = 44472,	-- Kelly Dumah
+					}),
+					q(5051, {	-- Two Halves Become One
+						["u"] = 40,
+						["g"] = {
+							un(2, i(13473)),	-- Felstone Good Luck Charm
 						},
 					}),
 				}),
@@ -1224,7 +1267,8 @@ _.Zones =
 				}),
 				n(-2,  {	-- Vendors
 					n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
-						["groups"] = {
+						["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
+						["g"] = {
 							i(19446),	-- Formula: Enchant Bracer - Argent Versatility
 							i(19447),	-- Formula: Enchant Bracer - Healing Power
 							i(19442),	-- Formula: Powerful Anti-Venom
@@ -1242,22 +1286,26 @@ _.Zones =
 							i(18172),	-- Nature Mantle of the Dawn
 							i(18173),	-- Shadow Mantle of the Dawn
 						},
-						["description"] = "To view this vendor's shop, you need to be at least Honored with Argent Dawn.  Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
 					}),
-					a(n(12942, {	-- Leonard Porter <Leatherworking Supplies>
-						i(15741),	-- Pattern: Stormshroud Pants
-						i(15725),	-- Pattern: Wicked Leather Gauntlets
-					})),
+					n(12942, {	-- Leonard Porter <Leatherworking Supplies>
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(15741),	-- Pattern: Stormshroud Pants
+							i(15725),	-- Pattern: Wicked Leather Gauntlets
+						},
+					}),
 					n(11278,{	-- Magnus Frostwake
-						i(8030),	-- Plans: Ebon Shiv
-						i(12823), 	-- Plans: Huge Thorium Battleaxe
-						i(12819), 	-- Plans: Ornate Thorium Handaxe
-						i(12703),	-- Plans: Storm Gauntlets
-						i(13501),	-- Recipe: Major Mana Potion
-						i(13485),	-- Recipe: Transmute Water to Air
+						["g"] = {
+							i(8030),	-- Plans: Ebon Shiv
+							i(12823), 	-- Plans: Huge Thorium Battleaxe
+							i(12819), 	-- Plans: Ornate Thorium Handaxe
+							i(12703),	-- Plans: Storm Gauntlets
+							i(13501),	-- Recipe: Major Mana Potion
+							i(13485),	-- Recipe: Transmute Water to Air
+						},
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(0, {	-- Zone Drop
 					un(7, i(15771, {	-- Pattern: Living Breastplate
 						["crs"] = {
 							1813,	-- Decaying Horror
@@ -1268,53 +1316,6 @@ _.Zones =
 							1783,	-- Skeletal Flayer
 						},
 					}),
-				}),
-				n(-40, {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							un(40, qa(211, {	-- Alas, Andorhal
-								un(2, i(17759)),	-- Mark of Resolution
-							})),
-							un(40, qh(105, {	-- Alas, Andorhal
-								un(2, i(17759)),	-- Mark of Resolution
-							})),
-							un(40, qa(4986, {	-- Glyphed Oaken Branch
-								un(2, i(15804)),	-- Cerise Drape
-							})),
-							un(40, qh(4987, {	-- Glyphed Oaken Branch
-								un(2, i(15804)),	-- Cerise Drape
-							})),
-							un(40, q(5944, {	-- In Dreams
-								un(2, i(16058)),	-- Fordring's Seal
-								un(2, i(15411)),	-- Mark of Fordring
-								un(2, i(15413)),	-- Ornate Adamantium Breastplate
-								un(2, i(15418)),	-- Shimmering Platinum Warhammer
-								un(2, i(15421)),	-- Shroud of the Exile
-							})),
-							un(40, q(5060, {	-- Locked Away
-								un(2, i(13474)),	-- Farmer Dalson's Shotgun
-								un(2, i(13475)),	-- Dalson Family Wedding Ring
-							})),
-							un(40, qa(5238, {	-- Mission Accomplished!
-								un(2, i(15799)),	-- Heroic Commendation Medal
-								un(2, i(15800)),	-- Intrepid Shortsword
-								un(2, i(15801)),	-- Valiant Shortsword
-							})),
-							un(40, qa(5344, {	-- The Last Barov
-								un(2, i(14023)),	-- Barov Peasant Caller
-							})),
-							un(40, qh(5342, {	-- The Last Barov
-								un(2, i(14022)),	-- Barov Peasant Caller
-							})),
-							un(40, q(5051, {	-- Two Halves Become One
-								un(2, i(13473)),	-- Felstone Good Luck Charm
-							})),
-						}),
-						--n(-16, {	-- Rares (Legacy)
-						--}),
-						--n(0, {	-- Zone Drop (Legacy)
-						--}),
-					},
 				}),
 			},
 			["lvl"] = 35,

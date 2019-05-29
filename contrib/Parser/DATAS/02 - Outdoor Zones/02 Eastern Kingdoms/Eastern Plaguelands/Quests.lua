@@ -414,190 +414,175 @@ _.Zones =
 						crit(8, {	-- Beezil Linkspanner
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(771, 4, {	-- Crown Guard Tower
-							q(27544, {	-- Cenarion Tenacity
-								["qg"] = 45500,	-- Urk Gagbaz
-								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
-								["isBreadcrumb"] = true,	-- for "Postponing the Inevitable"
-							}),
-						}),
-						sz(771, 5, {	-- The Fungal Vale
-							q(27420, {	-- Postponing the Inevitable
-								["qg"] = 16135,	-- Rayne
-								["sourceQuests"] = {27544},	-- for "Cenarion Tenacity"
-							}),
-							q(27421, {	-- Amidst Death, Life
-								["groups"] = {
-									i(62965),	-- Ring of New Life
-									i(62964),	-- Pauldrons of Blooming Hope
-									i(62963),	-- Rayne's Scarf
-									i(62962),	-- Fungal Vale Cloak
-								},
-								["qg"] = 16135,	-- Rayne
-							}),
-						}),
-						sz(771, 11, {	-- Light's Hope Chapel
-							q(27458, {	-- Smokey and the Bandage
-								["qg"] = 11033,	-- Smokey LaRue
-							}),
-							q(27467, {	-- Buried Blades
-								["groups"] = {
-									i(62984),	-- Omarion's Gift
-									i(62983),	-- Cowl of the Noxious Glade
-									i(62982),	-- Light-Touched Pendant
-								},
-								["qg"] = 16365,	-- Master Craftsman Omarion
-							}),
- 							q(28756, {	-- Aberrations of Bone
-								["qg"] = 49856,	-- Lord Raymond George
-								["repeatable"] = true,
-								["sourceQuests"] = {27464},
-							}),
-							q(28755, {	-- Annals of the Silver Hand
-								["qg"] = 49856,	-- Lord Raymond George
-								["repeatable"] = true,
-								["sourceQuests"] = {27464},
-							}),
-							q(27762, {	-- Fuselight, Ho!
-								["qg"] = 48704,	-- Gek Nozzlerocket
-								["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
-								["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
-							}),
-						}),
-						sz(771, 12, {	-- The Infectis Scar
-							q(27450, {	-- Frederick's Fish Fancy
-								["groups"] = {
-									i(62974),	-- Infectis Scuttler Helm
-									i(62973),	-- Infectis Puffer Gloves
-									i(62972),	-- Infectis Incher Leggings
-									},
-								["qg"] = 45575,	-- Frederick Calston
-							}),
-							q(27451, {	-- To Kill With Purpose
-								["qg"] = 11035,	-- Betina Bigglezink
-							}),
-							q(27452, {	-- Dark Garb
-								["qg"] = 11035,	-- Betina Bigglezink
-							}),
-							q(27453, {	-- Catalysm
-								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27451,27452}	-- "To Kill With Purpose", "Dark Garb"
-							}),
-							q(27454, {	-- Just a Drop in the Bucket
-								["groups"] = {
-									i(62977), 	-- Light's Shield
-									i(62976), 	-- Breastplate of the Droplet
-									i(62975), 	-- Plaguefix Launcher
-									i(156978),	-- Cauldron Cracker
-									i(156979),	-- Cauldron Dredger
-								},
-								["qg"] = 11035,	-- Betina Bigglezink
-								["sourceQuests"] = {27453}	-- "Catalysm"
-							}),
-							q(27455, {	-- Boys Will Be Boys
-								["qg"] = 45417,	-- Fiona
-								["sourceQuests"] = {27448}	-- "The Trek Continues"
-							}),
-						}),
-						sz(771, 14, {	-- Eastwall Tower
-							q(27481, {	-- Out of the Ziggurat
-								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27449,27465}	-- "Honor and Strength", "Argent Call: The Noxious Glade"
-							}),
-							q(27482, {	-- Into the Flames
-								["groups"] = {
-									i(62991),	-- Strength's Supremacy
-								},
-								["qg"] = 45574,	-- Vex'tul
-								["sourceQuests"] = {27481}	-- "Out of the Ziggurat"
-							}),
-							q(27479, {	-- Righteous Indignation
-								["qg"] = 45736,	-- Deacon Andaal
-							}),
-							q(27477, {	-- The Corpulent One
-								["groups"] = {
-									i(62987),	-- Eastwall Gauntlets
-									i(62986),	-- Borelgore's Skin
-									i(62985),	-- Corpulent Shoulderpads
-								},
-								["qg"] = 45735,	-- Gamella Cracklefizz
-							}),
-						}),
-						sz(771, 18, {	-- Northpass Tower
- 							q(27422, {	-- A City Under Siege
-								["qg"] = 45482,	-- Argent Officer Irizarry
-							}),
- 							q(27521, {	-- Wretched Hive of Scum and Villainy
-								["qg"] = 45826,	-- Kirkian Dawnshield
-							}),
-							q(27523, {	-- Duskwing, Oh How I Hate Thee...
-								["groups"] = {
-									i(63001),
-									i(63000),
-									i(62999),
-									i(62990),
-								},
-								["qg"] = 45816,	-- Corpseburner Tim
-							}),
-							q(27532, {	-- The Plaguewood Tower
-								["qg"] = 45451,	-- Argus Highbeacon
-								["sourceQuests"] = {27522} ,	-- "Beat it Out of Them"
-							}),
-						}),
-						sz(771, 21, {	-- The Plaguewood
-							q(27528, {	-- Scourged Mass
-								["qg"] = 45831,	-- Crusader Kevin Frost
-							}),
-							q(27529, {	-- Defenders of Darrowshire
-								["qg"] = 45831,	-- Crusader Kevin Frost
-							}),
-							q(27539, {	-- Add'em to the Pile
-								["groups"] = {
-									i(63014),
-									i(63013),
-									i(63011),
-									i(62989),
-								},
-								["qg"] = 45831,	-- Crusader Kevin Frost
-							}),
-							q(27530, {	-- The Corpsebeasts
-								["groups"] = {
-									i(63017),
-									i(63016),
-									i(63015),
-								},
-								["qg"] = 45831,	-- Crusader Kevin Frost
-								["sourceQuests"] = {27528,27529,27539},
-							}),
-							q(27535, {	-- Just a Little Touched
-								["qg"] = 45828,	-- Argent Apotehcary Judkins
-								["isBreadcrumb"] = true,
-							}),
-							q(27531, {	-- Counter-Plague Research
-								["groups"] = {
-									i(63010),
-									i(63009),
-									i(63008),
-									i(63007),
-								},
-								["qg"] = 45828,	-- Argent Apotehcary Judkins
-								["sourceQuests"] = { 27532 },
-							}),
-							q(27534, {	-- Augustus' Receipt Book
-								["qg"] = 12384,	-- Augustus the Touched
-							}),
-							q(27533, {	-- A Fate Worse Than Butchery
-								["groups"] = {
-									i(63006),
-									i(63005),
-									i(63004),
-									i(63003),
-								},
-								["qg"] = 12384,	-- Augustus the Touched
-								["sourceQuests"] = { 27535 },
-							}),
-						}),
+					q(27422, {	-- A City Under Siege
+						["qg"] = 45482,	-- Argent Officer Irizarry
+					}),
+					q(27533, {	-- A Fate Worse Than Butchery
+						["groups"] = {
+							i(63006),
+							i(63005),
+							i(63004),
+							i(63003),
+						},
+						["qg"] = 12384,	-- Augustus the Touched
+						["sourceQuests"] = { 27535 },
+					}),
+					q(27539, {	-- Add'em to the Pile
+						["groups"] = {
+							i(63014),
+							i(63013),
+							i(63011),
+							i(62989),
+						},
+						["qg"] = 45831,	-- Crusader Kevin Frost
+					}),
+					q(28756, {	-- Aberrations of Bone
+						["qg"] = 49856,	-- Lord Raymond George
+						["repeatable"] = true,
+						["sourceQuests"] = {27464},
+					}),
+					q(27421, {	-- Amidst Death, Life
+						["groups"] = {
+							i(62965),	-- Ring of New Life
+							i(62964),	-- Pauldrons of Blooming Hope
+							i(62963),	-- Rayne's Scarf
+							i(62962),	-- Fungal Vale Cloak
+						},
+						["qg"] = 16135,	-- Rayne
+					}),
+					q(28755, {	-- Annals of the Silver Hand
+						["qg"] = 49856,	-- Lord Raymond George
+						["repeatable"] = true,
+						["sourceQuests"] = {27464},
+					}),
+					q(27534, {	-- Augustus' Receipt Book
+						["qg"] = 12384,	-- Augustus the Touched
+					}),
+					q(27455, {	-- Boys Will Be Boys
+						["qg"] = 45417,	-- Fiona
+						["sourceQuests"] = {27448}	-- "The Trek Continues"
+					}),
+					q(27467, {	-- Buried Blades
+						["groups"] = {
+							i(62984),	-- Omarion's Gift
+							i(62983),	-- Cowl of the Noxious Glade
+							i(62982),	-- Light-Touched Pendant
+						},
+						["qg"] = 16365,	-- Master Craftsman Omarion
+					}),
+					q(27453, {	-- Catalysm
+						["qg"] = 11035,	-- Betina Bigglezink
+						["sourceQuests"] = {27451,27452}	-- "To Kill With Purpose", "Dark Garb"
+					}),
+					q(27544, {	-- Cenarion Tenacity
+						["qg"] = 45500,	-- Urk Gagbaz
+						["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+						["isBreadcrumb"] = true,	-- for "Postponing the Inevitable"
+					}),
+					q(27531, {	-- Counter-Plague Research
+						["groups"] = {
+							i(63010),
+							i(63009),
+							i(63008),
+							i(63007),
+						},
+						["qg"] = 45828,	-- Argent Apotehcary Judkins
+						["sourceQuests"] = { 27532 },
+					}),
+					q(27452, {	-- Dark Garb
+						["qg"] = 11035,	-- Betina Bigglezink
+					}),
+					q(27529, {	-- Defenders of Darrowshire
+						["qg"] = 45831,	-- Crusader Kevin Frost
+					}),
+					q(27523, {	-- Duskwing, Oh How I Hate Thee...
+						["groups"] = {
+							i(63001),
+							i(63000),
+							i(62999),
+							i(62990),
+						},
+						["qg"] = 45816,	-- Corpseburner Tim
+					}),
+					q(27450, {	-- Frederick's Fish Fancy
+						["groups"] = {
+							i(62974),	-- Infectis Scuttler Helm
+							i(62973),	-- Infectis Puffer Gloves
+							i(62972),	-- Infectis Incher Leggings
+							},
+						["qg"] = 45575,	-- Frederick Calston
+					}),
+					q(27762, {	-- Fuselight, Ho!
+						["qg"] = 48704,	-- Gek Nozzlerocket
+						["isBreadcrumb"] = true,	-- for "To Fuselight Proper"
+						["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
+					}),
+					q(27482, {	-- Into the Flames
+						["groups"] = {
+							i(62991),	-- Strength's Supremacy
+						},
+						["qg"] = 45574,	-- Vex'tul
+						["sourceQuests"] = {27481}	-- "Out of the Ziggurat"
+					}),
+					q(27454, {	-- Just a Drop in the Bucket
+						["groups"] = {
+							i(62977), 	-- Light's Shield
+							i(62976), 	-- Breastplate of the Droplet
+							i(62975), 	-- Plaguefix Launcher
+							i(156978),	-- Cauldron Cracker
+							i(156979),	-- Cauldron Dredger
+						},
+						["qg"] = 11035,	-- Betina Bigglezink
+						["sourceQuests"] = {27453}	-- "Catalysm"
+					}),
+					q(27535, {	-- Just a Little Touched
+						["qg"] = 45828,	-- Argent Apotehcary Judkins
+						["isBreadcrumb"] = true,
+					}),
+					q(27481, {	-- Out of the Ziggurat
+						["qg"] = 45574,	-- Vex'tul
+						["sourceQuests"] = {27449,27465}	-- "Honor and Strength", "Argent Call: The Noxious Glade"
+					}),
+					q(27420, {	-- Postponing the Inevitable
+						["qg"] = 16135,	-- Rayne
+						["sourceQuests"] = {27544},	-- for "Cenarion Tenacity"
+					}),
+					q(27479, {	-- Righteous Indignation
+						["qg"] = 45736,	-- Deacon Andaal
+					}),
+					q(27528, {	-- Scourged Mass
+						["qg"] = 45831,	-- Crusader Kevin Frost
+					}),
+					q(27458, {	-- Smokey and the Bandage
+						["qg"] = 11033,	-- Smokey LaRue
+					}),
+					q(27530, {	-- The Corpsebeasts
+						["groups"] = {
+							i(63017),
+							i(63016),
+							i(63015),
+						},
+						["qg"] = 45831,	-- Crusader Kevin Frost
+						["sourceQuests"] = {27528,27529,27539},
+					}),
+					q(27477, {	-- The Corpulent One
+						["groups"] = {
+							i(62987),	-- Eastwall Gauntlets
+							i(62986),	-- Borelgore's Skin
+							i(62985),	-- Corpulent Shoulderpads
+						},
+						["qg"] = 45735,	-- Gamella Cracklefizz
+					}),
+					q(27532, {	-- The Plaguewood Tower
+						["qg"] = 45451,	-- Argus Highbeacon
+						["sourceQuests"] = {27522} ,	-- "Beat it Out of Them"
+					}),
+					q(27451, {	-- To Kill With Purpose
+						["qg"] = 11035,	-- Betina Bigglezink
+					}),
+					q(27521, {	-- Wretched Hive of Scum and Villainy
+						["qg"] = 45826,	-- Kirkian Dawnshield
+					}),
 											--[[
 						Exploration Achievement: 771
 					1	Thondroril River
@@ -684,7 +669,6 @@ _.Zones =
 						["qg"] = 31084,	-- 
 					}),
 --]]
-					}),
 					{	-- Corrupter's Scourgestones
 						["questID"] = 5408,	-- Corruptor's Scourgestones
 						["qg"] = 11039,		-- Duke Nicholas Zverenhoff

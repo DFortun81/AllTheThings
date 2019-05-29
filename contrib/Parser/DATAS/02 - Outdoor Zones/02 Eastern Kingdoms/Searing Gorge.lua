@@ -197,106 +197,88 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(774, 1, {	-- Firewatch Ridge
-							q(27984, {	--Lunthistle's Tale
-								["qg"] = 8436,	-- Zamael Lunthistle
-							}),
-							q(27985, {	--Prayer to Elune
-								["qg"] = 8436,	-- Zamael Lunthistle
-								["sourceQuests"] = { 27984 },	-- Lunthistle's Tale
-							}),
-						}),
-						sz(774, 2, {	-- The Cauldron
-							q(27470, {	-- A Potential Ally
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-						}),
-						-- sz(774, 3, {	-- Blackchar Cave
-						-- }),
-						sz(774, 4, {	-- The Sea of Cinders NOTE: Should be Iron Summit
-							q(28032, {	-- The Mysteries of the Fire-Gizzard
-								["groups"] = {
-									i(63233),	-- Iron Summit Belt
-									i(63232),	-- Incendosaur Gloves
-									i(63231),	-- Lizard Skin Boots
-									i(63230),	-- Fire-Gizzard Robes
-								},
-								["qg"] = 47440,	-- Agnes Flimshale
-								["sourceQuests"] = { 27986 },	-- 
-							}),
-						}),
-						sz(774, 5, {	-- Grimesilt Dig Site
-							q(27956, {	--Lunk's Task
-								["qg"] = 47269,	-- Lunk
-							}),
-							q(27957, {	--Lunk No Kill
-								["qg"] = 47269,	-- Lunk
-								["sourceQuests"] = { 27956 },	-- Lunk's Task
-							}),
-							q(27958, {	-- A Proper Antivenom
-								["groups"] = {
-									i(63211),	-- Medical Officer Legguards
-									i(63210),	-- Snakeoil Helm
-									i(63209),	-- Glassweb Robes
-									},
-								["qg"] = 47268,	-- Prisanne Dustcropper
-								["sourceQuests"] = { 27957 },	-- Lunk No Kill
-							}),
-							q(27959, {	--Lunk's Adventure: Spider Rider
-								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 27958 },	-- A Proper Antivenom
-							}),
-							q(27960, {	--The Fewer, the Better
-								["qg"] = 47267,	-- Burrian Coalpart
-							}),
-							q(27961, {	-- Out of Place
-								["groups"] = {
-									i(63215),	-- Coalpart's Bracers
-									i(63214),	-- Mercy Killing Helm
-									i(63213),	-- Fuzzy Headcover
-									i(63212),	-- Ash Feather Cloak
-								},
-								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
-							}),
-							q(27962, {	--A Lumbering Relic
-								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
-							}),
-						}),
-						-- sz(774, 6, {	-- Dustfire Valley
-						-- }),
-						sz(774, 7, {	-- Thorium Point
-							qh(28515, {	--Mouton Flamestar
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-							qa(28514, {	--Mouton Flamestar
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-							q(27980, {	--The Spiders Have to Go
-								["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
-							}),
-							q(13662, {	--Gaining Acceptance
-								["qg"] = 14624,	-- Master Smith Burninate
-								["repeatable"] = true,
-								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							}),
-							q(7737, {	--Gaining Even More Acceptance
-								["qg"] = 14624,	-- Master Smith Burninate
-								["repeatable"] = true,
-								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							}),
-							q(28053, {	--Lunk Like Your Style
-								["groups"] = {
-									i(63245),	-- Lunk's Special Gear
-								},
-								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 28064 },
-							}),
-						}),
-						-- sz(774, 8, {	-- Blackrock Mountain
-						-- }),
+					q(27962, {	--A Lumbering Relic
+						["qg"] = 47267,	-- Burrian Coalpart
+						["sourceQuests"] = { 27960 },	-- The Fewer, the Better
+					}),
+					q(27470, {	-- A Potential Ally
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					q(27958, {	-- A Proper Antivenom
+						["groups"] = {
+							i(63211),	-- Medical Officer Legguards
+							i(63210),	-- Snakeoil Helm
+							i(63209),	-- Glassweb Robes
+							},
+						["qg"] = 47268,	-- Prisanne Dustcropper
+						["sourceQuests"] = { 27957 },	-- Lunk No Kill
+					}),
+					q(13662, {	--Gaining Acceptance
+						["qg"] = 14624,	-- Master Smith Burninate
+						["repeatable"] = true,
+						["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+					}),
+					q(7737, {	--Gaining Even More Acceptance
+						["qg"] = 14624,	-- Master Smith Burninate
+						["repeatable"] = true,
+						["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+					}),
+					q(28053, {	--Lunk Like Your Style
+						["groups"] = {
+							i(63245),	-- Lunk's Special Gear
+						},
+						["qg"] = 47429,	-- Lunk
+						["sourceQuests"] = { 28064 },
+					}),
+					q(27957, {	--Lunk No Kill
+						["qg"] = 47269,	-- Lunk
+						["sourceQuests"] = { 27956 },	-- Lunk's Task
+					}),
+					q(27959, {	--Lunk's Adventure: Spider Rider
+						["qg"] = 47429,	-- Lunk
+						["sourceQuests"] = { 27958 },	-- A Proper Antivenom
+					}),
+					q(27956, {	--Lunk's Task
+						["qg"] = 47269,	-- Lunk
+					}),
+					q(27984, {	--Lunthistle's Tale
+						["qg"] = 8436,	-- Zamael Lunthistle
+					}),
+					qh(28515, {	--Mouton Flamestar
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					qa(28514, {	--Mouton Flamestar
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					q(27961, {	-- Out of Place
+						["groups"] = {
+							i(63215),	-- Coalpart's Bracers
+							i(63214),	-- Mercy Killing Helm
+							i(63213),	-- Fuzzy Headcover
+							i(63212),	-- Ash Feather Cloak
+						},
+						["qg"] = 47267,	-- Burrian Coalpart
+						["sourceQuests"] = { 27960 },	-- The Fewer, the Better
+					}),
+					q(27985, {	--Prayer to Elune
+						["qg"] = 8436,	-- Zamael Lunthistle
+						["sourceQuests"] = { 27984 },	-- Lunthistle's Tale
+					}),
+					q(27960, {	--The Fewer, the Better
+						["qg"] = 47267,	-- Burrian Coalpart
+					}),
+					q(28032, {	-- The Mysteries of the Fire-Gizzard
+						["groups"] = {
+							i(63233),	-- Iron Summit Belt
+							i(63232),	-- Incendosaur Gloves
+							i(63231),	-- Lizard Skin Boots
+							i(63230),	-- Fire-Gizzard Robes
+						},
+						["qg"] = 47440,	-- Agnes Flimshale
+						["sourceQuests"] = { 27986 },	-- 
+					}),
+					q(27980, {	--The Spiders Have to Go
+						["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 					}),
 				}),
 				n(-16, {	-- Rares	

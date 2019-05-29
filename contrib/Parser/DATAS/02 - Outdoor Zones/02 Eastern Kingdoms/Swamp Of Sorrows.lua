@@ -210,151 +210,157 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(782,  1, {	-- Misty Valley
-						}),
-						sz(782,  2, {	-- The Harborage
-							qa(27919, {	-- Onward to the Blasted Lands
-								["qg"] = 17127,
-							}),
-						}),
-						sz(782,  3, {	-- Splinterspear Junction
-							qh(27910, {	-- Last Regrets
-								["qg"] = 47041,
-							}),
-							qh(27907, {	-- Prayerblossom
-								["qg"] = 47041,
-							}),
-							qh(27911, {	-- With Dying Breath
-								["groups"] = {
-									i(64627),	-- Dying Breath
-								},
-								["qg"] = 47041,
-							}),
-							qh(27916, {	-- Ruag's Report
-								["qg"] = 47041,
-								["sourceQuests"] = { 27911 },
-							}),
-							qh(27908, {	-- Secrets of the Mire
-								["qg"] = 47041,
-							}),
-							qh(27909, {	-- The Purespring
-								["qg"] = 47041,
-							}),
-						}),
-						sz(782,  4, {	-- The Shifting Mire
-						}),
-						sz(782,  5, {	-- Stonard
-							qh(27853, {	-- Lumbering Oafs
-								["groups"] = {
-									i(64624),
-									i(64628),
-									i(64631),
-								},
-								["qg"] = 7623,
-								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
-							}),
-							qh(27856, {	-- Marking the Fallen
-								["qg"] = 7623,
-							}),
-							qh(27906, {	-- Neeka Bloodscar
-								["qg"] = 7623,
-							}),
-							qh(28553, {	-- Okrilla and the Blasted Lands
-								["qg"] = 7623,
-								["isBreadcrumb"] = true,
-								["sourceQuests"] = { 27916 },
-							}),
-							qh(27852, {	-- Orcs and Humans
-								["qg"] = 7623,
-							}),
-							qh(27855, {	-- Reinforcements Denied
-								["qg"] = 7623,
-							}),
-							qh(27854, {	-- Tides of Darkness
-								["groups"] = {
-									i(64625),
-									i(64634),
-									i(64632),
-									i(64629),
-									i(157013),	-- Ogre Mage Club
-								},
-								["qg"] = 7623,
-							}),
-							qh(27857, {	-- We're Under Attack!
-								["groups"] = {
-									i(64636),
-									i(64626),
-									i(64630),
-									i(64633),
-									i(64635),
-								},
-								["qg"] = 7623,
-							}),
-						}),
-						sz(782,  6, {	-- Pool of Tears
-						}),
-						sz(782,  7, {	-- Stagalbog
-						}),
-						sz(782,  8, {	-- Sorrowmurk NOTE: This should be Temple of Atal'Hakkar
-							q(27915, {	-- The Heart of the Temple
-								["qg"] = 46071,	-- Lord Itharius
-								["sourceQuests"] = { 27914 },
-							}),
-							qa(27870, {	-- To Marshtide Watch
-								["qg"] = 46071,	-- Lord Itharius
-								["isBreadcrumb"] = true,
-								["sourceQuests"] = { 27914 },
-							}),
-							qh(27871, {	-- To Stonard
-								["qg"] = 46071,	-- Lord Itharius
-							}),
-						}),
-						sz(782,  9, {	-- Bogpaddle
-							q(27592, {	-- Drinks on the Rocks
-								["groups"] = {
-									i(64622),
-									i(64588),
-									i(64598),
-									i(64607),
-									i(64616),
-									i(157012),	-- Broken Silversnap Bottle
-								},
-								["qg"] = 46010,
-							}),
-							q(27663, {	-- Tastes Like Strider
-								["qg"] = 46182,	-- Pierre Fishflay
-							}),
-						}),
-						sz(782, 10, {	-- Misty Reed Strand
-						}),
-						sz(782, 11, {	-- Purespring Cavern
-						}),
-						sz(782, 12, {	-- Marshtide Watch
-							qa(27840, {	-- Draenethyst Crystals
-								["qg"] = 18221,
-							}),
-							qa(27860, {	-- The Lost Ones
-								["qg"] = 18221,
-							}),
-							qa(27918, {	-- The Harborage
-								["qg"] = 18221,
-								["sourceQuests"] = { 27840,27860 },
-							}),
-						}),
-						{	-- A Warrior's Death
-							["questID"] = 54108,
-							["qg"] = 147297,	-- Zekhan
-							["coord"] = { 79.7, 74.7 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54107,	-- Grim Tidings
+					{	-- A Warrior's Death
+						["questID"] = 54108,
+						["qg"] = 147297,	-- Zekhan
+						["coord"] = { 79.7, 74.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54107,	-- Grim Tidings
+					},
+					qa(27840, {	-- Draenethyst Crystals
+						["qg"] = 18221,
+					}),
+					q(27592, {	-- Drinks on the Rocks
+						["qg"] = 46010,
+						["g"] = {
+							i(64622),	-- 
+							i(64588),	-- 
+							i(64598),	-- 
+							i(64607),	-- 
+							i(64616),	-- 
+							i(157012),	-- Broken Silversnap Bottle
 						},
-						{	-- Queen's Favor
-							["questID"] = 54109,
-							["qg"] = 146011,	-- Varok Saurfang
-							["coord"] = { 80.8, 78.7 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54108,	-- A Warrior's Death
+					}),
+					qh(1430, {	-- [DEPRECATED]Fresh Meat
+						["u"] = 40,
+						["g"] = {
+							un(2, i(9682)),	-- Leather Chef's Belt
+						},
+					}),
+					qa(1393, {	-- Galen's Escape
+						["u"] = 40,
+						["g"] = {
+							un(2, i(6828)),	-- Visionary Buckler
+						},
+					}),
+					q(2702, {	-- Heroes of Old
+						["u"] = 40,
+					}),
+					q(2702, {	-- Heroes of Old 2
+						["u"] = 40,
+						["g"] = {
+							un(2, i(10659)),	-- Shard of Afrasa
+						},
+					}), 
+					qh(27910, {	-- Last Regrets
+						["qg"] = 47041,
+					}),
+					qh(27853, {	-- Lumbering Oafs
+						["qg"] = 7623,
+						["sourceQuests"] = { 27870 },	-- To Marshtide Watch
+						["g"] = {
+							i(64624),	-- 
+							i(64628),	-- 
+							i(64631),	-- 
+						},
+					}),
+					qh(27856, {	-- Marking the Fallen
+						["qg"] = 7623,
+					}),
+					qh(27906, {	-- Neeka Bloodscar
+						["qg"] = 7623,
+					}),
+					qh(28553, {	-- Okrilla and the Blasted Lands
+						["qg"] = 7623,
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 27916 },
+					}),
+					qa(27919, {	-- Onward to the Blasted Lands
+						["qg"] = 17127,
+					}),
+					qh(27852, {	-- Orcs and Humans
+						["qg"] = 7623,
+					}),
+					qh(27907, {	-- Prayerblossom
+						["qg"] = 47041,
+					}),
+					{	-- Queen's Favor
+						["questID"] = 54109,
+						["qg"] = 146011,	-- Varok Saurfang
+						["coord"] = { 80.8, 78.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54108,	-- A Warrior's Death
+					},
+					qh(27855, {	-- Reinforcements Denied
+						["qg"] = 7623,
+					}),
+					qh(27916, {	-- Ruag's Report
+						["qg"] = 47041,
+						["sourceQuests"] = { 27911 },
+					}),
+					qh(27908, {	-- Secrets of the Mire
+						["qg"] = 47041,
+					}),
+					q(27663, {	-- Tastes Like Strider
+						["qg"] = 46182,	-- Pierre Fishflay
+					}),
+					qa(27918, {	-- The Harborage
+						["qg"] = 18221,
+						["sourceQuests"] = { 27840,27860 },
+					}),
+					q(27915, {	-- The Heart of the Temple
+						["qg"] = 46071,	-- Lord Itharius
+						["sourceQuests"] = { 27914 },
+					}),
+					qa(27860, {	-- The Lost Ones
+						["qg"] = 18221,
+					}),
+					qh(27909, {	-- The Purespring
+						["qg"] = 47041,
+					}),
+					q(2681, {	-- The Stones That Bind Us
+						["u"] = 40,
+					}),
+					qh(1427, {	-- [DEPRECATED]Threat From the Sea
+						["u"] = 40,
+						["g"] = {
+							un(2, i(9680)),	-- Tok'kar's Murloc Shanker
+							un(2, i(9678)),	-- Tok'kar's Murloc Basher
+							un(2, i(9679)),	-- Tok'kar's Murloc Chopper
+						},
+					}),
+					qh(27854, {	-- Tides of Darkness
+						["qg"] = 7623,
+						["g"] = {
+							i(64625),	-- 
+							i(64634),	-- 
+							i(64632),	-- 
+							i(64629),	-- 
+							i(157013),	-- Ogre Mage Club
+						},
+					}),
+					qa(27870, {	-- To Marshtide Watch
+						["qg"] = 46071,	-- Lord Itharius
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 27914 },
+					}),
+					qh(27871, {	-- To Stonard
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					qh(27857, {	-- We're Under Attack!
+						["qg"] = 7623,
+						["g"] = {
+							i(64636),	-- 
+							i(64626),	-- 
+							i(64630),	-- 
+							i(64633),	-- 
+							i(64635),	-- 
+						},
+					}),
+					qh(27911, {	-- With Dying Breath
+						["qg"] = 47041,
+						["g"] = {
+							i(64627),	-- Dying Breath
 						},
 					}),
 				}),
@@ -951,7 +957,13 @@ _.Zones =
 							{ 55.6, 54.0 },
 							{ 54.0, 54.2 },
 						},
-					}), 
+					}),
+					n(766, {	-- Tangled Horror
+						["u"] = 43,
+						["g"] = {
+							i(5608),	-- Living Cowl
+						},
+					}),
 					n(50797, {	-- Yukiko
 						["g"] = {
 							i(9950),	-- Chieftain's Breastplate
@@ -982,7 +994,7 @@ _.Zones =
 							{ 70.6, 66.2 },
 							{ 69.8, 67.6 },
 						},
-					}), 
+					}),
 				}),
 				n(-2,   {	-- Vendors
 					nh(989,    {	-- Banalash <Trade Supplies>
@@ -1021,33 +1033,6 @@ _.Zones =
 						},
 						["coord"] = { 46.8, 52.6 },
 					})),
-				}),
-				n(-40,  {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							un(40, qh(1430, {	-- [DEPRECATED]Fresh Meat
-								un(2, i(9682)),	-- Leather Chef's Belt
-							})),
-							un(40, q(2702)),	-- Heroes of Old
-							un(40, q(2702, {	-- Heroes of Old 2
-								un(2, i(10659)),	-- Shard of Afrasa
-							})), 
-							un(40, qa(1393, {	-- Galen's Escape
-								un(2, i(6828)),	-- Visionary Buckler
-							})),
-							un(40, qh(1427, {	-- [DEPRECATED]Threat From the Sea
-								un(2, i(9680)),	-- Tok'kar's Murloc Shanker
-								un(2, i(9678)),	-- Tok'kar's Murloc Basher
-								un(2, i(9679)),	-- Tok'kar's Murloc Chopper
-							})),
-							un(40, q(2681)),	-- The Stones That Bind Us
-						}),
-						n(-16, {	-- Rares (Legacy)
-							un(43, n(766, {	-- Tangled Horror
-								i(5608),	-- Living Cowl
-							})),
-						}),
-					},
 				}),
 			},
 			["lvl"] = 40,	
