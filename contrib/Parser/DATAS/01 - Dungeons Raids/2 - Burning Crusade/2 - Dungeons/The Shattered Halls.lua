@@ -67,7 +67,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				{	-- Turning the Tide
 					["questID"] = 29654,	-- Turning the Tide
 					["qg"] = 54933,			-- Advance Scout Chadwick
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25806),	-- Nethekurse's Rod of Torment
 						i(25803),	-- Medallion of the Valiant Guardian

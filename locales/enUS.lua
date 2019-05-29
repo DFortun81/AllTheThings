@@ -1345,7 +1345,7 @@ AllTheThings.L = {
 		[-657] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
 		
 -- PvP Set Names
-		[-658] = "Combatant Set",													-- Combatant PvP Gear
+		[-658] = "Aspirant / Combatant Set",										-- Aspirant (WoD) / Combatant (Legion) PvP Gear
 		[-659] = "Gladiator Set",													-- Gladiator PvP Gear
 		[-660] = "Elite Set",														-- Elite PvP Gear
 		
