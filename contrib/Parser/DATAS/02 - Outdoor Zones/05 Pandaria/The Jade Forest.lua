@@ -2793,6 +2793,18 @@ _.Zones =
 								59772,	-- Smoky Porcupine
 							},
 						}),
+						i(87522, {	-- Star-Carrier Bracers
+							["crs"] = {
+								55461,	-- Grookin Reinforcement
+								55470,	-- Hozen Groundpounder
+								66424,	-- Sha Harbinger
+								66668,	-- Sha-Infested Prowler
+								61760,	-- Slingtail Recruit
+								56650,	-- Stoneskin Basilisk
+								66272,	-- Twinspire Deathguard
+								66273,	-- Twinspire Demolitionist
+							},
+						}),
 						i(120138, {	-- Tome of Polymorph: Monkey
 							["collectible"] = false,
 							["crs"] = {

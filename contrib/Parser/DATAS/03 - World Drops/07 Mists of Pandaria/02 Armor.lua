@@ -46,7 +46,6 @@ _.WorldDrops =
 					i(90576),	-- Spaulders of the Scorned
 				}),
 				n(-322, {	-- Back
-					i(116693),	-- Coldsinger Cloak
 					i(82017),	-- Intricate Cloak
 					i(82061),	-- Gemmed Cloak
 					i(82116),	-- Shamanic Cloak
@@ -74,32 +73,33 @@ _.WorldDrops =
 					i(90587),	-- Natli's Fireheart Robe
 				}),
 				n(-326, {	-- Wrist
-					i(86183),	-- Shining Cicada Bracers
-					i(86184),	-- Luminescent Firefly Wristguards
-					i(86185),	-- Smooth Beetle Wristbands
-					i(86186),	-- Gleaming Moth Cuffs
-					i(86187),	-- Pearlescent Butterfly Wristbands
-					i(86188),	-- Inlaid Cricket Bracers
-					i(86189),	-- Jagged Hornet Bracers
-					i(86190),	-- Serrated Wasp Bracers
-					i(86191),	-- Plated Locust Bracers
-					i(86192),	-- Darting Damselfly Cuffs
-					i(86841),	-- Shining Cicada Bracers
-					i(86842),	-- Luminescent Firefly Wristguards
-					i(86843),	-- Smooth Beetle Wristbands
-					i(86844),	-- Gleaming Moth Cuffs
-					i(86845),	-- Pearlescent Butterfly Wristbands
-					i(86846),	-- Inlaid Cricket Bracers
-					i(86847),	-- Jagged Hornet Bracers
-					i(86848),	-- Serrated Wasp Bracers
-					i(86849),	-- Plated Locust Bracers
-					i(86850),	-- Darting Damselfly Cuffs
 					i(87517),	-- Bracers of Rolling Fields
 					i(87518),	-- Bracers of the Neux Dawn
 					i(87519),	-- Misty Morning Wristguards
 					i(87520),	-- Glowing Wind Bracers
 					i(87521),	-- Zoid's Scorched Bracers
-					i(87522),	-- Star-Carrier Bracers
+					-- [removed non-world drops below]
+					--i(86192),	-- Darting Damselfly Cuffs
+					--i(86850),	-- Darting Damselfly Cuffs
+					--i(86186),	-- Gleaming Moth Cuffs
+					--i(86844),	-- Gleaming Moth Cuffs
+					--i(86188),	-- Inlaid Cricket Bracers
+					--i(86846),	-- Inlaid Cricket Bracers
+					--i(86189),	-- Jagged Hornet Bracers
+					--i(86847),	-- Jagged Hornet Bracers
+					--i(86184),	-- Luminescent Firefly Wristguards
+					--i(86842),	-- Luminescent Firefly Wristguards
+					--i(86187),	-- Pearlescent Butterfly Wristbands
+					--i(86845),	-- Pearlescent Butterfly Wristbands
+					--i(86191),	-- Plated Locust Bracers
+					--i(86849),	-- Plated Locust Bracers
+					--i(86190),	-- Serrated Wasp Bracers
+					--i(86848),	-- Serrated Wasp Bracers
+					--i(86183),	-- Shining Cicada Bracers
+					--i(86841),	-- Shining Cicada Bracers
+					--i(86185),	-- Smooth Beetle Wristbands
+					--i(86843),	-- Smooth Beetle Wristbands
+					--i(87522),	-- Star-Carrier Bracers
 				}),
 				n(-327, {	-- Hands
 					i(87443),	-- Syrio's Gloves of Tutelage
@@ -131,15 +131,16 @@ _.WorldDrops =
 					i(90570),	-- Legguards of Sleeting Arrows
 					i(90572),	-- Kilt of Pandaren Promises
 					i(90579),	-- Legplates of Durable Dreams
-					i(90717),	-- Qu'nas' Apocryphal Legplates
-					i(90718),	-- Torik-Ethis' Bloodied Legguards
-					i(90719),	-- Go-Kan's Golden Trousers
-					i(90720),	-- Silent Leggings of the Ghostpaw
-					i(90721),	-- Cournith Waterstrider's Silken Finery
-					i(90722),	-- Torik-Ethis' Gilded Legplates
-					i(90723),	-- Arness's Scaled Leggings
-					i(90724),	-- Spriggin's Sproggin' Leggin'
-					i(90725),	-- Gaarn's Leggings of Infestation
+					-- [removed non-world drops below]
+					--i(90723),	-- Arness's Scaled Leggings
+					--i(90721),	-- Cournith Waterstrider's Silken Finery
+					--i(90725),	-- Gaarn's Leggings of Infestation
+					--i(90719),	-- Go-Kan's Golden Trousers
+					--i(90717),	-- Qu'nas' Apocryphal Legplates
+					--i(90720),	-- Silent Leggings of the Ghostpaw
+					--i(90724),	-- Spriggin's Sproggin' Leggin'
+					--i(90718),	-- Torik-Ethis' Bloodied Legguards
+					--i(90722),	-- Torik-Ethis' Gilded Legplates
 				}),
 				n(-330, {	-- Feet
 					i(87432),	-- Tesslah's Ticking Treads
