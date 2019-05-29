@@ -224,18 +224,6 @@ _.Zones =
 								["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
 							},
 						}),
-						n(73157, {	-- Rock Moss
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
-								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 18,		-- Golden Moss [Criteria]
-								["itemID"] = 104313,		-- Golden Moss [Item]
-							},
-						}),
 						n(73018, {	-- Spectral Brewmaster
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]

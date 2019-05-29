@@ -448,6 +448,18 @@ _.Zones =
 								["itemID"] = 104219,		-- Technique: Glyph of Skeleton
 							},
 						}),
+						n(73157, {	-- Rock Moss
+							{
+								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
+								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
+							},
+							{
+								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
+								["criteriaID"] = 18,		-- Golden Moss [Criteria]
+								["itemID"] = 104313,		-- Golden Moss [Item]
+							},
+						}),
 						{	-- Spelurk*
 							["npcID"] = 71864,	-- Spelurk
 							["questID"] = 32960,	-- Says Cave-In, but should be KillID
