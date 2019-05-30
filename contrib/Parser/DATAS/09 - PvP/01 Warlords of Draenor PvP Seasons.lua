@@ -441,26 +441,9 @@ _.PVP =
 			un(2, i(120355)),	-- Silver Strongbox
 			un(2, i(120354)),	-- Gold Strongbox
 			i(134705),	-- Surging Chain Leggings
-			i(126730),	-- Warmongering Aspirant's Accolade of Conquest
-			i(126253),	-- Warmongering Aspirant's Accolade of Conquest
-			i(126731),	-- Warmongering Aspirant's Accolade of Dominance
-			i(126734),	-- Warmongering Aspirant's Accolade of Endurance
-			i(126733),	-- Warmongering Aspirant's Accolade of Meditation
-			i(126732),	-- Warmongering Aspirant's Accolade of Victory
-			i(126694),	-- Warmongering Aspirant's Armbands of Prowess
-			i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-			i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-			i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
-			i(126683),	-- Warmongering Aspirant's Band of Contemplation
-			i(126680),	-- Warmongering Aspirant's Band of Cruelty
-			i(126203),	-- Warmongering Aspirant's Band of Cruelty
-			i(126682),	-- Warmongering Aspirant's Band of Meditation
-			i(126681),	-- Warmongering Aspirant's Band of Prowess
 			i(126684),	-- Warmongering Aspirant's Belt of Prowess
 			i(126686),	-- Warmongering Aspirant's Bindings of Cruelty
 			i(126685),	-- Warmongering Aspirant's Boots of Cruelty
-			i(126654),	-- Warmongering Aspirant's Cape of Cruelty
-			i(126177),	-- Warmongering Aspirant's Cape of Cruelty
 			i(126658),	-- Warmongering Aspirant's Cord of Cruelty
 			i(126660),	-- Warmongering Aspirant's Cuffs of Prowess
 			i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -478,11 +461,6 @@ _.PVP =
 			i(126209),	-- Warmongering Aspirant's Bindings of Cruelty
 			i(126208),	-- Warmongering Aspirant's Boots of Cruelty
 			i(126177),	-- Warmongering Aspirant's Cape of Cruelty
-			i(126194),	-- Warmongering Aspirant's Chain Armor
-			i(126195),	-- Warmongering Aspirant's Chain Gauntlets
-			i(126196),	-- Warmongering Aspirant's Chain Helm
-			i(126197),	-- Warmongering Aspirant's Chain Leggings
-			i(126198),	-- Warmongering Aspirant's Chain Spaulders
 			i(126247),	-- Warmongering Aspirant's Choker of Cruelty
 			i(126250),	-- Warmongering Aspirant's Choker of Endurance
 			i(126246),	-- Warmongering Aspirant's Cloak of Cruelty
@@ -531,11 +509,6 @@ _.PVP =
 			i(126233),	-- Warmongering Aspirant's Satin Leggings
 			i(126235),	-- Warmongering Aspirant's Satin Mantle
 			i(126234),	-- Warmongering Aspirant's Satin Robe
-			i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
-			i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
-			i(126225),	-- Warmongering Aspirant's Scaled Helm
-			i(126226),	-- Warmongering Aspirant's Scaled Legguards
-			i(126227),	-- Warmongering Aspirant's Scaled Shoulders
 			i(127120),	-- Warmongering Aspirant's Signet of Accuracy
 			i(126248),	-- Warmongering Aspirant's Signet of Cruelty
 			i(126251),	-- Warmongering Aspirant's Signet of Dedication
@@ -570,6 +543,11 @@ _.PVP =
 					i(126196),	-- Warmongering Aspirant's Chain Helm
 					i(126674),	-- Warmongering Aspirant's Chain Leggings
 					i(126675),	-- Warmongering Aspirant's Chain Spaulders
+					i(126194),	-- Warmongering Aspirant's Chain Armor
+					i(126195),	-- Warmongering Aspirant's Chain Gauntlets
+					i(126196),	-- Warmongering Aspirant's Chain Helm
+					i(126197),	-- Warmongering Aspirant's Chain Leggings
+					i(126198),	-- Warmongering Aspirant's Chain Spaulders
 				}),
 				cl(8, {	-- Mage
 					
@@ -585,6 +563,11 @@ _.PVP =
 					i(126702),	-- Warmongering Aspirant's Scaled Helm
 					i(126703),	-- Warmongering Aspirant's Scaled Legguards
 					i(126704),	-- Warmongering Aspirant's Scaled Shoulders
+					i(126223),	-- Warmongering Aspirant's Scaled Chestpiece
+					i(126224),	-- Warmongering Aspirant's Scaled Gauntlets
+					i(126225),	-- Warmongering Aspirant's Scaled Helm
+					i(126226),	-- Warmongering Aspirant's Scaled Legguards
+					i(126227),	-- Warmongering Aspirant's Scaled Shoulders
 				}),
 				cl(5, {	-- Priest
 					i(126708),	-- Warmongering Aspirant's Satin Gloves
@@ -623,6 +606,8 @@ _.PVP =
 					i(126744),	-- Warmongering Aspirant's Plate Shoulders
 				}),
 				n(-322, {	-- Back
+					i(126654),	-- Warmongering Aspirant's Cape of Cruelty
+					i(126177),	-- Warmongering Aspirant's Cape of Cruelty
 					i(126676),	-- Warmongering Aspirant's Drape of Cruelty
 					i(126199),	-- Warmongering Aspirant's Drape of Cruelty
 					i(126677),	-- Warmongering Aspirant's Drape of Meditation
@@ -632,7 +617,10 @@ _.PVP =
 					i(126249),	-- Warmongering Aspirant's Cloak of Endurance
 				}),
 				n(-326, {	-- Wrists
-					
+					i(126694),	-- Warmongering Aspirant's Armbands of Prowess
+					i(126217),	-- Warmongering Aspirant's Armbands of Prowess
+					i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+					i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 				}),
 				n(-328, {	-- Waist
 					i(126705),	-- Warmongering Aspirant's Girdle of Cruelty
@@ -652,6 +640,11 @@ _.PVP =
 					i(126250),	-- Warmongering Aspirant's Choker of Endurance
 				}),
 				n(-385,	{	-- Finger
+					i(126683),	-- Warmongering Aspirant's Band of Contemplation
+					i(126680),	-- Warmongering Aspirant's Band of Cruelty
+					i(126203),	-- Warmongering Aspirant's Band of Cruelty
+					i(126682),	-- Warmongering Aspirant's Band of Meditation
+					i(126681),	-- Warmongering Aspirant's Band of Prowess
 					i(127121),	-- Warmongering Aspirant's Signet of Accuracy
 					i(126656),	-- Warmongering Aspirant's Ring of Cruelty
 					i(126179),	-- Warmongering Aspirant's Ring of Cruelty
@@ -665,7 +658,12 @@ _.PVP =
 					i(126252),	-- Warmongering Aspirant's Signet of Endurance
 				}),
 				n(-386,	{	-- Trinket
-					
+					i(126730),	-- Warmongering Aspirant's Accolade of Conquest
+					i(126253),	-- Warmongering Aspirant's Accolade of Conquest
+					i(126731),	-- Warmongering Aspirant's Accolade of Dominance
+					i(126734),	-- Warmongering Aspirant's Accolade of Endurance
+					i(126733),	-- Warmongering Aspirant's Accolade of Meditation
+					i(126732),	-- Warmongering Aspirant's Accolade of Victory
 				}),
 			}),
 		}),
