@@ -15,6 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 				qh(50335, {	-- Grant Me Revenge
 					["qg"] = 46409,	-- Warden Thelwater
 					["g"] = {
+						i(65989),	-- Hogger's Shiny
 						i(65915),	-- Rifle Commander's Eyepatch
 						i(65941),	-- Riot Stick
 						i(65965),	-- Shield of the Stockades
@@ -24,6 +25,7 @@ _.Instances = { tier(1, {	-- Classic
 				qa(27739,{	-- The Gnoll King
 					["qg"] = 46409,	-- Warden Thelwater
 					["g"] = {
+						i(65989),	-- Hogger's Shiny
 						i(65915),	-- Rifle Commander's Eyepatch
 						i(65941),	-- Riot Stick
 						i(65965),	-- Shield of the Stockades

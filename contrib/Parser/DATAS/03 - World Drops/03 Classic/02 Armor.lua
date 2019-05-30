@@ -802,7 +802,7 @@ _.WorldDrops =
 					i(1713),	-- Ankh of Life
 					i(16022),	-- Arcanite Dragonling
 					i(2802),	-- Blazing Emblem
-					un(7, i(5079)),	-- Cold Basilisk Eye
+					i(5079),	-- Cold Basilisk Eye
 					i(19288),	-- Darkmoon Card: Blue Dragon
 					i(19287),	-- Darkmoon Card: Heroism
 					i(19289),	-- Darkmoon Card: Maelstrom
