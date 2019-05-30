@@ -49,14 +49,14 @@ _.Zones =
 									crit(5, {	-- A Blademaster's Honor
 										q(34951),	-- They Call Him Lantresor of the Blade
 										q(34954),	-- The Blade Itself
-										q(34955, { 	-- Not Without My Honor
+										qa(34955, { 	-- Not Without My Honor
 											i(114687),	-- Beastrider Gloves
 											i(114688),	-- Plainsthunder Gauntlets
 											i(114690),	-- Stormsteppe Gauntlets
 											i(114689),	-- Windshaper Gloves
 										}),
 										q(34956),	-- Meet Me in the Cavern
-										q(34957, { 	-- Challenge of the Masters
+										qa(34957, { 	-- Challenge of the Masters
 											i(114707),	-- Beastrider Belt
 											i(114704),	-- Plainsthunder Girdle
 											i(114706),	-- Stormsteppe Belt
