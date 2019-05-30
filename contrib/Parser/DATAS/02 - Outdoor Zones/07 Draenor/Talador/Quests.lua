@@ -1061,8 +1061,8 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 						},
 						{	-- Nightmare in the Tomb
+							-- Marked alliance only on wowhead, but I was able to pick it up as horde. There is no specfic horde verion.
 							["questID"] = 33530,
-							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(112513),	-- Auchenai Keeper Treads
 								i(112514),	-- Sha'tari Deadeye Sabatons
