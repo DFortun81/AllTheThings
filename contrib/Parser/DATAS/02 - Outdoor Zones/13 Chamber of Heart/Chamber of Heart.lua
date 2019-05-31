@@ -40,7 +40,7 @@ _.Zones =
 					}),
 					n(-17, {	-- Quests
 						["groups"] = {
-							{	-- A Distrubance Beneath the Earth
+							{	-- A Disturbance Beneath the Earth
 								["questID"] = 55374,
 								["qg"] = 152194,	-- MOTHER
 								["coord"] = { 48.1, 72.2, 1473 },
@@ -51,13 +51,19 @@ _.Zones =
 								["qg"] = 152206,	-- Magni Bronzebeard
 								["coord"] = { 50.0, 59.1, 1355 },
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 55618,	-- The Heart Forge
+								["sourceQuest"] = 57010,	-- Harnessing the Power
 							},
 							{	-- Back Out to Sea
 								["questID"] = 56161,
 								["qg"] = 152206,	-- Magni Bronzebeard
 								["coord"] = { 50.0, 59.1, 1473 },
 								["races"] = HORDE_ONLY,
+								["sourceQuest"] = 57010,	-- Harnessing the Power
+							},
+							{	-- Harnessing the Power
+								["questID"] = 57010,
+								["qg"] = 152194,	-- MOTHER
+								["coord"] = { 48.0, 72.2, 1473 },
 								["sourceQuest"] = 55618,	-- The Heart Forge
 							},
 							q(52428, {	-- Infusing the Heart		

@@ -113,6 +113,11 @@ _.Zones =
 					["coord"] = { 48.4, 62.3, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
+					["g"] = {
+						i(163456),	-- Honorbound Centurion's Greathelm
+						i(163453),	-- Honorbound Centurion's Shoulderplates
+						i(163459),	-- Honorbound Centurion's Breastplate
+					},
 				},
 				{	-- An Abyssal Opportunity
 					["questID"] = 56347,
@@ -157,6 +162,40 @@ _.Zones =
 						},
 					},
 				},
+				{	-- Becoming a Friend
+					["questID"] = 57005,
+					["qg"] = 154002,	-- Atolia Seapearl
+					["coord"] = { 51.0, 65.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save a Friend
+					["g"] = {
+						currency(1721),	-- Prismatic Manapearls
+					},
+				},
+				{	-- Bounty: A Few Coral Ancients
+					["questID"] = 55821,
+					["qg"] = 153512,	-- Finder Pruc
+					["coord"] = { 49.1, 62.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Bounty: Elite Naga Forces
+					["questID"] = 55836,
+					["qg"] = 151614,	-- Nevin Tideheart
+					["coord"] = { 50.4, 66.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Bounty: More Fathom Rays
+					["questID"] = 55834,
+					["qg"] = 153772,	-- Lina Bluegill
+					["coord"] = { 47.4, 63.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Bounty Board
 					["objectID"] = 326140,
 					["coord"] = { 39.1, 54.1, 1355 },
@@ -182,6 +221,7 @@ _.Zones =
 						{	-- Wanted: Commander Sarj'eth
 							["questID"] = 56223,
 							["isDaily"] = true,
+							["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your follower.",
 						},
 						{	-- Wanted: Lady Narjiss
 							["questID"] = 56225,
@@ -198,6 +238,9 @@ _.Zones =
 					["g"] = {
 						{	-- What Will It Mine?
 							["questID"] = 55531,
+							["g"] = {
+								currency(1721),	-- Prismatic Manapearl
+							},
 						},
 					},
 				},
@@ -212,6 +255,7 @@ _.Zones =
 						{	-- Ancient Technology
 							["questID"] = 56354,
 							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55500,	-- Save a Friend
 						},
 					},
 				},
@@ -271,6 +315,9 @@ _.Zones =
 					["g"] = {
 						{	-- What Will It Lure?
 							["questID"] = 55602,
+							["g"] = {
+								currency(1721),	-- Prismatic Manapearls
+							},
 						},
 					},
 				},
@@ -295,6 +342,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
 				},
+				{	-- Create Your Own Strength
+					["questID"] = 57003,
+					["qg"] = 151848,	-- Lor'themar Theron
+					["coord"] = { 48.5, 62.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55481,	-- Scouting the Palace
+				},
 				{	-- Dark Tides
 					["questID"] = 56642,
 					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -313,6 +367,11 @@ _.Zones =
 					["coord"] = { 41.9, 80.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
+					["g"] = {
+						i(170275),	-- Honorbound Warmaul
+						i(163874),	-- Honorbound Decapitator
+						i(163880),	-- Honorbound Gladius
+					},
 				},
 				{	-- Descent
 					["questID"] = 54969,
@@ -380,12 +439,31 @@ _.Zones =
 						i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 					},
 				},
+				{	-- Drowning the Alliance
+					["questID"] = 56433,
+					["qg"] = 154652,	-- Dazzerian
+					["coord"] = { 48.8, 60.6, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 57010,	-- Harnessing the Power
+				},
 				{	-- Elemental Fury
 					["questID"] = 55362,
 					["qg"] = 151741,	-- Apprentice Odari
 					["coord"] = { 43.5, 49.7, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55361,	-- The Lost Shaman
+				},
+				{	-- Empty Cask
+					["objectID"] = 325869,
+					["coord"] = { 59.5, 41.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Making Kelpberry Wine
+							["questID"] = 55638,
+							["isDaily"] = true,
+							["sourceQuest"] = 55500,	-- Save A Friend
+						},
+					},
 				},
 				{	-- Enchanted Lock
 					["objectID"] = 327592,
@@ -421,11 +499,11 @@ _.Zones =
 					},
 					["coords"] = {
 						{ 40.1, 52.5, 1355 },	-- Alliance
-						{ 48.6, 61.3, 1355 },	-- Horde
+						{ 48.2, 62.4, 1355 },	-- Horde
 					},
 					["sourceQuests"] = {
 						54972,	-- A Way Home (Alliance)
-						55053,	-- A Way Home (Horde)
+						55053,	-- A Way Home (Horde) -- confirmed 29.may
 					},
 				},
 				{	-- Extra Shiny
@@ -434,7 +512,7 @@ _.Zones =
 					["coord"] = { 60.8, 30.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["sourceQuest"] = 55500,	-- Save a Friend
 				},
 				{	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 					["questID"] = 55661,
@@ -467,6 +545,9 @@ _.Zones =
 					["g"] = {
 						{	-- What Will It Grow?
 							["questID"] = 55426,
+							["g"] = {
+								currency(1721),	-- Prismatic Manapearl
+							},
 						},
 					},
 				},
@@ -503,6 +584,10 @@ _.Zones =
 					["questID"] = 56095,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
+					["sourceQuests"] = {
+						56156,	-- A Tempered Blade
+						55500,	-- Save A Friend
+					},
 				},
 				{	-- Let the Residue Lead You
 					["questID"] = 55868,
@@ -526,16 +611,28 @@ _.Zones =
 					["coord"] = { 60.6, 33.2, 1355 },
 					["g"] = {
 						{	-- The Laboratory of Mardivas
-							["questID"] = 55121, -- 55145, 56481, 56725, 56891, 56982 also popped
+							["questID"] = 55121, -- 55145, 56481, 56725, 56891, 56892 also popped, 2nd run is 56428,56476,56724,56891 and 56892
 							["isWeekly"] = true,
+							["sourceQuests"] = {
+								56156,	-- A Tempered Blade
+								55500,	-- Save A Friend
+							},
 							["g"] = {
 								currency(1721),	-- Prismatic Manapearl x5
 							},
 						},
 					},
 				},
+				{	-- Misdirection
+					["questID"] = 55767, -- also triggered 56690, 56695
+					["qg"] = 152985,	-- Dani Bluegill
+					["coord"] = { 31.2, 32.0, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					--["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
+				},
 				{	-- No Backs
-					["questID"] = 55529,
+					["questID"] = 55529, -- 55604 - probably the alliance questID
 					["qg"] = 152084,	-- Mrrl
 					["coord"] = { 46.9, 61.4, 1355 },
 					["races"] = HORDE_ONLY,
@@ -545,6 +642,7 @@ _.Zones =
 							["achievementID"] = 13635,
 							["criteriaID"] = 7,
 						},
+						i(168093),	-- Grimy Manapearl Bracelet
 					},
 				},
 				{	-- Old Allies
@@ -597,7 +695,42 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55361,	-- The Lost Shaman
 				},
+				{	-- Requisition: A Few Deepcoral Buds
+					["questID"] = 55724,
+					["qg"] = 153772,	-- Lina Bluegill
+					["coord"] = { 47.4, 63.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Requisition: More Starfish
+					["questID"] = 55785,
+					["qg"] = 151633,	-- Karn Deepweld
+					["coord"] = { 49.3, 61.5, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Requisition: We Need It All
+					["questID"] = 55801,
+					["qg"] = 151618,	-- Asme Seapearl
+					["coord"] = { 50.9, 65.7, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Rumors of Mechagon
+					["questID"] = 57024,
+					["qg"] = 156187,	-- Disgruntled Laborer
+					["coord"] = { 48.4, 60.6, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55500,	-- Save A Friend,
+					["isBreadcrumb"] = true,
+				},
+				--[[ PTR build 30613 reworked all the dailies so they aren't in a single object anymore.
+					 Leaving this hear until the quests are rediscovered from their new sources
 				{	-- Sack of Tasks (rewards appear to change over time)
+					["u"] = 43,
 					["objectID"] = 327427,
 					["coords"] = {
 						{ 38.0, 55.6, 1355 },	-- Alliance
@@ -608,10 +741,6 @@ _.Zones =
 						56179,	-- The Needs of the People (Horde)
 					},
 					["g"] = {
-						{	-- Bounty: A Few Coral Ancients
-							["questID"] = 55821,
-							["isDaily"] = true,
-						},
 						{	-- Bounty: A Few Crabs
 							["questID"] = 55823,
 							["isDaily"] = true,
@@ -642,10 +771,6 @@ _.Zones =
 						},
 						{	-- Bounty: Dangerous Creatures
 							["questID"] = 55837,
-							["isDaily"] = true,
-						},
-						{	-- Bounty: Elite Naga Forces
-							["questID"] = 55836,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: More Coral Ancients
@@ -682,10 +807,6 @@ _.Zones =
 						},
 						{	-- Requisition: A Few Cone Shells
 							["questID"] = 55726,
-							["isDaily"] = true,
-						},
-						{	-- Requisition: A Few Deepcoral Buds
-							["questID"] = 55724,
 							["isDaily"] = true,
 						},
 						{	-- Requisition: A Few Flotsam
@@ -728,10 +849,6 @@ _.Zones =
 							["questID"] = 55791,
 							["isDaily"] = true,
 						},
-						{	-- Requisition: More Starfish
-							["questID"] = 55785,
-							["isDaily"] = true,
-						},
 						{	-- Requisition: More Seaweek
 							["questID"] = 55786,
 							["isDaily"] = true,
@@ -742,6 +859,7 @@ _.Zones =
 						},
 					},
 				},
+				]]--
 				{	-- Sating Snapdragons
 					["questID"] = 55967,
 					["qg"] = 153936,	-- Overseer Hajeer
@@ -749,12 +867,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55866,	-- Scouting Undercover
 				},
-				{	-- Save a Friend (unlocks the rest of the zone?)
+				{	-- Save a Friend
 					["questID"] = 55500,
 					["qg"] = 152047,	-- Poen Gillbrack
 					["coord"] = { 38.8, 42.4, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 152108,	-- Scouting the Pens
+					["description"] = "Unlocks the rest of the zone and opens up World Quests.", -- (spellID 304906)
 				},
 				{	-- Saving Corin
 					["questID"] = 56321,
@@ -769,7 +888,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						56162,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
-						55618,	-- The Heart Forge
+						57010,	-- Harnessing the Power
+					},
+					["g"] = {
+						i(169482),	-- Benthic Leggings
+						i(169483),	-- Benthic Treads
+						i(169485),	-- Benthic Gauntlets
+						currency(1721),	-- Prismatic Manapearls
 					},
 				},
 				{	-- Scouting the Palace
@@ -779,7 +904,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						56161,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
-						55618,	-- The Heart Forge
+						57010,	-- Harnessing the Power
+					},
+					["g"] = {
+						i(169482),	-- Benthic Leggings
+						i(169483),	-- Benthic Treads
+						i(169485),	-- Benthic Gauntlets
+						currency(1721),	-- Prismatic Manapearls
 					},
 				},
 				{	-- Scouting the Pens
@@ -869,6 +1000,10 @@ _.Zones =
 					["questID"] = 56118,
 					["qg"] = 154143,	-- Collector Kojo
 					["coord"] = { 66.4, 47.3, 1355 },
+					["sourceQuests"] = {
+						56156,	-- A Tempered Blade
+						55500,	-- Save A Friend
+					},
 				},
 				{	-- Speak with the Dead
 					["questID"] = 55488,
@@ -1027,6 +1162,14 @@ _.Zones =
 					["coord"] = { 79.7, 44.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56314,	-- The Warbringer
+				},
+				{	-- To Soar Like a Ray
+					["questID"] = 55883,
+					["qg"] = 153321,	-- Ian Langill
+					["coord"] = { 52.7, 52.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					--["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
 				},
 				{	-- To Zin-Azshari
 					["questID"] = 55469,

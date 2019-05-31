@@ -12,6 +12,8 @@ _.Zones =
 					["description"] = "Patrols in stealth along the path",
 					["isDaily"] = true,
 					["coords"] = {
+						{ 52.4, 41.8, 1355 },	-- coord as of build 30613
+						--[[	-- old ptr build coords. Verify if these are even still valid
 						{ 62.1, 50.3, 1355 },
 						{ 60.9, 43.6, 1355 },
 						{ 60.1, 42.8, 1355 },
@@ -21,6 +23,7 @@ _.Zones =
 						{ 59.0, 53.7, 1355 },
 						{ 60.8, 51.7, 1355 },
 						{ 61.8, 47.7, 1355 },
+						]]--
 					},
 				}),
 				n(152416, {	-- Allseer Oma'kil
@@ -68,6 +71,7 @@ _.Zones =
 				n(152464, {	-- Caverndark Terror
 					["allianceQuestID"] = 56283,
 					["hordeQuestID"] = 56600,
+					["coord"] = { 55.6, 26.9, 1355 },
 					["isDaily"] = true,
 					["g"] = {
 						i(169356),	-- Caverndark Nightmare
@@ -80,10 +84,16 @@ _.Zones =
 					["isDaily"] = true,
 					["description"] = "Inside a hidden cave beneath the waterfall.",
 				}),
+				n(155811, {	-- Commander Minzera -- part of the Nazjtar commander spawns
+					["questID"] = 56882,
+					["coord"] = { 33.4, 30.0, 1355 },
+					["isDaily"] = true,
+				}),
 				n(152756, {	-- Daggertooth Frenzy
 					["allianceQuestID"] = 56612,
 					["hordeQuestID"] = 56271,
-					["coord"] = { 71.0, 33.3, 1355 },
+					--["coord"] = { 71.0, 33.3, 1355 }, -- coords from previous PTR build. confirm if still valid
+					["coord"] = { 26.3, 29.0, 1355 },
 					["isDaily"] = true,
 					["g"] = {
 						i(169361),	-- Daggertooth Frenzy
@@ -151,13 +161,17 @@ _.Zones =
 				n(152681, {	-- Prince Typhonus
 					["allianceQuestID"] = 56594,
 					["hordeQuestID"] = 56289,
-					["coord"] = { 44.2, 70.8, 1355 },
+					--["coord"] = { 44.2, 70.8, 1355 }, -- old coords. May not be correct anymore
+					["coord"] = { 43.2, 88.0, 1355 },
 					["isDaily"] = true,
 					["g"] = {
 						i(169367),	-- Seafury
 					},
 				}),
 				n(152682, {	-- Prince Vortran
+					["allianceQuestID"] = 56290,
+					["hordeQuestID"] = 56593,
+					["coord"] = { 43.0, 75.6, 1355 },
 					["isDaily"] = true,
 					["g"] = {
 						i(169368),	-- Stormwrath
@@ -179,6 +193,7 @@ _.Zones =
 					["allianceQuestID"] = 56606,
 					["hordeQuestID"] = 56277,
 					["isDaily"] = true,
+					--[[ -- now spawns all over the map multiple times at once. Not sure if this is intentional or not but these coords don't apply anymore
 					["coords"] = {
 						{ 67.2, 52.2, 1355 },
 						{ 64.4, 55.0, 1355 },
@@ -187,6 +202,7 @@ _.Zones =
 						{ 84.5, 40.7, 1355 }, -- second time on land
 						{ 74.5, 44.0, 1355 }, -- first time finding him. Possibly spawns in multiple places
 					},
+					]]--
 					["g"] = {
 						i(169350),	-- Glittering Diamondshell
 						i(169351),	-- Sandclaw Nestseeker
@@ -217,7 +233,8 @@ _.Zones =
 				n(153658, {	-- Shiz'narasz the Consumer
 					["allianceQuestID"] = 56587,
 					["hordeQuestID"] = 56296,
-					["coord"] = { 38.9, 9.4, 1355 },
+					--["coord"] = { 38.9, 9.4, 1355 },	-- from previous PTR build. Confirm if still valid
+					["coord"] = { 41.3, 15.9, 1355 },
 					["isDaily"] = true,
 				}),
 				n(152359, {	-- Siltstalker the Packmother

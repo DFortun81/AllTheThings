@@ -31,6 +31,10 @@ _.Zones =
 						["questID"] = 55888,
 						["isWQ"] = 120,
 					},
+					{	-- Champion Vyz'olgo the Mind-Taker
+						["questID"] = 55890,
+						["isWQ"] = 120,
+					},
 					{	-- Deepcoil Experiments
 						["questID"] = 55973,
 						["isWQ"] = 120,
@@ -180,6 +184,10 @@ _.Zones =
 								["criteriaID"] = 12,
 							},
 						},
+					},
+					{	-- Starseeker of the Shirakess
+						["questID"] = 55899,
+						["isWQ"] = 120,
 					},
 					{	-- Szun, Breaker of Slaves
 						["questID"] = 55897,

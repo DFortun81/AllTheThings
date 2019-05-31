@@ -20,6 +20,7 @@ _.Zones =
 				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
 				869,	-- Highmountain (legion invasion ship 1)
 				870,	-- Highmountain (legion invasion ship 2)
+				1472,	-- The Dragon's Spine (8.2 Heart Forge unlock scenario)
 			},
 			["g"] = {
 				n(-10067, {	-- Artifacts
