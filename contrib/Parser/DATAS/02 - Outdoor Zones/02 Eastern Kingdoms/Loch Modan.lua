@@ -789,23 +789,8 @@ _.Zones =
 					}),
 				}),
 				n(0,   {	-- Zone Drop
-					i(2283, {	-- Rat Cloth Belt
-						["crs"] = {
-							1177,	-- Tunnel Rat Surveyor
-						},
-					}),
 					i(2700, {	-- Recipe: Succulent Pork Ribs
 						["description"] = "Can drop from any mob in the zone, would recommend farming the crocolisks.",
-					}),
-					i(2281, {	-- Rodentia Flint Axe
-						["crs"] = {
-							1176,	-- Tunnel Rat Forager
-						},
-					}),
-					i(2267, {	-- Stonesplinter Axe
-						["crs"] = {
-							1197,	-- Stonesplinter Shaman
-						},
 					}),
 				}),
 				n(-40, {	-- Legacy
@@ -908,10 +893,13 @@ _.Zones =
 								un(7, i(2266)),	-- Stonesplinter Dagger
 							})),
 							un(43, n(1163, { 	-- Stonesplinter Skullthumper	
-								i(2265),	-- Stonesplinter Axe NOTE: Item now drops from Stonesplinter Shaman (1197)
+								un(7, i(2265)),	-- Stonesplinter Axe (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
 							})),
 							un(43, n(1202, { 	-- Tunnel Rat Kobold
-								i(2281),	 -- Rodentia Flint Axe NOTE: Item now drops from Tunnel Rat Forager (1176)
+								un(7, i(2281)),	-- Rodentia Flint Axe (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
+							})),
+							un(43, n(1177, { 	-- Tunnel Rat Surveyor
+								un(7, i(2283)),	-- Rat CLoth Belt (NOTE: No indication that these are dropping again, but if they do we can set them back to obtainable.)
 							})),
 						}),
 					},
