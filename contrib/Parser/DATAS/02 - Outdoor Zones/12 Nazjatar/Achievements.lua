@@ -43,7 +43,7 @@ _.Zones =
 						["questID"] = 56992,
 						["coord"] = { 73.6, 25.9, 1355 },
 					},
-					{	-- Figurine 4
+					{	-- Figurine 4 -- possibly moved/phased. This figure wasn't at the location prior to completing the first phase of the zone
 						["questID"] = 56990,
 						["coord"] = { 58.2, 22.0, 1355 },
 						["description"] = "In an underwater cave.",

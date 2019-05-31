@@ -69,7 +69,7 @@ _.Zones =
 					["questID"] = 56777,
 					["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "Available when your bodyguard hits lvl 5",
+					["description"] = "Offered every time your follower gains a rank.",
 					["g"] = {
 						i(169903),	-- Nazjatar Survival Pack
 					},
@@ -78,7 +78,7 @@ _.Zones =
 					["questID"] = 56778,
 					["qg"] = 150202,	-- Waveblade Hunter (Hunter Akana)
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "Available when your bodyguard hits lvl 5",
+					["description"] = "Available when your bodyguard hits rank 5",
 				},
 				{	-- A Safer Place
 					["questID"] = 55530,
@@ -138,6 +138,7 @@ _.Zones =
 					["qg"] = 149904,	-- Neri Sharpfin
 					["coord"] = { 50.2, 64.9, 1355 },
 					["races"] = HORDE_ONLY,
+					["description"] = "Offered every time your follower gains a rank.",
 					["g"] = {
 						i(169903),	-- Nazjatar Survival Pack
 					},
@@ -229,6 +230,14 @@ _.Zones =
 						},
 						i(170075),	-- Recipe: Unagi Skewer
 					},
+				},
+				{	-- Break a Few Eggs
+					["questID"] = 55986, -- also popped 56370. alliance daily questID or flag?
+					["qg"] = 153684,	-- Caitfin Gills
+					["coord"] = { 70.2, 23.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 				},
 				{	-- Brinestone Pickaxe -- possibly drops from any rare?
 					["itemID"] = 168081,
@@ -473,21 +482,29 @@ _.Zones =
 							["questID"] = 56246,
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 56243,	-- Diaries of the Dead
+							["description"] = "Match 3 purple runes.",
 						},
 						{	-- Enchanted Lock
-							["questID"] = 56245, -- also completed 56243, 56246
+							["questID"] = 56245,
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56244,	-- Diaries of the Dead
+							["description"] = "Match 3 purple runes.",
 						},
-						{	-- Treasure Tale
+						{	-- Treasure Tale -- unlocks treasure world quests
 							["questID"] = 56247,
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 26246,	-- Enchanted Lock
+							["g"] = {
+								spell(305101),	-- Curios of Nazjatar
+							},
 						},
 						{	-- Treasure Tale
 							["questID"] = 56248,
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56245,	-- Enchanted Lock
+							["g"] = {
+								spell(305101),	-- Curios of Nazjatar
+							},
 						},
 					},
 				},
@@ -657,6 +674,9 @@ _.Zones =
 					["qg"] = 154601,	-- Kelya Moonfall
 					["coord"] = { 80.2, 31.8, 1355 },
 					["sourceQuest"] = 154514,	-- Saving Corin
+					["g"] = {
+						spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
+					},
 				},
 				{	-- Preserved Clues
 					["questID"] = 56241,
@@ -1177,9 +1197,6 @@ _.Zones =
 					["coord"] = { 48.5, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56236,	-- Down But Not Out
-					["g"] = {
-						spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
-					},
 				},
 				{	-- Turn the Scale
 					["questID"] = 56152,

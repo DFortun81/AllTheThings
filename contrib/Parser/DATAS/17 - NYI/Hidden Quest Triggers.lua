@@ -50,4 +50,19 @@ _.NeverImplemented =
 	{	-- Triggers after completing the Glowing Arcane Trunk minigame in Zanj'ir Terrace (37.2, 19.1)
 		["questID"] = 55999,
 	},
+	{	-- Triggers after completing the Glowing Arcane Trunk minigame in Azsh'ari Terrace (64.1, 28.5)
+		["questID"] = 55996,
+	},
+	{	-- Triggers after completing the Glowing Arcane Trunk minigame in Shirakess Repository (55.8, 14.1)
+		["questID"] = 55998,
+	},
+	{	-- Triggers after completing the Glowing Arcane Trunk minigame in Coldlight Cavern (61.4, 22.8)
+		["questID"] = 56359,
+	},
+	{	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
+		["questID"] = 56663,
+	},
+	{	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
+		["questID"] = 56673,
+	},
 };

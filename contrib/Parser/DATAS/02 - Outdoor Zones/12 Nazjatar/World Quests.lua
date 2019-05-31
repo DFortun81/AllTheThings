@@ -68,6 +68,16 @@ _.Zones =
 						["isWQ"] = 120,
 					},
 					{	-- Leylocked Chest
+						["questID"] = 56022,
+						["isWQ"] = 120,
+						["g"] = {
+							{	-- Puzzle Performer (Hard Runelocked Chest: Yellow)
+								["achievementID"] = 13764,
+								["criteriaID"] = 4,
+							},
+						},
+					},
+					{	-- Leylocked Chest
 						["questID"] = 56023,
 						["isWQ"] = 120,
 						["g"] = {

@@ -47,15 +47,15 @@ _.Zones =
 						["questID"] = 55957,
 						["coord"] = { 37.9, 60.5, 1355 },
 					}),
-					o(326408, {	-- Arcane Chest -- confirmed
+					o(326408, {	-- Arcane Chest
 						["questID"] = 55941,
 						["coord"] = { 73.2, 35.8, 1355 },
 					}),
-					o(326409, {	-- Arcane Chest -- confirmed
+					o(326409, {	-- Arcane Chest
 						["questID"] = 55942,
 						["coord"] = { 79.5, 27.2, 1355 },
 					}),
-					o(326410, {	-- Arcane Chest -- confirmed
+					o(326410, {	-- Arcane Chest
 						["questID"] = 55939,
 						["coord"] = { 80.4, 29.8, 1355 },
 					}),
@@ -63,7 +63,7 @@ _.Zones =
 						["questID"] = 55947,
 						["coord"] = { 44.7, 48.9, 1355 },
 					}),
-					o(326412, {	-- Arcane Chest -- confirmed
+					o(326412, {	-- Arcane Chest
 						["questID"] = 55946,
 						["coord"] = { 58.0, 35.0, 1355 },
 						["description"] = "In an underwater cave.",
@@ -76,7 +76,7 @@ _.Zones =
 						},
 						["description"] = "At the back of a cave.",
 					}),
-					o(326414, {	-- Arcane Chest -- confirmed
+					o(326414, {	-- Arcane Chest
 						["questID"] = 55940,
 						["coord"] = { 74.8, 53.2, 1355 },
 					}),
@@ -96,17 +96,17 @@ _.Zones =
 						["questID"] = 56912, -- 56975 also triggered while on alliance
 						["coord"] = { 24.8, 35.2, 1355 },
 					}),
-					o(326398, {	-- Glowing Arcane Trunk -- confirmed
-						["questID"] = 55961, -- 55998 triggers after completing the minigame
+					o(326398, {	-- Glowing Arcane Trunk
+						["questID"] = 55961, -- 56976 also triggered. Possibly tied to obtaining Mardivas's Magnificent Desalinating Pouch?
 						["coord"] = { 55.7, 14.5, 1355 },
 						["description"] = "Match 3 Red runes.",
 					}),
-					o(326399, {	-- Glowing Arcane Trunk -- confirmed
-						["questID"] = 55958, -- 56359 triggers after completing the minigame, 56976 also triggered
+					o(326399, {	-- Glowing Arcane Trunk
+						["questID"] = 55958, -- 56976 also triggered. item trigger?
 						["coord"] = { 61.4, 22.9, 1355 },
 					}),
-					o(326400, {	-- Glowing Arcane Trunk -- confirmed
-						["questID"] = 55962, -- 55996 triggers after completing the minigame
+					o(326400, {	-- Glowing Arcane Trunk
+						["questID"] = 55962,
 						["coord"] = { 64.1, 28.6, 1355 },
 					}),
 					o(329783, {	-- Glowing Arcane Trunk
