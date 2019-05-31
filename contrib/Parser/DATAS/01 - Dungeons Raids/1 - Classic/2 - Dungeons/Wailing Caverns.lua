@@ -80,8 +80,8 @@ _.Instances = { tier(1, {	-- Classic
 			n(5912, { 			-- Deviate Faerie Dragon
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					dr(46, i(5243)), 	-- Firebelcher
-					dr(42, i(6632)), 	-- Feyscale Cloak
+					i(5243), 	-- Firebelcher
+					i(6632), 	-- Feyscale Cloak
 				},
 			}),
 			cr(3673, e(479, { 	-- Lord Serpentis

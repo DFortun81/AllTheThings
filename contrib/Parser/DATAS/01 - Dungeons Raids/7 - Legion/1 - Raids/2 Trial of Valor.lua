@@ -5,21 +5,18 @@
 _.Instances = { tier(7, {	-- Legion
 	inst(861, { 	-- Trial of Valor
 		["isRaid"] = true,
-		["lvl"] = 110,
+		["coord"] = { 70.4, 69.4, 634 },
 		["maps"] = { 806, 807, 808 },
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(-17, {	-- Quests 			
-				{
-					["questID"] = 45088,	-- Trial of Valor: The Lost Army
+				q(45088, {	-- Trial of Valor: The Lost Army
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
 					["qg"] = 114263,	-- Odyn
-					["crs"] = {
-						116241,	-- Champion of the Chosen Dead
-					},
-					["groups"] = {
+					["g"] = {
 						i(143506, {	-- Ensemble: Vestment of the Chosen Dead
 							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warock
-							["groups"] = {
+							["g"] = {
 								i(143346),	-- Circlet of the Chosen Dead
 								i(143356),	-- Mantle of the Chosen Dead
 								i(143369),	-- Drape of the Chosen Dead
@@ -33,7 +30,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),		
 						i(143510, {	-- Ensemble: Garb of the Chosen Dead
 							["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-							["groups"] = {	
+							["g"] = {	
 								i(143348),	-- Hood of the Chosen Dead
 								i(143354),	-- Shoulderpads of the Chosen Dead
 								i(143366),	-- Wrap of the Chosen Dead
@@ -47,7 +44,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),		
 						i(143514, {	-- Ensemble: Chains of the Chosen Dead
 							["classes"] = { 3, 7 },	-- Hunter, Shaman
-							["groups"] = {
+							["g"] = {
 								i(143347),	-- Coif of the Chosen Dead
 								i(143357),	-- Pauldrons of the Chosen Dead
 								i(143368),	-- Cloak of the Chosen Dead
@@ -61,7 +58,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),		
 						i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead
 							["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
-							["groups"] = {
+							["g"] = {
 								i(143345),	-- Visor of the Chosen Dead
 								i(143355),	-- Shoulderplates of the Chosen Dead
 								i(143367),	-- Greatcloak of the Chosen Dead
@@ -74,14 +71,12 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),	
 					},							
-				},
+				}),
 			}),
-			d(17, {	-- LFR
-				n(0, {	-- Zone Drop
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
+			d(17,  {	-- LFR
+				n(0,  {	-- Zone Drop
+					["crs"] = { 111246 },	-- Archmage Timear
+					["g"] = {
 						i(142541),	-- Drape of the Forgotten Souls
 					},
 				}),
@@ -93,14 +88,12 @@ _.Instances = { tier(7, {	-- Legion
 						114537,	-- Helya
 						111246,	-- Archmage Timear
 					},
-					["groups"] = {
+					["g"] = {
 						i(143509, {	-- Ensemble: Vestment of the Chosen Dead
 							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
 							["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
-							["crs"] = {
-								116242,	-- Aspiring Champion of the Chosen Dead
-							},
-							["groups"] = {
+							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
+							["g"] = {
 								i(143346),	-- Circlet of the Chosen Dead
 								i(143356),	-- Mantle of the Chosen Dead
 								i(143369),	-- Drape of the Chosen Dead
@@ -115,10 +108,8 @@ _.Instances = { tier(7, {	-- Legion
 						i(143513, {	-- Ensemble: Garb of the Chosen Dead
 							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
 							["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-							["crs"] = {
-								116242,	-- Aspiring Champion of the Chosen Dead
-							},
-							["groups"] = {	
+							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
+							["g"] = {	
 								i(143348),	-- Hood of the Chosen Dead
 								i(143354),	-- Shoulderpads of the Chosen Dead
 								i(143366),	-- Wrap of the Chosen Dead
@@ -133,10 +124,8 @@ _.Instances = { tier(7, {	-- Legion
 						i(143517, {	-- Ensemble: Chains of the Chosen Dead	
 							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic difficulties",
 							["classes"] = { 3, 7 },	-- Hunter, Shaman
-							["crs"] = {
-								116242,	-- Aspiring Champion of the Chosen Dead
-							},
-							["groups"] = {
+							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
+							["g"] = {
 								i(143347),	-- Coif of the Chosen Dead
 								i(143357),	-- Pauldrons of the Chosen Dead
 								i(143368),	-- Cloak of the Chosen Dead
@@ -151,10 +140,8 @@ _.Instances = { tier(7, {	-- Legion
 						i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
 							["description"] = "This item has a chance to drop from any boss in LFR, Normal, Heroic, and Mythic, difficulties",
 							["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
-							["crs"] = {
-								116242,	-- Aspiring Champion of the Chosen Dead
-							},	
-							["groups"] = {
+							["crs"] = { 116242 },	-- Aspiring Champion of the Chosen Dead
+							["g"] = {
 								i(143345),	-- Visor of the Chosen Dead
 								i(143355),	-- Shoulderplates of the Chosen Dead
 								i(143367),	-- Greatcloak of the Chosen Dead
@@ -169,12 +156,10 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(11394, { 	-- Trial of Valor
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
+					["crs"] = { 111246 },	-- Archmage Timear
+					["g"] = {
 						cr(114263, e(1819, {	-- Odyn
-							{
+							{	-- Odyn (Trial of Valor)
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 1,			-- Odyn
 							},
@@ -196,7 +181,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(142511),	-- Unforged Titansteel
 						})),
 						cr(114323, e(1830, {	-- Guarm
-							{
+							{	-- Guarm (Trial of Valor)
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 2,			-- Guarm
 							},
@@ -217,7 +202,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(142516),	-- Sizzling Fang
 						})),
 						cr(114537, e(1829, {	-- Helya
-							{
+							{	-- Helya (Trial of Valor)
 								["achievementID"] = 11394,	-- Trial of Valor
 								["criteriaID"] = 3,			-- Helya
 							},
@@ -242,15 +227,16 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			d(14, {	-- Normal
+			d(14,  {	-- Normal
 				n(0, {	-- Zone Drop
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{
+					{	-- Odyn (Trial of Valor)
 						["achievementID"] = 11394,	-- Trial of Valor
 						["criteriaID"] = 1,			-- Odyn
 					},
+					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 					i(142540),	-- Mantle of the Victorious Dead
@@ -273,9 +259,9 @@ _.Instances = { tier(7, {	-- Legion
 						114344,	-- Guarm
 						114323,	-- Guarm
 					},
-					["groups"] = {
+					["g"] = {
 						ach(11386),	-- Boneafide Tri Tip
-						{
+						{	-- Guarm (Trial of Valor)
 							["achievementID"] = 11394,	-- Trial of Valor
 							["criteriaID"] = 2,			-- Guarm
 						},
@@ -298,7 +284,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				cr(114537, e(1829, {	-- Helya
 					ach(11377),	-- Patient Zero
-					{
+					{	-- Helya (Trial of Valor)
 						["achievementID"] = 11394,	-- Trial of Valor
 						["criteriaID"] = 3,			-- Helya
 					},
@@ -321,7 +307,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(142513),	-- Token of the Lightning Keeper
 				}))
 			}),
-			d(15, {	-- Heroic
+			d(15,  {	-- Heroic
 				n(0, {	-- Zone Drop
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
@@ -329,10 +315,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
-						["crs"] = {
-							116245,	-- Heroic Champion of the Chosen Dead
-						},
-						["groups"] = {
+						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						["g"] = {
 							i(143346),	-- Circlet of the Chosen Dead
 							i(143356),	-- Mantle of the Chosen Dead
 							i(143369),	-- Drape of the Chosen Dead
@@ -347,10 +331,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(143511, {	-- Ensemble: Garb of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
-						["crs"] = {
-							116245,	-- Heroic Champion of the Chosen Dead
-						},
-						["groups"] = {	
+						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						["g"] = {	
 							i(143348),	-- Hood of the Chosen Dead
 							i(143354),	-- Shoulderpads of the Chosen Dead
 							i(143366),	-- Wrap of the Chosen Dead
@@ -365,10 +347,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(143515, {	-- Ensemble: Chains of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 3, 7 },	-- Hunter, Shaman
-						["crs"] = {
-							116245,	-- Heroic Champion of the Chosen Dead
-						},
-						["groups"] = {
+						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						["g"] = {
 							i(143347),	-- Coif of the Chosen Dead
 							i(143357),	-- Pauldrons of the Chosen Dead
 							i(143368),	-- Cloak of the Chosen Dead
@@ -383,10 +363,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
-						["crs"] = {
-							116245,	-- Heroic Champion of the Chosen Dead
-						},
-						["groups"] = {
+						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
+						["g"] = {
 							i(143345),	-- Visor of the Chosen Dead
 							i(143355),	-- Shoulderplates of the Chosen Dead
 							i(143367),	-- Greatcloak of the Chosen Dead
@@ -400,14 +378,15 @@ _.Instances = { tier(7, {	-- Legion
 					}),	
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{
+					{	-- Odyn (Trial of Valor)
 						["achievementID"] = 11394,	-- Trial of Valor
 						["criteriaID"] = 1,			-- Odyn
 					},
-					{
+					{	-- Odyn (Heroic: Trial of Valor)
 						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 1,			-- Heroic: Odyn
+						["criteriaID"] = 1,			-- Odyn
 					},
+					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 					i(142540),	-- Mantle of the Victorious Dead
@@ -430,15 +409,15 @@ _.Instances = { tier(7, {	-- Legion
 						114344,	-- Guarm
 						114323,	-- Guarm
 					},
-					["groups"] = {
+					["g"] = {
 						ach(11386),	-- Boneafide Tri Tip
-						{
+						{	-- Guarm (Trial of Valor)
 							["achievementID"] = 11394,	-- Trial of Valor
-							["criteriaID"] = 2,			-- Guarm
+							["criteriaID"] = 2,	-- Guarm
 						},
-						{
+						{	-- Guarm (Heroic: Trial of Valor)
 							["achievementID"] = 11426,	-- Heroic: Trial of Valor
-							["criteriaID"] = 2,			-- Heroic: Guarm
+							["criteriaID"] = 2,	-- Guarm
 						},
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
@@ -458,19 +437,19 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
-					{
+					{	-- Ahead of the Curve: Helya
 						["achievementID"] = 11581,	-- Ahead of the Curve: Helya
 						["u"] = 2,	-- Legacy Achievement
 					},
-					ach(11377),	-- Patient Zero
-					{
+					{	-- Helya (Trial of Valor)
 						["achievementID"] = 11394,	-- Trial of Valor
 						["criteriaID"] = 3,			-- Helya
 					},
-					{
+					{	-- Helya (Heroic: Trial of Valor)
 						["achievementID"] = 11426,	-- Heroic: Trial of Valor
 						["criteriaID"] = 3,			-- Heroic: Helya
 					},
+					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 					i(142428),	-- Sea Fan Pendant
@@ -495,15 +474,16 @@ _.Instances = { tier(7, {	-- Legion
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{
+					{	-- Odyn (Trial of Valor)
 						["achievementID"] = 11394,	-- Trial of Valor
 						["criteriaID"] = 1,			-- Odyn
 					},
-					{
+					{	-- Odyn (Heroic: Trial of Valor)
 						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 1,			-- Heroic: Odyn
+						["criteriaID"] = 1,	-- Odyn
 					},
 					ach(11396),	-- Mythic: Odyn
+					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 					i(142540),	-- Mantle of the Victorious Dead
@@ -526,15 +506,15 @@ _.Instances = { tier(7, {	-- Legion
 						114344,	-- Guarm
 						114323,	-- Guarm
 					},
-					["groups"] = {
+					["g"] = {
 						ach(11386),	-- Boneafide Tri Tip
-						{
+						{	-- Guarm (Trial of Valor)
 							["achievementID"] = 11394,	-- Trial of Valor
 							["criteriaID"] = 2,			-- Guarm
 						},
-						{
+						{	-- Guarm (Heroic: Trial of Valor)
 							["achievementID"] = 11426,	-- Heroic: Trial of Valor
-							["criteriaID"] = 2,			-- Heroic: Guarm
+							["criteriaID"] = 2,	-- Guarm
 						},
 						ach(11397),	-- Mythic: Guarm
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
@@ -555,33 +535,36 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
-					{
-						["achievementID"] = 11581,	-- Ahead of the Curve: Helya
+					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = 2,	-- Legacy Achievement
-					},
-					{
-						["achievementID"] = 11580,	-- Cutting Edge: Helya
+					}),
+					ach(11580, {	-- Cutting Edge: Helya
 						["u"] = 2,	-- Legacy Achievement
+					}),
+					{				-- Helya (Trial of Valor)
+						["achievementID"] = 11394,	-- Trial of Valor
+						["criteriaID"] = 3,	-- Helya
 					},
-					{
-						["achievementID"] = 11405,	-- Realm First! Helya
+					{				-- Helya (Heroic: Trial of Valor)
+						["achievementID"] = 11426,	-- Heroic: Trial of Valor
+						["criteriaID"] = 3,	-- Helya
+					},
+					ach(11398),		-- Mythic: Helya
+					ach(11377),		-- Patient Zero
+					ach(11405, {	-- Realm First! Helya
 						["u"] = 2,	-- Legacy Achievement
-					},
-					ach(11377),	-- Patient Zero
+					}),
 					ach(11387, {	-- The Chosen
 						["u"] = 2,	-- Legacy Achievement
-						["crs"] = {
-							116229,	-- Mythical Champion of the Chosen Dead
-						},
-						["groups"] = {
-							{
-								["titleID"] = 347,	-- The Chosen
+						["crs"] = { 116229 },	-- Mythical Champion of the Chosen Dead
+						["g"] = {
+							title(347, {	-- The Chosen
 								["u"] = 2,	-- Removed From Game
-							},
+							}),
 							i(143508, {	-- Ensemble: Vestment of the Chosen Dead
 								["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
 								["u"] = 2,	-- Removed From Game
-								["groups"] = {
+								["g"] = {
 									i(143346),	-- Circlet of the Chosen Dead
 									i(143356),	-- Mantle of the Chosen Dead
 									i(143369),	-- Drape of the Chosen Dead
@@ -596,7 +579,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(143512, {	-- Ensemble: Garb of the Chosen Dead
 								["classes"] = { 11, 4, 10, 12 },	-- Druid, Rogue, Monk, Demon Hunter
 								["u"] = 2,	-- Removed From Game
-								["groups"] = {	
+								["g"] = {	
 									i(143348),	-- Hood of the Chosen Dead
 									i(143354),	-- Shoulderpads of the Chosen Dead
 									i(143366),	-- Wrap of the Chosen Dead
@@ -611,7 +594,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(143516, {	-- Ensemble: Chains of the Chosen Dead
 								["classes"] = { 3, 7 },	-- Hunter, Shaman
 								["u"] = 2,	-- Removed From Game
-								["groups"] = {
+								["g"] = {
 									i(143347),	-- Coif of the Chosen Dead
 									i(143357),	-- Pauldrons of the Chosen Dead
 									i(143368),	-- Cloak of the Chosen Dead
@@ -626,7 +609,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
 								["classes"] = { 2, 1, 6 },	-- Paladin, Warrior, Death Knight
 								["u"] = 2,	-- Removed From Game
-								["groups"] = {
+								["g"] = {
 									i(143345),	-- Visor of the Chosen Dead
 									i(143355),	-- Shoulderplates of the Chosen Dead
 									i(143367),	-- Greatcloak of the Chosen Dead
@@ -640,15 +623,6 @@ _.Instances = { tier(7, {	-- Legion
 							}),	
 						},
 					}),
-					{
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 3,			-- Helya
-					},
-					{
-						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 3,			-- Heroic: Helya
-					},
-					ach(11398),	-- Mythic: Helya
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 					i(142428),	-- Sea Fan Pendant

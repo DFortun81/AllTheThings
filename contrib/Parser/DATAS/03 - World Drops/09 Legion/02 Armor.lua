@@ -98,6 +98,10 @@ _.WorldDrops =
 					i(141580),	-- Vastly Oversized Ring
 					i(136737),	-- Warden Band
 				}),
+				filter(53, {	-- Trinket
+					i(141584),	-- Eyasu's Mulligan
+					i(141585),	-- Six-feater Fan
+				}),
 			}),
 		},
 		["tierID"] = 7

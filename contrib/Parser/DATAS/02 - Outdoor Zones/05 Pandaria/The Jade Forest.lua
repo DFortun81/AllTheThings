@@ -2048,23 +2048,17 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(50750, {	-- Aethis
-						dr(18, i(87217)),	-- Small Bag of Goods
-						dr(13, i(87649)),	-- Pool-Stirrer
-						dr(12, {
-							i(87594),	-- Leggings of Forgotten War
-							i(87588),	-- Leggings of Spiritsong Melody
-						}),
-						dr(11, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87587),	-- Orchard Tender's Leggings
-							i(87591),	-- Tian Trainee Leggings
-						}),
-						dr(10, {
-							i(87590),	-- Jade Heart Leggings
-							i(87589),	-- Leggings of Fractured Reflection
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87649),	-- Pool-Stirrer
+						i(87594),	-- Leggings of Forgotten War
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87586),	-- Forest Trickster's Leggings
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87587),	-- Orchard Tender's Leggings
+						i(87591),	-- Tian Trainee Leggings
+						i(87590),	-- Jade Heart Leggings
+						i(87589),	-- Leggings of Fractured Reflection
 					}),
 					n(66937, {	-- Akkalar
 						i(90167, {	-- Akkalar's Clamshel
@@ -2079,131 +2073,107 @@ _.Zones =
 						}),
 					}),
 					n(51078, {	-- Ferdinand
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(16, i(87652)),	-- Ook-Breaker Mace
-						dr(12, i(87586)),	-- Forest Trickster's Leggings
-						dr(11, {
-							i(87587),	-- Orchard Tender's Leggings
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87590),	-- Jade Heart Leggings
-							i(87591),	-- Tian Trainee Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87594),	-- Leggings of Forgotten War
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87652),	-- Ook-Breaker Mace
+						i(87586),	-- Forest Trickster's Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87590),	-- Jade Heart Leggings
+						i(87591),	-- Tian Trainee Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87594),	-- Leggings of Forgotten War
 					}),
 					n(50338, {	-- Kor'nas Nightsavage
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(14, i(87642)),	-- Darkstaff of Annihilation
-						dr(11, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87587),	-- Orchard Tender's Leggings
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87590),	-- Jade Heart Leggings
-							i(87591),	-- Tian Trainee Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87594),	-- Leggings of Forgotten War
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87642),	-- Darkstaff of Annihilation
+						i(87586),	-- Forest Trickster's Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87590),	-- Jade Heart Leggings
+						i(87591),	-- Tian Trainee Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87594),	-- Leggings of Forgotten War
 					}),
 					n(70323, {	-- Krakkanon
-						dr(14, {
-							["itemID"] = 88563,	-- Nat's Fishing Journal
+						{	-- Nat's Fishing Journal
+							["itemID"] = 88563,
 							--["questID"] = 31664,	-- An Angler's Quest
 							["repeatable"] = true,
 							["icon"] = "Interface\\Icons\\inv_misc_book_11",
 							["collectible"] = false,
-						}),
+						},
 					}),
 					n(50363, {	-- Krax'ik
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(15, i(87646)),	-- Needlefang Throatripper
-						dr(12, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-						}),
-						dr(11, {
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87590),	-- Jade Heart Leggings
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87591),	-- Tian Trainee Leggings
-						}),
-						dr(10, {
-							i(87587),	-- Orchard Tender's Leggings
-							i(87594),	-- Leggings of Forgotten War
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87646),	-- Needlefang Throatripper
+						i(87586),	-- Forest Trickster's Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87590),	-- Jade Heart Leggings
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87591),	-- Tian Trainee Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87594),	-- Leggings of Forgotten War
 					}),
 					n(65003, {	-- Martar the Not-So-Smart
-						dr(29, i(87780)),	-- Martar's Magnifying Glass
+						i(87780),	-- Martar's Magnifying Glass
 					}),
 					n(50823, {	-- Mister Ferocious
-						dr(19, i(87217)),	-- Small Bag of Goods
-						dr(14, i(87652)),	-- Ook-Breaker Mace
-						dr(11, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87587),	-- Orchard Tender's Leggings
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87590),	-- Jade Heart Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87594),	-- Leggings of Forgotten War
-						}),
-						dr(10, 	i(87591)),	-- Tian Trainee Leggings
+						i(87217),	-- Small Bag of Goods
+						i(87652),	-- Ook-Breaker Mace
+						i(87586),	-- Forest Trickster's Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87590),	-- Jade Heart Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87594),	-- Leggings of Forgotten War
+						i(87591),	-- Tian Trainee Leggings
 					}),
 					n(50350, {	-- Morgrinn Crackfang
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(15, i(87643)),	-- Fangcracker Battlemace
-						dr(11, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87587),	-- Orchard Tender's Leggings
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87590),	-- Jade Heart Leggings
-							i(87591),	-- Tian Trainee Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87594),	-- Leggings of Forgotten War
-						}),
-						dr(10, i(87588)),	-- Leggings of Spiritsong Melody
+						i(87217),	-- Small Bag of Goods
+						i(87643),	-- Fangcracker Battlemace
+						i(87586),	-- Forest Trickster's Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87590),	-- Jade Heart Leggings
+						i(87591),	-- Tian Trainee Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87594),	-- Leggings of Forgotten War
+						i(87588),	-- Leggings of Spiritsong Melody
 					}),
 					n(50782, {	-- Sarnak
-						dr(21, i(87217)),	-- Small Bag of Goods
-						dr(15, i(87650)),	-- Fishsticker Crossbow
-						dr(13, i(87594)),	-- Leggings of Forgotten War
-						dr(11, {
-							i(87589),	-- Leggings of Fractured Reflection
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87591),	-- Tian Trainee Leggings
-						}),
-						dr(10, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87587),	-- Orchard Tender's Leggings
-							i(87590),	-- Jade Heart Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87650),	-- Fishsticker Crossbow
+						i(87594),	-- Leggings of Forgotten War
+						i(87589),	-- Leggings of Fractured Reflection
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87591),	-- Tian Trainee Leggings
+						i(87586),	-- Forest Trickster's Leggings
+						i(87587),	-- Orchard Tender's Leggings
+						i(87590),	-- Jade Heart Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
 					}),
 					n(50808, {	-- Urobi the Walker
-						dr(20, i(87217)),	-- Small Bag of Goods
-						dr(14, i(87651)),	-- Pathwalker Greatstaff
-						dr(12, {
-							i(87586),	-- Forest Trickster's Leggings
-							i(87591),	-- Tian Trainee Leggings
-						}),
-						dr(11, {
-							i(87588),	-- Leggings of Spiritsong Melody
-							i(87590),	-- Jade Heart Leggings
-							i(87592),	-- Grookin' Grookin' Trousers
-							i(87593),	-- Gan Shi Warlord Legguards
-							i(87587),	-- Orchard Tender's Leggings
-						}),
-						dr(10, {
-							i(87594),	-- Leggings of Forgotten War
-							i(87589),	-- Leggings of Fractured Reflection
-						}),
+						i(87217),	-- Small Bag of Goods
+						i(87651),	-- Pathwalker Greatstaff
+						i(87586),	-- Forest Trickster's Leggings
+						i(87591),	-- Tian Trainee Leggings
+						i(87588),	-- Leggings of Spiritsong Melody
+						i(87590),	-- Jade Heart Leggings
+						i(87592),	-- Grookin' Grookin' Trousers
+						i(87593),	-- Gan Shi Warlord Legguards
+						i(87587),	-- Orchard Tender's Leggings
+						i(87594),	-- Leggings of Forgotten War
+						i(87589),	-- Leggings of Fractured Reflection
 					}),
 					{	-- Zandalari Warbringer
 						["npcID"] = 69841,	-- Zandalari Warbringer
@@ -2821,6 +2791,18 @@ _.Zones =
 								66668,	-- Sha-Infested Prowler
 								55193,	-- Slingtail Mudseer
 								59772,	-- Smoky Porcupine
+							},
+						}),
+						i(87522, {	-- Star-Carrier Bracers
+							["crs"] = {
+								55461,	-- Grookin Reinforcement
+								55470,	-- Hozen Groundpounder
+								66424,	-- Sha Harbinger
+								66668,	-- Sha-Infested Prowler
+								61760,	-- Slingtail Recruit
+								56650,	-- Stoneskin Basilisk
+								66272,	-- Twinspire Deathguard
+								66273,	-- Twinspire Demolitionist
 							},
 						}),
 						i(120138, {	-- Tome of Polymorph: Monkey

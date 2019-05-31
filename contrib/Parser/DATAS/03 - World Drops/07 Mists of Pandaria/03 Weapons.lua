@@ -45,7 +45,8 @@ _.WorldDrops =
 					i(82158),	-- Rigid Crossbow
 					i(82213),	-- Inlaid Crossbow
 					i(82268),	-- Engraved Crossbow
-					i(87650),	-- Fishsticker Crossbow
+					-- [removed non-world drops below]
+					--i(87650),	-- Fishsticker Crossbow
 				}),			
 				n(-333, {	-- Daggers	
 					i(82003),	-- Intricate Spellblade
@@ -63,11 +64,12 @@ _.WorldDrops =
 					i(87467),	-- Ravenclaw Harbinger
 					i(87508),	-- Lhakaz's Missing Ribspreader
 					i(87514),	-- Sharpened Multi-Prong Dagger
-					i(88149),	-- The Gloaming Blade
-					un(7, i(93625)),	-- Miniature Winter Veil Tree
 					i(94096),	-- Discarded Strikeblade
 					i(94102),	-- Chiseled Fangs
 					i(94215),	-- Saurjaw Dagger
+					-- [removed non-world drops below]
+					--un(7, i(93625)),	-- Miniature Winter Veil Tree
+					--i(88149),	-- The Gloaming Blade
 				}),
 				n(-348, {	-- Fist Weapons	
 					i(82013),	-- Polished Knuckles
@@ -102,8 +104,6 @@ _.WorldDrops =
 					i(90571),	-- Scroll of Whispered Secrets
 				}),
 				n(-336, {	-- 1H Maces
-					i(107218),	-- Tremendous Tankard O' Terror
-					i(71332),	-- Tremendous Tankard O' Terror
 					i(82009),	-- Polished Mace
 					i(82011),	-- Intricate Scepter
 					i(82055),	-- Bronzed Mace
@@ -120,6 +120,9 @@ _.WorldDrops =
 					i(87512),	-- Porter's Tooth-Marked Mace
 					i(87515),	-- Ced's Crusher
 					i(94212),	-- Hex-Caster Gavel
+					-- [removed non-world drops below]
+					--i(107218),	-- Tremendous Tankard O' Terror
+					--i(71332),	-- Tremendous Tankard O' Terror
 				}),
 				n(-337, {	-- 2H Maces
 					i(82008),	-- Polished Hammer
@@ -150,10 +153,11 @@ _.WorldDrops =
 					i(87486),	-- Skyrider's Shining Shield
 					i(87487),	-- Turpster's Sonorous Shield
 					i(87488),	-- Don Carlos' Drifting Shield
-					i(87641),	-- Yaungol Battle Barrier
 					i(90575),	-- Sutiru's Brazen Bulwark
 					i(94214),	-- Loa-Binder Disc
 					i(94218),	-- Skyking Bulwark
+					-- [removed non-world drops below]
+					--i(87641),	-- Yaungol Battle Barrier
 				}),
 				n(-342, {	-- Staves
 					i(82002),	-- Polished Staff
@@ -185,9 +189,10 @@ _.WorldDrops =
 					i(87466),	-- Ritualistic Sickle
 					i(87510),	-- Buc-Zakai Bugslicer
 					i(87511),	-- Horrifying Meatsaw
-					i(88150),	-- Krol Scimitar
 					i(94093),	-- Saur-Singer Spellblade
 					i(94217),	-- Stubby Talonblade
+					-- [removed non-world drops below]
+					--i(88150),	-- Krol Scimitar
 				}),
 				n(-339, {	-- 2H Swords
 					i(82000),	-- Polished Greatsword

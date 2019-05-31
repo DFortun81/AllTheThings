@@ -1485,21 +1485,6 @@ _.Zones =
 						["coord"] = { 54.6, 17.5, 241 },
 						["qg"] = 48366,	-- Russell Brower
 					}),
-
-
-
-
---[[
-						["sourceQuests"] = {  },	-- 
-						["coord"] = { , , 241 },
-						["qg"] = ,	-- 
-					}),
---]]
-
-
-
-
-
 --[[					
 					q(29802),	-- A Hidden Message
 					qh(27947),	-- A Vision of Twilight
@@ -1508,11 +1493,14 @@ _.Zones =
 					qh(28041),	-- Bait and Throttle
 					qa(28864),	-- Beer Run
 --]]
-					qg(45983, qh(27606, {	-- Blast Him!
-						i(63908),
-						i(63907),
-						i(63906),
-					})),
+					qh(27606, {	-- Blast Him!
+						["qg"] = 45983,	-- 
+						["g"] = {
+							i(63908),	-- 
+							i(63907),	-- 
+							i(63906),	-- 
+						},
+					}),
 --[[
 					qh(28038),	-- Blood in the Highlands
 					qh(27584),	-- Blood in the Surf
@@ -1520,87 +1508,122 @@ _.Zones =
 					qh(28875),	-- Bring Down the High Shaman
 					qh(27655),	-- Bring the Hammer Down
 --]]
-					qg(45665, qh(27497, {	-- Call in the Artillery
-						i(63750),
-						i(63749),
-						i(63748),
-					})),
+					qh(27497, {	-- Call in the Artillery
+						["qg"] = 45665,	-- 
+						["g"] = {
+							i(63750),	-- 
+							i(63749),	-- 
+							i(63748),	-- 
+						},
+					}),
 --[[					
 					qh(26788),	-- Cementing Our Victory
 --]]					
-					qg(45675, qh(27703, {	-- Coup de Grace
-						i(63722),
-						i(63721),
-					})),
+					qh(27703, {	-- Coup de Grace
+						["qg"] = 45675,	-- 
+						["g"] = {
+							i(63722),	-- 
+							i(63721),	-- 
+						},
+					}),
 --					qh(28249),	-- Crushblow
-					qg(46313, qh(27751, {	-- Crushing the Wildhammer
-						i(63823),
-						i(63822),
-						i(63821),
-					})),
+					qh(27751, {	-- Crushing the Wildhammer
+						["qg"] = 46313,	-- 
+						["g"] = {
+							i(63823),	-- 
+							i(63822),	-- 
+							i(63821),	-- 
+						},
+					}),
 --					qh(28871),	-- Crushing the Wildhammer
-					qg(43191, qh(26540, {	-- Dangerous Compassion
-						i(63896),
-						i(63895),
-						i(63894),
-					})),
-					qg(45675, qh(27653, {	-- Dark Assassins
-						i(63738),
-						i(63737),
-						i(63736),
-					})),
+					qh(26540, {	-- Dangerous Compassion
+						["qg"] = 43191,	-- 
+						["g"] = {
+							i(63896),	-- 
+							i(63895),	-- 
+							i(63894),	-- 
+						},
+					}),
+					qh(27653, {	-- Dark Assassins
+						["qg"] = 45675,	-- 
+						["g"] = {
+							i(63738),	-- 
+							i(63737),	-- 
+							i(63736),	-- 
+						},
+					}),
 --					q(29736),	-- Darkfeather the Elder
-					qg(43581, qh(26622, {	-- Death to Mor'ghor
-						i(63884),
-						i(63883),
-						i(63882),
-					})),
-					qg(45675, qh(27689, {	-- Distract Them for Me
-						i(63729),
-						i(63728),
-						i(63727),
-					})),
+					qh(26622, {	-- Death to Mor'ghor
+						["qg"] = 43581,	-- 
+						["g"] = {
+							i(63884),	-- 
+							i(63883),	-- 
+							i(63882),	-- 
+						},
+					}),
+					qh(27689, {	-- Distract Them for Me
+						["qg"] = 45675,	-- 
+						["g"] = {
+							i(63729),	-- 
+							i(63728),	-- 
+							i(63727),	-- 
+						},
+					}),
 --[[
 					qh(27929),	-- Drag 'em Down
 					qh(27701),	-- Dragon, Unchained
 --]]
-					qg(47723, qh(28151, {	-- Dressed to Kill
-						i(63846),
-						i(63845),
-						i(63844),
-					})),
+					qh(28151, {	-- Dressed to Kill
+						["qg"] = 47723,	-- 
+						["g"] = {
+							i(63846),	-- 
+							i(63845),	-- 
+							i(63844),	-- 
+						},
+					}),
 --[[
 					qh(28091),	-- Easy Pickings
 					qh(26538),	-- Emergency Aid
 --]]					
-					qg(48993, qh(28589, {	-- Everything But the Kitchen Sink
-						i(63864),
-						i(63863),
-						i(63862),
-					})),
+					qh(28589, {	-- Everything But the Kitchen Sink
+						["qg"] = 48993,	-- 
+						["g"] = {
+							i(63864),	-- 
+							i(63863),	-- 
+							i(63862),	-- 
+						},
+					}),
 --[[
 					qh(27955),	-- Eye Spy
 					qa(28861),	-- Fight Like a Wildhammer
 					q(29737),	-- Firebeard the Elder
 --]]
 --[[
-					qg(45669, qa(27608, {	-- Four Heads are Better than None
-					-- (this quest is either inactive or is a separate questline.  i picked up the other version.)
-						i(63747),
-						i(63746),
-					})),
+					qa(27608, {	-- Four Heads are Better than None -- (this quest is either inactive or is a separate questline.  i picked up the other version.)
+						["qg"] = 45669,	-- 
+						["g"] = {
+							i(63747),	-- 
+							i(63746),	-- 
+						},
+					}),
 --]]
-					qg(45665, qh(27609, {	-- Four Heads are Better than None
-						i(63744),
-						i(63743),
-					})),
-					qg(47417, qh(28133, {	-- Fury Unbound
-						i(63802),
-						i(63801),
-						i(63800),
-						i(63803),
-						i(63799),
-					})),
+					qh(27609, {	-- Four Heads are Better than None
+						["qg"] = 45665,	-- 
+						["g"] = {
+							i(63744),	-- 
+							i(63743),	-- 
+						},
+					}),
+					qh(28133, {	-- Fury Unbound
+						["qg"] = 47417,	-- 
+						["g"] = {
+							i(63802),	-- 
+							i(63801),	-- 
+							i(63800),	-- 
+							i(63803),	-- 
+							i(63799),	-- 
+						},
+					}),
 --[[					
 					qh(27783),	-- Garona Needs You
 					qh(27658),	-- Help from the Earthcaller
@@ -1611,33 +1634,40 @@ _.Zones =
 					qh(28043),	-- How to Maim Your Dragon
 					qh(28092),	-- If The Key Fits
 --]]
-					qg(43581, qh(26621, {	-- Insurrection
+					qh(26621, {	-- Insurrection
+						["qg"] = 43581,	-- 
 						["sourceQuests"] = { 26619 },	-- You Say You Want a Revolution
 						["g"] = {
 							i(63889),	-- Shackle-Shatter Wand
 							i(63890),	-- Ring of Rebellion
 						},
-					})),
+					}),
 --[[
 					qh(27638),	-- Just You and Garona
 					qa(28860),	-- Keeping the Dragonmaw at Bay
 					qh(27491),	-- Kor'kron Drop
 --]]
-					qg(49000, qg(49000, qh(28595, {	-- Krazz Works! 
-						i(63829),
-						i(63828),
-						i(63827),
-						i(63830),
-					}))),
+					qh(28595, {	-- Krazz Works! 
+						["qg"] = 49000,	-- 
+						["g"] = {
+							i(63829),	-- 
+							i(63828),	-- 
+							i(63827),	-- 
+							i(63830),	-- 
+						},
+					}),
 --[[
 					qh(28583),	-- Krazzworks
 					qh(26549),	-- Madness
 --]]
-					qg(46090, qh(27622, {	-- Mo' Better Shredder
-						i(63902),
-						i(63901),
-						i(63900),
-					})),
+					qh(27622, {	-- Mo' Better Shredder
+						["qg"] = 46090,	-- 
+						["g"] = {
+							i(63902),	-- 
+							i(63901),	-- 
+							i(63900),	-- 
+						},
+					}),
 --[[
 					qh(27495),	-- Move the Mountain
 					qh(28885),	-- Mr. Goldmine's Wild Ride
@@ -1650,37 +1680,52 @@ _.Zones =
 					qh(28591),	-- Off The Wall
 					qh(27493),	-- Ogres & Ettins
 --]]
-					qg(46324, qh(27945, {	-- Paint it Black
-						i(63811),
-						i(63810),
-						i(63809),
-					})),
-					qg(49002, qh(28592, {	-- Parting Packages (secondary QG ID 49379)
-						i(63852),
-						i(63851),
-						i(63850),
-					})),
+					qh(27945, {	-- Paint it Black
+						["qg"] = 46324,	-- 
+						["g"] = {
+							i(63811),	-- 
+							i(63810),	-- 
+							i(63809),	-- 
+						},
+					}),
+					qh(28592, {	-- Parting Packages (secondary QG ID 49379)
+						["qg"] = 49002,	-- 
+						["g"] = {
+							i(63852),	-- 
+							i(63851),	-- 
+							i(63850),	-- 
+						},
+					}),
 --[[
 					qh(27576),	-- Patchwork Command
 					qh(28094),	-- Paving the Way
 					qa(11882),	-- Playing with Fire
 					qh(28586),	-- Pool Pony Rescue
 --]]
-					qg(47492, qh(28090, {	-- Precious Goods
-						i(63771),
-						i(63770),
-					})),
-					qg(47374, qh(28093, {	-- Pressing Forward
-						i(63764),
-						i(63763),
-						i(63765),
-					})),
+					qh(28090, {	-- Precious Goods
+						["qg"] = 47492,	-- 
+						["g"] = {
+							i(63771),	-- 
+							i(63770),	-- 
+						},
+					}),
+					qh(28093, {	-- Pressing Forward
+						["qg"] = 47374,	-- 
+						["g"] = {
+							i(63764),	-- 
+							i(63763),	-- 
+							i(63765),	-- 
+						},
+					}),
 --					qh(28147),	-- Purple is Your Color
-					qg(49439, qh(28584, {	-- Quality Construction
-						i(63858),
-						i(63857),
-						i(63856),
-					})),
+					qh(28584, {	-- Quality Construction
+						["qg"] = 49439,	-- 
+						["g"] = {
+							i(63858),	-- 
+							i(63857),	-- 
+							i(63856),	-- 
+						},
+					}),
 --[[
 					qh(28590),	-- Reprisal
 					qh(26840),	-- Return to the Highlands
@@ -1692,12 +1737,15 @@ _.Zones =
 					qa(27588),	-- Signal the Attack
 					qh(27590),	-- Signal the Attack
 --]]
-					qg(46717, qh(27788, {	-- Skullcrusher the Mountain (Horde)
-						i(63704),
-						i(63703),
-						i(63702),
-						i(63701),
-					})),
+					qh(27788, {	-- Skullcrusher the Mountain (Horde)
+						["qg"] = 46717,	-- 
+						["g"] = {
+							i(63704),	-- 
+							i(63703),	-- 
+							i(63702),	-- 
+							i(63701),	-- 
+						},
+					}),
 --[[					
 					qh(26539),	-- Stalled Negotiations
 --					q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! (NYI/removed?  no information about where to pick this version up)
@@ -1721,30 +1769,39 @@ _.Zones =
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuests"] = { 29802 },	-- A Hidden Message
 					})),
-					qg(46318, qh(27747, {	-- Total War
-						i(63816),
-						i(63815),
-						i(63817),
-					})),
+					qh(27747, {	-- Total War
+						["qg"] = 46318,	-- 
+						["g"] = {
+							i(63816),	-- 
+							i(63815),	-- 
+							i(63817),	-- 
+						},
+					}),
 --[[
 					qh(28872)),	-- Total War
 --]]
-					qg(50367, qh(26388, {	-- Twilight Skies
-						i(63870),
-						i(63869),
-						i(63868),
-					})),
+					qh(26388, {	-- Twilight Skies
+						["qg"] = 50367,	-- 
+						["g"] = {
+							i(63870),	-- 
+							i(63869),	-- 
+							i(63868),	-- 
+						},
+					}),
 --[[					
 					qh(27503),	-- Up to the Citadel
 					qh(27750),	-- War Forage
 					qa(28863),	-- Warlord Halthar is Back
 					qh(27486),	-- Warm Welcome
 --]]
-					qg(46413, qh(27798, {	-- Water of Life
-						i(63716),
-						i(63715),
-						i(63717),
-					})),
+					qh(27798, {	-- Water of Life
+						["qg"] = 46413,	-- 
+						["g"] = {
+							i(63716),	-- 
+							i(63715),	-- 
+							i(63717),	-- 
+						},
+					}),
 --[[
 					qh(27951),	-- We All Must Sacrifice
 					qh(28149),	-- Whispers in the Wind

@@ -15,18 +15,39 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
 			n(0, {	-- Zone Drop
-				i(59466),	-- Ironstar's Impenetrable Cover
-				i(59468),	-- Shadowforge's Lightbound Smock
-				i(59467),	-- Hide of Chromaggus
-				i(59465),	-- Corehammer's Riveted Girdle
-				i(59464),	-- Treads of Savage Beatings
-				i(59462),	-- Maimgor's Bite
-				i(59463),	-- Maldo's Sword Cane
-				i(63537),	-- Claws of Torment
-				i(63538),	-- Claws of Agony
-				i(68601),	-- Scaleslicer
-				i(59460),	-- Theresa's Booklight
-				i(59461),	-- Fury of Angerforge
+				["crs"] = {
+					46083,	-- Drakeadon Mongrel
+					42803,	-- Drakeadon Mongrel
+					42649,	-- Drakonid Chainwielder
+					42362,	-- Drakonid Drudge
+					42802,	-- Drakonid Slayer
+					42800,	-- Golem Sentry
+					42767,	-- Ivoroc
+					42768,	-- Maimgor
+					42764,	-- Pyrecraw
+					43119,	-- Spirit of Angerforge
+					43128,	-- Spirit of Anvilrage
+					43130,	-- Spirit of Burningeye
+					43122,	-- Spirit of Corehammer
+					43127,	-- Spirit of Ironstar
+					43125,	-- Spirit of Moltenfist
+					43129,	-- Spirit of Shadowforge
+					43126,	-- Spirit of Thaurissan
+				},
+				["groups"] = {
+					i(59466),	-- Ironstar's Impenetrable Cover
+					i(59468),	-- Shadowforge's Lightbound Smock
+					i(59467),	-- Hide of Chromaggus
+					i(59465),	-- Corehammer's Riveted Girdle
+					i(59464),	-- Treads of Savage Beatings
+					i(59462),	-- Maimgor's Bite
+					i(59463),	-- Maldo's Sword Cane
+					i(63537),	-- Claws of Torment
+					i(63538),	-- Claws of Agony
+					i(68601),	-- Scaleslicer
+					i(59460),	-- Theresa's Booklight
+					i(59461),	-- Fury of Angerforge
+				},
 			}),
 			d(1, {	-- Normal
 				["difficulties"] = { 3, 4 },

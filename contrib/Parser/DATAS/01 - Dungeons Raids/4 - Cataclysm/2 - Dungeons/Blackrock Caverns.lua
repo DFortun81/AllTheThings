@@ -124,13 +124,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56313),	-- Manacles of Pain
 					i(157608),	-- Groundrumble Boots
 					i(56310),	-- Skullcracker Ring
-					nld({	-- Legacy
-						un(2, i(55777)),	-- Torturer's Mercy (7.3.5 - Removed from Game!)
-						un(2, i(55778)),	-- Shield of the Iron Maiden (7.3.5 - Removed from Game!)
-						un(2, i(55278)),	-- Inquisition Robes (7.3.5 - Removed from Game!)
-						un(2, i(55279)),	-- Manacles of Pain (7.3.5 - Removed from Game!)
-						un(2, i(55776)),	-- Skullcracker Ring (7.3.5 - Removed from Game!)
-					}),								
+					un(2, i(55777)),	-- Torturer's Mercy (7.3.5 - Removed from Game!)
+					un(2, i(55778)),	-- Shield of the Iron Maiden (7.3.5 - Removed from Game!)
+					un(2, i(55278)),	-- Inquisition Robes (7.3.5 - Removed from Game!)
+					un(2, i(55279)),	-- Manacles of Pain (7.3.5 - Removed from Game!)
+					un(2, i(55776)),	-- Skullcracker Ring (7.3.5 - Removed from Game!)
 				})),
 				cr(39679, e(106, {	-- Corla, Herald of Twilight
 					i(56296),	-- Corla's Baton
@@ -138,13 +136,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56297),	-- Armbands of Change
 					i(56299),	-- Signet of Transformation
 					i(56295),	-- Grace of the Herald
-					nld({    		-- Legacy
-						un(2, i(55267)),	-- Corla's Baton (7.3.5 - Removed from Game!)
-						un(2, i(55263)),	-- Renouncer's Cowl (7.3.5 - Removed from Game!)
-						un(2, i(55264)),	-- Armbands of Change (7.3.5 - Removed from Game!)
-						un(2, i(55265)),	-- Signet of Transformation (7.3.5 - Removed from Game!)
-						un(2, i(55266)),	-- Grace of the Herald (7.3.5 - Removed from Game!)
-					}),								
+					un(2, i(55267)),	-- Corla's Baton (7.3.5 - Removed from Game!)
+					un(2, i(55263)),	-- Renouncer's Cowl (7.3.5 - Removed from Game!)
+					un(2, i(55264)),	-- Armbands of Change (7.3.5 - Removed from Game!)
+					un(2, i(55265)),	-- Signet of Transformation (7.3.5 - Removed from Game!)
+					un(2, i(55266)),	-- Grace of the Herald (7.3.5 - Removed from Game!)
 				})),
 				cr(39698, e(107, {	-- Karsh Steelbender
 					i(56302), 	-- Steelbender's Masterpiece
@@ -153,13 +149,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(157610), 	-- Heat-Shielded Tunic
 					i(56301), 	-- Bracers of Cooled Anger
 					i(56303), 	-- Heat Wave Leggings
-					nld({	-- Legacy
-						un(2, i(55272)), 	-- Steelbender's Masterpiece (7.3.5 - Removed from Game!)
-						un(2, i(55271)),	-- Quicksilver Amulet (7.3.5 - Removed from Game!)
-						un(2, i(55270)), 	-- Burned Gatherings (7.3.5 - Removed from Game!)
-						un(2, i(55268)), 	-- Bracers of Cooled Anger (7.3.5 - Removed from Game!)
-						un(2, i(55269)), 	-- Heat Wave Leggings (7.3.5 - Removed from Game!)
-					}),								
+					un(2, i(55272)), 	-- Steelbender's Masterpiece (7.3.5 - Removed from Game!)
+					un(2, i(55271)),	-- Quicksilver Amulet (7.3.5 - Removed from Game!)
+					un(2, i(55270)), 	-- Burned Gatherings (7.3.5 - Removed from Game!)
+					un(2, i(55268)), 	-- Bracers of Cooled Anger (7.3.5 - Removed from Game!)
+					un(2, i(55269)), 	-- Heat Wave Leggings (7.3.5 - Removed from Game!)
 				})),
 				cr(39700, e(108, {	-- Beauty
 					i(56306), 	-- Beauty's Favorite Bone
@@ -168,13 +162,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56305), 	-- Beauty's Silken Ribbon
 					i(56309), 	-- Beauty's Chew Toy
 					i(56307),	-- Kibble
-					nld({	-- Legacy
-						un(2, i(55277)), 	-- Beauty's Favorite Bone (7.3.5 - Removed from Game!)
-						un(2, i(55274)), 	-- Beauty's Plate (7.3.5 - Removed from Game!)
-						un(2, i(55275)), 	-- Beauty's Silken Ribbon (7.3.5 - Removed from Game!)
-						un(2, i(55273)), 	-- Beauty's Chew Toy (7.3.5 - Removed from Game!)
-						un(2, i(55276)),	-- Kibble (7.3.5 - Removed from Game!)
-					}),								
+					un(2, i(55277)), 	-- Beauty's Favorite Bone (7.3.5 - Removed from Game!)
+					un(2, i(55274)), 	-- Beauty's Plate (7.3.5 - Removed from Game!)
+					un(2, i(55275)), 	-- Beauty's Silken Ribbon (7.3.5 - Removed from Game!)
+					un(2, i(55273)), 	-- Beauty's Chew Toy (7.3.5 - Removed from Game!)
+					un(2, i(55276)),	-- Kibble (7.3.5 - Removed from Game!)
 				})),
 				cr(39705, e(109, {	-- Ascendent Lord Obsidius
 					{	-- Blackrock Caverns
@@ -189,17 +181,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56315), 	-- Twitching Shadows
 					i(56323), 	-- Clutches of Dying Light
 					i(56320),	-- Witching Hourglass
-					nld({	-- Legacy
-						un(2, i(55782)), 	-- Amber Messenger (7.3.5 - Removed from Game!)
-						un(2, i(55788)), 	-- Crepuscular Shield (7.3.5 - Removed from Game!)
-						un(2, i(55785)), 	-- Willowy Crown (7.3.5 - Removed from Game!)
-						un(2, i(55781)),	-- Carrier Wave Pendant (7.3.5 - Removed from Game!)
-						un(2, i(55786)), 	-- Kyrstel Mantle (7.3.5 - Removed from Game!)
-						un(2, i(55779)), 	-- Raz's Pauldrons (7.3.5 - Removed from Game!)
-						un(2, i(55780)), 	-- Twitching Shadows (7.3.5 - Removed from Game!)
-						un(2, i(55784)), 	-- Clutches of Dying Light (7.3.5 - Removed from Game!)
-						un(2, i(55787)),	-- Witching Hourglass (7.3.5 - Removed from Game!)
-					}),								
+					un(2, i(55782)), 	-- Amber Messenger (7.3.5 - Removed from Game!)
+					un(2, i(55788)), 	-- Crepuscular Shield (7.3.5 - Removed from Game!)
+					un(2, i(55785)), 	-- Willowy Crown (7.3.5 - Removed from Game!)
+					un(2, i(55781)),	-- Carrier Wave Pendant (7.3.5 - Removed from Game!)
+					un(2, i(55786)), 	-- Kyrstel Mantle (7.3.5 - Removed from Game!)
+					un(2, i(55779)), 	-- Raz's Pauldrons (7.3.5 - Removed from Game!)
+					un(2, i(55780)), 	-- Twitching Shadows (7.3.5 - Removed from Game!)
+					un(2, i(55784)), 	-- Clutches of Dying Light (7.3.5 - Removed from Game!)
+					un(2, i(55787)),	-- Witching Hourglass (7.3.5 - Removed from Game!)
 				})),
 			}),
 			d(  2, {	-- Heroic

@@ -11,25 +11,55 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["groups"] = {
 					n(-17, {	-- Quests
-						{
-							["questID"] = 29188,	-- A Troll Among Trolls
+						{	-- A Troll Among Trolls
+							["questID"] = 29188,
 							["qg"] = 23761,	-- Quest Giver: Prigmon
 							["u"] = 2,			-- Legacy Content
 						},
-						qg(52933, q(29217)),	-- The Captive Scouts
-						qg(52925, q(29186, {	-- The Hex Lord's Fetish
-							i(69595),	-- Fetish Greaves
-							i(69594),	-- T'wansi's Handwraps
-							i(69596),	-- Voodoo Hunting Bow
-							i(69748),	-- Tattered Hexcloth Bag
-						})),
-						qg(52924, q(11196, {	-- Warlord of the Amani
-							i(69599),	-- Pauldrons of Ambition
-							i(69598),	-- Robes of Dissention
-						})),
+						q(29217, {	-- The Captive Scouts
+							["qg"] = 52933,	-- Blood Guard Hakkuz
+						}),
+						q(29186, {	-- The Hex Lord's Fetish
+							["qg"] = 52925,	-- Witch Doctor T'wansi
+							["g"] = {
+								i(69595),	-- Fetish Greaves
+								i(69594),	-- T'wansi's Handwraps
+								i(69596),	-- Voodoo Hunting Bow
+								i(69748),	-- Tattered Hexcloth Bag
+							},
+						}),
+						q(11196, {	-- Warlord of the Amani
+							["qg"] = 52924,	-- Vol'jin
+							["g"] = {
+								i(69599),	-- Pauldrons of Ambition
+								i(69598),	-- Robes of Dissention
+							},
+						}),
 					}),
 					n(0, {	-- Zone Drop
-						i(69801),	-- Amani Armguards
+						i(69801, {	-- Amani Armguards
+							["crs"] = {
+								23584,	-- Amani Bear
+								23834,	-- Amani Dragonhawk
+								24530,	-- Amani Elder Lynx
+								24043,	-- Amani Lynx
+								24064,	-- Amani Lynx Cub
+								23542,	-- Amani'shi Axe Thrower
+								24059,	-- Amani'shi Beast Tamer
+								24374,	-- Amani'shi Berserker
+								23596,	-- Amani'shi Flame Caster
+								23597,	-- Amani'shi Guardian
+								24065,	-- Amani'shi Handler
+								24175,	-- Amani'shi Lookout
+								23581,	-- Amani'shi Medicine Man
+								23586,	-- Amani'shi Scout
+								24549,	-- Amani'shi Tempest
+								23774,	-- Amani'shi Trainer
+								23582,	-- Amani'shi Tribesman
+								23580,	-- Amani'shi Warbringer
+								24138,	-- Tamed Amani Crocolisk
+							},
+						}),
 						i(33865, {	-- Amani Hex Stick
 							n(24396, { 	-- Forest Frog
 								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
@@ -88,10 +118,52 @@ _.Instances = { tier(4, {	-- Cataclysm
 								},
 							}),
 						}),
-						i(69797),	-- Charmbinder Grips
+						i(69797, {	-- Charmbinder Grips
+							["crs"] = {
+								23584,	-- Amani Bear
+								23834,	-- Amani Dragonhawk
+								24530,	-- Amani Elder Lynx
+								24043,	-- Amani Lynx
+								24064,	-- Amani Lynx Cub
+								23542,	-- Amani'shi Axe Thrower
+								24059,	-- Amani'shi Beast Tamer
+								24374,	-- Amani'shi Berserker
+								23596,	-- Amani'shi Flame Caster
+								23597,	-- Amani'shi Guardian
+								24065,	-- Amani'shi Handler
+								23581,	-- Amani'shi Medicine Man
+								23586,	-- Amani'shi Scout
+								24549,	-- Amani'shi Tempest
+								23774,	-- Amani'shi Trainer
+								23582,	-- Amani'shi Tribesman
+								23580,	-- Amani'shi Warbringer
+								24138,	-- Tamed Amani Crocolisk
+							},
+						}),
 						i(69802),	-- Band of the Gurubashi Berserker
+						i(69798, {	-- Knotted Handwraps
+							["crs"] = {
+								23584,	-- Amani Bear
+								23834,	-- Amani Dragonhawk
+								24530,	-- Amani Elder Lynx
+								24043,	-- Amani Lynx
+								24064,	-- Amani Lynx Cub
+								23542,	-- Amani'shi Axe Thrower
+								24059,	-- Amani'shi Beast Tamer
+								24374,	-- Amani'shi Berserker
+								23596,	-- Amani'shi Flame Caster
+								23597,	-- Amani'shi Guardian
+								24065,	-- Amani'shi Handler
+								23581,	-- Amani'shi Medicine Man
+								23586,	-- Amani'shi Scout
+								24549,	-- Amani'shi Tempest
+								23774,	-- Amani'shi Trainer
+								23582,	-- Amani'shi Tribesman
+								23580,	-- Amani'shi Warbringer
+								24138,	-- Tamed Amani Crocolisk
+							},
+						}),
 						i(69799),	-- Quickfinger Ring
-						i(69798),	-- Knotted Handwraps
 					}),
 					n(-7777, {	-- Timed Events
 						["description"] = "Enter the instance and talk to Vol'Jin to start the event and open the doors. You will now have 15 minutes to defeat the first animal-boss of your choice. Any of the loa spirit bosses will do and there is no required order, but two of them will add extra time to the timer.\n\n    Killing Nalorakk (bear) will add 5 minutes to your timer.\n    Killing Akil'zon (eagle) will add 5 minutes to your timer.\n    Other bosses will not grant additional time.\n\nThe loot from the event is dependent on the number of hostages you rescue.",

@@ -13,20 +13,22 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
-				qg(26527, q(13149, {	-- Dispelling Illusions
-					["groups"] = {
+				q(13149, {	-- Dispelling Illusions
+					["qg"] = 26527,	-- Chromie
+					["g"] = {
 						i(37888),	-- Arcane Disruptor
 					},
-				})),
-				qg(26527, q(13151, {	-- A Royal Escort
-					["sourceQuests"] = { 13149 },	-- Dispelling Illusions
-					["groups"] = {
+				}),
+				q(13151, {	-- A Royal Escort
+					["qg"] = 26527,	-- Chromie
+					["sourceQuest"] = 13149,	-- Dispelling Illusions
+					["g"] = {
 						i(44396),	-- Gloves of the Time Guardian
 						i(44397),	-- Handwraps of Preserved History
 						i(44398),	-- Grips of Chronological Events
 						i(44399),	-- Gauntlets of The Culling
 					},
-				})),
+				}),
 			}),
 			n(0,   {	-- Zone Drop
 				i(37115, {	-- Crusader's Square Pauldrons

@@ -154,6 +154,12 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
 					}),
+					--[[ this was listed in a metadata file. putting it here temporarily
+					qh(8861, {	-- New Year Celebrations!
+						["qg"] = 15732,	-- Wonderform Operator
+						["maps"] = { 88 },	-- Thunder Bluff
+					}),
+					]]--
 					q(6962, {	-- Treats for Great-father Winter
 						["qg"] = 13445,	-- Great-father Winter
 						["maps"] = { 85 },	-- Orgrimmar

@@ -15,7 +15,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 32,		-- Scuttler's Shell [Criteria]
 								["itemID"] = 104293,		-- Scuttler's Shell [Item]
-								["dr"] = 10,
 							},
 						}),
 						{	-- Angry Sprite & Scary Sprite
@@ -31,7 +30,6 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 53,		-- Dandelion Frolicker [Criteria]
 									["itemID"] = 104160,		-- Dandelion Frolicker [Item]
-									["dr"] = 1,
 								},
 							},
 						},
@@ -40,13 +38,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 36,		-- Faintly-Glowing Herb [Criteria]
 								["itemID"] = 104289,	-- Faintly-Glowing Herb [Item]
-								["dr"] = 10,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 7,		-- Big Bag of Herbs [Criteria]
 								["itemID"] = 106130,	-- Big Bag of Herbs [Item]
-								["dr"] = 1.0,
 							},
 						}),
 						n(72897, {	-- Blazebound Chanter
@@ -54,13 +50,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
 								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 1.0,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 24,		-- Blizzard Stone [Criteria]
 								["itemID"] = 104304,	-- Blizzard Stone [Item]
-								["dr"] = 0.5,
 							},
 						}),
 						n(72762, {	-- Brilliant Windfeather
@@ -68,7 +62,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 38,		-- Windfeather Plume [Criteria]
 								["itemID"] = 104287,	-- Windfeather Plume [Item]
-								["dr"] = 8,
 							},
 						}),
 						n(72895, { 	-- Burning Berserker
@@ -76,13 +69,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 6,		-- Forager's Gloves [Criteria]
 								["itemID"] = 86566,	-- Forager's Gloves [Item]
-								["dr"] = 1.2,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 7,		-- Big Bag of Herbs [Criteria]
 								["itemID"] = 106130,	-- Big Bag of Herbs [Item]
-								["dr"] = 1.0,
 							},
 						}),
 						o(222685, {	-- Crane Nest
@@ -91,7 +82,6 @@ _.Zones =
 									["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 									["criteriaID"] = 55,		-- Azure Crane Chick [Criteria]
 									["itemID"] = 104157,	-- Azure Crane Chick [Item]
-									["dr"] = 3,
 								},
 							},
 							["model"] = "World\\Expansion01\\Doodads\\Generic\\Arakkoa\\Nest\\AK_NestDebris01.mdx",
@@ -103,11 +93,10 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 39,		-- Quivering Firestorm Egg [Criteria]
 								["itemID"] = 104286,	-- Quivering Firestorm Egg [Item]
-								["dr"] = 8,
 							},
 						}),
 						n(71920, {	-- Cursed Hozen Swabby
-							dr(8.0, i(104015, {	-- Barnacle Encrusted Key
+							i(104015, {	-- Barnacle Encrusted Key
 								{
 									["objectID"] = 220832,	-- Sunken Treasure
 									["description"] = "In the belly of the sunken ship.",
@@ -117,18 +106,16 @@ _.Zones =
 											["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 											["criteriaID"] = 1,		-- Cursed Swabby Helmet [Criteria]
 											["itemID"] = 134024,	-- Cursed Swabby Helmet [Item]
-											["dr"] = 100,
 										},
 									},
 								},
-							})),
+							}),
 						}),
 						n(72771, {	-- Damp Shambler
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
 								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
-								["dr"] = 47,
 							},
 						}),
 						n(72841, {	-- Death Adder
@@ -136,7 +123,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 33,		-- Partially-Digested Meal [Criteria]
 								["itemID"] = 104292,	-- Partially-Digested Meal [Item]
-								["dr"] = 2,
 							},
 						}),
 						n(72809, { 	-- Eroded Cliffdweller
@@ -144,13 +130,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 42,		-- Glinting Pile of Stone [Criteria]
 								["itemID"] = 104263,	-- Glinting Pile of Stone [Item]
-								["dr"] = 0.9,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 43,		-- Odd Polished Stone [Criteria]
 								["itemID"] = 104262,	-- Odd Polished Stone [Item]
-								["dr"] = 0.3,
 							},
 						}),
 						n(72896, { 	-- Eternal Kilnmaster
@@ -158,13 +142,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 29,		-- Blazing Sigil of Ordos [Criteria]
 								["itemID"] = 104297,	-- Blazing Sigil of Ordos [Item]
-								["dr"] = 1.8,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 20,		-- Eternal Kiln [Criteria]
 								["itemID"] = 104309,	-- Eternal Kiln [Item]
-								["dr"] = 0.5,
 							},
 						}),
 						n(73162, { 	-- Foreboding Flame
@@ -172,22 +154,19 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 44,		-- Glowing Blue Ash [Criteria]
 								["itemID"] = 104261,	-- Glowing Blue Ash [Item]
-								["dr"] = 0.9,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 50,		-- Ominous Flame [Criteria]
 								["itemID"] = 104166,	-- Ominous Flame [Item]
-								["dr"] = 0.5,
 							},
-							dr(0.7, i(104227)),	-- Technique: Glyph of Pillar of Light
+							i(104227),	-- Technique: Glyph of Pillar of Light
 						}),
 						n(72898, { 	-- High Priest of Ordos
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 14,		-- Ash-Covered Horn [Criteria]
 								["itemID"] = 104329,		-- Ash-Covered Horn [Item]
-								["dr"] = 1.3,
 							},
 						}),
 						n(72767, { 	-- Jademist Dancer
@@ -195,17 +174,14 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 37,		-- Condensed Jademist [Criteria]
 								["itemID"] = 104288,	-- Condensed Jademist [Item]
-								["dr"] = 8,
 							},
 							{
 								["itemID"] = 104224,	-- Technique: Glyph of Evaporation
-								["dr"] = 0.7,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 51,		-- Jademist Dancer [Criteria]
 								["itemID"] = 104164,	-- Jademist Dancer [Item]
-								["dr"] = 0.5,
 							},
 						}),
 						n(72888, { 	-- Molten Guardian
@@ -213,7 +189,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 15,		-- Cauterizing Core [Criteria]
 								["itemID"] = 104328,		-- Cauterizing Core [Item]
-								["dr"] = 2,
 							},
 						}),
 						n(72875, {	-- Ordon Candlekeeper
@@ -221,7 +196,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 5,		-- Battle Horn [Criteria]
 								["itemID"] = 86565,	-- Battle Horn [Item]
-								["dr"] = 0.5,
 							},
 						}),
 						n(72894, {	-- Ordon Fire-Watcher
@@ -229,13 +203,11 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 29,		-- Blazing Sigil of Ordos [Criteria]
 								["itemID"] = 104297,	-- Blazing Sigil of Ordos [Item]
-								["dr"] = 1.3,
 							},
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 30,		-- Ordon Ceremonial Robes [Criteria]
 								["itemID"] = 104296,	-- Ordon Ceremonial Robes [Item]
-								["dr"] = 0.9,
 							},
 						}),
 						n(72892, {	-- Ordon Oathguard
@@ -243,7 +215,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 2,		-- Warped Warning Sign [Criteria]
 								["itemID"] = 104330,	-- Warped Warning Sign [Item]
-								["dr"] = 5,
 							},
 						}),
 						n(72805, {	-- Primal Stalker
@@ -251,21 +222,6 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 41,		-- Pristine Stalker Hide [Criteria]
 								["itemID"] = 104268,	-- Pristine Stalker Hide [Item]
-								["dr"] = 1.0,
-							},
-						}),
-						n(73157, {	-- Rock Moss
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 19,		-- Strange Glowing Mushroom [Criteria]
-								["itemID"] = 104312,		-- Strange Glowing Mushroom [Item]
-								["dr"] = 51,
-							},
-							{
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
-								["criteriaID"] = 18,		-- Golden Moss [Criteria]
-								["itemID"] = 104313,		-- Golden Moss [Item]
-								["dr"] = 3.0,
 							},
 						}),
 						n(73018, {	-- Spectral Brewmaster
@@ -273,38 +229,34 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 11,		-- Thick Pi'jiu Brew [Criteria]
 								["itemID"] = 104335,	-- Thick Pi'jiu Brew [Item]
-								["dr"] = 8,
 							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
+							i(104235),		-- Technique: Glyph of Lingering Ancestors
 						}),
 						n(73025, {	-- Spectral Mistweaver
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 12,		-- Misty Pi'jiu Brew [Criteria]
 								["itemID"] = 104334,	-- Misty Pi'jiu Brew [Item]
-								["dr"] = 8,
 							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
+							i(104235),		-- Technique: Glyph of Lingering Ancestors
 						}),
 						n(73021, {	-- Spectral Windwalker
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 10,		-- Bubbling Pi'jiu Brew [Criteria]
 								["itemID"] = 104336,	-- Bubbling Pi'jiu Brew [Item]
-								["dr"] = 8,
 							},
-							dr(0.4, i(104235)),		-- Technique: Glyph of Lingering Ancestors
+							i(104235),		-- Technique: Glyph of Lingering Ancestors
 						}),
 						n(72908, {	-- Spotted Swarmer
 							{
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag [Achievement]
 								["criteriaID"] = 35,		-- Sticky Silkworm Goo [Criteria]
 								["itemID"] = 104290,		-- Sticky Silkworm Goo [Item]
-								["dr"] = 1.8,
 							},
 						}),
 						n(72761, {	-- Windfeather Nestkeeper
-							dr(0.4, i(104231)),	-- Technique: Glyph of Inspired Hymns
+							i(104231),	-- Technique: Glyph of Inspired Hymns
 						}),
 						i(103642),	-- Book of the Ages
 						i(104217),	-- Charred Recipe

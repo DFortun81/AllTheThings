@@ -36,7 +36,7 @@ _.Achievements =
 					un(2, ach(425)),		-- Atiesh, Greatstaff of the Guardian
 					un(2, ach(12111)),		-- Cutting Edge: Argus the Unmaker
 					un(2, ach(9443)),		-- Cutting Edge: Blackhand's Crucible
-					ach(12535),				-- Cutting Edge: G'huun
+					un(2, ach(12535)),		-- Cutting Edge: G'huun
 					un(2, ach(8400)),		-- Cutting Edge: Garrosh Hellscream (10 player)
 					un(2, ach(8401)),		-- Cutting Edge: Garrosh Hellscream (25 player)
 					un(2, ach(7486)),		-- Cutting Edge: Grand Empress Shek'zeer

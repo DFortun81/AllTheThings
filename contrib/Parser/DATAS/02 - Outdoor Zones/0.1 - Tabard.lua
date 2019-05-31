@@ -52,9 +52,6 @@ _.Zones =
 			{	-- Aldor Tabard
 				["itemID"] = 31779,	-- Aldor Tabard
 			},
-			{	-- Arathor Battle Tabard
-				["itemID"] = 20132,	-- Arathor Battle Tabard
-			},
 			{	-- Cenarion Expedition Tabard
 				["itemID"] = 31804,	-- Cenarion Expedition Tabard
 			},

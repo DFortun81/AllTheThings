@@ -219,24 +219,40 @@ _.Zones =
 								}),
 							}),
 							na(-207, {	-- Lightforged Draenei
-								qg(126319, qa(49698)),	-- The Lightforged
-								qg(126319, qa(49266)),	-- Captain Fareeya
-								qg(126319, qa(50071, {	-- For the Light!
-									ach(12243, {	-- Allied Races: Lightforged Draenei
-										a(i(155656)),	-- Lightforged Felcrusher
-									}),
-								})),
+								qa(49698, {	-- The Lightforged
+									["qg"] = 126319,	-- High Exarch Turalyon
+								}),
+								qa(49266, {	-- Captain Fareeya
+									["qg"] = 126319,	-- High Exarch Turalyon
+								}),
+								qa(50071, {	-- For the Light!
+									["qg"] = 126319,	-- High Exarch Turalyon
+									["g"] = {
+										ach(12243, {	-- Allied Races: Lightforged Draenei
+											a(i(155656)),	-- Lightforged Felcrusher
+										}),
+									},
+								}),
 							}),
 							na(-208, {	-- Void Elves
-								qg(126321, qa(49787, {	-- The Ghostlands
-								-- qg(126321, qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
-									ach(12242, {	-- Allied Races: Void Elf
-										a(i(156486)),	-- Starcursed Voidstrider
-									}),
-								})),
+								qa(49787, {	-- The Ghostlands
+									["qg"] = 126321,	-- Alleria Windrunner
+									["g"] = {
+										ach(12242, {	-- Allied Races: Void Elf
+											a(i(156486)),	-- Starcursed Voidstrider
+										}),
+									},
+								}),
+								qa(48787, {	-- Telogrus Rift. Quest got removed & renamed to 'not used reuse me' & talks about Ranishu's in Voldun.
+									["u"] = 1,
+									["qg"] = 126321,	-- Alleria Windrunner
+								}),
+							}),
+							qa(50248, {	-- A Second Ally for the Cause
+								["u"] = 40,
+								["qg"] = 126301,	-- Anduin Wrynn
 							}),
 							qa(49929),	-- The Call for Allies
-							un(40, qg(126301, qa(50248))),	-- A Second Ally for the Cause
 						},
 					}),
 					qa(28393, {	-- A Dangerous Alliance
@@ -297,21 +313,22 @@ _.Zones =
 					qa(44473)),	-- A Weapon of the Alliance
 --]]
 					qa(27344, {	-- A Well-Earned Reward
+						["qg"] = 44247,	-- Wulf Hansreim
+						["classes"] = { 3 },	-- Hunter
 						["g"] = {
 							i(65465),	-- Crossbow of the Crown
 						},
-						["qg"] = 44247,	-- Wulf Hansreim
-						["classes"] = { 3 },	-- Hunter
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
 					qa(11451)),	-- Alicia's Poem
-					qg(44395, qa(27273, {	-- An Invitation from Moonglade
+					qa(27273, {	-- An Invitation from Moonglade
+						["qg"] = 44395,	-- 
 						["classes"] = {11},
-					})),
-COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
+					}),
+COORDINATES			qa(27273, {	-- An Invitation from Moonglade
+						["qg"] = 5504,	-- 
 						["classes"] = {11},
-					})),
+					}),
 					qa(325)),	-- Armed and Ready
 					qh(40976)),	-- Audience with the Warchief
 					qa(32008)),	-- Audrey Burnhep
@@ -324,13 +341,13 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qa(26488)),	-- Big Gulp
 --]]
 					qa(27353, {	-- Blessings of the Elements
+						["qg"] = 20407,	-- Farseer Umbrua
+						["classes"] = { 7 },	-- Shaman
+--						["sourceQuests"] = {  },	-- 
 						["g"] = {
 							i(65488),	-- Battleaxe of the Farseer
 							i(65489),	-- Spell Axe of the Farseer
 						},
-						["qg"] = 20407,	-- Farseer Umbrua
-						["classes"] = { 7 },	-- Shaman
---						["sourceQuests"] = {  },	-- 
 					}),
 					qa(29412, {	-- Blown Away
 						["qg"] = 54117,	-- Vin
@@ -376,7 +393,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 						},
 					}),
 --[[
-					qg(1141, qa(1271),	-- Feast at the Blue Recluse
+					qa(1271, {	-- Feast at the Blue Recluse
+						["qg"] = 1141,	-- 
+					}),
 					qa(26177),	-- Feeling Crabby?
 					qa(29398),	-- Fencing the Goods
 					qa(24848),	-- Fireworks At The Gilded Rose
@@ -490,9 +509,10 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					qa(28260)),	-- Meet with Wulf Hansreim
 					qa(28295)),	-- Meetup with the Caravan
 					qa(29392)),	-- Missing Heirlooms
-					qg(44395, q(28289, {	-- Moonglade Calls
+					q(28289, {	-- Moonglade Calls
+						["qg"] = 44395,	-- 
 						["classes"] = {11},
-					})),
+					}),
 					qa(11924)),	-- More Torch Catching
 					qa(11921)),	-- More Torch Tossing
 					qa(8860)),	-- New Year Celebrations!
@@ -513,7 +533,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 --]]					
 --[[					
 					qa(26396)),	-- Return to Argus
-					qg(107574, qa(27241)),	-- Return to Jaina (add'l QG 29611)
+					qa(27241, {	-- Return to Jaina (add'l QG 29611)
+						["qg"] = 107574,	-- 
+					}),
 					qa(26370)),	-- Return to Sentinel Hill
 					qa(26442)),	-- Rock Lobster
 					qa(44471)),	-- Second Sight
@@ -583,7 +605,9 @@ COORDINATES			qg(5504, qa(27273, {	-- An Invitation from Moonglade
 					}),
 --[[					
 					qa(27398),	-- The Battle Is Won, The War Goes On
-					qg(45226, qa(29439)),	-- The Call of the World-Shaman
+					qa(29439, {	-- The Call of the World-Shaman
+						["qg"] = 45226,	-- 
+					}),
 					qa(39691),	-- The Call of War
 					qa(27274),	-- The Chief Surgeon
 					qa(29403),	-- The Collector's Agent

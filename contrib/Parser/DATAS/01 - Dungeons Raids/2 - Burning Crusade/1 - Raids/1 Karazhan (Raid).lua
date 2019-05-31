@@ -48,13 +48,13 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(0, {	-- Zone Drop
 				n(16406, {	-- Phantom Attendant
-					dr(0.30, i(21903)),	-- Pattern: Soulcloth Shoulders
+					i(21903),	-- Pattern: Soulcloth Shoulders
 				}),
 				n(16472, {	-- Phantom Stagehand
-					dr(11.0, i(22545)),	-- Formula: Enchant Boots - Surefooted [From 1 Drop - Done]
+					i(22545),	-- Formula: Enchant Boots - Surefooted [From 1 Drop - Done]
 				}),
 				n(16408, {	-- Phantom Valet
-					dr(0.80, i(21904)),	-- Pattern: Soulcloth Vest
+					i(21904),	-- Pattern: Soulcloth Vest
 				}),
 				i(30642),	-- Drape of the Righteous
 				i(30668),	-- Grasp of the Dead

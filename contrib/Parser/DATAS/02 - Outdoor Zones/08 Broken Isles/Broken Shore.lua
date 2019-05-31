@@ -826,7 +826,9 @@ _.Zones =
 					}),
 					q(44057),	-- A "Noble" Event
 					q(45571),	-- A Bit of Espionage
-					qg(119531, q(44720)),	-- A Call to Action
+					q(44720, {	-- A Call to Action
+						["qg"] = 119531,	-- Muninn
+					}),
 					q(45343),	-- A Curious Contagion
 					qa(46268),	-- A Found Memento
 					q(46208),	-- A Godly Invitation

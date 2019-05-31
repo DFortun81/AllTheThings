@@ -7,9 +7,15 @@ L.SAVED_TO_DJ_INSTANCES["Le Puits de soleil"] = "Plateau du Puits de soleil";
 L.SAVED_TO_DJ_INSTANCES["Donjon de la Tempête"] = "L’Œil";
 L.SAVED_TO_DJ_INSTANCES["Glissecroc : caverne du sanctuaire du Serpent"] = "Caverne du sanctuaire du Serpent";
 
+local a = L.NPC_ID_NAMES;
+for key,value in pairs({
+	-- Enter translated NPCID's here
+})
+do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
+	-- Enter translated OBJECTID's here
 	[31] = "Statue du vieux lion",
 	[34] = "Vieille cruche",
 	[55] = "Un corps à moitié dévoré",

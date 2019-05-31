@@ -21,10 +21,39 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66938),	-- Tooranu's Spaulders
 					}),
 				}),
-				n(0,   {	-- Zone Drop
-					i(56220),	-- Abandoned Dark Iron Ring
-					i(56218),	-- Curse-Tainted Leggings		
-					i(56219),	-- Shroud of Dark Memories
+				n(0, {	-- Zone Drop
+					["crs"] = {
+						39415,	-- Ascended Flameseeker
+						40272,	-- Ascended Rockbreaker
+						40273,	-- Ascended Waterlasher
+						39414,	-- Ascended Windwalker
+						39854,	-- Azureborne Guardian
+						40291,	-- Azureborne Seer
+						39855,	-- Azureborne Seer
+						39909,	-- Azureborne Warlord
+						39381,	-- Crimsonborne Guardian
+						39405,	-- Crimsonborne Seer
+						40290,	-- Crimsonborne Seer
+						39626,	-- Crimsonborne Warlord
+						40166,	-- Enslaved Gronn Brute
+						39392,	-- Faceless Corrupter
+						41073,	-- Twilight Armsmaster
+						40306,	-- Twilight Armsmaster
+						40167,	-- Twilight Beguiler
+						39890,	-- Twilight Earthshaper
+						40448,	-- Twilight Enforcer
+						39956,	-- Twilight Enforcer
+						39870,	-- Twilight Firecatcher
+						39962,	-- Twilight Stormbreaker
+						40270,	-- Twilight Thundercaller
+						40268,	-- Twilight War-Mage
+						39873,	-- Twilight Wyrmcaller
+					},
+					["groups"] = {
+						i(56220),	-- Abandoned Dark Iron Ring
+						i(56218),	-- Curse-Tainted Leggings		
+						i(56219),	-- Shroud of Dark Memories
+					},
 				}),			
 				cr(39625, e(131, {	-- General Umbriss
 					i(56441),	-- Modgug's Blade

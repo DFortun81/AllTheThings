@@ -40,6 +40,7 @@ _.WorldDrops =
 				n(-322, {	-- Back
 					i(116720),	-- Ancestral Cloak
 					i(118814),	-- Berserker's Windwrap
+					i(116693),	-- Coldsinger Cloak
 					i(118815),	-- Double Layered Frostboar Cloak
 					i(118807),	-- Dunewalker Wrap
 					i(118809),	-- Eldodin's Elegant Drape

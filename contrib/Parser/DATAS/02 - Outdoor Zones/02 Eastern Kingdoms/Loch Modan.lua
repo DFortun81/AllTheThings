@@ -32,38 +32,66 @@ _.Zones =
 						crit(4),		-- The Farstrider Lodge
 					})),
 ]]--				
-					qg(1092, qa(26148, {	-- A Decisive Strike
-						i(58989),	-- Belt of the Valley of Kings
-						i(58990),	-- Rugelfuss Bracers
-						i(58988),	-- Unbound Leggings
-						i(131492),	-- Waistguard of the Valley of Kings
-					})),
+					qa(26148, {	-- A Decisive Strike
+						["qg"] = 1092,	-- 
+						["g"] = {
+							i(58989),	-- Belt of the Valley of Kings
+							i(58990),	-- Rugelfuss Bracers
+							i(58988),	-- Unbound Leggings
+							i(131492),	-- Waistguard of the Valley of Kings
+						},
+					}),
 --[[
-					qg(44345, qa(26929)),	-- A Load of Croc
-					qg(44200, qa(26846)),	-- A Nasty Exploit
-					qg(1343, qa(26843)),	-- A Tiny, Clever Commander
-					qg(2057, qa(454)),	-- After the Ambush
-					qg(1073, qa(27115)),	-- Ando's Call
-					qg(44345, qa(26868)),	-- Axis of Awful
---]]
---[[
-					qg(6241, qa(1655, {	-- Bailor's Ore Shipment (REMOVED)
-						["classes"] = {2},	-- Paladin
-					})),
+					qa(26929, {	-- A Load of Croc
+						["qg"] = 44345,	-- 
+					}),
+					qa(26846, {	-- A Nasty Exploit
+						["qg"] = 44200,	-- 
+					}),
+					qa(26843, {	-- A Tiny, Clever Commander
+						["qg"] = 1343,	-- 
+					}),
+					qa(454, {	-- After the Ambush
+						["qg"] = 2057,	-- 
+					}),
+					qa(27115, {	-- Ando's Call
+						["qg"] = 1073,	-- 
+					}),
+					qa(26868, {	-- Axis of Awful
+						["qg"] = 44345,	-- 
+					}),
 --]]					
-					qg(1090, qa(26147, {	-- Bigger and Uglier
-						i(58995),	-- Bonesnapper Bracers
-						i(131491),	-- Bonesnapper Cuffs
-						i(58996),	-- Mountaineer's Belt
-						i(58994),	-- Trogg-Slayer Boots
-					})),
+					qa(1655, {	-- Bailor's Ore Shipment
+						["u"] = 40,
+						["qg"] = 6241,	-- 
+						["classes"] = {2},	-- Paladin
+					}),
+					qa(26147, {	-- Bigger and Uglier
+						["qg"] = 1090,	-- 
+						["g"] = {
+							i(58995),	-- Bonesnapper Bracers
+							i(131491),	-- Bonesnapper Cuffs
+							i(58996),	-- Mountaineer's Belt
+							i(58994),	-- Trogg-Slayer Boots
+						},
+					}),
 --[[					
-					qg(6577, qa(27032)),	-- Bird is the Word
-					qg(1340, qa(26932)),	-- Buzz Off
-					qg(1343, qa(26137)),	-- Checking on the Boys
-					qg(1073, qa(27077)),	-- Clutching at Chaos
-					qg(44859, qa(27026)),	-- Defcon: Bobcat
---					q(13652),	-- Defense of the Stonewrought Dam (REMOVED)
+					qa(27032, {	-- Bird is the Word
+						["qg"] = 6577,	-- 
+					}),
+					qa(26932, {	-- Buzz Off
+						["qg"] = 1340,	-- 
+					}),
+					qa(26137, {	-- Checking on the Boys
+						["qg"] = 1343,	-- 
+					}),
+					qa(27077, {	-- Clutching at Chaos
+						["qg"] = 1073,	-- 
+					}),
+					qa(27026, {	-- Defcon: Bobcat
+						["qg"] = 44859,	-- 
+					}),
+					un(40, q(13652)),	-- Defense of the Stonewrought Dam (REMOVED)
 					o(194387, {	-- Stolen Explorers' League Document
 						qa(13656),	-- Explorers' League Document (1 of 6)
 					}),
@@ -82,163 +110,245 @@ _.Zones =
 					o(194390, {	-- Stolen Explorers' League Document
 						qa(13659),	-- Explorers' League Document (6 of 6)
 					}),
-					qg(44870, qa(27074)),	-- Fight the Hammer
+					qa(27074, {	-- Fight the Hammer
+						["qg"] = 44870,	-- 
+					}),
 --]]					
-					qg(1343, qa(26863, {	-- Filthy Paws
-						i(58978),	-- Filthy Paw
-						i(58980),	-- Ironheart Chain Cloak
-						i(58979),	-- Silver Stream Shield
-					})),
+					qa(26863, {	-- Filthy Paws
+						["qg"] = 1343,	-- 
+						["g"] = {
+							i(58978),	-- Filthy Paw
+							i(58980),	-- Ironheart Chain Cloak
+							i(58979),	-- Silver Stream Shield
+						},
+					}),
 --[[					
-					qg(1154, qa(27030)),	-- Foxtails By The Handful
+					qa(27030, {	-- Foxtails By The Handful
+						["qg"] = 1154,	-- 
+					}),
 --]]
-					qg(1345, qa(26961, {	-- Gathering Idols
-						i(58997),	-- Carved Stone Mace
-						i(58999),	-- Thelsamar Breastplate
-						i(58998),	-- Trogg Kickers
-						i(131628),	-- Trogg Stompers
-					})),
+					qa(26961, {	-- Gathering Idols
+						["qg"] = 1345,	-- 
+						["g"] = {
+							i(58997),	-- Carved Stone Mace
+							i(58999),	-- Thelsamar Breastplate
+							i(58998),	-- Trogg Kickers
+							i(131628),	-- Trogg Stompers
+						},
+					}),
 --[[					
-					qg(1073, qa(27078)),	-- Gor'kresh
-					qg(6577, qa(27034)),	-- He's That Age
+					qa(27078, {	-- Gor'kresh
+						["qg"] = 1073,	-- 
+					}),
+					qa(27034, {	-- He's That Age
+						["qg"] = 6577,	-- 
+					}),
 --]]
 					qa(13661, {	-- Heartfelt Appreciation
-						["groups"] = {	
+						["description"] = "After turning in all six Stolen Explorers' League Documents, this quest will pop up.",
+						["g"] = {	
 							i(58993),	-- Old Dwarven Hammer
 							i(58991),	-- Star Shooter
 							i(156932),	-- Surveyor's Staff 
 							i(58992),	-- Uncovered Breastplate
 							i(131300),	-- Uncovered Chestguard
 						},
-						["description"] = "After turning in all six Stolen Explorers' League Documents, this quest will pop up.",
 					}),
 --[[					
-					qg(1154, qa(27028)),	-- Hornet Hunting
+					qa(27028, {	-- Hornet Hunting
+						["qg"] = 1154,	-- 
+					}),
 --]]
-					qg(1092, qa(26146, {	-- In Defense of the King's Lands
-						i(131490),	-- Greaves of Uncanny Courage
-						i(58985),	-- Leggings of Uncanny Courage
-						i(58986),	-- Stone Stompers
-						i(58984),	-- Stonesplinter Staff
-					})),
+					qa(26146, {	-- In Defense of the King's Lands
+						["qg"] = 1092,	-- 
+						["g"] = {
+							i(131490),	-- Greaves of Uncanny Courage
+							i(58985),	-- Leggings of Uncanny Courage
+							i(58986),	-- Stone Stompers
+							i(58984),	-- Stonesplinter Staff
+						},
+					}),
 --[[					
-					qg(1345, qa(13647)),	-- Joining the Hunt
-					qg(1344, qa(13650)),	-- Keep Your Hands Off The Goods!
-					qg(1343, qa(26844)),	-- Kobold and Kobolder
-					qg(1777, qa(25118)),	-- Looking for Lurkers
-					qg(1092, qa(26176)),	-- Onward to Thelsamar
-					qg(1340, qa(26842)),	-- Out of Gnoll-where
+					qa(13647, {	-- Joining the Hunt
+						["qg"] = 1345,	-- 
+					}),
+					qa(13650, {	-- Keep Your Hands Off The Goods!
+						["qg"] = 1344,	-- 
+					}),
+					qa(26844, {	-- Kobold and Kobolder
+						["qg"] = 1343,	-- 
+					}),
+					qa(25118, {	-- Looking for Lurkers
+						["qg"] = 1777,	-- 
+					}),
+					qa(26176, {	-- Onward to Thelsamar
+						["qg"] = 1092,	-- 
+					}),
+					qa(26842, {	-- Out of Gnoll-where
+						["qg"] = 1340,	-- 
+					}),
 --]]
-					qg(2057, qa(309, { 	-- Protecting the Shipment
-						i(58981),	-- Dastardly Bracers
-						i(58982),	-- Foreman Gloves
-						i(131204),	-- Foreman Handguards
-						i(58983),	-- Ironband Legguards
-					})),
+					qa(309, { 	-- Protecting the Shipment
+						["qg"] = 2057,	-- 
+						["g"] = {
+							i(58981),	-- Dastardly Bracers
+							i(58982),	-- Foreman Gloves
+							i(131204),	-- Foreman Handguards
+							i(58983),	-- Ironband Legguards
+						},
+					}),
 --[[					
-					qg(1105, qa(301)),	-- Report to Ironforge
---					qg(1105, qa(273)),	-- Resupplying the Excavation (REMOVED, replaced with next quest)
-					qg(1105, qa(13639)),	-- Resupplying the Excavation
-]]--
---[[
-					qg(1073, qa(27075)),	-- Servants of Cho'gall
-					qg(44618, qa(27033)),	-- Skystrider's Heart
-					qg(44345, qa(26928)),	-- Smells Like A Plan
-					qg(1960, qa(13635)),	-- South Gate Status Report
-					qg(44870, qa(27035)),	-- Standing Up
---					qa(1338),	-- Stormpike's Order (REMOVED)
-					qg(1340, qa(13636)),	-- Stormpike's Orders
-					qg(1340, qa(26927)),	-- Suddenly, Murlocs!
-					qg(1343, qa(26864)),	-- The Bearer of Gnoll-edge
---					q(13638),	-- The Captured Mountaineer (REMOVED)
-					qg(1187, q(27016)),	-- The Joy of Boar Hunting
+					qa(301, {	-- Report to Ironforge
+						["qg"] = 1105,	-- 
+					}),
+					qa(273, {	-- Resupplying the Excavation (REMOVED, replaced with next quest)
+						["u"] = 40,
+						["qg"] = 1105,	-- 
+					}),
+					qa(13639, {	-- Resupplying the Excavation
+						["qg"] = 1105,	-- 
+					}),
+					
+					qa(27075, {	-- Servants of Cho'gall
+						["qg"] = 1073,	-- 
+					}),
+					qa(27033, {	-- Skystrider's Heart
+						["qg"] = 44618,	-- 
+					}),
+					qa(26928, {	-- Smells Like A Plan
+						["qg"] = 44345,	-- 
+					}),
+					qa(13635, {	-- South Gate Status Report
+						["qg"] = 1960,	-- 
+					}),
+					qa(27035, {	-- Standing Up
+						["qg"] = 44870,	-- 
+					}),
+					un(40, qa(1338)),	-- Stormpike's Order (REMOVED)
+					qa(13636, {	-- Stormpike's Orders
+						["qg"] = 1340,	-- 
+					}),
+					qa(26927, {	-- Suddenly, Murlocs!
+						["qg"] = 1340,	-- 
+					}),
+					qa(26864, {	-- The Bearer of Gnoll-edge
+						["qg"] = 1343,	-- 
+					}),
+					un(40, q(13638)),	-- The Captured Mountaineer (REMOVED)
+					q(27016, {	-- The Joy of Boar Hunting
+						["qg"] = 1187,	-- 
+					}),
 --]]
-					qg(1960, qa(26854, {	-- The Lost Pilot
-						i(58970),	-- Mori's Cloak
-						i(58971),	-- Mori's Compass
-						i(58972),	-- Mori's Gear Stick
-						i(156933),	-- Mori's Pocketknife
-					})),
+					qa(26854, {	-- The Lost Pilot
+						["qg"] = 1960,	-- 
+						["g"] = {
+							i(58970),	-- Mori's Cloak
+							i(58971),	-- Mori's Compass
+							i(58972),	-- Mori's Gear Stick
+							i(156933),	-- Mori's Pocketknife
+						},
+					}),
 --[[
-					qg(1089, qa(26145)),	-- The Trogg Threat
-					qg(44870, qa(27116)),	-- The Winds of Loch Modan
+					qa(26145, {	-- The Trogg Threat
+						["qg"] = 1089,	-- 
+					}),
+					qa(27116, {	-- The Winds of Loch Modan
+						["qg"] = 44870,	-- 
+					}),
 --]]
-					qg(1963, qa(26860, {	-- Thelsamar Blood Sausages
-						i(3679),	-- Recipe: Blood Sausage
-					})),
+					qa(26860, {	-- Thelsamar Blood Sausages
+						["qg"] = 1963,	-- 
+						["g"] = {
+							i(3679),	-- Recipe: Blood Sausage
+						},
+					}),
 --[[
-					qg(44859, qa(27025)),	-- Thistle While You Work
+					qa(27025, {	-- Thistle While You Work
+						["qg"] = 44859,	-- 
+					}),
 --]]
-					qg(1187, qa(27037, {	-- Vyrin's Revenge
-						i(59010),	-- Swiftwind Blade
-						i(59008),	-- Unsanitary Gloves
-						i(59009),	-- Vyrin's Belt
-						i(131633),	-- Vyrin's Waistband
-					})),
+					qa(27037, {	-- Vyrin's Revenge
+						["qg"] = 1187,	-- 
+						["g"] = {
+							i(59010),	-- Swiftwind Blade
+							i(59008),	-- Unsanitary Gloves
+							i(59009),	-- Vyrin's Belt
+							i(131633),	-- Vyrin's Waistband
+						},
+					}),
 --[[					
-					qg(1156, qa(27036)),	-- Vyrin's Revenge
+					qa(27036, {	-- Vyrin's Revenge
+						["qg"] = 1156,	-- 
+					}),
 					o(256, {	-- Wanted!
 						qa(13648),	-- WANTED: The Dark Iron Spy
 					}),
-					qg(1343, qa(26845)),	-- Who's In Charge Here?
-					qg(6577, qa(27031)),	-- Wing Nut	
+					qa(26845, {	-- Who's In Charge Here?
+						["qg"] = 1343,	-- 
+					}),
+					qa(27031, {	-- Wing Nut	
+						["qg"] = 6577,	-- 
+					}),
 --]]
 				}),
 				n(-16, {	-- Rares
 					n(45380, { 	-- Ashtail
-						dr(04.0, i(9765)),	-- Cadet Vest
-						dr(03.0, i(9779)),	-- Bandit Cloak
-						dr(03.0, i(6554)),	-- Bard's Gloves
-						dr(03.0, i(6551)),	-- Soldier's Boots
-						dr(03.0, i(6547)),	-- Soldier's Gauntlets
-						dr(03.0, i(6546)),	-- Soldier's Leggings
-						dr(03.0, i(6537)),	-- Willow Boots
-						dr(02.0, i(6558)),	-- Bard's Belt
-						dr(02.0, i(6556)),	-- Bard's Bracers
-						dr(02.0, i(6553)),	-- Bard's Trousers
-						dr(02.0, i(9757)),	-- Gypsy Tunic
-						dr(02.0, i(9785)),	-- Raider's Bracers
-						dr(02.0, i(9748)),	-- Simple Robe
-						dr(02.0, i(6543)),	-- Willow Bracers
-						dr(02.0, i(6542)),	-- Willow Cape
-						dr(01.9, i(9788)),	-- Raider's Belt
-						dr(01.9, i(9749)),	-- Simple Blouse
-						dr(01.9, i(6545)),	-- Soldier's Armor
-						dr(01.6, i(6550)),	-- Soldier's Wristguards
-						dr(01.4, i(9777)),	-- Bandit Bracers
-						dr(01.3, i(6540)),	-- Willow Pants
-						dr(01.0, i(9770)),	-- Greenweave Cloak					
+						i(9765),	-- Cadet Vest
+						i(9779),	-- Bandit Cloak
+						i(6554),	-- Bard's Gloves
+						i(6551),	-- Soldier's Boots
+						i(6547),	-- Soldier's Gauntlets
+						i(6546),	-- Soldier's Leggings
+						i(6537),	-- Willow Boots
+						i(6558),	-- Bard's Belt
+						i(6556),	-- Bard's Bracers
+						i(6553),	-- Bard's Trousers
+						i(9757),	-- Gypsy Tunic
+						i(9785),	-- Raider's Bracers
+						i(9748),	-- Simple Robe
+						i(6543),	-- Willow Bracers
+						i(6542),	-- Willow Cape
+						i(9788),	-- Raider's Belt
+						i(9749),	-- Simple Blouse
+						i(6545),	-- Soldier's Armor
+						i(6550),	-- Soldier's Wristguards
+						i(9777),	-- Bandit Bracers
+						i(6540),	-- Willow Pants
+						i(9770),	-- Greenweave Cloak
 					}), 
 					n(1398, { 	-- Boss Galgosh
-						dr(10.0, i(6557)),	-- Bard's Boots
-						dr(09.0, i(6539)),	-- Willow Belt
-						dr(08.0, i(9786)),	-- Raider's Cloak
-						dr(08.0, i(6548)),	-- Soldier's Girdle
-						dr(07.0, i(6541)),	-- Willow Gloves
-						dr(05.0, i(6547)),	-- Soldier's Gauntlets
-						dr(04.0, i(6551)),	-- Soldier's Boots
-						dr(04.0, i(6546)),	-- Soldier's Leggings
-						dr(03.0, i(6554)),	-- Bard's Gloves
-						dr(03.0, i(9785)),	-- Raider's Bracers
-						dr(02.0, i(9779)),	-- Bandit Cloak
-						dr(02.0, i(6558)),	-- Bard's Belt
-						dr(02.0, i(6556)),	-- Bard's Bracers
-						dr(02.0, i(6553)),	-- Bard's Trousers
-						dr(02.0, i(9765)),	-- Cadet Vest
-						dr(02.0, i(9757)),	-- Gypsy Tunic
-						dr(02.0, i(9788)),	-- Raider's Belt
-						dr(02.0, i(9748)),	-- Simple Robe
-						dr(02.0, i(6545)),	-- Soldier's Armor
-						dr(02.0, i(6537)),	-- Willow Boots
-						dr(02.0, i(6543)),	-- Willow Bracers
-						dr(02.0, i(6542)),	-- Willow Cape
-						dr(02.0, i(6540)),	-- Willow Pants
-						dr(01.9, i(6550)),	-- Soldier's Wristguards
-						dr(01.6, i(9749)),	-- Simple Blouse	
+						i(6557),	-- Bard's Boots
+						i(6539),	-- Willow Belt
+						i(9786),	-- Raider's Cloak
+						i(6548),	-- Soldier's Girdle
+						i(6541),	-- Willow Gloves
+						i(6547),	-- Soldier's Gauntlets
+						i(6551),	-- Soldier's Boots
+						i(6546),	-- Soldier's Leggings
+						i(6554),	-- Bard's Gloves
+						i(9785),	-- Raider's Bracers
+						i(9779),	-- Bandit Cloak
+						i(6558),	-- Bard's Belt
+						i(6556),	-- Bard's Bracers
+						i(6553),	-- Bard's Trousers
+						i(9765),	-- Cadet Vest
+						i(9757),	-- Gypsy Tunic
+						i(9788),	-- Raider's Belt
+						i(9748),	-- Simple Robe
+						i(6545),	-- Soldier's Armor
+						i(6537),	-- Willow Boots
+						i(6543),	-- Willow Bracers
+						i(6542),	-- Willow Cape
+						i(6540),	-- Willow Pants
+						i(6550),	-- Soldier's Wristguards
+						i(9749),	-- Simple Blouse	
 						un(7, i(1938)),	-- Block Mallet
-						un(7, i(1215)),	-- Support Girdle			
+						un(7, i(1215)),	-- Support Girdle
 					}), 
 					o(207496, {	-- Dark Iron Treasure Chest
+						["modelScale"] = 1.5,
+						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 						["groups"] = {
 							i(3292),	-- Ancestral Tunic
 							i(9775),	-- Bandit Cinch
@@ -257,387 +367,384 @@ _.Zones =
 							i(4561),	-- Scalping Tomahawk
 							i(3192),	-- Short Bastard Sword
 							i(15933),	-- Simple Branch
-							i(6547),	-- Soldier's Gauntlets						
+							i(6547),	-- Soldier's Gauntlets
 						},
-						["modelScale"] = 1.5,
-						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					}),
 					n(14267, { 	-- Emogg the Crusher
-						dr(07.0, i(9779)),	-- Bandit Cloak
-						dr(05.0, i(9767)),	-- Greenweave Sandals
-						dr(05.0, i(6545)),	-- Soldier's Armor
-						dr(05.0, i(6540)),	-- Willow Pants
-						dr(04.0, i(9777)),	-- Bandit Bracers
-						dr(04.0, i(9775)),	-- Bandit Cinch
-						dr(04.0, i(6553)),	-- Bard's Trousers
-						dr(04.0, i(6552)),	-- Bard's Tunic
-						dr(04.0, i(9770)),	-- Greenweave Cloak
-						dr(04.0, i(9788)),	-- Raider's Belt
-						dr(04.0, i(9789)),	-- Raider's Legguards
-						dr(04.0, i(6536)),	-- Willow Vest
-						dr(03.0, i(9768)),	-- Greenweave Bracers
-						dr(03.0, i(9771)),	-- Greenweave Gloves
-						dr(03.0, i(9766)),	-- Greenweave Sash
-						dr(03.0, i(9784)),	-- Raider's Boots
-						dr(03.0, i(9787)),	-- Raider's Gauntlets
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(03.0, i(6538)),	-- Willow Robe
-						dr(02.0, i(9776)),	-- Bandit Boots
-						dr(02.0, i(9780)),	-- Bandit Gloves
-						dr(02.0, i(6575)),	-- Defender Cloak
-						dr(02.0, i(9783)),	-- Raider's Chestpiece
-						dr(02.0, i(6581)),	-- Scouting Belt
-						dr(02.0, i(6583)),	-- Scouting Bracers
-						dr(01.9, i(6585)),	-- Scouting Cloak
-						dr(01.9, i(6563)),	-- Shimmering Bracers
-						dr(01.8, i(6562)),	-- Shimmering Boots
-						dr(01.3, i(6574)),	-- Defender Bracers
-						dr(01.0, i(6582)),	-- Scouting Boots					
+						i(9779),	-- Bandit Cloak
+						i(9767),	-- Greenweave Sandals
+						i(6545),	-- Soldier's Armor
+						i(6540),	-- Willow Pants
+						i(9777),	-- Bandit Bracers
+						i(9775),	-- Bandit Cinch
+						i(6553),	-- Bard's Trousers
+						i(6552),	-- Bard's Tunic
+						i(9770),	-- Greenweave Cloak
+						i(9788),	-- Raider's Belt
+						i(9789),	-- Raider's Legguards
+						i(6536),	-- Willow Vest
+						i(9768),	-- Greenweave Bracers
+						i(9771),	-- Greenweave Gloves
+						i(9766),	-- Greenweave Sash
+						i(9784),	-- Raider's Boots
+						i(9787),	-- Raider's Gauntlets
+						i(6564),	-- Shimmering Cloak
+						i(6538),	-- Willow Robe
+						i(9776),	-- Bandit Boots
+						i(9780),	-- Bandit Gloves
+						i(6575),	-- Defender Cloak
+						i(9783),	-- Raider's Chestpiece
+						i(6581),	-- Scouting Belt
+						i(6583),	-- Scouting Bracers
+						i(6585),	-- Scouting Cloak
+						i(6563),	-- Shimmering Bracers
+						i(6562),	-- Shimmering Boots
+						i(6574),	-- Defender Bracers
+						i(6582),	-- Scouting Boots
 					}), 
 					n(45404, { 	-- Geoshaper Maren
-						dr(06.0, i(9788)),	-- Raider's Belt
-						dr(06.0, i(6581)),	-- Scouting Belt
-						dr(05.0, i(9779)),	-- Bandit Cloak
-						dr(05.0, i(6553)),	-- Bard's Trousers
-						dr(05.0, i(6552)),	-- Bard's Tunic
-						dr(04.0, i(9777)),	-- Bandit Bracers
-						dr(04.0, i(9768)),	-- Greenweave Bracers
-						dr(04.0, i(9770)),	-- Greenweave Cloak
-						dr(04.0, i(6545)),	-- Soldier's Armor
-						dr(04.0, i(6540)),	-- Willow Pants
-						dr(04.0, i(6538)),	-- Willow Robe
-						dr(04.0, i(6536)),	-- Willow Vest
-						dr(03.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(9775)),	-- Bandit Cinch
-						dr(03.0, i(9767)),	-- Greenweave Sandals
-						dr(03.0, i(9784)),	-- Raider's Boots
-						dr(03.0, i(9787)),	-- Raider's Gauntlets
-						dr(03.0, i(9789)),	-- Raider's Legguards
-						dr(03.0, i(6585)),	-- Scouting Cloak
-						dr(02.0, i(6575)),	-- Defender Cloak
-						dr(02.0, i(6583)),	-- Scouting Bracers
-						dr(02.0, i(6563)),	-- Shimmering Bracers
-						dr(02.0, i(6564)),	-- Shimmering Cloak
-						dr(01.9, i(9780)),	-- Bandit Gloves
-						dr(01.8, i(9783)),	-- Raider's Chestpiece
-						dr(01.8, i(6562)),	-- Shimmering Boots
-						dr(01.7, i(9766)),	-- Greenweave Sash
-						dr(01.4, i(9771)),	-- Greenweave Gloves
-						dr(01.4, i(10287)),	-- Greenweave Mantle					
+						i(9788),	-- Raider's Belt
+						i(6581),	-- Scouting Belt
+						i(9779),	-- Bandit Cloak
+						i(6553),	-- Bard's Trousers
+						i(6552),	-- Bard's Tunic
+						i(9777),	-- Bandit Bracers
+						i(9768),	-- Greenweave Bracers
+						i(9770),	-- Greenweave Cloak
+						i(6545),	-- Soldier's Armor
+						i(6540),	-- Willow Pants
+						i(6538),	-- Willow Robe
+						i(6536),	-- Willow Vest
+						i(9776),	-- Bandit Boots
+						i(9775),	-- Bandit Cinch
+						i(9767),	-- Greenweave Sandals
+						i(9784),	-- Raider's Boots
+						i(9787),	-- Raider's Gauntlets
+						i(9789),	-- Raider's Legguards
+						i(6585),	-- Scouting Cloak
+						i(6575),	-- Defender Cloak
+						i(6583),	-- Scouting Bracers
+						i(6563),	-- Shimmering Bracers
+						i(6564),	-- Shimmering Cloak
+						i(9780),	-- Bandit Gloves
+						i(9783),	-- Raider's Chestpiece
+						i(6562),	-- Shimmering Boots
+						i(9766),	-- Greenweave Sash
+						i(9771),	-- Greenweave Gloves
+						i(10287),	-- Greenweave Mantle
 					}),
 					n(2476, { 	-- Gosh-Haldir
-						dr(08.0, i(9756)),	-- Gypsy Trousers
-						dr(06.0, i(9763)),	-- Cadet Leggings
-						dr(06.0, i(9757)),	-- Gypsy Tunic
-						dr(06.0, i(9747)),	-- Simple Britches
-						dr(05.0, i(9749)),	-- Simple Blouse
-						dr(05.0, i(6542)),	-- Willow Cape
-						dr(04.0, i(6558)),	-- Bard's Belt
-						dr(04.0, i(6556)),	-- Bard's Bracers
-						dr(04.0, i(9748)),	-- Simple Robe
-						dr(04.0, i(6550)),	-- Soldier's Wristguards
-						dr(04.0, i(6537)),	-- Willow Boots
-						dr(04.0, i(6543)),	-- Willow Bracers
-						dr(03.0, i(6557)),	-- Bard's Boots
-						dr(03.0, i(9765)),	-- Cadet Vest
-						dr(03.0, i(9786)),	-- Raider's Cloak
-						dr(03.0, i(6548)),	-- Soldier's Girdle
-						dr(03.0, i(6539)),	-- Willow Belt
-						dr(03.0, i(6541)),	-- Willow Gloves
-						dr(02.0, i(6554)),	-- Bard's Gloves
-						dr(02.0, i(9785)),	-- Raider's Bracers
-						dr(02.0, i(6551)),	-- Soldier's Boots
-						dr(02.0, i(6547)),	-- Soldier's Gauntlets
-						dr(02.0, i(6546)),	-- Soldier's Leggings
-						dr(01.7, i(9779)),	-- Bandit Cloak
-						dr(01.4, i(6553)),	-- Bard's Trousers
-						dr(01.3, i(9788)),	-- Raider's Belt
-						dr(01.3, i(6545)),	-- Soldier's Armor
-						dr(01.3, i(6540)),	-- Willow Pants
+						i(9756),	-- Gypsy Trousers
+						i(9763),	-- Cadet Leggings
+						i(9757),	-- Gypsy Tunic
+						i(9747),	-- Simple Britches
+						i(9749),	-- Simple Blouse
+						i(6542),	-- Willow Cape
+						i(6558),	-- Bard's Belt
+						i(6556),	-- Bard's Bracers
+						i(9748),	-- Simple Robe
+						i(6550),	-- Soldier's Wristguards
+						i(6537),	-- Willow Boots
+						i(6543),	-- Willow Bracers
+						i(6557),	-- Bard's Boots
+						i(9765),	-- Cadet Vest
+						i(9786),	-- Raider's Cloak
+						i(6548),	-- Soldier's Girdle
+						i(6539),	-- Willow Belt
+						i(6541),	-- Willow Gloves
+						i(6554),	-- Bard's Gloves
+						i(9785),	-- Raider's Bracers
+						i(6551),	-- Soldier's Boots
+						i(6547),	-- Soldier's Gauntlets
+						i(6546),	-- Soldier's Leggings
+						i(9779),	-- Bandit Cloak
+						i(6553),	-- Bard's Trousers
+						i(9788),	-- Raider's Belt
+						i(6545),	-- Soldier's Armor
+						i(6540),	-- Willow Pants
 						un(7, i(6197)),	-- Loch Croc Hide Vest
-						un(7, i(3563)),	-- Seafarer's Pantaloons	
+						un(7, i(3563)),	-- Seafarer's Pantaloons
 					}), 
 					n(45398, { 	-- Grizlak
-						dr(13.0, i(9756)),	-- Gypsy Trousers
-						dr(13.0, i(9747)),	-- Simple Britches
-						dr(11.0, i(9763)),	-- Cadet Leggings
-						dr(06.0, i(6512)),	-- Disciple's Robe
-						dr(06.0, i(6268)),	-- Pioneer Tunic
-						dr(05.0, i(6336)),	-- Infantry Tunic
-						dr(04.0, i(6266)),	-- Disciple's Vest
-						dr(04.0, i(9786)),	-- Raider's Cloak
-						dr(03.0, i(6557)),	-- Bard's Boots
-						dr(03.0, i(6551)),	-- Soldier's Boots
-						dr(03.0, i(6541)),	-- Willow Gloves
-						dr(02.0, i(6548)),	-- Soldier's Girdle
-						dr(01.6, i(9765)),	-- Cadet Vest
-						dr(01.6, i(9757)),	-- Gypsy Tunic
-						dr(01.6, i(6539)),	-- Willow Belt
-						dr(01.6, i(6543)),	-- Willow Bracers
-						dr(01.5, i(6558)),	-- Bard's Belt
-						dr(01.5, i(6537)),	-- Willow Boots
-						dr(01.4, i(6556)),	-- Bard's Bracers
-						dr(01.4, i(9748)),	-- Simple Robe
-						dr(01.4, i(6547)),	-- Soldier's Gauntlets
-						dr(01.3, i(9749)),	-- Simple Blouse
-						dr(01.3, i(6546)),	-- Soldier's Leggings
-						dr(01.3, i(6542)),	-- Willow Cape
-						dr(01.2, i(9785)),	-- Raider's Bracers
-						dr(01.1, i(6554)),	-- Bard's Gloves
-						dr(01.1, i(6550)),	-- Soldier's Wristguards		
+						i(9756),	-- Gypsy Trousers
+						i(9747),	-- Simple Britches
+						i(9763),	-- Cadet Leggings
+						i(6512),	-- Disciple's Robe
+						i(6268),	-- Pioneer Tunic
+						i(6336),	-- Infantry Tunic
+						i(6266),	-- Disciple's Vest
+						i(9786),	-- Raider's Cloak
+						i(6557),	-- Bard's Boots
+						i(6551),	-- Soldier's Boots
+						i(6541),	-- Willow Gloves
+						i(6548),	-- Soldier's Girdle
+						i(9765),	-- Cadet Vest
+						i(9757),	-- Gypsy Tunic
+						i(6539),	-- Willow Belt
+						i(6543),	-- Willow Bracers
+						i(6558),	-- Bard's Belt
+						i(6537),	-- Willow Boots
+						i(6556),	-- Bard's Bracers
+						i(9748),	-- Simple Robe
+						i(6547),	-- Soldier's Gauntlets
+						i(9749),	-- Simple Blouse
+						i(6546),	-- Soldier's Leggings
+						i(6542),	-- Willow Cape
+						i(9785),	-- Raider's Bracers
+						i(6554),	-- Bard's Gloves
+						i(6550),	-- Soldier's Wristguards
 						un(7, i(2284)),	-- Rat Cloth Cloak
 						un(7, i(3305)),	-- Brackwater Leggings
 					}), 
 					n(1425, { 	-- Kubb
-						dr(11.0, i(6336)),	-- Infantry Tunic
-						dr(09.0, i(6512)),	-- Disciple's Robe
-						dr(09.0, i(6268)),	-- Pioneer Tunic
-						dr(08.0, i(6266)),	-- Disciple's Vest
-						dr(06.0, i(9763)),	-- Cadet Leggings
-						dr(06.0, i(9756)),	-- Gypsy Trousers
-						dr(06.0, i(6337)),	-- Infantry Leggings
-						dr(06.0, i(6269)),	-- Pioneer Trousers
-						dr(05.0, i(6267)),	-- Disciple's Pants
-						dr(04.0, i(9747)),	-- Simple Britches
-						dr(01.9, i(6548)),	-- Soldier's Girdle
-						dr(01.7, i(6557)),	-- Bard's Boots
-						dr(01.4, i(6543)),	-- Willow Bracers
-						dr(01.4, i(6542)),	-- Willow Cape
-						dr(01.3, i(6558)),	-- Bard's Belt
-						dr(01.3, i(9765)),	-- Cadet Vest
-						dr(01.3, i(6539)),	-- Willow Belt
-						dr(01.3, i(6541)),	-- Willow Gloves
-						dr(01.1, i(9757)),	-- Gypsy Tunic
-						dr(01.1, i(9786)),	-- Raider's Cloak
-						dr(01.0, i(6556)),	-- Bard's Bracers
-						dr(01.0, i(6537)),	-- Willow Boots
-						un(7, i(6195)),	-- Wax-Polished Armor	
+						i(6336),	-- Infantry Tunic
+						i(6512),	-- Disciple's Robe
+						i(6268),	-- Pioneer Tunic
+						i(6266),	-- Disciple's Vest
+						i(9763),	-- Cadet Leggings
+						i(9756),	-- Gypsy Trousers
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(6267),	-- Disciple's Pants
+						i(9747),	-- Simple Britches
+						i(6548),	-- Soldier's Girdle
+						i(6557),	-- Bard's Boots
+						i(6543),	-- Willow Bracers
+						i(6542),	-- Willow Cape
+						i(6558),	-- Bard's Belt
+						i(9765),	-- Cadet Vest
+						i(6539),	-- Willow Belt
+						i(6541),	-- Willow Gloves
+						i(9757),	-- Gypsy Tunic
+						i(9786),	-- Raider's Cloak
+						i(6556),	-- Bard's Bracers
+						i(6537),	-- Willow Boots
+						un(7, i(6195)),	-- Wax-Polished Armor
 					}), 
 					n(14268, { 	-- Lord Condar
-						dr(10.0, i(6547)),	-- Soldier's Gauntlets
-						dr(09.0, i(9785)),	-- Raider's Bracers
-						dr(08.0, i(6551)),	-- Soldier's Boots
-						dr(08.0, i(6546)),	-- Soldier's Leggings
-						dr(07.0, i(6554)),	-- Bard's Gloves
-						dr(05.0, i(6540)),	-- Willow Pants
-						dr(04.0, i(9779)),	-- Bandit Cloak
-						dr(04.0, i(6557)),	-- Bard's Boots
-						dr(04.0, i(9786)),	-- Raider's Cloak
-						dr(04.0, i(6548)),	-- Soldier's Girdle
-						dr(04.0, i(6539)),	-- Willow Belt
-						dr(04.0, i(6541)),	-- Willow Gloves
-						dr(03.0, i(6553)),	-- Bard's Trousers
-						dr(03.0, i(6545)),	-- Soldier's Armor
-						dr(02.0, i(9788)),	-- Raider's Belt
-						dr(01.6, i(9775)),	-- Bandit Cinch
-						dr(01.6, i(9768)),	-- Greenweave Bracers
-						dr(01.5, i(9787)),	-- Raider's Gauntlets
-						dr(01.2, i(9776)),	-- Bandit Boots
-						dr(01.1, i(9780)),	-- Bandit Gloves
-						dr(01.1, i(6575)),	-- Defender Cloak
-						dr(01.1, i(9784)),	-- Raider's Boots
-						dr(01.0, i(9770)),	-- Greenweave Cloak
-						dr(01.0, i(9767)),	-- Greenweave Sandals
-						dr(01.0, i(6536)),	-- Willow Vest					
+						i(6547),	-- Soldier's Gauntlets
+						i(9785),	-- Raider's Bracers
+						i(6551),	-- Soldier's Boots
+						i(6546),	-- Soldier's Leggings
+						i(6554),	-- Bard's Gloves
+						i(6540),	-- Willow Pants
+						i(9779),	-- Bandit Cloak
+						i(6557),	-- Bard's Boots
+						i(9786),	-- Raider's Cloak
+						i(6548),	-- Soldier's Girdle
+						i(6539),	-- Willow Belt
+						i(6541),	-- Willow Gloves
+						i(6553),	-- Bard's Trousers
+						i(6545),	-- Soldier's Armor
+						i(9788),	-- Raider's Belt
+						i(9775),	-- Bandit Cinch
+						i(9768),	-- Greenweave Bracers
+						i(9787),	-- Raider's Gauntlets
+						i(9776),	-- Bandit Boots
+						i(9780),	-- Bandit Gloves
+						i(6575),	-- Defender Cloak
+						i(9784),	-- Raider's Boots
+						i(9770),	-- Greenweave Cloak
+						i(9767),	-- Greenweave Sandals
+						i(6536),	-- Willow Vest
 					}), 
 					n(1399, { 	-- Magosh
-						dr(05.0, i(6267)),	-- Disciple's Pants
-						dr(05.0, i(68759)),	-- Imbued Gypsy Cloak
-						dr(05.0, i(6337)),	-- Infantry Leggings
-						dr(04.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(04.0, i(68755)),	-- Imbued Disciple's Gloves
-						dr(04.0, i(68761)),	-- Imbued Infantry Boots
-						dr(04.0, i(68760)),	-- Imbued Infantry Gauntlets
-						dr(04.0, i(68750)),	-- Imbued Pioneer Belt
-						dr(04.0, i(68758)),	-- Imbued Pioneer Boots
-						dr(04.0, i(6269)),	-- Pioneer Trousers
-						dr(03.0, i(6512)),	-- Disciple's Robe
-						dr(03.0, i(68762)),	-- Imbued Cadet Cloak
-						dr(03.0, i(68749)),	-- Imbued Disciple's Bracers
-						dr(03.0, i(68747)),	-- Imbued Disciple's Sash
-						dr(03.0, i(68757)),	-- Imbued Pioneer Gloves
-						dr(02.0, i(6266)),	-- Disciple's Vest
-						dr(02.0, i(9756)),	-- Gypsy Trousers
-						dr(02.0, i(68748)),	-- Imbued Disciple's Cloak
-						dr(02.0, i(68752)),	-- Imbued Infantry Belt
-						dr(02.0, i(68751)),	-- Imbued Pioneer Bracers
-						dr(02.0, i(6268)),	-- Pioneer Tunic
-						dr(02.0, i(9747)),	-- Simple Britches
-						dr(01.9, i(6336)),	-- Infantry Tunic
-						dr(01.8, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.5, i(9763)),	-- Cadet Leggings
+						i(6267),	-- Disciple's Pants
+						i(68759),	-- Imbued Gypsy Cloak
+						i(6337),	-- Infantry Leggings
+						i(68754),	-- Imbued Disciple's Boots
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68761),	-- Imbued Infantry Boots
+						i(68760),	-- Imbued Infantry Gauntlets
+						i(68750),	-- Imbued Pioneer Belt
+						i(68758),	-- Imbued Pioneer Boots
+						i(6269),	-- Pioneer Trousers
+						i(6512),	-- Disciple's Robe
+						i(68762),	-- Imbued Cadet Cloak
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(68757),	-- Imbued Pioneer Gloves
+						i(6266),	-- Disciple's Vest
+						i(9756),	-- Gypsy Trousers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68751),	-- Imbued Pioneer Bracers
+						i(6268),	-- Pioneer Tunic
+						i(9747),	-- Simple Britches
+						i(6336),	-- Infantry Tunic
+						i(68753),	-- Imbued Infantry Bracers
+						i(9763),	-- Cadet Leggings
 						un(7, i(2241)),	-- Desperado Cape
 						un(7, i(3571)),	-- Trogg Beater
 					}), 
 					n(45369, { 	-- Morick Darkbrew
-						dr(11.0, i(6512)),	-- Disciple's Robe
-						dr(11.0, i(6268)),	-- Pioneer Tunic
-						dr(10.0, i(6336)),	-- Infantry Tunic
-						dr(08.0, i(6266)),	-- Disciple's Vest
-						dr(07.0, i(6269)),	-- Pioneer Trousers
-						dr(06.0, i(6267)),	-- Disciple's Pants
-						dr(06.0, i(6337)),	-- Infantry Leggings
-						dr(06.0, i(9747)),	-- Simple Britches
-						dr(05.0, i(9756)),	-- Gypsy Trousers
-						dr(04.0, i(9763)),	-- Cadet Leggings
-						dr(01.6, i(6539)),	-- Willow Belt
-						dr(01.4, i(6541)),	-- Willow Gloves
-						dr(01.3, i(6556)),	-- Bard's Bracers
-						dr(01.3, i(9757)),	-- Gypsy Tunic
-						dr(01.3, i(9786)),	-- Raider's Cloak
-						dr(01.3, i(6548)),	-- Soldier's Girdle
-						dr(01.2, i(6557)),	-- Bard's Boots
-						dr(01.1, i(9765)),	-- Cadet Vest
-						dr(01.1, i(6537)),	-- Willow Boots
-						dr(01.1, i(6543)),	-- Willow Bracers
-						dr(01.0, i(9749)),	-- Simple Blouse
-						dr(01.0, i(9748)),	-- Simple Robe
-						dr(01.0, i(6542)),	-- Willow Cape					
+						i(6512),	-- Disciple's Robe
+						i(6268),	-- Pioneer Tunic
+						i(6336),	-- Infantry Tunic
+						i(6266),	-- Disciple's Vest
+						i(6269),	-- Pioneer Trousers
+						i(6267),	-- Disciple's Pants
+						i(6337),	-- Infantry Leggings
+						i(9747),	-- Simple Britches
+						i(9756),	-- Gypsy Trousers
+						i(9763),	-- Cadet Leggings
+						i(6539),	-- Willow Belt
+						i(6541),	-- Willow Gloves
+						i(6556),	-- Bard's Bracers
+						i(9757),	-- Gypsy Tunic
+						i(9786),	-- Raider's Cloak
+						i(6548),	-- Soldier's Girdle
+						i(6557),	-- Bard's Boots
+						i(9765),	-- Cadet Vest
+						i(6537),	-- Willow Boots
+						i(6543),	-- Willow Bracers
+						i(9749),	-- Simple Blouse
+						i(9748),	-- Simple Robe
+						i(6542),	-- Willow Cape
 					}), 
 					n(45402, { 	-- Nix
-						dr(10.0, i(6546)),	-- Soldier's Leggings
-						dr(09.0, i(6554)),	-- Bard's Gloves
-						dr(09.0, i(9785)),	-- Raider's Bracers
-						dr(09.0, i(6547)),	-- Soldier's Gauntlets
-						dr(08.0, i(6551)),	-- Soldier's Boots
-						dr(05.0, i(6557)),	-- Bard's Boots
-						dr(05.0, i(6539)),	-- Willow Belt
-						dr(04.0, i(6553)),	-- Bard's Trousers
-						dr(04.0, i(9786)),	-- Raider's Cloak
-						dr(04.0, i(6548)),	-- Soldier's Girdle
-						dr(04.0, i(6541)),	-- Willow Gloves
-						dr(03.0, i(9779)),	-- Bandit Cloak
-						dr(03.0, i(9788)),	-- Raider's Belt
-						dr(03.0, i(6545)),	-- Soldier's Armor
-						dr(03.0, i(6540)),	-- Willow Pants
-						dr(01.3, i(9775)),	-- Bandit Cinch
-						dr(01.2, i(6585)),	-- Scouting Cloak
-						dr(01.1, i(9777)),	-- Bandit Bracers
-						dr(01.1, i(9770)),	-- Greenweave Cloak
-						dr(01.1, i(9766)),	-- Greenweave Sash
-						dr(01.1, i(9784)),	-- Raider's Boots
-						dr(01.0, i(9783)),	-- Raider's Chestpiece
-						dr(01.0, i(9787)),	-- Raider's Gauntlets					
+						i(6546),	-- Soldier's Leggings
+						i(6554),	-- Bard's Gloves
+						i(9785),	-- Raider's Bracers
+						i(6547),	-- Soldier's Gauntlets
+						i(6551),	-- Soldier's Boots
+						i(6557),	-- Bard's Boots
+						i(6539),	-- Willow Belt
+						i(6553),	-- Bard's Trousers
+						i(9786),	-- Raider's Cloak
+						i(6548),	-- Soldier's Girdle
+						i(6541),	-- Willow Gloves
+						i(9779),	-- Bandit Cloak
+						i(9788),	-- Raider's Belt
+						i(6545),	-- Soldier's Armor
+						i(6540),	-- Willow Pants
+						i(9775),	-- Bandit Cinch
+						i(6585),	-- Scouting Cloak
+						i(9777),	-- Bandit Bracers
+						i(9770),	-- Greenweave Cloak
+						i(9766),	-- Greenweave Sash
+						i(9784),	-- Raider's Boots
+						i(9783),	-- Raider's Chestpiece
+						i(9787),	-- Raider's Gauntlets
 					}), 
 					n(45399, { 	-- Optimo
-						dr(10.0, i(9779)),	-- Bandit Cloak
-						dr(09.0, i(6553)),	-- Bard's Trousers
-						dr(09.0, i(6545)),	-- Soldier's Armor
-						dr(08.0, i(9788)),	-- Raider's Belt
-						dr(07.0, i(6540)),	-- Willow Pants
-						dr(05.0, i(6546)),	-- Soldier's Leggings
-						dr(04.0, i(6554)),	-- Bard's Gloves
-						dr(04.0, i(9785)),	-- Raider's Bracers
-						dr(04.0, i(6551)),	-- Soldier's Boots
-						dr(04.0, i(6547)),	-- Soldier's Gauntlets
-						dr(03.0, i(9776)),	-- Bandit Boots
-						dr(03.0, i(9768)),	-- Greenweave Bracers
-						dr(03.0, i(6564)),	-- Shimmering Cloak
-						dr(01.8, i(9771)),	-- Greenweave Gloves
-						dr(01.6, i(9780)),	-- Bandit Gloves
-						dr(01.5, i(6581)),	-- Scouting Belt
-						dr(01.4, i(6552)),	-- Bard's Tunic
-						dr(01.4, i(9770)),	-- Greenweave Cloak
-						dr(01.4, i(9766)),	-- Greenweave Sash
-						dr(01.4, i(9784)),	-- Raider's Boots
-						dr(01.4, i(9789)),	-- Raider's Legguards
-						dr(01.3, i(9777)),	-- Bandit Bracers
-						dr(01.3, i(6575)),	-- Defender Cloak
-						dr(01.3, i(9787)),	-- Raider's Gauntlets
-						dr(01.3, i(6563)),	-- Shimmering Bracers
-						dr(01.3, i(6536)),	-- Willow Vest
-						dr(01.2, i(9775)),	-- Bandit Cinch
-						dr(01.2, i(9767)),	-- Greenweave Sandals
-						dr(01.2, i(9783)),	-- Raider's Chestpiece
-						dr(01.2, i(6585)),	-- Scouting Cloak
-						dr(01.2, i(6538)),	-- Willow Robe
-						dr(01.0, i(6583)),	-- Scouting Bracers
-						dr(01.0, i(6562)),	-- Shimmering Boots					
+						i(9779),	-- Bandit Cloak
+						i(6553),	-- Bard's Trousers
+						i(6545),	-- Soldier's Armor
+						i(9788),	-- Raider's Belt
+						i(6540),	-- Willow Pants
+						i(6546),	-- Soldier's Leggings
+						i(6554),	-- Bard's Gloves
+						i(9785),	-- Raider's Bracers
+						i(6551),	-- Soldier's Boots
+						i(6547),	-- Soldier's Gauntlets
+						i(9776),	-- Bandit Boots
+						i(9768),	-- Greenweave Bracers
+						i(6564),	-- Shimmering Cloak
+						i(9771),	-- Greenweave Gloves
+						i(9780),	-- Bandit Gloves
+						i(6581),	-- Scouting Belt
+						i(6552),	-- Bard's Tunic
+						i(9770),	-- Greenweave Cloak
+						i(9766),	-- Greenweave Sash
+						i(9784),	-- Raider's Boots
+						i(9789),	-- Raider's Legguards
+						i(9777),	-- Bandit Bracers
+						i(6575),	-- Defender Cloak
+						i(9787),	-- Raider's Gauntlets
+						i(6563),	-- Shimmering Bracers
+						i(6536),	-- Willow Vest
+						i(9775),	-- Bandit Cinch
+						i(9767),	-- Greenweave Sandals
+						i(9783),	-- Raider's Chestpiece
+						i(6585),	-- Scouting Cloak
+						i(6538),	-- Willow Robe
+						i(6583),	-- Scouting Bracers
+						i(6562),	-- Shimmering Boots
 					}), 
 					n(45384, { 	-- Sagepaw
-						dr(12.0, i(6267)),	-- Disciple's Pants
-						dr(12.0, i(6269)),	-- Pioneer Trousers
-						dr(11.0, i(6337)),	-- Infantry Leggings
-						dr(05.0, i(6266)),	-- Disciple's Vest
-						dr(04.0, i(6336)),	-- Infantry Tunic
-						dr(04.0, i(9747)),	-- Simple Britches
-						dr(03.0, i(9763)),	-- Cadet Leggings
-						dr(03.0, i(6512)),	-- Disciple's Robe
-						dr(03.0, i(9756)),	-- Gypsy Trousers
-						dr(03.0, i(6268)),	-- Pioneer Tunic
-						dr(02.0, i(68761)),	-- Imbued Infantry Boots
-						dr(02.0, i(68760)),	-- Imbued Infantry Gauntlets
-						dr(02.0, i(68758)),	-- Imbued Pioneer Boots
-						dr(01.9, i(68762)),	-- Imbued Cadet Cloak
-						dr(01.8, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.8, i(68759)),	-- Imbued Gypsy Cloak
-						dr(01.6, i(68757)),	-- Imbued Pioneer Gloves
-						dr(01.5, i(68755)),	-- Imbued Disciple's Gloves
+						i(6267),	-- Disciple's Pants
+						i(6269),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(6266),	-- Disciple's Vest
+						i(6336),	-- Infantry Tunic
+						i(9747),	-- Simple Britches
+						i(9763),	-- Cadet Leggings
+						i(6512),	-- Disciple's Robe
+						i(9756),	-- Gypsy Trousers
+						i(6268),	-- Pioneer Tunic
+						i(68761),	-- Imbued Infantry Boots
+						i(68760),	-- Imbued Infantry Gauntlets
+						i(68758),	-- Imbued Pioneer Boots
+						i(68762),	-- Imbued Cadet Cloak
+						i(68754),	-- Imbued Disciple's Boots
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68755),	-- Imbued Disciple's Gloves
 					}), 
 					n(14266, { 	-- Shanda the Spinner
-						dr(10.0, i(6540)),	-- Willow Pants
-						dr(09.0, i(9779)),	-- Bandit Cloak
-						dr(08.0, i(6553)),	-- Bard's Trousers
-						dr(08.0, i(9788)),	-- Raider's Belt
-						dr(08.0, i(6545)),	-- Soldier's Armor
-						dr(05.0, i(6551)),	-- Soldier's Boots
-						dr(05.0, i(6546)),	-- Soldier's Leggings
-						dr(04.0, i(6554)),	-- Bard's Gloves
-						dr(04.0, i(9785)),	-- Raider's Bracers
-						dr(04.0, i(6547)),	-- Soldier's Gauntlets
-						dr(02.0, i(6585)),	-- Scouting Cloak
-						dr(01.9, i(9777)),	-- Bandit Bracers
-						dr(01.9, i(9783)),	-- Raider's Chestpiece
-						dr(01.8, i(9775)),	-- Bandit Cinch
-						dr(01.8, i(9768)),	-- Greenweave Bracers
-						dr(01.8, i(9787)),	-- Raider's Gauntlets
-						dr(01.7, i(9776)),	-- Bandit Boots
-						dr(01.6, i(6552)),	-- Bard's Tunic
-						dr(01.5, i(9789)),	-- Raider's Legguards
-						dr(01.5, i(6563)),	-- Shimmering Bracers
-						dr(01.5, i(6536)),	-- Willow Vest
-						dr(01.4, i(9780)),	-- Bandit Gloves
-						dr(01.4, i(9771)),	-- Greenweave Gloves
-						dr(01.4, i(9767)),	-- Greenweave Sandals
-						dr(01.4, i(9766)),	-- Greenweave Sash
-						dr(01.4, i(6562)),	-- Shimmering Boots
-						dr(01.3, i(9770)),	-- Greenweave Cloak
-						dr(01.3, i(6581)),	-- Scouting Belt
-						dr(01.2, i(6575)),	-- Defender Cloak
-						dr(01.2, i(9784)),	-- Raider's Boots
-						dr(01.2, i(6583)),	-- Scouting Bracers
-						dr(01.2, i(6564)),	-- Shimmering Cloak
-						dr(01.1, i(6538)),	-- Willow Robe					
+						i(6540),	-- Willow Pants
+						i(9779),	-- Bandit Cloak
+						i(6553),	-- Bard's Trousers
+						i(9788),	-- Raider's Belt
+						i(6545),	-- Soldier's Armor
+						i(6551),	-- Soldier's Boots
+						i(6546),	-- Soldier's Leggings
+						i(6554),	-- Bard's Gloves
+						i(9785),	-- Raider's Bracers
+						i(6547),	-- Soldier's Gauntlets
+						i(6585),	-- Scouting Cloak
+						i(9777),	-- Bandit Bracers
+						i(9783),	-- Raider's Chestpiece
+						i(9775),	-- Bandit Cinch
+						i(9768),	-- Greenweave Bracers
+						i(9787),	-- Raider's Gauntlets
+						i(9776),	-- Bandit Boots
+						i(6552),	-- Bard's Tunic
+						i(9789),	-- Raider's Legguards
+						i(6563),	-- Shimmering Bracers
+						i(6536),	-- Willow Vest
+						i(9780),	-- Bandit Gloves
+						i(9771),	-- Greenweave Gloves
+						i(9767),	-- Greenweave Sandals
+						i(9766),	-- Greenweave Sash
+						i(6562),	-- Shimmering Boots
+						i(9770),	-- Greenweave Cloak
+						i(6581),	-- Scouting Belt
+						i(6575),	-- Defender Cloak
+						i(9784),	-- Raider's Boots
+						i(6583),	-- Scouting Bracers
+						i(6564),	-- Shimmering Cloak
+						i(6538),	-- Willow Robe
 					}), 
 					n(45401, { 	-- Whitefin
-						dr(15.0, i(9756)),	-- Gypsy Trousers
-						dr(12.0, i(9763)),	-- Cadet Leggings
-						dr(12.0, i(9747)),	-- Simple Britches
-						dr(06.0, i(6512)),	-- Disciple's Robe
-						dr(06.0, i(6268)),	-- Pioneer Tunic
-						dr(05.0, i(6266)),	-- Disciple's Vest
-						dr(04.0, i(6336)),	-- Infantry Tunic
-						dr(03.0, i(6548)),	-- Soldier's Girdle
-						dr(02.0, i(6557)),	-- Bard's Boots
-						dr(02.0, i(6539)),	-- Willow Belt
-						dr(02.0, i(6541)),	-- Willow Gloves
-						dr(01.7, i(9757)),	-- Gypsy Tunic
-						dr(01.7, i(9786)),	-- Raider's Cloak
-						dr(01.7, i(6537)),	-- Willow Boots
-						dr(01.7, i(6542)),	-- Willow Cape
-						dr(01.6, i(6554)),	-- Bard's Gloves
-						dr(01.5, i(6556)),	-- Bard's Bracers
-						dr(01.5, i(9749)),	-- Simple Blouse
-						dr(01.5, i(6551)),	-- Soldier's Boots
-						dr(01.4, i(9765)),	-- Cadet Vest
-						dr(01.4, i(6547)),	-- Soldier's Gauntlets
-						dr(01.3, i(6558)),	-- Bard's Belt
-						dr(01.3, i(9785)),	-- Raider's Bracers
-						dr(01.3, i(6546)),	-- Soldier's Leggings
-						dr(01.3, i(6543)),	-- Willow Bracers
-						dr(01.0, i(9748)),	-- Simple Robe
-						dr(01.0, i(6550)),	-- Soldier's Wristguards					
+						i(9756),	-- Gypsy Trousers
+						i(9763),	-- Cadet Leggings
+						i(9747),	-- Simple Britches
+						i(6512),	-- Disciple's Robe
+						i(6268),	-- Pioneer Tunic
+						i(6266),	-- Disciple's Vest
+						i(6336),	-- Infantry Tunic
+						i(6548),	-- Soldier's Girdle
+						i(6557),	-- Bard's Boots
+						i(6539),	-- Willow Belt
+						i(6541),	-- Willow Gloves
+						i(9757),	-- Gypsy Tunic
+						i(9786),	-- Raider's Cloak
+						i(6537),	-- Willow Boots
+						i(6542),	-- Willow Cape
+						i(6554),	-- Bard's Gloves
+						i(6556),	-- Bard's Bracers
+						i(9749),	-- Simple Blouse
+						i(6551),	-- Soldier's Boots
+						i(9765),	-- Cadet Vest
+						i(6547),	-- Soldier's Gauntlets
+						i(6558),	-- Bard's Belt
+						i(9785),	-- Raider's Bracers
+						i(6546),	-- Soldier's Leggings
+						i(6543),	-- Willow Bracers
+						i(9748),	-- Simple Robe
+						i(6550),	-- Soldier's Wristguards
 					}), 
 				}),
 				n(-2,  {	-- Vendors

@@ -249,7 +249,7 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					i(112128, {	-- Blood Elf Ear
-						["groups"] = {
+	--[[				["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -337,13 +337,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35937,	-- Blood Elf Ear
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112121, {	-- Draenei Tail
-						["groups"] = {
+		--[[				["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -448,13 +448,13 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						},--]]
 						["questID"] = 36041,	-- Draenei Tail
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					i(112126, {	-- Dwarf Spine
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -559,13 +559,13 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						},--]]
 						["questID"] = 36034,	-- Dwarf Spine
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					i(112015, {	-- Forsaken Brains
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -653,13 +653,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35927,	-- Forsaken Brains
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112125, {	-- Goblin Nose
-						["groups"] = {
+				--[[		["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -747,13 +747,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35938,	-- Goblin Nose
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112131, {	-- Human Bone Chip
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -858,13 +858,13 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						},--]]
 						["questID"] = 36042,	-- Human Bone Chip
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					i(112122, {	-- Orc Tooth
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -952,13 +952,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35940,	-- Orc Tooth
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112113, {	-- Pandaren Hide
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["groups"] = {
 									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1156,12 +1156,12 @@ _.Zones =
 								},
 								["races"] = HORDE_ONLY,
 							}),
-						},
+						},--]]
 						["questID"] = 35942,	-- Pandaren Hide
 						["repeatable"] = true,
 					}),
 					i(112124, {	-- Severed Night Elf Head
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1266,13 +1266,13 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						},--]]
 						["questID"] = 36033,	-- Severed Night Elf Head
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					i(112123, {	-- Tauren Hoof
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -1360,13 +1360,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35939,	-- Tauren Hoof
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112120, {	-- Troll Feet
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -1454,13 +1454,13 @@ _.Zones =
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
 								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
-						},
+						},--]]
 						["questID"] = 35941,	-- Troll Feet
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112127, {	-- Tuft of Gnome Hair
-						["groups"] = {
+				--[[		["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1565,13 +1565,13 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						},--]]
 						["questID"] = 36040,	-- Tuft of Gnome Hair
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 					}),
 					i(112119, {	-- Worgen Snout
-						["groups"] = {
+			--[[			["groups"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1676,7 +1676,7 @@ _.Zones =
 								i(126729),	-- Warmongering Aspirant's Signet of Endurance
 								i(126252),	-- Warmongering Aspirant's Signet of Endurance
 							}),
-						},
+						}, --]]
 						["questID"] = 36884,	-- Worgen Snout
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
@@ -2632,6 +2632,18 @@ _.Zones =
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
 				}),
+				i(118093),	-- Dented Ashmaul Strongbox A
+				i(118094),	-- Dented Ashmaul Strongbox H
+				i(118066),	-- Ashmaul Strongbox S1
+				i(118065),	-- Gleaming Ashmaul Strongbox S1
+				i(120184),	-- Ashmaul Strongbox S2-S3
+				i(120151),	-- Gleaming Ashmaul Strongbox S2-S3
+				i(128213),	-- Dented Ashmaul Strongbox A S2
+				i(128214),	-- Dented Ashmaul Strongbox H S2
+				i(128215, {	-- Dented Ashmaul Strongbox H S3
+					i(134705),	-- Surging Chain Leggings
+				}),
+				i(128216),	-- Dented Ashmaul Strongbox A S3
 			},
 			--["maps"] = {622, 624},	-- We want to show Ashran in both maps.
 			["lvl"] = 100,	

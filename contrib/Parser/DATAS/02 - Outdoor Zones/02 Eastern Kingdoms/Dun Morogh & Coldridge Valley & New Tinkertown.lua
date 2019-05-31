@@ -50,17 +50,28 @@ _.Zones =
 							}),
 						},
 					}),
-					qg(63075, qa(31548, {	-- Learning the Ropes
+					qa(31548, {	-- Learning the Ropes
+						["qg"] = 63075,	-- 
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-					})),
-					qg(63075, qa(31549)),	-- On The Mend
-					qg(63075, qa(31822)),	-- Level Up!
-					qg(63075, qa(31551)), 	-- Got one!
+					}),
+					qa(31549, {	-- On The Mend
+						["qg"] = 63075,	-- 
+					}),
+					qa(31822, {	-- Level Up!
+						["qg"] = 63075,	-- 
+					}),
+					qa(31551, {	-- Got one!
+						["qg"] = 63075,	-- 
+					}),
 				}),
 				n(-17,  {	-- Quests
 --[[				
-					qg(1374, qa(319)),	-- A Favor for Evershine
-					qg(41298, qa(25882)),	-- A Hand at the Ranch
+					qa(319, {	-- A Favor for Evershine
+						["qg"] = 1374,	-- 
+					}),
+					qa(25882, {	-- A Hand at the Ranch
+						["qg"] = 41298,	-- 
+					}),
 --]]
 					o(2059, {	-- A Dwarven Corpse
 						qa(26855, {	-- A Pilot's Revenge
@@ -72,28 +83,39 @@ _.Zones =
 						}),
 					}),
 --[[
-					qg(658, qa(24471)),	-- Aid for the Wounded
+					qa(24471, {	-- Aid for the Wounded
+						["qg"] = 658,	-- 
+					}),
 --]]
-					qg(1267, qa(384, {	-- Beer Basted Boar Ribs 
-						i(2889),	-- Recipe: Beer Basted Boar Ribs
-					})),
+					qa(384, {	-- Beer Basted Boar Ribs
+						["qg"] = 1267,	-- 
+						["g"] = {
+							i(2889),	-- Recipe: Beer Basted Boar Ribs
+						},
+					}),
 --[[					
-					qg(1261, qa(7674)),	-- Black Ram Exchange
-					qg(42933, qa(26380)),	-- Bound for Kharanos
-					qg(40950, qa(25667)),	-- Culling the Wendigos
+					qa(7674, {	-- Black Ram Exchange
+						["qg"] = 1261,	-- 
+					}),
+					qa(26380, {	-- Bound for Kharanos
+						["qg"] = 42933,	-- 
+					}),
+					qa(25667, {	-- Culling the Wendigos
+						["qg"] = 40950,	-- 
+					}),
 --]]
 					qa(25997, {	-- Dark Iron Scheming
-						["g"] = {
-							i(57575),	-- Belt of Dark Schemes
-							i(57576),	-- Dark Iron Infiltrator's Bracer
-							i(57578),	-- Dark Iron Hobplate Boots
-							i(131462),	-- Dark Iron Spy-Bands
-						},
 						["qg"] = 41786,	-- Sergeant Bahrum
 						["coord"] = { 82.8, 48.4, 27 },
 						["sourceQuests"] = {
 							25979,	-- Dealing With the Surge
 							25978,	-- Entombed in Ice
+						},
+						["g"] = {
+							i(57575),	-- Belt of Dark Schemes
+							i(57576),	-- Dark Iron Infiltrator's Bracer
+							i(57578),	-- Dark Iron Hobplate Boots
+							i(131462),	-- Dark Iron Spy-Bands
 						},
 					}),
 					qa(25979, {	-- Dealing with the Surge
@@ -101,9 +123,10 @@ _.Zones =
 						["coord"] = { 82.6, 48.3, 27 },
 					}),
 --[[
-					qg(46274, qa(27635, {	-- Decontamination
+					qa(27635, {	-- Decontamination
+						["qg"] = 46274,	-- 
 						["races"] = {7},
-					})),
+					}),
 --]]
 --					q(43291),	-- Defend (REMOVED, pre-Legion invasions)
 					qa(26112, {	-- Demanding Answers
@@ -113,8 +136,12 @@ _.Zones =
 					}),
 --					q(43283),	-- Demon Commander (REMOVED, pre-Legion invasions)
 --[[
-					qg(1373, qa(308)),	-- Distracting Jarven
-					qg(41298, qa(25840)),	-- Eliminate the Resistance
+					qa(308, {	-- Distracting Jarven
+						["qg"] = 1373,	-- 
+					}),
+					qa(25840, {	-- Eliminate the Resistance
+						["qg"] = 41298,	-- 
+					}),
 --]]
 					qa(25978, {	-- Entombed in Ice
 						["qg"] = 41786,	-- Sergeant Bahrum
@@ -122,27 +149,37 @@ _.Zones =
 						["sourceQuests"] = { 25986 },	-- Trouble at the Lake
 					}),
 
---					qg(1378, qa(318)),	-- Evershine
+--[[				qa(318, {	-- Evershine
+						["qg"] = 1378,	-- 
+					}),
+]]--
 					qa(26078, {	-- Extinguish the Fires
 						["qg"] = 41853,	-- Commander Stonebreaker
 						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 25998 },	-- Get to the Airfield
 					}),
-
-					qg(40950, qa(313)),	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
-					q(7673, { -- Frost Ram Exchange
-						["qg"] = 1261,	-- Veron Amberstill
-						["u"] = 40,		-- Legacy Quest
+					qa(313, {	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
+						["qg"] = 40950,	-- 
 					}),
-					qg(1261, qa(7673)),	-- Frost Ram Exchange
-					qg(40950, qa(25724)),	-- Frostmane Aggression
---]]
+					q(7673, { -- Frost Ram Exchange
+						["u"] = 40,		-- Legacy Quest
+						["qg"] = 1261,	-- Veron Amberstill
+					}),
+					qa(7673, {	-- Frost Ram Exchange
+						["qg"] = 1261,	-- 
+					}),
+					qa(25724, {	-- Frostmane Aggression
+						["qg"] = 40950,	-- 
+					}),
 					qa(25998, {	-- Get to the Airfield
 						["qg"] = 41786,	-- Sergeant Bahrum
 						["coord"] = { 82.8, 48.4, 27 },
 						["sourceQuests"] = { 25997 },	-- Dark Iron Scheming
 					}),
 					qa(26102, {	-- Grimaxe's Demise
+						["qg"] = 41853,	-- Commander Stonebreaker
+						["coord"] = { 78.2, 20.5, 27 },
+						["sourceQuests"] = { 26094 },	-- Striking Back
 						["g"] = {
 							i(57579),	-- Airfield Defender's Garb
 							i(57580),	-- Tunic of Dark Leather
@@ -151,22 +188,28 @@ _.Zones =
 							i(131483),	-- Vest of Dark Chainmail
 							i(131484),	-- Grimaxe's Chainmail Breastplate
 						},
-						["qg"] = 41853,	-- Commander Stonebreaker
-						["coord"] = { 78.2, 20.5, 27 },
-						["sourceQuests"] = { 26094 },	-- Striking Back
 					}),
 --[[					
 --					q(403),	-- Guarded Thunderbrew Barrel (REMOVED with Cata)
-					qg(41578, qa(25933)),	-- Help for the Quarry
-					qg(40950, qa(25838)),	-- Help from Steelgrill's Depot
-					qg(1699, qa(6387, {	-- Honor Students
+					qa(25933, {	-- Help for the Quarry
+						["qg"] = 41578,	-- 
+					}),
+					qa(25838, {	-- Help from Steelgrill's Depot
+						["qg"] = 40950,	-- 
+					}),
+					qa(6387, {	-- Honor Students
+						["qg"] = 1699,	-- 
 						["races"] = {3,7},	-- Dwarf, Gnome
-					})),
-					qg(15011, qa(8149)),	-- Honoring a Hero
+					}),
+					qa(8149, {	-- Honoring a Hero
+						["qg"] = 15011,	-- 
+					}),
 --					q(25285),	-- In and Out (REMOVED)
 --					q(43284),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
 --					q(42803),	-- Invasion: Dun Morogh (REMOVED, pre-Legion invasions)
-					qg(41578, qa(25932)),	-- It's Raid Night Every Night
+					qa(25932, {	-- It's Raid Night Every Night
+						["qg"] = 41578,	-- 
+					}),
 					qa(32663, {	-- Learn To Ride
 						["description"] = "This quest is available to Gnomes upon reaching level 20.",
 						["races"] = {7},
@@ -179,14 +222,21 @@ _.Zones =
 --					qa(14083),	-- Learn to Ride in Dun Morogh (REMOVED)
 --					q(25289),	-- One Step Forward... (REMOVED with Cata)
 --					q(24462),	-- Operation Item Get (REMOVED with Cata)
-					qg(1269, qa(412)),	-- Operation Recombobulation
-					qg(40951, qa(25668)),	-- Pilfered Supplies
-					qg(45966, q(27670, {	-- Pinned Down
+					qa(412, {	-- Operation Recombobulation
+						["qg"] = 1269,	-- 
+					}),
+					qa(25668, {	-- Pilfered Supplies
+						["qg"] = 40951,	-- 
+					}),
+					q(27670, {	-- Pinned Down
+						["qg"] = 45966
 						["races"] = {7,9},	-- Gnome, Goblin
-					})),
+					}),
 --					q(25295),	-- Press Fire (REMOVED)
 --]]
 					qa(25937, {	-- Priceless Treasures
+						["qg"] = 50631,	-- Prospector Drugan
+						["coord"] = { 76.1, 53.0, 27 },
 						["g"] = {
 							i(57571),	-- Archaeologist's Pants
 							i(57572),	-- Dun Morogh Hiking Pants
@@ -196,8 +246,6 @@ _.Zones =
 								["f"] = 113,	-- Bag
 							}),
 						},
-						["qg"] = 50631,	-- Prospector Drugan
-						["coord"] = { 76.1, 53.0, 27 },
 					}),
 					{	-- Protecting the Herd
 						["questID"] = 314,	-- Protecting the Herd
@@ -208,43 +256,67 @@ _.Zones =
 							--Might be racial locked and not unobtainable
 							{	-- Coldridge Hammer
 								["itemID"] = 3103,	-- Coldridge Hammer
+								["u"] = 2,			-- Was a quest reward prior to Cataclysm and no longer isn't.
 							},
 							{	-- Rancher's Trousers
 								["itemID"] = 10549,			-- Rancher's Trousers
-								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+								["ignoreSource"] = true,	-- White Item
 							},
-							{	-- Soft Leather Tunic
-								["itemID"] = 2817,	-- Soft Leather Tunic
-								["ignoreSource"] = true,	-- White Item so we don't attempt to collect it
+							{	-- Hard Leather Tunic
+								--Note!! Prior to Cataclysm this was called "Soft Leather Tunic" with the same itemID
+								["itemID"] = 2817,			-- Hard Leather Tunic
+								["ignoreSource"] = true,	-- White Item
+							},
+							{	-- Ram Rescue Vest
+								["itemID"] = 131205,		-- Ram Rescue Vest
+								["ignoreSource"] = true,	-- White Item
+							},
+							{	-- Vagash Breastplate
+								["itemID"] = 57552,			-- Vagash Breastplate
+								["ignoreSource"] = true,	-- White Item
 							},
 						},
 					},
---					qg(40950, qa(25792)),	-- Pushing Forward
+--[[
+					qa(25792, {	-- Pushing Forward
+						["qg"] = 40950,	-- 
+					}),
+]]--
 					qa(26085, {	-- Rallying the Defenders
 						["qg"] = 41853,	-- Commander Stonebreaker
 						["coord"] = { 78.2, 20.5, 27 },
 						["sourceQuests"] = { 26078 },	-- Extinguish the Fires
 					}),
 --[[
-					qg(1261, qa(25905)),	-- Rams on the Lam
+					qa(25905, {	-- Rams on the Lam
+						["qg"] = 1261,	-- 
+					}),
 --					q(43292),	-- Repel (REMOVED, pre-Legion invasions)
-					qg(45966, q(28167, {	-- Report to Carvo Blastbolt
+					q(28167, {	-- Report to Carvo Blastbolt
+						["qg"] = 45966,	-- 
 						["races"] = {7,9},	-- Gnome, Goblin
-					})),
-					qg(1374, qa(320)),	-- Return to Bellowfiz
+					}),
+					qa(320, {	-- Return to Bellowfiz
+						["qg"] = 1374,	-- 
+					}),
 					o(270, {	-- Unguarded Thunder Ale Barrel
 						qa(311),	-- Return to Marleth
 					}),
-					qg(43701, qa(6391, {	-- Ride to Ironforge
+					qa(6391, {	-- Ride to Ironforge
+						["qg"] = 43701,	-- 
 						["races"] = {3,7},	-- Dwarf, Gnome
-					})),
-					qg(47250, q(27671, {	-- See to the Survivors
+					}),
+					q(27671, {	-- See to the Survivors
+						["qg"] = 47250,	-- 
 						["races"] = {7,9},	-- Gnome, Goblin
-					})),
-					qg(1378, qa(317, {	-- Stocking Jetsteam
+					}),
+					qa(317, {	-- Stocking Jetsteam
+						["qg"] = 1378,	-- 
 						["races"] = {3,7},	-- Dwarf, Gnome
-					})),
-					qg(41298, qa(25841)),	-- Strike From Above
+					}),
+					qa(25841, {	-- Strike From Above
+						["qg"] = 41298,	-- 
+					}),
 --]]
 					qa(26094, {	-- Striking Back
 						["qg"] = 41853,	-- Commander Stonebreaker
@@ -252,34 +324,45 @@ _.Zones =
 						["sourceQuests"] = { 26085 },	-- Rallying the Defenders
 					}),
 --[[
-					qg(34481, qa(14168, {	-- The Grateful Dead
-						["races"] = {7},	-- Gnome
-					})),
-					qg(34478, qa(14167, {	-- The Grateful Dead
-						["races"] = {3},	-- Dwarf
-					})),
-					qg(1374, qa(315)),	-- The Perfect Stout
-					qg(926, qa(24528, {	-- The Power of the Light
+					qa(315, {	-- The Perfect Stout
+						["qg"] = 1374,	-- 
+					}),
+					qa(24528, {	-- The Power of the Light
+						["qg"] = 926,	-- 
 						["classes"] = {2},	-- Paladin
 						["races"] = {3},	-- Dwarf
 					})),
 --]]					
-					qg(1977, qa(433, { 	-- The Public Servant
-						i(57570),
-						i(57568),
-						i(57569),
-						i(131208),
-						i(131209),
-					})),
+					qa(433, { 	-- The Public Servant
+						["qg"] = 1977,	-- 
+						["g"] = {
+							i(57570),	-- 
+							i(57568),	-- 
+							i(57569),	-- 
+							i(131208),	-- 
+							i(131209),	-- 
+						},
+					}),
 --[[					
-					qg(1252, qa(291)),	-- The Reports
-					qg(41363, qa(25839)),	-- The Ultrasafe Personnel Launcher
-					qg(50601, qa(28868)),	-- The View from Down Here
-					qg(1254, q(432)),	-- Those Blasted Troggs!
-					qg(46255, qa(27674, {	-- To the Surface
+					qa(291, {	-- The Reports
+						["qg"] = 1252,	-- 
+					}),
+					qa(25839, {	-- The Ultrasafe Personnel Launcher
+						["qg"] = 41363,	-- 
+					}),
+					qa(28868, {	-- The View from Down Here
+						["qg"] = 50601,	-- 
+					}),
+					q(432, {	-- Those Blasted Troggs!
+						["qg"] = 1254,	-- 
+					}),
+					qa(27674, {	-- To the Surface
+						["qg"] = 46255,	-- 
 						["races"] = {7},	-- Gnome
-					})),
-					qg(1872, qa(400)),	-- Tools for Steelgrill
+					}),
+					qa(400, {	-- Tools for Steelgrill
+						["qg"] = 1872,	-- 
+					}),
 --]]
 					qa(25986, {	-- Trouble at the Lake
 						["qg"] = 1977,	-- Senator Mehr Stonehallow
@@ -287,36 +370,37 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for Entombed in Ice
 					}),
 --[[
-					qg(47250, qa(28169, {	-- Withdraw to the Loading Room!
+					qa(28169, {	-- Withdraw to the Loading Room!
+						["qg"] = 47250,	-- 
 						["races"] = {7},	-- Gnome
-					})),
+					}),
 --]]
 				}),
 				n(-16,  {	-- Rares	
 					n(1130, { 	-- Bjarn
-						dr(01.4, i(6337)),	-- Infantry Leggings
-						dr(01.2, i(6269)),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
 						un(7, i(3283)),	-- Battle Chain Tunic					
 					}),
 					n(1119, { 	-- Hammerspine
-						dr(20.0, i(68743)),	-- Imbued Infantry Cloak
-						dr(18.0, i(68744)),	-- Imbued Pioneer Cloak
-						dr(03.0, i(6337)),	-- Infantry Leggings
-						dr(03.0, i(6269)),	-- Pioneer Trousers
-						dr(02.0, i(6267)),	-- Disciple's Pants
-						dr(02.0, i(68749)),	-- Imbued Disciple's Bracers
-						dr(02.0, i(68748)),	-- Imbued Disciple's Cloak
-						dr(02.0, i(68750)),	-- Imbued Pioneer Belt
-						dr(01.9, i(68751)),	-- Imbued Pioneer Bracers
-						dr(01.8, i(68753)),	-- Imbued Infantry Bracers
-						dr(01.7, i(68747)),	-- Imbued Disciple's Sash
-						dr(01.5, i(68759)),	-- Imbued Gypsy Cloak
-						dr(01.5, i(68752)),	-- Imbued Infantry Belt
-						dr(01.2, i(68755)),	-- Imbued Disciple's Gloves
-						dr(01.2, i(68757)),	-- Imbued Pioneer Gloves
-						dr(01.1, i(68761)),	-- Imbued Infantry Boots
-						dr(01.0, i(68754)),	-- Imbued Disciple's Boots
-						dr(01.0, i(68760)),	-- Imbued Infantry Gauntlets
+						i(68743),	-- Imbued Infantry Cloak
+						i(68744),	-- Imbued Pioneer Cloak
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(6267),	-- Disciple's Pants
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68750),	-- Imbued Pioneer Belt
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68753),	-- Imbued Infantry Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(68760),	-- Imbued Infantry Gauntlets
 						un(7, i(2254)),	-- Icepane Warhammer
 					}), 			
 --					n(1137, { 	-- Edan the Howler	}), 
@@ -384,36 +468,65 @@ _.Zones =
 							p(440), 	-- Snow Cub
 						}),
 						n(-17, {	-- Quests					
-							qg(8416, qa(3361)),	-- A Refugee's Quandary
-							qg(786, qa(24490)),	-- A Trip to Ironforge
-							qg(37087, qa(24475)),	-- All the Other Stuff
-							qg(37087, qa(24496, {	-- Arcane Rune
+							qa(3361, {	-- A Refugee's Quandary
+								["qg"] = 8416,	-- 
+							}),
+							qa(24490, {	-- A Trip to Ironforge
+								["qg"] = 786,	-- 
+							}),
+							qa(24475, {	-- All the Other Stuff
+								["qg"] = 37087,	-- 
+							}),
+							qa(24496, {	-- Arcane Rune
+								["qg"] = 37087,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {8},
-							})),
-							qg(37087, qa(24493)),	-- Don't Forget About Us
-							qg(1104, qa(24477)),	-- Dwarven Artifacts
-							qg(37087, qa(31150, {	-- Elegant Rune
+							}),
+							qa(24493, {	-- Don't Forget About Us
+								["qg"] = 37087,	-- 
+							}),
+							qa(24477, {	-- Dwarven Artifacts
+								["qg"] = 1104,	-- 
+							}),
+							qa(31150, {	-- Elegant Rune
+								["qg"] = 37087,	-- 
 								["classes"] = {10},	-- Monk
-							})),
-							qg(37087, qa(3109, {	-- Encrypted Rune
+							}),
+							qa(3109, {	-- Encrypted Rune
+								["qg"] = 37087,	-- 
 								["races"] = {3,7},	-- Dwarf, Gnome
 								["classes"] = {4},	-- Rogue
-							})),
-							qg(916, qa(24532, {	-- Evisceratin' the Enemy
+							}),
+							qa(24532, {	-- Evisceratin' the Enemy
+								["qg"] = 916,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {4},	-- Rogue
-							})),
-							qg(37087, qa(24474)),	-- First Things First: We're Gonna Need Some Beer
-							qg(6782, qa(24491)),	-- Follow that Gyro-Copter!
-							qg(37081, qa(24470)),	-- Give 'em What-For
-							qg(37081, qa(24469)),	-- Hold the Line!
-							qg(786, qa(218)),	-- Ice and Fire
-							qg(63285, qa(31151, {	-- Kick, Punch, It's All in the Mind
+							}),
+							qa(24474, {	-- First Things First: We're Gonna Need Some Beer
+								["qg"] = 37087,	-- 
+							}),
+							qa(24491, {	-- Follow that Gyro-Copter!
+								["qg"] = 6782,	-- 
+							}),
+							qa(24470, {	-- Give 'em What-For
+								["qg"] = 37081,	-- 
+							}),
+							qa(24469, {	-- Hold the Line!
+								["qg"] = 37081,	-- 
+							}),
+							qa(218, {	-- Ice and Fire
+								["qg"] = 786,	-- 
+							}),
+							qa(31151, {	-- Kick, Punch, It's All in the Mind
+								["qg"] = 63285,	-- 
 								["classes"] = {10},	-- Monk
-							})),
-							qg(37081, qa(24473)),	-- Lockdown in Anvilmar
-							qg(1104, qa(24486)),	-- Make Hay While the Sun Shines
+							}),
+							qa(24473, {	-- Lockdown in Anvilmar
+								["qg"] = 37081,	-- 
+							}),
+							qa(24486, {	-- Make Hay While the Sun Shines
+								["qg"] = 1104,	-- 
+							}),
 							a({
 								["questID"] = 24492,	-- Pack Your Bags
 								["qg"] = 37113,	-- Milo Geartwinge
@@ -421,13 +534,20 @@ _.Zones =
 									i(57542),	-- Coldridge Mountaineer's Pouch
 								},
 							}),
-							qg(786, qa(182)),	-- The Troll Menace
-							qg(1354, qa(24489)),	-- Trolling for Information
-							qg(37087, qa(24487)),	-- Whitebeard Needs Ye
-							qg(837, qa(24533, {	-- Words of Power
+							qa(182, {	-- The Troll Menace
+								["qg"] = 786,	-- 
+							}),
+							qa(24489, {	-- Trolling for Information
+								["qg"] = 1354,	-- 
+							}),
+							qa(24487, {	-- Whitebeard Needs Ye
+								["qg"] = 37087,	-- 
+							}),
+							qa(24533, {	-- Words of Power
+								["qg"] = 837,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {5},	-- Priest
-							})),
+							}),
 						}),
 					},
 				}),			
@@ -445,18 +565,21 @@ _.Zones =
 							["races"] = {7},
 							["g"] = {
 --[[							
-								qg(42553, q(26205, {	-- A Job for the Multi-Bot
+								q(26205, {	-- A Job for the Multi-Bot
+									["qg"] = 42553,	-- 
 									["races"] = {7},
-								})),
-								qg(42317, q(26566, {	-- A Triumph of Gnomish Ingenuity
+								}),
+								q(26566, {	-- A Triumph of Gnomish Ingenuity
+									["qg"] = 42317,	-- 
 									["races"] = {7},
-								})),
-								qg(42317, q(26331, {	-- Crushcog's Minions
+								}),
+								q(26331, {	-- Crushcog's Minions
+									["qg"] = 42317,	-- 
 									["races"] = {7,9},
-								})),
+								}),
 ]]--
-								{
-									["questID"] = 26265,	-- Dealing with the Fallout
+								{	-- Dealing with the Fallout
+									["questID"] = 26265,
 									["qg"] = 42630,	-- Corporal Fizzwhistle
 									["races"] = {
 										7,	-- Gnome
@@ -467,122 +590,153 @@ _.Zones =
 									},
 								},
 --[[
-								qg(42353, qa(26364, {	-- Down with Crushcog!
+								qa(26364, {	-- Down with Crushcog!
+									["qg"] = 42353,	-- 
 									["races"] = {7},
-								})),
-								qg(42708, qa(26318, {	-- Finishin' the Job
+								}),
+								qa(26318, {	-- Finishin' the Job
+									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42708, qa(26285, {	-- Get Me Explosives Back!
+								}),
+								qa(26285, {	-- Get Me Explosives Back!
+									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42366, qa(26423, {	-- Meet the High Tinker
+								}),
+								qa(26423, {	-- Meet the High Tinker
+									["qg"] = 42366,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {4},	-- Rogue
-								})),
-								qg(63238, qa(31137, {	-- Meet the High Tinker
+								}),
+								qa(31137, {	-- Meet the High Tinker
+									["qg"] = 63238,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {10},	-- Monk
-								})),
-								qg(42323, qa(26422, {	-- Meet the High Tinker
+								}),
+								qa(26422, {	-- Meet the High Tinker
+									["qg"] = 42323,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {5},	-- Priest
-								})),
-								qg(42331, qa(26421, {	-- Meet the High Tinker
+								}),
+								qa(26421, {	-- Meet the High Tinker
+									["qg"] = 42331,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {8},	-- Mage
-								})),
-								qg(42324, qa(26425, {	-- Meet the High Tinker
+								}),
+								qa(26425, {	-- Meet the High Tinker
+									["qg"] = 42324,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {1},	-- Warrior
-								})),
-								qg(460, qa(26424, {	-- Meet the High Tinker
+								}),
+								qa(26424, {	-- Meet the High Tinker
+									["qg"] = 460,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {9},	-- Warlock
-								})),
-								qg(103614, q(41218, {	-- Meet the High Tinker
+								}),
+								q(41218, {	-- Meet the High Tinker
+									["qg"] = 103614,	-- 
 									["races"] = {7,9},	-- Gnome, Goblin
 									["classes"] = {3},	-- Hunter
-								})),
-								qg(42708, qa(26284, {	-- Missing in Action
+								}),
+								qa(26284, {	-- Missing in Action
+									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42491, qa(26333, {	-- No Tanks!
+								}),
+								qa(26333, {	-- No Tanks!
+									["qg"] = 42491,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42353, qa(26373, {	-- On to Kharanos
+								}),
+								qa(26373, {	-- On to Kharanos
+									["qg"] = 42353,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42708, qa(26329, {	-- One More Thing
+								}),
+								qa(26329, {	-- One More Thing
+									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42353, qa(26342, {	-- Paint it Black
+								}),
+								qa(26342, {	-- Paint it Black
+									["qg"] = 42353,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42553, q(26222, {	-- Scrounging for Parts
+								}),
+								q(26222, {	-- Scrounging for Parts
+									["qg"] = 42553,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42366, qa(26339, {	-- Staging in Brewnall
+								}),
+								qa(26339, {	-- Staging in Brewnall
+									["qg"] = 42366,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(63238, qa(31138, {	-- The Arts of a Monk
+								}),
+								qa(31138, {	-- The Arts of a Monk
+									["qg"] = 63238,	-- 
 									["classes"] = {10},	-- Monk
-								})),
-								qg(42366, qa(26207, {	-- The Arts of a Rogue
+								}),
+								qa(26207, {	-- The Arts of a Rogue
+									["qg"] = 42366,	-- 
 									["classes"] = {4},	-- Rogue
-								})),
-								qg(42317, q(26208, {	-- The Fight Continues
+								}),
+								q(26208, {	-- The Fight Continues
+									["qg"] = 42317,	-- 
 									["races"] = {7,9},	-- Gnome, Goblin
-								})),
+								}),
 --]]
-								qg(42396, q(26197, {	-- The Future of Gnomeregan
-									["g"] = {
-										i(59042),
-									},
+								q(26197, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {8},	-- Mage
-								})),
-								qg(42396, q(26199, {	-- The Future of Gnomeregan
 									["g"] = {
-										i(59040),
+										i(59042),	-- 
 									},
+								}),
+								q(26199, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {5},	-- Priest
-								})),
-								qg(42396, q(26202, {	-- The Future of Gnomeregan
 									["g"] = {
-										i(59041),
+										i(59040),	-- 
 									},
+								}),
+								q(26202, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {9},	-- Warlock
-								})),
-								qg(42396, q(26203, {	-- The Future of Gnomeregan
 									["g"] = {
-										i(59039),
+										i(59041),	-- 
 									},
+								}),
+								q(26203, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {1},	-- Warrior
-								})),
-								qg(42396, q(26206, {	-- The Future of Gnomeregan
 									["g"] = {
-										i(59043),
-										i(59041),
+										i(59039),	-- 
 									},
+								}),
+								q(26206, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {4},	-- Rogue
-								})),
-								qg(42396, qa(31135, {	-- The Future of Gnomeregan
+									["g"] = {
+										i(59043),	-- 
+										i(59041),	-- 
+									},
+								}),
+								qa(31135, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
 									["classes"] = {10},	-- Monk
-								})),
-								qg(42396, q(41217, {	-- The Future of Gnomeregan
+								}),
+								q(41217, {	-- The Future of Gnomeregan
+									["qg"] = 42396,	-- 
+									["classes"] = {3},	-- Hunter
 									["g"] = {
 										i(134123),
 									},
-									["classes"] = {3},	-- Hunter
-								})),
+								}),
 --[[								
-								qg(124280, qa(47709)),	-- The Great Gnomeregan Race
-								qg(42489, qa(26316, {	-- What's Keeping Jessup?
+								qa(47709, {	-- The Great Gnomeregan Race
+									["qg"] = 124280,	-- 
+								}),
+								qa(26316, {	-- What's Keeping Jessup?
+									["qg"] = 42489,	-- 
 									["races"] = {7},	-- Gnome
-								})),
-								qg(42611, q(26264, {	-- What's Left Behind
+								}),
+								q(26264, {	-- What's Left Behind
+									["qg"] = 42611,	-- 
 									["races"] = {7,9},	-- Gnome, Goblin
-								})),
+								}),
 --]]								
 							},
 						}),

@@ -4,9 +4,15 @@ local L = AllTheThings.L;
 
 -- TODO
 
+local a = L.NPC_ID_NAMES;
+for key,value in pairs({
+	-- Enter translated NPCID's here
+})
+do a[key] = value; end
 
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
+	-- Enter translated OBJECTID's here
 	[31] = "Estatua de león antigua",
 	[34] = "Vieja jarra",
 	[55] = "Un cadáver medio comido",

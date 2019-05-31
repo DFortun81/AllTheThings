@@ -712,6 +712,7 @@ _.Craftables =
 			filter(113, {	-- Bags
 				i(29540),	-- Reinforced Mining Bag
 				un(7, i(34099)),	-- Knothide Ammo Pouch
+				un(7, i(34105)),	-- Quiver of a Thousand Feathers
 			}),	
 			n(-322, { 	-- Cloak
 				i(33122),	-- Cloak of Darkness

@@ -9,27 +9,44 @@ _.Zones =
 				n(-25, { 	-- Pet Battle
 					p(1160), 	-- Arcane Eye
 					p(439), 	-- Restless Shadeling
-					qg(66522, q(31915, {	-- Grand Master Lydia Accoste (non-daily)
-						i(89125),	-- Sack of Pet Supplies
-					})),
-					qg(66522, q(31916, { 	-- Grand Master Lydia Accoste (daily)
+					q(31915, {	-- Grand Master Lydia Accoste (non-daily)
+						["qg"] = 66522,	-- Lydia Accoste
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31916, { 	-- Grand Master Lydia Accoste (daily)
+						["qg"] = 66522,	-- Lydia Accoste
 						["isDaily"] = true,
 						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
-					})),
-					qg(66522, qh(31980)),	-- The Returning Champion
-					qg(66522, qa(31976)),	-- The Returning Champion
+					}),
+					qh(31980, {	-- The Returning Champion
+						["qg"] = 66522,	-- Lydia Accoste
+					}),
+					qa(31976, {	-- The Returning Champion
+						["qg"] = 66522,	-- Lydia Accoste
+					}),
 				}),
 				n(-17, { 	-- Quests
 --[[			
-					qart(qg(100729, q(40933, {	-- A Grisly Task
+					qart(q(40933, {	-- A Grisly Task
+						["qg"] = 100729,	-- 
 						["classes"] = {6},
-					}))),
-					qg(113986, q(44421)),	-- Anomalous Anomalies
-					qg(18253, q(11031)),	-- Archmage No More
-					qg(18253, q(11033)),	-- Assassin No More
-					qg(113986, q(44500)),	-- Author! Author!
+					})),
+					q(44421, {	-- Anomalous Anomalies
+						["qg"] = 113986,	-- 
+					}),
+					q(11031, {	-- Archmage No More
+						["qg"] = 18253,	-- 
+					}),
+					q(11033, {	-- Assassin No More
+						["qg"] = 18253,	-- 
+					}),
+					q(44500, {	-- Author! Author!
+						["qg"] = 113986,	-- 
+					}),
 --]]
 					ql(q(30109, {	-- Blood of the Betrayer
 						["qg"] = 57770,	-- Zazzo Twinklefingers
@@ -44,9 +61,13 @@ _.Zones =
 						},
 					}),
 --[[
-					qg(114550, qa(40717)),	-- Calling of the Council
-					qg(114631, qa(44684)),	-- Corruption Runs Deep
-					]]--
+					qa(40717, {	-- Calling of the Council
+						["qg"] = 114550,	-- 
+					}),
+					qa(44684, {	-- Corruption Runs Deep
+						["qg"] = 114631,	-- 
+					}),
+]]--
 					qa(44764, {	-- Demon in Disguise
 						["sourceQuest"] = 44686,	-- Thought Collection
 						["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
@@ -60,22 +81,29 @@ _.Zones =
 						["qg"] = 100729,	-- Revil Kost
 					}),
 					--[[
-					qart(qg(100729, q(40835, {	-- Disturbing the Past
+					qart(q(40835, {	-- Disturbing the Past
+						["qg"] = 100729,	-- 
 						["classes"] = {11},
-					}))),
-					qart(qg(100729, q(40932, {	-- Disturbing the Past
+					})),
+					qart(q(40932, {	-- Disturbing the Past
+						["qg"] = 100729,	-- 
 						["classes"] = {6},
-					}))),
-					qg(114310, q(44557)),	-- Finite Numbers
-					qart(qg(100323, q(40931, {	-- Following the Curse
+					})),
+					q(44557, {	-- Finite Numbers
+						["qg"] = 114310,	-- 
+					}),
+					qart(q(40931, {	-- Following the Curse
+						["qg"] = 100323,	-- 
 						["classes"] = {6},
-					}))),
-					qart(qg(100323, q(40588, {	-- Following the Curse
+					})),
+					qart(q(40588, {	-- Following the Curse
+						["qg"] = 100323,	-- 
 						["classes"] = {9},
-					}))),
-					qart(qg(100323, q(40834, {	-- Following the Curse
+					})),
+					qart(q(40834, {	-- Following the Curse
+						["qg"] = 100323,	-- 
 						["classes"] = {11},
-					}))),
+					})),
 					]]--
 					q(44734, {	-- Fragments of the Past
 						["sourceQuest"] = 44733,	-- The Power of Corruption
@@ -86,26 +114,45 @@ _.Zones =
 						},
 					}),
 					--[[
-					qg(101547, q(40755)),	-- Hiding in the Stacks
-					qg(114310, q(44683)),	-- Holding the Lines
-					qg(18255, q(45296, {	-- No Bones About It
+					q(40755, {	-- Hiding in the Stacks
+						["qg"] = 101547,	-- 
+					}),
+					q(44683, {	-- Holding the Lines
+						["qg"] = 114310,	-- 
+					}),
+					q(45296, {	-- No Bones About It
+						["qg"] = 18255,	-- 
 						 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
-					})),
-					qg(18253, q(10731)),	-- Path of the Violet Assassin
-					qg(18253, q(10729)),	-- Path of the Violet Mage
-					qg(18253, q(10732)),	-- Path of the Violet Protector
-					qg(18253, q(10730)),	-- Path of the Violet Restorer
-					qg(18253, q(11032)),	-- Protector No More
-					qg(114310, q(44685)),	-- Reclaiming the Ramparts
-					qg(18253, q(11034)),	-- Restorer No More
+					}),
+					q(10731, {	-- Path of the Violet Assassin
+						["qg"] = 18253,	-- 
+					}),
+					q(10729, {	-- Path of the Violet Mage
+						["qg"] = 18253,	-- 
+					}),
+					q(10732, {	-- Path of the Violet Protector
+						["qg"] = 18253,	-- 
+					}),
+					q(10730, {	-- Path of the Violet Restorer
+						["qg"] = 18253,	-- 
+					}),
+					q(11032, {	-- Protector No More
+						["qg"] = 18253,	-- 
+					}),
+					q(44685, {	-- Reclaiming the Ramparts
+						["qg"] = 114310,	-- 
+					}),
+					q(11034, {	-- Restorer No More
+						["qg"] = 18253,	-- 
+					}),
 					]]--
 					q(45291, {	-- Return to Karazhan: Book Wyrms
+						["lvl"] = 110,
+						["qg"] = 18255,	-- Mage Darius
 						["sourceQuests"] = {
 							44734,	-- Fragments of the Past
 							44735,	-- Return to Karazhan: In the Eye of the Beholder
 						},
-						["lvl"] = 110,
-						["qg"] = 18255,	-- Mage Darius
 					}),
 					q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
 						["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
@@ -139,27 +186,34 @@ _.Zones =
 						["lvl"] = 110,
 					}),
 					--[[
-					qart(qg(101282, q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
+					qart(q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
+						["qg"] = 101282,	-- 
 						["classes"] = {11},
-					}))),
-					qart(qg(101282, q(40935, {	-- The Call of Vengeance (map blank
+					})),
+					qart(q(40935, {	-- The Call of Vengeance (map blank
+						["qg"] = 101282,	-- 
 						["classes"] = {6},
-					}))),
-					qart(qg(101282, q(40987, {	-- The Call of Vengeance (map blank
+					})),
+					qart(q(40987, {	-- The Call of Vengeance (map blank
+						["qg"] = 101282,	-- 
 						["classes"] = {6},
-					}))),
-					qart(qg(100812, q(40934, {	-- The Dark Riders
+					})),
+					qart(q(40934, {	-- The Dark Riders
+						["qg"] = 100812,	-- 
 						["classes"] = {6},
-					}))),
-					qart(qg(100812, q(40986, {	-- The Dark Riders
+					})),
+					qart(q(40986, {	-- The Dark Riders
+						["qg"] = 100812,	-- 
 						["classes"] = {6},
-					}))),
-					qart(qg(100812, q(40838, {	-- The Dark Riders
+					})),
+					qart(q(40838, {	-- The Dark Riders
+						["qg"] = 100812,	-- 
 						["classes"] = {11},
-					}))),
-					qart(qg(100812, q(41155, {	-- The Dark Riders
+					})),
+					qart(q(41155, {	-- The Dark Riders
+						["qg"] = 100812,	-- 
 						["classes"] = {9},
-					}))),
+					})),
 --]]
 					q(40623, {	-- The Dark Riders
 						["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
@@ -169,10 +223,13 @@ _.Zones =
 						["qg"] = 100812,	-- Revil Kost
 					}),
 --[[
-					qart(qg(100729, q(40837, {	-- The Deadwind Hunt
+					qart(q(40837, {	-- The Deadwind Hunt
+						["qg"] = 100729,	-- 
 						["classes"] = {11},
-					}))),
-					qg(113655, q(42970)),	-- The Diamond King
+					})),
+					q(42970, {	-- The Diamond King
+						["qg"] = 113655,	-- 
+					}),
 --]]
 					q(40611, {	-- The Fate of Deadwind
 						["sourceQuests"] = { 40606 },	-- To Point the Way

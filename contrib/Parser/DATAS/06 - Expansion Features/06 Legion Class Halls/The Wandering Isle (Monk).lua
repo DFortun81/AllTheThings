@@ -226,12 +226,14 @@ _.ExpansionFeatures =
 					}),
 					--]]
 	--[[ These quests moved here from Uldum. Organize later plz?					
-						qart(qg(47684, q(40570, {	-- Into The Heavens
+						qart(q(40570, {	-- Into The Heavens
+							["qg"] = 47684,	-- King Phaoris
 							["classes"] = {10},
-						}))),
-						qart(qg(47684, q(40634, {	-- Thunder on the Sands
+						})),
+						qart(q(40634, {	-- Thunder on the Sands
+							["qg"] = 47684,	-- King Phaoris
 							["classes"] = {10},
-						}))),
+						})),
 	--]]			
 					--Followers  Sort to other quests later.
 					q(41739, {	-- Champion: Aegira

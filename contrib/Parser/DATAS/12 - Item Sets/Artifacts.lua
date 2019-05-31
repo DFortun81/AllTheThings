@@ -2712,10 +2712,18 @@ _.GearSets =
 				}),
 				i(128821, {	-- Claws of Ursoc [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
-						races({8}, artifact(266)),	-- Standard Troll
-						races({22}, artifact(265)),	-- Standard Worgen
-						races({6}, artifact(264)),	-- Standard Tauren
-						races({4}, artifact(121)),	-- Standard Night Elf
+						artifact(266, {	-- Standard Troll
+							["races"] = { 8 },
+						}),
+						artifact(265, {	-- Standard Worgen
+							["races"] = { 22 },
+						}),
+						artifact(264, {	-- Standard Tauren
+							["races"] = { 6 },
+						}),
+						artifact(121, {	-- Standard Night Elf
+							["races"] = { 4 },
+						}),
 						artifact(267),	-- Recover one of the Pillars
 						artifact(268),	-- Recover Light's Heart
 						artifact(269),	-- Complete first major Order Hall campaign
@@ -2753,10 +2761,18 @@ _.GearSets =
 				}),
 				i(128822, {	-- Claws of Ursoc [Offhand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
-						races({8}, artifact(266)),	-- Standard Troll
-						races({22}, artifact(265)),	-- Standard Worgen
-						races({6}, artifact(264)),	-- Standard Tauren
-						races({4}, artifact(121)),	-- Standard Night Elf
+						artifact(266, {	-- Standard Troll
+							["races"] = { 8 },
+						}),
+						artifact(265, {	-- Standard Worgen
+							["races"] = { 22 },
+						}),
+						artifact(264, {	-- Standard Tauren
+							["races"] = { 6 },
+						}),
+						artifact(121, {	-- Standard Night Elf
+							["races"] = { 4 },
+						}),
 						artifact(267),	-- Recover one of the Pillars
 						artifact(268),	-- Recover Light's Heart
 						artifact(269),	-- Complete first major Order Hall campaign
@@ -3029,7 +3045,14 @@ _.GearSets =
 						{
 							["artifactID"] = 841,	-- Base Skin
 						},
-						qg({120456,120457,120458,120459,120460}, ach(11725, { 	-- Fisherfriend of the Isles
+						ach(11725, { 	-- Fisherfriend of the Isles
+							["qgs"] = {
+								120456,	-- Keeper Raynae
+								120457,	-- Akule Riverhorn
+								120458,	-- Corbyn
+								120459,	-- Sha'leth
+								120460,	-- Impus
+							},
 							["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 							["groups"] = {
 								i(152583, {	-- Underlight Emerald
@@ -3041,7 +3064,7 @@ _.GearSets =
 									},
 								})
 							},
-						})),
+						}),
 					},
 				}),
 			}),

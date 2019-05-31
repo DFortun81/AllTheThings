@@ -198,7 +198,7 @@ profession(356, { 	-- Fishing
 				n(102347, {
 					["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
 					["groups"] = {
-						dr(95, i(133710)), 	-- Salmon Lure
+						i(133710), 	-- Salmon Lure
 					},
 				}),
 			},
@@ -333,7 +333,7 @@ profession(356, { 	-- Fishing
 			["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
 			["groups"] = {
 				n(102338, {		-- Salteye Skrog-Hunter
-					dr(93, i(133702)),	-- Aromatic Murloc Slime
+					i(133702),	-- Aromatic Murloc Slime
 				}),
 			},
 		}),

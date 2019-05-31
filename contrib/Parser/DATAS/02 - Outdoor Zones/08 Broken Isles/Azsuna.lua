@@ -1078,10 +1078,10 @@ _.Zones =
 						q(46745, {	-- Supplies from the Court
 							["g"] = {
 								i(152102, {	-- Farondis Chest
-									dr(3, i(147806)),	-- Cloudwing Hippogryph
+									i(147806),	-- Cloudwing Hippogryph
 								}),
 								un(2,  i(146897, {	-- Farondis Chest
-									dr(3, i(147806)),	-- Cloudwing Hippogryph
+									i(147806),	-- Cloudwing Hippogryph
 								})),
 							},
 							["repeatable"] = true,
@@ -1097,7 +1097,7 @@ _.Zones =
 									},
 								},
 								un(2, i(146902, {	-- Warden's Supply Kit
-									dr(3, i(147843)),	-- Sira's Extra Cloak
+									i(147843),	-- Sira's Extra Cloak
 								})),
 							},
 							["repeatable"] = true,
@@ -1360,7 +1360,7 @@ _.Zones =
 								["description"] = "You receive the buff Skrog Toenail; on expiration of this buff, a Murloc mob is summoned. When killed, this mob will drop Aromatic Murloc Slime.",
 								["g"] = {
 									n(102338, {		-- Salteye Skrog-Hunter
-										dr(93, i(133702)),	-- Aromatic Murloc Slime
+										i(133702),	-- Aromatic Murloc Slime
 									}),
 								},
 							}),
@@ -2485,10 +2485,16 @@ _.Zones =
 						["qg"] = 93967,	-- Lyndras
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
 					}),
-					qg(89341, q(37727, {	-- The Magister of Mixology
-						i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
-					})),
-					sq(37727, qg(89341, q(37728))),	-- Presentation is Everything
+					q(37727, {	-- The Magister of Mixology
+						["qg"] = 89341,	-- Magister Garuhod
+						["g"]  = {
+							i(133814),	-- Recipe: Faronaar Fizz [Rank 1]
+						},
+					}),
+					q(37728, {	-- Presentation is Everything
+						["qg"] = 89341,	-- Magister Garuhod
+						["sourceQuest"] = 37727,	-- The Magister of Mixology
+					}),
 					q(40210, {	-- Time Well Spent
 						["qg"] = 98964,	-- Celea
 						["sourceQuests"] = {
@@ -2855,46 +2861,52 @@ _.Zones =
 						i(127023),	-- Pattern: Imbued Silkweave Epaulets [Rank 1]
 					}),
 					n(107379, {	-- Marin Bladewing <Wardens Emissary>
-						i(137849),	-- Design: Twisted Pandemonite Choker (Rank 3)
-						i(142333),	-- Recipe: Feathered Luffa
-						i(142331),	-- Recipe: Spiced Falcosaur Omelet
-						i(137713),	-- Schematic: Bolt-Action Headgun (Rank 3)
-						i(137714),	-- Schematic: Reinforced Headgun (Rank 3)
-						i(137716),	-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
-						i(137715),	-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
-						i(137773),	-- Vantus Rune Technique: Cenarius (Rank 3)
-						i(137777),	-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
-						i(137781),	-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
-						i(136898), 	-- Fledgling Warden Owl Pet
-						i(130157), 	-- Syxsehnz Rod Toy
-						i(130191), 	-- Trapped Treasure Chest Kit Toy
-						i(140580), 	-- Warden's Tabard
-						i(139607), 	-- Drape of the Patient Hunter
-						i(139603), 	-- Vault Patroller's Warboots
+						["coord"] = { 48.2, 73.9, 630 },
+						["groups"] = {
+							i(137849),	-- Design: Twisted Pandemonite Choker (Rank 3)
+							i(142333),	-- Recipe: Feathered Luffa
+							i(142331),	-- Recipe: Spiced Falcosaur Omelet
+							i(137713),	-- Schematic: Bolt-Action Headgun (Rank 3)
+							i(137714),	-- Schematic: Reinforced Headgun (Rank 3)
+							i(137716),	-- Schematic: Sawed-Off Cranial Cannon (Rank 3)
+							i(137715),	-- Schematic: Semi-Automagic Cranial Cannon (Rank 3)
+							i(137773),	-- Vantus Rune Technique: Cenarius (Rank 3)
+							i(137777),	-- Vantus Rune Technique: Spellblade Aluriel (Rank 3)
+							i(137781),	-- Vantus Rune Technique: Star Augur Etraeus (Rank 3)
+							i(136898), 	-- Fledgling Warden Owl Pet
+							i(130157), 	-- Syxsehnz Rod Toy
+							i(130191), 	-- Trapped Treasure Chest Kit Toy
+							i(140580), 	-- Warden's Tabard
+							i(139607), 	-- Drape of the Patient Hunter
+							i(139603), 	-- Vault Patroller's Warboots
+						},
 					}),
 					n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
-						i(137978),	-- Pattern: Imbued Silkweave Gloves [Rank 3]
-						i(137977),	-- Pattern: Imbued Silkweave Hood [Rank 3]
-						i(138015),	-- Pattern: Silkweave Pantaloons [Rank 3]
-						i(137980),	-- Pattern: Imbued Silkweave Robe [Rank 3]
-						i(137780),	-- Vantus Rune Technique: Krosus [Rank 3]
-						i(137774),	-- Vantus Rune Technique: Skorpyron [Rank 3]
-						i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3]
-						i(137776),	-- Vantus Rune Technique: Trilliax [Rank 3]
-						i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
-							artifact(224),	-- Marksmanship Hunter Hidden Appearance
-						}),
-						i(129276, {	-- Beginner's Guide to Dimensional Rifting
-							ach(11175),	-- Higher Dimensional Rifting
-						}),
-						i(140672), 	-- Court Scribe Pet
-						i(129279), 	-- Enchanted Stone Whistle Toy
-						i(140577), 	-- Court of Farondis Tabard
-						i(139606), 	-- Cadet's Gaudy Scarf
-						i(139595), 	-- Once-Fashionable Nar'thalas Leggings
-						{
-							["itemID"] = 139631,	-- Vainglorious Draught
-							["questID"] = 43514,	-- A Vainglorious Past
+						["coord"] = { 46.9, 41.4, 630 },
+						["groups"] = {
+							i(137978),	-- Pattern: Imbued Silkweave Gloves [Rank 3]
+							i(137977),	-- Pattern: Imbued Silkweave Hood [Rank 3]
+							i(138015),	-- Pattern: Silkweave Pantaloons [Rank 3]
+							i(137980),	-- Pattern: Imbued Silkweave Robe [Rank 3]
+							i(137780),	-- Vantus Rune Technique: Krosus [Rank 3]
+							i(137774),	-- Vantus Rune Technique: Skorpyron [Rank 3]
+							i(137779),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 3]
+							i(137776),	-- Vantus Rune Technique: Trilliax [Rank 3]
+							i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
+								artifact(224),	-- Marksmanship Hunter Hidden Appearance
+							}),
+							i(129276, {	-- Beginner's Guide to Dimensional Rifting
+								ach(11175),	-- Higher Dimensional Rifting
+							}),
+							i(140672), 	-- Court Scribe Pet
+							i(129279), 	-- Enchanted Stone Whistle Toy
+							i(140577), 	-- Court of Farondis Tabard
+							i(139606), 	-- Cadet's Gaudy Scarf
+							i(139595), 	-- Once-Fashionable Nar'thalas Leggings
+							{
+								["itemID"] = 139631,	-- Vainglorious Draught
+								["questID"] = 43514,	-- A Vainglorious Past
+							},
 						},
 					}),
 				}),

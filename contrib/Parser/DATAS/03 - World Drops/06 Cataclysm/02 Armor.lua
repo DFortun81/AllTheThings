@@ -7,7 +7,6 @@ _.WorldDrops =
 		["groups"] = {
 			n(-318, {	-- Armor
 				n(-320, {		-- Head
-					i(60202),	-- Tsanga's Helm
 					i(66931),	-- Mercury-Coated Hood
 					i(66955),	-- Scentsniffer Hood
 					i(66975),	-- Hood of the Crying Rogue
@@ -16,6 +15,8 @@ _.WorldDrops =
 					i(67122),	-- Helm of Holy Visions
 					i(67123),	-- Sinman's Helm of Succor
 					i(67147),	-- Je'Tze's Sparkling Tiara
+					-- [removed non-world drops below]
+					--i(60202),	-- Tsanga's Helm
 				}),
 				filter(51, {	-- Neck
 					{	-- Amulet of the Howling Watch
@@ -44,8 +45,6 @@ _.WorldDrops =
 					},
 				}),
 				n(-321, {		-- Shoulder
-					i(59467),	-- Hide of Chromaggus
-					i(59901),	-- Heaving Plates of Protection
 					i(66882),	-- Skeletalized Shoulderpads
 					i(66959),	-- Toraelian Spaulders
 					i(66976),	-- Spaulders of the Savage Beast
@@ -53,7 +52,10 @@ _.WorldDrops =
 					i(67112),	-- Brittany's Ceremonial Spaulders
 					i(67117),	-- Woundsealer Spaulders
 					i(67144),	-- Pauldrons of Edward the Odd
-					i(71025),	-- Flickering Shoulderpads
+					-- [removed non-world drops below]
+					--i(71025),	-- Flickering Shoulderpads
+					--i(59901),	-- Heaving Plates of Protection
+					--i(59467),	-- Hide of Chromaggus
 				}),
 				n(-322, {		-- Back
 					i(55308),	-- Moonbrook Cloak
@@ -64,9 +66,6 @@ _.WorldDrops =
 					i(55313),	-- Mereldar Cloak
 					i(55314),	-- Thondroril Cloak
 					i(55315),	-- Blackwolf Cloak
-					i(55824),	-- Skin of Stone
-					i(56219),	-- Shroud of Dark Memories
-					i(59466),	-- Ironstar's Impenetrable Cover
 					i(66883),	-- Vertigo Cloak
 					i(66965),	-- Drape of Fiery Dreams
 					i(66991),	-- Cloak of Rich Anger
@@ -76,15 +75,15 @@ _.WorldDrops =
 					i(67134),	-- Dory's Finery
 					i(67140),	-- Drape of Inimitable Fate
 					i(67142),	-- Zom's Electrostatic Cloak
-					i(69796),	-- Spiritcaller Cloak
-					i(69800),	-- Spiritguard Drape
-					i(76160),	-- Drapes of the Dragonshrine
+					-- [removed non-world drops below]
+					--i(76160),	-- Drapes of the Dragonshrine
+					--i(59466),	-- Ironstar's Impenetrable Cover
+					--i(56219),	-- Shroud of Dark Memories
+					--i(55824),	-- Skin of Stone
+					--i(69796),	-- Spiritcaller Cloak
+					--i(69800),	-- Spiritguard Drape
 				}),
 				n(-323, {		-- Chest
-					{	-- Chestguard of Futility	Added in Legion!!
-						["itemID"] = 157616,	-- Chestguard of Futility
-					},
-					i(59468),	-- Shadowforge's Lightbound Smock
 					i(66919),	-- Robes of Whispering Sands
 					i(66992),	-- Harbinger's Breastplate
 					i(67024),	-- Breastplate of Solemn Vows
@@ -93,41 +92,47 @@ _.WorldDrops =
 					i(67133),	-- Dizze's Whirling Robe
 					i(67135),	-- Morrie's Waywalker Wrap
 					i(67143),	-- Icebone Hauberk
-					i(76154),	-- Breastplate of Despair
+					-- [removed non-world drops below]
+					--i(76154),	-- Breastplate of Despair
+					--{	-- Chestguard of Futility	Added in Legion!!
+					--	["itemID"] = 157616,	-- Chestguard of Futility
+					--},
+					--i(59468),	-- Shadowforge's Lightbound Smock
 				}),
 				n(-326, {		-- Wrist
-					i(60211),	-- Bracers of the Dark Pool
 					i(66954),	-- Knife-Concealing Bracers
 					i(66958),	-- Bracers of Razor Fletching
 					i(66979),	-- Bracers of Bloody Business
 					i(67088),	-- Falling Snow Bracers
 					i(67115),	-- Soulheart Bindings
 					i(67127),	-- Bracers of Caustic Purification
-					i(67238),	-- Terborus's Rotating Bands
-					i(69801),	-- Amani Armguards
-					i(70937),	-- Bracers of Regal Force
-					i(71130),	-- Flamebinder Bracers
-					i(71260),	-- Bracers of Imperious Truths
-					i(71261),	-- Gigantiform Bracers
-					i(71262),	-- Smolderskull Bindings
-					i(71263),	-- Bracers of Misting Ash
-					i(71264),	-- Bracers of Forked Lightning
-					i(71265),	-- Emberflame Bracers
-					i(71266),	-- Firesoul Wristguards
-					i(71341),	-- Glowing Wing Bracers
-					i(71350),	-- Wristwraps of Arrogant Doom
-					i(71365),	-- Hide-Bound Chains
-					i(76156),	-- Bindings of the End Times
-					i(76159),	-- Legion Bindings
-					i(77316),	-- Flashing Bracers of Warmth
-					i(77317),	-- Heartcrusher Wristplates
-					i(77318),	-- Bracers of Unrelenting Excellence
-					i(77319),	-- Bracers of the Spectral Wolf
-					i(77320),	-- Luminescent Bracers
-					i(77321),	-- Dragonbelly Bracers
-					i(77322),	-- Bracers of Manifold Pockets
-					i(77323),	-- Bracers of the Black Dream
-					i(77324),	-- Chronoboost Bracers
+					-- [removed non-world drops below]
+					--i(69801),	-- Amani Armguards
+					--i(76156),	-- Bindings of the End Times
+					--i(71264),	-- Bracers of Forked Lightning
+					--i(71260),	-- Bracers of Imperious Truths
+					--i(77322),	-- Bracers of Manifold Pockets
+					--i(71263),	-- Bracers of Misting Ash
+					--i(70937),	-- Bracers of Regal Force
+					--i(77323),	-- Bracers of the Black Dream
+					--i(60211),	-- Bracers of the Dark Pool
+					--i(77319),	-- Bracers of the Spectral Wolf
+					--i(77318),	-- Bracers of Unrelenting Excellence
+					--i(77324),	-- Chronoboost Bracers
+					--i(77321),	-- Dragonbelly Bracers
+					--i(71265),	-- Emberflame Bracers
+					--i(71266),	-- Firesoul Wristguards
+					--i(71130),	-- Flamebinder Bracers
+					--i(77316),	-- Flashing Bracers of Warmth
+					--i(71261),	-- Gigantiform Bracers
+					--i(71341),	-- Glowing Wing Bracers
+					--i(77317),	-- Heartcrusher Wristplates
+					--i(71365),	-- Hide-Bound Chains
+					--i(76159),	-- Legion Bindings
+					--i(77320),	-- Luminescent Bracers
+					--i(71262),	-- Smolderskull Bindings
+					--i(67238),	-- Terborus's Rotating Bands
+					--i(71350),	-- Wristwraps of Arrogant Doom
 				}),
 				n(-327, {		-- Hands
 					i(66641),	-- Vonica's Gauntlets
@@ -139,15 +144,15 @@ _.WorldDrops =
 					i(67126),	-- Roffle's Ruffly Gloves
 					i(67132),	-- Grips of the Failed Immortal
 					i(67146),	-- Woundsplicer Handwraps
-					i(67234),	-- Thartuk's Inimitable Gauntlets
-					i(69797),	-- Charmbinder Grips
-					i(69798),	-- Knotted Handwraps
-					i(69876),	-- Xariona's Spectral Gauntlets
-					i(76157),	-- Waterworn Handguards
-					i(76161),	-- Gauntlets of the Twilight Hour
+					-- [removed non-world drops below]
+					--i(69797),	-- Charmbinder Grips
+					--i(76161),	-- Gauntlets of the Twilight Hour
+					--i(69798),	-- Knotted Handwraps
+					--i(67234),	-- Thartuk's Inimitable Gauntlets
+					--i(76157),	-- Waterworn Handguards
+					--i(69876),	-- Xariona's Spectral Gauntlets
 				}),
 				n(-328, {		-- Waist
-					i(59465),	-- Corehammer's Riveted Girdle
 					i(66941),	-- Triple-Loop Belt
 					i(66966),	-- Elekk-Horn Waistguard
 					i(66980),	-- Girdle of Heated Deeds
@@ -155,25 +160,22 @@ _.WorldDrops =
 					i(67099),	-- Waistguard of New Days
 					i(67103),	-- Belt of Redeemed Fate
 					i(67114),	-- Girdle of Chained Thunder
-					--i(67235),	-- Garr's Girdle of Memories - item does not seem to exist in game - Wowhead says removed/no longer available
-					--i(67240),	-- Belt of a Thousand Mouths - item does not seem to exist in game - Wowhead says removed/no longer available
-					i(67242),	-- Tol'Vir Hereditary Girdle
-					i(69842),	-- Garr's Reinforced Girdle of Memories
-					i(69877),	-- Belt of a Thousand Gaping Mouths
-					i(71640),	-- Riplimb's Lost Collar
-					i(78879),	-- Sash of Relentless Truth
-					i(78882),	-- Nightblind Cinch
-					i(78884),	-- Girdle of Fungal Dreams
-					i(78885),	-- Dragoncarver Belt
-					i(78886),	-- Belt of Ghostly Graces
-					i(78887),	-- Girdle of Soulful Mending
-					i(78888),	-- Waistguard of Bleeding Bone
-					i(78889),	-- Waistplate of the Desecrated Future
+					-- [removed non-world drops below]
+					--i(69877),	-- Belt of a Thousand Gaping Mouths
+					--i(78886),	-- Belt of Ghostly Graces
+					--i(59465),	-- Corehammer's Riveted Girdle
+					--i(78885),	-- Dragoncarver Belt
+					--i(69842),	-- Garr's Reinforced Girdle of Memories
+					--i(78884),	-- Girdle of Fungal Dreams
+					--i(78887),	-- Girdle of Soulful Mending
+					--i(78882),	-- Nightblind Cinch
+					--i(71640),	-- Riplimb's Lost Collar
+					--i(78879),	-- Sash of Relentless Truth
+					--i(67242),	-- Tol'Vir Hereditary Girdle
+					--i(78888),	-- Waistguard of Bleeding Bone
+					--i(78889),	-- Waistplate of the Desecrated Future
 				}),
 				n(-329, {		-- Legs
-					i(55260),	-- Alpheus Legguards
-					i(56218),	-- Curse-Tainted Leggings
-					i(60201),	-- Phase-Twister Leggings
 					i(66904),	-- Gartic's Resplendent Leggings
 					i(66962),	-- Shadowskulk Leggings
 					i(66971),	-- Highland Padded Leggings
@@ -183,42 +185,47 @@ _.WorldDrops =
 					i(67141),	-- Corefire Legplates
 					i(67148),	-- Kilt of Trollish Dreams
 					i(67150),	-- Arrowsinger Legguards
-					i(67236),	-- Blazewing's Furious Kilt
-					i(67244),	-- Sunderfury's Sundries
+					-- [removed non-world drops below]
+					--i(55260),	-- Alpheus Legguards
+					--i(67236),	-- Blazewing's Furious Kilt
+					--i(56218),	-- Curse-Tainted Leggings
+					--i(60201),	-- Phase-Twister Leggings
+					--i(67244),	-- Sunderfury's Sundries
 				}),
 				n(-330, {		-- Feet
 					i(55855),	-- Darksky Treads
-					i(58195),	-- Woe Breeder's Boots
-					i(58197),	-- Rock Furrow Boots
-					i(58198),	-- Eternal Pathfinders
-					i(58199),	-- Moccasins of Verdurous Glooms
-					i(58481),	-- Boots of the Perilous Seas
-					i(58482),	-- Treads of Fleeting Joy
-					i(58484),	-- Fading Violet Sandals
-					i(58485),	-- Melodious Slippers
-					i(58486),	-- Slippers of Moving Waters
-					i(59464),	-- Treads of Savage Beatings
 					i(66963),	-- Treads of the Wyrmhunter
 					i(66967),	-- Camelhide Treads
 					i(66986),	-- Troubled Steps
 					i(67032),	-- Firm-Set Treads
 					i(67113),	-- Medic's Bloodstained Sandals
-					i(67233),	-- Sussurating Treads of Shok'sharak
-					i(67237),	-- Golgarok's Tenderized Treads
-					i(67245),	-- Tarvus's Poison-Scarred Boots
-					i(71023),	-- Coalwalker Sandals
-					i(71027),	-- Treads of Implicit Obedience
-					i(71029),	-- Arachnaflame Treads
-					i(76158),	-- Courtier's Slippers
-					i(77169),	-- Silver Sabatons of Fury
-					i(77170),	-- Kneebreaker Boots
-					i(77171),	-- Bladeshatter Treads
-					i(77172),	-- Boots of Fungoid Growth
-					i(77173),	-- Rooftop Griptoes
-					i(77174),	-- Sabatons of the Graceful Spirit
-					i(77175),	-- Boneshard Boots
-					i(77176),	-- Kavan's Forsaken Treads
-					i(77177),	-- Splinterfoot Sandals
+					-- [removed non-world drops below]
+					--i(71029),	-- Arachnaflame Treads
+					--i(77171),	-- Bladeshatter Treads
+					--i(77175),	-- Boneshard Boots
+					--i(77172),	-- Boots of Fungoid Growth
+					--i(58481),	-- Boots of the Perilous Seas
+					--i(71023),	-- Coalwalker Sandals
+					--i(76158),	-- Courtier's Slippers
+					--i(58198),	-- Eternal Pathfinders
+					--i(58484),	-- Fading Violet Sandals
+					--i(67237),	-- Golgarok's Tenderized Treads
+					--i(77176),	-- Kavan's Forsaken Treads
+					--i(77170),	-- Kneebreaker Boots
+					--i(58485),	-- Melodious Slippers
+					--i(58199),	-- Moccasins of Verdurous Glooms
+					--i(58197),	-- Rock Furrow Boots
+					--i(77173),	-- Rooftop Griptoes
+					--i(77174),	-- Sabatons of the Graceful Spirit
+					--i(77169),	-- Silver Sabatons of Fury
+					--i(58486),	-- Slippers of Moving Waters
+					--i(77177),	-- Splinterfoot Sandals
+					--i(67233),	-- Sussurating Treads of Shok'sharak
+					--i(67245),	-- Tarvus's Poison-Scarred Boots
+					--i(58482),	-- Treads of Fleeting Joy
+					--i(71027),	-- Treads of Implicit Obedience
+					--i(59464),	-- Treads of Savage Beatings
+					--i(58195),	-- Woe Breeder's Boots
 				}),
 				filter(52, {	-- Finger
 					{	-- Band of the Virtuous

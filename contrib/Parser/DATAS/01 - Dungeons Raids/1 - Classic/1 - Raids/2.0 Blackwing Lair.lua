@@ -265,19 +265,27 @@ _.Instances = { tier(1, {	-- Classic
 					ach(685),	-- Blackwing Lair
 					i(19003, {	-- Head of Nefarian
 						qa(7781), 	-- The Lord of Blackrock
-						sq(7781, qg(107574, qa(7782, {	-- The Lord of Blackrock
-							i(19366), 	-- Master Dragonslayer's Orb
-							i(19383),	-- Master Dragonslayer's Medallion
-							i(19384),	-- Master Dragonslayer's Ring
-						}))),
+						qa(7782, {	-- The Lord of Blackrock
+							["qg"] = 107574,
+							["sourceQuest"] = 7781,	-- The Lord of Blackrock
+							["g"] = {
+								i(19366), 	-- Master Dragonslayer's Orb
+								i(19383),	-- Master Dragonslayer's Medallion
+								i(19384),	-- Master Dragonslayer's Ring
+							},
+						}),
 					}),
 					i(19002, {	-- Head of Nefarian
 						qh(7783), 	-- The Lord of Blackrock
-						sq(7783, qg(133520, qh(7784, {	-- The Lord of Blackrock
-							i(19366), 	-- Master Dragonslayer's Orb
-							i(19383),	-- Master Dragonslayer's Medallion
-							i(19384),	-- Master Dragonslayer's Ring
-						}))),
+						qh(7784, {	-- The Lord of Blackrock
+							["qg"] = 133520,
+							["sourceQuest"] = 7783,	-- The Lord of Blackrock
+							["g"] = {
+								i(19366), 	-- Master Dragonslayer's Orb
+								i(19383),	-- Master Dragonslayer's Medallion
+								i(19384),	-- Master Dragonslayer's Ring
+							},
+						}),
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame

@@ -28,14 +28,39 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			},
 			n(0, {	-- Zone Drop
-				i(60211),	-- Bracers of the Dark Pool
-				i(60202),	-- Tsanga's Helm
-				i(60201),	-- Phase-Twister Leggings
-				i(59901),	-- Heaving Plates of Protection
-				i(59521),	-- Soul Blade
-				i(59525),	-- Chelley's Staff of Dark Mending
-				i(60210),	-- Crossfire Carbine
-				i(59520),	-- Unheeded Warning
+				["crs"] = {
+					47087,	-- Azureborne Destroyer
+					49825,	-- Bound Deluge
+					49817,	-- Bound Inferno
+					49826,	-- Bound Rumbler
+					49821,	-- Bound Zephyr
+					47086,	-- Crimsonborne Firestarter
+					47150,	-- Earth Ravager
+					47081,	-- Elemental Firelord
+					49813,	-- Evolved Drakonaar
+					45676,	-- Faceless Guardian
+					47161,	-- Twilight Brute
+					45264,	-- Twilight Crossfire
+					45266,	-- Twilight Dark Mender
+					47152,	-- Twilight Elementalist
+					45267,	-- Twilight Phase-Twister
+					45700,	-- Twilight Portal Shaper
+					45231,	-- Twilight Shadow Knight
+					45699,	-- Twilight Shadow Mender
+					45265,	-- Twilight Soul Blade
+					45687,	-- Twilight-Shifter
+					47151,	-- Wind Breaker
+				},
+				["groups"] = {
+					i(60211),	-- Bracers of the Dark Pool
+					i(60202),	-- Tsanga's Helm
+					i(60201),	-- Phase-Twister Leggings
+					i(59901),	-- Heaving Plates of Protection
+					i(59521),	-- Soul Blade
+					i(59525),	-- Chelley's Staff of Dark Mending
+					i(60210),	-- Crossfire Carbine
+					i(59520),	-- Unheeded Warning
+				},
 			}),
 			d(1, {	-- Normal
 				["difficulties"] = { 3, 4 },

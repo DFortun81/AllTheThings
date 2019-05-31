@@ -449,10 +449,12 @@ profession(773, {	-- Inscription
 							["recipeID"] = 210654--[[Songs of Peace]]
 						},
 						{	-- Songs of the Alliance
-							["recipeID"] = 223941--[[Songs of the Alliance]]
+							["recipeID"] = 223941,	--[[Songs of the Alliance]]
+							["races"] = ALLIANCE_ONLY,
 						},
 						{	-- Songs of the Horde
-							["recipeID"] = 223940--[[Songs of the Horde]]
+							["recipeID"] = 223940,	--[[Songs of the Horde]]
+							["races"] = HORDE_ONLY,
 						},
 						{	-- Songs of the Legion
 							["recipeID"] = 210656--[[Songs of the Legion]]

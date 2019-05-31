@@ -210,314 +210,320 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(782,  1, {	-- Misty Valley
-						}),
-						sz(782,  2, {	-- The Harborage
-							qa(27919, {	-- Onward to the Blasted Lands
-								["qg"] = 17127,
-							}),
-						}),
-						sz(782,  3, {	-- Splinterspear Junction
-							qh(27910, {	-- Last Regrets
-								["qg"] = 47041,
-							}),
-							qh(27907, {	-- Prayerblossom
-								["qg"] = 47041,
-							}),
-							qh(27911, {	-- With Dying Breath
-								["groups"] = {
-									i(64627),	-- Dying Breath
-								},
-								["qg"] = 47041,
-							}),
-							qh(27916, {	-- Ruag's Report
-								["qg"] = 47041,
-								["sourceQuests"] = { 27911 },
-							}),
-							qh(27908, {	-- Secrets of the Mire
-								["qg"] = 47041,
-							}),
-							qh(27909, {	-- The Purespring
-								["qg"] = 47041,
-							}),
-						}),
-						sz(782,  4, {	-- The Shifting Mire
-						}),
-						sz(782,  5, {	-- Stonard
-							qh(27853, {	-- Lumbering Oafs
-								["groups"] = {
-									i(64624),
-									i(64628),
-									i(64631),
-								},
-								["qg"] = 7623,
-								["sourceQuests"] = { 27870 },	-- To Marshtide Watch
-							}),
-							qh(27856, {	-- Marking the Fallen
-								["qg"] = 7623,
-							}),
-							qh(27906, {	-- Neeka Bloodscar
-								["qg"] = 7623,
-							}),
-							qh(28553, {	-- Okrilla and the Blasted Lands
-								["qg"] = 7623,
-								["isBreadcrumb"] = true,
-								["sourceQuests"] = { 27916 },
-							}),
-							qh(27852, {	-- Orcs and Humans
-								["qg"] = 7623,
-							}),
-							qh(27855, {	-- Reinforcements Denied
-								["qg"] = 7623,
-							}),
-							qh(27854, {	-- Tides of Darkness
-								["groups"] = {
-									i(64625),
-									i(64634),
-									i(64632),
-									i(64629),
-									i(157013),	-- Ogre Mage Club
-								},
-								["qg"] = 7623,
-							}),
-							qh(27857, {	-- We're Under Attack!
-								["groups"] = {
-									i(64636),
-									i(64626),
-									i(64630),
-									i(64633),
-									i(64635),
-								},
-								["qg"] = 7623,
-							}),
-						}),
-						sz(782,  6, {	-- Pool of Tears
-						}),
-						sz(782,  7, {	-- Stagalbog
-						}),
-						sz(782,  8, {	-- Sorrowmurk NOTE: This should be Temple of Atal'Hakkar
-							q(27915, {	-- The Heart of the Temple
-								["qg"] = 46071,	-- Lord Itharius
-								["sourceQuests"] = { 27914 },
-							}),
-							qa(27870, {	-- To Marshtide Watch
-								["qg"] = 46071,	-- Lord Itharius
-								["isBreadcrumb"] = true,
-								["sourceQuests"] = { 27914 },
-							}),
-							qh(27871, {	-- To Stonard
-								["qg"] = 46071,	-- Lord Itharius
-							}),
-						}),
-						sz(782,  9, {	-- Bogpaddle
-							q(27592, {	-- Drinks on the Rocks
-								["groups"] = {
-									i(64622),
-									i(64588),
-									i(64598),
-									i(64607),
-									i(64616),
-									i(157012),	-- Broken Silversnap Bottle
-								},
-								["qg"] = 46010,
-							}),
-							q(27663, {	-- Tastes Like Strider
-								["qg"] = 46182,	-- Pierre Fishflay
-							}),
-						}),
-						sz(782, 10, {	-- Misty Reed Strand
-						}),
-						sz(782, 11, {	-- Purespring Cavern
-						}),
-						sz(782, 12, {	-- Marshtide Watch
-							qa(27840, {	-- Draenethyst Crystals
-								["qg"] = 18221,
-							}),
-							qa(27860, {	-- The Lost Ones
-								["qg"] = 18221,
-							}),
-							qa(27918, {	-- The Harborage
-								["qg"] = 18221,
-								["sourceQuests"] = { 27840,27860 },
-							}),
-						}),
-						{	-- A Warrior's Death
-							["questID"] = 54108,
-							["qg"] = 147297,	-- Zekhan
-							["coord"] = { 79.7, 74.7 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54107,	-- Grim Tidings
+					{	-- A Warrior's Death
+						["questID"] = 54108,
+						["qg"] = 147297,	-- Zekhan
+						["coord"] = { 79.7, 74.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54107,	-- Grim Tidings
+					},
+					qa(27840, {	-- Draenethyst Crystals
+						["qg"] = 18221,
+					}),
+					q(27592, {	-- Drinks on the Rocks
+						["qg"] = 46010,
+						["g"] = {
+							i(64622),	-- 
+							i(64588),	-- 
+							i(64598),	-- 
+							i(64607),	-- 
+							i(64616),	-- 
+							i(157012),	-- Broken Silversnap Bottle
 						},
-						{	-- Queen's Favor
-							["questID"] = 54109,
-							["qg"] = 146011,	-- Varok Saurfang
-							["coord"] = { 80.8, 78.7 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 54108,	-- A Warrior's Death
+					}),
+					qh(1430, {	-- [DEPRECATED]Fresh Meat
+						["u"] = 40,
+						["g"] = {
+							un(2, i(9682)),	-- Leather Chef's Belt
+						},
+					}),
+					qa(1393, {	-- Galen's Escape
+						["u"] = 40,
+						["g"] = {
+							un(2, i(6828)),	-- Visionary Buckler
+						},
+					}),
+					q(2702, {	-- Heroes of Old
+						["u"] = 40,
+					}),
+					q(2702, {	-- Heroes of Old 2
+						["u"] = 40,
+						["g"] = {
+							un(2, i(10659)),	-- Shard of Afrasa
+						},
+					}), 
+					qh(27910, {	-- Last Regrets
+						["qg"] = 47041,
+					}),
+					qh(27853, {	-- Lumbering Oafs
+						["qg"] = 7623,
+						["sourceQuests"] = { 27870 },	-- To Marshtide Watch
+						["g"] = {
+							i(64624),	-- 
+							i(64628),	-- 
+							i(64631),	-- 
+						},
+					}),
+					qh(27856, {	-- Marking the Fallen
+						["qg"] = 7623,
+					}),
+					qh(27906, {	-- Neeka Bloodscar
+						["qg"] = 7623,
+					}),
+					qh(28553, {	-- Okrilla and the Blasted Lands
+						["qg"] = 7623,
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 27916 },
+					}),
+					qa(27919, {	-- Onward to the Blasted Lands
+						["qg"] = 17127,
+					}),
+					qh(27852, {	-- Orcs and Humans
+						["qg"] = 7623,
+					}),
+					qh(27907, {	-- Prayerblossom
+						["qg"] = 47041,
+					}),
+					{	-- Queen's Favor
+						["questID"] = 54109,
+						["qg"] = 146011,	-- Varok Saurfang
+						["coord"] = { 80.8, 78.7 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 54108,	-- A Warrior's Death
+					},
+					qh(27855, {	-- Reinforcements Denied
+						["qg"] = 7623,
+					}),
+					qh(27916, {	-- Ruag's Report
+						["qg"] = 47041,
+						["sourceQuests"] = { 27911 },
+					}),
+					qh(27908, {	-- Secrets of the Mire
+						["qg"] = 47041,
+					}),
+					q(27663, {	-- Tastes Like Strider
+						["qg"] = 46182,	-- Pierre Fishflay
+					}),
+					qa(27918, {	-- The Harborage
+						["qg"] = 18221,
+						["sourceQuests"] = { 27840,27860 },
+					}),
+					q(27915, {	-- The Heart of the Temple
+						["qg"] = 46071,	-- Lord Itharius
+						["sourceQuests"] = { 27914 },
+					}),
+					qa(27860, {	-- The Lost Ones
+						["qg"] = 18221,
+					}),
+					qh(27909, {	-- The Purespring
+						["qg"] = 47041,
+					}),
+					q(2681, {	-- The Stones That Bind Us
+						["u"] = 40,
+					}),
+					qh(1427, {	-- [DEPRECATED]Threat From the Sea
+						["u"] = 40,
+						["g"] = {
+							un(2, i(9680)),	-- Tok'kar's Murloc Shanker
+							un(2, i(9678)),	-- Tok'kar's Murloc Basher
+							un(2, i(9679)),	-- Tok'kar's Murloc Chopper
+						},
+					}),
+					qh(27854, {	-- Tides of Darkness
+						["qg"] = 7623,
+						["g"] = {
+							i(64625),	-- 
+							i(64634),	-- 
+							i(64632),	-- 
+							i(64629),	-- 
+							i(157013),	-- Ogre Mage Club
+						},
+					}),
+					qa(27870, {	-- To Marshtide Watch
+						["qg"] = 46071,	-- Lord Itharius
+						["isBreadcrumb"] = true,
+						["sourceQuests"] = { 27914 },
+					}),
+					qh(27871, {	-- To Stonard
+						["qg"] = 46071,	-- Lord Itharius
+					}),
+					qh(27857, {	-- We're Under Attack!
+						["qg"] = 7623,
+						["g"] = {
+							i(64636),	-- 
+							i(64626),	-- 
+							i(64630),	-- 
+							i(64633),	-- 
+							i(64635),	-- 
+						},
+					}),
+					qh(27911, {	-- With Dying Breath
+						["qg"] = 47041,
+						["g"] = {
+							i(64627),	-- Dying Breath
 						},
 					}),
 				}),
 				n(-16,  {	-- Rares	
 					n(14445, {	-- Captain Wyrmak
 						["g"] = {
-							dr(06.0, i(9943)),	-- Abjurer's Robe
-							dr(06.0, i(9950)),	-- Chieftain's Breastplate
-							dr(06.0, i(10173)),	-- Mystical Bracers
-							dr(06.0, i(10074)),	-- Righteous Leggings
-							dr(05.0, i(10126)),	-- Ornate Bracers
-							dr(05.0, i(10120)),	-- Ornate Cloak
-							dr(04.0, i(10187)),	-- Swashbuckler's Eyepatch
-							dr(03.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(03.0, i(10077)),	-- Lord's Breastplate
-							dr(02.0, i(10198)),	-- Crusader's Helm
-							dr(02.0, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(02.0, i(10186)),	-- Swashbuckler's Gloves
-							dr(02.0, i(10108)),	-- Wanderer's Cloak
-							dr(01.9, i(10200)),	-- Crusader's Pauldrons
-							dr(01.8, i(10098)),	-- Councillor's Cloak
-							dr(01.7, i(10197)),	-- Crusader's Belt
-							dr(01.7, i(10064)),	-- Duskwoven Pants
-							dr(01.6, i(10085)),	-- Lord's Pauldrons
-							dr(01.5, i(10082)),	-- Lord's Boots
-							dr(01.5, i(10133)),	-- Revenant Leggings
-							dr(01.4, i(10196)),	-- Crusader's Gauntlets
-							dr(01.4, i(10190)),	-- Swashbuckler's Belt
-							dr(01.4, i(10184)),	-- Swashbuckler's Bracers
-							dr(01.3, i(10084)),	-- Lord's Legguards
-							dr(01.2, i(10199)),	-- Crusader's Leggings
-							dr(01.2, i(10128)),	-- Revenant Chestplate
-							dr(01.2, i(10107)),	-- Wanderer's Bracers
-							dr(01.1, i(10242)),	-- Heavy Lamellar Gauntlets
-							dr(01.1, i(10174)),	-- Mystical Cape
-							dr(01.1, i(10203)),	-- Overlord's Chestplate
-							dr(01.1, i(10073)),	-- Righteous Helmet
-							dr(01.0, i(10176)),	-- Mystical Gloves
+							i(9943),	-- Abjurer's Robe
+							i(9950),	-- Chieftain's Breastplate
+							i(10173),	-- Mystical Bracers
+							i(10074),	-- Righteous Leggings
+							i(10126),	-- Ornate Bracers
+							i(10120),	-- Ornate Cloak
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10241),	-- Heavy Lamellar Helm
+							i(10077),	-- Lord's Breastplate
+							i(10198),	-- Crusader's Helm
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10186),	-- Swashbuckler's Gloves
+							i(10108),	-- Wanderer's Cloak
+							i(10200),	-- Crusader's Pauldrons
+							i(10098),	-- Councillor's Cloak
+							i(10197),	-- Crusader's Belt
+							i(10064),	-- Duskwoven Pants
+							i(10085),	-- Lord's Pauldrons
+							i(10082),	-- Lord's Boots
+							i(10133),	-- Revenant Leggings
+							i(10196),	-- Crusader's Gauntlets
+							i(10190),	-- Swashbuckler's Belt
+							i(10184),	-- Swashbuckler's Bracers
+							i(10084),	-- Lord's Legguards
+							i(10199),	-- Crusader's Leggings
+							i(10128),	-- Revenant Chestplate
+							i(10107),	-- Wanderer's Bracers
+							i(10242),	-- Heavy Lamellar Gauntlets
+							i(10174),	-- Mystical Cape
+							i(10203),	-- Overlord's Chestplate
+							i(10073),	-- Righteous Helmet
+							i(10176),	-- Mystical Gloves
 						},
 						["coord"] = { 75.0, 45.4 },	-- in temple
 					}), 
 					n(50882, {	-- Chupacabros
 						["g"] = {
-							dr(05.0, i(9943)),	-- Abjurer's Robe
-							dr(05.0, i(10170)),	-- Templar Pauldrons
-							dr(04.0, i(10074)),	-- Righteous Leggings
-							dr(04.0, i(10190)),	-- Swashbuckler's Belt
-							dr(03.0, i(10238)),	-- Heavy Lamellar Boots
-							dr(03.0, i(10108)),	-- Wanderer's Cloak
-							dr(02.0, i(9950)),	-- Chieftain's Breastplate
-							dr(02.0, i(10200)),	-- Crusader's Pauldrons
-							dr(02.0, i(10242)),	-- Heavy Lamellar Gauntlets
-							dr(02.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(02.0, i(10180)),	-- Mystical Belt
-							dr(02.0, i(10184)),	-- Swashbuckler's Bracers
-							dr(02.0, i(10166)),	-- Templar Girdle
-							dr(01.8, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(01.8, i(10128)),	-- Revenant Chestplate
-							dr(01.5, i(10098)),	-- Councillor's Cloak
-							dr(01.5, i(10064)),	-- Duskwoven Pants
-							dr(01.5, i(10173)),	-- Mystical Bracers
-							dr(01.4, i(10082)),	-- Lord's Boots
-							dr(01.2, i(10196)),	-- Crusader's Gauntlets
-							dr(01.2, i(10198)),	-- Crusader's Helm
-							dr(01.2, i(10199)),	-- Crusader's Leggings
-							dr(01.2, i(10176)),	-- Mystical Gloves
-							dr(01.1, i(10095)),	-- Councillor's Boots
-							dr(01.1, i(10126)),	-- Ornate Bracers
-							dr(01.1, i(10203)),	-- Overlord's Chestplate
+							i(9943),	-- Abjurer's Robe
+							i(10170),	-- Templar Pauldrons
+							i(10074),	-- Righteous Leggings
+							i(10190),	-- Swashbuckler's Belt
+							i(10238),	-- Heavy Lamellar Boots
+							i(10108),	-- Wanderer's Cloak
+							i(9950),	-- Chieftain's Breastplate
+							i(10200),	-- Crusader's Pauldrons
+							i(10242),	-- Heavy Lamellar Gauntlets
+							i(10241),	-- Heavy Lamellar Helm
+							i(10180),	-- Mystical Belt
+							i(10184),	-- Swashbuckler's Bracers
+							i(10166),	-- Templar Girdle
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10128),	-- Revenant Chestplate
+							i(10098),	-- Councillor's Cloak
+							i(10064),	-- Duskwoven Pants
+							i(10173),	-- Mystical Bracers
+							i(10082),	-- Lord's Boots
+							i(10196),	-- Crusader's Gauntlets
+							i(10198),	-- Crusader's Helm
+							i(10199),	-- Crusader's Leggings
+							i(10176),	-- Mystical Gloves
+							i(10095),	-- Councillor's Boots
+							i(10126),	-- Ornate Bracers
+							i(10203),	-- Overlord's Chestplate
 						},
 						["coord"] = { 27.8, 62.0 },	-- pats a little but should be targetable from this point
 					}), 
 					n(5348,  {	-- Dreamwatcher Forktongue
 						["g"] = {
-							dr(05.0, i(10109)),	-- Wanderer's Belt
-							dr(04.0, i(10172)),	-- Mystical Mantle
-							dr(04.0, i(10187)),	-- Swashbuckler's Eyepatch
-							dr(03.0, i(10099)),	-- Councillor's Gloves
-							dr(03.0, i(10212)),	-- Elegant Cloak
-							dr(03.0, i(10240)),	-- Heavy Lamellar Chestpiece
-							dr(03.0, i(10175)),	-- Mystical Headwrap
-							dr(03.0, i(10122)),	-- Ornate Girdle
-							dr(03.0, i(10070)),	-- Righteous Armor
-							dr(03.0, i(10167)),	-- Templar Boots
-							dr(03.0, i(10110)),	-- Wanderer's Gloves
-							dr(02.0, i(10193)),	-- Crusader's Armor
-							dr(02.0, i(10199)),	-- Crusader's Leggings
-							dr(02.0, i(10057)),	-- Duskwoven Tunic
-							dr(02.0, i(10278)),	-- Emerald Girdle
-							dr(02.0, i(10231)),	-- Engraved Cape
-							dr(02.0, i(10189)),	-- Swashbuckler's Shoulderpads
-							dr(02.0, i(10165)),	-- Templar Gauntlets
-							dr(01.9, i(10103)),	-- Councillor's Sash
-							dr(01.9, i(10126)),	-- Ornate Bracers
-							dr(01.8, i(10100)),	-- Councillor's Shoulders
-							dr(01.8, i(10128)),	-- Revenant Chestplate
-							dr(01.7, i(10176)),	-- Mystical Gloves
-							dr(01.7, i(10171)),	-- Templar Bracers
-							dr(01.5, i(10096)),	-- Councillor's Cuffs
-							dr(01.5, i(10125)),	-- Ornate Pauldrons
-							dr(01.5, i(10168)),	-- Templar Crown
-							dr(01.4, i(10244)),	-- Heavy Lamellar Leggings
-							dr(01.4, i(10179)),	-- Mystical Boots
-							dr(01.4, i(10177)),	-- Mystical Leggings
-							dr(01.4, i(10188)),	-- Swashbuckler's Leggings
-							dr(01.4, i(10166)),	-- Templar Girdle
-							dr(01.4, i(10169)),	-- Templar Legplates
-							dr(01.4, i(10170)),	-- Templar Pauldrons
-							dr(01.4, i(10113)),	-- Wanderer's Shoulders
-							dr(01.3, i(10229)),	-- Engraved Bracers
-							dr(01.3, i(10183)),	-- Swashbuckler's Boots
-							dr(01.2, i(10107)),	-- Wanderer's Bracers
-							dr(01.2, i(10111)),	-- Wanderer's Hat
-							dr(01.1, i(10282)),	-- Emerald Vambraces
-							dr(01.1, i(10121)),	-- Ornate Gauntlets
-							dr(01.1, i(10106)),	-- Wanderer's Boots
-							dr(01.0, i(10095)),	-- Councillor's Boots
+							i(10109),	-- Wanderer's Belt
+							i(10172),	-- Mystical Mantle
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10099),	-- Councillor's Gloves
+							i(10212),	-- Elegant Cloak
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10175),	-- Mystical Headwrap
+							i(10122),	-- Ornate Girdle
+							i(10070),	-- Righteous Armor
+							i(10167),	-- Templar Boots
+							i(10110),	-- Wanderer's Gloves
+							i(10193),	-- Crusader's Armor
+							i(10199),	-- Crusader's Leggings
+							i(10057),	-- Duskwoven Tunic
+							i(10278),	-- Emerald Girdle
+							i(10231),	-- Engraved Cape
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10165),	-- Templar Gauntlets
+							i(10103),	-- Councillor's Sash
+							i(10126),	-- Ornate Bracers
+							i(10100),	-- Councillor's Shoulders
+							i(10128),	-- Revenant Chestplate
+							i(10176),	-- Mystical Gloves
+							i(10171),	-- Templar Bracers
+							i(10096),	-- Councillor's Cuffs
+							i(10125),	-- Ornate Pauldrons
+							i(10168),	-- Templar Crown
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10179),	-- Mystical Boots
+							i(10177),	-- Mystical Leggings
+							i(10188),	-- Swashbuckler's Leggings
+							i(10166),	-- Templar Girdle
+							i(10169),	-- Templar Legplates
+							i(10170),	-- Templar Pauldrons
+							i(10113),	-- Wanderer's Shoulders
+							i(10229),	-- Engraved Bracers
+							i(10183),	-- Swashbuckler's Boots
+							i(10107),	-- Wanderer's Bracers
+							i(10111),	-- Wanderer's Hat
+							i(10282),	-- Emerald Vambraces
+							i(10121),	-- Ornate Gauntlets
+							i(10106),	-- Wanderer's Boots
+							i(10095),	-- Councillor's Boots
 						},
 						["coord"] = { 18.0, 69.8 },
 					}), 
 					n(14446, {	-- Fingat
 						["g"] = {
-							dr(04.0, i(10173)),	-- Mystical Bracers
-							dr(04.0, i(10186)),	-- Swashbuckler's Gloves
-							dr(03.0, i(9950)),	-- Chieftain's Breastplate
-							dr(03.0, i(10098)),	-- Councillor's Cloak
-							dr(03.0, i(10198)),	-- Crusader's Helm
-							dr(03.0, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(03.0, i(10082)),	-- Lord's Boots
-							dr(03.0, i(10077)),	-- Lord's Breastplate
-							dr(03.0, i(10120)),	-- Ornate Cloak
-							dr(03.0, i(10203)),	-- Overlord's Chestplate
-							dr(03.0, i(10074)),	-- Righteous Leggings
-							dr(03.0, i(10108)),	-- Wanderer's Cloak
-							dr(02.0, i(9943)),	-- Abjurer's Robe
-							dr(02.0, i(10196)),	-- Crusader's Gauntlets
-							dr(02.0, i(10200)),	-- Crusader's Pauldrons
-							dr(02.0, i(10064)),	-- Duskwoven Pants
-							dr(02.0, i(10242)),	-- Heavy Lamellar Gauntlets
-							dr(02.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(02.0, i(10180)),	-- Mystical Belt
-							dr(01.9, i(10197)),	-- Crusader's Belt
-							dr(01.9, i(10073)),	-- Righteous Helmet
-							dr(01.9, i(10183)),	-- Swashbuckler's Boots
-							dr(01.8, i(10174)),	-- Mystical Cape
-							dr(01.7, i(10133)),	-- Revenant Leggings
-							dr(01.6, i(10244)),	-- Heavy Lamellar Leggings
-							dr(01.6, i(10190)),	-- Swashbuckler's Belt
-							dr(01.4, i(10238)),	-- Heavy Lamellar Boots
-							dr(01.4, i(10240)),	-- Heavy Lamellar Chestpiece
-							dr(01.4, i(10084)),	-- Lord's Legguards
-							dr(01.4, i(10171)),	-- Templar Bracers
-							dr(01.3, i(10176)),	-- Mystical Gloves
-							dr(01.3, i(10126)),	-- Ornate Bracers
-							dr(01.2, i(10085)),	-- Lord's Pauldrons
-							dr(01.2, i(10184)),	-- Swashbuckler's Bracers
-							dr(01.2, i(10166)),	-- Templar Girdle
-							dr(01.2, i(10107)),	-- Wanderer's Bracers
-							dr(01.1, i(10179)),	-- Mystical Boots
-							dr(01.1, i(10172)),	-- Mystical Mantle
-							dr(01.1, i(10070)),	-- Righteous Armor
-							dr(01.1, i(10109)),	-- Wanderer's Belt
-							dr(01.0, i(10128)),	-- Revenant Chestplate
+							i(10173),	-- Mystical Bracers
+							i(10186),	-- Swashbuckler's Gloves
+							i(9950),	-- Chieftain's Breastplate
+							i(10098),	-- Councillor's Cloak
+							i(10198),	-- Crusader's Helm
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10082),	-- Lord's Boots
+							i(10077),	-- Lord's Breastplate
+							i(10120),	-- Ornate Cloak
+							i(10203),	-- Overlord's Chestplate
+							i(10074),	-- Righteous Leggings
+							i(10108),	-- Wanderer's Cloak
+							i(9943),	-- Abjurer's Robe
+							i(10196),	-- Crusader's Gauntlets
+							i(10200),	-- Crusader's Pauldrons
+							i(10064),	-- Duskwoven Pants
+							i(10242),	-- Heavy Lamellar Gauntlets
+							i(10241),	-- Heavy Lamellar Helm
+							i(10180),	-- Mystical Belt
+							i(10197),	-- Crusader's Belt
+							i(10073),	-- Righteous Helmet
+							i(10183),	-- Swashbuckler's Boots
+							i(10174),	-- Mystical Cape
+							i(10133),	-- Revenant Leggings
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10190),	-- Swashbuckler's Belt
+							i(10238),	-- Heavy Lamellar Boots
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10084),	-- Lord's Legguards
+							i(10171),	-- Templar Bracers
+							i(10176),	-- Mystical Gloves
+							i(10126),	-- Ornate Bracers
+							i(10085),	-- Lord's Pauldrons
+							i(10184),	-- Swashbuckler's Bracers
+							i(10166),	-- Templar Girdle
+							i(10107),	-- Wanderer's Bracers
+							i(10179),	-- Mystical Boots
+							i(10172),	-- Mystical Mantle
+							i(10070),	-- Righteous Armor
+							i(10109),	-- Wanderer's Belt
+							i(10128),	-- Revenant Chestplate
 						},
 						["coords"] = {	-- pats between two points
 							{ 77.2, 82.0 },
@@ -550,66 +556,66 @@ _.Zones =
 					}),
 					n(14447, {	-- Gilmorian
 						["g"] = {
-							dr(05.0, i(10183)),	-- Swashbuckler's Boots
-							dr(04.0, i(10179)),	-- Mystical Boots
-							dr(04.0, i(10109)),	-- Wanderer's Belt
-							dr(04.0, i(10107)),	-- Wanderer's Bracers
-							dr(03.0, i(10103)),	-- Councillor's Sash
-							dr(03.0, i(10199)),	-- Crusader's Leggings
-							dr(03.0, i(10176)),	-- Mystical Gloves
-							dr(03.0, i(10126)),	-- Ornate Bracers
-							dr(03.0, i(10128)),	-- Revenant Chestplate
-							dr(03.0, i(10108)),	-- Wanderer's Cloak
-							dr(02.0, i(9950)),	-- Chieftain's Breastplate
-							dr(02.0, i(10096)),	-- Councillor's Cuffs
-							dr(02.0, i(10240)),	-- Heavy Lamellar Chestpiece
-							dr(02.0, i(10244)),	-- Heavy Lamellar Leggings
-							dr(02.0, i(10077)),	-- Lord's Breastplate
-							dr(02.0, i(10186)),	-- Swashbuckler's Gloves
-							dr(02.0, i(10171)),	-- Templar Bracers
-							dr(02.0, i(10165)),	-- Templar Gauntlets
-							dr(02.0, i(10166)),	-- Templar Girdle
-							dr(01.8, i(10098)),	-- Councillor's Cloak
-							dr(01.8, i(10125)),	-- Ornate Pauldrons
-							dr(01.7, i(10200)),	-- Crusader's Pauldrons
-							dr(01.7, i(10082)),	-- Lord's Boots
-							dr(01.7, i(10173)),	-- Mystical Bracers
-							dr(01.5, i(9943)),	-- Abjurer's Robe
-							dr(01.5, i(10099)),	-- Councillor's Gloves
-							dr(01.5, i(10241)),	-- Heavy Lamellar Helm
-							dr(01.3, i(10074)),	-- Righteous Leggings
-							dr(01.3, i(10187)),	-- Swashbuckler's Eyepatch
-							dr(01.2, i(10057)),	-- Duskwoven Tunic
-							dr(01.2, i(10175)),	-- Mystical Headwrap
-							dr(01.1, i(10064)),	-- Duskwoven Pants
-							dr(01.1, i(10111)),	-- Wanderer's Hat
-							dr(01.0, i(10233)),	-- Engraved Girdle
-							dr(01.0, i(10224)),	-- Nightshade Cloak
-							dr(01.0, i(10120)),	-- Ornate Cloak
-							dr(01.0, i(10168)),	-- Templar Crown
+							i(10183),	-- Swashbuckler's Boots
+							i(10179),	-- Mystical Boots
+							i(10109),	-- Wanderer's Belt
+							i(10107),	-- Wanderer's Bracers
+							i(10103),	-- Councillor's Sash
+							i(10199),	-- Crusader's Leggings
+							i(10176),	-- Mystical Gloves
+							i(10126),	-- Ornate Bracers
+							i(10128),	-- Revenant Chestplate
+							i(10108),	-- Wanderer's Cloak
+							i(9950),	-- Chieftain's Breastplate
+							i(10096),	-- Councillor's Cuffs
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10077),	-- Lord's Breastplate
+							i(10186),	-- Swashbuckler's Gloves
+							i(10171),	-- Templar Bracers
+							i(10165),	-- Templar Gauntlets
+							i(10166),	-- Templar Girdle
+							i(10098),	-- Councillor's Cloak
+							i(10125),	-- Ornate Pauldrons
+							i(10200),	-- Crusader's Pauldrons
+							i(10082),	-- Lord's Boots
+							i(10173),	-- Mystical Bracers
+							i(9943),	-- Abjurer's Robe
+							i(10099),	-- Councillor's Gloves
+							i(10241),	-- Heavy Lamellar Helm
+							i(10074),	-- Righteous Leggings
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10057),	-- Duskwoven Tunic
+							i(10175),	-- Mystical Headwrap
+							i(10064),	-- Duskwoven Pants
+							i(10111),	-- Wanderer's Hat
+							i(10233),	-- Engraved Girdle
+							i(10224),	-- Nightshade Cloak
+							i(10120),	-- Ornate Cloak
+							i(10168),	-- Templar Crown
 						},
 						["coord"] = { 90.2, 67.6 },
 					}), 
 					n(50790, {	-- Ionis
 						["g"] = {
-							dr(28.0, i(10229)),	-- Engraved Bracers
-							dr(03.0, i(10199)),	-- Crusader's Leggings
-							dr(03.0, i(10064)),	-- Duskwoven Pants
-							dr(03.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(03.0, i(10184)),	-- Swashbuckler's Bracers
-							dr(02.0, i(10098)),	-- Councillor's Cloak
-							dr(02.0, i(10200)),	-- Crusader's Pauldrons
-							dr(01.7, i(10074)),	-- Righteous Leggings
-							dr(01.6, i(9943)),	-- Abjurer's Robe
-							dr(01.6, i(10186)),	-- Swashbuckler's Gloves
-							dr(01.5, i(10077)),	-- Lord's Breastplate
-							dr(01.3, i(10238)),	-- Heavy Lamellar Boots
-							dr(01.3, i(10173)),	-- Mystical Bracers
-							dr(01.3, i(10174)),	-- Mystical Cape
-							dr(01.2, i(10133)),	-- Revenant Leggings
-							dr(01.0, i(10198)),	-- Crusader's Helm
-							dr(01.0, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(01.0, i(10108)),	-- Wanderer's Cloak
+							i(10229),	-- Engraved Bracers
+							i(10199),	-- Crusader's Leggings
+							i(10064),	-- Duskwoven Pants
+							i(10241),	-- Heavy Lamellar Helm
+							i(10184),	-- Swashbuckler's Bracers
+							i(10098),	-- Councillor's Cloak
+							i(10200),	-- Crusader's Pauldrons
+							i(10074),	-- Righteous Leggings
+							i(9943),	-- Abjurer's Robe
+							i(10186),	-- Swashbuckler's Gloves
+							i(10077),	-- Lord's Breastplate
+							i(10238),	-- Heavy Lamellar Boots
+							i(10173),	-- Mystical Bracers
+							i(10174),	-- Mystical Cape
+							i(10133),	-- Revenant Leggings
+							i(10198),	-- Crusader's Helm
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10108),	-- Wanderer's Cloak
 						},
 						["coord"] = { 40.0, 35.6 },
 					}), 
@@ -668,30 +674,30 @@ _.Zones =
 					}), 
 					n(50837, {	-- Kash
 						["g"] = {
-							dr(07.0, i(10190)),	-- Swashbuckler's Belt
-							dr(04.0, i(10196)),	-- Crusader's Gauntlets
-							dr(04.0, i(10062)),	-- Duskwoven Gloves
-							dr(04.0, i(10238)),	-- Heavy Lamellar Boots
-							dr(03.0, i(10167)),	-- Templar Boots
-							dr(02.0, i(10082)),	-- Lord's Boots
-							dr(02.0, i(10084)),	-- Lord's Legguards
-							dr(02.0, i(10133)),	-- Revenant Leggings
-							dr(02.0, i(10073)),	-- Righteous Helmet
-							dr(02.0, i(10075)),	-- Righteous Spaulders
-							dr(02.0, i(10184)),	-- Swashbuckler's Bracers
-							dr(01.8, i(10197)),	-- Crusader's Belt
-							dr(01.8, i(10203)),	-- Overlord's Chestplate
-							dr(01.6, i(9943)),	-- Abjurer's Robe
-							dr(01.6, i(9954)),	-- Chieftain's Leggings
-							dr(01.6, i(10085)),	-- Lord's Pauldrons
-							dr(01.6, i(10180)),	-- Mystical Belt
-							dr(01.6, i(10174)),	-- Mystical Cape
-							dr(01.4, i(10077)),	-- Lord's Breastplate
-							dr(01.4, i(10186)),	-- Swashbuckler's Gloves
-							dr(01.2, i(10199)),	-- Crusader's Leggings
-							dr(01.2, i(10063)),	-- Duskwoven Amice
-							dr(01.2, i(10134)),	-- Revenant Shoulders
-							dr(01.0, i(10242)),	-- Heavy Lamellar Gauntlets
+							i(10190),	-- Swashbuckler's Belt
+							i(10196),	-- Crusader's Gauntlets
+							i(10062),	-- Duskwoven Gloves
+							i(10238),	-- Heavy Lamellar Boots
+							i(10167),	-- Templar Boots
+							i(10082),	-- Lord's Boots
+							i(10084),	-- Lord's Legguards
+							i(10133),	-- Revenant Leggings
+							i(10073),	-- Righteous Helmet
+							i(10075),	-- Righteous Spaulders
+							i(10184),	-- Swashbuckler's Bracers
+							i(10197),	-- Crusader's Belt
+							i(10203),	-- Overlord's Chestplate
+							i(9943),	-- Abjurer's Robe
+							i(9954),	-- Chieftain's Leggings
+							i(10085),	-- Lord's Pauldrons
+							i(10180),	-- Mystical Belt
+							i(10174),	-- Mystical Cape
+							i(10077),	-- Lord's Breastplate
+							i(10186),	-- Swashbuckler's Gloves
+							i(10199),	-- Crusader's Leggings
+							i(10063),	-- Duskwoven Amice
+							i(10134),	-- Revenant Shoulders
+							i(10242),	-- Heavy Lamellar Gauntlets
 						},
 						["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 							{ 79.4, 26.8 },
@@ -702,46 +708,46 @@ _.Zones =
 					}), 
 					n(763,   {	-- Lost One Chieftain
 						["g"] = {
-							dr(04.0, i(10172)),	-- Mystical Mantle
-							dr(03.0, i(10099)),	-- Councillor's Gloves
-							dr(03.0, i(10193)),	-- Crusader's Armor
-							dr(03.0, i(10231)),	-- Engraved Cape
-							dr(03.0, i(10179)),	-- Mystical Boots
-							dr(03.0, i(10070)),	-- Righteous Armor
-							dr(03.0, i(10187)),	-- Swashbuckler's Eyepatch
-							dr(03.0, i(10189)),	-- Swashbuckler's Shoulderpads
-							dr(03.0, i(10165)),	-- Templar Gauntlets
-							dr(03.0, i(10110)),	-- Wanderer's Gloves
-							dr(02.0, i(10057)),	-- Duskwoven Tunic
-							dr(02.0, i(10278)),	-- Emerald Girdle
-							dr(02.0, i(10240)),	-- Heavy Lamellar Chestpiece
-							dr(02.0, i(10244)),	-- Heavy Lamellar Leggings
-							dr(02.0, i(10175)),	-- Mystical Headwrap
-							dr(02.0, i(10121)),	-- Ornate Gauntlets
-							dr(02.0, i(10122)),	-- Ornate Girdle
-							dr(02.0, i(10128)),	-- Revenant Chestplate
-							dr(02.0, i(10167)),	-- Templar Boots
-							dr(02.0, i(10109)),	-- Wanderer's Belt
-							dr(01.9, i(10168)),	-- Templar Crown
-							dr(01.9, i(10166)),	-- Templar Girdle
-							dr(01.9, i(10106)),	-- Wanderer's Boots
-							dr(01.8, i(10096)),	-- Councillor's Cuffs
-							dr(01.8, i(10103)),	-- Councillor's Sash
-							dr(01.8, i(10276)),	-- Emerald Sabatons
-							dr(01.7, i(10171)),	-- Templar Bracers
-							dr(01.6, i(10212)),	-- Elegant Cloak
-							dr(01.6, i(10176)),	-- Mystical Gloves
-							dr(01.6, i(10183)),	-- Swashbuckler's Boots
-							dr(01.6, i(10107)),	-- Wanderer's Bracers
-							dr(01.5, i(10199)),	-- Crusader's Leggings
-							dr(01.3, i(10125)),	-- Ornate Pauldrons
-							dr(01.2, i(10282)),	-- Emerald Vambraces
-							dr(01.2, i(10177)),	-- Mystical Leggings
-							dr(01.2, i(10126)),	-- Ornate Bracers
-							dr(01.2, i(10188)),	-- Swashbuckler's Leggings
-							dr(01.1, i(10164)),	-- Templar Chestplate
-							dr(01.0, i(10123)),	-- Ornate Circlet
-							dr(01.0, i(10111)),	-- Wanderer's Hat
+							i(10172),	-- Mystical Mantle
+							i(10099),	-- Councillor's Gloves
+							i(10193),	-- Crusader's Armor
+							i(10231),	-- Engraved Cape
+							i(10179),	-- Mystical Boots
+							i(10070),	-- Righteous Armor
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10165),	-- Templar Gauntlets
+							i(10110),	-- Wanderer's Gloves
+							i(10057),	-- Duskwoven Tunic
+							i(10278),	-- Emerald Girdle
+							i(10240),	-- Heavy Lamellar Chestpiece
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10175),	-- Mystical Headwrap
+							i(10121),	-- Ornate Gauntlets
+							i(10122),	-- Ornate Girdle
+							i(10128),	-- Revenant Chestplate
+							i(10167),	-- Templar Boots
+							i(10109),	-- Wanderer's Belt
+							i(10168),	-- Templar Crown
+							i(10166),	-- Templar Girdle
+							i(10106),	-- Wanderer's Boots
+							i(10096),	-- Councillor's Cuffs
+							i(10103),	-- Councillor's Sash
+							i(10276),	-- Emerald Sabatons
+							i(10171),	-- Templar Bracers
+							i(10212),	-- Elegant Cloak
+							i(10176),	-- Mystical Gloves
+							i(10183),	-- Swashbuckler's Boots
+							i(10107),	-- Wanderer's Bracers
+							i(10199),	-- Crusader's Leggings
+							i(10125),	-- Ornate Pauldrons
+							i(10282),	-- Emerald Vambraces
+							i(10177),	-- Mystical Leggings
+							i(10126),	-- Ornate Bracers
+							i(10188),	-- Swashbuckler's Leggings
+							i(10164),	-- Templar Chestplate
+							i(10123),	-- Ornate Circlet
+							i(10111),	-- Wanderer's Hat
 						},
 						["coords"] = {	-- pats back and forth
 							{ 59.6, 26.4 },
@@ -752,50 +758,50 @@ _.Zones =
 					}), 
 					n(1106,  {	-- Lost One Cook
 						["g"] = {
-							dr(04.0, i(10096)),	-- Councillor's Cuffs
-							dr(04.0, i(10128)),	-- Revenant Chestplate
-							dr(04.0, i(10109)),	-- Wanderer's Belt
-							dr(03.0, i(10103)),	-- Councillor's Sash
-							dr(03.0, i(10199)),	-- Crusader's Leggings
-							dr(03.0, i(10176)),	-- Mystical Gloves
-							dr(03.0, i(10126)),	-- Ornate Bracers
-							dr(03.0, i(10183)),	-- Swashbuckler's Boots
-							dr(03.0, i(10171)),	-- Templar Bracers
-							dr(03.0, i(10166)),	-- Templar Girdle
-							dr(03.0, i(10107)),	-- Wanderer's Bracers
-							dr(02.0, i(10098)),	-- Councillor's Cloak
-							dr(02.0, i(10198)),	-- Crusader's Helm
-							dr(02.0, i(10064)),	-- Duskwoven Pants
-							dr(02.0, i(10244)),	-- Heavy Lamellar Leggings
-							dr(02.0, i(10179)),	-- Mystical Boots
-							dr(01.9, i(10074)),	-- Righteous Leggings
-							dr(01.8, i(10241)),	-- Heavy Lamellar Helm
-							dr(01.7, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(01.7, i(10188)),	-- Swashbuckler's Leggings
-							dr(01.7, i(10108)),	-- Wanderer's Cloak
-							dr(01.6, i(10173)),	-- Mystical Bracers
-							dr(01.6, i(10186)),	-- Swashbuckler's Gloves
-							dr(01.4, i(9950)),	-- Chieftain's Breastplate
-							dr(01.4, i(10077)),	-- Lord's Breastplate
-							dr(01.3, i(9943)),	-- Abjurer's Robe
-							dr(01.3, i(10070)),	-- Righteous Armor
-							dr(01.2, i(10200)),	-- Crusader's Pauldrons
-							dr(01.2, i(10276)),	-- Emerald Sabatons
-							dr(01.2, i(10172)),	-- Mystical Mantle
-							dr(01.2, i(10122)),	-- Ornate Girdle
-							dr(01.2, i(10125)),	-- Ornate Pauldrons
-							dr(01.2, i(10168)),	-- Templar Crown
-							dr(01.1, i(10187)),	-- Swashbuckler's Eyepatch
-							dr(01.0, i(10095)),	-- Councillor's Boots
-							dr(01.0, i(10097)),	-- Councillor's Circlet
-							dr(01.0, i(10193)),	-- Crusader's Armor
-							dr(01.0, i(10057)),	-- Duskwoven Tunic
-							dr(01.0, i(10278)),	-- Emerald Girdle
-							dr(01.0, i(10229)),	-- Engraved Bracers
-							dr(01.0, i(10082)),	-- Lord's Boots
-							dr(01.0, i(10121)),	-- Ornate Gauntlets
-							dr(01.0, i(10189)),	-- Swashbuckler's Shoulderpads
-							dr(01.0, i(10167)),	-- Templar Boots
+							i(10096),	-- Councillor's Cuffs
+							i(10128),	-- Revenant Chestplate
+							i(10109),	-- Wanderer's Belt
+							i(10103),	-- Councillor's Sash
+							i(10199),	-- Crusader's Leggings
+							i(10176),	-- Mystical Gloves
+							i(10126),	-- Ornate Bracers
+							i(10183),	-- Swashbuckler's Boots
+							i(10171),	-- Templar Bracers
+							i(10166),	-- Templar Girdle
+							i(10107),	-- Wanderer's Bracers
+							i(10098),	-- Councillor's Cloak
+							i(10198),	-- Crusader's Helm
+							i(10064),	-- Duskwoven Pants
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10179),	-- Mystical Boots
+							i(10074),	-- Righteous Leggings
+							i(10241),	-- Heavy Lamellar Helm
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10188),	-- Swashbuckler's Leggings
+							i(10108),	-- Wanderer's Cloak
+							i(10173),	-- Mystical Bracers
+							i(10186),	-- Swashbuckler's Gloves
+							i(9950),	-- Chieftain's Breastplate
+							i(10077),	-- Lord's Breastplate
+							i(9943),	-- Abjurer's Robe
+							i(10070),	-- Righteous Armor
+							i(10200),	-- Crusader's Pauldrons
+							i(10276),	-- Emerald Sabatons
+							i(10172),	-- Mystical Mantle
+							i(10122),	-- Ornate Girdle
+							i(10125),	-- Ornate Pauldrons
+							i(10168),	-- Templar Crown
+							i(10187),	-- Swashbuckler's Eyepatch
+							i(10095),	-- Councillor's Boots
+							i(10097),	-- Councillor's Circlet
+							i(10193),	-- Crusader's Armor
+							i(10057),	-- Duskwoven Tunic
+							i(10278),	-- Emerald Girdle
+							i(10229),	-- Engraved Bracers
+							i(10082),	-- Lord's Boots
+							i(10121),	-- Ornate Gauntlets
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10167),	-- Templar Boots
 						},
 						["coords"] = {	-- pats and/or multiple spawnpoints
 							{ 63.0, 24.4 },
@@ -807,45 +813,45 @@ _.Zones =
 						["g"] = {
 							i(5608),	-- Living Cowl
 							un(2, i(11205)),	-- Formula: Enchant Gloves - Advanced Herbalism
-							dr(09.0, i(10108)),	-- Wanderer's Cloak
-							dr(03.0, i(10098)),	-- Councillor's Cloak
-							dr(03.0, i(10198)),	-- Crusader's Helm
-							dr(03.0, i(10200)),	-- Crusader's Pauldrons
-							dr(03.0, i(10064)),	-- Duskwoven Pants
-							dr(03.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(03.0, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(03.0, i(10082)),	-- Lord's Boots
-							dr(03.0, i(10077)),	-- Lord's Breastplate
-							dr(03.0, i(10120)),	-- Ornate Cloak
-							dr(03.0, i(10186)),	-- Swashbuckler's Gloves
-							dr(02.0, i(9943)),	-- Abjurer's Robe
-							dr(02.0, i(9950)),	-- Chieftain's Breastplate
-							dr(02.0, i(10196)),	-- Crusader's Gauntlets
-							dr(02.0, i(10085)),	-- Lord's Pauldrons
-							dr(02.0, i(10173)),	-- Mystical Bracers
-							dr(02.0, i(10203)),	-- Overlord's Chestplate
-							dr(02.0, i(10074)),	-- Righteous Leggings
-							dr(02.0, i(10184)),	-- Swashbuckler's Bracers
-							dr(01.9, i(10197)),	-- Crusader's Belt
-							dr(01.9, i(10133)),	-- Revenant Leggings
-							dr(01.6, i(10238)),	-- Heavy Lamellar Boots
-							dr(01.5, i(10242)),	-- Heavy Lamellar Gauntlets
-							dr(01.5, i(10084)),	-- Lord's Legguards
-							dr(01.5, i(10107)),	-- Wanderer's Bracers
-							dr(01.4, i(10174)),	-- Mystical Cape
-							dr(01.3, i(10180)),	-- Mystical Belt
-							dr(01.2, i(10073)),	-- Righteous Helmet
-							dr(01.2, i(10190)),	-- Swashbuckler's Belt
-							dr(01.2, i(10166)),	-- Templar Girdle
-							dr(01.1, i(10179)),	-- Mystical Boots
-							dr(01.1, i(10126)),	-- Ornate Bracers
-							dr(01.0, i(10103)),	-- Councillor's Sash
-							dr(01.0, i(10193)),	-- Crusader's Armor
-							dr(01.0, i(10057)),	-- Duskwoven Tunic
-							dr(01.0, i(10176)),	-- Mystical Gloves
-							dr(01.0, i(10128)),	-- Revenant Chestplate
-							dr(01.0, i(10188)),	-- Swashbuckler's Leggings
-							dr(01.0, i(10109)),	-- Wanderer's Belt
+							i(10108),	-- Wanderer's Cloak
+							i(10098),	-- Councillor's Cloak
+							i(10198),	-- Crusader's Helm
+							i(10200),	-- Crusader's Pauldrons
+							i(10064),	-- Duskwoven Pants
+							i(10241),	-- Heavy Lamellar Helm
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10082),	-- Lord's Boots
+							i(10077),	-- Lord's Breastplate
+							i(10120),	-- Ornate Cloak
+							i(10186),	-- Swashbuckler's Gloves
+							i(9943),	-- Abjurer's Robe
+							i(9950),	-- Chieftain's Breastplate
+							i(10196),	-- Crusader's Gauntlets
+							i(10085),	-- Lord's Pauldrons
+							i(10173),	-- Mystical Bracers
+							i(10203),	-- Overlord's Chestplate
+							i(10074),	-- Righteous Leggings
+							i(10184),	-- Swashbuckler's Bracers
+							i(10197),	-- Crusader's Belt
+							i(10133),	-- Revenant Leggings
+							i(10238),	-- Heavy Lamellar Boots
+							i(10242),	-- Heavy Lamellar Gauntlets
+							i(10084),	-- Lord's Legguards
+							i(10107),	-- Wanderer's Bracers
+							i(10174),	-- Mystical Cape
+							i(10180),	-- Mystical Belt
+							i(10073),	-- Righteous Helmet
+							i(10190),	-- Swashbuckler's Belt
+							i(10166),	-- Templar Girdle
+							i(10179),	-- Mystical Boots
+							i(10126),	-- Ornate Bracers
+							i(10103),	-- Councillor's Sash
+							i(10193),	-- Crusader's Armor
+							i(10057),	-- Duskwoven Tunic
+							i(10176),	-- Mystical Gloves
+							i(10128),	-- Revenant Chestplate
+							i(10188),	-- Swashbuckler's Leggings
+							i(10109),	-- Wanderer's Belt
 						},
 						["coords"] = {	-- lumbers around a little
 							{ 48.2, 40.8 },
@@ -884,29 +890,29 @@ _.Zones =
 					}), 
 					n(50886, {	-- Seawing
 						["g"] = {
-							dr(05.0, i(10128)),	-- Revenant Chestplate
-							dr(05.0, i(10171)),	-- Templar Bracers
-							dr(04.0, i(10183)),	-- Swashbuckler's Boots
-							dr(04.0, i(10170)),	-- Templar Pauldrons
-							dr(03.0, i(10212)),	-- Elegant Cloak
-							dr(03.0, i(10107)),	-- Wanderer's Bracers
-							dr(02.0, i(10098)),	-- Councillor's Cloak
-							dr(02.0, i(10096)),	-- Councillor's Cuffs
-							dr(02.0, i(10198)),	-- Crusader's Helm
-							dr(02.0, i(10244)),	-- Heavy Lamellar Leggings
-							dr(02.0, i(10166)),	-- Templar Girdle
-							dr(01.9, i(10176)),	-- Mystical Gloves
-							dr(01.7, i(9950)),	-- Chieftain's Breastplate
-							dr(01.5, i(10103)),	-- Councillor's Sash
-							dr(01.3, i(10064)),	-- Duskwoven Pants
-							dr(01.3, i(10179)),	-- Mystical Boots
-							dr(01.2, i(10199)),	-- Crusader's Leggings
-							dr(01.2, i(10126)),	-- Ornate Bracers
-							dr(01.2, i(10108)),	-- Wanderer's Cloak
-							dr(01.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(01.0, i(10077)),	-- Lord's Breastplate
-							dr(01.0, i(10189)),	-- Swashbuckler's Shoulderpads
-							dr(01.0, i(10113)),	-- Wanderer's Shoulders
+							i(10128),	-- Revenant Chestplate
+							i(10171),	-- Templar Bracers
+							i(10183),	-- Swashbuckler's Boots
+							i(10170),	-- Templar Pauldrons
+							i(10212),	-- Elegant Cloak
+							i(10107),	-- Wanderer's Bracers
+							i(10098),	-- Councillor's Cloak
+							i(10096),	-- Councillor's Cuffs
+							i(10198),	-- Crusader's Helm
+							i(10244),	-- Heavy Lamellar Leggings
+							i(10166),	-- Templar Girdle
+							i(10176),	-- Mystical Gloves
+							i(9950),	-- Chieftain's Breastplate
+							i(10103),	-- Councillor's Sash
+							i(10064),	-- Duskwoven Pants
+							i(10179),	-- Mystical Boots
+							i(10199),	-- Crusader's Leggings
+							i(10126),	-- Ornate Bracers
+							i(10108),	-- Wanderer's Cloak
+							i(10241),	-- Heavy Lamellar Helm
+							i(10077),	-- Lord's Breastplate
+							i(10189),	-- Swashbuckler's Shoulderpads
+							i(10113),	-- Wanderer's Shoulders
 						},
 						["coords"] = {	-- pats up and down the beach, coords not exhaustive
 							{ 80.2, 16.2 },
@@ -920,30 +926,30 @@ _.Zones =
 					}), 
 					n(50738, {	-- Shimmerscale
 						["g"] = {
-							dr(11.0, i(10068)),	-- Righteous Boots
-							dr(05.0, i(10196)),	-- Crusader's Gauntlets
-							dr(04.0, i(10242)),	-- Heavy Lamellar Gauntlets
-							dr(04.0, i(10180)),	-- Mystical Belt
-							dr(03.0, i(10197)),	-- Crusader's Belt
-							dr(03.0, i(10198)),	-- Crusader's Helm
-							dr(03.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(03.0, i(10085)),	-- Lord's Pauldrons
-							dr(03.0, i(10133)),	-- Revenant Leggings
-							dr(02.0, i(10061)),	-- Duskwoven Turban
-							dr(02.0, i(10239)),	-- Heavy Lamellar Vambraces
-							dr(02.0, i(10084)),	-- Lord's Legguards
-							dr(02.0, i(10073)),	-- Righteous Helmet
-							dr(01.9, i(10184)),	-- Swashbuckler's Bracers
-							dr(01.8, i(10203)),	-- Overlord's Chestplate
-							dr(01.5, i(10238)),	-- Heavy Lamellar Boots
-							dr(01.5, i(10174)),	-- Mystical Cape
-							dr(01.2, i(10072)),	-- Righteous Gloves
-							dr(01.2, i(10190)),	-- Swashbuckler's Belt
-							dr(01.1, i(10191)),	-- Crusader's Armguards
-							dr(01.1, i(10075)),	-- Righteous Spaulders
-							dr(01.1, i(10108)),	-- Wanderer's Cloak
-							dr(01.0, i(10074)),	-- Righteous Leggings
-							dr(01.0, i(10167)),	-- Templar Boots
+							i(10068),	-- Righteous Boots
+							i(10196),	-- Crusader's Gauntlets
+							i(10242),	-- Heavy Lamellar Gauntlets
+							i(10180),	-- Mystical Belt
+							i(10197),	-- Crusader's Belt
+							i(10198),	-- Crusader's Helm
+							i(10241),	-- Heavy Lamellar Helm
+							i(10085),	-- Lord's Pauldrons
+							i(10133),	-- Revenant Leggings
+							i(10061),	-- Duskwoven Turban
+							i(10239),	-- Heavy Lamellar Vambraces
+							i(10084),	-- Lord's Legguards
+							i(10073),	-- Righteous Helmet
+							i(10184),	-- Swashbuckler's Bracers
+							i(10203),	-- Overlord's Chestplate
+							i(10238),	-- Heavy Lamellar Boots
+							i(10174),	-- Mystical Cape
+							i(10072),	-- Righteous Gloves
+							i(10190),	-- Swashbuckler's Belt
+							i(10191),	-- Crusader's Armguards
+							i(10075),	-- Righteous Spaulders
+							i(10108),	-- Wanderer's Cloak
+							i(10074),	-- Righteous Leggings
+							i(10167),	-- Templar Boots
 						},
 						["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 							{ 57.0, 51.6 },
@@ -951,38 +957,44 @@ _.Zones =
 							{ 55.6, 54.0 },
 							{ 54.0, 54.2 },
 						},
-					}), 
+					}),
+					n(766, {	-- Tangled Horror
+						["u"] = 43,
+						["g"] = {
+							i(5608),	-- Living Cowl
+						},
+					}),
 					n(50797, {	-- Yukiko
 						["g"] = {
-							dr(13.0, i(9950)),	-- Chieftain's Breastplate
-							dr(11.0, i(10109)),	-- Wanderer's Belt
-							dr(04.0, i(10084)),	-- Lord's Legguards
-							dr(03.0, i(10241)),	-- Heavy Lamellar Helm
-							dr(03.0, i(10082)),	-- Lord's Boots
-							dr(02.0, i(10098)),	-- Councillor's Cloak
-							dr(02.0, i(10245)),	-- Heavy Lamellar Pauldrons
-							dr(02.0, i(10180)),	-- Mystical Belt
-							dr(02.0, i(10120)),	-- Ornate Cloak
-							dr(02.0, i(10125)),	-- Ornate Pauldrons
-							dr(01.8, i(10173)),	-- Mystical Bracers
-							dr(01.7, i(10200)),	-- Crusader's Pauldrons
-							dr(01.7, i(10174)),	-- Mystical Cape
-							dr(01.5, i(10197)),	-- Crusader's Belt
-							dr(01.4, i(10073)),	-- Righteous Helmet
-							dr(01.1, i(10064)),	-- Duskwoven Pants
-							dr(01.1, i(10077)),	-- Lord's Breastplate
-							dr(01.1, i(10203)),	-- Overlord's Chestplate
-							dr(01.1, i(10074)),	-- Righteous Leggings
-							dr(01.0, i(9943)),	-- Abjurer's Robe
-							dr(01.0, i(10238)),	-- Heavy Lamellar Boots
-							dr(01.0, i(10190)),	-- Swashbuckler's Belt
+							i(9950),	-- Chieftain's Breastplate
+							i(10109),	-- Wanderer's Belt
+							i(10084),	-- Lord's Legguards
+							i(10241),	-- Heavy Lamellar Helm
+							i(10082),	-- Lord's Boots
+							i(10098),	-- Councillor's Cloak
+							i(10245),	-- Heavy Lamellar Pauldrons
+							i(10180),	-- Mystical Belt
+							i(10120),	-- Ornate Cloak
+							i(10125),	-- Ornate Pauldrons
+							i(10173),	-- Mystical Bracers
+							i(10200),	-- Crusader's Pauldrons
+							i(10174),	-- Mystical Cape
+							i(10197),	-- Crusader's Belt
+							i(10073),	-- Righteous Helmet
+							i(10064),	-- Duskwoven Pants
+							i(10077),	-- Lord's Breastplate
+							i(10203),	-- Overlord's Chestplate
+							i(10074),	-- Righteous Leggings
+							i(9943),	-- Abjurer's Robe
+							i(10238),	-- Heavy Lamellar Boots
+							i(10190),	-- Swashbuckler's Belt
 						},
 						["coords"] = {
 							{ 69.0, 65.2 },
 							{ 70.6, 66.2 },
 							{ 69.8, 67.6 },
 						},
-					}), 
+					}),
 				}),
 				n(-2,   {	-- Vendors
 					nh(989,    {	-- Banalash <Trade Supplies>
@@ -1021,33 +1033,6 @@ _.Zones =
 						},
 						["coord"] = { 46.8, 52.6 },
 					})),
-				}),
-				n(-40,  {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests (Legacy)
-							un(40, qh(1430, {	-- [DEPRECATED]Fresh Meat
-								un(2, i(9682)),	-- Leather Chef's Belt
-							})),
-							un(40, q(2702)),	-- Heroes of Old
-							un(40, q(2702, {	-- Heroes of Old 2
-								un(2, i(10659)),	-- Shard of Afrasa
-							})), 
-							un(40, qa(1393, {	-- Galen's Escape
-								un(2, i(6828)),	-- Visionary Buckler
-							})),
-							un(40, qh(1427, {	-- [DEPRECATED]Threat From the Sea
-								un(2, i(9680)),	-- Tok'kar's Murloc Shanker
-								un(2, i(9678)),	-- Tok'kar's Murloc Basher
-								un(2, i(9679)),	-- Tok'kar's Murloc Chopper
-							})),
-							un(40, q(2681)),	-- The Stones That Bind Us
-						}),
-						n(-16, {	-- Rares (Legacy)
-							un(43, n(766, {	-- Tangled Horror
-								i(5608),	-- Living Cowl
-							})),
-						}),
-					},
 				}),
 			},
 			["lvl"] = 40,	

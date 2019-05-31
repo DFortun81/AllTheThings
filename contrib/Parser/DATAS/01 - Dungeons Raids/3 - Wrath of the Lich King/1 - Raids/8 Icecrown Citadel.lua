@@ -1544,7 +1544,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(37217, {			-- Precious
-					dr(7, i(52019)),	-- Precious' Ribbon
+					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Fall of the Lich King (10 player): The Plagueworks
 					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
@@ -1974,7 +1974,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(37217, {			-- Precious
-					dr(4, i(52019)),	-- Precious' Ribbon
+					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Heroic: The Plagueworks (10 player): The Plagueworks
 					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
@@ -2393,7 +2393,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(37217, {			-- Precious
-					dr(12, i(52019)),	-- Precious' Ribbon
+					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Fall of the Lich King (25 player): The Plagueworks
 					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
@@ -2948,7 +2948,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(37217, {			-- Precious
-					dr(16, i(52019)),	-- Precious' Ribbon
+					i(52019),	-- Precious' Ribbon
 				}),
 				{	-- Heroic: Fall of the Lich King (25 player): The Plagueworks
 					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)

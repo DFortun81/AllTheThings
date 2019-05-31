@@ -32,7 +32,9 @@ _.Zones =
 						["coord"] = { 54.8, 76.3, 90 },
 						["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					},
-					qg(10181, qh(31037)),	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+					qh(31037, {	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
+						["qg"] = 10181,	-- Lady Sylvanas Windrunner
+					}),
 					qh(39960, {	-- The Legacy Passed On
 						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
 						["sourceQuests"] = { 39959 },	-- The Plot Thickens
@@ -159,10 +161,10 @@ _.Zones =
 						["g"] = {
 							ach(5850, {	-- Fish or Cut Bait: Undercity
 								i(67414, {	-- Bag of Shiny Things
-									dr(1.1, i(44983)),	-- Strand Crawler
-									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
-									dr(0.5, i(45991)),	-- Bone Fishing Pole
-									dr(0.5, i(45992)),	-- Jeweled Fishing Pole
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
 								})
 							})
 						},

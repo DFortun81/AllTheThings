@@ -1071,8 +1071,14 @@ _.Zones =
 							i(63620),	-- Hard Headed Helm
 						},
 					},
---					qg(40475, qa(25561)),	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
---					qg(40487, qh(25562)),	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
+					--[[
+					qa(25561, {	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
+						["qg"] = 40475,	-- 
+					}),
+					qh(25562, {	-- Circle the Wagons... er, Boats (REMOVED/REPLACED)
+						["qg"] = 40487,	-- 
+					}),
+					]]--
 --					q(28601),	-- Old Puttery (REMOVED?  no info on wowhead)
 --[[EVENT WORLD Quests
 					q(45808),	-- Beach Ball Bash (WORLD QUEST)

@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			}),
 			n(-16, { 	-- Rare
 				n(47676, { 	-- Baradin Fox
-					dr(0.1, i(64403)),  -- Fox Kit Pet
+					i(64403),  -- Fox Kit Pet
 				}),
 			}),
 			n(-38, { 	-- Profession
@@ -83,6 +83,9 @@ _.ExpansionFeatures =
 							i(62460), 	-- Sky Piercer
 							i(62455), 	-- Spear of Trailing Shadows
 							i(63518),	-- Hellscream's Reach Commendation
+							i(68774),	-- Greater Inscription of Vicious Agility
+							i(68772),	-- Greater Inscription of Vicious Intellect
+							i(68773),	-- Greater Inscription of Vicious Strength
 						},
 					},
 				}),
@@ -104,6 +107,9 @@ _.ExpansionFeatures =
 							i(62478),	-- Shimmering Morningstar
 							i(62479),	-- Sky Piercer
 							i(62474),	-- Spear of Trailing Shadows
+							i(68774),	-- Greater Inscription of Vicious Agility
+							i(68772),	-- Greater Inscription of Vicious Intellect
+							i(68773),	-- Greater Inscription of Vicious Strength
 						},
 					},
 				}),

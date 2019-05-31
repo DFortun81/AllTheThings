@@ -539,15 +539,20 @@ _.Zones =
 						["coord"] = { 46.3, 22.8, 1 },
 					},
 --[[
-					qg(41621, qh(25924)),	-- Call of Duty
-					qg(100873, qh(40983, {	-- Demons Among Them
+					qh(25924, {	-- Call of Duty
+						["qg"] = 41621,	-- 
+					}),
+					qh(40983, {	-- Demons Among Them
+						["qg"] = 100873,	-- 
 						["classes"]= {12},
-					})),
+					}),
 --					qh(44543),	-- The Battle for Broken Shore (looks like this is an auto-popup quest to take a wind rider from the ship to the shore, no QG)
 					qh(47835, {	-- The Hand of Fate (QG in Broken Isles Dalaran)
 						["description"] = "This quest will be automatically offered upon completion of the Assault on Broken Shore scenario and returning to Dalaran.  You may also choose the option to skip the scenario when speaking to Khadgar.",
 					}),
-					qg(122065, qh(47867)),	-- Two If By Sea
+					qh(47867, {	-- Two If By Sea
+						["qg"] = 122065,	-- 
+					}),
 --]]
 				}),
 			},

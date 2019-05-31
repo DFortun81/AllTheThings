@@ -197,134 +197,116 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-168, {	-- Other Quests
-						sz(774, 1, {	-- Firewatch Ridge
-							q(27984, {	--Lunthistle's Tale
-								["qg"] = 8436,	-- Zamael Lunthistle
-							}),
-							q(27985, {	--Prayer to Elune
-								["qg"] = 8436,	-- Zamael Lunthistle
-								["sourceQuests"] = { 27984 },	-- Lunthistle's Tale
-							}),
-						}),
-						sz(774, 2, {	-- The Cauldron
-							q(27470, {	-- A Potential Ally
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-						}),
-						-- sz(774, 3, {	-- Blackchar Cave
-						-- }),
-						sz(774, 4, {	-- The Sea of Cinders NOTE: Should be Iron Summit
-							q(28032, {	-- The Mysteries of the Fire-Gizzard
-								["groups"] = {
-									i(63233),	-- Iron Summit Belt
-									i(63232),	-- Incendosaur Gloves
-									i(63231),	-- Lizard Skin Boots
-									i(63230),	-- Fire-Gizzard Robes
-								},
-								["qg"] = 47440,	-- Agnes Flimshale
-								["sourceQuests"] = { 27986 },	-- 
-							}),
-						}),
-						sz(774, 5, {	-- Grimesilt Dig Site
-							q(27956, {	--Lunk's Task
-								["qg"] = 47269,	-- Lunk
-							}),
-							q(27957, {	--Lunk No Kill
-								["qg"] = 47269,	-- Lunk
-								["sourceQuests"] = { 27956 },	-- Lunk's Task
-							}),
-							q(27958, {	-- A Proper Antivenom
-								["groups"] = {
-									i(63211),	-- Medical Officer Legguards
-									i(63210),	-- Snakeoil Helm
-									i(63209),	-- Glassweb Robes
-									},
-								["qg"] = 47268,	-- Prisanne Dustcropper
-								["sourceQuests"] = { 27957 },	-- Lunk No Kill
-							}),
-							q(27959, {	--Lunk's Adventure: Spider Rider
-								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 27958 },	-- A Proper Antivenom
-							}),
-							q(27960, {	--The Fewer, the Better
-								["qg"] = 47267,	-- Burrian Coalpart
-							}),
-							q(27961, {	-- Out of Place
-								["groups"] = {
-									i(63215),	-- Coalpart's Bracers
-									i(63214),	-- Mercy Killing Helm
-									i(63213),	-- Fuzzy Headcover
-									i(63212),	-- Ash Feather Cloak
-								},
-								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
-							}),
-							q(27962, {	--A Lumbering Relic
-								["qg"] = 47267,	-- Burrian Coalpart
-								["sourceQuests"] = { 27960 },	-- The Fewer, the Better
-							}),
-						}),
-						-- sz(774, 6, {	-- Dustfire Valley
-						-- }),
-						sz(774, 7, {	-- Thorium Point
-							qh(28515, {	--Mouton Flamestar
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-							qa(28514, {	--Mouton Flamestar
-								["qg"] = 14625,	-- Overseer Oilfist
-							}),
-							q(27980, {	--The Spiders Have to Go
-								["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
-							}),
-							q(13662, {	--Gaining Acceptance
-								["qg"] = 14624,	-- Master Smith Burninate
-								["repeatable"] = true,
-								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							}),
-							q(7737, {	--Gaining Even More Acceptance
-								["qg"] = 14624,	-- Master Smith Burninate
-								["repeatable"] = true,
-								["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
-							}),
-							q(28053, {	--Lunk Like Your Style
-								["groups"] = {
-									i(63245),	-- Lunk's Special Gear
-								},
-								["qg"] = 47429,	-- Lunk
-								["sourceQuests"] = { 28064 },
-							}),
-						}),
-						-- sz(774, 8, {	-- Blackrock Mountain
-						-- }),
+					q(27962, {	--A Lumbering Relic
+						["qg"] = 47267,	-- Burrian Coalpart
+						["sourceQuests"] = { 27960 },	-- The Fewer, the Better
+					}),
+					q(27470, {	-- A Potential Ally
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					q(27958, {	-- A Proper Antivenom
+						["groups"] = {
+							i(63211),	-- Medical Officer Legguards
+							i(63210),	-- Snakeoil Helm
+							i(63209),	-- Glassweb Robes
+							},
+						["qg"] = 47268,	-- Prisanne Dustcropper
+						["sourceQuests"] = { 27957 },	-- Lunk No Kill
+					}),
+					q(13662, {	--Gaining Acceptance
+						["qg"] = 14624,	-- Master Smith Burninate
+						["repeatable"] = true,
+						["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+					}),
+					q(7737, {	--Gaining Even More Acceptance
+						["qg"] = 14624,	-- Master Smith Burninate
+						["repeatable"] = true,
+						["sourceQuests"] = { 28064 },	-- Welcome to the Brotherhood
+					}),
+					q(28053, {	--Lunk Like Your Style
+						["groups"] = {
+							i(63245),	-- Lunk's Special Gear
+						},
+						["qg"] = 47429,	-- Lunk
+						["sourceQuests"] = { 28064 },
+					}),
+					q(27957, {	--Lunk No Kill
+						["qg"] = 47269,	-- Lunk
+						["sourceQuests"] = { 27956 },	-- Lunk's Task
+					}),
+					q(27959, {	--Lunk's Adventure: Spider Rider
+						["qg"] = 47429,	-- Lunk
+						["sourceQuests"] = { 27958 },	-- A Proper Antivenom
+					}),
+					q(27956, {	--Lunk's Task
+						["qg"] = 47269,	-- Lunk
+					}),
+					q(27984, {	--Lunthistle's Tale
+						["qg"] = 8436,	-- Zamael Lunthistle
+					}),
+					qh(28515, {	--Mouton Flamestar
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					qa(28514, {	--Mouton Flamestar
+						["qg"] = 14625,	-- Overseer Oilfist
+					}),
+					q(27961, {	-- Out of Place
+						["groups"] = {
+							i(63215),	-- Coalpart's Bracers
+							i(63214),	-- Mercy Killing Helm
+							i(63213),	-- Fuzzy Headcover
+							i(63212),	-- Ash Feather Cloak
+						},
+						["qg"] = 47267,	-- Burrian Coalpart
+						["sourceQuests"] = { 27960 },	-- The Fewer, the Better
+					}),
+					q(27985, {	--Prayer to Elune
+						["qg"] = 8436,	-- Zamael Lunthistle
+						["sourceQuests"] = { 27984 },	-- Lunthistle's Tale
+					}),
+					q(27960, {	--The Fewer, the Better
+						["qg"] = 47267,	-- Burrian Coalpart
+					}),
+					q(28032, {	-- The Mysteries of the Fire-Gizzard
+						["groups"] = {
+							i(63233),	-- Iron Summit Belt
+							i(63232),	-- Incendosaur Gloves
+							i(63231),	-- Lizard Skin Boots
+							i(63230),	-- Fire-Gizzard Robes
+						},
+						["qg"] = 47440,	-- Agnes Flimshale
+						["sourceQuests"] = { 27986 },	-- 
+					}),
+					q(27980, {	--The Spiders Have to Go
+						["qg"] = 14634,	-- Lookout Captain Lolo Longstriker
 					}),
 				}),
 				n(-16, {	-- Rares	
 					n(50876, { 	-- Avis
-						dr(27.0, i(10201)),	-- Overlord's Greaves
-						dr(27.0, i(9962)),	-- Warmonger's Greaves
-						dr(01.7, i(10081)),	-- Lord's Girdle
-						dr(01.4, i(10079)),	-- Lord's Cape
-						dr(01.1, i(7519)),	-- Gossamer Pants
-						dr(01.0, i(9924)),	-- Tracker's Tunic					
+						i(10201),	-- Overlord's Greaves
+						i(9962),	-- Warmonger's Greaves
+						i(10081),	-- Lord's Girdle
+						i(10079),	-- Lord's Cape
+						i(7519),	-- Gossamer Pants
+						i(9924),	-- Tracker's Tunic
 					}), 
 					n(50948, { 	-- Crystalback
-						dr(25.0, i(9937)),	-- Abjurer's Bands
-						dr(25.0, i(10091)),	-- Gothic Plate Leggings
-						dr(03.0, i(7539)),	-- Champion's Leggings
-						dr(02.0, i(9960)),	-- Warmonger's Gauntlets
-						dr(01.7, i(9947)),	-- Chieftain's Belt
-						dr(01.6, i(10092)),	-- Gothic Plate Spaulders
-						dr(01.4, i(10079)),	-- Lord's Cape
-						dr(01.3, i(7540)),	-- Champion's Helmet
-						dr(01.2, i(10201)),	-- Overlord's Greaves
-						dr(01.1, i(9952)),	-- Chieftain's Gloves
-						dr(01.1, i(10202)),	-- Overlord's Vambraces
-						dr(01.1, i(9905)),	-- Royal Blouse
-						dr(01.1, i(9924)),	-- Tracker's Tunic
-						dr(01.0, i(7538)),	-- Champion's Armor
-						dr(01.0, i(9913)),	-- Royal Gown
-						dr(01.0, i(9963)),	-- Warmonger's Circlet					
+						i(9937),	-- Abjurer's Bands
+						i(10091),	-- Gothic Plate Leggings
+						i(7539),	-- Champion's Leggings
+						i(9960),	-- Warmonger's Gauntlets
+						i(9947),	-- Chieftain's Belt
+						i(10092),	-- Gothic Plate Spaulders
+						i(10079),	-- Lord's Cape
+						i(7540),	-- Champion's Helmet
+						i(10201),	-- Overlord's Greaves
+						i(9952),	-- Chieftain's Gloves
+						i(10202),	-- Overlord's Vambraces
+						i(9905),	-- Royal Blouse
+						i(9924),	-- Tracker's Tunic
+						i(7538),	-- Champion's Armor
+						i(9913),	-- Royal Gown
+						i(9963),	-- Warmonger's Circlet
 					}),
 					o(207496, {	-- Dark Iron Treasure Chest
 						["groups"] = {
@@ -365,339 +347,339 @@ _.Zones =
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 					}),					
 					n(8279, { 	-- Faulty War Golem
-						dr(12.0, i(7532)),	-- Cabalist Spaulders
-						dr(04.0, i(7540)),	-- Champion's Helmet
-						dr(04.0, i(7543)),	-- Champion's Pauldrons
-						dr(04.0, i(10091)),	-- Gothic Plate Leggings
-						dr(04.0, i(9961)),	-- Warmonger's Belt
-						dr(03.0, i(7529)),	-- Cabalist Helm
-						dr(03.0, i(9951)),	-- Chieftain's Cloak
-						dr(03.0, i(7520)),	-- Gossamer Headpiece
-						dr(03.0, i(7519)),	-- Gossamer Pants
-						dr(03.0, i(10092)),	-- Gothic Plate Spaulders
-						dr(03.0, i(9922)),	-- Tracker's Leggings
-						dr(03.0, i(9960)),	-- Warmonger's Gauntlets
-						dr(02.0, i(7541)),	-- Champion's Gauntlets
-						dr(01.9, i(7542)),	-- Champion's Greaves
-						dr(01.8, i(7526)),	-- Gossamer Belt
-						dr(01.8, i(9905)),	-- Royal Blouse
-						dr(01.7, i(7531)),	-- Cabalist Boots
-						dr(01.5, i(7530)),	-- Cabalist Gloves
-						dr(01.5, i(9911)),	-- Royal Trousers
-						dr(01.4, i(7535)),	-- Cabalist Belt
-						dr(01.4, i(9956)),	-- Warmonger's Bracers
-						dr(01.3, i(7546)),	-- Champion's Girdle
-						dr(01.3, i(7523)),	-- Gossamer Shoulderpads
-						dr(01.3, i(10087)),	-- Gothic Plate Gauntlets
-						dr(01.2, i(9947)),	-- Chieftain's Belt
-						dr(01.1, i(7521)),	-- Gossamer Gloves
-						dr(01.1, i(10090)),	-- Gothic Plate Helmet
-						dr(01.1, i(10206)),	-- Overlord's Girdle
-						dr(01.1, i(9963)),	-- Warmonger's Circlet
-						dr(01.0, i(9965)),	-- Warmonger's Pauldrons					
+						i(7532),	-- Cabalist Spaulders
+						i(7540),	-- Champion's Helmet
+						i(7543),	-- Champion's Pauldrons
+						i(10091),	-- Gothic Plate Leggings
+						i(9961),	-- Warmonger's Belt
+						i(7529),	-- Cabalist Helm
+						i(9951),	-- Chieftain's Cloak
+						i(7520),	-- Gossamer Headpiece
+						i(7519),	-- Gossamer Pants
+						i(10092),	-- Gothic Plate Spaulders
+						i(9922),	-- Tracker's Leggings
+						i(9960),	-- Warmonger's Gauntlets
+						i(7541),	-- Champion's Gauntlets
+						i(7542),	-- Champion's Greaves
+						i(7526),	-- Gossamer Belt
+						i(9905),	-- Royal Blouse
+						i(7531),	-- Cabalist Boots
+						i(7530),	-- Cabalist Gloves
+						i(9911),	-- Royal Trousers
+						i(7535),	-- Cabalist Belt
+						i(9956),	-- Warmonger's Bracers
+						i(7546),	-- Champion's Girdle
+						i(7523),	-- Gossamer Shoulderpads
+						i(10087),	-- Gothic Plate Gauntlets
+						i(9947),	-- Chieftain's Belt
+						i(7521),	-- Gossamer Gloves
+						i(10090),	-- Gothic Plate Helmet
+						i(10206),	-- Overlord's Girdle
+						i(9963),	-- Warmonger's Circlet
+						i(9965),	-- Warmonger's Pauldrons
 					}), 
 					n(8282, { 	-- Highlord Mastrogonde
-						dr(08.0, i(10201)),	-- Overlord's Greaves
-						dr(04.0, i(7538)),	-- Champion's Armor
-						dr(03.0, i(7528)),	-- Cabalist Leggings
-						dr(03.0, i(7532)),	-- Cabalist Spaulders
-						dr(03.0, i(7539)),	-- Champion's Leggings
-						dr(03.0, i(9949)),	-- Chieftain's Bracers
-						dr(03.0, i(9905)),	-- Royal Blouse
-						dr(02.0, i(9937)),	-- Abjurer's Bands
-						dr(02.0, i(9945)),	-- Abjurer's Sash
-						dr(02.0, i(7540)),	-- Champion's Helmet
-						dr(02.0, i(9947)),	-- Chieftain's Belt
-						dr(02.0, i(10079)),	-- Lord's Cape
-						dr(02.0, i(10202)),	-- Overlord's Vambraces
-						dr(02.0, i(9913)),	-- Royal Gown
-						dr(02.0, i(9924)),	-- Tracker's Tunic
-						dr(02.0, i(9960)),	-- Warmonger's Gauntlets
-						dr(02.0, i(9962)),	-- Warmonger's Greaves
-						dr(01.9, i(7529)),	-- Cabalist Helm
-						dr(01.9, i(7543)),	-- Champion's Pauldrons
-						dr(01.9, i(7519)),	-- Gossamer Pants
-						dr(01.8, i(9951)),	-- Chieftain's Cloak
-						dr(01.8, i(9963)),	-- Warmonger's Circlet
-						dr(01.7, i(9938)),	-- Abjurer's Cloak
-						dr(01.7, i(10091)),	-- Gothic Plate Leggings
-						dr(01.7, i(10092)),	-- Gothic Plate Spaulders
-						dr(01.7, i(10206)),	-- Overlord's Girdle
-						dr(01.7, i(10071)),	-- Righteous Cloak
-						dr(01.7, i(9961)),	-- Warmonger's Belt
-						dr(01.6, i(9952)),	-- Chieftain's Gloves
-						dr(01.4, i(10066)),	-- Duskwoven Sash
-						dr(01.3, i(10060)),	-- Duskwoven Cape
-						dr(01.3, i(7520)),	-- Gossamer Headpiece
-						dr(01.3, i(10207)),	-- Overlord's Crown
-						dr(01.0, i(9948)),	-- Chieftain's Boots					
+						i(10201),	-- Overlord's Greaves
+						i(7538),	-- Champion's Armor
+						i(7528),	-- Cabalist Leggings
+						i(7532),	-- Cabalist Spaulders
+						i(7539),	-- Champion's Leggings
+						i(9949),	-- Chieftain's Bracers
+						i(9905),	-- Royal Blouse
+						i(9937),	-- Abjurer's Bands
+						i(9945),	-- Abjurer's Sash
+						i(7540),	-- Champion's Helmet
+						i(9947),	-- Chieftain's Belt
+						i(10079),	-- Lord's Cape
+						i(10202),	-- Overlord's Vambraces
+						i(9913),	-- Royal Gown
+						i(9924),	-- Tracker's Tunic
+						i(9960),	-- Warmonger's Gauntlets
+						i(9962),	-- Warmonger's Greaves
+						i(7529),	-- Cabalist Helm
+						i(7543),	-- Champion's Pauldrons
+						i(7519),	-- Gossamer Pants
+						i(9951),	-- Chieftain's Cloak
+						i(9963),	-- Warmonger's Circlet
+						i(9938),	-- Abjurer's Cloak
+						i(10091),	-- Gothic Plate Leggings
+						i(10092),	-- Gothic Plate Spaulders
+						i(10206),	-- Overlord's Girdle
+						i(10071),	-- Righteous Cloak
+						i(9961),	-- Warmonger's Belt
+						i(9952),	-- Chieftain's Gloves
+						i(10066),	-- Duskwoven Sash
+						i(10060),	-- Duskwoven Cape
+						i(7520),	-- Gossamer Headpiece
+						i(10207),	-- Overlord's Crown
+						i(9948),	-- Chieftain's Boots
 					}), 
 					n(50946, { 	-- Hogzilla
-						dr(24.0, i(9939)),	-- Abjurer's Gloves
-						dr(08.0, i(9962)),	-- Warmonger's Greaves
-						dr(05.0, i(9951)),	-- Chieftain's Cloak
-						dr(04.0, i(10092)),	-- Gothic Plate Spaulders
-						dr(03.0, i(7519)),	-- Gossamer Pants
-						dr(03.0, i(10091)),	-- Gothic Plate Leggings
-						dr(02.0, i(7535)),	-- Cabalist Belt
-						dr(02.0, i(7532)),	-- Cabalist Spaulders
-						dr(02.0, i(7543)),	-- Champion's Pauldrons
-						dr(02.0, i(9922)),	-- Tracker's Leggings
-						dr(02.0, i(9956)),	-- Warmonger's Bracers
-						dr(01.8, i(7529)),	-- Cabalist Helm
-						dr(01.8, i(7540)),	-- Champion's Helmet
-						dr(01.8, i(9961)),	-- Warmonger's Belt
-						dr(01.7, i(7542)),	-- Champion's Greaves
-						dr(01.7, i(9960)),	-- Warmonger's Gauntlets
-						dr(01.6, i(7546)),	-- Champion's Girdle
-						dr(01.2, i(7520)),	-- Gossamer Headpiece
-						dr(01.0, i(9948)),	-- Chieftain's Boots					
+						i(9939),	-- Abjurer's Gloves
+						i(9962),	-- Warmonger's Greaves
+						i(9951),	-- Chieftain's Cloak
+						i(10092),	-- Gothic Plate Spaulders
+						i(7519),	-- Gossamer Pants
+						i(10091),	-- Gothic Plate Leggings
+						i(7535),	-- Cabalist Belt
+						i(7532),	-- Cabalist Spaulders
+						i(7543),	-- Champion's Pauldrons
+						i(9922),	-- Tracker's Leggings
+						i(9956),	-- Warmonger's Bracers
+						i(7529),	-- Cabalist Helm
+						i(7540),	-- Champion's Helmet
+						i(9961),	-- Warmonger's Belt
+						i(7542),	-- Champion's Greaves
+						i(9960),	-- Warmonger's Gauntlets
+						i(7546),	-- Champion's Girdle
+						i(7520),	-- Gossamer Headpiece
+						i(9948),	-- Chieftain's Boots
 					}), 
 					n(8277, { 	-- Rekk'tilac
-						dr(07.0, i(9964)),	-- Warmonger's Leggings
-						dr(06.0, i(7532)),	-- Cabalist Spaulders
-						dr(03.0, i(9937)),	-- Abjurer's Bands
-						dr(03.0, i(9938)),	-- Abjurer's Cloak
-						dr(03.0, i(7539)),	-- Champion's Leggings
-						dr(02.0, i(9945)),	-- Abjurer's Sash
-						dr(02.0, i(7529)),	-- Cabalist Helm
-						dr(02.0, i(7528)),	-- Cabalist Leggings
-						dr(02.0, i(7538)),	-- Champion's Armor
-						dr(02.0, i(7540)),	-- Champion's Helmet
-						dr(02.0, i(9947)),	-- Chieftain's Belt
-						dr(02.0, i(9949)),	-- Chieftain's Bracers
-						dr(02.0, i(9951)),	-- Chieftain's Cloak
-						dr(02.0, i(10079)),	-- Lord's Cape
-						dr(02.0, i(10206)),	-- Overlord's Girdle
-						dr(02.0, i(10201)),	-- Overlord's Greaves
-						dr(02.0, i(9924)),	-- Tracker's Tunic
-						dr(02.0, i(9961)),	-- Warmonger's Belt
-						dr(02.0, i(9963)),	-- Warmonger's Circlet
-						dr(02.0, i(9962)),	-- Warmonger's Greaves
-						dr(01.8, i(10202)),	-- Overlord's Vambraces
-						dr(01.8, i(9960)),	-- Warmonger's Gauntlets
-						dr(01.7, i(10091)),	-- Gothic Plate Leggings
-						dr(01.7, i(10092)),	-- Gothic Plate Spaulders
-						dr(01.6, i(7519)),	-- Gossamer Pants
-						dr(01.6, i(9905)),	-- Royal Blouse
-						dr(01.5, i(9939)),	-- Abjurer's Gloves
-						dr(01.5, i(7543)),	-- Champion's Pauldrons
-						dr(01.5, i(9913)),	-- Royal Gown
-						dr(01.4, i(7520)),	-- Gossamer Headpiece
-						dr(01.3, i(10071)),	-- Righteous Cloak
-						dr(01.3, i(9965)),	-- Warmonger's Pauldrons
-						dr(01.1, i(9952)),	-- Chieftain's Gloves
-						dr(01.0, i(10131)),	-- Revenant Boots
-						dr(01.0, i(10069)),	-- Righteous Bracers
-						dr(01.0, i(10067)),	-- Righteous Waistguard					
+						i(9964),	-- Warmonger's Leggings
+						i(7532),	-- Cabalist Spaulders
+						i(9937),	-- Abjurer's Bands
+						i(9938),	-- Abjurer's Cloak
+						i(7539),	-- Champion's Leggings
+						i(9945),	-- Abjurer's Sash
+						i(7529),	-- Cabalist Helm
+						i(7528),	-- Cabalist Leggings
+						i(7538),	-- Champion's Armor
+						i(7540),	-- Champion's Helmet
+						i(9947),	-- Chieftain's Belt
+						i(9949),	-- Chieftain's Bracers
+						i(9951),	-- Chieftain's Cloak
+						i(10079),	-- Lord's Cape
+						i(10206),	-- Overlord's Girdle
+						i(10201),	-- Overlord's Greaves
+						i(9924),	-- Tracker's Tunic
+						i(9961),	-- Warmonger's Belt
+						i(9963),	-- Warmonger's Circlet
+						i(9962),	-- Warmonger's Greaves
+						i(10202),	-- Overlord's Vambraces
+						i(9960),	-- Warmonger's Gauntlets
+						i(10091),	-- Gothic Plate Leggings
+						i(10092),	-- Gothic Plate Spaulders
+						i(7519),	-- Gossamer Pants
+						i(9905),	-- Royal Blouse
+						i(9939),	-- Abjurer's Gloves
+						i(7543),	-- Champion's Pauldrons
+						i(9913),	-- Royal Gown
+						i(7520),	-- Gossamer Headpiece
+						i(10071),	-- Righteous Cloak
+						i(9965),	-- Warmonger's Pauldrons
+						i(9952),	-- Chieftain's Gloves
+						i(10131),	-- Revenant Boots
+						i(10069),	-- Righteous Bracers
+						i(10067),	-- Righteous Waistguard
 					}), 
 					n(51048, { 	-- Rexxus
-						dr(28.0, i(10092)),	-- Gothic Plate Spaulders
-						dr(27.0, i(7543)),	-- Champion's Pauldrons
-						dr(02.0, i(7531)),	-- Cabalist Boots
-						dr(02.0, i(7532)),	-- Cabalist Spaulders
-						dr(02.0, i(9951)),	-- Chieftain's Cloak
-						dr(01.8, i(7520)),	-- Gossamer Headpiece
-						dr(01.6, i(7528)),	-- Cabalist Leggings
-						dr(01.5, i(7529)),	-- Cabalist Helm
-						dr(01.5, i(9961)),	-- Warmonger's Belt
-						dr(01.2, i(10091)),	-- Gothic Plate Leggings
-						dr(01.1, i(7538)),	-- Champion's Armor
-						dr(01.1, i(7540)),	-- Champion's Helmet
-						dr(01.1, i(9960)),	-- Warmonger's Gauntlets					
+						i(10092),	-- Gothic Plate Spaulders
+						i(7543),	-- Champion's Pauldrons
+						i(7531),	-- Cabalist Boots
+						i(7532),	-- Cabalist Spaulders
+						i(9951),	-- Chieftain's Cloak
+						i(7520),	-- Gossamer Headpiece
+						i(7528),	-- Cabalist Leggings
+						i(7529),	-- Cabalist Helm
+						i(9961),	-- Warmonger's Belt
+						i(10091),	-- Gothic Plate Leggings
+						i(7538),	-- Champion's Armor
+						i(7540),	-- Champion's Helmet
+						i(9960),	-- Warmonger's Gauntlets
 					}), 
 					n(8281, { 	-- Scald
-						dr(09.0, i(9905)),	-- Royal Blouse
-						dr(09.0, i(9913)),	-- Royal Gown
-						dr(07.0, i(10207)),	-- Overlord's Crown
-						dr(03.0, i(10069)),	-- Righteous Bracers
-						dr(02.0, i(9939)),	-- Abjurer's Gloves
-						dr(02.0, i(9941)),	-- Abjurer's Mantle
-						dr(02.0, i(9949)),	-- Chieftain's Bracers
-						dr(02.0, i(9952)),	-- Chieftain's Gloves
-						dr(02.0, i(10086)),	-- Gothic Plate Armor
-						dr(02.0, i(10076)),	-- Lord's Armguards
-						dr(02.0, i(10071)),	-- Righteous Cloak
-						dr(02.0, i(10067)),	-- Righteous Waistguard
-						dr(02.0, i(9924)),	-- Tracker's Tunic
-						dr(01.8, i(9948)),	-- Chieftain's Boots
-						dr(01.8, i(9962)),	-- Warmonger's Greaves
-						dr(01.8, i(9964)),	-- Warmonger's Leggings
-						dr(01.7, i(10066)),	-- Duskwoven Sash
-						dr(01.7, i(10202)),	-- Overlord's Vambraces
-						dr(01.5, i(10205)),	-- Overlord's Gauntlets
-						dr(01.5, i(10127)),	-- Revenant Bracers
-						dr(01.5, i(9965)),	-- Warmonger's Pauldrons
-						dr(01.4, i(9936)),	-- Abjurer's Boots
-						dr(01.4, i(7538)),	-- Champion's Armor
-						dr(01.3, i(7528)),	-- Cabalist Leggings
-						dr(01.3, i(10060)),	-- Duskwoven Cape
-						dr(01.2, i(9945)),	-- Abjurer's Sash
-						dr(01.1, i(10059)),	-- Duskwoven Bracers
-						dr(01.0, i(9938)),	-- Abjurer's Cloak
-						dr(01.0, i(9947)),	-- Chieftain's Belt
-						dr(01.0, i(10194)),	-- Crusader's Cloak					
+						i(9905),	-- Royal Blouse
+						i(9913),	-- Royal Gown
+						i(10207),	-- Overlord's Crown
+						i(10069),	-- Righteous Bracers
+						i(9939),	-- Abjurer's Gloves
+						i(9941),	-- Abjurer's Mantle
+						i(9949),	-- Chieftain's Bracers
+						i(9952),	-- Chieftain's Gloves
+						i(10086),	-- Gothic Plate Armor
+						i(10076),	-- Lord's Armguards
+						i(10071),	-- Righteous Cloak
+						i(10067),	-- Righteous Waistguard
+						i(9924),	-- Tracker's Tunic
+						i(9948),	-- Chieftain's Boots
+						i(9962),	-- Warmonger's Greaves
+						i(9964),	-- Warmonger's Leggings
+						i(10066),	-- Duskwoven Sash
+						i(10202),	-- Overlord's Vambraces
+						i(10205),	-- Overlord's Gauntlets
+						i(10127),	-- Revenant Bracers
+						i(9965),	-- Warmonger's Pauldrons
+						i(9936),	-- Abjurer's Boots
+						i(7538),	-- Champion's Armor
+						i(7528),	-- Cabalist Leggings
+						i(10060),	-- Duskwoven Cape
+						i(9945),	-- Abjurer's Sash
+						i(10059),	-- Duskwoven Bracers
+						i(9938),	-- Abjurer's Cloak
+						i(9947),	-- Chieftain's Belt
+						i(10194),	-- Crusader's Cloak
 					}), 
 					n(51002, { 	-- Scorpoxx
-						dr(25.0, i(7523)),	-- Gossamer Shoulderpads
-						dr(25.0, i(10069)),	-- Righteous Bracers
-						dr(09.0, i(7521)),	-- Gossamer Gloves
-						dr(03.0, i(10091)),	-- Gothic Plate Leggings
-						dr(01.7, i(7540)),	-- Champion's Helmet
-						dr(01.6, i(9961)),	-- Warmonger's Belt
-						dr(01.5, i(7529)),	-- Cabalist Helm
-						dr(01.5, i(7528)),	-- Cabalist Leggings
-						dr(01.4, i(7543)),	-- Champion's Pauldrons
-						dr(01.1, i(7530)),	-- Cabalist Gloves
-						dr(01.1, i(7520)),	-- Gossamer Headpiece
-						dr(01.0, i(7532)),	-- Cabalist Spaulders
-						dr(01.0, i(9951)),	-- Chieftain's Cloak					
+						i(7523),	-- Gossamer Shoulderpads
+						i(10069),	-- Righteous Bracers
+						i(7521),	-- Gossamer Gloves
+						i(10091),	-- Gothic Plate Leggings
+						i(7540),	-- Champion's Helmet
+						i(9961),	-- Warmonger's Belt
+						i(7529),	-- Cabalist Helm
+						i(7528),	-- Cabalist Leggings
+						i(7543),	-- Champion's Pauldrons
+						i(7530),	-- Cabalist Gloves
+						i(7520),	-- Gossamer Headpiece
+						i(7532),	-- Cabalist Spaulders
+						i(9951),	-- Chieftain's Cloak
 					}),
 					n(8280, { 	-- Shleipnarr
-						dr(07.0, i(7539)),	-- Champion's Leggings
-						dr(04.0, i(7532)),	-- Cabalist Spaulders
-						dr(04.0, i(7540)),	-- Champion's Helmet
-						dr(04.0, i(10091)),	-- Gothic Plate Leggings
-						dr(04.0, i(9961)),	-- Warmonger's Belt
-						dr(04.0, i(9960)),	-- Warmonger's Gauntlets
-						dr(03.0, i(7529)),	-- Cabalist Helm
-						dr(03.0, i(7543)),	-- Champion's Pauldrons
-						dr(03.0, i(9951)),	-- Chieftain's Cloak
-						dr(03.0, i(7520)),	-- Gossamer Headpiece
-						dr(03.0, i(7519)),	-- Gossamer Pants
-						dr(03.0, i(10092)),	-- Gothic Plate Spaulders
-						dr(02.0, i(7535)),	-- Cabalist Belt
-						dr(01.8, i(9911)),	-- Royal Trousers
-						dr(01.7, i(10087)),	-- Gothic Plate Gauntlets
-						dr(01.7, i(9922)),	-- Tracker's Leggings
-						dr(01.6, i(9956)),	-- Warmonger's Bracers
-						dr(01.5, i(7531)),	-- Cabalist Boots
-						dr(01.5, i(7546)),	-- Champion's Girdle
-						dr(01.4, i(7542)),	-- Champion's Greaves
-						dr(01.4, i(7521)),	-- Gossamer Gloves
-						dr(01.3, i(7530)),	-- Cabalist Gloves
-						dr(01.3, i(7541)),	-- Champion's Gauntlets
-						dr(01.3, i(10090)),	-- Gothic Plate Helmet
-						dr(01.2, i(9938)),	-- Abjurer's Cloak
-						dr(01.2, i(10066)),	-- Duskwoven Sash
-						dr(01.2, i(7526)),	-- Gossamer Belt
-						dr(01.2, i(10201)),	-- Overlord's Greaves
-						dr(01.2, i(10202)),	-- Overlord's Vambraces
-						dr(01.1, i(7523)),	-- Gossamer Shoulderpads
-						dr(01.1, i(9924)),	-- Tracker's Tunic
-						dr(01.0, i(7528)),	-- Cabalist Leggings
-						dr(01.0, i(9947)),	-- Chieftain's Belt					
+						i(7539),	-- Champion's Leggings
+						i(7532),	-- Cabalist Spaulders
+						i(7540),	-- Champion's Helmet
+						i(10091),	-- Gothic Plate Leggings
+						i(9961),	-- Warmonger's Belt
+						i(9960),	-- Warmonger's Gauntlets
+						i(7529),	-- Cabalist Helm
+						i(7543),	-- Champion's Pauldrons
+						i(9951),	-- Chieftain's Cloak
+						i(7520),	-- Gossamer Headpiece
+						i(7519),	-- Gossamer Pants
+						i(10092),	-- Gothic Plate Spaulders
+						i(7535),	-- Cabalist Belt
+						i(9911),	-- Royal Trousers
+						i(10087),	-- Gothic Plate Gauntlets
+						i(9922),	-- Tracker's Leggings
+						i(9956),	-- Warmonger's Bracers
+						i(7531),	-- Cabalist Boots
+						i(7546),	-- Champion's Girdle
+						i(7542),	-- Champion's Greaves
+						i(7521),	-- Gossamer Gloves
+						i(7530),	-- Cabalist Gloves
+						i(7541),	-- Champion's Gauntlets
+						i(10090),	-- Gothic Plate Helmet
+						i(9938),	-- Abjurer's Cloak
+						i(10066),	-- Duskwoven Sash
+						i(7526),	-- Gossamer Belt
+						i(10201),	-- Overlord's Greaves
+						i(10202),	-- Overlord's Vambraces
+						i(7523),	-- Gossamer Shoulderpads
+						i(9924),	-- Tracker's Tunic
+						i(7528),	-- Cabalist Leggings
+						i(9947),	-- Chieftain's Belt
 					}), 
 					n(8283, { 	-- Slave Master Blackheart
-						dr(09.0, i(10060)),	-- Duskwoven Cape
-						dr(04.0, i(10202)),	-- Overlord's Vambraces
-						dr(03.0, i(9952)),	-- Chieftain's Gloves
-						dr(03.0, i(10068)),	-- Righteous Boots
-						dr(03.0, i(10069)),	-- Righteous Bracers
-						dr(03.0, i(10071)),	-- Righteous Cloak
-						dr(03.0, i(9964)),	-- Warmonger's Leggings
-						dr(02.0, i(9939)),	-- Abjurer's Gloves
-						dr(02.0, i(9948)),	-- Chieftain's Boots
-						dr(02.0, i(10076)),	-- Lord's Armguards
-						dr(02.0, i(10207)),	-- Overlord's Crown
-						dr(02.0, i(10205)),	-- Overlord's Gauntlets
-						dr(02.0, i(10067)),	-- Righteous Waistguard
-						dr(02.0, i(9965)),	-- Warmonger's Pauldrons
-						dr(01.9, i(9941)),	-- Abjurer's Mantle
-						dr(01.8, i(10066)),	-- Duskwoven Sash
-						dr(01.8, i(10086)),	-- Gothic Plate Armor
-						dr(01.8, i(10127)),	-- Revenant Bracers
-						dr(01.6, i(7527)),	-- Cabalist Chestpiece
-						dr(01.4, i(9937)),	-- Abjurer's Bands
-						dr(01.4, i(9947)),	-- Chieftain's Belt
-						dr(01.4, i(9949)),	-- Chieftain's Bracers
-						dr(01.3, i(9936)),	-- Abjurer's Boots
-						dr(01.3, i(7539)),	-- Champion's Leggings
-						dr(01.3, i(10079)),	-- Lord's Cape
-						dr(01.3, i(9962)),	-- Warmonger's Greaves
-						dr(01.2, i(9945)),	-- Abjurer's Sash
-						dr(01.2, i(10058)),	-- Duskwoven Sandals
-						dr(01.2, i(9957)),	-- Warmonger's Chestpiece
-						dr(01.1, i(10243)),	-- Heavy Lamellar Girdle
-						dr(01.1, i(9963)),	-- Warmonger's Circlet
-						dr(01.0, i(9938)),	-- Abjurer's Cloak
-						dr(01.0, i(9940)),	-- Abjurer's Hood
-						dr(01.0, i(7528)),	-- Cabalist Leggings
-						dr(01.0, i(7538)),	-- Champion's Armor
-						dr(01.0, i(10239)),	-- Heavy Lamellar Vambraces
-						dr(01.0, i(10209)),	-- Overlord's Spaulders
-						dr(01.0, i(9913)),	-- Royal Gown
-						dr(01.0, i(9924)),	-- Tracker's Tunic					
+						i(10060),	-- Duskwoven Cape
+						i(10202),	-- Overlord's Vambraces
+						i(9952),	-- Chieftain's Gloves
+						i(10068),	-- Righteous Boots
+						i(10069),	-- Righteous Bracers
+						i(10071),	-- Righteous Cloak
+						i(9964),	-- Warmonger's Leggings
+						i(9939),	-- Abjurer's Gloves
+						i(9948),	-- Chieftain's Boots
+						i(10076),	-- Lord's Armguards
+						i(10207),	-- Overlord's Crown
+						i(10205),	-- Overlord's Gauntlets
+						i(10067),	-- Righteous Waistguard
+						i(9965),	-- Warmonger's Pauldrons
+						i(9941),	-- Abjurer's Mantle
+						i(10066),	-- Duskwoven Sash
+						i(10086),	-- Gothic Plate Armor
+						i(10127),	-- Revenant Bracers
+						i(7527),	-- Cabalist Chestpiece
+						i(9937),	-- Abjurer's Bands
+						i(9947),	-- Chieftain's Belt
+						i(9949),	-- Chieftain's Bracers
+						i(9936),	-- Abjurer's Boots
+						i(7539),	-- Champion's Leggings
+						i(10079),	-- Lord's Cape
+						i(9962),	-- Warmonger's Greaves
+						i(9945),	-- Abjurer's Sash
+						i(10058),	-- Duskwoven Sandals
+						i(9957),	-- Warmonger's Chestpiece
+						i(10243),	-- Heavy Lamellar Girdle
+						i(9963),	-- Warmonger's Circlet
+						i(9938),	-- Abjurer's Cloak
+						i(9940),	-- Abjurer's Hood
+						i(7528),	-- Cabalist Leggings
+						i(7538),	-- Champion's Armor
+						i(10239),	-- Heavy Lamellar Vambraces
+						i(10209),	-- Overlord's Spaulders
+						i(9913),	-- Royal Gown
+						i(9924),	-- Tracker's Tunic
 					}), 
 					n(50846, { 	-- Slavermaw
-						dr(28.0, i(10185)),	-- Swashbuckler's Cape
-						dr(28.0, i(9924)),	-- Tracker's Tunic
-						dr(02.0, i(7529)),	-- Cabalist Helm
-						dr(01.9, i(9938)),	-- Abjurer's Cloak
-						dr(01.9, i(9905)),	-- Royal Blouse
-						dr(01.2, i(9963)),	-- Warmonger's Circlet
-						dr(01.0, i(9947)),	-- Chieftain's Belt					
+						i(10185),	-- Swashbuckler's Cape
+						i(9924),	-- Tracker's Tunic
+						i(7529),	-- Cabalist Helm
+						i(9938),	-- Abjurer's Cloak
+						i(9905),	-- Royal Blouse
+						i(9963),	-- Warmonger's Circlet
+						i(9947),	-- Chieftain's Belt
 					}), 
 					n(8278, { 	-- Smoldar
-						dr(04.0, i(10080)),	-- Lord's Gauntlets
-						dr(03.0, i(9952)),	-- Chieftain's Gloves
-						dr(03.0, i(9955)),	-- Chieftain's Shoulders
-						dr(03.0, i(10059)),	-- Duskwoven Bracers
-						dr(03.0, i(7517)),	-- Gossamer Tunic
-						dr(03.0, i(10081)),	-- Lord's Girdle
-						dr(03.0, i(10131)),	-- Revenant Boots
-						dr(03.0, i(10129)),	-- Revenant Gauntlets
-						dr(03.0, i(9957)),	-- Warmonger's Chestpiece
-						dr(02.0, i(9940)),	-- Abjurer's Hood
-						dr(02.0, i(9942)),	-- Abjurer's Pants
-						dr(02.0, i(9953)),	-- Chieftain's Headdress
-						dr(02.0, i(10194)),	-- Crusader's Cloak
-						dr(02.0, i(10208)),	-- Overlord's Legplates
-						dr(02.0, i(10130)),	-- Revenant Girdle
-						dr(02.0, i(10133)),	-- Revenant Leggings
-						dr(01.9, i(10058)),	-- Duskwoven Sandals
-						dr(01.9, i(10205)),	-- Overlord's Gauntlets
-						dr(01.8, i(7527)),	-- Cabalist Chestpiece
-						dr(01.8, i(10066)),	-- Duskwoven Sash
-						dr(01.7, i(9948)),	-- Chieftain's Boots
-						dr(01.6, i(9941)),	-- Abjurer's Mantle
-						dr(01.6, i(9954)),	-- Chieftain's Leggings
-						dr(01.6, i(10209)),	-- Overlord's Spaulders
-						dr(01.6, i(10069)),	-- Righteous Bracers
-						dr(01.5, i(9939)),	-- Abjurer's Gloves
-						dr(01.5, i(10076)),	-- Lord's Armguards
-						dr(01.4, i(10060)),	-- Duskwoven Cape
-						dr(01.4, i(10086)),	-- Gothic Plate Armor
-						dr(01.4, i(10243)),	-- Heavy Lamellar Girdle
-						dr(01.4, i(10207)),	-- Overlord's Crown
-						dr(01.4, i(10127)),	-- Revenant Bracers
-						dr(01.4, i(10071)),	-- Righteous Cloak
-						dr(01.3, i(10185)),	-- Swashbuckler's Cape
-						dr(01.3, i(9965)),	-- Warmonger's Pauldrons
-						dr(01.2, i(9936)),	-- Abjurer's Boots
-						dr(01.2, i(10191)),	-- Crusader's Armguards
-						dr(01.2, i(10132)),	-- Revenant Helmet
-						dr(01.1, i(10083)),	-- Lord's Crown
-						dr(01.1, i(10075)),	-- Righteous Spaulders
-						dr(01.0, i(10063)),	-- Duskwoven Amice
-						dr(01.0, i(10084)),	-- Lord's Legguards
-						dr(01.0, i(9964)),	-- Warmonger's Leggings					
+						i(10080),	-- Lord's Gauntlets
+						i(9952),	-- Chieftain's Gloves
+						i(9955),	-- Chieftain's Shoulders
+						i(10059),	-- Duskwoven Bracers
+						i(7517),	-- Gossamer Tunic
+						i(10081),	-- Lord's Girdle
+						i(10131),	-- Revenant Boots
+						i(10129),	-- Revenant Gauntlets
+						i(9957),	-- Warmonger's Chestpiece
+						i(9940),	-- Abjurer's Hood
+						i(9942),	-- Abjurer's Pants
+						i(9953),	-- Chieftain's Headdress
+						i(10194),	-- Crusader's Cloak
+						i(10208),	-- Overlord's Legplates
+						i(10130),	-- Revenant Girdle
+						i(10133),	-- Revenant Leggings
+						i(10058),	-- Duskwoven Sandals
+						i(10205),	-- Overlord's Gauntlets
+						i(7527),	-- Cabalist Chestpiece
+						i(10066),	-- Duskwoven Sash
+						i(9948),	-- Chieftain's Boots
+						i(9941),	-- Abjurer's Mantle
+						i(9954),	-- Chieftain's Leggings
+						i(10209),	-- Overlord's Spaulders
+						i(10069),	-- Righteous Bracers
+						i(9939),	-- Abjurer's Gloves
+						i(10076),	-- Lord's Armguards
+						i(10060),	-- Duskwoven Cape
+						i(10086),	-- Gothic Plate Armor
+						i(10243),	-- Heavy Lamellar Girdle
+						i(10207),	-- Overlord's Crown
+						i(10127),	-- Revenant Bracers
+						i(10071),	-- Righteous Cloak
+						i(10185),	-- Swashbuckler's Cape
+						i(9965),	-- Warmonger's Pauldrons
+						i(9936),	-- Abjurer's Boots
+						i(10191),	-- Crusader's Armguards
+						i(10132),	-- Revenant Helmet
+						i(10083),	-- Lord's Crown
+						i(10075),	-- Righteous Spaulders
+						i(10063),	-- Duskwoven Amice
+						i(10084),	-- Lord's Legguards
+						i(9964),	-- Warmonger's Leggings
 					}), 
 					n(51010, { 	-- Snips
-						dr(28.0, i(9945)),	-- Abjurer's Sash
-						dr(26.0, i(9962)),	-- Warmonger's Greaves
-						dr(01.9, i(10191)),	-- Crusader's Armguards
-						dr(01.8, i(9965)),	-- Warmonger's Pauldrons
-						dr(01.6, i(9942)),	-- Abjurer's Pants
-						dr(01.6, i(10084)),	-- Lord's Legguards
-						dr(01.5, i(9964)),	-- Warmonger's Leggings
-						dr(01.3, i(10197)),	-- Crusader's Belt
-						dr(01.3, i(10194)),	-- Crusader's Cloak
-						dr(01.2, i(7517)),	-- Gossamer Tunic
-						dr(01.1, i(9948)),	-- Chieftain's Boots
-						dr(01.1, i(10185)),	-- Swashbuckler's Cape
-						dr(01.0, i(10058)),	-- Duskwoven Sandals
-						dr(01.0, i(10069)),	-- Righteous Bracers					
+						i(9945),	-- Abjurer's Sash
+						i(9962),	-- Warmonger's Greaves
+						i(10191),	-- Crusader's Armguards
+						i(9965),	-- Warmonger's Pauldrons
+						i(9942),	-- Abjurer's Pants
+						i(10084),	-- Lord's Legguards
+						i(9964),	-- Warmonger's Leggings
+						i(10197),	-- Crusader's Belt
+						i(10194),	-- Crusader's Cloak
+						i(7517),	-- Gossamer Tunic
+						i(9948),	-- Chieftain's Boots
+						i(10185),	-- Swashbuckler's Cape
+						i(10058),	-- Duskwoven Sandals
+						i(10069),	-- Righteous Bracers
 					}), 
 				}),
 				n(0,   {	-- Zone Drop

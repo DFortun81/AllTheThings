@@ -601,46 +601,46 @@ _.Zones =
 						["sourceQuests"] = {26817},
 					}),
 				--	q(8194),	-- Apprentice Angler
---[[				qg(, q(31851)),	-- Bill Buckler
-					qg(, q(31728)),	-- Bill Buckler
-					qg(, qh(29252)),	-- Booty Bay's Interests
-					qg(, qh(29251)),	-- Booty Bay's Interests
-					qg(, qa(29153)),	-- Booty Bay's Interests
-					qg(, qa(29154)),	-- Booty Bay's Interests
-					qg(, q(26718)),	-- Breadcrumb to Badlands
-					qg(, qh(26592)),	-- Diffractory Chromascope
-					qg(, q(9272)),	-- Dressing the Part
-					qg(, q(38399)),	-- Fencing the Rose
-					qg(, q(26839)),	-- Get Away From It All!
-					qg(, q(8193)),	-- Grand Prize
-					qg(, q(26452)),	-- Gurubashi Challenge
-					qg(, q(26451)),	-- Gurubashi Challenge: Free-For-All Arena Combat
-					qg(, qh(26435)),	-- I'm A Huge Liar and a Fraud
-					qg(, qh(26534)),	-- Let's See What You've Got, Zanzil
-					qg(, q(26630)),	-- Looks Like a Tauren Pirate to Me
-					qg(, qa(29152)),	-- Making Contact
-					qg(, qh(29250)),	-- Making Contact
-					qg(, qh(11357)),	-- Masked Orphan Matron
-					qg(, qh(26494)),	-- Mixmaster Jasper
-					qg(, q(8225)),	-- Rare Fish - Brownell's Blue Striped Racer
-					qg(, q(8224)),	-- Rare Fish - Dezian Queenfish
-					qg(, q(8221)),	-- Rare Fish - Keefer's Angelfish
-					qg(, q(32435)),	-- Second Place
-					qg(, q(44765)),	-- Stranglethorn Fishing Extravaganza
-					qg(, q(40849)),	-- The Dreadblades
+--[[				q(31851)	-- Bill Buckler
+					q(31728)	-- Bill Buckler
+					qh(29252)	-- Booty Bay's Interests
+					qh(29251)	-- Booty Bay's Interests
+					qa(29153)	-- Booty Bay's Interests
+					qa(29154)	-- Booty Bay's Interests
+					q(26718)	-- Breadcrumb to Badlands
+					qh(26592)	-- Diffractory Chromascope
+					q(9272)	-- Dressing the Part
+					q(38399)	-- Fencing the Rose
+					q(26839)	-- Get Away From It All!
+					q(8193)	-- Grand Prize
+					q(26452)	-- Gurubashi Challenge
+					q(26451)	-- Gurubashi Challenge: Free-For-All Arena Combat
+					qh(26435)	-- I'm A Huge Liar and a Fraud
+					qh(26534)	-- Let's See What You've Got, Zanzil
+					q(26630)	-- Looks Like a Tauren Pirate to Me
+					qa(29152)	-- Making Contact
+					qh(29250)	-- Making Contact
+					qh(11357)	-- Masked Orphan Matron
+					qh(26494)	-- Mixmaster Jasper
+					q(8225)	-- Rare Fish - Brownell's Blue Striped Racer
+					q(8224)	-- Rare Fish - Dezian Queenfish
+					q(8221)	-- Rare Fish - Keefer's Angelfish
+					q(32435)	-- Second Place
+					q(44765)	-- Stranglethorn Fishing Extravaganza
+					q(40849)	-- The Dreadblades
 					q(26837),	-- The Explorers' League Digsite //REMOVED
-					qg(, qa(47709)),	-- The Great Gnomeregan Race
-					qg(, qh(26590)),	-- The Holy Water of Clarity
-					qg(, qh(26433)),	-- The Holy Water of Clarity
-					qg(, qa(11970)),	-- The Master of Summer Lore
-					qg(, qh(11971)),	-- The Spinner of Summer Tales
-					qg(, q(32436)),	-- Third Place
+					qa(47709),	-- The Great Gnomeregan Race
+					qh(26590),	-- The Holy Water of Clarity
+					qh(26433),	-- The Holy Water of Clarity
+					qa(11970),	-- The Master of Summer Lore
+					qh(11971),	-- The Spinner of Summer Tales
+					q(32436),	-- Third Place
 					qa(26805),	-- To the Cape! //Starts in Northern Stranglethorn
-					qg(, q(9259)),	-- Traitor to the Bloodsail
-					qg(, qh(28704)),	-- Warchief's Command: The Cape of Stranglethorn!
-					qg(, q(8674)),	-- Winterhoof the Elder
-					qg(, q(42758)),	-- You're Gonna Need A Bigger Boat!
-					qg(, qh(26533)),	-- Zanzil's Secret	
+					q(9259),	-- Traitor to the Bloodsail
+					qh(28704),	-- Warchief's Command: The Cape of Stranglethorn!
+					q(8674),	-- Winterhoof the Elder
+					q(42758),	-- You're Gonna Need A Bigger Boat!
+					qh(26533),	-- Zanzil's Secret	
 --]]
 				}),
 				n(-16, {	-- Rares
@@ -660,219 +660,215 @@ _.Zones =
 									}),
 								},
 							}),
-							i(122222),			-- Music Roll: Angelic
-							dr(7, {				-- Rare Drops (7% Chance)
-								i(18711),		-- Arena Bands
-								i(18710),		-- Arena Bracers
-								i(18712),		-- Arena Vambracers
-								i(18709),		-- Arena Wristguards
-							}),
-							dr(1, {
-								i(15236)		-- Moon Cleaver
-							}),
+							i(122222),		-- Music Roll: Angelic
+							i(18711),		-- Arena Bands
+							i(18710),		-- Arena Bracers
+							i(18712),		-- Arena Vambracers
+							i(18709),		-- Arena Wristguards
+							i(15236)		-- Moon Cleaver
 						},
 					}),
 					n(690, {	-- Cold Eye Basilisk
 						i(5079),	-- Cold Basilisk Eye
 					}),
 					n(14491, { 	-- Kurmokk
-						dr(04.0, i(7409)),	-- Infiltrator Boots
-						dr(03.0, i(9836)),	-- Banded Armor
-						dr(03.0, i(9847)),	-- Conjurer's Cloak
-						dr(03.0, i(7354)),	-- Elder's Boots
-						dr(03.0, i(7413)),	-- Infiltrator Cap
-						dr(03.0, i(7408)),	-- Infiltrator Shoulders
-						dr(03.0, i(7420)),	-- Phalanx Headguard
-						dr(03.0, i(7423)),	-- Phalanx Leggings
-						dr(03.0, i(7424)),	-- Phalanx Spaulders
-						dr(03.0, i(9867)),	-- Renegade Cloak
-						dr(03.0, i(9833)),	-- Scaled Leather Leggings
-						dr(02.0, i(9825)),	-- Durable Pants
-						dr(02.0, i(7366)),	-- Elder's Gloves
-						dr(02.0, i(7367)),	-- Elder's Mantle
-						dr(02.0, i(7421)),	-- Phalanx Gauntlets
-						dr(02.0, i(10406)),	-- Scaled Leather Headband
-						dr(02.0, i(9835)),	-- Scaled Leather Tunic
-						dr(01.9, i(9826)),	-- Durable Robe
-						dr(01.9, i(9824)),	-- Durable Shoulders
-						dr(01.9, i(7422)),	-- Phalanx Girdle
-						dr(01.9, i(6609)),	-- Sage's Cloth
-						dr(01.8, i(6610)),	-- Sage's Robe
-						dr(01.7, i(10289)),	-- Durable Hat
-						dr(01.6, i(7368)),	-- Elder's Pants
-						dr(01.5, i(9857)),	-- Archer's Bracers
-						dr(01.5, i(7417)),	-- Phalanx Boots
-						dr(01.5, i(6616)),	-- Sage's Pants
-						dr(01.4, i(9855)),	-- Archer's Belt
-						dr(01.4, i(9842)),	-- Banded Pauldrons
-						dr(01.4, i(9853)),	-- Conjurer's Cinch
-						dr(01.3, i(10409)),	-- Banded Boots
-						dr(01.3, i(10408)),	-- Banded Helm
-						dr(01.3, i(9819)),	-- Durable Tunic
-						dr(01.3, i(7406)),	-- Infiltrator Cord
-						dr(01.3, i(7412)),	-- Infiltrator Gloves
-						dr(01.3, i(9868)),	-- Renegade Gauntlets
-						dr(01.3, i(7438)),	-- Twilight Belt
-						dr(01.2, i(9841)),	-- Banded Leggings
-						dr(01.2, i(7407)),	-- Infiltrator Armor
-						dr(01.2, i(7460)),	-- Knight's Cloak
-						dr(01.1, i(9860)),	-- Archer's Cloak
-						dr(01.1, i(9845)),	-- Conjurer's Shoes
-						dr(01.1, i(7357)),	-- Elder's Hat
-						dr(01.1, i(9865)),	-- Renegade Bracers
-						dr(01.1, i(9834)),	-- Scaled Leather Shoulders
-						dr(01.0, i(7414)),	-- Infiltrator Pants
+						i(7409),	-- Infiltrator Boots
+						i(9836),	-- Banded Armor
+						i(9847),	-- Conjurer's Cloak
+						i(7354),	-- Elder's Boots
+						i(7413),	-- Infiltrator Cap
+						i(7408),	-- Infiltrator Shoulders
+						i(7420),	-- Phalanx Headguard
+						i(7423),	-- Phalanx Leggings
+						i(7424),	-- Phalanx Spaulders
+						i(9867),	-- Renegade Cloak
+						i(9833),	-- Scaled Leather Leggings
+						i(9825),	-- Durable Pants
+						i(7366),	-- Elder's Gloves
+						i(7367),	-- Elder's Mantle
+						i(7421),	-- Phalanx Gauntlets
+						i(10406),	-- Scaled Leather Headband
+						i(9835),	-- Scaled Leather Tunic
+						i(9826),	-- Durable Robe
+						i(9824),	-- Durable Shoulders
+						i(7422),	-- Phalanx Girdle
+						i(6609),	-- Sage's Cloth
+						i(6610),	-- Sage's Robe
+						i(10289),	-- Durable Hat
+						i(7368),	-- Elder's Pants
+						i(9857),	-- Archer's Bracers
+						i(7417),	-- Phalanx Boots
+						i(6616),	-- Sage's Pants
+						i(9855),	-- Archer's Belt
+						i(9842),	-- Banded Pauldrons
+						i(9853),	-- Conjurer's Cinch
+						i(10409),	-- Banded Boots
+						i(10408),	-- Banded Helm
+						i(9819),	-- Durable Tunic
+						i(7406),	-- Infiltrator Cord
+						i(7412),	-- Infiltrator Gloves
+						i(9868),	-- Renegade Gauntlets
+						i(7438),	-- Twilight Belt
+						i(9841),	-- Banded Leggings
+						i(7407),	-- Infiltrator Armor
+						i(7460),	-- Knight's Cloak
+						i(9860),	-- Archer's Cloak
+						i(9845),	-- Conjurer's Shoes
+						i(7357),	-- Elder's Hat
+						i(9865),	-- Renegade Bracers
+						i(9834),	-- Scaled Leather Shoulders
+						i(7414),	-- Infiltrator Pants
 					}), 
 					n(2541, { 	-- Lord Sakrasis
-						dr(05.0, i(9828)),	-- Scaled Leather Boots
-						dr(05.0, i(9832)),	-- Scaled Leather Gloves
-						dr(04.0, i(9839)),	-- Banded Gauntlets
-						dr(04.0, i(9820)),	-- Durable Boots
-						dr(04.0, i(7411)),	-- Infiltrator Cloak
-						dr(04.0, i(10288)),	-- Sage's Circlet
-						dr(03.0, i(9840)),	-- Banded Girdle
-						dr(03.0, i(6607)),	-- Dervish Leggings
-						dr(03.0, i(10404)),	-- Durable Belt
-						dr(03.0, i(9823)),	-- Durable Gloves
-						dr(03.0, i(7355)),	-- Elder's Bracers
-						dr(03.0, i(7370)),	-- Elder's Sash
-						dr(03.0, i(7410)),	-- Infiltrator Bracers
-						dr(03.0, i(7416)),	-- Phalanx Bracers
-						dr(03.0, i(6617)),	-- Sage's Mantle
-						dr(02.0, i(9837)),	-- Banded Bracers
-						dr(02.0, i(6603)),	-- Dervish Tunic
-						dr(02.0, i(9821)),	-- Durable Bracers
-						dr(02.0, i(7356)),	-- Elder's Cloak
-						dr(02.0, i(7419)),	-- Phalanx Cloak
-						dr(02.0, i(9827)),	-- Scaled Leather Belt
-						dr(01.6, i(7413)),	-- Infiltrator Cap
-						dr(01.4, i(6610)),	-- Sage's Robe
-						dr(01.3, i(9842)),	-- Banded Pauldrons
-						dr(01.2, i(7412)),	-- Infiltrator Gloves
-						dr(01.2, i(7422)),	-- Phalanx Girdle
-						dr(01.1, i(7366)),	-- Elder's Gloves
-						dr(01.1, i(7424)),	-- Phalanx Spaulders
-						dr(01.1, i(6616)),	-- Sage's Pants
-						dr(01.1, i(9835)),	-- Scaled Leather Tunic
-						dr(01.0, i(10289)),	-- Durable Hat
-						dr(01.0, i(7406)),	-- Infiltrator Cord
-						dr(00.5, i(5029)),	-- Talisman of the Naga Lord
+						i(9828),	-- Scaled Leather Boots
+						i(9832),	-- Scaled Leather Gloves
+						i(9839),	-- Banded Gauntlets
+						i(9820),	-- Durable Boots
+						i(7411),	-- Infiltrator Cloak
+						i(10288),	-- Sage's Circlet
+						i(9840),	-- Banded Girdle
+						i(6607),	-- Dervish Leggings
+						i(10404),	-- Durable Belt
+						i(9823),	-- Durable Gloves
+						i(7355),	-- Elder's Bracers
+						i(7370),	-- Elder's Sash
+						i(7410),	-- Infiltrator Bracers
+						i(7416),	-- Phalanx Bracers
+						i(6617),	-- Sage's Mantle
+						i(9837),	-- Banded Bracers
+						i(6603),	-- Dervish Tunic
+						i(9821),	-- Durable Bracers
+						i(7356),	-- Elder's Cloak
+						i(7419),	-- Phalanx Cloak
+						i(9827),	-- Scaled Leather Belt
+						i(7413),	-- Infiltrator Cap
+						i(6610),	-- Sage's Robe
+						i(9842),	-- Banded Pauldrons
+						i(7412),	-- Infiltrator Gloves
+						i(7422),	-- Phalanx Girdle
+						i(7366),	-- Elder's Gloves
+						i(7424),	-- Phalanx Spaulders
+						i(6616),	-- Sage's Pants
+						i(9835),	-- Scaled Leather Tunic
+						i(10289),	-- Durable Hat
+						i(7406),	-- Infiltrator Cord
+						i(5029),	-- Talisman of the Naga Lord
 						un(7, i(5028)),	-- Lord Sakrasis' Scepter
 					}), 
 					n(14490, { 	-- Rippa
-						dr(04.0, i(7533)),	-- Cabalist Cloak
-						dr(04.0, i(9907)),	-- Royal Boots
-						dr(04.0, i(9908)),	-- Royal Cape
-						dr(03.0, i(9932)),	-- Brigade Circlet
-						dr(03.0, i(7486)),	-- Captain's Breastplate
-						dr(03.0, i(7544)),	-- Champion's Cape
-						dr(03.0, i(7524)),	-- Gossamer Cape
-						dr(03.0, i(9906)),	-- Royal Sash
-						dr(03.0, i(9917)),	-- Tracker's Boots
-						dr(03.0, i(9920)),	-- Tracker's Gloves
-						dr(03.0, i(9925)),	-- Tracker's Wristguards
-						dr(02.0, i(9930)),	-- Brigade Gauntlets
-						dr(02.0, i(9970)),	-- Embossed Plate Leggings
-						dr(02.0, i(9286)),	-- Field Plate Armor
-						dr(02.0, i(9291)),	-- Field Plate Leggings
-						dr(02.0, i(7469)),	-- Regal Leggings
-						dr(02.0, i(9916)),	-- Tracker's Belt
-						dr(01.8, i(9934)),	-- Brigade Pauldrons
-						dr(01.8, i(9909)),	-- Royal Bands
-						dr(01.7, i(9910)),	-- Royal Gloves
-						dr(01.6, i(9926)),	-- Brigade Boots
-						dr(01.6, i(9969)),	-- Embossed Plate Helmet
-						dr(01.5, i(9966)),	-- Embossed Plate Armor
-						dr(01.4, i(7487)),	-- Captain's Leggings
-						dr(01.4, i(7478)),	-- Ranger Leggings
-						dr(01.3, i(7531)),	-- Cabalist Boots
-						dr(01.3, i(9971)),	-- Embossed Plate Pauldrons
-						dr(01.3, i(9874)),	-- Sorcerer Drape
-						dr(01.2, i(9931)),	-- Brigade Girdle
-						dr(01.2, i(7491)),	-- Captain's Shoulderguards
-						dr(01.2, i(9887)),	-- Huntsman's Armor
-						dr(01.2, i(9919)),	-- Tracker's Cloak
-						dr(01.1, i(9884)),	-- Sorcerer Robe
-						dr(01.0, i(9933)),	-- Brigade Leggings
-						dr(01.0, i(7535)),	-- Cabalist Belt
-						dr(01.0, i(9967)),	-- Embossed Plate Gauntlets
-						dr(01.0, i(10090)),	-- Gothic Plate Helmet
-						dr(01.0, i(9959)),	-- Warmonger's Cloak
+						i(7533),	-- Cabalist Cloak
+						i(9907),	-- Royal Boots
+						i(9908),	-- Royal Cape
+						i(9932),	-- Brigade Circlet
+						i(7486),	-- Captain's Breastplate
+						i(7544),	-- Champion's Cape
+						i(7524),	-- Gossamer Cape
+						i(9906),	-- Royal Sash
+						i(9917),	-- Tracker's Boots
+						i(9920),	-- Tracker's Gloves
+						i(9925),	-- Tracker's Wristguards
+						i(9930),	-- Brigade Gauntlets
+						i(9970),	-- Embossed Plate Leggings
+						i(9286),	-- Field Plate Armor
+						i(9291),	-- Field Plate Leggings
+						i(7469),	-- Regal Leggings
+						i(9916),	-- Tracker's Belt
+						i(9934),	-- Brigade Pauldrons
+						i(9909),	-- Royal Bands
+						i(9910),	-- Royal Gloves
+						i(9926),	-- Brigade Boots
+						i(9969),	-- Embossed Plate Helmet
+						i(9966),	-- Embossed Plate Armor
+						i(7487),	-- Captain's Leggings
+						i(7478),	-- Ranger Leggings
+						i(7531),	-- Cabalist Boots
+						i(9971),	-- Embossed Plate Pauldrons
+						i(9874),	-- Sorcerer Drape
+						i(9931),	-- Brigade Girdle
+						i(7491),	-- Captain's Shoulderguards
+						i(9887),	-- Huntsman's Armor
+						i(9919),	-- Tracker's Cloak
+						i(9884),	-- Sorcerer Robe
+						i(9933),	-- Brigade Leggings
+						i(7535),	-- Cabalist Belt
+						i(9967),	-- Embossed Plate Gauntlets
+						i(10090),	-- Gothic Plate Helmet
+						i(9959),	-- Warmonger's Cloak
 					}), 
 					n(1552, { 	-- Scale Belly
-						dr(05.0, i(7370)),	-- Elder's Sash
-						dr(04.0, i(9837)),	-- Banded Bracers
-						dr(04.0, i(7410)),	-- Infiltrator Bracers
-						dr(04.0, i(9828)),	-- Scaled Leather Boots
-						dr(03.0, i(9839)),	-- Banded Gauntlets
-						dr(03.0, i(9840)),	-- Banded Girdle
-						dr(03.0, i(6603)),	-- Dervish Tunic
-						dr(03.0, i(10404)),	-- Durable Belt
-						dr(03.0, i(9820)),	-- Durable Boots
-						dr(03.0, i(9823)),	-- Durable Gloves
-						dr(03.0, i(7355)),	-- Elder's Bracers
-						dr(03.0, i(7356)),	-- Elder's Cloak
-						dr(03.0, i(7411)),	-- Infiltrator Cloak
-						dr(03.0, i(7416)),	-- Phalanx Bracers
-						dr(03.0, i(10288)),	-- Sage's Circlet
-						dr(03.0, i(9827)),	-- Scaled Leather Belt
-						dr(03.0, i(9832)),	-- Scaled Leather Gloves
-						dr(02.0, i(6607)),	-- Dervish Leggings
-						dr(02.0, i(9821)),	-- Durable Bracers
-						dr(02.0, i(7357)),	-- Elder's Hat
-						dr(02.0, i(7419)),	-- Phalanx Cloak
-						dr(02.0, i(6617)),	-- Sage's Mantle
-						dr(01.5, i(9833)),	-- Scaled Leather Leggings
-						dr(01.4, i(9834)),	-- Scaled Leather Shoulders
-						dr(01.2, i(9857)),	-- Archer's Bracers
-						dr(01.2, i(9842)),	-- Banded Pauldrons
-						dr(01.2, i(7366)),	-- Elder's Gloves
-						dr(01.2, i(9867)),	-- Renegade Cloak
-						dr(01.1, i(9841)),	-- Banded Leggings
-						dr(01.1, i(7406)),	-- Infiltrator Cord
-						dr(01.1, i(7412)),	-- Infiltrator Gloves
-						dr(01.0, i(9853)),	-- Conjurer's Cinch
-						dr(01.0, i(7422)),	-- Phalanx Girdle
-						i(4478),	-- Iridescent Scale Leggings	
-						i(1604),	-- Chromatic Sword			
+						i(7370),	-- Elder's Sash
+						i(9837),	-- Banded Bracers
+						i(7410),	-- Infiltrator Bracers
+						i(9828),	-- Scaled Leather Boots
+						i(9839),	-- Banded Gauntlets
+						i(9840),	-- Banded Girdle
+						i(6603),	-- Dervish Tunic
+						i(10404),	-- Durable Belt
+						i(9820),	-- Durable Boots
+						i(9823),	-- Durable Gloves
+						i(7355),	-- Elder's Bracers
+						i(7356),	-- Elder's Cloak
+						i(7411),	-- Infiltrator Cloak
+						i(7416),	-- Phalanx Bracers
+						i(10288),	-- Sage's Circlet
+						i(9827),	-- Scaled Leather Belt
+						i(9832),	-- Scaled Leather Gloves
+						i(6607),	-- Dervish Leggings
+						i(9821),	-- Durable Bracers
+						i(7357),	-- Elder's Hat
+						i(7419),	-- Phalanx Cloak
+						i(6617),	-- Sage's Mantle
+						i(9833),	-- Scaled Leather Leggings
+						i(9834),	-- Scaled Leather Shoulders
+						i(9857),	-- Archer's Bracers
+						i(9842),	-- Banded Pauldrons
+						i(7366),	-- Elder's Gloves
+						i(9867),	-- Renegade Cloak
+						i(9841),	-- Banded Leggings
+						i(7406),	-- Infiltrator Cord
+						i(7412),	-- Infiltrator Gloves
+						i(9853),	-- Conjurer's Cinch
+						i(7422),	-- Phalanx Girdle
+						i(4478),	-- Iridescent Scale Leggings
+						i(1604),	-- Chromatic Sword
 					}), 
 					n(14492, { 	-- Verifonix
-						dr(28.0, i(9867)),	-- Renegade Cloak
-						dr(04.0, i(7423)),	-- Phalanx Leggings
-						dr(03.0, i(9860)),	-- Archer's Cloak
-						dr(03.0, i(9853)),	-- Conjurer's Cinch
-						dr(03.0, i(7357)),	-- Elder's Hat
-						dr(03.0, i(7460)),	-- Knight's Cloak
-						dr(02.0, i(9857)),	-- Archer's Bracers
-						dr(02.0, i(9826)),	-- Durable Robe
-						dr(02.0, i(9819)),	-- Durable Tunic
-						dr(02.0, i(7368)),	-- Elder's Pants
-						dr(02.0, i(7414)),	-- Infiltrator Pants
-						dr(02.0, i(7417)),	-- Phalanx Boots
-						dr(02.0, i(9865)),	-- Renegade Bracers
-						dr(01.6, i(7461)),	-- Knight's Bracers
-						dr(01.5, i(9861)),	-- Archer's Gloves
-						dr(01.4, i(9836)),	-- Banded Armor
-						dr(01.4, i(7418)),	-- Phalanx Breastplate
-						dr(01.2, i(9845)),	-- Conjurer's Shoes
-						dr(01.2, i(9825)),	-- Durable Pants
-						dr(01.2, i(7367)),	-- Elder's Mantle
-						dr(01.2, i(7424)),	-- Phalanx Spaulders
-						dr(01.2, i(9868)),	-- Renegade Gauntlets
-						dr(01.2, i(9833)),	-- Scaled Leather Leggings
-						dr(01.1, i(9855)),	-- Archer's Belt
-						dr(01.1, i(9846)),	-- Conjurer's Bracers
-						dr(01.1, i(7353)),	-- Elder's Padded Armor
-						dr(01.1, i(7369)),	-- Elder's Robe
-						dr(01.1, i(7407)),	-- Infiltrator Armor
-						dr(01.1, i(7409)),	-- Infiltrator Boots
-						dr(01.1, i(9835)),	-- Scaled Leather Tunic
-						dr(01.0, i(9847)),	-- Conjurer's Cloak
-						dr(01.0, i(7354)),	-- Elder's Boots
-						dr(01.0, i(7413)),	-- Infiltrator Cap
-						dr(01.0, i(7408)),	-- Infiltrator Shoulders
-						dr(01.0, i(9869)),	-- Renegade Belt
-						dr(01.0, i(7436)),	-- Twilight Cape
+						i(9867),	-- Renegade Cloak
+						i(7423),	-- Phalanx Leggings
+						i(9860),	-- Archer's Cloak
+						i(9853),	-- Conjurer's Cinch
+						i(7357),	-- Elder's Hat
+						i(7460),	-- Knight's Cloak
+						i(9857),	-- Archer's Bracers
+						i(9826),	-- Durable Robe
+						i(9819),	-- Durable Tunic
+						i(7368),	-- Elder's Pants
+						i(7414),	-- Infiltrator Pants
+						i(7417),	-- Phalanx Boots
+						i(9865),	-- Renegade Bracers
+						i(7461),	-- Knight's Bracers
+						i(9861),	-- Archer's Gloves
+						i(9836),	-- Banded Armor
+						i(7418),	-- Phalanx Breastplate
+						i(9845),	-- Conjurer's Shoes
+						i(9825),	-- Durable Pants
+						i(7367),	-- Elder's Mantle
+						i(7424),	-- Phalanx Spaulders
+						i(9868),	-- Renegade Gauntlets
+						i(9833),	-- Scaled Leather Leggings
+						i(9855),	-- Archer's Belt
+						i(9846),	-- Conjurer's Bracers
+						i(7353),	-- Elder's Padded Armor
+						i(7369),	-- Elder's Robe
+						i(7407),	-- Infiltrator Armor
+						i(7409),	-- Infiltrator Boots
+						i(9835),	-- Scaled Leather Tunic
+						i(9847),	-- Conjurer's Cloak
+						i(7354),	-- Elder's Boots
+						i(7413),	-- Infiltrator Cap
+						i(7408),	-- Infiltrator Shoulders
+						i(9869),	-- Renegade Belt
+						i(7436),	-- Twilight Cape
 					}),
 				}),	
 				n(0,   {	-- Zone Drop

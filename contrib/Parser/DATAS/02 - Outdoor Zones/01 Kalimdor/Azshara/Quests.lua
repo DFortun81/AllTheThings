@@ -491,6 +491,40 @@ _.Zones =
 							},
 						},
 					},
+					q(40112, {	-- Huln's War - Malorne's Favored
+						["sourceQuests"] = { 39983 },	-- Huln's War: The Arrival
+						["coord"] = { 29.5, 39.2, 697 },
+						["lvl"] = 98,
+						["qg"] = 97891,	-- Unng Ak
+					}),
+					q(39990, {	-- Huln's War - Reinforcements
+						["sourceQuests"] = { 39988 },	-- Huln's War - Stormrage
+						["coord"] = { 27.8, 51.6, 697 },
+						["lvl"] = 98,
+						["qg"] = 97892,	-- Malfurion Stormrage
+					}),
+					q(40388, {	-- Huln's War - Shadowsong
+						["sourceQuests"] = { 39990 },	-- Huln's War - Reinforcements
+						["coord"] = { 27.8, 51.7, 697 },
+						["lvl"] = 98,
+						["qg"] = 97892,	-- Malfurion Stormrage
+					}),
+					q(39988, {	-- Huln's War - Stormrage
+						["sourceQuests"] = { 40112 },	-- Huln's War - Malorne's Favored
+						["coord"] = { 27.9, 47.2, 697 },
+						["lvl"] = 98,
+						["qg"] = 98794,	-- Eche'ro
+					}),
+					q(39992, {	-- Huln's War - The Nathrezim
+						["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
+						["coord"] = { 31.2, 52.4, 697 },
+						["lvl"] = 98,
+						["qg"] = 97903,	-- Jarod Shadowsong
+						["g"] = {
+							i(130282),	-- Highmountain Trueshot Cape
+							i(130309),	-- Band of Malorne's Chosen
+						},
+					}),
 					{	-- Ice Cold
 						["questID"] = 14261,
 						["qg"] = 37064,	-- Feno Blastnoggin

@@ -510,7 +510,10 @@ _.Zones =
 								["coord"] = { 46.6, 49.4, 649 },
 								["qg"] = 97480,	-- Ashildir
 							}),
-						--	sq(39849, qg(97319, q(39852))),	-- [PH] Collect Weapons / Ashildir <Queen of the Valkyra>
+							q(39852, {	-- [PH] Collect Weapons
+								["u"] = 1,
+								["qg"] = 97319,	-- Ashildir
+							}),
 							q(39853, {	-- Victory is Eternal
 								["sourceQuests"] = {
 									39851,	-- Allies in Death
@@ -559,7 +562,6 @@ _.Zones =
 									i(144437, {	-- Lost Legend of the Valarjar
 										["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 										["classes"] = {1},
-										["dr"] = 100,
 										["g"] = {
 											q(46229, {	-- Valarjar Lore Unlock 1
 												["description"] = "His Name Is Dragonblood",
@@ -2066,7 +2068,9 @@ _.Zones =
 					}),				  
 				--[[ These quests will be organized soon™
 					q(44720),	-- A Call to Action
-					qart(qg(117394, q(45534))),	-- A Common Enemy
+					qart(q(45534, {	-- A Common Enemy
+						["qg"] = 117394,	-- Sigryn
+					})),
 					q(40614),	-- A Feast Fit for Odyn
 					q(40078),	-- A Heavy Burden
 					q(44771),	-- A Threat Rises

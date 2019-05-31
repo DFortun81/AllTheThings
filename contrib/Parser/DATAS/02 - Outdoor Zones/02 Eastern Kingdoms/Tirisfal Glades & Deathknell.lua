@@ -439,124 +439,124 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(1911, { 	-- Deeb
-						dr(13, i(68743)),	-- Imbued Infantry Cloak
-						dr(10, i(68744)),	-- Imbued Pioneer Cloak
-						dr(4, i(6267)),		-- Disciple's Pants
-						dr(4, i(6337)),		-- Infantry Leggings
-						dr(4, i(6269)),		-- Pioneer Trousers
-						dr(3, i(68761)),	-- Imbued Infantry Boots
-						dr(1.4, i(68751)),	-- Imbued Pioneer Bracers
-						dr(1.3, i(68752)),	-- Imbued Infantry Belt
-						dr(1.2, i(6268)),	-- Pioneer Tunic
-						dr(1.1, i(68749)),	-- Imbued Disciple's Bracers
-						dr(1.1, i(68758)),	-- Imbued Pioneer Boots
-						dr(1, i(6336)),		-- Infantry Tunic
-						dr(1, i(6543)),		-- Willow Bracers
-						dr(0.9, i(9763)),	-- Cadet Leggings
-						dr(0.9, i(6512)),	-- Disciple's Robe
+						i(68743),	-- Imbued Infantry Cloak
+						i(68744),	-- Imbued Pioneer Cloak
+						i(6267),	-- Disciple's Pants
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(68761),	-- Imbued Infantry Boots
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68752),	-- Imbued Infantry Belt
+						i(6268),	-- Pioneer Tunic
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68758),	-- Imbued Pioneer Boots
+						i(6336),	-- Infantry Tunic
+						i(6543),	-- Willow Bracers
+						i(9763),	-- Cadet Leggings
+						i(6512),	-- Disciple's Robe
 						un(7, i(4303)),	-- Cranial Thumper
 					}),
 					o(240624, {	-- Faerie Dragon Nest
+						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
+						["icon"] = "Interface\\Icons\\INV_FaerieDragonMount",
 						["g"] = {
 							i(122234)	-- Music Roll: Faerie Dragon
 						},
-						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
-						["icon"] = "Interface\\Icons\\INV_FaerieDragonMount"
 					}),
 					n(10358, { 	-- Fellicent's Shade
-						dr(8, i(6267)),		-- Disciple's Pants
-						dr(6, i(6269)),		-- Pioneer Trousers
-						dr(5, i(6337)),		-- Infantry Leggings
-						dr(4, i(68762)),	-- Imbued Cadet Cloak
-						dr(4, i(68761)),	-- Imbued Infantry Boots
-						dr(4, i(6268)),		-- Pioneer Tunic
-						dr(3, i(68754)),	-- Imbued Disciple's Boots
-						dr(3, i(68755)),	-- Imbued Disciple's Gloves
-						dr(3, i(68759)),	-- Imbued Gypsy Cloak
-						dr(3, i(68752)),	-- Imbued Infantry Belt
-						dr(3, i(68758)),	-- Imbued Pioneer Boots
-						dr(3, i(68757)),	-- Imbued Pioneer Gloves
-						dr(2, i(6512)),		-- Disciple's Robe
-						dr(2, i(9756)),		-- Gypsy Trousers
-						dr(2, i(68749)),	-- Imbued Disciple's Bracers
-						dr(2, i(68760)),	-- Imbued Infantry Gauntlets
-						dr(2, i(68750)),	-- Imbued Pioneer Belt
-						dr(2, i(68751)),	-- Imbued Pioneer Bracers
-						dr(1.9, i(68748)),	-- Imbued Disciple's Cloak
-						dr(1.8, i(6266)),	-- Disciple's Vest
-						dr(1.7, i(68753)),	-- Imbued Infantry Bracers
-						dr(1.5, i(68747)),	-- Imbued Disciple's Sash
-						dr(1.4, i(9747)),	-- Simple Britches
-						dr(1.4, i(9763)),	-- Cadet Leggings
-						dr(1.4, i(6336)),	-- Infantry Tunic
+						i(6267),	-- Disciple's Pants
+						i(6269),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(68762),	-- Imbued Cadet Cloak
+						i(68761),	-- Imbued Infantry Boots
+						i(6268),	-- Pioneer Tunic
+						i(68754),	-- Imbued Disciple's Boots
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68758),	-- Imbued Pioneer Boots
+						i(68757),	-- Imbued Pioneer Gloves
+						i(6512),	-- Disciple's Robe
+						i(9756),	-- Gypsy Trousers
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68760),	-- Imbued Infantry Gauntlets
+						i(68750),	-- Imbued Pioneer Belt
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(6266),	-- Disciple's Vest
+						i(68753),	-- Imbued Infantry Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(9747),	-- Simple Britches
+						i(9763),	-- Cadet Leggings
+						i(6336),	-- Infantry Tunic
 					}),
 					n(50908, { 	-- Nighthowl
-						dr(19, i(68744)),	-- Imbued Pioneer Cloak
-						dr(11, i(68743)),	-- Imbued Infantry Cloak
-						dr(7, i(68761)),	-- Imbued Infantry Boots
-						dr(6, i(68754)),	-- Imbued Disciple's Boots
-						dr(5, i(6337)),		-- Infantry Leggings
-						dr(1.3, i(6269)),	-- Pioneer Trousers
-						dr(0.9, i(68758)),	-- Imbued Pioneer Boots
-						dr(0.9, i(68751)),	-- Imbued Pioneer Bracers
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68743),	-- Imbued Infantry Cloak
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(68758),	-- Imbued Pioneer Boots
+						i(68751),	-- Imbued Pioneer Bracers
 					}),
 					n(10357, { 	-- Ressan the Needler
-						dr(20, i(68744)),	-- Imbued Pioneer Cloak
-						dr(19, i(68743)),	-- Imbued Infantry Cloak
-						dr(3, i(6267)),		-- Disciple's Pants
-						dr(3, i(68750)),	-- Imbued Pioneer Belt
-						dr(2, i(68749)),	-- Imbued Disciple's Bracers
-						dr(2, i(68748)),	-- Imbued Disciple's Cloak
-						dr(2, i(68747)),	-- Imbued Disciple's Sash
-						dr(2, i(6269)),		-- Pioneer Trousers
-						dr(1.9, i(68752)),	-- Imbued Infantry Belt
-						dr(1.8, i(68753)),	-- Imbued Infantry Bracers
-						dr(1.8, i(68751)),	-- Imbued Pioneer Bracers
-						dr(1.8, i(6337)),	-- Infantry Leggings
-						dr(1.6, i(68758)),	-- Imbued Pioneer Boots
-						dr(1.4, i(68762)),	-- Imbued Cadet Cloak
-						dr(1.3, i(68755)),	-- Imbued Disciple's Gloves
-						dr(1.3, i(68757)),	-- Imbued Pioneer Gloves
-						dr(1.2, i(68760)),	-- Imbued Infantry Gauntlets
-						dr(1.1, i(68754)),	-- Imbued Disciple's Boots
-						dr(1.1, i(68759)),	-- Imbued Gypsy Cloak
-						dr(1, i(68761)),	-- Imbued Infantry Boots
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68743),	-- Imbued Infantry Cloak
+						i(6267),	-- Disciple's Pants
+						i(68750),	-- Imbued Pioneer Belt
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68747),	-- Imbued Disciple's Sash
+						i(6269),	-- Pioneer Trousers
+						i(68752),	-- Imbued Infantry Belt
+						i(68753),	-- Imbued Infantry Bracers
+						i(68751),	-- Imbued Pioneer Bracers
+						i(6337),	-- Infantry Leggings
+						i(68758),	-- Imbued Pioneer Boots
+						i(68762),	-- Imbued Cadet Cloak
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68760),	-- Imbued Infantry Gauntlets
+						i(68754),	-- Imbued Disciple's Boots
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68761),	-- Imbued Infantry Boots
 					}),
 					n(10359, { 	-- Sri'skulk
-						dr(10, i(68743)),	-- Imbued Infantry Cloak
-						dr(10, i(68744)),	-- Imbued Pioneer Cloak
-						dr(6, i(68750)),	-- Imbued Pioneer Belt
-						dr(6, i(68751)),	-- Imbued Pioneer Bracers
-						dr(5, i(68749)),	-- Imbued Disciple's Bracers
-						dr(5, i(68748)),	-- Imbued Disciple's Cloak
-						dr(5, i(68752)),	-- Imbued Infantry Belt
-						dr(5, i(68753)),	-- Imbued Infantry Bracers
-						dr(4, i(68747)),	-- Imbued Disciple's Sash
-						dr(4, i(6337)),		-- Infantry Leggings
-						dr(4, i(6269)),		-- Pioneer Trousers
-						dr(3, i(6267)),		-- Disciple's Pants
-						dr(2, i(6512)),		-- Disciple's Robe
-						dr(2, i(6336)),		-- Infantry Tunic
-						dr(2, i(6268)),		-- Pioneer Tunic
-						dr(1.9, i(68761)),	-- Imbued Infantry Boots
-						dr(1.8, i(68754)),	-- Imbued Disciple's Boots
-						dr(1.6, i(68759)),	-- Imbued Gypsy Cloak
-						dr(1.6, i(68758)),	-- Imbued Pioneer Boots
-						dr(1.5, i(68760)),	-- Imbued Infantry Gauntlets
-						dr(1.4, i(68755)),	-- Imbued Disciple's Gloves
-						dr(1.3, i(6266)),	-- Disciple's Vest
-						dr(1.1, i(68762)),	-- Imbued Cadet Cloak
-						dr(1.1, i(68757)),	-- Imbued Pioneer Gloves
-						dr(0.9, i(9749)),	-- Simple Blouse
+						i(68743),	-- Imbued Infantry Cloak
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68750),	-- Imbued Pioneer Belt
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68753),	-- Imbued Infantry Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(6337),	-- Infantry Leggings
+						i(6269),	-- Pioneer Trousers
+						i(6267),	-- Disciple's Pants
+						i(6512),	-- Disciple's Robe
+						i(6336),	-- Infantry Tunic
+						i(6268),	-- Pioneer Tunic
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(68759),	-- Imbued Gypsy Cloak
+						i(68758),	-- Imbued Pioneer Boots
+						i(68760),	-- Imbued Infantry Gauntlets
+						i(68755),	-- Imbued Disciple's Gloves
+						i(6266),	-- Disciple's Vest
+						i(68762),	-- Imbued Cadet Cloak
+						i(68757),	-- Imbued Pioneer Gloves
+						i(9749),	-- Simple Blouse
 					}),
 					n(1533, { 	-- Tormented Spirit
-						dr(8, i(68744)),	-- Imbued Pioneer Cloak
-						dr(7, i(68743)),	-- Imbued Infantry Cloak
-						dr(1.4, i(6269)),	-- Pioneer Trousers
-						dr(1.3, i(68751)),	-- Imbued Pioneer Bracers
-						dr(1.1, i(68752)),	-- Imbued Infantry Belt
-						dr(0.9, i(68749)),	-- Imbued Disciple's Bracers
-						dr(0.9, i(68748)),	-- Imbued Disciple's Cloak
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68743),	-- Imbued Infantry Cloak
+						i(6269),	-- Pioneer Trousers
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68752),	-- Imbued Infantry Belt
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68748),	-- Imbued Disciple's Cloak
 					}),
 --[[
 --					n(1531, {	-- Lost Soul	}),

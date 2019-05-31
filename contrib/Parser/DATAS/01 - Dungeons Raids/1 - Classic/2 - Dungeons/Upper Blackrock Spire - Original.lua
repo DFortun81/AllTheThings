@@ -158,7 +158,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				n(10339, { 	-- Gyth
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
-					i(12871, { 	-- Chromatic Carapace
+					un(2, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
 							un(2, i(12903)), 	-- Legguards of the Chromatic Defier
 							un(2, i(12945)),	-- Legplates of the Chromatic Defier
@@ -166,7 +166,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(5166, { 	-- Breastplate of the Chromatic Flight
 							un(2, i(12895)), 	-- Breastplate of the Chromatic Flight
 						}),
-					}),
+					})),
 					un(2, i(12953)),	-- Dragoneye Coif
 					un(2, i(22225)), 	-- Dragonskin Cowl
 					un(2, i(12952)),	-- Gyth's Skull

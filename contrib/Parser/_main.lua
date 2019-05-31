@@ -631,46 +631,10 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-dr = function(dropRate, t)										-- Add a Drop Rate to an object.
-	if t and t.itemID then
-		t.dr = dropRate;
-		return t;
-	else
-		--print("YOU CAN'T APPLY A DROP RATE TO A NON-OBJECT");
-		for i,group in pairs(t) do
-			if type(group) == "table" then
-				group.dr = dropRate;
-			end
-		end
-		return {
-			["bubble"] = true, -- This will tell the constructor to "bubble up" the objects in t.
-			["groups"] = t
-		};
-	end
-end
 h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
-qg = function(id, t)											-- Add a Quest Giver to an object.
-	if type(id) == "number" then
-		t.qg = id;
-	else
-		t.qgs = id;
-	end
-	return t;
-end
-qgs = qg;														-- Add a Quest Giver to an object. (Alternative)
-races = function(races, t) t.races = races; return t; end		-- Make an object only available for a set number of races.
-sq = function(id, t)											-- Add a 'sourceQuests' field to an object.
-	if type(id) == "number" then
-		t.sourceQuest = id;
-	else
-		t.sourceQuests = id;
-	end
-	return t;
-end
-style = function(s, t) t.style = s; return t; end				-- Stylize an object.
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
 
@@ -695,7 +659,6 @@ model = function(displayID, t)
 end
 na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
 nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
-nld = function(t) return n(-40, t); end						-- Legacy dungeon items header
 
 -- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
 qart = function(t)						-- Gives a quest the Artifact Description
@@ -711,11 +674,6 @@ end
 qpvp = function(t)						-- Gives a quest the PvP Description
 	t.description = "This quest is a PvP quest.";
 	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
-	return t;
-end
-qwe = function(t)						-- Gives a quest the World Event Description
-	t.description = "This quest requires a specific world event to be active.";
-	t.icon = "Interface\\Worldmap\\QuestionMark_Gold_64Grey";
 	return t;
 end
 -- End Specific Quest Types

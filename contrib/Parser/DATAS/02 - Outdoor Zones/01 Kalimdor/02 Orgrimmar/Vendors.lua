@@ -2173,8 +2173,8 @@ _.Zones =
 						["g"] = {
 							h(ach(5477, {	-- Fish or Cut Bait: Orgrimmar
 								i(67414, {	-- Bag of Shiny Things
-									dr(1.1, i(44983)),	-- Strand Crawler
-									dr(1.1, i(33820)),	-- Weather-Beaten Fishing Hat
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
 								}),
 							})),
 						},

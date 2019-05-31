@@ -1749,6 +1749,8 @@ _.Zones =
 				n(-34, { 	-- World Quests
 					["g"] = {
 						i(134275),	-- Nightborne's Jeweled Necklace
+						i(140026),	-- The devilsaur's bite (melee version)
+						i(140030),	-- devilsaur shock-baton (caster version)
 						n(-322, {	-- Cloak
 							i(121798),	-- Moon Guard Drape
 							i(134290),	-- Nightborne Noble's Cloak

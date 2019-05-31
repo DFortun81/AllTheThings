@@ -145,7 +145,6 @@ _.Instances = { tier(7, {	-- Legion
 					{
 						["itemID"] = 139895,	-- Skinning Technique: Legion Butchery
 						["collectible"] = false,
-						["dr"] = 100,
 						["groups"] = {
 							recipe(194173),	-- Legion Butchery
 						},

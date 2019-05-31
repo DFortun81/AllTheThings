@@ -3,8 +3,10 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
+			["achievementID"] = 10667,
+			["description"] = "|cff66ccffHighmountain is a zone that dominates the northern horizon of the Broken Isles with its jagged peak. It is one of the last great frontiers of the isles, named in honor of Huln Highmountain for his bravery in the War of the Ancients. Following the War against the Iron Horde, the Burning Legion began to invade Azeroth through the Tomb of Sargeras. The tauren of Highmountain, descended from Huln Highmountain and other tauren who had fought in the War of the Ancients, had been living in peace with the local drogbar for generations, but when the Legion invaded, the drogbar stole the tauren's sacred artifact, the [Hammer of Khaz'goroth]. The Highmountain are now at risk of being taken over by the drogbar and their king, Dargrul the Underking, ruling his kin from the former lair of the black aspect Neltharion.|r",
 			["maps"] = {
 				651,	-- Bitestone Enclave
 				652,	-- Thunder Totem
@@ -12,8 +14,8 @@ _.Zones =
 				654,	-- Mucksnout Den
 				655,	-- Lifespring Cavern
 				656,	-- Lifespring Cavern
-				657,	-- Path of Huln
-				658,	-- Path of Huln
+				657,	-- Path of Huln (Floor 1)
+				658,	-- Path of Huln (Floor 2)
 				659, 	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
 				750,	-- Thunder Totem
@@ -22,6 +24,7 @@ _.Zones =
 				870,	-- Highmountain (legion invasion ship 2)
 				1472,	-- The Dragon's Spine (8.2 Heart Forge unlock scenario)
 			},
+			["lvl"] = 98,
 			["g"] = {
 				n(-10067, {	-- Artifacts
 					n(-159, {	-- Daily Event Roll
@@ -1034,7 +1037,7 @@ _.Zones =
 									n(102347, {
 										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
 										["g"] = {
-											dr(95, i(133710)), 	-- Salmon Lure
+											i(133710), 	-- Salmon Lure
 										},
 									}),
 								},
@@ -1220,12 +1223,29 @@ _.Zones =
 						["sourceQuests"] = { 55425 },	-- Dominating the Indomitable
 					}),
 
+					q(40216, {	-- A Hunter at Heart
+						["sourceQuests"] = {
+							40170,	-- Amateur Hour
+							39859,	-- Note-Eating Goats
+						},
+						["coord"] = { 40.0, 52.2, 650 },
+						["qg"] = 94409,	-- Hemet Nesingwary
+					}),
+
+					
 					q(40170, {	-- Amateur Hour
 						["coord"] = { 40.0, 52.2, 650 },
 						["qg"] = 94409,	-- Hemet Nesingwary
 					}),
 
 
+					q(39577, {	-- An Ancient Secret
+						["sourceQuests"] = { 39578 },	-- Titanic Showdown
+						["coord"] = { 48.9, 71.4, 657 },	-- Path of Huln
+						["qg"] = 99190,	-- Spiritwalker Ebonhorn
+					}),
+
+					
 					q(39429, {	-- Assaulting the Haglands
 						["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
 						["coord"] = { 52.3, 36.5, 650 },
@@ -1253,6 +1273,16 @@ _.Zones =
 					}),
 
 
+					q(39392, {	-- Bear Huntin'
+						["sourceQuests"] = {
+							40170,	-- Amateur Hour
+							39859,	-- Note-Eating Goats
+						},
+						["coord"] = { 40.0, 52.2, 650 },
+						["qg"] = 94409,	-- Hemet Nesingwary
+					}),
+
+					
 					q(39043, {	-- Bitestone Enclave
 						["sourceQuests"] = {
 							39025,	-- Grasp of the Underking
@@ -1268,12 +1298,26 @@ _.Zones =
 						["sourceQuests"] = { 55400 },	-- Take My Hand
 					}),
 					
+					q(42630, {	-- Bolas Bastion
+						["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
+						["coord"] = { 43.0, 39.3, 650 },
+						["qg"] = 107660,	-- Bolas Skyfeather
+					}),
+					
+					
 					q(39768, {	-- Candle to the Grave
 						["coord"] = { 54.7, 45.0, 650 },
 						["qg"] = 96984,	-- Oenia Skyhorn
 					}),
 
 
+					q(42622, {	-- Ceremonial Drums
+						["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
+						["coord"] = { 53.4, 78.0, 652 },	-- Thunder Totem
+						["qg"] = 108017,	-- Torv Dubstomp
+					}),
+
+					
 					q(39670, {	-- Critter Scatter Shot
 						["coord"] = { 57.5, 56.6, 650 },
 						["qg"] = 96513,	-- Razik Gazbolt
@@ -1333,6 +1377,25 @@ _.Zones =
 						["sourceQuests"] = { 55407 },	-- Calming the Spine
 					}),
 					
+					q(39774, {	-- Demon Detainment
+						["sourceQuests"] = {
+							39764,	-- Shiny, But Deadly
+							39773,	-- The Soulkeeper's Fate
+						},
+						["coord"] = { 30.0, 62.7, 654 },	-- Mucksnout Den
+						["qg"] = 97846,	-- Apprentice Rosalyn
+						["g"] = {
+							i(132091),	-- Warmth of Uriah
+							i(132092),	-- Solace of Uriah
+							i(132093),	-- Courage of Uriah
+							i(132090),	-- Snowblind Waistwrap
+							i(132089),	-- Drogstitch Girdle
+							i(132088),	-- Whitewater Links
+							i(132087),	-- Thunderpeak Greatbelt
+						},
+					}),
+					
+					
 					q(40070, {	-- Eagle Egg Recovery
 						["coord"] = { 50.9, 36.6, 650 },
 						["qg"] = 94068,	-- Oren Windstrider
@@ -1388,6 +1451,13 @@ _.Zones =
 					}),
 
 					
+					q(39373, {	-- Hags of a Feather
+						["sourceQuests"] = { 38912 },	-- The Bloodtotem Tribe
+						["coord"] = { 39.3, 37.0, 650 },
+						["qg"] = 95256,	-- Oakin Ironbull
+					}),
+					
+					
 					q(41094, {	-- Hatchlings of the Talon
 						["coord"] = { 32.2, 66.8, 650 },
 						["qg"] = 97925,	-- Aviana
@@ -1407,6 +1477,13 @@ _.Zones =
 						["qg"] = 98825,	-- Spiritwalker Ebonhorn
 					}),
 
+
+					q(39873, {	-- I Have a Bad Feeling About This
+						["sourceQuests"] = { 38912 },	-- The Bloodtotem Tribe
+						["coord"] = { 39.0, 37.3, 650 },
+						["qg"] = 97667,	-- Navarrogg
+					}),
+
 					
 					q(40047, {	-- I'll Huff, I'll Puff...
 						["coord"] = { 42.7, 10.8, 650 },
@@ -1414,6 +1491,23 @@ _.Zones =
 					}),
 
 
+					q(39867, {	-- I'm Not Lion!
+						["sourceQuests"] = { 39123 },	-- Lion Stalkin'
+						["coord"] = { 39.9, 52.2, 650 },
+						["qg"] = 95438,	-- Ellias
+						["g"] = {
+							i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
+						},
+					}),
+					
+					
+					q(40219, {	-- In Defiance of Deathwing
+						["sourceQuests"] = { 39575 },	-- The Path of Huln
+						["coord"] = { 42.8, 28.7, 657 },	-- Path of Huln
+						["qg"] = 99153,	-- Spiritwalker Ebonhorn
+					}),
+
+					
 					q(39489, {	-- Invading Spelunkers
 						["sourceQuests"] = { 39661 },	-- Lifespring Cavern
 						["coord"] = { 38.4, 61.3, 650 },
@@ -1442,6 +1536,36 @@ _.Zones =
 						},
 						["coord"] = { 41.1, 61.5, 650 },
 						["qg"] = 95956,	-- Jale Rivermane
+					}),
+
+
+					q(39123, {	-- Lion Stalkin'
+						["sourceQuests"] = {
+							40170,	-- Amateur Hour
+							39859,	-- Note-Eating Goats
+						},
+						["coord"] = { 40.0, 52.2, 650 },
+						["qg"] = 94409,	-- Hemet Nesingwary
+					}),
+
+
+					q(39178, {	-- Moose on the Loose
+						["sourceQuests"] = { 39124 },	-- Moose Shootin'
+						["coord"] = { 39.9, 52.2, 650 },
+						["qg"] = 94101,	-- Laeni Silvershot
+						["g"] = {
+							i(141647),	-- Medallion of Morashu
+						},
+					}),
+
+					
+					q(39124, {	-- Moose Shootin'
+						["sourceQuests"] = {
+							40170,	-- Amateur Hour
+							39859,	-- Note-Eating Goats
+						},
+						["coord"] = { 40.0, 52.2, 650 },
+						["qg"] = 94409,	-- Hemet Nesingwary
 					}),
 
 					
@@ -1541,6 +1665,30 @@ _.Zones =
 						["qg"] = 93841,	-- Lasan Skyhorn
 					}),
 
+
+					q(40228, {	-- Scout It Out
+						["sourceQuests"] = { 40216 },	-- A Hunter at Heart
+						["coord"] = { 40.0, 52.2, 650 },
+						["qg"] = 94409,	-- Hemet Nesingwary
+						["g"] = {
+							i(121672),	-- Lead-Studded Robes
+							i(121655),	-- Lead-Studded Vest
+							i(121654),	-- Lead-Studded Chestguard
+							i(121653),	-- Lead-Studded Chestplate
+							i(130276),	-- Pinerock Trader's Amice
+							i(130277),	-- Pinerock Trader's Shoulderpads
+							i(130278),	-- Pinerock Trader's Shoulderguards
+							i(130279),	-- Pinerock Trader's Shoulderplates
+						},
+					}),
+					
+					
+					q(38916, {	-- Secrets of Highmountain
+						["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
+						["coord"] = { 73.4, 74.3, 652 },	-- Thunder Totem
+						["qg"] = 98825,	-- Spiritwalker Ebonhorn
+					}),
+
 					
 					q(39764, {	-- Shiny, But Deadly
 						["coord"] = { 51.8, 82.0, 654 },	-- Mucksnout Den
@@ -1589,6 +1737,25 @@ _.Zones =
 					}),
 					
 
+					q(39579, {	-- The Backdoor
+						["sourceQuests"] = { 39577 },	-- An Ancient Secret
+						["coord"] = { 61.1, 73.7, 657 },	-- Path of Huln
+						["qg"] = 96270,	-- Ebyssian
+						["g"] = {
+							i(133137),	-- Wisps of Illusion
+							i(133138),	-- Time-Lost Dragon Heart
+							i(133139),	-- Feltotem Sigil
+							i(133141),	-- Flawless Kun-Lai Blossom
+							i(133136),	-- Glory of Highmountain
+							i(133142),	-- Stonedark Brul Brand
+							i(133143),	-- Spark of Khaz'goroth
+							i(133144),	-- Memory of Neltharion
+							i(133146),	-- The Four Winds
+							i(133129),	-- Smoldering Crux
+						},
+					}),
+					
+					
 					q(38912, {	-- The Bloodtotem Tribe
 						["sourceQuests"] = { 38909 },	-- Get to High Ground
 						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
@@ -1611,6 +1778,20 @@ _.Zones =
 						},
 						["coord"] = { 43.6, 59.8, 650 },
 						["qg"] = 93833,	-- Jale Rivermane
+					}),
+
+
+					q(39580, {	-- The High Chieftain
+						["sourceQuests"] = { 39579 },	-- The Backdoor
+						["coord"] = { 47.4, 84.7, 650 },
+						["qg"] = 108305,	-- Mayla Highmountain
+					}),
+
+					
+					q(39575, {	-- The Path of Huln
+						["sourceQuests"] = { 38916 },	-- Secrets of Highmountain
+						["coord"] = { 44.9, 65.6, 650 },
+						["qg"] = 94571,	-- Spiritwalker Ebonhorn
 					}),
 
 					
@@ -1677,7 +1858,7 @@ _.Zones =
 					}),
 
 
-					q(39322, { -- The Witchqueen
+					q(39322, {	-- The Witchqueen
 						["sourceQuests"] = {
 							39429,	-- Assaulting the Haglands
 							39321,	-- The Three
@@ -1709,6 +1890,20 @@ _.Zones =
 					}),
 					
 					
+					q(39578, {	-- Titanic Showdown
+						["sourceQuests"] = { 40219 },	-- In Defiance of Deathwing
+						["coord"] = { 49.3, 54.1, 657 },	-- Path of Huln
+						["qg"] = 108069,	-- Spiritwalker Ebonhorn
+						["g"] = {
+							i(121662),	-- Snowblind Handwraps
+							i(121660),	-- Drogstitch Gloves
+							i(121663),	-- Whitewater Gauntlets
+							i(121661),	-- Thunderpeak Gauntlets
+							i(130312),	-- Explorer's Delving Loop
+						},
+					}),
+					
+					
 					q(40520, {	-- To See the Past
 						["sourceQuests"] = { 40167 },	-- The Story of Huln
 						["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
@@ -1733,6 +1928,13 @@ _.Zones =
 						["coord"] = { 40.7, 30.9, 650 },
 					}),
 					
+
+					q(39372, {	-- Witch of the Wood
+						["sourceQuests"] = { 38912 },	-- The Bloodtotem Tribe
+						["coord"] = { 39.3, 37.0, 650 },
+						["qg"] = 95256,	-- Oakin Ironbull
+					}),
+
 					
 					q(39134, {	-- Wrathshard
 						["sourceQuests"] = { 38909 },	-- Get to High Ground
@@ -1767,9 +1969,6 @@ _.Zones =
 
 				--]]
 					
-					q(39372),	-- Witch of the Wood
-					q(39373),	-- Hags of a Feather
-					q(39873),	-- I Have a Bad Feeling About This
 					q(39374),	-- An Audience with Torok
 					q(39455),	-- Cave of the Blood Trial
 					q(39860, {	-- Rite of Blood
@@ -1791,28 +1990,6 @@ _.Zones =
 					}),
 					q(40229),	-- Step into the Dark
 					q(39456),	-- Unexpected Allies
-					q(40112),	-- Huln's War - Malorne's Favored
-					q(39988),	-- Huln's War - Stormrage
-					q(39990),	-- Huln's War - Reinforcements
-					q(40388),	-- Huln's War - Shadowsong
-					q(39992, {	-- Huln's War - The Nathrezim
-						i(130282),	-- 
-					}),
-					q(38916),	-- Secrets of Highmountain
-					q(39575),	-- The Path of Huln
-					q(40219),	-- In Defiance of Deathwing
-					q(39578, {	-- Titanic Showdown
-						i(121662),	-- 
-						i(121660),	-- 
-						i(121663),	-- 
-						i(121661),	-- 
-						i(130312),	-- Explorer's Delving Loop
-					}),
-					q(39577),	-- An Ancient Secret
-					q(39579, { -- The Backdoor
-						i(133144),	-- Memory of Neltharion
-					}),
-					q(39580),	-- The High Chieftain
 					q(38915),	-- Battle of Snowblind Mesa
 					q(39776),	-- Battle Worms
 					q(39777),	-- Buy Us Time
@@ -1834,34 +2011,7 @@ _.Zones =
 					q(40217, {	-- An Offering of Ammo
 						["isBreadcrumb"] = true,
 					}),
-					q(40216),	-- A Hunter at Heart
-					q(39123),	-- Lion Stalkin'
-					q(39867, {	-- I'm Not Lion!
-						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1]
-					}),
-					q(39124),	-- Moose Shootin'
-					q(39178),	-- Moose on the Loose
-					q(39392),	-- Bear Huntin'
-					q(40228, {	-- Scout It Out
-						i(121672),	-- 
-						i(121655),	-- 
-						i(121654),	-- 
-						i(121653),	-- 
-						i(130276),	-- 
-						i(130277),	-- 
-						i(130278),	-- 
-						i(130279),	-- 
-					}),
 					q(40244),	-- That Guy in the Costume
-					q(39774, {	-- Demon Detainment
-						i(132090),	-- 
-						i(132089),	-- 
-						i(132088),	-- 
-						i(132087),	-- 
-						i(132091),	-- Warmth of Uriah
-						i(132092),	-- Solace of Uriah
-						i(132093),	-- Courage of Uriah
-					}),
 					q(40102, {	-- Murlocs: The Next Generation
 						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
 					}),
@@ -1975,7 +2125,6 @@ _.Zones =
 					q(44312),	-- Burning Plate of the Worldbreaker Denied
 					q(40392),	-- Call of the Marksman
 					q(42389),	-- Calling Hilaire Home
-					q(42622),	-- Ceremonial Drums
 					q(41042),	-- Champion Chomper
 					q(42414),	-- Champion: Addie Fizzlebog
 					q(42415),	-- Champion: Halduron Brightwing
@@ -2173,8 +2322,7 @@ _.Zones =
 					q(41761),	-- Winter Moose Roundup
 		  SOON™
 		  --]]
-						--[[
-					n(-34, {	-- World Quests
+		--[[		n(-34, {	-- World Quests
 						q(43985),	-- A Dark Tide
 						q(45840),	-- Assault on Highmountain
 						q(41705),	-- Assault on Thunder Totem
@@ -2380,43 +2528,48 @@ _.Zones =
 						},
 					}),
 					n(97449,  {	-- Bristlemaul
-						["g"] = {
-							i(131761),
-						},
 						["questID"] = 40405,
+						["coord"] = { 37.7, 45.7, 650 },
+						["g"] = {
+							i(131761),	-- Thick Bristly Hood
+							{	-- Bristlemaul (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 12,	-- Bristlemaul
+							},
+						},
 					}),
 					n(94877,  {	-- Brogrul the Mighty
+						["questID"] = 39235,
 						["g"] = {
 							i(138396),
 						},
-						["questID"] = 39235,
 					}),
 					n(97933,  {	-- Crab Rider Grmlrml
+						["questID"] = 39994,
 						["g"] = {
 							i(131798),
 						},
-						["questID"] = 39994,
 					}),
 					n(97345,  {	-- Crawshuk the Hungry
+						["questID"] = 39806,
 						["g"] = {
 							i(131809, { 	-- Gleaming Roc Feather
 								i(131811), 		-- Toy
 							}),
 						},
-						["questID"] = 39806,
 					}),
 					n(100495, {	-- Devouring Darkness
+						["description"] = "|cff66ccffClick all candles to summon the mob.|r",
+						["questID"] = 40414,
 						["g"] = {
 							i(131780),
 						},
-						["questID"] = 40414,
-						["description"] = "|cff66ccffClick all candles to summon mob|r"
 					}),
 					n(96072,  {	-- Durguth
+						["questID"] = 45508,
 						["g"] = {
 							i(131796),
 						},
-						["questID"] = 45508,
 					}),
 					n(97793,  {	-- Flamescale
 						["description"] = "|cff66ccffClick on the Abandoned Fishing Pole to summon Flamescale.|r",
@@ -2456,22 +2609,22 @@ _.Zones =
 						},
 					}),
 					n(96410,  {	-- Majestic Elderhorn
+						["questID"] = 39646,
 						["g"] = {
 							i(131900), 	-- Toy
 						},
-						["questID"] = 39646,
 					}),
 					n(98311,  {	-- Mrrklr
+						["questID"] = 40096,
 						["g"] = {
 							i(131797),
 						},
-						["questID"] = 40096,
 					}),
 					n(95204,  {	-- Oubdob da Smasher
+						["questID"] = 39435,
 						["g"] = {
 							i(131793),
 						},
-						["questID"] = 39435,
 					}),
 					v(40423,  {	-- Puck (Unethical Adventurers)
 						["description"] = "|cff66ccffLoot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure. |r",
@@ -2491,19 +2644,17 @@ _.Zones =
 						},
 					}),
 					n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
+						["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
+						["questID"] = 39866,
 						["g"] = {
 							i(131792),
 						},
-						["questID"] = 39866,
-
-						["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
 					}),
 					n(97093,  {	-- Shara Felbreath
+						["questID"] = 39762,
 						["g"] = {
 							i(131791),
 						},
-						["questID"] = 39762,
-
 					}),
 					n(101077, {	-- Sekhan
 						["questID"] = 40681,
@@ -2528,16 +2679,15 @@ _.Zones =
 						},
 					}),
 					n(97653,  {	-- Taurson
+						["questID"] = 39872,
 						["g"] = {
 							o(244628, {	-- Taurson's Prize
+								["displayID"] = 65118,
 								["g"] = {
 									i(131800),
 								},
-								["displayID"] = 65118,
 							}),
 						},
-						["questID"] = 39872,
-
 					}),
 					n(97203,  {	-- Tenpak Flametotem
 						["questID"] = 39782,
@@ -2551,22 +2701,22 @@ _.Zones =
 						},
 					}),
 					n(97116,  {	-- Treasure Chest 244519
+						["modelID"] = 73098,
+						["questID"] = 39824,
 						["g"] = {
 							i(131810, {	-- Derelict Skyhorn Kite
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
 						},
-						["modelID"] = 73098,
-						["questID"] = 39824,
 					}),
 					n(72409,  {	-- Treasure Chest 243668
+						["modelID"] = 73098,
+						["questID"] = 39466,
 						["g"] = {
 							i(131927, {	-- Shimmering Roc Feather
 								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
 						},
-						["modelID"] = 73098,
-						["questID"] = 39466,
 					}),
 					n(109556, {	-- Treasure Chest 243773
 						["modelID"] = 73098,
@@ -3207,9 +3357,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 98,
-			["achievementID"] = 10667,
-			["description"] = "|cff66ccffHighmountain is a zone that dominates the northern horizon of the Broken Isles with its jagged peak. It is one of the last great frontiers of the isles, named in honor of Huln Highmountain for his bravery in the War of the Ancients. Following the War against the Iron Horde, the Burning Legion began to invade Azeroth through the Tomb of Sargeras. The tauren of Highmountain, descended from Huln Highmountain and other tauren who had fought in the War of the Ancients, had been living in peace with the local drogbar for generations, but when the Legion invaded, the drogbar stole the taurens' sacred artifact, the [Hammer of Khaz'goroth]. The Highmountain are now at risk of being taken over by the drogbar and their king Dargrul the Underking, ruling his kin from the former lair of the black aspect Neltharion.|r",
 		}),
 	}),
 };
