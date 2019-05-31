@@ -88,6 +88,10 @@ _.Zones =
 						["questID"] = 55956,
 						["coord"] = { 39.8, 49.2, 1355 },
 					}),
+					o(326417, {	-- Arcane Chest
+						["questID"] = 55955,
+						["coord"] = { 50.6, 50.0, 1355 },
+					}),
 					o(326395, {	-- Glowing Arcane Trunk
 						["questID"] = 55959,
 						["coord"] = { 37.9, 6.4, 1355 },
@@ -119,8 +123,6 @@ _.Zones =
 						["description"] = "Match 4 Cyan runes.",
 					}),
 					--[[ -- these are the remaining known objectIDs for each chest
-					[326416] = "Arcane Chest",
-					[326417] = "Arcane Chest",
 					[326418] = "Arcane Chest",
 					[326419] = "Arcane Chest",
 					]]--

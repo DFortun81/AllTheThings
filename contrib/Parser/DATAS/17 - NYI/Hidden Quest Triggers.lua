@@ -29,6 +29,9 @@ _.NeverImplemented =
 	{	-- Triggers when you select Neri Sharpfin as your friend for the day
 		["questID"] = 57041,
 	},
+	{	-- Triggers when you select Poen Gillbrack as your friend for the day
+		["questID"] = 57042,
+	},
 	{	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more
 		["questID"] = 56677,
 	},

@@ -141,9 +141,8 @@ _.Zones =
 				{	-- An Unexpected Friend
 					["questID"] = 56813,
 					["qg"] = 149904,	-- Neri Sharpfin
-					["coord"] = { 50.2, 64.9, 1355 },
 					["races"] = HORDE_ONLY,
-					["description"] = "Offered every time your follower gains a rank.",
+					["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 2.",
 					["g"] = {
 						i(169903),	-- Nazjatar Survival Pack
 					},
@@ -458,6 +457,9 @@ _.Zones =
 					["coord"] = { 48.5, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55869,	-- Clearing Out the Cache
+					["g"] = {
+						i(168847),	-- Pearl of Manifest Ambitions
+					},
 				},
 				{	-- Down Into Nazjatar
 					["questID"] = 56235,
@@ -574,6 +576,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
+				{	-- Gather Friends
+					["questID"] = 55871, -- also triggered 56544, 56682
+					["qg"] = 151311,	-- Narm
+					["coord"] = { 26.6, 42.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save a Friend
+					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				},
 				{	-- Germinating Seed -- possibly drops from any rare?
 					["itemID"] = 167786,
 					["crs"] = {
@@ -676,6 +687,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					--["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
+				},
+				{	-- Most Delicious Clams
+					["questID"] = 56035, -- also triggered 56153
+					["qg"] = 153900,	-- Sardina Lauray
+					["coord"] = { 48.7, 22.6, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				},
 				{	-- No Backs
 					["questID"] = 55529, -- 55604 - probably the alliance questID
@@ -909,7 +929,7 @@ _.Zones =
 					["qg"] = 152047,	-- Poen Gillbrack
 					["coord"] = { 38.8, 42.4, 1355 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 152108,	-- Scouting the Pens
+					["sourceQuest"] = 55385,	-- Scouting the Pens
 					["description"] = "Unlocks the rest of the zone and opens up World Quests.", -- (spellID 304906)
 				},
 				{	-- Saving Corin
@@ -1274,6 +1294,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55489,	-- The Handmaiden's Tale
 				},
+				{	-- We're Going To Be Friends
+					["questID"] = 56808,
+					["qg"] = 151310,	-- Kelfin Scout (Poen Gillbrack)
+					["races"] = HORDE_ONLY,
+					["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 2.",
+				},
+				{	-- We've Got Crabs!
+					["questID"] = 56264,
+					["qg"] = 153884,	-- King Mrgl-Mrgl
+					["coord"] = { 25.4, 26.3, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
+				},
 				{	-- Weapon Rack
 					["objectID"] = 327170,
 					["coord"] = { 34.6, 21.1, 1355 },
@@ -1293,6 +1328,11 @@ _.Zones =
 					["sourceQuests"] = {
 						55863,	-- Deteriorating Knowledge
 						55864,	-- The Price is Death
+					},
+					["g"] = {
+						i(169477),	-- Benthic Girdle
+						i(149478),	-- Benthic Bracers
+						i(169481),	-- Benthic Cloak
 					},
 				},
 				{	-- Where the Road Leads
