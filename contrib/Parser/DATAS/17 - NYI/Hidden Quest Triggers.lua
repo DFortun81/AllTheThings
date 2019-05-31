@@ -71,4 +71,7 @@ _.NeverImplemented =
 	{	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 		["questID"] = 56673,
 	},
+	{	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
+		["questID"] = 56543,
+	},
 };

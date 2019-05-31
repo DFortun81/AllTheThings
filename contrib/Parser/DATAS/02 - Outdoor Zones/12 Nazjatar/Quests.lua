@@ -11,10 +11,13 @@ _.Zones =
 			"Neri's Spot" npc at 71.5, 19.4 at the top of a hidden path behind the waterfall
 			"Neri's Find" npc at 44.9, 60.7 atop of the overhand above Newhome. Approach from ~45.3, 64.8
 			"Neri's Ruse" npc at 36.1, 70.3
+			"Poen's Hidey Hole" npc at 67.6, 30.8 on top of the rocks
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
 			
 			Map model found at 43.8, 54.7. May not mean anything, but could be worth investigating
+			
+			"Murloco's Marvelous Hat" at (45.4, 32.6) gives you  the "Murloco's Marvelous Hat" buff
 			
 			GLoomseeker Yarga at (38.1, 59.2) in the underwater cave has a chest behind him, but it's locked
 			
@@ -183,10 +186,26 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
+				{	-- Bounty: A Few Crabs
+					["questID"] = 55823,
+					["qg"] = 151635,	-- Slen Darkroe
+					["coord"] = { 50.8, 64.7, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
 				{	-- Bounty: Elite Naga Forces
 					["questID"] = 55836,
 					["qg"] = 151614,	-- Nevin Tideheart
 					["coord"] = { 50.4, 66.2, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+				},
+				{	-- Bounty: More Coral Ancients
+					["questID"] = 55830,
+					["qg"] = 153512,	-- Finder Pruc
+					["coord"] = { 49.1, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 56179,	-- The Needs of the People
@@ -599,6 +618,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56235,	-- Down Into Nazjatar
 				},
+				{	-- Kill the Kritch
+					["questID"] = 55873,
+					["qg"] = 153537,	-- Rlgmrr
+					["coord"] = { 44.9, 76.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save A Friend -- todo: verify source
+				},
 				{	-- Legacy of Nar'anan
 					["questID"] = 56095,
 					["qg"] = 154143,	-- Collector Kojo
@@ -763,10 +790,6 @@ _.Zones =
 						56179,	-- The Needs of the People (Horde)
 					},
 					["g"] = {
-						{	-- Bounty: A Few Crabs
-							["questID"] = 55823,
-							["isDaily"] = true,
-						},
 						{	-- Bounty: A Few Fathom Rays
 							["questID"] = 55825,
 							["isDaily"] = true,
@@ -793,10 +816,6 @@ _.Zones =
 						},
 						{	-- Bounty: Dangerous Creatures
 							["questID"] = 55837,
-							["isDaily"] = true,
-						},
-						{	-- Bounty: More Coral Ancients
-							["questID"] = 55830,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: More Crabs
@@ -873,10 +892,6 @@ _.Zones =
 						},
 						{	-- Requisition: More Seaweek
 							["questID"] = 55786,
-							["isDaily"] = true,
-						},
-						{	-- Requisition: We Need It All
-							["questID"] = 55801,
 							["isDaily"] = true,
 						},
 					},

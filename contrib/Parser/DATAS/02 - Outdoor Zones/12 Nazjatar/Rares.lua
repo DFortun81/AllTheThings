@@ -136,6 +136,13 @@ _.Zones =
 						i(169371),	-- Murgle
 					},
 				}),
+				n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but very rarely spawns and drops very important currency
+					["questID"] = 56916,
+					["description"] = "Wanders around Nazjatar.",
+					["g"] = {
+						currency(1721),	-- Prismatic Manapearl
+					},
+				}),
 				n(144644, {	-- Mireclaw
 					["allianceQuestID"] = 56609,
 					["hordeQuestID"] = 56274,
@@ -275,6 +282,13 @@ _.Zones =
 					["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws",
 					["g"] = {
 						i(169376),	-- Skittering Eel
+					},
+				}),
+				n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but very rarely spawns and drops very important currency
+					["questID"] = 56915,
+					["description"] = "Wanders around Nazjatar.",
+					["g"] = {
+						currency(1721),	-- Prismatic Manapearl
 					},
 				}),
 				n(155840, {	-- Warlord Zalzjar
