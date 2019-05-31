@@ -77,4 +77,7 @@ _.NeverImplemented =
 	{	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 		["questID"] = 56543,
 	},
+	{	-- Triggers after making a purchase from Mrrl (Once per day)
+		["questID"] = 55604,
+	}
 };

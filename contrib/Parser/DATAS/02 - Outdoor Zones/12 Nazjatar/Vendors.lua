@@ -469,6 +469,7 @@ _.Zones =
 						i(169202),	-- Crimson Tidestallion
 						-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
 						i(168095),	-- Strange Coral Cluster
+						i(168091),	-- Severly Rusted Lockbox
 					}
 				}),
 				n(154140, {	-- Speaker Utia
