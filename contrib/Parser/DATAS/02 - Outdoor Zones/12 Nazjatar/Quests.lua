@@ -14,6 +14,8 @@ _.Zones =
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
 			
+			Map model found at 43.8, 54.7. May not mean anything, but could be worth investigating
+			
 			GLoomseeker Yarga at (38.1, 59.2) in the underwater cave has a chest behind him, but it's locked
 			
 			flopping fish at (47.4, 61.0), (48.5, 60.5), (50.5, 58.8). interacting knocks it away, but it bounces right back

@@ -84,6 +84,10 @@ _.Zones =
 						["questID"] = 55953,
 						["coord"] = { 26.0, 32.4, 1355 },
 					}),
+					o(326416, {	-- Arcane Chest
+						["questID"] = 55956,
+						["coord"] = { 39.8, 49.2, 1355 },
+					}),
 					o(326395, {	-- Glowing Arcane Trunk
 						["questID"] = 55959,
 						["coord"] = { 37.9, 6.4, 1355 },
