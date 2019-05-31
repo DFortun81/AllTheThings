@@ -11,11 +11,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							i(169589),	-- Azsharan Pearling Kit
-							i(169592),	-- Azsharan Pearling Enhancement
-							i(169787),	-- Azsharan Azerite Pearling Enhancement
-							i(170277),	-- Greater Pearling Reinforcement
-							i(170276),	-- Greater Azerite Pearling Reinforcement
+							un(1, i(169589)),	-- Azsharan Pearling Kit
+							un(1, i(169592)),	-- Azsharan Pearling Enhancement
+							un(1, i(169787)),	-- Azsharan Azerite Pearling Enhancement
+							un(1, i(170277)),	-- Greater Pearling Reinforcement
+							un(1, i(170276)),	-- Greater Azerite Pearling Reinforcement
 							-- Tokens can be purchased here, but the content listing may be better elsewhere
 							i(169479, {	-- Benthic Helm
 								i(167770),	-- Azsh'iri Stormsurger Helm
@@ -125,8 +125,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							i(168846),	-- Pearl of Lucid Dreams
-							i(168847),	-- Pearl of Manifest Ambitions
+							--i(168847),	-- Pearl of Manifest Ambitions -- removed from vendor with no other known source
 							i(168848),	-- Pearl of Perspicuous Intentions
 							i(168849),	-- Pearl of Luminous Designs
 							i(168863),	-- Unbound Azerite Slivershards
@@ -137,8 +136,9 @@ _.Zones =
 							i(168838),	-- Enduring Bulwark of the Depths
 							i(168865),	-- Polazired Azerite Slivershards
 							i(168930),	-- Tome of the Quickening Tides
-							i(168839),	-- Regnerating Barrier of the Depths
+							i(168839),	-- Regenerating Barrier of the Depths
 						}),
+						i(163073),	-- Conch of Wa'mundi
 						i(169365),	-- Damplight Slug
 						i(169274),	-- Tabard of the Unshackled
 						un(1,i(170076)),	-- Recipe: Unagi Skewer
@@ -147,7 +147,7 @@ _.Zones =
 						i(169605),	-- Formula: Accord of Haste (Rank 3)
 						i(169604),	-- Formula: Accord of Critical Strike (Rank 3)
 						i(169607),	-- Formula: Accord of Versatility (Rank 3)
-						--i(169601),	-- Recipe: Potion of Reconstitution (Rank 3)
+						--i(169601),	-- Recipe: Potion of Reconstitution (Rank 3) -- need to determine source or NYI
 						i(169602),	-- Recipe: Potion of Focused Resolve (Rank 3)
 						i(169600),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 						i(169603),	-- Recipe: Greater Mystical Cauldron (Rank 3)
@@ -334,11 +334,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							i(169589),	-- Azsharan Pearling Kit
-							i(169592),	-- Azsharan Pearling Enhancement
-							i(169787),	-- Azsharan Azerite Pearling Enhancement
-							i(170277),	-- Greater Pearling Reinforcement
-							i(170276),	-- Greater Azerite Pearling Reinforcement
+							un(1, i(169589)),	-- Azsharan Pearling Kit
+							un(1, i(169592)),	-- Azsharan Pearling Enhancement
+							un(1, i(169787)),	-- Azsharan Azerite Pearling Enhancement
+							un(1, i(170277)),	-- Greater Pearling Reinforcement
+							un(1, i(170276)),	-- Greater Azerite Pearling Reinforcement
 							-- Tokens can be purchased here, but the content listing may be better elsewhere
 							i(169479, {	-- Benthic Helm
 								i(167770),	-- Azsh'iri Stormsurger Helm
@@ -438,9 +438,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							i(169352),	-- Pearlescent Glimmershell
 							i(167170),	-- Unshackled Waveray
+							i(169352),	-- Pearlescent Glimmershell
 							i(170204),	-- Symbol of Gral
+							i(169885),	-- Budding Deepcoral
+							i(169326),	-- Abyssal Shard
 						}),
 					},
 				}),
@@ -465,6 +467,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(169202),	-- Crimson Tidestallion
+						-- Mrrl sells containers of random stuff. Need way more testing to figure out what these contain
+						i(168095),	-- Strange Coral Cluster
 					}
 				}),
 				n(154140, {	-- Speaker Utia
@@ -505,7 +509,7 @@ _.Zones =
 					["g"] = {
 						i(168307),	-- Necklace of Most Beautiful Shells
 						i(138308),	-- Most Magnificient Small Shell of Shimmering
-						i(168824),	-- Ocean Simulator
+						-- i(168824),	-- Ocean Simulator -- not on Suva's inventory now. Need to verify new source
 						i(168309),	-- Armwrap of Ocean Magic
 						i(168320),	-- Shiniest Roundiest Pearl of Goodness
 					},
