@@ -17,12 +17,6 @@ _.Zones =
 						["questID"] = 55954,
 						["coord"] = { 34.5, 40.4, 1355 },
 					}),
-					--[[ -- seems to have moved
-					o(326401, {	-- Arcane Chest -- not available on alliance?
-						--["questID"] = ,
-						["coord"] = { 52.4, 52.1, 1355 },
-					}),
-					]]--
 					o(326402, {	-- Arcane Chest
 						["questID"] = 55945,
 						["coord"] = { 52.8, 49.8, 1355 },
@@ -123,8 +117,18 @@ _.Zones =
 						["description"] = "Match 4 Cyan runes.",
 					}),
 					--[[ -- these are the remaining known objectIDs for each chest
-					[326418] = "Arcane Chest",
-					[326419] = "Arcane Chest",
+					o(326401, {	-- Arcane Chest
+						["questID"] = ,
+						["coord"] = { , 1355 },
+					}),
+					o(326418, {	-- Arcane Chest
+						["questID"] = ,
+						["coord"] = { , 1355 },
+					}),
+					o(326419, {	-- Arcane Chest
+						["questID"] = ,
+						["coord"] = { , 1355 },
+					}),
 					]]--
 				},
 			}),

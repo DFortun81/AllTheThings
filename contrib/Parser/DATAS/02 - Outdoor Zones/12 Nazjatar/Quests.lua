@@ -85,6 +85,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Available when your bodyguard hits rank 5",
 				},
+				{	-- A Good Offense
+					["questID"] = 55984,
+					["qg"] = 153623,	-- Korl
+					["coord"] = { 36.3, 30.1, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+					["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				},
 				{	-- A Safer Place
 					["questID"] = 55530,
 					["qg"] = 152084,	-- Mrrl
@@ -726,6 +735,15 @@ _.Zones =
 					["g"] = {
 						spell(303357),	-- Flight Master's Whistle Upgrade: Nazjatar
 					},
+				},
+				{	-- Plug the Geysers
+					["questID"] = 55875, -- also triggered 56700
+					["qg"] = 153834,	-- Scout Tambrine
+					["coord"] = { 33.5, 47.9, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+					["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 				},
 				{	-- Preserved Clues
 					["questID"] = 56241,

@@ -26,6 +26,9 @@ _.NeverImplemented =
 	{	-- Triggered when turning in "Send the Fleet" on horde. First entry into Nazjatar
 		["questID"] = 56881,
 	},
+	{	-- Triggers when you select Vim Brineheart as your friend for the day
+		["questID"] = 57040,
+	},
 	{	-- Triggers when you select Neri Sharpfin as your friend for the day
 		["questID"] = 57041,
 	},
