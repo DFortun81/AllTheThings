@@ -67,7 +67,7 @@ _.Zones =
 					}),
 --					qa(12340),	-- Candy Bucket
 					o(34, {	-- Old Jug
-						q(26356, {	-- Captain Sanders' Hidden Treasure
+						qa(26356, {	-- Captain Sanders' Hidden Treasure
 							i(3344),	-- Captain Sanders' Sash
 							i(3342),	-- Captain Sanders' Shirt
 							i(3343),	-- Captain Sanders' Booty Bag
