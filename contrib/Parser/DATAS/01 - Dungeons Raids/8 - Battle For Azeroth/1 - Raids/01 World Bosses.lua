@@ -12,6 +12,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				-- Note!! Kill ID: 52997
 				-- Note!! WQ ID: 52163
 				["isRaid"] = true,
+				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
 				["maps"] = { 895 },	-- Tiragarde Sound
 				["crs"] = { 136385 },	-- Azurethos, The Winged Typhoon
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -94,6 +95,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				-- Note!! WQ ID: 52157,	-- A Chilling Encounter
 				-- Note!! Kill ID: 52999
 				["isRaid"] = true,
+				["coords"] = {
+					{ 62.4, 69.1, 896 },	-- east road
+					{ 31.8, 66.9, 896 },	-- west road
+					{ 49.2, 74.6, 896 },	-- actual boss
+				},
 				["maps"] = { 896 },	-- Drustvar
 				["crs"] = { 140252 },	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -160,11 +166,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				-- Note!! Kill ID: 52998
 				-- Note!! WQ ID: 52169,	-- The Matriarch
 				["isRaid"] = true,
+				["coord"] = { 69.0, 31.0, 862 },
 				["maps"] = { 862 },	-- Zuldazar
-				["crs"] = {
-					132253,	-- Ji'arak
-					132653,	-- Ji'arak Broodling
-				},
+				["crs"] = { 132253 },	-- Ji'arak
 				["g"] = bubbleDown({["modID"] = 3}, {
 					sz(12587, 4),	--  Ji'arak Criteria
 					i(161401),	-- Matriarch's Shadowveil

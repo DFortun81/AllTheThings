@@ -6,17 +6,20 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
+			["achievementID"] = 12557,	-- Explore Drustvar
+			["description"] = "|cff66ccffDrustvar is a forested, mountainous area. It was once occupied by a race called the Drust. When humans arrived on Kul Tiras, they slew the Drust and took the area as their own. The Drust created stone golems in their war with the settlers. The human armies, led by House Waycrest, researched their magics and created the Order of Embers to counter it.\n\nIn the present day, Drustvar is controlled by the now missing Lord and Lady of House Waycrest, who have gone suspiciously absent. In their absence, Drustvar's contribution of arms (and sausages) has begun to dry up. The Alliance will need to work with their new allies to get to the bottom of the mystery, as well as the curse over the land.\n\nThe harsh lands of Drustvar are ruled by House Waycrest, who conquered these lands after vanquishing the ancient, evil Drust. The edifices of the Drust still stand in ruin across the land, but that's not all that remains of this accursed people. Recently, their evil leader has been awakened—and if left unchecked, his dark power will spread throughout all of Kul Tiras. Upon arriving in Drustvar, you will be met with a request to visit Mayor Cyril White of Fallhaven in eastern Drustvar.|r",
+			["lvl"] = 110,
 			["g"] = {
 				n(-16, {	-- Rares
 					-- Note: While these are all technically Achievement Criteria we don't want to use that in the infomration on whether you have killed it or not.  These is due to once you killing it on one character it would auto-complete your alts. What we want to do is instead place it as a reward.  This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 					["g"] = {
 						o(277333, {	-- Ancient Sarcophagus
+							["modelScale"] = 2,
 							["questID"] = 49137,
-							["coords"] = { 43.3, 36.3, 896 },	-- cave entrance
+							["coord"] = { 43.3, 36.3, 896 },	-- cave entrance
+							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01c",
 							["crs"] = { 128181 },	-- Vengeful Dead
-							["model"] = "World\\SkillActivated\\Containers\\TreasureChest06.mdx",
-							["modelScale"] = 2,
 							["g"] = {
 								{	-- Ancient Sarcophagus (Adventurer of Drustvar)
 									["achievementID"] = 12941,	-- Adventurer of Drustvar
@@ -26,6 +29,7 @@ _.Zones =
 						}),
 						n(137824, {	-- Arclight
 							["questID"] = 51470,
+							["coord"] = { 29.2, 68.8, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160469),	-- Arclight Jumpers
 								{	-- Arclight (Adventurer of Drustvar)
@@ -36,6 +40,7 @@ _.Zones =
 						}),
 						n(137529, {	-- Arvon the Betrayed
 							["questID"] = 51383,
+							["coord"] = { 35.0, 69.0, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160449),	-- Spectral Revenger
 								{	-- Arvon the Betrayed (Adventurer of Drustvar)
@@ -47,10 +52,10 @@ _.Zones =
 						n(137825, {	-- Avalanche
 							["questID"] = 51471,
 							["coords"] = {
-								{ 43.81, 88.61 },
-								{ 44.01, 85.41 },
-								{ 44.21, 87.41 },
-								{ 44.41, 85.61 },
+								{ 43.81, 88.61, 896 },
+								{ 44.01, 85.41, 896 },
+								{ 44.21, 87.41, 896 },
+								{ 44.41, 85.61, 896 },
 							},
 							["g"] = {
 								i(154447, {	-- Gryphon-Rider's Breastplate
@@ -66,7 +71,10 @@ _.Zones =
 						}),
 						n(130143, {	-- Balethorn
 							["questID"] = 49602,
-							["coord"] = { 58.0, 29.6 },	-- patrols, needs path added
+							["coords"] = {
+								{ 55.8, 29.2, 896 },
+								{ 59.4, 28.2, 896 },
+							},
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160475),	-- Barksnapper Girdle
 								{	-- Balethorn (Adventurer of Drustvar)
@@ -77,7 +85,7 @@ _.Zones =
 						}),
 						n(127333, {	-- Barbthorn Queen
 							["questID"] = 48842,	
-							["coord"] = { 59.0, 16.8 },
+							["coord"] = { 59.0, 16.8, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155425),	-- Barbthorn Queen's Stinger
 								{	-- Barbthorn Queen (Adventurer of Drustvar)
@@ -89,7 +97,7 @@ _.Zones =
 						n(129805, {	-- Beshol
 							["description"] = "Interact with \"Obviously Safe Chest\" to spawn this mob.",
 							["questID"] = 49481,
-							["coord"] = { 50.61, 30.01 },
+							["coord"] = { 50.61, 30.01, 896 },
 							["g"] = {
 								i(158363, {	-- Spiderhair Circlet
 									["bonusID"] = 4775,	-- Azerite Armor
@@ -104,7 +112,7 @@ _.Zones =
 						}),
 						n(124548, {	-- Betsy
 							["questID"] = 47884,
-							["coord"] = { 58.4, 33.2 },	-- may have other spawnpoints (?)
+							["coord"] = { 58.4, 33.2, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160463),	-- Blue-Ribbon Belt
 								{	-- Betsy (Adventurer of Drustvar)
@@ -115,6 +123,7 @@ _.Zones =
 						}),
 						n(132319, {	-- Bilefang Mother
 							["questID"] = 50163,
+							["coord"] = { 35.6, 32.6, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155284),	-- Bleak Hills Swatter
 								{	-- Bilefang Mother (Adventurer of Drustvar)
@@ -125,6 +134,7 @@ _.Zones =
 						}),
 						n(138667, {	-- Blighted Monstrosity
 							["questID"] = 52001,	-- 51699 for WQ
+							["coord"] = { 35.8, 11.6, 896 },
 							["g"] = {
 								i(163680),	-- Blightbitten Steps
 							},
@@ -142,6 +152,7 @@ _.Zones =
 						}),
 						n(139321, {	-- Braedan Whitewall
 							["questID"] = 51922,
+							["coord"] = { 27.6, 59.6, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154500),	-- Moonwood Bramblespire
 								{	-- Braedan Whitewall (Adventurer of Drustvar)
@@ -178,6 +189,7 @@ _.Zones =
 						}),
 						n(134706, {	-- Deathcap
 							["questID"] = 50669,
+							["coord"] = { 18.6, 61.0, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158555),	-- Doom Shroom
 								{	-- Deathcap (Adventurer of Drustvar)
@@ -188,6 +200,7 @@ _.Zones =
 						}),
 						n(129995, {	-- Emily Mayville
 							["questID"] = 49530,
+							["coord"] = { 63.4, 40.2, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160447),	-- Soul-Pillar Lantern
 								{	-- Emily Mayville (Adventurer of Drustvar)
@@ -214,6 +227,7 @@ _.Zones =
 						}),
 						n(134213, {	-- Executioner Blackwell
 							["questID"] = 50546,
+							["coord"] = { 30.8, 18.6, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155055),	-- Soul-Curse Executioner
 								{	-- Executioner Blackwell (Adventurer of Drustvar)
@@ -248,9 +262,9 @@ _.Zones =
 						n(138675, {	-- Gorged Boar
 							["questID"] = 51700,
 							["coords"] = {
-								{ 27.81, 25.41 },
-								{ 28.01, 26.01 },
-								{ 28.61, 25.61 },
+								{ 27.81, 25.41, 896 },
+								{ 28.01, 26.01, 896 },
+								{ 28.61, 25.61, 896 },
 							},
 							["g"] = {
 								i(154461, {	-- Cursed Boarhide Helm
@@ -266,7 +280,7 @@ _.Zones =
 						}),
 						n(127129, {	-- Grozgore
 							["questID"] = 49388,
-							["coord"] = { 50.3, 20.7 },
+							["coord"] = { 50.3, 20.7, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160457),	-- Lava-Starched Britches
 								{	-- Grozgore (Adventurer of Drustvar)
@@ -277,6 +291,7 @@ _.Zones =
 						}),
 						n(138618, {	-- Haywire Golem
 							["questID"] = 51698,
+							["coord"] = { 23.8, 29.4, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155362),	-- Wickerbeast Mulcher
 								{	-- Haywire Golem (Adventurer of Drustvar)
@@ -287,6 +302,7 @@ _.Zones =
 						}),
 						n(134754, {	-- Hyo'gi
 							["questID"] = 50688,
+							["coord"] = { 23.0, 49.2, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(160462),	-- Hyo'gi Basket Binders
 								{	-- Hyo'gi (Adventurer of Drustvar)
@@ -296,7 +312,6 @@ _.Zones =
 							}),
 						}),
 						n(127877, {	-- Longfang
-							["npcID"] = 127877,	-- Longfang
 							["questID"] = 48981,
 							["coord"] = { 59.3, 55.2, 896 },
 							["g"] = {
@@ -315,6 +330,7 @@ _.Zones =
 						}),
 						n(137704, {	-- Matron Morana
 							["questID"] = 52000,
+							["coord"] = { 34.8, 20.6, 896 },
 						}),
 						n(130138, {	-- Nevermore
 							["questID"] = 49601,
@@ -329,6 +345,7 @@ _.Zones =
 						}),
 						n(125453, {	-- Quillrat Matriarch
 							["questID"] = 48178,	
+							["coord"] = { 66.6, 42.6, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(158583),	-- Quillstitch Greatcloak
 								{	-- Quillrat Matriarch (Adventurer of Drustvar)
@@ -356,6 +373,7 @@ _.Zones =
 							["modelScale"] = 2,
 							["questID"] = 49341,
 							["model"] = "World\\Expansion07\\Doodads\\Witch\\8wi_witch_treasurechest02.mdx",
+							["coord"] = { 68.6, 64.3, 896 },
 							["icon"] = "Interface\\Icons\\INV_Eng_Crate",
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(158598),	-- Band of Seething Manifest
@@ -367,6 +385,7 @@ _.Zones =
 						}),
 						n(138863, {	-- Sister Martha
 							["questID"] = 51748,
+							["coord"] = { 33.0, 57.0, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(155299),	-- Sister Martha's Soulstealer
 								{	-- Sister Martha (Adventurer of Drustvar)
@@ -377,9 +396,11 @@ _.Zones =
 						}),
 						n(137665, {	-- Soul Goliath
 							["questID"] = 52002,
+							["coord"] = { 27.2, 54.8, 896 },
 						}),
 						n(137708, {	-- Stone Golem
 							["questID"] = 51999,
+							["coord"] = { 50.0, 43.2, 896 },
 						}),
 						n(129950, {	-- Talon
 							["questID"] = 49528,
@@ -419,7 +440,7 @@ _.Zones =
 						}),	
 						n(128973, {	-- Whargarble the Ill-Tempered
 							["questID"] = 49311,	
-							["coord"] = { 64.9, 21.5 },
+							["coord"] = { 64.9, 21.5, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {	
 								i(155543),	-- Tuskarr Whaler's Harpoon
 								{	-- Whargarble the Ill-Tempered (Adventurer of Drustvar)
@@ -427,9 +448,10 @@ _.Zones =
 									["criteriaID"] = 11,	-- Whargarble the Ill-Tempered
 								},
 							}),
-						}),	
+						}),
 						n(139322, {	-- Whitney "Steelclaw" Ramsay
 							["questID"] = 51923,
+							["coord"] = { 29.6, 64.0, 896 },
 							["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 								i(154315),	-- Rusty Steelclaw
 								{	-- Hexed Hunter (Adventurer of Drustvar)
@@ -441,10 +463,6 @@ _.Zones =
 					},
 				}),
 			},
-			["achievementID"] = 12557,	-- Explore Drustvar
-			["lvl"] = 110,
-			["description"] = "|cff66ccffDrustvar is a forested, mountainous area. It was once occupied by a race called the Drust. When humans arrived on Kul Tiras, they slew the Drust and took the area as their own. The Drust created stone golems in their war with the settlers. The human armies, led by House Waycrest, researched their magics and created the Order of Embers to counter it.\n\nIn the present day, Drustvar is controlled by the now missing Lord and Lady of House Waycrest, who have gone suspiciously absent. In their absence, Drustvar's contribution of arms (and sausages) has begun to dry up. The Alliance will need to work with their new allies to get to the bottom of the mystery, as well as the curse over the land.\n\nThe harsh lands of Drustvar are ruled by House Waycrest, who conquered these lands after vanquishing the ancient, evil Drust. The edifices of the Drust still stand in ruin across the land, but that's not all that remains of this accursed people. Recently, their evil leader has been awakened—and if left unchecked, his dark power will spread throughout all of Kul Tiras. Upon arriving in Drustvar, you will be met with a request to visit Mayor Cyril White of Fallhaven in eastern Drustvar.|r",
 		}),
 	}),
 };
---]]
