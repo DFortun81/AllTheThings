@@ -29,7 +29,7 @@ _.NeverImplemented =
 	{	-- Triggers when you select Vim Brineheart as your friend for the day
 		["questID"] = 57040,
 	},
-	{	-- Triggers when you select Neri Sharpfin as your friend for the day
+	{	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
 		["questID"] = 57041,
 	},
 	{	-- Triggers when you select Poen Gillbrack as your friend for the day
@@ -37,6 +37,9 @@ _.NeverImplemented =
 	},
 	{	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more
 		["questID"] = 56677,
+	},
+	{	-- Triggered when interacting with the "Deepflame Campfire" in Mezzamere as alliance, but without picking a follower
+		["questID"] = 55404,
 	},
 	{	-- Triggered when opening the first glimmering chest during "Scrying Stones"
 		["questID"] = 56212,
@@ -80,7 +83,7 @@ _.NeverImplemented =
 	{	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 		["questID"] = 56543,
 	},
-	{	-- Triggers after making a purchase from Mrrl (Once per day)
+	{	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		["questID"] = 55604,
 	},
 	{	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk

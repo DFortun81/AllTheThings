@@ -12,6 +12,7 @@ _.Zones =
 			"Neri's Find" npc at 44.9, 60.7 atop of the overhand above Newhome. Approach from ~45.3, 64.8
 			"Neri's Ruse" npc at 36.1, 70.3
 			"Poen's Hidey Hole" npc at 67.6, 30.8 on top of the rocks
+			"Poen's Wonder" npc at 67.8, 31.5 in a cave
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
 			
@@ -216,11 +217,20 @@ _.Zones =
 				},
 				{	-- Bounty: A Few Crabs
 					["questID"] = 55823,
-					["qg"] = 151635,	-- Slen Darkroe
-					["coord"] = { 50.8, 64.7, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["qgs"] = {
+						153591,	-- Mikah Brewbelly
+						151635,	-- Slen Darkroe
+					},
+					["coords"] = {
+						{ 40.0, 55.6, 1355 },	-- alliance
+						{ 50.8, 64.7, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
 				},
 				{	-- Bounty: Elite Naga Forces
 					["questID"] = 55836,
@@ -232,11 +242,20 @@ _.Zones =
 				},
 				{	-- Bounty: More Coral Ancients
 					["questID"] = 55830,
-					["qg"] = 153512,	-- Finder Pruc
-					["coord"] = { 49.1, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["qgs"] = {
+						153512,	-- Finder Pruc
+						153509,	-- Artisan Okata
+					},
+					["coords"] = {
+						{ 37.8, 55.8, 1355 },	-- alliance
+						{ 49.1, 62.1, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
 				},
 				{	-- Bounty: More Fathom Rays
 					["questID"] = 55834,
@@ -250,14 +269,19 @@ _.Zones =
 					["objectID"] = 326140,
 					["coord"] = { 39.1, 54.1, 1355 },
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "The daily quest that is offered is only available if you select the right follower for the day",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 					["g"] = {
+						{	-- WANTED: Commander Sarj'eth
+							["questID"] = 55770,
+							["isDaily"] = true,
+						},
 						{	-- Wanted: Braxicus
 							["questID"] = 55777,
 							["isDaily"] = true,
 						},
 					},
 				},
-				{	-- Bounty Board (rewards change over time)
+				{	-- Bounty Board
 					["objectID"] = 327585,
 					["coord"] = { 47.9, 61.3, 1355 },
 					["races"] = HORDE_ONLY,
@@ -757,11 +781,17 @@ _.Zones =
 					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				},
 				{	-- No Backs
-					["questID"] = 55529, -- 55604 - probably the alliance questID
+					["questID"] = 55529,
 					["qg"] = 152084,	-- Mrrl
-					["coord"] = { 46.9, 61.4, 1355 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 55530,	-- A Safer Place
+					["coords"] = {
+						{ 46.9, 61.4, 1355 },	-- alliance
+						{ 39.1, 54.3, 1355 },	-- horde
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						55983,	-- A Safer Place (alliance)
+						55530,	-- A Safer Place (horde)
+					},
 					["g"] = {
 						{	-- Tour of the Depths (Find and Assist Mrrl)
 							["achievementID"] = 13635,
@@ -787,12 +817,30 @@ _.Zones =
 					},
 				},
 				{	-- Plug the Geysers
+					["questID"] = 56157,
+					["qg"] = 154246,	-- Apprentice Inari
+					["coord"] = { 31.0, 37.7, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56166,	-- The Needs of the People
+					["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				},
+				{	-- Plug the Geysers	-- similar name to another daily, but different ID across the map
+					["questID"] = 56155,	-- also popped 55874. Possibly an equivalent hordeID?
+					["qg"] = 154247,	-- Apprentice Utapo
+					["coord"] = { 60.6, 50.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56166,	-- The Needs of the People
+					["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				},
+				{	-- Plug the Geysers
 					["questID"] = 55875, -- also triggered 56700
 					["qg"] = 153834,	-- Scout Tambrine
 					["coord"] = { 33.5, 47.9, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
+					["sourceQuest"] = 56179,	-- The Needs of the People
 					["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 				},
 				{	-- Preserved Clues
@@ -850,11 +898,20 @@ _.Zones =
 				},
 				{	-- Requisition: We Need It All
 					["questID"] = 55801,
-					["qg"] = 151618,	-- Asme Seapearl
-					["coord"] = { 50.9, 65.7, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["qgs"] = {
+						151618,	-- Asme Seapearl
+						155940,	-- Enizo
+					},
+					["coords"] = {
+						{ 37.7, 55.4, 1355 },	-- alliance
+						{ 50.9, 65.7, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
 				},
 				{	-- Rumors of Mechagon
 					["questID"] = 57024,
@@ -1257,6 +1314,15 @@ _.Zones =
 					["coord"] = { 48.5, 62.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55862,	-- Insight into Our Enemies
+				},
+				{	-- The Speaker's Gift
+					["questID"] = 56782,
+					["qg"] = 154304,	-- Waveblade Shaman (Farseer Ori)
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
+					["g"] = {
+						i(169903),	-- Nazjatar Survival Pack
+					},
 				},
 				{	-- The Tide Turns
 					["questID"] = 55799,
