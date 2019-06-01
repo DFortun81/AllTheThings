@@ -116,7 +116,6 @@ end
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
-local AllTheThingsPCD = {};			-- For character specific data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
@@ -130,13 +129,6 @@ end
 local function GetTempDataMember(member, default)
 	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
 	return AllTheThingsTempData[member];
-end
-local function SetPersonalDataMember(member, data)
-	AllTheThingsPCD[member] = data;
-end
-local function GetPersonalDataMember(member, default)
-	if AllTheThingsPCD[member] == nil then AllTheThingsPCD[member] = default; end
-	return AllTheThingsPCD[member];
 end
 local function SetDataSubMember(member, submember, data)
 	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
@@ -160,20 +152,10 @@ local function GetTempDataSubMember(member, submember, default)
 	end
 	return AllTheThingsTempData[member][submember];
 end
-local function SetPersonalDataSubMember(member, submember, data)
-	if AllTheThingsPCD[member] then AllTheThingsPCD[member][submember] = data; end
-end
-local function GetPersonalDataSubMember(member, submember, default)
-	if not AllTheThingsPCD[member] then AllTheThingsPCD[member] = { }; end
-	if AllTheThingsPCD[member][submember] == nil then AllTheThingsPCD[member][submember] = default; end
-	return AllTheThingsPCD[member][submember];
-end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
-app.SetPersonalDataMember = SetPersonalDataMember;
-app.GetPersonalDataMember = GetPersonalDataMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
@@ -3764,17 +3746,17 @@ end)();
 			
 			if app.AccountWideFlightPaths then
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+						SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			else
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+						SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
@@ -3789,10 +3771,15 @@ end)();
 			elseif key == "collectible" then
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
-				if app.AccountWideFlightPaths then
-					return GetDataSubMember("FlightPaths", t.flightPathID);
+				if app.AccountWideReputations then
+					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
+				else
+					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
 				end
-				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
 				local info = t.info;
 				return info and info.text or "Visit the Flight Master to cache.";
@@ -7149,6 +7136,9 @@ local function SetRowData(self, row, data)
 				data.s = s;
 				if data.collected then
 					data.parent.progress = data.parent.progress + 1;
+				end
+				if not AllTheThingsHarvestItems then
+					AllTheThingsHarvestItems = {};
 				end
 				local item = AllTheThingsHarvestItems[data.itemID];
 				if not item then
@@ -11226,13 +11216,6 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	AllTheThingsPCD = _G["AllTheThingsPCD"]; -- For character specific data.
-	if not AllTheThingsPCD then
-		AllTheThingsPCD = { };
-		_G["AllTheThingsPCD"] = AllTheThingsPCD;
-	end
-	AllTheThingsHarvestItems = {};
-	
 	app:UpdateWindowColors();
 	
 	-- Cache information about the player.
@@ -11265,6 +11248,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
+	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedSelfieFilters", {});
@@ -11308,6 +11292,30 @@ app.events.VARIABLES_LOADED = function()
 		myBuildings = {};
 		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
+	end
+	
+	-- Cache your character's flight path data.
+	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
+	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
+	if not myFlightPaths then
+		myFlightPaths = {};
+		flightPaths[app.GUID] = myFlightPaths;
+		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
+	end
+	
+	-- Migrate Flight Path data to the new containers.
+	if AllTheThingsAD.FlightPaths then
+		for key,value in pairs(AllTheThingsAD.FlightPaths) do
+			SetDataSubMember("CollectedFlightPaths", key, value);
+		end
+	end
+	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
+		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
+			if value then
+				myFlightPaths[key] = value;
+				SetDataSubMember("CollectedFlightPaths", key, value);
+			end
+		end
 	end
 	
 	-- Cache your character's follower data.
@@ -11389,12 +11397,51 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Clean up settings
 	local oldsettings = {};
-	for i,key in ipairs({"Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects","WipedCollectedMusicRollsPerCharacter"}) do
+	for i,key in ipairs({
+		"Categories",
+		"Characters",
+		"CollectedArtifacts",
+		"CollectedBuildings",
+		"CollectedBuildingsPerCharacter",
+		"CollectedFactionBonusReputation",
+		"CollectedFactions",
+		"CollectedFactionsPerCharacter",
+		"CollectedFollowers",
+		"CollectedFollowersPerCharacter",
+		"CollectedFlightPaths",
+		"CollectedFlightPathsPerCharacter",
+		"CollectedIllusions",
+		"CollectedMusicRolls",
+		"CollectedMusicRollsPerCharacter",
+		"CollectedSelfieFilters",
+		"CollectedSelfieFiltersPerCharacter",
+		"CollectedSources",
+		"CollectedSpells",
+		"CollectedSpellsPerCharacter",
+		"CollectedTitles",
+		"CollectedTitlesPerCharacter",
+		"CollectedToys",
+		"FilterSeasonal",
+		"FilterUnobtainableItems",
+		"lockouts",
+		"Position",
+		"RandomSearchFilter",
+		"Reagents",
+		"RefreshedCollectionsAlready",
+		"SeasonalFilters",
+		"Sets",
+		"SourceSets",
+		"UnobtainableItemFilters",
+		"WaypointFilters",
+		"EnableTomTomWaypointsOnTaxi",
+		"TomTomIgnoreCompletedObjects",
+		"WipedCollectedMusicRollsPerCharacter"
+	}) do
 		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = oldsettings[key];
+		AllTheThingsAD[key] = value;
 	end
 
 	-- Tooltip Settings

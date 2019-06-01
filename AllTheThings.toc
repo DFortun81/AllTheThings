@@ -3,7 +3,7 @@
 ## Title: AllTheThings
 ## Name: AllTheThings
 ## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
-## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, AllTheThingsPCD
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 1.9.1a
 lib\LibStub\LibStub.lua
