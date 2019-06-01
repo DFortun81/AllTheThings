@@ -39,6 +39,7 @@ _.Zones =
 						},
 						{	-- Secrets in the Sea
 							["criteriaID"] = 2,
+							["sourceQuest"] = 55937,	-- Clearing Out the Cache
 						},
 						{	-- Turning the Tide
 							["criteriaID"] = 3,
@@ -189,12 +190,17 @@ _.Zones =
 					},
 				},
 				{	-- Azerite Weapons Cache
-					["objectID"] = 326588,
+					["objectID"] = 326588, -- TODO: 326588 was the original objectID on horde, but alliance is 326393. Has this changed for horde as well?
 					["coord"] = { 46.0, 51.9, 1355 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Clearing Out the Cache
+							["questID"] = 55937,
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 55861,	-- Let the Residue Lead You
+						},
+						{	-- Clearing Out the Cache
 							["questID"] = 55869,
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 55868,	-- Let the Residue Lead You
 						},
 					},
@@ -208,6 +214,13 @@ _.Zones =
 					["g"] = {
 						currency(1721),	-- Prismatic Manapearls
 					},
+				},
+				{	-- Bound by Honor
+					["questID"] = 55597,
+					["qg"] = 151000,	-- Blademaster Okani
+					["coord"] = { 38.9, 54.6, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55593,	-- Insight into Our Enemies
 				},
 				{	-- Bounty: A Few Coral Ancients
 					["questID"] = 55821,
@@ -465,6 +478,13 @@ _.Zones =
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
 				{	-- Coveted Crystals
+					["questID"] = 55601,
+					["qg"] = 153385,	-- Blademaster Okani
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
+				},
+				{	-- Coveted Crystals
 					["questID"] = 55867,
 					["qg"] = 153422,	-- Chief Telemancer Oculeth
 					["coord"] = { 38.8, 30.4, 1355 },
@@ -538,6 +558,13 @@ _.Zones =
 					["coord"] = { 50.5, 66.2, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55500,	-- Save a Friend
+				},
+				{	-- Deteriorating Knowledge
+					["questID"] = 55595,
+					["qg"] = 151000,	-- Blademaster Okani
+					["coord"] = { 38.9, 54.6, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55593,	-- Insight into Our Enemies
 				},
 				{	-- Deteriorating Knowledge
 					["questID"] = 55863,
@@ -719,6 +746,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54021,	-- The First Arcanist
 				},
+				{	-- Friends in need
+					["questID"] = 56234,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55937,	-- Clearing Out the Cache
+					["g"] = {
+						i(168847),	-- Pearl of Manifest Ambitions
+					},
+				},
 				{	-- Gather Friends
 					["questID"] = 55871, -- also triggered 56544, 56682
 					["qg"] = 151311,	-- Narm
@@ -765,6 +802,13 @@ _.Zones =
 					},
 				},
 				{	-- Insight into Our Enemies
+					["questID"] = 55593,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 54975,	-- A Brief Respite
+				},
+				{	-- Insight into Our Enemies
 					["questID"] = 55862,
 					["qg"] = 151848,	-- Lor'themar Theron
 					["coord"] = { 48.5, 62.1, 1355 },
@@ -786,6 +830,16 @@ _.Zones =
 					["sourceQuests"] = {
 						56156,	-- A Tempered Blade
 						55500,	-- Save A Friend
+					},
+				},
+				{	-- Let the Residue Lead You
+					["questID"] = 55861,
+					["qg"] = 153385,	-- Blademaster Okani
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						55601,	-- Coveted Crystals
+						55860,	-- Sea Slug Liquidation
 					},
 				},
 				{	-- Let the Residue Lead You
@@ -1098,6 +1152,13 @@ _.Zones =
 				},
 				]]--
 				{	-- Sating Snapdragons
+					["questID"] = 55600,
+					["qg"] = 153936,	-- Overseer Hajeer
+					["coord"] = { 36.9, 27.0, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55599,	-- Scouting Undercover
+				},
+				{	-- Sating Snapdragons
 					["questID"] = 55967,
 					["qg"] = 153936,	-- Overseer Hajeer
 					["coord"] = { 36.9, 27.0, 1355 },
@@ -1161,6 +1222,13 @@ _.Zones =
 					["sourceQuest"] = 55384,	-- Settling In
 				},
 				{	-- Scouting Undercover
+					["questID"] = 55599,
+					["qg"] = 153496,	-- Adaru
+					["coord"] = { 38.9, 30.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 55598,	-- What We Know of the Naga
+				},
+				{	-- Scouting Undercover
 					["questID"] = 55866,
 					["qg"] = 153492,	-- Fenn
 					["coord"] = { 38.9, 30.3, 1355 },
@@ -1192,6 +1260,13 @@ _.Zones =
 							["criteriaID"] = 3,
 						},
 					},
+				},
+				{	-- Sea Slug Liquidation
+					["questID"] = 55860,
+					["qg"] = 153385,	-- 
+					["coord"] = { 38.8, 30.4, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
 				},
 				{	-- Sea Slug Liquidation
 					["questID"] = 55870,
@@ -1472,6 +1547,16 @@ _.Zones =
 					["sourceQuest"] = 55869,	-- Clearing Out the Cache
 				},
 				{	-- We Can't Have Dull Weapons
+					["questID"] = 56039,
+					["qg"] = 153936,	-- Overseer Hajeer
+					["coord"] = { 36.9, 27.0, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						55600,	-- Sating Snapdragons
+						56038,	-- Working with Purpose
+					},
+				},
+				{	-- We Can't Have Dull Weapons
 					["questID"] = 56047,
 					["qg"] = 153936,	-- Overseer Hajeer
 					["coord"] = { 36.9, 27.0, 1355 },
@@ -1506,12 +1591,32 @@ _.Zones =
 				{	-- Weapon Rack
 					["objectID"] = 327170,
 					["coord"] = { 34.6, 21.1, 1355 },
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						{	-- Stealing the Naga's Secrets
+							["questID"] = 56037,
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56039,	-- We Can't Have Dull Weapons
+						},
+						{	-- Stealing the Naga's Secrets
 							["questID"] = 56045,
+							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 						},
+					},
+				},
+				{	-- What We Know of the Naga
+					["questID"] = 55598,
+					["qg"] = 153496,	-- Adaru
+					["coord"] = { 38.9, 30.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						55597,	-- Bound by Honor
+						55595,	-- Deteriorating Knowledge
+					},
+					["g"] = {
+						i(169477),	-- Benthic Girdle
+						i(149478),	-- Benthic Bracers
+						i(169481),	-- Benthic Cloak
 					},
 				},
 				{	-- What We Know of the Naga
