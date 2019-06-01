@@ -351,6 +351,7 @@ pet(142087, 1956); 	-- Ironbound Collar (Ironbound Proto-Whelp)
 pet(88148, 792); 	-- Jade Crane Chick
 pet(82774, 845); 	-- Jade Owl
 pet(89686, 856);	-- Jade Tentacle
+pet(46894, 231);	-- Jade Tiger
 pet(104307, 1348); 	-- Jadefire Spirit
 pet(104164, 1333); 	-- Jademist Dancer
 pet(93041, 1156); 	-- Jewel of Maddening Whispers (Mini Mindslayer)
@@ -781,6 +782,7 @@ pet(102146, 1305);	-- Zao, Calfling of Niuzao
 pet(152973, 2084);	-- Zephyrian Prince
 pet(128423, 1255);	-- Zeradar
 pet(13582, 94); 	-- Zergling Leash (Zergling)
+pet(49664, 247);	-- Zipao Tiger
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom
 pet(166455, 2550);	-- Zur'aj the Depleted

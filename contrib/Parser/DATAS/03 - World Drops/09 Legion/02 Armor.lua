@@ -11,6 +11,9 @@ _.WorldDrops =
 					i(141575),	-- Gorrog's Serene Gaze
 					i(141579),	-- Welded Hardskin Helmet
 				}),
+				filter(51, {	-- Neck
+					i(141588),	-- Talisman of Jaimil Lightheart
+				}),
 				n(-321, {	-- Shoulder
 					i(141567),	-- Cyno's Mantle of Sin
 					i(141568),	-- Boughs of Archdruid Van-Yali

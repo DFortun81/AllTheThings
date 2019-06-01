@@ -52,7 +52,7 @@ _.PetJournal =
 		p(1631),	-- Hyjal Wisp
 		p(446),		-- Jade Oozeling
 		p(845),		-- Jade Owl
-		p(231),		-- Jade Tiger
+		un(3, p(231)),	-- Jade Tiger
 		p(1635),	-- K'ute
 		un(20, p(308)),		-- Legs
 		p(1234),	-- Lesser Voidcaller
@@ -100,7 +100,7 @@ _.PetJournal =
 		p(2535),	-- Wicker Wraith
 		p(1937),	-- Wondrous Wisdomball
 		un(6, p(1255)),	-- Zeradar
-		p(247),		-- Zipao Tiger
+		un(3, p(247)),	-- Zipao Tiger
 		p(2550),	-- Zur'aj the Depleted
 	}),
 };
