@@ -1914,6 +1914,16 @@ _.Zones =
 					}),
 
 					
+					q(39656, {	-- Wolf Pack Attack
+						["sourceQuests"] = { 39670 },	-- Critter Scatter Shot
+						["coord"] = { 57.6, 56.5, 650 },
+						["qg"] = 96513,	-- Razik Gazbolt
+						["g"] = {
+							i(131933),	-- Critter Hand Cannon (TOY!)
+						},	
+					}),
+					
+					
 					q(39134, {	-- Wrathshard
 						["sourceQuests"] = { 38909 },	-- Get to High Ground
 						["coord"] = { 49.0, 55.2, 650 },
@@ -2004,9 +2014,6 @@ _.Zones =
 						i(132117),	-- 
 					}),
 					q(39386),	-- Procuring a Prototype
-					q(39656,  {  	-- Wolf Pack Attack
-						i(131933), 		-- Critter Hand Cannon
-					}),
 					q(39417, {	-- Rating Razik
 						["isBreadcrumb"] = true,
 					}),
@@ -2559,8 +2566,13 @@ _.Zones =
 					}),
 					n(96590,  {	-- Gurbog da Basher
 						["questID"] = 40347,
+						["coord"] = { 56.5, 60.7, 650 },
 						["g"] = {
 							i(131775),	-- Da Basher's Toy Armor
+							{	-- Gurbog da Basher (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 5,	-- Gurbog da Basher
+							},
 						},
 					}),
 					n(112419, {	-- Kuglaroth
