@@ -168,93 +168,6 @@ local function GetPersonalDataSubMember(member, submember, default)
 	if AllTheThingsPCD[member][submember] == nil then AllTheThingsPCD[member][submember] = default; end
 	return AllTheThingsPCD[member][submember];
 end
-local function SetDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsAD[member] and AllTheThingsAD[member][submember] then AllTheThingsAD[member][submember][subsubmember] = data; end
-end
-local function GetDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsAD[member] then
-		AllTheThingsAD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsAD[member][submember] then
-			AllTheThingsAD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsAD[member][submember][subsubmember] == nil then
-				AllTheThingsAD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsAD[member][submember][subsubmember];
-end
-local function SetPersonalDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsPCD[member] and AllTheThingsPCD[member][submember] then AllTheThingsPCD[member][submember][subsubmember] = data; end
-end
-local function GetPersonalDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsPCD[member] then
-		AllTheThingsPCD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsPCD[member][submember] then
-			AllTheThingsPCD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsPCD[member][submember][subsubmember] == nil then
-				AllTheThingsPCD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsPCD[member][submember][subsubmember];
-end
-local function SetTempDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsTempData[member] and AllTheThingsTempData[member][submember] then AllTheThingsTempData[member][submember][subsubmember] = data; end
-end
-local function GetTempDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsTempData[member] then
-		AllTheThingsTempData[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsTempData[member][submember] then
-			AllTheThingsTempData[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsTempData[member][submember][subsubmember] == nil then
-				AllTheThingsTempData[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsTempData[member][submember][subsubmember];
-end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
@@ -1140,33 +1053,6 @@ end })
 
 -- Search Caching
 local searchCache = {};
-local function SetNote(key, id, note)
-	wipe(searchCache);
-	collectgarbage();
-	SetDataSubSubMember("Notes", key, id, note);
-end
-local function GetNoteForGroup(group)
-	if group then
-		local key = group.key;
-		if key then
-			return group[key] and GetDataSubSubMember("Notes", key, group[key]);
-		else
-			return GetDataSubMember("Notes", BuildSourceTextForChat(group, 0));
-		end
-	end
-end
-local function SetNoteForGroup(group, note)
-	if group then
-		wipe(searchCache);
-		local key = group.key;
-		if key then
-			SetDataSubSubMember("Notes", key, group[key], note);
-		else
-			SetDataSubMember("Notes", BuildSourceTextForChat(group, 0), note);
-		end
-	end
-end
-app.SetNote = SetNote;
 app.searchCache = searchCache;
 local function CreateObject(t)
 	local s = {};
@@ -2120,13 +2006,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-		end
-		
-		-- If there is a note for this group, show it.
-		local note = GetNoteForGroup(group);
-		if note then
-			tinsert(info, { left = "Custom Note:" });
-			tinsert(info, { left = "|cffffffff" .. note .. "|r" });
 		end
 		
 		-- If there was any informational text generated, then attach that info.
@@ -8033,14 +7912,6 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
 			end
 		end
-		if not reference.itemID then
-			-- If there is a note for this item, show it.
-			local note = GetNoteForGroup(reference);
-			if note then
-				GameTooltip:AddLine("Custom Note:");
-				GameTooltip:AddLine(note, 1, 1, 1);
-			end
-		end
 		GameTooltip:Show();
 	end
 end
@@ -11314,23 +11185,6 @@ SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
-SLASH_AllTheThingsNote1 = "/attnote";
-SlashCmdList["AllTheThingsNote"] = function(cmd)
-	cmd = cmd or "";
-	if cmd == "clear" then
-		SetNote("mapID", app.GetCurrentMapID(), nil);
-		return nil;
-	elseif cmd ~= "" then
-		SetNote("mapID", app.GetCurrentMapID(), cmd);
-		return nil;
-	end
-	
-	-- Print out help
-	print("|cff15abff/attnote|r - Usage:");
-	print("|cff15abff/attnote|r |cffff9333clear|r - Clear the note for the current map.");
-	print("|cff15abff/attnote|r |cffff9333<note>|r - Write a note for the current map.");
-end
-
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
@@ -11535,7 +11389,7 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Clean up settings
 	local oldsettings = {};
-	for i,key in ipairs({"Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects","WipedCollectedMusicRollsPerCharacter"}) do
+	for i,key in ipairs({"Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects","WipedCollectedMusicRollsPerCharacter"}) do
 		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
