@@ -265,7 +265,7 @@ _.Zones =
 					["hordeQuestID"] = 56619,
 					["coord"] = { 58.0, 26.5, 1355 },
 					["isDaily"] = true,
-					["description"] = "Kill enough water elementals around the pool to summon this mob.",
+					["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
 				}),
 				n(154148, {	-- Tidemistress Leth'sindra
 					["allianceQuestID"] = 56620,

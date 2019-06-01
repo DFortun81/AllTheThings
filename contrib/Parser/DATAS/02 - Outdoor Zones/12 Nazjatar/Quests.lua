@@ -251,9 +251,11 @@ _.Zones =
 					["isDaily"] = true,
 					["qgs"] = {
 						151772,	-- Ray Tamer Enaka
+						153772,	-- Lina Bluegill
 					},
 					["coords"] = {
 						{ 39.9, 54.1, 1355 },	-- alliance
+						{ 47.4, 63.2, 1355 },	-- horde
 					},
 					["sourceQuests"] = {
 						56166,	-- The Needs of the People (alliance)
@@ -265,9 +267,11 @@ _.Zones =
 					["isDaily"] = true,
 					["qgs"] = {
 						155941,	-- Tamer Orami
+						151352,	-- Lily Bopip
 					},
 					["coords"] = {
 						{ 39.6, 55.5, 1355 },	-- alliance
+						{ 47.3, 61.9, 1355 },	-- horde
 					},
 					["sourceQuests"] = {
 						56166,	-- The Needs of the People (alliance)
@@ -303,9 +307,11 @@ _.Zones =
 					["isDaily"] = true,
 					["qgs"] = {
 						153591,	-- Mikah Brewbelly
+						151635,	-- Slen Darkroe
 					},
 					["coords"] = {
-						{ 40.0, 55.6, 1355 },
+						{ 40.0, 55.6, 1355 },	-- alliance
+						{ 50.8, 64.7, 1355 },	-- horde
 					},
 					["sourceQuests"] = {
 						56166,	-- The Needs of the People (alliance)
@@ -877,12 +883,12 @@ _.Zones =
 					},
 				},
 				{	-- Misdirection
-					["questID"] = 55767, -- also triggered 56690, 56695
+					["questID"] = 55767,
 					["qg"] = 152985,	-- Dani Bluegill
 					["coord"] = { 31.2, 32.0, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					--["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
+					["sourceQuest"] = 55500,	-- Save A Friend
 				},
 				{	-- Most Delicious Clams
 					["questID"] = 56035, -- also triggered 56153
@@ -964,6 +970,15 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 					["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				},
+				{	-- Poen's Favorite Dish
+					["questID"] = 56151,
+					["qg"] = 151635,	-- Slen Darkroe
+					["coord"] = { 50.8, 64.7, 1355 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56179,	-- The Needs of the People
+					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				},
 				{	-- Preserved Clues
 					["questID"] = 56241,
@@ -1367,6 +1382,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55799,	-- The Tide Turns
 				},
+				{	-- The Eternal Palace: We Can Make It Stronger...
+					["questID"] = 56352,
+					["qg"] = 154408,	-- Rolm
+					["coord"] = { 49.3, 61.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 56353,	-- An Abyssal Opportunity
+				},
 				{	-- The Ever Drowning
 					["questID"] = 56311,
 					["qg"] = 154660,	-- Shandris Feathermoon
@@ -1495,7 +1517,7 @@ _.Zones =
 					["coord"] = { 52.7, 52.8, 1355 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					--["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
+					["sourceQuest"] = 56179,	-- The Needs of the People -- todo: confirm
 				},
 				{	-- To Zin-Azshari
 					["questID"] = 55469,
