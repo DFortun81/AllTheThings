@@ -4477,6 +4477,10 @@ app.BaseInstance = {
 		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "saved" then
 			return t.locks;
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID then
+				return 1;
+			end
 		elseif key == "locks" then
 			local locks = GetTempDataSubMember("lockouts", t.name);
 			if locks then
@@ -4707,6 +4711,10 @@ app.BaseMap = {
 		elseif key == "text" then
 			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
 			return app.GetMapName(t.mapID);
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID then
+				return 1;
+			end
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -11208,6 +11216,7 @@ app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
+app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -11452,6 +11461,7 @@ end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
+	app.CurrentMapID = app.GetCurrentMapID();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
@@ -12069,6 +12079,9 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
+end
+app.events.ZONE_CHANGED_NEW_AREA = function()
+	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D
