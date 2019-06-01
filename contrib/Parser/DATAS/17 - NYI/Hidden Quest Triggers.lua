@@ -23,7 +23,7 @@ _.NeverImplemented =
 	{	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
 		["questID"] = 56505,
 	},
-	{	-- Triggered when turning in "Send the Fleet" on horde. First entry into Nazjatar
+	{	-- Triggered upon first entry into Nazjatar
 		["questID"] = 56881,
 	},
 	{	-- Triggers when you select Vim Brineheart as your friend for the day
@@ -82,5 +82,14 @@ _.NeverImplemented =
 	},
 	{	-- Triggers after making a purchase from Mrrl (Once per day)
 		["questID"] = 55604,
-	}
+	},
+	{	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
+		["questID"] = 56974,
+	},
+	{	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
+		["questID"] = 56975,
+	},
+	{	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
+		["questID"] = 56976,
+	},
 };

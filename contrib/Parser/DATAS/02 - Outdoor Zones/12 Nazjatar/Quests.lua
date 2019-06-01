@@ -95,11 +95,18 @@ _.Zones =
 					["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 				},
 				{	-- A Safer Place
+					["questID"] = 55983,
+					["qg"] = 152084,	-- Mrrl
+					["coord"] = { 48.1, 45.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
+				},
+				{	-- A Safer Place
 					["questID"] = 55530,
 					["qg"] = 152084,	-- Mrrl
 					["coord"] = { 48.1, 45.3, 1355 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 56179,	-- The Needs of the People
+					["sourceQuest"] = 55500,	-- Save a Friend
 				},
 				{	-- A Tempered Blade
 					["questID"] = 56156,
@@ -107,7 +114,10 @@ _.Zones =
 					["coord"] = { 39.4, 53.4, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Must complete this quest for the rest of the zone to become available.",
-					["sourceQuest"] = 55363,	-- Rescue the Farseer (TODO - verify: 55362 "Elemental Fury" as well?)
+					["sourceQuest"] = 55363,	-- Rescue the Farseer
+					["g"] = {
+						spell(304905),	-- World Quests
+					},
 				},
 				{	-- A Way Home
 					["questID"] = 54972,
@@ -116,6 +126,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 					["g"] = {
+						i(163410),	-- 7th Legionnaire's Headpiece
+						i(163405),	-- 7th Legionnaire's Shoulderplates
+						i(163418),	-- 7th Legionnaire's Chestguard
 						i(163380),	-- 7th Legionnaire's Visage
 						i(163377),	-- 7th Legionnaire's Leather Mantle
 						i(163251),	-- 7th Legionnaire's Vest
@@ -132,6 +145,13 @@ _.Zones =
 						i(163453),	-- Honorbound Centurion's Shoulderplates
 						i(163459),	-- Honorbound Centurion's Breastplate
 					},
+				},
+				{	-- A Worthy Ally
+					["questID"] = 57006,
+					["qg"] = 153509,	-- Artisan Okata
+					["coord"] = { 37.8, 55.8, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
 				},
 				{	-- An Abyssal Opportunity
 					["questID"] = 56347,
@@ -289,6 +309,7 @@ _.Zones =
 						{	-- Ancient Technology
 							["questID"] = 56346,
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56156,	-- A Tempered Blade
 						},
 						{	-- Ancient Technology
 							["questID"] = 56354,
@@ -304,40 +325,40 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
-				{	-- Call to Arms: Mechagon
+				{	-- Call to Arms: Mechagon (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 56649,
 					["qg"] = 154640,	-- Grand Marshal Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Mechagon (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+				{	-- Call to Arms: Mechagon (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 56650,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Nazjatar
+				{	-- Call to Arms: Nazjatar (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 56648,
 					["qg"] = 145640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Tirigarde Sound
+				{	-- Call to Arms: Tirigarde Sound (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 52948,
 					["qg"] = 145640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Tirigarde Sound (Unlocks during "A Way Home". pretty sure this is repeatable like other call to arms quests)
+				{	-- Call to Arms: Tirigarde Sound (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 52956,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Zuldazar
+				{	-- Call to Arms: Zuldazar (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 52951,
 					["qg"] = 145640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
@@ -381,6 +402,13 @@ _.Zones =
 					["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
 				},
 				{	-- Create Your Own Strength
+					["questID"] = 57004,
+					["qg"] = 150101,	-- Lady Jaina Proudmoore
+					["coord"] = { 40.3, 55.2, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56350,	-- Scouting the Palace
+				},
+				{	-- Create Your Own Strength
 					["questID"] = 57003,
 					["qg"] = 151848,	-- Lor'themar Theron
 					["coord"] = { 48.5, 62.2, 1355 },
@@ -394,6 +422,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54969,	-- Descent
 					["g"] = {
+						i(163887),	-- 7th Legionnaire's Longsword
+						i(163890),	-- 7th Legionnaire's Claymore
 						i(163885),	-- 7th Legionnaire's Halberd
 						i(163886),	-- 7th Legionnaire's Stave
 						i(170274),	-- 7th Legionnaire's Greathammer
@@ -486,6 +516,19 @@ _.Zones =
 					["coord"] = { 48.8, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 57010,	-- Harnessing the Power
+					["g"] = {
+						i(168850),	-- Time-Lost Battlefield Memento
+					},
+				},
+				{	-- Drowning the Horde
+					["questID"] = 56128,
+					["qg"] = 154653,	-- Crafticus Mindbender
+					["coord"] = { 38.1, 55.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 57010,	-- Harnessing the Power
+					["g"] = {
+						i(168850),	-- Time-Lost Battlefield Memento
+					},
 				},
 				{	-- Elemental Fury
 					["questID"] = 55362,
@@ -547,12 +590,12 @@ _.Zones =
 						154167,	-- Magni Bronzebeard (Horde)
 					},
 					["coords"] = {
-						{ 40.1, 52.5, 1355 },	-- Alliance
+						{ 40.0, 55.1, 1355 },	-- Alliance
 						{ 48.2, 62.4, 1355 },	-- Horde
 					},
 					["sourceQuests"] = {
 						54972,	-- A Way Home (Alliance)
-						55053,	-- A Way Home (Horde) -- confirmed 29.may
+						55053,	-- A Way Home (Horde)
 					},
 				},
 				{	-- Extra Shiny
@@ -562,6 +605,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 55500,	-- Save a Friend
+				},
+				{	-- Fame Waits for Gnome One
+					["questID"] = 57009,
+					["qg"] = 156179,	-- Gila Crosswires
+					["coord"] = { 39.5, 53.5, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
+					["isBreadcrumb"] = true,
 				},
 				{	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
 					["questID"] = 55661,
@@ -612,12 +663,11 @@ _.Zones =
 				{	-- In Deep
 					["questID"] = 56643,
 					["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
-					--["coord"] = { , 1355 }, -- can be picked up anywhere Shandris is located
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
+						56642,	-- Dark Tides
 						56641,	-- Disruption of Power
 						56640,	-- Fortunate Souls
-						56642,	-- Dark Tides
 					},
 				},
 				{	-- In Deep
@@ -949,6 +999,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55385,	-- Scouting the Pens
 					["description"] = "Unlocks the rest of the zone and opens up World Quests.", -- (spellID 304906)
+					["g"] = {
+						spell(304906),	-- World Quests
+					},
 				},
 				{	-- Saving Corin
 					["questID"] = 56321,
@@ -1102,12 +1155,14 @@ _.Zones =
 					},
 					["g"] = {
 						{	-- A Curious Discovery
-							["questID"] = 56560,
-							["races"] = HORDE_ONLY,
-						},
-						{	-- A Curious Discovery
 							["questID"] = 56561,
 							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 56156,	-- A Tempered Blade
+						},
+						{	-- A Curious Discovery
+							["questID"] = 56560,
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55500,	-- Save a Friend
 						},
 					},
 				},

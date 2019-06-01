@@ -1219,6 +1219,7 @@ _.Zones =
 					
 					q(55497, {	-- A Friendly Face
 						["qg"] = 152385,	-- Highmountain Shaman (ebonhorn)
+						["lvl"] = 120,
 						["coord"] = { 18.9, 58.0, 1472 },
 						["sourceQuests"] = { 55425 },	-- Dominating the Indomitable
 					}),
@@ -1294,6 +1295,7 @@ _.Zones =
 
 					q(55407, {	-- Calming the Spine
 						["qg"] = 151695,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
 						["coord"] = { 26.7, 46.2, 1472 },
 						["sourceQuests"] = { 55400 },	-- Take My Hand
 					}),
@@ -1373,6 +1375,7 @@ _.Zones =
 
 					q(55425, {	-- Dominating the Indomitable
 						["qg"] = 152385,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
 						["coord"] = { 17.5, 62.1, 1472 },
 						["sourceQuests"] = { 55407 },	-- Calming the Spine
 					}),
@@ -1720,6 +1723,7 @@ _.Zones =
 					
 					q(55400, {	-- Take My Hand
 						["qg"] = 151641,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
 						["coord"] = { 49.5, 68.3, 650 },
 						["sourceQuests"] = { 55374 },	-- A Disurbance Beneath the Earth
 					}),

@@ -136,7 +136,7 @@ _.Zones =
 						i(169371),	-- Murgle
 					},
 				}),
-				n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but very rarely spawns and drops very important currency
+				n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once (per day?)
 					["questID"] = 56916,
 					["description"] = "Wanders around Nazjatar.",
 					["g"] = {
@@ -240,9 +240,11 @@ _.Zones =
 				n(153658, {	-- Shiz'narasz the Consumer
 					["allianceQuestID"] = 56587,
 					["hordeQuestID"] = 56296,
-					--["coord"] = { 38.9, 9.4, 1355 },	-- from previous PTR build. Confirm if still valid
-					["coord"] = { 41.3, 15.9, 1355 },
 					["isDaily"] = true,
+					["coords"] = {
+						{ 38.9, 9.4, 1355 },
+						{ 41.3, 15.9, 1355 },
+					},
 				}),
 				n(152359, {	-- Siltstalker the Packmother
 					["allianceQuestID"] = 56586,
@@ -284,7 +286,7 @@ _.Zones =
 						i(169376),	-- Skittering Eel
 					},
 				}),
-				n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but very rarely spawns and drops very important currency
+				n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once (per day?)
 					["questID"] = 56915,
 					["description"] = "Wanders around Nazjatar.",
 					["g"] = {

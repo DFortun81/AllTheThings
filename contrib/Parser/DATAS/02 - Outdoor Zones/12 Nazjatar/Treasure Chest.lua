@@ -11,7 +11,7 @@ _.Zones =
 				arcane cache: locked chest, unknown pre-reqs. 53.1, 28.3
 				reinforced cache: locked chest, unknown pre-reqs. 45.1, 22.1
 				]]--
-				["description"] = "Must complete A Tempered Blade (Alliance) or Save a Friend (Horde) before the chests become available.",
+				["description"] = "Must complete |cFFFFD700A Tempered Blade|r (Alliance) or |cFFFFD700Save a Friend|r (Horde) before the chests become available.",
 				["g"] = {
 					o(326394, {	-- Arcane Chest
 						["questID"] = 55954,
@@ -90,21 +90,21 @@ _.Zones =
 						["questID"] = 55959,
 						["coord"] = { 37.9, 6.4, 1355 },
 					}),
-					o(326396, {	-- Glowing Arcane Trunk -- completed this one third on alliance, but it also triggered 56912
-						["questID"] = 55963, -- also triggered 56974, second chest opened as horde
+					o(326396, {	-- Glowing Arcane Trunk
+						["questID"] = 55963,
 						["coord"] = { 43.8, 16.5, 1355 },
 					}),
 					o(326397, {	-- Glowing Arcane Trunk
-						["questID"] = 56912, -- 56975 also triggered while on alliance
+						["questID"] = 56912,
 						["coord"] = { 24.8, 35.2, 1355 },
 					}),
 					o(326398, {	-- Glowing Arcane Trunk
-						["questID"] = 55961, -- 56976 also triggered. Possibly tied to obtaining Mardivas's Magnificent Desalinating Pouch?
+						["questID"] = 55961,
 						["coord"] = { 55.7, 14.5, 1355 },
 						["description"] = "Match 3 Red runes.",
 					}),
 					o(326399, {	-- Glowing Arcane Trunk
-						["questID"] = 55958, -- 56976 also triggered. item trigger?
+						["questID"] = 55958,
 						["coord"] = { 61.4, 22.9, 1355 },
 					}),
 					o(326400, {	-- Glowing Arcane Trunk
@@ -112,7 +112,7 @@ _.Zones =
 						["coord"] = { 64.1, 28.6, 1355 },
 					}),
 					o(329783, {	-- Glowing Arcane Trunk
-						["questID"] = 55960, -- 56974 also triggered for alliance. Possibly first completion id?, 56975 also triggered. Possibly related to receiving Mardiva's Rentention Dimension Invention (22 slot bag)
+						["questID"] = 55960,
 						["coord"] = { 37.2, 19.2, 1355 },
 						["description"] = "Match 4 Cyan runes.",
 					}),

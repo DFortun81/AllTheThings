@@ -117,6 +117,8 @@ _.Zones =
 						currency(1721, {	-- Prismatic Manapearl
 							i(169352),	-- Pearlescent Glimmershell
 							i(167167),	-- Ankoan Waveray
+							i(170204),	-- Symbol of Gral
+							i(169885),	-- Budding Deepcoral
 						}),
 					},
 				}),
@@ -125,7 +127,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							--i(168847),	-- Pearl of Manifest Ambitions -- removed from vendor with no other known source
 							i(168848),	-- Pearl of Perspicuous Intentions
 							i(168849),	-- Pearl of Luminous Designs
 							i(168863),	-- Unbound Azerite Slivershards
@@ -477,8 +478,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						currency(1721, {	-- Prismatic Manapearl
-							i(168846),	-- Pearl of Lucid Dreams
-							i(168847),	-- Pearl of Manifest Ambitions
 							i(168848),	-- Pearl of Perspicuous Intentions
 							i(168849),	-- Pearl of Luminous Designs
 							i(168863),	-- Unbound Azerite Slivershards
@@ -491,17 +490,19 @@ _.Zones =
 							i(168930),	-- Tome of the Quickening Tides
 							i(168839),	-- Regnerating Barrier of the Depths
 						}),
+						i(163073),	-- Conch of Wa'mundi
 						i(169364),	-- Prismatic Softshell
 						i(168610),	-- Tabard of the Ankoan
+						i(170075),	-- Recipe: Unagi Skewer (this seems to be on the alliance vendor, but not horde?)
+						i(169548),	-- Recipe: Contract: Ankoan
 						i(169530),	-- Formula: Accord of Critical Strike (Rank 3)
 						i(169531),	-- Formula: Accord of Haste (Rank 3)
 						i(169532),	-- Formula: Accord of Mastery (Rank 3)
 						i(169533),	-- Formula: Accord of Versatility (Rank 3)
-						i(169548),	-- Recipe: Contract: Ankoan
 						i(169504),	-- Recipe: Greater Mystical Cauldron (Rank 3)
 						i(169492),	-- Recipe: Potion of Empowered Proximity (Rank 3)
 						i(169494),	-- Recipe: Potion of Focused Resolve (Rank 3)
-						i(169493),	-- Recipe: Potion of Reconstitution (Rank 3)
+						--i(169493),	-- Recipe: Potion of Reconstitution (Rank 3) -- is this still in the game? find a new source
 					},
 				}),
 				n(153024, {	-- Suva
