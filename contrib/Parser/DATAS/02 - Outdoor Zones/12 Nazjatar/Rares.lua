@@ -260,6 +260,13 @@ _.Zones =
 						i(169163),	-- Silent Glider
 					},
 				}),
+				n(153928, {	-- Tidelord Dispersius
+					["allianceQuestID"] = 56123,
+					["hordeQuestID"] = 56619,
+					["coord"] = { 58.0, 26.5, 1355 },
+					["isDaily"] = true,
+					["description"] = "Kill enough water elementals around the pool to summon this mob.",
+				}),
 				n(154148, {	-- Tidemistress Leth'sindra
 					["allianceQuestID"] = 56620,
 					["hordeQuestID"] = 56106,

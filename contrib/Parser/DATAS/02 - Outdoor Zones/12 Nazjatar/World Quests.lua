@@ -23,6 +23,10 @@ _.Zones =
 						["questID"] = 55891,
 						["isWQ"] = 120,
 					},
+					{	-- Champion Alzana, Arrow of Thunder
+						["questID"] = 55887,
+						["isWQ"] = 120,
+					},
 					{	-- Champion Kyx'zhul the Deepspeaker
 						["questID"] = 55889,
 						["isWQ"] = 120,

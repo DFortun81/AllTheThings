@@ -219,7 +219,6 @@ _.Zones =
 				},
 				{	-- Bounty: A Few Crabs
 					["questID"] = 55823,
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["qgs"] = {
 						153591,	-- Mikah Brewbelly
@@ -228,6 +227,34 @@ _.Zones =
 					["coords"] = {
 						{ 40.0, 55.6, 1355 },	-- alliance
 						{ 50.8, 64.7, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
+				},
+				{	-- Bounty: A Few Fathom Rays
+					["questID"] = 55825,
+					["isDaily"] = true,
+					["qgs"] = {
+						151772,	-- Ray Tamer Enaka
+					},
+					["coords"] = {
+						{ 39.9, 54.1, 1355 },	-- alliance
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
+				},
+				{	-- Bounty: Dangerous Creatures
+					["questID"] = 55837,
+					["isDaily"] = true,
+					["qgs"] = {
+						155941,	-- Tamer Orami
+					},
+					["coords"] = {
+						{ 39.6, 55.5, 1355 },	-- alliance
 					},
 					["sourceQuests"] = {
 						56166,	-- The Needs of the People (alliance)
@@ -244,7 +271,6 @@ _.Zones =
 				},
 				{	-- Bounty: More Coral Ancients
 					["questID"] = 55830,
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["qgs"] = {
 						153512,	-- Finder Pruc
@@ -253,6 +279,20 @@ _.Zones =
 					["coords"] = {
 						{ 37.8, 55.8, 1355 },	-- alliance
 						{ 49.1, 62.1, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
+					},
+				},
+				{	-- Bounty: More Crabs
+					["questID"] = 55832,
+					["isDaily"] = true,
+					["qgs"] = {
+						153591,	-- Mikah Brewbelly
+					},
+					["coords"] = {
+						{ 40.0, 55.6, 1355 },
 					},
 					["sourceQuests"] = {
 						56166,	-- The Needs of the People (alliance)
@@ -273,12 +313,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "The daily quest that is offered is only available if you select the right follower for the day",	-- the conch/flame gives a "Daily Quest" indicator if the board has something, but it's currently bugged
 					["g"] = {
+						{	-- Wanted: Braxicus
+							["questID"] = 55777,
+							["isDaily"] = true,
+						},
 						{	-- WANTED: Commander Sarj'eth
 							["questID"] = 55770,
 							["isDaily"] = true,
 						},
-						{	-- Wanted: Braxicus
-							["questID"] = 55777,
+						{	-- WANTED: Lady Narjiss
+							["questID"] = 55772,
 							["isDaily"] = true,
 						},
 					},
@@ -563,6 +607,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55361,	-- The Lost Shaman
 				},
+				{	-- Empty Bookcase
+					["objectID"] = 325853,
+					["coord"] = { 78.4, 28.6, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{	-- A Life's Work
+							["questID"] = 55636,
+							["isDaily"] = true,
+							["sourceQuest"] = 56156,	-- A Tempered Blade
+							["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+						},
+					},
+				},
 				{	-- Empty Cask
 					["objectID"] = 325869,
 					["coord"] = { 59.5, 41.8, 1355 },
@@ -782,6 +839,15 @@ _.Zones =
 					["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 					["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				},
+				{	-- Mgglurky's Mugglrgl
+					["questID"] = 56002,
+					["qg"] = 153884,	-- King Mrgl-Mrgl
+					["coord"] = { 25.4, 26.3, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["sourceQuest"] = 56156,	-- A Tempered Blade
+					["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
+				},
 				{	-- No Backs
 					["questID"] = 55529,
 					["qg"] = 152084,	-- Mrrl
@@ -900,7 +966,6 @@ _.Zones =
 				},
 				{	-- Requisition: We Need It All
 					["questID"] = 55801,
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["qgs"] = {
 						151618,	-- Asme Seapearl
@@ -937,10 +1002,6 @@ _.Zones =
 						56179,	-- The Needs of the People (Horde)
 					},
 					["g"] = {
-						{	-- Bounty: A Few Fathom Rays
-							["questID"] = 55825,
-							["isDaily"] = true,
-						},
 						{	-- Bounty: A Few Hydra
 							["questID"] = 55820,
 							["isDaily"] = true,
@@ -959,14 +1020,6 @@ _.Zones =
 						},
 						{	-- Bounty: A Few Snapdragons
 							["questID"] = 55824,
-							["isDaily"] = true,
-						},
-						{	-- Bounty: Dangerous Creatures
-							["questID"] = 55837,
-							["isDaily"] = true,
-						},
-						{	-- Bounty: More Crabs
-							["questID"] = 55832,
 							["isDaily"] = true,
 						},
 						{	-- Bounty: More Hydra
