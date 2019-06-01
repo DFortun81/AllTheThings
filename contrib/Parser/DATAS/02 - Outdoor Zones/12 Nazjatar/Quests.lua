@@ -684,7 +684,7 @@ _.Zones =
 						{	-- Treasure Tale -- unlocks treasure world quests
 							["questID"] = 56247,
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26246,	-- Enchanted Lock
+							["sourceQuest"] = 56246,	-- Enchanted Lock
 							["g"] = {
 								spell(305101),	-- Curios of Nazjatar
 							},
