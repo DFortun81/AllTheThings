@@ -16,8 +16,10 @@ _.Zones =
 			"Vim's Round" npc at 64.1, 57.4
 			"Gorm's Lantern" npc at 36.2, 87.0
 			
+			
 			Map model found at 43.8, 54.7. May not mean anything, but could be worth investigating
 			
+			"Malfunctioning Arcane Device" in hidden cave at 55.5, 28.5. Cave contains a crystal cat, maybe something else?
 			"Murloco's Marvelous Hat" at (45.4, 32.6) gives you  the "Murloco's Marvelous Hat" buff
 			
 			GLoomseeker Yarga at (38.1, 59.2) in the underwater cave has a chest behind him, but it's locked
@@ -364,14 +366,14 @@ _.Zones =
 				},
 				{	-- Call to Arms: Nazjatar (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 56648,
-					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
 				{	-- Call to Arms: Tirigarde Sound (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 52948,
-					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
@@ -384,7 +386,7 @@ _.Zones =
 				},
 				{	-- Call to Arms: Zuldazar (Doesn't appear to be offered anymore. Has this been removed?)
 					["questID"] = 52951,
-					["qg"] = 145640,	-- Grand Marshall Tremblade
+					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads

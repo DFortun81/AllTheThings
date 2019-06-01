@@ -48,6 +48,11 @@ _.Zones =
 						["coord"] = { 58.2, 22.0, 1355 },
 						["description"] = "In an underwater cave.",
 					},
+					{	-- Figurine 5
+						["questID"] = 56986,
+						["coord"] = { 55.3, 27.2, 1355 },
+						["description"] = "On top of a pillar at the back of the room. Jump onto one of the conch shells to reach it."
+					},
 					{	-- Figurine 6
 						["questID"] = 56984,
 						["coord"] = { 61.1, 26.8, 1355 },
@@ -66,9 +71,6 @@ _.Zones =
 						["coord"] = { 59.1, 30.4, 1355 },
 					},
 					-- these ones are still not found:
-					{	-- Figurine 5
-						["questID"] = 56986,
-					},
 					{	-- Figurine 7
 						["questID"] = 56991,
 					},
