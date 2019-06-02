@@ -3206,8 +3206,6 @@ app.BaseAchievementCriteria = {
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
-				--elseif t.achievementID ~= 12891 and t.achievementID ~= 12479 and t.achievementID ~= 12593 and t.achievementID ~= 12455 then
-				--	print(t.achievementID, t.criteriaID, " > ", m); 
 				end
 			end
 		elseif key == "index" then
@@ -4478,7 +4476,7 @@ app.BaseInstance = {
 		elseif key == "saved" then
 			return t.locks;
 		elseif key == "back" then
-			if app.CurrentMapID == t.mapID then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 				return 1;
 			end
 		elseif key == "locks" then
@@ -4712,7 +4710,7 @@ app.BaseMap = {
 			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
 			return app.GetMapName(t.mapID);
 		elseif key == "back" then
-			if app.CurrentMapID == t.mapID then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 				return 1;
 			end
 		elseif key == "link" then
