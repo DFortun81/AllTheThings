@@ -31,7 +31,7 @@ _.Zones =
 								un(2, i(17508)),	-- Forcestone Buckler
 								un(2, i(7749)),	-- Omega Orb
 							})),
-							un(40, qh(1136, {	-- Frostmaw
+							un(40, q(1136, {	-- Frostmaw
 								["g"] = {
 									un(2, i(6720)),	-- Spirit Hunter's Headdress
 								},

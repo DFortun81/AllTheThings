@@ -434,7 +434,7 @@ _.Zones =
 								un(2, i(1009)),	-- Compact Hammer
 								un(2, i(2218)),	-- Craftsman's Dagger
 							})),
-							un(40, qa(5625, {	-- Garments of the Light
+							un(40, q(5625, {	-- Garments of the Light
 								["g"] = {
 									un(2, i(16605)),	-- Friar's Robes of the Light
 								},
