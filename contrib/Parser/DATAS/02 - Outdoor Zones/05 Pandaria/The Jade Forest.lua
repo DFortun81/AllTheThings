@@ -178,7 +178,7 @@ _.Zones =
 					}),
 				}),
 				n(-17, {	-- Quests
-					a(ach(6300, {	-- Upjade Complete [Alliance]
+					ach(6300, {	-- Upjade Complete [Alliance]
 						["groups"] = {
 							crit(1, {	-- Paw'don Village [Completed: Patch 8.0.1 -- Lucetia]
 								["groups"] = {
@@ -707,8 +707,8 @@ _.Zones =
 							}),
 						},
 						["races"] = ALLIANCE_ONLY,	-- Alliance
-					})),
-					h(ach(6534, {	-- Upjade Complete [Horde]
+					}),
+					ach(6534, {	-- Upjade Complete [Horde]
 						["groups"] = {
 							--[[
 							crit(1, {	-- The Remains of Hellscream's Fist
@@ -953,7 +953,7 @@ _.Zones =
 							--]]
 						},
 						["races"] = HORDE_ONLY,
-					})),
+					}),
 					q(30149, {	-- A Feast for the Senses
 						["qg"] = 58413,	-- Jenova Longeye
 						["isDaily"] = true,

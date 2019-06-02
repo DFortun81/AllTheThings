@@ -698,25 +698,24 @@ _.Zones =
 								["qg"] = 26484,	-- Hugh Glass
 							}),
 							q(12134, {	-- Sasha's Hunt
+								["qg"] = 26935,	-- Sasha
+								["sourceQuest"] = 12329,
 								["groups"] = {
 									i(39011),	-- Bloody Bulwark
 									i(39010),	-- Wolfslayer's Crest
 									i(38755),	-- Scepter of Passionate Reprisal
 									i(39110),	-- Staff of Righteous Vengeance
-								},
-								["qg"] = 26935,	-- Sasha
-								["sourceQuests"] = {12329},
+								},			
 							}),
 						-- Need Header for "Heartwood Trading Post"
 							qa(12027, {	-- Mr. Floppy's Perilous Adventure [Alliance]
+								["qg"] = 26588,	-- Emily
 								["groups"] = {
 									i(38714),	-- Path-Cutter's Cord
 									i(39018),	-- Boots of Safe Travel
 									i(39047),	-- Legguards of Unerring Navigation
 									i(39079),	-- Bracers of the Chaperon
 								},
-								["qg"] = 26588,	-- Emily
-								["races"] = ALLIANCE_ONLY,
 							}),
 						-- Need Header for "Harkor's Camp"
 							q(12113, {	--  Nice to Meat You

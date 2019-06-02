@@ -616,7 +616,6 @@ _.Zones =
 				qa(33533, {	-- The Secrets of Gorgrond
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor
 					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 46.3, 38.6, 539 },
 					["qg"] = 73395,	-- Yrel
 				}),

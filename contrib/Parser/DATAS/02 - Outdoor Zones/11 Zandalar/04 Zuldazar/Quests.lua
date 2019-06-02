@@ -112,7 +112,7 @@ _.Zones =
 								},
 								["lvl"] = 120,	-- Don't become available until this level.
 							}),
-							h(ach(11861, {	-- The Throne of Zuldazar
+							ach(11861, {	-- The Throne of Zuldazar
 								["groups"] = {
 									q(47514, {	-- Zuldazar
 										["qg"] = 135775,	-- Scouting Map
@@ -478,7 +478,7 @@ _.Zones =
 									}),
 								},
 								["races"] = HORDE_ONLY,
-							})),
+							}),
 							{	-- A Bargain of Blood
 								["achievementID"] = 12480,	-- A Bargain of Blood
 								["races"] = HORDE_ONLY,		-- Horde Only Races

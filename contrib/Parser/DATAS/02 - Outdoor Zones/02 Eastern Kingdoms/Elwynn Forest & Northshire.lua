@@ -165,7 +165,7 @@ _.Zones =
 							i(2575),	-- 
 						},
 					}),
-					un(40, qa(5624, {	-- Garments of the Light
+					un(40, q(5624, {	-- Garments of the Light
 						["races"] = { 1 },	-- Human
 						["classes"] = { 5 },	-- Priest
 						["g"] = {
@@ -548,7 +548,7 @@ _.Zones =
 								--["races"] = {11},	-- Draenei (assuming this is improperly noted in wowhead)
 								["classes"] = {2},	-- Paladin
 							}),
-							qa(29078, {	-- Beating Them Back!
+							q(29078, {	-- Beating Them Back!
 								["qg"] = 197,	-- 
 								["races"] = {3,4,7,11,22,25},	-- non-Human Alliance races
 							}),
@@ -670,7 +670,7 @@ _.Zones =
 								["qg"] = 197,	-- 
 								["classes"] = {3},	-- Hunter
 							}),
-							qa(29079, {	-- Lions for Lambs
+							q(29079, {	-- Lions for Lambs
 								["qg"] = 197,	-- 
 								["races"] = {3,4,7,11,22,25},	-- non-Human
 							}),

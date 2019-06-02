@@ -327,7 +327,7 @@ _.Zones =
 							i(131531),	-- Sassy Grippers
 						},
 					}),
-					qh(26489, {	-- It's You!!
+					q(26489, {	-- It's You!!
 						["qg"] = 43095,	-- Sassy Hardwrench
 						["sourceQuests"] = {26404,28704},
 						["races"] = {9},

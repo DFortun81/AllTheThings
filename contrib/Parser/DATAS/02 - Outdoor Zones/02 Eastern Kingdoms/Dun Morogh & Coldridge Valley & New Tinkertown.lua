@@ -477,7 +477,7 @@ _.Zones =
 							qa(24475, {	-- All the Other Stuff
 								["qg"] = 37087,	-- 
 							}),
-							qa(24496, {	-- Arcane Rune
+							q(24496, {	-- Arcane Rune
 								["qg"] = 37087,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {8},
@@ -488,16 +488,16 @@ _.Zones =
 							qa(24477, {	-- Dwarven Artifacts
 								["qg"] = 1104,	-- 
 							}),
-							qa(31150, {	-- Elegant Rune
+							q(31150, {	-- Elegant Rune
 								["qg"] = 37087,	-- 
 								["classes"] = {10},	-- Monk
 							}),
-							qa(3109, {	-- Encrypted Rune
+							q(3109, {	-- Encrypted Rune
 								["qg"] = 37087,	-- 
 								["races"] = {3,7},	-- Dwarf, Gnome
 								["classes"] = {4},	-- Rogue
 							}),
-							qa(24532, {	-- Evisceratin' the Enemy
+							q(24532, {	-- Evisceratin' the Enemy
 								["qg"] = 916,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {4},	-- Rogue
@@ -543,7 +543,7 @@ _.Zones =
 							qa(24487, {	-- Whitebeard Needs Ye
 								["qg"] = 37087,	-- 
 							}),
-							qa(24533, {	-- Words of Power
+							q(24533, {	-- Words of Power
 								["qg"] = 837,	-- 
 								["races"] = {3},	-- Dwarf
 								["classes"] = {5},	-- Priest
@@ -590,44 +590,44 @@ _.Zones =
 									},
 								},
 --[[
-								qa(26364, {	-- Down with Crushcog!
+								q(26364, {	-- Down with Crushcog!
 									["qg"] = 42353,	-- 
 									["races"] = {7},
 								}),
-								qa(26318, {	-- Finishin' the Job
+								q(26318, {	-- Finishin' the Job
 									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26285, {	-- Get Me Explosives Back!
+								q(26285, {	-- Get Me Explosives Back!
 									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26423, {	-- Meet the High Tinker
+								q(26423, {	-- Meet the High Tinker
 									["qg"] = 42366,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {4},	-- Rogue
 								}),
-								qa(31137, {	-- Meet the High Tinker
+								q(31137, {	-- Meet the High Tinker
 									["qg"] = 63238,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {10},	-- Monk
 								}),
-								qa(26422, {	-- Meet the High Tinker
+								q(26422, {	-- Meet the High Tinker
 									["qg"] = 42323,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {5},	-- Priest
 								}),
-								qa(26421, {	-- Meet the High Tinker
+								q(26421, {	-- Meet the High Tinker
 									["qg"] = 42331,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {8},	-- Mage
 								}),
-								qa(26425, {	-- Meet the High Tinker
+								q(26425, {	-- Meet the High Tinker
 									["qg"] = 42324,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {1},	-- Warrior
 								}),
-								qa(26424, {	-- Meet the High Tinker
+								q(26424, {	-- Meet the High Tinker
 									["qg"] = 460,	-- 
 									["races"] = {7},	-- Gnome
 									["classes"] = {9},	-- Warlock
@@ -637,23 +637,23 @@ _.Zones =
 									["races"] = {7,9},	-- Gnome, Goblin
 									["classes"] = {3},	-- Hunter
 								}),
-								qa(26284, {	-- Missing in Action
+								q(26284, {	-- Missing in Action
 									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26333, {	-- No Tanks!
+								q(26333, {	-- No Tanks!
 									["qg"] = 42491,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26373, {	-- On to Kharanos
+								q(26373, {	-- On to Kharanos
 									["qg"] = 42353,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26329, {	-- One More Thing
+								q(26329, {	-- One More Thing
 									["qg"] = 42708,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26342, {	-- Paint it Black
+								q(26342, {	-- Paint it Black
 									["qg"] = 42353,	-- 
 									["races"] = {7},	-- Gnome
 								}),
@@ -661,15 +661,15 @@ _.Zones =
 									["qg"] = 42553,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(26339, {	-- Staging in Brewnall
+								q(26339, {	-- Staging in Brewnall
 									["qg"] = 42366,	-- 
 									["races"] = {7},	-- Gnome
 								}),
-								qa(31138, {	-- The Arts of a Monk
+								q(31138, {	-- The Arts of a Monk
 									["qg"] = 63238,	-- 
 									["classes"] = {10},	-- Monk
 								}),
-								qa(26207, {	-- The Arts of a Rogue
+								q(26207, {	-- The Arts of a Rogue
 									["qg"] = 42366,	-- 
 									["classes"] = {4},	-- Rogue
 								}),
@@ -764,7 +764,7 @@ _.Zones =
 						n(-40, {	-- Legacy
 							["g"] = {
 								n(-17, {	-- Quests (Legacy)
-									un(40, qa(31138, {		-- The Arts of a Monk
+									un(40, q(31138, {		-- The Arts of a Monk
 										["g"] = {
 											i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flad as unobtainable), Monk quest listed here is not available upon testing
 										},
