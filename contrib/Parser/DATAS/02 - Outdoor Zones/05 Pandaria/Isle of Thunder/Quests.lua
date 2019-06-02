@@ -6,6 +6,19 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(504, {	-- Isle of Thunder
 			n(-17, { 	-- Quests
+				qa(32655),	-- A Bold Idea
+				q(32571, {	-- A Wing to Fly On (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32506, {	-- A Wing to Fly On (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32558, {	-- All In the Family
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(32706, {	-- Allies in the Shadows
 					["sourceQuest"] = 32681,	-- The Storm Gathers
 					["races"] = ALLIANCE_ONLY,
@@ -21,33 +34,6 @@ _.Zones =
 						67990,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 						70371,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 					},
-					["u"] = 2,	-- Never Available to Players
-				}),
-				q(32707, {	-- Secrets in the Isle of Thunder
-					["sourceQuests"] = {
-						32709,	-- Allies in the Shadows [Horde]
-						32706,	-- Allies in the Shadows [Alliance]
-					},
-					["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
-				}),
-				qa(32655),	-- A Bold Idea
-				q(32571, {	-- A Wing to Fly On (A)
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32506, {	-- A Wing to Fly On (H)
-					["isDaily"] = true,
-					["races"] = HORDE_ONLY,
-				}),
-				q(32558, {	-- All In the Family
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32706, {	-- Allies in the Shadows (A)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(32709, {	-- Allies in the Shadows (H)
-					["races"] = HORDE_ONLY,
 				}),
 				q(32578, {	-- Among the Bones (A)
 					["isDaily"] = true,
@@ -214,7 +200,7 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(32676, {	-- Extended Shore Leave (A)
+				q(32676, {	-- Extended Shore Leave (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
@@ -269,208 +255,439 @@ _.Zones =
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				qh(32730),	-- Ihgaluk Crag
-				qa(32732),	-- Ihgaluk Crag
-				qh(32562),	-- Imposing Threat
-				qa(32577),	-- Imposing Threat
-				qa(32581),	-- Imposing Threat
-				qh(32522),	-- Imposing Threat
-				qa(32528),	-- Into the Crypts
-				qh(32226),	-- Into the Crypts				
-				
-				
-				
-				
-				qh(32299),	-- Just Some Light Clean-Up Work
-				qa(32546),	-- Just Some Light Clean-Up Work
-				qa(32560),	-- Keep It Secret
-				qh(32234),	-- Knowledge Is Power
-				qh(32491),	-- Left To Rot
-				qa(32548),	-- Left To Rot
-				qh(32589),	-- Life Blood
-				qh(32283),	-- Loa-saur
-				qa(32552),	-- Loa-saur
-				q(32626),	-- Loot Room Key Tracking Quest
-				
-				
-				
-				
-				
-				qh(32303),	-- Made for War
-				qa(32632),	-- Made for War
-				qh(32266),	-- Mana Manifestations
-				qa(32638),	-- Mana Scavengers
-				qh(32254),	-- Manipulating the Saurok
-				qa(32536),	-- Manipulating the Saurok
-				qh(32208),	-- Maximum Capacitor
-				qa(32586),	-- Maximum Capacitor
-				
-				
-				
-				
-				
-				qa(32568),	-- No Time To Rest
-				qa(32301),	-- Old Enemies
-				qh(32213),	-- Old Enemies
-				qa(32588),	-- On Her Magic-ey Secret Service
-				qa(32557),	-- Out of Enemy Hands
-				qa(32637),	-- Overpowered
-				qh(32305),	-- Overpowered
-				q(32470),	-- Plundering Profferings [PH]
-				qh(32494),	-- Power Play
-				qa(32541),	-- Preventing a Future Threat
-				qh(32227),	-- Preventing a Future Threat
-				qa(32544),	-- Pterrible Ptorment
-				qh(32216),	-- Pterrible Ptorment
-				
-				
-				
-				
-				
-				q(32695),	-- Quest Reward Summary: PvE Stage 0-2
-				q(32701),	-- Quest Reward Summary: PvE Stage 0-2
-				q(32703),	-- Quest Reward Summary: PvE Stage 3
-				q(32697),	-- Quest Reward Summary: PvE Stage 3
-				q(32704),	-- Quest Reward Summary: PvE Stage 4-5
-				q(32698),	-- Quest Reward Summary: PvE Stage 4-5
-				q(32694),	-- Quest Reward Summary: PvP Stage 1-5
-				q(32700),	-- Quest Reward Summary: PvP Stage 1-5
-				
-				
-				
-				
-				
-				qa(32608),	-- Raiding the Vault
-				qh(32677),	-- Raiding the Vault
-				qa(32582),	-- Raining Bones
-				qh(32294),	-- Raining Bones
-				q(32610),	-- Rare Boss Tracking Quest
-				q(32609),	-- Rare Chest Tracking Quest
-				q(32611),	-- Rare Drop Tracking Quest
+				q(32732, {	-- Ihgaluk Crag (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32730, {	-- Ihgaluk Crag (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32577, {	-- Imposing Threat (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32581, {	-- Imposing Threat (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32562, {	-- Imposing Threat (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32522, {	-- Imposing Threat (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32528, {	-- Into the Crypts (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32226, {	-- Into the Crypts (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32546, {	-- Just Some Light Clean-Up Work (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32299, {	-- Just Some Light Clean-Up Work (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32560, {	-- Keep It Secret (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32234, {	-- Knowledge Is Power (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32548, {	-- Left To Rot (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32491, {	-- Left To Rot (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32589, {	-- Life Blood (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(95590),	-- Glorious Standard of the Sunreaver Onslaught (TOY!)
+					},
+				}),
+				q(32552, {	-- Loa-saur (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32283, {	-- Loa-saur (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32632, {	-- Made for War (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32303, {	-- Made for War (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32266, {	-- Mana Manifestations (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32638, {	-- Mana Scavengers (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32536, {	-- Manipulating the Saurok (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32254, {	-- Manipulating the Saurok (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32586, {	-- Maximum Capacitor (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32208, {	-- Maximum Capacitor (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32568, {	-- No Time To Rest (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32301, {	-- Old Enemies (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32213, {	-- Old Enemies (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32588, {	-- On Her Magic-ey Secret Service (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32557, {	-- Out of Enemy Hands (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32637, {	-- Overpowered (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32305, {	-- Overpowered (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32494, {	-- Power Play (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32541, {	-- Preventing a Future Threat (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32227, {	-- Preventing a Future Threat (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32544, {	-- Pterrible Ptorment (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32216, {	-- Pterrible Ptorment (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32608, {	-- Raiding the Vault (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32677, {	-- Raiding the Vault (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32582, {	-- Raining Bones (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32294, {	-- Raining Bones (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
 				q(32307, {	-- Reader for the Dead Tongue
-					["classes"] = { 9 },	-- Warlock
 					["description"] = "This is part of the Warlock's green fire questline. It will be offered after the player summons their demons and speaks to them about The Codex of Xerrath.",
+					["classes"] = { 9 },	-- Warlock
 				}),
-				qh(32224),	-- Rise No More!
-				qa(32532),	-- Rise No More!
-				
-				
-				
-				
-				
-				q(32467),	-- Sacrificial Prevention [PH]
-				qa(32550),	-- Saur Loser
-				qh(32207),	-- Saur Loser
-				qh(32209),	-- Save Our Scouts!
-				q(32707),	-- Secrets in the Isle of Thunder
-				qa(32599),	-- Securing A Future
+				q(32532, {	-- Rise No More! (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32224, {	-- Rise No More! (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32550, {	-- Saur Loser (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32207, {	-- Saur Loser (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32209, {	-- Save Our Scouts!
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32707, {	-- Secrets in the Isle of Thunder
+					["sourceQuests"] = {
+						32709,	-- Allies in the Shadows [Horde]
+						32706,	-- Allies in the Shadows [Alliance]
+					},
+					["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+				}),
+				q(32599, {	-- Securing A Future
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
+					},
+				}),
 				q(32708),	-- Setting the Trap
-				qh(32507),	-- Skin of the Saurok
-				qa(32549),	-- Skin of the Saurok
-				qh(32220),	-- Soul Surrender
-				qa(32526),	-- Soul Surrender
-				qh(32264),	-- Spellbound
-				qa(32633),	-- Spellbound
-				qa(13484),	-- Spring Collectors
-				qh(32219),	-- Stone Cold
-				qa(32533),	-- Stone Cold
-				i(94721, {	-- Strange Metal Ingot (Isle of Thunder)
-					q(32621, {	-- Lightning Steel
-						["groups"] = {
-							i(94553, {	-- Notes on Lightning Steel
-								["groups"] = {
-									i(94568),	-- Plans: Drakefist Hammer, Reborn
-									i(94572),	-- Plans: Fireguard, Reborn
-									i(94552),	-- Plans: Lightning Steel Ingot
-									i(94571),	-- Plans: Lionheart Blade, Reborn
-									i(94569),	-- Plans: Lunar Crescent, Reborn
-									i(94570),	-- Plans: Planar Edge, Reborn
-									i(94567),	-- Plans: Thunder, Reborn
-								},
-							}),
-						},
-						["qg"] = 69461,	-- Itoka
-						["requireSkill"] = 164,	-- Blacksmithing
-					}),
+				q(32549, {	-- Skin of the Saurok (A)
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(32605),	-- Subtle Encouragement
-				qa(32606),	-- Subtle Encouragement
-				qh(32275),	-- Surgical Death
-				qa(32542),	-- Surgical Strike
-				
-				
-				
-				
-				
-				qh(32268),	-- Tactical Mana Bombs
-				qa(32628),	-- Tactical Mana Bombs
-				qa(32654),	-- Tear Down This Wall!
-				qh(32276),	-- Tear Down This Wall!
-				qa(32644),	-- The Assault on Shaol'mara
-				qh(32212),	-- The Assault on Zeb'tula
-				qh(32523),	-- The Beast Pens
-				qa(32567),	-- The Beast Pens
-				qh(32524),	-- The Beating of Troll Drums
-				qh(32495),	-- The Bloodletter
-				qa(32530),	-- The Bloodletter
-				qa(32529),	-- The Call of Thunder
-				qh(32225),	-- The Call of Thunder
-				qa(32531),	-- The Conquest of Stone
-				qh(32517),	-- The Conquest of Stone
-				qh(32728),	-- The Court of Bones
-				qa(32731),	-- The Court of Bones
-				qa(32547),	-- The Creeping Carpet of Ihgaluk
-				qh(32489),	-- The Creeping Carpet of Ihgaluk
-				q(32505),	-- The Crumbled Chamberlain
-				qh(32279),	-- The Fall of Shan Bu
-				qa(32656),	-- The Fall of Shan Bu
-				qa(11970),	-- The Master of Summer Lore
-				qa(32556),	-- The More You Know
-				qh(32274),	-- The Residents of Ihgaluk
-				qa(32545),	-- The Residents of Ihgaluk
-				qa(32574),	-- The Shuddering Moor
-				qh(32228),	-- The Shuddering Moor
-				qa(32535),	-- The Skumblade Threat
-				qh(32204),	-- The Skumblade Threat
-				qa(32572),	-- The Sleepless Legion
-				qh(32285),	-- The Sleepless Legion
-				qh(32680),	-- The Storm Gathers
-				qa(32681),	-- The Storm Gathers
-				qh(32230),	-- The Zandalari Colossus
-				qa(32575),	-- The Zandalari Colossus
-				qh(32493),	-- They All Fall Down
-				qh(32206),	-- This Just Won't Do
-				qh(32678),	-- Thunder Calls
-				qa(32679),	-- Thunder Calls
-				q(32629),	-- Thunderwing Captured Tracking Quest
-				qa(32652),	-- To the Skies!
-				qh(32277),	-- To the Skies!
-				q(32296),	-- Treasures of the Thunder King
-				
-				
-				
-				
-				
-				q(32469),	-- Urging on Hatchlings [PH]
-				qh(32233),	-- Very Disarming
-				qh(32232),	-- What's Inside Counts
-				qa(32733),	-- Za'Tual
-				qh(32729),	-- Za'Tual
-				qa(32583),	-- Zandalari on the Rise
-				qh(32564),	-- Zandalari on the Rise
-				qa(32681, {	-- The Storm Gathers
-					i(95567),	-- Kirin Tor Beacon
+				q(32507, {	-- Skin of the Saurok (H)
+					["races"] = HORDE_ONLY,
 				}),
-				qh(32680, {	-- The Storm Gathers
-					i(95568),	-- Sunreaver Beacon
+				q(32526, {	-- Soul Surrender (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32220, {	-- Soul Surrender (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32633, {	-- Spellbound (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32264, {	-- Spellbound (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32533, {	-- Stone Cold (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32219, {	-- Stone Cold (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				{	---------- Lightning Steel
+					["requireSkill"] = 164,	-- Blacksmithing
+					["questID"] = 32621,	-- Lightning Steel
+					["itemID"] = 94721,	-- Strange Metal Ingot
+					["coord"] = { 57.6, 33.8, 504 },
+					["qg"] = 69461,	-- Itoka
+					["g"] = {
+						i(94553, {	-- Notes on Lightning Steel
+							i(94568),	-- Plans: Drakefist Hammer, Reborn
+							i(94572),	-- Plans: Fireguard, Reborn
+							i(94552),	-- Plans: Lightning Steel Ingot
+							i(94571),	-- Plans: Lionheart Blade, Reborn
+							i(94569),	-- Plans: Lunar Crescent, Reborn
+							i(94570),	-- Plans: Planar Edge, Reborn
+							i(94567),	-- Plans: Thunder, Reborn
+						}),
+					},
+				},
+				q(32606, {	-- Subtle Encouragement (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32605, {	-- Subtle Encouragement (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32275, {	-- Surgical Death
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32542, {	-- Surgical Strike
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32628, {	-- Tactical Mana Bombs (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32268, {	-- Tactical Mana Bombs (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32654, {	-- Tear Down This Wall! (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32276, {	-- Tear Down This Wall! (H)
+					["races"] = HORDE_ONLY,
+				}),
+				q(32644, {	-- The Assault on Shaol'mara
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32212, {	-- The Assault on Zeb'tula
+					["races"] = HORDE_ONLY,
+				}),
+				q(32567, {	-- The Beast Pens (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32523, {	-- The Beast Pens (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32524, {	-- The Beating of Troll Drums
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32530, {	-- The Bloodletter (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32495, {	-- The Bloodletter (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32529, {	-- The Call of Thunder (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32225, {	-- The Call of Thunder (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32531, {	-- The Conquest of Stone (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32517, {	-- The Conquest of Stone (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32731, {	-- The Court of Bones (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32728, {	-- The Court of Bones (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32547, {	-- The Creeping Carpet of Ihgaluk (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32489, {	-- The Creeping Carpet of Ihgaluk (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32505, {	-- The Crumbled Chamberlain
+					["isWeekly"] = true,
+				}),
+				q(32656, {	-- The Fall of Shan Bu (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32279, {	-- The Fall of Shan Bu (H)
+					["races"] = HORDE_ONLY,
+				}),
+				q(32556, {	-- The More You Know
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32545, {	-- The Residents of Ihgaluk (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32274, {	-- The Residents of Ihgaluk (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32574, {	-- The Shuddering Moor (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32228, {	-- The Shuddering Moor (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32535, {	-- The Skumblade Threat (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32204, {	-- The Skumblade Threat (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32572, {	-- The Sleepless Legion (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32285, {	-- The Sleepless Legion (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32575, {	-- The Zandalari Colossus (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32230, {	-- The Zandalari Colossus (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32493, {	-- They All Fall Down
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32206, {	-- This Just Won't Do
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32652, {	-- To the Skies! (A)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32277, {	-- To the Skies! (H)
+					["races"] = HORDE_ONLY,
+				}),
+				q(32296, {	-- Treasures of the Thunder King
+					["isWeekly"] = true,
+				}),
+				q(32233, {	-- Very Disarming
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32232, {	-- What's Inside Counts
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32733, {	-- Za'Tual (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32729, {	-- Za'Tual (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(32583, {	-- Zandalari on the Rise (A) -- not implemented?
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(32564, {	-- Zandalari on the Rise (H) -- not implemented?
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),
