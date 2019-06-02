@@ -7,15 +7,15 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 25,
 		["mapID"] = 301,
 		["coord"] = { 50.91, 70.37, 12 },	-- Razorfen Kraul, Kalimdor [Southern Barrens]
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(26906, {	-- Agamaggan
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
 				q(26905, {	-- Agamaggan's Charge
 					["qg"] = 44415,	-- Spirit of Agamaggan
-					["sourceQuests"] = { 26906 },	-- Agamaggan
-					["groups"] = {
+					["sourceQuest"] = 26906,	-- Agamaggan
+					["g"] = {
 						i(65968),	-- Agamaggan-Blessed Greaves
 						i(65991),	-- Boots of the Noble Path
 						i(65944),	-- Charlga's Breastplate
@@ -26,8 +26,35 @@ _.Instances = { tier(1, {	-- Classic
 				q(26901, {	-- Going, Going, Guano!
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
+				q(1142, {	-- Mortality Wanes
+					["u"] = 40,
+					["qg"] = 4510,	-- Heralath Fallowbrook
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(6751)),	-- Mourning Shawl
+						un(2, i(6752)),	-- Lancer Boots
+					},
+				}),
 				q(26907, {	-- Take Them Down!
 					["qg"] = 44402,	-- Auld Stonespire
+				}),
+				q(24630, {	-- The Crone of the Kraul
+					["u"] = 40,
+					["g"] = {
+						un(2, i(53155)),	-- Agamaggan's Thorn
+						un(2, i(53158)),	-- Spaulder of the Matriarch
+						un(2, i(57408)),	-- Bloodshard Band
+						un(2, i(53157)),	-- Charlga's Cowl
+					},
+				}),
+				q(1144, {	-- Willix the Importer
+					["u"] = 40,
+					["qg"] = 4508,	-- Willix the Importer
+					["g"] = {
+						un(2, i(6748)),	-- Monkey Ring
+						un(2, i(6750)),	-- Snake Hoop
+						un(2, i(6749)),	-- Tiger Band
+					},
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -163,6 +190,26 @@ _.Instances = { tier(1, {	-- Classic
 						74550,	-- Razorfen Kraulshaper
 					},
 				}),
+				n(4517, {	-- Death's Head Priest
+					["u"] = 43,
+					["g"] = {
+						un(7, i(3569)), 	-- Vicar's Robe
+					},
+				}),
+				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
+					["u"] = 43,
+					["g"] = {
+						un(2, i(2816)),	-- Death Speaker Scepter
+						i(6685),	-- Death Speaker Mantle
+						un(2, i(6682)),	-- Death Speaker Robes
+					},
+				}),
+				n(4438, {	-- Razorfen Spearhide
+					["u"] = 43,
+					["g"] = {
+						un(2, i(6679)),	-- Armor Piercer
+					},
+				}),
 			}),
 			cr(75001, e(896, {	-- Hunter Bonetusk
 				i(6681),	-- Thornspike
@@ -218,38 +265,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(6694),	-- Heart of Agamaggan
 				i(6693),	-- Agamaggan's Clutch
 			})),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, qa(1142, {	-- Mortality Wanes
-						un(2, i(6751)),	-- Mourning Shawl
-						un(2, i(6752)),	-- Lancer Boots
-					})),
-					un(40, q(24630, {	-- The Crone of the Kraul
-						un(2, i(53155)),	-- Agamaggan's Thorn
-						un(2, i(53158)),	-- Spaulder of the Matriarch
-						un(2, i(57408)),	-- Bloodshard Band
-						un(2, i(53157)),	-- Charlga's Cowl
-					})),
-					un(40, q(1144, {	-- Willix the Importer
-						un(2, i(6748)),	-- Monkey Ring
-						un(2, i(6750)),	-- Snake Hoop
-						un(2, i(6749)),	-- Tiger Band
-					})),
-				}),
-				n(0, {	-- Zone Drop (Legacy)
-					n(4517, {	-- Death's Head Priest
-						un(7, i(3569)), 	-- Vicar's Robe
-					}),
-					n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
-						un(2, i(2816)),	-- Death Speaker Scepter
-						i(6685),	-- Death Speaker Mantle
-						un(2, i(6682)),	-- Death Speaker Robes
-					}),
-					n(4438, {	-- Razorfen Spearhide
-						un(2, i(6679)),	-- Armor Piercer
-					}),
-				}),
-			}),
 		},
 	}),
 })};

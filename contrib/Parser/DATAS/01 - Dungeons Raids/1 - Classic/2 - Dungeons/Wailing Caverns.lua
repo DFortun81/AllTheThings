@@ -7,11 +7,11 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 12,
 		["mapID"] = 279,
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Wailing Caverns [Northern Barrens]
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(26870, {	-- Cleansing the Caverns
 					["qg"] = 5768,	-- Ebru
-					["groups"] = {
+					["g"] = {
 						i(65911), 	-- Anacondra's Robe
 						i(65985), 	-- Cleansed Pauldrons
 						i(65961), 	-- Cobrahn's Boots
@@ -21,11 +21,37 @@ _.Instances = { tier(1, {	-- Classic
 						i(65937), 	-- Serpentis' Gloves
 					},
 				}),
+				q(1487, {	-- Deviate Eradication
+					["u"] = 40,
+					["qg"] = 5768,	-- Ebru
+					["g"] = {
+						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
+						un(2, i(8071)),	-- Sizzle Stick
+						un(2, i(6481)),	-- Dagmire Gauntlets
+					},
+				}),
+				q(1486, {	-- Deviate Hides
+					["u"] = 40,
+					["qg"] = 5767,	-- Nalpak
+					["g"] = {
+						un(2, i(6480)),	-- Slick Deviate Leggings
+						un(2, i(918)),	-- Deviate Hide Pack
+					},
+				}),
 				q(26872, {	-- Deviate Hides
 					["qg"] = 5767,	-- Nalpak
 				}),
 				q(26873, {	-- Preemptive Methods
 					["qg"] = 5767,	-- Nalpak
+				}),
+			}),
+			n(-2, {	-- Vendors
+				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
+					["u"] = 43,	-- Removed from game
+					["g"] = {
+						un(7, i(6474)),	-- Pattern: Deviate Scale Cloak
+						un(7, i(6475)),	-- Pattern: Deviate Scale Gloves
+					},
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -79,7 +105,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(5912, { 			-- Deviate Faerie Dragon
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {
+				["g"] = {
 					i(5243), 	-- Firebelcher
 					i(6632), 	-- Feyscale Cloak
 				},
@@ -102,28 +128,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(6627), 	-- Mutant Breastplate
 				i(6463),	-- Deep Fathom Ring
 			})),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, q(1487, {	-- Deviate Eradication
-						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
-						un(2, i(8071)),	-- Sizzle Stick
-						un(2, i(6481)),	-- Dagmire Gauntlets
-					})),
-					un(40, q(1486, {	-- Deviate Hides
-						un(2, i(6480)),	-- Slick Deviate Leggings
-						un(2, i(918)),	-- Deviate Hide Pack
-					})),
-				}),
-				n(-2, {	-- Vendors (Legacy)
-					n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
-						["u"] = 43,	-- Removed from game
-						["groups"] = {
-							un(7, i(6474)),	-- Pattern: Deviate Scale Cloak
-							un(7, i(6475)),	-- Pattern: Deviate Scale Gloves
-						},
-					}),
-				}),
-			}),
 		},
 	}),
 })};

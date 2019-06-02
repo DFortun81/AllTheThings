@@ -18,4 +18,16 @@ _.NeverImplemented =
 	{	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 		["questID"] = 37676,
 	},
+	{	-- Razorfen Downs: dungeon completion
+		["questID"] = 35598,
+	},
+	{	-- Razorfen Kraul: dungeon completion
+		["questID"] = 35615,
+	},
+	{	-- Wailing Caverns: bonus objective complete. Does not trigger when all bonus objects are completed
+		["questID"] = 35307,
+	},
+	{	-- Wailing Caverns: Naralax awakening ritual complete with all bonus objectives met
+		["questID"] = 35303,
+	},
 };
