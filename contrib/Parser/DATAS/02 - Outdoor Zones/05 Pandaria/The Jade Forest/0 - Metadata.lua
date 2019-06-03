@@ -3,11 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(424, {	-- Pandaria
-		m(371, { -- The Jade Forest
-				["lvl"] = 80,
-				["achievementID"] = 6351,
-				["maps"] = {
+  m(424, {	-- Pandaria
+    m(371, { -- The Jade Forest
+        ["lvl"] = 80,
+        ["achievementID"] = 6351,
+        ["maps"] = {
           372,	-- Greenstone Quarry
           373,	-- Greenstone Quarry #2
           374,	-- The Widows Wail
@@ -16,8 +16,8 @@ _.Zones =
           448,	-- the jade forest
           791,	-- temple of the jade serpent #1
           792,	-- temple of the jade serpent #2
-				},
+        },
         ["description"] = "|cff66ccffThe Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.|r",
-		}),
-	}),
+    }),
+  }),
 };
