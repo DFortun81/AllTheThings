@@ -17,6 +17,7 @@ _.Zones =
 			["g"] = {
 				n(-169, { 	-- Emissary Quests
 					q(42420, {	-- Court of Farondis
+						["repeatable"] = true,
 						["g"] = {
 							i(157825, {	-- Farondis Lockbox
 								["g"] = {
@@ -541,9 +542,9 @@ _.Zones =
 								},
 							})),
 						},
-						["repeatable"] = true,
 					}),
 					q(42422, {	-- The Wardens
+						["repeatable"] = true,
 						["g"] = {
 							i(157827, {	-- Warden's Field Kit
 								["g"] = {
@@ -1072,10 +1073,10 @@ _.Zones =
 								},
 							})),
 						},
-						["repeatable"] = true,
 					}),
-					n(-206, {	-- Paragon
+					n(-206,  {	-- Paragon
 						q(46745, {	-- Supplies from the Court
+							["repeatable"] = true,
 							["g"] = {
 								i(152102, {	-- Farondis Chest
 									i(147806),	-- Cloudwing Hippogryph
@@ -1084,58 +1085,52 @@ _.Zones =
 									i(147806),	-- Cloudwing Hippogryph
 								})),
 							},
-							["repeatable"] = true,
 						}),
 						q(46749, {	-- Supplies From the Wardens
+							["repeatable"] = true,
 							["g"] = {
-								{	-- Warden's Supply Kit
-									["itemID"] = 152107,	-- Warden's Supply Kit
-									["g"] = {
-										{	-- Sira's Extra Cloak
-											["itemID"] = 147843,	-- Sira's Extra Cloak
-										},
-									},
-								},
+								i(152107, {	-- Warden's Supply Kit
+									i(147843),	-- Sira's Extra Cloak (TOY!)
+								}),
 								un(2, i(146902, {	-- Warden's Supply Kit
 									i(147843),	-- Sira's Extra Cloak
 								})),
 							},
-							["repeatable"] = true,
 						}),
 					}),
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1613, {	-- Azurewing Repose, Azsuna
-						["coord"] = { 48.4, 28 },
+						["coord"] = { 48.4, 28.0, 630 },
 					}),
 					fp(1615, {	-- Challiane's Terrace, Azsuna
-						["coord"] = { 40.8, 9 },
+						["coord"] = { 40.8, 9.00, 630 },
 					}),
 					fp(1846, {	-- Faronaar (Eagle)
-						["coord"] = { 24.4, 43 },
+						["coord"] = { 24.4, 43.0, 630 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 					fp(1859, {	-- Felblaze Ingress, Azsuna
-						["coord"] = { 63.8, 28.4 },
+						["coord"] = { 63.8, 28.4, 630 },
 					}),
 					fp(1861, {	-- Illidari Perch, Azsuna
-						["coord"] = { 31.8, 46.2 },
+						["coord"] = { 31.8, 46.2, 630 },
 					}),
 					fp(1622, {	-- Illidari Stand, Azsuna
-						["coord"] = { 44.6, 43.8 },
+						["coord"] = { 44.6, 43.8, 630 },
 					}),
 					fp(1845, {	-- Isle of the Watchers (Eagle)
-						["coord"] = { 51, 79.8 },
+						["coord"] = { 51.0, 79.8, 630 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 					fp(1633, {	-- Shackle's Den, Azsuna
-						["coord"] = { 56.2, 59 },
+						["coord"] = { 56.2, 59.0, 630 },
 					}),
 					fp(1837, {	-- Wardens' Redoubt, Azsuna
-						["coord"] = { 48.2, 73 },
+						["coord"] = { 48.2, 73.0, 630 },
 					}),
 					fp(1860, {	-- Watchers' Aerie, Azsuna
-						["coord"] = { 51.8, 82.2 },
+						["coord"] = { 51.8, 82.2, 630 },
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
@@ -1234,16 +1229,6 @@ _.Zones =
 				}),
 				n(-38, { 	-- Profession
 					prof(356, {	-- Fishing
-						n(-10067, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
-							["g"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
-							},
-						}),
 						ach(10596, {	-- Bigger Fish to Fry
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
@@ -1411,13 +1396,20 @@ _.Zones =
 								["creatureID"] = 120266
 							}),
 						}),
-						{	-- Schematic: Reaves Module: Wormhole Generator Mode
-							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
-						},
-						{	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
-							["itemID"] = 137775,	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
+						n(-10067,  {	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["g"] = {
+								{	-- Luminous Pearl
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 							["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
-						},
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests

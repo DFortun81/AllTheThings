@@ -1208,8 +1208,14 @@ _.Zones =
 						},
 					}),
 					ach(10877, {	-- Pillars of Creation
-					--	q(39781),	-- Neltharion's Lair: Death to the Underking
-					--	q(42454),	-- The Hammer of Khaz'goroth
+						["collectible"] = false,
+						["g"] = {
+							{	-- Criteria 4 — Hammer of Khaz'goroth
+								["achievementID"] = 10877,	-- Pillars of Creation
+								["criteriaID"] = 4,	-- Hammer of Khaz'goroth
+								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
+							},
+						},
 					}),
 					ach(11609, {	-- Power Unbound
 					--	q(45841),	-- A Triumphant Report
@@ -1237,6 +1243,17 @@ _.Zones =
 						["sourceQuests"] = { 39578 },	-- Titanic Showdown
 						["coord"] = { 48.9, 71.4, 657 },	-- Path of Huln
 						["qg"] = 99190,	-- Spiritwalker Ebonhorn
+					}),
+
+
+					q(39374, {	-- An Audience with Torok
+						["sourceQuests"] = {
+							39373,	-- Hags of a Feather
+							39873,	-- I Have a Bad Feeling About This
+							39372,	-- Witch of the Wood
+						},
+						["coord"] = { 39.3, 37.0, 650 },
+						["qg"] = 95256,	-- Oakin Ironbull
 					}),
 
 					
@@ -1267,6 +1284,20 @@ _.Zones =
 					}),
 
 
+					q(38915, {	-- Battle of Snowblind Mesa
+						["sourceQuests"] = { 39456 },	-- Unexpected Allies
+						["coord"] = { 54.0, 62.8, 652 },	-- Thunder Totem
+						["qg"] = 108434,	-- Mayla Highmountain
+					}),
+
+
+					q(39776, {	-- Battle Worms
+						["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa
+						["coord"] = { 53.3, 64.0, 650 },
+						["qg"] = 93846,	-- Mayla Highmountain
+					}),
+
+					
 					q(39392, {	-- Bear Huntin'
 						["sourceQuests"] = {
 							40170,	-- Amateur Hour
@@ -1287,6 +1318,29 @@ _.Zones =
 					}),
 
 					
+					q(39426, {	-- Blood Debt
+						["sourceQuests"] = {
+							39391,	-- Pet Rocks
+							39425,	-- Stonedark Crystal
+							39588,	-- They Will Pay With Blood
+						},
+						["coord"] = { 45.1, 32.4, 650 },
+						["qg"] = 95421,	-- Navarrogg
+						["g"] = {
+							i(133115),	-- Stonedark Focus
+							i(133116),	-- Bloodsinger Essence
+							i(133117),	-- Torok's Heart
+							i(133118),	-- Demonkindre Fangs
+							i(133119),	-- Bloodtotems' Fear
+							i(133114),	-- Valor of the Stonedark
+							i(133120),	-- Frag's Core
+							i(133121),	-- Instincts of the Elderhorn
+							i(133122),	-- Betrayal of the Bloodtotem
+							i(133124),	-- Ironbull's Last Words
+						},
+					}),
+					
+					
 					q(42630, {	-- Bolas Bastion
 						["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
 						["coord"] = { 43.0, 39.3, 650 },
@@ -1298,6 +1352,13 @@ _.Zones =
 						["sourceQuests"] = { 40339 },	-- Candle of Command
 						["coord"] = { 55.2, 41.8, 650 },
 						["qg"] = 97130,	-- Bluewax Gatekeeper
+					}),
+
+
+					q(39777, {	-- Buy Us Time
+						["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa
+						["coord"] = { 53.3, 64.0, 650 },
+						["qg"] = 97344,	-- Jale Rivermane
 					}),
 
 					
@@ -1327,6 +1388,13 @@ _.Zones =
 						},
 					}),
 					
+
+					q(39455, {	-- Cave of the Blood Trial
+						["sourceQuests"] = { 39374 },	-- An Audience with Torok
+						["coord"] = { 39.2, 34.4, 650 },
+						["qg"] = 95256,	-- Oakin Ironbull
+					}),
+
 					
 					q(42622, {	-- Ceremonial Drums
 						["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
@@ -1381,6 +1449,13 @@ _.Zones =
 						},
 					}),
 					
+
+					q(39437, {	-- Deep in the Cavern
+						["sourceQuests"] = { 39440 },	-- You Lift, Brul?
+						["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
+						["qg"] = 95799,	-- Damrul the Stronk
+					}),
+
 					
 					q(39274, {	-- Defend the Riverlands (bonus objective)
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
@@ -1426,6 +1501,17 @@ _.Zones =
 						},
 					}),
 					
+
+					q(42088, {	-- Evacuate Snowmane
+						["sourceQuests"] = {
+							39776,	-- Battle Worms
+							39777,	-- Buy Us Time
+							39862,	-- The Siegebrul
+						},
+						["coord"] = { 53.3, 64.0, 650 },
+						["qg"] = 93846,	-- Mayla Highmountain
+					}),
+
 					
 					q(39614, {	-- Fish Out of Water
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
@@ -1462,6 +1548,23 @@ _.Zones =
 					}),
 
 					
+					q(39438, {	-- Guhruhlruhlruh
+						["sourceQuests"] = { 39440 },	-- You Lift, Brul?
+						["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
+						["qg"] = 95799,	-- Damrul the Stronk
+						["g"] = {
+							i(130296),	-- Deep Squatter's Waistguard (Leather)
+							i(130295),	-- Deep Squatter's Sash
+							i(130297),	-- Deep Squatter's Belt
+							i(130298),	-- Deep Squatter's Waistguard (Plate)
+							i(130313),	-- Sweat-Swollen Cuffs
+							i(130314),	-- Sweat-Swollen Armbands
+							i(130315),	-- Sweat-Swollen Bracers
+							i(130316),	-- Sweat-Swollen Wristplates
+						},
+					}),
+					
+					
 					q(39373, {	-- Hags of a Feather
 						["sourceQuests"] = { 38912 },	-- The Bloodtotem Tribe
 						["coord"] = { 39.3, 37.0, 650 },
@@ -1475,6 +1578,19 @@ _.Zones =
 					}),
 
 
+					q(39419, {	-- Hex-a-Gone
+						["coord"] = { 47.1, 47.9, 650 },
+						["qg"] = 94522,	-- Maltha Silenthoof
+					}),
+					
+					
+					q(42512, {	-- Highmountain Stands
+						["sourceQuests"] = { 42088 },	-- Evacuate Snowmane
+						["coord"] = { 52.2, 65.9, 650 },
+						["qg"] = 93846,	-- Mayla Highmountain
+					}),
+
+					
 					q(39498, {	-- High Water
 						["sourceQuests"] = { 39487 },	-- Crystal Fury
 						["coord"] = { 42.6, 33.4, 656 },	-- Lifespring Cavern
@@ -1526,12 +1642,6 @@ _.Zones =
 					}),
 
 					
-					q(39419, {	-- Hex-a-Gone
-						["coord"] = { 47.1, 47.9, 650 },
-						["qg"] = 94522,	-- Maltha Silenthoof
-					}),
-
-
 					q(39490, {	-- Infestation
 						["sourceQuests"] = { 38911 },	-- The Rivermane Tribe
 						["coord"] = { 43.6, 59.8, 650 },
@@ -1539,6 +1649,13 @@ _.Zones =
 					}),
 
 
+					q(40594, {	-- Justice Rains from Above
+						["sourceQuests"] = { 42512 },	-- Highmountain Stands
+						["coord"] = { 53.2, 64.3, 650 },
+						["qg"] = 97407,	-- Lasan Skyhorn
+					}),
+
+					
 					q(39661, {	-- Lifespring Cavern
 						["sourceQuests"] = {
 							39614,	-- Fish Out of Water
@@ -1620,6 +1737,13 @@ _.Zones =
 						["qg"] = 98067,	-- King Mrgl-Mrgl
 					}),
 					
+
+					q(39781, {	-- Neltharion's Lair: Death to the Underking
+						["sourceQuests"] = { 39780 },	-- The Underking
+						["coord"] = { 53.1, 70.1, 650 },
+						["qg"] = 93846,	-- Mayla Highmountain
+					}),
+
 					
 					q(39859, {	-- Note-Eating Goats
 						["sourceQuests"] = {
@@ -1662,6 +1786,13 @@ _.Zones =
 						},
 					}),
 					
+
+					q(39391, {	-- Pet Rocks
+						["sourceQuests"] = { 39381 },	-- Rock Troll in a Hard Place
+						["coord"] = { 45.1, 32.4, 650 },
+						["qg"] = 95421,	-- Navarrogg
+					}),
+
 					
 					q(39272, {	-- Poisoned Crops
 						["sourceQuests"] = { 38911 },	-- The Rivermane Tribe
@@ -1670,6 +1801,29 @@ _.Zones =
 					}),
 					
 
+					q(39860, {	-- Rite of Blood
+						["sourceQuests"] = { 39455 },	-- Cave of the Blood Trial
+						["coord"] = { 59.1, 31.8, 653 },	-- Cave of the Blood Trial
+						["qg"] = 93836,	-- Torok Bloodtotem
+						["g"] = {
+							i(121669),	-- Snowblind Leggings
+							i(121671),	-- Drogstitch Legguards
+							i(121670),	-- Whitewater Leggings
+							i(121668),	-- Thunderpeak Legguards
+							i(121730),	-- Ironbull's Sacrifice
+							i(121726),	-- Navarrogg's Guidance
+							i(121728),	-- Stonedark Insignia
+						},
+					}),
+					
+
+					q(39381, {	-- Rock Troll in a Hard Place
+						["sourceQuests"] = { 39860 },	-- Rite of Blood
+						["coord"] = { 41.4, 82.3, 653 },	-- Cave of the Blood Trial
+						["qg"] = 96286,	-- Navarrogg
+					}),
+
+					
 					q(38910, {	-- Rocs vs Eagles
 						["sourceQuests"] = { 39318 },	-- Nursing the Wounds
 						["coord"] = { 52.4, 44.7, 650 },
@@ -1729,6 +1883,27 @@ _.Zones =
 						},
 					}),
 					
+
+					q(40229, {	-- Step into the Dark
+						["sourceQuests"] = { 39426 },	-- Blood Debt
+						["coord"] = { 49.4, 23.9, 650 },
+						["qg"] = 96453,	-- Navarrogg
+					}),
+
+					
+					q(39425, {	-- Stonedark Crystal
+						["sourceQuests"] = { 39381 },	-- Rock Troll in a Hard Place
+						["coord"] = { 45.1, 32.4, 650 },
+						["qg"] = 95421,	-- Navarrogg
+					}),
+
+
+					q(39439, {	-- Stonedark Relics
+						["sourceQuests"] = { 39440 },	-- You Lift, Brul?
+						["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
+						["qg"] = 95799,	-- Damrul the Stronk
+					}),
+
 					
 					q(40071, {	-- Tamer Takedown
 						["coord"] = { 50.9, 36.6, 650 },
@@ -1823,6 +1998,13 @@ _.Zones =
 					}),
 
 
+					q(39862, {	-- The Siegebrul
+						["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa
+						["coord"] = { 53.3, 64.0, 650 },
+						["qg"] = 97301,	-- Navarrogg
+					}),
+					
+					
 					q(39387, {	-- The Skies of Highmountain
 						["sourceQuests"] = { 39322 },	-- The Witchqueen
 						["coord"] = { 45.7, 39.1, 650 },
@@ -1867,6 +2049,23 @@ _.Zones =
 					}),
 					
 					
+					q(39780, {	-- The Underking
+						["sourceQuests"] = { 40594 },	-- Justice Rains from Above
+						["coord"] = { 53.1, 68.7, 650 },
+						["qg"] = 97407,	-- Lasan Skyhorn
+						["g"] = {
+							i(121675),	-- Snowblind Mantle
+							i(121673),	-- Drogstitch Spaulders
+							i(121676),	-- Whitewater Amice
+							i(121674),	-- Thunderpeak Shoulderguards
+							i(130269),	-- Snowblind Helm
+							i(130270),	-- Drogstitch Cowl
+							i(130271),	-- Whitewater Headguard
+							i(130272),	-- Thunderpeak Greathelm
+						},
+					}),
+					
+					
 					q(42104, {	-- The Underking Comes
 						["sourceQuests"] = { 39498 },	-- High Water
 						["coord"] = { 40.3, 71.6, 650 },
@@ -1905,6 +2104,13 @@ _.Zones =
 						},
 					}),
 					
+
+					q(39588, {	-- They Will Pay With Blood
+						["sourceQuests"] = { 39381 },	-- Rock Troll in a Hard Place
+						["coord"] = { 45.1, 32.4, 650 },
+						["qg"] = 95421,	-- Navarrogg
+					}),
+
 					
 					q(39578, {	-- Titanic Showdown
 						["sourceQuests"] = { 40219 },	-- In Defiance of Deathwing
@@ -1931,6 +2137,13 @@ _.Zones =
 						["sourceQuests"] = { 39496 },	-- The Flow of the River
 						["coord"] = { 41.2, 61.5, 650 },
 						["qg"] = 95186,	-- Angler Creel
+					}),
+
+
+					q(39456, {	-- Unexpected Allies
+						["sourceQuests"] = { 40229 },	-- Step Into the Dark
+						["coord"] = { 39.6, 53.8, 659 },	-- Stonedark Grotto
+						["qg"] = 95392,	-- Navarrogg
 					}),
 
 					
@@ -1979,6 +2192,11 @@ _.Zones =
 					}),
 					
 					
+					q(39440, {	-- You Lift, Brul?
+						["sourceQuests"] = { 40229 },	-- Step Into the Dark
+						["coord"] = { 51.5, 62.3, 659 },	-- Stonedark Grotto
+						["qg"] = 95799,	-- Damrul the Stronk
+					}),
 					
 					
 					
@@ -1995,45 +2213,8 @@ _.Zones =
 
 				--]]
 					
-					q(39374),	-- An Audience with Torok
-					q(39455),	-- Cave of the Blood Trial
-					q(39860, {	-- Rite of Blood
-						i(121669),	-- 
-						i(121671),	-- 
-						i(121670),	-- 
-						i(121668),	-- 
-						i(121730),	-- Ironbull's Sacrifice
-					}),
-					q(39381),	-- Rock Troll in a Hard Place
-					q(39391),	-- Pet Rocks
-					q(39425),	-- Stonedark Crystal
-					q(39588),	-- They Will Pay With Blood
-					q(39426, { -- Blood Debt
-						i(133122),	-- Betrayal of the Bloodtotem
-						i(133120),	-- Frag's Core
-						i(133115),	-- Stonedark Focus
-						i(133117),	-- Torok's Heart
-					}),
-					q(40229),	-- Step into the Dark
-					q(39456),	-- Unexpected Allies
-					q(38915),	-- Battle of Snowblind Mesa
-					q(39776),	-- Battle Worms
-					q(39777),	-- Buy Us Time
-					q(39862),	-- The Siegebrul
-					q(42088),	-- Evacuate Snowmane
-					q(42512),	-- Highmountain Stands
-					q(40594),	-- Justice Rains from Above
-					q(39780, {	-- The Underking
-						i(121675),	-- 
-						i(121673),	-- 
-						i(121676),	-- 
-						i(121674),	-- 
-						i(130269),	-- 
-						i(130270),	-- 
-						i(130271),	-- 
-						i(130272),	-- 
-					}),
-					q(39781),	-- Neltharion's Lair: Death to the Underking
+					
+					
 					q(40217, {	-- An Offering of Ammo
 						["isBreadcrumb"] = true,
 					}),
@@ -2055,20 +2236,7 @@ _.Zones =
 					q(39417, {	-- Rating Razik
 						["isBreadcrumb"] = true,
 					}),
-					q(39440),	-- You Lift, Brul?
-					q(39437),	-- Deep in the Cavern
-					q(39438,  {  	-- Guhruhlruhlruh
-						i(130296),
-						i(130295),
-						i(130297),
-						i(130298),
-						i(130313),
-						i(130314),
-						i(130315),
-						i(130316),
-					}),
-					q(39439),	-- Stonedark Relics
-					q(44055,  {  	-- They Have a Pitlord
+					q(44055, {	-- They Have a Pitlord
 						i(140726),
 						i(140728),
 						i(140724),
@@ -2097,13 +2265,6 @@ _.Zones =
 					q(40415, {	-- Well Spent Time
 						["qg"] = 98948,	-- Hrul Sharphoof
 						["requireSkill"] = 165,
-					}),
-					q(39781),	-- Neltharion's Lair: Death to the Underking
-					q(42454, {	-- The Hammer of Khaz'goroth
-						i(141007),	-- Earthguard Handwraps
-						i(141009),	-- Earthguard Gloves
-						i(141008),	-- Earthguard Grips
-						i(141010),	-- Earthguard Gauntlets
 					}),
 					q(45841),	-- A Triumphant Report
 		--[[ These quests will be organized soon™
@@ -2218,7 +2379,6 @@ _.Zones =
 					q(43554),	-- Neltharion's Lair
 					q(44265),	-- Neltharion's Lair
 					q(44264),	-- Neltharion's Lair
-					q(39781),	-- Neltharion's Lair
 					q(41188),	-- Neltharion's Lair: Misdirected
 					q(39533),	-- Nogginclobber Arena
 					q(40955),	-- Oath of Service
@@ -2559,16 +2719,29 @@ _.Zones =
 					}),
 					n(97933,  {	-- Crab Rider Grmlrml
 						["questID"] = 39994,
+						["coords"] = {
+							{ 43.0, 10.4, 650 },
+							{ 46.2, 12.0, 650 },
+						},
 						["g"] = {
-							i(131798),
+							i(131798),	-- Faded Swashbuckler's Jerkin
+							{	-- Crab Rider Grmlrml (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 3,	-- Crab Rider Grmlrml
+							},
 						},
 					}),
 					n(97345,  {	-- Crawshuk the Hungry
 						["questID"] = 39806,
+						["coord"] = { 48.3, 40.4, 650 },
 						["g"] = {
-							i(131809, { 	-- Gleaming Roc Feather
-								i(131811), 		-- Toy
+							i(131809, {	-- Gleaming Roc Feather
+								i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 							}),
+							{	-- Crawshuk the Hungry (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 4,	-- Crawshuk the Hungry
+							},
 						},
 					}),
 					n(100495, {	-- Devouring Darkness
@@ -2651,6 +2824,16 @@ _.Zones =
 							},
 						},
 					}),
+					n(96621,  {	-- Mellok, Son of Torok
+						["questID"] = 40242,
+						["coord"] = { 48.9, 27.0, 650 },
+						["g"] = {
+							{	-- Mellok, Son of Torok (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 17,	-- Mellok, Son of Torok
+							},
+						},
+					}),
 					n(98311,  {	-- Mrrklr
 						["questID"] = 40096,
 						["g"] = {
@@ -2665,6 +2848,7 @@ _.Zones =
 					}),
 					v(40423,  {	-- Puck (Unethical Adventurers)
 						["description"] = "|cff66ccffLoot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure. |r",
+						["coord"] = { 52.3, 58.5, 650 },
 						["qgs"] = {
 							100302,	-- Puck <Unethical Adventurers>
 							109498,	-- Xaander <Unethical Adventurers>
@@ -2678,6 +2862,10 @@ _.Zones =
 							i(140681),	-- Jak's Gloves
 							i(140680),	-- Lysander's Lovindle Bracers
 							i(131767),	-- Xander's Gauntlets
+							{	-- Unethical Adventurers (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 8,	-- Unethical Adventurers
+							},
 						},
 					}),
 					n(97579,  {	-- Scout Harefoot (Mynta Talonscreech)
@@ -2689,8 +2877,13 @@ _.Zones =
 					}),
 					n(97093,  {	-- Shara Felbreath
 						["questID"] = 39762,
+						["coord"] = { 51.0, 25.8, 650 },
 						["g"] = {
-							i(131791),
+							i(131791),	-- Felbreath Bloodsinger Robe
+							{	-- Shara Felbreath (Adventurer of Highmountain)
+								["achievementID"] = 11264,	-- Adventurer of Highmountain
+								["criteriaID"] = 20,	-- Shara Felbreath
+							},
 						},
 					}),
 					n(101077, {	-- Sekhan
@@ -2789,7 +2982,6 @@ _.Zones =
 	--					i(129190), 		-- Possible toy someday
 	--				}),
 	--				n(104517, { 	-- Mawat'aki 	}),
-	--				n(96621, { 		-- Mellok, Son of Torok 	}),
 	--				n(104484, { 	-- Olokk the Shipbreaker 	}),
 	--				n(104524, { 	-- Ormagrogg 	}),
 	--				n(97102, { 		-- Ram'Pag drops nothing of note			}),
