@@ -2457,6 +2457,7 @@ AllTheThings.L = {
 		[188261] = "Battered Journal",
 		[188364] = "Wrecked Crab Trap",
 		[188365] = "Heart of the Ancients",
+		[188418] = "Wanted!",
 		[188419] = "Elder Mana'loa",
 		[188667] = "Amberseed",
 		[189311] = "Flesh-bound Tome",
