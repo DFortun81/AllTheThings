@@ -270,6 +270,7 @@ _.Zones =
 						},
 					}),	
 					n(88161, {	-- Challenger Sunforge
+						["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 						["coord"] = { 65.3, 59.3, 624 },
 						["groups"] = {
 							i(136854),	-- Arsenal: Draenor Challenger's Armaments
@@ -293,6 +294,7 @@ _.Zones =
 							i(118410),	-- Tesseract Timepiece	
 							i(118996),	-- Blackfire Amulet
 							un(2, i(119032, {	-- Rusted Challenger's Strongbox
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 								["groups"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -365,9 +367,9 @@ _.Zones =
 									un(2, i(118962)),	-- Railwalker Waistband
 									un(2, i(119021)),	-- Stonebinder Shield
 								},
-								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),
 							un(2, i(127831, {	-- Challenger's Strongbox
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 								["groups"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -440,10 +442,8 @@ _.Zones =
 									un(2, i(118962)),	-- Railwalker Waistband
 									un(2, i(119021)),	-- Stonebinder Shield
 								},
-								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),
 						},
-						["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 					}),
 					n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
 						["coord"] = { 49.3, 56.7, 624 },

@@ -9,10 +9,11 @@ _.Zones =
 				follower(467, {	-- Fen Tao
 					["creatureID"] = 91483,	-- Fen Tao
 					["description"] = "In order to obtain this follower you need to talk to him and let him finish his dialogue.",
+					["coord"] = { 45.3, 70.6, 622 },
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1420, {	-- Stormshield (Alliance), Ashran
-						["coord"] = { 30.8, 48.8 },
+						["coord"] = { 30.6, 48.4, 622 },
 					}),
 				}),
 				n(-17,  {	-- Quests
@@ -42,42 +43,45 @@ _.Zones =
 				}),
 				na(-2,  {	-- Vendors
 					n(87052, {	-- Artificer Harlaan <Jewelcrafting Designs>
-						i(115359, {	-- Draenor Jewelcrafting
-							i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-								i(116087),	-- Recipe: Glowing Blackrock Band
-								i(116081),	-- Recipe: Glowing Iron Band
-								i(116084),	-- Recipe: Glowing Iron Choker
-								i(116088),	-- Recipe: Shifting Blackrock Band
-								i(116082),	-- Recipe: Shifting Iron Band
-								i(116085),	-- Recipe: Shifting Iron Choker
-								i(116089),	-- Recipe: Whispering Blackrock Band
-								i(116083),	-- Recipe: Whispering Iron Band
-								i(116086),	-- Recipe: Whispering Iron Choker
-								recipe(170700),	-- Taladite Crystal
+						["coord"] = { 44.2, 37.8, 622 },
+						["groups"] = {
+							i(115359, {	-- Draenor Jewelcrafting
+								i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
+									i(116087),	-- Recipe: Glowing Blackrock Band
+									i(116081),	-- Recipe: Glowing Iron Band
+									i(116084),	-- Recipe: Glowing Iron Choker
+									i(116088),	-- Recipe: Shifting Blackrock Band
+									i(116082),	-- Recipe: Shifting Iron Band
+									i(116085),	-- Recipe: Shifting Iron Choker
+									i(116089),	-- Recipe: Whispering Blackrock Band
+									i(116083),	-- Recipe: Whispering Iron Band
+									i(116086),	-- Recipe: Whispering Iron Choker
+									recipe(170700),	-- Taladite Crystal
+								}),
 							}),
-						}),
-						i(118723, {	-- Secret of Draenor Jewelcrafting
-							i(116096),	-- Recipe: Critical Strike Taladite
-							i(116093),	-- Recipe: Glowing Taladite Pendant
-							i(116090),	-- Recipe: Glowing Taladite Ring
-							i(116102),	-- Recipe: Greater Critical Strike Taladite
-							i(116103),	-- Recipe: Greater Haste Taladite
-							i(116104),	-- Recipe: Greater Mastery Taladite
-							i(116107),	-- Recipe: Greater Stamina Taladite
-							i(116106),	-- Recipe: Greater Versatility Taladite
-							i(116097),	-- Recipe: Haste Taladite
-							i(116098),	-- Recipe: Mastery Taladite
-							i(116109),	-- Recipe: Prismatic Focusing Lens
-							i(116108),	-- Recipe: Reflecting Prism
-							i(116094),	-- Recipe: Shifting Taladite Pendant
-							i(116091),	-- Recipe: Shifting Taladite Ring
-							i(116101),	-- Recipe: Stamina Taladite
-							i(116079),	-- Recipe: Taladite Amplifier
-							i(116078),	-- Recipe: Taladite Recrystalizer
-							i(116100),	-- Recipe: Versatility Taladite
-							i(116095),	-- Recipe: Whispering Taladite Pendant
-							i(116092),	-- Recipe: Whispering Taladite Ring
-						}),
+							i(118723, {	-- Secret of Draenor Jewelcrafting
+								i(116096),	-- Recipe: Critical Strike Taladite
+								i(116093),	-- Recipe: Glowing Taladite Pendant
+								i(116090),	-- Recipe: Glowing Taladite Ring
+								i(116102),	-- Recipe: Greater Critical Strike Taladite
+								i(116103),	-- Recipe: Greater Haste Taladite
+								i(116104),	-- Recipe: Greater Mastery Taladite
+								i(116107),	-- Recipe: Greater Stamina Taladite
+								i(116106),	-- Recipe: Greater Versatility Taladite
+								i(116097),	-- Recipe: Haste Taladite
+								i(116098),	-- Recipe: Mastery Taladite
+								i(116109),	-- Recipe: Prismatic Focusing Lens
+								i(116108),	-- Recipe: Reflecting Prism
+								i(116094),	-- Recipe: Shifting Taladite Pendant
+								i(116091),	-- Recipe: Shifting Taladite Ring
+								i(116101),	-- Recipe: Stamina Taladite
+								i(116079),	-- Recipe: Taladite Amplifier
+								i(116078),	-- Recipe: Taladite Recrystalizer
+								i(116100),	-- Recipe: Versatility Taladite
+								i(116095),	-- Recipe: Whispering Taladite Pendant
+								i(116092),	-- Recipe: Whispering Taladite Ring
+							}),
+						},
 					}),
 					n(93907, {	-- Amelia Clarke <Wild Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
@@ -270,52 +274,55 @@ _.Zones =
 						},
 					}),
 					n(87022, {	-- Bob <Enchanting Recipes>
-						i(111922, {		-- Draenor Enchanting
-							["collectible"] = false,
-							["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
-							["g"] = {
-								recipe(177043),	-- Secrets of Draenor Enchanting
-								recipe(169092),	-- Temporal Crystal
-								recipe(169091),	-- Luminous Shard
-								recipe(162948),	-- Enchanted Dust
-								recipe(158907),	-- Breath of Critical Strike [Ring]
-								recipe(158908),	-- Breath of Haste [Ring]
-								recipe(158909),	-- Breath of Mastery
-								recipe(158896),	-- Breath of Versatility [Neck]
-								un(1, recipe(158910)),	-- Breath of Mastery
-								recipe(158911),	-- Breath of Versatility
-								recipe(159236),	-- Mark of the Shattered Hand
-							},
-						}),
-						i(119293, {		-- Secret of Draenor Enchanting
-							i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
-							i(118429),	-- Formula: Enchant Cloak - Breath of Haste
-							i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
-							i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
-							i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
-							i(118434),	-- Formula: Enchant Cloak - Gift of Haste
-							i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
-							i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
-							i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
-							i(118439),	-- Formula: Enchant Neck - Breath of Haste
-							i(118440),	-- Formula: Enchant Neck - Breath of Mastery
-							i(118442),	-- Formula: Enchant Neck - Breath of Versatility
-							i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
-							i(118444),	-- Formula: Enchant Neck - Gift of Haste
-							i(118445),	-- Formula: Enchant Neck - Gift of Mastery
-							i(118447),	-- Formula: Enchant Neck - Gift of Versatility
-							i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
-							i(118454),	-- Formula: Enchant Ring - Gift of Haste
-							i(118455),	-- Formula: Enchant Ring - Gift of Mastery
-							i(118457),	-- Formula: Enchant Ring - Gift of Versatility
-							i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
-							i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
-							i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
-							i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
-							i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
-							i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
-							i(138882),	-- Formula: Tome of Illusions: Draenor
-						}),
+						["coord"] = { 56.9, 64.7, 622 },
+						["groups"] = {
+							i(111922, {		-- Draenor Enchanting
+								["collectible"] = false,
+								["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+								["g"] = {
+									recipe(177043),	-- Secrets of Draenor Enchanting
+									recipe(169092),	-- Temporal Crystal
+									recipe(169091),	-- Luminous Shard
+									recipe(162948),	-- Enchanted Dust
+									recipe(158907),	-- Breath of Critical Strike [Ring]
+									recipe(158908),	-- Breath of Haste [Ring]
+									recipe(158909),	-- Breath of Mastery
+									recipe(158896),	-- Breath of Versatility [Neck]
+									un(1, recipe(158910)),	-- Breath of Mastery
+									recipe(158911),	-- Breath of Versatility
+									recipe(159236),	-- Mark of the Shattered Hand
+								},
+							}),
+							i(119293, {		-- Secret of Draenor Enchanting
+								i(118394),	-- Formula: Enchant Cloak - Breath of Critical Strike
+								i(118429),	-- Formula: Enchant Cloak - Breath of Haste
+								i(118430),	-- Formula: Enchant Cloak - Breath of Mastery
+								i(118432),	-- Formula: Enchant Cloak - Breath of Versatility
+								i(118433),	-- Formula: Enchant Cloak - Gift of Critical Strike
+								i(118434),	-- Formula: Enchant Cloak - Gift of Haste
+								i(118435),	-- Formula: Enchant Cloak - Gift of Mastery
+								i(118437),	-- Formula: Enchant Cloak - Gift of Versatility
+								i(118438),	-- Formula: Enchant Neck - Breath of Critical Strike
+								i(118439),	-- Formula: Enchant Neck - Breath of Haste
+								i(118440),	-- Formula: Enchant Neck - Breath of Mastery
+								i(118442),	-- Formula: Enchant Neck - Breath of Versatility
+								i(118443),	-- Formula: Enchant Neck - Gift of Critical Strike
+								i(118444),	-- Formula: Enchant Neck - Gift of Haste
+								i(118445),	-- Formula: Enchant Neck - Gift of Mastery
+								i(118447),	-- Formula: Enchant Neck - Gift of Versatility
+								i(118453),	-- Formula: Enchant Ring - Gift of Critical Strike
+								i(118454),	-- Formula: Enchant Ring - Gift of Haste
+								i(118455),	-- Formula: Enchant Ring - Gift of Mastery
+								i(118457),	-- Formula: Enchant Ring - Gift of Versatility
+								i(118463),	-- Formula: Enchant Weapon - Mark of Blackrock
+								i(118467),	-- Formula: Enchant Weapon - Mark of Bleeding Hollow
+								i(118461),	-- Formula: Enchant Weapon - Mark of the Frostwolf
+								i(118458),	-- Formula: Enchant Weapon - Mark of the Thunderlord
+								i(118462),	-- Formula: Enchant Weapon - Mark of Shadowmoon
+								i(118460),	-- Formula: Enchant Weapon - Mark of Warsong
+								i(138882),	-- Formula: Tome of Illusions: Draenor
+							}),
+						},
 					}),
 					n(86175, {	-- Bregg Coppercast <Primal Combatant>
 						["itemID"] = 137642,	-- Mark of Honor
@@ -470,7 +477,8 @@ _.Zones =
 						},
 					}),
 					n(88155, {	-- Challenger Savina
-						["description"] = "You can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",		
+						["description"] = "You can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
+						["coord"] = { 52.0, 63.6, 622 },
 						["g"] = {
 							i(136854),	-- Arsenal: Draenor Challenger's Armaments
 							i(118401),	-- Arcana Shard Spire
@@ -492,6 +500,7 @@ _.Zones =
 							i(118399),	-- Suneater
 							i(118410),	-- Tesseract Timepiece
 							un(2, i(119032, {	-- Rusted Challenger's Strongbox
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -564,9 +573,9 @@ _.Zones =
 									un(2, i(118962)),	-- Railwalker Waistband
 									un(2, i(119021)),	-- Stonebinder Shield
 								},
-								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),
 							un(2, i(127831, {	-- Challenger's Strongbox
+								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 								["g"] = {
 									un(2, i(118997)),	-- Blackfire Cape
 									un(2, i(118998)),	-- Blackfire Crystal
@@ -639,11 +648,11 @@ _.Zones =
 									un(2, i(118962)),	-- Railwalker Waistband
 									un(2, i(119021)),	-- Stonebinder Shield
 								},
-								["description"] = "This box was from the WoD Challenge Mode Dailies.",
 							})),							
 						},
 					}),
 					n(128756, {	-- Crafticus Mindbender
+						["coord"] = { 54.8, 16.8, 622 },
 						["g"] = {
 							currency(823, {	-- Apexis Crystal
 								["g"] = {
@@ -655,166 +664,185 @@ _.Zones =
 						},
 					}),
 					n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(115380),	-- Crystal-Leaf Chain
-						i(115381),	-- Crystal-Plated Greatbelt
-						i(115379),	-- Crystalhide Belt
-						i(122322),	-- Ethereal Crystal-Leaf Chain
-						i(122323),	-- Ethereal Crystal-Plated Greatbelt
-						i(122321),	-- Ethereal Crystalhide Belt
-						i(122320),	-- Ethereal Windcrystal Cord
-						i(116937),	-- Exceptional Crystal-Leaf Chain
-						i(116938),	-- Exceptional Crystal-Plated Greatbelt
-						i(116936),	-- Exceptional Crystalhide Belt
-						i(116935),	-- Exceptional Windcrystal Cord
-						i(116941),	-- Flawless Crystal-Leaf Chain
-						i(116942),	-- Flawless Crystal-Plated Greatbelt
-						i(116940),	-- Flawless Crystalhide Belt
-						i(116939),	-- Flawless Windcrystal Cord
-						i(115378),	-- Windcrystal Cord
+						["coord"] = { 51.2, 61.8, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(115380),	-- Crystal-Leaf Chain
+							i(115381),	-- Crystal-Plated Greatbelt
+							i(115379),	-- Crystalhide Belt
+							i(122322),	-- Ethereal Crystal-Leaf Chain
+							i(122323),	-- Ethereal Crystal-Plated Greatbelt
+							i(122321),	-- Ethereal Crystalhide Belt
+							i(122320),	-- Ethereal Windcrystal Cord
+							i(116937),	-- Exceptional Crystal-Leaf Chain
+							i(116938),	-- Exceptional Crystal-Plated Greatbelt
+							i(116936),	-- Exceptional Crystalhide Belt
+							i(116935),	-- Exceptional Windcrystal Cord
+							i(116941),	-- Flawless Crystal-Leaf Chain
+							i(116942),	-- Flawless Crystal-Plated Greatbelt
+							i(116940),	-- Flawless Crystalhide Belt
+							i(116939),	-- Flawless Windcrystal Cord
+							i(115378),	-- Windcrystal Cord
+						},
 					}),
 					n(86391, {	-- Dawn-Seeker Krek <Apexis Leggings Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(115376),	-- Crystal-Leaf Legguards
-						i(115377),	-- Crystal-Plated Legplates
-						i(115375),	-- Crystalhide Legguards
-						i(122318),	-- Ethereal Crystal-Leaf Legguards
-						i(122319),	-- Ethereal Crystal-Plated Legplates
-						i(122317),	-- Ethereal Crystalhide Legguards
-						i(122316),	-- Ethereal Windcrystal Leggings
-						i(116929),	-- Exceptional Crystal-Leaf Legguards
-						i(116930),	-- Exceptional Crystal-Plated Legplates
-						i(116928),	-- Exceptional Crystalhide Legguards
-						i(116927),	-- Exceptional Windcrystal Leggings
-						i(116933),	-- Flawless Crystal-Leaf Legguards
-						i(116934),	-- Flawless Crystal-Plated Legplates
-						i(116932),	-- Flawless Crystalhide Legguards
-						i(116931),	-- Flawless Windcrystal Leggings
-						i(115374),	-- Windcrystal Leggings
+						["coord"] = { 50.7, 61.5, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(115376),	-- Crystal-Leaf Legguards
+							i(115377),	-- Crystal-Plated Legplates
+							i(115375),	-- Crystalhide Legguards
+							i(122318),	-- Ethereal Crystal-Leaf Legguards
+							i(122319),	-- Ethereal Crystal-Plated Legplates
+							i(122317),	-- Ethereal Crystalhide Legguards
+							i(122316),	-- Ethereal Windcrystal Leggings
+							i(116929),	-- Exceptional Crystal-Leaf Legguards
+							i(116930),	-- Exceptional Crystal-Plated Legplates
+							i(116928),	-- Exceptional Crystalhide Legguards
+							i(116927),	-- Exceptional Windcrystal Leggings
+							i(116933),	-- Flawless Crystal-Leaf Legguards
+							i(116934),	-- Flawless Crystal-Plated Legplates
+							i(116932),	-- Flawless Crystalhide Legguards
+							i(116931),	-- Flawless Windcrystal Leggings
+							i(115374),	-- Windcrystal Leggings
+						},
 					}),
 					n(86387, {	-- Dawn-Seeker Rilak <Apexis Helm Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(116955),	-- Crystal-Leaf Helm
-						i(116956),	-- Crystal-Plated Greathelm
-						i(116954),	-- Crystalhide Cowl
-						i(122310),	-- Ethereal Crystal-Leaf Helm
-						i(122311),	-- Ethereal Crystal-Plated Greathelm
-						i(122309),	-- Ethereal Crystalhide Cowl
-						i(122308),	-- Ethereal Windcrystal Hood
-						i(116959),	-- Exceptional Crystal-Leaf Helm
-						i(116960),	-- Exceptional Crystal-Plated Greathelm
-						i(116958),	-- Exceptional Crystalhide Cowl
-						i(116957),	-- Exceptional Windcrystal Hood
-						i(115398),	-- Flawless Crystal-Leaf Helm
-						i(115399),	-- Flawless Crystal-Plated Greathelm
-						i(115397),	-- Flawless Crystalhide Cowl
-						i(115396),	-- Flawless Windcrystal Hood
-						i(116953),	-- Windcrystal Hood
+						["coord"] = { 50.0, 61.2, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(116955),	-- Crystal-Leaf Helm
+							i(116956),	-- Crystal-Plated Greathelm
+							i(116954),	-- Crystalhide Cowl
+							i(122310),	-- Ethereal Crystal-Leaf Helm
+							i(122311),	-- Ethereal Crystal-Plated Greathelm
+							i(122309),	-- Ethereal Crystalhide Cowl
+							i(122308),	-- Ethereal Windcrystal Hood
+							i(116959),	-- Exceptional Crystal-Leaf Helm
+							i(116960),	-- Exceptional Crystal-Plated Greathelm
+							i(116958),	-- Exceptional Crystalhide Cowl
+							i(116957),	-- Exceptional Windcrystal Hood
+							i(115398),	-- Flawless Crystal-Leaf Helm
+							i(115399),	-- Flawless Crystal-Plated Greathelm
+							i(115397),	-- Flawless Crystalhide Cowl
+							i(115396),	-- Flawless Windcrystal Hood
+							i(116953),	-- Windcrystal Hood
+						},
 					}),
 					n(91321, {	-- Dawn-Seeker Skelak <Apexis Bracer Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(116967),	-- Crystal-Leaf Bracers
-						i(116968),	-- Crystal-Plated Bracers
-						i(116966),	-- Crystalhide Bracers
-						i(122314),	-- Ethereal Crystal-Leaf Bracers
-						i(122315),	-- Ethereal Crystal-Plated Bracers
-						i(122313),	-- Ethereal Crystalhide Bracers
-						i(116963),	-- Exceptional Crystal-Leaf Bracers
-						i(116964),	-- Exceptional Crystal-Plated Bracers
-						i(116962),	-- Exceptional Crystalhide Bracers
-						i(116961),	-- Exceptional Windcrystal Bracers
-						i(115401),	-- Flawless Crystalhide Bracers
-						i(115402),	-- Flawless Crystal-Leaf Bracers
-						i(115403),	-- Flawless Crystal-Plated Bracers
-						i(115400),	-- Flawless Windcrystal Bracers
-						i(122312),	-- Ethereal Windcrystal Bracers
-						i(116965),	-- Windcrystal Bracers
+						["coord"] = { 50.0, 61.6, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(116967),	-- Crystal-Leaf Bracers
+							i(116968),	-- Crystal-Plated Bracers
+							i(116966),	-- Crystalhide Bracers
+							i(122314),	-- Ethereal Crystal-Leaf Bracers
+							i(122315),	-- Ethereal Crystal-Plated Bracers
+							i(122313),	-- Ethereal Crystalhide Bracers
+							i(116963),	-- Exceptional Crystal-Leaf Bracers
+							i(116964),	-- Exceptional Crystal-Plated Bracers
+							i(116962),	-- Exceptional Crystalhide Bracers
+							i(116961),	-- Exceptional Windcrystal Bracers
+							i(115401),	-- Flawless Crystalhide Bracers
+							i(115402),	-- Flawless Crystal-Leaf Bracers
+							i(115403),	-- Flawless Crystal-Plated Bracers
+							i(115400),	-- Flawless Windcrystal Bracers
+							i(122312),	-- Ethereal Windcrystal Bracers
+							i(116965),	-- Windcrystal Bracers
+						},
 					}),
 					n(86390, {	-- Dawn-Seeker Vallar <Apexis Glove Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(116945),	-- Crystal-Leaf Gloves
-						i(116946),	-- Crystal-Plated Gauntlets
-						i(116944),	-- Crystalhide Grips
-						i(122326),	-- Ethereal Crystal-Leaf Gloves
-						i(122327),	-- Ethereal Crystal-Plated Gauntlets
-						i(122325),	-- Ethereal Crystalhide Grips
-						i(122324),	-- Ethereal Windcrystal Wraps
-						i(115389),	-- Exceptional Crystal-Leaf Gloves
-						i(115390),	-- Exceptional Crystal-Plated Gauntlets
-						i(115388),	-- Exceptional Crystalhide Grips
-						i(115387),	-- Exceptional Windcrystal Wraps
-						i(116949),	-- Flawless Crystal-Leaf Gloves
-						i(116950),	-- Flawless Crystal-Plated Gauntlets
-						i(116948),	-- Flawless Crystalhide Grips
-						i(116947),	-- Flawless Windcrystal Wraps
-						i(116943),	-- Windcrystal Wraps
+						["coord"] = { 48.5, 62.3, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(116945),	-- Crystal-Leaf Gloves
+							i(116946),	-- Crystal-Plated Gauntlets
+							i(116944),	-- Crystalhide Grips
+							i(122326),	-- Ethereal Crystal-Leaf Gloves
+							i(122327),	-- Ethereal Crystal-Plated Gauntlets
+							i(122325),	-- Ethereal Crystalhide Grips
+							i(122324),	-- Ethereal Windcrystal Wraps
+							i(115389),	-- Exceptional Crystal-Leaf Gloves
+							i(115390),	-- Exceptional Crystal-Plated Gauntlets
+							i(115388),	-- Exceptional Crystalhide Grips
+							i(115387),	-- Exceptional Windcrystal Wraps
+							i(116949),	-- Flawless Crystal-Leaf Gloves
+							i(116950),	-- Flawless Crystal-Plated Gauntlets
+							i(116948),	-- Flawless Crystalhide Grips
+							i(116947),	-- Flawless Windcrystal Wraps
+							i(116943),	-- Windcrystal Wraps
+						},
 					}),
 					n(86389, {	-- Dawn-Seeker Verroak <Apexis Cloak Trader>
-						currency(823, {	-- Apexis Crystal
-							["g"] = {
-								i(119821, {	-- Contact: Dawnseeker Rukaryx
-									follower(462),	-- Dawnseeker Rukaryx
-								}),
-								i(116768),	-- Mosshide Riverwallow
-							},
-						}),
-						i(116976),	-- Crystal Reinforced Doomcloak
-						i(116973),	-- Crystal-Edged Bladecloak
-						i(116974),	-- Crystalclasp Stormcloak
-						i(122332),	-- Ethereal Crystal Reinforced Doomcloak
-						i(122329),	-- Ethereal Crystal-Edged Bladecloak
-						i(122330),	-- Ethereal Crystalclasp Stormcloak
-						i(122331),	-- Ethereal Refractory Heartcloak
-						i(122328),	-- Ethereal Shard-Covered Dreadcloak
-						i(115394),	-- Exceptional Crystal Reinforced Doomcloak
-						i(115391),	-- Exceptional Crystal-Edged Bladecloak
-						i(115392),	-- Exceptional Crystalclasp Stormcloak
-						i(115393),	-- Exceptional Refractory Heartcloak
-						i(115395),	-- Exceptional Shard-Covered Dreadcloak
-						i(116972),	-- Flawless Crystal Reinforced Doomcloak
-						i(116969),	-- Flawless Crystal-Edged Bladecloak
-						i(116970),	-- Flawless Crystalclasp Stormcloak
-						i(116971),	-- Flawless Refractory Heartcloak
-						i(116951),	-- Flawless Shard-Covered Dreadcloak
-						i(116975),	-- Refractory Heartcloak
-						i(116952),	-- Shard-Covered Dreadcloak
+						["coord"] = { 49.4, 61.3, 622 },
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								["g"] = {
+									i(119821, {	-- Contact: Dawnseeker Rukaryx
+										follower(462),	-- Dawnseeker Rukaryx
+									}),
+									i(116768),	-- Mosshide Riverwallow
+								},
+							}),
+							i(116976),	-- Crystal Reinforced Doomcloak
+							i(116973),	-- Crystal-Edged Bladecloak
+							i(116974),	-- Crystalclasp Stormcloak
+							i(122332),	-- Ethereal Crystal Reinforced Doomcloak
+							i(122329),	-- Ethereal Crystal-Edged Bladecloak
+							i(122330),	-- Ethereal Crystalclasp Stormcloak
+							i(122331),	-- Ethereal Refractory Heartcloak
+							i(122328),	-- Ethereal Shard-Covered Dreadcloak
+							i(115394),	-- Exceptional Crystal Reinforced Doomcloak
+							i(115391),	-- Exceptional Crystal-Edged Bladecloak
+							i(115392),	-- Exceptional Crystalclasp Stormcloak
+							i(115393),	-- Exceptional Refractory Heartcloak
+							i(115395),	-- Exceptional Shard-Covered Dreadcloak
+							i(116972),	-- Flawless Crystal Reinforced Doomcloak
+							i(116969),	-- Flawless Crystal-Edged Bladecloak
+							i(116970),	-- Flawless Crystalclasp Stormcloak
+							i(116971),	-- Flawless Refractory Heartcloak
+							i(116951),	-- Flawless Shard-Covered Dreadcloak
+							i(116975),	-- Refractory Heartcloak
+							i(116952),	-- Shard-Covered Dreadcloak
+						},
 					}),
 					n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
+						["coord"] = { 43.1, 77.7, 622 },
 						["g"] = {
 							currency(823, {	-- Apexis Crystal
 								["g"] = {
@@ -833,6 +861,7 @@ _.Zones =
 						},
 					}),
 					n(87365, {  -- Grakis
+						["coord"] = { 48.6, 33.5, 622 },
 						["g"] = {
 							i(118729, {	-- Gorgrond Treasure Map
 								["questID"] = 36465,
@@ -1272,77 +1301,84 @@ _.Zones =
 						},
 					}),
 					n(87063, { 	-- Joao Calhandro <Inscription Recipes>
-						i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-							i(120136),		-- Recipe: Secrets of Draenor Inscription
-							recipe(169081),	-- War Paints
-							recipe(167950, {	-- Research: Warbinder's Ink
-								i(113992),	-- Scribe's Research Notes
+						["coord"] = { 62.0, 33.5, 622 },
+						["g"] = {
+							i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
+								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								recipe(169081),	-- War Paints
+								recipe(167950, {	-- Research: Warbinder's Ink
+									i(113992),	-- Scribe's Research Notes
+								}),
+								recipe(175390),	-- Laughing Tarot
+								recipe(175389),	-- Ocean Tarot
+								recipe(175392),	-- Savage Tarot
+								recipe(166669),	-- Card of Omens
+								recipe(178497),	-- Warbinder's Ink
 							}),
-							recipe(175390),	-- Laughing Tarot
-							recipe(175389),	-- Ocean Tarot
-							recipe(175392),	-- Savage Tarot
-							recipe(166669),	-- Card of Omens
-							recipe(178497),	-- Warbinder's Ink
-						}),
-						i(118605),	-- Technique: Crystalfire Spellstaff
-						i(118606),	-- Technique: Darkmoon Card of Draenor
-						i(120265),	-- Technique: Ensorcelled Tarot
-						i(118607),	-- Technique: Etched-Blade Warstaff
-						i(118613),	-- Technique: Shadowtome
-						i(118614),	-- Technique: Volatile Crystal
-						i(118615),	-- Technique: Warmaster's Firestick
-						i(118610),	-- Technique: Weapon Crystal
-						un(1, i(118608)),	-- Technique: Greater Weapon Crystal
-						un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
-						un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
-						un(1, i(122553)),	-- Technique: Powerful Weapon Crystal
+							i(118605),	-- Technique: Crystalfire Spellstaff
+							i(118606),	-- Technique: Darkmoon Card of Draenor
+							i(120265),	-- Technique: Ensorcelled Tarot
+							i(118607),	-- Technique: Etched-Blade Warstaff
+							i(118613),	-- Technique: Shadowtome
+							i(118614),	-- Technique: Volatile Crystal
+							i(118615),	-- Technique: Warmaster's Firestick
+							i(118610),	-- Technique: Weapon Crystal
+							un(1, i(118608)),	-- Technique: Greater Weapon Crystal
+							un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
+							un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
+							un(1, i(122553)),	-- Technique: Powerful Weapon Crystal
+						},
 					}),	
 					n(87048, {	-- Katherine Joplin <Alchemy Recipes>
-						i(109558, {		-- A Treatise on the Alchemy of Draenor
-							["collectible"] = false,
-							["spellID"] = 0,
-							["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
-							["g"] = {
-								recipe(156587),	-- Alchemical Catalyst
-								recipe(156585),	-- Crescent Oil
-								recipe(175865),	-- Draenic Invisibility Potion
-								recipe(175867),	-- Draenic Living Action Potion
-								recipe(156582),	-- Draenic Mana Potion
-								recipe(175853),	-- Draenic Swiftness Potion
-								recipe(175866),	-- Draenic Water Breathing Elixir
-								recipe(175869),	-- Draenic Water Walking Elixir
-								recipe(175868),	-- Pure Rage Potion
-							recipe(175880),	-- Secrets of Draenor Alchemy
-							},
-						}),
-						i(112042),	-- Recipe: Draenic Channeled Mana Potion
-						un(1, i(112043)),	-- Recipe: Draenic Mana Potion
-						i(112041),	-- Recipe: Draenic Armor Potion
-						i(112038),	-- Recipe: Draenic Agility Potion
-						i(112039),	-- Recipe: Draenic Intellect Potion
-						i(112040),	-- Recipe: Draenic Strength Potion
-						un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
-						i(118700, {	-- Secret of Draenor Alchemy
-							i(112023),	-- Recipe: Draenic Philosopher's Stone
-							i(112045),	-- Recipe: Draenic Rejuvenation Potion
-							i(112024),	-- Recipe: Draenic Agility Flask
-							i(112026),	-- Recipe: Draenic Intellect Flask
-							i(112030),	-- Recipe: Draenic Stamina Flask
-							i(112027),	-- Recipe: Draenic Strength Flask
-							i(112031),	-- Recipe: Greater Draenic Agility Flask
-							i(112033),	-- Recipe: Greater Draenic Intellect Flask
-							i(112037),	-- Recipe: Greater Draenic Stamina Flask
-							i(112034),	-- Recipe: Greater Draenic Strength Flask
-							i(112047),	-- Recipe: Transmorphic Tincture
-							i(160662),  -- Recipe: Blackwater Anti-Venom
-							i(160663),  -- Recipe: Healing Tonic
-							i(160661),  -- Recipe: Fire Ammonite Oil
-							i(114028, {	-- Small Pouch of Coins
-								["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+						["coord"] = { 36.7, 68.6, 622 },
+						["g"] = {
+							i(109558, {		-- A Treatise on the Alchemy of Draenor
+								["collectible"] = false,
+								["spellID"] = 0,
+								["description"] = "This is a quest reward for completing the Alchemy Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Alchemy Lab for 100 gold.",
+								["g"] = {
+									recipe(156587),	-- Alchemical Catalyst
+									recipe(156585),	-- Crescent Oil
+									recipe(175865),	-- Draenic Invisibility Potion
+									recipe(175867),	-- Draenic Living Action Potion
+									recipe(156582),	-- Draenic Mana Potion
+									recipe(175853),	-- Draenic Swiftness Potion
+									recipe(175866),	-- Draenic Water Breathing Elixir
+									recipe(175869),	-- Draenic Water Walking Elixir
+									recipe(175868),	-- Pure Rage Potion
+								recipe(175880),	-- Secrets of Draenor Alchemy
+								},
 							}),
-						}),
+							i(112042),	-- Recipe: Draenic Channeled Mana Potion
+							un(1, i(112043)),	-- Recipe: Draenic Mana Potion
+							i(112041),	-- Recipe: Draenic Armor Potion
+							i(112038),	-- Recipe: Draenic Agility Potion
+							i(112039),	-- Recipe: Draenic Intellect Potion
+							i(112040),	-- Recipe: Draenic Strength Potion
+							un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+							i(118700, {	-- Secret of Draenor Alchemy
+								i(112023),	-- Recipe: Draenic Philosopher's Stone
+								i(112045),	-- Recipe: Draenic Rejuvenation Potion
+								i(112024),	-- Recipe: Draenic Agility Flask
+								i(112026),	-- Recipe: Draenic Intellect Flask
+								i(112030),	-- Recipe: Draenic Stamina Flask
+								i(112027),	-- Recipe: Draenic Strength Flask
+								i(112031),	-- Recipe: Greater Draenic Agility Flask
+								i(112033),	-- Recipe: Greater Draenic Intellect Flask
+								i(112037),	-- Recipe: Greater Draenic Stamina Flask
+								i(112034),	-- Recipe: Greater Draenic Strength Flask
+								i(112047),	-- Recipe: Transmorphic Tincture
+								i(160662),  -- Recipe: Blackwater Anti-Venom
+								i(160663),  -- Recipe: Healing Tonic
+								i(160661),  -- Recipe: Fire Ammonite Oil
+								i(114028, {	-- Small Pouch of Coins
+									["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
+								}),
+							}),
+						},
 					}),
 					n(85849, {	-- Kinkade Jakobs <Blueprints Trader>
+						["coord"] = { 29.7, 52.9, 622 },
 						["g"]	= {
 							i(111929),	-- Alchemy Lab, Level 2
 							i(111968),	-- Barn, Level 2
@@ -1503,87 +1539,94 @@ _.Zones =
 						},
 					}),
 					n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>
-						i(115356, {	-- Draenor Blacksmithing
-							i(116727),		-- Recipe: Smoldering Breastplate
-							i(116726),		-- Recipe: Smoldering Helm
-							i(116728),		-- Recipe: Smoldering Greaves
-							recipe(171690),	-- Truesteel Ingot
-							i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
-						}),
-						i(118720, {	-- Secret of Draenor Blacksmithing
-							i(119329),	-- Recipe: Soul of the Forge
-							i(120262),	-- Recipe: Steelforged Aegis
-							i(120260),	-- Recipe: Steelforged Axe
-							i(116731),	-- Recipe: Steelforged Dagger
-							i(116745),	-- Recipe: Steelforged Essence
-							i(116729),	-- Recipe: Steelforged Greataxe
-							i(116732),	-- Recipe: Steelforged Hammer
-							i(116730),	-- Recipe: Steelforged Saber
-							i(116733),	-- Recipe: Steelforged Shield
-							i(116740),	-- Recipe: Truesteel Armguards
-							i(116741),	-- Recipe: Truesteel Boots
-							i(116739),	-- Recipe: Truesteel Breastplate
-							i(116743),	-- Recipe: Truesteel Essence
-							i(116738),	-- Recipe: Truesteel Gauntlets
-							i(116737),	-- Recipe: Truesteel Greaves
-							i(116734),	-- Recipe: Truesteel Grinder
-							i(116736),	-- Recipe: Truesteel Helm
-							i(116735),	-- Recipe: Truesteel Pauldrons
-							i(118044),	-- Recipe: Truesteel Reshaper
-							i(116742),	-- Recipe: Truesteel Waistguard
-							i(116764, {	-- Small Pouch of Coins
-								["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+						["coord"] = { 49.0, 48.7, 622 },
+						["g"] = {
+							i(115356, {	-- Draenor Blacksmithing
+								i(116727),		-- Recipe: Smoldering Breastplate
+								i(116726),		-- Recipe: Smoldering Helm
+								i(116728),		-- Recipe: Smoldering Greaves
+								recipe(171690),	-- Truesteel Ingot
+								i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
 							}),
-						}),
-						i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
-							["u"] = 1,
-						}),
-						i(122550, {	-- Recipe: Powerful Steelforged Essence
-							["u"] = 2,
-						}),
-						i(122552, {	-- Recipe: Powerful Truesteel Essence
-							["u"] = 2,
-						}),
+							i(118720, {	-- Secret of Draenor Blacksmithing
+								i(119329),	-- Recipe: Soul of the Forge
+								i(120262),	-- Recipe: Steelforged Aegis
+								i(120260),	-- Recipe: Steelforged Axe
+								i(116731),	-- Recipe: Steelforged Dagger
+								i(116745),	-- Recipe: Steelforged Essence
+								i(116729),	-- Recipe: Steelforged Greataxe
+								i(116732),	-- Recipe: Steelforged Hammer
+								i(116730),	-- Recipe: Steelforged Saber
+								i(116733),	-- Recipe: Steelforged Shield
+								i(116740),	-- Recipe: Truesteel Armguards
+								i(116741),	-- Recipe: Truesteel Boots
+								i(116739),	-- Recipe: Truesteel Breastplate
+								i(116743),	-- Recipe: Truesteel Essence
+								i(116738),	-- Recipe: Truesteel Gauntlets
+								i(116737),	-- Recipe: Truesteel Greaves
+								i(116734),	-- Recipe: Truesteel Grinder
+								i(116736),	-- Recipe: Truesteel Helm
+								i(116735),	-- Recipe: Truesteel Pauldrons
+								i(118044),	-- Recipe: Truesteel Reshaper
+								i(116742),	-- Recipe: Truesteel Waistguard
+								i(116764, {	-- Small Pouch of Coins
+									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								}),
+							}),
+							i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
+								["u"] = 1,
+							}),
+							i(122550, {	-- Recipe: Powerful Steelforged Essence
+								["u"] = 2,
+							}),
+							i(122552, {	-- Recipe: Powerful Truesteel Essence
+								["u"] = 2,
+							}),
+						},
 					}),
 					n(87065, {	-- Sean Catchpole
-						i(111921),	-- Draenor Engineering
-						i(119299, {	-- Secret of Draenor Engineering
-							i(118493),	-- Schematic: Didi's Delicate Assembly
-							i(118490),	-- Schematic: Blingtron 5000
-							i(118480),	-- Schematic: Findle's Loot-a-Rang
-							i(118495),	-- Schematic: Hemet's Heartseeker
-							i(118485),	-- Schematic: Lifelike Mechanical Frostboar
-							i(118484),	-- Schematic: Mechanical Axebeak
-							i(119177),	-- Schematic: Mechanical Scorpid
-							i(118478),	-- Schematic: Megawatt Filament
-							i(118477),	-- Schematic: Oglethorpe's Missle Splitter
-							i(118487),	-- Schematic: Personal Hologram
-							i(118491),	-- Schematic: Linkgrease Locksprocket
-							i(118497),	-- Schematic: Cybergenetic Mechshades
-							i(118498),	-- Schematic: Night-Vision Mechshades
-							i(118499),	-- Schematic: Plasma Mechshades
-							i(118500),	-- Schematic: Razorguard Mechshades
-							i(118476),	-- Schematic: Shrediron's Shredder
-							i(120268),	-- Schematic: True Iron Trigger
-							i(118489),	-- Schematic: Swapblaster
-							i(118481),	-- Schematic: World Shrinker
-							i(118488),	-- Schematic: Wormhole Centrifuge
-							i(128327),	-- Small Pouch of Coins
-						}),
-						{	-- Schematic: Blackrock Rifling
-							["itemID"] = 120267,	-- Schematic: Blackrock Rifling
-							["u"] = 2,	-- Deprecated and removed in 6.2.0
-						},
-						{	-- Schematic: Oglethorpe's Octagonal Lenses
-							["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
-							["u"] = 2,	-- Deprecated and removed in 6.2.0
-						},
-						{	-- Schematic: Precision Scope Tuning Kit
-							["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
-							["u"] = 2,	-- Deprecated and removed in 6.2.0
+						["coord"] = { 47.9, 39.9, 622 },
+						["g"] = {
+							i(111921),	-- Draenor Engineering
+							i(119299, {	-- Secret of Draenor Engineering
+								i(118493),	-- Schematic: Didi's Delicate Assembly
+								i(118490),	-- Schematic: Blingtron 5000
+								i(118480),	-- Schematic: Findle's Loot-a-Rang
+								i(118495),	-- Schematic: Hemet's Heartseeker
+								i(118485),	-- Schematic: Lifelike Mechanical Frostboar
+								i(118484),	-- Schematic: Mechanical Axebeak
+								i(119177),	-- Schematic: Mechanical Scorpid
+								i(118478),	-- Schematic: Megawatt Filament
+								i(118477),	-- Schematic: Oglethorpe's Missle Splitter
+								i(118487),	-- Schematic: Personal Hologram
+								i(118491),	-- Schematic: Linkgrease Locksprocket
+								i(118497),	-- Schematic: Cybergenetic Mechshades
+								i(118498),	-- Schematic: Night-Vision Mechshades
+								i(118499),	-- Schematic: Plasma Mechshades
+								i(118500),	-- Schematic: Razorguard Mechshades
+								i(118476),	-- Schematic: Shrediron's Shredder
+								i(120268),	-- Schematic: True Iron Trigger
+								i(118489),	-- Schematic: Swapblaster
+								i(118481),	-- Schematic: World Shrinker
+								i(118488),	-- Schematic: Wormhole Centrifuge
+								i(128327),	-- Small Pouch of Coins
+							}),
+							{	-- Schematic: Blackrock Rifling
+								["itemID"] = 120267,	-- Schematic: Blackrock Rifling
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
+							{	-- Schematic: Oglethorpe's Octagonal Lenses
+								["itemID"] = 122546,	-- Schematic: Oglethorpe's Octagonal Lenses
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
+							{	-- Schematic: Precision Scope Tuning Kit
+								["itemID"] = 122554,	-- Schematic: Precision Scope Tuning Kit
+								["u"] = 2,	-- Deprecated and removed in 6.2.0
+							},
 						},
 					}),
 					n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
+						["coord"] = { 44.5, 75.0, 622 },
 						["g"] = {
 							currency (823, {	-- Apexis Crystal
 								["g"] = {
@@ -1733,6 +1776,7 @@ _.Zones =
 						},
 					}),
 					n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
+						["coord"] = { 46.6, 76.7, 622 },
 						["g"] = {
 							currency(823, {	-- Apexis Crystal
 								["g"] = {
