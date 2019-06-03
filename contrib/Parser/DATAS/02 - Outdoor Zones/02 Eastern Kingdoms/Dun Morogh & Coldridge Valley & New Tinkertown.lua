@@ -490,6 +490,7 @@ _.Zones =
 							}),
 							q(31150, {	-- Elegant Rune
 								["qg"] = 37087,	-- 
+								["races"] = {3},	-- Dwarf
 								["classes"] = {10},	-- Monk
 							}),
 							q(3109, {	-- Encrypted Rune
@@ -666,11 +667,13 @@ _.Zones =
 									["races"] = {7},	-- Gnome
 								}),
 								q(31138, {	-- The Arts of a Monk
-									["qg"] = 63238,	-- 
+									["qg"] = 63238,	--
+									["races"] = ALLIANCE_ONLY,
 									["classes"] = {10},	-- Monk
 								}),
 								q(26207, {	-- The Arts of a Rogue
 									["qg"] = 42366,	-- 
+									["races"] = ALLIANCE_ONLY,
 									["classes"] = {4},	-- Rogue
 								}),
 								q(26208, {	-- The Fight Continues
