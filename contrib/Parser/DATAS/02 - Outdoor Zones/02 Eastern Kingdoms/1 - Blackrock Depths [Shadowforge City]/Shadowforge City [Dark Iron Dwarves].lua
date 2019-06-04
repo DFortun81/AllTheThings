@@ -146,7 +146,7 @@ _.Zones =
 										["questID"] = 53587,
 										["collectible"] = true,
 										["coords"] = {
-											{ 50.19, 42.75, 35 },
+											{ 33.4, 24.7, 35 },
 										},
 										["maps"] = {
 											35,	-- Blackrock Mountain
