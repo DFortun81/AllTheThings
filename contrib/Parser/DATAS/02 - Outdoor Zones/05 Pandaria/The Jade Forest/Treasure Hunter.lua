@@ -7,14 +7,19 @@ _.Zones =
 		m(371, { -- The Jade Forest
 			["g"] = {
 				n(-222, {	-- Treasure Hunter
-					["g"] = {
-						o(214407, {	-- Mo-Mo's Treasure Chest
-							["description"] = "Located inside Mo-Mo's Cave at (47.8,73.5)",
-							["g"] = {
-								q(31868),	-- Mo-Mo's Treasure Chest
-							},
-						}),
-					},
+					o(214339, {	-- Chest of Supplies
+						["questID"] = 31864, -- Chest of Supplies
+						["coord"] = { 24.63, 53.28, 371 },
+					}),
+					o(214338, {	-- Offering of Remembrance
+						["questID"] = 31865, -- Offering of Remembrance
+						["coord"] = { 46.30, 80.67, 371 },
+					}),
+					o(214337, {	-- Stash of Gems
+						["questID"] = 31866, -- Stash of Gems
+						["description"] = "Located in a cave.",
+						["coord"] = { 62.45, 27.54, 371 },
+					}),
 				}),
 			},
 		}),

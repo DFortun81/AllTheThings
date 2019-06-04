@@ -6,93 +6,50 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(371, { -- The Jade Forest
 			["g"] = {
-				{	-- Pet Battle
-					["npcID"] = -25,	-- Pet Battle
-					["f"] = 101,		-- Battle Pets
-					["g"] = {
-						{	-- Grand Master Yon
-							["questID"] = 31956,	-- Grand Master Yon
-							["isDaily"] = true,
-							["g"] = {
-								{	-- Sack of Pet Supplies
-									["itemID"] = 89125,	-- Sack of Pet Supplies
-								},
-							},
+				n(-25, {	-- Pet Battle
+					q(31953, {	-- Grand Master Hyuna
+						["repeatable"] = true,
+						["coord"] = { 47.97, 54.17, 371 },
+						["g"] = {
+							i(89125),	-- Sack of Pet Supplies
 						},
-						{	-- Thundering Pandaren Spirit
-							["questID"] = 93146,	-- Thundering Pandaren Spirit
-							["isDaily"] = true,
-							["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-							["g"] = {
-								{	-- Pandaren Spirit Pet Supplies
-									["itemID"] = 93146,	-- Pandaren Spirit Pet Supplies
-									["g"] = {
-										{	-- Chain Pet Leash
-											["itemID"] = 89139,	-- Chain Pet Leash
-										},
-										{	-- Pandaren Earth Spirit
-											["itemID"] = 92800,	-- Pandaren Earth Spirit
-										},
-										{	-- Red Ribbon Pet Leash
-											["itemID"] = 44820,	-- Red Ribbon Pet Leash
-										},
-									},
-								},
-							},
+					}),
+					q(32440, {	-- Whispering Pandaren Spirit
+						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
+						["repeatable"] = true,
+						["coord"] = { 28.90, 36.03, 371 },
+						["g"] = {
+							i(93146, {	-- Pandaren Spirit Pet Supplies
+								i(89139),	-- Chain Pet Leash
+								i(44820),	-- Red Ribbon Pet Leash
+								i(92799),	-- Pandaren Air Spirit
+							})
 						},
-						{	-- Kafi [Non-Tameable]
-							["npcID"] = 68563,	-- Kafi
-							["coords"] = {
-								{ 35.21, 56.16, 379 },
-							},
-							["description"] = "This pet is needed for \"Beasts of Fable\" quests.",
-						},
-						{	-- Alpine Foxling
-							["speciesID"] = 724,	-- Alpine Foxling
-							["crs"] = { 63550 },	-- Alpine Foxling
-						},
-						{	-- Alpine Foxling Kit
-							["speciesID"] = 725,	-- Alpine Foxling Kit
-							["crs"] = { 63551 },	-- Alpine Foxling Kit
-						},
-						{	-- Effervescent Glowfly
-							["speciesID"] = 747,	-- Effervescent Glowfly
-							["crs"] = { 63850 },	-- Effervescent Glowfly
-						},
-						{	-- Kun-Lai Runt
-							["speciesID"] = 1166,	-- Kun-Lai Runt
-							["crs"] = { 68846 },	-- Kun-Lai Runt
-						},
-						{	-- Plains Monitor
-							["speciesID"] = 726,	-- Plains Monitor
-							["crs"] = { 63547 },	-- Plains Monitor
-						},
-						{	-- Prairie Mouse
-							["speciesID"] = 727,	-- Prairie Mouse
-							["crs"] = { 59702 },	-- Prairie Mouse
-						},
-						{	-- Summet Kid
-							["speciesID"] = 679,	-- Summet Kid
-							["crs"] = { 64248 },	-- Summet Kid
-						},
-						{	-- Szechuan Chicken
-							["speciesID"] = 728,	-- Szechuan Chicken
-							["crs"] = { 63585 },	-- Szechuan Chicken
-						},
-						{	-- Tolai Hare
-							["speciesID"] = 729,	-- Tolai Hare
-							["crs"] = { 63557 },	-- Tolai Hare
-						},
-						{	-- Tolai Hare Pup
-							["speciesID"] = 730,	-- Tolai Hare Pup
-							["crs"] = { 63558 },	-- Tolai Hare Pup
-						},
-						{	-- Zooey Snake
-							["speciesID"] = 731,	-- Zooey Snake
-							["crs"] = { 63555 },	-- Zooey Snake
-						},
-					},
-				},
+					}),
+					p(380), 	-- Bucktooth Flapper
+					p(562), 	-- Coral Adder
+					p(564), 	-- Emerald Turtle
+					p(569), 	-- Garden Frog
+					p(753), 	-- Garden Moth
+					p(571),	 	-- Grove Viper
+					p(699), 	-- Jumping Spider
+					p(565), 	-- Jungle Darter
+					p(702), 	-- Leopard Tree Frog
+					p(570), 	-- Masked Tunuki
+					p(703), 	-- Masked Tanuki Pup
+					p(566), 	-- Mirror Strider
+					p(573), 	-- Sandy Petrel
+					p(754), 	-- Shrine Fly
+					p(711), 	-- Sifang Otter
+					p(712), 	-- Sifang Otter Pup
+					p(568), 	-- Silkbead Snail
+					p(723), 	-- Spiny Terrapin
+					p(572), 	-- Spirebound Crab
+					p(567), 	-- Temple Snake
+					p(819), 	-- Wild Crimson Hatchling
+					p(818), 	-- Wild Golden Hatchling
+					p(817), 	-- Wild Jade Hatchling
+				}),
 			},
 		}),
 	}),

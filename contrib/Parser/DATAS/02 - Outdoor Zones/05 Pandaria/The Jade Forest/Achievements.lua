@@ -13,6 +13,11 @@ _.Zones =
             ach(7284, {	-- Is Another Man's Treasure
 				o(213741, {	-- Ancient Jinyu Staff
 					["questID"] = 31402,
+					["coords"] = {
+						{ 44.9, 64.6, 371 },
+						{ 47.1, 67.5, 371 },
+						{ 46.2, 71.2, 371 },
+					},
 					["g"] = {
 						i(86196),	-- Ancient Jinyu Staff
 					},
@@ -60,38 +65,31 @@ _.Zones =
             }),
             ach(7997, {	-- Riches of Pandaria
 				o(213366, {	-- Ancient Pandaren Tea Pot
-					["description"] = "Located on the north-west coast at (26.2,32.5)",
+					["questID"] = 31400, 
 					["coord"] = { 26.22, 32.35, 371 },
 					["g"] = {
-						i(85780, {	-- Ancient Pandaren Tea Pot
-							["questID"] = 31400,
-						}),
+						i(85780),	-- Ancient Pandaren Tea Pot
 					},
 				}),
 				o(213368, {	-- Lucky Pandaren Coin
-					["description"] = "Located in the wishing fountain at (31.9,27.8)",
+					["questID"] = 31401,
+					["description"] = "Located in the wishing fountain.",
 					["coord"] = { 31.96, 27.76, 371 },
 					["g"] = {
-						i(85781, {	-- Lucky Pandaren Coin
-							["questID"] = 31401,
-						}),
+						i(85781),	-- Lucky Pandaren Coin
 					},
 				}),
 				o(213748, {	-- Pandaren Ritual Stone
-					["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
+					["questID"] = 31404,
 					["coord"] = { 23.49, 35.05, 371 },
 					["g"] = {
-						i(86216, {	-- Pandaren Ritual Stone
-							["questID"] = 31404,
-						}),
+						i(86216),	-- Pandaren Ritual Stone
 					},
 				}),
 				o(213362, {	-- Ship's Locker
-					["description"] = "Located underwater in a boat at (50.7,99.9)",
+					["questID"] = 31396, -- Ship's Locker
+					["description"] = "Located underwater in a boat.",
 					["coord"] = { 51.28, 100.54, 371 }, -- Can't use Uncharted Sea MapID, plots the point incorrectly.
-					["g"] = {
-						q(31396),	-- Ship's Locker
-					},
 				}),
             }),
             ach(7289),	-- Shadow Hopper (Jade Forest)
