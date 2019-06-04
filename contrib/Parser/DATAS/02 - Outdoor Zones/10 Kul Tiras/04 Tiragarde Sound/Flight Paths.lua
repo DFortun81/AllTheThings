@@ -42,6 +42,7 @@ _.Zones =
 				fp(2140, {	-- Plunder Harbor, Tiragarde Sound [Horde] [NOTE: Verification Required, this may be locked behind the War Campaign quests]
 					["description"] = "Plunder Harbor, Tiragarde Sound",
 					["coord"] = { 87.2, 50.6, 895 },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(2102, {	-- Roughneck Camp, Tiragarde Sound [Alliance]
 					["coord"] = { 42.4, 23.0, 895 },
