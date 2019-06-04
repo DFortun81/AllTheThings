@@ -8,6 +8,7 @@ _.NeverImplemented =
 	
 	q(35572),	-- Triggered by completing Hellfire Ramparts
 	q(35566),	-- Triggered by completing The Blood Furnace
+	q(37187),	-- The Dark Portal
 	q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 	q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 	q(35894),	-- Dire Maul: Bonus objective complete
