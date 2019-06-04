@@ -112,6 +112,37 @@ _.Zones =
 				
 			-- QUESTS START HERE	
 				
+				q(49491, {	-- Fuel for the Voodoo
+					["sourceQuests"] = { 49488 },	-- Tal'gurub
+					["coord"] = { 63.5, 31.7, 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 130706,	-- Izita's Spirit
+				}),
+				
+				
+				q(49489, {	-- Needs a Little Body
+					["sourceQuests"] = { 49488 },	-- Tal'gurub
+					["coord"] = { 62.8, 32.5, 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 129907,	-- Zul the Prophet
+					["g"] = {
+						i(161139),	-- Spirit Twister's Band
+						i(155255),	-- Rastari Legguards
+						i(155257),	-- Zanchuli Legwraps
+						i(155254),	-- Torcalin Legguards
+						i(155256),	-- Jambani Breeches
+					},
+				}),
+				
+				
+				q(49490, {	-- The Urn of Voices
+					["sourceQuests"] = { 49488 },	-- Tal'gurub
+					["coord"] = { 62.8, 32.5, 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 129907,	-- Zul the Prophet
+				}),
+				
+				
 				q(46957, {	-- Welcome to Zuldazar
 					["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
 					["coord"] = { 57.9, 62.4, 862 },
@@ -125,7 +156,18 @@ _.Zones =
 				
 				
 				
+		--[[		["sourceQuests"] = {  },	-- 
+					["coord"] = { , , 862 },
+					["races"] = HORDE_ONLY,
+					["qg"] = ,	-- 
+				}),
 				
+						--]]
+								
+								
+								
+								
+								
 				
 				
 			--	unsorted
@@ -540,23 +582,6 @@ _.Zones =
 					["sourceQuests"] = { 49905 },	-- Plot Twist
 					--["icon"] = "Interface\\Addons\\AllTheThings\\assets\\star",	-- Quest Finale
 				}),
-				q(49491, {	-- Fuel for the Voodoo
-					["races"] = HORDE_ONLY,
-					["qg"] = 130706,	-- Izita's Spirit
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
-				}),
-				q(49489, {	-- Needs a Little Body
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(161139),	-- Spirit Twister's Band
-						i(155255),	-- Rastari Legguards
-						i(155257),	-- Zanchuli Legwraps
-						i(155254),	-- Torcalin Legguards
-						i(155256),	-- Jambani Breeches
-					},
-					["qg"] = 129907,	-- Zul the Prophet
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
-				}),
 				q(49905, {	-- Plot Twist
 					["races"] = HORDE_ONLY,
 					["qg"] = 129907,	-- Zul the Prophet
@@ -570,11 +595,6 @@ _.Zones =
 						49490,	-- The Urn of Voices
 						49491,	-- Fuel for the Voodoo
 					},
-				}),
-				q(49490, {	-- The Urn of Voices
-					["races"] = HORDE_ONLY,
-					["qg"] = 129907,	-- Zul the Prophet
-					["sourceQuests"] = { 49488 },	-- Tal'gurub
 				}),
 				q(49493, {	-- Zul's Ethical Dilemma
 					["races"] = HORDE_ONLY,

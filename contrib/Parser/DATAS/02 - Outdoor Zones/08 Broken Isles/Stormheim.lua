@@ -448,9 +448,6 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\achievement_boss_helyra",
 					["g"] = {
 						n(-17, {	-- Quests
-							q(38343, {	-- Raze Hel (bonus objective)
-								["icon"] = "Interface\\Icons\\sha_spell_warlock_demonsoul",
-							}),
 							q(39837, {	-- An Unworthy Task
 								["qg"] = 97319,	-- Ashildir
 								["coord"] = { 65.3, 46.9, 649 },
@@ -2075,15 +2072,11 @@ _.Zones =
 					q(40078),	-- A Heavy Burden
 					q(44771),	-- A Threat Rises
 					q(40265),	-- A Touch of Magic
-					q(38442),	-- A Worthy Challenger
 					q(39903),	-- An Enchanting Home
 					q(41162),	-- And Into the Fel Fire
 					q(45482),	-- Arcane: Fate of the Tideskorn
 					q(46006),	-- Arkuthaz
 					q(47051),	-- Assassination: Fate of the Tideskorn
-					q(38939),	-- Assault on Skold-Ashil
-					q(39119),	-- Assault on Skold-Ashil
-					q(38374),	-- Assault the Drekirjar
 					q(43560),	-- Audience with the Windlord
 					q(42398),	-- Awakening the Senses
 					q(42025),	-- Bareback Brawl
@@ -2107,7 +2100,6 @@ _.Zones =
 					q(47049),	-- Demonology: Fate of the Tideskorn
 					q(40110),	-- Disrupt the Inkbinders
 					q(40149),	-- Drakol'nir Must Die
-					q(39998),	-- Drive Back the Tideskorn
 					q(47050),	-- Enhancement: Fate of the Tideskorn
 					q(40542),	-- Eyes of Nashal
 					q(40544),	-- Eyes of Nashal
@@ -2153,7 +2145,6 @@ _.Zones =
 					q(47052),	-- Retribution: Fate of the Tideskorn
 					q(39946),	-- Right Tool for the Job
 					q(38803),	-- Rin'thissa
-					q(40111),	-- Rout the Bilgefin Invaders
 					q(42736),	-- Rune Ruination
 					q(42738),	-- Rune Ruination: Runelord Ragnar
 					q(42739),	-- Rune Ruination: Runesage Floki
@@ -2171,7 +2162,6 @@ _.Zones =
 					q(42651),	-- Svergan's Promise
 					q(38424),	-- Thane's Mead Hall
 					q(41163),	-- The Apocalypse Bringer
-					q(42431),	-- The Brood of Nithogg
 					q(40541),	-- The Charge Within
 					q(45524),	-- The Forgotten Heir
 					q(41802),	-- The Gates of Valor
@@ -2586,6 +2576,7 @@ _.Zones =
 						i(134202),	-- Stormsky Cloak
 					}),
 					n(-3242, {	-- Bonespeaker Set
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 						["g"] = {
 							i(134216),	-- Bonespeaker Cowl
 							i(134221),	-- Bonespeaker Mantle
@@ -2596,9 +2587,9 @@ _.Zones =
 							i(134218),	-- Bonespeaker Leggings
 							i(134220),	-- Bonespeaker Sandals
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
 					}),
 					n(-3266, {	-- Biornskin Set
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 						["g"] = {
 							i(134196),	-- Biornskin Hood
 							i(134198),	-- Biornskin Shoulderpads
@@ -2609,9 +2600,9 @@ _.Zones =
 							i(134194),	-- Biornskin Leggings
 							i(134193),	-- Biornskin Moccasins
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
 					}),
 					n(-3278, {	-- Tideskorn Set
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 						["g"] = {
 							i(134211),	-- Tideskorn Coif
 							i(134213),	-- Tideskorn Mantle
@@ -2622,9 +2613,9 @@ _.Zones =
 							i(134212),	-- Tideskorn Leggings
 							i(134210),	-- Tideskorn Sabatons
 						},
-						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
 					}),
 					n(-3302, {	-- Skoldiir Set
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						["g"] = {
 							i(134182),	-- Skoldiir Helm
 							i(134184),	-- Skoldiir Shoulderguards
@@ -2635,9 +2626,9 @@ _.Zones =
 							i(134183),	-- Skoldiir Legguards
 							i(134185),	-- Skoldiir Sabatons
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 					n(-3309, {	-- Wardbreaker Set
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 						["g"] = {
 							i(136728),	-- Wardbreaker Helm
 							i(136730),	-- Wardbreaker Pauldrons
@@ -2648,7 +2639,6 @@ _.Zones =
 							i(136729),	-- Wardbreaker Legplates
 							i(136731),	-- Wardbreaker Warboots
 						},
-						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
 					}),
 					n(-387, {	-- Relics
 						i(143685),	-- Strength of the Nazjatar

@@ -1080,10 +1080,6 @@ _.Zones =
 							i(130021),	-- Swiftfeather Band
 						},
 					}),
-					q(39029,  {	-- Defend the Temple (bonus objective)
-						["sourceQuests"] = { 38641 },	-- The Temple of Elune
-						["coord"] = { 51.4, 56.9, 641 },
-					}),
 					q(39383,  {	-- Dishonored
 						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
 						["coord"] = { 60.9, 73.3, 641 },
@@ -1123,9 +1119,6 @@ _.Zones =
 							i(121575),	-- Thornbrace Chainmail
 							i(121587),	-- Thornbrace Helm
 						},
-					}),
-					q(38842,  {	-- Faerie Fracas (bonus objective)
-						["coord"] = { 54.1, 83.4, 641 },
 					}),
 					q(38455,  {	-- Frenzied Furbolgs
 						["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
@@ -1278,10 +1271,6 @@ _.Zones =
 					q(42857,  {	-- Moist Around the Hedges
 						["coord"] = { 66.7, 75.7, 641 },
 					}),
-					q(39393,  {	-- Moonclaw Vale (bonus objective)
-						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
-						["coord"] = { 62.9, 71.6, 641 },
-					}),
 					q(42751,  {	-- Moon Reaver
 						["sourceQuests"] = {
 							42750,	-- Dreamcatcher
@@ -1340,10 +1329,6 @@ _.Zones =
 						["sourceQuests"] = { 38641 },	-- The Temple of Elune
 						["coord"] = { 51.4, 56.9, 641 },
 						["qg"] = 92697,	-- Isoraen Nightstar
-					}),
-					q(38748,  {	-- Ruins of Shala'nir (bonus objective)
-						["sourceQuests"] = { 43702 },	-- Softening the Target
-						["coord"] = { 60.9, 35.6, 641 },
 					}),
 					q(39117,  {	-- Shriek No More
 						["sourceQuests"] = { 38643 },	-- A Village in Peril
@@ -1595,9 +1580,6 @@ _.Zones =
 						["sourceQuests"] = { 41054 },	-- Love Lost
 						["coord"] = { 69.5, 49.4, 641 },
 						["qg"] = 95117,	-- Aldos Duskwing
-					}),
-					q(38372,  {	-- Wretched Sisters (bonus objective)
-						["coord"] = { 45.1, 74.0, 641 },
 					}),
 				}),
 				n(-16,  {	-- Rares

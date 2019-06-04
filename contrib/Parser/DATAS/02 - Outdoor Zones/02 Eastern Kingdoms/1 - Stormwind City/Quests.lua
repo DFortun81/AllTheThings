@@ -8,15 +8,16 @@ _.Zones =
 			n(-17, {	-- Quests
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					qa(27355, {	-- A Boon for the Powerful
+					q(27355, {	-- A Boon for the Powerful
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 9 },	-- Warlock
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 461,	-- Demisette Cloyce
 						["g"] = {
 							i(65496),	-- Staff of Justified Sins
 						},
-						["qg"] = 461,	-- Demisette Cloyce
-						["classes"] = { 9 },	-- Warlock
---						["sourceQuests"] = {  },	-- 
 					}),
-					q(27363,  {	-- A Budding Young Surgeon
+					q(27363, {	-- A Budding Young Surgeon
 					--	["sourceQuests"] = {  },	-- 
 						["classes"] = { 5 },	-- Priest
 						["races"] = { 7 },	-- Gnome
@@ -25,9 +26,10 @@ _.Zones =
 							i(65480),	-- Staff of the Technocrat
 						},
 					}),
-					qa(50239, {	-- A Choice of Allies
+					q(50239, {	-- A Choice of Allies
 						["coord"] = { 52.07, 13.43, 84 },
-						["qg"] = 126301,		-- Anduin Wyrnn
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 126301,	-- Anduin Wyrnn
 						["g"] = {
 							{	-- Dark Iron Dwaves
 								["achievementID"] = 12515,	-- Allied Races: Dark Iron Dwarf
@@ -255,44 +257,46 @@ _.Zones =
 							qa(49929),	-- The Call for Allies
 						},
 					}),
-					qa(28393, {	-- A Dangerous Alliance
+					q(28393, {	-- A Dangerous Alliance
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 1 },	-- Warrior
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 914,	-- Ander Germaine
 						["g"] = {
 							i(65618),	-- Faceguard of the Crown
 							i(65639),	-- Headguard of the Crown
 						},
-						["qg"] = 914,	-- Ander Germaine
-						["classes"] = { 1 },	-- Warrior
---						["sourceQuests"] = {  },	-- 
 					}),
-					qa(52946, {	-- A Dying World
-						["qg"] = 142930,	-- Halford Wyrmbane
+					q(52946, {	-- A Dying World
 						["sourceQuests"] = { 51795 },	-- The Battle for Lordaeron
-						["coord"] = { 27.7, 21.5 },
+						["coord"] = { 27.7, 21.5, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 142930,	-- Halford Wyrmbane
 					}),
---					qa(26190)),	-- A Fisherman's Feast
-					qa(27337, {	-- A Fitting Weapon
+--					qa(26190),	-- A Fisherman's Feast
+					q(27337, {	-- A Fitting Weapon
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 1 },	-- Warrior
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 914,	-- Ander Germaine
 						["g"] = {
 							i(65492),	-- Broadsword of the Crown
 							i(65493),	-- Greatsword of the Crown
 						},
-						["qg"] = 914,	-- Ander Germaine
-						["classes"] = { 1 },	-- Warrior
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
-					qa(46268)),	-- A Found Memento
-					qa(29430)),	-- A Friend in Need
-					qa(24657)),	-- A Friendly Chat...
-					qa(24597)),	-- A Gift for the King of Stormwind
-					qa(46275)),	-- A Kingdom's Heart
-					qa(24428)),	-- A Most Puzzling Circumstance
-					q(31450)),	-- A New Fate
-					q(336)),	-- A Noble Brew
-					qa(335)),	-- A Noble Brew
-					q(24629)),	-- A Perfect Puff of Perfume
-					qa(47202)),	-- A Personal Message
-					qa(28825)),	-- A Personal Summons
-					qa(25154)),	-- A Present for Lila
+					qa(46268),	-- A Found Memento
+					qa(29430),	-- A Friend in Need
+					qa(24657),	-- A Friendly Chat...
+					qa(24597),	-- A Gift for the King of Stormwind
+					qa(46275),	-- A Kingdom's Heart
+					qa(24428),	-- A Most Puzzling Circumstance
+					q(31450),	-- A New Fate
+					q(336),		-- A Noble Brew
+					qa(335),	-- A Noble Brew
+					qa(47202),	-- A Personal Message
+					qa(28825),	-- A Personal Summons
+					qa(25154),	-- A Present for Lila
 --]]
 					qa(27351, {	-- A Royal Reward
 						["g"] = {
@@ -436,8 +440,9 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 					qa(26414),	-- Hitting a Walleye
 					qa(24849),	-- Hot On The Trail
 --]]
-					qa(53370, {	-- Hour of Reckoning
-						["coord"] = { 22.3, 32.3 },
+					q(53370, {	-- Hour of Reckoning
+						["description"] = "This quest is automatically offered when you reach level 110.",
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 144095,	-- Master Mathias Shaw
 						["g"] = {		
 							i(163542),	-- Footman's Warmace
