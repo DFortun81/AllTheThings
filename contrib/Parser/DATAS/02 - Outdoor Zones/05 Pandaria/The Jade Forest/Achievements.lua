@@ -19,24 +19,40 @@ _.Zones =
 				}),
 				o(213364, {	-- Ancient Pandaren Mining Pick
 					["questID"] = 31399,
+					["description"] = "Inside Greenstone Quarry at the lower level. Entrace at (71, 50)",
+					["coords"] = {
+						{ 33.52, 78.04, 373 },
+						{ 37.95, 13.75, 373 },
+						{ 40.08, 41.82, 373 },
+						{ 64.33, 55.75, 373 },
+					},
 					["g"] = {
 						i(85777),	-- Ancient Pandaren Mining Pick
 					},
 				}),
 				o(213742, {	-- Hammer of Ten Thunders
 					["questID"] = 31403,
+					["coords"] = {
+						{ 40.24, 13.67, 371 },
+						{ 41.21, 13.84, 371 },
+						{ 41.76, 17.66, 371 },
+						{ 42.01, 17.56, 371 },
+						{ 42.97, 11.63, 371 },
+					},
 					["g"] = {
 						i(86198),	-- Hammer of Ten Thunders
 					},
 				}),
 				o(213743, {	-- Jade Infused Blade
 					["questID"] = 31307,
+					["coord"] = { 39.26, 46.65, 371 },
 					["g"] = {
 						i(86199),	-- Jade Infused Blade
 					},
 				}),
 				o(213363, {	-- Wodin's Mantid Shanker
 					["questID"] = 31397,
+					["coord"] = { 39.41, 7.23, 371 },
 					["g"] = {
 						i(85776),	-- Wodin's Mantid Shanker
 					},
@@ -45,6 +61,7 @@ _.Zones =
             ach(7997, {	-- Riches of Pandaria
 				o(213366, {	-- Ancient Pandaren Tea Pot
 					["description"] = "Located on the north-west coast at (26.2,32.5)",
+					["coord"] = { 26.22, 32.35, 371 },
 					["g"] = {
 						i(85780, {	-- Ancient Pandaren Tea Pot
 							["questID"] = 31400,
@@ -62,6 +79,7 @@ _.Zones =
 				}),
 				o(213748, {	-- Pandaren Ritual Stone
 					["description"] = "Located near the Grookin Hill river delta at (23.5,35.0)",
+					["coord"] = { 23.49, 35.05, 371 },
 					["g"] = {
 						i(86216, {	-- Pandaren Ritual Stone
 							["questID"] = 31404,
@@ -70,6 +88,7 @@ _.Zones =
 				}),
 				o(213362, {	-- Ship's Locker
 					["description"] = "Located underwater in a boat at (50.7,99.9)",
+					["coord"] = { 51.28, 100.54, 371 }, -- Can't use Uncharted Sea MapID, plots the point incorrectly.
 					["g"] = {
 						q(31396),	-- Ship's Locker
 					},
