@@ -11,7 +11,12 @@ _.Zones =
 					Orgrimmar: 206109, 206116
 					Thunder Bluff: 207323
 			]]--
-			q(28790),	-- A Personal Summons
+			q(28790, {	-- A Personal Summons
+				["races"] = HORDE_ONLY,
+			}),
+			q(28825, {	-- A Personal Summons
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(29390),	-- Guardians of Hyjal: Call of the Ancients
 			q(29388),	-- Guardians of Hyjal: Firelands Invasion!
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)

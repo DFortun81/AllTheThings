@@ -273,7 +273,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 142930,	-- Halford Wyrmbane
 					}),
---					qa(26190),	-- A Fisherman's Feast
+--					qa(26190),	-- A Fisherman's Feast 
 					q(27337, {	-- A Fitting Weapon
 					--	["sourceQuests"] = {  },	-- 
 						["classes"] = { 1 },	-- Warrior
@@ -285,92 +285,94 @@ _.Zones =
 						},
 					}),
 --[[
-					qa(46268),	-- A Found Memento
-					qa(29430),	-- A Friend in Need
-					qa(24657),	-- A Friendly Chat...
-					qa(24597),	-- A Gift for the King of Stormwind
 					qa(46275),	-- A Kingdom's Heart
-					qa(24428),	-- A Most Puzzling Circumstance
-					q(31450),	-- A New Fate
 					q(336),		-- A Noble Brew
 					qa(335),	-- A Noble Brew
 					qa(47202),	-- A Personal Message
-					qa(28825),	-- A Personal Summons
 					qa(25154),	-- A Present for Lila
 --]]
-					qa(27351, {	-- A Royal Reward
+					q(27351, {	-- A Royal Reward
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 4 },	-- Rogue
+						["races"] = ALLIANCE_ONLY,
+						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
 						["g"] = {
 							i(65486),	-- SI:7 Special Issue Dagger
 						},
-						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
-						["classes"] = { 4 },	-- Rogue
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
-					qa(38035)),	-- A Royal Summons
-					qa(29074)),	-- A Season for Celebration
-					qa(27225)),	-- A Summons from Ander Germaine
-					qa(32310)),	-- A Tale of Six Masters
-					qa(31917)),	-- A Tamer's Homecoming
-					qa(43323)),	-- A Time to Reflect
-					qa(171)),	-- A Warden of the Alliance
-					qa(44473)),	-- A Weapon of the Alliance
+					q(32310, {	-- A Tale of Six Masters
+						["classes"] = { 9 },	-- Warlock
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 90,
+					}),
+					q(44473, {	-- A Weapon of the Alliance
+						["classes"] = { 12 },	-- Demon Hunter
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 98,
+					}),
 --]]
 					qa(27344, {	-- A Well-Earned Reward
-						["qg"] = 44247,	-- Wulf Hansreim
 						["classes"] = { 3 },	-- Hunter
+						["qg"] = 44247,	-- Wulf Hansreim
 						["g"] = {
 							i(65465),	-- Crossbow of the Crown
 						},
 					}),
 --[[
-					qa(11451)),	-- Alicia's Poem
-					qa(27273, {	-- An Invitation from Moonglade
+					qa(11451),	-- Alicia's Poem
+					q(27273, {	-- An Invitation from Moonglade
+						["classes"] = { 11 },	-- Druid
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 44395,	-- 
-						["classes"] = {11},
 					}),
-COORDINATES			qa(27273, {	-- An Invitation from Moonglade
-						["qg"] = 5504,	-- 
-						["classes"] = {11},
+					q(325, {	-- Armed and Ready
+						["races"] = ALLIANCE_ONLY,
+						["u"] = 40,	-- Legacy Quests
 					}),
-					qa(325)),	-- Armed and Ready
-					qh(40976)),	-- Audience with the Warchief
-					qa(32008)),	-- Audrey Burnhep
-					qa(31966)),	-- Battle Pet Tamers: Cataclysm
-					qa(31902)),	-- Battle Pet Tamers: Eastern Kingdoms
-					qa(31889)),	-- Battle Pet Tamers: Kalimdor
-					qa(31927)),	-- Battle Pet Tamers: Northrend
-					qa(31919)),	-- Battle Pet Tamers: Outland
-					qa(31930)),	-- Battle Pet Tamers: Pandaria
-					qa(26488)),	-- Big Gulp
+					qa(26488),	-- Big Gulp
 --]]
-					qa(27353, {	-- Blessings of the Elements
-						["qg"] = 20407,	-- Farseer Umbrua
+					q(27353, {	-- Blessings of the Elements
+					--	["sourceQuests"] = {  },	-- 
 						["classes"] = { 7 },	-- Shaman
---						["sourceQuests"] = {  },	-- 
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 20407,	-- Farseer Umbrua
 						["g"] = {
 							i(65488),	-- Battleaxe of the Farseer
 							i(65489),	-- Spell Axe of the Farseer
 						},
 					}),
-					qa(29412, {	-- Blown Away
+					q(29412, {	-- Blown Away
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 54117,	-- Vin
 						["g"] = {
 							i(72042), 	-- Alliance Balloon (PET!)
 						},
 					}),
 --[[					
-					qa(29100),	-- Bwemba's Spirit
-					qa(14482),	-- Call of Duty
+					q(29100, {	-- Bwemba's Spirit
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 85,
+					}),
+					q(14482, {	-- Call of Duty
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 80,
+					}),
 					q(14446),	-- Cataclysm!
-					qa(46274),	-- Consoling the King
-					qa(26394),	-- Continue to Stormwind
-					qa(27272),	-- Demisette Sends Word
-					qa(44463),	-- Demons Among Them
+					q(46274, {	-- Consoling the King
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(44463, {	-- Demons Among Them
+						["classes"] = { 12 },	-- Demon Hunter
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 98
+					}),
 --]]
-					qa(40593, {	-- Demons Among Us
+					q(40593, {	-- Demons Among Us
 					--	["sourceQuests"] = {  },	-- 
 						["coord"] = { 85.2, 32.3, 84 },
+						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 98,
 						["qg"] = 100675,	-- Jace Darkweaver
 						["g"] = {
