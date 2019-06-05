@@ -4,6 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(321, {	-- Mogu'shan Palace
+		["coord"] = { 80.5, 33.0, 390 },	-- Vale of Eternal Blossoms
 		["mapID"] = 453,
 		["maps"] = { 454, 455 },
 		["lvl"] = 87,
@@ -38,7 +39,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			d(1, {	-- Normal
+			d(1,  {	-- Normal
 				e(708, {	-- Trial of the King
 					["crs"] = {
 						61445,	-- Haiyan the Unstoppable
@@ -97,7 +98,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			d( 2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 90,
 				["g"] = {
 					ach(6713),	-- Quarrelsome Quilen Quintet
