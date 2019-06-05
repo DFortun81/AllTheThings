@@ -576,6 +576,14 @@ _.Zones =
 					qa(353),	-- Stormpike's Delivery
 					qa(1338),	-- Stormpike's Order
 					q(579),	-- Stormwind Library
+--]]
+					q(53500, {	-- Stranger in a Strange Land (Dark Iron Dwarf)
+						["sourceQuests"] = { 51486 },	-- For the Alliance
+						["coord"] = { 53.1, 15.4, 84 },
+						["races"] = { 34 },	-- Dark Iron Dwarf
+						["qg"] = 133362,	-- Ambassador Moorgard
+					}),
+--[[
 					q(11954),	-- Striking Back
 					q(11917),	-- Striking Back
 					q(11947),	-- Striking Back
