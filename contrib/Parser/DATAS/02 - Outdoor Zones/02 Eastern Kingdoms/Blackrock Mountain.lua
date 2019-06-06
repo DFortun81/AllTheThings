@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(35, {	-- Blackrock Mountain
 			--Note!! Considering doing 3 separate maps
-			["groups"] = {	
+			["g"] = {	
 				n(-16, { 	-- Rares
 					n(50839, { 	-- Chromehound
 						i(9947),	-- Chieftain's Belt

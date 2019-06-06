@@ -5,14 +5,16 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(499, {	-- Deeprun Tram
-			["groups"] = {							
+			["g"] = {							
 				n(-17, {	-- Quests
-					["groups"] = {
-						qa(6661, {	-- Deeprun Rat Roundup
+					["g"] = {
+						q(6661, {	-- Deeprun Rat Roundup
 							["qg"] = 12997,	-- Monty
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(6662, {	-- Me Brother, Nipsy
+						q(6662, {	-- Me Brother, Nipsy
 							["qg"] = 12997,	-- Monty
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 6661 } -- Deeprun Rat Roundup
 						}),
 					},
