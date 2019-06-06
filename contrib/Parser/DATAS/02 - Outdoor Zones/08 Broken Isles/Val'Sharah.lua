@@ -16,6 +16,44 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["g"] = {
+				n(-4,   {	-- Achievements
+					ach(10698, {	-- That's Val'sharah Folks!
+						{	-- Criteria 1 — Archdruid of the Vale
+							["criteriaID"] = 1,	-- Archdruid of the Vale
+							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
+						},
+						{	-- Criteria 2 — Archdruid of the Claw
+							["criteriaID"] = 2,	-- Archdruid of the Claw
+							["sourceQuests"] = { 38147 },	-- Entangled Dreams
+						},
+						{	-- Criteria 3 — Archdruid of Lore
+							["criteriaID"] = 3,	-- Archdruid of Lore
+							["sourceQuests"] = {
+								38225,	-- Death to the Witchmother
+								38235,	-- Solid as a Rock
+							},
+						},
+						{	-- Criteria 4 — Into the Nightmare
+							["criteriaID"] = 4,	-- Into the Nightmare
+							["sourceQuests"] = { 38753 },	-- The Demon's Trail
+						},
+						{	-- Criteria 5 — All Nightmare Long
+							["criteriaID"] = 5,	-- All Nightmare Long
+							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						},
+						{	-- Criteria 6 — Bradensbrook
+							["criteriaID"] = 6,	-- Bradensbrook
+							["sourceQuests"] = { 38691 },	-- Jarod's Mission
+						},
+						{	-- Criteria 7 — Black Rook Hold
+							["criteriaID"] = 7,	-- Black Rook Hold
+							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
+						},
+					}),
+					ach(10877, {	-- Pillars of Creation
+						["sourceQuests"] = { 40890 },	-- The Tears of Elune
+					}),
+				}),
 				n(-169, {	-- Emissary Quess
 					q(42170, {	-- The Dreamweavers
 						["g"] = {
@@ -613,35 +651,6 @@ _.Zones =
 					}),	
 				}),
 				n(-38,  {	-- Profession
-					{	-- Blight-Choked Herb [Dreamleaf II]
-						["itemID"] = 129141,	-- Blight-Choked Herb
-						["questID"] = 40022,	-- Choked By Nightmare
-						["requireSkill"] = 182,	-- Herbalism
-						["sourceQuests"] = {
-							40021,	-- One Dead Plant is One Too Many
-						},
-					},
-					{	-- Blight-Twisted Herb [Dreamleaf III]
-						["itemID"] = 129136,	-- Blight-Twisted Herb
-						["questID"] = 40020,	-- Twisted to Death
-						["requireSkill"] = 182,	-- Herbalism
-						["sourceQuests"] = {
-							40019,	-- An Empathetic Herb
-						},
-					},
-					{	-- Dreamleaf Sample [Dreamleaf I]
-						["itemID"] = 129118,	-- Dreamleaf Sample
-						["questID"] = 40018,	-- Dreamleaf Sample
-						["requireSkill"] = 182,	-- Herbalism
-					},
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					},
 					prof(171, {	-- Alchemy
 						q(39338, {	-- Return the Filter
 							["qg"] = 93974,	-- Leyweaver Erenyi
@@ -876,45 +885,47 @@ _.Zones =
 						}),
 						i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 					}),
-				}),
-				n(-17,  {	-- Quests
-					ach(10698, {	-- That's Val'sharah Folks!
-						{	-- Criteria 1 — Archdruid of the Vale
-							["criteriaID"] = 1,	-- Archdruid of the Vale
-							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
-						},
-						{	-- Criteria 2 — Archdruid of the Claw
-							["criteriaID"] = 2,	-- Archdruid of the Claw
-							["sourceQuests"] = { 38147 },	-- Entangled Dreams
-						},
-						{	-- Criteria 3 — Archdruid of Lore
-							["criteriaID"] = 3,	-- Archdruid of Lore
+					prof(182, {	-- Herbalism
+						{	-- Blight-Choked Herb [Dreamleaf II]
+							["itemID"] = 129141,	-- Blight-Choked Herb
+							["questID"] = 40022,	-- Choked By Nightmare
+							["requireSkill"] = 182,	-- Herbalism
 							["sourceQuests"] = {
-								38225,	-- Death to the Witchmother
-								38235,	-- Solid as a Rock
+								40021,	-- One Dead Plant is One Too Many
 							},
 						},
-						{	-- Criteria 4 — Into the Nightmare
-							["criteriaID"] = 4,	-- Into the Nightmare
-							["sourceQuests"] = { 38753 },	-- The Demon's Trail
+						{	-- Blight-Twisted Herb [Dreamleaf III]
+							["itemID"] = 129136,	-- Blight-Twisted Herb
+							["questID"] = 40020,	-- Twisted to Death
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								40019,	-- An Empathetic Herb
+							},
 						},
-						{	-- Criteria 5 — All Nightmare Long
-							["criteriaID"] = 5,	-- All Nightmare Long
-							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						{	-- Dreamleaf Sample [Dreamleaf I]
+							["itemID"] = 129118,	-- Dreamleaf Sample
+							["questID"] = 40018,	-- Dreamleaf Sample
+							["requireSkill"] = 182,	-- Herbalism
 						},
-						{	-- Criteria 6 — Bradensbrook
-							["criteriaID"] = 6,	-- Bradensbrook
-							["sourceQuests"] = { 38691 },	-- Jarod's Mission
-						},
-						{	-- Criteria 7 — Black Rook Hold
-							["criteriaID"] = 7,	-- Black Rook Hold
-							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
+						{	-- Felwort Sample [Felwort I]
+							["itemID"] = 129122,	-- Felwort Sample
+							["questID"] = 40040,	-- Felwort Sample
+							["requireSkill"] = 182,	-- Herbalism
+							["g"] = {
+								recipe(193307),	-- Felwort [Rank 1]
+							},
 						},
 					}),
-					ach(10877, {	-- Pillars of Creation
-						["sourceQuests"] = { 40890 },	-- The Tears of Elune
-					}),  
-				--	QUESTS START HERE
+					prof(393, {	-- Skinning
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
+					}),
+				}),
+				n(-17,  {	-- Quests
 					q(38889,  {	-- Adopting the Adorable
 						["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 						["coord"] = { 53.0, 87.7, 641 },	-- cave entrance

@@ -684,55 +684,6 @@ _.Zones =
 					}),
 				}),
 				n(-38, { 	-- Profession
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
-						["g"] = {
-							{	-- Felwort [Rank 1]
-								["recipeID"] = 193307,	-- Felwort [Rank 1]
-							},
-						},
-					},
-					{	-- Fjarnskaggl Sample [Fjarnskaggl I]
-						["itemID"] = 129120,	-- Fjarnskaggl Sample
-						["questID"] = 40029,	-- Fjarnskaggl Sample
-						["requireSkill"] = 182,	-- Herbalism
-						["g"] = {
-							{	-- Fjarnskaggl [Rank 1]
-								["recipeID"] =  193301,	-- Fjarnskaggl [Rank 1]
-							},
-						},
-					},
-					{	-- Ram's-Horn Trowel [Fjarnskaggl II]
-						["itemID"] = 129138,	-- Ram's-Horn Trowel
-						["questID"] = 40030,	-- Ram's-Horn Trowel
-						["sourceQuests"] = {
-							129120,	-- Fjarnskaggl Sample
-						},
-						["requireSkill"] = 182,	-- Herbalism
-					},
-					{	-- Runed Journal Page [Fjarnskaggl III]
-						["itemID"] = 129142,	-- Runed Journal Page
-						["questID"] = 40032,	-- The Missing Page
-						["sourceQuests"] = {
-							40031,	-- Vrykul Herblore
-						},	
-						
-						["requireSkill"] = 182,	-- Herbalism
-					},
-					{	-- Skinning Technique: Unbroken Claw
-						["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
-						["requireSkill"] = 393,	-- Skinning
-						["crs"] = {
-							91799,	-- Juvenile Stormwing
-						},
-						["g"] = {
-							{ -- Unbroken Claw
-								["recipeID"] = 194171,	-- Unbroken Claw
-							},
-						},
-					},
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -879,6 +830,65 @@ _.Zones =
 						{	-- Schematic: Reaves Module: Wormhole Generator Mode
 							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
 						},
+					}),
+					prof(182, {	-- Herbalism
+						{	-- Felwort Sample [Felwort I]
+							["itemID"] = 129122,	-- Felwort Sample
+							["questID"] = 40040,	-- Felwort Sample
+							["requireSkill"] = 182,	-- Herbalism
+							["g"] = {
+								{	-- Felwort [Rank 1]
+									["recipeID"] = 193307,	-- Felwort [Rank 1]
+								},
+							},
+						},
+						{	-- Fjarnskaggl Sample [Fjarnskaggl I]
+							["itemID"] = 129120,	-- Fjarnskaggl Sample
+							["questID"] = 40029,	-- Fjarnskaggl Sample
+							["requireSkill"] = 182,	-- Herbalism
+							["g"] = {
+								{	-- Fjarnskaggl [Rank 1]
+									["recipeID"] =  193301,	-- Fjarnskaggl [Rank 1]
+								},
+							},
+						},
+						{	-- Ram's-Horn Trowel [Fjarnskaggl II]
+							["itemID"] = 129138,	-- Ram's-Horn Trowel
+							["questID"] = 40030,	-- Ram's-Horn Trowel
+							["sourceQuests"] = {
+								129120,	-- Fjarnskaggl Sample
+							},
+							["requireSkill"] = 182,	-- Herbalism
+						},
+						{	-- Runed Journal Page [Fjarnskaggl III]
+							["itemID"] = 129142,	-- Runed Journal Page
+							["questID"] = 40032,	-- The Missing Page
+							["sourceQuests"] = {
+								40031,	-- Vrykul Herblore
+							},	
+							
+							["requireSkill"] = 182,	-- Herbalism
+						},
+					}),
+					prof(393, {	-- Skinning
+						{	-- Skinning Technique: Unbroken Claw
+							["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
+							["requireSkill"] = 393,	-- Skinning
+							["crs"] = {
+								91799,	-- Juvenile Stormwing
+							},
+							["g"] = {
+								{ -- Unbroken Claw
+									["recipeID"] = 194171,	-- Unbroken Claw
+								},
+							},
+						},
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests

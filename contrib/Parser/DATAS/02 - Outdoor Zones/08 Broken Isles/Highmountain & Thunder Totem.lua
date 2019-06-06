@@ -25,6 +25,82 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["g"] = {
+				n(-4,   {	-- Achievement
+					ach(10994, {	-- A Glorious Campaign
+						cl(2, {	-- Paladin
+						  q(45561),	-- Seek Me Out
+						  q(45562),	-- Kneel and Be Squired!
+						  q(45565),	-- Further Training
+						  q(45566),	-- A Knight's Belongings
+						  q(45567),	-- My Kingdom for a Horse
+						  q(45568),	-- They Stole Excaliberto!
+						  q(45644),	-- Oh Doloria, My Sweet Doloria
+						  q(45645),	-- A Fool's Errand
+						}),
+						cl(5, {	-- Priest
+						  q(45343),	-- A Curious Contagion
+						  q(45344),	-- Sampling the Source
+						  q(45346),	-- Shambling Specimens
+						  q(45345),	-- Mischievous Sprites
+						  q(45347),	-- Crafting a Cure
+						  q(45348),	-- Safekeeping
+						  q(45342),	-- Administering Aid
+						}),
+					}),
+					ach(10059, {	-- Ain't No Mountain High Enough
+						{	-- Criteria 1 — The Rivermane Tribe
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 1,	-- The Rivermane Tribe
+							["sourceQuests"] = { 39487 },	-- Crystal Fury
+						},
+						{	-- Criteria 2 — Riverbend
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 2,	-- Riverbend
+							["sourceQuests"] = { 38909 },	-- Get to High Ground
+						},
+						{	-- Criteria 3 — The Skyhorn Tribe
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 3,	-- The Skyhorn Tribe
+							["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
+						},
+						{	-- Criteria 4 — The Bloodtotem Tribe
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 4,	-- The Bloodtotem Tribe
+							["sourceQuests"] = { 39426 },	-- Blood Debt
+						},
+						{	-- Criteria 5 — Huln's War
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 5,	-- Huln's War
+							["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
+						},
+						{	-- Criteria 6 — Secrets of Highmountain
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 6,	-- Secrets of Highmountain
+							["sourceQuests"] = { 39579 },	-- The Backdoor
+						},
+						{	-- Criteria 7 — Battle of Snowblind Mesa
+							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
+							["criteriaID"] = 7,	-- Battle of Snowblind Mesa
+							["sourceQuests"] = { 39780 },	-- The Underking
+						},
+					}),
+					ach(10398, {	-- Drum Circle
+						["description"] = "You need 5 people jumping on the drum on lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
+					}),
+					ach(10877, {	-- Pillars of Creation
+						["collectible"] = false,
+						["g"] = {
+							{	-- Criteria 4 — Hammer of Khaz'goroth
+								["achievementID"] = 10877,	-- Pillars of Creation
+								["criteriaID"] = 4,	-- Hammer of Khaz'goroth
+								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
+							},
+						},
+					}),
+					ach(11609, {	-- Power Unbound
+					--	q(45841),	-- A Triumphant Report
+					}),
+				}),
 				n(-10067, {	-- Artifacts
 					n(-159, {	-- Daily Event Roll
 						["lvl"] = 110,
@@ -46,13 +122,6 @@ _.Zones =
 							}),
 						},
 					}),
-				}),
-				n(-4,   {	-- Achievement
-					["g"] = {
-						ach(10398, {	-- Drum Circle
-							["description"] = "You need 5 people jumping on the drum on lower floor of Thunder Totem. Can NOT be completed while you are on 'Assault on Thunder Totem'."
-						}),
-					},
 				}),
 				n(-169, {	-- Emissary Quests
 					q(42233, {	-- Highmountain Tribes
@@ -1070,6 +1139,12 @@ _.Zones =
 								recipe(194170),	-- Unbroken Tooth
 							},
 						},
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
 					}),
 					prof(197, {	-- Tailoring
 						i(137681, {	-- Recipe: Bloodtotem Saddle Blanket
@@ -1078,77 +1153,6 @@ _.Zones =
 					}),
 				}),
 				n(-17,  {	-- Quests
-					ach(10994, {	-- A Glorious Campaign
-						cl(2, {	-- Paladin
-						  q(45561),	-- Seek Me Out
-						  q(45562),	-- Kneel and Be Squired!
-						  q(45565),	-- Further Training
-						  q(45566),	-- A Knight's Belongings
-						  q(45567),	-- My Kingdom for a Horse
-						  q(45568),	-- They Stole Excaliberto!
-						  q(45644),	-- Oh Doloria, My Sweet Doloria
-						  q(45645),	-- A Fool's Errand
-						}),
-						cl(5, {	-- Priest
-						  q(45343),	-- A Curious Contagion
-						  q(45344),	-- Sampling the Source
-						  q(45346),	-- Shambling Specimens
-						  q(45345),	-- Mischievous Sprites
-						  q(45347),	-- Crafting a Cure
-						  q(45348),	-- Safekeeping
-						  q(45342),	-- Administering Aid
-						}),
-					}),
-					ach(10059, {	-- Ain't No Mountain High Enough
-						{	-- Criteria 1 — The Rivermane Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 1,	-- The Rivermane Tribe
-							["sourceQuests"] = { 39487 },	-- Crystal Fury
-						},
-						{	-- Criteria 2 — Riverbend
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 2,	-- Riverbend
-							["sourceQuests"] = { 38909 },	-- Get to High Ground
-						},
-						{	-- Criteria 3 — The Skyhorn Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 3,	-- The Skyhorn Tribe
-							["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
-						},
-						{	-- Criteria 4 — The Bloodtotem Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 4,	-- The Bloodtotem Tribe
-							["sourceQuests"] = { 39426 },	-- Blood Debt
-						},
-						{	-- Criteria 5 — Huln's War
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 5,	-- Huln's War
-							["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
-						},
-						{	-- Criteria 6 — Secrets of Highmountain
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 6,	-- Secrets of Highmountain
-							["sourceQuests"] = { 39579 },	-- The Backdoor
-						},
-						{	-- Criteria 7 — Battle of Snowblind Mesa
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
-							["criteriaID"] = 7,	-- Battle of Snowblind Mesa
-							["sourceQuests"] = { 39780 },	-- The Underking
-						},
-					}),
-					ach(10877, {	-- Pillars of Creation
-						["collectible"] = false,
-						["g"] = {
-							{	-- Criteria 4 — Hammer of Khaz'goroth
-								["achievementID"] = 10877,	-- Pillars of Creation
-								["criteriaID"] = 4,	-- Hammer of Khaz'goroth
-								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
-							},
-						},
-					}),
-					ach(11609, {	-- Power Unbound
-					--	q(45841),	-- A Triumphant Report
-					}),
 					q(40216, {	-- A Hunter at Heart
 						["sourceQuests"] = {
 							40170,	-- Amateur Hour

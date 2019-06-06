@@ -399,37 +399,6 @@ _.Zones =
 					p(1591), 	-- Violet Firefly
 				}),
 				n(-38, { 	-- Profession
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
-						["g"] = {
-							{	-- Felwort [Rank 1]
-								["recipeID"] = 193307,	-- Felwort [Rank 1]
-							},
-						},
-					},
-					{	-- Jeweled Spade Handle [Starlight Rose II]
-						["itemID"] = 129140,	-- Jeweled Spade Handle
-						["questID"] = 40036,	-- Jeweled Spade Handle
-						["sourceQuests"] = {
-							40035,	-- The Gentlest Touch
-						},
-						["requireSkill"] = 182,	-- Herbalism
-					},
-					{	-- Scribbled Ramblings [Starlight Rose III]
-						["itemID"] = 129143,	-- Scribbled Ramblings
-						["questID"] = 40038,	-- Insame Ramblings
-						["requireSkill"] = 182,	-- Herbalism
-						["sourceQuests"] = {
-							40037,	-- The Spade's Blade
-						},
-					},
-					{	-- Starlight Rosedust [Starlight Rose I]
-						["itemID"] = 129121,	-- Starlight Rosedust
-						["questID"] = 40034,	-- Starlight Rosedust
-						["requireSkill"] = 182,	-- Herbalism
-					},
 					prof(185, {	-- Cooking
 						i(141011, {	-- Recipe: Surf
 							["description"] = "Drops from any marine mob in the zone.",
@@ -587,6 +556,46 @@ _.Zones =
 						{	-- Schematic: Reaves Module: Wormhole Generator Mode
 							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
 						},
+					}),
+					prof(182, {	-- Herbalism
+						{	-- Felwort Sample [Felwort I]
+							["itemID"] = 129122,	-- Felwort Sample
+							["questID"] = 40040,	-- Felwort Sample
+							["requireSkill"] = 182,	-- Herbalism
+							["g"] = {
+								{	-- Felwort [Rank 1]
+									["recipeID"] = 193307,	-- Felwort [Rank 1]
+								},
+							},
+						},
+						{	-- Jeweled Spade Handle [Starlight Rose II]
+							["itemID"] = 129140,	-- Jeweled Spade Handle
+							["questID"] = 40036,	-- Jeweled Spade Handle
+							["sourceQuests"] = {
+								40035,	-- The Gentlest Touch
+							},
+							["requireSkill"] = 182,	-- Herbalism
+						},
+						{	-- Scribbled Ramblings [Starlight Rose III]
+							["itemID"] = 129143,	-- Scribbled Ramblings
+							["questID"] = 40038,	-- Insame Ramblings
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								40037,	-- The Spade's Blade
+							},
+						},
+						q(40034, {	-- Starlight Rosedust
+							["requireSkill"] = 182,	-- Herbalism
+							["itemID"] = 129121,	-- Starlight Rosedust
+						}),
+					}),
+					prof(393, {	-- Skinning
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests
