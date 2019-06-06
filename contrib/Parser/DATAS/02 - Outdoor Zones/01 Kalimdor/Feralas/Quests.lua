@@ -7,15 +7,32 @@ _.Zones =
 		m(69, {	-- Feralas
 			["groups"] = {
 				n(-17, { 	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					a(ach(4932, {	-- Feralas Quests (Alliance)
-						crit(1),		-- The Fate of Taerar
-						crit(2),		-- The Twilight Sermon
-						crit(3),		-- Freed
-						crit(4),		-- Forces of Nature
-						crit(5),		-- The Dragons of Nightmare
-					})),
-]]--
+					{	-- Feralas Quests
+						["achievementID"] = 4932,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							{	-- The Fate of Taerar
+								["criteriaID"] = 1,
+								["sourceQuest"] = 25398,	-- Sealing the Dream
+							},
+							{	-- The Twilight Sermon
+								["criteriaID"] = 2,
+								["sourceQuest"] = 25333,	-- Might of the Sentinels
+							},
+							{	-- Freed
+								["criteriaID"] = 3,
+								["sourceQuest"] = 26401,	-- Return to Vestia
+							},
+							{	-- Forces of Nature
+								["criteriaID"] = 4,
+								["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
+							},
+							{	-- The Dragons of Nightmare
+								["criteriaID"] = 5,
+								["sourceQuest"] = 25438,	-- Ysondre's Farewell
+							},
+						},
+					},
 					{	-- Feralas Quests
 						["achievementID"] = 4979,
 						["races"] = HORDE_ONLY,
@@ -79,29 +96,32 @@ _.Zones =
 					{	-- Adella's Covert Camp
 						["questID"] = 26574,
 						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					},
-					{	-- Alpha Strike
+					{	-- Alpha Strike (A)
+						["questID"] = 25427,
+						["qg"] = 39725,	-- Adella
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25426,	-- War on the Woodpaw
+					},
+					{	-- Alpha Strike (H)
 						["questID"] = 25364,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25363,	-- War on the Woodpaw
 					},
-					{	-- Alpha Strike
-						["questID"] = 25427,
-						["qg"] = 39725,	-- Adella
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25426,	-- War on the Woodpaw
-					},
 					{	-- Ancient Suffering
 						["questID"] = 25423,
 						["qg"] = 40131,	-- Sensiria
 						["coord"] = { 65.9, 62.8, 69 },
 					},
-					{	-- Dark Heart
+					{	-- Dark Heart (A)
 						["questID"] = 25654,
 						["qg"] = 40035,	-- Erina Willowborn
+						["coord"] = { 51.2, 17.8, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(54921),	-- Dark Crystal Waistband
@@ -109,7 +129,7 @@ _.Zones =
 							i(131417),	-- Captured Heart Bindings
 						},
 					},
-					{	-- Dark Heart
+					{	-- Dark Heart (H)
 						["questID"] = 3062,
 						["u"] = 40,
 						["qg"] = 7776,	-- Talo Thornhoof
@@ -119,7 +139,7 @@ _.Zones =
 							un(2, i(9665)),	-- Wingcrest Gloves
 						},
 					},
-					{	-- Dark Heart
+					{	-- Dark Heart (H)
 						["questID"] = 25340,
 						["qg"] = 7776,	-- Talo Thornhoof
 						["coord"] = { 41.5, 15.2, 69 },
@@ -183,6 +203,7 @@ _.Zones =
 					{	-- Estulan's Examination
 						["questID"] = 25402,
 						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25401,	-- The Gordunni Orb
 					},
@@ -197,6 +218,7 @@ _.Zones =
 					{	-- Eyes in the Sky
 						["questID"] = 27133,
 						["qg"] = 3936,	-- Shandris Feathermoon
+						["coord"] = { 46.0, 49.1, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Faerie Dragon Muisek
@@ -214,6 +236,7 @@ _.Zones =
 					{	-- Forces of Nature: Hippogryphs
 						["questID"] = 25409,
 						["qg"] = 40078,	-- Handler Tessina
+						["coord"] = { 57.1, 53.8, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25407,	-- Forces of Nature: Wisps
 					},
@@ -232,17 +255,20 @@ _.Zones =
 					{	-- Forces of Nature: Treants
 						["questID"] = 25410,
 						["qg"] = 40078,	-- Handler Tessina
+						["coord"] = { 57.1, 53.8, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25409,	-- Forces of Nature: Hippogryphs
 					},
 					{	-- Forces of Nature: Wisps
 						["questID"] = 25407,
 						["qg"] = 40078,	-- Handler Tessina
+						["coord"] = { 57.1, 53.8, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- General Shandris Feathermoon
 						["questID"] = 26402,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true, 	-- If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available
 						["sourceQuest"] = 25398,	-- Sealing the Dream
@@ -250,11 +276,13 @@ _.Zones =
 					{	-- General Skessesh
 						["questID"] = 25458,
 						["qg"] = 39723,	-- Tambre
+						["coord"] = { 32.6, 45.7, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Gordok Guards
 						["questID"] = 25406,
 						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25400,	-- The Gordunni Threat
 					},
@@ -271,6 +299,7 @@ _.Zones =
 					{	-- Hatecrest Forces
 						["questID"] = 25399,
 						["qg"] = 39726,	-- Tambre
+						["coord"] = { 32.6, 45.7, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Hippogryph Muisek
@@ -327,6 +356,7 @@ _.Zones =
 					{	-- Looming Threat
 						["questID"] = 27063,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Master of the Wild Leather
@@ -341,6 +371,7 @@ _.Zones =
 					{	-- Might of the Sentinels
 						["questID"] = 25333,
 						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(54936),	-- Sermon-Halter Gloves
@@ -366,9 +397,10 @@ _.Zones =
 							i(131415),	-- Ogre's Visage
 						},
 					},
-					{	-- More than Illness
+					{	-- More than Illness (A)
 						["questID"] = 25394,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25447,	-- Signs of Change
 						["groups"] = {
@@ -380,7 +412,7 @@ _.Zones =
 							i(156984),	-- Windflight Knife 
 						},
 					},
-					{	-- More than Illness
+					{	-- More than Illness (H)
 						["questID"] = 25230,
 						["qg"] = 39377,	-- Konu Runetotem
 						["coord"] = { 41.3, 15.4, 69 },
@@ -406,9 +438,10 @@ _.Zones =
 						["questID"] = 25305,
 						["u"] = 1,
 					},
-					{	-- Ogre Abduction
+					{	-- Ogre Abduction (A)
 						["questID"] = 25403,
 						["qg"] = 40052,	-- Estulan
+						["coord"] = { 57.0, 55.4, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25402,	-- Estulan's Examination
 						["groups"] = {
@@ -419,7 +452,7 @@ _.Zones =
 							i(131423),	-- Spaulders of the Ogre-Nabber
 						},
 					},
-					{	-- Ogre Abduction
+					{	-- Ogre Abduction (H)
 						["questID"] = 25344,
 						["qg"] = 39840,	-- Swar'jan
 						["coord"] = { 51.9, 46.6, 69 },
@@ -466,7 +499,10 @@ _.Zones =
 					{	-- Report to Silvia
 						["questID"] = 25463,
 						["qg"] = 3936,	-- Shandris Feathermoon
+						["coord"] = { 46.0, 49.1, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25458,	-- General Skessesh
+						["isBreadcrumb"] = true,
 					},
 					{	-- Rescue OOX-22/FE!
 						["questID"] = 25476,
@@ -519,22 +555,24 @@ _.Zones =
 							i(131420),	-- Yeti Hide Padded Greaves
 						},
 					},
-					{	-- Saving Warpwood
+					{	-- Saving Warpwood (A)
 						["questID"] = 27129,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					},
-					{	-- Saving Warpwood
+					{	-- Saving Warpwood (H)
 						["questID"] = 27130,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					},
-					{	-- Sealing the Dream
+					{	-- Sealing the Dream (A)
 						["questID"] = 25398,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(54917),	-- Dream Bough Robes
@@ -546,7 +584,7 @@ _.Zones =
 							25397,	-- The Land, Corrupted
 						},
 					},
-					{	-- Sealing the Dream
+					{	-- Sealing the Dream (H)
 						["questID"] = 25250,
 						["qg"] = 39377,	-- Konu Runetotem
 						["coord"] = { 41.3, 15.4, 69 },
@@ -561,16 +599,17 @@ _.Zones =
 							25241,	-- The Land, Corrupted
 						},
 					},
-					{	-- Signs of Change
+					{	-- Signs of Change (A)
 						["questID"] = 25447,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							28511,	-- Hero's Call: Feralas!
 							14410,	-- The Wilds of Feralas
 						},
 					},
-					{	-- Signs of Change
+					{	-- Signs of Change (H)
 						["questID"] = 25210,
 						["qg"] = 39377,	-- Konu Runetotem
 						["coord"] = { 41.3, 15.4, 69 },
@@ -639,12 +678,14 @@ _.Zones =
 						["qg"] = 39725,	-- Adella
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Tears of Stone
+					{	-- Tears of Stone (A)
 						["questID"] = 25396,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25394,	-- More Than Illness
 					},
-					{	-- Tears of Stone
+					{	-- Tears of Stone (H)
 						["questID"] = 25237,
 						["qg"] = 39377,	-- Konu Runetotem
 						["coord"] = { 41.3, 15.4, 69 },
@@ -654,6 +695,7 @@ _.Zones =
 					{	-- Tell Silvia
 						["questID"] = 25208,
 						["qg"] = 40052,	-- Estulan
+						["coord"] = { 57.0, 55.4, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25403,	-- Ogre Abduction
 					},
@@ -666,7 +708,9 @@ _.Zones =
 					{	-- The Battle of Sardor
 						["questID"] = 25304,
 						["qg"] = 3936,	-- Shandris Feathermoon
+						["coord"] = { 46.0, 49.1, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					},
 					{	-- The Crone of the Kraul
 						["questID"] = 1101,
@@ -698,28 +742,30 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25337,	-- Hippogryph Muisek
 					},
-					{	-- The Gordunni Orb
+					{	-- The Gordunni Orb (A)
 						["questID"] = 25401,
 						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- The Gordunni Orb
+					{	-- The Gordunni Orb (H)
 						["questID"] = 25341,
 						["qg"] = 39656,	-- Orhan Ogreblade
 						["coord"] = { 51.9, 47.9, 69 },
 						["races"] = HORDE_ONLY,
 					},
-					{	-- The Gordunni Threat
+					{	-- The Gordunni Threat (A)
+						["questID"] = 25400,
+						["qg"] = 39653,	-- Silvia
+						["coord"] = { 56.9, 54.9, 69 },
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- The Gordunni Threat (H)
 						["questID"] = 25209,
 						["qg"] = 39656,	-- Orhan Ogreblade
 						["coord"] = { 51.9, 47.9, 69 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25386,	-- To Stonemaul Hold
-					},
-					{	-- The Gordunni Threat
-						["questID"] = 25400,
-						["qg"] = 39653,	-- Silvia
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- The Grimtotem are Coming
 						["questID"] = 25486,
@@ -727,13 +773,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 28503,	-- Hero's Call: Thousand Needles!
 					},
-					{	-- The Highborne
+					{	-- The Highborne (A)
 						["questID"] = 27131,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					},
-					{	-- The Highborne
+					{	-- The Highborne (H)
 						["questID"] = 27132,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
@@ -746,12 +793,14 @@ _.Zones =
 						["coord"] = { 74.5, 42.8, 69 },
 						["races"] = HORDE_ONLY,
 					},
-					{	-- The Land, Corrupted
+					{	-- The Land, Corrupted (A)
 						["questID"] = 25397,
 						["qg"] = 40032,	-- Telaron Windflight
+						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25394,	-- More Than Illness
 					},
-					{	-- The Land, Corrupted
+					{	-- The Land, Corrupted (H)
 						["questID"] = 25241,
 						["qg"] = 39377,	-- Konu Runetotem
 						["coord"] = { 41.3, 15.4, 69 },
@@ -761,11 +810,13 @@ _.Zones =
 					{	-- The Lost Apprentice
 						["questID"] = 25350,
 						["qg"] = 40132,	-- Vestia Moonspear
+						["coord"] = { 57.2, 55.0, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- The Mark of Quality
+					{	-- The Mark of Quality (A)
 						["questID"] = 25449,
 						["qg"] = 40226,	-- Pratt McGrubben
+						["coord"] = { 45.4, 41.3, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(9630),	-- Pratt's Handcrafted Boots
@@ -774,7 +825,7 @@ _.Zones =
 							i(131426),	-- Pratt's Handcrafted Gauntlets
 						},
 					},
-					{	-- The Mark of Quality
+					{	-- The Mark of Quality (H)
 						["questID"] = 25452,
 						["qg"] = 7854,	-- Jangdor Swiftstrider
 						["coord"] = { 52.8, 47.1, 69 },
@@ -799,6 +850,7 @@ _.Zones =
 					{	-- The Northspring Menace
 						["questID"] = 25448,
 						["qg"] = 40035,	-- Erina Willowborn
+						["coord"] = { 51.2, 17.8, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- To Camp Mojache
@@ -874,22 +926,21 @@ _.Zones =
 						["questID"] = 2845,
 						["u"] = 40,
 						["qg"] = 7774,	-- Shay Leafrunner
-						["races"] = HORDE_ONLY,
 						["groups"] = {
 							un(2, i(9656)),	-- Granite Grips
 							un(2, i(9657)),	-- Vinehedge Cinch
 						},
 					},
-					{	-- War on the Woodpaw
+					{	-- War on the Woodpaw (A)
+						["questID"] = 25426,
+						["qg"] = 39725,	-- Adella
+						["races"] = ALLIANCE_ONLY,
+					},
+					{	-- War on the Woodpaw (H)
 						["questID"] = 25363,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- War on the Woodpaw
-						["questID"] = 25426,
-						["qg"] = 39725,	-- Adella
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Weapons of Spirit
 						["questID"] = 3129,
@@ -1004,12 +1055,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25349,	-- Twisted Sisters
 					},
-					{	-- Ysondre's Farewell
+					{	-- Ysondre's Farewell (A)
 						["questID"] = 25438,
 						["qg"] = 39407,	-- Ysondre
 						["races"] = ALLIANCE_ONLY,
 					},
-					{	-- Ysondre's Farewell
+					{	-- Ysondre's Farewell (H)
 						["questID"] = 25383,
 						["qg"] = 39407,	-- Ysondre
 						["coord"] = { 81.5, 42.4, 69 },
