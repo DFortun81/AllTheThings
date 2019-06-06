@@ -171,52 +171,75 @@ _.Achievements =
 					ach(12592),	-- Ruined the Ruins
 					ach(13110),	-- Skittering Smashed
 					ach(13129),	-- Sucker Punch
-					a(ach(13133, {	-- Team Deathmatch (Alliance)
-						crit(19),	-- Airyn Swiftfeet
-						crit(7),	-- Astralite Visara
-						crit(13),	-- Berserker Zar'ri
-						crit(20),	-- Brother Bruen
-						crit(4),	-- Captain Greenbelly
-						crit(5),	-- Dorp
+					ach(13133, 13135, {	-- Team Deathmatch [A] / [H]
+						crit(1),	-- Gazlowe [A] / Briona the Bloodthirsty [H]
+						crit(2),	-- Lady Sena [A] / "Stabby" Lottie [H]
+						crit(3),	-- Skaggit [A] / Varigg [H]
+						crit(4),	-- Captain Greenbelly [A] / Frostfencer Seraphi [H]
+						crit(5),	-- Dorp [A] / Squallshaper Auran [H]
+						crit(6),	-- Sneaky Pete [A] / Squallshaper Bryson [H]
+						crit(7),	-- Astralite Visara [A] / Anchorite Lanna [H]
+						crit(8),	-- Moonscythe Pelani [A] / Archmage Tamuura [H]
+						crit(9),	-- Rune Scribe Lusaris [A] / Vindicator Baatul [H]
+						crit(10),	-- Phoenix Mage Rhydras [A] / Dizzy Dina [H]
+						crit(11),	-- Phoenix Mage Ryleia [A] / Tally Zapnabber [H]
+						crit(12),	-- Sunbringer Firasi [A] / Razak Ironsides [H]
+						crit(13),	-- Berserker Zar'ri [A] / Duskrunner Lorinas [H]
+						crit(14),	-- Shadow Hunter Ju'loa [A] / Riftblade Kelain [H]
+						crit(15),	-- Witch Doctor Unbugu [A] / Shadeweaver Zarra [H]
+						crit(16),	-- Mahna Flamewhisper [A] / Fenrae the Cunning [H]
+						crit(17),	-- Spiritwalker Quura [A] / Gunnolf the Ferocious [H]
+						crit(18),	-- Sunwalker Ordel [A] / Raul the Tenacious [H]
+						crit(19),	-- Airyn Swiftfeet [A] / Charg "The Boisterous" [H]
+						crit(20),	-- Brother Bruen [A] / Nagtar Wolfsbane [H]
+						crit(21),	-- Lady Tamakeen [A] / Ranah Saberclaw [H]
+					}),
+					--[[a(ach(13133, {	-- Team Deathmatch (Alliance)
 						crit(1),	-- Gazlowe
 						crit(2),	-- Lady Sena
-						crit(21),	-- Lady Tamakeen
-						crit(16),	-- Mahna Flamewhisper
+						crit(3),	-- Skaggit
+						crit(4),	-- Captain Greenbelly
+						crit(5),	-- Dorp
+						crit(6),	-- Sneaky Pete
+						crit(7),	-- Astralite Visara
 						crit(8),	-- Moonscythe Pelani
+						crit(9),	-- Rune Scribe Lusaris
 						crit(10),	-- Phoenix Mage Rhydras
 						crit(11),	-- Phoenix Mage Ryleia
-						crit(9),	-- Rune Scribe Lusaris
-						crit(14),	-- Shadow Hunter Ju'loa
-						crit(3),	-- Skaggit
-						crit(6),	-- Sneaky Pete
-						crit(17),	-- Spiritwalker Quura
 						crit(12),	-- Sunbringer Firasi
-						crit(18),	-- Sunwalker Ordel
+						crit(13),	-- Berserker Zar'ri
+						crit(14),	-- Shadow Hunter Ju'loa
 						crit(15),	-- Witch Doctor Unbugu
-					})),
-					h(ach(13135, {	-- Team Deathmatch (Horde)
-						crit(2),	-- "Stabby" Lottie
-						crit(7),	-- Anchorite Lanna
-						crit(8),	-- Archmage Tamuura
+						crit(16),	-- Mahna Flamewhisper
+						crit(17),	-- Spiritwalker Quura
+						crit(18),	-- Sunwalker Ordel
+						crit(19),	-- Airyn Swiftfeet
+						crit(20),	-- Brother Bruen
+						crit(21),	-- Lady Tamakeen
+					})),]]
+					--[[h(ach(13135, {	-- Team Deathmatch (Horde)
 						crit(1),	-- Briona the Bloodthirsty
-						crit(19),	-- Charg "The Boisterous"
-						crit(10),	-- Dizzy Dina
-						crit(13),	-- Duskrunner Lorinas
-						crit(16),	-- Fenrae the Cunning
+						crit(2),	-- "Stabby" Lottie
+						crit(3),	-- Varigg
 						crit(4),	-- Frostfencer Seraphi
-						crit(17),	-- Gunnolf the Ferocious
-						crit(20),	-- Nagtar Wolfsbane
-						crit(21),	-- Ranah Saberclaw
-						crit(18),	-- Raul the Tenacious
-						crit(12),	-- Razak Ironsides
-						crit(14),	-- Riftblade Kelain
-						crit(15),	-- Shadeweaver Zarra
 						crit(5),	-- Squallshaper Auran
 						crit(6),	-- Squallshaper Bryson
-						crit(11),	-- Tally Zapnabber
-						crit(3),	-- Varigg
+						crit(7),	-- Anchorite Lanna
+						crit(8),	-- Archmage Tamuura
 						crit(9),	-- Vindicator Baatul
-					})),
+						crit(10),	-- Dizzy Dina
+						crit(11),	-- Tally Zapnabber
+						crit(12),	-- Razak Ironsides
+						crit(13),	-- Duskrunner Lorinas
+						crit(14),	-- Riftblade Kelain
+						crit(15),	-- Shadeweaver Zarra
+						crit(16),	-- Fenrae the Cunning
+						crit(17),	-- Gunnolf the Ferocious
+						crit(18),	-- Raul the Tenacious
+						crit(19),	-- Charg "The Boisterous"
+						crit(20),	-- Nagtar Wolfsbane
+						crit(21),	-- Ranah Saberclaw
+					})),]]
 					ach(13127, {	-- Tell Me A Tale
 						crit(19),	-- Ancient Crypt Key
 						crit(11),	-- Battered Twilight Scale
