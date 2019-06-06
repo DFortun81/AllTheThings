@@ -32,6 +32,7 @@ _.Zones =
 					})),
 					q(44865, {	-- Butler to the Great
 						["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
+						["lvl"] = 110,
 						["qg"] = 115551,	-- Phantom Valet
 						["g"] = {
 							follower(733),	-- Moroes

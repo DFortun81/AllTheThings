@@ -8,6 +8,7 @@ _.Zones =
 			["g"] = {
 				n(-77, {	-- Special
 					o(294703, {	-- Grimmy's Rusty Lockbox
+						["lvl"] = 120,
 						["g"] = {
 							i(162690),	-- Waist of Time
 						},

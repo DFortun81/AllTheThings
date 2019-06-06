@@ -188,223 +188,229 @@ _.Zones =
 										}),
 									}),
 									n(-245, {	-- Mag'har Orc
-										q(53466, {	-- Vision of Time
-											["qg"] = 126066,	-- Eitrigg
-											["coord"] = { 37.8, 80.6, 85 },
-											["races"] = HORDE_ONLY,
-										}),
-										q(53467, {	-- Caverns of Time
-											["qg"] = 131443,	-- Chief Telemancer Oculeth 
-											["coord"] = { 67.0, 73.7, 1185 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53466,	-- Vision of Time
-										}),
-										q(53354, {	-- Echo of Gul'dan
-											["qg"] = 15192,	-- Anachronos
-											["coord"] = { 63.0, 57.2, 71 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53467,	-- Caverns of Time
-										}),
-										q(53353, {	-- Echo of Warlord Zaela
-											["qg"] = 143692,	-- Anachronos 
-											["coord"] = { 54.4, 50.2, 17 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53354,	-- Echo of Gul'dan
-										}),
-										q(53355, {	-- Echo of Garrosh Hellscream
-											["qg"] = 143692,	-- Anachronos 
-											["coord"] = { 68.8, 44.0, 379 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53353,	-- Echo of Warlord Zaela
-										}),	
-										q(52942, {	-- Restoring Old Bonds
-											["qg"] = 126066,	-- Eitrigg 
-											["coord"] = { 69.9, 69.4, 1185 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53355,	-- Echo of Garrosh Hellscream
-										}),
-										q(52943, {	-- Calling Out the Clans
-											["qg"] = 142422,	-- Eitrigg
-											["coord"] = { 44.8, 53.0, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52942,	-- Restoring Old Bonds
-										}),
-										q(52945, {	-- Bonds Forged Through Battle
-											["qg"] = 142275,	-- Grommash Hellscream
-											["coord"] = { 45.2, 52.0, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52943,	-- Calling Out the Clans
-										}),
-										q(52955, {	-- Tyranny of the Light
-											["qg"] = 137837,	-- Overlord Geya'rah
-											["coord"] = { 44.4, 71.4, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52945,	-- Bonds Forged Through Battle
-										}),
-										q(51479, {	-- The Uncorrupted
-											["qg"] = 143845,	-- Overlord Geya'rah
-											["coord"] = { 41.2, 16.8, 1 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52955,	-- Tyranny of the Light
-											["groups"] = {
-												ach(12518, {	-- Allied Races: Mag'har Orc
-													i(161330),	-- Mag'har Direwolf
-												}),
-											},
-										}),
-										-- Mag'har Orc Starter Quest
-										q(51485, {	-- For the Horde
-											["qg"] = 143845,	--  Overlord Geya'rah
-											["coord"] = { 70.6, 44.6, 85 },
-											["races"] = { 36 },	-- Mag'har Orc
-											["groups"] = {
-												i(161328),	-- Tabard of the Mag'har Clans
-												i(157028),	-- Letter from Lady Sylvannas
-											},
-										}),
-										q(53502, {	-- Stranger in a Strange Land
-											["qg"] = 133407,	-- Ambassador Blackguard
-											["coord"] = { 39.4, 79.2, 85 },
-											["sourceQuest"] = 51485,	-- For the Horde
-											["races"] = { 36 },	-- Mag'har Orc
-										}),
+										["lvl"] = 120,
+										["g"] = {
+											q(53466, {	-- Vision of Time
+												["qg"] = 126066,	-- Eitrigg
+												["coord"] = { 37.8, 80.6, 85 },
+												["races"] = HORDE_ONLY,
+											}),
+											q(53467, {	-- Caverns of Time
+												["qg"] = 131443,	-- Chief Telemancer Oculeth 
+												["coord"] = { 67.0, 73.7, 1185 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53466,	-- Vision of Time
+											}),
+											q(53354, {	-- Echo of Gul'dan
+												["qg"] = 15192,	-- Anachronos
+												["coord"] = { 63.0, 57.2, 71 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53467,	-- Caverns of Time
+											}),
+											q(53353, {	-- Echo of Warlord Zaela
+												["qg"] = 143692,	-- Anachronos 
+												["coord"] = { 54.4, 50.2, 17 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53354,	-- Echo of Gul'dan
+											}),
+											q(53355, {	-- Echo of Garrosh Hellscream
+												["qg"] = 143692,	-- Anachronos 
+												["coord"] = { 68.8, 44.0, 379 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53353,	-- Echo of Warlord Zaela
+											}),	
+											q(52942, {	-- Restoring Old Bonds
+												["qg"] = 126066,	-- Eitrigg 
+												["coord"] = { 69.9, 69.4, 1185 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53355,	-- Echo of Garrosh Hellscream
+											}),
+											q(52943, {	-- Calling Out the Clans
+												["qg"] = 142422,	-- Eitrigg
+												["coord"] = { 44.8, 53.0, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52942,	-- Restoring Old Bonds
+											}),
+											q(52945, {	-- Bonds Forged Through Battle
+												["qg"] = 142275,	-- Grommash Hellscream
+												["coord"] = { 45.2, 52.0, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52943,	-- Calling Out the Clans
+											}),
+											q(52955, {	-- Tyranny of the Light
+												["qg"] = 137837,	-- Overlord Geya'rah
+												["coord"] = { 44.4, 71.4, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52945,	-- Bonds Forged Through Battle
+											}),
+											q(51479, {	-- The Uncorrupted
+												["qg"] = 143845,	-- Overlord Geya'rah
+												["coord"] = { 41.2, 16.8, 1 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52955,	-- Tyranny of the Light
+												["groups"] = {
+													ach(12518, {	-- Allied Races: Mag'har Orc
+														i(161330),	-- Mag'har Direwolf
+													}),
+												},
+											}),
+									--[[	-- Mag'har Orc Starter Quest (figure out what map these should go on)
+											q(51485, {	-- For the Horde
+												["qg"] = 143845,	--  Overlord Geya'rah
+												["coord"] = { 70.6, 44.6, 85 },
+												["races"] = { 36 },	-- Mag'har Orc
+												["groups"] = {
+													i(161328),	-- Tabard of the Mag'har Clans
+													i(157028),	-- Letter from Lady Sylvannas
+												},
+											}),
+											q(53502, {	-- Stranger in a Strange Land
+												["qg"] = 133407,	-- Ambassador Blackguard
+												["coord"] = { 39.4, 79.2, 85 },
+												["sourceQuest"] = 51485,	-- For the Horde
+												["races"] = { 36 },	-- Mag'har Orc
+											}),	--]]
+										},
 									}),
 									n(-251, {	-- Zandalari
-										q(53831, {	-- A Royal Occasion
-											["qg"] = 133519,	-- Rokhan
-											["coord"] = { 38.2, 81.4, 85 },
-											["races"] = HORDE_ONLY,
-										}),
-										q(53823, {	-- A Queen's Entourage
-											["qg"] = 145414,	-- Natal'hakata
-											["coord"] = { 48.6, 22.0, 1163 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53831,	-- A Royal Occasion
-										}),
-										q(53824, {	-- The Rite of Kings and Queens
-											["qg"] = 148096,	-- High Prelate Rata
-											["coord"] = { 42.57, 22.54, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53823,	-- A Queen's Entourage
-										}),
-										q(54419, {	-- Quelling the Masses
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.28, 12.45, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
-										}),
-										q(53826, {	-- The Instigator Among Us
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.28, 12.45, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
-										}),
-										q(54301, {	-- Talanji's Mercy
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 40.5, 11.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(54925, {	-- Heresy!
-											["qg"] = 148096,	-- High Prelate Rata
-											["coord"] = { 40.2, 11.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(54300, {	-- Breaking the Faith
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.5, 12.4, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(53825, {	-- The New Zanchuli Council
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 40.6, 12.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54301,	-- Talanji's Mercy
-												54925,	-- Heresy!
-												54300,	-- Breaking the Faith
-											},
-										}),
-										q(53827, {	-- The Council Has Spoken
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 60.4, 38.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53825,	-- The New Zanchuli Council
-										}),
-										q(53828, {	-- Gaze of the Loa
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 60.4, 38.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53827,	-- The Council Has Spoken
-										}),
-										q(54031, {	-- Gaze of the Loa: Krag'wa
-											["qg"] = 146208,	-- Krag'wa the Huge
-											["coord"] = { 44.2, 15.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53828,	-- Gaze of the Loa
-										}),
-										q(54033, {	-- Gaze of the Loa: Gonk
-											["qg"] = 146208,	-- Krag'wa the Huge
-											["coord"] = { 44.2, 15.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54031,	-- Gaze of the Loa: Krag'wa
-										}),
-										q(54032, {	-- Gaze of the Loa: Pa'ku
-											["qg"] = 146214,	-- Gonk
-											["coord"] = { 46.5, 12.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54033,	-- Gaze of the Loa: Gonk
-										}),
-										q(54034, {	-- Gaze of the Loa: Bwonsamdi
-											["qg"] = 146209,	-- Pa'ku <Lord of Winds>
-											["coord"] = { 44.5, 8.8, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54032,	-- Gaze of the Loa: Pa'ku
-										}),
-										q(53830, {	-- Queen of the Zandalari
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 42.7, 8.7, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54034,	-- Gaze of the Loa: Bwonsamdi
-										}),
-										q(53719, {	-- Allegiance of the Zandalari
-											["qg"] = 146335,	-- Queen Talanji
-											["coord"] = { 42.4, 9.2, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53830,	-- Queen of the Zandalari
-											["groups"] = {
-												ach(13161, {	-- Allied Races: Zandalari Troll
-													i(157870),	-- Zandalari Direhorn
-												}),
-											},
-										}),
-										-- Zandalari Troll Starter Quest
-										q(55137, {	-- For the Horde
-											["qg"] = 146335,	--  Queen Talanji
-											["coord"] = { 42.2, 9.4, 1165 },
-											["races"] = { 31 },	-- Zandalari Troll
-											["groups"] = {
-												i(165001),	-- Tabard of the Zandalari
-												i(167169),	-- Letter from Lady Sylvannas
-											},
-										}),
-										q(55138, {	-- Stranger in a Strange Land
-											["qg"] = 133407,	-- Ambassador Blackguard
-											["coord"] = { 39.4, 79.2, 85 },
-											["races"] = { 31 },	-- Zandalari Troll
-											["sourceQuest"] = 55137,	-- For the Horde
-										}),
+										["lvl"] = 120,
+										["g"] = {
+											q(53831, {	-- A Royal Occasion
+												["qg"] = 133519,	-- Rokhan
+												["coord"] = { 38.2, 81.4, 85 },
+												["races"] = HORDE_ONLY,
+											}),
+											q(53823, {	-- A Queen's Entourage
+												["qg"] = 145414,	-- Natal'hakata
+												["coord"] = { 48.6, 22.0, 1163 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53831,	-- A Royal Occasion
+											}),
+											q(53824, {	-- The Rite of Kings and Queens
+												["qg"] = 148096,	-- High Prelate Rata
+												["coord"] = { 42.57, 22.54, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53823,	-- A Queen's Entourage
+											}),
+											q(54419, {	-- Quelling the Masses
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.28, 12.45, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+											}),
+											q(53826, {	-- The Instigator Among Us
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.28, 12.45, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+											}),
+											q(54301, {	-- Talanji's Mercy
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 40.5, 11.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(54925, {	-- Heresy!
+												["qg"] = 148096,	-- High Prelate Rata
+												["coord"] = { 40.2, 11.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(54300, {	-- Breaking the Faith
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.5, 12.4, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(53825, {	-- The New Zanchuli Council
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 40.6, 12.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54301,	-- Talanji's Mercy
+													54925,	-- Heresy!
+													54300,	-- Breaking the Faith
+												},
+											}),
+											q(53827, {	-- The Council Has Spoken
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 60.4, 38.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53825,	-- The New Zanchuli Council
+											}),
+											q(53828, {	-- Gaze of the Loa
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 60.4, 38.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53827,	-- The Council Has Spoken
+											}),
+											q(54031, {	-- Gaze of the Loa: Krag'wa
+												["qg"] = 146208,	-- Krag'wa the Huge
+												["coord"] = { 44.2, 15.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53828,	-- Gaze of the Loa
+											}),
+											q(54033, {	-- Gaze of the Loa: Gonk
+												["qg"] = 146208,	-- Krag'wa the Huge
+												["coord"] = { 44.2, 15.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54031,	-- Gaze of the Loa: Krag'wa
+											}),
+											q(54032, {	-- Gaze of the Loa: Pa'ku
+												["qg"] = 146214,	-- Gonk
+												["coord"] = { 46.5, 12.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54033,	-- Gaze of the Loa: Gonk
+											}),
+											q(54034, {	-- Gaze of the Loa: Bwonsamdi
+												["qg"] = 146209,	-- Pa'ku <Lord of Winds>
+												["coord"] = { 44.5, 8.8, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54032,	-- Gaze of the Loa: Pa'ku
+											}),
+											q(53830, {	-- Queen of the Zandalari
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 42.7, 8.7, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54034,	-- Gaze of the Loa: Bwonsamdi
+											}),
+											q(53719, {	-- Allegiance of the Zandalari
+												["qg"] = 146335,	-- Queen Talanji
+												["coord"] = { 42.4, 9.2, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53830,	-- Queen of the Zandalari
+												["groups"] = {
+													ach(13161, {	-- Allied Races: Zandalari Troll
+														i(157870),	-- Zandalari Direhorn
+													}),
+												},
+											}),
+									--[[	-- Zandalari Troll Starter Quest (figure out what map these should go on)
+											q(55137, {	-- For the Horde
+												["qg"] = 146335,	--  Queen Talanji
+												["coord"] = { 42.2, 9.4, 1165 },
+												["races"] = { 31 },	-- Zandalari Troll
+												["groups"] = {
+													i(165001),	-- Tabard of the Zandalari
+													i(167169),	-- Letter from Lady Sylvannas
+												},
+											}),
+											q(55138, {	-- Stranger in a Strange Land
+												["qg"] = 133407,	-- Ambassador Blackguard
+												["coord"] = { 39.4, 79.2, 85 },
+												["races"] = { 31 },	-- Zandalari Troll
+												["sourceQuest"] = 55137,	-- For the Horde
+											}),	--]]
+										},
 									}),
 									{	-- The Call for Allies
 										["questID"] = 49930,
