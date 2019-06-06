@@ -9,6 +9,13 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["g"] = {
 						n(-17, {	-- Quests (Legacy)
+							q(3564, {	-- Andron's Payment to Jediga
+								["qg"] = 6522,	-- Andron Gant
+								["coord"] = { 54.8, 76.3, 90 },
+								["sourceQuest"] = 3542,	-- Delivery to Andron Gant
+								["races"] = HORDE_ONLY,
+								["u"] = 40,
+							}),
 							un(40, qh(6521, {	-- An Unholy Alliance
 								un(2, i(17042)),	-- Nail Splitter
 								un(2, i(17039)),	-- Skullbreaker

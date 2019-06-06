@@ -15,19 +15,6 @@ _.Zones =
 						i(9301),	-- Recipe: Elixir of Shadow Power
 						un(2, i(13477)),	-- Recipe: Superior Mana Potion
 					}),
-					n(4573,  {	-- Armand Cromwell <Fishing Trainer>
-						["coord"] = { 80.4, 31.0, 90 },
-						["g"] = {
-							ach(5850, {	-- Fish or Cut Bait: Undercity
-								i(67414, {	-- Bag of Shiny Things
-									i(44983),	-- Strand Crawler
-									i(33820),	-- Weather-Beaten Fishing Hat
-									i(45991),	-- Bone Fishing Pole
-									i(45992),	-- Jeweled Fishing Pole
-								})
-							})
-						},
-					}),
 					n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
 						i(64920),	-- Shroud of Undercity
 						i(64921),	-- Cape of Undercity

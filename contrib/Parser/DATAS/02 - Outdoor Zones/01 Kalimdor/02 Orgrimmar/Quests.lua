@@ -576,11 +576,12 @@ _.Zones =
 						["qg"] = 54870,	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Allegiance to the Horde
-						["questID"] = 9627,
+					q(9627, {	-- Allegiance to the Horde
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["races"] = { 10 },	-- Blood Elf
-					},
+						["coord"] = { 48.6, 71.0, 85 },
+						["sourceQuest"] = 9626,	-- Meeting the Orcs
+						["races"] = { 10 },	-- Blood Elf	
+					}),
 					{	-- Alliance Relations
 						["questID"] = 1431,
 						["u"] = 40,

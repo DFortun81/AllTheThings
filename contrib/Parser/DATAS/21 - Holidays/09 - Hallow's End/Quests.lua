@@ -500,6 +500,35 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8359, 8358, 8354, 8360 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Horde)
 					}),
+--[[				-- To Do
+					q(29400, {	-- A Season for Celebration
+						["qgs"] = {
+							19169,	-- Blood Elf Commoner
+							19175,	-- Orc Commoner
+							19176,	-- Tauren Commoner
+							19177,	-- Troll Commoner
+							19178,	-- Forsaken Commoner
+							20102,	-- Goblin Commoner
+						},
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["u"] = 26,
+						["maps"] = 		Need to be filled in.
+					}),
+					qh(29377, {	-- A Time to Break Down
+						["qg"] = 15197,	-- Darkcaller Yanka
+						["coord"] = { 62.0, 67.8, 18 },
+						["sourceQuest"] = 29400,	-- A Season for Celebration
+						["isDaily"] = true,
+						["maps"] = { 18 }, - Tirisfal Glades
+					}),
+					qh(29376, {	-- A Time to Build Up
+						["qg"] = 15197,	-- Darkcaller Yanka
+						["coord"] = { 62.0, 67.8, 18 },
+						["sourceQuest"] = 29400,	-- A Season for Celebration
+						["isDaily"] = true,
+						["maps"] = { 18 }, - Tirisfal Glades
+]]--				}),
 				},
 			},
 		},

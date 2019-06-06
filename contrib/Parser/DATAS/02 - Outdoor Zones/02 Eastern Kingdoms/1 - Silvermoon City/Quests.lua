@@ -6,11 +6,8 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
 			["groups"] = {
-				n(-17, { 	-- Quests
---[[				q(24635),	-- A Cloudlet of Classy Cologne
-					qh(24615),	-- A Gift for the Regent Lord of Quel'Thalas
-					q(24629),	-- A Perfect Puff of Perfume
-]]--				qh(9627),	-- Allegiance to the Horde
+				n(-17, { 	-- Quests				
+--					qh(9627),	-- Allegiance to the Horde
 					q(27277, {	-- An Audience with Ureda
 						["qg"] = 16653,	-- Inethven
 						["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
@@ -19,7 +16,7 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["lvl"] = 20,
 					}),
---					q(24636),	-- Bonbon Blitz
+--					
 --					qh(12369),	-- Candy Bucket
 --					qh(12370),	-- Candy Bucket
 					q(27334, {	-- Dark Cleric Cecille
@@ -30,10 +27,19 @@ _.Zones =
 						["classes"] = { 5 },	-- Priest
 						["lvl"] = 20,
 					}),
---					qh(9621),	-- Envoy to the Horde
---					qh(9812),	-- Envoy to the Horde
+					q(9621, {	-- Envoy to the Horde
+						["qg"] = 16802,	-- Lor'themar Theron
+						["coords"] = { 54.0, 20.4, 110 },
+						["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
+						["races"] = { 10 },	-- Blood Elf
+					}),
+					q(9812, {	-- Envoy to the Horde
+						["qg"] = 16802,	-- Lor'themar Theron
+						["coords"] = { 54.0, 20.4, 110 },
+						["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
+						["races"] = HORDE_ONLY,
+					}),
 --					qh(9133),	-- Fly to Silvermoon City
---					qh(9811),	-- Friend of the Sin'dorei
 --					qh(32329),	-- Get My Results!
 					q(27281, {	-- Grezz Ragefist
 						["qg"] = 43009,	-- Alsudar the Bastion

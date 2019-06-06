@@ -7,31 +7,18 @@ _.Zones =
 		m(90, { 	-- Undercity
 			["groups"] = {			
 				n(-17, { 	-- Quests
-					{	-- Andron's Payment to Jediga
-						["questID"] = 3564,
-						["u"] = 40,
-						["qg"] = 6522,	-- Andron Gant
-						["coord"] = { 54.8, 76.3, 90 },
-						["sourceQuest"] = 3542,	-- Delivery to Andron Gant
-					},
-					qh(31037, {	-- Enemies Below (MAY ONLY BE AVAILABLE FOR UNDEAD)
-						["qg"] = 10181,	-- Lady Sylvanas Windrunner
-					}),
-					qh(39960, {	-- The Legacy Passed On
-						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
-						["sourceQuests"] = { 39959 },	-- The Plot Thickens
-						["requireSkill"] = 773,	-- Inscription
-						["g"]= {
-							{	-- Steamy Romance Novel Kit
-								["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
-							},
+					q(38397, {	-- A Curious Oddity
+						["qg"] = 6566,	-- Estelle Gendry
+						["coords"] = {
+							{ 78.2, 75.6, 90 },
+							{ 56.8, 89.8, 85 },
+						},
+						["sourceQuest"] = 38395,	-- Completionism
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(122339),	-- Ancient Heirloom Scabbard
 						},
 					}),
---[[
-					q(24635),	-- A Cloudlet of Classy Cologne
-					qh(38397),	-- A Curious Oddity
-					qh(29431),	-- A Friend in Need
-]]--				qh(24613),	-- A Gift for the Banshee Queen
 					q(27283, {	-- A Journey to Moonglade
 						["qg"] = 52319,	-- Mala Skywatcher
 						["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
@@ -39,12 +26,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 20,
+					}),				
+					q(42985, {	-- A Royal Audience
+						["description"]	= "You get this Quest when you reach Prestige Rang 2.",
+						["races"] = HORDE_ONLY,
+						["lvl"] = 100,
 					}),
---[[				q(24629),	-- A Perfect Puff of Perfume
-					qh(42985),	-- A Royal Audience
-					qh(29400),	-- A Season for Celebration
-					qh(29377),	-- A Time to Break Down
-]]--				qh(29376),	-- A Time to Build Up
 					q(27277, {	-- An Audience with Ureda
 						["qg"] = 4566,	-- Kaelystia Hatebringer
 						["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
@@ -53,7 +40,18 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["lvl"] = 20,
 					}),
---					qh(38395),	-- Completionism
+					q(38395, {	-- Completionism
+						["qg"] = 6566,	-- Estelle Gendry
+						["coords"] = {
+							{ 78.2, 75.6, 90 },
+							{ 56.8, 89.8, 85 },
+						},
+						["sourceQuest"] = 38346,	-- Numismatics
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(122340),	-- Timeworn Heirloom Armor Casing
+						},
+					}),
 					q(27334, {	-- Dark Cleric Cecille
 						["qg"] = 4606,	-- Aelthalyste
 						["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
@@ -62,11 +60,11 @@ _.Zones =
 						["classes"] = { 5 },	-- Priest
 						["lvl"] = 20,
 					}),
---[[				q(8648),	-- Darkcore the Elder
-					qh(9812),	-- Envoy to the Horde
-					qh(9621),	-- Envoy to the Horde
-					qh(29333),	-- Escargot A Go-Go
-]]--				qh(29317),	-- Fish Head
+					q(31037, {	-- Enemies Below
+						["qg"] = 10181,	-- Lady Sylvanas Windrunner
+						["coord"] = { 57.8, 91.6, 90 },
+						["races"] = HORDE_ONLY,
+					}),
 					q(27304, {	-- Follow the Sun
 						["qg"] = 20406,	-- Champion Cyssa Dawnrose
 						["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
@@ -75,7 +73,7 @@ _.Zones =
 						["classes"] = { 2 },	-- Paladin
 						["lvl"] = 20,
 					}),
---					qh(29315),	-- Fungus Among Us
+--					
 --					qh(7024),	-- Great-father Winter is Here!
 					q(27281, {	-- Grezz Ragefist
 						["qg"] = 4593,	-- Christoph Walker
@@ -118,8 +116,8 @@ _.Zones =
 						["maps"] = { 88, 90, 110 }, 
 						["lvl"] = 20,
 					}),
---					qh(29320),	-- Like Pike?
---					qh(29332),	-- Lily, Oh Lily
+--					
+--					
 --					qh(11357),	-- Masked Orphan Matron
 					q(28323, {	-- Meet with Brother Silverhallow
 						["qg"] = 4606,	-- Aelthalyste
@@ -203,10 +201,20 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["lvl"] = 50,
 					}),
---					qh(9626),	-- Meeting the Orcs
---					qh(9813),	-- Meeting the Orcs
+					q(9626, {	-- Meeting the Orcs
+						["qg"] = 109471,	-- Lady Sylvanas Windrunner
+						["coords"] = { 57.8, 91.6, 90 },
+						["sourceQuest"] = 9621,	-- Envoy to the Horde
+						["races"] = { 10 },	-- Blood Elf
+					}),
+					q(9813, {	-- Meeting the Orcs
+						["qg"] = 109471,	-- Lady Sylvanas Windrunner
+						["coords"] = { 57.8, 91.6, 90 },
+						["sourceQuest"] = 9812,	-- Envoy to the Horde
+						["races"] = HORDE_ONLY,
+					}),
 --					qh(6322),	-- Michael Garrett
---					qh(29361),	-- Moat Monster!
+--					
 					q(28289, {	-- Moonglade Calls
 						["qg"] = 52319,	-- Mala Skywatcher
 						["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
@@ -214,16 +222,26 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
---[[				qh(11925),	-- More Torch Catching
-					qh(11926),	-- More Torch Tossing
-					qh(38306),	-- Mystery Notebook
-					qh(38346),	-- Numismatics
-					qh(14036),	-- Pilgrim's Bounty
+--					qh(11925),	-- More Torch Catching
+--					qh(11926),	-- More Torch Tossing
+					q(38346, {	-- Numismatics
+						["qg"] = 6566,	-- Estelle Gendry
+						["coords"] = {
+							{ 78.2, 75.6, 90 },
+							{ 56.8, 89.8, 85 },
+						},
+						["sourceQuest"] = 38306,	-- Mystery Notebook
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(122338),	-- Ancient Heirloom Armor Casing
+						},
+					}),
+--[[				qh(14036),	-- Pilgrim's Bounty
 					qh(11915),	-- Playing with Fire
 					qh(14040),	-- Pumpkin Pie
 					qh(6324),	-- Return to Morris
 					qh(6323),	-- Ride to the Undercity
-]]--				qh(29334),	-- Roach Coach
+]]--				
 					q(28164, {	-- Seek Brother Silverhallow
 						["qg"] = 4606,	-- Aelthalyste
 						["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
@@ -259,11 +277,32 @@ _.Zones =
 					q(11948),	-- Striking Back
 					q(11952),	-- Striking Back
 					q(11953),	-- Striking Back
-					qh(29319),	-- Tadpole Terror
+					
 					qh(29427),	-- The Collector's Agent
-					qh(14174),	-- The Grateful Dead
-					qh(39959),	-- The Plot Thickens
-]]--				qh(38404),	-- The Same, But Different
+]]--				qh(14174),	-- The Grateful Dead
+					q(39960, {	-- The Legacy Passed On
+						["qg"] = 97766,	-- Francis Serbacon <Author Extrodinaire>
+						["coord"] = { 77.8, 38.8, 90 },
+						["sourceQuest"] = 39959,	-- The Plot Thickens
+						["requireSkill"] = 773,	-- Inscription
+						["races"] = HORDE_ONLY,
+						["groups"]= {
+							recipe(192804),	-- Steamy Romance Novel Kit
+						},
+					}),
+--					qh(39959),	-- The Plot Thickens
+					q(38404, {	-- The Same, But Different
+						["qg"] = 6566,	-- Estelle Gendry
+						["coords"] = {
+							{ 78.2, 75.6, 90 },
+							{ 56.8, 89.8, 85 },
+						},
+						["sourceQuest"] = 38397,	-- A Curious Oddity
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(122341),	-- Timeworn Heirloom Scabbard
+						},
+					}),
 					q(27331, {	-- The Seer's Call
 						["qg"] = 4606,	-- Aelthalyste
 						["coord"] = { 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
@@ -271,6 +310,13 @@ _.Zones =
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 5 },	-- Priest
 						["lvl"] = 20,
+					}),
+					q(42987, {	-- The Victor's Spoils
+						["qg"] = 109471,	-- Lady Sylvanas Windrunner
+						["coords"] = { 57.8, 91.6, 90 },
+						["sourceQuest"] = 42985,	-- A Royal Audience
+						["races"] = HORDE_ONLY,
+						["lvl"] = 100,
 					}),	
 --[[				o(207324, {	-- Warchief's Command Board
 						qh(27721),	-- Warchief's Command: Mount Hyjal!	

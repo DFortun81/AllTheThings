@@ -2419,12 +2419,11 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 					},
-					{	-- Mystery Notebook
-						["questID"] = 38306,
+					q(38306, {	-- Mystery Notebook
 						["qg"] = 91072,	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
-					},
+					}),
 					{	-- New Goods
 						["questID"] = 38427,
 						["qg"] = 79740,	-- Warmaster Zog

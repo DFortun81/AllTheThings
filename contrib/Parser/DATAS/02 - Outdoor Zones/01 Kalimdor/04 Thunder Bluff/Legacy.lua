@@ -20,8 +20,8 @@ _.Zones =
 								},
 							}),
 							q(5088, {	-- Arikara
---								["qg"] = ,	-- Missing Information
---								["coord"] = { , 88 },	-- Missing Information
+								["qg"] = 4046,	-- Magatha Grimtotem
+								["coord"] = { 70.2, 30.8 , 88 },
 								["races"] = HORDE_ONLY,
 								["u"] = 40,
 								["groups"] = {
@@ -32,7 +32,7 @@ _.Zones =
 							}),
 							q(1102, {	-- A Vengeful Fate
 								["qg"] = 4451,	-- Auld Stonespire
---								["coord"] = { , 88 },	-- Missing Information
+								["coord"] = { 36.2, 59.8 , 88 },
 								["races"] = HORDE_ONLY,
 								["u"] = 40,
 								["groups"] = {
