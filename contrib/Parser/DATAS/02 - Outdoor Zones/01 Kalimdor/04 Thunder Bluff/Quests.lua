@@ -8,21 +8,12 @@ _.Zones =
 			["groups"] = {
 				n(-17, {	-- Quests
 					q(27283, {	-- A Journey to Moonglade
-						["qgs"] = {
-							3034,	-- Sheal Runetotem
-							44726,	-- Shalla Whiteleaf
-							44978,	-- Sesebi
-							52319,	-- Mala Skywatcher
-						},
-						["coords"] = {
-							{ 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunderbluff)
-							{ 44.8, 51.6, 85 },	-- Shalla Whiteleaf (Orgrimmar)
-							{ 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
-							{ 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
-						},
+						["qg"] = 3034,	-- Sheal Runetotem
+						["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["classes"] = { 11 },	-- Druid
+						["lvl"] = 20,
 					}),
 					q(27277, {	-- An Audience with Ureda
 						["qgs"] = {
@@ -31,7 +22,7 @@ _.Zones =
 							16653,	-- Inethven
 						},
 						["coords"] = {
-							{ 22.6, 15.0, 88 },	-- Archmage Shymm (Thunderbluff)
+							{ 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 							{ 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
 							{ 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
 						},
@@ -47,10 +38,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 5 },	-- Undead
@@ -92,7 +83,7 @@ _.Zones =
 							43009,	-- Alsudar the Bastion
 						},
 						["coords"] = {
-							{ 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunderbluff)
+							{ 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 							{ 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
 							{ 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
 						},
@@ -107,7 +98,7 @@ _.Zones =
 							39116,	-- Apolos
 						},
 						["coords"] = {
-							{ 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunderbluff)
+							{ 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 							{ 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
 							{ 49.6, 29.0, 90 },	-- Apolos (Undercity)
 						},
@@ -123,10 +114,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 5 },	-- Blood Elf
@@ -150,11 +141,12 @@ _.Zones =
 						["coords"] = {
 							{ 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
 							{ 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
-							{ 25.2, 14.4, 88 },	-- Delano Morisett (Thunderbluff)
+							{ 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["classes"] = { 9 },	-- Warlock
+						["maps"] = { 88, 90, 110 }, 
 					}),
 					q(28323, {	-- Meet with Brother Silverhallow
 						["qgs"] = {
@@ -164,10 +156,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 9 },	-- Goblin
@@ -180,7 +172,7 @@ _.Zones =
 							16658,	-- Aldrae
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
 						},
@@ -195,7 +187,7 @@ _.Zones =
 							43009,	-- Alsudar the Bastion
 						},
 						["coords"] = {
-							{ 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunderbluff)
+							{ 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 							{ 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
 							{ 81.0, 37.8, 110 },	-- Alsudar the Bastion (Silvermoon City)
 						},
@@ -212,7 +204,7 @@ _.Zones =
 						["coords"] = {
 							{ 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
 							{ 73.2, 45.2, 110 },	-- Zanien (Silvermoon City)
-							{ 25.2, 14.4, 88 },	-- Delano Morisett (Thunderbluff)
+							{ 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
@@ -225,7 +217,7 @@ _.Zones =
 							39116,	-- Apolos
 						},
 						["coords"] = {
-							{ 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunderbluff)
+							{ 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 							{ 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
 							{ 49.6, 29.0, 90 },	-- Apolos (Undercity)
 						},
@@ -241,10 +233,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 6 },	-- Tauren
@@ -257,7 +249,7 @@ _.Zones =
 						},
 						["coords"] = {
 							{ 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
-							{ 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunderbluff)
+							{ 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
@@ -271,10 +263,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 10 },	-- Blood Elf
@@ -287,7 +279,7 @@ _.Zones =
 							16653,	-- Inethven
 						},
 						["coords"] = {
-							{ 22.6, 15.0, 88 },	-- Archmage Shymm (Thunderbluff)
+							{ 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 							{ 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
 							{ 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
 						},
@@ -303,7 +295,7 @@ _.Zones =
 							52319,	-- Mala Skywatcher
 						},
 						["coords"] = {
-							{ 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunderbluff)
+							{ 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 							{ 44.8, 51.6, 85 },	-- Shalla Whiteleaf (Orgrimmar)
 							{ 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
 							{ 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
@@ -373,7 +365,7 @@ _.Zones =
 					q(6363, {	-- Tal the Wind Rider Master
 						["qg"] = 8359,	-- Ahanu
 						["coord"] = { 45.5, 55.8, 88 },
-						["sourceQuest"] = 6362,	-- Ride to Thunderbluff
+						["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 						["races"] = { 6 },	-- Tauren
 					}),
 					q(28164, {	-- Seek Brother Silverhallow
@@ -384,10 +376,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 9 },	-- Goblin
@@ -416,10 +408,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 8 },	-- Troll
@@ -433,7 +425,7 @@ _.Zones =
 						},
 						["coords"] = {
 							{ 71.8, 56.0, 110 },	-- Gez'li (Silvermoon City)
-							{ 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunderbluff)
+							{ 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
@@ -447,10 +439,10 @@ _.Zones =
 							43870,	-- Seer Beryl
 						},
 						["coords"] = {
-							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunderbluff)
+							{ 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 							{ 49.4, 17.0, 90 },	-- Aelthalyste (Undercity)
 							{ 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
-							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunderbluff)
+							{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 						},
 						["isBreadcrumb"] = true,
 						["races"] = { 6 },	-- Tauren

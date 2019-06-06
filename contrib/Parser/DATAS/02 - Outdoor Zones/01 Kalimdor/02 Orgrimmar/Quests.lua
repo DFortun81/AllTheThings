@@ -468,16 +468,20 @@ _.Zones =
 						["isDaily"] = true,
 						["requireSkill"] = 356,	-- Fishing
 					},
-					{	-- A Journey to Moonglade
-						["questID"] = 27283,
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid Only
-						["isBreadcrumb"] = true,
+					q(27283, {	-- A Journey to Moonglade
 						["qgs"] = {
-							44978,	-- Sesebi <Druid Trainer>
-							44726,	-- Shalla Whiteleaf <Druid Trainer>
+							44726,	-- Shalla Whiteleaf
+							44978,	-- Sesebi
 						},
-					},
+						["coords"] = {
+							{ 44.8, 51.6, 85 },	-- Shalla Whiteleaf (Orgrimmar)
+							{ 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
+						},
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 20,
+					}),
 					{	-- A Marksman's Weapon
 						["questID"] = 27395,
 						["qg"] = 3352,	-- Ormak Grimshot
