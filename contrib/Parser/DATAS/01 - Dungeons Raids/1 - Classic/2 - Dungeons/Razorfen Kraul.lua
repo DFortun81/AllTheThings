@@ -3,18 +3,18 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(234, { 	-- Razorfen Kraul
-		["lvl"] = 25,
+	inst(234, {	-- Razorfen Kraul
+		["coord"] = { 41.0, 94.6, 199 },	-- Razorfen Kraul
 		["mapID"] = 301,
-		["coord"] = { 50.91, 70.37, 12 },	-- Razorfen Kraul, Kalimdor [Southern Barrens]
+		["lvl"] = 25,
 		["g"] = {
 			n(-17, {	-- Quests
 				q(26906, {	-- Agamaggan
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
 				q(26905, {	-- Agamaggan's Charge
+					["sourceQuests"] = { 26906 },	-- Agamaggan
 					["qg"] = 44415,	-- Spirit of Agamaggan
-					["sourceQuest"] = 26906,	-- Agamaggan
 					["g"] = {
 						i(65968),	-- Agamaggan-Blessed Greaves
 						i(65991),	-- Boots of the Noble Path
@@ -26,10 +26,10 @@ _.Instances = { tier(1, {	-- Classic
 				q(26901, {	-- Going, Going, Guano!
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
-				q(1142, {	-- Mortality Wanes
-					["u"] = 40,
-					["qg"] = 4510,	-- Heralath Fallowbrook
+				q(1142,  {	-- Mortality Wanes
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4510,	-- Heralath Fallowbrook
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(6751)),	-- Mourning Shawl
 						un(2, i(6752)),	-- Lancer Boots
@@ -39,7 +39,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 44402,	-- Auld Stonespire
 				}),
 				q(24630, {	-- The Crone of the Kraul
-					["u"] = 40,
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(53155)),	-- Agamaggan's Thorn
 						un(2, i(53158)),	-- Spaulder of the Matriarch
@@ -47,9 +47,9 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(53157)),	-- Charlga's Cowl
 					},
 				}),
-				q(1144, {	-- Willix the Importer
-					["u"] = 40,
+				q(1144,  {	-- Willix the Importer
 					["qg"] = 4508,	-- Willix the Importer
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(6748)),	-- Monkey Ring
 						un(2, i(6750)),	-- Snake Hoop
@@ -57,7 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(0,   {	-- Zone Drop
 				i(1488, {	-- Avenger's Armor
 					["crs"] = {
 						74620,	-- Battle Boar
@@ -145,7 +145,7 @@ _.Instances = { tier(1, {	-- Classic
 						74549,	-- Razorfen Stonechanter
 					},
 				}),
-				i(776, { 	-- Vendetta
+				i(776,  { 	-- Vendetta
 					["crs"] = {
 						75467,	-- Cave Bat
 						74545,	-- Razorfen Geomagus
@@ -211,27 +211,39 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(75001, e(896, {	-- Hunter Bonetusk
-				i(6681),	-- Thornspike
-				i(151442), 	-- Bonetusk Cloak
-			})),
-			cr(74948, e(895, {	-- Roogug
-				i(6691),	-- Swinetusk Shank
-				i(151443),	-- Roogug's Swinesteel Girdle
-				i(132565),	-- Carnal Britches
-				i(6690),	-- Ferine Leggings
-			})),
-			cr(74462, e(899, {	-- Warlord Ramtusk
-				i(6687),	-- Corpsemaker
-				i(6686),	-- Tusken Helm
-				i(6685), 	-- Death Speaker Mantle
-				i(151445),	-- Porcine-Warlord's Legplates
-			})),
-			cr(4425, e(900, {	-- Groyat, the Blind Hunter
-				i(6696),	-- Nightstalker Bow
-				i(6695),	-- Stygian Bone Amulet
-				i(6697),	-- Batwing Mantle
-			})),
+			e(896,   {	-- Hunter Bonetusk
+				["crs"] = { 75001 },	-- Hunter Bonetusk
+				["g"] = {
+					i(6681),	-- Thornspike
+					i(151442), 	-- Bonetusk Cloak
+				},
+			}),
+			e(895,   {	-- Roogug
+				["crs"] = { 74948 },	-- Roogug
+				["g"] = {
+					i(6691),	-- Swinetusk Shank
+					i(151443),	-- Roogug's Swinesteel Girdle
+					i(132565),	-- Carnal Britches
+					i(6690),	-- Ferine Leggings
+				},
+			}),
+			e(899,   {	-- Warlord Ramtusk
+				["crs"] = { 74462 },	-- Warlord Ramtusk
+				["g"] = {
+					i(6687),	-- Corpsemaker
+					i(6686),	-- Tusken Helm
+					i(6685), 	-- Death Speaker Mantle
+					i(151445),	-- Porcine-Warlord's Legplates
+				},
+			}),
+			e(900,   {	-- Groyat, the Blind Hunter
+				["crs"] = { 4425 },	-- Groyat, the Blind Hunter
+				["g"] = {
+					i(6696),	-- Nightstalker Bow
+					i(6695),	-- Stygian Bone Amulet
+					i(6697),	-- Batwing Mantle
+				},
+			}),
 			n(75590, {	-- Enormous Bullfrog
 				i(11026),	-- Tree Frog Box
 				i(11027),	-- Wood Frog Box
@@ -259,12 +271,15 @@ _.Instances = { tier(1, {	-- Classic
 				i(2565),	-- Rod of Molten Fire
 				i(13033),	-- Zealot Blade
 			}),
-			cr(4421, e(901, {	-- Charlga Razorflank
-				ach(635),	-- Razorfen Kraul
-				i(6692),	-- Pronged Reaver
-				i(6694),	-- Heart of Agamaggan
-				i(6693),	-- Agamaggan's Clutch
-			})),
+			e(901,   {	-- Charlga Razorflank
+				["crs"] = { 4421 },	-- Charlga Razorflank
+				["g"] = {
+					ach(635),	-- Razorfen Kraul
+					i(6692),	-- Pronged Reaver
+					i(6694),	-- Heart of Agamaggan
+					i(6693),	-- Agamaggan's Clutch
+				},
+			}),
 		},
 	}),
 })};
