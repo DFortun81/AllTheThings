@@ -55,14 +55,18 @@ _.Achievements =
 					h(ach(5356, {	-- High Warlord
 						h(title(181)),	-- High Warlord
 					})),
-					a(ach(5327, {	-- In Service of the Alliance (25)
+					ach(5327, 5324, {	-- In Service of the Alliance (25)[A] / In Service of the Horde (25)[H]
+						ach(5322, 5323),	-- In Service of the Alliance (10) [A] / In Service of the Horde (10)[H]
+						ach(5268, 5269),	-- In Service of the Alliance (1) [A] / In Service of the Horde (1)[H]
+					}),
+					--[[a(ach(5327, {	-- In Service of the Alliance (25)
 						a(ach(5322)),	-- In Service of the Alliance (10)
 						a(ach(5268)),	-- In Service of the Alliance (1)
-					})),
-					h(ach(5324, {	-- In Service of the Horde (25)
+					})),]]
+					--[[h(ach(5324, {	-- In Service of the Horde (25)
 						h(ach(5323)),	-- In Service of the Horde (10)
 						h(ach(5269)),	-- In Service of the Horde (1)
-					})),
+					})),]]
 					a(ach(5335, {	-- Knight
 						a(title(159)),	-- Knight
 					})),
