@@ -505,8 +505,7 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 --						["sourceQuests"] = {  },	-- 
 					}),
-					--[[
-					qa(28258)),	-- Meet with Ander Germaine
+--[[				qa(28258)),	-- Meet with Ander Germaine
 					qa(28259)),	-- Meet with Demisette Cloyce
 					qa(28287)),	-- Meet with Farseer Umbrua
 					qa(28285)),	-- Meet with High Priestess Laurena
@@ -515,12 +514,15 @@ _.Zones =
 					qa(28263)),	-- Meet with Maginor Dumas
 					qa(28260)),	-- Meet with Wulf Hansreim
 					qa(28295)),	-- Meetup with the Caravan
-					qa(29392)),	-- Missing Heirlooms
+]]--				qa(29392)),	-- Missing Heirlooms
 					q(28289, {	-- Moonglade Calls
-						["qg"] = 44395,	-- 
-						["classes"] = {11},
+						["qg"] = 44395,	-- Celestine of the Harvest
+						["coords"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
+						["isBreadcrumb"] = true,
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 50,
 					}),
-					qa(11924)),	-- More Torch Catching
+--[[				qa(11924)),	-- More Torch Catching
 					qa(11921)),	-- More Torch Tossing
 					qa(8860)),	-- New Year Celebrations!
 					qa(25105)),	-- Nibbler! No!
@@ -536,9 +538,7 @@ _.Zones =
 					q(29067)),	-- Potion Master
 					qa(27240)),	-- Proof of Treachery
 					qa(40661)),	-- Protect the Home Front
-					q(32307)),	-- Reader for the Dead Tongue
---]]					
---[[					
+					q(32307)),	-- Reader for the Dead Tongue				
 					qa(26396)),	-- Return to Argus
 					qa(27241, {	-- Return to Jaina (add'l QG 29611)
 						["qg"] = 107574,	-- 

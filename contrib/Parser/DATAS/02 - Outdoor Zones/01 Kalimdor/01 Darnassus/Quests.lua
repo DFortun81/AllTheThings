@@ -260,13 +260,13 @@ _.Zones =
 						["classes"] = { 3 },	-- Hunter
 						["isBreadcrumb"] = true,
 					},
-					{	-- Moonglade Calls
-						["questID"] = 28289,
+					q(28289, {	-- Moonglade Calls
 						["qg"] = 4217,	-- Mathrengyl Bearwalker
 						["coord"] = { 40.4, 27.6, 89 },
-						["classes"] = { 11 },	-- Druid
 						["isBreadcrumb"] = true,
-					},
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 50,
+					}),
 					{	-- Moonglow Vest
 						["questID"] = 1582,
 						["qg"] = 6034,	-- Lotherias

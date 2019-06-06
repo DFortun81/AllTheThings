@@ -1243,13 +1243,13 @@ _.Zones =
 						["qg"] = 3144,	-- Eitrigg
 						["races"] = { 9 },	-- Goblin
 					},
-					{	-- Moonglade Calls
-						["questID"] = 28289,
+					q(28289, {	-- Moonglade Calls
 						["qg"] = 44978,	-- Sesebi
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
+						["coord"] = { 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
 						["isBreadcrumb"] = true,
-					},
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 50,
+					}),
 					{	-- Nibbler! No!
 						["questID"] = 25158,
 						["qg"] = 50482,	-- Marith Lazuria
