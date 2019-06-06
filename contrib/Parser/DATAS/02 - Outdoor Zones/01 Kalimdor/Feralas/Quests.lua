@@ -103,6 +103,7 @@ _.Zones =
 					{	-- Alpha Strike (A)
 						["questID"] = 25427,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25426,	-- War on the Woodpaw
 					},
@@ -182,6 +183,7 @@ _.Zones =
 							{	-- Return to Vestia
 								["questID"] = 26401,
 								["races"] = ALLIANCE_ONLY,
+								["sourceQuest"] = 25368,	-- Verinias the Twisted
 							},
 						},
 					},
@@ -220,6 +222,7 @@ _.Zones =
 						["qg"] = 3936,	-- Shandris Feathermoon
 						["coord"] = { 46.0, 49.1, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					},
 					{	-- Faerie Dragon Muisek
 						["questID"] = 25345,
@@ -231,6 +234,7 @@ _.Zones =
 					{	-- Forces of Nature: Faerie Dragons
 						["questID"] = 25468,
 						["qg"] = 40913,	-- Handler Jesana
+						["coord"] = { 77.0, 56.6, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Forces of Nature: Hippogryphs
@@ -243,8 +247,9 @@ _.Zones =
 					{	-- Forces of Nature: Mountain Giants
 						["questID"] = 25469,
 						["qg"] = 40913,	-- Handler Jesana
+						["coord"] = { 77.0, 56.6, 69 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons
+						--["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons (6/6/2019 Wowhead shows this as a chain but in game she offered me both quests at same time)
 						["groups"] = {
 							i(54885),	-- Power of the Hippogryph
 							i(54886),	-- Power of the Mountain Giant
@@ -351,6 +356,7 @@ _.Zones =
 					{	-- It's not "Ogre" Yet
 						["questID"] = 25432,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY, 
 					},
 					{	-- Looming Threat
@@ -358,6 +364,7 @@ _.Zones =
 						["qg"] = 40032,	-- Telaron Windflight
 						["coord"] = { 50.7, 17.2, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					},
 					{	-- Master of the Wild Leather
 						["questID"] = 2853,
@@ -490,11 +497,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25452,	-- The Mark of Quality
 					},
-					{	-- Perfect Yeti Hide
+					{	-- Pristine Yeti Hide
 						["itemID"] = 55166,
 						["questID"] = 25451,
 						["qg"] = 39896,	-- Feral Scar Yeti
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25449,	-- The Mark of Quality
 					},
 					{	-- Report to Silvia
 						["questID"] = 25463,
@@ -531,9 +539,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25209,	-- The Gordunni Threat
 					},
-					{	-- Sasquatch Sighting
+					{	-- Sasquatch Sighting (A)
 						["questID"] = 25433,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(54943),	-- Yeti Hide Britches
@@ -541,8 +550,9 @@ _.Zones =
 							i(54945),	-- Shadebough Cloak
 							i(131424),	-- Yeti Hide Padded Greaves
 						},
+						["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
 					},
-					{	-- Sasquatch Sighting
+					{	-- Sasquatch Sighting (H)
 						["questID"] = 25374,
 						["qg"] = 39847,	-- Chief Spirithorn
 						["coord"] = { 74.5, 42.8, 69 },
@@ -622,7 +632,9 @@ _.Zones =
 					{	-- Spiteful Sisters
 						["questID"] = 25436,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25429,	-- Spiteful Sisters
 					},
 					{	-- Still With The Zapped Giants
 						["questID"] = 25465,
@@ -632,7 +644,17 @@ _.Zones =
 							i(54966),	-- Zorbin's Mega-Chopper
 						},
 					},
-					{	-- Stinglasher
+					{	-- Stinglasher (A)
+						["questID"] = 25431,
+						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25427,	-- Alpha Strike
+						["groups"] = {
+							i(54941),	-- Secretion-Coated Carapace
+						},
+					},
+					{	-- Stinglasher (H)
 						["questID"] = 25369,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
@@ -640,14 +662,6 @@ _.Zones =
 						["sourceQuest"] = 25366,	-- The Battle Plans
 						["groups"] = {
 							i(54942),	-- Secretion-Coated Carapace
-						},
-					},
-					{	-- Stinglasher
-						["questID"] = 25431,
-						["qg"] = 39725,	-- Adella
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(54941),	-- Secretion-Coated Carapace
 						},
 					},
 					{	-- Taerar's Fall
@@ -666,17 +680,19 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25341,	-- The Gordunni Orb
 					},
-					{	-- Taming the Tamers
+					{	-- Taming the Tamers (A)
+						["questID"] = 25434,
+						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25432,	-- It's Not "Ogre" Yet
+					},
+					{	-- Taming the Tamers (H)
 						["questID"] = 25375,
 						["qg"] = 39847,	-- Chief Spirithorn
 						["coord"] = { 74.5, 42.8, 69 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25373,	-- The Hilltop Threat
-					},
-					{	-- Taming the Tamers
-						["questID"] = 25434,
-						["qg"] = 39725,	-- Adella
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Tears of Stone (A)
 						["questID"] = 25396,
@@ -770,8 +786,9 @@ _.Zones =
 					{	-- The Grimtotem are Coming
 						["questID"] = 25486,
 						["qg"] = 39946,	-- Caryssia Moonhunter
+						["coord"] = { 86.1, 45.3, 69 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 28503,	-- Hero's Call: Thousand Needles!
+                        ["sourceQuest"] = 28503,    -- Hero's Call: Thousand Needles!
 					},
 					{	-- The Highborne (A)
 						["questID"] = 27131,
@@ -860,6 +877,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25329,	-- Might of the Stonoemaul
 					},
+					{	-- To New Thalanaar
+						["questID"] = 25481,
+						["qg"] = 40369,	-- Falfindel Waywarder
+						["coord"] = { 77.2, 56.5, 69 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					},
 					{	-- To Stonemaul Hold
 						["questID"] = 25386,
 						["qg"] = 39377,	-- Konu Runetotem
@@ -891,6 +915,7 @@ _.Zones =
 					{	-- Two If By Boat
 						["questID"] = 25488,
 						["qg"] = 39992,	-- Rendow
+						["coord"] = { 88.5, 44.4, 69 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25486,	-- The Grimtotem Are Coming
 						["groups"] = {
@@ -934,6 +959,7 @@ _.Zones =
 					{	-- War on the Woodpaw (A)
 						["questID"] = 25426,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- War on the Woodpaw (H)
@@ -1043,12 +1069,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25363,	-- War on the Woodpaw
 					},
-					{	-- Ysondre's Call
+					{	-- Ysondre's Call (A)
 						["questID"] = 25437,
 						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25436,	-- Spiteful Sisters
 					},
-					{	-- Ysondre's Call
+					{	-- Ysondre's Call (H)
 						["questID"] = 25378,
 						["qg"] = 39547,	-- Chief Spirithorn
 						["coord"] = { 74.5, 42.8, 69 },
@@ -1058,7 +1086,14 @@ _.Zones =
 					{	-- Ysondre's Farewell (A)
 						["questID"] = 25438,
 						["qg"] = 39407,	-- Ysondre
+						["coord"] = { 81.5, 42.4, 69 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25379,	-- Taerar's Fall
+						["groups"] = {
+							i(54951),	-- Chain of Emeriss
+							i(54953),	-- Chain of Lethon
+							i(54952),	-- Chain of Taerar
+						},
 					},
 					{	-- Ysondre's Farewell (H)
 						["questID"] = 25383,
@@ -1066,6 +1101,11 @@ _.Zones =
 						["coord"] = { 81.5, 42.4, 69 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25379,	-- Taerar's Fall
+						["groups"] = {
+							i(54954),	-- Chain of Emeriss
+							i(54956),	-- Chain of Lethon
+							i(54955),	-- Chain of Taerar
+						},
 					},
 					{	-- Zapped Giants
 						["questID"] = 7003,
@@ -1075,17 +1115,19 @@ _.Zones =
 							un(2, i(19040)),	-- Zorbin's Mega-Slicer
 						},
 					},
-					{	-- Zukk'ash Infestation
+					{	-- Zukk'ash Infestation (A)
+						["questID"] = 25429,
+						["qg"] = 39725,	-- Adella
+						["coord"] = { 77.2, 56.5, 69 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 25427,	-- Alpha Strike
+					},
+					{	-- Zukk'ash Infestation (H)
 						["questID"] = 25367,
 						["qg"] = 7875,	-- Hadoken Swiftstrider
 						["coord"] = { 74.9, 42.4, 69 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25366,	-- The Battle Plans
-					},
-					{	-- Zukk'ash Infestation
-						["questID"] = 25429,
-						["qg"] = 39725,	-- Adella
-						["races"] = ALLIANCE_ONLY,
 					},
 					{	-- Zukk'ash Report
 						["questID"] = 7732,
