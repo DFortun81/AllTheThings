@@ -871,6 +871,18 @@ _.Zones =
 						},
 					}),
 					prof(393, {	-- Skinning
+						q(40149, {	-- Drakol'nir Must Die
+							["sourceQuests"] = {
+								40147,	-- Mother's Prized Knife
+								40148,	-- Red-Eyed Revenge
+							},
+							["requireSkill"] = 393,	-- Skinning
+							["coord"] = { 45.7, 25.6, 634 },
+							["qg"] = 98721,	-- Seymour
+							["g"] = {
+								i(130102),	-- Mother's Skinning Knife (TOY!)
+							},
+						}),
 						q(40147, {	-- Mother's Prized Knife
 							["sourceQuests"] = { 40146 },	-- Seymour and Agnes
 							["requireSkill"] = 393,	-- Skinning
@@ -2121,7 +2133,6 @@ _.Zones =
 					q(39125),	-- Demon Destroyer
 					q(47049),	-- Demonology: Fate of the Tideskorn
 					q(40110),	-- Disrupt the Inkbinders
-					q(40149),	-- Drakol'nir Must Die
 					q(47050),	-- Enhancement: Fate of the Tideskorn
 					q(40542),	-- Eyes of Nashal
 					q(40544),	-- Eyes of Nashal
