@@ -60,7 +60,13 @@ _.Achievements =
 					}),
 					ach(1261),		-- G.N.E.R.D. Rage
 					ach(288),		-- Out With It
-					a(ach(1040, {	-- Rotten Hallow (Alliance)
+					ach(1040, 1041, {	-- Rotten Hallow [A] / [H]
+						crit(1),		-- Stink Bombs Away! [A] / [H]
+						crit(2),		-- Clean Up in Stormwind [A] / Clean Up in Undercity [H]
+						crit(3),		-- A Time to Gain [A] / A Time to Build Up [H]
+						crit(4),		-- A Time to Lose [A] / A Time to Break Down [H]
+					}),
+					--[[a(ach(1040, {	-- Rotten Hallow (Alliance)
 						crit(1),		-- Stink Bombs Away!
 						crit(2),		-- Clean Up in Stormwind
 						crit(3),		-- A Time to Gain
@@ -71,7 +77,7 @@ _.Achievements =
 						crit(2),		-- Clean Up in Undercity
 						crit(3),		-- A Time to Build Up
 						crit(4),		-- A Time to Break Down
-					})),
+					})),]]
 					ach(292, {		-- Sinister Calling
 						crit(1),		-- Sinister Squashling
 						crit(2),		-- Hallowed Helm
