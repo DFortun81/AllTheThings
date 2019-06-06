@@ -5,11 +5,14 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(50, {		-- Northern Stranglethorn
-			["groups"] = {
+			["achievementID"] = 781,
+			["description"] = "|cff66ccffNorthern Stranglethorn is a new zone in Cataclysm--the old Stranglethorn Vale was split in half after the Sundering. At the bottom of this zone, the remaining whirlpool can be seen. Players learn about the political changes Zul'Gurub, rescue an adorable raptor, and partake in Nesingwary's expanded hunting operations.|r",
+			["lvl"] = 25,
+			["g"] = {
 				un(2, faction(270, {	-- Zandalar Tribe
 					["creatureID"] = 14875,	-- Molthor <Hand of Rastakhan>
 					["maps"] = {337},	-- Zul'Gurub
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests
 							{
 								["questID"] = 8240,	-- A Bijou for Zanza
@@ -690,16 +693,16 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Path
 					fp(593, {	-- Bambala, Stranglethorn
-						["coord"] = { 62.4, 39.2 },
+						["coord"] = { 62.4, 39.2, 50 },
 					}),
 					fp(590, {	-- Fort Livingston, Stranglethorn
-						["coord"] = { 52.6, 66.2 },
+						["coord"] = { 52.6, 66.2, 50 },
 					}),
 					fp(20, {	-- Grom'gol, Stranglethorn
-						["coord"] = { 39, 51.2 },
+						["coord"] = { 39.0, 51.2, 50 },
 					}),
 					fp(195, {	-- Rebel Camp, Stranglethorn Vale
-						["coord"] = { 47.8, 11.8 },
+						["coord"] = { 47.8, 11.8, 50 },
 					}),
 				}),
 				n(-25,  {	-- Pet Battle
@@ -1302,37 +1305,40 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					n(14487, { 	-- Gluggl
-						i(6604),	-- Dervish Cape
-						i(9803),	-- Superior Bracers
-						i(6593),	-- Battleforge Cloak
-						i(9799),	-- Ivycloth Sash
-						i(9817),	-- Fortified Spaulders
-						i(9795),	-- Ivycloth Gloves
-						i(9802),	-- Superior Boots
-						i(9818),	-- Fortified Chain
-						i(6600),	-- Dervish Belt
-						i(6602),	-- Dervish Bracers
-						i(6584),	-- Scouting Tunic
-						i(6591),	-- Battleforge Wristguards
-						i(4715),	-- Emblazoned Cloak
-						i(9813),	-- Fortified Gauntlets
-						i(9793),	-- Ivycloth Bracelets
-						i(9794),	-- Ivycloth Cloak
-						i(9796),	-- Ivycloth Mantle
-						i(6569),	-- Shimmering Robe
-						i(9801),	-- Superior Belt
-						i(9806),	-- Superior Gloves
-						i(9792),	-- Ivycloth Boots
-						i(6567),	-- Shimmering Armor
-						i(9810),	-- Fortified Boots
-						i(9815),	-- Fortified Leggings
-						i(9807),	-- Superior Shoulders
-						i(6605),	-- Dervish Gloves
-						i(6601),	-- Dervish Boots
-						i(6597),	-- Battleforge Shoulderguards
-						i(9809),	-- Superior Tunic
-						i(6612),	-- Sage's Boots
-						i(6614),	-- Sage's Cloak
+						["coord"] = { 43.1, 41.7, 50 },
+						["g"] = {
+							i(6604),	-- Dervish Cape
+							i(9803),	-- Superior Bracers
+							i(6593),	-- Battleforge Cloak
+							i(9799),	-- Ivycloth Sash
+							i(9817),	-- Fortified Spaulders
+							i(9795),	-- Ivycloth Gloves
+							i(9802),	-- Superior Boots
+							i(9818),	-- Fortified Chain
+							i(6600),	-- Dervish Belt
+							i(6602),	-- Dervish Bracers
+							i(6584),	-- Scouting Tunic
+							i(6591),	-- Battleforge Wristguards
+							i(4715),	-- Emblazoned Cloak
+							i(9813),	-- Fortified Gauntlets
+							i(9793),	-- Ivycloth Bracelets
+							i(9794),	-- Ivycloth Cloak
+							i(9796),	-- Ivycloth Mantle
+							i(6569),	-- Shimmering Robe
+							i(9801),	-- Superior Belt
+							i(9806),	-- Superior Gloves
+							i(9792),	-- Ivycloth Boots
+							i(6567),	-- Shimmering Armor
+							i(9810),	-- Fortified Boots
+							i(9815),	-- Fortified Leggings
+							i(9807),	-- Superior Shoulders
+							i(6605),	-- Dervish Gloves
+							i(6601),	-- Dervish Boots
+							i(6597),	-- Battleforge Shoulderguards
+							i(9809),	-- Superior Tunic
+							i(6612),	-- Sage's Boots
+							i(6614),	-- Sage's Cloak
+						},
 					}),
 					n(11383, { 	-- High Priestess Hai'watna
 						i(9796),	-- Ivycloth Mantle
@@ -1501,43 +1507,46 @@ _.Zones =
 						i(6605),	-- Dervish Gloves
 					}),
 					n(51661, { 	-- Tsul'Kalu
-						i(6594),	-- Battleforge Girdle
-						i(6596),	-- Battleforge Legguards
-						i(6597),	-- Battleforge Shoulderguards
-						i(6591),	-- Battleforge Wristguards
-						i(6601),	-- Dervish Boots
-						i(6605),	-- Dervish Gloves
-						i(9796),	-- Ivycloth Mantle
-						i(6614),	-- Sage's Cloak
-						i(9808),	-- Superior Leggings
-						i(6595),	-- Battleforge Gauntlets
-						i(6600),	-- Dervish Belt
-						i(6602),	-- Dervish Bracers
-						i(4715),	-- Emblazoned Cloak
-						i(9797),	-- Ivycloth Pants
-						i(6612),	-- Sage's Boots
-						i(6613),	-- Sage's Bracers
-						i(9829),	-- Scaled Leather Bracers
-						i(9806),	-- Superior Gloves
-						i(9807),	-- Superior Shoulders
-						i(9809),	-- Superior Tunic
-						i(9822),	-- Durable Cape
-						i(6607),	-- Dervish Leggings
-						i(7415),	-- Dervish Spaulders
-						i(9831),	-- Scaled Cloak
-						i(9821),	-- Durable Bracers
-						i(9837),	-- Banded Bracers
-						i(6592),	-- Battleforge Armor
-						i(6590),	-- Battleforge Boots
-						i(6603),	-- Dervish Tunic
-						i(10404),	-- Durable Belt
-						i(6617),	-- Sage's Mantle
-						i(6611),	-- Sage's Sash
-						i(9827),	-- Scaled Leather Belt
-						i(9791),	-- Ivycloth Tunic
-						i(9838),	-- Banded Cloak
-						i(7356),	-- Elder's Cloak
-						i(7419),	-- Phalanx Cloak
+						["coord"] = { 47.0, 32.3, 50 },
+						["g"] = {
+							i(6594),	-- Battleforge Girdle
+							i(6596),	-- Battleforge Legguards
+							i(6597),	-- Battleforge Shoulderguards
+							i(6591),	-- Battleforge Wristguards
+							i(6601),	-- Dervish Boots
+							i(6605),	-- Dervish Gloves
+							i(9796),	-- Ivycloth Mantle
+							i(6614),	-- Sage's Cloak
+							i(9808),	-- Superior Leggings
+							i(6595),	-- Battleforge Gauntlets
+							i(6600),	-- Dervish Belt
+							i(6602),	-- Dervish Bracers
+							i(4715),	-- Emblazoned Cloak
+							i(9797),	-- Ivycloth Pants
+							i(6612),	-- Sage's Boots
+							i(6613),	-- Sage's Bracers
+							i(9829),	-- Scaled Leather Bracers
+							i(9806),	-- Superior Gloves
+							i(9807),	-- Superior Shoulders
+							i(9809),	-- Superior Tunic
+							i(9822),	-- Durable Cape
+							i(6607),	-- Dervish Leggings
+							i(7415),	-- Dervish Spaulders
+							i(9831),	-- Scaled Cloak
+							i(9821),	-- Durable Bracers
+							i(9837),	-- Banded Bracers
+							i(6592),	-- Battleforge Armor
+							i(6590),	-- Battleforge Boots
+							i(6603),	-- Dervish Tunic
+							i(10404),	-- Durable Belt
+							i(6617),	-- Sage's Mantle
+							i(6611),	-- Sage's Sash
+							i(9827),	-- Scaled Leather Belt
+							i(9791),	-- Ivycloth Tunic
+							i(9838),	-- Banded Cloak
+							i(7356),	-- Elder's Cloak
+							i(7419),	-- Phalanx Cloak
+						},
 					}),
 				}),
 				n(0,    {	-- Zone Drop
@@ -1788,9 +1797,6 @@ _.Zones =
 					},
 				}),
 			},
-			["lvl"] = 25,
-			["achievementID"] = 781,
-			["description"] = "|cff66ccffNorthern Stranglethorn is a new zone in Cataclysm--the old Stranglethorn Vale was split in half after the Sundering. At the bottom of this zone, the remaining whirlpool can be seen. Players learn about the political changes Zul'Gurub, rescue an adorable raptor, and partake in Nesingwary's expanded hunting operations.|r",
 		}),
 	}),
 };

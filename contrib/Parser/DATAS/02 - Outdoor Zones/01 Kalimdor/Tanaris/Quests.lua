@@ -501,6 +501,7 @@ _.Zones =
 						["coord"] = { 27.2, 60.1, 71 },	-- Tanaris
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53819,	-- Return to the Nest
+						["lvl"] = 120,
 						["groups"] = {
 							i(165845),	-- Feathers (PET!)
 						},
