@@ -7,8 +7,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 65,
 		["mapID"] = 273,
 		["coords"] = {
+			{ 37.2, 83.3, 75 },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 37.2, 83.3, 75 },	-- actual dungeon entrance
 		},
 		["groups"] = {
 			n(-17, {

@@ -871,6 +871,18 @@ _.Zones =
 						},
 					}),
 					prof(393, {	-- Skinning
+						q(40147, {	-- Mother's Prized Knife
+							["sourceQuests"] = { 40146 },	-- Seymour and Agnes
+							["requireSkill"] = 393,	-- Skinning
+							["coord"] = { 45.7, 25.6, 634 },
+							["qg"] = 98721,	-- Seymour
+						}),
+						q(40148, {	-- Red-Eyed Revenge
+							["sourceQuests"] = { 40146 },	-- Seymour and Agnes
+							["requireSkill"] = 393,	-- Skinning
+							["coord"] = { 45.7, 25.6, 634 },
+							["qg"] = 98721,	-- Seymour
+						}),
 						{	-- Skinning Technique: Unbroken Claw
 							["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
 							["requireSkill"] = 393,	-- Skinning
@@ -2138,7 +2150,6 @@ _.Zones =
 					q(38422),	-- Makrura Wave Event
 					q(42735),	-- Malace in Vrykul Land
 					q(40613),	-- Maw of Souls: Retrieving the Svalnguard
-					q(40147),	-- Mother's Prized Knife
 					q(39944),	-- Mysterious Messages
 					q(44116),	-- Mystery at Citrine Bay
 					q(40672),	-- Neltharion's Lair: Presentation is Key
@@ -2150,7 +2161,6 @@ _.Zones =
 					q(43898),	-- Preparing to Move
 					q(41159),	-- Process of Elimination
 					q(42399),	-- Ready to Work
-					q(40148),	-- Red-Eyed Revenge
 					q(38794),	-- Rethu's Sacrifice
 					q(47052),	-- Retribution: Fate of the Tideskorn
 					q(39946),	-- Right Tool for the Job

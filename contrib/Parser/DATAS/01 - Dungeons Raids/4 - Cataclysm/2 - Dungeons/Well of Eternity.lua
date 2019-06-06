@@ -7,8 +7,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["lvl"] = 85,
 		["mapID"] = 398,
 		["coords"] = {
+			{ 22.9, 64.4, 75 },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 22.9, 64.4, 75 },	-- actual dungeon entrance
 		},
 		["g"] = {
 			n(-17, {	-- Quests 			

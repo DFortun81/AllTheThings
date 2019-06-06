@@ -7,8 +7,8 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 63,
 		["mapID"] = 274,
 		["coords"] = {
+			{ 26.8, 36.8, 75 },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 26.8, 36.8, 75 },	-- Old Hillsbrad Foothills, Caverns of Time [Tanaris]
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
