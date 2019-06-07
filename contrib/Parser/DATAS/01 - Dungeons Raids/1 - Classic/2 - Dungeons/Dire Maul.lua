@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(230, { 	-- Dire Maul
 		["lvl"] = 31,
 		["mapID"] = 234,
-		["groups"] = {
+		["g"] = {
 			ach(644),	-- King of Dire Maul
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This is the instance on the right side.",
@@ -15,7 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 					240,	-- The Shrine of Eldretharr
 				},
 				["coord"] = { 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests
 						q(27104, {	-- Alzzin the Wildshaper
 							["qg"] = 44969,	-- Furgus Warpwood
@@ -29,8 +29,61 @@ _.Instances = { tier(1, {	-- Classic
 						q(27105, {	-- An Unwelcome Guest
 							["qg"] = 44969,	-- Furgus Warpwood
 						}),
+						q(7651, {	-- Enchanted Thorium Platemail: Volume III
+							["u"] = 40,
+							["itemID"] = 18771, -- revisit. Maybe swap this with quest?
+							["requireSkill"] = 164,	-- Blacksmithing
+							["g"] = {
+								un(2, i(12725)),	-- Plans: Enchanted Thorium Helm
+							},
+						}),
+						i(18401, {	-- Foror's Compendium of Dragon Slaying
+							["u"] = 2,
+							["classes"] = { 1, 2 },
+							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["g"] = {
+								un(40, q(7507)),	-- Furor's Compendium
+								un(40, q(7508)),	-- The Forging of Quel'Serrar
+								un(40, q(7509, {	-- The Forging of Quel'Serrar
+									un(2, i(18348)),	-- Quel'Serrar
+								})),
+							},
+						}),
+						q(7488, {	-- Lethtendris's Web
+							["u"] = 40,
+							["qg"] = 7877,	-- Latronicus Moonspear
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								un(2, i(18491)),	-- Lorespinner
+							},
+						}),
+						q(7489, {	-- Lethtendris's Web
+							["u"] = 40,
+							["qg"] = 7776,	-- Talo Thornhoof
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								un(2, i(18491)),	-- Lorespinner
+							},
+						}),
 						q(27108, {	-- Lethtendris's Web
 							["qg"] = 44971,	-- "Ambassador" Dagg'thol
+						}),
+						q(7483, {	-- Libram of Rapidity
+							["u"] = 40,
+							["qg"] = 14368,	-- Lorekeeper Lydros
+							["g"] = {
+								un(2, i(18329, {	-- Arcanum of Rapidity
+									["f"] = 55,	-- Consumable
+								})),
+							},
+						}),
+						q(7441, {	-- Pusillin and the Elder Azj'Tordin
+							["u"] = 40,
+							["qg"] = 14355,	-- Azj'Tordin
+							["g"] = {
+								un(2, i(18410)),	-- Sprinter's Sword
+								un(2, i(18411)),	-- Spry Boots
+							},
 						}),
 						q(27107, {	-- Pusillin The Thief
 							["qg"] = 44971,	-- "Ambassador" Dagg'thol
@@ -123,7 +176,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18315),	-- Ring of Demonic Potency
 					})),
 					n(16097, {			-- Isalien Summonable
-						["groups"] = {
+						["g"] = {
 							i(22057, {	-- Brazier of Invocation
 								un(11, i(22472)), 	-- Boots of Ferocity
 								un(11, i(22315)), 	-- Hammer of Revitalization
@@ -155,18 +208,68 @@ _.Instances = { tier(1, {	-- Classic
 					235,	-- Gordok Commons
 				},
 				["coord"] = { 62.48, 24.48, 69 },	-- Dire Maul [North], Feralas
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests
 						o(179485, {	-- A Broken Trap
 							q(27118, {	-- A Broken Trap
 								["repeatable"] = true,
 							}),
 						}),
-						qa(27133, {	-- Eyes in the Sky
-							["qg"] = 3936,	-- Shandris Feathermoon
+						q(7499, {	-- Codex of Defense
+							["u"] = 40,
+							["classes"] = { 1 },	-- Warrior
+							["g"] = {
+								un(2, i(18466)),	--Royal Seal of Eldre'Thalas
+							},
 						}),
-						qa(27125, {	-- King of the Gordok
+						q(27133, {	-- Eyes in the Sky
+							["qg"] = 3936,	-- Shandris Feathermoon
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(8949, {	-- Falrin's Vendetta
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22150)),	-- Beads of Ogre Might
+								un(2, i(22149)),	-- Beads of Ogre Mojo
+							},
+						}),
+						i(18401, {	-- Foror's Compendium of Dragon Slaying
+							["u"] = 2,
+							["classes"] = {1,2},
+							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["g"] = {
+								un(40, q(7507)),	-- Furor's Compendium
+								un(40, q(7508)),	-- The Forging of Quel'Serrar
+								un(40, q(7509, {	-- The Forging of Quel'Serrar
+									un(2, i(18348)),	-- Quel'Serrar
+								})),
+							},
+						}),
+						q(5525, {	-- Free Knot!
+							["u"] = 40,
+							["qg"] = 14338,	-- Knott
+							["description"] = "This quest was removed with the Cataclym with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
+							["g"] = {
+								un(2, i(18250)),	-- Gordok Shackle Key
+							},
+						}),
+						q(7502, {	-- Harnessing Shadows
+							["u"] = 40,
+							["classes"] = { 9 },	-- Warlock
+							["g"] = {
+								un(2, i(18467)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(7504, {	-- Holy Bologna: What the Light Won't Tell You
+							["u"] = 40,
+							["classes"] = { 5 },	-- Priest
+							["g"] = {
+								un(2, i(18469)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(27125, {	-- King of the Gordok
 							["qg"] = 45040,	-- Druid of the Talon
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(65976),	-- Pauldrons of Tribute
 								i(65927),	-- Slippers of Tribute
@@ -174,8 +277,9 @@ _.Instances = { tier(1, {	-- Classic
 								i(65952),	-- Wristbands of Tribute
 							},
 						}),
-						qh(27128, {	-- King of the Gordok
+						q(27128, {	-- King of the Gordok
 							["qg"] = 45052,	-- Stonemaul Ogre
+							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(66036),	-- Pauldrons of Tribute
 								i(66018),	-- Slippers of Tribute
@@ -183,11 +287,47 @@ _.Instances = { tier(1, {	-- Classic
 								i(66027),	-- Wristbands of Tribute
 							},
 						}),
-						qh(27134, {	-- Ogre in the Field
-							["qg"] = 39656,	-- Orhan Ogreblade
+						o(179501, {	-- Knot Thimblejack's Cache
+							["u"] = 40,
+							["sourceQuest"] = 5525,	-- Free Knot!
+							["g"] = {
+								un(7, i(18414)),	-- Pattern: Belt of the Archmage
+								un(7, i(18517)),	-- Pattern: Chromatic Cloak
+								un(2, i(18418)),	-- Pattern: Cloak of Warding
+								un(2, i(18415)),	-- Pattern: Felcloth Gloves
+								un(2, i(18514)),	-- Pattern: Girdle of Insight
+								un(7, i(18518)),	-- Pattern: Hide of the Wild
+								un(2, i(18416)),	-- Pattern: Inferno Gloves
+								un(2, i(18515)),	-- Pattern: Mongoose Boots
+								un(2, i(18417)),	-- Pattern: Mooncloth Gloves
+								un(7, i(18519)),	-- Pattern: Shifting Cloak
+								un(2, i(18516)),	-- Pattern: Swift Flight Bracers
+							},
+						}),
+						q(7485, {	-- Libram of Protection
+							["u"] = 40,
+							["g"] = {
+								un(2, i(18331, {	-- Arcanum of Protection
+									["f"] = 55,	-- Consumable
+								})),
+							},
+						}),
+						q(7500, {	-- The Arcanist's Cookbook
+							["u"] = 40,
+							["classes"] = { 8 },	-- Mage
+							["g"] = {
+								un(2, i(18468)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(7506, {	-- The Emerald Dream...
+							["u"] = 40,
+							["classes"] = { 11 },	-- Druid
+							["g"] = {
+								un(2, i(18470)),	-- Royal Seal of Eldre'Thalas
+							},
 						}),
 						q(27119, {	-- The Gordok Ogre Suit
-							["qg"] = 14338,	-- 
+							["qg"] = 14338,	-- Knot Thimblejack
 							["g"] = {
 								i(18258),	-- Gordok Ogre Suit
 							},
@@ -195,16 +335,32 @@ _.Instances = { tier(1, {	-- Classic
 						q(27120, {	-- The Gordok Ogre Suit
 							["qg"] = 14338,	-- Knot Thimblejack
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								un(2, recipe(22813)),	-- Gordok Ogre Suit
 								i(18258),	-- Gordok Ogre Suit
 							},
 						}),
 						q(27114, {	-- The Gordok Taste Test
 							["qg"] = 14322,	-- Stomper Kreeg
+							["description"] = "Kill |cFFFFD700King Gordok|r to become king, then the courtyard.",
+						}),
+						q(7503, {	-- The Greatest Race of Hunters
+							["u"] = 40,
+							["classes"] = { 3 },	-- Hunter
+							["g"] = {
+								un(2, i(18473)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(7501, {	-- The Light and How To Swing It
+							["u"] = 40,
+							["classes"] = { 2 },	-- Paladin
+							["g"] = {
+								un(2, i(18472)),	-- Royal Seal of Eldre'Thalas
+							},
 						}),
 						q(27124, {	-- Unfinished Gordok Business
 							["qg"] = 14325,	-- Captain Kromcrush
+							["description"] = "Kill |cFFFFD700King Gordok|r then return to the courtyard.",
 							["g"] = {
 								i(18367),	-- Gordok's Gauntlets
 								i(18368),	-- Gordok's Gloves
@@ -298,14 +454,14 @@ _.Instances = { tier(1, {	-- Classic
 						i(18522),	-- Band of the Ogre King
 					})),
 					n(14353, {			-- Mizzle the Crafty
-						["description"] = "Speak with Mizzle after killing King Gordok to spawn the Tribute Chest.",
-						["groups"] = {
+						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
+						["g"] = {
 							o(179564, {	-- Gordok Tribute Chest (No Localization)
 								["description"] =  " A full Tribute Run (5 Items) requires no killing of any of bosses besides King Gordok, activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the Trap.",
 								["model"] = "World\\Generic\\Passivedoodads\\Furniture\\Containers\\Titanchest.mdx",
 								["modelScale"] = 2.1,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-								["groups"] = {
+								["g"] = {
 									i(18499),	-- Barrier Shield
 									i(18479),	-- Carrion Scorpid Helm
 									i(18537),	-- Counterattack Lodestone
@@ -341,10 +497,55 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["coord"] = { 60.32, 30.17, 69 },	-- Dire Maul [West], Feralas
 				["description"] = "This is the instance on the left side.",
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests
-						q(27112,  { -- 	-- The Cursed Remains
+						q(7650, {	-- Enchanted Thorium Platemail: Volume II
+							["u"] = 40,
+							["requireSkill"] = 164,	-- Blacksmithing
+							["g"] = {
+								un(2, i(12726)),	-- Plans: Enchanted Thorium Leggings
+							},
+						}),
+						i(18401, {	-- Foror's Compendium of Dragon Slaying
+							["u"] = 2,
+							["classes"] = { 1, 2 },
+							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["g"] = {
+								un(40, q(7507)),	-- Furor's Compendium
+								un(40, q(7508)),	-- The Forging of Quel'Serrar
+								un(40, q(7509, {	-- The Forging of Quel'Serrar
+									un(2, i(18348)),	-- Quel'Serrar
+								})),
+							},
+						}),
+						q(7505, {	-- Frost Shock and You
+							["u"] = 40,
+							["classes"] = { 7 },	-- Shaman
+							["g"] = {
+								un(2, i(18471)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(7498, {	-- Garona: A Study on Stealth and Treachery
+							["u"] = 40,
+							["classes"] = { 4 },	-- Rogue
+							["g"] = {
+								un(2, i(18465)),	-- Royal Seal of Eldre'Thalas
+							},
+						}),
+						q(7484, {	-- Libram of Focus
+							["u"] = 40,
+							["g"] = {
+								un(2, i(18330, {	-- Arcanum of Focus
+									["f"] = 55,	-- Consumable
+								})),
+							},
+						}),
+						q(27112,  { -- The Cursed Remains
 							["qg"] = 44991,
+						}),
+						q(7461, {	-- The Madness Within
+							["u"] = 40,
+							["qg"] = 14358,	-- Shen'dralar Ancient
 						}),
 						q(27110, {	-- The Madness Within
 							["qg"] = 14358,	-- Shen'dralar Ancient
@@ -352,10 +553,32 @@ _.Instances = { tier(1, {	-- Classic
 						q(27113, {	-- The Shen'dralar Ancient
 							["qg"] = 44991,
 						}),
+						q(7462, { 	-- The Treasure of the Shen'dralar
+							["u"] = 40,
+							["qg"] = 14358,	-- Shen'dralar Ancient
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 7461,	-- The Madness Within
+							["g"] = {
+								un(2, i(18421)),	-- Backwood Helm
+								un(2, i(18420)),	-- Bonecrusher
+								un(2, i(18424)),	-- Sedge Boots
+							},
+						}),
+						q(7877, { 	-- The Treasure of the Shen'dralar
+							["u"] = 40,
+							["qg"] = 14358,	-- Shen'dralar Ancient
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 7461,	-- The Madness Within
+							["g"] = {
+								un(2, i(18421)),	-- Backwood Helm
+								un(2, i(18420)),	-- Bonecrusher
+								un(2, i(18424)),	-- Sedge Boots
+							},
+						}),
 						q(27111, {	-- The Treasure of Shen'dralar
-							["qgs"] = 14358,	-- Shen'dralar Ancient
-							["sourceQuests"] = { 27110 },	-- The Madness Wiwthin
-							["groups"] = {
+							["qg"] = 14358,	-- Shen'dralar Ancient
+							["sourceQuest"] = 27110,	-- The Madness Within
+							["g"] = {
 								i(65949),	-- Dire Maul
 								i(65973),	-- Fras Siabi's Cigar Cutter
 								i(65924),	-- Shen'dralar Trident
@@ -364,6 +587,34 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(27109, {	-- The Warped Defender
 							["qg"] = 44999,
+						}),
+						-- Part of the Dungeon 2 Set Questline
+						q(8949, {	-- Falrin's Vendetta
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8948,	-- Anthion's Old Friend
+							["lvl"] = 58,
+							["u"] = 40,
+							["groups"] = {
+								un(2, i(22150)),	-- Beads of Ogre Might
+								un(2, i(22149)),	-- Beads of Ogre Mojo
+							},
+						}),
+						q(8950, {	-- The Instigator's Enchantment
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8949,	-- Falrin's Vendetta
+							["lvl"] = 58,
+							["u"] = 40,
+						}),
+						q(9015, {	-- The Challenge
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+							["lvl"] = 58,
+							["u"] = 40,
+						}),
+					}),
+					n(-2, {	-- Vendors
+						n(14371, {	-- Shen'dralar Provisioner
+							i(18487),	-- Pattern: Mooncloth Robe
 						}),
 					}),
 					n(0, {	-- Zone Drop
@@ -436,7 +687,7 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					n(11467, {			-- Tsu'zee
 						["description"] = "This is a rare that is not always present.",
-						["groups"] = {
+						["g"] = {
 							i(18387),	-- Brightspark Gloves
 							i(18346),	-- Threadbane Trousers
 							i(18345),	-- Murmuring Ring
@@ -474,7 +725,7 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					n(14506, {			-- Lord Hel'nurath
 						["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Warlock with (Dreadsteed of Xoroth) FOS|r \n|cff3399ffSTEP 2:|r|cff66ccff Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)|r \n|cff3399ffSTEP 3:|r|cff66ccff Kill Immol'thar.|r \n|cff3399ffSTEP 4:|r|cff66ccff Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.|r \n|cff3399ffSTEP 5:|r|cff66ccff Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.|r \n|cff3399ffSTEP 6:|r|cff66ccff Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.|r \n|cff3399ffSTEP 7:|r|cff66ccff Kill Lord Hel'nurath & collect loot.|r",
-						["groups"] = {
+						["g"] = {
 							un(11, i(18757)), 	-- Diabolic Mantle
 							un(11, i(18755)), 	-- Xorothian Firestick
 							un(11, i(18756)), 	-- Dreadguard Protector
@@ -498,214 +749,20 @@ _.Instances = { tier(1, {	-- Classic
 							["classes"] = { 2 },	-- Paladin Only
 							["sourceQuests"] = { -91190 },	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								a(i(19003)),	-- Head of Nefarian [Alliance]
 								h(i(19002)),	-- Head of Nefarian [Horde]
 							},
 						}),
 					})),
-					n(-2, {	-- Vendors
-						n(14371, {	-- Shen'dralar Provisioner
-							i(18487),	-- Pattern: Mooncloth Robe
-						}),
-					}),
-				},
-			}),
-			n(-40, {	-- Legacy
-				["groups"] = {
-					n(-12, {	-- Warpwood Quarter [East - Demon]
-						n(-17, {	-- Quests (Legacy)
-							{	-- Enchanted Thorium Platemail: Volume III
-								["questID"] = 7651,	-- Enchanted Thorium Platemail: Volume III
-								["requireSkill"] = 164,	-- Blacksmithing
-								["u"]=  40,
-								["g"] = {
-									{	-- Plans: Enchanted Thorium Helm
-										["itemID"] = 12725,	-- Plans: Enchanted Thorium Helm
-										["u"] = 2,
-									},
-								},
-							},
-							un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-								["classes"] = {1,2},
-								["description"] = "Item used to drop from any boss in Dire Maul.",
-								["groups"] = {
-									un(40, q(7507)),	-- Furor's Compendium
-									un(40, q(7508)),	-- The Forging of Quel'Serrar
-									un(40, q(7509, {	-- The Forging of Quel'Serrar
-										un(2, i(18348)),	-- Quel'Serrar
-									})),
-								},
-							})),
-							un(40, qa(7488, {	-- Lethtendris's Web
-								un(2, i(18491)),	-- Lorespinner
-							})),
-							un(40, qh(7489, {	-- Lethtendris's Web
-								un(2, i(18491)),	-- Lorespinner
-							})),
-							un(40, q(7483, {	-- Libram of Rapidity
-								un(2, i(18329, {	-- Arcanum of Rapidity
-									["f"] = 55,	-- Consumable
-								})),
-							})),
-							un(40, q(7441, {	-- Pusillin and the Elder Azj'Tordin
-								un(2, i(18410)),	-- Sprinter's Sword
-								un(2, i(18411)),	-- Spry Boots
-							})),
-						}),
-					}),
-					n(-13, {	-- Gordok Commons [North - Ogres]
-						n(-17, {	-- Quests (Legacy)
-							un(40, q(7499, {	-- Codex of Defense
-								["classes"] = { 1 },	-- Warrior
-								["groups"] = {
-									un(2, i(18466)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(8949, {	-- Falrin's Vendetta
-								un(2, i(22150)),	-- Beads of Ogre Might
-								un(2, i(22149)),	-- Beads of Ogre Mojo
-							})),
-							un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-								["classes"] = {1,2},
-								["description"] = "Item used to drop from any boss in Dire Maul.",
-								["groups"] = {
-									un(40, q(7507)),	-- Furor's Compendium
-									un(40, q(7508)),	-- The Forging of Quel'Serrar
-									un(40, q(7509, {	-- The Forging of Quel'Serrar
-										un(2, i(18348)),	-- Quel'Serrar
-									})),
-								},
-							})),
-							un(40, q(5525, {	-- Free Knot!
-								["description"] = "This quest was removed with the Cataclym with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
-								["qg"] = 14338,	-- Knott
-								["groups"] = {
-									un(2, i(18250)),	-- Gordok Shackle Key
-								},
-							})),
-							un(40, q(7502, {	-- Harnessing Shadows
-								["classes"] = { 9 },	-- Warlock
-								["groups"] = {
-									un(2, i(18467)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7504, {	-- Holy Bologna: What the Light Won't Tell You
-								["classes"] = { 5 },	-- Priest
-								["groups"] = {
-									un(2, i(18469)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7485, {	-- Libram of Protection
-								un(2, i(18331, {	-- Arcanum of Protection
-									["f"] = 55,	-- Consumable
-								})),
-							})),
-							un(40, q(7500, {	-- The Arcanist's Cookbook
-								["classes"] = { 8 },	-- Mage
-								["groups"] = {
-									un(2, i(18468)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7506, {	-- The Emerald Dream...
-								["classes"] = { 11 },	-- Druid
-								["groups"] = {
-									un(2, i(18470)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7503, {	-- The Greatest Race of Hunters
-								["classes"] = { 3 },	-- Hunter
-								["groups"] = {
-									un(2, i(18473)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7501, {	-- The Light and How To Swing It
-								["classes"] = { 2 },	-- Paladin
-								["groups"] = {
-									un(2, i(18472)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-						}),
-						o(179501, {	-- Knot Thimblejack's Cache
-							["sourceQuest"] = 5525,	-- Free Knot!
-							["u"] = 40,	-- Legacy
-							["groups"] = {
-								un(7, i(18414)),	-- Pattern: Belt of the Archmage
-								un(7, i(18517)),	-- Pattern: Chromatic Cloak
-								un(2, i(18418)),	-- Pattern: Cloak of Warding
-								un(2, i(18415)),	-- Pattern: Felcloth Gloves
-								un(2, i(18514)),	-- Pattern: Girdle of Insight
-								un(7, i(18518)),	-- Pattern: Hide of the Wild
-								un(2, i(18416)),	-- Pattern: Inferno Gloves
-								un(2, i(18515)),	-- Pattern: Mongoose Boots
-								un(2, i(18417)),	-- Pattern: Mooncloth Gloves
-								un(7, i(18519)),	-- Pattern: Shifting Cloak
-								un(2, i(18516)),	-- Pattern: Swift Flight Bracers
-							},
-						}),
-					}),
-					n(-14, {	-- Capital Gardens [West - Elves]
-						n(-17, {	-- Quests (Legacy)
-							{	-- Enchanted Thorium Platemail: Volume II
-								["questID"] = 7650,	-- Enchanted Thorium Platemail: Volume II
-								["requireSkill"] = 164,	-- Blacksmithing
-								["u"]=  40,
-								["g"] = {
-									{	-- Plans: Enchanted Thorium Leggings
-										["itemID"] = 12726,	-- Plans: Enchanted Thorium Leggings
-										["u"] = 2,
-									},
-								},
-							},
-							un(2, i(18401, {	-- Foror's Compendium of Dragon Slaying
-								["classes"] = {1,2},
-								["description"] = "Item used to drop from any boss in Dire Maul.",
-								["groups"] = {
-									un(40, q(7507)),	-- Furor's Compendium
-									un(40, q(7508)),	-- The Forging of Quel'Serrar
-									un(40, q(7509, {	-- The Forging of Quel'Serrar
-										un(2, i(18348)),	-- Quel'Serrar
-									})),
-								},
-							})),
-							un(40, q(7505, {	-- Frost Shock and You
-								["classes"] = { 7 },	-- Shaman
-								["groups"] = {
-									un(2, i(18471)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7498, {	-- Garona: A Study on Stealth and Treachery
-								["classes"] = { 4 },	-- Rogue
-								["groups"] = {
-									un(2, i(18465)),	--Royal Seal of Eldre'Thalas
-								},
-							})),
-							un(40, q(7484, {	-- Libram of Focus
-								un(2, i(18330, {	-- Arcanum of Focus
-									["f"] = 55,	-- Consumable
-								})),
-							})),
-							un(40, qa(7462, { 	-- The Treasure of the Shen'dralar
-								un(2, i(18421)),	-- Backwood Helm
-								un(2, i(18420)),	-- Bonecrusher
-								un(2, i(18424)),	-- Sedge Boots
-							})),
-							un(40, qh(7877, { 	-- The Treasure of the Shen'dralar
-								un(2, i(18421)),	-- Backwood Helm
-								un(2, i(18420)),	-- Bonecrusher
-								un(2, i(18424)),	-- Sedge Boots
-							})),
-						}),
-						n(0, {	-- Zone Drop (Legacy)
-							un(43, n(14690, {	-- Revanchion
-								["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
-								["groups"] = {
-									un(2, i(23129)),	-- Bracers of Mending
-									un(2, i(23127)),	-- Cloak of Revanchion
-									un(2, i(23128)),	-- The Shadow's Grasp
-								},
-							})),
-						}),
+					n(14690, {	-- Revanchion
+						["u"] = 43,
+						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
+						["g"] = {
+							un(2, i(23129)),	-- Bracers of Mending
+							un(2, i(23127)),	-- Cloak of Revanchion
+							un(2, i(23128)),	-- The Shadow's Grasp
+						},
 					}),
 				},
 			}),

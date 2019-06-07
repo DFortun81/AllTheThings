@@ -322,6 +322,7 @@ _.Zones =
 						{ 51.8, 19.0, 539 },
 						{ 57.4, 21.6, 539 },
 					},
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82318,	-- Umbraspore Giant
 				},
 				qa(34784, {	-- Fun with Fungus
@@ -605,6 +606,7 @@ _.Zones =
 					["description"] = "The item that starts this quest is mailed to you.",
 					["questID"] = 37322,	-- The Prophet's Final Message
 					["itemID"] = 119208,	-- The Prophet's Arcanum
+					["races"] = ALLIANCE_ONLY,
 				},
 				qa(33255, {	-- The Righteous March
 					["sourceQuests"] = { 33837 },	-- Darkness Falls
@@ -614,7 +616,6 @@ _.Zones =
 				qa(33533, {	-- The Secrets of Gorgrond
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor
 					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 46.3, 38.6, 539 },
 					["qg"] = 73395,	-- Yrel
 				}),

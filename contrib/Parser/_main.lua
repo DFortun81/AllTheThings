@@ -621,7 +621,31 @@ v = function(id, t)										-- Create a VIGNETTE Object
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
-a = function(t) t.races = ALLIANCE_ONLY; return t; end			-- Flag as Alliance Only
+a = function(t)	-- Flag as Alliance Only
+	if t.races then
+		for key,value in pairs(t) do
+			if key == "g" then
+				-- Do nothing.
+			elseif type(value) == "table" then
+				-- Show the table.
+				local statement = "";
+				local count = 0;
+				for j,value2 in ipairs(value) do
+					if count > 0 then statement = statement .. ", "; end
+					statement = statement .. tostring(valu2);
+					count = count + 1;
+				end
+				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
+			else
+				print("\t" .. tostring(key) .. ": " .. tostring(value));
+			end
+		end
+		error("Attempted to assign RACES as ALLIANCE_ONLY on a thing already marked with races.");
+	else
+		t.races = ALLIANCE_ONLY;
+	end
+	return t;
+end			
 cr = function(id, t)											-- Add a Creature List to an object.
 	if type(id) == "number" then
 		t.cr = id;
@@ -631,7 +655,31 @@ cr = function(id, t)											-- Add a Creature List to an object.
 	return t;
 end
 crs = cr;
-h = function(t) t.races = HORDE_ONLY; return t; end				-- Flag as Horde Only
+h = function(t) -- Flag as Horde Only
+	if t.races then
+		for key,value in pairs(t) do
+			if key == "g" then
+				-- Do nothing.
+			elseif type(value) == "table" then
+				-- Show the table.
+				local statement = "";
+				local count = 0;
+				for j,value2 in ipairs(value) do
+					if count > 0 then statement = statement .. ", "; end
+					statement = statement .. tostring(value2);
+					count = count + 1;
+				end
+				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
+			else
+				print("\t" .. tostring(key) .. ": " .. tostring(value));
+			end
+		end
+		error("Attempted to assign RACES as HORDE_ONLY on a thing already marked with races.");
+	else
+		t.races = HORDE_ONLY;
+	end
+	return t;
+end	
 modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
 qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
 qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object

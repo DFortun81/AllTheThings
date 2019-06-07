@@ -11,6 +11,17 @@ _.Zones =
 						ach(11941, {	-- Chromie Homie
 							title(361),		-- Title: Timelord
 						}),
+						--[[
+						q(47904, {	-- Preserve the True Future
+							["qg"] = 0,	-- Unable to pull from Wowhead.
+						}),
+						q(47545, {	-- Rewind
+							["qg"] = 0,	-- Unable to pull from Wowhead.
+						}),
+						q(47543, {	-- The Day That Chromie Dies
+							["qg"] = 0,	-- Unable to pull from Wowhead.
+						}),
+						]]--
 						q(47906, { 		-- The Deaths of Chromie
 							{ -- Ensemble: Chronoscryer's Finery
 								["groups"] = {
@@ -69,6 +80,11 @@ _.Zones =
 								["itemID"] = 151695,
 							},
 						}),
+						--[[
+						q(47550, {	-- The Many Advantages of Being a Time Dragon
+							["qg"] = 0,	-- Unable to pull from Wowhead.
+						}),
+						]]--
 						i(151482, { 	-- Time-Lost Wallet
 							i(151829), 		-- Bronze Proto-Whelp Pet
 							i(151828), 		-- Ageless Bronze Drake Pet

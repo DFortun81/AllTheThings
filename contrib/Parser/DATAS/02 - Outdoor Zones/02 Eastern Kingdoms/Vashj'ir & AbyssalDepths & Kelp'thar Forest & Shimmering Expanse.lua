@@ -498,12 +498,13 @@ _.Zones =
 								-- SQ needs confirmation
 							}),
 							q(25547, {	-- On Our Own Terms
-								["qg"] = 39887,	-- Captain Taylor
-								["coord"] = { 44.7, 22.5, 201 },
 								["sourceQuests"] = {
 									25564,	-- Stormwind Elite Aquatic and Land Forces
 									25545,	-- To Arms!
 								},
+								["coord"] = { 44.7, 22.5, 201 },
+								["races"] = ALLIANCE_ONLY,
+								["qg"] = 39887,	-- Captain Taylor
 							}),
 							q(27729, {	-- Once More, With Eeling
 								["qgs"] = {

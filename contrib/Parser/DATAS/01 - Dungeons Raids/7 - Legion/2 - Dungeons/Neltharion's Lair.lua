@@ -57,16 +57,15 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			n(-17, {	-- Quests
-				o(250548, {	-- The Hammer of Khaz'goroth
-					q(42454, {	-- The Hammer of Khaz'goroth
-						["sourceQuest"] = 39781,	-- Neltharion's Lair: Death to the Underking
-						["g"] = {
-							i(141007),	-- Earthguard Handwraps
-							i(141008),	-- Earthguard Grips
-							i(141009),	-- Earthguard Gloves
-							i(141010),	-- Earthguard Gauntlets
-						},
-					}),
+				q(42454, {	-- The Hammer of Khaz'goroth
+					["sourceQuests"] = { 39781 },	-- Neltharion's Lair: Death to the Underking
+					["icon"] = "Interface\\Icons\\inv_mace_1h_titanpillar_b_01",
+					["g"] = {
+						i(141007),	-- Earthguard Handwraps
+						i(141008),	-- Earthguard Grips
+						i(141009),	-- Earthguard Gloves
+						i(141010),	-- Earthguard Gauntlets
+					},
 				}),
 			}),
 			d(1,  {		-- Normal

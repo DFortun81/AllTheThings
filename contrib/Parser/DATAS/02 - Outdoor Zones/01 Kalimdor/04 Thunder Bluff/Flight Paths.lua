@@ -3,25 +3,18 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Kalimdor
-		["mapID"] = 12,	-- Kalimdor
-		["g"] = {
-			{	-- Thunder Bluff
-				["mapID"] = 88,
-				["g"] = {
-					{	-- Flight Paths
-						["npcID"] = -228,	-- Flight Paths
-						["g"] = {
-							{	-- Thunder Bluff, Mulgore
-								["flightPathID"] = 22,	-- Thunder Bluff, Mulgore
-								["coords"] = {
-									{ 47.06, 49.59, 88 },
-								},
-							},
-						},
+	m(12, {	-- Kalimdor
+		m(88, {	-- Thunder Bluff
+			["groups"] = {
+				n(-228, {	-- Flight Paths
+					["groups"] = {
+						fp(22, {	-- Thunder Bluff, Mulgore
+							["coord"] = { 47.06, 49.59, 88 },
+							["races"] = HORDE_ONLY,
+						}),
 					},
-				},
+				}),
 			},
-		},
-	},
+		}),
+	}),
 };

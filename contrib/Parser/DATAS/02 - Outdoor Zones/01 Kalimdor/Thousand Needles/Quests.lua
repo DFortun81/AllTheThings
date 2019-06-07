@@ -243,22 +243,24 @@ _.Zones =
 							i(63616),	-- Pozzik's Vest
 						},
 					},
-					{	-- Do Me a Favor?
+					{	-- Do Me a Favor? (A)
 						["questID"] = 25504,
 						["qg"] = 40027,	-- Fizzle Brassbolts
+						["coord"] = { 75.9, 74.6, 64 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25488,	-- Two if By Boat
 					},
-					{	-- Do Me a Favor?
+					{	-- Do Me a Favor? (H)
 						["questID"] = 25505,
 						["qg"] = 40028,	-- Pozzik
 						["coord"] = { 75.9, 74.6, 64 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25489,	-- Two if By Boat
 					},
-					{	-- Down in the Deeps
+					{	-- Down in the Deeps (A)
 						["questID"] = 25515,
 						["qg"] = 40475,	-- Jinky Twizzlefixxit
+						["coord"] = { 76.5, 73.6, 64 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 25504,	-- Do Me a Favor?
 						["groups"] = {
@@ -269,7 +271,7 @@ _.Zones =
 							i(131432),	-- Driver's Chain Bracers
 						},
 					},
-					{	-- Down in the Deeps
+					{	-- Down in the Deeps (H)
 						["questID"] = 25516,
 						["qg"] = 40487,	-- Razzeric
 						["coord"] = { 77.1, 74.4, 64 },
@@ -748,13 +750,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25596,	-- Where's Synge?
 					},
-					{	-- Tanaris is Calling
+					{	-- Tanaris is Calling (A)
 						["questID"] = 27446,
 						["qg"] = 40027,	-- Fizzle Brassbolts
+						["coord"] = { 75.9, 74.6, 64 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					},
-					{	-- Tanaris is Calling
+					{	-- Tanaris is Calling (H)
 						["questID"] = 27447,
 						["qg"] = 40028,	-- Pozzik
 						["coord"] = { 75.9, 74.6, 64 },

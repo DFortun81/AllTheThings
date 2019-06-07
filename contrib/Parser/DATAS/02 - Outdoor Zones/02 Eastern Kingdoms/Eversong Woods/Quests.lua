@@ -145,13 +145,12 @@ _.Zones =
 						["coord"] = { 30.2, 58.3, 94 },
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Fly to Silvermoon City
-						["questID"] = 9133,
+					q(9133, {	-- Fly to Silvermoon City
 						["qg"] = 44036,	-- Skymaster Brightdawn
 						["coord"] = { 43.9, 69.9, 94 },
-						["races"] = { 10 },	-- Blood Elf
 						["sourceQuest"] = 9130,	-- Goods from Silvermoon City
-					},
+						["races"] = { 10 },	-- Blood Elf
+					}),
 					{	-- Goods from Silvermoon City
 						["questID"] = 9130,
 						["qg"] = 16261,	-- Sathiel
@@ -276,13 +275,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 8488,	-- Unexpected Results
 					},
-					{	-- Return to Sathiel
-						["questID"] = 9135,
+					q(9135, {	-- Return to Sathiel
 						["qg"] = 16192,	-- Skymistress Gloaming
 						["coord"] = { 54.3, 50.7, 94 },
-						["races"] = { 10 },	-- Blood Elf
 						["sourceQuest"] = 9134,	-- Skymistress Gloaming
-					},
+						["races"] = { 10 },	-- Blood Elf
+					}),
 					{	-- Roadside Ambush
 						["questID"] = 9035,
 						["qg"] = 15941,	-- Apprentice Ralen

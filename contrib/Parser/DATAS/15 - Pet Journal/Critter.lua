@@ -57,7 +57,7 @@ _.PetJournal =
 		p(2395),	-- Glutted Bleeder
 		p(430),		-- Gold Beetle
 		p(2387),	-- Golden Beetle
-		p(170),		-- Golden Pig
+		un(3, p(170)),	-- Golden Pig
 		p(733),		-- Grassland Hopper
 		p(443),		-- Grasslands Cottontail
 		p(647),		-- Grizzly Squirrel
@@ -124,7 +124,7 @@ _.PetJournal =
 		p(493),		-- Shimmershell Snail
 		p(677),		-- Shy Bandicoon
 		p(568),		-- Silkbead Snail
-		p(171),		-- Silver Pig
+		un(3, p(171)),	-- Silver Pig
 		p(820),		-- Singing Cricket
 		p(397),		-- Skunk
 		p(2063),	-- Sneaky Marmot

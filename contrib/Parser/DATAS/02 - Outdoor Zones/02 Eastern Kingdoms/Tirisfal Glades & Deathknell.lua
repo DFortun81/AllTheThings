@@ -314,7 +314,8 @@ _.Zones =
 					}),
 					q(6323, {	-- Ride to the Undercity
 						["qg"] = 43124,	-- Anette Williams
-						["sourceQuests"] = { 6321 },	-- Supplying Brill
+						["coord"] = { 58.8, 51.8, 18 },
+						["sourceQuest"] = 6321,	-- Supplying Brill
 						["races"] = { 5 },	-- Undead
 					}),
 					qh(25005, {	-- Speak with Sevren
@@ -326,6 +327,7 @@ _.Zones =
 					}),
 					q(6321, {	-- Supplying Brill
 						["qg"] = 1745,	-- Deathguard Morris
+						["coord"] = { 60.2, 52.4, 18 },
 						["races"] = { 5 },	-- Undead
 					}),
 					qh(25012, {	-- Take to the Skies
@@ -664,14 +666,14 @@ _.Zones =
 				n(-40, {	-- Legacy
 					["g"] = {
 						n(-17, {	-- Quests (Legacy)
-							un(40, qh(5650, {	-- Garments of Darkness
+							un(40, q(5650, {	-- Garments of Darkness
+								["races"] =  { 5 },	-- Undead
+								["classes"] = { 5 },	-- Priest
 								["g"] = {
 									un(2, i(16607)),	-- Garments of Darkness
 								},
-								["races"] =  { 5 },	-- Undead
-								["classes"] = { 5 },	-- Priest
 							})),
-							un(40, qh(1822, {	-- Heirloom Weapon
+							un(40, q(1822, {	-- Heirloom Weapon
 								["g"] = {
 									un(2, i(7115)),	-- Heirloom Axe
 									un(2, i(7117)),	-- Heirloom Hammer
@@ -720,11 +722,11 @@ _.Zones =
 								["qg"] = 49044,	-- Agatha
 								["races"] = { 5 },	-- undead
 							}),
-							qh(24965, {	-- Magic Training
+							q(24965, {	-- Magic Training
 								["qg"] = 2124,	-- Isabella
 								["sourceQuests"] = { 3098 },	-- Glyphic Scroll
-								["classes"] = { 8 },	-- mage
-								["races"] = { 5 },	-- undead
+								["classes"] = { 8 },	-- Mage
+								["races"] = { 5 },	-- Undead
 							}),
 							qh(24973, {	-- Night Web's Hollow
 								["qg"] = 1570,	-- Executor Arren

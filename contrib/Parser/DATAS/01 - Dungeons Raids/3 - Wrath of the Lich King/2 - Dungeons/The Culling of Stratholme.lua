@@ -8,8 +8,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 130,
 		["maps"] = { 131 },
 		["coords"] = {
+			{ 56.9, 82.4, 75 },	-- dungeon entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 56.9, 82.4, 75 },	-- actual dungeon entrance
 		},
 		["groups"] = {
 			n(-17, {	-- Quests

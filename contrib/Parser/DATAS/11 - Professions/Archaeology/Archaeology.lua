@@ -56,6 +56,7 @@ profession(794, {	-- Archaeology
 		n(-161, {	-- Toys
 			sp(90983, { i(64456) }),	-- Arrival of the Naaru
 		}),
+		sp(90984, { i(64457) }),	-- The Last Relic of Argus
 	}),
 	currency(821,  {	-- Draenor Clans
 		n(-318, {	-- Armor
@@ -71,6 +72,9 @@ profession(794, {	-- Archaeology
 		}),
 		n(-161, {	-- Toys
 			sp(273852, { i(160751) }),	-- Dance of the Dead
+		}),
+		n(-386, {	-- Trinket
+			sp(273855, { i(160833) }),	-- Fetish of the Tormented Mind
 		}),
 		sp(273851, {	-- Soul Coffer (Spell #273851)
 			i(160741),	-- Soul Coffer
@@ -174,6 +178,9 @@ profession(794, {	-- Archaeology
 		n(-161, {	-- Toys
 			sp(113993, { i(89614) }),	-- Anatomical Dummy
 		}),
+		n(-386, {	-- Trinket
+			sp(113992, { i(89611) }),	-- Quilen Statuette
+		}),
 	}),
 	currency(400,  {	-- Nerubian
 		n(-161, {	-- Toys
@@ -199,6 +206,9 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(828,  {	-- Ogre
+		n(-384, {	-- Neck
+			sp(168319, { i(117385) }),	-- Sorcerer-King Toe Ring
+		}),
 		n(-319, {	-- Weapon
 			sp(168320, { i(117384) }),	-- Warmaul of the Warmaul Chieftain
 		}),
@@ -235,6 +245,9 @@ profession(794, {	-- Archaeology
 		}),
 		n(-161, {	-- Toys
 			sp(92145, { i(64881) }),	-- Pendant of the Scarab Storm
+		}),
+		n(-385, {	-- Finger
+			sp(92168, { i(64904) }),	-- Ring of the Boy Emperor
 		}),
 		n(-319, {	-- Weapons
 			sp(92163, { i(64885) }),	-- Scimitar of the Sirocco

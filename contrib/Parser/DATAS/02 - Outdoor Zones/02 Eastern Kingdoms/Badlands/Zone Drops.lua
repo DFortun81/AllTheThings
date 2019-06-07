@@ -21,11 +21,8 @@ _.Zones =
 							4844,	-- Shadowforge Surveyor
 						},
 					}),
-					i(2621, {	-- Cowl of Necromancy
-						["u"] = 7,
-						["crs"] = {
-							2740,	-- Shadowforge Darkweaver
-						},
+					n(2740, {	-- Shadowforge Darkweaver	-- Coded this way to put the red text on item.
+						un(7, i(2621)), 	-- Cowl of Necromancy
 					}),
 					i(9386, {	-- Excavator's Brand
 						["crs"] = {

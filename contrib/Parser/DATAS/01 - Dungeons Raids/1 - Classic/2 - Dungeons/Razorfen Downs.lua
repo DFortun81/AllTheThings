@@ -3,85 +3,78 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(233, { 	-- Razorfen Downs
-		["lvl"] = 35,
+	inst(233, {	-- Razorfen Downs
+		["coord"] = { 43.5, 25.2, 64 },	-- Razorfen Downs
 		["mapID"] = 300,
-		["coord"] = { 53.24, 71.17, 12 },	-- Razorfen Downs, Kalimdor [Southern Barrens]
-		["groups"] = {
-			n(-17, {			-- Quests
-				{	-- Blackthorn's Lieutenants
-					["questID"] = 33513,	-- Blackthorn's Lieutenants
-					["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
-				},
-				{	-- Bring the End
-					["questID"] = 3341,	-- Bring the End
-					["qg"] = 2308,	-- Andrew Brownell
+		["lvl"] = 35,
+		["g"] = {
+			n(-17, {	-- Quests
+				q(33513, {	-- Blackthorn's Lieutenants
+					["qgs"] = {
+						74367,	-- Koristrasza
+						74888,	-- Koristrasza
+					},
+				}),
+				q(3341,  {	-- Bring the End
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["qg"] = 2308,	-- Andrew Brownell
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						{	-- Vanquisher's Sword
-							["itemID"] = 10823,	-- Vanquisher's Sword
-							["u"] = 2,
-						},
-						{	-- Amberglow Talisman
-							["itemID"] = 10824,	-- Amberglow Talisman
-							["u"] = 2,
-						},
+						un(2, i(10823)),	-- Vanquisher's Sword
+						un(2, i(10824)),	-- Amberglow Talisman
 					},
-				},
-				{	-- Bring the Light
-					["questID"] = 3636,	-- Bring the Light
-					["qg"] = 1284,	-- Archbishop Benedictus
+				}),
+				q(3636,  {	-- Bring the Light
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["qg"] = 1284,	-- Archbishop Benedictus
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						{	-- Vanquisher's Sword
-							["itemID"] = 10823,	-- Vanquisher's Sword
-							["u"] = 2,
-						},
-						{	-- Amberglow Talisman
-							["itemID"] = 10824,	-- Amberglow Talisman
-							["u"] = 2,
-						},
+						un(2, i(10823)),	-- Vanquisher's Sword
+						un(2, i(10824)),	-- Amberglow Talisman
 					},
-				},
-				{	-- Extinguishing the Idol
-					["questID"] = 27022,	-- Extinguishing the Idol
-					["qg"] = 8516,	-- Belnistrasz
+				}),
+				q(27022, {	-- Extinguishing the Idol
 					["sourceQuests"] = { 27019 },	-- Scourge of the Downs
-					["u"] = 40,
-					["g"] = {
-						{	-- Dragonclaw Ring
-							["itemID"] = 10710,	-- Dragonclaw Ring
-							["u"] = 2,
-						},
-					},
-				},
-				{	-- Scourge of the Downs
-					["questID"] = 27019,	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
-					["u"] = 40,
-				},
-				{	-- The Ritual
-					["questID"] = 33514,	-- The Ritual
-					["qgs"] = { 74367, 74888 },	-- Koristrasza (same NPC, different IDs)
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						{	-- Belt of Tyrannic Rule
-							["itemID"] = 65996,	-- Belt of Tyrannic Rule
-						},
-						{	-- Chestguard of Redemption
-							["itemID"] = 65975,	-- Chestguard of Redemption
-						},
-						{	-- Coldbringer's Leggings
-							["itemID"] = 65926,	-- Coldbringer's Leggings
-						},
-						{	-- Razorfen Spaulders
-							["itemID"] = 65951,	-- Razorfen Spaulders
-						},
+						un(2, i(10710)),	-- Dragonclaw Ring
 					},
-				},
+				}),
+				q(27024, {	-- Partners in Crime
+					["qg"] = 44837,	-- Koristrasza
+					["u"] = 40,
+				}),
+				q(27019, {	-- Scourge of the Downs
+					["qg"] = 8516,	-- Belnistrasz
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(27009, {	-- The Coldbringer
+					["qg"] = 44837,	-- Koristrasza
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						i(65996),	-- Belt of Tyrannic Rule
+						i(65975),	-- Chestguard of Redemption
+						i(65951),	-- Razorfen Spaulders
+						i(65926),	-- Coldbringer's Leggings
+						i(66009),	-- Koristrasza's Amulet
+					},
+				}),
+				q(33514, {	-- The Ritual
+					["qgs"] = {
+						74367,	-- Koristrasza
+						74888,	-- Koristrasza
+					},
+					["g"] = {
+						i(65996),	-- Belt of Tyrannic Rule
+						i(65975),	-- Chestguard of Redemption
+						i(65926),	-- Coldbringer's Leggings
+						i(65951),	-- Razorfen Spaulders
+						i(66009),	-- Koristrasza's Amulet
+					},
+				}),
 			}),
-			n(0, {				-- Zone Drop
+			n(0,   {	-- Zone Drop
 				i(10573, {	-- Boneslasher
 					["crs"] = {
 						74947,	-- Boneflayer Ghoul
@@ -175,72 +168,83 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(74412, e(1142, {	-- Aarux
-				i(10776),	-- Silky Spider Cape
-				i(10775),	-- Carapace of Tuten'kash
-				i(10777),	-- Arachnid Gloves
-			})),
-			n(8696, {		-- Henry Stern
-				["u"] = 43,
-				["groups"] = {
-					un(2, recipe(13028, {	-- Goldthorn Tea
-						["description"] = "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, take the recipe off the list, or give us another way to obtain it.",
-					})),
+			e(1142,  {	-- Aarux
+				["crs"] = { 74412 },	-- Aarux
+				["g"] = {
+					i(10776),	-- Silky Spider Cape
+					i(10775),	-- Carapace of Tuten'kash
+					i(10777),	-- Arachnid Gloves
 				},
 			}),
-			n(75813, {			-- Sah'rhee
-				["coords"] = {
-					{ 80.0, 26.0, 300 },	-- The Murder Pens
-				},
+			n(75813, {	-- Sah'rhee
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss.",
-				["groups"] = {
+				["coord"] = { 80.0, 26.0, 300 },	-- The Murder Pens
+				["crs"] = { 75329 },	-- Sah'rhee (prior to clicking)
+				["g"] = {
 					i(10766),	-- Plaguerot Sprig
 					i(10768),	-- Boar Champion's Belt
 					i(10767),	-- Savage Boar's Guard
 					i(10758),	-- X'caliboar
 					i(10760),	-- Swine Fists
+					i(151454),	-- Splinterbone Sabatons
 				},
 			}),
-			cr(74347, e(433, {	-- Mordresh Fire Eye
-				i(10770),	-- Mordresh's Lifeless Skull
-				i(10769),	-- Glowing Eye of Mordresh
-				i(10771),	-- Deathmage Sash
-			})),
-			cr(74435, e(1143, {	-- Mushlump
-				i(10772),	-- Glutton's Cleaver
-				i(10774),	-- Fleshhide Shoulders
-				i(151453),	-- Grungy Necromantic Ring
-			})),
-			cr(74875, e(1146, {	-- Death Speaker Blackthorn
-				i(10758),	-- X'caliboar
-				i(10766),	-- Plaguerot Sprig
-				i(10767),	-- Savage Boar's Guard
-				i(10760),	-- Swine Fists
-				i(10768),	-- Boar Champion's Belt
-				i(151454),	-- Splinterbone Sabatons
-			})),
-			cr(74434, e(1141, {	-- Amnennar the Coldbringer
-				ach(636),	-- Razorfen Downs
-				i(10761),	-- Coldrage Dagger
-				i(10763),	-- Icemetal Barbute
-				i(10764),	-- Deathchill Armor
-				i(10762),	-- Robes of the Lich
-				i(10765),	-- Bonefingers
-			})),
-			{	-- Lady Falther'ess
-				["npcID"] = 14686,	-- Lady Falther'ess
-				["u"] = 43,
+			e(433,   {	-- Mordresh Fire Eye
+				["crs"] = { 74347 },	-- Mordresh Fire Eye
 				["g"] = {
-					{	-- Lady Falther'ess' Finger
-						["itemID"] = 23177,	-- Lady Falther'ess' Finger
-						["u"] = 2,
-					},
-					{	-- Mantle of Lady Falther'ess
-						["itemID"] = 23178,	-- Mantle of Lady Falther'ess
-						["u"] = 2,
-					},
+					i(10770),	-- Mordresh's Lifeless Skull
+					i(10769),	-- Glowing Eye of Mordresh
+					i(10771),	-- Deathmage Sash
 				},
-			},
+			}),
+			e(1143,  {	-- Mushlump
+				["crs"] = { 74435 },	-- Mushlump
+				["g"] = {
+					i(10772),	-- Glutton's Cleaver
+					i(10774),	-- Fleshhide Shoulders
+					i(151453),	-- Grungy Necromantic Ring
+				},
+			}),
+			e(1146,  {	-- Death Speaker Blackthorn
+				["crs"] = { 74875 },	-- Death Speaker Blackthorn
+				["g"] = {
+					i(10758),	-- X'caliboar
+					i(10766),	-- Plaguerot Sprig
+					i(10767),	-- Savage Boar's Guard
+					i(10760),	-- Swine Fists
+					i(10768),	-- Boar Champion's Belt
+					i(151454),	-- Splinterbone Sabatons
+				},
+			}),
+			e(1141,  {	-- Amnennar the Coldbringer
+				["crs"] = { 
+					74876,	-- Amnennar's Phylactery
+					74434,	-- Amnennar the Coldbringer
+				},
+				["g"] = {
+					ach(636),	-- Razorfen Downs
+					i(10761),	-- Coldrage Dagger
+					i(10763),	-- Icemetal Barbute
+					i(10764),	-- Deathchill Armor
+					i(10762),	-- Robes of the Lich
+					i(10765),	-- Bonefingers
+				},
+			}),
+			n(8696,  {	-- Henry Stern
+				["u"] = 43,	-- Removed NPCs
+				["g"] = {
+					un(2, recipe(13028, {	-- Goldthorn Tea
+						["description"] = "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
+					})),
+				},
+			}),
+			n(14686, {	-- Lady Falther'ess
+				["u"] = 43,	-- Removed NPCs
+				["g"] = {
+					un(2, i(23177)),	-- Lady Falther'ess' Finger
+					un(2, i(23178)),	-- Mantle of Lady Falther'ess
+				},
+			}),
 		},
 	}),
 })};

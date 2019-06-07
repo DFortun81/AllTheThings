@@ -7,11 +7,11 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 39,
 		["mapID"] = 219,
 		["coord"] = { 39.21, 21.29, 71 },	-- Zul'Farrak, Tanaris
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(27070, {	-- A Fool's Errand
 					["qg"] = 7407,	-- Chief Engineer Bildewhizzle
-					["groups"] = {
+					["g"] = {
 						i(65954),	-- Belt of the Deep
 						i(65929),	-- Bildewhizzle's Armbands
 						i(65978),	-- Electrified Leggings
@@ -24,10 +24,18 @@ _.Instances = { tier(1, {	-- Classic
 				q(27068, {	-- Chief Ukorz Sandscalp
 					["qg"] = 40712,	-- Mazoga's Spirit
 					["sourceQuest"] = 25556,	-- Into Zul'Farrak
-					["groups"] = {
+					["g"] = {
 						i(65930),	-- Hands of Consequences
 						i(65955),	-- Mazoga's Boots
 						i(65979),	-- Staff of the Unknown Road
+					},
+				}),
+				q(2768, {	-- Divino-matic Rod
+					["u"] = 40,
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
+					["g"] = {
+						un(2, i(9534)),	-- Engineer's Guild Headpiece
+						un(2, i(9533)),	-- Masons Fraternity Ring
 					},
 				}),
 				q(27071, {	-- Wrath of the Sandfury
@@ -68,7 +76,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(10080, {			-- Sandarr Dunereaver
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {
+				["g"] = {
 					i(9512), 	-- Blackmetal Cape
 					i(9511), 	-- Bloodletter Scalpel
 					i(6440),	-- Brainlash
@@ -84,7 +92,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(10082, {			-- Zerillis
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {
+				["g"] = {
 					i(12470),	-- Sandstalker Ankleguards
 				},
 			}),
@@ -107,7 +115,7 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(10081, {			-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
-				["groups"] = {
+				["g"] = {
 					i(12471),	-- Desertwalker Cane
 				},
 			}),
@@ -136,14 +144,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(151455), 	-- Gahz'rilla Scale Cloak
 				i(9469), 	-- Gahz'rilla Scale Armor
 			})),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, q(2768, {	-- Divino-matic Rod
-						un(2, i(9534)),	-- Engineer's Guild Headpiece
-						un(2, i(9533)),	-- Masons Fraternity Ring
-					})),
-				}),
-			}),
 		},
 	}),
 })};

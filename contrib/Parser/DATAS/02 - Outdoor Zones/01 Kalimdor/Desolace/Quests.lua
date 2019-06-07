@@ -73,16 +73,45 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
 					},
-					{	-- Alliance Relations
-						["questID"] = 1436,
-						["u"] = 40,
+					q(1433, {	-- Alliance Relations					
 						["qg"] = 5641,	-- Takata Steelblade
+						["coord"] = { 52.6, 54.2, 66 },
+						["sourceQuest"] = 1432,	-- Alliance Relations
 						["races"] = HORDE_ONLY,
+						["lvl"] = 30,
+						["u"] = 40,
+					}),
+					q(1434, {	-- Befouled by Satyr
+						["qg"] = 5641,	-- Takata Steelblade
+						["coord"] = { 52.6, 54.2, 66 },
+						["sourceQuest"] = 1432,	-- Alliance Relations
+						["races"] = HORDE_ONLY,
+						["lvl"] = 30,
+						["u"] = 40,
+					}),	
+					q(1435, {	-- The Burning of Spirits
+						["qg"] = 4498,	-- Maurin Bonesplitter
+						["coord"] = { 52.2, 53.6, 66 },
+						["sourceQuest"] = 1432,	-- Alliance Relations
+						["races"] = HORDE_ONLY,
+						["lvl"] = 30,
+						["u"] = 40,
+					}),
+					q(1436, {	-- Alliance Relations
+						["qg"] = 5641,	-- Takata Steelblade
+						["coord"] = { 52.6, 54.2, 66 },
+						["sourceQuests"] = {
+							1434, 	-- Befouled by Satyr
+							1435,	-- The Burning of Spirits
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 30,
+						["u"] = 40,
 						["groups"] = {
 							un(2, i(6744)),	-- Gloves of Kapelan
 							un(2, i(6745)),	-- Swiftrunner Cape
 						},
-					},
+					}),
 					{	-- An Impactful Discovery
 						["questID"] = 14380,
 						["qg"] = 36329,	-- Thargad

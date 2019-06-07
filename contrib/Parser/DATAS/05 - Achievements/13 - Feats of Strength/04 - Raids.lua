@@ -75,9 +75,9 @@ _.Achievements =
 					ach(429, {				-- Sulfuras, Hand of Ragnaros
 						["classes"] = {1,2,6},
 					}),
-					ach(11387, {			-- The Chosen
-						title(347),			-- the Chosen
-					}),
+					un(2, ach(11387, {		-- The Chosen
+						un(39, title(347)),	-- the Chosen
+					})),
 					un(2, ach(2496)),		-- The Fifth Element
 					ach(725, {				-- Thori'dal, the Stars' Fury
 						["classes"] = {3},

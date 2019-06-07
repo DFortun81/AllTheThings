@@ -8,15 +8,16 @@ _.Zones =
 			n(-17, {	-- Quests
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					qa(27355, {	-- A Boon for the Powerful
+					q(27355, {	-- A Boon for the Powerful
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 9 },	-- Warlock
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 461,	-- Demisette Cloyce
 						["g"] = {
 							i(65496),	-- Staff of Justified Sins
 						},
-						["qg"] = 461,	-- Demisette Cloyce
-						["classes"] = { 9 },	-- Warlock
---						["sourceQuests"] = {  },	-- 
 					}),
-					q(27363,  {	-- A Budding Young Surgeon
+					q(27363, {	-- A Budding Young Surgeon
 					--	["sourceQuests"] = {  },	-- 
 						["classes"] = { 5 },	-- Priest
 						["races"] = { 7 },	-- Gnome
@@ -25,9 +26,10 @@ _.Zones =
 							i(65480),	-- Staff of the Technocrat
 						},
 					}),
-					qa(50239, {	-- A Choice of Allies
+					q(50239, {	-- A Choice of Allies
 						["coord"] = { 52.07, 13.43, 84 },
-						["qg"] = 126301,		-- Anduin Wyrnn
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 126301,	-- Anduin Wyrnn
 						["g"] = {
 							{	-- Dark Iron Dwaves
 								["achievementID"] = 12515,	-- Allied Races: Dark Iron Dwarf
@@ -255,118 +257,122 @@ _.Zones =
 							qa(49929),	-- The Call for Allies
 						},
 					}),
-					qa(28393, {	-- A Dangerous Alliance
+					q(28393, {	-- A Dangerous Alliance
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 1 },	-- Warrior
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 914,	-- Ander Germaine
 						["g"] = {
 							i(65618),	-- Faceguard of the Crown
 							i(65639),	-- Headguard of the Crown
 						},
-						["qg"] = 914,	-- Ander Germaine
-						["classes"] = { 1 },	-- Warrior
---						["sourceQuests"] = {  },	-- 
 					}),
-					qa(52946, {	-- A Dying World
-						["qg"] = 142930,	-- Halford Wyrmbane
+					q(52946, {	-- A Dying World
 						["sourceQuests"] = { 51795 },	-- The Battle for Lordaeron
-						["coord"] = { 27.7, 21.5 },
+						["coord"] = { 27.7, 21.5, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 142930,	-- Halford Wyrmbane
 					}),
---					qa(26190)),	-- A Fisherman's Feast
-					qa(27337, {	-- A Fitting Weapon
+--					qa(26190),	-- A Fisherman's Feast 
+					q(27337, {	-- A Fitting Weapon
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 1 },	-- Warrior
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 914,	-- Ander Germaine
 						["g"] = {
 							i(65492),	-- Broadsword of the Crown
 							i(65493),	-- Greatsword of the Crown
 						},
-						["qg"] = 914,	-- Ander Germaine
-						["classes"] = { 1 },	-- Warrior
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
-					qa(46268)),	-- A Found Memento
-					qa(29430)),	-- A Friend in Need
-					qa(24657)),	-- A Friendly Chat...
-					qa(24597)),	-- A Gift for the King of Stormwind
-					qa(46275)),	-- A Kingdom's Heart
-					qa(24428)),	-- A Most Puzzling Circumstance
-					q(31450)),	-- A New Fate
-					q(336)),	-- A Noble Brew
-					qa(335)),	-- A Noble Brew
-					q(24629)),	-- A Perfect Puff of Perfume
-					qa(47202)),	-- A Personal Message
-					qa(28825)),	-- A Personal Summons
-					qa(25154)),	-- A Present for Lila
+					qa(46275),	-- A Kingdom's Heart
+					q(336),		-- A Noble Brew
+					qa(335),	-- A Noble Brew
+					qa(47202),	-- A Personal Message
+					qa(25154),	-- A Present for Lila
 --]]
-					qa(27351, {	-- A Royal Reward
+					q(27351, {	-- A Royal Reward
+					--	["sourceQuests"] = {  },	-- 
+						["classes"] = { 4 },	-- Rogue
+						["races"] = ALLIANCE_ONLY,
+						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
 						["g"] = {
 							i(65486),	-- SI:7 Special Issue Dagger
 						},
-						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
-						["classes"] = { 4 },	-- Rogue
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
-					qa(38035)),	-- A Royal Summons
-					qa(29074)),	-- A Season for Celebration
-					qa(27225)),	-- A Summons from Ander Germaine
-					qa(32310)),	-- A Tale of Six Masters
-					qa(31917)),	-- A Tamer's Homecoming
-					qa(43323)),	-- A Time to Reflect
-					qa(171)),	-- A Warden of the Alliance
-					qa(44473)),	-- A Weapon of the Alliance
+					q(32310, {	-- A Tale of Six Masters
+						["classes"] = { 9 },	-- Warlock
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 90,
+					}),
+					q(44473, {	-- A Weapon of the Alliance
+						["classes"] = { 12 },	-- Demon Hunter
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 98,
+					}),
 --]]
 					qa(27344, {	-- A Well-Earned Reward
-						["qg"] = 44247,	-- Wulf Hansreim
 						["classes"] = { 3 },	-- Hunter
+						["qg"] = 44247,	-- Wulf Hansreim
 						["g"] = {
 							i(65465),	-- Crossbow of the Crown
 						},
 					}),
 --[[
-					qa(11451)),	-- Alicia's Poem
-					qa(27273, {	-- An Invitation from Moonglade
+					qa(11451),	-- Alicia's Poem
+					q(27273, {	-- An Invitation from Moonglade
+						["classes"] = { 11 },	-- Druid
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 44395,	-- 
-						["classes"] = {11},
 					}),
-COORDINATES			qa(27273, {	-- An Invitation from Moonglade
-						["qg"] = 5504,	-- 
-						["classes"] = {11},
+					q(325, {	-- Armed and Ready
+						["races"] = ALLIANCE_ONLY,
+						["u"] = 40,	-- Legacy Quests
 					}),
-					qa(325)),	-- Armed and Ready
-					qh(40976)),	-- Audience with the Warchief
-					qa(32008)),	-- Audrey Burnhep
-					qa(31966)),	-- Battle Pet Tamers: Cataclysm
-					qa(31902)),	-- Battle Pet Tamers: Eastern Kingdoms
-					qa(31889)),	-- Battle Pet Tamers: Kalimdor
-					qa(31927)),	-- Battle Pet Tamers: Northrend
-					qa(31919)),	-- Battle Pet Tamers: Outland
-					qa(31930)),	-- Battle Pet Tamers: Pandaria
-					qa(26488)),	-- Big Gulp
+					qa(26488),	-- Big Gulp
 --]]
-					qa(27353, {	-- Blessings of the Elements
-						["qg"] = 20407,	-- Farseer Umbrua
+					q(27353, {	-- Blessings of the Elements
+					--	["sourceQuests"] = {  },	-- 
 						["classes"] = { 7 },	-- Shaman
---						["sourceQuests"] = {  },	-- 
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 20407,	-- Farseer Umbrua
 						["g"] = {
 							i(65488),	-- Battleaxe of the Farseer
 							i(65489),	-- Spell Axe of the Farseer
 						},
 					}),
-					qa(29412, {	-- Blown Away
+					q(29412, {	-- Blown Away
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 54117,	-- Vin
 						["g"] = {
 							i(72042), 	-- Alliance Balloon (PET!)
 						},
 					}),
 --[[					
-					qa(29100),	-- Bwemba's Spirit
-					qa(14482),	-- Call of Duty
+					q(29100, {	-- Bwemba's Spirit
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 85,
+					}),
+					q(14482, {	-- Call of Duty
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 80,
+					}),
 					q(14446),	-- Cataclysm!
-					qa(46274),	-- Consoling the King
-					qa(26394),	-- Continue to Stormwind
-					qa(27272),	-- Demisette Sends Word
-					qa(44463),	-- Demons Among Them
+					q(46274, {	-- Consoling the King
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(44463, {	-- Demons Among Them
+						["classes"] = { 12 },	-- Demon Hunter
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 98
+					}),
 --]]
-					qa(40593, {	-- Demons Among Us
+					q(40593, {	-- Demons Among Us
 					--	["sourceQuests"] = {  },	-- 
 						["coord"] = { 85.2, 32.3, 84 },
+						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 98,
 						["qg"] = 100675,	-- Jace Darkweaver
 						["g"] = {
@@ -436,8 +442,9 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 					qa(26414),	-- Hitting a Walleye
 					qa(24849),	-- Hot On The Trail
 --]]
-					qa(53370, {	-- Hour of Reckoning
-						["coord"] = { 22.3, 32.3 },
+					q(53370, {	-- Hour of Reckoning
+						["description"] = "This quest is automatically offered when you reach level 110.",
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 144095,	-- Master Mathias Shaw
 						["g"] = {		
 							i(163542),	-- Footman's Warmace
@@ -498,8 +505,7 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 						["classes"] = { 8 },	-- Mage
 --						["sourceQuests"] = {  },	-- 
 					}),
-					--[[
-					qa(28258)),	-- Meet with Ander Germaine
+--[[				qa(28258)),	-- Meet with Ander Germaine
 					qa(28259)),	-- Meet with Demisette Cloyce
 					qa(28287)),	-- Meet with Farseer Umbrua
 					qa(28285)),	-- Meet with High Priestess Laurena
@@ -508,12 +514,15 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 					qa(28263)),	-- Meet with Maginor Dumas
 					qa(28260)),	-- Meet with Wulf Hansreim
 					qa(28295)),	-- Meetup with the Caravan
-					qa(29392)),	-- Missing Heirlooms
+]]--				qa(29392)),	-- Missing Heirlooms
 					q(28289, {	-- Moonglade Calls
-						["qg"] = 44395,	-- 
-						["classes"] = {11},
+						["qg"] = 44395,	-- Celestine of the Harvest
+						["coords"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
+						["isBreadcrumb"] = true,
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 50,
 					}),
-					qa(11924)),	-- More Torch Catching
+--[[				qa(11924)),	-- More Torch Catching
 					qa(11921)),	-- More Torch Tossing
 					qa(8860)),	-- New Year Celebrations!
 					qa(25105)),	-- Nibbler! No!
@@ -529,9 +538,7 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 					q(29067)),	-- Potion Master
 					qa(27240)),	-- Proof of Treachery
 					qa(40661)),	-- Protect the Home Front
-					q(32307)),	-- Reader for the Dead Tongue
---]]					
---[[					
+					q(32307)),	-- Reader for the Dead Tongue				
 					qa(26396)),	-- Return to Argus
 					qa(27241, {	-- Return to Jaina (add'l QG 29611)
 						["qg"] = 107574,	-- 
@@ -569,6 +576,14 @@ COORDINATES			qa(27273, {	-- An Invitation from Moonglade
 					qa(353),	-- Stormpike's Delivery
 					qa(1338),	-- Stormpike's Order
 					q(579),	-- Stormwind Library
+--]]
+					q(53500, {	-- Stranger in a Strange Land (Dark Iron Dwarf)
+						["sourceQuests"] = { 51486 },	-- For the Alliance
+						["coord"] = { 53.1, 15.4, 84 },
+						["races"] = { 34 },	-- Dark Iron Dwarf
+						["qg"] = 133362,	-- Ambassador Moorgard
+					}),
+--[[
 					q(11954),	-- Striking Back
 					q(11917),	-- Striking Back
 					q(11947),	-- Striking Back

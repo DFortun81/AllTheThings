@@ -16,6 +16,44 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["g"] = {
+				n(-4,   {	-- Achievements
+					ach(10698, {	-- That's Val'sharah Folks!
+						{	-- Criteria 1 — Archdruid of the Vale
+							["criteriaID"] = 1,	-- Archdruid of the Vale
+							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
+						},
+						{	-- Criteria 2 — Archdruid of the Claw
+							["criteriaID"] = 2,	-- Archdruid of the Claw
+							["sourceQuests"] = { 38147 },	-- Entangled Dreams
+						},
+						{	-- Criteria 3 — Archdruid of Lore
+							["criteriaID"] = 3,	-- Archdruid of Lore
+							["sourceQuests"] = {
+								38225,	-- Death to the Witchmother
+								38235,	-- Solid as a Rock
+							},
+						},
+						{	-- Criteria 4 — Into the Nightmare
+							["criteriaID"] = 4,	-- Into the Nightmare
+							["sourceQuests"] = { 38753 },	-- The Demon's Trail
+						},
+						{	-- Criteria 5 — All Nightmare Long
+							["criteriaID"] = 5,	-- All Nightmare Long
+							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						},
+						{	-- Criteria 6 — Bradensbrook
+							["criteriaID"] = 6,	-- Bradensbrook
+							["sourceQuests"] = { 38691 },	-- Jarod's Mission
+						},
+						{	-- Criteria 7 — Black Rook Hold
+							["criteriaID"] = 7,	-- Black Rook Hold
+							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
+						},
+					}),
+					ach(10877, {	-- Pillars of Creation
+						["sourceQuests"] = { 40890 },	-- The Tears of Elune
+					}),
+				}),
 				n(-169, {	-- Emissary Quess
 					q(42170, {	-- The Dreamweavers
 						["g"] = {
@@ -613,35 +651,6 @@ _.Zones =
 					}),	
 				}),
 				n(-38,  {	-- Profession
-					{	-- Blight-Choked Herb [Dreamleaf II]
-						["itemID"] = 129141,	-- Blight-Choked Herb
-						["questID"] = 40022,	-- Choked By Nightmare
-						["requireSkill"] = 182,	-- Herbalism
-						["sourceQuests"] = {
-							40021,	-- One Dead Plant is One Too Many
-						},
-					},
-					{	-- Blight-Twisted Herb [Dreamleaf III]
-						["itemID"] = 129136,	-- Blight-Twisted Herb
-						["questID"] = 40020,	-- Twisted to Death
-						["requireSkill"] = 182,	-- Herbalism
-						["sourceQuests"] = {
-							40019,	-- An Empathetic Herb
-						},
-					},
-					{	-- Dreamleaf Sample [Dreamleaf I]
-						["itemID"] = 129118,	-- Dreamleaf Sample
-						["questID"] = 40018,	-- Dreamleaf Sample
-						["requireSkill"] = 182,	-- Herbalism
-					},
-					{	-- Felwort Sample [Felwort I]
-						["itemID"] = 129122,	-- Felwort Sample
-						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
-						["g"] = {
-							recipe(193307),	-- Felwort [Rank 1]
-						},
-					},
 					prof(171, {	-- Alchemy
 						q(39338, {	-- Return the Filter
 							["qg"] = 93974,	-- Leyweaver Erenyi
@@ -876,45 +885,47 @@ _.Zones =
 						}),
 						i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 					}),
-				}),
-				n(-17,  {	-- Quests
-					ach(10698, {	-- That's Val'sharah Folks!
-						{	-- Criteria 1 — Archdruid of the Vale
-							["criteriaID"] = 1,	-- Archdruid of the Vale
-							["sourceQuests"] = { 40573 },	-- The Nightmare Lord
-						},
-						{	-- Criteria 2 — Archdruid of the Claw
-							["criteriaID"] = 2,	-- Archdruid of the Claw
-							["sourceQuests"] = { 38147 },	-- Entangled Dreams
-						},
-						{	-- Criteria 3 — Archdruid of Lore
-							["criteriaID"] = 3,	-- Archdruid of Lore
+					prof(182, {	-- Herbalism
+						{	-- Blight-Choked Herb [Dreamleaf II]
+							["itemID"] = 129141,	-- Blight-Choked Herb
+							["questID"] = 40022,	-- Choked By Nightmare
+							["requireSkill"] = 182,	-- Herbalism
 							["sourceQuests"] = {
-								38225,	-- Death to the Witchmother
-								38235,	-- Solid as a Rock
+								40021,	-- One Dead Plant is One Too Many
 							},
 						},
-						{	-- Criteria 4 — Into the Nightmare
-							["criteriaID"] = 4,	-- Into the Nightmare
-							["sourceQuests"] = { 38753 },	-- The Demon's Trail
+						{	-- Blight-Twisted Herb [Dreamleaf III]
+							["itemID"] = 129136,	-- Blight-Twisted Herb
+							["questID"] = 40020,	-- Twisted to Death
+							["requireSkill"] = 182,	-- Herbalism
+							["sourceQuests"] = {
+								40019,	-- An Empathetic Herb
+							},
 						},
-						{	-- Criteria 5 — All Nightmare Long
-							["criteriaID"] = 5,	-- All Nightmare Long
-							["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
+						{	-- Dreamleaf Sample [Dreamleaf I]
+							["itemID"] = 129118,	-- Dreamleaf Sample
+							["questID"] = 40018,	-- Dreamleaf Sample
+							["requireSkill"] = 182,	-- Herbalism
 						},
-						{	-- Criteria 6 — Bradensbrook
-							["criteriaID"] = 6,	-- Bradensbrook
-							["sourceQuests"] = { 38691 },	-- Jarod's Mission
-						},
-						{	-- Criteria 7 — Black Rook Hold
-							["criteriaID"] = 7,	-- Black Rook Hold
-							["sourceQuests"] = { 38721 },	-- Lieutenant of the Tower
+						{	-- Felwort Sample [Felwort I]
+							["itemID"] = 129122,	-- Felwort Sample
+							["questID"] = 40040,	-- Felwort Sample
+							["requireSkill"] = 182,	-- Herbalism
+							["g"] = {
+								recipe(193307),	-- Felwort [Rank 1]
+							},
 						},
 					}),
-					ach(10877, {	-- Pillars of Creation
-						["sourceQuests"] = { 40890 },	-- The Tears of Elune
-					}),  
-				--	QUESTS START HERE
+					prof(393, {	-- Skinning
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
+					}),
+				}),
+				n(-17,  {	-- Quests
 					q(38889,  {	-- Adopting the Adorable
 						["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 						["coord"] = { 53.0, 87.7, 641 },	-- cave entrance
@@ -1080,10 +1091,6 @@ _.Zones =
 							i(130021),	-- Swiftfeather Band
 						},
 					}),
-					q(39029,  {	-- Defend the Temple (bonus objective)
-						["sourceQuests"] = { 38641 },	-- The Temple of Elune
-						["coord"] = { 51.4, 56.9, 641 },
-					}),
 					q(39383,  {	-- Dishonored
 						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
 						["coord"] = { 60.9, 73.3, 641 },
@@ -1123,9 +1130,6 @@ _.Zones =
 							i(121575),	-- Thornbrace Chainmail
 							i(121587),	-- Thornbrace Helm
 						},
-					}),
-					q(38842,  {	-- Faerie Fracas (bonus objective)
-						["coord"] = { 54.1, 83.4, 641 },
 					}),
 					q(38455,  {	-- Frenzied Furbolgs
 						["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
@@ -1278,10 +1282,6 @@ _.Zones =
 					q(42857,  {	-- Moist Around the Hedges
 						["coord"] = { 66.7, 75.7, 641 },
 					}),
-					q(39393,  {	-- Moonclaw Vale (bonus objective)
-						["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
-						["coord"] = { 62.9, 71.6, 641 },
-					}),
 					q(42751,  {	-- Moon Reaver
 						["sourceQuests"] = {
 							42750,	-- Dreamcatcher
@@ -1340,10 +1340,6 @@ _.Zones =
 						["sourceQuests"] = { 38641 },	-- The Temple of Elune
 						["coord"] = { 51.4, 56.9, 641 },
 						["qg"] = 92697,	-- Isoraen Nightstar
-					}),
-					q(38748,  {	-- Ruins of Shala'nir (bonus objective)
-						["sourceQuests"] = { 43702 },	-- Softening the Target
-						["coord"] = { 60.9, 35.6, 641 },
 					}),
 					q(39117,  {	-- Shriek No More
 						["sourceQuests"] = { 38643 },	-- A Village in Peril
@@ -1595,9 +1591,6 @@ _.Zones =
 						["sourceQuests"] = { 41054 },	-- Love Lost
 						["coord"] = { 69.5, 49.4, 641 },
 						["qg"] = 95117,	-- Aldos Duskwing
-					}),
-					q(38372,  {	-- Wretched Sisters (bonus objective)
-						["coord"] = { 45.1, 74.0, 641 },
 					}),
 				}),
 				n(-16,  {	-- Rares
@@ -2015,14 +2008,11 @@ _.Zones =
 						}),
 					},
 				}),
-				n(0,    {	-- Zone Drops
+				n(0,    {	-- Zone Drops (Need to change this to list crs individually because not all items drop from all of those mobs)
 					["g"] = {
 						i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
-						i(137729),	-- Technique: Codex of the Tranquil Mind
 						i(141043),	-- Technique: Glyph of Arachnophobia
 						i(141035),	-- Technique: Glyph of Fel Wings
-						i(141060),	-- Technique: Glyph of Pebbles
-						i(141054),	-- Technique: Glyph of Smolder
 						i(141032),	-- Technique: Glyph of the Chilled Shell
 						i(141039),	-- Technique: Glyph of the Doe
 						i(141049),	-- Technique: Glyph of the Hook

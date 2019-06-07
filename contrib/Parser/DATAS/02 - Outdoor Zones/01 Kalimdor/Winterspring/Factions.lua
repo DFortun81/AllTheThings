@@ -5,14 +5,15 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			["groups"] = {
-				faction(576, {		-- Timbermaw Hold
-					["groups"] = {
+			["g"] = {
+				faction(576, {	-- Timbermaw Hold
+					["creatureID"] = 11558,	-- Kernda
+					["g"] = {
 						{	-- Bearzerker
 							["questID"] = 28614,
 							["qg"] = 48722,	-- Burndl
 							["coord"] = { 65.3, 46.1, 83 },
-							["groups"] = {
+							["g"] = {
 								i(67216),	-- Firewater Amulet
 								i(67166),	-- Belt of Bloating
 								i(67183),	-- Bearzerker's Spaulders
@@ -35,7 +36,7 @@ _.Zones =
 							["qg"] = 11556,	-- Salfa
 							["coord"] = { 21.0, 46.1, 83 },
 							["sourceQuest"] = 28521,	-- Speak to Salfa
-							["groups"] = {
+							["g"] = {
 								i(21318),	-- Earth Warder's Gloves
 								i(21319),	-- Gloves of the Pathfinder
 								i(21320),	-- Vest of the Den Watcher
@@ -53,6 +54,7 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				faction(589, {	-- Wintersaber Trainers
+					["creatureID"] = 10618,	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						{	-- Get Them While They're Young
@@ -92,7 +94,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 							["sourceQuest"] = 29032,	-- Get Them While They're Young
-							["groups"] = {
+							["g"] = {
 								i(13086),	-- Reins of the Winterspring Frostsaber
 							},
 						},

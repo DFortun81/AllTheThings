@@ -41,6 +41,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(158313),	-- Legplates of Beaten Gold
 						i(155861),	-- Embellished Ritual Sabatons
 						i(158319),	-- My'das Talisman
+						i(168146),	-- Sphere of Sangaurum
 					}),
 				}),
 				e(2036, {	-- Vol'kaal
@@ -107,6 +108,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158313),	-- Legplates of Beaten Gold
 							i(155861),	-- Embellished Ritual Sabatons
 							i(158319),	-- My'das Talisman
+							i(168146),	-- Sphere of Sangaurum
 						},
 					}),
 					e(2036, {	-- Vol'kaal
@@ -180,6 +182,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(158313),	-- Legplates of Beaten Gold
 							i(155861),	-- Embellished Ritual Sabatons
 							i(158319),	-- My'das Talisman
+							i(168146),	-- Sphere of Sangaurum
 						},
 					}),
 					e(2036, {	-- Vol'kaal

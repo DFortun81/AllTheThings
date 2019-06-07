@@ -188,223 +188,229 @@ _.Zones =
 										}),
 									}),
 									n(-245, {	-- Mag'har Orc
-										q(53466, {	-- Vision of Time
-											["qg"] = 126066,	-- Eitrigg
-											["coord"] = { 37.8, 80.6, 85 },
-											["races"] = HORDE_ONLY,
-										}),
-										q(53467, {	-- Caverns of Time
-											["qg"] = 131443,	-- Chief Telemancer Oculeth 
-											["coord"] = { 67.0, 73.7, 1185 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53466,	-- Vision of Time
-										}),
-										q(53354, {	-- Echo of Gul'dan
-											["qg"] = 15192,	-- Anachronos
-											["coord"] = { 63.0, 57.2, 71 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53467,	-- Caverns of Time
-										}),
-										q(53353, {	-- Echo of Warlord Zaela
-											["qg"] = 143692,	-- Anachronos 
-											["coord"] = { 54.4, 50.2, 17 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53354,	-- Echo of Gul'dan
-										}),
-										q(53355, {	-- Echo of Garrosh Hellscream
-											["qg"] = 143692,	-- Anachronos 
-											["coord"] = { 68.8, 44.0, 379 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53353,	-- Echo of Warlord Zaela
-										}),	
-										q(52942, {	-- Restoring Old Bonds
-											["qg"] = 126066,	-- Eitrigg 
-											["coord"] = { 69.9, 69.4, 1185 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53355,	-- Echo of Garrosh Hellscream
-										}),
-										q(52943, {	-- Calling Out the Clans
-											["qg"] = 142422,	-- Eitrigg
-											["coord"] = { 44.8, 53.0, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52942,	-- Restoring Old Bonds
-										}),
-										q(52945, {	-- Bonds Forged Through Battle
-											["qg"] = 142275,	-- Grommash Hellscream
-											["coord"] = { 45.2, 52.0, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52943,	-- Calling Out the Clans
-										}),
-										q(52955, {	-- Tyranny of the Light
-											["qg"] = 137837,	-- Overlord Geya'rah
-											["coord"] = { 44.4, 71.4, 543 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52945,	-- Bonds Forged Through Battle
-										}),
-										q(51479, {	-- The Uncorrupted
-											["qg"] = 143845,	-- Overlord Geya'rah
-											["coord"] = { 41.2, 16.8, 1 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 52955,	-- Tyranny of the Light
-											["groups"] = {
-												ach(12518, {	-- Allied Races: Mag'har Orc
-													i(161330),	-- Mag'har Direwolf
-												}),
-											},
-										}),
-										-- Mag'har Orc Starter Quest
-										q(51485, {	-- For the Horde
-											["qg"] = 143845,	--  Overlord Geya'rah
-											["coord"] = { 70.6, 44.6, 85 },
-											["races"] = { 36 },	-- Mag'har Orc
-											["groups"] = {
-												i(161328),	-- Tabard of the Mag'har Clans
-												i(157028),	-- Letter from Lady Sylvannas
-											},
-										}),
-										q(53502, {	-- Stranger in a Strange Land
-											["qg"] = 133407,	-- Ambassador Blackguard
-											["coord"] = { 39.4, 79.2, 85 },
-											["sourceQuest"] = 51485,	-- For the Horde
-											["races"] = { 36 },	-- Mag'har Orc
-										}),
+										["lvl"] = 120,
+										["g"] = {
+											q(53466, {	-- Vision of Time
+												["qg"] = 126066,	-- Eitrigg
+												["coord"] = { 37.8, 80.6, 85 },
+												["races"] = HORDE_ONLY,
+											}),
+											q(53467, {	-- Caverns of Time
+												["qg"] = 131443,	-- Chief Telemancer Oculeth 
+												["coord"] = { 67.0, 73.7, 1185 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53466,	-- Vision of Time
+											}),
+											q(53354, {	-- Echo of Gul'dan
+												["qg"] = 15192,	-- Anachronos
+												["coord"] = { 63.0, 57.2, 71 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53467,	-- Caverns of Time
+											}),
+											q(53353, {	-- Echo of Warlord Zaela
+												["qg"] = 143692,	-- Anachronos 
+												["coord"] = { 54.4, 50.2, 17 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53354,	-- Echo of Gul'dan
+											}),
+											q(53355, {	-- Echo of Garrosh Hellscream
+												["qg"] = 143692,	-- Anachronos 
+												["coord"] = { 68.8, 44.0, 379 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53353,	-- Echo of Warlord Zaela
+											}),	
+											q(52942, {	-- Restoring Old Bonds
+												["qg"] = 126066,	-- Eitrigg 
+												["coord"] = { 69.9, 69.4, 1185 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53355,	-- Echo of Garrosh Hellscream
+											}),
+											q(52943, {	-- Calling Out the Clans
+												["qg"] = 142422,	-- Eitrigg
+												["coord"] = { 44.8, 53.0, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52942,	-- Restoring Old Bonds
+											}),
+											q(52945, {	-- Bonds Forged Through Battle
+												["qg"] = 142275,	-- Grommash Hellscream
+												["coord"] = { 45.2, 52.0, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52943,	-- Calling Out the Clans
+											}),
+											q(52955, {	-- Tyranny of the Light
+												["qg"] = 137837,	-- Overlord Geya'rah
+												["coord"] = { 44.4, 71.4, 543 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52945,	-- Bonds Forged Through Battle
+											}),
+											q(51479, {	-- The Uncorrupted
+												["qg"] = 143845,	-- Overlord Geya'rah
+												["coord"] = { 41.2, 16.8, 1 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 52955,	-- Tyranny of the Light
+												["groups"] = {
+													ach(12518, {	-- Allied Races: Mag'har Orc
+														i(161330),	-- Mag'har Direwolf
+													}),
+												},
+											}),
+											-- Mag'har Orc Starter Quest
+											q(51485, {	-- For the Horde
+												["qg"] = 143845,	--  Overlord Geya'rah
+												["coord"] = { 70.6, 44.6, 85 },
+												["races"] = { 36 },	-- Mag'har Orc
+												["groups"] = {
+													i(161328),	-- Tabard of the Mag'har Clans
+													i(157028),	-- Letter from Lady Sylvannas
+												},
+											}),
+											q(53502, {	-- Stranger in a Strange Land
+												["qg"] = 133407,	-- Ambassador Blackguard
+												["coord"] = { 39.4, 79.2, 85 },
+												["sourceQuest"] = 51485,	-- For the Horde
+												["races"] = { 36 },	-- Mag'har Orc
+											}),
+										},
 									}),
 									n(-251, {	-- Zandalari
-										q(53831, {	-- A Royal Occasion
-											["qg"] = 133519,	-- Rokhan
-											["coord"] = { 38.2, 81.4, 85 },
-											["races"] = HORDE_ONLY,
-										}),
-										q(53823, {	-- A Queen's Entourage
-											["qg"] = 145414,	-- Natal'hakata
-											["coord"] = { 48.6, 22.0, 1163 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53831,	-- A Royal Occasion
-										}),
-										q(53824, {	-- The Rite of Kings and Queens
-											["qg"] = 148096,	-- High Prelate Rata
-											["coord"] = { 42.57, 22.54, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53823,	-- A Queen's Entourage
-										}),
-										q(54419, {	-- Quelling the Masses
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.28, 12.45, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
-										}),
-										q(53826, {	-- The Instigator Among Us
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.28, 12.45, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
-										}),
-										q(54301, {	-- Talanji's Mercy
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 40.5, 11.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(54925, {	-- Heresy!
-											["qg"] = 148096,	-- High Prelate Rata
-											["coord"] = { 40.2, 11.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(54300, {	-- Breaking the Faith
-											["qg"] = 145360,	-- Zolani
-											["coord"] = { 40.5, 12.4, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54419,	-- Quelling the Masses
-												53826,	-- The Instigator Among Us
-											},
-										}),
-										q(53825, {	-- The New Zanchuli Council
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 40.6, 12.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuests"] = { 
-												54301,	-- Talanji's Mercy
-												54925,	-- Heresy!
-												54300,	-- Breaking the Faith
-											},
-										}),
-										q(53827, {	-- The Council Has Spoken
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 60.4, 38.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53825,	-- The New Zanchuli Council
-										}),
-										q(53828, {	-- Gaze of the Loa
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 60.4, 38.9, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53827,	-- The Council Has Spoken
-										}),
-										q(54031, {	-- Gaze of the Loa: Krag'wa
-											["qg"] = 146208,	-- Krag'wa the Huge
-											["coord"] = { 44.2, 15.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53828,	-- Gaze of the Loa
-										}),
-										q(54033, {	-- Gaze of the Loa: Gonk
-											["qg"] = 146208,	-- Krag'wa the Huge
-											["coord"] = { 44.2, 15.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54031,	-- Gaze of the Loa: Krag'wa
-										}),
-										q(54032, {	-- Gaze of the Loa: Pa'ku
-											["qg"] = 146214,	-- Gonk
-											["coord"] = { 46.5, 12.0, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54033,	-- Gaze of the Loa: Gonk
-										}),
-										q(54034, {	-- Gaze of the Loa: Bwonsamdi
-											["qg"] = 146209,	-- Pa'ku <Lord of Winds>
-											["coord"] = { 44.5, 8.8, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54032,	-- Gaze of the Loa: Pa'ku
-										}),
-										q(53830, {	-- Queen of the Zandalari
-											["qg"] = 145359,	-- Princess Talanji
-											["coord"] = { 42.7, 8.7, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 54034,	-- Gaze of the Loa: Bwonsamdi
-										}),
-										q(53719, {	-- Allegiance of the Zandalari
-											["qg"] = 146335,	-- Queen Talanji
-											["coord"] = { 42.4, 9.2, 1165 },
-											["races"] = HORDE_ONLY,
-											["sourceQuest"] = 53830,	-- Queen of the Zandalari
-											["groups"] = {
-												ach(13161, {	-- Allied Races: Zandalari Troll
-													i(157870),	-- Zandalari Direhorn
-												}),
-											},
-										}),
-										-- Zandalari Troll Starter Quest
-										q(55137, {	-- For the Horde
-											["qg"] = 146335,	--  Queen Talanji
-											["coord"] = { 42.2, 9.4, 1165 },
-											["races"] = { 31 },	-- Zandalari Troll
-											["groups"] = {
-												i(165001),	-- Tabard of the Zandalari
-												i(167169),	-- Letter from Lady Sylvannas
-											},
-										}),
-										q(55138, {	-- Stranger in a Strange Land
-											["qg"] = 133407,	-- Ambassador Blackguard
-											["coord"] = { 39.4, 79.2, 85 },
-											["races"] = { 31 },	-- Zandalari Troll
-											["sourceQuest"] = 55137,	-- For the Horde
-										}),
+										["lvl"] = 120,
+										["g"] = {
+											q(53831, {	-- A Royal Occasion
+												["qg"] = 133519,	-- Rokhan
+												["coord"] = { 38.2, 81.4, 85 },
+												["races"] = HORDE_ONLY,
+											}),
+											q(53823, {	-- A Queen's Entourage
+												["qg"] = 145414,	-- Natal'hakata
+												["coord"] = { 48.6, 22.0, 1163 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53831,	-- A Royal Occasion
+											}),
+											q(53824, {	-- The Rite of Kings and Queens
+												["qg"] = 148096,	-- High Prelate Rata
+												["coord"] = { 42.57, 22.54, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53823,	-- A Queen's Entourage
+											}),
+											q(54419, {	-- Quelling the Masses
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.28, 12.45, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+											}),
+											q(53826, {	-- The Instigator Among Us
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.28, 12.45, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53824,	-- The Rite of Kings and Queens
+											}),
+											q(54301, {	-- Talanji's Mercy
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 40.5, 11.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(54925, {	-- Heresy!
+												["qg"] = 148096,	-- High Prelate Rata
+												["coord"] = { 40.2, 11.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(54300, {	-- Breaking the Faith
+												["qg"] = 145360,	-- Zolani
+												["coord"] = { 40.5, 12.4, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54419,	-- Quelling the Masses
+													53826,	-- The Instigator Among Us
+												},
+											}),
+											q(53825, {	-- The New Zanchuli Council
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 40.6, 12.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuests"] = { 
+													54301,	-- Talanji's Mercy
+													54925,	-- Heresy!
+													54300,	-- Breaking the Faith
+												},
+											}),
+											q(53827, {	-- The Council Has Spoken
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 60.4, 38.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53825,	-- The New Zanchuli Council
+											}),
+											q(53828, {	-- Gaze of the Loa
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 60.4, 38.9, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53827,	-- The Council Has Spoken
+											}),
+											q(54031, {	-- Gaze of the Loa: Krag'wa
+												["qg"] = 146208,	-- Krag'wa the Huge
+												["coord"] = { 44.2, 15.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53828,	-- Gaze of the Loa
+											}),
+											q(54033, {	-- Gaze of the Loa: Gonk
+												["qg"] = 146208,	-- Krag'wa the Huge
+												["coord"] = { 44.2, 15.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54031,	-- Gaze of the Loa: Krag'wa
+											}),
+											q(54032, {	-- Gaze of the Loa: Pa'ku
+												["qg"] = 146214,	-- Gonk
+												["coord"] = { 46.5, 12.0, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54033,	-- Gaze of the Loa: Gonk
+											}),
+											q(54034, {	-- Gaze of the Loa: Bwonsamdi
+												["qg"] = 146209,	-- Pa'ku <Lord of Winds>
+												["coord"] = { 44.5, 8.8, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54032,	-- Gaze of the Loa: Pa'ku
+											}),
+											q(53830, {	-- Queen of the Zandalari
+												["qg"] = 145359,	-- Princess Talanji
+												["coord"] = { 42.7, 8.7, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 54034,	-- Gaze of the Loa: Bwonsamdi
+											}),
+											q(53719, {	-- Allegiance of the Zandalari
+												["qg"] = 146335,	-- Queen Talanji
+												["coord"] = { 42.4, 9.2, 1165 },
+												["races"] = HORDE_ONLY,
+												["sourceQuest"] = 53830,	-- Queen of the Zandalari
+												["groups"] = {
+													ach(13161, {	-- Allied Races: Zandalari Troll
+														i(157870),	-- Zandalari Direhorn
+													}),
+												},
+											}),
+											-- Zandalari Troll Starter Quest
+											q(55137, {	-- For the Horde
+												["qg"] = 146335,	--  Queen Talanji
+												["coord"] = { 42.2, 9.4, 1165 },
+												["races"] = { 31 },	-- Zandalari Troll
+												["groups"] = {
+													i(165001),	-- Tabard of the Zandalari
+													i(167169),	-- Letter from Lady Sylvannas
+												},
+											}),
+											q(55138, {	-- Stranger in a Strange Land
+												["qg"] = 133407,	-- Ambassador Blackguard
+												["coord"] = { 39.4, 79.2, 85 },
+												["races"] = { 31 },	-- Zandalari Troll
+												["sourceQuest"] = 55137,	-- For the Horde
+											}),
+										},
 									}),
 									{	-- The Call for Allies
 										["questID"] = 49930,
@@ -452,32 +458,20 @@ _.Zones =
 							i(65495),	-- Greataxe of the Horde
 						},
 					},
-					{	-- A Furious Catch
-						["questID"] = 26588,
-						["qg"] = 43239,	-- Razgar
-						["races"] = HORDE_ONLY,
-						["coord"] = { 65.7, 41.1, 85 },
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
-					{	-- A Golden Opportunity
-						["questID"] = 26572,
-						["qg"] = 43239,	-- Razgar
-						["races"] = HORDE_ONLY,
-						["coord"] = { 65.7, 41.1, 85 },
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
-					{	-- A Journey to Moonglade
-						["questID"] = 27283,
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid Only
-						["isBreadcrumb"] = true,
+					q(27283, {	-- A Journey to Moonglade
 						["qgs"] = {
-							44978,	-- Sesebi <Druid Trainer>
-							44726,	-- Shalla Whiteleaf <Druid Trainer>
+							44726,	-- Shalla Whiteleaf
+							44978,	-- Sesebi
 						},
-					},
+						["coords"] = {
+							{ 44.8, 51.6, 85 },	-- Shalla Whiteleaf (Orgrimmar)
+							{ 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
+						},
+						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 20,
+					}),
 					{	-- A Marksman's Weapon
 						["questID"] = 27395,
 						["qg"] = 3352,	-- Ormak Grimshot
@@ -522,14 +516,6 @@ _.Zones =
 							i(65481),	-- Staff of Golden Worship
 						},
 					},
-					{	-- A Staggering Effort
-						["questID"] = 26557,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.8, 40.8, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 129	-- Fishing
-					},
 					{	-- A Tale of Six Masters
 						["questID"] = 32309,
 						["qg"] = 88705,	-- Kranosh
@@ -566,229 +552,12 @@ _.Zones =
 						["qg"] = 54870,	-- General Nazgrim
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Allegiance to the Horde
-						["questID"] = 9627,
+					q(9627, {	-- Allegiance to the Horde
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["races"] = { 10 },	-- Blood Elf
-					},
-					{	-- Alliance Relations
-						["questID"] = 1431,
-						["u"] = 40,
-						["qg"] = 5639,	-- Craven Drok
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Alliance Relations
-						["questID"] = 1432,
-						["u"] = 40,
-						["qg"] = 5640,	-- Keldran
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 1431,	-- Alliance Relations
-					},
-					{	-- Alliance Relations
-						["questID"] = 1433,
-						["u"] = 40,
-						["qg"] = 5641,	-- Takata Steelblade
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 1432,	-- Alliance Relations
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8920,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
-							un(2, i(21996)),	-- Bracers of Heroism
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 10493,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
-							un(2, i(22088)),	-- Soulforge Bracers
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8914,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
-							un(2, i(22011)),	-- Beastmaster's Bindings
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8917,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							un(2, i(22004)),	-- Darkmantle Bracers 
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8916,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							un(2, i(22079)),	-- Virtuous Bracers
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8918,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
-							un(2, i(22095)),	-- Bindings of The Five Thunders
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8915,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 8 },	-- Mage
-						["groups"] = {
-							un(2, i(22063)),	-- Sorcerer's Bindings
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8919,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
-							un(2, i(22071)),	-- Deathmist Bracers
-						},
-					},
-					{	-- An Earnest Proposal
-						["questID"] = 8913,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
-						["groups"] = {
-							un(2, i(22108)),	-- Feralheart Bracers
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9022,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmon
-						["races"] = HORDE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
-							un(2, i(21995)),	-- Boots of Heroism
-							un(2, i(22000)),	-- Legplates of Heroism
-							un(2, i(22001)),	-- Spaulders of Heroism
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 10497,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
-							un(2, i(22087)),	-- Soulforge Boots
-							un(2, i(22092)),	-- Soulforge Legplates
-							un(2, i(22093)),	-- Soulforge Spaulders
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9017,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmon
-						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
-							un(2, i(22061)),	-- Beastmaster's Boots
-							un(2, i(22016)),	-- Beastmaster's Mantle
-							un(2, i(22017)),	-- Beastmaster's Pants
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9020,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							un(2, i(22003)),	-- Darkmantle Boots
-							un(2, i(22007)),	-- Darkmantle Pants
-							un(2, i(22008)),	-- Darkmantle Spaulders
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9019,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							un(2, i(22082)),	-- Virtuous Mantle
-							un(2, i(22084)),	-- Virtuous Sandals
-							un(2, i(22085)),	-- Virtuous Skirt
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 8957,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
-							un(2, i(22096)),	-- Boots of The Five Thunders
-							un(2, i(22100)),	-- Kilt of The Five Thunders.
-							un(2, i(22101)),	-- Pauldrons of The Five Thunders
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9018,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 8 },	-- Mage
-						["groups"] = {
-							un(2, i(22064)),	-- Sorcerer's Boots
-							un(2, i(22067)),	-- Sorcerer's Leggings
-							un(2, i(22068)),	-- Sorcerer's Mantle
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9021,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
-							un(2, i(22072)),	-- Deathmist Leggings
-							un(2, i(22073)),	-- Deathmist Mantle
-							un(2, i(22076)),	-- Deathmist Sandals
-						},
-					},
-					{	-- Anthion's Parting Words
-						["questID"] = 9016,
-						["u"] = 40,
-						["qg"] = 16016,	-- Anthion Harmor
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
-						["groups"] = {
-							un(2, i(22107)),	-- Feralheart Boots
-							un(2, i(22111)),	-- Feralheart Kilt
-							un(2, i(22112)),	-- Feralheart Spaulders
-						},
-					},
+						["coord"] = { 48.6, 71.0, 85 },
+						["sourceQuest"] = 9626,	-- Meeting the Orcs
+						["races"] = { 10 },	-- Blood Elf	
+					}),
 					{	-- Audience with the Warchief
 						["questID"] = 40976,
 						["qg"] = 97296,	-- Archmage Khadgar
@@ -872,36 +641,12 @@ _.Zones =
 							un(2, i(11871)),	-- Snarkshaw Spaulders
 						},
 					},
-					{	-- Careful, This Fruit Bites Back
-						["questID"] = 26227,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- Clammy Hands
-						["questID"] = 26543,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.7, 41.1, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
 					{	-- Could I get a Fishing Flier?
 						["questID"] = 8228,
 						["qg"] = 15116,	-- Grinkle
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 356,	-- Fishing
 						["isBreadcrumb"] = true,
-					},
-					{	-- Crawfish Creole
-						["questID"] = 26226,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
 					},
 					{	-- Jes'rimon's Payment to Jediga
 						["questID"] = 3563,
@@ -953,22 +698,6 @@ _.Zones =
 						["qg"] = 14720,	-- Eitrigg
 						["coord"] = { 49.2, 72.3, 85 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Even Thieves Get Hungry
-						["questID"] = 26235,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- Everything Is Better with Bacon
-						["questID"] = 26220,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
 					},
 					{	-- Flight to Razor Hill
 						["questID"] = 26804,
@@ -1082,105 +811,6 @@ _.Zones =
 							i(7982),	-- Plans: Barbaric Iron Gloves
 						},
 					},
-					{	-- Just Compensation
-						["questID"] = 8944,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
-							un(2, i(21994)), 	-- Belt of Heroism
-							un(2, i(21998)), 	-- Gauntlets of Heroism
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 10495,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
-							un(2, i(22086)), 	-- Soulforge Belt
-							un(2, i(22090)), 	-- Soulforge Gauntlets
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8938,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
-							un(2, i(22010)), 	-- Beastmaster's Belt
-							un(2, i(22015)), 	-- Beastmaster's Gloves
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8941,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							un(2, i(22002)), 	-- Darkmantle Belt
-							un(2, i(22006)), 	-- Darkmantle Gloves
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8940,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							un(2, i(22078)), 	-- Virtuous Belt 
-							un(2, i(22081)), 	-- Virtuous Gloves
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8942,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
-							un(2, i(22098)), 	-- Cord of The Five Thunders
-							un(2, i(22099)), 	-- Gauntlets of The Five Thunders
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8939,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 8 },	-- Mage
-						["groups"] = {
-							un(2, i(22062)), 	-- Sorcerer's Belt 
-							un(2, i(22066)), 	-- Sorcerer's Gloves
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8943,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
-							un(2, i(22070)), 	-- Deathmist Belt
-							un(2, i(22077)), 	-- Deathmist Wraps
-						},
-					},
-					{	-- Just Compensation
-						["questID"] = 8927,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
-						["groups"] = {
-							un(2, i(22106)), 	-- Feralheart Belt
-							un(2, i(22110)), 	-- Feralheart Gloves
-						},
-					},
 					{	-- Learn To Ride
 						["questID"] = 32673,
 						["description"] = "This quest is available to Goblins upon reaching level 20.",
@@ -1239,13 +869,13 @@ _.Zones =
 						["qg"] = 3144,	-- Eitrigg
 						["races"] = { 9 },	-- Goblin
 					},
-					{	-- Moonglade Calls
-						["questID"] = 28289,
+					q(28289, {	-- Moonglade Calls
 						["qg"] = 44978,	-- Sesebi
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
+						["coord"] = { 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
 						["isBreadcrumb"] = true,
-					},
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 50,
+					}),
 					{	-- Nibbler! No!
 						["questID"] = 25158,
 						["qg"] = 50482,	-- Marith Lazuria
@@ -1253,14 +883,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- No Dumping Allowed
-						["questID"] = 26556,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.7, 41.1, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
 					},
 					{	-- Nogg's Ring Redo
 						["questID"] = 2950,
@@ -1358,105 +980,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26294,	-- Weapons of Mass Dysfunction
 						["isBreadcrumb"] = true,
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9013,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
-							un(2, i(21997)),	-- Breastplate of Heroism
-							un(2, i(21999)),	-- Helm of Heroism
-						},
-					},
-					{	-- Saving the Best for Last 
-						["questID"] = 10499,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
-							un(2, i(22089)),	-- Soulforge Breastplate
-							un(2, i(22091)),	-- Soulforge Helm
-						},
-					},
-					{	-- Saving the Best for Last 
-						["questID"] = 9008,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
-							un(2, i(22013)),	-- Beastmaster's Cap 
-							un(2, i(22060)),	-- Beastmaster's Tunic
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9010,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							un(2, i(22005)),	-- Darkmantle Cap
-							un(2, i(22009)),	-- Darkmantle Tunic
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9009,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							un(2, i(22080)),	-- Virtuous Crown 
-							un(2, i(22083)),	-- Virtuous Robe
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9011,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
-							un(2, i(22097)),	-- Coif of The Five Thunders 
-							un(2, i(22102)),	-- Vest of The Five Thunders
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9014,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 8 },	-- Mage
-						["groups"] = {
-							un(2, i(22065)),	-- Sorcerer's Crown
-							un(2, i(22069)),	-- Sorcerer's Robes
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9012,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
-							un(2, i(22074)),	-- Deathmist Mask 
-							un(2, i(22075)),	-- Deathmist Robe
-						},
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9007,
-						["u"] = 40,
-						["qg"] = 16012,	-- Mokvar
-						["races"] = HORDE_ONLY,
-						["classes"] = { 11 },	-- Druid
-						["groups"] = {
-							un(2, i(22109)),	-- Feralheart Cowl 
-							un(2, i(22113)),	-- Feralheart Vest
-						},
 					},
 					{	-- Seeking the Soulstones
 						["questID"] = 32317,

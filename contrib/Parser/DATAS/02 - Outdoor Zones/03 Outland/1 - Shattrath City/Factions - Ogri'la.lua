@@ -3,35 +3,27 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Outland
-		["mapID"] = 101,	-- Outland
-		["g"] = {
-			{	-- Shattrath City
-				["mapID"] = 111,	-- Shattrath City
-				["g"] = {
-					{	-- Factions
-						["npcID"] = -6013,	-- Factions
-						["g"] = {
-							faction(1038, {	-- Ogri'la
-								["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
-								["g"] = {
-									q(10984, {	-- Speak with the Ogre
-										["qg"] = 22497,	-- V'eru
-										["coord"] = { 56.4, 49.2, 111 },
-										["isBreadcrumb"] = true,
-									}),
-									q(10983, {	-- Mog'dorg the Wizened
-										["qg"] = 22940,	-- Grok
-										["coord"] = { 65.0, 68.4, 111 },
-										["sourceQuest"] = 10984,	-- Speak with the Ogre
-										["isBreadcrumb"] = true,
-									}),
-								},
-							}),
-						},
+	m(101, {	-- Outland
+		m(111, {	-- Shattrath City
+			n(-6013, {	-- Factions
+				faction(1038, {	-- Ogri'la
+					["collectible"] = false,	-- Ogri'la isn't based in Shattrath, so shouldn't be collectible here.
+					["creatureID"] = 23428,	-- Jho'nass <Ogri'la Quartermaster>
+					["g"] = {
+						q(10984, {	-- Speak with the Ogre
+							["isBreadcrumb"] = true,
+							["coord"] = { 56.4, 49.2, 111 },
+							["qg"] = 22497,	-- V'eru
+						}),
+						q(10983, {	-- Mog'dorg the Wizened
+							["isBreadcrumb"] = true,
+							["sourceQuest"] = 10984,	-- Speak with the Ogre
+							["coord"] = { 65.0, 68.4, 111 },
+							["qg"] = 22940,	-- Grok
+						}),
 					},
-				},
-			},
-		},
-	},
+				}),
+			}),
+		}),
+	}),
 };

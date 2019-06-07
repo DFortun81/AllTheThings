@@ -18,49 +18,400 @@ _.Zones =
 			["g"] = {
 				n(-17, {	-- Quests
 					["g"] = {
-						h(ach(12555, {  -- Welcome to Zandalar
-							["sourceQuests"] = { 50769 },	-- Welcome to Zuldazar
-						})),
-						h(ach(11861, {	-- The Throne of Zuldazar
-							{	-- Criteria 2 — Port of Zuldazar
-								["criteriaID"] = 2,
-								["sourceQuests"] = { 50881 },	-- Royal Report
-							},
-							{	-- Criteria 6 — The Zanchuli Council
-								["criteriaID"] = 6,	-- The Zanchuli Council
-								["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-							},
-						})),
-						-- TO-DO Put in quests that are related to the city here later.  For now leave in main zone
-						h(ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
-							{	-- Criteria 1 — Deep in the Swamp
-								["criteriaID"] = 1,	-- Deep in the Swamp
-								["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
-							},
-						})),
 						ach(12478, {	-- Secrets of the Sands
-							["g"] = {
-								q(47513, {	-- Vol'dun
-									["description"] = "Picked up at the Scouting Map.",
-									["coord"] = { 41.8, 69.2 },
-								}),
-								q(47313, {	-- Discreet Discussions
-									["qg"] = 133050,	-- Princess Talanji
-									["coord"] = { 40.5, 66.9 },
-									["sourceQuests"] = { 47513 },	-- Vol'dun
-								}),
-								q(47314, {	-- Rumors of Exile
-									["qg"] = 122817,	-- Bladeguard Kaja
-									["coord"] = { 39.9, 70.6 },
-									["sourceQuests"] = { 47313 },	-- Discreet Discussions
-								}),
-								q(47315, {	-- Into the Dunes
-									["qg"] = 122320,	-- Bladeguard Kaja
-									["coord"] = { 49.9, 31.6 },
-									["sourceQuests"] = { 47314 },	-- Rumors of Exile
-								}),
-							},
 							["races"] = HORDE_ONLY,
+						}),
+						ach(11861, {	-- The Throne of Zuldazar
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Criteria 2 — Port of Zuldazar
+									["achievementID"] = 11861,	-- The Throne of Zuldazar
+									["criteriaID"] = 2,
+									["sourceQuests"] = { 50881 },	-- Royal Report
+								},
+								{	-- Criteria 6 — The Zanchuli Council
+									["achievementID"] = 11861,	-- The Throne of Zuldazar
+									["criteriaID"] = 6,	-- The Zanchuli Council
+									["sourceQuests"] = {	-- whichever one you pick
+										47439,	-- Gonk, Lord of the Pack
+										47440,	-- Pa'ku, Master of Winds
+									},
+								},
+							},
+						}),
+						ach(11868, {	-- The Dark Heart of Nazmir
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								{	-- Criteria 1 — Deep in the Swamp
+									["achievementID"] = 11868,	-- The Dark Heart of Nazmir
+									["criteriaID"] = 1,	-- Deep in the Swamp
+									["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
+								},
+							},
+						}),
+						ach(12555, {	-- Welcome to Zandalar
+							["sourceQuests"] = { 52131 },	-- We Need Each Other
+							["races"] = HORDE_ONLY,
+						}),
+					--	QUESTS START HERE
+					
+					
+						q(51465, {	-- A Load of Scrap
+						--	confirm SQ when flying is implemented.
+							["sourceQuests"] = { 46931 },	-- Speaker of the Horde
+							["coord"] = { 44.9, 39.6, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 137818,	-- Myxle "The Searat" Gutwrench
+						}),
+						
+						
+						q(47437, {	-- Competitive Devotion
+							["sourceQuests"] = {
+								47434,	-- Restraining Order
+								47435,	-- Pterrortorial Dispute
+							},
+							["coord"] = { 40.8, 11.4, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126564,	-- Hexlord Raal
+						}),
+						
+						
+						q(47442, {	-- Curse of Jani
+							["sourceQuests"] = { 47441 },	-- Pests
+							["coord"] = { 35.4, 7.80, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126334,	-- Jani
+						}),
+						
+						
+						q(46929, {	-- Deterrent
+							["sourceQuests"] = { 46926 },	-- Shakedown
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 135441,	-- Zolani
+							["g"] = {
+								i(155305),	-- Golden City Greatcloak
+								i(155267),	-- Zanchuli Wristwraps
+								i(155268),	-- Rastari Vambraces
+								i(155269),	-- Torcalin Bracers
+								i(155270),	-- Jambani Armbands
+							},
+						}),
+						
+						
+						q(47422, {	-- Dire Situation
+							["sourceQuests"] = { 47437 },	-- Competitive Devotion
+							["coord"] = { 46.0, 13.0, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+							["g"] = {
+								i(159102),	-- Raal's Spare Hexxer
+								i(159100),	-- Crimson Cultist Scepter
+								i(159099),	-- Pa'ku Adherent's Talons
+								i(159098),	-- Wardruid's Cutter
+								i(159101),	-- Loti's Favorite Longspear
+								i(159097),	-- Pa'ku-Blessed Greatbow
+								i(159104),	-- Crimson Cultist Pummeler
+								i(159103),	-- Dregada's Greatsword
+							},
+						}),
+						
+						
+						q(48454, {	-- Evidence of Evil
+							["sourceQuests"] = { 48452 },	-- The Red Market
+							["coord"] = { 44.3, 82.1, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126148,	-- Witch Doctor Jala
+						}),
+						
+						
+						q(47423, {	-- Forbidden Practices
+							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+							["coord"] = { 45.0, 23.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+						}),
+						
+						
+						q(47439, {	-- Gonk, Lord of the Pack
+							["sourceQuests"] = { 47438 },	-- Picking a Side
+							["coord"] = { 42.4, 9.00, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+						}),
+						
+						
+						q(52472, {	-- Make Loh Go
+						--	confirm SQ when flying is implemented.
+							["sourceQuests"] = { 52131 },	-- We Need Each Other
+							["coord"] = { 56.3, 91.5, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 134346,	-- Toki
+						}),
+						
+						
+						q(48405, {	-- Mista Nice
+							["sourceQuests"] = { 48404 },	-- The Scamps
+							["coord"] = { 56.0, 88.8, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 125312,	-- Scrollsage Rooka
+						}),
+						
+						
+						q(49768, {	-- Nesingwary's Trek
+						--	confirm SQ when flying is implemented.
+						--	wasn't available immediately, and this is the point where i first noticed it being available (i'd checked a few times while questing.)
+							["sourceQuests"] = {
+								47439,	-- Gonk, Lord of the Pack
+								47440,	-- Pa'ku, Master of Winds
+							},
+							["coord"] = { 51.9, 41.5, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 130785,	-- Huntmaster Kil'ja
+						}),
+						
+						
+						q(47440, {	-- Pa'ku, Master of Winds
+							["sourceQuests"] = { 47438 },	-- Picking a Side
+							["coord"] = { 42.5, 9.30, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126564,	-- Hexlord Raal
+						}),
+						
+						
+						q(47441, {	-- Pests
+						--	confirm SQ when flying is implemented.
+							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
+							["coord"] = { 40.2, 19.2, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 127665,	-- Nokano
+						}),
+						
+						
+						q(47438, {	-- Picking a Side
+							["sourceQuests"] = { 47422 },	-- Dire Situation
+							["coord"] = { 42.1, 9.00, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+						}),
+						
+						
+						q(47435, {	-- Pterrortorial Dispute
+							["sourceQuests"] = { 47433 },	-- Offensively Defensive
+							["coord"] = { 46.2, 19.1, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+						}),
+						
+						
+						q(46927, {	-- Punishment of Tal'aman
+							["sourceQuests"] = { 46846 },	-- The Word of Zul
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126684,	-- Yazma
+						}),
+						
+						
+						q(46928, {	-- Punishment of Tal'farrak
+							["sourceQuests"] = { 46926 },	-- Shakedown
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126684,	-- Yazma
+						}),
+						
+						
+						q(46930, {	-- Rastakhan
+							["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
+							["coord"] = { 49.9, 82.5, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 122661,	-- General Jakra'zet
+						}),
+						
+						
+						q(47434, {	-- Restraining Order
+							["sourceQuests"] = { 47433 },	-- Offensively Defensive
+							["coord"] = { 46.2, 19.1, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126560,	-- Wardruid Loti
+						}),
+						
+						
+						q(50881, {	-- Royal Report
+							["sourceQuests"] = {
+								46929,	-- Deterrent
+								46927,	-- Punishment of Tal'aman
+								46928,	-- Punishment of Tal'farrak
+							},
+							["coord"] = { 50.0, 85.2, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 135441,	-- Zolani
+						}),
+						
+						
+						q(46926, {	-- Shakedown
+							["sourceQuests"] = { 50835 },	-- The Port of Zandalar
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 135441,	-- Zolani
+						}),
+						
+						
+						q(46931, {	-- Speaker of the Horde
+							["sourceQuests"] = { 46930 },	-- Rastakhan
+							["coord"] = { 50.0, 42.7, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 120740,	-- King Rastakhan
+						}),
+						
+						
+						q(49488, {	-- Tal'gurub
+							["sourceQuests"] = { 49615 },	-- Trust of a King
+							["coord"] = { 49.9, 46.4, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 120740,	-- King Rastakhan
+						}),
+						
+						
+						q(47432, {	-- The Bargain is Struck
+							["sourceQuests"] = { 47440 },	-- Pa'ku, Master of Winds
+							["coord"] = { 49.9, 33.5, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 127489,	-- Hexlord Raal
+						}),
+						
+						
+						q(50538, {	-- The Missing Handler
+							["sourceQuests"] = { 50881 },	-- Royal Report
+							["coord"] = { 68.7, 71.8, 1164 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 131287,	-- Natal'hakata
+						}),
+						
+						
+						q(50835, {	-- The Port of Zandalar
+							["sourceQuests"] = { 47514 },	-- Zuldazar
+							["isBreadcrumb"] = true,	-- for "Shakedown"
+							["coord"] = { 49.8, 46.3, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 122915,	-- Zolani
+						}),
+						
+
+						q(48452, {	-- The Red Market
+							["sourceQuests"] = { 48456 },	-- Witch Doctor Jala
+							["coord"] = { 44.3, 82.1, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126148,	-- Witch Doctor Jala
+						}),
+						
+						
+						q(48404, {	-- The Scamps
+						--	confirm SQ when flying is implemented.
+							["sourceQuests"] = { 52131 },	-- We Need Each Other
+							["coord"] = { 56.0, 88.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 125312,	-- Scrollsage Rooka
+						}),
+						
+						
+						q(46846, {	-- The Word of Zul
+						--	confirm SQ when flying is implemented.
+							["sourceQuests"] = { 47514 },	-- zuldazar
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 126684,	-- Yazma
+						}),
+
+						
+						q(47445, {	-- The Zanchuli Council
+							["sourceQuests"] = { 47514 },	-- Zuldazar
+							["coord"] = { 49.8, 46.3, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 122641,	-- Yazma
+						}),
+						
+						
+						q(52139, {	-- To Matters at Hand
+							["sourceQuests"] = { 46931 },	-- Speaker of the Horde
+							["isBreadcrumb"] = true,	-- for "We Need Each Other"
+							["coord"] = { 34.5, 41.5, 1163 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 120168,	-- Chronicler To'kini
+						}),
+						
+						
+						q(49615, {	-- Trust of a King
+							["sourceQuests"] = { 47514 },	-- Zuldazar
+							["coord"] = { 40.1, 69.4, 1164 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 133050,	-- Princes Talanji
+						}),
+						
+						
+						q(52131, {	-- We Need Each Other
+							["sourceQuests"] = { 52139 },	-- To Matters at Hand
+							["coord"] = { 41.1, 64.4, 1164 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 133050,	-- Princess Talanji
+						}),
+						
+						
+						q(48456, {	-- Witch Doctor Jala
+							["sourceQuests"] = { 46926 },	-- Shakedown
+							["isBreadcrumb"] = true,
+							["coord"] = { 50.0, 84.9, 1165 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 135441,	-- Zolani
+						}),
+						
+						
+						q(47514, {	-- Zuldazar
+						--	no strict SQ since it depends on the order in which you choose to do the zones.
+							["description"] = "Picked up at the Scouting Map.",
+							["coord"] = { 40.1, 69.1, 1164 },
+							["races"] = HORDE_ONLY,
+						}),
+						
+						
+						
+				
+
+				--[[		["sourceQuests"] = {  },	-- 
+							["coord"] = { , ,  },
+							["races"] = HORDE_ONLY,
+							["qg"] = ,	-- 
+						}),
+						
+								--]]
+
+
+						
+						
+						
+					-- unsorted	
+						q(47513, {	-- Vol'dun
+						--	no strict SQ since it depends on the order in which you choose to do the zones.
+							["description"] = "Picked up at the Scouting Map.",
+							["races"] = HORDE_ONLY,
+							["coord"] = { 41.8, 69.2, 1164 },
+						}),
+						q(47313, {	-- Discreet Discussions
+							["sourceQuests"] = { 47513 },	-- Vol'dun
+							["coord"] = { 40.5, 66.9 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 133050,	-- Princess Talanji
+						}),
+						q(47314, {	-- Rumors of Exile
+							["sourceQuests"] = { 47313 },	-- Discreet Discussions
+							["coord"] = { 39.9, 70.6 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 122817,	-- Bladeguard Kaja
+						}),
+						q(47315, {	-- Into the Dunes
+							["sourceQuests"] = { 47314 },	-- Rumors of Exile
+							["coord"] = { 49.9, 31.6 },
+							["races"] = HORDE_ONLY,
+							["qg"] = 122320,	-- Bladeguard Kaja
 						}),
 						qh(53435, {	-- Azerite for the Horde
 							["repeatable"] = true,
@@ -72,10 +423,6 @@ _.Zones =
 								i(166999),	-- Treasure Map
 							},
 						}),
-						qh(47437, {	-- Competitive Devotion
-							["qg"] = 126564,	-- Hexlord Raal
-							["sourceQuests"] = { 47434, 47435, },	-- Restraining Order, Pterrortorial Dispute
-						}),
 						qh(54439, {	-- Crucible of Storms: Relics of Shadow
 							["qgs"] = {
 								146335,	-- Queen Talanji
@@ -86,47 +433,6 @@ _.Zones =
 								{ 41.7, 66.7, 1163 },
 							},
 							["sourceQuests"] = { 53763 },	-- Twist the Knife
-						}),
-						qh(47442, {	-- Curse of Jani
-							["qg"] = 126334,	-- Jani
-							["sourceQuests"] = { 47441 },	-- Pests
-						}),
-						qh(46929, {	-- Deterrent
-							["g"] = {
-								i(155305),	-- Golden City Greatcloak
-								i(155268),	-- Rastari Vambraces
-								i(155270),	-- Jambani Armbands
-								i(155267),	-- Zanchuli Wristwraps
-								i(155269),	-- Torcalin Bracers
-							},
-							["qg"] = 135441,	-- Zolani
-							["sourceQuests"] = { 46926, 46846, }	-- Shakedown, The Word of Zul
-						}),
-						qh(47422, {	-- Dire Situation
-							["g"] = {
-								i(159102),	-- Raal's Spare Hexxer
-								i(159100),	-- Crimson Cultist Scepter
-								i(159099),	-- Pa'ku Adherent's Talons
-								i(159098),	-- Wardruid's Cutter
-								i(159101),	-- Loti's Favorite Longspear
-								i(159097),	-- Pa'ku-Blessed Greatbow
-								i(159104),	-- Crimson Cultist Pummeler
-								i(159103),	-- Dregada's Greatsword
-							},
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47437 },	-- Competitive Devotion
-						}),
-						qh(48454, {	-- Evidence of Evil
-							["qg"] = 126148,	-- Witch Doctor Jala
-							["sourceQuests"] = { 48452 },	-- The Red Market
-						}),
-						qh(47423, {	-- Forbidden Practices
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-						}),
-						qh(47439, {	-- Gonk, Lord of the Pack f[Note: One of two final Quest needed to trigger criteria]
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47438 },	-- Picking a Side
 						}),
 						qh(53766, {	-- His Eye Upon You
 							["qgs"] = {
@@ -201,58 +507,14 @@ _.Zones =
 							["coord"] = { 71.4, 30.2, 862 },
 							["qg"] = 134345,	-- Collector Kojo
 						}),
-						qh(47440, {	-- Pa'ku, Master of Winds [Note: One of two final Quest needed to trigger criteria]
-							["qg"] = 126564,	-- Hexlord Raal
-							["sourceQuests"] = { 47438 },	-- Picking a Side
-						}),
-						qh(47441, {	-- Pests
-							["qg"] = 127665,	-- Nokano
-							["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-						}),
-						qh(47438, {	-- Picking a Side
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47422 },	-- Dire Situation
-						}),
-						qh(47435, {	-- Pterrortorial Dispute
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47433 },	-- Offensively Defensive
-						}),
-						qh(46927, {	-- Punishment of Tal'aman
-							["qg"] = 126684,	-- Yazma
-							["sourceQuests"] = { 48454 },	-- Evidence of Evil
-						}),
-						qh(46928, {	-- Punishment of Tal'farrak
-							["qg"] = 126684,	-- Yazma
-							["sourceQuests"] = { 48454 },	-- Evidence of Evil
-						}),
-						qh(46930, {	-- Rastakhan
-							["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
-							["qg"] = 122661,	-- General Jakra'zet
-						}),
-						qh(47434, {	-- Restraining Order
-							["qg"] = 126560,	-- Wardruid Loti
-							["sourceQuests"] = { 47433 },	-- Offensively Defensive
-						}),
 						qh(55124, {	-- Righting Wrongs
 							["coord"] = { 49.8, 95.9, 1165 },
 							["qg"] = 150433,	-- Bluffwatcher Proudscar
-						}),
-						qh(50881, {	-- Royal Report
-							["qg"] = 135441,	-- Zolani
-							["sourceQuests"] = { 46927, 46928, },	-- Punishment of Tal'aman, Punishment of Tal'farrak
 						}),
 						qh(56044, {	-- Send the Fleet
 							["qg"] = 135691,	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 1165 },
 							["sourceQuest"] = 56030,	-- The Warchief's Order
-						}),
-						qh(46926, {	-- Shakedown
-							["qg"] = 135441,	-- Zolani
-							["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-						}),
-						qh(46931, {	-- Speaker of the Horde
-							["sourceQuests"] = { 46930 },	-- Rastakhan
-							["qg"] = 120740,	-- King Rastakhan
 						}),
 						h(i(165668, {	-- The Azsharan Medallion
 							["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
@@ -269,13 +531,6 @@ _.Zones =
 								qh(54172),	-- The Azsharan Medallion
 							},
 						})),
-						qh(47432, {	-- The Bargain is Struck; Actually Gonk/Pa'ku triggeeer
-							["sourceQuests"] = {
-								47440,	-- Pa'ku, Master of Winds
-								47439,	-- Gonk, Lord of the Pack
-							},
-							["qg"] = 127489,	-- Hexlord Raal
-						}),
 						{	-- The Legend of Mechagon
 							["questID"] = 55646,
 							["qg"] = 152522,	-- Gazlowe
@@ -296,14 +551,6 @@ _.Zones =
 							["coord"] = { 20.0, 35.8, 896 },
 							["qg"] = 144773,	-- Xal'atath
 						}),
-						qh(50835, {	-- The Port of Zandalar
-							["qg"] = 122915,	-- Zolani
-							["sourceQuests"] = { 49615 },	-- Trust of a King
-						}),
-						qh(48452, {	-- The Red Market
-							["qg"] = 126148,	-- Witch Doctor Jala
-							["sourceQuests"] = { 46929, 48456, }	-- Deterrent, Witch Doctor Jala
-						}),
 						q(53762,  {	-- The Tempest Crown
 							["qg"] = 145396,	-- Xal'atath
 							["coord"] = { 75.0, 77.7, 895 },
@@ -311,18 +558,6 @@ _.Zones =
 						}),
 						qh(56030, {	-- The Warchief's Order
 							["description"] = "Automated granted when logging in.",
-						}),
-						qh(46846, {	-- The Word of Zul
-							["qg"] = 126684,	-- Yazma
-							["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-						}),
-						qh(47445, {	-- The Zanchuli Council
-							["qg"] = 122641,	-- Yazma
-							["sourceQuests"] = { 49615 },	-- Trust of a King
-						}),
-						qh(52139, {	-- To Matters at Hand
-							["sourceQuests"] = { 46931 },	-- Speaker of the Horde
-							["qg"] = 120168,	-- Chronicler To'kini
 						}),
 						{	-- To Mechagon!
 							["questID"] = 55651,
@@ -340,22 +575,10 @@ _.Zones =
 							["coord"] = { 53.0, 13.6, 864 },
 							["sourceQuests"] = { 53762 },	-- The Tempest Crown
 						}),
-						qh(46957, {	-- Welcome to Zuldazar
-							["sourceQuests"] = { 50769 },  -- The Stormwind Extraction
-							["qg"] = 132332,	-- Princess Talanji
-						}),
-						qh(52131, {	-- We Need Each Other
-							["sourceQuests"] = { 52139 },	-- To Matters at Hand
-							["qg"] = 133050,	-- Princess Talanji
-						}),
 						qh(53817, {	-- Whatever Happened to Grizzek Fizzwrench?
 							["coord"] = { 58.5, 62.6, 1163 },
 							["qg"] = 136683,	-- Trade Prince Gallywix
 						}),
-				--[[	qh(48456, {	-- Witch Doctor Jala (Lucetia: Finished quest line on live.  Quest wasn't needed or given.)
-							["qg"] = 135441,	-- Zolani
-							["sourceQuests"] = { 46926, 46846, },	-- Shakedown, The Word of Zul
-						}), --]]
 						o(311218, {	-- Xal'atath, Blade of the Black Empire
 							qh(54117, {	-- Every Little Death Helps
 								["coord"] = { 78.0, 36.7, 862 },

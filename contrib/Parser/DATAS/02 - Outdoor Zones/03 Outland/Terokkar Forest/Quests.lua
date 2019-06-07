@@ -87,7 +87,7 @@ _.Zones =
 									["coord"] = { 37.7, 51.3, 108 },
 								}),
 								q(10840, {	-- The Tomb of Lights
-									["qg"] = 21465,	-- High Priest Orglum
+									["qg"] = 22278,	-- High Priest Orglum
 									["coord"] = { 37.5, 50.8, 108 },
 									["sourceQuest"] = 10852,	-- Missing Friends
 								}),

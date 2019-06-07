@@ -130,15 +130,27 @@ _.Zones =
 							un(2, i(5317)),	-- Dry Moss Tunic
 						},
 					},
-					{	-- Brutal Hauberk
-						["questID"] = 1848,
-						["u"] = 40,
+					q(1838, {	-- Brutal Armor
 						["qg"] = 5878,	-- Thun'grim Firegaze
+						["coord"] = { 57.2, 30.2, 10 },
+						["sourceQuest"] = 1824,	-- Trial at the Field of Giant
 						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
+					q(1848, {	-- Brutal Hauberk
+						["qg"] = 5878,	-- Thun'grim Firegaze
+						["coord"] = { 57.2, 30.2, 10 },
+						["sourceQuest"] = 1838,	-- Brutal Armor
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
 						["groups"] = {
 							un(2, i(7133)),	-- Brutal Hauberk
 						},
-					},
+					}),
 					{	-- By Hook Or By Crook
 						["questID"] = 13963,
 						["qg"] = 34513,	-- Togrik
@@ -722,6 +734,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 29026,	-- Wenikee Boltbucket
 					},
+					q(1840, {	-- Orm Stonehoof and the Brutal Helm
+						["qg"] = 5878,	-- Thun'grim Firegaze
+						["coord"] = { 57.2, 30.2, 10 },
+						["sourceQuest"] = 1838,	-- Brutal Armor
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["u"] = 40,
+					}),
 					{	-- Outrider Basic Care Package
 						["questID"] = 7866,
 						["qg"] = 14754,	-- Kelm Hargunth
@@ -861,6 +881,15 @@ _.Zones =
 						["coord"] = { 69.5, 72.9, 10 },
 						["races"] = HORDE_ONLY,
 					},
+					q(1825, {	-- Speak with Thun'grim
+						["qg"] = 6394,	-- Ruga Ragetotem
+						["coord"] = { 44.6, 59.4, 10 },
+						["sourceQuest"] = 1824,	-- Trial at the Field of Giants
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
 					{	-- Stolen Booty
 						["questID"] = 888,
 						["u"] = 40,
@@ -1098,16 +1127,36 @@ _.Zones =
 						["classes"] = { 9 },	-- Warlock Only
 						["sourceQuest"] = 1798,	-- Seeking Strahad
 					},
-					{	-- Trial at the Field of Giants
-						["questID"] = 1824,
-						["u"] = 40,
+					q(1824, {	-- Trial at the Field of Giants
 						["qg"] = 6394,	-- Ruga Ragetotem
+						["coord"] = { 44.6, 59.4, 10 },
+						["sourceQuest"] = 1823,	-- Speak with Ruga
 						["races"] = HORDE_ONLY,
 						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
 						["groups"] = {
 							un(2, i(7120)),	-- Ruga's Bulwark
 						},
-					},
+					}),
+					q(1839, {	-- Ula'elek and the Brutal Gauntlets
+						["qg"] = 5878,	-- Thun'grim Firegaze
+						["coord"] = { 57.2, 30.2, 10 },
+						["sourceQuest"] = 1838,	-- Brutal Armor
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
+					q(1841, {	-- Velora Nitely and the Brutal Legguards
+						["qg"] = 5878,	-- Thun'grim Firegaze
+						["coord"] = { 57.2, 30.2, 10 },
+						["sourceQuest"] = 1838,	-- Brutal Armor
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
 					{	-- Verog the Dervish
 						["questID"] = 851,
 						["qg"] = 34638,	-- Shoe

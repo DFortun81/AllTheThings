@@ -3,13 +3,16 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, {	-- Burning Crusade
-	inst(748, { 	-- Serpentshrine Cavern
+	inst(748, {	-- Serpentshrine Cavern
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
 		["mapID"] = 332,
-		["coord"] = { 51.91, 32.91, 102 },	-- Serpentshrine Cavern, Zangarmarsh
-		["groups"] = {
+		["coords"] = {
+			{ 50.2, 41.0, 102 },	-- underwater entrance
+			{ 51.9, 32.9, 102 },	-- pipe entrance
+		},
+		["g"] = {
 			n(0, {		-- Zone Drop
 				i(30027),	-- Boots of Courage Unending
 				i(30280),	-- Pattern: Belt of Blasting

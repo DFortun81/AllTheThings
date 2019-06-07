@@ -116,7 +116,6 @@ end
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
-local AllTheThingsPCD = {};			-- For character specific data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
@@ -130,13 +129,6 @@ end
 local function GetTempDataMember(member, default)
 	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
 	return AllTheThingsTempData[member];
-end
-local function SetPersonalDataMember(member, data)
-	AllTheThingsPCD[member] = data;
-end
-local function GetPersonalDataMember(member, default)
-	if AllTheThingsPCD[member] == nil then AllTheThingsPCD[member] = default; end
-	return AllTheThingsPCD[member];
 end
 local function SetDataSubMember(member, submember, data)
 	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
@@ -160,107 +152,10 @@ local function GetTempDataSubMember(member, submember, default)
 	end
 	return AllTheThingsTempData[member][submember];
 end
-local function SetPersonalDataSubMember(member, submember, data)
-	if AllTheThingsPCD[member] then AllTheThingsPCD[member][submember] = data; end
-end
-local function GetPersonalDataSubMember(member, submember, default)
-	if not AllTheThingsPCD[member] then AllTheThingsPCD[member] = { }; end
-	if AllTheThingsPCD[member][submember] == nil then AllTheThingsPCD[member][submember] = default; end
-	return AllTheThingsPCD[member][submember];
-end
-local function SetDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsAD[member] and AllTheThingsAD[member][submember] then AllTheThingsAD[member][submember][subsubmember] = data; end
-end
-local function GetDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsAD[member] then
-		AllTheThingsAD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsAD[member][submember] then
-			AllTheThingsAD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsAD[member][submember][subsubmember] == nil then
-				AllTheThingsAD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsAD[member][submember][subsubmember];
-end
-local function SetPersonalDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsPCD[member] and AllTheThingsPCD[member][submember] then AllTheThingsPCD[member][submember][subsubmember] = data; end
-end
-local function GetPersonalDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsPCD[member] then
-		AllTheThingsPCD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsPCD[member][submember] then
-			AllTheThingsPCD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsPCD[member][submember][subsubmember] == nil then
-				AllTheThingsPCD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsPCD[member][submember][subsubmember];
-end
-local function SetTempDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsTempData[member] and AllTheThingsTempData[member][submember] then AllTheThingsTempData[member][submember][subsubmember] = data; end
-end
-local function GetTempDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsTempData[member] then
-		AllTheThingsTempData[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsTempData[member][submember] then
-			AllTheThingsTempData[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsTempData[member][submember][subsubmember] == nil then
-				AllTheThingsTempData[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsTempData[member][submember][subsubmember];
-end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
-app.SetPersonalDataMember = SetPersonalDataMember;
-app.GetPersonalDataMember = GetPersonalDataMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
@@ -1140,33 +1035,6 @@ end })
 
 -- Search Caching
 local searchCache = {};
-local function SetNote(key, id, note)
-	wipe(searchCache);
-	collectgarbage();
-	SetDataSubSubMember("Notes", key, id, note);
-end
-local function GetNoteForGroup(group)
-	if group then
-		local key = group.key;
-		if key then
-			return group[key] and GetDataSubSubMember("Notes", key, group[key]);
-		else
-			return GetDataSubMember("Notes", BuildSourceTextForChat(group, 0));
-		end
-	end
-end
-local function SetNoteForGroup(group, note)
-	if group then
-		wipe(searchCache);
-		local key = group.key;
-		if key then
-			SetDataSubSubMember("Notes", key, group[key], note);
-		else
-			SetDataSubMember("Notes", BuildSourceTextForChat(group, 0), note);
-		end
-	end
-end
-app.SetNote = SetNote;
 app.searchCache = searchCache;
 local function CreateObject(t)
 	local s = {};
@@ -2120,13 +1988,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-		end
-		
-		-- If there is a note for this group, show it.
-		local note = GetNoteForGroup(group);
-		if note then
-			tinsert(info, { left = "Custom Note:" });
-			tinsert(info, { left = "|cffffffff" .. note .. "|r" });
 		end
 		
 		-- If there was any informational text generated, then attach that info.
@@ -3345,8 +3206,6 @@ app.BaseAchievementCriteria = {
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
-				--elseif t.achievementID ~= 12891 and t.achievementID ~= 12479 and t.achievementID ~= 12593 and t.achievementID ~= 12455 then
-				--	print(t.achievementID, t.criteriaID, " > ", m); 
 				end
 			end
 		elseif key == "index" then
@@ -3885,17 +3744,17 @@ end)();
 			
 			if app.AccountWideFlightPaths then
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+						SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			else
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+						SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
@@ -3910,10 +3769,15 @@ end)();
 			elseif key == "collectible" then
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
-				if app.AccountWideFlightPaths then
-					return GetDataSubMember("FlightPaths", t.flightPathID);
+				if app.AccountWideReputations then
+					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
+				else
+					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
 				end
-				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
 				local info = t.info;
 				return info and info.text or "Visit the Flight Master to cache.";
@@ -4611,6 +4475,10 @@ app.BaseInstance = {
 		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "saved" then
 			return t.locks;
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+				return 1;
+			end
 		elseif key == "locks" then
 			local locks = GetTempDataSubMember("lockouts", t.name);
 			if locks then
@@ -4841,6 +4709,10 @@ app.BaseMap = {
 		elseif key == "text" then
 			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
 			return app.GetMapName(t.mapID);
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+				return 1;
+			end
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -5511,7 +5383,7 @@ end)();
 		77,		-- Mists
 		90,		-- WoD
 		98,		-- Legion
-		108,	-- Battle For Azeroth
+		110,	-- Battle For Azeroth
 	};
 	local tierDescription = {
 		"Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.", 					-- Classic
@@ -7271,6 +7143,9 @@ local function SetRowData(self, row, data)
 				if data.collected then
 					data.parent.progress = data.parent.progress + 1;
 				end
+				if not AllTheThingsHarvestItems then
+					AllTheThingsHarvestItems = {};
+				end
 				local item = AllTheThingsHarvestItems[data.itemID];
 				if not item then
 					item = {};
@@ -8031,14 +7906,6 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"], 1, 1, 1);
 			else
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
-			end
-		end
-		if not reference.itemID then
-			-- If there is a note for this item, show it.
-			local note = GetNoteForGroup(reference);
-			if note then
-				GameTooltip:AddLine("Custom Note:");
-				GameTooltip:AddLine(note, 1, 1, 1);
 			end
 		end
 		GameTooltip:Show();
@@ -9174,6 +9041,13 @@ app:GetWindow("Unsorted");
 end)();
 --[[--
 -- Uncomment this section if you need to enable Debugger:
+app.ModelViewer = GameTooltipModel;
+app.ModelViewer.SetRotation = function(number)
+	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+end
+app.ModelViewer.SetScale = function(number)
+	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -11314,23 +11188,6 @@ SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
-SLASH_AllTheThingsNote1 = "/attnote";
-SlashCmdList["AllTheThingsNote"] = function(cmd)
-	cmd = cmd or "";
-	if cmd == "clear" then
-		SetNote("mapID", app.GetCurrentMapID(), nil);
-		return nil;
-	elseif cmd ~= "" then
-		SetNote("mapID", app.GetCurrentMapID(), cmd);
-		return nil;
-	end
-	
-	-- Print out help
-	print("|cff15abff/attnote|r - Usage:");
-	print("|cff15abff/attnote|r |cffff9333clear|r - Clear the note for the current map.");
-	print("|cff15abff/attnote|r |cffff9333<note>|r - Write a note for the current map.");
-end
-
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
@@ -11364,6 +11221,7 @@ app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
+app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -11372,13 +11230,6 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	AllTheThingsPCD = _G["AllTheThingsPCD"]; -- For character specific data.
-	if not AllTheThingsPCD then
-		AllTheThingsPCD = { };
-		_G["AllTheThingsPCD"] = AllTheThingsPCD;
-	end
-	AllTheThingsHarvestItems = {};
-	
 	app:UpdateWindowColors();
 	
 	-- Cache information about the player.
@@ -11411,6 +11262,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
+	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedSelfieFilters", {});
@@ -11454,6 +11306,30 @@ app.events.VARIABLES_LOADED = function()
 		myBuildings = {};
 		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
+	end
+	
+	-- Cache your character's flight path data.
+	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
+	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
+	if not myFlightPaths then
+		myFlightPaths = {};
+		flightPaths[app.GUID] = myFlightPaths;
+		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
+	end
+	
+	-- Migrate Flight Path data to the new containers.
+	if AllTheThingsAD.FlightPaths then
+		for key,value in pairs(AllTheThingsAD.FlightPaths) do
+			SetDataSubMember("CollectedFlightPaths", key, value);
+		end
+	end
+	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
+		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
+			if value then
+				myFlightPaths[key] = value;
+				SetDataSubMember("CollectedFlightPaths", key, value);
+			end
+		end
 	end
 	
 	-- Cache your character's follower data.
@@ -11535,12 +11411,51 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Clean up settings
 	local oldsettings = {};
-	for i,key in ipairs({"Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects","WipedCollectedMusicRollsPerCharacter"}) do
+	for i,key in ipairs({
+		"Categories",
+		"Characters",
+		"CollectedArtifacts",
+		"CollectedBuildings",
+		"CollectedBuildingsPerCharacter",
+		"CollectedFactionBonusReputation",
+		"CollectedFactions",
+		"CollectedFactionsPerCharacter",
+		"CollectedFollowers",
+		"CollectedFollowersPerCharacter",
+		"CollectedFlightPaths",
+		"CollectedFlightPathsPerCharacter",
+		"CollectedIllusions",
+		"CollectedMusicRolls",
+		"CollectedMusicRollsPerCharacter",
+		"CollectedSelfieFilters",
+		"CollectedSelfieFiltersPerCharacter",
+		"CollectedSources",
+		"CollectedSpells",
+		"CollectedSpellsPerCharacter",
+		"CollectedTitles",
+		"CollectedTitlesPerCharacter",
+		"CollectedToys",
+		"FilterSeasonal",
+		"FilterUnobtainableItems",
+		"lockouts",
+		"Position",
+		"RandomSearchFilter",
+		"Reagents",
+		"RefreshedCollectionsAlready",
+		"SeasonalFilters",
+		"Sets",
+		"SourceSets",
+		"UnobtainableItemFilters",
+		"WaypointFilters",
+		"EnableTomTomWaypointsOnTaxi",
+		"TomTomIgnoreCompletedObjects",
+		"WipedCollectedMusicRollsPerCharacter"
+	}) do
 		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = oldsettings[key];
+		AllTheThingsAD[key] = value;
 	end
 
 	-- Tooltip Settings
@@ -11551,6 +11466,7 @@ end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
+	app.CurrentMapID = app.GetCurrentMapID();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
@@ -12168,6 +12084,9 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
+end
+app.events.ZONE_CHANGED_NEW_AREA = function()
+	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D

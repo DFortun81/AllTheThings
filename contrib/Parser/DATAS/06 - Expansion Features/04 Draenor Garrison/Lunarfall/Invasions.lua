@@ -5,9 +5,9 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
+			["g"] = {	
 				n(-136, { 	-- Invasions
-					["groups"] = {
+					["g"] = {
 						ach(9208),	-- Botani Invasion
 						ach(9207),	-- Goren Invasion
 						ach(9827, {		-- Impervious Defender
@@ -63,7 +63,7 @@ _.ExpansionFeatures =
 						ach(9203),		-- Shadow Council Invasion
 						ach(9206),		-- Shadowmoon Clan Invasion
 						i(120320, {	-- Invader's Abandoned Sack
-							["groups"] = {
+							["g"] = {
 								i(115418),	-- Blood Gutter Greatsword
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 							["description"] = "Bronze Challenge"
 						}),
 						i(120319, {	-- Invader's Damaged Cache
-							["groups"] = {
+							["g"] = {
 								i(115418),	-- Blood Gutter Greatsword
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
@@ -117,7 +117,7 @@ _.ExpansionFeatures =
 							["description"] = "Silver Challenge"
 						}),
 						i(116980, {	-- Invader's Forgotten Treasure
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -148,11 +148,14 @@ _.ExpansionFeatures =
 							["description"] = "Gold Challenge"
 						}),
 						i(122163, {	-- Routed Invader's Crate of Spoils
-							["groups"] = {
-								i(116779),	-- Garn Steelmaw
-								i(116673),	-- Giant Coldsnout
-								i(116663),	-- Shadowhide Pearltusk
-								i(116786),	-- Smoky Direwolf
+							["description"] = "Platinum Challenge",
+							["isWeekly"] = true,
+							["questID"] = 38482,
+							["g"] = {
+								i(116779),	-- Garn Steelmaw (MOUNT!)
+								i(116673),	-- Giant Coldsnout (MOUNT!)
+								i(116663),	-- Shadowhide Pearltusk (MOUNT!)
+								i(116786),	-- Smoky Direwolf (MOUNT!)
 								i(115418),	-- Blood Gutter Greatsword
 								i(115417),	-- Chadrik's Lost Axe
 								i(115422),	-- Grimthorn's Fearsome Halberd
@@ -191,13 +194,15 @@ _.ExpansionFeatures =
 								i(122173),	-- Charred Blackrock Iron Waistplate
 								i(122169),	-- Sooty Blackrock Iron Legplates
 								i(115411),	-- Ozymandias' Burdensome Treads
+								i(122183),	-- Blackrock Iron Gorget
+								i(122177),	-- Gorenspike Choker
+								i(122179),	-- Rotting Goren Gutstone
+								i(122180),	-- Spiteleaf Podstrand
+								i(122184),	-- Eye of the Unseen Star
 							},
-							["questID"] = 38482,
-							["isWeekly"] = true,
-							["description"] = "Platinum Challenge"
 						}),
 						n(90802, {	-- Annihilon
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -243,7 +248,7 @@ _.ExpansionFeatures =
 							["description"] = "Void Prison summons this boss. It has a chance to be obtained during a Shadowmoon Invasion.",
 						}),
 						n(90841, {	-- Commander Dro'gan
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -289,7 +294,7 @@ _.ExpansionFeatures =
 							["description"] = "Bloodied Iron Horde Banner summons this boss. It has a chance to be obtained during an Iron Horde Invasion.",
 						}),
 						n(90943, {	-- Gaur
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -335,7 +340,7 @@ _.ExpansionFeatures =
 							["description"] = "Runed Greatstone summons this boss. It has a chance to be obtained during a Goren Invasion.",									
 						}),
 						n(91012, {	-- Lady Fleshear
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -381,7 +386,7 @@ _.ExpansionFeatures =
 							["description"] = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						}),
 						n(90995, {	-- Mage Lord Gogg'nthog
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk
@@ -427,7 +432,7 @@ _.ExpansionFeatures =
 							["description"] = "Arcane Highmaul Relic summons this boss. It has a chance to be obtained during an Ogre Invasion.",									
 						}),
 						n(90946, {	-- Teluur
-							["groups"] = {
+							["g"] = {
 								i(116779),	-- Garn Steelmaw
 								i(116673),	-- Giant Coldsnout
 								i(116663),	-- Shadowhide Pearltusk

@@ -501,6 +501,7 @@ _.Zones =
 						["coord"] = { 27.2, 60.1, 71 },	-- Tanaris
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53819,	-- Return to the Nest
+						["lvl"] = 120,
 						["groups"] = {
 							i(165845),	-- Feathers (PET!)
 						},
@@ -1509,6 +1510,55 @@ _.Zones =
 							19935,	-- Arazmodu
 						},
 					},
+					-- Leagacy (need to put in a own file)
+					-- Part of the Dungeon 2 Set Questline
+					q(8925, {	-- A Portable Power Source
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8928, {	-- A Shifty Merchant
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8925,	-- A Portable Power Source
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8924, {	-- Hunting for Ectoplasm
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuests"] = {
+							8922,	-- A Supernatural Device [Alliance]
+							8921,	-- The Ectoplasmic Distiller [Horde]
+						},
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8977, {	-- Return to Deliana
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8928,	-- A Shifty Merchant
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8978, {	-- Return to Mokvar
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8928,	-- A Shifty Merchant
+						["races"] = HORDE_ONLY,
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8921, {	-- The Ectoplasmic Distiller
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8923,	-- A Supernatural Device
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
 				}),
 			},
 		}),

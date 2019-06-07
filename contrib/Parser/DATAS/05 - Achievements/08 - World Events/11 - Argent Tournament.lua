@@ -16,7 +16,8 @@ _.Achievements =
 		["groups"] = {
 			n(-10024, {	-- Argent Tournament
 				["groups"] = {
-					a(ach(3676)),	-- A Silver Confidant (Alliance)
+					ach(3676, 3677),	-- A Silver Confidant [A] / The Sunreavers [H]
+					--a(ach(3676)),	-- A Silver Confidant (Alliance)
 					ach(2758, {		-- Argent Valor
 						ach(2756),		-- Argent Aspiration
 					}),
@@ -165,7 +166,7 @@ _.Achievements =
 						crit(10),		-- Undercity
 					}),
 					ach(3736),		-- Pony Up!
-					h(ach(3677)),	-- The Sunreavers (Horde)
+					--h(ach(3677)),	-- The Sunreavers (Horde)
 					ach(4596),		-- The Sword in the Skull
 					ach(2772),		-- Tilted!
 				},

@@ -247,16 +247,11 @@ _.WorldEvents =
 			un(1, i(110591)),	-- Flintlocke's Blasthammer
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
-				["u"] = 9,				-- Black Market AH Filter
+				["u"] = 2,				
 				["collectible"] = false,
 				["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
 				["f"] = 55,
-				--Note!! Drops from container still.  Do not mark removed at all!
-				--Do NOT remove from this location.  It use to reside here and we need to retain that information
-				--not remove the information from the addon.
-				--Since the item doesn't show up in the list at all unless you have debug on, completed things
-				--or consumables displayed it doesn't hurt the end user.  We don't remove information from the
-				-- addon or the files.  No adjustments need ot be made as it affects the item everywhere in the addon.
+				-- Removed from BMAH with 7.3.5
 			},
 			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
 			un(7, i(86993)),	-- Darting Damselfly Cuffs

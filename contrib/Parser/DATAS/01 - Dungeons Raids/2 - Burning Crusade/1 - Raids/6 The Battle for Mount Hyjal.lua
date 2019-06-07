@@ -9,127 +9,76 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["lvl"] = 68,
 		["mapID"] = 329,
 		["coords"] = {
+			{ 36.0, 16.1, 75 },	-- raid entrance
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 36.0, 16.1, 75 },	-- actual raid entrance
 		},
 		["groups"] = {
 			n(-2, {	-- Vendors
 				n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
-					{	-- Design: Bold Crimson Spinel
-						["itemID"] = 32274,	-- Design: Bold Crimson Spinel
-					},
-					{	-- Design: Brilliant Crimson Spinel
-						["itemID"] = 32282,	-- Design: Brilliant Crimson Spinel
-					},
-					{	-- Design: Brilliant Crimson Spinel
-						["itemID"] = 32281,	-- Design: Brilliant Crimson Spinel
+					i(32274),	-- Design: Bold Crimson Spinel
+					i(32282),	-- Design: Brilliant Crimson Spinel
+					i(32281, {	-- Design: Brilliant Crimson Spinel
 						["spellID"] = 0,	-- This is now available via 32282, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Brilliant Crimson Spinel
-						["itemID"] = 32290,	-- Design: Brilliant Crimson Spinel
+					}),
+					i(32290, {	-- Design: Brilliant Crimson Spinel
 						["spellID"] = 0,	-- This is now available via 32282, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Deadly Pyrestone
-						["itemID"] = 32308,	-- Design: Deadly Pyrestone
-					},
-					{	-- Design: Delicate Crimson Spinel
-						["itemID"] = 32277,	-- Design: Delicate Crimson Spinel
-					},
-					{	-- Design: Delicate Crimson Spinel
-						["itemID"] = 32283,	-- Design: Delicate Crimson Spinel
+					}),
+					i(32308),	-- Design: Deadly Pyrestone
+					i(32277),	-- Design: Delicate Crimson Spinel
+					i(32283, {	-- Design: Delicate Crimson Spinel
 						["spellID"] = 0,	-- This is now available via 32277, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Forceful Seaspray Emerald
-						["itemID"] = 35765,	-- Design: Forceful Seaspray Emerald
-					},
-					{	-- Design: Glinting Shadowsong Amethyst
-						["itemID"] = 32306,	-- Design: Glinting Shadowsong Amethyst
-					},
-					{	-- Design: Glinting Shadowsong Amethyst
-						["itemID"] = 32300,	-- Design: Glinting Shadowsong Amethyst
+					}),
+					i(35765),	-- Design: Forceful Seaspray Emerald
+					i(32306),	-- Design: Glinting Shadowsong Amethyst
+					i(32300, {	-- Design: Glinting Shadowsong Amethyst
 						["spellID"] = 0,	-- This is now available via 32306, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Jagged Seaspray Emerald
-						["itemID"] = 32312,	-- Design: Jagged Seaspray Emerald
-					},
-					{	-- Design: Potent Pyrestone
-						["itemID"] = 32304,	-- Design: Potent Pyrestone
-					},
-					{	-- Design: Purified Shadowsong Amethyst
-						["itemID"] = 32311,	-- Design: Purified Shadowsong Amethyst
-					},
-					{	-- Design: Purified Shadowsong Amethyst
-						["itemID"] = 32302,	-- Design: Purified Shadowsong Amethyst
+					}),
+					i(32312),	-- Design: Jagged Seaspray Emerald
+					i(32304),	-- Design: Potent Pyrestone
+					i(32311),	-- Design: Purified Shadowsong Amethyst
+					i(32302, {	-- Design: Purified Shadowsong Amethyst
 						["spellID"] = 0,	-- This is now available via 32311, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Quick Lionseye
-						["itemID"] = 35763,	-- Design: Quick Lionseye
-					},
-					{	-- Design: Radiant Seaspray Emerald
-						["itemID"] = 32310,	-- Design: Radiant Seaspray Emerald
-					},
-					{	-- Design: Reckless Pyrestone
-						["itemID"] = 35762,	-- Design: Reckless Pyrestone
-					},
-					{	-- Design: Reckless Pyrestone
-						["itemID"] = 32305,	-- Design: Reckless Pyrestone
+					}),
+					i(35763),	-- Design: Quick Lionseye
+					i(32310),	-- Design: Radiant Seaspray Emerald
+					i(35762),	-- Design: Reckless Pyrestone
+					i(32305, {	-- Design: Reckless Pyrestone
 						["spellID"] = 0,	-- This is now available via 35762, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Regal Seaspray Emerald
-						["itemID"] = 32309,	-- Design: Regal Seaspray Emerald
-					},
-					{	-- Design: Rigid Empyrean Sapphire
-						["itemID"] = 32292,	-- Design: Rigid Empyrean Sapphire
-					},
-					{	-- Design: Rigid Empyrean Sapphire
-						["itemID"] = 32296,	-- Design: Rigid Empyrean Sapphire
+					}),
+					i(32309),	-- Design: Regal Seaspray Emerald
+					i(32292),	-- Design: Rigid Empyrean Sapphire
+					i(32296, {	-- Design: Rigid Empyrean Sapphire
 						["spellID"] = 0,	-- This is now available via 32292, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Shifting Shadowsong Amethyst
-						["itemID"] = 32299,	-- Design: Shifting Shadowsong Amethyst
+					}),
+					i(32299, {	-- Design: Shifting Shadowsong Amethyst
 						["spellID"] = 0,	-- This is now available via 32298 or 35242, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Smooth Lionseye
-						["itemID"] = 32291,	-- Design: Smooth Lionseye
-					},
-					{	-- Design: Smooth Lionseye
-						["itemID"] = 32293,	-- Design: Smooth Lionseye
+					}),
+					i(32291),	-- Design: Smooth Lionseye
+					i(32293, {	-- Design: Smooth Lionseye
 						["spellID"] = 0,	-- This is now available via 32291, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Solid Empyrean Sapphire
-						["itemID"] = 32286,	-- Design: Solid Empyrean Sapphire
-					},
-					{	-- Design: Sparkling Empyrean Sapphire
-						["itemID"] = 32287,	-- Design: Sparkling Empyrean Sapphire
-					},
-					{	-- Design: Sparkling Empyrean Sapphire
-						["itemID"] = 32288,	-- Design: Sparkling Empyrean Sapphire
+					}),
+					i(32286),	-- Design: Solid Empyrean Sapphire
+					i(32287),	-- Design: Sparkling Empyrean Sapphire
+					i(32288, {	-- Design: Sparkling Empyrean Sapphire
 						["spellID"] = 0,	-- This is now available via 32287, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Steady Seaspray Emerald
-						["itemID"] = 35764,	-- Design: Steady Seaspray Emerald
-					},
-					{	-- Design: Subtle Lionseye
-						["itemID"] = 32284,	-- Design: Subtle Lionseye
-					},
-					{	-- Design: Subtle Lionseye
-						["itemID"] = 32294,	-- Design: Subtle Lionseye
+					}),
+					i(35764),	-- Design: Steady Seaspray Emerald
+					i(32284),	-- Design: Subtle Lionseye
+					i(32294, {	-- Design: Subtle Lionseye
 						["spellID"] = 0,	-- This is now available via 32284, need to delink the old plans from the recipe
 						["u"] = 2,
-					},
-					{	-- Design: Timeless Shadowsong Amethyst
-						["itemID"] = 32301,	-- Design: Timeless Shadowsong Amethyst
-					},
+					}),
+					i(32301),	-- Design: Timeless Shadowsong Amethyst
 				}),
 				n(23381, {	-- Tydormu
 					-- Azgalor Tokens

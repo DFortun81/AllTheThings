@@ -19,6 +19,15 @@ _.WorldEvents =
 		["groups"] = {
 			n(-526, {	-- Legion
 				["groups"] = {
+					n(-297, {	-- Mailbox
+						["groups"] = {
+							un(3, i(140715)),	-- Frost-Etched Runeblade. DK Frost
+							un(3, i(140696)),	-- Sword of the Singing Wind. Monk WW
+							un(3, i(140694)),	-- Brewmasher's Staff. Monk BW
+							un(3, i(140712)),	-- Greataxe of Fury. Warrior Fury
+						},
+						["description"] = "This item came automatically in the mail box, in some cases even equipped, once the prepatch launched due class&ability changes.",
+					}),
 					i(139048, {	-- Small Legion Chest
 						un(3, i(141597)),	-- Corrupted Argus Gavel
 						un(3, i(141609)),	-- Corrupted Argus Gavel -- Non Upgrade Version -- Was posted here already - Gold 14.04.2019

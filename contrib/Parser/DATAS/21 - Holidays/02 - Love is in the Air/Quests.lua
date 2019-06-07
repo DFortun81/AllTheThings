@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 18}, 
 {
-	{	-- Feast of Winter Veil
+	{	-- Love is in the Air
 		["holidayID"] = 235468,	-- Love is in the Air
 		["u"] = 18,				-- Love is in the Air Filter
 		["g"] = {
@@ -12,6 +12,18 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["g"] = {
 					i(50320, {	-- Faded Lovely Greeting Card
 						["g"] = {
+							q(24635, {	-- A Cloudlet of Classy Cologne
+								["qg"] = 37675,	-- Public Relations Agent
+								["isDaily"] = true,
+							}),
+							q(24629, {	-- A Perfect Puff of Perfume
+								["qg"] = 37675,	-- Public Relations Agent
+								["isDaily"] = true,
+							}),
+							q(24636, {	-- Bonbon Blitz
+								["qg"] = 37675,	-- Public Relations Agent
+								["isDaily"] = true,
+							}),
 							q(24745, {	-- Something is in the Air (and it Ain't Love) (Alliance)
 								
 								["qg"] = 36296,	-- Apothecary Hummel
@@ -134,7 +146,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 							38328,	-- Roka
 						},
 						["sourceQuest"] = 24851,	-- Hot On The Trail (Horde)
-					}),
+					}),	
 				}),
 			}),
 		},

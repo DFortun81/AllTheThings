@@ -3,12 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(113, { 	-- Northrend
+	m(113, {	-- Northrend
 		n(-363, {	-- The Argent Tournament
-			["groups"] = {
+			["maps"] = { 118 },	-- Icecrown
+			["lvl"] = 67,
+			["g"] = {
 				ach(4596, {	-- The Sword in the Skull
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
-					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
 					["maps"] = {
 						125,	-- Dalaran (Northrend)
 						183,	-- The Forge of Souls
@@ -16,10 +17,11 @@ _.Zones =
 						185,	-- Halls of Reflection
 						122,	-- Isle of Quel'Danas
 					},
-					["groups"] = {
-						d(2, {
+					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
+					["g"] = {
+						d(2, {	-- Battered Hilt
 							["description"] = "The hilt can drop from trash mobs in the ICC Heroic Dungeons. (Not the raid.)",
-							["groups"] = {
+							["g"] = {
 								a({
 									["itemID"] = 50379,	-- Battered Hilt
 									["questID"] = 14443,	-- The Battered Hilt [Alliance]
@@ -30,185 +32,177 @@ _.Zones =
 								}),
 							},
 						}),
-						a({
-							["questID"] = 14444,	-- What The Dragons Know [Alliance]
+						q(14444, {	-- What The Dragons Know (A)
 							["sourceQuest"] = 14443,	-- The Battered Hilt [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						h({
-							["questID"] = 24555,	-- What The Dragons Know [Horde]
+						q(24555, {	-- What The Dragons Know (H)
 							["sourceQuest"] = 24554,	-- The Battered Hilt [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
-						a({
-							["questID"] = 14457,	-- The Sunreaver Plan [Alliance]
+						q(14457, {	-- The Sunreaver Plan
 							["sourceQuest"] = 14444,	-- What The Dragons Know [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36669,	-- Arcanist Tybalin
 						}),
-						h({
-							["questID"] = 24557,	-- The Silver Covenant's Scheme [Horde]
-							["sourceQuest"] = 24555,	-- What The Dragons Know [Horde]
+						q(24557, {	-- The Silver Covenant's Scheme
+							["sourceQuest"] = 24555,	-- What The Dragons Know
+							["races"] = HORDE_ONLY,
 							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						}),
-						a({
-							["questID"] = 20438,	-- A Suitable Disguise [Alliance]
-							["sourceQuest"] = 14457,	-- The Sunreaver Plan [Alliance]
+						q(20438, {	-- A Suitable Disguise (A)
+							["sourceQuest"] = 14457,	-- The Sunreaver Plan
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36669,	-- Arcanist Tybalin
 						}),
-						h({
-							["questID"] = 24556,	-- A Suitable Disguise [Horde]
+						q(24556, {	-- A Suitable Disguise (H)
 							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						}),
-						a({
-							["questID"] = 20439,	-- A Meeting With The Magister [Alliance]
+						q(20439, {	-- A Meeting With The Magister
 							["sourceQuest"] = 20438,	-- A Suitable Disguise [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36669,	-- Arcanist Tybalin
 						}),
-						h({
-							["questID"] = 24451,	-- An Audience With The Arcanist [Horde]
+						q(24451, {	-- An Audience With The Arcanist
 							["sourceQuest"] = 24556,	-- A Suitable Disguise [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						}),
-						a({
-							["questID"] = 24454,	-- Return To Caladis Brightspear [Alliance]
+						q(24454, {	-- Return To Caladis Brightspear
 							["sourceQuest"] = 20439,	-- A Meeting With The Magister [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36669,	-- Arcanist Tybalin
 						}),
-						h({
-							["questID"] = 24558,	-- Return To Myralion Sunblaze [Horde]
+						q(24558, {	-- Return To Myralion Sunblaze
 							["sourceQuest"] = 24451,	-- An Audience With The Arcanist [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						}),
-						a({
-							["questID"] = 24461,	-- Reforging The Sword [Alliance]
+						q(24461, {	-- Reforging The Sword (A)
 							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						h({
-							["questID"] = 24559,	-- Reforging The Sword [Horde]
+						q(24559, {	-- Reforging The Sword (H)
 							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
-						a({
-							["questID"] = 24476,	-- Tempering The Blade [Alliance]
+						q(24476, {	-- Tempering The Blade (A)
 							["sourceQuest"] = 24461,	-- Reforging The Sword [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						h({
-							["questID"] = 24560,	-- Tempering The Blade [Horde]
+						q(24560, {	-- Tempering The Blade (H)
 							["sourceQuest"] = 24559,	-- Reforging The Sword [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
-						a({
-							["questID"] = 24480,	-- The Halls Of Reflection [Alliance]
+						q(24480, {	-- The Halls Of Reflection (A)
 							["sourceQuest"] = 24476,	-- Tempering The Blade [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						h({
-							["questID"] = 24561,	-- The Halls Of Reflection [Horde]
+						q(24561, {	-- The Halls Of Reflection (H)
 							["sourceQuest"] = 24560,	-- Tempering The Blade [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
-						a({
-							["questID"] = 24522,	-- Journey To The Sunwell [Alliance]
+						q(24522, {	-- Journey To The Sunwell (A)
 							["sourceQuest"] = 24480,	-- The Halls Of Reflection [Alliance]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						h({
-							["questID"] = 24562,	-- Journey To The Sunwell [Horde]
+						q(24562, {	-- Journey To The Sunwell (H)
 							["sourceQuest"] = 24561,	-- The Halls Of Reflection [Horde]
+							["races"] = HORDE_ONLY,
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						}),
-						a({
-							["questID"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+						q(24535, {	-- Thalorien Dawnseeker (A)
 							["sourceQuest"] = 24522,	-- Journey To The Sunwell
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
-						h({
-							["questID"] = 24563,	-- Thalorien Dawnseeker [Horde]
+						q(24563, {	-- Thalorien Dawnseeker (H)
 							["sourceQuest"] = 24562,	-- Journey To The Sunwell
+							["races"] = HORDE_ONLY,
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
-						a({
-							["questID"] = 24553,	-- The Purification of Quel'Delar [Alliance]
+						q(24553, {	-- The Purification of Quel'Delar (A)
 							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						}),
-						a({
-							["questID"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
+						q(24595, {	-- The Purification of Quel'Delar (A — Maces)
 							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-						}),
-						{
-							["questID"] = 24564,	-- The Purification of Quel'Delar [Horde]
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						q(24564, {	-- The Purification of Quel'Delar (H)
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-						},
-						{
-							["questID"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						q(24598, {	-- The Purification of Quel'Delar (H — Maces)
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-						},
-						{
-							["questID"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf Only!
-						},
-						{
-							["questID"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+							["races"] = { 10 },	-- Blood Elf
 							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
+							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf Only!
-						},
-						a({
-							["questID"] = 24796,	-- A Victory For The Silver Covenant [Alliance]
+							["races"] = { 10 },	-- Blood Elf
+							["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
+						}),
+						q(24796, {	-- A Victory For The Silver Covenant (A)
 							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
-							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+							["races"] = ALLIANCE_ONLY,
+							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						}),
-						a({
-							["questID"] = 24795,	-- A Victory For The Silver Covenant [Alliance - Maces]
+						q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
 							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 						}),
-						{
-							["questID"] = 24801,	-- A Victory For The Sunreavers [Horde]
+						q(24801, {	-- A Victory For The Sunreavers [Horde]
 							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
-							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-						},
-						{
-							["questID"] = 24799,	-- A Victory For The Sunreavers [Horde - Maces]
-							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						q(24799, {	-- A Victory For The Sunreavers [Horde - Maces]
+							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-						},
-						{
-							["questID"] = 24800,	-- A Victory For The Sunreavers [Blood Elves]
-							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
+							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
 							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf Only!
-						},
-						{
-							["questID"] = 24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
-							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
 							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
+						q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
+							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
 							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
 							["races"] = { 10 },	-- Blood Elf Only!
-						},
+							["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						}),
 						n(-6015, {	-- Rewards
 							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
 							["sourceQuests"] = {
@@ -219,7 +213,7 @@ _.Zones =
 								24800,	-- A Victory For The Sunreavers [Blood Elves]
 								24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
 							},
-							["groups"] = {
+							["g"] = {
 								i(50050),	-- Cudgel of Furious Justice
 								i(50051),	-- Hammer of Purified Flame
 								i(50052),	-- Lightborn Spire
@@ -233,40 +227,40 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Point
 					fp(340, {	-- Argent Tournament Grounds, Icecrown
-						["coord"] = { 72.6, 22.6 },
+						["coord"] = { 72.6, 22.6, 118 },
 					}),
 				}),
 				n(-17, { 	-- Quests
 					i(45724, {	-- Champion's Purse
 						["description"] = "You get 1 Champion's Seal from these bags.",
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					a({
-						["questID"] = 14074,	-- A Leg Up
+					q(14074, {	-- A Leg Up (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14143,	-- A Leg Up
+					q(14143, {	-- A Leg Up (H)
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					{
+					{	---------- Among the Champions (A / H, non-DK)
 						["allianceQuestID"] = 13790,	-- Among the Champions
 						["hordeQuestID"] = 13811,	-- Among the Champions
-						["qg"] = 33771,	-- Luuri
-						["coord"] = { 69.8, 23.3 },
+						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
+						["coord"] = { 69.8, 23.3, 118 },
 						["crs"] = {
 							33738,	-- Darnassus Champion
 							33739,	-- Exodar Champion
@@ -279,20 +273,20 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
-						["groups"] = {
+						["qg"] = 33771,	-- Luuri
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 							i(45500),	-- Mark of the Champion
 						},
 					},
-					{
+					{	---------- Among the Champions (A / H, DK)
 						["allianceQuestID"] = 13793,	-- Among the Champions
 						["hordeQuestID"] = 13814,	-- Among the Champions
-						["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
-						["coord"] = { 73.6, 20.0 },
+						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
+						["coord"] = { 73.6, 20.0, 118 },
 						["crs"] = {
 							33738,	-- Darnassus Champion
 							33739,	-- Exodar Champion
@@ -305,776 +299,720 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["classes"] = { 6 },	-- Death Knight Only
-						["groups"] = {
+						["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 							i(45500),	-- Mark of the Champion
 						},
 					},
-					{
+					{	---------- Battle Before the Citadel (A / H, non-DK)
 						["allianceQuestID"] = 13861,	-- Battle Before the Citadel
 						["hordeQuestID"] = 13862,	-- Battle Before the Citadel
-						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-						["coord"] = { 69.9, 23.4 },
-						["isDaily"] = true,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
-						["groups"] = {
+						["isDaily"] = true,
+						["coord"] = { 69.9, 23.4, 118 },
+						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					{
+					{	---------- Battle Before the Citadel (A / H, DK)
 						["allianceQuestID"] = 13864,	-- Battle Before the Citadel
 						["hordeQuestID"] = 13863,	-- Battle Before the Citadel
-						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-						["coord"] = { 73.8, 20.0 },
-						["isDaily"] = true,
 						["classes"] = { 6 },	-- Death Knight Only
-						["groups"] = {
+						["isDaily"] = true,
+						["coord"] = { 73.8, 20.0, 118 },
+						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					a({
-						["questID"] = 14076,	-- Breakfast Of Champions
+					q(14076, {	-- Breakfast Of Champions (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14092,	-- Breakfast Of Champions
+					q(14092, {	-- Breakfast Of Champions (H)
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					{
-						["questID"] = 13846,	-- Contributin' To The Cause
+					q(13846, {	-- Contributin' To The Cause
+						["isDaily"] = true,
+						["coord"] = { 69.5, 22.4, 118 },
 						["qg"] = 34210,	-- Squire Artie
-						["coord"] = { 69.5, 22.4 },
+					}),
+					q(14101, {	-- Drottinn Hrothgar
 						["isDaily"] = true,
-					},
-					{
-						["questID"] = 14101,	-- Drottinn Hrothgar
+						["coord"] = { 69.4, 23.1, 118 },
 						["qg"] = 34882,	-- High Crusader Adelard
-						["coord"] = { 69.4, 23.1 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
-					},
-					{
-						["questID"] = 14108,	-- Get Kraken!
+					}),
+					q(14108, {	-- Get Kraken!
+						["isDaily"] = true,
+						["coord"] = { 69.4, 23.1, 118 },
 						["qg"] = 35094,	-- Crusader Silverdawn
-						["coord"] = { 69.4, 23.1 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
-					},
-					a({
-						["questID"] = 14090,	-- Gormok Wants His Snobolds
+					}),
+					q(14090, {	-- Gormok Wants His Snobolds (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14141,	-- Gormok Wants His Snobolds
+					q(14141, {	-- Gormok Wants His Snobolds (H)
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					a({
-						["questID"] = 14152,	-- Rescue at Sea
+					q(14152, {	-- Rescue at Sea (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14136,	-- Rescue at Sea
+					q(14136, {	-- Rescue at Sea (H)
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					a({
-						["questID"] = 14080,	-- Stop The Aggressors
+					q(14080, {	-- Stop The Aggressors (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14140,	-- Stop The Aggressors
+					q(14140, {	-- Stop The Aggressors
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					{
+					{	---------- Taking Battle To The Enemy (A / H, non-DK)
 						["allianceQuestID"] = 13789,	-- Taking Battle To The Enemy
 						["hordeQuestID"] = 13810,	-- Taking Battle To The Enemy
-						["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
-						["coord"] = { 69.9, 23.4 },
-						["isDaily"] = true,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
-						["groups"] = {
+						["isDaily"] = true,
+						["coord"] = { 69.9, 23.4, 118 },
+						["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					{
+					{	---------- Taking Battle To The Enemy (A / H, DK)
 						["allianceQuestID"] = 13791,	-- Taking Battle To The Enemy
 						["hordeQuestID"] = 13813,	-- Taking Battle To The Enemy
-						["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
-						["coord"] = { 73.8, 19.6 },
-						["isDaily"] = true,
 						["classes"] = { 6 },	-- Death Knight Only
-						["groups"] = {
+						["isDaily"] = true,
+						["coord"] = { 73.8, 19.6, 118 },
+						["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					{
-						["questID"] = 14107,	-- The Fate of the Fallen
+					q(14107, {	-- The Fate of the Fallen
+						["isDaily"] = true,
+						["coord"] = { 69.4, 23.1, 118 },
 						["qg"] = 35094,	-- Crusader Silverdawn
-						["coord"] = { 69.4, 23.1 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
-					},
-					a({
-						["questID"] = 14077,	-- The Light's Mercy
+					}),
+					q(14077, {	-- The Light's Mercy
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14144,	-- The Light's Mercy
+					q(14144, {	-- The Light's Mercy
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					{
+					{	---------- Threat From Above (A / H, non-DK)
 						["allianceQuestID"] = 13682,	-- Threat From Above
 						["hordeQuestID"] = 13809,	-- Threat From Above
-						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
-						["coord"] = { 69.9, 23.4 },
-						["isDaily"] = true,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
-						["groups"] = {
+						["isDaily"] = true,
+						["coord"] = { 69.9, 23.4, 118 },
+						["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					{
+					{	---------- Threat From Above (A / H, DK)
 						["allianceQuestID"] = 13788,	-- Threat From Above
 						["hordeQuestID"] = 13812,	-- Threat From Above
-						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
-						["coord"] = { 73.8, 20.0 },
 						["isDaily"] = true,
 						["classes"] = { 6 },	-- Death Knight Only
-						["groups"] = {
+						["coord"] = { 73.8, 20.0, 118 },
+						["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
 					},
-					a({
-						["questID"] = 14112,	-- What Do You Feed a Yeti, Anyway?
+					q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14145,	-- What Do You Feed a Yeti, Anyway?
+					q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
+						["isDaily"] = true,
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					a({
-						["questID"] = 14096,	-- You've Really Done It This Time, Kul
+					q(14096, {	-- You've Really Done It This Time, Kul (A)
+						["isDaily"] = true,
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
-						["coord"] = { 76.2, 19.6 },
-						["isDaily"] = true,
-						["groups"] = {
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					h({
-						["questID"] = 14142,	-- You've Really Done It This Time, Kul
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
-						["coord"] = { 76.1, 24.0 },
+					q(14142, {	-- You've Really Done It This Time, Kul (H)
 						["isDaily"] = true,
-						["groups"] = {
+						["coord"] = { 76.1, 24.0, 118 },
+						["races"] = HORDE_ONLY,
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
 					}),
 				}),
 				n(-2, {	-- Vendors
-					{	-- Common Vendor Items
-						["npcID"] = -15,
-						["g"] = {
-							{	-- Champion's Seal
-								["currencyID"] = 241,	-- Champion's Seal
+					n(-15, {	-- Common Vendor Items
+						currency(241, {	-- Champion's Seal
+							i(45725, {	-- Argent Hippogryph
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(122232, {	-- Music Roll: The Argent Tournament
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							-- Alliance Only Items
+							i(45130, {	-- Blunderbuss of Khaz Modan
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(164932, {	-- Grapeshotter of Khaz Modan
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
 								["g"] = {
-									{	-- Argent Hippogryph
-										["itemID"] = 45725,	-- Argent Hippogryph
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-									},
-									{	-- Music Roll: The Argent Tournament
-										["itemID"] = 122232,	-- Music Roll: The Argent Tournament
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-									},
-									-- Alliance Only Items
-									{	-- Blunderbuss of Khaz Modan
-										["itemID"] = 45130,	-- Blunderbuss of Khaz Modan
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Grapeshotter of Khaz Modan
-										["itemID"] = 164932,	-- Grapeshotter of Khaz Modan
-										["g"] = {
-											{	-- Sen'jin Beakblade Longrifle
-												["itemID"] = 164933,	-- Sen'jin Beakblade Longrifle
-												["description"] = "This (Horde) Item will be automaticly learned after buying the Alliance Version."
-											},
-										},
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Claymore of the Prophet
-										["itemID"] = 45074,	-- Claymore of the Prophet
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Dagger of Lunar Purity
-										["itemID"] = 45078,	-- Dagger of Lunar Purity
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Dagger of the Rising Moon
-										["itemID"] = 45077,	-- Dagger of the Rising Moon
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Gnomeragan Bonechopper
-										["itemID"] = 45129,	-- Gnomeragan Bonechopper
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Ironforge Smasher
-										["itemID"] = 45075,	-- Ironforge Smasher
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Silvery Sylvan Stave
-										["itemID"] = 45128,	-- Silvery Sylvan Stave
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Teldrassil Protector
-										["itemID"] = 45076,	-- Teldrassil Protector
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Choker of Spiral Focus
-										["itemID"] = 45155,	-- Choker of Spiral Focus
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Necklace of Valiant Blood
-										["itemID"] = 45154,	-- Necklace of Valiant Blood
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Pendant of Azure Dreams
-										["itemID"] = 45152,	-- Pendant of Azure Dreams
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Susurrating Shell Necklace
-										["itemID"] = 45153,	-- Susurrating Shell Necklace
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Gauntlets of Shattered Pride
-										["itemID"] = 45182,	-- Gauntlets of Shattered Pride
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Cinch of Bonded Servitude
-										["itemID"] = 45184,	-- Cinch of Bonded Servitude
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Girdle of Valorous Defeat
-										["itemID"] = 45160,	-- Girdle of Valorous Defeat
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Sash of Shattering Hearts
-										["itemID"] = 45156,	-- Sash of Shattering Hearts
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Wrap of the Everliving Tree
-										["itemID"] = 45181,	-- Wrap of the Everliving Tree
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Stanchions of Unseatable Furor
-										["itemID"] = 45163,	-- Stanchions of Unseatable Furor
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Treads of Nimble Evasion
-										["itemID"] = 45159,	-- Treads of Nimble Evasion
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Treads of the Glorious Spirit
-										["itemID"] = 45183,	-- Treads of the Glorious Spirit
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-										["races"] = ALLIANCE_ONLY,
-									},
-									{	-- Jouster's Fury
-										["itemID"] = 45131,	-- Jouster's Fury
-										["crs"] = {
-											33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-											33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-											33657, 	-- Irisee <Exodar Quartermaster>
-											33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-											33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-										},
-									},
-									-- Horde Only Items
-									{	-- Axe of the Sen'jin Protector
-										["itemID"] = 45204,	-- Axe of the Sen'jin Protector
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Blade of the Keening Banshee
-										["itemID"] = 45208,	-- Blade of the Keening Banshee
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Greatsword of the Sin'dorei
-										["itemID"] = 45205,	-- Greatsword of the Sin'dorei
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Grimhorn Crusher
-										["itemID"] = 45203,	-- Grimhorn Crusher
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Scalpel of the Royal Apothecary
-										["itemID"] = 45214,	-- Scalpel of the Royal Apothecary
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Sen'jin Beakblade Longrifle
-										["itemID"] = 45210,	-- Sen'jin Beakblade Longrifle
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Spinal Destroyer
-										["itemID"] = 45222,	-- Spinal Destroyer
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Staff of Feral Furies
-										["itemID"] = 45212,	-- Staff of Feral Furies
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Choker of Feral Fury
-										["itemID"] = 45206,	-- Choker of Feral Fury
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Necklace of Stolen Skulls
-										["itemID"] = 45207,	-- Necklace of Stolen Skulls
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Pendant of Emerald Crusader
-										["itemID"] = 45213,	-- Pendant of Emerald Crusader
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Razor's Edge Pendant
-										["itemID"] = 45223,	-- Razor's Edge Pendant
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Gauntlets of Mending Touch
-										["itemID"] = 45216,	-- Gauntlets of Mending Touch
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Clinch of Savage Fury
-										["itemID"] = 45217,	-- Clinch of Savage Fury
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Links of Unquenched Savagery
-										["itemID"] = 45215,	-- Links of Unquenched Savagery
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Sash of Trumpeted Pride
-										["itemID"] = 45209,	-- Sash of Trumpeted Pride
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Waistguard of Equine Fury
-										["itemID"] = 45211,	-- Waistguard of Equine Fury
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Blood-Caked Stompers
-										["itemID"] = 45218,	-- Blood-Caked Stompers
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Treads of the Earnest Squire
-										["itemID"] = 45220,	-- Treads of the Earnest Squire
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Treads of Whispering Dreams
-										["itemID"] = 45221,	-- Treads of Whispering Dreams
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-									{	-- Jouster's Fury
-										["itemID"] = 45219,	-- Jouster's Fury
-										["crs"] = {
-											33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-											33555, 	-- Eliza Killian <Undercity Quartermaster>
-											33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-											33554, 	-- Samamba <Sen'jin Quartermaster>
-											33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
-										},
-										["races"] = HORDE_ONLY,
-									},
-								}
-							},
-						},
-					},
+									i(164933, {	-- Sen'jin Beakblade Longrifle
+										["description"] = "This Horde item will be automatically learned after buying the Alliance version."
+									}),
+								},
+							}),
+							i(45074, {	-- Claymore of the Prophet
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45078, {	-- Dagger of Lunar Purity
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45077, {	-- Dagger of the Rising Moon
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45129, {	-- Gnomeragan Bonechopper
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45075, {	-- Ironforge Smasher
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45128, {	-- Silvery Sylvan Stave
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45076, {	-- Teldrassil Protector
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45155, {	-- Choker of Spiral Focus
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45154, {	-- Necklace of Valiant Blood
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45152, {	-- Pendant of Azure Dreams
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45153, {	-- Susurrating Shell Necklace
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45182, {	-- Gauntlets of Shattered Pride
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45184, {	-- Cinch of Bonded Servitude
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45160, {	-- Girdle of Valorous Defeat
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45156, {	-- Sash of Shattering Hearts
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45181, {	-- Wrap of the Everliving Tree
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45163, {	-- Stanchions of Unseatable Furor
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45159, {	-- Treads of Nimble Evasion
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45183, {	-- Treads of the Glorious Spirit
+								["races"] = ALLIANCE_ONLY,
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							i(45131, {	-- Jouster's Fury
+								["crs"] = {
+									33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
+									33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
+									33657, 	-- Irisee <Exodar Quartermaster>
+									33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+									33653,	-- Rook Hawkfist <Darnassus Quartermaster>
+								},
+							}),
+							-- Horde Only Items
+							i(45204, {	-- Axe of the Sen'jin Protector
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45208, {	-- Blade of the Keening Banshee
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45205, {	-- Greatsword of the Sin'dorei
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45203, {	-- Grimhorn Crusher
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45214, {	-- Scalpel of the Royal Apothecary
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45210, {	-- Sen'jin Beakblade Longrifle
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45222, {	-- Spinal Destroyer
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45212, {	-- Staff of Feral Furies
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45206, {	-- Choker of Feral Fury
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45207, {	-- Necklace of Stolen Skulls
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45213, {	-- Pendant of Emerald Crusader
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45223, {	-- Razor's Edge Pendant
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45216, {	-- Gauntlets of Mending Touch
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45217, {	-- Clinch of Savage Fury
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45215, {	-- Links of Unquenched Savagery
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45209, {	-- Sash of Trumpeted Pride
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45211, {	-- Waistguard of Equine Fury
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45218, {	-- Blood-Caked Stompers
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45220, {	-- Treads of the Earnest Squire
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45221, {	-- Treads of Whispering Dreams
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+							i(45219, {	-- Jouster's Fury
+								["races"] = HORDE_ONLY,
+								["crs"] = {
+									33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+									33555, 	-- Eliza Killian <Undercity Quartermaster>
+									33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+									33554, 	-- Samamba <Sen'jin Quartermaster>
+									33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+								},
+							}),
+						}),
+					}),
 					n(33602, {	-- Anuur <Jewelcrafting Supplies>
-						["coord"] = { 71.4, 20.8 },
-						["groups"] = {
+						["coord"] = { 71.4, 20.8, 118 },
+						["g"] = {
 							currency(61, {	-- Dalaran Jewelcrafter's Token
 								i(42298),	-- Design: Bold Dragon's Eye
 								i(41576),	-- Design: Bold Scarlet Ruby
@@ -1204,9 +1142,10 @@ _.Zones =
 							}),
 						},
 					}),
-					a(n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
-						["coord"] = { 75.2, 21.6 },
-						["groups"] = {
+					n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
+						["coord"] = { 75.2, 21.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(47702),	-- Pauldrons of the Cavalier
 							i(47658),	-- Brimstone Igniter
 							i(47674),	-- Helm of Thunderous Rampage
@@ -1311,10 +1250,11 @@ _.Zones =
 							i(48722),	-- Shard of the Crystal Heart
 							i(48724),	-- Talisman of Resurgence
 						},
-					})),
-					a(n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
-						["coord"] = { 75.4, 21.6 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
+					}),
+					n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
+						["coord"] = { 75.4, 21.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							gs(674, {	-- Kel'Thuzad's Regalia
 								i(47783),	-- Kel'Thuzad's Gloves of Conquest
 								i(47784),	-- Kel'Thuzad's Hood of Conquest
@@ -1431,10 +1371,11 @@ _.Zones =
 								i(48374),	-- Wrynn's Shoulderplates of Conquest
 							}),
 						}),
-					})),
-					h(n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
-						["coord"] = { 75.4, 22.0 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
+					}),
+					n(35580, {	-- Aspirant Naradiel <Triumphant Armor Vendor>
+						["coord"] = { 75.4, 22.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							gs(350, {	-- Zabra's Regalia
 								i(48068),	-- Zabra's Cowl of Conquest
 								i(48071),	-- Zabra's Shoulderpads of Conquest
@@ -1551,10 +1492,11 @@ _.Zones =
 								i(48504),	-- Koltira's Legplates of Conquest
 							}),
 						}),
-					})),
-					h(n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
-						["coord"] = { 75.2, 22.0 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
+					}),
+					n(35576, {	-- Champion Faesrol <Triumphant Armor Vendor>
+						["coord"] = { 75.2, 22.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							un(2, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(350, {	-- Zabra's Regalia
 									un(2, i(48058)),	-- Zabra's Cowl of Triumph
@@ -1673,10 +1615,11 @@ _.Zones =
 								}),
 							})),
 						}),
-					})),
-					a(n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
-						["coord"] = { 75.2, 21.6 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
+					}),
+					n(35575, {	-- Champion Isimode <Triumphant Armor Vendor>
+						["coord"] = { 75.2, 21.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							un(2, i(47557, {	-- Regalia of the Grand Conqueror
 								gs(674, {	-- Kel'Thuzad's Regalia
 									un(2, i(47788)),	-- Kel'Thuzad's Gloves of Triumph
@@ -1796,28 +1739,20 @@ _.Zones =
 								}),
 							})),
 						}),
-					})),
-					a(n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
-						["coord"] = { 76.4, 19.2 },
-						["groups"] = {
+					}),
+					n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
+						["coord"] = { 76.4, 19.2, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(45574),	-- Stormwind Tabard
 							currency(241, {	-- Champion's Seal
 								i(45125),	-- Stormwind Steed
-								{	-- Swift Gray Steed [Human Only]
-									["itemID"] = 46752,	-- Swift Gray Steed
-									["races"] = {
-										1,	-- Human
-									},
-								},
-								{	-- Swift Gray Steed [A - Except Human]
-									["itemID"] = 46758,	-- Swift Grey Steed
-									["races"] = exclude(
-										{ -- Exclude these races
-											1,	-- Human
-										},
-										ALLIANCE_ONLY
-									),
-								},
+								i(46752, {	-- Swift Gray Steed
+									["races"] = { 1 },	-- Human
+								}),
+								i(46758, {	-- Swift Grey Steed
+									["races"] = exclude( { 1 }, ALLIANCE_ONLY ),	-- non-Human Alliance
+								}),
 								i(44974),	-- Elwynn Lamb Pet
 								i(45011),	-- Stormwind Banner Toy
 							}),
@@ -1825,10 +1760,10 @@ _.Zones =
 								i(45718),	-- Stormwind Commendation Badge
 							}),
 						},
-					})),
+					}),
 					n(33853, {	-- Broxel Goldgrasp <Souvenirs>
-						["coord"] = { 73.0, 23.0 },
-						["groups"] = {
+						["coord"] = { 73.0, 23.0, 118 },
+						["g"] = {
 							i(45670),	-- Darnassus Doublet
 							i(45668),	-- Exodar Doublet
 							i(45671),	-- Gnomeregan Doublet
@@ -1842,8 +1777,8 @@ _.Zones =
 						},
 					}),
 					n(34885, {	-- Dame Evniki Kapsalis <Crusader's Quartermaster>
-						["coord"] = { 69.4, 23.1 },
-						["groups"] = {
+						["coord"] = { 69.4, 23.1, 118 },
+						["g"] = {
 							currency(241, {	-- Champion's Seal
 								i(47179),	-- Argent Charger
 								i(47180),	-- Argent Warhorse
@@ -1886,27 +1821,19 @@ _.Zones =
 							}),
 						},
 					}),
-					a(n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
-						["coord"] = { 76.4, 19.4 },
-						["groups"] = {
+					n(33310, {	-- Derrick Brindlebeard <Ironforge Quartermaster>
+						["coord"] = { 76.4, 19.4, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(45577),	-- Ironforge Tabard
 							currency(241, {	-- Champion's Seal
 								i(45586),	-- Ironforge Ram Mount
-								{	-- Swift Violet Ram
-									["itemID"] = 46748,	-- Swift Violet Ram
-									["races"] = {
-										3,	-- Dwarf
-									},
-								},
-								{	-- Swift Violet Ram
-									["itemID"] = 46762,	-- Swift Violet Ram
-									["races"] = exclude(
-										{ -- Exclude these races
-											3,	-- Dwarf
-										},
-										ALLIANCE_ONLY
-									),
-								},
+								i(46748, {	-- Swift Violet Ram
+									["races"] = { 3 },	-- Dwarf
+								}),
+								i(46762, {	-- Swift Violet Ram
+									["races"] = exclude( { 3 }, ALLIANCE_ONLY ),	-- non-Dwarf Alliance
+								}),
 								i(44970),	-- Dun Morogh Cub Pet
 								i(45018),	-- Ironforge Banner Toy
 							}),
@@ -1914,10 +1841,11 @@ _.Zones =
 								i(45717),	-- Ironforge Commendation Badge
 							}),
 						},
-					})),
-					h(n(33556, {	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-						["coord"] = { 76.2, 24.4 },
-						["groups"] = {
+					}),
+					n(33556, {	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+						["coord"] = { 76.2, 24.4, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(45584),	-- Thunder Bluff Tabard
 							currency(241, {	-- Champion's Seal
 								i(46755),	-- Great Golden Kodo
@@ -1929,10 +1857,11 @@ _.Zones =
 								i(45722),	-- Thunder Bluff Commendation Badge
 							}),
 						},
-					})),
-					h(n(33555, {	-- Eliza Killian <Undercity Quartermaster>
-						["coord"] = { 76.4, 24.0 },
-						["groups"] = {
+					}),
+					n(33555, {	-- Eliza Killian <Undercity Quartermaster>
+						["coord"] = { 76.4, 24.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(45583),	-- Undercity Tabard
 							currency(241, {	-- Champion's Seal
 								i(45597),	-- Forsaken Mount
@@ -1944,16 +1873,17 @@ _.Zones =
 								i(45723),	-- Undercity Commendation Badge
 							}),
 						},
-					})),
+					}),
 					n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
-						["coord"] = { 72.2, 20.8 },
-						["groups"] = {
+						["coord"] = { 72.2, 20.8, 118 },
+						["g"] = {
 							i(23817),	-- Schematic: Titanium Toolbox
 						},
 					}),
-					h(n(33553, {	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-						["coord"] = { 76.4, 24.2 },
-						["groups"] = {
+					n(33553, {	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+						["coord"] = { 76.4, 24.2, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(45581),	-- Orgrimmar Tabard
 							currency(241, {	-- Champion's Seal
 								i(45595),	-- Orgrimmar Wolf Mount
@@ -1965,10 +1895,11 @@ _.Zones =
 								i(45719),	-- Orgrimmar Commendation Badge
 							}),
 						},
-					})),
-					a(n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
-						["coord"] = { 76.2, 19.6 },
-						["groups"] = {
+					}),
+					n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
+						["coord"] = { 76.2, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							currency(241, {	-- Champion's Seal
 								i(46813),	-- Silver Convenant Hippogryph
 								i(46815),	-- Quel'dorei Steed
@@ -1976,28 +1907,20 @@ _.Zones =
 								i(46820),	-- Shimmering Wyrmling
 							}),
 						},
-					})),
-					a(n(33657, {	-- Irisee <Exodar Quartermaster>
-						["coord"] = { 76.2, 19.2 },
-						["groups"] = {
+					}),
+					n(33657, {	-- Irisee <Exodar Quartermaster>
+						["coord"] = { 76.2, 19.2, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(45580),	-- Exodar Tabard
 							currency(241, {	-- Champion's Seal
 								i(45590),	-- Exodar Elekk Mount
-								{	-- Great Red Elekk
-									["itemID"] = 46745,	-- Great Red Elekk
-									["races"] = {
-										11,	-- Draenei
-									},
-								},
-								{	-- Great Red Elekk
-									["itemID"] = 46756,	-- Great Red Elekk
-									["races"] = exclude(
-										{ -- Exclude these races
-											11,	-- Draenei
-										},
-										ALLIANCE_ONLY
-									),
-								},
+								i(46745, {	-- Great Red Elekk
+									["races"] = { 11 },	-- Draenei
+								}),
+								i(46756, {	-- Great Red Elekk
+									["races"] = exclude( { 11 }, ALLIANCE_ONLY ),	-- non-Draenei Alliance
+								}),
 								i(44984),	-- Ammen Vale Lashling Pet
 								i(45020),	-- Exodar Banner Toy
 							}),
@@ -2005,10 +1928,11 @@ _.Zones =
 								i(45715),	-- Exodar Commendation Badge
 							}),
 						},
-					})),
-					h(n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
-						["coord"] = { 75.2, 22.0 },
-						["groups"] = {
+					}),
+					n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
+						["coord"] = { 75.2, 22.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(47658),	-- Brimstone Igniter
 							i(47684),	-- Coif of the Brooding Dragon
 							i(47709),	-- Duskstalker Pauldrons
@@ -2113,10 +2037,10 @@ _.Zones =
 							i(48722),	-- Shard of the Crystal Heart
 							i(48724),	-- Talisman of Resurgence
 						},
-					})),
+					}),
 					n(33595, {	-- Mera Mistrunner <Cooking Supplies>
-						["coord"] = { 72.4, 20.8 },
-						["groups"] = {
+						["coord"] = { 72.4, 20.8, 118 },
+						["g"] = {
 							currency(81, {	-- Epicurean's Award
 								i(134020), 	-- Chef's Hat
 								i(43035),	-- Recipe: Blackened Dragonfin
@@ -2147,27 +2071,19 @@ _.Zones =
 							}),
 						},
 					}),
-					a(n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>
-						["coord"] = { 76.4, 19.6 },
-						["groups"] = {
+					n(33650, {	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+						["coord"] = { 76.4, 19.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(45578),	-- Gnomeragan Tabard
 							currency(241, {	-- Champion's Seal
 								i(45589),	-- Gnomeregan Mechanostrider Mount
-								{	-- Turbostrider
-									["itemID"] = 46747,	-- Turbostrider
-									["races"] = {
-										7,	-- Gnomes
-									},
-								},
-								{	-- Turbostrider
-									["itemID"] = 46763,	-- Turbostrider
-									["races"] = exclude(
-										{ -- Exclude these races
-											7,	-- Gnomes
-										},
-										ALLIANCE_ONLY
-									),
-								},
+								i(46747, {	-- Turbostrider
+									["races"] = { 7 },	-- Gnomes
+								}),
+								i(46763, {	-- Turbostrider
+									["races"] = exclude( { 7 }, ALLIANCE_ONLY ),	-- non-Gnome Alliance
+								}),
 								i(45002),	-- Mechanopeep Pet
 								i(45019),	-- Gnomeregan Banner Toy
 							}),
@@ -2175,28 +2091,20 @@ _.Zones =
 								i(45716),	-- Gnomeregan Commendation Badge
 							}),
 						},
-					})),
-					a(n(33653, {	-- Rook Hawkfist <Darnassus Quartermaster>
-						["coord"] = { 76.2, 19.2 },
-						["groups"] = {
+					}),
+					n(33653, {	-- Rook Hawkfist <Darnassus Quartermaster>
+						["coord"] = { 76.2, 19.2, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
 							i(45579),	-- Darnassus Tabard
 							currency(241, {	-- Champion's Seal
 								i(45591),	-- Darnassian Mount
-								{	-- Swift Moonsaber
-									["itemID"] = 46744,	-- Swift Moonsaber
-									["races"] = {
-										4,	-- Night Elves
-									},
-								},
-								{	-- Swift Moonsaber
-									["itemID"] = 46759,	-- Swift Moonsaber
-									["races"] = exclude(
-										{ -- Exclude these races
-											4,	-- Night Elves
-										},
-										ALLIANCE_ONLY
-									),
-								},
+								i(46744, {	-- Swift Moonsaber
+									["races"] = { 4 },	-- Night Elf
+								}),
+								i(46759, {	-- Swift Moonsaber
+									["races"] = exclude( { 4 }, ALLIANCE_ONLY ),
+								}),
 								i(44965),	-- Teldrassil Sproutling Pet
 								i(45021),	-- Darnassus Banner Toy
 							}),
@@ -2204,10 +2112,11 @@ _.Zones =
 								i(45714),	-- Darnassus Commendation Badge
 							}),
 						},
-					})),
-					h(n(33554, {	-- Samamba <Sen'jin Quartermaster>
-						["coord"] = { 76.0, 24.4 },
-						["groups"] = {
+					}),
+					n(33554, {	-- Samamba <Sen'jin Quartermaster>
+						["coord"] = { 76.0, 24.4, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(45582),	-- Darkspear Tabard
 							currency(241, {	-- Champion's Seal
 								i(45593),	-- Darkspear Raptor Mount
@@ -2219,28 +2128,20 @@ _.Zones =
 								i(45720),	-- Sen'jin Commendation Badge
 							}),
 						},
-					})),
-					h(n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>
-						["coord"] = { 76.2, 23.8 },
-						["groups"] = {
+					}),
+					n(33557, {	-- Trellis Morningsun <Silvermoon Quartermaster>
+						["coord"] = { 76.2, 23.8, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(45585),	-- Silvermoon Tabard
 							currency(241, {	-- Champion's Seal
 								i(45596),	-- Silvermoon Mount
-								{	-- Swift Red Hawkstrider
-									["itemID"] = 46751,	-- Swift Red Hawkstrider
-									["races"] = {
-										10,	-- Blood Elves
-									},
-								},
-								{	-- Swift Red Hawkstrider
-									["itemID"] = 46761,	-- Swift Red Hawkstrider
-									["races"] = exclude(
-										{ -- Exclude these races
-											10,	-- Blood Elves
-										},
-										HORDE_ONLY
-									),
-								},
+								i(46751, {	-- Swift Red Hawkstrider
+									["races"] = { 10 },	-- Blood Elf
+								}),
+								i(46761, {	-- Swift Red Hawkstrider
+									["races"] = exclude( { 10 }, HORDE_ONLY ),	-- non-Blood Elf Horde
+								}),
 								i(44982),	-- Enchanted Broom Pet
 								i(45017),	-- Silvermoon Banner Toy
 							}),
@@ -2248,10 +2149,11 @@ _.Zones =
 								i(45721),	-- Silvermoon Commendation Badge
 							}),
 						},
-					})),
-					h(n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
-						["coord"] = { 75.4, 22.0 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
+					}),
+					n(35578, {	-- Valiant Bressia <Triumphant Armor Vendor>
+						["coord"] = { 75.4, 22.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Alliance equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(350, {	-- Zabra's Regalia
@@ -2380,10 +2282,11 @@ _.Zones =
 								}),
 							}),
 						}),
-					})),
-					a(n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
-						["coord"] = { 75.4, 21.6 },
-						["groups"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
+					}),
+					n(35577, {	-- Valiant Laradia <Triumphant Armor Vendor>
+						["coord"] = { 75.4, 21.6, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = bubbleDown({["description"] = "|CFFFF0000Purchasing this exact piece (shared appearances don't work) and letting the 2 hour timer disappear unlocks the Horde equivalent.|r"}, {
 							i(47242, {	-- Trophy of the Crusade
 								-- Priest
 								gs(349, {	-- Velen's Regalia
@@ -2433,13 +2336,13 @@ _.Zones =
 									i(48165),	-- Malfurion's Trousers of Triumph
 								}),
 								-- Rogue
-								gs(349, {	-- VanCleef's Battlegear
+								gs(690, {	-- VanCleef's Battlegear
 									i(48225),	-- VanCleef's Helmet of Triumph
 									i(48227),	-- VanCleef's Pauldrons of Triumph
 									i(48223),	-- VanCleef's Breastplate of Triumph
 									i(48224),	-- VanCleef's Gauntlets of Triumph
 									i(48226),	-- VanCleef's Legplates of Triumph
-									}),
+								}),
 								-- Hunter
 								gs(739, {	-- Windrunner's Battlegear
 									i(48257),	-- Windrunner's Headpiece of Triumph
@@ -2512,10 +2415,11 @@ _.Zones =
 								}),
 							}),
 						}),
-					})),
-					h(n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
-						["coord"] = { 76.2, 24.0 },
-						["groups"] = {
+					}),
+					n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
+						["coord"] = { 76.2, 24.0, 118 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							currency(241, {	-- Champion's Seal
 								i(46814),	-- Sunreaver Dragonhawk
 								i(46816),	-- Sunreaver Hawkstrider
@@ -2523,11 +2427,9 @@ _.Zones =
 								i(46818),	-- Sunreaver Tabard
 							}),
 						},
-					})),
+					}),
 				}),
 			},
-			["lvl"] = 67,
-			["maps"] = { 118 },
 		}),
 	}),
 };

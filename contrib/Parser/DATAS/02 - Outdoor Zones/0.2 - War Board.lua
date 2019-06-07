@@ -3,15 +3,21 @@
 ---------------------------------------------------
 _.Zones =
 {
-	h(i(155915, {	-- Special Duty Assignments
+	i(155915, {	-- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
 					Orgrimmar: 206109, 206116
 					Thunder Bluff: 207323
+					Undercity: 207324
 			]]--
-			q(28790),	-- A Personal Summons
+			q(28790, {	-- A Personal Summons
+				["races"] = HORDE_ONLY,
+			}),
+			q(28825, {	-- A Personal Summons
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(29390),	-- Guardians of Hyjal: Call of the Ancients
 			q(29388),	-- Guardians of Hyjal: Firelands Invasion!
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
@@ -32,20 +38,27 @@ _.Zones =
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
 			q(29157),	-- The Zandalari Menace
+			q(28572),	-- Warchief's Command: Arathi Highlands!
 			q(28493),	-- Warchief's Command: Ashenvale!
 			q(28496),	-- Warchief's Command: Azshara!
+			q(28580),	-- Warchief's Command: Badlands!
 			q(28711),	-- Warchief's Command: Borean Tundra!
 			q(39198),	-- Warchief's Command: Blade's Edge Mountains!
+			q(28667),	-- Warchief's Command: Burning Steppes!
 			q(27722),	-- Warchief's Command: Deepholm!
 			q(28548),	-- Warchief's Command: Desolace!
 			q(28554),	-- Warchief's Command: Dustwallow Marsh!
+			q(28577),	-- Warchief's Command: Eastern Plaguelands!
 			q(28542),	-- Warchief's Command: Felwood!
 			q(28510),	-- Warchief's Command: Feralas!
 			q(39206),	-- Warchief's Command: Grizzly Hills!
+			q(28560),	-- Warchief's Command: Ghostlands!
+			q(28571),	-- Warchief's Command: Hillsbrad Foothills!
 			q(49537),	-- Warchief's Command: Icecrown!
 			q(27721),	-- Warchief's Command: Mount Hyjal!
-			q(28494),	-- Warchief's Command: Northern Barrens!
 			q(39201),	-- Warchief's Command: Netherstorm!
+			q(28494),	-- Warchief's Command: Northern Barrens!
+			q(28688),	-- Warchief's Command: Northern Stranglethorn Vale!
 			q(28711),	-- Warchief's Command: Northrend!
 			q(28705),	-- Warchief's Command: Outland!
 			q(49532),	-- Warchief's Command: Shadowmoon Valley!
@@ -54,13 +67,17 @@ _.Zones =
 			q(28549),	-- Warchief's Command: Southern Barrens!
 			q(49536),	-- Warchief's Command: Storm Peaks!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!
+			q(28677),	-- Warchief's Command: Swamp of Sorrows!
 			q(28509),	-- Warchief's Command: Tanaris!
 			q(39182),	-- Warchief's Command: Terokkar Forest!
+			q(28704),	-- Warchief's Command: The Cape of Stranglethorn!
+			q(28574),	-- Warchief's Command: The Hinterlands!
 			q(28504),	-- Warchief's Command: Thousand Needles!
 			q(28717),	-- Warchief's Command: Twilight Highlands!
 			q(28557),	-- Warchief's Command: Uldum!
 			q(28526),	-- Warchief's Command: Un'Goro Crater!
 			q(27718),	-- Warchief's Command: Vashj'ir!
+			q(28575),	-- Warchief's Command: Western Plaguelands!
 			q(28545),	-- Warchief's Command: Winterspring!
 			q(39180),	-- Warchief's Command: Zangarmarsh!
 			q(49534),	-- Warchief's Command: Zul'Drak!
@@ -68,8 +85,8 @@ _.Zones =
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
 		["collectible"] = false,
 		["races"] = HORDE_ONLY,
-	})),
-	a(i(156474, {	-- Special Duty Assignments
+	}),
+	i(156474, {	-- Special Duty Assignments
 		["groups"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
@@ -109,6 +126,9 @@ _.Zones =
 			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
+			q(28565, {	-- Hero's Call: Wetlands!
+				["isBreadcrumb"] = true,
+			}),
 			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 			q(39181),	-- Hero's Call: Zangarmarsh!
 			q(49552),	-- Hero's Call: Zul'Drak!
@@ -154,5 +174,5 @@ _.Zones =
 		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
 		["collectible"] = false,
 		["races"] = ALLIANCE_ONLY,
-	})),
+	}),
 };

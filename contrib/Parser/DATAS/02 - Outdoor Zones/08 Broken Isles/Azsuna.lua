@@ -17,6 +17,7 @@ _.Zones =
 			["g"] = {
 				n(-169, { 	-- Emissary Quests
 					q(42420, {	-- Court of Farondis
+						["repeatable"] = true,
 						["g"] = {
 							i(157825, {	-- Farondis Lockbox
 								["g"] = {
@@ -541,9 +542,9 @@ _.Zones =
 								},
 							})),
 						},
-						["repeatable"] = true,
 					}),
 					q(42422, {	-- The Wardens
+						["repeatable"] = true,
 						["g"] = {
 							i(157827, {	-- Warden's Field Kit
 								["g"] = {
@@ -1072,10 +1073,10 @@ _.Zones =
 								},
 							})),
 						},
-						["repeatable"] = true,
 					}),
-					n(-206, {	-- Paragon
+					n(-206,  {	-- Paragon
 						q(46745, {	-- Supplies from the Court
+							["repeatable"] = true,
 							["g"] = {
 								i(152102, {	-- Farondis Chest
 									i(147806),	-- Cloudwing Hippogryph
@@ -1084,58 +1085,52 @@ _.Zones =
 									i(147806),	-- Cloudwing Hippogryph
 								})),
 							},
-							["repeatable"] = true,
 						}),
 						q(46749, {	-- Supplies From the Wardens
+							["repeatable"] = true,
 							["g"] = {
-								{	-- Warden's Supply Kit
-									["itemID"] = 152107,	-- Warden's Supply Kit
-									["g"] = {
-										{	-- Sira's Extra Cloak
-											["itemID"] = 147843,	-- Sira's Extra Cloak
-										},
-									},
-								},
+								i(152107, {	-- Warden's Supply Kit
+									i(147843),	-- Sira's Extra Cloak (TOY!)
+								}),
 								un(2, i(146902, {	-- Warden's Supply Kit
 									i(147843),	-- Sira's Extra Cloak
 								})),
 							},
-							["repeatable"] = true,
 						}),
 					}),
 				}),
 				n(-228, {	-- Flight Paths
 					fp(1613, {	-- Azurewing Repose, Azsuna
-						["coord"] = { 48.4, 28 },
+						["coord"] = { 48.4, 28.0, 630 },
 					}),
 					fp(1615, {	-- Challiane's Terrace, Azsuna
-						["coord"] = { 40.8, 9 },
+						["coord"] = { 40.8, 9.00, 630 },
 					}),
 					fp(1846, {	-- Faronaar (Eagle)
-						["coord"] = { 24.4, 43 },
+						["coord"] = { 24.4, 43.0, 630 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 					fp(1859, {	-- Felblaze Ingress, Azsuna
-						["coord"] = { 63.8, 28.4 },
+						["coord"] = { 63.8, 28.4, 630 },
 					}),
 					fp(1861, {	-- Illidari Perch, Azsuna
-						["coord"] = { 31.8, 46.2 },
+						["coord"] = { 31.8, 46.2, 630 },
 					}),
 					fp(1622, {	-- Illidari Stand, Azsuna
-						["coord"] = { 44.6, 43.8 },
+						["coord"] = { 44.6, 43.8, 630 },
 					}),
 					fp(1845, {	-- Isle of the Watchers (Eagle)
-						["coord"] = { 51, 79.8 },
+						["coord"] = { 51.0, 79.8, 630 },
 						["classes"] = { 3 },	-- Hunter
 					}),
 					fp(1633, {	-- Shackle's Den, Azsuna
-						["coord"] = { 56.2, 59 },
+						["coord"] = { 56.2, 59.0, 630 },
 					}),
 					fp(1837, {	-- Wardens' Redoubt, Azsuna
-						["coord"] = { 48.2, 73 },
+						["coord"] = { 48.2, 73.0, 630 },
 					}),
 					fp(1860, {	-- Watchers' Aerie, Azsuna
-						["coord"] = { 51.8, 82.2 },
+						["coord"] = { 51.8, 82.2, 630 },
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
@@ -1233,17 +1228,114 @@ _.Zones =
 					}),	
 				}),
 				n(-38, { 	-- Profession
-					prof(356, {	-- Fishing
-						n(-10067, { 	-- Artifact
-							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
-							["lvl"] = 110,
+					prof(171, {	-- Alchemy
+						q(39390, {	-- A Mysterious Text
+							["sourceQuests"] = { 39566 },	-- The Search for Knowledge
+							["qg"] = 243392,	-- Alchemy Book
+						}),
+					}),
+					prof(164, {	-- Blacksmithing
+						q(41633, {	-- Work Order: Leystone Greaves (WQ)
+							["lvl"] = 110,	-- WQ is 110+ only
+							["qg"] = 107376,	-- Veridis Fallon
 							["g"] = {
-								{
-									["itemID"] = 133887,	-- Luminous Pearl (Item)
-									["questID"] = 40960,	-- Luminous Pearl (Quest)
-								}
+								i(123931),	-- Recipe: Leystone Greaves (Rank 3)
 							},
 						}),
+					}),
+					prof(333, {	-- Enchanting
+						q(40169),	-- Crossroads Rendezvous
+						q(39923, {	-- Down to the Core
+							["qg"] = 99420,	-- Kharmeera
+							["g"] = {
+								i(128566),	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
+								i(128567),	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
+								i(128568),	-- Formula: Enchant Ring - Binding of Mastery (Rank 1)
+								i(128569),	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
+							},
+						}),
+						q(39907, {	-- Elven Enchantments
+							["qg"] = 107139,	-- Enchantress Ilanya
+							["sourceQuests"] = { 39918 },	-- The Absent Priestess
+						}),
+						q(39905, {	-- Ringing True
+							["qg"] = 90317,	-- Jace Darkweaver
+							["g"] = {
+								i(128562),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
+								i(128563),	-- Formula: Enchant Ring - Word of Haste (Rank 1)
+								i(128564),	-- Formula: Enchant Ring - Word of Mastery (Rank 1)
+								i(128565),	-- Formula: Enchant Ring - Word of Versatility (Rank 1)
+							},
+						}),
+						q(39914, {	-- Sentinel's Final Duty
+							["qg"] = 98159,	-- Alynblaze
+							["g"] = {
+								i(128577),	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
+								i(141912),	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
+							},
+						}),
+						q(39918, {	-- The Absent Priestess
+							["sourceQuests"] = { 40130 },	-- Washed Clean
+							["qg"] = 98698,	-- Priestess Driana
+							["g"] = {
+								i(128578),	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
+								i(141913),	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
+							},
+						}),
+						q(39910, {	-- The Druid's Debt
+							["qg"] = 98381,	-- Merrus Dawnwind
+							["g"] = {
+								i(128576),	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
+								i(141911),	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
+							},
+						}),
+					}),
+					prof(202, {	-- Engineering
+						q(40856, {	-- It'll Cost You
+							["sourceQuest"] = 40855,	-- Our Man in Azsuna
+							["qg"] = 102195,	-- Fargo Flintlocke
+							["requireSkill"] = 202,
+						}),
+						q(40876, {	-- 'Locke, Stock and Barrel
+							["qg"] = 102196,	-- Fargo Flintlocke
+							["g"] = {
+								-- Schematic: Better Headguns
+								--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
+								{	-- Blink-Trigger Headgun (Rank 2)
+									["recipeID"] = 198991,	-- Blink-Trigger Headgun (Rank 2)
+								},
+								{	-- Bolt-Action Headgun (Rank 2)
+									["recipeID"] = 198993,	-- Bolt-Action Headgun (Rank 2)
+								},
+								{	-- Reinforced Headgun (Rank 2)
+									["recipeID"] = 198994,	-- Reinforced Headgun (Rank 2)
+								},
+								{	-- Tactical Headgun (Rank 2)
+									["recipeID"] = 198992,	-- Tactical Headgun (Rank 2)
+								},
+							},
+						}),
+						q(40859, {	-- The Latest Fashion: Headguns!
+							["sourceQuest"] = 40856,	-- It'll Cost You
+							["qg"] = 102195,	-- Fargo Flintlocke
+							["requireSkill"] = 202,
+							["g"] = {
+								recipe(198939),	-- Schematic: Blink-Trigger Headgun
+								recipe(198965),	-- Schematic: Tactical Headgun
+								recipe(198966),	-- Schematic: Bolt-Action Headgun
+								recipe(198967),	-- Schematic: Reinforced Headgun
+							},
+						}),
+						q(40858, {	-- The Missing Pieces
+							["sourceQuest"] = 40855,	-- Our Man in Azsuna
+							["qg"] = 102195,	-- Fargo Flintlocke
+							["requireSkill"] = 202,
+							["g"] = {
+								recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
+							},
+						}),
+					}),
+					prof(356, {	-- Fishing
 						ach(10596, {	-- Bigger Fish to Fry
 							n(-218, {		-- Coastal
 								i(133722, {		-- Axefish Lure
@@ -1411,13 +1503,147 @@ _.Zones =
 								["creatureID"] = 120266
 							}),
 						}),
-						{	-- Schematic: Reaves Module: Wormhole Generator Mode
-							["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
-						},
-						{	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
-							["itemID"] = 137775,	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
+						n(-10067,  {	-- Artifact
+							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
+							["lvl"] = 110,
+							["g"] = {
+								{	-- Luminous Pearl
+									["itemID"] = 133887,	-- Luminous Pearl (Item)
+									["questID"] = 40960,	-- Luminous Pearl (Quest)
+								}
+							},
+						}),
+						i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
+						i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 							["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
-						},
+						}),
+					}),
+					prof(182, {	-- Herbalism
+						q(40013, {	-- Aethril Sample
+							["itemID"] = 129117,	-- Aethril Sample
+						}),
+						i(129135, {	-- Ragged Strips of Silk
+							q(40015),	-- Ragged Strips of Silk
+						}),
+						q(40017, {	-- A Slip of the Hand
+							--recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)(Spell cast on you to learn the following recipe.  Not collectible)
+							recipe(193294), -- Herbalism Technique: Aethril (Rank 3)
+						}),
+						i(129122, {	-- Felwort Sample
+							q(40040, { --Felwort Sample
+								--recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)(Spell cast on you to learn the following recipe.  Not collectible)
+								recipe(193307),	-- Herbalism Technique: Felwort (Rank 1)
+							}),
+						}),
+					}),
+					prof(773, {	-- Inscription
+						q(39938, {	-- Containing the Demon Within
+							["g"] = {
+								i(137743),	-- Technique: Glyph of Fallow Wings
+							},
+							["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+						}),
+						q(40060, {	-- Containing the Demon Within
+							["g"] = {
+								i(137743),	-- Technique: Glyph of Fallow Wings
+							},
+							["classes"] = { 12 },
+						}),
+						q(39941, {	-- Control is Key
+							["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+						}),
+						q(40063, {	-- Control is Key
+							["classes"] = { 12 },
+						}),
+						q(39935, {	-- The Price of Power
+							["g"] = {
+								i(137741),	-- Technique: Glyph of Fel Touched Souls
+							},
+							["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+						}),
+						q(40057, {	-- The Price of Power
+							["g"] = {
+								i(137741),	-- Technique: Glyph of Fel Touched Souls
+							},
+							["classes"] = { 12 },
+						}),
+						q(39940, {	-- Runes of Power
+							i(137742),	-- Technique: Glyph of Crackling Flames
+						}),
+						q(39943, {	-- The Burdens of Hunting
+							["g"] = {
+								i(137744),	-- Technique: Glyph of Tattered Wings
+							},
+							["qgs"] = {
+								97734,	-- Zaria Shadowheart
+								98026,	-- Baric Stormrunner
+							},
+							["sourceQuests"] = {
+								39938,	-- Containing the Demon Within
+								40060,	-- Containing the Demon Within
+								39940,	-- Runes of Power
+								39941,	-- Control is Key
+								40063,	-- Control is Key
+							},
+						}),
+					}),
+					prof(165, {	-- Leatherworking
+						q(40188, {	-- Best Served Cold
+							["g"] = {
+								-- note there is no pattern item for these, so just listing the spell IDs
+								recipe(194735),	-- Battlebound Armbands (Rank 1)
+								recipe(194740),	-- Battlebound Grips (Rank 1)
+							},
+							["qg"] = 98964,	-- Celea
+						}),
+						q(40208, {	-- Eye of Azshara: Scales of the Sea
+							["g"] = {
+								i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
+							},
+							["qg"] = 98964,	-- Celea
+						}),
+						q(40194, {	-- Reclaimed Cargo
+							["g"] = {
+								i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
+								i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
+							},
+							["qg"] = 98964,	-- Celea
+						}),
+						q(40207, {	-- Scales of the Arcane
+							["g"] = {
+								i(137905),	-- Recipe: Battlebound Grips (Rank 2)
+							},
+							["qg"] = 98964,	-- Celea
+						}),
+						q(40209, {	-- Scales of the Earth
+							["g"] = {
+								i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
+							},
+							["qg"] = 98964,	-- Celea
+						}),
+						q(40327, {	-- Testing the Metal
+							["g"] = {
+								i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
+							},
+							["qg"] = 99689,	-- Taldranis
+						}),
+					}),
+					prof(393, {	-- Skinning
+						q(40145, {	-- Under Down
+							["sourceQuests"] = { 40144 },	-- Glielle
+							["requireSkill"] = 393,	-- Skinning
+							["coord"] = { 47.0, 45.2, 630 },
+							["qg"] = 98791,	-- Glielle
+							["g"] = {
+								recipe(194165),	-- Skinning Technique: Stormscale (Rank 2)
+							},
+						}),
+						q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
+							["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
+							["requireSkill"] = 393,	-- Skinning
+							["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
+							["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
+						}),
 					}),
 				}),
 				n(-17, { 	-- Quests
@@ -1914,281 +2140,6 @@ _.Zones =
 							i(140625),	-- Waistban of the Hatecoil Oracles
 						}),
 					}),  
-					n(-38, { 	 -- Professions
-						n(-180, {	-- Alchemy
-							["g"] = {
-								q(39390, {	-- A Mysterious Text
-									["qg"] = 243392,	-- Alchemy Book
-									["sourceQuests"] = { 39566 },	-- The Search for Knowledge
-								}),
-							},
-							["requireSkill"] = 171,
-						}),
-						n(-181, {	-- Blacksmithing
-							n(-34, {	-- World Quests
-								{	-- Work Order: Leystone Greaves
-									["questID"] = 41633,	-- Work Order: Leystone Greaves
-									--["isWQ"] = true,		-- Enables WQ filter [Maybe one day]
-									["lvl"] = 110,			-- WQ is 110+ only
-									["qg"] = 107376,	-- Veridis Fallon
-									["g"] = {
-										{	-- Recipe: Leystone Greaves (Rank 3)
-											["itemID"]= 123931,	-- Recipe: Leystone Greaves (Rank 3)
-										},
-									},
-								},
-							}),
-						}),
-						n(-182, {	-- Enchanting
-							["g"] = {
-								q(40169),	-- Crossroads Rendezvous
-								{	-- Down to the Core
-									["questID"] = 39923,	-- Down to the Core
-									["qg"] = 99420,	-- Kharmeera
-									["g"] = {
-										{	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
-											["itemID"] = 128566,	-- Formula: Enchant Ring - Binding of Critical Strike (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
-											["itemID"] = 128567,	-- Formula: Enchant Ring - Binding of Haste (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Binding of Mastery (Rank 1)
-											["itemID"] = 128568,	-- Formula: Enchant Ring - Binding of Mastery (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
-											["itemID"] = 128569,	-- Formula: Enchant Ring - Binding of Versatility (Rank 1)
-										},
-									},
-								},
-								q(39907, {	-- Elven Enchantments
-									["qg"] = 107139,	-- Enchantress Ilanya
-									["sourceQuests"] = { 39918 },	-- The Absent Priestess
-								}),
-								{	-- Ringing True
-									["questID"] = 39905,	-- Ringing True
-									["qg"] = 90317,	-- Jace Darkweaver
-									["g"] = {
-										{	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
-											["itemID"] = 128562,	-- Formula: Enchant Ring - Word of Critical Strike (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Word of Haste (Rank 1)
-											["itemID"] = 128563,	-- Formula: Enchant Ring - Word of Haste (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Word of Mastery (Rank 1)
-											["itemID"] = 128564,	-- Formula: Enchant Ring - Word of Mastery (Rank 1)
-										},
-										{	-- Formula: Enchant Ring - Word of Versatility (Rank 1)
-											["itemID"] = 128565,	-- Formula: Enchant Ring - Word of Versatility (Rank 1)
-										},
-									},
-								},
-								{	-- Sentinel's Final Duty
-									["questID"] = 39914,	-- Sentinel's Final Duty
-									["qg"] = 98159,	-- Alynblaze
-									["g"] = {
-										{	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
-											["itemID"] = 128577,	-- Formula: Enchant Neck - Mark of the Distant Army (Rank 1)
-										},
-										{	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
-											["itemID"] = 141912,	-- Formula: Enchant Neck - Mark of the Trained Soldier (Rank 1)
-										},
-									},
-								},
-								{	-- The Absent Priestess
-									["questID"] = 39918,	-- The Absent Priestess
-									["qg"] = 98698,	-- Priestess Driana
-									["sourceQuests"] = { 40130 },	-- Washed Clean
-									["g"] = {
-										{	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
-											["itemID"] = 128578,	-- Formula: Enchant Neck - Mark of the Hidden Satyr (Rank 1)
-										},
-										{	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
-											["itemID"] = 141913,	-- Formula: Enchant Neck - Mark of the Ancient Priestess (Rank 1)
-										},
-									},
-								},
-								{	-- The Druid's Debt
-									["questID"] = 39910,	-- The Druid's Debt
-									["qg"] = 98381,	-- Merrus Dawnwind
-									["g"] = {
-										{	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
-											["itemID"] = 128576,	-- Formula: Enchant Neck - Mark of the Claw (Rank 1)
-										},
-										{	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
-											["itemID"] = 141911,	-- Formula: Enchant Neck - Mark of the Heavy Hide (Rank 1)
-										},
-									},
-								},
-							},
-							["requireSkill"] = 333,
-						}),
-						n(-183, {	-- Engineering
-							["requireSkill"] = 202,
-							["g"] = {
-								q(40856, {	-- It'll Cost You
-									["sourceQuest"] = 40855,	-- Our Man in Azsuna
-									["qg"] = 102195,	-- Fargo Flintlocke
-									["requireSkill"] = 202,
-								}),
-								q(40876, {	-- 'Locke, Stock and Barrel
-									["qg"] = 102196,	-- Fargo Flintlocke
-									["g"] = {
-										-- Schematic: Better Headguns
-										--["recipeID"] = 201611,	-- Schematic: Better Headguns(Spell that is cast on you to learn the following recipes.  Not collectible)
-										{	-- Blink-Trigger Headgun (Rank 2)
-											["recipeID"] = 198991,	-- Blink-Trigger Headgun (Rank 2)
-										},
-										{	-- Bolt-Action Headgun (Rank 2)
-											["recipeID"] = 198993,	-- Bolt-Action Headgun (Rank 2)
-										},
-										{	-- Reinforced Headgun (Rank 2)
-											["recipeID"] = 198994,	-- Reinforced Headgun (Rank 2)
-										},
-										{	-- Tactical Headgun (Rank 2)
-											["recipeID"] = 198992,	-- Tactical Headgun (Rank 2)
-										},
-									},
-								}),
-								q(40859, {	-- The Latest Fashion: Headguns!
-									["sourceQuest"] = 40856,	-- It'll Cost You
-									["qg"] = 102195,	-- Fargo Flintlocke
-									["requireSkill"] = 202,
-									["g"] = {
-										recipe(198939),	-- Schematic: Blink-Trigger Headgun
-										recipe(198965),	-- Schematic: Tactical Headgun
-										recipe(198966),	-- Schematic: Bolt-Action Headgun
-										recipe(198967),	-- Schematic: Reinforced Headgun
-									},
-								}),
-								q(40858, {	-- The Missing Pieces
-									["sourceQuest"] = 40855,	-- Our Man in Azsuna
-									["qg"] = 102195,	-- Fargo Flintlocke
-									["requireSkill"] = 202,
-									["g"] = {
-										recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
-									},
-								}),
-							},
-						}),
-						n(-184, {	-- Herbalism
-							["g"] = {
-								i(129117, {	-- Aethril Sample
-									q(40013),	-- Aethril Sample
-								}),
-								i(129135, {	-- Ragged Strips of Silk
-									q(40015),	-- Ragged Strips of Silk
-								}),
-								q(40017, {	-- A Slip of the Hand
-									--recipe(193417),	-- Herbalism Technique: Aethril (Rank 3)(Spell cast on you to learn the following recipe.  Not collectible)
-									recipe(193294), -- Herbalism Technique: Aethril (Rank 3)
-								}),
-								i(129122, {	-- Felwort Sample
-									q(40040, { --Felwort Sample
-										--recipe(193430),	-- Herbalism Technique: Felwort (Rank 1)(Spell cast on you to learn the following recipe.  Not collectible)
-										recipe(193307),	-- Herbalism Technique: Felwort (Rank 1)
-									}),
-								}),
-							},
-							["requireSkill"] = 182,
-						}),
-						n(-185, {	-- Inscription
-							["g"] = {
-								q(39938, {	-- Containing the Demon Within
-									["g"] = {
-										i(137743),	-- Technique: Glyph of Fallow Wings
-									},
-									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
-								}),
-								q(40060, {	-- Containing the Demon Within
-									["g"] = {
-										i(137743),	-- Technique: Glyph of Fallow Wings
-									},
-									["classes"] = { 12 },
-								}),
-								q(39941, {	-- Control is Key
-									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
-								}),
-								q(40063, {	-- Control is Key
-									["classes"] = { 12 },
-								}),
-								q(39935, {	-- The Price of Power
-									["g"] = {
-										i(137741),	-- Technique: Glyph of Fel Touched Souls
-									},
-									["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
-								}),
-								q(40057, {	-- The Price of Power
-									["g"] = {
-										i(137741),	-- Technique: Glyph of Fel Touched Souls
-									},
-									["classes"] = { 12 },
-								}),
-								q(39940, {	-- Runes of Power
-									i(137742),	-- Technique: Glyph of Crackling Flames
-								}),
-								q(39943, {	-- The Burdens of Hunting
-									["g"] = {
-										i(137744),	-- Technique: Glyph of Tattered Wings
-									},
-									["qgs"] = {
-										97734,	-- Zaria Shadowheart
-										98026,	-- Baric Stormrunner
-									},
-									["sourceQuests"] = {
-										39938,	-- Containing the Demon Within
-										40060,	-- Containing the Demon Within
-										39940,	-- Runes of Power
-										39941,	-- Control is Key
-										40063,	-- Control is Key
-									},
-								}),
-							},
-							["requireSkill"] = 773,
-						}),
-						n(-187, {	-- Leatherworking
-							["g"] = bubbleDown({["requireSkill"] = 165}, {	-- Leatherworking
-								q(40188, {	-- Best Served Cold
-									["g"] = {
-										-- note there is no pattern item for these, so just listing the spell IDs
-										recipe(194735),	-- Battlebound Armbands (Rank 1)
-										recipe(194740),	-- Battlebound Grips (Rank 1)
-									},
-									["qg"] = 98964,	-- Celea
-								}),
-								q(40208, {	-- Eye of Azshara: Scales of the Sea
-									["g"] = {
-										i(137904),	-- Recipe: Battlebound Warhelm (Rank 2)
-									},
-									["qg"] = 98964,	-- Celea
-								}),
-								q(40194, {	-- Reclaimed Cargo
-									["g"] = {
-										i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
-										i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
-									},
-									["qg"] = 98964,	-- Celea
-								}),
-								q(40207, {	-- Scales of the Arcane
-									["g"] = {
-										i(137905),	-- Recipe: Battlebound Grips (Rank 2)
-									},
-									["qg"] = 98964,	-- Celea
-								}),
-								q(40209, {	-- Scales of the Earth
-									["g"] = {
-										i(137903),	-- Recipe: Battlebound Leggings (Rank 2)
-									},
-									["qg"] = 98964,	-- Celea
-								}),
-								q(40327, {	-- Testing the Metal
-									["g"] = {
-										i(137907),	-- Recipe: Battlebound Hauberk (Rank 2)
-									},
-									["qg"] = 99689,	-- Taldranis
-								}),
-							}),
-						}),
-					}),
 					ach(10994, {	-- A Glorious Campaign
 						cl(5, {	-- Priest
 							q(43375, {	-- An Ample Supply
@@ -2317,11 +2268,6 @@ _.Zones =
 								i(138824),
 							}),
 						}),
-					}),
-					n(-221, {	-- Bonus Objectives
-						["g"] = {
-							q(36811),	-- Retake Faronaar
-						},
 					}),
         --[[ These quests will be organized soon™
 					q(41173),	-- A Beacon of Hope
@@ -2544,7 +2490,6 @@ _.Zones =
 					q(39916),	-- Turnabout Betrayal
 					q(44874),	-- Unbeleyvable
 					q(41182),	-- Uncovering the Orb of Sciallax
-					q(40145),	-- Under Down
 					q(45126),	-- Unlikely Seduction
 					q(41180),	-- Unspeakable Power
 					q(40130),	-- Washed Clean					
@@ -3073,291 +3018,6477 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 					},
 				}),	
-				n(0, { 		-- Zone Drops
-					["g"] = {
-						i(144315),	-- Formula: Enchant Neck - Mark of the Quick (Rank 2)
-						i(137924),	-- Recipe: Gravenscale Armbands (Rank 3)
-						i(137726),	-- Schematic: Leystone Buoy
-						i(137729),	-- Technique: Codex of the Tranquil Mind
-						i(141043),	-- Technique: Glyph of Arachnophobia
-						i(141035),	-- Technique: Glyph of Fel Wings
-						i(141060),	-- Technique: Glyph of Pebbles
-						i(141054),	-- Technique: Glyph of Smolder
-						i(141032),	-- Technique: Glyph of the Chilled Shell
-						i(141039),	-- Technique: Glyph of the Doe
-						i(141049),	-- Technique: Glyph of the Hook
-						i(141064),	-- Technique: Glyph of the Shivarra
-						i(141051),	-- Technique: Glyph of the Trident
+				n(0, { 	-- Zone Drops (Note: have to list crs separately for every item because some items (recipes) don't drop from every single mob in the zone)
+					["g"] = {	
+						{	-- Recipe: Gravenscale Armbands (Rank 3)
+							["itemID"] = 137924,
+							["description"] = "Drops from any giant in Azsuna.",
+							["crs"] = {
+								89097,	-- Cove Skrog
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								102066,	-- Ocean Guardian
+								111434,	-- Sea King Tidross
+								88094,	-- Sea Skrog
+								108521,	-- Sea Skrog
+								95939,	-- Skrog Tidestomper
+								91796,	-- Skrog Wavecrasher
+							},
+						},
+						{	-- Recipe: Formula: Enchant Neck - Mark of the Quick (Rank 2)
+							["itemID"] = 144315,
+							["crs"] = {
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								106788,	-- Animated Construct
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								89393,	-- Azsuna Mana Wyrm
+								111752,	-- Beguiled Inquisitor
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108153,	-- Blacksail Salvage "Expert"
+								108133,	-- Blacksail Salvor
+								107172,	-- Bloodstained Ritualist
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								90660,	-- Burning Hellion
+								106630,	-- Burrowing Leyworm
+								89056,	-- Captain Feargus
+								107323,	-- Chattering Devil
+								109677,	-- Chief Treasurer Jabrill
+								89386,	-- Cliffwing Hippogryph
+								111508,	-- Darkfire Felwing
+								90648,	-- Deathly Vintage
+								107267,	-- Eredar Navigator
+								107368,	-- Eredar Soulmage
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								108451,	-- Ever-burning Familiar
+								91074,	-- Fallen Priestess
+								107251,	-- Fathom-Commander Eksis
+								88090,	-- Fathom-Commander Zarrin
+								89731,	-- Fel Seeker
+								107335,	-- Felflame Imp
+								101943,	-- Felguard Shocktrooper
+								110805,	-- Felsoul Corrupter
+								107102,	-- Felsurge Spiderling
+								107103,	-- Felsurge Websprinner
+								103972,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								107740,	-- Fiendish Trickster
+								107545,	-- Fiendish Trickster
+								108137,	-- First Mate Oxswain
+								109584,	-- Fjordun
+								107098,	-- Flashwyrm
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								103231,	-- Grim Inquisitor
+								89024,	-- Hatecoil Fathom-Stalker
+								107447,	-- Hatecoil Harpooner
+								111636,	-- Hatecoil Oracle
+								88084,	-- Hatecoil Raider
+								88086,	-- Hatecoil Riptail
+								90109,	-- Hatecoil Slavemaster
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								108349,	-- Icy Familiar
+								93619,	-- Infernal Brutalizer
+								107269,	-- Inquisitor Tivos
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								91128,	-- Lagoon Basilisk
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								90134,	-- Llothien Grizzly
+								91269,	-- Llothien Owl
+								90313,	-- Llothien Prowler
+								107696,	-- Lord Tash'irel
+								91048,	-- Lost Laborer
+								90526,	-- Lost Laborer
+								90985,	-- Lost Tormenter
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								111751,	-- Malignant Stalker
+								107135,	-- Manastalker
+								103176,	-- Mo'arg Crusher
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								90005,	-- Nightfallen Construct
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90217,	-- Normantis the Deposed
+								91371,	-- Old 'n' Oil
+								86535,	-- Overseer Lykill
+								90901,	-- Pridelord Meowl
+								111630,	-- Salteye Beast-Tamer
+								107439,	-- Salteye Beastfeeder
+								88099,	-- Salteye Hookblade
+								88100,	-- Salteye Shoresprinter
+								88871,	-- Salteye Spearwaver
+								88101,	-- Salteye Tide-Shaman
+								111645,	-- Saltscale Lurker
+								111641,	-- Saltsea Droplet
+								105919,	-- Screaming Felbat
+								91073,	-- Shadowfiend
+								111767,	-- Shadowflame Fiend
+								110110,	-- Shoalfin Warrior
+								111469,	-- Skitterer
+								92034,	-- Slavehunter Zsanesh
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								103363,	-- Soultorn Jailer
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								101554,	-- Spikebacked Scuttler
+								113388,	-- Squigglefin Crablord
+								110111,	-- Squigglefin Sandrunner
+								89811,	-- Subjugated Murloc
+								105360,	-- Timeworn Raider
+								105361,	-- Timeworn Riptail
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								110436,	-- Timeworn Warrior
+								90480,	-- Tormented Stagwing
+								90390,	-- Tyndrissen
+								111460,	-- Underlight Crusader
+								111459,	-- Underlight Sentry
+								102507,	-- Underlight Supplicant
+								110073,	-- Ursaaj
+								109575,	-- Valakar the Thirsty
+								89650,	-- Valiyaka the Stormbringer
+								109349,	-- Veil Shadowrunner
+								107625,	-- Vengeful Soul
+								107624,	-- Vengeful Soul
+								107628,	-- Vengeful Soul
+								111633,	-- Wandering Shellback								
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90380,	-- Withered Mana-Rager
+								89801,	-- Withered Scavenger
+								107133,	-- Wrathguard
+								90230,	-- Wrathguard Invader
+							},
+						},
+						{	-- Schematic: Leystone Buoy
+							["itemID"] = 137726,
+							["crs"] = {
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								99630,	-- Bitterbrine Scavenger
+								95940,	-- Bitterbrine Scavenger
+								99629,	-- Bitterbrine Scavenger
+								106786,	-- Bitterbrine Slave
+								106785,	-- Bitterbrine Slave
+								106787,	-- Bitterbrine Slave
+								89283,	-- Bitterbrine Venomer
+								106990,	-- Chief Bitterbrine
+								101467,	-- Jaggen-Ra
+								89053,	-- Mak'rana Warrior
+								111645,	-- Saltscale Lurker
+							},
+						},
+						{	-- Technique: Glyph of Arachnophobia
+							["itemID"] = 141043,
+							["crs"] = {
+								111454,	-- Bestrix
+								89283,	-- Bitterbrine Venomer
+								120074,	-- Felcrawler Chaosweaver
+								120071,	-- Felcrawler Dreadfang
+								107440,	-- Felsurge Hunter
+								107102,	-- Felsurge Spiderling
+								107103,	-- Felsurge Websprinner
+								89053,	-- Mak'rana Warrior
+								108163,	-- Scumshell Crab
+								89288,	-- Scuttleback Pincher
+								111469,	-- Skitterer
+								111456,	-- Spiderling
+								101554,	-- Spikebacked Scuttler
+								111479,	-- Venomspinner
+							},
+						},
+						{	-- Technique: Glyph of Fel Wings
+							["itemID"] = 141035,
+							["crs"] = {
+								90173,	-- Arcana Stalker
+								107368,	-- Eredar Soulmage
+								90661,	-- Eredar Supplicant
+								89731,	-- Fel Seeker
+								101943,	-- Felguard Shocktrooper
+								116027,	-- Felhound
+								107440,	-- Felsurge Hunter
+								107102,	-- Felsurge Spiderling
+								107103,	-- Felsurge Websprinner
+								111929,	-- Felsworn Defiler
+								118836,	-- Felwing Terror
+								90659,	-- Legion Skyterror
+								107135,	-- Manastalker
+								103176,	-- Mo'arg Crusher
+								116204,	-- Savage Dreadstalker
+								93556,	-- Savage Felbat
+								105919,	-- Screaming Felbat
+								111469,	-- Skitterer
+								111456,	-- Spiderling
+								103180,	-- Vile Doombringer
+								90241,	-- Vile Stalker
+								90164,	-- Warbringer Mox'na
+								90230,	-- Wrathguard Invader
+							},
+						},
+						{	-- Technique: Glyph of Smolder
+							["itemID"] = 141054,
+							["crs"] = {
+								108339,	-- Ancient Flamecaller
+								106630,	-- Burrowing Leyworm
+								108451,	-- Ever-burning Familiar
+								109326,	-- Leystone Spiderling
+								108343,	-- Smoldering Familiar
+								109338,	-- Sorcerite
+								101554,	-- Spikebacked Scuttler
+							},
+						},
+						{	-- Technique: Glyph of the Chilled Shell
+							["itemID"] = 141032,
+							["crs"] = {
+								108340,	-- Ancient Chillwitch
+								108337,	-- Ancient Frostwhisperer
+								108454,	-- Glacial Familiar
+								108349,	-- Icy Familiar
+								108343,	-- Smoldering Familiar
+								102064,	-- Torrentius
+							},
+						},
+						{	-- Technique: Glyph of the Hook
+							["itemID"] = 141049,
+							["crs"] = {
+								89653,	-- Gangamesh
+								88089,	-- Hatecoil Enchantress
+								107367,	-- Hatecoil Slaver
+								91128,	-- Lagoon Basilisk
+								89865,	-- Mrrgrl the Tide Reaver
+								109124,	-- Pondswallow Frog
+								107439,	-- Salteye Beastfeeder
+								113866,	-- Salteye Clam Vanquisher
+								110573,	-- Salteye Fishmonger
+								88099,	-- Salteye Hookblade
+								88100,	-- Salteye Shoresprinter
+								109174,	-- Salteye Spearguard
+								88101,	-- Salteye Tide-Shaman
+								108163,	-- Scumshell Crab
+								89652,	-- Shallows Heron
+							},
+						},
+						{	-- Technique: Glyph of the Shivarra
+							["itemID"] = 141064,
+							["crs"] = {
+								116025,	-- Abyssal Devourer
+								106582,	-- Blargemal
+								106629,	-- Blerg
+								91100,	-- Brogozog
+								90660,	-- Burning Hellion
+								92447,	-- Chaos Spawn
+								107323,	-- Chattering Devil
+								118753,	-- Corruptor Hel'drath
+								116297,	-- Doom Lord Kro'nak
+								116281,	-- Doomsworn Harbinger
+								116282,	-- Doomsworn Sorcerer
+								116428,	-- Dreadflame Champion
+								116521,	-- Dreadflame Corruptor
+								118783,	-- Dreadflame Corruptor
+								117067,	-- Dro'zek
+								107368,	-- Eredar Soulmage
+								90661,	-- Eredar Supplicant
+								89731,	-- Fel Seeker
+								118782,	-- Felblade Devastator
+								92445,	-- Felguard Invader
+								101943,	-- Felguard Shocktrooper
+								107740,	-- Fiendish Trickster
+								107545,	-- Fiendish Trickster
+								116219,	-- Foul Soulkeeper
+								103231,	-- Grim Inquisitor
+								116205,	-- Hellwing Doombringer
+								93619,	-- Infernal Brutalizer
+								118012,	-- Kazruul
+								110909,	-- Kol'roz the Everburning
+								103176,	-- Mo'arg Crusher
+								89350,	-- Oublion
+								117647,	-- Portal-Keeper V'thaal
+								91184,	-- Sharazaan
+								107362,	-- Soulreaver
+								103363,	-- Soultorn Jailer
+								118000,	-- Subjugator Val'rek
+								103180,	-- Vile Doombringer
+								90241,	-- Vile Stalker
+								107113,	-- Vorthax
+								107133,	-- Wrathguard
+								116026,	-- Wrathguard Doomblade
+								90230,	-- Wrathguard Invader
+							},
+						},
+						{	-- Technique: Glyph of the Trident
+							["itemID"] = 141051,
+							["crs"] = {
+								88855,	-- Athissa
+								107127,	-- Brawlgoth
+								89097,	-- Cove Skrog
+								107251,	-- Fathom-Commander Eksis
+								88090,	-- Fathom-Commander Zarrin
+								89816,	-- Golza the Iron Fin
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								110468,	-- Kroniss
+								91459,	-- Naga Brute
+								88099,	-- Salteye Hookblade
+								88101,	-- Salteye Tide-Shaman
+								108521,	-- Sea Skrog
+								92034,	-- Slavehunter Zsanesh
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+							},
+						},
 						i(121015, {	-- Academy Faculty Pin
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121012, {	-- Azurewing Defender's Drape
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121028, {	-- Azurewing Pendant
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121027, {	-- Azurewing Signet
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121016, {	-- Corsair's Spyglass
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(141285, {	-- Nar'thalas Writ
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(141284, {	-- Nor'danil Ampoule
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121014, {	-- Preserved Blue Dragon Scale
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121049, {	-- Temporal Scholar's Cowl
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121054, {	-- Temporal Scholar's Shoulderpads
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121052, {	-- Temporal Scholar's Robe
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121055, {	-- Temporal Scholar's Wristwraps
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121050, {	-- Temporal Scholar's Handwraps
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121048, {	-- Temporal Scholar's Cord
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),						
 						i(121051, {	-- Temporal Scholar's Leggings
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121053, {	-- Temporal Scholar's Sandals
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121021, {	-- Llothien Hood
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121023, {	-- Llothien Shoulders
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121022, {	-- Llothien Jerkin
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121017, {	-- Llothien Bindings
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121020, {	-- Llothien Gloves
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121024, {	-- Llothien Waistband
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121019, {	-- Llothien Britches
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121018, {	-- Llothien Boots
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121044, {	-- Faronaar Chain Helm
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121046, {	-- Faronaar Chain Spaulders
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121047, {	-- Faronaar Chain Vest
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121041, {	-- Faronaar Chain Bracers
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121042, {	-- Faronaar Chain Gauntlets
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121040, {	-- Faronaar Chain Belt
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121045, {	-- Faronaar Chain Legguards
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121043, {	-- Faronaar Chain Greaves
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121004, {	-- Rhut'van Helm
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121006, {	-- Rhut'van Pauldrons
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121001, {	-- Rhut'van Breastplate
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121008, {	-- Rhut'van Vambraces
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121002, {	-- Rhut'van Gauntlets
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121003, {	-- Rhut'van Girdle
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121005, {	-- Rhut'van Legplates
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
 						i(121007, {	-- Rhut'van Sabatons
 							["bonusID"] = 1812,
+							["crs"] = {
+								108721,	-- Ael'Yith
+								107715,	-- Agonized Spirit
+								108338,	-- Ancient Arcanist
+								108340,	-- Ancient Chillwitch
+								108339,	-- Ancient Flamecaller
+								108335,	-- Ancient Flamewraith
+								108337,	-- Ancient Frostwhisperer
+								107657,	-- Arcanist Shal'iman
+								109641,	-- Arcanor Prime
+								88855,	-- Athissa
+								89385,	-- Azsuna Fox
+								89013,	-- Azsuna Lion Seal
+								111752,	-- Beguiled Inquisitor
+								110114,	-- Bitterbrine Miner
+								89284,	-- Bitterbrine Saltcaster
+								89283,	-- Bitterbrine Venomer
+								108146,	-- Blacksail Gunner
+								108139,	-- Blacksail Keelhauler
+								108133,	-- Blacksail Salvor
+								106629,	-- Blerg
+								89050,	-- Boss Whalebelly
+								107127,	-- Brawlgoth
+								108453,	-- Brilliant Familiar
+								107105,	-- Broodmother Lizax
+								111766,	-- Burning Fiend
+								89056,	-- Captain Feargus
+								109677,	-- Chief Treasurer Jabrill
+								108255,	-- Coura, Mistress of Arcana
+								89097,	-- Cove Skrog
+								89391,	-- Cursefeather Owl
+								111508,	-- Darkfire Felwing
+								112637,	-- Devious Sunrunner
+								91579,	-- Doomlord Kazrok
+								90661,	-- Eredar Supplicant
+								103162,	-- Eredar Supplicant
+								91756,	-- Eternal Guardian
+								91074,	-- Fallen Priestess
+								88090,	-- Fathom-Commander Zarrin
+								107335,	-- Felflame Imp
+								111821,	-- Felsworn Adept
+								102059,	-- Felsworn Adept
+								103972,	-- Felsworn Betrayer
+								111823,	-- Felsworn Betrayer
+								111929,	-- Felsworn Defiler
+								109584,	-- Fjordun
+								89884,	-- Flog the Captain-Eater
+								119515,	-- Foul Dreadbringer
+								119516,	-- Frenzied Dedicant
+								89653,	-- Gangamesh
+								108454,	-- Glacial Familiar
+								108441,	-- Grulk
+								88870,	-- Hatecoil Ambusher
+								88089,	-- Hatecoil Enchantress
+								89024,	-- Hatecoil Fathom-Stalker
+								109154,	-- Hatecoil Gargantuan
+								111481,	-- Hatecoil Guardian
+								107447,	-- Hatecoil Harpooner
+								112727,	-- Hatecoil Myrmidon
+								88084,	-- Hatecoil Raider
+								111438,	-- Hatecoil Ravager
+								88086,	-- Hatecoil Riptail
+								89802,	-- Hatecoil Skrog
+								90109,	-- Hatecoil Slavemaster
+								107367,	-- Hatecoil Slaver
+								89025,	-- Hatecoil Spitespeaker
+								88087,	-- Hatecoil Stormcaller
+								111457,	-- Hatecoil Stormspeaker
+								89696,	-- Horned Leatherback
+								107136,	-- Houndmaster Stroxis
+								108349,	-- Icy Familiar
+								109630,	-- Immolian
+								90662,	-- Imp Mother Fecunda
+								90803,	-- Infernal Lord
+								90389,	-- Ishkaneth
+								113804,	-- Justice Bentzel
+								113811,	-- Kelli Greenfield
+								110909,	-- Kol'roz the Everburning
+								110468,	-- Kroniss
+								89199,	-- Lady Sssurine
+								107363,	-- Legion Felsmith
+								107216,	-- Legion Jailer
+								107201,	-- Legion Willbreaker
+								91265,	-- Llothien Fox
+								91269,	-- Llothien Owl
+								90663,	-- Lord Perdition
+								90526,	-- Lost Laborer
+								111939,	-- Lysanis Shadesoul
+								89053,	-- Mak'rana Warrior
+								107135,	-- Manastalker
+								109653,	-- Marblub the Massive
+								93622,	-- Mortiferous
+								110619,	-- Mother Ozram
+								91459,	-- Naga Brute
+								107328,	-- Netherflame Infernal
+								106695,	-- Nightborne Animator
+								106782,	-- Nightborne Foehunter
+								109826,	-- Nightfallen Hungerer
+								90616,	-- Nightfallen Overseer
+								90621,	-- Nightglaive the Traitor
+								102066,	-- Ocean Guardian
+								86535,	-- Overseer Lykill
+								108348,	-- Potent Familiar
+								89101,	-- Prince Oceanus
+								102666,	-- Reef Ravager
+								88099,	-- Salteye Hookblade
+								111598,	-- Salteye Oracle
+								88100,	-- Salteye Shoresprinter
+								102338,	-- Salteye Skrog-Hunter
+								88871,	-- Salteye Spearwaver
+								111586,	-- Salteye Warrior
+								116204,	-- Savage Dreadstalker
+								111434,	-- Sea King Tidross
+								108521,	-- Sea Skrog
+								88888,	-- Sentry Brute
+								111571,	-- Siltshore Crab
+								93513,	-- Skrog Ambassador
+								108343,	-- Smoldering Familiar
+								107362,	-- Soulreaver
+								91431,	-- Spectral Student
+								111456,	-- Spiderling
+								113388,	-- Squigglefin Crablord
+								113387,	-- Squigglefin Wavecaller
+								113810,	-- Steve McClory
+								109594,	-- Stormfeather
+								89850,	-- The Oracle
+								109620,	-- The Whisperer
+								89803,	-- Tide Breaker
+								108450,	-- Timeless Coldwight
+								108446,	-- Timeless Leymage
+								108447,	-- Timeless Pyromancer
+								105360,	-- Timeworn Raider
+								105362,	-- Timeworn Stormcaller
+								110347,	-- Timeworn Taskmaster
+								102064,	-- Torrentius
+								90390,	-- Tyndrissen
+								110073,	-- Ursaaj
+								89650,	-- Valiyaka the Stormbringer
+								109351,	-- Veil Prowler
+								109349,	-- Veil Shadowrunner
+								107628,	-- Vengeful Soul
+								111479,	-- Venomspinner
+								90379,	-- Withered Exile
+								90318,	-- Withered Fanatic
+								90377,	-- Withered Leyfeeder
+								90380,	-- Withered Mana-Rager
+								110102,	-- Withered Ravager
+								89801,	-- Withered Scavenger
+								121039,	-- Wrathguard Harbinger
+							},
 						}),
-					},
-					["crs"] = {
-						108721,	-- Ael'Yith
-						107715,	-- Agonized Spirit
-						108338,	-- Ancient Arcanist
-						108340,	-- Ancient Chillwitch
-						108339,	-- Ancient Flamecaller
-						108335,	-- Ancient Flamewraith
-						108337,	-- Ancient Frostwhisperer
-						107657,	-- Arcanist Shal'iman
-						109641,	-- Arcanor Prime
-						88855,	-- Athissa
-						89385,	-- Azsuna Fox
-						89013,	-- Azsuna Lion Seal
-						111752,	-- Beguiled Inquisitor
-						110114,	-- Bitterbrine Miner
-						89284,	-- Bitterbrine Saltcaster
-						89283,	-- Bitterbrine Venomer
-						108146,	-- Blacksail Gunner
-						108139,	-- Blacksail Keelhauler
-						108133,	-- Blacksail Salvor
-						106629,	-- Blerg
-						89050,	-- Boss Whalebelly
-						107127,	-- Brawlgoth
-						108453,	-- Brilliant Familiar
-						107105,	-- Broodmother Lizax
-						111766,	-- Burning Fiend
-						89056,	-- Captain Feargus
-						109677,	-- Chief Treasurer Jabrill
-						108255,	-- Coura, Mistress of Arcana
-						89097,	-- Cove Skrog
-						89391,	-- Cursefeather Owl
-						111508,	-- Darkfire Felwing
-						112637,	-- Devious Sunrunner
-						91579,	-- Doomlord Kazrok
-						90661,	-- Eredar Supplicant
-						103162,	-- Eredar Supplicant
-						91756,	-- Eternal Guardian
-						91074,	-- Fallen Priestess
-						88090,	-- Fathom-Commander Zarrin
-						107335,	-- Felflame Imp
-						111821,	-- Felsworn Adept
-						102059,	-- Felsworn Adept
-						103972,	-- Felsworn Betrayer
-						111823,	-- Felsworn Betrayer
-						111929,	-- Felsworn Defiler
-						109584,	-- Fjordun
-						89884,	-- Flog the Captain-Eater
-						119515,	-- Foul Dreadbringer
-						119516,	-- Frenzied Dedicant
-						89653,	-- Gangamesh
-						108454,	-- Glacial Familiar
-						108441,	-- Grulk
-						88870,	-- Hatecoil Ambusher
-						88089,	-- Hatecoil Enchantress
-						89024,	-- Hatecoil Fathom-Stalker
-						109154,	-- Hatecoil Gargantuan
-						111481,	-- Hatecoil Guardian
-						107447,	-- Hatecoil Harpooner
-						112727,	-- Hatecoil Myrmidon
-						88084,	-- Hatecoil Raider
-						111438,	-- Hatecoil Ravager
-						88086,	-- Hatecoil Riptail
-						89802,	-- Hatecoil Skrog
-						90109,	-- Hatecoil Slavemaster
-						107367,	-- Hatecoil Slaver
-						89025,	-- Hatecoil Spitespeaker
-						88087,	-- Hatecoil Stormcaller
-						111457,	-- Hatecoil Stormspeaker
-						89696,	-- Horned Leatherback
-						107136,	-- Houndmaster Stroxis
-						108349,	-- Icy Familiar
-						109630,	-- Immolian
-						90662,	-- Imp Mother Fecunda
-						90803,	-- Infernal Lord
-						90389,	-- Ishkaneth
-						113804,	-- Justice Bentzel
-						113811,	-- Kelli Greenfield
-						110909,	-- Kol'roz the Everburning
-						110468,	-- Kroniss
-						89199,	-- Lady Sssurine
-						107363,	-- Legion Felsmith
-						107216,	-- Legion Jailer
-						107201,	-- Legion Willbreaker
-						91265,	-- Llothien Fox
-						91269,	-- Llothien Owl
-						90663,	-- Lord Perdition
-						90526,	-- Lost Laborer
-						111939,	-- Lysanis Shadesoul
-						89053,	-- Mak'rana Warrior
-						107135,	-- Manastalker
-						109653,	-- Marblub the Massive
-						93622,	-- Mortiferous
-						110619,	-- Mother Ozram
-						91459,	-- Naga Brute
-						107328,	-- Netherflame Infernal
-						106695,	-- Nightborne Animator
-						106782,	-- Nightborne Foehunter
-						109826,	-- Nightfallen Hungerer
-						90616,	-- Nightfallen Overseer
-						90621,	-- Nightglaive the Traitor
-						102066,	-- Ocean Guardian
-						86535,	-- Overseer Lykill
-						108348,	-- Potent Familiar
-						89101,	-- Prince Oceanus
-						102666,	-- Reef Ravager
-						88099,	-- Salteye Hookblade
-						111598,	-- Salteye Oracle
-						88100,	-- Salteye Shoresprinter
-						102338,	-- Salteye Skrog-Hunter
-						88871,	-- Salteye Spearwaver
-						111586,	-- Salteye Warrior
-						116204,	-- Savage Dreadstalker
-						111434,	-- Sea King Tidross
-						108521,	-- Sea Skrog
-						88888,	-- Sentry Brute
-						111571,	-- Siltshore Crab
-						93513,	-- Skrog Ambassador
-						108343,	-- Smoldering Familiar
-						107362,	-- Soulreaver
-						91431,	-- Spectral Student
-						111456,	-- Spiderling
-						113388,	-- Squigglefin Crablord
-						113387,	-- Squigglefin Wavecaller
-						113810,	-- Steve McClory
-						109594,	-- Stormfeather
-						89850,	-- The Oracle
-						109620,	-- The Whisperer
-						89803,	-- Tide Breaker
-						108450,	-- Timeless Coldwight
-						108446,	-- Timeless Leymage
-						108447,	-- Timeless Pyromancer
-						105360,	-- Timeworn Raider
-						105362,	-- Timeworn Stormcaller
-						110347,	-- Timeworn Taskmaster
-						102064,	-- Torrentius
-						90390,	-- Tyndrissen
-						110073,	-- Ursaaj
-						89650,	-- Valiyaka the Stormbringer
-						109351,	-- Veil Prowler
-						109349,	-- Veil Shadowrunner
-						107628,	-- Vengeful Soul
-						111479,	-- Venomspinner
-						90379,	-- Withered Exile
-						90318,	-- Withered Fanatic
-						90377,	-- Withered Leyfeeder
-						90380,	-- Withered Mana-Rager
-						110102,	-- Withered Ravager
-						89801,	-- Withered Scavenger
-						121039,	-- Wrathguard Harbinger
 					},
 				}),
 				n(-40, {    -- Legacy

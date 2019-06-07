@@ -5,209 +5,165 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
-			["groups"] = {
-				n(-38, {	-- Professions
-					n(-194, {	-- Fishing
-						["groups"] = {
-							{
-								["achievementID"] = 5849,
-								["groups"] = {
-									{	-- Craving Crayfish
-										["questID"] = 29349,
-										["qg"] = 3028,	-- Kah Mistrunner
-										["coords"] = {
-											{ 56.12, 46.34, 88 },
-										},
-										["isDaily"] = true,
-										["groups"] = {
-											{	-- Craving Crayfish
-												["criteriaID"] = 4,	-- Craving Crayfish
-											},
-											{	-- Bag of Shiny Things
-												["itemID"] = 67414,	-- Bag of Shiny Things
-												["g"] = {
-													{	-- Strand Crawler
-														["itemID"] = 44983,	-- Strand Crawler
-													},
-													{	-- Weather-Beaten Fishing Hat
-														["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-													},
-												},
-											},
-										},
-									},
-									{	-- Pond Predators
-										["questID"] = 29345,
-										["qg"] = 3028,	-- Kah Mistrunner
-										["coords"] = {
-											{ 56.12, 46.34, 88 },
-										},
-										["isDaily"] = true,
-										["groups"] = {
-											{	-- Pond Predators
-												["criteriaID"] = 1,	-- Pond Predators
-											},
-											{	-- Bag of Shiny Things
-												["itemID"] = 67414,	-- Bag of Shiny Things
-												["g"] = {
-													{	-- Strand Crawler
-														["itemID"] = 44983,	-- Strand Crawler
-													},
-													{	-- Weather-Beaten Fishing Hat
-														["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-													},
-												},
-											},
-										},
-									},
-									{	-- Shiny Baubles
-										["questID"] = 29354,
-										["qg"] = 3028,	-- Kah Mistrunner
-										["coords"] = {
-											{ 56.12, 46.34, 88 },
-										},
-										["isDaily"] = true,
-										["groups"] = {
-											{	-- Shiny Baubles
-												["criteriaID"] = 5,	-- Shiny Baubles
-											},
-											{	-- Bag of Shiny Things
-												["itemID"] = 67414,	-- Bag of Shiny Things
-												["g"] = {
-													{	-- Strand Crawler
-														["itemID"] = 44983,	-- Strand Crawler
-													},
-													{	-- Weather-Beaten Fishing Hat
-														["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-													},
-												},
-											},
-										},
-									},
-									{	-- The Race to Restock
-										["questID"] = 29348,
-										["qg"] = 3028,	-- Kah Mistrunner
-										["coords"] = {
-											{ 56.12, 46.34, 88 },
-										},
-										["isDaily"] = true,
-										["groups"] = {
-											{	-- The Race to Restock
-												["criteriaID"] = 3,	-- The Race to Restock
-											},
-											{	-- Bag of Shiny Things
-												["itemID"] = 67414,	-- Bag of Shiny Things
-												["g"] = {
-													{	-- Strand Crawler
-														["itemID"] = 44983,	-- Strand Crawler
-													},
-													{	-- Weather-Beaten Fishing Hat
-														["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-													},
-												},
-											},
-										},
-									},
-									{	-- The Ring's the Thing
-										["questID"] = 29346,
-										["qg"] = 3028,	-- Kah Mistrunner
-										["coords"] = {
-											{ 56.12, 46.34, 88 },
-										},
-										["isDaily"] = true,
-										["groups"] = {
-											{	-- The Ring's the Thing
-												["criteriaID"] = 2,	-- The Ring's the Thing
-											},
-											{	-- Bag of Shiny Things
-												["itemID"] = 67414,	-- Bag of Shiny Things
-												["g"] = {
-													{	-- Strand Crawler
-														["itemID"] = 44983,	-- Strand Crawler
-													},
-													{	-- Weather-Beaten Fishing Hat
-														["itemID"] = 33820,	-- Weather-Beaten Fishing Hat
-													},
-												},
-											},
-										},
-									},
-								},
-							},
-							{	-- Music Roll: Mulgore Plains
-								["itemID"] = 122214,	-- Music Roll: Mulgore Plains
-								["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
-								["coords"] = {
-									{ 28.61, 24.61, 88 },
-								},
-							},
-						},
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 356,
+			n(-38, {	-- Professions
+				prof(356, {	-- Fishing
+					n(-4, {	-- Achievements
+						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					n(-192, {	-- Cooking
-						["groups"] = {
-							{
-								["achievementID"] = 5843,
-								["groups"] = {
-									{	-- Corn Mash
-										["questID"] = 29364,
-										["qg"] = 3026,	-- Aska Mistrunner
-										["isDaily"] = true,
-										["groups"] = {
-											{
-												["criteriaID"] = 4,
-											}
-										},
-									},
-									{	-- "Magic" Mushrooms
-										["questID"] = 29362,
-										["qg"] = 3026,	-- Aska Mistrunner
-										["isDaily"] = true,
-										["groups"] = {
-											{
-												["criteriaID"] = 2,
-											}
-										},
-									},
-									{	-- Mulgore Spice Bread
-										["questID"] = 29363,
-										["qg"] = 3026,	-- Aska Mistrunner
-										["isDaily"] = true,
-										["groups"] = {
-											{
-												["criteriaID"] = 3,
-											}
-										},
-									},
-									{	-- Perfectly Picked Portions
-										["questID"] = 29365,
-										["qg"] = 3026,	-- Aska Mistrunner
-										["isDaily"] = true,
-										["groups"] = {
-											{
-												["criteriaID"] = 5,
-											}
-										},
-									},
-									{	-- Pining for Nuts
-										["questID"] = 29358,
-										["qg"] = 3026,	-- Aska Mistrunner
-										["isDaily"] = true,
-										["groups"] = {
-											{
-												["criteriaID"] = 1,
-											}
-										},
-									},
-								},
+					n(-17, { 	-- Quests
+						q(29349, {	-- Craving Crayfish
+							["qg"] = 3028,	-- Kah Mistrunner
+							["coord"] = { 56.12, 46.34, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5849, crit(4)),	-- Fish or Cut Bait: Thunder Bluff
+								i(67414, {	-- Bag of Shiny Things
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
 							},
-						},
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 185,
+						}),
+						q(29345, {	-- Pond Predators
+							["qg"] = 3028,	-- Kah Mistrunner
+							["coord"] = { 56.12, 46.34, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5849, crit(1)),	-- Fish or Cut Bait: Thunder Bluff
+								i(67414, {	-- Bag of Shiny Things
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
+							},
+						}),
+						q(29354, {	-- Shiny Baubles
+							["qg"] = 3028,	-- Kah Mistrunner
+							["coord"] = { 56.12, 46.34, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5849, crit(5)),	-- Fish or Cut Bait: Thunder Bluff
+								i(67414, {	-- Bag of Shiny Things
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
+							},
+						}),
+						q(29348, {	-- The Race to Restock
+							["qg"] = 3028,	-- Kah Mistrunner
+							["coord"] = { 56.12, 46.34, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5849, crit(3)),	-- Fish or Cut Bait: Thunder Bluff
+								i(67414, {	-- Bag of Shiny Things
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
+							},
+						}),
+						q(29346, {	-- The Ring's the Thing
+							["qg"] = 3028,	-- Kah Mistrunner
+							["coord"] = { 56.12, 46.34, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 356,	-- Fishing
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5849, crit(2)),	-- Fish or Cut Bait: Thunder Bluff
+								i(67414, {	-- Bag of Shiny Things
+									i(44983),	-- Strand Crawler
+									i(33820),	-- Weather-Beaten Fishing Hat
+									i(45991),	-- Bone Fishing Pole
+									i(45992),	-- Jeweled Fishing Pole
+								}),
+							},
+						}),
+					}),
+					i(122214, {	-- Music Roll: Mulgore Plains
+						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
+						["coord"] = { 28.61, 24.61, 88 },
 					}),
 				}),
-			},
+				prof(185, {	-- Cooking
+					n(-4, {	-- Achievements
+						ach(5843, {	-- Let's Do Lunch: Thunder Bluff
+							["races"] = HORDE_ONLY,
+						}),
+					}),
+					n(-17, { 	-- Quests
+						q(29364, {	-- Corn Mash
+							["qg"] = 3026,	-- Aska Mistrunner
+							["coord"] = { 51.2, 52.2, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 185,	-- Cooking
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5843, crit(4)),	-- Let's Do Lunch: Thunder Bluff
+								currency(81),	-- Epicurean's Award
+							},
+						}),
+						q(29362, {	-- "Magic" Mushrooms
+							["qg"] = 3026,	-- Aska Mistrunner
+							["coord"] = { 51.2, 52.2, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 185,	-- Cooking
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5843, crit(2)),	-- Let's Do Lunch: Thunder Bluff
+								currency(81),	-- Epicurean's Award
+							},
+						}),
+						q(29363, {	-- Mulgore Spice Bread
+							["qg"] = 3026,	-- Aska Mistrunner
+							["coord"] = { 51.2, 52.2, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 185,	-- Cooking
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5843, crit(3)),	-- Let's Do Lunch: Thunder Bluff
+								currency(81),	-- Epicurean's Award
+							},
+						}),
+						q(29365, {	-- Perfectly Picked Portions
+							["qg"] = 3026,	-- Aska Mistrunner
+							["coord"] = { 51.2, 52.2, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 185,	-- Cooking
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5843, crit(3)),	-- Let's Do Lunch: Thunder Bluff
+								currency(81),	-- Epicurean's Award
+							},
+						}),
+						q(29358, {	-- Pining for Nuts
+							["qg"] = 3026,	-- Aska Mistrunner
+							["coord"] = { 51.2, 52.2, 88 },
+							["isDaily"] = true,
+							["requireSkill"] = 185,	-- Cooking
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								ach(5843, crit(1)),	-- Let's Do Lunch: Thunder Bluff
+								currency(81),	-- Epicurean's Award
+							},
+						}),
+					}),
+				}),
+			}),
 		}),
 	}),
 };
