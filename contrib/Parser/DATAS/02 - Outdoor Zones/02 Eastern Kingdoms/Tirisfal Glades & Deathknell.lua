@@ -314,7 +314,8 @@ _.Zones =
 					}),
 					q(6323, {	-- Ride to the Undercity
 						["qg"] = 43124,	-- Anette Williams
-						["sourceQuests"] = { 6321 },	-- Supplying Brill
+						["coord"] = { 58.8, 51.8, 18 },
+						["sourceQuest"] = 6321,	-- Supplying Brill
 						["races"] = { 5 },	-- Undead
 					}),
 					qh(25005, {	-- Speak with Sevren
@@ -326,6 +327,7 @@ _.Zones =
 					}),
 					q(6321, {	-- Supplying Brill
 						["qg"] = 1745,	-- Deathguard Morris
+						["coord"] = { 60.2, 52.4, 18 },
 						["races"] = { 5 },	-- Undead
 					}),
 					qh(25012, {	-- Take to the Skies

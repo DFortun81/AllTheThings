@@ -9,9 +9,11 @@ _.Zones =
 				n(-38, {	-- Profession
 					prof(356, {	-- Fishing
 						["groups"] = {
+							n(-4, {	-- Achievements
+								ach(5850), 	-- Fish or Cut Bait: Undercity
+							}),
 							n(-17, { 	-- Quests
 								["groups"] = {
-									ach(5850), 	-- Fish or Cut Bait: Undercity
 									q(29317, {	-- Fish Head
 										["qg"] = 4573,	-- Armand Cromwell
 										["coord"] = { 62.2, 44.6, 90 },
@@ -98,8 +100,10 @@ _.Zones =
 					}),
 					prof(185, {	-- Cooking
 						["groups"] = {
-							n(-17, { 	-- Quests
+							n(-4, {	-- Achievements
 								ach(5844),	-- Let's Do Lunch: Undercity
+							}),
+							n(-17, { 	-- Quests
 								q(29333, {	-- Escargot A Go-Go
 									["qg"] = 4552,	-- Eunice Burch
 									["coord"] = { 62.2, 44.6, 90 },

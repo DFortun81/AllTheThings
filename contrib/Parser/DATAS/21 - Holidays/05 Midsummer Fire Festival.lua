@@ -1987,12 +1987,22 @@ _.Holidays =  bubbleDown({["u"] = 21},
 						["sourceQuests"] = { 11886, },	-- Unusual Activity
 						["maps"] = { 63, },	-- Ashenvale
 					},
-					{
-						["questID"] = 12012,	-- Inform the Elder
+					q(12012, {	-- Inform the Elder
 						["qg"] = 25324,		 -- Earthen Ring Guide
-						["sourceQuests"] = { 11891, },	-- An Innocent Disguise
-						["maps"] = { 63, },	-- Ashenvale
-					},
+						["sourceQuest"] = 11891,	-- An Innocent Disguise
+						["maps"] = { 63 },	-- Ashenvale
+					}),
+--[[				-- To Do
+					qa(29092),	-- Inform the Elder
+					qh(11925),	-- More Torch Catching
+					qh(11926),	-- More Torch Tossing
+					q(11954),	-- Striking Back
+					q(11917),	-- Striking Back
+					q(11947),	-- Striking Back
+					q(11948),	-- Striking Back
+					q(11952),	-- Striking Back
+					q(11953),	-- Striking Back
+]]--
 				},
 			}),
 			n(-2, {	-- Vendors

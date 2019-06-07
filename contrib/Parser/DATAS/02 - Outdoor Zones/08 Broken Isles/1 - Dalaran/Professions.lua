@@ -921,9 +921,11 @@ _.Zones =
 						q(39948,  {	-- The Ink Flows
 							["qg"] = 92195,	-- Professor Pallin
 						}),
-						qh(39959, {	-- The Plot Thickens
-							["isBreadcrumb"] = true,
+						q(39959, {	-- The Plot Thickens
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.4, 37.2, 627 },
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
 						}),
 						qa(39955, {	-- The Plot Thickens
 							["isBreadcrumb"] = true,

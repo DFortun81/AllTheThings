@@ -508,8 +508,10 @@ _.Zones =
 						["qg"] = 58114,	-- Kor Bloodtusk
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
-					qh(32329, {	-- Get My Results!
+					q(32329, {	-- Get My Results!
 						["qg"] = 67939,	-- General Nazgrim
+						["coords"] = { 10.4, 53.8, 418 },
+						["races"] = HORDE_ONLY,
 					}),
 					q(30717, {	-- Gifts of the Great Crane
 						["qg"] = 60529,	-- Yan Quillpaw
