@@ -23,7 +23,7 @@ _.Zones =
 							["lvl"] = 30,
 							["u"] = 40,
 						}),
-						q(8920, {	-- An Earnest Proposal (Warrior)
+						q(8920, {	-- An Earnest Proposition (Warrior)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -34,7 +34,7 @@ _.Zones =
 								un(2, i(21996)),	-- Bracers of Heroism
 							},
 						}),
-						q(10493, {	-- An Earnest Proposal (Paladin)
+						q(10493, {	-- An Earnest Proposition (Paladin)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -45,7 +45,7 @@ _.Zones =
 								un(2, i(22088)),	-- Soulforge Bracers
 							},
 						}),
-						q(8914, {	-- An Earnest Proposal (Hunter)
+						q(8914, {	-- An Earnest Proposition (Hunter)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -56,7 +56,7 @@ _.Zones =
 								un(2, i(22011)),	-- Beastmaster's Bindings
 							},
 						}),
-						q(8917, {	-- An Earnest Proposal (Rogue)
+						q(8917, {	-- An Earnest Proposition (Rogue)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -67,7 +67,7 @@ _.Zones =
 								un(2, i(22004)),	-- Darkmantle Bracers 
 							},
 						}),
-						q(8916, {	-- An Earnest Proposal (Priest)
+						q(8916, {	-- An Earnest Proposition (Priest)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -78,7 +78,7 @@ _.Zones =
 								un(2, i(22079)),	-- Virtuous Bracers
 							},
 						}),
-						q(8918, {	-- An Earnest Proposal (Shaman)
+						q(8918, {	-- An Earnest Proposition (Shaman)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -89,7 +89,7 @@ _.Zones =
 								un(2, i(22095)),	-- Bindings of The Five Thunders
 							},
 						}),
-						q(8915, {	-- An Earnest Proposal (Mage)
+						q(8915, {	-- An Earnest Proposition (Mage)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -100,7 +100,7 @@ _.Zones =
 								un(2, i(22063)),	-- Sorcerer's Bindings
 							},
 						}),
-						q(8919, {	-- An Earnest Proposal (Warlock)
+						q(8919, {	-- An Earnest Proposition (Warlock)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -111,7 +111,7 @@ _.Zones =
 								un(2, i(22071)),	-- Deathmist Bracers
 							},
 						}),
-						q(8913, {	-- An Earnest Proposal (Druid)
+						q(8913, {	-- An Earnest Proposition (Druid)
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["races"] = HORDE_ONLY,
@@ -126,15 +126,15 @@ _.Zones =
 							["qg"] = 16012,	-- Mokvar
 							["coord"] = { 48.6, 72.8, 85 },
 							["sourceQuests"] = {
-								8920,	-- An Earnest Proposal (Warrior)
-								10493,	-- An Earnest Proposal (Paladin)
-								8914,	-- An Earnest Proposal (Hunter)
-								8917,	-- An Earnest Proposal (Rogue)
-								8916,	-- An Earnest Proposal (Priest)
-								8918,	-- An Earnest Proposal (Shaman)
-								8915,	-- An Earnest Proposal (Mage)
-								8919,	-- An Earnest Proposal (Warlock)
-								8913,	-- An Earnest Proposal (Druid)
+								8920,	-- An Earnest Proposition (Warrior)
+								10493,	-- An Earnest Proposition (Paladin)
+								8914,	-- An Earnest Proposition (Hunter)
+								8917,	-- An Earnest Proposition (Rogue)
+								8916,	-- An Earnest Proposition (Priest)
+								8918,	-- An Earnest Proposition (Shaman)
+								8915,	-- An Earnest Proposition (Mage)
+								8919,	-- An Earnest Proposition (Warlock)
+								8913,	-- An Earnest Proposition (Druid)
 							},
 							["races"] = HORDE_ONLY,
 							["lvl"] = 58,

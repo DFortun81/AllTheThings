@@ -862,7 +862,10 @@ _.Zones =
 					q(8945, {	-- Dead Man's Plea
 						["qg"] = 16016,	-- Anthion Harmon
 						["coord"] = { 26.9, 12.1, 23 },
-						["sourceQuest"] = 8930,	-- In Search of Anthion
+						["sourceQuests"] = {
+							8929,	-- In Search of Anthion [Alliance]
+							8930,	-- In Search of Anthion [Horde]
+						},
 						["lvl"] = 58,
 						["u"] = 40,
 					}),					

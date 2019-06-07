@@ -1529,7 +1529,18 @@ _.Zones =
 					q(8924, {	-- Hunting for Ectoplasm
 						["qg"] = 16014,	-- Mux Manascrambler
 						["coord"] = { 52.0, 27.0 , 71 },
-						["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
+						["sourceQuests"] = {
+							8922,	-- A Supernatural Device [Alliance]
+							8921,	-- The Ectoplasmic Distiller [Horde]
+						},
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8977, {	-- Return to Deliana
+						["qg"] = 16014,	-- Mux Manascrambler
+						["coord"] = { 52.0, 27.0 , 71 },
+						["sourceQuest"] = 8928,	-- A Shifty Merchant
+						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 58,
 						["u"] = 40,
 					}),
@@ -1537,6 +1548,7 @@ _.Zones =
 						["qg"] = 16014,	-- Mux Manascrambler
 						["coord"] = { 52.0, 27.0 , 71 },
 						["sourceQuest"] = 8928,	-- A Shifty Merchant
+						["races"] = HORDE_ONLY,
 						["lvl"] = 58,
 						["u"] = 40,
 					}),
