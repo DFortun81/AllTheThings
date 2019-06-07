@@ -312,10 +312,6 @@ _.Instances = { tier(1, {	-- Classic
 								})),
 							},
 						}),
-						q(27134, {	-- Ogre in the Field
-							["qg"] = 39656,	-- Orhan Ogreblade
-							["races"] = HORDE_ONLY,
-						}),
 						q(7500, {	-- The Arcanist's Cookbook
 							["u"] = 40,
 							["classes"] = { 8 },	-- Mage
