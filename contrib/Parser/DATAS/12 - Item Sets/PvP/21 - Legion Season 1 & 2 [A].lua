@@ -395,6 +395,15 @@ _.GearSets =
 									i(135597),	-- Vindictive Gladiator's Dreadplate Girdle
 									i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
 									i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
+									i(142560),	-- Fearless Gladiator's Dreadplate Helm
+									i(142561),	-- Fearless Gladiator's Dreadplate Shoulders
+									i(142648),	-- Fearless Gladiator's Dreadcloak
+									i(142562),	-- Fearless Gladiator's Dreadplate Chestpiece
+									i(142563),	-- Fearless Gladiator's Dreadplate Wristplates
+									i(142564),	-- Fearless Gladiator's Dreadplate Gauntlets
+									i(142565),	-- Fearless Gladiator's Dreadplate Girdle
+									i(142566),	-- Fearless Gladiator's Dreadplate Legguards
+									i(142567),	-- Fearless Gladiator's Dreadplate Sabatons
 								},
 								["classes"] = { 6 },
 							}),
