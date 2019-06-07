@@ -241,9 +241,12 @@ _.Zones =
 						},
 					}),
 					q(26093, {	-- Northfold Manor
-						["qg"] = 2700,	-- Captain Nials
+						["sourceQuests"] = {
+							28573,	-- Hero's Call: Arathi Highlands!
+							26139,	-- Into Arathi
+						},
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 28573 },	-- Hero's Call: Arathi Highlands!
+						["qg"] = 2700,	-- Captain Nials
 					}),
 					q(42534, {	-- Our Oldest Enemies
 						["qg"] = 107806,	-- Prince Galen Trollbane
