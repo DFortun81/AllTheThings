@@ -100,7 +100,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing ArmPlates
+									i(134714),	-- Crushing Armplates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -140,7 +140,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing ArmPlates
+									i(134714),	-- Crushing Armplates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -186,7 +186,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing ArmPlates
+									i(134714),	-- Crushing Armplates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -226,7 +226,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing ArmPlates
+									i(134714),	-- Crushing Armplates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -257,7 +257,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -335,7 +335,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35937,	-- Blood Elf Ear
@@ -354,8 +354,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -465,8 +465,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -573,7 +573,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -651,7 +651,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35927,	-- Forsaken Brains
@@ -667,7 +667,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -745,7 +745,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35938,	-- Goblin Nose
@@ -764,8 +764,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -872,7 +872,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -950,7 +950,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35940,	-- Orc Tooth
@@ -967,7 +967,7 @@ _.Zones =
 									i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 									i(126255),	-- Warmongering Aspirant's Accolade of Victory
 									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-									i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 									i(126206),	-- Warmongering Aspirant's Band of Contemplation
 									i(126203),	-- Warmongering Aspirant's Band of Cruelty
 									i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1045,7 +1045,7 @@ _.Zones =
 									i(126212),	-- Warmongering Aspirant's Silk Trousers
 									i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 									i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-									i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+									i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -1060,8 +1060,8 @@ _.Zones =
 									i(126732),	-- Warmongering Aspirant's Accolade of Victory
 									i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-									i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-									i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+									i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 									i(126683),	-- Warmongering Aspirant's Band of Contemplation
 									i(126680),	-- Warmongering Aspirant's Band of Cruelty
 									i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1172,8 +1172,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1280,7 +1280,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1358,7 +1358,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35939,	-- Tauren Hoof
@@ -1374,7 +1374,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1452,7 +1452,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
+								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35941,	-- Troll Feet
@@ -1471,8 +1471,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1582,8 +1582,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
-								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1853,7 +1853,7 @@ _.Zones =
 									un(2, i(115839)),	-- Primal Gladiator's Dreadplate Helm
 									un(2, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
 									un(2, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
-									un(2, i(115909)),	-- Primal Gladiator's Dreadplate warBoots
+									un(2, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(115971)),	-- Primal Gladiator's Dragonhide Belt
@@ -1992,7 +1992,7 @@ _.Zones =
 									un(2, i(115963)),	-- Primal Gladiator's Plate Helm
 									un(2, i(115964)),	-- Primal Gladiator's Plate Legguards
 									un(2, i(115965)),	-- Primal Gladiator's Plate shoulders
-									un(2, i(115908)),	-- Primal Gladiator's Plate warBoots
+									un(2, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
 							n(-662, {	-- Wild Gladiator: Warlords Season 2
@@ -2003,7 +2003,7 @@ _.Zones =
 									un(2, i(125654)), -- Wild Gladiator's Dreadplate Legguards
 									un(2, i(125655)), -- Wild Gladiator's Dreadplate Shoulders
 									un(2, i(125720)), -- Wild Gladiator's Dreadplate Girdle
-									un(2, i(125723)), -- Wild Gladiator's Dreadplate WarBoots
+									un(2, i(125723)), -- Wild Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
@@ -2134,7 +2134,7 @@ _.Zones =
 								}),
 								cl(1, {	-- Warrior
 									un(2, i(125721)), -- Wild Gladiator's Plate Girdle
-									un(2, i(125722)), -- Wild Gladiator's Plate WarBoots
+									un(2, i(125722)), -- Wild Gladiator's Plate Warboots
 									un(2, i(125775)), -- Wild Gladiator's Plate Chestpiece
 									un(2, i(125776)), -- Wild Gladiator's Plate Gauntlets
 									un(2, i(125777)), -- Wild Gladiator's Plate Helm
@@ -2150,7 +2150,7 @@ _.Zones =
 									un(2, i(126768)), -- Warmongering Gladiator's Dreadplate Legguards
 									un(2, i(126769)), -- Warmongering Gladiator's Dreadplate Shoulders
 									un(2, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
-									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate WarBoots
+									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
@@ -2284,7 +2284,7 @@ _.Zones =
 								}),
 								cl(1, {	-- Warrior
 									un(2, i(126835)), -- Warmongering Gladiator's Plate Girdle
-									un(2, i(126836)), -- Warmongering Gladiator's Plate WarBoots
+									un(2, i(126836)), -- Warmongering Gladiator's Plate Warboots
 									un(2, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
 									un(2, i(126890)), -- Warmongering Gladiator's Plate Gauntlets
 									un(2, i(126891)), -- Warmongering Gladiator's Plate Helm
@@ -2419,7 +2419,7 @@ _.Zones =
 									un(2, i(115839)),	-- Primal Gladiator's Dreadplate Helm
 									un(2, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
 									un(2, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
-									un(2, i(115909)),	-- Primal Gladiator's Dreadplate warBoots
+									un(2, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(115971)),	-- Primal Gladiator's Dragonhide Belt
@@ -2558,7 +2558,7 @@ _.Zones =
 									un(2, i(115963)),	-- Primal Gladiator's Plate Helm
 									un(2, i(115964)),	-- Primal Gladiator's Plate Legguards
 									un(2, i(115965)),	-- Primal Gladiator's Plate shoulders
-									un(2, i(115908)),	-- Primal Gladiator's Plate warBoots
+									un(2, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
 							n(-662, {	-- Wild Gladiator: Warlords Season 2
@@ -2569,7 +2569,7 @@ _.Zones =
 									un(2, i(125654)), -- Wild Gladiator's Dreadplate Legguards
 									un(2, i(125655)), -- Wild Gladiator's Dreadplate Shoulders
 									un(2, i(125720)), -- Wild Gladiator's Dreadplate Girdle
-									un(2, i(125723)), -- Wild Gladiator's Dreadplate WarBoots
+									un(2, i(125723)), -- Wild Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
@@ -2700,7 +2700,7 @@ _.Zones =
 								}),
 								cl(1, {	-- Warrior
 									un(2, i(125721)), -- Wild Gladiator's Plate Girdle
-									un(2, i(125722)), -- Wild Gladiator's Plate WarBoots
+									un(2, i(125722)), -- Wild Gladiator's Plate Warboots
 									un(2, i(125775)), -- Wild Gladiator's Plate Chestpiece
 									un(2, i(125776)), -- Wild Gladiator's Plate Gauntlets
 									un(2, i(125777)), -- Wild Gladiator's Plate Helm
@@ -2716,7 +2716,7 @@ _.Zones =
 									un(2, i(126768)), -- Warmongering Gladiator's Dreadplate Legguards
 									un(2, i(126769)), -- Warmongering Gladiator's Dreadplate Shoulders
 									un(2, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
-									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate WarBoots
+									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate Warboots
 								}),
 								cl(11, {	-- Druid
 									un(2, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
@@ -2850,7 +2850,7 @@ _.Zones =
 								}),
 								cl(1, {	-- Warrior
 									un(2, i(126835)), -- Warmongering Gladiator's Plate Girdle
-									un(2, i(126836)), -- Warmongering Gladiator's Plate WarBoots
+									un(2, i(126836)), -- Warmongering Gladiator's Plate Warboots
 									un(2, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
 									un(2, i(126890)), -- Warmongering Gladiator's Plate Gauntlets
 									un(2, i(126891)), -- Warmongering Gladiator's Plate Helm
