@@ -100,7 +100,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
+									i(134714),	-- Crushing ArmPlates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -140,7 +140,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
+									i(134714),	-- Crushing ArmPlates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -186,7 +186,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
+									i(134714),	-- Crushing ArmPlates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -226,7 +226,7 @@ _.Zones =
 									i(134694),	-- Cascading Cord
 									i(134697),	-- Cascading Cuffs
 									i(134695),	-- Cascading Trousers
-									i(134714),	-- Crushing Armplates
+									i(134714),	-- Crushing ArmPlates
 									i(134711),	-- Crushing Girdle
 									i(134712),	-- Crushing Legguards
 									i(134713),	-- Crushing Pauldrons
@@ -257,7 +257,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -335,7 +335,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35937,	-- Blood Elf Ear
@@ -354,8 +354,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -465,8 +465,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -573,7 +573,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -651,7 +651,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35927,	-- Forsaken Brains
@@ -667,7 +667,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -745,7 +745,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35938,	-- Goblin Nose
@@ -764,8 +764,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -872,7 +872,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -950,7 +950,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35940,	-- Orc Tooth
@@ -967,7 +967,7 @@ _.Zones =
 									i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 									i(126255),	-- Warmongering Aspirant's Accolade of Victory
 									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 									i(126206),	-- Warmongering Aspirant's Band of Contemplation
 									i(126203),	-- Warmongering Aspirant's Band of Cruelty
 									i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1045,7 +1045,7 @@ _.Zones =
 									i(126212),	-- Warmongering Aspirant's Silk Trousers
 									i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 									i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-									i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+									i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 								},
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -1060,8 +1060,8 @@ _.Zones =
 									i(126732),	-- Warmongering Aspirant's Accolade of Victory
 									i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 									i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-									i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-									i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+									i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+									i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 									i(126683),	-- Warmongering Aspirant's Band of Contemplation
 									i(126680),	-- Warmongering Aspirant's Band of Cruelty
 									i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1172,8 +1172,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1280,7 +1280,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1358,7 +1358,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35939,	-- Tauren Hoof
@@ -1374,7 +1374,7 @@ _.Zones =
 								i(126256),	-- Warmongering Aspirant's Accolade of Meditation
 								i(126255),	-- Warmongering Aspirant's Accolade of Victory
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126206),	-- Warmongering Aspirant's Band of Contemplation
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
 								i(126205),	-- Warmongering Aspirant's Band of Meditation
@@ -1452,7 +1452,7 @@ _.Zones =
 								i(126212),	-- Warmongering Aspirant's Silk Trousers
 								i(126182),	-- Warmongering Aspirant's Treads of Cruelty
 								i(126215),	-- Warmongering Aspirant's Waistguard of Cruelty
-								i(126229),	-- Warmongering Aspirant's Warboots of Cruelty
+								i(126229),	-- Warmongering Aspirant's WarBoots of Cruelty
 							}),
 						},--]]
 						["questID"] = 35941,	-- Troll Feet
@@ -1471,8 +1471,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1582,8 +1582,8 @@ _.Zones =
 								i(126732),	-- Warmongering Aspirant's Accolade of Victory
 								i(126694),	-- Warmongering Aspirant's Armbands of Prowess
 								i(126217),	-- Warmongering Aspirant's Armbands of Prowess
-								i(126707),	-- Warmongering Aspirant's Armplates of Cruelty
-								i(126230),	-- Warmongering Aspirant's Armplates of Cruelty
+								i(126707),	-- Warmongering Aspirant's ArmPlates of Cruelty
+								i(126230),	-- Warmongering Aspirant's ArmPlates of Cruelty
 								i(126683),	-- Warmongering Aspirant's Band of Contemplation
 								i(126680),	-- Warmongering Aspirant's Band of Cruelty
 								i(126203),	-- Warmongering Aspirant's Band of Cruelty
@@ -1845,338 +1845,453 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							-- Season 1 Cloth
-							un(2, i(115824)),	-- Primal Gladiator's silk cord
-							un(2, i(115825)),	-- Primal Gladiator's felweave cord
-							un(2, i(115826)),	-- Primal Gladiator's mooncloth cord
-							un(2, i(115827)),	-- Primal Gladiator's silk treads
-							un(2, i(115828)),	-- Primal Gladiator's felweave treads
-							un(2, i(115829)),	-- Primal Gladiator's mooncloth trads
-							un(2, i(115875)),	-- Primal Gladiator's silk handguards
-							un(2, i(115876)),	-- Primal Gladiator's silk cowl
-							un(2, i(115877)),	-- Primal Gladiator's silk trousers
-							un(2, i(115878)),	-- Primal Gladiator's silk robe
-							un(2, i(115879)),	-- Primal Gladiator's silk amice
-							un(2, i(115911)),	-- Primal Gladiator's mooncloth gloves
-							un(2, i(115912)),	-- Primal Gladiator's mooncloth hood
-							un(2, i(115913)),	-- Primal Gladiator's mooncloth leggings
-							un(2, i(115914)),	-- Primal Gladiator's mooncloth robe
-							un(2, i(115915)),	-- Primal Gladiator's mooncloth manthle
-							un(2, i(115916)),	-- Primal Gladiator's satin gloves
-							un(2, i(115917)),	-- Primal Gladiator's satin hood
-							un(2, i(115918)),	-- Primal Gladiator's satin leggings
-							un(2, i(115919)),	-- Primal Gladiator's satin robe
-							un(2, i(115920)),	-- Primal Gladiator's satin mantle
-							un(2, i(115956)),	-- Primal Gladiator's felweave handguards
-							un(2, i(115957)),	-- Primal Gladiator's felweave cowl
-							un(2, i(115958)),	-- Primal Gladiator's felweave trousers
-							un(2, i(115959)),	-- Primal Gladiator's felweave rainment
-							un(2, i(115960)),	-- Primal Gladiator's felweave amice
-							un(2, i(115968)),	-- Primal Gladiator's satin treads
-							un(2, i(115969)),	-- Primal Gladiator's satin cord
-							-- Season 1 Mail
-							un(2, i(115866)),	-- Primal Gladiator's chain links
-							un(2, i(115867)),	-- Primal Gladiator's linked waistband
-							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
-							un(2, i(115869)),	-- Primal Gladiator's linked sabatons
-							un(2, i(115870)),	-- Primal Gladiator's chain armor
-							un(2, i(115871)),	-- Primal Gladiator's chain gauntlets
-							un(2, i(115872)),	-- Primal Gladiator's chain helm
-							un(2, i(115873)),	-- Primal Gladiator's chain leggings
-							un(2, i(115874)),	-- Primal Gladiator's chain spaulders
-							un(2, i(115928)),	-- Primal Gladiator's ringmail waistguard
-							un(2, i(115929)),	-- Primal Gladiator's ringmail foodguards
-							un(2, i(115930)),	-- Primal Gladiator's mail footguards
-							un(2, i(115931)),	-- Primal Gladiator's ringmail armor
-							un(2, i(115932)),	-- Primal Gladiator's ringmail gauntlets
-							un(2, i(115933)),	-- Primal Gladiator's ringmail helm
-							un(2, i(115934)),	-- Primal Gladiator's ringmail leggings
-							un(2, i(115935)),	-- Primal Gladiator's ringmail spaulders
-							un(2, i(115936)),	-- Primal Gladiator's linked armor
-							un(2, i(115937)),	-- Primal Gladiator's linked gauntlets
-							un(2, i(115938)),	-- Primal Gladiator's linked helm
-							un(2, i(115939)),	-- Primal Gladiator's linked leggings
-							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
-							un(2, i(115941)),	-- Primal Gladiator's mail waistguard
-							un(2, i(115942)),	-- Primal Gladiator's mail armor
-							un(2, i(115943)),	-- Primal Gladiator's mail gauntlets
-							un(2, i(115944)),	-- Primal Gladiator's mail helm
-							un(2, i(115945)),	-- Primal Gladiator's mail leggings
-							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
-							-- Season 1 Leather
-							un(2, i(115842)),	-- Primal Gladiator's dragonhide gloves
-							un(2, i(115843)),	-- Primal Gladiator's dragonhide helm
-							un(2, i(115844)),	-- Primal Gladiator's dragonhide legguards
-							un(2, i(115845)),	-- Primal Gladiator's dragonhide robes
-							un(2, i(115846)),	-- Primal Gladiator's dragonhide spaulders
-							un(2, i(115847)),	-- Primal Gladiator's kodohide belt
-							un(2, i(115848)),	-- Primal Gladiator's kodohide footguards
-							un(2, i(115849)),	-- Primal Gladiator's kodohide gloves
-							un(2, i(115850)),	-- Primal Gladiator's kodohide helm
-							un(2, i(115851)),	-- Primal Gladiator's kodohide legguards
-							un(2, i(115852)),	-- Primal Gladiator's kodohide robes
-							un(2, i(115853)),	-- Primal Gladiator's kodohide spaulders
-							un(2, i(115855)),	-- Primal Gladiator's wyrmhide belt
-							un(2, i(115856)),	-- Primal Gladiator's wyrmhide footguards
-							un(2, i(115857)),	-- Primal Gladiator's wyrmhide gloves
-							un(2, i(115858)),	-- Primal Gladiator's wyrmhide helm
-							un(2, i(115859)),	-- Primal Gladiator's wyrmhide legguards
-							un(2, i(115860)),	-- Primal Gladiator's wyrmhide robes
-							un(2, i(115861)),	-- Primal Gladiator's wyrmhide spaulders
-							un(2, i(115880)),	-- Primal Gladiator's ironskin waistband
-							un(2, i(115881)),	-- Primal Gladiator's ironskin boosts
-							un(2, i(115882)),	-- Primal Gladiator's ironskin gloves
-							un(2, i(115883)),	-- Primal Gladiator's ironskin helm
-							un(2, i(115884)),	-- Primal Gladiator's ironskin legguards
-							un(2, i(115885)),	-- Primal Gladiator's ironskin spaulders
-							un(2, i(115886)),	-- Primal Gladiator's ironskin tunic
-							un(2, i(115887)),	-- Primal Gladiator's copperskin gloves
-							un(2, i(115888)),	-- Primal Gladiator's copperskin helm
-							un(2, i(115889)),	-- Primal Gladiator's copperskin legguards
-							un(2, i(115890)),	-- Primal Gladiator's copperskin spaulders
-							un(2, i(115891)),	-- Primal Gladiator's copperskin tunic
-							un(2, i(115921)),	-- Primal Gladiator's leather waistband
-							un(2, i(115922)),	-- Primal Gladiator's leather boosts
-							un(2, i(115923)),	-- Primal Gladiator's leather tunic
-							un(2, i(115924)),	-- Primal Gladiator's leather gloves
-							un(2, i(115925)),	-- Primal Gladiator's leather helm
-							un(2, i(115926)),	-- Primal Gladiator's leather legguards
-							un(2, i(115927)),	-- Primal Gladiator's leather spaulders
-							un(2, i(115966)),	-- Primal Gladiator's copperskin boots
-							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
-							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
-							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
-							-- Season 1 Plate
-							un(2, i(115837)),	-- Primal Gladiator's dreadplate chestpiece
-							un(2, i(115838)),	-- Primal Gladiator's dreadplate gauntlets
-							un(2, i(115839)),	-- Primal Gladiator's dreadplate helm
-							un(2, i(115840)),	-- Primal Gladiator's dreadplate legguards
-							un(2, i(115841)),	-- Primal Gladiator's dreadplate shoulders
-							un(2, i(115892)),	-- Primal Gladiator's scaled chestpiece
-							un(2, i(115893)),	-- Primal Gladiator's scaled gauntlets
-							un(2, i(115894)),	-- Primal Gladiator's scaled helm
-							un(2, i(115895)),	-- Primal Gladiator's scaled legguards
-							un(2, i(115896)),	-- Primal Gladiator's scaled shoulders
-							un(2, i(115897)),	-- Primal Gladiator's scaled clasp
-							un(2, i(115898)),	-- Primal Gladiator's ornamented clasp
-							un(2, i(115899)),	-- Primal Gladiator's ornamented greaves
-							un(2, i(115900)),	-- Primal Gladiator's scaled greaves
-							un(2, i(115901)),	-- Primal Gladiator's ornamented chestguard
-							un(2, i(115902)),	-- Primal Gladiator's ornamented gloves
-							un(2, i(115903)),	-- Primal Gladiator's ornamented headcover
-							un(2, i(115904)),	-- Primal Gladiator's ornamented legplates
-							un(2, i(115905)),	-- Primal Gladiator's ornamented spaulders
-							un(2, i(115906)),	-- Primal Gladiator's dreadplate girdle
-							un(2, i(115907)),	-- Primal Gladiator's plate girdle
-							un(2, i(115908)),	-- Primal Gladiator's plate warboots
-							un(2, i(115909)),	-- Primal Gladiator's dreadplatewarboots
-							un(2, i(115961)),	-- Primal Gladiator's plate chestpiece
-							un(2, i(115962)),	-- Primal Gladiator's plate gauntlets
-							un(2, i(115963)),	-- Primal Gladiator's plate helm
-							un(2, i(115964)),	-- Primal Gladiator's plate legguards
-							un(2, i(115965)),	-- Primal Gladiator's plate shoulders
-							-- Season 2 Cloth
-							un(2, i(125638)),	-- wild Gladiator's silk cord
-							un(2, i(125639)),	-- wild Gladiator's felweave cord
-							un(2, i(125640)),	-- wild Gladiator's mooncloth cord
-							un(2, i(125641)),	-- wild Gladiator's silk treads
-							un(2, i(125642)),	-- wild Gladiator's felweave treads
-							un(2, i(125643)),	-- wild Gladiator's mooncloth trads
-							un(2, i(125689)),	-- wild Gladiator's silk handguards
-							un(2, i(125690)),	-- wild Gladiator's silk cowl
-							un(2, i(125691)),	-- wild Gladiator's silk trousers
-							un(2, i(125692)),	-- wild Gladiator's silk robe
-							un(2, i(125693)),	-- wild Gladiator's silk amice
-							un(2, i(125725)),	-- wild Gladiator's mooncloth gloves
-							un(2, i(125726)),	-- wild Gladiator's mooncloth hood
-							un(2, i(125727)),	-- wild Gladiator's mooncloth leggings
-							un(2, i(125728)),	-- wild Gladiator's mooncloth robe
-							un(2, i(125729)),	-- wild Gladiator's mooncloth manthle
-							un(2, i(125730)),	-- wild Gladiator's satin gloves
-							un(2, i(125731)),	-- wild Gladiator's satin hood
-							un(2, i(125732)),	-- wild Gladiator's satin leggings
-							un(2, i(125733)),	-- wild Gladiator's satin robe
-							un(2, i(125734)),	-- wild Gladiator's satin mantle
-							un(2, i(125770)),	-- wild Gladiator's felweave handguards
-							un(2, i(125771)),	-- wild Gladiator's felweave cowl
-							un(2, i(125772)),	-- wild Gladiator's felweave trousers
-							un(2, i(125773)),	-- wild Gladiator's felweave rainment
-							un(2, i(125774)),	-- wild Gladiator's felweave amice
-							un(2, i(125782)),	-- wild Gladiator's satin treads
-							un(2, i(125783)),	-- wild Gladiator's satin cord
-							-- Season 2 Mail
-							un(2, i(125680)),	-- Wild Gladiator's Chain Links
-							un(2, i(125681)),	-- Wild Gladiator's linked waistband
-							un(2, i(125682)),	-- Wild Gladiator's Chain sabatons
-							un(2, i(125683)),	-- Wild Gladiator's linked sabatons
-							un(2, i(125684)),	-- Wild Gladiator's chain armor
-							un(2, i(125685)),	-- Wild Gladiator's chain gauntlets
-							un(2, i(125686)),	-- Wild Gladiator's chain helm
-							un(2, i(125687)),	-- Wild Gladiator's chain leggings
-							un(2, i(125688)),	-- Wild Gladiator's chain spaulders
-							un(2, i(125742)),	-- Wild Gladiator's ringmail waistguard
-							un(2, i(125743)),	-- Wild Gladiator's ringmail footguards
-							un(2, i(125744)),	-- Wild Gladiator's mail footguards
-							un(2, i(125745)),	-- Wild Gladiator's ringmail armor
-							un(2, i(125746)),	-- Wild Gladiator's ringmail gauntlets
-							un(2, i(125747)),	-- Wild Gladiator's ringmail helm
-							un(2, i(125748)),	-- Wild Gladiator's ringmail leggings
-							un(2, i(125749)),	-- Wild Gladiator's ringmail spaulders
-							un(2, i(125750)),	-- Wild Gladiator's linked armor
-							un(2, i(125751)),	-- Wild Gladiator's linked gauntlets
-							un(2, i(125752)),	-- Wild Gladiator's linked helm
-							un(2, i(125753)),	-- Wild Gladiator's linked leggings
-							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
-							un(2, i(125755)),	-- Wild Gladiator's mail waistguard
-							un(2, i(125756)),	-- Wild Gladiator's mail armor
-							un(2, i(125757)),	-- Wild Gladiator's mail gauntlets
-							un(2, i(125758)),	-- Wild Gladiator's mail helm
-							un(2, i(125759)),	-- Wild Gladiator's mail leggings
-							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
-							-- Season 2 Leather
-							un(2, i(125656)),	-- wild Gladiator's dragonhide gloves
-							un(2, i(125657)),	-- wild Gladiator's dragonhide helm
-							un(2, i(125658)),	-- wild Gladiator's dragonhide legguards
-							un(2, i(125659)),	-- wild Gladiator's dragonhide robes
-							un(2, i(125660)),	-- wild Gladiator's dragonhide spaulders
-							un(2, i(125661)),	-- wild Gladiator's kodohide belt
-							un(2, i(125662)),	-- wild Gladiator's kodohide footguards
-							un(2, i(125663)),	-- wild Gladiator's kodohide gloves
-							un(2, i(125664)),	-- wild Gladiator's kodohide helm
-							un(2, i(125665)),	-- wild Gladiator's kodohide legguards
-							un(2, i(125666)),	-- wild Gladiator's kodohide robes
-							un(2, i(125667)),	-- wild Gladiator's kodohide spaulders
-							un(2, i(125669)),	-- wild Gladiator's wyrmhide belt
-							un(2, i(125670)),	-- wild Gladiator's wyrmhide footguards
-							un(2, i(125671)),	-- wild Gladiator's wyrmhide gloves
-							un(2, i(125672)),	-- wild Gladiator's wyrmhide helm
-							un(2, i(125673)),	-- wild Gladiator's wyrmhide legguards
-							un(2, i(125674)),	-- wild Gladiator's wyrmhide robes
-							un(2, i(125675)),	-- wild Gladiator's wyrmhide spaulders
-							un(2, i(125694)),	-- wild Gladiator's ironskin waistband
-							un(2, i(125695)),	-- wild Gladiator's ironskin boosts
-							un(2, i(125696)),	-- wild Gladiator's ironskin gloves
-							un(2, i(125697)),	-- wild Gladiator's ironskin helm
-							un(2, i(125698)),	-- wild Gladiator's ironskin legguards
-							un(2, i(125699)),	-- wild Gladiator's ironskin spaulders
-							un(2, i(125700)),	-- wild Gladiator's ironskin tunic
-							un(2, i(125701)),	-- wild Gladiator's copperskin gloves
-							un(2, i(125702)),	-- wild Gladiator's copperskin helm
-							un(2, i(125703)),	-- wild Gladiator's copperskin legguards
-							un(2, i(125704)),	-- wild Gladiator's copperskin spaulders
-							un(2, i(125705)),	-- wild Gladiator's copperskin tunic
-							un(2, i(125735)),	-- wild Gladiator's leather waistband
-							un(2, i(125736)),	-- wild Gladiator's leather boosts
-							un(2, i(125737)),	-- wild Gladiator's leather tunic
-							un(2, i(125738)),	-- wild Gladiator's leather gloves
-							un(2, i(125739)),	-- wild Gladiator's leather helm
-							un(2, i(125740)),	-- wild Gladiator's leather legguards
-							un(2, i(125741)),	-- wild Gladiator's leather spaulders
-							un(2, i(125780)),	-- wild Gladiator's copperskin boots
-							un(2, i(125781)),	-- wild Gladiator's copperskin waistband
-							un(2, i(125784)),	-- wild Gladiator's dragonhide footguards
-							un(2, i(125785)),	-- wild Gladiator's dragonhide belt
-							-- Season 3 Cloth
-							un(2, i(126752)),	-- warmongering Gladiator's silk cord
-							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
-							un(2, i(126754)),	-- warmongering Gladiator's mooncloth cord
-							un(2, i(126755)),	-- warmongering Gladiator's silk treads
-							un(2, i(126756)),	-- warmongering Gladiator's felweave treads
-							un(2, i(126757)),	-- warmongering Gladiator's mooncloth trads
-							un(2, i(126803)),	-- warmongering Gladiator's silk handguards
-							un(2, i(126804)),	-- warmongering Gladiator's silk cowl
-							un(2, i(126805)),	-- warmongering Gladiator's silk trousers
-							un(2, i(126806)),	-- warmongering Gladiator's silk robe
-							un(2, i(126807)),	-- warmongering Gladiator's silk amice
-							un(2, i(126839)),	-- warmongering Gladiator's mooncloth gloves
-							un(2, i(126840)),	-- warmongering Gladiator's mooncloth hood
-							un(2, i(126841)),	-- warmongering Gladiator's mooncloth leggings
-							un(2, i(126842)),	-- warmongering Gladiator's mooncloth robe
-							un(2, i(126843)),	-- warmongering Gladiator's mooncloth manthle
-							un(2, i(126844)),	-- warmongering Gladiator's satin gloves
-							un(2, i(126845)),	-- warmongering Gladiator's satin hood
-							un(2, i(126846)),	-- warmongering Gladiator's satin leggings
-							un(2, i(126847)),	-- warmongering Gladiator's satin robe
-							un(2, i(126848)),	-- warmongering Gladiator's satin mantle
-							un(2, i(126884)),	-- warmongering Gladiator's felweave handguards
-							un(2, i(126885)),	-- warmongering Gladiator's felweave cowl
-							un(2, i(126886)),	-- warmongering Gladiator's felweave trousers
-							un(2, i(126887)),	-- warmongering Gladiator's felweave rainment
-							un(2, i(126888)),	-- warmongering Gladiator's felweave amice
-							un(2, i(126896)),	-- warmongering Gladiator's satin treads
-							un(2, i(126897)),	-- warmongering Gladiator's satin cord
-							-- Season 3 Mail
-							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
-							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
-							un(2, i(126796)),	-- warmongering Gladiator's Chain sabatons
-							un(2, i(126797)),	-- warmongering Gladiator's linked sabatons
-							un(2, i(126798)),	-- warmongering Gladiator's chain armor
-							un(2, i(126799)),	-- warmongering Gladiator's chain gauntlets
-							un(2, i(126800)),	-- warmongering Gladiator's chain helm
-							un(2, i(126801)),	-- warmongering Gladiator's chain leggings
-							un(2, i(126802)),	-- warmongering Gladiator's chain spaulders
-							un(2, i(126856)),	-- warmongering Gladiator's ringmail waistguard
-							un(2, i(126857)),	-- warmongering Gladiator's ringmail footguards
-							un(2, i(126858)),	-- warmongering Gladiator's mail footguards
-							un(2, i(126859)),	-- warmongering Gladiator's ringmail armor
-							un(2, i(126860)),	-- warmongering Gladiator's ringmail gauntlets
-							un(2, i(126861)),	-- warmongering Gladiator's ringmail helm
-							un(2, i(126862)),	-- warmongering Gladiator's ringmail leggings
-							un(2, i(126863)),	-- warmongering Gladiator's ringmail spaulders
-							un(2, i(126864)),	-- warmongering Gladiator's linked armor
-							un(2, i(126865)),	-- warmongering Gladiator's linked gauntlets
-							un(2, i(126866)),	-- warmongering Gladiator's linked helm
-							un(2, i(126867)),	-- warmongering Gladiator's linked leggings
-							un(2, i(126868)),	-- warmongering Gladiator's linked spaulders
-							un(2, i(126869)),	-- warmongering Gladiator's mail waistguard
-							un(2, i(126870)),	-- warmongering Gladiator's mail armor
-							un(2, i(126871)),	-- warmongering Gladiator's mail gauntlets
-							un(2, i(126872)),	-- warmongering Gladiator's mail helm
-							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
-							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
-							-- Season 3 Leather
-							un(2, i(126770)),	-- warmongering gladiator's dragonhide gloves
-							un(2, i(126771)),	-- warmongering gladiator's dragonhide helm
-							un(2, i(126772)),	-- warmongering gladiator's dragonhide legguards
-							un(2, i(126773)),	-- warmongering gladiator's dragonhide robes
-							un(2, i(126774)),	-- warmongering gladiator's dragonhide spaulders
-							un(2, i(126775)),	-- warmongering gladiator's kodohide belt
-							un(2, i(126776)),	-- warmongering gladiator's kodohide footguards
-							un(2, i(126777)),	-- warmongering gladiator's kodohide gloves
-							un(2, i(126778)),	-- warmongering gladiator's kodohide helm
-							un(2, i(126779)),	-- warmongering gladiator's kodohide legguards
-							un(2, i(126780)),	-- warmongering gladiator's kodohide robes
-							un(2, i(126781)),	-- warmongering gladiator's kodohide spaulders
-							un(2, i(126783)),	-- warmongering gladiator's wyrmhide belt
-							un(2, i(126784)),	-- warmongering gladiator's wyrmhide footguards
-							un(2, i(126785)),	-- warmongering gladiator's wyrmhide gloves
-							un(2, i(126786)),	-- warmongering gladiator's wyrmhide helm
-							un(2, i(126787)),	-- warmongering gladiator's wyrmhide legguards
-							un(2, i(126788)),	-- warmongering gladiator's wyrmhide robes
-							un(2, i(126789)),	-- warmongering gladiator's wyrmhide spaulders
-							un(2, i(126808)),	-- warmongering gladiator's ironskin waistband
-							un(2, i(126809)),	-- warmongering gladiator's ironskin boosts
-							un(2, i(126810)),	-- warmongering gladiator's ironskin gloves
-							un(2, i(126811)),	-- warmongering gladiator's ironskin helm
-							un(2, i(126812)),	-- warmongering gladiator's ironskin legguards
-							un(2, i(126813)),	-- warmongering gladiator's ironskin spaulders
-							un(2, i(126814)),	-- warmongering gladiator's ironskin tunic
-							un(2, i(126815)),	-- warmongering gladiator's copperskin gloves
-							un(2, i(126816)),	-- warmongering gladiator's copperskin helm
-							un(2, i(126817)),	-- warmongering gladiator's copperskin legguards
-							un(2, i(126818)),	-- warmongering gladiator's copperskin spaulders
-							un(2, i(126819)),	-- warmongering gladiator's copperskin tunic
-							un(2, i(126849)),	-- warmongering gladiator's leather waistband
-							un(2, i(126850)),	-- warmongering gladiator's leather boosts
-							un(2, i(126851)),	-- warmongering gladiator's leather tunic
-							un(2, i(126852)),	-- warmongering gladiator's leather gloves
-							un(2, i(126853)),	-- warmongering gladiator's leather helm
-							un(2, i(126854)),	-- warmongering gladiator's leather legguards
-							un(2, i(126855)),	-- warmongering gladiator's leather spaulders
-							un(2, i(126894)),	-- warmongering gladiator's copperskin boots
-							un(2, i(126895)),	-- warmongering gladiator's copperskin waistband
-							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
-							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
+							n(-661, {	-- Primal Gladiator: Warlords Season 1
+								cl(6, {	-- Death Knight
+									un(2, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
+									un(2, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
+									un(2, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
+									un(2, i(115839)),	-- Primal Gladiator's Dreadplate Helm
+									un(2, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
+									un(2, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
+									un(2, i(115909)),	-- Primal Gladiator's Dreadplate warBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(115971)),	-- Primal Gladiator's Dragonhide Belt
+									un(2, i(115970)),	-- Primal Gladiator's Dragonhide Footguards
+									un(2, i(115842)),	-- Primal Gladiator's Dragonhide Gloves
+									un(2, i(115843)),	-- Primal Gladiator's Dragonhide Helm
+									un(2, i(115844)),	-- Primal Gladiator's Dragonhide Legguards
+									un(2, i(115845)),	-- Primal Gladiator's Dragonhide Robes
+									un(2, i(115846)),	-- Primal Gladiator's Dragonhide Spaulders
+									un(2, i(115847)),	-- Primal Gladiator's Kodohide Belt
+									un(2, i(115848)),	-- Primal Gladiator's Kodohide Footguards
+									un(2, i(115849)),	-- Primal Gladiator's Kodohide Gloves
+									un(2, i(115850)),	-- Primal Gladiator's Kodohide Helm
+									un(2, i(115851)),	-- Primal Gladiator's Kodohide Legguards
+									un(2, i(115852)),	-- Primal Gladiator's Kodohide Robes
+									un(2, i(115853)),	-- Primal Gladiator's Kodohide Spaulders
+									un(2, i(115855)),	-- Primal Gladiator's Wyrmhide Belt
+									un(2, i(115856)),	-- Primal Gladiator's Wyrmhide Footguards
+									un(2, i(115857)),	-- Primal Gladiator's Wyrmhide Gloves
+									un(2, i(115858)),	-- Primal Gladiator's Wyrmhide Helm
+									un(2, i(115859)),	-- Primal Gladiator's Wyrmhide Legguards
+									un(2, i(115860)),	-- Primal Gladiator's Wyrmhide Robes
+									un(2, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(115942)),	-- Primal Gladiator's Mail Armor
+									un(2, i(115930)),	-- Primal Gladiator's Mail Footguards
+									un(2, i(115943)),	-- Primal Gladiator's Mail Gauntlets
+									un(2, i(115944)),	-- Primal Gladiator's Mail Helm
+									un(2, i(115945)),	-- Primal Gladiator's Mail Leggings
+									un(2, i(115946)),	-- Primal Gladiator's Mail Spaulders
+									un(2, i(115941)),	-- Primal Gladiator's Mail Waistguard
+								}),
+								cl(8, {	-- Mage
+									un(2, i(115879)),	-- Primal Gladiator's Silk Amice
+									un(2, i(115824)),	-- Primal Gladiator's Silk Cord
+									un(2, i(115876)),	-- Primal Gladiator's Silk Cowl
+									un(2, i(115875)),	-- Primal Gladiator's Silk Handguards
+									un(2, i(115878)),	-- Primal Gladiator's Silk Robe
+									un(2, i(115827)),	-- Primal Gladiator's Silk Treads
+									un(2, i(115877)),	-- Primal Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(115966)),	-- Primal Gladiator's Copperskin Boots
+									un(2, i(115887)),	-- Primal Gladiator's Copperskin Gloves
+									un(2, i(115888)),	-- Primal Gladiator's Copperskin Helm
+									un(2, i(115889)),	-- Primal Gladiator's Copperskin Legguards
+									un(2, i(115890)),	-- Primal Gladiator's Copperskin Spaulders
+									un(2, i(115891)),	-- Primal Gladiator's Copperskin Tunic
+									un(2, i(115967)),	-- Primal Gladiator's Copperskin Waistband
+									un(2, i(115881)),	-- Primal Gladiator's Ironskin boosts
+									un(2, i(115882)),	-- Primal Gladiator's Ironskin Gloves
+									un(2, i(115883)),	-- Primal Gladiator's Ironskin Helm
+									un(2, i(115884)),	-- Primal Gladiator's Ironskin Legguards
+									un(2, i(115885)),	-- Primal Gladiator's Ironskin Spaulders
+									un(2, i(115886)),	-- Primal Gladiator's Ironskin Tunic
+									un(2, i(115880)),	-- Primal Gladiator's Ironskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(115901)),	-- Primal Gladiator's Ornamented chestguard
+									un(2, i(115898)),	-- Primal Gladiator's Ornamented clasp
+									un(2, i(115902)),	-- Primal Gladiator's Ornamented Gloves
+									un(2, i(115899)),	-- Primal Gladiator's Ornamented greaves
+									un(2, i(115903)),	-- Primal Gladiator's Ornamented headcover
+									un(2, i(115904)),	-- Primal Gladiator's Ornamented legPlates
+									un(2, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
+									un(2, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
+									un(2, i(115897)),	-- Primal Gladiator's Scaled clasp
+									un(2, i(115893)),	-- Primal Gladiator's Scaled Gauntlets
+									un(2, i(115900)),	-- Primal Gladiator's Scaled greaves
+									un(2, i(115894)),	-- Primal Gladiator's Scaled Helm
+									un(2, i(115895)),	-- Primal Gladiator's Scaled Legguards
+									un(2, i(115896)),	-- Primal Gladiator's Scaled shoulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(115826)),	-- Primal Gladiator's Mooncloth Cord
+									un(2, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
+									un(2, i(115912)),	-- Primal Gladiator's Mooncloth Hood
+									un(2, i(115913)),	-- Primal Gladiator's Mooncloth Leggings
+									un(2, i(115915)),	-- Primal Gladiator's Mooncloth manthle
+									un(2, i(115914)),	-- Primal Gladiator's Mooncloth Robe
+									un(2, i(115829)),	-- Primal Gladiator's Mooncloth trads
+									un(2, i(115969)),	-- Primal Gladiator's Satin Cord
+									un(2, i(115916)),	-- Primal Gladiator's Satin Gloves
+									un(2, i(115917)),	-- Primal Gladiator's Satin Hood
+									un(2, i(115918)),	-- Primal Gladiator's Satin Leggings
+									un(2, i(115920)),	-- Primal Gladiator's Satin Mantle
+									un(2, i(115919)),	-- Primal Gladiator's Satin Robe
+									un(2, i(115968)),	-- Primal Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(115922)),	-- Primal Gladiator's Leather boosts
+									un(2, i(115924)),	-- Primal Gladiator's Leather Gloves
+									un(2, i(115925)),	-- Primal Gladiator's Leather Helm
+									un(2, i(115926)),	-- Primal Gladiator's Leather Legguards
+									un(2, i(115927)),	-- Primal Gladiator's Leather Spaulders
+									un(2, i(115923)),	-- Primal Gladiator's Leather Tunic
+									un(2, i(115921)),	-- Primal Gladiator's Leather Waistband
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(115870)),	-- Primal Gladiator's Chain Armor
+									un(2, i(115871)),	-- Primal Gladiator's Chain Gauntlets
+									un(2, i(115872)),	-- Primal Gladiator's Chain Helm
+									un(2, i(115873)),	-- Primal Gladiator's Chain Leggings
+									un(2, i(115866)),	-- Primal Gladiator's Chain links
+									un(2, i(115868)),	-- Primal Gladiator's Chain Sabatons
+									un(2, i(115874)),	-- Primal Gladiator's Chain Spaulders
+									un(2, i(115936)),	-- Primal Gladiator's Linked Armor
+									un(2, i(115937)),	-- Primal Gladiator's Linked Gauntlets
+									un(2, i(115938)),	-- Primal Gladiator's Linked Helm
+									un(2, i(115939)),	-- Primal Gladiator's Linked Leggings
+									un(2, i(115869)),	-- Primal Gladiator's Linked Sabatons
+									un(2, i(115940)),	-- Primal Gladiator's Linked Spaulders
+									un(2, i(115867)),	-- Primal Gladiator's Linked Waistband
+									un(2, i(115931)),	-- Primal Gladiator's Ringmail Armor
+									un(2, i(115929)),	-- Primal Gladiator's Ringmail Foodguards
+									un(2, i(115932)),	-- Primal Gladiator's Ringmail Gauntlets
+									un(2, i(115933)),	-- Primal Gladiator's Ringmail Helm
+									un(2, i(115934)),	-- Primal Gladiator's Ringmail Leggings
+									un(2, i(115935)),	-- Primal Gladiator's Ringmail Spaulders
+									un(2, i(115928)),	-- Primal Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(115960)),	-- Primal Gladiator's Felweave Amice
+									un(2, i(115825)),	-- Primal Gladiator's Felweave Cord
+									un(2, i(115957)),	-- Primal Gladiator's Felweave Cowl
+									un(2, i(115956)),	-- Primal Gladiator's Felweave Handguards
+									un(2, i(115959)),	-- Primal Gladiator's Felweave Rainment
+									un(2, i(115828)),	-- Primal Gladiator's Felweave Treads
+									un(2, i(115958)),	-- Primal Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(115961)),	-- Primal Gladiator's Plate Chestpiece
+									un(2, i(115962)),	-- Primal Gladiator's Plate Gauntlets
+									un(2, i(115907)),	-- Primal Gladiator's Plate Girdle
+									un(2, i(115963)),	-- Primal Gladiator's Plate Helm
+									un(2, i(115964)),	-- Primal Gladiator's Plate Legguards
+									un(2, i(115965)),	-- Primal Gladiator's Plate shoulders
+									un(2, i(115908)),	-- Primal Gladiator's Plate warBoots
+								}),
+							}),
+							n(-662, {	-- Wild Gladiator: Warlords Season 2
+								cl(6, {	-- Death Knight
+									un(2, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
+									un(2, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
+									un(2, i(125653)), -- Wild Gladiator's Dreadplate Helm
+									un(2, i(125654)), -- Wild Gladiator's Dreadplate Legguards
+									un(2, i(125655)), -- Wild Gladiator's Dreadplate Shoulders
+									un(2, i(125720)), -- Wild Gladiator's Dreadplate Girdle
+									un(2, i(125723)), -- Wild Gladiator's Dreadplate WarBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
+									un(2, i(125657)),	-- Wild Gladiator's Dragonhide Helm
+									un(2, i(125658)),	-- Wild Gladiator's Dragonhide Legguards
+									un(2, i(125659)),	-- Wild Gladiator's Dragonhide Robes
+									un(2, i(125660)),	-- Wild Gladiator's Dragonhide Spaulders
+									un(2, i(125784)),	-- Wild Gladiator's Dragonhide Footguards
+									un(2, i(125785)),	-- Wild Gladiator's Dragonhide Belt
+									un(2, i(125661)),	-- Wild Gladiator's Kodohide Belt
+									un(2, i(125662)),	-- Wild Gladiator's Kodohide Footguards
+									un(2, i(125663)),	-- Wild Gladiator's Kodohide Gloves
+									un(2, i(125664)),	-- Wild Gladiator's Kodohide Helm
+									un(2, i(125665)),	-- Wild Gladiator's Kodohide Legguards
+									un(2, i(125666)),	-- Wild Gladiator's Kodohide Robes
+									un(2, i(125667)),	-- Wild Gladiator's Kodohide Spaulders
+									un(2, i(125669)),	-- Wild Gladiator's Wyrmhide Belt
+									un(2, i(125670)),	-- Wild Gladiator's Wyrmhide Footguards
+									un(2, i(125671)),	-- Wild Gladiator's Wyrmhide Gloves
+									un(2, i(125672)),	-- Wild Gladiator's Wyrmhide Helm
+									un(2, i(125673)),	-- Wild Gladiator's Wyrmhide Legguards
+									un(2, i(125674)),	-- Wild Gladiator's Wyrmhide Robes
+									un(2, i(125675)),	-- Wild Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(125684)),	-- Wild Gladiator's Chain Armor
+									un(2, i(125685)),	-- Wild Gladiator's Chain Gauntlets
+									un(2, i(125686)),	-- Wild Gladiator's Chain Helm
+									un(2, i(125687)),	-- Wild Gladiator's Chain Leggings
+									un(2, i(125688)),	-- Wild Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(125693)),	-- Wild Gladiator's Silk Amice
+									un(2, i(125638)),	-- Wild Gladiator's Silk Cord
+									un(2, i(125690)),	-- Wild Gladiator's Silk Cowl
+									un(2, i(125689)),	-- Wild Gladiator's Silk Handguards
+									un(2, i(125692)),	-- Wild Gladiator's Silk Robe
+									un(2, i(125641)),	-- Wild Gladiator's Silk Treads
+									un(2, i(125691)),	-- Wild Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(125694)),	-- Wild Gladiator's Ironskin Waistband
+									un(2, i(125695)),	-- Wild Gladiator's Ironskin boosts
+									un(2, i(125696)),	-- Wild Gladiator's Ironskin Gloves
+									un(2, i(125697)),	-- Wild Gladiator's Ironskin Helm
+									un(2, i(125698)),	-- Wild Gladiator's Ironskin Legguards
+									un(2, i(125699)),	-- Wild Gladiator's Ironskin Spaulders
+									un(2, i(125700)),	-- Wild Gladiator's Ironskin Tunic
+									un(2, i(125701)),	-- Wild Gladiator's Copperskin Gloves
+									un(2, i(125702)),	-- Wild Gladiator's Copperskin Helm
+									un(2, i(125703)),	-- Wild Gladiator's Copperskin Legguards
+									un(2, i(125704)),	-- Wild Gladiator's Copperskin Spaulders
+									un(2, i(125705)),	-- Wild Gladiator's Copperskin Tunic
+									un(2, i(125780)),	-- Wild Gladiator's Copperskin Boots
+									un(2, i(125781)),	-- Wild Gladiator's Copperskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(125706)), -- Wild Gladiator's Scaled Chestpiece
+									un(2, i(125707)), -- Wild Gladiator's Scaled Gauntlets
+									un(2, i(125708)), -- Wild Gladiator's Scaled Helm
+									un(2, i(125709)), -- Wild Gladiator's Scaled Legguards
+									un(2, i(125710)), -- Wild Gladiator's Scaled Shoulders
+									un(2, i(125711)), -- Wild Gladiator's Scaled Clasp
+									un(2, i(125714)), -- Wild Gladiator's Scaled Greaves
+									un(2, i(125712)), -- Wild Gladiator's Ornamented Clasp
+									un(2, i(125713)), -- Wild Gladiator's Ornamented Greaves
+									un(2, i(125715)), -- Wild Gladiator's Ornamented Chestguard
+									un(2, i(125716)), -- Wild Gladiator's Ornamented Gloves
+									un(2, i(125717)), -- Wild Gladiator's Ornamented Headcover
+									un(2, i(125718)), -- Wild Gladiator's Ornamented LegPlates
+									un(2, i(125719)), -- Wild Gladiator's Ornamented Spaulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(125640)),	-- Wild Gladiator's Mooncloth Cord
+									un(2, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
+									un(2, i(125726)),	-- Wild Gladiator's Mooncloth Hood
+									un(2, i(125727)),	-- Wild Gladiator's Mooncloth Leggings
+									un(2, i(125729)),	-- Wild Gladiator's Mooncloth manthle
+									un(2, i(125728)),	-- Wild Gladiator's Mooncloth Robe
+									un(2, i(125643)),	-- Wild Gladiator's Mooncloth trads
+									un(2, i(125783)),	-- Wild Gladiator's Satin Cord
+									un(2, i(125730)),	-- Wild Gladiator's Satin Gloves
+									un(2, i(125731)),	-- Wild Gladiator's Satin Hood
+									un(2, i(125732)),	-- Wild Gladiator's Satin Leggings
+									un(2, i(125734)),	-- Wild Gladiator's Satin Mantle
+									un(2, i(125733)),	-- Wild Gladiator's Satin Robe
+									un(2, i(125782)),	-- Wild Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(125735)),	-- Wild Gladiator's Leather Waistband
+									un(2, i(125736)),	-- Wild Gladiator's Leather boosts
+									un(2, i(125737)),	-- Wild Gladiator's Leather Tunic
+									un(2, i(125738)),	-- Wild Gladiator's Leather Gloves
+									un(2, i(125739)),	-- Wild Gladiator's Leather Helm
+									un(2, i(125740)),	-- Wild Gladiator's Leather Legguards
+									un(2, i(125741)),	-- Wild Gladiator's Leather Spaulders
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(125750)),	-- Wild Gladiator's Linked Armor
+									un(2, i(125751)),	-- Wild Gladiator's Linked Gauntlets
+									un(2, i(125752)),	-- Wild Gladiator's Linked Helm
+									un(2, i(125753)),	-- Wild Gladiator's Linked Leggings
+									un(2, i(125683)),	-- Wild Gladiator's Linked Sabatons
+									un(2, i(125754)),	-- Wild Gladiator's Linked Spaulders
+									un(2, i(125756)),	-- Wild Gladiator's Mail Armor
+									un(2, i(125744)),	-- Wild Gladiator's Mail Footguards
+									un(2, i(125757)),	-- Wild Gladiator's Mail Gauntlets
+									un(2, i(125758)),	-- Wild Gladiator's Mail Helm
+									un(2, i(125759)),	-- Wild Gladiator's Mail Leggings
+									un(2, i(125760)),	-- Wild Gladiator's Mail Spaulders
+									un(2, i(125755)),	-- Wild Gladiator's Mail Waistguard
+									un(2, i(125745)),	-- Wild Gladiator's Ringmail Armor
+									un(2, i(125743)),	-- Wild Gladiator's Ringmail Footguards
+									un(2, i(125746)),	-- Wild Gladiator's Ringmail Gauntlets
+									un(2, i(125747)),	-- Wild Gladiator's Ringmail Helm
+									un(2, i(125748)),	-- Wild Gladiator's Ringmail Leggings
+									un(2, i(125749)),	-- Wild Gladiator's Ringmail Spaulders
+									un(2, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(125774)),	-- wild Gladiator's Felweave Amice
+									un(2, i(125639)),	-- wild Gladiator's Felweave Cord
+									un(2, i(125771)),	-- wild Gladiator's Felweave Cowl
+									un(2, i(125770)),	-- wild Gladiator's Felweave Handguards
+									un(2, i(125773)),	-- wild Gladiator's Felweave Rainment
+									un(2, i(125642)),	-- wild Gladiator's Felweave Treads
+									un(2, i(125772)),	-- wild Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(125721)), -- Wild Gladiator's Plate Girdle
+									un(2, i(125722)), -- Wild Gladiator's Plate WarBoots
+									un(2, i(125775)), -- Wild Gladiator's Plate Chestpiece
+									un(2, i(125776)), -- Wild Gladiator's Plate Gauntlets
+									un(2, i(125777)), -- Wild Gladiator's Plate Helm
+									un(2, i(125778)), -- Wild Gladiator's Plate Legguards
+									un(2, i(125779)), -- Wild Gladiator's Plate Shoulders
+								}),
+							}),
+							n(-663, {	-- Warmongering Gladiator: Warlords Season 3
+								cl(6, {	-- Death Knight
+									un(2, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
+									un(2, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
+									un(2, i(126767)), -- Warmongering Gladiator's Dreadplate Helm
+									un(2, i(126768)), -- Warmongering Gladiator's Dreadplate Legguards
+									un(2, i(126769)), -- Warmongering Gladiator's Dreadplate Shoulders
+									un(2, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
+									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate WarBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
+									un(2, i(126898)),	-- Warmongering Gladiator's Dragonhide Footguards
+									un(2, i(126770)),	-- Warmongering Gladiator's Dragonhide Gloves
+									un(2, i(126771)),	-- Warmongering Gladiator's Dragonhide Helm
+									un(2, i(126772)),	-- Warmongering Gladiator's Dragonhide Legguards
+									un(2, i(126773)),	-- Warmongering Gladiator's Dragonhide Robes
+									un(2, i(126774)),	-- Warmongering Gladiator's Dragonhide Spaulders
+									un(2, i(126775)),	-- Warmongering Gladiator's Kodohide Belt
+									un(2, i(126776)),	-- Warmongering Gladiator's Kodohide Footguards
+									un(2, i(126777)),	-- Warmongering Gladiator's Kodohide Gloves
+									un(2, i(126778)),	-- Warmongering Gladiator's Kodohide Helm
+									un(2, i(126779)),	-- Warmongering Gladiator's Kodohide Legguards
+									un(2, i(126780)),	-- Warmongering Gladiator's Kodohide Robes
+									un(2, i(126781)),	-- Warmongering Gladiator's Kodohide Spaulders
+									un(2, i(126783)),	-- Warmongering Gladiator's Wyrmhide Belt
+									un(2, i(126784)),	-- Warmongering Gladiator's Wyrmhide Footguards
+									un(2, i(126785)),	-- Warmongering Gladiator's Wyrmhide Gloves
+									un(2, i(126786)),	-- Warmongering Gladiator's Wyrmhide Helm
+									un(2, i(126787)),	-- Warmongering Gladiator's Wyrmhide Legguards
+									un(2, i(126788)),	-- Warmongering Gladiator's Wyrmhide Robes
+									un(2, i(126789)),	-- Warmongering Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(126798)),	-- Warmongering Gladiator's Chain Armor
+									un(2, i(126799)),	-- Warmongering Gladiator's Chain Gauntlets
+									un(2, i(126800)),	-- Warmongering Gladiator's Chain Helm
+									un(2, i(126801)),	-- Warmongering Gladiator's Chain Leggings
+									un(2, i(126794)),	-- Warmongering Gladiator's Chain Links
+									un(2, i(126796)),	-- Warmongering Gladiator's Chain Sabatons
+									un(2, i(126802)),	-- Warmongering Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(126807)),	-- Warmongering Gladiator's Silk Amice
+									un(2, i(126752)),	-- Warmongering Gladiator's Silk Cord
+									un(2, i(126804)),	-- Warmongering Gladiator's Silk Cowl
+									un(2, i(126803)),	-- Warmongering Gladiator's Silk Handguards
+									un(2, i(126806)),	-- Warmongering Gladiator's Silk Robe
+									un(2, i(126755)),	-- Warmongering Gladiator's Silk Treads
+									un(2, i(126805)),	-- Warmongering Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
+									un(2, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
+									un(2, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
+									un(2, i(126812)),	-- Warmongering Gladiator's Ironskin Legguards
+									un(2, i(126813)),	-- Warmongering Gladiator's Ironskin Spaulders
+									un(2, i(126814)),	-- Warmongering Gladiator's Ironskin Tunic
+									un(2, i(126808)),	-- Warmongering Gladiator's Ironskin Waistband
+									un(2, i(126894)),	-- Warmongering Gladiator's Copperskin Boots
+									un(2, i(126815)),	-- Warmongering Gladiator's Copperskin Gloves
+									un(2, i(126816)),	-- Warmongering Gladiator's Copperskin Helm
+									un(2, i(126817)),	-- Warmongering Gladiator's Copperskin Legguards
+									un(2, i(126818)),	-- Warmongering Gladiator's Copperskin Spaulders
+									un(2, i(126819)),	-- Warmongering Gladiator's Copperskin Tunic
+									un(2, i(126895)),	-- Warmongering Gladiator's Copperskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(126826)), -- Warmongering Gladiator's Ornamented Clasp
+									un(2, i(126827)), -- Warmongering Gladiator's Ornamented Greaves
+									un(2, i(126829)), -- Warmongering Gladiator's Ornamented Chestguard
+									un(2, i(126830)), -- Warmongering Gladiator's Ornamented Gloves
+									un(2, i(126831)), -- Warmongering Gladiator's Ornamented Headcover
+									un(2, i(126832)), -- Warmongering Gladiator's Ornamented LegPlates
+									un(2, i(126833)), -- Warmongering Gladiator's Ornamented Spaulders
+									un(2, i(126820)), -- Warmongering Gladiator's Scaled Chestpiece
+									un(2, i(126821)), -- Warmongering Gladiator's Scaled Gauntlets
+									un(2, i(126822)), -- Warmongering Gladiator's Scaled Helm
+									un(2, i(126823)), -- Warmongering Gladiator's Scaled Legguards
+									un(2, i(126824)), -- Warmongering Gladiator's Scaled Shoulders
+									un(2, i(126825)), -- Warmongering Gladiator's Scaled Clasp
+									un(2, i(126828)), -- Warmongering Gladiator's Scaled Greaves
+								}),
+								cl(5, {	-- Priest
+									un(2, i(126754)),	-- Warmongering Gladiator's Mooncloth Cord
+									un(2, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
+									un(2, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
+									un(2, i(126841)),	-- Warmongering Gladiator's Mooncloth Leggings
+									un(2, i(126843)),	-- Warmongering Gladiator's Mooncloth manthle
+									un(2, i(126842)),	-- Warmongering Gladiator's Mooncloth Robe
+									un(2, i(126757)),	-- Warmongering Gladiator's Mooncloth Treads
+									un(2, i(126897)),	-- Warmongering Gladiator's Satin Cord
+									un(2, i(126844)),	-- Warmongering Gladiator's Satin Gloves
+									un(2, i(126845)),	-- Warmongering Gladiator's Satin Hood
+									un(2, i(126846)),	-- Warmongering Gladiator's Satin Leggings
+									un(2, i(126848)),	-- Warmongering Gladiator's Satin Mantle
+									un(2, i(126847)),	-- Warmongering Gladiator's Satin Robe
+									un(2, i(126896)),	-- Warmongering Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(126850)),	-- Warmongering Gladiator's Leather boosts
+									un(2, i(126852)),	-- Warmongering Gladiator's Leather Gloves
+									un(2, i(126853)),	-- Warmongering Gladiator's Leather Helm
+									un(2, i(126854)),	-- Warmongering Gladiator's Leather Legguards
+									un(2, i(126855)),	-- Warmongering Gladiator's Leather Spaulders
+									un(2, i(126851)),	-- Warmongering Gladiator's Leather Tunic
+									un(2, i(126849)),	-- Warmongering Gladiator's Leather Waistband
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(126864)),	-- Warmongering Gladiator's Linked Armor
+									un(2, i(126865)),	-- Warmongering Gladiator's Linked Gauntlets
+									un(2, i(126866)),	-- Warmongering Gladiator's Linked Helm
+									un(2, i(126867)),	-- Warmongering Gladiator's Linked Leggings
+									un(2, i(126797)),	-- Warmongering Gladiator's Linked Sabatons
+									un(2, i(126868)),	-- Warmongering Gladiator's Linked Spaulders
+									un(2, i(126795)),	-- Warmongering Gladiator's Linked Waistband
+									un(2, i(126870)),	-- Warmongering Gladiator's Mail Armor
+									un(2, i(126858)),	-- Warmongering Gladiator's Mail Footguards
+									un(2, i(126871)),	-- Warmongering Gladiator's Mail Gauntlets
+									un(2, i(126872)),	-- Warmongering Gladiator's Mail Helm
+									un(2, i(126873)),	-- Warmongering Gladiator's Mail Leggings
+									un(2, i(126874)),	-- Warmongering Gladiator's Mail Spaulders
+									un(2, i(126869)),	-- Warmongering Gladiator's Mail Waistguard
+									un(2, i(126859)),	-- Warmongering Gladiator's Ringmail Armor
+									un(2, i(126857)),	-- Warmongering Gladiator's Ringmail Footguards
+									un(2, i(126860)),	-- Warmongering Gladiator's Ringmail Gauntlets
+									un(2, i(126861)),	-- Warmongering Gladiator's Ringmail Helm
+									un(2, i(126862)),	-- Warmongering Gladiator's Ringmail Leggings
+									un(2, i(126863)),	-- Warmongering Gladiator's Ringmail Spaulders
+									un(2, i(126856)),	-- Warmongering Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(126888)),	-- Warmongering Gladiator's Felweave Amice
+									un(2, i(126753)),	-- Warmongering Gladiator's Felweave Cord
+									un(2, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
+									un(2, i(126884)),	-- Warmongering Gladiator's Felweave Handguards
+									un(2, i(126887)),	-- Warmongering Gladiator's Felweave Rainment
+									un(2, i(126756)),	-- Warmongering Gladiator's Felweave Treads
+									un(2, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(126835)), -- Warmongering Gladiator's Plate Girdle
+									un(2, i(126836)), -- Warmongering Gladiator's Plate WarBoots
+									un(2, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
+									un(2, i(126890)), -- Warmongering Gladiator's Plate Gauntlets
+									un(2, i(126891)), -- Warmongering Gladiator's Plate Helm
+									un(2, i(126892)), -- Warmongering Gladiator's Plate Legguards
+									un(2, i(126893)), -- Warmongering Gladiator's Plate Shoulders
+								}),
+							}),
 						},
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
@@ -2296,338 +2411,453 @@ _.Zones =
 							un(2, i(125765)),	-- Wild Gladiator's Baton of Light
 							un(2, i(126763)),	-- Warmongering Gladiator's Touch of defeat
 							un(2, i(126879)),	-- Warmongering Gladiator's Baton of Light
-							-- Season 1 Cloth
-							un(2, i(115824)),	-- Primal Gladiator's silk cord
-							un(2, i(115825)),	-- Primal Gladiator's felweave cord
-							un(2, i(115826)),	-- Primal Gladiator's mooncloth cord
-							un(2, i(115827)),	-- Primal Gladiator's silk treads
-							un(2, i(115828)),	-- Primal Gladiator's felweave treads
-							un(2, i(115829)),	-- Primal Gladiator's mooncloth trads
-							un(2, i(115875)),	-- Primal Gladiator's silk handguards
-							un(2, i(115876)),	-- Primal Gladiator's silk cowl
-							un(2, i(115877)),	-- Primal Gladiator's silk trousers
-							un(2, i(115878)),	-- Primal Gladiator's silk robe
-							un(2, i(115879)),	-- Primal Gladiator's silk amice
-							un(2, i(115911)),	-- Primal Gladiator's mooncloth gloves
-							un(2, i(115912)),	-- Primal Gladiator's mooncloth hood
-							un(2, i(115913)),	-- Primal Gladiator's mooncloth leggings
-							un(2, i(115914)),	-- Primal Gladiator's mooncloth robe
-							un(2, i(115915)),	-- Primal Gladiator's mooncloth manthle
-							un(2, i(115916)),	-- Primal Gladiator's satin gloves
-							un(2, i(115917)),	-- Primal Gladiator's satin hood
-							un(2, i(115918)),	-- Primal Gladiator's satin leggings
-							un(2, i(115919)),	-- Primal Gladiator's satin robe
-							un(2, i(115920)),	-- Primal Gladiator's satin mantle
-							un(2, i(115956)),	-- Primal Gladiator's felweave handguards
-							un(2, i(115957)),	-- Primal Gladiator's felweave cowl
-							un(2, i(115958)),	-- Primal Gladiator's felweave trousers
-							un(2, i(115959)),	-- Primal Gladiator's felweave rainment
-							un(2, i(115960)),	-- Primal Gladiator's felweave amice
-							un(2, i(115968)),	-- Primal Gladiator's satin treads
-							un(2, i(115969)),	-- Primal Gladiator's satin cord
-							-- Season 1 Mail
-							un(2, i(115866)),	-- Primal Gladiator's chain links
-							un(2, i(115867)),	-- Primal Gladiator's linked waistband
-							un(2, i(115868)),	-- Primal Gladiator's chain sabatons
-							un(2, i(115869)),	-- Primal Gladiator's linked sabatons
-							un(2, i(115870)),	-- Primal Gladiator's chain armor
-							un(2, i(115871)),	-- Primal Gladiator's chain gauntlets
-							un(2, i(115872)),	-- Primal Gladiator's chain helm
-							un(2, i(115873)),	-- Primal Gladiator's chain leggings
-							un(2, i(115874)),	-- Primal Gladiator's chain spaulders
-							un(2, i(115928)),	-- Primal Gladiator's ringmail waistguard
-							un(2, i(115929)),	-- Primal Gladiator's ringmail foodguards
-							un(2, i(115930)),	-- Primal Gladiator's mail footguards
-							un(2, i(115931)),	-- Primal Gladiator's ringmail armor
-							un(2, i(115932)),	-- Primal Gladiator's ringmail gauntlets
-							un(2, i(115933)),	-- Primal Gladiator's ringmail helm
-							un(2, i(115934)),	-- Primal Gladiator's ringmail leggings
-							un(2, i(115935)),	-- Primal Gladiator's ringmail spaulders
-							un(2, i(115936)),	-- Primal Gladiator's linked armor
-							un(2, i(115937)),	-- Primal Gladiator's linked gauntlets
-							un(2, i(115938)),	-- Primal Gladiator's linked helm
-							un(2, i(115939)),	-- Primal Gladiator's linked leggings
-							un(2, i(115940)),	-- Primal Gladiator's linked spaulders
-							un(2, i(115941)),	-- Primal Gladiator's mail waistguard
-							un(2, i(115942)),	-- Primal Gladiator's mail armor
-							un(2, i(115943)),	-- Primal Gladiator's mail gauntlets
-							un(2, i(115944)),	-- Primal Gladiator's mail helm
-							un(2, i(115945)),	-- Primal Gladiator's mail leggings
-							un(2, i(115946)),	-- Primal Gladiator's mail spaulders
-							-- Season 1 Leather
-							un(2, i(115842)),	-- Primal Gladiator's dragonhide gloves
-							un(2, i(115843)),	-- Primal Gladiator's dragonhide helm
-							un(2, i(115844)),	-- Primal Gladiator's dragonhide legguards
-							un(2, i(115845)),	-- Primal Gladiator's dragonhide robes
-							un(2, i(115846)),	-- Primal Gladiator's dragonhide spaulders
-							un(2, i(115847)),	-- Primal Gladiator's kodohide belt
-							un(2, i(115848)),	-- Primal Gladiator's kodohide footguards
-							un(2, i(115849)),	-- Primal Gladiator's kodohide gloves
-							un(2, i(115850)),	-- Primal Gladiator's kodohide helm
-							un(2, i(115851)),	-- Primal Gladiator's kodohide legguards
-							un(2, i(115852)),	-- Primal Gladiator's kodohide robes
-							un(2, i(115853)),	-- Primal Gladiator's kodohide spaulders
-							un(2, i(115855)),	-- Primal Gladiator's wyrmhide belt
-							un(2, i(115856)),	-- Primal Gladiator's wyrmhide footguards
-							un(2, i(115857)),	-- Primal Gladiator's wyrmhide gloves
-							un(2, i(115858)),	-- Primal Gladiator's wyrmhide helm
-							un(2, i(115859)),	-- Primal Gladiator's wyrmhide legguards
-							un(2, i(115860)),	-- Primal Gladiator's wyrmhide robes
-							un(2, i(115861)),	-- Primal Gladiator's wyrmhide spaulders
-							un(2, i(115880)),	-- Primal Gladiator's ironskin waistband
-							un(2, i(115881)),	-- Primal Gladiator's ironskin boosts
-							un(2, i(115882)),	-- Primal Gladiator's ironskin gloves
-							un(2, i(115883)),	-- Primal Gladiator's ironskin helm
-							un(2, i(115884)),	-- Primal Gladiator's ironskin legguards
-							un(2, i(115885)),	-- Primal Gladiator's ironskin spaulders
-							un(2, i(115886)),	-- Primal Gladiator's ironskin tunic
-							un(2, i(115887)),	-- Primal Gladiator's copperskin gloves
-							un(2, i(115888)),	-- Primal Gladiator's copperskin helm
-							un(2, i(115889)),	-- Primal Gladiator's copperskin legguards
-							un(2, i(115890)),	-- Primal Gladiator's copperskin spaulders
-							un(2, i(115891)),	-- Primal Gladiator's copperskin tunic
-							un(2, i(115921)),	-- Primal Gladiator's leather waistband
-							un(2, i(115922)),	-- Primal Gladiator's leather boosts
-							un(2, i(115923)),	-- Primal Gladiator's leather tunic
-							un(2, i(115924)),	-- Primal Gladiator's leather gloves
-							un(2, i(115925)),	-- Primal Gladiator's leather helm
-							un(2, i(115926)),	-- Primal Gladiator's leather legguards
-							un(2, i(115927)),	-- Primal Gladiator's leather spaulders
-							un(2, i(115966)),	-- Primal Gladiator's copperskin boots
-							un(2, i(115967)),	-- Primal Gladiator's copperskin waistband
-							un(2, i(115970)),	-- Primal Gladiator's dragonhide footguards
-							un(2, i(115971)),	-- Primal Gladiator's dragonhide belt
-							-- Season 1 Plate
-							un(2, i(115837)),	-- Primal Gladiator's dreadplate chestpiece
-							un(2, i(115838)),	-- Primal Gladiator's dreadplate gauntlets
-							un(2, i(115839)),	-- Primal Gladiator's dreadplate helm
-							un(2, i(115840)),	-- Primal Gladiator's dreadplate legguards
-							un(2, i(115841)),	-- Primal Gladiator's dreadplate shoulders
-							un(2, i(115892)),	-- Primal Gladiator's scaled chestpiece
-							un(2, i(115893)),	-- Primal Gladiator's scaled gauntlets
-							un(2, i(115894)),	-- Primal Gladiator's scaled helm
-							un(2, i(115895)),	-- Primal Gladiator's scaled legguards
-							un(2, i(115896)),	-- Primal Gladiator's scaled shoulders
-							un(2, i(115897)),	-- Primal Gladiator's scaled clasp
-							un(2, i(115898)),	-- Primal Gladiator's ornamented clasp
-							un(2, i(115899)),	-- Primal Gladiator's ornamented greaves
-							un(2, i(115900)),	-- Primal Gladiator's scaled greaves
-							un(2, i(115901)),	-- Primal Gladiator's ornamented chestguard
-							un(2, i(115902)),	-- Primal Gladiator's ornamented gloves
-							un(2, i(115903)),	-- Primal Gladiator's ornamented headcover
-							un(2, i(115904)),	-- Primal Gladiator's ornamented legplates
-							un(2, i(115905)),	-- Primal Gladiator's ornamented spaulders
-							un(2, i(115906)),	-- Primal Gladiator's dreadplate girdle
-							un(2, i(115907)),	-- Primal Gladiator's plate girdle
-							un(2, i(115908)),	-- Primal Gladiator's plate warboots
-							un(2, i(115909)),	-- Primal Gladiator's dreadplatewarboots
-							un(2, i(115961)),	-- Primal Gladiator's plate chestpiece
-							un(2, i(115962)),	-- Primal Gladiator's plate gauntlets
-							un(2, i(115963)),	-- Primal Gladiator's plate helm
-							un(2, i(115964)),	-- Primal Gladiator's plate legguards
-							un(2, i(115965)),	-- Primal Gladiator's plate shoulders
-							-- Season 2 Cloth
-							un(2, i(125638)),	-- wild Gladiator's silk cord
-							un(2, i(125639)),	-- wild Gladiator's felweave cord
-							un(2, i(125640)),	-- wild Gladiator's mooncloth cord
-							un(2, i(125641)),	-- wild Gladiator's silk treads
-							un(2, i(125642)),	-- wild Gladiator's felweave treads
-							un(2, i(125643)),	-- wild Gladiator's mooncloth trads
-							un(2, i(125689)),	-- wild Gladiator's silk handguards
-							un(2, i(125690)),	-- wild Gladiator's silk cowl
-							un(2, i(125691)),	-- wild Gladiator's silk trousers
-							un(2, i(125692)),	-- wild Gladiator's silk robe
-							un(2, i(125693)),	-- wild Gladiator's silk amice
-							un(2, i(125725)),	-- wild Gladiator's mooncloth gloves
-							un(2, i(125726)),	-- wild Gladiator's mooncloth hood
-							un(2, i(125727)),	-- wild Gladiator's mooncloth leggings
-							un(2, i(125728)),	-- wild Gladiator's mooncloth robe
-							un(2, i(125729)),	-- wild Gladiator's mooncloth manthle
-							un(2, i(125730)),	-- wild Gladiator's satin gloves
-							un(2, i(125731)),	-- wild Gladiator's satin hood
-							un(2, i(125732)),	-- wild Gladiator's satin leggings
-							un(2, i(125733)),	-- wild Gladiator's satin robe
-							un(2, i(125734)),	-- wild Gladiator's satin mantle
-							un(2, i(125770)),	-- wild Gladiator's felweave handguards
-							un(2, i(125771)),	-- wild Gladiator's felweave cowl
-							un(2, i(125772)),	-- wild Gladiator's felweave trousers
-							un(2, i(125773)),	-- wild Gladiator's felweave rainment
-							un(2, i(125774)),	-- wild Gladiator's felweave amice
-							un(2, i(125782)),	-- wild Gladiator's satin treads
-							un(2, i(125783)),	-- wild Gladiator's satin cord
-							-- Season 2 Mail
-							un(2, i(125680)),	-- Wild Gladiator's Chain Links
-							un(2, i(125681)),	-- Wild Gladiator's linked waistband
-							un(2, i(125682)),	-- Wild Gladiator's Chain sabatons
-							un(2, i(125683)),	-- Wild Gladiator's linked sabatons
-							un(2, i(125684)),	-- Wild Gladiator's chain armor
-							un(2, i(125685)),	-- Wild Gladiator's chain gauntlets
-							un(2, i(125686)),	-- Wild Gladiator's chain helm
-							un(2, i(125687)),	-- Wild Gladiator's chain leggings
-							un(2, i(125688)),	-- Wild Gladiator's chain spaulders
-							un(2, i(125742)),	-- Wild Gladiator's ringmail waistguard
-							un(2, i(125743)),	-- Wild Gladiator's ringmail footguards
-							un(2, i(125744)),	-- Wild Gladiator's mail footguards
-							un(2, i(125745)),	-- Wild Gladiator's ringmail armor
-							un(2, i(125746)),	-- Wild Gladiator's ringmail gauntlets
-							un(2, i(125747)),	-- Wild Gladiator's ringmail helm
-							un(2, i(125748)),	-- Wild Gladiator's ringmail leggings
-							un(2, i(125749)),	-- Wild Gladiator's ringmail spaulders
-							un(2, i(125750)),	-- Wild Gladiator's linked armor
-							un(2, i(125751)),	-- Wild Gladiator's linked gauntlets
-							un(2, i(125752)),	-- Wild Gladiator's linked helm
-							un(2, i(125753)),	-- Wild Gladiator's linked leggings
-							un(2, i(125754)),	-- Wild Gladiator's linked spaulders
-							un(2, i(125755)),	-- Wild Gladiator's mail waistguard
-							un(2, i(125756)),	-- Wild Gladiator's mail armor
-							un(2, i(125757)),	-- Wild Gladiator's mail gauntlets
-							un(2, i(125758)),	-- Wild Gladiator's mail helm
-							un(2, i(125759)),	-- Wild Gladiator's mail leggings
-							un(2, i(125760)),	-- Wild Gladiator's mail spaulders
-							-- Season 2 Leather
-							un(2, i(125656)),	-- wild Gladiator's dragonhide gloves
-							un(2, i(125657)),	-- wild Gladiator's dragonhide helm
-							un(2, i(125658)),	-- wild Gladiator's dragonhide legguards
-							un(2, i(125659)),	-- wild Gladiator's dragonhide robes
-							un(2, i(125660)),	-- wild Gladiator's dragonhide spaulders
-							un(2, i(125661)),	-- wild Gladiator's kodohide belt
-							un(2, i(125662)),	-- wild Gladiator's kodohide footguards
-							un(2, i(125663)),	-- wild Gladiator's kodohide gloves
-							un(2, i(125664)),	-- wild Gladiator's kodohide helm
-							un(2, i(125665)),	-- wild Gladiator's kodohide legguards
-							un(2, i(125666)),	-- wild Gladiator's kodohide robes
-							un(2, i(125667)),	-- wild Gladiator's kodohide spaulders
-							un(2, i(125669)),	-- wild Gladiator's wyrmhide belt
-							un(2, i(125670)),	-- wild Gladiator's wyrmhide footguards
-							un(2, i(125671)),	-- wild Gladiator's wyrmhide gloves
-							un(2, i(125672)),	-- wild Gladiator's wyrmhide helm
-							un(2, i(125673)),	-- wild Gladiator's wyrmhide legguards
-							un(2, i(125674)),	-- wild Gladiator's wyrmhide robes
-							un(2, i(125675)),	-- wild Gladiator's wyrmhide spaulders
-							un(2, i(125694)),	-- wild Gladiator's ironskin waistband
-							un(2, i(125695)),	-- wild Gladiator's ironskin boosts
-							un(2, i(125696)),	-- wild Gladiator's ironskin gloves
-							un(2, i(125697)),	-- wild Gladiator's ironskin helm
-							un(2, i(125698)),	-- wild Gladiator's ironskin legguards
-							un(2, i(125699)),	-- wild Gladiator's ironskin spaulders
-							un(2, i(125700)),	-- wild Gladiator's ironskin tunic
-							un(2, i(125701)),	-- wild Gladiator's copperskin gloves
-							un(2, i(125702)),	-- wild Gladiator's copperskin helm
-							un(2, i(125703)),	-- wild Gladiator's copperskin legguards
-							un(2, i(125704)),	-- wild Gladiator's copperskin spaulders
-							un(2, i(125705)),	-- wild Gladiator's copperskin tunic
-							un(2, i(125735)),	-- wild Gladiator's leather waistband
-							un(2, i(125736)),	-- wild Gladiator's leather boosts
-							un(2, i(125737)),	-- wild Gladiator's leather tunic
-							un(2, i(125738)),	-- wild Gladiator's leather gloves
-							un(2, i(125739)),	-- wild Gladiator's leather helm
-							un(2, i(125740)),	-- wild Gladiator's leather legguards
-							un(2, i(125741)),	-- wild Gladiator's leather spaulders
-							un(2, i(125780)),	-- wild Gladiator's copperskin boots
-							un(2, i(125781)),	-- wild Gladiator's copperskin waistband
-							un(2, i(125784)),	-- wild Gladiator's dragonhide footguards
-							un(2, i(125785)),	-- wild Gladiator's dragonhide belt
-							-- Season 3 Cloth
-							un(2, i(126752)),	-- warmongering Gladiator's silk cord
-							un(2, i(126753)),	-- warmongering Gladiator's felweave cord
-							un(2, i(126754)),	-- warmongering Gladiator's mooncloth cord
-							un(2, i(126755)),	-- warmongering Gladiator's silk treads
-							un(2, i(126756)),	-- warmongering Gladiator's felweave treads
-							un(2, i(126757)),	-- warmongering Gladiator's mooncloth trads
-							un(2, i(126803)),	-- warmongering Gladiator's silk handguards
-							un(2, i(126804)),	-- warmongering Gladiator's silk cowl
-							un(2, i(126805)),	-- warmongering Gladiator's silk trousers
-							un(2, i(126806)),	-- warmongering Gladiator's silk robe
-							un(2, i(126807)),	-- warmongering Gladiator's silk amice
-							un(2, i(126839)),	-- warmongering Gladiator's mooncloth gloves
-							un(2, i(126840)),	-- warmongering Gladiator's mooncloth hood
-							un(2, i(126841)),	-- warmongering Gladiator's mooncloth leggings
-							un(2, i(126842)),	-- warmongering Gladiator's mooncloth robe
-							un(2, i(126843)),	-- warmongering Gladiator's mooncloth manthle
-							un(2, i(126844)),	-- warmongering Gladiator's satin gloves
-							un(2, i(126845)),	-- warmongering Gladiator's satin hood
-							un(2, i(126846)),	-- warmongering Gladiator's satin leggings
-							un(2, i(126847)),	-- warmongering Gladiator's satin robe
-							un(2, i(126848)),	-- warmongering Gladiator's satin mantle
-							un(2, i(126884)),	-- warmongering Gladiator's felweave handguards
-							un(2, i(126885)),	-- warmongering Gladiator's felweave cowl
-							un(2, i(126886)),	-- warmongering Gladiator's felweave trousers
-							un(2, i(126887)),	-- warmongering Gladiator's felweave rainment
-							un(2, i(126888)),	-- warmongering Gladiator's felweave amice
-							un(2, i(126896)),	-- warmongering Gladiator's satin treads
-							un(2, i(126897)),	-- warmongering Gladiator's satin cord
-							-- Season 3 Mail
-							un(2, i(126794)),	-- warmongering Gladiator's Chain Links
-							un(2, i(126795)),	-- warmongering Gladiator's linked waistband
-							un(2, i(126796)),	-- warmongering Gladiator's Chain sabatons
-							un(2, i(126797)),	-- warmongering Gladiator's linked sabatons
-							un(2, i(126798)),	-- warmongering Gladiator's chain armor
-							un(2, i(126799)),	-- warmongering Gladiator's chain gauntlets
-							un(2, i(126800)),	-- warmongering Gladiator's chain helm
-							un(2, i(126801)),	-- warmongering Gladiator's chain leggings
-							un(2, i(126802)),	-- warmongering Gladiator's chain spaulders
-							un(2, i(126856)),	-- warmongering Gladiator's ringmail waistguard
-							un(2, i(126857)),	-- warmongering Gladiator's ringmail footguards
-							un(2, i(126858)),	-- warmongering Gladiator's mail footguards
-							un(2, i(126859)),	-- warmongering Gladiator's ringmail armor
-							un(2, i(126860)),	-- warmongering Gladiator's ringmail gauntlets
-							un(2, i(126861)),	-- warmongering Gladiator's ringmail helm
-							un(2, i(126862)),	-- warmongering Gladiator's ringmail leggings
-							un(2, i(126863)),	-- warmongering Gladiator's ringmail spaulders
-							un(2, i(126864)),	-- warmongering Gladiator's linked armor
-							un(2, i(126865)),	-- warmongering Gladiator's linked gauntlets
-							un(2, i(126866)),	-- warmongering Gladiator's linked helm
-							un(2, i(126867)),	-- warmongering Gladiator's linked leggings
-							un(2, i(126868)),	-- warmongering Gladiator's linked spaulders
-							un(2, i(126869)),	-- warmongering Gladiator's mail waistguard
-							un(2, i(126870)),	-- warmongering Gladiator's mail armor
-							un(2, i(126871)),	-- warmongering Gladiator's mail gauntlets
-							un(2, i(126872)),	-- warmongering Gladiator's mail helm
-							un(2, i(126873)),	-- warmongering Gladiator's mail leggings
-							un(2, i(126874)),	-- warmongering Gladiator's mail spaulders
-							-- Season 3 Leather
-							un(2, i(126770)),	-- warmongering gladiator's dragonhide gloves
-							un(2, i(126771)),	-- warmongering gladiator's dragonhide helm
-							un(2, i(126772)),	-- warmongering gladiator's dragonhide legguards
-							un(2, i(126773)),	-- warmongering gladiator's dragonhide robes
-							un(2, i(126774)),	-- warmongering gladiator's dragonhide spaulders
-							un(2, i(126775)),	-- warmongering gladiator's kodohide belt
-							un(2, i(126776)),	-- warmongering gladiator's kodohide footguards
-							un(2, i(126777)),	-- warmongering gladiator's kodohide gloves
-							un(2, i(126778)),	-- warmongering gladiator's kodohide helm
-							un(2, i(126779)),	-- warmongering gladiator's kodohide legguards
-							un(2, i(126780)),	-- warmongering gladiator's kodohide robes
-							un(2, i(126781)),	-- warmongering gladiator's kodohide spaulders
-							un(2, i(126783)),	-- warmongering gladiator's wyrmhide belt
-							un(2, i(126784)),	-- warmongering gladiator's wyrmhide footguards
-							un(2, i(126785)),	-- warmongering gladiator's wyrmhide gloves
-							un(2, i(126786)),	-- warmongering gladiator's wyrmhide helm
-							un(2, i(126787)),	-- warmongering gladiator's wyrmhide legguards
-							un(2, i(126788)),	-- warmongering gladiator's wyrmhide robes
-							un(2, i(126789)),	-- warmongering gladiator's wyrmhide spaulders
-							un(2, i(126808)),	-- warmongering gladiator's ironskin waistband
-							un(2, i(126809)),	-- warmongering gladiator's ironskin boosts
-							un(2, i(126810)),	-- warmongering gladiator's ironskin gloves
-							un(2, i(126811)),	-- warmongering gladiator's ironskin helm
-							un(2, i(126812)),	-- warmongering gladiator's ironskin legguards
-							un(2, i(126813)),	-- warmongering gladiator's ironskin spaulders
-							un(2, i(126814)),	-- warmongering gladiator's ironskin tunic
-							un(2, i(126815)),	-- warmongering gladiator's copperskin gloves
-							un(2, i(126816)),	-- warmongering gladiator's copperskin helm
-							un(2, i(126817)),	-- warmongering gladiator's copperskin legguards
-							un(2, i(126818)),	-- warmongering gladiator's copperskin spaulders
-							un(2, i(126819)),	-- warmongering gladiator's copperskin tunic
-							un(2, i(126849)),	-- warmongering gladiator's leather waistband
-							un(2, i(126850)),	-- warmongering gladiator's leather boosts
-							un(2, i(126851)),	-- warmongering gladiator's leather tunic
-							un(2, i(126852)),	-- warmongering gladiator's leather gloves
-							un(2, i(126853)),	-- warmongering gladiator's leather helm
-							un(2, i(126854)),	-- warmongering gladiator's leather legguards
-							un(2, i(126855)),	-- warmongering gladiator's leather spaulders
-							un(2, i(126894)),	-- warmongering gladiator's copperskin boots
-							un(2, i(126895)),	-- warmongering gladiator's copperskin waistband
-							un(2, i(126898)),	-- warmongering gladiator's dragonhide footguards
-							un(2, i(126899)),	-- warmongering gladiator's dragonhide belt
+							n(-661, {	-- Primal Gladiator: Warlords Season 1
+								cl(6, {	-- Death Knight
+									un(2, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
+									un(2, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
+									un(2, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
+									un(2, i(115839)),	-- Primal Gladiator's Dreadplate Helm
+									un(2, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
+									un(2, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
+									un(2, i(115909)),	-- Primal Gladiator's Dreadplate warBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(115971)),	-- Primal Gladiator's Dragonhide Belt
+									un(2, i(115970)),	-- Primal Gladiator's Dragonhide Footguards
+									un(2, i(115842)),	-- Primal Gladiator's Dragonhide Gloves
+									un(2, i(115843)),	-- Primal Gladiator's Dragonhide Helm
+									un(2, i(115844)),	-- Primal Gladiator's Dragonhide Legguards
+									un(2, i(115845)),	-- Primal Gladiator's Dragonhide Robes
+									un(2, i(115846)),	-- Primal Gladiator's Dragonhide Spaulders
+									un(2, i(115847)),	-- Primal Gladiator's Kodohide Belt
+									un(2, i(115848)),	-- Primal Gladiator's Kodohide Footguards
+									un(2, i(115849)),	-- Primal Gladiator's Kodohide Gloves
+									un(2, i(115850)),	-- Primal Gladiator's Kodohide Helm
+									un(2, i(115851)),	-- Primal Gladiator's Kodohide Legguards
+									un(2, i(115852)),	-- Primal Gladiator's Kodohide Robes
+									un(2, i(115853)),	-- Primal Gladiator's Kodohide Spaulders
+									un(2, i(115855)),	-- Primal Gladiator's Wyrmhide Belt
+									un(2, i(115856)),	-- Primal Gladiator's Wyrmhide Footguards
+									un(2, i(115857)),	-- Primal Gladiator's Wyrmhide Gloves
+									un(2, i(115858)),	-- Primal Gladiator's Wyrmhide Helm
+									un(2, i(115859)),	-- Primal Gladiator's Wyrmhide Legguards
+									un(2, i(115860)),	-- Primal Gladiator's Wyrmhide Robes
+									un(2, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(115942)),	-- Primal Gladiator's Mail Armor
+									un(2, i(115930)),	-- Primal Gladiator's Mail Footguards
+									un(2, i(115943)),	-- Primal Gladiator's Mail Gauntlets
+									un(2, i(115944)),	-- Primal Gladiator's Mail Helm
+									un(2, i(115945)),	-- Primal Gladiator's Mail Leggings
+									un(2, i(115946)),	-- Primal Gladiator's Mail Spaulders
+									un(2, i(115941)),	-- Primal Gladiator's Mail Waistguard
+								}),
+								cl(8, {	-- Mage
+									un(2, i(115879)),	-- Primal Gladiator's Silk Amice
+									un(2, i(115824)),	-- Primal Gladiator's Silk Cord
+									un(2, i(115876)),	-- Primal Gladiator's Silk Cowl
+									un(2, i(115875)),	-- Primal Gladiator's Silk Handguards
+									un(2, i(115878)),	-- Primal Gladiator's Silk Robe
+									un(2, i(115827)),	-- Primal Gladiator's Silk Treads
+									un(2, i(115877)),	-- Primal Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(115966)),	-- Primal Gladiator's Copperskin Boots
+									un(2, i(115887)),	-- Primal Gladiator's Copperskin Gloves
+									un(2, i(115888)),	-- Primal Gladiator's Copperskin Helm
+									un(2, i(115889)),	-- Primal Gladiator's Copperskin Legguards
+									un(2, i(115890)),	-- Primal Gladiator's Copperskin Spaulders
+									un(2, i(115891)),	-- Primal Gladiator's Copperskin Tunic
+									un(2, i(115967)),	-- Primal Gladiator's Copperskin Waistband
+									un(2, i(115881)),	-- Primal Gladiator's Ironskin boosts
+									un(2, i(115882)),	-- Primal Gladiator's Ironskin Gloves
+									un(2, i(115883)),	-- Primal Gladiator's Ironskin Helm
+									un(2, i(115884)),	-- Primal Gladiator's Ironskin Legguards
+									un(2, i(115885)),	-- Primal Gladiator's Ironskin Spaulders
+									un(2, i(115886)),	-- Primal Gladiator's Ironskin Tunic
+									un(2, i(115880)),	-- Primal Gladiator's Ironskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(115901)),	-- Primal Gladiator's Ornamented chestguard
+									un(2, i(115898)),	-- Primal Gladiator's Ornamented clasp
+									un(2, i(115902)),	-- Primal Gladiator's Ornamented Gloves
+									un(2, i(115899)),	-- Primal Gladiator's Ornamented greaves
+									un(2, i(115903)),	-- Primal Gladiator's Ornamented headcover
+									un(2, i(115904)),	-- Primal Gladiator's Ornamented legPlates
+									un(2, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
+									un(2, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
+									un(2, i(115897)),	-- Primal Gladiator's Scaled clasp
+									un(2, i(115893)),	-- Primal Gladiator's Scaled Gauntlets
+									un(2, i(115900)),	-- Primal Gladiator's Scaled greaves
+									un(2, i(115894)),	-- Primal Gladiator's Scaled Helm
+									un(2, i(115895)),	-- Primal Gladiator's Scaled Legguards
+									un(2, i(115896)),	-- Primal Gladiator's Scaled shoulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(115826)),	-- Primal Gladiator's Mooncloth Cord
+									un(2, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
+									un(2, i(115912)),	-- Primal Gladiator's Mooncloth Hood
+									un(2, i(115913)),	-- Primal Gladiator's Mooncloth Leggings
+									un(2, i(115915)),	-- Primal Gladiator's Mooncloth manthle
+									un(2, i(115914)),	-- Primal Gladiator's Mooncloth Robe
+									un(2, i(115829)),	-- Primal Gladiator's Mooncloth trads
+									un(2, i(115969)),	-- Primal Gladiator's Satin Cord
+									un(2, i(115916)),	-- Primal Gladiator's Satin Gloves
+									un(2, i(115917)),	-- Primal Gladiator's Satin Hood
+									un(2, i(115918)),	-- Primal Gladiator's Satin Leggings
+									un(2, i(115920)),	-- Primal Gladiator's Satin Mantle
+									un(2, i(115919)),	-- Primal Gladiator's Satin Robe
+									un(2, i(115968)),	-- Primal Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(115922)),	-- Primal Gladiator's Leather boosts
+									un(2, i(115924)),	-- Primal Gladiator's Leather Gloves
+									un(2, i(115925)),	-- Primal Gladiator's Leather Helm
+									un(2, i(115926)),	-- Primal Gladiator's Leather Legguards
+									un(2, i(115927)),	-- Primal Gladiator's Leather Spaulders
+									un(2, i(115923)),	-- Primal Gladiator's Leather Tunic
+									un(2, i(115921)),	-- Primal Gladiator's Leather Waistband
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(115870)),	-- Primal Gladiator's Chain Armor
+									un(2, i(115871)),	-- Primal Gladiator's Chain Gauntlets
+									un(2, i(115872)),	-- Primal Gladiator's Chain Helm
+									un(2, i(115873)),	-- Primal Gladiator's Chain Leggings
+									un(2, i(115866)),	-- Primal Gladiator's Chain links
+									un(2, i(115868)),	-- Primal Gladiator's Chain Sabatons
+									un(2, i(115874)),	-- Primal Gladiator's Chain Spaulders
+									un(2, i(115936)),	-- Primal Gladiator's Linked Armor
+									un(2, i(115937)),	-- Primal Gladiator's Linked Gauntlets
+									un(2, i(115938)),	-- Primal Gladiator's Linked Helm
+									un(2, i(115939)),	-- Primal Gladiator's Linked Leggings
+									un(2, i(115869)),	-- Primal Gladiator's Linked Sabatons
+									un(2, i(115940)),	-- Primal Gladiator's Linked Spaulders
+									un(2, i(115867)),	-- Primal Gladiator's Linked Waistband
+									un(2, i(115931)),	-- Primal Gladiator's Ringmail Armor
+									un(2, i(115929)),	-- Primal Gladiator's Ringmail Foodguards
+									un(2, i(115932)),	-- Primal Gladiator's Ringmail Gauntlets
+									un(2, i(115933)),	-- Primal Gladiator's Ringmail Helm
+									un(2, i(115934)),	-- Primal Gladiator's Ringmail Leggings
+									un(2, i(115935)),	-- Primal Gladiator's Ringmail Spaulders
+									un(2, i(115928)),	-- Primal Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(115960)),	-- Primal Gladiator's Felweave Amice
+									un(2, i(115825)),	-- Primal Gladiator's Felweave Cord
+									un(2, i(115957)),	-- Primal Gladiator's Felweave Cowl
+									un(2, i(115956)),	-- Primal Gladiator's Felweave Handguards
+									un(2, i(115959)),	-- Primal Gladiator's Felweave Rainment
+									un(2, i(115828)),	-- Primal Gladiator's Felweave Treads
+									un(2, i(115958)),	-- Primal Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(115961)),	-- Primal Gladiator's Plate Chestpiece
+									un(2, i(115962)),	-- Primal Gladiator's Plate Gauntlets
+									un(2, i(115907)),	-- Primal Gladiator's Plate Girdle
+									un(2, i(115963)),	-- Primal Gladiator's Plate Helm
+									un(2, i(115964)),	-- Primal Gladiator's Plate Legguards
+									un(2, i(115965)),	-- Primal Gladiator's Plate shoulders
+									un(2, i(115908)),	-- Primal Gladiator's Plate warBoots
+								}),
+							}),
+							n(-662, {	-- Wild Gladiator: Warlords Season 2
+								cl(6, {	-- Death Knight
+									un(2, i(125651)), -- Wild Gladiator's Dreadplate Chestpiece
+									un(2, i(125652)), -- Wild Gladiator's Dreadplate Gauntlets
+									un(2, i(125653)), -- Wild Gladiator's Dreadplate Helm
+									un(2, i(125654)), -- Wild Gladiator's Dreadplate Legguards
+									un(2, i(125655)), -- Wild Gladiator's Dreadplate Shoulders
+									un(2, i(125720)), -- Wild Gladiator's Dreadplate Girdle
+									un(2, i(125723)), -- Wild Gladiator's Dreadplate WarBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(125656)),	-- Wild Gladiator's Dragonhide Gloves
+									un(2, i(125657)),	-- Wild Gladiator's Dragonhide Helm
+									un(2, i(125658)),	-- Wild Gladiator's Dragonhide Legguards
+									un(2, i(125659)),	-- Wild Gladiator's Dragonhide Robes
+									un(2, i(125660)),	-- Wild Gladiator's Dragonhide Spaulders
+									un(2, i(125784)),	-- Wild Gladiator's Dragonhide Footguards
+									un(2, i(125785)),	-- Wild Gladiator's Dragonhide Belt
+									un(2, i(125661)),	-- Wild Gladiator's Kodohide Belt
+									un(2, i(125662)),	-- Wild Gladiator's Kodohide Footguards
+									un(2, i(125663)),	-- Wild Gladiator's Kodohide Gloves
+									un(2, i(125664)),	-- Wild Gladiator's Kodohide Helm
+									un(2, i(125665)),	-- Wild Gladiator's Kodohide Legguards
+									un(2, i(125666)),	-- Wild Gladiator's Kodohide Robes
+									un(2, i(125667)),	-- Wild Gladiator's Kodohide Spaulders
+									un(2, i(125669)),	-- Wild Gladiator's Wyrmhide Belt
+									un(2, i(125670)),	-- Wild Gladiator's Wyrmhide Footguards
+									un(2, i(125671)),	-- Wild Gladiator's Wyrmhide Gloves
+									un(2, i(125672)),	-- Wild Gladiator's Wyrmhide Helm
+									un(2, i(125673)),	-- Wild Gladiator's Wyrmhide Legguards
+									un(2, i(125674)),	-- Wild Gladiator's Wyrmhide Robes
+									un(2, i(125675)),	-- Wild Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(125684)),	-- Wild Gladiator's Chain Armor
+									un(2, i(125685)),	-- Wild Gladiator's Chain Gauntlets
+									un(2, i(125686)),	-- Wild Gladiator's Chain Helm
+									un(2, i(125687)),	-- Wild Gladiator's Chain Leggings
+									un(2, i(125688)),	-- Wild Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(125693)),	-- Wild Gladiator's Silk Amice
+									un(2, i(125638)),	-- Wild Gladiator's Silk Cord
+									un(2, i(125690)),	-- Wild Gladiator's Silk Cowl
+									un(2, i(125689)),	-- Wild Gladiator's Silk Handguards
+									un(2, i(125692)),	-- Wild Gladiator's Silk Robe
+									un(2, i(125641)),	-- Wild Gladiator's Silk Treads
+									un(2, i(125691)),	-- Wild Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(125694)),	-- Wild Gladiator's Ironskin Waistband
+									un(2, i(125695)),	-- Wild Gladiator's Ironskin boosts
+									un(2, i(125696)),	-- Wild Gladiator's Ironskin Gloves
+									un(2, i(125697)),	-- Wild Gladiator's Ironskin Helm
+									un(2, i(125698)),	-- Wild Gladiator's Ironskin Legguards
+									un(2, i(125699)),	-- Wild Gladiator's Ironskin Spaulders
+									un(2, i(125700)),	-- Wild Gladiator's Ironskin Tunic
+									un(2, i(125701)),	-- Wild Gladiator's Copperskin Gloves
+									un(2, i(125702)),	-- Wild Gladiator's Copperskin Helm
+									un(2, i(125703)),	-- Wild Gladiator's Copperskin Legguards
+									un(2, i(125704)),	-- Wild Gladiator's Copperskin Spaulders
+									un(2, i(125705)),	-- Wild Gladiator's Copperskin Tunic
+									un(2, i(125780)),	-- Wild Gladiator's Copperskin Boots
+									un(2, i(125781)),	-- Wild Gladiator's Copperskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(125706)), -- Wild Gladiator's Scaled Chestpiece
+									un(2, i(125707)), -- Wild Gladiator's Scaled Gauntlets
+									un(2, i(125708)), -- Wild Gladiator's Scaled Helm
+									un(2, i(125709)), -- Wild Gladiator's Scaled Legguards
+									un(2, i(125710)), -- Wild Gladiator's Scaled Shoulders
+									un(2, i(125711)), -- Wild Gladiator's Scaled Clasp
+									un(2, i(125714)), -- Wild Gladiator's Scaled Greaves
+									un(2, i(125712)), -- Wild Gladiator's Ornamented Clasp
+									un(2, i(125713)), -- Wild Gladiator's Ornamented Greaves
+									un(2, i(125715)), -- Wild Gladiator's Ornamented Chestguard
+									un(2, i(125716)), -- Wild Gladiator's Ornamented Gloves
+									un(2, i(125717)), -- Wild Gladiator's Ornamented Headcover
+									un(2, i(125718)), -- Wild Gladiator's Ornamented LegPlates
+									un(2, i(125719)), -- Wild Gladiator's Ornamented Spaulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(125640)),	-- Wild Gladiator's Mooncloth Cord
+									un(2, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
+									un(2, i(125726)),	-- Wild Gladiator's Mooncloth Hood
+									un(2, i(125727)),	-- Wild Gladiator's Mooncloth Leggings
+									un(2, i(125729)),	-- Wild Gladiator's Mooncloth manthle
+									un(2, i(125728)),	-- Wild Gladiator's Mooncloth Robe
+									un(2, i(125643)),	-- Wild Gladiator's Mooncloth trads
+									un(2, i(125783)),	-- Wild Gladiator's Satin Cord
+									un(2, i(125730)),	-- Wild Gladiator's Satin Gloves
+									un(2, i(125731)),	-- Wild Gladiator's Satin Hood
+									un(2, i(125732)),	-- Wild Gladiator's Satin Leggings
+									un(2, i(125734)),	-- Wild Gladiator's Satin Mantle
+									un(2, i(125733)),	-- Wild Gladiator's Satin Robe
+									un(2, i(125782)),	-- Wild Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(125735)),	-- Wild Gladiator's Leather Waistband
+									un(2, i(125736)),	-- Wild Gladiator's Leather boosts
+									un(2, i(125737)),	-- Wild Gladiator's Leather Tunic
+									un(2, i(125738)),	-- Wild Gladiator's Leather Gloves
+									un(2, i(125739)),	-- Wild Gladiator's Leather Helm
+									un(2, i(125740)),	-- Wild Gladiator's Leather Legguards
+									un(2, i(125741)),	-- Wild Gladiator's Leather Spaulders
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(125750)),	-- Wild Gladiator's Linked Armor
+									un(2, i(125751)),	-- Wild Gladiator's Linked Gauntlets
+									un(2, i(125752)),	-- Wild Gladiator's Linked Helm
+									un(2, i(125753)),	-- Wild Gladiator's Linked Leggings
+									un(2, i(125683)),	-- Wild Gladiator's Linked Sabatons
+									un(2, i(125754)),	-- Wild Gladiator's Linked Spaulders
+									un(2, i(125756)),	-- Wild Gladiator's Mail Armor
+									un(2, i(125744)),	-- Wild Gladiator's Mail Footguards
+									un(2, i(125757)),	-- Wild Gladiator's Mail Gauntlets
+									un(2, i(125758)),	-- Wild Gladiator's Mail Helm
+									un(2, i(125759)),	-- Wild Gladiator's Mail Leggings
+									un(2, i(125760)),	-- Wild Gladiator's Mail Spaulders
+									un(2, i(125755)),	-- Wild Gladiator's Mail Waistguard
+									un(2, i(125745)),	-- Wild Gladiator's Ringmail Armor
+									un(2, i(125743)),	-- Wild Gladiator's Ringmail Footguards
+									un(2, i(125746)),	-- Wild Gladiator's Ringmail Gauntlets
+									un(2, i(125747)),	-- Wild Gladiator's Ringmail Helm
+									un(2, i(125748)),	-- Wild Gladiator's Ringmail Leggings
+									un(2, i(125749)),	-- Wild Gladiator's Ringmail Spaulders
+									un(2, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(125774)),	-- wild Gladiator's Felweave Amice
+									un(2, i(125639)),	-- wild Gladiator's Felweave Cord
+									un(2, i(125771)),	-- wild Gladiator's Felweave Cowl
+									un(2, i(125770)),	-- wild Gladiator's Felweave Handguards
+									un(2, i(125773)),	-- wild Gladiator's Felweave Rainment
+									un(2, i(125642)),	-- wild Gladiator's Felweave Treads
+									un(2, i(125772)),	-- wild Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(125721)), -- Wild Gladiator's Plate Girdle
+									un(2, i(125722)), -- Wild Gladiator's Plate WarBoots
+									un(2, i(125775)), -- Wild Gladiator's Plate Chestpiece
+									un(2, i(125776)), -- Wild Gladiator's Plate Gauntlets
+									un(2, i(125777)), -- Wild Gladiator's Plate Helm
+									un(2, i(125778)), -- Wild Gladiator's Plate Legguards
+									un(2, i(125779)), -- Wild Gladiator's Plate Shoulders
+								}),
+							}),
+							n(-663, {	-- Warmongering Gladiator: Warlords Season 3
+								cl(6, {	-- Death Knight
+									un(2, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
+									un(2, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets
+									un(2, i(126767)), -- Warmongering Gladiator's Dreadplate Helm
+									un(2, i(126768)), -- Warmongering Gladiator's Dreadplate Legguards
+									un(2, i(126769)), -- Warmongering Gladiator's Dreadplate Shoulders
+									un(2, i(126834)), -- Warmongering Gladiator's Dreadplate Girdle
+									un(2, i(126837)), -- Warmongering Gladiator's Dreadplate WarBoots
+								}),
+								cl(11, {	-- Druid
+									un(2, i(126899)),	-- Warmongering Gladiator's Dragonhide Belt
+									un(2, i(126898)),	-- Warmongering Gladiator's Dragonhide Footguards
+									un(2, i(126770)),	-- Warmongering Gladiator's Dragonhide Gloves
+									un(2, i(126771)),	-- Warmongering Gladiator's Dragonhide Helm
+									un(2, i(126772)),	-- Warmongering Gladiator's Dragonhide Legguards
+									un(2, i(126773)),	-- Warmongering Gladiator's Dragonhide Robes
+									un(2, i(126774)),	-- Warmongering Gladiator's Dragonhide Spaulders
+									un(2, i(126775)),	-- Warmongering Gladiator's Kodohide Belt
+									un(2, i(126776)),	-- Warmongering Gladiator's Kodohide Footguards
+									un(2, i(126777)),	-- Warmongering Gladiator's Kodohide Gloves
+									un(2, i(126778)),	-- Warmongering Gladiator's Kodohide Helm
+									un(2, i(126779)),	-- Warmongering Gladiator's Kodohide Legguards
+									un(2, i(126780)),	-- Warmongering Gladiator's Kodohide Robes
+									un(2, i(126781)),	-- Warmongering Gladiator's Kodohide Spaulders
+									un(2, i(126783)),	-- Warmongering Gladiator's Wyrmhide Belt
+									un(2, i(126784)),	-- Warmongering Gladiator's Wyrmhide Footguards
+									un(2, i(126785)),	-- Warmongering Gladiator's Wyrmhide Gloves
+									un(2, i(126786)),	-- Warmongering Gladiator's Wyrmhide Helm
+									un(2, i(126787)),	-- Warmongering Gladiator's Wyrmhide Legguards
+									un(2, i(126788)),	-- Warmongering Gladiator's Wyrmhide Robes
+									un(2, i(126789)),	-- Warmongering Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(126798)),	-- Warmongering Gladiator's Chain Armor
+									un(2, i(126799)),	-- Warmongering Gladiator's Chain Gauntlets
+									un(2, i(126800)),	-- Warmongering Gladiator's Chain Helm
+									un(2, i(126801)),	-- Warmongering Gladiator's Chain Leggings
+									un(2, i(126794)),	-- Warmongering Gladiator's Chain Links
+									un(2, i(126796)),	-- Warmongering Gladiator's Chain Sabatons
+									un(2, i(126802)),	-- Warmongering Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(126807)),	-- Warmongering Gladiator's Silk Amice
+									un(2, i(126752)),	-- Warmongering Gladiator's Silk Cord
+									un(2, i(126804)),	-- Warmongering Gladiator's Silk Cowl
+									un(2, i(126803)),	-- Warmongering Gladiator's Silk Handguards
+									un(2, i(126806)),	-- Warmongering Gladiator's Silk Robe
+									un(2, i(126755)),	-- Warmongering Gladiator's Silk Treads
+									un(2, i(126805)),	-- Warmongering Gladiator's Silk Trousers
+								}),
+								cl(10, {	-- Monk
+									un(2, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
+									un(2, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
+									un(2, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
+									un(2, i(126812)),	-- Warmongering Gladiator's Ironskin Legguards
+									un(2, i(126813)),	-- Warmongering Gladiator's Ironskin Spaulders
+									un(2, i(126814)),	-- Warmongering Gladiator's Ironskin Tunic
+									un(2, i(126808)),	-- Warmongering Gladiator's Ironskin Waistband
+									un(2, i(126894)),	-- Warmongering Gladiator's Copperskin Boots
+									un(2, i(126815)),	-- Warmongering Gladiator's Copperskin Gloves
+									un(2, i(126816)),	-- Warmongering Gladiator's Copperskin Helm
+									un(2, i(126817)),	-- Warmongering Gladiator's Copperskin Legguards
+									un(2, i(126818)),	-- Warmongering Gladiator's Copperskin Spaulders
+									un(2, i(126819)),	-- Warmongering Gladiator's Copperskin Tunic
+									un(2, i(126895)),	-- Warmongering Gladiator's Copperskin Waistband
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(126826)), -- Warmongering Gladiator's Ornamented Clasp
+									un(2, i(126827)), -- Warmongering Gladiator's Ornamented Greaves
+									un(2, i(126829)), -- Warmongering Gladiator's Ornamented Chestguard
+									un(2, i(126830)), -- Warmongering Gladiator's Ornamented Gloves
+									un(2, i(126831)), -- Warmongering Gladiator's Ornamented Headcover
+									un(2, i(126832)), -- Warmongering Gladiator's Ornamented LegPlates
+									un(2, i(126833)), -- Warmongering Gladiator's Ornamented Spaulders
+									un(2, i(126820)), -- Warmongering Gladiator's Scaled Chestpiece
+									un(2, i(126821)), -- Warmongering Gladiator's Scaled Gauntlets
+									un(2, i(126822)), -- Warmongering Gladiator's Scaled Helm
+									un(2, i(126823)), -- Warmongering Gladiator's Scaled Legguards
+									un(2, i(126824)), -- Warmongering Gladiator's Scaled Shoulders
+									un(2, i(126825)), -- Warmongering Gladiator's Scaled Clasp
+									un(2, i(126828)), -- Warmongering Gladiator's Scaled Greaves
+								}),
+								cl(5, {	-- Priest
+									un(2, i(126754)),	-- Warmongering Gladiator's Mooncloth Cord
+									un(2, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
+									un(2, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
+									un(2, i(126841)),	-- Warmongering Gladiator's Mooncloth Leggings
+									un(2, i(126843)),	-- Warmongering Gladiator's Mooncloth manthle
+									un(2, i(126842)),	-- Warmongering Gladiator's Mooncloth Robe
+									un(2, i(126757)),	-- Warmongering Gladiator's Mooncloth Treads
+									un(2, i(126897)),	-- Warmongering Gladiator's Satin Cord
+									un(2, i(126844)),	-- Warmongering Gladiator's Satin Gloves
+									un(2, i(126845)),	-- Warmongering Gladiator's Satin Hood
+									un(2, i(126846)),	-- Warmongering Gladiator's Satin Leggings
+									un(2, i(126848)),	-- Warmongering Gladiator's Satin Mantle
+									un(2, i(126847)),	-- Warmongering Gladiator's Satin Robe
+									un(2, i(126896)),	-- Warmongering Gladiator's Satin Treads
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(126850)),	-- Warmongering Gladiator's Leather boosts
+									un(2, i(126852)),	-- Warmongering Gladiator's Leather Gloves
+									un(2, i(126853)),	-- Warmongering Gladiator's Leather Helm
+									un(2, i(126854)),	-- Warmongering Gladiator's Leather Legguards
+									un(2, i(126855)),	-- Warmongering Gladiator's Leather Spaulders
+									un(2, i(126851)),	-- Warmongering Gladiator's Leather Tunic
+									un(2, i(126849)),	-- Warmongering Gladiator's Leather Waistband
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(126864)),	-- Warmongering Gladiator's Linked Armor
+									un(2, i(126865)),	-- Warmongering Gladiator's Linked Gauntlets
+									un(2, i(126866)),	-- Warmongering Gladiator's Linked Helm
+									un(2, i(126867)),	-- Warmongering Gladiator's Linked Leggings
+									un(2, i(126797)),	-- Warmongering Gladiator's Linked Sabatons
+									un(2, i(126868)),	-- Warmongering Gladiator's Linked Spaulders
+									un(2, i(126795)),	-- Warmongering Gladiator's Linked Waistband
+									un(2, i(126870)),	-- Warmongering Gladiator's Mail Armor
+									un(2, i(126858)),	-- Warmongering Gladiator's Mail Footguards
+									un(2, i(126871)),	-- Warmongering Gladiator's Mail Gauntlets
+									un(2, i(126872)),	-- Warmongering Gladiator's Mail Helm
+									un(2, i(126873)),	-- Warmongering Gladiator's Mail Leggings
+									un(2, i(126874)),	-- Warmongering Gladiator's Mail Spaulders
+									un(2, i(126869)),	-- Warmongering Gladiator's Mail Waistguard
+									un(2, i(126859)),	-- Warmongering Gladiator's Ringmail Armor
+									un(2, i(126857)),	-- Warmongering Gladiator's Ringmail Footguards
+									un(2, i(126860)),	-- Warmongering Gladiator's Ringmail Gauntlets
+									un(2, i(126861)),	-- Warmongering Gladiator's Ringmail Helm
+									un(2, i(126862)),	-- Warmongering Gladiator's Ringmail Leggings
+									un(2, i(126863)),	-- Warmongering Gladiator's Ringmail Spaulders
+									un(2, i(126856)),	-- Warmongering Gladiator's Ringmail Waistguard
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(126888)),	-- Warmongering Gladiator's Felweave Amice
+									un(2, i(126753)),	-- Warmongering Gladiator's Felweave Cord
+									un(2, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
+									un(2, i(126884)),	-- Warmongering Gladiator's Felweave Handguards
+									un(2, i(126887)),	-- Warmongering Gladiator's Felweave Rainment
+									un(2, i(126756)),	-- Warmongering Gladiator's Felweave Treads
+									un(2, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(126835)), -- Warmongering Gladiator's Plate Girdle
+									un(2, i(126836)), -- Warmongering Gladiator's Plate WarBoots
+									un(2, i(126889)), -- Warmongering Gladiator's Plate Chestpiece
+									un(2, i(126890)), -- Warmongering Gladiator's Plate Gauntlets
+									un(2, i(126891)), -- Warmongering Gladiator's Plate Helm
+									un(2, i(126892)), -- Warmongering Gladiator's Plate Legguards
+									un(2, i(126893)), -- Warmongering Gladiator's Plate Shoulders
+								}),
+							}),
 						},
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
