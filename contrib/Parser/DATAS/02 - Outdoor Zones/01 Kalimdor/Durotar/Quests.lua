@@ -60,15 +60,18 @@ _.Zones =
 							25073,	-- Sen'jin Village
 						},
 					},
-					{	-- Brutal Gauntlets
-						["questID"] = 1843,
-						["u"] = 40,
+					q(1843, {	-- Brutal Gauntlets
+						["qg"] = 6408,	-- Ula'elek
+						["coord"] = { 56.4, 74.4, 1 },
+						["sourceQuest"] = 1842,	-- Satyr Hooves
 						["races"] = HORDE_ONLY,
 						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(7129)),	-- Brutal Gauntlets
 						},
-					},
+					}),
 					{	-- Cleaning Up the Coastline
 						["questID"] = 25170,
 						["qg"] = 10578,	-- Bom'bay
@@ -347,6 +350,15 @@ _.Zones =
 							},
 						},
 					},
+					q(1842, {	-- Satyr Hooves
+						["qg"] = 6408,	-- Ula'elek
+						["coord"] = { 56.4, 74.4, 1 },
+						["sourceQuest"] = 1839,	-- Ula'elek and the Brutal Gauntlets
+						["races"] = HORDE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,
+						["u"] = 40,
+					}),
 					{	-- Second Sight
 						["questID"] = 40982,
 						["qg"] = 100873,	-- Allari the Souleater

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			["groups"] = {
+			["g"] = {
 				n(-17, {	-- Quests
 					ach(4892, {	-- Eastern Plaugelands Quests
 						crit(1, {	-- The Paladin Pals
@@ -22,7 +22,7 @@ _.Zones =
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
 							q(27369, {	-- Greasing the Wheel
-								["groups"] = {
+								["g"] = {
 									i(62938), 	-- Giddy's Old Gloves
 									i(62937), 	-- Thorondoril River Boots
 									i(62936), 	-- Treads of Banshee Bells
@@ -41,7 +41,7 @@ _.Zones =
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
 							q(27372, {	-- A Gift For Fiona
-								["groups"] = {
+								["g"] = {
 									i(62943), 	-- Helm of Thoughtful Gifts
 									i(62942), 	-- Gentling Breastplate
 									i(62941), 	-- Plaguehound Armbands
@@ -67,7 +67,7 @@ _.Zones =
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
 							q(27392, {	-- I'm Not Supposed to Tell You This
-								["groups"] = {
+								["g"] = {
 									i(62950),	-- Joseph's Spare Belt
 									i(62949),	-- Finder's Keepers
 									i(62948),	-- Hide of the Lone Hunter
@@ -84,7 +84,7 @@ _.Zones =
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
 							q(27387, {	-- Villians of Darrowshire
-								["groups"] = {
+								["g"] = {
 									i(62954),	-- Seeker's Britches
 									i(62953),	-- Vest of Discovery
 									i(62952),	-- Chromie's Mirror
@@ -102,7 +102,7 @@ _.Zones =
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27390, {	-- The Battle of Darrowshire
-								["groups"] = {
+								["g"] = {
 									i(62957),	-- Homecoming Wrap
 									i(62956),	-- Sweet-Tempered Breastplate
 									i(62955),	-- Pauldrons of Darrowshire
@@ -111,7 +111,7 @@ _.Zones =
 								["sourceQuests"] = { 27387,27388,27389 },	-- "Villains of Darrowshire", "Heroes of Darrowshire", "Marauders of Darrowshire"
 							}),
 							q(27391, {	-- Hidden Treasures
-								["groups"] = {
+								["g"] = {
 									i(62961),  	-- Redpath Bracers
 									i(62960),  	-- Brightening Wand
 									i(62959),  	-- Hidden Treasure
@@ -143,7 +143,7 @@ _.Zones =
 								["sourceQuests"] = {27461},
 							}),
 							q(27613, {	-- The Assassin
-								["groups"] = {
+								["g"] = {
 									i(62968),
 									i(62967),
 									i(62966),
@@ -168,7 +168,7 @@ _.Zones =
 								["sourceQuests"] = {27462},
 							}),
 							q(27619, {	-- The Commander
-								["groups"] = {
+								["g"] = {
 									i(62971),
 									i(62970),
 									i(62969),
@@ -181,7 +181,7 @@ _.Zones =
 								["sourceQuests"] = {27614,27615,27616,27619},
 							}),
 							q(27620, {	-- Like Rats
-								["groups"] = {
+								["g"] = {
 									i(62998),
 									i(62997),
 									i(62996),
@@ -208,7 +208,7 @@ _.Zones =
 								["sourceQuests"] = {27465},	-- "Argent Call: The Noxious Glade"
 							}),
 							q(27487, {	-- Ix'lar the Underlord
-								["groups"] = {
+								["g"] = {
 									i(62995),	-- Underlord's Mandible
 									i(62994),	-- Rash Gloves
 									i(62993),	-- Belt of Delay
@@ -253,7 +253,7 @@ _.Zones =
 								["sourceQuests"] = {27551},	-- "The Baroness' Missive"
 							}),
 							q(27527, {	-- Journey's End
-								["groups"] = {
+								["g"] = {
 									i(63022),
 									i(63021),
 									i(63020),
@@ -281,7 +281,7 @@ _.Zones =
 								["sourceQuests"] = { 27367 },	-- Gidwin Goldbraids
 							}),
 							q(27369, {	-- Greasing the Wheel
-								["groups"] = {
+								["g"] = {
 									i(62938), 	-- Giddy's Old Gloves
 									i(62937), 	-- Thorondoril River Boots
 									i(62936), 	-- Treads of Banshee Bells
@@ -302,7 +302,7 @@ _.Zones =
 								["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 							}),
 							q(27372, {	-- A Gift For Fiona
-								["groups"] = {
+								["g"] = {
 									i(62943), 	-- Helm of Thoughtful Gifts
 									i(62942), 	-- Gentling Breastplate
 									i(62941), 	-- Plaguehound Armbands
@@ -321,7 +321,7 @@ _.Zones =
 								["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 							}),
 							q(27382, {	-- Rough Roads
-								["groups"] = {
+								["g"] = {
 									i(62947),	-- Treads of Youth
 									i(62946),	-- Crown Guard Armbands
 									i(62945),	-- Plaguebat Vest
@@ -343,7 +343,7 @@ _.Zones =
 								["sourceQuests"] = { 27383 },	-- "Little Pamela"
 							}),
 							q(27392, {	-- I'm Not Supposed to Tell You This
-								["groups"] = {
+								["g"] = {
 									i(62950),	-- Joseph's Spare Belt
 									i(62949),	-- Finder's Keepers
 									i(62948),	-- Hide of the Lone Hunter
@@ -360,7 +360,7 @@ _.Zones =
 								["sourceQuests"] = { 27385 },	-- "Little Pamela"
 							}),
 							q(27387, {	-- Villians of Darrowshire
-								["groups"] = {
+								["g"] = {
 									i(62954),	-- Seeker's Britches
 									i(62953),	-- Vest of Discovery
 									i(62952),	-- Chromie's Mirror
@@ -378,7 +378,7 @@ _.Zones =
 								["sourceQuests"] = { 27386 },	-- "A Strange Historian"
 							}),
 							q(27390, {	-- The Battle of Darrowshire
-								["groups"] = {
+								["g"] = {
 									i(62957),	-- Homecoming Wrap
 									i(62956),	-- Sweet-Tempered Breastplate
 									i(62955),	-- Pauldrons of Darrowshire
@@ -398,7 +398,7 @@ _.Zones =
 						}),
 						crit(7, {	-- Rimblat Earthshatter
 							q(27456, {	-- Gathering Some Grub(s)
-								["groups"] = {
+								["g"] = {
 									i(62981),
 									i(62980),
 									i(62979),
@@ -418,7 +418,7 @@ _.Zones =
 						["qg"] = 45482,	-- Argent Officer Irizarry
 					}),
 					q(27533, {	-- A Fate Worse Than Butchery
-						["groups"] = {
+						["g"] = {
 							i(63006),
 							i(63005),
 							i(63004),
@@ -428,7 +428,7 @@ _.Zones =
 						["sourceQuests"] = { 27535 },
 					}),
 					q(27539, {	-- Add'em to the Pile
-						["groups"] = {
+						["g"] = {
 							i(63014),
 							i(63013),
 							i(63011),
@@ -442,7 +442,7 @@ _.Zones =
 						["sourceQuests"] = {27464},
 					}),
 					q(27421, {	-- Amidst Death, Life
-						["groups"] = {
+						["g"] = {
 							i(62965),	-- Ring of New Life
 							i(62964),	-- Pauldrons of Blooming Hope
 							i(62963),	-- Rayne's Scarf
@@ -463,7 +463,7 @@ _.Zones =
 						["sourceQuests"] = {27448}	-- "The Trek Continues"
 					}),
 					q(27467, {	-- Buried Blades
-						["groups"] = {
+						["g"] = {
 							i(62984),	-- Omarion's Gift
 							i(62983),	-- Cowl of the Noxious Glade
 							i(62982),	-- Light-Touched Pendant
@@ -480,7 +480,7 @@ _.Zones =
 						["isBreadcrumb"] = true,	-- for "Postponing the Inevitable"
 					}),
 					q(27531, {	-- Counter-Plague Research
-						["groups"] = {
+						["g"] = {
 							i(63010),
 							i(63009),
 							i(63008),
@@ -496,7 +496,7 @@ _.Zones =
 						["qg"] = 45831,	-- Crusader Kevin Frost
 					}),
 					q(27523, {	-- Duskwing, Oh How I Hate Thee...
-						["groups"] = {
+						["g"] = {
 							i(63001),
 							i(63000),
 							i(62999),
@@ -505,7 +505,7 @@ _.Zones =
 						["qg"] = 45816,	-- Corpseburner Tim
 					}),
 					q(27450, {	-- Frederick's Fish Fancy
-						["groups"] = {
+						["g"] = {
 							i(62974),	-- Infectis Scuttler Helm
 							i(62973),	-- Infectis Puffer Gloves
 							i(62972),	-- Infectis Incher Leggings
@@ -518,14 +518,14 @@ _.Zones =
 						["sourceQuests"] = { 28579, 28580 },	-- Hero's Call/Warchief's Command: Badlands!
 					}),
 					q(27482, {	-- Into the Flames
-						["groups"] = {
+						["g"] = {
 							i(62991),	-- Strength's Supremacy
 						},
 						["qg"] = 45574,	-- Vex'tul
 						["sourceQuests"] = {27481}	-- "Out of the Ziggurat"
 					}),
 					q(27454, {	-- Just a Drop in the Bucket
-						["groups"] = {
+						["g"] = {
 							i(62977), 	-- Light's Shield
 							i(62976), 	-- Breastplate of the Droplet
 							i(62975), 	-- Plaguefix Launcher
@@ -557,7 +557,7 @@ _.Zones =
 						["qg"] = 11033,	-- Smokey LaRue
 					}),
 					q(27530, {	-- The Corpsebeasts
-						["groups"] = {
+						["g"] = {
 							i(63017),
 							i(63016),
 							i(63015),
@@ -566,7 +566,7 @@ _.Zones =
 						["sourceQuests"] = {27528,27529,27539},
 					}),
 					q(27477, {	-- The Corpulent One
-						["groups"] = {
+						["g"] = {
 							i(62987),	-- Eastwall Gauntlets
 							i(62986),	-- Borelgore's Skin
 							i(62985),	-- Corpulent Shoulderpads
@@ -713,7 +713,7 @@ _.Zones =
 					},
 					un(40, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22657)),	-- Amulet of the Dawn
 							un(2, i(22667)),	-- Bracers of Hope
 							un(2, i(22668)),	-- Bracers of Subterfuge
@@ -724,7 +724,7 @@ _.Zones =
 					})),
 					un(40, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22657)),	-- Amulet of the Dawn
 							un(2, i(22667)),	-- Bracers of Hope
 							un(2, i(22668)),	-- Bracers of Subterfuge
@@ -735,7 +735,7 @@ _.Zones =
 					})),
 					un(40, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22657)),	-- Amulet of the Dawn
 							un(2, i(22667)),	-- Bracers of Hope
 							un(2, i(22668)),	-- Bracers of Subterfuge
@@ -746,7 +746,7 @@ _.Zones =
 					})),
 					un(40, q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22657)),	-- Amulet of the Dawn
 							un(2, i(22667)),	-- Bracers of Hope
 							un(2, i(22668)),	-- Bracers of Subterfuge
@@ -757,7 +757,7 @@ _.Zones =
 					})),
 					un(40, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22681)),	-- Band of Piety
 							un(2, i(22680)),	-- Band of Resolution
 							un(2, i(22688)),	-- Verimonde's Last Resort
@@ -767,7 +767,7 @@ _.Zones =
 					})),
 					un(40, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22681)),	-- Band of Piety
 							un(2, i(22680)),	-- Band of Resolution
 							un(2, i(22688)),	-- Verimonde's Last Resort
@@ -777,7 +777,7 @@ _.Zones =
 					})),
 					un(40, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22681)),	-- Band of Piety
 							un(2, i(22680)),	-- Band of Resolution
 							un(2, i(22688)),	-- Verimonde's Last Resort
@@ -787,7 +787,7 @@ _.Zones =
 					})),
 					un(40, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							un(2, i(22681)),	-- Band of Piety
 							un(2, i(22680)),	-- Band of Resolution
 							un(2, i(22688)),	-- Verimonde's Last Resort
@@ -821,7 +821,7 @@ _.Zones =
 					un(40, {		-- Houses of the Holy
 						["questID"] = 5243,	-- Houses of the Holy
 						["qg"]	= 11036,	-- Leonid Barthalomew the Revered
-						["groups"] = {
+						["g"] = {
 							un(2, i(13217)),	-- Band of the Penitent
 							un(2, i(13216)),	-- Crown of the Penitent
 						},
@@ -858,6 +858,280 @@ _.Zones =
 						un(2, i(16992)),	-- Smokey's Explosive Launcher
 						un(2, i(16993)),	-- Smokey's Fireshooter
 					})),
+					-- Part of the Dungeon 2 Set Questline
+					q(8945, {	-- Dead Man's Plea
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 8930,	-- In Search of Anthion
+						["lvl"] = 58,
+						["u"] = 40,
+					}),					
+					q(8947, {	-- Anthion's Strange Request
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 8946,	-- Proof of Life
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8948, {	-- Anthion's Old Friend
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 8947,	-- Anthion's Strange Request
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
+					q(8959, {	-- Anthion's Parting Words (Warrior)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(21995)),	-- Boots of Heroism
+							un(2, i(22000)),	-- Legplates of Heroism
+							un(2, i(22001)),	-- Spaulders of Heroism
+						},
+					}),
+					q(8954, {	-- Anthion's Parting Words (Paladin)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22087)),	-- Soulforge Boots
+							un(2, i(22092)),	-- Soulforge Legplates
+							un(2, i(22093)),	-- Soulforge Spaulders
+						},
+					}),
+					q(8952, {	-- Anthion's Parting Words (Hunter)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22061)),	-- Beastmaster's Boots
+							un(2, i(22016)),	-- Beastmaster's Mantle
+							un(2, i(22017)),	-- Beastmaster's Pants
+						},
+					}),
+					q(8956, {	-- Anthion's Parting Words (Rogue)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22003)),	-- Darkmantle Boots
+							un(2, i(22007)),	-- Darkmantle Pants
+							un(2, i(22008)),	-- Darkmantle Spaulders
+						},
+					}),
+					q(8955, {	-- Anthion's Parting Words (Priest)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22082)),	-- Virtuous Mantle
+							un(2, i(22084)),	-- Virtuous Sandals
+							un(2, i(22085)),	-- Virtuous Skirt
+						},
+					}),
+					q(10496, {	-- Anthion's Parting Words (Shaman)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 7 },	-- Shaman
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22096)),	-- Boots of The Five Thunders
+							un(2, i(22100)),	-- Kilt of The Five Thunders.
+							un(2, i(22101)),	-- Pauldrons of The Five Thunders
+						},
+					}),
+					q(8953, {	-- Anthion's Parting Words (Mage)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22064)),	-- Sorcerer's Boots
+							un(2, i(22067)),	-- Sorcerer's Leggings
+							un(2, i(22068)),	-- Sorcerer's Mantle
+						},
+					}),
+					q(8958, {	-- Anthion's Parting Words (Warlock)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22072)),	-- Deathmist Leggings
+							un(2, i(22073)),	-- Deathmist Mantle
+							un(2, i(22076)),	-- Deathmist Sandals
+						},
+					}),
+					q(8951, {	-- Anthion's Parting Words (Druid)[Alliance]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22107)),	-- Feralheart Boots
+							un(2, i(22111)),	-- Feralheart Kilt
+							un(2, i(22112)),	-- Feralheart Spaulders
+						},
+					}),
+					q(9022, {	-- Anthion's Parting Words (Warrior)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(21995)),	-- Boots of Heroism
+							un(2, i(22000)),	-- Legplates of Heroism
+							un(2, i(22001)),	-- Spaulders of Heroism
+						},
+					}),
+					q(10497, {	-- Anthion's Parting Words (Paladin)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22087)),	-- Soulforge Boots
+							un(2, i(22092)),	-- Soulforge Legplates
+							un(2, i(22093)),	-- Soulforge Spaulders
+						},
+					}),
+					q(9017, {	-- Anthion's Parting Words (Hunter)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22061)),	-- Beastmaster's Boots
+							un(2, i(22016)),	-- Beastmaster's Mantle
+							un(2, i(22017)),	-- Beastmaster's Pants
+						},
+					}),
+					q(9020, {	-- Anthion's Parting Words (Rogue)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22003)),	-- Darkmantle Boots
+							un(2, i(22007)),	-- Darkmantle Pants
+							un(2, i(22008)),	-- Darkmantle Spaulders
+						},
+					}),
+					q(9019, {	-- Anthion's Parting Words (Priest)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22082)),	-- Virtuous Mantle
+							un(2, i(22084)),	-- Virtuous Sandals
+							un(2, i(22085)),	-- Virtuous Skirt
+						},
+					}),
+					q(8957, {	-- Anthion's Parting Words (Shaman)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 7 },	-- Shaman
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22096)),	-- Boots of The Five Thunders
+							un(2, i(22100)),	-- Kilt of The Five Thunders.
+							un(2, i(22101)),	-- Pauldrons of The Five Thunders
+						},
+					}),
+					q(9018, {	-- Anthion's Parting Words (Mage)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22064)),	-- Sorcerer's Boots
+							un(2, i(22067)),	-- Sorcerer's Leggings
+							un(2, i(22068)),	-- Sorcerer's Mantle
+						},
+					}),
+					q(9021, {	-- Anthion's Parting Words (Warlock)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22072)),	-- Deathmist Leggings
+							un(2, i(22073)),	-- Deathmist Mantle
+							un(2, i(22076)),	-- Deathmist Sandals
+						},
+					}),
+					q(9016, {	-- Anthion's Parting Words (Druid)[Horde]
+						["qg"] = 16016,	-- Anthion Harmon
+						["coord"] = { 26.9, 12.1, 23 },
+						["sourceQuest"] = 9015,	-- The Challenge
+						["races"] = HORDE_ONLY,						
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(22107)),	-- Feralheart Boots
+							un(2, i(22111)),	-- Feralheart Kilt
+							un(2, i(22112)),	-- Feralheart Spaulders
+						},
+					}),
 				}),
 			},
 		}),

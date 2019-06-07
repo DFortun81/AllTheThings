@@ -44,11 +44,21 @@ _.Zones =
 							q(1845, {	-- Brutal Helm
 								["qg"] = 6410,	-- Orm Stonehoof
 								["coord"] = { 38.9, 56.0, 88 },
+								["sourceQuest"] = 1844,	-- Chimaeric Horn
 								["classes"] = { 1 },	-- Warrior
+								["lvl"] = 20,
 								["u"] = 40,
 								["groups"] = {
 									un(2, i(7130)),	-- Brutal Helm
 								},
+							}),
+							q(1844, {	-- Chimaeric Horn
+								["qg"] = 6410,	-- Orm Stonehoof
+								["coord"] = { 38.9, 56.0, 88 },
+								["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
+								["classes"] = { 1 },	-- Warrior
+								["lvl"] = 20,
+								["u"] = 40,
 							}),
 							q(1049, {	-- Compendium of the Fallen
 								["qg"] = 3978,	-- Sage Truthseeker

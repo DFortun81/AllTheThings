@@ -16,17 +16,38 @@ _.Zones =
 								["races"] = HORDE_ONLY,
 								["u"] = 40,
 							}),
-							un(40, qh(6521, {	-- An Unholy Alliance
-								un(2, i(17042)),	-- Nail Splitter
-								un(2, i(17039)),	-- Skullbreaker
-								un(2, i(17043)),	-- Zealot's Robe
-							})),
-							un(40, qh(1847, {	-- Brutal Legguards
+							q(6521, {	-- An Unholy Alliance
+								["qg"] = 36273,	-- Bragor Bloodfist
+								["coord"] = { 56.1, 92.1, 90 },
+								["races"] = HORDE_ONLY,
+								["u"] = 40,
+								["groups"] = {
+									un(2, i(17042)),	-- Nail Splitter
+									un(2, i(17039)),	-- Skullbreaker
+									un(2, i(17043)),	-- Zealot's Robe
+								},
+							}),
+							q(1847, {	-- Brutal Legguards
+								["qg"] = 6411,	-- Velora Nitely
+								["coord"] = { 62.6,39.4, 90 },
+								["sourceQuest"] = 1846,	-- Dragonmaw Shinbones
+								["races"] = HORDE_ONLY,
 								["classes"] = { 1 },	-- Warrior
+								["lvl"] = 20,
+								["u"] = 40,
 								["g"] = {
 									un(2, i(7132)),	-- Brutal Legguards
 								},
-							})),
+							}),
+							q(1846, {	-- Dragonmaw Shinbones
+								["qg"] = 6411,	-- Velora Nitely
+								["coord"] = { 62.6,39.4, 90 },
+								["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
+								["races"] = HORDE_ONLY,
+								["classes"] = { 1 },	-- Warrior
+								["lvl"] = 20,
+								["u"] = 40,
+							}),
 							un(40, qh(515, {	-- Elixir of Agony
 								un(2, i(3749)),	-- High Apothecary Cloak
 								un(2, i(3747)),	-- Meditative Sash

@@ -588,6 +588,29 @@ _.Instances = { tier(1, {	-- Classic
 						q(27109, {	-- The Warped Defender
 							["qg"] = 44999,
 						}),
+						-- Part of the Dungeon 2 Set Questline
+						q(8949, {	-- Falrin's Vendetta
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8948,	-- Anthion's Old Friend
+							["lvl"] = 58,
+							["u"] = 40,
+							["groups"] = {
+								un(2, i(22150)),	-- Beads of Ogre Might
+								un(2, i(22149)),	-- Beads of Ogre Mojo
+							},
+						}),
+						q(8950, {	-- The Instigator's Enchantment
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8949,	-- Falrin's Vendetta
+							["lvl"] = 58,
+							["u"] = 40,
+						}),
+						q(9015, {	-- The Challenge
+							["qg"] = 16032,	-- Falrin Treeshaper
+							["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+							["lvl"] = 58,
+							["u"] = 40,
+						}),
 					}),
 					n(-2, {	-- Vendors
 						n(14371, {	-- Shen'dralar Provisioner

@@ -191,6 +191,13 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(13315)),	-- Testament of Hope
 							})),
 						}),
+						-- Part of the Dungeon 2 Set Questline
+						q(8946, {	-- Proof of Life
+							["qg"] = 16031,	-- Ysida Harmon
+							["sourceQuest"] = 8945,	-- Dead Man's Plea
+							["lvl"] = 58,
+							["u"] = 40,
+						}),
 						n(0, {	-- Zone Drop (Legacy)
 							un(43, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
