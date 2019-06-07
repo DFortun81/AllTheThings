@@ -21,7 +21,12 @@ _.Zones =
 						{	-- Criteria 2 — The Flooding of Menethil
 							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 2,	-- The Flooding of Menethil
-							["sourceQuests"] = { 25780 },	-- The Flooding of Menethil
+							["sourceQuests"] = {
+								25780,	-- Assault on Menethil Keep (definitely required)
+								25801,	-- Claws from the Deep (probably required)
+								25805,	-- Return the Statuette (probably required)
+								25819,	-- The Eye of Paleth (definitely required)
+							},
 						},
 						{	-- Criteria 3 — Engineers and Archaeologists
 							["achievementID"] = 12429,	-- Wetlands Quests
@@ -31,7 +36,7 @@ _.Zones =
 						{	-- Criteria 4 — Wardens of the Wetlands
 							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 4,	-- Wardens of the Wetlands
-							["sourceQuests"] = { 26128 },	-- Wardens of the Wetlands
+							["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
 						},
 					},
 				}),
