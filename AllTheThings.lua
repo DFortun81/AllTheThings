@@ -9041,6 +9041,13 @@ app:GetWindow("Unsorted");
 end)();
 --[[--
 -- Uncomment this section if you need to enable Debugger:
+app.ModelViewer = GameTooltipModel;
+app.ModelViewer.SetRotation = function(number)
+	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+end
+app.ModelViewer.SetScale = function(number)
+	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
