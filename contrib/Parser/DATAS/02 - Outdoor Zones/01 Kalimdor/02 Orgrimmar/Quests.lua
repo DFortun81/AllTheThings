@@ -254,7 +254,7 @@ _.Zones =
 													}),
 												},
 											}),
-									--[[	-- Mag'har Orc Starter Quest (figure out what map these should go on)
+											-- Mag'har Orc Starter Quest
 											q(51485, {	-- For the Horde
 												["qg"] = 143845,	--  Overlord Geya'rah
 												["coord"] = { 70.6, 44.6, 85 },
@@ -269,7 +269,7 @@ _.Zones =
 												["coord"] = { 39.4, 79.2, 85 },
 												["sourceQuest"] = 51485,	-- For the Horde
 												["races"] = { 36 },	-- Mag'har Orc
-											}),	--]]
+											}),
 										},
 									}),
 									n(-251, {	-- Zandalari
@@ -394,7 +394,7 @@ _.Zones =
 													}),
 												},
 											}),
-									--[[	-- Zandalari Troll Starter Quest (figure out what map these should go on)
+											-- Zandalari Troll Starter Quest
 											q(55137, {	-- For the Horde
 												["qg"] = 146335,	--  Queen Talanji
 												["coord"] = { 42.2, 9.4, 1165 },
@@ -409,7 +409,7 @@ _.Zones =
 												["coord"] = { 39.4, 79.2, 85 },
 												["races"] = { 31 },	-- Zandalari Troll
 												["sourceQuest"] = 55137,	-- For the Horde
-											}),	--]]
+											}),
 										},
 									}),
 									{	-- The Call for Allies
@@ -457,22 +457,6 @@ _.Zones =
 							i(65494),	-- Broadaxe of the Horde
 							i(65495),	-- Greataxe of the Horde
 						},
-					},
-					{	-- A Furious Catch
-						["questID"] = 26588,
-						["qg"] = 43239,	-- Razgar
-						["races"] = HORDE_ONLY,
-						["coord"] = { 65.7, 41.1, 85 },
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
-					{	-- A Golden Opportunity
-						["questID"] = 26572,
-						["qg"] = 43239,	-- Razgar
-						["races"] = HORDE_ONLY,
-						["coord"] = { 65.7, 41.1, 85 },
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
 					},
 					q(27283, {	-- A Journey to Moonglade
 						["qgs"] = {
@@ -531,14 +515,6 @@ _.Zones =
 						["groups"] = {
 							i(65481),	-- Staff of Golden Worship
 						},
-					},
-					{	-- A Staggering Effort
-						["questID"] = 26557,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.8, 40.8, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 129	-- Fishing
 					},
 					{	-- A Tale of Six Masters
 						["questID"] = 32309,
@@ -883,36 +859,12 @@ _.Zones =
 							un(2, i(11871)),	-- Snarkshaw Spaulders
 						},
 					},
-					{	-- Careful, This Fruit Bites Back
-						["questID"] = 26227,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- Clammy Hands
-						["questID"] = 26543,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.7, 41.1, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
 					{	-- Could I get a Fishing Flier?
 						["questID"] = 8228,
 						["qg"] = 15116,	-- Grinkle
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 356,	-- Fishing
 						["isBreadcrumb"] = true,
-					},
-					{	-- Crawfish Creole
-						["questID"] = 26226,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
 					},
 					{	-- Jes'rimon's Payment to Jediga
 						["questID"] = 3563,
@@ -964,22 +916,6 @@ _.Zones =
 						["qg"] = 14720,	-- Eitrigg
 						["coord"] = { 49.2, 72.3, 85 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Even Thieves Get Hungry
-						["questID"] = 26235,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- Everything Is Better with Bacon
-						["questID"] = 26220,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
 					},
 					{	-- Flight to Razor Hill
 						["questID"] = 26804,
@@ -1265,14 +1201,6 @@ _.Zones =
 						["isDaily"] = true,
 						["requireSkill"] = 755,	-- Jewelcrafting
 					},
-					{	-- No Dumping Allowed
-						["questID"] = 26556,
-						["qg"] = 43239,	-- Razgar
-						["coord"] = { 65.7, 41.1, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 356,	-- Fishing
-					},
 					{	-- Nogg's Ring Redo
 						["questID"] = 2950,
 						["qg"] = 3412,	-- Nogg
@@ -1494,34 +1422,6 @@ _.Zones =
 							i(65478),	-- Staff of the Sunchaser
 						},
 					},	
-					{	-- Stealing From Our Own
-						["questID"] = 26234,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = { 8 },	-- Troll
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- Stealing From Our Own
-						["questID"] = 26233,
-						["qg"] = 42506,	-- Marogg
-						["coord"] = { 56.5, 62.5, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 185,	-- Cooking
-						["races"] = {
-							2,	-- Orc
-							5,	-- Undead
-							6,	-- Tauren
-							9,	-- Goblin
-							10,	-- Blood Elf
-							26,	-- Pandaren
-							27,	-- Nightborne
-							28,	-- Highmountain Tauren
-							31,	-- Zandalari Troll
-							36,	-- Mag'har Orc
-						},
-					},
 					{	-- Stones of Binding
 						["questID"] = 28459,
 						["qg"] = 88705,	-- Kranosh
