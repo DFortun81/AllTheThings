@@ -122,10 +122,9 @@ _.Achievements =
 					}),
 					ach(12280),		-- Aquatic Brawler
 					ach(10876, {	-- Battle on the Broken Isles
-						{	-- Pocket Pet Portal	(Upgrades pet limit to 1500!)
-							["itemID"] = 139003,	-- Pocket Pet Portal
+						i(139003, {	-- Pocket Pet Portal
 							["questID"] = 43016,
-						},
+						}),
 						crit(1),		-- Size Doesn't Matter (Azsuna)
 						crit(2),		-- Azsuna Specimens (Azsuna)
 						crit(3),		-- Dazed and Confused and Adorable (Azsuna)

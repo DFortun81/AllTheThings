@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-2,   { 	-- Vendors
+			n(-2, { 	-- Vendors
 				n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 					["coord"] = { 40.4, 36.4, 942 },
 					["groups"] = {
@@ -74,7 +74,7 @@ _.Zones =
 									["questID"] = 43016,
 								}),
 								i(165840, {	-- Interdimensional Pet Portal
-								--	["questID"] = 43016,	-- Need to find QuestID
+									["questID"] = 54264,
 								}),
 							},
 						}),

@@ -169,7 +169,7 @@ _.Zones =
 							["coords"] = {
 								{ 68.96, 17.08, 1161 },
 							},
-							["description"] = "Located underneath. Walk to the ocean and you'll see a path that leads underneath.\nTo allow this vendor to sell you items you must win PvP Battles until you get the mission \"A Shady Message\" to spawn.  Next you'll complete the mission and then are able to purchase items.  Yes, this has a chance to spawn and could be 1, 10, 100 or 1000 PvP Battles until it spawns.",
+							["description"] = "For this vendor to sell you items, you must win PvP pet battles until you get the mission \"A Shady Message\" to spawn.  Next you'll complete the mission and then are able to purchase items.  Yes, this has a chance to spawn, and it could be 1, 10, 100 or 1000 PvP pet battles until it spawns.",
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								{	-- Accursed Hexxer
