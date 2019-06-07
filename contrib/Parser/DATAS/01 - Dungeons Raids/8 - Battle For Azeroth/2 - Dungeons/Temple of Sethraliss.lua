@@ -54,6 +54,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159442),	-- Sand-Scoured Greatbelt
 						i(158366),	-- Charged Sandstone Band
 						i(158374),	-- Tiny Eelectromental in a Jar
+						i(168154),	-- Static Induction Matrix
 					}),
 				}),
 				e(2145, {	-- Avatar of Sethraliss
@@ -120,6 +121,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159442),	-- Sand-Scoured Greatbelt
 							i(158366),	-- Charged Sandstone Band
 							i(158374),	-- Tiny Eelectromental in a Jar
+							i(168154),	-- Static Induction Matrix
 						},
 					}),
 					e(2145, {	-- Avatar of Sethraliss
@@ -194,6 +196,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159442),	-- Sand-Scoured Greatbelt
 							i(158366),	-- Charged Sandstone Band
 							i(158374),	-- Tiny Eelectromental in a Jar
+							i(168154),	-- Static Induction Matrix
 						},
 					}),
 					e(2145, {	-- Avatar of Sethraliss

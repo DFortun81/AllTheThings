@@ -28,6 +28,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159412),	-- Auric Puddle Stompers
 						i(159304),	-- Goldfeather Boots
 						i(159617),	-- Lustrous Golden Plumage
+						i(168168),	-- Gilded Plume
 					},
 				}),
 				e(2171, {	-- Mchimba the Embalmer

@@ -477,6 +477,7 @@ _.PVP =
 				un(2, i(146077)), -- Ferocious Combatant's Badge of Victory (Horde)
 				un(2, i(146079)), -- Ferocious Combatant's Accolade of Victory (Horde)
 				un(2, i(146081)), -- Ferocious Combatant's Insignia of Victory (Horde)
+				un(2, i(146065)), -- Ferocious Combatant's Badge of Conquest (Horde)
 			}),
 		}),
 		n(-655, {	-- Fierce Gladiator: Legion Season 5
