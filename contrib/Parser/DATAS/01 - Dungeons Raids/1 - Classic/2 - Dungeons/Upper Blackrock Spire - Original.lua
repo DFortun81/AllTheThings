@@ -53,6 +53,12 @@ _.Instances = { tier(1, {	-- Classic
 					un(40, q(4867, { 	-- Urok Doomhowl
 						un(2, i(15867)),	-- Prismcharm
 					})),
+					q(8996, {	-- Return to Bodley
+						["qg"] = 16073,	-- Spirit of Lord Valthalak
+						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
+						["lvl"] = 58,
+						["u"] = 40,
+					}),
 				}),
 				n(0, {	-- Zone Drop (Legacy)
 					["groups"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor		
 		m(85, {	-- Orgrimmar
-			["groups"] = {
+			["g"] = {
 				n(-40, {	-- Legacy
 					n(-17, {	-- Quests (Legacy)
 						q(1431, {	-- Alliance Relations
@@ -30,7 +30,7 @@ _.Zones =
 							["classes"] = { 1 },	-- Warrior
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(21996)),	-- Bracers of Heroism
 							},
 						}),
@@ -41,7 +41,7 @@ _.Zones =
 							["classes"] = { 2 },	-- Paladin
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22088)),	-- Soulforge Bracers
 							},
 						}),
@@ -52,7 +52,7 @@ _.Zones =
 							["classes"] = { 3 },	-- Hunter
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22011)),	-- Beastmaster's Bindings
 							},
 						}),
@@ -63,7 +63,7 @@ _.Zones =
 							["classes"] = { 4 },	-- Rogue
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22004)),	-- Darkmantle Bracers 
 							},
 						}),
@@ -74,7 +74,7 @@ _.Zones =
 							["classes"] = { 5 },	-- Priest
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22079)),	-- Virtuous Bracers
 							},
 						}),
@@ -85,7 +85,7 @@ _.Zones =
 							["classes"] = { 7 },	-- Shaman
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22095)),	-- Bindings of The Five Thunders
 							},
 						}),
@@ -96,7 +96,7 @@ _.Zones =
 							["classes"] = { 8 },	-- Mage
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22063)),	-- Sorcerer's Bindings
 							},
 						}),
@@ -107,7 +107,7 @@ _.Zones =
 							["classes"] = { 9 },	-- Warlock
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22071)),	-- Deathmist Bracers
 							},
 						}),
@@ -118,7 +118,7 @@ _.Zones =
 							["classes"] = { 11 },	-- Druid
 							["lvl"] = 58,
 							["u"] = 40,						
-							["groups"] = {
+							["g"] = {
 								un(2, i(22108)),	-- Feralheart Bracers
 							},
 						}),
@@ -184,7 +184,7 @@ _.Zones =
 							["classes"] = { 1 },	-- Warrior
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(21994)), 	-- Belt of Heroism
 								un(2, i(21998)), 	-- Gauntlets of Heroism
 							},
@@ -197,7 +197,7 @@ _.Zones =
 							["classes"] = { 2 },	-- Paladin
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22086)), 	-- Soulforge Belt
 								un(2, i(22090)), 	-- Soulforge Gauntlets
 							},
@@ -210,7 +210,7 @@ _.Zones =
 							["classes"] = { 3 },	-- Hunter
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22010)), 	-- Beastmaster's Belt
 								un(2, i(22015)), 	-- Beastmaster's Gloves
 							},
@@ -223,7 +223,7 @@ _.Zones =
 							["classes"] = { 4 },	-- Rogue
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22002)), 	-- Darkmantle Belt
 								un(2, i(22006)), 	-- Darkmantle Gloves
 							},
@@ -236,7 +236,7 @@ _.Zones =
 							["classes"] = { 5 },	-- Priest
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22078)), 	-- Virtuous Belt 
 								un(2, i(22081)), 	-- Virtuous Gloves
 							},
@@ -249,7 +249,7 @@ _.Zones =
 							["classes"] = { 7 },	-- Shaman
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22098)), 	-- Cord of The Five Thunders
 								un(2, i(22099)), 	-- Gauntlets of The Five Thunders
 							},
@@ -262,7 +262,7 @@ _.Zones =
 							["classes"] = { 8 },	-- Mage
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22062)), 	-- Sorcerer's Belt 
 								un(2, i(22066)), 	-- Sorcerer's Gloves
 							},
@@ -275,7 +275,7 @@ _.Zones =
 							["classes"] = { 9 },	-- Warlock
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22070)), 	-- Deathmist Belt
 								un(2, i(22077)), 	-- Deathmist Wraps
 							},
@@ -288,9 +288,126 @@ _.Zones =
 							["classes"] = { 11 },	-- Druid
 							["lvl"] = 58,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(22106)), 	-- Feralheart Belt
 								un(2, i(22110)), 	-- Feralheart Gloves
+							},
+						}),
+						q(9013, {	-- Saving the Best for Last (Warrior)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 9015,	-- The Challenge
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 1 },	-- Warrior
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(21997)),	-- Breastplate of Heroism
+								un(2, i(21999)),	-- Helm of Heroism
+							},
+						}),
+						q(10499, {	-- Saving the Best for Last (Paladin)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 9015,	-- The Challenge
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 2 },	-- Paladin
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22089)),	-- Soulforge Breastplate
+								un(2, i(22091)),	-- Soulforge Helm
+							},
+						}),
+						q(9008, {	-- Saving the Best for Last (Hunter)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 3 },	-- Hunter
+							["lvl"] = 58,
+							["u"] = 40,							
+							["g"] = {
+								un(2, i(22013)),	-- Beastmaster's Cap 
+								un(2, i(22060)),	-- Beastmaster's Tunic
+							},
+						}),
+						q(9010, {	-- Saving the Best for Last (Rogue)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 4 },	-- Rogue
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22005)),	-- Darkmantle Cap
+								un(2, i(22009)),	-- Darkmantle Tunic
+							},
+						}),
+						q(9009, {	-- Saving the Best for Last (Priest)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 5 },	-- Priest
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22080)),	-- Virtuous Crown 
+								un(2, i(22083)),	-- Virtuous Robe
+							},
+						}),
+						q(9011, {	-- Saving the Best for Last (Shaman)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 7 },	-- Shaman
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22097)),	-- Coif of The Five Thunders 
+								un(2, i(22102)),	-- Vest of The Five Thunders
+							},
+						}),
+						q(9014, {	-- Saving the Best for Last (Mage)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 8 },	-- Mage
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22065)),	-- Sorcerer's Crown
+								un(2, i(22069)),	-- Sorcerer's Robes
+							},
+						}),
+						q(9012, {	-- Saving the Best for Last (Warlock)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 9 },	-- Warlock
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22074)),	-- Deathmist Mask 
+								un(2, i(22075)),	-- Deathmist Robe
+							},
+						}),
+						q(9007, {	-- Saving the Best for Last (Druid)
+							["qg"] = 16012,	-- Mokvar
+							["coord"] = { 48.6, 72.8, 85 },
+							["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
+							["races"] = HORDE_ONLY,						
+							["classes"] = { 11 },	-- Druid
+							["lvl"] = 58,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(22109)),	-- Feralheart Cowl 
+								un(2, i(22113)),	-- Feralheart Vest
 							},
 						}),
 						q(1823, {	-- Speak with Ruga

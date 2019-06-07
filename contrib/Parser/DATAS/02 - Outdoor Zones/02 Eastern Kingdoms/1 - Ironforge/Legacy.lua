@@ -353,105 +353,123 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 2439,	-- The Platinum Disc
 					},
-					{	-- Saving the Best for Last
-						["questID"] = 9006,
+					q(9006, {	-- Saving the Best for Last (Warrior)
+						["qg"] = 16013,	-- Deliana
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(21997)),	-- Breastplate of Heroism
 							un(2, i(21999)),	-- Helm of Heroism
 						},
-						["u"] = 40,
+					}),
+					q(9002, {	-- Saving the Best for Last (Paladin)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9002,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22089)),	-- Soulforge Breastplate
 							un(2, i(22091)),	-- Soulforge Helm
 						},
-						["u"] = 40,
+					}),
+					q(9000, {	-- Saving the Best for Last (Hunter)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 2 },	-- Paladin
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9000,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22013)),	-- Beastmaster's Cap 
 							un(2, i(22060)),	-- Beastmaster's Tunic
 						},
-						["u"] = 40,
+					}),
+					q(9004, {	-- Saving the Best for Last (Rogue)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9004,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22005)),	-- Darkmantle Cap
 							un(2, i(22009)),	-- Darkmantle Tunic
 						},
-						["u"] = 40,
+					}),
+					q(9003, {	-- Saving the Best for Last (Priest)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9003,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22080)),	-- Virtuous Crown 
 							un(2, i(22083)),	-- Virtuous Robe
 						},
-						["u"] = 40,
+					}),
+					q(10498, {	-- Saving the Best for Last (Shaman)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 5 },	-- Priest
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 10498,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 7 },	-- Shaman
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22097)),	-- Coif of The Five Thunders 
 							un(2, i(22102)),	-- Vest of The Five Thunders
 						},
-						["u"] = 40,
+					}),
+					q(9001, {	-- Saving the Best for Last (Mage)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9001,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22065)),	-- Sorcerer's Crown
 							un(2, i(22069)),	-- Sorcerer's Robes
 						},
-						["u"] = 40,
+					}),
+					q(9005, {	-- Saving the Best for Last (Warlock)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 8 },	-- Mage
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 9005,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22074)),	-- Deathmist Mask 
 							un(2, i(22075)),	-- Deathmist Robe
 						},
-						["u"] = 40,
+					}),
+					q(8999, {	-- Saving the Best for Last (Druid)
 						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 9 },	-- Warlock
-					},
-					{	-- Saving the Best for Last
-						["questID"] = 8999,
+						["coord"] = { 42.6, 53.8, 87 },
+						["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
+						["races"] = ALLIANCE_ONLY,						
+						["classes"] = { 11 },	-- Druid
+						["lvl"] = 58,
+						["u"] = 40,
 						["g"] = {
 							un(2, i(22109)),	-- Feralheart Cowl 
 							un(2, i(22113)),	-- Feralheart Vest
 						},
-						["u"] = 40,
-						["qg"] = 16013,	-- Deliana
-						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 11 },	-- Druid
-					},
+					}),
 					{	-- Seeing What Happens
 						["questID"] = 2946,
 						["u"] = 40,
