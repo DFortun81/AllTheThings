@@ -145,6 +145,22 @@ _.Zones =
 					},
 				}),
 				ach(13765),	-- Subaquatic Support
+				ach(13710, {	-- Sunken Ambitions
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						{	-- Welcome to Nazjatar
+							["criteriaID"] = 1,
+							["sourceQuest"] = 56350,	-- Scouting the Palace
+						},
+						{	-- Secrets in the Sea
+							["criteriaID"] = 2,
+							["sourceQuest"] = 55937,	-- Clearing Out the Cache
+						},
+						{	-- Turning the Tide
+							["criteriaID"] = 3,
+						},
+					},
+				}),
 				ach(13722, {	-- Terror of the Tadpoles
 					["coord"] = { 28.5, 31.2, 1355 },
 					["description"] = "Tadpoles are easily found in and around Bloodfin Village.",
@@ -170,6 +186,23 @@ _.Zones =
 					crit(15),	-- The Unshackled
 					crit(16),	-- Subaquatic Support
 					crit(17),	-- Unfathomable
+				}),
+				ach(13709, {	-- Unfathomable
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						{	-- Welcome to Nazjatar
+							["criteriaID"] = 1,
+							["sourceQuest"] = 55481,	-- Scouting the Palace
+						},
+						{	-- Secrets in the Sea
+							["criteriaID"] = 2,
+							["sourceQuest"] = 55869,	-- Clearing Out the Cache
+						},
+						{	-- Turning the Tide
+							["criteriaID"] = 3,
+							["sourceQuest"] = 55799,	-- The Tide Turns
+						},
+					},
 				}),
 			}),
 		},

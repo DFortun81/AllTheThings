@@ -29,41 +29,6 @@ _.Zones =
 			56521 popped randomly. possibly a progress flag for 55663?
 			56325 - alliance end to the zone, completed after turning in The Tide Turns (55799)
 			]]--
-				{	-- Sunken Ambitions
-					["achievementID"] = 13710,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						{	-- Welcome to Nazjatar
-							["criteriaID"] = 1,
-							["sourceQuest"] = 56350,	-- Scouting the Palace
-						},
-						{	-- Secrets in the Sea
-							["criteriaID"] = 2,
-							["sourceQuest"] = 55937,	-- Clearing Out the Cache
-						},
-						{	-- Turning the Tide
-							["criteriaID"] = 3,
-						},
-					},
-				},
-				{	-- Unfathomable
-					["achievementID"] = 13709,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						{	-- Welcome to Nazjatar
-							["criteriaID"] = 1,
-							["sourceQuest"] = 55481,	-- Scouting the Palace
-						},
-						{	-- Secrets in the Sea
-							["criteriaID"] = 2,
-							["sourceQuest"] = 55869,	-- Clearing Out the Cache
-						},
-						{	-- Turning the Tide
-							["criteriaID"] = 3,
-							["sourceQuest"] = 55799,	-- The Tide Turns
-						},
-					},
-				},
 				{	-- A Brief Respite
 					["questID"] = 54975,
 					["qg"] = 150101,	-- Lady Jaina Proudmoore
@@ -326,6 +291,19 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 56179,	-- The Needs of the People
 				},
+				{	-- Bounty: More Snapdragons
+					["questID"] = 55833,
+					["isDaily"] = true,
+					["qgs"] = {
+						151618,	-- Asme Seapearl (horde)
+					},
+					["coords"] = {
+						{ 50.9, 65.3, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56179,	-- The Needs of the People (horde)
+					},
+				},
 				{	-- Bounty Board
 					["objectID"] = 326140,
 					["coord"] = { 39.1, 54.1, 1355 },
@@ -414,40 +392,40 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				},
-				{	-- Call to Arms: Mechagon (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Mechagon
 					["questID"] = 56649,
 					["qg"] = 154640,	-- Grand Marshal Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Mechagon (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Mechagon
 					["questID"] = 56650,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Nazjatar (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Nazjatar
 					["questID"] = 56648,
 					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Tirigarde Sound (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Tirigarde Sound
 					["questID"] = 52948,
 					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 55175,	-- Where the Road Leads
 				},
-				{	-- Call to Arms: Tirigarde Sound (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Tirigarde Sound
 					["questID"] = 52956,
 					["qg"] = 154641,	-- High Warlord Volrath
 					["coord"] = { 48.7, 60.6, 1355 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Call to Arms: Zuldazar (Doesn't appear to be offered anymore. Has this been removed?)
+				{	-- Call to Arms: Zuldazar
 					["questID"] = 52951,
 					["qg"] = 154640,	-- Grand Marshall Tremblade
 					["coord"] = { 38.0, 55.3, 1355 },
@@ -1019,11 +997,27 @@ _.Zones =
 				},
 				{	-- Requisition: A Few Deepcoral Buds
 					["questID"] = 55724,
-					["qg"] = 153772,	-- Lina Bluegill
-					["coord"] = { 47.4, 63.2, 1355 },
-					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 56179,	-- The Needs of the People
+					["qgs"] = {
+						153772,	-- Lina Bluegill (horde)
+					},
+					["coords"] = {
+						{ 47.4, 63.2, 1355 },	-- horde
+					},
+				},
+				{	-- Requisition: A Few Spiral Leaf
+					["questID"] = 55725,
+					["isDaily"] = true,
+					["sourceQuests"] = {
+						56179,	-- The Needs of the People (horde)
+					},
+					["qgs"] = {
+						151614,	-- Nevin Tideheart
+					},
+					["coords"] = {
+						{ 50.4, 66.2, 1355 },
+					},
 				},
 				{	-- Requisition: More Starfish
 					["questID"] = 55785,
@@ -1107,10 +1101,6 @@ _.Zones =
 							["questID"] = 55827,
 							["isDaily"] = true,
 						},
-						{	-- Bounty: More Snapdragons
-							["questID"] = 55833,
-							["isDaily"] = true,
-						},
 						{	-- Requisition: A Few Carp
 							["questID"] = 55723,
 							["isDaily"] = true,
@@ -1129,10 +1119,6 @@ _.Zones =
 						},
 						{	-- Requisition: A Few Seaweed
 							["questID"] = 55720,
-							["isDaily"] = true,
-						},
-						{	-- Requisition: A Few Spiral Leaf
-							["questID"] = 55725,
 							["isDaily"] = true,
 						},
 						{	-- Requisition: A Few Starfish
