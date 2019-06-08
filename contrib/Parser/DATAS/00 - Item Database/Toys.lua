@@ -605,6 +605,7 @@ t(166747);	-- Brewfest Reveler's Hearthstone
 
 t(169275);	-- Alliance War Banner
 t(169278);	-- Alliance War Standard
+t(168667);	-- Blingtron 7000
 t(170198);	-- Eternal Palace Dining Set
 t(170203);	-- Flopping Fish
 t(169276);	-- Horde War Banner
@@ -615,5 +616,7 @@ t(170187);	-- Shadescale
 t(170196);	-- Shirakess Warning Sign
 t(170204);	-- Symbol of Gral
 t(170476);	-- Underlight Sealamp
+t(168807);	-- Wormhole Generator: Kul Tiras
+t(168808);	-- Wormhole Generator: Zandalar
 t(170199);	-- Zanj'ir Weapon Rack
 

@@ -34,6 +34,7 @@ _.Toys =
 		n(-183, { 	-- Engineering
 			i(87214), 		-- Blingtron 4000
 			i(111821), 		-- Blingtron 5000
+			i(168667),		-- Blingtron 7000
 			i(132518),		-- Blingtron's Circuit Design Tutorial
 			i(23767), 		-- Crashin' Thrashin' Robot
 			i(109167),		-- Findle's Loot-A-Rang
@@ -44,8 +45,10 @@ _.Toys =
 			i(109183),		-- World Shrinker
 			i(112059), 		-- Wormhole Centrifuge
 			i(151652),  	-- Wormhole Generator: Argus
+			i(168807),		-- Wormhole Generator: Kul Tiras
 			i(48933), 		-- Wormhole Generator: Northrend
 			i(87215),		-- Wormhole Generator: Pandaria
+			i(168808),		-- Wormhole Generator: Zandalar
 			n(-178, {		-- Goblin Engineering
 				i(30542),		-- Dimensional Ripper - Area 52
 				i(18984),		-- Dimensional Ripper - Everlook
