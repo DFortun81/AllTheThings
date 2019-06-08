@@ -14,11 +14,11 @@ _.Zones =
 						["groups"] = {
 							i(18706, {	-- Arena Master
 								["questID"] = 7810,	-- Arena Master
-								["g"] = {
+								["groups"] = {
 									ach(396, {		-- Arena Grandmaster
 									--	questID 7838
 										["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
-										["g"] = {
+										["groups"] = {
 											i(126948)		-- Defending Champion (BoA Trinket)
 										},
 									}),
@@ -33,56 +33,64 @@ _.Zones =
 						},
 					}),
 					n(14491, { 	-- Kurmokk
-						i(7409),	-- Infiltrator Boots
-						i(9836),	-- Banded Armor
-						i(9847),	-- Conjurer's Cloak
-						i(7354),	-- Elder's Boots
-						i(7413),	-- Infiltrator Cap
-						i(7408),	-- Infiltrator Shoulders
-						i(7420),	-- Phalanx Headguard
-						i(7423),	-- Phalanx Leggings
-						i(7424),	-- Phalanx Spaulders
-						i(9867),	-- Renegade Cloak
-						i(9833),	-- Scaled Leather Leggings
-						i(9825),	-- Durable Pants
-						i(7366),	-- Elder's Gloves
-						i(7367),	-- Elder's Mantle
-						i(7421),	-- Phalanx Gauntlets
-						i(10406),	-- Scaled Leather Headband
-						i(9835),	-- Scaled Leather Tunic
-						i(9826),	-- Durable Robe
-						i(9824),	-- Durable Shoulders
-						i(7422),	-- Phalanx Girdle
-						i(6609),	-- Sage's Cloth
-						i(6610),	-- Sage's Robe
-						i(10289),	-- Durable Hat
-						i(7368),	-- Elder's Pants
-						i(9857),	-- Archer's Bracers
-						i(7417),	-- Phalanx Boots
-						i(6616),	-- Sage's Pants
-						i(9855),	-- Archer's Belt
-						i(9842),	-- Banded Pauldrons
-						i(9853),	-- Conjurer's Cinch
-						i(10409),	-- Banded Boots
-						i(10408),	-- Banded Helm
-						i(9819),	-- Durable Tunic
-						i(7406),	-- Infiltrator Cord
-						i(7412),	-- Infiltrator Gloves
-						i(9868),	-- Renegade Gauntlets
-						i(7438),	-- Twilight Belt
-						i(9841),	-- Banded Leggings
-						i(7407),	-- Infiltrator Armor
-						i(7460),	-- Knight's Cloak
-						i(9860),	-- Archer's Cloak
-						i(9845),	-- Conjurer's Shoes
-						i(7357),	-- Elder's Hat
-						i(9865),	-- Renegade Bracers
-						i(9834),	-- Scaled Leather Shoulders
-						i(7414),	-- Infiltrator Pants
+						["coords"] = {
+							{ 58.0, 47.8, 210 },
+							{ 54.4, 52.2, 210 },
+							{ 51.0, 54.4, 210 },
+							{ 48.0, 58.0, 210 },
+						},
+						["groups"] = {
+							i(7409),	-- Infiltrator Boots
+							i(9836),	-- Banded Armor
+							i(9847),	-- Conjurer's Cloak
+							i(7354),	-- Elder's Boots
+							i(7413),	-- Infiltrator Cap
+							i(7408),	-- Infiltrator Shoulders
+							i(7420),	-- Phalanx Headguard
+							i(7423),	-- Phalanx Leggings
+							i(7424),	-- Phalanx Spaulders
+							i(9867),	-- Renegade Cloak
+							i(9833),	-- Scaled Leather Leggings
+							i(9825),	-- Durable Pants
+							i(7366),	-- Elder's Gloves
+							i(7367),	-- Elder's Mantle
+							i(7421),	-- Phalanx Gauntlets
+							i(10406),	-- Scaled Leather Headband
+							i(9835),	-- Scaled Leather Tunic
+							i(9826),	-- Durable Robe
+							i(9824),	-- Durable Shoulders
+							i(7422),	-- Phalanx Girdle
+							i(6609),	-- Sage's Cloth
+							i(6610),	-- Sage's Robe
+							i(10289),	-- Durable Hat
+							i(7368),	-- Elder's Pants
+							i(9857),	-- Archer's Bracers
+							i(7417),	-- Phalanx Boots
+							i(6616),	-- Sage's Pants
+							i(9855),	-- Archer's Belt
+							i(9842),	-- Banded Pauldrons
+							i(9853),	-- Conjurer's Cinch
+							i(10409),	-- Banded Boots
+							i(10408),	-- Banded Helm
+							i(9819),	-- Durable Tunic
+							i(7406),	-- Infiltrator Cord
+							i(7412),	-- Infiltrator Gloves
+							i(9868),	-- Renegade Gauntlets
+							i(7438),	-- Twilight Belt
+							i(9841),	-- Banded Leggings
+							i(7407),	-- Infiltrator Armor
+							i(7460),	-- Knight's Cloak
+							i(9860),	-- Archer's Cloak
+							i(9845),	-- Conjurer's Shoes
+							i(7357),	-- Elder's Hat
+							i(9865),	-- Renegade Bracers
+							i(9834),	-- Scaled Leather Shoulders
+							i(7414),	-- Infiltrator Pants
+						},
 					}), 
 					n(2541, { 	-- Lord Sakrasis
 						["coord"] = { 43.8, 49.1, 210 },
-						["g"] = {
+						["groups"] = {
 							i(9828),	-- Scaled Leather Boots
 							i(9832),	-- Scaled Leather Gloves
 							i(9839),	-- Banded Gauntlets
@@ -120,11 +128,14 @@ _.Zones =
 						},
 					}),
 					n(1493, {	-- Mok'rash the Cleaver
-						un(2, i(3985)),	-- Monogrammed Sash
+						["coord"] = { 35.0, 65.4, 210 },
+						["groups"] = {
+							un(2, i(3985)),	-- Monogrammed Sash
+						},
 					}),					
 					n(14490, { 	-- Rippa
 						["coord"] = { 41.4, 71.4, 210 },
-						["g"] = {
+						["groups"] = {
 							i(7533),	-- Cabalist Cloak
 							i(9907),	-- Royal Boots
 							i(9908),	-- Royal Cape
@@ -170,7 +181,7 @@ _.Zones =
 							{ 67.8, 25.4, 210 },	-- actual rare
 							{ 64.7, 29.8, 210 },	-- cave entrance
 						},
-						["g"] = {
+						["groups"] = {
 							i(7370),	-- Elder's Sash
 							i(9837),	-- Banded Bracers
 							i(7410),	-- Infiltrator Bracers
@@ -210,7 +221,7 @@ _.Zones =
 					}), 
 					n(14492, { 	-- Verifonix
 						["coord"] = { 53.2, 27.6, 210 },
-						["g"] = {
+						["groups"] = {
 							i(9867),	-- Renegade Cloak
 							i(7423),	-- Phalanx Leggings
 							i(9860),	-- Archer's Cloak
