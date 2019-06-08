@@ -6,7 +6,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(182, {	-- Herbalism
 	filter(200, {
 		{
-			["name"] = "Zandalari Herbalism",
+			["name"] = "Kul Tiran Herbalism",
 			["categoryID"] = 1029,
 			["g"] = {
 				{
@@ -124,6 +124,22 @@ profession(182, {	-- Herbalism
 							["name"] = "Winter's Kiss",
 							["previousRecipeID"] = 252416,
 							["recipeID"] = 252417
+						},
+						{
+							["name"] = "Zin'anthid",
+							["nextRecipeID"] = 298143,
+							["recipeID"] = 298142
+						},
+						{
+							["name"] = "Zin'anthid",
+							["nextRecipeID"] = 298144,
+							["previousRecipeID"] = 298142,
+							["recipeID"] = 298143
+						},
+						{
+							["name"] = "Zin'anthid",
+							["previousRecipeID"] = 298143,
+							["recipeID"] = 298144
 						}
 					}
 				}

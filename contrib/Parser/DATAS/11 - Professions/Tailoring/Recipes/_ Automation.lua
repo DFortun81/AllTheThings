@@ -60,7 +60,7 @@ profession(197, {	-- Tailoring
 			}
 		},
 		{
-			["name"] = "Zandalari Patterns",
+			["name"] = "Kul Tiran Patterns",
 			["categoryID"] = 942,
 			["g"] = {
 				{
@@ -128,6 +128,14 @@ profession(197, {	-- Tailoring
 					["categoryID"] = 944,
 					["g"] = {
 						{
+							["name"] = "Banded Seaweave Breeches",
+							["recipeID"] = 299036
+						},
+						{
+							["name"] = "Banded Seaweave Gloves",
+							["recipeID"] = 299033
+						},
+						{
 							["name"] = "Emblazoned Deep Sea Breeches",
 							["recipeID"] = 257124
 						},
@@ -174,6 +182,14 @@ profession(197, {	-- Tailoring
 						{
 							["name"] = "Fortified Deep Sea Gloves",
 							["recipeID"] = 285086
+						},
+						{
+							["name"] = "Gilded Seaweave Breeches",
+							["recipeID"] = 299034
+						},
+						{
+							["name"] = "Gilded Seaweave Gloves",
+							["recipeID"] = 299031
 						},
 						{
 							["name"] = "Honorable Combatant's Satin Belt",
@@ -278,6 +294,110 @@ profession(197, {	-- Tailoring
 						{
 							["name"] = "Imbued Deep Sea Gloves",
 							["recipeID"] = 257120
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Belt",
+							["nextRecipeID"] = 294842,
+							["recipeID"] = 294841
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Belt",
+							["nextRecipeID"] = 294843,
+							["previousRecipeID"] = 294841,
+							["recipeID"] = 294842
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Belt",
+							["previousRecipeID"] = 294842,
+							["recipeID"] = 294843
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Boots",
+							["nextRecipeID"] = 294833,
+							["recipeID"] = 294832
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Boots",
+							["nextRecipeID"] = 294834,
+							["previousRecipeID"] = 294832,
+							["recipeID"] = 294833
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Boots",
+							["previousRecipeID"] = 294833,
+							["recipeID"] = 294834
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Bracers",
+							["nextRecipeID"] = 294845,
+							["recipeID"] = 294844
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Bracers",
+							["nextRecipeID"] = 294846,
+							["previousRecipeID"] = 294844,
+							["recipeID"] = 294845
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Bracers",
+							["previousRecipeID"] = 294845,
+							["recipeID"] = 294846
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Cloak",
+							["nextRecipeID"] = 294830,
+							["recipeID"] = 294829
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Cloak",
+							["nextRecipeID"] = 294831,
+							["previousRecipeID"] = 294829,
+							["recipeID"] = 294830
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Cloak",
+							["previousRecipeID"] = 294830,
+							["recipeID"] = 294831
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Mittens",
+							["nextRecipeID"] = 294836,
+							["recipeID"] = 294835
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Mittens",
+							["nextRecipeID"] = 294837,
+							["previousRecipeID"] = 294835,
+							["recipeID"] = 294836
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Mittens",
+							["previousRecipeID"] = 294836,
+							["recipeID"] = 294837
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Pants",
+							["nextRecipeID"] = 294839,
+							["recipeID"] = 294838
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Pants",
+							["nextRecipeID"] = 294840,
+							["previousRecipeID"] = 294838,
+							["recipeID"] = 294839
+						},
+						{
+							["name"] = "Notorious Combatant's Satin Pants",
+							["previousRecipeID"] = 294839,
+							["recipeID"] = 294840
+						},
+						{
+							["name"] = "Reinforced Seaweave Breeches",
+							["recipeID"] = 299035
+						},
+						{
+							["name"] = "Reinforced Seaweave Gloves",
+							["recipeID"] = 299032
 						},
 						{
 							["name"] = "Sinister Combatant's Satin Belt",
@@ -518,12 +638,36 @@ profession(197, {	-- Tailoring
 					}
 				},
 				{
+					["name"] = "Mounts Equipment",
+					["categoryID"] = 1289,
+					["g"] = {
+						{
+							["name"] = "Saddlechute",
+							["recipeID"] = 301409
+						},
+						{
+							["name"] = "Seabreeze Saddle Blanket",
+							["recipeID"] = 301403
+						}
+					}
+				},
+				{
 					["name"] = "Follower Equipment",
 					["categoryID"] = 1230,
 					["g"] = {
 						{
 							["name"] = "Rough-hooked Tidespray Linen",
 							["recipeID"] = 278414
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1266,
+					["g"] = {
+						{
+							["name"] = "Synchronous Thread",
+							["recipeID"] = 292946
 						}
 					}
 				}
@@ -983,11 +1127,11 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["name"] = "Fearsome Battle Standard",
-							["recipeID"] = 176316
+							["recipeID"] = 176314
 						},
 						{
 							["name"] = "Fearsome Battle Standard",
-							["recipeID"] = 176314
+							["recipeID"] = 176316
 						},
 						{
 							["name"] = "Inspiring Battle Standard",
@@ -2255,11 +2399,11 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Merlin's Robe",
-							["recipeID"] = 67066
+							["recipeID"] = 67146
 						},
 						{
 							["name"] = "Merlin's Robe",
-							["recipeID"] = 67146
+							["recipeID"] = 67066
 						},
 						{
 							["name"] = "Moonshroud Robe",
@@ -2271,11 +2415,11 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Robe",
-							["recipeID"] = 67064
+							["recipeID"] = 67144
 						},
 						{
 							["name"] = "Royal Moonshroud Robe",
-							["recipeID"] = 67144
+							["recipeID"] = 67064
 						},
 						{
 							["name"] = "Spellweave Robe",
@@ -2289,11 +2433,11 @@ profession(197, {	-- Tailoring
 					["g"] = {
 						{
 							["name"] = "Bejeweled Wizard's Bracers",
-							["recipeID"] = 67079
+							["recipeID"] = 67145
 						},
 						{
 							["name"] = "Bejeweled Wizard's Bracers",
-							["recipeID"] = 67145
+							["recipeID"] = 67079
 						},
 						{
 							["name"] = "Black Duskweave Wristwraps",
@@ -2317,11 +2461,11 @@ profession(197, {	-- Tailoring
 						},
 						{
 							["name"] = "Royal Moonshroud Bracers",
-							["recipeID"] = 67065
+							["recipeID"] = 67147
 						},
 						{
 							["name"] = "Royal Moonshroud Bracers",
-							["recipeID"] = 67147
+							["recipeID"] = 67065
 						}
 					}
 				},

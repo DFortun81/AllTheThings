@@ -28,7 +28,7 @@ profession(755, {	-- Jewelcrafting
 			}
 		},
 		{
-			["name"] = "Zandalari Designs",
+			["name"] = "Kul Tiran Designs",
 			["categoryID"] = 805,
 			["g"] = {
 				{
@@ -38,6 +38,10 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Deadly Amberblaze",
 							["recipeID"] = 256696
+						},
+						{
+							["name"] = "Deadly Lava Lazuli",
+							["recipeID"] = 298798
 						},
 						{
 							["name"] = "Deadly Solstone",
@@ -60,8 +64,24 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 256700
 						},
 						{
+							["name"] = "Leviathan's Eye of Agility",
+							["recipeID"] = 298800
+						},
+						{
+							["name"] = "Leviathan's Eye of Intellect",
+							["recipeID"] = 298801
+						},
+						{
+							["name"] = "Leviathan's Eye of Strength",
+							["recipeID"] = 298799
+						},
+						{
 							["name"] = "Masterful Kubiline",
 							["recipeID"] = 256692
+						},
+						{
+							["name"] = "Masterful Sea Currant",
+							["recipeID"] = 298797
 						},
 						{
 							["name"] = "Masterful Tidal Amethyst",
@@ -76,8 +96,20 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 256699
 						},
 						{
+							["name"] = "Quick Sand Spinel",
+							["recipeID"] = 298796
+						},
+						{
+							["name"] = "Straddling Sage Agate",
+							["recipeID"] = 300756
+						},
+						{
 							["name"] = "Straddling Viridium",
 							["recipeID"] = 256691
+						},
+						{
+							["name"] = "Versatile Dark Opal",
+							["recipeID"] = 298794
 						},
 						{
 							["name"] = "Versatile Kyanite",
@@ -86,6 +118,28 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Versatile Royal Quartz",
 							["recipeID"] = 256695
+						}
+					}
+				},
+				{
+					["name"] = "Mass Prospecting",
+					["categoryID"] = 818,
+					["g"] = {
+						{
+							["name"] = "Mass Prospect Monelite",
+							["recipeID"] = 256611
+						},
+						{
+							["name"] = "Mass Prospect Osmenite",
+							["recipeID"] = 300619
+						},
+						{
+							["name"] = "Mass Prospect Platinum",
+							["recipeID"] = 256622
+						},
+						{
+							["name"] = "Mass Prospect Storm Silver",
+							["recipeID"] = 256613
 						}
 					}
 				},
@@ -108,6 +162,14 @@ profession(755, {	-- Jewelcrafting
 							["name"] = "Amberblaze Loop",
 							["previousRecipeID"] = 256514,
 							["recipeID"] = 256515
+						},
+						{
+							["name"] = "Ascended Leviathan's Eye Loop",
+							["recipeID"] = 299018
+						},
+						{
+							["name"] = "Crushing Leviathan's Eye Loop",
+							["recipeID"] = 299017
 						},
 						{
 							["name"] = "Emblazoned Kraken's Eye Loop",
@@ -136,6 +198,10 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Kyanite Ring",
 							["recipeID"] = 272230
+						},
+						{
+							["name"] = "Leviathan's Eye Loop",
+							["recipeID"] = 299016
 						},
 						{
 							["name"] = "Owlseye Loop",
@@ -236,6 +302,22 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 256257
 						},
 						{
+							["name"] = "Notorious Combatant's Intuitive Staff",
+							["nextRecipeID"] = 294794,
+							["recipeID"] = 294793
+						},
+						{
+							["name"] = "Notorious Combatant's Intuitive Staff",
+							["nextRecipeID"] = 294795,
+							["previousRecipeID"] = 294793,
+							["recipeID"] = 294794
+						},
+						{
+							["name"] = "Notorious Combatant's Intuitive Staff",
+							["previousRecipeID"] = 294794,
+							["recipeID"] = 294795
+						},
+						{
 							["name"] = "Rubellite Staff of Intuition",
 							["recipeID"] = 256254
 						},
@@ -298,6 +380,16 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Kaleidoscopic Lens",
 							["recipeID"] = 278419
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1278,
+					["g"] = {
+						{
+							["name"] = "Jewelhammer's Focus",
+							["recipeID"] = 256703
 						}
 					}
 				}

@@ -6,7 +6,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(185, {	-- Cooking
 	filter(200, {
 		{
-			["name"] = "Zandalari Cuisine",
+			["name"] = "Kul Tiran Cuisine",
 			["categoryID"] = 1118,
 			["g"] = {
 				{
@@ -52,6 +52,10 @@ profession(185, {	-- Cooking
 							["name"] = "Seasoned Loins",
 							["previousRecipeID"] = 259434,
 							["recipeID"] = 259435
+						},
+						{
+							["name"] = "Unagi Skewer",
+							["recipeID"] = 303788
 						}
 					}
 				},
@@ -146,6 +150,54 @@ profession(185, {	-- Cooking
 					["categoryID"] = 1121,
 					["g"] = {
 						{
+							["name"] = "Abyssal-Fried Rissole",
+							["nextRecipeID"] = 297085,
+							["recipeID"] = 297084
+						},
+						{
+							["name"] = "Abyssal-Fried Rissole",
+							["nextRecipeID"] = 297086,
+							["previousRecipeID"] = 297084,
+							["recipeID"] = 297085
+						},
+						{
+							["name"] = "Abyssal-Fried Rissole",
+							["previousRecipeID"] = 297085,
+							["recipeID"] = 297086
+						},
+						{
+							["name"] = "Baked Port Tato",
+							["nextRecipeID"] = 297082,
+							["recipeID"] = 297081
+						},
+						{
+							["name"] = "Baked Port Tato",
+							["nextRecipeID"] = 297083,
+							["previousRecipeID"] = 297081,
+							["recipeID"] = 297082
+						},
+						{
+							["name"] = "Baked Port Tato",
+							["previousRecipeID"] = 297082,
+							["recipeID"] = 297083
+						},
+						{
+							["name"] = "Bil'Tong",
+							["nextRecipeID"] = 297088,
+							["recipeID"] = 297087
+						},
+						{
+							["name"] = "Bil'Tong",
+							["nextRecipeID"] = 297089,
+							["previousRecipeID"] = 297087,
+							["recipeID"] = 297088
+						},
+						{
+							["name"] = "Bil'Tong",
+							["previousRecipeID"] = 297088,
+							["recipeID"] = 297089
+						},
+						{
 							["name"] = "Boralus Blood Sausage",
 							["nextRecipeID"] = 290472,
 							["recipeID"] = 290471
@@ -162,6 +214,22 @@ profession(185, {	-- Cooking
 							["recipeID"] = 290473
 						},
 						{
+							["name"] = "Fragrant Kakavia",
+							["nextRecipeID"] = 297075,
+							["recipeID"] = 297077
+						},
+						{
+							["name"] = "Fragrant Kakavia",
+							["nextRecipeID"] = 297074,
+							["previousRecipeID"] = 297077,
+							["recipeID"] = 297075
+						},
+						{
+							["name"] = "Fragrant Kakavia",
+							["previousRecipeID"] = 297075,
+							["recipeID"] = 297074
+						},
+						{
 							["name"] = "Honey-Glazed Haunches",
 							["nextRecipeID"] = 259415,
 							["recipeID"] = 259414
@@ -176,6 +244,26 @@ profession(185, {	-- Cooking
 							["name"] = "Honey-Glazed Haunches",
 							["previousRecipeID"] = 259415,
 							["recipeID"] = 259416
+						},
+						{
+							["name"] = "Mecha-Bytes",
+							["recipeID"] = 301392
+						},
+						{
+							["name"] = "Mech-Dowel's \"Big Mech\"",
+							["nextRecipeID"] = 297079,
+							["recipeID"] = 297078
+						},
+						{
+							["name"] = "Mech-Dowel's \"Big Mech\"",
+							["nextRecipeID"] = 297080,
+							["previousRecipeID"] = 297078,
+							["recipeID"] = 297079
+						},
+						{
+							["name"] = "Mech-Dowel's \"Big Mech\"",
+							["previousRecipeID"] = 297079,
+							["recipeID"] = 297080
 						},
 						{
 							["name"] = "Sailor's Pie",
@@ -262,6 +350,22 @@ profession(185, {	-- Cooking
 							["name"] = "Bountiful Captain's Feast",
 							["previousRecipeID"] = 259422,
 							["recipeID"] = 259423
+						},
+						{
+							["name"] = "Famine Evaluator And Snack Table",
+							["nextRecipeID"] = 297106,
+							["recipeID"] = 297105
+						},
+						{
+							["name"] = "Famine Evaluator And Snack Table",
+							["nextRecipeID"] = 297107,
+							["previousRecipeID"] = 297105,
+							["recipeID"] = 297106
+						},
+						{
+							["name"] = "Famine Evaluator And Snack Table",
+							["previousRecipeID"] = 297106,
+							["recipeID"] = 297107
 						},
 						{
 							["name"] = "Galley Banquet",
@@ -2007,19 +2111,19 @@ profession(185, {	-- Cooking
 						},
 						{
 							["name"] = "Candied Sweet Potato",
-							["recipeID"] = 62051
-						},
-						{
-							["name"] = "Candied Sweet Potato",
 							["recipeID"] = 66034
 						},
 						{
-							["name"] = "Cranberry Chutney",
-							["recipeID"] = 62049
+							["name"] = "Candied Sweet Potato",
+							["recipeID"] = 62051
 						},
 						{
 							["name"] = "Cranberry Chutney",
 							["recipeID"] = 66035
+						},
+						{
+							["name"] = "Cranberry Chutney",
+							["recipeID"] = 62049
 						},
 						{
 							["name"] = "Gingerbread Cookie",
@@ -2031,27 +2135,27 @@ profession(185, {	-- Cooking
 						},
 						{
 							["name"] = "Pumpkin Pie",
-							["recipeID"] = 62044
-						},
-						{
-							["name"] = "Pumpkin Pie",
 							["recipeID"] = 66036
 						},
 						{
-							["name"] = "Slow-Roasted Turkey",
-							["recipeID"] = 62045
+							["name"] = "Pumpkin Pie",
+							["recipeID"] = 62044
 						},
 						{
 							["name"] = "Slow-Roasted Turkey",
 							["recipeID"] = 66037
 						},
 						{
-							["name"] = "Spice Bread Stuffing",
-							["recipeID"] = 62050
+							["name"] = "Slow-Roasted Turkey",
+							["recipeID"] = 62045
 						},
 						{
 							["name"] = "Spice Bread Stuffing",
 							["recipeID"] = 66038
+						},
+						{
+							["name"] = "Spice Bread Stuffing",
+							["recipeID"] = 62050
 						},
 						{
 							["name"] = "Winter Veil Egg Nog",

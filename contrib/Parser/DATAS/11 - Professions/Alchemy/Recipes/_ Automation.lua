@@ -6,13 +6,43 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(171, {	-- Alchemy
 	filter(200, {
 		{
-			["name"] = "Zandalari Alchemy",
+			["name"] = "Training",
+			["categoryID"] = 1250,
+			["g"] = {
+				{
+					["name"] = "Potion of Durability",
+					["recipeID"] = 288182
+				},
+				{
+					["name"] = "Potion of Shifting States",
+					["recipeID"] = 288176
+				}
+			}
+		},
+		{
+			["name"] = "Kul Tiran Alchemy",
 			["categoryID"] = 592,
 			["g"] = {
 				{
 					["name"] = "Cauldrons",
 					["categoryID"] = 1228,
 					["g"] = {
+						{
+							["name"] = "Greater Mystical Cauldron",
+							["nextRecipeID"] = 298863,
+							["recipeID"] = 298862
+						},
+						{
+							["name"] = "Greater Mystical Cauldron",
+							["nextRecipeID"] = 298864,
+							["previousRecipeID"] = 298862,
+							["recipeID"] = 298863
+						},
+						{
+							["name"] = "Greater Mystical Cauldron",
+							["previousRecipeID"] = 298863,
+							["recipeID"] = 298864
+						},
 						{
 							["name"] = "Mystical Cauldron",
 							["nextRecipeID"] = 276976,
@@ -35,6 +65,22 @@ profession(171, {	-- Alchemy
 					["name"] = "Combat Potions",
 					["categoryID"] = 605,
 					["g"] = {
+						{
+							["name"] = "Abyssal Healing Potion",
+							["nextRecipeID"] = 301311,
+							["recipeID"] = 301310
+						},
+						{
+							["name"] = "Abyssal Healing Potion",
+							["nextRecipeID"] = 301312,
+							["previousRecipeID"] = 301310,
+							["recipeID"] = 301311
+						},
+						{
+							["name"] = "Abyssal Healing Potion",
+							["previousRecipeID"] = 301311,
+							["recipeID"] = 301312
+						},
 						{
 							["name"] = "Battle Potion of Agility",
 							["nextRecipeID"] = 279160,
@@ -164,6 +210,38 @@ profession(171, {	-- Alchemy
 							["recipeID"] = 252343
 						},
 						{
+							["name"] = "Potion of Empowered Proximity",
+							["nextRecipeID"] = 298727,
+							["recipeID"] = 298726
+						},
+						{
+							["name"] = "Potion of Empowered Proximity",
+							["nextRecipeID"] = 298728,
+							["previousRecipeID"] = 298726,
+							["recipeID"] = 298727
+						},
+						{
+							["name"] = "Potion of Empowered Proximity",
+							["previousRecipeID"] = 298727,
+							["recipeID"] = 298728
+						},
+						{
+							["name"] = "Potion of Focused Resolve",
+							["nextRecipeID"] = 298745,
+							["recipeID"] = 298744
+						},
+						{
+							["name"] = "Potion of Focused Resolve",
+							["nextRecipeID"] = 298746,
+							["previousRecipeID"] = 298744,
+							["recipeID"] = 298745
+						},
+						{
+							["name"] = "Potion of Focused Resolve",
+							["previousRecipeID"] = 298745,
+							["recipeID"] = 298746
+						},
+						{
 							["name"] = "Potion of Replenishment",
 							["nextRecipeID"] = 252339,
 							["recipeID"] = 252337
@@ -196,6 +274,38 @@ profession(171, {	-- Alchemy
 							["recipeID"] = 252346
 						},
 						{
+							["name"] = "Potion of Unbridled Fury",
+							["nextRecipeID"] = 300750,
+							["recipeID"] = 300749
+						},
+						{
+							["name"] = "Potion of Unbridled Fury",
+							["nextRecipeID"] = 300751,
+							["previousRecipeID"] = 300749,
+							["recipeID"] = 300750
+						},
+						{
+							["name"] = "Potion of Unbridled Fury",
+							["previousRecipeID"] = 300750,
+							["recipeID"] = 300751
+						},
+						{
+							["name"] = "Potion of Wild Mending",
+							["nextRecipeID"] = 300753,
+							["recipeID"] = 300752
+						},
+						{
+							["name"] = "Potion of Wild Mending",
+							["nextRecipeID"] = 300754,
+							["previousRecipeID"] = 300752,
+							["recipeID"] = 300753
+						},
+						{
+							["name"] = "Potion of Wild Mending",
+							["previousRecipeID"] = 300753,
+							["recipeID"] = 300754
+						},
+						{
 							["name"] = "Steelskin Potion",
 							["nextRecipeID"] = 252335,
 							["recipeID"] = 252334
@@ -210,6 +320,86 @@ profession(171, {	-- Alchemy
 							["name"] = "Steelskin Potion",
 							["previousRecipeID"] = 252335,
 							["recipeID"] = 252336
+						},
+						{
+							["name"] = "Superior Battle Potion of Agility",
+							["nextRecipeID"] = 298730,
+							["recipeID"] = 298729
+						},
+						{
+							["name"] = "Superior Battle Potion of Agility",
+							["nextRecipeID"] = 298731,
+							["previousRecipeID"] = 298729,
+							["recipeID"] = 298730
+						},
+						{
+							["name"] = "Superior Battle Potion of Agility",
+							["previousRecipeID"] = 298730,
+							["recipeID"] = 298731
+						},
+						{
+							["name"] = "Superior Battle Potion of Intellect",
+							["nextRecipeID"] = 298742,
+							["recipeID"] = 298741
+						},
+						{
+							["name"] = "Superior Battle Potion of Intellect",
+							["nextRecipeID"] = 298743,
+							["previousRecipeID"] = 298741,
+							["recipeID"] = 298742
+						},
+						{
+							["name"] = "Superior Battle Potion of Intellect",
+							["previousRecipeID"] = 298742,
+							["recipeID"] = 298743
+						},
+						{
+							["name"] = "Superior Battle Potion of Stamina",
+							["nextRecipeID"] = 298748,
+							["recipeID"] = 298747
+						},
+						{
+							["name"] = "Superior Battle Potion of Stamina",
+							["nextRecipeID"] = 298749,
+							["previousRecipeID"] = 298747,
+							["recipeID"] = 298748
+						},
+						{
+							["name"] = "Superior Battle Potion of Stamina",
+							["previousRecipeID"] = 298748,
+							["recipeID"] = 298749
+						},
+						{
+							["name"] = "Superior Battle Potion of Strength",
+							["nextRecipeID"] = 298751,
+							["recipeID"] = 298750
+						},
+						{
+							["name"] = "Superior Battle Potion of Strength",
+							["nextRecipeID"] = 298752,
+							["previousRecipeID"] = 298750,
+							["recipeID"] = 298751
+						},
+						{
+							["name"] = "Superior Battle Potion of Strength",
+							["previousRecipeID"] = 298751,
+							["recipeID"] = 298752
+						},
+						{
+							["name"] = "Superior Steelskin Potion",
+							["nextRecipeID"] = 298735,
+							["recipeID"] = 298734
+						},
+						{
+							["name"] = "Superior Steelskin Potion",
+							["nextRecipeID"] = 298736,
+							["previousRecipeID"] = 298734,
+							["recipeID"] = 298735
+						},
+						{
+							["name"] = "Superior Steelskin Potion",
+							["previousRecipeID"] = 298735,
+							["recipeID"] = 298736
 						}
 					}
 				},
@@ -366,6 +556,70 @@ profession(171, {	-- Alchemy
 							["name"] = "Flask of the Vast Horizon",
 							["previousRecipeID"] = 252355,
 							["recipeID"] = 252356
+						},
+						{
+							["name"] = "Greater Flask of Endless Fathoms",
+							["nextRecipeID"] = 298847,
+							["recipeID"] = 298846
+						},
+						{
+							["name"] = "Greater Flask of Endless Fathoms",
+							["nextRecipeID"] = 298848,
+							["previousRecipeID"] = 298846,
+							["recipeID"] = 298847
+						},
+						{
+							["name"] = "Greater Flask of Endless Fathoms",
+							["previousRecipeID"] = 298847,
+							["recipeID"] = 298848
+						},
+						{
+							["name"] = "Greater Flask of the Currents",
+							["nextRecipeID"] = 298843,
+							["recipeID"] = 298842
+						},
+						{
+							["name"] = "Greater Flask of the Currents",
+							["nextRecipeID"] = 298845,
+							["previousRecipeID"] = 298842,
+							["recipeID"] = 298843
+						},
+						{
+							["name"] = "Greater Flask of the Currents",
+							["previousRecipeID"] = 298843,
+							["recipeID"] = 298845
+						},
+						{
+							["name"] = "Greater Flask of the Undertow",
+							["nextRecipeID"] = 298854,
+							["recipeID"] = 298853
+						},
+						{
+							["name"] = "Greater Flask of the Undertow",
+							["nextRecipeID"] = 298855,
+							["previousRecipeID"] = 298853,
+							["recipeID"] = 298854
+						},
+						{
+							["name"] = "Greater Flask of the Undertow",
+							["previousRecipeID"] = 298854,
+							["recipeID"] = 298855
+						},
+						{
+							["name"] = "Greater Flask of the Vast Horizon",
+							["nextRecipeID"] = 298851,
+							["recipeID"] = 298850
+						},
+						{
+							["name"] = "Greater Flask of the Vast Horizon",
+							["nextRecipeID"] = 298852,
+							["previousRecipeID"] = 298850,
+							["recipeID"] = 298851
+						},
+						{
+							["name"] = "Greater Flask of the Vast Horizon",
+							["previousRecipeID"] = 298851,
+							["recipeID"] = 298852
 						}
 					}
 				},
@@ -419,6 +673,18 @@ profession(171, {	-- Alchemy
 					["name"] = "Trinkets",
 					["categoryID"] = 609,
 					["g"] = {
+						{
+							["name"] = "Abyssal Alchemist Stone",
+							["recipeID"] = 298995
+						},
+						{
+							["name"] = "Ascended Alchemist Stone",
+							["recipeID"] = 298997
+						},
+						{
+							["name"] = "Crushing Alchemist Stone",
+							["recipeID"] = 298996
+						},
 						{
 							["name"] = "Emblazoned Alchemist Stone",
 							["recipeID"] = 291086
@@ -534,6 +800,16 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Vial of Obfuscation",
 							["recipeID"] = 287288
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 610,
+					["g"] = {
+						{
+							["name"] = "Silas' Sphere of Transmutation",
+							["recipeID"] = 260403
 						}
 					}
 				}
@@ -1041,11 +1317,11 @@ profession(171, {	-- Alchemy
 					["g"] = {
 						{
 							["name"] = "Alchemical Catalyst",
-							["recipeID"] = 168042
+							["recipeID"] = 156587
 						},
 						{
 							["name"] = "Alchemical Catalyst",
-							["recipeID"] = 156587
+							["recipeID"] = 168042
 						},
 						{
 							["name"] = "Alchemical Catalyst - Fireweed",

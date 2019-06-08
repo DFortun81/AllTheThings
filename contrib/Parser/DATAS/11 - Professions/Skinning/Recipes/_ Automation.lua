@@ -6,7 +6,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(393, {	-- Skinning
 	filter(200, {
 		{
-			["name"] = "Zandalari Skinning",
+			["name"] = "Kul Tiran Skinning",
 			["categoryID"] = 1046,
 			["g"] = {
 				{
@@ -28,6 +28,38 @@ profession(393, {	-- Skinning
 							["name"] = "Bone Gathering",
 							["previousRecipeID"] = 257153,
 							["recipeID"] = 257154
+						},
+						{
+							["name"] = "Cragscale",
+							["nextRecipeID"] = 302015,
+							["recipeID"] = 302014
+						},
+						{
+							["name"] = "Cragscale",
+							["nextRecipeID"] = 302016,
+							["previousRecipeID"] = 302014,
+							["recipeID"] = 302015
+						},
+						{
+							["name"] = "Cragscale",
+							["previousRecipeID"] = 302015,
+							["recipeID"] = 302016
+						},
+						{
+							["name"] = "Dredged Leather",
+							["nextRecipeID"] = 302010,
+							["recipeID"] = 302007
+						},
+						{
+							["name"] = "Dredged Leather",
+							["nextRecipeID"] = 302011,
+							["previousRecipeID"] = 302007,
+							["recipeID"] = 302010
+						},
+						{
+							["name"] = "Dredged Leather",
+							["previousRecipeID"] = 302010,
+							["recipeID"] = 302011
 						},
 						{
 							["name"] = "Leather Gathering",
