@@ -13,6 +13,7 @@ _.Zones =
 						55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
 						
 						Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
+						R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 					]]--
 					{	-- A Direct Approach
 						["questID"] = 56493,
@@ -38,6 +39,13 @@ _.Zones =
 						["coord"] = { 70.9, 37.6, 1462 },
 						["isDaily"] = true,
 					},
+					{	-- Adapt, Improve, Overcome!
+						["questID"] = 56142,
+						["qg"] = 154214,	-- Christy Punchcog
+						["coord"] = { 71.8, 35.8, 1462 },
+						["isDaily"] = true,
+						["description"] = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
+					},
 					{	-- Aid from Nordrassil
 						["questID"] = 55463,
 						["qg"] = 151936,	-- Mylune
@@ -55,6 +63,13 @@ _.Zones =
 						["qg"] = 150630,	-- Flip Quickcharge
 						["coord"] = { 70.8, 39.1, 1462 },
 						["sourceQuest"] = 55707,	-- First One's Free
+					},
+					{	-- Battle Tested
+						["questID"] = 56355, -- also triggered 55260
+						["qg"] = 151006,	-- Rocket-Chief Fuselage
+						["coord"] = { 69.7, 33.0, 1462 },
+						["isDaily"] = true,
+						["sourceQuest"] = 54090,	-- Toys For Destruction
 					},
 					{	-- Blueprint: BAWLD-371
 						["itemID"] = 168248,
@@ -119,6 +134,19 @@ _.Zones =
 							{	-- Junkyard Architect (Mechanocat Laser Pointer)
 								["achievementID"] = 13479,
 								["criteriaID"] = 4,
+							},
+						},
+					},
+					{	-- Blueprint: Mechano-Treat
+						["itemID"] = 167846,
+						["questID"] = 55061,
+						["crs"] = {
+							151625,	-- The Scrap King
+						},
+						["g"] = {
+							{	-- Junkyard Architect (Mechano-Treat)
+								["achievementID"] = 13479,
+								["criteriaID"] = 9,
 							},
 						},
 					},
