@@ -3372,8 +3372,8 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
-		{1, "|CFFFF0000With 7.3.2, Blizzard's shifted loot from Princess to various bosses.  In the process made this item no longer drop. |r", "BRD Broken Loot (45)"}; -- 45
+		{1, "|CFFFF0000With 7.3.2 & 8.0 Blizzard's Loot changes made several Items unable to drop.  Currently affects Items from Gruul (BC), Angerforge (BRD) & Warpwood (DM West). |r", "Broken Loot (45)"}; -- 45
 		{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
+	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };
