@@ -3,10 +3,10 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(87, { 	-- Ironforge
+	m(13, {	-- Eastern Kingdoms
+		m(87, {	-- Ironforge
 			na(-2, {	-- Vendors
-				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
+				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, 87 },
 					["g"] = {
 						i(67095),	-- Pattern: Assassin's Chestplate
@@ -57,7 +57,7 @@ _.Zones =
 						i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 					},
 				}),
-				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
+				n(5163,  {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 28.6, 87 },
 					["g"] = {
 						i(21948),	-- Design: Opal Necklace of Impact
@@ -74,7 +74,7 @@ _.Zones =
 						i(45577),	-- Ironforge Tabard
 					},
 				}),
-				n(5160, {	-- Emrul Riknussun <Cooking Supplies>
+				n(5160,  {	-- Emrul Riknussun <Cooking Supplies>
 					["coord"] = { 60.8, 37.4, 87 },
 					["g"] = {
 						currency(81, {	-- Epicurean's Award
@@ -112,7 +112,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
+				n(5175,  {	-- Gearcutter Cogspinner <Engineering Supplies>
 					["coord"] = { 68.2, 44.0, 87 },
 					["g"] = {
 						i(18649),	-- Schematic: Blue Firework
@@ -122,7 +122,7 @@ _.Zones =
 						un(7, i(16042)),	-- Schematic: Thorium Widget (now learned from trainer, schematic removed from game)
 					},
 				}),
-				n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
+				n(5161,  {	-- Grimnur Stonebrand <Fishing Trainer>
 					["coord"] = { 48.4, 9.0, 87 },
 					["g"] = {
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
@@ -135,7 +135,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(6294, {	-- Krom Stoutarm <Heirloom Curator>
+				n(6294,  {	-- Krom Stoutarm <Heirloom Curator>
 					["coord"] = { 74.6, 9.8, 87 },
 					["g"] = {
 						i(122349),	-- Bloodied Arcanite Reaper
@@ -159,7 +159,9 @@ _.Zones =
 						i(122367),	-- The Blessed Hammer of Grace
 						i(122368),	-- Grand Staff of Jordan
 						i(122369),	-- Battleworn Thrash Blade
-						a(i(122371)),	-- Inherited Insignia of the Alliance
+						i(122371, {	-- Inherited Insignia of the Alliance
+							["races"] = ALLIANCE_ONLY,
+						}),
 						i(122372),	-- Strengthened Stockade Pauldrons
 						i(122373),	-- Pristine Lightforge Spaulders
 						i(122374),	-- Prized Beastmaster's Mantle
@@ -190,8 +192,12 @@ _.Zones =
 						i(122668),	-- Eternal Will of the Martyr
 						i(127010),	-- Pristine Lightforge Breastplate
 						i(140773),	-- Eagletalon Spear
-						a(i(150743)),	-- Surviving Kalimdor Toy
-						a(i(150746)),	-- To Modernize the Provisions of Azeroth Toy
+						i(150743, {	-- Surviving Kalimdor Toy
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(150746, {	-- To Modernize the Provisions of Azeroth Toy
+							["races"] = ALLIANCE_ONLY,
+						}),
 					},
 				}),
 				n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
@@ -299,7 +305,7 @@ _.Zones =
 						i(45578),	-- Gnomeregan Tabard
 					},
 				}),
-				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
+				n(8681,  {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 44.2, 29.6, 87 },
 					["g"] = {
 						i(10314), 	-- Pattern: Lavender Mageweave Shirt
@@ -309,7 +315,7 @@ _.Zones =
 						i(10321), 	-- Pattern: Tuxedo Shirt
 					},
 				}),
-				n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
+				n(5154,  {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, 87 },
 					["g"] = {
 						i(54440, {	-- Dreamcloth
@@ -332,7 +338,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
+				n(5108,  {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, 87 },
 					["g"] = {
 						i(3428),	-- Common Gray Shirt
@@ -340,20 +346,20 @@ _.Zones =
 						i(16060),	-- Common White Shirt
 					},
 				}),
-				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
+				n(5122,  {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 72.2, 65.0, 87 },
 					["g"] = {
 						i(11303),	-- Fine Shortbow
 					},
 				}),
-				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
+				n(5178,  {	-- Soolie Berryfizz <Alchemy Supplies>
 					["coord"] = { 66.6, 54.6, 87 },
 					["g"] = {
 						i(13478),	-- Recipe: Elixir of Superior Defense
 						i(5642),	-- Recipe: Free Action Potion
 					},
 				}),
-				n(5162, {	-- Tansy Puddlefizz <Fishing Supplies>
+				n(5162,  {	-- Tansy Puddlefizz <Fishing Supplies>
 					["coord"] = { 47.8, 6.6, 87 },
 					["g"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -362,7 +368,7 @@ _.Zones =
 						i(6326),	-- Recipe: Slitherskin Mackerel
 					},
 				}),
-				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
+				n(4259,  {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, 87 },
 					["g"] = {
 						i(52186, {	-- Elementium Bar
@@ -413,7 +419,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+				n(5158,  {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 61.0, 45.6, 87 },
 					["g"] = {
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect

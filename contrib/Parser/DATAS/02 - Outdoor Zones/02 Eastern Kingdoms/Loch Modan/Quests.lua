@@ -6,10 +6,78 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
 			n(-17, {	-- Quests
+				q(26148, {	-- A Decisive Strike
+					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
+					["coord"] = { 23.4, 74.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1092,	-- Captain Rugelfuss
+					["g"] = {
+						i(58989),	-- Belt of the Valley of Kings
+						i(58990),	-- Rugelfuss Bracers
+						i(58988),	-- Unbound Leggings
+						i(131492),	-- Waistguard of the Valley of Kings
+					},
+				}),
 				
 				
+				q(26147, {	-- Bigger and Uglier
+					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
+					["coord"] = { 23.4, 74.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1090,	-- Mountaineer Wallbang
+					["g"] = {
+						i(58995),	-- Bonesnapper Bracers
+						i(131491),	-- Bonesnapper Cuffs
+						i(58996),	-- Mountaineer's Belt
+						i(58994),	-- Trogg-Slayer Boots
+					},
+				}),
 				
 				
+				q(26146, {	-- In Defense of the King's Lands
+					["coord"] = { 23.4, 74.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1092,	-- Captain Rugelfuss
+					["g"] = {
+						i(131490),	-- Greaves of Uncanny Courage
+						i(58985),	-- Leggings of Uncanny Courage
+						i(58986),	-- Stone Stompers
+						i(58984),	-- Stonesplinter Staff
+					},
+				}),
+				
+				
+				q(13635, {	-- South Gate Status Report
+					["sourceQuests"] = { 26855 },	-- A Pilot's Revenge
+					["isBreadcrumb"] = true,	-- for The Trogg Threat
+					["coord"] = { 14.0, 56.6, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1960,	-- Pilot Hammerfoot
+				}),
+				
+				
+				q(26854, {	-- The Lost Pilot
+					["sourceQuests"] = { 28567 },	-- Hero's Call: Loch Modan!
+					["coord"] = { 14.0, 56.6, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1960,	-- Pilot Hammerfoot
+					["g"] = {
+						i(58970),	-- Mori's Cloak
+						i(58971),	-- Mori's Compass
+						i(58972),	-- Mori's Gear Stick
+						i(156933),	-- Mori's Pocketknife
+					},
+				}),
+				
+				
+				q(26145, {	-- The Trogg Threat
+				--	unclear if this quest is required for the achievement
+				-- it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
+					["sourceQuests"] = { 13635 },	-- South Gate Status Report
+					["coord"] = { 23.4, 74.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1089,	-- Mountaineer Cobbleflint
+				}),
 				
 				
 				
@@ -51,16 +119,6 @@ _.Zones =
 						un(2, i(59012)),	-- Disarming Gloves
 						un(2, i(59011)),	-- Nicolette's Robes
 						un(2, i(59013)),	-- Stonesmirk Breastplate
-					},
-				}),
-				q(26148, {	-- A Decisive Strike
-					["qg"] = 1092,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58989),	-- Belt of the Valley of Kings
-						i(58990),	-- Rugelfuss Bracers
-						i(58988),	-- Unbound Leggings
-						i(131492),	-- Waistguard of the Valley of Kings
 					},
 				}),
 				q(257, {	-- A Hunter's Boast
@@ -124,16 +182,6 @@ _.Zones =
 					["qg"] = 6241,	-- 
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = {2},	-- Paladin
-				}),
-				q(26147, {	-- Bigger and Uglier
-					["qg"] = 1090,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58995),	-- Bonesnapper Bracers
-						i(131491),	-- Bonesnapper Cuffs
-						i(58996),	-- Mountaineer's Belt
-						i(58994),	-- Trogg-Slayer Boots
-					},
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
 					["u"] = 40,
@@ -294,16 +342,6 @@ _.Zones =
 						un(2, i(1832)),	-- Lucky Trousers
 					},
 				}),
-				q(26146, {	-- In Defense of the King's Lands
-					["qg"] = 1092,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(131490),	-- Greaves of Uncanny Courage
-						i(58985),	-- Leggings of Uncanny Courage
-						i(58986),	-- Stone Stompers
-						i(58984),	-- Stonesplinter Staff
-					},
-				}),
 --[[					
 				q(13647, {	-- Joining the Hunt
 					["qg"] = 1345,	-- 
@@ -390,10 +428,6 @@ _.Zones =
 					["qg"] = 44345,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13635, {	-- South Gate Status Report
-					["qg"] = 1960,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27035, {	-- Standing Up
 					["qg"] = 44870,	-- 
 					["races"] = ALLIANCE_ONLY,
@@ -419,22 +453,6 @@ _.Zones =
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
 					["qg"] = 1187,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(26854, {	-- The Lost Pilot
-					["qg"] = 1960,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58970),	-- Mori's Cloak
-						i(58971),	-- Mori's Compass
-						i(58972),	-- Mori's Gear Stick
-						i(156933),	-- Mori's Pocketknife
-					},
-				}),
---[[
-				q(26145, {	-- The Trogg Threat
-					["qg"] = 1089,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27116, {	-- The Winds of Loch Modan
