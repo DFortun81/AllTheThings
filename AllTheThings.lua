@@ -1832,6 +1832,52 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
+				
+				-- If the item is a relic, then let's compare against equipped relics.
+				if IsArtifactRelicItem(itemID) and app.Settings:GetTooltipSetting("Progress") then
+					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
+					if myArtifactData then
+						local progress, total = 0, 0;
+						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+						for itemID,artifactData in pairs(myArtifactData) do
+							local infoString;
+							for relicSlotIndex,relicData in pairs(artifactData) do
+								if relicData.relicType == relicType then
+									if infoString then
+										infoString = infoString .. " | " .. relicData.iLvl;
+									else
+										infoString = relicData.iLvl;
+									end
+									total = total + 1;
+									if relicData.iLvl > relicItemLevel then
+										progress = progress + 1;
+										infoString = infoString .. " " .. GetCompletionIcon(1);
+									else
+										infoString = infoString .. " " .. GetCompletionIcon(0);
+									end
+								end
+							end
+							if infoString then
+								local itemLink = select(2, GetItemInfo(itemID));
+								tinsert(info, 1, { 
+									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA, 
+									right = L["iLvl"] .. " " .. infoString,
+								});
+							end
+						end
+						if total > 0 then
+							group.total = total;
+							group.progress = progress;
+							group.g = {};
+							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+						end
+					else
+						group.collectible = true;
+						group.collected = false;
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+					end
+				end
 			end
 		end
 		
@@ -11222,8 +11268,33 @@ app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app:RegisterEvent("ARTIFACT_UPDATE");
 
 -- Define Event Behaviours
+app.events.ARTIFACT_UPDATE = function(...)
+	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
+	if itemID then
+		local count = C_ArtifactUI.GetNumRelicSlots();
+		if count and count > 0 then
+			local actArtifactData = GetDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			local myArtifactData = GetTempDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			for relicSlotIndex=1,count,1 do
+				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
+				local artifactData = {
+					["relicType"] = relicType,
+					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
+				};
+				myArtifactData[relicSlotIndex] = artifactData;
+				local existingArtifactData = artifactData[relicSlotIndex];
+				if not existingArtifactData then
+					actArtifactData[relicSlotIndex] = artifactData;
+				elseif existingArtifactData.iLvl < artifactData.iLvl then
+					existingArtifactData.iLvl = artifactData.iLvl;
+				end
+			end
+		end
+	end
+end
 app.events.VARIABLES_LOADED = function()
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
@@ -11270,6 +11341,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
+	GetDataMember("ArtifactRelicItemLevels", {});
 	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's lockouts.
@@ -11409,9 +11481,20 @@ app.events.VARIABLES_LOADED = function()
 		characters[app.GUID] = app.Me;
 	end
 	
+	-- Cache your character's artifact relic item level data.
+	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
+	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
+	if not myArtifactRelicItemLevels then
+		myArtifactRelicItemLevels = {};
+		artifactRelicItemLevels[app.GUID] = myArtifactRelicItemLevels;
+		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
+	end
+	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
+		"ArtifactRelicItemLevelsPerCharacter",
+		"ArtifactRelicItemLevels",
 		"Categories",
 		"Characters",
 		"CollectedArtifacts",

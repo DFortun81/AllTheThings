@@ -88,6 +88,14 @@ AllTheThings.L = {
 	["TOY_ID"] = "Toy ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["VISUAL_ID"] = "Visual ID";
+	["iLvl"] = "iLvl";
+	
+	-- Artifact Relic Completion
+	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
+	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
+	["NOT_TRADEABLE"] = "Not Tradeable";
+	["TRADEABLE"] = "Tradeable";
+	
 	
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\AllTheThings\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
