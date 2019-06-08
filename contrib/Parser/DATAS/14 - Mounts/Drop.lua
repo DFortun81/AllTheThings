@@ -39,6 +39,7 @@ _.Mounts =
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(78919),	-- Experiment 12-B
+		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount
@@ -92,6 +93,8 @@ _.Mounts =
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
+		i(169198),	-- Royal Snapdragon
+		i(168823),	-- Rusty Mechanocrawler
 		i(116767),	-- Sapphire Riberbeast
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul

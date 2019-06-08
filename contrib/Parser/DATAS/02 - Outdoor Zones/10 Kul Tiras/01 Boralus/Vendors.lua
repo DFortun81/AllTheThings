@@ -646,6 +646,7 @@ _.Zones =
 							["groups"] = {
 								i(160540),	-- Proudmoore Admiralty Tabard
 								i(161911),	-- Reins of the Admiralty Stallion
+								i(161879),	-- Reins of the Proudmoore Sea Scout
 								i(163200),	-- Cursed Spyglass
 								i(163201),	-- Gnoll Targetting Barrel
 								i(161574),	-- Boarding Action Vambraces

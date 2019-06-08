@@ -5,6 +5,13 @@ _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
 		n(-181, {	-- Blacksmithing
+			filter(100, {	-- Mounts
+				i(158887, {	-- Monelite Reinforced Chassis
+					["g"] = {
+						i(153594),	-- Xiwyllag ATV
+					},
+				}),
+			}),
 			filter(20, {	-- Daggers
 				i(161922),	-- Honorable Combatant's Shanker [Alliance]
 				i(159857),	-- Honorable Combatant's Shanker [Horde]

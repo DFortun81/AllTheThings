@@ -31,6 +31,7 @@ _.Mounts =
 			["races"] = {1,3},
 		},
 		i(166724),		-- Bruce
+		i(168408),		-- Child of Torcali
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
@@ -38,6 +39,7 @@ _.Mounts =
 			["itemID"] = 142231,	-- Deathlord's Vilebrood Vanquisher
 			["classes"] = {6},
 		},
+		i(169200),		-- Deepcoral Snapdragon
 		{
 			["mountID"] = 23161,	-- Dreadsteed
 			["classes"] = {9},
@@ -111,6 +113,7 @@ _.Mounts =
 		i(32857),		-- Onyx Netherwing Drake
 		i(137577),		-- Predatory Bloodgazer
 		i(32860),		-- Purple Netherwing Drake
+		i(168827),		-- Scrapforged Mechaspider
 		{
 			["itemID"] = 143493,	-- Shadowblade's Murderous Omen
 			["classes"] = {4},
@@ -120,6 +123,7 @@ _.Mounts =
 			["classes"] = {12},
 		},
 		i(163127),	-- Smoldering Reeins of the Teldrassil Hippogryph
+		i(169199),	-- Snapdragon Kelpstalker
 		i(137578),		-- Snowfeather Hunter
 		{
 			["mountID"] = 69820,	-- Sunwalker Kodo

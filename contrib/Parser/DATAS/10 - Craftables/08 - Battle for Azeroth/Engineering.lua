@@ -7,6 +7,11 @@ _.Craftables =
 		n(-183, {	-- Engineering
 			filter(100, {	-- Mounts
 				i(161134),	-- Mecha-Mogul Mk2
+				i(158886, {	-- Super-Charged Engine
+					["g"] = {
+						i(153594),	-- Xiwyllag ATV
+					},
+				}),
 			}),
 			filter(101, {	-- Battle Pets
 				i(165849),	-- Mechantula

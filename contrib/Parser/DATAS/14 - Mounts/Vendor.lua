@@ -217,6 +217,7 @@ _.Mounts =
 			{	-- Brown Wolf
 				["itemID"] = 5668,	-- Brown Wolf
 			},
+			i(161666),	-- Captured Swampstalker
 			{	-- Cenarion War Hippogryph
 				["itemID"] = 33999,	-- Cenarion War Hippogryph
 			},
@@ -290,6 +291,7 @@ _.Mounts =
 			{	-- Dusky Rockhide
 				["itemID"] = 116664,	-- Dusky Rockhide
 			},
+			i(161908),	-- Dusky Waycrest Gryphon
 			{	-- Ebon Gryphon
 				["itemID"] = 25472,	-- Ebon Gryphon
 			},
@@ -602,6 +604,7 @@ _.Mounts =
 			{	-- Pinto
 				["itemID"] = 2414,	-- Pinto
 			},
+			i(161879),	-- Proudmoore Sea Scout
 			{	-- Purple Dragon Turtle [Panda Only]
 				["itemID"] = 91006,	-- Purple Dragon Turtle [Panda Only]
 				["races"] = {
@@ -753,6 +756,7 @@ _.Mounts =
 			{	-- Spectral Steed [Alliance Only]
 				["itemID"] = 64998,	-- Spectral Steed [Alliance Only]
 			},
+			i(161664),	-- Spectral Pterrorwing
 			{	-- Spectral Wolf [Horde Only]
 				["itemID"] = 64999,	-- Spectral Wolf [Horde Only]
 			},
@@ -762,6 +766,7 @@ _.Mounts =
 			{	-- Stormpike Battle Charger
 				["itemID"] = 19030,	-- Stormpike Battle Charger
 			},
+			i(161909),	-- Stormsong Coastwatcher
 			{	-- Stormwind Steed
 				["itemID"] = 45125,	-- Stormwind Steed
 			},
@@ -1003,6 +1008,7 @@ _.Mounts =
 			{	-- Violet Raptor
 				["itemID"] = 8592,	-- Violet Raptor
 			},
+			i(161667),	-- Voldunai Dunescraper
 			{	-- White Kodo
 				["itemID"] = 46100,	-- White Kodo
 			},
