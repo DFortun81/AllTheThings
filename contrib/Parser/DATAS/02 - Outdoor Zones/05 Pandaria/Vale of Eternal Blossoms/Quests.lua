@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-17, { 	-- Quests
+			n(-17, {	-- Quests
 				{	---------- A Flash of Bronze... (A/H)
 					["allianceQuestID"] = 33229,	-- A Flash of Bronze...
 					["hordeQuestID"] = 33230,	-- A Flash of Bronze...

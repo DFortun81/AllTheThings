@@ -7,13 +7,26 @@ _.Zones =
 		m(52, {	-- Westfall
 			["g"] = {
 				n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-					a(ach(4903, {	-- Westfall Quests
-						crit(1),		-- Crime Scene Investigation
-						crit(2),		-- Investigating the Shadows
-						crit(3),		-- The Defias Brotherhood Reborn
-					})),
-]]--
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 --[[
 					q(26320, {	-- A Vision of the Past
 						["races"] = ALLIANCE_ONLY,

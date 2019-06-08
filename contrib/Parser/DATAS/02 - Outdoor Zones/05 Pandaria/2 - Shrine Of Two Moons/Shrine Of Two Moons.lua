@@ -3,13 +3,19 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(424, { 	-- Pandaria
-		m(391, { 	-- Shrine of Two Moons
-			["groups"] = {
-				n(-4, {		--Achievements
+	m(424, {	-- Pandaria
+		m(391, {	-- Shrine of Two Moons
+			["description"] = "|cff66ccffThe Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",		
+			["isRaid"] = true,
+			["races"] = HORDE_ONLY,
+			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
+			["maps"] = { 392 },
+			["lvl"] = 78,
+			["g"] = {
+				n(-4,  {	--Achievements
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
-				n(-17, { 	-- Quests
+				n(-17, {	-- Quests
 --[[
 					qh(32352),	-- A Gathering Storm
 					qh(31511),	-- A Witness to History
@@ -159,8 +165,15 @@ _.Zones =
 					qh(32256),	-- Rise Of An Empire
 					qh(32726),	-- So You Want to Be a Blacksmith...
 					qh(31391),	-- The Klaxxi
-					qh(31388),	-- The Shado-Pan Offensive
---]]					
+--]]
+					q(31375, {	-- The Order of the Cloud Serpent
+					--	possibly removed, maybe gated behind completion of a specific quest/questline
+						["isBreadcrumb"] = true,
+						["coord"] = { 60.6, 21.8, 391 },
+						["races"] = HORDE_ONLY,
+						["qg"] = 64533,	-- Wei Lakebreeze
+					}),
+--					qh(31388),	-- The Shado-Pan Offensive
 				}),
 				nh(-2, {	-- Vendors
 					n(64067, {	-- Barleyflower <Cooking Supplies>
@@ -1339,13 +1352,7 @@ _.Zones =
 						i(99388),	-- Handwraps of Seven Sacred Seals
 					}),
 				}),
-			},
-			["maps"] = { 392 },
-			["lvl"] = 78,
-			["isRaid"] = true,
-			["races"] = HORDE_ONLY,
-			["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
-			["description"] = "|cff66ccffThe Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",				
+			},		
 		}),
 	}),
 };

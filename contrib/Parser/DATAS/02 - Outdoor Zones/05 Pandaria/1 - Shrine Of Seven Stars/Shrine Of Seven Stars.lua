@@ -5,19 +5,25 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(393, { 	-- Shrine of Seven Stars
-			["groups"] = {
-				n(-4, {		--Achievements
+			["description"] = "|cff66ccffThe Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",
+			["isRaid"] = true,
+			["races"] = ALLIANCE_ONLY,
+			["icon"] = "Interface\\Icons\\achievement_doublejeopardyally",
+			["maps"] = {
+			--	393,	-- The Emperor's Step
+				394,	-- The Imperial Exchange
+			},
+			["lvl"] = 78,
+			["g"] = {
+				n(-4,  {	--Achievements
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
-				n(-17, { 	-- Quests	
-					{	-- Heroic Deeds
-						["questID"] = 32900,	-- Heroic Deeds
-						["qg"] = 64101,		-- Taijin the Cyclone
-						["coords"] = {
-							{ 47.23, 49.71, 393 },
-						},
-						["lvl"] = 90,		-- Level it spawns
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
+				n(-17, {	-- Quests	
+					q(32900, {	-- Heroic Deeds
+						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
+						["coord"] = { 47.23, 49.71, 393 },
+						["lvl"] = 90,
+						["qg"] = 64101,	-- Taijin the Cyclone
 						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								i(98209),	-- Druid B,R - Monk M								
@@ -134,33 +140,30 @@ _.Zones =
 								i(98172),	-- Druid F,G - Hunter - Rogue - Shaman Enh - Monk B,W - DH
 							}),
 						},
-					},
-					{	-- Proving Grounds
-						["questID"] = 33248,	-- Proving Grounds
-						["qg"] = 64101,			-- Taijin the Cyclone
-						["coords"] = {
-							{ 47.23, 49.71, 393 },
-						},
-						["lvl"] = 90,			-- Level it spawns
-					},
-					{	-- So You Want to Be a Blacksmith...
-						["questID"] = 32683,	-- So You Want to Be a Blacksmith...
-						["qg"] = 64085,			-- Cullen Hammerbrow
+					}),
+					q(33248, {	-- Proving Grounds
+						["coord"] = { 47.23, 49.71, 393 },
+						["lvl"] = 90,
+						["qg"] = 64101,	-- Taijin the Cyclone
+					}),
+					q(32683, {	-- So You Want to Be a Blacksmith...
 						["requireSkill"] = 164,	-- Blacksmithing
-						["coords"] = {
-							{ 71.27, 50.52, 393 },
-						},
-					},
---[[					
-					qa(31390),	-- The Klaxxi
-					qa(31386),	-- The Shado-Pan Offensive
---]]
+						["qg"] = 64085,	-- Cullen Hammerbrow
+						["coord"] = { 71.27, 50.52, 393 },
+					}),
+--					qa(31390),	-- The Klaxxi
+					q(31373, {	-- The Order of the Cloud Serpent
+					--	possibly removed, maybe gated behind completion of a specific quest/questline
+						["isBreadcrumb"] = true,
+						["coord"] = { 85.8, 62.2, 393 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 64484,	-- Instructor Windspear
+					}),
+--					qa(31386),	-- The Shado-Pan Offensive
 				}),
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(74021, {	-- Clarice Chapmann <Heroic Vendor>
-						["coords"] = {
-							{ 43.02, 45.55, 394 },
-						},
+						["coord"] = { 43.02, 45.55, 394 },
 						["g"] = {
 							i(105858, {	-- Essence of the Cursed Conqueror
 								i(99686, {	-- Chest of the Cursed Conquerer
@@ -465,9 +468,7 @@ _.Zones =
 						["requireSkill"] = 164,	-- Blacksmithing
 					}),
 					n(74027, {	-- Lorry Warmheart <Mythic Vendor>
-						["coords"] = {
-							{ 43.17, 46.83, 394 },
-						},
+						["coord"] = { 43.17, 46.83, 394 },
 						["g"] = {
 							i(105867, {	-- Essence of the Cursed Conqueror
 								i(99715, {	-- Chest of the Cursed Conquerer
@@ -738,18 +739,14 @@ _.Zones =
 						},
 					}),
 					n(64084, {	-- Jojo <Cooking Supplies>
-						["coords"] = {
-							{ 63.08, 26.87, 393 },
-						},
+						["coord"] = { 63.08, 26.87, 393 },
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
 					}),
 					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
-						["coords"] = {
-							{ 64.73, 44.17, 393 },
-						},
+						["coord"] = { 64.73, 44.17, 393 },
 						["g"] = {
 							i(76061, {	-- Spirit of Harmony
 								i(86361),	-- Pattern: Contender's Satin Amice
@@ -772,15 +769,15 @@ _.Zones =
 						},
 					}),
 					n(64096, {	-- Serenka <First Aid Supplies>
-						["coords"] = {
-							{ 47.27, 61.25, 393 },
-						},
+						["coord"] = { 47.27, 61.25, 393 },
 						["g"] = {
 							i(44693),	-- Wound Dressing Shirt
 							i(44694),	-- Antiseptic-Soaked Dressing Shirt
 						},
 					}),
 					n(64094, {	-- Tanner Pang <Leatherworking & Skinning Supplies>
+						["requireSkill"] = 165,	-- Leatherworking
+						["coord"] = { 75.6, 50.2, 393 },
 						["g"] = {
 							i(76061, {	-- Spirit of Harmony
 								i(86240),	-- Pattern: Contender's Dragonscale Belt
@@ -817,12 +814,9 @@ _.Zones =
 								i(86271),	-- Pattern: Contender's Wyrmhide Shoulders
 							}),
 						},
-						["requireSkill"] = 165,	-- Leatherworking
 					}),
 					n(74022, {	-- Thelett Shaleheart <Raid Vendor>
-						["coords"] = {
-							{ 41.94, 42.93, 394 },
-						},
+						["coord"] = { 41.94, 42.93, 394 },
 						["g"] = {
 							i(105864, {	-- Essence of the Cursed Conquerer
 								i(99743, {	-- Chest of the Cursed Conquerer
@@ -1093,9 +1087,7 @@ _.Zones =
 						},
 					}),
 					n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor>
-						["coords"] = {
-							{ 41.02, 42.50, 394 },
-						},
+						["coord"] = { 41.02, 42.50, 394 },
 						["g"] = {
 							i(105861, {	-- Essence of the Cursed Conqueror
 								i(99678, {	-- Chest of the Cursed Conquerer
@@ -1366,16 +1358,7 @@ _.Zones =
 						},
 					}),
 				}),
-			},
-			["maps"] = {
-				--393,	-- The Emperor's Step
-				394,	-- The Imperial Exchange
-			},
-			["lvl"] = 78,
-			["isRaid"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["icon"] = "Interface\\Icons\\achievement_doublejeopardyally",
-			["description"] = "|cff66ccffThe Shrine of Seven Stars is an ancient mogu structure located south of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. It has been claimed by the Alliance and serves as the main hub of the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.|r",				
+			},				
 		}),
 	}),
 };
