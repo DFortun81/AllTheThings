@@ -6,6 +6,23 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
 			n(-17, {	-- Quests
+				q(283,   {	-- A Dark Threat Looms
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(2907)),	-- Dwarven Tree Chopper
+						un(2, i(2908)),	-- Thornblade
+					},
+				}),
+				q(26155, {	-- A Dark Threat, Remembered
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(59012)),	-- Disarming Gloves
+						un(2, i(59011)),	-- Nicolette's Robes
+						un(2, i(59013)),	-- Stonesmirk Breastplate
+					},
+				}),
 				q(26148, {	-- A Decisive Strike
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, 48 },
@@ -18,9 +35,82 @@ _.Zones =
 						i(131492),	-- Waistguard of the Valley of Kings
 					},
 				}),
-				
-				
+				q(704,   {	-- Agmond's Fate
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(4980)),	-- Prospector Gloves
+					},
+				}),
+				q(257,   {	-- A Hunter's Boast
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(59004)),	-- Daryl's Bow
+						un(2, i(2903)),	-- Daryl's Hunting Bow
+						un(2, i(2904)),	-- Daryl's Hunting Rifle
+						un(2, i(59003)),	-- Daryl's Rifle
+					},
+				}),
+				q(258,   {	-- A Hunter's Challenge
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(59000)),	-- Daryl's Axe
+						un(2, i(3572)),		-- Daryl's Shortsword
+						un(2, i(859)),		-- Fine Cloth Shirt
+						un(2, i(59001)),	-- Ill-Worn Belt
+						un(2, i(59002)),	-- Unabashed Vest
+					},
+				}),
+				q(26929, {	-- A Load of Croc
+				--	unclear if this quest is required for the achievement
+				--	it's picked up in thelsamar after the first criteria + algaz station are complete, so it'd be a part of the second criteria if it is
+					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
+					["coord"] = { 34.8, 49.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44345,	-- Cannary Caskshot
+				}),
+				q(454,   {	-- After the Ambush
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2057,	-- Huldar
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(26846, {	-- A Nasty Exploit
+				--	unclear if this quest is required for the achievement
+				--	it's picked up in algaz station after the first criteria is complete, so it'd be a part of the second criteria if it is
+					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44200,	-- Scout Dorli
+				}),
+				q(27115, {	-- Ando's Call
+					["sourceQuests"] = { 27078 },	-- Gor'kresh
+					["coord"] = { 64.0, 26.8, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1073,	-- Ashlan Stonesmirk
+				}),
+				q(26843, {	-- A Tiny, Clever Commander
+					["sourceQuests"] = { 13636 },	-- Stormpike's Orders
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
+				}),
+				q(26868, {	-- Axis of Awful
+					["sourceQuests"] = { 26928 },	-- Smells Like a Plan
+					["coord"] = { 34.8, 49.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44345,	-- Cannary Caskshot
+				}),
+				q(1655,  {	-- Bailor's Ore Shipment
+					["classes"] = { 2 },	-- Paladin
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6241,	-- 
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(26147, {	-- Bigger and Uglier
+				--	unclear if this quest is required for the achievement
+				--	it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
@@ -32,8 +122,186 @@ _.Zones =
 						i(58994),	-- Trogg-Slayer Boots
 					},
 				}),
-				
-				
+				q(2038,  {	-- Bingles' Missing Supplies
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(12522)),	-- Bingles' Flying Gloves
+						un(2, i(58975)),	-- Gnomish All-Purpose Ray Gun
+						un(2, i(58974)),	-- Mechanical Wand
+						un(2, i(58973)),	-- Monte's Scythe
+					},
+				}),
+				q(27032, {	-- Bird is the Word
+					["sourceQuests"] = { 27031 },	-- Wing Nut
+					["coord"] = { 81.7, 64.6, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6577,	-- Bingles Blastenheimer
+				}),
+				q(26932, {	-- Buzz Off
+				--	unclear if this quest is required for the achievement
+				--	it's picked up in thelsamar after the first criteria + algaz station are complete, so it'd be a part of the second criteria if it is
+					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
+					["coord"] = { 34.9, 46.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1340,	-- Mountaineer Kadrell
+				}),
+				q(26137, {	-- Checking on the Boys
+					["isBreadcrumb"] = true,	-- for The Stolen Keg
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
+				}),
+				q(27077, {	-- Clutching at Chaos
+					["sourceQuests"] = { 27074 },	-- Fight the Hammer
+					["coord"] = { 64.1, 26.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1073,	-- Ashlan Stonesmirk
+				}),
+				q(385,   {	-- Crocolisk Hunting
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(59007)),	-- Croc-Scale Gloves
+						un(2, i(59006)),	-- Croc-Skin Boots
+						un(2, i(59005)),	-- Marek's Dagger
+					},
+				}),
+				q(27026, {	-- Defcon: Bobcat
+					["sourceQuests"] = { 27025 },	-- Thistle While You Work
+					["coord"] = { 82.8, 63.3, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44859,	-- Safety Warden Pipsy
+				}),
+				q(13652, {	-- Defense of the Stonewrought Dam
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(13656, {	-- Explorers' League Document (1 of 6)
+				--	["objectID"] = 194387,	-- Stolen Explorers' League Document
+					["coord"] = { 36.7, 61.2, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+				}),
+				q(13655, {	-- Explorers' League Document (2 of 6)
+					["objectID"] = 194378,	-- Stolen Explorers' League Document
+					["coord"] = { 41.3, 39.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+				}),
+				q(13657, {	-- Explorers' League Document (3 of 6)
+				--	["objectID"] = 194388,	-- Stolen Explorers' League Document
+					["coord"] = { 61.6, 73.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13658, {	-- Explorers' League Document (4 of 6)
+				--	["objectID"] = 194389,	-- Stolen Explorers' League Document
+					["coord"] = { 68.1, 66.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\Interface\\Icons\\INV_Scroll_11",
+				}),
+				q(13660, {	-- Explorers' League Document (5 of 6)
+				--	["objectID"] = 194391,	-- Stolen Explorers' League Document
+					["coord"] = { 53.8, 38.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(13659, {	-- Explorers' League Document (6 of 6)
+				--	["objectID"] = 194390,	-- Stolen Explorers' League Document
+					["coord"] = { 73.0, 35.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27074, {	-- Fight the Hammer
+					["sourceQuests"] = { 27035 },	-- Standing Up
+					["coord"] = { 58.6, 29.1, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44870,	-- Ando Blastenheimer
+				}),
+				q(26863, {	-- Filthy Paws
+				--	unclear if this quest is required for the achievement
+				--	it's picked up in algaz station after the first criteria is complete, so it'd be a part of the second criteria if it is
+					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
+					["g"] = {
+						i(58978),	-- Filthy Paw
+						i(58980),	-- Ironheart Chain Cloak
+						i(58979),	-- Silver Stream Shield
+					},
+				}),
+				q(307,   {	-- Filthy Paws (U)
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(3166)),	-- Ironheart Chain
+						un(2, i(3160)),	-- Ironplate Buckler
+						un(2, i(3161)),	-- Robe of the Keeper
+					},
+				}),
+				q(27030, {	-- Foxtails By The Handful
+					["coord"] = { 81.8, 61.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1154,	-- Marek Ironheart
+				}),
+				q(26961, {	-- Gathering Idols
+					["coord"] = { 64.9, 66.5, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1345,	-- Magmar Felhew
+					["g"] = {
+						i(58997),	-- Carved Stone Mace
+						i(58999),	-- Thelsamar Breastplate
+						i(58998),	-- Trogg Kickers
+						i(131628),	-- Trogg Stompers
+					},
+				}),
+				q(297,   {	-- Gathering Idols (U)
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(5241)),	-- Dwarven Flamestick
+						un(2, i(3154)),	-- Thelsamar Axe
+						un(2, i(6186)),	-- Trogg Slicer
+					},
+				}),
+				q(27078, {	-- Gor'kresh
+					["sourceQuests"] = {
+						27077,	-- Clutching at Chaos
+						27075,	-- Servants of Cho'gall
+					},
+					["coord"] = { 64.0, 26.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1073,	-- Ashlan Stonesmirk
+				}),
+				q(13661, {	-- Heartfelt Appreciation
+					["sourceQuests"] = {
+						13656,	-- Explorers' League Document (1 of 6)
+						13655,	-- Explorers' League Document (2 of 6)
+						13657,	-- Explorers' League Document (3 of 6)
+						13658,	-- Explorers' League Document (4 of 6)
+						13660,	-- Explorers' League Document (5 of 6)
+						13659,	-- Explorers' League Document (6 of 6)
+					},
+					["coord"] = { 37.1, 47.8, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1153,	-- Torren Squarejaw
+					["g"] = {	
+						i(58993),	-- Old Dwarven Hammer
+						i(58991),	-- Star Shooter
+						i(156932),	-- Surveyor's Staff 
+						i(58992),	-- Uncovered Breastplate
+						i(131300),	-- Uncovered Chestguard
+					},
+				}),
+				q(27034, {	-- He's That Age
+					["sourceQuests"] = { 27033 },	-- Skystrider's Heart
+					["coord"] = { 81.7, 64.6, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6577,	-- Bingles Blastenheimer
+				}),
+				q(27028, {	-- Hornet Hunting
+					["coord"] = { 81.8, 61.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1154,	-- Marek Ironheart
+				}),
 				q(26146, {	-- In Defense of the King's Lands
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
@@ -45,8 +313,118 @@ _.Zones =
 						i(58984),	-- Stonesplinter Staff
 					},
 				}),
-				
-				
+				q(217,   {	-- In Defense of the King's Lands (U)
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(6187)),	-- Dwarven Defender
+						un(2, i(1436)),	-- Frontier Britches
+						un(2, i(1832)),	-- Lucky Trousers
+					},
+				}),
+				q(13647, {	-- Joining the Hunt
+				--	unclear if this quest is required for the achievement — it links ironband's excavation to the farstrider lodge
+				--	not sure if it needs to be marked as a breadcrumb / not sure if it is invalidated by any other quests, but it didn't hide any quests
+					["sourceQuests"] = {
+						26961,	-- Gathering Idols
+						13650,	-- Keep Your Hands Off The Goods!
+					},
+					["coord"] = { 64.9, 66.5, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1345,	-- Magmar Felhew
+				}),
+				q(13650, {	-- Keep Your Hands Off The Goods!
+					["sourceQuests"] = { 309 },	-- Protecting the Shipment
+					["coord"] = { 65.2, 66.1, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1344,	-- Prospector Ironband
+				}),
+				q(26844, {	-- Kobold and Kobolder
+					["sourceQuests"] = { 26843 },	-- A Tiny, Clever Commander
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
+				}),
+				q(25118, {	-- Looking for Lurkers
+					["coord"] = { 35.3, 42.8, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1777,	-- Dakk Blunderblast
+				}),
+				q(26176, {	-- Onward to Thelsamar
+					["sourceQuests"] = { 26148 },	-- A Decisive Strike
+					["isBreadcrumb"] = true,	-- for Out of Gnoll-where
+					["coord"] = { 23.4, 74.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1092,	-- Captain Rugelfuss
+				}),
+				q(26842, {	-- Out of Gnoll-where
+					["sourceQuests"] = { 26176 },	-- Onward to Thelsamar
+					["coord"] = { 35.1, 46.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1340,	-- Mountaineer Kadrell
+				}),
+				q(309,   { 	-- Protecting the Shipment
+					["sourceQuests"] = { 13639 },	-- Resupplying the Excavation
+					["coord"] = { 56.4, 65.8, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2057,	-- Huldar
+					["g"] = {
+						un(34, i(3217)),	-- Foreman Belt
+						un(34, i(6188)),	-- Mud Stompers
+						i(58981),	-- Dastardly Bracers
+						i(58982),	-- Foreman Gloves
+						i(131204),	-- Foreman Handguards
+						i(58983),	-- Ironband Legguards
+					},
+				}),
+				q(416,   {	-- Rat Catching
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(58977)), 	-- Algaz Shield
+						un(2, i(3217)),	-- Foreman Belt
+						un(2, i(6188)),	-- Mud Stompers
+						un(2, i(58976)), 	-- Rat Ear Cloak
+					},
+				}),
+				q(301,   {	-- Report to Ironforge
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1105,	-- Jern Hornhelm
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(13639, {	-- Resupplying the Excavation
+					["sourceQuests"] = { 26868 },	-- Axis of Awful
+					["coord"] = { 37.2, 47.5, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1105,	-- Jern Hornhelm
+				}),
+				q(273,   {	-- Resupplying the Excavation (U)
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1105,	-- Jern Hornhelm
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(25117, {	-- Scout's Dishonor
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(59016)),	-- Clue-Finder's Leggings
+						un(2, i(59015)),	-- Bracers of Alarm
+						un(2, i(59014)),	-- Kizmet's Wrap
+						un(2, i(59017)),	-- Strange Smelling Boots
+					},
+				}),
+				q(27075, {	-- Servants of Cho'gall
+					["sourceQuests"] = { 27074 },	-- Fight the Hammer
+					["coord"] = { 64.1, 26.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1073,	-- Ashlan Stonesmirk
+				}),
+				q(27033, {	-- Skystrider's Heart
+					["sourceQuests"] = { 27032 },	-- Bird is the Word
+					["coord"] = { 78.4, 76.3, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44618,	-- Rusted Skystrider
+				}),
 				q(13635, {	-- South Gate Status Report
 					["sourceQuests"] = { 26855 },	-- A Pilot's Revenge
 					["isBreadcrumb"] = true,	-- for The Trogg Threat
@@ -54,8 +432,48 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1960,	-- Pilot Hammerfoot
 				}),
-				
-				
+				q(26928, {	-- Smells Like A Plan
+					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
+					["coord"] = { 34.8, 49.0, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44345,	-- Cannary Caskshot
+				}),
+				q(27035, {	-- Standing Up
+					["sourceQuests"] = { 27034 },	-- He's That Age
+					["coord"] = { 58.6, 29.1, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44870,	-- Ando Blastenheimer
+				}),
+				q(1338,  {	-- Stormpike's Order
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(13636, {	-- Stormpike's Orders
+					["coord"] = { 35.1, 46.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1340,	-- Mountaineer Kadrell
+				}),
+				q(26927, {	-- Suddenly, Murlocs!
+					["sourceQuests"] = { 26864 },	-- The Bearer of Gnoll-edge
+					["coord"] = { 34.9, 46.7, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1340,	-- Mountaineer Kadrell
+				}),
+				q(26864, {	-- The Bearer of Gnoll-edge
+					["sourceQuests"] = { 26845 },	-- Who's in Charge Here?
+					["coord"] = { 25.5, 17.8, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
+				}),
+				q(13638, {	-- The Captured Mountaineer
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(27016, {	-- The Joy of Boar Hunting
+					["coord"] = { 83.4, 65.2, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1187,	-- Daryl the Youngling
+				}),
 				q(26854, {	-- The Lost Pilot
 					["sourceQuests"] = { 28567 },	-- Hero's Call: Loch Modan!
 					["coord"] = { 14.0, 56.6, 48 },
@@ -68,414 +486,44 @@ _.Zones =
 						i(156933),	-- Mori's Pocketknife
 					},
 				}),
-				
-				
+				q(26860, {	-- Thelsamar Blood Sausages
+					["coord"] = { 34.7, 49.1, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1963,	-- Vidra Hearthstove
+					["g"] = {
+						i(3679),	-- Recipe: Blood Sausage
+					},
+				}),
 				q(26145, {	-- The Trogg Threat
 				--	unclear if this quest is required for the achievement
-				-- it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
+				--	it's picked up in the valley of kings, prior to getting to thelsamar, so it'd be part of the first criteria if it is
 					["sourceQuests"] = { 13635 },	-- South Gate Status Report
 					["coord"] = { 23.4, 74.9, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
 				}),
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			--[[
-					["sourceQuests"] = {  },	-- 
-					["coord"] = { , , 48 },
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = ,	-- 
-				}),
-
-
-					["icon"] = "Interface\\Icons\\",
-
-
-			--]]
-		
-			
-			
-			
-			
-				q(283, {	-- A Dark Threat Looms
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(2907)),	-- Dwarven Tree Chopper
-						un(2, i(2908)),	-- Thornblade
-					},
-				}),
-				q(26155, {	-- A Dark Threat, Remembered
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(59012)),	-- Disarming Gloves
-						un(2, i(59011)),	-- Nicolette's Robes
-						un(2, i(59013)),	-- Stonesmirk Breastplate
-					},
-				}),
-				q(257, {	-- A Hunter's Boast
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(59004)),	-- Daryl's Bow
-						un(2, i(2903)),	-- Daryl's Hunting Bow
-						un(2, i(2904)),	-- Daryl's Hunting Rifle
-						un(2, i(59003)),	-- Daryl's Rifle
-					},
-				}),
-				q(258, {	-- A Hunter's Challenge
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(59000)),	-- Daryl's Axe
-						un(2, i(3572)),		-- Daryl's Shortsword
-						un(2, i(859)),		-- Fine Cloth Shirt
-						un(2, i(59001)),	-- Ill-Worn Belt
-						un(2, i(59002)),	-- Unabashed Vest
-					},
-				}),
---[[
-				q(26929, {	-- A Load of Croc
-					["qg"] = 44345,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26846, {	-- A Nasty Exploit
-					["qg"] = 44200,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26843, {	-- A Tiny, Clever Commander
-					["qg"] = 1343,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(454, {	-- After the Ambush
-					["qg"] = 2057,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-]]--
-				q(704, {	-- Agmond's Fate
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(4980)),	-- Prospector Gloves
-					},
-				}),
---[[
-				q(27115, {	-- Ando's Call
-					["qg"] = 1073,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26868, {	-- Axis of Awful
-					["qg"] = 44345,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]					
-				q(1655, {	-- Bailor's Ore Shipment
-					["u"] = 40,
-					["qg"] = 6241,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = {2},	-- Paladin
-				}),
-				q(2038, {	-- Bingles' Missing Supplies
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(12522)),	-- Bingles' Flying Gloves
-						un(2, i(58975)),	-- Gnomish All-Purpose Ray Gun
-						un(2, i(58974)),	-- Mechanical Wand
-						un(2, i(58973)),	-- Monte's Scythe
-					},
-				}),
---[[					
-				q(27032, {	-- Bird is the Word
-					["qg"] = 6577,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26932, {	-- Buzz Off
-					["qg"] = 1340,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26137, {	-- Checking on the Boys
-					["qg"] = 1343,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27077, {	-- Clutching at Chaos
-					["qg"] = 1073,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-]]--
-				q(385, {	-- Crocolisk Hunting
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(59007)),	-- Croc-Scale Gloves
-						un(2, i(59006)),	-- Croc-Skin Boots
-						un(2, i(59005)),	-- Marek's Dagger
-					},
-				}),
---[[
-				q(27026, {	-- Defcon: Bobcat
-					["qg"] = 44859,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13652, {	-- Defense of the Stonewrought Dam
-					["u"] = 40,
-				}),
-				o(194387, {	-- Stolen Explorers' League Document
-					q(13656, {	-- Explorers' League Document (1 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(194378, {	-- Stolen Explorers' League Document
-					q(13655, {	-- Explorers' League Document (2 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(194388, {	-- Stolen Explorers' League Document
-					q(13657, {	-- Explorers' League Document (3 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(194389, {	-- Stolen Explorers' League Document
-					q(13658, {	-- Explorers' League Document (4 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(194391, {	-- Stolen Explorers' League Document
-					q(13660, {	-- Explorers' League Document (5 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(194390, {	-- Stolen Explorers' League Document
-					q(13659, {	-- Explorers' League Document (6 of 6)
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				q(27074, {	-- Fight the Hammer
-					["qg"] = 44870,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]					
-				q(307, {	-- Filthy Paws
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(3166)),	-- Ironheart Chain
-						un(2, i(3160)),	-- Ironplate Buckler
-						un(2, i(3161)),	-- Robe of the Keeper
-					},
-				}),
-				q(26863, {	-- Filthy Paws
-					["qg"] = 1343,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58978),	-- Filthy Paw
-						i(58980),	-- Ironheart Chain Cloak
-						i(58979),	-- Silver Stream Shield
-					},
-				}),
---[[					
-				q(27030, {	-- Foxtails By The Handful
-					["qg"] = 1154,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(297, {	-- Gathering Idols
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(5241)),	-- Dwarven Flamestick
-						un(2, i(3154)),	-- Thelsamar Axe
-						un(2, i(6186)),	-- Trogg Slicer
-					},
-				}),
-				q(26961, {	-- Gathering Idols
-					["qg"] = 1345,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58997),	-- Carved Stone Mace
-						i(58999),	-- Thelsamar Breastplate
-						i(58998),	-- Trogg Kickers
-						i(131628),	-- Trogg Stompers
-					},
-				}),
---[[					
-				q(27078, {	-- Gor'kresh
-					["qg"] = 1073,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27034, {	-- He's That Age
-					["qg"] = 6577,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(13661, {	-- Heartfelt Appreciation
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "After turning in all six Stolen Explorers' League Documents, this quest will pop up.",
-					["g"] = {	
-						i(58993),	-- Old Dwarven Hammer
-						i(58991),	-- Star Shooter
-						i(156932),	-- Surveyor's Staff 
-						i(58992),	-- Uncovered Breastplate
-						i(131300),	-- Uncovered Chestguard
-					},
-				}),
---[[					
-				q(27028, {	-- Hornet Hunting
-					["qg"] = 1154,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(217, {	-- In Defense of the King's Lands
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(6187)),	-- Dwarven Defender
-						un(2, i(1436)),	-- Frontier Britches
-						un(2, i(1832)),	-- Lucky Trousers
-					},
-				}),
---[[					
-				q(13647, {	-- Joining the Hunt
-					["qg"] = 1345,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13650, {	-- Keep Your Hands Off The Goods!
-					["qg"] = 1344,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26844, {	-- Kobold and Kobolder
-					["qg"] = 1343,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(25118, {	-- Looking for Lurkers
-					["qg"] = 1777,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26176, {	-- Onward to Thelsamar
-					["qg"] = 1092,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26842, {	-- Out of Gnoll-where
-					["qg"] = 1340,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(309, { 	-- Protecting the Shipment
-					["qg"] = 2057,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(34, i(3217)),	-- Foreman Belt
-						un(34, i(6188)),	-- Mud Stompers
-						i(58981),	-- Dastardly Bracers
-						i(58982),	-- Foreman Gloves
-						i(131204),	-- Foreman Handguards
-						i(58983),	-- Ironband Legguards
-					},
-				}),
-				q(416, {	-- Rat Catching
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(58977)), 	-- Algaz Shield
-						un(2, i(3217)),	-- Foreman Belt
-						un(2, i(6188)),	-- Mud Stompers
-						un(2, i(58976)), 	-- Rat Ear Cloak
-					},
-				}),
---[[					
-				q(301, {	-- Report to Ironforge
-					["qg"] = 1105,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(273, {	-- Resupplying the Excavation
-					["u"] = 40,
-					["qg"] = 1105,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13639, {	-- Resupplying the Excavation
-					["qg"] = 1105,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-]]--
-				q(25117, {	-- Scout's Dishonor
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						un(2, i(59016)),	-- Clue-Finder's Leggings
-						un(2, i(59015)),	-- Bracers of Alarm
-						un(2, i(59014)),	-- Kizmet's Wrap
-						un(2, i(59017)),	-- Strange Smelling Boots
-					},
-				}),
---[[
-				q(27075, {	-- Servants of Cho'gall
-					["qg"] = 1073,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27033, {	-- Skystrider's Heart
-					["qg"] = 44618,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26928, {	-- Smells Like A Plan
-					["qg"] = 44345,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27035, {	-- Standing Up
-					["qg"] = 44870,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(1338, {	-- Stormpike's Order
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13636, {	-- Stormpike's Orders
-					["qg"] = 1340,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26927, {	-- Suddenly, Murlocs!
-					["qg"] = 1340,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26864, {	-- The Bearer of Gnoll-edge
-					["qg"] = 1343,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13638, {	-- The Captured Mountaineer
-					["u"] = 40,
-				}),
-				q(27016, {	-- The Joy of Boar Hunting
-					["qg"] = 1187,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27116, {	-- The Winds of Loch Modan
-					["qg"] = 44870,	-- 
+					["sourceQuests"] = { 27115 },	-- Ando's Call
+					["coord"] = { 58.6, 29.1, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44870,	-- Ando Blastenheimer
 				}),
---]]
-				q(26860, {	-- Thelsamar Blood Sausages
-					["qg"] = 1963,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(3679),	-- Recipe: Blood Sausage
-					},
-				}),
---[[
 				q(27025, {	-- Thistle While You Work
-					["qg"] = 44859,	-- 
+					["coord"] = { 82.8, 63.3, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 44859,	-- Safety Warden Pipsy
 				}),
---]]
-				q(27037, {	-- Vyrin's Revenge
-					["qg"] = 1187,	-- 
+				q(27036, {	-- Vyrin's Revenge (#1)
+					["sourceQuests"] = { 27016 },	-- The Joy of Boar Hunting
+					["coord"] = { 82.0, 64.4, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1156,	-- Vyrin Swiftwind
+				}),
+				q(27037, {	-- Vyrin's Revenge (#2)
+					["sourceQuests"] = { 27036 },	-- Vyrin's Revenge (#1)
+					["coord"] = { 83.4, 65.1, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1187,	-- Daryl the Youngling
 					["g"] = {
 						i(59010),	-- Swiftwind Blade
 						i(59008),	-- Unsanitary Gloves
@@ -483,20 +531,9 @@ _.Zones =
 						i(131633),	-- Vyrin's Waistband
 					},
 				}),
---[[					
-				q(27036, {	-- Vyrin's Revenge
-					["qg"] = 1156,	-- 
+				q(256,   {	-- WANTED: Chok'sul
 					["races"] = ALLIANCE_ONLY,
-				}),
-				o(256, {	-- Wanted!
-					q(13648, {	-- WANTED: The Dark Iron Spy
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-]]--
-				q(256, {	-- WANTED: Chok'sul
-					["u"] = 40,
-					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						un(2, i(59028)),	-- Bluntnose's Signet
 						un(2, i(59026)), 	-- Bounty Hunter's Bracers
@@ -505,16 +542,23 @@ _.Zones =
 						un(2, i(59027)), 	-- Thelsamar Chainmail
 					},
 				}),
---[[
-				q(26845, {	-- Who's In Charge Here?
-					["qg"] = 1343,	-- 
+				q(13648, {	-- WANTED: The Dark Iron Spy
+				--	["objectID"] = 256,	-- Wanted!
+					["coord"] = { 37.2, 46.3, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+				}),
+				q(26845, {	-- Who's In Charge Here?
+					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
+					["coord"] = { 25.5, 17.9, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
 				q(27031, {	-- Wing Nut	
-					["qg"] = 6577,	-- 
+					["coord"] = { 81.7, 64.6, 48 },
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6577,	-- Bingles Blastenheimer
 				}),
---]]
 			}),
 		}),
 	}),

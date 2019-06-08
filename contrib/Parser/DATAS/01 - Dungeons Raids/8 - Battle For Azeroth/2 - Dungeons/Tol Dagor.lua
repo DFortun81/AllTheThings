@@ -3,7 +3,6 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1002, {	-- Tol Dagor
-		["lvl"] = 110,
 		["maps"] = {
 			974,	-- Tol Dagor
 			975,	-- The Drain
@@ -12,7 +11,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			978,	-- Officer Quarters
 			979,	-- Overseer's Redoubt
 			980,	-- Oveseer's Summit
+			1349,	-- Tol Dagor (used in horde war campaign scenario)
+			1350,	-- Tol Dagor (used in horde war campaign scenario)
+			1351,	-- Tol Dagor (used in horde war campaign scenario)
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(-34, {	-- World Quests
 				q(51297, {	-- Tol Dagor: Shorefront Property
@@ -22,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["lvl"] = 120,			-- WQ is 120+ only
 				}),
 			}),
-			d(1, {	-- Normal
+			d(1,  {	-- Normal
 				e(2097, {	-- The Sand Queen
 					["crs"] = { 127479 },	-- The Sand Queen
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -36,9 +39,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2098, {	-- Jes Howlis
-					["crs"] = {
-						127484,	-- Jes Howlis
-					},
+					["crs"] = { 127484 },	-- Jes Howlis
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159131),	-- Howlis' Crystal Shiv
 						i(159666),	-- Improvised Riot Shield
@@ -50,9 +51,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2099, {	-- Knight Captain Valyri
-					["crs"] = {
-						127490,	-- Knight Captain Valyri
-					},
+					["crs"] = { 127490 },	-- Knight Captain Valyri
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159441),	-- Valyri's Fire-Proof Bracers
 						i(159389),	-- Flint-Linked Wristguards
@@ -66,9 +65,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2096, {	-- Overseer Korgus
-					["crs"] = {
-						127503,	-- Overseer Korgus
-					},
+					["crs"] = { 127503 },	-- Overseer Korgus
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12840),	-- Tol Dagor
 						i(159129),	-- Flamecaster Botefeux
@@ -85,7 +82,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {
 					e(2097, {	-- The Sand Queen
@@ -101,9 +98,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2098, {	-- Jes Howlis
-						["crs"] = {
-							127484,	-- Jes Howlis
-						},
+						["crs"] = { 127484 },	-- Jes Howlis
 						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
@@ -115,9 +110,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2099, {	-- Knight Captain Valyri
-						["crs"] = {
-							127490,	-- Knight Captain Valyri
-						},
+						["crs"] = { 127490 },	-- Knight Captain Valyri
 						["g"] = {
 							i(159441),	-- Valyri's Fire-Proof Bracers
 							i(159389),	-- Flint-Linked Wristguards
@@ -131,9 +124,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2096, {	-- Overseer Korgus
-						["crs"] = {
-							127503,	-- Overseer Korgus
-						},
+						["crs"] = { 127503 },	-- Overseer Korgus
 						["g"] = {
 							ach(12841),	-- Heroic: Tol Dagor
 							i(159129),	-- Flamecaster Botefeux
@@ -170,9 +161,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2098, {	-- Jes Howlis
-						["crs"] = {
-							127484,	-- Jes Howlis
-						},
+						["crs"] = { 127484 },	-- Jes Howlis
 						["g"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
@@ -184,9 +173,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2099, {	-- Knight Captain Valyri
-						["crs"] = {
-							127490,	-- Knight Captain Valyri
-						},
+						["crs"] = { 127490 },	-- Knight Captain Valyri
 						["g"] = {
 							ach(12457),	-- Remix to Ignition
 							i(159441),	-- Valyri's Fire-Proof Bracers
@@ -201,9 +188,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2096, {	-- Overseer Korgus
-						["crs"] = {
-							127503,	-- Overseer Korgus
-						},
+						["crs"] = { 127503 },	-- Overseer Korgus
 						["g"] = {
 							ach(12842),	-- Mythic: Tol Dagor
 							ach(12462),	-- Shot Through the Heart
