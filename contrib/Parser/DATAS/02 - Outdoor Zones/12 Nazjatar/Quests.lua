@@ -295,12 +295,15 @@ _.Zones =
 					["questID"] = 55833,
 					["isDaily"] = true,
 					["qgs"] = {
+						155940,	-- Enizo (alliance)
 						151618,	-- Asme Seapearl (horde)
 					},
 					["coords"] = {
+						{ 37.7, 55.4, 1355 },	-- alliance
 						{ 50.9, 65.3, 1355 },	-- horde
 					},
 					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
 						56179,	-- The Needs of the People (horde)
 					},
 				},
@@ -1009,14 +1012,17 @@ _.Zones =
 				{	-- Requisition: A Few Spiral Leaf
 					["questID"] = 55725,
 					["isDaily"] = true,
-					["sourceQuests"] = {
-						56179,	-- The Needs of the People (horde)
-					},
 					["qgs"] = {
-						151614,	-- Nevin Tideheart
+						151763,	-- Isla (alliance)
+						151614,	-- Nevin Tideheart (horde)
 					},
 					["coords"] = {
-						{ 50.4, 66.2, 1355 },
+						{ 37.7, 55.3, 1355 },	-- alliance
+						{ 50.4, 66.2, 1355 },	-- horde
+					},
+					["sourceQuests"] = {
+						56166,	-- The Needs of the People (alliance)
+						56179,	-- The Needs of the People (horde)
 					},
 				},
 				{	-- Requisition: More Starfish
@@ -1367,6 +1373,13 @@ _.Zones =
 					["coord"] = { 50.6, 24.1, 1355 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55799,	-- The Tide Turns
+				},
+				{	-- The Eternal Palace: We Can Make It Stronger...
+					["questID"] = 56348,
+					["qg"] = 154257,	-- Instructor Ulooaka
+					["coord"] = { 37.9, 52.9, 1355 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 56347,	-- An Abyssal Opportunity
 				},
 				{	-- The Eternal Palace: We Can Make It Stronger...
 					["questID"] = 56352,

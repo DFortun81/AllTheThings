@@ -239,6 +239,13 @@ _.Zones =
 						["questID"] = 55896,
 						["isWQ"] = 120,
 					},
+					{	-- Work Order: Abyssal-Fried Rissole
+						["questID"] = 56795,
+						["isWQ"] = 120,
+						["g"] = {
+							i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
+						},
+					},
 					{	-- Zoko, Her Iron Defender
 						["questID"] = 55894,
 						["isWQ"] = 120,
