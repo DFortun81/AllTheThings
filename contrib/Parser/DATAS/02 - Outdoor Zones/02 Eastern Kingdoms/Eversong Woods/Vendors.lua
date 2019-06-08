@@ -36,6 +36,7 @@ _.Zones =
 							i(64914),	-- Shroud of Silvermoon
 							i(64915),	-- Cape of Silvermoon
 							i(64916),	-- Mantle of Silvermoon
+							i(67535),	-- Silvermoon Satchel
 							i(45585),	-- Silvermoon City Tabard
 						},
 					}),

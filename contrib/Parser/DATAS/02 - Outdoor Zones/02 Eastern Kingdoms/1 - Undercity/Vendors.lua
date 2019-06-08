@@ -19,6 +19,7 @@ _.Zones =
 						i(64920),	-- Shroud of Undercity
 						i(64921),	-- Cape of Undercity
 						i(64922),	-- Mantle of Undercity
+						i(67529),	-- Undercity Satchel
 						i(45583)	-- Undercity Tabard
 					}),
 					n(3522,  {	-- Constance Brisboise <Apprentice Clothier>

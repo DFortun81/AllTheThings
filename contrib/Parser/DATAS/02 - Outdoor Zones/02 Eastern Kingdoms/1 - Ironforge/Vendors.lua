@@ -70,6 +70,7 @@ _.Zones =
 						i(64898),	-- Shroud of Ironforge
 						i(64899),	-- Cape fo Ironforge
 						i(64900),	-- Mantle of Ironforge
+						i(67258),	-- Ironforge Satchel
 						i(45577),	-- Ironforge Tabard
 					},
 				}),
@@ -294,6 +295,7 @@ _.Zones =
 						i(64895),	-- Mantle of Gnomeregan
 						i(64896),	-- Cape of Gnomeregan
 						i(64897),	-- Shroud of Gnomeregan
+						i(67530),	-- Gnomeregan Satchel
 						i(45578),	-- Gnomeregan Tabard
 					},
 				}),

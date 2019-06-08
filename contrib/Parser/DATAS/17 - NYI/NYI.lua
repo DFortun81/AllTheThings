@@ -1431,6 +1431,7 @@ _.NeverImplemented =
 		filter(113, {	-- Bags
 			un(1, i(130943)),	-- Reusable Tote Bag
 			un(1, i(166699)),	-- Desert Rucksack
+			un(1, i(38307)),	-- Crafty's Bottomless Inscription Bag
 		}),
 		n(-650, {	-- Quest Item
 			un(1, i(142362)),	-- zzz old fel-etched bone

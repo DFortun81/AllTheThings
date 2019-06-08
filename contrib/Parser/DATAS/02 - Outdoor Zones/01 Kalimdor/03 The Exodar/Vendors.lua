@@ -255,6 +255,7 @@ _.Zones =
 						i(64889),	-- Mantle of Exodar
 						i(64890),	-- Cape of Exodar
 						i(64891),	-- Shroud of Exodar
+						i(67527),	-- Exodar Satchel
 						i(45580),	-- Exodar Tabard
 					}),
 					na(16767, {	-- Neii <Tailoring Supplies>
