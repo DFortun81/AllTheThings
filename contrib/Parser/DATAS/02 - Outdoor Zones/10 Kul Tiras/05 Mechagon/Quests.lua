@@ -234,11 +234,21 @@ _.Zones =
 						["coord"] = { 55.7, 60.2, 1462 },
 						["sourceQuest"] = 55995,	-- We Can Fix It
 					},
-					{	-- Drive It Away Today -- TODO:: need more info. Part of "Making the Mount" achievement
+					{	-- Drive It Away Today
 						["questID"] = 55622,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 55753,	-- Knock His Bot Off
 						["g"] = {
+							ach(13791),	-- Making The Mount
 							i(168827),	-- Scrapforged Mechaspider
 						},
+					},
+					{	-- Emission Free
+						["questID"] = 56175,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 54083,	-- Grease The Wheels
 					},
 					{	-- Energized Lighting Cod
 						["itemID"] = 167661,
@@ -258,6 +268,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					},
+					{	-- Factory Refurbished
+						["questID"] = 56168,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 54922,	-- The Nuts and Bolts of it
+					},
 					{	-- First One's Free
 						["questID"] = 55707,
 						["qg"] = 152747,	-- Christy Punchcog
@@ -272,6 +288,12 @@ _.Zones =
 						["qg"] = 151462,	-- Danielle Anglers
 						["coord"] = { 37.0, 47.1, 1462 },
 						["requireSkill"] = 356,	-- Fishing
+					},
+					{	-- Grease The Wheels
+						["questID"] = 54083,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 56168,	-- Factory Refurbished
 					},
 					{	-- Grounded
 						["questID"] = 56380, -- also popped 56330
@@ -296,6 +318,12 @@ _.Zones =
 						["qg"] = 150573,	-- Recycler Kerchunk
 						["coord"] = { 71.4, 38.7, 1462 },
 						["sourceQuest"] = 54929,	-- Ready to Rumble
+					},
+					{	-- Knock His Bot Off
+						["questID"] = 55753,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 55696,	-- Test Drive
 					},
 					{	-- Let's Fish!
 						["questID"] = 56305,
@@ -466,6 +494,18 @@ _.Zones =
 								["criteriaID"] = 38,
 							},
 						},
+					},
+					{	-- Test Drive
+						["questID"] = 55696,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 56175,	-- Emission Free
+					},
+					{	-- The Nuts and Bolts of it
+						["questID"] = 54922,
+						["qg"] = 150573,	-- Recycler Kerchunk
+						["coord"] = { 71.5, 38.7, 1355 },
+						["sourceQuest"] = 55697,	-- A Little Leg Work
 					},
 					{	-- The Other Place
 						["questID"] = 55816,
