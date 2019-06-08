@@ -5,10 +5,11 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(32, {	-- Searing Gorge
-			["g"] = {
+			["groups"] = {
 				n(-16, {	-- Rares
 					n(50876, { 	-- Avis
-						["g"] = {
+						["coord"] = { 71.6, 19.2, 32 },
+						["groups"] = {
 							i(10201),	-- Overlord's Greaves
 							i(9962),	-- Warmonger's Greaves
 							i(10081),	-- Lord's Girdle
@@ -18,7 +19,12 @@ _.Zones =
 						},
 					}), 
 					n(50948, { 	-- Crystalback
-						["g"] = {
+						["coords"] = {
+							{ 66.0, 47.2, 32 },
+							{ 65.2, 45.0, 32 },
+							{ 66.8, 43.8, 32 },
+						},
+						["groups"] = {
 							i(9937),	-- Abjurer's Bands
 							i(10091),	-- Gothic Plate Leggings
 							i(7539),	-- Champion's Leggings
@@ -41,7 +47,21 @@ _.Zones =
 						["modelScale"] = 1.5,
 						["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 						["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-						["g"] = {
+						["coords"] = {
+							{ 73.6, 82.2, 32 },
+							{ 63.6, 60.5, 32 },
+							{ 49.0, 55.5, 32 },
+							{ 49.4, 39.5, 32 },
+							{ 44.0, 33.5, 32 },
+							{ 37.9, 37.4, 32 },
+							{ 40.4, 50.5, 32 },
+							{ 38.9, 66.3, 32 },
+							{ 36.9, 60.0, 32 },
+							{ 33.2, 54.0, 32 },
+							{ 17.8, 38.3, 32 },
+							{ 14.5, 37.0, 32 },
+						},
+						["groups"] = {
 							i(1718),	-- Basilisk Hide Pants
 							i(13109),	-- Blackflame Cape
 							i(13043),	-- Blade of the Titans
@@ -76,7 +96,12 @@ _.Zones =
 						},
 					}),					
 					n(8279, { 	-- Faulty War Golem
-						["g"] = {
+						["coords"] = {
+							{ 58.0, 56.4, 32 },
+							{ 62.2, 59.6, 32 },
+							{ 63.0, 63.0, 32 },
+						},
+						["groups"] = {
 							i(7532),	-- Cabalist Spaulders
 							i(7540),	-- Champion's Helmet
 							i(7543),	-- Champion's Pauldrons
@@ -110,7 +135,8 @@ _.Zones =
 						},
 					}), 
 					n(8282, { 	-- Highlord Mastrogonde
-						["g"] = {
+						["coord"] = { 29.6, 26.0, 32 },
+						["groups"] = {
 							i(10201),	-- Overlord's Greaves
 							i(7538),	-- Champion's Armor
 							i(7528),	-- Cabalist Leggings
@@ -148,7 +174,8 @@ _.Zones =
 						},
 					}), 
 					n(50946, { 	-- Hogzilla
-						["g"] = {
+						["coord"] = { 21.1, 79.5, 32 },
+						["groups"] = {
 							i(9939),	-- Abjurer's Gloves
 							i(9962),	-- Warmonger's Greaves
 							i(9951),	-- Chieftain's Cloak
@@ -171,7 +198,11 @@ _.Zones =
 						},
 					}), 
 					n(8277, { 	-- Rekk'tilac
-						["g"] = {
+						["coords"] = {
+							{ 29.2, 67.8, 32 },
+							{ 31.8, 73.2, 32 },
+						},
+						["groups"] = {
 							i(9964),	-- Warmonger's Leggings
 							i(7532),	-- Cabalist Spaulders
 							i(9937),	-- Abjurer's Bands
@@ -211,7 +242,12 @@ _.Zones =
 						},
 					}), 
 					n(51048, { 	-- Rexxus
-						["g"] = {
+						["coords"] = {
+							{ 42.8, 47.2, 32 },
+							{ 40.4, 50.6, 32 },
+							{ 39.4, 50.6, 32},
+						},
+						["groups"] = {
 							i(10092),	-- Gothic Plate Spaulders
 							i(7543),	-- Champion's Pauldrons
 							i(7531),	-- Cabalist Boots
@@ -228,7 +264,8 @@ _.Zones =
 						},
 					}), 
 					n(8281, { 	-- Scald
-						["g"] = {
+						["coord"] = { 41.0, 57.6, 32 },
+						["groups"] = {
 							i(9905),	-- Royal Blouse
 							i(9913),	-- Royal Gown
 							i(10207),	-- Overlord's Crown
@@ -262,7 +299,8 @@ _.Zones =
 						},
 					}), 
 					n(51002, { 	-- Scorpoxx
-						["g"] = {
+						["coord"] = { 18.4, 38.8, 32 },
+						["groups"] = {
 							i(7523),	-- Gossamer Shoulderpads
 							i(10069),	-- Righteous Bracers
 							i(7521),	-- Gossamer Gloves
@@ -279,7 +317,11 @@ _.Zones =
 						},
 					}),
 					n(8280, { 	-- Shleipnarr
-						["g"] = {
+						["coords" ]= {
+							{ 57.4, 43.4, 32 },
+							{ 56.6, 46.6, 32 },
+						},
+						["groups"] = {
 							i(7539),	-- Champion's Leggings
 							i(7532),	-- Cabalist Spaulders
 							i(7540),	-- Champion's Helmet
@@ -316,7 +358,9 @@ _.Zones =
 						},
 					}), 
 					n(8283, { 	-- Slave Master Blackheart
-						["g"] = {
+						["coord"] = { 38.0, 44.4, 32 },
+						["description"] = "This rare is located inside the Slag Pit caves and shares a spawn with Overseer Maltorius.",
+						["groups"] = {
 							i(10060),	-- Duskwoven Cape
 							i(10202),	-- Overlord's Vambraces
 							i(9952),	-- Chieftain's Gloves
@@ -359,7 +403,8 @@ _.Zones =
 						},
 					}), 
 					n(50846, { 	-- Slavermaw
-						["g"] = {
+						["coord"] = { 58.7, 22.5, 32 },
+						["groups"] = {
 							i(10185),	-- Swashbuckler's Cape
 							i(9924),	-- Tracker's Tunic
 							i(7529),	-- Cabalist Helm
@@ -370,7 +415,9 @@ _.Zones =
 						},
 					}), 
 					n(8278, { 	-- Smoldar
-						["g"] = {
+						["coord"] = { 49.1, 37.4, 32 },
+						["description"] = "This rare is located in the Slag Pit caves, enter the northern most entrance from the Cauldron.",
+						["groups"] = {
 							i(10080),	-- Lord's Gauntlets
 							i(9952),	-- Chieftain's Gloves
 							i(9955),	-- Chieftain's Shoulders
@@ -417,7 +464,8 @@ _.Zones =
 						},
 					}), 
 					n(51010, { 	-- Snips
-						["g"] = {
+						["coord"] = { 35.0, 52.0, 32 },
+						["groups"] = {
 							i(9945),	-- Abjurer's Sash
 							i(9962),	-- Warmonger's Greaves
 							i(10191),	-- Crusader's Armguards
