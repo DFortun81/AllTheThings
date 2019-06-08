@@ -5,10 +5,11 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			["g"] = {
+			["groups"] = {
 				n(-16, {	-- Rares
 					n(520, { 	-- Brack
-						["g"] = {
+						["coord"] = { 28.8, 72.8, 52 },
+						["groups"] = {
 							i(9786),	-- Raider's Cloak
 							i(9763),	-- Cadet Leggings
 							i(9756),	-- Gypsy Trousers
@@ -39,7 +40,13 @@ _.Zones =
 						},
 					}),
 					n(596, { 	-- Brainwashed Noble
-						["g"] = {
+						["coords"] = {
+							{ 41.0, 76.6, 52 },
+							{ 42.6, 76.6, 52 },
+							{ 42.8, 79.0, 52 },
+						},
+						["description"] = "Located inside the tunnels leading to the Deadmines.",
+						["groups"] = {
 							i(9763),	-- Cadet Leggings
 							i(6553),	-- Bard's Trousers
 							i(9756),	-- Gypsy Trousers
@@ -72,7 +79,13 @@ _.Zones =
 						},
 					}),
 					n(573, { 	-- Foe Reaper 4000
-						["g"] = {
+						["coords"] = {
+							{ 54.6, 32.6, 52 },
+							{ 44.0, 36.0, 52 },
+							{ 38.8, 51.6, 52 },
+							{ 62.6, 61.6, 52 },
+						},
+						["groups"] = {
 							i(6269),	-- Pioneer Trousers
 							i(6267),	-- Disciple's Pants
 							i(6337),	-- Infantry Leggings
@@ -97,19 +110,23 @@ _.Zones =
 						},
 					}),
 					n(626, {	-- Foreman Thistlenettle
-						["g"] = {
+						["coord"] = { 42.2, 83.0, 52 },
+						["description"] = "Located inside the tunnels leading to the Deadmines.",
+						["groups"] = {
 							i(2168),	-- Corpse Rompers
 							i(2167),	-- Foreman's Gloves
 							i(2166),	-- Foreman's Leggings
 						},
 					}),
 					n(115, {	-- Harvest Reaper
-						["g"] = {
+						["coord"] = { 63.6, 62.2, 52 },
+						["groups"] = {
 							i(820),	-- Slicer Blade
 						},
 					}),
 					n(572, { 	-- Leprithus
-						["g"] = {
+						["coord"] = { 42.6, 28.8, 52 },
+						["groups"] = {
 							i(6267),	-- Disciple's Pants
 							i(6269),	-- Pioneer Trousers
 							i(6337),	-- Infantry Leggings
@@ -133,7 +150,14 @@ _.Zones =
 						},
 					}),
 					n(599, { 	-- Marisa du'Paige
-						["g"] = {
+						["coords"] = {
+							{ 52.8, 54.6, 52 },
+							{ 56.2, 67.8, 52 },
+							{ 41.4, 56.6, 52 },
+							{ 29.6, 61.4, 52 },
+						},
+						["description"] = "Located inside the tunnels leading to the Deadmines.",
+						["groups"] = {
 							i(9756),	-- Gypsy Trousers
 							i(9747),	-- Simple Britches
 							i(9763),	-- Cadet Leggings
@@ -167,7 +191,8 @@ _.Zones =
 						},
 					}),
 					n(1424, { 	-- Master Digger
-						["g"] = {
+						["coord"] = { 46.2, 18.6, 52 },
+						["groups"] = {
 							i(68759),	-- Imbued Gypsy Cloak
 							i(68760),	-- Imbued Infantry Gauntlets
 							i(6337),	-- Infantry Leggings
@@ -197,7 +222,11 @@ _.Zones =
 						},
 					}),			
 					n(506, { 	-- Sergeant Brashclaw
-						["g"] = {
+						["coords"] = {
+							{ 64.0, 73.8, 52 },
+							{ 60.0, 74.8, 52 },
+						},
+						["groups"] = {
 							i(6512),	-- Disciple's Robe
 							i(6268),	-- Pioneer Tunic
 							i(6266),	-- Disciple's Vest
@@ -226,7 +255,11 @@ _.Zones =
 						},
 					}),
 					n(519, { 	-- Slark
-						["g"] = {
+						["coords"] = {
+							{ 56.0, 9.8, 52 },
+							{ 49.8, 10.4, 52 },
+						},
+						["groups"] = {
 							i(68752),	-- Imbued Infantry Belt
 							i(68743),	-- Imbued Infantry Cloak
 							i(68744),	-- Imbued Pioneer Cloak
@@ -256,7 +289,14 @@ _.Zones =
 						},
 					}),
 					n(462, { 	-- Vultros
-						["g"] = {
+						["coords"] = {
+							{ 58.0, 20.2, 52 },
+							{ 54.6, 24.6, 52 },
+							{ 49.2, 26.8, 52 },
+							{ 49.0, 33.6, 52 },
+							{ 56.0, 34.4, 52 },
+						},
+						["groups"] = {
 							i(68743),	-- Imbued Infantry Cloak
 							i(68744),	-- Imbued Pioneer Cloak
 							i(68749),	-- Imbued Disciple's Bracers
