@@ -35,6 +35,7 @@ _.WorldDrops =
 					{	-- Shamanic Amulet
 						["itemID"] = 82115,	-- Shamanic Amulet
 					},
+					i(87468),	-- Shiny Hozen Rock Holder
 				}),
 				n(-321, {	-- Shoulder
 					i(87489),	-- Fletcher's Sharpening Shoulders

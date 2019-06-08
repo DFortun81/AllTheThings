@@ -12,17 +12,21 @@ _.Zones =
 					a(faction(1037, {	-- Alliance Vanguard
 						["achievementID"] = 1012,	-- The Winds of the North
 						["groups"] = {
-							a(n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-								i(44937),	-- Plans: Titanium Plating
-								i(44503),	-- Schematic: Mekgineer's Chopper
-								i(38464),	-- Gnomish Magician's Quill
-								i(38455),	-- Hammer of hte Alliance Vanguard
-								i(38457),	-- Sawed-Off Hand Cannon
-								i(38465),	-- Vanguard Soldier's Dagger
-								i(38463),	-- Lordaeron's Resolve
-								i(38459),	-- Orb of the EAstern Kingdons
-								i(38453),	-- Shield of the Lion-Hearted
-							})),
+							n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+								["races"] = ALLIANCE_ONLY,
+								["coord"] = { 57.7, 66.4, 114 },
+								["groups"] = {
+									i(44937),	-- Plans: Titanium Plating
+									i(44503),	-- Schematic: Mekgineer's Chopper
+									i(38464),	-- Gnomish Magician's Quill
+									i(38455),	-- Hammer of the Alliance Vanguard
+									i(38457),	-- Sawed-Off Hand Cannon
+									i(38465),	-- Vanguard Soldier's Dagger
+									i(38463),	-- Lordaeron's Resolve
+									i(38459),	-- Orb of the Eastern Kingdons
+									i(38453),	-- Shield of the Lion-Hearted
+								},
+							}),
 							a(faction(1050, {	-- Valiance Expedition
 								["creatureID"] = 25250,	-- General Arlos
 								["groups"] = {
@@ -33,15 +37,19 @@ _.Zones =
 											recipe(57421),	-- Northern Stew
 										},
 									}),
-									a(n(35131, {	-- Durgan Thunderbeak <Gryphon Keeper>
-										i(25473), 	-- Swift Blue Gryphon Mount
-										i(25527),	-- Swift Red Gryphon Mount
-										i(25528),	-- Swift Green Gryphon Mount
-										i(25529),	-- Swift Purple Gryphon Mount
-										i(25470),	-- GoldenGryphon Mount
-										i(25471),	-- Ebon Gryphon Mount
-										i(25472),	-- Snowy Gryphon Mount
-									})),
+									n(35131, {	-- Durgan Thunderbeak <Gryphon Keeper>
+										["races"] = ALLIANCE_ONLY,
+										["coord"] = { 58.9, 68.1, 114 },
+										["groups"] = {
+											i(25473), 	-- Swift Blue Gryphon Mount
+											i(25527),	-- Swift Red Gryphon Mount
+											i(25528),	-- Swift Green Gryphon Mount
+											i(25529),	-- Swift Purple Gryphon Mount
+											i(25470),	-- GoldenGryphon Mount
+											i(25471),	-- Ebon Gryphon Mount
+											i(25472),	-- Snowy Gryphon Mount
+										},
+									}),
 								},
 							})),
 						},
