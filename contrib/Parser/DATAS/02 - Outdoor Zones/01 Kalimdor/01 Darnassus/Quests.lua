@@ -288,7 +288,7 @@ _.Zones =
 						["groups"] = {
 							{
 								["achievementID"] = 5842,
-								["criteriaID"] = 3,
+								["criteriaID"] = 2,
 							},
 							currency(81),	-- Epicurean's Award
 						},
