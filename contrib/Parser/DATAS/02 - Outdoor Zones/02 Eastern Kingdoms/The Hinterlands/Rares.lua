@@ -5,10 +5,15 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			["g"] = {
+			["groups"] = {
 				n(-16, {	-- Rares
 					n(8215, { 	-- Grimungous
-						["g"] = {
+						["coords"] = {
+							{ 71.6, 62.6, 26 },
+							{ 73.8, 55.8, 26 },
+							{ 78.6, 50.8, 26 },
+						},
+						["groups"] = {
 							i(7412),	-- Infiltrator Gloves
 							i(6609),	-- Sage's Cloth
 							i(10409),	-- Banded Boots
@@ -58,7 +63,12 @@ _.Zones =
 						},
 					}), 
 					n(8213, { 	-- Ironback
-						["g"] = {
+						["coords"] = {
+							{ 80.2, 58.2, 26 },
+							{ 81.0, 55.4, 26 },
+							{ 79.4, 56.6, 26 },
+						},
+						["groups"] = {
 							i(9839),	-- Banded Gauntlets
 							i(7355),	-- Elder's Bracers
 							i(10288),	-- Sage's Circlet
@@ -97,8 +107,9 @@ _.Zones =
 						},
 					}), 
 					n(8214, { 	-- Jalinde Summerdrake
+						["coord"] = { 34.6, 55.2, 26 },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(9866),	-- Renegade Chestguard
 							i(9855),	-- Archer's Belt
 							i(9846),	-- Conjurer's Bracers
@@ -139,7 +150,8 @@ _.Zones =
 						},
 					}), 
 					n(8217, { 	-- Mith'rethis the Enchanter
-						["g"] = {
+						["coord"] = { 64.8, 81.6, 26 },
+						["groups"] = {
 							i(7421),	-- Phalanx Gauntlets
 							i(9836),	-- Banded Armor
 							i(9847),	-- Conjurer's Cloak
@@ -188,7 +200,8 @@ _.Zones =
 						},
 					}), 
 					n(8211, { 	-- Old Cliff Jumper
-						["g"] = {
+						["coord"] = { 13.6, 53.8, 26 },
+						["groups"] = {
 							i(6607),	-- Dervish Leggings
 							i(6603),	-- Dervish Tunic
 							i(10404),	-- Durable Belt
@@ -224,12 +237,29 @@ _.Zones =
 						},
 					}), 
 					n(107617, {	-- Ol' Muddle
-						["g"] = {
+						["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
+						["coords"] = {
+							{ 44.4, 64.6, 26 },
+							{ 44.0, 59.6, 26 },
+							{ 44.6, 53.6, 26 },
+							{ 49.8, 57.2, 26 },
+							{ 52.4, 51.0, 26 },
+							{ 54.8, 46.2, 26 },
+							{ 61.0, 50.4, 26 },
+							{ 64.6, 42.0, 26 },
+							{ 70.2, 51.2, 26 },
+							{ 72.8, 50.0, 26 },
+							{ 76.8, 49.8, 26 },
+							{ 67.8, 57.4, 26 },
+							{ 64.0, 54.6, 26 },
+						},
+						["groups"] = {
 							i(9846),	-- Conjurer's Bracers
 						},
 					}),
 					n(8210, { 	-- Razortalon
-						["g"] = {
+						["coord"] = { 66.2, 53.6, 26 },
+						["groups"] = {
 							i(10408),	-- Banded Helm
 							i(9820),	-- Durable Boots
 							i(10289),	-- Durable Hat
@@ -279,7 +309,11 @@ _.Zones =
 						},
 					}), 
 					n(8216, { 	-- Retherokk the Berserker
-						["g"] = {
+						["coords"] = {
+							{ 47.6, 66.4, 26 },
+							{ 48.6, 68.4, 26 },
+						},
+						["groups"] = {
 							i(7421),	-- Phalanx Gauntlets
 							i(7413),	-- Infiltrator Cap
 							i(9836),	-- Banded Armor
@@ -327,7 +361,8 @@ _.Zones =
 						},
 					}), 
 					n(8212, { 	-- The Reak
-						["g"] = {
+						["coord"] = { 57.8, 43.6, 26 },
+						["groups"] = {
 							i(9837),	-- Banded Bracers
 							i(9839),	-- Banded Gauntlets
 							i(7355),	-- Elder's Bracers
@@ -366,7 +401,8 @@ _.Zones =
 						},
 					}), 
 					n(8218, { 	-- Witherheart the Stalker
-						["g"] = {
+						["coord"] = { 39.8, 66.6, 26 },
+						["groups"] = {
 							i(7357),	-- Elder's Hat
 							i(7417),	-- Phalanx Boots
 							i(9865),	-- Renegade Bracers
@@ -398,7 +434,8 @@ _.Zones =
 						},
 					}), 
 					n(8219, { 	-- Zul'arek Hatefowler
-						["g"] = {
+						["coord"] = { 24.8, 65.6, 26 },
+						["groups"] = {
 							i(7414),	-- Infiltrator Pants
 							i(7420),	-- Phalanx Headguard
 							i(9857),	-- Archer's Bracers
