@@ -49,37 +49,30 @@ _.Zones =
 					}),
 					ach(10059, {	-- Ain't No Mountain High Enough
 						{	-- Criteria 1 — The Rivermane Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 1,	-- The Rivermane Tribe
 							["sourceQuests"] = { 39487 },	-- Crystal Fury
 						},
 						{	-- Criteria 2 — Riverbend
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 2,	-- Riverbend
 							["sourceQuests"] = { 38909 },	-- Get to High Ground
 						},
 						{	-- Criteria 3 — The Skyhorn Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 3,	-- The Skyhorn Tribe
 							["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
 						},
 						{	-- Criteria 4 — The Bloodtotem Tribe
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 4,	-- The Bloodtotem Tribe
 							["sourceQuests"] = { 39426 },	-- Blood Debt
 						},
 						{	-- Criteria 5 — Huln's War
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 5,	-- Huln's War
 							["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
 						},
 						{	-- Criteria 6 — Secrets of Highmountain
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 6,	-- Secrets of Highmountain
 							["sourceQuests"] = { 39579 },	-- The Backdoor
 						},
 						{	-- Criteria 7 — Battle of Snowblind Mesa
-							["achievementID"] = 10059,	-- Ain't No Mountain High Enough
 							["criteriaID"] = 7,	-- Battle of Snowblind Mesa
 							["sourceQuests"] = { 39780 },	-- The Underking
 						},
@@ -91,7 +84,6 @@ _.Zones =
 						["collectible"] = false,
 						["g"] = {
 							{	-- Criteria 4 — Hammer of Khaz'goroth
-								["achievementID"] = 10877,	-- Pillars of Creation
 								["criteriaID"] = 4,	-- Hammer of Khaz'goroth
 								["sourceQuests"] = { 42454 },	-- The Hammer of Khaz'goroth
 							},

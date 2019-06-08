@@ -133,6 +133,10 @@ _.Zones =
 			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
+			q(28562, {	-- Hero's Call: Westfall!
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(28565, {	-- Hero's Call: Wetlands!
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,

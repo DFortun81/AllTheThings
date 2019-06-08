@@ -24,6 +24,60 @@ _.Zones =
 			},
 			["lvl"] = 98,
 			["g"] = {
+				n(-4,     {	-- Achievement
+					ach(10877, {	-- Pillars of Creation
+						["collectible"] = false,
+						["g"] = {
+							{	-- Criteria 1 — Aegis of Aggramar
+								["criteriaID"] = 1,	-- Aegis of Aggramar
+								["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
+							},
+						},
+					}),
+					ach(10790, {	-- Vrykul Story, Bro
+						{	-- Criteria 1 — Greymane's Gambit
+							["criteriaID"] = 1,	-- Greymane's Gambit
+							["sourceQuests"] = {
+								39800,	-- Greymane's Gambit (Alliance)
+								39801,	-- The Splintered Fleet (Horde)
+							},
+						},
+						{	-- Criteria 2 — The Aftermath
+							["criteriaID"] = 2,	-- The Aftermath
+							["sourceQuests"] = {
+								38362,	-- A Grim Trophy (Horde)
+								38060,	-- Signal Boost (Alliance)
+							},
+						},
+						{	-- Criteria 3 — The Trial of Might
+							["criteriaID"] = 3,	-- The Trial of Might
+							["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
+						},
+						{	-- Criteria 4 — The Trial of Will
+							["criteriaID"] = 4,	-- The Trial of Will
+							["sourceQuests"] = { 38624 },	-- Cry Thunder!
+						},
+						{	-- Criteria 5 — The Trial of Valor
+							["criteriaID"] = 5,	-- The Trial of Valor
+							["sourceQuests"] = { 38818 },	-- The Final Judgment
+						},
+						{	-- Criteria 6 — To Helheim and Back
+							["criteriaID"] = 6,	-- To Helheim and Back
+							["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
+						},
+						{	-- Criteria 7 — Secrets of the Shieldmaidens
+							["criteriaID"] = 7,	-- Secrets of the Shieldmaidens
+							["sourceQuests"] = {
+								39122,	-- Ending the New Beginning (Alliance)
+								38882,	-- A New Life for Undeath (Horde)
+							},
+						},
+						{	-- Criteria 8 — The Champion of Stormheim
+							["criteriaID"] = 8,	-- The Champion of Stormheim
+							["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
+						},
+					}),
+				}),
 				n(-10067, {	-- Artifacts
 					q(43560, {	-- Audience with the Windlord
 						["qg"] = 92218,	-- Thrymjaris <Mother of the Thorignir>
@@ -46,7 +100,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-169, { 	-- Emissary Quests
+				n(-169,   {	-- Emissary Quests
 					q(42234, {	-- The Valarjar
 						["g"] = {
 							i(157824, {	-- Valarjar Cache
@@ -403,7 +457,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-228, {	-- Flight Paths
+				n(-228,   {	-- Flight Paths
 					fp(1738, {	-- Cullen's Post, Stormheim
 						["coord"] = { 44.8, 59.2 },
 					}),
@@ -443,7 +497,7 @@ _.Zones =
 						["coord"] = { 60.6, 50.8 },
 					}),
 				}),
-				m(649, { 	-- Helheim
+				m(649,    {	-- Helheim
 					["description"] = "|cff66ccffHelheim is the desolate realm of the val'kyr Helya. She created it below the Halls of Valor after having sealed Odyn's fortress in an impregnable barrier. Here, the spirits of the dishonorable spend eternity in an endless futile battle, always seeking glory but never able to attain it. It has recently become connected to Haustvald.|r",
 					["icon"] = "Interface\\Icons\\achievement_boss_helyra",
 					["g"] = {
@@ -597,7 +651,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-25, { 	-- Pet Battle
+				n(-25,    {	-- Pet Battle
 					{	-- Albatross Chick
 						["speciesID"] = 1708,	-- Albatross Chick
 						["crs"] = { 97018 },	-- Albatross Chick
@@ -683,7 +737,7 @@ _.Zones =
 						["description"] = "1. Buy Pungent Vrykul Gamalost from Steward Dayton in Stormheim.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy new Direbeak Hatchling|r",
 					}),
 				}),
-				n(-38, { 	-- Profession
+				n(-38,    {	-- Profession
 					prof(356, {	-- Fishing
 						n(-10067, { 	-- Artifact
 							["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
@@ -915,7 +969,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(-17,    {	-- Quests
 --[[				n(-34, {	-- World Quests					
 							q(43964),	-- A Jarl's Feast
 							q(42067),	-- All Howl, No Bite
@@ -1066,58 +1120,7 @@ _.Zones =
 							q(41936),	-- You Have Been Challenged					
 						}),
 --]]
-					ach(10790, {	-- Vrykul Story, Bro
-						{	-- Criteria 1 — Greymane's Gambit
-							["criteriaID"] = 1,	-- Greymane's Gambit
-							["sourceQuests"] = {
-								39800,	-- Greymane's Gambit (Alliance)
-								39801,	-- The Splintered Fleet (Horde)
-							},
-						},
-						{	-- Criteria 2 — The Aftermath
-							["criteriaID"] = 2,	-- The Aftermath
-							["sourceQuests"] = {
-								38362,	-- A Grim Trophy (Horde)
-								38060,	-- Signal Boost (Alliance)
-							},
-						},
-						{	-- Criteria 3 — The Trial of Might
-							["criteriaID"] = 3,	-- The Trial of Might
-							["sourceQuests"] = { 39597 },	-- The Blessing of the Watchers
-						},
-						{	-- Criteria 4 — The Trial of Will
-							["criteriaID"] = 4,	-- The Trial of Will
-							["sourceQuests"] = { 38624 },	-- Cry Thunder!
-						},
-						{	-- Criteria 5 — The Trial of Valor
-							["criteriaID"] = 5,	-- The Trial of Valor
-							["sourceQuests"] = { 38818 },	-- The Final Judgment
-						},
-						{	-- Criteria 6 — To Helheim and Back
-							["criteriaID"] = 6,	-- To Helheim and Back
-							["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
-						},
-						{	-- Criteria 7 — Secrets of the Shieldmaidens
-							["criteriaID"] = 7,	-- Secrets of the Shieldmaidens
-							["sourceQuests"] = {
-								39122,	-- Ending the New Beginning (Alliance)
-								38882,	-- A New Life for Undeath (Horde)
-							},
-						},
-						{	-- Criteria 8 — The Champion of Stormheim
-							["criteriaID"] = 8,	-- The Champion of Stormheim
-							["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
-						},
-					}),
-					ach(10877, {	-- Pillars of Creation
-						["collectible"] = false,
-						["g"] = {
-							{	-- Criteria 1 — Aegis of Aggramar
-								["criteriaID"] = 1,	-- Aegis of Aggramar
-								["sourceQuests"] = { 43349 },	-- The Aegis of Aggramar
-							},
-						},
-					}),
+					
 					ach(10793, {	-- What a Ripoff!
 						["sourceQuests"] = { 42483 },	-- Put it All on Red
 					}),
@@ -2222,7 +2225,7 @@ _.Zones =
 					SOON™
 					--]]
 				}),
-				n(-16, {	-- Rares
+				n(-16,    {	-- Rares
 					n(91874,  {	-- Bladesquall
 						["questID"] = 38431,
 						["coord"] = { 46.0, 77.7, 634 },
@@ -2566,7 +2569,7 @@ _.Zones =
 				--	n(100223, { 	-- Vrykul Earthshaper Spirit	}), 
 				--	n(100224, { 	-- Vrykul Earthmaiden Spirit	}), --]]
 				}),
-				n(-2,  {	-- Vendors
+				n(-2,     {	-- Vendors
 					n(98367, {	-- Tigrid the Charmer <Enchantress>
 						i(124440, {	-- Arkhana
 							i(128617),	-- Formula: Enchant Gloves - Legion Herbalism
@@ -2602,7 +2605,7 @@ _.Zones =
 						i(129367),	-- Vrykul Toy Boat Kit
 					}),
 				}),
-				n(-34, {	-- World Quests
+				n(-34,    {	-- World Quests
 					n(-322, {	-- Cloak
 						i(134202),	-- Stormsky Cloak
 					}),
@@ -2709,7 +2712,7 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 					},
 				}),				
-				n(0,   {	-- Zone Drops
+				n(0,      {	-- Zone Drops
 					["g"] = {
 						i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 						i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
@@ -2991,44 +2994,42 @@ _.Zones =
 						107803,	-- Wild Plains Runehorn
 					},
 				}),
-				n(-40, {	-- Legacy
-					["g"] = {
-						n(-4, {	-- Achievements
-							un(2, ach(11139, {	-- Field Medic!
-								["g"] = {
-									un(39, title(340, {	-- TITLE: Field Medic!
-										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["g"] = {
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
-												["itemID"] = 139531,		-- Crumpled Request
-												--["questID"] = 42058,		-- Crumpled Request (Quest)
-												["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
-												["qgs"] = {108030}
-											},
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 13, 		-- Fevered Request (Criteria)
-												["itemID"] = 139529,		-- Fevered Request
-												--["questID"] = 41985,		-- Fevered Request (Quest)
-												["description"] = "Murlocs at Morheim (eastern Stormheim).",
-												["qgs"] = {98498, 98500, 98501, 98502, 110258}
-											},
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 14, 		-- Singed Letter (Criteria)
-												["itemID"] = 139530,		-- Singed Letter
-												--["questID"] = 42215,		-- Singed Letter (Quest)
-												["description"] = "Southern Stormheim.",
-												["qgs"] = {116600}
-											}
+				n(-40,    {	-- Legacy
+					n(-4, {	-- Achievements
+						un(2, ach(11139, {	-- Field Medic!
+							["g"] = {
+								un(39, title(340, {	-- TITLE: Field Medic!
+									["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+									["g"] = {
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
+											["itemID"] = 139531,		-- Crumpled Request
+											--["questID"] = 42058,		-- Crumpled Request (Quest)
+											["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
+											["qgs"] = {108030}
 										},
-									})),
-								},
-							})),
-						}),
-					},
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 13, 		-- Fevered Request (Criteria)
+											["itemID"] = 139529,		-- Fevered Request
+											--["questID"] = 41985,		-- Fevered Request (Quest)
+											["description"] = "Murlocs at Morheim (eastern Stormheim).",
+											["qgs"] = {98498, 98500, 98501, 98502, 110258}
+										},
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 14, 		-- Singed Letter (Criteria)
+											["itemID"] = 139530,		-- Singed Letter
+											--["questID"] = 42215,		-- Singed Letter (Quest)
+											["description"] = "Southern Stormheim.",
+											["qgs"] = {116600}
+										}
+									},
+								})),
+							},
+						})),
+					}),
 				}),
 			},
 		}),	
