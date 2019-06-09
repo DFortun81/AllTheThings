@@ -116,9 +116,14 @@ _.Zones =
 				qa(87, {	-- Goldtooth
 					["qg"] = 247,	-- 
 				}),
-				qa(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963)
-					["qg"] = 42256,	-- 
+]]--
+				q(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963, 42256)
+					["qg"] = 240,	-- Marshal Dughan
+					["coord"] = { 42.1, 65.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
+--[[
 				qa(60, {	-- Kobold Candles
 					["qg"] = 253,	-- 
 				}),
@@ -173,6 +178,17 @@ _.Zones =
 						i(131193),	-- 
 					},
 				}),
+				--[[
+				q(2158, {	-- Rest and Relaxation (replaced with previous quest)
+					["qg"] = 6774,	-- 
+					["races"] = ALLIANCE_ONLY,
+				}),
+				]]--
+				q(37112, {	-- Rest and Relaxation -- also triggered 2158. Possible human-only variant?
+					["qg"] = 6774,	-- Falkhaan Isenstrider
+					["coord"] = { 45.3, 49.0, 37 },
+					["races"] = ALLIANCE_ONLY, -- possibly non-human races?
+				}),
 --[[
 				o(56, {	-- Rolf's corpse
 					qa(71),	-- Report to Thomas
@@ -200,14 +216,16 @@ _.Zones =
 				qa(114, {	-- The Escape
 					["qg"] = 256,	-- 
 				}),
-				qa(62, {	-- The Fargodeep Mine
-					["qg"] = 240,	-- 
-				}),
 				qa(76, {	-- The Jasperlode Mine
 					["qg"] = 240,	-- 
 				}),
 --]]
 
+				q(62, {	-- The Fargodeep Mine
+					["qg"] = 240,	-- Marshal Dughan
+					["coord"] = { 42.1, 65.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				{	-- The Battle For Broken Shore
 					["questID"] = 42740,
 					["races"] = ALLIANCE_ONLY,

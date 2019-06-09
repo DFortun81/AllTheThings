@@ -7,224 +7,415 @@ _.Zones =
 		m(37, {	-- Elwynn Forest
 			m(425, {	-- Northshire
 				n(-17, {	-- Quests
-					qa(28762, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						--["races"] = {11},	-- Draenei (assuming this is improperly noted in wowhead)
-						["classes"] = {2},	-- Paladin
+					q(28762, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
 					}),
 					q(29078, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["races"] = {3,4,7,11,22,25},	-- non-Human Alliance races
+						["qg"] = 197,	-- Marshal McBrideMarshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-Human Alliance races
 					}),
-					qa(28767, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {3},	-- Hunter
+					q(28767, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
 					}),
-					qa(28766, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {1},	-- Warrior
+					q(28766, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
 					}),
-					qa(28763, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {5},	-- Priest
+					q(28763, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
 					}),
-					qa(28764, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {4},	-- Rogue
+					q(28764, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
 					}),
-					qa(28757, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {8},	-- Mage
+					q(28757, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
 					}),
-					qa(28765, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {9},	-- Warlock
+					q(28765, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
 					}),
-					qa(31139, {	-- Beating Them Back!
-						["qg"] = 197,	-- 
-						["classes"] = {10},	-- Monk
+					q(31139, {	-- Beating Them Back!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 10 },	-- Monk
 					}),
-					qa(26389, {	-- Blackrock Invasion
-						["qg"] = 197,	-- 
+					q(26389, {	-- Blackrock Invasion
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							28819,	-- The Rear is Clear (human paladin)
+							28822,	-- The Rear is Clear (human warlock)
+							31145,	-- The Rear is Clear (human monk)
+							28821,	-- The Rear is Clear (human rogue)
+							28817,	-- The Rear is Clear (human hunter)
+							28823,	-- The Rear is Clear (human warrior)
+							28820,	-- The Rear is Clear (human priest)
+							28818,	-- The Rear is Clear (human mage)
+							29083,	-- The Rear is Clear (non-human)
+						},
 					}),
-					qa(26390, {	-- Ending the Invasion!
-						["qg"] = 197,	-- 
+					q(26390, {	-- Ending the Invasion!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26389,	-- Blackrock Invasion
 					}),
-					qa(26391, {	-- Extinguishing Hope
-						["qg"] = 9296,	-- 
+					q(26391, {	-- Extinguishing Hope
+						["qg"] = 9296,	-- Milly Osworth
+						["coord"] = { 33.3, 54.6, 425 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							28819,	-- The Rear is Clear (human paladin)
+							28822,	-- The Rear is Clear (human warlock)
+							31145,	-- The Rear is Clear (human monk)
+							28821,	-- The Rear is Clear (human rogue)
+							28817,	-- The Rear is Clear (human hunter)
+							28823,	-- The Rear is Clear (human warrior)
+							28820,	-- The Rear is Clear (human priest)
+							28818,	-- The Rear is Clear (human mage)
+							29083,	-- The Rear is Clear (non-human)
+						},
 					}),
---[[						qa(28811, {	-- Fear No Evil (for different classes? cannot verify through wowhead)
-						["qg"] = 951,	-- 
+					q(28811, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 28787,	-- Join the Battle!
 					}),
-					qa(28812, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28812, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuest"] = 28788,	-- Join the Battle!
 					}),
-					qa(28810, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28810, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 28786,	-- Join the Battle!
 					}),
-					qa(28813, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28813, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 28789,	-- Join the Battle!
 					}),
-					qa(28806, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28806, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 28780,	-- Join the Battle!
 					}),
-					qa(29082, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28808, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 28784,	-- Join the Battle!
 					}),
-					qa(28808, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(28809, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 28785,	-- Join the Battle!
 					}),
-					qa(28809, {	-- Fear No Evil
-						["qg"] = 951,	-- 
+					q(29082, {	-- Fear No Evil
+						["qg"] = 951,	-- Brother Paxton
+						["coord"] = { 35.3, 37.9, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),
+						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
-					qa(29080, {	-- Join the Battle! (can't verify class -- maybe this one is for non-Humans?)
-						["qg"] = 197,	-- 
+					q(29080, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-human
+						["sourceQuest"] = 29079,	-- Lions for Lambs
 					}),
-]]--
-					qa(28789, {	-- Join the Battle!
-						["qg"] = 911,	-- 
-						["classes"] = {1},	-- Warrior
+					q(28789, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 28774,	-- Lions for Lambs
 					}),
-					qa(28786, {	-- Join the Battle!
-						["qg"] = 375,	-- 
-						["classes"] = {5},	-- Priest
+					q(28786, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 28771,	-- Lions for Lambs
 					}),
-					qa(28785, {	-- Join the Battle!
-						["qg"] = 925,	-- 
-						["classes"] = {2},	-- Paladin
+					q(28785, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 28770,	-- Lions for Lambs
 					}),
-					qa(28787, {	-- Join the Battle!
-						["qg"] = 915,	-- 
-						["classes"] = {4},	-- Rogue
+					q(28787, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 28772,	-- Lions for Lambs
 					}),
-					qa(28784, {	-- Join the Battle!
-						["qg"] = 198,	-- 
-						["classes"] = {8},	-- Mage
+					q(28784, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 28769,	-- Lions for Lambs
 					}),
-					qa(28780, {	-- Join the Battle!
-						["qg"] = 43278,	-- 
-						["classes"] = {3},	-- Hunter
+					q(28780, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 28759,	-- Lions for Lambs
 					}),
-					qa(28788, {	-- Join the Battle!
-						["qg"] = 459,	-- 
-						["classes"] = {9},	-- Warlock
+					q(28788, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuest"] = 28773,	-- Lions for Lambs
 					}),
-					qa(31143, {	-- Join the Battle! (unsure of QG, add'l listed 197)
-						["qg"] = 63258,	-- 
-						["classes"] = {10},	-- Monk (unsure)
+					q(31143, {	-- Join the Battle!
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 10 },	-- Monk
+						["sourceQuest"] = 31140,	-- Lions for Lambs
 					}),
-					qa(28771, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {5},	-- Priest
+					q(28771, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 28763,	-- Beating Them Back!
 					}),
-					qa(28772, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {4},	-- Rogue
+					q(28772, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 28764,	-- Beating Them Back!
 					}),
-					qa(28773, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {9},	-- Warlock
---								["races"] = {7},	-- Gnome (doubtful, but what wowhead says)
+					q(28773, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuest"] = 28765,	-- Beating Them Back!
 					}),
-					qa(28774, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {1},	-- Warrior
+					q(28774, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 28766,	-- Beating Them Back!
 					}),
-					qa(28759, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {3},	-- Hunter
+					q(28759, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 28767,	-- Beating Them Back
 					}),
 					q(29079, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["races"] = {3,4,7,11,22,25},	-- non-Human
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- non-Human
+						["sourceQuest"] = 29078,	-- Beating Them Back!
 					}),
-					qa(31140, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {10},	-- Monk (can't verify)
+					q(31140, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 10 },	-- Monk
+						["sourceQuest"] = 31139,	-- Beating Them Back!
 					}),
-					qa(28769, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {8},	-- Mage
+					q(28769, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 28757,	-- Beating Them Back!
 					}),
-					qa(28770, {	-- Lions for Lambs
-						["qg"] = 197,	-- 
-						["classes"] = {2},	-- Paladin
---								["races"] = {11},	-- Draenei (doubtful, but what wowhead says)
+					q(28770, {	-- Lions for Lambs
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 28762,	-- Beating Them Back!
 					}),
-					qa(54, {	-- Report to Goldshire
-						["qg"] = 197,	-- 
+					q(54, {	-- Report to Goldshire
+						["qg"] = 197,	-- Marshal McBride
+						["coord"] = { 33.5, 53.0, 425 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 26390,	-- Ending the Invasion
 					}),
-					qa(37112, {	-- Rest and Relaxation
-						["qg"] = 6774,	-- 
-					}),
-					qa(346, {	-- Return to Kristoff
+					q(346, {	-- Return to Kristoff
 						["u"] = 40,
+						["qg"] = 951,	-- Brother Paxton
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 347,	-- Rethban Ore
 						["g"] = {
 							un(2, i(6095)),	-- Wandering Boots
 						},
 					}),
---[[						qa(2158, {	-- Rest and Relaxation (replaced with previous quest)
-						["qg"] = 6774,	-- 
+					q(28819, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 28793,	-- They Sent Assassins
 					}),
---							qa(28819, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(28822, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuest"] = 28796,	-- They Sent Assassins
 					}),
-					qa(28822, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(31145, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 10 },	-- Monk
+						["sourceQuest"] = 31144,	-- They Sent Assassins
 					}),
-					qa(31145, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(28821, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 28795,	-- They Sent Assassins
 					}),
-					qa(28821, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
-						["classes"] = {4},	-- Rogue
---								["races"] = {22},	-- Worgen (doubtful, but what wowhead says)
+					q(28817, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 28791,	-- They Sent Assassins
 					}),
-					qa(28817, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(28823, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 28797,	-- They Sent Assassins
 					}),
-					qa(28823, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(28820, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 28794,	-- They Sent Assassins
 					}),
-					qa(28820, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(28818, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 28792,	-- They Sent Assassins
 					}),
-					qa(28818, {	-- The Rear is Clear
-						["qg"] = 823,	-- 
+					q(29083, {	-- The Rear is Clear
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- all non-human
+						["sourceQuest"] = 29081,	-- They Sent Assassin
 					}),
-					qa(29083, {	-- The Rear is Clear *assuming one of these/class + one for non-human, but they aren't labeled on wowhead
-						["qg"] = 823,	-- 
+					q(28792, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 8 },	-- Mage
+						["sourceQuest"] = 28784,	-- Join the Battle!
 					}),
-					qa(28792, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(31144, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 10 },	-- Monk
+						["sourceQuest"] = 31143,	-- Join the Battle!
 					}),
-					qa(31144, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(28794, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 5 },	-- Priest
+						["sourceQuest"] = 28786,	-- Join the Battle!
 					}),
-					qa(28794, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(28793, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 2 },	-- Paladin
+						["sourceQuest"] = 28785,	-- Join the Battle!
 					}),
-					qa(28793, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(28795, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 4 },	-- Rogue
+						["sourceQuest"] = 28787,	-- Join the Battle!
 					}),
-					qa(28795, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
-						["classes"] = {4},	-- Rogue
---								["races"] = {22},	-- Worgen (doubtful, but what wowhead says)
+					q(28797, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 1 },	-- Warrior
+						["sourceQuest"] = 28789,	-- Join the Battle!
 					}),
-					qa(28797, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(28791, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 3 },	-- Hunter
+						["sourceQuest"] = 28780,	-- Join the Battle!
 					}),
-					qa(28791, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(28796, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = { 1 },	-- Human
+						["classes"] = { 9 },	-- Warlock
+						["sourceQuest"] = 28788,	-- Join the Battle!
 					}),
-					qa(28796, {	-- They Sent Assassins
-						["qg"] = 823,	-- 
+					q(29081, {	-- They Sent Assassins
+						["qg"] = 823,	-- Sergeant Willem
+						["coord"] = { 35.7, 39.7, 425 },
+						["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- all non-human
+						["sourceQuest"] = 29080,	-- Join the Battle!
 					}),
-					qa(29081, {	-- They Sent Assassins *assuming one of these/class + one for non-human, but they aren't labeled on wowhead
-						["qg"] = 823,	-- 
-					}),
-					--]]
 				}),
 			}),
 		}),
