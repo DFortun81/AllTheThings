@@ -3,44 +3,25 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Kalimdor
-		["mapID"] = 12,	-- Kalimdor
-		["g"] = {
-			{	-- Darnassus
-				["mapID"] = 89,	-- Darnassus
+	m(12, {	-- Kalimdor
+		m(89, {	-- Darnassus
+			n(-25, {	-- Pet Battle
+				["f"] = 101,	-- Battle Pets
 				["g"] = {
-					{	-- Pet Battles
-						["npcID"] = -25,	-- Pet Battle
-						["f"] = 101,		-- Battle Pets
-						["g"] = {
-							{	-- Elfin Rabbit
-								["speciesID"] = 479,	-- Elfin Rabbit
-								["crs"] = {
-									62178,	-- Elfin Rabbit
-								},
-							},
-							{	-- Forest Moth
-								["speciesID"] = 478,	-- Forest Moth
-								["crs"] = {
-									62177,	-- Forest Moth
-								},
-							},
-							{	-- Red-Tailed Chipmunk
-								["speciesID"] = 452,	-- Red-Tailed Chipmunk
-								["crs"] = {
-									61757,	-- Red-Tailed Chipmunk
-								},
-							},
-							{	-- Small Frog
-								["speciesID"] = 419,	-- Small Frog
-								["crs"] = {
-									61071,	-- Small Frog
-								},
-							},
-						},
-					},
+					p(479, {	-- Elfin Rabbit
+						["crs"] = { 62178 },	-- Elfin Rabbit
+					}),
+					p(478, {	-- Forest Moth
+						["crs"] = { 62177 },	-- Forest Moth
+					}),
+					p(452, {	-- Red-Tailed Chipmunk
+						["crs"] = { 61757 },	-- Red-Tailed Chipmunk
+					}),
+					p(419, {	-- Small Frog
+						["crs"] = { 61071 },	-- Small Frog
+					}),
 				},
-			},
-		},
-	},
+			}),
+		}),
+	}),
 };

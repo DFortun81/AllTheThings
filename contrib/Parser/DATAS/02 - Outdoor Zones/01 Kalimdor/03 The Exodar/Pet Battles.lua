@@ -5,12 +5,17 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
-			["groups"] = {
-				n(-25, {	-- Pet Battle
-					p(464), 	-- Grey Moth
-					p(385), 	-- Mouse
-				}),
-			},
+			n(-25, {	-- Pet Battle
+				["f"] = 101,
+				["g"] = {
+					p(464, {	-- Grey Moth
+						["crs"] = { 62050 },	-- Grey Moth
+					}),
+					p(385, {	-- Mouse
+						["crs"] = { 61143 },	-- Mouse
+					}),
+				},
+			}),
 		}),
 	}),
 };

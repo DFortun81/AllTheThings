@@ -5,14 +5,24 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
-			["groups"] = {
-				n(-25, {	-- Pet Battle
-					p(477),	-- Gazelle Fawn
-					p(385),	-- Mouse
-					p(386),	-- Prairie Dog
-					p(378),	-- Rabbit
+			n(-25, {	-- Pet Battle
+				["f"] = 101,
+				["g"] = {
+					p(477, {	-- Gazelle Fawn
+						["crs"] = { 62176 },	-- Gazelle Fawn
+					}),
+					p(385, {	-- Mouse
+						["crs"] = { 61143 },	-- Mouse
+					}),
+					p(386, {	-- Prairie Dog
+						["crs"] = { 61141 },	-- Prairie Dog
+					}),
+					p(378, {	-- Rabbit
+						["crs"] = { 61080 },	-- Rabbit
+					}),
 					n(63067, {	-- Naleen
-						["groups"] = {
+						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+						["g"] = {
 							p(75, {	-- Black Kingsnake
 								["races"] = {
 									2,	-- Orc
@@ -35,34 +45,29 @@ _.Zones =
 								["races"] = { 5 }	-- Undeads
 							}),
 						},
-						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
-					{	-- Learning the Ropes
-						["questID"] = 31573,
-						["qg"] = 63067,	-- Naleen
-						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-						["races"] = HORDE_ONLY,
-					},
-					{	-- On The Mend
-						["questID"] = 31574,
-						["qg"] = 63067,	-- Naleen
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 31573,	-- Learning the Ropes
-					},
-					{	-- Level Up!
-						["questID"] = 31831,
-						["qg"] = 63067,	-- Naleen
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 31574,	-- On The Mend
-					},
-					{	-- Got One!
-						["questID"] = 31575,
+					q(31575, {	-- Got One!
 						["qg"] = 63067,	-- Naleen
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 31831,	-- Level Up!
-					},
-				}),
-			},
+					}),
+					q(31573, {	-- Learning the Ropes
+						["qg"] = 63067,	-- Naleen
+						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+						["races"] = HORDE_ONLY,
+					}),
+					q(31831, {	-- Level Up!
+						["qg"] = 63067,	-- Naleen
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 31574,	-- On The Mend
+					}),
+					q(31574, {	-- On The Mend
+						["qg"] = 63067,	-- Naleen
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 31573,	-- Learning the Ropes
+					}),
+				},
+			}),
 		}),
 	}),
 };
