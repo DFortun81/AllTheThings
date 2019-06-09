@@ -8251,18 +8251,9 @@ function app:GetDataCache()
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
+			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
+			db.icon = "Interface\\Icons\\inv_misc_celebrationcake_01";
 			db.expanded = false;
-			db.text = EVENTS_LABEL;
-			db.collectible = false;
-			table.insert(g, db);
-		end
-		
-		-- Anniversary
-		if app.Categories.Anniversary then
-			db = app.CreateAchievement(12827, app.Categories.Anniversary);
-			db.expanded = false;
-			db.text = "WoW Anniversary";
 			db.collectible = false;
 			table.insert(g, db);
 		end
