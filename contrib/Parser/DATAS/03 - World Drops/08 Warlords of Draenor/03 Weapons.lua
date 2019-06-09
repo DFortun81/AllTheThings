@@ -18,7 +18,6 @@ _.WorldDrops =
 					i(116593),	-- Bloodmane Axe
 					i(116610),	-- Gorian Axe
 					i(116627),	-- Howling Axe
-					--i(117010),	-- Not a valid item so commenting out Forester's Axe
 					i(118781),	-- Gorestained Hatchet
 					i(118782),	-- Ivory-Hilted Cleaver
 				}),
@@ -87,7 +86,6 @@ _.WorldDrops =
 					i(116615),	-- Ancestral Spellblade
 					i(116631),	-- Howling Dagger
 					i(116632),	-- Oshu'gun Spellblade
-					un(7, i(117371)),	-- Miniature Winter Veil Tree
 					i(118783),	-- Rykard's Reliable Ribcutter
 					i(118784),	-- Sliver of Na'the
 					i(118785),	-- Void Bound Knife
@@ -160,14 +158,12 @@ _.WorldDrops =
 					i(116619),	-- Ancestral Scepter
 					i(116635),	-- Howling Mace
 					i(116636),	-- Oshu'gun Scepter
-					i(117379),	-- Tremendous Tankard O' Terror
 					i(118787),	-- Gibberskull Mace
 					i(118788),	-- Matti's Magnificent Mace
 					i(118789),	-- Firecrystal Mace
 				}),
 				n(-337, {	-- 2H Maces
 					i(116467),	-- Frostbitten Hammer
-					i(111475),	-- Beater's Beat Stick
 					i(116484),	-- Lunarglow Hammer
 					i(116501),	-- Vinewrapped Hammer
 					un(7, i(36505)),	-- Frosted Steel Mallet
@@ -183,7 +179,6 @@ _.WorldDrops =
 				}),
 				n(-343, {	-- Polearms
 					i(116468),	-- Frostbitten Spear
-					i(107658),	-- Thunderlord Longspear
 					i(116485),	-- Lunarglow Spear
 					i(116502),	-- Vinewrapped Spear
 					i(116519),	-- Creeperclaw Spear
