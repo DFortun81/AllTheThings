@@ -700,12 +700,18 @@ _.Zones =
 				m(465, {	-- Deathknell
 					["g"] = {
 						n(-25, {	-- Pet Battle
-							p(417),	-- Rat
-							p(458),	-- Lost of Lordaeron
+							p(417, {	-- Rat
+								["crs"] = { 61366 },	-- Rat
+							}),
+							p(458, {	-- Lost of Lordaeron
+								["crs"] = { 61905 },	-- Lost of Lordaeron
+							}),
 						}),
 						n(-17, {	-- Quests
-							qh(24971, {	-- Assault on the Rotbrain Encampment
+							q(24971, {	-- Assault on the Rotbrain Encampment
 								["qg"] = 49425,	-- Darnell
+								["coord"] = { 67.0, 42.3, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24970 },	-- No Better Than the Zombies
 							}),
 							q(25089, {	-- Beyond the Graves
@@ -728,16 +734,22 @@ _.Zones =
 								["classes"] = { 8 },	-- Mage
 								["races"] = { 5 },	-- Undead
 							}),
-							qh(24973, {	-- Night Web's Hollow
+							q(24973, {	-- Night Web's Hollow
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 26802 },	-- The Damned
 							}),
-							qh(24970, {	-- No Better Than the Zombies
+							q(24970, {	-- No Better Than the Zombies
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24973 },	-- Night Web's Hollow
 							}),
-							qh(28651, {	-- Novice Elreth
+							q(28651, {	-- Novice Elreth
 								["qg"] = 1569,	-- Shadow Priest Elreth
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 							}),
 							q(24966, {	-- Of Light and Shadows
@@ -751,23 +763,26 @@ _.Zones =
 								["sourceQuests"] = { 25089 },	-- Beyond the Graves
 								["races"] = { 5 },	-- undead
 							}),
-							qh(26801, {	-- Scourge on our Perimeter
+							q(26801, {	-- Scourge on our Perimeter
 								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 							}),
 							q(28653, {	-- Shadow Priest Sarvis
 								["qg"] = 1740,	-- Deathguard Saltain
 								["sourceQuests"] = { 26800 },	-- Recruitment
-								["races"] = {
-									5,	-- undead
-									10,	-- blood elf
-								}
+								["races"] = { 5 },	-- undead
 							}),
-							qh(26802, {	-- The Damned
+							q(26802, {	-- The Damned
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 28672 },	-- The Executor in the Field
 							}),
-							qh(28672, {	-- The Executor In the Field
+							q(28672, {	-- The Executor In the Field
 								["qg"] = 1661,	-- Novice Elreth
+								["coord"] = { 46.7, 58.2, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24961 },	-- The Truth of the Grave
 							}),
 							q(28608, {	-- The Shadow Grave
@@ -775,8 +790,10 @@ _.Zones =
 								["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
 								["races"] = { 5 },	-- undead
 							}),
-							qh(24961, {	-- The Truth of the Grave
+							q(24961, {	-- The Truth of the Grave
 								["qg"] = 1661,	-- Novice Elreth
+								["coord"] = { 46.7, 58.1, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 28651 },	-- Novice Elreth
 							}),
 							q(24960, {	-- The Wakening
@@ -789,8 +806,10 @@ _.Zones =
 								["sourceQuests"] = { 28608 },	-- The Shadow Grave
 								["races"] = { 5 },	-- undead
 							}),
-							qh(24972, {	-- Vital Intelligence
+							q(24972, {	-- Vital Intelligence
 								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24971 },	-- Assault on the Rotbrain Encampment
 								["isBreadcrumb"] = true,
 							}),
