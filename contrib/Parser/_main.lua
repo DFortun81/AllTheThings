@@ -470,6 +470,9 @@ merge = function(...)
 	end
 	return t;
 end
+isarray = function(t)
+	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
 
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -692,9 +695,8 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
   if not t then t = {};
     elseif not t.groups then
-		if t.sourceQuest or t.sourceQuests or t.races or t.classes or t.crs then
+		if not isarray(t) then
 			-- DO NOT do that lol
-			error("you fool. you absolute clown.  your buffoonery will not be tolerated");
 		else
 			t = { ["groups"] = t };
 		end
@@ -704,7 +706,13 @@ crit = function(criteriaID, t)           -- Create an Achievement Criteria Objec
 end
 sz = function(achievementID, criteriaID, t)  -- Create a Subzone Object (localized automatically)
   if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
+    elseif not t.groups then
+		if not isarray(t) then
+			-- DO NOT do that lol
+		else
+			t = { ["groups"] = t };
+		end
+	end
     t.achievementID = achievementID;
     t.criteriaID = criteriaID;
   return t;
