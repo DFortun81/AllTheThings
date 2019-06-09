@@ -5,16 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			["g"] = {
-				n(-77, {	-- Special
-					o(294703, {	-- Grimmy's Rusty Lockbox
-						["lvl"] = 120,
-						["g"] = {
-							i(162690),	-- Waist of Time
-						},
-					}),
+			n(-77, {	-- Special
+				o(294703, {	-- Grimmy's Rusty Lockbox
+					["lvl"] = 120,
+					["g"] = {
+						i(162690),	-- Waist of Time
+					},
 				}),
-			},
+			}),
 		}),
 	}),
 };

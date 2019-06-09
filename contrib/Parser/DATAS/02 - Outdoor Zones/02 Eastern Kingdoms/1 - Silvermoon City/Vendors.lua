@@ -3,19 +3,21 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(110, { 	-- Silvermoon City
-			["groups"] = {
-				nh(-2, { 	-- Vendors
-					n(16631, {		-- Andra <Clothier>
+	m(13, {	-- Eastern Kingdoms
+		m(110, {	-- Silvermoon City
+			n(-2, {	-- Vendors
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					n(16631, {	-- Andra <Clothier>
+						["coord"] = { 65.2, 47.2, 110 },
 						["g"] = {
 							i(3428),	-- Common Gray Shirt
 							i(16059),	-- Common Brown Shirt
 							i(16060),	-- Common White Shirt
 						},
-						["coord"] = { 65.2, 47.2, 110 },
 					}),
-					n(16638, {		-- Deynna <Tailoring Supplies>
+					n(16638, {	-- Deynna <Tailoring Supplies>
+						["coord"] = { 56.0, 51.8, 110 },
 						["g"] = {
 							i(54440, {	-- Dreamcloth
 								i(54601),	-- Pattern: Belt of the Depths
@@ -40,143 +42,58 @@ _.Zones =
 							i(21896), 	-- Pattern: Netherweave Robe
 							i(21897), 	-- Pattern: Netherweave Tunic
 						},
-						["coord"] = { 56.0, 51.8, 110 },
 					}),
-					n(16670, {		-- Eriden <Blacksmithing Supplies>
-						["g"] = {
-							{	-- Plans: Adamantite Cleaver
-								["itemID"] = 23591,	-- Plans: Adamantite Cleaver
-							},
-							{	-- Plans: Adamantite Dagger
-								["itemID"] = 23592,	-- Plans: Adamantite Dagger
-							},
-							{	-- Plans: Adamantite Maul
-								["itemID"] = 23590,	-- Plans: Adamantite Maul
-							},
-							{	-- Plans: Adamantite Rapier
-								["itemID"] = 23593,	-- Plans: Adamantite Rapier
-							},
-							{	-- Elementium Bar
-								["itemID"] = 52186,	-- Elementium Bar
-								["g"] = {
-									{	-- Plans: Elementium Girdle of Pain
-										["itemID"] = 66107,	-- Plans: Elementium Girdle of Pain
-									},
-									{	-- Plans: Hardened Elementium Girdle
-										["itemID"] = 66105,	-- Plans: Hardened Elementium Girdle
-									},
-									{	-- Plans: Light Elementium Belt
-										["itemID"] = 66109,	-- Plans: Light Elementium Belt
-									},
-									{	-- Plans: Pyrium Weapon Chain
-										["itemID"] = 66103,	-- Plans: Pyrium Weapon Chain
-									},
-									{	-- Plans: Vicious Ornate Pyrium Belt
-										["itemID"] = 66127,	-- Plans: Vicious Ornate Pyrium Belt
-									},
-									{	-- Plans: Vicious Ornate Pyrium Bracers
-										["itemID"] = 66125,	-- Plans: Vicious Ornate Pyrium Bracers
-									},
-									{	-- Plans: Vicious Ornate Pyrium Gauntlets
-										["itemID"] = 66126,	-- Plans: Vicious Ornate Pyrium Gauntlets
-									},
-									{	-- Plans: Vicious Pyrium Belt
-										["itemID"] = 66119,	-- Plans: Vicious Pyrium Belt
-									},
-									{	-- Plans: Vicious Pyrium Bracers
-										["itemID"] = 66117,	-- Plans: Vicious Pyrium Bracers
-									},
-									{	-- Plans: Vicious Pyrium Gauntlets
-										["itemID"] = 66118,	-- Plans: Vicious Pyrium Gauntlets
-									},
-								},
-							},
-							{	-- Hardened Elementium Bar
-								["itemID"] = 53039,	-- Hardened Elementium Bar
-								["g"] = {
-									{	-- Plans: Elementium Bonesplitter
-										["itemID"] = 66113,	-- Plans: Elementium Bonesplitter
-									},
-									{	-- Plans: Elementium Deathplate
-										["itemID"] = 66106,	-- Plans: Elementium Deathplate
-									},
-									{	-- Plans: Elementium Earthguard
-										["itemID"] = 66115,	-- Plans: Elementium Earthguard
-									},
-									{	-- Plans: Elementium Gutslicer
-										["itemID"] = 67603,	-- Plans: Elementium Gutslicer
-									},
-									{	-- Plans: Elementium Hammer
-										["itemID"] = 66111,	-- Plans: Elementium Hammer
-									},
-									{	-- Plans: Elementium Poleaxe
-										["itemID"] = 66112,	-- Plans: Elementium Poleaxe
-									},
-									{	-- Plans: Elementium Shank
-										["itemID"] = 66114,	-- Plans: Elementium Shank
-									},
-									{	-- Plans: Elementium Spellblade
-										["itemID"] = 66110,	-- Plans: Elementium Spellblade
-									},
-									{	-- Plans: Elementium Stormshield
-										["itemID"] = 66116,	-- Plans: Elementium Stormshield
-									},
-									{	-- Plans: Hardened Elementium Hauberk
-										["itemID"] = 66104,	-- Plans: Hardened Elementium Hauberk
-									},
-									{	-- Plans: Light Elementium Chestguard
-										["itemID"] = 66108,	-- Plans: Light Elementium Chestguard
-									},
-									{	-- Plans: Vicious Ornate Pyrium Boots
-										["itemID"] = 66128,	-- Plans: Vicious Ornate Pyrium Boots
-									},
-									{	-- Plans: Vicious Ornate Pyrium Shoulders
-										["itemID"] = 66129,	-- Plans: Vicious Ornate Pyrium Shoulders
-									},
-									{	-- Plans: Vicious Pyrium Boots
-										["itemID"] = 66120,	-- Plans: Vicious Pyrium Boots
-									},
-									{	-- Plans: Vicious Pyrium Shoulders
-										["itemID"] = 66121,	-- Plans: Vicious Pyrium Shoulders
-									},
-								},
-							},
-							{	-- Pyrium Bar
-								["itemID"] = 51950,	-- Pyrium Bar
-								["g"] = {
-									{	-- Plans: Ebonsteel Belt Buckle
-										["itemID"] = 66100,	-- Plans: Ebonsteel Belt Buckle
-									},
-									{	-- Plans: Forged Elementium Mindcrusher
-										["itemID"] = 67606,	-- Plans: Forged Elementium Mindcrusher
-									},
-									{	-- Plans: Pyrium Shield Spike
-										["itemID"] = 66101,	-- Plans: Pyrium Shield Spike
-									},
-									{	-- Plans: Vicious Ornate Pyrium Breastplate
-										["itemID"] = 66132,	-- Plans: Vicious Ornate Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Ornate Pyrium Helm
-										["itemID"] = 66131,	-- Plans: Vicious Ornate Pyrium Helm
-									},
-									{	-- Plans: Vicious Ornate Pyrium Legguards
-										["itemID"] = 66130,	-- Plans: Vicious Ornate Pyrium Legguards
-									},
-									{	-- Plans: Vicious Pyrium Breastplate
-										["itemID"] = 66124,	-- Plans: Vicious Pyrium Breastplate
-									},
-									{	-- Plans: Vicious Pyrium Helm
-										["itemID"] = 66123,	-- Plans: Vicious Pyrium Helm
-									},
-									{	-- Plans: Vicious Pyrium Legguards
-										["itemID"] = 66122,	-- Plans: Vicious Pyrium Legguards
-									},
-								},
-							},
-						},
+					n(16670, {	-- Eriden <Blacksmithing Supplies>
 						["coord"] = { 80.6, 37.0, 110 },
+						["g"] = {
+							i(23591),	-- Plans: Adamantite Cleaver
+							i(23592),	-- Plans: Adamantite Dagger
+							i(23590),	-- Plans: Adamantite Maul
+							i(23593),	-- Plans: Adamantite Rapier
+							i(52186, {	-- Elementium Bar
+								i(66107),	-- Plans: Elementium Girdle of Pain
+								i(66105),	-- Plans: Hardened Elementium Girdle
+								i(66109),	-- Plans: Light Elementium Belt
+								i(66103),	-- Plans: Pyrium Weapon Chain
+								i(66127),	-- Plans: Vicious Ornate Pyrium Belt
+								i(66125),	-- Plans: Vicious Ornate Pyrium Bracers
+								i(66126),	-- Plans: Vicious Ornate Pyrium Gauntlets
+								i(66119),	-- Plans: Vicious Pyrium Belt
+								i(66117),	-- Plans: Vicious Pyrium Bracers
+								i(66118),	-- Plans: Vicious Pyrium Gauntlets
+							}),
+							i(53039, {	-- Hardened Elementium Bar
+								i(66113),	-- Plans: Elementium Bonesplitter
+								i(66106),	-- Plans: Elementium Deathplate
+								i(66115),	-- Plans: Elementium Earthguard
+								i(67603),	-- Plans: Elementium Gutslicer
+								i(66111),	-- Plans: Elementium Hammer
+								i(66112),	-- Plans: Elementium Poleaxe
+								i(66114),	-- Plans: Elementium Shank
+								i(66110),	-- Plans: Elementium Spellblade
+								i(66116),	-- Plans: Elementium Stormshield
+								i(66104),	-- Plans: Hardened Elementium Hauberk
+								i(66108),	-- Plans: Light Elementium Chestguard
+								i(66128),	-- Plans: Vicious Ornate Pyrium Boots
+								i(66129),	-- Plans: Vicious Ornate Pyrium Shoulders
+								i(66120),	-- Plans: Vicious Pyrium Boots
+								i(66121),	-- Plans: Vicious Pyrium Shoulders
+							}),
+							i(51950, {	-- Pyrium Bar
+								i(66100),	-- Plans: Ebonsteel Belt Buckle
+								i(67606),	-- Plans: Forged Elementium Mindcrusher
+								i(66101),	-- Plans: Pyrium Shield Spike
+								i(66132),	-- Plans: Vicious Ornate Pyrium Breastplate
+								i(66131),	-- Plans: Vicious Ornate Pyrium Helm
+								i(66130),	-- Plans: Vicious Ornate Pyrium Legguards
+								i(66124),	-- Plans: Vicious Pyrium Breastplate
+								i(66123),	-- Plans: Vicious Pyrium Helm
+								i(66122),	-- Plans: Vicious Pyrium Legguards
+							}),
+						},
 					}),
-					n(16624, {		-- Gelanthis <Jewelcrafting Supplies>
+					n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
+						["coord"] = { 90.8, 73.6, 110 },
 						["g"] = {
 							i(20854),	-- Design: Amulet of the Moon
 							i(20856),	-- Design: Heavy Golden Necklace of Battle
@@ -273,9 +190,9 @@ _.Zones =
 								i(52431),	-- Design: Zen Dream Emerald
 							}),
 						},
-						["coord"] = { 90.8, 73.6, 110 },
 					}),
-					n(16635, {		-- Lyna <Enchanting Supplies>
+					n(16635, {	-- Lyna <Enchanting Supplies>
+						["coord"] = { 70.0, 24.6, 110 },
 						["g"] = {
 							i(22565),	-- Formula: Large Prismatic Shard
 							i(20753),	-- Formula: Lesser Wizard Oil
@@ -304,38 +221,35 @@ _.Zones =
 								i(52735),	-- Formula: Enchant Weapon - Windwalk
 							}),
 						},
-						["coord"] = { 70.0, 24.6, 110 },
 					}),
-					n(16641, {		-- Melaris <Alchemy Supplies>
+					n(16641, {	-- Melaris <Alchemy Supplies>
+						["coord"] = { 67.0, 19.2, 110 },
 						["g"] = {
 							i(22900),	-- Recipe: Elixir of Camouflage
 							i(23574),	-- Recipe: Transmute Primal Might
 						},
-						["coord"] = { 67.0, 19.2, 110 },
 					}),
-					n(16677, {		-- Quelis <Cooking Supplies>
+					n(16677, {	-- Quelis <Cooking Supplies>
+						["coord"] = { 69.6, 71.2, 110 },
 						["g"] = {
 							i(21219),	-- Recipe: Sagefish Delight
 							i(21099),	-- Recipe: Smoked Sagefish
 						},
-						["coord"] = { 69.6, 71.2, 110 },
 					}),
-					n(16782, {		-- Yatheon <Engineering Supplies>
+					n(16782, {	-- Yatheon <Engineering Supplies>
+						["coord"] = { 75.8, 40.6, 110 },
 						["g"] = {
 							i(23799),	-- Schematic: Adamantite Rifle
 						},
-						["coord"] = { 75.8, 40.6, 110 },
 					}),
-					{				-- Zantasia <Inscription Trainer>
-						["npcID"] = 30710,	-- Zantasia <Inscription Trainer>
+					n(30710, {	-- Zantasia <Inscription Trainer>
 						["coord"] = { 69.6, 23.6, 110 },
 						["g"] = {
-							{	-- Technique: Songs of the Legion
-								["itemID"] = 137789,	-- Technique: Songs of the Legion
-							},
+							n(137789),	-- Technique: Songs of the Legion
 						},
-					},
-					n(16689, {		-- Zaralda <Leatherworking Supplies>
+					}),
+					n(16689, {	-- Zaralda <Leatherworking Supplies>
+						["coord"] = { 84.6, 78.8, 110 },
 						["g"] = {
 							i(67095),	-- Pattern: Assassin's Chestplate						
 							i(67070),	-- Pattern: Belt of Nefarious Whispers
@@ -384,18 +298,17 @@ _.Zones =
 							i(67085),	-- Pattern: Vicious Wyrmhide Legs	
 							i(67074),	-- Pattern: Vicious Wyrmhide Shoulders
 						},
-						["coord"] = { 84.6, 78.8, 110 },
 					}),
-					n(16623, {		-- Zyandrel <Cloth Armor Merchant>
+					n(16623, {	-- Zyandrel <Cloth Armor Merchant>
+						["coord"] = { 64.8, 48.6, 110 },
 						["g"] = {
 							i(3428),	-- Common Gray Shirt
 							i(16059),	-- Common Brown Shirt
 							i(16060),	-- Common White Shirt
 						},
-						["coord"] = { 64.8, 48.6, 110 },
 					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

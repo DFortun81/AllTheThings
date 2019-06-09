@@ -5,16 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
-			["g"] = {
-				n(-228, {	-- Flight Path
-					fp(12, {	-- Darkshire, Duskwood
-						["coord"] = { 77.4, 44.2, 47 },
-					}),
-					fp(622, {	-- Raven Hill, Duskwood
-						["coord"] = { 21.0, 56.6, 47 },
-					}),
+			n(-228, {	-- Flight Path
+				fp(12, {	-- Darkshire, Duskwood
+					["coord"] = { 77.4, 44.2, 47 },
 				}),
-			},
+				fp(622, {	-- Raven Hill, Duskwood
+					["coord"] = { 21.0, 56.6, 47 },
+				}),
+			}),
 		}),
 	}),
 };

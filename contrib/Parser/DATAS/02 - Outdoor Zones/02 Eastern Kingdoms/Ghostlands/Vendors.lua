@@ -9,14 +9,14 @@ _.Zones =
 				n(16268, {	-- Eralan <Poison Supplies>
 					["coord"] = { 47.0, 34.2, 95 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(29583),	-- Sinister Scimitar
 					},
 				}),
 				n(16253, {	-- Master Chef Mouldier <Cooking Trainer & Supplies>
 					["coord"] = { 48.4, 31.0, 95 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(27687),	-- Recipe: Bat Bites
 						i(22647),	-- Recipe: Crunchy Spider Surprise
 						i(21219),	-- Recipe: Sagefish Delight
@@ -26,7 +26,7 @@ _.Zones =
 				n(16528, {	-- Provisioner Vredigar
 					["coord"] = { 47.6, 32.2, 95 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(22990),	-- Tranquillien Champion's Cloak
 						i(28155),	-- Apothecary's Waistband
 						i(28158),	-- Batskin Belt
@@ -46,7 +46,7 @@ _.Zones =
 				n(16224, {	-- Rathis Tomber <Trade Supplies>
 					["coord"] = { 47.2, 28.6, 95 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(5771),	-- Pattern: Red Linen Bag
 					},
 				}),

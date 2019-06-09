@@ -3,25 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Eastern Kingdoms
-		["mapID"] = 13,	-- Eastern Kingdoms
-		["g"] = {
-			{	-- Isle of Quel'Danas
-				["mapID"] = 122,	-- Isle of Quel'Danas
-				["g"] = {
-					{	-- Flight Paths
-						["npcID"] = -228,	-- Flight Paths
-						["g"] = {
-							{	-- Shattered Sun Stage Area
-								["flightPathID"] = 213,	-- Shattered Sun Stage Area
-								["coords"] = {
-									{ 48.4, 25.2 },
-								},
-							},
-						},
-					},
-				},
-			},
-		},
-	},
+	m(13, {	-- Eastern Kingdoms
+		m(122, {	-- Isle of Quel'Danas
+			n(-228, {	-- Flight Paths
+				fp(213, {	-- Shattered Sun Stage Area
+					["coord"] = { 48.4, 25.2, 122 },
+				}),
+			}),
+		}),
+	}),
 };

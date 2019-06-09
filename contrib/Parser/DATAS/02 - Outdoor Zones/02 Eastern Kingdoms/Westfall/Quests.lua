@@ -13,7 +13,7 @@ _.Zones =
 					["coord"] = { 49.2, 9.80, 52 },	-- center of the area where the mobs spawn
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_misc_map_01",
-					["qgs"] = {
+					["crs"] = {
 						515,	-- Murloc Raider
 						126,	-- Murloc Coastrunner
 						456,	-- Murloc Minor Oracle

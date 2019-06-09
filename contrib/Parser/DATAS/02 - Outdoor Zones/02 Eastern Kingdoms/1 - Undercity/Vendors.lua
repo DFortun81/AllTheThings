@@ -3,10 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(90, { 	-- Undercity
-			["groups"] = {				
-				nh(-2, { 	-- Vendors
+	m(13, {	-- Eastern Kingdoms
+		m(90, {	-- Undercity
+			n(-2, {	-- Vendors
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					n(4604,  {	-- Abigail Sawyer <Bow Merchant>
 						i(11306),	-- Sturdy Recurve
 						i(11303)	-- Fine Shortbow
@@ -397,8 +398,8 @@ _.Zones =
 							}),
 						},
 					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

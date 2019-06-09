@@ -5,16 +5,11 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(95, {	-- Ghostlands
-			["groups"] = {
-				n(0, {	-- Zone Drops
-					{	-- Willow Gloves
-						["itemID"] = 6541,
-						["crs"] = {
-							33711,	-- Plagued Snapper
-						},
-					},
+			n(0, {	-- Zone Drops
+				i(6541, {	-- Willow Gloves
+					["crs"] = { 33711 },	-- Plagued Snapper
 				}),
-			},
+			}),
 		}),
 	}),
 };
