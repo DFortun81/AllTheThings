@@ -18,9 +18,6 @@ _.WorldDrops =
 					un(7, i(55289)),	-- Rustmaul Axe
 					i(55285),	-- Splinterspear Axe
 					i(55282),	-- Steelspark Axe
-					-- [removed non-world drops below]
-					--i(59462),	-- Maimgor's Bite
-					--i(71362),	-- Obsidium Cleaver
 				}),
 				n(-335, {	-- 2H Axes
 					i(55292),	-- Angerfang Broadaxe
@@ -56,8 +53,6 @@ _.WorldDrops =
 					un(7, i(55325)),	-- Rustmaul Crossbow
 					i(55321),	-- Splinterspear Crossbow
 					i(55318),	-- Steelspark Crossbow
-					-- [removed non-world drops below]
-					--i(71366),	-- Lava Bolt Crossbow
 				}),			
 				n(-333, {	-- Daggers	
 					i(55328),	-- Angerfang Dagger
@@ -80,13 +75,6 @@ _.WorldDrops =
 					i(55435),	-- Swamplight Spellblade
 					i(55440),	-- Thondroril Spellblade
 					i(66956),	-- Trek's Shiv
-					-- [removed non-world drops below]
-					--i(71359),	-- Chelley's Sterilized Scalpel
-					--un(7, i(66540)),	-- Miniature Winter Veil Tree
-					--i(68601),	-- Scaleslicer
-					--i(68163),	-- The Twilight Blade
-					--i(55790),	-- Toxidunk Dagger
-					--i(69844),	-- Vitreous Beak of Julak-Doom
 				}),
 				n(-348, {	-- Fist Weapons	
 					i(55346),	-- Angerfang Knuckles
@@ -99,9 +87,6 @@ _.WorldDrops =
 					un(7, i(55352)),	-- Rustmaul Knuckles
 					i(55348),	-- Splinterspear Knuckles
 					i(55345),	-- Steelspark Knuckles
-					-- [removed non-world drops below]
-					--i(63538),	-- Claws of Agony
-					--i(63537),	-- Claws of Torment
 				}),
 				n(-345, {	-- Guns
 					i(67045),	-- Abatement Cannon
@@ -115,8 +100,6 @@ _.WorldDrops =
 					i(55357),	-- Splinterspear Gun
 					i(55354),	-- Steelspark Gun
 					i(66953),	-- Snub-Nosed Pistol
-					-- [removed non-world drops below]
-					--i(60210),	-- Crossfire Carbine
 				}),			
 				n(-331, {	-- Held in Off-hand
 					i(55378),	-- Blackwolf Crystal
@@ -130,9 +113,6 @@ _.WorldDrops =
 					i(55373),	-- Sishir Crystal
 					i(55372),	-- Swamplight Crystal
 					i(55377),	-- Thondroril Crystal
-					-- [removed non-world drops below]
-					--i(56109),	-- Book of Origination
-					--i(71022),	-- Goblet of Anger
 				}),
 				n(-336, {	-- 1H Maces
 					i(55382),	-- Angerfang Mace
@@ -155,9 +135,6 @@ _.WorldDrops =
 					i(55381),	-- Steelspark Mace
 					i(55363),	-- Swamplight Scepter
 					i(55368),	-- Thondroril Scepter
-					-- [removed non-world drops below]
-					--i(69803),	-- Gurubashi Punisher
-					--i(55822),	-- Heavy Geode Mace
 				}),
 				n(-337, {	-- 2H Maces
 					i(55391),	-- Angerfang Hammer
@@ -170,8 +147,6 @@ _.WorldDrops =
 					i(55393),	-- Splinterspear Hammer
 					i(55390),	-- Steelspark Hammer
 					i(66993),	-- Sorrow's End
-					-- [removed non-world drops below]
-					--i(67243),	-- Armagedillo's Tail
 				}),
 				n(-343, {	-- Polearms
 					i(55409),	-- Angerfang Spear
@@ -184,9 +159,6 @@ _.WorldDrops =
 					i(66964),	-- Sand Tracker's Spear
 					i(55411),	-- Splinterspear Spear
 					i(55408),	-- Steelspark Spear
-					-- [removed non-world drops below]
-					--i(69843),	-- Mobus's Dripping Halberd
-					--i(71361),	-- Ranseur of Hatred
 				}),			
 				n(-332, {	-- Shields
 					i(67145),	-- Blockade's Lost Shield
@@ -201,8 +173,6 @@ _.WorldDrops =
 					i(55426),	-- Rethban Shield
 					i(55431),	-- Stonewrought Shield
 					i(67124),	-- Zulian Swirling Shield
-					-- [removed non-world drops below]
-					--i(71038),	-- Ward of the Red Widow
 				}),
 				n(-342, {	-- Staves
 					i(55337),	-- Angerfang Staff
@@ -227,9 +197,6 @@ _.WorldDrops =
 					i(66940),	-- Staff of Solemn Secrecy
 					i(55336),	-- Steelspark Staff
 					i(55444),	-- Steelspark Staff
-					-- [removed non-world drops below]
-					--i(59525),	-- Chelley's Staff of Dark Mending
-					--i(71360),	-- Spire of Scarlet Pain
 				}),
 				n(-338, {	-- 1H Swords
 					i(55454),	-- Angerfang Sword
@@ -244,11 +211,6 @@ _.WorldDrops =
 					un(7, i(55460)),	-- Rustmaul Sword
 					i(55456),	-- Splinterspear Sword
 					i(55453),	-- Steelspark Sword
-					-- [removed non-world drops below]
-					--i(68161),	-- Krol Decapitator
-					--i(59463),	-- Maldo's Sword Cane
-					--i(59521),	-- Soul Blade
-					--i(71006),	-- Volcanospike
 				}),
 				n(-339, {	-- 2H Swords
 					i(55463),	-- Angerfang Greatsword
@@ -273,9 +235,6 @@ _.WorldDrops =
 					i(55480),	-- Swamplight Wand
 					i(55485),	-- Thondroril Wand
 					i(67104),	-- Torchlight Wand
-					-- [removed non-world drops below]
-					--i(59460),	-- Theresa's Booklight
-					--i(55823),	-- Wand of Dark Worship
 				}),
 			}),	
 		},
