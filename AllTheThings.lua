@@ -4171,8 +4171,9 @@ app.BaseHeirloom = {
 			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
 		elseif key == "g" then
 			if app.CollectibleHeirlooms then
-				local total = C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
+				local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
 				if total then
+					SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
 					local armorTokens = {
 						app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 						app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
