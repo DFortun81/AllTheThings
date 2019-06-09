@@ -2882,15 +2882,17 @@ local function AttachTooltip(self)
 						-- Adventure Guide
 						gf = app:GetWindow("Prime").data.g[1];
 					elseif owner.tooltipText then
-						if owner.tooltipText == DUNGEONS_BUTTON then
-							-- Group Finder
-							gf = app:GetWindow("Prime").data.g[4];
-						elseif owner.tooltipText == BLIZZARD_STORE then
-							-- Shop
-							gf = app:GetWindow("Prime").data.g[15];
-						elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-							-- Achievements
-							gf = app:GetWindow("Prime").data.g[5];
+						if type(owner.tooltipText) == "string" then 
+							if owner.tooltipText == DUNGEONS_BUTTON then
+								-- Group Finder
+								gf = app:GetWindow("Prime").data.g[4];
+							elseif owner.tooltipText == BLIZZARD_STORE then
+								-- Shop
+								gf = app:GetWindow("Prime").data.g[15];
+							elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+								-- Achievements
+								gf = app:GetWindow("Prime").data.g[5];
+							end
 						end
 					end
 					if gf then
