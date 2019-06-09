@@ -126,6 +126,8 @@ local TooltipSettingsBase = {
 		["Models"] = true,
 		["LiveScan"] = false,
 		["Locations"] = 5,
+		["MainListScale"] = 1,
+		["MiniListScale"] = 1,
 		["Precision"] = 2,
 		["Progress"] = true,
 		["QuestGivers"] = true,
@@ -178,6 +180,8 @@ settings.Initialize = function(self)
 	FilterSettingsBase.__index = app.Presets[app.Class];
 	
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
+	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
+	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
 	if self:GetTooltipSetting("MinimapButton") then
@@ -2216,10 +2220,10 @@ end
 end)();
 
 ------------------------------------------
--- The "Features" Tab.					--
+-- The "Interface" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Features");
+local tab = settings:CreateTab("Interface");
 local TooltipLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
@@ -2585,76 +2589,8 @@ LocationsSlider.OnRefresh = function(self)
 	end
 end;
 
-
-local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ModulesLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -138, -8);
-ModulesLabel:SetJustifyH("LEFT");
-ModulesLabel:SetText("Modules & Mini Lists");
-ModulesLabel:Show();
-table.insert(settings.MostRecentTab.objects, ModulesLabel);
-
-local OpenMainListAutomatically = settings:CreateCheckBox("Open the Main List Automatically",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
-end);
-OpenMainListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att");
-OpenMainListAutomatically:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
-
-local OpenMiniListAutomatically = settings:CreateCheckBox("Open the Mini List Automatically",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:MiniList", self:GetChecked());
-end);
-OpenMiniListAutomatically:SetATTTooltip("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini");
-OpenMiniListAutomatically:SetPoint("TOPLEFT", OpenMainListAutomatically, "BOTTOMLEFT", 0, 4);
-
-local OpenProfessionListAutomatically = settings:CreateCheckBox("Open the Profession List Automatically",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
-end);
-OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof");
-OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
-
-local OpenRaidAssistantAutomatically = settings:CreateCheckBox("Open the Raid Assistant Automatically",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked());
-end);
-OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
-OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
-
-local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Open the World Quests List Automatically",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked());
-end);
-OpenWorldQuestsListAutomatically:SetATTTooltip("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq");
-OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
-
-local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox("Treat Currencies as Containers",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
-end,
-function(self)
-	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
-end);
-ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
-ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
-
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-DebuggingLabel:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -8, -8);
+DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
 DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
@@ -2721,6 +2657,140 @@ for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","
 	end
 	last = filter;
 end
+
+-- This creates the "Main List Scale" slider.
+local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
+MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
+MainListScaleSlider:SetPoint("TOP", ShowSpecializationRequirementsCheckBox, "BOTTOM", 0, 0);
+table.insert(settings.MostRecentTab.objects, MainListScaleSlider);
+settings.MainListScaleSlider = MainListScaleSlider;
+MainListScaleSlider.tooltipText = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
+MainListScaleSlider:SetOrientation('HORIZONTAL');
+MainListScaleSlider:SetWidth(280);
+MainListScaleSlider:SetHeight(20);
+MainListScaleSlider:SetValueStep(0.1);
+MainListScaleSlider:SetMinMaxValues(0.1, 4);
+MainListScaleSlider:SetObeyStepOnDrag(true);
+_G[MainListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+_G[MainListScaleSlider:GetName() .. 'High']:SetText('4')
+_G[MainListScaleSlider:GetName() .. 'Text']:SetText("Main List Scale")
+MainListScaleSlider.Label = MainListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
+MainListScaleSlider.Label:SetText(MainListScaleSlider:GetValue());
+MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("MainListScale") then
+		return 1;
+	end
+	settings:SetTooltipSetting("MainListScale", newValue)
+	app:GetWindow("Prime"):SetScale(newValue);
+end);
+
+-- This creates the "Mini List Scale" slider.
+local MiniListScaleSlider = CreateFrame("Slider", "ATTMiniListScaleSlider", settings, "OptionsSliderTemplate");
+MiniListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
+MiniListScaleSlider:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, -32);
+table.insert(settings.MostRecentTab.objects, MiniListScaleSlider);
+settings.MiniListScaleSlider = MiniListScaleSlider;
+MiniListScaleSlider.tooltipText = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+MiniListScaleSlider:SetOrientation('HORIZONTAL');
+MiniListScaleSlider:SetWidth(280);
+MiniListScaleSlider:SetHeight(20);
+MiniListScaleSlider:SetValueStep(0.1);
+MiniListScaleSlider:SetMinMaxValues(0.1, 4);
+MiniListScaleSlider:SetObeyStepOnDrag(true);
+_G[MiniListScaleSlider:GetName() .. 'Low']:SetText('0.1')
+_G[MiniListScaleSlider:GetName() .. 'High']:SetText('4')
+_G[MiniListScaleSlider:GetName() .. 'Text']:SetText("Mini List Scale")
+MiniListScaleSlider.Label = MiniListScaleSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
+MiniListScaleSlider.Label:SetText(MiniListScaleSlider:GetValue());
+MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("MiniListScale") then
+		return 1;
+	end
+	settings:SetTooltipSetting("MiniListScale", newValue)
+	for key,window in pairs(app.Windows) do
+		if key ~= "Prime" then
+			window:SetScale(newValue);
+		end
+	end
+end);
+
+end)();
+
+------------------------------------------
+-- The "Features" Tab.					--
+------------------------------------------
+(function()
+local tab = settings:CreateTab("Features");
+local ModulesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+ModulesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ModulesLabel:SetJustifyH("LEFT");
+ModulesLabel:SetText("Modules & Mini Lists");
+ModulesLabel:Show();
+table.insert(settings.MostRecentTab.objects, ModulesLabel);
+
+local OpenMainListAutomatically = settings:CreateCheckBox("Open the Main List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:MainList", self:GetChecked());
+end);
+OpenMainListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att");
+OpenMainListAutomatically:SetPoint("TOPLEFT", ModulesLabel, "BOTTOMLEFT", 4, 0);
+
+local OpenMiniListAutomatically = settings:CreateCheckBox("Open the Mini List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:MiniList", self:GetChecked());
+end);
+OpenMiniListAutomatically:SetATTTooltip("Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini");
+OpenMiniListAutomatically:SetPoint("TOPLEFT", OpenMainListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenProfessionListAutomatically = settings:CreateCheckBox("Open the Profession List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked());
+end);
+OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /att prof");
+OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenMiniListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenRaidAssistantAutomatically = settings:CreateCheckBox("Open the Raid Assistant Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:RaidAssistant"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:RaidAssistant", self:GetChecked());
+end);
+OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
+OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
+
+local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Open the World Quests List Automatically",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:WorldQuestsList", self:GetChecked());
+end);
+OpenWorldQuestsListAutomatically:SetATTTooltip("Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq");
+OpenWorldQuestsListAutomatically:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, 4);
+
+local ShowCurrenciesInWorldQuestsList = settings:CreateCheckBox("Treat Currencies as Containers",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("WorldQuestsList:Currencies"));
+end,
+function(self)
+	settings:SetTooltipSetting("WorldQuestsList:Currencies", self:GetChecked());
+end);
+ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
+ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
 end)();
 
 ------------------------------------------
