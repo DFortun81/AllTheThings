@@ -159,7 +159,7 @@ _.Zones =
 							i(68757),	-- Imbued Pioneer Gloves
 							i(68760),	-- Imbued Infantry Gauntlets
 							i(6550),	-- Soldier's Wristguards
-							i(6333),	-- Spikelash Dagger
+							un(7, i(6333)),	-- Spikelash Dagger
 						},
 					}), 
 					n(2191, {	-- Licillin
