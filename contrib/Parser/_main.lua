@@ -690,7 +690,14 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 -- BEGIN UNFINISHED SECTION:
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
   if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
+    elseif not t.groups then
+		if t.sourceQuest or t.sourceQuests or t.races or t.classes or t.crs then
+			-- DO NOT do that lol
+			error("you fool. you absolute clown.  your buffoonery will not be tolerated");
+		else
+			t = { ["groups"] = t };
+		end
+	end
     t.criteriaID = criteriaID;
   return t;
 end
