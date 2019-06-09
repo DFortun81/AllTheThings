@@ -573,7 +573,14 @@ _.Zones =
 --[[
 					qa(44700),	-- Stormheim
 					qa(39735),	-- Stormheim
-					qa(353),	-- Stormpike's Delivery
+]]--
+					q(353, {	-- Stormpike's Delivery
+						["qg"] = 1416,	-- Grimand Elmore
+						["coord"] = { 59.7, 33.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1097,	-- Elmore's Task
+					}),
+--[[
 					qa(1338),	-- Stormpike's Order
 					q(579),	-- Stormwind Library
 --]]

@@ -80,7 +80,10 @@ _.Zones =
 				
 				
 				q(26209, {	-- Murder Was The Case That They Gave Me
-					["sourceQuests"] = { 28562 },	-- Hero's Call: Westfall!
+					["sourceQuests"] = {
+						26378,	-- Hero's Call: Westfall! (Elwynn Forest version)
+						28562	-- Hero's Call: Westfall!
+					},
 					["coord"] = { 60.1, 19.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 42308,	-- Lieutenant Horatio Laine

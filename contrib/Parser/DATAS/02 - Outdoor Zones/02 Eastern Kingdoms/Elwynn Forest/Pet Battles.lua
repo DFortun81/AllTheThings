@@ -53,23 +53,10 @@ _.Zones =
 						}),
 					},
 				}),
-				q(31308, {	-- Learning the Ropes
-					["qg"] = 63014,	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
-					["races"] = ALLIANCE_ONLY,
-					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
-				}),
-				q(31309, {	-- On The Mend
-					["qg"] = 63014,	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31308,	-- Learning the Ropes
-				}),
-				q(31785, {	-- Level Up!
-					["qg"] = 63014,	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 31309,	-- On The Mend
+				q(3861, {	-- CLUCK!
+					["qg"] = 620,	-- Chicken
+					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
+					["repeatable"] = true,
 				}),
 				q(31550, {	-- Got one!
 					["qg"] = 63014,	-- Marcus Jensen
@@ -83,6 +70,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(31308, {	-- Learning the Ropes
+					["qg"] = 63014,	-- Marcus Jensen
+					["coord"] = { 40.3, 66.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+				}),
+				q(31785, {	-- Level Up!
+					["qg"] = 63014,	-- Marcus Jensen
+					["coord"] = { 40.3, 66.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31309,	-- On The Mend
+				}),
 				q(31724, {	-- Old MacDonald
 					["qg"] = 64330,	-- Julia Stevens
 					["coord"] = { 41.6, 83.6, 37 },
@@ -90,6 +89,12 @@ _.Zones =
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
+				}),
+				q(31309, {	-- On The Mend
+					["qg"] = 63014,	-- Marcus Jensen
+					["coord"] = { 40.3, 66.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 31308,	-- Learning the Ropes
 				}),
 			}),
 		}),

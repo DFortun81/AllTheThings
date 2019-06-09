@@ -6,138 +6,196 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
 			n(-17, {	-- Quests
---[[
-				qa(5545, {	-- A Bundle of Trouble
-					["qg"] = 10616,	-- 
+				q(5545, {	-- A Bundle of Trouble
+					["qg"] = 10616,	-- Supervisor Raelen
+					["coord"] = { 81.3, 66.1, 37 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(40, {	-- A Fishy Peril
-					["qg"] = 241,	-- 
+				q(40, {	-- A Fishy Peril
+					["qg"] = 241,	-- Remy
+					["coord"] = { 42.1, 67.2, 37 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29430, {	-- A Friend in Need
-					["qg"] = 51934,	-- 
-				}),
-				qa(26393, {	-- A Swift Message
-					["qg"] = 514,	-- 
-				}),
-				qa(26150, {	-- A Visit With Maybell
-					["qg"] = 253,	-- 
-				}),
-				qa(84, {	-- Back to Billy
-					["qg"] = 246,	-- 
-				}),
---]]
-				o(203733, {	-- Bounty Board
-					qa(46, {	-- Bounty on Murlocs
-						i(4840),	-- 
-						i(1158),	-- 
-						i(57248),	-- 
-						i(57521),	-- 
-						i(156980),	-- Solid Wooden Club
-						i(156981),	-- Field Tested Spear
-					}),
-					qa(26152),	-- Wanted: James Clark
-				}),
-				qa( 59, {	-- Cloth and Leather Armor
-					["qg"] = 261,	-- 
+				o(55, {	-- A half-eaten body
+					["coord"] = { 72.6, 60.3, 37 },
 					["g"] = {
-						i(1171),	-- 
-						i(2237),	-- 
-						i(57520),	-- 
-						i(131194),	-- 
+						q(45, {	-- Discover Rolf's Fate
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 37,	-- Find the Lost Guards
+						}),
 					},
 				}),
-				un(40, qa(1667, {	-- Dead-tooth Jack
+				q(26393, {	-- A Swift Message
+					["qg"] = 514,	-- Smith Argus
+					["coord"] = { 41.7, 65.5, 37 },
+					["races"] = { 1 },	-- Human
+				}),
+				q(26150, {	-- A Visit With Maybell
+					["qg"] = 253,	-- William Pestle
+					["coord"] = { 43.3, 65.7, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 60,	-- Kobold Candles
+				}),
+				q(84, {	-- Back to Billy
+					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["coord"] = { 34.4, 84.2, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 86,	-- Pie for Billy
+				}),
+				o(203733, {	-- Bounty Board
+					["coord"] = { 74.0, 72.3, 37 },
+					["g"] = {
+						q(46, {	-- Bounty on Murlocs
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(4840),	-- Long Bayonet
+								i(1158),	-- Solid Metal Club
+								i(57248),	-- Well-Used Greatsword
+								i(57521),	-- Marshal's Light Crossbow
+								i(156980),	-- Solid Wooden Club
+								i(156981),	-- Field Tested Spear
+							},
+						}),
+						q(26152, {	-- Wanted: James Clark
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				}),
+				q(59, {	-- Cloth and Leather Armor
+					["qg"] = 261,	-- Guard Thomas
+					["coord"] = { 73.9, 72.1, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 171,	-- Report to Thomas
+					["g"] = {
+						i(1171),	-- Well-Stitched Robe
+						i(2237),	-- Patched Pants
+						i(57520),	-- Studded Arm Protector
+						i(131194),	-- Hand-Welded Leggings
+					},
+				}),
+				q(1667, {	-- Dead-tooth Jack
+					["u"] = 40,
 					["classes"] = { 1 },	-- Warrior
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(6979)),	-- Haggard's Axe
 						un(2, i(6980)),	-- Haggard's Dagger
 						un(2, i(6983)),	-- Haggard's Hammer
 						un(2, i(6985)),	-- Haggard's Sword
 					},
-				})),
---[[
-				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- 
-					["repeatable"] = true,
 				}),
-				qa(112, {	-- Collecting Kelp
-					["qg"] = 253,	-- 
+				q(112, {	-- Collecting Kelp
+					["qg"] = 253,	-- William Pestle
+					["coord"] = { 43.3, 65.7, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 107,	-- Note to William
 				}),
-				qa(26394, {	-- Continue to Stormwind (add'l QG 43000)
-					["qg"] = 42983,	-- 
+				q(26394, {	-- Continue to Stormwind
+					["qg"] = 42983,	-- Bartlett the Brave
+					["coord"] = { 41.7, 64.6, 37 },
+					["races"] = { 1 },	-- Human
+					["sourceQuest"] = 26393,	-- A Swift Message
 				}),
-				o(55, {	-- A half-eaten body
-					qa(45),	  -- Discover Rolf's Fate
+				q(1097, {	-- Elmore's Task
+					["qg"] = 514,	-- Smith Argus
+					["coord"] = { 41.7, 65.5, 37 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(1097, {	-- Elmore's Task
-					["qg"] = 514,	-- 
+				q(37, {	-- Find the Lost Guards
+					["qg"] = 261,	-- Guard Thomas
+					["coord"] = { 73.9, 72.1, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35,	-- Further Concerns
 				}),
-				qa(37, {	-- Find the Lost Guards
-					["qg"] = 261,	-- 
-				}),
---]]
-				{	-- Eastern Escape
-					["questID"] = 54102,
+				q(54102, {	-- Eastern Escape
 					["qg"] = 146791,	-- Dark Ranger
-					["coord"] = { 34.5, 63.3 },
+					["coord"] = { 34.5, 63.3, 37 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54101,	-- On Track
-				},
-				qa(83, {	-- Fine Linen Goods
-					["qg"] = 278,	-- 
+				}),
+				q(83, {	-- Fine Linen Goods
+					["qg"] = 278,	-- Sara Timberlain
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(983),		-- 
-						i(57405),	-- 
-						i(57406),	-- 
-						i(131195),	-- 
-						i(2575),	-- 
+						i(983),		-- Red Linen Sash
+						i(57405),	-- Fine Leather Sash
+						i(57406),	-- Reinforced Plate Belt
+						i(131195),	-- Padded Chain Belt
+						i(2575),	-- Red Linen Shirt
 					},
 				}),
-				un(40, q(5624, {	-- Garments of the Light
+				q(35, {	-- Further Concerns
+					["qg"] = 240,	-- Marshal Dughan
+					["coord"] = { 42.1, 65.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 40,	-- A Fishy Peril
+				}),
+				q(5624, {	-- Garments of the Light
+					["u"] = 40,
 					["races"] = { 1 },	-- Human
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
 						un(2, i(16605)),	-- Friar's Robes of the Light
 					},
-				})),
---[[
-				o(203734, {	-- Westfall Deed
-					qa(184),	-- Furlbrow's Deed
 				}),
-				qa(35, {	-- Further Concerns
-					["qg"] = 240,	-- 
+				q(16, {	-- Give Gerard a Drink
+					["qg"] = 255,	-- Gerard Tiller
+					["coord"] = { 43.1, 85.5, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
-				qa(16, {	-- Give Gerard a Drink
-					["qg"] = 255,	-- 
+				q(47, {	-- Gold Dust Exchange
+					["qg"] = 241,	-- Remy "Two Times"
+					["coord"] = { 42.1, 67.2, 37 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(47, {	-- Gold Dust Exchange
-					["qg"] = 241,	-- 
+				i(1307, {	-- Gold Pickup Schedule
+					["coord"] = { 78.6, 67.2, 37 },
+					["crs"] = {
+						13159,	-- James Clark
+					},
+					["g"] = {
+						q(123, {	-- The Collector
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
 				}),
-				qa(87, {	-- Goldtooth
-					["qg"] = 247,	-- 
+				q(87, {	-- Goldtooth
+					["qg"] = 247,	-- Billy Maclure
+					["coord"] = { 43.1, 85.7, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 84,	-- Back to Billy
 				}),
-]]--
 				q(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963, 42256)
 					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
---[[
-				qa(60, {	-- Kobold Candles
-					["qg"] = 253,	-- 
+				q(60, {	-- Kobold Candles
+					["qg"] = 253,	-- William Pestle
+					["coord"] = { 43.3, 65.7, 37 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(32618, {	-- Learn To Ride
+				q(32618, {	-- Learn To Ride
 					["description"] = "This quest is available to Humans upon reaching level 20.",
-					["races"] = {1},	-- Human
+					["races"] = { 1 },	-- Human
+					["isBreadcrumb"] = true,
 				}),
---					qa(14079),	-- Learn to Ride in Elwynn Forest (LEGACY)
-				qa(85, {	-- Lost Necklace
-					["qg"] = 246,	-- 
+				q(14079, {	-- Learn to Ride in Elwynn Forest
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
---]]
-				qa(147, {	-- Manhunt
-					["qg"] = 42256,	-- 
+				q(85, {	-- Lost Necklace
+					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["coord"] = { 34.4, 84.2, 37 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(147, {	-- Manhunt
+					["qg"] = 42256,	-- Marshal McCree
+					["coord"] = { 81.8, 66.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 123,	-- The Collector
 					["g"] = {
 						i(1183),	-- Elastic Wristguards
 						i(57522),	-- McCree's Sparring Gloves
@@ -146,88 +204,109 @@ _.Zones =
 						i(57251),	-- "Collecting" Bag
 					},
 				}),
---[[
-				qa(107, {	-- Note to William
-					["qg"] = 248,	-- 
+				q(107, {	-- Note to William
+					["qg"] = 248,	-- Gramma Stonefield
+					["coord"] = { 34.9, 83.8, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 111,	-- Speak with Gramma
 				}),
-				qa(7678, {	-- Palomino Exchange
-					["qg"] = 384,	-- 
-				}),
-				qa(86, {	-- Pie for Billy
-					["qg"] = 247,	-- 
-				}),
---					q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
-
---]]
-				qa(88, {	-- Princess Must Die!
-					["qg"] = 244,	-- 
-				}),
-				{	-- On Track
-					["questID"] = 54101,
-					["qg"] = 146010,	-- Dark Ranger Lyana
-					["coord"] = { 30.5, 57.6 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 54100,	-- A Way Out
-				},
-				qa(52, {	-- Protect the Frontier
-					["qg"] = 261,	-- 
+				q(7678, {	-- Palomino Exchange
+					["u"] = 40,
+					["qg"] = 384,	-- Katie Hunter
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(57523),	-- 
-						i(57524),	-- 
-						i(57525),	-- 
-						i(131193),	-- 
+						i(18777),	-- Swift Brown Steed
+						i(16776),	-- Swift Palomino
+						i(18778),	-- Swift White Steed
 					},
 				}),
-				--[[
-				q(2158, {	-- Rest and Relaxation (replaced with previous quest)
-					["qg"] = 6774,	-- 
+				q(86, {	-- Pie for Billy
+					["qg"] = 247,	-- Billy Maclure
+					["coord"] = { 43.1, 85.7, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 85,	-- Lost Necklace
+				}),
+				q(88, {	-- Princess Must Die!
+					["qg"] = 244,	-- Ma Stonefield
+					["coord"] = { 34.6, 84.4, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				]]--
-				q(37112, {	-- Rest and Relaxation -- also triggered 2158. Possible human-only variant?
-					["qg"] = 6774,	-- Falkhaan Isenstrider
-					["coord"] = { 45.3, 49.0, 37 },
-					["races"] = ALLIANCE_ONLY, -- possibly non-human races?
+				q(54101, {	-- On Track
+					["qg"] = 146010,	-- Dark Ranger Lyana
+					["coord"] = { 30.5, 57.6, 37 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 54100,	-- A Way Out
 				}),
---[[
-				o(56, {	-- Rolf's corpse
-					qa(71),	-- Report to Thomas
-				}),
---]]
-				qa(11, {	-- Riverpaw Gnoll Bounty
-					["qg"] = 963,	-- 
+				q(52, {	-- Protect the Frontier
+					["qg"] = 261,	-- Guard Thomas
+					["coord"] = { 73.9, 72.1, 37 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(57527),	-- 
-						i(2238),	-- 
-						i(57526),	-- 
-						i(131192),	-- 
+						i(57523),	-- Wolf Fur Boots
+						i(57524),	-- Frontier Bracer
+						i(57525),	-- Shrouded Bearskin Breastplate
+						i(131193),	-- Steel Reinforced Bracer
+					},
+				}),
+				q(2158, {	-- Rest and Relaxation
+					["u"] = 40,
+					["qg"] = 6774,	-- Falkhaan Isenstrider
+					["lvl"] = 4,
+					["coord"] = { 45.3, 49.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(37112, {	-- Rest and Relaxation
+					["qg"] = 6774,	-- Falkhaan Isenstrider
+					["lvl"] = 4,
+					["coord"] = { 45.3, 49.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11, {	-- Riverpaw Gnoll Bounty
+					["qg"] = 963,	-- Deputy Rainer
+					["coord"] = { 24.2, 74.4, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
+					["g"] = {
+						i(57527),	-- Stone Cairne Boots
+						i(2238),	-- Urchin's Pants
+						i(57526),	-- Gnollbreaker's Boots
+						i(131192),	-- Riverpaw Gnoll Boots
 						un(2, i(2249)),	-- Militia Buckler
 					},
 				}),
---[[
-				qa(111, {	-- Speak with Gramma
-					["qg"] = 252,	-- 
+				o(56, {	-- Rolf's corpse
+					["coord"] = { 79.7, 55.5, 37 },
+					["g"] = {
+						q(71, {	-- Report to Thomas
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 45,	-- Discover Rolf's Fate
+						}),
+					},
 				}),
-				n(13159, {	-- James Clark
-					i(1307, {	-- Gold Pickup Schedule
-						qa(123),	-- The Collector
-					}),
+				q(111, {	-- Speak with Gramma
+					["qg"] = 252,	-- Tommy Joe Stonefield
+					["coord"] = { 29.8, 85.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 106,	-- Young Lovers
 				}),
-				qa(114, {	-- The Escape
-					["qg"] = 256,	-- 
+				q(114, {	-- The Escape
+					["qg"] = 256,	-- William Pestle
+					["coord"] = { 43.3, 65.7, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 112,	-- Collecting Kelp
 				}),
-				qa(76, {	-- The Jasperlode Mine
-					["qg"] = 240,	-- 
+				q(76, {	-- The Jasperlode Mine
+					["qg"] = 240,	-- Marshal Dughan
+					["coord"] = { 42.1, 65.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 62,	-- The Fargodeep Mine
 				}),
---]]
-
 				q(62, {	-- The Fargodeep Mine
 					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, 37 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				{	-- The Battle For Broken Shore
-					["questID"] = 42740,
+				q(42740, {	-- The Battle For Broken Shore
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(139389, {	-- Charred Locket
@@ -237,36 +316,72 @@ _.Zones =
 							},
 						}),
 					},
-				},
-				qart(qa(42504, {	-- The Unseen Blade
+				}),
+				qart(q(42504, {	-- The Unseen Blade
 					["qg"] = 107979,	-- Garona Halforcen
+					["lvl"] = 100,
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },
 				})),
-				qart(qh(42627, {	-- The Unseen Blade
+				qart(q(42627, {	-- The Unseen Blade
 					["qg"] = 107979,	-- Garona Halforcen
+					["lvl"] = 100,
+					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 				})),
-				o(156561, {	-- Wanted Poster (add'l object QG 68)
-					qa(176, {	-- Wanted: "Hogger"
-						i(6085),	-- Footman Tunic
-						i(6084),	-- Stormwind Guard Leggings
-						i(60219),	-- Balanced Spell Staff
-						i(131199),	-- Lion Guard Chainmail
-						un(2, i(6215)),	-- Balanced Fighting Stick
-					}),
+				o(307265, {	-- Wanted Poster -- also provided by 307325 (24.5, 74.6)
+					["coords"] = {
+						{ 24.5, 78.2, 37 },
+						{ 24.5, 74.6, 37 },
+					},
+					["g"] = {
+						q(176, {	-- Wanted: "Hogger"
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(6085),	-- Footman Tunic
+								i(6084),	-- Stormwind Guard Leggings
+								i(60219),	-- Balanced Spell Staff
+								i(131199),	-- Lion Guard Chainmail
+								un(2, i(6215)),	-- Balanced Fighting Stick
+							},
+						}),
+					},
+				}),
+				q(239, {	-- Westbrook Garrison Needs Help!
+					["qg"] = 240,	-- Marshal Dughan
+					["coord"] = { 42.1, 65.9, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 47,	-- Gold Dust Exchange
+					["isBreadcrumb"] = true,
+				}),
+				o(203734, {	-- Westfall Deed?
+					["coord"] = { 24.7, 95.2, 37 },
+					["g"] = {
+						q(184, {	-- Furlbrow's Deed
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				}),
+				q(7677, {	-- White Stallion Exchange
+					["u"] = 40,
+					["qg"] = 384,	-- Katie Hunter
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(18777),	-- Swift Brown Steed
+						i(18776),	-- Swift Palomino
+						i(18778),	-- Swift White Steed
+					},
+				}),
+				q(106, {	-- Young Lovers
+					["qg"] = 251,	-- Maybell Maclure
+					["coord"] = { 43.1, 89.6, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26150,	-- A Visit With Maybell
 				}),
 --[[
-				qa(239, {	-- Westbrook Garrison Needs Help!
-					["qg"] = 240,	-- 
-				}),
-				qa(7677, {	-- White Stallion Exchange
-					["qg"] = 384,	-- 
-				}),
-				qa(106, {	-- Young Lovers
-					["qg"] = 251,	-- 
-				}),
---]]
---					q(7937),	-- Your Fortune Awaits You... (REMOVED?)
+				q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
+				q(7937),	-- Your Fortune Awaits You... (DMF, item-granted. Possibly removed)
+]]--
 			}),
 		}),
 	}),

@@ -3249,6 +3249,7 @@ AllTheThings.L = {
 		[298963] = "Weathered Nazmani Tablet",
 		[298965] = "Cracked Tablet",
 		[299073] = "Fractured Tablet",
+		[307265] = "Wanted Poster",
 		[310709] = "Waterlogged Chest",	-- New Chest in Elywynn since 8.1
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
