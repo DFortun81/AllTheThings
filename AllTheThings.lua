@@ -4061,7 +4061,13 @@ app.BaseHeirloomLevel = {
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
 		elseif key == "collected" then
-			return t.level <= (select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID)) or 0);
+			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
+			if t.level <= level then return true; end
+			level = select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID));
+			if level then
+				SetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, level);
+				if t.level <= level then return true; end
+			end
 		elseif key == "text" then
 			return t.link or ("Upgrade Level " .. t.level);
 		elseif key == "link" then
