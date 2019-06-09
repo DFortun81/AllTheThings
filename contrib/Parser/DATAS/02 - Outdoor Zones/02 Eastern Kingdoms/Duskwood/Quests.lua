@@ -61,6 +61,7 @@ _.Zones =
 					["g"] = {
 						i(60934),	-- 
 						i(60935),	-- 
+						i(60936),	-- Jittering Band
 						i(131604),	-- 
 					},
 				}),
@@ -97,7 +98,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60908),	-- 
-						i(60909),	-- 
+						i(60909),	--
+						i(60910),	-- Starry Band
 						i(131580),	-- 
 					},
 				}),
@@ -124,6 +126,7 @@ _.Zones =
 					["qg"] = 265,	-- 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(60898),	-- Ghost Hair Band
 						i(60899),	-- 
 						i(60900),	-- 
 						i(60901),	-- 
@@ -202,7 +205,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60902),	-- 
-						i(60903),	-- 
+						i(60903),	--
+						i(60904),	-- Ring of the Fool
 						i(131579),	-- 
 					},
 				}),
@@ -210,6 +214,7 @@ _.Zones =
 					q(26754, {	-- Morbent's Bane
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(60938),	-- Yorgen's Boon
 							i(60939),	-- 
 							i(60940),	-- 
 							i(131596),	-- 
@@ -472,6 +477,7 @@ _.Zones =
 					["qg"] = 264,	-- 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						i(60895),	-- Ebonlocke Band
 						i(60896),	-- 
 						i(60897),	-- 
 						i(131564),	-- 

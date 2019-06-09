@@ -250,6 +250,7 @@ _.Zones =
 							["qg"] = 135259,	-- Taelia
 							["sourceQuests"] = { 50790 },	-- Hot Pursuit [Alliance Only]
 							["groups"] = {
+								i(155022),	-- Freebooter Tunic
 								i(155031),	-- Sea Raider's Greathelm
 								i(155020),	-- Sea Raider's Breastplate
 							},

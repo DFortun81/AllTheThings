@@ -384,6 +384,7 @@ _.Zones =
 				qa(26737, {	-- Stopping Kurzen's Legacy
 					["qg"] = 469,	-- 
 					["g"] = {
+						i(61049),	-- Ring of Forgotten Causes
 						i(61051),	-- Guerilla Breastplate
 						i(61050),	-- Expedition Scouting Gear
 						i(131592),	-- Expedition Scout's Hauberk

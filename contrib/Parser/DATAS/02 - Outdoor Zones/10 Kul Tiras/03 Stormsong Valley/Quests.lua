@@ -587,6 +587,7 @@ _.Zones =
 							["criteriaID"] = 2,	-- A House In Peril [Criteria]
 						},
 						i(155166),	-- Dread Corsair Breastplate
+						i(155168),	-- Darkwater Tunic
 						i(160880),	-- Dread Corsair Pauldrons
 						
 						-- TODO: Find out what the other quest rewards for this quest are, they aren't listed in WoWHead. - Crieve
