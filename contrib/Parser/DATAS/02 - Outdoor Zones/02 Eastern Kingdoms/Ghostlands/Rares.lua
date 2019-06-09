@@ -13,7 +13,7 @@ _.Zones =
 						{ 29.6, 88.8, 95 },
 						{ 35.6, 89.6, 95 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(31270),	-- Banshee Rod
 						i(31269),	-- Ghoul Hammer
 						i(31268),	-- Abomination Cleaver
