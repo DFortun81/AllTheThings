@@ -1571,7 +1571,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- Show the unobtainable source text
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
-						if j.u and not j.crs then
+						if j.u and (not j.crs then or paramA == "itemID" or paramA == "sourceID") then
 							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
 							break;
 						end
