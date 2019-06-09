@@ -587,7 +587,7 @@ function app:PlayCompleteSound()
 		local t = app.Settings.AUDIO_COMPLETE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -602,7 +602,7 @@ function app:PlayFanfare()
 		local t = app.Settings.AUDIO_FANFARE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -612,7 +612,7 @@ function app:PlayRareFindSound()
 		local t = app.Settings.AUDIO_RAREFIND_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -622,7 +622,7 @@ function app:PlayRemoveSound()
 		local t = app.Settings.AUDIO_REMOVE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
