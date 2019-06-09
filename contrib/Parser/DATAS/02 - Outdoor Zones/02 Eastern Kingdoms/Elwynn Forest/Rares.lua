@@ -3,34 +3,39 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(37, {		-- Elwynn Forest
+	m(13, {	-- Eastern Kingdoms
+		m(37, {	-- Elwynn Forest
 			n(-16, {	-- Rares
-				n(51077, { 	-- Bushtail
-					i(68744),	-- Imbued Pioneer Cloak
-					i(68743),	-- Imbued Infantry Cloak
-					i(6267),	-- Disciple's Pants
-					i(68750),	-- Imbued Pioneer Belt
-					i(68749),	-- Imbued Disciple's Bracers
-					i(68747),	-- Imbued Disciple's Sash
-					i(6269),	-- Pioneer Trousers
-					i(6337),	-- Infantry Leggings
-					i(68761),	-- Imbued Infantry Boots
-					i(68754),	-- Imbued Disciple's Boots
-					i(68748),	-- Imbued Disciple's Cloak
-					i(68753),	-- Imbued Infantry Bracers
-					i(68758),	-- Imbued Pioneer Boots
-					i(68757),	-- Imbued Pioneer Gloves
-					i(68751),	-- Imbued Pioneer Bracers
-					i(68762),	-- Imbued Cadet Cloak
-					i(68752),	-- Imbued Infantry Belt
-					i(68755),	-- Imbued Disciple's Gloves
-					i(68759),	-- Imbued Gypsy Cloak
-				}),
-				n(472, { 	-- Fedfennel
+				n(51077, {	-- Bushtail
 					["coords"] = {
-						{ 66.56, 40.74, 37 },
+						{ 83.8, 85.0, 37 },
+						{ 83.0, 82.8, 37 },
+						{ 81.6, 85.2, 37 },
 					},
+					["g"] = {
+						i(68744),	-- Imbued Pioneer Cloak
+						i(68743),	-- Imbued Infantry Cloak
+						i(6267),	-- Disciple's Pants
+						i(68750),	-- Imbued Pioneer Belt
+						i(68749),	-- Imbued Disciple's Bracers
+						i(68747),	-- Imbued Disciple's Sash
+						i(6269),	-- Pioneer Trousers
+						i(6337),	-- Infantry Leggings
+						i(68761),	-- Imbued Infantry Boots
+						i(68754),	-- Imbued Disciple's Boots
+						i(68748),	-- Imbued Disciple's Cloak
+						i(68753),	-- Imbued Infantry Bracers
+						i(68758),	-- Imbued Pioneer Boots
+						i(68757),	-- Imbued Pioneer Gloves
+						i(68751),	-- Imbued Pioneer Bracers
+						i(68762),	-- Imbued Cadet Cloak
+						i(68752),	-- Imbued Infantry Belt
+						i(68755),	-- Imbued Disciple's Gloves
+						i(68759),	-- Imbued Gypsy Cloak
+					},
+				}),
+				n(472, {	-- Fedfennel
+					["coord"] = { 66.5, 40.7, 37 },
 					["g"] = {
 						i(68744),	-- Imbued Pioneer Cloak
 						i(68743),	-- Imbued Infantry Cloak
@@ -50,9 +55,7 @@ _.Zones =
 					},
 				}),
 				n(100, {	-- Gruff Swiftbite
-					["coords"] = {
-						{ 25.99, 92.07, 37 },
-					},
+					["coord"] = { 25.9, 92.0, 37 },
 					["g"] = {
 						i(68744),	-- Imbued Pioneer Cloak
 						i(68743),	-- Imbued Infantry Cloak
@@ -69,10 +72,8 @@ _.Zones =
 						i(38513), 	-- Boarhide Leggings,
 					},
 				}),
-				n(99, { 	-- Morgaine the Sly
-					["coords"] = {
-						{ 30.82, 64.66, 37 },
-					},
+				n(99,  {	-- Morgaine the Sly
+					["coord"] = { 30.8, 64.6, 37 },
 					["g"] = {
 						i(68743),	-- Imbued Infantry Cloak
 						i(68744),	-- Imbued Pioneer Cloak
@@ -91,10 +92,10 @@ _.Zones =
 						i(1917), 	-- Jeweled Dagger
 					},
 				}),
-				n(471, { 	-- Mother Fang
+				n(471, {	-- Mother Fang
 					["coords"] = {
-						{ 54.33, 31.14, 40 },	-- Actual Spawn
-						{ 61.75, 53.94, 37 },	-- Mine Entrance
+						{ 54.3, 31.1, 40 },	-- Actual Spawn
+						{ 61.7, 53.9, 37 },	-- Mine Entrance
 					},
 					["g"] = {
 						i(68743),	-- Imbued Infantry Cloak
@@ -115,10 +116,8 @@ _.Zones =
 						i(3000),	-- Brood Mother Carapace
 					},
 				}),
-				n(61, { 	-- Thuros Lightfingers
-					["coords"] = {
-						{ 50.61, 83.06, 37 },
-					},
+				n(61,  {	-- Thuros Lightfingers
+					["coord"] = { 50.6, 83.0, 37 },
 					["g"] = {
 						i(68744),	-- Imbued Pioneer Cloak
 						i(68743),	-- Imbued Infantry Cloak
@@ -139,10 +138,8 @@ _.Zones =
 				}),
 --					n(50926, { 	-- Grizzled Ben	}),
 --					n(50916, { 	-- Lamepaw the Whimperer	}),
-				n(79, { 	-- Narg the Taskmaster
-					["coords"] = {
-						{ 38.13, 83.34, 37 },
-					},
+				n(79,  {	-- Narg the Taskmaster
+					["coord"] = { 38.1, 83.3, 37 },
 					["g"] = {
 						i(68744),	-- Imbued Pioneer Cloak
 						i(68743),	-- Imbued Infantry Cloak

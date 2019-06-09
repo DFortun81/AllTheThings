@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(37, {		-- Elwynn Forest
+	m(13, {	-- Eastern Kingdoms
+		m(37, {	-- Elwynn Forest
 			m(423, {	-- Northshire
 				n(-16, {	-- Rares
 					n(62, {	-- Gug Fatcandle

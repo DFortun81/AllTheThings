@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(37, {		-- Elwynn Forest
+	m(13, {	-- Eastern Kingdoms
+		m(37, {	-- Elwynn Forest
 			n(-25, {	-- Pet Battle
 				p(374), 	-- Black Lamb
 				p(459), 	-- Cat
@@ -15,7 +15,8 @@ _.Zones =
 				p(379), 	-- Squirrel
 				p(675), 	-- Stormwind Rat
 				n(63014, {	-- Marcus Jensen
-					["groups"] = {
+					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+					["g"] = {
 						p(138, {	-- Blue Moth
 							["races"] = {11}	-- Draenei
 						}),
@@ -35,11 +36,10 @@ _.Zones =
 							["races"] = {3,7}	-- Gnome, Dwarf
 						}),
 					},
-					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 				}),
 				qa(31308, {	-- Learning the Ropes
-					["qg"] = 63014,	-- 
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
+					["qg"] = 63014,	-- 
 				}),
 				qa(31309, {	-- On The Mend
 					["qg"] = 63014,	-- 
@@ -51,8 +51,8 @@ _.Zones =
 					["qg"] = 63014,	-- 
 				}),
 				q(31693, {	-- Julia Stevens
-					["qg"] = 64330,	-- 
 					["isDaily"] = true,
+					["qg"] = 64330,	-- 
 				}),
 				qa(31724, {	-- Old MacDonald
 					["qg"] = 64330,	-- 

@@ -3,11 +3,12 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(37, {		-- Elwynn Forest
+	m(13, {	-- Eastern Kingdoms
+		m(37, {	-- Elwynn Forest
 			n(-2, {	-- Vendors
 				a(n(844, {	-- Antonio Perelli <Traveling Salesman>
-					["groups"] = {
+					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
+					["g"] = {
 						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
 						i(4794),	-- Wolf Bracers
@@ -15,7 +16,6 @@ _.Zones =
 						i(4778),	-- Heavy Spiked Mace
 						i(4777),	-- Ironwood Maul
 					},
-					["description"] = "This vendor travels in a big circuit from Elwynn Forest(stopping in Goldshire) to Westfall(stopping in Sentinel Hill) to Duskwood(stopping in Darkshire) to Redridge Mountains(stopping in Lakeshire) and then back to Elwynn Forest, so if you cannot find him in this zone, check one of the other three zones.|r",
 				})),
 				a(n(6367, {	-- Donni Anthania <Crazy Cat Lady>
 					i(8485),	-- Cat Carrier (Bombay)

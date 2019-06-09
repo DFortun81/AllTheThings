@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(37, {		-- Elwynn Forest
+	m(13, {	-- Eastern Kingdoms
+		m(37, {	-- Elwynn Forest
 			n(-228, {	-- Flight Path
 				fp(589, {	-- Eastvale Logging Camp, Elwynn
 					["coord"] = { 81.8, 66.4, 37 },
