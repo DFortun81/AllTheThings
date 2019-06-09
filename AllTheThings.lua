@@ -1854,7 +1854,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										progress = progress + 1;
 										infoString = infoString .. " " .. GetCompletionIcon(1);
 									else
-										infoString = infoString .. " " .. GetCompletionIcon(0);
+										infoString = infoString .. " " .. GetCompletionIcon();
 									end
 								end
 							end
