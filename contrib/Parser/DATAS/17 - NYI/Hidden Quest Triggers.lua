@@ -11,6 +11,8 @@ _.NeverImplemented =
 		q(37187),	-- The Dark Portal
 		q(37677),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Maraad
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
+		q(47954),	-- Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths
+		
 		q(35894),	-- Dire Maul: Bonus objective complete
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion

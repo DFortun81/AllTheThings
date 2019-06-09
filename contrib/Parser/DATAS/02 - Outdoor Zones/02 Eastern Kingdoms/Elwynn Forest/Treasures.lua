@@ -7,7 +7,7 @@ _.Zones =
 		m(37, {	-- Elwynn Forest
 			n(-212, {	-- Treasure Chest
 				o(310709, {	-- Waterlogged Chest
-				--	["questID"] = 34236,
+					["questID"] = 54131,
 					["coord"] = { 32.3, 63.6, 37 },
 					["g"] = {
 						i(3678),	-- Recipe: Crocolisk Steak
