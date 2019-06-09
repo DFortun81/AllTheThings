@@ -38,10 +38,8 @@ _.WorldDrops =
 					i(25223),	-- Windcaller Hatchet
 					i(25224),	-- Slavemaster Axe
 					i(25225),	-- Deepforge Broadaxe
-					i(30722),	-- Ethereum Nexus-Reaver
 					i(31291),	-- Crystalforged War Axe
 					i(31318),	-- Singing Crystal Axe
-					i(32663),	-- Apexis Cleaver
 				}),	
 				n(-346, {	-- Bows
 					i(25240),	-- Azerothian Longbow
@@ -105,13 +103,10 @@ _.WorldDrops =
 					i(25307),	-- Shadow Dagger
 					i(25308),	-- Thunder Spike
 					i(25309),	-- Warpdagger
-					i(29391),	-- Pulse Dagger
-					i(30723),	-- Talon of the Tempest
 					i(31142),	-- Blade of Trapped Knowledge
 					i(31193),	-- Blade of Unquenched Thirst
 					i(31305),	-- Ced's Carver
 					i(31331),	-- The Night Blade
-					i(32659),	-- Crystal-Infused Shiv
 				}),
 				n(-348, {	-- Fist Weapons	
 					i(25184),	-- Ravager Claws
@@ -128,8 +123,6 @@ _.WorldDrops =
 					i(25195),	-- Diamond Tipped Claws
 					i(25196),	-- Boneshredder Claws
 					i(25197),	-- Razor Scythes
-					i(29371),	-- Nexus-Claw
-					i(29372),	-- Void-Talon
 					i(30755),	-- Mag'hari Fighting Claw
 				}),
 				n(-345, {	-- Guns
@@ -147,7 +140,6 @@ _.WorldDrops =
 					i(25279),	-- Sen'jin Longrifle
 					i(25280),	-- Game Hunter Musket
 					i(25281),	-- Big-Boar Battle Rifle
-					i(30724),	-- Barrel-Blade Longrifle
 					i(31204),	-- The Gunblade
 					i(31323),	-- Don Santos' Famous Hunting Rifle
 				}),			
@@ -198,7 +190,6 @@ _.WorldDrops =
 					i(31139),	-- Fist of Reckoning
 					i(31304),	-- The Essence Focuser
 					i(31342),	-- The Ancient Scepter of Sue-Min
-					i(32661),	-- Apexis Crystal Mace
 				}),
 				n(-337, {	-- 2H Maces
 					i(25128),	-- Shining Mace
@@ -233,8 +224,6 @@ _.WorldDrops =
 					i(25237),	-- Nether Trident
 					i(25238),	-- Hellfire War Spear
 					i(25239),	-- Legend's Glaive
-					i(29377),	-- Ethereum Phase-Spear
-					i(30753),	-- Warphorn Spear
 				}),			
 				n(-332, {	-- Shield
 					i(25072),	-- Northman's Shield
@@ -281,12 +270,10 @@ _.WorldDrops =
 					i(25335),	-- Feral Warp-Staff
 					i(25336),	-- Splintering Greatstaff
 					i(25337),	-- Swarming Sting-Staff
-					i(30732),	-- Exodar Life-Staff
 					i(31186),	-- Braxxis' Staff of Slumber
 					i(31289),	-- Staff of Divine Infusion
 					i(31308),	-- The Bringer of Death
 					i(31334),	-- Staff of Natural Fury
-					i(32662),	-- Flaming Quartz Staff
 				}),
 				n(-338, {	-- 1H Swords
 					i(25142),	-- Telaari Longblade
@@ -305,12 +292,9 @@ _.WorldDrops =
 					i(25153),	-- Gladiator Greatblade
 					i(25154),	-- Blood Groove Blade
 					i(25155),	-- Iron Skull Sword
-					i(29380),	-- Ethereum Phase Blade
-					i(30733),	-- Hope Ender
 					i(31234),	-- Crystalblade of the Draenei
 					i(31332),	-- Blinkstrike
 					i(31336),	-- Blade of Wizardry
-					i(32660),	-- Crystalforged Sword
 				}),
 				n(-339, {	-- 2H Swords
 					i(25156),	-- Royal Crusader Sword
@@ -343,7 +327,6 @@ _.WorldDrops =
 					i(25293),	-- Draenethyst Wand
 					i(25294),	-- Dragonscale Wand
 					i(25295),	-- Flawless Wand
-					i(29378),	-- Starheart Baton
 				}),
 			}),	
 		},
