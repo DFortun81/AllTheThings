@@ -21,7 +21,14 @@ _.Zones =
 						crit(4, {	-- Mor'ladim
 							["sourceQuest"] = 26797,	-- A Daughter's Love
 						}),
-						crit(5),	-- Citizens of Darkshire
+						crit(5, {	-- Citizens of Darkshire
+							["sourceQuests"] = {
+								26686,	-- Bones That Walk
+								26623,	-- Dusky Crab Cakes
+								26620,	-- Seasoned Wolf Kabobs
+								26691,	-- Worgen in the Woods
+							},
+						}),
 					},
 				}),
 				q(26720, {	-- A Curse We Cannot Lift
@@ -76,13 +83,15 @@ _.Zones =
 					},
 				}),
 				q(26686, {	-- Bones That Walk
-					["qg"] = 264,	-- 
+					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["coord"] = { 73.5, 46.9, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26645,	-- The Night Watch
 					["g"] = {
-						i(60941),	-- 
-						i(60942),	-- 
-						i(60943), -- Signet of the Night Watch
-						i(131581),	-- 
+						i(60941),	-- Shoulderwraps of Honor
+						i(60942),	-- Watch Master's Breastplate
+						i(60943),	-- Signet of the Night Watch
+						i(131581),	-- Night Watcher's Mail
 					},
 				}),
 				q(253, {	-- Bride of the Embalmer
@@ -482,10 +491,12 @@ _.Zones =
 					["sourceQuest"] = 26723,	-- The Fate of Morbent Fel
 				}),
 				q(26645, {	-- The Night Watch
-					["qg"] = 264,	-- 
+					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["coord"] = { 73.5, 46.9, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 				}),
-				q(26689, {	-- The Rotting Orchard -- part of crit(5)
+				q(26689, {	-- The Rotting Orchard
 					["qg"] = 663,	-- Calor
 					["coord"] = { 75.3, 48.0, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -520,8 +531,10 @@ _.Zones =
 					["sourceQuest"] = 26785,	-- Part of the Pack
 				}),
 				q(26690, {	-- Vile and Tainted
-					["qg"] = 663,	-- 
+					["qg"] = 663,	-- Calor
+					["coord"] = { 75.3, 48.0, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26689,	-- The Rotting Orchard
 				}),
 				q(25235, {	-- Vulgar Vul'Gol -- aa
 					["qg"] = 888,	-- Watcher Dodds
@@ -556,13 +569,15 @@ _.Zones =
 					},
 				}),
 				q(26691, {	-- Worgen in the Woods
-					["qg"] = 663,	-- 
+					["qg"] = 663,	-- Calor
+					["coord"] = { 75.3, 48.0, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26690,	-- Vile and Tainted
 					["g"] = {
-						i(60931),	-- 
-						i(60932),	-- 
-						i(60933),	-- 
-						i(131582),	-- 
+						i(60931),	-- Vigilante's Gloves
+						i(60932),	-- Cold Boots
+						i(60933),	-- Carevin's Breastplate
+						i(131582),	-- Callous Greaves
 					},
 				}),
 				q(26688, {	-- Worgen in the Woods -- aa
