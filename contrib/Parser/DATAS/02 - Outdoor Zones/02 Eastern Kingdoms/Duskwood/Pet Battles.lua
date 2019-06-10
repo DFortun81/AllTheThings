@@ -41,6 +41,11 @@ _.Zones =
 					p(400, {	-- Widow Spiderling
 						["crs"] = { 61259 },	-- Widow Spiderling
 					}),
+					q(3861, {	-- CLUCK!
+						["qg"] = 620,	-- Chicken
+						["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
+						["repeatable"] = true,
+					}),
 					q(31850, {	-- Eric Davidson
 						["qg"] = 65655,	-- Eric Davidson
 						["coord"] = { 19.8, 44.6, 47 },

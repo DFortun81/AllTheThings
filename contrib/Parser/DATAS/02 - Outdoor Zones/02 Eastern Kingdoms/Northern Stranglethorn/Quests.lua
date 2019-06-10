@@ -434,10 +434,13 @@ _.Zones =
 						i(131500),	-- Bal'lal Waistguard
 					},
 				}),
---[[
-				qa(26735, {	-- The Fate of Kurzen
-					["qg"] = 469,	-- 
+				q(26735, {	-- The Fate of Kurzen
+					["qg"] = 469,	-- Lieutenant Doren
+					["coord"] = { 47.5, 10.2, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
+--[[
 				q(26269, {	-- The Green Hills of Stranglethorn
 					["qg"] = 716,	-- 
 				}),

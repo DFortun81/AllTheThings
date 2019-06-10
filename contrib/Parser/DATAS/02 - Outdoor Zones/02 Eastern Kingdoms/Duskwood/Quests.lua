@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(47, {		-- Duskwood
-			n(-17,  {	-- Quests
+	m(13, {	-- Eastern Kingdoms
+		m(47, {	-- Duskwood
+			n(-17, {	-- Quests
 				ach(12430, {	-- Duskwood Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -55,7 +55,7 @@ _.Zones =
 						i(156955),	-- Reconditioned Archeus
 					},
 				}),
-				q(26707, {	-- A Deadly Vine -- aa
+				q(26707, {	-- A Deadly Vine
 					["qg"] = 43738,	-- Apprentice Fess
 					["coord"] = { 44.9, 67.4, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -69,17 +69,22 @@ _.Zones =
 					},
 				}),
 				qart(q(40785, {	-- A Foe of the Dark
-					["qg"] = 101651,	-- 
-					["classes"] = {11},	-- Druid
+					["qg"] = 101651,	-- Belysra Starbreeze
+					["lvl"] = 98,
+					["coord"] = { 48.8, 34.4, 47 },
+					["classes"] = { 11 },	-- Druid
+					["sourceQuest"] = 40784,	-- Its Rightful Place
 				})),
 				q(26787, {	-- Bear In Mind
-					["qg"] = 288,	-- 
+					["qg"] = 288,	-- Jitters
+					["coord"] = { 18.6, 58.3, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26721,	-- The Jitters-Bugs
 					["g"] = {
-						i(60934),	-- 
-						i(60935),	-- 
+						i(60934),	-- John's Stylish Robe
+						i(60935),	-- Raven Hill Sands
 						i(60936),	-- Jittering Band
-						i(131604),	-- 
+						i(131604),	-- Raven Hill Boots
 					},
 				}),
 				q(26686, {	-- Bones That Walk
@@ -112,17 +117,22 @@ _.Zones =
 					},
 				}),
 				q(43382, {	-- Champion: Natalie Seline
-					["qg"] = 110684,	-- 
-					["classes"] = {5},	-- Priest
+					["qg"] = 110684,	-- Natalie Seline
+					["lvl"] = 110,
+					["coord"] = { 24.2, 37.8, 47 },
+					["classes"] = { 5 },	-- Priest
+					["sourceQuest"] = 43392,	-- Into the Void
 				}),
 				q(26685, {	-- Classy Glass
-					["qg"] = 276,	-- 
+					["qg"] = 276,	-- Viktori Prism'Antras
+					["coord"] = { 79.5, 47.4, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26684,	-- The Insane Ghoul
 					["g"] = {
-						i(60908),	-- 
-						i(60909),	--
+						i(60908),	-- Stargazer's Pantaloons
+						i(60909),	-- Astronomer's Handwraps
 						i(60910),	-- Starry Band
-						i(131580),	-- 
+						i(131580),	-- Cosmologist's Grips
 					},
 				}),
 				q(26672, {	-- Clawing at the Truth
@@ -130,9 +140,6 @@ _.Zones =
 					["coord"] = { 79.0, 44.1, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26671,	-- The Fate of Stalvan Mistmantle
-				}),
-				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- 
 				}),
 				q(26760, {	-- Cry For The Moon
 					["qg"] = 43730,	-- Oliver Harris
@@ -172,7 +179,7 @@ _.Zones =
 						un(2, i(3559)),	-- Night Watch Gauntlets
 					},
 				}),
-				q(26623, {	-- Dusky Crab Cakes -- aa
+				q(26623, {	-- Dusky Crab Cakes
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.7, 43.4, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -180,21 +187,27 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
 				}),
-				q(40834, {	-- Following the Curse
-					["qg"] = 100323,	-- 
-					["classes"] = {11},	-- Druid
-				}),
-				q(40588, {	-- Following the Curse
+				qart(q(40834, {	-- Following the Curse
+					["qg"] = 100323,	-- Revil Kost
+					["lvl"] = 98,
+					["coord"] = { 77.4, 36.2, 47 },
+					["classes"] = { 11 },	-- Druid
+					["sourceQuest"] = 40785,	-- A Foe in the Dark
+				})),
+				qart(q(40588, {	-- Following the Curse
 					["qg"] = 100323,	-- Revil Kost
 					["lvl"] = 98,
 					["coord"] = { 77.4, 36.1, 47 },
 					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
-				}),
-				q(40931, {	-- Following the Curse
-					["qg"] = 100323,	-- 
-					["classes"] = {6},	-- Death Knight
-				}),
+				})),
+				qart(q(40931, {	-- Following the Curse
+					["qg"] = 100323,	-- Revil Kost
+					["lvl"] = 98,
+					["coord"] = { 77.4, 36.2, 47 },
+					["classes"] = { 6 },	-- Death Knight
+					["sourceQuest"] = 40930,	-- Apocalypse
+				})),
 				q(26661, {	-- Gather Rot Blossoms
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.7, 44.4, 47 },
@@ -226,13 +239,19 @@ _.Zones =
 					["sourceQuest"] = 26667,	-- The Stolen Letters
 				}),
 				q(43392, {	-- Into the Void
-					["qg"] = 111041,	-- 
-					["classes"] = {5},	-- Priest
+					["qg"] = 111041,	-- Micah Belford
+					["lvl"] = 110,
+					["coord"] = { 24.4, 37.8, 47 },
+					["classes"] = { 5 },	-- Priest
+					["sourceQuest"] = 43391,	-- Secrets of the Void
 				}),
-				q(40784, {	-- Its Rightful Place
-					["qg"] = 101656,	-- 
-					["classes"] = {11},	-- Druid
-				}),
+				qart(q(40784, {	-- Its Rightful Place
+					["qg"] = 101656,	-- Valorn Stillbough
+					["lvl"] = 98,
+					["coord"] = { 48.8, 34.3, 47 },
+					["classes"] = { 11 },	-- Druid
+					["sourceQuest"] = 40783,	-- The Scythe of Elune
+				})),
 				q(26676, {	-- Juice Delivery
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.7, 44.4, 47 },
@@ -269,8 +288,10 @@ _.Zones =
 					},
 				}),
 				q(26683, {	-- Look To The Stars
-					["qg"] = 276,	-- 
+					["qg"] = 276,	-- Viktori Prism'Antras
+					["coord"] = { 79.5, 47.4, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 				}),
 				q(26674, {	-- Mistmantle's Revenge
 					["qg"] = 265,	-- Madame Eva
@@ -326,10 +347,11 @@ _.Zones =
 					["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 					["isBreadcrumb"] = true,
 				}),
-				q(26838, {	-- Rebels Without a Clue -- aa
+				q(26838, {	-- Rebels Without a Clue
 					["qg"] = 43731,	-- Sister Elsington
 					["coord"] = { 20.0, 57.8, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26654, {	-- Return the Comb
 					["qg"] = 302,	-- Blind Mary
@@ -341,8 +363,11 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(43393, {	-- Rising Shadows
-					["qg"] = 110684,	-- 
-					["classes"] = {5},	-- Priest
+					["qg"] = 110684,	-- Natalie Seline
+					["lvl"] = 110,
+					["coord"] = { 24.2, 37.8, 47 },
+					["classes"] = { 5 },	-- Priest
+					["sourceQuest"] = 43392,	-- Into the Void
 				}),
 				q(1383, {	-- Nothing But The Truth
 					["u"] = 40,
@@ -366,7 +391,7 @@ _.Zones =
 						i(157002),	-- Exorcist's Crossbow
 					},
 				}),
-				q(26620, {	-- Seasoned Wolf Kabobs -- aa
+				q(26620, {	-- Seasoned Wolf Kabobs
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.7, 43.4, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -375,18 +400,22 @@ _.Zones =
 					},
 				}),
 				q(43391, {	-- Secrets of the Void
-					["qg"] = 111041,	-- 
-					["classes"] = {5},	-- Priest
+					["qg"] = 111041,	-- Micah Belford
+					["lvl"] = 110,
+					["coord"] = { 24.2, 37.8, 47 },
+					["classes"] = { 5 },	-- Priest
+					--["sourceQuest"] = ,	-- TODO:: determine sourceQuest
 				}),
-				q(26777, {	-- Soothing Spirits -- aa
+				q(26777, {	-- Soothing Spirits
 					["qg"] = 43731,	-- Sister Elsington
 					["coord"] = { 20.0, 57.8, 47 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26653, {	-- Supplies from Darkshire -- aa
+				q(26653, {	-- Supplies from Darkshire
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 87.4, 35.2, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26627,	-- The Hermit
 				}),
 				q(1042, {	-- The Carevin Family
 					["u"] = 40,
@@ -395,13 +424,15 @@ _.Zones =
 					["sourceQuest"] = 1041,	-- The Caravan Road
 				}),
 				q(26778, {	-- The Cries of the Dead
-					["qg"] = 43731,	-- 
+					["qg"] = 43731,	-- Sister Elsington
+					["coord"] = { 20.0, 57.8, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26760,	-- Cry For The Moon
 					["g"] = {
-						i(60921),	-- 
-						i(60922),	-- 
-						i(60923),	-- 
-						i(131600),	-- 
+						i(60921),	-- Sister Elsington's Belt
+						i(60922),	-- Aegis of Faith
+						i(60923),	-- Ghoul-Hunter Leggings
+						i(131600),	-- Ghoul-Slayer Greaves
 					},
 				}),
 				q(26796, {	-- The Daughter Who Lived
@@ -467,19 +498,23 @@ _.Zones =
 					},
 				}),
 				q(26627, {	-- The Hermit
-					["qg"] = 264,	-- 
+					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["coord"] = { 73.5, 46.9, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26684, {	-- The Insane Ghoul
-					["qg"] = 302,	-- 
+					["qg"] = 302,	-- Blind Mary
+					["coord"] = { 82.0, 59.3, 47 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26683,	-- Look To The Stars
 				}),
-				q(26721, {	-- The Jitters-Bugs -- aa
+				q(26721, {	-- The Jitters-Bugs
 					["qg"] = 288,	-- Jitters
 					["coord"] = { 18.6, 58.3, 47 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26666, {	-- The Legend of Stalvan -- aa
+				q(26666, {	-- The Legend of Stalvan
 					["qg"] = 43453,	-- Tobias Mistmantle
 					["coord"] = { 79.0, 44.1, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -516,7 +551,7 @@ _.Zones =
 						i(156974),	-- Archivist's Walking Stick
 					},
 				}),
-				o(61, {	-- A Weathered Grave -- aa
+				o(61, {	-- A Weathered Grave
 					["coord"] = { 17.7, 29.1, 47 },
 					["g"] = {
 						q(26793, {	-- The Weathered Grave
@@ -524,7 +559,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(26717, {	-- The Yorgen Worgen -- aa
+				q(26717, {	-- The Yorgen Worgen
 					["qg"] = 43738,	-- Apprentice Fess
 					["coord"] = { 44.9, 67.4, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -536,7 +571,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26689,	-- The Rotting Orchard
 				}),
-				q(25235, {	-- Vulgar Vul'Gol -- aa
+				q(25235, {	-- Vulgar Vul'Gol
 					["qg"] = 888,	-- Watcher Dodds
 					["coord"] = { 45.1, 67.0, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -548,7 +583,7 @@ _.Zones =
 						un(2, i(1131)),	-- Totem of Infliction
 					},
 				}),
-				q(26618, {	-- Wolves at Our Heels -- aa
+				q(26618, {	-- Wolves at Our Heels
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.5, 46.9, 47 },
 					["races"] = ALLIANCE_ONLY,
@@ -580,7 +615,7 @@ _.Zones =
 						i(131582),	-- Callous Greaves
 					},
 				}),
-				q(26688, {	-- Worgen in the Woods -- aa
+				q(26688, {	-- Worgen in the Woods
 					["qg"] = 663,	-- Calor
 					["coord"] = { 75.3, 48.0, 47 },
 					["races"] = ALLIANCE_ONLY,
