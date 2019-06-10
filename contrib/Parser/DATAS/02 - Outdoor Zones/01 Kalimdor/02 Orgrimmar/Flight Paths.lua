@@ -5,13 +5,11 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
-			["groups"] = {
-				n(-228, {	-- Flight Paths
-					fp(23, {	-- Orgrimmar, Durotar
-						["coord"] = { 49.4, 59.2, 85 },
-					}),
+			n(-228, {	-- Flight Paths
+				fp(23, {	-- Orgrimmar, Durotar
+					["coord"] = { 49.4, 59.2, 85 },
 				}),
-			},
+			}),
 		}),
 	}),
 };
