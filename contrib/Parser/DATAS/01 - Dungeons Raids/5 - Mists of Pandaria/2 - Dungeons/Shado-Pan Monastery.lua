@@ -5,8 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(312, { 	-- Shado-Pan Monastery
 		["lvl"] = 87,
-		["mapID"] = 443,
-		["maps"] = { 444, 445, 446 },
+		["maps"] = { 443, 444, 445, 446 },
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(30757, {	-- Lord of the Shado-Pan

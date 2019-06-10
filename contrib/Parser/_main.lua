@@ -361,6 +361,9 @@ WOD_CRAFTED_ITEM = function(id)
 		}
 	};
 end
+TIMEWALKING_DUNGEON_CREATURE_IDS = {};
+TIMEWALKING_DUNGEON_MAP_IDS = {};
+POST_PROCESSING_FUNCTIONS = {};
 
 -- Construct a commonly formatted object.
 struct = function(field, id, t)
@@ -566,7 +569,37 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 inst = function(id, t)									-- Create an INSTANCE Object
-	return struct("instanceID", id, t);
+	t = struct("instanceID", id, t);
+	
+	-- Look for the Timewalking difficulty
+	local groups = t.groups or t.g;
+	if groups then
+		for i,data in ipairs(groups) do
+			if data.difficultyID and data.difficultyID == 24 then
+				if t.mapID then
+					table.insert(TIMEWALKING_DUNGEON_MAP_IDS, t.mapID);
+				end
+				if t.maps then
+					for j,mapID in ipairs(t.maps) do
+						table.insert(TIMEWALKING_DUNGEON_MAP_IDS, mapID);
+					end
+				end
+				if data.g then
+					for j,subgroup in ipairs(data.g) do
+						if subgroup.creatureID and subgroup.creatureID > 0 then
+							table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, subgroup.creatureID);
+						end
+						if subgroup.crs then
+							for j,creatureID in ipairs(subgroup.crs) do
+								table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	return t;
 end
 item = function(id, t)									-- Create an ITEM Object
 	return struct("itemID", id, t);

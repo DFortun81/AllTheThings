@@ -5,8 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(313, { 	-- Temple of the Jade Serpent
 		["lvl"] = 85,
-		["mapID"] = 429,
-		["maps"] = { 430 },
+		["maps"] = { 429, 430 },
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(31356, {	-- Deep Doubts, Deep Wisdom

@@ -81,6 +81,23 @@ namespace Parser_V2
                 }
                 while (true);
             }
+            do
+            {
+                try
+                {
+                    lua.DoString("AllTheThings = {};_ = AllTheThings;");
+                    lua.DoString("for i,method in ipairs(POST_PROCESSING_FUNCTIONS) do method(); end");
+                    Framework.Merge(lua.GetTable("AllTheThings"));
+                    break;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    Console.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+            }
+            while (true);
             lua.Close();
 
             // Now that all of the data and items have been loaded into the Database, let's Process it!
