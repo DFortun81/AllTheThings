@@ -6,14 +6,14 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
 			n(-2,   {	-- Vendors
-				n(844,  {	-- Antonio Perelli <Traveling Salesman>
+				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",
+					["races"] = ALLIANCE_ONLY,
 					["coords"] = {	-- probably has additional coordinates, but this is all that's listed on wowhead
 						{ 74.4, 41.2, 47 },
 						{ 75.0, 46.4, 47 },
 						{ 19.6, 60.6, 47 },
 					},
-					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
@@ -23,7 +23,7 @@ _.Zones =
 						i(4777),	-- Ironwood Maul
 					},
 				}),
-				n(228,  {	-- Avette Fellwood <Bowyer>
+				n(228, {	-- Avette Fellwood <Bowyer>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.2, 44.8, 47 },
 					["g"] = {
@@ -43,7 +43,7 @@ _.Zones =
 						i(14627), 	-- Pattern: Bright Yellow Shirt
 					},
 				}),
-				n(225,  {	-- Gavin Gnarltree <Weaponsmith>
+				n(225, {	-- Gavin Gnarltree <Weaponsmith>
 					["coord"] = { 73.6, 48.8, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -64,7 +64,7 @@ _.Zones =
 						i(4827),	-- Wizard's Belt
 					},
 				}),
-				n(226,  {	-- Morg Gnarltree <Armorer>
+				n(226, {	-- Morg Gnarltree <Armorer>
 					["coord"] = { 73.8, 48.6, 47 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

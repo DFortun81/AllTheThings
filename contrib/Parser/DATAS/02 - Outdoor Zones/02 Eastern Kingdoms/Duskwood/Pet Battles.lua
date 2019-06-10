@@ -42,8 +42,9 @@ _.Zones =
 						["crs"] = { 61259 },	-- Widow Spiderling
 					}),
 					q(31850, {	-- Eric Davidson
+						["qg"] = 65655,	-- Eric Davidson
+						["coord"] = { 19.8, 44.6, 47 },
 						["isDaily"] = true,
-						["qg"] = 65655,	-- 
 					}),
 					q(31729, {	-- Steven Lisbane
 						["races"] = ALLIANCE_ONLY,
