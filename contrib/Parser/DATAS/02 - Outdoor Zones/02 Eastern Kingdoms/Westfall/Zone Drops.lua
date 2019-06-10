@@ -80,6 +80,10 @@ _.Zones =
 						un(7, i(1189)),	-- Overseer's Ring
 					},
 				}),
+				i(2017, {	-- Glowing Leather Bracers
+					["u"] = 7,
+					["crs"] = { 785 },	-- Skeletal Warder
+				}),
 				i(827,  {	-- Wicked Blackjack
 					["crs"] = {
 						122,	-- Defias Highwayman

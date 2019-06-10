@@ -10,6 +10,7 @@ _.WorldDrops =
 					i(13014),	-- Axe of Rin'ji
 					i(811),		-- Axe of the Deep Woods
 					i(2878),	-- Bearded Boneaxe
+					un(7, i(885)),	-- Black Metal Axe
 					i(15237),	-- Corpse Harvester
 					i(15235),	-- Crescent Edge
 					i(2815),	-- Curve-Bladed Ripper
@@ -39,6 +40,7 @@ _.WorldDrops =
 					i(3201),	-- Barbarian War Axe
 					i(3195),	-- Barbaric Battle Axe
 					i(3199),	-- Battle Slayer
+					un(7, i(2015)),	-- Black Metal War Axe
 					i(1263),	-- Brain Hacker
 					i(3210),	-- Brutal War Axe
 					i(2299),	-- Burning War Axe
@@ -48,6 +50,7 @@ _.WorldDrops =
 					i(870),		-- Fiery War Axe
 					i(15270),	-- Gigantic War Axe
 					i(1639),	-- Grinning Axe
+					un(7, i(2227)),	-- Heavy Ogre War Axe
 					i(13017),	-- Hellslayer Battle Axe
 					i(2291),	-- Kang the Decapitator
 					i(13016),	-- Killmaim
@@ -106,6 +109,7 @@ _.WorldDrops =
 					i(4088),	-- Dreadblade
 					un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
 					i(2164),	-- Gut Ripper
+					un(7, i(2020)),	-- Hollowfang Blade
 					i(15242),	-- Honed Stiletto
 					i(3184),	-- Hook Dagger
 					i(6660),	-- Julie's Dagger
@@ -116,6 +120,7 @@ _.WorldDrops =
 					i(24222),	-- The Shadowfoot Stabber
 					i(8006),	-- The Ziggler
 					i(1465),	-- Tigerbane
+					un(7, i(899)),	-- Venom Web Fang
 					i(15245),	-- Vorpal Dagger
 					i(4571),	-- War Knife
 					i(4091),	-- Widowmaker
@@ -253,6 +258,7 @@ _.WorldDrops =
 					un(7, i(2267)),	-- Stonesplinter Mace
 					i(789),		-- Stout Battlehammer
 					i(1721),	-- Viking Warhammer
+					un(7, i(920)),	-- Wicked Spiked Mace
 				}),
 				n(-337, {	-- 2H Maces
 					i(15264),	-- Backbreaker
@@ -266,6 +272,7 @@ _.WorldDrops =
 					i(15266),	-- Fierce Mauler
 					i(15262),	-- Greater Maul
 					i(15259),	-- Hefty Battlehammer
+					un(7, i(911)),	-- Ironwood Treebranch
 					i(3193),	-- Oak Mallet
 					i(15265),	-- Painbringer
 					i(12983),	-- Rakzur Club
@@ -341,6 +348,7 @@ _.WorldDrops =
 					i(14973),	-- Glorious Shield
 					i(4067),	-- Glyphed Buckler
 					i(7537),	-- Gothic Shield
+					un(7, i(2021)),	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
 					i(15298),	-- Grizzly Buckler
 					i(15512),	-- Grunt's Shield
 					i(15621),	-- Gryphon Mail Buckler
@@ -430,6 +438,7 @@ _.WorldDrops =
 				n(-342, {	-- Staves
 					i(3185),	-- Acrobatic Staff
 					i(937),		-- Black Duskwood Staff
+					un(7, i(2013)),	-- Cryptbone Staff
 					i(15274),	-- Diviner Long Staff
 					i(2072),	-- Dwarven Magestaff
 					i(944),		-- Elemental Mage Staff
@@ -439,11 +448,13 @@ _.WorldDrops =
 					i(15276),	-- Magus Long Staff
 					i(4575),	-- Medicine Staff
 					i(866),		-- Monk's Staff
+					un(7, i(2226)),	-- Ogremage Staff
 					i(15278),	-- Solstice Staff
 					i(1607),	-- Soulkeeper
 					i(12532),	-- Spire of the Stoneshaper
 					i(1613),	-- Spiritchaser Staff
 					i(13000),	-- Staff of Hale Magefire
+					un(7, i(880)),	-- Staff of Horrors
 					i(873),		-- Staff of Jordan
 					i(4566),	-- Sturdy Quarterstaff
 					i(1720),	-- Tanglewood Staff
@@ -485,6 +496,7 @@ _.WorldDrops =
 					i(1265),	-- Scorpion Sting
 					i(13035),	-- Serpent Slicer
 					i(754),		-- Shortsword of Vengeance
+					un(7, i(2018)),	-- Skeletal Longsword
 					i(13034),	-- Speedsteel Rapier
 					i(13032),	-- Sword of Corruption
 					i(6622),	-- Sword of Zeal

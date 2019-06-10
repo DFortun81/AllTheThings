@@ -48,6 +48,14 @@ _.Zones =
 						i(6569),	-- Shimmering Robe
 					},
 				}),
+				n(771, {	-- Commander Felstrom
+					["u"] = 43,
+					["coord"] = { 18.0, 37.9, 47 },
+					["g"] = {
+						un(7, i(4465)),	-- Felstrom's Gauntlets
+						un(7, i(4464)),	-- Trouncing Boots
+					},
+				}),
 				n(45801, {	-- Eliza
 					["coord"] = { 27.6, 31.6, 47 },
 					["g"] = {
@@ -132,6 +140,13 @@ _.Zones =
 					["description"] = "Travel to the northeast corner of Raven Hill Cemetery. Getting this music roll requires speaking to Forlorn Composer while you are dead. The easiest way to do this is to fly up very high and dismount (removing armor first will avoid repair charges).",
 					["g"] = {
 						i(122223),	-- Music Roll: Ghost
+					},
+				}),
+				n(503, {	-- Lord Malathrom
+					["u"] = 43,
+					["coord"] = { 21.1, 27.2, 47 },
+					["g"] = {
+						un(7, i(4462)),	-- Cloak of Rot
 					},
 				}),
 				n(521,   {	-- Lupos
@@ -413,79 +428,6 @@ _.Zones =
 						i(6587),	-- Scouting Trousers
 						i(6565),	-- Shimmering Gloves
 					},
-				}),
-				n(-40,  {	-- Legacy -- TODO:: these are almost certainly zone drops, but should verify them before moving them
-					n(210, {	-- Bone Chewer
-						un(7, i(886)),	-- Black Metal Shortsword
-					}),
-					un(43, n(570, {	-- Brain Eater
-						un(7, i(2015)),	-- Black Metal War Axe
-					})),
-					un(43, n(771, {	-- Commander Felstrom
-						un(7, i(4465)),	-- Felstrom's Gauntlets
-						un(7, i(4464)),	-- Trouncing Boots
-					})),
-					un(43, n(910, {	-- Defias Enchanter
-						un(7, i(5773)),	-- Pattern: Robes of Arcana
-						un(7, i(1077)),	-- Defias Mage Ring
-					})),
-					n(1270, {	-- Fetid Corpse
-						un(7, i(2014)),	-- Black Metal Greatsword
-					}),
-					n(3, {	-- Flesh Eater
-						un(7, i(885)),	-- Black Metal Axe
-					}),
-					un(43, n(569, {	-- Green Recluse
-						un(7, i(2021)),	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
-					})),
-					un(43, n(503, {	-- Lord Malathrom
-						un(7, i(4462)),	-- Cloak of Rot
-					})),
-					n(205, {	-- Nightbane Dark Runner
-						un(7, i(2232)),	-- Dark Runner Boots
-					}),
-					n(533, {	-- Nightbane Shadow Weaver
-						un(7, i(2233)),	 -- Shadow Weaver Leggings
-					}),
-					n(920, {	-- Nightbane Tainted Ones
-						un(7, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
-					}),
-					n(206, {	-- Nightbane Vile Fang
-						un(7, i(897)),	-- Madwolf Bracers
-					}),
-					un(43, n(539, {	-- Pygmy Venom Web Spider
-						un(7, i(2020)),	-- Hollowfang Blade
-					})),
-					n(202, {	-- Rotting Horror
-						un(7, i(880)),	-- Staff of Horrors
-					}),
-					un(43, n(787, {	-- Skeletal Healer
-						un(7, i(2013)),	-- Cryptbone Staff
-					})),
-					un(43, n(1110, {	-- Skeletal Raider
-						un(7, i(2018)),	-- Skeletal Longsword
-					})),
-					un(43, n(785, {	-- Skeletal Warder
-						un(7, i(2017)),	-- Glowing Leather Bracers
-					})),
-					un(43, n(1487, {	-- Splinter Fist Enslaver
-						un(7, i(914)), 	-- Large Ogre Chain Vest
-					})),
-					n(1251, {	-- Splinter Fist Firemonger
-						un(7, i(2226)),	-- Ogremage Staff
-					}),
-					un(43, n(891, {	-- Splinter Fist Fire Weaver
-						un(7, i(2226)),	-- Ogremage Staff
-					})),
-					n(889, {	-- Splinter Fist Ogre
-						un(7, i(911)),	-- Ironwood Treebranch
-					}),
-					un(43, n(892, {	-- Splinter Fist Taskmaster
-						un(7, i(2227)),	-- Heavy Ogre War Axe
-					})),
-					n(217, {	-- Venom Web Spider
-						un(7, i(899)),	-- Venom Web Fang
-					}),
 				}),
 			}),
 		}),
