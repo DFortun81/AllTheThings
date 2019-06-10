@@ -279,6 +279,7 @@ _.Zones =
 				q(9177, {	-- Journey to Undercity (wowhead reports this as removed, but Pr3vention recieved this version on 8.June.2019)
 					["qg"] = 16252,	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, 95 },
+					["races"] = exclude({ 10 }, HORDE_ONLY),	-- Horde, excluding Blood Elf
 					["sourceQuests"] = { 9175 },	-- The Lady's Necklace
 					-- possibly granted if you do "The Lady's Necklace" before "Retaking Windrunner Spire" OR this one is for non-BEs
 				}),

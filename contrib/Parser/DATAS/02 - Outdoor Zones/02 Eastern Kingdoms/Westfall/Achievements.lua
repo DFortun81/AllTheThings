@@ -12,6 +12,10 @@ _.Zones =
 						{	-- Criteria 1 — Crime Scene Investigation
 							["criteriaID"] = 1,	-- Crime Scene Investigation
 							["sourceQuests"] = { 26270 },	-- You Have Our Thanks
+						--	"Heart of the Watcher / It's Alive!" weren't required for this criteria
+						--	unclear if following are required:
+						--	26229,	-- "I TAKE Candle!"
+						--	26230,	-- Feast or Famine
 						},
 						{	-- Criteria 2 — Investigating the Shadows
 							["criteriaID"] = 2,	-- Investigating the Shadows
