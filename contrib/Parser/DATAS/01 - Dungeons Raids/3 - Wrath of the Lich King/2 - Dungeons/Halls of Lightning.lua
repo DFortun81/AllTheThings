@@ -5,8 +5,7 @@
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(275, { 	-- Halls of Lightning
 		["lvl"] = 65,
-		["mapID"] = 138,
-		["maps"] = { 139 },
+		["maps"] = { 138, 139 },
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29862, {	-- Clearing the Way

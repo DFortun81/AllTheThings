@@ -9504,6 +9504,10 @@ end):Show();
 						setmetatable(clone, getmetatable(group));
 						group = clone;
 						
+						-- If relative to a difficultyID, then merge it into one.
+						local difficultyID = GetRelativeValue(group, "difficultyID");
+						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+						
 						-- If this is relative to a holiday, let's do something special
 						if GetRelativeField(group, "npcID", -3) then
 							if group.achievementID then
@@ -9605,6 +9609,39 @@ end):Show();
 						end
 						
 						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
+					end
+					
+					-- Check for timewalking difficulty objects
+					for i, group in ipairs(groups) do
+						if group.difficultyID and group.difficultyID == 24 and group.g then
+							-- Look for a Common Boss Drop header.
+							local cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == -1 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Common Boss Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+							
+							-- Look for a Zone Drop header.
+							cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == 0 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Zone Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+						end
 					end
 					
 					-- Swap out the map data for the header.

@@ -5,8 +5,7 @@
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(274, { 	-- Gundrak
 		["lvl"] = 63,
-		["mapID"] = 153,
-		["maps"] = { 154 },
+		["maps"] = { 153, 154 },
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(29844, {	-- For Posterity

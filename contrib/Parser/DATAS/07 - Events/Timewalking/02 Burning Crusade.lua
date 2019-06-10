@@ -3,9 +3,14 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	n(-173, {  -- Timewalking
-		["groups"] = {
+	d(24, {  -- Timewalking
+		["u"] = 42,	--  Timewalking
+		["g"] = {
 			tier(2, { 	-- Burning Crusade
+				["lvl"] = 70,
+				["maps"] = {
+					111	-- Shattrath City
+				},
 				["groups"] = {
 					{	-- Disturbance Detected: Black Temple
 						["questID"] = 47523,	-- Disturbance Detected: Black Temple
@@ -109,12 +114,7 @@ _.WorldEvents =
 						}),
 					}),
 				},
-				["lvl"] = 70,
-				["maps"] = {
-					111	-- Shattrath City
-				},
 			}),
 		},
-		["u"] = 42,	--  Timewalking
 	}),
 };

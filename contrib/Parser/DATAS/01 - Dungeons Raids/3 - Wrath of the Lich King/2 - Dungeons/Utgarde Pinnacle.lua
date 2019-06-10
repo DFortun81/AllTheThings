@@ -5,8 +5,7 @@
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(286, { 	-- Utgarde Pinnacle
 		["lvl"] = 65,
-		["mapID"] = 136,
-		["maps"] = { 137 },
+		["maps"] = { 136, 137 },
 		["groups"] = {
 			n(-17, {	-- Quests 	
 				q(13131,{ 	-- Junk in My Trunk
@@ -100,7 +99,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 				i(37372),	-- Harpoon
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				cr(26668, e(641, {	-- Svala Sorrowgrave
 					["crs"] = { 29281 },	-- Svala Sorrowgrave useless form
 					["groups"] = {
@@ -171,7 +170,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37064),	-- Vestige of Haldor
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
 					cr(26668, e(641, {	-- Svala Sorrowgrave
