@@ -333,14 +333,20 @@ _.Zones =
 				}),
 				qa(26773, {	-- See Raptor
 					["qg"] = 44017,	-- 
+]]--			}),
+				q(29103, {	-- Serpents and Poison
+					["qg"] = 52281,	-- Livingston Marshal
+					["coord"] = { 64.6, 40.4, 50 },
+					["sourceQuest"] = 29102,	-- To Fort Livingston
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29103, {	-- Serpents and Poison
-					["qg"] = 52281,	-- 
+				q(29221, {	-- Serpents and Poison
+					["qg"] = 52980,	-- Kil'karil
+					["coord"] = { 64.6, 40.4, 50 },
+					["sourceQuest"] = 29220,	-- To Bambala
+					["races"] = HORDE_ONLY,
 				}),
-				qh(29221, {	-- Serpents and Poison
-					["qg"] = 52980,	-- 
-				}),
-				q(26344, {	-- Some Assembly Required
+--[[			q(26344, {	-- Some Assembly Required
 					["qg"] = 2495,	-- 
 				}),
 --]]
@@ -420,11 +426,15 @@ _.Zones =
 						i(131499),	-- Mizjah Hauberk
 					},
 				}),
---[[
-				qh(26278, {	-- The Defense of Grom'gol: Raptor Risk
-					["qg"] = 2464,	-- 
+				q(26278, {	-- The Defense of Grom'gol: Raptor Risk
+					["qg"] = 2464,	-- Commander Aggro'gosh
+					["coord"] = { 38.4, 50.6, 50 },
+					["sourceQuests"] = {
+						26417,	-- Northern Stranglethorn: The Fallen Empire
+						28688,	-- Warchief's Command: Northern Stranglethorn!
+					},
+					["races"] = HORDE_ONLY,
 				}),
-]]--
 				qh(26281, {	-- The Defense of Grom'gol: Trollish Thievery
 					["qg"] = 2464,	-- 
 					["g"] = {

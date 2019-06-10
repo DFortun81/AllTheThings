@@ -212,6 +212,15 @@ _.Zones =
 					["qg"] = 1573,	-- 
 					["races"] = {3,7},	-- Dwarf, Gnome
 				}),
+]]--
+				q(32317, {	-- Seeking the Soulstones
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, 87 },
+					["sourceQuest"] = 32310,	-- A Tale of Six Masters
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 90,
+				}),
+--[[
 				qa(27274, {	-- The Chief Surgeon
 					["qg"] = 11406,	-- 
 					["races"] = {7},	-- Gnome

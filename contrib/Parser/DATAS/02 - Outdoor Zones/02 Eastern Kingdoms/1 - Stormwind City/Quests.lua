@@ -552,10 +552,15 @@ _.Zones =
 					}),
 --[[
 					qa(26442)),	-- Rock Lobster
-					qa(44471)),	-- Second Sight
-					q(32317)),	-- Seeking the Soulstones
-					qa(29399)),	-- Shopping Around
---]]
+]]--					qa(44471)),	-- Second Sight
+					q(32317, {	-- Seeking the Soulstones
+						["qg"] = 5496,	-- Sandahl
+						["coord"] = { 39.8, 85.4, 84 },
+						["sourceQuest"] = 32310,	-- A Tale of Six Masters
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 90,
+					}),
+--					qa(29399)),	-- Shopping Around
 					qa(28401, {	-- Slaves of the Firelord
 						["g"] = {
 							i(65640), 		-- Mask of the Farseer
@@ -718,17 +723,25 @@ _.Zones =
 						["classes"] = { 4 },
 						["lvl"] = 98,
 					}),
-					qa(7782, {	-- The Lord of Blackrock
+					q(7782, {	-- The Lord of Blackrock
 						["qg"] = 107574,	-- Anduin Wrynn
+						["coord"] = { 85.6, 31.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 7781,	-- The Lord of Blackrock
 						["g"] = {
-							i(19366),	-- Master Dragonslayer's Orb
+							i(19366), 	-- Master Dragonslayer's Orb
+							i(19383),	-- Master Dragonslayer's Medallion
+							i(19384),	-- Master Dragonslayer's Ring
 						},
-					}),
---[[					
-					qa(7781)),	-- The Lord of Blackrock
-					q(27203)),	-- The Maelstrom
-					qa(11970)),	-- The Master of Summer Lore
-					--]]
+					}),					
+--					qa(7781)),	-- The Lord of Blackrock
+					q(27203, {	-- The Maelstrom
+						["qg"] = 45226,	-- Naraat the Earthspeaker
+						["coord"] = { 74.4, 18.8, 84 },
+						["sourceQuest"] = 27727,	-- Hero's Call: Deepholm!
+						["lvl"] = 82,
+					}),						
+--					qa(11970)),	-- The Master of Summer Lore
 					qa(29548, {	-- The Mission
 						["qg"] = 55789,	-- Rell Nightwind
 					}),

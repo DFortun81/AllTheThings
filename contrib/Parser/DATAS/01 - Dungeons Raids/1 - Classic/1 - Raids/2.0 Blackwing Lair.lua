@@ -264,9 +264,13 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					ach(685),	-- Blackwing Lair
 					i(19003, {	-- Head of Nefarian
-						qa(7781), 	-- The Lord of Blackrock
-						qa(7782, {	-- The Lord of Blackrock
-							["qg"] = 107574,
+						q(7781, { 	-- The Lord of Blackrock
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(7782, {	-- The Lord of Blackrock
+							["qg"] = 107574,	-- Anduin Wrynn
+							["coord"] = { 85.6, 31.8, 84 },
+							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 7781,	-- The Lord of Blackrock
 							["g"] = {
 								i(19366), 	-- Master Dragonslayer's Orb
@@ -276,13 +280,17 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					i(19002, {	-- Head of Nefarian
-						qh(7783), 	-- The Lord of Blackrock
-						qh(7784, {	-- The Lord of Blackrock
-							["qg"] = 133520,
-							["sourceQuest"] = 7783,	-- The Lord of Blackrock
+						q(7783, { 	-- The Lord of Blackrock
+							["races"] = HORDE_ONLY,
+						}),
+						q(7784, {	-- The Lord of Blackrock
+							["qg"] = 14720,	-- High Overlord Saurfang
+							["coord"] = { 48.6, 71.0, 85 },
+							["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
+							["races"] = HORDE_ONLY,
 							["g"] = {
-								i(19366), 	-- Master Dragonslayer's Orb
 								i(19383),	-- Master Dragonslayer's Medallion
+								i(19366),	-- Master Dragonslayer's Orb
 								i(19384),	-- Master Dragonslayer's Ring
 							},
 						}),

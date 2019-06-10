@@ -5,15 +5,15 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor		
 		m(85, {	-- Orgrimmar
-			["groups"] = {
-				h(n(-17, {	-- Quests
+			["g"] = {
+				n(-17, {	-- Quests
 					gsh(1522, {	-- Allied Races 	-- This belongs to black rock depths where this quest line takes place, but I at least wanted to get this in first.
-						["groups"] = {
+						["g"] = {
 							q(50242, {	-- A Choice for Allies
 								["qg"] = 126065,	-- Lady Sylvanas Windrunner
 								["coord"] = { 37.8, 81.0, 85 },
 								["races"] = HORDE_ONLY,
-								["groups"] = {
+								["g"] = {
 									n(-209, {	-- Highmountain Tauren
 										q(48066, {	-- A Feast for Our Kin
 											["qg"] = 125285,	-- Baine Bloodhoof <High Chieftain>
@@ -118,7 +118,7 @@ _.Zones =
 											["coord"] = { 56.6, 92.6, 650 },
 											["races"] = HORDE_ONLY,
 											["sourceQuest"] = 48403,	-- The Darkness
-											["groups"] = {
+											["g"] = {
 												ach(12245, {	-- Allied Races: Highmountain Tauren
 													h(i(155662)),	-- Highmountain Thunderhoof
 												}),
@@ -129,7 +129,7 @@ _.Zones =
 											["qg"] = 143845,	--  Mayla Highmountain
 											["coord"] = { 46.6, 61.0, 650 },
 											["races"] = { 28 },	-- Highmountain Tauren
-											["groups"] = {
+											["g"] = {
 												i(157757),	-- Highmountain Tabard
 												i(157028),	-- Letter from Lady Sylvannas
 											},
@@ -164,7 +164,7 @@ _.Zones =
 											["coord"] = { 58.2, 19.4, 110 },
 											["races"] = HORDE_ONLY,
 											["sourceQuest"] = 49354,	-- Remember the Sunwell
-											["groups"] = {
+											["g"] = {
 												ach(12244, {	-- Allied Races: Nightborne
 													i(156487),	-- Nightborne Manasaber
 												}),
@@ -175,7 +175,7 @@ _.Zones =
 											["qg"] = 143845,	--  First Arcanist Thalyssra
 											["coord"] = { 59.4, 85.4, 680 },
 											["races"] = { 27 },	-- Nightborne
-											["groups"] = {
+											["g"] = {
 												i(157759),	-- Shal'dorei Tabard
 												i(157028),	-- Letter from Lady Sylvannas
 											},
@@ -248,7 +248,7 @@ _.Zones =
 												["coord"] = { 41.2, 16.8, 1 },
 												["races"] = HORDE_ONLY,
 												["sourceQuest"] = 52955,	-- Tyranny of the Light
-												["groups"] = {
+												["g"] = {
 													ach(12518, {	-- Allied Races: Mag'har Orc
 														i(161330),	-- Mag'har Direwolf
 													}),
@@ -259,7 +259,7 @@ _.Zones =
 												["qg"] = 143845,	--  Overlord Geya'rah
 												["coord"] = { 70.6, 44.6, 85 },
 												["races"] = { 36 },	-- Mag'har Orc
-												["groups"] = {
+												["g"] = {
 													i(161328),	-- Tabard of the Mag'har Clans
 													i(157028),	-- Letter from Lady Sylvannas
 												},
@@ -388,7 +388,7 @@ _.Zones =
 												["coord"] = { 42.4, 9.2, 1165 },
 												["races"] = HORDE_ONLY,
 												["sourceQuest"] = 53830,	-- Queen of the Zandalari
-												["groups"] = {
+												["g"] = {
 													ach(13161, {	-- Allied Races: Zandalari Troll
 														i(157870),	-- Zandalari Direhorn
 													}),
@@ -399,7 +399,7 @@ _.Zones =
 												["qg"] = 146335,	--  Queen Talanji
 												["coord"] = { 42.2, 9.4, 1165 },
 												["races"] = { 31 },	-- Zandalari Troll
-												["groups"] = {
+												["g"] = {
 													i(165001),	-- Tabard of the Zandalari
 													i(167169),	-- Letter from Lady Sylvannas
 												},
@@ -436,7 +436,7 @@ _.Zones =
 						["qg"] = 3353,	-- Grezz Ragefist
 						["races"] = HORDE_ONLY,
 						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
+						["g"] = {
 							i(65625),	-- Faceguard of the Horde
 							i(65642),	-- Headguard of the Horde
 						},
@@ -453,7 +453,7 @@ _.Zones =
 						["qg"] = 3353,	-- Grezz Ragefist
 						["races"] = HORDE_ONLY,
 						["classes"] = { 1 },	-- Warrior
-						["groups"] = {
+						["g"] = {
 							i(65494),	-- Broadaxe of the Horde
 							i(65495),	-- Greataxe of the Horde
 						},
@@ -477,7 +477,7 @@ _.Zones =
 						["qg"] = 3352,	-- Ormak Grimshot
 						["races"] = HORDE_ONLY,
 						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
+						["g"] = {
 							i(65466),	-- Bow of the Great Hunter
 						},
 					},
@@ -503,7 +503,7 @@ _.Zones =
 							6,	-- Tauren
 							9,	-- Goblin
 						},
-						["groups"] = {
+						["g"] = {
 							i(65484),	-- Staff of the Earthmother
 						},
 					}, 
@@ -512,22 +512,23 @@ _.Zones =
 						["qg"] = 45347,	-- Brother Silverhallow
 						["races"] = { 9 },	-- Goblin
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["g"] = {
 							i(65481),	-- Staff of Golden Worship
 						},
 					},
-					{	-- A Tale of Six Masters
-						["questID"] = 32309,
+					q(32309, {	-- A Tale of Six Masters
 						["qg"] = 88705,	-- Kranosh
+						["coord"] = { 53.8, 35.8, 85 },
 						["races"] = HORDE_ONLY,
 						["classes"] = { 9 },	-- Warlock
-					},
+						["lvl"] = 90,
+					}),
 					{	-- A True Sunwalker
 						["questID"] = 27403,
 						["qg"] = 44725,	-- Sunwalker Atohmo
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
+						["g"] = {
 							i(65472),	-- Mace of the Sunwalker
 							i(65473),	-- Battlehammer of the Sunwalker
 							i(65474),	-- Greatsword of the Sunwalker
@@ -570,7 +571,7 @@ _.Zones =
 						["coord"] = { 76.8, 37.7, 85 },
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
+						["g"] = {
 							i(7979),	-- Plans: Barbaric Iron Breastplate
 						},
 					},
@@ -579,7 +580,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 8576,	-- Ag'tor Bloodfist
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(11120)),	-- Belgrom's Hammer
 							un(2, i(10709)),	-- Pyrestone Orb
 						},
@@ -590,7 +591,7 @@ _.Zones =
 						["coord"] = { 32.9, 65.8, 85 },
 						["races"] = HORDE_ONLY,
 						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
+						["g"] = {
 							i(65487),	-- Blade of the Shattered Hand
 						},
 					},
@@ -599,7 +600,7 @@ _.Zones =
 						["qg"] = 54004,	-- Jaga
 						["coord"] = { 48.1, 46.8, 85 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							i(72045),	-- Horde Balloon
 						},
 					},
@@ -608,7 +609,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 8659,	-- Jes'rimon
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(11862)),	-- White Bone Band
 							un(2, i(11863)),	-- White Bone Shredder
 							un(2, i(11864)),	-- White Bone Spear
@@ -620,7 +621,7 @@ _.Zones =
 						["qg"] = 7793,	-- Ox
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
+						["g"] = {
 							un(2, i(8663)),	-- Mithril Insignia
 						},
 					},
@@ -635,7 +636,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 7010,	-- Zilzibin Drumlore
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(11872)),	-- Eschewal Greaves 
 							un(2, i(11870)),	-- Oblivion Orb 
 							un(2, i(11871)),	-- Snarkshaw Spaulders
@@ -672,7 +673,7 @@ _.Zones =
 						["coord"] = { 49.2, 72.3, 85 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 13841,	-- All Apologies
-						["groups"] = {
+						["g"] = {
 							i(119325),	-- Bow of Fire
 							i(119326), 	-- Ring of Pardons
 							i(119327),	-- Durak's Downfall
@@ -685,14 +686,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- Elixir Master
-						["questID"] = 29481,
-						["qg"] = 3347,	-- Yelmak
-						["coord"] = { 55.6, 45.8, 85 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
-					},
+					},			
 					{	-- Enemies Below
 						["questID"] = 31034,
 						["qg"] = 14720,	-- Eitrigg
@@ -711,7 +705,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 4949,	-- Thrall
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(18403)),	-- Dragonslayer's Signet
 							un(2, i(18406)),	-- Onyxia Blood Talisman
 							un(2, i(18404)),	-- Onyxia Tooth Pendant
@@ -743,7 +737,7 @@ _.Zones =
 						["u"] = 40,
 						["qg"] = 3216,	-- Neeru Fireblade
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							un(2, i(15424)),	-- Axe of Orgrimmar 
 							un(2, i(15445)),	-- Hammer of Orgrimmar
 							un(2, i(15443)),	-- Kris of Orgrimmar
@@ -763,7 +757,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2753,	-- Trampled Under Foot
 						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
+						["g"] = {
 							i(7980),	-- Plans: Barbaric Iron Helm
 						},
 					},
@@ -772,7 +766,7 @@ _.Zones =
 						["questID"] = 53372,
 						["qg"] = 14720,	-- High Overlord Saurfang
 						["races"] = HORDE_ONLY,
-						["groups"] = {		
+						["g"] = {		
 							i(163528),	-- Deathguard's Gladius
 							i(163525),	-- Grunt's Boot Knife
 							i(163531),	-- Grunt's Cleaver
@@ -807,7 +801,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 2754,	-- Horns of Frenzy
 						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
+						["g"] = {
 							i(7982),	-- Plans: Barbaric Iron Gloves
 						},
 					},
@@ -841,7 +835,7 @@ _.Zones =
 						["coord"] = { 51.2, 72.4, 85 },
 						["races"] = HORDE_ONLY,
 						["classes"] = { 8 },	-- Mage
-						["groups"] = {
+						["g"] = {
 							i(65468),	-- Staff of the Arcane Path
 						},
 					},
@@ -851,24 +845,25 @@ _.Zones =
 						["qg"] = 13417,	-- Sagorne Creststrider
 						["races"] = HORDE_ONLY,
 					},
-					{	-- Meetup with the Caravan
-						["questID"] = 28296,
+					q(28296, {	-- Meetup with the Caravan
 						["qg"] = 47571,	-- Belloc Brightblade
-						["races"] = HORDE_ONLY,
+						["coord"] = { 48.9, 91.4, 85 },
+						["sourceQuest"] = 28293,	-- That's No Pyramid!
 						["isBreadcrumb"] = true,
-					},
-					{	-- Mission Statement
-						["questID"] = 51443,
+						["races"] = HORDE_ONLY,
+					}),
+					q(51443, {		-- Mission Statement
 						["qg"] = 140176,	-- Nathanos Blightcaller
 						["coord"] = { 48.9, 91.4, 85 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53031,	-- The Speaker's Imperative
-					},
-					{	-- Missing Reports
-						["questID"] = 26803,
+						["races"] = HORDE_ONLY,	
+					}),
+					q(26803, {	-- Missing Reports
 						["qg"] = 3144,	-- Eitrigg
+						["coord"] = { 48.6, 71.0, 85 },
 						["races"] = { 9 },	-- Goblin
-					},
+						["lvl"] = 5,
+					}),
 					q(28289, {	-- Moonglade Calls
 						["qg"] = 44978,	-- Sesebi
 						["coord"] = { 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
@@ -876,79 +871,45 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
-					{	-- Nibbler! No!
-						["questID"] = 25158,
-						["qg"] = 50482,	-- Marith Lazuria
-						["coord"] = { 72.4, 34.4, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- Nogg's Ring Redo
-						["questID"] = 2950,
+					q(2950, {	-- Nogg's Ring Redo
 						["qg"] = 3412,	-- Nogg
 						["coord"] = { 56.7, 57.0, 85 },
 						["sourceQuest"] = 2949,	-- Return of the Ring
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["lvl"] = 24,
+						["g"] = {
 							i(9588),	-- Nogg's Gold Ring
 						},
-					},
-					{	-- Northern Stranglethorn: The Fallen Empire
-						["questID"] = 26417,
+					}),
+					q(26417, {	-- Northern Stranglethorn: The Fallen Empire
 						["qg"] = 43062,	-- Bort
 						["coord"] = { 51.2, 56.2, 85 },
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
 						["sourceQuest"] = 26416,	-- Well, Come to the Jungle
-					},
-					{	-- Ogrezonians in the Mood
-						["questID"] = 25161,
-						["qg"] = 50482,	-- Marith Lazuria
-						["coord"] = { 72.4, 34.4, 85 },
+						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- On Iron Pauldrons
-						["questID"] = 2752,
-						["qg"] = 7790,	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, 85 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 2751,	-- Barbaric Battlements
-						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
-							i(7978),	-- Plans: Barbaric Iron Shoulders
-						},
-					},
-					{	-- Potion Master
-						["questID"] = 29067,
-						["qg"] = 3347,	-- Yelmak
-						["coord"] = { 55.6, 45.8, 85 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
-						["description"] = "Requires 300 Classic Alchemy.",
-					},
-					{	-- Preserving the Barrens
-						["questID"] = 26642,
+						["lvl"] = 25,
+					}),						
+					q(26642, {	-- Preserving the Barrens
 						["qg"] = 35068,	-- Gotura Fourwinds
 						["coord"] = { 47.6, 71.3, 85 },
-						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-					},
-					{	-- Protect the Home Front (pre-legion event quest)
-						["questID"] = 44092,
-						["u"] = 40,
-						["qg"] = 95234,	-- Elthyn Da'rai
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Report to the Labor Captain
-						["questID"] = 25275,
+						["lvl"] = 10,
+					}),
+					q(44092, {	-- Protect the Home Front
+						["qg"] = 95234,	-- Elthyn Da'rai
+						["coord"] = { 52.6, 56.2, 85 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 98,
+						["u"] = 40,
+					}),
+					q(25275, {	-- Report to the Labor Captain
 						["qg"] = 14720,	-- High Overlord Saurfang
+						["coord"] = { 48.6, 71.0, 85 },
 						["races"] = { 9 },	-- Goblin
-					},
-					{	-- Return to Razor Hill
-						["questID"] = 6386,
+						["lvl"] = 10,
+					}),
+					q(6386, {	-- Return to Razor Hill
 						["qg"] = 3310,	-- Doras
 						["coord"] = { 49.5, 59.2, 85 },
 						["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
@@ -956,281 +917,294 @@ _.Zones =
 							2,	-- Orc
 							8,	-- Troll
 						},
-					},
-					{	-- Return to the Highlands
-						["questID"] = 26840,
-						["qg"] = 3144,	-- Eitrigg (add'l QGs 14720, 39605 and 86832, previous Horde leaders)
-						["lvl"] = 84,
-						["races"] = HORDE_ONLY,
+						["lvl"] = 5,
+					}),
+					q(26840, {	-- Return to the Highlands
+						["qg"] = 3144,	-- Eitrigg
+						["coord"] = { 48.6, 71.0, 85 },
 						["sourceQuest"] = 26830,	-- Traitor's Bait
-					},
-					{	-- Samophlange Manual
-						["questID"] = 3924,
-						["u"] = 40,
-						["qg"] = 9317,	-- Rilli Greasygob
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["lvl"] = 84,
+					}),
+					q(3924, {	-- Samophlange Manual
+						["qg"] = 9317,	-- Rilli Greasygob
+						["coord"] = { 56.8, 56.4, 85 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 10,
+						["u"] = 40,
+						["g"] = {
 							un(2, i(11854)),	-- Samophlange Screwdriver 
 							un(2, i(11855)),	-- Tork Wrench
 						},
-					},
-					{	-- Sauranok Will Point the Way
-						["questID"] = 28909,
+					}),
+					q(28909, {	-- Sauranok Will Point the Way
 						["qg"] = 14720,	-- High Overlord Saurfang
-						["races"] = HORDE_ONLY,
+						["coord"] = { 48.6, 71.0, 85 },
 						["sourceQuest"] = 26294,	-- Weapons of Mass Dysfunction
-						["isBreadcrumb"] = true,
-					},
-					{	-- Seeking the Soulstones
-						["questID"] = 32317,
-						["qg"] = 88705,	-- Kranosh
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 84,
+					}),
+					q(32317, {	-- Seeking the Soulstones
+						["qg"] = 88705,	-- Kranosh
+						["coord"] = { 53.8, 35.8, 85 },
+						["sourceQuest"] = 32309,	-- A Tale of Six Masters
 						["classes"] = { 9 },	-- Warlock
-					},
-					{	-- Slaves of the Firelord
-						["questID"] = 28465,
-						["qg"] = 72939,	-- Terga Earthbreaker (add'l QG 3344)
+						["lvl"] = 90,
+					}),
+					q(28465, {	-- Slaves of the Firelord
+						["qg"] = 72939,	-- Terga Earthbreaker
+						["coord"] = { 39.0, 47.4, 85 },
+						["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker
 						["races"] = HORDE_ONLY,
 						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65643),	-- Mask of the Speaker
 							i(65630),	-- Headcover of the Speaker
 						},
-					},
-					{	-- Staff of the Light
-						["questID"] = 27439,
+					}),
+					q(27439, {	-- Staff of the Light
 						["qg"] = 45337,	-- Tyelis
+						["coord"] = { 49.0, 71.0, 85 },
+						["sourceQuest"] = 27335,	-- Journey to Orgrimmar
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 20,
+						["g"] = {
 							i(65478),	-- Staff of the Sunchaser
 						},
-					},	
-					{	-- Stones of Binding
-						["questID"] = 28459,
+					}),	
+					q(28459, {	-- Stones of Binding
 						["qg"] = 88705,	-- Kranosh
+						["coord"] = { 49.0, 55.2, 85 },
+						["sourceQuest"] = 28299,	-- Meet with Kranosh
 						["races"] = HORDE_ONLY,
 						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65627),	-- Horns of the Left Hand Path
 						},
-					},
-					{	-- Summons to Orgrimmar
-						["questID"] = 49977,
-					},
-					{	-- Terga's Task
-						["questID"] = 27397,
+					}),
+					q(49977, {	-- Summons to Orgrimmar
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+						["u"] = 40,
+					}),
+					q(27397, {	-- Terga's Task
 						["qg"] = 3344,	-- Kardris Dreamseeker
+						["coord"] = { 39.0, 47.4, 85 },
+						["sourceQuest"] = 27280,	-- The Earthbreaker Calls
 						["races"] = HORDE_ONLY,
 						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
+						["lvl"] = 20,
+						["g"] = {
 							i(65490),	-- Battleaxe of the Speaker
 							i(65491),	-- Spell Axe of the Speaker
 						},
-					},
-					{	-- The Adept's Path
-						["questID"] = 27434,
+					}),
+					q(27434, {	-- The Adept's Path
 						["qg"] = 23128,	-- Master Pyreanor
+						["coord"] = { 49.2, 71.2, 85 },
+						["sourceQuest"] = 27298,	-- Seek Out Master Pyreanor
 						["races"] = { 10 },	-- Blood Elf
-						["classes"] = { 2 },
-						["groups"] = {
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 20,
+						["g"] = {
 							i(65469),	-- Morningstar of the Order
 							i(65470),	-- Battlemace of the Order
 							i(65471),	-- Greatmace of the Order
 						},
-					},
-					{	-- The Battle for Lordaeron
-						["questID"] = 51796,
-						["qg"] = 14720,	-- High Overlord Saurfang
-						["races"] = HORDE_ONLY,
-						["coord"] = { 48.5, 70.7, 85 },
+					}),
+					q(51796, {	-- The Battle for Lordaeron
+						["qgs"] = {
+							14720,	-- High Overlord Saurfang
+							140176,	-- Nathanos Blightcaller
+						},
+						["coords"] = {
+							{ 48.5, 70.7, 85 },
+							{ 49.0, 91.6, 85 },
+						},
 						["sourceQuest"] = 53372,	-- Hour of Reckoning
-					},
-					{	-- The Call of the World-Shaman
-						["questID"] = 29440,
-						["qg"] = 45244,	-- 
-					},
-					{	-- The Dark Cleric's Bidding
-						["questID"] = 27437,
-						["qg"] = 45339,	-- Dark Cleric Cecille
-						["races"] = { 5 },	-- Undead
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							i(65479),	-- Staff of the Forsaken Faith
-						},
-					},
-					{	-- The Dark Iron Army
-						["questID"] = 28463,
-						["qg"] = 47233,	-- Gordul
 						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							i(65629),	-- Facemask of the Shattered Hand
-						},
-					}, 
-					{	-- The Darkmoon Faire (HOLIDAY/WORLD EVENT - DARKMOON FAIRE; add'l QG 55382)
-						["questID"] = 7926,
-						["qg"] = 55382,	-- 
-						["races"] = HORDE_ONLY,
-					},
-					{	-- The Darkreaver Menace
-						["questID"] = 8258,
-						["u"] = 40,
-						["qg"] = 13417,	-- Sagorne Creststrider
-						["races"] = HORDE_ONLY,
-						["classes"] = { 7 },	-- Shaman
-						["groups"] = {
-							un(2, i(20134)),	-- Skyfury Helm
-							un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
-						},
-					},
-					{	-- The End Time
-						["questID"] = 30094,
-						["qg"] = 52382,	-- 
-						["races"] = HORDE_ONLY,
-					},
-					{	-- The Eye of the Storm
-						["questID"] = 28805,
-						["qg"] = 45244,	-- 
-						["races"] = HORDE_ONLY,
-					},
-					{	-- The Golem Lord's Creations
-						["questID"] = 28461,
-						["qg"] = 3352,	-- Ormak Grimshot
-						["races"] = HORDE_ONLY,
-						["classes"] = { 3 },	-- Hunter
-						["groups"] = {
-							i(65628),	-- Helm of the Great Hunter
-						},
-					},
-					{	-- The High Overlord
-						["questID"] = 54099,
-						["qg"] = 146654,	-- Lady Sylvanas Windrunner
-						["coord"] = { 48.3, 71.1, 85 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 54097,	-- The Dark Lady Calls
-					},
-					{	-- The Horde Way
-						["questID"] = 31013,
-						["qg"] = 39605,	-- 
-						["races"] = { 26 },	-- Pandaren
-					},
-					{	-- The Journey Has Just Begun
-						["questID"] = 7493,
-						["qg"] = 14392,	-- Overlord Natoj
-						["coord"] = { 51.3, 83.2, 85 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 24429, --A Most Puzzling Circumstance
-						["requireSkill"] = 165,	-- Leatherworking
-						["groups"] = {
-							recipe(19093),		-- Onyxia Scale Cloak
-							un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
-						},
-					},
-					{	-- The Latest Fashion!
-						["questID"] = 25159,
-						["qg"] = 50482,	-- Marith Lazuria
-						["coord"] = { 72.4, 34.4, 85 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
-					},
-					{	-- The Lord of Blackrock (QG listed on wowhead as 4949 but I'm assuming it's Saurfang now - would need someone w/ a Horde character to turn in Nef's head)
-						["questID"] = 7784,
-						["qg"] = 14720,	-- 
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(19366),	-- Master Dragonslayer's Orb
-						},
-					},
-					{	-- The Maelstrom
-						["questID"] = 27203,
-						["qg"] = 45244,	-- Farseer Krogar
-						["races"] = HORDE_ONLY,
-					},
-					{	-- The Old Ways
-						["questID"] = 2756,	-- The Old Ways
-						["u"] = 40,
-						["qg"] = 7792,	-- Aturk the Anvil
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 164,	-- Blacksmithing
-						["isBreadcrumb"] = true,
-						["groups"] = {
-							un(2, i(7994)),	-- Plans: Orcish War Leggings
-						},
-					},
-					{	-- The Pyromancer's Grimoire
-						["questID"] = 28458,
-						["qg"] = 47246,	-- Ureda
-						["races"] = HORDE_ONLY,
-						["classes"] = { 8 },	-- Mage
-						["groups"] = {
-							i(65626),	-- Hood of the Arcane Path
-						},
-					},
-					{	-- The Shattered Hand
-						["questID"] = 1858,
-						["u"] = 40,
-						["qg"] = 6446,	-- Therzok
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
-						["groups"] = {
-							un(2, i(7298)),	-- Blade of Cunning
-						},
-					},
-					{	-- The Shadow-Walker's Task
-						["questID"] = 27436,
-						["qg"] = 45137,	-- Shadow-Walker Zuru
-						["races"] = { 8 },	-- Troll
-						["classes"] = { 5 },	-- Priest
-						["groups"] = {
-							i(65485),	-- Shadow-Walker Staff
-						},
-					},
-					{	-- The Stormwind Extraction
-						["questID"] = 50769,
-						["qg"] = 135205, 	-- Nathanos Blightcaller
-						["coord"] = { 54.4, 78.4, 85 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 51443,	-- Mission Statement
-					},
-					{	-- To Bambala
-						["questID"] = 29220,
-						["qg"] = 52234,	-- Bwemba
-						["coord"] = { 32.6, 68.2, 85 },
-						["races"] = HORDE_ONLY,
-					},
-					{	-- To Gadgetzan You Go!
-						["questID"] = 6611,
-						["u"] = 40,
-						["qg"] = 3399,	-- Zamja
-						["coord"] = { 32.2, 69.4, 85 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 185,	-- Cooking
-					},
-					{	-- To the Depths
-						["questID"] = 28816,
+						["lvl"] = 110,
+					}),
+					q(29440, {	-- The Call of the World-Shaman
 						["qg"] = 45244,	-- Farseer Krogar
 						["coord"] = { 50.4, 38.2, 85 },
 						["races"] = HORDE_ONLY,
+						["lvl"] = 85,
+					}),
+					q(27437, {	-- The Dark Cleric's Bidding
+						["qg"] = 45339,	-- Dark Cleric Cecille
+						["coord"] = { 48.2, 72.8, 85 },
+						["sourceQuest"] = 27334,	-- Dark Cleric Cecille
+						["races"] = { 5 },	-- Undead
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 50,
+						["g"] = {
+							i(65479),	-- Staff of the Forsaken Faith
+						},
+					}),
+					q(28463, {	-- The Dark Iron Army
+						["qg"] = 47233,	-- Gordul
+						["coord"] = { 44.6, 61.4, 85 },
+						["sourceQuest"] = 28298,	-- Meet with Gordul
+						["races"] = HORDE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 50,
+						["g"] = {
+							i(65629),	-- Facemask of the Shattered Hand
+						},
+					}), 
+					q(7926, {	-- The Darkmoon Faire
+						["qg"] = 55382,	-- Darkmoon Faire Mystic Mage
+						
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							currency(515),	-- Darkmoon Prize Ticket
+						},
+					}),
+					q(8258, {	-- The Darkreaver Menace
+						["qg"] = 13417,	-- Sagorne Creststrider
+						["coord"] = { 39.2, 48.4, 85 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { 7 },	-- Shaman
+						["lvl"] = 58,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(20134)),	-- Skyfury Helm
+							un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
+						},
+					}),
+					q(30094, {	-- The End Time
+						["qg"] = 52382,	-- Ziradormi
+						["coord"] = { 48.8, 70.4, 85 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 85,
+					}),
+					q(28805, {	-- The Eye of the Storm
+						["qg"] = 45244,	-- Farseer Krogar
+						["coord"] = { 50.4, 38.2, 85 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 82,
+					}),
+					q(28461, {	-- The Golem Lord's Creations
+						["qg"] = 3352,	-- Ormak Grimshot
+						["coord"] = { 63.8, 32.8, 85 },
+						["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot
+						["races"] = HORDE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 50,
+						["g"] = {
+							i(65628),	-- Helm of the Great Hunter
+						},
+					}),
+					q(54099, {	-- The High Overlord
+						["qg"] = 146654,	-- Lady Sylvanas Windrunner
+						["coord"] = { 48.3, 71.2, 85 },
+						["sourceQuest"] = 54097,	-- The Dark Lady Calls
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(31013, {	-- The Horde Way
+						["qg"] = 39605,	-- Garrosh Hellscream
+						["coord"] = { 48.2, 70.6, 85 },
+						["races"] = { 26 },	-- Pandaren
+						["lvl"] = 5,
+					}),							
+					q(7784, {	-- The Lord of Blackrock
+						["qg"] = 14720,	-- High Overlord Saurfang
+						["coord"] = { 48.6, 71.0, 85 },
+						["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
+						["races"] = HORDE_ONLY,
+						["lvl"] = 60,
+						["g"] = {
+							i(19383),	-- Master Dragonslayer's Medallion
+							i(19366),	-- Master Dragonslayer's Orb
+							i(19384),	-- Master Dragonslayer's Ring
+						},
+					}),
+					q(27203, {	-- The Maelstrom
+						["qg"] = 45244,	-- Farseer Krogar
+						["coord"] = { 50.4, 38.2, 85 },
+						["sourceQuest"] = 27722,	-- Warchief's Command: Deepholm!
+						["lvl"] = 82,
+					}),					
+					q(28458, {	-- The Pyromancer's Grimoire
+						["qg"] = 47246,	-- Ureda
+						["coord"] = { 48.4, 62.6, 85 },
+						["sourceQuest"] = 28300,	-- Meet with Ureda
+						["races"] = HORDE_ONLY,
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 50,
+						["g"] = {
+							i(65626),	-- Hood of the Arcane Path
+						},
+					}),
+					q(1858, {	-- The Shattered Hand
+						["qg"] = 6446,	-- Therzok
+						["coord"] = { 33.4, 65.2, 85 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 13,
+						["u"] = 40,
+						["g"] = {
+							un(2, i(7298)),	-- Blade of Cunning
+						},
+					}),
+					q(27436, {	-- The Shadow-Walker's Task
+						["qg"] = 45137,	-- Shadow-Walker Zuru
+						["coord"] = { 35.4, 69.2, 85 },
+						["sourceQuest"] = 27332,	-- Seek the Shadow-Walker
+						["races"] = { 
+							8,	-- Troll
+							31,	-- Zandalari Troll
+						},	
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 20,
+						["g"] = {
+							i(65485),	-- Shadow-Walker Staff
+						},
+					}),
+					q(50769, {	-- The Stormwind Extraction
+						["qg"] = 135205,	-- Nathanos Blightcaller
+						["coord"] = { 54.4, 78.4, 85 },
+						["sourceQuest"] = 51443,	-- Mission Statement
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+					q(29220, {	-- To Bambala
+						["qg"] = 52234,	-- Bwemba
+						["coord"] = { 32.6, 68.2, 85 },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 85,
+					}),				
+					q(28816, {	-- To the Depths
+						["qg"] = 45244,	-- Farseer Krogar
+						["coord"] = { 50.4, 38.2, 85 },
 						["isBreadcrumb"] = true,
-					},
-					{	-- Token of Power
-						["questID"] = 27402,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 80,
+					}),
+					q(27402, {	-- Token of Power
 						["qg"] = 88705,	-- Kranosh
+						["coord"] = { 76.8, 37.4, 85 },
+						["sourceQuest"] = 27282,	-- Kranosh's Behest
 						["races"] = HORDE_ONLY,
 						["classes"] = { 9 },	-- Warlock
-						["groups"] = {
+						["lvl"] = 20,
+						["g"] = {
 							i(65497),	-- Staff of the Left Hand Path
 						},
-					},
-					{	-- Traitor's Bait
-						["questID"] = 26830,
-						["qg"] = 3144,	-- Eitrigg (add'l QGs 14720, 39605 and 86832, previous Horde leaders)
-						["lvl"] = 84,
-						["races"] = HORDE_ONLY,
+					}),
+					q(26830, {	-- Traitor's Bait
+						["qg"] = 3144,	-- Eitrigg
+						["coord"] = { 76.8, 37.4, 85 },
 						["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
-						["groups"] = {
+						["races"] = HORDE_ONLY,
+						["lvl"] = 84,
+						["g"] = {
 							i(63916),	-- Belt of Mystical Betrayal
 							i(63914),	-- Mindsliced Chestguard
 							i(63913),	-- Twilight-Heart Shoulderplates
@@ -1238,139 +1212,152 @@ _.Zones =
 							i(63915),	-- Vision-Tainted Treads
 							--i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
 						},
-					},
-					{	-- Trampled Under Foot
-						["questID"] = 2753,
+					}),
+					q(2753, {	-- Trampled Under Foot
 						["qg"] = 7790,	-- Orokk Omosh
-						["coord"] = { 76.8, 37.7, 85 },
-						["races"] = HORDE_ONLY,
+						["coord"] = { 76.8, 37.4, 85 },
 						["sourceQuest"] = 2752,	-- On Iron Pauldrons
 						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
+						["races"] = HORDE_ONLY,
+						["g"] = {
 							i(7981),	-- Plans: Barbaric Iron Boots
 						},
-					},
-					{	-- Transmutation Master
-						["questID"] = 29482,
-						["qg"] = 3347,	-- Yelmak
-						["coord"] = { 55.6, 45.8, 85 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
-					},
-					{	-- Twilight Scheming
-						["questID"] = 28475,
+					}),				
+					q(28475,{	-- Twilight Scheming
 						["qg"] = 45337,	-- Tyelis
+						["coord"] = { 49.0, 71.0, 85 },
+						["sourceQuest"] = 28307,	-- Meet with Tyelis
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65634),	-- Crown of the Sunchaser
 						},
-					},
-					{	-- Twilight Scheming
-						["questID"] = 28478,
+					}),
+					q(28478, {	-- Twilight Scheming
 						["qg"] = 45347,	-- Brother Silverhallow
+						["coord"] = { 37.8, 87.4, 85 },
+						["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow
 						["races"] = { 9 },	-- Goblin
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65637),	-- Crown of Golden Worship
 						},
-					},
-					{	-- Twilight Scheming
-						["questID"] = 28474,
+					}),
+					q(28474, {	-- Twilight Scheming
 						["qg"] = 45339,	-- Dark Cleric Cecille
+						["coord"] = { 48.2, 72.8, 85 },
+						["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille
 						["races"] = { 5 },	-- Undead
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65633),	-- Crown of Forsaken Faith
 						},
-					},
-					{	-- Twilight Scheming
-						["questID"] = 28476,
+					}),
+					q(28476, {	-- Twilight Scheming
 						["qg"] = 44735,	-- Seer Liwatha
+						["coord"] = { 45.4, 53.4, 85 },
+						["sourceQuest"] = 28308,	-- Meet with Seer Liwatha
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65635),	-- Crown of the Earthmother
 						},
-					},
-					{	-- Twilight Scheming
-						["questID"] = 28477,
+					}),
+					q(28477, {	-- Twilight Scheming
 						["qg"] = 45137,	-- Shadow-Walker Zuru
-						["races"] = { 8 },	-- Troll
+						["coord"] = { 35.4, 69.2, 85 },
+						["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru
+						["races"] = {
+							8,	-- Troll
+							31,	-- Zandalari Troll
+						},
 						["classes"] = { 5 },	-- Priest
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65636),	-- Crown of the Shadow-Walker
 						},
-					},
-					{ 	-- Unfamiliar Waters
-						["questID"] = 26311,
+					}),
+					q(26311, {	-- Unfamiliar Waters
 						["qg"] = 42637,	-- Sauranok the Mystic
-						["races"] = HORDE_ONLY,
+						["coord"] = { 48.0, 71.0, 85 },
 						["sourceQuest"] = 28909,	-- Sauranok Will Paint the Way
-						["groups"] = {
+						["races"] = HORDE_ONLY,
+						["lvl"] = 84,
+						["g"] = {
 							i(63922),	-- Awestruck Bracers
 							i(63924),	-- Blade-Dodging Girdle
 							i(63923),	-- Hauberk of Shock
 						},
-					}, 
-					{	-- Weapons of Darkness
-						["questID"] = 28466,
+					}), 
+					q(28466, {	-- Weapons of Darkness
 						["qg"] = 44725,	-- Sunwalker Atohmo
+						["coord"] = { 45.2, 53.4, 85 },
+						["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo
 						["races"] = { 6 },	-- Tauren
 						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65631),	-- Helm of the Sunwalker
 							i(65644),	-- Faceguard of the Sunwalker
 							i(65647),	-- Headguard of the Sunwalker
-						},
-						["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo
-					},
-					{	-- Weapons of Darkness
-						["questID"] = 28473,
+						},					
+					}),
+					q(28473, {	-- Weapons of Darkness
 						["qg"] = 23128,	-- Master Pyreanor
+						["coord"] = { 49.2, 71.2, 85 },
+						["sourceQuest"] = 28303,	-- Meet with Master Pyreanor
 						["races"] = { 10 },	-- Blood Elf
 						["classes"] = { 2 },	-- Paladin
-						["groups"] = {
+						["lvl"] = 50,
+						["g"] = {
 							i(65632),	-- Helm of the Order
 							i(65645),	-- Faceguard of the Order
 							i(65648),	-- Headguard of the Order
 							i(25549),	-- Blood Knight Tabard
 						},
-						["sourceQuest"] = 28303,	-- Meet with Master Pyreanor
-					},
-					{	-- Where Is My Warfleet?
-						["questID"] = 26324,
+					}),
+					q(26324, {	-- Where Is My Warfleet?
 						["qg"] = 14720,	-- High Overlord Saurfang
+						["coord"] = { 48.6, 71.0, 85 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 26311,	-- Unfamiliar Waters
-					},
-					{	-- Witness to the Wound
-						["questID"] = 49982,
+						["lvl"] = 84,
+					}),
+					q(49982, {	-- Witness to the Wound
 						["qg"] = 132254,	-- Nathanos Blightcaller
-						["races"] = HORDE_ONLY,
+						["coord"] = { 49.8, 75.6, 85 },
 						["sourceQuest"] = 50341 ,	-- A Recent Discovery
-					},
-					{	-- Wolf Swapping - Arctic Wolf
-						["questID"] = 7660,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
 						["u"] = 40,
+					}),
+					q(7660, {	-- Wolf Swapping - Arctic Wolf
 						["qg"] = 3362,	-- Ogunaro Wolfrunner
+						["coord"] = { 61.0, 35.2, 85 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Wolf Swapping - Red Wolf
-						["questID"] = 7661,
 						["u"] = 40,
+						["g"] = {
+							i(18796),	-- Horn of the Swift Brown Wolf
+							i(18798),	-- Horn of the Swift Gray Wolf
+							i(18797),	-- Horn of the Swift Timber Wolf
+						},
+					}),
+					q(7661, {	-- Wolf Swapping - Red Wolf
 						["qg"] = 3362,	-- Ogunaro Wolfrunner
+						["coord"] = { 61.0, 35.2, 85 },
 						["races"] = HORDE_ONLY,
-					},
-					{	-- You Too Good.
-						["questID"] = 6608,
-						["qg"] = 3332,	-- Lumak
-						["coord"] = { 66.6, 41.6, 85 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 129,	-- Fishing
-						["isBreadcrumb"] = true,
-					},
-				})),
+						["u"] = 40,
+						["g"] = {
+							i(18796),	-- Horn of the Swift Brown Wolf
+							i(18798),	-- Horn of the Swift Gray Wolf
+							i(18797),	-- Horn of the Swift Timber Wolf
+						},
+					}),				
+				}),
 			},
 		}),
 	}),

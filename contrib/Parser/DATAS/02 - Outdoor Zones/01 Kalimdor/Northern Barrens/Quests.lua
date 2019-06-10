@@ -533,13 +533,16 @@ _.Zones =
 						["coord"] = { 57.5, 18.2, 10 },
 						["races"] = HORDE_ONLY,
 					},
-					{	-- In Defense of Far Watch
-						["questID"] = 871,
+					q(871, {	-- In Defense of Far Watch
 						["qg"] = 3337,	-- Kargal Battlescar
 						["coord"] = { 67.6, 39.3, 10 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 28494,	-- Warchief's Command: Northern Barrens!
-					},
+						["sourceQuests"] = {
+							840,	-- Conscript of the Horde
+							26642,	-- Preserving the Barrens
+							28494,	-- Warchief's Command: Northern Barrens!
+						},
+					}),
 					{	-- In Fungus We Trust
 						["questID"] = 13998,
 						["qg"] = 3390,	-- Apothecary Helbrim

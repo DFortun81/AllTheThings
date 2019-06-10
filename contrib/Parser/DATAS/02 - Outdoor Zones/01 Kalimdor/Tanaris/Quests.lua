@@ -315,15 +315,15 @@ _.Zones =
 							recipe(64054),	-- Clamlette Magnifique
 						},
 					},
-					{	-- Clamlette Surprise
-						["questID"] = 6610,
+					q(6610, {	-- Clamlette Surprise
 						["qg"] = 40589,	-- Dirge Quikcleave
 						["coord"] = { 52.4, 29.0, 71 },
+						["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
 						["requireSkill"] = 185,	-- Cooking
 						["groups"] = {
 							recipe(64054),	-- Clamlette Magnifique
 						},
-					},
+					}),
 					{	-- Confront Yeh'kinya
 						["questID"] = 8181,
 						["u"] = 40,
@@ -398,8 +398,7 @@ _.Zones =
 							2772,	-- The World At Your Feet
 						},
 					},
-					{	-- Easy Money
-						["questID"] = 27003,
+					q(27003, {	-- Easy Money
 						["qg"] = 44833,	-- Adarrah
 						["coord"] = { 30.4, 65.5, 71 },
 						["sourceQuests"] = {
@@ -408,7 +407,7 @@ _.Zones =
 							28296,	-- Meetup with the Caravan
 							28557,	-- Warchief's COmmand: Uldum!
 						},
-					},
+					}),
 					{	-- Filling Our Pockets
 						["questID"] = 26887,
 						["qg"] = 38704,	-- Kelsey Steelspark
