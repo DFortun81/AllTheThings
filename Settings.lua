@@ -2782,11 +2782,9 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("Channel") == "master");
 end,
 function(self)
-	local checked = self:GetChecked();
-	if checked then
-		settings:SetTooltipSetting("Channel", "master");
-	else
-		settings:SetTooltipSetting("Channel", "sound");
+	local state = self:GetChecked() and "master" or "sound";
+	if settings:GetTooltipSetting("Channel") ~= state then
+		settings:SetTooltipSetting("Channel", state);
 	end
 end);
 UseMasterAudioChannel:SetATTTooltip("Enable this option if you want the celebrations and other ATT sound effects to play on the 'MASTER' audio channel.\n\nDefault: Yes\n\nA lot of people play with sound effects off, so this option allows the ATT sounds to bypass that should it be desired.");

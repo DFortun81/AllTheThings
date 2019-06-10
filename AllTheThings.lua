@@ -9558,6 +9558,8 @@ end):Show();
 							end
 						elseif group.key == "questID" then
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+						elseif group.key == "speciesID" then
+							MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
 						end
