@@ -2,8 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(2, {	-- Burning Crusade
-	{	-- Shadow Labyrinth
-		["instanceID"] = 253,	-- Shadow Labyrinth
+	inst(253, {	-- Shadow Labyrinth
 		["lvl"] = 62,
 		["maps"] = {
 			260,	-- Shadow Labyrinth
@@ -202,5 +201,5 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}
 			}),
 		},
-	},
+	}),
 })};
