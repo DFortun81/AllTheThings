@@ -522,28 +522,35 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
---[[				qa(11924)),	-- More Torch Catching
-					qa(11921)),	-- More Torch Tossing
-					qa(8860)),	-- New Year Celebrations!
-					qa(25105)),	-- Nibbler! No!
-					qa(25155)),	-- Ogrezonians in the Mood
-					qa(31592)),	-- On The Mend
-					qa(31745)),	-- Onward and Inward
-					qa(26192)),	-- Orphans Like Cookies Too!
-					qa(334)),	-- Package for Thurman
-					qa(26153)),	-- Penny's Pumpkin Pancakes
-					qa(24656)),	-- Pilfering Perfume
-					qa(14022)),	-- Pilgrim's Bounty
-					qa(11882)),	-- Playing with Fire
-					q(29067)),	-- Potion Master
-					qa(27240)),	-- Proof of Treachery
-					qa(40661)),	-- Protect the Home Front
-					q(32307)),	-- Reader for the Dead Tongue				
-					qa(26396)),	-- Return to Argus
+--[[				qa(11924),	-- More Torch Catching
+					qa(11921),	-- More Torch Tossing
+					qa(8860),	-- New Year Celebrations!
+					qa(25105),	-- Nibbler! No!
+					qa(25155),	-- Ogrezonians in the Mood
+					qa(31592),	-- On The Mend
+					qa(31745),	-- Onward and Inward
+					qa(26192),	-- Orphans Like Cookies Too!
+					qa(334),	-- Package for Thurman
+					qa(26153),	-- Penny's Pumpkin Pancakes
+					qa(24656),	-- Pilfering Perfume
+					qa(14022),	-- Pilgrim's Bounty
+					qa(11882),	-- Playing with Fire
+					q(29067),	-- Potion Master
+					qa(27240),	-- Proof of Treachery
+					qa(40661),	-- Protect the Home Front
+					q(32307),	-- Reader for the Dead Tongue				
+					qa(26396),	-- Return to Argus
 					qa(27241, {	-- Return to Jaina (add'l QG 29611)
 						["qg"] = 107574,	-- 
 					}),
-					qa(26370)),	-- Return to Sentinel Hill
+--]]
+					q(26370, {	-- Return to Sentinel Hill
+						["sourceQuests"] = { 26322 },	-- Rise of the Brotherhood
+						["coord"] = { 85.6, 32.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					}),
+--[[
 					qa(26442)),	-- Rock Lobster
 					qa(44471)),	-- Second Sight
 					q(32317)),	-- Seeking the Soulstones

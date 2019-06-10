@@ -6,6 +6,12 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
 			n(-17, {	-- Quests
+				q(26320, {	-- A Vision of the Past
+					["sourceQuests"] = { 26319 },	-- Secrets Revealed
+					["coord"] = { 42.8, 65.1, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 42651,	-- Thoralius the Wise
+				}),
 				
 				
 				q(26291, {	-- Big Trouble in Moonbrook
@@ -22,7 +28,7 @@ _.Zones =
 				}),
 				
 				
-				q(26353, {	-- Captain Sanders' Hidden Treasure
+				q(26353, {	-- Captain Sanders' Hidden Treasure (#1)
 				--	["itemID"] = 1357,	-- Captain Sanders' Treasure Map
 					["coord"] = { 49.2, 9.80, 52 },	-- center of the area where the mobs spawn
 					["races"] = ALLIANCE_ONLY,
@@ -31,6 +37,57 @@ _.Zones =
 						515,	-- Murloc Raider
 						126,	-- Murloc Coastrunner
 						456,	-- Murloc Minor Oracle
+					},
+				}),
+				
+
+				q(26354, {	-- Captain Sanders' Hidden Treasure (#2)
+					["sourceQuests"] = { 26353 },	-- Captain Sanders' Hidden Treasure (#1)
+				--	["objectID"] = 35,	-- Captain's Footlocker
+				--	not sure if it's this objectID or 307330.  both are listed as the start on wowhead, along with 307070 "Old Footlocker"
+					["coord"] = { 25.9, 47.7, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_misc_crate01",
+				}),
+
+
+				q(26355, {	-- Captain Sanders' Hidden Treasure (#3)
+					["sourceQuests"] = { 26354 },	-- Captain Sanders' Hidden Treasure (#2)
+				--	["objectID"] = 36,	-- Captain's Footlocker
+				--	not sure if it's this objectID, 307307, or 307619, which are all listed as the start on wowhead.
+					["coord"] = { 40.6, 47.8, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_cask_03",
+				}),
+				
+				
+				q(26356, {	-- Captain Sanders' Hidden Treasure (#4)
+					["sourceQuests"] = { 26355 },	-- Captain Sanders' Hidden Treasure (#3)
+				--	["objectID"] = 34,	-- Old Jug
+				--	not sure if it's this objectID, 307277, or 307621, "Jug," which are all listed as the start on wowhead.
+					["coord"] = { 40.5, 16.8, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_drink_11",
+					["g"] = {
+						i(3344),	-- Captain Sanders' Sash
+						i(3342),	-- Captain Sanders' Shirt
+						i(3343),	-- Captain Sanders' Booty Bag
+					},
+				}),
+
+				
+				q(26296, {	-- Evidence Collection
+					["sourceQuests"] = { 26292 },	-- To Moonbrook
+				--	["itemID"] = 58117,	-- Red Bandana
+					["coord"] = { 42.6, 69.4, 52 },	-- center of area where Moonbrook Thugs spawn
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\inv_misc_clothscrap_02",
+					["crs"] = { 42677 },	-- Moonbrook Thug
+					["g"] = {
+						i(58921),	-- Evidence Collection Gloves
+						i(58923),	-- Gregorky's Bracers
+						i(131505),	-- Worn Defias Bindings
+						i(58922),	-- Worn Defias Bracers
 					},
 				}),
 				
@@ -154,6 +211,13 @@ _.Zones =
 				}),
 				
 				
+				q(26347, {	-- Keeper of the Flame
+					["coord"] = { 30.5, 85.4, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 392,	-- Captain Grayson
+				}),
+				
+				
 				q(26228, {	-- Livin' the Life
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
 					["coord"] = { 49.7, 19.5, 52 },
@@ -193,12 +257,44 @@ _.Zones =
 					},
 				}),
 				
+
+				q(26295, {	-- Propaganda
+					["sourceQuests"] = { 26292 },	-- To Moonbrook!
+					["coord"] = { 42.2, 64.0, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 42425,	-- Captain Alpert
+				}),
+
+				
+				q(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
+					["sourceQuests"] = { 26320 },	-- A Vision of the Past
+					["coord"] = { 56.2, 47.6, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["g"] = {
+						i(58931),	-- House Wrynn Claymore
+						i(58929),	-- House Wrynn Crossbow
+						i(58927),	-- House Wrynn Dagger
+						i(156934),	-- House Wrynn Gavel
+						i(58928),	-- House Wrynn Halberd
+						i(58930),	-- House Wrynn Staff
+					},
+				}),
+				
 				
 				q(26290, {	-- Secrets of the Tower
 					["sourceQuests"] = { 26289 },	-- Find Agent Kearnen
 					["coord"] = { 68.2, 70.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7024,	-- Agent Kearnen
+				}),
+				
+				
+				q(26319, {	-- Secrets Revealed
+					["sourceQuests"] = { 26297 },	-- The Dawning of a New Day
+					["coord"] = { 42.2, 64.0, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 42425,	-- Captain Alpert
 				}),
 				
 				
@@ -210,7 +306,35 @@ _.Zones =
 				}),
 				
 				
+				q(26349, {	-- The Coastal Menace
+					["coord"] = { 30.5, 85.4, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 392,	-- Captain Grayson
+					["g"] = {
+						i(1557),	-- Buckler of the Seas
+						i(1172),	-- Grayson's Torch
+						i(5240),	-- Torchlight Wand
+					},
+				}),
+				
+				
+				q(26348, {	-- The Coast Isn't Clear
+					["coord"] = { 30.5, 85.4, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 392,	-- Captain Grayson
+				}),
+				
+				
+				q(26297, {	-- The Dawning of a New Day
+					["sourceQuests"] = { 26295 },	-- Propaganda
+					["coord"] = { 42.2, 64.0, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 42425,	-- Captain Alpert
+				}),
+				
+				
 				q(26371, {	-- The Legend of Captain Grayson
+					["isBreadcrumb"] = true,	-- for "The Coast Isn't Clear"
 					["coord"] = { 56.2, 47.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 878,	-- Scout Galiaan
@@ -225,11 +349,28 @@ _.Zones =
 				}),
 				
 				
+				q(26761, {	-- Threat to the Kingdom
+					["sourceQuests"] = { 26370 },	-- Return to Sentinel Hill
+				--	["isBreadcrumb"] = true,	-- not sure!
+					["coord"] = { 56.3, 49.5, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+				}),
+				
+				
 				q(26237, {	-- Times are Tough
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
 					["coord"] = { 55.9, 31.3, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 233,	-- Farmer Saldean
+				}),
+				
+				
+				q(26292, {	-- To Moonbrook!
+					["sourceQuests"] = { 26291 },	-- Big Trouble in Moonbrook
+					["coord"] = { 56.3, 47.6, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 				}),
 				
 				
@@ -268,7 +409,7 @@ _.Zones =
 				}),
 
 
-					["icon"] = "Interface\\Icons\\",
+					["icon"] = "Interface\\Icons\\inv_misc_clothscrap_02",
 
 
 			--]]
@@ -278,11 +419,6 @@ _.Zones =
 				
 				
 --[[
-				q(26320, {	-- A Vision of the Past
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26355),	-- Captain Sanders' Hidden Treasure
-				q(26354),	-- Captain Sanders' Hidden Treasure
 				q(46293),	-- Deadmines, Part Three?
 				q(43287),	-- Defend
 				q(43242),	-- Demon Commander
@@ -322,9 +458,6 @@ _.Zones =
 				}),
 				q(43245),	-- Invasion: Westfall
 				q(42235),	-- Invasion: Westfall
-				q(26347, {	-- Keeper of the Flame
-					["races"] = ALLIANCE_ONLY,
-				}),
 ]]--
 				q(2359, {	-- Klaven's Tower
 					["u"] = 40,
@@ -338,18 +471,6 @@ _.Zones =
 				}),
 --[[
 				q(31725),	-- Lindsay
---]]
-				o(34, {	-- Old Jug
-					q(26356, {	-- Captain Sanders' Hidden Treasure
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(3344),	-- Captain Sanders' Sash
-							i(3342),	-- Captain Sanders' Shirt
-							i(3343),	-- Captain Sanders' Booty Bag
-						},
-					}),
-				}),
---[[
 				q(31724, {	-- Old MacDonald
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -361,26 +482,7 @@ _.Zones =
 				q(11882, {	-- Playing with Fire
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26295, {	-- Propaganda
-					["races"] = ALLIANCE_ONLY,
-				}),
 ]]--
-				i(58117, {	-- Red Bandana
-					["crs"] = {
-						42677,	-- Moonbrook Thug
-					},
-					["g"] = {
-						q(26296, {	-- Evidence Collection
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(58921),	-- Evidence Collection Gloves
-								i(58923),	-- Gregorky's Bracers
-								i(131505),	-- Worn Defias Bindings
-								i(58922),	-- Worn Defias Bracers
-							},
-						}),
-					},
-				}),
 				q(153, {	-- Red Leather Bandanas
 					["u"] = 40,
 					["g"] = {
@@ -391,26 +493,6 @@ _.Zones =
 				}),
 --[[
 				q(43288),	-- Repel
-				q(26370, {	-- Return to Sentinel Hill
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
-					["qg"] = 42750,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(58931),	-- House Wrynn Claymore
-						i(58929),	-- House Wrynn Crossbow
-						i(58927),	-- House Wrynn Dagger
-						i(156934),	-- House Wrynn Gavel
-						i(58928),	-- House Wrynn Halberd
-						i(58930),	-- House Wrynn Staff
-					},
-				}),
---[[
-				q(26319, {	-- Secrets Revealed
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(8675),	-- Skychaser the Elder
 ]]--
 				q(53, {	-- Sweet Amber
@@ -421,23 +503,6 @@ _.Zones =
 					},
 				}),
 --[[
-				q(26348, {	-- The Coast Isn't Clear
-					["races"] = ALLIANCE_ONLY,
-				}),
---]]
-				q(26349, {	-- The Coastal Menace
-					["qg"] = 392,	-- 
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(1557),	-- Buckler of the Seas
-						i(1172),	-- Grayson's Torch
-						i(5240),	-- Torchlight Wand
-					},
-				}),
---[[
-				q(26297, {	-- The Dawning of a New Day
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(46291),	-- The Deadmines Strike Back
 				q(27850, {	-- The Defias Kingpin
 					["races"] = HORDE_ONLY,
@@ -468,12 +533,6 @@ _.Zones =
 					},
 				}),
 --[[
-				q(26761, {	-- Threat to the Kingdom
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(26292, {	-- To Moonbrook!
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27844, {	-- Traitors!!!
 					["races"] = HORDE_ONLY,
 				}),
