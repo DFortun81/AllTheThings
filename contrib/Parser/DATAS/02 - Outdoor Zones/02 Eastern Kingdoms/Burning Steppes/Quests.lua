@@ -112,7 +112,10 @@ _.Zones =
 					crit(3, {	-- Infiltration (28286)
 						qa(28184, {	-- Chiselgrip, the Heart of the Steppes
 							["qg"] = 47811,	-- John J. Keeshan
-							["sourceQuests"] = { 28183 },	-- Return to Keeshan
+							["sourceQuests"] = {
+								28172,	-- Done Nothing Wrong (reported as SQ by Evelynn on Discord)
+								28183,	-- Return to Keeshan
+							},
 							["g"] = {
 								i(64510),	-- Oreknuckle Gun
 								i(64509),	-- Unburdened Pauldrons
@@ -122,7 +125,10 @@ _.Zones =
 						}),
 						qh(28426, {	-- Chiselgrip, the Heart of the Steppes
 							["qg"] = 48559,	-- Ariok
-							["sourceQuests"] = { 28425 },	-- Return to Ariok
+							["sourceQuests"] = {
+								28417,	-- Done Nothing Wrong
+								28425,	-- Return to Ariok
+							},
 							["g"] = {
 								i(64514),	-- Oreknuckle Gun
 								i(64513),	-- Unburdened Pauldrons
@@ -244,11 +250,17 @@ _.Zones =
 						}),
 						qa(28265, {	-- General Thorg'izog
 							["qg"] = 48109,	-- John J. Keeshan
-							["sourceQuests"] = { 28227 },	-- Golem Training
+							["sourceQuests"] = {
+								28227,	-- Golem Training
+								28253,	-- Taking the Horn For Ourselves
+							},
 						}),
 						qh(28437, {	-- General Thorg'izog
 							["qg"] = 48568,	-- Eitrigg
-							["sourceQuests"] = { 28227 },	-- Golem Training
+							["sourceQuests"] = {
+								28227,	-- Golem Training
+								28436,	-- Taking the Horn For Ourselves
+							},
 						}),
 						qa(28266, {	-- Trial by Magma
 							["qg"] = 48133,	-- General Thorg'izog

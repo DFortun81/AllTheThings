@@ -146,7 +146,9 @@ _.Zones =
 			q(49552),	-- Hero's Call: Zul'Drak!
 			q(29156),	-- The Troll Incursion
 			--
-			q(26365, { 		-- Hero's Call: Redridge Mountains! (add'l QG 29611)
+			q(26365, {	-- Hero's Call: Redridge Mountains!
+				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+				["coord"] = { 85.6, 31.8, 84 },
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
 				["g"] = {

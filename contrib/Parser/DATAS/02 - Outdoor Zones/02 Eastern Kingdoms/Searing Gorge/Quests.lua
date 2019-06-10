@@ -70,7 +70,10 @@ _.Zones =
 					crit(3, {	-- In the Hall of the Mountain-Lord (qID 28035)
 						q(27986, {	--In the Hall of the Mountain-Lord
 							["qg"] = 14627,	-- Hansel Heavyhands
-							["sourceQuests"] = { 27979 },	-- Dark Ministry
+							["sourceQuests"] = {
+								27979,	-- Dark Ministry
+								28099,	-- Rasha'krak (reported as SQ by Evelynn on Discord)
+							},
 						}),
 						q(28028, {	--Siege!
 							["qg"] = 47393,	-- Mountain-Lord Rendan
