@@ -937,7 +937,7 @@ _.Zones =
 					}),
 					n(50836, { 		-- Ik-Ik the Nimble
 						["coord"] = { 55.4, 63.4, 422 },
-						["description"] = { "Burrow entrance at 54.9, 65.7" },
+						["description"] = "Burrow entrance at 54.9, 65.7",
 						["groups"] = {
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars
