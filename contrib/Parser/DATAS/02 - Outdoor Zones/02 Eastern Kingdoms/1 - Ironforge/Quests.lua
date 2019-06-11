@@ -100,14 +100,6 @@ _.Zones =
 				qa(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- 
 				}),
-				q(29477, {	-- Gnomish Engineering
-					["qg"] = 5174,	-- 
-					["requireSkill"] = 202,
-				}),
-				q(29475, {	-- Goblin Engineering
-					["qg"] = 5174,	-- 
-					["requireSkill"] = 202,
-				}),
 				qa(6388, {	-- Gryth Thurden
 					["qg"] = 4256,	-- 
 					["races"] = {3,7},	-- Dwarf, Gnome

@@ -78,19 +78,16 @@ _.Zones =
 						i(56858),	-- Goblin Treat Tin
 					},
 				},
-				{	-- A Good Head On Your Shoulders
-					["questID"] = 2771,	-- A Good Head On Your Shoulders
-					["u"] = 40,
-					["qg"] = 7804,	-- Trenton Lighthammer <The Mithril Order>
+				q(2771, {	-- A Good Head On Your Shoulders
+					["qg"] = 7804,	-- Trenton Lighthammer
+					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
-						{	-- Plans: Ornate Mithril Helm
-							["itemID"] = 7987,	-- Plans: Ornate Mithril Helm
-							["u"] = 2,
-						},
+					["u"] = 40,
+					["g"] = {
+						un(2, i(7987)),	-- Plans: Ornate Mithril Helm
 					},
-				},
+				}),
 				{	-- A Grave Situation
 					["questID"] = 3913,
 					["u"] = 40,
@@ -260,11 +257,34 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 				},
+				q(4496, {	-- Bungle in the Jungle
+					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuests"] = {
+						4494,	-- March of the Silithid [Horde]
+						4493,	-- March of the Silithid [Alliance]
+					},
+					["u"] = 40,
+				}),
 				{	-- Butcherbot
 					["questID"] = 25112,
 					["qg"] = 39178,	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 				},
+				q(4509, {	-- Calm Before the Storm [Horde]
+					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+				}),
+				q(4508, {	-- Calm Before the Storm [Alliance]
+					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,
+				}),
 				{	-- Captain Dreadbeard
 					["questID"] = 25166,
 					["qg"] = 38704,	-- Kelsey Steelspark
@@ -383,20 +403,21 @@ _.Zones =
 						un(2, i(9636)),	-- Swashbuckler Sash
 					},
 				},
-				{	-- Did You Lose This?
-					["questID"] = 3321,	-- Did You Lose This?
-					["u"] = 40,
+				q(3321, {	-- Did You Lose This?
 					["qg"] = 7804,	-- Trenton Lighthammer
-					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
-						un(2, i(10418)),	-- Glimmering Mithril Insignia
-					},
+					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuests"] = {
 						2771,	-- A Good Head On Your Shoulders
 						2773,	-- The Mithril Kid
 						2772,	-- The World At Your Feet
 					},
-				},
+					["requireSkill"] = 164,	-- Blacksmithing
+					["u"] = 40,
+					["groups"] = {
+						un(2, i(10418)),	-- Glimmering Mithril Insignia
+					},
+					
+				}),
 				q(27003, {	-- Easy Money
 					["qg"] = 44833,	-- Adarrah
 					["coord"] = { 30.4, 65.5, 71 },
@@ -444,6 +465,11 @@ _.Zones =
 						},
 					},
 				},
+				q(992, {	-- Gadgetzan Water Survey
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["u"] = 40,
+				}),
 				{	-- Gahz'ridian
 					["questID"] = 3161,
 					["u"] = 40,
@@ -600,6 +626,18 @@ _.Zones =
 						},
 					},
 				},
+				q(110, {	-- Insect Part Analysis
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["sourceQuest"] = 10,	-- The Scrimshank Redemption
+					["u"] = 40,
+				}),
+				q(113, {	-- Insect Part Analysis
+					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuest"] = 110,	-- Insect Part Analysis
+					["u"] = 40,
+				}),
 				{	-- Into Zul'Farrak
 					["questID"] = 25556,
 					["qg"] = 7804,	-- Trenton Lighthammer
@@ -692,6 +730,12 @@ _.Zones =
 					["questID"] = 38890,
 					["u"] = 1,
 				},
+				q(82, {	-- Noxious Lair Investigation
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
+					["u"] = 40,
+				}),
 				{	-- Old Hillsbrad
 					["questID"] = 10282,
 					["qg"] = 20130,	-- Andormu
@@ -707,6 +751,12 @@ _.Zones =
 						},
 					},
 				},
+				q(4507, {	-- Pawn Captures Queen
+					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuest"] = 4496,	-- Bungle in the Jungle
+					["u"] = 40,
+				}),
 				{	-- Prospector Gunstan
 					["questID"] = 28881,
 					["qg"] = 39059,	-- Kelsey steelspark
@@ -771,6 +821,20 @@ _.Zones =
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["isBreadcrumb"] = true,
 				},
+				q(32, {	-- Rise of the Silithid [Horde]
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["sourceQuest"] = 113,	-- Insect Part Analysis
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+				}),
+				q(162, {	-- Rise of the Silithid [Alliance]
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["sourceQuest"] = 113,	-- Insect Part Analysis
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,
+				}),
 				{	-- Rocket Rescue
 					["questID"] = 25050,
 					["qg"] = 38535,	-- Kelsey Steelspark
@@ -999,16 +1063,16 @@ _.Zones =
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 					},
 				},
-				{	-- The Mithril Kid
-					["questID"] = 2773,
-					["u"] = 40,
+				q(2773, {	-- The Mithril Kid
 					["qg"] = 7804,	-- Trenton Lighthammer
+					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
+					["u"] = 40,
+					["g"] = {
 						un(2, i(7986)),	-- Plans: Ornate Mithril Breastplate
 					},
-				},
+				}),
 				{	-- The Path of the Conqueror
 					["questID"] = 8754,
 					["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
@@ -1129,6 +1193,12 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["sourceQuest"] = 8755,	-- The Path of the Conqueror
 				},
+				q(10, {	-- The Scrimshank Redemption
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, 71 },
+					["sourceQuest"] = 82,	-- Noxious Lair Investigation
+					["u"] = 40,
+				}),
 				{	-- The Secrets of Uldum
 					["questID"] = 25566,
 					["qg"] = 40109,	-- Prospector Gunstan
@@ -1164,16 +1234,16 @@ _.Zones =
 						19936,	-- Arazmodu
 					},
 				},
-				{	-- The World At Your Feet
-					["questID"] = 2772,
-					["u"] = 40,
+				q(2772, {	-- The World At Your Feet
 					["qg"] = 7804,	-- Trenton Lighthammer
+					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
+					["u"] = 40,
+					["g"] = {
 						un(2, i(7988)),	-- Plans: Ornate Mithril Boots
 					},
-				},
+				}),
 				{	-- Thunderdrome: Grudge Match!
 					["questID"] = 25513,
 					["qg"] = 39034,	-- Dr. Dealwell

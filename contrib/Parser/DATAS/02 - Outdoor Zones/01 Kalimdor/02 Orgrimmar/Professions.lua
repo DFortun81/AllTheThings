@@ -33,6 +33,48 @@ _.Zones =
 				}),
 				prof(164, {	-- Blacksmithing
 					n(-17, {	-- Quests
+						q(2751, {	-- Barbaric Battlements
+							["qg"] = 7790,	-- Orokk Omosh
+							["coord"] = { 76.8, 37.7, 85 },
+							["requireSkill"] = 164,	-- Blacksmithing
+							["races"] = HORDE_ONLY,
+							["lvl"] = 32,
+							["g"] = {
+								i(7979),	-- Plans: Barbaric Iron Breastplate
+							},
+						}),
+						q(2757, {	-- Booty Bay or Bust!
+							["qg"] = 7793,	-- Ox
+							["coord"] = { 75.6, 36.8, 85 },
+							["sourceQuest"] = 2756,	-- The Old Ways
+							["requireSkill"] = 164,	-- Blacksmithing
+							["races"] = HORDE_ONLY,
+							["u"] = 40,
+							["g"] = {
+								un(2, i(8663)),	-- Mithril Insignia
+							},
+						}),
+						q(2754, {	-- Horns of Frenzy
+							["qg"] = 7790,	-- Orokk Omosh
+							["coord"] = { 76.8, 37.7, 85 },
+							["sourceQuest"] = 2753,	-- Trampled Under Foot
+							["requireSkill"] = 164,	-- Blacksmithing
+							["races"] = HORDE_ONLY,
+							["lvl"] = 32,
+							["g"] = {
+								i(7980),	-- Plans: Barbaric Iron Helm
+							},
+						}),
+						q(2755, {	-- Joys of Omosh
+							["qg"] = 7790,	-- Orokk Omosh
+							["coord"] = { 76.8, 37.7, 85 },
+							["sourceQuest"] = 2754,	-- Horns of Frenzy
+							["requireSkill"] = 164,	-- Blacksmithing
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(7982),	-- Plans: Barbaric Iron Gloves
+							},
+						}),
 						q(2756, {	-- The Old Ways
 							["qg"] = 7792,	-- Aturk the Anvil
 							["coord"] = { 75.6, 36.8, 85 },
@@ -150,6 +192,38 @@ _.Zones =
 						}),
 					}),
 				}),
+				prof(202, {	-- Engineering
+					n(-17, {	-- Quests
+						q(29477, {	-- Gnomish Engineering
+							["qg"] = 11017,	-- Roxxik
+							["coord"] = { 56.8, 56.4, 85 },
+							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["races"] = HORDE_ONLY,
+							["lvl"] = 20,
+						}),
+						q(29475, {	-- Goblin Engineering
+							["qg"] = 11017,	-- Roxxik
+							["coord"] = { 56.8, 56.4, 85 },
+							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["races"] = HORDE_ONLY,
+							["lvl"] = 20,
+						}),
+					}),
+				}),
+				prof(129, {	-- First Aid
+					n(-17, {	-- Quests
+						q(6623, {	-- Horde Trauma
+							["qg"] = 45540,	-- Krenk Choplimb
+							["coord"] = { 37.6, 87.2, 85 },
+							["requireSkill"] = 129,	-- First Aid
+							["races"] = HORDE_ONLY,
+							["lvl"] = 25,
+							["u"] = 40,
+						}),
+					}),
+				}),
 				prof(356, {	-- Fishing
 					n(-4, {	-- Achievements
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
@@ -221,6 +295,14 @@ _.Zones =
 								}),
 							},
 						}),
+						q(8228, {	-- Could I get a Fishing Flier?
+							["qg"] = 15116,	-- Grinkle
+							["coord"] = { 52.2, 77.0, 85 },
+							["requireSkill"] = 356,	-- Fishing
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 35,
+						}),
 						q(26556, {	-- No Dumping Allowed
 							["qg"] = 43239,	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
@@ -247,8 +329,33 @@ _.Zones =
 					}),
 					i(34486),	-- Old Crafty
 				}),
+				prof(773, {	-- Inscription
+					n(-17, {	-- Quests
+						{	-- Forged Documents
+							["itemID"] = 63276,	-- Forged Documents
+							["questID"] = 27686,	-- Forged Documents
+							["requireSkill"] = 773,	-- Inscription
+							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+							["races"] = HORDE_ONLY,
+						},
+					}),
+				}),
 				prof(755, {	-- Jewelcrafting
 					n(-17, {	-- Quests
+						q(25160, {	-- A Present for Lila
+							["qg"] = 50482,	-- Marith Lazuria
+							["coord"] = { 72.4, 34.6, 85 },
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["isDaily"] = true,
+							["races"] = HORDE_ONLY,
+						}),
+						q(25162, {	-- Elemental Goo
+							["qg"] = 50482,	-- Marith Lazuria
+							["coord"] = { 72.4, 34.4, 85 },
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["isDaily"] = true,
+							["races"] = HORDE_ONLY,
+						}),
 						q(25158, {	-- Nibbler! No!
 							["qg"] = 50482,	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },

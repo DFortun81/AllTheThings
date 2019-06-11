@@ -244,17 +244,15 @@ _.Zones =
 						36,	-- Mag'har
 					},
 				},
-				{	-- Meats to Orgrimmar
-					["questID"] = 6365,
+				q(6365, {	-- Meats to Orgrimmar
 					["qg"] = 3881,	-- Grimtak
-					["lvl"] = 5,
 					["coord"] = { 50.7, 42.8, 1 },
 					["races"] = {
 						2,	-- Orc
 						8,	-- Troll
 						36,	-- Mag'har
 					},
-				},
+				}),
 				{	-- Message for Saurfang
 					["questID"] = 25267,
 					["coord"] = { 57.6, 9.6, 1 },
@@ -327,10 +325,8 @@ _.Zones =
 						25169,	-- Purge the Valley
 					},
 				},
-				{	-- Ride to Orgrimmar
-					["questID"] = 6384,
+				q(6384, { -- Ride to Orgrimmar
 					["qg"] = 41140,	-- Burok
-					["lvl"] = 5,
 					["coord"] = { 53.0, 43.6, 1 },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["races"] = {
@@ -338,7 +334,7 @@ _.Zones =
 						8,	-- Troll
 						36,	-- Mag'har
 					},
-				},
+				}),
 				{	-- Riding Trainer Pamphlet
 					["itemID"] = 46883,
 					["g"] = {

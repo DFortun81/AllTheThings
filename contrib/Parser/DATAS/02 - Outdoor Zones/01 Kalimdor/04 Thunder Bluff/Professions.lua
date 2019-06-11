@@ -6,6 +6,26 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			n(-38, {	-- Professions
+				prof(202, {	-- Engineering
+					n(-17, {	-- Quests
+						q(29477, {	-- Gnomish Engineering
+							["qg"] = 52651,	-- Engineer Palehoof
+							["coord"] = { 36.8, 59.6, 88 },
+							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["races"] = HORDE_ONLY,
+							["lvl"] = 20,
+						}),
+						q(29475, {	-- Goblin Engineering
+							["qg"] = 52651,	-- Engineer Palehoof
+							["coord"] = { 36.8, 59.6, 88 },
+							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["races"] = HORDE_ONLY,
+							["lvl"] = 20,
+						}),
+					}),
+				}),
 				prof(356, {	-- Fishing
 					n(-4, {	-- Achievements
 						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff

@@ -613,34 +613,35 @@ _.Zones =
 					un(2, i(10698)),	-- Enchanted Azsharite Felbane Staff
 					un(2, i(10696)),	-- Enchanted Azsharite Felbane Sword
 				})),
-				{	-- Expert Blacksmith!
-					["questID"] = 2765,	-- Expert Blacksmith!
+				q(2765, {	-- Expert Blacksmith!
 					["qg"] = 7802,	-- Galvan the Ancient
-					["sourceQuests"] = { 2761, 2762, 2763 },	-- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuests"] = { 
+						2761,	-- Smelt On, Smelt Off
+						2762,	-- The Great Silver Deceiver
+						2763,	-- The Art of the Imbue
+					},
 					["requireSkill"] = 164,	-- Blacksmithing
 					["u"] = 40,
 					["g"] = {
-						{	-- Signet of Expertise
-							["itemID"] = 8703,	-- Signet of Expertise
-							["u"] = 2,
-							["g"] = {
-								{	-- Hammer of Expertise
-									["itemID"] = 8708,	-- Hammer of Expertise
-									["ignoreSource"] = true,
-									["u"] = 2,
-								},
-							},
-						},
+						un(2, i(8703, {	-- Signet of Expertise
+							un(2, i(8708, {	-- Hammer of Expertise
+								["ignoreSource"] = true,
+							})),
+						})),
 					},
-				},
-				{	-- Galvin's Finest Pupil
-					["questID"] = 2764,	-- Galvin's Finest Pupil
+				}),
+				q(2764, {	-- Galvin's Finest Pupil
 					["qg"] = 7802,	-- Galvan the Ancient
-					["sourceQuests"] = { 2761, 2762, 2763 },	-- Smelt On, Smelt Off, The Great Silver Deceiver, The Art of the Imbue
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuests"] = { 
+						2761,	-- Smelt On, Smelt Off
+						2762,	-- The Great Silver Deceiver
+						2763,	-- The Art of the Imbue
+					},
 					["requireSkill"] = 164,	-- Blacksmithing
-					["isBreadcrumb"] = true,
 					["u"] = 40,
-				},
+				}),
 				un(40, qh(582, {	-- Headhunting
 					un(2, i(4132)),	-- Darkspear Armsplints
 					un(2, i(4133)),	-- Darkspear Cuffs
@@ -659,52 +660,43 @@ _.Zones =
 					un(2, i(6723)),	-- Medal of Courage
 					un(2, i(4134)),	-- Nimboya's Mystical Staff
 				})),
-				{	-- Smelt On, Smelt Off
-					["questID"] = 2761,	-- Smelt On, Smelt Off
+				q(2761, {	-- Smelt On, Smelt Off
 					["qg"] = 7802,	-- Galvan the Ancient
-					["sourceQuests"] = { 2760 },	-- The Mithril Order
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
 					["u"] = 40,
 					["g"] = {
-						{	-- Plans: Ornate Mithril Pants
-							["itemID"] = 7983,	-- Plans: Ornate Mithril Pants
-							["u"] = 2,
-						},
+						un(2, i(7983)),	-- Plans: Ornate Mithril Pants
 					},
-				},
+				}),
 				un(40, qh(598, {	-- Split Bone Necklace
 					un(2, i(4136)),	-- Darkspear Boots
 					un(2, i(4137)),	-- Darkspear Shoes
 				})),
-				{	-- The Art of the Imbue
-					["questID"] = 2763,	-- The Art of the Imbue
+				q(2763, {	-- The Art of the Imbue
 					["qg"] = 7802,	-- Galvan the Ancient
-					["sourceQuests"] = { 2760 },	-- The Mithril Order
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
 					["u"] = 40,
 					["g"] = {
-						{	-- Plans: Ornate Mithril Shoulders
-							["itemID"] = 7985,	-- Plans: Ornate Mithril Shoulders
-							["u"] = 2,
-						},
+						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
 					},
-				},
+				}),
 				un(40, qh(569, {	-- The Defense of Grom'gol
 					un(2, i(4115)),	-- Grom'gol Buckler
 				})),
-				{	-- The Great Silver Deceiver
-					["questID"] = 2762,	-- The Great Silver Deceiver
+				q(2762, {	-- The Great Silver Deceiver
 					["qg"] = 7802,	-- Galvan the Ancient
-					["sourceQuests"] = { 2760 },	-- The Mithril Order
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
 					["requireSkill"] = 164,	-- Blacksmithing
 					["u"] = 40,
 					["g"] = {
-						{	-- Plans: Ornate Mithril Gloves
-							["itemID"] = 7984,	-- Plans: Ornate Mithril Gloves
-							["u"] = 2,
-						},
+						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
 					},
-				},
+				}),
 				un(40, q(338, {		-- The Green Hills of Stranglethorn
 					un(2, i(4116)),	-- Olmann Sewar
 					un(2, i(17688)),	-- Jungle Boots
@@ -712,13 +704,6 @@ _.Zones =
 				un(40, qa(328, {	-- The Hidden Key
 					un(2, i(4122)),	-- Bookmaker's Scepter
 				})),
-				{	-- The Mithril Order
-					["questID"] = 2760,	-- The Mithril Order
-					["qg"] = 7794,	-- McGaven
-					["sourceQuests"] = { 2757, 2759 },	-- Booty Bay or Bust! (Horde), In Search of Galvan (Alliance)
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-				},
 			}),
 		}),
 	}),

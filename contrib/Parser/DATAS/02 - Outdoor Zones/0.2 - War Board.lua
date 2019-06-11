@@ -58,6 +58,7 @@ _.Zones =
 			q(28560),	-- Warchief's Command: Ghostlands!
 			q(28571),	-- Warchief's Command: Hillsbrad Foothills!
 			q(49537),	-- Warchief's Command: Icecrown!
+			q(49538),	-- Warchief's Command: Jade Forest!
 			q(27721),	-- Warchief's Command: Mount Hyjal!
 			q(39201),	-- Warchief's Command: Netherstorm!
 			q(28494),	-- Warchief's Command: Northern Barrens!
@@ -177,10 +178,12 @@ _.Zones =
 			}),
 			q(49864, {	-- Wars on Two Fronts [Pandaria]
 				["groups"] = {
-					qa(49866, {	-- To Pandaria! (Alliance)
+					q(49866, {	-- To Pandaria! (Alliance)
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qh(49852, {	-- To Pandaria! (Horde)
+					q(49852, {	-- To Pandaria! (Horde)
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 				},

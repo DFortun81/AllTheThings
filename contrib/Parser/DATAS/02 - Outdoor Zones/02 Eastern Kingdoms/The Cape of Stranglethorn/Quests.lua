@@ -608,14 +608,6 @@ _.Zones =
 				un(40, q(617, {	-- Akiris by the Bundle
 					un(2, i(4117)),	-- Scorching Sash
 				})),
-				q(2757, {	-- Booty Bay or Bust!
-					["sourceQuests"] = { 2756 },	-- The Old Ways
-					["requireSkill"] = 164,	-- Blacksmithing
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["qg"] = 7793,	-- Ox
-					["u"] = 40,	-- Legacy Quests
-				}),
 				qa(1041, {	-- The Caravan Road
 					["u"] = 40,
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
@@ -636,15 +628,6 @@ _.Zones =
 				un(40, q(213, {	-- Hostile Takeover
 					un(2, i(4121)),	-- Gemmed Gloves
 				})),
-				{	-- In Search of Galvan
-					["questID"] = 2759,	-- In Search of Galvan
-					["qg"] = 7798,	-- Hank the Hammer
-					["sourceQuests"] = { 2758 },	-- The Origins of Smithing
-					["requireSkill"] = 164,	-- Blacksmithing
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
-				},
 				un(40, qa(576, {	-- Keep An Eye Out
 					i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
 				})),
@@ -669,6 +652,16 @@ _.Zones =
 				un(40, qa(611, {	-- The Curse of the Tides
 					un(2, i(4120)),	-- Robe of Crystal Waters
 				})),
+				q(2760, {	-- The Mithril Order
+					["qg"] = 7794,	-- McGavan
+					["coord"] = { 43.8, 70.7, 210 },
+					["sourceQuests"] = {
+						2757,	-- Booty Bay or Bust!
+						2759,	-- In Search of Galvan
+					},
+					["requireSkill"] = 164,	-- Blacksmithing
+					["u"] = 40,
+				}),
 				un(40, q(600, {	-- Venture Company Mining
 					un(2, i(5253)),	-- Goblin Igniter
 					un(2, i(4128)),	-- Silver Spade

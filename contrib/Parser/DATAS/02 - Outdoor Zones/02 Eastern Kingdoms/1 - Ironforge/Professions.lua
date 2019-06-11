@@ -33,6 +33,24 @@ _.Zones =
 						["qg"] = 5159,	-- Daryl Riknussun
 					}),
 				}),
+				prof(202, {	-- Engineering
+					n(-17, {	-- Quests
+						q(29477, {	-- Gnomish Engineering
+							["qg"] = 5174,	-- Springspindle Fizzlegear
+							["coord"] = { 68.8, 45.2, 87 },
+							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["lvl"] = 20,
+						}),
+						q(29475, {	-- Goblin Engineering
+							["qg"] = 5174,	-- Springspindle Fizzlegear
+							["coord"] = { 68.8, 45.2, 87 },
+							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
+							["requireSkill"] = 202,	-- Engineering
+							["lvl"] = 20,
+						}),
+					}),
+				}),
 				prof(356, {	-- Fishing
 					q(29342, {	-- Cold Water Fishing
 						["isDaily"] = true,

@@ -412,11 +412,7 @@ _.Zones =
 						["qg"] = 132255,	-- Master Mathias Shawa
 						["sourceQuests"] = { 50371 } ,	-- Summons to Stormwind
 					}),
---[[
-					q(29477),	-- Gnomish Engineering
-					q(29475),	-- Goblin Engineering
-					qa(31593),	-- Got one!
---]]
+--					qa(31593),	-- Got one!
 					qa(39800, {	-- Greymane's Gambit
 						["sourceQuests"] = { 38206 },	-- Making the Rounds
 						["coord"] = { 18.6, 50.8, 628 },

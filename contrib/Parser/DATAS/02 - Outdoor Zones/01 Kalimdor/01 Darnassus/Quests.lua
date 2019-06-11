@@ -110,17 +110,19 @@ _.Zones =
 					["races"] = { 22 },	-- Worgen
 					["isBreadcrumb"] = true,
 				},
-				{	-- Calm Before the Storm
-					["questID"] = 4510,
+				q(4510, {	-- Calm Before the Storm
+					["qg"] = 7740,	-- Gracina Spiritmight
+					["coord"] = { 42.0, 85.4, 89 },
+					["sourceQuest"] = 4508,	-- Calm Before the Storm [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+					["u"] = 40,
 					["groups"] = {
 						un(2, i(11872)),	-- Eschewal Greaves
 						un(2, i(11870)),	-- Oblivion Orb
 						un(2, i(11871)),	-- Snarkshaw Spaulders
-					},
-					["u"] = 40,
-					["qg"] = 7740,	-- Gracina Spiritmight
-					["races"] = ALLIANCE_ONLY,
-				},
+					},	
+				}),
 				{	-- Favored of Elune
 					["questID"] = 27362,
 					["groups"] = {
@@ -159,6 +161,14 @@ _.Zones =
 					["lvl"] = 20,
 					["description"] = "This quest is available to Night Elves upon reaching level 20.",
 				},
+				q(4493, {	-- March of the Silithid [Alliance]
+					["qg"] = 7740,	-- Gracina Spiritmight
+					["coord"] = { 42.0, 85.4, 89 },
+					["sourceQuest"] = 162,	-- Rise of the Silithid [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+					["u"] = 40
+				}),
 				{	-- Riding Training Pamphlet
 					["itemID"] = 46876,
 					["groups"] = {

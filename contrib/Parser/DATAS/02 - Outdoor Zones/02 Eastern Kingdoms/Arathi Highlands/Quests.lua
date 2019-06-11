@@ -471,12 +471,13 @@ _.Zones =
 					["sourceQuests"] = { 26036 },	-- Wand Over Fist
 				}),
 				q(6622, {	-- Triage
-					["u"] = 40,
 					["qg"] = 12920,	--	Doctor Gregory Victor
-					["races"] = HORDE_ONLY,
+					["coord"] = { 68.4, 37.8, 14 },
+					["sourceQuest"] = 6623,	-- Horde Trauma
 					["description"] = "This quest requires a skill of 225 in First Aid.",
-					["requireSkill"] = 356,	-- First Aid
-					["sourceQuests"] = { 6623 },	-- Horde Trauma
+					["requireSkill"] = 129,	-- First Aid
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
 				}),
 				q(646, {	-- Trol'kalar
 					["u"] = 40,

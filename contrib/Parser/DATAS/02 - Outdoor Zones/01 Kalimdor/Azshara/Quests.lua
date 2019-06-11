@@ -215,6 +215,34 @@ _.Zones =
 						14370,	-- Mysterious Azsharite
 					},
 				},
+				q(3505, {	-- Betrayed
+					["qg"] = 8576,	-- Ag'tor Bloodfist
+					["coord"] = { 26.0, 76.0, 76 },
+					["sourceQuest"] = 3504,	-- Betrayed
+					["races"] = HORDE_ONLY,
+					["lvl"] = 44,
+					["u"] = 40,
+				}),
+				q(3506, {	-- Betrayed
+					["qg"] = 8576,	-- Ag'tor Bloodfist
+					["coord"] = { 26.0, 76.0, 76 },
+					["sourceQuest"] = 3505,	-- Betrayed
+					["races"] = HORDE_ONLY,
+					["lvl"] = 44,
+					["u"] = 40,
+				}),
+				q(3507, {	-- Betrayed
+					["qg"] = 8576,	-- Ag'tor Bloodfist
+					["coord"] = { 26.0, 76.0, 76 },
+					["sourceQuest"] = 3506,	-- Betrayed
+					["races"] = HORDE_ONLY,
+					["lvl"] = 44,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(11120)),	-- Belgrom's Hammer
+						un(2, i(10709)),	-- Pyrestone Orb
+					},
+				}),
 				{	-- Blacken the Skies
 					["questID"] = 24430,
 					["qg"] = 36903,	-- Jr. Bombardier Hackel

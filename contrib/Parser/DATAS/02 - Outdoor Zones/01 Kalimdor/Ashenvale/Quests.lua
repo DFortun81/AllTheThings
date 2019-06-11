@@ -119,13 +119,12 @@ _.Zones =
 						i(131532),	-- Starwhisper Spaulders
 					},
 				},
-				{	-- All Apologies
-					["questID"] = 13841,
+				q(13841, {	-- All Apologies
 					["qg"] = 33726,	-- Splintertree Demolisher
 					["coord"] = { 73.3, 62.1, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13798,	-- Rain of Destruction
-				},
+					["races"] = HORDE_ONLY,	
+				}),
 				{	-- All's Well
 					["questID"] = 13924,
 					["qg"] = 34358,	-- Avrus the Redeemed
@@ -275,13 +274,12 @@ _.Zones =
 						13944,	-- Small Hands, Short Fuse
 					},
 				},
-				{	-- Blood of the Weak
-					["questID"] = 13803,
+				q(13803, {	-- Blood of the Weak
 					["qg"] = 33837,	-- Kadrak
 					["coord"] = { 73.6, 62.1, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13712,	-- To The Rescue!
-				},
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- Breathing Room
 					["questID"] = 13943,
 					["qg"] = 34359,	-- Captain Goggath
@@ -328,19 +326,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13947,	-- Blastranaar!
 				},
-				{	-- Crisis at Splintertree
-					["questID"] = 13653,
+				q(13653, {	-- Crisis at Splintertree
 					["qg"] = 33421,	-- Gorka
 					["coord"] = { 72.9, 80.4, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13651,	-- Needs a Little Lubrication
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56639),	-- Mourner's Stole
 						i(56640),	-- Leggings of Loss
 						i(56641),	-- Burden of Sacrifice
 						i(131299),	-- Griefbearer Leggings
 					},
-				},
+				}),
 				{	-- Culling the Furbolg Threat
 					["questID"] = 13867,
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -358,13 +355,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26479,	-- Return to Raene
 				},
-				{	-- Dead Elves Walking
-					["questID"] = 13801,
+				q(13801, {	-- Dead Elves Walking
 					["qg"] = 12724,	-- Pixel
 					["coord"] = { 73.8, 62.4, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13803,	-- Blood of the Weak
-				},
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- Deep Despair
 					["questID"] = 13901,
 					["qg"] = 12719,	-- Marukai
@@ -427,13 +423,12 @@ _.Zones =
 						6073,	-- Searing Felguard
 					},
 				},
-				{	-- Dirty Deeds
-					["questID"] = 13797,
+				q(13797, {	-- Dirty Deeds
 					["qg"] = 33760,	-- Durak
 					["coord"] = { 72.2, 57.6, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13751,	-- Tell No One!
-				},
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- Do Yourself a Favor
 					["questID"] = 25613,
 					["qg"] = 40894,	-- Gnombus the X-Terminator
@@ -508,13 +503,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25615,	-- Kalen Trueshot
 				},
-				{	-- Final Report
-					["questID"] = 13619,
+				q(13619, {	-- Final Report
 					["qg"] = 33294,	-- Gorat
 					["coord"] = { 64.2, 84.4, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13618,	-- Find Gorat!
-				},
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- Finding Teronis
 					["questID"] = 26463,
 					["qg"] = 3847,	-- Orendil Broadleaf
@@ -693,19 +687,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13808,	-- Mission Improbable
 				},
-				{	-- Management Material
-					["questID"] = 13640,
+				q(13640, {	-- Management Material
 					["qg"] = 33421,	-- Gorka
 					["coord"] = { 72.9, 80.4, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13628,	-- Got Wood?
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(56627),	-- Labor Camp Frock
 						i(56628),	-- Manager's Mantle
 						i(56629),	-- Hands of Encouragement
 						i(131297),	-- Gorka's Brass Shoulderguards
 					},
-				},
+				}),
 				{	-- Mass Production
 					["questID"] = 13977,
 					["qg"] = 34569,	-- Flooz
@@ -731,13 +724,12 @@ _.Zones =
 					["coord"] = { 12.6, 35.3, 63 },
 					["races"] = HORDE_ONLY,
 				},
-				{	-- Needs a Little Lubrication
-					["questID"] = 13651,
+				q(13651, {	-- Needs a Little Lubrication
 					["qg"] = 33421,	-- Gorka
 					["coord"] = { 72.9, 80.4, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13640,	-- Management Material
-				},
+					["races"] = HORDE_ONLY,	
+				}),
 				{	-- Never Again!
 					["questID"] = 26449,
 					["qg"] = 17355,	-- Valusha
@@ -785,33 +777,31 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13642,	-- Bathed in Light
 				},
-				{	-- Pierce Their Heart!
-					["questID"] = 13805,
+				q(13805, {	-- Pierce Their Heart!
 					["qg"] = 33760,	-- Durak
 					["coord"] = { 72.1, 57.6, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13803,	-- Blood of the Weak
-					["groups"] = {
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(56727),	-- Scrupleless Bracers
 						i(56728),	-- Bloodtaint Boots
 						i(56729),	-- Forest Heart Piercer
 						i(131304),	-- Heart-Corruptor Wristguards
 					},
-				},
-				{	-- Playing with Felfire
-					["questID"] = 13730,
+				}),
+				q(13730, {	-- Playing with Felfire
 					["qg"] = 33726,	-- Splintertree Demolisher
 					["coord"] = { 73.3, 62.1, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13803,	-- Blood of the Weak
-					["groups"] = {
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(56649),	-- Folly's Edge
 						i(56650),	-- Felfire-Tainted Vest
 						i(56651),	-- Legguards of Abandoned Virtue
 						i(131302),	-- Felfire-Scorched Chesteguard
 						i(156958),	-- Scepter of Questionable Decision Making
 					},
-				},
+				}),
 				{	-- Playing Possum
 					["questID"] = 26478,
 					["qg"] = 3916,	-- Shael'dryn
@@ -855,19 +845,18 @@ _.Zones =
 						un(2, i(1116)),	-- Ring of Pure Silver
 					},
 				},
-				{	-- Rain of Destruction
-					["questID"] = 13798,
+				q(13798, {	-- Rain of Destruction
 					["qg"] = 33760,	-- Durak
 					["coord"] = { 72.2, 57.6, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13797,	-- Dirty Deeds
-					["groups"] = {
+					["races"] = HORDE_ONLY,
+					["g"] = {
 						i(56711),	-- Impish Blade
 						i(56712),	-- Accursed Mace
 						i(56713),	-- Durak's Wand
 						i(56714),	-- Band of Foul Strength
 					},
-				},
+				}),
 				{	-- Rear Guard Duty (No Prereq)
 					["questID"] = 13632,
 					["qg"] = 11219,	-- Liladris Moonriver
@@ -1092,13 +1081,12 @@ _.Zones =
 						un(2, i(5323)),	-- Everglow Lantern
 					},
 				},
-				{	-- Tell No One!
-					["questID"] = 13751,
+				q(13751, {	-- Tell No One!
 					["qg"] = 33726,	-- Sprintertree Demolisher
 					["coord"] = { 73.3, 62.1, 63 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13730,	-- Playing With Felfire
-				},
+					["races"] = HORDE_ONLY,
+				}),
 				{	-- That Which has Risen
 					["questID"] = 13644,
 					["qg"] = 33443,	-- Keeper Heartwise
