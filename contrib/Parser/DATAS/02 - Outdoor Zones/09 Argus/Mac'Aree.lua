@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			["groups"] = {
+			["g"] = {
 				n(-4,   {	-- Achievement
 					ach(12074, {	-- Shoot First, Loot Later
 						o(277342, {	-- Augari Goods
-							["groups"] = {
+							["g"] = {
 								i(153281), --Augari Wakener's Handwraps
 							},
 							["questID"] = 49153,
@@ -18,7 +18,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277327, {	-- Augari-Runed Chest
-							["groups"] = {
+							["g"] = {
 								i(153280),	-- Augari Wakener's Circlet
 							},
 							["questID"] = 49129,
@@ -27,7 +27,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276227, {	-- Augari Secret Stash
-							["groups"] = {
+							["g"] = {
 								i(153279), --Augari Wakener's Cord
 							},
 							["questID"] = 48748,
@@ -36,7 +36,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276224, {	-- Chest of Ill-Gotten Gains
-							["groups"] = {
+							["g"] = {
 								i(153325),	-- Mac'Aree Vigilant's Redoubt
 							},
 							["questID"] = 48744,
@@ -46,7 +46,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276228, {	-- Desperate Eredar's Cache
-							["groups"] = {
+							["g"] = {
 								i(153267), --Enclave Aspirant's Hatchet
 							},
 							["questID"] = 48749,
@@ -56,7 +56,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276230, {	-- Doomseeker's Treasure
-							["groups"] = {
+							["g"] = {
 								i(153313), --Praetor's Ornamental Claymore
 							},
 							["questID"] = 48751,
@@ -66,7 +66,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277340, {	-- Secret Augari Chest
-							["groups"] = {
+							["g"] = {
 								i(153282),	-- Augari Wakener's Leggings
 							},
 							["questID"] = 49151,
@@ -75,7 +75,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276225, {	-- Student's Surprising Surplus
-							["groups"] = {
+							["g"] = {
 								i(153286), --Augari Wakener's Cuffs
 							},
 							["classes"] = {5,8,9},
@@ -85,7 +85,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(276226, {	-- Void-Tinged Chest
-							["groups"] = {
+							["g"] = {
 								i(153328), --Mystic Wakener's Shiv
 							},
 							["classes"] = {5,7,8,9,11,4},
@@ -118,9 +118,9 @@ _.Zones =
 					}),
 				}),
 				n(-25,  {	-- Pet Battle
-					["groups"] = {
+					["g"] = {
 						ach(12088, {	-- Anomalous Animals of Argus
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12088,	-- Anomalous Animals of Argus
 									["criteriaID"] = 7, 		-- Bucky
@@ -155,12 +155,12 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12100, {	-- Family Fighter
-							["groups"] = {
+							["g"] = {
 								i(153040, {	-- Felclaw Marsuul
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12089, {	-- Aquatic Assault
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12089,	-- Aquatic Assault
 											["criteriaID"] = 7, 		-- Bucky
@@ -195,7 +195,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12091, {	-- Beast Blitz
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12091,	-- Beast Blitz
 											["criteriaID"] = 7, 		-- Bucky
@@ -230,7 +230,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12092, {	-- Critical Critters
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12092,	-- Critical Critters
 											["criteriaID"] = 7, 		-- Bucky
@@ -265,7 +265,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12093, {	-- Draconic Destruction
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12093,	-- Draconic Destruction
 											["criteriaID"] = 7, 		-- Bucky
@@ -300,7 +300,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12094, {	-- Elemental Escalation
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12094,	-- Elemental Escalation
 											["criteriaID"] = 7, 		-- Bucky
@@ -335,7 +335,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12095, {	-- Fierce Fliers
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12095,	-- Fierce Fliers
 											["criteriaID"] = 7, 		-- Bucky
@@ -370,7 +370,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12096, {	-- Humanoid Havoc
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12096,	-- Humanoid Havoc
 											["criteriaID"] = 7, 		-- Bucky
@@ -405,7 +405,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12097, {	-- Magical Mayhem
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12097,	-- Magical Mayhem
 											["criteriaID"] = 7, 		-- Bucky
@@ -440,7 +440,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12098, {	-- Mechanical Melee
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12098,	-- Mechanical Melee
 											["criteriaID"] = 7, 		-- Bucky
@@ -475,7 +475,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12099, {	-- Unstoppable Undead
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12099,	-- Unstoppable Undead
 											["criteriaID"] = 7, 		-- Bucky
@@ -713,14 +713,16 @@ _.Zones =
 				}),
 				n(-16,  {	-- Rares
 					n(126887, {	-- Ataxon
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153034),	-- Technique: Glyph of the Voidling
 							i(153056),	-- Grasping Manifestation
 						},
 						["questID"] = 48709
 					}),
 					o(273301, {	-- Ancient Eredar Cache
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153271),	-- Forgotten Conservatory Helm
 							i(153288),	-- Forgotten Conservatory Robes
 							i(153272),	-- Forgotten Conservatory Gloves
@@ -752,7 +754,8 @@ _.Zones =
 						["questID"] = 48346,
 					}),
 					o(273407, {	-- Ancient Eredar Cache
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153276),	-- Forgotten Conservatory Amice*
 							i(153275),	-- Forgotten Conservatory Slippers
 							i(153334),	-- Mac'Aree Lightseeker's Spaulders
@@ -778,7 +781,8 @@ _.Zones =
 						["questID"] = 48350,
 					}),
 					o(273412, {	-- Ancient Eredar Cache
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153277),	-- Forgotten Conservatory Wristwraps
 							i(153272),	-- Forgotten Conservatory Gloves
 							i(153270),	-- Forgotten Conservatory Sash
@@ -824,7 +828,8 @@ _.Zones =
 						["questID"] = 48351,
 					}),
 					o(273414, {	-- Ancient Eredar Cache
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153271),	-- Forgotten Conservatory Helm
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153288),	-- Forgotten Conservatory Robes
@@ -869,7 +874,9 @@ _.Zones =
 						["questID"] = 48362,
 					}),
 					o(273415, {	-- Ancient Eredar Cache
-						["groups"] = {
+						["questID"] = 48357,
+						["isDaily"] = true,
+						["g"] = {
 							i(153276),	-- Forgotten Conservatory Amice
 							i(153273),	-- Forgotten Conservatory Leggings
 							i(153275),	-- Forgotten Conservatory Slippers
@@ -898,10 +905,10 @@ _.Zones =
 							{ 49.9, 29.3 },
 							{ 51.7, 28.6 },
 						},
-						["questID"] = 48357,
 					}),
-					o(273439, {	-- Ancient Eredar Cache (mostly clustered around center, a smattering central west)
-						["groups"] = {
+					o(273439, {	-- Ancient Eredar Cache
+						["isDaily"] = true,
+						["g"] = {
 							i(153277),	-- Forgotten Conservatory Wristwraps
 							i(153272),	-- Forgotten Conservatory Gloves
 							i(153288),	-- Forgotten Conservatory Robes*
@@ -934,38 +941,44 @@ _.Zones =
 						["questID"] = 48371,
 					}),
 					n(126862, {	-- Baruut the Bloodthirsty
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153193),	-- Baarut the Brisk Toy
 						},
 						["modelScale"] = 0.75,
 						["questID"] =  48700,
 					}),
 					n(126869, {	-- Captain Faruq
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48707,
 					}),
 					n(126910, {	-- Commander Xethgar
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48720,
 					}),
 					n(126864, {	-- Feasel the Muffin Thief
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							--i(152998),	-- Carefully Hidden Muffin [Doesn't give anything useful....yet]
 						},
 						["questID"] = 48702,
 					}),
 					n(126896, {	-- Herald of Chaos
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48711,
 					}),
 					n(126900, {	-- Instructor Tarahna
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153179),	-- Blue Conservatory Scroll
 							i(153181),	-- Red Conservatory Scroll
 							i(153180),	-- Yellow Conservatory Scroll
@@ -975,13 +988,15 @@ _.Zones =
 						["questID"] = 48718,
 					}),
 					n(126899, {	-- Jed'hin Champion Vorusk
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153302),	-- Honed Jed'hin Scimitar
 						},
 						["questID"] = 48713,
 					}),
 					n(126860, {	-- Kaara the Pale
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							--[[
 							-- No longer drops this item.
 							i(153190, {	-- Fel-Spotted Egg
@@ -1000,28 +1015,30 @@ _.Zones =
 						["modelScale"] = 0.75,
 					}),
 					n(124440, {	-- Overseer Y'Beda
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153315),	-- Praetor's Ornamental Warblade
 						},
 						["questID"] = 48714,
 					}),
 					n(125498, {	-- Overseer Y'Morna
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153257),	-- Isolon Anchorite's Gavel
 						},
 						["questID"] = 48717,
-						["coords"] = {
-							{ 60.89, 29.81, 882 },
-						},
+						["coord"] = { 60.89, 29.81, 882 },
 					}),
 					n(125497, {	-- Overseer Y'Sorna
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153268),	-- Enclave Aspirant's Axe
 						},
 						["questID"] = 48716,
 					}),
 					n(126898, {	-- Sabuul
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153190, {	-- Fel-Spotted Egg
 								i(153191, {	-- Cracked Fel-Spotted Egg
 									i(152843),	-- Darkspore Mana Ray Mount
@@ -1037,77 +1054,89 @@ _.Zones =
 						["questID"] = 48712,
 					}),
 					n(122838, {	-- Shadowcaster Voruun
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153296),	-- Spectral Consul's Cutter
 						},
 						["questID"] = 48692,
 					}),
 					n(126912, {	-- Skreeg the Devourer
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152904),	-- Acid Belcher
 						},
 						["modelScale"] = 0.80,
 						["questID"] = 48721,
 					}),
 					n(126913, {	-- Slithon the Last
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							--i(153203),	-- Ancient Fishing Line
 						},
 						["questID"] = 48935,
 					}),
 					n(126889, {	-- Sorolis the Ill-Fated
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153292),	-- Spectral Censorite's Spire
 						},
 						["questID"] = 48710,
 					}),
 					n(126815, {	-- Soultwisted Monstrosity
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48693,
 					}),
 					n(126868, {	-- Turek the Lucid
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153306),	-- Oronaar Miner's Piercer
 						},
 						["questID"]  = 48706,
 					}),
 					n(126885, {	-- Umbraliss <Voidstalker Matriarch>
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48708,
 					}),
 					n(126867, {	-- Venomtail Skyfin
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152844),	-- Lambent Mana Ray
 						},
 						["questID"] = 48705,
 					}),
 					n(126866, {	-- Vigilant Kuro
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153183),	-- Barrier Generator [Note: Drop Argus]
 							i(153323),	-- Mac'Aree Vigilant's Crest
 						},
 						["questID"] = 48704,
 					}),
 					n(126865, {	-- Vigilant Thanos
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153183),	-- Barrier Generator [Note: Drop Argus]
 							i(153322),	-- Mac'Aree Vigilant's Shield
 						},
 						["questID"] = 48703,
 					}),
 					n(126852, {	-- Wrangler Kravos
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152814),	-- Maddened Chaosrunner
 							i(153269),	-- Enclave Aspirant's Waraxe
 						},
 						["questID"] = 48695,
 					}),
 					n(126908, {	-- Zul'tan the Numerous
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48719,
