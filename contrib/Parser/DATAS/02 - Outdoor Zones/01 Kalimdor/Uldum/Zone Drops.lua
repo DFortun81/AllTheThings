@@ -5,11 +5,9 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			["groups"] = {
-				n(0, {	-- Zone Drop
-					i(65651),	-- Technique: Origami Beetle
-				}),
-			},
+			n(0, {	-- Zone Drop
+				i(65651),	-- Technique: Origami Beetle
+			}),
 		}),
 	}),
 };

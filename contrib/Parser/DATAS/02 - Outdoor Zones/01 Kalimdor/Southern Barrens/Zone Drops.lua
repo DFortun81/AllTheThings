@@ -5,22 +5,17 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			["groups"] = {
-				n(0, {	-- Zone Drops
-					{	-- Plump Dig Rat
-						["itemID"] = 78342,
-						["spellID"] = 0,	-- Filter: No Spell ID plox
-						["crs"] = {
-							3444,	-- Dig Rat
-						},
-						["groups"] = {
-							recipe(6417),	-- Dig Rat Stew
-						},
+			n(0, {	-- Zone Drops
+				i(78342, {	-- Plump Dig Rat
+					["spellID"] = 0,	-- Filter: No Spell ID plox
+					["crs"] = { 3444 },	-- Dig Rat
+					["g"] = {
+						recipe(6417),	-- Dig Rat Stew
 					},
-					i(6663),	-- Recipe: Elixir of Giant Growth
-					i(6661),	-- Recipe: Savory Deviate Delight
 				}),
-			},
+				i(6663),	-- Recipe: Elixir of Giant Growth
+				i(6661),	-- Recipe: Savory Deviate Delight
+			}),
 		}),
 	}),
 };

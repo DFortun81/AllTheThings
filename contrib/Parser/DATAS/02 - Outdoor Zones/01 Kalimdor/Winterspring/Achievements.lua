@@ -5,19 +5,17 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			["groups"] = {
-				n(-4, {		-- Achievements
-					ach(5443, {	-- E'ko Madness (Winterspring)
-						crit(1),	-- Winterspring Furbolg
-						crit(2),	-- Wildkin
-						crit(3),	-- Shardtooth Bears
-						crit(4),	-- Frostmaul Giants
-						crit(5),	-- Frostsabers
-						crit(6),	-- Chillwind Chimaera
-						crit(7),	-- Ice Thistle Yeti
-					}),
+			n(-4, {	-- Achievements
+				ach(5443, {	-- E'ko Madness (Winterspring)
+					crit(1),	-- Winterspring Furbolg
+					crit(2),	-- Wildkin
+					crit(3),	-- Shardtooth Bears
+					crit(4),	-- Frostmaul Giants
+					crit(5),	-- Frostsabers
+					crit(6),	-- Chillwind Chimaera
+					crit(7),	-- Ice Thistle Yeti
 				}),
-			},
+			}),
 		}),
 	}),
 };
