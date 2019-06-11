@@ -838,8 +838,11 @@ _.Craftables =
 				{	-- Reflection of the Sea
 					["itemID"] = 83802,	-- Reflection of the Sea
 				},
-				{	-- Shadowfire Necklace
+				{	-- Shadowfire Necklace (green)
 					["itemID"] = 83794,	-- Shadowfire Necklace
+				},
+				{	-- Shadowfire Necklace (blue)
+					["itemID"] = 90905,	-- Shadowfire Necklace
 				},
 				{	-- Skymage Circle
 					["itemID"] = 83805,	-- Skymage Circle
@@ -864,8 +867,11 @@ _.Craftables =
 				{	-- Lord's Signet
 					["itemID"] = 83799,	-- Lord's Signet
 				},
-				{	-- Ornate Band
+				{	-- Ornate Band (green)
 					["itemID"] = 83793,	-- Ornate Band
+				},
+				{	-- Ornate Band (blue)
+					["itemID"] = 90904,	-- Ornate Band
 				},
 				{	-- Roguestone Shadowband
 					["itemID"] = 83798,	-- Roguestone Shadowband
