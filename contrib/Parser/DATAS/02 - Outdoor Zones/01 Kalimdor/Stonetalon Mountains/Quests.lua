@@ -824,6 +824,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 				},
+				q(1154, {	-- Test of Lore	
+					["qg"] = 4489,	-- Braug Dimspirit
+					["coord"] = { 78.6, 45.6, 65 },
+					["sourceQuest"] = 1152,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
+				q(6627, {	-- Test of Lore	
+					["qg"] = 4489,	-- Braug Dimspirit
+					["coord"] = { 78.6, 45.6, 65 },
+					["sourceQuest"] = 1154,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
+				q(1159, {	-- Test of Lore	
+					["qg"] = 4489,	-- Braug Dimspirit
+					["coord"] = { 78.6, 45.6, 65 },
+					["sourceQuest"] = 6627,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
 				{	-- Thal'darah's Vengeance
 					["questID"] = 25925,
 					["qg"] = 41482,	-- Master Thal'darah

@@ -97,6 +97,18 @@ _.Zones =
 				qa(2039, {	-- Find Bingles
 					["qg"] = 6569,	-- 
 				}),
+]]--
+				q(737, {	-- Forbidden Knowledge
+					["qg"] = 2934,	-- Keeper Bel'dugur
+					["coord"] = { 53.8, 54.4, 87 },
+					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
+					["lvl"] = 30,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4984)),	-- Skull of Impending Doom
+					},
+				}),
+--[[
 				qa(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- 
 				}),
@@ -228,6 +240,16 @@ _.Zones =
 				qa(38402, {	-- The Same, But Different
 					["qg"] = 6294,	-- 
 				}),
+]]--				
+				q(735, {	-- The Star, the Hand and the Heart
+					["qg"] = 2934,	-- Gerrig Bonegrip
+					["coord"] = { 50.8, 6.0, 87 },
+					["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["u"] = 40,
+				}),
+--[[				
 				qa(1789, {	-- The Symbol of Life
 					["qg"] = 6179,	-- 
 					["classes"] = {2},	-- Paladin

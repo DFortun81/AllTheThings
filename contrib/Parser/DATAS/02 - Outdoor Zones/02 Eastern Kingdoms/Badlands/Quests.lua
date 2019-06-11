@@ -385,9 +385,15 @@ _.Zones =
 					un(2, i(4653)),	-- Ironheel Boots
 					un(2, i(4652)),	-- Salbac Shield
 				})),
-				un(40, q(709, {	-- Solution to Doom
-					un(2, i(4746)),	-- Doomsayer's Robe
-				})),
+				q(709, {	-- Solution to Doom
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.6, 76.6, 15 },
+					["lvl"] = 30,
+					["u"] = 40,
+					["g"] = {
+						un2, i(4746),	-- Doomsayer's Robe
+					},
+				}),
 				un(40, q(716, {	-- Stone Is Better than Cloth
 					un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 				})),
@@ -431,6 +437,22 @@ _.Zones =
 				q(28512, {	-- To the Aid of the Thorium Brotherhood
 					["qgs"] = { 46930, 46660 },	-- Victoria Dolen (A) & Aidan Summerwind (H)
 					["isBreadcrumb"] = true,	-- for "A New Master... But Who?" in Searing Gorge, mutually exclusive with other bcrumb quests for SG
+				}),
+				q(727, {	-- To Ironforge for Yagyin's Digest
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.6, 76.6, 15 },
+					["sourceQuest"] = 709,	-- Solution to Doom
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["u"] = 40,
+				}),
+				q(728, {	-- To the Undercity for Yagyin's Digest
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.6, 76.6, 15 },
+					["sourceQuest"] = 709,	-- Solution to Doom
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["u"] = 40,
 				}),
 				un(40, qa(717, {	-- Tremors of the Earth
 					un(2, i(11193)),	-- Blazewind Breastplate

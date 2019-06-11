@@ -907,6 +907,35 @@ _.Zones =
 						un(2, i(6740)),	-- Azure Sash
 					},
 				},
+				q(1150, {	-- Test of Endurance
+					["qg"] = 2986,	-- Dorn Plainstalker
+					["coord"] = { 53.8, 41.6, 64 },
+					["sourceQuest"] = 1149,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+				}),
+				q(1149, {	-- Test of Faith
+					["qg"] = 2986,	-- Dorn Plainstalker
+					["coord"] = { 53.8, 41.6, 64 },
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+				}),
+				q(1152, {	-- Test of Lore	
+					["qg"] = 2986,	-- Dorn Plainstalker
+					["coord"] = { 53.8, 41.6, 64 },
+					["sourceQuest"] = 1151,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
+				q(1151, {	-- Test of Strength
+					["qg"] = 2986,	-- Dorn Plainstalker
+					["coord"] = { 53.8, 41.6, 64 },
+					["sourceQuest"] = 1150,	-- Test of Lore
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["u"] = 40,
+				}),
 				{	-- The Twilight Skymaster
 					["questID"] = 28098,
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
