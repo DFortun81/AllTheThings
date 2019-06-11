@@ -11,13 +11,16 @@ _.Zones =
 					ach(7292),	-- Green Acres (Halfhill)
 					ach(7284, {	-- Is Another Man's Treasure
 						n(64004, {	-- Ghostly Pandaren Fisherman
-							["description"] = "|cff66ccffSpeak with the Ghostly Pandaren Fisherman to get the toy.|r",
+							["description"] = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
 							["questID"] = 31284,
+							["coord"] = { 46.8, 24.6, 376 },
 							["g"] = {
 								i(85973),	-- Ancient Pandaren Fishing Charm Toy
 							},
 						}),
 						n(64191, {	-- Ghostly Pandaren Craftsman
+							["questID"] = 31292,
+							["coord"] = { 45.4, 38.2, 376 },
 							["g"] = {
 								{	-- Ancient Pandaren Woodcutter
 									["itemID"] = 86079,	-- Ancient Pandaren Woodcutter
@@ -25,15 +28,23 @@ _.Zones =
 									["ignoreSource"] = true
 								},
 							},
-							--["questID"] = 31292,
 						}),
 						o(213749, {		-- Staff of the Hidden Master
+							["questID"] = 31407,
+							["coords"] = {
+								{ 15.4, 29.1, 376 },
+								{ 17.5, 35.7, 376 },
+								{ 19.1, 37.9, 376 },
+								{ 15.0, 33.7, 376 },
+								{ 19.0, 42.5, 376 },
+							},
 							["g"] = {
 								i(86218),	-- Staff of the Hidden Master
 							},
-							["questID"] = 31407,
 						}),
-						o(213649, {
+						o(213649, {		-- Cache of Pilfered Goods
+							["questID"] = 31406,
+							["coord"] = { 43.61, 37.48, 376 },
 							["g"] = {
 								i(86110),	-- Stolen Necklace of Precision
 								i(86111),	-- Stolen Necklace of Accuracy
@@ -41,7 +52,6 @@ _.Zones =
 								i(86113),	-- Stolen Amulet of Might
 								i(86114),	-- Stolen Necklace of Fortitude
 							},
-							["questID"] = 31406,
 						}),
 					}),
 					ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
@@ -57,7 +67,7 @@ _.Zones =
 						o(214340, {	-- Boat-Building Instructions
 							["coord"] = { 92.2, 39.2, 376 },
 							["g"] = {
-								i(87524, {-- Boat-Building Instructions
+								i(87524, {	-- Boat-Building Instructions
 									["questID"] = 31869,
 								}),
 							},
