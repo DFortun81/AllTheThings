@@ -7,23 +7,34 @@ _.Zones =
 		m(50, {	-- Northern Stranglethorn
 			n(-2,   {	-- Vendors
 				n(734, {	-- Corporal Bluth <Camp Trader>
-					["races"] = HORDE_ONLY,
+					["coord"] = { 47.2, 10.2, 50 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12231),	-- Recipe: Jungle Stew
 						i(12228),	-- Recipe: Roast Raptor
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
-					i(13311),	-- Schematic: Mechanical Dragonling
+					["coord"] = { 67.5, 61.2, 50 },
+					["g"] = {
+						i(13311),	-- Schematic: Mechanical Dragonling
+					},
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
-					i(12250),	-- Midnight Axe
-					i(12164),	-- Plans: Massive Iron Axe
+					["coord"] = { 43.7, 23.2, 50 },
+					["g"] = {
+						i(12250),	-- Midnight Axe
+						i(12164),	-- Plans: Massive Iron Axe
+					},
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
-					i(10602),	-- Schematic: Deadly Scope
+					["coord"] = { 67.8, 61.1, 50 },
+					["g"] = {
+						i(10602),	-- Schematic: Deadly Scope
+					},
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
+					["coord"] = { 39.3, 51.1, 50 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21943),	-- Design: Truesilver Crab
@@ -33,6 +44,7 @@ _.Zones =
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
+					["coord"] = { 38.7, 49.1, 50 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12250),	-- Midnight Axe
@@ -41,6 +53,7 @@ _.Zones =
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
+					["coord"] = { 37.5, 49.1, 50 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16111),	-- Recipe: Spiced Chili Crab

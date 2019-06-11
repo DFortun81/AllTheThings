@@ -14,16 +14,21 @@ _.Zones =
 				}),
 ]]--				
 --[[
-				qh(26317, {	-- A Lashtail Hatchling
+				q(26317, {	-- A Lashtail Hatchling
 					["qg"] = 2465,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26746, {	-- A Nose for This Sort of Thing
+				q(26746, {	-- A Nose for This Sort of Thing
 					["qg"] = 43884,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --]]
-				un(40, q(26764)),	-- A New Low (REMOVED)
-				qa(26747, {	-- A Physical Specimen
+				q(26764, {	-- A New Low
+					["u"] = 40,
+				}),
+				q(26747, {	-- A Physical Specimen
 					["qg"] = 43884,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61064),	-- Electrostatic Legguards
 						i(61063),	-- Discarded Troll Leggings
@@ -33,21 +38,25 @@ _.Zones =
 					},
 				}),
 --[[
-				qa(29155, {	-- A Shiny Reward (add'l QG 2496)
+				q(29155, {	-- A Shiny Reward (add'l QG 2496)
 					["qg"] = 53151,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29253, {	-- A Shiny Reward (add'l QG 2496)
+				q(29253, {	-- A Shiny Reward (add'l QG 2496)
 					["qg"] = 53151,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26404, {	-- Above My Pay Grade
+				q(26404, {	-- Above My Pay Grade
 					["qg"] = 42814,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 				q(3721, {	-- An OOX of Your Own
 					["qg"] = 7406,	-- 
 				}),
 --]]
-				qh(9457, {	-- An Unusual Patron
+				q(9457, {	-- An Unusual Patron
 					["qg"] = 17094,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61093),	-- Junglewalker Boots
 						i(61092),	-- Monnions of Raw Power
@@ -55,8 +64,17 @@ _.Zones =
 						i(131255),	-- Shouldersguards of Raw Power
 					},
 				}),
-				qa(26732, {	-- Bad Medicine
+				q(204, {	-- Bad Medicine
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4126)),	-- Guerrilla Cleaver
+						un(2, i(4140)),	-- Palm Frond Mantle
+					},
+				}),
+				q(26732, {	-- Bad Medicine
 					["qg"] = 739,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61054),	-- Nimetz's Pauldrons
 						i(61053),	-- Cord of the Ascetic
@@ -65,15 +83,18 @@ _.Zones =
 					},
 				}),
 --[[
-				qa(29151, {	-- Bad Supplies
+				q(29151, {	-- Bad Supplies
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29238, {	-- Bad Supplies
+				q(29238, {	-- Bad Supplies
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 --]]
-				qa(26775, {	-- Be Raptor
+				q(26775, {	-- Be Raptor
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61079),	-- Belt of the High Shaman
 						i(61078),	-- Thaalia's Slippers
@@ -81,8 +102,9 @@ _.Zones =
 						i(131599),	-- Waistguard of the High Shaman
 					},
 				}),
-				qh(26362, {	-- Be Raptor
+				q(26362, {	-- Be Raptor
 					["qg"] = 42812,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61122),	-- Belt of the High Shaman
 						i(61121),	-- Hu'rula's Slippers
@@ -91,7 +113,7 @@ _.Zones =
 					},
 				}),
 				q(208, {	-- Big Game Hunter
-					["qg"] = 715,
+					["qg"] = 715,	-- 
 					["g"] = {
 						i(61127),	-- Gloves of the Jungle King
 						i(61126),	-- Mantle of the White Tiger
@@ -108,33 +130,92 @@ _.Zones =
 				q(31728, {	-- Bill Buckler
 					["qg"] = 63194,	-- 
 				}),
-				qh(26334, {	-- Bloodlord Mandokir
+				q(26334, {	-- Bloodlord Mandokir
 					["qg"] = 42790,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26748, {	-- Bloodlord Mandokir
+				q(26748, {	-- Bloodlord Mandokir
 					["qg"] = 42790,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26742, {	-- Bloodscalp Insight
+				q(26742, {	-- Bloodscalp Insight
 					["qg"] = 43886,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(9436, {	-- Bloodscalp Insight
+				q(9436, {	-- Bloodscalp Insight
 					["qg"] = 17094,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(29232, {	-- Bury Me With Me Boots...
+]]--
+				q(596, {	-- Bloody Bone Necklaces
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(4135)),	-- Bloodbone Band
+					},
+				}),
+				o(2076, {	-- Bubbling Cauldron
+--[[
+					q(26325, {	-- A Nose for This Sort of Thing
+						["races"] = HORDE_ONLY,
+					}),
+					q(26302, {	-- Chasing Yenniku's Fate
+						["races"] = HORDE_ONLY,
+					}),
+					q(26332, {	-- Skullsplitter Mojo
+						["races"] = HORDE_ONLY,
+					}),
+]]--
+					q(26301, {	-- Speaking with Nezzliok
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(61099),	-- Slaver's Plate
+							i(61098),	-- Balia'mah Leggings
+							i(61097),	-- Ziata'jai Bracers
+							i(131507),	-- Balia'mah Chain Pants
+						},
+					}),
+					q(26330, {	-- Who's a Big Troll
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(61096),	-- Electrostatic Legguards
+							i(61095),	-- Discarded Troll Leggings
+							i(61094),	-- Juju Belt
+							i(131513),	-- Discarded Troll Greaves
+							i(156989),	-- Gan'zulah's Headchopper
+						},
+					}),
+				}),
+--[[
+				q(29232, {	-- Bury Me With Me Boots...
 					["qg"] = 52371,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(29121, {	-- Bury Me With Me Boots...
+				q(29121, {	-- Bury Me With Me Boots...
 					["qg"] = 52371,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26733, {	-- Control Sample
+]]--
+				q(202, {	-- Colonel Kurzen
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4127)),	-- Shrapnel Blaster
+					},
+				}),
+--[[
+				q(26733, {	-- Control Sample
 					["qg"] = 739,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(26352, {	-- Cozzle's Plan
+				q(26352, {	-- Cozzle's Plan
 					["qg"] = 42813,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 --]]
-				qa(26744, {	-- Deep Roots
+				q(26744, {	-- Deep Roots
 					["qg"] = 1422,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61066),	-- Well Crafted Leather Britches
 						i(61065),	-- Soft Cotton Armbands
@@ -143,13 +224,51 @@ _.Zones =
 					},
 				}),
 --[[
-				qh(29235, {
+				q(29235, {
 					["qg"] = 52996,	-- 	-- Defend Grom'gol
+					["races"] = HORDE_ONLY,
 				}),
-				qa(29131, {	-- Defend the Rebel Camp
+				q(29131, {	-- Defend the Rebel Camp
 					["qg"] = 52410,	-- 
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(58491, {	-- Disfigured Mosh'Ogg Hand
+					["crs"] = {
+						1142,	-- Mosh'Ogg Brute
+						1144,	-- Mosh'Ogg Witch Doctor
+					["g"] = {
+						q(26407, {	-- Mosh'Ogg Handiwork
+							["races"] = HORDE_ONLY,
+						}),
+					},
 				}),
 --]]
+				q(3625, {	-- Enchanted Azsharite Fel Weaponry
+					["u"] = 40,
+					["g"] = {
+						un(2, i(10697)),	-- Enchanted Azsharite Felbane Dagger
+						un(2, i(10698)),	-- Enchanted Azsharite Felbane Staff
+						un(2, i(10696)),	-- Enchanted Azsharite Felbane Sword
+					},
+				}),
+				q(2765, {	-- Expert Blacksmith!
+					["u"] = 40,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["coord"] = { 67.1, 37.4, 50 },
+					["requireSkill"] = 164,	-- Blacksmithing
+					["sourceQuests"] = {
+						2761,	-- Smelt On, Smelt Off
+						2762,	-- The Great Silver Deceiver
+						2763,	-- The Art of the Imbue
+					},
+					["g"] = {
+						un(2, i(8703, {	-- Signet of Expertise
+							un(2, i(8708, {	-- Hammer of Expertise
+								["ignoreSource"] = true,
+							})),
+						})),
+					},
+				}),
 				q(26345, {	-- Excelsior
 					["qg"] = 2495,	-- 
 					["g"] = {
@@ -157,26 +276,48 @@ _.Zones =
 						i(61106),	-- Excelsior Waders
 					},
 				}),
-				qa(26944, {	-- Exploring Gnomeregan (mutually exclusive with 26943 "Home Sweet Gnome")
+				q(26944, {	-- Exploring Gnomeregan (mutually exclusive with 26943 "Home Sweet Gnome")
 					["qg"] = 44018,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --[[
-				qh(26323, {	-- Favored Skull
+				q(26323, {	-- Favored Skull
 					["qg"] = 42736,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26745, {	-- Favored Skull
+				q(26745, {	-- Favored Skull
 					["qg"] = 42736,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				o(208365, {	-- Recently Disturbed Dirt Mound
-					qa(29118),	-- Follow That Cat
-					qh(29229),	-- Follow That Cat
+]]--
+				q(2764, {	-- Galvin's Finest Pupil
+					["u"] = 40,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["coord"] = { 67.1, 37.4, 50 },
+					["requireSkill"] = 164,	-- Blacksmithing
+					["sourceQuests"] = {
+						2761,	-- Smelt On, Smelt Off
+						2762,	-- The Great Silver Deceiver
+						2763,	-- The Art of the Imbue
+					},
 				}),
-				qa(26776, {	-- Ghaliri
+--[[
+				q(26776, {	-- Ghaliri
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --]]
-				qh(26299, {	-- Headhunting
+				q(582, {	-- Headhunting
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(4132)),	-- Darkspear Armsplints
+						un(2, i(4133)),	-- Darkspear Cuffs
+					},
+				}),
+				q(26299, {	-- Headhunting
 					["qg"] = 2497,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61090),	-- Head Inspector's Gloves
 						i(61089),	-- Palm Frond Shoulderpads
@@ -185,69 +326,86 @@ _.Zones =
 					},
 				}),
 --[[
-				qa(29213, {	-- How's the Hunter Holding Up?
+				q(29213, {	-- How's the Hunter Holding Up?
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29231, {	-- How's the Hunter Holding Up?
+				q(29231, {	-- How's the Hunter Holding Up?
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26298, {	-- Hunt for Yenniku
+				q(26298, {	-- Hunt for Yenniku
 					["qg"] = 2497,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26321, {	-- I Think She's Hungry
+				q(26321, {	-- I Think She's Hungry
 					["qg"] = 2465,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26739, {	-- I Think She's Hungry
+				q(26739, {	-- I Think She's Hungry
 					["qg"] = 1422,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26738, {	-- Just Hatched
+				q(26738, {	-- Just Hatched
 					["qg"] = 1422,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26740, {	-- Krazek's Cookery
+				q(26740, {	-- Krazek's Cookery
 					["qg"] = 770,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29120, {	-- Mauti
+]]--
+				q(206, {	-- Mai'Zoth
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4125)),	-- Tranquil Orb
+					},
+				}),
+--[[
+				q(29120, {	-- Mauti
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29230, {	-- Mauti
+				q(29230, {	-- Mauti
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26774, {	-- Mind Control
+				q(26774, {	-- Mind Control
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(26360, {	-- Mind Control
+				q(26360, {	-- Mind Control
 					["qg"] = 42812,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26351, {	-- Mind Vision
+				q(26351, {	-- Mind Vision
 					["qg"] = 42812,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26772, {	-- Mind Vision
+				q(26772, {	-- Mind Vision
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				n(1144, {	-- Mosh'Ogg Witch Doctor
-					i(58491, {	-- Disfigured Mosh'Ogg Hand
-						qh(26407),	-- Mosh'Ogg Handiwork
-					}),
-				}),
-				n(1142, {	-- Mosh'Ogg Brute
-					i(58491, {	-- Disfigured Mosh'Ogg Hand
-						qh(26407),	-- Mosh'Ogg Handiwork
-					}),
-				}),
-				qa(29105, {	-- Nesingwary Will Know
+				q(29105, {	-- Nesingwary Will Know
 					["qg"] = 52281,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29223, {	-- Nesingwary Will Know
+				q(29223, {	-- Nesingwary Will Know
 					["qg"] = 52980,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(26300, {	-- Nezzliok Will Know
+				q(26300, {	-- Nezzliok Will Know
 					["qg"] = 2497,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26780, {	-- Nighttime in the Jungle
+				q(26780, {	-- Nighttime in the Jungle
 					["qg"] = 44043,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(26304, {	-- Nighttime in the Jungle
+				q(26304, {	-- Nighttime in the Jungle
 					["qg"] = 42813,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 				q(190, {	-- Panther Hunting
 					["qg"] = 718,	-- 
@@ -269,17 +427,21 @@ _.Zones =
 				q(191, {	-- Panther Stalking
 					["qg"] = 718,	-- 
 				}),
-				qh(26338, {	-- Population Con-Troll
+				q(26338, {	-- Population Con-Troll
 					["qg"] = 2465,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26751, {	-- Population Con-Troll
+				q(26751, {	-- Population Con-Troll
 					["qg"] = 733,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(26350, {	-- Priestess Hu'rala
+				q(26350, {	-- Priestess Hu'rala
 					["qg"] = 2497,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26749, {	-- Priestess Thaalia
+				q(26749, {	-- Priestess Thaalia
 					["qg"] = 43884,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(194, {	-- Raptor Hunting
 					["qg"] = 715,	-- 
@@ -303,14 +465,39 @@ _.Zones =
 					["qg"] = 715,	-- 
 				}),
 --]]
-				qa(26765, {	-- Return to Corporal Kaleb
+				o(208365, {	-- Recently Disturbed Dirt Mound
+					q(29118, {	-- Follow That Cat
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(29229, {	-- Follow That Cat
+						["races"] = HORDE_ONLY,
+					}),
+				}),
+				q(331, {	-- Report to Doren
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4123)),	-- Frost Metal Pauldrons
+						un(2, i(4139)),	-- Junglewalker Sandals
+					},
+				}),
+				q(622, {	-- Return to Corporal Kaleb
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(4124),	-- Cap of Harmony NOTE: Awarded from new version of quest 26765
+					},
+				}),
+				q(26765, {	-- Return to Corporal Kaleb
 					["qg"] = 773,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4124),	-- Cap of Harmony
 					},
 				}),
-				qa(26743, {	-- Sacred to the Bloodscalp
+				q(26743, {	-- Sacred to the Bloodscalp
 					["qg"] = 43886,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61058),	-- Tsul'kalu's Strikers
 						i(61057),	-- Mahamba's Caress
@@ -318,8 +505,17 @@ _.Zones =
 						i(131593),	-- Mahamba's Pauldrons
 					},
 				}),
-				qh(26305, {	-- Saving Yenniku
+				q(592, {	-- Saving Yenniku
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(6723)),	-- Medal of Courage
+						un(2, i(4134)),	-- Nimboya's Mystical Staff
+					},
+				}),
+				q(26305, {	-- Saving Yenniku
 					["qg"] = 2519,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61102),	-- Nimboya's Legguards
 						i(61101),	-- Weavers of the Unending Tale
@@ -328,67 +524,79 @@ _.Zones =
 					},
 				}),
 --[[
-				qh(26359, {
-					["qg"] = 42812,	-- 	-- See Raptor
+				q(26359, {	-- See Raptor
+					["qg"] = 42812,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26773, {	-- See Raptor
+				q(26773, {	-- See Raptor
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 ]]--			}),
 				q(29103, {	-- Serpents and Poison
 					["qg"] = 52281,	-- Livingston Marshal
 					["coord"] = { 64.6, 40.4, 50 },
-					["sourceQuest"] = 29102,	-- To Fort Livingston
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29102,	-- To Fort Livingston
 				}),
 				q(29221, {	-- Serpents and Poison
 					["qg"] = 52980,	-- Kil'karil
 					["coord"] = { 64.6, 40.4, 50 },
-					["sourceQuest"] = 29220,	-- To Bambala
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 29220,	-- To Bambala
+				}),
+				q(2761, {	-- Smelt On, Smelt Off
+					["u"] = 40,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
+					["requireSkill"] = 164,	-- Blacksmithing
+					["g"] = {
+						un(2, i(7983)),	-- Plans: Ornate Mithril Pants
+					},
 				}),
 --[[			q(26344, {	-- Some Assembly Required
 					["qg"] = 2495,	-- 
 				}),
 --]]
-				qa(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
-					i(68833),	-- Panther Cub
+				q(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(68833),	-- Panther Cub
+					},
 				}),
-				qh(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
-					i(68833),	-- Panther Cub
+				q(29268, {	-- Some Good Will Come (The Zandalari Menace questline)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(68833),	-- Panther Cub
+					},
 				}),
 --[[
-				qa(26736, {	-- Spared from Madness
+				q(26736, {	-- Spared from Madness
 					["qg"] = 469,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 ]]--
-				o(2076, {	-- Bubbling Cauldron
---						qh(26325),	-- A Nose for This Sort of Thing
---						qh(26302),	-- Chasing Yenniku's Fate
---						qh(26332),	-- Skullsplitter Mojo
-					qh(26301, {	-- Speaking with Nezzliok
-						i(61099),	-- Slaver's Plate
-						i(61098),	-- Balia'mah Leggings
-						i(61097),	-- Ziata'jai Bracers
-						i(131507),	-- Balia'mah Chain Pants
-					}),
-					qh(26330, {	-- Who's a Big Troll
-						i(61096),	-- Electrostatic Legguards
-						i(61095),	-- Discarded Troll Leggings
-						i(61094),	-- Juju Belt
-						i(131513),	-- Discarded Troll Greaves
-						i(156989),	-- Gan'zulah's Headchopper
-					}),
-				}),
 --[[
-				qa(29104, {	-- Spirits Are With Us
+				q(29104, {	-- Spirits Are With Us
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29222, {	-- Spirits Are With Us
+				q(29222, {	-- Spirits Are With Us
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 --]]
-				qa(26737, {	-- Stopping Kurzen's Legacy
+				q(598, {	-- Split Bone Necklace
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(4136)),	-- Darkspear Boots
+						un(2, i(4137)),	-- Darkspear Shoes
+					},
+				}),
+				q(26737, {	-- Stopping Kurzen's Legacy
 					["qg"] = 469,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61049),	-- Ring of Forgotten Causes
 						i(61051),	-- Guerilla Breastplate
@@ -400,12 +608,14 @@ _.Zones =
 				q(26343, {	-- Supply and Demand
 					["qg"] = 2495,	-- 
 				}),
-				qh(26386, {	-- Surkhan
+				q(26386, {	-- Surkhan
 					["qg"] = 42812,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 --]]
-				qa(26731, {	-- The Altar of Naias
+				q(26731, {	-- The Altar of Naias
 					["qg"] = 43885,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61061),	-- Junglewalker Boots
 						i(61060),	-- Salt-Cured Monnions
@@ -413,13 +623,32 @@ _.Zones =
 						i(131590),	-- Salt-Cured Mantle
 					},
 				}),
+				q(2763, {	-- The Art of the Imbue
+					["u"] = 40,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
+					["requireSkill"] = 164,	-- Blacksmithing
+					["g"] = {
+						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
+					},
+				}),
+				q(569, {	-- The Defense of Grom'gol
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(4115)),	-- Grom'gol Buckler
+					},
+				}),
 --[[
-				qh(26280, {	-- The Defense of Grom'gol: Murloc Menace
+				q(26280, {	-- The Defense of Grom'gol: Murloc Menace
 					["qg"] = 2464,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 ]]--
-				qh(26279, {	-- The Defense of Grom'gol: Ogre Oppression
+				q(26279, {	-- The Defense of Grom'gol: Ogre Oppression
 					["qg"] = 2464,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61083),	-- Smashing Breastplate
 						i(61082),	-- Mizjah Vest
@@ -435,8 +664,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				qh(26281, {	-- The Defense of Grom'gol: Trollish Thievery
+				q(26281, {	-- The Defense of Grom'gol: Trollish Thievery
 					["qg"] = 2464,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61086),	-- Pitiless Pauldrons
 						i(61085),	-- Bal'lal Belt
@@ -450,22 +680,52 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26838,	-- Rebels Without a Clue
 				}),
+				q(2762, {	-- The Great Silver Deceiver
+					["u"] = 40,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["coord"] = { 67.1, 37.4, 50 },
+					["sourceQuest"] = 2760,	-- The Mithril Order
+					["requireSkill"] = 164,	-- Blacksmithing
+					["g"] = {
+						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
+					},
+				}),
+				q(338, {	-- The Green Hills of Stranglethorn
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4116)),	-- Olmann Sewar
+						un(2, i(17688)),	-- Jungle Boots
+					},
+				}),
 --[[
 				q(26269, {	-- The Green Hills of Stranglethorn
 					["qg"] = 716,	-- 
 				}),
-				qh(26340, {	-- The Hunt
+]]--
+				q(328, {	-- The Hidden Key
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(4122)),	-- Bookmaker's Scepter
+					},
+				}),
+--[[
+				q(26340, {	-- The Hunt
 					["qg"] = 17094,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(29115, {	-- The Hunter's Revenge
+				q(29115, {	-- The Hunter's Revenge
 					["qg"] = 52346,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29227, {	-- The Hunter's Revenge
+				q(29227, {	-- The Hunter's Revenge
 					["qg"] = 52294,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 --]]
-				qa(26781, {	-- The Mind's Eye
+				q(26781, {	-- The Mind's Eye
 					["qg"] = 44019,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61070),	-- Fort Livingston Legguards
 						i(61069),	-- Eye-Plucker Gloves
@@ -474,24 +734,41 @@ _.Zones =
 					},
 				}),
 --[[
-				qh(26303, {	-- The Mind's Eye
+				q(26303, {	-- The Mind's Eye
 					["qg"] = 2519,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26783, {	-- The Mosh'Ogg Bounty
+]]--
+				q(2760, {	-- The Mithril Order
+					["u"] = 40,
+					["qg"] = 7794,	-- McGaven
+					["requireSkill"] = 164,	-- Blacksmithing
+					["sourceQuests"] = {
+						2757,	-- Booty Bay or Bust! (Horde)
+						2759,	-- In Search of Galvan (Alliance)
+					},
+				}),
+--[[
+				q(26783, {	-- The Mosh'Ogg Bounty
 					["qg"] = 44018,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --					q(26412),	-- The Mosh'Ogg Bounty (IN GAME?  identical quest text to quest 26399)
-				qh(26399, {	-- The Mosh'Ogg Bounty
+				q(26399, {	-- The Mosh'Ogg Bounty
 					["qg"] = 42814,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26782, {	-- The Mosh'Ogg Bounty
+				q(26782, {	-- The Mosh'Ogg Bounty
 					["qg"] = 44017,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26734, {	-- The Source of the Madness
+				q(26734, {	-- The Source of the Madness
 					["qg"] = 739,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(26400, {	-- The Universal Key
+				q(26400, {	-- The Universal Key
 					["qg"] = 42814,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 				q(185, {	-- Tiger Hunting
 					["qg"] = 717,	-- 
@@ -515,27 +792,33 @@ _.Zones =
 				q(186, {	-- Tiger Stalking
 					["qg"] = 717,	-- 
 				}),
-				qh(29236, {	-- To Hardwrench Hideaway
+				q(29236, {	-- To Hardwrench Hideaway
 					["qg"] = 53008,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(26805, {	-- To the Cape!
+				q(26805, {	-- To the Cape!
 					["qg"] = 44018,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29133, {	-- To the Digsite
+				q(29133, {	-- To the Digsite
 					["qg"] = 52753,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(29114, {	-- Track the Tracker
+				q(29114, {	-- Track the Tracker
 					["qg"] = 52294,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29226, {	-- Track the Tracker
+				q(29226, {	-- Track the Tracker
 					["qg"] = 52294,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
 					["qg"] = 16399,	-- 
 				}),
 --]]
-				qa(26763, {	-- Venture Company Mining
+				q(26763, {	-- Venture Company Mining
 					["qg"] = 773,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61073),	-- Spare Metal Pauldrons
 						i(61072),	-- Bartered Bracers
@@ -545,8 +828,9 @@ _.Zones =
 						i(156991),	-- Shredder Arm Extension
 					},
 				}),
-				qh(26403, {	-- Venture Company Mining
+				q(26403, {	-- Venture Company Mining
 					["qg"] = 42814,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61105),	-- Scrap Metal Pauldrons
 						i(61104),	-- Skeezy Bracers
@@ -556,30 +840,37 @@ _.Zones =
 					},
 				}),
 --[[
-				qa(29150, {	-- Voodoo Zombies
+				q(29150, {	-- Voodoo Zombies
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qh(29237, {	-- Voodoo Zombies
+				q(29237, {	-- Voodoo Zombies
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qh(29233, {	-- Warn Grom'gol
+				q(29233, {	-- Warn Grom'gol
 					["qg"] = 52234,	-- 
+					["races"] = HORDE_ONLY,
 				}),
-				qa(29124, {	-- Warn the Rebel Camp
+				q(29124, {	-- Warn the Rebel Camp
 					["qg"] = 52234,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
-				qa(26729, {	-- Water Elementals
+				q(26729, {	-- Water Elementals
 					["qg"] = 43885,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(583, {	-- Welcome to the Jungle
 					["qg"] = 716,	-- 
 				}),
-				qa(26730, {	-- You Can Take the Murloc Out of the Ocean...
+				q(26730, {	-- You Can Take the Murloc Out of the Ocean...
 					["qg"] = 43885,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --]]
-				qa(26779, {	-- Zul'Mamwe Mambo
+				q(26779, {	-- Zul'Mamwe Mambo
 					["qg"] = 44021,	-- 
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(61076),	-- Pauldrons of the Wayward Tribe
 						i(61075),	-- Breastplate of Zul'Mamwe
@@ -588,8 +879,9 @@ _.Zones =
 						i(131602),	-- Irradiated Faux Croc' Wristguards
 					},
 				}),
-				qh(26405, {	-- Zul'Mamwe Mambo
+				q(26405, {	-- Zul'Mamwe Mambo
 					["qg"] = 42811,	-- 
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(61119),	-- Pauldrons of the Wayward Tribe
 						i(61118),	-- Breastplate of Zul'Mamwe
@@ -598,112 +890,6 @@ _.Zones =
 						i(131523),	-- Irradiated Faux Croc' Wristguards
 					},
 				}),
-				un(40, qa(204, {	-- Bad Medicine
-					un(2, i(4126)),	-- Guerrilla Cleaver
-					un(2, i(4140)),	-- Palm Frond Mantle
-				})),
-				un(40, qh(596, {	-- Bloody Bone Necklaces
-					un(2, i(4135)),	-- Bloodbone Band
-				})),
-				un(40, qa(202, {	-- Colonel Kurzen
-					un(2, i(4127)),	-- Shrapnel Blaster
-				})),
-				un(40, q(3625, {	-- Enchanted Azsharite Fel Weaponry
-					un(2, i(10697)),	-- Enchanted Azsharite Felbane Dagger
-					un(2, i(10698)),	-- Enchanted Azsharite Felbane Staff
-					un(2, i(10696)),	-- Enchanted Azsharite Felbane Sword
-				})),
-				q(2765, {	-- Expert Blacksmith!
-					["qg"] = 7802,	-- Galvan the Ancient
-					["coord"] = { 67.1, 37.4, 50 },
-					["sourceQuests"] = { 
-						2761,	-- Smelt On, Smelt Off
-						2762,	-- The Great Silver Deceiver
-						2763,	-- The Art of the Imbue
-					},
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-					["g"] = {
-						un(2, i(8703, {	-- Signet of Expertise
-							un(2, i(8708, {	-- Hammer of Expertise
-								["ignoreSource"] = true,
-							})),
-						})),
-					},
-				}),
-				q(2764, {	-- Galvin's Finest Pupil
-					["qg"] = 7802,	-- Galvan the Ancient
-					["coord"] = { 67.1, 37.4, 50 },
-					["sourceQuests"] = { 
-						2761,	-- Smelt On, Smelt Off
-						2762,	-- The Great Silver Deceiver
-						2763,	-- The Art of the Imbue
-					},
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-				}),
-				un(40, qh(582, {	-- Headhunting
-					un(2, i(4132)),	-- Darkspear Armsplints
-					un(2, i(4133)),	-- Darkspear Cuffs
-				})),
-				un(40, qa(206, {	-- Mai'Zoth
-					un(2, i(4125)),	-- Tranquil Orb
-				})),
-				un(40, qa(331, {	-- Report to Doren
-					un(2, i(4123)),	-- Frost Metal Pauldrons
-					un(2, i(4139)),	-- Junglewalker Sandals
-				})),
-				un(40, qa(622, {	-- Return to Corporal Kaleb
-					i(4124),	-- Cap of Harmony NOTE: Awarded from new version of quest 26765
-				})),
-				un(40, qh(592, {	-- Saving Yenniku
-					un(2, i(6723)),	-- Medal of Courage
-					un(2, i(4134)),	-- Nimboya's Mystical Staff
-				})),
-				q(2761, {	-- Smelt On, Smelt Off
-					["qg"] = 7802,	-- Galvan the Ancient
-					["coord"] = { 67.1, 37.4, 50 },
-					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-					["g"] = {
-						un(2, i(7983)),	-- Plans: Ornate Mithril Pants
-					},
-				}),
-				un(40, qh(598, {	-- Split Bone Necklace
-					un(2, i(4136)),	-- Darkspear Boots
-					un(2, i(4137)),	-- Darkspear Shoes
-				})),
-				q(2763, {	-- The Art of the Imbue
-					["qg"] = 7802,	-- Galvan the Ancient
-					["coord"] = { 67.1, 37.4, 50 },
-					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-					["g"] = {
-						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
-					},
-				}),
-				un(40, qh(569, {	-- The Defense of Grom'gol
-					un(2, i(4115)),	-- Grom'gol Buckler
-				})),
-				q(2762, {	-- The Great Silver Deceiver
-					["qg"] = 7802,	-- Galvan the Ancient
-					["coord"] = { 67.1, 37.4, 50 },
-					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
-					["u"] = 40,
-					["g"] = {
-						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
-					},
-				}),
-				un(40, q(338, {		-- The Green Hills of Stranglethorn
-					un(2, i(4116)),	-- Olmann Sewar
-					un(2, i(17688)),	-- Jungle Boots
-				})),
-				un(40, qa(328, {	-- The Hidden Key
-					un(2, i(4122)),	-- Bookmaker's Scepter
-				})),
 			}),
 		}),
 	}),

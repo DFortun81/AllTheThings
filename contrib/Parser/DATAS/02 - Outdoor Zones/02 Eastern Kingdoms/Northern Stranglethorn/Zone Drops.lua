@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(0,    {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				i(1998, {	-- Bloodscalp Channeling Staff
 					["crs"] = { 697 },	-- Bloodscalp Shaman
 				}),
@@ -38,7 +38,7 @@ _.Zones =
 					["crs"] = { 597 },	-- Bloodscalp Berserker
 				}),
 				i(1679, {	-- Korg Bat
-					["crs"] = { 1142 }, 	-- Mosh'Ogg Brute
+					["crs"] = { 1142 }, -- Mosh'Ogg Brute
 				}),
 				i(5755, {	-- Onyx Shredder Plate
 					["crs"] = { 4260 },	-- Venture Co. Shredder
