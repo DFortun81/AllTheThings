@@ -144,6 +144,12 @@ _.Zones =
 						i(131554),	-- Spaulders of the Bat
 					},
 				}),
+				q(29151, {	-- Bad Supplies
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 55.1, 42.2, 210 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29150,	-- Voodoo Zombies
+				}),
 				q(26703,  {	-- Bloodsail's End
 					["sourceQuests"] = {26697,26699,26700},
 					["qg"] = 2496,	-- Baron Revilgaz
@@ -318,6 +324,12 @@ _.Zones =
 					["sourceQuests"] = {26629},
 					["isBreadcrumb"] = true,
 					["description"] = "You can only complete this quest if you did not do Seeing Where Your Loyalties Lie yet.",
+				}),
+				q(29152, {	-- Making Contact
+					["qg"] = 52646,	-- Colin Swifthammer
+					["coord"] = { 55.3, 41.9, 210 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29151,	-- Bad Supplies
 				}),
 				qa(26808, {	-- Maywiki
 					["qg"] = 44084,	-- Maywiki
@@ -554,6 +566,12 @@ _.Zones =
 					["qg"] = 2488,	-- Deeg
 					["sourceQuests"] = {26611},
 				}),
+				q(29150, {	-- Voodoo Zombies
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 55.1, 42.2, 210 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29133,	-- To the Digsite
+				}),
 				q(26631,  {	-- Your First Day as a Pirate
 					["qg"] = 43504,	-- Yancey Grillsen
 					["sourceQuests"] = {26629},
@@ -580,7 +598,6 @@ _.Zones =
 				qh(26435)	-- I'm A Huge Liar and a Fraud
 				qh(26534)	-- Let's See What You've Got, Zanzil
 				q(26630)	-- Looks Like a Tauren Pirate to Me
-				qa(29152)	-- Making Contact
 				qh(29250)	-- Making Contact
 				qh(11357)	-- Masked Orphan Matron
 				qh(26494)	-- Mixmaster Jasper

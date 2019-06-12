@@ -349,11 +349,13 @@ _.Zones =
 							i(72042), 	-- Alliance Balloon (PET!)
 						},
 					}),
---[[					
 					q(29100, {	-- Bwemba's Spirit
-						["races"] = ALLIANCE_ONLY,
+						["qg"] = 52654,	-- Bwemba
 						["lvl"] = 85,
+						["coord"] = { 25.9, 29.2, 84 },
+						["races"] = ALLIANCE_ONLY,
 					}),
+--[[					
 					q(14482, {	-- Call of Duty
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 80,
@@ -767,10 +769,13 @@ _.Zones =
 					qa(31985)),	-- The Triumphant Return
 					qa(29156)),	-- The Troll Incursion
 					qa(27443)),	-- The War Has Many Fronts
-					qa(29555)),	-- The White Pawn
-					q(29158)),	-- The Zandalar Representative
+					qa(29555)),	-- The White Pawn,
 					qa(26536)),	-- Thunder Falls
 --]]
+					q(29158, {	-- The Zandalar Representative
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					qa(46727, {	-- Tides of War
 						["sourceQuests"] = { 51403 },	-- The Speaker's Imperative
 						["coord"] = { 27.6, 21.2 },
@@ -785,8 +790,13 @@ _.Zones =
 							i(138450),	-- Signet of Stormwind
 						},
 					}),
+					q(29102, {	-- To Fort Livingston
+						["qg"] = 52654,	-- Bwemba
+						["lvl"] = 85,
+						["coord"] = { 25.9, 29.2, 84 },
+						["races"] = ALLIANCE_ONLY,
+					}),
 --[[
-					qa(29102)),	-- To Fort Livingston
 					qa(28827)),	-- To the Depths
 					qa(11657)),	-- Torch Catching
 					qa(11731)),	-- Torch Tossing

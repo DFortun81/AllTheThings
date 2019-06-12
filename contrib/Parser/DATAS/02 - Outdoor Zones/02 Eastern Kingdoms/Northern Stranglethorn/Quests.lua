@@ -107,10 +107,6 @@ _.Zones =
 					},
 				}),
 --[[
-				q(29151, {	-- Bad Supplies
-					["qg"] = 52234,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(29238, {	-- Bad Supplies
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
@@ -229,11 +225,13 @@ _.Zones =
 					["qg"] = 52371,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(29121, {	-- Bury Me With Me Boots...
-					["qg"] = 52371,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 ]]--
+				q(29121, {	-- Bury Me With Me Boots...
+					["qg"] = 52371,	-- Grent Direhammer
+					["coord"] = { 76.0, 66.6, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29213,	-- How's the Hunter Holding Up?
+				}),
 				q(202, {	-- Colonel Kurzen
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -270,10 +268,14 @@ _.Zones =
 					["qg"] = 52996,	-- 	-- Defend Grom'gol
 					["races"] = HORDE_ONLY,
 				}),
+]]--
 				q(29131, {	-- Defend the Rebel Camp
-					["qg"] = 52410,	-- 
+					["qg"] = 52410,	-- Lieutenant Doren
+					["coord"] = { 47.7, 12.0, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
 				}),
+--[[
 				i(58491, {	-- Disfigured Mosh'Ogg Hand
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
@@ -338,6 +340,11 @@ _.Zones =
 					["description"] = "Becomes available after getting the |cFFFFD700Bloodscalp Lore Tablet|r.",
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
 				}),
+				q(29116, {	-- Follow That Cat
+					["coord"] = { 64.1, 20.1, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29115,	-- The Hunter's Revenge
+				}),
 				q(2764, {	-- Galvin's Finest Pupil
 					["u"] = 40,
 					["qg"] = 7802,	-- Galvan the Ancient
@@ -373,11 +380,13 @@ _.Zones =
 						i(131506),	-- Palm Frond Pauldrons
 					},
 				}),
---[[
 				q(29213, {	-- How's the Hunter Holding Up?
-					["qg"] = 52234,	-- 
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 77.1, 69.1, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29120,	-- Mauti
 				}),
+--[[
 				q(29231, {	-- How's the Hunter Holding Up?
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
@@ -415,11 +424,13 @@ _.Zones =
 						un(2, i(4125)),	-- Tranquil Orb
 					},
 				}),
---[[
 				q(29120, {	-- Mauti
-					["qg"] = 52234,	-- 
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 77.9, 68.1, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29116,	-- Follow That Cat
 				}),
+--[[
 				q(29230, {	-- Mauti
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
@@ -447,11 +458,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26749,	-- Priestess Thaalia
 				}),
---[[
 				q(29105, {	-- Nesingwary Will Know
-					["qg"] = 52281,	-- 
+					["qg"] = 52281,	-- Livingston Marshal
+					["coord"] = { 52.5, 66.5, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29104,	-- Spirits Are With Us
 				}),
+--[[
 				q(29223, {	-- Nesingwary Will Know
 					["qg"] = 52980,	-- 
 					["races"] = HORDE_ONLY,
@@ -550,8 +563,8 @@ _.Zones =
 					["coord"] = { 44.1, 22.9, 50 },
 					["sourceQuest"] = 194,	-- Raptor Hunting
 				}),
---[[
-				o(208365, {	-- Recently Disturbed Dirt Mound
+				o(208365, {	-- Recently Disturbed Dirt Mound (object was removed, but quests were not)
+					["u"] = 43,
 					["g"] = {
 						q(29118, {	-- Follow That Cat
 							["races"] = ALLIANCE_ONLY,
@@ -561,7 +574,6 @@ _.Zones =
 						}),
 					},
 				}),
-]]--
 				q(331, {	-- Report to Doren
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -656,7 +668,10 @@ _.Zones =
 					["sourceQuest"] = 26343,	-- Supply and Demand
 				}),
 				q(29267, {	-- Some Good Will Come (The Zandalar Representative questline)
+					["qg"] = 52374,	-- Panther Cub
+					["coord"] = { 76.1, 66.7, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
 					["g"] = {
 						i(68833),	-- Panther Cub
 					},
@@ -673,11 +688,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26735,	-- The Fate of Kurzen
 				}),
---[[
 				q(29104, {	-- Spirits Are With Us
-					["qg"] = 52234,	-- 
+					["qg"] = 52234,	-- Bwemba
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29103,	-- Serpents and Poison
 				}),
+--[[
 				q(29222, {	-- Spirits Are With Us
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
@@ -760,11 +776,11 @@ _.Zones =
 				q(26278, {	-- The Defense of Grom'gol: Raptor Risk
 					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.6, 50 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26417,	-- Northern Stranglethorn: The Fallen Empire
 						28688,	-- Warchief's Command: Northern Stranglethorn!
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(26281, {	-- The Defense of Grom'gol: Trollish Thievery
 					["qg"] = 2464,	-- 
@@ -816,10 +832,14 @@ _.Zones =
 					["qg"] = 17094,	-- 
 					["races"] = HORDE_ONLY,
 				}),
+]]--
 				q(29115, {	-- The Hunter's Revenge
-					["qg"] = 52346,	-- 
+					["qg"] = 52346,	-- Grent Direhammer
+					["coord"] = { 50.3, 21.7, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29114,	-- Track the Tracker
 				}),
+--[[
 				q(29227, {	-- The Hunter's Revenge
 					["qg"] = 52294,	-- 
 					["races"] = HORDE_ONLY,
@@ -918,15 +938,19 @@ _.Zones =
 					["coord"] = { 53.3, 66.2, 50 },
 					["races"] = ALLIANCE_ONLY,
 				}),
---[[
 				q(29133, {	-- To the Digsite
-					["qg"] = 52753,	-- 
+					["qg"] = 52753,	-- James Stillair
+					["coord"] = { 47.8, 11.8, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29131,	-- Defend the Rebel Camp
 				}),
 				q(29114, {	-- Track the Tracker
-					["qg"] = 52294,	-- 
+					["qg"] = 52294,	-- Hemet Nesingwary Jr.
+					["coord"] = { 44.1, 22.9, 50 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29105,	-- Nesingwary Will Know
 				}),
+--[[
 				q(29226, {	-- Track the Tracker
 					["qg"] = 52294,	-- 
 					["races"] = HORDE_ONLY,
@@ -961,10 +985,6 @@ _.Zones =
 					},
 				}),
 --[[
-				q(29150, {	-- Voodoo Zombies
-					["qg"] = 52234,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(29237, {	-- Voodoo Zombies
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
@@ -973,11 +993,13 @@ _.Zones =
 					["qg"] = 52234,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(29124, {	-- Warn the Rebel Camp
-					["qg"] = 52234,	-- 
-					["races"] = ALLIANCE_ONLY,
-				}),
 --]]
+				q(29124, {	-- Warn the Rebel Camp
+					["qg"] = 52234,	-- Bwemba
+					["coord"] = { 76.0, 66.6, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
+				}),
 				q(26729, {	-- Water Elementals
 					["qg"] = 43885,	-- Emerine Junis
 					["coord"] = { 47.6, 10.3, 50 },
