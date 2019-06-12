@@ -104,9 +104,10 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(11008, {	-- Fires Over Skettis
-							["qg"] = 23048,	-- Sky Sergeant Doryn
-							["coord"] = { 64.5, 66.7, 108 },
 							["sourceQuest"] = 11098,	-- To Skettis!
+							["isDaily"] = true,
+							["coord"] = { 64.5, 66.7, 108 },
+							["qg"] = 23048,	-- Sky Sergeant Doryn
 							["g"] = {
 								ach(1275),	-- Bombs Away
 							},
