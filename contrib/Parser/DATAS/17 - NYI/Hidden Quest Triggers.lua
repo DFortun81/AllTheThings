@@ -6,6 +6,7 @@ _.NeverImplemented =
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(-9956, {	-- Quests
+		q(28855),	-- Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you
 		q(35572),	-- Triggered by completing Hellfire Ramparts
 		q(35566),	-- Triggered by completing The Blood Furnace
 		q(37187),	-- The Dark Portal
