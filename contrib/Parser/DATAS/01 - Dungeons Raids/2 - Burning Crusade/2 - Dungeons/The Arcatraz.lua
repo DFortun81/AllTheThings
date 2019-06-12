@@ -174,7 +174,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 71,
 				["groups"] = {
 					cr(20870, e(548, {	-- Zereketh the Unbound

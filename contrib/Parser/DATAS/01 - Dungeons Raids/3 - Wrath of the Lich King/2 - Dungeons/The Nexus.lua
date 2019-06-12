@@ -42,7 +42,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(42762), 	-- Treads of Torn Future
 				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				cr(26731, e(618, { 	-- Grand Magus Telestra
 					{	-- The Nexus: Grand Magus Telestra
 						["achievementID"] = 478,	-- The Nexus
@@ -102,7 +102,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37166),	-- Sphere of Red Dragon's Blood
 				})),
 			}),
-			d(  2, {	-- Heroic
+			d(2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
 					a(cr(26798, e(833, {	-- Commander Stoutbeard
@@ -190,7 +190,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 				},
 			}),
-			d( 24, {	-- Timewalking
+			d(24, {	-- Timewalking
 				["lvl"] = 81,
 				["groups"] = {
 					-- NOTE: This boss is not listed in the Timewalking Dungeon Journal.

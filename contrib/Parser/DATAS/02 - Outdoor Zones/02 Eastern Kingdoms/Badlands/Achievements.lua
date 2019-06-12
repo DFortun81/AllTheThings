@@ -5,11 +5,9 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			["g"] = {
-				n(-4,   {	-- Achievement
-					ach(5444),	-- Ready, Set, Goat!
-				}),
-			},
+			n(-4, {	-- Achievement
+				ach(5444),	-- Ready, Set, Goat!
+			}),
 		}),
 	}),
 };

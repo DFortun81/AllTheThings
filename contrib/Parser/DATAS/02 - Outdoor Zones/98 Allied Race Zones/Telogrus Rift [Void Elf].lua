@@ -9,6 +9,7 @@ _.Zones =
 		["g"] = {
 			{	-- Telogrus Rift
 				["mapID"] = 971,	-- Telogrus Rift
+				["maps"] = { 972 },	-- Telogrus Rift
 				["races"] = {
 					29,		-- Void Elf
 				},

@@ -3,17 +3,16 @@
 -----------------------------------------------------
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, { 	-- Firelands
-		["isRaid"] = true,
 		["sharedLockout"] = 1,
-		["lvl"] = 85,
+		["isRaid"] = true,
+		["coord"] = { 47.3, 78.1, 198 },
 		["mapID"] = 367,
 		["maps"] = { 368, 369 },
-		["groups"] = {
-			{	-- Firelands
-				["achievementID"] = 5802,	-- Firelands
-			},
+		["lvl"] = 85,
+		["g"] = {
+			ach(5802),	-- Firelands
 			n(-10066, {	-- Legendary Questline
-				["classes"] = { 5, 7, 8, 9, 11 },    -- Priest, Shaman, Mage, Warlock, Druid
+				["classes"] = { 5, 7, 8, 9, 11 },	-- Priest, Shaman, Mage, Warlock, Druid
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
 				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
 				["isRaid"] = true,
@@ -29,15 +28,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 					198,	-- Mount Hyjal
 					114,	-- Borean Tundra
 				},
-				["groups"] = {
-					{
+				["g"] = {
+					{	---------- Your Time Has Come (A / H)
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["allianceQuestID"] = 29453,	-- Your Time Has Come [Alliance]
 						["hordeQuestID"] = 	  29452,	-- Your Time Has Come [Horde]
 						["qg"] = 53115,	-- Molten Lord
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					},
-					{
+					{	---------- A Legendary Engagement (A / H)
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["allianceQuestID"] = 29129,	-- A Legendary Engagement [Alliance]
 						["hordeQuestID"] = 	  29132,	-- A Legendary Engagement [Horde]
@@ -54,7 +53,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					q(29135, {	-- All-Seeing Eye
 						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
-						["groups"] = {
+						["g"] = {
 							i(71141, {	-- Eternal Ember
 								["description"] = "Need 25 of these for the All-Seeing Eye quest.",
 								["questID"] = 29135,
@@ -91,15 +90,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["sourceQuests"] = { 29194 },	-- Through a Glass, Darkly
 					}),
 					q(29234, {	-- Delegation
-						["description"] = "This is exactly how to do the quest... Start by walking into Firelands. DO NOT KILL ANY OF THE BOSSES. You will need them alive so that you can loot the items for the next phase of the quest after this one.\n\nMouseover each of the requirements below for further instructions.\n\nAfter you are finished, go to Borean Tundra.",
+						["description"] = "This is exactly how to do the quest... Start by walking into Firelands. DO NOT KILL ANY OF THE BOSSES. You will need them alive so that you can loot the items for the next phase of the quest after this one.\n\nMouse over each of the requirements below for further instructions.\n\nAfter you are finished, go to Borean Tundra.",
 						["qg"] = 52995,	-- Kalecgos
 						["sourceQuests"] = { 29225 },	-- Actionable Intelligence
-						["groups"] = {
+						["g"] = {
 							i(71008, {	-- Charged Rhyolite Focus
 								["description"] = "While fighting Lord Rhyolith you loot the Rhyolite Fragments which randomly spawn around the edge of the area (note: possible link to the volcano spawns, but those are random as well). Gather three of these and create a Dull Rhyolite Focus, which is then used just before he uses Concussive Stomp. (STOMP NOW!) He has to stand on it almost directly so make sure you're pretty close before using it. Loot the Charged Rhyolite Focus afterwards.",
 								["crs"] = { 52558 },	-- Lord Rhyolith
 								["questID"] = 29432,	-- Delegation Tracker
-								["groups"] = {
+								["g"] = {
 									i(70997),	-- Rhyolite Fragment
 									i(70996),	-- Dull Rhyolite Focus
 								},
@@ -108,7 +107,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								["description"] = "While fighting Beth'tilac you loot the Obsidian-Flecked Chitin Fragments, three of which spawn when a Cinderweb Drone is killed. Gather them and create a Dull Chitinous Focus, which is then used on top of the web just before she uses Smoldering Devastation at 0 Energy.\n\nThis may take a while, just keep an eye on her energy bar and don't fall through the holes created by the meteors.",
 								["crs"] = { 52498 },	-- Beth'tilac <The Red Widow>
 								["questID"] = 29432,	-- Delegation Tracker
-								["groups"] = {
+								["g"] = {
 									i(70999),	-- Obsidian-Flecked Chitin Fragment
 									i(70998),	-- Dull Chitinous Focus
 								},
@@ -117,7 +116,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								["description"] = "While fighting Shannox you loot the Emberstone Fragments, one of which spawns when a Crystal Prison Trap is destroyed. Gather three of them and create a Dull Emberstone Focus, which is then used just before he uses Hurl Spear. The spear has to hit the focus so make sure you're close. Once the fire has died down loot the Charged Emberstone Focus.\n\nNOTE: This requires at least two targets:\nA mage can use the Frost Elemental.\nA shaman can summon the Earth Elemental.\nA Warlock can use its pet.\nA Priest or Druid needs a friend. :(",
 								["crs"] = { 53691 },	-- Shannox
 								["questID"] = 29432,	-- Delegation Tracker
-								["groups"] = {
+								["g"] = {
 									i(71000),	-- Emberstone Fragment
 									i(71001),	-- Dull Emberstone Focus
 								},
@@ -126,7 +125,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								["description"] = "While fighting Alysrazor you loot the Pyreshell Fragments, one of which spawns when a Molten Egg hatches. Gather three and create a Dull Pyreshell Focus, which is then used just after she starts the Firestorm.\n\nIf she stays grounded and you need more fragments or need to charge your focus, you can fly out of the instance to reset, no more Eggs will spawn at this time.",
 								["crs"] = { 52530 },	-- Alysrazor
 								["questID"] = 29432,	-- Delegation Tracker
-								["groups"] = {
+								["g"] = {
 									i(70994),	-- Pyreshell Fragment
 									i(70995),	-- Dull Pyreshell Focus
 								},
@@ -144,7 +143,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					q(29239, {	-- Nordrassil's Bough
 						["qg"] = 53009,	-- Kalecgos
 						["sourceQuests"] = { 29234 },	-- Delegation
-						["groups"] = {
+						["g"] = {
 							i(71084),  -- Branch of Nordrassil
 						},
 					}),
@@ -160,7 +159,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["description"] = "You should clear this raid on 25H difficulty for the most gain per boss:\n\n10 Man\n    Normal ---- 18-23\n    Heroic ------ 23-26\n\n25 Man\n    Normal ---- 48-55\n    Heroic ----- 55-66",
 						["qg"] = 53210,	-- Kalecgos
 						["sourceQuests"] = { 29269 },	-- At One
-						["groups"] = {
+						["g"] = {
 							i(69815, {	-- Seething Cinder
 								["description"] = "Need 1000 of these for the Time Grows Short quest.",
 								["questID"] = 29270,
@@ -179,16 +178,16 @@ _.Instances = { tier(4, {	-- Cataclysm
 					q(29285, {	-- Alignment
 						["qg"] = 53215,	-- Kalecgos
 						["sourceQuests"] = { 29270 },	-- Time Grows Short
-						["groups"] = {
+						["g"] = {
 							i(71085),	-- Runestaff of Nordrassil
 						},
 					}),
-					{
+					{	---------- Heart of Flame (A / H)
 						["qg"] = 53349,	-- Kalecgos
 						["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
 						["hordeQuestID"] = 	  29308,	-- Heart of Flame [Horde]
 						["sourceQuests"] = { 29285 },	-- Alignment
-						["groups"] = {
+						["g"] = {
 							i(69848, {	-- Heart of Flame
 								["description"] = "The heart has 100% drop rate from Ragnaros for anyone on the quest once you have obtained 250 smoldering essences, regardless of raid size or difficulty.\n\nGather Essences by killing the bosses and syphoning the essences with your staff.",
 								["allianceQuestID"] = 29307,	-- Heart of Flame [Alliance]
@@ -206,12 +205,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 						},
 					},
-					{
+					{	---------- The Stuff of Legends (A / H)
 						["qgs"] = { 53466 },	-- Hallegosa
 						["allianceQuestID"] = 29312,	-- The Stuff of Legends [Alliance]
 						["hordeQuestID"] = 29309,		-- The Stuff of Legends [Horde]
 						["sourceQuests"] = { 29307, 29308 },	-- Heart of Flame
-						["groups"] = {
+						["g"] = {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 					},
@@ -250,7 +249,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71253),
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(0,  {	-- Zone Drop
 				["crs"] = {
 					53134,	-- Ancient Core Hound
 					53635,	-- Cinderweb Drone
@@ -281,7 +280,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					53732,	-- Unbound Smoldering Elemental
 					53901,	-- Unstable Magma
 				},
-				["groups"] = {
+				["g"] = {
 					i(69976),	-- Pattern: Boots of the Black Flame		
 					i(69966),	-- Pattern: Don Tayo's Inferno Mittens	
 					i(69975),	-- Pattern: Endless Dream  Walkers		
@@ -313,10 +312,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71367), 	-- Theck's Emberseal
 				},
 			}),
-			d(  1, {	-- Normal
+			d(1,  {	-- Normal
 				["difficulties"] = { 3, 4 },
-				["groups"] = {
-					n(-1, { 	-- Common Boss Drops
+				["g"] = {
+					n(-1,  {	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
@@ -326,7 +325,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["groups"] = {
+						["g"] = {
 							i(71779),	-- Avool's Incendiary Shanker
 							i(71787),	-- Entrail Disgorger
 							i(71776),	-- Eye of Purification
@@ -339,10 +338,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["groups"] = {		
-							{	-- Death from Above
-								["achievementID"] = 5821,	-- Death from Above
-							},
+						["g"] = {		
+							ach(5821),	-- Death from Above
 							i(152976),	-- Cinderweb Egg (PET!)
 							i(71039),	-- Funeral Pyre
 							i(70922),	-- Mandible of Beth'tilac
@@ -362,10 +359,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
-						["groups"] = {
-							{	-- Not an Ambi-Turner
-								["achievementID"] = 5810,	-- Not an Ambi-Turner
-							},
+						["g"] = {
+							ach(5810),	-- Not an Ambi-Turner
 							i(71006),	-- Volcanospike
 							i(70991),	-- Arbalest of Erupting Fury
 							i(71011),	-- Flickering Cowl
@@ -383,28 +378,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
-						["groups"] = {
-							{	-- Do a Barrel Roll!
-								["achievementID"] = 5813,	-- Do a Barrel Roll!
-								["g"] = {
-									{	-- Brushfire
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 1,	-- Brushfire
-									},
-									{	-- Fiery Tornado
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 4,	-- Fiery Tornado
-									},
-									{	-- Incendiary Cloud
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 3,	-- Incendiary Cloud
-									},
-									{	-- Lava Spew
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 2,	-- Lava Spew
-									},
-								},
-							},
+						["g"] = {
+							ach(5813, {	-- Do a Barrel Roll!
+								crit(1),	-- Brushfire
+								crit(2),	-- Lava Spew
+								crit(3),	-- Incendiary Cloud
+								crit(4),	-- Fiery Tornado
+							}),
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(70733),	-- Alysra's Razor
 							i(70734),	-- Greathelm of the Voracious Maw
@@ -424,32 +404,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
-						["groups"] = {
-							{	-- Bucket List
-								["achievementID"] = 5829,	-- Bucket List
-								["g"] = {
-									{	-- Beth'tilac's Lair
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 1,	-- Beth'tilac's Lair
-									},
-									{	-- Flamebreach
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 2,	-- Flamebreach
-									},
-									{	-- Path of Corruption
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 3,	-- Path of Corruption
-									},
-									{	-- Shatterstone
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 5,	-- Shatterstone
-									},
-									{	-- The Ridge of Ancient Flame
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 4,	-- The Ridge of Ancient Flame
-									},
-								},
-							},
+						["g"] = {
+							ach(5829, {	-- Bucket List
+								crit(1),	-- Beth'tilac's Lair
+								crit(2),	-- Flamebreach
+								crit(3),	-- Path of Corruption
+								crit(4),	-- The Ridge of Ancient Flame
+								crit(5),	-- Shatterstone
+							}),
 							i(152975),	-- Smoldering Treat (PET!)
 							i(71014),	-- Skullstealer Greataxe
 							i(71013),	-- Feeding Frenzy
@@ -469,10 +431,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
-						["groups"] = {
-							{	-- Share the Pain
-								["achievementID"] = 5830,	-- Share the Pain
-							},
+						["g"] = {
+							ach(5830),	-- Share the Pain
 							i(152977),	-- Vibrating Stone (PET!)
 							i(71312),	-- Gatecrasher
 							i(70915),	-- Shard of Torment
@@ -491,11 +451,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
-						["groups"] = {
-							{	-- Only the Penitent...
-								["achievementID"] = 5799,	-- Only the Penitent...
-								["description"] = "Group of 6 needed."
-							},
+						["g"] = {
+							ach(5799, {	-- Only the Penitent...
+								["description"] = "This achievement requires a group of 6.",
+							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
 							i(71681, {	-- Mantle of the Fiery Conqueror		
@@ -539,10 +498,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
-						["groups"] = {
-							{	-- Ragnar-O's
-								["achievementID"] = 5855,	-- Ragnar-O's
-							},
+						["g"] = {
+							ach(5855),	-- Ragnar-O's
 							i(71675, {	-- Helm of the Fiery Conqueror	
 								i(71272),	-- Cowl of the Cleansing Flame
 								i(71277),	-- Hood of the Cleansing Flame
@@ -585,13 +542,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 				},
 			}),
-			d(  2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["difficulties"] = { 5, 6 },
-				["groups"] = {
+				["g"] = {
 					n(-2, {	-- Vendors
 						n(54402, {	-- Lurah Wrathvine
 							["description"] = "Bring this vendor Crystallized Firestones from the bosses and the BoE and she'll upgrade it to the Heroic version.",
-							["groups"] = {
+							["g"] = {
 								i(71617, {	-- Crystallized Firestone
 									["description"] = "This item drops from the Firelands bosses. You can trade this with one of the BoEs below and she will upgrade it to the Heroic version attached below.",
 									["crs"] = {
@@ -603,7 +560,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 										52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 										52409,	-- Ragnaros
 									},
-									["groups"] = {
+									["g"] = {
 										i(68972, { 	-- Apparatus of Khaz'goroth
 											i(69113),	-- Apparatus of Khaz'goroth
 										}),
@@ -648,7 +605,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 					}),
-					n(-1, { 	-- Common Boss Drops
+					n(-1, {	-- Common Boss Drops
 						["crs"] = {
 							53691,	-- Shannox
 							52498,	-- Beth'tilac <The Red Widow>
@@ -658,7 +615,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 							52409,	-- Ragnaros
 						},
-						["groups"] = {
+						["g"] = {
 							i(71778),	-- Avool's Incendiary Shanker
 							i(71786),	-- Entrail Disgorger
 							i(71777),	-- Eye of Purification
@@ -671,13 +628,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
-						["groups"] = {		
-							{	-- Death from Above
-								["achievementID"] = 5821,	-- Death from Above
-							},
-							{	-- Heroic: Beth'tilac
-								["achievementID"] = 5807,	-- Heroic: Beth'tilac
-							},
+						["g"] = {		
+							ach(5821),	-- Death from Above
+							ach(5807),	-- Heroic: Beth'tilac
 							i(152976),	-- Cinderweb Egg (PET!)
 							i(71409),	-- Funeral Pyre
 							i(71406),	-- Mandible of Beth'tilac
@@ -697,13 +650,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(193, {	-- Lord Rhyolith
 						["creatureID"] = 52558,
-						["groups"] = {
-							{	-- Heroic: Lord Rhyolith
-								["achievementID"] = 5808,	-- Heroic: Lord Rhyolith
-							},
-							{	-- Not an Ambi-Turner
-								["achievementID"] = 5810,	-- Not an Ambi-Turner
-							},
+						["g"] = {
+							ach(5808),	-- Heroic: Lord Rhyolith
+							ach(5810),	-- Not an Ambi-Turner
 							i(71422),	-- Volcanospike
 							i(71414),	-- Arbalest of Erupting Fury
 							i(71421),	-- Flickering Cowl
@@ -721,31 +670,14 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(194, {	-- Alysrazor
 						["creatureID"] = 52530,
-						["groups"] = {
-							{	-- Heroic: Alysrazor
-								["achievementID"] = 5809,	-- Heroic: Alysrazor
-							},
-							{	-- Do a Barrel Roll!
-								["achievementID"] = 5813,	-- Do a Barrel Roll!
-								["g"] = {
-									{	-- Brushfire
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 1,	-- Brushfire
-									},
-									{	-- Fiery Tornado
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 4,	-- Fiery Tornado
-									},
-									{	-- Incendiary Cloud
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 3,	-- Incendiary Cloud
-									},
-									{	-- Lava Spew
-										["achievementID"] = 5813,	-- Do a Barrel Roll!
-										["criteriaID"] = 2,	-- Lava Spew
-									},
-								},
-							},
+						["g"] = {
+							ach(5813, {	-- Do a Barrel Roll!
+								crit(1),	-- Brushfire
+								crit(2),	-- Lava Spew
+								crit(3),	-- Incendiary Cloud
+								crit(4),	-- Fiery Tornado
+							}),
+							ach(5809),	-- Heroic: Alysrazor
 							i(71679, {	-- Chest of the Fiery Conqueror	
 								i(71530),	-- Robes of the Cleansing Flame
 								i(71535),	-- Vestment of the Cleansing Flame
@@ -790,35 +722,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(195, {	-- Shannox
 						["creatureID"] = 53691,
-						["groups"] = {
-							{	-- Bucket List
-								["achievementID"] = 5829,	-- Bucket List
-								["g"] = {
-									{	-- Beth'tilac's Lair
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 1,	-- Beth'tilac's Lair
-									},
-									{	-- Flamebreach
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 2,	-- Flamebreach
-									},
-									{	-- Path of Corruption
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 3,	-- Path of Corruption
-									},
-									{	-- Shatterstone
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 5,	-- Shatterstone
-									},
-									{	-- The Ridge of Ancient Flame
-										["achievementID"] = 5829,	-- Bucket List
-										["criteriaID"] = 4,	-- The Ridge of Ancient Flame
-									},
-								},
-							},
-							{	-- Heroic: Shannox
-								["achievementID"] = 5806,	-- Heroic: Shannox
-							},
+						["g"] = {
+							ach(5829, {	-- Bucket List
+								crit(1),	-- Beth'tilac's Lair
+								crit(2),	-- Flamebreach
+								crit(3),	-- Path of Corruption
+								crit(4),	-- The Ridge of Ancient Flame
+								crit(5),	-- Shatterstone
+							}),
+							ach(5806),	-- Heroic: Shannox
 							i(71678, {	-- Leggings of the Fiery Conqueror	
 								i(71529),	-- Legwraps of the Cleansing Flame
 								i(71534),	-- Leggings of the Cleansing Flame
@@ -863,13 +775,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(196, {	-- Baleroc, the Gatekeeper
 						["creatureID"] = 53494,
-						["groups"] = {
-							{	-- Heroic: Baleroc
-								["achievementID"] = 5805,	-- Heroic: Baleroc
-							},
-							{	-- Share the Pain
-								["achievementID"] = 5830,	-- Share the Pain
-							},
+						["g"] = {
+							ach(5805),	-- Heroic: Baleroc
+							ach(5830),	-- Share the Pain
 							i(71676, {	-- Gauntlets of the Fiery Conqueror	
 								i(71527),	-- Handwraps of the Cleansing Flame
 								i(71532),	-- Gloves of the Cleansing Flame
@@ -913,14 +821,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(197, {	-- Majordomo Staghelm
 						["creatureID"] = 52571,
-						["groups"] = {
-							{	-- Heroic: Majordomo Fandral Staghelm
-								["achievementID"] = 5804,	-- Heroic: Majordomo Fandral Staghelm
-							},
-							{	-- Only the Penitent...
-								["achievementID"] = 5799,	-- Only the Penitent...
-								["description"] = "Group of 6 needed."
-							},
+						["g"] = {
+							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
+							ach(5799, {	-- Only the Penitent...
+								["description"] = "This achievement requires a group of 6.",
+							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
 							i(71680, {	-- Shoulders of the Fiery Conqueror	
@@ -964,18 +869,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),			
 					e(198, {	-- Ragnaros
 						["creatureID"] = 52409,
-						["groups"] = {
-							{	-- Heroic: Ragnaros
-								["achievementID"] = 5803,	-- Heroic: Ragnaros
-								["g"] = {
-									{	-- Firelord
-										["titleID"] = 190,	-- Firelord
-									},
-								},
-							},
-							{	-- Ragnar-O's
-								["achievementID"] = 5855,	-- Ragnar-O's
-							},
+						["g"] = {
+							ach(5803, {	-- Heroic: Ragnaros
+								title(190),	-- Firelord
+							}),
+							ach(5855),	-- Ragnar-O's
 							i(71677, {	-- Crown of the Fiery Conqueror	
 								i(71528),	-- Cowl of the Cleansing Flame
 								i(71533),	-- Hood of the Cleansing Flame

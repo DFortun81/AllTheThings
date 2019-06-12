@@ -4,7 +4,10 @@
 _.Zones =
 {
 	i(155915, {	-- Special Duty Assignments
-		["groups"] = {
+		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
+		["collectible"] = false,
+		["races"] = HORDE_ONLY,
+		["g"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
@@ -55,6 +58,7 @@ _.Zones =
 			q(28560),	-- Warchief's Command: Ghostlands!
 			q(28571),	-- Warchief's Command: Hillsbrad Foothills!
 			q(49537),	-- Warchief's Command: Icecrown!
+			q(49538),	-- Warchief's Command: Jade Forest!
 			q(27721),	-- Warchief's Command: Mount Hyjal!
 			q(39201),	-- Warchief's Command: Netherstorm!
 			q(28494),	-- Warchief's Command: Northern Barrens!
@@ -82,12 +86,12 @@ _.Zones =
 			q(39180),	-- Warchief's Command: Zangarmarsh!
 			q(49534),	-- Warchief's Command: Zul'Drak!
 		},
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
-		["races"] = HORDE_ONLY,
 	}),
 	i(156474, {	-- Special Duty Assignments
-		["groups"] = {
+		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
+		["collectible"] = false,
+		["races"] = ALLIANCE_ONLY,
+		["g"] = {
 			--[[
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
@@ -96,10 +100,10 @@ _.Zones =
 			q(29391),	-- Guardians of Hyjal: Call of the Ancients
 			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
 			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			{
-				["questID"] = 28490,	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+			q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
 				["isBreadcrumb"] = true,
-			},
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
 			q(28709),	-- Hero's Call: Borean Tundra!
 			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
@@ -109,6 +113,10 @@ _.Zones =
 			q(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
 			q(39207),	-- Hero's Call: Grizzly Hills!
 			q(49555),	-- Hero's Call: Icecrown!
+			q(28567, {	-- Hero's Call: Loch Modan!
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
 			q(39202),	-- Hero's Call: Netherstorm!
 			q(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
@@ -126,31 +134,41 @@ _.Zones =
 			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
+			q(28562, {	-- Hero's Call: Westfall!
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(28565, {	-- Hero's Call: Wetlands!
 				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 			q(39181),	-- Hero's Call: Zangarmarsh!
 			q(49552),	-- Hero's Call: Zul'Drak!
 			q(29156),	-- The Troll Incursion
 			--
-			qa(26365, { 		-- Hero's Call: Redridge Mountains! (add'l QG 29611)
-				["groups"] = {
+			q(26365, {	-- Hero's Call: Redridge Mountains!
+				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+				["coord"] = { 85.6, 31.8, 84 },
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
+				["g"] = {
 					i(60689),	-- Belt of Unsolvable Problems
 					i(60690),	-- Doody Boots
 					i(131517),	-- Doody Shoes
 					i(60688),	-- Parker's Yardstick
 					i(60691),	-- Unfortunate Treads
 				},
-				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
 				["g"] = {
-					qa(49865, {	-- Cataclysm First Responder (Alliance)
+					q(49865, {	-- Cataclysm First Responder (Alliance)
 						["isBreadcrumb"] = true,
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qh(49851, {	-- Cataclysm First Responder (Horde)
+					q(49851, {	-- Cataclysm First Responder (Horde)
 						["isBreadcrumb"] = true,
+						["races"] = HORDE_ONLY,
 					}),
 				},
 				["itemID"] = 156477,	-- Special Duty Assignments
@@ -160,10 +178,12 @@ _.Zones =
 			}),
 			q(49864, {	-- Wars on Two Fronts [Pandaria]
 				["groups"] = {
-					qa(49866, {	-- To Pandaria! (Alliance)
+					q(49866, {	-- To Pandaria! (Alliance)
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-					qh(49852, {	-- To Pandaria! (Horde)
+					q(49852, {	-- To Pandaria! (Horde)
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 				},
@@ -171,8 +191,5 @@ _.Zones =
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 			}),
 		},
-		["description"] = "These can be obtained from any city or town.  Once you start questing in a zone then you can no longer pick these up.",
-		["collectible"] = false,
-		["races"] = ALLIANCE_ONLY,
 	}),
 };

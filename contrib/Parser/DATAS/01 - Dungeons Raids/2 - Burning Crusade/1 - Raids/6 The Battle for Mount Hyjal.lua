@@ -205,11 +205,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			n(-1, {	-- Common Boss Drops
 				["crs"] = {
-					1577,	-- Rage Winterchill
-					1578,	-- Anetheron
-					1579,	-- Kaz'rogal
-					1580,	-- Azgalor
-					1581,	-- Archimonde
+					17767,	-- Rage Winterchill
+					17808,	-- Anetheron
+					17888,	-- Kaz'rogal
+					17842,	-- Azgalor
+					17968,	-- Archimonde
 				},
 				["g"] = {
 					i(32285),	-- Design: Flashing Crimson Spinel

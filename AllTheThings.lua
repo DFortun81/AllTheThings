@@ -587,7 +587,7 @@ function app:PlayCompleteSound()
 		local t = app.Settings.AUDIO_COMPLETE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -602,7 +602,7 @@ function app:PlayFanfare()
 		local t = app.Settings.AUDIO_FANFARE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -612,7 +612,7 @@ function app:PlayRareFindSound()
 		local t = app.Settings.AUDIO_RAREFIND_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -622,7 +622,7 @@ function app:PlayRemoveSound()
 		local t = app.Settings.AUDIO_REMOVE_TABLE;
 		if t and type(t) == "table" then
 			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
+			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
 		end
 	end
 end
@@ -1571,7 +1571,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- Show the unobtainable source text
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
-						if j.u and not j.crs then
+						if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
 							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
 							break;
 						end
@@ -1830,6 +1830,52 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								end
 							end
 						end
+					end
+				end
+				
+				-- If the item is a relic, then let's compare against equipped relics.
+				if IsArtifactRelicItem(itemID) and app.Settings:GetTooltipSetting("Progress") then
+					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
+					if myArtifactData then
+						local progress, total = 0, 0;
+						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+						for itemID,artifactData in pairs(myArtifactData) do
+							local infoString;
+							for relicSlotIndex,relicData in pairs(artifactData) do
+								if relicData.relicType == relicType then
+									if infoString then
+										infoString = infoString .. " | " .. relicData.iLvl;
+									else
+										infoString = relicData.iLvl;
+									end
+									total = total + 1;
+									if relicData.iLvl > relicItemLevel then
+										progress = progress + 1;
+										infoString = infoString .. " " .. GetCompletionIcon(1);
+									else
+										infoString = infoString .. " " .. GetCompletionIcon();
+									end
+								end
+							end
+							if infoString then
+								local itemLink = select(2, GetItemInfo(itemID));
+								tinsert(info, 1, { 
+									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA, 
+									right = L["iLvl"] .. " " .. infoString,
+								});
+							end
+						end
+						if total > 0 then
+							group.total = total;
+							group.progress = progress;
+							group.g = {};
+							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+						end
+					else
+						group.collectible = true;
+						group.collected = false;
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
 					end
 				end
 			end
@@ -2836,15 +2882,17 @@ local function AttachTooltip(self)
 						-- Adventure Guide
 						gf = app:GetWindow("Prime").data.g[1];
 					elseif owner.tooltipText then
-						if owner.tooltipText == DUNGEONS_BUTTON then
-							-- Group Finder
-							gf = app:GetWindow("Prime").data.g[4];
-						elseif owner.tooltipText == BLIZZARD_STORE then
-							-- Shop
-							gf = app:GetWindow("Prime").data.g[15];
-						elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-							-- Achievements
-							gf = app:GetWindow("Prime").data.g[5];
+						if type(owner.tooltipText) == "string" then 
+							if owner.tooltipText == DUNGEONS_BUTTON then
+								-- Group Finder
+								gf = app:GetWindow("Prime").data.g[4];
+							elseif owner.tooltipText == BLIZZARD_STORE then
+								-- Shop
+								gf = app:GetWindow("Prime").data.g[15];
+							elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+								-- Achievements
+								gf = app:GetWindow("Prime").data.g[5];
+							end
 						end
 					end
 					if gf then
@@ -4015,7 +4063,13 @@ app.BaseHeirloomLevel = {
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
 		elseif key == "collected" then
-			return t.level <= (select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID)) or 0);
+			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
+			if t.level <= level then return true; end
+			level = select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID));
+			if level then
+				SetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, level);
+				if t.level <= level then return true; end
+			end
 		elseif key == "text" then
 			return t.link or ("Upgrade Level " .. t.level);
 		elseif key == "link" then
@@ -4125,8 +4179,9 @@ app.BaseHeirloom = {
 			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
 		elseif key == "g" then
 			if app.CollectibleHeirlooms then
-				local total = C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
+				local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
 				if total then
+					SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
 					local armorTokens = {
 						app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 						app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
@@ -8196,18 +8251,9 @@ function app:GetDataCache()
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
+			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
+			db.icon = "Interface\\Icons\\inv_misc_celebrationcake_01";
 			db.expanded = false;
-			db.text = EVENTS_LABEL;
-			db.collectible = false;
-			table.insert(g, db);
-		end
-		
-		-- Anniversary
-		if app.Categories.Anniversary then
-			db = app.CreateAchievement(12827, app.Categories.Anniversary);
-			db.expanded = false;
-			db.text = "WoW Anniversary";
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -9458,6 +9504,10 @@ end):Show();
 						setmetatable(clone, getmetatable(group));
 						group = clone;
 						
+						-- If relative to a difficultyID, then merge it into one.
+						local difficultyID = GetRelativeValue(group, "difficultyID");
+						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+						
 						-- If this is relative to a holiday, let's do something special
 						if GetRelativeField(group, "npcID", -3) then
 							if group.achievementID then
@@ -9508,6 +9558,8 @@ end):Show();
 							end
 						elseif group.key == "questID" then
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+						elseif group.key == "speciesID" then
+							MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
 						end
@@ -9559,6 +9611,39 @@ end):Show();
 						end
 						
 						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
+					end
+					
+					-- Check for timewalking difficulty objects
+					for i, group in ipairs(groups) do
+						if group.difficultyID and group.difficultyID == 24 and group.g then
+							-- Look for a Common Boss Drop header.
+							local cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == -1 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Common Boss Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+							
+							-- Look for a Zone Drop header.
+							cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == 0 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Zone Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+						end
 					end
 					
 					-- Swap out the map data for the header.
@@ -11222,8 +11307,33 @@ app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app:RegisterEvent("ARTIFACT_UPDATE");
 
 -- Define Event Behaviours
+app.events.ARTIFACT_UPDATE = function(...)
+	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
+	if itemID then
+		local count = C_ArtifactUI.GetNumRelicSlots();
+		if count and count > 0 then
+			local actArtifactData = GetDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			local myArtifactData = GetTempDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			for relicSlotIndex=1,count,1 do
+				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
+				local artifactData = {
+					["relicType"] = relicType,
+					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
+				};
+				myArtifactData[relicSlotIndex] = artifactData;
+				local existingArtifactData = artifactData[relicSlotIndex];
+				if not existingArtifactData then
+					actArtifactData[relicSlotIndex] = artifactData;
+				elseif existingArtifactData.iLvl < artifactData.iLvl then
+					existingArtifactData.iLvl = artifactData.iLvl;
+				end
+			end
+		end
+	end
+end
 app.events.VARIABLES_LOADED = function()
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
@@ -11270,6 +11380,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
+	GetDataMember("ArtifactRelicItemLevels", {});
 	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's lockouts.
@@ -11409,9 +11520,20 @@ app.events.VARIABLES_LOADED = function()
 		characters[app.GUID] = app.Me;
 	end
 	
+	-- Cache your character's artifact relic item level data.
+	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
+	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
+	if not myArtifactRelicItemLevels then
+		myArtifactRelicItemLevels = {};
+		artifactRelicItemLevels[app.GUID] = myArtifactRelicItemLevels;
+		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
+	end
+	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
+		"ArtifactRelicItemLevelsPerCharacter",
+		"ArtifactRelicItemLevels",
 		"Categories",
 		"Characters",
 		"CollectedArtifacts",

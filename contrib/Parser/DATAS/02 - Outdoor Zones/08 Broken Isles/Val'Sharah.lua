@@ -1865,148 +1865,146 @@ _.Zones =
 					}),
 				}),
 				n(-34,  {	-- World Quests
-					["g"] = {
-						n(-322,  {	-- Cloak
-							i(139074),	-- Dreamwalker's Cloak
-							i(121307),	-- Nightmare Shroud
-						}),
-						n(-3245, {	-- Night Dreamer Set
-							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
-							["g"] = {
-								i(139086),	-- Night Dreamer Crest
-								i(139091),	-- Night Dreamer Mantle
-								i(139089),	-- Night Dreamer Robe
-								i(139092),	-- Night Dreamer Bindings
-								i(139087),	-- Night Dreamer Handwraps
-								i(139085),	-- Night Dreamer Cord
-								i(139088),	-- Night Dreamer Leggings
-								i(139090),	-- Night Dreamer Slippers
-							},
-						}),
-						n(-3259, {	-- Terrorweave Set
-							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-							["g"] = {
-								i(121324),	-- Terrorweave Cowl
-								i(121329),	-- Terrorweave Pauldrons
-								i(121327),	-- Terrorweave Robe
-								i(121330),	-- Terrorweave Bracers
-								i(121325),	-- Terrorweave Gloves
-								i(121323),	-- Terrorweave Cinch
-								i(121326),	-- Terrorweave Leggings
-								i(121328),	-- Terrorweave Boots
-							},
-						}),
-						n(-3269, {	-- Dreadhide Set
-							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-							["g"] = {
-								i(121296),	-- Dreadhide Hood
-								i(121298),	-- Dreadhide Mantle
-								i(121297),	-- Dreadhide Chestguard
-								i(121292),	-- Dreadhide Bracers
-								i(121295),	-- Dreadhide Gloves
-								i(121299),	-- Dreadhide Girdle
-								i(121294),	-- Dreadhide Leggings
-								i(121293),	-- Dreadhide Boots
-							},
-						}),
-						n(-3268, {	-- Tranquil Bough Set
-							["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
-							["g"] = {
-								i(139070),	-- Tranquil Bough Hood
-								i(139072),	-- Tranquil Bough Spaulders
-								i(139071),	-- Tranquil Bough Vest
-								i(139066),	-- Tranquil Bough Wristwraps
-								i(139069),	-- Tranquil Bough Grips
-								i(139073),	-- Tranquil Bough Cinch
-								i(139068),	-- Tranquil Bough Pants
-								i(139067),	-- Tranquil Bough Footpads
-							},
-						}),
-						n(-3281, {	-- Bramblemail Set
-							["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
-							["g"] = {
-								i(139081),	-- Bramblemail Helm
-								i(139083),	-- Bramblemail Pauldrons
-								i(139084),	-- Bramblemail Hauberk
-								i(139078),	-- Bramblemail Bindings
-								i(139079),	-- Bramblemail Gloves
-								i(139077),	-- Bramblemail Belt
-								i(139082),	-- Bramblemail Greaves
-								i(139080),	-- Bramblemail Boots
-							},
-						}),
-						n(-3279, {	-- Vilescale Set
-							["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
-							["g"] = {
-								i(121319),	-- Vilescale Helm
-								i(121321),	-- Vilescale Shoulderguards
-								i(121322),	-- Vilescale Chain Shirt
-								i(121316),	-- Vilescale Bracers
-								i(121317),	-- Vilescale Gauntlets
-								i(121315),	-- Vilescale Cord
-								i(121320),	-- Vilescale Leggings
-								i(121318),	-- Vilescale Sabatons
-							},
-						}),
-						n(-3307, {	-- Nightsfall Set
-							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-							["g"] = {
-								i(139058),	-- Nightsfall Helmet
-								i(139060),	-- Nightsfall Shoulderplates
-								i(139055),	-- Nightsfall Breastplate
-								i(139062),	-- Nightsfall Vambraces
-								i(139056),	-- Nightsfall Gauntlets
-								i(139057),	-- Nightsfall Girdle
-								i(139059),	-- Nightsfall Legguards
-								i(139061),	-- Nightsfall Sabatons
-							},
-						}),
-						n(-3303, {	-- Wracksoul Set
-							["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
-							["g"] = {
-								i(121279),	-- Wracksoul Helm
-								i(121281),	-- Wracksoul Pauldrons
-								i(121276),	-- Wracksoul Chestplate
-								i(121283),	-- Wracksoul Bracers
-								i(121277),	-- Wracksoul Gauntlets
-								i(121278),	-- Wracksoul Girdle
-								i(121280),	-- Wracksoul Legplates
-								i(121282),	-- Wracksoul Stompers
-							},
-						}),
-						n(-387,  {	-- Relics
-							i(143682),	-- Viscous Terror
-						}),
-						q(41676, {	-- Work Order: Pump-Action Bandage Gun
-							["requireSkill"] = 202,	-- Engineering
-							["isWQ"] = 110,
-							["g"] = {
-								i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
-							},
-						}),
-						q(41646, {	-- Work Order: Silkweave Gloves
-							["requireSkill"] = 197,	-- Tailoring
-							["isWQ"] = 110,
-							["g"] = {
-								i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
-							},
-						}),
-						q(41640, {	-- Work Order: Warhide Mask
-							["requireSkill"] = 165,	-- Leatherworking
-							["isWQ"] = 110,
-							["g"] = {
-								i(137878),	-- Recipe: Warhide Mask (Rank 3)
-							},
-						}),
-						q(41670, {	-- Work Order: Word of Agility
-							["requireSkill"] = 333,	-- Enchanting
-							["isWQ"] = 110,
-							["qg"] = 106901,	-- Sylvia Hartshorn
-							["g"] = {
-								i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
-							},
-						}),
-					},
+					n(-322,  {	-- Cloak
+						i(139074),	-- Dreamwalker's Cloak
+						i(121307),	-- Nightmare Shroud
+					}),
+					n(-3245, {	-- Night Dreamer Set
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionendgame_c_01",
+						["g"] = {
+							i(139086),	-- Night Dreamer Crest
+							i(139091),	-- Night Dreamer Mantle
+							i(139089),	-- Night Dreamer Robe
+							i(139092),	-- Night Dreamer Bindings
+							i(139087),	-- Night Dreamer Handwraps
+							i(139085),	-- Night Dreamer Cord
+							i(139088),	-- Night Dreamer Leggings
+							i(139090),	-- Night Dreamer Slippers
+						},
+					}),
+					n(-3259, {	-- Terrorweave Set
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+						["g"] = {
+							i(121324),	-- Terrorweave Cowl
+							i(121329),	-- Terrorweave Pauldrons
+							i(121327),	-- Terrorweave Robe
+							i(121330),	-- Terrorweave Bracers
+							i(121325),	-- Terrorweave Gloves
+							i(121323),	-- Terrorweave Cinch
+							i(121326),	-- Terrorweave Leggings
+							i(121328),	-- Terrorweave Boots
+						},
+					}),
+					n(-3269, {	-- Dreadhide Set
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+						["g"] = {
+							i(121296),	-- Dreadhide Hood
+							i(121298),	-- Dreadhide Mantle
+							i(121297),	-- Dreadhide Chestguard
+							i(121292),	-- Dreadhide Bracers
+							i(121295),	-- Dreadhide Gloves
+							i(121299),	-- Dreadhide Girdle
+							i(121294),	-- Dreadhide Leggings
+							i(121293),	-- Dreadhide Boots
+						},
+					}),
+					n(-3268, {	-- Tranquil Bough Set
+						["icon"] = "Interface\\Icons\\inv_helm_leather_legionendgame_c_01",
+						["g"] = {
+							i(139070),	-- Tranquil Bough Hood
+							i(139072),	-- Tranquil Bough Spaulders
+							i(139071),	-- Tranquil Bough Vest
+							i(139066),	-- Tranquil Bough Wristwraps
+							i(139069),	-- Tranquil Bough Grips
+							i(139073),	-- Tranquil Bough Cinch
+							i(139068),	-- Tranquil Bough Pants
+							i(139067),	-- Tranquil Bough Footpads
+						},
+					}),
+					n(-3281, {	-- Bramblemail Set
+						["icon"] = "Interface\\Icons\\inv_helmet_mail_legionendgame_c_01",
+						["g"] = {
+							i(139081),	-- Bramblemail Helm
+							i(139083),	-- Bramblemail Pauldrons
+							i(139084),	-- Bramblemail Hauberk
+							i(139078),	-- Bramblemail Bindings
+							i(139079),	-- Bramblemail Gloves
+							i(139077),	-- Bramblemail Belt
+							i(139082),	-- Bramblemail Greaves
+							i(139080),	-- Bramblemail Boots
+						},
+					}),
+					n(-3279, {	-- Vilescale Set
+						["icon"] = "Interface\\Icons\\inv_helm_cloth_legionquest100_b_01",
+						["g"] = {
+							i(121319),	-- Vilescale Helm
+							i(121321),	-- Vilescale Shoulderguards
+							i(121322),	-- Vilescale Chain Shirt
+							i(121316),	-- Vilescale Bracers
+							i(121317),	-- Vilescale Gauntlets
+							i(121315),	-- Vilescale Cord
+							i(121320),	-- Vilescale Leggings
+							i(121318),	-- Vilescale Sabatons
+						},
+					}),
+					n(-3307, {	-- Nightsfall Set
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+						["g"] = {
+							i(139058),	-- Nightsfall Helmet
+							i(139060),	-- Nightsfall Shoulderplates
+							i(139055),	-- Nightsfall Breastplate
+							i(139062),	-- Nightsfall Vambraces
+							i(139056),	-- Nightsfall Gauntlets
+							i(139057),	-- Nightsfall Girdle
+							i(139059),	-- Nightsfall Legguards
+							i(139061),	-- Nightsfall Sabatons
+						},
+					}),
+					n(-3303, {	-- Wracksoul Set
+						["icon"] = "Interface\\Icons\\inv_helm_plate_legionendgame_c_01",
+						["g"] = {
+							i(121279),	-- Wracksoul Helm
+							i(121281),	-- Wracksoul Pauldrons
+							i(121276),	-- Wracksoul Chestplate
+							i(121283),	-- Wracksoul Bracers
+							i(121277),	-- Wracksoul Gauntlets
+							i(121278),	-- Wracksoul Girdle
+							i(121280),	-- Wracksoul Legplates
+							i(121282),	-- Wracksoul Stompers
+						},
+					}),
+					n(-387,  {	-- Relics
+						i(143682),	-- Viscous Terror
+					}),
+					q(41676, {	-- Work Order: Pump-Action Bandage Gun
+						["requireSkill"] = 202,	-- Engineering
+						["isWQ"] = 110,
+						["g"] = {
+							i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
+						},
+					}),
+					q(41646, {	-- Work Order: Silkweave Gloves
+						["requireSkill"] = 197,	-- Tailoring
+						["isWQ"] = 110,
+						["g"] = {
+							i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
+						},
+					}),
+					q(41640, {	-- Work Order: Warhide Mask
+						["requireSkill"] = 165,	-- Leatherworking
+						["isWQ"] = 110,
+						["g"] = {
+							i(137878),	-- Recipe: Warhide Mask (Rank 3)
+						},
+					}),
+					q(41670, {	-- Work Order: Word of Agility
+						["requireSkill"] = 333,	-- Enchanting
+						["isWQ"] = 110,
+						["qg"] = 106901,	-- Sylvia Hartshorn
+						["g"] = {
+							i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
+						},
+					}),
 				}),
 				n(0,    {	-- Zone Drops (Need to change this to list crs individually because not all items drop from all of those mobs)
 					["g"] = {
@@ -2277,43 +2275,41 @@ _.Zones =
 					},
 				}),
 				n(-40,  {	-- Legacy
-					["g"] = {
-						n(-4, {	-- Achievements
-							un(2, ach(11139, {	-- Field Medic! 
-								["g"] = {
-									un(39, title(340, {	-- TITLE: Field Medic!
-										["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-										["g"] = {
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
-												["itemID"] = 139527,		-- Bloody Plea
-												--["questID"] = 42308,		-- Bloody Plea (Quest)
-												["description"] = "Furbolgs in southern Val'sharah",
-												["qgs"] = {93577, 91288}
-											},
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 5, 		-- Bloody Request (Criteria)
-												["itemID"] = 139528,		-- Bloody Request
-												--["questID"] = 42309,		-- Bloody Request (Quest)
-												["description"] = "Grizzleweald (68, 73) in Val'sharah",
-												["qgs"] = {109045}
-											},
-											{
-												["achievementID"] = 11139,	-- Field Medic (Achievement)
-												["criteriaID"] = 10, 		-- Fevered Note (Criteria)
-												["itemID"] = 139526,		-- Fevered Note
-												--["questID"] = 42303,		-- Fevered Note (Quest)
-												["description"] = "Southern Val'sharah",
-												["qgs"] = {108675}
-											}
+					n(-4, {	-- Achievements
+						un(2, ach(11139, {	-- Field Medic! 
+							["g"] = {
+								un(39, title(340, {	-- TITLE: Field Medic!
+									["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
+									["g"] = {
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 3, 		-- Bloody Plea (Criteria)
+											["itemID"] = 139527,		-- Bloody Plea
+											--["questID"] = 42308,		-- Bloody Plea (Quest)
+											["description"] = "Furbolgs in southern Val'sharah",
+											["qgs"] = {93577, 91288}
 										},
-									})),
-								},
-							})),
-						}),
-					},
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 5, 		-- Bloody Request (Criteria)
+											["itemID"] = 139528,		-- Bloody Request
+											--["questID"] = 42309,		-- Bloody Request (Quest)
+											["description"] = "Grizzleweald (68, 73) in Val'sharah",
+											["qgs"] = {109045}
+										},
+										{
+											["achievementID"] = 11139,	-- Field Medic (Achievement)
+											["criteriaID"] = 10, 		-- Fevered Note (Criteria)
+											["itemID"] = 139526,		-- Fevered Note
+											--["questID"] = 42303,		-- Fevered Note (Quest)
+											["description"] = "Southern Val'sharah",
+											["qgs"] = {108675}
+										}
+									},
+								})),
+							},
+						})),
+					}),
 				}),
 			},				
 		}),	

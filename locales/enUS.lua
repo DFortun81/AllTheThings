@@ -88,6 +88,14 @@ AllTheThings.L = {
 	["TOY_ID"] = "Toy ID";
 	["ILLUSION_ID"] = "Illusion ID";
 	["VISUAL_ID"] = "Visual ID";
+	["iLvl"] = "iLvl";
+	
+	-- Artifact Relic Completion
+	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
+	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
+	["NOT_TRADEABLE"] = "Not Tradeable";
+	["TRADEABLE"] = "Tradeable";
+	
 	
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\AllTheThings\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
@@ -3243,6 +3251,7 @@ AllTheThings.L = {
 		[298963] = "Weathered Nazmani Tablet",
 		[298965] = "Cracked Tablet",
 		[299073] = "Fractured Tablet",
+		[307265] = "Wanted Poster",
 		[310709] = "Waterlogged Chest",	-- New Chest in Elywynn since 8.1
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
@@ -3423,8 +3432,8 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
-		{1, "|CFFFF0000With 7.3.2, Blizzard's shifted loot from Princess to various bosses.  In the process made this item no longer drop. |r", "BRD Broken Loot (45)"}; -- 45
+		{1, "|CFFFF0000With 7.3.2 & 8.0 Blizzard's Loot changes made several Items unable to drop.  Currently affects Items from Gruul (BC), Angerforge (BRD) & Warpwood (DM West). |r", "Broken Loot (45)"}; -- 45
 		{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
+	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

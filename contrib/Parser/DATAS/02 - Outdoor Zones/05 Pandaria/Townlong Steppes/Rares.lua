@@ -97,11 +97,14 @@ _.Zones =
 								i(90724),	-- Spriggin's Sproggin' Leggin'
 							}),
 						}),
-						n(66938, {	-- Odd'nirok
-							i(90171, {	-- Odd'nirok's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+						n(66938, {	-- Odd'nirok <Seer of Kril'mandar>
+							["coord"] = { 42.3, 92.67, 388 },
+							["groups"] = {
+								i(90171, {	-- Odd'nirok's Clamshell
+									i(90172),	-- Clamshell Band
+									i(90087),	-- Lobstmourne
+								}),
+							},
 						}),
 						n(50791, {	-- Siltriss the Sharpener
 							i(87623),	-- Razor-Sharp Chitin Choker

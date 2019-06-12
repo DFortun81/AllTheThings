@@ -17,6 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 44415,	-- Spirit of Agamaggan
 					["g"] = {
 						i(65968),	-- Agamaggan-Blessed Greaves
+						i(66007),	-- Agamaggan's Silent Tear
 						i(65991),	-- Boots of the Noble Path
 						i(65944),	-- Charlga's Breastplate
 						i(65918),	-- Agamaggan's Gift

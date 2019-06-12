@@ -5,8 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(303, { 	-- Gate of the Setting Sun
 		["lvl"] = 88,
-		["mapID"] = 437,
-		["maps"] = { 438 },
+		["maps"] = { 437, 438 },
 		["groups"] = {
 			n(-17, {	-- Quests 
 				q(31363),	-- Lighting the Way

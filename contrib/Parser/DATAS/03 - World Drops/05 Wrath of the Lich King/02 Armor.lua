@@ -13,14 +13,6 @@ _.WorldDrops =
 					i(37767),	-- Ryft's Deathgaze
 					i(37754),	-- Shimmersteel Hood
 					i(37793),	-- Skullcage of Eternal Terror
-					-- [removed non-world drops below]
-					--i(44732),	-- Azure Dragonleather Helm
-					--i(35639),	-- Brighthelm of Guarding
-					--i(44695),	-- Corroded Faceguard
-					--i(45435),	-- Cowl of the Absolute
-					--i(37857),	-- Helm of the Lightning Halls
-					--i(45107),	-- Iron Riveted War Helm
-					--i(44667),	-- Mammoth-Hair Crown
 				}),
 				filter(51, {	-- Neck
 					{	-- Draconic Choker of Ferocity
@@ -84,20 +76,6 @@ _.WorldDrops =
 					i(37779),	-- Nixod's Chain-Threshed Spaulders
 					i(44312),	-- Wapach's Spaulders of Solidarity
 					i(37772),	-- Wub's Electrospike Spaulders
-					-- [removed non-world drops below]
-					--i(44685),	-- Calcified Web Spaulders
-					--i(37115),	-- Crusader's Square Pauldrons
-					--i(37673),	-- Dark Runic Mantle
-					--i(37116),	-- Epaulets of Market Row
-					--i(40439),	-- Mantle of the Eternal Sentinel
-					--i(39310),	-- Mantle of the Extensive Mind
-					--i(50020),	-- Raging Behemoth's Shoulderplates
-					--i(37196),	-- Runecaster's Mantle
-					--i(44672),	-- Seal-Fur Spaulders
-					--i(35580),	-- Skein Woven Mantle
-					--i(40305),	-- Spaulders of Egotism
-					--i(35616),	-- Spored Tendrils Spaulders
-					--i(50449),	-- Stiffened Corpse Shoulderpads
 				}),
 				n(-322, {	-- Back
 					i(36411),	-- Brawler's Cape
@@ -117,18 +95,6 @@ _.WorldDrops =
 					i(36406),	-- Wayfarer's Cloak
 					i(36415),	-- Vintage Satin Cloak
 					i(37756),	-- Zoe's Comforting Cape
-					-- [removed non-world drops below]
-					--i(45493),	-- Asimov's Drape
-					--i(37647),	-- Cloak of Bloodied Waters
-					--i(47089),	-- Cloak of Displacement
-					--i(45322),	-- Cloak of the Iron Council
-					--i(47257),	-- Cloak of the Untamed Predator
-					--i(46970),	-- Drape of the Untamed Predator
-					--i(44687),	-- Loque'Nahak's Pelt
-					--i(37799),	-- Reanimator's Cloak
-					--i(45704),	-- Shawl of the Shattered Giant
-					--i(47291),	-- Shroud of Displacement
-					--i(37197),	-- Tattered Castle Drape
 				}),
 				n(-323, {	-- Chest
 					i(37745),	-- Greenhealer's Garb
@@ -136,22 +102,6 @@ _.WorldDrops =
 					i(37770),	-- Bulge-Concealing Breastplate
 					i(37780),	-- Condor-Bone Chestguard
 					i(37792),	-- Agin's Crushing Carapace
-					-- [removed non-world drops below]
-					--i(37800),	-- Aviary Guardsman's Hauberk
-					--i(50038),	-- Carapace of Forgotten Kings
-					--i(44668),	-- Egg-Warming Blanket
-					--i(44666),	-- Fumblub's Seat Cushion
-					--i(50001),	-- Ikfirus' Sack of Wonder
-					--i(45167),	-- Lifeforge Breastplate
-					--i(37672),	-- Patina-Coated Breastplate
-					--i(45237),	-- Phaelia's Vestments of the Sprouting Seed
-					--i(51958),	-- Pristine Glowbear Pelt
-					--i(44697),	-- Val'kyr Vestments
-					--i(37587),	-- Ymirjar Physician's Robe
-				}),
-				n(-325, {	-- Tabard
-					-- [removed non-world drops below]
-					--i(52252),	-- Tabard of the Lightbringer
 				}),
 				n(-326, {	-- Wrist
 					i(39235),	-- Bone-Framed Bracers
@@ -160,45 +110,6 @@ _.WorldDrops =
 					i(37766),	-- Bracers of Unmitigated Larceny
 					i(37760),	-- Cracklefire Wristguards
 					i(37771),	-- Wristguards of Verdant Recovery
-					-- [removed non-world drops below]
-					--i(44691),	-- Aotona's Collar
-					--i(45680),	-- Armbands of the Construct
-					--i(45316),	-- Armbraces of the Vibrant Flame
-					--i(40736),	-- Armguard of the Tower Archer
-					--i(37590),	-- Bands of Fading Light
-					--i(40739),	-- Bands of the Great Tree
-					--i(37365),	-- Bands of the Sky Ring
-					--i(35654),	-- Bindings of the Bastille
-					--i(36977),	-- Bindings of the Construct
-					--i(46009),	-- Bindings of the Depths
-					--i(40338),	-- Bindings of Yearning
-					--i(40734),	-- Bracers of Dalaran's Parapets
-					--i(45301),	-- Bracers of the Smothering Inferno
-					--i(37891),	-- Cast Iron Shackles
-					--i(45291),	-- Combustion Bracers
-					--i(50175),	-- Crypt Keeper's Bracers
-					--i(40741),	-- Cuffs of the Shadow Ascendant
-					--i(35640),	-- Darkweb Bindings
-					--i(37069),	-- Dragonflayer Seer's Bindings
-					--i(37366),	-- Drake-Champion's Bracers
-					--i(44696),	-- Giant's Toewrap
-					--i(35615),	-- Glowworm Cavern Bindings
-					--i(44674),	-- Ichor-Stained Wraps
-					--i(37117),	-- King's Square Bracers
-					--i(40737),	-- Pigmented Clan Bindings
-					--i(39283),	-- Putrescent Bands
-					--i(35682),	-- Rune Giant Bindings
-					--i(40282),	-- Slime Stream Bands
-					--i(35665),	-- Soothing Lichen Wraps
-					--i(35593),	-- Steel Bear Trap Bracers
-					--i(37000),	-- Storming Vortex Bracers
-					--i(49994),	-- The Lady's Brittle Bracers
-					--i(35579),	-- Vrykul Shackles
-					--i(44669),	-- Worgen-Scored Shackles
-					--i(40740),	-- Wraps of the Astral Traveler
-					--i(40733),	-- Wristbands of the Sentinel Huntress
-					--i(40738),	-- Wristwraps of the Cutthroat
-					--i(40735),	-- Zartson's Jungle Vambraces
 				}),
 				n(-327, {	-- Hands
 					i(37789),	-- Gauntlets of Disembowelment
@@ -206,19 +117,6 @@ _.WorldDrops =
 					i(37795),	-- Grips of the Valiant Champion
 					i(37781),	-- Grips of the Warming Heart
 					i(37759),	-- Rhie-Ay's Clutching Gauntlets
-					-- [removed non-world drops below]
-					--i(37858),	-- Awakened Handguards
-					--i(40302),	-- Benefactor's Gauntlets
-					--i(44649),	-- Crystalbark's Toenail
-					--i(44686),	-- Ethereal Terror Handwraps
-					--i(40362),	-- Gloves of Fast Reactions
-					--i(39733),	-- Gloves of Token Respect
-					--i(45927),	-- Handwraps of Resonance
-					--i(37671),	-- Refined Ore Gloves
-					--i(44675),	-- Rock-Giant's Pinky Cover
-					--i(39194),	-- Rusted-Link Spiked Gauntlets
-					--i(37625),	-- Web Winder Gloves
-					--i(40347),	-- Zeliek's Gauntlets
 				}),
 				n(-328, {	-- Waist
 					i(37790),	-- Belt of Crystalline Tears
@@ -228,21 +126,6 @@ _.WorldDrops =
 					i(44309),	-- Sash of Jordan
 					i(37761),	-- Shimmerthread Girdle
 					i(37773),	-- Shock-Inducing Girdle
-					-- [removed non-world drops below]
-					--i(37648),	-- Belt of Tasseled Lanterns
-					--i(36978),	-- Ley-Whelphide Belt
-					--i(50015),	-- Belt of the Blood Nova
-					--i(50451),	-- Belt of the Lonely Noble
-					--i(45975),	-- Cable of the Metrognome
-					--i(35653),	-- Girdle of the Mystical Prison
-					--i(45709),	-- Nimble Climber's Belt
-					--i(50069),	-- Professor's Bloodied Smock
-					--i(36997),	-- Sash of the Hardened Watcher
-					--i(35594),	-- Snowmelt Silken Cinch
-					--i(44670),	-- Soul-Sealed Belt
-					--i(39762),	-- Torn Web Wrapping
-					--i(37243),	-- Treasure Seeker's Belt
-					--i(37801),	-- Waistguard of the Risen Knight
 				}),
 				n(-329, {	-- Legs
 					i(37774),	-- Leggings of Aqueous Dissolution
@@ -251,34 +134,12 @@ _.WorldDrops =
 					i(37768),	-- Leggings of Violent Exsanguination
 					i(37743),	-- Legguards of Brutalization
 					i(37786),	-- Legguards of the Forlorn Seas
-					-- [removed non-world drops below]
-					--i(37890),	-- Chain Gang Legguards
-					--i(45504),	-- Darkcore Leggings
-					--i(44677),	-- Eternal Observer's Legplates
-					--i(44671),	-- Highlord's Padded Legguards
-					--i(50450),	-- Leggings of Dubious Charms
-					--i(45468),	-- Leggings of Lost Love
-					--i(45274),	-- Leggings of the Stoneweaver
-					--i(45141),	-- Proto-Hide Leggings
-					--i(36976),	-- Ring-Lord's Leggings
-					--i(44676),	-- Syreian's Leggings
 				}),
 				n(-330, {	-- Feet
 					i(37070),	-- Tundra Wolf Boots
 					i(37744),	-- Horrorblood Treads
 					i(37752),	-- Sandals of Broken Dreams
 					i(37763),	-- Treads of the Purifier
-					-- [removed non-world drops below]
-					--i(40558),	-- Arcanic Tramplers
-					--i(37068),	-- Berserker's Sabatons
-					--i(40246),	-- Boots of Impetuous Ideals
-					--i(40270),	-- Boots of Septic Wounds
-					--i(36999),	-- Boots of the Terrestrial Guardian
-					--i(39717),	-- Inexorable Sabatons
-					--i(40206),	-- Iron-Spring Jumpers
-					--i(44673),	-- Mammoth-Riding Boots
-					--i(40187),	-- Poignant Sabatons
-					--i(35641),	-- Scytheclaw Boots
 				}),
 				filter(52, {	-- Finger
 					{	-- Bouquet Ring

@@ -5,7 +5,10 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
-			["groups"] = {
+			["achievementID"] = 4825,
+			["description"] = "|cff66ccffVashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.|r",
+			["lvl"] = 80,
+			["g"] = {
 				n(-4,  {	-- Achievements
 					ach(5318, 5319),	-- 20,000 Leagues Under the Sea(Vashj'ir) [A] / [H]
 					--a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
@@ -37,13 +40,15 @@ _.Zones =
 					ach(5452),		-- Visions of Vashj'ir Past
 				}),
 				m(204, {	-- Abyssal Depths
-					["groups"] = {			
+					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
+					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+					["g"] = {			
 						n(-228, {	-- Flight Paths
 							fp(524, {	-- Daybreak Cove, Vashj'ir
-								["coord"]	= { 56.8, 75.4 },
+								["coord"]	= { 56.8, 75.4, 204 },
 							}),
 							fp(526, {	-- Tenebrous Cavern, Vashj'ir
-								["coord"]	= { 53.8, 59.6 },
+								["coord"]	= { 53.8, 59.6, 204 },
 							}),
 						}),
 						n(-17,  {	-- Quests					
@@ -271,25 +276,23 @@ _.Zones =
 							]]--
 						}),
 						n(0,    {	-- Zone Drop
-							{	-- Technique: Origami Slime
-								["itemID"] = 65649,	--	-- Technique: Origami Slime
-							},
+							i(65649),	-- Technique: Origami Slime
 						}),
 					},
-					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
-					["description"] = "|cff66ccffAbyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.|r",
 				}),
 				m(201, {	-- Kelp'thar Forest
-					["groups"] = {
+					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
+					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+					["g"] = {
 						n(-228, {	-- Flight Paths
 							fp(607, {	-- Sandy Beach, Vashj'ir
-								["coord"] = { 42.4, 66.2 },
+								["coord"] = { 42.4, 66.2, 201 },
 							}),
 							fp(609, {	-- Sandy Beach, Vashj'ir
-								["coord"] = { 49.2, 87.8 },
+								["coord"] = { 49.2, 87.8, 201 },
 							}),
 							fp(521, {	-- Smuggler's Scar, Vashj'ir
-								["coord"] = { 56.2, 31 },
+								["coord"] = { 56.2, 31.0, 201 },
 							}),
 						}),
 						n(-17,  {	-- Quests
@@ -621,43 +624,41 @@ _.Zones =
 							}),
 						}),
 						n(0,    {	-- Zone Drop
-							{	-- Technique: Origami Slime
-								["itemID"] = 65649,	--	-- Technique: Origami Slime
-							},
+							i(65649),	-- Technique: Origami Slime
 						}),
 					},
-					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
-					["description"] = "|cff66ccffKelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.|r",
 				}),
 				m(205, {	-- Shimmering Expanse
-					["groups"] = {
+					["description"] = "|cff66ccffThe Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.|r",
+					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+					["g"] = {
 						n(-228, {	-- Flight Paths
 							fp(525, {	-- Legion's Rest, Vashj'ir
-								["coord"] = { 50.8, 63.4 },
+								["coord"] = { 50.8, 63.4, 205 },
 							}),
 							fp(606, {	-- Sandy Beach, Vashj'ir (Alliance - Flight Master)
-								["coord"] = { 57, 17 },
+								["coord"] = { 57.0, 17.0, 205 },
 							}),
 							fp(608, {	-- Sandy Beach, Vashj'ir (Horde - Flight Master)
-								["coord"] = { 61, 28.2 },
+								["coord"] = { 61.0, 28.2, 205 },
 							}),
 							fp(522, {	-- Silver Tide Hollow, Vashj'ir
-								["coord"] = { 49.4, 41.2 },
+								["coord"] = { 49.4, 41.2, 205 },
 							}),
 							fp(610, {	-- Stygian Bounty, Vashj'ir (Horde - Flight Master)
-								["coord"] = { 64.8, 68 },
+								["coord"] = { 64.8, 68.0, 205 },
 							}),
 							fp(612, {	-- Stygian Bounty, Vashj'ir (Horde - Seahorse)
-								["coord"] = { 49.4, 65.6 },
+								["coord"] = { 49.4, 65.6, 205 },
 							}),
 							fp(523, {	-- Tranquil Wash Hollow, Vashj'ir
-								["coord"] = { 48.6, 57.4 },
+								["coord"] = { 48.6, 57.4, 205 },
 							}),
 							fp(605, {	-- Voldrin's Hold, Vashj'ir (Alliance - Flight Master)
-								["coord"] = { 69.4, 75.2 },
+								["coord"] = { 69.4, 75.2, 205 },
 							}),
 							fp(611, {	-- Voldrin's Hold, Vashj'ir (Alliance - Seahorse)
-								["coord"] = { 57., 75.2 },
+								["coord"] = { 57.0, 75.2, 205 },
 							}),
 						}),
 						n(-17,  {	-- Quests
@@ -1172,13 +1173,8 @@ _.Zones =
 							},
 						}),
 					},
-					["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
-					["description"] = "|cff66ccffThe Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.|r",
 				}),	
 			},
-			["lvl"] = 80,	
-			["achievementID"] = 4825,
-			["description"] = "|cff66ccffVashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.|r",				
 		}),
 	}),
 };

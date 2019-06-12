@@ -6,7 +6,7 @@ _.WorldDrops =
 	{
 		["groups"] = {
 			i(29739),	-- Arcane Tome
-			i(29740),	-- Fel Arnament
+			i(29740),	-- Fel Armament
 		},
 		["tierID"] = 2
 	},

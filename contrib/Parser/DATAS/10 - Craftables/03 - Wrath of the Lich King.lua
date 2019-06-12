@@ -613,6 +613,13 @@ _.Craftables =
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
+			filter(113, {	-- Bags
+				i(38347),			-- Mammoth Mining Bag
+				i(38399),			-- Trapper's Traveling Pack
+				i(44446),			-- Pack of Endless Pockets
+				un(7, i(44447)),	-- Dragonscale Ammo Pouch
+				un(7, i(44448)),	-- Nerubian Reinforced Quiver
+			}),
 			n(-322, { 	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds
 				i(41238),	-- Cloak of Tormented Skies

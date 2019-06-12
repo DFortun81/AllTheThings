@@ -1431,6 +1431,7 @@ _.NeverImplemented =
 		filter(113, {	-- Bags
 			un(1, i(130943)),	-- Reusable Tote Bag
 			un(1, i(166699)),	-- Desert Rucksack
+			un(1, i(38307)),	-- Crafty's Bottomless Inscription Bag
 		}),
 		n(-650, {	-- Quest Item
 			un(1, i(142362)),	-- zzz old fel-etched bone
@@ -2724,4 +2725,5 @@ m(465),	-- Le Glas
 m(516),	-- Isle of Thunder (One of last initial scenaraio)
 m(892),	-- Azuremyst Isle (Argus Opening)
 m(893),	-- Azuremyst Isle (Argus Opening)
+m(933),	-- Forge of Souls (Lightbound Draenei scenario map)
 };

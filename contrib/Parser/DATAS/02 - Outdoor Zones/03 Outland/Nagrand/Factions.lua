@@ -128,8 +128,9 @@ _.Zones =
 					}),
 				},
 			}),
-			h(faction(941, {	-- The Mag'har
+			faction(941, {	-- The Mag'har
 				["creatureID"] = 20241,	-- Provisioner Nasela <Mag'har Quartermaster>
+				["races"] = HORDE_ONLY,
 				["g"] = {
 					h(ach(901)),	-- Mag'har of Draenor
 					n(-17,  {	-- Quests
@@ -175,9 +176,10 @@ _.Zones =
 						})),
 					}),
 				},
-			})),
-			a(faction(978, {	-- Kurenai
+			}),
+			faction(978, {	-- Kurenai
 				["creatureID"] = 20240,	-- Trader Narasu <Kurenai Quartermaster>
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					a(ach(899)),	-- Oh My, Kurenai
 					n(-17, {	-- Quests
@@ -223,7 +225,7 @@ _.Zones =
 						})),
 					}),
 				},
-			})),
+			}),
 		}),
 	}),
 };

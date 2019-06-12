@@ -5,18 +5,14 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(468, {	-- Ammen Vale
-			["groups"] = {
-				{	-- Pet Battle
-					["npcID"] = -25,	-- Pet Battle
-					["f"] = 101,		-- Battle Pets
-					["g"] = {
-						{	-- Grey Moth
-							["speciesID"] = 464,	-- Grey Moth
-							["crs"] = { 62050 },	-- Grey Moth
-						},
-					},
+			n(-25, {	-- Pet Battle
+				["f"] = 101,	-- Battle Pets
+				["g"] = {
+					p(464, {	-- Grey Moth
+						["crs"] = { 62050 },	-- Grey Moth
+					}),
 				},
-			},
+			}),
 		}),
 	}),
 };

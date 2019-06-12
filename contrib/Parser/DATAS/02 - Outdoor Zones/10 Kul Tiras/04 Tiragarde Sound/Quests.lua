@@ -449,6 +449,9 @@ _.Zones =
 						a(q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
 							["qg"] = 128927,	-- Taelia
 							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends" [Alliance Only]
+							["groups"] = {
+								i(155040),	-- Freebooter Shoulderpads
+							},
 							["isBreadcrumb"] = true,
 						})),
 						a(q(49239, {	-- Dress to Impress [Alliance Only]

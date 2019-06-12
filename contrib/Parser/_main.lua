@@ -45,6 +45,7 @@ local DifficultyDB = {
 	[15] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
 	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
 	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
+	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event
 	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
 	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
@@ -360,6 +361,9 @@ WOD_CRAFTED_ITEM = function(id)
 		}
 	};
 end
+TIMEWALKING_DUNGEON_CREATURE_IDS = {};
+TIMEWALKING_DUNGEON_MAP_IDS = {};
+POST_PROCESSING_FUNCTIONS = {};
 
 -- Construct a commonly formatted object.
 struct = function(field, id, t)
@@ -469,6 +473,9 @@ merge = function(...)
 	end
 	return t;
 end
+isarray = function(t)
+	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
 
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -562,7 +569,37 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
 inst = function(id, t)									-- Create an INSTANCE Object
-	return struct("instanceID", id, t);
+	t = struct("instanceID", id, t);
+	
+	-- Look for the Timewalking difficulty
+	local groups = t.groups or t.g;
+	if groups then
+		for i,data in ipairs(groups) do
+			if data.difficultyID and data.difficultyID == 24 then
+				if t.mapID then
+					table.insert(TIMEWALKING_DUNGEON_MAP_IDS, t.mapID);
+				end
+				if t.maps then
+					for j,mapID in ipairs(t.maps) do
+						table.insert(TIMEWALKING_DUNGEON_MAP_IDS, mapID);
+					end
+				end
+				if data.g then
+					for j,subgroup in ipairs(data.g) do
+						if subgroup.creatureID and subgroup.creatureID > 0 then
+							table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, subgroup.creatureID);
+						end
+						if subgroup.crs then
+							for j,creatureID in ipairs(subgroup.crs) do
+								table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	return t;
 end
 item = function(id, t)									-- Create an ITEM Object
 	return struct("itemID", id, t);
@@ -690,13 +727,25 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 -- BEGIN UNFINISHED SECTION:
 crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
   if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
+    elseif not t.groups then
+		if not isarray(t) then
+			-- DO NOT do that lol
+		else
+			t = { ["groups"] = t };
+		end
+	end
     t.criteriaID = criteriaID;
   return t;
 end
 sz = function(achievementID, criteriaID, t)  -- Create a Subzone Object (localized automatically)
   if not t then t = {};
-    elseif not t.groups then t = { ["groups"] = t }; end
+    elseif not t.groups then
+		if not isarray(t) then
+			-- DO NOT do that lol
+		else
+			t = { ["groups"] = t };
+		end
+	end
     t.achievementID = achievementID;
     t.criteriaID = criteriaID;
   return t;

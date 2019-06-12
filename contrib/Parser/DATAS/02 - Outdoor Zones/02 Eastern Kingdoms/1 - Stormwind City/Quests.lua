@@ -349,11 +349,13 @@ _.Zones =
 							i(72042), 	-- Alliance Balloon (PET!)
 						},
 					}),
---[[					
 					q(29100, {	-- Bwemba's Spirit
-						["races"] = ALLIANCE_ONLY,
+						["qg"] = 52654,	-- Bwemba
 						["lvl"] = 85,
+						["coord"] = { 25.9, 29.2, 84 },
+						["races"] = ALLIANCE_ONLY,
 					}),
+--[[					
 					q(14482, {	-- Call of Duty
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 80,
@@ -412,11 +414,7 @@ _.Zones =
 						["qg"] = 132255,	-- Master Mathias Shawa
 						["sourceQuests"] = { 50371 } ,	-- Summons to Stormwind
 					}),
---[[
-					q(29477),	-- Gnomish Engineering
-					q(29475),	-- Goblin Engineering
-					qa(31593),	-- Got one!
---]]
+--					qa(31593),	-- Got one!
 					qa(39800, {	-- Greymane's Gambit
 						["sourceQuests"] = { 38206 },	-- Making the Rounds
 						["coord"] = { 18.6, 50.8, 628 },
@@ -522,33 +520,45 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
---[[				qa(11924)),	-- More Torch Catching
-					qa(11921)),	-- More Torch Tossing
-					qa(8860)),	-- New Year Celebrations!
-					qa(25105)),	-- Nibbler! No!
-					qa(25155)),	-- Ogrezonians in the Mood
-					qa(31592)),	-- On The Mend
-					qa(31745)),	-- Onward and Inward
-					qa(26192)),	-- Orphans Like Cookies Too!
-					qa(334)),	-- Package for Thurman
-					qa(26153)),	-- Penny's Pumpkin Pancakes
-					qa(24656)),	-- Pilfering Perfume
-					qa(14022)),	-- Pilgrim's Bounty
-					qa(11882)),	-- Playing with Fire
-					q(29067)),	-- Potion Master
-					qa(27240)),	-- Proof of Treachery
-					qa(40661)),	-- Protect the Home Front
-					q(32307)),	-- Reader for the Dead Tongue				
-					qa(26396)),	-- Return to Argus
+--[[				qa(11924),	-- More Torch Catching
+					qa(11921),	-- More Torch Tossing
+					qa(8860),	-- New Year Celebrations!
+					qa(25105),	-- Nibbler! No!
+					qa(25155),	-- Ogrezonians in the Mood
+					qa(31592),	-- On The Mend
+					qa(31745),	-- Onward and Inward
+					qa(26192),	-- Orphans Like Cookies Too!
+					qa(334),	-- Package for Thurman
+					qa(26153),	-- Penny's Pumpkin Pancakes
+					qa(24656),	-- Pilfering Perfume
+					qa(14022),	-- Pilgrim's Bounty
+					qa(11882),	-- Playing with Fire
+					q(29067),	-- Potion Master
+					qa(27240),	-- Proof of Treachery
+					qa(40661),	-- Protect the Home Front
+					q(32307),	-- Reader for the Dead Tongue				
+					qa(26396),	-- Return to Argus
 					qa(27241, {	-- Return to Jaina (add'l QG 29611)
 						["qg"] = 107574,	-- 
 					}),
-					qa(26370)),	-- Return to Sentinel Hill
-					qa(26442)),	-- Rock Lobster
-					qa(44471)),	-- Second Sight
-					q(32317)),	-- Seeking the Soulstones
-					qa(29399)),	-- Shopping Around
 --]]
+					q(26370, {	-- Return to Sentinel Hill
+						["sourceQuests"] = { 26322 },	-- Rise of the Brotherhood
+						["coord"] = { 85.6, 32.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					}),
+--[[
+					qa(26442)),	-- Rock Lobster
+]]--					qa(44471)),	-- Second Sight
+					q(32317, {	-- Seeking the Soulstones
+						["qg"] = 5496,	-- Sandahl
+						["coord"] = { 39.8, 85.4, 84 },
+						["sourceQuest"] = 32310,	-- A Tale of Six Masters
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 90,
+					}),
+--					qa(29399)),	-- Shopping Around
 					qa(28401, {	-- Slaves of the Firelord
 						["g"] = {
 							i(65640), 		-- Mask of the Farseer
@@ -573,7 +583,14 @@ _.Zones =
 --[[
 					qa(44700),	-- Stormheim
 					qa(39735),	-- Stormheim
-					qa(353),	-- Stormpike's Delivery
+]]--
+					q(353, {	-- Stormpike's Delivery
+						["qg"] = 1416,	-- Grimand Elmore
+						["coord"] = { 59.7, 33.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 1097,	-- Elmore's Task
+					}),
+--[[
 					qa(1338),	-- Stormpike's Order
 					q(579),	-- Stormwind Library
 --]]
@@ -704,17 +721,25 @@ _.Zones =
 						["classes"] = { 4 },
 						["lvl"] = 98,
 					}),
-					qa(7782, {	-- The Lord of Blackrock
+					q(7782, {	-- The Lord of Blackrock
 						["qg"] = 107574,	-- Anduin Wrynn
+						["coord"] = { 85.6, 31.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 7781,	-- The Lord of Blackrock
 						["g"] = {
-							i(19366),	-- Master Dragonslayer's Orb
+							i(19366), 	-- Master Dragonslayer's Orb
+							i(19383),	-- Master Dragonslayer's Medallion
+							i(19384),	-- Master Dragonslayer's Ring
 						},
-					}),
---[[					
-					qa(7781)),	-- The Lord of Blackrock
-					q(27203)),	-- The Maelstrom
-					qa(11970)),	-- The Master of Summer Lore
-					--]]
+					}),					
+--					qa(7781)),	-- The Lord of Blackrock
+					q(27203, {	-- The Maelstrom
+						["qg"] = 45226,	-- Naraat the Earthspeaker
+						["coord"] = { 74.4, 18.8, 84 },
+						["sourceQuest"] = 27727,	-- Hero's Call: Deepholm!
+						["lvl"] = 82,
+					}),						
+--					qa(11970)),	-- The Master of Summer Lore
 					qa(29548, {	-- The Mission
 						["qg"] = 55789,	-- Rell Nightwind
 					}),
@@ -744,10 +769,13 @@ _.Zones =
 					qa(31985)),	-- The Triumphant Return
 					qa(29156)),	-- The Troll Incursion
 					qa(27443)),	-- The War Has Many Fronts
-					qa(29555)),	-- The White Pawn
-					q(29158)),	-- The Zandalar Representative
+					qa(29555)),	-- The White Pawn,
 					qa(26536)),	-- Thunder Falls
 --]]
+					q(29158, {	-- The Zandalar Representative
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					qa(46727, {	-- Tides of War
 						["sourceQuests"] = { 51403 },	-- The Speaker's Imperative
 						["coord"] = { 27.6, 21.2 },
@@ -762,8 +790,13 @@ _.Zones =
 							i(138450),	-- Signet of Stormwind
 						},
 					}),
+					q(29102, {	-- To Fort Livingston
+						["qg"] = 52654,	-- Bwemba
+						["lvl"] = 85,
+						["coord"] = { 25.9, 29.2, 84 },
+						["races"] = ALLIANCE_ONLY,
+					}),
 --[[
-					qa(29102)),	-- To Fort Livingston
 					qa(28827)),	-- To the Depths
 					qa(11657)),	-- Torch Catching
 					qa(11731)),	-- Torch Tossing

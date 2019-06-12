@@ -119,22 +119,26 @@ _.Zones =
 								},
 							},
 						}),
-						n(31911, {	-- Tanak <Frenzyheart Quartermaster>
-							i(44717, {	-- Disgusting Jar
-								i(44718, {	-- Ripe Disgusting Jar
-									i(44719),	-- Frenzyheart Brew
+						{	-- Tanak <Frenzyheart Quartermaster>
+							["npcID"] = 31911,
+							["coord"] = { 55.1, 69.0, 119 },
+							["groups"] = {
+								i(44717, {	-- Disgusting Jar
+									i(44718, {	-- Ripe Disgusting Jar
+										i(44719),	-- Frenzyheart Brew
+									}),
 								}),
-							}),
-							i(41723),	-- Design: Jagged Forest Emerald
-							i(41561),	-- Design: Reckless Huge Citrine
-							i(44116),	-- Muddied Crimson Gloves
-							i(44120),	-- Giant-Sized Gauntlets
-							i(44121),	-- Sparkly Shiny Gloves
-							i(44117),	-- Azure Strappy Pants
-							i(44123),	-- Discarded Titanium Legplates
-							i(44122),	-- Scavenged Feathery Leggings
-							i(44073),	-- Frenzyheart Insignia of Fury
-						}),
+								i(41723),	-- Design: Jagged Forest Emerald
+								i(41561),	-- Design: Reckless Huge Citrine
+								i(44116),	-- Muddied Crimson Gloves
+								i(44120),	-- Giant-Sized Gauntlets
+								i(44121),	-- Sparkly Shiny Gloves
+								i(44117),	-- Azure Strappy Pants
+								i(44123),	-- Discarded Titanium Legplates
+								i(44122),	-- Scavenged Feathery Leggings
+								i(44073),	-- Frenzyheart Insignia of Fury
+							},
+						},
 					},
 				}),
 				faction(1105, {	-- The Oracles
@@ -268,31 +272,35 @@ _.Zones =
 								},
 							},
 						}),
-						n(31910, {	-- Geen <Oracles Quartermaster>
-							i(39878, {	-- Mysterious Egg
-								i(39883, {	-- Cracked Egg
-									i(44707),	-- Reins of the Green Proto-Drake Mount
-									i(39898),	-- Cobra Hatchling Pet
-									i(44721),	-- Proto-Drake Whelp Pet
-									i(39896),	-- Tickbird Hatchling Pet
-									i(39899),	-- White Tickbird Hatchling Pet
+						{	-- Geen <Oracles Quartermaster>
+							["npcID"] = 31910,
+							["coord"] = { 54.6, 56.1, 119 },
+							["groups"] = {
+								i(39878, {	-- Mysterious Egg
+									i(39883, {	-- Cracked Egg
+										i(44707),	-- Reins of the Green Proto-Drake Mount
+										i(39898),	-- Cobra Hatchling Pet
+										i(44721),	-- Proto-Drake Whelp Pet
+										i(39896),	-- Tickbird Hatchling Pet
+										i(39899),	-- White Tickbird Hatchling Pet
+									}),
 								}),
-							}),
-							i(41724),	-- Design: Misty Forest Emerald
-							i(41781, {	-- Design: Misty Forest Emerald
-								["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
-								["u"] = 2,
-							}),
-							i(41567),	-- Design: Nimble Dark Jade
-							i(44108),	-- Shinygem Rod
-							i(44110),	-- Sharkjaw Cap
-							i(44109),	-- Toothslice Helm
-							i(44112),	-- Glimmershell Shoulder Protectors
-							i(44111),	-- Gold Star Spaulders
-							i(44104),	-- Fishy Cinch
-							i(44106),	-- Glitterscale Wrap
-							i(44074),	-- Oracle Talisman of Ablution
-						}),
+								i(41724),	-- Design: Misty Forest Emerald
+								i(41781, {	-- Design: Misty Forest Emerald
+									["spellID"] = 0,	-- This is now available via 41724, need to delink the old plans from the recipe
+									["u"] = 2,
+								}),
+								i(41567),	-- Design: Nimble Dark Jade
+								i(44108),	-- Shinygem Rod
+								i(44110),	-- Sharkjaw Cap
+								i(44109),	-- Toothslice Helm
+								i(44112),	-- Glimmershell Shoulder Protectors
+								i(44111),	-- Gold Star Spaulders
+								i(44104),	-- Fishy Cinch
+								i(44106),	-- Glitterscale Wrap
+								i(44074),	-- Oracle Talisman of Ablution
+							},
+						},
 					},
 				}),
 			},

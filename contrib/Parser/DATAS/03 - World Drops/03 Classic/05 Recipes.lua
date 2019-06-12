@@ -285,9 +285,6 @@ _.WorldDrops =
 						["u"] = 7,	-- now learned from trainer, schematic was removed from game
 					},
 					i(6716),	-- Schematic: EZ-Thro Dynamite
-					{	-- Schematic: Flame Deflector
-						["itemID"] = 4411,	-- Schematic: Flame Deflector
-					},
 					i(4416),	-- Schematic: Goblin Land Mine
 					i(4417),	-- Schematic: Large Seaforium Charge
 					i(16044),	-- Schematic: Lifelike Mechanical Toad

@@ -103,13 +103,6 @@ _.WorldDrops =
 					i(43613),	-- The Dusk Blade
 					i(44310),	-- Namlak's Supernumerary Sticker
 					i(44505),	-- Dustbringer
-					-- [removed non-world drops below]
-					--i(44703, {	-- Dark Herring
-					--	["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
-					--}),
-					--i(37856),	-- Librarian's Paper Cutter
-					--i(49227),	-- Skoll's Fang
-					--i(35681),	-- Unrelenting Blade
 				}),
 				n(-348, {	-- Fist Weapons	
 					i(36557),	-- Meat Ripper
@@ -160,9 +153,6 @@ _.WorldDrops =
 					i(36471),	-- Ice Crystal
 					i(36472),	-- Carved Rod
 					i(37817),	-- Branch of Sinful Reprieve
-					-- [removed non-world drops below]
-					--i(37364),	-- Frostbridge Orb
-					--i(37889),	-- Prison Manifest
 				}),
 				n(-336, {	-- 1H Maces
 					i(36487),	-- Stone-Headed Gavel
@@ -195,9 +185,6 @@ _.WorldDrops =
 					i(36696),	-- Graced Scepter
 					i(37805),	-- Melia's Magnificent Scepter
 					i(37808),	-- Dragonjaw Mauler
-					-- [removed non-world drops below]
-					--un(2, i(48663)),	-- Tankard O' Terror
-					--i(35664),	-- Unknown Archaeologist's Hammer
 				}),
 				n(-337, {	-- 2H Maces
 					i(36501),	-- Granite Maul
@@ -214,8 +201,6 @@ _.WorldDrops =
 					i(36513),	-- Lode-Headed Hammer
 					i(36514),	-- Kingly Battlehammer
 					i(37812),	-- Petrified Ironwood Smasher
-					-- [removed non-world drops below]
-					--i(44708),	-- Dirkee's Superstructure
 				}),
 				n(-343, {	-- Polearms
 					i(36599),	-- Ocean Trident
@@ -251,8 +236,6 @@ _.WorldDrops =
 					i(37747),	-- Beneficent Bulwark
 					i(37810),	-- Blade-Binding Bulwark
 					i(44313),	-- Zom's Crackling Bulwark
-					-- [removed non-world drops below]
-					--i(45450),	-- Northern Barrier
 				}),
 				n(-342, {	-- Staves
 					i(36543),	-- Survival Stick
@@ -335,9 +318,6 @@ _.WorldDrops =
 					i(36667),	-- Solid Ice Wand
 					i(36668),	-- Mindless Wand
 					i(37824),	-- Gwyneth's Runed Dragonwand
-					-- [removed non-world drops below]
-					--i(35652),	-- Incessant Torch
-					--i(50472),	-- Nightmare Ender
 				}),
 			}),	
 		},

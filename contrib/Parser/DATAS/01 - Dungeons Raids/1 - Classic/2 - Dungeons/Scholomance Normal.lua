@@ -105,6 +105,9 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(15805)), 	-- Penelope's Rose
 							un(2, i(13544)),	-- Spectral Essence
 						})),
+						un(40, q(27143, {	-- Barov Family Fortune
+							un(2, i(65923)),	-- Barov Servant Caller
+						})),
 						un(40, q(27148, {	-- School's Out Forever
 							un(2, i(65974)),	-- Discipline Rod
 							un(2, i(65925)),	-- Lucien's Boots

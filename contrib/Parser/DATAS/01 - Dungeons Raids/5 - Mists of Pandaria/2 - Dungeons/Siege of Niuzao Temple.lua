@@ -5,8 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(324, { 	-- Siege of Niuzao Temple
 		["lvl"] = 88,
-		["mapID"] = 457,
-		["maps"] = { 458, 459},
+		["maps"] = { 457, 458, 459},
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(31365),	-- Somewhere Inside

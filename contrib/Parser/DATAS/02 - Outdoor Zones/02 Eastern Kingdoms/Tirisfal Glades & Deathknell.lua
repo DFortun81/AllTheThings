@@ -39,15 +39,16 @@ _.Zones =
 					p(417),		-- Bat
 					p(646),		-- Chicken
 					q(3861, { 	-- CLUCK!
+						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor William Saldean sells the Special Chicken Feed you need.",
+						["repeatable"] = true,
 						["g"] = {
 							i(11110) -- Chicken Egg
 						},
-						["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, William Saldean sells the Special Chicken Feed you need.",
-						["repeatable"] = true,
 					}),
 					p(458),		-- Lost of Lordaeron
 					p(417),		-- Rat
 					n(63073, { 	-- Ansel Fincap
+						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 						["g"] = {
 							p(75, {		-- Black Kingsnake
 								["races"] = {8,2}	-- Troll, Orc
@@ -68,7 +69,6 @@ _.Zones =
 								["races"] = {5}		-- Undeads
 							}),
 						},
-						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r"
 					}),
 				}),
 				n(-17, {	-- Quests
@@ -250,21 +250,17 @@ _.Zones =
 						["qg"] = 10665,	-- Junior Apothecary Holland
 						["sourceQuests"] = { 24990 },	-- Darkhound Pounding
 					}),
-					{	-- Invader's Scourgestones [H]
-						["questID"] = 5403,	-- Corruptor's Scourgestones
-						["qg"] = 10839,		-- Argent Officer Garush
-						["u"] = 2,			-- Removed in Patch 4.0.3
-						["coords"] = {
-							{ 83.18, 68.45, 18 },
-						},
+					q(5403, {	-- Corruptor's Scourgestones
+						["coord"] = { 83.18, 68.45, 18 },
 						["races"] = HORDE_ONLY,
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 40,	-- Legacy Quests
 						["g"] = {
-							{	-- Argent Dawn Valor Token
-								["itemID"] = 12844,	-- Argent Dawn Valor Token
+							i(12844, {	-- Argent Dawn Valor Token
 								["u"] = 2,			-- Removed in Patch 4.0.3
-							},
+							}),
 						},
-					},
+					}),
 					qh(24977, {	-- Johaan's Experiment
 						["qg"] = 1518,	-- Apothecary Johaan
 						["sourceQuests"] = { 24976 },	-- Variety is the Spice of Death
@@ -273,21 +269,17 @@ _.Zones =
 						["qg"] = 38978,	-- Apprentice Crispin
 						["sourceQuests"] = { 24997 },	-- Graverobbers
 					}),
-					{	-- Minion's Scourgestones [H]
-						["questID"] = 5402,	-- Corruptor's Scourgestones
-						["qg"] = 10839,		-- Argent Officer Garush
-						["u"] = 2,			-- Removed in Patch 4.0.3
-						["coords"] = {
-							{ 83.18, 68.45, 18 },
-						},
+					q(5402, {	-- Corruptor's Scourgestones
+						["coord"] = { 83.18, 68.45, 18 },
 						["races"] = HORDE_ONLY,
+						["qg"] = 10839,		-- Argent Officer Garush
+						["u"] = 40,	-- Legacy Quests
 						["g"] = {
-							{	-- Argent Dawn Valor Token
-								["itemID"] = 12844,	-- Argent Dawn Valor Token
-								["u"] = 2,			-- Removed in Patch 4.0.3
-							},
+							i(12844, {	-- Argent Dawn Valor Token
+								["u"] = 2,	-- BoP / BoA Item
+							}),
 						},
-					},
+					}),
 					qh(24995, {	-- Off the Scales
 						["qg"] = 38977,	-- Apothecary Jerrod
 						["sourceQuests"] = { 24994 },	-- Doom Weed
@@ -394,49 +386,12 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 --[[
-					qh(28972),	-- Candy Bucket
-					qh(12363),	-- Candy Bucket
-					qa(11755),	-- Desecrate this Fire!
-					qa(11580),	-- Desecrate this Fire!
-					qa(11786),	-- Desecrate this Fire!
-					qa(11766),	-- Desecrate this Fire!
-					qa(11732),	-- Desecrate this Fire!
-					qh(11361),	-- Fire Training
-					qh(11450),	-- Fire Training
-					qh(11449),	-- Fire Training
+				
 					qh(11403),	-- Free at Last! -- Hallow's End. No longer available? The quest giver was removed from the game
 					qh(14089),	-- Learn to Ride in Tirisfal Glades -- Legacy
 					qh(12139),	-- "Let the Fires Come!" -- Hallow's End
 					qh(31823),	-- Level Up! -- Pets
-					qh(11357),	-- Masked Orphan Matron -- Hallow's End
-					qh(11925),	-- More Torch Catching -- Midsummer Fire Festival
-					qh(11926),	-- More Torch Tossing -- Midsummer Fire Festival
 					qh(31577),	-- On The Mend -- Pets, no qg
-					qh(14036),	-- Pilgrim's Bounty -- Pilgrim's Bounty
-					qh(11915),	-- Playing with Fire -- Midsummer Fire Festival
-					qh(14040),	-- Pumpkin Pie	-- Pilgrim's BOunty
-					qh(14065),	-- Sharing a Bountiful Feast	-- Pilgrim's Bounty
-					qh(14058),	-- She Says Potato	-- Pilgrim's Bounty
-					qh(14047),	-- Slow-roasted Turkey	-- Pilgrim's Bounty
-					qh(12155),	-- Smash the Pumpkin	-- Hallow's End
-					qa(12133),	-- Smash the Pumpkin	-- Hallow's End
-					qh(14037),	-- Spice Bread Stuffing	-- Pilgrim's Bounty
-					qh(29374),	-- Stink Bombs Away!	-- Hallow's End
-					qh(11219),	-- Stop the Fires!	-- Hallow's End
-					q(11954),	-- Striking Back	-- Midsummer
-					q(11917),	-- Striking Back	-- Midsummer
-					q(11947),	-- Striking Back	-- Midsummer
-					q(11948),	-- Striking Back	-- Midsummer
-					q(11952),	-- Striking Back	-- Midsummer
-					q(11953),	-- Striking Back	-- Midsummer
-					qh(29427),	-- The Collector's Agent	-- Hallow's End
-					qh(14174),	-- The Grateful Dead	-- Day of the Dead
-					qh(11971),	-- The Spinner of Summer Tales	-- Midsummer Fire Festival
-					qh(11923),	-- Torch Catching	-- Midsummer
-					qh(11922),	-- Torch Tossing	-- Midsummer
-					q(11886),	-- Unusual Activity	-- Midsummer Fire Festival
-					qh(14059),	-- We're Out of Cranberry Chutney Again?	-- Pilgrim's Bounty
-					qh(29428),	-- What Now?	-- Hallow's End
 --]]
 				}),
 				n(-16, {	-- Rares
@@ -462,7 +417,7 @@ _.Zones =
 						["description"] = "The nest materialises directly in the centre of the white mushroom circle at 17.57, 67.53 once the 7 dragons channel the beams and begin their song. It is not visible before this.",
 						["icon"] = "Interface\\Icons\\INV_FaerieDragonMount",
 						["g"] = {
-							i(122234)	-- Music Roll: Faerie Dragon
+							i(122234),	-- Music Roll: Faerie Dragon
 						},
 					}),
 					n(10358, { 	-- Fellicent's Shade
@@ -575,38 +530,19 @@ _.Zones =
 					nh(2118, {	-- Abigail Shiel <Trade Supplies>
 						i(12226),	-- Recipe: Crispy Bat Wing
 					}),
-					{	-- Argent Quartermaster Hasana <The Argent Dawn>
-						["npcID"] = 10856, -- Argent Quartermaster Hasana <The Argent Dawn>
-						["coords"] = {
-							{ 83.26, 68.14, 18 },
-						},
+					n(10856, { -- Argent Quartermaster Hasana <The Argent Dawn>
+						["coord"] = { 83.26, 68.14, 18 },
 						["g"] = {
-							{	-- Formula: Enchant Bracer - Argent Versatility
-								["itemID"] = 19446,	-- Formula: Enchant Bracer - Argent Versatility
-							},
-							{	-- Formula: Enchant Bracer - Healing Power
-								["itemID"] = 19447,	-- Formula: Enchant Bracer - Healing Power
-							},
-							{	-- Formula: Powerful Anti-Venom
-								["itemID"] = 19442,	-- Formula: Powerful Anti-Venom
-							},
-							{	-- Pattern: Argent Boots
-								["itemID"] = 19216,	-- Pattern: Argent Boots
-							},
-							{	-- Pattern: Argent Shoulders
-								["itemID"] = 19217,	-- Pattern: Argent Shoulders
-							},
-							{	-- Pattern: Dawn Treaders
-								["itemID"] = 19328,	-- Pattern: Dawn Treaders
-							},
-							{	-- Pattern: Golden Mantle of the Dawn
-								["itemID"] = 19329,	-- Pattern: Golden Mantle of the Dawn
-							},
-							{	-- Plans: Girdle of the Dawn
-								["itemID"] = 19203,	-- Plans: Girdle of the Dawn
-							},
+							i(19446),	-- Formula: Enchant Bracer - Argent Versatility
+							i(19447),	-- Formula: Enchant Bracer - Healing Power
+							i(19442),	-- Formula: Powerful Anti-Venom
+							i(19216),	-- Pattern: Argent Boots
+							i(19217),	-- Pattern: Argent Shoulders
+							i(19328),	-- Pattern: Dawn Treaders
+							i(19329),	-- Pattern: Golden Mantle of the Dawn
+							i(19203),	-- Plans: Girdle of the Dawn
 						},
-					},
+					}),
 					nh(3522, {	-- Constance Brisboise <Apprentice Clothier>
 						i(6270),	-- Pattern: Blue Linen Vest
 					}),
@@ -664,48 +600,54 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
 				}),
 				n(-40, {	-- Legacy
-					["g"] = {
-						n(-17, {	-- Quests (Legacy)
-							un(40, q(5650, {	-- Garments of Darkness
-								["races"] =  { 5 },	-- Undead
-								["classes"] = { 5 },	-- Priest
-								["g"] = {
-									un(2, i(16607)),	-- Garments of Darkness
-								},
-							})),
-							un(40, q(1822, {	-- Heirloom Weapon
-								["g"] = {
-									un(2, i(7115)),	-- Heirloom Axe
-									un(2, i(7117)),	-- Heirloom Hammer
-									un(2, i(7116)),	-- Heirloom Dagger
-									un(2, i(7118)),	-- Heirloom Sword
-								},
-								["classes"] = { 1 },	-- Warrior
-							})),
-							un(40, qh(5237, {	-- Mission Accomplished!
-								un(2, i(15799)),	-- Heroic Commendation Medal
-								un(2, i(15800)),	-- Intrepid Shortsword
-								un(2, i(15801)),	-- Valiant Shortsword
-							})),
+					n(-17, {	-- Quests (Legacy)
+						un(40, q(5650, {	-- Garments of Darkness
+							["races"] =  { 5 },	-- Undead
+							["classes"] = { 5 },	-- Priest
+							["g"] = {
+								un(2, i(16607)),	-- Garments of Darkness
+							},
+						})),
+						un(40, q(1822, {	-- Heirloom Weapon
+							["g"] = {
+								un(2, i(7115)),	-- Heirloom Axe
+								un(2, i(7117)),	-- Heirloom Hammer
+								un(2, i(7116)),	-- Heirloom Dagger
+								un(2, i(7118)),	-- Heirloom Sword
+							},
+							["classes"] = { 1 },	-- Warrior
+						})),
+						un(40, qh(5237, {	-- Mission Accomplished!
+							un(2, i(15799)),	-- Heroic Commendation Medal
+							un(2, i(15800)),	-- Intrepid Shortsword
+							un(2, i(15801)),	-- Valiant Shortsword
+						})),
+					}),
+					n(-16, {	-- Rares (Legacy)
+						n(1658, { 	-- Captain Dargol
+							un(7, i(3330)),	-- Dargol's Hauberk
 						}),
-						n(-16, {	-- Rares (Legacy)
-							n(1658, { 	-- Captain Dargol
-								un(7, i(3330)),	-- Dargol's Hauberk
-							}),
-						}),
-						--n(0, {	-- Zone Drop (Legacy)
-						--}),
-					},
+					}),
+					--n(0, {	-- Zone Drop (Legacy)
+					--}),
 				}),
 				m(465, {	-- Deathknell
+					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
+					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
 					["g"] = {
 						n(-25, {	-- Pet Battle
-							p(417),	-- Rat
-							p(458),	-- Lost of Lordaeron
+							p(417, {	-- Rat
+								["crs"] = { 61366 },	-- Rat
+							}),
+							p(458, {	-- Lost of Lordaeron
+								["crs"] = { 61905 },	-- Lost of Lordaeron
+							}),
 						}),
 						n(-17, {	-- Quests
-							qh(24971, {	-- Assault on the Rotbrain Encampment
+							q(24971, {	-- Assault on the Rotbrain Encampment
 								["qg"] = 49425,	-- Darnell
+								["coord"] = { 67.0, 42.3, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24970 },	-- No Better Than the Zombies
 							}),
 							q(25089, {	-- Beyond the Graves
@@ -728,16 +670,22 @@ _.Zones =
 								["classes"] = { 8 },	-- Mage
 								["races"] = { 5 },	-- Undead
 							}),
-							qh(24973, {	-- Night Web's Hollow
+							q(24973, {	-- Night Web's Hollow
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 26802 },	-- The Damned
 							}),
-							qh(24970, {	-- No Better Than the Zombies
+							q(24970, {	-- No Better Than the Zombies
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24973 },	-- Night Web's Hollow
 							}),
-							qh(28651, {	-- Novice Elreth
+							q(28651, {	-- Novice Elreth
 								["qg"] = 1569,	-- Shadow Priest Elreth
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 							}),
 							q(24966, {	-- Of Light and Shadows
@@ -751,23 +699,26 @@ _.Zones =
 								["sourceQuests"] = { 25089 },	-- Beyond the Graves
 								["races"] = { 5 },	-- undead
 							}),
-							qh(26801, {	-- Scourge on our Perimeter
+							q(26801, {	-- Scourge on our Perimeter
 								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 							}),
 							q(28653, {	-- Shadow Priest Sarvis
 								["qg"] = 1740,	-- Deathguard Saltain
 								["sourceQuests"] = { 26800 },	-- Recruitment
-								["races"] = {
-									5,	-- undead
-									10,	-- blood elf
-								}
+								["races"] = { 5 },	-- undead
 							}),
-							qh(26802, {	-- The Damned
+							q(26802, {	-- The Damned
 								["qg"] = 1570,	-- Executor Arren
+								["coord"] = { 55.4, 37.7, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 28672 },	-- The Executor in the Field
 							}),
-							qh(28672, {	-- The Executor In the Field
+							q(28672, {	-- The Executor In the Field
 								["qg"] = 1661,	-- Novice Elreth
+								["coord"] = { 46.7, 58.2, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24961 },	-- The Truth of the Grave
 							}),
 							q(28608, {	-- The Shadow Grave
@@ -775,8 +726,10 @@ _.Zones =
 								["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
 								["races"] = { 5 },	-- undead
 							}),
-							qh(24961, {	-- The Truth of the Grave
+							q(24961, {	-- The Truth of the Grave
 								["qg"] = 1661,	-- Novice Elreth
+								["coord"] = { 46.7, 58.1, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 28651 },	-- Novice Elreth
 							}),
 							q(24960, {	-- The Wakening
@@ -789,8 +742,10 @@ _.Zones =
 								["sourceQuests"] = { 28608 },	-- The Shadow Grave
 								["races"] = { 5 },	-- undead
 							}),
-							qh(24972, {	-- Vital Intelligence
+							q(24972, {	-- Vital Intelligence
 								["qg"] = 1569,	-- Shadow Priest Sarvis
+								["coord"] = { 46.6, 58.8, 465 },
+								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 24971 },	-- Assault on the Rotbrain Encampment
 								["isBreadcrumb"] = true,
 							}),
@@ -857,8 +812,6 @@ _.Zones =
 							},
 						}),
 					},
-					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Female",
-					["description"] = "|cff66ccffDeathknell is a small Forsaken village nestled in a well guarded valley just north of Silverpine Forest in Tirisfal Glades which serves as the starting area for the Forsaken.|r",
 				}),
 			},
 		}),

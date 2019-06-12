@@ -8,14 +8,14 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests [Note: We don't attach qg's or coords since they don't apply to the WQ due to not actually receiving anything; very few exceptions apply]
 					q(52803, {	-- Accidental Dread
+						["isWQ"] = 120,
+						["qg"] = 141814,	-- Korval Darkbeard
 						["g"] = {
 							{	-- Accidental Dread — Battle on Zandalar and Kul Tiras
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 16,	-- Accidental Dread
 							},
 						},
-						["qg"] = 141814,	-- Korval Darkbeard
-						["isWQ"] = 120,
 					}),
 					q(50564, {	-- Azerite Infused Slag
 						["npcID"] = 134293,	-- Azerite-Infused Elemental	Note!! Done so we can use his name for the quest rather than Quest #123456
@@ -46,41 +46,40 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(50665, {	-- Cancel the Blood Troll Apocalypse
-						["g"] = {
-							{	-- A Most Efficient Apocalypse
-								["achievementID"] = 13021,	-- A Most Efficient Apocalypse
-								["races"] = HORDE_ONLY,
-							},
-						},
-						["isWQ"] = 120,
 						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
+							ach(13021, {	-- A Most Efficient Apocalypse
+								["races"] = HORDE_ONLY,
+							}),
+						},
 					}),
 					q(50962, {	-- Cargo Reclamation
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(52779, {	-- Crawg in the Bog
+						["isWQ"] = 120,
+						["qg"] = 141588,	-- Bloodtusk
 						["g"] = {
 							{	-- Crawg in the Bog — Battle on Zandalar and Kul Tiras
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 14,	-- Crawg in the Bog
 							},
 						},
-						["qg"] = 141588,	-- Bloodtusk
-						["isWQ"] = 120,
 					}),
 					q(50899, {	-- Don't Stalk Me, Troll (A)
+						["races"] = ALLIANCE_ONLY,
+						["isWQ"] = 120,
 						["g"] = {
 							ach(13026),	-- 7th Legion Spycatcher
 						},
-						["isWQ"] = 120,
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50717, {	-- Don't Stalk Me, Troll (H)
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
 						["g"] = {
 							ach(13025),	-- Zandalari Spycatcher
 						},
-						["isWQ"] = 120,
-						["races"] = HORDE_ONLY,
 					}),
 					q(51172, {	-- Forked Lightning
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -91,13 +90,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					{	---------- Getting Out of Hand (A / H)
+						["allianceQuestID"] = 51127,	-- Getting Out of Hand (A)
+						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
+						["races"] = ALLIANCE_ONLY,
+						["isWQ"] = 120,
 						["g"] = {
 							ach(13023),	-- It's Really Getting Out of Hand
 						},
-						["isWQ"] = 120,
-						["races"] = ALLIANCE_ONLY,
-						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
-						["allianceQuestID"] = 51127,	-- Getting Out of Hand (A)
 					},
 					q(51546, {	-- It's the Pits
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -139,14 +138,14 @@ _.Zones =
 						},
 					}),
 					q(52799, {	-- Pack Leader
+						["isWQ"] = 120,
+						["qg"] = 141799,	-- Grady Prett
 						["g"] = {
 							{	-- Pack Leader — Battle on Zandalar and Kul Tiras
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 								["criteriaID"] = 15,	-- Pack Leader
 							},
 						},
-						["qg"] = 141799,	-- Grady Prett
-						["isWQ"] = 120,
 					}),
 					q(50667, {	-- Past Due
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
@@ -170,9 +169,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50513, {	-- Tainted Guardian
-						["g"] = {
-							i(162621),	-- Naazmani Golem's Greathelm
-						},
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(50514, {	-- Totem Maker Jash'ga
@@ -182,52 +178,52 @@ _.Zones =
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),
 					q(52426, {	-- Work Order: Battle Flag: Phalanx Defense
-						["groups"] = {
+						["requireSkill"] = 197,	-- Tailoring
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
-						["isWQ"] = 120,
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 197,	-- Tailoring
 					}),
 					q(52396, {	-- Work Order: Contract: Talanji's Expedition
+						["requireSkill"] = 773,	-- Inscription
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["g"] = {
 							i(162368),	-- Contract: Talanji's Expedition [Rank 3]
 						},
-						["requireSkill"] = 773,	-- Inscription
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
-						["races"] = HORDE_ONLY,
 					}),
 					q(52360, {	-- Work Order: Enchant Weapon - Coastal Surge
-						["groups"] = {
+						["requireSkill"] = 333,	-- Enchanting
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
 							i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
 						},
-						["isWQ"] = 120,
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 333,	-- Enchanting
 					}),
 					q(52361, {	-- Work Order: Enchant Weapon - Torrent of Elements
-						["groups"] = {
+						["requireSkill"] = 333,	-- Enchanting
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
 							i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
 						},
-						["isWQ"] = 120,
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 333,	-- Enchanting
 					}),
 					q(52337, {	-- Work Order: Sea Mist Potion
-						["groups"] = {
+						["requireSkill"] = 171,	-- Alchemy
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
-						["isWQ"] = 120,
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(52372, {	-- Work Order: XA-1000 Surface Skimmer
-						["groups"] = {
+						["requireSkill"] = 202,	-- Engineering
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,		-- Enables WQ filter for Level 120
+						["g"] = {
 							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
-						["isWQ"] = 120,		-- Enables WQ filter for Level 120
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 202,	-- Engineering
 					}),
 					q(50489, {	-- Xu'ba
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120

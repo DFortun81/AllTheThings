@@ -5,8 +5,7 @@
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(65, { 	-- Throne of the Tides
 		["lvl"] = 77,
-		["mapID"] = 322,
-		["maps"] = { 323 },
+		["maps"] = { 322, 323 },
 		["groups"] = {
 			d( 1, {	-- Normal
 				n(-17, {	-- Quests 				

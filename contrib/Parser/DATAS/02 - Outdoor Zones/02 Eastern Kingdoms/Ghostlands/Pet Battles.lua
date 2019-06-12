@@ -5,17 +5,29 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(95, {	-- Ghostlands
-			["groups"] = {
-				n(-25, {	-- Pet Battle
-					p(461),	-- Larva
-					p(450),	-- Maggot
-					p(417),	-- Rat
-					p(419),	-- Small Frog
-					p(387),	-- Snake
-					p(463),	-- Spirit Crab
-					p(420),	-- Toad
+			n(-25, {	-- Pet Battle
+				p(461, {	-- Larva
+					["crs"] = { 62022 },	-- Larva
 				}),
-			},
+				p(450, {	-- Maggot
+					["crs"] = { 61753 },	-- Maggot
+				}),
+				p(417, {	-- Rat
+					["crs"] = { 61366 },	-- Rat
+				}),
+				p(419, {	-- Small Frog
+					["crs"] = { 61071 },	-- Small Frog
+				}),
+				p(387, {	-- Snake
+					["crs"] = { 61142 },	-- Snake
+				}),
+				p(463, {	-- Spirit Crab
+					["crs"] = { 62034 },	-- Spirit Crab
+				}),
+				p(420, {	-- Toad
+					["crs"] = { 61369 },	-- Toad
+				}),
+			}),
 		}),
 	}),
 };

@@ -46,25 +46,10 @@ _.WorldDrops =
 					i(118809),	-- Eldodin's Elegant Drape
 					i(118811),	-- Embroidered Wolfsfur Cloak
 					i(116702),	-- Evermorn Cloak
-					modID(3, i(119343)),	-- Eye-Blinder Greatcloak
-					modID(5, i(119343)),	-- Eye-Blinder Greatcloak
-					modID(6, i(119343)),	-- Eye-Blinder Greatcloak
 					i(118812),	-- Flamelicked Cloak of Kaufebyrd
-					modID(3, i(119347)),	-- Gill's Glorious Windcloak
-					modID(5, i(119347)),	-- Gill's Glorious Windcloak
-					modID(6, i(119347)),	-- Gill's Glorious Windcloak
 					i(118816),	-- Gorenscale Mesh Cloak
 					i(116699),	-- Growthshaper Cloak
 					i(118808),	-- Highmaul Magi Scarf
-					modID(3, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
-					modID(5, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
-					modID(6, i(119346)),	-- Kyu-Sy's Tarflame Doomcloak
-					modID(3, i(119344)),	-- Magic-Breaker Cape
-					modID(5, i(119344)),	-- Magic-Breaker Cape
-					modID(6, i(119344)),	-- Magic-Breaker Cape
-					modID(3, i(119345)),	-- Milenah's Intricate Cloak
-					modID(5, i(119345)),	-- Milenah's Intricate Cloak
-					modID(6, i(119345)),	-- Milenah's Intricate Cloak
 					i(116696),	-- Moonwhisper Cloak
 					i(116723),	-- Oshu'gun Cloak
 					i(118810),	-- Rinnila's Regal Cloak
@@ -83,9 +68,6 @@ _.WorldDrops =
 				n(-326, {	-- Wrist
 					i(118860),	-- Bolt-Bound Bracers
 					i(118839),	-- Bonechain Bracers
-					i(119332),	-- Bracers of Darkened Skies
-					i(119333),	-- Bracers of Shattered Limbs
-					i(119331),	-- Bracers of Visceral Force
 					i(118824),	-- Noxiia's Shackles
 					i(118832),	-- Wodin's Weary Wristguards
 				}),
@@ -93,27 +75,15 @@ _.WorldDrops =
 					i(118828),	-- Amienne's Velvety Touch
 					i(118820),	-- Anruin's Grips of Agony
 					i(118856),	-- Cydil's Coiled Grasp
-					i(113632),	-- Gauntlets of the Heavy Hand
-					i(113593),	-- Grips of Vicious Mauling
 					i(118835),	-- Kiraser's Gloves of Precision
-					i(113610),	-- Meatmonger's Gory Grips
-					i(113602),	-- Throat-Ripper Gauntlets
 				}),
 				n(-328, {	-- Waist
 					i(118888),	-- Ashelia's Adorned Waistguard
-					i(119338),	-- Belt of Inebriated Sorrows
 					i(118833),	-- Chain Links of Pea'dexx
 					i(118887),	-- Cloudcaller's Linked Belt
-					i(124182),	-- Cord of Unhinged Malice
-					i(119336),	-- Cord of Winsome Sorrows
-					i(124311),	-- Cursed Demonchain Belt
-					i(119335),	-- Eyeripper Girdle
-					i(124277),	-- Flayed Demonskin Belt
 					i(118885),	-- Gem-Inlaid Velvet Cinch
-					i(124350),	-- Girdle of Demonic Wrath
 					i(118817),	-- Girthbinder of N'karas
 					i(118853),	-- Iron Beltguard of Fuufuu
-					i(119337),	-- Ripswallow Plate Belt
 					i(118886),	-- Waistgirdle of the Mountain
 					i(118825),	-- Windswept Leather Waistguard
 				}),
@@ -125,19 +95,11 @@ _.WorldDrops =
 				}),
 				n(-330, {	-- Feet
 					i(118826),	-- Cadi's Grass Stained Slippers
-					i(124323),	-- Cruel Hope Crushers
-					i(124150),	-- Dessicated Soulrender Slippers
-					i(119341),	-- Doomslag Greatboots
 					i(122240, {	-- Footwraps of the Frostweaver
 						["description"] = "Yes, they're a world drop, and yes, they're BoP.  We're as perplexed as you are.",
 					}),
-					i(119342),	-- Furnace Stoker's Footwraps
-					i(119340),	-- Iron-Flecked Sandals
-					i(124252),	-- Jungle Assassin's Footpads
 					i(118818),	-- Kymi's Stylish Slippers
 					i(118834),	-- Spiffy Chainmail Boots
-					i(119339),	-- Treads of the Veteran Smith
-					i(124288),	-- Unhallowed Voidlink Boots
 					i(118854),	-- Zor's Taboo Treads
 				}),
 				filter(52, {	-- Finger

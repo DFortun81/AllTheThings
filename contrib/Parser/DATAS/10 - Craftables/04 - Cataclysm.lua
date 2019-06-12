@@ -529,6 +529,10 @@ _.Craftables =
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
+			filter(113, {	-- Bags
+				i(70136),			-- Royal Scribe's Satchel
+				i(70137),			-- Triple-Reinforced Mining Bag
+			}),
 			n(-322, { 	-- Cloak
 				i(56518),	-- Cloak of Beasts
 				i(56519),	-- Cloak of War

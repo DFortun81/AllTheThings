@@ -57,11 +57,20 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				},
 			}),
+			n(-1, {	-- Common Boss Drop
+				i(35275, { 	-- Orb of Sin'dorei
+					["crs"] = {
+						24723,	-- Selin Fireheart
+						24744,	-- Vexallus
+						24560,	-- Priestess Delrissa
+						24664,	-- Kael'thas Sunstrider
+					},
+				}),
+			}),
 			d(1, {	-- Normal
 				e(530, {	-- Selin Fireheart
 					["creatureID"] = 24723,
 					["groups"] = {
-						i(35275), 	-- Orb of Sin'dorei
 						i(34604),	-- Jaded Crystal Dagger
 						i(34699),	-- Sun-Forged Cleaver
 						i(34601),	-- Shoulderplates of Everlasting Pain
@@ -76,7 +85,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				e(531, {	-- Vexallus
 					["creatureID"] = 24744,
 					["groups"] = {
-						i(35275), 	-- Orb of Sin'dorei
 						i(34608),	-- Rod of the Blazing Light
 						i(34606),	-- Edge of Oppression
 						i(34703),	-- Landro's Dancing Blade
@@ -93,7 +101,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["creatureID"] = 24560,
 					["groups"] = {
 						i(35756),	-- Formula: Enchant Cloak - Greater Dodge
-						i(35275), 	-- Orb of Sin'dorei
 						i(34790),	-- Battle-Mace of the High Priestess
 						i(34788),	-- Duskhallow Mantle
 						i(34792),	-- Cloak of the Betrayed
@@ -110,7 +117,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["groups"] = {
 						ach(661),	-- Magister's Terrace
 						i(35504),	-- Phoenix Hatchling
-						i(35275), 	-- Orb of Sin'dorei
 						i(35305),	-- Design: Brilliant Living Ruby
 						{	-- Design: Brilliant Living Ruby
 							["itemID"] = 24195,	-- Design: Brilliant Living Ruby
@@ -163,7 +169,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(530, {	-- Selin Fireheart
 						["creatureID"] = 24723,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei
 							i(34604),	-- Jaded Crystal Dagger
 							i(34699),	-- Sun-Forged Cleaver
 							i(34601),	-- Shoulderplates of Everlasting Pain
@@ -178,7 +183,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(531, {	-- Vexallus
 						["creatureID"] = 24744,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei
 							i(34608),	-- Rod of the Blazing Light
 							i(34606),	-- Edge of Oppression
 							i(34703),	-- Landro's Dancing Blade
@@ -195,7 +199,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						["creatureID"] = 24560,
 						["groups"] = {
 							i(35756),	-- Formula: Enchant Cloak - Greater Dodge
-							i(35275), 	-- Orb of Sin'dorei
 							i(34790),	-- Battle-Mace of the High Priestess
 							i(34788),	-- Duskhallow Mantle
 							i(34792),	-- Cloak of the Betrayed
@@ -215,7 +218,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 								ach(884),	-- Swift White Hawkstrider
 							}),
 							i(35504),	-- Phoenix Hatchling (PET!)
-							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(35305),	-- Design: Brilliant Living Ruby
 							{	-- Design: Brilliant Living Ruby
 								["itemID"] = 24195,	-- Design: Brilliant Living Ruby
@@ -268,7 +270,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(530, {	-- Selin Fireheart
 						["creatureID"] = 24723,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133467), 	-- Jaded Crystal Dagger
 							i(133433), 	-- Sun-Forged Cleaver
 							i(133465), 	-- Shoulderplates of Everlasting Pain
@@ -285,7 +286,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(531, {	-- Vexallus
 						["creatureID"] = 24744,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133471), 	-- Rod of the Blazing Light
 							i(133469), 	-- Edge of Oppression
 							i(133437), 	-- Latro's Dancing Blade
@@ -303,7 +303,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(532, {	-- Priestess Delrissa
 						["creatureID"] = 24560,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(133446), 	-- Battle-Mace of the High Priestess
 							i(133444), 	-- Duskhallow Mantle
 							i(133448), 	-- Cloak of the Betrayed
@@ -320,7 +319,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
-							i(35275), 	-- Orb of Sin'dorei (TOY!)
 							i(35504),	-- Phoenix Hatchling (PET!)
 							i(35513), 	-- Swift White Hawkstrider (MOUNT!)
 							i(133450), 	-- Axe of Shattered Dreams

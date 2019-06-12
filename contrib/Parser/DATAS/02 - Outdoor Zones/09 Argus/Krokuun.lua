@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			["groups"] = {
+			["g"] = {
 				n(-10067, {	-- Artifacts
 					-- /script for i = 44093,44097 do print("Head "..(i-44092)..": "..tostring(IsQuestFlaggedCompleted(i))) end
 					i(140661, {	-- Damaged Eredar Head
@@ -101,7 +101,7 @@ _.Zones =
 							120723,	-- Annihilan Fanatic
 							120395,	-- Eredar Conqueror
 						},
-						["groups"] = {
+						["g"] = {
 							artifact(937),	-- Demonology Warlock Hidden Artifact Skin
 						},
 					}),
@@ -119,7 +119,7 @@ _.Zones =
 							120723,	-- Annihilan Fanatic
 							120395,	-- Eredar Conqueror
 						},
-						["groups"] = {
+						["g"] = {
 							q(44083, {	-- The Grimoire of the First Necrolyte
 								i(140762),	-- Skull of the Executed
 								n(112862, {	-- Sataiel
@@ -142,7 +142,7 @@ _.Zones =
 							124435,	-- Antoran Fiendmaster
 							120395,	-- Eredar Conqueror
 						},
-						["groups"] = {
+						["g"] = {
 							artifact(977),	-- Holy Paladin Hidden Artifact Appearance
 						},
 					}),
@@ -150,7 +150,7 @@ _.Zones =
 				n(-4, { 	-- Achievement
 					ach(12074, {	-- Shoot First, Loot Later
 						o(276490, {	-- Krokul Emergency Cache
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12074,	-- Shoot First, Loot Later
 									["criteriaID"] = 1,	-- Krokul Emergency Cache
@@ -164,7 +164,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277343, {	-- Long-Lost Augari Treasure
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12074,	-- Shoot First, Loot Later
 									["criteriaID"] = 20,	-- Long-Lost Augari Treasure
@@ -177,7 +177,7 @@ _.Zones =
 							["modelScale"] = 2.5,
 						}),
 						o(277344, {	-- Precious Augari Keepsakes
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12074,	-- Shoot First, Loot Later
 									["criteriaID"] = 21,	-- Precious Augari Keepsakes
@@ -209,9 +209,9 @@ _.Zones =
 					}),
 				}),
 				n(-25, {	-- Pet Battle
-					["groups"] = {
+					["g"] = {
 						ach(12088, {	-- Anomalous Animals of Argus
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 12088,	-- Anomalous Animals of Argus
 									["criteriaID"] = 3, 		-- Baneglow
@@ -246,12 +246,12 @@ _.Zones =
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						}),
 						ach(12100, {	-- Family Fighter
-							["groups"] = {
+							["g"] = {
 								i(153040, {	-- Felclaw Marsuul
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12089, {	-- Aquatic Assault
-									["groups"]	= {
+									["g"]	= {
 										{
 											["achievementID"] = 12089,	-- Aquatic Assault
 											["criteriaID"] = 3, 		-- Baneglow
@@ -286,7 +286,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12091, {	-- Beast Blitz
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12091,	-- Beast Blitz
 											["criteriaID"] = 3, 		-- Baneglow
@@ -321,7 +321,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12092, {	-- Critical Critters
-									["groups"]	= {
+									["g"]	= {
 										{
 											["achievementID"] = 12092,	-- Critical Critters
 											["criteriaID"] = 3, 		-- Baneglow
@@ -356,7 +356,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12093, {	-- Draconic Destruction
-									["groups"]	= {
+									["g"]	= {
 										{
 											["achievementID"] = 12093,	-- Draconic Destruction
 											["criteriaID"] = 3, 		-- Baneglow
@@ -391,7 +391,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12094, {	-- Elemental Escalation
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12094,	-- Elemental Escalation
 											["criteriaID"] = 3, 		-- Baneglow
@@ -426,7 +426,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12095, {	-- Fierce Fliers
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12095,	-- Fierce Fliers
 											["criteriaID"] = 3, 		-- Baneglow
@@ -461,7 +461,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12096, {	-- Humanoid Havoc
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12096,	-- Humanoid Havoc
 											["criteriaID"] = 3, 		-- Baneglow
@@ -496,7 +496,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12097, {	-- Magical Mayhem
-									["groups"]	= {
+									["g"]	= {
 										{
 											["achievementID"] = 12097,	-- Magical Mayhem
 											["criteriaID"] = 3, 		-- Baneglow
@@ -531,7 +531,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12098, {	-- Mechanical Melee
-									["groups"] = {
+									["g"] = {
 										{
 											["achievementID"] = 12098,	-- Mechanical Melee
 											["criteriaID"] = 3, 		-- Baneglow
@@ -566,7 +566,7 @@ _.Zones =
 									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 								}),
 								ach(12099, {	-- Unstoppable Undead
-									["groups"]	= {
+									["g"]	= {
 										{
 											["achievementID"] = 12099,	-- Unstoppable Undead
 											["criteriaID"] = 3, 		-- Baneglow
@@ -609,7 +609,7 @@ _.Zones =
 					}
 				}),
 				n(-17, {	-- Quests
-					["groups"] = {
+					["g"] = {
 						ach(12066, {	-- You Are Now Prepared!
 							crit(1, {	-- The Assault Begings
 								qa(47221, {	-- The Hand of Fate
@@ -649,7 +649,7 @@ _.Zones =
 									["sourceQuests"] = { 46938 },	-- Alone in the Abyss
 								}),
 								q(46297, {	-- Overwhelming Power
-									["groups"] = {
+									["g"] = {
 										i(152695),	-- Crest of the Grand Army
 										i(152690),	-- Darkfall Arcanum
 										i(152692),	-- Devastator Anchor Crystal
@@ -682,7 +682,7 @@ _.Zones =
 								}),
 								q(46816, {	-- Rendezvous
 									--[[
-									["groups"] = {
+									["g"] = {
 										{
 											["spellID"] = 252201,	-- Lightforged Beacon: Krokul Hovel
 											["questID"] = 46816,	-- Rendezvous
@@ -791,13 +791,13 @@ _.Zones =
 							}),
 						}),
 						n(-168, {	-- Other Quests
-							["groups"] = {
+							["g"] = {
 								q(49014, {	-- The Burning Throne
 									["qg"] = 124312,	-- High Exarch Turalyon
 									["sourceQuests"] = { 48559 },	-- An Oferring of Light
 								}),
 								q(49015, {	-- Antorus, the Burning Throne: The Death of a Titan
-									["groups"] = {
+									["g"] = {
 										i(152984),	-- Boon of the Pantheon
 										i(152626),	-- Insignia of the Grand Army
 									},
@@ -837,7 +837,7 @@ _.Zones =
 										["qg"] = 119388,	-- Chieftain Hatuun
 										["repeatable"] = true,
 										["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
-										["groups"] = {
+										["g"] = {
 											i(152095),	-- Krokul Ridgestalker
 										},
 									}),
@@ -849,7 +849,7 @@ _.Zones =
 										["qg"] = 119388,	-- Chieftain Hatuun
 										["repeatable"] = true,
 										["sourceQuests"] = { 48443 },	-- Nath'raxas Hold: Rescue Mission
-										["groups"] = {
+										["g"] = {
 											i(152095),	-- Krokul Ridgestalker
 										},
 									}),
@@ -858,7 +858,7 @@ _.Zones =
 									["questID"] = 48016,
 									["qg"] = 125346,	-- Alchemist Funen
 									["coord"] = { 56.2, 66.8 },
-									["groups"] = {
+									["g"] = {
 										i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
 									},
 									["requireSkill"] = 171,	-- Alchemy
@@ -867,7 +867,7 @@ _.Zones =
 									["questID"] = 48002,
 									["qg"] = 125346,	-- Alchemist Funen
 									["coord"] = { 56.2, 66.8 },
-									["groups"] = {
+									["g"] = {
 										i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
 									},
 									["requireSkill"] = 171,	-- Alchemy
@@ -876,7 +876,7 @@ _.Zones =
 									["questID"] = 48013,
 									["qg"] = 125346,	-- Alchemist Funen
 									["coord"] = { 56.2, 66.8 },
-									["groups"] = {
+									["g"] = {
 										i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
 									},
 									["requireSkill"] = 171,	-- Alchemy
@@ -888,7 +888,8 @@ _.Zones =
 				}),
 				n(-16, { 	-- Rares
 					n(124775, {	-- Commander Endaxis
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153255),	-- Isolon Anchorite's Cudgel
 							i(152946),	-- World-Defiler's Casque
 							i(152944),	-- World-Defiler's Shoulderplates
@@ -902,13 +903,15 @@ _.Zones =
 						["questID"] = 48564,
 					}),
 					n(122912, {	-- Commander Sathrenael
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153113),	-- Demon's Soulstone
 						},
 						["questID"] = 48562,
 					}),
 					n(122911, {	-- Commander Vecaya
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153299),	-- Militant Exarch's Shortsword
 							i(152946),	-- World-Defiler's Casque
 							i(152944),	-- World-Defiler's Shoulderplates
@@ -922,7 +925,8 @@ _.Zones =
 						["questID"] = 48563,
 					}),
 					o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152946),	-- World-Defiler's Casque
 							i(152944),	-- World-Defiler's Shoulderplates
 							i(152949),	-- World-Defiler's Cuirass
@@ -932,7 +936,8 @@ _.Zones =
 						["questID"] = 47753,
 					}),
 					o(271850, {	-- Eredar War Supplies (south central/east and south of Shattered Fields beacon)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152946),	-- World-Defiler's Casque
 							i(152949),	-- World-Defiler's Cuirass
 							i(152942),	-- World-Defiler's Wristguards
@@ -942,7 +947,8 @@ _.Zones =
 						["questID"] = 47997,
 					}),
 					o(272455, {	-- Eredar War Supplies (central, around Annihilan Pits)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152946),	-- World-Defiler's Casque
 							i(152942),	-- World-Defiler's Wristguards
 							i(152947),	-- World-Defiler's Gauntlets
@@ -952,7 +958,8 @@ _.Zones =
 						["questID"] = 47752,
 					}),
 					o(272456, {	-- Eredar War Supplies (north)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152944),	-- World-Defiler's Shoulderplates
 							i(152942),	-- World-Defiler's Wristguards
 							i(152947),	-- World-Defiler's Gauntlets
@@ -962,7 +969,8 @@ _.Zones =
 						["questID"] = 47999,
 					}),
 					o(272770, {	-- Eredar War Supplies (southwest, in/around the Xenedar)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152944),	-- World-Defiler's Shoulderplates
 							i(152949),	-- World-Defiler's Cuirass
 							i(152942),	-- World-Defiler's Wristguards
@@ -973,7 +981,8 @@ _.Zones =
 						["questID"] = 48336,
 					}),
 					o(272771, {	-- Eredar War Supplies (scattered around center and northeast)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152946),	-- World-Defiler's Casque
 							i(152944),	-- World-Defiler's Shoulderplates
 							i(152949),	-- World-Defiler's Cuirass
@@ -982,7 +991,8 @@ _.Zones =
 						["questID"] = 48339,
 					}),
 					o(273222, {	-- Eredar War Supplies (southeast)
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(152949),	--World-Defiler's Cuirass
 							i(152942),	--World-Defiler's Wristguards
 							i(152947),	--World-Defiler's Gauntlets
@@ -992,13 +1002,15 @@ _.Zones =
 						["questID"] = 48000,
 					}),
 					n(125820, {	-- Imp Mother Laglath
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48666,
 					}),
 					n(125824, {	-- Khazaduum
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153316), --Praetor's Ornamental Edge
 							i(152946),	--World-Defiler's Casque
 							i(152944),	--World-Defiler's Shoulderplates
@@ -1012,7 +1024,8 @@ _.Zones =
 						["questID"] = 48561,
 					}),
 					n(126419, {	-- Naroua, King of the Forest
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153190, {	-- Fel-Spotted Egg
 								i(153191, {	-- Cracked Fel-Spotted Egg
 									i(152843),	-- Darkspore Mana Ray Mount
@@ -1028,20 +1041,23 @@ _.Zones =
 						["modelScale"] = 0.63,
 					}),
 					n(120393, {	-- Siegemaster Voraan
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48627,
 					}),
 					n(123464, {	-- Sister Subversia
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153124),	-- Spire of Spite
 						},
 						["questID"] = 48565,
 						["modelScale"] = 0.80,
 					}),
 					n(123689, {	-- Talestra the Vile
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153329),	--Mystic Wakener's Blade
 							i(152946),	--World-Defiler's Casque
 							i(152944),	--World-Defiler's Shoulderplates
@@ -1055,13 +1071,15 @@ _.Zones =
 						["questID"] = 48628,
 					}),
 					n(125479, {	-- Tar Spitter
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							-- DROPS CACHE
 						},
 						["questID"] = 48665,
 					}),
 					n(124804, {	-- Tereck the Selector
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153263),	--Enclave Aspirant's Cleaver
 							i(152946),	--World-Defiler's Casque
 							i(152944),	--World-Defiler's Shoulderplates
@@ -1075,7 +1093,8 @@ _.Zones =
 						["questID"] = 48664,
 					}),
 					n(125388, {	-- Vagath the Betrayed
-						["groups"] = {
+						["isDaily"] = true,
+						["g"] = {
 							i(153114),	-- Nathrezim Tome of Manipulation
 						},
 						["questID"] = 48629,

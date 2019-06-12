@@ -3,8 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, {	-- Burning Crusade
-	{	-- Auchenai Crypts
-		["instanceID"] = 247,	-- Auchenai Crypts
+	inst(247, {	-- Auchenai Crypts
 		["lvl"] = 62,
 		["maps"] = {
 			256,	-- Halls of Hereafter
@@ -158,5 +157,5 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 			}),
 		},
-	},
+	}),
 })};

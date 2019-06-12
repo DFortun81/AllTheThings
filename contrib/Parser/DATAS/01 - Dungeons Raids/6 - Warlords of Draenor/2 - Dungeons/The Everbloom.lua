@@ -5,8 +5,7 @@
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(556, {	-- The Everbloom
 		["lvl"] = 100,
-		["mapID"] = 620,
-		["maps"] = { 621 },
+		["maps"] = { 620, 621 },
 		["coord"] = { 59.55, 45.45, 543 },	-- Gorgrond, Draenor
 		["groups"] = {
 			n(-1, {	-- Common Boss Drop

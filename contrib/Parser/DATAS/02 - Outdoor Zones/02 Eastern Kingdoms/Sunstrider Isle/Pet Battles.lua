@@ -5,14 +5,11 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(467, {	-- Sunstrider Isle
-			["groups"] = {
-				n(-25, {	-- Pet Battle
-					{	-- Cat
-						["speciesID"] = 459,	-- Cat
-						["crs"] = { 62019 },	-- Cat
-					},
+			n(-25, {	-- Pet Battle
+				p(459, {	-- Cat
+					["crs"] = { 62019 },	-- Cat
 				}),
-			},
+			}),
 		}),
 	}),
 };

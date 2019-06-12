@@ -54,38 +54,36 @@ _.Zones =
 						["g"] = {
 							-- Ensembles not added as unable to verify contents
 							i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons [ Horde / Alliance / Tested ]
-								["groups"] = {
-									i(73446),	-- Cataclysmic Gladiator's Shield Wall
-									i(73447),	-- Cataclysmic Gladiator's Slicer
-									i(73448),	-- Cataclysmic Gladiator's Bonecracker
-									i(73449),	-- Cataclysmic Gladiator's Hacker
-									i(73450),	-- Cataclysmic Gladiator's Baton of Light
-									i(73451),	-- Cataclysmic Gladiator's Slasher
-									i(73452),	-- Cataclysmic Gladiator's Right Render
-									i(73453),	-- Cataclysmic Gladiator's Fleshslicer
-									i(73454),	-- Cataclysmic Gladiator's Ripper
-									i(73455),	-- Cataclysmic Gladiator's Shanker
-									i(73457),	-- Cataclysmic Gladiator's Energy Staff
-									i(73458),	-- Cataclysmic Gladiator's Redoubt
-									i(73459),	-- Cataclysmic Gladiator's Gavel
-									i(73460),	-- Cataclysmic Gladiator's Rifle
-									i(73461),	-- Cataclysmic Gladiator's Shiv
-									i(73462),	-- Cataclysmic Gladiator's Staff
-									i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
-									i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
-									i(73465),	-- Cataclysmic Gladiator's Reprieve
-									i(73466),	-- Cataclysmic Gladiator's Battle Staff
-									i(73467),	-- Cataclysmic Gladiator's Spellblade
-									i(73468),	-- Cataclysmic Gladiator's Barrier
-									i(73469),	-- Cataclysmic Gladiator's Endgame
-									i(73470),	-- Cataclysmic Gladiator's Longbow
-									i(73472),	-- Cataclysmic Gladiator's Quickblade
-									i(73473),	-- Cataclysmic Gladiator's Pummeler
-									i(73474),	-- Cataclysmic Gladiator's Cleaver
-									i(73475),	-- Cataclysmic Gladiator's Greatsword
-									i(73476),	-- Cataclysmic Gladiator's Bonegrinder
-									i(73477),	-- Cataclysmic Gladiator's Decapitator
-								},
+								i(73446),	-- Cataclysmic Gladiator's Shield Wall
+								i(73447),	-- Cataclysmic Gladiator's Slicer
+								i(73448),	-- Cataclysmic Gladiator's Bonecracker
+								i(73449),	-- Cataclysmic Gladiator's Hacker
+								i(73450),	-- Cataclysmic Gladiator's Baton of Light
+								i(73451),	-- Cataclysmic Gladiator's Slasher
+								i(73452),	-- Cataclysmic Gladiator's Right Render
+								i(73453),	-- Cataclysmic Gladiator's Fleshslicer
+								i(73454),	-- Cataclysmic Gladiator's Ripper
+								i(73455),	-- Cataclysmic Gladiator's Shanker
+								i(73457),	-- Cataclysmic Gladiator's Energy Staff
+								i(73458),	-- Cataclysmic Gladiator's Redoubt
+								i(73459),	-- Cataclysmic Gladiator's Gavel
+								i(73460),	-- Cataclysmic Gladiator's Rifle
+								i(73461),	-- Cataclysmic Gladiator's Shiv
+								i(73462),	-- Cataclysmic Gladiator's Staff
+								i(73463),	-- Cataclysmic Gladiator's Heavy Crossbow
+								i(73464),	-- Cataclysmic Gladiator's Touch of Defeat
+								i(73465),	-- Cataclysmic Gladiator's Reprieve
+								i(73466),	-- Cataclysmic Gladiator's Battle Staff
+								i(73467),	-- Cataclysmic Gladiator's Spellblade
+								i(73468),	-- Cataclysmic Gladiator's Barrier
+								i(73469),	-- Cataclysmic Gladiator's Endgame
+								i(73470),	-- Cataclysmic Gladiator's Longbow
+								i(73472),	-- Cataclysmic Gladiator's Quickblade
+								i(73473),	-- Cataclysmic Gladiator's Pummeler
+								i(73474),	-- Cataclysmic Gladiator's Cleaver
+								i(73475),	-- Cataclysmic Gladiator's Greatsword
+								i(73476),	-- Cataclysmic Gladiator's Bonegrinder
+								i(73477),	-- Cataclysmic Gladiator's Decapitator
 							}),
 							i(73562),	-- Cataclysmic Gladiator's Bracers of Prowess
 							i(73552),	-- Cataclysmic Gladiator's Warboots of Alacrity
@@ -2789,14 +2787,14 @@ _.Zones =
 						},
 					}),
 					n(87501,  {	-- Paulie <Old Town Choppers>
-						["coord"] = { 73.09, 59.38, 84 },
+						["coord"] = { 73.0, 59.3, 84 },
 						["g"] = {
 							i(116789),	-- Champion's Treadblade
 						},
 					}),
 					n(12785,  {	-- Sergeant Major Clate <Legacy Armor Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 75.46, 67.03, 84 },
+						["coord"] = { 75.4, 67.0, 84 },
 						["g"] = {
 							-- Head
 							i(16465),	-- Field Marshal's Chain Helm
@@ -2933,20 +2931,20 @@ _.Zones =
 					}),
 					n(8665,   {	-- Shylenai <Owl Trainer>
 						["description"] = "Appears in Stormwind after War of Thorns.",
-						["coord"] = { 56.00, 3.22, 84 },
+						["coord"] = { 56.0, 3.22, 84 },
 						["g"] = {
 							i(8500),	-- Great Horned Owl
 							i(8501),	-- Hawk Owl
 						},
 					}),
 					n(30730,  {	-- Stanly McCormick <Inscription Supplies>
-						["coord"] = { 49.62, 74.81, 84 },
+						["coord"] = { 49.6, 74.8, 84 },
 						["g"] = {
 							i(39489),	-- Scribe's Satchel	**Limited Supply**
 						},
 					}),
 					n(43768,  {	-- Tannec Stonebeak <Gryphon Keeper>
-						["coord"] = { 71.45, 72.08, 84 },
+						["coord"] = { 71.4, 72.0, 84 },
 						["g"] = {
 							i(25471),	-- Ebon Gryphon Mount
 							i(25470),	-- Golden Gryphon Mount
@@ -2958,7 +2956,7 @@ _.Zones =
 						},
 					}),
 					n(44583,  {	-- Terrance Denman <Jewelcrafting Supplies>
-						["coord"] = { 63.18, 61.50, 84 },
+						["coord"] = { 63.1, 61.5, 84 },
 						["g"] ={
 							currency(361, {	-- Illustrious Jewelcrafter's Token
 								i(52409),	-- Design: Accurate Demonseye
@@ -3053,7 +3051,7 @@ _.Zones =
 						},
 					}),
 					n(58154,  {	-- Toren Landow <Legacy Justice Quartermaster>
-						["coord"] = { 79.08, 70.15, 84 },
+						["coord"] = { 79.0, 70.1, 84 },
 						["g"] = {
 							-- Weapons
 							i(57924),	-- Apple-Bent Bough

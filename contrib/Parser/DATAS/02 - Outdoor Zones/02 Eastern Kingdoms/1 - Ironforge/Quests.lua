@@ -3,75 +3,74 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(87, { 	-- Ironforge
+	m(13, {	-- Eastern Kingdoms
+		m(87, {	-- Ironforge
 			n(-17, {	-- Quests
-				q(1618, {	-- Gearing Redridge
-					["qg"] = 6031,	-- Tormus Deepforge
-					["races"] = ALLIANCE_ONLY,
+				q(1618,  {	-- Gearing Redridge
 					["requireSkill"] = 164,	-- Blacksmithing
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6031,	-- Tormus Deepforge
 					["g"] = {
 						i(6735),	-- Plans: Ironforge Breastplate
 					},
 				}),
-				qa(4512, {	-- A Little Slime Goes a Long Way
-					["qg"] = 9616,	-- Laris Geardawdle
+				q(4512,  {	-- A Little Slime Goes a Long Way
 					["coord"] = { 75.7, 23.3, 87 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9616,	-- Laris Geardawdle
 				}),
-				qa(4513, {	-- A Little Slime Goes a Long Way
+				q(4513,  {	-- A Little Slime Goes a Long Way
+					["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
+					["coord"] = { 75.7, 23.3, 87 },
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9616,	-- Laris Geardawdle
 					["g"] = {
 						i(12050),	-- Hazecover Boots
 						i(12051),	-- Brazen Gauntlets
 					},
-					["qg"] = 9616,	-- Laris Geardawdle
-					["coord"] = { 75.7, 23.3, 87 },
-					["sourceQuests"] = { 4512 },	-- A Little Slime Goes a Long Way
 				}),
-				qa(6625, {	-- Alliance Trauma
-					["qg"] = 5150,	-- Nissa Firestone
+				q(6625,  {	-- Alliance Trauma
 					["isBreadcrumb"] = true,	-- for Triage
 					["requireSkill"] = 129,	-- First Aid
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5150,	-- Nissa Firestone
 				}),
-				{	-- Gnome Improvement
-					["questID"] = 2948,	-- Gnome Improvement
-					["qg"] = 6826,	-- Talvash del Kissel
+				q(2948,  {	-- Gnome Improvement
 					["sourceQuests"] = { 2947 },	-- Return of the Ring
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6826,	-- Talvash del Kissel
 					["g"] = {
-						{	-- Talvash's Gold Ring
-							["itemID"] = 9538,	-- Talvash's Gold Ring
-						},
+						i(9538),	-- Talvash's Gold Ring
 					},
-				},
-				qa(26118, {	-- Seize the Ambassador
+				}),
+				q(26118, {	-- Seize the Ambassador
+					["sourceQuests"] = { 26112 },	-- Demanding Answers
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 39.7, 57.3, 87 },
+					["qg"] = 42129,	-- Moira Thaurissan
 					["g"] = {
 						i(57583),	-- The Slaghammer
 						i(57584),	-- Battleaxe of the Sober Dwarf
 						i(57585),	-- Ambassador's Duplicitous Dagger
 						i(133692),	-- Ambassador's Deceitful Dagger
 					},
-					["qg"] = 42129,	-- Moira Thaurissan
-					["coord"] = { 39.7, 57.3, 87 },
-					["sourceQuests"] = { 26112 },	-- Demanding Answers
 				}),
-				{    -- Supplying the Front
-					["questID"] = 1578,
-					["g"] = {
-						i(33792),    -- Plans: Heavy Copper Longsword
-					},
-					["qg"] = 6031,    -- Tormus Deepforge
+				q(1578,  {	-- Supplying the Front
+					["requireSkill"] = 164,	-- Blacksmithing
 					["coord"] = { 49.0, 42.4, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 164,    -- Blacksmithing
-				},
-				qa(39956, {	-- The Legacy Passed On
-					["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
+					["qg"] = 6031,	-- Tormus Deepforge
+					["g"] = {
+						i(33792),	-- Plans: Heavy Copper Longsword
+					},
+				}),
+				q(39956, {	-- The Legacy Passed On
 					["sourceQuests"] = { 39955 },	-- The Plot Thickens
 					["requireSkill"] = 773,	-- Inscription
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 97762,	-- Bill Spearshaker <Author Extrodinaire>
 					["g"]= {
-						{	-- Steamy Romance Novel Kit
-							["recipeID"]	= 192804,	-- Steamy Romance Novel Kit
-						},
+						recipe(192804),	-- Steamy Romance Novel Kit
 					},
 				}),
 --[[
@@ -98,16 +97,20 @@ _.Zones =
 				qa(2039, {	-- Find Bingles
 					["qg"] = 6569,	-- 
 				}),
+]]--
+				q(737, {	-- Forbidden Knowledge
+					["qg"] = 2934,	-- Keeper Bel'dugur
+					["coord"] = { 53.8, 54.4, 87 },
+					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
+					["lvl"] = 30,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4984)),	-- Skull of Impending Doom
+					},
+				}),
+--[[
 				qa(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- 
-				}),
-				q(29477, {	-- Gnomish Engineering
-					["qg"] = 5174,	-- 
-					["requireSkill"] = 202,
-				}),
-				q(29475, {	-- Goblin Engineering
-					["qg"] = 5174,	-- 
-					["requireSkill"] = 202,
 				}),
 				qa(6388, {	-- Gryth Thurden
 					["qg"] = 4256,	-- 
@@ -156,10 +159,11 @@ _.Zones =
 					["classes"] = {4},	-- Rogue
 				}),
 --]]
-				qa(27268, {	-- Make Haste to the Cathedral
+				q(27268, {	-- Make Haste to the Cathedral
 					["isBreadcrumb"] = true,
 					["classes"] = { 5 },	-- Priest
 					["coord"] = { 25.0, 8.20, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11406,	-- High Priest Rohan
 				}),
 --[[
@@ -172,13 +176,14 @@ _.Zones =
 					["classes"] = {7},	-- Shaman
 				}),
 --]]
-				qa(28285, {	-- Meet with High Priestess Laurena
+				q(28285, {	-- Meet with High Priestess Laurena
 					["isBreadcrumb"] = true,
 					["classes"] = { 5 },	-- Priest
 					["coord"] = { 25.0, 8.20, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11406,	-- High Priest Rohan
 				}),
---[[				qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
+--[[			qa(28268, {	-- Meet with Lord Grayson Shadowbreaker
 					["qg"] = 5147,	-- 
 					["classes"] = {2},	-- Paladin
 				}),
@@ -211,6 +216,15 @@ _.Zones =
 					["qg"] = 1573,	-- 
 					["races"] = {3,7},	-- Dwarf, Gnome
 				}),
+]]--
+				q(32317, {	-- Seeking the Soulstones
+					["qg"] = 5173,	-- Alexander Calder
+					["coord"] = { 50.2, 6.8, 87 },
+					["sourceQuest"] = 32310,	-- A Tale of Six Masters
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 90,
+				}),
+--[[
 				qa(27274, {	-- The Chief Surgeon
 					["qg"] = 11406,	-- 
 					["races"] = {7},	-- Gnome
@@ -226,6 +240,16 @@ _.Zones =
 				qa(38402, {	-- The Same, But Different
 					["qg"] = 6294,	-- 
 				}),
+]]--				
+				q(735, {	-- The Star, the Hand and the Heart
+					["qg"] = 2934,	-- Gerrig Bonegrip
+					["coord"] = { 50.8, 6.0, 87 },
+					["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["u"] = 40,
+				}),
+--[[				
 				qa(1789, {	-- The Symbol of Life
 					["qg"] = 6179,	-- 
 					["classes"] = {2},	-- Paladin

@@ -3,10 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(90, { 	-- Undercity
-			["groups"] = {				
-				nh(-2, { 	-- Vendors
+	m(13, {	-- Eastern Kingdoms
+		m(90, {	-- Undercity
+			n(-2, {	-- Vendors
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					n(4604,  {	-- Abigail Sawyer <Bow Merchant>
 						i(11306),	-- Sturdy Recurve
 						i(11303)	-- Fine Shortbow
@@ -19,6 +20,7 @@ _.Zones =
 						i(64920),	-- Shroud of Undercity
 						i(64921),	-- Cape of Undercity
 						i(64922),	-- Mantle of Undercity
+						i(67529),	-- Undercity Satchel
 						i(45583)	-- Undercity Tabard
 					}),
 					n(3522,  {	-- Constance Brisboise <Apprentice Clothier>
@@ -396,8 +398,8 @@ _.Zones =
 							}),
 						},
 					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

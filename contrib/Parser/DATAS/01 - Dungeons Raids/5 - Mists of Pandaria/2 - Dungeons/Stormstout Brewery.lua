@@ -5,8 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(302, { 	-- Stormstout Brewery
 		["lvl"] = 85,
-		["mapID"] = 439,
-		["maps"] = { 440, 441, 442 },
+		["maps"] = { 439, 440, 441, 442 },
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(31324, {	-- Family Secrets

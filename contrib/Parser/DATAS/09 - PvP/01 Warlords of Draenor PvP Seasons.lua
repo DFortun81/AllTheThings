@@ -2,7 +2,12 @@
 --     P L A Y E R   V S   P L A Y E R		 --
 -----------------------------------------------
 _.PVP =
-{
+{	----
+	---- This gear is listed here to reduce the bloat.
+	---- The actual sources include: 
+	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
+	---- for a total of 22 sources or a total of around 
+	---- 10000 Items.
 	n(-9981, {	-- Draenor
 		n(-661, {	-- Primal Gladiator: Warlords Season 1
 			un(2, i(111600)),	-- Bronze Strongbox

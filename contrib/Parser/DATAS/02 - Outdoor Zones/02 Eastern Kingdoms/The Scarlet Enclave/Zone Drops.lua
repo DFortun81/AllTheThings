@@ -3,26 +3,15 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Eastern Kingdoms
-		["mapID"] = 13,
-		["g"] = {
-			{	-- Eastern Plaguelands
-				["mapID"] = 23,
-				["g"] = {
-					{	-- The Scarlet Enclave
-						["mapID"] = 124,
-						["g"] = {
-							n(0, {	-- Zone Drop
-								i(16252, {	-- Formula: Enchant Weapon - Crusader
-									["crs"] = {
-										9451,	-- Scarlet Archmage
-									},
-								}),
-							}),
-						},
-					},
-				},
-			},
-		},
-	},
+	m(13, {	-- Eastern Kingdoms
+		m(23, {	-- Eastern Plaguelands
+			m(124, {	-- The Scarlet Enclave
+				n(0, {	-- Zone Drop
+					i(16252, {	-- Formula: Enchant Weapon - Crusader
+						["crs"] = { 9451 },	-- Scarlet Archmage
+					}),
+				}),
+			}),
+		}),
+	}),
 };

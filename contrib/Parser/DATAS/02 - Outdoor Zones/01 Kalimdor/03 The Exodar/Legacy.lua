@@ -5,17 +5,13 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
-			["groups"] = {
-				n(-40, {	-- Legacy
-					["groups"] = {
-						n(-17, {	-- Quests
-							un(40, q(9675, {	-- Beast Training
-								un(2, i(24138)),	-- Silver Crossbow
-							})),
-						}),
-					},
+			n(-40, {	-- Legacy
+				n(-17, {	-- Quests
+					un(40, q(9675, {	-- Beast Training
+						un(2, i(24138)),	-- Silver Crossbow
+					})),
 				}),
-			},
+			}),
 		}),
 	}),
 };

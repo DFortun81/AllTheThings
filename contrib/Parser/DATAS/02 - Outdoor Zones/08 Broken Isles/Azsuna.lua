@@ -1857,6 +1857,7 @@ _.Zones =
 								["qg"] = 89398,	-- Allari the Souleateer
 								["coord"] = { 43.2, 43.1, 630 },
 								["g"] = {
+									i(129172),	-- Band of Demonic Guile
 									i(132951),	-- Leywalker Shoes
 									i(132949),	-- Ruin-Stalker Footpads
 									i(132948),	-- Seaspray Chain Boots
@@ -1944,6 +1945,7 @@ _.Zones =
 								i(121423),
 								i(121426),
 								i(121424),
+								i(121481),	-- Tranquil Azurewing Band
 							}),
 							q(37855),	-- The Last of the Last
 							q(37856),	-- The Withered

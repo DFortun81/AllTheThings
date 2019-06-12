@@ -10,7 +10,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						{	-- Criteria 1 — Slabchisel Survey
-							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 1,	-- Slabchisel Survey
 							["sourceQuests"] = {
 								25734,	-- Down in Thelgen Rock
@@ -19,7 +18,6 @@ _.Zones =
 							},
 						},
 						{	-- Criteria 2 — The Flooding of Menethil
-							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 2,	-- The Flooding of Menethil
 							["sourceQuests"] = {
 								25780,	-- Assault on Menethil Keep (definitely required)
@@ -29,7 +27,6 @@ _.Zones =
 							},
 						},
 						{	-- Criteria 3 — Engineers and Archaeologists
-							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 3,	-- Engineers and Archaeologists
 							["sourceQuests"] = { 
 								26189,	-- The Angerfang Menace
@@ -43,7 +40,6 @@ _.Zones =
 							},
 						},
 						{	-- Criteria 4 — Wardens of the Wetlands
-							["achievementID"] = 12429,	-- Wetlands Quests
 							["criteriaID"] = 4,	-- Wardens of the Wetlands
 							["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
 						},

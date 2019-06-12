@@ -573,9 +573,6 @@ _.Zones =
 					}),
 				--	q(44272)	-- Darkheart Thicket -- mission board
 				--	q(44273)	-- Darkheart Thicket -- mission board
-					q(46293,  {	-- Deadmines, Part Three?
-						["qg"] = 96479,	-- Breanni
-					}),
 					q(42680,  {	-- Deciphering the Letter
 						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 						["classes"] = { 4 },

@@ -5,17 +5,13 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			["groups"] = {
-				n(-38, {	-- Profession
-					prof(356, {
-						o(202776, {	-- Mountain Trout School
-							["groups"] = {
-								i(22739),	-- Tome of Polymorph: Turtle
-							},
-						}),
+			n(-38, {	-- Profession
+				prof(356, {	-- Fishing
+					o(202776, {	-- Mountain Trout School
+						i(22739),	-- Tome of Polymorph: Turtle
 					}),
 				}),
-			},
+			}),
 		}),
 	}),
 };

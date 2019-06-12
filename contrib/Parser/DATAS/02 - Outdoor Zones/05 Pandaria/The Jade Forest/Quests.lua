@@ -1637,9 +1637,6 @@ _.Zones =
 						["sourceQuests"] = { 42957 },	-- Journey to the East
 						["classes"] = { 10 },
 					}),
-					qa(31373, {	-- The Order of the Cloud Serpent
-						["qg"] = 64484,	-- Instructor Windspear
-					}),
 					q(29881, {	-- The Perfect Color
 						["qg"] = 56064,	-- Inkmaster Glenzu
 					}),

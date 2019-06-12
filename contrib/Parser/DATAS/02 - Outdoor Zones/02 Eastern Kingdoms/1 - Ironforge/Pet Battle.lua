@@ -3,10 +3,10 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		m(87, { 	-- Ironforge
+	m(13, {	-- Eastern Kingdoms
+		m(87, {	-- Ironforge
 			n(-25, {	-- Pet Battle
-				p(404), 	-- Long tailed Mole
+				p(404),	-- Long tailed Mole
 			}),
 		}),
 	}),

@@ -3,8 +3,12 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(13, { 	-- Eastern Kingdoms
-		{	-- Twilight Highlands
+	m(13, {	-- Eastern Kingdoms
+		m(241, {	-- Twilight Highlands
+			["achievementID"] = 4866,
+			["description"] = "|cff66ccffTwilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!.|r",
+			["maps"] = { 276 },	-- The Maelstrom (not sure if this is a special instanced version only for a TH quest, or seen elsewhere in the game)
+			["lvl"] = 84,	
 			["g"] = {
 				n(-4,   {	-- Achievements
 					h(ach(5482, {	-- Dragonmaw Tour of Duty
@@ -2277,13 +2281,6 @@ _.Zones =
 					}),
 				}),
 			},
-			["lvl"] = 84,	
-			["mapID"] = 241,
-			["maps"] = { 
-				276,	-- The Maelstrom (not sure if this is a special instanced version only for a TH quest, or seen elsewhere in the game)
-			},
-			["achievementID"] = 4866,
-			["description"] = "|cff66ccffTwilight Highlands is a new zone in Cataclysm. It is currently home of the Wildhammer dwarves and the Dragonmaw Orcs, both whom inhabited Grim Batol in the recent past. Twilight Cultists have also inhabited the area, sensing the presence of the Old Gods nearby, which is explored in the questline related to Consumed by Nightmare. There's also a Ring of Blood-style quest series that rewards a good weapon: Round Three. Fight!.|r",				
-		},
+		}),
 	}),
 };
