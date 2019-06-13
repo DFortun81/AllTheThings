@@ -3,25 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Northrend
-		["mapID"] = 113,	-- Northrend
-		["g"] = {
-			{	-- Dalaran: Northrend
-				["mapID"] = 125,	-- Dalaran: Northrend
-				["g"] = {
-					{	-- Flight Paths
-						["npcID"] = -228,	-- Flight Paths
-						["g"] = {
-							{	-- Dalaran
-								["flightPathID"] = 310,
-								["coords"] = {
-									{ 72.17, 45.79, 125 },
-								},
-							},
-						},
-					},
-				},
-			},
-		},
-	},
+	m(113, {	-- Northrend
+		m(125, {	-- Dalaran: Northrend
+			n(-228, {	-- Flight Paths
+				fp(310, {	-- Dalaran
+					["coord"] = { 72.1, 45.7, 125 },
+				}),
+			}),
+		}),
+	}),
 };
