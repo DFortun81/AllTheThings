@@ -58,6 +58,19 @@ _.Zones =
 						["coord"] = { 61.1, 26.8, 1355 },
 						["description"] = "Behind the sea urchin.",
 					},
+					{	-- Figurine 7
+						["questID"] = 56991,
+						["coord"] = { 61.6, 10.7, 1355 },
+						["description"] = "In an underwater cave with a school of |cFFFFD700Deeptide Frenzy|r swimming around. It's on a rocky outcrop at the top of the cave."
+					},
+					{	-- Figurine 8
+						["questID"] = 56989,
+						["description"] = "Drop down carefully from the path to a small cave hidden in the wall.",
+						["coords"] = {
+							{ 38.7, 49.3, 1355 },	-- cave entrance
+							{ 38.0, 49.3, 1355 },	-- figurine
+						},
+					},
 					{	-- Figurine 9
 						["questID"] = 56987,
 						["coords"] = {
@@ -70,95 +83,47 @@ _.Zones =
 						["questID"] = 56985,
 						["coord"] = { 59.1, 30.4, 1355 },
 					},
-					-- these ones are still not found:
-					{	-- Figurine 7
-						["questID"] = 56991,
-					},
-					{	-- Figurine 8
-						["questID"] = 56989,
-					},
 				}),
 				ach(13707),	-- Mrrl's Secret Stash
 				ach(13713),	-- Nothing to Scry About
-				--[[ confirmed spawn points for glimmering chests for "Nothing to Scry About"
-					{ 28.8, 43.5, 1355 },
-					{ 29.2, 40.3, 1355 },
-					{ 28.9, 47.8, 1355 },	-- dropped an Abyssal Conch i(170079) for rep
-					{ 52.3, 41.7, 1355 },
-					{ 58.5, 42.1, 1355 },
-					{ 60.1, 45.2, 1355 },
-					{ 63.0, 44.0, 1355 },
-					{ 70.9, 28.7, 1355 },
-					{ 73.9, 31.0, 1355 },	-- dropped an Extra-Slimy Snail i(167907)
-					{ 77.8, 26.4, 1355 },
-					{ 65.3, 47.5, 1355 },
-					{ 65.5, 50.5, 1355 },
-					{ 65.2, 50.6, 1355 },
-				]]--
 				ach(13699, {	-- Periodic Destruction
 					["coord"] = { 60.7, 32.1, 1355 },
 					["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.",
 					["g"] = {
-						{	-- Arcane Amalgamation
-							["criteriaID"] = 1,
+						crit(1, {	-- Arcane Amalgamation
 							["description"] = "Activate no crystals.",
-						},
-						{	-- Watery Amalgamation
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- Watery Amalgamation
 							["description"] = "Activate Lesser Benthic Arcanocrystal",
-						},
-						{	-- Burning Amalgamation
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Burning Amalgamation
 							["description"] = "Activate Lesser Pyroclasmic Arcanocrystal",
-						},
-						{	-- Dusty Amalgamation
-							["criteriaID"] = 4,
+						}),
+						crit(4, {	-- Dusty Amalgamation
 							["description"] = "Activate Lesser Lithic Arcanocrystal",
-						},
-						{	-- Zomera
-							["criteriaID"] = 5,
-						},
-						{	-- Omus
-							["criteriaID"] = 6,
-						},
-						{	-- Osgen
-							["criteriaID"] = 7,
-						},
-						{	-- Moghiea
-							["criteriaID"] = 8,
-						},
-						{	-- Xue
-							["criteriaID"] = 9,
-						},
-						{	-- Ungormath
-							["criteriaID"] = 10,
-						},
-						{	-- Spawn of Salgos
-							["criteriaID"] = 11,
-						},
-						{	-- Herald of Salgos
-							["criteriaID"] = 12,
-						},
-						{	-- Salgos the Eternal
-							["criteriaID"] = 13,
-						},
+						}),
+						crit(5),	-- Zomera
+						crit(6),	-- Omus
+						crit(7),	-- Osgen
+						crit(8),	-- Moghiea
+						crit(9),	-- Xue
+						crit(10),	-- Ungormath
+						crit(11),	-- Spawn of Salgos
+						crit(12),	-- Herald of Salgos
+						crit(13),	-- Salgos the Eternal
 					},
 				}),
 				ach(13765),	-- Subaquatic Support
 				ach(13710, {	-- Sunken Ambitions
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{	-- Welcome to Nazjatar
-							["criteriaID"] = 1,
+						crit(1, {	-- Welcome to Nazjatar
 							["sourceQuest"] = 56350,	-- Scouting the Palace
-						},
-						{	-- Secrets in the Sea
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- Secrets in the Sea
 							["sourceQuest"] = 55937,	-- Clearing Out the Cache
-						},
-						{	-- Turning the Tide
-							["criteriaID"] = 3,
-						},
+						}),
+						crit(3),	-- Turning the Tide
 					},
 				}),
 				ach(13722, {	-- Terror of the Tadpoles
@@ -190,18 +155,15 @@ _.Zones =
 				ach(13709, {	-- Unfathomable
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						{	-- Welcome to Nazjatar
-							["criteriaID"] = 1,
+						crit(1, {	-- Welcome to Nazjatar
 							["sourceQuest"] = 55481,	-- Scouting the Palace
-						},
-						{	-- Secrets in the Sea
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- Secrets in the Sea
 							["sourceQuest"] = 55869,	-- Clearing Out the Cache
-						},
-						{	-- Turning the Tide
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Turning the Tide
 							["sourceQuest"] = 55799,	-- The Tide Turns
-						},
+						}),
 					},
 				}),
 			}),
