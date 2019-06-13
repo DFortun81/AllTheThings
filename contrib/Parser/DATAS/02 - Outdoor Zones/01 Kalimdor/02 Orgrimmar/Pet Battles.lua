@@ -54,6 +54,7 @@ _.Zones =
 					n(63626, {	-- Varzok
 						["coord"] = { 52.6, 59.3, 85 },
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							p(75, {	-- Black Kingsnake
 								["races"] = {

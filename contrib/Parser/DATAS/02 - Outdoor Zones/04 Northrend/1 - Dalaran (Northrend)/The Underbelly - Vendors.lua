@@ -1784,143 +1784,356 @@ _.Zones =
 					n(54651, {	-- Zom Bocom (Same name, different npc)
 						["u"] = 43,	-- Vendor no longer exists
 						["g"] = {
-							un(2, i(70185)),	-- Ruthless Gladiator's Gavel
-							un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
-							un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
-							un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
-							un(2, i(70191)),	-- Ruthless Gladiator's Shiv
-							un(2, i(70203)),	-- Ruthless Gladiator's Shanker
-							un(2, i(70204)),	-- Ruthless Gladiator's Hacker
-							un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
-							un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
-							un(2, i(70200)),	-- Ruthless Gladiator's Slicer
-							un(2, i(70194)),	-- Ruthless Gladiator's Rifle
-							un(2, i(70192)),	-- Ruthless Gladiator's Longbow
-							un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
-							un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
-							un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
-							un(2, i(70178)),	-- Ruthless Gladiator's Greatsword)
-							un(2, i(70182)),	-- Ruthless Gladiator's Pike
-							un(2, i(70179)),	-- Ruthless Gladiator's Staff
-							un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
-							un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
-							un(2, i(70186)),	-- Ruthless Gladiator's Right Render
-							un(2, i(70187)),	-- Ruthless Gladiator's Ripper
-							un(2, i(70189)),	-- Ruthless Gladiator's Slasher
-							un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
-							un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
-							un(2, i(70207)),	-- Ruthless Gladiator's Barrier
-							un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
-							un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
-							un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
-							un(2, i(70210)),	-- Ruthless Gladiator's Endgame)
-							un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
-							un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
-							un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
-							un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
-							un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
-							un(2, i(70433)),	-- Ruthless Gladi Ringmail Armor
-							un(2, i(70464)),	-- Ruthless Gladi Ringmail Spaulders
-							un(2, i(70465)),	-- Ruthless Gladi Ringmail Legs
-							un(2, i(70466)),	-- Ruthless Gladi Ringmail Helm
-							un(2, i(70467)),	-- Ruthless Gladi Ringmail Gauntlets
-							un(2, i(70434)),	-- Ruthless Gladi Chain Spaulders
-							un(2, i(70435)),	-- Ruthless Gladi Chain Legs
-							un(2, i(70440)),	-- Ruthless Gladi Chain Helm
-							un(2, i(70441)),	-- Ruthless Gladi Chain Gauntlets
-							un(2, i(70476)),	-- Ruthless Gladi Chain Armor
-							un(2, i(70456)),	-- Ruthless Gladi Linked Spaulders
-							un(2, i(70457)),	-- Ruthless Gladi Linked Legs
-							un(2, i(70458)),	-- Ruthless Gladi Linked Helm
-							un(2, i(70459)),	-- Ruthless Gladi Linked Gauntlets
-							un(2, i(70460)),	-- Ruthless Gladi Linked Armor
-							un(2, i(70500)),	-- Ruthless Gladi Sabatons of Cruelty
-							un(2, i(70501)),	-- Ruthless Gladi Sabatons of Alacrity
-							un(2, i(70508)),	-- Ruthless Gladi Sabatons of Alacrity
-							un(2, i(70509)),	-- Ruthless Gladi Sabatons of Meditation
-							un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide helm
-							un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide gloves
-							un(2, i(70430)),	-- Ruthless Gladiator's kodohide spaulders
-							un(2, i(70431)),	-- Ruthless Gladiator's kodohide robes
-							un(2, i(70432)),	-- Ruthless Gladiator's kodohide legguards
-							un(2, i(70436)),	-- Ruthless Gladiator's kodohide helm
-							un(2, i(70437)),	-- Ruthless Gladiator's kodohide gloves
-							un(2, i(70438)),	-- Ruthless Gladiator's dragonhide spaulders
-							un(2, i(70439)),	-- Ruthless Gladiator's dragonhide robes
-							un(2, i(70442)),	-- Ruthless Gladiator's leather spaulders
-							un(2, i(70443)),	-- Ruthless Gladiator's leather legguards
-							un(2, i(70444)),	-- Ruthless Gladiator's leather helm
-							un(2, i(70445)),	-- Ruthless Gladiator's leather gloves
-							un(2, i(70446)),	-- Ruthless Gladiator's leather tunic
-							un(2, i(70447)),	-- Ruthless Gladiator's wyrmhide spaulders
-							un(2, i(70448)),	-- Ruthless Gladiator's wyrmhide robes
-							un(2, i(70449)),	-- Ruthless Gladiator's wyrmhide legguards
-							un(2, i(70484)),	-- Ruthless Gladiator's dragonhide legguards
-							un(2, i(70485)),	-- Ruthless Gladiator's dragonhide helm
-							un(2, i(70486)),	-- Ruthless Gladiator's dragonhide gloves
-							un(2, i(70498)),	-- Ruthless Gladiator's footguards of mediatiton
-							un(2, i(70499)),	-- Ruthless Gladiator's footguards of alacrity
-							un(2, i(70506)),	-- Ruthless Gladiator's boots of cruelty
-							un(2, i(70507)),	-- Ruthless Gladiator's boots of alacrity
-							un(2, i(70415)),	-- Ruthless Gladi Ornamented Spaulders
-							un(2, i(70416)),	-- Ruthless Gladi Ornamented Legs
-							un(2, i(70417)),	-- Ruthless Gladi Ornamented Head
-							un(2, i(70418)),	-- Ruthless Gladi Ornamented Gloves
-							un(2, i(70419)),	-- Ruthless Gladi Ornamented Chest
-							un(2, i(70477)),	-- Ruthless Gladi Plate Shoulders
-							un(2, i(70478)),	-- Ruthless Gladi Plate Legs
-							un(2, i(70479)),	-- Ruthless Gladi Plate Helm
-							un(2, i(70480)),	-- Ruthless Gladi Plate Gloves
-							un(2, i(70481)),	-- Ruthless Gladi Plate Chest
-							un(2, i(70482)),	-- Ruthless Gladi Scaled shoulders
-							un(2, i(70483)),	-- Ruthless Gladi Scaled legs
-							un(2, i(70487)),	-- Ruthless Gladi Scaled helm
-							un(2, i(70488)),	-- Ruthless Gladi Scaled gloves
-							un(2, i(70489)),	-- Ruthless Gladi Scaled chest
-							un(2, i(70490)),	-- Ruthless Gladi Dreadplate Shoulders
-							un(2, i(70491)),	-- Ruthless Gladi Dreadplate Legs
-							un(2, i(70492)),	-- Ruthless Gladi Dreadplate Helm
-							un(2, i(70493)),	-- Ruthless Gladi Dreadplate Gloves
-							un(2, i(70494)),	-- Ruthless Gladi Dreadplate Chest
-							un(2, i(70502)),	-- Ruthless Gladi Dreadplate Greaves of alacrity
-							un(2, i(70503)),	-- Ruthless Gladi Dreadplate greaves of meditation
-							un(2, i(70504)),	-- Ruthless Gladi Dreadplate warboots of cruelty
-							un(2, i(70505)),	-- Ruthless Gladi Dreadplate warboots of alacrity
-							un(2, i(72322)),	-- Ruthless Gladi Drape of Prowess. S11 Version
-							un(2, i(72323)),	-- Ruthless Gladi Drape of Diffusion. S11 Version
-							un(2, i(72324)),	-- Ruthless Gladi Drape of Meditation. S11 Version
-							un(2, i(72362)),	-- Ruthless Gladi Links of Cruelty. S11 Version
-							un(2, i(72363)),	-- Ruthless Gladi Links of Accuracy. S11 Version
-							un(2, i(72364)),	-- Ruthless Gladi Sabatons of Cruelty. S11 Version
-							un(2, i(72365)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-							un(2, i(72366)),	-- Ruthless Gladi Wristguard of Alacrity. S11 Version
-							un(2, i(72367)),	-- Ruthless Gladi Wristguard of Accuracy. S11 Version
-							un(2, i(72368)),	-- Ruthless Gladi Chain Armor. S11 Version
-							un(2, i(72369)),	-- Ruthless Gladi Chain gauntlets. S11 Version
-							un(2, i(72370)),	-- Ruthless Gladi helm. S11 Version
-							un(2, i(72371)),	-- Ruthless Gladi legs. S11 Version
-							un(2, i(72372)),	-- Ruthless Gladi spaulders. S11 Version
-							un(2, i(72427)),	-- Ruthless Gladi waistguard of meditation. S11 Version
-							un(2, i(72428)),	-- Ruthless Gladi sabatons of alacrity. S11 Version
-							un(2, i(72429)),	-- Ruthless Gladi sabatons of meditation. S11 Version
-							un(2, i(72430)),	-- Ruthless Gladi armsband of prower. S11 Version
-							un(2, i(72431)),	-- Ruthless Gladi armbands of meditation. S11 Version
-							un(2, i(72432)),	-- Ruthless Gladi ringmail armor. S11 Version
-							un(2, i(72433)),	-- Ruthless Gladi ringmail gauntlets. S11 Version
-							un(2, i(72434)),	-- Ruthless Gladi ringmail helm. S11 Version
-							un(2, i(72435)),	-- Ruthless Gladi ringmail legs. S11 Version
-							un(2, i(72436)),	-- Ruthless Gladi ringmail spaulders. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi linked armor. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi linked gauntlets. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi linked helm. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi linked legs. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi linked spaulders. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi waistguard of cruelty. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi mail armor. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi mail gauntlets. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi mail helm. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi mail legs. S11 Version
-							un(2, i(72437)),	-- Ruthless Gladi mail spaulders. S11 Version
+							n(-4178, {	-- Season 10 (need new Header)
+								n(-660, {	-- Elite PvP Gear
+									n(-319, {	-- Weapons
+										un(2, i(70178)),	-- Ruthless Gladiator's Greatsword
+										un(2, i(70179)),	-- Ruthless Gladiator's Staff
+										un(2, i(70180)),	-- Ruthless Gladiator's Energy Staff
+										un(2, i(70181)),	-- Ruthless Gladiator's Battle Staff
+										un(2, i(70182)),	-- Ruthless Gladiator's Pike
+										un(2, i(70183)),	-- Ruthless Gladiator's Bonegrinder
+										un(2, i(70184)),	-- Ruthless Gladiator's Decapitator
+										un(2, i(70185)),	-- Ruthless Gladiator's Gavel
+										un(2, i(70186)),	-- Ruthless Gladiator's Right Render
+										un(2, i(70187)),	-- Ruthless Gladiator's Ripper
+										un(2, i(70188)),	-- Ruthless Gladiator's Spellblade
+										un(2, i(70189)),	-- Ruthless Gladiator's Slasher
+										un(2, i(70190)),	-- Ruthless Gladiator's Fleshslicer
+										un(2, i(70191)),	-- Ruthless Gladiator's Shiv
+										un(2, i(70192)),	-- Ruthless Gladiator's Longbow
+										un(2, i(70193)),	-- Ruthless Gladiator's Heavy Crossbow
+										un(2, i(70194)),	-- Ruthless Gladiator's Rifle
+										un(2, i(70195)),	-- Ruthless Gladiator's Baton of Light
+										un(2, i(70196)),	-- Ruthless Gladiator's Touch of Defeat
+										un(2, i(70199)),	-- Ruthless Gladiator's Quickblade
+										un(2, i(70200)),	-- Ruthless Gladiator's Slicer
+										un(2, i(70201)),	-- Ruthless Gladiator's Bonecracker
+										un(2, i(70202)),	-- Ruthless Gladiator's Pummeler
+										un(2, i(70203)),	-- Ruthless Gladiator's Shanker
+										un(2, i(70204)),	-- Ruthless Gladiator's Hacker
+										un(2, i(70205)),	-- Ruthless Gladiator's Cleaver
+										un(2, i(70206)),	-- Ruthless Gladiator's Redoubt
+										un(2, i(70207)),	-- Ruthless Gladiator's Barrier
+										un(2, i(70208)),	-- Ruthless Gladiator's Shield Wall
+										un(2, i(70210)),	-- Ruthless Gladiator's Endgame
+									}),
+									cl(6, {	-- Death Knight
+										un(2, i(70490)),	-- Ruthless Gladiator's Dreadplate Shoulders
+										un(2, i(70491)),	-- Ruthless Gladiator's Dreadplate Legs
+										un(2, i(70492)),	-- Ruthless Gladiator's Dreadplate Helm
+										un(2, i(70493)),	-- Ruthless Gladiator's Dreadplate Gloves
+										un(2, i(70494)),	-- Ruthless Gladiator's Dreadplate Chest
+									}),
+									cl(11, {	-- Druid
+										un(2, i(70438)),	-- Ruthless Gladiator's Dragonhide Spaulders
+										un(2, i(70439)),	-- Ruthless Gladiator's Dragonhide Robes
+										un(2, i(70484)),	-- Ruthless Gladiator's Dragonhide Legguards
+										un(2, i(70485)),	-- Ruthless Gladiator's Dragonhide Helm
+										un(2, i(70486)),	-- Ruthless Gladiator's Dragonhide Gloves
+										un(2, i(70430)),	-- Ruthless Gladiator's Kodohide Spaulders
+										un(2, i(70431)),	-- Ruthless Gladiator's Kodohide Robes
+										un(2, i(70432)),	-- Ruthless Gladiator's Kodohide Legguards
+										un(2, i(70436)),	-- Ruthless Gladiator's Kodohide Helm
+										un(2, i(70437)),	-- Ruthless Gladiator's Kodohide Gloves
+										un(2, i(70447)),	-- Ruthless Gladiator's Wyrmhide Spaulders
+										un(2, i(70448)),	-- Ruthless Gladiator's Wyrmhide Robes
+										un(2, i(70449)),	-- Ruthless Gladiator's Wyrmhide Legguards
+										un(2, i(70428)),	-- Ruthless Gladiator's Wyrmhide Helm
+										un(2, i(70429)),	-- Ruthless Gladiator's Wyrmhide Gloves
+									}),
+									cl(3, {	-- Hunter
+										un(2, i(70434)),	-- Ruthless Gladiator's Chain Spaulders
+										un(2, i(70435)),	-- Ruthless Gladiator's Chain Legs
+										un(2, i(70440)),	-- Ruthless Gladiator's Chain Helm
+										un(2, i(70441)),	-- Ruthless Gladiator's Chain Gauntlets
+										un(2, i(70476)),	-- Ruthless Gladiator's Chain Armor
+									}),
+									cl(8, {	-- Mage
+										un(2, i(70454)), -- Ruthless Gladiator's Silk Amice
+										un(2, i(70455)), -- Ruthless Gladiator's Silk Robe
+										un(2, i(70461)), -- Ruthless Gladiator's Silk Trousers
+										un(2, i(70462)), -- Ruthless Gladiator's Silk Cowl
+										un(2, i(70463)), -- Ruthless Gladiator's Silk Handguards
+									}),
+									cl(2, {	-- Paladin
+										un(2, i(70482)),	-- Ruthless Gladiator's Scaled shoulders
+										un(2, i(70483)),	-- Ruthless Gladiator's Scaled Legs
+										un(2, i(70487)),	-- Ruthless Gladiator's Scaled Helm
+										un(2, i(70488)),	-- Ruthless Gladiator's Scaled Gloves
+										un(2, i(70489)),	-- Ruthless Gladiator's Scaled Chest
+										un(2, i(70415)),	-- Ruthless Gladiator's Ornamented Spaulders
+										un(2, i(70416)),	-- Ruthless Gladiator's Ornamented Legs
+										un(2, i(70417)),	-- Ruthless Gladiator's Ornamented Head
+										un(2, i(70418)),	-- Ruthless Gladiator's Ornamented Gloves
+										un(2, i(70419)),	-- Ruthless Gladiator's Ornamented Chest
+									}),
+									cl(5, {	-- Priest
+										un(2, i(70450)), -- Ruthless Gladiator's Mooncloth Robe
+										un(2, i(70451)), -- Ruthless Gladiator's Mooncloth Leggings
+										un(2, i(70452)), -- Ruthless Gladiator's Mooncloth Helm
+										un(2, i(70453)), -- Ruthless Gladiator's Mooncloth Gloves
+										un(2, i(70470)), -- Ruthless Gladiator's Satin Mantle
+										un(2, i(70471)), -- Ruthless Gladiator's Satin Robe
+										un(2, i(70472)), -- Ruthless Gladiator's Satin Leggings
+										un(2, i(70473)), -- Ruthless Gladiator's Satin Hood
+										un(2, i(70474)), -- Ruthless Gladiator's Satin Gloves
+										un(2, i(70475)), -- Ruthless Gladiator's Mooncloth Mantle
+									}),
+									cl(4, {	-- Rogue
+										un(2, i(70442)),	-- Ruthless Gladiator's Leather Spaulders
+										un(2, i(70443)),	-- Ruthless Gladiator's Leather Legguards
+										un(2, i(70444)),	-- Ruthless Gladiator's Leather Helm
+										un(2, i(70445)),	-- Ruthless Gladiator's Leather Gloves
+										un(2, i(70446)),	-- Ruthless Gladiator's Leather Tunic
+									}),
+									cl(7, {	-- Shaman
+										un(2, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
+										un(2, i(70421)),	-- Ruthless Gladiator's Mail Legs
+										un(2, i(70422)),	-- Ruthless Gladiator's Mail Helm
+										un(2, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+										un(2, i(70424)),	-- Ruthless Gladiator's Mail Armor
+										un(2, i(70456)),	-- Ruthless Gladiator's Linked Spaulders
+										un(2, i(70457)),	-- Ruthless Gladiator's Linked Legs
+										un(2, i(70458)),	-- Ruthless Gladiator's Linked Helm
+										un(2, i(70459)),	-- Ruthless Gladiator's Linked Gauntlets
+										un(2, i(70460)),	-- Ruthless Gladiator's Linked Armor
+										un(2, i(70433)),	-- Ruthless Gladiator's Ringmail Armor
+										un(2, i(70464)),	-- Ruthless Gladiator's Ringmail Spaulders
+										un(2, i(70465)),	-- Ruthless Gladiator's Ringmail Legs
+										un(2, i(70466)),	-- Ruthless Gladiator's Ringmail Helm
+										un(2, i(70467)),	-- Ruthless Gladiator's Ringmail Gauntlets
+									}),
+									cl(9, {	-- Warlock
+										un(2, i(70425)), -- Ruthless Gladiator's Felweave Amice
+										un(2, i(70426)), -- Ruthless Gladiator's Felweave Raiment
+										un(2, i(70427)), -- Ruthless Gladiator's Felweave Trousers
+										un(2, i(70468)), -- Ruthless Gladiator's Felweave Cowl
+										un(2, i(70469)), -- Ruthless Gladiator's Felweave Handguards
+									}),
+									cl(1, {	-- Warrior
+										un(2, i(70477)),	-- Ruthless Gladiator's Plate Shoulders
+										un(2, i(70478)),	-- Ruthless Gladiator's Plate Legs
+										un(2, i(70479)),	-- Ruthless Gladiator's Plate Helm
+										un(2, i(70480)),	-- Ruthless Gladiator's Plate Gloves
+										un(2, i(70481)),	-- Ruthless Gladiator's Plate Chest
+									}),
+									n(-330, {	-- Feet
+										un(2, i(70495)), -- Ruthless Gladiator's Treads of Cruelty	
+										un(2, i(70496)), -- Ruthless Gladiator's Treads of Alacrity	
+										un(2, i(70497)), -- Ruthless Gladiator's Treads of Meditation	
+										un(2, i(70498)),	-- Ruthless Gladiator's Footguards of Mediatiton
+										un(2, i(70499)),	-- Ruthless Gladiator's Footguards of Alacrity
+										un(2, i(70500)),	-- Ruthless Gladiator's Sabatons of Cruelty
+										un(2, i(70501)),	-- Ruthless Gladiator's Sabatons of Alacrity
+										un(2, i(70502)),	-- Ruthless Gladiator's Greaves of Alacrity
+										un(2, i(70503)),	-- Ruthless Gladiator's Greaves of Meditation
+										un(2, i(70504)),	-- Ruthless Gladiator's Warboots of Cruelty
+										un(2, i(70505)),	-- Ruthless Gladiator's Warboots of Alacrity
+										un(2, i(70506)),	-- Ruthless Gladiator's Boots of Cruelty
+										un(2, i(70507)),	-- Ruthless Gladiator's Boots of Alacrity
+										un(2, i(70508)),	-- Ruthless Gladiator's Sabatons of Alacrity
+										un(2, i(70509)),	-- Ruthless Gladiator's Sabatons of Meditation
+									}),
+								}),
+							}),
+							n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
+								cl(6, {	-- Death Knight
+									un(2, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
+									un(2, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
+									un(2, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
+									un(2, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
+									un(2, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
+								}),
+								cl(11, {	-- Druid
+									un(2, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
+									un(2, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
+									un(2, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
+									un(2, i(72340)), -- Ruthless Gladiator's Dragonhide Robes
+									un(2, i(72341)), -- Ruthless Gladiator's Dragonhide Spaulders
+									un(2, i(72345)), -- Ruthless Gladiator's Kodohide Gloves
+									un(2, i(72346)), -- Ruthless Gladiator's Kodohide Helm
+									un(2, i(72347)), -- Ruthless Gladiator's Kodohide Legguards
+									un(2, i(72348)), -- Ruthless Gladiator's Kodohide Robes
+									un(2, i(72349)), -- Ruthless Gladiator's Kodohide Spaulders
+									un(2, i(72353)), -- Ruthless Gladiator's Wyrmhide Gloves
+									un(2, i(72354)), -- Ruthless Gladiator's Wyrmhide Helm
+									un(2, i(72355)), -- Ruthless Gladiator's Wyrmhide Legguards
+									un(2, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
+									un(2, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
+								}),
+								cl(3, {	-- Hunter
+									un(2, i(72368)), -- Ruthless Gladiator's Chain Armor
+									un(2, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
+									un(2, i(72370)), -- Ruthless Gladiator's Chain Helm
+									un(2, i(72371)), -- Ruthless Gladiator's Chain Leggings
+									un(2, i(72372)), -- Ruthless Gladiator's Chain Spaulders
+								}),
+								cl(8, {	-- Mage
+									un(2, i(72373)), -- Ruthless Gladiator's Silk Handguards
+									un(2, i(72374)), -- Ruthless Gladiator's Silk Cowl
+									un(2, i(72375)), -- Ruthless Gladiator's Silk Trousers
+									un(2, i(72376)), -- Ruthless Gladiator's Silk Robe
+									un(2, i(72377)), -- Ruthless Gladiator's Silk Amice
+								}),
+								cl(2, {	-- Paladin
+									un(2, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
+									un(2, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
+									un(2, i(72380)), -- Ruthless Gladiator's Scaled Helm
+									un(2, i(72381)), -- Ruthless Gladiator's Scaled Legguards
+									un(2, i(72382)), -- Ruthless Gladiator's Scaled Shoulders
+									un(2, i(72389)), -- Ruthless Gladiator's Ornamented Chestguard
+									un(2, i(72390)), -- Ruthless Gladiator's Ornamented Gloves
+									un(2, i(72391)), -- Ruthless Gladiator's Ornamented Headcover
+									un(2, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
+									un(2, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
+								}),
+								cl(5, {	-- Priest
+									un(2, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
+									un(2, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
+									un(2, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
+									un(2, i(72403)), -- Ruthless Gladiator's Mooncloth Robe
+									un(2, i(72404)), -- Ruthless Gladiator's Mooncloth Mantle
+									un(2, i(72405)), -- Ruthless Gladiator's Satin Gloves
+									un(2, i(72406)), -- Ruthless Gladiator's Satin Hood
+									un(2, i(72407)), -- Ruthless Gladiator's Satin Leggings
+									un(2, i(72408)), -- Ruthless Gladiator's Satin Robe
+									un(2, i(72409)), -- Ruthless Gladiator's Satin Mantle
+								}),
+								cl(4, {	-- Rogue
+									un(2, i(72422)), -- Ruthless Gladiator's Leather Tunic
+									un(2, i(72423)), -- Ruthless Gladiator's Leather Gloves
+									un(2, i(72424)), -- Ruthless Gladiator's Leather Helm
+									un(2, i(72425)), -- Ruthless Gladiator's Leather Legguards
+									un(2, i(72426)), -- Ruthless Gladiator's Leather Spaulders
+								}),
+								cl(7, {	-- Shaman
+									un(2, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
+									un(2, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
+									un(2, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
+									un(2, i(72435)),	-- Ruthless Gladiator's Ringmail Legs
+									un(2, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
+									un(2, i(72437)),	-- Ruthless Gladiator's Linked Armor
+									un(2, i(72437)),	-- Ruthless Gladiator's Linked gauntlets
+									un(2, i(72437)),	-- Ruthless Gladiator's Linked Helm
+									un(2, i(72437)),	-- Ruthless Gladiator's Linked Legs
+									un(2, i(72437)),	-- Ruthless Gladiator's Linked Spaulders
+									un(2, i(72437)),	-- Ruthless Gladiator's Mail Armor
+									un(2, i(72437)),	-- Ruthless Gladiator's Mail gauntlets
+									un(2, i(72437)),	-- Ruthless Gladiator's Mail Helm
+									un(2, i(72437)),	-- Ruthless Gladiator's Mail Legs
+									un(2, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
+								}),
+								cl(9, {	-- Warlock
+									un(2, i(72459)), -- Ruthless Gladiator's Felweave Handguards
+									un(2, i(72460)), -- Ruthless Gladiator's Felweave Cowl
+									un(2, i(72461)), -- Ruthless Gladiator's Felweave Trousers
+									un(2, i(72462)), -- Ruthless Gladiator's Felweave Raiment
+									un(2, i(72463)), -- Ruthless Gladiator's Felweave Amice
+								}),
+								cl(1, {	-- Warrior
+									un(2, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
+									un(2, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
+									un(2, i(72466)), -- Ruthless Gladiator's Plate Helm
+									un(2, i(72467)), -- Ruthless Gladiator's Plate Legguards
+									un(2, i(72468)), -- Ruthless Gladiator's Plate Shoulders
+								}),
+								n(-322, {	-- Back
+									un(2, i(72305)), -- Ruthless Gladiator's Cape of Cruelty
+									un(2, i(72306)), -- Ruthless Gladiator's Cape of Prowess
+									un(2, i(72322)), -- Ruthless Gladiator's Drape of Prowess
+									un(2, i(72323)), -- Ruthless Gladiator's Drape of Diffusion
+									un(2, i(72324)), -- Ruthless Gladiator's Drape of Meditation
+									un(2, i(72451)), -- Ruthless Gladiator's Cloak of Alacrity
+									un(2, i(72452)), -- Ruthless Gladiator's Cloak of Prowess
+								}),
+								n(-326, {	-- Wrists
+									un(2, i(72319)), -- Ruthless Gladiator's Cuffs of Accuracy
+									un(2, i(72320)), -- Ruthless Gladiator's Cuffs of Prowess
+									un(2, i(72321)), -- Ruthless Gladiator's Cuffs of Meditation
+									un(2, i(72344)), -- Ruthless Gladiator's Bindings of Meditation
+									un(2, i(72352)), -- Ruthless Gladiator's Bindings of Prowess
+									un(2, i(72366)), -- Ruthless Gladiator's Wristguards of Alacrity
+									un(2, i(72367)), -- Ruthless Gladiator's Wristguards of Accuracy
+									un(2, i(72387)), -- Ruthless Gladiator's Bracers of Prowess
+									un(2, i(72388)), -- Ruthless Gladiator's Bracers of Meditation
+									un(2, i(72398)), -- Ruthless Gladiator's Armplates of Proficiency
+									un(2, i(72399)), -- Ruthless Gladiator's Armplates of Alacrity
+									un(2, i(72420)), -- Ruthless Gladiator's Armwraps of Alacrity
+									un(2, i(72421)), -- Ruthless Gladiator's Armwraps of Accuracy
+									un(2, i(72430)), -- Ruthless Gladiator's Armbands of Prowess
+									un(2, i(72431)), -- Ruthless Gladiator's Armbands of Meditation
+								}),
+								n(-328, {	-- Waist
+									un(2, i(72313)), -- Ruthless Gladiator's Cord of Cruelty
+									un(2, i(72314)), -- Ruthless Gladiator's Cord of Accuracy
+									un(2, i(72315)), -- Ruthless Gladiator's Cord of Meditation
+									un(2, i(72342)), -- Ruthless Gladiator's Belt of Meditation
+									un(2, i(72350)), -- Ruthless Gladiator's Belt of Cruelty
+									un(2, i(72362)), -- Ruthless Gladiator's Links of Cruelty
+									un(2, i(72363)), -- Ruthless Gladiator's Links of Accuracy
+									un(2, i(72383)), -- Ruthless Gladiator's Clasp of Cruelty
+									un(2, i(72384)), -- Ruthless Gladiator's Clasp of Meditation
+									un(2, i(72394)), -- Ruthless Gladiator's Girdle of Accuracy
+									un(2, i(72395)), -- Ruthless Gladiator's Girdle of Prowess
+									un(2, i(72416)), -- Ruthless Gladiator's Waistband of Cruelty
+									un(2, i(72417)), -- Ruthless Gladiator's Waistband of Accuracy
+									un(2, i(72427)), -- Ruthless Gladiator's Waistguard of Meditation
+									un(2, i(72442)), -- Ruthless Gladiator's Waistguard of Cruelty
+								}),
+								n(-330, {	-- Feet
+									un(2, i(72316)), -- Ruthless Gladiator's Treads of Cruelty
+									un(2, i(72317)), -- Ruthless Gladiator's Treads of Alacrity
+									un(2, i(72318)), -- Ruthless Gladiator's Treads of Meditation
+									un(2, i(72343)), -- Ruthless Gladiator's Footguards of Meditation
+									un(2, i(72351)), -- Ruthless Gladiator's Footguards of Alacrity
+									un(2, i(72364)), -- Ruthless Gladiator's Sabatons of Cruelty
+									un(2, i(72365)), -- Ruthless Gladiator's Sabatons of Alacrity
+									un(2, i(72385)), -- Ruthless Gladiator's Greaves of Alacrity
+									un(2, i(72386)), -- Ruthless Gladiator's Greaves of Meditation
+									un(2, i(72396)), -- Ruthless Gladiator's Warboots of Cruelty
+									un(2, i(72397)), -- Ruthless Gladiator's Warboots of Alacrity
+									un(2, i(72418)), -- Ruthless Gladiator's Boots of Cruelty
+									un(2, i(72419)), -- Ruthless Gladiator's Boots of Alacrity
+									un(2, i(72428)), -- Ruthless Gladiator's Sabatons of Alacrity
+									un(2, i(72429)), -- Ruthless Gladiator's Sabatons of Meditation
+								}),
+								n(-384,	{	-- Neck
+									un(2, i(72307)), -- Ruthless Gladiator's Necklace of Proficiency
+									un(2, i(72308)), -- Ruthless Gladiator's Necklace of Prowess
+									un(2, i(72325)), -- Ruthless Gladiator's Pendant of Alacrity
+									un(2, i(72326)), -- Ruthless Gladiator's Pendant of Diffusion
+									un(2, i(72327)), -- Ruthless Gladiator's Pendant of Meditation
+									un(2, i(72453)), -- Ruthless Gladiator's Choker of Proficiency
+									un(2, i(72454)), -- Ruthless Gladiator's Choker of Accuracy
+								}),
+								n(-385,	{	-- Finger
+									un(2, i(72311)), -- Ruthless Gladiator's Ring of Cruelty
+									un(2, i(72312)), -- Ruthless Gladiator's Ring of Accuracy
+									un(2, i(72329)), -- Ruthless Gladiator's Band of Cruelty
+									un(2, i(72330)), -- Ruthless Gladiator's Band of Accuracy
+									un(2, i(72331)), -- Ruthless Gladiator's Band of Meditation
+									un(2, i(72457)), -- Ruthless Gladiator's Signet of Cruelty
+									un(2, i(72458)), -- Ruthless Gladiator's Signet of Accuracy
+								}),
+								n(-386,	{	-- Trinket
+									un(2, i(72304)), -- Ruthless Gladiator's Badge of Conquest
+									un(2, i(72309)), -- Ruthless Gladiator's Insignia of Conquest
+									un(2, i(72359)), -- Ruthless Gladiator's Emblem of Cruelty
+									un(2, i(72360)), -- Ruthless Gladiator's Emblem of Tenacity
+									un(2, i(72361)), -- Ruthless Gladiator's Emblem of Meditation
+									un(2, i(72448)), -- Ruthless Gladiator's Badge of Dominance
+									un(2, i(72449)), -- Ruthless Gladiator's Insignia of Dominance
+									un(2, i(72450)), -- Ruthless Gladiator's Badge of Victory
+									un(2, i(72455)), -- Ruthless Gladiator's Insignia of Victory
+									un(2, i(72411)), -- Ruthless Gladiator's Medallion of Cruelty (Alliance)
+									un(2, i(72412)), -- Ruthless Gladiator's Medallion of Tenacity (Alliance)
+									un(2, i(72414)), -- Ruthless Gladiator's Medallion of Meditation (Alliance)
+									un(2, i(72410)), -- Ruthless Gladiator's Medallion of Cruelty (Horde)
+									un(2, i(72413)), -- Ruthless Gladiator's Medallion of Tenacity (Horde)
+									un(2, i(72415)), -- Ruthless Gladiator's Medallion of Meditation (Horde)
+								}),
+							}),
 						},
 					}),
 				}),
