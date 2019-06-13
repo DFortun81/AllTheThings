@@ -98,9 +98,7 @@ _.Zones =
 						}),
 						q(11085, {	-- Escape from Skettis
 							["qg"] = 23383,	-- Skyguard Prisoner
-							["coords"] = {
-								{ 61.1, 75.5, 108 },
-							},
+							["coord"] = { 61.1, 75.5, 108 },
 							["repeatable"] = true,
 						}),
 						q(11008, {	-- Fires Over Skettis

@@ -14,7 +14,7 @@ _.Zones =
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["coord"] = { 80.3, 64.2, 102 },
 								["g"] = {
-									i(24402)	-- Package of Identified Plants
+									i(24402),	-- Package of Identified Plants
 								},
 							}),
 							q(9784, {	-- Identify Plant Parts
@@ -24,7 +24,7 @@ _.Zones =
 								["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
 								["repeatable"] = true,
 								["g"] = {
-									i(24402)	-- Package of Identified Plants
+									i(24402),	-- Package of Identified Plants
 								},
 							}),
 							i(24402, {	-- Package of Identified Plants
@@ -137,47 +137,45 @@ _.Zones =
 								["coord"] = { 18.27, 51.12, 102 },
 								["g"] = {
 									i(24245, {	-- Glowcap
-										["g"] = {
-											i(34478, {	-- Tiny Sporebat
-												["description"] = "Cost: 30 Glowcaps",
-											}),
-											i(31775, {	-- Sporeggar Tabard
-												["description"] = "Cost: 10 Glowcaps",
-											}),
-											i(38229, {	-- Pattern: Mycah's Botanical Bag
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(30156, {	-- Recipe: Clam Bar
-												["description"] = "Cost: 1 Glowcap",
-											}),
-											i(22906, {	-- Recipe: Shrouding Potion
-												["description"] = "Cost: 30 Glowcaps",
-											}),
-											i(22916, {	-- Recipe: Transmute Primal Earth to Water
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(29150, {	-- Hardened Stone Shard
-												["description"] = "Cost: 45 Glowcaps",
-											}),
-											i(25828, {	-- Petrified Lichen Guard
-												["description"] = "Cost: 15 Glowcaps",
-											}),
-											i(29149, {	-- Sporeling's Firestick
-												["description"] = "Cost: 20 Glowcaps",
-											}),
-											i(25827, {	-- Muck-Covered Drape
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(24539, {	-- Marsh Lichen
-												["description"] = "Cost: 2 Glowcaps",
-											}),
-											i(25550, {	-- Redcap Toadstool
-												["description"] = "Cost: 1 Glowcap",
-											}),
-											i(25548, {	-- Tallstalk Mushroom
-												["description"] = "Cost: 1 Glowcap",
-											}),
-										},
+										i(34478, {	-- Tiny Sporebat
+											["description"] = "Cost: 30 Glowcaps",
+										}),
+										i(31775, {	-- Sporeggar Tabard
+											["description"] = "Cost: 10 Glowcaps",
+										}),
+										i(38229, {	-- Pattern: Mycah's Botanical Bag
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(30156, {	-- Recipe: Clam Bar
+											["description"] = "Cost: 1 Glowcap",
+										}),
+										i(22906, {	-- Recipe: Shrouding Potion
+											["description"] = "Cost: 30 Glowcaps",
+										}),
+										i(22916, {	-- Recipe: Transmute Primal Earth to Water
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(29150, {	-- Hardened Stone Shard
+											["description"] = "Cost: 45 Glowcaps",
+										}),
+										i(25828, {	-- Petrified Lichen Guard
+											["description"] = "Cost: 15 Glowcaps",
+										}),
+										i(29149, {	-- Sporeling's Firestick
+											["description"] = "Cost: 20 Glowcaps",
+										}),
+										i(25827, {	-- Muck-Covered Drape
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(24539, {	-- Marsh Lichen
+											["description"] = "Cost: 2 Glowcaps",
+										}),
+										i(25550, {	-- Redcap Toadstool
+											["description"] = "Cost: 1 Glowcap",
+										}),
+										i(25548, {	-- Tallstalk Mushroom
+											["description"] = "Cost: 1 Glowcap",
+										}),
 									}),
 								},
 							}),

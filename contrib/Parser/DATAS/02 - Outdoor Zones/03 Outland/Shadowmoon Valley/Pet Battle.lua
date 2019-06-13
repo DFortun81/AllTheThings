@@ -3,59 +3,48 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Outland
-		["mapID"] = 101,	-- Outland
-		["groups"] = {
-			{	-- Shadowmoon Valley (Outland)
-				["mapID"] = 104,	-- Shadowmoon Valley (Outland)
-				["groups"] = {
-					{	-- Pet Battle
-						["npcID"] = -25,	-- Pet Battle
-						["groups"] = {
-							{	-- Ash Viper
-								["crs"] = { 61385 },	-- Ash Viper
-								["speciesID"] = 425,	-- Ash Viper
-							},
-							{	-- Fel Flame
-								["crs"] = { 62621 },	-- Fel Flame
-								["speciesID"] = 519,	-- Fel Flame
-							},
-							{	-- Scorpid
-								["crs"] = { 61326 },	-- Scorpid
-								["speciesID"] = 414,	-- Scorpid
-							},
-							{	-- Tainted Cockroach
-								["crs"] = { 62314 },	-- Tainted Cockroach
-								["speciesID"] = 497,	-- Tainted Cockroach
-							},
-							q(31920, {	-- Grand Master Antari
-								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-								["sourceQuests"] = { 
-									31919,	-- Battle Pet Tamers: Outland (Alliance Version)
-									31921	-- Battle Pet Tamers: Outland (Horde Version)
-								},
-							}),
-							qa(31981, {	-- Exceeding Expectations
-								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-								["sourceQuests"] = { 31920 }	-- Grand Master Antari
-							}),
-							qh(31982, {	-- Exceeding Expectations
-								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-								["sourceQuests"] = { 31920 }
-							}),						
-							q(31926, { 	-- Grand Master Antari
-								["groups"] = {
-									i(89125)	-- Sack of Pet Supplies
-								},
-								["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
-								["coord"] = { 30.6, 41.8, 104 },
-								["sourceQuests"] = { 31920 },	-- Grand Master Antari
-								["isDaily"] = true,					
-							}),
-						},
+	m(101, {	-- Outland
+		m(104, {	-- Shadowmoon Valley (Outland)
+			n(-25, {	-- Pet Battle
+				p(425, {	-- Ash Viper
+					["crs"] = { 61385 },	-- Ash Viper
+				}),
+				p(519, {	-- Fel Flame
+					["crs"] = { 62621 },	-- Fel Flame
+				}),
+				p(414, {	-- Scorpid
+					["crs"] = { 61326 },	-- Scorpid
+				}),
+				p(497, {	-- Tainted Cockroach
+					["crs"] = { 62314 },	-- Tainted Cockroach
+				}),
+				q(31920, {	-- Grand Master Antari
+					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["sourceQuests"] = { 
+						31919,	-- Battle Pet Tamers: Outland (Alliance Version)
+						31921	-- Battle Pet Tamers: Outland (Horde Version)
 					},
-				},
-			},
-		},
-	},
+				}),
+				q(31981, {	-- Exceeding Expectations
+					["sourceQuests"] = { 31920 },	-- Grand Master Antari
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+				}),
+				q(31982, {	-- Exceeding Expectations
+					["sourceQuests"] = { 31920 },
+					["races"] = HORDE_ONLY,
+					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+				}),						
+				q(31926, { 	-- Grand Master Antari
+					["sourceQuests"] = { 31920 },	-- Grand Master Antari
+					["isDaily"] = true,					
+					["coord"] = { 30.6, 41.8, 104 },
+					["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+					["g"] = {
+						i(89125)	-- Sack of Pet Supplies
+					},
+				}),
+			}),
+		}),
+	}),
 };
