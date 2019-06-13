@@ -328,10 +328,8 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			}),
-			i(168081, {	-- Brinestone Pickaxe -- possibly drops from any rare?
-				["crs"] = {
-					152795,	-- Sandclaw Stoneshell
-				},
+			i(168081, {	-- Brinestone Pickaxe
+				["description"] = "Drops from any rare in Nazjatar",
 				["g"] = {
 					q(55531, {	-- What Will It Mine?
 						["g"] = {
@@ -393,11 +391,8 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
-			i(168155, {	-- Chum -- possibly drops from any rare?
-				["crs"] = {
-					152542,	-- Scale Matriarch Zodia
-					152545,	-- Scale Matriarch Vynara
-				},
+			i(168155, {	-- Chum
+				["description"] = "Drops from any rare in Nazjatar",
 				["g"] = {
 					q(55602, {	-- What Will It Lure?
 						["g"] = {
@@ -670,11 +665,8 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
-			i(167786, {	-- Germinating Seed -- possibly drops from any rare?
-				["crs"] = {
-					152416,	-- Allseer Oma'kil
-					152545,	-- Scale Matriarch Vynara
-				},
+			i(167786, {	-- Germinating Seed
+				["description"] = "Drops from any rare in Nazjatar",
 				["g"] = {
 					q(55426, {	-- What Will It Grow?
 						["g"] = {
@@ -727,6 +719,11 @@ _.Zones =
 				["sourceQuests"] = {
 					56156,	-- A Tempered Blade
 					55500,	-- Save A Friend
+				},
+			}),
+			i(170512, {	-- Lesser Benthic Arcanocrystal -- TODO:: verify if breadcrumb/weekly?
+				["g"] = {
+					q(57086),	-- Legacy of the Mad Mage
 				},
 			}),
 			q(55861, {	-- Let the Residue Lead You

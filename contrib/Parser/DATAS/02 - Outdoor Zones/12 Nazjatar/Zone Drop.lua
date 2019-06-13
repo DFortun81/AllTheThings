@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(0, {	-- Zone Drop
-			i(170118),	-- Centurion's Shortsword (obtained from barnacle lockbox. Confirm if zone drop, too)
+			--[[ TODO:: where are lockboxes going?
+			i(169475, {	-- Barnacled Lockbox (also drops all zone drops
+				i(170118),	-- Centurion's Shortsword
+				i(170120),	-- Handmaiden's Longstaff
+			}),
+			]]--
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch
 			i(169400),	-- Deeptide Cover

@@ -6,113 +6,117 @@ _.Zones =
 	m(1355, {	-- Nazjatar
 		n(-34,  {	-- World Quests
 			n(-17, {	-- Quests
-				{	-- A Steamy Situation
-					["questID"] = 56036,
-					["isWQ"] = 120,
-				},
-				{	-- Aranz, the Slitherblade
-					["questID"] = 55893,
-					["isWQ"] = 120,
-				},
-				{	-- Attrition
-					["questID"] = 55970,
-					["isWQ"] = 120,
-				},
-				{	-- Champion Aldrantiss, Defender of Her Kingdom
-					["questID"] = 55891,
-					["isWQ"] = 120,
-				},
-				{	-- Champion Alzana, Arrow of Thunder
-					["questID"] = 55887,
-					["isWQ"] = 120,
-				},
-				{	-- Champion Kyx'zhul the Deepspeaker
-					["questID"] = 55889,
-					["isWQ"] = 120,
-				},
-				{	-- Champion Qalina, Spear of Ice
-					["questID"] = 55888,
-					["isWQ"] = 120,
-				},
-				{	-- Champion Vyz'olgo the Mind-Taker
-					["questID"] = 55890,
-					["isWQ"] = 120,
-				},
-				{	-- Deepcoil Experiments
-					["questID"] = 55973,
-					["isWQ"] = 120,
-				},
-				{	-- Dirty Dozen
-					["questID"] = 56032,
-					["isWQ"] = 120,
-				},
-				{	-- Frozen Winds of Zhiela
-					["questID"] = 55895,
-					["isWQ"] = 120,
-				},
-				{	-- Give 'Em Shell
-					["questID"] = 56041, -- also popped 56293, 56590
-					["isWQ"] = 120,
-				},
-				{	-- Jumping Jellies
-					["questID"] = 56121,
-					["isWQ"] = 120,
-				},
-				{	-- Hungry Hungry Hydras
-					["questID"] = 55997,
-					["isWQ"] = 120,
-				},
-				{	-- Infestation of Madness
-					["questID"] = 55884,
-					["isWQ"] = 12,
-				},
-				{	-- Kassar, Wielder of Dark Blades
-					["questID"] = 55900,
-					["isWQ"] = 120,
-				},
-				{	-- Leylocked Chest
-					["questID"] = 56022,
-					["isWQ"] = 120,
+				q(56036, {	-- A Steamy Situation
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55893, {	-- Aranz, the Slitherblade
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55970, {	-- Attrition
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55887, {	-- Champion Alzana, Arrow of Thunder
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55892, {	-- Champion Eldanar, Shield of Her Glory
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55889, {	-- Champion Kyx'zhul the Deepspeaker
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55888, {	-- Champion Qalina, Spear of Ice
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55890, {	-- Champion Vyz'olgo the Mind-Taker
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55973, {	-- Deepcoil Experiments
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56032, {	-- Dirty Dozen
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55895, {	-- Frozen Winds of Zhiela
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56041, {	-- Give 'Em Shell
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56121, {	-- Jumping Jellies
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55997, {	-- Hungry Hungry Hydras
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55884, {	-- Infestation of Madness
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55900, {	-- Kassar, Wielder of Dark Blades
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56022, {	-- Leylocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["g"] = {
 						{	-- Puzzle Performer (Hard Runelocked Chest: Yellow)
 							["achievementID"] = 13764,
 							["criteriaID"] = 4,
 						},
 					},
-				},
-				{	-- Leylocked Chest
-					["questID"] = 56023,
-					["isWQ"] = 120,
+				}),
+				q(56023, {	-- Leylocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["g"] = {
 						{	-- Puzzle Performer (Hard Leylocked Chest)
 							["achievementID"] = 13764,
 							["criteriaID"] = 3,
 						},
 					},
-				},
-				{	-- Leylocked Chest
-					["questID"] = 56024,
-					["isWQ"] = 120,
+				}),
+				q(56024, {	-- Leylocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["g"] = {
 						{	-- Puzzle Performer (Medium Leylocked Chest)
 							["achievementID"] = 13764,
 							["criteriaID"] = 2,
 						},
 					},
-				},
-				{	-- Leylocked Chest
-					["questID"] = 56025,
-					["isWQ"] = 120,
+				}),
+				q(56025, {	-- Leylocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["g"] = {
 						{	-- Puzzle Performer (Easy Leylocked Chest)
 							["achievementID"] = 13764,
 							["criteriaID"] = 1,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56003,
-					["isWQ"] = 120,
+				}),
+				q(56003, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Green)
@@ -120,10 +124,10 @@ _.Zones =
 							["criteriaID"] = 21,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56006,
-					["isWQ"] = 120,
+				}),
+				q(56006, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Orange)
@@ -131,10 +135,10 @@ _.Zones =
 							["criteriaID"] = 20,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56011,
-					["isWQ"] = 120,
+				}),
+				q(56011, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Blue)
@@ -142,10 +146,10 @@ _.Zones =
 							["criteriaID"] = 15,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56012,
-					["isWQ"] = 120,
+				}),
+				q(56012, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Green)
@@ -153,10 +157,10 @@ _.Zones =
 							["criteriaID"] = 14,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56016,
-					["isWQ"] = 120,
+				}),
+				q(56016, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Yellow)
@@ -164,10 +168,10 @@ _.Zones =
 							["criteriaID"] = 10,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56019,
-					["isWQ"] = 120,
+				}),
+				q(56019, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Hard Runelocked Chest: Orange)
@@ -175,10 +179,10 @@ _.Zones =
 							["criteriaID"] = 7,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56020,
-					["isWQ"] = 120,
+				}),
+				q(56020, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Hard Runelocked Chest: Purple)
@@ -186,10 +190,10 @@ _.Zones =
 							["criteriaID"] = 6,
 						},
 					},
-				},
-				{	-- Runelocked Chest
-					["questID"] = 56223,
-					["isWQ"] = 120,
+				}),
+				q(56223, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
 					["sourceQuest"] = 56248,	-- Treasure Tale
 					["g"] = {
 						{	-- Puzzle Performer (Medium Runelocked Chest: Purple)
@@ -197,58 +201,58 @@ _.Zones =
 							["criteriaID"] = 12,
 						},
 					},
-				},
-				{	-- Starseeker of the Shirakess
-					["questID"] = 55899,
-					["isWQ"] = 120,
-				},
-				{	-- Szun, Breaker of Slaves
-					["questID"] = 55897,
-					["isWQ"] = 120,
-				},
-				{	-- Tempest-Speaker Shalan'ali
-					["questID"] = 55898,
-					["isWQ"] = 120,
-				},
-				{	-- Terror of the Depths
-					["questID"] = 56056,
-					["isWQ"] = 120,
-				},
-				{	-- The Drowned Oracles
-					["questID"] = 56048,
-					["isWQ"] = 120,
-				},
-				{	-- The Lords of Water
-					["questID"] = 55982,
-					["isWQ"] = 120,
-				},
-				{	-- The Soulbinder
-					["questID"] = 56057,
-					["isWQ"] = 120,
-				},
-				{	-- The Zanj'ir Brutalizer
-					["questID"] = 55886,
-					["isWQ"] = 120,
-				},
-				{	-- Time to Krill
-					["questID"] = 56078,
-					["isWQ"] = 120,
-				},
-				{	-- Undana, Chilling Assassin
-					["questID"] = 55896,
-					["isWQ"] = 120,
-				},
-				{	-- Work Order: Abyssal-Fried Rissole
-					["questID"] = 56795,
-					["isWQ"] = 120,
+				}),
+				q(55899, {	-- Starseeker of the Shirakess
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55897, {	-- Szun, Breaker of Slaves
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55898, {	-- Tempest-Speaker Shalan'ali
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56056, {	-- Terror of the Depths
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56048, {	-- The Drowned Oracles
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55982, {	-- The Lords of Water
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56057, {	-- The Soulbinder
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55886, {	-- The Zanj'ir Brutalizer
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56078, {	-- Time to Krill
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(55896, {	-- Undana, Chilling Assassin
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
+				q(56795, {	-- Work Order: Abyssal-Fried Rissole
+					["lvl"] = 120,
+					["collectible"] = false,
 					["g"] = {
 						i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
 					},
-				},
-				{	-- Zoko, Her Iron Defender
-					["questID"] = 55894,
-					["isWQ"] = 120,
-				},
+				}),
+				q(55894, {	-- Zoko, Her Iron Defender
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 			}),
 		}),
 	}),
