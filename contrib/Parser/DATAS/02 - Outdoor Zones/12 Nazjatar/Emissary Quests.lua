@@ -4,33 +4,27 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		["g"] = {
-			n(-169, {	-- Emissary Quests
+		n(-169, {	-- Emissary Quests
+			q(56119, {	-- The Ankoan
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
 				["g"] = {
-					{	-- The Ankoan
-						["questID"] = 56119,
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["g"] = {
-							{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
-								["achievementID"] = 13635,
-								["criteriaID"] = 1,
-							},
-						},
-					},
-					{	-- The Unshackled
-						["questID"] = 56120,
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["g"] = {
-							{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
-								["achievementID"] = 13635,
-								["criteriaID"] = 1,
-							},
-						},
+					{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
+						["achievementID"] = 13635,
+						["criteriaID"] = 1,
 					},
 				},
 			}),
-		},
+			q(56120, {	-- The Unshackled
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["g"] = {
+					{	-- Tour of the Depths (Complete an Emissary for your ally in Nazjatar)
+						["achievementID"] = 13635,
+						["criteriaID"] = 1,
+					},
+				},
+			}),
+		}),
 	}),
 };
