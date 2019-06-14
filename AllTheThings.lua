@@ -12237,7 +12237,6 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	GetQuestsCompleted(CompletedQuests);
 	CompletedQuests[questID] = true;
 	for questID,completed in pairs(DirtyQuests) do
 		app.QuestCompletionHelper(tonumber(questID));
