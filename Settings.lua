@@ -136,6 +136,7 @@ local TooltipSettingsBase = {
 		["Report:Collected"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
+		["Show:Remaining"] = false,
 		["Skip:Cutscenes"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
@@ -2332,6 +2333,23 @@ end);
 ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
+	if self:GetChecked() then
+		app.GetProgressText = app.GetProgressTextRemaining;
+	else
+		app.GetProgressText = app.GetProgressTextDefault;
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
+	-- app:RefreshData();
+	app:UpdateWindows();
+end);
+ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
+ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
 
 local ShowSharedAppearancesCheckBox = settings:CreateCheckBox("Show Shared Appearances",
 function(self)
@@ -2348,7 +2366,7 @@ function(self)
 	settings:SetTooltipSetting("SharedAppearances", self:GetChecked());
 end);
 ShowSharedAppearancesCheckBox:SetATTTooltip("Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.");
-ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSharedAppearancesCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IncludeOriginalSourceCheckBox = settings:CreateCheckBox("Include Original Source",
 function(self)
@@ -2504,43 +2522,6 @@ end);
 ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
 ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
 
--- This creates the "Locations" slider.
-local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
-LocationsSlider:SetPoint("LEFT", ShowSourceLocationsCheckBox, "LEFT", 0, 0);
-LocationsSlider:SetPoint("TOP", ShowSourceLocationsForThingsCheckBox, "BOTTOM", 0, -16);
-table.insert(settings.MostRecentTab.objects, LocationsSlider);
-settings.LocationsSlider = LocationsSlider;
-LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
-LocationsSlider:SetOrientation('HORIZONTAL');
-LocationsSlider:SetWidth(180);
-LocationsSlider:SetHeight(20);
-LocationsSlider:SetValueStep(1);
-LocationsSlider:SetMinMaxValues(1, 40);
-LocationsSlider:SetObeyStepOnDrag(true);
-_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
-_G[LocationsSlider:GetName() .. 'High']:SetText('40')
-_G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
-LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 0);
-LocationsSlider.Label:SetText(LocationsSlider:GetValue());
-LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
-	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("Locations") then
-		return 1;
-	end
-	settings:SetTooltipSetting("Locations", newValue)
-	app:UpdateWindows();
-end);
-LocationsSlider.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end;
-
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
@@ -2669,6 +2650,44 @@ MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 		end
 	end
 end);
+
+-- This creates the "Locations" slider.
+local LocationsSlider = CreateFrame("Slider", "ATTLocationsSlider", settings, "OptionsSliderTemplate");
+LocationsSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
+LocationsSlider:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, -32);
+table.insert(settings.MostRecentTab.objects, LocationsSlider);
+settings.LocationsSlider = LocationsSlider;
+LocationsSlider.tooltipText = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+LocationsSlider:SetOrientation('HORIZONTAL');
+LocationsSlider:SetWidth(280);
+LocationsSlider:SetHeight(20);
+LocationsSlider:SetValueStep(1);
+LocationsSlider:SetMinMaxValues(1, 40);
+LocationsSlider:SetObeyStepOnDrag(true);
+_G[LocationsSlider:GetName() .. 'Low']:SetText('1')
+_G[LocationsSlider:GetName() .. 'High']:SetText('40')
+_G[LocationsSlider:GetName() .. 'Text']:SetText("Displayed Source Locations")
+LocationsSlider.Label = LocationsSlider:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+LocationsSlider.Label:SetPoint("TOP", LocationsSlider, "BOTTOM", 0, 0);
+LocationsSlider.Label:SetText(LocationsSlider:GetValue());
+LocationsSlider:SetScript("OnValueChanged", function(self, newValue)
+	self.Label:SetText(newValue);
+	if newValue == settings:GetTooltipSetting("Locations") then
+		return 1;
+	end
+	settings:SetTooltipSetting("Locations", newValue)
+	app:UpdateWindows();
+end);
+LocationsSlider.OnRefresh = function(self)
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SourceLocations") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end;
+
 
 end)();
 

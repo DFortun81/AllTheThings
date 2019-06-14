@@ -697,13 +697,19 @@ local function GetNumberWithZeros(number, desiredLength)
 		return tostring(floor(number));
 	end
 end
+local function GetProgressTextDefault(progress, total)
+	return tostring(progress) .. " / " .. tostring(total);
+end
+local function GetProgressTextRemaining(progress, total)
+	return tostring(total - progress);
+end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
+		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -736,6 +742,9 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
+app.GetProgressText = GetProgressTextDefault;
+app.GetProgressTextDefault = GetProgressTextDefault;
+app.GetProgressTextRemaining = GetProgressTextRemaining;
 CS:Hide();
 
 -- Source ID Harvesting Lib
