@@ -519,7 +519,7 @@ AllTheThings.L = {
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",						-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",					-- WoW Anniversary
 		[-501] = "Interface\\Icons\\ability_racial_molemachine",					-- Mole Machine
-		[-517] = "Interface\\Icons\\inv_misc_tabard_explorersguild",				-- Kul Tiras and Zandalar
+		[-518] = "Interface\\Icons\\inv_misc_tabard_explorersguild",				-- Kul Tiras and Zandalar
 		[-531] = "Interface\\Icons\\achievement_general",							-- 2008 Spirit of Competition Event
 		[-532] = "Interface\\Icons\\Inv_gravegolempet",								-- Heroes of the Storm Promotion
 		[-533] = "Interface\\Icons\\Inv_misc_rune_01",								-- Hearthstone Promotion
@@ -1237,7 +1237,6 @@ AllTheThings.L = {
 		[-499] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-500] = "WoW Anniversary",
 		-- Dark Iron Dwarves Mole Machine
-		[-517] = GetSpellInfo(265225),											-- Mole Machine
 		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
 		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak
 		[-503] = C_Map.GetAreaInfo(8771),										-- Honor's Stand
@@ -1254,9 +1253,9 @@ AllTheThings.L = {
 		[-514] = C_Map.GetAreaInfo(7139),										-- Elemental Plateau
 		[-515] = C_Map.GetAreaInfo(8648),										-- Aalgen Point
 		[-516] = C_Map.GetAreaInfo(7806),										-- Neltharion's Vault
-		[-517] = "Kul Tiras and Zandalar",										
-		-- Note!! -518 through -519 reserved for if they add drills to BfA content
-				
+		[-517] = GetSpellInfo(265225),											-- Mole Machine										
+		
+		[-518] = "Kul Tiras and Zandalar",
 		[-520] = "Expansion Pre-Launch",
 		[-521] = "Burning Crusade: Dark Portal Opens",
 		[-522] = "Wrath of the Lich King: Zombie Infestation",
