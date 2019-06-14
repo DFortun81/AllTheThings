@@ -225,6 +225,8 @@ _.Zones =
 				},
 			}),
 			n(152545, {	-- Scale Matriarch Vynara
+				["allianceQuestID"] = 56293,
+				["hordeQuestID"] = 56590,
 				["coord"] = { 27.2, 37.1, 13555 },
 				["isDaily"] = true,
 			}),
