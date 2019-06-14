@@ -312,6 +312,7 @@ _.Zones =
 						i(59237),	-- Gryphon Master's Belt
 						i(59238),	-- Talon Axe
 						i(131553),	-- Gryphon Master's Chain
+						i(59235),	-- Razorbeak Amulet
 					},
 				}),
 				q(7847, {	-- Return to Primal Torntusk
