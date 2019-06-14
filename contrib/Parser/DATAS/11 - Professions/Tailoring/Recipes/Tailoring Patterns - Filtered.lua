@@ -61,6 +61,10 @@ profession(197, {	-- Tailoring
 							["u"] = 29,
 						},
 						{
+							["recipeID"] = 18458,--[[Robe of the Void]]
+							["u"] = 7,
+						},
+						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
 							["u"] = 1,
 						},

@@ -20,6 +20,7 @@ _.Zones =
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 57.6, 53.9, 52 },
 					["g"] = {
 						i(6274),	-- Pattern: Blue Overalls
 						i(5787), 	-- Pattern: Murloc Scale Breastplate
@@ -29,6 +30,7 @@ _.Zones =
 				}),
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 36.2, 90.0, 52 },
 					["g"] = {
 						i(5528),	-- Recipe: Clam Chowder
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -38,6 +40,7 @@ _.Zones =
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 57.7, 53.7, 52 },
 					["g"] = {
 						i(11304),	-- Fine Longbow
 					},
