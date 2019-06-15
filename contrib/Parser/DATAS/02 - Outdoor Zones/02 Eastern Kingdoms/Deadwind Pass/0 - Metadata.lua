@@ -10,6 +10,7 @@ _.Zones =
 			["maps"] = {
 				41,	-- Dalaran (Deadwind Pass, prior to move to Broken Isles)
 				43,	-- The Master's Cellar
+				44,	-- The Master's Cellar
 				46,	-- Karazhan Catacombs
 			},
 			["lvl"] = 40,
