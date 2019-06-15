@@ -46,6 +46,7 @@ profession(165, {	-- Leatherworking
 				{
 					["name"] = "Tents",
 					["categoryID"] = 402,
+					["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
 					["g"] = {
 						{
 							["recipeID"] = 176413,	-- Blood Elven Tent

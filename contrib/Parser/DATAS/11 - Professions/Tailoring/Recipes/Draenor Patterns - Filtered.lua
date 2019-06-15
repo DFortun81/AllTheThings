@@ -5,6 +5,7 @@ profession(197, {	-- Tailoring
 			["g"] = {
 				{
 					["categoryID"] = 400--[[Battle Standards]],
+					["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
 				},
 				{
 					["categoryID"] = 366--[[Reagents and Research]],
