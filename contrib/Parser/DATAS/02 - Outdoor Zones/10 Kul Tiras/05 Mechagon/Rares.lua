@@ -216,6 +216,7 @@ _.Zones =
 								["achievementID"] = 13470,
 								["criteriaID"] = 8,
 							},
+							i(167931),	-- Mechagonian Sawblades
 							i(168327),	-- Chain Ignitercoil
 						},
 					}),
