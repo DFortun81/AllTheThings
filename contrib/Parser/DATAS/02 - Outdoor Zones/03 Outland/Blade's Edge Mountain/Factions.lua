@@ -11,20 +11,23 @@ _.Zones =
 					["g"] = {
 						ach(896),	-- A Quest a Day Keeps the Ogres at Bay
 						n(-17, {	-- Quests
-							q(11059, {	-- Guardian of the Monument
-								["qg"] = 23233,	-- Chu'a'lor
-								["coord"] = { 28.8, 57.4, 105 },
-								["sourceQuest"] = 11025,	-- The Crystals
-							}),
 							q(11091, {	-- A Special Thank You
 								["qg"] = 23233,	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
 								["sourceQuest"] = 11059,	-- Guardian of the Monument
+								["minReputation"] = FRIENDLY,
 							}),
-							q(11080, {	-- The Relic's Emanation
-								["qg"] = 23233,	-- Chu'a'lor
-								["sourceQuest"] = 11058,	-- An Apexis Relic
-								["isDaily"] = true,
+							q(11051, {	-- Banish More Demons
+								["qg"] = 23253,	-- Kronk
+								["coord"] = { 28.8, 57.8, 105 },
+								["sourceQuest"] = 11026,	-- Banish the Demons
+								["minReputation"] = HONORED,
+								["repeatable"] = true,
+							}),
+							q(11026, {	-- Banish the Demons
+								["qg"] = 23253,	-- Kronk
+								["coord"] = { 28.8, 57.8, 105 },
+								["minReputation"] = HONORED,
 							}),
 							q(11023, {	-- Bomb Them Again!
 								["qg"] = 23120,	-- Sky Sergeant Vanderlip
@@ -35,25 +38,24 @@ _.Zones =
 									ach(1276),	-- Blade's Edge Bomberman
 								},
 							}),
+							q(11059, {	-- Guardian of the Monument
+								["qg"] = 23233,	-- Chu'a'lor
+								["coord"] = { 28.8, 57.4, 105 },
+								["sourceQuest"] = 11025,	-- The Crystals
+							}),
+							q(11080, {	-- The Relic's Emanation
+								["qg"] = 23233,	-- Chu'a'lor
+								["coord"] = { 28.8, 57.4, 105 },
+								["sourceQuest"] = 11058,	-- An Apexis Relic
+								["isDaily"] = true,
+							}),
 							q(11066, {	-- Wrangle More Aether Rays!
 								["qg"] = 23335,	-- Skyguard Khatie
 								["coord"] = { 28.0, 51.5, 105 },
 								["sourceQuest"] = 11065,	-- Wrangle Some Aether Rays!
 								["isDaily"] = true,
 							}),
-							q(11026, {	-- Banish the Demons
-								["qg"] = 23253,	-- Kronk
-								["coord"] = { 28.8, 57.8, 105 },
-								["description"] = "Only available if you are Honored with Ogri'la.",
-							}),
-							q(11051, {	-- Banish More Demons
-								["qg"] = 23253,	-- Kronk
-								["coord"] = { 28.8, 57.8, 105 },
-								["sourceQuest"] = 11026,	-- Banish the Demons
-								["description"] = "Only available if you are Honored with Ogri'la.",
-								["repeatable"] = true,
-							}),
-						}),
+						}),	
 						n(-2,  {	-- Vendors
 							n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 								["coord"] = { 28.0, 58.6, 105 },
