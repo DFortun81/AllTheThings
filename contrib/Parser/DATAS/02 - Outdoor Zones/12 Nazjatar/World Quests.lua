@@ -136,6 +136,17 @@ _.Zones =
 						},
 					},
 				}),
+				q(56009, {	-- Runelocked Chest
+					["lvl"] = 120,
+					["collectible"] = false,
+					["sourceQuest"] = 56248,	-- Treasure Tale
+					["g"] = {
+						{	-- Puzzle Performer (Medium Runelocked Chest: Purple)
+							["achievementID"] = 13764,
+							["criteriaID"] = 17,
+						},
+					},
+				}),
 				q(56011, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,

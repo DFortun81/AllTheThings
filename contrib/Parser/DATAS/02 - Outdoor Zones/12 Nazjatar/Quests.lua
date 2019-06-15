@@ -265,6 +265,19 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 56179,	-- The Needs of the People
 			}),
+			q(55828, {	-- Bounty: More Murlocs
+				["isDaily"] = true,
+				["qgs"] = {
+					155941,	-- Tamer Orami (alliance)
+				},
+				["coords"] = {
+					{ 39.6, 55.5, 1355 },	-- alliance
+				},
+				["sourceQuests"] = {
+					56166,	-- The Needs of the People (alliance)
+					56179,	-- The Needs of the People (horde)
+				},
+			}),
 			q(55833, {	-- Bounty: More Snapdragons
 				["isDaily"] = true,
 				["qgs"] = {
@@ -894,6 +907,19 @@ _.Zones =
 					{ 47.4, 63.2, 1355 },	-- horde
 				},
 			}),
+			q(55720, {	-- Requisition: A Few Seaweed
+				["isDaily"] = true,
+				["qgs"] = {
+					151763,	-- Isla (alliance)
+				},
+				["coords"] = {
+					{ 37.7, 55.3, 1355 },	-- alliance
+				},
+				["sourceQuests"] = {
+					56166,	-- The Needs of the People (alliance)
+					56179,	-- The Needs of the People (horde)
+				},
+			}),
 			q(55725, {	-- Requisition: A Few Spiral Leaf
 				["isDaily"] = true,
 				["qgs"] = {
@@ -980,10 +1006,6 @@ _.Zones =
 						["questID"] = 55831,
 						["isDaily"] = true,
 					},
-					{	-- Bounty: More Murlocs
-						["questID"] = 55828,
-						["isDaily"] = true,
-					},
 					{	-- Bounty: More Naga
 						["questID"] = 55827,
 						["isDaily"] = true,
@@ -1002,10 +1024,6 @@ _.Zones =
 					},
 					{	-- Requisition: A Few Kelp Buds
 						["questID"] = 55721, -- also popped 56278, 56605
-						["isDaily"] = true,
-					},
-					{	-- Requisition: A Few Seaweed
-						["questID"] = 55720,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: A Few Starfish

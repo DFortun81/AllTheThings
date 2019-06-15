@@ -109,7 +109,9 @@ _.Zones =
 					}),
 					crit(5),	-- Zomera
 					crit(6),	-- Omus
-					crit(7),	-- Osgen
+					crit(7, {	-- Osgen
+						["description"] = "Active Lesser and Greater Benthic Arcanocrystals",
+					}),
 					crit(8),	-- Moghiea
 					crit(9),	-- Xue
 					crit(10),	-- Ungormath
