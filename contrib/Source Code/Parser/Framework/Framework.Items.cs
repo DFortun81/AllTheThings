@@ -335,6 +335,8 @@ namespace Parser_V2
                     case "subclass":
                     case "inventoryType":
                     case "factionID":
+                    case "minReputation":
+                    case "maxReputation":
                     case "mountID":
                     case "speciesID":
                     case "spellID":

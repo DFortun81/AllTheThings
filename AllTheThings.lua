@@ -3747,6 +3747,37 @@ app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 end)();
+-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
+app.GetFactionStanding = function(reputationPoints)
+	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
+	local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 62000
+	if not reputationPoints then return 0, 0
+	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
+	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
+	elseif reputationPoints < NEUTRAL then return 3, UNFRIENDLY - reputationPoints
+	elseif reputationPoints < FRIENDLY then return 4, reputationPoints - NEUTRAL
+	elseif reputationPoints < HONORED then return 5, reputationPoints - FRIENDLY
+	elseif reputationPoints < REVERED then return 6, reputationPoints - HONORED
+	elseif reputationPoints < EXALTED then return 7, reputationPoints - REVERED
+	elseif reputationPoints >= EXALTED then return 8, 0
+	else return 0
+	end
+end
+app.GetFactionStandingText = function(standingId, colorCode)
+	local text = getglobal("FACTION_STANDING_LABEL"..standingId)
+	if text then
+		if standingId == 1 and colorCode then return "|c00CC2222" .. text .. "|r"
+		elseif standingId == 2 and colorCode then return "|c00FF0000" .. text .. "|r"
+		elseif standingId == 3 and colorCode then return "|c00EE6622" .. text .. "|r"
+		elseif standingId == 4 and colorCode then return "|c00FFFF00" .. text .. "|r"
+		elseif standingId == 5 and colorCode then return "|c0000FF00" .. text .. "|r"
+		elseif standingId == 6 and colorCode then return "|c0000FF88" .. text .. "|r"
+		elseif standingId == 7 and colorCode then return "|c0000FFCC" .. text .. "|r"
+		elseif standingId == 8 and colorCode then return "|c00FFFFFF" .. text .. "|r"
+		end
+	end
+	return "|cCC222200UNKNOWN|r"
+end
 
 -- Flight Path Lib
 (function()
@@ -7737,6 +7768,26 @@ local function RowOnEnter(self)
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
+		if reference.minReputation and not reference.maxReputation then
+			local standingId, offset = app.GetFactionStanding(reference.minReputation)
+			local msg = "Requires a minimum standing of " .. offset .. " " .. app.GetFactionStandingText(standingId, true) .. ".";
+			GameTooltip:AddLine(msg);
+		end
+		if reference.maxReputation and not reference.minReputation then
+			local standingId, offset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing lower than " .. offset .. " " .. app.GetFactionStandingText(standingId, true) .. ".";
+			GameTooltip:AddLine(msg);
+		end
+		if reference.minReputation and reference.maxReputation then
+			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation)
+			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing between"
+			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. " and"
+			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. ".";
+			GameTooltip:AddLine(msg);
+		end
 		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
