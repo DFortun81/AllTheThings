@@ -10,70 +10,85 @@ _.Zones =
 				["g"] = {
 					ach(902),	-- Chief Exalted Officer
 					n(-17,  {	-- Quests
-						q(9882, {	-- Stealing from Thieves
-							["coord"] = { 31.4, 57.8, 107 },
-							["qg"] = 18265,	-- Gezhe <The Consortium>
-						}),
-						q(9883, {	-- More Crystal Fragments
-							["sourceQuest"] = 9882,	-- Stealing from Thieves
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
-							["qg"] = 18265,	-- Gezhe <The Consortium>
-						}),
-						q(9893, {	-- Obsidian Warbeads
-							["description"] = "Only available if you are Friendly with The Consortium.",
-							["coord"] = { 31.4, 57.8, 107 },
-							["qg"] = 18265,	-- Gezhe <The Consortium>
-						}),
-						q(9892, {	-- More Obsidian Warbeads
-							["description"] = "Only available if you are Friendly with The Consortium.",
-							["sourceQuest"] = 9893,	-- Obsidian Warbeads
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
-							["qg"] = 18265,	-- Gezhe <The Consortium>
-						}),
 						q(9914, {	-- A Head Full of Ivory
-							["coord"] = { 31.8, 56.8, 107 },
 							["qg"] = 18333,	-- Shadrek
-						}),
-						q(9915, {	-- More Heads Full of Ivory
-							["sourceQuest"] = 9914,	-- A Head Full of Ivory
-							["repeatable"] = true,
 							["coord"] = { 31.8, 56.8, 107 },
-							["qg"] = 18333,	-- Shadrek
+							["minReputation"] = NEUTRAL,
+							["maxReputation"] = FRIENDLY,
 						}),
 						q(9886, {	-- Membership Benefits
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
 							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["repeatable"] = true,
+							["minReputation"] = NEUTRAL,
+							["maxReputation"] = FRIENDLY,
 							["g"] = {
 								i(25424),	-- Gem-Stuffed Envelope
 							},
 						}),
 						q(9884, {	-- Membership Benefits
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
 							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["repeatable"] = true,
+							["minReputation"] = FRIENDLY,
+							["maxReputation"] = HONORED,
 							["g"] = {
 								i(25419),	-- Unmarked Bag of Gems
 							},
 						}),
-						q(9885, {	-- Membership Benefits
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
+						q(9885, {	-- Membership Benefits	
 							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["repeatable"] = true,
+							["minReputation"] = HONORED,
+							["maxReputation"] = REVERED,
 							["g"] = {
 								i(25422),	-- Bulging Sack of Gems
 							},
 						}),
 						q(9887, {	-- Membership Benefits
-							["repeatable"] = true,
-							["coord"] = { 31.4, 57.8, 107 },
 							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["repeatable"] = true,
+							["minReputation"] = REVERED,
 							["g"] = {
 								i(25423),	-- Bag of Premium Gems
 							},
 						}),
+						q(9883, {	-- More Crystal Fragments
+							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["sourceQuest"] = 9882,	-- Stealing from Thieves
+							["repeatable"] = true,
+							["minReputation"] = NEUTRAL,
+							["maxReputation"] = FRIENDLY,
+						}),
+						q(9915, {	-- More Heads Full of Ivory
+							["qg"] = 18333,	-- Shadrek
+							["coord"] = { 31.8, 56.8, 107 },
+							["sourceQuest"] = 9914,	-- A Head Full of Ivory
+							["repeatable"] = true,
+							["minReputation"] = NEUTRAL,
+							["maxReputation"] = FRIENDLY,
+						}),
+						q(9892, {	-- More Obsidian Warbeads
+							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["sourceQuest"] = 9893,	-- Obsidian Warbeads
+							["repeatable"] = true,
+							["minReputation"] = FRIENDLY,
+						}),
+						q(9893, {	-- Obsidian Warbeads
+							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["minReputation"] = FRIENDLY,
+						}),
+						q(9882, {	-- Stealing from Thieves
+							["qg"] = 18265,	-- Gezhe <The Consortium>
+							["coord"] = { 31.4, 57.8, 107 },
+							["minReputation"] = NEUTRAL,
+							["maxReputation"] = FRIENDLY,
+						}),	
 					}),
 					n(-2,   {	-- Vendors
 						n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
@@ -132,22 +147,28 @@ _.Zones =
 				["creatureID"] = 20241,	-- Provisioner Nasela <Mag'har Quartermaster>
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					h(ach(901)),	-- Mag'har of Draenor
+					ach(901, {	-- Mag'har of Draenor
+						["races"] = HORDE_ONLY,
+					}),
 					n(-17,  {	-- Quests
-						qh(10479, {	-- Proving Your Strength
-							["coord"] = { 55.8, 37.8, 107 },
+						q(10478, {	-- More Warbeads!
 							["qg"] = 18407,	-- Warden Bullrok
-						}),
-						qh(10478, {	-- More Warbeads!
+							["coord"] = { 55.8, 37.8, 107 },
 							["sourceQuest"] = 10479,	-- Proving Your Strength
 							["repeatable"] = true,
-							["coord"] = { 55.8, 37.8, 107 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(10479, {	-- Proving Your Strength
 							["qg"] = 18407,	-- Warden Bullrok
+							["coord"] = { 55.8, 37.8, 107 },
+							["races"] = HORDE_ONLY,
+							
 						}),
 					}),
 					n(-2,   {	-- Vendors
-						h(n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
+						n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
 							["coord"] = { 53.4, 36.8, 107 },
+							["coord"] = { 55.8, 37.8, 107 },
 							["g"] = {
 								i(29102),	-- Reins of the Cobalt War Talbuk
 								i(29104),	-- Reins of the Silver War Talbuk
@@ -173,7 +194,7 @@ _.Zones =
 								i(29145),	-- Band of Ancestral Spirits
 								un(2, i(29143)),	-- Clefthoof Hide Quiver
 							},
-						})),
+						}),
 					}),
 				},
 			}),
@@ -181,22 +202,27 @@ _.Zones =
 				["creatureID"] = 20240,	-- Trader Narasu <Kurenai Quartermaster>
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					a(ach(899)),	-- Oh My, Kurenai
+					ach(899, {	-- Oh My, Kurenai
+						["races"] = ALLIANCE_ONLY,
+					}),
 					n(-17, {	-- Quests
-						qa(10476, {	-- Fierce Enemies
-							["coord"] = { 54.8, 70.8, 107 },
+						q(10476, {	-- Fierce Enemies
 							["qg"] = 18408,	-- Warden Moi'bff Jill
+							["coord"] = { 54.8, 70.8, 107 },
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(10477, {	-- More Warbeads!
-							["sourceQuests"] = { 10476 },	-- Fierce Enemies
-							["repeatable"] = true,
-							["coord"] = { 54.8, 70.8, 107 },
+						q(10477, {	-- More Warbeads!
 							["qg"] = 18408,	-- Warden Moi'bff Jill
+							["coord"] = { 54.8, 70.8, 107 },
+							["sourceQuest"] = 10476,	-- Fierce Enemies
+							["repeatable"] = true,
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 					n(-2,  {	-- Vendors
-						a(n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
+						n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
 							["coord"] = { 54.5, 75.1, 107 },
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(29227),	-- Reins of the Cobalt War Talbuk
 								i(29229),	-- Reins of the Silver War Talbuk
@@ -222,7 +248,7 @@ _.Zones =
 								i(29146),	-- Band of Elemental Spirits
 								un(2, i(29144)),	-- Worg Hide Quiver
 							},
-						})),
+						}),
 					}),
 				},
 			}),
