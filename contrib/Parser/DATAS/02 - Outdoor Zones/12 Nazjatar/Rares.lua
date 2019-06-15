@@ -237,6 +237,9 @@ _.Zones =
 				["allianceQuestID"] = 56295,
 				["hordeQuestID"] = 56588,
 				["coord"] = { 63.7, 6.0, 1355 },
+				["g"] = {
+					i(170187),	-- Shadescale
+				},
 			}),
 			n(153658, {	-- Shiz'narasz the Consumer
 				["allianceQuestID"] = 56587,
@@ -274,6 +277,9 @@ _.Zones =
 				["coord"] = { 65.9, 22.9, 1355 },
 				["isDaily"] = true,
 				["description"] = "Pop 3 |cFFFFD700Undisturbed Specimens|r to spawn her.",
+				["g"] = {
+					i(170196),	-- Shirakess Warning Sign
+				},
 			}),
 			n(152360, {	-- Toxigore the Alpha
 				["allianceQuestID"] = 56605,

@@ -406,9 +406,11 @@ t(126931);	-- Seafarer's Slidewhistle
 t(45015);	-- Sen'jin Banner (Horde)
 t(97942);	-- Sen'jin Spirit Drum
 t(141649);	-- Set of Matches
+t(170187);	-- Shadescale
 t(98132);	-- Shado-Pan Geyser Gun
 t(86573);	-- Shard of Archstone
 t(119421);	-- Sha'tari Defender's Medallion (Alliance)
+t(170196);	-- Shirakess Warning Sign
 t(129055);	-- Shoe Shine Kit
 t(88387);	-- Shushen's Spittoon
 t(153293);	-- Sightless Eye
