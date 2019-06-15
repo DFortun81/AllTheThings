@@ -174,6 +174,7 @@ _.Zones =
 							["questID"] = 29299,
 							["qg"] = 52489,	-- Avrilla
 							["coord"] = { 50.64, 87.31, 338 },
+							["isDaily"] = true,
 						},
 						{	-- The Harder They Fall
 							["questID"] = 29141,
