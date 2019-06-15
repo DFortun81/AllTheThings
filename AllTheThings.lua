@@ -3686,6 +3686,7 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
+HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 app.BaseFaction = {
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
@@ -3746,11 +3747,9 @@ app.BaseFaction = {
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
-end)();
--- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
 app.GetFactionStanding = function(reputationPoints)
+	-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
 	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
-	local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 62000
 	if not reputationPoints then return 0, 0
 	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
 	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
@@ -3778,6 +3777,7 @@ app.GetFactionStandingText = function(standingId, colorCode)
 	end
 	return "|cCC222200UNKNOWN|r"
 end
+end)();
 
 -- Flight Path Lib
 (function()
@@ -7770,12 +7770,16 @@ local function RowOnEnter(self)
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation)
-			local msg = "Requires a minimum standing of " .. offset .. " " .. app.GetFactionStandingText(standingId, true) .. ".";
+			local msg = "Requires a minimum standing of"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
 			local standingId, offset = app.GetFactionStanding(reference.maxReputation)
-			local msg = "Requires a standing lower than " .. offset .. " " .. app.GetFactionStandingText(standingId, true) .. ".";
+			local msg = "Requires a standing lower than"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
