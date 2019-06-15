@@ -113,14 +113,14 @@ _.Zones =
 							}),
 							q(9742, {	-- More Spore Sacs
 								["qg"] = 17923,	-- Fahssn
-								["coord"] = { 19.0, 63,4, 102 },
+								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9739,	-- The Sporelings' Plight
 								["repeatable"] = true,
 								["maxReputation"] = FRIENDLY,
 							}),
 							q(9744, {	-- More Tendrils!
 								["qg"] = 17923,	-- Fahssn
-								["coord"] = { 19.0, 63,4, 102 },
+								["coord"] = { 19.0, 63.4, 102 },
 								["sourceQuest"] = 9743,	-- Natural Enemies
 								["repeatable"] = true,
 								["maxReputation"] = FRIENDLY,
