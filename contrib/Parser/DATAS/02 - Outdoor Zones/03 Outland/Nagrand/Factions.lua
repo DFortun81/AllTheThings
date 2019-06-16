@@ -84,6 +84,8 @@ _.Zones =
 							["minReputation"] = FRIENDLY,
 						}),
 						q(9882, {	-- Stealing from Thieves
+						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
+							["isBreadcrumb"] = true,
 							["qg"] = 18265,	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
 							["minReputation"] = NEUTRAL,

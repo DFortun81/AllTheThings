@@ -33,11 +33,11 @@ _.Zones =
 --]]
 --[[
 					qh(32242),	-- Buried Secrets
-					qh(32022),	-- Candy Bucket
 					q(31279),	-- Everything I Know About Cooking
 --]]					
 					qh(32901, {	-- Heroic Deeds
-						["groups"] = {
+						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
+						["g"] = {
 							i(98546,  {  -- Bulging Heroic Cache of Treasures
 								i(98209),	-- Druid B,R - Monk M								
 								i(98203),	-- Druid B,R - Monk M
@@ -153,7 +153,6 @@ _.Zones =
 								i(98172),	-- Druid F,G - Hunter - Rogue - Shaman Enh - Monk B,W - DH
 							}),
 						},
-						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 					}),
 					q(32726, {	-- So You Want to Be a Blacksmith...
 						["qg"] = 64058,	-- Jorunga Stonehoof
@@ -473,7 +472,7 @@ _.Zones =
 						i(44694),	-- Antiseptic-Soaked Dressing Shirt
 					}),
 					n(64058, {	-- Jorunga Stonehoof <Blacksmithing Supplies>
-						["groups"] = {
+						["g"] = {
 							i(84158),	-- Plans: Contender's Revenant Belt
 							i(84159),	-- Plans: Contender's Revenant Boots
 							i(84160),	-- Plans: Contender's Revenant Bracers
