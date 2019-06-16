@@ -218,6 +218,11 @@ _.NeverImplemented =
 				un(1, i(96306)), -- Shoulderguards of the Exorcist
 			}),
 			cl(9, {	-- Warlock
+				un(1, i(46242)),	-- Deathbringer Gloves
+				un(1, i(46243)),	-- Deathbringer Hood
+				un(1, i(46244)),	-- Deathbringer Leggings
+				un(1, i(46245)),	-- Deathbringer Robe
+				un(1, i(46246)),	-- Deathbringer Shoulderpads
 				un(1, i(48735)),	-- Gul'dan's Gloves of Conquest
 				un(1, i(48736)),	-- Gul'dan's Hood of Conquest
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
