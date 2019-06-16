@@ -14,6 +14,7 @@ _.NeverImplemented =
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 		q(47954),	-- Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths
 		
+		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(35894),	-- Dire Maul: Bonus objective complete
 		q(35888),	-- Maraudon: dungeon completion
 		q(35598),	-- Razorfen Downs: dungeon completion

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(-2,   {	-- Vendors
+			n(-2, {	-- Vendors
 				n(18581, {	-- Alliance Field Scout
 					["coord"] = { 64.6, 46.4, 102 },
 					["races"] = ALLIANCE_ONLY,

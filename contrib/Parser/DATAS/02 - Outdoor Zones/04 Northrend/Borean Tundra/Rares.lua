@@ -3,63 +3,52 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Northrend
-		["mapID"] = 113,
-		["g"] = {
-			{	-- Borean Tundra
-				["mapID"] = 114,
-				["g"] = {
-					n(-16, { 	-- Rares
-						{
-							["npcID"] = 32358,		-- Fumblub Gearwind [NPC]
-							["coords"] = {
-								{ 67.0, 23.0 },
-								{ 63.6, 28.4 },
-								{ 69.6, 31.4 },
-							},
-							["groups"] = {
-								{
-									["achievementID"] = 2257,	-- Frostbitten [Achievement]
-									["criteriaID"] = 5,	-- Fumblub Gearwind [Criteria]
-								},
-								i(44666),	-- Fumblub's Seat Cushion
-								i(44663),	-- Abandoned Adventurer's Satchel
-							},
-						},
-						{
-							["npcID"] = 32361,		-- Icehorn [NPC]
-							["coords"] = {
-								{ 81.4, 31.4 },
-								{ 91.6, 32.6 },
-								{ 85.8, 34.6 },
-								{ 88.6, 39.8 },
-								{ 80.6, 46.2 },
-								{ 84.6, 46.8 },
-							},
-							["groups"] = {
-								{
-									["achievementID"] = 2257,	-- Frostbitten [Achievement]
-									["criteriaID"] = 6,	-- Icehorn [Criteria]
-								},
-								i(44667),	-- Mammoth-Hair Crown
-								i(44663),	-- Abandoned Adventurer's Satchel
-							},
-						},
-						{
-							["npcID"] = 32357,		-- Old Crystalbark [NPC]
-							["coord"] = { 33.8, 30.8 },
-							["groups"] = {
-								{
-									["achievementID"] = 2257,	-- Frostbitten [Achievement]
-									["criteriaID"] = 4,	-- Old Crystalbark [Criteria]
-								},
-								i(44649),	-- Crystalbark's Toenail
-								i(44663),	-- Abandoned Adventurer's Satchel
-							},
-						},
-					}),
-				},
-			},
-		},
-	},
+	m(113, {	-- Northrend
+		m(114, {	-- Borean Tundra
+			n(-16, { 	-- Rares
+				n(32358, {	-- Fumblub Gearwind
+					["coords"] = {
+						{ 67.0, 23.0, 114 },
+						{ 63.6, 28.4, 114 },
+						{ 69.6, 31.4, 114 },
+					},
+					["g"] = {
+						crit(5, {	-- Fumblub Gearwind
+							["achievementID"] = 2257,	-- Frostbitten
+						}),
+					--	ach(2257, crit(5)),	-- Frostbitten, Fumblub Gearwind
+						i(44666),	-- Fumblub's Seat Cushion
+						i(44663),	-- Abandoned Adventurer's Satchel
+					},
+				}),
+				n(32361, {	-- Icehorn
+					["coords"] = {
+						{ 81.4, 31.4, 114 },
+						{ 91.6, 32.6, 114 },
+						{ 85.8, 34.6, 114 },
+						{ 88.6, 39.8, 114 },
+						{ 80.6, 46.2, 114 },
+						{ 84.6, 46.8, 114 },
+					},
+					["g"] = {
+						crit(6, {	-- Icehorn
+							["achievementID"] = 2257,	-- Frostbitten
+						}),
+						i(44667),	-- Mammoth-Hair Crown
+						i(44663),	-- Abandoned Adventurer's Satchel
+					},
+				}),
+				n(32357, {	-- Old Crystalbark
+					["coord"] = { 33.8, 30.8, 114 },
+					["g"] = {
+						crit(4, {	-- Old Crystalbark
+							["achievementID"] = 2257,	-- Frostbitten
+						}),
+						i(44649),	-- Crystalbark's Toenail
+						i(44663),	-- Abandoned Adventurer's Satchel
+					},
+				}),
+			}),
+		}),
+	}),
 };

@@ -3,18 +3,16 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(113, { 	-- Northrend
+	m(113, {	-- Northrend
 		m(127, {	-- Crystalsong Forest
-			["g"] = {	
-				n(-228, {	-- Flight Points
-					fp(337, {	-- Sunreaver's Command, Crystalsong Forest
-						["coord"] = { 78.4, 50.2, 127 },
-					}),
-					fp(336, {	-- Windrunner's Overlook, Crystalsong Forest
-						["coord"] = { 72, 80.8, 127 },
-					}),
+			n(-228, {	-- Flight Points
+				fp(337, {	-- Sunreaver's Command, Crystalsong Forest
+					["coord"] = { 78.4, 50.2, 127 },
 				}),
-			},
+				fp(336, {	-- Windrunner's Overlook, Crystalsong Forest
+					["coord"] = { 72.0, 80.8, 127 },
+				}),
+			}),
 		}),
 	}),
 };
