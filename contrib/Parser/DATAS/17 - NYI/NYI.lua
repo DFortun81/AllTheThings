@@ -171,6 +171,8 @@ _.NeverImplemented =
 				un(1, i(96266)), -- Mantle of the Chromatic Hydra
 			}),
 			cl(5, {	-- Priest
+				un(1, i(46230)),    -- Circlet of Sanctification
+				un(1, i(46231)),    -- Cowl of Sanctification
 				un(1, i(48750)),	-- Zabra's Cowl of Conquest
 				un(1, i(48751)),	-- Zabra's Gloves of Conquest
 				un(1, i(48752)),	-- Zabra's Leggings of Conquest
