@@ -15,6 +15,7 @@ _.NeverImplemented =
 		q(47954),	-- Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths
 		
 		q(35894),	-- Dire Maul: Bonus objective complete
+		q(35888),	-- Maraudon: dungeon completion
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
 		q(35307),	-- Wailing Caverns: bonus objective complete
