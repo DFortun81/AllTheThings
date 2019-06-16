@@ -713,6 +713,7 @@ _.Zones =
 						i(57460),	-- Breastplate of Rescue
 						i(57459),	-- Headguard of the Innocent
 						i(131455),	-- Helm of the Innocent
+						i(57458),	-- Thal'darah's Pendant
 					},
 				},
 				{	-- Schemin' That Sabotage
