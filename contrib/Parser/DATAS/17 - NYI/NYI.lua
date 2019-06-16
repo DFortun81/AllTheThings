@@ -144,11 +144,26 @@ _.NeverImplemented =
 				un(1, i(150645)),	-- Mountainsage Sandals
 				un(1, i(150650)),	-- Mountainsage Shoulderpads
 				un(1, i(150652)),	-- Mountainsage Wristwraps
+				un(1, i(46249)),    -- Kirin Tor Gauntlets
+				un(1, i(46250)),    -- Kirin Tor Hood
+				un(1, i(46251)),    -- Kirin Tor Leggings
+				un(1, i(46252)),    -- Kirin Tor Shoulderpads
+				un(1, i(46253)),    -- Kirin Tor Tunic
+				un(1, i(48725)),    -- Khadgar's Gauntlets
+				un(1, i(48726)),    -- Khadgar's Hood
+				un(1, i(48727)),    -- Khadgar's Leggings
+				un(1, i(48728)),    -- Khadgar's Robe
+				un(1, i(48729)),    -- Khadgar's Shoulderpads
 				un(1, i(48730)),	-- Sunstrider's Gauntlets of Conquest
 				un(1, i(48731)),	-- Sunstrider's Hood of Conquest
 				un(1, i(48732)),	-- Sunstrider's Leggings of Conquest
 				un(1, i(48733)),	-- Sunstrider's Robe of Conquest
 				un(1, i(48734)),	-- Sunstrider's Shoulderpads of Conquest
+				un(1, i(51712)),	-- Bloodmage Shoulderpads
+				un(1, i(51713)),	-- Bloodmage Robe
+				un(1, i(51714)),	-- Bloodmage Leggings
+				un(1, i(51715)),	-- Bloodmage Hood
+				un(1, i(51716)),	-- Bloodmage Gloves
 				-- Unused T0 Replica
 				un(1, i(78020)),	-- Replica Magister's Belt
 				un(1, i(78021)),	-- Replica Magister's Bindings
@@ -173,16 +188,44 @@ _.NeverImplemented =
 			cl(5, {	-- Priest
 				un(1, i(46230)),    -- Circlet of Sanctification
 				un(1, i(46231)),    -- Cowl of Sanctification
+				un(1, i(46247)),    -- Gloves of Sanctification
+				un(1, i(46248)),    -- Handwraps of Sanctification
+				un(1, i(46254)),    -- Leggings of Sanctification
+				un(1, i(46255)),    -- Mantle of Sanctification
+				un(1, i(46256)),    -- Pants of Sanctification
+				un(1, i(46257)),    -- Rainments of Sanctification
+				un(1, i(46258)),    -- Robe of Sanctification
+				un(1, i(46259)),    -- Shoulderpads of Sanctification
+				un(1, i(48745)),	-- Velen's Cowl
+				un(1, i(48746)),	-- Velen's Gloves
+				un(1, i(48747)),	-- Velen's Leggings
+				un(1, i(48748)),	-- Velen's Robe
+				un(1, i(48749)),	-- Velen's Shoulderpads
 				un(1, i(48750)),	-- Zabra's Cowl of Conquest
 				un(1, i(48751)),	-- Zabra's Gloves of Conquest
 				un(1, i(48752)),	-- Zabra's Leggings of Conquest
 				un(1, i(48753)),	-- Zabra's Robe of Conquest
 				un(1, i(48754)),	-- Zabra's Shoulderpads of Conquest
+				un(1, i(48755)),	-- Velen's Circlet
+				un(1, i(48756)),	-- Velen's Handwraps
+				un(1, i(48757)),	-- Velen's Mantle
+				un(1, i(48758)),	-- Velen's Pants
+				un(1, i(48759)),	-- Velen's Rainments
 				un(1, i(48760)),	-- Zabra's Circlet of Conquest
 				un(1, i(48761)),	-- Zabra's Handwraps of Conquest
 				un(1, i(48762)),	-- Zabra's Mantle of Conquest
 				un(1, i(48763)),	-- Zabra's Pants of Conquest
 				un(1, i(48764)),	-- Zabra's Raiments of Conquest
+				un(1, i(51732)),	-- Crimson Acolyte Leggings
+				un(1, i(51733)),	-- Crimson Acolyte Robe
+				un(1, i(51734)),	-- Crimson Acolyte Shoulderpads
+				un(1, i(51735)),	-- Crimson Acolyte Gloves
+				un(1, i(51736)),	-- Crimson Acolyte Hood
+				un(1, i(51737)),	-- Crimson Acolyte Cowl
+				un(1, i(51738)),	-- Crimson Acolyte Handwraps
+				un(1, i(51739)),	-- Crimson Acolyte Mantle
+				un(1, i(51740)),	-- Crimson Acolyte Rainments
+				un(1, i(51741)),	-- Crimson Acolyte Pants
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157634)),	-- Whispering Staff of the Void
 				un(1, i(157633)),	-- Staff of Radiance
@@ -218,6 +261,11 @@ _.NeverImplemented =
 				un(1, i(96306)), -- Shoulderguards of the Exorcist
 			}),
 			cl(9, {	-- Warlock
+				un(1, i(32093)),	-- Chancellor's Dreadweave Gloves
+				un(1, i(32094)),	-- Chancellor's Dreadweave Hood
+				un(1, i(32095)),	-- Chancellor's Dreadweave Legs
+				un(1, i(32096)),	-- Chancellor's Dreadweave Manthle
+				un(1, i(32097)),	-- Chancellor's Dreadweave Robe
 				un(1, i(46242)),	-- Deathbringer Gloves
 				un(1, i(46243)),	-- Deathbringer Hood
 				un(1, i(46244)),	-- Deathbringer Leggings
@@ -228,11 +276,16 @@ _.NeverImplemented =
 				un(1, i(48737)),	-- Gul'dan's Leggings of Conquest
 				un(1, i(48738)),	-- Gul'dan's Robe of Conquest
 				un(1, i(48739)),	-- Gul'dan's Shoulderpads of Conquest
-				un(1, i(32093)),	-- Chancellor's Dreadweave Gloves
-				un(1, i(32094)),	-- Chancellor's Dreadweave Hood
-				un(1, i(32095)),	-- Chancellor's Dreadweave Legs
-				un(1, i(32096)),	-- Chancellor's Dreadweave Manthle
-				un(1, i(32097)),	-- Chancellor's Dreadweave Robe
+				un(1, i(48740)),	-- Kel'Thuzad's Gloves
+				un(1, i(48741)),	-- Kel'Thuzad's Hood
+				un(1, i(48742)),	-- Kel'Thuzad's Leggings
+				un(1, i(48743)),	-- Kel'Thuzad's Robe
+				un(1, i(48744)),	-- Kel'Thuzad's Shoulderpads
+				un(1, i(51762)),	-- Dark Coven Shoulderpads
+				un(1, i(51763)),	-- Dark Coven Robe
+				un(1, i(51764)),	-- Dark Coven Leggings
+				un(1, i(51765)),	-- Dark Coven Hood
+				un(1, i(51766)),	-- Dark Coven Gloves
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(157642)),	-- Demonologist's Staff
 				un(1, i(157641)),	-- Destructive Spellstaff
