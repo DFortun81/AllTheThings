@@ -5,6 +5,31 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-169, {	-- Emissary Quests
+			q(55976, {	-- Supplies From The Unshackled
+				["qg"] = 154002,	-- Atolia Seapearl
+				["lvl"] = 120,
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
+				["g"] = {
+					i(169940, {	-- Unshackled Supplies
+						i(170203),	-- Flopping Fish
+						i(170469),	-- Memento of the Deeps
+						i(170169),	-- Technique: Glyph of the Cold Waves
+					}),
+				},
+			}),
+			q(55976, {	-- Supplies From The Waveblade Ankoan
+				["qg"] = 154140,	-- Speaker Utia
+				["lvl"] = 120,
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+				["g"] = {
+					i(169939, {	-- Ankoan Supplies
+						i(170203),	-- Flopping Fish
+						i(170469),	-- Memento of the Deeps
+					}),
+				},
+			}),
 			q(56119, {	-- The Ankoan
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
