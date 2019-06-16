@@ -21,6 +21,8 @@ _.NeverImplemented =
 		q(35615),	-- Razorfen Kraul: dungeon completion
 		q(35307),	-- Wailing Caverns: bonus objective complete
 		q(35303),	-- Wailing Caverns: Naralax awakening ritual complete
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
 		q(35588),	-- Zul'Farrak: end-of-dungeon reward granted
 		q(35589),	-- Zul'Farrak: bonus objective completed
 	}),
