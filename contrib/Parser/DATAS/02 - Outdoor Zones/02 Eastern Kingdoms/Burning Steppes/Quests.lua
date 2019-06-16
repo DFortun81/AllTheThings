@@ -13,6 +13,7 @@ _.Zones =
 							["g"] = {
 								i(64496),	-- Hatchlings' Protector
 								i(64495),	-- Whelp Keeper's Staff
+								i(64497),	-- Flamestar Amulet
 							},
 						}),
 						qh(28417, {	-- Done Nothing Wrong
