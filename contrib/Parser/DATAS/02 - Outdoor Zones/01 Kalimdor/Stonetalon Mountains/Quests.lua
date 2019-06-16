@@ -280,6 +280,7 @@ _.Zones =
 						i(57467),	-- Fancy Footwork
 						i(57466),	-- Negotiator's Armbands
 						i(131449),	-- Valen's Treads
+						i(57465),	-- Ambassador's Amulet
 					},
 				},
 				{	-- Death by Proxy
