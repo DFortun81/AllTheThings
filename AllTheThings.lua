@@ -3842,7 +3842,7 @@ end)();
 			elseif key == "collectible" then
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
-				if app.AccountWideReputations then
+				if app.AccountWideFlightPaths then
 					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
 						return 1;
 					end
