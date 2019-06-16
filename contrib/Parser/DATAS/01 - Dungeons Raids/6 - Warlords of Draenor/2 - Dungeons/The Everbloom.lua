@@ -125,7 +125,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1209, {	-- Xeri'tac
-					["crs"] = { 84550 },	-- Xeri'tac
+					["crs"] = {
+						84666,	-- Xeri'tac (before pulling)
+						84550,	-- Xeri'tac
+					},
 					["g"] = {
 						i(119173),	-- Dessicated Husk Shield
 						i(109898),	-- Blackwater Wrap
@@ -398,7 +401,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1209, {	-- Xeri'tac
-					["crs"] = { 84550 },	-- Xeri'tac
+					["crs"] = {
+						84666,	-- Xeri'tac (before pulling)
+						84550,	-- Xeri'tac
+					},
 					["g"] = {
 						i(119173),	-- Dessicated Husk Shield
 						i(109898),	-- Blackwater Wrap
@@ -668,7 +674,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				e(1209, {	-- Xeri'tac
-					["crs"] = { 84550 },	-- Xeri'tac
+					["crs"] = {
+						84666,	-- Xeri'tac (before pulling)
+						84550,	-- Xeri'tac
+					},
 					["g"] = {
 						i(119173),	-- Dessicated Husk Shield
 						i(109898),	-- Blackwater Wrap
@@ -938,7 +947,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					}),
 					e(1209, {	-- Xeri'tac
-						["crs"] = { 84550 },	-- Xeri'tac
+						["crs"] = {
+							84666,	-- Xeri'tac (before pulling)
+							84550,	-- Xeri'tac
+						},
 						["g"] = {
 							i(119173),	-- Dessicated Husk Shield
 							i(109898),	-- Blackwater Wrap
