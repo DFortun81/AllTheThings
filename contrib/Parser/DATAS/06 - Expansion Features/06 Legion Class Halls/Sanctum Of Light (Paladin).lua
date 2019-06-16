@@ -4,7 +4,7 @@
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		m(24, {
+		m(24, {	-- Light's Hope Chapel
 			cl(2, {	-- Sanctum of Light (Paladin)
 				["lvl"] = 98,
 				["groups"] = {
