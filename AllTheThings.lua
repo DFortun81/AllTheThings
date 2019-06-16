@@ -583,7 +583,7 @@ end
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlaySound(app.Settings.AUDIO_COMPLETE_TABLE);
+		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
 	end
 end
 function app:PlayFanfare()
@@ -592,20 +592,20 @@ function app:PlayFanfare()
 		local now = time();
 		if lastPlayedFanfare and (now - lastPlayedFanfare) < 1 then return nil; end
 		lastPlayedFanfare = now;
-		PlaySound(app.Settings.AUDIO_FANFARE_TABLE);
+		PlayAudio(app.Settings.AUDIO_FANFARE_TABLE);
 	end
 end
 function app:PlayRareFindSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlaySound(app.Settings.AUDIO_RAREFIND_TABLE);
+		PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE);
 	end
 end
 function app:PlayRemoveSound()
 	if app.Settings:GetTooltipSetting("Warn:Removed") then
-		PlaySound(app.Settings.AUDIO_REMOVE_TABLE);
+		PlayAudio(app.Settings.AUDIO_REMOVE_TABLE);
 	end
 end
-function PlaySound(targetAudio)
+function PlayAudio(targetAudio)
 	if targetAudio and type(targetAudio) == "table" then
 		local id = math.random(1, #targetAudio);
 		if targetAudio[id] then PlaySoundFile(targetAudio[id], app.Settings:GetTooltipSetting("Channel")); end
