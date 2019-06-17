@@ -842,13 +842,18 @@ _.Zones =
 						un(2, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
-				q(3563, {	-- Jes'rimon's Payment to Jediga
-					["qg"] = 8659,	-- Jes'rimon
-					["coord"] = { 55.5, 34.1, 85 },
-					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
+				q(32468, {	-- Crystal Clarity
+					["qg"] = 16926,	-- Vivica Starshot
+					["lvl"] = 15,
+					["coord"] = { 34.5, 70.8, 85 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 45,
-					["u"] = 40,
+					["collectible"] = false,
+					["sourceQuest"] = 32471,	-- Light Camera Action
+					["g"] = {
+						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
+							i(122674),	-- S.E.L.F.I.E. Camera MkII
+						}),
+					},
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
@@ -962,6 +967,14 @@ _.Zones =
 						41002,	-- A Weapon of the Horde
 						40605,	-- Keep Your Friends Close
 					},
+				}),
+				q(3563, {	-- Jes'rimon's Payment to Jediga
+					["qg"] = 8659,	-- Jes'rimon
+					["coord"] = { 55.5, 34.1, 85 },
+					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
+					["u"] = 40,
 				}),
 				q(8944, {	-- Just Compensation (Warrior)
 					["qg"] = 16012,	-- Mokvar
@@ -1097,6 +1110,16 @@ _.Zones =
 					["races"] = { 26 },	-- Pandaren
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
+				}),
+				q(32471, {	-- Light Camera Action
+					["qg"] = 16926,	-- Vivica Starshot
+					["lvl"] = 15,
+					["coord"] = { 34.5, 70.8, 85 },
+					["races"] = HORDE_ONLY,
+					["collectible"] = false,
+					["g"] = {
+						i(122637),	-- S.E.L.F.I.E. Camera
+					},
 				}),
 				q(26293, {	-- Machines of War
 					["qg"] = 14720,	-- High Overlord Saurfang

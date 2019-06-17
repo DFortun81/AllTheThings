@@ -382,6 +382,21 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 110,
 					}),
+]]--
+					q(32469, {	-- Crystal Clarity
+						["qg"] = 16908,	-- Arielle Snapflash
+						["lvl"] = 30,
+						["coord"] = { 61.2, 22.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["sourceQuest"] = 32470,	-- Light Camera Action
+						["g"] = {
+							i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
+								i(122674),	-- S.E.L.F.I.E. Camera MkII
+							}),
+						},
+					}),
+--[[
 					q(44463, {	-- Demons Among Them
 						["classes"] = { 12 },	-- Demon Hunter
 						["races"] = ALLIANCE_ONLY,
@@ -503,6 +518,18 @@ _.Zones =
 					qa(32665),	-- Learn To Ride
 					qa(31591),	-- Learning the Ropes
 					qa(31821),	-- Level Up!
+]]--
+					q(32470, {	-- Light Camera Action
+						["qg"] = 16908,	-- Arielle Snapflash
+						["lvl"] = 15,
+						["coord"] = { 61.2, 22.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["g"] = {
+							i(122637),	-- S.E.L.F.I.E. Camera
+						},
+					}),
+--[[
 					qa(29071),	-- Make Haste to Stormwind!
 					--]]
 					qa(38206, {	-- Making the Rounds
