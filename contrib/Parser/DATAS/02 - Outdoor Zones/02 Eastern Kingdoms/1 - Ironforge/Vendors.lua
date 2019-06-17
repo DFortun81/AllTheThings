@@ -5,9 +5,10 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(87, {	-- Ironforge
-			na(-2, {	-- Vendors
+			n(-2, {	-- Vendors
 				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67095),	-- Pattern: Assassin's Chestplate
 						i(67070),	-- Pattern: Belt of Nefarious Whispers
@@ -59,6 +60,7 @@ _.Zones =
 				}),
 				n(5163,  {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 28.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21948),	-- Design: Opal Necklace of Impact
 						i(20975),	-- Design: The Jade Eye
@@ -66,6 +68,7 @@ _.Zones =
 				}),
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
 					["coord"] = { 55.8, 47.8, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64898),	-- Shroud of Ironforge
 						i(64899),	-- Cape fo Ironforge
@@ -76,6 +79,7 @@ _.Zones =
 				}),
 				n(5160,  {	-- Emrul Riknussun <Cooking Supplies>
 					["coord"] = { 60.8, 37.4, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						currency(81, {	-- Epicurean's Award
 							i(65426),	-- Recipe: Baked Rockfish
@@ -114,6 +118,7 @@ _.Zones =
 				}),
 				n(5175,  {	-- Gearcutter Cogspinner <Engineering Supplies>
 					["coord"] = { 68.2, 44.0, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18649),	-- Schematic: Blue Firework
 						i(7560),	-- Schematic: Gnomish Universal Remote
@@ -122,21 +127,9 @@ _.Zones =
 						un(7, i(16042)),	-- Schematic: Thorium Widget (now learned from trainer, schematic removed from game)
 					},
 				}),
-				n(5161,  {	-- Grimnur Stonebrand <Fishing Trainer>
-					["coord"] = { 48.4, 9.0, 87 },
-					["g"] = {
-						ach(5847, {	-- Fish or Cut Bait: Ironforge
-							i(67414, {	-- Bag of Shiny Things
-								i(44983),	-- Strand Crawler Pet
-								i(33820),	-- Weather-Beaten Fishing Hat
-								i(45991),	-- Bone Fishing Pole
-								i(45992),	-- Jeweled Fishing Pole
-							}),
-						}),
-					},
-				}),
 				n(6294,  {	-- Krom Stoutarm <Heirloom Curator>
 					["coord"] = { 74.6, 9.8, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122349),	-- Bloodied Arcanite Reaper
 						i(122350),	-- Balanced Heartseeker
@@ -202,6 +195,7 @@ _.Zones =
 				}),
 				n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
 					["coord"] = { 50.6, 27.0, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						currency(361, {	-- Illustrious Jewelcrafter's Token
 							i(52409),	-- Design: Accurate Demonseye
@@ -297,6 +291,7 @@ _.Zones =
 				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 					["coord"] = { 55.8, 47.8, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64895),	-- Mantle of Gnomeregan
 						i(64896),	-- Cape of Gnomeregan
@@ -307,6 +302,7 @@ _.Zones =
 				}),
 				n(8681,  {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 44.2, 29.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(10314), 	-- Pattern: Lavender Mageweave Shirt
 						i(10317), 	-- Pattern: Pink Mageweave Shirt
@@ -317,6 +313,7 @@ _.Zones =
 				}),
 				n(5154,  {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(54440, {	-- Dreamcloth
 							i(54601),	-- Pattern: Belt of the Depths
@@ -340,6 +337,7 @@ _.Zones =
 				}),
 				n(5108,  {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3428),	-- Common Gray Shirt
 						i(16059),	-- Common Brown Shirt
@@ -348,12 +346,14 @@ _.Zones =
 				}),
 				n(5122,  {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 72.2, 65.0, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303),	-- Fine Shortbow
 					},
 				}),
 				n(5178,  {	-- Soolie Berryfizz <Alchemy Supplies>
 					["coord"] = { 66.6, 54.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13478),	-- Recipe: Elixir of Superior Defense
 						i(5642),	-- Recipe: Free Action Potion
@@ -361,6 +361,7 @@ _.Zones =
 				}),
 				n(5162,  {	-- Tansy Puddlefizz <Fishing Supplies>
 					["coord"] = { 47.8, 6.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(17062),	-- Recipe: Mithril Head Trout
@@ -370,6 +371,7 @@ _.Zones =
 				}),
 				n(4259,  {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52186, {	-- Elementium Bar
 							["g"] = {
@@ -421,6 +423,7 @@ _.Zones =
 				}),
 				n(5158,  {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 61.0, 45.6, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -428,7 +431,9 @@ _.Zones =
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						i(52555, {	-- Hypnotic Dust
-							a(i(67312)),	-- Formula: Magic Lamp
+							i(67312, {	-- Formula: Magic Lamp
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						i(52721, {	-- Heavenly Shard
 							i(64411),	-- Formula: Enchant Boots - Assassin's Step
