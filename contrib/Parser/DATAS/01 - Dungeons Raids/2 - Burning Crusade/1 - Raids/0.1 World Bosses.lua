@@ -12,6 +12,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				["isRaid"] = true,
 				["maps"] = { 100 },	-- Hellfire Peninsula
 				["coord"] = { 63.2, 16.0, 100 },
+				["modelScale"] = 3.8,
 				["groups"] = {
 					i(30732),	-- Exodar Life-Staff
 					i(30733),	-- Hope Ender
