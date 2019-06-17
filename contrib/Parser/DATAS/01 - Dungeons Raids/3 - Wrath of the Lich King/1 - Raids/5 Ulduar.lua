@@ -149,6 +149,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["questID"] = 13607,	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
 						["qg"] = 33957,	-- Prospector Loren
+						["u"] = 40,
 					},
 					{	-- Freya's Sigil
 						["questID"] = 13606,	-- Freya's Sigil
@@ -163,6 +164,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["questID"] = 13606,	-- Freya's Sigil
 							},
 						},
+						["u"] = 40,
 					},
 					{	-- Hodir's Sigil
 						["questID"] = 13609,	-- Hodir's Sigil
@@ -177,6 +179,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["questID"] = 13609,	-- Hodir's Sigil
 							},
 						},
+						["u"] = 40,
 					},
 					{	-- Mimiron's Sigil
 						["questID"] = 13611,	-- Mimiron's Sigil
@@ -191,6 +194,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["questID"] = 13611,	-- Mimiron's Sigil
 							},
 						},
+						["u"] = 40,
 					},
 					{	-- Thorim's Sigil
 						["questID"] = 13610,	-- Thorim's Sigil
@@ -205,6 +209,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["questID"] = 13610,	-- Thorim's Sigil
 							},
 						},
+						["u"] = 40,
 					},
 					{	-- Algalon
 						["questID"] = 13614,	-- Algalon
@@ -226,6 +231,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								},
 							},
 						},
+						["u"] = 40,
 					},
 					{	-- Heroic: The Celestial Planetarium
 						["questID"] = 13816,	-- Heroic: The Celestial Planetarium
