@@ -559,6 +559,8 @@ _.NeverImplemented =
 				un(1, i(97053)), -- Nine-Tailed Helmet
 				un(1, i(97054)), -- Nine-Tailed Legguards
 				un(1, i(97055)), -- Nine-Tailed Spaulders
+				-- Transmog set item that never became available
+				un(1, i(130327)),	-- Artful Britches
 			}),
 			cl(10, {	-- Monk
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
