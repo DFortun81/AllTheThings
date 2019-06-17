@@ -102,7 +102,6 @@ _.WorldDrops =
 					i(37802),	-- Elanor's Edge
 					i(43613),	-- The Dusk Blade
 					i(44310),	-- Namlak's Supernumerary Sticker
-					i(44505),	-- Dustbringer
 				}),
 				n(-348, {	-- Fist Weapons	
 					i(36557),	-- Meat Ripper
