@@ -3,13 +3,11 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(948, { 	-- The Maelstrom
+	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			["g"] = {
-				n(0, {	-- Zone Drop
-					i(65650),	-- Technique: Origami Rock
-				}),
-			},
-		}),		
+			n(0, {	-- Zone Drop
+				i(65650),	-- Technique: Origami Rock
+			}),
+		}),
 	}),
 };
