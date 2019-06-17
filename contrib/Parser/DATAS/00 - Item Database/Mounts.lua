@@ -56,7 +56,8 @@ i(91010, 120822);	-- Reins of the Great Red Dragon Turtle
 i(91013, 127302);	-- Reins of the Great Blue Dragon Turtle
 i(91015, 127310);	-- Reins of the Great Purple Dragon Turtle
 i(103630, 30174);	-- Lucky Riding Turtle
-i(122703, 179244);	-- Chauffeured Chopper
+i(120968, 179245);	-- Chauffeured Chopper (Alliance)
+i(122703, 179244);	-- Chauffeured Chopper (Horde)
 i(128480, 190690);	-- Bristling Hellboar
 i(128526, 190977);	-- Deathtusk Felboar
 i(142224, 229377); 	-- High Priest's Lightsworn Seeker
@@ -197,3 +198,5 @@ i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
 
 i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
+i(168055, 295387);	-- Bloodflank Charger
+i(168056, 295386);	-- Ironclad Frostclaw
