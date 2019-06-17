@@ -72,9 +72,12 @@ _.Zones =
 					["qg"] = 44345,	-- Cannary Caskshot
 				}),
 				q(454,   {	-- After the Ambush
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2057,	-- Huldar
-					["u"] = 40,	-- Legacy Quests
+					["coord"] = { 52.2, 69.4, 48 },
+					["sourceQuest"] = 273,	-- Resupplying the Excavation (Legacy)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
 				q(26846, {	-- A Nasty Exploit
 				--	unclear if this quest is required for the achievement
@@ -175,6 +178,12 @@ _.Zones =
 				}),
 				q(13652, {	-- Defense of the Stonewrought Dam
 					["u"] = 40,	-- Legacy Quests
+				}),
+				q(298, {	-- Excavation Progress Report
+					["qg"] = 1344,	-- Prospector Ironband
+					["coord"] = { 65.9, 65.6, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
 				--	["objectID"] = 194387,	-- Stolen Explorers' League Document
@@ -387,21 +396,25 @@ _.Zones =
 						un(2, i(58976)), 	-- Rat Ear Cloak
 					},
 				}),
-				q(301,   {	-- Report to Ironforge
-					["races"] = ALLIANCE_ONLY,
+				q(301, {	-- Report to Ironforge
 					["qg"] = 1105,	-- Jern Hornhelm
-					["u"] = 40,	-- Legacy Quests
+					["coord"] = { 37.2, 47.4, 48 },
+					["sourceQuest"] = 298,	-- Excavation Progress Report
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,
 				}),
 				q(13639, {	-- Resupplying the Excavation
-					["sourceQuests"] = { 26868 },	-- Axis of Awful
-					["coord"] = { 37.2, 47.5, 48 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1105,	-- Jern Hornhelm
+					["coord"] = { 37.2, 47.4, 48 },
+					["sourceQuest"] = 26868,	-- Axis of Awful
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(273,   {	-- Resupplying the Excavation (U)
-					["races"] = ALLIANCE_ONLY,
+				q(273, {	-- Resupplying the Excavation (Legacy)
 					["qg"] = 1105,	-- Jern Hornhelm
-					["u"] = 40,	-- Legacy Quests
+					["coord"] = { 37.2, 47.4, 48 },
+					["sourceQuest"] = 302,	-- Powder to Ironband
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,
 				}),
 				q(25117, {	-- Scout's Dishonor
 					["races"] = ALLIANCE_ONLY,
@@ -475,7 +488,10 @@ _.Zones =
 					["qg"] = 1187,	-- Daryl the Youngling
 				}),
 				q(26854, {	-- The Lost Pilot
-					["sourceQuests"] = { 28567 },	-- Hero's Call: Loch Modan!
+					["sourceQuests"] = {
+						26131,	-- Reinforcements for Loch Modan
+						28567,	-- Hero's Call: Loch Modan!
+					},
 					["coord"] = { 14.0, 56.6, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1960,	-- Pilot Hammerfoot

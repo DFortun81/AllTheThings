@@ -1026,12 +1026,12 @@ _.Zones =
 						un(2, i(6792)),	-- Sanguine Pauldrons
 					},
 				},
-				{	-- The Karnitol Shipwreck
-					["questID"] = 1454,
+				q(1454, {	-- The Karnitol Shipwreck
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, 66 },
+					["sourceQuest"] = 1453,	-- Reclaimers' Business in Desolace
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 14354,	-- Elune's Gifts
-				},
+				}),
 				{	-- The Karnitol Shipwreck
 					["questID"] = 1456,
 					["qg"] = 5638,	-- Kreldig Ungor

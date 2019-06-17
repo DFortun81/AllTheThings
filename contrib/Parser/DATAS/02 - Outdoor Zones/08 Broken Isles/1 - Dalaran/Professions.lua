@@ -827,14 +827,16 @@ _.Zones =
 							},
 						}),
 						q(39957,  {	-- Demon Ink
-							["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
+							["sourceQuest"] = 39953,	-- Halls of Valor: Vision of Valor
 							["g"] = {
 								recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
 							},
 						}),
 						q(39932,  {	-- Fish Ink
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
 						}),
 						i(136916, {	-- Fjarnsk
 							["description"] = "Chance to create item when milling Fjarnskaggl.",
@@ -846,9 +848,11 @@ _.Zones =
 						}),
 						q(39953,  {	-- Halls of Valor: Vision of Valor
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
 						}),
 						q(39954,  {	-- Mass Milling Techniques
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
 							["g"] = {
 								recipe(210116),	-- Mass Mill Yseralline Seeds
 							},
@@ -885,13 +889,15 @@ _.Zones =
 						}),
 						q(39847,  {	-- Sign This
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
 							["g"] = {
 								recipe(195115),	-- Inscription (lvl 800)
 							},
 						}),
 						q(39931,  {	-- Smashing Herbs
-							["sourceQuests"] = { 39847 },	-- Sign This
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
+							["sourceQuest"] = 39847,	-- Sign This
 						--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
 							["g"] = {
 								recipe(192969),	--
@@ -912,14 +918,16 @@ _.Zones =
 							["qg"] = 97362,	-- Dazzik "Proudmoore"
 						}),
 						q(39933,  {	-- The Card Shark
-							["sourceQuests"] = { 39932 },	-- Fish Ink
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
+							["sourceQuest"] = 39932,	-- Fish Ink
 							["g"] = {
 								recipe(192854),	-- Prophecy Tarot (Rank 1)
 							},
 						}),
 						q(39948,  {	-- The Ink Flows
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
 						}),
 						q(39959, {	-- The Plot Thickens
 							["qg"] = 92195,	-- Professor Pallin
@@ -927,9 +935,11 @@ _.Zones =
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 						}),
-						qa(39955, {	-- The Plot Thickens
-							["isBreadcrumb"] = true,
+						q(39955, {	-- The Plot Thickens
 							["qg"] = 92195,	-- Professor Pallin
+							["coord"] = { 41.6, 37.2, 627 },
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(43929,  {	-- Vantus Mastery
 							["qg"] = 90417,	-- Archmage Khadgar

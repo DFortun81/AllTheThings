@@ -271,6 +271,22 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 						["races"] = HORDE_ONLY,
 					}),
+--[[				-- Legacy Winter Veil Quests
+					q(8799, {	-- The Hero of the Day
+						["qg"] = 13418,	-- Kaymard Copperpinch
+						["coord"] = { 52.4, 77.0, 87 },
+						["races"] = HORDE_ONLY,
+						["maps"] = { 85 },	-- Orgrimmar
+						["u"] = 40,
+						}),
+					q(8763, {	-- The Hero of the Day
+						["qg"] = 13433,	-- Wulmort Jinglepocket
+						["coord"] = { 33.2, 67.8, 87 },
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 87 },	-- Ironforge
+						["u"] = 40,
+					}),
+]]--
 				},
 			}),
 

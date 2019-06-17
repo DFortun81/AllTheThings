@@ -40,14 +40,14 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["isBreadcrumb"] = true,
 				},
-				{	-- An Audience with the Farseer
-					["questID"] = 27270,
+				q(27270, {	-- An Audience with the Farseer
 					["qg"] = 52292,	-- Droha
 					["coord"] = { 43.8, 78.8, 89 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
 					["isBreadcrumb"] = true,
-				},
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 7 },	-- Shaman	
+					["lvl"] = 50,
+				}),
 				{	-- An Invitation from Moonglade
 					["questID"] = 27273,
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
@@ -123,15 +123,16 @@ _.Zones =
 						un(2, i(11871)),	-- Snarkshaw Spaulders
 					},	
 				}),
-				{	-- Favored of Elune
-					["questID"] = 27362,
+				q(27362, {	-- Favored of Elune
+					["qg"] = 7999,	-- Tyrande Whisperwind
+					["coord"] = { 43.0, 77.8, 89 },
+					["sourceQuest"] = 27269,	-- The Temple of the Moon
+					["races"] = { 4 },	-- Night Elf
+					["classes"] = { 5 },	-- Priest
 					["groups"] = {
 						i(65483),	-- Moon Staff of Elune
 					},
-					["qg"] = 7999,	-- Tyrande Whisperwind
-					["races"] = { 4 },	-- Night Elf
-					["classes"] = { 5 },	-- Priest
-				},
+				}),
 				{	-- Happy as a Clam Digger
 					["questID"] = 29321,
 					["groups"] = {
@@ -147,14 +148,14 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = 129,	-- Fishing
 				},
-				{	-- Journey to the Wizard's Sanctum
-					["questID"] = 27271,
-					["qg"] = 50690,	-- Tarelvir
-					["coord"] = { 37.6, 80.0, 89 },
+				q(27271, {	-- Journey to the Wizard's Sanctum
+					["qg"] = 50690,	-- Tarelvir (Darnassus)
+					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 8 },	-- Mage
-					["isBreadcrumb"] = true,
-				},
+					["lvl"] = 20,
+				}),
 				{	-- Learn to Ride
 					["questID"] = 32664,
 					["races"] = { 4 },	-- Night Elf
@@ -179,6 +180,14 @@ _.Zones =
 						}
 					},
 				},
+				q(27265, {	-- Lord Grayson Shadowbreaker
+					["qg"] = 35281,	-- Rukua (Darnassus)
+					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["lvl"] = 20,
+				}),
 				{	-- Lord Grayson Shadowbreaker
 					["questID"] = 27265,
 					["qg"] = 35281,	-- Rukua
@@ -187,22 +196,30 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["isBreadcrumb"] = true,
 				},
+				q(27267, {	-- Make Contact with SI:7
+					["qg"] = 4214,	-- Erion Shadewhisper (Darnassus)
+					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["lvl"] = 20,	
+				}),
 				{	-- Make Contact with SI:7
 					["questID"] = 27267,
 					["qg"] = 4214,
-					["coord"] = { 40.0, 39.6, 89 },
+					
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["isBreadcrumb"] = true,
 				},
-				{	-- Make Haste to the Cathedral
-					["questID"] = 27268,
-					["qg"] = 11401,
-					["coord"] = { 43.4, 79.2, 89 },
+				q(27268,{	-- Make Haste to the Cathedral
+					["qg"] = 11401,	-- Priestess Alathea (Darnassus)
+					["coord"] = { 43.4, 79.2, 89 },	-- Priestess Alathea (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },	-- Priest
-					["isBreadcrumb"] = true,
-				},
+					["lvl"] = 20,
+				}),
 				{	-- Mathiel's Armor
 					["questID"] = 1711,
 					["groups"] = {
@@ -221,54 +238,54 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["isBreadcrumb"] = true,
 				},
-				{	-- Meet with Farseer Umbrua
-					["questID"] = 28287,
-					["qg"] = 52292,	-- Droha
-					["coord"] = { 43.8, 78.8, 89 },
+				q(28287, {	-- Meet with Farseer Umbrua
+					["qg"] = 52292,	-- Droha (Darnassus)
+					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 7 },	-- Shaman
-					["isBreadcrumb"] = true,
-				},
-				{	-- Meet with High Priestess Laurena
-					["questID"] = 28285,
+					["lvl"] = 50,
+				}),
+				q(28285, {	-- Meet with High Priestess Laurena
 					["qg"] = 11401,	-- Priestess Alathea
 					["coord"] = { 43.4, 79.2, 89 },
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
+				}),
+				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
+					["qg"] = 35281,	-- Rukua (Darnassus)
+					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
 					["isBreadcrumb"] = true,
-				},
-				{	-- Meet with Lord Grayson Shadowbreaker
-					["questID"] = 28268,
-					["qg"] = 35281,	-- Rukua
-					["coord"] = { 43.6, 78.4, 89 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
+					["lvl"] = 50,
+				}),
+				q(28262, {	-- Meet with Lord Tony Romano
+					["qg"] = 4214,	-- Erion Shadewhisper (Darnassus)
+					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
 					["isBreadcrumb"] = true,
-				},
-				{	-- Meet with Lord Tony Romano
-					["questID"] = 28262,
-					["qg"] = 4214,	-- Erion Shadewhisper
-					["coord"] = { 40.0, 39.6, 89 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
+					["lvl"] = 50,
+				}),
+				q(28263, {	-- Meet with Maginor Dumas
+					["qg"] = 50690,	-- Tarelvir (Darnassus)
+					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
 					["isBreadcrumb"] = true,
-				},
-				{	-- Meet with Maginor Dumas
-					["questID"] = 28263,
-					["qg"] = 50690,	-- Tarelvir
-					["coord"] = { 37.6, 80.0, 89 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 8 },	-- Mage
-					["isBreadcrumb"] = true,
-				},
-				{	-- Meet with Wulf Hansreim
-					["questID"] = 28260,
-					["qg"] = 4138,	-- Jeen'ra Nightrunner
-					["coord"] = { 43.4, 26.0, 89 },
+					["lvl"] = 50,
+				}),
+				q(28260, {	-- Meet with Wulf Hansreim
+					["qg"] = 4138,	-- Jeen'ra Nightrunner (Darnassus)
+					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["isBreadcrumb"] = true,
-				},
+					["lvl"] = 50,
+				}),
 				q(28289, {	-- Moonglade Calls
 					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 40.4, 27.6, 89 },
@@ -396,14 +413,13 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = 129,	-- Fishing
 				},
-				{	-- The Temple of the Moon
-					["questID"] = 27269,
+				q(27269, {	-- The Temple of the Moon
 					["qg"] = 11401,	-- Priestess Alathea
 					["coord"] = { 43.4, 79.2, 89 },
+					["isBreadcrumb"] = true,
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 5 },	-- Priest
-					["isBreadcrumb"] = true,
-				},
+				}),
 				{	-- Tracking the Thieves
 					["questID"] = 32460,
 					["qg"] = 68651,	-- Lady Jaina Proudmoore
@@ -431,14 +447,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 				},
-				{	-- Wulf Calls
-					["questID"] = 27266,
-					["qg"] = 4138,	-- Jeen'ra Nightrunner
-					["coord"] = { 43.4, 26.0, 89 },
+				q(27266, {	-- Wulf Calls
+					["qg"] = 4138,	-- Jeen'ra Nightrunner (Darnassus)
+					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 3 },	-- Hunter
-					["isBreadcrumb"] = true,
-				},
+					["lvl"] = 20,
+				}),
 			}),
 		}),
 	}),

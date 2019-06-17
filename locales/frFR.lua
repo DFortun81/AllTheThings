@@ -50,6 +50,7 @@ for key,value in pairs({
 	[138492] = "Fragments de Myzrael",
 	[141979] = "Trésor ancien",
 	[142195] = "Plan de bataille des Griffebois",
+	[142343] = "Piédestal d'Uldum",
 	[142487] = "Le Brille-o-Matic 5200",
 	[144063] = "Monolithe d'Equinex",
 	[148502] = "Page 9",

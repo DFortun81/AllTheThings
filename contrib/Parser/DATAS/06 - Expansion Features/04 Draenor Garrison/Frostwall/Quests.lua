@@ -2422,7 +2422,9 @@ _.ExpansionFeatures =
 					q(38306, {	-- Mystery Notebook
 						["qg"] = 91072,	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
+						["description"] = "Requires Garrison Rank 3.",
 						["races"] = HORDE_ONLY,
+						["lvl"] = 100,
 					}),
 					{	-- New Goods
 						["questID"] = 38427,

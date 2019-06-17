@@ -337,7 +337,10 @@ _.Zones =
 				q(6610, {	-- Clamlette Surprise
 					["qg"] = 40589,	-- Dirge Quikcleave
 					["coord"] = { 52.4, 29.0, 71 },
-					["sourceQuest"] = 6611,	-- To Gadgetzan You Go!
+					["sourceQuests"] = {
+						6611,	-- To Gadgetzan You Go!
+						6612,	-- I Know A Guy...
+					},
 					["requireSkill"] = 185,	-- Cooking
 					["groups"] = {
 						recipe(64054),	-- Clamlette Magnifique
@@ -1606,7 +1609,7 @@ _.Zones =
 				}),
 				q(8977, {	-- Return to Deliana
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
+					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
@@ -1614,18 +1617,47 @@ _.Zones =
 				}),
 				q(8978, {	-- Return to Mokvar
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
+					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 40,
-				}),
+				}),	
 				q(8921, {	-- The Ectoplasmic Distiller
 					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
+					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8923,	-- A Supernatural Device
 					["lvl"] = 58,
 					["u"] = 40,
+				}),
+				q(2954, {	-- The Stone Watcher
+					["qg"] = 7918,	-- Stone Watcher of Norgannon
+					["coord"] = { 37.6, 81.4, 71 },
+					["sourceQuests"] = { 
+						2966,	-- Seeing What Happens [Horde]
+						2946,	-- Seeing What Happens [Alliance]
+					},
+					["lvl"] = 45,
+					["u"] = 40,
+				}),
+				o(142343, {	-- Uldum Pedestal
+					["coord"] = { 37.6, 81.4, 71 },
+					["g"] = {
+						q(2967, {	-- Return to Thunder Bluff
+							["coord"] = { 37.6, 81.4, 71 },
+							["sourceQuest"] = 2954,	-- The Stone Watcher
+							["races"] = HORDE_ONLY,
+							["lvl"] = 45,
+							["u"] = 40,
+						}),
+						q(2977, {	-- Return to Ironforge
+							["coord"] = { 37.6, 81.4, 71 },
+							["sourceQuest"] = 2954,	-- The Stone Watcher
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 45,
+							["u"] = 40,
+						}),
+					},
 				}),
 			}),
 		}),

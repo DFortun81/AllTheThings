@@ -96,52 +96,50 @@ _.Zones =
 				Warboard quests should be listed beneath this note. [Pr3vention]
 				ObjectID sources:
 					Darnasses: 207321
+					Ironforge: 207320
 			]]--
 			q(29391),	-- Guardians of Hyjal: Call of the Ancients
 			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
+			q(28573),	-- Hero's Call: Arathi Highlands!
 			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-				["isBreadcrumb"] = true,
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(28579),	-- Hero's Call: Badlands!
+			q(28673),	-- Hero's Call: Blasted Lands!
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
 			q(28709),	-- Hero's Call: Borean Tundra!
+			q(28666),	-- Hero's Call: Burning Steppes!
+			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
 			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
 			q(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
 			q(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
+			q(28578),	-- Hero's Call: Eastern Plaguelands!
 			q(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
 			q(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
 			q(39207),	-- Hero's Call: Grizzly Hills!
 			q(49555),	-- Hero's Call: Icecrown!
-			q(28567, {	-- Hero's Call: Loch Modan!
-				["isBreadcrumb"] = true,
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(28567),	-- Hero's Call: Loch Modan!
 			q(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
 			q(39202),	-- Hero's Call: Netherstorm!
 			q(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
 			q(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
+			q(28582),	-- Hero's Call: Searing Gorge!
 			q(49550),	-- Hero's Call: Shadowmoon Valley!
 			q(49553),	-- Hero's Call: Sholazar Basin!
 			q(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
 			q(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
 			q(49554),	-- Hero's Call: Storm Peaks!
 			q(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+			q(28675),	-- Hero's Call: Swamp of Sorrows!
 			q(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
 			q(39188),	-- Hero's Call: Terokkar Forest!
+			q(26542),	-- Hero's Call: The Hinterlands!
 			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
 			q(28558),	-- Hero's Call: Uldum! (breadcrumb quest for 27003, not available if 28295 is completed) (max level 100)
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 			q(27724),	-- Hero's Call: Vashj'ir! (breadcrumb quest for 14482, not available if 28827,14481 are completed) (max level 100)
-			q(28562, {	-- Hero's Call: Westfall!
-				["isBreadcrumb"] = true,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(28565, {	-- Hero's Call: Wetlands!
-				["isBreadcrumb"] = true,
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(28576),	-- Hero's Call: Western Plaguelands!
+			q(28562),	-- Hero's Call: Westfall!
+			q(28565),	-- Hero's Call: Wetlands!
 			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
 			q(39181),	-- Hero's Call: Zangarmarsh!
 			q(49552),	-- Hero's Call: Zul'Drak!
@@ -150,6 +148,7 @@ _.Zones =
 			q(26365, {	-- Hero's Call: Redridge Mountains!
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 				["coord"] = { 85.6, 31.8, 84 },
+				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 107574,	-- Anduin Wrynn <King of Stormwind> 
 				["g"] = {
