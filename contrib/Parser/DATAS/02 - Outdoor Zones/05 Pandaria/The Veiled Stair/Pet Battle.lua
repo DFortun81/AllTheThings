@@ -4,14 +4,12 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(433, { -- The Veiled Stair
-			["g"] = {
-				n(-25, { 	-- Pet Battle
-					p(706), 	-- Bandicoon
-					p(708), 	-- Malayan Quillrat
-					p(709), 	-- Malayan Quillrat Pup
-				}),
-			},
+		m(433, {	-- The Veiled Stair
+			n(-25, {	-- Pet Battle
+				p(706),	-- Bandicoon
+				p(708),	-- Malayan Quillrat
+				p(709),	-- Malayan Quillrat Pup
+			}),
 		}),
 	}),
 };

@@ -19,6 +19,7 @@ _.NeverImplemented =
 		q(35888),	-- Maraudon: dungeon completion
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
+		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
 		q(35307),	-- Wailing Caverns: bonus objective complete
 		q(35303),	-- Wailing Caverns: Naralax awakening ritual complete
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
