@@ -307,6 +307,9 @@ _.Zones =
 				}),
 				q(30930, {	-- Pick a Yak
 					["qg"] = 61161,	-- Bluesaddle
+					["g"] = {
+						i(82467),	-- Ruthers' Harness
+					},
 				}),
 				q(30773, {	-- Pitching In
 					["groups"] = {
