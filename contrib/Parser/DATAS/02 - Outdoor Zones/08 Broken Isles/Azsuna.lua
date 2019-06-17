@@ -1215,6 +1215,7 @@ _.Zones =
 						["crs"] = { 113440 },	-- Squirky
 					},
 					n(115741, {	-- Orphaned Bloodgazer
+						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
 						["g"] = {
 							p(1977),  	-- Bloodgazer Hatchling
 							q(45008, {	-- Bloodgazer Bonding
@@ -1224,8 +1225,16 @@ _.Zones =
 								i(137577),	-- Predatory Bloodgazer
 							}),
 						},
-						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling|r",
-					}),	
+					}),
+					i(122681, {	-- Sternfathom's Pet Journal
+						q(40310, {	-- Shipwrecked Captive
+							["qg"] = 98489,	-- Shipwrecked Captive
+							["isWeekly"] = true,
+							["g"] = {
+								i(116415),	-- Shiny Pet Charm
+							},
+						}),
+					}),
 				}),
 				n(-38, { 	-- Profession
 					prof(171, {	-- Alchemy
@@ -2388,7 +2397,6 @@ _.Zones =
 					q(46795),	-- Ship - Azsuna
 					q(46808),	-- Ship - Highmountain
 					q(46801),	-- Ship - Val'sharah
-					q(40310),	-- Shipwrecked Captive
 					q(42220),	-- Shipwrecked Sailors
 					q(42268),	-- Shipwrecked Sailors
 					q(41176),	-- Sifting Through the Rubble
