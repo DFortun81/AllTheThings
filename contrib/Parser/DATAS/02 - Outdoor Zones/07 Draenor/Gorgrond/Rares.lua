@@ -29,105 +29,87 @@ _.Zones =
 						i(118222),	-- Spirit of Bashiok Toy
 					},
 				}),
-				{	-- Basten
-					["npcID"] = 86257,	-- Protectors of the Grove (Basten, Nultra, Valstil)
-					["questID"] = 37369,
+				n(86257, {	-- Basten (Protectors of the Grove)
+					["description"] = "Kill Basten LAST or you will not be able to loot him.",
 					["modelID"]	= 57964,
 					["isDaily"] = true,
-					["description"] = "Kill Basten LAST or you will not be able to loot him.",
 					["coord"] = { 69.2, 44.6, 543 },
-					["g"] = {
-						{	-- Protectors of the Grove
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 3,			-- Protectors of the Grove
-						},
-						{	-- Botani Camouflage Toy
-							["itemID"] = 119432,	-- Botani Camouflage Toy
-						},
-						{	-- Grovetender's Cummerbund
-							["itemID"] = 119357,	-- Grovetender's Cummerbund
-						},
+					["crs"] = {
+						86258,	-- Nultra
+						86259,	-- Valstil
 					},
-				},
-				{	-- Berthora
-					["npcID"] = 85907,	-- Berthora
+					["g"] = {
+						crit(3, {	-- Protectors of the Grove)
+							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
+						}),
+						i(119432),	-- Botani Camouflage Toy
+						i(119357),	-- Grovetender's Cummerbund
+					},
+				}),
+				n(85907, {	-- Berthora
 					["questID"] = 36597,
 					["coord"] = { 39.4, 74.6, 543 },
 					["g"] = {	
 						i(118232),	-- Scaled Riverbeast Spaulders
 					},
-				}, 
-				{	-- Blademaster Ro'gor
-					["npcID"] = 86579,	-- Blademaster Ro'gor
+				}),
+				n(86579, {	-- Blademaster Ro'gor
 					["questID"] = 37368,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 46.0, 31.4, 543 },
 						{ 45.8, 33.2, 543 },
 					},
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Blademaster Ro'gor
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 6,			-- Blademaster Ro'gor
-						},
-						{	-- Ro'gor's Slippers of Silence
-							["itemID"] = 119228,	-- Ro'gor's Slippers of Silence
-						},
+						crit(6, {	-- Fight the Power
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119228),	-- Ro'gor's Slippers of Silence
 					},
-				},						
-				{	-- Char the Burning
-					["npcID"]= 82311,	-- Char the Burning
+				}),
+				n(82311, {	-- Char the Burning
 					["questID"] = 35503,
 					["coord"] = { 53.4, 44.6, 543 },
 					["g"] = {	
 						i(118212),	-- Char's Smoldering Fist
 					},
-				}, 
-				{	-- Defector Dazgo
-					["npcID"] = 86566,	-- Defector Dazgo
+				}),
+				n(86566, {	-- Defector Dazgo
 					["questID"] = 37362,
 					["isDaily"] = true,
 					["coord"] = { 48.25, 20.83, 543 },
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Defector Dazgo
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 2,			-- Defector Dazgo
-						},
-						{	-- Foereaver Polearm
-							["itemID"] = 119224,	-- Foereaver Polearm
-						},
+						crit(2, {	-- Defector Dazgo
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119224),	-- Foereaver Polearm
 					},
-				}, 
-				{	-- Depthroot
-					["npcID"] = 82058,	-- Depthroot
+				}), 
+				n(82058, {	-- Depthroot
 					["questID"] = 37370,
 					["isDaily"] = true,
 					["coord"] = { 72.6, 40.8, 543 },
 					["g"] = {
-						{	-- Depthroot
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 6,			-- Depthroot
-						},
-						{	-- Depthroot's Forearm
-							["itemID"] = 119406,	-- Depthroot's Forearm
-						},
+						crit(6, {	-- Depthroot
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119406),	-- Depthroot's Forearm
 					},
-				}, 
-				{	-- Durp the Hated	
-					["npcID"] = 86571,	-- Durp the Hated
+				}),
+				n(86571, {	-- Durp the Hated
 					["questID"] = 37366,
 					["isDaily"] = true,
 					["coord"] = { 49.8, 23.8, 543 },	-- **Coords uncofirmed, relied on wowhead**
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Durp the Hated
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 3,			-- Durp the Hated
-						},
-						{	-- Studded Gronn-Stitched Girdle
-							["itemID"] = 119225,	-- Studded Gronn-Stitched Girdle
-						},
+						crit(3, {	-- Durp the Hated
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119225),	-- Studded Gronn-Stitched Girdle
 					},
-				},	
+				}),
 				o(239828, {	-- Edge of Reality
 					["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.|nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you. |r",
 					["coords"] = {
@@ -147,47 +129,40 @@ _.Zones =
 						}),
 					},
 				}),
-				{	-- Firestarter Grash
-					["npcID"] = 88580,	-- Firestarter Grash
+				n(88580, {	-- Firestarter Grash
+					["description"] = "Will spawn in the area that is on fire.",
 					["questID"] = 37373,
 					["isDaily"] = true,
-					["description"] = "Will spawn in the area that is on fire.",
 					["coords"] = { 
 						{ 57.8, 36.6, 543 },
 						{ 72.8, 35.8, 543 },
 					},
 					["g"] = {
-						{	-- Firestarter Grash
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 7,			-- Firestarter Grash
-						},
-						{	-- Grash's Fireproof Handguards
-							["itemID"] = 119381,	-- Grash's Fireproof Handguards
-						},
+						crit(7, {	-- Firestarter Grash
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119381),	-- Grash's Fireproof Handguards
 					},
-				}, 
-				{	-- Fossilwood the Petrified
-					["npcID"] = 85250,	-- Fossilwood the Petrified
+				}), 
+				n(85250, {	-- Fossilwood the Petrified
 					["questID"] = 36387,
 					["coord"] = { 57.4, 68.6, 543 },
 					["g"] = {	
 						i(118221),	-- Petrification Stone Toy
 					},						
-				}, 
-				{	-- Gelgor of the Blue Flame
-					["npcID"] = 81038,	-- Gelgor of the Blue Flame
+				}),
+				n(81038, {	-- Gelgor of the Blue Flame
+					["description"] = "Located in the cave.",
 					["questID"] = 36391,
 					["coords"] = { 
 						{ 43.5, 48.1, 543 },	-- Cave Entrance
 						{ 32.6, 38.2, 546 },	-- Gelgor
 					},
-					["description"] = "Located in the cave",
 					["g"] = {
 						i(118230),	-- Smoldering Cerulean Stone
 					},
-				},
-				{	-- Glut
-					["npcID"] = 80868,	-- Glut
+				}),
+				n(80868, {	-- Glut
 					["questID"] = 36204,
 					["coords"] = { 
 						{ 44.5, 50.8, 543 },	-- Cave Entrance
@@ -196,12 +171,11 @@ _.Zones =
 					["g"] = {
 						i(118229),	-- Resonant Hidecrystal of the Gorger
 					},
-				},
-				{	-- Gnarljaw
-					["npcID"] = 78269,	-- Gnarljaw
+				}),
+				n(78269, {	-- Gnarljaw
+					["description"] = "At the bottom of the cave.",
 					["questID"] = 37413,
 					["isDaily"] = true,
-					["description"] = "At the bottom of the cave.",
 					["coords"] = {
 						{ 53.9, 55.7, 543 },	-- Cave Entrance
 						{ 54.8, 35.6, 549 },
@@ -209,9 +183,8 @@ _.Zones =
 					["g"] = {	
 						i(119397),	-- Gnarled Goren Jaw
 					},						
-				}, 
-				{	-- Greldrok the Cunning
-					["npcID"] = 84431,	-- Greldrok the Cunning
+				}),
+				n(84431, {	-- Greldrok the Cunning
 					["questID"] = 36186,
 					["coords"] = { 
 						{ 46.4, 45.4, 543 },	-- Cave Entrance
@@ -220,83 +193,67 @@ _.Zones =
 					["g"] = {	
 						i(118210),	-- Greldrok's Facesmasher
 					},						
-				}, 
-				{	-- Grove Warden Yal
-					["npcID"] = 88583,	-- Grove Warden Yal
+				}),
+				n(88583, {	-- Grove Warden Yal
 					["questID"] = 37375,
 					["isDaily"] = true,
 					["coord"] = { 59.6, 43.0, 543 },
 					["g"] = {
-						{	-- Grove Warden Yal
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 8,			-- Grove Warden Yal
-						},
-						{	-- Yal's Leafwrap Cloak
-							["itemID"] = 119414,  -- Yal's Leafwrap Cloak
-						},
+						crit(8, {	-- Grove Warden Yal
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119414),  -- Yal's Leafwrap Cloak
 					},						
-				}, 
-				{	-- Hive Queen Skrikka
-					["npcID"] = 83522,	-- Hive Queen Skrikka
+				}),
+				n(83522, {	-- Hive Queen Skrikka
 					["questID"] = 35908,
 					["coord"] = { 52.2, 70.2, 543 },						
 					["g"] = {	
 						i(118209),	-- Skrikka's Mandible
 					},
-				}, 
-				{	-- Horgg	**2nd coords uncofirmed, he walked but had to kill before he reached the end of the cycle**
-					["npcID"] = 86577,	-- Horgg
+				}),
+				n(86577, {	-- Horgg
 					["questID"] = 37365,
 					["isDaily"] = true,
 					["coords"] = { 
-						{ 46.0, 28.6, 543 },
-						{ 45.71, 26.53, 543 },
+						{ 46.0, 27.8, 543 },
+						{ 45.6, 25.4, 543 },
 					},
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Horgg
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 5,			-- Horgg
-						},
-						{	-- Horgg's Bandolier
-							["itemID"] = 119229,	-- Horgg's Bandolier
-						},
+						crit(5, {	-- Horgg
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119229),	-- Horgg's Bandolier
 					},
-				}, 
-				{	-- Hunter Bal'ra
-					["npcID"] = 88672,	-- Hunter Bal'ra
+				}),
+				n(88672, {	-- Hunter Bal'ra
 					["questID"] = 37377,
 					["isDaily"] = true,
 					["coord"] = { 55.0, 46.2, 543 },
 					["g"] = {
-						{	-- Hunter Bal'ra
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 9,			-- Hunter Bal'ra
-						},
-						{	-- Bal'ra's Compound Bow
-							["itemID"] = 119412,	-- Bal'ra's Compound Bow
-						},
+						crit(9, {	-- Hunter Bal'ra
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119412),	-- Bal'ra's Compound Bow
 					},
-				},
-				{	-- Inventor Blammo	**Coords uncofirmed, relied on wowhead**
-					["npcID"] = 86574,	-- Inventor Blammo
+				}),
+				n(86574, {	-- Inventor Blammo
 					["questID"] = 37367,
 					["isDaily"] = true,
-					["coord"] = { 47.6, 30.8, 543 },
+					["coord"] = { 47.6, 30.8, 543 },	-- **Coords uncofirmed, relied on wowhead**
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Inventor Blammo
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 4,			-- Inventor Blammo
-						},
-						{	-- Blammo's Blammer
-							["itemID"] = 119226,	-- Blammo's Blammer
-						},
+						crit(4, {	-- Inventor Blammo
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119226),	-- Blammo's Blammer
 					},
-				}, 
-				{	-- King Slime
-					["npcID"] = 78260,	-- King Slime
+				}),
+				n(78260, {	-- King Slime
+					["description"] = "At the bottom of the cave.",
 					["questID"] = 37412,
 					["isDaily"] = true,
-					["description"] = "At the bottom of the cave.",
 					["coords"] = {
 						{ 53.9, 55.7, 543 },	-- Cave Entrance
 						{ 41.6, 75.7, 549 },
@@ -304,78 +261,64 @@ _.Zones =
 					["g"] = {	
 						i(119351),	-- Slime Coated Kingscloak
 					},
-				}, 
-				{	-- Mandrakor
-					["npcID"] = 84406,	-- Mandrakor
+				}),
+				n(84406, {	-- Mandrakor
 					["questID"] = 36178,
 					["coord"] = { 50.6, 53.2, 543 },
 					["g"] = {		
 						i(118709),	-- Doom Bloom Pet
 					},
-				}, 
-				{	-- Maniacal Madgard
-					["npcID"] = 86562,	-- Maniacal Madgard
+				}),
+				n(86562, {	-- Maniacal Madgard
 					["questID"] = 37363,
 					["isDaily"] = true,
 					["coord"] = { 49.17, 33.11, 543 },
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Maniacal Madgard
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 1,			-- Maniacal Madgard
-						},
-						{	-- Unpopped Pustule Pendant
-							["itemID"] = 119230,	-- Unpopped Pustule Pendant
-						},
+						crit(1, {	-- Maniacal Madgard
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119230),	-- Unpopped Pustule Pendant
 					},
-				},
-				{	-- Mogamago
-					["npcID"] = 88586,	-- Mogamago
+				}),
+				n(88586, {	-- Mogamago
 					["questID"] = 37376,
 					["isDaily"] = true,
 					["coord"] = { 61.6, 39.2, 543 },
 					["g"] = {
-						{	-- Mogamago
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 2,			-- Mogamago
-						},
-						{	-- Etched Osteoderm Shield
-							["itemID"] = 119391,	-- Etched Osteoderm Shield
-						},
+						crit(2, {	-- Mogamago
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119391),	-- Etched Osteoderm Shield
 					},
-				}, 
-				{	-- Morgo Kain
-					["npcID"] = 86582,	-- Morgo Kain
+				}),
+				n(86582, {	-- Morgo Kain
 					["questID"] = 37364,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 46.6, 23.2, 543 },
 						{ 45.8, 24.2, 543 },
 					},
+					["lvl"] = 100,
 					["g"] = {
-						{	-- Morgo Kain
-							["achievementID"] = 9655,	-- Fight the Power (The Pit)
-							["criteriaID"] = 7,			-- Morgo Kain
-						},
-						{	-- Morgo's Unstoppable Ramming Helm
-							["itemID"] = 119227,	-- Morgo's Unstoppable Ramming Helm
-						},
+						crit(7, {	-- Morgo Kain
+							["achievementID"] = 9655,	-- Fight the Power
+						}),
+						i(119227),	-- Morgo's Unstoppable Ramming Helm
 					},
-				}, 
-				{	-- Mother Araneae
-					["npcID"] = 76473,	-- Mother Araneae
+				}),
+				n(76473, {	-- Mother Araneae
 					["questID"] = 34726,
 					["coords"] = { 
-						{ 52.2, 76.7, 543 },	-- Cave Entrance
 						{ 53.4, 78.2, 543 },	-- Mother Araneae
+						{ 52.2, 76.7, 543 },	-- Cave Entrance
 					},
-					["description"] = "Cave entrance is first set of coords, rare is at second set in the cave.",
 					["g"] = {	
 						i(118208),	-- Broodmother's Kiss
 					},						
-				}, 
-				{	-- Poundfist	**Coords uncofirmed, relied on wowhead**
-					["npcID"] = 50985,	-- Poundfist
-					["coords"] = {
+				}),
+				n(50985, {	-- Poundfist
+					["coords"] = {	-- **Coords uncofirmed, relied on wowhead**
 						{ 42.0, 25.0, 543 },
 						{ 51.4, 43.1, 543 },
 						{ 45.4, 47.5, 543 },
@@ -383,27 +326,24 @@ _.Zones =
 						{ 43.2, 55.5, 543 },
 					},
 					["g"] = {
-						i(116792),	-- Sunhide Gronnling Mount
+						i(116792),	-- Sunhide Gronnling (MOUNT!)
 					},
-				}, 
-				{	-- Riptar
-					["npcID"] = 85970,	-- Riptar
+				}),
+				n(85970, {	-- Riptar
 					["questID"] = 36600,
 					["coord"] = { 37.6, 81.4, 543 },
-					["groups"] = {	
+					["g"] = {	
 						i(118231),	-- Riptar's Clever Claw
 					},
-				}, 
-				{	-- Rolkor
-					["npcID"] = 85264,	-- Rolkor
+				}),
+				n(85264, {	-- Rolkor
 					["questID"] = 36393,
 					["coord"] = { 47.8, 41.6, 543 },
 					["g"] = {
 						i(118211),	-- Rolkor's Rage
 					},
-				},
-				{	-- Stompalupagus
-					["npcID"] = 86520,	-- Stompalupagus
+				}),
+				n(86520, {	-- Stompalupagus
 					["questID"] = 36837,
 					["coords"] = {
 						{ 55.0, 71.0, 543 },
@@ -413,51 +353,43 @@ _.Zones =
 					["g"] = {	
 						i(118228),	-- Smashalupagus
 					},
-				}, 
-				{	-- Stomper Kreego
-					["npcID"] = 79629,	-- Stomper Kreego
+				}),
+				n(79629, {	-- Stomper Kreego
 					["questID"] = 35910,
 					["coord"] = { 38.2, 66.2, 543 },
 					["g"] = {
 						i(118224),	-- Ogre Brewing Kit
 					},
-				},
-				{	-- Sulfurious
-					["npcID"] = 80725,	-- Sulfurious
+				}),
+				n(80725, {	-- Sulfurious
 					["questID"] = 36394,
 					["coords"] = {
 						{ 39.4, 60.6, 543 },
 						{ 41.2, 60.8, 543 },
 					},
 					["g"] = {	
-						i(114227),	-- Bubble Wand Toy
+						i(114227),	-- Bubble Wand (TOY!)
 					},
-				}, 
-				{	-- Sunclaw
-					["npcID"] = 86137,	-- Sunclaw
+				}),
+				n(86137, {	-- Sunclaw
 					["questID"] = 36656,
 					["coord"] = { 44.6, 92.2, 543 },
 					["g"] = {	
 						i(118223),	-- Sunclaw
 					},
-				}, 
-				{	-- Swift Onyx Flayer
-					["npcID"] = 88582,	-- Swift Onyx Flayer
+				}),
+				n(88582, {	-- Swift Onyx Flayer
 					["questID"] = 37374,
 					["isDaily"] = true,
 					["coord"] = { 59.52, 31.97, 543 },
 					["g"] = {
-						{	-- Swift Onyx Flayer
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 1,			-- Swift Onyx Flayer
-						},
-						{	-- Flayerscale Carapace Stompers
-							["itemID"] = 119367,	-- Flayerscale Carapace Stompers
-						},
+						crit(1, {	-- Swift Onyx Flayer
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119367),	-- Flayerscale Carapace Stompers
 					},
-				}, 
-				{	-- Sylldross
-					["npcID"] = 86410,	-- Sylldross
+				}),
+				n(86410, {	-- Sylldross
 					["questID"] = 36794,
 					["coords"] = {
 						{ 63.0, 61.6, 543 },
@@ -467,28 +399,23 @@ _.Zones =
 					["g"] = {		
 						i(118213),	-- Slimy Sea Serpent Skin Sabatons
 					},
-				}, 
-				{	-- Typhon
-					["npcID"] = 80371,	-- Typhon
+				}),
+				n(80371, {	-- Typhon
 					["questID"] = 37405,
 					["isDaily"] = true,
 					["coord"] = { 75.6, 42.6, 543 },
-				}, 
-				{	-- Venolasix
-					["npcID"] = 86266,	-- Venolasix
+				}),
+				n(86266, {	-- Venolasix
 					["questID"] = 37372,
 					["isDaily"] = true,
 					["coord"] = { 63.4, 30.8, 543 },
 					["g"] = {
-						{	-- Venolasix
-							["achievementID"] = 9678,	-- Ancient No More (Everbloom Wilds)
-							["criteriaID"] = 4,			-- Venolasix
-						},
-						{	-- Hydratooth Dagger
-							["itemID"] = 119395,	-- Hydratooth Dagger
-						},
+						crit(4, {	-- Venolasix
+							["achievementID"] = 9678,	-- Ancient No More
+						}),
+						i(119395),	-- Hydratooth Dagger
 					},
-				},
+				}),
 			}),
 		}),
 	}),

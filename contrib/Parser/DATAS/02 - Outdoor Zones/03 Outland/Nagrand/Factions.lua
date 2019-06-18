@@ -11,8 +11,10 @@ _.Zones =
 					ach(902),	-- Chief Exalted Officer
 					n(-17,  {	-- Quests
 						q(9914, {	-- A Head Full of Ivory
+						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["qg"] = 18333,	-- Shadrek
 							["coord"] = { 31.8, 56.8, 107 },
+							["isBreadcrumb"] = true,
 							["minReputation"] = NEUTRAL,
 							["maxReputation"] = FRIENDLY,
 						}),
