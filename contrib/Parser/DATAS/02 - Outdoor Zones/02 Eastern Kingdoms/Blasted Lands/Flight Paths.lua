@@ -16,6 +16,11 @@ _.Zones =
 					["coord"] = { 61.2, 21.6, 17 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				fp(1537, {	-- Shattered Landing
+					["description"] = "Shattered Landing. Must be in the modern version of Blasted Lands to access this point.",
+					["coord"] = { 73.0, 48.6, 17 },
+					["races"] = HORDE_ONLY,
+				}),
 				fp(603, {	-- Sunveil Excursion, Blasted Lands
 					["description"] = "Sunveil Excursion, Blasted Lands\n\nSpeak to Zidormi to visit the past to access this point.",
 					["coord"] = { 50.8, 72.8, 17 },
