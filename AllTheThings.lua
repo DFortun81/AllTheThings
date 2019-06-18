@@ -1844,7 +1844,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										infoString = relicData.iLvl;
 									end
 									total = total + 1;
-									if relicData.iLvl > relicItemLevel then
+									if relicData.iLvl >= relicItemLevel then
 										progress = progress + 1;
 										infoString = infoString .. " " .. GetCompletionIcon(1);
 									else
