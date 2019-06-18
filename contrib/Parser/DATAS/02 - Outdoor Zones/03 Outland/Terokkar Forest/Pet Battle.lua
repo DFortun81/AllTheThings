@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
-			n(-25, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(514, {	-- Flayer Youngling
 					["crs"] = { 62555 },	-- Flayer Youngling
 				}),

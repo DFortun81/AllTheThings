@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
 				}),
