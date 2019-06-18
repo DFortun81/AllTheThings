@@ -19,7 +19,12 @@ _.NeverImplemented =
 		q(35888),	-- Maraudon: dungeon completion
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
+		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
+		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
+		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
 		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
+		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
+		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(35307),	-- Wailing Caverns: bonus objective complete
 		q(35303),	-- Wailing Caverns: Naralax awakening ritual complete
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
