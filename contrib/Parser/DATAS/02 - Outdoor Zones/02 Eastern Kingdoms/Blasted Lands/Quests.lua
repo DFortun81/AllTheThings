@@ -6,13 +6,11 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
 			n(-17,  {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(4909, {		-- Blasted Lands Quests
-					crit(1),		-- Razelikh
-					crit(2),		-- The Tainted Forest
-					crit(3),		-- Avenging the Rockpool
+				ach(4909, {	-- Blasted Lands Quests
+					crit(1),	-- Razelikh
+					crit(2),	-- The Tainted Forest
+					crit(3),	-- Avenging the Rockpool
 				}),
---]]
 				q(26172, {	-- A Bloodmage's Gotta Eat Too
 					["qg"] = 42298,	-- 
 					["races"] = ALLIANCE_ONLY,
@@ -32,9 +30,9 @@ _.Zones =
 					},
 				}),
 				q(35745, {	-- Attack of the Iron Horde
-					["races"] = HORDE_ONLY,
 					["qg"] = 82851,	-- Thrall
 					["coords"] = { 71.8, 47.7, 17 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
 						i(118762),	-- Portal-Breaker's Band
@@ -44,9 +42,9 @@ _.Zones =
 					},
 				}),
 				q(35460, {	-- Attack of the Iron Horde
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82270,	-- Vindicator Maraad
 					["coords"] = { 66.6, 28.2, 17 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
 						i(118762),	-- Portal-Breaker's Band
@@ -157,7 +155,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						35745,	-- Attack of the Iron Horde
-						36382,	-- Peeking into the Portal
 						35746,	-- Under Siege
 					},
 				}),
@@ -167,12 +164,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						35460,	-- Attack of the Iron Horde
-						36379,	-- Peeking into the Portal
 						35462,	-- Under Siege
 					},
 				}),
 				q(35496, {	-- Enohar's Revenge
-					["qg"] = 76111,
+					["qg"] = 76111,	-- Enohar Thunderbrew
 					["coord"] = { 51.8, 28.6, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -180,6 +176,12 @@ _.Zones =
 						35486,	-- Lunatic Lieutenants
 						35494,	-- Mementos of the Fallen
 					},
+				}),
+				q(35492, {	-- For Nethergarde!
+					["qg"] = 84929,	-- Vindicator Maraad
+					["coord"] = { 52.0, 28.6, 17 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 36307,	-- Investigating the Invasion
 				}),
 				q(35500, {	-- Gar'mak Bladetwist
 					["qg"] = 84929,	-- Vindicator Maraad
@@ -257,13 +259,7 @@ _.Zones =
 					["qg"] = 5393,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
---]]					
-				q(35492, {	-- For Nethergarde!
-					["qg"] = 84929,	-- Vindicator Maraad
-					["coord"] = { 52.0, 28.6, 17 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 36307,	-- Investigating the Invasion
-				}),
+--]]
 				q(36307, {	-- Investigating the Invasion
 					["qg"] = 82270,	-- Vindicator Maraad
 					["coord"] = { 66.6, 28.2, 17 },
@@ -420,6 +416,7 @@ _.Zones =
 					["qg"] = 84929,	-- Vindicator Maraad
 					["coord"] = { 52.0, 28.6, 17 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35500,	-- Gar'mark Bladetwist
 					["g"] = {
 						i(118776),	-- Talisman of the Invader
 						i(118777),	-- Bloodcaster's Charm
@@ -435,7 +432,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						35745,	-- Attack of the Iron Horde
-						36382,	-- Peeking into the Portal
 						35746,	-- Under Siege
 					},
 				}),
@@ -445,7 +441,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						35460,	-- Attack of the Iron Horde
-						36379,	-- Peeking into the Portal
 						35462,	-- Under Siege
 					},
 				}),
@@ -666,6 +661,7 @@ _.Zones =
 					["qg"] = 84928,	-- Thrall
 					["coord"] = { 48.7, 31.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35763,	-- Gar'mak Bladetwist
 					["g"] = {
 						i(118776),	-- Talisman of the Invader
 						i(118777),	-- Bloodcaster's Charm
