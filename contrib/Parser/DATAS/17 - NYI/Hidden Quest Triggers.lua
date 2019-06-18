@@ -14,6 +14,7 @@ _.NeverImplemented =
 		q(37676),	-- Blasted Land 6.0:JP3 - Invasion - Tracking Quest - See Thrall
 		q(47954),	-- Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths
 		
+		q(33550),	-- [NOTUSED]Vignette: Iron Horde Napmaster (triggers when looting The Crystal Blade of Torvath in WoD Shadowmoon Valley)
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)
 		q(35894),	-- Dire Maul: Bonus objective complete
@@ -34,6 +35,7 @@ _.NeverImplemented =
 		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
 		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
 		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
+		q(37316),	-- Trading Post (after choosing the Smuggling Run in Spires of Arak — Alliance-only?)
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
 		q(35307),	-- Wailing Caverns: bonus objective complete

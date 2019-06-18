@@ -15,10 +15,6 @@ _.Zones =
 							["achievementID"] = 8845,	-- As I Walk Through the Valley of the Shadow of Moon
 							["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 						}),
-				--[[	{	-- Criteria 1 — Establishing a Foothold
-							["criteriaID"] = 1,	-- Establishing a Foothold
-							["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-						},	--]]
 						{	-- Criteria 2 — Shadows Awaken
 							["criteriaID"] = 2,	-- Shadows Awaken
 							["sourceQuests"] = { 34019 },	-- Shadows Awaken
