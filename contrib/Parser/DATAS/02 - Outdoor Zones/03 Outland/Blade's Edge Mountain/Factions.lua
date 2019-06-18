@@ -6,6 +6,45 @@ _.Zones =
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
 			n(-6013, {	-- Factions
+				faction(933, {	-- The Consortium
+					["collectible"] = false,
+					["g"] = {
+						q(10975, {	-- Purging the Chambers of Bash'ir
+							["qg"] = 22919,	-- Image of Commander Ameer
+							["coord"] = { 52.8, 15.0, 105 },
+							["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
+							["repeatable"] = true,
+						}),
+						q(10976, {	-- The Mark of the Nexus-King
+							["qg"] = 22919,	-- Image of Commander Ameer
+							["coord"] = { 52.8, 15.0, 105 },
+							["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
+						}),
+						q(10977, {	-- Stasis Chambers of the Mana-Tombs
+							["qg"] = 22919,	-- Image of Commander Ameer
+							["coord"] = { 52.8, 15.0, 105 },
+							["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
+							["g"] = {
+								i(32064),	-- Protectorate Treasure Cache
+							},
+						}),
+						q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
+							["qg"] = 22919,	-- Image of Commander Ameer
+							["coord"] = { 52.8, 15.0, 105 },
+							["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
+							["repeatable"] = true,
+						}),
+						q(10982, {	-- The Eye of Haramad
+							["qg"] = 22919,	-- Image of Commander Ameer
+							["coord"] = { 52.8, 15.0, 105 },
+							["sourceQuest"] = 10981,	-- Nexus-Prince Shaffar's Personal Chamber
+							["description"] = "Requires Exalted with The Consortium.",
+							["g"] = {
+								i(32092),	-- The Eye of Haramad
+							},
+						}),
+					},
+				}),
 				faction(1038, {	-- Ogri'la
 					["creatureID"] = 23428,	-- Jho'nass <Ogri'la Quartermaster>
 					["g"] = {

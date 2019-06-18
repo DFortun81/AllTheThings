@@ -15,9 +15,7 @@ _.Zones =
 						{ 49.6, 21.2, 105 },	-- Ethereum Prisoner (Group Energy Ball)
 						{ 52.6, 20.0, 105 },	-- Ethereum Prisoner (Group Energy Ball)
 					},
-					["crs"] = {
-						22919,	-- Image of Commander Ameer <The Protectorate>
-					},
+					["crs"] = { 22919 },	-- Image of Commander Ameer <The Protectorate>
 					["g"] = {
 						i(31569, {	-- Mistshroud Shoulders
 							["crs"] = {

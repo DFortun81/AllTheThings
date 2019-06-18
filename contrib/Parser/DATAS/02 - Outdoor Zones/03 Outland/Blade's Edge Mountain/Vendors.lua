@@ -38,23 +38,26 @@ _.Zones =
 						}),
 					},
 				}),
-				na(19499, {	-- Cahill <Weaponsmith>
+				n(19499, {	-- Cahill <Weaponsmith>
 					["coord"] = { 37.6, 63.8, 105 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(30753),	-- Warphorn Spear
 						i(30755),	-- Mag'hari Fighting Claw
 						i(11308),	-- Sylvan Shortbow
 					},
 				}),
-				na(21113, {	-- Sassa Weldwell <Trade Goods>
+				n(21113, {	-- Sassa Weldwell <Trade Goods>
 					["coord"] = { 61.2, 68.8, 105 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					},
 				}),
-				nh(19837, {	-- Daga Ramba <Potions>
+				n(19837, {	-- Daga Ramba <Potions>
 					["coord"] = { 51.0, 57.8, 105 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22909),	-- Recipe: Elixir of Major Defense
 						i(22911),	-- Recipe: Major Dreamless Sleep Potion
