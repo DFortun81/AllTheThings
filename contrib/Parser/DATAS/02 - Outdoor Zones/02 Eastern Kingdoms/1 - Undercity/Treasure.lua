@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
-			n(-16, {	-- Rare	
+			n(-212, {	-- Treasure Chest
 				o(240623, {	-- Sylvanas' Strongbox
 					["description"] = "Loot the strongbox at the base of a pillar to the left of Sylvannas Windrunner. Alliance characters *can* loot this.",
 					["modelRotation"] = 270,
