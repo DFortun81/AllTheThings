@@ -2532,363 +2532,165 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Vindictive Combatant's Silk Cowl
-											["itemID"] = 135843,	-- Vindictive Combatant's Silk Cowl
-										},
-										{	-- Vindictive Combatant's Silk Amice
-											["itemID"] = 135846,	-- Vindictive Combatant's Silk Amice
-										},
-										{	-- Vindictive Combatant's Silken Shawl
-											["itemID"] = 135906,	-- Vindictive Combatant's Silken Shawl
-										},
-										{	-- Vindictive Combatant's Silk Tunic
-											["itemID"] = 135845,	-- Vindictive Combatant's Silk Tunic
-										},
-										{	-- Vindictive Combatant's Silk Bracers
-											["itemID"] = 135848,	-- Vindictive Combatant's Silk Bracers
-										},
-										{	-- Vindictive Combatant's Silk Handguards
-											["itemID"] = 135842,	-- Vindictive Combatant's Silk Handguards
-										},
-										{	-- Vindictive Combatant's Silk Cord
-											["itemID"] = 135847,	-- Vindictive Combatant's Silk Cord
-										},
-										{	-- Vindictive Combatant's Silk Trousers
-											["itemID"] = 135844,	-- Vindictive Combatant's Silk Trousers
-										},
-										{	-- Vindictive Combatant's Silk Treads
-											["itemID"] = 135841,	-- Vindictive Combatant's Silk Treads
-										},
+										i(135843),	-- Vindictive Combatant's Silk Cowl
+										i(135846),	-- Vindictive Combatant's Silk Amice
+										i(135906),	-- Vindictive Combatant's Silken Shawl
+										i(135845),	-- Vindictive Combatant's Silk Tunic
+										i(135848),	-- Vindictive Combatant's Silk Bracers
+										i(135842),	-- Vindictive Combatant's Silk Handguards
+										i(135847),	-- Vindictive Combatant's Silk Cord
+										i(135844),	-- Vindictive Combatant's Silk Trousers
+										i(135841),	-- Vindictive Combatant's Silk Treads
 									},
 								}),
 								i(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Vindictive Combatant's Felweave Cowl
-											["itemID"] = 135891,	-- Vindictive Combatant's Felweave Cowl
-										},
-										{	-- Vindictive Combatant's Felweave Amice
-											["itemID"] = 135894,	-- Vindictive Combatant's Felweave Amice
-										},
-										{	-- Vindictive Combatant's Felweave Cloak
-											["itemID"] = 136881,	-- Vindictive Combatant's Felweave Cloak
-										},
-										{	-- Vindictive Combatant's Felweave Tunic
-											["itemID"] = 135893,	-- Vindictive Combatant's Felweave Tunic
-										},
-										{	-- Vindictive Combatant's Felweave Bracers
-											["itemID"] = 135896,	-- Vindictive Combatant's Felweave Bracers
-										},
-										{	-- Vindictive Combatant's Felweave Handguards
-											["itemID"] = 135890,	-- Vindictive Combatant's Felweave Handguards
-										},
-										{	-- Vindictive Combatant's Felweave Cord
-											["itemID"] = 135895,	-- Vindictive Combatant's Felweave Cord
-										},
-										{	-- Vindictive Combatant's Felweave Trousers
-											["itemID"] = 135892,	-- Vindictive Combatant's Felweave Trousers
-										},
-										{	-- Vindictive Combatant's Felweave Treads
-											["itemID"] = 135889,	-- Vindictive Combatant's Felweave Treads
-										},
+										i(135891),	-- Vindictive Combatant's Felweave Cowl
+										i(135894),	-- Vindictive Combatant's Felweave Amice
+										i(136881),	-- Vindictive Combatant's Felweave Cloak
+										i(135893),	-- Vindictive Combatant's Felweave Tunic
+										i(135896),	-- Vindictive Combatant's Felweave Bracers
+										i(135890),	-- Vindictive Combatant's Felweave Handguards
+										i(135895),	-- Vindictive Combatant's Felweave Cord
+										i(135892),	-- Vindictive Combatant's Felweave Trousers
+										i(135889),	-- Vindictive Combatant's Felweave Treads
 									},
 								}),
 								i(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Vindictive Combatant's Dragonhide Helm
-											["itemID"] = 135827,	-- Vindictive Combatant's Dragonhide Helm
-										},
-										{	-- Vindictive Combatant's Dragonhide Spaulders
-											["itemID"] = 135830,	-- Vindictive Combatant's Dragonhide Spaulders
-										},
-										{	-- Vindictive Combatant's Dragonhide Cloak
-											["itemID"] = 135909,	-- Vindictive Combatant's Dragonhide Cloak
-										},
-										{	-- Vindictive Combatant's Dragonhide Tunic
-											["itemID"] = 135829,	-- Vindictive Combatant's Dragonhide Tunic
-										},
-										{	-- Vindictive Combatant's Dragonhide Wristguards
-											["itemID"] = 135832,	-- Vindictive Combatant's Dragonhide Wristguards
-										},
-										{	-- Vindictive Combatant's Dragonhide Gloves
-											["itemID"] = 135826,	-- Vindictive Combatant's Dragonhide Gloves
-										},
-										{	-- Vindictive Combatant's Dragonhide Belt
-											["itemID"] = 135831,	-- Vindictive Combatant's Dragonhide Belt
-										},
-										{	-- Vindictive Combatant's Dragonhide Legguards
-											["itemID"] = 135828,	-- Vindictive Combatant's Dragonhide Legguards
-										},
-										{	-- Vindictive Combatant's Dragonhide Moccasins
-											["itemID"] = 135825,	-- Vindictive Combatant's Dragonhide Moccasins
-										},
+										i(135827),	-- Vindictive Combatant's Dragonhide Helm
+										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders
+										i(135909),	-- Vindictive Combatant's Dragonhide Cloak
+										i(135829),	-- Vindictive Combatant's Dragonhide Tunic
+										i(135832),	-- Vindictive Combatant's Dragonhide Wristguards
+										i(135826),	-- Vindictive Combatant's Dragonhide Gloves
+										i(135831),	-- Vindictive Combatant's Dragonhide Belt
+										i(135828),	-- Vindictive Combatant's Dragonhide Legguards
+										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins
 									},
 								}),
 								i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Vindictive Combatant's Leather Helm
-											["itemID"] = 135876,	-- Vindictive Combatant's Leather Helm
-										},
-										{	-- Vindictive Combatant's Leather Spaulders
-											["itemID"] = 135878,	-- Vindictive Combatant's Leather Spaulders
-										},
-										{	-- Vindictive Combatant's Shadowcape
-											["itemID"] = 136868,	-- Vindictive Combatant's Shadowcape
-										},
-										{	-- Vindictive Combatant's Leather Tunic
-											["itemID"] = 135873,	-- Vindictive Combatant's Leather Tunic
-										},
-										{	-- Vindictive Combatant's Leather Wristguards
-											["itemID"] = 135880,	-- Vindictive Combatant's Leather Wristguards
-										},
-										{	-- Vindictive Combatant's Leather Gloves
-											["itemID"] = 135875,	-- Vindictive Combatant's Leather Gloves
-										},
-										{	-- Vindictive Combatant's Leather Belt
-											["itemID"] = 135879,	-- Vindictive Combatant's Leather Belt
-										},
-										{	-- Vindictive Combatant's Leather Legguards
-											["itemID"] = 135877,	-- Vindictive Combatant's Leather Legguards
-										},
-										{	-- Vindictive Combatant's Leather Slippers
-											["itemID"] = 135874,	-- Vindictive Combatant's Leather Slippers
-										},
+										i(135876),	-- Vindictive Combatant's Leather Helm
+										i(135878),	-- Vindictive Combatant's Leather Spaulders
+										i(136868),	-- Vindictive Combatant's Shadowcape
+										i(135873),	-- Vindictive Combatant's Leather Tunic
+										i(135880),	-- Vindictive Combatant's Leather Wristguards
+										i(135875),	-- Vindictive Combatant's Leather Gloves
+										i(135879),	-- Vindictive Combatant's Leather Belt
+										i(135877),	-- Vindictive Combatant's Leather Legguards
+										i(135874),	-- Vindictive Combatant's Leather Slippers
 									},
 								}),
 								i(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Vindictive Combatant's Ironskin Helm
-											["itemID"] = 135851,	-- Vindictive Combatant's Ironskin Helm
-										},
-										{	-- Vindictive Combatant's Ironskin Spaulders
-											["itemID"] = 135853,	-- Vindictive Combatant's Ironskin Spaulders
-										},
-										{	-- Vindictive Combatant's Ironskin Cloak
-											["itemID"] = 135910,	-- Vindictive Combatant's Ironskin Cloak
-										},
-										{	-- Vindictive Combatant's Ironskin Tunic
-											["itemID"] = 135854,	-- Vindictive Combatant's Ironskin Tunic
-										},
-										{	-- Vindictive Combatant's Ironskin Wristguards
-											["itemID"] = 135856,	-- Vindictive Combatant's Ironskin Wristguards
-										},
-										{	-- Vindictive Combatant's Ironskin Gloves
-											["itemID"] = 135850,	-- Vindictive Combatant's Ironskin Gloves
-										},
-										{	-- Vindictive Combatant's Ironskin Belt
-											["itemID"] = 135855,	-- Vindictive Combatant's Ironskin Belt
-										},
-										{	-- Vindictive Combatant's Ironskin Legguards
-											["itemID"] = 135852,	-- Vindictive Combatant's Ironskin Legguards
-										},
-										{	-- Vindictive Combatant's Ironskin Slippers
-											["itemID"] = 135849,	-- Vindictive Combatant's Ironskin Slippers
-										},
+										i(135851),	-- Vindictive Combatant's Ironskin Helm
+										i(135853),	-- Vindictive Combatant's Ironskin Spaulders
+										i(135910),	-- Vindictive Combatant's Ironskin Cloak
+										i(135854),	-- Vindictive Combatant's Ironskin Tunic
+										i(135856),	-- Vindictive Combatant's Ironskin Wristguards
+										i(135850),	-- Vindictive Combatant's Ironskin Gloves
+										i(135855),	-- Vindictive Combatant's Ironskin Belt
+										i(135852),	-- Vindictive Combatant's Ironskin Legguards
+										i(135849),	-- Vindictive Combatant's Ironskin Slippers
 									},
 								}),
 								i(146264, {	-- Ensemble: Vindictive Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Vindictive Combatant's Felskin Helm
-											["itemID"] = 136297,	-- Vindictive Combatant's Felskin Helm
-										},
-										{	-- Vindictive Combatant's Felskin Spaulders
-											["itemID"] = 136300,	-- Vindictive Combatant's Felskin Spaulders
-										},
-										{	-- Vindictive Combatant's Demonthread Cloak
-											["itemID"] = 136893,	-- Vindictive Combatant's Demonthread Cloak
-										},
-										{	-- Vindictive Combatant's Felskin Tunic
-											["itemID"] = 136299,	-- Vindictive Combatant's Felskin Tunic
-										},
-										{	-- Vindictive Combatant's Felskin Wristguards
-											["itemID"] = 136302,	-- Vindictive Combatant's Felskin Wristguards
-										},
-										{	-- Vindictive Combatant's Felskin Gloves
-											["itemID"] = 136296,	-- Vindictive Combatant's Felskin Gloves
-										},
-										{	-- Vindictive Combatant's Felskin Belt
-											["itemID"] = 136301,	-- Vindictive Combatant's Felskin Belt
-										},
-										{	-- Vindictive Combatant's Felskin Legguards
-											["itemID"] = 136298,	-- Vindictive Combatant's Felskin Legguards
-										},
-										{	-- Vindictive Combatant's Felskin Boots
-											["itemID"] = 136295,	-- Vindictive Combatant's Felskin Boots
-										},
+										i(136297),	-- Vindictive Combatant's Felskin Helm
+										i(136300),	-- Vindictive Combatant's Felskin Spaulders
+										i(136893),	-- Vindictive Combatant's Demonthread Cloak
+										i(136299),	-- Vindictive Combatant's Felskin Tunic
+										i(136302),	-- Vindictive Combatant's Felskin Wristguards
+										i(136296),	-- Vindictive Combatant's Felskin Gloves
+										i(136301),	-- Vindictive Combatant's Felskin Belt
+										i(136298),	-- Vindictive Combatant's Felskin Legguards
+										i(136295),	-- Vindictive Combatant's Felskin Boots
 									},
 								}),
 								i(146154, {	-- Ensemble: Vindictive Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Vindictive Combatant's Chain Helm
-											["itemID"] = 135836,	-- Vindictive Combatant's Chain Helm
-										},
-										{	-- Vindictive Combatant's Chain Spaulders
-											["itemID"] = 135838,	-- Vindictive Combatant's Chain Spaulders
-										},
-										{	-- Vindictive Combatant's Drape of the Tracker
-											["itemID"] = 135913,	-- Vindictive Combatant's Drape of the Tracker
-										},
-										{	-- Vindictive Combatant's Chain Armor
-											["itemID"] = 135833,	-- Vindictive Combatant's Chain Armor
-										},
-										{	-- Vindictive Combatant's Chain Armband
-											["itemID"] = 135840,	-- Vindictive Combatant's Chain Armband
-										},
-										{	-- Vindictive Combatant's Chain Gauntlets
-											["itemID"] = 135835,	-- Vindictive Combatant's Chain Gauntlets
-										},
-										{	-- Vindictive Combatant's Chain Clasp
-											["itemID"] = 135839,	-- Vindictive Combatant's Chain Clasp
-										},
-										{	-- Vindictive Combatant's Chain Leggings
-											["itemID"] = 135837,	-- Vindictive Combatant's Chain Leggings
-										},
-										{	-- Vindictive Combatant's Chain Treads
-											["itemID"] = 135834,	-- Vindictive Combatant's Chain Treads
-										},
+										i(135836),	-- Vindictive Combatant's Chain Helm
+										i(135838),	-- Vindictive Combatant's Chain Spaulders
+										i(135913),	-- Vindictive Combatant's Drape of the Tracker
+										i(135833),	-- Vindictive Combatant's Chain Armor
+										i(135840),	-- Vindictive Combatant's Chain Armband
+										i(135835),	-- Vindictive Combatant's Chain Gauntlets
+										i(135839),	-- Vindictive Combatant's Chain Clasp
+										i(135837),	-- Vindictive Combatant's Chain Leggings
+										i(135834),	-- Vindictive Combatant's Chain Treads
 									},
 								}),
 								i(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Vindictive Combatant's Ringmail Helm
-											["itemID"] = 135884,	-- Vindictive Combatant's Ringmail Helm
-										},
-										{	-- Vindictive Combatant's Ringmail Spaulders
-											["itemID"] = 135886,	-- Vindictive Combatant's Ringmail Spaulders
-										},
-										{	-- Vindictive Combatant's Totemic Cloak
-											["itemID"] = 136869,	-- Vindictive Combatant's Totemic Cloak
-										},
-										{	-- Vindictive Combatant's Ringmail Armor
-											["itemID"] = 135881,	-- Vindictive Combatant's Ringmail Armor
-										},
-										{	-- Vindictive Combatant's Ringmail Armband
-											["itemID"] = 135888,	-- Vindictive Combatant's Ringmail Armband
-										},
-										{	-- Vindictive Combatant's Ringmail Gauntlets
-											["itemID"] = 135883,	-- Vindictive Combatant's Ringmail Gauntlets
-										},
-										{	-- Vindictive Combatant's Ringmail Clasp
-											["itemID"] = 135887,	-- Vindictive Combatant's Ringmail Clasp
-										},
-										{	-- Vindictive Combatant's Ringmail Kilt
-											["itemID"] = 135885,	-- Vindictive Combatant's Ringmail Kilt
-										},
-										{	-- Vindictive Combatant's Ringmail Boots
-											["itemID"] = 135882,	-- Vindictive Combatant's Ringmail Boots
-										},
+										i(135884),	-- Vindictive Combatant's Ringmail Helm
+										i(135886),	-- Vindictive Combatant's Ringmail Spaulders
+										i(136869),	-- Vindictive Combatant's Totemic Cloak
+										i(135881),	-- Vindictive Combatant's Ringmail Armor
+										i(135888),	-- Vindictive Combatant's Ringmail Armband
+										i(135883),	-- Vindictive Combatant's Ringmail Gauntlets
+										i(135887),	-- Vindictive Combatant's Ringmail Clasp
+										i(135885),	-- Vindictive Combatant's Ringmail Kilt
+										i(135882),	-- Vindictive Combatant's Ringmail Boots
 									},
 								}),
 								i(146166, {	-- Ensemble: Vindictive Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Vindictive Combatant's Scaled Helm
-											["itemID"] = 135860,	-- Vindictive Combatant's Scaled Helm
-										},
-										{	-- Vindictive Combatant's Scaled Shoulders
-											["itemID"] = 135862,	-- Vindictive Combatant's Scaled Shoulders
-										},
-										{	-- Vindictive Combatant's Greatcloak of Faith
-											["itemID"] = 135914,	-- Vindictive Combatant's Greatcloak of Faith
-										},
-										{	-- Vindictive Combatant's Scaled Chestpiece
-											["itemID"] = 135857,	-- Vindictive Combatant's Scaled Chestpiece
-										},
-										{	-- Vindictive Combatant's Scaled Wristplates
-											["itemID"] = 135864,	-- Vindictive Combatant's Scaled Wristplates
-										},
-										{	-- Vindictive Combatant's Scaled Gauntlets
-											["itemID"] = 135859,	-- Vindictive Combatant's Scaled Gauntlets
-										},
-										{	-- Vindictive Combatant's Scaled Girdle
-											["itemID"] = 135863,	-- Vindictive Combatant's Scaled Girdle
-										},
-										{	-- Vindictive Combatant's Scaled Legguards
-											["itemID"] = 135861,	-- Vindictive Combatant's Scaled Legguards
-										},
-										{	-- Vindictive Combatant's Scaled Sabatons
-											["itemID"] = 135858,	-- Vindictive Combatant's Scaled Sabatons
-										},
+										i(135860),	-- Vindictive Combatant's Scaled Helm
+										i(135862),	-- Vindictive Combatant's Scaled Shoulders
+										i(135914),	-- Vindictive Combatant's Greatcloak of Faith
+										i(135857),	-- Vindictive Combatant's Scaled Chestpiece
+										i(135864),	-- Vindictive Combatant's Scaled Wristplates
+										i(135859),	-- Vindictive Combatant's Scaled Gauntlets
+										i(135863),	-- Vindictive Combatant's Scaled Girdle
+										i(135861),	-- Vindictive Combatant's Scaled Legguards
+										i(135858),	-- Vindictive Combatant's Scaled Sabatons
 									},
 								}),
 								i(146162, {	-- Ensemble: Vindictive Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Vindictive Combatant's Plate Helm
-											["itemID"] = 135900,	-- Vindictive Combatant's Plate Helm
-										},
-										{	-- Vindictive Combatant's Plate Shoulders
-											["itemID"] = 135902,	-- Vindictive Combatant's Plate Shoulders
-										},
-										{	-- Vindictive Combatant's Cloak of Battle
-											["itemID"] = 136887,	-- Vindictive Combatant's Cloak of Battle
-										},
-										{	-- Vindictive Combatant's Plate Chestpiece
-											["itemID"] = 135897,	-- Vindictive Combatant's Plate Chestpiece
-										},
-										{	-- Vindictive Combatant's Plate Wristplates
-											["itemID"] = 135904,	-- Vindictive Combatant's Plate Wristplates
-										},
-										{	-- Vindictive Combatant's Plate Gauntlets
-											["itemID"] = 135899,	-- Vindictive Combatant's Plate Gauntlets
-										},
-										{	-- Vindictive Combatant's Plate Girdle
-											["itemID"] = 135903,	-- Vindictive Combatant's Plate Girdle
-										},
-										{	-- Vindictive Combatant's Plate Legguards
-											["itemID"] = 135901,	-- Vindictive Combatant's Plate Legguards
-										},
-										{	-- Vindictive Combatant's Plate Warboots
-											["itemID"] = 135898,	-- Vindictive Combatant's Plate Warboots
-										},
+										i(135900),	-- Vindictive Combatant's Plate Helm
+										i(135902),	-- Vindictive Combatant's Plate Shoulders
+										i(136887),	-- Vindictive Combatant's Cloak of Battle
+										i(135897),	-- Vindictive Combatant's Plate Chestpiece
+										i(135904),	-- Vindictive Combatant's Plate Wristplates
+										i(135899),	-- Vindictive Combatant's Plate Gauntlets
+										i(135903),	-- Vindictive Combatant's Plate Girdle
+										i(135901),	-- Vindictive Combatant's Plate Legguards
+										i(135898),	-- Vindictive Combatant's Plate Warboots
 									},
 								}),
 								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Vindictive Combatant's Dreadplate Helm
-											["itemID"] = 135820,	-- Vindictive Combatant's Dreadplate Helm
-										},
-										{	-- Vindictive Combatant's Dreadplate Shoulders
-											["itemID"] = 135822,	-- Vindictive Combatant's Dreadplate Shoulders
-										},
-										{	-- Vindictive Combatant's Dreadcloak
-											["itemID"] = 135905,	-- Vindictive Combatant's Dreadcloak
-										},
-										{	-- Vindictive Combatant's Dreadplate Chestpiece
-											["itemID"] = 135817,	-- Vindictive Combatant's Dreadplate Chestpiece
-										},
-										{	-- Vindictive Combatant's Dreadplate Wristplates
-											["itemID"] = 135824,	-- Vindictive Combatant's Dreadplate Wristplates
-										},
-										{	-- Vindictive Combatant's Dreadplate Gauntlets
-											["itemID"] = 135819,	-- Vindictive Combatant's Dreadplate Gauntlets
-										},
-										{	-- Vindictive Combatant's Dreadplate Girdle
-											["itemID"] = 135823,	-- Vindictive Combatant's Dreadplate Girdle
-										},
-										{	-- Vindictive Combatant's Dreadplate Legguards
-											["itemID"] = 135821,	-- Vindictive Combatant's Dreadplate Legguards
-										},
-										{	-- Vindictive Combatant's Dreadplate Sabatons
-											["itemID"] = 135818,	-- Vindictive Combatant's Dreadplate Sabatons
-										},
+										i(135820),	-- Vindictive Combatant's Dreadplate Helm
+										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders
+										i(135905),	-- Vindictive Combatant's Dreadcloak
+										i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece
+										i(135824),	-- Vindictive Combatant's Dreadplate Wristplates
+										i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets
+										i(135823),	-- Vindictive Combatant's Dreadplate Girdle
+										i(135821),	-- Vindictive Combatant's Dreadplate Legguards
+										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons
 									},
 								}),
 								-- LEGION Season 3 & 4
@@ -2896,396 +2698,180 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 5 },	-- Priest
 									["g"] = {
-										{	-- Cruel Combatant's Satin Hood
-											["itemID"] = 145172,	-- Cruel Combatant's Satin Hood
-										},
-										{	-- Cruel Combatant's Satin Mantle
-											["itemID"] = 145178,	-- Cruel Combatant's Satin Mantle
-										},
-										{	-- Cruel Combatant's Drape of Piety
-											["itemID"] = 145040,	-- Cruel Combatant's Drape of Piety
-										},
-										{	-- Cruel Combatant's Satin Robe
-											["itemID"] = 145176,	-- Cruel Combatant's Satin Robe
-										},
-										{	-- Cruel Combatant's Satin Bracers
-											["itemID"] = 145182,	-- Cruel Combatant's Satin Bracers
-										},
-										{	-- Cruel Combatant's Satin Gloves
-											["itemID"] = 145170,	-- Cruel Combatant's Satin Gloves
-										},
-										{	-- Cruel Combatant's Satin Cord
-											["itemID"] = 145180,	-- Cruel Combatant's Satin Cord
-										},
-										{	-- Cruel Combatant's Satin Leggings
-											["itemID"] = 145174,	-- Cruel Combatant's Satin Leggings
-										},
-										{	-- Cruel Combatant's Satin Treads
-											["itemID"] = 145168,	-- Cruel Combatant's Satin Treads
-										},
+										i(145172),	-- Cruel Combatant's Satin Hood
+										i(145178),	-- Cruel Combatant's Satin Mantle
+										i(145040),	-- Cruel Combatant's Drape of Piety
+										i(145176),	-- Cruel Combatant's Satin Robe
+										i(145182),	-- Cruel Combatant's Satin Bracers
+										i(145170),	-- Cruel Combatant's Satin Gloves
+										i(145180),	-- Cruel Combatant's Satin Cord
+										i(145174),	-- Cruel Combatant's Satin Leggings
+										i(145168),	-- Cruel Combatant's Satin Treads
 									},
 								}),
 								i(147696, {	-- Ensemble: Cruel Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Cruel Combatant's Silk Cowl
-											["itemID"] = 145118,	-- Cruel Combatant's Silk Cowl
-										},
-										{	-- Cruel Combatant's Silk Amice
-											["itemID"] = 145124,	-- Cruel Combatant's Silk Amice
-										},
-										{	-- Cruel Combatant's Silken Shawl
-											["itemID"] = 145034,	-- Cruel Combatant's Silken Shawl
-										},
-										{	-- Cruel Combatant's Silk Robe
-											["itemID"] = 145122,	-- Cruel Combatant's Silk Robe
-										},
-										{	-- Cruel Combatant's Silk Bracers
-											["itemID"] = 145128,	-- Cruel Combatant's Silk Bracers
-										},
-										{	-- Cruel Combatant's Silk Handguards
-											["itemID"] = 145116,	-- Cruel Combatant's Silk Handguards
-										},
-										{	-- Cruel Combatant's Silk Cord
-											["itemID"] = 145126,	-- Cruel Combatant's Silk Cord
-										},
-										{	-- Cruel Combatant's Silk Trousers
-											["itemID"] = 145120,	-- Cruel Combatant's Silk Trousers
-										},
-										{	-- Cruel Combatant's Silk Treads
-											["itemID"] = 145114,	-- Cruel Combatant's Silk Treads
-										},
+										i(145118),	-- Cruel Combatant's Silk Cowl
+										i(145124),	-- Cruel Combatant's Silk Amice
+										i(145034),	-- Cruel Combatant's Silken Shawl
+										i(145122),	-- Cruel Combatant's Silk Robe
+										i(145128),	-- Cruel Combatant's Silk Bracers
+										i(145116),	-- Cruel Combatant's Silk Handguards
+										i(145126),	-- Cruel Combatant's Silk Cord
+										i(145120),	-- Cruel Combatant's Silk Trousers
+										i(145114),	-- Cruel Combatant's Silk Treads
 									},
 								}),
 								i(147682, {	-- Ensemble: Cruel Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Cruel Combatant's Felweave Cowl
-											["itemID"] = 145244,	-- Cruel Combatant's Felweave Cowl
-										},
-										{	-- Cruel Combatant's Felweave Amice
-											["itemID"] = 145250,	-- Cruel Combatant's Felweave Amice
-										},
-										{	-- Cruel Combatant's Felweave Cloak
-											["itemID"] = 145046,	-- Cruel Combatant's Felweave Cloak
-										},
-										{	-- Cruel Combatant's Felweave Raiment
-											["itemID"] = 145248,	-- Cruel Combatant's Felweave Raiment
-										},
-										{	-- Cruel Combatant's Felweave Bracers
-											["itemID"] = 145254,	-- Cruel Combatant's Felweave Bracers
-										},
-										{	-- Cruel Combatant's Felweave Handguards
-											["itemID"] = 145242,	-- Cruel Combatant's Felweave Handguards
-										},
-										{	-- Cruel Combatant's Felweave Cord
-											["itemID"] = 145252,	-- Cruel Combatant's Felweave Cord
-										},
-										{	-- Cruel Combatant's Felweave Trousers
-											["itemID"] = 145246,	-- Cruel Combatant's Felweave Trousers
-										},
-										{	-- Cruel Combatant's Felweave Treads
-											["itemID"] = 145240,	-- Cruel Combatant's Felweave Treads
-										},
+										i(145244),	-- Cruel Combatant's Felweave Cowl
+										i(145250),	-- Cruel Combatant's Felweave Amice
+										i(145046),	-- Cruel Combatant's Felweave Cloak
+										i(145248),	-- Cruel Combatant's Felweave Raiment
+										i(145254),	-- Cruel Combatant's Felweave Bracers
+										i(145242),	-- Cruel Combatant's Felweave Handguards
+										i(145252),	-- Cruel Combatant's Felweave Cord
+										i(145246),	-- Cruel Combatant's Felweave Trousers
+										i(145240),	-- Cruel Combatant's Felweave Treads
 									},
 								}),
 								i(147675, {	-- Ensemble: Cruel Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Cruel Combatant's Dragonhide Helm
-											["itemID"] = 145088,	-- Cruel Combatant's Dragonhide Helm
-										},
-										{	-- Cruel Combatant's Dragonhide Spaulders
-											["itemID"] = 145092,	-- Cruel Combatant's Dragonhide Spaulders
-										},
-										{	-- Cruel Combatant's Dragonhide Cloak
-											["itemID"] = 145030,	-- Cruel Combatant's Dragonhide Cloak
-										},
-										{	-- Cruel Combatant's Dragonhide Tunic
-											["itemID"] = 145082,	-- Cruel Combatant's Dragonhide Tunic
-										},
-										{	-- Cruel Combatant's Dragonhide Wristguards
-											["itemID"] = 145096,	-- Cruel Combatant's Dragonhide Wristguards
-										},
-										{	-- Cruel Combatant's Dragonhide Gloves
-											["itemID"] = 145086,	-- Cruel Combatant's Dragonhide Gloves
-										},
-										{	-- Cruel Combatant's Dragonhide Belt
-											["itemID"] = 145094,	-- Cruel Combatant's Dragonhide Belt
-										},
-										{	-- Cruel Combatant's Dragonhide Legguards
-											["itemID"] = 145090,	-- Cruel Combatant's Dragonhide Legguards
-										},
-										{	-- Cruel Combatant's Dragonhide Moccasins
-											["itemID"] = 145084,	-- Cruel Combatant's Dragonhide Moccasins
-										},
+										i(145088),	-- Cruel Combatant's Dragonhide Helm
+										i(145092),	-- Cruel Combatant's Dragonhide Spaulders
+										i(145030),	-- Cruel Combatant's Dragonhide Cloak
+										i(145082),	-- Cruel Combatant's Dragonhide Tunic
+										i(145096),	-- Cruel Combatant's Dragonhide Wristguards
+										i(145086),	-- Cruel Combatant's Dragonhide Gloves
+										i(145094),	-- Cruel Combatant's Dragonhide Belt
+										i(145090),	-- Cruel Combatant's Dragonhide Legguards
+										i(145084),	-- Cruel Combatant's Dragonhide Moccasins
 									},
 								}),
 								i(147685, {	-- Ensemble: Cruel Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Cruel Combatant's Leather Helm
-											["itemID"] = 145196,	-- Cruel Combatant's Leather Helm
-										},
-										{	-- Cruel Combatant's Leather Spaulders
-											["itemID"] = 145200,	-- Cruel Combatant's Leather Spaulders
-										},
-										{	-- Cruel Combatant's Shadowcape
-											["itemID"] = 145042,	-- Cruel Combatant's Shadowcape
-										},
-										{	-- Cruel Combatant's Leather Tunic
-											["itemID"] = 145190,	-- Cruel Combatant's Leather Tunic
-										},
-										{	-- Cruel Combatant's Leather Wristguards
-											["itemID"] = 145204,	-- Cruel Combatant's Leather Wristguards
-										},
-										{	-- Cruel Combatant's Leather Gloves
-											["itemID"] = 145194,	-- Cruel Combatant's Leather Gloves
-										},
-										{	-- Cruel Combatant's Leather Belt
-											["itemID"] = 145202,	-- Cruel Combatant's Leather Belt
-										},
-										{	-- Cruel Combatant's Leather Legguards
-											["itemID"] = 145198,	-- Cruel Combatant's Leather Legguards
-										},
-										{	-- Cruel Combatant's Leather Slippers
-											["itemID"] = 145192,	-- Cruel Combatant's Leather Slippers
-										},
+										i(145196),	-- Cruel Combatant's Leather Helm
+										i(145200),	-- Cruel Combatant's Leather Spaulders
+										i(145042),	-- Cruel Combatant's Shadowcape
+										i(145190),	-- Cruel Combatant's Leather Tunic
+										i(145204),	-- Cruel Combatant's Leather Wristguards
+										i(145194),	-- Cruel Combatant's Leather Gloves
+										i(145202),	-- Cruel Combatant's Leather Belt
+										i(145198),	-- Cruel Combatant's Leather Legguards
+										i(145192),	-- Cruel Combatant's Leather Slippers
 									},
 								}),
 								i(147684, {	-- Ensemble: Cruel Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Cruel Combatant's Ironskin Helm
-											["itemID"] = 145134,	-- Cruel Combatant's Ironskin Helm
-										},
-										{	-- Cruel Combatant's Ironskin Spaulders
-											["itemID"] = 145138,	-- Cruel Combatant's Ironskin Spaulders
-										},
-										{	-- Cruel Combatant's Ironskin Cloak
-											["itemID"] = 145036,	-- Cruel Combatant's Ironskin Cloak
-										},
-										{	-- Cruel Combatant's Ironskin Tunic
-											["itemID"] = 145140,	-- Cruel Combatant's Ironskin Tunic
-										},
-										{	-- Cruel Combatant's Ironskin Wristguards
-											["itemID"] = 145144,	-- Cruel Combatant's Ironskin Wristguards
-										},
-										{	-- Cruel Combatant's Ironskin Gloves
-											["itemID"] = 145132,	-- Cruel Combatant's Ironskin Gloves
-										},
-										{	-- Cruel Combatant's Ironskin Belt
-											["itemID"] = 145142,	-- Cruel Combatant's Ironskin Belt
-										},
-										{	-- Cruel Combatant's Ironskin Legguards
-											["itemID"] = 145136,	-- Cruel Combatant's Ironskin Legguards
-										},
-										{	-- Cruel Combatant's Ironskin Slippers
-											["itemID"] = 145130,	-- Cruel Combatant's Ironskin Slippers
-										},
+										i(145134),	-- Cruel Combatant's Ironskin Helm
+										i(145138),	-- Cruel Combatant's Ironskin Spaulders
+										i(145036),	-- Cruel Combatant's Ironskin Cloak
+										i(145140),	-- Cruel Combatant's Ironskin Tunic
+										i(145144),	-- Cruel Combatant's Ironskin Wristguards
+										i(145132),	-- Cruel Combatant's Ironskin Gloves
+										i(145142),	-- Cruel Combatant's Ironskin Belt
+										i(145136),	-- Cruel Combatant's Ironskin Legguards
+										i(145130),	-- Cruel Combatant's Ironskin Slippers
 									},
 								}),
 								i(147680, {	-- Ensemble: Cruel Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Cruel Combatant's Felskin Helm
-											["itemID"] = 145072,	-- Cruel Combatant's Felskin Helm
-										},
-										{	-- Cruel Combatant's Felskin Spaulders
-											["itemID"] = 145076,	-- Cruel Combatant's Felskin Spaulders
-										},
-										{	-- Cruel Combatant's Demonthread Cloak
-											["itemID"] = 145028,	-- Cruel Combatant's Demonthread Cloak
-										},
-										{	-- Cruel Combatant's Felskin Tunic
-											["itemID"] = 145066,	-- Cruel Combatant's Felskin Tunic
-										},
-										{	-- Cruel Combatant's Felskin Wristguards
-											["itemID"] = 145080,	-- Cruel Combatant's Felskin Wristguards
-										},
-										{	-- Cruel Combatant's Felskin Gloves
-											["itemID"] = 145070,	-- Cruel Combatant's Felskin Gloves
-										},
-										{	-- Cruel Combatant's Felskin Belt
-											["itemID"] = 145078,	-- Cruel Combatant's Felskin Belt
-										},
-										{	-- Cruel Combatant's Felskin Legguards
-											["itemID"] = 145074,	-- Cruel Combatant's Felskin Legguards
-										},
-										{	-- Cruel Combatant's Felskin Boots
-											["itemID"] = 145068,	-- Cruel Combatant's Felskin Boots
-										},
+										i(145072),	-- Cruel Combatant's Felskin Helm
+										i(145076),	-- Cruel Combatant's Felskin Spaulders
+										i(145028),	-- Cruel Combatant's Demonthread Cloak
+										i(145066),	-- Cruel Combatant's Felskin Tunic
+										i(145080),	-- Cruel Combatant's Felskin Wristguards
+										i(145070),	-- Cruel Combatant's Felskin Gloves
+										i(145078),	-- Cruel Combatant's Felskin Belt
+										i(145074),	-- Cruel Combatant's Felskin Legguards
+										i(145068),	-- Cruel Combatant's Felskin Boots
 									},
 								}),
 								i(147689, {	-- Ensemble: Cruel Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Cruel Combatant's Chain Helm
-											["itemID"] = 145104,	-- Cruel Combatant's Chain Helm
-										},
-										{	-- Cruel Combatant's Chain Spaulders
-											["itemID"] = 145108,	-- Cruel Combatant's Chain Spaulders
-										},
-										{	-- Cruel Combatant's Drape of the Tracker
-											["itemID"] = 145032,	-- Cruel Combatant's Drape of the Tracker
-										},
-										{	-- Cruel Combatant's Chain Armor
-											["itemID"] = 145098,	-- Cruel Combatant's Chain Armor
-										},
-										{	-- Cruel Combatant's Chain Armband
-											["itemID"] = 145112,	-- Cruel Combatant's Chain Armband
-										},
-										{	-- Cruel Combatant's Chain Gauntlets
-											["itemID"] = 145102,	-- Cruel Combatant's Chain Gauntlets
-										},
-										{	-- Cruel Combatant's Chain Clasp
-											["itemID"] = 145110,	-- Cruel Combatant's Chain Clasp
-										},
-										{	-- Cruel Combatant's Chain Leggings
-											["itemID"] = 145106,	-- Cruel Combatant's Chain Leggings
-										},
-										{	-- Cruel Combatant's Chain Treads
-											["itemID"] = 145100,	-- Cruel Combatant's Chain Treads
-										},
+										i(145104),	-- Cruel Combatant's Chain Helm
+										i(145108),	-- Cruel Combatant's Chain Spaulders
+										i(145032),	-- Cruel Combatant's Drape of the Tracker
+										i(145098),	-- Cruel Combatant's Chain Armor
+										i(145112),	-- Cruel Combatant's Chain Armband
+										i(145102),	-- Cruel Combatant's Chain Gauntlets
+										i(145110),	-- Cruel Combatant's Chain Clasp
+										i(145106),	-- Cruel Combatant's Chain Leggings
+										i(145100),	-- Cruel Combatant's Chain Treads
 									},
 								}),
 								i(147674, {	-- Ensemble: Cruel Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Cruel Combatant's Ringmail Helm
-											["itemID"] = 145212,	-- Cruel Combatant's Ringmail Helm
-										},
-										{	-- Cruel Combatant's Ringmail Spaulders
-											["itemID"] = 145216,	-- Cruel Combatant's Ringmail Spaulders
-										},
-										{	-- Cruel Combatant's Totemic Cloak
-											["itemID"] = 145044,	-- Cruel Combatant's Totemic Cloak
-										},
-										{	-- Cruel Combatant's Ringmail Armor
-											["itemID"] = 145206,	-- Cruel Combatant's Ringmail Armor
-										},
-										{	-- Cruel Combatant's Ringmail Armband
-											["itemID"] = 145220,	-- Cruel Combatant's Ringmail Armband
-										},
-										{	-- Cruel Combatant's Ringmail Gauntlets
-											["itemID"] = 145210,	-- Cruel Combatant's Ringmail Gauntlets
-										},
-										{	-- Cruel Combatant's Ringmail Clasp
-											["itemID"] = 145218,	-- Cruel Combatant's Ringmail Clasp
-										},
-										{	-- Cruel Combatant's Ringmail Kilt
-											["itemID"] = 145214,	-- Cruel Combatant's Ringmail Kilt
-										},
-										{	-- Cruel Combatant's Ringmail Boots
-											["itemID"] = 145208,	-- Cruel Combatant's Ringmail Boots
-										},
+										i(145212),	-- Cruel Combatant's Ringmail Helm
+										i(145216),	-- Cruel Combatant's Ringmail Spaulders
+										i(145044),	-- Cruel Combatant's Totemic Cloak
+										i(145206),	-- Cruel Combatant's Ringmail Armor
+										i(145220),	-- Cruel Combatant's Ringmail Armband
+										i(145210),	-- Cruel Combatant's Ringmail Gauntlets
+										i(145218),	-- Cruel Combatant's Ringmail Clasp
+										i(145214),	-- Cruel Combatant's Ringmail Kilt
+										i(145208),	-- Cruel Combatant's Ringmail Boots
 									},
 								}),
 								i(147693, {	-- Ensemble: Cruel Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Cruel Combatant's Scaled Helm
-											["itemID"] = 145158,	-- Cruel Combatant's Scaled Helm
-										},
-										{	-- Cruel Combatant's Scaled Shoulders
-											["itemID"] = 145162,	-- Cruel Combatant's Scaled Shoulders
-										},
-										{	-- Cruel Combatant's Greatcloak of Faith
-											["itemID"] = 145038,	-- Cruel Combatant's Greatcloak of Faith
-										},
-										{	-- Cruel Combatant's Scaled Chestpiece
-											["itemID"] = 145152,	-- Cruel Combatant's Scaled Chestpiece
-										},
-										{	-- Cruel Combatant's Scaled Wristplates
-											["itemID"] = 145166,	-- Cruel Combatant's Scaled Wristplates
-										},
-										{	-- Cruel Combatant's Scaled Gauntlets
-											["itemID"] = 145156,	-- Cruel Combatant's Scaled Gauntlets
-										},
-										{	-- Cruel Combatant's Scaled Girdle
-											["itemID"] = 145164,	-- Cruel Combatant's Scaled Girdle
-										},
-										{	-- Cruel Combatant's Scaled Legguards
-											["itemID"] = 145160,	-- Cruel Combatant's Scaled Legguards
-										},
-										{	-- Cruel Combatant's Scaled Sabatons
-											["itemID"] = 145154,	-- Cruel Combatant's Scaled Sabatons
-										},
+										i(145158),	-- Cruel Combatant's Scaled Helm
+										i(145162),	-- Cruel Combatant's Scaled Shoulders
+										i(145038),	-- Cruel Combatant's Greatcloak of Faith
+										i(145152),	-- Cruel Combatant's Scaled Chestpiece
+										i(145166),	-- Cruel Combatant's Scaled Wristplates
+										i(145156),	-- Cruel Combatant's Scaled Gauntlets
+										i(145164),	-- Cruel Combatant's Scaled Girdle
+										i(145160),	-- Cruel Combatant's Scaled Legguards
+										i(145154),	-- Cruel Combatant's Scaled Sabatons
 									},
 								}),
 								i(147692, {	-- Ensemble: Cruel Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Cruel Combatant's Plate Helm
-											["itemID"] = 145262,	-- Cruel Combatant's Plate Helm
-										},
-										{	-- Cruel Combatant's Plate Shoulders
-											["itemID"] = 145266,	-- Cruel Combatant's Plate Shoulders
-										},
-										{	-- Cruel Combatant's Cloak of Battle
-											["itemID"] = 145048,	-- Cruel Combatant's Cloak of Battle
-										},
-										{	-- Cruel Combatant's Plate Chestpiece
-											["itemID"] = 145256,	-- Cruel Combatant's Plate Chestpiece
-										},
-										{	-- Cruel Combatant's Plate Wristplates
-											["itemID"] = 145270,	-- Cruel Combatant's Plate Wristplates
-										},
-										{	-- Cruel Combatant's Plate Gauntlets
-											["itemID"] = 145260,	-- Cruel Combatant's Plate Gauntlets
-										},
-										{	-- Cruel Combatant's Plate Girdle
-											["itemID"] = 145268,	-- Cruel Combatant's Plate Girdle
-										},
-										{	-- Cruel Combatant's Plate Legguards
-											["itemID"] = 145264,	-- Cruel Combatant's Plate Legguards
-										},
-										{	-- Cruel Combatant's Plate Warboots
-											["itemID"] = 145258,	-- Cruel Combatant's Plate Warboots
-										},
+										i(145262),	-- Cruel Combatant's Plate Helm
+										i(145266),	-- Cruel Combatant's Plate Shoulders
+										i(145048),	-- Cruel Combatant's Cloak of Battle
+										i(145256),	-- Cruel Combatant's Plate Chestpiece
+										i(145270),	-- Cruel Combatant's Plate Wristplates
+										i(145260),	-- Cruel Combatant's Plate Gauntlets
+										i(145268),	-- Cruel Combatant's Plate Girdle
+										i(145264),	-- Cruel Combatant's Plate Legguards
+										i(145258),	-- Cruel Combatant's Plate Warboots
 									},
 								}),
 								i(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Cruel Combatant's Dreadplate Helm
-											["itemID"] = 145056,	-- Cruel Combatant's Dreadplate Helm
-										},
-										{	-- Cruel Combatant's Dreadplate Shoulders
-											["itemID"] = 145060,	-- Cruel Combatant's Dreadplate Shoulders
-										},
-										{	-- Cruel Combatant's Dreadcloak
-											["itemID"] = 145026,	-- Cruel Combatant's Dreadcloak
-										},
-										{	-- Cruel Combatant's Dreadplate Chestpiece
-											["itemID"] = 145050,	-- Cruel Combatant's Dreadplate Chestpiece
-										},
-										{	-- Cruel Combatant's Dreadplate Wristplates
-											["itemID"] = 145064,	-- Cruel Combatant's Dreadplate Wristplates
-										},
-										{	-- Cruel Combatant's Dreadplate Gauntlets
-											["itemID"] = 145054,	-- Cruel Combatant's Dreadplate Gauntlets
-										},
-										{	-- Cruel Combatant's Dreadplate Girdle
-											["itemID"] = 145062,	-- Cruel Combatant's Dreadplate Girdle
-										},
-										{	-- Cruel Combatant's Dreadplate Legguards
-											["itemID"] = 145058,	-- Cruel Combatant's Dreadplate Legguards
-										},
-										{	-- Cruel Combatant's Dreadplate Sabatons
-											["itemID"] = 145052,	-- Cruel Combatant's Dreadplate Sabatons
-										},
+										i(145056),	-- Cruel Combatant's Dreadplate Helm
+										i(145060),	-- Cruel Combatant's Dreadplate Shoulders
+										i(145026),	-- Cruel Combatant's Dreadcloak
+										i(145050),	-- Cruel Combatant's Dreadplate Chestpiece
+										i(145064),	-- Cruel Combatant's Dreadplate Wristplates
+										i(145054),	-- Cruel Combatant's Dreadplate Gauntlets
+										i(145062),	-- Cruel Combatant's Dreadplate Girdle
+										i(145058),	-- Cruel Combatant's Dreadplate Legguards
+										i(145052),	-- Cruel Combatant's Dreadplate Sabatons
 									},
 								}),
 								-- LEGION Season 5, 6, 7
@@ -3293,396 +2879,180 @@ _.Zones =
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 5 },	-- Priest
 									["g"] = {
-										{	-- Fierce Combatant's Satin Hood
-											["itemID"] = 149652,	-- Fierce Combatant's Satin Hood
-										},
-										{	-- Fierce Combatant's Satin Mantle
-											["itemID"] = 149658,	-- Fierce Combatant's Satin Mantle
-										},
-										{	-- Fierce Combatant's Drape of Piety
-											["itemID"] = 149519,	-- Fierce Combatant's Drape of Piety
-										},
-										{	-- Fierce Combatant's Satin Robe
-											["itemID"] = 149656,	-- Fierce Combatant's Satin Robe
-										},
-										{	-- Fierce Combatant's Satin Bracers
-											["itemID"] = 149662,	-- Fierce Combatant's Satin Bracers
-										},
-										{	-- Fierce Combatant's Satin Gloves
-											["itemID"] = 149650,	-- Fierce Combatant's Satin Gloves
-										},
-										{	-- Fierce Combatant's Satin Cord
-											["itemID"] = 149660,	-- Fierce Combatant's Satin Cord
-										},
-										{	-- Fierce Combatant's Satin Leggings
-											["itemID"] = 149654,	-- Fierce Combatant's Satin Leggings
-										},
-										{	-- Fierce Combatant's Satin Treads
-											["itemID"] = 149648,	-- Fierce Combatant's Satin Treads
-										},
+										i(149652),	-- Fierce Combatant's Satin Hood
+										i(149658),	-- Fierce Combatant's Satin Mantle
+										i(149519),	-- Fierce Combatant's Drape of Piety
+										i(149656),	-- Fierce Combatant's Satin Robe
+										i(149662),	-- Fierce Combatant's Satin Bracers
+										i(149650),	-- Fierce Combatant's Satin Gloves
+										i(149660),	-- Fierce Combatant's Satin Cord
+										i(149654),	-- Fierce Combatant's Satin Leggings
+										i(149648),	-- Fierce Combatant's Satin Treads
 									},
 								}),
 								i(150271, {	-- Ensemble: Fierce Combatant's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Fierce Combatant's Silk Cowl
-											["itemID"] = 149598,	-- Fierce Combatant's Silk Cowl
-										},
-										{	-- Fierce Combatant's Silk Amice
-											["itemID"] = 149604,	-- Fierce Combatant's Silk Amice
-										},
-										{	-- Fierce Combatant's Silken Shawl
-											["itemID"] = 149513,	-- Fierce Combatant's Silken Shawl
-										},
-										{	-- Fierce Combatant's Silk Robe
-											["itemID"] = 149602,	-- Fierce Combatant's Silk Robe
-										},
-										{	-- Fierce Combatant's Silk Bracers
-											["itemID"] = 149608,	-- Fierce Combatant's Silk Bracers
-										},
-										{	-- Fierce Combatant's Silk Handguards
-											["itemID"] = 149596,	-- Fierce Combatant's Silk Handguards
-										},
-										{	-- Fierce Combatant's Silk Cord
-											["itemID"] = 149606,	-- Fierce Combatant's Silk Cord
-										},
-										{	-- Fierce Combatant's Silk Trousers
-											["itemID"] = 149600,	-- Fierce Combatant's Silk Trousers
-										},
-										{	-- Fierce Combatant's Silk Treads
-											["itemID"] = 149594,	-- Fierce Combatant's Silk Treads
-										},
+										i(149598),	-- Fierce Combatant's Silk Cowl
+										i(149604),	-- Fierce Combatant's Silk Amice
+										i(149513),	-- Fierce Combatant's Silken Shawl
+										i(149602),	-- Fierce Combatant's Silk Robe
+										i(149608),	-- Fierce Combatant's Silk Bracers
+										i(149596),	-- Fierce Combatant's Silk Handguards
+										i(149606),	-- Fierce Combatant's Silk Cord
+										i(149600),	-- Fierce Combatant's Silk Trousers
+										i(149594),	-- Fierce Combatant's Silk Treads
 									},
 								}),
 								i(150257, {	-- Ensemble: Fierce Combatant's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Fierce Combatant's Felweave Cowl
-											["itemID"] = 149724,	-- Fierce Combatant's Felweave Cowl
-										},
-										{	-- Fierce Combatant's Felweave Amice
-											["itemID"] = 149730,	-- Fierce Combatant's Felweave Amice
-										},
-										{	-- Fierce Combatant's Felweave Cloak
-											["itemID"] = 149525,	-- Fierce Combatant's Felweave Cloak
-										},
-										{	-- Fierce Combatant's Felweave Raiment
-											["itemID"] = 149728,	-- Fierce Combatant's Felweave Raiment
-										},
-										{	-- Fierce Combatant's Felweave Bracers
-											["itemID"] = 149734,	-- Fierce Combatant's Felweave Bracers
-										},
-										{	-- Fierce Combatant's Felweave Handguards
-											["itemID"] = 149722,	-- Fierce Combatant's Felweave Handguards
-										},
-										{	-- Fierce Combatant's Felweave Cord
-											["itemID"] = 149732,	-- Fierce Combatant's Felweave Cord
-										},
-										{	-- Fierce Combatant's Felweave Trousers
-											["itemID"] = 149726,	-- Fierce Combatant's Felweave Trousers
-										},
-										{	-- Fierce Combatant's Felweave Treads
-											["itemID"] = 149720,	-- Fierce Combatant's Felweave Treads
-										},
+										i(149724),	-- Fierce Combatant's Felweave Cowl
+										i(149730),	-- Fierce Combatant's Felweave Amice
+										i(149525),	-- Fierce Combatant's Felweave Cloak
+										i(149728),	-- Fierce Combatant's Felweave Raiment
+										i(149734),	-- Fierce Combatant's Felweave Bracers
+										i(149722),	-- Fierce Combatant's Felweave Handguards
+										i(149732),	-- Fierce Combatant's Felweave Cord
+										i(149726),	-- Fierce Combatant's Felweave Trousers
+										i(149720),	-- Fierce Combatant's Felweave Treads
 									},
 								}),
 								i(150250, {	-- Ensemble: Fierce Combatant's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Fierce Combatant's Dragonhide Helm
-											["itemID"] = 149567,	-- Fierce Combatant's Dragonhide Helm
-										},
-										{	-- Fierce Combatant's Dragonhide Spaulders
-											["itemID"] = 149571,	-- Fierce Combatant's Dragonhide Spaulders
-										},
-										{	-- Fierce Combatant's Dragonhide Cloak
-											["itemID"] = 149509,	-- Fierce Combatant's Dragonhide Cloak
-										},
-										{	-- Fierce Combatant's Dragonhide Tunic
-											["itemID"] = 149561,	-- Fierce Combatant's Dragonhide Tunic
-										},
-										{	-- Fierce Combatant's Dragonhide Wristguards
-											["itemID"] = 149576,	-- Fierce Combatant's Dragonhide Wristguards
-										},
-										{	-- Fierce Combatant's Dragonhide Gloves
-											["itemID"] = 149565,	-- Fierce Combatant's Dragonhide Gloves
-										},
-										{	-- Fierce Combatant's Dragonhide Belt
-											["itemID"] = 149573,	-- Fierce Combatant's Dragonhide Belt
-										},
-										{	-- Fierce Combatant's Dragonhide Legguards
-											["itemID"] = 149569,	-- Fierce Combatant's Dragonhide Legguards
-										},
-										{	-- Fierce Combatant's Dragonhide Moccasins
-											["itemID"] = 149563,	-- Fierce Combatant's Dragonhide Moccasins
-										},
+										i(149567),	-- Fierce Combatant's Dragonhide Helm
+										i(149571),	-- Fierce Combatant's Dragonhide Spaulders
+										i(149509),	-- Fierce Combatant's Dragonhide Cloak
+										i(149561),	-- Fierce Combatant's Dragonhide Tunic
+										i(149576),	-- Fierce Combatant's Dragonhide Wristguards
+										i(149565),	-- Fierce Combatant's Dragonhide Gloves
+										i(149573),	-- Fierce Combatant's Dragonhide Belt
+										i(149569),	-- Fierce Combatant's Dragonhide Legguards
+										i(149563),	-- Fierce Combatant's Dragonhide Moccasins
 									},
 								}),
 								i(150260, {	-- Ensemble: Fierce Combatant's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Fierce Combatant's Leather Helm
-											["itemID"] = 149676,	-- Fierce Combatant's Leather Helm
-										},
-										{	-- Fierce Combatant's Leather Spaulders
-											["itemID"] = 149680,	-- Fierce Combatant's Leather Spaulders
-										},
-										{	-- Fierce Combatant's Shadowcape
-											["itemID"] = 149521,	-- Fierce Combatant's Shadowcape
-										},
-										{	-- Fierce Combatant's Leather Tunic
-											["itemID"] = 149670,	-- Fierce Combatant's Leather Tunic
-										},
-										{	-- Fierce Combatant's Leather Wristguards
-											["itemID"] = 149684,	-- Fierce Combatant's Leather Wristguards
-										},
-										{	-- Fierce Combatant's Leather Gloves
-											["itemID"] = 149674,	-- Fierce Combatant's Leather Gloves
-										},
-										{	-- Fierce Combatant's Leather Belt
-											["itemID"] = 149682,	-- Fierce Combatant's Leather Belt
-										},
-										{	-- Fierce Combatant's Leather Legguards
-											["itemID"] = 149678,	-- Fierce Combatant's Leather Legguards
-										},
-										{	-- Fierce Combatant's Leather Slippers
-											["itemID"] = 149672,	-- Fierce Combatant's Leather Slippers
-										},
+										i(149676),	-- Fierce Combatant's Leather Helm
+										i(149680),	-- Fierce Combatant's Leather Spaulders
+										i(149521),	-- Fierce Combatant's Shadowcape
+										i(149670),	-- Fierce Combatant's Leather Tunic
+										i(149684),	-- Fierce Combatant's Leather Wristguards
+										i(149674),	-- Fierce Combatant's Leather Gloves
+										i(149682),	-- Fierce Combatant's Leather Belt
+										i(149678),	-- Fierce Combatant's Leather Legguards
+										i(149672),	-- Fierce Combatant's Leather Slippers
 									},
 								}),
 								i(150259, {	-- Ensemble: Fierce Combatant's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Fierce Combatant's Ironskin Helm
-											["itemID"] = 149614,	-- Fierce Combatant's Ironskin Helm
-										},
-										{	-- Fierce Combatant's Ironskin Spaulders
-											["itemID"] = 149618,	-- Fierce Combatant's Ironskin Spaulders
-										},
-										{	-- Fierce Combatant's Ironskin Cloak
-											["itemID"] = 149515,	-- Fierce Combatant's Ironskin Cloak
-										},
-										{	-- Fierce Combatant's Ironskin Tunic
-											["itemID"] = 149620,	-- Fierce Combatant's Ironskin Tunic
-										},
-										{	-- Fierce Combatant's Ironskin Wristguards
-											["itemID"] = 149624,	-- Fierce Combatant's Ironskin Wristguards
-										},
-										{	-- Fierce Combatant's Ironskin Gloves
-											["itemID"] = 149612,	-- Fierce Combatant's Ironskin Gloves
-										},
-										{	-- Fierce Combatant's Ironskin Belt
-											["itemID"] = 149622,	-- Fierce Combatant's Ironskin Belt
-										},
-										{	-- Fierce Combatant's Ironskin Legguards
-											["itemID"] = 149616,	-- Fierce Combatant's Ironskin Legguards
-										},
-										{	-- Fierce Combatant's Ironskin Slippers
-											["itemID"] = 149610,	-- Fierce Combatant's Ironskin Slippers
-										},
+										i(149614),	-- Fierce Combatant's Ironskin Helm
+										i(149618),	-- Fierce Combatant's Ironskin Spaulders
+										i(149515),	-- Fierce Combatant's Ironskin Cloak
+										i(149620),	-- Fierce Combatant's Ironskin Tunic
+										i(149624),	-- Fierce Combatant's Ironskin Wristguards
+										i(149612),	-- Fierce Combatant's Ironskin Gloves
+										i(149622),	-- Fierce Combatant's Ironskin Belt
+										i(149616),	-- Fierce Combatant's Ironskin Legguards
+										i(149610),	-- Fierce Combatant's Ironskin Slippers
 									},
 								}),
 								i(150255, {	-- Ensemble: Fierce Combatant's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Fierce Combatant's Felskin Helm
-											["itemID"] = 149551,	-- Fierce Combatant's Felskin Helm
-										},
-										{	-- Fierce Combatant's Felskin Spaulders
-											["itemID"] = 149555,	-- Fierce Combatant's Felskin Spaulders
-										},
-										{	-- Fierce Combatant's Demonthread Cloak
-											["itemID"] = 149507,	-- Fierce Combatant's Demonthread Cloak
-										},
-										{	-- Fierce Combatant's Felskin Tunic
-											["itemID"] = 149545,	-- Fierce Combatant's Felskin Tunic
-										},
-										{	-- Fierce Combatant's Felskin Wristguards
-											["itemID"] = 149559,	-- Fierce Combatant's Felskin Wristguards
-										},
-										{	-- Fierce Combatant's Felskin Gloves
-											["itemID"] = 149549,	-- Fierce Combatant's Felskin Gloves
-										},
-										{	-- Fierce Combatant's Felskin Belt
-											["itemID"] = 149557,	-- Fierce Combatant's Felskin Belt
-										},
-										{	-- Fierce Combatant's Felskin Legguards
-											["itemID"] = 149553,	-- Fierce Combatant's Felskin Legguards
-										},
-										{	-- Fierce Combatant's Felskin Boots
-											["itemID"] = 149547,	-- Fierce Combatant's Felskin Boots
-										},
+										i(149551),	-- Fierce Combatant's Felskin Helm
+										i(149555),	-- Fierce Combatant's Felskin Spaulders
+										i(149507),	-- Fierce Combatant's Demonthread Cloak
+										i(149545),	-- Fierce Combatant's Felskin Tunic
+										i(149559),	-- Fierce Combatant's Felskin Wristguards
+										i(149549),	-- Fierce Combatant's Felskin Gloves
+										i(149557),	-- Fierce Combatant's Felskin Belt
+										i(149553),	-- Fierce Combatant's Felskin Legguards
+										i(149547),	-- Fierce Combatant's Felskin Boots
 									},
 								}),
 								i(150264, {	-- Ensemble: Fierce Combatant's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Fierce Combatant's Chain Helm
-											["itemID"] = 149584,	-- Fierce Combatant's Chain Helm
-										},
-										{	-- Fierce Combatant's Chain Spaulders
-											["itemID"] = 149588,	-- Fierce Combatant's Chain Spaulders
-										},
-										{	-- Fierce Combatant's Drape of the Tracker
-											["itemID"] = 149511,	-- Fierce Combatant's Drape of the Tracker
-										},
-										{	-- Fierce Combatant's Chain Armor
-											["itemID"] = 149578,	-- Fierce Combatant's Chain Armor
-										},
-										{	-- Fierce Combatant's Chain Armband
-											["itemID"] = 149592,	-- Fierce Combatant's Chain Armband
-										},
-										{	-- Fierce Combatant's Chain Gauntlets
-											["itemID"] = 149582,	-- Fierce Combatant's Chain Gauntlets
-										},
-										{	-- Fierce Combatant's Chain Clasp
-											["itemID"] = 149590,	-- Fierce Combatant's Chain Clasp
-										},
-										{	-- Fierce Combatant's Chain Leggings
-											["itemID"] = 149586,	-- Fierce Combatant's Chain Leggings
-										},
-										{	-- Fierce Combatant's Chain Treads
-											["itemID"] = 149580,	-- Fierce Combatant's Chain Treads
-										},
+										i(149584),	-- Fierce Combatant's Chain Helm
+										i(149588),	-- Fierce Combatant's Chain Spaulders
+										i(149511),	-- Fierce Combatant's Drape of the Tracker
+										i(149578),	-- Fierce Combatant's Chain Armor
+										i(149592),	-- Fierce Combatant's Chain Armband
+										i(149582),	-- Fierce Combatant's Chain Gauntlets
+										i(149590),	-- Fierce Combatant's Chain Clasp
+										i(149586),	-- Fierce Combatant's Chain Leggings
+										i(149580),	-- Fierce Combatant's Chain Treads
 									},
 								}),
 								i(150249, {	-- Ensemble: Fierce Combatant's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Fierce Combatant's Ringmail Helm
-											["itemID"] = 149692,	-- Fierce Combatant's Ringmail Helm
-										},
-										{	-- Fierce Combatant's Ringmail Spaulders
-											["itemID"] = 149696,	-- Fierce Combatant's Ringmail Spaulders
-										},
-										{	-- Fierce Combatant's Totemic Cloak
-											["itemID"] = 149523,	-- Fierce Combatant's Totemic Cloak
-										},
-										{	-- Fierce Combatant's Ringmail Robe
-											["itemID"] = 149686,	-- Fierce Combatant's Ringmail Robe
-										},
-										{	-- Fierce Combatant's Ringmail Armband
-											["itemID"] = 149700,	-- Fierce Combatant's Ringmail Armband
-										},
-										{	-- Fierce Combatant's Ringmail Gauntlets
-											["itemID"] = 149690,	-- Fierce Combatant's Ringmail Gauntlets
-										},
-										{	-- Fierce Combatant's Ringmail Clasp
-											["itemID"] = 149698,	-- Fierce Combatant's Ringmail Clasp
-										},
-										{	-- Fierce Combatant's Ringmail Leggings
-											["itemID"] = 149694,	-- Fierce Combatant's Ringmail Leggings
-										},
-										{	-- Fierce Combatant's Ringmail Boots
-											["itemID"] = 149688,	-- Fierce Combatant's Ringmail Boots
-										},
+										i(149692),	-- Fierce Combatant's Ringmail Helm
+										i(149696),	-- Fierce Combatant's Ringmail Spaulders
+										i(149523),	-- Fierce Combatant's Totemic Cloak
+										i(149686),	-- Fierce Combatant's Ringmail Robe
+										i(149700),	-- Fierce Combatant's Ringmail Armband
+										i(149690),	-- Fierce Combatant's Ringmail Gauntlets
+										i(149698),	-- Fierce Combatant's Ringmail Clasp
+										i(149694),	-- Fierce Combatant's Ringmail Leggings
+										i(149688),	-- Fierce Combatant's Ringmail Boots
 									},
 								}),
 								i(150268, {	-- Ensemble: Fierce Combatant's Scaled Armor [Paladin - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Fierce Combatant's Scaled Helm
-											["itemID"] = 149638,	-- Fierce Combatant's Scaled Helm
-										},
-										{	-- Fierce Combatant's Scaled Shoulders
-											["itemID"] = 149642,	-- Fierce Combatant's Scaled Shoulders
-										},
-										{	-- Fierce Combatant's Greatcloak of Faith
-											["itemID"] = 149517,	-- Fierce Combatant's Greatcloak of Faith
-										},
-										{	-- Fierce Combatant's Scaled Chestpiece
-											["itemID"] = 149632,	-- Fierce Combatant's Scaled Chestpiece
-										},
-										{	-- Fierce Combatant's Scaled Wristplates
-											["itemID"] = 149646,	-- Fierce Combatant's Scaled Wristplates
-										},
-										{	-- Fierce Combatant's Scaled Gauntlets
-											["itemID"] = 149636,	-- Fierce Combatant's Scaled Gauntlets
-										},
-										{	-- Fierce Combatant's Scaled Girdle
-											["itemID"] = 149644,	-- Fierce Combatant's Scaled Girdle
-										},
-										{	-- Fierce Combatant's Scaled Legguards
-											["itemID"] = 149640,	-- Fierce Combatant's Scaled Legguards
-										},
-										{	-- Fierce Combatant's Scaled Sabatons
-											["itemID"] = 149634,	-- Fierce Combatant's Scaled Sabatons
-										},
+										i(149638),	-- Fierce Combatant's Scaled Helm
+										i(149642),	-- Fierce Combatant's Scaled Shoulders
+										i(149517),	-- Fierce Combatant's Greatcloak of Faith
+										i(149632),	-- Fierce Combatant's Scaled Chestpiece
+										i(149646),	-- Fierce Combatant's Scaled Wristplates
+										i(149636),	-- Fierce Combatant's Scaled Gauntlets
+										i(149644),	-- Fierce Combatant's Scaled Girdle
+										i(149640),	-- Fierce Combatant's Scaled Legguards
+										i(149634),	-- Fierce Combatant's Scaled Sabatons
 									},
 								}),
 								i(150267, {	-- Ensemble: Fierce Combatant's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Fierce Combatant's Plate Helm
-											["itemID"] = 149742,	-- Fierce Combatant's Plate Helm
-										},
-										{	-- Fierce Combatant's Plate Shoulders
-											["itemID"] = 149746,	-- Fierce Combatant's Plate Shoulders
-										},
-										{	-- Fierce Combatant's Cloak of Battle
-											["itemID"] = 149527,	-- Fierce Combatant's Cloak of Battle
-										},
-										{	-- Fierce Combatant's Plate Chestpiece
-											["itemID"] = 149736,	-- Fierce Combatant's Plate Chestpiece
-										},
-										{	-- Fierce Combatant's Plate Wristplates
-											["itemID"] = 149750,	-- Fierce Combatant's Plate Wristplates
-										},
-										{	-- Fierce Combatant's Plate Gauntlets
-											["itemID"] = 149740,	-- Fierce Combatant's Plate Gauntlets
-										},
-										{	-- Fierce Combatant's Plate Girdle
-											["itemID"] = 149748,	-- Fierce Combatant's Plate Girdle
-										},
-										{	-- Fierce Combatant's Plate Legguards
-											["itemID"] = 149744,	-- Fierce Combatant's Plate Legguards
-										},
-										{	-- Fierce Combatant's Plate Warboots
-											["itemID"] = 149738,	-- Fierce Combatant's Plate Warboots
-										},
+										i(149742),	-- Fierce Combatant's Plate Helm
+										i(149746),	-- Fierce Combatant's Plate Shoulders
+										i(149527),	-- Fierce Combatant's Cloak of Battle
+										i(149736),	-- Fierce Combatant's Plate Chestpiece
+										i(149750),	-- Fierce Combatant's Plate Wristplates
+										i(149740),	-- Fierce Combatant's Plate Gauntlets
+										i(149748),	-- Fierce Combatant's Plate Girdle
+										i(149744),	-- Fierce Combatant's Plate Legguards
+										i(149738),	-- Fierce Combatant's Plate Warboots
 									},
 								}),
 								i(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Fierce Combatant's Dreadplate Helm
-											["itemID"] = 149535,	-- Fierce Combatant's Dreadplate Helm
-										},
-										{	-- Fierce Combatant's Dreadplate Shoulders
-											["itemID"] = 149539,	-- Fierce Combatant's Dreadplate Shoulders
-										},
-										{	-- Fierce Combatant's Dreadcloak
-											["itemID"] = 149505,	-- Fierce Combatant's Dreadcloak
-										},
-										{	-- Fierce Combatant's Dreadplate Chestpiece
-											["itemID"] = 149529,	-- Fierce Combatant's Dreadplate Chestpiece
-										},
-										{	-- Fierce Combatant's Dreadplate Wristplates
-											["itemID"] = 149543,	-- Fierce Combatant's Dreadplate Wristplates
-										},
-										{	-- Fierce Combatant's Dreadplate Gauntlets
-											["itemID"] = 149533,	-- Fierce Combatant's Dreadplate Gauntlets
-										},
-										{	-- Fierce Combatant's Dreadplate Girdle
-											["itemID"] = 149541,	-- Fierce Combatant's Dreadplate Girdle
-										},
-										{	-- Fierce Combatant's Dreadplate Legguards
-											["itemID"] = 149537,	-- Fierce Combatant's Dreadplate Legguards
-										},
-										{	-- Fierce Combatant's Dreadplate Sabatons
-											["itemID"] = 149531,	-- Fierce Combatant's Dreadplate Sabatons
-										},
+										i(149535),	-- Fierce Combatant's Dreadplate Helm
+										i(149539),	-- Fierce Combatant's Dreadplate Shoulders
+										i(149505),	-- Fierce Combatant's Dreadcloak
+										i(149529),	-- Fierce Combatant's Dreadplate Chestpiece
+										i(149543),	-- Fierce Combatant's Dreadplate Wristplates
+										i(149533),	-- Fierce Combatant's Dreadplate Gauntlets
+										i(149541),	-- Fierce Combatant's Dreadplate Girdle
+										i(149537),	-- Fierce Combatant's Dreadplate Legguards
+										i(149531),	-- Fierce Combatant's Dreadplate Sabatons
 									},
 								}),
 							},
@@ -3691,142 +3061,66 @@ _.Zones =
 							["icon"] = "Interface\\Worldmap\\GlowSkull_64Red",	-- Red
 							["g"] = {
 								-- LEGION Season 1 & 2
-								{	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
-									["itemID"] = 146148,	-- Ensemble: Vindictive Gladiator's Satin Armor
+								i(146148, {	-- Ensemble: Vindictive Gladiator's Satin Armor [Priest - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 5 },	-- Priest
 									["g"] = {
-										{	-- Vindictive Gladiator's Satin Hood
-											["itemID"] = 135641,	-- Vindictive Gladiator's Satin Hood
-										},
-										{	-- Vindictive Gladiator's Satin Mantle
-											["itemID"] = 135644,	-- Vindictive Gladiator's Satin Mantle
-										},
-										{	-- Vindictive Gladiator's Drape of Piety
-											["itemID"] = 136861,	-- Vindictive Gladiator's Drape of Piety
-										},
-										{	-- Vindictive Gladiator's Satin Robe
-											["itemID"] = 135643,	-- Vindictive Gladiator's Satin Robe
-										},
-										{	-- Vindictive Gladiator's Satin Bracers
-											["itemID"] = 135646,	-- Vindictive Gladiator's Satin Bracers
-										},
-										{	-- Vindictive Gladiator's Satin Gloves
-											["itemID"] = 135640,	-- Vindictive Gladiator's Satin Gloves
-										},
-										{	-- Vindictive Gladiator's Satin Cord
-											["itemID"] = 135645,	-- Vindictive Gladiator's Satin Cord
-										},
-										{	-- Vindictive Gladiator's Satin Leggings
-											["itemID"] = 135642,	-- Vindictive Gladiator's Satin Leggings
-										},
-										{	-- Vindictive Gladiator's Satin Treads
-											["itemID"] = 135639,	-- Vindictive Gladiator's Satin Treads
-										},
+										i(135641),	-- Vindictive Gladiator's Satin Hood
+										i(135644),	-- Vindictive Gladiator's Satin Mantle
+										i(136861),	-- Vindictive Gladiator's Drape of Piety
+										i(135643),	-- Vindictive Gladiator's Satin Robe
+										i(135646),	-- Vindictive Gladiator's Satin Bracers
+										i(135640),	-- Vindictive Gladiator's Satin Gloves
+										i(135645),	-- Vindictive Gladiator's Satin Cord
+										i(135642),	-- Vindictive Gladiator's Satin Leggings
+										i(135639),	-- Vindictive Gladiator's Satin Treads
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
-									["itemID"] = 146146,	-- Ensemble: Vindictive Gladiator's Silk Armor
+								}),
+								i(146146, {	-- Ensemble: Vindictive Gladiator's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Vindictive Gladiator's Silk Cowl
-											["itemID"] = 135617,	-- Vindictive Gladiator's Silk Cowl
-										},
-										{	-- Vindictive Gladiator's Silk Amice
-											["itemID"] = 135620,	-- Vindictive Gladiator's Silk Amice
-										},
-										{	-- Vindictive Gladiator's Silken Shawl
-											["itemID"] = 135684,	-- Vindictive Gladiator's Silken Shawl
-										},
-										{	-- Vindictive Gladiator's Silk Robe
-											["itemID"] = 135619,	-- Vindictive Gladiator's Silk Robe
-										},
-										{	-- Vindictive Gladiator's Silk Bracers
-											["itemID"] = 135622,	-- Vindictive Gladiator's Silk Bracers
-										},
-										{	-- Vindictive Gladiator's Silk Handguards
-											["itemID"] = 135616,	-- Vindictive Gladiator's Silk Handguards
-										},
-										{	-- Vindictive Gladiator's Silk Cord
-											["itemID"] = 135621,	-- Vindictive Gladiator's Silk Cord
-										},
-										{	-- Vindictive Gladiator's Silk Trousers
-											["itemID"] = 135618,	-- Vindictive Gladiator's Silk Trousers
-										},
-										{	-- Vindictive Gladiator's Silk Treads
-											["itemID"] = 135615,	-- Vindictive Gladiator's Silk Treads
-										},
+										i(135617),	-- Vindictive Gladiator's Silk Cowl
+										i(135620),	-- Vindictive Gladiator's Silk Amice
+										i(135684),	-- Vindictive Gladiator's Silken Shawl
+										i(135619),	-- Vindictive Gladiator's Silk Robe
+										i(135622),	-- Vindictive Gladiator's Silk Bracers
+										i(135616),	-- Vindictive Gladiator's Silk Handguards
+										i(135621),	-- Vindictive Gladiator's Silk Cord
+										i(135618),	-- Vindictive Gladiator's Silk Trousers
+										i(135615),	-- Vindictive Gladiator's Silk Treads
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
-									["itemID"] = 146150,	-- Ensemble: Vindictive Gladiator's Felweave Armor
+								}),
+								i(146150, {	-- Ensemble: Vindictive Gladiator's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Vindictive Gladiator's Felweave Cowl
-											["itemID"] = 135665,	-- Vindictive Gladiator's Felweave Cowl
-										},
-										{	-- Vindictive Gladiator's Felweave Amice
-											["itemID"] = 135668,	-- Vindictive Gladiator's Felweave Amice
-										},
-										{	-- Vindictive Gladiator's Felweave Cloak
-											["itemID"] = 136879,	-- Vindictive Gladiator's Felweave Cloak
-										},
-										{	-- Vindictive Gladiator's Felweave Raiment
-											["itemID"] = 135667,	-- Vindictive Gladiator's Felweave Raiment
-										},
-										{	-- Vindictive Gladiator's Felweave Bracers
-											["itemID"] = 135670,	-- Vindictive Gladiator's Felweave Bracers
-										},
-										{	-- Vindictive Gladiator's Felweave Handguards
-											["itemID"] = 135664,	-- Vindictive Gladiator's Felweave Handguards
-										},
-										{	-- Vindictive Gladiator's Felweave Cord
-											["itemID"] = 135669,	-- Vindictive Gladiator's Felweave Cord
-										},
-										{	-- Vindictive Gladiator's Felweave Trousers
-											["itemID"] = 135666,	-- Vindictive Gladiator's Felweave Trousers
-										},
-										{	-- Vindictive Gladiator's Felweave Treads
-											["itemID"] = 135663,	-- Vindictive Gladiator's Felweave Treads
-										},
+										i(135665),	-- Vindictive Gladiator's Felweave Cowl
+										i(135668),	-- Vindictive Gladiator's Felweave Amice
+										i(136879),	-- Vindictive Gladiator's Felweave Cloak
+										i(135667),	-- Vindictive Gladiator's Felweave Raiment
+										i(135670),	-- Vindictive Gladiator's Felweave Bracers
+										i(135664),	-- Vindictive Gladiator's Felweave Handguards
+										i(135669),	-- Vindictive Gladiator's Felweave Cord
+										i(135666),	-- Vindictive Gladiator's Felweave Trousers
+										i(135663),	-- Vindictive Gladiator's Felweave Treads
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
-									["itemID"] = 146140,	-- Ensemble: Vindictive Gladiator's Dragonhide Armor
+								}),
+								i(146140, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Vindictive Gladiator's Dragonhide Helm
-											["itemID"] = 135601,	-- Vindictive Gladiator's Dragonhide Helm
-										},
-										{	-- Vindictive Gladiator's Dragonhide Spaulders
-											["itemID"] = 135604,	-- Vindictive Gladiator's Dragonhide Spaulders
-										},
-										{	-- Vindictive Gladiator's Dragonhide Cloak
-											["itemID"] = 135680,	-- Vindictive Gladiator's Dragonhide Cloak
-										},
-										{	-- Vindictive Gladiator's Dragonhide Robe
-											["itemID"] = 135603,	-- Vindictive Gladiator's Dragonhide Robe
-										},
-										{	-- Vindictive Gladiator's Dragonhide Wristguards
-											["itemID"] = 135606,	-- Vindictive Gladiator's Dragonhide Wristguards
-										},
-										{	-- Vindictive Gladiator's Dragonhide Gloves
-											["itemID"] = 135600,	-- Vindictive Gladiator's Dragonhide Gloves
-										},
-										{	-- Vindictive Gladiator's Dragonhide Belt
-											["itemID"] = 135605,	-- Vindictive Gladiator's Dragonhide Belt
-										},
-										{	-- Vindictive Gladiator's Dragonhide Legguards
-											["itemID"] = 135602,	-- Vindictive Gladiator's Dragonhide Legguards
-										},
-										{	-- Vindictive Gladiator's Dragonhide Moccasins
-											["itemID"] = 135599,	-- Vindictive Gladiator's Dragonhide Moccasins
-										},
+										i(135601),	-- Vindictive Gladiator's Dragonhide Helm
+										i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders
+										i(135680),	-- Vindictive Gladiator's Dragonhide Cloak
+										i(135603),	-- Vindictive Gladiator's Dragonhide Robe
+										i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards
+										i(135600),	-- Vindictive Gladiator's Dragonhide Gloves
+										i(135605),	-- Vindictive Gladiator's Dragonhide Belt
+										i(135602),	-- Vindictive Gladiator's Dragonhide Legguards
+										i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins
 									},
-								},
+								}),
 								{	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
 									["itemID"] = 146144,	-- Ensemble: Vindictive Gladiator's Leather Armor
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
