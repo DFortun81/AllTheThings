@@ -198,8 +198,8 @@ namespace Parser_V2
                 bool b = item.TryGetValue("itemID", out object itemIDObj) && Convert.ToInt32(itemIDObj) == 162825 && field == "c";
                 if (b)
                 {
-                    Console.WriteLine(ToJSON(value));
-                    Console.WriteLine(value.GetType().ToString());
+                    Trace.WriteLine(ToJSON(value));
+                    Trace.WriteLine(value.GetType().ToString());
                 }
                 */
 
@@ -425,13 +425,13 @@ namespace Parser_V2
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Debug.Write("Parser is ignoring field '");
-                            Debug.Write(field);
-                            Debug.WriteLine("' for items.");
-                            Debug.Write("  [");
-                            Debug.Write(MiniJSON.Json.Serialize(value));
-                            Debug.WriteLine("]");
-                            Debug.WriteLine(MiniJSON.Json.Serialize(item));
+                            Trace.Write("Parser is ignoring field '");
+                            Trace.Write(field);
+                            Trace.WriteLine("' for items.");
+                            Trace.Write("  [");
+                            Trace.Write(MiniJSON.Json.Serialize(value));
+                            Trace.WriteLine("]");
+                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
                             break;
                         }
                 }
@@ -714,10 +714,10 @@ namespace Parser_V2
                 if (item == null)
                 {
                     // Report that the item is missing.
-                    Debug.Write("Could not find item #");
-                    Debug.Write(itemID);
-                    Debug.WriteLine(" in the database.");
-                    Debug.WriteLine(ToJSON(data));
+                    Trace.Write("Could not find item #");
+                    Trace.Write(itemID);
+                    Trace.WriteLine(" in the database.");
+                    Trace.WriteLine(ToJSON(data));
                     return;
                 }
 

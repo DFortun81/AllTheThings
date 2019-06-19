@@ -21,6 +21,11 @@ namespace Parser_V2
         private static IDictionary<int, int> NPCS = new Dictionary<int, int>();
 
         /// <summary>
+        /// All of the NPC IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static IDictionary<int, bool> NPCS_WITH_REFERENCES = new Dictionary<int, bool>();
+
+        /// <summary>
         /// All of the species that have been parsed sorted by Species ID.
         /// </summary>
         private static IDictionary<int, Dictionary<string, object>> SPECIES = new Dictionary<int, Dictionary<string, object>>();
@@ -141,6 +146,11 @@ namespace Parser_V2
                 data["modID"] = modID;
             }
 
+            if(data.TryGetValue("npcID", out int npcID))
+            {
+                NPCS_WITH_REFERENCES[npcID] = true;
+            }
+
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
 
@@ -190,12 +200,12 @@ namespace Parser_V2
                     data["heirloomID"] = itemRef;
                     if (data.TryGetValue("ignoreSource", out itemRef))
                     {
-                        Console.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING SOURCE IDS?!");
+                        Trace.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING SOURCE IDS?!");
                         Console.ReadLine();
                     }
                     else if (data.TryGetValue("ignoreBonus", out itemRef))
                     {
-                        Console.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING BONUS IDS?!");
+                        Trace.WriteLine("WTF WHY IS THIS HEIRLOOM IGNORING BONUS IDS?!");
                         Console.ReadLine();
                     }
                 }
@@ -255,9 +265,9 @@ namespace Parser_V2
                             }
                         default:
                             {
-                                Console.Write("Missing Skill ID in Conversion Table: ");
-                                Console.WriteLine(requiredSkill);
-                                Console.WriteLine(ToJSON(data));
+                                Trace.Write("Missing Skill ID in Conversion Table: ");
+                                Trace.WriteLine(requiredSkill);
+                                Trace.WriteLine(ToJSON(data));
                                 Console.ReadLine();
                                 break;
                             }
@@ -964,9 +974,9 @@ namespace Parser_V2
                             var contents = data.Values;
                             if (contents == null)
                             {
-                                Debug.Write("Invalid Source DB Format for Container '");
-                                Debug.Write(pair.Key);
-                                Debug.WriteLine("'!");
+                                Trace.Write("Invalid Source DB Format for Container '");
+                                Trace.Write(pair.Key);
+                                Trace.WriteLine("'!");
                                 continue;
                             }
 
@@ -1010,11 +1020,11 @@ namespace Parser_V2
                         }
                     default:
                         {
-                            Debug.Write(field);
-                            Debug.Write(" (");
-                            Debug.Write(v.GetType().ToString());
-                            Debug.Write("): ");
-                            Debug.WriteLine(v);
+                            Trace.Write(field);
+                            Trace.Write(" (");
+                            Trace.Write(v.GetType().ToString());
+                            Trace.Write("): ");
+                            Trace.WriteLine(v);
                             Console.ReadLine();
                             break;
                         }

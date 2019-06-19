@@ -16,30 +16,31 @@ namespace Parser_V2
         {
             // Prepare console output to a file.
             Directory.CreateDirectory("../Debugging");
-            Debug.Listeners.Add(new TextWriterTraceListener(System.Console.Out));
-            Debug.Listeners.Add(new TextWriterTraceListener(File.CreateText("../Debugging/output.log")));
+            Trace.Listeners.Add(new TextWriterTraceListener(System.Console.Out));
+            Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("../Debugging/output.log")));
+            Trace.AutoFlush = true;
 
             // Load all of the RAW JSON Data into the database.
             var files = Directory.EnumerateFiles(".", "*.json", SearchOption.AllDirectories).ToList();
             files.Sort();
             foreach(var fileName in files)
             {
-                Debug.Write(fileName);
-                Debug.Write("... ");
+                Trace.Write(fileName);
+                Trace.Write("... ");
 
                 // Load the text and then convert it to a common JSON data format.
                 var data = Framework.ToDictionary(File.ReadAllText(fileName));
                 if (data == null)
                 {
-                    Debug.WriteLine("Invalid format!");
+                    Trace.WriteLine("Invalid format!");
                     continue;
                 }
-                else Debug.WriteLine("");
+                else Trace.WriteLine("");
 
                 // Attempt to merge the data into the Database.
                 Framework.Merge(data);
             }
-            Debug.WriteLine("Done parsing JSON files...");
+            Trace.WriteLine("Done parsing JSON files...");
 
             // Load all of the Lua files into the database.
             var luaFiles = Directory.GetFiles(".", "*.lua", SearchOption.AllDirectories).ToList();
@@ -50,9 +51,9 @@ namespace Parser_V2
             }
             else
             {
-                Debug.WriteLine("Could not find the '_main.lua' header file.");
-                Debug.WriteLine("Operation cannot continue without it.");
-                Debug.WriteLine("Press Enter to Close.");
+                Trace.WriteLine("Could not find the '_main.lua' header file.");
+                Trace.WriteLine("Operation cannot continue without it.");
+                Trace.WriteLine("Press Enter to Close.");
                 Console.ReadLine();
                 return;
             }
@@ -61,7 +62,7 @@ namespace Parser_V2
             lua.DoFile("./_main.lua");
             foreach (var fileName in luaFiles)
             {
-                //Debug.WriteLine(fileName);
+                //Trace.WriteLine(fileName);
                 do
                 {
                     try
@@ -73,9 +74,9 @@ namespace Parser_V2
                     }
                     catch(Exception e)
                     {
-                        Debug.WriteLine(fileName);
-                        Console.WriteLine(e);
-                        Console.WriteLine("Press Enter once you have resolved the issue.");
+                        Trace.WriteLine(fileName);
+                        Trace.WriteLine(e);
+                        Trace.WriteLine("Press Enter once you have resolved the issue.");
                         Console.ReadLine();
                     }
                 }
@@ -92,8 +93,8 @@ namespace Parser_V2
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
-                    Console.WriteLine("Press Enter once you have resolved the issue.");
+                    Trace.WriteLine(e);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
             }
@@ -104,9 +105,9 @@ namespace Parser_V2
             Framework.Process();
 
             // Let's do some debugging...
-            Debug.Write("There are ");
-            Debug.Write(Framework.Items.Count);
-            Debug.WriteLine(" Items loaded in the database.");
+            Trace.Write("There are ");
+            Trace.Write(Framework.Items.Count);
+            Trace.WriteLine(" Items loaded in the database.");
 
             // Export all of the data for the Framework.
             Framework.Export();

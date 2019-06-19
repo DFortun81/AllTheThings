@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLua;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -995,6 +996,7 @@ namespace Parser_V2
                 Reagent = 56,
                 FishingPole = 57,
                 Containers = 58,
+                ClassBooks = 59,
 
                 // Non-Equipment Types
                 Mount = 100,
@@ -1013,7 +1015,9 @@ namespace Parser_V2
                 Bag = 113,
 
                 // Recipes
-                Recipe = 200
+                Recipe = 200,
+
+                EventItem = 999,
             }
 
             /// <summary>
@@ -1415,7 +1419,7 @@ namespace Parser_V2
                                 else
                                 {
                                     // Nah man, we need to list them all. Damnit!
-                                    //Console.WriteLine("There was a leftover race?!");
+                                    //Trace.WriteLine("There was a leftover race?!");
                                 }
                             }
                         }
@@ -1444,7 +1448,7 @@ namespace Parser_V2
                                 else
                                 {
                                     // Nah man, we need to list them all. Damnit!
-                                    //Console.WriteLine("There was a leftover race?!");
+                                    //Trace.WriteLine("There was a leftover race?!");
                                 }
                             }
                         }
@@ -1452,7 +1456,7 @@ namespace Parser_V2
                     else
                     {
                         // Nah man, we need to list them all. Damnit!
-                        //Console.WriteLine("There was a leftover race?!");
+                        //Trace.WriteLine("There was a leftover race?!");
                     }
                 }
             }
@@ -1527,6 +1531,40 @@ namespace Parser_V2
                         }
                     }
                     File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+                }
+
+                // Load in the Locale File and Warn about Unused Custom NPC IDs.
+                var content = File.ReadAllText("./../../locales/enUS.lua");
+                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"NPC_ID_NAMES\"]")));
+                content = content.Substring(0, content.IndexOf('}'));
+
+                // Scan through for NPC IDs. (we don't care about the actual name)
+                int npcID;
+                int index = 0;
+                var allLocalizedNPCIDs = new Dictionary<int, bool>();
+                while ((index = content.IndexOf('[', index)) > -1)
+                {
+                    ++index;
+                    int endIndex = content.IndexOf(']', index);
+                    if (endIndex > -1 && int.TryParse(content.Substring(index, endIndex - index), out npcID))
+                    {
+                        allLocalizedNPCIDs[npcID] = true;
+                    }
+                }
+
+                // Determine if any of the localized NPC IDs have no references.
+                if (allLocalizedNPCIDs.Any())
+                {
+                    var sortedNPCIDs = allLocalizedNPCIDs.Keys.ToList();
+                    sortedNPCIDs.Sort();
+                    sortedNPCIDs.Reverse();
+                    foreach(int sortedNPCID in sortedNPCIDs)
+                    {
+                        if (NPCS_WITH_REFERENCES.ContainsKey(sortedNPCID)) continue;
+                        Trace.Write("Custom NPC ID [");
+                        Trace.Write(sortedNPCID);
+                        Trace.WriteLine("] has no reference and should be removed.");
+                    }
                 }
             }
 
@@ -1739,13 +1777,13 @@ namespace Parser_V2
                                 }
                                 else
                                 {
-                                    Debug.WriteLine(ToJSON(value));
+                                    Trace.WriteLine(ToJSON(value));
                                     Console.ReadLine();
                                 }
                             }
                             catch
                             {
-                                Debug.WriteLine(ToJSON(value));
+                                Trace.WriteLine(ToJSON(value));
                             }
                             break;
                         }
@@ -2023,13 +2061,13 @@ namespace Parser_V2
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Debug.Write("Parser is ignoring field '");
-                            Debug.Write(field);
-                            Debug.WriteLine("' for objects.");
-                            Debug.Write("  [");
-                            Debug.Write(MiniJSON.Json.Serialize(value));
-                            Debug.WriteLine("]");
-                            Debug.WriteLine(MiniJSON.Json.Serialize(item));
+                            Trace.Write("Parser is ignoring field '");
+                            Trace.Write(field);
+                            Trace.WriteLine("' for objects.");
+                            Trace.Write("  [");
+                            Trace.Write(MiniJSON.Json.Serialize(value));
+                            Trace.WriteLine("]");
+                            Trace.WriteLine(MiniJSON.Json.Serialize(item));
                             break;
                         }
                 }
@@ -2082,8 +2120,8 @@ namespace Parser_V2
                 // If there is no most significant ID field, then complain.
                 if (string.IsNullOrEmpty(mostSignificantID))
                 {
-                    Debug.WriteLine("No Most Significant ID for:");
-                    Debug.WriteLine(ToJSON(data));
+                    Trace.WriteLine("No Most Significant ID for:");
+                    Trace.WriteLine(ToJSON(data));
                 }
                 else
                 {
@@ -2244,8 +2282,8 @@ namespace Parser_V2
                     if (data is Dictionary<object, object> oDict) Merge(container, oDict);
                     else
                     {
-                        Console.Write("MERGE CONFUSION: ");
-                        Console.WriteLine(ToJSON(data));
+                        Trace.Write("MERGE CONFUSION: ");
+                        Trace.WriteLine(ToJSON(data));
                     }
                 }
             }
