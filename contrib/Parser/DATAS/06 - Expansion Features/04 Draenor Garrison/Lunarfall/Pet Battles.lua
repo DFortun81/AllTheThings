@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			["g"] = {	
-				n(-25, { 	-- Pet Battle
+				filter(101, { 	-- Pet Battle
 					p(560),	-- Sea Gull
 					ach(9264),	-- Draenor Pet Brawler
 					q(40329,  {	-- Battle Pet Tamers: Warlords

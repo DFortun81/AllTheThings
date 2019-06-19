@@ -1136,7 +1136,7 @@ _.Craftables =
 		n(-190, { 	-- Tailoring
 			--[[n(-37, {	-- Discovery
 			}),]]
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth
 					i(90902),	-- Imperial Silkworm

@@ -24,7 +24,7 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["g"] = {
 			n(-68, {	-- The Emerald Dream
-				n(-25, {	-- Pet Battles
+				filter(101, { 	-- Pet Battle
 					p(1722, {	-- Dream Whelpling
 						["description"] = "Once you defeat Xavius these will spawn in the room after him."
 					}),

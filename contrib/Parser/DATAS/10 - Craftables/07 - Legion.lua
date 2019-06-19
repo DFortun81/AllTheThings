@@ -95,7 +95,7 @@ _.Craftables =
 				},
 				["requireSkill"] = 171,	-- Alchemy
 			}),
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				i(137599, {	-- Pulsating Sac
 					i(137608, {	-- Growling Sac
 						i(44822),	-- Albino Snake
@@ -222,7 +222,7 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch

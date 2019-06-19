@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	m(245, {	-- Tol Barad Peninsula
 		["g"] = {
-			n(-25, { 	-- Pet Battle
+			filter(101, { 	-- Pet Battle
 				p(410), 	-- Wharf Rat
 			}),
 			n(-16, { 	-- Rare

@@ -314,7 +314,7 @@ _.Craftables =
 			}),
 		}),
 		n(-182, { 	-- Enchanting
-			n(-25, {	-- Pet Battles
+			filter(101, { 	-- Pet Battle
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
