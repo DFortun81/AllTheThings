@@ -5,18 +5,13 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			["g"] = {
-				n(-34,  {	-- World Quests
-					n(-17, {	-- Quests
-						{	-- Security First
-							["questID"] = 56131,
-							["g"] = {
-								i(168832),	-- Galvanic Oscillator
-							},
-						},
-					}),
+			n(-34,  {	-- World Quests
+				q(56131, {	-- Security First
+					["g"] = {
+						i(168832),	-- Galvanic Oscillator
+					},
 				}),
-			},
+			}),
 		}),
 	}),
 };

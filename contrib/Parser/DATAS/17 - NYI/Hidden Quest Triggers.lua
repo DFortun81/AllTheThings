@@ -72,5 +72,17 @@ _.NeverImplemented =
 		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
 		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
 		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
+		
+		-- Mechagon
+		q(55547),	-- Mechanized Chest. Chests spawn randomly
+		q(55548),	-- Mechanized Chest. Chests spawn randomly
+		q(55549),	-- Mechanized Chest. Chests spawn randomly
+		q(55550),	-- Mechanized Chest. Chests spawn randomly
+		q(55551),	-- Mechanized Chest. Chests spawn randomly
+		q(55552),	-- Mechanized Chest. Chests spawn randomly
+		q(55553),	-- Mechanized Chest. Chests spawn randomly
+		q(55554),	-- Mechanized Chest. Chests spawn randomly
+		q(55555),	-- Mechanized Chest. Chests spawn randomly
+		q(55556),	-- Mechanized Chest. Chests spawn randomly
 	}),
 };
