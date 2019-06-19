@@ -6,16 +6,13 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
 			m(460, {	-- Shadowglen
-				n(-25, {	-- Pet Battle
-					["f"] = 101,
-					["g"] = {
-						p(507, {	-- Crested Owl
-							["crs"] = { 62242 },	-- Crested Owl
-						}),
-						p(447, {	-- Fawn
-							["crs"] = { 61165 },	-- Fawn
-						}),
-					},
+				filter(101, {	-- Pet Battle
+					p(507, {	-- Crested Owl
+						["crs"] = { 62242 },	-- Crested Owl
+					}),
+					p(447, {	-- Fawn
+						["crs"] = { 61165 },	-- Fawn
+					}),
 				}),
 			}),
 		}),
