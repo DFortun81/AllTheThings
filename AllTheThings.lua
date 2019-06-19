@@ -10979,6 +10979,8 @@ end)();
 		885,	-- Antoran Wastes
 		830,	-- Krokuun
 		882,	-- Mac'Aree
+		1355,	-- Nazjatar
+		1462,	-- Mechagon Island
 	};
 	app:GetWindow("WorldQuests", UIParent, function(self)
 		if not self.initialized then
