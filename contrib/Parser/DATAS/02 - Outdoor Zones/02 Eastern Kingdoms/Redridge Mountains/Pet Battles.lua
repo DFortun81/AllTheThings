@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
 				}),

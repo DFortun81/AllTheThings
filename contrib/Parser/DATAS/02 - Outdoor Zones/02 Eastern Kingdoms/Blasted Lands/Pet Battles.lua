@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-25,  {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),

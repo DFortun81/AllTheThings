@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(411, {	-- Baby Ape
 					["description"]	= "This wild pet can be found on Jaguero Isle in The Cape of Stranglethorn. It only spawns when it's raining on the island, but this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the isle.",
 				}),	

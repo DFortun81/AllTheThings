@@ -61,7 +61,7 @@ _.Zones =
 						["coord"] = { 43.8, 57.2 },
 					}),
 				}),
-				n(-25,  {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					q(31974, {	-- Goz Banefury
 						["qg"] = 66822,	-- Goz Banefury
 						["coord"] = { 56.6, 56.8, 241 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			n(-25,  {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(648, {	-- Huge Toad
 					["crs"] = { 61368 },	-- Huge Toad
 				}),

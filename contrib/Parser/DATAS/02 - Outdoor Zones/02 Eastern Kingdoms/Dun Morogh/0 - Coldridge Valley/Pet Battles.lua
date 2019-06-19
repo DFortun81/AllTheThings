@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
 			m(427,  {	-- Coldridge Valley
-				n(-25, {	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(441, {	-- Alpine Hare
 						["crs"] = { 61690 },	-- Alpine Hare
 					}),

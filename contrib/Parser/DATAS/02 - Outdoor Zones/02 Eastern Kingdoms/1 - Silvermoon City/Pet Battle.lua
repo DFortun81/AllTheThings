@@ -5,19 +5,16 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
-			n(-25, { 	-- Pet Battle
-				{	-- Cat
-					["speciesID"] = 459,	-- Cat
+			filter(101, { 	-- Pet Battle
+				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
-				},
-				{	-- Mouse		
-					["speciesID"] = 385,	-- Mouse
+				}),
+				p(385, {	-- Mouse
 					["crs"] = { 61143 },	-- Mouse
-				},
-				{	-- Rabbit
-					["speciesID"] = 378,	-- Rabbit
+				}),
+				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
-				},
+				}),
 			}),
 		}),
 	}),
