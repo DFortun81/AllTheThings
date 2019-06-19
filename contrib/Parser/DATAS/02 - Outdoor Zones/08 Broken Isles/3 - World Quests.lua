@@ -25,14 +25,6 @@ _.Zones =
 							},
 						},
 						{
-							["questID"] = 41668,	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-							["qg"] = 32725,	-- Warmage Silva
-							["repeatable"] = true,
-							["groups"] = {
-								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3]
-							},
-						},
-						{
 							["questID"] = 41666,	-- Vantus Rune Work Order: Nythendra
 							["qg"] = 106904,	-- Valdemar Stormseeker <Valarjar Emissary>
 							["repeatable"] = true,

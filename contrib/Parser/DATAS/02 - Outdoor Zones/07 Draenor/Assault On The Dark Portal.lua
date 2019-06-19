@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		n(-356, {	-- Assault on the Dark Portal
-			["groups"] = {
+			["achievementID"] = 8922,
+			["description"] = "|cff66ccffThe Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.|r",
+			["mapID"] = 577,
+			["maps"] = { 578 },	-- Umbral Halls
+			["lvl"] = 90,
+			["g"] = {
 				n(-17, {	-- Quests
 				--[[
 				tracking quests:
@@ -32,7 +37,7 @@ _.Zones =
 						["qg"] = 78558,	-- Archmage Khadgar
 						["coord"] = { 54.6, 48.2, 577 },
 						["sourceQuest"] = 34392,	-- Onslaught's End
-						["groups"] = {
+						["g"] = {
 							i(112387),	-- Iron Horde Bolt-Thrower
 							i(112388),	-- Iron Horde Tomahawk
 							i(112389),	-- Iron Horde Warcudgel
@@ -54,7 +59,7 @@ _.Zones =
 						["qg"] = 78559,	-- Archmage Khadgar
 						["coord"] = { 60.2, 56.3, 577 },
 						["sourceQuest"] = 34420,	-- The Cost of War
-						["groups"] = {
+						["g"] = {
 							i(112431),	-- Hollowheart Legguards
 							i(112432),	-- Hollowheart Chain Leggings
 							i(112433),	-- Hollowheart Trousers
@@ -117,7 +122,7 @@ _.Zones =
 						["qg"] = 78560,	-- Archmage Khadgar
 						["coord"] = { 73.0, 38.1, 577 },
 						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
-						["groups"] = {
+						["g"] = {
 							i(112440),	-- Slavebreaker Robes
 							i(112441),	-- Slavebreaker Tunic
 							i(112442),	-- Slavebreaker Chainmail
@@ -136,7 +141,7 @@ _.Zones =
 						["coord"] = { 80.7, 45.3, 578 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["groups"] = {
+						["g"] = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112663),	-- Voidgazer Headguard
@@ -149,7 +154,7 @@ _.Zones =
 						["coord"] = { 81.5, 44.7, 578 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["groups"] = {
+						["g"] = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112663),	-- Voidgazer Headguard
@@ -207,7 +212,7 @@ _.Zones =
 						["coord"] = { 48.6, 14.2, 577 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34436,	-- Keli'dan the Breaker
-						["groups"] = {
+						["g"] = {
 							i(112668),	-- Quarrier's Spaulders
 							i(112669),	-- Quarrier's Shoulderplates
 							i(112670),	-- Quarrier's Mantle
@@ -220,7 +225,7 @@ _.Zones =
 						["coord"] = { 50.0, 13.3, 577 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34741,	-- Keli'dan the Breaker
-						["groups"] = {
+						["g"] = {
 							i(112668),	-- Quarrier's Spaulders
 							i(112669),	-- Quarrier's Shoulderplates
 							i(112670),	-- Quarrier's Mantle
@@ -305,13 +310,6 @@ _.Zones =
 						},
 					},
 				}),
-			},
-			["lvl"] = 90,
-			["achievementID"] = 8922,
-			["description"] = "|cff66ccffThe Assault on the Dark Portal is the instanced version of Tanaan Valley, which is the subzone of Tanaan Jungle and a location of Warlords of Draenor introductory experience. Once the intro is completed, players have no means of returning to the area, similiar to Plaguelands: The Scarlet Enclave for death knights.|r",
-			["mapID"] = 577,
-			["maps"] = {
-				578,	-- Umbral Halls
 			},
 		}),
 	}),

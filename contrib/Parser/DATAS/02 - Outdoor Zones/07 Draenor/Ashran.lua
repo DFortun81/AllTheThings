@@ -3,9 +3,14 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(572, { 	-- Draenor
+	m(572, {	-- Draenor
 		m(588, {	-- Ashran
-			["groups"] = {
+			["achievementID"] = 9102,
+			["description"] = "|cff66ccffAshran is a level 100 instanced cross-realm end game world PvP zone found in eastern Draenor. The name also refers to the greater Ashran zone, including the Alliance and Horde capitals, which are set outside of the PvP zone itself.|r",
+		--	["maps"] = {622, 624},	-- We want to show Ashran in both maps.
+			["lvl"] = 100,	
+			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
+			["g"] = {
 				n(-17, {	-- Quests
 					qa(35872, {	-- A Bunch of Artifact Fragments
 						["repeatable"] = true,
@@ -83,9 +88,9 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					qa(38925, {	-- Ashran Dominance
-						["groups"] = {
+						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["groups"] = {
+								["g"] = {
 									i(135578),	-- Battle Touched Banner
 									i(135568),	-- Battle Touched Blood of the Fallen
 									i(135574),	-- Battle Touched Blossom
@@ -123,9 +128,9 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					qh(38923, {	-- Ashran Dominance
-						["groups"] = {
+						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["groups"] = {
+								["g"] = {
 									i(135578),	-- Battle Touched Banner
 									i(135568),	-- Battle Touched Blood of the Fallen
 									i(135574),	-- Battle Touched Blossom
@@ -169,9 +174,9 @@ _.Zones =
 						["sourceQuest"] = 36626,	-- Host Howell
 					}),
 					qa(39096, {	-- Slay Them All!
-						["groups"] = {
+						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["groups"] = {
+								["g"] = {
 									i(135578),	-- Battle Touched Banner
 									i(135568),	-- Battle Touched Blood of the Fallen
 									i(135574),	-- Battle Touched Blossom
@@ -209,9 +214,9 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					qh(39090, {	-- Slay Them All!
-						["groups"] = {
+						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-								["groups"] = {
+								["g"] = {
 									i(135578),	-- Battle Touched Banner
 									i(135568),	-- Battle Touched Blood of the Fallen
 									i(135574),	-- Battle Touched Blossom
@@ -249,7 +254,7 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					i(112128, {	-- Blood Elf Ear
-	--[[				["groups"] = {
+	--[[				["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -343,7 +348,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112121, {	-- Draenei Tail
-		--[[				["groups"] = {
+		--[[				["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -454,7 +459,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(112126, {	-- Dwarf Spine
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -565,7 +570,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(112015, {	-- Forsaken Brains
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -659,7 +664,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112125, {	-- Goblin Nose
-				--[[		["groups"] = {
+				--[[		["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -753,7 +758,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112131, {	-- Human Bone Chip
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -864,7 +869,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(112122, {	-- Orc Tooth
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -958,9 +963,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112113, {	-- Pandaren Hide
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
-								["groups"] = {
+								["g"] = {
 									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 									i(126254),	-- Warmongering Aspirant's Accolade of Dominance
 									i(126257),	-- Warmongering Aspirant's Accolade of Endurance
@@ -1050,7 +1055,7 @@ _.Zones =
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
-								["groups"] = {
+								["g"] = {
 									i(134705),	-- Surging Chain Leggings
 									i(126730),	-- Warmongering Aspirant's Accolade of Conquest
 									i(126253),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1161,7 +1166,7 @@ _.Zones =
 						["repeatable"] = true,
 					}),
 					i(112124, {	-- Severed Night Elf Head
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1272,7 +1277,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(112123, {	-- Tauren Hoof
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -1366,7 +1371,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112120, {	-- Troll Feet
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128216, {	-- Dented Ashmaul Strongbox
 								i(126253),	-- Warmongering Aspirant's Accolade of Conquest
 								i(126254),	-- Warmongering Aspirant's Accolade of Dominance
@@ -1460,7 +1465,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(112127, {	-- Tuft of Gnome Hair
-				--[[		["groups"] = {
+				--[[		["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1571,7 +1576,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(112119, {	-- Worgen Snout
-			--[[			["groups"] = {
+			--[[			["g"] = {
 							i(128215, {	-- Dented Ashmaul Strongbox
 								i(134705),	-- Surging Chain Leggings
 								i(126730),	-- Warmongering Aspirant's Accolade of Conquest
@@ -1714,9 +1719,9 @@ _.Zones =
 				--]]
 				n(-2, {		-- Vendors
 					na(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
-						["groups"] = {
+						["g"] = {
 							currency(823, {	-- Apexis Crystal
-								["groups"] = {
+								["g"] = {
 									un(2, i(116776)),	-- Pale Thorngrazer (Rep removed from Medallion of the Legion in hotfix for 8.0)
 								},
 							}),
@@ -1730,7 +1735,7 @@ _.Zones =
 						i(115518),	-- Vol'jin's Spear Tabard
 					}),
 					na(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
-						["groups"] = {
+						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
@@ -2296,7 +2301,7 @@ _.Zones =
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
 					nh(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
-						["groups"] = {
+						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
 							un(2, i(115979)),	-- Primal Gladiator's Greatcloak
@@ -2875,11 +2880,6 @@ _.Zones =
 				}),
 				i(128216),	-- Dented Ashmaul Strongbox A S3
 			},
-			--["maps"] = {622, 624},	-- We want to show Ashran in both maps.
-			["lvl"] = 100,	
-			["achievementID"] = 9102,
-			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
-			["description"] = "|cff66ccffAshran is a level 100 instanced cross-realm end game world PvP zone found in eastern Draenor. The name also refers to the greater Ashran zone, including the Alliance and Horde capitals, which are set outside of the PvP zone itself.|r",				
 		}),	
 	}),
 };

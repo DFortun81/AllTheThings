@@ -29,6 +29,7 @@ _.NeverImplemented =
 		q(32751),	-- Primordious Dead (killed Primordius on normal in ToT — again, "Primordius" is spelled wrong in the tracking quest title)
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
+		q(32923),	-- Short-Supply Reward (Galleon bonus roll)
 		q(32919),	-- Short-Supply Reward (Nalak bonus roll)
 		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
 		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
