@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(641),		-- Arctic Hare
 				p(234),		-- Gundrak Hatchling
 				p(387),		-- Snake
