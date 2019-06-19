@@ -208,405 +208,403 @@ _.Zones =
 						["description"] = "Vindicaar, Krokruun",
 					}),
 				}),
-				n(-25, {	-- Pet Battle
-					["g"] = {
-						ach(12088, {	-- Anomalous Animals of Argus
-							["g"] = {
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 3, 		-- Baneglow
-									["coord"] = { 43.0, 52.0 },
-								},
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 5, 		-- Deathscreech
-									["coord"] = { 29.6, 57.9 },
-								},
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 2, 		-- Foulclaw
-									["coord"] = { 51.5, 63.8 },
-								},
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 6, 		-- Gnasher
-									["coord"] = { 39.6, 66.5 },
-								},
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 4, 		-- Retch
-									["coord"] = { 58.3, 29.7 },
-								},
-								{
-									["achievementID"] = 12088,	-- Anomalous Animals of Argus
-									["criteriaID"] = 1, 		-- Ruinhoof
-									["coord"] = { 66.7, 72.6 },
-								},
+				filter(101, {	-- Pet Battle
+					ach(12088, {	-- Anomalous Animals of Argus
+						["g"] = {
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 3, 		-- Baneglow
+								["coord"] = { 43.0, 52.0 },
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						}),
-						ach(12100, {	-- Family Fighter
-							["g"] = {
-								i(153040, {	-- Felclaw Marsuul
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12089, {	-- Aquatic Assault
-									["g"]	= {
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12089,	-- Aquatic Assault
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12091, {	-- Beast Blitz
-									["g"] = {
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12091,	-- Beast Blitz
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12092, {	-- Critical Critters
-									["g"]	= {
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12092,	-- Critical Critters
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12093, {	-- Draconic Destruction
-									["g"]	= {
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12093,	-- Draconic Destruction
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12094, {	-- Elemental Escalation
-									["g"] = {
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12094,	-- Elemental Escalation
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12095, {	-- Fierce Fliers
-									["g"] = {
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12095,	-- Fierce Fliers
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12096, {	-- Humanoid Havoc
-									["g"] = {
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12096,	-- Humanoid Havoc
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12097, {	-- Magical Mayhem
-									["g"]	= {
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12097,	-- Magical Mayhem
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12098, {	-- Mechanical Melee
-									["g"] = {
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12098,	-- Mechanical Melee
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
-								ach(12099, {	-- Unstoppable Undead
-									["g"]	= {
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 3, 		-- Baneglow
-											["coord"] = { 43.0, 52.0 },
-										},
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 5, 		-- Deathscreech
-											["coord"] = { 29.6, 57.9 },
-										},
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 2, 		-- Foulclaw
-											["coord"] = { 51.5, 63.8 },
-										},
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 6, 		-- Gnasher
-											["coord"] = { 39.6, 66.5 },
-										},
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 4, 		-- Retch
-											["coord"] = { 58.3, 29.7 },
-										},
-										{
-											["achievementID"] = 12099,	-- Unstoppable Undead
-											["criteriaID"] = 1, 		-- Ruinhoof
-											["coord"] = { 66.7, 72.6 },
-										},
-									},
-									["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-								}),
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 5, 		-- Deathscreech
+								["coord"] = { 29.6, 57.9 },
 							},
-							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-						}),
-						p(2123),	-- Bile Larva
-						p(2124), 	-- Bilescourge
-						p(2127), 	-- Flickering Argunite
-					}
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 2, 		-- Foulclaw
+								["coord"] = { 51.5, 63.8 },
+							},
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 6, 		-- Gnasher
+								["coord"] = { 39.6, 66.5 },
+							},
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 4, 		-- Retch
+								["coord"] = { 58.3, 29.7 },
+							},
+							{
+								["achievementID"] = 12088,	-- Anomalous Animals of Argus
+								["criteriaID"] = 1, 		-- Ruinhoof
+								["coord"] = { 66.7, 72.6 },
+							},
+						},
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					}),
+					ach(12100, {	-- Family Fighter
+						["g"] = {
+							i(153040, {	-- Felclaw Marsuul
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12089, {	-- Aquatic Assault
+								["g"]	= {
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12089,	-- Aquatic Assault
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12091, {	-- Beast Blitz
+								["g"] = {
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12091,	-- Beast Blitz
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12092, {	-- Critical Critters
+								["g"]	= {
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12092,	-- Critical Critters
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12093, {	-- Draconic Destruction
+								["g"]	= {
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12093,	-- Draconic Destruction
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12094, {	-- Elemental Escalation
+								["g"] = {
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12094,	-- Elemental Escalation
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12095, {	-- Fierce Fliers
+								["g"] = {
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12095,	-- Fierce Fliers
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12096, {	-- Humanoid Havoc
+								["g"] = {
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12096,	-- Humanoid Havoc
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12097, {	-- Magical Mayhem
+								["g"]	= {
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12097,	-- Magical Mayhem
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12098, {	-- Mechanical Melee
+								["g"] = {
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12098,	-- Mechanical Melee
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+							ach(12099, {	-- Unstoppable Undead
+								["g"]	= {
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 3, 		-- Baneglow
+										["coord"] = { 43.0, 52.0 },
+									},
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 5, 		-- Deathscreech
+										["coord"] = { 29.6, 57.9 },
+									},
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 2, 		-- Foulclaw
+										["coord"] = { 51.5, 63.8 },
+									},
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 6, 		-- Gnasher
+										["coord"] = { 39.6, 66.5 },
+									},
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 4, 		-- Retch
+										["coord"] = { 58.3, 29.7 },
+									},
+									{
+										["achievementID"] = 12099,	-- Unstoppable Undead
+										["criteriaID"] = 1, 		-- Ruinhoof
+										["coord"] = { 66.7, 72.6 },
+									},
+								},
+								["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+							}),
+						},
+						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					}),
+					p(2123),	-- Bile Larva
+					p(2124), 	-- Bilescourge
+					p(2127), 	-- Flickering Argunite
 				}),
 				n(-17, {	-- Quests
 					["g"] = {
