@@ -9,19 +9,67 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
 			n(-17, {	-- Quests
+				q(6922, {	-- Baron Aquanis
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(16886)),	-- Outlaw Sabre
+						un(2, i(16887)),	-- Witch's Finger
+					},
+				}),
+				q(1200, {	-- Blackfathom Villainy
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(7002)),		-- Arctic Buckler
+						un(2, i(7001)),		-- Gravestone Scepter
+					},
+				}),
+				q(6561, {	-- Blackfathom Villainy
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(7002)),		-- Arctic Buckler
+						un(2, i(7001)),		-- Gravestone Scepter
+					},
+				}),
 				o(177964, {	-- Fathom Stone
 					["u"] = 43,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						qh(908, {	-- Amongst the Ruins
+						q(908, {	-- Amongst the Ruins
 							["u"] = 40,
+							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["sourceQuest"] = 6563,	-- The Essence of Aku'Mai
 						}),
 					},
 				}),
-				qa(34672, {	-- The Rise of Aku'mai
+				q(26885, {	-- Knowledge in the Deeps
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(56660)),	-- Dusk-Stained Cloak
+						un(2, i(56658)),	-- Eventide Bow
+						un(2, i(56659)),	-- Gloaming Band
+						un(2, i(6743)),		-- Sustaining Ring
+					},
+				}),
+				q(1275, {	-- Researching the Corruption
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(56682)),	-- Band of the Skull Crusher
+						un(2, i(7003)),		-- Beetle Clasps
+						un(2, i(56679)),	-- Dissector
+						un(2, i(7004)),		-- Prelacy Cape
+						un(2, i(56681)),	-- Searching Wand
+						un(2, i(56680)),	-- Shadestar Mace
+					},
+				}),
+				q(34672, {	-- The Rise of Aku'mai
 					["qg"] = 75606,	-- Sentinel Aluwyn
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65986),	-- Shield Against the Evil Presence
 						i(65962),	-- Thaelrid's Greaves
@@ -30,14 +78,26 @@ _.Instances = { tier(1, {	-- Classic
 						i(131713),	-- Scales of Aku'mai
 					},
 				}),
-				qh(34673, {	-- The Rise of Aku'mai
+				q(34673, {	-- The Rise of Aku'mai
 					["qg"] = 74409,	-- Zeya
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(66030),	-- Plates of Aku'mai
 						i(66039),	-- Shield Against the Evil Presence
 						i(66021),	-- Blackfathom Leggings
 						i(66012),	-- Je'neu's Robes
 						i(131714),	-- Blackfathom Chain Leggings
+					},
+				}),
+				q(26883, {	-- Twilight Falls
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(56699)),	-- Aluwyn's Legguards
+						un(2, i(56697)),	-- Blackfathom Mace
+						un(2, i(56698)),	-- Gift of the Enigmatic Tree
+						un(1, i(7000)),		-- Heartwood Girdle
+						un(2, i(6998)),		-- Nimbus Boots
 					},
 				}),
 			}),
@@ -300,27 +360,18 @@ _.Instances = { tier(1, {	-- Classic
 				i(120163),	-- Thruk's Fishing Rod
 				i(151437),	-- Hook Charm Necklace
 			})),
-			{	-- Guardian of the Deep
-				["encounterID"] = 447,	-- Guardian of the Deep
+			e(447, {	-- Guardian of the Deep
 				["crs"] = {
 					75410,	-- Guardian of the Deep [Netted by Thruk]
 					74508,	-- Guardian of the Deep [Fight location]
 				},
 				["g"] = {
-					{	-- Bite of Serra'kis
-						["itemID"] = 6904,	-- Bite of Serra'kis
-					},
-					{	-- Serra'kis Scale Wraps
-						["itemID"] = 132555,	-- Serra'kis Scale Wraps
-					},
-					{	-- Bands of Serra'kis
-						["itemID"] = 6902,	-- Bands of Serra'kis
-					},
-					{	-- Glowing Thresher Cape
-						["itemID"] = 6901,	-- Glowing Thresher Cape
-					},
+					i(6904),	-- Bite of Serra'kis
+					i(132555),	-- Serra'kis Scale Wraps
+					i(6902),	-- Bands of Serra'kis
+					i(6901),	-- Glowing Thresher Cape
 				},
-			},
+			}),
 			cr(74988, e(1144, {	-- Executioner Gore
 				i(120167),	-- Bloody Twilight Cloak
 				i(120166),	-- Gorestained Garb
@@ -340,43 +391,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(6910),	-- Leech Pants
 				i(151441),	-- Aku'mai Worshipper's Greatboots
 			})),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, qh(6922, {	-- Baron Aquanis
-						un(2, i(16886)),	-- Outlaw Sabre
-						un(2, i(16887)),	-- Witch's Finger
-					})),
-					un(40, qa(1200, {	-- Blackfathom Villainy
-						un(2, i(7002)),		-- Arctic Buckler
-						un(2, i(7001)),		-- Gravestone Scepter
-					})),
-					un(40, qh(6561, {	-- Blackfathom Villainy
-						un(2, i(7002)),		-- Arctic Buckler
-						un(2, i(7001)),		-- Gravestone Scepter
-					})),
-					un(40, qa(26885, {	-- Knowledge in the Deeps
-						un(2, i(56660)),	-- Dusk-Stained Cloak
-						un(2, i(56658)),	-- Eventide Bow
-						un(2, i(56659)),	-- Gloaming Band
-						un(2, i(6743)),		-- Sustaining Ring
-					})),
-					un(40, qa(1275, {	-- Researching the Corruption
-						un(2, i(56682)),	-- Band of the Skull Crusher
-						un(2, i(7003)),		-- Beetle Clasps
-						un(2, i(56679)),	-- Dissector
-						un(2, i(7004)),		-- Prelacy Cape
-						un(2, i(56681)),	-- Searching Wand
-						un(2, i(56680)),	-- Shadestar Mace
-					})),
-					un(40, qa(26883, {	-- Twilight Falls
-						un(2, i(56699)),	-- Aluwyn's Legguards
-						un(2, i(56697)),	-- Blackfathom Mace
-						un(2, i(56698)),	-- Gift of the Enigmatic Tree
-						un(1, i(7000)),		-- Heartwood Girdle
-						un(2, i(6998)),		-- Nimbus Boots
-					})),
-				}),
-			}),
 		},
 	}),
 })};
