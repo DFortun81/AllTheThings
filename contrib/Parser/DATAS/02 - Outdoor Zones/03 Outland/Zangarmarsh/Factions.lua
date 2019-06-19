@@ -10,31 +10,31 @@ _.Zones =
 					["creatureID"] = 17904,	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 					["g"] = {
 						n(-17,  {	-- Quests
-							q(9802, {	-- Plants of Zangarmarsh
-								["qg"] = 17909,	-- Lauranna Thar'well
-								["coord"] = { 80.3, 64.2, 102 },
-								["g"] = {
-									i(24402)	-- Package of Identified Plants
-								},
-							}),
 							q(9784, {	-- Identify Plant Parts
 								["qg"] = 17909,	-- Lauranna Thar'well
 								["coord"] = { 80.3, 64.2, 102 },
 								["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
-								["description"] = "This quest is repeatable until you are Honored with Cenarion Expedition.",
 								["repeatable"] = true,
+								["maxReputation"] = HONORED,
 								["g"] = {
-									i(24402)	-- Package of Identified Plants
+									i(24402),	-- Package of Identified Plants
 								},
 							}),
 							i(24402, {	-- Package of Identified Plants
 								i(24407, {	-- Uncatalogued Species
 									q(9875, {	-- Uncatalogued Species
 										["sourceQuest"] = 9784,	-- Identify Plant Parts
-										["description"] = "Only available until you are Honored with Cenarion Expedition.",
 										["repeatable"] = true,
+										["maxReputation"] = HONORED,
 									}),
 								}),
+							}),
+							q(9802, {	-- Plants of Zangarmarsh
+								["qg"] = 17909,	-- Lauranna Thar'well
+								["coord"] = { 80.3, 64.2, 102 },
+								["g"] = {
+									i(24402),	-- Package of Identified Plants
+								},
 							}),
 						}),
 						n(-2,   {	-- Vendors
@@ -97,33 +97,33 @@ _.Zones =
 					["creatureID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
 					["g"] = {
 						n(-17, {	-- Quests
-							q(9809, {	-- More Glowcaps 
-								["qg"] = 17924,	-- Mshii'fn
-								["coord"] = { 19.7, 52.1, 102 },
-								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
-								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-								["repeatable"] = true,	-- Not possible if you reached friendly or higher
-							}),
-							q(9742, {	-- More Spore Sacs
-								["qg"] = 17923,	-- Fahssn
-								["coord"] = { 19.0, 63,4, 102 },
-								["sourceQuest"] = 9739,	-- The Sporelings' Plight
-								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-								["repeatable"] = true,	-- Not possible if you reached friendly or higher
-							}),
-							q(9744, {	-- More Tendrils!
-								["qg"] = 17923,	-- Fahssn
-								["coord"] = { 19.0, 63,4, 102 },
-								["sourceQuest"] = 9743,	-- Natural Enemies
-								["description"] = "Unavailable after you reach Friendly with Sporeggar.",
-								["repeatable"] = true,	-- Not possible if you reached friendly or higher
-							}),
 							q(9807, {	-- More Fertile Spores
 								["qg"] = 17925,	-- Gshaff
 								["coord"] = { 19.1, 49.4, 102 },
 								["sourceQuest"] = 9806,	-- Fertile Spores
-								["description"] = "Unavailable until you reach Friendly with Sporeggar.",
-								["repeatable"] = true,	-- Not possible if you reached friendly or higher
+								["repeatable"] = true,
+								["maxReputation"] = FRIENDLY,
+							}),
+							q(9809, {	-- More Glowcaps 
+								["qg"] = 17924,	-- Mshii'fn
+								["coord"] = { 19.7, 52.1, 102 },
+								["sourceQuest"] = 9808,	-- Glowcap Mushrooms
+								["repeatable"] = true,
+								["maxReputation"] = FRIENDLY,
+							}),
+							q(9742, {	-- More Spore Sacs
+								["qg"] = 17923,	-- Fahssn
+								["coord"] = { 19.0, 63.4, 102 },
+								["sourceQuest"] = 9739,	-- The Sporelings' Plight
+								["repeatable"] = true,
+								["maxReputation"] = FRIENDLY,
+							}),
+							q(9744, {	-- More Tendrils!
+								["qg"] = 17923,	-- Fahssn
+								["coord"] = { 19.0, 63.4, 102 },
+								["sourceQuest"] = 9743,	-- Natural Enemies
+								["repeatable"] = true,
+								["maxReputation"] = FRIENDLY,
 							}),
 							q(9727, {	-- Now That We're Still Friends...
 								["qg"] = 17856,	-- Gzhun'tt
@@ -137,47 +137,45 @@ _.Zones =
 								["coord"] = { 18.27, 51.12, 102 },
 								["g"] = {
 									i(24245, {	-- Glowcap
-										["g"] = {
-											i(34478, {	-- Tiny Sporebat
-												["description"] = "Cost: 30 Glowcaps",
-											}),
-											i(31775, {	-- Sporeggar Tabard
-												["description"] = "Cost: 10 Glowcaps",
-											}),
-											i(38229, {	-- Pattern: Mycah's Botanical Bag
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(30156, {	-- Recipe: Clam Bar
-												["description"] = "Cost: 1 Glowcap",
-											}),
-											i(22906, {	-- Recipe: Shrouding Potion
-												["description"] = "Cost: 30 Glowcaps",
-											}),
-											i(22916, {	-- Recipe: Transmute Primal Earth to Water
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(29150, {	-- Hardened Stone Shard
-												["description"] = "Cost: 45 Glowcaps",
-											}),
-											i(25828, {	-- Petrified Lichen Guard
-												["description"] = "Cost: 15 Glowcaps",
-											}),
-											i(29149, {	-- Sporeling's Firestick
-												["description"] = "Cost: 20 Glowcaps",
-											}),
-											i(25827, {	-- Muck-Covered Drape
-												["description"] = "Cost: 25 Glowcaps",
-											}),
-											i(24539, {	-- Marsh Lichen
-												["description"] = "Cost: 2 Glowcaps",
-											}),
-											i(25550, {	-- Redcap Toadstool
-												["description"] = "Cost: 1 Glowcap",
-											}),
-											i(25548, {	-- Tallstalk Mushroom
-												["description"] = "Cost: 1 Glowcap",
-											}),
-										},
+										i(34478, {	-- Tiny Sporebat
+											["description"] = "Cost: 30 Glowcaps",
+										}),
+										i(31775, {	-- Sporeggar Tabard
+											["description"] = "Cost: 10 Glowcaps",
+										}),
+										i(38229, {	-- Pattern: Mycah's Botanical Bag
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(30156, {	-- Recipe: Clam Bar
+											["description"] = "Cost: 1 Glowcap",
+										}),
+										i(22906, {	-- Recipe: Shrouding Potion
+											["description"] = "Cost: 30 Glowcaps",
+										}),
+										i(22916, {	-- Recipe: Transmute Primal Earth to Water
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(29150, {	-- Hardened Stone Shard
+											["description"] = "Cost: 45 Glowcaps",
+										}),
+										i(25828, {	-- Petrified Lichen Guard
+											["description"] = "Cost: 15 Glowcaps",
+										}),
+										i(29149, {	-- Sporeling's Firestick
+											["description"] = "Cost: 20 Glowcaps",
+										}),
+										i(25827, {	-- Muck-Covered Drape
+											["description"] = "Cost: 25 Glowcaps",
+										}),
+										i(24539, {	-- Marsh Lichen
+											["description"] = "Cost: 2 Glowcaps",
+										}),
+										i(25550, {	-- Redcap Toadstool
+											["description"] = "Cost: 1 Glowcap",
+										}),
+										i(25548, {	-- Tallstalk Mushroom
+											["description"] = "Cost: 1 Glowcap",
+										}),
 									}),
 								},
 							}),

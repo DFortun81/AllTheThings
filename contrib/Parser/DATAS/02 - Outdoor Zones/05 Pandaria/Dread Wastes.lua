@@ -5,10 +5,10 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			["lvl"] = 84,
 			["achievementID"] = 6978,
 			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",
-			["groups"] = {
+			["lvl"] = 84,
+			["g"] = {
 				n(-4, { 	-- Achievemeents
 					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
 						crit(9),		-- Hisek the Swarmkeeper
@@ -25,37 +25,37 @@ _.Zones =
 					ach(7284, {	-- Is Another Man's Treasure
 						o(213972, {		-- Blade of the Poisoned Mind
 							["questID"] = 31438,
-							["groups"] = {
+							["g"] = {
 								i(86527),	-- Blade of the Poisoned Mind
 							},
 						}),
 						o(213967, {		-- Blade of the Prime
 							["questID"] = 31433,
-							["groups"] = {
+							["g"] = {
 								i(86522),	-- Blade of the Prime
 							},
 						}),
 						o(213970, {	-- Bloodsoaked Chitin Fragment
 							["questID"] = 31436,
-							["groups"] = {
+							["g"] = {
 								i(86525),	-- Blood Soaked Chiten Fragment
 							},
 						}),
 						o(213969, {		-- Dissector's Staff of Mutation
 							["questID"] = 31435,
-							["groups"] = {
+							["g"] = {
 								i(86524),	-- Dissector's Staff of Mutation
 							},
 						}),
 						o(213966, {	-- Lucid Amulet
 							["questID"] = 31431,
-							["groups"] = {
+							["g"] = {
 								i(86521),	-- Lucid Amulet of the Agile Mind
 							},
 						}),
 						o(213964, {		-- Malik's Stalwart Spear
 							["questID"] = 31430,
-							["groups"] = {
+							["g"] = {
 								i(86520),	-- Malik's Stalwart Spear
 							},
 						}),
@@ -65,19 +65,19 @@ _.Zones =
 						}),
 						o(213968, {		-- Swarming Cleaver of Ka'roz
 							["questID"] = 31434,
-							["groups"] = {
+							["g"] = {
 								i(86523),	-- Swarming Cleaver of Ka'roz
 							},
 						}),
 						o(213971, {	-- Swarmkeeper's Medallion
 							["questID"] = 31437,
-							["groups"] = {
+							["g"] = {
 								i(86526),	-- Swarmkeeper's Medallion
 							},
 						}),
 						o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
 							["questID"] = 31429,
-							["groups"] = {
+							["g"] = {
 								i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
 							},
 						}),
@@ -116,19 +116,19 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Points
 					fp(1070, {	-- Klaxxi'vess, Dread Wastes
-						["coord"] = { 55.8, 34.8 },
+						["coord"] = { 55.8, 34.8, 422 },
 					}),
 					fp(1071, {	-- Soggy's Gamble, Dread Wastes
-						["coord"] = { 56, 70.2 },
+						["coord"] = { 56.0, 70.2, 422 },
 					}),
 					fp(1090, {	-- The Briny Muck, Dread Wastes
-						["coord"] = { 42.6, 55.6 },
+						["coord"] = { 42.6, 55.6, 422 },
 					}),
 					fp(1115, {	-- The Lion's Redoubt, Dread Wastes
-						["coord"] = { 12, 32.8 },
+						["coord"] = { 12.0, 32.8, 422 },
 					}),
 					fp(1072, {	-- The Sunset Brewgarden, Dread Wastes
-						["coord"] = { 50.2, 12.2 },
+						["coord"] = { 50.2, 12.2, 422 },
 					}),
 				}),
 				n(-25, { 	-- Pet Battles
@@ -141,14 +141,14 @@ _.Zones =
 					p(741), 	-- Silent Hedgehog
 					q(31957, {	-- Grand Master Shu
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
 					}),
 					q(32439, {	-- Flowing Pandaren Spirit
+						["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
 						["repeatable"] = true,
-						["description"] = "Must complete the quest Pandaren Spirit Tamer before this Daily becomes available.|r",
-						["groups"] = {
+						["g"] = {
 							i(93147, {	-- Pandaren Spirit Pet Supplies
 								i(89139),	-- Chain Pet Leash
 								i(44820),	-- Red Ribbon Pet Leash
@@ -170,7 +170,7 @@ _.Zones =
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
 					q(31066, {	-- A Cry From Darkness
-						["groups"] = {
+						["g"] = {
 							i(84060),	-- Band of Channeled Whispers
 							i(84061),	-- Ring of Unspeakable Nightmares
 							i(84062),	-- Band of Sudden Dreams
@@ -193,7 +193,7 @@ _.Zones =
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
 					q(31008, {	-- Amber Arms
-						["groups"] = {
+						["g"] = {
 							i(88122),	-- Motherseed Shoes
 							i(88121),	-- Sapfly Shoes
 							i(88120),	-- Withered Wood Shoes
@@ -224,7 +224,7 @@ _.Zones =
 						["qg"] = 62538,	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31090, {	-- Better With Age
-						["groups"] = {
+						["g"] = {
 							i(84635),	-- Amberglow Locket
 							i(84636),	-- Amberglow Choker
 							i(84637),	-- Amberglow Necklace
@@ -234,7 +234,7 @@ _.Zones =
 						["qg"] = 65365,	-- Kor'ik
 					}),
 					q(31681, {	-- Better With Age
-						["groups"] = {
+						["g"] = {
 							i(84635),	-- Amberglow Locket
 							i(84636),	-- Amberglow Choker
 							i(84637),	-- Amberglow Necklace
@@ -252,7 +252,7 @@ _.Zones =
 						["qg"] = 62666,	-- Sapmaster Vu
 					}),
 					q(31069, {	-- Bound With Shade
-						["groups"] = {
+						["g"] = {
 							i(84080),	-- Shadebound Cape
 							i(84081),	-- Vu's Drape
 							i(84082),	-- Sapmaster's Cloak
@@ -354,7 +354,7 @@ _.Zones =
 					}),
 					--q(31679),	-- Extending Our Coverage -- removed as duplicate?
 					q(31465, {	-- Extracting Answers
-						["groups"] = {
+						["g"] = {
 							i(88140),	-- Motherseed Wristwraps
 							i(88139),	-- Sapfly Wristwraps
 							i(88138),	-- Withered Wood Wristwraps
@@ -398,7 +398,7 @@ _.Zones =
 						["qg"] = 63071,	-- Skeer the Bloodseeker
 					}),
 					q(31085, {	-- Fires and Fears of Old
-						["groups"] = {
+						["g"] = {
 							i(84019),	-- Motherseed Treads
 							i(84020),	-- Sapfly Footguards
 							i(84021),	-- Withered Wood Sabatons
@@ -421,7 +421,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31181, {	-- Fresh Pots
-						["groups"] = {
+						["g"] = {
 							i(84001),	-- Motherseed Robe
 							i(84002),	-- Sapfly Tunic
 							i(84003),	-- Withered Wood Armor
@@ -440,7 +440,7 @@ _.Zones =
 					}),
 					o(214062, {	-- Glowing Amber
 						q(31398, {	-- Falling to Pieces
-							["groups"] = {
+							["g"] = {
 								i(84626),	-- Sunset Satin Robe
 								i(84627),	-- Sunset Hide Robes
 								i(84628),	-- Withered Wood Breastplate
@@ -478,7 +478,7 @@ _.Zones =
 						}),
 					}),
 					q(31133, {	-- Kor'thik Aggression
-						["groups"] = {
+						["g"] = {
 							i(84617),	-- Sunset Satin Hood
 							i(84618),	-- Sunset Hide Helm
 							i(84619),	-- Withered Wood Cap
@@ -526,7 +526,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31002, {	-- Nope
-						["groups"] = {
+						["g"] = {
 							i(84037),	-- Motherseed Gloves
 							i(84038),	-- Sapfly Gloves
 							i(84039),	-- Withered Wood Gauntlets
@@ -569,7 +569,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31782, {	-- Overthrone
-						["groups"] = {
+						["g"] = {
 							i(84028),	-- Motherseed Cord
 							i(84029),	-- Sapfly Belt
 							i(84030),	-- Withered Wood Waistguard
@@ -587,7 +587,7 @@ _.Zones =
 						["sourceQuests"] = { 31003 },	-- Psycho Mantid
 					}),
 					q(31083, {	-- Promises of Gold
-						["groups"] = {
+						["g"] = {
 							i(88417),	-- Gokk'lok's Shell
 						},
 						["qg"] = 62767,	-- Gokk'lok
@@ -612,7 +612,7 @@ _.Zones =
 						["qg"] = 63349,	-- Deck Boss Arie
 					}),
 					q(31072, {	-- Rending Daggers
-						["groups"] = {
+						["g"] = {
 							i(88131),	-- Motherseed Handwraps
 							i(88130),	-- Sapfly Handwraps
 							i(88129),	-- Withered Wood Handguards
@@ -626,7 +626,7 @@ _.Zones =
 						["qg"] = 62667,	-- Lya of Ten Songs
 					}),
 					q(31091, {	-- Reunited
-						["groups"] = {
+						["g"] = {
 							i(83983),	-- Motherseed Hood
 							i(83984),	-- Sapfly Helm
 							i(83985),	-- Withered Wood Helm
@@ -649,7 +649,7 @@ _.Zones =
 					}),
 					o(212389, {	-- Scroll of Auspice
 						q(31068, {	-- Sacred Recipe
-							["groups"] = {
+							["g"] = {
 								i(84071),	-- Charm of Ten Songs
 								i(84072),	-- Braid of Ten Songs
 								i(84073),	-- Knot of Ten Songs
@@ -668,7 +668,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31612, {	-- Shadow of the Empire
-						["groups"] = {
+						["g"] = {
 							i(90859),	-- Seal of the Lucid
 							i(90860),	-- Seal of the Unscathed
 							i(90862),	-- Seal of the Bloodseeker
@@ -706,7 +706,7 @@ _.Zones =
 						["qg"] = 62666,	-- Sapmaster Vu
 					}),
 					q(31606, {	-- The Dissector Wakens
-						["groups"] = {
+						["g"] = {
 							i(84046),	-- Motherseed Cuffs
 							i(84047),	-- Sapfly Bindings
 							i(84048),	-- Withered Wood Armbands
@@ -738,7 +738,7 @@ _.Zones =
 						["sourceQuests"] = { 31730 },	-- A Not So Friendly Request
 					}),
 					q(31079, {	-- The Horror Comes A-Rising
-						["groups"] = {
+						["g"] = {
 							i(84087),	-- Kyparitic Staff
 							i(84088),	-- Kyparitic Clawmace
 							i(84089),	-- Axe of the Rikkitun
@@ -753,7 +753,7 @@ _.Zones =
 						["qg"] = 62772,	-- Boggeo
 					}),
 					q(31006, {	-- The Klaxxi Council
-						["groups"] = {
+						["g"] = {
 							i(84055),	-- Gurthan Locket
 							i(84056),	-- Council Choker
 							i(84057),	-- Swormborn Necklace
@@ -771,7 +771,7 @@ _.Zones =
 						["sourceQuests"] = { 31091 },	-- Reunited
 					}),
 					q(31190, {	-- The Mariner's Revenge
-						["groups"] = {
+						["g"] = {
 							i(83992),	-- Motherseed Mantle
 							i(83993),	-- Sapfly Spaulders
 							i(83994),	-- Withered Wood Spaulder
@@ -791,7 +791,7 @@ _.Zones =
 						}),
 					}),
 					q(31211, {	-- The Poisoned Mind
-						["groups"] = {
+						["g"] = {
 							i(84065),	-- Krik'thik Band
 							i(84066),	-- Loop of the Poisoned Mind
 							i(84067),	-- Xaril's Ring
@@ -801,7 +801,7 @@ _.Zones =
 						["qg"] = 62151,	-- Xaril the Poisoned Mind
 					}),
 					q(31026, {	-- The Root of the Problem
-						["groups"] = {
+						["g"] = {
 							i(84075),	-- Relic of Kypari Zar
 							i(84076),	-- Sigil of Kypari Zar
 							i(84077),	-- Emblem of Kypari Zar
@@ -816,7 +816,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31179, {	-- The Scent of Blood
-						["groups"] = {
+						["g"] = {
 							i(84095),	-- Bloodseeker's Axe
 							i(84096),	-- Bloodseeker's Mace
 							i(84097),	-- Shield of the Wakener
@@ -851,7 +851,7 @@ _.Zones =
 						["qg"] = 62202,	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31185, {	-- Walking Dog
-						["groups"] = {
+						["g"] = {
 							i(84010),	-- Motherseed Leggings
 							i(84011),	-- Sapfly Legguards
 							i(84012),	-- Withered Wood Kilt
@@ -877,9 +877,9 @@ _.Zones =
 					}),
 				}),
 				n(-16, { 	-- Rares
-					n(50821, { 		-- Ai-Li Skymirror
+					n(50821, {	-- Ai-Li Skymirror
 						["coord"] = { 34.8, 23.2, 422 },
-						["groups"] = {
+						["g"] = {
 							i(87629),	-- Chestplate of Manifest
 							i(86589), 	-- Ai-Li's Skymirror
 							i(87632),	-- Fearsworn Chestpiece
@@ -894,16 +894,16 @@ _.Zones =
 					}),
 					n(66935, {	-- Clamstok
 						["coord"] = { 27, 69.2, 422 },
-						["groups"] = {
+						["g"] = {
 							i(90170, {	-- Clamstok's Clamshell
 								i(90172),	-- Clamshell Band
 								i(90087),	-- Lobstmourne
 							}),
 						},
 					}),
-					n(50334, { 		-- Dak the Breaker
+					n(50334, {	-- Dak the Breaker
 						["coord"] = { 25.2, 28.6, 422 },
-						["groups"] = {
+						["g"] = {
 							i(86567),	-- Yaungol Wind Chime
 							i(87635),	-- Amber-Starched Robes
 							i(87627),	-- Kunchong Carapace Chestguard
@@ -916,13 +916,13 @@ _.Zones =
 							i(87628),	-- Spinebreaker Chestpiece
 						},
 					}),
-					n(50739, { 		-- Gar'lok
+					n(50739, {	-- Gar'lok
 						["coords"] = {
 							{ 38.8, 29.6, 422 },
 							{ 35.6, 30.8, 422 },
 							{ 39.2, 41.8, 422 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(86578),	-- Eternal Warrior's Sigil
 							i(87628),	-- Spinebreaker Chestpiece
 							i(87627),	-- Kunchong Carapace Chestguard
@@ -935,10 +935,10 @@ _.Zones =
 							i(87633),	-- Sharkskin Robe
 						},
 					}),
-					n(50836, { 		-- Ik-Ik the Nimble
+					n(50836, {	-- Ik-Ik the Nimble
 						["coord"] = { 55.4, 63.4, 422 },
 						["description"] = "Burrow entrance at 54.9, 65.7",
-						["groups"] = {
+						["g"] = {
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars
 							i(86593), 	-- Hozen Beach Ball
@@ -951,9 +951,9 @@ _.Zones =
 							i(87633),	-- Sharkskin Armor
 						},
 					}),
-					n(50347, { 		-- Karr the Darkener
+					n(50347, {	-- Karr the Darkener
 						["coord"] = { 71.8, 37.6, 422 },
-						["groups"] = {
+						["g"] = {
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars
 							i(87635),	-- Amber-Starched Robes
@@ -966,12 +966,12 @@ _.Zones =
 							i(86564),	-- Imbued Jade Fragment
 						},
 					}),
-					n(50356, { 		-- Krol the Blade
+					n(50356, {	-- Krol the Blade
 						["coords"] = {
 							{ 74.2, 20.4, 422 },
 							{ 72.8, 22.2, 422 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(87629),	-- Chestplate of Manifest Dread
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars
@@ -984,9 +984,9 @@ _.Zones =
 							i(86574),	-- Elixir of Ancient Knowledge
 						},
 					}),
-					n(50776, { 		-- Nalash Verdantis
+					n(50776, {	-- Nalash Verdantis
 						["coord"] = { 64.2, 58.6, 422 },
-						["groups"] = {
+						["g"] = {
 							i(87635),	-- Amber-Starched Robes
 							i(87628),	-- Spinebreaker Chestpiece
 							i(87630),	-- Chestpiece of Twinkling Stars
@@ -999,14 +999,14 @@ _.Zones =
 							i(87633),	-- Sharkskin Armor
 						},
 					}),
-					n(50805, { 		-- Omnis Grinlok
+					n(50805, {	-- Omnis Grinlok
 						["coords"] = {
 							{ 38.2, 58.0, 422 },
 							{ 39.2, 62.4, 422 },
 							{ 36.6, 64.2, 422 },
 							{ 36.4, 61.2, 422 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(86585),	-- Golden Fleece
 							i(87628),	-- Spinebreaker Chestpiece
 							i(87635),	-- Amber-Starched Robes
@@ -1019,8 +1019,7 @@ _.Zones =
 							i(87633),	-- Sharkskin Armor
 						},
 					}),
-					{	-- Zandalari Warbringer
-						["npcID"] = 69841,	-- Zandalari Warbringer
+					n(69841, {	-- Zandalari Warbringer (Amber)
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
 							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
@@ -1029,13 +1028,10 @@ _.Zones =
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
 						},
 						["g"] = {
-							{	-- Reins of the Amber Primordial Direhorn
-								["itemID"] = 94230,	-- Reins of the Amber Primordial Direhorn
-							},
+							i(94230),	-- Reins of the Amber Primordial Direhorn
 						},
-					},
-					{	-- Zandalari Warbringer
-						["npcID"] = 69842,	-- Zandalari Warbringer
+					}),
+					n(69842, {	-- Zandalari Warbringer (Jade)
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
 							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
@@ -1044,13 +1040,10 @@ _.Zones =
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
 						},
 						["g"] = {
-							{	-- Reins of the Jade Primordial Direhorn
-								["itemID"] = 94231,	-- Reins of the Jade Primordial Direhorn
-							},
+							i(94231),	-- Reins of the Jade Primordial Direhorn
 						},
-					},
-					{	-- Zandalari Warbringer
-						["npcID"] = 69769,	-- Zandalari Warbringer
+					}),
+					n(69769, {	-- Zandalari Warbringer (Slate)
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
 							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
@@ -1059,17 +1052,13 @@ _.Zones =
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
 						},
 						["g"] = {
-							{	-- Reins of the Slate Primordial Direhorn
-								["itemID"] = 94229,	-- Reins of the Slate Primordial Direhorn
-							},
+							i(94229),	-- Reins of the Slate Primordial Direhorn
 						},
-					},
+					}),
 				}),
 				n(-2, {		-- Vendors
 					n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
-						["coords"] = {
-							{ 55.02, 35.55, 422 },
-						},
+						["coord"] = { 55.0, 35.5, 422 },
 						["g"] = {
 							i(89396),	-- Amber Espada of Klaxxi'vess
 							i(89398),	-- Amber Flammard of Klaxxi'vess
@@ -1132,14 +1121,10 @@ _.Zones =
 					}),
 				}),
 				n(0, { 	-- Zone Drops
-					["groups"] = {
-						i(120140, {	-- Tome of Polymorph: Porcupine
-							["collectible"] = false,
-							["crs"] = {
-								65118,	-- Needleback Porcupine
-							},
-						}),
-					},
+					i(120140, {	-- Tome of Polymorph: Porcupine
+						["collectible"] = false,
+						["crs"] = { 65118 },	-- Needleback Porcupine
+					}),
 				}),
 			},
 		}),

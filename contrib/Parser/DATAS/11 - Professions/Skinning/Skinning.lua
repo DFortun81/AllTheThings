@@ -122,7 +122,7 @@ profession(393, {	-- Skinning
 			{
 				["itemID"] = 129867,	-- Immaculate Stormscale
 				["questID"] = 40151,	-- Immaculate Stormscale (Quest)
-				["sourceQuest"] = 40144,	-- Source Quest: Under Down (Quest)
+				["sourceQuest"] = 40145,	-- Source Quest: Under Down (Quest)
 			},
 			{
 				["questID"] = 40152,	-- Scales for Ske'rit (Quest)

@@ -3,21 +3,13 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Northrend
-		["mapID"] = 113,	-- Northrend
-		["g"] = {
-			{	-- Dalaran: Northrend
-				["mapID"] = 125,	-- Dalaran: Northrend
-				["g"] = {
-					n(-213, {	-- The Underbelly
-						["g"] = {
-							prof(356, {	-- Fishing
-								i(43698),	-- Giant Sewer Rat
-							}),
-						},
-					}),
-				},
-			},
-		},
-	},
+	m(113, {	-- Northrend
+		m(125, {	-- Dalaran: Northrend
+			n(-213, {	-- The Underbelly
+				prof(356, {	-- Fishing
+					i(43698),	-- Giant Sewer Rat
+				}),
+			}),
+		}),
+	}),
 };

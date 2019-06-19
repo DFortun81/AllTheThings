@@ -1825,6 +1825,8 @@ namespace Parser_V2
                     case "ilvl":
                     case "lvl":
                     case "q":
+                    case "minReputation":
+                    case "maxReputation":
                         {
                             item[field] = Convert.ToInt32(value);
                             break;

@@ -154,6 +154,13 @@ _.Zones =
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 						["races"] = HORDE_ONLY,
 					}),
+					q(50786, {	-- Revenge of Krag'wa
+						["races"] = HORDE_ONLY,
+						["isWQ"] = 120,
+						["g"] = {
+							ach(13022),	-- Revenge is Best Served Speedily
+						},
+					}),
 					q(50521, {	-- Scorched Earth
 						["isWQ"] = 120,		-- Enables WQ filter for Level 120
 					}),

@@ -35,18 +35,27 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 46236,	-- High Examiner Tae'thelan
 				}),
 				o(131474, {	-- The Discs of Norgannon
-					{
-						["questID"] = 2278,	-- The Platinum Discs
-					},
-					{
-						["questID"] = 2280,	-- The Platinum Discs
+					q(2278),	-- The Platinum Discs
+					q(2279, {	-- The Platinum Discs [Alliance]
 						["sourceQuest"] = 2278,	-- The Platinum Discs
-						["groups"] = {
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 45,
+						["u"] = 40,
+					}),
+--[[				q(2280, {	-- The Platinum Discs [Horde] (before Blizzard reworked this Quest)
+						["sourceQuest"] = 2278,	-- The Platinum Discs
+						["races"] = HORDE_ONLY,
+						["lvl"] = 45,
+						["u"] = 40,
+]]--				}),
+					q(2280, {	-- The Platinum Discs
+						["sourceQuest"] = 2278,	-- The Platinum Discs
+						["g"] = {
 							i(65921),	-- Durdin's Hammer
 							i(65947),	-- Platinum Sword
 							i(65971),	-- Band of Uldaman
 						},
-					},
+					}),
 				}),
 				qh(27682, {	-- We Require More Minerals
 					["qg"] = 46241,	-- Aoren Sunglow

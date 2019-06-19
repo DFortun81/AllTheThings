@@ -380,13 +380,12 @@ _.Zones =
 						},
 					},
 				},
-				{	-- Death to Agogridon
-					["questID"] = 14394,
+				q(14394, {	-- Death to Agogridon
 					["qg"] = 36398,	-- Khan Leh'Prah
 					["coord"] = { 72.2, 67.3, 66 },
 					["sourceQuest"] = 14393,	-- Into the Fray!
-					["description"] = "This quest was fixed in Patch 8.0.1 to grant Exalted reputation with both the Gelkis and Magram Kolkar factions upon completion. From our understanding, this change may not have been intentional, but never-the-less, we are very very excited when Blizzard does things like this. Please show your support for future adjustments to the old world - perhaps some day we'll get Shendralar back as well!\n\n - Crieve",
-					["groups"] = {
+					["description"] = "This quest was fixed in Patch 8.0.1 to grant Exalted reputation with both the Gelkis and Magram Kolkar factions upon completion. From our understanding, this change may not have been intentional, but nevertheless, we are very, very excited when Blizzard does things like this. Please show your support for future adjustments to the old world - perhaps someday we'll get Shendralar back as well!\n\nIf you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
+					["g"] = {
 						{	-- Gelkis Kolkar
 							["factionID"] = 92,
 							["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
@@ -400,7 +399,7 @@ _.Zones =
 						i(55917),	-- Kolkar Cleaver
 						i(156968),	-- Kolkar Polearm
 					},
-				},
+				}),
 				{	-- Deep Impact
 					["questID"] = 14268,
 					["qg"] = 35827,	-- Valishj
@@ -1027,12 +1026,12 @@ _.Zones =
 						un(2, i(6792)),	-- Sanguine Pauldrons
 					},
 				},
-				{	-- The Karnitol Shipwreck
-					["questID"] = 1454,
+				q(1454, {	-- The Karnitol Shipwreck
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, 66 },
+					["sourceQuest"] = 1453,	-- Reclaimers' Business in Desolace
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 14354,	-- Elune's Gifts
-				},
+				}),
 				{	-- The Karnitol Shipwreck
 					["questID"] = 1456,
 					["qg"] = 5638,	-- Kreldig Ungor

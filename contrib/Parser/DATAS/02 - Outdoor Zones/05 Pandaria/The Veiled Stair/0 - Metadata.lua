@@ -4,9 +4,9 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(433, { -- The Veiled Stair
-			["lvl"] = 78,
+		m(433, {	-- The Veiled Stair
 			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
+			["lvl"] = 78,
 		}),
 	}),
 };

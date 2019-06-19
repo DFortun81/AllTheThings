@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(107, {	-- Nagrand (Outland)
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
 				}),

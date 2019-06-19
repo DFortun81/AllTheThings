@@ -4113,14 +4113,14 @@ _.WorldDrops =
 					{	-- Serpentskin Spaulders
 						["itemID"] = 8263,	-- Serpentskin Spaulders
 					},
-					{	-- Shadow Panther Hide Belt
-						["itemID"] = 20261,	-- Shadow Panther Hide Belt
-						["u"] = 7,
-					},
-					{	-- Shadow Panther Hide Gloves
-						["itemID"] = 20259,	-- Shadow Panther Hide Gloves
-						["u"] = 7,
-					},
+				--	{	-- Shadow Panther Hide Belt
+				--		["itemID"] = 20261,	-- Shadow Panther Hide Belt
+				--		["u"] = 7,
+				--	},
+				--	{	-- Shadow Panther Hide Gloves
+				--		["itemID"] = 20259,	-- Shadow Panther Hide Gloves
+				--		["u"] = 7,
+				--	},
 					{	-- Shimmering Armor
 						["itemID"] = 6567,	-- Shimmering Armor
 					},

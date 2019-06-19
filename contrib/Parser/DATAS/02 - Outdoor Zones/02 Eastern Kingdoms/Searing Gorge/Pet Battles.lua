@@ -21,8 +21,9 @@ _.Zones =
 						["crs"] = { 61425 },	-- Molten Hatchling
 					}),
 					q(31912, {	--Kortas Darkhammer
-						["isDaily"] = true,
 						["qg"] = 66515,	-- Kortas Darkhammer
+						["coord"] = { 35.3, 27.8, 32 },
+						["isDaily"] = true,
 					}),
 				},
 			}),

@@ -583,12 +583,7 @@ end
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		-- Play a random complete sound
-		local t = app.Settings.AUDIO_COMPLETE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
-		end
+		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
 	end
 end
 function app:PlayFanfare()
@@ -597,33 +592,23 @@ function app:PlayFanfare()
 		local now = time();
 		if lastPlayedFanfare and (now - lastPlayedFanfare) < 1 then return nil; end
 		lastPlayedFanfare = now;
-		
-		-- Play a random fanfare
-		local t = app.Settings.AUDIO_FANFARE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
-		end
+		PlayAudio(app.Settings.AUDIO_FANFARE_TABLE);
 	end
 end
 function app:PlayRareFindSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		-- Play a random rarefind sound
-		local t = app.Settings.AUDIO_RAREFIND_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
-		end
+		PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE);
 	end
 end
 function app:PlayRemoveSound()
 	if app.Settings:GetTooltipSetting("Warn:Removed") then
-		-- Play a random fanfare
-		local t = app.Settings.AUDIO_REMOVE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], app.Settings:GetTooltipSetting("Channel")); end
-		end
+		PlayAudio(app.Settings.AUDIO_REMOVE_TABLE);
+	end
+end
+function PlayAudio(targetAudio)
+	if targetAudio and type(targetAudio) == "table" then
+		local id = math.random(1, #targetAudio);
+		if targetAudio[id] then PlaySoundFile(targetAudio[id], app.Settings:GetTooltipSetting("Channel")); end
 	end
 end
 
@@ -697,13 +682,19 @@ local function GetNumberWithZeros(number, desiredLength)
 		return tostring(floor(number));
 	end
 end
+local function GetProgressTextDefault(progress, total)
+	return tostring(progress) .. " / " .. tostring(total);
+end
+local function GetProgressTextRemaining(progress, total)
+	return tostring(total - progress);
+end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
+		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -736,6 +727,9 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
+app.GetProgressText = GetProgressTextDefault;
+app.GetProgressTextDefault = GetProgressTextDefault;
+app.GetProgressTextRemaining = GetProgressTextRemaining;
 CS:Hide();
 
 -- Source ID Harvesting Lib
@@ -1850,7 +1844,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										infoString = relicData.iLvl;
 									end
 									total = total + 1;
-									if relicData.iLvl > relicItemLevel then
+									if relicData.iLvl >= relicItemLevel then
 										progress = progress + 1;
 										infoString = infoString .. " " .. GetCompletionIcon(1);
 									else
@@ -3677,6 +3671,7 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
+local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000;
 app.BaseFaction = {
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
@@ -3736,6 +3731,36 @@ app.BaseFaction = {
 };
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
+end
+app.GetFactionStanding = function(reputationPoints)
+	-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
+	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
+	if not reputationPoints then return 0, 0
+	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
+	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
+	elseif reputationPoints < NEUTRAL then return 3, UNFRIENDLY - reputationPoints
+	elseif reputationPoints < FRIENDLY then return 4, reputationPoints - NEUTRAL
+	elseif reputationPoints < HONORED then return 5, reputationPoints - FRIENDLY
+	elseif reputationPoints < REVERED then return 6, reputationPoints - HONORED
+	elseif reputationPoints < EXALTED then return 7, reputationPoints - REVERED
+	elseif reputationPoints >= EXALTED then return 8, 0
+	else return 0
+	end
+end
+app.GetFactionStandingText = function(standingId, colorCode)
+	local text = getglobal("FACTION_STANDING_LABEL"..standingId)
+	if text then
+		if standingId == 1 and colorCode then return "|c00CC2222" .. text .. "|r"
+		elseif standingId == 2 and colorCode then return "|c00FF0000" .. text .. "|r"
+		elseif standingId == 3 and colorCode then return "|c00EE6622" .. text .. "|r"
+		elseif standingId == 4 and colorCode then return "|c00FFFF00" .. text .. "|r"
+		elseif standingId == 5 and colorCode then return "|c0000FF00" .. text .. "|r"
+		elseif standingId == 6 and colorCode then return "|c0000FF88" .. text .. "|r"
+		elseif standingId == 7 and colorCode then return "|c0000FFCC" .. text .. "|r"
+		elseif standingId == 8 and colorCode then return "|c00FFFFFF" .. text .. "|r"
+		end
+	end
+	return "|cCC222200UNKNOWN|r"
 end
 end)();
 
@@ -3817,7 +3842,7 @@ end)();
 			elseif key == "collectible" then
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
-				if app.AccountWideReputations then
+				if app.AccountWideFlightPaths then
 					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
 						return 1;
 					end
@@ -7728,6 +7753,30 @@ local function RowOnEnter(self)
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
+		if reference.minReputation and not reference.maxReputation then
+			local standingId, offset = app.GetFactionStanding(reference.minReputation)
+			local msg = "Requires a minimum standing of"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
+			GameTooltip:AddLine(msg);
+		end
+		if reference.maxReputation and not reference.minReputation then
+			local standingId, offset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing lower than"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
+			GameTooltip:AddLine(msg);
+		end
+		if reference.minReputation and reference.maxReputation then
+			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation)
+			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing between"
+			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. " and"
+			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. ".";
+			GameTooltip:AddLine(msg);
+		end
 		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
@@ -9085,7 +9134,7 @@ app:GetWindow("Unsorted");
 		UpdateWindow(self, true);
 	end);
 end)();
---[[--
+
 -- Uncomment this section if you need to enable Debugger:
 app.ModelViewer = GameTooltipModel;
 app.ModelViewer.SetRotation = function(number)
@@ -9405,10 +9454,10 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("QUEST_LOOT_RECEIVED");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		self:RegisterEvent("NEW_WMO_CHUNK");
-		self:RegisterEvent("MERCHANT_SHOW");
-		self:RegisterEvent("MERCHANT_UPDATE");
-		self:RegisterEvent("CHAT_MSG_LOOT");
+		--self:RegisterEvent("NEW_WMO_CHUNK");
+		--self:RegisterEvent("MERCHANT_SHOW");
+		--self:RegisterEvent("MERCHANT_UPDATE");
+		--self:RegisterEvent("CHAT_MSG_LOOT");
 		--self:RegisterAllEvents();
 	end
 	
@@ -12237,7 +12286,6 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	GetQuestsCompleted(CompletedQuests);
 	CompletedQuests[questID] = true;
 	for questID,completed in pairs(DirtyQuests) do
 		app.QuestCompletionHelper(tonumber(questID));

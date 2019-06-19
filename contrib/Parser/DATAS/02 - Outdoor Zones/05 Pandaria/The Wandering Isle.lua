@@ -5,7 +5,10 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(378, {	-- The Wandering Isle Starter Zones
-			["groups"] = {
+			["races"] = { 24, 25, 26 },	-- Neutral Pandas and Alliance/Horde Pandas [Adding faction just to be safe]
+			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
+			["lvl"] = 1,
+			["g"] = {
 				n(-17, { 	-- Quests
 					q(31450, {	-- A New Fate
 						["qg"] = 56013,	-- Spirit of Master Shang Xi
@@ -18,17 +21,15 @@ _.Zones =
 						["qg"] = 55940,	-- Jojo Ironbrow
 						["sourceQuests"] = { 29665, 29794, 29797 },	-- From Bad to Worse, None Left Behind, Medical Supplies
 					}),
-					{	-- An Ancient Evil [Horde]
-						["questID"] = 10593,	-- An Ancient Evil [Horde]
-						["u"] = 40,
+					q(10593, {	-- An Ancient Evil [Horde]
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							{	-- Scourgebane
-								["itemID"] = 30696,	-- Scourgebane
-								["u"] = 2,
-							},
+						["u"] = 40,	-- Legacy Quests
+						["g"] = {
+							i(30696, {	-- Scourgebane
+								["u"] = 2,	-- BoP / BoA Items
+							}),
 						},
-					},
+					}),
 					q(29410, {	-- Aysa of the Tushui
 						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuests"] = { 29409 },	-- The Disciple's Challenge
@@ -317,9 +318,6 @@ _.Zones =
 ]]--
 				}),
 			},
-			["races"] = { 24, 25, 26 },	-- Neutral Pandas and Alliance/Horde Pandas [Adding faction just to be safe]
-			["lvl"] = 1,
-			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
 		}),
 	}),
 };

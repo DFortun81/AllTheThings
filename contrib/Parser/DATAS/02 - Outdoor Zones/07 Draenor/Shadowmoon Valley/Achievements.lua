@@ -11,10 +11,10 @@ _.Zones =
 				--	unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{	-- Criteria 1 — Establishing a Foothold
-							["criteriaID"] = 1,	-- Establishing a Foothold
+						crit(1, {	-- Establishing a Foothold
+							["achievementID"] = 8845,	-- As I Walk Through the Valley of the Shadow of Moon
 							["sourceQuests"] = { 34692 },	-- Delegating on Draenor
-						},
+						}),
 						{	-- Criteria 2 — Shadows Awaken
 							["criteriaID"] = 2,	-- Shadows Awaken
 							["sourceQuests"] = { 34019 },	-- Shadows Awaken

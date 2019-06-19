@@ -5,21 +5,21 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(418, {	-- Krasarang Wilds
-			["lvl"] = 81,
 			["achievementID"] = 6975,
 			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
-			["groups"] = {
-				n(-4, { 	-- Achievements
+			["lvl"] = 81,
+			["g"] = {
+				n(-4, {	-- Achievements
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
 						o(214439, {		-- Barrel of Banana Infused Rum
-							["groups"] = {
+							["g"] = {
 								i(87266),	-- Recipe: Banana Infused Rum
 							},
 							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
 						}),
 						o(213651, { 	-- Equipment Locker
-							["groups"] = {
+							["g"] = {
 								i(86122),	-- Plankwalking Greaves
 								i(86115),	-- Swashbuckling Boots
 								i(86117),	-- Seafarer's Treads of Precision
@@ -38,7 +38,7 @@ _.Zones =
 							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
 						}),
 						o(213653, {		-- Pandaren Fishing Spear
-							["groups"] = {
+							["g"] = {
 								i(86124),	-- Pandaren Fishing Spear
 							},
 							["questID"] = 31409,
@@ -46,7 +46,7 @@ _.Zones =
 					}),
 					ach(7997, {	-- Riches of Pandaria
 						o(213750, {	-- Saurok Stone Tablet
-							["groups"] = {
+							["g"] = {
 								i(86220, {	-- Saurok Stone Tablet
 									["questID"] = 31408,
 								}),
@@ -57,31 +57,31 @@ _.Zones =
 				}),
 				n(-228, {	-- Flight Points
 					fp(992, {	-- Cradle of Chi-Ji, Krasarang Wilds
-						["coord"] = { 31.2, 63.2 },
+						["coord"] = { 31.2, 63.2, 418 },
 					}),
 					fp(990, {	-- Dawnchaser Retreat, Krasarang Wilds
-						["coord"] = { 29, 50.4 },
+						["coord"] = { 29.0, 50.4, 418 },
 					}),
 					fp(1195, {	-- Domination Point, Krasarang Wilds
-						["coord"] = { 9.6, 52.6 },
+						["coord"] = { 9.60, 52.6, 418 },
 					}),
 					fp(1190, {	-- Lion's Landing, Krasarang Wilds
-						["coord"] = { 88.4, 34.6 },
+						["coord"] = { 88.4, 34.6, 418 },
 					}),
 					fp(993, {	-- Marista, Krasarang Wilds
-						["coord"] = { 52.4, 76.6 },
+						["coord"] = { 52.4, 76.6, 418 },
 					}),
 					fp(991, {	-- Sentinel Basecamp, Krasarang Wilds
-						["coord"] = { 25.2, 33.4 },
+						["coord"] = { 25.2, 33.4, 418 },
 					}),
 					fp(988, {	-- The Incursion, Krasarang Wilds
-						["coord"] = { 67.6, 32.4 },
+						["coord"] = { 67.6, 32.4, 418 },
 					}),
 					fp(987, {	-- Thunder Cleft, Krasarang Wilds
-						["coord"] = { 59.2, 24.6 },
+						["coord"] = { 59.2, 24.6, 418 },
 					}),
 					fp(986, {	-- Zhu's Watch, Krasarang Wilds
-						["coord"] = { 76.6, 8.4 },
+						["coord"] = { 76.6, 8.40, 418 },
 					}),
 				}),
 				n(-25, { 	-- Pet Battle
@@ -96,18 +96,14 @@ _.Zones =
 					p(712), 	-- Sifang Otter Pup
 					p(723), 	-- Spiny Terrapin
 					p(1128, {	-- Sumprush Rodent
-						["groups"] = {
-						},
 						["description"] = "This wild pet can only be spawned by using the item, Rodent Crate, bought from vendor. Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.",
 					}),
 					p(1013, { 	-- Wanderer's Festival Hatchling
-						["groups"] = {
-						},
 						["description"] = "This wild pet can be found on Turtle Beach in Krasarang Wilds. It only spawns during the Wanderer's Festival. The festival is held only on Sunday night from 9 PM to 11 PM (Pacific Standard Time, GMT-8). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 					}),
 					q(31954, { 	-- Grand Master Mo'ruk
 						["repeatable"] = true,
-						["groups"] = {
+						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
 						},
 					}),
@@ -146,7 +142,7 @@ _.Zones =
 						["qg"] = 67940,	-- Admiral Taylor
 					}),
 					q(30695, {	-- Ahead on the Way
-						["groups"] = {
+						["g"] = {
 							i(81552),	-- Red Crane Sword
 							i(81553),	-- Crane Temple Blade
 							i(81554),	-- Ward of Despair
@@ -186,7 +182,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30089, {	-- Apply Directly to the Forehead
-						["groups"] = {
+						["g"] = {
 							i(81467),	-- Nayeli Leggings
 							i(81468),	-- Mortbreath Legguards
 							i(81469),	-- Deepwild Legguards
@@ -210,7 +206,7 @@ _.Zones =
 					}),
 
 					q(30672, {	-- Balance
-						["groups"] = {
+						["g"] = {
 							i(81542),	-- Fishmonger's Blade
 							i(81543),	-- Waterkeeper's Wand
 							i(81544),	-- Marista Halberd
@@ -236,7 +232,7 @@ _.Zones =
 						},
 					}),
 					i(91856, {	-- Sturdy Crab Crate
-						["groups"] = {
+						["g"] = {
 							qa(32166, {	-- Beastmaster's Hunt: The Crab
 								["isDaily"] = true,
 							}),
@@ -244,7 +240,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(91822, {
-						["groups"] = {
+						["g"] = {
 							qh(32163, {	-- Beastmaster's Hunt: The Crab
 								["isDaily"] = true,
 							}),
@@ -252,7 +248,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(91819, {	-- Sturdy Crane Snare
-						["groups"] = {
+						["g"] = {
 							qh(32161, {	-- Beastmaster's Hunt: The Crane
 								["isDaily"] = true,
 							}),
@@ -260,7 +256,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(91854, {
-						["groups"] = {
+						["g"] = {
 							qa(32164, {	-- Beastmaster's Hunt: The Crane
 								["isDaily"] = true,
 							}),
@@ -268,7 +264,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(91821, {
-						["groups"] = {
+						["g"] = {
 							qh(32162, {	-- Beastmaster's Hunt: The Tiger
 								["isDaily"] = true,
 							}),
@@ -276,7 +272,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					i(91855, {
-						["groups"] = {
+						["g"] = {
 							qa(32165, {	-- Beastmaster's Hunt: The Tiger
 								["isDaily"] = true,
 							}),
@@ -339,9 +335,9 @@ _.Zones =
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
 					}),
 					i(80827, {	-- Confusing Treasure Map
-						["groups"] = {
+						["g"] = {
 							q(30675, {
-								["groups"] = {
+								["g"] = {
 									i(80822),	-- The Golden Banana
 								},
 							}),	-- Buried Hozen Treasure
@@ -370,7 +366,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30082, {	-- Cheer Up, Yi-Mo
-						["groups"] = {
+						["g"] = {
 							i(81440),	-- Nayeli Hood
 							i(81441),	-- Mortbreath Helm
 							i(81442),	-- Deepwild Helm
@@ -388,7 +384,7 @@ _.Zones =
 						["qg"] = 58779,	-- Daggle Bombstrider
 					}),
 					q(31262, {	-- Crane Mastery: Needlebeak
-						["groups"] = {
+						["g"] = {
 							i(88052),	-- Nayeli Waistband
 							i(88051),	-- Mortbreath Waistband
 							i(88050),	-- Deepwild Belt
@@ -490,7 +486,7 @@ _.Zones =
 						["description"] = "Found while fishing in any inland body of water on Pandaria",
 					}),
 					qh(30174, {	-- For Family
-						["groups"] = {
+						["g"] = {
 							i(81449),	-- Nayeli Mantle
 							i(81450),	-- Mortbreath Spaulder
 							i(81451),	-- Deepwild Pauldrons
@@ -583,7 +579,7 @@ _.Zones =
 						["sourceQuests"] = { 30347 },	-- The Pools of Youth
 					}),
 					q(30273, {	-- In the House of the Red Crane
-						["groups"] = {
+						["g"] = {
 							i(81493),	-- Dojani Girdle
 							i(81492),	-- Korjan Girdle
 							i(81491),	-- Sarjun Waistguard
@@ -735,7 +731,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					qh(30179, {	-- Poisoned!
-						["groups"] = {
+						["g"] = {
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
 							i(81524),	-- Toothrow Band
@@ -758,7 +754,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30353, {	-- Profit Mastery
-						["groups"] = {
+						["g"] = {
 							i(81494),	-- Nayeli Gloves
 							i(81495),	-- Mortbreath Gloves
 							i(81496),	-- Deepwild Gauntlets
@@ -776,12 +772,12 @@ _.Zones =
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
 					}),
 					q(30169, {	-- Raid Leader Slovan
-						["groups"] = {
+						["g"] = {
 							i(88387),	-- Shushen's Spittoon
 						},
 					}),
 					qh(30230, {	-- Re-Reclaim
-						["groups"] = {
+						["g"] = {
 							i(81503),	-- Nayeli Cuffs
 							i(81504),	-- Mortbreateh Bindings
 							i(81505),	-- Deepwild Armguards
@@ -796,7 +792,7 @@ _.Zones =
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 					}),
 					qa(30355, {	-- Re-Reclaim
-						["groups"] = {
+						["g"] = {
 							i(81503),	-- Nayeli Cuffs
 							i(81504),	-- Mortbreath Bindings
 							i(81505),	-- Deepwild Armguards
@@ -831,7 +827,7 @@ _.Zones =
 						["description"] = "Not available if quest \"Poisoned!\" is in your quest or or already completed.",
 					}),
 					q(30083, {	-- Securing the Province
-						["groups"] = {
+						["g"] = {
 							i(81512),	-- Sha-Haunted Locket
 							i(81513),	-- Choker of Despair
 							i(81514),	-- Wildscale Amulet
@@ -887,7 +883,7 @@ _.Zones =
 						["qg"] = 67865,	-- Messenger Grummle
 					}),
 					i(86544, {	-- Spinefish Alpha
-						["groups"] = {
+						["g"] = {
 							q(31444, {	-- Spinefish Alpha
 								["requireSkill"] = 356,
 								["isDaily"] = true,
@@ -998,7 +994,7 @@ _.Zones =
 						["sourceQuests"] = { 30668 } -- Build Your Own Raft
 					}),
 					qa(30344, {	-- The Lost Dynasty
-						["groups"] = {
+						["g"] = {
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
 							i(81524),	-- Toothrow Band
@@ -1008,7 +1004,7 @@ _.Zones =
 						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 					}),
 					qh(30175, {	-- The Mantid
-						["groups"] = {
+						["g"] = {
 							i(81458),	-- Nayeli Robe
 							i(81459),	-- Mortbreath Robes
 							i(81460),	-- Deepwild Armor
@@ -1027,7 +1023,7 @@ _.Zones =
 						},
 					}),
 					qa(30361, {	-- The Mantid
-						["groups"] = {
+						["g"] = {
 							i(81458),	-- Nayeli Robe
 							i(81459),	-- Mortbreath Robes
 							i(81460),	-- Deepwild Armor
@@ -1055,7 +1051,7 @@ _.Zones =
 						["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
 					}),
 					q(30268, {	-- The Murksweats
-						["groups"] = {
+						["g"] = {
 							i(81517),	-- Murksweat Ward
 							i(81518),	-- Lory Feather Band
 							i(81519),	-- Snakejaw Band
@@ -1071,7 +1067,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					qh(30128, {	-- The Pools of Youth
-						["groups"] = {
+						["g"] = {
 							i(81537),	-- Drape of the Lagoon
 							i(81538),	-- Waterfall Drape
 							i(81539),	-- Canopy Drape
@@ -1082,7 +1078,7 @@ _.Zones =
 						["sourceQuests"] = { 30129 },	-- The Mogu Agenda
 					}),
 					qa(30347, {	-- The Pools of Youth
-						["groups"] = {
+						["g"] = {
 							i(81537),	-- Drape of the Lagoon
 							i(81538),	-- Waterfall Drape
 							i(81539),	-- Canopy Drape
@@ -1114,7 +1110,7 @@ _.Zones =
 						["qg"] = 68003,	-- The Monkey King
 					}),
 					qa(32455,  {  	-- The Silence
-						["groups"] = {
+						["g"] = {
 							i(93385),	-- Grand Gryphon
 						},
 						["qg"] = 68987,	-- Anduin Wrynn
@@ -1132,7 +1128,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					qa(30357, {  	-- The Stoneplow Convoy
-						["groups"] = {
+						["g"] = {
 							i(84291),	-- Imperial Lotus Shawl
 							i(84292),	-- Imperial Lotus Drape
 							i(84293),	-- Imperial Lotus Cape
@@ -1157,7 +1153,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					qa(30445, {	-- The Waters of Youth
-						["groups"] = {
+						["g"] = {
 							i(81449),	-- Nayeli Mantle
 							i(81450),	-- Mortbreath Spaulder
 							i(81451),	-- Deepwild Pauldrons
@@ -1176,7 +1172,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30168, {	-- Thieving Raiders
-						["groups"] = {
+						["g"] = {
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
 							i(81535),	-- Glade Pincher Feather
@@ -1192,7 +1188,7 @@ _.Zones =
 						},
 					}),
 					qa(30349, {	-- Threat from Dojan
-						["groups"] = {
+						["g"] = {
 							i(84281),	-- Bramble Locket
 							i(84282),	-- Bramble Choker
 							i(84283),	-- Bramble Necklace
@@ -1215,7 +1211,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30694, {	-- Tread Lightly
-						["groups"] = {
+						["g"] = {
 							i(84272),	-- Mistwalker Satin Leggings
 							i(84273),	-- Mistwalker Hide leggaurds
 							i(84274),	-- Deepwild Leg Armor
@@ -1298,7 +1294,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30088, {	-- Why So Serious?
-						["groups"] = {
+						["g"] = {
 							i(88061),	-- Nayeli Handwraps
 							i(88060),	-- Mortbreath Handwraps
 							i(88059),	-- Deepwild Handguards
@@ -1313,7 +1309,7 @@ _.Zones =
 						["sourceQuests"] = { 30081 },	-- Materia Medica
 					}),
 					q(30671, {	-- Wisdom Has A Price
-						["groups"] = {
+						["g"] = {
 							i(88043),	-- Nayeli Shoes
 							i(88042),	-- Mortbreath Shoes
 							i(88041),	-- Deepwild Greaves
@@ -1340,7 +1336,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(30090,  {  	-- Zhu's Despair
-						["groups"] = {
+						["g"] = {
 							i(88580),  		-- Ken-Ken's Mask
 						},
 						["sourceQuests"] = { 30089 },	-- Apply Directly to the Forehead
@@ -1358,13 +1354,6 @@ _.Zones =
 					qh(32131),	-- We Require More Minerals!
 					qh(32140),	-- Work Order: Iron
 					qh(32138),	-- Work Order: Lumber
-
-					Holiday quests:
-					qh(32047),	-- Candy Bucket
-					q(32034),	-- Candy Bucket
-					qh(32020),	-- Candy Bucket
-					q(32036),	-- Candy Bucket
-					q(32499),	-- Honor the Flame
 ]]--
 				}),
 				n(-16, { 	-- Rares
@@ -1373,7 +1362,7 @@ _.Zones =
 							{ 58.6, 43.8, 418 },
 							{ 56.2, 46.8, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(90723),	-- Arnness's Scaled Leggings
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
@@ -1389,13 +1378,13 @@ _.Zones =
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
 						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
 						["coord"] = { 12.6, 82, 418 },
-						["groups"] = {
+						["g"] = {
 							i(90087),	-- Lobstmourne
 						},
 					}),
 					n(50768, {	-- Cournith Waterstrider
 						["coord"] = { 30.6, 38.2, 418 },
-						["groups"] = {
+						["g"] = {
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
@@ -1413,7 +1402,7 @@ _.Zones =
 							{ 85.0, 27.6, 418 },
 							{ 89.6, 22.4, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(92783),	-- Mark of the Hardened Grunt
 						},
 					}),
@@ -1422,7 +1411,7 @@ _.Zones =
 							{ 40.0, 88.6, 418 },
 							{ 38.8, 87.4, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(90169, {	-- Damlak's Clamshell
 								i(90172),	-- Clamshell Band
 								i(90087),	-- Lobstmourne
@@ -1431,13 +1420,13 @@ _.Zones =
 					}),
 					n(68319, {	-- Disha Fearwarden
 						["coord"] = { 87.4, 29.2, 418 },
-						["groups"] = {
+						["g"] = {
 							i(92787),	-- Horde Insignia of Conquering
 						},
 					}),
 					n(50331, {	-- Go-Kan
 						["coord"] = { 39.4, 28.8, 418 },
-						["groups"] = {
+						["g"] = {
 							i(90719),	-- Go-Kan's Golden Trousers
 							i(87608),	-- Korjan Mystic's Hood
 							i(87611),	-- Shen-zin Shell Headguard
@@ -1452,15 +1441,15 @@ _.Zones =
 					}),
 					n(50340, {	-- Gaarn the Toxic
 						["coords"] = {
-							{ 56.2, 28, 418 },
+							{ 56.2, 28.0, 418 },
 							{ 58.6, 31.4, 418 },
 							{ 58.6, 34.4, 418 },
-							{ 54, 32.2, 418 },
+							{ 54.0, 32.2, 418 },
 							{ 56.2, 35.2, 418 },
 							{ 56.2, 38.2, 418 },
 							{ 53.6, 38.8, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(90725),	-- Gaarn's Leggings of Infestation
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
@@ -1478,7 +1467,7 @@ _.Zones =
 							{ 13.4, 55.0, 418 },
 							{ 14.0, 57.0, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(92782),	-- Steadfast Footman's Medallion
 						},
 					}),
@@ -1496,22 +1485,22 @@ _.Zones =
 							{ 89, 26.8, 418 },
 							{ 84.6, 31, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(92785),	-- Kor'kron Book of Hurting
 						},
 					}),
 				 	n(68322, {	-- Muerta
 						["coords"] = {
-							{ 10.6, 57, 418 },
-							{ 9.6, 54.6, 418 },
+							{ 10.6, 57.0, 418 },
+							{ 9.60, 54.6, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(92786),	-- Alliance Insignia of Conquering
 						},
 					}),
 					n(50352, {	-- Qu'nas
 						["coord"] = { 67.2, 23, 418 },
-						["groups"] = {
+						["g"] = {
 							i(90717),	-- Qu'nas' Apocryphal Legplates
 							i(87606),	-- Tidehunter Helm
 							i(87607),	-- Unearthed Dojani Headcover
@@ -1531,7 +1520,7 @@ _.Zones =
 							{ 40.4, 52.8, 418 },
 							{ 42.8, 52.8, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(90720),	-- Silent Leggings of the Ghostpaw
 							i(87612),	-- Ancient Krasari Helm
 							i(87610),	-- Deepwild Hunting Helm
@@ -1546,7 +1535,7 @@ _.Zones =
 					}),
 					n(50830, {	-- Spriggin
 						["coord"] = { 52.2, 88.8, 418 },
-						["groups"] = {
+						["g"] = {
 							i(90724),	-- Spriggin's Sproggin' Leggin'
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
@@ -1565,7 +1554,7 @@ _.Zones =
 							{ 14.4, 35.6, 418 },
 							{ 15.6, 35.6, 418 },
 						},
-						["groups"] = {
+						["g"] = {
 							i(90718),	-- Torik-Ethis' Bloodied Legguards
 							i(87609),	-- Brushstalker Helm
 							i(87608),	-- Korjan Mystic's Hood
@@ -1580,12 +1569,35 @@ _.Zones =
 					}),
 					n(68320, {	-- Ubunti the Shade
 						["coord"] = { 13.2, 66.0, 418 },
-						["groups"] = {
+						["g"] = {
 							i(92784),	-- SI:7 Operative's Manual
 						},
 					}),
-					{	-- Zandalari Warbringer
-						["npcID"] = 69841,	-- Zandalari Warbringer
+					n(69841, {	-- Zandalari Warbringer (Amber)
+						["coords"] = {
+							{ 47.4, 61.5, 422 },	-- Dread Wastes
+							{ 39.8, 65.9, 418 },	-- Krasarang Wilds
+							{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
+							{ 52.5, 18.8, 371 },	-- The Jade Forest
+							{ 36.5, 85.6, 388 },	-- Townlong Steppes
+						},
+						["g"] = {
+							i(94230),	-- Reins of the Amber Primordial Direhorn
+						},
+					}),
+					n(69842, {	-- Zandalari Warbringer (Jade)
+						["coords"] = {
+							{ 47.4, 61.5, 422 },	-- Dread Wastes
+							{ 39.8, 65.9, 418 },	-- Krasarang Wilds
+							{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
+							{ 52.5, 18.8, 371 },	-- The Jade Forest
+							{ 36.5, 85.6, 388 },	-- Townlong Steppes
+						},
+						["g"] = {
+							i(94231),	-- Reins of the Jade Primordial Direhorn
+						},
+					}),
+					n(69769, {	-- Zandalari Warbringer (Slate)
 						["coords"] = {
 							{ 47.42, 61.54, 422 },	-- Dread Wastes
 							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
@@ -1594,47 +1606,14 @@ _.Zones =
 							{ 36.58, 85.67, 388 },	-- Townlong Steppes
 						},
 						["g"] = {
-							{	-- Reins of the Amber Primordial Direhorn
-								["itemID"] = 94230,	-- Reins of the Amber Primordial Direhorn
-							},
+							i(94229),	-- Reins of the Slate Primordial Direhorn
 						},
-					},
-					{	-- Zandalari Warbringer
-						["npcID"] = 69842,	-- Zandalari Warbringer
-						["coords"] = {
-							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
-							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
-							{ 52.56, 18.85, 371 },	-- The Jade Forest
-							{ 36.58, 85.67, 388 },	-- Townlong Steppes
-						},
-						["g"] = {
-							{	-- Reins of the Jade Primordial Direhorn
-								["itemID"] = 94231,	-- Reins of the Jade Primordial Direhorn
-							},
-						},
-					},
-					{	-- Zandalari Warbringer
-						["npcID"] = 69769,	-- Zandalari Warbringer
-						["coords"] = {
-							{ 47.42, 61.54, 422 },	-- Dread Wastes
-							{ 39.83, 65.92, 418 },	-- Krasarang Wilds
-							{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
-							{ 52.56, 18.85, 371 },	-- The Jade Forest
-							{ 36.58, 85.67, 388 },	-- Townlong Steppes
-						},
-						["g"] = {
-							{	-- Reins of the Slate Primordial Direhorn
-								["itemID"] = 94229,	-- Reins of the Slate Primordial Direhorn
-							},
-						},
-					},
+					}),
 				}),
 				n(-222, {	-- Treasure Hunter
 					o(214403, {	-- Stack of Papers
-						["description"] = "Located on top of a hill just north of Marista at (52.1,73.4)",
 						["coord"] = { 52.1, 73.4, 418 },
-						["groups"] = {
+						["g"] = {
 							i(87798, {	-- Stack of Papers
 								["questID"] = 31869,
 							}),
@@ -1642,42 +1621,45 @@ _.Zones =
 					}),
 				}),
 				n(-2, {		-- Vendor
-					na(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
-						i(93231),	-- Grand Commendation of Operation: Shieldwall
-						i(93168),	-- Grand Armored Gryphon Mount
-						i(93347),	-- Arcane Badge of the Shieldwall
-						i(93258),	-- Arrowflight Medallion
-						i(93244),	-- Band of the Shieldwall
-						i(93339),	-- Bon-iy's Unbreakable Cord
-						i(93335),	-- Chain of Flaming Arrows
-						i(93246),	-- Circle of the shieldwall
-						i(93278),	-- Crab-Leather Tabi
-						i(93346),	-- Deadeye Badge of the Shieldwall
-						i(93334),	-- Divide's Loyal Clasp
-						i(93350),	-- Durable Badge of the Shieldwall
-						i(93332),	-- Girdle of Crushing Strength
-						i(93274),	-- Greatboots of Flashing Light
-						i(93260),	-- Heartwarmer Medallion
-						i(93261),	-- Helmbreaker Medallion
-						i(93349),	-- Knightly Badge of the Shieldwall
-						i(93336),	-- Links of Bonded Blood
-						i(93245),	-- Loop of the Shieldwall
-						i(93348),	-- Mending Badge of the Shieldwall
-						i(93276),	-- Odlaw's Everwalkers
-						i(93337),	-- Prevenge's Swashbuckling Cinch
-						i(93272),	-- Sabatons of the Sullied Shore
-						i(93280),	-- Sandals of Oiled Silk
-						i(93340),	-- Sash of Bouncing Power
-						i(93273),	-- Sea-Soaked Sollerets
-						i(93247),	-- Seal of the Shieldwall
-						i(93279),	-- Shieldwarden Slippers
-						i(93259),	-- Shock-Charger Medallion
-						i(93243),	-- Signet of the Shieldwall
-						i(93338),	-- Soothing Straps
-						i(93277),	-- Statue Summoner's Treads
-						i(93275),	-- Totem-Binder Boots
-						i(93262),	-- Vaporshield Medallion
-						i(93333),	-- Waistplate of Immobility
+					n(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(93231),	-- Grand Commendation of Operation: Shieldwall
+							i(93168),	-- Grand Armored Gryphon Mount
+							i(93347),	-- Arcane Badge of the Shieldwall
+							i(93258),	-- Arrowflight Medallion
+							i(93244),	-- Band of the Shieldwall
+							i(93339),	-- Bon-iy's Unbreakable Cord
+							i(93335),	-- Chain of Flaming Arrows
+							i(93246),	-- Circle of the shieldwall
+							i(93278),	-- Crab-Leather Tabi
+							i(93346),	-- Deadeye Badge of the Shieldwall
+							i(93334),	-- Divide's Loyal Clasp
+							i(93350),	-- Durable Badge of the Shieldwall
+							i(93332),	-- Girdle of Crushing Strength
+							i(93274),	-- Greatboots of Flashing Light
+							i(93260),	-- Heartwarmer Medallion
+							i(93261),	-- Helmbreaker Medallion
+							i(93349),	-- Knightly Badge of the Shieldwall
+							i(93336),	-- Links of Bonded Blood
+							i(93245),	-- Loop of the Shieldwall
+							i(93348),	-- Mending Badge of the Shieldwall
+							i(93276),	-- Odlaw's Everwalkers
+							i(93337),	-- Prevenge's Swashbuckling Cinch
+							i(93272),	-- Sabatons of the Sullied Shore
+							i(93280),	-- Sandals of Oiled Silk
+							i(93340),	-- Sash of Bouncing Power
+							i(93273),	-- Sea-Soaked Sollerets
+							i(93247),	-- Seal of the Shieldwall
+							i(93279),	-- Shieldwarden Slippers
+							i(93259),	-- Shock-Charger Medallion
+							i(93243),	-- Signet of the Shieldwall
+							i(93338),	-- Soothing Straps
+							i(93277),	-- Statue Summoner's Treads
+							i(93275),	-- Totem-Binder Boots
+							i(93262),	-- Vaporshield Medallion
+							i(93333),	-- Waistplate of Immobility
+						},
 					}),
 					n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
 						i(93225),	-- Grand Commendation of the Anglers
@@ -1686,8 +1668,8 @@ _.Zones =
 						i(85502),	-- Recipe: Viseclaw Soup
 						i(89401),	-- Angler's Tabard
 						i(85500),	-- Angler's Fishing Raft Toy
-						i(107950, {	-- Bipsi's Bobbing Berg -- Mage only! Also NOT A yet!
-							["classes"] = { 8 },
+						i(107950, {	-- Bipsi's Bobbing Berg
+							["classes"] = { 8 },	-- Mage
 						}),
 						i(84661),	-- Dragon Fishing Pole -- NOT MOGGABLE
 						i(86596),	-- Nat's Fishing Chair Toy
@@ -1696,64 +1678,73 @@ _.Zones =
 						i(88535),	-- Sharpened Tuskarr Pole -- NOT MOGGABLE
 						i(85447),	-- Tiny Goldfish Pet
 					}),
-					nh(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
-						i(91838, {  -- Lion's Landing Commission
-							i(122211),	-- Music Roll: War March
-							i(92527, {	-- Rodent Crate
-								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-								["groups"] = {
-									p(1128), 	-- Sumprush Rodent
-								},
+					n(67751, {	-- Ongrom Black Tooth <Collector of Commissions>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(91838, {  -- Lion's Landing Commission
+								i(122211),	-- Music Roll: War March
+								i(92527, {	-- Rodent Crate
+									["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+									["g"] = {
+										p(1128), 	-- Sumprush Rodent
+									},
+								}),
 							}),
-						}),
+						},
 					}),
-					na(67881, {	-- Proveditor Grantley <Collector of Commissions>
-						i(91877, {	--  Domination Point Commission
-							i(122202),	-- Music Roll: High Seas
-							i(92532, {	-- Rodent Crate
-								["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
-								["groups"] = {
-									p(1128), 	-- Sumprush Rodent
-								},
+					n(67881, {	-- Proveditor Grantley <Collector of Commissions>
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(91877, {	--  Domination Point Commission
+								i(122202),	-- Music Roll: High Seas
+								i(92532, {	-- Rodent Crate
+									["description"] = "Using the Rodent Crate will spawn 5-7 Sumprush Rodents in the surrounding area. Any players may engage in battle with these wild pets, not just the user of the item.|r",
+									["g"] = {
+										p(1128), 	-- Sumprush Rodent
+									},
+								}),
 							}),
-						}),
+						},
 					}),
-					nh(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
-						i(93232),	-- Grand Commendation of the Dominance Offensive
-						i(93169),	-- Grand Armored Wyvern
-						i(93329),	-- Bambrick's Striking Strap
-						i(93271),	-- Beach-Born Sandals
-						i(93327),	-- Bloodbinder Links
-						i(93266),	-- Boots of the Healing Steam
-						i(93330),	-- Chang's Changing Cord
-						i(93264),	-- Cragchewer Sollerets
-						i(93255),	-- Cutstitcher Medallion
-						i(93325),	-- Divide's Greatheart Clasp
-						i(93342),	-- Dominator's Arcane Badge
-						i(93249),	-- Dominator's Band
-						i(93251),	-- Dominator's Circle
-						i(93341),	-- Dominator's Deadeye Badge
-						i(93345),	-- Dominator's Durable Badge
-						i(93344),	-- Dominator's Knightly Badge
-						i(93250),	-- Dominator's Loop
-						i(93343),	-- Dominator's Mending Badge
-						i(93252),	-- Dominator's Seal
-						i(93248),	-- Dominator's Signet
-						i(93267),	-- Greaves of Manifest Destiny
-						i(93263),	-- Groundbreaker Sabatons
-						i(93324),	-- Immovable Waistplate
-						i(93323),	-- Kwon's Crushing Girdle
-						i(93257),	-- Medallion of Mystefying Vapors
-						i(93328),	-- Prevenge's Dagger-Carrier
-						i(93331),	-- Sash of Surehandedness
-						i(93265),	-- Scar Swallower Greatboots
-						i(93326),	-- Shigi's Chain of Cheerful Summons
-						i(93256),	-- Skullrender Medallion
-						i(93270),	-- Slippers of Soothing Balm
-						i(93254),	-- Static-Caster's Medallion
-						i(93268),	-- Treads of Rejuvenating Mists
-						i(93269),	-- Troll-Toe Tabi
-						i(93253),	-- Woundripper Medallion
+					n(69060, {	-- Tuskripper Grukna <Dominance Offensive Quartermaster>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(93232),	-- Grand Commendation of the Dominance Offensive
+							i(93169),	-- Grand Armored Wyvern
+							i(93329),	-- Bambrick's Striking Strap
+							i(93271),	-- Beach-Born Sandals
+							i(93327),	-- Bloodbinder Links
+							i(93266),	-- Boots of the Healing Steam
+							i(93330),	-- Chang's Changing Cord
+							i(93264),	-- Cragchewer Sollerets
+							i(93255),	-- Cutstitcher Medallion
+							i(93325),	-- Divide's Greatheart Clasp
+							i(93342),	-- Dominator's Arcane Badge
+							i(93249),	-- Dominator's Band
+							i(93251),	-- Dominator's Circle
+							i(93341),	-- Dominator's Deadeye Badge
+							i(93345),	-- Dominator's Durable Badge
+							i(93344),	-- Dominator's Knightly Badge
+							i(93250),	-- Dominator's Loop
+							i(93343),	-- Dominator's Mending Badge
+							i(93252),	-- Dominator's Seal
+							i(93248),	-- Dominator's Signet
+							i(93267),	-- Greaves of Manifest Destiny
+							i(93263),	-- Groundbreaker Sabatons
+							i(93324),	-- Immovable Waistplate
+							i(93323),	-- Kwon's Crushing Girdle
+							i(93257),	-- Medallion of Mystefying Vapors
+							i(93328),	-- Prevenge's Dagger-Carrier
+							i(93331),	-- Sash of Surehandedness
+							i(93265),	-- Scar Swallower Greatboots
+							i(93326),	-- Shigi's Chain of Cheerful Summons
+							i(93256),	-- Skullrender Medallion
+							i(93270),	-- Slippers of Soothing Balm
+							i(93254),	-- Static-Caster's Medallion
+							i(93268),	-- Treads of Rejuvenating Mists
+							i(93269),	-- Troll-Toe Tabi
+							i(93253),	-- Woundripper Medallion
+						},
 					}),
 				}),
 			},

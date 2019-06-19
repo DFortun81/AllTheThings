@@ -360,7 +360,7 @@ _.Zones =
 					},
 				}), 
 				n(8212, { 	-- The Reak
-					["coord"] = { 57.8, 43.6, 26 },
+					["coord"] = { 57.5, 42.6, 26 },
 					["g"] = {
 						i(9837),	-- Banded Bracers
 						i(9839),	-- Banded Gauntlets

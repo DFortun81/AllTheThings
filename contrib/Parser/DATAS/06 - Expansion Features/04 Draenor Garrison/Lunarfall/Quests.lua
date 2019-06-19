@@ -2279,17 +2279,19 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				qa(38344, {	-- Mystery Notebook
-					["sourceQuests"] = { 36615 },	-- My Very Own Castle
-					["coord"] = { 33.9, 37.2, 582 },
-					["lvl"] = 100,
+				q(38344, {	-- Mystery Notebook
 					["qg"] = 91589,	-- Fix "Smallie" Biggswrench
-				}),
-				qa(36615, {	-- My Very Own Castle
-					["sourceQuests"] = { 36592 },	-- Bigger is Better
-					["coord"] = { 31.8, 31.0, 582 },
+					["coord"] = { 33.9, 37.2, 582 },
+					["description"] = "Requires Garrison Rank 3.",
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 100,
+				}),
+				q(36615, {	-- My Very Own Castle
 					["qg"] = 77209,	-- Baros Alexston
+					["coord"] = { 31.8, 31.0, 582 },
+					["sourceQuest"] = 36592,	-- Bigger is Better
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 100,
 				}),
 				qa(38408, {	-- New Goods
 					["sourceQuests"] = { 36615 },	-- My Very Own Castle

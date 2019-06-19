@@ -6,32 +6,29 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
 			n(-17, { 	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(4897, {		-- Hinterlands Quests
-					crit(1),		-- Stormfeather Outpost / Jintha'Alor
-					crit(2),		-- Jintha'Alor / Hiri'watha
-					crit(3),		-- Quel'Danil Lodge / Revantusk Village
-				}),
-]]--				
 				q(26486, {	-- 99 Bottles of Booze on the Beach
 					["qg"] = 43109,	-- Dron Blastbrew
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26523, {	-- All That Skitters
+				q(26523, {	-- All That Skitters (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26310, {	-- All That Skitters
+				q(26310, {	-- All That Skitters (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["races"] = HORDE_ONLY,
 				}),
 				q(26547, {	-- A Mangy Threat
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
 				}),
-				q(26641, {	-- Can't Make An Omelette Without...
+				q(26641, {	-- Can't Make An Omelette Without... (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27625, 27626 },	-- In Defense of Quel'Danil & The Highvale Documents
 					["g"] = {
@@ -43,7 +40,7 @@ _.Zones =
 						i(131571),	-- Cinch of the Scattering Wind
 					},
 				}),
-				q(26382, {	-- Can't Make An Omelette Without...
+				q(26382, {	-- Can't Make An Omelette Without... (H)
 					["qg"] = 42896,	-- Apothecary Surlis
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -60,15 +57,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26369 },	-- Hunt the Keeper
 				}),
-				q(7850, {	-- Dark Vessels
-					["u"] = 40,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(2, i(19118)),	-- Nature's Breath
-					},
-				}),
-				q(26524, {	-- Dark Vessels
+				q(26524, {	-- Dark Vessels (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26523 },	-- All That Skitters
 					["g"] = {
@@ -84,7 +75,14 @@ _.Zones =
 						i(131545),	-- Spider Venom Legguards
 					},
 				}),
-				q(26309, {	-- Dark Vessels
+				q(7850, {	-- Dark Vessels (H Legacy)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(19118)),	-- Nature's Breath
+					},
+				}),
+				q(26309, {	-- Dark Vessels (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26310 },	-- All That Skitters
@@ -101,30 +99,33 @@ _.Zones =
 						i(131511),	-- Spider Venom Legguards
 					},
 				}),
-				q(26498, {	-- Death to the Vilebranch
+				q(26498, {	-- Death to the Vilebranch (A)
 					["qg"] = 43157,	-- Doran Steelwing
+					["coord"] = { 64.0, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26497 },	-- Vilebranch Scum
 				}),
-				q(26307, {	-- Death to the Vilebranch
+				q(26307, {	-- Death to the Vilebranch (H)
 					["qg"] = 42642,	-- Death to the Vilebranch
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26306 },	-- Start Taking Back
 				}),
 				q(26496, {	-- Down with the Vilebranch
 					["qg"] = 43108,	-- Kerr Ironsight
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26491, 26492 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
 				}),
-				q(26521, {	-- Faces of Evil
+				q(26521, {	-- Faces of Evil (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(59249),	-- Vile Branch
 						i(59251),	-- Jintha'Alor Bracers
 					},
 				}),
-				q(26357, {	-- Faces of Evil
+				q(26357, {	-- Faces of Evil (H)
 					["qg"] = 42624,	-- Kotonga
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -153,6 +154,7 @@ _.Zones =
 				}),
 				q(26483, {	-- Gan'dranda
 					["qg"] = 43108,	-- Kerr Ironsight
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(59242),	-- Ironsight Crossbow
@@ -165,16 +167,18 @@ _.Zones =
 				q(26527, {	-- Gryphon Master Talonaxe
 					["u"] = 1,
 				}),
-				q(26518, {	-- Heads Up
+				q(26518, {	-- Heads Up (A)
 					["qg"] = 43157,	-- Doran Steelwing
+					["coord"] = { 64.0, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26366, {	-- Heads Up
+				q(26366, {	-- Heads Up (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["races"] = HORDE_ONLY,
 				}),
-				q(26526, {	-- Hunt the Keeper
+				q(26526, {	-- Hunt the Keeper (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26517 },	-- Summit of Fate
 					["g"] = {
@@ -186,7 +190,7 @@ _.Zones =
 						i(156945),	-- Talon Hatchet
 					},
 				}),
-				q(26369, {	-- Hunt the Keeper (awarded Hinterlands Quests achievement)
+				q(26369, {	-- Hunt the Keeper (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26363 },	-- Summit of Fate
@@ -206,11 +210,13 @@ _.Zones =
 				}),
 				q(27625, {	-- In Defense of Quel'Danil
 					["qg"] = 46475,	-- Anchorite Traska
+					["coord"] = { 32.2, 42.6, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 				}),
-				q(26516, {	-- It's Ours Now
+				q(26516, {	-- It's Ours Now (A)
 					["qg"] = 43157,	-- Doran Steelwing
+					["coord"] = { 64.0, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26498 },	-- Death to the Vilebranch
 					["g"] = {
@@ -219,7 +225,7 @@ _.Zones =
 						i(131542),	-- Soul Eater Pauldrons
 					},
 				}),
-				q(26308, {	-- It's Ours Now
+				q(26308, {	-- It's Ours Now (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
@@ -256,23 +262,26 @@ _.Zones =
 						}),
 					},
 				}),
-				q(26515, {	-- Ongo'longo's Revenge
+				q(26515, {	-- Ongo'longo's Revenge (A)
 					["qg"] = 43157,	-- Doran Steelwing
+					["coord"] = { 64.0, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26518 },	-- Heads Up
 				}),
-				q(26367, {	-- Ongo'longo's Revenge
+				q(26367, {	-- Ongo'longo's Revenge (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26307 },	-- Death to the Vilebranch
 				}),
 				q(26548, {	-- Out to the Front
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26547, 26546 },	-- A Mangy Threat & Razorbeak Friends
 				}),
-				q(26490, {	-- Prime Slime
+				q(26490, {	-- Prime Slime (A)
 					["qg"] = 43109,	-- Dron Blastbrew
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 					["g"] = {
@@ -283,7 +292,7 @@ _.Zones =
 						i(156946),	-- Goopy Mallet
 					},
 				}),
-				q(26283, {	-- Prime Slime
+				q(26283, {	-- Prime Slime (H)
 					["qg"] = 42612,	-- Malcolm Fendelson
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
@@ -301,17 +310,20 @@ _.Zones =
 				}),
 				q(27725, {	-- Quel'Danil Lodge
 					["qg"] = 46476,	-- Tracker Yoro
+					["coord"] = { 64.0, 59.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26526 },	-- Hunt the Keeper
 				}),
 				q(26546, {	-- Razorbeak Friends
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(59236),	-- Gryphon-Down Scarf
 						i(59237),	-- Gryphon Master's Belt
 						i(59238),	-- Talon Axe
 						i(131553),	-- Gryphon Master's Chain
+                        i(59235),	-- Razorbeak Amulet
 					},
 				}),
 				q(7847, {	-- Return to Primal Torntusk
@@ -338,8 +350,9 @@ _.Zones =
 						un(2, i(19117)),	-- Laquered Wooden Plate Legplates
 					},
 				}),
-				q(26532, {	-- Shadra the Venom Queen
+				q(26532, {	-- Shadra the Venom Queen (A)
 					["qg"] = 43298,	-- Wildhammer Lookout
+					["coord"] = { 34.4, 67.8, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26531 },	-- Summoning Shadra
 					["g"] = {
@@ -351,7 +364,7 @@ _.Zones =
 						i(131550),	-- Aerie War Cap
 					},
 				}),
-				q(26419, {	-- Shadra the Venom Queen (awarded "Hiri'watha" criteria, even though I had already completed the zone achievement ???)
+				q(26419, {	-- Shadra the Venom Queen (H) (awarded "Hiri'watha" criteria, even though I had already completed the zone achievement ???)
 					["qg"] = 43299,	-- Deathstalker Lookout
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26558 },	-- Summoning Shadra
@@ -364,28 +377,31 @@ _.Zones =
 						i(131527),	-- Venomous Headgear
 					},
 				}),
-				q(26491, {	-- Skulk Rock Clean-Up
+				q(26491, {	-- Skulk Rock Clean-Up (A)
 					["qg"] = 43108,	-- Kerr Ironsight
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 				}),
-				q(26267, {	-- Skulk Rock Clean-Up
+				q(26267, {	-- Skulk Rock Clean-Up (H)
 					["qg"] = 42613,	-- Elder Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
 				}),
-				q(26492, {	-- Skulk Rock Supplies
+				q(26492, {	-- Skulk Rock Supplies (A)
 					["qg"] = 43108,	-- Kerr Ironsight
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26483, 26462 },	-- Gan'dranda & The Wicked Revantusk
 				}),
-				q(26268, {	-- Skulk Rock Supplies
+				q(26268, {	-- Skulk Rock Supplies (H)
 					["qg"] = 42613,	-- Elder Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26238, 26263 },	-- The Savage Dwarves & Thornar Thunderclash
 				}),
 				q(26485, {	-- Snapjaws, Lad!
 					["qg"] = 43109,	-- Dron Blastbrew
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
@@ -414,12 +430,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26432 },	-- The Fall of Jintha'Alor
 				}),
-				q(26643, {	-- Starvation Diet
+				q(26643, {	-- Starvation Diet (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26641 },	-- Can't Make an Omelette Without...
 				}),
-				q(26387, {	-- Starvation Diet
+				q(26387, {	-- Starvation Diet (H)
 					["qg"] = 42896,	-- Apothecary Surlis
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26382 },	-- Can't Make an Omelette Without...
@@ -428,42 +445,51 @@ _.Zones =
 					["qg"] = 14739,	-- Mystic Yayo'jin
 					["races"] = HORDE_ONLY,
 				}),
-				q(26517, {	-- Summit of Fate
+				q(26517, {	-- Summit of Fate (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26515 },	-- Ongo'longo's Revenge
+					["sourceQuests"] = { 
+						26498, 	-- Death to the Vilebranch
+						26515,	-- Ongo'longo's Revenge
+					},
 				}),
-				q(26363, {	-- Summit of Fate
+				q(26363, {	-- Summit of Fate (H)
 					["qg"] = 42642,	-- Primal Torntusk
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26308, 26367 },	-- It's Ours Now & Ongo'longo's Revenge
 				}),
-				q(26531, {	-- Summoning Shadra
+				q(26531, {	-- Summoning Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26530 },	-- The Shell of Shadra
 				}),
-				q(26558, {	-- Summoning Shadra
+				q(26558, {	-- Summoning Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26418 },	-- The Shell of Shadra
 				}),
-				q(28505, {	-- The Battle for Andorhal
+				q(28505, {	-- The Battle for Andorhal (A)
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, 26 },
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
-				q(28508, {	-- The Battle for Andorhal (can't be picked up if you have "Warchief's Command: Western Plaguelands")
+				q(28508, {	-- The Battle for Andorhal (H) (can't be picked up if you have "Warchief's Command: Western Plaguelands")
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
+					["isBreadcrumb"] = true,
 				}),
-				q(26528, {	-- The Eye of Shadra
+				q(26528, {	-- The Eye of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27625, 27626 },	-- In Defense of Quel'Danil & The Highvale Documents
 				}),
-				q(26381, {	-- The Eye of Shadra
+				q(26381, {	-- The Eye of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["races"] = HORDE_ONLY,
 				}),
@@ -472,12 +498,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26267, 26268 },	-- Skulk Rock Clean-Up & Skulk Rock Supplies
 				}),
-				q(26529, {	-- The Fang of Shadra
+				q(26529, {	-- The Fang of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26528 },	-- The Eye of Shadra
 				}),
-				q(26406, {	-- The Fang of Shadra
+				q(26406, {	-- The Fang of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26381 },	-- The Eye of Shadra
@@ -494,6 +521,7 @@ _.Zones =
 				}),
 				q(27626, {	-- The Highvale Documents
 					["qg"] = 46475,	-- Anchorite Traska
+					["coord"] = { 32.2, 42.6, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27725 },	-- Quel'Danil Lodge
 				}),
@@ -502,8 +530,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28574 },	-- Warchief's Command: The Hinterlands!
 				}),
-				q(26530, {	-- The Shell of Shadra
+				q(26530, {	-- The Shell of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
+					["coord"] = { 30.7, 47.1, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26529 },	-- The Fang of Shadra
 					["g"] = {
@@ -515,7 +544,7 @@ _.Zones =
 						i(131548),	-- Grips of Fanatical Zealotry
 					},
 				}),
-				q(26418, {	-- The Shell of Shadra
+				q(26418, {	-- The Shell of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26406 },	-- The Fang of Shadra
@@ -530,6 +559,7 @@ _.Zones =
 				}),
 				q(26462, {	-- The Wicked Revantusk
 					["qg"] = 43108,	-- Kerr Ironsight
+					["coord"] = { 66.3, 44.3, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26263, {	-- Thornar Thunderclash
@@ -543,18 +573,20 @@ _.Zones =
 						i(131498),	-- Encroaching Boots
 					},
 				}),
-				q(26525, {	-- Venomous Secrets
+				q(26525, {	-- Venomous Secrets (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
+					["coord"] = { 63.8, 60.0, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26517 },	-- Summit of Fate
 				}),
-				q(26368, {	-- Venomous Secrets
+				q(26368, {	-- Venomous Secrets (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26309 },	-- Dark Vessels
 				}),
 				q(26497, {	-- Vilebranch Scum
 					["qg"] = 43157,	-- Doran Steelwing
+					["coord"] = { 64.0, 59.9, 26 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26496 },	-- Down with the Vilebranch
 				}),

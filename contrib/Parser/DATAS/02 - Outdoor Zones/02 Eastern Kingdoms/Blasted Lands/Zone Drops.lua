@@ -135,7 +135,9 @@ _.Zones =
 					["crs"] = { 6005 },	-- Shadowsworn Thug
 					["u"] = 7,	-- BoE Item
 				}),
-				i(118675),	-- Time-Locked Box (PET!)
+				i(118675, {	-- Time-Locked Box (PET!)
+					["description"] = "Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",
+				}),
 			}),
 		}),
 	}),

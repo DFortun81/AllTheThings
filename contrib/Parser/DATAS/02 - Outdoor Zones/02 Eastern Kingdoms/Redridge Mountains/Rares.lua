@@ -7,7 +7,8 @@ _.Zones =
 		m(49, {	-- Redridge Mountains
 			n(-16, {	-- Rares
 				n(14273, { 	-- Boulderheart
-					["g"] = {
+					["coord"] = { 56.6, 51.6, 49 },
+					["groups"] = {
 						i(9766),	-- Greenweave Sash
 						i(9783),	-- Raider's Chestpiece
 						i(9776),	-- Bandit Boots
@@ -42,7 +43,8 @@ _.Zones =
 					},
 				}), 
 				n(616, { 	-- Chatter
-					["g"] = {
+					["coord"] = { 38.2, 35.8, 49 },
+					["groups"] = {
 						i(6557),	-- Bard's Boots
 						i(9786),	-- Raider's Cloak
 						i(6539),	-- Willow Belt
@@ -72,7 +74,8 @@ _.Zones =
 					},
 				}), 
 				n(52146, { 	-- Chitter
-					["g"] = {
+					["coord"] = { 63.8, 65.2, 49 },
+					["groups"] = {
 						i(6545),	-- Soldier's Armor
 						i(9779),	-- Bandit Cloak
 						i(6553),	-- Bard's Trousers
@@ -104,8 +107,15 @@ _.Zones =
 						i(6581),	-- Scouting Belt
 					},
 				}),
+				n(147222, {	-- Gnollfeaster
+					["coord"] = { 24.4, 70.9, 49 },
+					["groups"] = {
+						i(165722),	-- Redridge Tarantula Egg
+					},
+				}),
 				n(584, { 	-- Kazon
-					["g"] = {
+					["coord"] = { 34.8, 12.2, 49 },
+					["groups"] = {
 						i(6547),	-- Soldier's Gauntlets
 						i(6546),	-- Soldier's Leggings
 						i(9785),	-- Raider's Bracers
@@ -133,15 +143,14 @@ _.Zones =
 						un(7, i(3231)),		-- Cutthroat Pauldrons
 						un(7, i(2058)),		-- Kazon's Maul
 					},
-				}), 
-				n(147222, {	-- Gnollfeaster
-					["coord"] = { 24.4, 70.9, 49 },
-					["g"] = {
-						i(165722),	-- Redridge Tarantula Egg
-					},
 				}),
 				n(14271, { 	-- Ribchaser
-					["g"] = {
+					["coords"] = {
+						{ 30.0, 57.6, 49 },
+						{ 30.0, 60.2, 49 },
+						{ 29.6, 64.2, 49 },
+					},
+					["groups"] = {
 						i(6557),	-- Bard's Boots
 						i(6539),	-- Willow Belt
 						i(6541),	-- Willow Gloves
@@ -170,7 +179,8 @@ _.Zones =
 					},
 				}), 
 				n(947, {	-- Rohh the Silent
-					["g"] = {
+					["coord"] = { 68.0, 35.6, 49 },
+					["groups"] = {
 						i(6540),	-- Willow Pants
 						i(9779),	-- Bandit Cloak
 						i(9788),	-- Raider's Belt
@@ -207,7 +217,8 @@ _.Zones =
 					},
 				}),
 				n(14269, {	-- Seeker Aqualon
-					["g"] = {
+					["coord"] = { 71.05, 55.0, 49 },
+					["groups"] = {
 						i(6540),	-- Willow Pants
 						i(9779),	-- Bandit Cloak
 						i(6553),	-- Bard's Trousers
@@ -241,7 +252,8 @@ _.Zones =
 					},
 				}), 
 				n(14272, {	-- Snarlflare
-					["g"] = {
+					["coord"] = { 34.0, 57.0, 49 },
+					["groups"] = {
 						i(6551),	-- Soldier's Boots
 						i(6547),	-- Soldier's Gauntlets
 						i(6546),	-- Soldier's Leggings
@@ -275,7 +287,8 @@ _.Zones =
 					},
 				}),
 				n(14270, {	-- Squiddic
-					["g"] = {
+					["coord"] = { 37.4, 42.6, 49 },
+					["groups"] = {
 						i(6557),	-- Bard's Boots
 						i(6548),	-- Soldier's Girdle
 						i(6539),	-- Willow Belt
@@ -302,77 +315,6 @@ _.Zones =
 						i(9788),	-- Raider's Belt
 						i(6550),	-- Soldier's Wristguards
 						un(7, i(1469)), 	-- Scimitar of Atun
-					},
-				}),
-				n(-40, {	-- Legacy -- TODO:: these look like zone drops. Verify each one and move where appropriate
-					["groups"] = {
-						n(-16, {	-- Rares (Legacy)
-							un(43, n(440, {	-- Blackrock Grunt
-								un(7, i(1446)),	-- Blackrock Boots 
-							})),
-							n(435, {	-- Blackrock Champion
-								un(7, i(1455)),	-- Blackrock Champion's Axe 
-							}),							
-							un(43, n(485, {	-- Blackrock Outrunner
-								un(7, i(1448)),	-- Blackrock Gauntlets 
-							})),							
-							n(4065, {	-- Blackrock Sentry
-								un(7, i(1296)),	-- Blackrock Mace 
-							}),	
-							n(436, {	-- Blackrock Shadowcaster
-								un(7, i(1299)),	-- Lesser Belt of the Spire
-								un(7, i(1300)),	-- Lesser Staff of the Spire
-							}),
-							nh(397, {	-- Grand Magus Doane 
-								["description"] = "Morganth was removed and Doane has taken his place. Blizzard used same npcID.",
-								["g"] = {
-									un(7, i(2566)),	-- Sacrificial Robes
-								},
-							}),	
-							n(544, {	-- Murloc Nightcrawler
-								un(7, i(1406)),	-- Pearl-Encrusted Spear
-							}),
-							n(545, {	-- Murloc Tidecaller
-								un(7, i(1473)),	-- Riverside Staff
-							}),
-							n(434, { 	-- Rabid Shadowhide Gnoll
-								un(7, i(1460)),	-- Shadowhide Two-Handed Sword 
-							}),							
-							n(445, { 	-- Redridge Alpha
-								un(7, i(1218)),	-- Heavy Gnoll War Club 
-							}),	
-							n(446, { 	-- Redridge Basher
-								un(7, i(1440)),	-- Gnoll Skull Basher 
-							}),							
-							n(426, { 	-- Redridge Brute
-								un(7, i(1214)),	-- Gnoll Punisher 
-							}),
-							n(580, { 	-- Redridge Drudger
-								un(7, i(1220)),	-- Lupine Axe 
-							}),							
-							n(423, { 	-- Redridge Mongrel 
-								un(7, i(1211)),	-- Gnoll War Harness
-							}),
-							n(424, { 	-- Redridge Poacher
-								un(7, i(1219)),	-- Redridge Machete 
-							}),
-							n(579, { 	-- Shadowhide Assassin
-								un(7, i(1459)),	-- Shadowhide Scalper
-							}),							
-							n(433, { 	-- Shadowhide Gnoll
-								un(7, i(1457)),	-- Shadowhide Mace 
-							}),	
-							n(431, { 	-- Shadowhide Slayer
-								un(7, i(1458)),	-- Shadowhide Maul
-								un(7, i(1461)),	-- Slayer's Battle Axe
-							}),
-							n(568, { 	-- Shadowhide Warrior
-								un(7, i(2175)),	-- Shadowhide Battle Axe
-							}),
-							n(442, { 	-- Tarantula
-								un(7, i(1287)),	-- Giant Tarantula Fang 
-							}),
-						}),
 					},
 				}),
 			}),

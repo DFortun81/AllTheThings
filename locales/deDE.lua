@@ -61,6 +61,7 @@ for key,value in pairs({
 	[138492] = "Splitter von Myzrael",
 	[141979] = "Antiker Schatz",
 	[142195] = "Schlachtplan der Waldpfoten",
+	[142343] = "Podest von Uldum",
 	[142487] = "Der Funkelmat 5200",
 	[144063] = "Monolith von Equinex",
 	[148502] = "Seite 9",

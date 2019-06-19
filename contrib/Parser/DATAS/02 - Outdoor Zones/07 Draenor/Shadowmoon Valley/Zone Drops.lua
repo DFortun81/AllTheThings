@@ -3,27 +3,17 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Draenor
-		["mapID"] = 572,	-- Draenor
-		["g"] = {
-			{	-- Shadowmoon Valley
-				["mapID"] = 539,
-				["g"] = {
-					{	-- Zone Drops
-						["npcID"] = 0,
-						["groups"] = {
-							{	-- Zomstrok
-								["itemID"] = 113554,
-								["description"] = "Can be found on the islands southwest of Socrethar's Rise.",
-								["crs"] = {
-									82261,	-- Darktide Boneshell
-									82262,	-- Darktide Husk
-								},
-							},
-						},
+	m(572, {	-- Draenor
+		m(539, {	-- Shadowmoon Valley
+			n(0, {	-- Zone Drops
+				i(113554, {	-- Zomstrok (PET!)
+					["description"] = "Can be found on the islands southwest of Socrethar's Rise.",
+					["crs"] = {
+						82261,	-- Darktide Boneshell
+						82262,	-- Darktide Husk
 					},
-				},
-			},
-		},
-	},
+				}),
+			}),
+		}),
+	}),
 };

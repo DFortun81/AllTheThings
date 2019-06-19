@@ -21,6 +21,7 @@ _.Zones =
 						["crs"] = { 61081 },	-- Squirrel
 					}),
 					n(63077, {	-- Lehna
+						["coord"] = { 49.2, 52.0, 97 },
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 						["g"] = {
 							p(138, {	-- Blue Moth
@@ -53,21 +54,25 @@ _.Zones =
 					}),
 					q(31569, {	-- Got one!
 						["qg"] = 63077,	-- Lehna
+						["coord"] = { 49.2, 52.0, 97 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31825,	-- Level Up!
 					}),
 					q(31556, {	-- Learning the Ropes
 						["qg"] = 63077,	-- Lehna
+						["coord"] = { 49.2, 52.0, 97 },
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 					}),
 					q(31825, {	-- Level Up!
 						["qg"] = 63077,	-- Lehna
+						["coord"] = { 49.2, 52.0, 97 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31568,	-- On The Mend
 					}),
 					q(31568, {	-- On The Mend
 						["qg"] = 63077,	-- Lehna
+						["coord"] = { 49.2, 52.0, 97 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31556,	-- Learning the Ropes
 					}),

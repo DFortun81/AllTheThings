@@ -866,6 +866,16 @@ namespace Parser_V2
                         return "achID";
                     }
 
+                case "minRep":
+                case "minReputation":
+                    {
+                        return "minReputation";
+                    }
+                case "maxRep":
+                case "maxReputation":
+                    {
+                        return "maxReputation";
+                    }
                 // This field is just fine the way it is.
                 default: return field;
             }

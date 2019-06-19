@@ -3,1055 +3,553 @@
 ---------------------------------------------
 _.Mounts =
 {
-	{	-- Vendor
-		["npcID"] = -2,	-- Vendor
-		["g"] = {
-			{	-- Admiralty Stallion
-				["itemID"] = 161911,	-- Admiralty Stallion
-			},
-			{	-- Alabaster Hyena
-				["itemID"] = 161773,	-- Alabaster Hyena
-			},
-			{	-- Amber Scorpion
-				["itemID"] = 85262,	-- Amber Scorpion
-			},
-			i(167167),	-- Ankoan Waveray
-			{	-- Arcadian War Turtle
-				["itemID"] = 141713,	-- Arcadian War Turtle
-			},
-			{	-- Argent Charger
-				["itemID"] = 47179,	-- Argent Charger
-				["classes"] = {
-					2,	-- Paladins
-				},
-			},
-			{	-- Argent Hippogryph
-				["itemID"] = 45725,	-- Argent Hippogryph
-			},
-			{	-- Argent Warhorse
-				["itemID"] = 47180,	-- Argent Warhorse
-			},
-			{	-- Armored Blue Wind Rider
-				["itemID"] = 44690,	-- Armored Blue Wind Rider
-			},
-			{	-- Armored Brown Bear [Alliance Only]
-				["itemID"] = 44225,	-- Armored Brown Bear [Alliance Only]
-			},
-			{	-- Armored Brown Bear [Horde Only]
-				["itemID"] = 44226,	-- Armored Brown Bear [Horde Only]
-			},
-			{	-- Armored Irontusk
-				["itemID"] = 116665,	-- Armored Irontusk
-			},
-			{	-- Armored Snowy Gryphon
-				["itemID"] = 44689,	-- Armored Snowy Gryphon
-			},
-			{	-- Ashhide Mushan Beast
-				["itemID"] = 103638,	-- Ashhide Mushan Beast
-			},
-			{	-- Azure Riding Crane
-				["itemID"] = 87781,	-- Azure Riding Crane
-			},
-			{	-- Azure Water Strider
-				["itemID"] = 81354,	-- Azure Water Strider
-			},
-			i(167894),	-- Beastlord's Irontusk
-			i(167895),	-- Beastlord's Warwolf
-			{	-- Black Battlestrider
-				["itemID"] = 29465,	-- Black Battlestrider
-			},
-			{	-- Black Dragon Turtle [Panda Only]
-				["itemID"] = 91008,	-- Black Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Black Dragon Turtle [All Others]
-				["itemID"] = 87795,	-- Black Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Black Hawkstrider
-				["itemID"] = 29221,	-- Black Hawkstrider
-			},
-			{	-- Black Riding Goat
-				["itemID"] = 89391,	-- Black Riding Goat
-			},
-			{	-- Black Skeletal Horse
-				["itemID"] = 46308,	-- Black Skeletal Horse
-			},
-			{	-- Black Stallion
-				["itemID"] = 2411,	-- Black Stallion
-			},
-			{	-- Black War Elekk
-				["itemID"] = 35906,	-- Black War Elekk
-			},
-			{	-- Black War Kodo
-				["itemID"] = 29466,	-- Black War Kodo
-			},
-			{	-- Black War Mammoth [Alliance Only]
-				["itemID"] = 43956,	-- Black War Mammoth [Alliance Only]
-			},
-			{	-- Black War Mammoth [Horde Only]
-				["itemID"] = 44077,	-- Black War Mammoth [Horde Only]
-			},
-			{	-- Black War Ram
-				["itemID"] = 29467,	-- Black War Ram
-			},
-			{	-- Black War Raptor
-				["itemID"] = 29472,	-- Black War Raptor
-			},
-			{	-- Black War Steed
-				["itemID"] = 29468,	-- Black War Steed
-			},
-			{	-- Black War Tiger
-				["itemID"] = 29471,	-- Black War Tiger
-			},
-			{	-- Black War Wolf
-				["itemID"] = 29469,	-- Black War Wolf
-			},
-			{	-- Black Wolf
-				["itemID"] = 46099,	-- Black Wolf
-			},
-			{	-- Blonde Riding Yak
-				["itemID"] = 87789,	-- Blonde Riding Yak
-			},
-			{	-- Bloodfang Widow
-				["itemID"] = 137570,	-- Bloodfang Widow
-			},
-			{	-- Blue Dragon Turtle [Panda Only]
-				["itemID"] = 91009,	-- Blue Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Blue Dragon Turtle
-				["itemID"] = 87796,	-- Blue Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Blue Hawkstrider
-				["itemID"] = 29220,	-- Blue Hawkstrider
-			},
-			{	-- Blue Mechanostrider
-				["itemID"] = 8595,	-- Blue Mechanostrider
-			},
-			{	-- Blue Riding Nether Ray
-				["itemID"] = 32319,	-- Blue Riding Nether Ray
-			},
-			{	-- Blue Shado-Pan Riding Tiger
-				["itemID"] = 89307,	-- Blue Shado-Pan Riding Tiger
-			},
-			{	-- Blue Skeletal Horse
-				["itemID"] = 13332,	-- Blue Skeletal Horse
-			},
-			{	-- Blue Wind Rider
-				["itemID"] = 25475,	-- Blue Wind Rider
-			},
-			{	-- Breezestrider Stallion
-				["itemID"] = 116775,	-- Breezestrider Stallion
-				["u"] = 2,
-				--Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
-			},
-			{	-- Bristling Hellboar [Alliance Only]
-				["itemID"] = 128481,	-- Bristling Hellboar [Alliance Only]
-			},
-			{	-- Bristling Hellboar [Horde Only]
-				["itemID"] = 128480,	-- Bristling Hellboar [Horde Only]
-				["u"] = 1,
-				--Note!! No idea where this one belongs.  It is not on the vendor.
-			},
-			{	-- Brown Dragon Turtle [Panda Only]
-				["itemID"] = 91005,	-- Brown Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Brown Dragon Turtle [All Others]
-				["itemID"] = 87797,	-- Brown Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Brown Elekk
-				["itemID"] = 28481,	-- Brown Elekk
-			},
-			{	-- Brown Horse
-				["itemID"] = 5656,	-- Brown Horse
-			},
-			{	-- Brown Kodo
-				["itemID"] = 15290,	-- Brown Kodo
-			},
-			{	-- Brown Ram
-				["itemID"] = 5872,	-- Brown Ram
-			},
-			{	-- Brown Riding Camel
-				["itemID"] = 63044,	-- Brown Riding Camel
-			},
-			{	-- Brown Riding Goat
-				["itemID"] = 89362,	-- Brown Riding Goat
-			},
-			{	-- Brown Skeletal Horse
-				["itemID"] = 13333,	-- Brown Skeletal Horse
-			},
-			{	-- Brown Wolf
-				["itemID"] = 5668,	-- Brown Wolf
-			},
-			i(161666),	-- Captured Swampstalker
-			{	-- Cenarion War Hippogryph
-				["itemID"] = 33999,	-- Cenarion War Hippogryph
-			},
-			{	-- Champion's Treadblade
-				["itemID"] = 116789,	-- Champion's Treadblade
-			},
-			{	-- Chestnut Mare
-				["itemID"] = 5655,	-- Chestnut Mare
-			},
-			{	-- Cobalt Pterrordax
-				["itemID"] = 161665,	-- Cobalt Pterrordax
-			},
-			{	-- Cobalt Riding Talbuk [Alliance Only]
-				["itemID"] = 31830,	-- Cobalt Riding Talbuk [Alliance Only]
-			},
-			{	-- Cobalt Riding Talbuk [Horde Only]
-				["itemID"] = 31829,	-- Cobalt Riding Talbuk [Horde Only]
-			},
-			{	-- Cobalt War Talbuk [Alliance Only]
-				["itemID"] = 29227,	-- Cobalt War Talbuk [Alliance Only]
-			},
-			{	-- Cobalt War Talbuk [Horde Only]
-				["itemID"] = 29102,	-- Cobalt War Talbuk [Horde Only]
-			},
-			{	-- Corrupted Dreadwing
-				["itemID"] = 123974,	-- Corrupted Dreadwing
-			},
-			{	-- Crimson Primal Direhorn
-				["itemID"] = 95565,	-- Crimson Primal Direhorn
-			},
-			i(169202),	-- Crimson Tidestallion
-			{	-- Crimson Water Strider
-				["itemID"] = 87791,	-- Crimson Water Strider
-			},
-			{	-- Dapple Gray
-				["itemID"] = 161912,	-- Dapple Gray
-			},
-			{	-- Dark Phoenix
-				["itemID"] = 63125,	-- Dark Phoenix
-			},
-			{	-- Dark Riding Talbuk
-				["itemID"] = 28915,	-- Dark Riding Talbuk
-			},
-			{	-- Dark War Talbuk
-				["itemID"] = 29228,	-- Dark War Talbuk
-			},
-			{	-- Darkspear Raptor
-				["itemID"] = 45593,	-- Darkspear Raptor
-			},
-			{	-- Darnassian Nightsaber
-				["itemID"] = 45591,	-- Darnassian Nightsaber
-			},
-			{	-- Deathtusk Felboar [Alliance Only]
-				["itemID"] = 128526,	-- Deathtusk Felboar [Alliance Only]
-			},
-			{	-- Deathtusk Felboar [Horde Only]
-				["itemID"] = 128527,	-- Deathtusk Felboar [Horde Only]
-			},
-			{	-- Dire Wolf
-				["itemID"] = 5665,	-- Dire Wolf
-			},
-			{	-- Domesticated Razorback
-				["itemID"] = 116672,	-- Domesticated Razorback
-			},
-			{	-- Drake of the West Wind [Alliance Only]
-				["itemID"] = 63039,	-- Drake of the West Wind [Alliance Only]
-			},
-			{	-- Drake of the West Wind [Horde Only]
-				["itemID"] = 65356,	-- Drake of the West Wind [Horde Only]
-			},
-			{	-- Dusky Rockhide
-				["itemID"] = 116664,	-- Dusky Rockhide
-			},
-			i(161908),	-- Dusky Waycrest Gryphon
-			{	-- Ebon Gryphon
-				["itemID"] = 25472,	-- Ebon Gryphon
-			},
-			{	-- Emerald Raptor
-				["itemID"] = 8588,	-- Emerald Raptor
-			},
-			{	-- Expedition Bloodswarmer
-				["itemID"] = 161774,	-- Expedition Bloodswarmer
-			},
-			{	-- Exodar Elekk
-				["itemID"] = 45590,	-- Exodar Elekk
-			},
-			{	-- Forsaken Warhorse
-				["itemID"] = 45597,	-- Forsaken Warhorse
-			},
-			{	-- Frostwolf Howler
-				["itemID"] = 19029,	-- Frostwolf Howler
-			},
-			{	-- Gnomeregan Mechanostrider
-				["itemID"] = 45589,	-- Gnomeregan Mechanostrider
-			},
-			{	-- Goblin Trike
-				["itemID"] = 62461,	-- Goblin Trike
-			},
-			{	-- Goblin Turbo-Trike
-				["itemID"] = 62462,	-- Goblin Turbo-Trike
-			},
-			{	-- Golden Gryphon
-				["itemID"] = 25470,	-- Golden Gryphon
-			},
-			{	-- Golden King
-				["itemID"] = 62298,	-- Golden King
-			},
-			{	-- Golden Primal Direhorn
-				["itemID"] = 95564,	-- Golden Primal Direhorn
-			},
-			{	-- Golden Riding Crane
-				["itemID"] = 87782,	-- Golden Riding Crane
-			},
-			{	-- Grand Armored Gryphon
-				["itemID"] = 93168,	-- Grand Armored Gryphon
-			},
-			{	-- Grand Armored Wyvern
-				["itemID"] = 93169,	-- Grand Armored Wyvern
-			},
-			{	-- Grand Expedition Yak
-				["itemID"] = 84101,	-- Grand Expedition Yak
-			},
-			{	-- Grand Ice Mammoth [Alliance Only]
-				["itemID"] = 43961,	-- Grand Ice Mammoth [Alliance Only]
-			},
-			{	-- Grand Ice Mammoth [Horde Only]
-				["itemID"] = 44086,	-- Grand Ice Mammoth [Horde Only]
-			},
-			{	-- Gray Elekk
-				["itemID"] = 29744,	-- Gray Elekk
-			},
-			{	-- Gray Kodo
-				["itemID"] = 15277,	-- Gray Kodo
-			},
-			{	-- Gray Ram
-				["itemID"] = 5864,	-- Gray Ram
-			},
-			{	-- Great Black Dragon Turtle [Panda Only]
-				["itemID"] = 91011,	-- Great Black Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Black Dragon Turtle [All Others]
-				["itemID"] = 87802,	-- Great Black Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Great Blue Dragon Turtle [Panda Only]
-				["itemID"] = 91013,	-- Great Blue Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Blue Dragon Turtle [All Others]
-				["itemID"] = 87803,	-- Great Blue Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),			
-			},
-			{	-- Great Blue Elekk
-				["itemID"] = 29745,	-- Great Blue Elekk
-			},
-			{	-- Great Brown Dragon Turtle [Panda Only]
-				["itemID"] = 91014,	-- Great Brown Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Brown Dragon Turtle [All Others]
-				["itemID"] = 87804,	-- Great Brown Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Great Brown Kodo
-				["itemID"] = 18794,	-- Great Brown Kodo
-			},
-			{	-- Great Golden Kodo
-				["itemID"] = 46750,	-- Great Golden Kodo
-			},
-			{	-- Great Gray Kodo
-				["itemID"] = 18795,	-- Great Gray Kodo
-			},
-			{	-- Great Green Dragon Turtle [Panda Only]
-				["itemID"] = 91012,	-- Great Green Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Green Dragon Turtle [All Others]
-				["itemID"] = 87801,	-- Great Green Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Great Green Elekk
-				["itemID"] = 29746,	-- Great Green Elekk
-			},
-			{	-- Great Purple Dragon Turtle [Panda Only]
-				["itemID"] = 91015,	-- Great Purple Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Purple Dragon Turtle [All Others]
-				["itemID"] = 87805,	-- Great Purple Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},			
-			{	-- Great Purple Elekk
-				["itemID"] = 29747,	-- Great Purple Elekk
-			},
-			{	-- Great Red Dragon Turtle [Panda Only]
-				["itemID"] = 91010,	-- Great Red Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Great Red Dragon Turtle
-				["itemID"] = 82811,	-- Great Red Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Great Red Elekk
-				["itemID"] = 46745,	-- Great Red Elekk
-				["races"] = {
-					11,	-- Draenei
-				},
-			},
-			{	-- Great Red Elekk
-				["itemID"] = 46756,	-- Great Red Elekk
-				["races"] = exclude(
-					{ -- Exclude these races
-						11,	-- Draenei
-					},
-					ALLIANCE_ONLY
-				),
-			},
-			{	-- Great White Kodo
-				["itemID"] = 18793,	-- Great White Kodo
-			},
-			{	-- Green Dragon Turtle [Panda Only]
-				["itemID"] = 91004,	-- Green Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Green Dragon Turtle [All Others]
-				["itemID"] = 82765,	-- Green Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Green Mechanostrider
-				["itemID"] = 13321,	-- Green Mechanostrider
-			},
-			{	-- Green Riding Nether Ray
-				["itemID"] = 32314,	-- Green Riding Nether Ray
-			},
-			{	-- Green Shado-Pan Riding Tiger
-				["itemID"] = 89305,	-- Green Shado-Pan Riding Tiger
-			},
-			{	-- Green Skeletal Warhorse
-				["itemID"] = 13334,	-- Green Skeletal Warhorse
-			},
-			{	-- Green Wind Rider
-				["itemID"] = 25476,	-- Green Wind Rider
-			},
-			{	-- Grey Riding Yak
-				["itemID"] = 87788,	-- Grey Riding Yak
-			},
-			{	-- Heavenly Golden Cloud Serpent
-				["itemID"] = 87774,	-- Heavenly Golden Cloud Serpent
-			},
-			{	-- Huntmaster's Dire Wolfhawk [Hunter Only]
-				["itemID"] = 142228,	-- Huntmaster's Dire Wolfhawk
-				["classes"] = {
-					3,	-- Hunter Only
-				},
-			},
-			{	-- Huntmaster's Fierce Wolfhawk [Hunter Only]
-				["itemID"] = 142226,	-- Huntmaster's Fierce Wolfhawk
-				["classes"] = {
-					3,	-- Hunter Only
-				},
-			},
-			{	-- Ice Mammoth [Alliance Only]
-				["itemID"] = 43958,	-- Ice Mammoth [Alliance Only]
-			},
-			{	-- Ice Mammoth [Horde Only]
-				["itemID"] = 44080,	-- Ice Mammoth [Horde Only]
-			},
-			i(169203),	-- Inkscale Deepseeker
-			{	-- Ironforge Ram
-				["itemID"] = 45586,	-- Ironforge Ram
-			},
-			{	-- Ironside Warwolf
-				["itemID"] = 116782,	-- Ironside Warwolf
-			},
-			{	-- Ivory Hawkstrider
-				["itemID"] = 142369,	-- Ivory Hawkstrider
-			},
-			{	-- Kor'kron Annihilator
-				["itemID"] = 67107,	-- Kor'kron Annihilator
-			},
-			{	-- Lightforged Warframe Mount
-				["itemID"] = 152788,	-- Lightforged Warframe Mount
-			},
-			{	-- Reins of the Mighty Caravan Brutosaur
-				["itemID"] = 163042,	-- Reins of the Mighty Caravan Brutosaur
-			},
-			{	-- Mosshide Riverwallow
-				["itemID"] = 116768,	-- Mosshide Riverwallow
-			},
-			{	-- Mountain Horse
-				["itemID"] = 73838,	-- Mountain Horse
-			},
-			{	-- Netherlord's Brimstone Wrathsteed [Warlock Only]
-				["itemID"] = 143637,	-- Netherlord's Brimstone Wrathsteed
-				["classes"] = {
-					9,	-- Warlock Only
-				},
-			},	-- Netherlord's Chaotic Wrathsteed [Warlock Only]
-			{	-- Ochre Skeletal Warhorse
-				["itemID"] = 47101,	-- Ochre Skeletal Warhorse
-			},
-			{	-- Orgrimmar Wolf
-				["itemID"] = 45595,	-- Orgrimmar Wolf
-			},
-			{	-- Pale Thorngrazer
-				["itemID"] = 116776,	-- Pale Thorngrazer
-				["u"] = 2,
-				--Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
-			},
-			{	-- Reins of the Palehide Direhorn
-				["itemID"] = 163589,	-- Reins of the Palehide Direhorn
-			},
-			{	-- Pinto
-				["itemID"] = 2414,	-- Pinto
-			},
-			i(161879),	-- Proudmoore Sea Scout
-			{	-- Purple Dragon Turtle [Panda Only]
-				["itemID"] = 91006,	-- Purple Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Purple Dragon Turtle [All Others]
-				["itemID"] = 87799,	-- Purple Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Purple Elekk
-				["itemID"] = 29743,	-- Purple Elekk
-			},
-			{	-- Purple Hawkstrider
-				["itemID"] = 29222,	-- Purple Hawkstrider
-			},
-			{	-- Purple Riding Nether Ray
-				["itemID"] = 32316,	-- Purple Riding Nether Ray
-			},
-			{	-- Purple Skeletal Warhorse
-				["itemID"] = 18791,	-- Purple Skeletal Warhorse
-			},
-			{	-- Quel'dorei Steed
-				["itemID"] = 46815,	-- Quel'dorei Steed
-			},
-			{	-- Red Dragon Turtle [Panda Only]
-				["itemID"] = 91007,	-- Red Dragon Turtle [Panda Only]
-				["races"] = {
-					25,	-- Horde Pandaren
-					26,	-- Alliance Pandaren
-				},
-			},
-			{	-- Red Dragon Turtle [All Others]
-				["itemID"] = 87800,	-- Red Dragon Turtle
-				["races"] = exclude(
-					{ -- Exclude these races
-						24,	-- Pandaren [Neutral]
-						25,	-- Pandaren [Alliance]
-						26,	-- Pandaren [Horde]
-					},
-					ALL_RACES	-- Includes all other races
-				),
-			},
-			{	-- Red Drake
-				["itemID"] = 43955,	-- Red Drake
-			},
-			{	-- Red Flying Cloud
-				["itemID"] = 89363,	-- Red Flying Cloud
-			},
-			{	-- Red Hawkstrider
-				["itemID"] = 28927,	-- Red Hawkstrider
-			},
-			{	-- Red Mechanostrider
-				["itemID"] = 8563,	-- Red Mechanostrider
-			},
-			{	-- Red Riding Nether Ray
-				["itemID"] = 32317,	-- Red Riding Nether Ray
-			},
-			{	-- Red Shado-Pan Riding Tiger
-				["itemID"] = 89306,	-- Red Shado-Pan Riding Tiger
-			},
-			{	-- Red Skeletal Horse
-				["itemID"] = 13331,	-- Red Skeletal Horse
-			},
-			{	-- Red Skeletal Warhorse
-				["itemID"] = 29470,	-- Red Skeletal Warhorse
-			},
-			{	-- Reins of the Amethyst Ruinstrider
-				["itemID"] = 152794,	-- Reins of the Amethyst Ruinstrider
-			},
-			{	-- Reins of the Beryl Ruinstrider
-				["itemID"] = 152795,	-- Reins of the Beryl Ruinstrider
-			},
-			{	-- Reins of the Cerulean Ruinstrider
-				["itemID"] = 152797,	-- Reins of the Cerulean Ruinstrider
-			},
-			{	-- Reins of the Russet Ruinstrider
-				["itemID"] = 152793,	-- Reins of the Russet Ruinstrider
-			},
-			{	-- Reins of the Sable Ruinstrider
-				["itemID"] = 152791,	-- Reins of the Sable Ruinstrider
-			},
-			{	-- Reins of the Umber Ruinstrider
-				["itemID"] = 152796,	-- Reins of the Umber Ruinstrider
-			},
-			{	-- Regal Riding Crane
-				["itemID"] = 87783,	-- Regal Riding Crane
-			},
-			{	-- Rocktusk Battleboar
-				["itemID"] = 116667,	-- Rocktusk Battleboar
-			},
-			i(168829),	-- Rustbolt Resistor
-			{	-- Shadowblade's Baneful Omen [Rogue Only]
-				["itemID"] = 143491,	-- Shadowblade's Baneful Omen
-				["classes"] = {
-					4,	-- Rogue Only
-				},
-			},
-			{	-- Shadowblade's Crimson Omen [Rogue Only]
-				["itemID"] = 143490,	-- Shadowblade's Crimson Omen
-				["classes"] = {
-					4,	-- Rogue Only
-				},
-			},
-			{	-- Shadowblade's Lethal Omen [Rogue Only]
-				["itemID"] = 143492,	-- Shadowblade's Lethal Omen
-				["classes"] = {
-					4,	-- Rogue Only
-				},
-			},
-			{	-- Shadowmane Charger
-				["itemID"] = 116772,	-- Shadowmane Charger
-			},
-			{	-- Silver Covenant Hippogryph
-				["itemID"] = 46813,	-- Silver Covenant Hippogryph
-			},
-			{	-- Silver Riding Nether Ray
-				["itemID"] = 32318,	-- Silver Riding Nether Ray
-			},
-			{	-- Silver Riding Talbuk [Alliance Only]
-				["itemID"] = 31832,	-- Silver Riding Talbuk [Alliance Only]
-			},
-			{	-- Silver Riding Talbuk [Horde Only]
-				["itemID"] = 31831,	-- Silver Riding Talbuk [Horde Only]
-			},
-			{	-- Silver War Talbuk [Alliance Only]
-				["itemID"] = 29229,	-- Silver War Talbuk [Alliance Only]
-			},
-			{	-- Silver War Talbuk [Horde Only]
-				["itemID"] = 29104,	-- Silver War Talbuk [Horde Only]
-			},
-			{	-- Silvermoon Hawkstrider
-				["itemID"] = 45596,	-- Silvermoon Hawkstrider
-			},
-			{	-- Smoky Charger
-				["itemID"] = 161910,	-- Smoky Charger
-			},
-			{	-- Snowy Gryphon
-				["itemID"] = 25472,	-- Snowy Gryphon
-			},
-			{	-- Spectral Steed [Alliance Only]
-				["itemID"] = 64998,	-- Spectral Steed [Alliance Only]
-			},
-			i(161664),	-- Spectral Pterrorwing
-			{	-- Spectral Wolf [Horde Only]
-				["itemID"] = 64999,	-- Spectral Wolf [Horde Only]
-			},
-			{	-- Spotted Frostsaber
-				["itemID"] = 8632,	-- Spotted Frostsaber
-			},
-			{	-- Stormpike Battle Charger
-				["itemID"] = 19030,	-- Stormpike Battle Charger
-			},
-			i(161909),	-- Stormsong Coastwatcher
-			{	-- Stormwind Steed
-				["itemID"] = 45125,	-- Stormwind Steed
-			},
-			{	-- Striped Dawnsaber
-				["itemID"] = 47100,	-- Striped Dawnsaber
-			},
-			{	-- Striped Frostsaber
-				["itemID"] = 8631,	-- Striped Frostsaber
-			},
-			{	-- Striped Nightsaber
-				["itemID"] = 8629,	-- Striped Nightsaber
-			},
-			{	-- Sunreaver Dragonhawk
-				["itemID"] = 46814,	-- Sunreaver Dragonhawk
-			},
-			{	-- Sunreaver Hawkstrider
-				["itemID"] = 46816,	-- Sunreaver Hawkstrider
-			},
-			{	-- Swift Blue Gryphon
-				["itemID"] = 25473,	-- Swift Blue Gryphon
-			},
-			{	-- Swift Blue Raptor
-				["itemID"] = 18788,	-- Swift Blue Raptor
-			},
-			{	-- Swift Brown Ram
-				["itemID"] = 18786,	-- Swift Brown Ram
-			},
-			{	-- Swift Brown Steed
-				["itemID"] = 18777,	-- Swift Brown Steed
-			},
-			{	-- Swift Brown Wolf
-				["itemID"] = 18796,	-- Swift Brown Wolf
-			},
-			{	-- Swift Burgundy Wolf
-				["itemID"] = 46749,	-- Swift Burgundy Wolf
-			},
-			{	-- Swift Frostsaber
-				["itemID"] = 18766,	-- Swift Frostsaber
-			},
-			{	-- Swift Frostwolf
-				["itemID"] = 116785,	-- Swift Frostwolf
-			},
-			{	-- Swift Gray Ram
-				["itemID"] = 18787,	-- Swift Gray Ram
-			},
-			{	-- Swift Gray Steed [Human Only]
-				["itemID"] = 46752,	-- Swift Gray Steed
-				["races"] = {
-					1,	-- Human
-				},
-			},
-			{	-- Swift Gray Steed [A - Except Human]
-				["itemID"] = 46758,	-- Swift Grey Steed
-				["races"] = exclude(
-					{ -- Exclude these races
-						1,	-- Human
-					},
-					ALLIANCE_ONLY
-				),
-			},
-			{	-- Swift Gray Wolf
-				["itemID"] = 18798,	-- Swift Gray Wolf
-			},
-			{	-- Swift Green Gryphon
-				["itemID"] = 25528,	-- Swift Green Gryphon
-			},
-			{	-- Swift Green Hawkstrider
-				["itemID"] = 29223,	-- Swift Green Hawkstrider
-			},
-			{	-- Swift Green Mechanostrider
-				["itemID"] = 18772,	-- Swift Green Mechanostrider
-			},
-			{	-- Swift Green Wind Rider
-				["itemID"] = 25531,	-- Swift Green Wind Rider
-			},
-			{	-- Swift Mistsaber
-				["itemID"] = 18767,	-- Swift Mistsaber
-			},
-			{	-- Swift Moonsaber
-				["itemID"] = 46744,	-- Swift Moonsaber
-				["races"] = {
-					4,	-- Night Elves
-				},
-			},
-			{	-- Swift Moonsaber
-				["itemID"] = 46759,	-- Swift Moonsaber
-				["races"] = exclude(
-					{ -- Exclude these races
-						4,	-- Night Elves
-					},
-					ALLIANCE_ONLY
-				),
-			},
-			{	-- Swift Mountain Horse
-				["itemID"] = 73839,	-- Swift Mountain Horse
-			},
-			{	-- Swift Olive Raptor
-				["itemID"] = 18789,	-- Swift Olive Raptor
-			},
-			{	-- Swift Orange Raptor
-				["itemID"] = 18790,	-- Swift Orange Raptor
-			},
-			{	-- Swift Palomino
-				["itemID"] = 18776,	-- Swift Palomino
-			},
-			{	-- Swift Pink Hawkstrider
-				["itemID"] = 28936,	-- Swift Pink Hawkstrider
-			},
-			{	-- Swift Purple Gryphon
-				["itemID"] = 25529,	-- Swift Purple Gryphon
-			},
-			{	-- Swift Purple Hawkstrider
-				["itemID"] = 29224,	-- Swift Purple Hawkstrider
-			},
-			{	-- Swift Purple Raptor
-				["itemID"] = 46743,	-- Swift Purple Raptor
-			},
-			{	-- Swift Purple Wind Rider
-				["itemID"] = 25533,	-- Swift Purple Wind Rider
-			},
-			{	-- Swift Red Gryphon
-				["itemID"] = 25527,	-- Swift Red Gryphon
-			},
-			{	-- Swift Red Hawkstrider
-				["itemID"] = 46751,	-- Swift Red Hawkstrider
-				["races"] = {
-					10,	-- Blood Elves
-				},
-			},
-			{	-- Swift Red Hawkstrider
-				["itemID"] = 46761,	-- Swift Red Hawkstrider
-				["races"] = exclude(
-					{ -- Exclude these races
-						10,	-- Blood Elves
-					},
-					HORDE_ONLY
-				),
-			},
-			{	-- Swift Red Wind Rider
-				["itemID"] = 25477,	-- Swift Red Wind Rider
-			},
-			{	-- Swift Stormsaber
-				["itemID"] = 18902,	-- Swift Stormsaber
-			},
-			{	-- Swift Timber Wolf
-				["itemID"] = 18797,	-- Swift Timber Wolf
-			},
-			{	-- Swift Violet Ram
-				["itemID"] = 46748,	-- Swift Violet Ram
-				["races"] = {
-					3,	-- Dwarf
-				},
-			},
-			{	-- Swift Violet Ram
-				["itemID"] = 46762,	-- Swift Violet Ram
-				["races"] = exclude(
-					{ -- Exclude these races
-						3,	-- Dwarf
-					},
-					ALLIANCE_ONLY
-				),
-			},
-			{	-- Swift Warstrider
-				["itemID"] = 34129,	-- Swift Warstrider
-			},
-			{	-- Swift White Mechanostrider
-				["itemID"] = 18773,	-- Swift White Mechanostrider
-			},
-			{	-- Swift White Ram
-				["itemID"] = 18785,	-- Swift White Ram
-			},
-			{	-- Swift White Steed
-				["itemID"] = 18778,	-- Swift White Steed
-			},
-			{	-- Swift Yellow Mechanostrider
-				["itemID"] = 18774,	-- Swift Yellow Mechanostrider
-			},
-			{	-- Swift Yellow Wind Rider
-				["itemID"] = 25532,	-- Swift Yellow Wind Rider
-			},
-			{	-- Tan Riding Camel
-				["itemID"] = 63045,	-- Tan Riding Camel
-			},
-			{	-- Tan Riding Talbuk [Alliance Only]
-				["itemID"] = 31834,	-- Tan Riding Talbuk [Alliance Only]
-			},
-			{	-- Tan Riding Talbuk [Horde Only]
-				["itemID"] = 31833,	-- Tan Riding Talbuk [Horde Only]
-			},
-			{	-- Tan War Talbuk [Alliance Only]
-				["itemID"] = 29230,	-- Tan War Talbuk [Alliance Only]
-			},
-			{	-- Tan War Talbuk [Horde Only]
-				["itemID"] = 29105,	-- Tan War Talbuk [Horde Only]
-			},
-			{	-- Tawny Wind Rider
-				["itemID"] = 25474,	-- Tawny Wind Rider
-			},
-			{	-- Thunder Bluff Kodo
-				["itemID"] = 45592,	-- Thunder Bluff Kodo
-			},
-			{	-- Thundering August Cloud Serpent
-				["itemID"] = 89304,	-- Thundering August Cloud Serpent
-			},
-			{	-- Thundering Jade Cloud Serpent
-				["itemID"] = 85666,	-- Thundering Jade Cloud Serpent
-			},
-			{	-- Timber Wolf
-				["itemID"] = 1132,	-- Timber Wolf
-			},
-			{	-- Traveler's Tundra Mammoth [Alliance Only]
-				["itemID"] = 44235,	-- Traveler's Tundra Mammoth [Alliance Only]
-			},
-			{	-- Traveler's Tundra Mammoth [Horde Only]
-				["itemID"] = 44234,	-- Traveler's Tundra Mammoth [Horde Only]
-			},
-			{	-- Turbostrider
-				["itemID"] = 46747,	-- Turbostrider
-				["races"] = {
-					7,	-- Gnomes
-				},
-			},
-			{	-- Turbostrider
-				["itemID"] = 46763,	-- Turbostrider
-				["races"] = exclude(
-					{ -- Exclude these races
-						7,	-- Gnomes
-					},
-					ALLIANCE_ONLY
-				),
-			},
-			{	-- Turquoise Raptor
-				["itemID"] = 8591,	-- Turquoise Raptor
-			},
-			{	-- Unpainted Mechanostrider
-				["itemID"] = 13322,	-- Unpainted Mechanostrider
-			},
-			i(167170),	-- Unshackled Waveray
-			{	-- Violet Raptor
-				["itemID"] = 8592,	-- Violet Raptor
-			},
-			i(161667),	-- Voldunai Dunescraper
-			{	-- White Kodo
-				["itemID"] = 46100,	-- White Kodo
-			},
-			{	-- White Ram
-				["itemID"] = 5873,	-- White Ram
-			},
-			{	-- White Riding Goat
-				["itemID"] = 89390,	-- White Riding Goat
-			},
-			{	-- White Riding Talbuk [Alliance Only]
-				["itemID"] = 31836,	-- White Riding Talbuk [Alliance Only]
-			},
-			{	-- White Riding Talbuk [Horde Only]
-				["itemID"] = 31835,	-- White Riding Talbuk [Horde Only]
-			},
-			{	-- White Skeletal Warhorse
-				["itemID"] = 46746,	-- White Skeletal Warhorse
-			},
-			{	-- White War Talbuk [Alliance Only]
-				["itemID"] = 29231,	-- White War Talbuk [Alliance Only]
-			},
-			{	-- White War Talbuk [Horde Only]
-				["itemID"] = 29103,	-- White War Talbuk [Horde Only]
-			},
-			{	-- Wild Goretusk
-				["itemID"] = 116671,	-- Wild Goretusk
-			},
-			{	-- Winged Steed of the Ebon Blade [Death Knight Only]
-				["itemID"] = 40775,	-- Winged Steed of the Ebon Blade [Death Knight Only]
-				["classes"] = {
-					6,	-- Death Knight Only
-				},
-			},
-			{	-- Witherhide Cliffstomper
-				["itemID"] = 116655,	-- Witherhide Cliffstomper
-			},
-			{	-- Wooly Mammoth [Alliance Only]
-				["itemID"] = 44230,	-- Wooly Mammoth [Alliance Only]
-			},
-			{	-- Wooly Mammoth [Horde Only]
-				["itemID"] = 44231,	-- Wooly Mammoth [Horde Only]
-			},
-			i(167751),	-- X-995 Mechanocat
-		},
-	},
+	n(-2, {	-- Vendor
+		i(161911, {	-- Admiralty Stallion
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(161773, {	-- Alabaster Hyena
+			["races"] = HORDE_ONLY,
+		}),
+		i(85262),	-- Amber Scorpion
+		i(167167),	-- Ankoan Waveray
+		i(141713),	-- Arcadian War Turtle
+		i(47179, {	-- Argent Charger
+			["classes"] = { 2 },	-- Paladin
+		}),
+		i(45725),	-- Argent Hippogryph
+		i(47180),	-- Argent Warhorse
+		i(44690),	-- Armored Blue Wind Rider
+		i(44225, {	-- Armored Brown Bear [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44226, {	-- Armored Brown Bear [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(116665),	-- Armored Irontusk
+		i(44689),	-- Armored Snowy Gryphon
+		i(103638),	-- Ashhide Mushan Beast
+		i(87781),	-- Azure Riding Crane
+		i(81354),	-- Azure Water Strider
+		i(167894),	-- Beastlord's Irontusk
+		i(167895),	-- Beastlord's Warwolf
+		i(29465),	-- Black Battlestrider
+		i(91008, {	-- Black Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87795, {	-- Black Dragon Turtle (All races except pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(29221),	-- Black Hawkstrider
+		i(89391),	-- Black Riding Goat
+		i(46308),	-- Black Skeletal Horse
+		i(2411),	-- Black Stallion
+		i(35906),	-- Black War Elekk
+		i(29466),	-- Black War Kodo
+		i(43956, {	-- Black War Mammoth [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44077, {	-- Black War Mammoth [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(29467),	-- Black War Ram
+		i(29472),	-- Black War Raptor
+		i(29468),	-- Black War Steed
+		i(29471),	-- Black War Tiger
+		i(29469),	-- Black War Wolf
+		i(46099),	-- Black Wolf
+		i(87789),	-- Blonde Riding Yak
+		i(137570),	-- Bloodfang Widow
+		i(91009, {	-- Blue Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87796, {	-- Blue Dragon Turtle (All races except pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(29220),	-- Blue Hawkstrider
+		i(8595),	-- Blue Mechanostrider
+		i(32319),	-- Blue Riding Nether Ray
+		i(89307),	-- Blue Shado-Pan Riding Tiger
+		i(13332),	-- Blue Skeletal Horse
+		i(25475),	-- Blue Wind Rider
+		un(2, i(116775)),	-- Breezestrider Stallion --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
+		i(128481),	-- Bristling Hellboar
+		un(1, i(128480)),	-- Bristling Hellboar
+		i(91005, {	-- Brown Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87797, {	-- Brown Dragon Turtle (all races except pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES), -- all races except pandaren
+		}),
+		i(28481),	-- Brown Elekk
+		i(5656),	-- Brown Horse
+		i(15290),	-- Brown Kodo
+		i(5872),	-- Brown Ram
+		i(63044),	-- Brown Riding Camel
+		i(89362),	-- Brown Riding Goat
+		i(13333),	-- Brown Skeletal Horse
+		i(5668),	-- Brown Wolf
+		i(161666),	-- Captured Swampstalker
+		i(33999),	-- Cenarion War Hippogryph
+		i(116789),	-- Champion's Treadblade
+		i(5655),	-- Chestnut Mare
+		i(161665, {	-- Cobalt Pterrordax
+			["races"] = HORDE_ONLY,
+		}),
+		i(31830, {	-- Cobalt Riding Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(31829, {	-- Cobalt Riding Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(29227, {	-- Cobalt War Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(29102, {	-- Cobalt War Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(123974),	-- Corrupted Dreadwing
+		i(95565),	-- Crimson Primal Direhorn
+		i(169202),	-- Crimson Tidestallion
+		i(87791),	-- Crimson Water Strider
+		i(161912, {	-- Dapple Gray
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(63125),	-- Dark Phoenix
+		i(28915),	-- Dark Riding Talbuk
+		i(29228),	-- Dark War Talbuk
+		i(45593),	-- Darkspear Raptor
+		i(45591),	-- Darnassian Nightsaber
+		i(128526, {	-- Deathtusk Felboar [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(128527, {	-- Deathtusk Felboar [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(5665),	-- Dire Wolf
+		i(116672),	-- Domesticated Razorback
+		i(63039, {	-- Drake of the West Wind [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(65356, {	-- Drake of the West Wind [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(116664),	-- Dusky Rockhide
+		i(161908),	-- Dusky Waycrest Gryphon
+		i(25472),	-- Ebon Gryphon
+		i(8588),	-- Emerald Raptor
+		i(161774, {	-- Expedition Bloodswarmer
+			["races"] = HORDE_ONLY,
+		}),
+		i(45590),	-- Exodar Elekk
+		i(45597),	-- Forsaken Warhorse
+		i(19029),	-- Frostwolf Howler
+		i(45589),	-- Gnomeregan Mechanostrider
+		i(62461),	-- Goblin Trike
+		i(62462),	-- Goblin Turbo-Trike
+		i(25470),	-- Golden Gryphon
+		i(62298),	-- Golden King
+		i(95564),	-- Golden Primal Direhorn
+		i(87782),	-- Golden Riding Crane
+		i(93168),	-- Grand Armored Gryphon
+		i(93169),	-- Grand Armored Wyvern
+		i(84101),	-- Grand Expedition Yak
+		i(43961, {	-- Grand Ice Mammoth [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44086, {	-- Grand Ice Mammoth [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(29744),	-- Gray Elekk
+		i(15277),	-- Gray Kodo
+		i(5864),	-- Gray Ram
+		i(91011, {	-- Great Black Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87802, {	-- Great Black Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(91013, {	-- Great Blue Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87803, {	-- Great Blue Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(29745),	-- Great Blue Elekk
+		i(91014, {	-- Great Brown Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87804, {	-- Great Brown Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(18794),	-- Great Brown Kodo
+		i(46750),	-- Great Golden Kodo
+		i(18795),	-- Great Gray Kodo
+		i(91012, {	-- Great Green Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87801, {	-- Great Green Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(29746),	-- Great Green Elekk
+		i(91015, {	-- Great Purple Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87805, {	-- Great Purple Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),			
+		i(29747),	-- Great Purple Elekk
+		i(91010, {	-- Great Red Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(82811, {	-- Great Red Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(46745, {	-- Great Red Elekk (draenei)
+			["races"] = { 11 },	-- Draenei
+		}),
+		i(46756, {	-- Great Red Elekk (Alliance, except draenei)
+			["races"] = exclude({ 11 }, ALLIANCE_ONLY),
+		}),
+		i(18793),	-- Great White Kodo
+		i(91004, {	-- Green Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(82765, {	-- Green Dragon Turtle (non-pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(13321),	-- Green Mechanostrider
+		i(32314),	-- Green Riding Nether Ray
+		i(89305),	-- Green Shado-Pan Riding Tiger
+		i(13334),	-- Green Skeletal Warhorse
+		i(25476),	-- Green Wind Rider
+		i(87788),	-- Grey Riding Yak
+		i(87774),	-- Heavenly Golden Cloud Serpent
+		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
+			["classes"] = { 3 },	-- Hunter
+		}),
+		i(142226, {	-- Huntmaster's Fierce Wolfhawk (Hunter)
+			["classes"] = { 3 },	-- Hunter
+		}),
+		i(43958, {	-- Ice Mammoth [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44080, {	-- Ice Mammoth [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(169203),	-- Inkscale Deepseeker
+		i(45586),	-- Ironforge Ram
+		i(116782),	-- Ironside Warwolf
+		i(142369),	-- Ivory Hawkstrider
+		i(67107),	-- Kor'kron Annihilator
+		i(152788),	-- Lightforged Warframe Mount
+		i(163042),	-- Reins of the Mighty Caravan Brutosaur
+		i(116768),	-- Mosshide Riverwallow
+		i(73838),	-- Mountain Horse
+		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
+			["classes"] = { 9 },	-- Warlock
+		}),
+		-- Netherlord's Chaotic Wrathsteed [Warlock Only]
+		i(47101),	-- Ochre Skeletal Warhorse
+		i(45595),	-- Orgrimmar Wolf
+		un(2, i(116776)),	-- Pale Thorngrazer --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
+		i(163589),	-- Reins of the Palehide Direhorn
+		i(2414),	-- Pinto
+		i(161879),	-- Proudmoore Sea Scout
+		i(91006, {	-- Purple Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87799, {	-- Purple Dragon Turtle (All races except pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(29743),	-- Purple Elekk
+		i(29222),	-- Purple Hawkstrider
+		i(32316),	-- Purple Riding Nether Ray
+		i(18791),	-- Purple Skeletal Warhorse
+		i(46815),	-- Quel'dorei Steed
+		i(91007, {	-- Red Dragon Turtle [Panda Only]
+			["races"] = {
+				25,	-- Horde Pandaren
+				26,	-- Alliance Pandaren
+			},
+		}),
+		i(87800, {	-- Red Dragon Turtle (All races except pandaren)
+			["races"] = exclude(
+				{
+					24,	-- Pandaren [Neutral]
+					25,	-- Pandaren [Alliance]
+					26,	-- Pandaren [Horde]
+				}, ALL_RACES),
+		}),
+		i(43955),	-- Red Drake
+		i(89363),	-- Red Flying Cloud
+		i(28927),	-- Red Hawkstrider
+		i(8563),	-- Red Mechanostrider
+		i(32317),	-- Red Riding Nether Ray
+		i(89306),	-- Red Shado-Pan Riding Tiger
+		i(13331),	-- Red Skeletal Horse
+		i(29470),	-- Red Skeletal Warhorse
+		i(152794),	-- Reins of the Amethyst Ruinstrider
+		i(152795),	-- Reins of the Beryl Ruinstrider
+		i(152797),	-- Reins of the Cerulean Ruinstrider
+		i(152793),	-- Reins of the Russet Ruinstrider
+		i(152791),	-- Reins of the Sable Ruinstrider
+		i(152796),	-- Reins of the Umber Ruinstrider
+		i(87783),	-- Regal Riding Crane
+		i(116667),	-- Rocktusk Battleboar
+		i(168829),	-- Rustbolt Resistor
+		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
+			["classes"] = { 4 },	-- Rogue
+		}),
+		i(143490, {	-- Shadowblade's Crimson Omen (Rogue)
+			["classes"] = { 4 },	-- Rogue
+		}),
+		i(143492, {	-- Shadowblade's Lethal Omen (Rogue)
+			["classes"] = { 4 },	-- Rogue
+		}),
+		i(116772),	-- Shadowmane Charger
+		i(46813),	-- Silver Covenant Hippogryph
+		i(32318),	-- Silver Riding Nether Ray
+		i(31832, {	-- Silver Riding Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(31831, {	-- Silver Riding Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(29229, {	-- Silver War Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(29104, {	-- Silver War Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(45596),	-- Silvermoon Hawkstrider
+		i(161910, {	-- Smoky Charger
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(25472),	-- Snowy Gryphon
+		i(64998, {	-- Spectral Steed [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(161664),	-- Spectral Pterrorwing
+		i(64999, {	-- Spectral Wolf [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(8632),	-- Spotted Frostsaber
+		i(19030),	-- Stormpike Battle Charger
+		i(161909),	-- Stormsong Coastwatcher
+		i(45125),	-- Stormwind Steed
+		i(47100),	-- Striped Dawnsaber
+		i(8631),	-- Striped Frostsaber
+		i(8629),	-- Striped Nightsaber
+		i(46814),	-- Sunreaver Dragonhawk
+		i(46816),	-- Sunreaver Hawkstrider
+		i(25473),	-- Swift Blue Gryphon
+		i(18788),	-- Swift Blue Raptor
+		i(18786),	-- Swift Brown Ram
+		i(18777),	-- Swift Brown Steed
+		i(18796),	-- Swift Brown Wolf
+		i(46749),	-- Swift Burgundy Wolf
+		i(18766),	-- Swift Frostsaber
+		i(116785),	-- Swift Frostwolf
+		i(18787),	-- Swift Gray Ram
+		i(46752, {	-- Swift Gray Steed (human)
+			["races"] = { 1 },	-- Human
+		}),
+		i(46758, {	-- Swift Grey Steed [Alliance, except Human]
+			["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- Alliance except humnans
+		}),
+		i(18798),	-- Swift Gray Wolf
+		i(25528),	-- Swift Green Gryphon
+		i(29223),	-- Swift Green Hawkstrider
+		i(18772),	-- Swift Green Mechanostrider
+		i(25531),	-- Swift Green Wind Rider
+		i(18767),	-- Swift Mistsaber
+		i(46744, {	-- Swift Moonsaber (night elf)
+			["races"] = { 4 },	-- Night Elf
+		}),
+		i(46759, {	-- Swift Moonsaber (alliance, except night elf)
+			["races"] = exclude({ 4 }, ALLIANCE_ONLY),
+		}),
+		i(73839),	-- Swift Mountain Horse
+		i(18789),	-- Swift Olive Raptor
+		i(18790),	-- Swift Orange Raptor
+		i(18776),	-- Swift Palomino
+		i(28936),	-- Swift Pink Hawkstrider
+		i(25529),	-- Swift Purple Gryphon
+		i(29224),	-- Swift Purple Hawkstrider
+		i(46743),	-- Swift Purple Raptor
+		i(25533),	-- Swift Purple Wind Rider
+		i(25527),	-- Swift Red Gryphon
+		i(46751, {	-- Swift Red Hawkstrider (blood elf)
+			["races"] = { 10 },	-- Blood Elves
+		}),
+		i(46761, {	-- Swift Red Hawkstrider (Horde, except blood elf)
+			["races"] = exclude({ 10 }, HORDE_ONLY),	-- All horde, non-blood elf
+		}),
+		i(25477),	-- Swift Red Wind Rider
+		i(18902),	-- Swift Stormsaber
+		i(18797),	-- Swift Timber Wolf
+		i(46748, {	-- Swift Violet Ram (dwarf)
+			["races"] = { 3 },	-- Dwarf
+		}),
+		i(46762, {	-- Swift Violet Ram (Alliance, except dwarf)
+			["races"] = exclude({ 3 }, ALLIANCE_ONLY),	-- All alliance except Dwarf
+		}),
+		i(34129),	-- Swift Warstrider
+		i(18773),	-- Swift White Mechanostrider
+		i(18785),	-- Swift White Ram
+		i(18778),	-- Swift White Steed
+		i(18774),	-- Swift Yellow Mechanostrider
+		i(25532),	-- Swift Yellow Wind Rider
+		i(63045),	-- Tan Riding Camel
+		i(31834, {	-- Tan Riding Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(31833, {	-- Tan Riding Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(29230, {	-- Tan War Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(29105, {	-- Tan War Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(25474),	-- Tawny Wind Rider
+		i(45592),	-- Thunder Bluff Kodo
+		i(89304),	-- Thundering August Cloud Serpent
+		i(85666),	-- Thundering Jade Cloud Serpent
+		i(1132),	-- Timber Wolf
+		i(44235, {	-- Traveler's Tundra Mammoth [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44234, {	-- Traveler's Tundra Mammoth [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(46747, {	-- Turbostrider (Gnomes)
+			["races"] = { 7 },	-- Gnomes
+		}),
+		i(46763, {	-- Turbostrider (Alliance, except gnomes)
+			["races"] = exclude({ 7 }, ALLIANCE_ONLY),	-- All alliance except Gnomes
+		}),
+		i(8591),	-- Turquoise Raptor
+		i(13322),	-- Unpainted Mechanostrider
+		i(167170),	-- Unshackled Waveray
+		i(8592),	-- Violet Raptor
+		i(161667),	-- Voldunai Dunescraper
+		i(46100),	-- White Kodo
+		i(5873),	-- White Ram
+		i(89390),	-- White Riding Goat
+		i(31836, {	-- White Riding Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(31835, {	-- White Riding Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(46746),	-- White Skeletal Warhorse
+		i(29231, {	-- White War Talbuk [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(29103, {	-- White War Talbuk [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(116671),	-- Wild Goretusk
+		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
+			["classes"] = { 6 },	-- Death Knight
+		}),
+		i(116655),	-- Witherhide Cliffstomper
+		i(44230, {	-- Wooly Mammoth [Alliance Only]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(44231, {	-- Wooly Mammoth [Horde Only]
+			["races"] = HORDE_ONLY,
+		}),
+		i(167751),	-- X-995 Mechanocat
+	}),
 };

@@ -280,6 +280,7 @@ _.Zones =
 						i(57467),	-- Fancy Footwork
 						i(57466),	-- Negotiator's Armbands
 						i(131449),	-- Valen's Treads
+						i(57465),	-- Ambassador's Amulet
 					},
 				},
 				{	-- Death by Proxy
@@ -713,6 +714,7 @@ _.Zones =
 						i(57460),	-- Breastplate of Rescue
 						i(57459),	-- Headguard of the Innocent
 						i(131455),	-- Helm of the Innocent
+						i(57458),	-- Thal'darah's Pendant
 					},
 				},
 				{	-- Schemin' That Sabotage

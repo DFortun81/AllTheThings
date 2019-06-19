@@ -9,6 +9,7 @@ _.Zones =
 				fp(624, {	-- Azure Watch, Azuremyst Isle [Alliance]
 					["description"] = "Azure Watch, Azuremyst Isle - Alliance Only",
 					["coord"] = { 49.6, 49.2, 97 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

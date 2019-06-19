@@ -11,7 +11,6 @@ _.Zones =
 			["maps"] = {
 				86,		-- The Drag
 				522,	-- The Secrets of Ragefire
-				1479,	-- Baine Rescue (Stay of Execution Scenario)
 			},
 			["lvl"] = 1,
 		}),

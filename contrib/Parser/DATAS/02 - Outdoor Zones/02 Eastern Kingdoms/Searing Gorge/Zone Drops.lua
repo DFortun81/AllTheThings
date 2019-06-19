@@ -25,9 +25,11 @@ _.Zones =
 					},
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
+					["u"] = 7,	-- This version doesn't drop anymore but the new version (167887) is available from Time-Lost Trader
 					["crs"] = { 5861 },	-- Twilight Fire Guard
 				}),
 				i(14471, {	-- Pattern: Cindercloth Vest
+					["u"] = 7,	-- This version doesn't drop anymore but the new version (167886) is available from Time-Lost Trader
 					["crs"] = { 5861 },	-- Twilight Fire Guard
 				}),
 				i(21547, {	-- Recipe: Elixir of Greater Firepower

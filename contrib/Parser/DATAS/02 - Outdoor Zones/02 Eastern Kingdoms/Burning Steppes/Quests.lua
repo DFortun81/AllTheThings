@@ -13,6 +13,7 @@ _.Zones =
 							["g"] = {
 								i(64496),	-- Hatchlings' Protector
 								i(64495),	-- Whelp Keeper's Staff
+								i(64497),	-- Flamestar Amulet
 							},
 						}),
 						qh(28417, {	-- Done Nothing Wrong
@@ -457,6 +458,7 @@ _.Zones =
 								i(64572),	-- Ember Worg Boots
 								i(64569),	-- Obsidian-Flecked Cape
 								i(64570),	-- Cracked Orb of Dominion
+								i(64571),	-- Zi'lun's Signet
 							},
 						}),
 						qh(28456, {	-- The Spoils of War (awarded "Annihilation" and "Infiltration" criteria and overall Burning Steppes zone achievement)

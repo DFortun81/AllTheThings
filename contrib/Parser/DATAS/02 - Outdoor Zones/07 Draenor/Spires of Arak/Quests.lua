@@ -974,13 +974,6 @@ _.Zones =
 				}),
 
 				
-				qa(37316, {	-- Trading Post (Smuggling Run)
-				--	triggers when creating  smuggling run.
-					["sourceQuests"] = { 35286 },	-- Orders, Commander?
-					["title"] = "Trading Post (Smuggling Run)",
-				}),
-
-				
 				q(36179, {	-- Unwanted Pests
 					["coord"] = { 62.5, 73.8, 542 },
 					["qg"] = 85062,	-- Exterminator Lemmy

@@ -6,13 +6,16 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
 			n(-17,  {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(4909, {		-- Blasted Lands Quests
-					crit(1),		-- Razelikh
-					crit(2),		-- The Tainted Forest
-					crit(3),		-- Avenging the Rockpool
+				ach(4909, {	-- Blasted Lands Quests
+					crit(1),	-- Razelikh
+					crit(2),	-- The Tainted Forest
+					crit(3, {	-- Avenging the Rockpool
+						["sourceQuests"] = {
+							25705,	-- False Idols
+							25706,	-- Neptool's Revenge
+						},
+					}),
 				}),
---]]
 				q(26172, {	-- A Bloodmage's Gotta Eat Too
 					["qg"] = 42298,	-- 
 					["races"] = ALLIANCE_ONLY,
@@ -32,9 +35,9 @@ _.Zones =
 					},
 				}),
 				q(35745, {	-- Attack of the Iron Horde
-					["races"] = HORDE_ONLY,
 					["qg"] = 82851,	-- Thrall
 					["coords"] = { 71.8, 47.7, 17 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
 						i(118762),	-- Portal-Breaker's Band
@@ -44,9 +47,9 @@ _.Zones =
 					},
 				}),
 				q(35460, {	-- Attack of the Iron Horde
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 82270,	-- Vindicator Maraad
 					["coords"] = { 66.6, 28.2, 17 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
 						i(118762),	-- Portal-Breaker's Band
@@ -55,18 +58,23 @@ _.Zones =
 						i(118765),	-- Sapphire Seal
 					},
 				}),
---[[
-				q(25715, {	-- A Closer Look
-					["qg"] = 9540,	-- 
+				q(25715, {	-- A Closer Look -- aa
+					["qg"] = 9540,	-- Enohar Thunderbrew
+					["coord"] = { 61.4, 18.6, 17 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+--[[
 				q(26185, {	-- Advice from the Cenarion Circle
 					["qg"] = 42349,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(25703, {	-- Atrocities
-					["qg"] = 41354,	-- 
+]]--
+				q(25703, {	-- Atrocities -- aa
+					["qg"] = 41354,	-- Neptool
+					["coord"] = { 71.0, 60.1, 17 },
+					["sourceQuest"] = 25702,	-- Home... Gone... Naga...
 				}),
+--[[
 				q(25684, {	-- Attune the Bloodstone
 					["qg"] = 7506,	-- 
 					["races"] = HORDE_ONLY,
@@ -157,7 +165,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						35745,	-- Attack of the Iron Horde
-						36382,	-- Peeking into the Portal
 						35746,	-- Under Siege
 					},
 				}),
@@ -167,12 +174,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						35460,	-- Attack of the Iron Horde
-						36379,	-- Peeking into the Portal
 						35462,	-- Under Siege
 					},
 				}),
 				q(35496, {	-- Enohar's Revenge
-					["qg"] = 76111,
+					["qg"] = 76111,	-- Enohar Thunderbrew
 					["coord"] = { 51.8, 28.6, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
@@ -180,6 +186,12 @@ _.Zones =
 						35486,	-- Lunatic Lieutenants
 						35494,	-- Mementos of the Fallen
 					},
+				}),
+				q(35492, {	-- For Nethergarde!
+					["qg"] = 84929,	-- Vindicator Maraad
+					["coord"] = { 52.0, 28.6, 17 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 36307,	-- Investigating the Invasion
 				}),
 				q(35500, {	-- Gar'mak Bladetwist
 					["qg"] = 84929,	-- Vindicator Maraad
@@ -210,9 +222,13 @@ _.Zones =
 					["qg"] = 42299,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
+]]--
 				q(25705, {	-- False Idols
-					["qg"] = 41354,	-- 
+					["qg"] = 41354,	-- Neptool
+					["coord"] = { 71.0, 60.1, 17 },
+					["sourceQuest"] = 25703,	-- Atrocities
 				}),
+--[[
 				q(25674, {	-- Futile Pride
 					["qg"] = 41124,	-- 
 					["races"] = HORDE_ONLY,
@@ -221,9 +237,13 @@ _.Zones =
 					["qg"] = 41124,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(25702, {	-- Home... Gone... Naga...
-					["qg"] = 41265,	-- 
+]]--
+				q(25702, {	-- Home... Gone... Naga... -- aa
+					["qg"] = 41265,	-- Salt-Flop
+					["coord"] = { 73.1, 47.4, 17 },
+					["isBreadcrumb"] = true,
 				}),
+--[[
 				q(25718, {	-- How Best to Proceed
 					["qg"] = 42344,	-- 
 					["races"] = HORDE_ONLY,
@@ -253,16 +273,11 @@ _.Zones =
 					["qg"] = 7506,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(25710, {	-- Minor Distractions
-					["qg"] = 5393,	-- 
+--]]
+				q(25710, {	-- Minor Distractions -- aa
+					["qg"] = 5393,	-- Quartermaster Lungertz
+					["coord"] = { 60.0, 13.4, 17 },
 					["races"] = ALLIANCE_ONLY,
-				}),
---]]					
-				q(35492, {	-- For Nethergarde!
-					["qg"] = 84929,	-- Vindicator Maraad
-					["coord"] = { 52.0, 28.6, 17 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 36307,	-- Investigating the Invasion
 				}),
 				q(36307, {	-- Investigating the Invasion
 					["qg"] = 82270,	-- Vindicator Maraad
@@ -325,10 +340,13 @@ _.Zones =
 					},
 				}),
 				q(25706, {	-- Neptool's Revenge
-					["qg"] = 41354,	-- 
+					["qg"] = 41354,	-- Neptool
+					["coord"] = { 71.0, 60.1, 17 },
+					["sourceQuest"] = 25703,	-- Atrocities
 					["g"] = {
-						i(59403),	-- 
-						i(59404),	-- 
+						i(59405),	-- Bloodwash Ring
+						i(59403),	-- Gambler's Wrap
+						i(59404),	-- Rockpool Belt
 					},
 				}),
 --[[					
@@ -401,10 +419,13 @@ _.Zones =
 					["qg"] = 19254,	-- 
 					["races"] = HORDE_ONLY,
 				}),
-				q(26173, {	-- Protecting Our Rear
-					["qg"] = 16841,	-- 
+]]--
+				q(26173, {	-- Protecting Our Rear -- aa
+					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
+					["coord"] = { 54.6, 50.4, 17 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+--[[
 				q(25713, {	-- Remove Their Arms
 					["qg"] = 42264,	-- 
 					["races"] = ALLIANCE_ONLY,
@@ -420,6 +441,7 @@ _.Zones =
 					["qg"] = 84929,	-- Vindicator Maraad
 					["coord"] = { 52.0, 28.6, 17 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35500,	-- Gar'mark Bladetwist
 					["g"] = {
 						i(118776),	-- Talisman of the Invader
 						i(118777),	-- Bloodcaster's Charm
@@ -435,7 +457,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						35745,	-- Attack of the Iron Horde
-						36382,	-- Peeking into the Portal
 						35746,	-- Under Siege
 					},
 				}),
@@ -445,7 +466,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						35460,	-- Attack of the Iron Horde
-						36379,	-- Peeking into the Portal
 						35462,	-- Under Siege
 					},
 				}),
@@ -666,6 +686,7 @@ _.Zones =
 					["qg"] = 84928,	-- Thrall
 					["coord"] = { 48.7, 31.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35763,	-- Gar'mak Bladetwist
 					["g"] = {
 						i(118776),	-- Talisman of the Invader
 						i(118777),	-- Bloodcaster's Charm
@@ -699,11 +720,12 @@ _.Zones =
 						i(59431),	-- 
 					},
 				}),
---[[					
-				q(26184, {	-- Wormthorn's Dream
-					["qg"] = 42349,	-- 
+				q(26184, {	-- Wormthorn's Dream -- aa
+					["qg"] = 42349,	-- Mayor Charlton Connisport
+					["coord"] = { 46.3, 87.1, 17 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+--[[					
 				q(26171, {	-- You Are Rakh'likh, Demon
 					["qg"] = 7783,	-- 
 					["races"] = ALLIANCE_ONLY,

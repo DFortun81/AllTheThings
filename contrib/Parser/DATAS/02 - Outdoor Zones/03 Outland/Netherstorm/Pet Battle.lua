@@ -3,24 +3,16 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Outland
-		["mapID"] = 101,	-- Outland
-		["groups"] = {
-			{	-- Netherstorm
-				["mapID"] = 109,	-- Netherstorm
-				["groups"] = {
-					n(-25,  {	-- Pet Battle
-						{	-- Fledgling Nether Ray
-							["crs"] = { 62627 },	-- Fledgling Nether Ray
-							["speciesID"] = 521,	-- Fledgling Nether Ray
-						},
-						{	-- Nether Roach
-							["crs"] = { 62625 },	-- Nether Roach
-							["speciesID"] = 638,	-- Nether Roach
-						},						
-					}),
-				},
-			},
-		},
-	},
+	m(101, {	-- Outland
+		m(109, {	-- Netherstorm
+			filter(101, {	-- Pet Battle
+				p(521, {	-- Fledgling Nether Ray
+					["crs"] = { 62627 },	-- Fledgling Nether Ray
+				}),
+				p(638, {	-- Nether Roach
+					["crs"] = { 62625 },	-- Nether Roach
+				}),
+			}),
+		}),
+	}),
 };

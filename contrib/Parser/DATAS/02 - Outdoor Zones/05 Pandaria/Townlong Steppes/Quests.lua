@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-17, { 	-- Quests
+			n(-17, {	-- Quests
 --[[	Achievement info for Loremaster related zone quests
 				ach(6539, {		-- One Steppe Forward, Two Steppes Back
 					crit(1),		-- Fire Camp Osul
@@ -307,6 +307,9 @@ _.Zones =
 				}),
 				q(30930, {	-- Pick a Yak
 					["qg"] = 61161,	-- Bluesaddle
+					["g"] = {
+						i(82467),	-- Ruthers' Harness
+					},
 				}),
 				q(30773, {	-- Pitching In
 					["groups"] = {

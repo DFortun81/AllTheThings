@@ -3,57 +3,42 @@
 ---------------------------------------------------
 _.Zones =
 {
-	{	-- Draenor
-		["mapID"] = 572,	-- Draenor
-		["g"] = {
-			{	-- Frostfire Ridge
-				["mapID"] = 525,	-- Frostfire Ridge
+	m(572, {	-- Draenor
+		m(525, {	-- Frostfire Ridge
+			n(-25, {	-- Pet Battles
+				["f"] = 101,	-- Battle Pets
 				["g"] = {
-					{	-- Pet Battles
-						["npcID"] = -25,	-- Pet Battles
-						["f"] = 101,	-- Battle Pets
+					p(1427, {	-- Frostfur Rat
+						["crs"] = { 82715 },	-- Frostfur Rat
+					}),
+					p(1578, {	-- Frostshell Pincher
+						["crs"] = { 88480 },	-- Frostshell Pincher
+					}),
+					p(1457, {	-- Icespine Hatchling
+						["crs"] = { 85003 },	-- Icespine Hatchling
+					}),
+					p(1579, {	-- Ironclaw Scuttler
+						["crs"] = { 88474 },	-- Ironclaw Scuttler
+					}),
+					p(417, {	-- Rat
+						["crs"] = { 61366 },	-- Rat
+					}),
+					p(560, {	-- Sea Gull
+						["crs"] = { 62953 },	-- Sea Gull
+					}),
+					p(1464, {	-- Twilight Wasp
+						["crs"] = { 85253 },	-- Twilight Wasp
+					}),
+					q(37205, {	-- Gargra
+						["isDaily"] = true,
+						["coord"] = { 68.5, 64.7, 525 },
+						["qg"] = 87122,	-- Gargra
 						["g"] = {
-							{	-- Frostfur Rat
-								["crs"] = { 82715 },	-- Frostfur Rat
-								["speciesID"] = 1427,	-- Frostfur Rat
-							},
-							{	-- Frostshell Pincher
-								["crs"] = { 88480 },	-- Frostshell Pincher
-								["speciesID"] = 1578,	-- Frostshell Pincher
-							},
-							{	-- Icespine Hatchling
-								["crs"] = { 85003 },	-- Icespine Hatchling
-								["speciesID"] = 1457,	-- Icespine Hatchling
-							},
-							{	-- Ironclaw Scuttler
-								["crs"] = { 88474 },	-- Ironclaw Scuttler
-								["speciesID"] = 1579,	-- Ironclaw Scuttler
-							},
-							{	-- Rat
-								["crs"] = { 61366 },	-- Rat
-								["speciesID"] = 417,	-- Rat
-							},
-							{	-- Sea Gull
-								["crs"] = { 62953 },	-- Sea Gull
-								["speciesID"] = 560,	-- Sea Gull
-							},
-							{	-- Twilight Wasp
-								["crs"] = { 85253 },	-- Twilight Wasp
-								["speciesID"] = 1464,	-- Twilight Wasp
-							},
-							{	-- Gargra
-								["questID"] = 37205,
-								["qg"] = 87122,	-- Gargra
-								["coord"] = { 68.5, 64.7 },
-								["isDaily"] = true,
-								["groups"] = {
-									currency(116415),	-- Shiny Pet Charm x2
-								},
-							},
+							currency(116415),	-- Shiny Pet Charm x2
 						},
-					},
+					}),
 				},
-			},
-		},
-	},
+			}),
+		}),
+	}),
 };

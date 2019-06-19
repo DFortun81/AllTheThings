@@ -46,6 +46,7 @@ for key,value in pairs({
 	[138492] = "Estilhaços de Myzrael",
 	[141979] = "Tesouro Antigo",
 	[142195] = "Mapa de Batalha de Patábua",
+	[142343] = "Pedestal de Uldum",
 	[142487] = "A Brastematic 5200",
 	[144063] = "Monolito de Equinex",
 	[148502] = "Página 9",

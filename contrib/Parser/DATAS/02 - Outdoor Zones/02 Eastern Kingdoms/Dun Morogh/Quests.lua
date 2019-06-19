@@ -65,13 +65,13 @@ _.Zones =
 				}),
 --]]
 				q(25997, {	-- Dark Iron Scheming
+					["qg"] = 41786,	-- Sergeant Bahrum
+					["coord"] = { 82.8, 48.4, 27 },
 					["sourceQuests"] = {
 						25979,	-- Dealing With the Surge
 						25978,	-- Entombed in Ice
 					},
-					["coord"] = { 82.8, 48.4, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41786,	-- Sergeant Bahrum
 					["g"] = {
 						i(57575),	-- Belt of Dark Schemes
 						i(57576),	-- Dark Iron Infiltrator's Bracer
@@ -80,9 +80,9 @@ _.Zones =
 					},
 				}),
 				q(25979, {	-- Dealing with the Surge
+					["qg"] = 41804,	-- Khurgon Singefeather
 					["coord"] = { 82.6, 48.3, 27 },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41804,	-- Khurgon Singefeather
 				}),
 --[[
 				q(27635, {	-- Decontamination
@@ -94,10 +94,10 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(26112, {	-- Demanding Answers
-					["sourceQuests"] = { 26102 },	-- Grimaxe's Demise
-					["coord"] = { 78.2, 20.5, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.2, 20.4, 87 },
+					["sourceQuest"] = 26102,	-- Grimaxe's Demise
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(43283, {	-- Demon Commander (pre-Legion invasions)
 					["u"] = 40,	-- Legacy Quests
@@ -113,10 +113,10 @@ _.Zones =
 				}),
 --]]
 				q(25978, {	-- Entombed in Ice
-					["sourceQuests"] = { 25986 },	-- Trouble at the Lake
-					["coord"] = { 82.8, 48.4, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41786,	-- Sergeant Bahrum
+					["coord"] = { 82.8, 48.4, 27 },
+					["sourceQuest"] = 25986,	-- Trouble at the Lake
+					["races"] = ALLIANCE_ONLY,	
 				}),
 
 --[[			q(318,   {	-- Evershine
@@ -125,10 +125,10 @@ _.Zones =
 				}),
 ]]--
 				q(26078, {	-- Extinguish the Fires
-					["sourceQuests"] = { 25998 },	-- Get to the Airfield
+					["qg"] = 41853,	-- Commander Stonebreaker			
 					["coord"] = { 78.2, 20.5, 27 },
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 41853,	-- Commander Stonebreaker
+					["sourceQuest"] = 25998,	-- Get to the Airfield
+					["races"] = ALLIANCE_ONLY,	
 				}),
 				q(313,   {	-- Forced to Watch from Afar (add'l QG 1377, may have changed in Cata)
 					["races"] = ALLIANCE_ONLY,
@@ -155,16 +155,16 @@ _.Zones =
 					},
 				}),
 				q(25998, {	-- Get to the Airfield
-					["sourceQuests"] = { 25997 },	-- Dark Iron Scheming
-					["coord"] = { 82.8, 48.4, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41786,	-- Sergeant Bahrum
+					["coord"] = { 82.8, 48.4, 27 },
+					["sourceQuest"] = 25997,	-- Dark Iron Scheming
+					["races"] = ALLIANCE_ONLY,	
 				}),
 				q(26102, {	-- Grimaxe's Demise
-					["sourceQuests"] = { 26094 },	-- Striking Back
-					["coord"] = { 78.2, 20.5, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.2, 20.5, 27 },
+					["sourceQuest"] = 26094,	-- Striking Back
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57579),	-- Airfield Defender's Garb
 						i(57580),	-- Tunic of Dark Leather
@@ -185,10 +185,16 @@ _.Zones =
 					["qg"] = 40950,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
+]]--
 				q(6387, {	-- Honor Students
-					["qg"] = 1699,	-- 
-					["races"] = {3,7},	-- Dwarf, Gnome
+					["qg"] = 1699,	-- Gremlock Pilsnor
+					["coord"] = { 54.6, 50.6, 27 },
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 				}),
+--[[
 				q(8149, {	-- Honoring a Hero
 					["qg"] = 15011,	-- 
 					["races"] = ALLIANCE_ONLY,
@@ -278,10 +284,10 @@ _.Zones =
 				}),
 ]]--
 				q(26085, {	-- Rallying the Defenders
-					["sourceQuests"] = { 26078 },	-- Extinguish the Fires
-					["coord"] = { 78.2, 20.5, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.2, 20.5, 27 },
+					["sourceQuest"] = 26078,	-- Extinguish the Fires
+					["races"] = ALLIANCE_ONLY,	
 				}),
 --[[
 				q(25905, {	-- Rams on the Lam
@@ -300,11 +306,16 @@ _.Zones =
 				o(270, {	-- Unguarded Thunder Ale Barrel
 					qa(311),	-- Return to Marleth
 				}),
+]]--				
 				q(6391, {	-- Ride to Ironforge
-					["qg"] = 43701,	-- 
-					["races"] = {3,7},	-- Dwarf, Gnome
+					["qg"] = 43701,	-- Brolan Galebeard
+					["coord"] = { 53.8, 52.6, 27 },
+					["sourceQuest"] = 6387,	-- Honor Students
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 				}),
-]]--
 				q(466,   {	-- Search for Incendicite
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
@@ -327,10 +338,10 @@ _.Zones =
 				}),
 --]]
 				q(26094, {	-- Striking Back
-					["sourceQuests"] = { 26085 },	-- Rallying the Defenders
-					["coord"] = { 78.2, 20.5, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.2, 20.5, 27 },
+					["sourceQuest"] = 26085,	-- Rallying the Defenders
+					["races"] = ALLIANCE_ONLY,	
 				}),
 --[[
 				q(315, {	-- The Perfect Stout
@@ -380,10 +391,10 @@ _.Zones =
 				}),
 --]]
 				q(25986, {	-- Trouble at the Lake
-					["isBreadcrumb"] = true,	-- for Entombed in Ice
-					["coord"] = { 75.8, 54.2, 27 },
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1977,	-- Senator Mehr Stonehallow
+					["coord"] = { 75.8, 54.2, 27 },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,	
 				}),
 --[[
 				q(28169, {	-- Withdraw to the Loading Room!

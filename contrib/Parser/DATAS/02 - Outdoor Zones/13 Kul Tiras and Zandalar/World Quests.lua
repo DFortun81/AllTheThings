@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	n(-517, {		-- Kul Tiras and Zandalar
+	n(-518, {		-- Kul Tiras and Zandalar
 		["groups"] = {
 			n(-34,  {	-- World Quests
 				["groups"] = {

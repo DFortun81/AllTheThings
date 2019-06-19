@@ -5,11 +5,9 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			["g"] = {
-				n(-4,   {	-- Achievements
-					ach(1428),	-- Mine Sweeper
-				}),
-			},
+			n(-4, {	-- Achievements
+				ach(1428),	-- Mine Sweeper
+			}),
 		}),
 	}),
 };

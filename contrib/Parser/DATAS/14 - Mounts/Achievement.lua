@@ -25,7 +25,9 @@ _.Mounts =
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
 		i(166539),	-- Dazar'alor Windreaver
-		i(161331),	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
+		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(62901),	-- Drake of the East Wind
 		i(118676),	-- Emerald Drake
 		i(69226),	-- Felfire Hawk
@@ -43,7 +45,9 @@ _.Mounts =
 		i(45801),	-- Ironbound Proto-Drake
 		i(168056),	-- Ironclad Frostclaw
 		i(91802),	-- Jade Pandaren Kite
-		i(164762),	-- Kul Tiran Charger (Kul Tiran Allied Race)
+		i(164762, {	-- Kul Tiran Charger (Kul Tiran Allied Race)
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (Alliance)
 		i(168329),	-- Mechacycle Model W
@@ -104,6 +108,8 @@ _.Mounts =
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
 		i(169162),	-- Wonderwing 2.0
-		i(157870),	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
+		i(157870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
+			["races"] = HORDE_ONLY,
+		}),
 	}),
 };

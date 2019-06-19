@@ -543,8 +543,12 @@ _.Zones =
 							i(19203),	-- Plans: Girdle of the Dawn
 						},
 					}),
-					nh(3522, {	-- Constance Brisboise <Apprentice Clothier>
-						i(6270),	-- Pattern: Blue Linen Vest
+					n(3522,  {	-- Constance Brisboise <Apprentice Clothier>
+						["coord"] = { 52.6, 55.6, 18 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(6270),	-- Pattern: Blue Linen Vest
+						},
 					}),
 					nh(3550, {	-- Martine Tramblay <Fishing Supplies>
 						i(6325),	-- Recipe: Brilliant Smallfish

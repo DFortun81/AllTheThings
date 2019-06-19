@@ -27,6 +27,7 @@ profession(333, {	-- Enchanting
 				},
 				{
 					["categoryID"] = 653--[[Illusions]],
+					["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
 					["g"] = {
 						{
 							["recipeID"] = 217655--[[Tome of Illusions: Draenor]]

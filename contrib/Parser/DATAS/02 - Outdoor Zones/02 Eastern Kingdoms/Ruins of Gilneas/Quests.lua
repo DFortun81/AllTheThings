@@ -108,6 +108,7 @@ _.Zones =
 					q(27360, {	-- Vengeance for Our Soldiers
 						["qg"] = 45389,	-- Captain Rutsak
 						["coord"] = { 65.6, 34.1, 217 },
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27350 },	-- Break in Communication: Rutsak's Guard
 						["g"] = {
 							i(62871),	-- War Blood Cloak

@@ -37,6 +37,10 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 2,
 			}),
 			n(18338, {	-- Highlord Kruul
+				["isRaid"] = true,
+				["maps"] = { 17 },	-- Blasted Lands
+				["u"] = 2,
+				["modelScale"] = 6.0,
 				["groups"] = {
 					un(2, i(18665, {	-- The Eye of Shadow
 						["groups"] = {
@@ -56,9 +60,6 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(19133)),	-- Fel Infused Leggings
 					un(2, i(18543)),	-- Ring of Entropy
 				},
-				["isRaid"] = true,
-				["maps"] = { 17 },	-- Blasted Lands
-				["u"] = 2,
 			}),
 			n(12397, {	-- Lord Kazzak
 				["groups"] = {

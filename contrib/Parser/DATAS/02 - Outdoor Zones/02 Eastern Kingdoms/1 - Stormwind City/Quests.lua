@@ -9,19 +9,23 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					q(27355, {	-- A Boon for the Powerful
-					--	["sourceQuests"] = {  },	-- 
+						["qg"] = 461,	-- Demisette Cloyce
+						["coord"] = { 39.4, 84.8, 84 },
+						["sourceQuest"] = 27272,	-- Demisette Sends Word
 						["classes"] = { 9 },	-- Warlock
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 461,	-- Demisette Cloyce
+						["lvl"] = 20,
 						["g"] = {
 							i(65496),	-- Staff of Justified Sins
 						},
 					}),
 					q(27363, {	-- A Budding Young Surgeon
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 5 },	-- Priest
-						["races"] = { 7 },	-- Gnome
 						["qg"] = 45306,	-- Chief Surgeon Gashweld
+						["coord"] = { 63.0, 34.2, 84 },
+						["sourceQuest"] = 27274,	-- The Chief Surgeon
+						["races"] = { 7 },	-- Gnome
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 20,
 						["g"] = {
 							i(65480),	-- Staff of the Technocrat
 						},
@@ -292,10 +296,18 @@ _.Zones =
 					qa(25154),	-- A Present for Lila
 --]]
 					q(27351, {	-- A Royal Reward
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 4 },	-- Rogue
+						["qgs"] = { 
+							51998,	-- Arthur Huwe
+							13283,	-- Lord Tony Romano
+						},
+						["coords"] =  {
+							{ 79.6, 61.2, 84 },	-- Arthur Huwe
+							{ 79.6, 60.8, 84 },	-- Lord Tony Romano
+						},
+						["sourceQuests"] = 27267,	-- Make Contact with SI:7
 						["races"] = ALLIANCE_ONLY,
-						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 20,
 						["g"] = {
 							i(65486),	-- SI:7 Special Issue Dagger
 						},
@@ -312,9 +324,13 @@ _.Zones =
 						["lvl"] = 98,
 					}),
 --]]
-					qa(27344, {	-- A Well-Earned Reward
-						["classes"] = { 3 },	-- Hunter
+					q(27344, {	-- A Well-Earned Reward
 						["qg"] = 44247,	-- Wulf Hansreim
+						["coord"] = { 79.0, 71.0, 84 },
+						["sourceQuests"] = 27266,	-- Wulf Calls
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 20,
 						["g"] = {
 							i(65465),	-- Crossbow of the Crown
 						},
@@ -351,9 +367,10 @@ _.Zones =
 					}),
 					q(29100, {	-- Bwemba's Spirit
 						["qg"] = 52654,	-- Bwemba
-						["lvl"] = 85,
 						["coord"] = { 25.9, 29.2, 84 },
+						["sourceQuest"] = 29156,	-- The Troll Incursion
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 85,	
 					}),
 --[[					
 					q(14482, {	-- Call of Duty
@@ -365,6 +382,21 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 110,
 					}),
+]]--
+					q(32469, {	-- Crystal Clarity
+						["qg"] = 16908,	-- Arielle Snapflash
+						["lvl"] = 30,
+						["coord"] = { 61.2, 22.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["sourceQuest"] = 32470,	-- Light Camera Action
+						["g"] = {
+							i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
+								i(122674),	-- S.E.L.F.I.E. Camera MkII
+							}),
+						},
+					}),
+--[[
 					q(44463, {	-- Demons Among Them
 						["classes"] = { 12 },	-- Demon Hunter
 						["races"] = ALLIANCE_ONLY,
@@ -391,11 +423,13 @@ _.Zones =
 					qa(1097),	-- Elmore's Task
 					qa(31981),	-- Exceeding Expectations
 --]]
-					qa(27361, {	-- Favored of the Light
-						["sourceQuests"] = { 27268 },	-- Make Haste to the Cathedral
-						["classes"] = { 5 },	-- Priest
-						["coord"] = { 49.6, 44.8, 84 },
+					q(27361, {	-- Favored of the Light
 						["qg"] = 376,	-- High Priestess Laurena
+						["coord"] = { 49.6, 44.8, 84 },
+						["sourceQuest"] = 27268,	-- Make Haste to the Cathedral
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 20,
 						["g"] = {
 							i(65482),	-- Staff of the Hallowed
 						},
@@ -484,10 +518,19 @@ _.Zones =
 					qa(32665),	-- Learn To Ride
 					qa(31591),	-- Learning the Ropes
 					qa(31821),	-- Level Up!
-					qa(27265),	-- Lord Grayson Shadowbreaker
-					qa(27267),	-- Make Contact with SI:7
+]]--
+					q(32470, {	-- Light Camera Action
+						["qg"] = 16908,	-- Arielle Snapflash
+						["lvl"] = 15,
+						["coord"] = { 61.2, 22.8, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["collectible"] = false,
+						["g"] = {
+							i(122637),	-- S.E.L.F.I.E. Camera
+						},
+					}),
+--[[
 					qa(29071),	-- Make Haste to Stormwind!
-					qa(27268),	-- Make Haste to the Cathedral
 					--]]
 					qa(38206, {	-- Making the Rounds
 						["sourceQuests"] = { 38035 },	-- A Royal Summons
@@ -495,19 +538,19 @@ _.Zones =
 						["lvl"] = 98,
 						["qg"] = 96644,	-- Sky Admiral Rogers
 					}),
-					qa(27354, {	-- Mastering the Arcane
+					q(27354, {	-- Mastering the Arcane
+						["qg"] = 331,	-- Maginor Dumas
+						["coord"] = { 49.2, 87.6, 84 },
+						["sourceQuest"] = 27271,	-- Journey to the Wizard's Sanctum
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 20,
 						["g"] = {
 							i(65467),	-- Staff of the Royal Wizard
 						},
-						["qg"] = 331,	-- Maginor Dumas
-						["classes"] = { 8 },	-- Mage
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[				qa(28258)),	-- Meet with Ander Germaine
 					qa(28259)),	-- Meet with Demisette Cloyce
-					qa(28287)),	-- Meet with Farseer Umbrua
-					qa(28285)),	-- Meet with High Priestess Laurena
-					qa(28268)),	-- Meet with Lord Grayson Shadowbreaker
 					qa(28262)),	-- Meet with Lord Tony Romano
 					qa(28263)),	-- Meet with Maginor Dumas
 					qa(28260)),	-- Meet with Wulf Hansreim
@@ -559,26 +602,32 @@ _.Zones =
 						["lvl"] = 90,
 					}),
 --					qa(29399)),	-- Shopping Around
-					qa(28401, {	-- Slaves of the Firelord
+					q(28401, {	-- Slaves of the Firelord
+						["qg"] = 20407,	-- Farseer Umbrua
+						["coord"] = { 64.6, 33.0, 84 },
+						["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 7 },	-- Shaman
+						["lvl"] = 50,
 						["g"] = {
 							i(65640), 		-- Mask of the Farseer
 							i(65622), 		-- Headcover of the Farseer
 						},
-						["qg"] = 20407,	-- Farseer Umbrua
-						["classes"] = { 7 },	-- Shaman
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
 					qa(24745)),	-- Something is in the Air (and it Ain't Love)
 					qa(24655)),	-- Something Stinks
 --]]
-					qa(28399, {	-- Stones of Binding
+					q(28399, {	-- Stones of Binding
+						["qg"] = 461,	-- Demisette Cloyce
+						["coord"] = { 39.4, 84.8, 84 },
+						["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 9 },	-- Warlock
+						["lvl"] = 50,
 						["g"] = {
 							i(65621),	-- Horns of Justified Sins
 						},
-						["qg"] = 461,	-- Demisette Cloyce
-						["classes"] = { 9 },	-- Warlock
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
 					qa(44700),	-- Stormheim
@@ -644,13 +693,22 @@ _.Zones =
 					qa(27274),	-- The Chief Surgeon
 					qa(29403),	-- The Collector's Agent
 --]]
-					qa(28406, {	-- The Dark Iron Army
+					q(28406, {	-- The Dark Iron Army
+						["qgs"] = { 
+							51998,	-- Arthur Huwe
+							13283,	-- Lord Tony Romano
+						},
+						["coords"] =  {
+							{ 79.6, 61.2, 84 },	-- Arthur Huwe
+							{ 79.6, 60.8, 84 },	-- Lord Tony Romano
+						},
+						["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["lvl"] = 50,
 						["g"] = {
 							i(65624),	-- SI:7 Special Issue Facemask
-						},
-						["qgs"] = { 51998, 13283 },	-- Arthur Huwe & Lord Tony Romano
-						["classes"] = { 4 },	-- Rogue
---						["sourceQuests"] = {  },	-- 
+						},				
 					}),
 --[[
 					q(34398),	-- The Dark Portal
@@ -683,15 +741,17 @@ _.Zones =
 					qa(47221)),	-- The Hand of Fate
 --]]
 					q(27343, {	-- The Hand of the Light
+						["qg"] = 928,	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.6, 45.0, 84 },
+						["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 20,
 						["g"] = {
 							i(65475),	-- Mace of the Order
 							i(65476),	-- Gavel of the Order
 							i(65477),	-- Warhammer of the Order
 						},
-						["qg"] = 928,	-- Lord Grayson Shadowbreaker
-						["races"] = { 3, 11 },	-- Dwarf, Draenei
-						["classes"] = { 2 },	-- Paladin
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
 					qa(8763)),	-- The Hero of the Day
@@ -752,10 +812,13 @@ _.Zones =
 					qa(47253)),	-- The Originals
 					qa(543)),	-- The Perenolde Tiara
 					--]]
-					qa(28398, {	-- The Pyromancer's Grimoire
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 8 },	-- Mage
+					q(28398, {	-- The Pyromancer's Grimoire
 						["qg"] = 331,	-- Maginor Dumas
+						["coord"] = { 49.2, 87.6, 84 },
+						["sourceQuest"] = 28263,	-- Meet with Maginor Dumas
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 8 },	-- Mage
+						["lvl"] = 50,
 						["g"] = {
 							i(65620),	-- Hood of the Royal Wizard
 						},
@@ -767,14 +830,13 @@ _.Zones =
 					qa(40787)),	-- The Smoldering Ember
 					qa(1790)),	-- The Symbol of Life
 					qa(31985)),	-- The Triumphant Return
-					qa(29156)),	-- The Troll Incursion
 					qa(27443)),	-- The War Has Many Fronts
 					qa(29555)),	-- The White Pawn,
 					qa(26536)),	-- Thunder Falls
 --]]
 					q(29158, {	-- The Zandalar Representative
-						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,
+						["u"] = 40,
 					}),
 					qa(46727, {	-- Tides of War
 						["sourceQuests"] = { 51403 },	-- The Speaker's Imperative
@@ -803,11 +865,13 @@ _.Zones =
 					qa(31733)),	-- Touching Ground
 					q(29482)),	-- Transmutation Master
 --]]
-					qa(28328, {	-- Twilight Scheming
-						["sourceQuests"] = { 28285 },	-- Meet with High Priestess Laurena
-						["classes"] = { 5 },	-- Priest
-						["coord"] = { 49.6, 44.8, 84 },
+					q(28328, {	-- Twilight Scheming
 						["qg"] = 376,	-- Twilight Scheming
+						["coord"] = { 49.6, 44.8, 84 },
+						["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 5 },	-- Priest
+						["lvl"] = 50,
 						["g"] = {
 							i(65616),	-- Crown of the Hallowed
 						},
@@ -830,15 +894,17 @@ _.Zones =
 					q(11886)),	-- Unusual Activity
 --]]
 					q(28405, {	-- Weapons of Darkness
+						["qg"] = 928,	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.6, 45.0, 84 },
+						["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 2 },	-- Paladin
+						["lvl"] = 50,
 						["g"] = {
 							i(65623),	-- Helm of the Order
 							i(65641),	-- Faceguard of the Order
 							i(65646),	-- Headguard of the Order
 						},
-						["qg"] = 928,	-- Lord Grayson Shadowbreaker
-						["races"] = { 3, 11 },	-- Dwarf & Draenei
-						["classes"] = { 2 },	-- Paladin
---						["sourceQuests"] = {  },	-- 
 					}),
 --[[
 					qa(48053)),	-- Weigh Anchor
