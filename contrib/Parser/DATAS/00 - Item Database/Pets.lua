@@ -640,7 +640,7 @@ pet(49343, 242);	-- Spectral Tiger Cub
 pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
 pet(167052, 2584);	-- Spirit of the Spring
-pet(163789, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
+pet(163497, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling

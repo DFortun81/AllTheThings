@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-25, { 	-- Pet Battle
+			filter(101, { 	-- Pet Battle
 				ach(13279, {	-- Family Battler
 					["collectible"] = false,
 					["g"] = {
@@ -302,50 +302,38 @@ _.Zones =
 						}),
 					},
 				}),
-				{	-- Coastal Scuttler
-					["speciesID"] = 2386,	-- Coastal Scuttler
+				p(2386, {	-- Coastal Scuttler
 					["crs"] = { 143045 },	-- Coastal Scuttler
-				},
-				{	-- Giant Woodworm
-					["speciesID"] = 2383,	-- Giant Woodworm
+				}),
+				p(2383, {	-- Giant Woodworm
 					["crs"] = { 143042 },	-- Giant Woodworm	
-				},
-				{	-- Squirrel
-					["speciesID"] = 379,	-- Squirrel
+				}),
+				p(379, {	-- Squirrel
 					["crs"] = { 61081 },	-- Squirrel
-				},
-				{	-- River Otter
-					["speciesID"] = 2378,	-- River Otter
+				}),
+				p(2378, {	-- River Otter
 					["crs"] = { 143037 },	-- River Otter
-				},
-				{	-- Sandyback Crawler
-					["speciesID"] =  2377,	-- Sandyback Crawler
+				}),
+				p(2377, {	-- Sandyback Crawler
 					["crs"] = { 143036 },	-- Sandyback Crawler
-				},
-				{	-- Shack Crab
-					["speciesID"] = 2381,	-- Shack Crab
+				}),
+				p(2381, {	-- Shack Crab
 					["crs"] = { 143040 },	-- Shack Crab
-				},
-				{	-- Taptaf the Pig!
-					["questID"] = 52061,	-- Taptaf the Pig!
+				}),
+				q(52061, {	-- Taptaf the Pig!
 					["qg"] = 139380,	-- Taptaf
-					["coords"] = {
-						{ 65.0, 83.2 },
-					},
+					["coord"] = { 65.0, 83.2, 896 },
 					["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 					["g"] = {
-						{	-- Taptaf
-							["itemID"] = 161081,	-- Taptaf
+						i(161081, {	-- Taptaf
 							["crs"] = {
 								139380,	-- Taptaf
 								131735,	-- Idej the Wisee
 							},
-						},
+						}),
 					},
-				},
-				{	-- Wicker Pup
-					["speciesID"]  = 2411,	-- Wicker Pup
-					["itemID"] = 163497,	-- Spooky Bundle of Sticks
+				}),
+				p(2411, {	-- Wicker Pup
 					["description"] = "You must find each of the four parts and combine them to form this battle pet.  Coordinates for each chest are listed in the coordinate section.",
 					["coords"] = {
 						{ 18.50, 51.30 }, 	-- Bundle of Wicker Sticks
@@ -354,24 +342,20 @@ _.Zones =
 						{ 25.20, 24.20 }, 	-- Wolf Pup Spine
 					},
 					["g"] = {
-						{	-- Bundle of Wicker Sticks
-							["itemID"] = 163789,	-- Bundle of Wicker Sticks
+						i(163789, {	-- Bundle of Wicker Sticks
 							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						},
-						{	-- Miniature Stag Skull
-							["itemID"] = 163791,	-- Miniature Stag Skull
+						}),
+						i(163791, {	-- Miniature Stag Skull
 							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						},
-						{	-- Spooky Incantation
-							["itemID"] = 163790,	-- Spooky Incantation
+						}),
+						i(163790, {	-- Spooky Incantation
 							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						},
-						{	-- Wolf Pup Spine
-							["itemID"] = 163796,	-- Wolf Pup Spine
+						}),
+						i(163796, {	-- Wolf Pup Spine
 							["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]
-						},
+						}),
 					},
-				},
+				}),
 			}),
 		}),
 	}),
