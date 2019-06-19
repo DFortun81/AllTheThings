@@ -84,7 +84,7 @@ _.Zones =
 						["coord"] = { 76.6, 8.40, 418 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(716), 	-- Amethyst Spiderling
 					p(714), 	-- Feverbite Hatchling
 					p(678), 	-- Jungle Grub

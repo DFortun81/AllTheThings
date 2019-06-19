@@ -131,7 +131,7 @@ _.Zones =
 						["coord"] = { 50.2, 12.2, 422 },
 					}),
 				}),
-				n(-25, { 	-- Pet Battles
+				filter(101, {	-- Pet Battle
 					p(732), 	-- Amber Moth
 					p(742), 	-- Clouded Hedgehog
 					p(745), 	-- Crunchy Scorpion
