@@ -36,12 +36,15 @@ _.Achievements =
 						title(279),		-- Talon Queen (Female only)
 						follower(224),	-- Talon Guard Kurekk
 					}),
-					a(ach(9478, {	-- Savage Friends (Alliance)
+					ach(9478, 9477, {	-- Savage Friends [A] / [H]
 						i(111987),		-- Trading Post, Level 3 [Blueprints]
-					})),
-					h(ach(9477, {	-- Savage Friends (Horde)
+					}),
+					--[[a(ach(9478, {	-- Savage Friends (Alliance)
 						i(111987),		-- Trading Post, Level 3 [Blueprints]
-					})),
+					})),]]
+					--[[h(ach(9477, {	-- Savage Friends (Horde)
+						i(111987),		-- Trading Post, Level 3 [Blueprints]
+					})),]]
 					a(ach(9476, {	-- Sha'tari Defense
 						a(title(288)),	-- Peacekeeper
 						faction(1710), 	-- Sha'tari Defense
