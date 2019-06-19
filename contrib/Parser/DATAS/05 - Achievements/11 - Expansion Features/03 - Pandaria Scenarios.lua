@@ -25,17 +25,22 @@ _.Achievements =
 					ach(8016),		-- Assault on Zan'vess (Assault on Zan'vess)
 					ach(7273),		-- Beat the Heat (Arena of Annihilation)
 					ach(6931, {		-- Binan Village All-Star (Brewmoon Festival)
-						crit(1),		-- Briaw Shan
-						crit(2),		-- Barrel of Fireworks
-						crit(3),		-- Vale Marksman
-						crit(4),		-- Karasang Wild Brew
-						crit(5),		-- Tian Disciple
-						crit(6),		-- Derpa Derpa
+						["maps"] = { 452 },	-- Brewmoon Festival
+						["g"] = {
+							crit(1),		-- Briaw Shan
+							crit(2),		-- Barrel of Fireworks
+							crit(3),		-- Vale Marksman
+							crit(4),		-- Karasang Wild Brew
+							crit(5),		-- Tian Disciple
+							crit(6),		-- Derpa Derpa
+						},
 					}),
 					ach(8316, {		-- Blood in the Snow (Blood in the Snow)
 						["maps"] = { 523 },	-- Blood in the Snow
 					}),
-					ach(6923),		-- Brewmoon Festival (Brewmoon Festival)
+					ach(6923, {		-- Brewmoon Festival (Brewmoon Festival)
+						["maps"] = { 452 },	-- Brewmoon Festival
+					}),
 					ach(7989),		-- Bubbletrapped! (A Little Patience)
 					ach(7990),		-- Cannonballer (A Little Patience)
 					ach(7522),		-- Crypt of Forgotten Kings (Crypt of Forgotten Kings)
@@ -224,7 +229,9 @@ _.Achievements =
 					ach(7984),		-- Watery Grave (Dagger in the Dark)
 					ach(7993),		-- We've Been Dancin' (A Little Patience)
 					ach(7991),		-- Which Came First? (A Little Patience)
-					ach(6930),		-- Yaungolian Barbecue (Brewmoon Festival)
+					ach(6930, {		-- Yaungolian Barbecue (Brewmoon Festival)
+						["maps"] = { 452 },	-- Brewmoon Festival
+					}),
 					ach(7986),		-- You Mean That Wasn't a Void Zone? (Dagger in the Dark)
 				},
 			}),
