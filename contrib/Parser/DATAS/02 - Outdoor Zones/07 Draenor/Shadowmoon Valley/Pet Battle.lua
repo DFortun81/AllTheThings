@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
-			n(-25, {	-- Pet Battle
+			filter(101, {	-- Pet Battles
 				p(407), 	-- Forest Spiderling
 				p(1447), 	-- Moonshell Crab
 				p(1455), 	-- Mossbite Skitterer
