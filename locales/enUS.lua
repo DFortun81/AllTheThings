@@ -865,44 +865,30 @@ AllTheThings.L = {
 		[-2] = BATTLE_PET_SOURCE_3, 											-- Vendor
 		[-3] = GetItemSubClassInfo(15,3), 										-- World Event
 		[-4] = BATTLE_PET_SOURCE_6, 											-- Achievement
-		[-5] = UNIT_NAME_PLAYER_TITLE, 											-- Titles
-		[-6] = GUILD_INTEREST_DUNGEON, 											-- Dungeons
 		[-7] = WORLD.." "..RAID_BOSSES, 										-- World Bosses
-		[-8] = GDAPI_REALMTYPE_NORMAL,											-- PvE
 		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
-		[-10] = PLAYER_DIFFICULTY1, 											-- Normal
-		[-11] = PLAYER_DIFFICULTY2, 											-- Heroic
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." [East - Demons]",					-- Warpwood Quarter [East - Demon]
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." [North - Ogres]",					-- Gordok Commons [North - Ogres]
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." [West - Elves]",						-- Capital Gardens [West - Elves]
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4, 										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
-		[-18] = SCENARIOS, 														-- Scenarios
 		[-19] = DUNGEON_FLOOR_PROVINGGROUNDS1, 									-- Arena of Annihilation
-		[-20] = GetCategoryInfo(15275), 										-- Class Hall
-		[-21] = ORDER_HALL_PALADIN, 											-- Sanctum of Light
-		[-22] = ORDER_HALL_ROGUE, 												-- The Hall of Shadows
-		[-23] = ORDER_HALL_DEATHKNIGHT, 										-- Acherus
-		[-24] = ORDER_HALL_WARLOCK, 											-- Dreadscar Rift
+		
 		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		[-27] = PLAYER_DIFFICULTY6, 											-- Mythic
-		[-28] = PLAYER_DIFFICULTY3, 											-- Raid Finder
-		[-29] = PLAYER_DIFFICULTY3.." "..BAGSLOT, 								-- Raid Finder Bag
-		[-30] = GUILD_EVENTS, 													-- Events
+		
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
 		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
-		[-33] = PROFESSIONS_FISHING,											-- Fishing
+		
 		[-34] = TRACKER_HEADER_WORLD_QUESTS, 									-- World Quests
-		[-35] = ORDER_HALL_MISSIONS, 											-- Class Hall Missions
+		
 		[-36] = BATTLE_PET_SOURCE_10, 											-- In-Game Shop
 		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 		[-38] = TRADE_SKILLS,													-- Professions
-		[-39] = LFG_LIST_LEGACY.." "..TRACKER_HEADER_QUESTS,					-- Legacy Quest
+		
 		[-40] = LFG_LIST_LEGACY, 												-- Legacy
 		[-41] = "Cache of Madness",
-		[-42] = ORDER_HALL_MISSIONS,  											-- Class Hall Missions
 -- Armor Types
 		[-43] = GetItemSubClassInfo(4,1).." "..RESISTANCE0_NAME,				-- Cloth
 		[-44] = GetItemSubClassInfo(4,2).." "..RESISTANCE0_NAME,				-- Leather
@@ -911,32 +897,23 @@ AllTheThings.L = {
 -- World Events
 		[-47] = select(1,GetCategoryInfo(160)),									-- Lunar Festival
 		[-48] = MINIMAP_TRACKING_STABLEMASTER,									-- Stable Master
-		[-49] = (1275),
 		[-50] = GetSpellInfo(27741),											-- Love is in the Air
 		[-51] = select(1,GetCategoryInfo(159)),									-- Noblegarden
 		[-52] = select(1,GetCategoryInfo(163)),									-- Children's Week
 		[-53] = "Midsummer Fire Festival",										-- Midsummer Fire Festival
-		[-54] = "Unused",														-- Unused (Previously: Midsummer Fire Festival [Horde])
 		[-55] = "Pirate's Day",
 		[-56] = select(1,GetCategoryInfo(162)),									-- Brewfest
-		[-57] = "Harvest Festival",
 		[-58] = select(1,GetCategoryInfo(158)),									-- Hallow's End
 		[-59] = "Day of the Dead",
 		[-60] = select(1,GetCategoryInfo(14981)),								-- Pilgrim's Bounty
 		[-61] = GetSpellInfo(21953),											-- The Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",
-		[-63] = GetSpellInfo(243549),											-- Trial of Style
-		[-64] = "Main Questline",
 		[-65] = GetSpellInfo(190357).." "..select(1,GetCategoryInfo(15268)),	-- Blizzard Promotions
-		[-66] = BATTLE_PET_SOURCE_5, 											-- Pet Battle
-		[-67] = EXPANSION_NAME5.." "..CHALLENGE_MODE.." "..AUCTION_CATEGORY_WEAPONS, -- Warlords of Draenor Chaallenge Mode Weapons
 		[-68] = DUNGEON_FLOOR_NIGHTMARERAID13,									-- The Emerald Dream
 		[-69] = GetSpellInfo(21127),											-- Maraudon Portal
 		[-70] = DUNGEON_FLOOR_DESOLACE22.." - "..GetSpellInfo(251097),			-- Foulspore Cavern [Orange]
 		[-71] = DUNGEON_FLOOR_DESOLACE21.." - "..GetSpellInfo(251095),			-- The Wicked Grotto [Purple]
 		[-72] = "Sargerei War Council",
-		[-73] = "Call of the Scarab",											-- Call of the Scarab
-		[-74] = ZONE.." "..WIDE, 												-- Zone Wide
 		[-75] = DUNGEON_FLOOR_BLACKROCKDEPTHS1,  								-- Detention Block
 		[-76] = DUNGEON_FLOOR_BLACKROCKDEPTHS2,  								-- Shadowforge City
 		[-77] = SPECIAL, 														-- Special
@@ -951,24 +928,15 @@ AllTheThings.L = {
 		[-86] = "Library",
 		[-87] = "Armory",
 		[-88] = "Cathedral",
-		[-89] = "Scorn",
 		[-90] = ELITE,															-- Elite
-		[-91] = "Deprecated",
-		[-92] = "How to obtain Meatball",										-- Meatball Instructions
 		[-93] = "Silithus (The Wound)",
 		[-94] = "Black Market Auction House",									-- Black Market Auction House"
-		[-95] = ENABLE_MUSIC.." "..ROLL,										-- Music Roll
-		[-96] = NPC_NAMES_DROPDOWN_TRACKED,										-- Quest NPCs
-		[-97] = VOICEMACRO_20_Dw_0_FEMALE,										-- No, they're not real, but thanks for noticing.
-		[-98] = GARRISON_LOCATION_TOOLTIP,										-- Garrison
 -- Garrison Note: These will be changed into a new class soon(TM)
 		[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 						-- Stables
 		[-100] = LFG_LIST_LEGACY, 												-- Legacy (Unassociated with shortcut)
-		[-101] = GARRISON_FOLLOWERS,											-- Followers
 		[-102] = select(2,C_Garrison.GetBuildingInfo(76)),						-- Alchemy Lab
 		[-103] = select(2,C_Garrison.GetBuildingInfo(24)),						-- Barn
 		[-104] = select(2,C_Garrison.GetBuildingInfo(26)),						-- Barracks
-		[-105] = select(2,C_Garrison.GetBuildingInfo(93)), 						-- Enchanter's Study
 		[-106] = select(2,C_Garrison.GetBuildingInfo(91)), 						-- Engineering Works
 		[-107] = select(2,C_Garrison.GetBuildingInfo(64)), 						-- Fishing Shack
 		[-108] = select(2,C_Garrison.GetBuildingInfo(96)), 						-- Gem Boutique
@@ -978,16 +946,11 @@ AllTheThings.L = {
 		[-112] = select(2,C_Garrison.GetBuildingInfo(42)), 						-- Menagerie
 		[-113] = select(2,C_Garrison.GetBuildingInfo(52)), 						-- Salvage Yard
 		[-114] = select(2,C_Garrison.GetBuildingInfo(95)), 						-- Scribe's Quaters
-		[-115] = select(2,C_Garrison.GetBuildingInfo(51)), 						-- Storehouse
-		[-116] = select(2,C_Garrison.GetBuildingInfo(94)), 						-- Tailoring Emporium
 		[-117] = select(2,C_Garrison.GetBuildingInfo(60)), 						-- The Forge
 		[-118] = select(2,C_Garrison.GetBuildingInfo(90)), 						-- The Tannery
 		[-119] = select(2,C_Garrison.GetBuildingInfo(111)), 					-- Trading Post
 --Horde [Swaps based on faction ONLY after a reloadui]
-		[-120] = select(2,C_Garrison.GetBuildingInfo(61)), 						-- Lunarfall Excavation / Frostwall Mine [585]
 		[-121] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
-		[-122] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
-		[-123] = select(2,C_Garrison.GetBuildingInfo(37)), 						-- Mage Tower / Spirit Lodge
 		[-124] = "Garrison Sets", 												-- Garrison Sets
 -- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-125] = select(2,C_Garrison.GetBuildingInfo(8)), 						-- Dwarven Bunker / War Mill
@@ -999,13 +962,6 @@ AllTheThings.L = {
 		[-131] = "The Hinterlands "..GetSpellInfo(133137),						-- The Hinterlands Active
 		[-132] = "Feralas "..GetSpellInfo(133137),								-- Feralas Active
 		[-133] = "Duskwood "..GetSpellInfo(78741),								-- Duskwood Activated
-		--[[ Would rather cache through Blizzard, but it's not able to retrieve info during loading screen.
-		-- Need to talk to Crieve more and see if there's a way to cache it possible
-		--[-130] = select(1,AllTheThings.GetMapName(47)),	-- Duskwood Active
-		--[-131] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(133137),	-- The Hinterlands Active
-		--[-132] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(133137),	-- Feralas Active
-		--[-133] = select(1,AllTheThings.GetMapName(47)).." "..GetSpellInfo(78741),	-- Duskwood Activated
-		--]]
 --Transmog Sets
 		[-134] = "Orgrimmar Set",
 		[-135] = "Stormwind Set",
@@ -1026,28 +982,19 @@ AllTheThings.L = {
 		[-148] = "Streamtalker",
 		[-149] = "Sunsoul",
 		[-150] = "Trailseeker",
-		[-151] = "Soulare of Andorhal",
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
-		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 130),					-- Level 130
 		[-157] = "The Hinterlands "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "Feralas "..GetSpellInfo(78741),								-- Feralas Activated
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll
-		--[[ See above
-		[-157] = select(1,AllTheThings.GetMapName(26)).." "..GetSpellInfo(78741),	-- The Hinterlands Activated
-		[-158] = select(1,AllTheThings.GetMapName(69)).." "..GetSpellInfo(78741),	-- Feralas Activated
-		--]]
 -- Expansions
 		[-160] = TUTORIAL_TITLE53,												-- Mounts
 -- Other
 		[-161] = TOY,															-- Toy
 		[-162] = PETS,															-- Pets
 		[-163] = RESISTANCE0_NAME,  											-- Armor
-		[-164] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
 		[-165] = GetItemSubClassInfo(13,1),
-		[-166] = GetSpellInfo(168819),											-- Pickpocketing
 		[-167] = GetSpellInfo(7738),											-- Fishing Poles
 		[-168] = FACTION_OTHER .. " " ..QUESTS_LABEL, 							-- Other Quests
 		[-169] = BOUNTY_BOARD_LOCKED_TITLE, 									-- Emissary Quests
