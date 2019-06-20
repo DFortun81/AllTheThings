@@ -30,6 +30,7 @@ _.Zones =
 					["description"]	= "You get this Quest when you reach Prestige Rang 2.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
+					["u"] = 40,
 				}),
 				q(27277, {	-- An Audience with Ureda
 					["qg"] = 4566,	-- Kaelystia Hatebringer
