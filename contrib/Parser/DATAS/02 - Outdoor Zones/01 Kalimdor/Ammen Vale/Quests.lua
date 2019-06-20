@@ -7,12 +7,10 @@ _.Zones =
 		m(468, {	-- Ammen Vale
 			n(-17, {	-- Quests
 				i(24414, {	-- Blood Elf Plans
-					["g"] = {
-						q(9798, {	-- Blood Elf Plans
-							["qg"] = 16522,	-- Surveyor Candress
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
+					q(9798, {	-- Blood Elf Plans
+						["qg"] = 16522,	-- Surveyor Candress
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 				q(9311, {	-- Blood Elf Spy
 					["qg"] = 16546,	-- Tolaan
