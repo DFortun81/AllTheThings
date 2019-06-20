@@ -6,13 +6,17 @@ _.Craftables =
 	tier(8, {	-- Battle For Azeroth
 		n(-180, {	-- Alchemy
 			filter(101, {	-- Battle Pets
+				i(160324, {	-- Grumbling Sac
+					i(163859),	-- Baby Crawg
+					i(163858),	-- Ball of Tentacles
+					i(163861),	-- Undulating Blue Sac
+					i(163860),	-- Wind-Up Frog
+				}),
 				i(160325, {	-- Quivering Sac
-					["g"] = {
-						i(163859),	-- Baby Crawg
-						i(163861),	-- Bloodfeaster Larva
-						i(163860),	-- Gearspring Hopper
-						i(163858),	-- Slippy
-					},
+					i(163859),	-- Baby Crawg
+					i(163861),	-- Bloodfeaster Larva
+					i(163860),	-- Gearspring Hopper
+					i(163858),	-- Slippy
 				}),
 			}),
 			filter(53, {	-- Trinkets

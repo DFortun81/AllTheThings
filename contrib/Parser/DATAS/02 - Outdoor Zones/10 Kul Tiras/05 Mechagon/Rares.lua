@@ -24,7 +24,7 @@ _.Zones =
 				n(150394, {	-- Armored Vaultbot
 					--["questID"] = ,
 					["isDaily"] = true,
-					["description"] = "Requires an |cFFFFD700Armored Vaultbot Key|r.",
+					["description"] = "Kite it to the large magnet at |cFFFFD700Bondo's Scrapyard|r to make it vulnerable to kill it.",
 					["coords"] = {
 						{ 53.6, 46.4, 1462 },
 						{ 53.8, 49.4, 1462 },
@@ -35,6 +35,9 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 30,
 						},
+						i(167843, {	-- Blueprint: Vaultbot Key
+							["questID"] = 55058,
+						}),
 					},
 				}),
 				n(151308, {	-- Boggac Skullbash

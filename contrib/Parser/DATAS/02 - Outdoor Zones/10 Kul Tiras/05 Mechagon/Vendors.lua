@@ -18,6 +18,9 @@ _.Zones =
 				n(150359, {	-- Pascal-K1N6
 					["coord"] = { 71.4, 32.3, 1462 },
 					["g"] = {
+						i(167062, {	-- Armored Vaultbot Key
+							i(170072),	-- Armored Vaultbot
+						}),
 						i(167751),	-- Mechanocat Laser Pointer
 						i(169384),	-- Microbot XD
 						i(169383),	-- Utility Mechanoclaw

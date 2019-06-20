@@ -398,6 +398,7 @@ _.ExpansionFeatures =
 					}),
 					n(-162, {	-- Pets
 						["groups"] = {
+							i(169322),	-- Adventurous Hopling Pack
 							i(166486),	-- Baby Stonehide
 							i(163799),	-- Barnaby
 							i(163818),	-- Bloodstone Tunneler

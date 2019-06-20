@@ -19,6 +19,9 @@ _.Achievements =
 					ach(13269, {	-- Pet Battle Challenge: Gnomeregan*
 						i(165894),	-- Mini Spider Tank
 					}),
+					ach(13627, {	-- Pet Battle Challenge: Stratholme
+						i(169670),	-- Evil Wizard Hat
+					}),
 					ach(11765, {	-- Pet Battle Challenge: Wailing Caverns*
 						i(147543),	-- Son of Skum
 					}),
@@ -139,6 +142,9 @@ _.Achievements =
 						i(92738),	-- Safari Hat
 						ach(7498),	-- Taming the Great Outdoors [15)
 						ach(6601),	-- Taming the Wild [1)
+					}),
+					ach(13695, {	-- Team Aquashock
+						i(169349),	-- Kelpfin
 					}),
 					ach(8348, {	-- The Longest Day*
 						i(98715),	-- Marked Flawless Battle-Stone

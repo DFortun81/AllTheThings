@@ -58,6 +58,24 @@ _.Zones =
 						["coord"] = { 37.5, 16.7, 1355 },
 					}),
 				}),
+				n(151782, {	-- Ravenous Slime
+					["description"] = "Feed |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon.",
+					["coords"] = {
+						{ 32.9, 39.8, 1355 },
+						{ 45.7, 24.1, 1355 },
+						{ 71.7, 25.7, 1355 },
+						{ 55.1, 48.8, 1355 },
+					},
+					["g"] = {
+						i(167809),	-- Slimy Darkhunter
+						i(167808),	-- Slimy Eel
+						i(167807),	-- Slimy Fangtooth
+						i(167810),	-- Slimy Hermit Crab
+						i(167806),	-- Slimy Octopode
+						i(167805),	-- Slimy Otter
+						i(167804),	-- Slimy Sea Slug
+					},
+				}),
 				p(2678, {	-- Abyssal Slitherling
 					["crs"] = { 154814 },	-- Abyssal Slitherling
 				}),

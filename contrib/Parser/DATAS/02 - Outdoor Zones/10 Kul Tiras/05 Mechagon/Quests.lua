@@ -170,6 +170,18 @@ _.Zones =
 						},
 					},
 				}),
+				i(167843, {	-- Blueprint: Vaultbot Key
+					["questID"] = 55058,
+					["crs"] = {
+						150394,	-- Armored Vaultbot
+					},
+					["g"] = {
+						{	-- Junkyard Architect (Vaultbot Key)
+							["achievementID"] = 13479,
+							["criteriaID"] = 6,
+						},
+					},
+				}),
 				q(55055, {	-- Build a Bigger Fish Trap
 					["qg"] = 151462,	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },

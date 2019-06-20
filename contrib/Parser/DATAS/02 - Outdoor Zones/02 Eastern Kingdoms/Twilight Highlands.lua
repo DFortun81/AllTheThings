@@ -79,6 +79,9 @@ _.Zones =
 					p(388), 	-- Shore Crab
 					p(552), 	-- Twilight Fiendling
 					p(470), 	-- Twilight Spider
+					p(2677, {	-- Twilight Whelpling
+						["crs"] = { 154803 },	-- Twilight Whelpling
+					}),
 					p(418), 	-- Water Snake
 					p(548), 	-- Wildhammer Gryphon Hatchling
 					p(549), 	-- Yellow-Bellied Marmot

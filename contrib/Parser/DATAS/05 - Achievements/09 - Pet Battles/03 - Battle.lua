@@ -668,6 +668,9 @@ _.Achievements =
 						crit(18),	-- Talia Sparkbrow
 						crit(19),	-- Zujai
 					}),
+					ach(13766, {	-- Malowned
+						i(170102),	-- Burnout
+					}),
 					ach(9693, {		-- Master of Magic
 						crit(1),		-- Nightwatcher Merayl (Azsuna)
 						crit(2),		-- Bodhi Sunwayver (Dalaran)
