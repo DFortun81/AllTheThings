@@ -47,6 +47,7 @@ _.Zones =
 			q(28580),	-- Warchief's Command: Badlands!
 			q(28711),	-- Warchief's Command: Borean Tundra!
 			q(39198),	-- Warchief's Command: Blade's Edge Mountains!
+			q(28671),	-- Warchief's Command: Blasted Lands!
 			q(28667),	-- Warchief's Command: Burning Steppes!
 			q(27722),	-- Warchief's Command: Deepholm!
 			q(28548),	-- Warchief's Command: Desolace!

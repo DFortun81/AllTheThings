@@ -8,10 +8,16 @@ _.Zones =
 			n(-17,  {	-- Quests
 				ach(4909, {	-- Blasted Lands Quests
 					crit(1, {	-- Razelikh
-						["sourceQuest"] = 26171,	-- You Are Rakh'likh, Demon
+						["sourceQuests"] = {
+							26171,	-- You Are Rakh'likh, Demon (alliance)
+							25701,	-- You Are Rakh'likh, Demon (horde)
+						},
 					}),
 					crit(2, {	-- The Tainted Forest
-						["sourceQuest"] = 26187,	-- The Downfall of Marl Wormthorn (alliance)
+						["sourceQuests"] = {
+							26187,	-- The Downfall of Marl Wormthorn (alliance)
+							25720,	-- The Downfall of Marl Wormthorn (horde)
+						},
 					}),
 					crit(3, {	-- Avenging the Rockpool
 						["sourceQuests"] = {
@@ -32,12 +38,14 @@ _.Zones =
 					},
 				}),
 				q(25690, {	-- A Bloodmage's Gotta Eat Too
-					["qg"] = 7505,	-- 
+					["qg"] = 7505,	-- Bloodmage Drazial
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25684,	-- Attune the Bloodstone
 					["g"] = {
-						i(59422),	-- 
-						i(59424),	-- 
-						i(59423),	-- 
+						i(59422),	-- Ashmane Bracers
+						i(59424),	-- Boots of the Blasted Lands
+						i(59423),	-- Stained Shoulderguards
 					},
 				}),
 				q(35745, {	-- Attack of the Iron Horde
@@ -64,7 +72,7 @@ _.Zones =
 						i(118765),	-- Sapphire Seal
 					},
 				}),
-				q(25715, {	-- A Closer Look -- aa
+				q(25715, {	-- A Closer Look
 					["qg"] = 9540,	-- Enohar Thunderbrew
 					["coord"] = { 61.4, 18.6, 17 },
 					["races"] = ALLIANCE_ONLY,
@@ -75,7 +83,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26184,	-- Wormthorn's Dream
 				}),
-				q(25703, {	-- Atrocities -- aa
+				q(25703, {	-- Atrocities
 					["qg"] = 41354,	-- Neptool
 					["coord"] = { 71.0, 60.1, 17 },
 					["sourceQuest"] = 25702,	-- Home... Gone... Naga...
@@ -86,12 +94,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36292,	-- Investigating the Invasion
 				}),
---[[
 				q(25684, {	-- Attune the Bloodstone
-					["qg"] = 7506,	-- 
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25683,	-- The Dreadmaul Furnace
 				}),
-]]--
 				q(26158, {	-- Attune the Bloodstone
 					["qg"] = 42298,	-- Kasim Sharim
 					["coord"] = { 62.4, 25.8, 17 },
@@ -104,13 +112,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26159,	-- The First Step
 				}),
---[[
 				q(25686, {	-- Blood Ritual
-					["qg"] = 7506,	-- 
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25685,	-- The First Step
 				}),
---					q(35499),	-- Blow up towers (NOT IN GAME?)
---]]
+				q(35499, {	-- Blow up towers
+					["u"] = 1,
+				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["qg"] = 5385,	-- Watcher Mahar Ba
 					["coord"] = { 63.1, 16.8, 17 },
@@ -155,12 +165,12 @@ _.Zones =
 						35494,	-- Mementos of the Fallen
 					},
 				}),
---[[
 				q(25719, {	-- Demoniac Vessel
-					["qg"] = 42348,	-- 
+					["qg"] = 42348,	-- Elijah Dawnflight
+					["coord"] = { 47.1, 69.1, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25718,	-- How Best to Proceed
 				}),
---]]
 				q(26186, {	-- Demoniac Vessel
 					["qg"] = 42352,	-- Cenarion Observer Shayana
 					["coord"] = { 46.3, 87.1, 17 },
@@ -233,12 +243,15 @@ _.Zones =
 						35760,	-- Toothsmash the Annihilator
 					},
 				}),
---[[					
 				q(25693, {	-- Enhancing the Stone
-					["qg"] = 41159,	-- 
+					["qg"] = 41159,	-- Watcher Wazzik
+					["coord"] = { 54.3, 50.0, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						25691,	-- The Charred Granite of the Dark Portal
+						25692,	-- The Vile Blood of Demons
+					},
 				}),
-]]--
 				q(26166, {	-- Enhancing the Stone
 					["qg"] = 42299,	-- Watcher Grimeo
 					["coord"] = { 55.1, 49.5, 17 },
@@ -253,57 +266,64 @@ _.Zones =
 					["coord"] = { 71.0, 60.1, 17 },
 					["sourceQuest"] = 25703,	-- Atrocities
 				}),
---[[
 				q(25674, {	-- Futile Pride
-					["qg"] = 41124,	-- 
+					["qg"] = 41124,	-- Okrilla
+					["coord"] = { 40.4, 11.6, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						28858,	-- Blasted Lands: The Other Side of the World
+						28671,	-- Warchief's Command: Blasted Lands!
+					},
 				}),
 				q(25676, {	-- Heartstrike
-					["qg"] = 41124,	-- 
+					["qg"] = 41124,	-- Okrilla
+					["coord"] = { 40.4, 11.6, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25674,	-- Futile Pride
 				}),
-]]--
-				q(25702, {	-- Home... Gone... Naga... -- aa
+				q(25702, {	-- Home... Gone... Naga...
 					["qg"] = 41265,	-- Salt-Flop
 					["coord"] = { 73.1, 47.4, 17 },
 					["isBreadcrumb"] = true,
 				}),
---[[
 				q(25718, {	-- How Best to Proceed
-					["qg"] = 42344,	-- 
+					["qg"] = 42344,	-- Rohan Sunveil
+					["coord"] = { 49.7, 71.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25717,	-- The Demons and the Druid
 				}),
 				q(25679, {	-- Into the Mountain
-					["qg"] = 41333,	-- 
+					["qg"] = 41333,	-- Rofilian Dane
+					["coord"] = { 59.5, 3.5, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						25677,	-- It's All Mine
+						25678,	-- Pick Your Fate
+					},
 				}),
 				q(25677, {	-- It's All Mine
-					["qg"] = 41133,	-- 
+					["qg"] = 41133,	-- Rofilian Dane
+					["coord"] = { 59.5, 3.5, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25676,	-- Heartstrike
 				}),
-]]--
 				q(26157, {	-- Kasim Sharim
 					["qg"] = 5385,	-- Watcher Mahar Ba
 					["coord"] = { 63.1, 16.8, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25716,	-- Cultists at our Doorstep
 				}),
---[[
-				q(34741, {	-- Keli'dan the Breaker
-					["qg"] = 79675,	-- 
-					["races"] = HORDE_ONLY,
-				}),
-				i(8244, {	-- Flawless Draenethyst Sphere
-					q(25772, {	-- Kum'isha's Endeavors
-						["repeatable"] = true,
-					}),
-				}),
 				q(25700, {	-- Loramus Thalipedes Awaits
-					["qg"] = 7506,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						25697,	-- The Amulet of Allistarj
+						25699,	-- The Amulet of Grol
+						25698,	-- The Amulet of Sevine
+					},
 				}),
---]]
-				q(25710, {	-- Minor Distractions -- aa
+				q(25710, {	-- Minor Distractions
 					["qg"] = 5393,	-- Quartermaster Lungertz
 					["coord"] = { 60.0, 13.4, 17 },
 					["races"] = ALLIANCE_ONLY,
@@ -359,13 +379,15 @@ _.Zones =
 					["sourceQuest"] = 36307,	-- Investigating the Invasion
 				}),
 				q(25682, {	-- Mission Complete
-					["qg"] = 41134,	-- 
+					["qg"] = 41134,	-- Tak'arili
+					["coord"] = { 62.2, 1.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25681,	-- Some People Just Need Killing
 					["g"] = {
-						i(59414),	-- 
-						i(59416),	-- 
-						i(59415),	-- 
-						i(59417),	-- 
+						i(59414),	-- Boots of Attrition
+						i(59416),	-- Okrilla's Belt
+						i(59415),	-- Reporter's Shouldguards
+						i(59417),	-- Rockard Greaves
 					},
 				}),
 				q(25706, {	-- Neptool's Revenge
@@ -384,12 +406,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25710,	-- Minor Distractions
 				}),
---[[					
 				q(25687, {	-- Not Just Any Body
-					["qg"] = 7506,	-- 
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25686,	-- Blood Ritual
 				}),
---]]
 				q(26161, {	-- Not Just Any Body
 					["qg"] = 42298,	-- Kasim Sharim
 					["coord"] = { 62.5, 26.2, 17 },
@@ -397,13 +419,15 @@ _.Zones =
 					["sourceQuest"] = 26166,	-- Enhancing the Stone
 				}),
 				q(25675, {	-- Ogre Combat
-					["qg"] = 41125,	-- 
+					["qg"] = 41125,	-- Master Aitokk
+					["coord"] = { 42.6, 13.9, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25674,	-- Futile Pride
 					["g"] = {
-						i(59407),	-- 
-						i(59408),	-- 
-						i(59409),	-- 
-						i(59406),	-- 
+						i(59407),	-- Aitokk's Belt
+						i(59408),	-- Boots of Intimidation
+						i(59409),	-- Dreadmaul Bracers
+						i(59406),	-- Gloves of Purchased Time
 					},
 				}),
 				q(35764, {	-- Okrilla's Revenge
@@ -433,22 +457,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(25678, {	-- Pick Your Fate
-					["qg"] = 41133,	-- 
+					["qg"] = 41133,	-- Rofilian Dane
+					["coord"] = { 59.5, 3.5, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25676,	-- Heartstrike
 					["g"] = {
-						i(59411),	-- 
-						i(59412),	-- 
-						i(59413),	-- 
-						i(59410),	-- 
+						i(59411),	-- Belt of Cheapened Lives
+						i(59412),	-- Boots of Financial Victory
+						i(59413),	-- Business Handlers
+						i(59410),	-- Rofilian's Armbands
 					},
 				}),
---[[					
 				q(25694, {	-- Protecting Our Rear
-					["qg"] = 19254,	-- 
+					["qg"] = 19254,	-- Warlord Dar'toon
+					["coord"] = { 54.4, 50.5, 17 },
 					["races"] = HORDE_ONLY,
 				}),
-]]--
-				q(26173, {	-- Protecting Our Rear -- aa
+				q(26173, {	-- Protecting Our Rear
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 					["coord"] = { 54.6, 50.4, 17 },
 					["races"] = ALLIANCE_ONLY,
@@ -504,12 +529,12 @@ _.Zones =
 						un(2, i(18602)),	-- Tome of Sacrifice
 					},
 				}),
---[[					
 				q(25681, {	-- Some People Just Need Killing
-					["qg"] = 41134,	-- 
+					["qg"] = 41134,	-- Tak'arili
+					["coord"] = { 62.2, 1.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25680,	-- That's Not Us
 				}),
-]]--
 				q(26175, {	-- Surwich
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 					["coord"] = { 54.6, 50.4, 17 },
@@ -517,21 +542,23 @@ _.Zones =
 					["sourceQuest"] = 26174,	-- Watching Our Back
 					["isBreadcrumb"] = true,
 				}),
---[[
 				q(25680, {	-- That's Not Us
-					["qg"] = 41134,	-- 
+					["qg"] = 41134,	-- Tak'arili
+					["coord"] = { 62.2, 1.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25679,	-- Into the Mountain
 				}),
---]]					
 				q(25688, {	-- The Altar of Storms
-					["qg"] = 7506,	-- 
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25687,	-- Not Just Any Body
 					["g"] = {
-						i(59428),	-- 
-						i(59425),	-- 
-						i(59427),	-- 
-						i(59429),	-- 
-						i(59426),	-- 
+						i(59428),	-- Boots of Completed Rituals
+						i(59425),	-- Boots of Demonic Resurrection
+						i(59427),	-- Bracers of the Demonic Altar
+						i(59429),	-- Helm of Storms
+						i(59426),	-- Loramus' Gloves
 					},
 				}),
 				q(26162, {	-- The Altar of Storms
@@ -553,12 +580,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26160,	-- Blood Ritual
 				}),
---[[					
 				q(25697, {	-- The Amulet of Allistarj
-					["qg"] = 7783,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25693,	-- Enhancing the Stone
 				}),
---]]					
 				q(26169, {	-- The Amulet of Grol
 					["qg"] = 42298,	-- Kasim Sharim
 					["coord"] = { 62.4, 25.9, 17 },
@@ -572,13 +599,15 @@ _.Zones =
 					},
 				}),
 				q(25699, {	-- The Amulet of Grol
-					["qg"] = 7783,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25693,	-- Enhancing the Stone
 					["g"] = {
-						i(59419),	-- 
-						i(59420),	-- 
-						i(59418),	-- 
-						i(59421),	-- 
+						i(59419),	-- Ogre-Hunter Boots
+						i(59420),	-- Serpent Coils
+						i(59418),	-- Shattershore Cloak
+						i(59421),	-- Strengthening Belt
 					},
 				}),
 				q(26168, {	-- The Amulet of Sevine
@@ -587,28 +616,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26160,	-- Blood Ritual
 				}),
---[[					
 				q(25698, {	-- The Amulet of Sevine
-					["qg"] = 7783,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25693,	-- Enhancing the Stone
 				}),
 				q(25691, {	-- The Charred Granite of the Dark Portal
-					["qg"] = 41159,	-- 
+					["qg"] = 41159,	-- Watcher Wazzik
+					["coord"] = { 54.3, 50.0, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25689,	-- Time is Short
 				}),
---]]
 				q(26164, {	-- The Charred Granite of the Dark Portal
 					["qg"] = 42299,	-- Watcher Grimeo
 					["coord"] = { 55.1, 49.5, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
---[[
 				q(25717, {	-- The Demons and the Druid
-					["qg"] = 42344,	-- 
+					["qg"] = 42344,	-- Rohan Sunveil
+					["coord"] = { 49.7, 71.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25696,	-- The Sunveil Excursion
 				}),
---]]					
 				q(36881, {	-- The Dark Portal
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, 17 },
@@ -627,21 +658,23 @@ _.Zones =
 					},
 				}),
 				q(25720, {	-- The Downfall of Marl Wormthorn
-					["qg"] = 42344,	-- 
+					["qg"] = 42344,	-- Rohan Sunveil
+					["coord"] = { 49.7, 71.4, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25719,	-- Demoniac Vessel
 					["g"] = {
-						i(59439),	-- 
-						i(59438),	--
-						i(59440),	-- 
-						i(59437),	-- 
+						i(59439),	-- Pauldrons of the Trove
+						i(59438),	-- Shoulderguards of Tarnished Healing
+						i(59440),	-- Sunveil Breastplate
+						i(59437),	-- Wormthorn Gloves
 					},
 				}),
---[[					
 				q(25683, {	-- The Dreadmaul Furnace
-					["qg"] = 41124,	-- 
+					["qg"] = 41124,	-- Okrilla
+					["coord"] = { 40.4, 11.6, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25682,	-- Mission Complete
 				}),
---]]
 				q(26170, {	-- The Final Ritual
 					["qg"] = 42298,	-- Kasim Sharim
 					["coord"] = { 62.5, 26.2, 17 },
@@ -654,39 +687,51 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26158,	-- Attune the Bloodstone
 				}),
---[[
 				q(25685, {	-- The First Step
-					["qg"] = 7506,	-- 
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["coord"] = { 39.2, 36.2, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25684,	-- Attune the Bloodstone
 				}),
 				q(25707, {	-- The Future of the Rockpool
-					["description"] = "Pick up this quest by interacting with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
+					["coord"] = { 61.4, 64.0, 17 },
+					["description"] = "Interact with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
 				}),
 				q(25696, {	-- The Sunveil Excursion
-					["qg"] = 19254,	-- 
+					["qg"] = 19254,	-- Warlord Dar'toon
+					["coord"] = { 54.4, 50.5, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25695,	-- Watching Our Back
+					["isBreadcrumb"] = true,
 				}),
 				q(25692, {	-- The Vile Blood of Demons
-					["qg"] = 41159,	-- 
+					["qg"] = 41159,	-- Watcher Wazzik
+					["coord"] = { 54.3, 50.0, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25689,	-- Time is Short
 				}),
---]]
 				q(26165, {	-- The Vile Blood of Demons
 					["qg"] = 42299,	-- Watcher Grimeo
 					["coord"] = { 55.1, 49.5, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
---[[
 				q(9407, {	-- Through the Dark Portal
-					["qg"] = 19254,	-- 
+					["u"] = 40,
+					["qg"] = 19254,	-- Warlord Dar'toon
+					["lvl"] = 58,
+					["coord"] = { 54.4, 50.5, 17 },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(10119, {	-- Through the Dark Portal
-					["qg"] = 16841,	-- 
+					["u"] = 40,
+					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
+					["lvl"] = 58,
+					["coord"] = { 54.7, 50.5, 17 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
---]]
 				q(26163, {	-- Time is Short
 					["qg"] = 42298,	-- Kasim Sharim
 					["coord"] = { 62.4, 25.9, 17 },
@@ -697,12 +742,12 @@ _.Zones =
 						26168,	-- The Amulet of Sevine
 					},
 				}),
---[[
 				q(25689, {	-- Time is Short
-					["qg"] = 7783,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25688,	-- The Altar of Storms
 				}),
---]]					
 				q(35495, {	-- Toothsmash the Annihilator
 					["qg"] = 84929,	-- Vindicator Maraad
 					["coord"] = { 52.0, 28.6, 17 },
@@ -785,15 +830,17 @@ _.Zones =
 					},
 				}),
 				q(25695, {	-- Watching Our Back
-					["qg"] = 19254,	-- 
+					["qg"] = 19254,	-- Warlord Dar'toon
+					["coord"] = { 54.4, 50.5, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25694,	-- Protecting Our Rear
 					["g"] = {
-						i(59433),	-- 
-						i(59432),	-- 
-						i(59431),	-- 
+						i(59433),	-- Dar'toon's Cloak
+						i(59432),	-- Gloves of Foolish Innocence
+						i(59431),	-- Harmless Bracers
 					},
 				}),
-				q(26184, {	-- Wormthorn's Dream -- aa
+				q(26184, {	-- Wormthorn's Dream
 					["qg"] = 42349,	-- Mayor Charlton Connisport
 					["coord"] = { 46.3, 87.1, 17 },
 					["races"] = ALLIANCE_ONLY,
@@ -810,12 +857,17 @@ _.Zones =
 						i(59396),	-- Band of Selfless Acts
 					},
 				}),
---[[					
 				q(25701, {	-- You Are Rakh'likh, Demon
-					["qg"] = 7783,	-- 
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["coord"] = { 39.3, 35.7, 17 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25700,	-- Loramus Thalipedes Awaits
+					["g"] = {
+						i(59436),	-- Band of Noble Deeds
+						i(59435),	-- Band of Sacrifice
+						i(59434),	-- Band of Selfless Acts
+					},
 				}),
---]]
 				q(3628, {	-- You Are Rakh'likh, Demon
 					["u"] = 40,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
