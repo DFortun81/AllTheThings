@@ -5,28 +5,45 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(63, {	-- Ashenvale
-			n(-17, { 	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				a(ach(4925, {	-- Ashenvale Quests (Alliance)
-					crit(1),		-- Maestra's Post
-					crit(2),		-- Saving Astranaar
-					crit(3),		-- Stardust Spire
-					crit(4),		-- The Power of Dartol's Rod
-					crit(5),		-- Bringing Harmony to the Elements
-						{	-- Hot Lava
-							["allianceQuestID"] = 13880,
-							["qg"] = 34290,	-- Core
-							["sourceQuest"] = 13877,	-- Go With The Flow
-						},
-						{	-- Put Out The Fire
-							["allianceQuestID"] = 13884,
-							["qg"] = 34292,	-- Arctanus
-							["sourceQuest"] = 13877,	-- Go With The Flow,
-						},
-					crit(6),		-- The Satyr of Satyrnaar
-					crit(7),		-- The Corrupted Heart of the Forest
-				})),
-]]--
+			n(-17, {	-- Quests
+				ach(4925, {	-- Ashenvale Quests
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1),	-- Maestra's Post
+						crit(2, {	-- Saving Astranaar
+							["sourceQuest"] = 13853,	-- Return Fire
+						}),
+						crit(3, {	-- Stardust Spire
+							["sourceQuests"] = {
+								13979,	-- The Goblin Braintrust
+								13987,	-- The Last Stand
+								25607,	-- Ze Gnomecorder -- TODO:: verify if actually needed
+							},
+						}),
+						crit(4),	-- The Power of Dartol's Rod
+						crit(5),	-- Bringing Harmony to the Elements
+						--[[ wtf are these doing here
+							{	-- Hot Lava
+								["allianceQuestID"] = 13880,
+								["qg"] = 34290,	-- Core
+								["sourceQuest"] = 13877,	-- Go With The Flow
+							},
+							{	-- Put Out The Fire
+								["allianceQuestID"] = 13884,
+								["qg"] = 34292,	-- Arctanus
+								["sourceQuest"] = 13877,	-- Go With The Flow,
+							},
+						]]--
+						crit(6, {	-- The Satyr of Satyrnaar
+							["sourceQuests"] = {
+								13869,	-- Recover the Remains
+								26469,	-- Satyr Slaying!
+								13683,	-- Stopping the Rituals
+							},
+						}),
+						crit(7),	-- The Corrupted Heart of the Forest
+					},
+				}),
 				ach(4976, {	-- Ashenvale Quests
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -81,8 +98,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
 				}),
-				q(26454, {	-- A Shameful Waste
+				q(26454, {	-- A Shameful Waste -- aa
 					["qg"] = 17291,	-- Architect Nemos
+					["coord"] = { 86.8, 44.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26453,	-- A Helping Hand
 				}),
@@ -95,8 +113,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26475,	-- Elune's Tear
 				}),
-				q(26457, {	-- Agents of Destruction  (No Prereq)
+				q(26457, {	-- Agents of Destruction -- aa
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
+					["coord"] = { 83.8, 62.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(56642),	-- Starwhisper Monnions
@@ -166,8 +185,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26464,	-- The Lost Gem
 				}),
-				q(13849, {	-- Astranaar's Burning!
+				q(13849, {	-- Astranaar's Burning! -- aa
 					["qg"] = 4079,	-- Sentinel Thenysil
+					["coord"] = { 34.8, 49.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13848, {	-- Bad News Bear-er
@@ -186,8 +206,9 @@ _.Zones =
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26473, {	-- Bathran's Hair
+				q(26473, {	-- Bathran's Hair -- aa
 					["qg"] = 33204,	-- Evenar Stillwhisper
+					["coord"] = { 26.7, 21.9, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13920, {	-- Before You Go...
@@ -270,6 +291,7 @@ _.Zones =
 				}),
 				q(13985, {	-- Clear the Shrine
 					["qg"] = 34599,	-- Bolyun
+					["coord"] = { 17.9, 60.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13982,	-- In a Bind
 				}),
@@ -296,8 +318,9 @@ _.Zones =
 						i(131299),	-- Griefbearer Leggings
 					},
 				}),
-				q(13867, {	-- Culling the Furbolg Threat
+				q(13867, {	-- Culling the Furbolg Threat -- aa
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1054,  {	-- Culling the Threat
@@ -348,14 +371,15 @@ _.Zones =
 					["coord"] = { 73.1, 60.1, 63 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26444, {	-- Destroy the Legion
+				q(26444, {	-- Destroy the Legion -- aa
 					["qg"] = 17303,	-- Vindicator Vedaar
+					["coord"] = { 84.0, 62.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(23798, {	-- Diabolical Plans
 					["questID"] = 26447,	-- Diabolical Plans
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
+					["crs"] = {
 						11697,	-- Mannoroc Lasher
 						6115,	-- Roaming Felguard
 						6073,	-- Searing Felguard
@@ -364,7 +388,7 @@ _.Zones =
 				i(23777, {	-- Diabolical Plans
 					["questID"] = 26443,	-- Diabolical Plans
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
+					["crs"] = {
 						11697,	-- Mannoroc Lasher
 						6115,	-- Roaming Felguard
 						6073,	-- Searing Felguard
@@ -378,14 +402,16 @@ _.Zones =
 				}),
 				q(25613, {	-- Do Yourself a Favor
 					["qg"] = 40894,	-- Gnombus the X-Terminator
+					["coord"] = { 35.3, 71.1, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13913,	-- They Took Our Gnomes
 						25607,	-- Ze Gnomecorder
 					},
 				}),
-				q(13594, {	-- Don't Forget the Horde
+				q(13594, {	-- Don't Forget the Horde -- aa
 					["qg"] = 33187,	-- Sentinel Shyela
+					["coord"] = { 26.9, 22.1, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26408,	-- Ashes in Ashenvale
@@ -503,6 +529,7 @@ _.Zones =
 				}),
 				q(13982, {	-- In a Bind
 					["qg"] = 3698,	-- Bolyun
+					["coord"] = { 17.9, 60.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13976,	-- Three Fiends of the Forest
 				}),
@@ -627,8 +654,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 				}),
-				q(13602, {	-- Naga of the Strand
+				q(13602, {	-- Naga of the Strand -- aa
 					["qg"] = 3845,	-- Shindrell Swiftfire
+					["coord"] = { 18.2, 20.4, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6442,  {	-- Naga at the Zoram Strand
@@ -665,6 +693,7 @@ _.Zones =
 				}),
 				q(13595, {	-- Of Their Own Design
 					["qg"] = 33182,	-- Bathran
+					["coord"] = { 29.0, 24.3, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1070,  {	-- On Guard in Stonetalon
@@ -758,8 +787,9 @@ _.Zones =
 						i(56714),	-- Band of Foul Strength
 					},
 				}),
-				q(13632, {	-- Rear Guard Duty (No Prereq)
+				q(13632, {	-- Rear Guard Duty -- aa
 					["qg"] = 11219,	-- Liladris Moonriver
+					["coord"] = { 27.2, 35.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26838, {	-- Rebels Without a Clue
@@ -767,16 +797,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(26446, {	-- Reclaiming Felfire Hill
+				q(26446, {	-- Reclaiming Felfire Hill -- aa
 					["qg"] = 17310,	-- Gnarl
+					["coord"] = { 83.7, 63.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13928, {	-- Recover the Fallen
+				q(13928, {	-- Recover the Fallen -- aa
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+					["coord"] = { 58.9, 58.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13869, {	-- Recover the Remains
 					["qg"] = 17310,	-- Gnarl
+					["coord"] = { 83.7, 63.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26454,	-- A Shameful Waste
 				}),
@@ -796,13 +829,15 @@ _.Zones =
 						i(131296),	-- Feero's Ringmail Grips
 					},
 				}),
-				q(26470, {	-- Retaking Mystral Lake
+				q(26470, {	-- Retaking Mystral Lake -- aa
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
+					["coord"] = { 35.6, 71.4, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13964,	-- To the Spire
 				}),
 				q(13853, {	-- Return Fire
 					["qg"] = 4079,	-- Sentinel Thenysil
+					["coord"] = { 34.8, 49.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13849,	-- Astranaar's Burning!
 					["g"] = {
@@ -848,6 +883,7 @@ _.Zones =
 				}),
 				q(26469, {	-- Satyr Slaying!
 					["qg"] = 3901,	-- Illiyana
+					["coord"] = { 87.0, 43.4, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 				}),
@@ -927,6 +963,7 @@ _.Zones =
 				}),
 				q(13683, {	-- Stopping the Rituals
 					["qg"] = 33727,	-- Anchorite Buurq
+					["coord"] = { 86.4, 43.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 				}),
@@ -957,8 +994,9 @@ _.Zones =
 					["sourceQuest"] = 13730,	-- Playing With Felfire
 					["races"] = HORDE_ONLY,
 				}),
-				q(13644, {	-- That Which has Risen
+				q(13644, {	-- That Which has Risen -- aa
 					["qg"] = 33443,	-- Keeper Heartwise
+					["coord"] = { 20.1, 38.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(56652),	-- Ablution Slippers
@@ -972,12 +1010,14 @@ _.Zones =
 					["qg"] = 3846,	-- Talen
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26465, {	-- The Ancient Statuettes
+				q(26465, {	-- The Ancient Statuettes -- aa
 					["qg"] = 3846,	-- Talen
+					["coord"] = { 18.2, 20.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13617,	-- West to the Strand
 				}),
-				o(195134,{	-- The Bomb
+				o(195134,{	-- The Bomb -- aa
+					["coord"] = { 46.3, 61.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						q(13981, {	-- They Set Them Up The Bomb!
@@ -997,6 +1037,7 @@ _.Zones =
 				}),
 				q(26468, {	-- The Branch of Cenarius
 					["qg"] = 3920,	-- Anilia
+					["coord"] = { 78.3, 44.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26467,	-- Vile Satyr! Dryads in Danger!
 					["g"] = {
@@ -1027,8 +1068,9 @@ _.Zones =
 						i(131303),	-- Barkburn Legguards
 					},
 				}),
-				q(13979, {	-- The Goblin Braintrust
+				q(13979, {	-- The Goblin Braintrust -- aa
 					["qg"] = 34354,	-- Huntress Jalin
+					["coord"] = { 35.0, 71.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(56703),	-- Jalin's Recompense
@@ -1052,6 +1094,7 @@ _.Zones =
 				}),
 				q(13987, {	-- The Last Stand
 					["qg"] = 34604,	-- Big Baobob
+					["coord"] = { 22.2, 52.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13985,	-- Clear the Shrine
 					["g"] = {
@@ -1061,8 +1104,9 @@ _.Zones =
 						i(131327),	-- Sheltered Aessina Wristguards
 					},
 				}),
-				q(26455, {	-- The Lost Chalice
+				q(26455, {	-- The Lost Chalice -- aa
 					["qg"] = 3848,	-- Kayneth Stillwind
+					["coord"] = { 85.2, 44.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26464, {	-- The Lost Gem
@@ -1085,8 +1129,9 @@ _.Zones =
 						un(2, i(16740)),	-- Shredder Operating Gloves
 					},
 				}),
-				q(13630, {	-- The Reason Why
+				q(13630, {	-- The Reason Why -- aa
 					["qg"] = 33276,	-- Moon Priestess Maestra
+					["coord"] = { 26.9, 36.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1034,  {	-- The Ruins of Stardust
@@ -1110,8 +1155,9 @@ _.Zones =
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13913, {	-- They Took Our Gnomes
+				q(13913, {	-- They Took Our Gnomes -- aa
 					["qg"] = 34354,	-- Huntress Jalin
+					["coord"] = { 35.0, 71.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
 				}),
@@ -1129,8 +1175,9 @@ _.Zones =
 					["qg"] = 12696,	-- Senani Thunderheart
 					["races"] = HORDE_ONLY,
 				}),
-				q(13976, {	-- Three Friends of the Forest
+				q(13976, {	-- Three Friends of the Forest -- aa
 					["qg"] = 24739,	-- Benjari Edune
+					["coord"] = { 17.9, 49.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13965,	-- Check in on the Edunes
 				}),
@@ -1244,8 +1291,9 @@ _.Zones =
 					["qg"] = 3901,	-- Illiyana
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(26467, {	-- Vile Satyr! Dryads in Danger!
+				q(26467, {	-- Vile Satyr! Dryads in Danger! -- aa
 					["qg"] = 3901,	-- Illiyana
+					["coord"] = { 87.0, 43.4, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6641,  {	-- Vorsha the Lasher
@@ -1353,8 +1401,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 				}),
-				q(25607, {	-- Ze Gnomecorder
+				q(25607, {	-- Ze Gnomecorder -- aa
 					["qg"] = 40895,	-- Professor Xakxak Gyromate
+					["coord"] = { 35.3, 71.1, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
