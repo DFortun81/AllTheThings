@@ -737,6 +737,9 @@ namespace ATT
                 // Export all of the Containers
                 File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportRawLua(AllContainers).ToString());
 
+                // Export as JSON!
+                File.WriteAllText(Path.Combine(directory, "Categories.json"), MiniJSON.Json.Serialize(AllContainers));
+
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
                 {
