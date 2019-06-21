@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NLua;
 
-namespace Parser_V2
+namespace ATT
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // Setup tracing to the console.
+            Tracer.OnWrite += Console.Write;
+
             // Prepare console output to a file.
             Directory.CreateDirectory("../Debugging");
-            Trace.Listeners.Add(new TextWriterTraceListener(System.Console.Out));
-            Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("../Debugging/output.log")));
-            Trace.AutoFlush = true;
 
             // Load all of the RAW JSON Data into the database.
             var files = Directory.EnumerateFiles(".", "*.json", SearchOption.AllDirectories).ToList();

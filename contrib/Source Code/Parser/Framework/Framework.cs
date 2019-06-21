@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using NLua;
 
-namespace Parser_V2
+namespace ATT
 {
     /// <summary>
     /// The Framework class.
@@ -65,40 +65,34 @@ namespace Parser_V2
             // First check to see if the JSON data is a container for a specific type of object.
 
             // Are we dealing with an Items Database section?
-            if (data.TryGetValue("items", out object objRef))
+            if (data.TryGetValue("items", out List<object> listing))
             {
-                if (objRef is List<object> listing)
-                {
-                    Merge(listing);
-                }
+                Merge(listing);
             }
 
             // Are we dealing with a Mounts Database section?
-            if (data.TryGetValue("mounts", out objRef))
+            if (data.TryGetValue("mounts", out listing))
             {
-                if (objRef is List<object> listing)
-                {
-                    Merge(listing);
-                }
+                Merge(listing);
             }
 
             // Are we dealing with an NPC Database section? We only care about the displayID.
-            if (data.TryGetValue("npcDB", out objRef) && objRef is Dictionary<string, object> npcDB)
+            if (data.TryGetValue("npcDB", out Dictionary<string, object> npcDB))
             {
                 foreach (var pair in npcDB)
                 {
                     if (pair.Value is Dictionary<string, object> entry)
                     {
-                        if (entry.TryGetValue("displayID", out object displayIDRef))
+                        if (entry.TryGetValue("displayID", out int displayID))
                         {
-                            NPCS[Convert.ToInt32(pair.Key)] = Convert.ToInt32(displayIDRef);
+                            NPCS[Convert.ToInt32(pair.Key)] = displayID;
                         }
                     }
                 }
             }
 
             // Are we dealing with a Quests Database section?
-            if (data.TryGetValue("questDB", out objRef) && objRef is Dictionary<string, object> questDB)
+            if (data.TryGetValue("questDB", out Dictionary<string, object> questDB))
             {
                 foreach (var pair in questDB)
                 {
@@ -161,16 +155,16 @@ namespace Parser_V2
 
             // Cache the Filter ID.
             Objects.Filters filter = Objects.Filters.Ignored;
-            if(data.TryGetValue("f", out object fRef))
+            if(data.TryGetValue("f", out int f))
             {
                 // Parse it!
-                filter = (Objects.Filters)Convert.ToInt32(fRef);
+                filter = (Objects.Filters)f;
             }
 
             // Throw away automatic Spell ID assignments for certain filter types.
-            if (data.TryGetValue("spellID", out fRef))
+            if (data.TryGetValue("spellID", out f))
             {
-                if (Convert.ToInt32(fRef) < 1) data.Remove("spellID");
+                if (f < 1) data.Remove("spellID");
                 else
                 {
                     switch (filter)
@@ -184,18 +178,18 @@ namespace Parser_V2
                     }
                 }
             }
-            if (data.TryGetValue("recipeID", out fRef))
+            if (data.TryGetValue("recipeID", out f))
             {
-                if (Convert.ToInt32(fRef) < 1) data.Remove("recipeID");
+                if (f < 1) data.Remove("recipeID");
             }
-            if (data.TryGetValue("s", out fRef))
+            if (data.TryGetValue("s", out f))
             {
-                if (Convert.ToInt32(fRef) < 1) data.Remove("s");
+                if (f < 1) data.Remove("s");
             }
 
-            if (data.TryGetValue("q", out object q))
+            if (data.TryGetValue("q", out f))
             {
-                if (Convert.ToInt32(q) == 7 && data.TryGetValue("itemID", out object itemRef))
+                if (f == 7 && data.TryGetValue("itemID", out object itemRef))
                 {
                     data["heirloomID"] = itemRef;
                     if (data.TryGetValue("ignoreSource", out itemRef))
@@ -238,9 +232,9 @@ namespace Parser_V2
             }
 
             // If this container has groups, then process those groups as well.
-            if (data.TryGetValue("g", out object groupsRef))
+            if (data.TryGetValue("g", out List<object> groups))
             {
-                Process(groupsRef as List<object>, modID, minLevel);
+                Process(groups, modID, minLevel);
             }
 
             if (data.TryGetValue("requireSkill", out object requiredSkill))
@@ -275,19 +269,18 @@ namespace Parser_V2
                 }
             }
 
-            if (data.TryGetValue("name", out object nameObj))
+            if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                var mostSignificantType = Objects.CalculateMostSignificantFieldType(data);
-                if (!string.IsNullOrEmpty(mostSignificantType) && data.TryGetValue(mostSignificantType, out object idObj))
+                if(ATT.Export.ObjectData.TryGetMostSignificantObjectType(data, out Export.ObjectData objectData) && data.TryGetValue(objectData.ObjectType, out int id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
-                    if(!NAMES_BY_TYPE.TryGetValue(mostSignificantType, out Dictionary<int, object> names))
+                    if(!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> names))
                     {
                         names = new Dictionary<int, object>();
-                        NAMES_BY_TYPE[mostSignificantType] = names;
+                        NAMES_BY_TYPE[objectData.ObjectType] = names;
                     }
-                    names[Convert.ToInt32(idObj)] = nameObj;
+                    names[id] = name;
                     data.Remove("name");
                 }
             }
@@ -981,7 +974,7 @@ namespace Parser_V2
                             }
 
                             // Get the object container for this section.
-                            Objects.Merge(Objects.Get(Framework.ToString(pair.Key)), data.Values.ToList());
+                            Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), data.Values.ToList());
                             break;
                         }
                 }
@@ -1033,357 +1026,6 @@ namespace Parser_V2
             return dict;
         }
         #endregion
-        #region Export
-        /// <summary>
-        /// The explicit number of times a commonly formatted list was written to the database.
-        /// This helps with the minification process by making the exporter aware of common data
-        /// that can be replaced with a shortened identifier instead.
-        /// </summary>
-        private static IDictionary<string, int> STRUCTURE_COUNTS = new Dictionary<string, int>();
-
-        /// <summary>
-        /// Mark the structure as commonly used.
-        /// </summary>
-        /// <param name="structure">The structure.</param>
-        private static void MarkStructure(string structure)
-        {
-            if(STRUCTURE_COUNTS.TryGetValue(structure, out int count))
-            {
-                STRUCTURE_COUNTS[structure] = count + 1;
-            }
-            else
-            {
-                STRUCTURE_COUNTS[structure] = 1;
-            }
-        }
-
-        /// <summary>
-        /// Export the data to the builder in a compressed, minified format.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The undetermined object data.</param>
-        public static void Export(StringBuilder builder, object data)
-        {
-            // Firstly, we need to know the type of object we're working with.
-            if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is List<object> list) Export(builder, list);
-            else if (data is Dictionary<string, object> dict) Export(builder, dict);
-            else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<object, object> objdict) Export(builder, objdict);
-            else if (data is Dictionary<int, object> intdict) Export(builder, intdict);
-            else if (data is Dictionary<long, object> longdict) Export(builder, longdict);
-            else if (data is Dictionary<int, int> intintdict) Export(builder, intintdict);
-            else if (data is Dictionary<long, int> longintdict) Export(builder, longintdict);
-            else if (data is Dictionary<string, List<object>> listdict) Export(builder, listdict);
-            else if (data is List<List<object>> listObjects) Export(builder, listObjects);
-            else
-            {
-                // Default: Write it as a String. Best of luck.
-                builder.Append(Framework.ToString(data));
-            }
-        }
-
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a compressed, minified format.
-        /// Only whitelisted fields will be written in order to preserve memory and filesize.
-        /// </summary>
-        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The data dictionary.</param>
-        public static void Export<KEY, VALUE>(StringBuilder builder, Dictionary<KEY, VALUE> data)
-        {
-            // If the dictionary doesn't have any content, then return immediately.
-            if (data.Count == 0)
-            {
-                builder.Append("{}");
-                return;
-            }
-
-            // If there is no most signficant type, then we write it generically.
-            // Open Bracket for beginning of the Dictionary.
-            builder.Append('{');
-
-            // Export Fields
-            int fieldCount = 0;
-            foreach (var pair in data)
-            {
-                // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',');
-
-                // Append the Sub-Indent and the Field Name
-                builder.Append("[");
-                Export(builder, pair.Key);
-                builder.Append("]=");
-
-                // Append the undetermined object's format to the builder.
-                Export(builder, pair.Value);
-            }
-
-            // Close Bracket for the end of the Dictionary.
-            builder.Append('}');
-        }
-
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a compressed, minified format.
-        /// Only whitelisted fields will be written in order to preserve memory and filesize.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The data dictionary.</param>
-        public static void Export(StringBuilder builder, Dictionary<string, object> data)
-        {
-            // If the dictionary doesn't have any content, then return immediately.
-            if (data.Count == 0)
-            {
-                builder.Append("{}");
-                return;
-            }
-
-            // Cache the fields
-            var fields = data.Keys.ToList();
-
-            // If this is a constructed object type, then we need to write a parenthesis afterward.
-            var constructed = Objects.ExportConstructor(builder, data, fields);
-
-            // If there are still fields to write, then do so.
-            if (fields.Count > 0)
-            {
-                // Write a comma for the start of the data dictionary contents.
-                builder.Append(',');
-
-                // TODO: Simplify fields
-                int simplifiedFields = 0;
-
-                // We don't need to write the "g" tag if that's the only field.
-                if (fields.Count == 1 && fields[0] == "g")
-                {
-                    // Only "g" is left, let's push it up a level and remove the field.
-                    Export(builder, data["g"]);
-                }
-                else if(data.TryGetValue("g", out object groupsRef))
-                {
-                    // Append the groups field.
-                    builder.Append("g(");
-                    fields.Remove("g");
-
-                    // Open Bracket for beginning of the Dictionary.
-                    builder.Append('{');
-
-                    // Export Fields
-                    int fieldCount = 0;
-                    foreach (var field in fields)
-                    {
-                        // If this is NOT the first field, append a comma.
-                        if (fieldCount++ > 0) builder.Append(',');
-
-                        // Append the Sub-Indent and the Field Name
-                        //builder.Append("[");
-                        //Export(builder, field);
-                        //builder.Append("]=");
-
-                        builder.Append(field).Append('=');
-
-                        // Append the undetermined object's format to the builder.
-                        Export(builder, data[field]);
-                    }
-
-                    // Close Bracket for the end of the Dictionary.
-                    builder.Append('}');
-                    
-                    // Append the groups.
-                    builder.Append(',');
-                    Export(builder, data["g"]);
-                    builder.Append(')');
-                }
-                else
-                {
-                    // Open Bracket for beginning of the Dictionary.
-                    builder.Append('{');
-
-                    // Export Fields
-                    int fieldCount = 0;
-                    foreach (var field in fields)
-                    {
-                        // If this is NOT the first field, append a comma.
-                        if (fieldCount++ > 0) builder.Append(',');
-
-                        // Append the Sub-Indent and the Field Name
-                        //builder.Append("[");
-                        //Export(builder, field);
-                        //builder.Append("]=");
-
-                        builder.Append(field).Append('=');
-
-                        // Append the undetermined object's format to the builder.
-                        if(field == "sym") ExportClean(builder, data[field]);
-                        else Export(builder, data[field]);
-                    }
-
-                    // Close Bracket for the end of the Dictionary.
-                    builder.Append('}');
-                }
-
-                // Write simplified field closing parenthesis
-                for (int i = 0; i < simplifiedFields; ++i) builder.Append(')');
-            }
-
-            // Close the Parenthesis for the end of the constructor.
-            if (constructed) builder.Append(')');
-        }
-
-        /// <summary>
-        /// Export the contents of the list to the builder in a raw, longhand format.
-        /// Every element will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="list">The list of data.</param>
-        public static void Export<VALUE>(StringBuilder builder, List<VALUE> list)
-        {
-            // If the list doesn't have any content, then return immediately.
-            var count = list.Count;
-            if (count == 0)
-            {
-                builder.Append("{}");
-                return;
-            }
-
-            // Determine if this list type is something that gets marked
-            var listType = list[0].GetType();
-            if(    listType == typeof(long) 
-                || listType == typeof(int) 
-                || listType == typeof(double) 
-                || listType == typeof(float))
-            {
-                // These are simple types that can be compressed.
-                // Open Bracket for beginning of the List.
-                var subbuilder = new StringBuilder();
-                subbuilder.Append('{');
-
-                // Export Fields
-                int maxValue = 0, value = 0;
-                for (int i = 0; i < count; ++i)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (i > 0) subbuilder.Append(',');
-
-                    // Append the undetermined object's format to the sub builder.
-                    Export(subbuilder, list[i]);
-
-                    // Determine if this is higher than the current max value.
-                    value = Convert.ToInt32(list[i]);
-                    if (value > maxValue) maxValue = value;
-                }
-
-                // Close Bracket for the end of the List.
-                subbuilder.Append('}');
-
-                // Cache the structure, mark it, then write it to the builder.
-                var structure = subbuilder.ToString();
-                if(maxValue < 40) MarkStructure(structure);
-                builder.Append(structure);
-            }
-            else
-            {
-                // These are complex types that are not appropriate for compression.
-                // Open Bracket for beginning of the List.
-                builder.Append('{');
-
-                // Export Fields
-                for (int i = 0; i < count; ++i)
-                {
-                    // If this is NOT the first field, append a comma.
-                    if (i > 0) builder.Append(',');
-
-                    // Append the undetermined object's format to the sub builder.
-                    Export(builder, list[i]);
-                }
-
-                // Close Bracket for the end of the List.
-                builder.Append('}');
-            }
-        }
-
-        /// <summary>
-        /// Export the data to the builder in a raw, longhand format.
-        /// Standardized formatting applies here.
-        /// </summary>
-        /// <param name="data">The undetermined object data.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder Export(object data)
-        {
-            var builder = new StringBuilder();
-            Export(builder, data);
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a raw, longhand format.
-        /// Every field will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="data">The data dictionary.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder Export<KEY, VALUE>(Dictionary<KEY, VALUE> data)
-        {
-            var builder = new StringBuilder();
-            Export(builder, data);
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the contents of the list to the builder in a raw, longhand format.
-        /// Every element will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <param name="list">The list of data.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder Export<T>(List<T> list)
-        {
-            var builder = new StringBuilder();
-            Export(builder, list);
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the database.
-        /// This also exports for debugging as well.
-        /// </summary>
-        public static void Export()
-        {
-            // DEBUGGING: Output Parsed Data
-            var debugFolder = Directory.CreateDirectory("../Debugging");
-            if (debugFolder.Exists)
-            {
-                // Export various debug information to the Debugging folder.
-                Items.ExportDebug(debugFolder.FullName);
-                Objects.ExportDebug(debugFolder.FullName);
-
-                /*
-                // Custom Export: Filters
-                var list = new List<object>();
-                foreach (var item in Items.AllItems)
-                {
-                    if(item.TryGetValue("f", out object fRef))
-                    {
-                        if((Objects.Filters)fRef == Objects.Filters.Consumable)
-                        {
-                            list.Add(item);
-                        }
-                    }
-                }
-                File.WriteAllText(Path.Combine(debugFolder.FullName, "Consumables.lua"), Framework.ExportRaw(list).ToString());
-                */
-            }
-
-            // Setup the output folder (/db)
-            var outputFolder = Directory.CreateDirectory("../../db");
-            if (outputFolder.Exists)
-            {
-                // Export various debug information to the output folder.
-                Objects.Export(outputFolder.FullName);
-            }
-        }
-        #endregion
         #region Export (Clean)
         /// <summary>
         /// Export the data to the builder in a clean, longhand format.
@@ -1409,7 +1051,7 @@ namespace Parser_V2
             else
             {
                 // Default: Write it as a String. Best of luck.
-                builder.Append(Framework.ToString(data));
+                builder.Append(ATT.Export.ToString(data));
             }
         }
 
@@ -1552,245 +1194,29 @@ namespace Parser_V2
             return builder;
         }
         #endregion
-        #region Export (Raw)
-        /// <summary>
-        /// Export the data to the builder in a raw, longhand format.
-        /// Standardized formatting applies here.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The undetermined object data.</param>
-        /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        public static void ExportRaw(StringBuilder builder, object data, string indent = "")
-        {
-            // Firstly, we need to know the type of object we're working with.
-            if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is List<object> list) ExportRaw(builder, list, indent);
-            else if (data is Dictionary<string, object> dict) ExportRaw(builder, dict, indent);
-            else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<object, object> objdict) ExportRaw(builder, objdict, indent);
-            else if (data is Dictionary<int, object> intdict) ExportRaw(builder, intdict, indent);
-            else if (data is Dictionary<long, object> longdict) ExportRaw(builder, longdict, indent);
-            else if (data is Dictionary<int, int> intintdict) ExportRaw(builder, intintdict, indent);
-            else if (data is Dictionary<long, int> longintdict) ExportRaw(builder, longintdict, indent);
-            else if (data is Dictionary<string, List<object>> listdict) ExportRaw(builder, listdict, indent);
-            else if (data is List<List<object>> listOLists) ExportRaw(builder, listOLists);
-            else
-            {
-                // Default: Write it as a String. Best of luck.
-                builder.Append(Framework.ToString(data));
-            }
-        }
 
         /// <summary>
-        /// Export the contents of the dictionary to the builder in a raw, longhand format.
-        /// Every field will be written. Standardized formatting applies here.
+        /// Export the database.
+        /// This also exports for debugging as well.
         /// </summary>
-        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="builder">The builder.</param>
-        /// <param name="data">The data dictionary.</param>
-        /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        public static void ExportRaw<KEY, VALUE>(StringBuilder builder, Dictionary<KEY, VALUE> data, string indent = "")
+        public static void Export()
         {
-            // If the dictionary doesn't have any content, then return immediately.
-            if (data.Count == 0)
+            // DEBUGGING: Output Parsed Data
+            var debugFolder = Directory.CreateDirectory("../Debugging");
+            if (debugFolder.Exists)
             {
-                builder.Append("{}");
-                return;
+                // Export various debug information to the Debugging folder.
+                Items.ExportDebug(debugFolder.FullName);
+                Objects.ExportDebug(debugFolder.FullName);
             }
 
-            // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
-
-            // Open Bracket for beginning of the Dictionary.
-            builder.Append('{').AppendLine();
-
-            // Clone this and calculate most significant.
-            bool hasG = false;
-            VALUE g = default(VALUE);    // Look for the G Field.
-            var data2 = new Dictionary<object, object>();
-            var keys = data.Keys.ToList();
-            for(int i = 0,count=keys.Count;i < count; ++i)
+            // Setup the output folder (/db)
+            var outputFolder = Directory.CreateDirectory("../../db");
+            if (outputFolder.Exists)
             {
-                if (keys[i].ToString() == "g")
-                {
-                    g = data[keys[i]];
-                    keys.RemoveAt(i);
-                    hasG = true;
-                    break;
-                }
+                // Export various debug information to the output folder.
+                Objects.Export(outputFolder.FullName);
             }
-            keys.Sort();
-            foreach (var key in keys) data2[key] = data[key];
-            string mostSignificantType = Objects.CalculateMostSignificantFieldType(data2);
-
-            // Export Fields
-            int fieldCount = 0;
-            foreach (var pair in data2)
-            {
-                // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',').AppendLine();
-
-                // Append the Sub-Indent and the Field Name
-                builder.Append(subindent).Append("[");
-                ExportRaw(builder, pair.Key, subindent);
-                builder.Append("] = ");
-
-                // Append the undetermined object's format to the builder.
-                ExportRaw(builder, pair.Value, subindent);
-
-                // For some fields, we want to show the name of the object in a comment next to the exported data.
-                var key = pair.Key.ToString();
-                switch (key)
-                {
-                    case "itemID":
-                        {
-                            var item = Items.GetNull(Convert.ToInt32(pair.Value));
-                            if (item != null && item.TryGetValue("name", out object nameRef))
-                            {
-                                builder.Append("--[[");
-                                builder.Append(nameRef);
-                                builder.Append("]]");
-                            }
-                            continue;
-                        }
-                    case "f":
-                        {
-                            builder.Append("--[[");
-                            builder.Append(((Objects.Filters)Convert.ToInt32(pair.Value)).ToString());
-                            builder.Append("]]");
-                            continue;
-                        }
-                    default: break;
-                }
-
-                if(key == mostSignificantType 
-                    && NAMES_BY_TYPE.TryGetValue(mostSignificantType, out Dictionary<int, object> dict3))
-                {
-                    if (data2.TryGetValue(mostSignificantType, out object idObj) 
-                        && dict3.TryGetValue(Convert.ToInt32(idObj), out object nameRef))
-                    {
-                        builder.Append("--[[");
-                        builder.Append(nameRef);
-                        builder.Append("]]");
-                    }
-                }
-            }
-
-            // We wanted to move this to the bottom of the hierarchy.
-            if(hasG)
-            {
-                // If this is NOT the first field, append a comma.
-                if (fieldCount++ > 0) builder.Append(',').AppendLine();
-
-                // Append the Sub-Indent and the Field Name
-                builder.Append(subindent).Append("[\"g\"] = ");
-
-                // Append the undetermined object's format to the builder.
-                ExportRaw(builder, g, subindent);
-            }
-
-            // Close Bracket for the end of the Dictionary.
-            builder.AppendLine().Append(indent).Append('}');
         }
-
-        /// <summary>
-        /// Export the contents of the list to the builder in a raw, longhand format.
-        /// Every element will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <param name="builder">The builder.</param>
-        /// <param name="list">The list of data.</param>
-        /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        public static void ExportRaw<VALUE>(StringBuilder builder, List<VALUE> list, string indent = "")
-        {
-            // If the list doesn't have any content, then return immediately.
-            var count = list.Count;
-            if (count == 0)
-            {
-                builder.Append("{}");
-                return;
-            }
-
-            // Increase the indent by 1 tab.
-            var subindent = indent + '\t';
-
-            // Open Bracket for beginning of the List.
-            builder.Append('{').AppendLine();
-
-            // Export Fields
-            for (int i = 0; i < count; ++i)
-            {
-                // If this is NOT the first field, append a comma.
-                if (i > 0) builder.Append(',').AppendLine();
-
-                // Append the Sub-Indent
-                builder.Append(subindent);
-
-                // Append the undetermined object's format to the builder.
-                ExportRaw(builder, list[i], subindent);
-            }
-
-            // Close Bracket for the end of the List.
-            builder.AppendLine().Append(indent).Append('}');
-        }
-
-        /// <summary>
-        /// Export the data to the builder in a raw, longhand format.
-        /// Standardized formatting applies here.
-        /// </summary>
-        /// <param name="data">The undetermined object data.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRaw(object data)
-        {
-            var builder = new StringBuilder();
-            ExportRaw(builder, data);
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the contents of the dictionary to the builder in a raw, longhand format.
-        /// Every field will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <typeparam name="KEY">The key value type of the dictionary.</typeparam>
-        /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
-        /// <param name="data">The data dictionary.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRaw<KEY, VALUE>(Dictionary<KEY, VALUE> data)
-        {
-            var builder = new StringBuilder();
-            ExportRaw(builder, data);
-            return builder;
-        }
-
-        /// <summary>
-        /// Export the contents of the list to the builder in a raw, longhand format.
-        /// Every element will be written. Standardized formatting applies here.
-        /// </summary>
-        /// <param name="list">The list of data.</param>
-        /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRaw<T>(List<T> list)
-        {
-            var builder = new StringBuilder();
-            ExportRaw(builder, list);
-            return builder;
-        }
-        #endregion
-        #region String Conversion
-        /// <summary>
-        /// This helps force the library to use English localization.
-        /// </summary>
-        private static CultureInfo SUB_CULTURE = CultureInfo.InvariantCulture;
-
-        /// <summary>
-        /// Convert the data to an English-localized format.
-        /// This is done to properly handle floating point numbers.
-        /// </summary>
-        /// <param name="data">The raw data.</param>
-        /// <returns>The english-formatted string.</returns>
-        public static string ToString(object data)
-        {
-            return Convert.ToString(data, SUB_CULTURE);
-        }
-        #endregion
     }
 }

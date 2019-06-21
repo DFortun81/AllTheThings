@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace Parser_V2
+namespace ATT
 {
     // Framework extension for Items
     partial class Framework
@@ -159,15 +159,15 @@ namespace Parser_V2
                 }
 
                 // Export all of the Items to the Item DB folder.
-                File.WriteAllText(Path.Combine(directory, "AllItems.lua"), Framework.ExportRaw(allItems).ToString());
-                File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), Framework.ExportRaw(itemsMissingData).ToString());
+                File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString());
+                File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString());
 
                 // Export all items into their respective filter locations
                 var filtersFolder = Path.Combine(directory, "Filters/");
                 var filtersDirectory = Directory.CreateDirectory(filtersFolder);
                 foreach (var group in filterGroups)
                 {
-                    var builder = Framework.ExportRaw(group.Value);
+                    var builder = ATT.Export.ExportRawLua(group.Value);
                     builder.AppendLine().AppendLine();
                     foreach(var item in group.Value)
                     {
@@ -194,22 +194,12 @@ namespace Parser_V2
             /// <param name="value">The value.</param>
             private static void MergeArrayData(Dictionary<string, object> item, string field, object value)
             {
-                /*
-                bool b = item.TryGetValue("itemID", out object itemIDObj) && Convert.ToInt32(itemIDObj) == 162825 && field == "c";
-                if (b)
-                {
-                    Trace.WriteLine(ToJSON(value));
-                    Trace.WriteLine(value.GetType().ToString());
-                }
-                */
-
                 // Convert the data to a list of generic objects.
                 var newList = value as List<object>;
                 if (newList == null)
                 {
-                    var dict = value as Dictionary<object, object>;
-                    if (dict == null) return;
-                    else newList = dict.Values.ToList();
+                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
+                    else return;
                 }
 
                 // Attempt to get the old list data.
@@ -317,7 +307,7 @@ namespace Parser_V2
                     case "name":
                     case "description":
                         {
-                            item[field] = Framework.ToString(value);
+                            item[field] = ATT.Export.ToString(value);
                             break;
                         }
 
@@ -367,8 +357,7 @@ namespace Parser_V2
                     case "bonusIDs":
                         {
                             // Convert the data to a list of generic objects.
-                            var newDict = value as Dictionary<object, object>;
-                            if (newDict == null) return;
+                            if (!(value is Dictionary<object, object> newDict)) return;
 
                             // Attempt to get the old list data.
                             Dictionary<int, int> oldDict;
@@ -398,9 +387,8 @@ namespace Parser_V2
                                 var newList = value as List<object>;
                                 if (newList == null)
                                 {
-                                    var dict = value as Dictionary<object, object>;
-                                    if (dict == null) return;
-                                    else newList = dict.Values.ToList();
+                                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
+                                    else return;
                                 }
                                 newListOfLists = new List<List<object>>();
                                 foreach(var o in newList)
@@ -408,9 +396,8 @@ namespace Parser_V2
                                     var list = o as List<object>;
                                     if (list == null)
                                     {
-                                        var dict = o as Dictionary<object, object>;
-                                        if (dict == null) return;
-                                        else list = dict.Values.ToList();
+                                        if (o is Dictionary<object, object> dict) list = dict.Values.ToList();
+                                        else return;
                                     }
                                     newListOfLists.Add(list);
                                 }
@@ -446,7 +433,7 @@ namespace Parser_V2
             /// <param name="data">The data to merge into the item.</param>
             public static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
             {
-                foreach (var pair in data) Merge(item, Framework.ToString(pair.Key), pair.Value);
+                foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
             }
 
             /// <summary>
