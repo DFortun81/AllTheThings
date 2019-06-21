@@ -679,7 +679,7 @@ namespace ATT
                                 if (leftovers == 0)
                                 {
                                     // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 2;  // Horde Only!
+                                    data["r"] = 1;  // Horde Only!
                                     data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                                 }
                                 else
@@ -695,7 +695,7 @@ namespace ATT
                             if (leftovers == 0)
                             {
                                 // This is all alliance races, cool. Let's clean this up!
-                                data["r"] = 1;  // Alliance Only!
+                                data["r"] = 2;  // Alliance Only!
                                 data.Remove("races");   // We do not need to include races for this as it is ALLIANCE_ONLY.
                             }
                             else if (hordeCount == 0)
@@ -708,7 +708,7 @@ namespace ATT
                                 if (leftovers == 0)
                                 {
                                     // This is all horde races, cool. Let's clean this up!
-                                    data["r"] = 2;  // Horde Only!
+                                    data["r"] = 1;  // Horde Only!
                                     data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                                 }
                                 else
