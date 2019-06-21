@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-16,  {	-- Rares
+		n(-16, {	-- Rares
 			n(152415, { -- Alga the Eyeless
 				["allianceQuestID"] = 56604,
 				["hordeQuestID"] = 56279,
@@ -24,6 +24,11 @@ _.Zones =
 					{ 61.8, 47.7, 1355 },
 					]]--
 				},
+				["g"] = {
+					crit(1, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(152416, {	-- Allseer Oma'kil
 				["allianceQuestID"] = 56603,
@@ -31,19 +36,40 @@ _.Zones =
 				["coord"] = { 65.4, 36.5, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(2, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(167786),	-- Germinating Seed
 				},
 			}),
 			n(152794, {	-- Amethyst Spireshell
 				["isDaily"] = true,
 				["g"] = {
+					crit(3, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169363),	-- Amethyst Softshell
+				},
+			}),
+			n(152566, {	-- Anemonar
+				["g"] = {
+					crit(4, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(150191, {	-- Avarius
 				["isDaily"] = true,
 				["g"] = {
 					i(169373),	-- Brinestone Algan
+				},
+			}),
+			n(152361, {	-- Banescale the Packfather
+				["isDaily"] = true,
+				["g"] = {
+					crit(5, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(152712, {	-- Blindlight
@@ -55,6 +81,9 @@ _.Zones =
 					{ 37.4, 82.6, 1355 },	-- mob
 				},
 				["g"] = {
+					crit(6, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169372),	-- Necrofin Tadpole
 				},
 			}),
@@ -73,6 +102,9 @@ _.Zones =
 				["coord"] = { 55.6, 26.9, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(7, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169356),	-- Caverndark Nightmare
 				},
 			}),
@@ -82,6 +114,11 @@ _.Zones =
 				["coord"] = { 49.2, 88.8, 1355 },
 				["isDaily"] = true,
 				["description"] = "Inside a hidden cave beneath the waterfall.",
+				["g"] = {
+					crit(8, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(155811, {	-- Commander Minzera -- part of the Nazjtar commander spawns
 				["questID"] = 56882,
@@ -95,7 +132,18 @@ _.Zones =
 				["coord"] = { 26.3, 29.0, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(9, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169361),	-- Daggertooth Frenzy
+				},
+			}),
+			n(152291, {	-- Deepglider
+				["isDaily"] = true,
+				["g"] = {
+					crit(10, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(152414, {	-- Elder Unu
@@ -103,6 +151,11 @@ _.Zones =
 				["hordeQuestID"] = 56284,
 				["coord"] = { 64.3, 34.7, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(11, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(152555, {	-- Elderspawn Nalaada
 				["allianceQuestID"] = 56598,
@@ -110,6 +163,9 @@ _.Zones =
 				["coord"] = { 52.1, 75.4, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(12, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169359),	-- Spawn of Nalaada
 				},
 			}),
@@ -118,6 +174,11 @@ _.Zones =
 				["hordeQuestID"] = 56273,
 				["coord"] = { 37.3, 40.3, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(13, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(155838, {	-- Incantatrix Vazina
 				["coord"] = { 79.2, 51.1, 1355 },
@@ -128,15 +189,32 @@ _.Zones =
 				["hordeQuestID"] = 56286,
 				["coord"] = { 45.3, 56.2, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(14, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
+			}),
+			n(152567, {	-- Kelpwillow
+				["isDaily"] = true,
+				["g"] = {
+					crit(15, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(152323, {	-- King Gakula
 				["isDaily"] = true,
 				["g"] = {
+					crit(16, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169371),	-- Murgle
 				},
 			}),
-			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once (per day?)
+			n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
 				["questID"] = 56916,
+				["isDaily"] = true,
 				["description"] = "Wanders around Nazjatar.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
@@ -148,6 +226,9 @@ _.Zones =
 				["coord"] = { 61.0, 31.7, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(17, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169366),	-- Wriggler
 				},
 			}),
@@ -161,16 +242,29 @@ _.Zones =
 					{ 50.2, 19.1, 1355 },
 				},
 				["g"] = {
+					crit(18, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169355),	-- Chitterspine Needler
+				},
+			}),
+			n(152397, {	-- Oronu
+				["isDaily"] = true,
+				["g"] = {
+					crit(19, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(152681, {	-- Prince Typhonus
 				["allianceQuestID"] = 56594,
 				["hordeQuestID"] = 56289,
-				--["coord"] = { 44.2, 70.8, 1355 }, -- old coords. May not be correct anymore
 				["coord"] = { 43.2, 88.0, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(20, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169367),	-- Seafury
 				},
 			}),
@@ -180,18 +274,27 @@ _.Zones =
 				["coord"] = { 43.0, 75.6, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(21, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169368),	-- Stormwrath
 				},
 			}),
 			n(150583, {	-- Rockweed Shambler
 				["isDaily"] = true,
 				["g"] = {
+					crit(22, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169374),	-- Budding Algan
 				},
 			}),
 			n(151870, {	-- Sandcastle
 				["isDaily"] = true,
 				["g"] = {
+					crit(23, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169369),	-- Sandkeep
 				},
 			}),
@@ -210,9 +313,31 @@ _.Zones =
 				},
 				]]--
 				["g"] = {
+					crit(24, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169350),	-- Glittering Diamondshell
 					i(169351),	-- Sandclaw Nestseeker
 					i(168081),	-- Brinestone Pickaxe
+				},
+			}),
+			n(152548, {	-- Scale Matriarch Gratinax
+				["isDaily"] = true,
+				["g"] = {
+					crit(25, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
+			}),
+			n(152545, {	-- Scale Matriarch Vynara
+				["allianceQuestID"] = 56293,
+				["hordeQuestID"] = 56590,
+				["coord"] = { 27.2, 37.1, 13555 },
+				["isDaily"] = true,
+				["g"] = {
+					crit(26, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(152542, {	-- Scale Matriarch Zodia
@@ -221,23 +346,20 @@ _.Zones =
 				["coord"] = { 28.6, 46.6, 1355 },
 				["isDaily"] = true,
 				["g"] = {
+					crit(27, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(168155),	-- Chum
 				},
-			}),
-			n(152545, {	-- Scale Matriarch Vynara
-				["allianceQuestID"] = 56293,
-				["hordeQuestID"] = 56590,
-				["coord"] = { 27.2, 37.1, 13555 },
-				["isDaily"] = true,
-			}),
-			n(155841, {	-- Shadowbinder Athissa (nothing happened on the kill. No quest ID, no ach criteria, no drops, etc...)
-				["coord"] = { 74.0, 31.3, 1355 },
 			}),
 			n(152552, {	-- Shassera
 				["allianceQuestID"] = 56295,
 				["hordeQuestID"] = 56588,
 				["coord"] = { 63.7, 6.0, 1355 },
 				["g"] = {
+					crit(28, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(170187),	-- Shadescale
 				},
 			}),
@@ -249,19 +371,40 @@ _.Zones =
 					{ 38.9, 9.4, 1355 },
 					{ 41.3, 15.9, 1355 },
 				},
+				["g"] = {
+					crit(29, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(152359, {	-- Siltstalker the Packmother
 				["allianceQuestID"] = 56586,
 				["hordeQuestID"] = 56297,
 				["coord"] = { 71.6, 54.8, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(30, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(152290, {	-- Soundless
 				["coord"] = { 59.9, 47.6, 1355 },
 				["isDaily"] = true,
-				["description"] = "On top of the coral reef. Requires Flying or the |cFFFFD700Deepcoral Bud|r buff.", -- the coralbud ree
+				["description"] = "On top of the coral reef. Requires Flying.", 
 				["g"] = {
+					crit(31, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(169163),	-- Silent Glider
+				},
+			}),
+			n(153898, {	-- Tidelord Aquatus
+				["isDaily"] = true,
+				["g"] = {
+					crit(32, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 				},
 			}),
 			n(153928, {	-- Tidelord Dispersius
@@ -270,6 +413,11 @@ _.Zones =
 				["coord"] = { 58.0, 26.5, 1355 },
 				["isDaily"] = true,
 				["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
+				["g"] = {
+					crit(33, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(154148, {	-- Tidemistress Leth'sindra
 				["allianceQuestID"] = 56620,
@@ -278,6 +426,9 @@ _.Zones =
 				["isDaily"] = true,
 				["description"] = "Pop 3 |cFFFFD700Undisturbed Specimens|r to spawn her.",
 				["g"] = {
+					crit(34, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
 					i(170196),	-- Shirakess Warning Sign
 				},
 			}),
@@ -286,10 +437,28 @@ _.Zones =
 				["hordeQuestID"] = 56278,
 				["coord"] = { 64.8, 46.4, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(35, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
+			}),
+			n(152568, {	-- Urduu
+				["isDaily"] = true,
+				["g"] = {
+					crit(36, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(151719, {	-- Voice in the Deeps -- TODO:: add description on how to actually release it
 				["coord"] = { 67.5, 34.6, 1355 },
 				["isDaily"] = true,
+				["g"] = {
+					crit(37, {	-- I Thought You Said They'd Be Rare?
+						["achievementID"] = 13691,
+					}),
+				},
 			}),
 			n(150468, {	-- Vor'koth
 				["questID"] = 55603,
@@ -300,15 +469,13 @@ _.Zones =
 					i(169376),	-- Skittering Eel
 				},
 			}),
-			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once (per day?)
+			n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency that can be looted once per day
 				["questID"] = 56915,
+				["isDaily"] = true,
 				["description"] = "Wanders around Nazjatar.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},
-			}),
-			n(155840, {	-- Warlord Zalzjar
-				["coord"] = { 47.4, 32.2, 1355 },
 			}),
 		}),
 	}),

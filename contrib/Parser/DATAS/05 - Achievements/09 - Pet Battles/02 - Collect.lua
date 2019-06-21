@@ -289,6 +289,7 @@ _.Achievements =
 						crit(9),		-- Aquatic
 						crit(10),		-- Mechanical
 					}),
+					ach(13715),	-- From The Belly Of The Jelly
 					ach(6585, {		-- Kalimdor Safari*
 						crit(1),		-- Adder (Northern Barrens, Southern Barrens, Durotar, Hellfire Peninsula, Nagrand, Spires of Arak, Valley of Trials, Nagrand, Blasted Lands)
 						crit(2),		-- Alpine Chipmunk (Winterspring, Stonetalon Mountains, Mount Hyjal, Highmountain)

@@ -10,9 +10,14 @@ _.Zones =
 					["lvl"] = 120,
 					["collectible"] = false,
 				}),
-				q(55893, {	-- Aranz, the Slitherblade
+				q(55893, {	-- Azanz, the Slitherblade
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(6, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55970, {	-- Attrition
 					["lvl"] = 120,
@@ -21,26 +26,56 @@ _.Zones =
 				q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(10, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55887, {	-- Champion Alzana, Arrow of Thunder
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(11, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55892, {	-- Champion Eldanar, Shield of Her Glory
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(12, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55889, {	-- Champion Kyx'zhul the Deepspeaker
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(13, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55888, {	-- Champion Qalina, Spear of Ice
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(14, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55890, {	-- Champion Vyz'olgo the Mind-Taker
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(15, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55973, {	-- Deepcoil Experiments
 					["lvl"] = 120,
@@ -53,6 +88,11 @@ _.Zones =
 				q(55895, {	-- Frozen Winds of Zhiela
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(56041, {	-- Give 'Em Shell
 					["lvl"] = 120,
@@ -73,6 +113,11 @@ _.Zones =
 				q(55900, {	-- Kassar, Wielder of Dark Blades
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(8, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(56022, {	-- Leylocked Chest
 					["lvl"] = 120,
@@ -227,14 +272,29 @@ _.Zones =
 				q(55899, {	-- Starseeker of the Shirakess
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(5, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55897, {	-- Szun, Breaker of Slaves
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(55898, {	-- Tempest-Speaker Shalan'ali
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(4, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(56056, {	-- Terror of the Depths
 					["lvl"] = 120,
@@ -255,6 +315,11 @@ _.Zones =
 				q(55886, {	-- The Zanj'ir Brutalizer
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(9, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(56078, {	-- Time to Krill
 					["lvl"] = 120,
@@ -263,6 +328,11 @@ _.Zones =
 				q(55896, {	-- Undana, Chilling Assassin
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(7, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 				q(56795, {	-- Work Order: Abyssal-Fried Rissole
 					["lvl"] = 120,
@@ -274,6 +344,11 @@ _.Zones =
 				q(55894, {	-- Zoko, Her Iron Defender
 					["lvl"] = 120,
 					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- Nazjatarget Eliminated
+							["achievementID"] = 13690,
+						}),
+					},
 				}),
 			}),
 		}),

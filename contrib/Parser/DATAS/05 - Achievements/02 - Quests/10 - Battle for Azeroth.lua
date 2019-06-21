@@ -164,6 +164,7 @@ _.Achievements =
 						ach(12496, 12478),		-- Stormsong and Dance [A] / Secrets in the Sands [H]
 					}),
 					ach(13791, {	-- Making the Mount
+						i(168827),	-- Scrapforged Mechaspider
 						crit(1),	-- Shop Project
 						crit(2),	-- Right Bot for the Job
 						crit(3),	-- Ready to Rumble

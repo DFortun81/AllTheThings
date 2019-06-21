@@ -220,26 +220,46 @@ _.Achievements =
 						crit(22),		-- Bramblewing
 						crit(23),		-- Tambano
 					}),
-					a(ach(13762, {	-- Aqua Team Murder Force (A)
-						crit(1),	-- Battle-Scarred: Bladesman Inowari
-						crit(2),	-- Battle-Scarred: Farseer Ori
-						crit(3),	-- Battle-Scarred: Hunter Akana
-						ach(13704, {	-- Nautical Battlefield Training
-							crit(1),	-- Seasoned: Bladesman Inowari
-							crit(2),	-- Seasoned: Farseer Ori
-							crit(3),	-- Seasoned: Hunter Akana
-						}),
-					})),
-					h(ach(13761, {	-- Aqua Team Murder Force (H)
-						crit(1),	-- Battle-Scarred: Neri Sharpfin
-						crit(2),	-- Battle-Scarred: Poen Gillbrack
-						crit(3),	-- Battle-Scarred: Vim Brineheart
-						ach(13645, {	-- Nautical Battlefield Training
-							crit(1),	-- Seasoned: Neri Sharpfin
-							crit(2),	-- Seasoned: Poen Gillbrack
-							crit(3),	-- Seasoned: Vim Brineheart
-						}),
-					})),
+					ach(13762, {	-- Aqua Team Murder Force (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							ach(13759, {	-- Battle-Scarred: Bladesman Inowari
+								ach(13754, {	-- Veteran: Bladesman Inowari
+									ach(13744),	-- Seasoned: Bladesman Inowari
+								}),
+							}),
+							ach(13760, {	-- Battle-Scarred: Farseer Ori
+								ach(13755, {	-- Veteran: Farseer Ori
+									ach(13745),	-- Seasoned: Farseer Ori
+								}),
+							}),
+							ach(13758, {	-- Battle-Scarred: Hunter Akana
+								ach(13753, {	-- Veteran: Hunter Akana
+									ach(13743),	-- Seasoned: Hunter Akana
+								}),
+							}),
+						},
+					}),
+					ach(13761, {	-- Aqua Team Murder Force (H)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							ach(13750, {	-- Battle-Scarred: Neri Sharpfin
+								ach(13749, {	-- Veteran: Neri Sharpfin
+									ach(13746),	-- Seasoned: Neri Sharpfin
+								}),
+							}),
+							ach(13756, {	-- Battle-Scarred: Poen Gillbrack
+								ach(13751, {	-- Veteran: Poen Gillbrack
+									ach(13747),	-- Seasoned: Poen Gillbrack
+								}),
+							}),
+							ach(13757, {	-- Battle-Scarred: Vim Brineheart
+								ach(13752, {	-- Veteran: Vim Brineheart
+									ach(13748),	-- Seasoned: Vim Brineheart
+								}),
+							}),
+						},
+					}),
 					ach(13763, {	-- Back to the Depths
 						crit(1),	-- Summons from the Depths completed.
 					}),
@@ -255,37 +275,9 @@ _.Achievements =
 						crit(1),	-- Rustbolt Resistance Revered
 						crit(2),	-- Unshackled Revered
 						crit(3),	-- Battle for Azeroth Pathfinder, Part One
+						crit(4),	-- Explore Nazjatar
+						crit(5),	-- Explore Mechagon
 					}),
-					a(ach(13759, {	-- Battle-Scarred: Bladesman Inowari
-						ach(13754, {	-- Veteran: Bladesman Inowari
-							ach(13744),	-- Seasoned: Bladesman Inowari
-						}),
-					})),
-					a(ach(13760, {	-- Battle-Scarred: Farseer Ori
-						ach(13755, {	-- Veteran: Farseer Ori
-							ach(13745),	-- Seasoned: Farseer Ori
-						}),
-					})),
-					a(ach(13758, {	-- Battle-Scarred: Hunter Akana
-						ach(13753, {	-- Veteran: Hunter Akana
-							ach(13743),	-- Seasoned: Hunter Akana
-						}),
-					})),
-					h(ach(13750, {	-- Battle-Scarred: Neri Sharpfin
-						ach(13749, {	-- Veteran: Neri Sharpfin
-							ach(13746),	-- Seasoned: Neri Sharpfin
-						}),
-					})),
-					h(ach(13756, {	-- Battle-Scarred: Poen Gillbrack
-						ach(13751, {	-- Veteran: Poen Gillbrack
-							ach(13747),	-- Seasoned: Poen Gillbrack
-						}),
-					})),
-					h(ach(13757, {	-- Battle-Scarred: Vim Brineheart
-						ach(13752, {	-- Veteran: Vim Brineheart
-							ach(13748),	-- Seasoned: Vim Brineheart
-						}),
-					})),
 					ach(13083),		-- Better, Faster, Stronger
 					ach(13024, {	-- Carved in Stone, Written in Blood
 						crit(1),		-- Ancient Nazmani Tablet
@@ -374,8 +366,34 @@ _.Achievements =
 						crit(8),		-- Zal'amak
 						crit(9),		-- The Frogmarsh
 					}),
-					ach(13712),	-- Explore Nazjatar (TODO)
-					ach(13776),	-- Explore Mechagon (TODO)
+					ach(13712, {	-- Explore Nazjatar
+						crit(1),	-- Ashen Strand
+						crit(2),	-- Azsh'ari Terrace
+						crit(3),	-- Coral Forest
+						crit(4),	-- Deepcoil Tunnels
+						crit(5),	-- Dragon's Teeth Basin
+						crit(6),	-- The Drowned Market
+						crit(7),	-- Elun'alor Temple
+						crit(8),	-- The Empress's Approach
+						crit(9),	-- Gate of the Queen
+						crit(10),	-- The Hanging Reef
+						crit(11),	-- Kal'methir
+						crit(12),	-- Shirakess Repository
+						crit(13),	-- Spears of Azshara
+						crit(14),	-- Zanj'ir Terrace
+						crit(15),	-- Zanj'ir Wash
+						crit(16),	-- Zin-Azshari
+					}),
+					ach(13776, {	-- Explore Mechagon
+						crit(1),	-- Rustbolt
+						crit(2),	-- Sparkweaver Point
+						crit(3),	-- Junkwatt Depot
+						crit(4),	-- The Heaps
+						crit(5),	-- Scrapbone Den
+						crit(6),	-- Western Spray
+						crit(7),	-- The Outflow
+						crit(8),	-- The Fleeting Forrest
+					}),
 					ach(12558, {	-- Explore Stormsong Valley
 						crit(1),		-- Brennadam
 						crit(2),		-- Briarback Kraul
@@ -429,6 +447,7 @@ _.Achievements =
 						crit(11),		-- Xibala
 						crit(12),		-- Zeb'ahari
 					}),
+					ach(13836),	-- Feline Figurines Found
 					ach(12482, {	-- Get Hek'd
 						crit(1),		-- Golden Ravasaur Egg
 						crit(2),		-- Vilescale Pearl
@@ -443,12 +462,102 @@ _.Achievements =
 						crit(11),		-- Taking the Loa Road
 						crit(12),		-- Saurid Surprise
 					}),
-					ach(13692),		-- Give Me the Biggest Bag You've Got (TODO)
+					ach(13692, {	-- Give Me the Biggest Bag You've Got
+						crit(1),	-- Spawn of Nalaada
+						crit(2),	-- Glittering Diamondshell
+						crit(3),	-- Sandclaw Nestseeker
+						crit(4),	-- Daggertooth Frenzy
+						crit(5),	-- Skittering Eel
+						crit(6),	-- Pearlescent Glimmershell
+						crit(7),	-- Scalebrood Hydra
+						crit(8),	-- Caverndark Nightmare
+						crit(9),	-- Chitterspine Needler
+						crit(10),	-- Wriggler
+						crit(11),	-- Amethyst Softshell
+						crit(12),	-- Stormwrath
+						crit(13),	-- Brinestone Algan
+						crit(14),	-- Coral Lashling
+						crit(15),	-- Budding Algan
+						crit(16),	-- Sandkeep
+						crit(17),	-- Seafury
+						crit(18),	-- Necrofin Tadpole
+						crit(19),	-- Murgle
+						crit(20),	-- Underlight Sealamp
+						crit(21),	-- Encrusted Coin
+						crit(22),	-- Flopping Fish
+						crit(23),	-- Seastorm Totem
+						crit(24),	-- Zanj'ir Weapon Rack
+						crit(25),	-- Eternal Palace Dining Set
+						crit(26),	-- Shirakess Warning Sign
+						crit(27),	-- Voidcaster's Supply Bag
+						crit(28),	-- Storm Totem
+						crit(29),	-- Sea Totem
+						crit(30),	-- Mudwrap
+						crit(31),	-- Skeletal Hand
+						crit(32),	-- Mardivas' Bag of Containing
+						crit(33),	-- Blind Eye
+						crit(34),	-- Barnacled Bag of Goods
+						crit(35),	-- Shadescale
+						crit(36),	-- Abyss Pearl
+						crit(37),	-- Intact Naga Skeleton
+						crit(38),	-- Ancient Reefwalker Bark
+						crit(39),	-- Reefwalker Bark
+						crit(40),	-- Voltscale Shield
+						crit(41),	-- Tidal Guard
+						crit(42),	-- Razorshell
+						crit(43),	-- Snapdragon Scent Gland
+						crit(44),	-- Alpha Fin
+						crit(45),	-- Exposed Fish
+						crit(46),	-- Fathom Ray Wing
+						crit(47),	-- Muck Slime
+						crit(48),	-- Brightspine Shell
+						crit(49),	-- Giant Crab leg
+						crit(50),	-- Fermented Deviate Fish
+						crit(51),	-- Eel Filet
+					}),
 					ach(13482, {	-- Head Financier of Mechagon
 						ach(13472),	-- Deep Pockets
 					}),
 					ach(13028),		-- Hoppin' Sad
-					ach(13691),		-- I Thought You Said They'd Be Rare? (TODO)
+					ach(13691, {	-- I Thought You Said They'd Be Rare?
+						crit(1),	-- Alga the Eyeless
+						crit(2),	-- Allseer Oma'kil
+						crit(3),	-- Amethyst Spireshell
+						crit(4),	-- Anemonar
+						crit(5),	-- Banescale the Packfather
+						crit(6),	-- Blindlight
+						crit(7),	-- Caverndark Terror
+						crit(8),	-- Chasm-Haunter
+						crit(9),	-- Daggertooth Terror
+						crit(10),	-- Deepglider
+						crit(11),	-- Elder Unu
+						crit(12),	-- Elderspawn Nalaada
+						crit(13),	-- Garnetscale
+						crit(14),	-- Iridescent Glimmershell
+						crit(15),	-- Kelpwillow
+						crit(16),	-- King Gakula
+						crit(17),	-- Mirecrawler
+						crit(18),	-- Needlespine
+						crit(19),	-- Oronu
+						crit(20),	-- Prince Typhonus
+						crit(21),	-- Prince Vortran
+						crit(22),	-- Rockweed Shambler
+						crit(23),	-- Sandcastle
+						crit(24),	-- Sandclaw Stoneshell
+						crit(25),	-- Scale Matriarch Gratinax
+						crit(26),	-- Scale Matriarch Vynara
+						crit(27),	-- Scale Matriarch Zodia
+						crit(28),	-- Shassera
+						crit(29),	-- Shiz'narasz the Consumer
+						crit(30),	-- Siltstalker the Packmother
+						crit(31),	-- Soundless
+						crit(32),	-- Tidelord Aquatus
+						crit(33),	-- Tidelord Dispersius
+						crit(34),	-- Tidemistress Leth'sindra
+						crit(35),	-- Toxigore the Alpha
+						crit(36),	-- Urduu
+						crit(37),	-- Voice in the Deeps
+					}),
 					ach(13479, {	-- Junkyard Architect
 						ach(13478),	-- Junkyard Collector
 						crit(1),	-- Scrap Grenade
@@ -540,7 +649,24 @@ _.Achievements =
 						crit(3),		-- Portakillo killed
 						crit(4),		-- Toadcruel killed
 					}),
-					ach(13690),		-- Nazjatarget Eliminated (TODO)
+					ach(13704, 13645),	-- Nautical Battlefield Training
+					ach(13690, {	-- Nazjatarget Eliminated
+						crit(1),	-- Szun, Breaker of Slaves
+						crit(2),	-- Frozen Winds of Zhiela
+						crit(3),	-- Zoko, Her Iron Defender
+						crit(4),	-- Tempest-Speaker Shalan'ali
+						crit(5),	-- Starseeker of the Shirakess
+						crit(6),	-- Azanz, the Slighterblade
+						crit(7),	-- Undana, Chilling Assassin
+						crit(8),	-- Kassar, Wielder of Dark Blades
+						crit(9),	-- The Zanj'ir Brutalizer
+						crit(10),	-- Champion Aldrantiss, Defender of her Kingdom
+						crit(11),	-- Champion Alzana, Arrow of Thunder
+						crit(12),	-- Champion Eldanar, Shield of Her Glory
+						crit(13),	-- Champion Kyx'zhul the Deepspeaker
+						crit(14),	-- Champion Qalina, Spear of Ice
+						crit(15),	-- Champion Vyz'olgo the Mind-Taker
+					}),
 					ach(13713),		-- Nothing to Scry About
 					ach(13556, {	-- Outside Influences
 						crit(1),	-- Aid from Nordrassil
