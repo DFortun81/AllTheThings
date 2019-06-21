@@ -9,7 +9,9 @@ _.Zones =
 				ach(4925, {	-- Ashenvale Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(1),	-- Maestra's Post
+						crit(1, {	-- Maestra's Post
+							["sourceQuest"] = 13626,	-- Respect for the Fallen
+						}),
 						crit(2, {	-- Saving Astranaar
 							["sourceQuest"] = 13853,	-- Return Fire
 						}),
@@ -20,20 +22,12 @@ _.Zones =
 								25607,	-- Ze Gnomecorder -- TODO:: verify if actually needed
 							},
 						}),
-						crit(4),	-- The Power of Dartol's Rod
-						crit(5),	-- Bringing Harmony to the Elements
-						--[[ wtf are these doing here
-							{	-- Hot Lava
-								["allianceQuestID"] = 13880,
-								["qg"] = 34290,	-- Core
-								["sourceQuest"] = 13877,	-- Go With The Flow
-							},
-							{	-- Put Out The Fire
-								["allianceQuestID"] = 13884,
-								["qg"] = 34292,	-- Arctanus
-								["sourceQuest"] = 13877,	-- Go With The Flow,
-							},
-						]]--
+						crit(4, {	-- The Power of Dartol's Rod
+							["sourceQuest"] = 26482,	-- True Power of the Rod
+						}),
+						crit(5, {	-- Bringing Harmony to the Elements
+							["sourceQuest"] = 13886,	-- Vortex
+						}),
 						crit(6, {	-- The Satyr of Satyrnaar
 							["sourceQuests"] = {
 								13869,	-- Recover the Remains
@@ -41,7 +35,12 @@ _.Zones =
 								13683,	-- Stopping the Rituals
 							},
 						}),
-						crit(7),	-- The Corrupted Heart of the Forest
+						crit(7, {	-- The Corrupted Heart of the Forest
+							["sourceQuests"] = {
+								26472,	-- Insane Druids
+								13796,	-- The Forest Heart
+							},
+						}),
 					},
 				}),
 				ach(4976, {	-- Ashenvale Quests
@@ -90,11 +89,13 @@ _.Zones =
 				}),
 				q(26481, {	-- A New Adornment
 					["qg"] = 3897,	-- Krolg
+					["coord"] = { 50.8, 75.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13989,	-- King of the Foulweald
 				}),
 				q(13874, {	-- A Not-So-Charmed Life
 					["qg"] = 34239,	-- Hephaestus Pilgrim
+					["coord"] = { 36.4, 49.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
 				}),
@@ -106,10 +107,13 @@ _.Zones =
 				}),
 				q(13624, {	-- A Squad of Your Own
 					["qg"] = 11806,	-- Sentinel Onaeya
+					["coord"] = { 26.6, 36.8, 63 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 26473,	-- Bathran's Hair
 				}),
 				q(13919, {	-- A Trip to the Moonwell
 					["qg"] = 3894,	-- Pelturas Whitemoon
+					["coord"] = { 37.3, 51.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26475,	-- Elune's Tear
 				}),
@@ -182,8 +186,9 @@ _.Zones =
 				}),
 				q(13646, {	-- Astranaar Bound
 					["qg"] = 33445,	-- Sentinel Avana
+					["coord"] = { 26.8, 35.9, 63 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 26464,	-- The Lost Gem
+					["sourceQuest"] = 13642,	-- Bathed in Light
 				}),
 				q(13849, {	-- Astranaar's Burning! -- aa
 					["qg"] = 4079,	-- Sentinel Thenysil
@@ -198,6 +203,7 @@ _.Zones =
 				}),
 				q(13642, {	-- Bathed in Light
 					["qg"] = 3847,	-- Orendil Broadleaf
+					["coord"] = { 26.8, 36.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
 				}),
@@ -297,6 +303,7 @@ _.Zones =
 				}),
 				q(13766, {	-- Closure is Only Natural
 					["qg"] = 17310,	-- Gnarl
+					["coord"] = { 83.7, 63.1, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26446,	-- Reclaiming Felfire Hill
 				}),
@@ -330,6 +337,7 @@ _.Zones =
 				}),
 				q(26480, {	-- Dartol's Rod
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26479,	-- Return to Raene
 				}),
@@ -358,6 +366,7 @@ _.Zones =
 				}),
 				q(13623, {	-- Delivery for Orendil
 					["qg"] = 33204,	-- Evenar Stillwhisper
+					["coord"] = { 26.7, 22.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26473,	-- Bathran's Hair
 				}),
@@ -420,6 +429,7 @@ _.Zones =
 				}),
 				q(26476, {	-- Dryad Delivery
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26475,	-- Elune's Tear
 				}),
@@ -436,6 +446,7 @@ _.Zones =
 				}),
 				q(26475, {	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
+					["coord"] = { 37.3, 51.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26474,	-- Orendil's Cure
 				}),
@@ -475,8 +486,9 @@ _.Zones =
 				}),
 				q(26463, {	-- Finding Teronis
 					["qg"] = 3847,	-- Orendil Broadleaf
+					["coord"] = { 26.8, 36.6, 63 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 13623,	-- Evenar Stillwhisper
+					["sourceQuest"] = 13623,	-- Delivery For Orendil
 				}),
 				q(1011,  {	-- Forsaken Diseases
 					["u"] = 40,
@@ -491,6 +503,7 @@ _.Zones =
 				}),
 				q(13877, {	-- Go With The Flow
 					["qg"] = 34239,	-- Hephaestus Pilgrim
+					["coord"] = { 36.4, 49.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13874,	-- A Not-So-Charmed Life
 				}),
@@ -525,7 +538,10 @@ _.Zones =
 				q(13880, {	-- Hot Lava
 					["qg"] = 34290,	-- Core
 					["coord"] = { 52.3, 56.5, 63 },
-					["sourceQuest"] = 13879,	-- Thunder Peak
+					["sourceQuests"] = {
+						13877,	-- Go With The Flow (alliance)
+						13879,	-- Thunder Peak (horde)
+					},
 				}),
 				q(13982, {	-- In a Bind
 					["qg"] = 3698,	-- Bolyun
@@ -552,6 +568,7 @@ _.Zones =
 				}),
 				q(26472, {	-- Insane Druids
 					["qg"] = 33777,	-- Gaivan Shadewalker
+					["coord"] = { 75.6, 75.3, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["g"] = {
@@ -595,6 +612,7 @@ _.Zones =
 				}),
 				q(13989, {	-- King of the Foulweald
 					["qg"] = 3897,	-- Krolg
+					["coord"] = { 50.8, 75.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26480,	-- Dartol's Rod
 					["g"] = {
@@ -709,6 +727,7 @@ _.Zones =
 				}),
 				q(26474, {	-- Orendil's Cure
 					["qg"] = 3847,	-- Orendil Broadleaf
+					["coord"] = { 26.8, 36.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13642,	-- Bathed in Light
 				}),
@@ -739,6 +758,7 @@ _.Zones =
 				}),
 				q(26478, {	-- Playing Possum
 					["qg"] = 3916,	-- Shael'dryn
+					["coord"] = { 59.0, 59.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26477,	-- Search the Bole
 					["g"] = {
@@ -757,7 +777,10 @@ _.Zones =
 				q(13884, {	-- Put Out The Fire
 					["qg"] = 34292,	-- Arctanus
 					["coord"] = { 52.0, 56.7, 63 },
-					["sourceQuest"] = 13879,	-- Thunder Peak
+					["sourceQuests"] = {
+						13877,	-- Go With The Flow
+						13879,	-- Thunder Peak
+					},
 				}),
 				q(1023,  {	-- Raene's Cleansing
 					["u"] = 40,
@@ -820,6 +843,7 @@ _.Zones =
 				}),
 				q(13626, {	-- Respect for the Fallen
 					["qg"] = 11806,	-- Sentinel Onaeya
+					["coord"] = { 26.6, 36.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13624,	-- A Squad of Your Own
 					["g"] = {
@@ -849,6 +873,7 @@ _.Zones =
 				}),
 				q(26479, {	-- Return to Raene
 					["qg"] = 3916,	-- Raene Wolfrunner
+					["coord"] = { 59.0, 59.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26478,	-- Playing Possum
 				}),
@@ -889,6 +914,7 @@ _.Zones =
 				}),
 				q(26477, {	-- Search the Bole
 					["qg"] = 3916,	-- Shael'dryn
+					["coord"] = { 59.0, 59.6, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26476,	-- Dryad Delivery
 				}),
@@ -1059,6 +1085,7 @@ _.Zones =
 				}),
 				q(13796, {	-- The Forest Heart
 					["qg"] = 33777,	-- Gaivan Shadewalker
+					["coord"] = { 75.6, 75.3, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13792,	-- The Shadewalker
 					["g"] = {
@@ -1142,6 +1169,7 @@ _.Zones =
 				}),
 				q(13792, {	-- The Shadewalker
 					["qg"] = 17310,	-- Gnarl
+					["coord"] = { 83.7, 63.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13766,	-- Closure is Only Natural
 				}),
@@ -1214,6 +1242,7 @@ _.Zones =
 				}),
 				q(13876, {	-- Too Far Gone
 					["qg"] = 34251,	-- Vear Darksnout
+					["coord"] = { 37.9, 30.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["g"] = {
@@ -1252,6 +1281,7 @@ _.Zones =
 				}),
 				q(26482, {	-- True Power of the Rod
 					["qg"] = 3897,	-- Krolg
+					["coord"] = { 50.8, 75.0, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26481,	-- A New Adornment
 					["g"] = {
@@ -1398,6 +1428,7 @@ _.Zones =
 				}),
 				q(13872, {	-- Worgen Wisdom
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 				}),
