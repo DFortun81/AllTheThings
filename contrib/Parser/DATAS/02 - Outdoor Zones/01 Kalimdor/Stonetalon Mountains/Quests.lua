@@ -896,6 +896,7 @@ _.Zones =
 				{	-- The Only Way Down is in a Body Bag
 					["questID"] = 25614,
 					["qg"] = 39256,	-- Kalen Trueshot
+					["coord"] = { 71.8, 45.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25613,	-- Do Yourself a Favor
 				},
