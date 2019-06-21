@@ -3801,7 +3801,7 @@ end)();
 		end
 	end
 	app.CacheFlightPathDataForCurrentNode = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
+		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
 		if allNodeData then
 			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
