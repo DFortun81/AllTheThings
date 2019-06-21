@@ -3868,7 +3868,7 @@ end)();
 			elseif key == "info" then
 				return app.FlightPathDB[t.flightPathID] or {};
 			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent. Collection status appears to be broken on the Classic client right now.\n\n:(\n  - Crieve";
+				return "Flight paths are cached when you talk to the flight master on each continent.";
 			elseif key == "icon" then
 				local info = t.info;
 				if info and info.faction and info.faction > 0 then
