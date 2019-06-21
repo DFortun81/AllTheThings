@@ -7,6 +7,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		["lvl"] = 120,
 		["g"] = {
 			d(17, {	-- LFR
+				n(0, {	-- Zone Drops
+					i(169930),	-- Handwraps of Unhindered Resonance
+					i(169929),	-- Cuffs of Soothing Currents
+					i(169932),	-- Brineweaver Guardian's Gloves
+					i(169931),	-- Skulker's Blackwater Bands
+					i(169934),	-- Deepcrawler's Handguards
+					i(169933),	-- Abyssal Bubbler's Bracers
+					i(169936),	-- Gauntlets of Crashing Tides
+					i(169935),	-- Brutish Myrmidon's Vambraces
+					i(168602),	-- Cloak of Blessed Depths
+				}),
 				ach(13718, {	-- The Grand Reception
 					["g"] = {
 						e(2352, {	-- Abyssal Commander Sivara
@@ -177,6 +188,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
+				n(0, {	-- Zone Drops
+					i(169930),	-- Handwraps of Unhindered Resonance
+					i(169929),	-- Cuffs of Soothing Currents
+					i(169932),	-- Brineweaver Guardian's Gloves
+					i(169931),	-- Skulker's Blackwater Bands
+					i(169934),	-- Deepcrawler's Handguards
+					i(169933),	-- Abyssal Bubbler's Bracers
+					i(169936),	-- Gauntlets of Crashing Tides
+					i(169935),	-- Brutish Myrmidon's Vambraces
+					i(168602),	-- Cloak of Blessed Depths
+				}),
 				ach(13687, {	-- Glory of the Palace Raider
 					i(167171),	-- Azshari Bloatray
 				}),
@@ -378,6 +400,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
+				n(0, {	-- Zone Drops
+					i(169930),	-- Handwraps of Unhindered Resonance
+					i(169929),	-- Cuffs of Soothing Currents
+					i(169932),	-- Brineweaver Guardian's Gloves
+					i(169931),	-- Skulker's Blackwater Bands
+					i(169934),	-- Deepcrawler's Handguards
+					i(169933),	-- Abyssal Bubbler's Bracers
+					i(169936),	-- Gauntlets of Crashing Tides
+					i(169935),	-- Brutish Myrmidon's Vambraces
+					i(168602),	-- Cloak of Blessed Depths
+				}),
 				ach(13687, {	-- Glory of the Palace Raider
 					i(167171),	-- Azshari Bloatray
 				}),
@@ -580,6 +613,17 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
+				n(0, {	-- Zone Drops
+					i(169930),	-- Handwraps of Unhindered Resonance
+					i(169929),	-- Cuffs of Soothing Currents
+					i(169932),	-- Brineweaver Guardian's Gloves
+					i(169931),	-- Skulker's Blackwater Bands
+					i(169934),	-- Deepcrawler's Handguards
+					i(169933),	-- Abyssal Bubbler's Bracers
+					i(169936),	-- Gauntlets of Crashing Tides
+					i(169935),	-- Brutish Myrmidon's Vambraces
+					i(168602),	-- Cloak of Blessed Depths
+				}),
 				ach(13687, {	-- Glory of the Palace Raider
 					i(167171),	-- Azshari Bloatray
 				}),
