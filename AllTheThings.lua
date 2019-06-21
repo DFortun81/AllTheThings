@@ -3780,41 +3780,44 @@ end)();
 		862,	-- Zuldazar (All of Zuldazar)
 		896,	-- Drustvar (All of Kul Tiras)
 	};
-	local cachedNodeData = {};
 	app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
 			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
-					local node = cachedNodeData[nodeData.nodeID];
-					if not node then
-						node = {};
-						cachedNodeData[nodeData.nodeID] = node;
+					if nodeData.name then 
+						local node = app.FlightPathDB[nodeData.nodeID];
+						if node then
+							node.name = nodeData.name;
+						else
+							node = {};
+							node.name = nodeData.name .. " *NEW*";
+							node.faction = nodeData.faction;
+							app.FlightPathDB[nodeData.nodeID] = node;
+						end
 					end
-					if nodeData.faction then node["faction"] = nodeData.faction; end
-					if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-					if nodeData.name then node["text"] = nodeData.name; end
 				end
 			end
 		end
 	end
 	app.CacheFlightPathDataForCurrentNode = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
+		local allNodeData = C_TaxiMap.GetAllTaxiNodes();
 		if allNodeData then
 			local knownNodeIDs = {};
 			for j,nodeData in ipairs(allNodeData) do
-				local node = cachedNodeData[nodeData.nodeID];
-				if not node then
-					node = {};
-					cachedNodeData[nodeData.nodeID] = node;
-				end
-				if nodeData.nodeID then node["nodeID"] = nodeData.nodeID; end
-				if nodeData.name then node["text"] = nodeData.name; end
 				if nodeData.state and nodeData.state < 2 then
 					table.insert(knownNodeIDs, nodeData.nodeID);
 				end
+				if nodeData.name then 
+					local node = app.FlightPathDB[nodeData.nodeID];
+					if not node then
+						node = {};
+						node.name = nodeData.name .. " *NEW*";
+						node.faction = nodeData.faction;
+						app.FlightPathDB[nodeData.nodeID] = node;
+					end
+				end
 			end
-			
 			if app.AccountWideFlightPaths then
 				for i,nodeID in ipairs(knownNodeIDs) do
 					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
@@ -3852,23 +3855,30 @@ end)();
 					end
 				end
 			elseif key == "text" then
-				local info = t.info;
-				return info and info.text or "Visit the Flight Master to cache.";
+				return t.info.name or "Visit the Flight Master to cache.";
+			elseif key == "u" then
+				return t.info.u;
+			elseif key == "mapID" then
+				return t.info.mapID;
 			elseif key == "nmr" then
 				local info = t.info;
 				if info and info.faction and info.faction > 0 then
 					return info.faction ~= app.FactionID;
 				end
 			elseif key == "info" then
-				return cachedNodeData[t.flightPathID];
+				return app.FlightPathDB[t.flightPathID] or {};
 			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent. We refresh the collection status when you look at the Flight Map. (blizzard limitation, not by choice... sorry!)\n\nHave fun!\n - Crieve";
+				return "Flight paths are cached when you look at the flight master on each continent. Collection status appears to be broken on the Classic client right now.\n\n:(\n  - Crieve";
 			elseif key == "icon" then
 				local info = t.info;
-				if info and info.faction and info.faction == 2 then
-					return "Interface/ICONS/Ability_Rogue_Sprint_Blue";
+				if info and info.faction and info.faction > 0 then
+					if info.faction == Enum.FlightPathFaction.Horde then
+						return "Interface\\Addons\\AllTheThings\\assets\\fp_horde";
+					else
+						return "Interface\\Addons\\AllTheThings\\assets\\fp_alliance";
+					end
 				end
-				return "Interface/ICONS/Ability_Rogue_Sprint";
+				return "Interface\\Addons\\AllTheThings\\assets\\fp_neutral";
 			else
 				-- Something that isn't dynamic.
 				return table[key];
@@ -8575,6 +8585,36 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
+		--]]
+		
+		db = {};
+		db.g = {};
+		db.fps = {};
+		app.CacheFlightPathData();
+		db.OnUpdate = function(self)
+			local cache = self.g;
+			table.wipe(cache);
+			SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
+			for i,fp in pairs(AllTheThings.FlightPathDB) do
+				local id = tonumber(i);
+				local fp = self.fps[id];
+				if not fp then
+					fp = app.CreateFlightPath(id);
+					self.fps[id] = fp;
+				end
+				tinsert(cache, fp);
+			end
+			table.sort(cache, function(a, b)
+				return a.text < b.text;
+			end);
+			self.g = cache;
+		end;
+		db.OnUpdate(db);
+		db.text = "Flight Paths";
+		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
+		table.insert(g, db);
+		
+		--[[
 		
 		-- Gear Sets
 		function SortGearSetInformation(a,b)

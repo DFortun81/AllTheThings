@@ -74,6 +74,7 @@ AllTheThings.L = {
 	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
+	["FLIGHT_PATH_ID"] = "Flight Path ID";
 	["MAP_ID"] = "Map ID";
 	["MOUNT_ID"] = "Mount ID";
 	["MUSIC_ROLL_ID"] = "Music Roll ID";
