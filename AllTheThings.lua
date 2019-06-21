@@ -7901,7 +7901,7 @@ local function RowOnEnter(self)
 				end
 				GameTooltip:AddDoubleLine("Races", str);
 			elseif reference.r and reference.r > 0 then
-				GameTooltip:AddDoubleLine("Races", (reference.r == 1 and "Alliance Only") or (reference.r == 2 and "Horde Only") or "Unknown");
+				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and "Alliance Only") or (reference.r == 1 and "Horde Only") or "Unknown");
 			end
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
