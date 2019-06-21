@@ -81,6 +81,7 @@ _.Mounts =
 				}, ALL_RACES),
 		}),
 		i(29220),	-- Blue Hawkstrider
+		i(166442),	-- Blue Marsh Hopper
 		i(8595),	-- Blue Mechanostrider
 		i(32319),	-- Blue Riding Nether Ray
 		i(89307),	-- Blue Shado-Pan Riding Tiger
@@ -293,6 +294,7 @@ _.Mounts =
 					26,	-- Pandaren [Horde]
 				}, ALL_RACES),
 		}),
+		i(163183),	-- Green Marsh Hopper
 		i(13321),	-- Green Mechanostrider
 		i(32314),	-- Green Riding Nether Ray
 		i(89305),	-- Green Shado-Pan Riding Tiger
@@ -539,5 +541,6 @@ _.Mounts =
 		i(44231, {	-- Wooly Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(166443),	-- Yellow Marsh Hopper
 	}),
 };
