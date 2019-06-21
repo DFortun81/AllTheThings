@@ -8594,7 +8594,8 @@ function app:GetDataCache()
 		db.OnUpdate = function(self)
 			local cache = self.g;
 			table.wipe(cache);
-			SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
+			-- Uncomment to harvest flight path data.
+			-- SetDataMember("FlightPathData", AllTheThings.FlightPathDB);
 			for i,fp in pairs(AllTheThings.FlightPathDB) do
 				local id = tonumber(i);
 				local fp = self.fps[id];
