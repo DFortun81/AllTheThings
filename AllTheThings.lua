@@ -8442,12 +8442,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- Yourself.
-		table.insert(g, app.CreateUnit("player", {
-			["collected"] = 1,
-			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
-		}));
-		
 		--[[
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
@@ -8751,6 +8745,12 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		--]]
+		
+		-- Yourself.
+		table.insert(g, app.CreateUnit("player", {
+			["collected"] = 1,
+			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+		}));
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
