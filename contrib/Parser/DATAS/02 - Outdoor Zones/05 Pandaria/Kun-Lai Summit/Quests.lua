@@ -6,34 +6,389 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
 			n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				a(ach(6537, {	-- Slum It in the Summit (Alliance)
-					crit(1),		-- Westwind Rest
-					crit(2),		-- The Yaungol Invasion
-					crit(3),		-- Inkgill Mere
-					crit(4),		-- The Yak Wash
-					crit(5),		-- The Burlap Trail
-					crit(6),		-- Kota Peak
-					crit(7),		-- The Thunder King
-					crit(8),		-- Temple of the White Tiger
-					crit(9),		-- Zouchin Village
-					crit(10),		-- The Shado-Pan
-				})),
-				h(ach(6538, {	-- Slum It in the Summit (Horde)
-					crit(1),		-- Eastwind Rest
-					crit(2),		-- The Yaungol Invasion
-					crit(3),		-- Inkgill Mere
-					crit(4),		-- The Yak Wash
-					crit(5),		-- The Burlap Trail
-					crit(6),		-- Kota Peak
-					crit(7),		-- The Thunder King
-					crit(8),		-- Temple of the White Tiger
-					crit(9),		-- Zouchin Village
-					crit(10),		-- The Shado-Pan
-				})),
-]]--				
---[[
-				q(30581),	-- ... and the Pot, Too!
+				q(30581, {	-- ... and the Pot, Too!
+					["qg"] = 59636,	-- Uyen Chow
+					["coord"] = { 60.2, 85.9, 379 },
+					["sourceQuests"] = { 
+						30569,	-- Trouble on the Farmstead (A)
+						30570,	-- Trouble on the Farmstead (H)
+					},
+				}),
+				q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
+					["qg"] = 59076,	-- Commander Hsieh
+					["coord"] = { 70.8, 90.4, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30507, {	-- Admiral Taylor has Awakened
+					["qg"] = 59073,	-- Mayor Bramblestaff
+					["coord"] = { 72.2, 91.8, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30508, {	-- Admiral Taylor has Awakened
+					["qg"] = 59077,	-- Apothecary Cheng
+					["coord"] = { 71.6, 92.8, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30459, {	-- All of the Arrows
+					["qg"] = 59076,	-- Commander Hsieh
+					["coord"] = { 70.8, 90.4, 379 },
+				}),
+				q(31253, {	-- Back to Eastwind Rest
+					["qg"] = 59573,	-- Farmer Chow
+					["coord"] = { 60.2, 85.8, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 
+						30581,	-- ... and the Pot, Too!
+						30571,	-- Farmhand Freedom
+					},
+				}),
+				q(31252, {	-- Back to Westwind Rest
+					["qg"] = 59573,	-- Farmer Chow
+					["coord"] = { 60.2, 85.8, 379 },
+					["races"] = ALlIANCE_ONLY,
+					["sourceQuests"] = { 
+						30581,	-- ... and the Pot, Too!
+						30571,	-- Farmhand Freedom
+					},
+				}),
+				q(30651, {	-- Barrels of Fun (A)
+					["qg"] = 59450,	-- Sully "The Pickle" McLeary
+					["coord"] = { 54.0, 83.2, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
+					["g"] = {
+						i(88577),	-- Explosive Barrel
+					},
+				}),
+				q(30656, {	-- Barrels of Fun (H)
+					["qg"] = 59448,	-- Rivett Clutchpop
+					["coord"] = { 62.8, 79.9, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30620,	-- Mogu?! Oh No-gu!
+					["g"] = {
+						i(88577),	-- Explosive Barrel
+					},
+				}),
+				q(31251, {	-- Best Meals Anywhere!
+					["qg"] = 59448,	-- Rivett Clutchpop
+					["coord"] = { 62.8, 79.9, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30515,	-- Challenge Accepted
+				}),
+				q(30457, {	-- Call Out Their Leader
+					["qg"] = 59073,	-- Mayor Bramblestaff
+					["coord"] = { 72.2, 91.8, 379 },
+					["g"] = {
+						i(84542),	-- Bataari Hatchet
+						i(84539),	-- Bataari Warshield
+						i(84538),	-- Binan Blade
+						i(84537),	-- Binan Greatsword
+						i(84541),	-- Bramble Blade
+						i(90467),	-- Bureaucrat's Handbook
+						i(84540),	-- Flamecaller's Shield
+						i(90468),	-- Mayor's Hand Fan
+					},
+				}),
+				q(30514, {	-- Challenge Accepted (A)
+					["qg"] = 63542,	-- Elder Tsulan
+					["coord"] = { 54.6, 84.2, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30512,	-- Westwind Rest
+				}),
+				q(30515, {	-- Challenge Accepted (H)
+					["qg"] = 63535,	-- Elder Shiao
+					["coord"] = { 61.2, 82.3, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30513,	-- Eastwind Rest
+				}),
+				q(30828, {	-- Cleansing the Mere
+					["qg"] = 60973,	-- Waterspeaker Gorai
+					["coord"] = { 74.9, 88.6, 379 },
+					["sourceQuest"] = 30480,	-- The Ritual
+				}),
+				q(30593, {	-- Deanimate the Reanimated (A)
+					["qg"] = 59451,	-- Mishka
+					["coord"] = { 53.6, 83.2, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30514,	-- Challenge Accepted
+				}),
+				q(30594, {	-- Deanimate the Reanimated (H)
+					["qg"] = 59449,	-- Shademaster Kiryn
+					["coord"] = { 62.7, 80.7, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30515,	-- Challenge Accepted
+				}),
+				q(30513, {	-- Eastwind Rest
+					["qg"] = 59442,	-- General Nazgrim
+					["coord"] = { 71.6, 93.1, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 
+						30509,	-- General Nazgrim has Awakened
+						30510,	-- General Nazgrim has Awakened
+						30511,	-- General Nazgrim has Awakened
+					},
+				}),
+				q(30468, {	-- Enraged Vengeance
+					["qg"] = 59273,	-- Swordmistress Mei
+					["coord"] = { 74.8, 88.7, 379 },
+					["g"] = {
+						i(84535),	-- Bodyguard's Dagger
+						i(84529),	-- Bodyguard's Halberd
+						i(84532),	-- Bodyguard's Rifle
+						i(84536),	-- Hidden Pass Barbs
+						i(84528),	-- Inkgill Blade
+						i(84533),	-- Mei's Blade
+						i(84534),	-- Ornate Mace
+						i(84531),	-- Swordmistress' Blade
+						i(84530),	-- Swordmistress' Greatsword
+					},
+				}),
+				q(30571, {	-- Farmhand Freedom
+					["qg"] = 59573,	-- Farmer Chow
+					["coord"] = { 60.2, 85.8, 379 },
+					["sourceQuests"] = { 
+						30569,	-- Trouble on the Farmstead (A)
+						30570,	-- Trouble on the Farmstead (H)
+					},
+				}),
+				q(30834, {	-- Father and Child Reunion
+					["qg"] = 59272,	-- Wu-Peng
+					["coord"] = { 74.7, 76.9, 379 },
+					["sourceQuest"] = 30467,	-- My Son...
+				}),
+				q(30967, {	-- Free the Dissenters
+					["qg"] = 60973,	-- Waterspeaker Gorai
+					["coord"] = { 75.1, 88.0, 379 },
+				}),
+				q(30509, {	-- General Nazgrim has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
+					["qg"] = 59076,	-- Commander Hsieh
+					["coord"] = { 70.8, 90.4, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30510, {	-- General Nazgrim has Awakened
+					["qg"] = 59073,	-- Mayor Bramblestaff
+					["coord"] = { 72.2, 91.8, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30511, {	-- General Nazgrim has Awakened
+					["qg"] = 59077,	-- Apothecary Cheng
+					["coord"] = { 71.6, 92.8, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 
+						30459,	-- All of the Arrows
+						30457,	-- Call Out Their Leader
+						30460,	-- Hit Medicine
+					},
+				}),
+				q(30460, {	-- Hit Medicine
+					["qg"] = 59077,	-- Apothecary Cheng
+					["coord"] = { 71.6, 92.8, 379 },
+				}),
+				q(30652, {	-- In Tents Channeling (A)
+					["qg"] = 59441,	-- Admiral Taylor
+					["coord"] = { 53.8, 83.6, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30593,	-- Deanimate the Reanimated
+				}),
+				q(30657, {	-- In Tents Channeling (H)
+					["qg"] = 59442,	-- General Nazgrim
+					["coord"] = { 63.0, 80.2, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30594,	-- Deanimate the Reanimated
+				}),
+				q(30619, {	-- Mogu?! Oh No-gu! (A)
+					["qg"] = 63542,	-- Elder Tsulan
+					["coord"] = { 54.6, 84.2, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30514,	-- Challenge Accepted
+					["g"] = {
+						i(82489),	-- Dreaming Spirit Helm
+						i(82491),	-- Mindbender Cowl
+						i(82488),	-- Mushan Hide Helm
+						i(82490),	-- Serenity Headcover
+						i(82492),	-- Silentleaf Helm
+						i(82494),	-- Summit Guardian Helm
+						i(82495),	-- Wallwatcher Helm
+						i(82487),	-- Waterfall Hood
+						i(82493),	-- Yak Herder Helm
+					},				
+				}),
+				q(30620, {	-- Mogu?! Oh No-gu! (H)
+					["qg"] = 63535,	-- Elder Shiao
+					["coord"] = { 62.4, 79.6, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30515,	-- Challenge Accepted
+					["g"] = {
+						i(82489),	-- Dreaming Spirit Helm
+						i(82491),	-- Mindbender Cowl
+						i(82488),	-- Mushan Hide Helm
+						i(82490),	-- Serenity Headcover
+						i(82492),	-- Silentleaf Helm
+						i(82494),	-- Summit Guardian Helm
+						i(82495),	-- Wallwatcher Helm
+						i(82487),	-- Waterfall Hood
+						i(82493),	-- Yak Herder Helm
+					},				
+				}),
+				q(30467, {	-- My Son...
+					["qg"] = 59263,	-- Merchant Shi
+					["coord"] = { 74.9, 88.9, 379 },
+				}),
+				q(30650, {	-- Pandaren Prisoners (A)
+					["qg"] = 63542,	-- Elder Tsulan
+					["coord"] = { 54.6, 84.2, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
+				}),
+				q(30655, {	-- Pandaren Prisoners (H)
+					["qg"] = 63535,	-- Elder Shiao
+					["coord"] = { 62.4, 79.6, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30620,	-- Mogu?! Oh No-gu!
+				}),
+				q(30595, {	-- Profiting off of the Past
+					["qg"] = 59821,	-- Bao Jian
+					["coord"] = { 59.6, 78.2, 379 },
+				}),
+				--q(30766),	-- Profiting off of the Past (not sure why there is a 2nd version of this quest but I never found it in game)
+				q(30469, {	-- Repossession
+					["qg"] = 59263,	-- Merchant Shi
+					["coord"] = { 74.9, 88.9, 379 },
+				}),
+				q(30575, {	-- Round 'Em Up (A)
+					["qg"] = 59441,	-- Admiral Taylor
+					["coord"] = { 53.8, 82.6, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30514,	-- Challenge Accepted
+					["g"] = {
+						i(84511),	-- Dreaming Spirit Monnion
+						i(84517),	-- Kafa Armored Shoulders
+						i(84512),	-- Kafa Burnished Spaulders
+						i(84516),	-- Kafa Heavy Shoulders
+						i(84510),	-- Kafa Hide Spaulders
+						i(84514),	-- Kafa Leather Spaulders
+						i(84509),	-- Kafa Satin Mantle
+						i(84513),	-- Kafa Silk Amice
+						i(84515),	-- Yak Herder Monnion
+					},				
+				}),
+				q(31256, {	-- Round 'Em Up (H)
+					["qg"] = 59442,	-- General Nazgrim
+					["coord"] = { 63.0, 80.2, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30515,	-- Challenge Accepted
+					["g"] = {
+						i(84511),	-- Dreaming Spirit Monnion
+						i(84517),	-- Kafa Armored Shoulders
+						i(84512),	-- Kafa Burnished Spaulders
+						i(84516),	-- Kafa Heavy Shoulders
+						i(84510),	-- Kafa Hide Spaulders
+						i(84514),	-- Kafa Leather Spaulders
+						i(84509),	-- Kafa Satin Mantle
+						i(84513),	-- Kafa Silk Amice
+						i(84515),	-- Yak Herder Monnion
+					},				
+				}),
+				q(31392, {	-- Temple of the White Tiger (A)
+					["qgs"] = {
+						63751,	-- Farmhand Ko
+						64448,	-- Hopsmaster Chang
+						60289,	-- Leni Kelpenstout
+						55809,	-- Peiji Goldendraft
+						66247,	-- Tigermaster Liu-Do
+						64521,	-- Wanderer Chu
+					},
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31393, {	-- Temple of the White Tiger (H)
+					["qgs"] = {
+						63751,	-- Farmhand Ko
+						64448,	-- Hopsmaster Chang
+						60289,	-- Leni Kelpenstout
+						55809,	-- Peiji Goldendraft
+						66247,	-- Tigermaster Liu-Do
+						64521,	-- Wanderer Chu
+					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(30855, {	-- The Fall of Shai Hu
+					["qg"] = 61065,	-- Waterspeaker Gorai
+					["sourceQuest"] = 30828,	-- Cleansing the Mere
+					["g"] = {
+						i(82552),	-- Dreaming Spirit Armbands
+						i(82554),	-- Mindbender Cuffs
+						i(82551),	-- Mushan Hide Bindings
+						i(82553),	-- Serenity Bracers
+						i(82555),	-- Silentleaf Armwraps
+						i(82557),	-- Summit Guardian Armplates
+						i(82558),	-- Wallwatcher Bracers
+						i(82550),	-- Waterfall Cuffs
+						i(82556),	-- Yak Herder Wristguards
+					},				
+				}),
+				q(30480, {	-- The Ritual
+					["qg"] = 60973,	-- Waterspeaker Gorai
+					["coord"] = { 75.1, 88.0, 379 },
+					["sourceQuests"] = { 
+						30967,	-- Free the Dissenters
+						30496,	-- The Waterspeaker's Staff
+					},
+				}),
+				q(30496, {	-- The Waterspeaker's Staff
+					["qg"] = 60973,	-- Waterspeaker Gorai
+					["coord"] = { 75.1, 88.0, 379 },
+				}),
+				q(30569, {	-- Trouble on the Farmstead (A)
+					["qg"] = 63754,	-- Farmhand Bo
+					["coord"] = { 53.8, 84.0, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 30514,	-- Challenge Accepted
+				}),
+				q(30570, {	-- Trouble on the Farmstead (H)
+					["qg"] = 63751,	-- Farmhand Ko
+					["coord"] = { 62.6, 79.5, 379 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 30515,	-- Challenge Accepted
+				}),
+				q(30512, {	-- Westwind Rest
+					["qg"] = 59441,	-- Admiral Taylor
+					["coord"] = { 71.6, 93.0, 379 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 
+						30506,	-- General Nazgrim has Awakened
+						30507,	-- General Nazgrim has Awakened
+						30508,	-- General Nazgrim has Awakened
+					},
+				}),
+				
+			--[[
 				qh(31395),	-- A Celestial Experience
 				qa(31394),	-- A Celestial Experience
 				q(30746),	-- A Fair Trade
@@ -48,22 +403,13 @@ _.Zones =
 				qa(31512),	-- A Witness to History
 				q(30596),	-- A Zandalari Troll?
 				q(30615),	-- A Zandalari Troll?
-				qa(30508),	-- Admiral Taylor has Awakened
-				qa(30506),	-- Admiral Taylor has Awakened
-				qa(30507),	-- Admiral Taylor has Awakened
-				q(30459),	-- All of the Arrows
 				q(30796),	-- An End to Everything
 				qh(32191),	-- Ancient Guardians
 				qa(32315),	-- Anduin's Plea
 				q(30491),	-- At the Yak Wash
 				q(30492),	-- Back in Yak
-				qh(31253),	-- Back to Eastwind Rest
-				qa(31252),	-- Back to Westwind Rest
 				qa(32194),	-- Bad Blood
-				qh(30656),	-- Barrels of Fun
-				qa(30651),	-- Barrels of Fun
 				q(31834),	-- Begin Your Training: Master Cheng
-				qh(31251),	-- Best Meals Anywhere!
 				q(31847),	-- Better Dead than Dread
 				q(31695),	-- Beyond the Wall
 				qh(32192),	-- Bloodlines
@@ -75,21 +421,17 @@ _.Zones =
 				q(30605),	-- Bros Before Hozen
 				qa(32383),	-- Bugging Out
 				q(30807),	-- By the Falls, For the Fallen
-				q(30457),	-- Call Out Their Leader
 				q(32041),	-- Candy Bucket
 				qh(32040),	-- Candy Bucket
 				q(32051),	-- Candy Bucket
 				qa(32042),	-- Candy Bucket
 				q(32037),	-- Candy Bucket
 				q(32039),	-- Candy Bucket
-				qa(30514),	-- Challenge Accepted
-				qh(30515),	-- Challenge Accepted
 				q(30802),	-- Chasing the Storm
 				q(30816),	-- Checking In
 				qh(31459),	-- Cho's Missive
 				qa(31460),	-- Cho's Missive
 				q(46347),	-- Clean-up on Aisle Sha
-				q(30828),	-- Cleansing the Mere
 				qh(32378),	-- Clearing a Path
 				q(30487),	-- Comin' Round the Mountain
 				q(31944),	-- Complete Your Training: The Final Test
@@ -100,25 +442,15 @@ _.Zones =
 				q(31838),	-- Continue Your Training: Master Tsang
 				q(31833),	-- Continue Your Training: Master Woo
 				q(31836),	-- Continue Your Training: Master Yoon
-				qa(30593),	-- Deanimate the Reanimated
-				qh(30594),	-- Deanimate the Reanimated
 				q(30991),	-- Do a Barrel Roll!
-				qh(30513),	-- Eastwind Rest
 				qh(32351),	-- Echoes of Thunder
 				q(30794),	-- Emergency Care
 				q(31011),	-- Enemies At Our Door
-				q(30468),	-- Enraged Vengeance
 				q(31279),	-- Everything I Know About Cooking
-				q(30571),	-- Farmhand Freedom
-				q(30834),	-- Father and Child Reunion
 				qh(32319),	-- Find Thrall!
 				q(30992),	-- Finish This!
 				q(30935),	-- Fisherman's Tale
-				q(30967),	-- Free the Dissenters
 				q(30489),	-- Fresh Needle Scent
-				qh(30509),	-- General Nazgrim has Awakened
-				qh(30510),	-- General Nazgrim has Awakened
-				qh(30511),	-- General Nazgrim has Awakened
 				q(30824),	-- Gourmet Kafa
 				q(30743),	-- Gourmet Kafa
 				q(31956),	-- Grand Master Yon
@@ -127,7 +459,6 @@ _.Zones =
 				qa(32397),	-- He Won't Even Miss It
 				qa(32382),	-- He's In Deep
 				qa(32316),	-- Heart Of The Alliance
-				q(30460),	-- Hit Medicine
 				q(30681),	-- Holed Up
 				q(30680),	-- Holed Up
 				q(30673),	-- Holed Up
@@ -136,8 +467,6 @@ _.Zones =
 				q(32497),	-- Honor the Flame
 				q(30723),	-- Honor, Even in Death
 				q(30607),	-- Hozen Love Their Keys
-				qa(30652),	-- In Tents Channeling
-				qh(30657),	-- In Tents Channeling
 				q(30601),	-- Instant Courage
 				q(31031),	-- Into the Monastery
 				q(30944),	-- It Takes A Village
@@ -152,18 +481,13 @@ _.Zones =
 				q(30942),	-- Make A Fighter Out of Me
 				qh(32368),	-- Memory Wine
 				qa(32371),	-- Memory Wine
-				qh(30620),	-- Mogu?! Oh No-gu!
-				qa(30619),	-- Mogu?! Oh No-gu!
 				qh(31457),	-- Muskpaw Ranch
 				qa(31456),	-- Muskpaw Ranch
 				q(30768),	-- My Husband...
-				q(30467),	-- My Son...
 				q(30600),	-- No Pack Left Behind
 				q(30750),	-- Off the Wall!
 				q(30614),	-- Oil Stop
 				q(30683),	-- One Traveler's Misfortune
-				qa(30650),	-- Pandaren Prisoners
-				qh(30655),	-- Pandaren Prisoners
 				q(30999),	-- Path Less Traveled
 				q(32816),	-- Path of the Last Emperor
 				q(31844),	-- Practice Makes Perfect: Master Cheng
@@ -174,19 +498,14 @@ _.Zones =
 				q(31841),	-- Practice Makes Perfect: Master Woo
 				q(31843),	-- Practice Makes Perfect: Master Yoon
 				q(30819),	-- Preparing the Remains
-				q(30766),	-- Profiting off of the Past
-				q(30595),	-- Profiting off of the Past
 				q(31228),	-- Prophet Khar'zul
 				q(30710),	-- Provoking the Trolls
 				q(30765),	-- Regaining Honor
 				qh(32318),	-- Regeneration Takes Time
-				q(30469),	-- Repossession
 				q(30618),	-- Resupplying One Keg
 				q(46342),	-- Return to the Broken Peak
 				q(30946),	-- Revelations
 				q(30617),	-- Roadside Assistance
-				qh(31256),	-- Round 'Em Up
-				qa(30575),	-- Round 'Em Up
 				q(30879),	-- Round 1: Brewmaster Chani
 				q(30880),	-- Round 1: The Streetfighter
 				q(30881),	-- Round 2: Clever Ashyo & Ken-Ken
@@ -203,8 +522,6 @@ _.Zones =
 				qh(32284),	-- Someone You Should See
 				q(30795),	-- Staying Connected
 				q(30800),	-- Stealing Their Thunder King
-				qa(31392),	-- Temple of the White Tiger
-				qh(31393),	-- Temple of the White Tiger
 				q(31207),	-- The Arena of Annihilation
 				qa(32400),	-- The Bell Speaks
 				qh(32398),	-- The Bell Speaks
@@ -218,7 +535,6 @@ _.Zones =
 				q(30665),	-- The Defense of Shado-Pan Fallback
 				qa(32394),	-- The Divine Bell
 				qh(32392),	-- The Divine Bell
-				q(30855),	-- The Fall of Shai Hu
 				q(30804),	-- The Fearmaster
 				qa(32332),	-- The First Riddle: Mercy
 				qa(32335),	-- The Greatest Prank
@@ -246,7 +562,6 @@ _.Zones =
 				q(31861),	-- The Peak of Serenity - Continue Your Training
 				q(31858),	-- The Peak of Serenity - Continue Your Training
 				q(30602),	-- The Rabbitsfoot
-				q(30480),	-- The Ritual
 				q(46348),	-- The River to Ban-Lu
 				qh(31255),	-- The Road to Kun-Lai
 				q(38936),	-- The Road to Kun-Lai
@@ -269,7 +584,6 @@ _.Zones =
 				q(46343),	-- The Trail of Ban-Lu
 				q(46350),	-- The Trial of Ban-Lu
 				q(31518),	-- The Vale of Eternal Blossoms
-				q(30496),	-- The Waterspeaker's Staff
 				q(30621),	-- They Stole My Luck!
 				q(30606),	-- Thumping Knucklethump
 				q(32441),	-- Thundering Pandaren Spirit
@@ -285,13 +599,10 @@ _.Zones =
 				qh(31381),	-- Trial At The Temple of the White Tiger
 				q(30826),	-- Trouble Brewing
 				q(30745),	-- Trouble Brewing
-				qa(30569),	-- Trouble on the Farmstead
-				qh(30570),	-- Trouble on the Farmstead
 				q(30670),	-- Turnabout
 				q(30752),	-- Unbelievable!
 				q(30611),	-- Unleash The Yeti!
 				q(30690),	-- Unmasking the Yaungol
-				qa(30512),	-- Westwind Rest
 				q(30945),	-- What's Yours Is Mine
 				q(30993),	-- Where are My Reinforcements?
 				q(30490),	-- Yakity Yak
@@ -363,29 +674,8 @@ _.Zones =
 				qh(32399,  {  	-- Breath of Darkest Shadow
 					i(93386),  		-- Grand Wyvern
 				}),
-				q(30457,  { 	-- Call Out Their Leader
-					i(84537),
-					i(84538),
-					i(84539),
-					i(84540),
-					i(84541),
-					i(84542),
-					i(90467),
-					i(90468),
-				}),
 				q(30991,  {  	-- Do a Barrel Roll!
 					i(88531),  		-- Lao Chin's Last Mug
-				}),
-				q(30468,  {  	-- Enraged Vengeance
-					i(84528),
-					i(84529),
-					i(84530),
-					i(84531),
-					i(84532),
-					i(84533),
-					i(84534),
-					i(84535),
-					i(84536),
 				}),
 				q(30682,  {  	-- Holed Up
 					i(88579),  		-- Jin Warmkeg's Brew
@@ -399,28 +689,6 @@ _.Zones =
 					i(82604),
 					i(90488),
 					i(90489),
-				}),
-				qa(30619,  {  	-- Mogu?! Oh No-gu!
-					i(82487),
-					i(82488),
-					i(82489),
-					i(82490),
-					i(82491),
-					i(82492),
-					i(82493),
-					i(82494),
-					i(82495),
-				}),
-				qh(30620,  {  	-- Mogu?! Oh No-gu!
-					i(82487),
-					i(82488),
-					i(82489),
-					i(82490),
-					i(82491),
-					i(82492),
-					i(82493),
-					i(82494),
-					i(82495),
 				}),
 				q(30683,  {  	-- One Traveler's Misfortune
 					i(82505),
@@ -469,28 +737,6 @@ _.Zones =
 				q(30617,  {  	-- Roadside Assistance
 					i(88381),  		-- Silversage Incence
 				}),
-				qa(30575,  {  	-- Round 'Em Up
-					i(84509),
-					i(84510),
-					i(84511),
-					i(84512),
-					i(84513),
-					i(84514),
-					i(84515),
-					i(84516),
-					i(84517),
-				}),
-				qh(31256,  {  	-- Round 'Em Up
-					i(84509),
-					i(84510),
-					i(84511),
-					i(84512),
-					i(84513),
-					i(84514),
-					i(84515),
-					i(84516),
-					i(84517),
-				}),
 				q(30747,  {  	-- The Burlap Grind
 					i(82523),
 					i(82524),
@@ -508,17 +754,6 @@ _.Zones =
 					i(82586),
 					i(82587),
 					i(82588),
-				}),
-				q(30855,  {  	-- The Fall of Shai Hu
-					i(82550),
-					i(82551),
-					i(82552),
-					i(82553),
-					i(82554),
-					i(82555),
-					i(82556),
-					i(82557),
-					i(82558),
 				}),
 				q(30804,  {  	-- The Fearmaster
 					i(84518),

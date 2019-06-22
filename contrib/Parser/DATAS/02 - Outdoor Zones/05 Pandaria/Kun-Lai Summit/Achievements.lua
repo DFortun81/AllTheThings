@@ -111,6 +111,98 @@ _.Zones =
 						["description"] = "Located in the Ruins of Mogujia at (59.2,73)",
 					}),
 				}),
+				{	-- Slum It in the Summit (A)
+					["achievementID"] = 6537,
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						{	-- Westwind Rest
+							["criteriaID"] = 1,
+							["sourceQuest"] = 30514,	-- Challenge Accepted
+						},
+						{	-- The Yaungol Invasion
+							["criteriaID"] = 2,
+							["sourceQuest"] = 30660,	-- The Ordo Warbringer
+						},
+						{	-- Inkgill Mere
+							["criteriaID"] = 3,
+							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
+						},
+						{	-- The Yak Wash
+							["criteriaID"] = 4,
+							["sourceQuest"] = 30492,	-- The Burlap Trail
+						},
+						{	-- The Burlap Trail
+							["criteriaID"] = 5,
+							["sourceQuest"] = 30612,	-- The Leader Hozen
+						},
+						{	-- Kota Peak
+							["criteriaID"] = 6,
+							["sourceQuest"] = 30747,	-- The Burlap Grind
+						},
+						{	-- The Thunder King
+							["criteriaID"] = 7,
+							["sourceQuest"] = 30800,	-- Stealing Their Thunder King
+						},
+						{	-- Temple of the White Tiger
+							["criteriaID"] = 8,
+							["sourceQuest"] = 31394,	-- A Celestial Experience
+						},
+						{	-- Zouchin Village
+							["criteriaID"] = 9,
+							["sourceQuest"] = 30946,	-- Revelations
+						},
+						{	-- The Shado-Pan
+							["criteriaID"] = 10,
+							["sourceQuest"] = 30752,	-- Unbelievable!
+						},
+					},
+				},
+				{	-- Slum It in the Summit (H)
+					["achievementID"] = 6538,
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						{	-- Eastwind Rest
+							["criteriaID"] = 1,
+							["sourceQuest"] = 30515,	-- Challenge Accepted
+						},
+						{	-- The Yaungol Invasion
+							["criteriaID"] = 2,
+							["sourceQuest"] = 30661,	-- The Ordo Warbringer
+						},
+						{	-- Inkgill Mere
+							["criteriaID"] = 3,
+							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
+						},
+						{	-- The Yak Wash
+							["criteriaID"] = 4,
+							["sourceQuest"] = 30492,	-- The Burlap Trail
+						},
+						{	-- The Burlap Trail
+							["criteriaID"] = 5,
+							["sourceQuest"] = 30612,	-- The Leader Hozen
+						},
+						{	-- Kota Peak
+							["criteriaID"] = 6,
+							["sourceQuest"] = 30747,	-- The Burlap Grind
+						},
+						{	-- The Thunder King
+							["criteriaID"] = 7,
+							["sourceQuest"] = 30800,	-- Stealing Their Thunder King
+						},
+						{	-- Temple of the White Tiger
+							["criteriaID"] = 8,
+							["sourceQuest"] = 31395,	-- A Celestial Experience
+						},
+						{	-- Zouchin Village
+							["criteriaID"] = 9,
+							["sourceQuest"] = 30946,	-- Revelations
+						},
+						{	-- The Shado-Pan
+							["criteriaID"] = 10,
+							["sourceQuest"] = 30752,	-- Unbelievable!
+						},
+					},
+				},
 			}),
 		}),
 	}),
