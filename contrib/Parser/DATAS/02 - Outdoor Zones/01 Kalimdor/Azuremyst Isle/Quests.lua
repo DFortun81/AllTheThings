@@ -204,6 +204,13 @@ _.Zones =
 					["coord"] = { 48.4, 51.8, 97 },
 					["races"] = { 11 },	-- Draenei
 				}),
+				q(28289, {	-- Moonglade Calls
+					["qg"] = 16721,	-- Shalannius
+					["lvl"] = 50,
+					["coord"] = { 24.4, 54.5, 97 },
+					["classes"] = { 11 },	-- Druid
+					["isBreadcrumb"] = true,
+				}),
 				q(9562, {	-- Murlocs... Why Here? Why Now?
 					["qg"] = 17441,	-- Gurf
 					["coord"] = { 44.6, 23.4, 97 },
