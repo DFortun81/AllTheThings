@@ -148,7 +148,8 @@ namespace ATT
                             if (field == "sym")
                             {
                                 // Write the symbolic link without changing anything.
-                                builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
+                                //builder.Append('"').Append(Convert.ToString(data[field]).Replace("\"", "\\\"")).Append('"');
+                                ExportRawLua(builder, data[field]);
                             }
                             else ExportCompressedLua(builder, data[field]);
                         }

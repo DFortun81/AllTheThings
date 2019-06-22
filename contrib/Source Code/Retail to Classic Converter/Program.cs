@@ -105,6 +105,8 @@ namespace ATT
                 if (pair.Value is List<object> list) Simplify(list);
             }
 
+            //File.WriteAllText("output.json", MiniJSON.Json.Serialize(data));
+            File.WriteAllText("output.json", Newtonsoft.Json.JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented));
 
             Trace.WriteLine("OKAY COOL WE DID IT.");
             Console.ReadLine();
@@ -155,6 +157,12 @@ namespace ATT
             // Check for sub groups.
             if (o.TryGetValue("g", out List<object> groups)) Simplify(groups);
 
+            // Remove from unused fields.
+            o.Remove("ilvl");   // iLvl
+            o.Remove("s");      // sourceID
+            o.Remove("modID");  // modID
+            o.Remove("bonusID");    // bonusID
+
             foreach (var pair in o)
             {
                 switch (pair.Key)
@@ -180,7 +188,8 @@ namespace ATT
                         continue;
 
                     case "npcID":
-                        if (Convert.ToInt32(pair.Value) > 18199)
+                        var npdID = Convert.ToInt32(pair.Value);
+                        if (npdID > 18199 || (npdID < 1 && (groups == null || !groups.Any())))
                         {
                             // Throw away all the data.
                             return false;
@@ -195,13 +204,23 @@ namespace ATT
                         }
                         continue;
 
+                    case "factionID":
+                        if (Convert.ToInt32(pair.Value) > 929)
+                        {
+                            // Throw away all the data.
+                            return false;
+                        }
+                        continue;
+
                     // IGNORE THESE FIELDS
                     case "g":
                         continue;
                 }
+                /*
                 Trace.Write(pair.Key);
                 Trace.Write(": ");
                 Trace.WriteLine(pair.Value);
+                */
             }
             return true;
         }
