@@ -11406,30 +11406,41 @@ SLASH_AllTheThings1 = "/allthethings";
 SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList["AllTheThings"] = function(cmd)
-	if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
+	if cmd then
+		cmd = string.lower(cmd);
+		if cmd == "" or cmd == "main" or cmd == "mainlist" then
+			app.ToggleMainList();
+			return true;
+		elseif cmd == "ra" then
+			app:GetWindow("RaidAssistant"):Toggle();
+			return true;
+		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
+			app:GetWindow("Random"):Toggle();
+			return true;
+		elseif cmd == "wq" then
+			app:GetWindow("WorldQuests"):Toggle();
+			return true;
+		elseif cmd == "unsorted" then
+			app:GetWindow("Unsorted"):Toggle();
+			return true;
+		elseif strsub(cmd, 1, 4) == "mini" then
+			app:ToggleMiniListForCurrentZone();
+			return true;
+		else
+			local subcmd = strsub(cmd, 1, 6);
+			if subcmd == "mapid:" then
+				app:GetWindow("CurrentInstance"):SetMapID(tonumber(strsub(cmd, 7)));
+				return true;
+			end
+		end
+		
+		-- Search for the Link in the database
+		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+		if group then CreateMiniListForGroup(group); end
+	else
+		-- Default command
 		app.ToggleMainList();
-		return true;
-	elseif cmd == "ra" then
-		app:GetWindow("RaidAssistant"):Toggle();
-		return true;
-	elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
-		app:GetWindow("Random"):Toggle();
-		return true;
-	elseif cmd == "wq" then
-		app:GetWindow("WorldQuests"):Toggle();
-		return true;
-	elseif cmd == "unsorted" then
-		app:GetWindow("Unsorted"):Toggle();
-		return true;
-	elseif strsub(cmd, 1, 4) == "mini" then
-		--print(cmd);
-		app:ToggleMiniListForCurrentZone();
-		return true;
 	end
-	
-	-- Search for the Link in the database
-	local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-	if group then CreateMiniListForGroup(group); end
 end
 
 SLASH_AllTheThingsMAPS1 = "/attmaps";
