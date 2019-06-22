@@ -9409,409 +9409,408 @@ app:GetWindow("Debugger", UIParent, function(self)
 	UpdateWindow(self, true);
 end):Show();
 --]]--
-(function()
-	local IsSameMap = function(data, results)
-		if data.mapID then
-			-- Exact same map?
-			if data.mapID == results.mapID then
-				return true;
-			end
-			
-			-- Does the result map have an array of associated maps and this map is in there?
-			if results.maps and contains(results.maps, data.mapID) then
-				return true;
-			end
-		end
-		if data.maps then
-			-- Does the old map data contain this map?
-			if contains(data.maps, results.mapID) then
-				return true;
-			end
-			
-			-- Does the result map have an array of associated maps and this map is in there?
-			if results.maps and containsAny(results.maps, data.maps) then
-				return true;
-			end
-		end
-	end
-	app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
-		if not self.initialized then
-			self.initialized = true;
-			self.openedOnLogin = false;
-			self.data = app.CreateMap(946, {
-				['text'] = "Mini List",
-				['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
-				["description"] = "This list contains the relevant information for your current zone.",
-				['visible'] = true, 
-				['expanded'] = true,
-				['g'] = {
-					{
-						['text'] = "Update Location Now",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-					},
+app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
+	if not self.initialized then
+		self.initialized = true;
+		self.openedOnLogin = false;
+		self.data = app.CreateMap(946, {
+			['text'] = "Mini List",
+			['icon'] = "Interface\\Icons\\INV_Misc_Map06.blp", 
+			["description"] = "This list contains the relevant information for your current zone.",
+			['visible'] = true, 
+			['expanded'] = true,
+			['g'] = {
+				{
+					['text'] = "Update Location Now",
+					['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+					['description'] = "If you wish to forcibly refresh the data without changing zones, click this button now!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						Push(self, "Rebuild", self.Rebuild);
+						return true;
+					end,
 				},
-			});
-			table.insert(app.RawData, self.data);
-			self.rawData = {};
-			self.SetMapID = function(self, mapID)
-				self.mapID = mapID;
-				self:SetVisible(true);
-				self:Update();
+			},
+		});
+		table.insert(app.RawData, self.data);
+		self.rawData = {};
+		local IsSameMap = function(data, results)
+			if data.mapID then
+				-- Exact same map?
+				if data.mapID == results.mapID then
+					return true;
+				end
+				
+				-- Does the result map have an array of associated maps and this map is in there?
+				if results.maps and contains(results.maps, data.mapID) then
+					return true;
+				end
 			end
-			self.Rebuild = function(self)
-				local results = SearchForField("mapID", self.mapID);
-				if results then
-					-- Simplify the returned groups
-					local groups, holiday = {}, {};
-					local header = app.CreateMap(self.mapID, { g = groups });
-					for i, group in ipairs(results) do
-						local clone = {};
-						for key,value in pairs(group) do
-							if key == "maps" then
-								local maps = {};
-								for i,mapID in ipairs(value) do
-									tinsert(maps, mapID);
-								end
-								clone[key] = maps;
-							elseif key == "g" then
-								local g = {};
-								for i,o in ipairs(value) do
-									o = CloneData(o);
-									ExpandGroupsRecursively(o, false);
-									tinsert(g, o);
-								end
-								clone[key] = g;
-							else
-								clone[key] = value;
+			if data.maps then
+				-- Does the old map data contain this map?
+				if contains(data.maps, results.mapID) then
+					return true;
+				end
+				
+				-- Does the result map have an array of associated maps and this map is in there?
+				if results.maps and containsAny(results.maps, data.maps) then
+					return true;
+				end
+			end
+		end
+		self.SetMapID = function(self, mapID)
+			self.mapID = mapID;
+			self:SetVisible(true);
+			self:Update();
+		end
+		self.Rebuild = function(self)
+			local results = SearchForField("mapID", self.mapID);
+			if results then
+				-- Simplify the returned groups
+				local groups, holiday = {}, {};
+				local header = app.CreateMap(self.mapID, { g = groups });
+				for i, group in ipairs(results) do
+					local clone = {};
+					for key,value in pairs(group) do
+						if key == "maps" then
+							local maps = {};
+							for i,mapID in ipairs(value) do
+								tinsert(maps, mapID);
 							end
+							clone[key] = maps;
+						elseif key == "g" then
+							local g = {};
+							for i,o in ipairs(value) do
+								o = CloneData(o);
+								ExpandGroupsRecursively(o, false);
+								tinsert(g, o);
+							end
+							clone[key] = g;
+						else
+							clone[key] = value;
 						end
-						setmetatable(clone, getmetatable(group));
-						group = clone;
-						
-						-- If relative to a difficultyID, then merge it into one.
-						local difficultyID = GetRelativeValue(group, "difficultyID");
-						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
-						
-						-- If this is relative to a holiday, let's do something special
-						if GetRelativeField(group, "npcID", -3) then
-							if group.achievementID then
-								if group.criteriaID then
-									if group.parent.achievementID then
-										group = app.CreateAchievement(group.parent.achievementID, 
-											{ g = { group }, total = group.total, progress = group.progress, 
-												u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-									else
-										group = app.CreateAchievement(group.achievementID,
-											{ g = { group }, total = group.total, progress = group.progress,
-												u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
-									end
+					end
+					setmetatable(clone, getmetatable(group));
+					group = clone;
+					
+					-- If relative to a difficultyID, then merge it into one.
+					local difficultyID = GetRelativeValue(group, "difficultyID");
+					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+					
+					-- If this is relative to a holiday, let's do something special
+					if GetRelativeField(group, "npcID", -3) then
+						if group.achievementID then
+							if group.criteriaID then
+								if group.parent.achievementID then
+									group = app.CreateAchievement(group.parent.achievementID, 
+										{ g = { group }, total = group.total, progress = group.progress, 
+											u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+								else
+									group = app.CreateAchievement(group.achievementID,
+										{ g = { group }, total = group.total, progress = group.progress,
+											u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
 								end
-							elseif group.criteriaID and group.parent.achievementID then
-								group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-									u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
 							end
-							
-							local holidayID = GetRelativeValue(group, "holidayID");
-							local u = group.u or GetRelativeValue(group, "u");
-							if group.key == "npcID" then
-								if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-									if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
-								elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-									if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
-								elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-									if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
-								end
-							elseif group.key == "questID" then
+						elseif group.criteriaID and group.parent.achievementID then
+							group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
+								u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+						end
+						
+						local holidayID = GetRelativeValue(group, "holidayID");
+						local u = group.u or GetRelativeValue(group, "u");
+						if group.key == "npcID" then
+							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
+							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
 							end
-							if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
-							MergeObject(holiday, group);
-						elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
-							header.key = group.key;
-							header[group.key] = group[group.key];
-							MergeObject({header}, group);
-						elseif group.key == "npcID" then
-							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
-								MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
-							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-							else
-								MergeObject(groups, group);
-							end
 						elseif group.key == "questID" then
+							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+						end
+						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
+						MergeObject(holiday, group);
+					elseif group.key == "instanceID" or group.key == "mapID" or group.key == "classID" then
+						header.key = group.key;
+						header[group.key] = group[group.key];
+						MergeObject({header}, group);
+					elseif group.key == "npcID" then
+						if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
+							MergeObject(groups, app.CreateNPC(-4, { g = { group } }), 1);
+						elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+							MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
+						elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
-						elseif group.key == "speciesID" then
-							MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
 						end
-					end
-					
-					if #holiday > 0 then
-						-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
-						local holidays, unlinked = {}, {};
-						for i=#holiday,1,-1 do
-							local group = holiday[i];
-							if group.holidayID then
-								if group.u then holidays[group.u] = group; end
-							elseif group.u then
-								local temp = unlinked[group.u];
-								if not temp then
-									temp = {};
-									unlinked[group.u] = temp;
-								end
-								table.insert(temp, group);
-								table.remove(holiday, i);
-							end
-						end
-						for u,temp in pairs(unlinked) do
-							local h = holidays[u];
-							if h then
-								for i,data in ipairs(temp) do
-									MergeObject(h.g, data);
-								end
-							else
-								-- Attempt to scan for the main holiday header.
-								local done = false;
-								for j,o in ipairs(SearchForField("npcID", -3)) do
-									if o.g and #o.g > 5 and o.g[1].holidayID then
-										for k,group in ipairs(o.g) do
-											if group.holidayID and group.u == u then
-												MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
-												done = true;
-											end
-										end
-										break;
-									end
-								end
-								if not done then
-									for i,data in ipairs(temp) do
-										MergeObject(holiday, data);
-									end
-								end
-							end
-						end
-						
-						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
-					end
-					
-					-- Check for timewalking difficulty objects
-					for i, group in ipairs(groups) do
-						if group.difficultyID and group.difficultyID == 24 and group.g then
-							-- Look for a Common Boss Drop header.
-							local cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == -1 then
-									cbdIndex = j;
-									break;
-								end
-							end
-							
-							-- Push the Common Boss Drop header to the top.
-							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
-							
-							-- Look for a Zone Drop header.
-							cbdIndex = -1;
-							for j, subgroup in ipairs(group.g) do
-								if subgroup.npcID and subgroup.npcID == 0 then
-									cbdIndex = j;
-									break;
-								end
-							end
-							
-							-- Push the Zone Drop header to the top.
-							if cbdIndex > -1 then
-								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-							end
-						end
-					end
-					
-					-- Swap out the map data for the header.
-					results = header;
-					
-					if IsSameMap(self.data, results) then
-						ReapplyExpand(self.data.g, results.g);
+					elseif group.key == "questID" then
+						MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+					elseif group.key == "speciesID" then
+						MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 					else
-						ExpandGroupsRecursively(results, true);
+						MergeObject(groups, group);
 					end
-					
-					for key,value in pairs(self.data) do
-						self.data[key] = nil;
-					end
-					for key,value in pairs(results) do
-						self.data[key] = value;
-					end
-					
-					self.data.u = nil;
-					self.data.mapID = self.mapID;
-					setmetatable(self.data,
-						self.data.instanceID and app.BaseInstance
-						or self.data.classID and app.BaseCharacterClass
-						or app.BaseMap);
-					
-					-- If we have determined that we want to expand this section, then do it
-					if results.g then
-						local bottom = {};
-						local top = {};
-						for i=#results.g,1,-1 do
-							local o = results.g[i];
-							if o.difficultyID then
-								table.remove(results.g, i);
-								table.insert(bottom, 1, o);
-							elseif o.isRaid then
-								table.remove(results.g, i);
-								table.insert(top, o);
-							end
-						end
-						for i,o in ipairs(top) do
-							table.insert(results.g, 1, o);
-						end
-						for i,o in ipairs(bottom) do
-							table.insert(results.g, o);
-						end
-						
-						-- if enabled minimize rows based on difficulty 
-						if app.Settings:GetTooltipSetting("Expand:Difficulty") then
-							local difficultyID = select(3, GetInstanceInfo());
-							if difficultyID and difficultyID > 0 and results.g then
-								for _, row in ipairs(results.g) do
-									if row.difficultyID or row.difficulties then
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if not row.expanded then ExpandGroupsRecursively(row, true); end
-										elseif row.expanded then 
-											ExpandGroupsRecursively(row, false);
-										end
-									end
-								end
-							end
-						end
-						if app.Settings:GetTooltipSetting("Warn:Difficulty") then
-							local difficultyID = select(3, GetInstanceInfo());
-							if difficultyID and difficultyID > 0 and results.g then
-								local completed,other = true, nil;
-								for _, row in ipairs(results.g) do
-									if row.difficultyID or row.difficulties then
-										if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-											if row.total and row.progress < row.total then
-												completed = false;
-											end
-										else 
-											if row.total and row.progress < row.total then
-												other = row.text;
-											end
-										end
-									end
-								end
-								if completed and other then
-									print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
-								end
-							end
-						end
-					end
-					
-					-- Check to see completion...
-					BuildGroups(self.data, self.data.g);
-					UpdateGroups(self.data, self.data.g);
 				end
 				
-				-- If we don't have any map data on this area, report it to the chat window.
-				if not results or not results.g or #results.g < 1 then
-					local mapID = self.mapID;
-					local mapInfo = C_Map.GetMapInfo(mapID);
-					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-					mapID = mapInfo.parentMapID;
-					while mapID do
-						mapInfo = C_Map.GetMapInfo(mapID);
-						if mapInfo then
-							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
-							mapID = mapInfo.parentMapID;
+				if #holiday > 0 then
+					-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
+					local holidays, unlinked = {}, {};
+					for i=#holiday,1,-1 do
+						local group = holiday[i];
+						if group.holidayID then
+							if group.u then holidays[group.u] = group; end
+						elseif group.u then
+							local temp = unlinked[group.u];
+							if not temp then
+								temp = {};
+								unlinked[group.u] = temp;
+							end
+							table.insert(temp, group);
+							table.remove(holiday, i);
+						end
+					end
+					for u,temp in pairs(unlinked) do
+						local h = holidays[u];
+						if h then
+							for i,data in ipairs(temp) do
+								MergeObject(h.g, data);
+							end
 						else
-							break;
+							-- Attempt to scan for the main holiday header.
+							local done = false;
+							for j,o in ipairs(SearchForField("npcID", -3)) do
+								if o.g and #o.g > 5 and o.g[1].holidayID then
+									for k,group in ipairs(o.g) do
+										if group.holidayID and group.u == u then
+											MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
+											done = true;
+										end
+									end
+									break;
+								end
+							end
+							if not done then
+								for i,data in ipairs(temp) do
+									MergeObject(holiday, data);
+								end
+							end
 						end
 					end
-					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
-					print("Path: ", mapPath);
-					print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
+					
+					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
-			end
-			local function OpenMiniList(id, show)
-				-- Determine whether or not to forcibly reshow the mini list.
-				local self = app:GetWindow("CurrentInstance");
-				if not self:IsVisible() then
-					if app.Settings:GetTooltipSetting("Auto:MiniList") then
-						if not self.openedOnLogin and not show then
-							self.openedOnLogin = true;
-							show = true;
+				
+				-- Check for timewalking difficulty objects
+				for i, group in ipairs(groups) do
+					if group.difficultyID and group.difficultyID == 24 and group.g then
+						-- Look for a Common Boss Drop header.
+						local cbdIndex = -1;
+						for j, subgroup in ipairs(group.g) do
+							if subgroup.npcID and subgroup.npcID == -1 then
+								cbdIndex = j;
+								break;
+							end
 						end
+						
+						-- Push the Common Boss Drop header to the top.
+						if cbdIndex > -1 then
+							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+						end
+						
+						-- Look for a Zone Drop header.
+						cbdIndex = -1;
+						for j, subgroup in ipairs(group.g) do
+							if subgroup.npcID and subgroup.npcID == 0 then
+								cbdIndex = j;
+								break;
+							end
+						end
+						
+						-- Push the Zone Drop header to the top.
+						if cbdIndex > -1 then
+							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+						end
+					end
+				end
+				
+				-- Swap out the map data for the header.
+				results = header;
+				
+				if IsSameMap(self.data, results) then
+					ReapplyExpand(self.data.g, results.g);
+				else
+					ExpandGroupsRecursively(results, true);
+				end
+				
+				for key,value in pairs(self.data) do
+					self.data[key] = nil;
+				end
+				for key,value in pairs(results) do
+					self.data[key] = value;
+				end
+				
+				self.data.u = nil;
+				self.data.mapID = self.mapID;
+				setmetatable(self.data,
+					self.data.instanceID and app.BaseInstance
+					or self.data.classID and app.BaseCharacterClass
+					or app.BaseMap);
+				
+				-- If we have determined that we want to expand this section, then do it
+				if results.g then
+					local bottom = {};
+					local top = {};
+					for i=#results.g,1,-1 do
+						local o = results.g[i];
+						if o.difficultyID then
+							table.remove(results.g, i);
+							table.insert(bottom, 1, o);
+						elseif o.isRaid then
+							table.remove(results.g, i);
+							table.insert(top, o);
+						end
+					end
+					for i,o in ipairs(top) do
+						table.insert(results.g, 1, o);
+					end
+					for i,o in ipairs(bottom) do
+						table.insert(results.g, o);
+					end
+					
+					-- if enabled minimize rows based on difficulty 
+					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+						local difficultyID = select(3, GetInstanceInfo());
+						if difficultyID and difficultyID > 0 and results.g then
+							for _, row in ipairs(results.g) do
+								if row.difficultyID or row.difficulties then
+									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if not row.expanded then ExpandGroupsRecursively(row, true); end
+									elseif row.expanded then 
+										ExpandGroupsRecursively(row, false);
+									end
+								end
+							end
+						end
+					end
+					if app.Settings:GetTooltipSetting("Warn:Difficulty") then
+						local difficultyID = select(3, GetInstanceInfo());
+						if difficultyID and difficultyID > 0 and results.g then
+							local completed,other = true, nil;
+							for _, row in ipairs(results.g) do
+								if row.difficultyID or row.difficulties then
+									if row.difficultyID == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if row.total and row.progress < row.total then
+											completed = false;
+										end
+									else 
+										if row.total and row.progress < row.total then
+											other = row.text;
+										end
+									end
+								end
+							end
+							if completed and other then
+								print("You have collected everything from this difficulty. Switch to " .. other .. " instead.");
+							end
+						end
+					end
+				end
+				
+				-- Check to see completion...
+				BuildGroups(self.data, self.data.g);
+				UpdateGroups(self.data, self.data.g);
+			end
+			
+			-- If we don't have any map data on this area, report it to the chat window.
+			if not results or not results.g or #results.g < 1 then
+				local mapID = self.mapID;
+				local mapInfo = C_Map.GetMapInfo(mapID);
+				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+				mapID = mapInfo.parentMapID;
+				while mapID do
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+						mapID = mapInfo.parentMapID;
 					else
-						self.openedOnLogin = false;
+						break;
 					end
-					if show then self:Show(); end
-				else
-					show = true;
 				end
-				
-				-- Cache that we're in the current map ID.
-				self.mapID = id;
-				self:Update();
+				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+				print("Path: ", mapPath);
+				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
 			end
-			local function OpenMiniListForCurrentZone()
-				OpenMiniList(app.GetCurrentMapID(), true);
-			end
-			local function RefreshLocationCoroutine()
-				-- Wait for a few moments for the map to update.
-				local waitTimer = 30;
-				while waitTimer > 0 do
-					coroutine.yield();
-					waitTimer = waitTimer - 1;
-				end
-				
-				-- While the player is in combat, wait for combat to end.
-				while InCombatLockdown() do coroutine.yield(); end
-				
-				-- Acquire the new map ID.
-				local mapID = app.GetCurrentMapID();
-				while not mapID or mapID < 0 do
-					coroutine.yield();
-					mapID = app.GetCurrentMapID();
-				end
-				OpenMiniList(mapID);
-			end
-			local function RefreshLocation()
-				if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
-					StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
-				end
-			end
-			local function ToggleMiniListForCurrentZone()
-				local self = app:GetWindow("CurrentInstance");
-				if self:IsVisible() then
-					self:Hide();
-				else
-					OpenMiniListForCurrentZone();
-				end
-			end
-			app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
-			app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
-			app.RefreshLocation = RefreshLocation;
-			self:SetScript("OnEvent", function(self, e, ...)
-				RefreshLocation();
-			end);
-			self:RegisterEvent("PLAYER_LOGIN");
-			self:RegisterEvent("NEW_WMO_CHUNK");
-			self:RegisterEvent("SCENARIO_UPDATE");
-			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		end
-		
+		local function OpenMiniList(id, show)
+			-- Determine whether or not to forcibly reshow the mini list.
+			local self = app:GetWindow("CurrentInstance");
+			if not self:IsVisible() then
+				if app.Settings:GetTooltipSetting("Auto:MiniList") then
+					if not self.openedOnLogin and not show then
+						self.openedOnLogin = true;
+						show = true;
+					end
+				else
+					self.openedOnLogin = false;
+				end
+				if show then self:Show(); end
+			else
+				show = true;
+			end
+			
+			-- Cache that we're in the current map ID.
+			self.mapID = id;
+			self:Update();
+		end
+		local function OpenMiniListForCurrentZone()
+			OpenMiniList(app.GetCurrentMapID(), true);
+		end
+		local function RefreshLocationCoroutine()
+			-- Wait for a few moments for the map to update.
+			local waitTimer = 30;
+			while waitTimer > 0 do
+				coroutine.yield();
+				waitTimer = waitTimer - 1;
+			end
+			
+			-- While the player is in combat, wait for combat to end.
+			while InCombatLockdown() do coroutine.yield(); end
+			
+			-- Acquire the new map ID.
+			local mapID = app.GetCurrentMapID();
+			while not mapID or mapID < 0 do
+				coroutine.yield();
+				mapID = app.GetCurrentMapID();
+			end
+			OpenMiniList(mapID);
+		end
+		local function RefreshLocation()
+			if app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible() then
+				StartCoroutine("RefreshLocation", RefreshLocationCoroutine);
+			end
+		end
+		local function ToggleMiniListForCurrentZone()
+			local self = app:GetWindow("CurrentInstance");
+			if self:IsVisible() then
+				self:Hide();
+			else
+				OpenMiniListForCurrentZone();
+			end
+		end
+		app.OpenMiniListForCurrentZone = OpenMiniListForCurrentZone;
+		app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
+		app.RefreshLocation = RefreshLocation;
+		self:SetScript("OnEvent", function(self, e, ...)
+			RefreshLocation();
+		end);
+		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("SCENARIO_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+	end
+	if self:IsVisible() then
 		-- Update the window and all of its row data
 		if self.mapID ~= self.displayedMapID then
 			self.displayedMapID = self.mapID;
@@ -9824,8 +9823,8 @@ end):Show();
 		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		UpdateWindow(self, true, got);
-	end);
-end)();
+	end
+end);
 app:GetWindow("Harvester", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
