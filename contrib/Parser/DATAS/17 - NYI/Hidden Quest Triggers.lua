@@ -12,6 +12,7 @@ _.NeverImplemented =
 		q(54877),	-- Opening a darkshore chest
 		q(54879),	-- Opening a darkshore chest
 		q(54880),	-- Opening a darkshore chest
+		q(54881),	-- Opening a darkshore chest
 	
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
