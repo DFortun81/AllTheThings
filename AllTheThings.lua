@@ -11442,6 +11442,12 @@ SlashCmdList["AllTheThings"] = function(cmd)
 	end
 end
 
+SLASH_AllTheThingsHARVESTER1 = "/attharvest";
+SLASH_AllTheThingsHARVESTER2 = "/attharvester";
+SlashCmdList["AllTheThingsHARVESTER"] = function(cmd)
+	app:GetWindow("Harvester"):Toggle();
+end
+
 SLASH_AllTheThingsMAPS1 = "/attmaps";
 SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
