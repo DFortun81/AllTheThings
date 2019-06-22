@@ -6,6 +6,8 @@ _.NeverImplemented =
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(-9956, {	-- Quests
+		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
+	
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(37187),	-- The Dark Portal

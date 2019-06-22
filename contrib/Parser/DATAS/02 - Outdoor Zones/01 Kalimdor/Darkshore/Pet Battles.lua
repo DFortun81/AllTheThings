@@ -24,6 +24,7 @@ _.Zones =
 					["crs"] = { 61081 },	-- Squirrel
 				}),
 				n(63083, {	-- Will Larsons
+					["coord"] = { 50.1, 20.2, 62 },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
@@ -48,21 +49,25 @@ _.Zones =
 				}),
 				q(31569, {	-- Got one!
 					["qg"] = 63083,	-- Will Larsons
+					["coord"] = { 50.1, 20.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31832,	-- Level Up!
 				}),
 				q(31582, {	-- Learning the Ropes
 					["qg"] = 63083,	-- Will Larsons
+					["coord"] = { 50.1, 20.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31832, {	-- Level Up!
 					["qg"] = 63083,	-- Will Larsons
+					["coord"] = { 50.1, 20.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31583,	-- On The Mend
 				}),
 				q(31583, {	-- On The Mend
 					["qg"] = 63083,	-- Will Larsons
+					["coord"] = { 50.1, 20.2, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31582,	-- Learning the Ropes
 				}),

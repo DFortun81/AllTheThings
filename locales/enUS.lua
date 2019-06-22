@@ -3107,6 +3107,7 @@ AllTheThings.L = {
 		[294317] = "Deadwood Chest",
 		[294319] = "Sandsunken Treasure",
 		[294703] = "Grimmy's Rusty Lockbox",
+		[296536] = "Bloodied Sentinel's Glaive",
 		[297825] = "Web-Covered Chest",
 		[297828] = "Merchant's Chest",
 		[297878] = "Hexed Chest",
