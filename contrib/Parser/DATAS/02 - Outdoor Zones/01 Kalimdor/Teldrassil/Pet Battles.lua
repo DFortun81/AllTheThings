@@ -25,6 +25,7 @@ _.Zones =
 					["crs"] = { 61071 },	-- Small Frog
 				}),
 				n(63070, {	-- Valeena
+					["coord"] = { 55.2, 51.2, 57 },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
