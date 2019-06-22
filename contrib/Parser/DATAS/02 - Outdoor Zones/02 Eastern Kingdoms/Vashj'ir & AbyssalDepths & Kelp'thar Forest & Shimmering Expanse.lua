@@ -917,6 +917,7 @@ _.Zones =
 								["g"] = {
 									i(59746),	-- 
 									i(59744),	-- 
+									i(59745),	-- Dusky Pearl Ring
 								},
 							}),
 							qh(25992, {	-- Hopelessly Gearless
