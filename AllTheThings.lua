@@ -9893,100 +9893,102 @@ end):Show();
 	end);
 end)();
 app:GetWindow("SourceFinder", UIParent, function(self)
-	if not self.initialized then
-		self.initialized = true;
-		local db = {};
-		db.g = {
-			{
-				['text'] = "Update Now",
-				['icon'] = "Interface\\Icons\\ability_monk_roll",
-				["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
-				['visible'] = true,
-				['fails'] = 0,
-				['OnClick'] = function(row, button)
-					self:Update(true);
-					return true;
-				end,
-				['OnUpdate'] = function(data)
-					data.visible = true;
-				end,
-			},
-		};
-		db.OnUpdate = function(db)
-			if self:IsVisible() then
-				local iCache = fieldCache["itemID"];
-				local sCache = fieldCache["s"];
-				for s=1,103000 do
-					if not sCache[s] then
-						local t = app.CreateGearSource(s);
-						if t.info then
-							t.fails = 0;
-							t.OnUpdate = function(source)
-								local text = source.text;
-								if text and text ~= RETRIEVING_DATA then
-									source.OnUpdate = function(source)
-										local itemID = source.itemID;
-										if itemID then
-											local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
-											itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, 
-											isCraftingReagent = GetItemInfo(itemID);
-											if itemRarity and itemRarity < 2 then
-												source.fails = source.fails + 1;
-												self.shouldFullRefresh = true;
-											else
-												local searchResults = iCache[itemID];
-												if searchResults and #searchResults > 0 then
-													if not searchResults[1].collectible then
-														source.fails = source.fails + 1;
-														self.shouldFullRefresh = true;
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {
+				{
+					['text'] = "Update Now",
+					['icon'] = "Interface\\Icons\\ability_monk_roll",
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
+					['visible'] = true,
+					['fails'] = 0,
+					['OnClick'] = function(row, button)
+						self:Update(true);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+					end,
+				},
+			};
+			db.OnUpdate = function(db)
+				if self:IsVisible() then
+					local iCache = fieldCache["itemID"];
+					local sCache = fieldCache["s"];
+					for s=1,103000 do
+						if not sCache[s] then
+							local t = app.CreateGearSource(s);
+							if t.info then
+								t.fails = 0;
+								t.OnUpdate = function(source)
+									local text = source.text;
+									if text and text ~= RETRIEVING_DATA then
+										source.OnUpdate = function(source)
+											local itemID = source.itemID;
+											if itemID then
+												local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+												itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, 
+												isCraftingReagent = GetItemInfo(itemID);
+												if itemRarity and itemRarity < 2 then
+													source.fails = source.fails + 1;
+													self.shouldFullRefresh = true;
+												else
+													local searchResults = iCache[itemID];
+													if searchResults and #searchResults > 0 then
+														if not searchResults[1].collectible then
+															source.fails = source.fails + 1;
+															self.shouldFullRefresh = true;
+														end
 													end
 												end
+											else
+												source.fails = source.fails + 1;
 											end
-										else
-											source.fails = source.fails + 1;
-										end
-									end;
-								else
-									source.fails = source.fails + 1;
-									self.shouldFullRefresh = true;
+										end;
+									else
+										source.fails = source.fails + 1;
+										self.shouldFullRefresh = true;
+									end
 								end
+								tinsert(db.g, t);
 							end
-							tinsert(db.g, t);
 						end
 					end
+					db.OnUpdate = function(self)
+						local g = self.g;
+						if g then
+							local count = #g;
+							if count > 0 then
+								for i=count,1,-1 do
+									if g[i].fails > 2 then
+										table.remove(g, i);
+									end
+								end
+							end
+						end
+					end;
+					
 				end
-				db.OnUpdate = function(self)
-					local g = self.g;
-					if g then
-						local count = #g;
-						if count > 0 then
-							for i=count,1,-1 do
-								if g[i].fails > 2 then
-									table.remove(g, i);
-								end
-							end
-						end
-					end
-				end;
-				
 			end
+			db.text = "Source Finder";
+			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			self.data = db;
 		end
-		db.text = "Source Finder";
-		db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp";
-		db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
-		db.visible = true;
-		db.expanded = true;
-		db.progress = 0;
-		db.total = 0;
-		db.back = 1;
-		self.data = db;
+		self.data.progress = 0;
+		self.data.total = 0;
+		BuildGroups(self.data, self.data.g);
+		UpdateGroups(self.data, self.data.g);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		UpdateWindow(self, true);
 	end
-	self.data.progress = 0;
-	self.data.total = 0;
-	BuildGroups(self.data, self.data.g);
-	UpdateGroups(self.data, self.data.g);
-	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	UpdateWindow(self, true);
 end);
 app:GetWindow("RaidAssistant", UIParent, function(self)
 	if not self.initialized then
