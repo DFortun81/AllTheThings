@@ -6,8 +6,60 @@ Now parsing PVP
 Now parsing Craftables
 Now parsing Professions
 Now parsing Mounts
+No significant object type found for {"c":[6]}
+No significant object type found for {"c":[8]}
+No significant object type found for {"races":[1,3],"c":[2]}
+No significant object type found for {"c":[9]}
+No significant object type found for {"c":[2],"races":[11]}
+No significant object type found for {"c":[12]}
+No significant object type found for {"c":[9]}
+No significant object type found for {"c":[2],"races":[11]}
+No significant object type found for {"c":[2],"races":[6]}
+No significant object type found for {"c":[9]}
+No significant object type found for {"c":[12]}
+No significant object type found for {"c":[2],"races":[6]}
+No significant object type found for {"c":[2],"races":[10]}
+No significant object type found for {"c":[2],"races":[10]}
+No significant object type found for {"c":[2]}
 Now parsing NeverImplemented
 Now parsing Factions
 Now parsing Holidays
 Now parsing Unsorted
+[c, True]
+[f, True]
+[qgs, True]
+[lvl, True]
+[description, True]
+[maps, True]
+[isRaid, True]
+[crs, True]
+[requireSkill, True]
+[encounterID, True]
+[achID, True]
+[instanceID, True]
+[mapID, True]
+[coords, True]
+[sourceQuests, True]
+[r, True]
+[repeatable, True]
+[icon, True]
+[classID, True]
+[title, True]
+[isBreadcrumb, True]
+[model, True]
+[modelScale, True]
+[modelID, True]
+[races, True]
+[hideText, True]
+[displayID, True]
+[modelRotation, True]
+[currencyID, True]
+[isDaily, True]
+[ignoreBonus, True]
+[isWeekly, True]
+[professionID, True]
+[ignoreSource, True]
+[minReputation, True]
+[maxReputation, True]
+[holidayID, True]
 OKAY COOL WE DID IT.

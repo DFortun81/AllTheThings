@@ -65,7 +65,8 @@ namespace ATT
             }
 
             // Iterate over the data dictionary.
-            foreach(var pair in data)
+            ATT.Export.Initialize();
+            foreach (var pair in data.ToList())
             {
                 switch (pair.Key)
                 {
@@ -94,6 +95,7 @@ namespace ATT
                     case "PetJournal":
                     case "Toys":
                     default:
+                        data.Remove(pair.Key);
                         continue;
                 }
 
@@ -108,8 +110,17 @@ namespace ATT
             //File.WriteAllText("output.json", MiniJSON.Json.Serialize(data));
             File.WriteAllText("output.json", Newtonsoft.Json.JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented));
 
+            // Convert the categories into an less generic type.
+            var lessGenericCategories = new Dictionary<string, List<object>>();
+            foreach(var pair in data) lessGenericCategories[pair.Key] = pair.Value as List<object>;
+            File.WriteAllText("categories.lua", ATT.Export.ExportCompressedLuaCategories(lessGenericCategories).ToString());
+
+            foreach(var field in ALL_FIELDS)
+            {
+                Trace.WriteLine(field);
+            }
+
             Trace.WriteLine("OKAY COOL WE DID IT.");
-            Console.ReadLine();
         }
 
         /// <summary>
@@ -143,8 +154,15 @@ namespace ATT
             var type = o.GetType();
             if (type == typeof(Dictionary<string, object>)) return Simplify(list, o as Dictionary<string, object>);
             else if (type == typeof(List<object>)) return Simplify(o as List<object>);
+            else
+            {
+                Trace.Write("NANI?! ");
+                Trace.WriteLine(o);
+            }
             return true;
         }
+
+        private static Dictionary<string, bool> ALL_FIELDS = new Dictionary<string, bool>();
 
         /// <summary>
         /// Simplifies an object and removes elements that are invalid within the environment.
@@ -155,18 +173,71 @@ namespace ATT
         static bool Simplify(List<object> list, Dictionary<string, object> o)
         {
             // Check for sub groups.
-            if (o.TryGetValue("g", out List<object> groups)) Simplify(groups);
+            if (o.TryGetValue("g", out List<object> groups))
+            {
+                Simplify(groups);
+                if (!groups.Any())
+                {
+                    o.Remove("g");
+                    groups = null;
+                }
+            }
 
-            // Remove from unused fields.
-            o.Remove("ilvl");   // iLvl
-            o.Remove("s");      // sourceID
-            o.Remove("modID");  // modID
-            o.Remove("bonusID");    // bonusID
+            // Remove from unused non-Object ID fields.
+            o.Remove("ilvl");
+            o.Remove("s");
+            o.Remove("b");
+            o.Remove("u");
+            o.Remove("q");
+            o.Remove("isWQ");
+            o.Remove("sym");
+            o.Remove("modID");
+            o.Remove("bonusID");
+            o.Remove("altQuestID");
+            o.Remove("altAchID");
+            o.Remove("hordeAchievementID");
+            o.Remove("hordeQuestID");
+            o.Remove("mountID");
+            o.Remove("collectible");
+            o.Remove("style");
+            o.Remove("isToy");
+            o.Remove("isLockoutShared");
 
-            foreach (var pair in o)
+            // If we have a recipe linked, clean it up and strip it out.
+            if (o.TryGetValue("recipeID", out int recipeID))
+            {
+                o["spellID"] = recipeID;
+                o.Remove("recipeID");
+            }
+
+            foreach (var pair in o.ToList())
             {
                 switch (pair.Key)
                 {
+                    case "achID":
+                        // We used to do dumb things in the beginning, like attaching achievementIDs as headers.
+                        break;
+
+                    case "artifactID":
+                    case "buildingID":
+                    case "categoryID":
+                    case "criteriaID":
+                    case "difficultyID":
+                    case "flightPathID":
+                    case "followerID":
+                    case "heirloomID":
+                    case "illusionID":
+                    case "missionID":
+                    case "setID":
+                    case "setHeaderID":
+                    case "setSubHeaderID":
+                    case "speciesID":
+                    case "titleID":
+                    case "vignetteID":
+                        // If this is Classic, then move it up one level.
+                        if (groups != null) list.AddRange(groups);
+                        return false;
+
                     case "tierID":
                         // If this is Classic, then move it up one level.
                         if (Convert.ToInt32(pair.Value) == 1)
@@ -185,19 +256,78 @@ namespace ATT
                             // Throw away all the data.
                             return false;
                         }
-                        continue;
 
+                        // Items may have changed level or object types between classic and now.
+                        o.Remove("lvl");
+                        o.Remove("f");
+                        continue;
+                        
                     case "npcID":
-                        var npdID = Convert.ToInt32(pair.Value);
-                        if (npdID > 18199 || (npdID < 1 && (groups == null || !groups.Any())))
+                    case "creatureID":
+                        {
+                            var npcID = Convert.ToInt32(pair.Value);
+                            if (npcID > 18199 || groups == null || !groups.Any())
+                            {
+                                // Throw away all the data.
+                                return false;
+                            }
+
+                            // If this field is by itself, remove everything.
+                            if (o.Keys.Count < 2)
+                            {
+                                // Throw away all the data.
+                                return false;
+                            }
+                            continue;
+                        }
+                    case "crs":
+                    case "qgs":
+                        {
+                            var crs = pair.Value as List<object>;
+                            int count = crs.Count;
+                            for (int i = 0;i < count; ++i)
+                            {
+                                var npcID = Convert.ToInt32(crs[i]);
+                                if (npcID > 18199)
+                                {
+                                    crs.RemoveAt(i);
+                                    --count;
+                                    --i;
+                                }
+                            }
+                            if(count < 1) o.Remove(pair.Key);
+                            break;
+                        }
+                    case "qg":
+                        {
+                            var npcID = Convert.ToInt32(pair.Value);
+                            if (npcID > 18199) o.Remove(pair.Key);
+                            break;
+                        }
+
+                    case "objectID":
+                        if (Convert.ToInt32(pair.Value) > 211084)
+                        {
+                            // Throw away all the data.
+                            return false;
+                        }
+
+                        // If this field is by itself, remove everything.
+                        if (o.Keys.Count < 2)
                         {
                             // Throw away all the data.
                             return false;
                         }
                         continue;
-
-                    case "objectID":
-                        if (Convert.ToInt32(pair.Value) > 211084)
+                    case "questID":
+                        if (Convert.ToInt32(pair.Value) > 9665)
+                        {
+                            // Throw away all the data.
+                            return false;
+                        }
+                        continue;
+                    case "spellID":
+                        if (Convert.ToInt32(pair.Value) > 31885)
                         {
                             // Throw away all the data.
                             return false;
@@ -212,17 +342,57 @@ namespace ATT
                         }
                         continue;
 
+                    case "f":
+                    case "mapID":
+                    case "classID":
+                    case "holidayID":
+                    case "encounterID":
+                    case "instanceID":
+                        {
+                            // If this field is by itself, remove everything.
+                            if(o.Keys.Count < 2)
+                            {
+                                // Throw away all the data.
+                                return false;
+                            }
+                            break;
+                        }
+
                     // IGNORE THESE FIELDS
                     case "g":
                         continue;
                 }
-                /*
-                Trace.Write(pair.Key);
-                Trace.Write(": ");
-                Trace.WriteLine(pair.Value);
-                */
+                ALL_FIELDS[pair.Key] = true;
             }
-            return true;
+
+            // If this field is by itself, remove everything.
+            if (!o.Keys.Any())
+            {
+                // Throw away all the data.
+                return false;
+            }
+
+            // If this object still has a most-signficant object type, we're good.
+            if (ATT.Export.ObjectData.TryGetMostSignificantObjectType(o, out Export.ObjectData objectData))
+            {
+                // If the most signficant ID is the achID, remove the whole object.
+                if(objectData.ObjectType == "achID")
+                {
+                    // Throw away all the data.
+                    return false;
+                }
+                else
+                {
+                    // Else make sure to just remove the achID.
+                    o.Remove("achID");
+                }
+                return true;
+            }
+
+            // Report this field.
+            Trace.Write("No significant object type found for ");
+            Trace.WriteLine(MiniJSON.Json.Serialize(o));
+            return false;
         }
     }
 }

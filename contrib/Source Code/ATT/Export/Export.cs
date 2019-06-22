@@ -61,6 +61,14 @@ namespace ATT
         }
 
         /// <summary>
+        /// Initialize this class.
+        /// </summary>
+        public static void Initialize()
+        {
+            // Do nothing.
+        }
+
+        /// <summary>
         /// Export the Source Database Module for the Categories.
         /// </summary>
         /// <param name="builder">The builder.</param>
