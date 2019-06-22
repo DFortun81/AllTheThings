@@ -106,6 +106,7 @@ _.Zones =
 			q(28579),	-- Hero's Call: Badlands!
 			q(28673),	-- Hero's Call: Blasted Lands!
 			q(39199),	-- Hero's Call: Blade's Edge Mountains!
+			q(28559),	-- Hero's Call: Bloodmyst Isle
 			q(28709),	-- Hero's Call: Borean Tundra!
 			q(28666),	-- Hero's Call: Burning Steppes!
 			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)

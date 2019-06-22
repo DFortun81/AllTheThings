@@ -284,6 +284,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 				}),
+				q(9671, {	-- The Bloodcurse Legacy
+					["qg"] = 17240,	-- Admiral Odesyus
+					["coord"] = { 47.0, 70.2, 97 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 9671,	-- Urgent Delivery
+				}),
 				q(9454, {	-- The Great Moongraze Hunt
 					["qg"] = 17110,	-- Acteon
 					["coord"] = { 49.8, 51.9, 97 },

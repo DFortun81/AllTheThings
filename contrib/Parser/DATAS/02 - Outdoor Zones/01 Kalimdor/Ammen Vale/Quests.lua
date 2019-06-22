@@ -105,13 +105,7 @@ _.Zones =
 				q(9369, {	-- Replenishing the Healing Crystals
 					["qg"] = 16477,	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
-					["races"] = {
-						1,	-- Human
-						4,	-- Night Elf
-						7,	-- Gnome
-						22,	-- Worgen
-						25,	-- Pandaren
-					},
+					["races"] = exclude({ 11 }, ALLIANCE_ONLY),	-- all other races except draenei
 				}),
 				q(9283, {	-- Rescue the Survivors!
 					["qg"] = 16502,	-- Zalduun
