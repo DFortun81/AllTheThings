@@ -8,6 +8,11 @@ _.NeverImplemented =
 	n(-9956, {	-- Quests
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 	
+		q(54872),	-- Opening a darkshore chest
+		q(54877),	-- Opening a darkshore chest
+		q(54879),	-- Opening a darkshore chest
+		q(54880),	-- Opening a darkshore chest
+	
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(37187),	-- The Dark Portal
