@@ -9,25 +9,22 @@ _.Zones =
 				ach(12429, {	-- Wetlands Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						{	-- Criteria 1 — Slabchisel Survey
-							["criteriaID"] = 1,	-- Slabchisel Survey
+						crit(1, {	-- Slabchisel Survey
 							["sourceQuests"] = {
 								25734,	-- Down in Thelgen Rock
 								25733,	-- Get Out of Here, Stalkers
 								25735,	-- Incendicite Ore
 							},
-						},
-						{	-- Criteria 2 — The Flooding of Menethil
-							["criteriaID"] = 2,	-- The Flooding of Menethil
+						}),
+						crit(2, {	-- The Flooding of Menethil
 							["sourceQuests"] = {
 								25780,	-- Assault on Menethil Keep (definitely required)
 							--	25801,	-- Claws from the Deep (probably required)
 							--	25805,	-- Return the Statuette (probably required)
 								25819,	-- The Eye of Paleth (definitely required)
 							},
-						},
-						{	-- Criteria 3 — Engineers and Archaeologists
-							["criteriaID"] = 3,	-- Engineers and Archaeologists
+						}),
+						crit(3, {	-- Engineers and Archaeologists
 							["sourceQuests"] = { 
 								26189,	-- The Angerfang Menace
 								25868,	-- Yorla Darksnare
@@ -38,11 +35,10 @@ _.Zones =
 								25853,	-- Tooling Around
 						--]]
 							},
-						},
-						{	-- Criteria 4 — Wardens of the Wetlands
-							["criteriaID"] = 4,	-- Wardens of the Wetlands
+						}),
+						crit(4, {	-- Wardens of the Wetlands
 							["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
-						},
+						}),
 					},
 				}),
 			}),
