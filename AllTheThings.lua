@@ -11454,6 +11454,7 @@ SlashCmdList["AllTheThingsMINI"] = function(cmd)
 end
 
 SLASH_AllTheThingsRA1 = "/attra";
+SLASH_AllTheThingsRA2 = "/attraid";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
 end
