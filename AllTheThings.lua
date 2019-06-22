@@ -11448,6 +11448,12 @@ SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
+SLASH_AllTheThingsMINI1 = "/attmini";
+SLASH_AllTheThingsMINI2 = "/attminilist";
+SlashCmdList["AllTheThingsMINI"] = function(cmd)
+	app:ToggleMiniListForCurrentZone();
+end
+
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
