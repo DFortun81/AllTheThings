@@ -12,8 +12,11 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 		["g"] = {	
 			n(-17, { 	-- Quests
-				qa(55022, {	-- Solving the mystery
-					i(166724),	-- Bruce (MOUNT!)
+				q(55022, {	-- Solving the mystery
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(166724),	-- Bruce (MOUNT!)
+					},
 				}),
 			}),
 			n(-2, {	-- Vendors

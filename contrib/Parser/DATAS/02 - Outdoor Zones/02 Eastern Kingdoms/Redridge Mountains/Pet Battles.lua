@@ -24,17 +24,24 @@ _.Zones =
 				p(424, {	-- Roach
 					["crs"] = { 61169 },	-- Roach
 				}),
+				q(3861, {	-- CLUCK!
+					["qg"] = 620,	-- Chicken
+					["description"] = "Target any chicken, then use |cFFFFD700/chicken|r repeatedly until the quest becomes available.",
+					["repeatable"] = true,
+				}),
 				q(31726, {	-- Eric Davidson
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 65651,	-- Lindsay
+					["coord"] = { 33.2, 52.5, 49 },
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31781, {	-- Lindsay
-					["isDaily"] = true,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 65651,	-- Lindsay
+					["coord"] = { 33.2, 52.5, 49 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
 				}),
 			}),
 		}),

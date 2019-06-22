@@ -250,7 +250,9 @@ _.ExpansionFeatures =
 					q(41785),	-- Finding Fizzlebang
 					q(46784),	-- Further Advancement
 					q(46150),	-- Furthering Knowledge
-					qh(44254),	-- Gazing Into Oblivion
+					q(44254, {	-- Gazing Into Oblivion
+						["races"] = HORDE_ONLY,
+					}),
 					q(46240),	-- Give Me Fuel, Give Me Fire
 					q(46238),	-- If You Build It
 					q(45794),	-- Informing the Council
@@ -280,7 +282,9 @@ _.ExpansionFeatures =
 					q(46242),	-- The Dreadlord's Calling
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
-					qa(46241),	-- The Minions of Hel'nurath
+					q(46241, {	-- The Minions of Hel'nurath
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(40712),	-- The Power Possessed

@@ -14,50 +14,104 @@ _.PVP =
 			["g"] = {
 				n(-228, {	-- Flight Points
 					fp(303, {	-- Valiance Landing Camp, Wintergrasp
-						["coord"] = { 72, 31 },
+						["coord"] = { 72.0, 31.0, 123 },
 					}),
 					fp(332, {	-- Warsong Camp, Wintergrasp
-						["coord"] = { 21.6, 34.8 },
+						["coord"] = { 21.6, 34.8, 123 },
 					}),
 				}),
-				{	-- Quests
-					["npcID"] = -17,	-- Quests
+				n(-17, {	-- Quests
 					["g"] = bubbleDown({["isWeekly"] = true}, {
-						qa(13156),	-- A Rare Herb
-						qa(13195),	-- A Rare Herb
-						qh(13193),	-- Bones and Arrows
-						qh(13199),	-- Bones and Arrows
-						qa(13196),	-- Bones and Arrows
-						qa(13154),	-- Bones and Arrows
-						qa(13222),	-- Defend the Siege
-						qh(13223),	-- Defend the Siege
-						qa(13197),	-- Fueling the Demolishers
-						qh(13191),	-- Fueling the Demolishers
-						qh(13200),	-- Fueling the Demolishers
-						qh(13194),	-- Healing with Roses
-						qh(13201),	-- Healing with Roses
-						qh(13202),	-- Jinxing the Walls
-						qa(13179),	-- No Mercy for the Merciless
-						qa(13177),	-- No Mercy for the Merciless
-						qh(13178),	-- Slay them all!
-						qh(13180),	-- Slay them all!
-						qa(13538),	-- Southern Sabotage
-						qa(13186),	-- Stop the Siege
-						qh(13185),	-- Stop the Siege
-						qh(13539),	-- Toppling the Towers
-						qa(13181),	-- Victory in Wintergrasp
-						qh(13183),	-- Victory in Wintergrasp
-						qh(13192),	-- Warding the Walls
-						qa(13198),	-- Warding the Warriors
-						qa(13153),	-- Warding the Warriors
+						q(13156, {	-- A Rare Herb
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13195, {	-- A Rare Herb
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13193, {	-- Bones and Arrows
+							["races"] = HORDE_ONLY,
+						}),
+						q(13199, {	-- Bones and Arrows
+							["races"] = HORDE_ONLY,
+						}),
+						q(13196, {	-- Bones and Arrows
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13154, {	-- Bones and Arrows
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13222, {	-- Defend the Siege
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13223, {	-- Defend the Siege
+							["races"] = HORDE_ONLY,
+						}),
+						q(13197, {	-- Fueling the Demolishers
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13191, {	-- Fueling the Demolishers
+							["races"] = HORDE_ONLY,
+						}),
+						q(13200, {	-- Fueling the Demolishers
+							["races"] = HORDE_ONLY,
+						}),
+						q(13194, {	-- Healing with Roses
+							["races"] = HORDE_ONLY,
+						}),
+						q(13201, {	-- Healing with Roses
+							["races"] = HORDE_ONLY,
+						}),
+						q(13202, {	-- Jinxing the Walls
+							["races"] = HORDE_ONLY,
+						}),
+						q(13179, {	-- No Mercy for the Merciless
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13177, {	-- No Mercy for the Merciless
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13178, {	-- Slay them all!
+							["races"] = HORDE_ONLY,
+						}),
+						q(13180, {	-- Slay them all!
+							["races"] = HORDE_ONLY,
+						}),
+						q(13538, {	-- Southern Sabotage
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13186, {	-- Stop the Siege
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13185, {	-- Stop the Siege
+							["races"] = HORDE_ONLY,
+						}),
+						q(13539, {	-- Toppling the Towers
+							["races"] = HORDE_ONLY,
+						}),
+						q(13181, {	-- Victory in Wintergrasp
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13183, {	-- Victory in Wintergrasp
+							["races"] = HORDE_ONLY,
+						}),
+						q(13192, {	-- Warding the Walls
+							["races"] = HORDE_ONLY,
+						}),
+						q(13198, {	-- Warding the Warriors
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(13153, {	-- Warding the Warriors
+							["races"] = ALLIANCE_ONLY,
+						}),
 					}),
-				},
+				}),
 				n(-2,   {	-- Vendors
 					["description"] = "|cff66ccffThese vendors will only show if your faction controls Wintergrasp.|r",
 					["g"] = {
-						nh(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
+						n(39173, {	-- Champion Ros'slai <Wintergrasp Quartermaster>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.8, 17.4, 123 },
+							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(48974),	-- Titan-Forged Armwraps of Dominance
 								i(48975),	-- Titan-Forged Armwraps of Salvation
@@ -131,9 +185,10 @@ _.PVP =
 								i(44089),	-- Trenchant Earthshatter Diamond
 							},
 						}),
-						na(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
+						n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.6, 17.6, 123 },
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(43956, {	-- Reins of the Black War Mammoth
 									ach(2080),		-- Black War Mammoth
@@ -197,9 +252,10 @@ _.PVP =
 								i(122339),	-- Ancient Heirloom Scabbard
 							},
 						}),
-						na(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
+						n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.6, 17.6, 123 },
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(48974),	-- Titan-Forged Armwraps of Dominance
 								i(48975),	-- Titan-Forged Armwraps of Salvation
@@ -235,9 +291,10 @@ _.PVP =
 								i(48982),	-- Titan-Forged Wristguards of Triumph
 							},
 						}),
-						na(30489, {	-- Morgan Day <Jewelcrafter>
+						n(30489, {	-- Morgan Day <Jewelcrafter>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.8, 17.6, 123 },
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(41742),	-- Design: Enigmatic Skyflare Diamond
 								i(41743),	-- Design: Forlorn Skyflare Diamond
@@ -270,9 +327,10 @@ _.PVP =
 								i(44089),	-- Trenchant Earthshatter Diamond
 							},
 						}),
-						nh(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
+						n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 51.6, 17.6, 123 },
+							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(44077, {	-- Reins of the Black War Mammoth
 									ach(2080),		-- Black War Mammoth

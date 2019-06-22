@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				734,	-- Hall of the Guardian (Mage)
 				735,	-- Hall of the Guardian (Mage) (2nd Floor)
 			},
-			["groups"] = {
+			["g"] = {
 				spell(118, {	-- Polymorph
 					["classes"] = { 8 },
 					["lvl"] = 110,
@@ -22,7 +22,7 @@ _.ExpansionFeatures =
 						641,	-- Val'Sharah
 						37,		-- Elwynn Forest
 					},
-					["groups"] = {
+					["g"] = {
 						n(89386, {	-- Cliffwing Hippogryph [Azsuna]
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
 							["questID"] = 43787,
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 							["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
 							["sourceQuests"] = { 43800 },	-- Extremely Volatile Stormheim Sheep
 							["questID"] = 43658,	-- Done!
-							["groups"] = {
+							["g"] = {
 								i(139558, {	-- The Woolomancer's Charge
 									artifact(846),	-- Arcane Mage Hidden Appearance
 								}),
@@ -99,7 +99,7 @@ _.ExpansionFeatures =
 						680,	-- Suramar
 						641,	-- Val'Sharah
 					},
-					["groups"] = {
+					["g"] = {
 						n(-159, {	-- Daily Event Roll
 							["isDaily"] = true,
 							["isBreadcrumb"] = true,
@@ -110,7 +110,7 @@ _.ExpansionFeatures =
 						n(113513, {	-- Asher <Fury of Frostfire>
 							["description"] = "If this quest has a checkmark next to it, then that means the scenario portal is active. He only appears in a special phase in Frostfire Ridge upon taking the portal.",
 							["sourceQuests"] = { 44384 },	-- Daily Portal Event Roll
-							["groups"] = {
+							["g"] = {
 								i(139560, {	-- Everburning Crystal
 									artifact(180),	-- Frost Mage Hidden Appearance
 								}),
@@ -142,13 +142,17 @@ _.ExpansionFeatures =
 					q(42418),	-- An Unexpected Visitor
 					q(45437),	-- An Urgent Situation
 					q(45997),	-- An Urgent Warning
-					qa(42433),	-- Ancient Magic
+					q(42433, {	-- Ancient Magic
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(42126),	-- Archmage Omniara
 					q(42956, {	-- Ari's Package
 						i(141880),	-- Ari's Wooden Ring
 					}),
 					q(46000),	-- Arming Dalaran
-					qa(45844),	-- Avocation of Antonidas
+					q(45844, {	-- Avocation of Antonidas
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(44766),	-- Backup Plan
 					q(42127),	-- Building Our Troops
 					q(45845),	-- Burning Within
@@ -200,7 +204,9 @@ _.ExpansionFeatures =
 					q(43509),	-- Odyn's Challenge
 					q(44269),	-- Odyn's Challenge
 					q(44268),	-- Odyn's Challenge
-					qa(44240),	-- Orange is the New Purple
+					q(44240, {	-- Orange is the New Purple
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(44207),	-- Portal Full of Shiny Things
 					q(44098),	-- Recruiting Apprentices
 					q(45251),	-- Redundancy
@@ -212,7 +218,9 @@ _.ExpansionFeatures =
 					q(42703),	-- Technical Wizardry
 					q(44263),	-- The Arcway
 					q(41114),	-- The Champion's Return
-					qa(42416),	-- The Council is in Session
+					q(42416, {	-- The Council is in Session
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(42476),	-- The Deadwind Site
 					q(41036),	-- The Dreadlord's Prize
 					q(41112),	-- The Great Akazamzarak							
@@ -244,7 +252,7 @@ _.ExpansionFeatures =
 					q(45354, {	-- Dispersion of the Discs
 						["lvl"] = 110,
 						["classes"] = {8},
-						["groups"] = {
+						["g"] = {
 							{ ["mountID"] = 229376 },	-- Archmage's Prismatic Discs
 						},
 					}),
@@ -265,68 +273,68 @@ _.ExpansionFeatures =
 					--Followers Sort Later
 					q(46043, {	-- Champion: Aethas Sunreaver
 						["qg"] = 117497,	-- Aethas Sunreaver
-						["groups"] = {
+						["g"] = {
 							follower(994),	-- Aethas Sunreaver
 						},
 					}),
 					q(42704, {	-- Champion: Arcane Destroyer
 						["qg"] = 108368,	-- Arcane Destroyer
-						["groups"] = {
+						["g"] = {
 							follower(724),	-- Arcane Destroyer
 						},
 					}),
 					q(42662, {	-- Champion: Archmage Kalec
 						["qg"] = 108247,	-- Archmage Kalec <Kirin Tor>
-						["groups"] = {
+						["g"] = {
 							follower(716),	-- Archmage Kalec
 						},
 					}),
 					q(42685, {	-- Champion: Archmage Modera
 						["qg"] = 108248,	-- Archmage Modera <Kirin Tor>
-						["groups"] = {
+						["g"] = {
 							follower(717),	-- Archmage Modera
 						},
 					}),
 					q(42917, {	-- Champion: Archmage Vargoth
 						["qg"] = 109226,	-- Archmage Vargoth <Kirin Tor>
-						["groups"] = {
+						["g"] = {
 							follower(762),	-- Archmage Vargoth
 						},
 					}),
 					q(42706, {	-- Champion: Esara Verrinde
 						["qg"] = 108380,	-- Esara Verrinde <Magisters>
-						["groups"] = {
+						["g"] = {
 							follower(726),	-- Esara Verrinde
 						},
 					}),
 					q(42914, {	-- Champion: Meryl Felstorm
 						["qg"] = 109222,	-- Meryl Felstorm
-						["groups"] = {
+						["g"] = {
 							follower(761),	-- Meryl Felstorm
 						},
 					}),
 					q(42702, {	-- Champion: Millhouse Manastorm
 						["qg"] = 108342,	-- Millhouse Manastorm
-						["groups"] = {
+						["g"] = {
 							follower(723),	-- Millhouse Manastorm
 						},
 					}),
 					q(42705, {	-- Champion: Ravandwyr
 						["qg"] = 108377,	-- Ravandwyr <Senior Kirin Tor Apprentice>
-						["groups"] = {
+						["g"] = {
 							follower(725),	-- Ravandwyr
 						},
 					}),
 					q(46724, {	-- Champion: The Great Akazamzarak
 						--["qg"] = ,			-- Can't find QG
-						["groups"] = {
+						["g"] = {
 							follower(995),	-- The Great Akazamzarak
 						},
 					}),
 				}),
 				--[[
 				n(98695, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
@@ -338,7 +346,7 @@ _.ExpansionFeatures =
 						i(140550),	-- Archmage's Battle Staff
 						{
 							["itemID"] = 139749,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -347,7 +355,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139752,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -356,7 +364,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139751,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -365,7 +373,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139754,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -374,7 +382,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139748,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -383,7 +391,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139753,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -392,7 +400,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139750,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -401,7 +409,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139747,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
@@ -420,7 +428,7 @@ _.ExpansionFeatures =
 						["classes"] = {8},
 						["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign.",
 						["sourceQuest"] = 45354,	-- Dispersion of the Discs
-						["groups"] = {
+						["g"] = {
 							currency(1220, {	-- Order Resources
 								i(147832),	-- Magical Saucer Toy
 							}),

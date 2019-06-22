@@ -17,14 +17,18 @@ _.PVP =
 			un(2, i(138996, {	-- High Warlord's Medal of Valor
 				["questID"] = 42985,	-- A Royal Audience [Horde]
 			})),
-			un(2, qa(42982, {	-- The Victor's Spoils [Alliance]
+			q(42982, {	-- The Victor's Spoils [Alliance]
+				["u"] = 40,
 				["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
+				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
-			})),
-			un(2, qh(42987, {	-- The Victor's Spoils [Horde]
+			}),
+			q(42987, {	-- The Victor's Spoils [Horde]
+				["u"] = 40,
 				["qg"] = 109471,	-- Lady Sylvanas Windrunner <Warchief>
+				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 42985,	-- A Royal Audience [Horde]
-			})),
+			}),
 			{
 				["allianceAchievementID"] = 10749,	-- -- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]

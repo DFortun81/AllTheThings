@@ -100,10 +100,14 @@ _.ExpansionFeatures =
 					q(43577),	-- Capturing the Gateway
 					q(44221),	-- Champion Armaments
 					q(42616),	-- Champion: Dvalen Ironrune
-					qh(45873),	-- Champion: Eitrigg
+					q(45873, {	-- Champion: Eitrigg
+						["races"] = HORDE_ONLY,
+					}),
 					q(42606),	-- Champion: Finna Bjornsdottir
 					q(42619),	-- Champion: Hodir
-					qa(45876),	-- Champion: Lord Darius Crowley
+					q(45876, {	-- Champion: Lord Darius Crowley
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(42605),	-- Champion: Ragnvald Drakeborn
 					q(42614),	-- Champion: Svergan Stormcloak
 					q(42618),	-- Champion: Thorim
@@ -143,8 +147,12 @@ _.ExpansionFeatures =
 					q(44889),	-- Resource Management
 					q(46267),	-- Return of the Battlelord
 					q(44917),	-- Return to Karazhan: The Tower of Power
-					qa(42815),	-- Return to the Broken Shore
-					qh(38904),	-- Return to the Broken Shore
+					q(42815, {	-- Return to the Broken Shore
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(38904, {	-- Return to the Broken Shore
+						["races"] = HORDE_ONLY,
+					}),
 					q(42651),	-- Svergan's Promise
 					q(46173),	-- Tactical Planning
 					q(44263),	-- The Arcway
@@ -219,14 +227,16 @@ _.ExpansionFeatures =
 							follower(712),	-- King Ymiron
 						},
 					}),
-					qa(45876, {	-- Champion: Lord Darius Crowley
+					q(45876, {	-- Champion: Lord Darius Crowley
 						["qg"] = 117480,	-- Lord Darius Crowley
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
-					qh(45873, {	-- Champion: Eitrigg
+					q(45873, {	-- Champion: Eitrigg
 						["qg"] = 117479,	-- Eitrigg
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},

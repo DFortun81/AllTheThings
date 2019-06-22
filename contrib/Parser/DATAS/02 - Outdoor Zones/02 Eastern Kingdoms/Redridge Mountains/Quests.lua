@@ -293,13 +293,6 @@ _.Zones =
 					["qg"] = 342,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- 
-					["repeatable"] = true,
-					["g"] = {
-						i(11110),	-- Chicken Egg
-					},
-				}),
 				q(54103, {	-- Corner Crossing
 					["qg"] = 146806,	-- Dark Ranger Lyana
 					["coord"] = { 11.3, 66.8, 49 },
