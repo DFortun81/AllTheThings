@@ -1012,6 +1012,7 @@ _.Zones =
 								["g"] = {
 									i(59663),	-- 
 									i(59662),	-- 
+									i(59664),	-- Pelagic Prism
 								},
 							}),
 							qh(25963, {	-- Swift Action
@@ -1033,6 +1034,7 @@ _.Zones =
 								["g"] = {
 									i(59721),	-- 
 									i(59720),	-- 
+									i(59722),	-- Cowry-Shell Pendant
 								},
 							}),
 --[[
@@ -1061,6 +1063,7 @@ _.Zones =
 								["g"] = {
 									i(59671),	-- 
 									i(59670),	-- 
+									i(59672),	-- Quel'Dormir Signet Ring
 								},
 							}),
 							qa(25760, {	-- Visions of the Past: Invasion of Vashj'ir
@@ -1082,7 +1085,8 @@ _.Zones =
 								["g"] = {
 									i(59691),	-- 
 									i(59690),	-- 
-									i(59692),	-- 
+									i(59692),	--
+									i(59689),	-- Kvaldir Battle Standard
 								},
 							}),
 							qh(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
