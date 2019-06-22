@@ -202,6 +202,9 @@ namespace ATT
             o.Remove("style");
             o.Remove("isToy");
             o.Remove("isLockoutShared");
+            o.Remove("ignoreBonus");
+            o.Remove("ignoreSource");
+            o.Remove("difficulties");
 
             // If we have a recipe linked, clean it up and strip it out.
             if (o.TryGetValue("recipeID", out int recipeID))
@@ -210,9 +213,12 @@ namespace ATT
                 o.Remove("recipeID");
             }
 
-            foreach (var pair in o.ToList())
+            var keys = o.Keys.ToList();
+            for(int index = 0; index < keys.Count; ++index)
             {
-                switch (pair.Key)
+                var key = keys[index];
+                var value = o[key];
+                switch (key)
                 {
                     case "achID":
                         // We used to do dumb things in the beginning, like attaching achievementIDs as headers.
@@ -222,6 +228,7 @@ namespace ATT
                     case "buildingID":
                     case "categoryID":
                     case "criteriaID":
+                    case "currencyID":
                     case "difficultyID":
                     case "flightPathID":
                     case "followerID":
@@ -240,7 +247,7 @@ namespace ATT
 
                     case "tierID":
                         // If this is Classic, then move it up one level.
-                        if (Convert.ToInt32(pair.Value) == 1)
+                        if (Convert.ToInt32(value) == 1)
                         {
                             if (groups != null) list.AddRange(groups);
                         }
@@ -251,22 +258,24 @@ namespace ATT
                         return false;
 
                     case "itemID":
-                        if (Convert.ToInt32(pair.Value) > 23796)
+                        if (Convert.ToInt32(value) > 23796)
                         {
                             // Throw away all the data.
+                            if (groups != null) list.AddRange(groups);
                             return false;
                         }
 
                         // Items may have changed level or object types between classic and now.
-                        o.Remove("lvl");
-                        o.Remove("f");
+                        if (o.Remove("lvl")) keys.Remove("lvl");
+                        if (o.Remove("f")) keys.Remove("f");
+                        index = keys.IndexOf(key);
                         continue;
                         
                     case "npcID":
                     case "creatureID":
                         {
-                            var npcID = Convert.ToInt32(pair.Value);
-                            if (npcID > 18199 || groups == null || !groups.Any())
+                            var npcID = Convert.ToInt32(value);
+                            if (npcID > 18199 || groups == null || !groups.Any() || npcID == -5359 || npcID == -94)
                             {
                                 // Throw away all the data.
                                 return false;
@@ -278,12 +287,19 @@ namespace ATT
                                 // Throw away all the data.
                                 return false;
                             }
+
+                            // If this is a "legacy" header... smack someone, then shift up one hierarchy level.
+                            if (npcID == -40)
+                            {
+                                if (groups != null) list.AddRange(groups);
+                                return false;
+                            }
                             continue;
                         }
                     case "crs":
                     case "qgs":
                         {
-                            var crs = pair.Value as List<object>;
+                            var crs = value as List<object>;
                             int count = crs.Count;
                             for (int i = 0;i < count; ++i)
                             {
@@ -295,18 +311,32 @@ namespace ATT
                                     --i;
                                 }
                             }
-                            if(count < 1) o.Remove(pair.Key);
+                            if (count < 1)
+                            {
+                                if (o.Remove(key))
+                                {
+                                    keys.Remove(key);
+                                    --index;
+                                }
+                            }
                             break;
                         }
                     case "qg":
                         {
-                            var npcID = Convert.ToInt32(pair.Value);
-                            if (npcID > 18199) o.Remove(pair.Key);
+                            var npcID = Convert.ToInt32(value);
+                            if (npcID > 18199)
+                            {
+                                if (o.Remove(key))
+                                {
+                                    keys.Remove(key);
+                                    --index;
+                                }
+                            }
                             break;
                         }
 
                     case "objectID":
-                        if (Convert.ToInt32(pair.Value) > 211084)
+                        if (Convert.ToInt32(value) > 211084 || groups == null || !groups.Any())
                         {
                             // Throw away all the data.
                             return false;
@@ -320,14 +350,14 @@ namespace ATT
                         }
                         continue;
                     case "questID":
-                        if (Convert.ToInt32(pair.Value) > 9665)
+                        if (Convert.ToInt32(value) > 9665)
                         {
                             // Throw away all the data.
                             return false;
                         }
                         continue;
                     case "spellID":
-                        if (Convert.ToInt32(pair.Value) > 31885)
+                        if (Convert.ToInt32(value) > 31885)
                         {
                             // Throw away all the data.
                             return false;
@@ -335,7 +365,7 @@ namespace ATT
                         continue;
 
                     case "factionID":
-                        if (Convert.ToInt32(pair.Value) > 929)
+                        if (Convert.ToInt32(value) > 929)
                         {
                             // Throw away all the data.
                             return false;
@@ -346,14 +376,59 @@ namespace ATT
                     case "mapID":
                     case "classID":
                     case "holidayID":
-                    case "encounterID":
                     case "instanceID":
+                    case "professionID":
                         {
                             // If this field is by itself, remove everything.
-                            if(o.Keys.Count < 2)
+                            var count = o.Keys.Count;
+                            if (count < 2 || groups == null || !groups.Any())
                             {
                                 // Throw away all the data.
                                 return false;
+                            }
+                            break;
+                        }
+                    case "encounterID":
+                        {
+                            // If this field is by itself, remove everything.
+                            if (o.Keys.Count < 2)
+                            {
+                                // Throw away all the data.
+                                return false;
+                            }
+
+                            // If we don't have a creatureID, let's get one.
+                            if (!o.TryGetValue("creatureID", out int npcID))
+                            {
+                                if (o.TryGetValue("crs", out List<object> crs))
+                                {
+                                    int count = crs.Count;
+                                    for (int i = 0; i < count; ++i)
+                                    {
+                                        npcID = Convert.ToInt32(crs[i]);
+                                        if (npcID > 18199)
+                                        {
+                                            crs.RemoveAt(i);
+                                            --count;
+                                            --i;
+                                        }
+                                    }
+                                    if (count > 0)
+                                    {
+                                        o.Remove("encounterID");
+                                        o["creatureID"] = crs[0];
+                                        crs.RemoveAt(0);
+                                        --count;
+                                    }
+                                    if (count < 1)
+                                    {
+                                        if (o.Remove("crc"))
+                                        {
+                                            keys.Remove("crs");
+                                            index = keys.IndexOf(key);
+                                        }
+                                    }
+                                }
                             }
                             break;
                         }
@@ -362,7 +437,7 @@ namespace ATT
                     case "g":
                         continue;
                 }
-                ALL_FIELDS[pair.Key] = true;
+                ALL_FIELDS[key] = true;
             }
 
             // If this field is by itself, remove everything.
