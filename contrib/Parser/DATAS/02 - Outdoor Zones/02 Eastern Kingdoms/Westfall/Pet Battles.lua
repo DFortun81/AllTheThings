@@ -38,14 +38,18 @@ _.Zones =
 					},
 				}),
 				q(31725, {	-- Lindsay
+					["qg"] = 31780,	-- Old MacDonald
+					["coord"] = { 80.6, 18.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31780, {	-- Old MacDonald
-					["isDaily"] = true,
+					["qg"] = 31780,	-- Old MacDonald
+					["coord"] = { 80.6, 18.4, 52 },
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
 				}),
 				q(46291, {	-- The Deadmines Strike Back
 					["sourceQuests"] = 46263,

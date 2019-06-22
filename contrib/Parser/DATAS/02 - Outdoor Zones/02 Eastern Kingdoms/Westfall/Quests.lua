@@ -37,24 +37,21 @@ _.Zones =
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (#2)
 					["sourceQuests"] = { 26353 },	-- Captain Sanders' Hidden Treasure (#1)
-				--	["objectID"] = 35,	-- Captain's Footlocker
-				--	not sure if it's this objectID or 307330.  both are listed as the start on wowhead, along with 307070 "Old Footlocker"
+				--	["objectID"] = 307330,	-- Captain's Footlocker -- object 35 for pre-cata
 					["coord"] = { 25.9, 47.7, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_misc_crate01",
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (#3)
 					["sourceQuests"] = { 26354 },	-- Captain Sanders' Hidden Treasure (#2)
-				--	["objectID"] = 36,	-- Captain's Footlocker
-				--	not sure if it's this objectID, 307307, or 307619, which are all listed as the start on wowhead.
+				--	["objectID"] = 307307,	-- broken barrel -- object 36 (Captain's Footlocker) possibly pre-cata?
 					["coord"] = { 40.6, 47.8, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_cask_03",
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (#4)
 					["sourceQuests"] = { 26355 },	-- Captain Sanders' Hidden Treasure (#3)
-				--	["objectID"] = 34,	-- Old Jug
-				--	not sure if it's this objectID, 307277, or 307621, "Jug," which are all listed as the start on wowhead.
+				--	["objectID"] = 307277,	-- Old Jug -- object 34 (old jug) possibly pre-cata?
 					["coord"] = { 40.5, 16.8, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_drink_11",

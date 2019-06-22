@@ -232,25 +232,7 @@ _.Achievements =
 						crit(31),		-- The Lich King Triumphant (Stratholme)
 						crit(32),		-- The New Horde (Swamp of Sorrows, Stormwind City, Southern Barrens)
 						crit(33),		-- The Old Gods and the Ordering of Azeroth (Ironforge, Blackrock Depths, Darnassus, Undercity)
-						{	-- The Scourge of Lordaeron
-							["achievementID"] = 1244,	-- Well Read
-							["criteriaID"] = 34,		-- The Scourge of Lordaeron
-							["coords"] = {
-								-- Note!!  Format is { X, Y, MapID },
-								{ 34.8, 49.8, 63 },		-- Ashenvale
-								{ 41.9, 73.5, 210 },	-- The Cape of Stranglethorn
-								{ 56.9, 47.5, 52 },		-- Westfall
-							},
-							["maps"] = {
-								-- Note!! Removed STV since it points to the original version of the map and shows it off the coast rather than showing Cape.  Bad Wowhead!!!
-								-- [Note!! Make a list of dungeons that don't have maps listed.  I'll pull the map lists and figure it out]
-								-- Scarlet Monastery
-								-- Stratholme
-								63,		-- Ashenvale
-								210,	-- The Cape of Stranglethorn
-								52,		-- Westfall
-							},
-						},
+						crit(34),		-- The Scourge of Lordaeron
 						crit(35),		-- The Sentinels and the Long Vigil (Feralas, Stranglethorn Vale, The Cape of Stranglethorn)
 						crit(36),		-- The Seven Kingdoms (Stratholme)
 						crit(37),		-- The Twin Empires (Tanaris, Stranglethorn Vale, The Cape of Stranglethorn)
