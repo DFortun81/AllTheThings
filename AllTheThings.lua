@@ -8840,77 +8840,6 @@ function app:GetDataCache()
 			UpdateVisibleRowData(self);
 		end
 		]]--
-		
-		-- Uncomment this section if you need to Harvest Source IDs:
-		--[[--
-		local harvestData = {};
-		harvestData.visible = true;
-		harvestData.expanded = true;
-		harvestData.progress = 0;
-		harvestData.total = 0;
-		harvestData.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
-		harvestData.text = "Harvesting All Items";
-		harvestData.description = "If you're seeing this window outside of Git, please yell loudly in Crieve's ear.";
-		harvestData.g = {};
-		
-		local mID = 1;
-		local modIDs = {};
-		local bonusIDs = {};
-		app.MaximumItemInfoRetries = 40;
-		for itemID,groups in pairs(fieldCache["itemID"]) do
-			for i,group in ipairs(groups) do
-				if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
-					if group.bonusID and not bonusIDs[group.bonusID] then
-						bonusIDs[group.bonusID] = true;
-						tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
-					else
-						mID = group.modID or 1;
-						if not modIDs[mID] then
-							modIDs[mID] = true;
-							tinsert(harvestData.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
-						end
-					end
-				end
-			end
-			wipe(modIDs);
-			wipe(bonusIDs);
-		end
-		harvestData.rows = harvestData.g;
-		BuildGroups(harvestData, harvestData.g);
-		UpdateGroups(harvestData, harvestData.g);
-		
-		-- Assign the missing data table to the harvester.
-		local popout = app:GetWindow("Harvester");
-		popout.data = harvestData;
-		popout.ScrollBar:SetValue(1);
-		popout:SetVisible(true);
-		popout.UpdateDone = function(self)
-			local progress = 0;
-			local total = 0;
-			for i,group in ipairs(harvestData.g) do
-				total = total + 1;
-				if group.s and group.s == 0 then
-					group.visible = true;
-				else
-					group.visible = false;
-					progress = progress + 1;
-				end
-			end
-			if self.rowData then
-				local count = #self.rowData;
-				if count > 1 then
-					self.rowData[1].progress = progress;
-					self.rowData[1].total = total;
-					for i=count,1,-1 do
-						if self.rowData[i] and not self.rowData[i].visible then
-							table.remove(self.rowData, i);
-						end
-					end
-				end
-			end
-			UpdateVisibleRowData(self);
-		end
-		--]]--
 	end
 	return allData;
 end
@@ -9066,79 +8995,81 @@ app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
 (function()
 	app:GetWindow("CosmicInfuser", UIParent, function(self)
-		if not self.initialized then
-			self.initialized = true;
-			self.data = {
-				['text'] = "Cosmic Infuser",
-				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp", 
-				["description"] = "This window helps debug when we're missing map IDs in the addon.",
-				['visible'] = true, 
-				['expanded'] = true,
-				['OnUpdate'] = function(data) 
-					data.visible = true;
-				end,
-				['g'] = {
-					{
-						['text'] = "Check for missing maps now!",
-						['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
-						['description'] = "This function will check for missing mapIDs in ATT.",
-						['OnClick'] = function(data, button)
-							Push(self, "Rebuild", self.Rebuild);
-							return true;
-						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+		if self:IsVisible() then
+			if not self.initialized then
+				self.initialized = true;
+				self.data = {
+					['text'] = "Cosmic Infuser",
+					['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp", 
+					["description"] = "This window helps debug when we're missing map IDs in the addon.",
+					['visible'] = true, 
+					['expanded'] = true,
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
+					['g'] = {
+						{
+							['text'] = "Check for missing maps now!",
+							['icon'] = "Interface\\Icons\\INV_Misc_Map_01",
+							['description'] = "This function will check for missing mapIDs in ATT.",
+							['OnClick'] = function(data, button)
+								Push(self, "Rebuild", self.Rebuild);
+								return true;
+							end,
+							['OnUpdate'] = function(data) 
+								data.visible = true;
+							end,
+						},
 					},
-				},
-			};
-			self.Rebuild = function(self)
-				-- Rebuild all the datas
-				local temp = self.data.g[1];
-				wipe(self.data.g);
-				tinsert(self.data.g, temp);
-				
-				-- Go through all of the possible maps
-				for mapID=1,3000,1 do
-					local mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						local results = SearchForField("mapID", mapID);
-						local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
-						if results and #results > 0 then
-							mapObject.collected = true;
-						else	
-							mapObject.collected = false;
-						end
-						
-						-- Recurse up the map chain and build the full hierarchy
-						local parentMapID = mapInfo.parentMapID;
-						while parentMapID do
-							mapInfo = C_Map.GetMapInfo(parentMapID);
-							if mapInfo then
-								mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
-								parentMapID = mapInfo.parentMapID;
-							else
-								break;
+				};
+				self.Rebuild = function(self)
+					-- Rebuild all the datas
+					local temp = self.data.g[1];
+					wipe(self.data.g);
+					tinsert(self.data.g, temp);
+					
+					-- Go through all of the possible maps
+					for mapID=1,3000,1 do
+						local mapInfo = C_Map.GetMapInfo(mapID);
+						if mapInfo then
+							local results = SearchForField("mapID", mapID);
+							local mapObject = { ["mapID"] = mapID, ["collectible"] = true };
+							if results and #results > 0 then
+								mapObject.collected = true;
+							else	
+								mapObject.collected = false;
 							end
+							
+							-- Recurse up the map chain and build the full hierarchy
+							local parentMapID = mapInfo.parentMapID;
+							while parentMapID do
+								mapInfo = C_Map.GetMapInfo(parentMapID);
+								if mapInfo then
+									mapObject = { ["mapID"] = parentMapID, ["collectible"] = true, ["g"] = { mapObject } };
+									parentMapID = mapInfo.parentMapID;
+								else
+									break;
+								end
+							end
+							
+							-- Merge it into the listing.
+							MergeObject(self.data.g, CreateObject(mapObject));
 						end
-						
-						-- Merge it into the listing.
-						MergeObject(self.data.g, CreateObject(mapObject));
 					end
+					
+					self:Update();
 				end
-				
-				self:Update();
 			end
+			
+			-- Update the window and all of its row data
+			self.data.progress = 0;
+			self.data.total = 0;
+			self.data.indent = 0;
+			self.data.back = 1;
+			BuildGroups(self.data, self.data.g);
+			UpdateGroups(self.data, self.data.g);
+			UpdateWindow(self, true);
 		end
-		
-		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
-		self.data.indent = 0;
-		self.data.back = 1;
-		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
 	end);
 end)();
 --[[--
@@ -9530,6 +9461,11 @@ end):Show();
 			});
 			table.insert(app.RawData, self.data);
 			self.rawData = {};
+			self.SetMapID = function(self, mapID)
+				self.mapID = mapID;
+				self:SetVisible(true);
+				self:Update();
+			end
 			self.Rebuild = function(self)
 				local results = SearchForField("mapID", self.mapID);
 				if results then
@@ -9892,6 +9828,78 @@ end):Show();
 		UpdateWindow(self, true, got);
 	end);
 end)();
+app:GetWindow("Harvester", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {};
+			db.text = "Harvesting All Items";
+			db.icon = "Interface\\Icons\\Spell_Warlock_HarvestofLife";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW a lot!";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			
+			local mID = 1;
+			local modIDs = {};
+			local bonusIDs = {};
+			app.MaximumItemInfoRetries = 40;
+			for itemID,groups in pairs(fieldCache["itemID"]) do
+				for i,group in ipairs(groups) do
+					if (not group.s or group.s == 0) then	--  and (not group.f or group.filterID == 109 or group.f < 50)
+						if group.bonusID and not bonusIDs[group.bonusID] then
+							bonusIDs[group.bonusID] = true;
+							tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), bonusID = group.bonusID}, app.BaseItem));
+						else
+							mID = group.modID or 1;
+							if not modIDs[mID] then
+								modIDs[mID] = true;
+								tinsert(db.g, setmetatable({visible = true, s = 0, itemID = tonumber(itemID), modID = mID}, app.BaseItem));
+							end
+						end
+					end
+				end
+				wipe(modIDs);
+				wipe(bonusIDs);
+			end
+			self.data = db;
+			BuildGroups(db, db.g);
+			UpdateGroups(db, db.g);
+			self.ScrollBar:SetValue(1);
+			self.UpdateDone = function(self)
+				local progress = 0;
+				local total = 0;
+				for i,group in ipairs(db.g) do
+					total = total + 1;
+					if group.s and group.s == 0 then
+						group.visible = true;
+					else
+						group.visible = false;
+						progress = progress + 1;
+					end
+				end
+				if self.rowData then
+					local count = #self.rowData;
+					if count > 1 then
+						self.rowData[1].progress = progress;
+						self.rowData[1].total = total;
+						for i=count,1,-1 do
+							if self.rowData[i] and not self.rowData[i].visible then
+								table.remove(self.rowData, i);
+							end
+						end
+					end
+				end
+				UpdateVisibleRowData(self);
+			end
+		end
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		UpdateWindow(self, true);
+	end
+end);
 app:GetWindow("SourceFinder", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -10418,8 +10426,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end);
-(function()
-	app:GetWindow("Random", UIParent, function(self)
+app:GetWindow("Random", UIParent, function(self)
+	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			local function SearchRecursively(group, field, temp)
@@ -10870,10 +10878,7 @@ end);
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			self:RegisterEvent("PLAYER_LOGIN");
-			self:SetScript("OnEvent", function(self, e, ...) 
-				rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
-			end);
+			rerollOption.text = "Reroll: " .. app.GetDataMember("RandomSearchFilter", "Instance");
 		end
 		
 		-- Update the window and all of its row data
@@ -10883,209 +10888,198 @@ end);
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);
-end)();
-(function()
-	app:GetWindow("Tradeskills", UIParent, function(self, ...)
-		if not self.initialized then
-			self.initialized = true;
-			self:SetClampedToScreen(false);
-			self:RegisterEvent("TRADE_SKILL_SHOW");
-			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-			self:RegisterEvent("TRADE_SKILL_CLOSE");
-			self:RegisterEvent("NEW_RECIPE_LEARNED");
-			self.wait = 5;
-			self.data = {
-				['text'] = "Profession List",
-				['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
-				["description"] = "Open your professions to cache them.",
-				['visible'] = true, 
-				['expanded'] = true,
-				["indent"] = 0,
-				['back'] = 1,
-				['g'] = { },
-			};
-			self.CacheRecipes = function(self)
-				-- Cache Learned Spells
-				local skillCache = fieldCache["spellID"];
-				if skillCache then
-					local tradeSkillID = AllTheThings.GetTradeSkillLine();
-					if tradeSkillID == self.lastTradeSkillID then
-						return false;
+	end
+end);
+app:GetWindow("Tradeskills", UIParent, function(self, ...)
+	if not self.initialized then
+		self.initialized = true;
+		self:SetClampedToScreen(false);
+		self:RegisterEvent("TRADE_SKILL_SHOW");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("NEW_RECIPE_LEARNED");
+		self.wait = 5;
+		self.data = {
+			['text'] = "Profession List",
+			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
+			["description"] = "Open your professions to cache them.",
+			['visible'] = true, 
+			['expanded'] = true,
+			["indent"] = 0,
+			['back'] = 1,
+			['g'] = { },
+		};
+		self.CacheRecipes = function(self)
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
+			if skillCache then
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				if tradeSkillID == self.lastTradeSkillID then
+					return false;
+				end
+				-- If it's not yours, don't take credit for it.
+				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+					return false;
+				end
+				self.lastTradeSkillID = tradeSkillID;
+				
+				local currentCategoryID, categories = -1, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+							categories[currentCategoryID] = true;
+						end
 					end
-					-- If it's not yours, don't take credit for it.
-					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-						return false;
-					end
-					self.lastTradeSkillID = tradeSkillID;
-					
-					local currentCategoryID, categories = -1, {};
-					local categoryIDs = { C_TradeSkillUI.GetCategories() };
-					for i = 1,#categoryIDs do
-						currentCategoryID = categoryIDs[i];
-						local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-						if categoryData then
-							if not categories[currentCategoryID] then
+				end
+				
+				-- Cache learned recipes
+				local learned = 0;
+				local reagentCache = app.GetDataMember("Reagents", {});
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					local spellRecipeInfo = {};
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
 								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
 								categories[currentCategoryID] = true;
 							end
 						end
-					end
-					
-					-- Cache learned recipes
-					local learned = 0;
-					local reagentCache = app.GetDataMember("Reagents", {});
-					local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-					for i = 1,#recipeIDs do
-						local spellRecipeInfo = {};
-						if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-							currentCategoryID = spellRecipeInfo.categoryID;
-							if not categories[currentCategoryID] then
-								local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-								if categoryData then
-									app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-									categories[currentCategoryID] = true;
-								end
-							end
-							if spellRecipeInfo.learned then
-								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-									learned = learned + 1;
-								end
-							end
-							if not skillCache[spellRecipeInfo.recipeID] then
-								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-								skillCache[spellRecipeInfo.recipeID] = { {} };
-							end
-							local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
-							for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
-								local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
-								local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
-								--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
-								
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs
-								-- Index 2: The Crafted Item IDs
-								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-								reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+						if spellRecipeInfo.learned then
+							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								learned = learned + 1;
 							end
 						end
-					end
-					
-					-- Open the Tradeskill list for this Profession
-					if self.tradeSkillID ~= tradeSkillID then
-						self.tradeSkillID = tradeSkillID;
-						for i,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
-								BuildGroups(self.data, self.data.g);
-								app.UpdateGroups(self.data, self.data.g);
-								if not self.data.expanded then
-									self.data.expanded = true;
-									ExpandGroupsRecursively(self.data, true);
-								end
-								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-									self:SetVisible(true);
-								end
-							end
+						if not skillCache[spellRecipeInfo.recipeID] then
+							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+							skillCache[spellRecipeInfo.recipeID] = { {} };
+						end
+						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
+						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
+							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
+							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
+							--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
+							
+							-- Make sure a cache table exists for this item.
+							-- Index 1: The Recipe Skill IDs
+							-- Index 2: The Crafted Item IDs
+							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+							reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
+							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 						end
 					end
+				end
 				
-					-- If something new was "learned", then refresh the data.
-					if learned > 0 then
-						app:RefreshData(false, true);
-						app.print("Cached " .. learned .. " known recipes!");
-						wipe(searchCache);
+				-- Open the Tradeskill list for this Profession
+				if self.tradeSkillID ~= tradeSkillID then
+					self.tradeSkillID = tradeSkillID;
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.requireSkill == tradeSkillID then
+							self.data = setmetatable({ ['visible'] = true, ["indent"] = 0, total = 0, progress = 0 }, { __index = group });
+							BuildGroups(self.data, self.data.g);
+							app.UpdateGroups(self.data, self.data.g);
+							if not self.data.expanded then
+								self.data.expanded = true;
+								ExpandGroupsRecursively(self.data, true);
+							end
+							if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+								self:SetVisible(true);
+							end
+						end
 					end
 				end
-			end
-			self.RefreshRecipes = function(self)
-				if app.CollectibleRecipes then
-					self.wait = 5;
-					StartCoroutine("RefreshingRecipes", function()
-						while self.wait > 0 do
-							self.wait = self.wait - 1;
-							coroutine.yield();
-						end
-						self:CacheRecipes();
-					end);
-				end
-			end
 			
-			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...)
-				if e == "TRADE_SKILL_LIST_UPDATE" then
-					if self:IsVisible() then
-						-- If it's not yours, don't take credit for it.
-						if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-							self:SetVisible(false);
-							return false;
-						end
-						
-						-- Check to see if ATT has information about this profession.
-						local tradeSkillID = AllTheThings.GetTradeSkillLine();
-						if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
-							if self:IsVisible() then
-								app.print("You must have a profession open to open the profession mini list.");
-							end
-							self:SetVisible(false);
-							return false;
-						end
-						
-						-- Set the Window to align with the Profession Window
-						self:ClearAllPoints();
-						self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-						self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-						self:Update();
-					end
-					self:RefreshRecipes();
-				elseif e == "TRADE_SKILL_SHOW" then
-					if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-						self:SetVisible(true);
-					end
-					self:RefreshRecipes();
-				elseif e == "NEW_RECIPE_LEARNED" then
-					local spellID = ...;
-					if spellID then
-						local previousState = GetDataSubMember("CollectedSpells", spellID);
-						SetDataSubMember("CollectedSpells", spellID, 1);
-						if not GetTempDataSubMember("CollectedSpells", spellID) then
-							SetTempDataSubMember("CollectedSpells", spellID, 1);
-							app:RefreshData(true, true);
-							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
-								app:PlayFanfare();
-							end
-							wipe(searchCache);
-							collectgarbage();
-						end
-					end
-				elseif e == "TRADE_SKILL_CLOSE" then
-					self:SetVisible(false);
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true);
+					app.print("Cached " .. learned .. " known recipes!");
+					wipe(searchCache);
 				end
-			end);
+			end
+		end
+		self.RefreshRecipes = function(self)
+			if app.CollectibleRecipes then
+				self.wait = 5;
+				StartCoroutine("RefreshingRecipes", function()
+					while self.wait > 0 do
+						self.wait = self.wait - 1;
+						coroutine.yield();
+					end
+					self:CacheRecipes();
+				end);
+			end
 		end
 		
+		-- Setup Event Handlers and register for events
+		self:SetScript("OnEvent", function(self, e, ...)
+			if e == "TRADE_SKILL_LIST_UPDATE" then
+				if self:IsVisible() then
+					-- If it's not yours, don't take credit for it.
+					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+						self:SetVisible(false);
+						return false;
+					end
+					
+					-- Check to see if ATT has information about this profession.
+					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+						if self:IsVisible() then
+							app.print("You must have a profession open to open the profession mini list.");
+						end
+						self:SetVisible(false);
+						return false;
+					end
+					
+					-- Set the Window to align with the Profession Window
+					self:ClearAllPoints();
+					self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+					self:Update();
+				end
+				self:RefreshRecipes();
+			elseif e == "TRADE_SKILL_SHOW" then
+				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+					self:SetVisible(true);
+				end
+				self:RefreshRecipes();
+			elseif e == "NEW_RECIPE_LEARNED" then
+				local spellID = ...;
+				if spellID then
+					local previousState = GetDataSubMember("CollectedSpells", spellID);
+					SetDataSubMember("CollectedSpells", spellID, 1);
+					if not GetTempDataSubMember("CollectedSpells", spellID) then
+						SetTempDataSubMember("CollectedSpells", spellID, 1);
+						app:RefreshData(true, true);
+						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+							app:PlayFanfare();
+						end
+						wipe(searchCache);
+						collectgarbage();
+					end
+				end
+			elseif e == "TRADE_SKILL_CLOSE" then
+				self:SetVisible(false);
+			end
+		end);
+	end
+	if self:IsVisible() then
 		-- Update the window and all of its row data
 		self.data.progress = 0;
 		self.data.total = 0;
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, ...);
-	end);
-end)();
-(function()
-	local worldMapIDs = {
-		14,		-- Arathi Highlands
-		62,		-- Darkshore
-		875,	-- Zandalar
-		876,	-- Kul'Tiras
-		619,	-- The Broken Isles
-		885,	-- Antoran Wastes
-		830,	-- Krokuun
-		882,	-- Mac'Aree
-	};
-	app:GetWindow("WorldQuests", UIParent, function(self)
+	end
+end);
+app:GetWindow("WorldQuests", UIParent, function(self)
+	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
 			self.data = {
@@ -11112,6 +11106,16 @@ end)();
 				},
 			};
 			self.rawData = {};
+			local worldMapIDs = {
+				14,		-- Arathi Highlands
+				62,		-- Darkshore
+				875,	-- Zandalar
+				876,	-- Kul'Tiras
+				619,	-- The Broken Isles
+				885,	-- Antoran Wastes
+				830,	-- Krokuun
+				882,	-- Mac'Aree
+			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
 					o.visible = false;
@@ -11353,8 +11357,8 @@ end)();
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-	end);
-end)();
+	end
+end);
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	local link = C_ToyBox_GetToyLink(itemID);
