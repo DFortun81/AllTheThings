@@ -553,54 +553,47 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					crit(1, {	-- Tiragarde Sound
+						["coord"] = { 76.3, 49.9, 895 },
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
 					crit(2, {	-- Stormsong Valley
-					--	["questID"] = ,	-- Honor the Flame (Stormsong Valley)
-					--	["qg"] = ,	-- 
+						["coord"] = { 35.8, 51.2, 942 },
 						["maps"] = { 942 },	-- Stormsong Valley
 					}),
 					crit(3, {	-- Drustvar
-					--	["questID"] = ,	-- Honor the Flame (Drustvar)
-					--	["qg"] = ,	-- 
+						["coord"] = { 40.2, 47.7, 896 },
 						["maps"] = { 896 },	-- Drustvar
 					}),
 				},
 			}),	
 			ach(8042,  {	-- Extinguishing Pandaria
-				["maps"] = { 390, },	-- Vale of Eternal Blossoms
+				["coord"] = { 77.9, 33.9, 390 },
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 390, },	-- Vale of Eternal Blossoms
 			}),
 			ach(11276, {	-- Extinguishing Draenor
-				["maps"] = { 525, },	-- Frostfire Ridge
+				["coord"] = { 72.8, 65.2, 525 },
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 525, },	-- Frostfire Ridge
 			}),
 			ach(11278, {	-- Extinguishing the Broken Isles
-				["maps"] = { 680 },	-- Suramar
+				["coord"] = { 30.3, 45.4, 680 },
 				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 680 },	-- Suramar
 			}),
 			ach(13343, {	-- Extinguishing Zandalar
 				["races"] = ALLIANCE_ONLY,
 				["g"] = bubbleDown({["achievementID"] = 13343}, {	-- Extinguishing Zandalar
 					crit(1, {	-- Zuldazar
-					--	["questID"] = ,	-- Desecrate this Fire! (Zuldazar)
-					--	["qg"] = ,	-- 
-					--	["coord"] = { , , 862 }
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 53.3, 48.1, 862 },
 						["maps"] = { 862 },	-- Zuldazar
 					}),
 					crit(2, {	-- Nazmir
-					--	["questID"] = ,	-- Desecrate this Fire! (Nazmir)
-					--	["qg"] = ,	-- 
-					--	["coord"] = { , , 863 }
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 40.0, 74.0, 863 },
 						["maps"] = { 863 },	-- Nazmir
 					}),
 					crit(3, {	-- Vol'dun
-					--	["questID"] = ,	-- Desecrate this Fire! (Vol'dun)
-					--	["qg"] = ,	-- 
-					--	["coord"] = { , , 864 }
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 55.9, 47.4, 864 },
 						["maps"] = { 864 },	-- Vol'dun
 					}),
 				}),
@@ -611,107 +604,78 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					un(21, title(45)),	-- Flame Keeper
 					ach(1036, {	-- The Fires of Azeroth
 						ach(1025, {	-- Flame Keeper of Eastern Kingdoms
-							["g"] = bubbleDown({["achievementID"] = 1025}, {	-- Flame Keeper of Eastern Kingdoms
-								{
-									["criteriaID"] = 1,			-- Arathi Highlands
-									["questID"] = 11840, 		-- Honor the Flame [Arathi Highlands]
-									["qg"] = 25923,				-- Arathi Flame Keeper
-									["maps"] = { 14 }, 			-- Arathi Highlands
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 2,			-- Badlands
-									["questID"] = 11842, 		-- Honor the Flame [Badlands]
-									["qg"] = 25925,				-- Badlands Flame Keeper
-									["maps"] = { 15 }, 			-- Badlands
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 3,			-- Blasted Lands
-									["questID"] = 28930, 		-- Honor the Flame [Blasted Lands]
-									["qg"] = 51603,				-- Blasted Lands Flame Keeper
-									["maps"] = { 17 }, 			-- Blasted Lands
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 4,			-- Burning Steppes
-									["questID"] = 11844, 		-- Honor the Flame [Burning Steppes]
-									["qg"] = 25927,				-- Burning Steppes Flame Keeper
-									["maps"] = { 36 }, 			-- Burning Steppes
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 5,			-- Eversong Woods
-									["questID"] = 11848, 		-- Honor the Flame [Eversong Woods]
-									["qg"] = 25931,				-- Eversong Woods Flame Keeper
-									["maps"] = { 94 }, 		-- Eversong Woods
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 6,			-- Ghostlands
-									["questID"] = 11850, 		-- Honor the Flame [Ghostlands]
-									["qg"] = 25933,				-- Ghostlands Flame Keeper
-									["maps"] = { 95 }, 		-- Ghostlands
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 7,			-- Hillsbrad Foothills
-									["questID"] = 11853, 		-- Honor the Flame [Hillsbrad Foothills]
-									["qg"] = 25935,				-- Hillsbrad Flame Keeper
-									["maps"] = { 25 }, 			-- Hillsbrad Foothills
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 8,			-- Northern Stranglethorn
-									["questID"] = 28924, 		-- Honor the Flame [Northern Stranglethorn]
-									["qg"] = 51582,				-- Northern Stranglethorn Vale Flame Keeper
-									["maps"] = { 50 }, 			-- Northern Stranglethorn
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 9,			-- Silverpine Forest
-									["questID"] = 11584, 		-- Honor the Flame [Silverpine Forest]
-									["qg"] = 25939,				-- Silverpine Forest Flame Keeper
-									["maps"] = { 21 }, 			-- Silverpine Forest
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 10,		-- Swamp of Sorrows
-									["questID"] = 11857, 		-- Honor the Flame [Swamp of Sorrows]
-									["qg"] = 25941,				-- Swamp of Sorrows Flame Keeper
-									["maps"] = { 51 }, 			-- Swamp of Sorrows
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 11,		-- The Cape of Stranglethorn
-									["questID"] = 11837, 		-- Honor the Flame [The Cape of Stranglethorn]
-									["qg"] = 25920,				-- Cape of Stranglethorn Flame Keeper
-									["maps"] = { 210 }, 		-- The Cape of Stranglethorn
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 12,		-- The Hinterlands
-									["questID"] = 11860, 		-- Honor the Flame [The Hinterlands]
-									["qg"] = 25944,				-- The Hinterlands Flame Keeper
-									["maps"] = { 26 }, 			-- The Hinterlands
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 13,		-- Tirisfal Glades
-									["questID"] = 11862, 		-- Honor the Flame [Tirisfal Glades]
-									["qg"] = 25946,				-- Tirisfal Glades Flame Keeper
-									["maps"] = { 18 }, 			-- Tirisfal Glades
-									["races"] = HORDE_ONLY,
-								},
-								{
-									["criteriaID"] = 14,		-- Western Plaguelands
-									["questID"] = 28931, 		-- Honor the Flame [Western Plaguelands]
-									["qg"] = 51604,				-- Western Plaguelands Flame Keeper
-									["maps"] = { 22 }, 			-- Western Plaguelands
-									["races"] = HORDE_ONLY,
-								},
-							}),
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								crit(1, {	-- Arathi Highlands
+									["coord"] = { 69.0, 42.0, 14 },
+									["maps"] = { 14 },	-- Arathi Highlands
+								}),
+								crit(2, {	-- Badlands
+									["questID"] = 11842,	-- Honor the Flame [Badlands]
+									["qg"] = 25925,	-- Badlands Flame Keeper
+									["maps"] = { 15 },	-- Badlands
+								}),
+								crit(3, {	-- Blasted Lands
+									["questID"] = 28930,	-- Honor the Flame [Blasted Lands]
+									["qg"] = 51603,	-- Blasted Lands Flame Keeper
+									["maps"] = { 17 },	-- Blasted Lands
+								}),
+								crit(4, {	-- Burning Steppes
+									["questID"] = 11844,	-- Honor the Flame [Burning Steppes]
+									["qg"] = 25927,	-- Burning Steppes Flame Keeper
+									["maps"] = { 36 },	-- Burning Steppes
+								}),
+								crit(5, {	-- Eversong Woods
+									["questID"] = 11848,	-- Honor the Flame [Eversong Woods]
+									["qg"] = 25931,	-- Eversong Woods Flame Keeper
+									["maps"] = { 94 },	-- Eversong Woods
+								}),
+								crit(6, {	-- Ghostlands
+									["questID"] = 11850,	-- Honor the Flame [Ghostlands]
+									["qg"] = 25933,	-- Ghostlands Flame Keeper
+									["maps"] = { 95 },	-- Ghostlands
+								}),
+								crit(7, {	-- Hillsbrad Foothills
+									["questID"] = 11853,	-- Honor the Flame [Hillsbrad Foothills]
+									["qg"] = 25935,	-- Hillsbrad Flame Keeper
+									["maps"] = { 25 },	-- Hillsbrad Foothills
+								}),
+								crit(8, {	-- Northern Stranglethorn
+									["questID"] = 28924,	-- Honor the Flame [Northern Stranglethorn]
+									["qg"] = 51582,	-- Northern Stranglethorn Vale Flame Keeper
+									["maps"] = { 50 },	-- Northern Stranglethorn
+								}),
+								crit(9, {	-- Silverpine Forest
+									["questID"] = 11584,	-- Honor the Flame [Silverpine Forest]
+									["qg"] = 25939,	-- Silverpine Forest Flame Keeper
+									["maps"] = { 21 },	-- Silverpine Forest
+								}),
+								crit(10, {	-- Swamp of Sorrows
+									["questID"] = 11857,	-- Honor the Flame [Swamp of Sorrows]
+									["qg"] = 25941,	-- Swamp of Sorrows Flame Keeper
+									["maps"] = { 51 },	-- Swamp of Sorrows
+								}),
+								crit(11, {	-- The Cape of Stranglethorn
+									["questID"] = 11837,	-- Honor the Flame [The Cape of Stranglethorn]
+									["qg"] = 25920,	-- Cape of Stranglethorn Flame Keeper
+									["maps"] = { 210 },	-- The Cape of Stranglethorn
+								}),
+								crit(12, {	-- The Hinterlands
+									["questID"] = 11860,	-- Honor the Flame [The Hinterlands]
+									["qg"] = 25944,	-- The Hinterlands Flame Keeper
+									["maps"] = { 26 },	-- The Hinterlands
+								}),
+								crit(13, {	-- Tirisfal Glades
+									["questID"] = 11862,	-- Honor the Flame [Tirisfal Glades]
+									["qg"] = 25946,	-- Tirisfal Glades Flame Keeper
+									["maps"] = { 18 },	-- Tirisfal Glades
+								}),
+								crit(14, {	-- Western Plaguelands
+									["questID"] = 28931,	-- Honor the Flame [Western Plaguelands]
+									["qg"] = 51604,	-- Western Plaguelands Flame Keeper
+									["maps"] = { 22 },	-- Western Plaguelands
+								}),
+							},
 						}),
 						ach(1026, {	-- Flame Keeper of Kalimdor
 							["g"] = bubbleDown({["achievementID"] = 1026}, {	-- Flame Keeper of Kalimdor
@@ -1709,6 +1673,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["icon"] = "Interface\\Icons\\spell_fire_fire",
 					["maps"] = { 69 },	-- Feralas
 				}),
+				q(44583, {	-- Desecrate this Fire! — Frostfire Ridge
+					["repeatable"] = true,
+				--	["objectID"] = 259870,	-- Horde Bonfire
+					["coord"] = { 72.8, 65.2, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 525, },	-- Frostfire Ridge
+				}),
 				q(11774, {	-- Desecrate this Fire! — Ghostlands
 					["repeatable"] = true,
 				--	["objectID"] = 187962,	-- Horde Bonfire
@@ -1764,6 +1736,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\spell_fire_fire",
 					["maps"] = { 107 },	-- Nagrand
+				}),
+				q(54746, {	-- Desecrate this Fire! — Nazmir
+					["repeatable"] = true,
+				--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+					["coord"] = { 40.0, 74.0, 863 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 863 },	-- Nazmir
 				}),
 				q(11799, {	-- Desecrate this Fire! — Netherstorm
 					["repeatable"] = true,
@@ -1845,6 +1825,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["icon"] = "Interface\\Icons\\spell_fire_fire",
 					["maps"] = { 120 },	-- Storm Peaks
 				}),
+				q(44627, {	-- Desecrate this Fire! — Suramar
+					["repeatable"] = true,
+				--	["objectID"] = 259926,	-- Horde Bonfire
+					["coord"] = { 30.3, 45.4, 680 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 680 },	-- Suramar
+				}),
 				q(11781, {	-- Desecrate this Fire! — Swamp of Sorrows
 					["repeatable"] = true,
 				--	["objectID"] = 187969,	-- Horde Bonfire
@@ -1917,6 +1905,22 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["icon"] = "Interface\\Icons\\spell_fire_fire",
 					["maps"] = { 78 },	-- Un'Goro Crater
 				}),
+				q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
+					["repeatable"] = true,
+				--	["objectID"] = 217852,	-- Horde Bonfire
+					["coord"] = { 77.9, 33.9, 390 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 390, },	-- Vale of Eternal Blossoms
+				}),
+				q(54749, {	-- Desecrate this Fire! — Vol'dun
+					["repeatable"] = true,
+				--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+					["coord"] = { 55.9, 47.4, 864 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 864 },	-- Vol'dun
+				}),
 				q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 					["repeatable"] = true,
 				--	["objectID"] = 207990,	-- Horde Bonfire
@@ -1940,6 +1944,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\spell_fire_fire",
 					["maps"] = { 102 },	-- Zangarmarsh
+				}),
+				q(54744, {	-- Desecrate this Fire! — Zuldazar
+					["repeatable"] = true,
+				--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+					["coord"] = { 53.3, 48.1, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+					["maps"] = { 862 },	-- Zuldazar
 				}),
 				q(13458, {	-- Desecrate this Fire! — Zul'Drak
 					["repeatable"] = true,
@@ -2060,6 +2072,13 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 422 },	-- Dread Wastes
 					["qg"] = 69522,	-- Dread Wastes Flame Guardian
+				}),
+				q(54743, {	-- Honor the Flame — Drustvar
+					["repeatable"] = true,
+					["coord"] = { 40.2, 47.7, 896 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 896 },	-- Drustvar
+					["qg"] = 148934,	-- Drustvar Flame Warden
 				}),
 				q(11813, {	-- Honor the Flame — Dun Morogh
 					["repeatable"] = true,
@@ -2264,6 +2283,13 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["maps"] = { 120 },	-- Storm Peaks
 					["qg"] = 32806,	-- Storm Peaks Flame Warden
 				}),
+				q(54741, {	-- Honor the Flame — Stormsong Valley
+					["repeatable"] = true,
+					["coord"] = { 35.8, 51.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 942 },	-- Stormsong Valley
+					["qg"] = 148932,	-- Stormsong Valley Flame Warden
+				}),
 				q(44613, {	-- Honor the Flame — Suramar
 					["repeatable"] = true,
 					["coord"] = { 23.0, 58.4, 680 },
@@ -2319,6 +2345,13 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 26 },	-- The Hinterlands
 					["qg"] = 25908,	-- The Hinterlands Flame Warden
+				}),
+				q(54737, {	-- Honor the Flame — Tiragarde Sound
+					["repeatable"] = true,
+					["coord"] = { 76.3, 49.9, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 895 },	-- Tiragarde Sound
+					["qg"] = 148917,	-- Tiragarde Sound Flame Warden
 				}),
 				q(32501, {	-- Honor the Flame — Townlong Steppes
 					["repeatable"] = true,
@@ -2446,15 +2479,20 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					["icon"] = "Interface\\Icons\\spell_fire_flameshock",
 					["maps"] = { 110 },	-- Silvermoon City
 				}),
-
-				
+			--	ALLIANCE QUESTS END HERE.
+			--	HORDE QUESTS BEGIN HERE.
+				q(11840, {	-- Honor the Flame — Arathi Highlands
+					["repeatable"] = true,
+					["coord"] = { 69.0, 42.0, 14 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 14 },	-- Arathi Highlands
+					["qg"] = 25923,	-- Arathi Flame Keeper
+				}),
 		
 		
 		
 		
-						--	["questID"] = ,	-- Honor the Flame (Tiragarde Sound)
-					--	["qg"] = ,	-- 
-					--	["maps"] = { 895 },	-- Tiragarde Sound
+									
 
 		
 		
@@ -2466,7 +2504,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				q(, {	-- Honor the Flame — 
 					["repeatable"] = true,
 					["coord"] = { , ,  },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["maps"] = { 
 					["qg"] = 
 				}),
