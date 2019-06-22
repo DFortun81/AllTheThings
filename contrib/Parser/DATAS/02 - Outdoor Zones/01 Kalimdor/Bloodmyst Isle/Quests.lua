@@ -57,12 +57,12 @@ _.Zones =
 					["qg"] = 17421,	-- Clopper Wizbang
 					["races"] = ALLIANCE_ONLY,
 				},
-				{	-- Audience with the Prophet
-					["questID"] = 9698,
+				q(9698, {	-- Audience with the Prophet
 					["qg"] = 17825,	-- Interrogator Elysia
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.4, 54.4, 106 },
 					["sourceQuest"] = 9696,	-- Translations...
-				},
+					["races"] = ALLIANCE_ONLY,
+				}),
 				{	-- Battered Ancient Book
 					["objectID"] = 181756,
 					["description"] = "The book that begins this quest is rewarded when you complete the 'A Map to Where?' quest.",
@@ -219,23 +219,23 @@ _.Zones =
 						},
 					},
 				},
-				{ 	-- I Shoot Magic Into the Darkness
-					["questID"] = 9700,
+				q(9700, { 	-- I Shoot Magic Into the Darkness
 					["qg"] = 17684,	-- Vindicator Boros
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 55.4, 55.2, 106 },
 					["sourceQuest"] = 9699,	-- Truth of Fiction
-					["groups"] = {
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
 						i(131271),	-- Vindicator's Chain Boots
 						i(26024),	-- Vindicator's Leather Moccasins
 						i(26010),	-- Vindicator's Soft Sole Slippers
 						i(26036),	-- Vindicator's Stompers
 					},
-				},
-				{	-- Intercepting the Message
-					["questID"] = 9779,
+				}),
+				q(9779, {	-- Intercepting the Message
 					["qg"] = 17684,	-- Vindicator Boros
+					["coord"] = { 55.4, 55.2, 106 },
 					["races"] = ALLIANCE_ONLY,
-				},
+				}),
 				{	-- Into the Dream
 					["questID"] = 9688,
 					["qg"] = 17674,	-- Prince Toreth
@@ -473,12 +473,12 @@ _.Zones =
 						i(26017),	-- Venomous Silk Cover
 					},
 				},
-				{	-- Translations...
-					["questID"] = 9696,
+				q(9696, {	-- Translations...
 					["qg"] = 17684,	-- Vindicator Boros
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 55.4, 55.2, 106 },
 					["sourceQuest"] = 9779,	-- Intercepting the Message
-				},
+					["races"] = ALLIANCE_ONLY,
+				}),
 				{	-- Tzerak's Armor Plate
 					["itemID"] = 23900,
 					["groups"] = {

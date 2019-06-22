@@ -262,10 +262,12 @@ _.Zones =
 						},
 					}),
 					q(28393, {	-- A Dangerous Alliance
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 1 },	-- Warrior
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 914,	-- Ander Germaine
+						["coord"] = {79.4, 69.0, 84 },
+						["sourceQuest"] = 28258,	-- Meet with Ander Germaine
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 50,
 						["g"] = {
 							i(65618),	-- Faceguard of the Crown
 							i(65639),	-- Headguard of the Crown
@@ -279,10 +281,12 @@ _.Zones =
 					}),
 --					qa(26190),	-- A Fisherman's Feast 
 					q(27337, {	-- A Fitting Weapon
-					--	["sourceQuests"] = {  },	-- 
-						["classes"] = { 1 },	-- Warrior
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 914,	-- Ander Germaine
+						["coord"] = {79.4, 69.0, 84 },
+						["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 1 },	-- Warrior
+						["lvl"] = 20,	
 						["g"] = {
 							i(65492),	-- Broadsword of the Crown
 							i(65493),	-- Greatsword of the Crown
