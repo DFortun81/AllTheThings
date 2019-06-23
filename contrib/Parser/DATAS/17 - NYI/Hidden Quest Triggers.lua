@@ -51,6 +51,7 @@ _.NeverImplemented =
 		q(39376),	-- Short-Supply Reward (looted second treasure chest in Tanaan Jungle)
 		q(39377),	-- Short-Supply Reward (looted third treasure chest in Tanaan Jungle)
 		q(35961),	-- Skyreach Reward Quest (triggered at the end of Normal Skyreach)
+		q(35538),	-- The Arcatraz Reward Quest (completed Timewalking Arcatraz)
 		q(35522),	-- The Black Morass Reward Quest (completed Timewalking Black Morass)
 		q(35566),	-- The Blood Furnace Reward Quest (Triggered by completing The Blood Furnace)
 		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)

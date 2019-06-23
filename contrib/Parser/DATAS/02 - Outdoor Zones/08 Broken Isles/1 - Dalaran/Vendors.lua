@@ -3121,1587 +3121,710 @@ _.Zones =
 										i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins
 									},
 								}),
-								{	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
-									["itemID"] = 146144,	-- Ensemble: Vindictive Gladiator's Leather Armor
+								i(146144, {	-- Ensemble: Vindictive Gladiator's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Vindictive Gladiator's Leather Helm
-											["itemID"] = 135650,	-- Vindictive Gladiator's Leather Helm
-										},
-										{	-- Vindictive Gladiator's Leather Spaulders
-											["itemID"] = 135652,	-- Vindictive Gladiator's Leather Spaulders
-										},
-										{	-- Vindictive Gladiator's Shadowcape
-											["itemID"] = 136862,	-- Vindictive Gladiator's Shadowcape
-										},
-										{	-- Vindictive Gladiator's Leather Tunic
-											["itemID"] = 135647,	-- Vindictive Gladiator's Leather Tunic
-										},
-										{	-- Vindictive Gladiator's Leather Wristguards
-											["itemID"] = 135654,	-- Vindictive Gladiator's Leather Wristguards
-										},
-										{	-- Vindictive Gladiator's Leather Gloves
-											["itemID"] = 135649,	-- Vindictive Gladiator's Leather Gloves
-										},
-										{	-- Vindictive Gladiator's Leather Belt
-											["itemID"] = 135653,	-- Vindictive Gladiator's Leather Belt
-										},
-										{	-- Vindictive Gladiator's Leather Legguards
-											["itemID"] = 135651,	-- Vindictive Gladiator's Leather Legguards
-										},
-										{	-- Vindictive Gladiator's Leather Slippers
-											["itemID"] = 135648,	-- Vindictive Gladiator's Leather Slippers
-										},
+										i(135650),	-- Vindictive Gladiator's Leather Helm
+										i(135652),	-- Vindictive Gladiator's Leather Spaulders
+										i(136862),	-- Vindictive Gladiator's Shadowcape
+										i(135647),	-- Vindictive Gladiator's Leather Tunic
+										i(135654),	-- Vindictive Gladiator's Leather Wristguards
+										i(135649),	-- Vindictive Gladiator's Leather Gloves
+										i(135653),	-- Vindictive Gladiator's Leather Belt
+										i(135651),	-- Vindictive Gladiator's Leather Legguards
+										i(135648),	-- Vindictive Gladiator's Leather Slippers
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
-									["itemID"] = 146142,	-- Ensemble: Vindictive Gladiator's Ironskin Armor
+								}),
+								i(146142, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Vindictive Gladiator's Ironskin Helm
-											["itemID"] = 135625,	-- Vindictive Gladiator's Ironskin Helm
-										},
-										{	-- Vindictive Gladiator's Ironskin Spaulders
-											["itemID"] = 135627,	-- Vindictive Gladiator's Ironskin Spaulders
-										},
-										{	-- Vindictive Gladiator's Ironskin Cloak
-											["itemID"] = 135687,	-- Vindictive Gladiator's Ironskin Cloak
-										},
-										{	-- Vindictive Gladiator's Ironskin Tunic
-											["itemID"] = 135628,	-- Vindictive Gladiator's Ironskin Tunic
-										},
-										{	-- Vindictive Gladiator's Ironskin Wristguards
-											["itemID"] = 135630,	-- Vindictive Gladiator's Ironskin Wristguards
-										},
-										{	-- Vindictive Gladiator's Ironskin Gloves
-											["itemID"] = 135624,	-- Vindictive Gladiator's Ironskin Gloves
-										},
-										{	-- Vindictive Gladiator's Ironskin Belt
-											["itemID"] = 135629,	-- Vindictive Gladiator's Ironskin Belt
-										},
-										{	-- Vindictive Gladiator's Ironskin Legguards
-											["itemID"] = 135626,	-- Vindictive Gladiator's Ironskin Legguards
-										},
-										{	-- Vindictive Gladiator's Ironskin Slippers
-											["itemID"] = 135623,	-- Vindictive Gladiator's Ironskin Slippers
-										},
+										i(135625),	-- Vindictive Gladiator's Ironskin Helm
+										i(135627),	-- Vindictive Gladiator's Ironskin Spaulders
+										i(135687),	-- Vindictive Gladiator's Ironskin Cloak
+										i(135628),	-- Vindictive Gladiator's Ironskin Tunic
+										i(135630),	-- Vindictive Gladiator's Ironskin Wristguards
+										i(135624),	-- Vindictive Gladiator's Ironskin Gloves
+										i(135629),	-- Vindictive Gladiator's Ironskin Belt
+										i(135626),	-- Vindictive Gladiator's Ironskin Legguards
+										i(135623),	-- Vindictive Gladiator's Ironskin Slippers
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
-									["itemID"] = 146262,	-- Ensemble: Vindictive Gladiator's Felskin Armor
+								}),
+								i(146262, {	-- Ensemble: Vindictive Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Vindictive Gladiator's Felskin Helm
-											["itemID"] = 136281,	-- Vindictive Gladiator's Felskin Helm
-										},
-										{	-- Vindictive Gladiator's Felskin Spaulders
-											["itemID"] = 136284,	-- Vindictive Gladiator's Felskin Spaulders
-										},
-										{	-- Vindictive Gladiator's Demonthread Cloak
-											["itemID"] = 136891,	-- Vindictive Gladiator's Demonthread Cloak
-										},
-										{	-- Vindictive Gladiator's Felskin Tunic
-											["itemID"] = 136283,	-- Vindictive Gladiator's Felskin Tunic
-										},
-										{	-- Vindictive Gladiator's Felskin Wristguards
-											["itemID"] = 136286,	-- Vindictive Gladiator's Felskin Wristguards
-										},
-										{	-- Vindictive Gladiator's Felskin Gloves
-											["itemID"] = 136280,	-- Vindictive Gladiator's Felskin Gloves
-										},
-										{	-- Vindictive Gladiator's Felskin Belt
-											["itemID"] = 136285,	-- Vindictive Gladiator's Felskin Belt
-										},
-										{	-- Vindictive Gladiator's Felskin Legguards
-											["itemID"] = 136282,	-- Vindictive Gladiator's Felskin Legguards
-										},
-										{	-- Vindictive Gladiator's Felskin Boots
-											["itemID"] = 136279,	-- Vindictive Gladiator's Felskin Boots
-										},
+										i(136281),	-- Vindictive Gladiator's Felskin Helm
+										i(136284),	-- Vindictive Gladiator's Felskin Spaulders
+										i(136891),	-- Vindictive Gladiator's Demonthread Cloak
+										i(136283),	-- Vindictive Gladiator's Felskin Tunic
+										i(136286),	-- Vindictive Gladiator's Felskin Wristguards
+										i(136280),	-- Vindictive Gladiator's Felskin Gloves
+										i(136285),	-- Vindictive Gladiator's Felskin Belt
+										i(136282),	-- Vindictive Gladiator's Felskin Legguards
+										i(136279),	-- Vindictive Gladiator's Felskin Boots
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
-									["itemID"] = 146138,	-- Ensemble: Vindictive Gladiator's Chain Armor
+								}),
+								i(146138, {	-- Ensemble: Vindictive Gladiator's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Vindictive Gladiator's Chain Helm
-											["itemID"] = 135610,	-- Vindictive Gladiator's Chain Helm
-										},
-										{	-- Vindictive Gladiator's Chain Spaulders
-											["itemID"] = 135612,	-- Vindictive Gladiator's Chain Spaulders
-										},
-										{	-- Vindictive Gladiator's Drape of the Tracker
-											["itemID"] = 135683,	-- Vindictive Gladiator's Drape of the Tracker
-										},
-										{	-- Vindictive Gladiator's Chain Armor
-											["itemID"] = 135607,	-- Vindictive Gladiator's Chain Armor
-										},
-										{	-- Vindictive Gladiator's Chain Armband
-											["itemID"] = 135614,	-- Vindictive Gladiator's Chain Armband
-										},
-										{	-- Vindictive Gladiator's Chain Gauntlets
-											["itemID"] = 135609,	-- Vindictive Gladiator's Chain Gauntlets
-										},
-										{	-- Vindictive Gladiator's Chain Clasp
-											["itemID"] = 135613,	-- Vindictive Gladiator's Chain Clasp
-										},
-										{	-- Vindictive Gladiator's Chain Leggings
-											["itemID"] = 135611,	-- Vindictive Gladiator's Chain Leggings
-										},
-										{	-- Vindictive Gladiator's Chain Treads
-											["itemID"] = 135608,	-- Vindictive Gladiator's Chain Treads
-										},
+										i(135610),	-- Vindictive Gladiator's Chain Helm
+										i(135612),	-- Vindictive Gladiator's Chain Spaulders
+										i(135683),	-- Vindictive Gladiator's Drape of the Tracker
+										i(135607),	-- Vindictive Gladiator's Chain Armor
+										i(135614),	-- Vindictive Gladiator's Chain Armband
+										i(135609),	-- Vindictive Gladiator's Chain Gauntlets
+										i(135613),	-- Vindictive Gladiator's Chain Clasp
+										i(135611),	-- Vindictive Gladiator's Chain Leggings
+										i(135608),	-- Vindictive Gladiator's Chain Treads
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
-									["itemID"] = 146136,	-- Ensemble: Vindictive Gladiator's Ringmail Armor
+								}),
+								i(146136, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Vindictive Gladiator's Ringmail Helm
-											["itemID"] = 135658,	-- Vindictive Gladiator's Ringmail Helm
-										},
-										{	-- Vindictive Gladiator's Ringmail Spaulders
-											["itemID"] = 135660,	-- Vindictive Gladiator's Ringmail Spaulders
-										},
-										{	-- Vindictive Gladiator's Totemic Cloak
-											["itemID"] = 136863,	-- Vindictive Gladiator's Totemic Cloak
-										},
-										{	-- Vindictive Gladiator's Ringmail Armor
-											["itemID"] = 135655,	-- Vindictive Gladiator's Ringmail Armor
-										},
-										{	-- Vindictive Gladiator's Ringmail Armband
-											["itemID"] = 135662,	-- Vindictive Gladiator's Ringmail Armband
-										},
-										{	-- Vindictive Gladiator's Ringmail Gauntlets
-											["itemID"] = 135657,	-- Vindictive Gladiator's Ringmail Gauntlets
-										},
-										{	-- Vindictive Gladiator's Ringmail Clasp
-											["itemID"] = 135661,	-- Vindictive Gladiator's Ringmail Clasp
-										},
-										{	-- Vindictive Gladiator's Ringmail Kilt
-											["itemID"] = 135659,	-- Vindictive Gladiator's Ringmail Kilt
-										},
-										{	-- Vindictive Gladiator's Ringmail Boots
-											["itemID"] = 135656,	-- Vindictive Gladiator's Ringmail Boots
-										},
+										i(135658),	-- Vindictive Gladiator's Ringmail Helm
+										i(135660),	-- Vindictive Gladiator's Ringmail Spaulders
+										i(136863),	-- Vindictive Gladiator's Totemic Cloak
+										i(135655),	-- Vindictive Gladiator's Ringmail Armor
+										i(135662),	-- Vindictive Gladiator's Ringmail Armband
+										i(135657),	-- Vindictive Gladiator's Ringmail Gauntlets
+										i(135661),	-- Vindictive Gladiator's Ringmail Clasp
+										i(135659),	-- Vindictive Gladiator's Ringmail Kilt
+										i(135656),	-- Vindictive Gladiator's Ringmail Boots
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
-									["itemID"] = 146134,	-- Ensemble: Vindictive Gladiator's Scaled Armor
+								}),
+								i(146134, {	-- Ensemble: Vindictive Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Vindictive Gladiator's Scaled Helm
-											["itemID"] = 135634,	-- Vindictive Gladiator's Scaled Helm
-										},
-										{	-- Vindictive Gladiator's Scaled Shoulders
-											["itemID"] = 135636,	-- Vindictive Gladiator's Scaled Shoulders
-										},
-										{	-- Vindictive Gladiator's Greatcloak of Faith
-											["itemID"] = 135688,	-- Vindictive Gladiator's Greatcloak of Faith
-										},
-										{	-- Vindictive Gladiator's Scaled Battlerobe
-											["itemID"] = 135631,	-- Vindictive Gladiator's Scaled Battlerobe
-										},
-										{	-- Vindictive Gladiator's Scaled Wristplates
-											["itemID"] = 135638,	-- Vindictive Gladiator's Scaled Wristplates
-										},
-										{	-- Vindictive Gladiator's Scaled Gauntlets
-											["itemID"] = 135633,	-- Vindictive Gladiator's Scaled Gauntlets
-										},
-										{	-- Vindictive Gladiator's Scaled Girdle
-											["itemID"] = 135637,	-- Vindictive Gladiator's Scaled Girdle
-										},
-										{	-- Vindictive Gladiator's Scaled Legguards
-											["itemID"] = 135635,	-- Vindictive Gladiator's Scaled Legguards
-										},
-										{	-- Vindictive Gladiator's Scaled Sabatons
-											["itemID"] = 135632,	-- Vindictive Gladiator's Scaled Sabatons
-										},
-										{	-- Fearless Gladiator's Scaled Helm
-											["itemID"] = 142603,	-- Fearless Gladiator's Scaled Helm
-										},
-										{	-- Fearless Gladiator's Scaled Shoulders
-											["itemID"] = 142605,	-- Fearless Gladiator's Scaled Shoulders
-										},
-										{	-- Fearless Gladiator's Greatcloak of Faith
-											["itemID"] = 142657,	-- Fearless Gladiator's Greatcloak of Faith
-										},
-										{	-- Fearless Gladiator's Scaled Battlerobe
-											["itemID"] = 142600,	-- Fearless Gladiator's Scaled Battlerobe
-										},
-										{	-- Fearless Gladiator's Scaled Wristplates
-											["itemID"] = 142607,	-- Fearless Gladiator's Scaled Wristplates
-										},
-										{	-- Fearless Gladiator's Scaled Gauntlets
-											["itemID"] = 142602,	-- Fearless Gladiator's Scaled Gauntlets
-										},
-										{	-- Fearless Gladiator's Scaled Girdle
-											["itemID"] = 142606,	-- Fearless Gladiator's Scaled Girdle
-										},
-										{	-- Fearless Gladiator's Scaled Legguards
-											["itemID"] = 142604,	-- Fearless Gladiator's Scaled Legguards
-										},
-										{	-- Fearless Gladiator's Scaled Sabatons
-											["itemID"] = 142601,	-- Fearless Gladiator's Scaled Sabatons
-										},
+										i(135634),	-- Vindictive Gladiator's Scaled Helm
+										i(135636),	-- Vindictive Gladiator's Scaled Shoulders
+										i(135688),	-- Vindictive Gladiator's Greatcloak of Faith
+										i(135631),	-- Vindictive Gladiator's Scaled Battlerobe
+										i(135638),	-- Vindictive Gladiator's Scaled Wristplates
+										i(135633),	-- Vindictive Gladiator's Scaled Gauntlets
+										i(135637),	-- Vindictive Gladiator's Scaled Girdle
+										i(135635),	-- Vindictive Gladiator's Scaled Legguards
+										i(135632),	-- Vindictive Gladiator's Scaled Sabatons
+										i(142603),	-- Fearless Gladiator's Scaled Helm
+										i(142605),	-- Fearless Gladiator's Scaled Shoulders
+										i(142657),	-- Fearless Gladiator's Greatcloak of Faith
+										i(142600),	-- Fearless Gladiator's Scaled Battlerobe
+										i(142607),	-- Fearless Gladiator's Scaled Wristplates
+										i(142602),	-- Fearless Gladiator's Scaled Gauntlets
+										i(142606),	-- Fearless Gladiator's Scaled Girdle
+										i(142604),	-- Fearless Gladiator's Scaled Legguards
+										i(142601),	-- Fearless Gladiator's Scaled Sabatons
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
-									["itemID"] = 146130,	-- Ensemble: Vindictive Gladiator's Plate Armor
+								}),
+								i(146130, {	-- Ensemble: Vindictive Gladiator's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Vindictive Gladiator's Plate Helm
-											["itemID"] = 135674,	-- Vindictive Gladiator's Plate Helm
-										},
-										{	-- Vindictive Gladiator's Plate Shoulders
-											["itemID"] = 135676,	-- Vindictive Gladiator's Plate Shoulders
-										},
-										{	-- Vindictive Gladiator's Cloak of Battle
-											["itemID"] = 136885,	-- Vindictive Gladiator's Cloak of Battle
-										},
-										{	-- Vindictive Gladiator's Plate Chestpiece
-											["itemID"] = 135671,	-- Vindictive Gladiator's Plate Chestpiece
-										},
-										{	-- Vindictive Gladiator's Plate Wristplates
-											["itemID"] = 135678,	-- Vindictive Gladiator's Plate Wristplates
-										},
-										{	-- Vindictive Gladiator's Plate Gauntlets
-											["itemID"] = 135673,	-- Vindictive Gladiator's Plate Gauntlets
-										},
-										{	-- Vindictive Gladiator's Plate Girdle
-											["itemID"] = 135677,	-- Vindictive Gladiator's Plate Girdle
-										},
-										{	-- Vindictive Gladiator's Plate Legguards
-											["itemID"] = 135675,	-- Vindictive Gladiator's Plate Legguards
-										},
-										{	-- Vindictive Gladiator's Plate Warboots
-											["itemID"] = 135672,	-- Vindictive Gladiator's Plate Warboots
-										},
+										i(135674),	-- Vindictive Gladiator's Plate Helm
+										i(135676),	-- Vindictive Gladiator's Plate Shoulders
+										i(136885),	-- Vindictive Gladiator's Cloak of Battle
+										i(135671),	-- Vindictive Gladiator's Plate Chestpiece
+										i(135678),	-- Vindictive Gladiator's Plate Wristplates
+										i(135673),	-- Vindictive Gladiator's Plate Gauntlets
+										i(135677),	-- Vindictive Gladiator's Plate Girdle
+										i(135675),	-- Vindictive Gladiator's Plate Legguards
+										i(135672),	-- Vindictive Gladiator's Plate Warboots
 									},
-								},
-								{	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
-									["itemID"] = 146132,	-- Ensemble: Vindictive Gladiator's Dreadplate Armor
+								}),
+								i(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Vindictive Gladiator's Dreadplate Helm
-											["itemID"] = 135594,	-- Vindictive Gladiator's Dreadplate Helm
-										},
-										{	-- Vindictive Gladiator's Dreadplate Shoulders
-											["itemID"] = 135596,	-- Vindictive Gladiator's Dreadplate Shoulders
-										},
-										{	-- Vindictive Gladiator's Dreadcloak
-											["itemID"] = 135679,	-- Vindictive Gladiator's Dreadcloak
-										},
-										{	-- Vindictive Gladiator's Dreadplate Chestpiece
-											["itemID"] = 135591,	-- Vindictive Gladiator's Dreadplate Chestpiece
-										},
-										{	-- Vindictive Gladiator's Dreadplate Wristplates
-											["itemID"] = 135598,	-- Vindictive Gladiator's Dreadplate Wristplates
-										},
-										{	-- Vindictive Gladiator's Dreadplate Gauntlets
-											["itemID"] = 135593,	-- Vindictive Gladiator's Dreadplate Gauntlets
-										},
-										{	-- Vindictive Gladiator's Dreadplate Girdle
-											["itemID"] = 135597,	-- Vindictive Gladiator's Dreadplate Girdle
-										},
-										{	-- Vindictive Gladiator's Dreadplate Legguards
-											["itemID"] = 135595,	-- Vindictive Gladiator's Dreadplate Legguards
-										},
-										{	-- Vindictive Gladiator's Dreadplate Sabatons
-											["itemID"] = 135592,	-- Vindictive Gladiator's Dreadplate Sabatons
-										},
+										i(135594),	-- Vindictive Gladiator's Dreadplate Helm
+										i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders
+										i(135679),	-- Vindictive Gladiator's Dreadcloak
+										i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece
+										i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates
+										i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets
+										i(135597),	-- Vindictive Gladiator's Dreadplate Girdle
+										i(135595),	-- Vindictive Gladiator's Dreadplate Legguards
+										i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons
 									},
-								},
+								}),
 								-- LEGION Season 3 & 4
-								{	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
-									["itemID"] = 147663,	-- Ensemble: Cruel Gladiator's Satin Armor
+								i(147663, {	-- Ensemble: Cruel Gladiator's Satin Armor [Priest - 5/10/19]
 									["classes"] = { 5 },	-- Priest
 									["g"] = {
-										{	-- Cruel Gladiator's Satin Hood
-											["itemID"] = 144680,	-- Cruel Gladiator's Satin Hood
-										},
-										{	-- Cruel Gladiator's Satin Mantle
-											["itemID"] = 144686,	-- Cruel Gladiator's Satin Mantle
-										},
-										{	-- Cruel Gladiator's Drape of Piety
-											["itemID"] = 144548,	-- Cruel Gladiator's Drape of Piety
-										},
-										{	-- Cruel Gladiator's Satin Robe
-											["itemID"] = 144684,	-- Cruel Gladiator's Satin Robe
-										},
-										{	-- Cruel Gladiator's Satin Bracers
-											["itemID"] = 144690,	-- Cruel Gladiator's Satin Bracers
-										},
-										{	-- Cruel Gladiator's Satin Gloves
-											["itemID"] = 144678,	-- Cruel Gladiator's Satin Gloves
-										},
-										{	-- Cruel Gladiator's Satin Cord
-											["itemID"] = 144688,	-- Cruel Gladiator's Satin Cord
-										},
-										{	-- Cruel Gladiator's Satin Leggings
-											["itemID"] = 144682,	-- Cruel Gladiator's Satin Leggings
-										},
-										{	-- Cruel Gladiator's Satin Treads
-											["itemID"] = 144676,	-- Cruel Gladiator's Satin Treads
-										},
+										i(144680),	-- Cruel Gladiator's Satin Hood
+										i(144686),	-- Cruel Gladiator's Satin Mantle
+										i(144548),	-- Cruel Gladiator's Drape of Piety
+										i(144684),	-- Cruel Gladiator's Satin Robe
+										i(144690),	-- Cruel Gladiator's Satin Bracers
+										i(144678),	-- Cruel Gladiator's Satin Gloves
+										i(144688),	-- Cruel Gladiator's Satin Cord
+										i(144682),	-- Cruel Gladiator's Satin Leggings
+										i(144676),	-- Cruel Gladiator's Satin Treads
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
-									["itemID"] = 147668,	-- Ensemble: Cruel Gladiator's Silk Armor
+								}),
+								i(147668, {	-- Ensemble: Cruel Gladiator's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Cruel Gladiator's Silk Cowl
-											["itemID"] = 144626,	-- Cruel Gladiator's Silk Cowl
-										},
-										{	-- Cruel Gladiator's Silk Amice
-											["itemID"] = 144632,	-- Cruel Gladiator's Silk Amice
-										},
-										{	-- Cruel Gladiator's Silken Shawl
-											["itemID"] = 144542,	-- Cruel Gladiator's Silken Shawl
-										},
-										{	-- Cruel Gladiator's Silk Robe
-											["itemID"] = 144630,	-- Cruel Gladiator's Silk Robe
-										},
-										{	-- Cruel Gladiator's Silk Bracers
-											["itemID"] = 144636,	-- Cruel Gladiator's Silk Bracers
-										},
-										{	-- Cruel Gladiator's Silk Handguards
-											["itemID"] = 144624,	-- Cruel Gladiator's Silk Handguards
-										},
-										{	-- Cruel Gladiator's Silk Cord
-											["itemID"] = 144634,	-- Cruel Gladiator's Silk Cord
-										},
-										{	-- Cruel Gladiator's Silk Trousers
-											["itemID"] = 144628,	-- Cruel Gladiator's Silk Trousers
-										},
-										{	-- Cruel Gladiator's Silk Treads
-											["itemID"] = 144622,	-- Cruel Gladiator's Silk Treads
-										},
+										i(144626),	-- Cruel Gladiator's Silk Cowl
+										i(144632),	-- Cruel Gladiator's Silk Amice
+										i(144542),	-- Cruel Gladiator's Silken Shawl
+										i(144630),	-- Cruel Gladiator's Silk Robe
+										i(144636),	-- Cruel Gladiator's Silk Bracers
+										i(144624),	-- Cruel Gladiator's Silk Handguards
+										i(144634),	-- Cruel Gladiator's Silk Cord
+										i(144628),	-- Cruel Gladiator's Silk Trousers
+										i(144622),	-- Cruel Gladiator's Silk Treads
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Felweave Armor [Warlock - 5/10/19]
-									["itemID"] = 147653,	-- Ensemble: Cruel Gladiator's Felweave Armor
+								}),
+								i(147653, {	-- Ensemble: Cruel Gladiator's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Cruel Gladiator's Felweave Cowl
-											["itemID"] = 144752,	-- Cruel Gladiator's Felweave Cowl
-										},
-										{	-- Cruel Gladiator's Felweave Amice
-											["itemID"] = 144758,	-- Cruel Gladiator's Felweave Amice
-										},
-										{	-- Cruel Gladiator's Felweave Cloak
-											["itemID"] = 144554,	-- Cruel Gladiator's Felweave Cloak
-										},
-										{	-- Cruel Gladiator's Felweave Raiment
-											["itemID"] = 144756,	-- Cruel Gladiator's Felweave Raiment
-										},
-										{	-- Cruel Gladiator's Felweave Bracers
-											["itemID"] = 144762,	-- Cruel Gladiator's Felweave Bracers
-										},
-										{	-- Cruel Gladiator's Felweave Handguards
-											["itemID"] = 144750,	-- Cruel Gladiator's Felweave Handguards
-										},
-										{	-- Cruel Gladiator's Felweave Cord
-											["itemID"] = 144760,	-- Cruel Gladiator's Felweave Cord
-										},
-										{	-- Cruel Gladiator's Felweave Trousers
-											["itemID"] = 144754,	-- Cruel Gladiator's Felweave Trousers
-										},
-										{	-- Cruel Gladiator's Felweave Treads
-											["itemID"] = 144748,	-- Cruel Gladiator's Felweave Treads
-										},
+										i(144752),	-- Cruel Gladiator's Felweave Cowl
+										i(144758),	-- Cruel Gladiator's Felweave Amice
+										i(144554),	-- Cruel Gladiator's Felweave Cloak
+										i(144756),	-- Cruel Gladiator's Felweave Raiment
+										i(144762),	-- Cruel Gladiator's Felweave Bracers
+										i(144750),	-- Cruel Gladiator's Felweave Handguards
+										i(144760),	-- Cruel Gladiator's Felweave Cord
+										i(144754),	-- Cruel Gladiator's Felweave Trousers
+										i(144748),	-- Cruel Gladiator's Felweave Treads
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
-									["itemID"] = 147647,	-- Ensemble: Cruel Gladiator's Dragonhide Armor
+								}),
+								i(147647, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Cruel Gladiator's Dragonhide Helm
-											["itemID"] = 144596,	-- Cruel Gladiator's Dragonhide Helm
-										},
-										{	-- Cruel Gladiator's Dragonhide Spaulders
-											["itemID"] = 144600,	-- Cruel Gladiator's Dragonhide Spaulders
-										},
-										{	-- Cruel Gladiator's Dragonhide Cloak
-											["itemID"] = 144538,	-- Cruel Gladiator's Dragonhide Cloak
-										},
-										{	-- Cruel Gladiator's Dragonhide Robe
-											["itemID"] = 144590,	-- Cruel Gladiator's Dragonhide Robe
-										},
-										{	-- Cruel Gladiator's Dragonhide Wristguards
-											["itemID"] = 144604,	-- Cruel Gladiator's Dragonhide Wristguards
-										},
-										{	-- Cruel Gladiator's Dragonhide Gloves
-											["itemID"] = 144594,	-- Cruel Gladiator's Dragonhide Gloves
-										},
-										{	-- Cruel Gladiator's Dragonhide Belt
-											["itemID"] = 144602,	-- Cruel Gladiator's Dragonhide Belt
-										},
-										{	-- Cruel Gladiator's Dragonhide Legguards
-											["itemID"] = 144598,	-- Cruel Gladiator's Dragonhide Legguards
-										},
-										{	-- Cruel Gladiator's Dragonhide Moccasins
-											["itemID"] = 144592,	-- Cruel Gladiator's Dragonhide Moccasins
-										},
+										i(144596),	-- Cruel Gladiator's Dragonhide Helm
+										i(144600),	-- Cruel Gladiator's Dragonhide Spaulders
+										i(144538),	-- Cruel Gladiator's Dragonhide Cloak
+										i(144590),	-- Cruel Gladiator's Dragonhide Robe
+										i(144604),	-- Cruel Gladiator's Dragonhide Wristguards
+										i(144594),	-- Cruel Gladiator's Dragonhide Gloves
+										i(144602),	-- Cruel Gladiator's Dragonhide Belt
+										i(144598),	-- Cruel Gladiator's Dragonhide Legguards
+										i(144592),	-- Cruel Gladiator's Dragonhide Moccasins
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Leather Armor [Rogue - 5/10/19]
-									["itemID"] = 147657,	-- Ensemble: Cruel Gladiator's Leather Armor
+								}),
+								i(147657, {	-- Ensemble: Cruel Gladiator's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Cruel Gladiator's Leather Helm
-											["itemID"] = 144704,	-- Cruel Gladiator's Leather Helm
-										},
-										{	-- Cruel Gladiator's Leather Spaulders
-											["itemID"] = 144708,	-- Cruel Gladiator's Leather Spaulders
-										},
-										{	-- Cruel Gladiator's Shadowcape
-											["itemID"] = 144550,	-- Cruel Gladiator's Shadowcape
-										},
-										{	-- Cruel Gladiator's Leather Tunic
-											["itemID"] = 144698,	-- Cruel Gladiator's Leather Tunic
-										},
-										{	-- Cruel Gladiator's Leather Wristguards
-											["itemID"] = 144712,	-- Cruel Gladiator's Leather Wristguards
-										},
-										{	-- Cruel Gladiator's Leather Gloves
-											["itemID"] = 144702,	-- Cruel Gladiator's Leather Gloves
-										},
-										{	-- Cruel Gladiator's Leather Belt
-											["itemID"] = 144710,	-- Cruel Gladiator's Leather Belt
-										},
-										{	-- Cruel Gladiator's Leather Legguards
-											["itemID"] = 144706,	-- Cruel Gladiator's Leather Legguards
-										},
-										{	-- Cruel Gladiator's Leather Slippers
-											["itemID"] = 144700,	-- Cruel Gladiator's Leather Slippers
-										},
+										i(144704),	-- Cruel Gladiator's Leather Helm
+										i(144708),	-- Cruel Gladiator's Leather Spaulders
+										i(144550),	-- Cruel Gladiator's Shadowcape
+										i(144698),	-- Cruel Gladiator's Leather Tunic
+										i(144712),	-- Cruel Gladiator's Leather Wristguards
+										i(144702),	-- Cruel Gladiator's Leather Gloves
+										i(144710),	-- Cruel Gladiator's Leather Belt
+										i(144706),	-- Cruel Gladiator's Leather Legguards
+										i(144700),	-- Cruel Gladiator's Leather Slippers
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
-									["itemID"] = 147656,	-- Ensemble: Cruel Gladiator's Ironskin Armor
+								}),
+								i(147656, {	-- Ensemble: Cruel Gladiator's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Cruel Gladiator's Ironskin Helm
-											["itemID"] = 144642,	-- Cruel Gladiator's Ironskin Helm
-										},
-										{	-- Cruel Gladiator's Ironskin Spaulders
-											["itemID"] = 144646,	-- Cruel Gladiator's Ironskin Spaulders
-										},
-										{	-- Cruel Gladiator's Ironskin Cloak
-											["itemID"] = 144544,	-- Cruel Gladiator's Ironskin Cloak
-										},
-										{	-- Cruel Gladiator's Ironskin Tunic
-											["itemID"] = 144648,	-- Cruel Gladiator's Ironskin Tunic
-										},
-										{	-- Cruel Gladiator's Ironskin Wristguards
-											["itemID"] = 144652,	-- Cruel Gladiator's Ironskin Wristguards
-										},
-										{	-- Cruel Gladiator's Ironskin Gloves
-											["itemID"] = 144640,	-- Cruel Gladiator's Ironskin Gloves
-										},
-										{	-- Cruel Gladiator's Ironskin Belt
-											["itemID"] = 144650,	-- Cruel Gladiator's Ironskin Belt
-										},
-										{	-- Cruel Gladiator's Ironskin Legguards
-											["itemID"] = 144644,	-- Cruel Gladiator's Ironskin Legguards
-										},
-										{	-- Cruel Gladiator's Ironskin Slippers
-											["itemID"] = 144638,	-- Cruel Gladiator's Ironskin Slippers
-										},
+										i(144642),	-- Cruel Gladiator's Ironskin Helm
+										i(144646),	-- Cruel Gladiator's Ironskin Spaulders
+										i(144544),	-- Cruel Gladiator's Ironskin Cloak
+										i(144648),	-- Cruel Gladiator's Ironskin Tunic
+										i(144652),	-- Cruel Gladiator's Ironskin Wristguards
+										i(144640),	-- Cruel Gladiator's Ironskin Gloves
+										i(144650),	-- Cruel Gladiator's Ironskin Belt
+										i(144644),	-- Cruel Gladiator's Ironskin Legguards
+										i(144638),	-- Cruel Gladiator's Ironskin Slippers
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
-									["itemID"] = 147651,	-- Ensemble: Cruel Gladiator's Felskin Armor
+								}),
+								i(147651, {	-- Ensemble: Cruel Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Cruel Gladiator's Felskin Helm
-											["itemID"] = 144580,	-- Cruel Gladiator's Felskin Helm
-										},
-										{	-- Cruel Gladiator's Felskin Spaulders
-											["itemID"] = 144584,	-- Cruel Gladiator's Felskin Spaulders
-										},
-										{	-- Cruel Gladiator's Demonthread Cloak
-											["itemID"] = 144536,	-- Cruel Gladiator's Demonthread Cloak
-										},
-										{	-- Cruel Gladiator's Felskin Tunic
-											["itemID"] = 144574,	-- Cruel Gladiator's Felskin Tunic
-										},
-										{	-- Cruel Gladiator's Felskin Wristguards
-											["itemID"] = 144588,	-- Cruel Gladiator's Felskin Wristguards
-										},
-										{	-- Cruel Gladiator's Felskin Gloves
-											["itemID"] = 144578,	-- Cruel Gladiator's Felskin Gloves
-										},
-										{	-- Cruel Gladiator's Felskin Belt
-											["itemID"] = 144586,	-- Cruel Gladiator's Felskin Belt
-										},
-										{	-- Cruel Gladiator's Felskin Legguards
-											["itemID"] = 144582,	-- Cruel Gladiator's Felskin Legguards
-										},
-										{	-- Cruel Gladiator's Felskin Boots
-											["itemID"] = 144576,	-- Cruel Gladiator's Felskin Boots
-										},
+										i(144580),	-- Cruel Gladiator's Felskin Helm
+										i(144584),	-- Cruel Gladiator's Felskin Spaulders
+										i(144536),	-- Cruel Gladiator's Demonthread Cloak
+										i(144574),	-- Cruel Gladiator's Felskin Tunic
+										i(144588),	-- Cruel Gladiator's Felskin Wristguards
+										i(144578),	-- Cruel Gladiator's Felskin Gloves
+										i(144586),	-- Cruel Gladiator's Felskin Belt
+										i(144582),	-- Cruel Gladiator's Felskin Legguards
+										i(144576),	-- Cruel Gladiator's Felskin Boots
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
-									["itemID"] = 147646,	-- Ensemble: Cruel Gladiator's Chain Armor
+								}),
+								i(147646, {	-- Ensemble: Cruel Gladiator's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Cruel Gladiator's Chain Helm
-											["itemID"] = 144612,	-- Cruel Gladiator's Chain Helm
-										},
-										{	-- Cruel Gladiator's Chain Spaulders
-											["itemID"] = 144616,	-- Cruel Gladiator's Chain Spaulders
-										},
-										{	-- Cruel Gladiator's Drape of the Tracker
-											["itemID"] = 144540,	-- Cruel Gladiator's Drape of the Tracker
-										},
-										{	-- Cruel Gladiator's Chain Armor
-											["itemID"] = 144606,	-- Cruel Gladiator's Chain Armor
-										},
-										{	-- Cruel Gladiator's Chain Armband
-											["itemID"] = 144620,	-- Cruel Gladiator's Chain Armband
-										},
-										{	-- Cruel Gladiator's Chain Gauntlets
-											["itemID"] = 144610,	-- Cruel Gladiator's Chain Gauntlets
-										},
-										{	-- Cruel Gladiator's Chain Clasp
-											["itemID"] = 144618,	-- Cruel Gladiator's Chain Clasp
-										},
-										{	-- Cruel Gladiator's Chain Leggings
-											["itemID"] = 144614,	-- Cruel Gladiator's Chain Leggings
-										},
-										{	-- Cruel Gladiator's Chain Treads
-											["itemID"] = 144608,	-- Cruel Gladiator's Chain Treads
-										},
+										i(144612),	-- Cruel Gladiator's Chain Helm
+										i(144616),	-- Cruel Gladiator's Chain Spaulders
+										i(144540),	-- Cruel Gladiator's Drape of the Tracker
+										i(144606),	-- Cruel Gladiator's Chain Armor
+										i(144620),	-- Cruel Gladiator's Chain Armband
+										i(144610),	-- Cruel Gladiator's Chain Gauntlets
+										i(144618),	-- Cruel Gladiator's Chain Clasp
+										i(144614),	-- Cruel Gladiator's Chain Leggings
+										i(144608),	-- Cruel Gladiator's Chain Treads
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
-									["itemID"] = 147661,	-- Ensemble: Cruel Gladiator's Ringmail Armor
+								}),
+								i(147661, {	-- Ensemble: Cruel Gladiator's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Cruel Gladiator's Ringmail Helm
-											["itemID"] = 144720,	-- Cruel Gladiator's Ringmail Helm
-										},
-										{	-- Cruel Gladiator's Ringmail Spaulders
-											["itemID"] = 144724,	-- Cruel Gladiator's Ringmail Spaulders
-										},
-										{	-- Cruel Gladiator's Totemic Cloak
-											["itemID"] = 144552,	-- Cruel Gladiator's Totemic Cloak
-										},
-										{	-- Cruel Gladiator's Ringmail Armor
-											["itemID"] = 144714,	-- Cruel Gladiator's Ringmail Armor
-										},
-										{	-- Cruel Gladiator's Ringmail Armband
-											["itemID"] = 144728,	-- Cruel Gladiator's Ringmail Armband
-										},
-										{	-- Cruel Gladiator's Ringmail Gauntlets
-											["itemID"] = 144718,	-- Cruel Gladiator's Ringmail Gauntlets
-										},
-										{	-- Cruel Gladiator's Ringmail Clasp
-											["itemID"] = 144726,	-- Cruel Gladiator's Ringmail Clasp
-										},
-										{	-- Cruel Gladiator's Ringmail Kilt
-											["itemID"] = 144722,	-- Cruel Gladiator's Ringmail Kilt
-										},
-										{	-- Cruel Gladiator's Ringmail Boots
-											["itemID"] = 144716,	-- Cruel Gladiator's Ringmail Boots
-										},
+										i(144720),	-- Cruel Gladiator's Ringmail Helm
+										i(144724),	-- Cruel Gladiator's Ringmail Spaulders
+										i(144552),	-- Cruel Gladiator's Totemic Cloak
+										i(144714),	-- Cruel Gladiator's Ringmail Armor
+										i(144728),	-- Cruel Gladiator's Ringmail Armband
+										i(144718),	-- Cruel Gladiator's Ringmail Gauntlets
+										i(144726),	-- Cruel Gladiator's Ringmail Clasp
+										i(144722),	-- Cruel Gladiator's Ringmail Kilt
+										i(144716),	-- Cruel Gladiator's Ringmail Boots
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
-									["itemID"] = 147665,	-- Ensemble: Cruel Gladiator's Scaled Armor
+								}),
+								i(147665, {	-- Ensemble: Cruel Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Cruel Gladiator's Scaled Helm
-											["itemID"] = 144665,	-- Cruel Gladiator's Scaled Helm
-										},
-										{	-- Cruel Gladiator's Scaled Shoulders
-											["itemID"] = 144670,	-- Cruel Gladiator's Scaled Shoulders
-										},
-										{	-- Cruel Gladiator's Greatcloak of Faith
-											["itemID"] = 144546,	-- Cruel Gladiator's Greatcloak of Faith
-										},
-										{	-- Cruel Gladiator's Scaled Breastplate
-											["itemID"] = 144669,	-- Cruel Gladiator's Scaled Breastplate
-										},
-										{	-- Cruel Gladiator's Scaled Wristplates
-											["itemID"] = 144674,	-- Cruel Gladiator's Scaled Wristplates
-										},
-										{	-- Cruel Gladiator's Scaled Gauntlets
-											["itemID"] = 144663,	-- Cruel Gladiator's Scaled Gauntlets
-										},
-										{	-- Cruel Gladiator's Scaled Girdle
-											["itemID"] = 144672,	-- Cruel Gladiator's Scaled Girdle
-										},
-										{	-- Cruel Gladiator's Scaled Legguards
-											["itemID"] = 144667,	-- Cruel Gladiator's Scaled Legguards
-										},
-										{	-- Cruel Gladiator's Scaled Sabatons
-											["itemID"] = 144661,	-- Cruel Gladiator's Scaled Sabatons
-										},
-										{	-- Ferocious Gladiator's Scaled Helm
-											["itemID"] = 145507,	-- Ferocious Gladiator's Scaled Helm
-										},
-										{	-- Ferocious Gladiator's Scaled Shoulders
-											["itemID"] = 145512,	-- Ferocious Gladiator's Scaled Shoulders
-										},
-										{	-- Ferocious Gladiator's Greatcloak of Faith
-											["itemID"] = 145388,	-- Ferocious Gladiator's Greatcloak of Faith
-										},
-										{	-- Ferocious Gladiator's Scaled Breastplate
-											["itemID"] = 145511,	-- Ferocious Gladiator's Scaled Breastplate
-										},
-										{	-- Ferocious Gladiator's Scaled Wristplates
-											["itemID"] = 145516,	-- Ferocious Gladiator's Scaled Wristplates
-										},
-										{	-- Ferocious Gladiator's Scaled Gauntlets
-											["itemID"] = 145505,	-- Ferocious Gladiator's Scaled Gauntlets
-										},
-										{	-- Ferocious Gladiator's Scaled Girdle
-											["itemID"] = 145514,	-- Ferocious Gladiator's Scaled Girdle
-										},
-										{	-- Ferocious Gladiator's Scaled Legguards
-											["itemID"] = 145509,	-- Ferocious Gladiator's Scaled Legguards
-										},
-										{	-- Ferocious Gladiator's Scaled Sabatons
-											["itemID"] = 145503,	-- Ferocious Gladiator's Scaled Sabatons
-										},
+										i(144665),	-- Cruel Gladiator's Scaled Helm
+										i(144670),	-- Cruel Gladiator's Scaled Shoulders
+										i(144546),	-- Cruel Gladiator's Greatcloak of Faith
+										i(144669),	-- Cruel Gladiator's Scaled Breastplate
+										i(144674),	-- Cruel Gladiator's Scaled Wristplates
+										i(144663),	-- Cruel Gladiator's Scaled Gauntlets
+										i(144672),	-- Cruel Gladiator's Scaled Girdle
+										i(144667),	-- Cruel Gladiator's Scaled Legguards
+										i(144661),	-- Cruel Gladiator's Scaled Sabatons
+										i(145507),	-- Ferocious Gladiator's Scaled Helm
+										i(145512),	-- Ferocious Gladiator's Scaled Shoulders
+										i(145388),	-- Ferocious Gladiator's Greatcloak of Faith
+										i(145511),	-- Ferocious Gladiator's Scaled Breastplate
+										i(145516),	-- Ferocious Gladiator's Scaled Wristplates
+										i(145505),	-- Ferocious Gladiator's Scaled Gauntlets
+										i(145514),	-- Ferocious Gladiator's Scaled Girdle
+										i(145509),	-- Ferocious Gladiator's Scaled Legguards
+										i(145503),	-- Ferocious Gladiator's Scaled Sabatons
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
-									["itemID"] = 147660,	-- Ensemble: Cruel Gladiator's Plate Armor
+								}),
+								i(147660, {	-- Ensemble: Cruel Gladiator's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Cruel Gladiator's Plate Helm
-											["itemID"] = 144770,	-- Cruel Gladiator's Plate Helm
-										},
-										{	-- Cruel Gladiator's Plate Shoulders
-											["itemID"] = 144774,	-- Cruel Gladiator's Plate Shoulders
-										},
-										{	-- Cruel Gladiator's Cloak of Battle
-											["itemID"] = 144556,	-- Cruel Gladiator's Cloak of Battle
-										},
-										{	-- Cruel Gladiator's Plate Chestpiece
-											["itemID"] = 144764,	-- Cruel Gladiator's Plate Chestpiece
-										},
-										{	-- Cruel Gladiator's Plate Wristplates
-											["itemID"] = 144778,	-- Cruel Gladiator's Plate Wristplates
-										},
-										{	-- Cruel Gladiator's Plate Gauntlets
-											["itemID"] = 144768,	-- Cruel Gladiator's Plate Gauntlets
-										},
-										{	-- Cruel Gladiator's Plate Girdle
-											["itemID"] = 144776,	-- Cruel Gladiator's Plate Girdle
-										},
-										{	-- Cruel Gladiator's Plate Legguards
-											["itemID"] = 144772,	-- Cruel Gladiator's Plate Legguards
-										},
-										{	-- Cruel Gladiator's Plate Warboots
-											["itemID"] = 144766,	-- Cruel Gladiator's Plate Warboots
-										},
+										i(144770),	-- Cruel Gladiator's Plate Helm
+										i(144774),	-- Cruel Gladiator's Plate Shoulders
+										i(144556),	-- Cruel Gladiator's Cloak of Battle
+										i(144764),	-- Cruel Gladiator's Plate Chestpiece
+										i(144778),	-- Cruel Gladiator's Plate Wristplates
+										i(144768),	-- Cruel Gladiator's Plate Gauntlets
+										i(144776),	-- Cruel Gladiator's Plate Girdle
+										i(144772),	-- Cruel Gladiator's Plate Legguards
+										i(144766),	-- Cruel Gladiator's Plate Warboots
 									},
-								},
-								{	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
-									["itemID"] = 147650,	-- Ensemble: Cruel Gladiator's Dreadplate Armor
+								}),
+								i(147650, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Cruel Gladiator's Dreadplate Helm
-											["itemID"] = 144564,	-- Cruel Gladiator's Dreadplate Helm
-										},
-										{	-- Cruel Gladiator's Dreadplate Shoulders
-											["itemID"] = 144568,	-- Cruel Gladiator's Dreadplate Shoulders
-										},
-										{	-- Cruel Gladiator's Dreadcloak
-											["itemID"] = 144534,	-- Cruel Gladiator's Dreadcloak
-										},
-										{	-- Cruel Gladiator's Dreadplate Chestpiece
-											["itemID"] = 144558,	-- Cruel Gladiator's Dreadplate Chestpiece
-										},
-										{	-- Cruel Gladiator's Dreadplate Wristplates
-											["itemID"] = 144572,	-- Cruel Gladiator's Dreadplate Wristplates
-										},
-										{	-- Cruel Gladiator's Dreadplate Gauntlets
-											["itemID"] = 144562,	-- Cruel Gladiator's Dreadplate Gauntlets
-										},
-										{	-- Cruel Gladiator's Dreadplate Girdle
-											["itemID"] = 144570,	-- Cruel Gladiator's Dreadplate Girdle
-										},
-										{	-- Cruel Gladiator's Dreadplate Legguards
-											["itemID"] = 144566,	-- Cruel Gladiator's Dreadplate Legguards
-										},
-										{	-- Cruel Gladiator's Dreadplate Sabatons
-											["itemID"] = 144560,	-- Cruel Gladiator's Dreadplate Sabatons
-										},
+										i(144564),	-- Cruel Gladiator's Dreadplate Helm
+										i(144568),	-- Cruel Gladiator's Dreadplate Shoulders
+										i(144534),	-- Cruel Gladiator's Dreadcloak
+										i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece
+										i(144572),	-- Cruel Gladiator's Dreadplate Wristplates
+										i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets
+										i(144570),	-- Cruel Gladiator's Dreadplate Girdle
+										i(144566),	-- Cruel Gladiator's Dreadplate Legguards
+										i(144560),	-- Cruel Gladiator's Dreadplate Sabatons
 									},
-								},
+								}),
 								-- LEGION Season 5, 6, 7
-								{	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
-									["itemID"] = 149496,	-- Ensemble: Fierce Gladiator's Satin Armor
+								i(149496, {	-- Ensemble: Fierce Gladiator's Satin Armor [Priest - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 5 },	-- Priest
 									["g"] = {
-										{	-- Fierce Gladiator's Satin Hood
-											["itemID"] = 148055,	-- Fierce Gladiator's Satin Hood
-										},
-										{	-- Fierce Gladiator's Satin Mantle
-											["itemID"] = 148061,	-- Fierce Gladiator's Satin Mantle
-										},
-										{	-- Fierce Gladiator's Drape of Piety
-											["itemID"] = 147923,	-- Fierce Gladiator's Drape of Piety
-										},
-										{	-- Fierce Gladiator's Satin Robe
-											["itemID"] = 148059,	-- Fierce Gladiator's Satin Robe
-										},
-										{	-- Fierce Gladiator's Satin Bracers
-											["itemID"] = 148065,	-- Fierce Gladiator's Satin Bracers
-										},
-										{	-- Fierce Gladiator's Satin Gloves
-											["itemID"] = 148053,	-- Fierce Gladiator's Satin Gloves
-										},
-										{	-- Fierce Gladiator's Satin Cord
-											["itemID"] = 148063,	-- Fierce Gladiator's Satin Cord
-										},
-										{	-- Fierce Gladiator's Satin Leggings
-											["itemID"] = 148057,	-- Fierce Gladiator's Satin Leggings
-										},
-										{	-- Fierce Gladiator's Satin Treads
-											["itemID"] = 148051,	-- Fierce Gladiator's Satin Treads
-										},
+										i(148055),	-- Fierce Gladiator's Satin Hood
+										i(148061),	-- Fierce Gladiator's Satin Mantle
+										i(147923),	-- Fierce Gladiator's Drape of Piety
+										i(148059),	-- Fierce Gladiator's Satin Robe
+										i(148065),	-- Fierce Gladiator's Satin Bracers
+										i(148053),	-- Fierce Gladiator's Satin Gloves
+										i(148063),	-- Fierce Gladiator's Satin Cord
+										i(148057),	-- Fierce Gladiator's Satin Leggings
+										i(148051),	-- Fierce Gladiator's Satin Treads
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
-									["itemID"] = 149501,	-- Ensemble: Fierce Gladiator's Silk Armor
+								}),
+								i(149501, {	-- Ensemble: Fierce Gladiator's Silk Armor [Mage - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 8 },	-- Mage
 									["g"] = {
-										{	-- Fierce Gladiator's Silk Cowl
-											["itemID"] = 148001,	-- Fierce Gladiator's Silk Cowl
-										},
-										{	-- Fierce Gladiator's Silk Amice
-											["itemID"] = 148007,	-- Fierce Gladiator's Silk Amice
-										},
-										{	-- Fierce Gladiator's Silken Shawl
-											["itemID"] = 147917,	-- Fierce Gladiator's Silken Shawl
-										},
-										{	-- Fierce Gladiator's Silk Tunic
-											["itemID"] = 148005,	-- Fierce Gladiator's Silk Tunic
-										},
-										{	-- Fierce Gladiator's Silk Bracers
-											["itemID"] = 148011,	-- Fierce Gladiator's Silk Bracers
-										},
-										{	-- Fierce Gladiator's Silk Handguards
-											["itemID"] = 147999,	-- Fierce Gladiator's Silk Handguards
-										},
-										{	-- Fierce Gladiator's Silk Cord
-											["itemID"] = 148009,	-- Fierce Gladiator's Silk Cord
-										},
-										{	-- Fierce Gladiator's Silk Trousers
-											["itemID"] = 148003,	-- Fierce Gladiator's Silk Trousers
-										},
-										{	-- Fierce Gladiator's Silk Treads
-											["itemID"] = 147997,	-- Fierce Gladiator's Silk Treads
-										},
+										i(148001),	-- Fierce Gladiator's Silk Cowl
+										i(148007),	-- Fierce Gladiator's Silk Amice
+										i(147917),	-- Fierce Gladiator's Silken Shawl
+										i(148005),	-- Fierce Gladiator's Silk Tunic
+										i(148011),	-- Fierce Gladiator's Silk Bracers
+										i(147999),	-- Fierce Gladiator's Silk Handguards
+										i(148009),	-- Fierce Gladiator's Silk Cord
+										i(148003),	-- Fierce Gladiator's Silk Trousers
+										i(147997),	-- Fierce Gladiator's Silk Treads
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
-									["itemID"] = 149486,	-- Ensemble: Fierce Gladiator's Felweave Armor
+								}),
+								i(149486, {	-- Ensemble: Fierce Gladiator's Felweave Armor [Warlock - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 9 },	-- Warlock
 									["g"] = {
-										{	-- Fierce Gladiator's Felweave Cowl
-											["itemID"] = 148127,	-- Fierce Gladiator's Felweave Cowl
-										},
-										{	-- Fierce Gladiator's Felweave Amice
-											["itemID"] = 148133,	-- Fierce Gladiator's Felweave Amice
-										},
-										{	-- Fierce Gladiator's Felweave Cloak
-											["itemID"] = 147929,	-- Fierce Gladiator's Felweave Cloak
-										},
-										{	-- Fierce Gladiator's Felweave Raiment
-											["itemID"] = 148131,	-- Fierce Gladiator's Felweave Raiment
-										},
-										{	-- Fierce Gladiator's Felweave Bracers
-											["itemID"] = 148137,	-- Fierce Gladiator's Felweave Bracers
-										},
-										{	-- Fierce Gladiator's Felweave Handguards
-											["itemID"] = 148125,	-- Fierce Gladiator's Felweave Handguards
-										},
-										{	-- Fierce Gladiator's Felweave Cord
-											["itemID"] = 148135,	-- Fierce Gladiator's Felweave Cord
-										},
-										{	-- Fierce Gladiator's Felweave Trousers
-											["itemID"] = 148129,	-- Fierce Gladiator's Felweave Trousers
-										},
-										{	-- Fierce Gladiator's Felweave Treads
-											["itemID"] = 148123,	-- Fierce Gladiator's Felweave Treads
-										},
+										i(148127),	-- Fierce Gladiator's Felweave Cowl
+										i(148133),	-- Fierce Gladiator's Felweave Amice
+										i(147929),	-- Fierce Gladiator's Felweave Cloak
+										i(148131),	-- Fierce Gladiator's Felweave Raiment
+										i(148137),	-- Fierce Gladiator's Felweave Bracers
+										i(148125),	-- Fierce Gladiator's Felweave Handguards
+										i(148135),	-- Fierce Gladiator's Felweave Cord
+										i(148129),	-- Fierce Gladiator's Felweave Trousers
+										i(148123),	-- Fierce Gladiator's Felweave Treads
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
-									["itemID"] = 149480,	-- Ensemble: Fierce Gladiator's Dragonhide Armor
+								}),
+								i(149480, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor [Druid - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 11 },	-- Druid
 									["g"] = {
-										{	-- Fierce Gladiator's Dragonhide Helm
-											["itemID"] = 147971,	-- Fierce Gladiator's Dragonhide Helm
-										},
-										{	-- Fierce Gladiator's Dragonhide Spaulders
-											["itemID"] = 147975,	-- Fierce Gladiator's Dragonhide Spaulders
-										},
-										{	-- Fierce Gladiator's Dragonhide Cloak
-											["itemID"] = 147913,	-- Fierce Gladiator's Dragonhide Cloak
-										},
-										{	-- Fierce Gladiator's Dragonhide Vest
-											["itemID"] = 147965,	-- Fierce Gladiator's Dragonhide Vest
-										},
-										{	-- Fierce Gladiator's Dragonhide Wristguards
-											["itemID"] = 147979,	-- Fierce Gladiator's Dragonhide Wristguards
-										},
-										{	-- Fierce Gladiator's Dragonhide Gloves
-											["itemID"] = 147969,	-- Fierce Gladiator's Dragonhide Gloves
-										},
-										{	-- Fierce Gladiator's Dragonhide Belt
-											["itemID"] = 147977,	-- Fierce Gladiator's Dragonhide Belt
-										},
-										{	-- Fierce Gladiator's Dragonhide Legguards
-											["itemID"] = 147973,	-- Fierce Gladiator's Dragonhide Legguards
-										},
-										{	-- Fierce Gladiator's Dragonhide Moccasins
-											["itemID"] = 147967,	-- Fierce Gladiator's Dragonhide Moccasins
-										},
+										i(147971),	-- Fierce Gladiator's Dragonhide Helm
+										i(147975),	-- Fierce Gladiator's Dragonhide Spaulders
+										i(147913),	-- Fierce Gladiator's Dragonhide Cloak
+										i(147965),	-- Fierce Gladiator's Dragonhide Vest
+										i(147979),	-- Fierce Gladiator's Dragonhide Wristguards
+										i(147969),	-- Fierce Gladiator's Dragonhide Gloves
+										i(147977),	-- Fierce Gladiator's Dragonhide Belt
+										i(147973),	-- Fierce Gladiator's Dragonhide Legguards
+										i(147967),	-- Fierce Gladiator's Dragonhide Moccasins
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
-									["itemID"] = 149490,	-- Ensemble: Fierce Gladiator's Leather Armor
+								}),
+								i(149490, {	-- Ensemble: Fierce Gladiator's Leather Armor [Rogue - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 4 },	-- Rogue
 									["g"] = {
-										{	-- Fierce Gladiator's Leather Helm
-											["itemID"] = 148079,	-- Fierce Gladiator's Leather Helm
-										},
-										{	-- Fierce Gladiator's Leather Spaulders
-											["itemID"] = 148083,	-- Fierce Gladiator's Leather Spaulders
-										},
-										{	-- Fierce Gladiator's Shadowcape
-											["itemID"] = 147925,	-- Fierce Gladiator's Shadowcape
-										},
-										{	-- Fierce Gladiator's Leather Tunic
-											["itemID"] = 148073,	-- Fierce Gladiator's Leather Tunic
-										},
-										{	-- Fierce Gladiator's Leather Wristguards
-											["itemID"] = 148087,	-- Fierce Gladiator's Leather Wristguards
-										},
-										{	-- Fierce Gladiator's Leather Gloves
-											["itemID"] = 148077,	-- Fierce Gladiator's Leather Gloves
-										},
-										{	-- Fierce Gladiator's Leather Belt
-											["itemID"] = 148085,	-- Fierce Gladiator's Leather Belt
-										},
-										{	-- Fierce Gladiator's Leather Legguards
-											["itemID"] = 148081,	-- Fierce Gladiator's Leather Legguards
-										},
-										{	-- Fierce Gladiator's Leather Slippers
-											["itemID"] = 148075,	-- Fierce Gladiator's Leather Slippers
-										},
+										i(148079),	-- Fierce Gladiator's Leather Helm
+										i(148083),	-- Fierce Gladiator's Leather Spaulders
+										i(147925),	-- Fierce Gladiator's Shadowcape
+										i(148073),	-- Fierce Gladiator's Leather Tunic
+										i(148087),	-- Fierce Gladiator's Leather Wristguards
+										i(148077),	-- Fierce Gladiator's Leather Gloves
+										i(148085),	-- Fierce Gladiator's Leather Belt
+										i(148081),	-- Fierce Gladiator's Leather Legguards
+										i(148075),	-- Fierce Gladiator's Leather Slippers
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
-									["itemID"] = 149489,	-- Ensemble: Fierce Gladiator's Ironskin Armor
+								}),
+								i(149489, {	-- Ensemble: Fierce Gladiator's Ironskin Armor [Monk - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 10 },	-- Monk
 									["g"] = {
-										{	-- Fierce Gladiator's Ironskin Helm
-											["itemID"] = 148017,	-- Fierce Gladiator's Ironskin Helm
-										},
-										{	-- Fierce Gladiator's Ironskin Spaulders
-											["itemID"] = 148021,	-- Fierce Gladiator's Ironskin Spaulders
-										},
-										{	-- Fierce Gladiator's Ironskin Cloak
-											["itemID"] = 147919,	-- Fierce Gladiator's Ironskin Cloak
-										},
-										{	-- Fierce Gladiator's Ironskin Tunic
-											["itemID"] = 148023,	-- Fierce Gladiator's Ironskin Tunic
-										},
-										{	-- Fierce Gladiator's Ironskin Wristguards
-											["itemID"] = 148027,	-- Fierce Gladiator's Ironskin Wristguards
-										},
-										{	-- Fierce Gladiator's Ironskin Gloves
-											["itemID"] = 148015,	-- Fierce Gladiator's Ironskin Gloves
-										},
-										{	-- Fierce Gladiator's Ironskin Belt
-											["itemID"] = 148025,	-- Fierce Gladiator's Ironskin Belt
-										},
-										{	-- Fierce Gladiator's Ironskin Legguards
-											["itemID"] = 148019,	-- Fierce Gladiator's Ironskin Legguards
-										},
-										{	-- Fierce Gladiator's Ironskin Slippers
-											["itemID"] = 148013,	-- Fierce Gladiator's Ironskin Slippers
-										},
+										i(148017),	-- Fierce Gladiator's Ironskin Helm
+										i(148021),	-- Fierce Gladiator's Ironskin Spaulders
+										i(147919),	-- Fierce Gladiator's Ironskin Cloak
+										i(148023),	-- Fierce Gladiator's Ironskin Tunic
+										i(148027),	-- Fierce Gladiator's Ironskin Wristguards
+										i(148015),	-- Fierce Gladiator's Ironskin Gloves
+										i(148025),	-- Fierce Gladiator's Ironskin Belt
+										i(148019),	-- Fierce Gladiator's Ironskin Legguards
+										i(148013),	-- Fierce Gladiator's Ironskin Slippers
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
-									["itemID"] = 149484,	-- Ensemble: Fierce Gladiator's Felskin Armor
+								}),
+								i(149484, {	-- Ensemble: Fierce Gladiator's Felskin Armor [Demon Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 12 },	-- Demon Hunter
 									["g"] = {
-										{	-- Fierce Gladiator's Felskin Helm
-											["itemID"] = 147955,	-- Fierce Gladiator's Felskin Helm
-										},
-										{	-- Fierce Gladiator's Felskin Spaulders
-											["itemID"] = 147959,	-- Fierce Gladiator's Felskin Spaulders
-										},
-										{	-- Fierce Gladiator's Demonthread Cloak
-											["itemID"] = 147911,	-- Fierce Gladiator's Demonthread Cloak
-										},
-										{	-- Fierce Gladiator's Felskin Tunic
-											["itemID"] = 147949,	-- Fierce Gladiator's Felskin Tunic
-										},
-										{	-- Fierce Gladiator's Felskin Wristguards
-											["itemID"] = 147963,	-- Fierce Gladiator's Felskin Wristguards
-										},
-										{	-- Fierce Gladiator's Felskin Gloves
-											["itemID"] = 147953,	-- Fierce Gladiator's Felskin Gloves
-										},
-										{	-- Fierce Gladiator's Felskin Belt
-											["itemID"] = 147961,	-- Fierce Gladiator's Felskin Belt
-										},
-										{	-- Fierce Gladiator's Felskin Legguards
-											["itemID"] = 147957,	-- Fierce Gladiator's Felskin Legguards
-										},
-										{	-- Fierce Gladiator's Felskin Boots
-											["itemID"] = 147951,	-- Fierce Gladiator's Felskin Boots
-										},
+										i(147955),	-- Fierce Gladiator's Felskin Helm
+										i(147959),	-- Fierce Gladiator's Felskin Spaulders
+										i(147911),	-- Fierce Gladiator's Demonthread Cloak
+										i(147949),	-- Fierce Gladiator's Felskin Tunic
+										i(147963),	-- Fierce Gladiator's Felskin Wristguards
+										i(147953),	-- Fierce Gladiator's Felskin Gloves
+										i(147961),	-- Fierce Gladiator's Felskin Belt
+										i(147957),	-- Fierce Gladiator's Felskin Legguards
+										i(147951),	-- Fierce Gladiator's Felskin Boots
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
-									["itemID"] = 149479,	-- Ensemble: Fierce Gladiator's Chain Armor
+								}),
+								i(149479, {	-- Ensemble: Fierce Gladiator's Chain Armor [Hunter - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 3 },	-- Hunter
 									["g"] = {
-										{	-- Fierce Gladiator's Chain Helm
-											["itemID"] = 147987,	-- Fierce Gladiator's Chain Helm
-										},
-										{	-- Fierce Gladiator's Chain Spaulders
-											["itemID"] = 147991,	-- Fierce Gladiator's Chain Spaulders
-										},
-										{	-- Fierce Gladiator's Drape of the Tracker
-											["itemID"] = 147915,	-- Fierce Gladiator's Drape of the Tracker
-										},
-										{	-- Fierce Gladiator's Chain Armor
-											["itemID"] = 147981,	-- Fierce Gladiator's Chain Armor
-										},
-										{	-- Fierce Gladiator's Chain Armband
-											["itemID"] = 147995,	-- Fierce Gladiator's Chain Armband
-										},
-										{	-- Fierce Gladiator's Chain Gauntlets
-											["itemID"] = 147985,	-- Fierce Gladiator's Chain Gauntlets
-										},
-										{	-- Fierce Gladiator's Chain Clasp
-											["itemID"] = 147993,	-- Fierce Gladiator's Chain Clasp
-										},
-										{	-- Fierce Gladiator's Chain Leggings
-											["itemID"] = 147989,	-- Fierce Gladiator's Chain Leggings
-										},
-										{	-- Fierce Gladiator's Chain Treads
-											["itemID"] = 147983,	-- Fierce Gladiator's Chain Treads
-										},
+										i(147987),	-- Fierce Gladiator's Chain Helm
+										i(147991),	-- Fierce Gladiator's Chain Spaulders
+										i(147915),	-- Fierce Gladiator's Drape of the Tracker
+										i(147981),	-- Fierce Gladiator's Chain Armor
+										i(147995),	-- Fierce Gladiator's Chain Armband
+										i(147985),	-- Fierce Gladiator's Chain Gauntlets
+										i(147993),	-- Fierce Gladiator's Chain Clasp
+										i(147989),	-- Fierce Gladiator's Chain Leggings
+										i(147983),	-- Fierce Gladiator's Chain Treads
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
-									["itemID"] = 149494,	-- Ensemble: Fierce Gladiator's Ringmail Armor
+								}),
+								i(149494, {	-- Ensemble: Fierce Gladiator's Ringmail Armor [Shaman - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 7 },	-- Shaman
 									["g"] = {
-										{	-- Fierce Gladiator's Ringmail Helm
-											["itemID"] = 148095,	-- Fierce Gladiator's Ringmail Helm
-										},
-										{	-- Fierce Gladiator's Ringmail Spaulders
-											["itemID"] = 148099,	-- Fierce Gladiator's Ringmail Spaulders
-										},
-										{	-- Fierce Gladiator's Totemic Cloak
-											["itemID"] = 147927,	-- Fierce Gladiator's Totemic Cloak
-										},
-										{	-- Fierce Gladiator's Ringmail Armor
-											["itemID"] = 148089,	-- Fierce Gladiator's Ringmail Armor
-										},
-										{	-- Fierce Gladiator's Ringmail Armband
-											["itemID"] = 148103,	-- Fierce Gladiator's Ringmail Armband
-										},
-										{	-- Fierce Gladiator's Ringmail Gauntlets
-											["itemID"] = 148093,	-- Fierce Gladiator's Ringmail Gauntlets
-										},
-										{	-- Fierce Gladiator's Ringmail Clasp
-											["itemID"] = 148101,	-- Fierce Gladiator's Ringmail Clasp
-										},
-										{	-- Fierce Gladiator's Ringmail Leggings
-											["itemID"] = 148097,	-- Fierce Gladiator's Ringmail Leggings
-										},
-										{	-- Fierce Gladiator's Ringmail Boots
-											["itemID"] = 148091,	-- Fierce Gladiator's Ringmail Boots
-										},
+										i(148095),	-- Fierce Gladiator's Ringmail Helm
+										i(148099),	-- Fierce Gladiator's Ringmail Spaulders
+										i(147927),	-- Fierce Gladiator's Totemic Cloak
+										i(148089),	-- Fierce Gladiator's Ringmail Armor
+										i(148103),	-- Fierce Gladiator's Ringmail Armband
+										i(148093),	-- Fierce Gladiator's Ringmail Gauntlets
+										i(148101),	-- Fierce Gladiator's Ringmail Clasp
+										i(148097),	-- Fierce Gladiator's Ringmail Leggings
+										i(148091),	-- Fierce Gladiator's Ringmail Boots
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
-									["itemID"] = 149498,	-- Ensemble: Fierce Gladiator's Scaled Armor
+								}),
+								i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor [Paladin - 5/10/19 & 5/17/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 2 },	-- Paladin
 									["g"] = {
-										{	-- Fierce Gladiator's Scaled Helm
-											["itemID"] = 148040,	-- Fierce Gladiator's Scaled Helm
-										},
-										{	-- Fierce Gladiator's Scaled Shoulders
-											["itemID"] = 148045,	-- Fierce Gladiator's Scaled Shoulders
-										},
-										{	-- Fierce Gladiator's Greatcloak of Faith
-											["itemID"] = 147921,	-- Fierce Gladiator's Greatcloak of Faith
-										},
-										{	-- Fierce Gladiator's Scaled Breastplate
-											["itemID"] = 148044,	-- Fierce Gladiator's Scaled Breastplate
-										},
-										{	-- Fierce Gladiator's Scaled Wristplates
-											["itemID"] = 148049,	-- Fierce Gladiator's Scaled Wristplates
-										},
-										{	-- Fierce Gladiator's Scaled Gauntlets
-											["itemID"] = 148038,	-- Fierce Gladiator's Scaled Gauntlets
-										},
-										{	-- Fierce Gladiator's Scaled Girdle
-											["itemID"] = 148047,	-- Fierce Gladiator's Scaled Girdle
-										},
-										{	-- Fierce Gladiator's Scaled Legguards
-											["itemID"] = 148042,	-- Fierce Gladiator's Scaled Legguards
-										},
-										{	-- Fierce Gladiator's Scaled Sabatons
-											["itemID"] = 148036,	-- Fierce Gladiator's Scaled Sabatons
-										},
-										{	-- Dominant Gladiator's Scaled Helm
-											["itemID"] = 148533,	-- Dominant Gladiator's Scaled Helm
-										},
-										{	-- Dominant Gladiator's Scaled Shoulders
-											["itemID"] = 148538,	-- Dominant Gladiator's Scaled Shoulders
-										},
-										{	-- Dominant Gladiator's Greatcloak of Faith
-											["itemID"] = 148414,	-- Dominant Gladiator's Greatcloak of Faith
-										},
-										{	-- Dominant Gladiator's Scaled Breastplate
-											["itemID"] = 148537,	-- Dominant Gladiator's Scaled Breastplate
-										},
-										{	-- Dominant Gladiator's Scaled Wristplates
-											["itemID"] = 148542,	-- Dominant Gladiator's Scaled Wristplates
-										},
-										{	-- Dominant Gladiator's Scaled Gauntlets
-											["itemID"] = 148531,	-- Dominant Gladiator's Scaled Gauntlets
-										},
-										{	-- Dominant Gladiator's Scaled Girdle
-											["itemID"] = 148540,	-- Dominant Gladiator's Scaled Girdle
-										},
-										{	-- Dominant Gladiator's Scaled Legguards
-											["itemID"] = 148535,	-- Dominant Gladiator's Scaled Legguards
-										},
-										{	-- Dominant Gladiator's Scaled Sabatons
-											["itemID"] = 148529,	-- Dominant Gladiator's Scaled Sabatons
-										},
-										{	-- Demonic Gladiator's Scaled Helm
-											["itemID"] = 149025,	-- Demonic Gladiator's Scaled Helm
-										},
-										{	-- Demonic Gladiator's Scaled Shoulders
-											["itemID"] = 149030,	-- Demonic Gladiator's Scaled Shoulders
-										},
-										{	-- Demonic Gladiator's Greatcloak of Faith
-											["itemID"] = 148906,	-- Demonic Gladiator's Greatcloak of Faith
-										},
-										{	-- Demonic Gladiator's Scaled Breastplate
-											["itemID"] = 149029,	-- Demonic Gladiator's Scaled Breastplate
-										},
-										{	-- Demonic Gladiator's Scaled Wristplates
-											["itemID"] = 149034,	-- Demonic Gladiator's Scaled Wristplates
-										},
-										{	-- Demonic Gladiator's Scaled Gauntlets
-											["itemID"] = 149023,	-- Demonic Gladiator's Scaled Gauntlets
-										},
-										{	-- Demonic Gladiator's Scaled Girdle
-											["itemID"] = 149032,	-- Demonic Gladiator's Scaled Girdle
-										},
-										{	-- Demonic Gladiator's Scaled Legguards
-											["itemID"] = 149027,	-- Demonic Gladiator's Scaled Legguards
-										},
-										{	-- Demonic Gladiator's Scaled Sabatons
-											["itemID"] = 149021,	-- Demonic Gladiator's Scaled Sabatons
-										},
+										i(148040),	-- Fierce Gladiator's Scaled Helm
+										i(148045),	-- Fierce Gladiator's Scaled Shoulders
+										i(147921),	-- Fierce Gladiator's Greatcloak of Faith
+										i(148044),	-- Fierce Gladiator's Scaled Breastplate
+										i(148049),	-- Fierce Gladiator's Scaled Wristplates
+										i(148038),	-- Fierce Gladiator's Scaled Gauntlets
+										i(148047),	-- Fierce Gladiator's Scaled Girdle
+										i(148042),	-- Fierce Gladiator's Scaled Legguards
+										i(148036),	-- Fierce Gladiator's Scaled Sabatons
+										i(148533),	-- Dominant Gladiator's Scaled Helm
+										i(148538),	-- Dominant Gladiator's Scaled Shoulders
+										i(148414),	-- Dominant Gladiator's Greatcloak of Faith
+										i(148537),	-- Dominant Gladiator's Scaled Breastplate
+										i(148542),	-- Dominant Gladiator's Scaled Wristplates
+										i(148531),	-- Dominant Gladiator's Scaled Gauntlets
+										i(148540),	-- Dominant Gladiator's Scaled Girdle
+										i(148535),	-- Dominant Gladiator's Scaled Legguards
+										i(148529),	-- Dominant Gladiator's Scaled Sabatons
+										i(149025),	-- Demonic Gladiator's Scaled Helm
+										i(149030),	-- Demonic Gladiator's Scaled Shoulders
+										i(148906),	-- Demonic Gladiator's Greatcloak of Faith
+										i(149029),	-- Demonic Gladiator's Scaled Breastplate
+										i(149034),	-- Demonic Gladiator's Scaled Wristplates
+										i(149023),	-- Demonic Gladiator's Scaled Gauntlets
+										i(149032),	-- Demonic Gladiator's Scaled Girdle
+										i(149027),	-- Demonic Gladiator's Scaled Legguards
+										i(149021),	-- Demonic Gladiator's Scaled Sabatons
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
-									["itemID"] = 149493,	-- Ensemble: Fierce Gladiator's Plate Armor
+								}),
+								i(149493, {	-- Ensemble: Fierce Gladiator's Plate Armor [Warrior - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 1 },	-- Warrior
 									["g"] = {
-										{	-- Fierce Gladiator's Plate Helm
-											["itemID"] = 148145,	-- Fierce Gladiator's Plate Helm
-										},
-										{	-- Fierce Gladiator's Plate Shoulders
-											["itemID"] = 148149,	-- Fierce Gladiator's Plate Shoulders
-										},
-										{	-- Fierce Gladiator's Cloak of Battle
-											["itemID"] = 147931,	-- Fierce Gladiator's Cloak of Battle
-										},
-										{	-- Fierce Gladiator's Plate Chestpiece
-											["itemID"] = 148139,	-- Fierce Gladiator's Plate Chestpiece
-										},
-										{	-- Fierce Gladiator's Plate Wristplates
-											["itemID"] = 148153,	-- Fierce Gladiator's Plate Wristplates
-										},
-										{	-- Fierce Gladiator's Plate Gauntlets
-											["itemID"] = 148143,	-- Fierce Gladiator's Plate Gauntlets
-										},
-										{	-- Fierce Gladiator's Plate Girdle
-											["itemID"] = 148151,	-- Fierce Gladiator's Plate Girdle
-										},
-										{	-- Fierce Gladiator's Plate Legguards
-											["itemID"] = 148147,	-- Fierce Gladiator's Plate Legguards
-										},
-										{	-- Fierce Gladiator's Plate Warboots
-											["itemID"] = 148141,	-- Fierce Gladiator's Plate Warboots
-										},
+										i(148145),	-- Fierce Gladiator's Plate Helm
+										i(148149),	-- Fierce Gladiator's Plate Shoulders
+										i(147931),	-- Fierce Gladiator's Cloak of Battle
+										i(148139),	-- Fierce Gladiator's Plate Chestpiece
+										i(148153),	-- Fierce Gladiator's Plate Wristplates
+										i(148143),	-- Fierce Gladiator's Plate Gauntlets
+										i(148151),	-- Fierce Gladiator's Plate Girdle
+										i(148147),	-- Fierce Gladiator's Plate Legguards
+										i(148141),	-- Fierce Gladiator's Plate Warboots
 									},
-								},
-								{	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
-									["itemID"] = 149483,	-- Ensemble: Fierce Gladiator's Dreadplate Armor
+								}),
+								i(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["classes"] = { 6 },	-- Death Knight
 									["g"] = {
-										{	-- Fierce Gladiator's Dreadplate Helm
-											["itemID"] = 147939,	-- Fierce Gladiator's Dreadplate Helm
-										},
-										{	-- Fierce Gladiator's Dreadplate Shoulders
-											["itemID"] = 147943,	-- Fierce Gladiator's Dreadplate Shoulders
-										},
-										{	-- Fierce Gladiator's Dreadcloak
-											["itemID"] = 147909,	-- Fierce Gladiator's Dreadcloak
-										},
-										{	-- Fierce Gladiator's Dreadplate Chestpiece
-											["itemID"] = 147933,	-- Fierce Gladiator's Dreadplate Chestpiece
-										},
-										{	-- Fierce Gladiator's Dreadplate Wristplates
-											["itemID"] = 147947,	-- Fierce Gladiator's Dreadplate Wristplates
-										},
-										{	-- Fierce Gladiator's Dreadplate Gauntlets
-											["itemID"] = 147937,	-- Fierce Gladiator's Dreadplate Gauntlets
-										},
-										{	-- Fierce Gladiator's Dreadplate Girdle
-											["itemID"] = 147945,	-- Fierce Gladiator's Dreadplate Girdle
-										},
-										{	-- Fierce Gladiator's Dreadplate Legguards
-											["itemID"] = 147941,	-- Fierce Gladiator's Dreadplate Legguards
-										},
-										{	-- Fierce Gladiator's Dreadplate Sabatons
-											["itemID"] = 147935,	-- Fierce Gladiator's Dreadplate Sabatons
-										},
+										i(147939),	-- Fierce Gladiator's Dreadplate Helm
+										i(147943),	-- Fierce Gladiator's Dreadplate Shoulders
+										i(147909),	-- Fierce Gladiator's Dreadcloak
+										i(147933),	-- Fierce Gladiator's Dreadplate Chestpiece
+										i(147947),	-- Fierce Gladiator's Dreadplate Wristplates
+										i(147937),	-- Fierce Gladiator's Dreadplate Gauntlets
+										i(147945),	-- Fierce Gladiator's Dreadplate Girdle
+										i(147941),	-- Fierce Gladiator's Dreadplate Legguards
+										i(147935),	-- Fierce Gladiator's Dreadplate Sabatons
 									},
-								},
+								}),
 							},
 						}),
 					},
 				}),
 				n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
 					["races"] = ALLIANCE_ONLY,
-					["coords"] = { 33.4, 74.0, 625 },
+					["coord"] = { 33.4, 74.0, 625 },
 					["g"] = {
-						{	-- Echoes of Battle
-							["currencyID"] = 1356,		-- Echoes of Battle
-							["u"] = 2,
+						currency(1356, {	-- Echoes of Battle
+							["u"] = 2,	-- BoP / BoA Item
 							["g"] = {
-								{	-- Helm of the Demonic Gladiator
-									["itemID"] = 149424,	-- Helm of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Hood
-											["itemID"] = 149040,	-- Demonic Gladiator's Satin Hood
-										},
-										{	-- Demonic Gladiator's Silk Cowl
-											["itemID"] = 148986,	-- Demonic Gladiator's Silk Cowl
-										},
-										{	-- Demonic Gladiator's Felweave Cowl
-											["itemID"] = 149112,	-- Demonic Gladiator's Felweave Cowl
-										},
-										{	-- Demonic Gladiator's Dragonhide Helm
-											["itemID"] = 148956,	-- Demonic Gladiator's Dragonhide Helm
-										},
-										{	-- Demonic Gladiator's Leather Helm
-											["itemID"] = 149064,	-- Demonic Gladiator's Leather Helm
-										},
-										{	-- Demonic Gladiator's Ironskin Helm
-											["itemID"] = 149002,	-- Demonic Gladiator's Ironskin Helm
-										},
-										{	-- Demonic Gladiator's Felskin Helm
-											["itemID"] = 148940,	-- Demonic Gladiator's Felskin Helm
-										},
-										{	-- Demonic Gladiator's Chain Helm
-											["itemID"] = 148972,	-- Demonic Gladiator's Chain Helm
-										},
-										{	-- Demonic Gladiator's Ringmail Helm
-											["itemID"] = 149080,	-- Demonic Gladiator's Ringmail Helm
-										},
-										{	-- Demonic Gladiator's Scaled Helm
-											["itemID"] = 149025,	-- Demonic Gladiator's Scaled Helm
-										},
-										{	-- Demonic Gladiator's Plate Helm
-											["itemID"] = 149130,	-- Demonic Gladiator's Plate Helm
-										},
-										{	-- Demonic Gladiator's Dreadplate Helm
-											["itemID"] = 148924,	-- Demonic Gladiator's Dreadplate Helm
-										},
+								i(149424, {	-- Helm of the Demonic Gladiator
+									i(149040),	-- Demonic Gladiator's Satin Hood
+									i(148986),	-- Demonic Gladiator's Silk Cowl
+									i(149112),	-- Demonic Gladiator's Felweave Cowl
+									i(148956),	-- Demonic Gladiator's Dragonhide Helm
+									i(149064),	-- Demonic Gladiator's Leather Helm
+									i(149002),	-- Demonic Gladiator's Ironskin Helm
+									i(148940),	-- Demonic Gladiator's Felskin Helm
+									i(148972),	-- Demonic Gladiator's Chain Helm
+									i(149080),	-- Demonic Gladiator's Ringmail Helm
+									i(149025),	-- Demonic Gladiator's Scaled Helm
+									i(149130),	-- Demonic Gladiator's Plate Helm
+									i(148924),	-- Demonic Gladiator's Dreadplate Helm
+								}),
+								i(149427, {	-- Pauldrons of the Demonic Gladiator
+									i(149046),	-- Demonic Gladiator's Satin Mantle
+									i(148992),	-- Demonic Gladiator's Silk Amice
+									i(149118),	-- Demonic Gladiator's Felweave Amice
+									i(148960),	-- Demonic Gladiator's Dragonhide Spaulders
+									i(149068),	-- Demonic Gladiator's Leather Spaulders
+									i(149006),	-- Demonic Gladiator's Ironskin Spaulders
+									i(148944),	-- Demonic Gladiator's Felskin Spaulders
+									i(148976),	-- Demonic Gladiator's Chain Spaulders
+									i(149084),	-- Demonic Gladiator's Ringmail Spaulders
+									i(149030),	-- Demonic Gladiator's Scaled Shoulders
+									i(149134),	-- Demonic Gladiator's Plate Shoulders
+									i(148928),	-- Demonic Gladiator's Dreadplate Shoulders
+								}),
+								i(149432, {	-- Cloak of the Demonic Gladiator
+									i(148908),	-- Demonic Gladiator's Drape of Piety
+									i(148902),	-- Demonic Gladiator's Silken Shawl
+									i(148914),	-- Demonic Gladiator's Felweave Cloak
+									i(148898),	-- Demonic Gladiator's Dragonhide Cloak
+									i(148910),	-- Demonic Gladiator's Shadowcape
+									i(148904),	-- Demonic Gladiator's Ironskin Cloak
+									i(148896),	-- Demonic Gladiator's Demonthread Cloak
+									i(148900),	-- Demonic Gladiator's Drape of the Tracker
+									i(148912),	-- Demonic Gladiator's Totemic Cloak
+									i(148906),	-- Demonic Gladiator's Greatcloak of Faith
+									i(148916),	-- Demonic Gladiator's Cloak of Battle
+									i(148894),	-- Demonic Gladiator's Dreadcloak
+								}),
+								i(149425, {	-- Chest of the Demonic Gladiator
+									i(149044),	-- Demonic Gladiator's Satin Robe
+									i(148990),	-- Demonic Gladiator's Silk Tunic
+									i(149116),	-- Demonic Gladiator's Felweave Raiment
+									i(148950),	-- Demonic Gladiator's Dragonhide Vest
+									i(149058),	-- Demonic Gladiator's Leather Tunic
+									i(149008),	-- Demonic Gladiator's Ironskin Tunic
+									i(148934),	-- Demonic Gladiator's Felskin Tunic
+									i(148966),	-- Demonic Gladiator's Chain Armor
+									i(149074),	-- Demonic Gladiator's Ringmail Armor
+									i(149029),	-- Demonic Gladiator's Scaled Breastplate
+									i(149124),	-- Demonic Gladiator's Plate Chestpiece
+									i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece
+								}),
+								i(149431, {	-- Bracers of the Demonic Gladiator
+									i(149050),	-- Demonic Gladiator's Satin Bracers
+									i(148996),	-- Demonic Gladiator's Silk Bracers
+									i(149122),	-- Demonic Gladiator's Felweave Bracers
+									i(148964),	-- Demonic Gladiator's Dragonhide Wristguards
+									i(149072),	-- Demonic Gladiator's Leather Wristguards
+									i(149012),	-- Demonic Gladiator's Ironskin Wristguards
+									i(148948),	-- Demonic Gladiator's Felskin Wristguards
+									i(148980),	-- Demonic Gladiator's Chain Armband
+									i(149088),	-- Demonic Gladiator's Ringmail Armband
+									i(149034),	-- Demonic Gladiator's Scaled Wristplates
+									i(149138),	-- Demonic Gladiator's Plate Wristplates
+									i(148932),	-- Demonic Gladiator's Dreadplate Wristplates
+								}),
+								i(149428, {	-- Gloves of the Demonic Gladiator
+									i(149038),	-- Demonic Gladiator's Satin Gloves
+									i(148984),	-- Demonic Gladiator's Silk Handguards
+									i(149110),	-- Demonic Gladiator's Felweave Handguards
+									i(148954),	-- Demonic Gladiator's Dragonhide Gloves
+									i(149062),	-- Demonic Gladiator's Leather Gloves
+									i(149000),	-- Demonic Gladiator's Ironskin Gloves
+									i(148938),	-- Demonic Gladiator's Felskin Gloves
+									i(148970),	-- Demonic Gladiator's Chain Gauntlets
+									i(149078),	-- Demonic Gladiator's Ringmail Gauntlets
+									i(149023),	-- Demonic Gladiator's Scaled Gauntlets
+									i(149128),	-- Demonic Gladiator's Plate Gauntlets
+									i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets
+								}),
+								i(149429, {	-- Cinch of the Demonic Gladiator
+									i(149048),	-- Demonic Gladiator's Satin Cord
+									i(148994),	-- Demonic Gladiator's Silk Cord
+									i(149120),	-- Demonic Gladiator's Felweave Cord
+									i(148962),	-- Demonic Gladiator's Dragonhide Belt
+									i(149070),	-- Demonic Gladiator's Leather Belt
+									i(149010),	-- Demonic Gladiator's Ironskin Belt
+									i(148946),	-- Demonic Gladiator's Felskin Belt
+									i(148978),	-- Demonic Gladiator's Chain Clasp
+									i(149086),	-- Demonic Gladiator's Ringmail Clasp
+									i(149032),	-- Demonic Gladiator's Scaled Girdle
+									i(149136),	-- Demonic Gladiator's Plate Girdle
+									i(148930),	-- Demonic Gladiator's Dreadplate Girdle
+								}),
+								i(149426, {	-- Leggings of the Demonic Gladiator
+									{	-- Demonic Gladiator's Satin Leggings
+										["itemID"] = 149042,	-- Demonic Gladiator's Satin Leggings
 									},
-								},
-								{	-- Pauldrons of the Demonic Gladiator
-									["itemID"] = 149427,	-- Pauldrons of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Mantle
-											["itemID"] = 149046,	-- Demonic Gladiator's Satin Mantle
-										},
-										{	-- Demonic Gladiator's Silk Amice
-											["itemID"] = 148992,	-- Demonic Gladiator's Silk Amice
-										},
-										{	-- Demonic Gladiator's Felweave Amice
-											["itemID"] = 149118,	-- Demonic Gladiator's Felweave Amice
-										},
-										{	-- Demonic Gladiator's Dragonhide Spaulders
-											["itemID"] = 148960,	-- Demonic Gladiator's Dragonhide Spaulders
-										},
-										{	-- Demonic Gladiator's Leather Spaulders
-											["itemID"] = 149068,	-- Demonic Gladiator's Leather Spaulders
-										},
-										{	-- Demonic Gladiator's Ironskin Spaulders
-											["itemID"] = 149006,	-- Demonic Gladiator's Ironskin Spaulders
-										},
-										{	-- Demonic Gladiator's Felskin Spaulders
-											["itemID"] = 148944,	-- Demonic Gladiator's Felskin Spaulders
-										},
-										{	-- Demonic Gladiator's Chain Spaulders
-											["itemID"] = 148976,	-- Demonic Gladiator's Chain Spaulders
-										},
-										{	-- Demonic Gladiator's Ringmail Spaulders
-											["itemID"] = 149084,	-- Demonic Gladiator's Ringmail Spaulders
-										},
-										{	-- Demonic Gladiator's Scaled Shoulders
-											["itemID"] = 149030,	-- Demonic Gladiator's Scaled Shoulders
-										},
-										{	-- Demonic Gladiator's Plate Shoulders
-											["itemID"] = 149134,	-- Demonic Gladiator's Plate Shoulders
-										},
-										{	-- Demonic Gladiator's Dreadplate Shoulders
-											["itemID"] = 148928,	-- Demonic Gladiator's Dreadplate Shoulders
-										},
+									{	-- Demonic Gladiator's Silk Trousers
+										["itemID"] = 148988,	-- Demonic Gladiator's Silk Trousers
 									},
-								},
-								{	-- Cloak of the Demonic Gladiator
-									["itemID"] = 149432,	-- Cloak of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Drape of Piety
-											["itemID"] = 148908,	-- Demonic Gladiator's Drape of Piety
-										},
-										{	-- Demonic Gladiator's Silken Shawl
-											["itemID"] = 148902,	-- Demonic Gladiator's Silken Shawl
-										},
-										{	-- Demonic Gladiator's Felweave Cloak
-											["itemID"] = 148914,	-- Demonic Gladiator's Felweave Cloak
-										},
-										{	-- Demonic Gladiator's Dragonhide Cloak
-											["itemID"] = 148898,	-- Demonic Gladiator's Dragonhide Cloak
-										},
-										{	-- Demonic Gladiator's Shadowcape
-											["itemID"] = 148910,	-- Demonic Gladiator's Shadowcape
-										},
-										{	-- Demonic Gladiator's Ironskin Cloak
-											["itemID"] = 148904,	-- Demonic Gladiator's Ironskin Cloak
-										},
-										{	-- Demonic Gladiator's Demonthread Cloak
-											["itemID"] = 148896,	-- Demonic Gladiator's Demonthread Cloak
-										},
-										{	-- Demonic Gladiator's Drape of the Tracker
-											["itemID"] = 148900,	-- Demonic Gladiator's Drape of the Tracker
-										},
-										{	-- Demonic Gladiator's Totemic Cloak
-											["itemID"] = 148912,	-- Demonic Gladiator's Totemic Cloak
-										},
-										{	-- Demonic Gladiator's Greatcloak of Faith
-											["itemID"] = 148906,	-- Demonic Gladiator's Greatcloak of Faith
-										},
-										{	-- Demonic Gladiator's Cloak of Battle
-											["itemID"] = 148916,	-- Demonic Gladiator's Cloak of Battle
-										},
-										{	-- Demonic Gladiator's Dreadcloak
-											["itemID"] = 148894,	-- Demonic Gladiator's Dreadcloak
-										},
+									{	-- Demonic Gladiator's Felweave Trousers
+										["itemID"] = 149114,	-- Demonic Gladiator's Felweave Trousers
 									},
-								},
-								{	-- Chest of the Demonic Gladiator
-									["itemID"] = 149425,	-- Chest of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Robe
-											["itemID"] = 149044,	-- Demonic Gladiator's Satin Robe
-										},
-										{	-- Demonic Gladiator's Silk Tunic
-											["itemID"] = 148990,	-- Demonic Gladiator's Silk Tunic
-										},
-										{	-- Demonic Gladiator's Felweave Raiment
-											["itemID"] = 149116,	-- Demonic Gladiator's Felweave Raiment
-										},
-										{	-- Demonic Gladiator's Dragonhide Vest
-											["itemID"] = 148950,	-- Demonic Gladiator's Dragonhide Vest
-										},
-										{	-- Demonic Gladiator's Leather Tunic
-											["itemID"] = 149058,	-- Demonic Gladiator's Leather Tunic
-										},
-										{	-- Demonic Gladiator's Ironskin Tunic
-											["itemID"] = 149008,	-- Demonic Gladiator's Ironskin Tunic
-										},
-										{	-- Demonic Gladiator's Felskin Tunic
-											["itemID"] = 148934,	-- Demonic Gladiator's Felskin Tunic
-										},
-										{	-- Demonic Gladiator's Chain Armor
-											["itemID"] = 148966,	-- Demonic Gladiator's Chain Armor
-										},
-										{	-- Demonic Gladiator's Ringmail Armor
-											["itemID"] = 149074,	-- Demonic Gladiator's Ringmail Armor
-										},
-										{	-- Demonic Gladiator's Scaled Breastplate
-											["itemID"] = 149029,	-- Demonic Gladiator's Scaled Breastplate
-										},
-										{	-- Demonic Gladiator's Plate Chestpiece
-											["itemID"] = 149124,	-- Demonic Gladiator's Plate Chestpiece
-										},
-										{	-- Demonic Gladiator's Dreadplate Chestpiece
-											["itemID"] = 148918,	-- Demonic Gladiator's Dreadplate Chestpiece
-										},
+									{	-- Demonic Gladiator's Dragonhide Legguards
+										["itemID"] = 148958,	-- Demonic Gladiator's Dragonhide Legguards
 									},
-								},
-								{	-- Bracers of the Demonic Gladiator
-									["itemID"] = 149431,	-- Bracers of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Bracers
-											["itemID"] = 149050,	-- Demonic Gladiator's Satin Bracers
-										},
-										{	-- Demonic Gladiator's Silk Bracers
-											["itemID"] = 148996,	-- Demonic Gladiator's Silk Bracers
-										},
-										{	-- Demonic Gladiator's Felweave Bracers
-											["itemID"] = 149122,	-- Demonic Gladiator's Felweave Bracers
-										},
-										{	-- Demonic Gladiator's Dragonhide Wristguards
-											["itemID"] = 148964,	-- Demonic Gladiator's Dragonhide Wristguards
-										},
-										{	-- Demonic Gladiator's Leather Wristguards
-											["itemID"] = 149072,	-- Demonic Gladiator's Leather Wristguards
-										},
-										{	-- Demonic Gladiator's Ironskin Wristguards
-											["itemID"] = 149012,	-- Demonic Gladiator's Ironskin Wristguards
-										},
-										{	-- Demonic Gladiator's Felskin Wristguards
-											["itemID"] = 148948,	-- Demonic Gladiator's Felskin Wristguards
-										},
-										{	-- Demonic Gladiator's Chain Armband
-											["itemID"] = 148980,	-- Demonic Gladiator's Chain Armband
-										},
-										{	-- Demonic Gladiator's Ringmail Armband
-											["itemID"] = 149088,	-- Demonic Gladiator's Ringmail Armband
-										},
-										{	-- Demonic Gladiator's Scaled Wristplates
-											["itemID"] = 149034,	-- Demonic Gladiator's Scaled Wristplates
-										},
-										{	-- Demonic Gladiator's Plate Wristplates
-											["itemID"] = 149138,	-- Demonic Gladiator's Plate Wristplates
-										},
-										{	-- Demonic Gladiator's Dreadplate Wristplates
-											["itemID"] = 148932,	-- Demonic Gladiator's Dreadplate Wristplates
-										},
+									{	-- Demonic Gladiator's Leather Legguards
+										["itemID"] = 149066,	-- Demonic Gladiator's Leather Legguards
 									},
-								},
-								{	-- Gloves of the Demonic Gladiator
-									["itemID"] = 149428,	-- Gloves of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Gloves
-											["itemID"] = 149038,	-- Demonic Gladiator's Satin Gloves
-										},
-										{	-- Demonic Gladiator's Silk Handguards
-											["itemID"] = 148984,	-- Demonic Gladiator's Silk Handguards
-										},
-										{	-- Demonic Gladiator's Felweave Handguards
-											["itemID"] = 149110,	-- Demonic Gladiator's Felweave Handguards
-										},
-										{	-- Demonic Gladiator's Dragonhide Gloves
-											["itemID"] = 148954,	-- Demonic Gladiator's Dragonhide Gloves
-										},
-										{	-- Demonic Gladiator's Leather Gloves
-											["itemID"] = 149062,	-- Demonic Gladiator's Leather Gloves
-										},
-										{	-- Demonic Gladiator's Ironskin Gloves
-											["itemID"] = 149000,	-- Demonic Gladiator's Ironskin Gloves
-										},
-										{	-- Demonic Gladiator's Felskin Gloves
-											["itemID"] = 148938,	-- Demonic Gladiator's Felskin Gloves
-										},
-										{	-- Demonic Gladiator's Chain Gauntlets
-											["itemID"] = 148970,	-- Demonic Gladiator's Chain Gauntlets
-										},
-										{	-- Demonic Gladiator's Ringmail Gauntlets
-											["itemID"] = 149078,	-- Demonic Gladiator's Ringmail Gauntlets
-										},
-										{	-- Demonic Gladiator's Scaled Gauntlets
-											["itemID"] = 149023,	-- Demonic Gladiator's Scaled Gauntlets
-										},
-										{	-- Demonic Gladiator's Plate Gauntlets
-											["itemID"] = 149128,	-- Demonic Gladiator's Plate Gauntlets
-										},
-										{	-- Demonic Gladiator's Dreadplate Gauntlets
-											["itemID"] = 148922,	-- Demonic Gladiator's Dreadplate Gauntlets
-										},
+									{	-- Demonic Gladiator's Ironskin Legguards
+										["itemID"] = 149004,	-- Demonic Gladiator's Ironskin Legguards
 									},
-								},
-								{	-- Cinch of the Demonic Gladiator
-									["itemID"] = 149429,	-- Cinch of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Cord
-											["itemID"] = 149048,	-- Demonic Gladiator's Satin Cord
-										},
-										{	-- Demonic Gladiator's Silk Cord
-											["itemID"] = 148994,	-- Demonic Gladiator's Silk Cord
-										},
-										{	-- Demonic Gladiator's Felweave Cord
-											["itemID"] = 149120,	-- Demonic Gladiator's Felweave Cord
-										},
-										{	-- Demonic Gladiator's Dragonhide Belt
-											["itemID"] = 148962,	-- Demonic Gladiator's Dragonhide Belt
-										},
-										{	-- Demonic Gladiator's Leather Belt
-											["itemID"] = 149070,	-- Demonic Gladiator's Leather Belt
-										},
-										{	-- Demonic Gladiator's Ironskin Belt
-											["itemID"] = 149010,	-- Demonic Gladiator's Ironskin Belt
-										},
-										{	-- Demonic Gladiator's Felskin Belt
-											["itemID"] = 148946,	-- Demonic Gladiator's Felskin Belt
-										},
-										{	-- Demonic Gladiator's Chain Clasp
-											["itemID"] = 148978,	-- Demonic Gladiator's Chain Clasp
-										},
-										{	-- Demonic Gladiator's Ringmail Clasp
-											["itemID"] = 149086,	-- Demonic Gladiator's Ringmail Clasp
-										},
-										{	-- Demonic Gladiator's Scaled Girdle
-											["itemID"] = 149032,	-- Demonic Gladiator's Scaled Girdle
-										},
-										{	-- Demonic Gladiator's Plate Girdle
-											["itemID"] = 149136,	-- Demonic Gladiator's Plate Girdle
-										},
-										{	-- Demonic Gladiator's Dreadplate Girdle
-											["itemID"] = 148930,	-- Demonic Gladiator's Dreadplate Girdle
-										},
+									{	-- Demonic Gladiator's Felskin Legguards
+										["itemID"] = 148942,	-- Demonic Gladiator's Felskin Legguards
 									},
-								},
-								{	-- Leggings of the Demonic Gladiator
-									["itemID"] = 149426,	-- Leggings of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Leggings
-											["itemID"] = 149042,	-- Demonic Gladiator's Satin Leggings
-										},
-										{	-- Demonic Gladiator's Silk Trousers
-											["itemID"] = 148988,	-- Demonic Gladiator's Silk Trousers
-										},
-										{	-- Demonic Gladiator's Felweave Trousers
-											["itemID"] = 149114,	-- Demonic Gladiator's Felweave Trousers
-										},
-										{	-- Demonic Gladiator's Dragonhide Legguards
-											["itemID"] = 148958,	-- Demonic Gladiator's Dragonhide Legguards
-										},
-										{	-- Demonic Gladiator's Leather Legguards
-											["itemID"] = 149066,	-- Demonic Gladiator's Leather Legguards
-										},
-										{	-- Demonic Gladiator's Ironskin Legguards
-											["itemID"] = 149004,	-- Demonic Gladiator's Ironskin Legguards
-										},
-										{	-- Demonic Gladiator's Felskin Legguards
-											["itemID"] = 148942,	-- Demonic Gladiator's Felskin Legguards
-										},
-										{	-- Demonic Gladiator's Chain Leggings
-											["itemID"] = 148974,	-- Demonic Gladiator's Chain Leggings
-										},
-										{	-- Demonic Gladiator's Ringmail Leggings
-											["itemID"] = 149082,	-- Demonic Gladiator's Ringmail Leggings
-										},
-										{	-- Demonic Gladiator's Scaled Legguards
-											["itemID"] = 149027,	-- Demonic Gladiator's Scaled Legguards
-										},
-										{	-- Demonic Gladiator's Plate Legguards
-											["itemID"] = 149132,	-- Demonic Gladiator's Plate Legguards
-										},
-										{	-- Demonic Gladiator's Dreadplate Legguards
-											["itemID"] = 148926,	-- Demonic Gladiator's Dreadplate Legguards
-										},
+									{	-- Demonic Gladiator's Chain Leggings
+										["itemID"] = 148974,	-- Demonic Gladiator's Chain Leggings
 									},
-								},
-								{	-- Treads of the Demonic Gladiator
-									["itemID"] = 149430,	-- Treads of the Demonic Gladiator
-									["g"] = {
-										{	-- Demonic Gladiator's Satin Treads
-											["itemID"] = 149036,	-- Demonic Gladiator's Satin Treads
-										},
-										{	-- Demonic Gladiator's Silk Treads
-											["itemID"] = 148982,	-- Demonic Gladiator's Silk Treads
-										},
-										{	-- Demonic Gladiator's Felweave Treads
-											["itemID"] = 149108,	-- Demonic Gladiator's Felweave Treads
-										},
-										{	-- Demonic Gladiator's Dragonhide Moccasins
-											["itemID"] = 148952,	-- Demonic Gladiator's Dragonhide Moccasins
-										},
-										{	-- Demonic Gladiator's Leather Slippers
-											["itemID"] = 149060,	-- Demonic Gladiator's Leather Slippers
-										},
-										{	-- Demonic Gladiator's Ironskin Slippers
-											["itemID"] = 148998,	-- Demonic Gladiator's Ironskin Slippers
-										},
-										{	-- Demonic Gladiator's Felskin Boots
-											["itemID"] = 148936,	-- Demonic Gladiator's Felskin Boots
-										},
-										{	-- Demonic Gladiator's Chain Treads
-											["itemID"] = 148968,	-- Demonic Gladiator's Chain Treads
-										},
-										{	-- Demonic Gladiator's Ringmail Boots
-											["itemID"] = 149076,	-- Demonic Gladiator's Ringmail Boots
-										},
-										{	-- Demonic Gladiator's Scaled Sabatons
-											["itemID"] = 149021,	-- Demonic Gladiator's Scaled Sabatons
-										},
-										{	-- Demonic Gladiator's Plate Warboots
-											["itemID"] = 149126,	-- Demonic Gladiator's Plate Warboots
-										},
-										{	-- Demonic Gladiator's Dreadplate Sabatons
-											["itemID"] = 148920,	-- Demonic Gladiator's Dreadplate Sabatons
-										},
+									{	-- Demonic Gladiator's Ringmail Leggings
+										["itemID"] = 149082,	-- Demonic Gladiator's Ringmail Leggings
 									},
-								},
-								{	-- Helm of the Dominant Gladiator
-									["itemID"] = 149406,	-- Helm of the Dominant Gladiator
-									["u"] = 2,				-- Removed in Legion Season 7
+									{	-- Demonic Gladiator's Scaled Legguards
+										["itemID"] = 149027,	-- Demonic Gladiator's Scaled Legguards
+									},
+									{	-- Demonic Gladiator's Plate Legguards
+										["itemID"] = 149132,	-- Demonic Gladiator's Plate Legguards
+									},
+									{	-- Demonic Gladiator's Dreadplate Legguards
+										["itemID"] = 148926,	-- Demonic Gladiator's Dreadplate Legguards
+									},
+								}),
+								i(149430, {	-- Treads of the Demonic Gladiator
+									{	-- Demonic Gladiator's Satin Treads
+										["itemID"] = 149036,	-- Demonic Gladiator's Satin Treads
+									},
+									{	-- Demonic Gladiator's Silk Treads
+										["itemID"] = 148982,	-- Demonic Gladiator's Silk Treads
+									},
+									{	-- Demonic Gladiator's Felweave Treads
+										["itemID"] = 149108,	-- Demonic Gladiator's Felweave Treads
+									},
+									{	-- Demonic Gladiator's Dragonhide Moccasins
+										["itemID"] = 148952,	-- Demonic Gladiator's Dragonhide Moccasins
+									},
+									{	-- Demonic Gladiator's Leather Slippers
+										["itemID"] = 149060,	-- Demonic Gladiator's Leather Slippers
+									},
+									{	-- Demonic Gladiator's Ironskin Slippers
+										["itemID"] = 148998,	-- Demonic Gladiator's Ironskin Slippers
+									},
+									{	-- Demonic Gladiator's Felskin Boots
+										["itemID"] = 148936,	-- Demonic Gladiator's Felskin Boots
+									},
+									{	-- Demonic Gladiator's Chain Treads
+										["itemID"] = 148968,	-- Demonic Gladiator's Chain Treads
+									},
+									{	-- Demonic Gladiator's Ringmail Boots
+										["itemID"] = 149076,	-- Demonic Gladiator's Ringmail Boots
+									},
+									{	-- Demonic Gladiator's Scaled Sabatons
+										["itemID"] = 149021,	-- Demonic Gladiator's Scaled Sabatons
+									},
+									{	-- Demonic Gladiator's Plate Warboots
+										["itemID"] = 149126,	-- Demonic Gladiator's Plate Warboots
+									},
+									{	-- Demonic Gladiator's Dreadplate Sabatons
+										["itemID"] = 148920,	-- Demonic Gladiator's Dreadplate Sabatons
+									},
+								}),
+								i(149406, {	-- Helm of the Dominant Gladiator
+									["u"] = 2,	-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Hood
 											["itemID"] = 148548,	-- Dominant Gladiator's Satin Hood
@@ -4740,10 +3863,9 @@ _.Zones =
 											["itemID"] = 148432,	-- Dominant Gladiator's Dreadplate Helm
 										},
 									},
-								},
-								{	-- Pauldrons of the Dominant Gladiator
-									["itemID"] = 149409,	-- Pauldrons of the Dominant Gladiator
-									["u"] = 2,				-- Removed in Legion Season 7
+								}),
+								i(149409, {	-- Pauldrons of the Dominant Gladiator
+									["u"] = 2,	-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Mantle
 											["itemID"] = 148554,	-- Dominant Gladiator's Satin Mantle
@@ -4782,9 +3904,8 @@ _.Zones =
 											["itemID"] = 148436,	-- Dominant Gladiator's Dreadplate Shoulders
 										},
 									},
-								},
-								{	-- Cloak of the Dominant Gladiator
-									["itemID"] = 149414,	-- Cloak of the Dominant Gladiator
+								}),
+								i(149414, {	-- Cloak of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Drape of Piety
@@ -4824,9 +3945,8 @@ _.Zones =
 											["itemID"] = 148402,	-- Dominant Gladiator's Dreadcloak
 										},
 									},
-								},
-								{	-- Chest of the Dominant Gladiator
-									["itemID"] = 149407,	-- Chest of the Dominant Gladiator
+								}),
+								i(149407, {	-- Chest of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Robe
@@ -4866,9 +3986,8 @@ _.Zones =
 											["itemID"] = 148426,	-- Dominant Gladiator's Dreadplate Chestpiece
 										},
 									},
-								},
-								{	-- Bracers of the Dominant Gladiator
-									["itemID"] = 149413,	-- Bracers of the Dominant Gladiator
+								}),
+								i(149413, {	-- Bracers of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Bracers
@@ -4908,9 +4027,8 @@ _.Zones =
 											["itemID"] = 148440,	-- Dominant Gladiator's Dreadplate Wristplates
 										},
 									},
-								},
-								{	-- Gloves of the Dominant Gladiator
-									["itemID"] = 149410,	-- Gloves of the Dominant Gladiator
+								}),
+								i(149410, {	-- Gloves of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Gloves
@@ -4950,9 +4068,8 @@ _.Zones =
 											["itemID"] = 148430,	-- Dominant Gladiator's Dreadplate Gauntlets
 										},
 									},
-								},
-								{	-- Cinch of the Dominant Gladiator
-									["itemID"] = 149411,	-- Cinch of the Dominant Gladiator
+								}),
+								i(149411, {	-- Cinch of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Cord
@@ -4992,9 +4109,8 @@ _.Zones =
 											["itemID"] = 148438,	-- Dominant Gladiator's Dreadplate Girdle
 										},
 									},
-								},
-								{	-- Leggings of the Dominant Gladiator
-									["itemID"] = 149408,	-- Leggings of the Dominant Gladiator
+								}),
+								i(149408, {	-- Leggings of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Leggings
@@ -5034,9 +4150,8 @@ _.Zones =
 											["itemID"] = 148434,	-- Dominant Gladiator's Dreadplate Legguards
 										},
 									},
-								},
-								{	-- Treads of the Dominant Gladiator
-									["itemID"] = 149412,	-- Treads of the Dominant Gladiator
+								}),
+								i(149412, {	-- Treads of the Dominant Gladiator
 									["u"] = 2,				-- Removed in Legion Season 7
 									["g"] = {
 										{	-- Dominant Gladiator's Satin Treads
@@ -5076,9 +4191,8 @@ _.Zones =
 											["itemID"] = 148428,	-- Dominant Gladiator's Dreadplate Sabatons
 										},
 									},
-								},
-								{	-- Helm of the Fierce Gladiator
-									["itemID"] = 149388,	-- Helm of the Fierce Gladiator
+								}),
+								i(149388, {	-- Helm of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Hood
@@ -5118,9 +4232,8 @@ _.Zones =
 											["itemID"] = 147939,	-- Fierce Gladiator's Dreadplate Helm
 										},
 									},
-								},
-								{	-- Pauldrons of the Fierce Gladiator
-									["itemID"] = 149391,	-- Pauldrons of the Fierce Gladiator
+								}),
+								i(149391, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Mantle
@@ -5160,9 +4273,8 @@ _.Zones =
 											["itemID"] = 147943,	-- Fierce Gladiator's Dreadplate Shoulders
 										},
 									},
-								},
-								{	-- Cloak of the Fierce Gladiator
-									["itemID"] = 149396,	-- Cloak of the Fierce Gladiator
+								}),
+								i(149396, {	-- Cloak of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Drape of Piety
@@ -5202,9 +4314,8 @@ _.Zones =
 											["itemID"] = 147909,	-- Fierce Gladiator's Dreadcloak
 										},
 									},
-								},
-								{	-- Chest of the Fierce Gladiator
-									["itemID"] = 149389,	-- Chest of the Fierce Gladiator
+								}),
+								i(149389, {	-- Chest of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Robe
@@ -5244,9 +4355,8 @@ _.Zones =
 											["itemID"] = 147933,	-- Fierce Gladiator's Dreadplate Chestpiece
 										},
 									},
-								},
-								{	-- Bracers of the Fierce Gladiator
-									["itemID"] = 149395,	-- Bracers of the Fierce Gladiator
+								}),
+								i(149395, {	-- Bracers of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Bracers
@@ -5286,9 +4396,8 @@ _.Zones =
 											["itemID"] = 147947,	-- Fierce Gladiator's Dreadplate Wristplates
 										},
 									},
-								},
-								{	-- Gloves of the Fierce Gladiator
-									["itemID"] = 149392,	-- Gloves of the Fierce Gladiator
+								}),
+								i(149392, {	-- Gloves of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Gloves
@@ -5328,9 +4437,8 @@ _.Zones =
 											["itemID"] = 147937,	-- Fierce Gladiator's Dreadplate Gauntlets
 										},
 									},
-								},
-								{	-- Cinch of the Fierce Gladiator
-									["itemID"] = 149393,	-- Cinch of the Fierce Gladiator
+								}),
+								i(149393, {	-- Cinch of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Cord
@@ -5370,9 +4478,8 @@ _.Zones =
 											["itemID"] = 147945,	-- Fierce Gladiator's Dreadplate Girdle
 										},
 									},
-								},
-								{	-- Leggings of the Fierce Gladiator
-									["itemID"] = 149390,	-- Leggings of the Fierce Gladiator
+								}),
+								i(149390, {	-- Leggings of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Leggings
@@ -5412,9 +4519,8 @@ _.Zones =
 											["itemID"] = 147941,	-- Fierce Gladiator's Dreadplate Legguards
 										},
 									},
-								},
-								{	-- Treads of the Fierce Gladiator
-									["itemID"] = 149394,	-- Treads of the Fierce Gladiator
+								}),
+								i(149394, {	-- Treads of the Fierce Gladiator
 									["u"] = 2,				-- Removed in Legion Season 6
 									["g"] = {
 										{	-- Fierce Gladiator's Satin Treads
@@ -5454,11 +4560,10 @@ _.Zones =
 											["itemID"] = 147935,	-- Fierce Gladiator's Dreadplate Sabatons
 										},
 									},
-								},
+								}),
 							},
-						},
-						{	-- Echoes of Domination
-							["currencyID"] = 1357,		-- Echoes of Domination
+						}),
+						currency(1357, {	-- Echoes of Domination
 							["u"] = 2,
 							["g"] = {
 								{	-- Helm of the Demonic Gladiator
@@ -6587,7 +5692,7 @@ _.Zones =
 									},
 								},
 							},
-						},
+						}),
 					},
 				}),
 				n(96980,  {	-- Matilda Brightlink <Mail Armor Merchant>
@@ -7707,9 +6812,7 @@ _.Zones =
 				{	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
 					["npcID"] = 120687,	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
 					["races"] = HORDE_ONLY,
-					["coords"] = {
-						{ 59.64, 25.21, 625 },
-					},
+					["coord"] = { 59.6, 25.2, 625 },
 					["g"] = {
 						{	-- Echoes of Battle
 							["currencyID"] = 1356,		-- Echoes of Battle
