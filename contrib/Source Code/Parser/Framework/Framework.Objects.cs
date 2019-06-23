@@ -952,6 +952,7 @@ namespace ATT
                     case "isBreadcrumb":
                     case "isDaily":
                     case "isWeekly":
+                    case "isYearly":
                     case "isWQ":
                     case "isRaid":
                     case "isLockoutShared":

@@ -4667,7 +4667,7 @@ app.BaseItem = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
 		elseif key == "modID" then
@@ -5003,7 +5003,7 @@ app.BaseNPC = {
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5175,7 +5175,7 @@ app.BaseQuest = {
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			if IsQuestFlaggedCompleted(t.questID) then
 				return 1;
@@ -5738,7 +5738,7 @@ app.BaseVignette = {
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
 		else
@@ -7906,6 +7906,7 @@ local function RowOnEnter(self)
 		end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
+		if reference.isYearly then GameTooltip:AddLine("This can be completed yearly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
