@@ -34,7 +34,7 @@ _.Zones =
 						i(131589),	-- Bravo Company Spaulders
 					},
 				}),
-				q(26509, {	-- An Unwelcome Guest -- aa
+				q(26509, {	-- An Unwelcome Guest
 					["qg"] = 342,	-- Martie Jainrose
 					["coord"] = { 22.0, 42.7, 49 },
 					["races"] = ALLIANCE_ONLY,
@@ -111,7 +111,7 @@ _.Zones =
 						430,	-- Redridge Mystic
 					},
 				}),
-				q(116, {	-- Dry Times
+				q(116,   {	-- Dry Times
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -139,7 +139,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54104,	-- Signs of Saurfang
 				}),
-				q(26506, {	-- Franks and Beans -- aa
+				q(26506, {	-- Franks and Beans
 					["qg"] = 379,	-- Darchy Parker
 					["coord"] = { 15.6, 65.3, 49 },
 					["races"] = ALLIANCE_ONLY,
@@ -150,8 +150,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54106,	-- Tracking Tipoff
 				}),
-				q(26728, {	-- Hero's Call: Duskwood! (BREADCRUMB)
-					["qg"] = 900,	-- 
+				q(26728, {	-- Hero's Call: Duskwood!
+					["qg"] = 900,	-- Bailiff Conacher
+					["coord"] = { 28.7, 40.9, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -166,7 +167,7 @@ _.Zones =
 						i(60709),	-- Vest of the Changing Heart
 					},
 				}),
-				q(126, {	-- Howling in the Hills
+				q(126,   {	-- Howling in the Hills
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -210,7 +211,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26560,	-- Jorgensen
 				}),
-				q(26511, {	-- Lake Everstill Clean Up -- aa
+				q(26511, {	-- Lake Everstill Clean Up
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 28.6, 40.9, 49 },
 					["races"] = ALLIANCE_ONLY,
@@ -237,7 +238,7 @@ _.Zones =
 						i(131541),	-- Ventillated Vest
 					},
 				}),
-				q(219, {	-- Missing in Action
+				q(219,   {	-- Missing in Action
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -246,19 +247,19 @@ _.Zones =
 						un(2, i(3555)),	-- Robe of Solomon
 					},
 				}),
-				q(150, {	-- Murloc Poachers
+				q(150,   {	-- Murloc Poachers
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(3567)),	-- Dwarven Fishing Pole
 					},
 				}),
-				q(26508, {	-- Nida's Necklace -- aa
+				q(26508, {	-- Nida's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 28.3, 48.8, 49 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				o(31, {	-- Old Lion Statue
+				o(31,    {	-- Old Lion Statue
 					["u"] = 43,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -329,7 +330,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54103,	-- Corner Crossing
 				}),
-				q(26503, {	-- Still Assessing the Threat -- aa
+				q(26503, {	-- Still Assessing the Threat
 					["qg"] = 464,	-- Watch Captain Parker
 					["coord"] = { 15.3, 64.5, 49 },
 					["races"] = ALLIANCE_ONLY,
@@ -353,7 +354,7 @@ _.Zones =
 						i(60706),	-- Sandals of the Neverending Bridge
 					},
 				}),
-				q(19, {	-- Tharil'zun
+				q(19,    {	-- Tharil'zun
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -367,7 +368,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26668,	-- Detonation
 				}),
-				q(89, {	-- The Everstill Bridge
+				q(89,    {	-- The Everstill Bridge
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -387,7 +388,7 @@ _.Zones =
 						i(60720),	-- Treacherous Treads
 					},
 				}),
-				q(1702, {	-- The Shieldsmith
+				q(1702,  {	-- The Shieldsmith
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
@@ -445,7 +446,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26510,	-- We Must Prepare!
 				}),
-				q(122, {	-- Underbelly Scales
+				q(122,   {	-- Underbelly Scales
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -459,7 +460,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 				}),
-				o(204344, {	-- Wanted! -- aa
+				o(204344, {	-- Wanted!
 					["coord"] = { 16.0, 64.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -473,7 +474,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(26510, {	-- We Must Prepare! -- aa
+				q(26510, {	-- We Must Prepare!
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, 49 },
 					["races"] = ALLIANCE_ONLY,
