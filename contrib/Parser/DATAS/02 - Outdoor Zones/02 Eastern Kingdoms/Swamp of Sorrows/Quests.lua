@@ -35,6 +35,7 @@ _.Zones =
 				}),
 				q(54108, {	-- A Warrior's Death
 					["qg"] = 147297,	-- Zekhan
+					["lvl"] = 120,
 					["coord"] = { 79.7, 74.7, 51 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54107,	-- Grim Tidings
@@ -298,6 +299,7 @@ _.Zones =
 				}),
 				q(54109, {	-- Queen's Favor
 					["qg"] = 146011,	-- Varok Saurfang
+					["lvl"] = 120,
 					["coord"] = { 80.8, 78.7, 51 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54108,	-- A Warrior's Death
