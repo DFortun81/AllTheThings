@@ -3192,12 +3192,11 @@ end
 app.BaseAchievementCriteria = { 
 	__index = function(t, key)
 		if key == "achievementID" then
-			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
+			local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID or (t.parent and (t.parent.achievementID or (t.parent.parent and t.parent.parent.achievementID)));
 			if achievementID then
 				rawset(t, "achievementID", achievementID);
 				return achievementID;
 			end
-			return t.parent and (t.parent.achievementID or (t.parent.parent and t.parent.parent.achievementID));
 		elseif key == "key" then
 			return "criteriaID";
 		elseif key == "text" then
@@ -5009,10 +5008,8 @@ app.BaseNPC = {
 			return t.questID;
 		elseif key == "collectible" then
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
-		elseif key == "saved" then
+		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "collected" then
-			return t.saved;
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
 		else
@@ -5039,11 +5036,9 @@ app.BaseObject = {
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
 			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests);
-		elseif key == "collected" then
-			return t.saved;
 		elseif key == "trackable" then
 			return t.questID;
-		elseif key == "saved" then
+		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
@@ -5183,11 +5178,9 @@ app.BaseQuest = {
 			return true;
 		elseif key == "collectible" then
 			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
-		elseif key == "collected" then
-			return t.saved;
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
-		elseif key == "saved" then
+		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
@@ -5298,9 +5291,7 @@ app.BaseSelfieFilter = {
 			return true;
 		elseif key == "collectible" then
 			return app.CollectibleSelfieFilters;
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "saved" then
+		elseif key == "saved" or key == "collected" then
 			if app.AccountWideSelfieFilters then
 				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
 					return 1;
