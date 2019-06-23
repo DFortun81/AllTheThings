@@ -13,7 +13,10 @@ _.NeverImplemented =
 		q(54879),	-- Opening a darkshore chest
 		q(54880),	-- Opening a darkshore chest
 		q(54881),	-- Opening a darkshore chest
-	
+		
+		q(39748),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		q(39749),	-- Tracking Quest (triggered at some point while flying from Molt Thorn in Swamp of Sorrows to the Alliance Bonfire in Arathi Highlands)
+		
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(37187),	-- The Dark Portal

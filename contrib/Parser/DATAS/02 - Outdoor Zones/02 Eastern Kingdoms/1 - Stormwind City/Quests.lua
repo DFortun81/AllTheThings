@@ -567,9 +567,7 @@ _.Zones =
 						["classes"] = { 11 },	-- Druid
 						["lvl"] = 50,
 					}),
---[[				qa(11924),	-- More Torch Catching
-					qa(11921),	-- More Torch Tossing
-					qa(8860),	-- New Year Celebrations!
+--[[				qa(8860),	-- New Year Celebrations!
 					qa(25105),	-- Nibbler! No!
 					qa(25155),	-- Ogrezonians in the Mood
 					qa(31592),	-- On The Mend
