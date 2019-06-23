@@ -707,7 +707,7 @@ local function GetCompletionIcon(state)
 	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
 end
 local function GetCompletionText(state)
-	return L[state and "COMPLETE" or "INCOMPLETE"];
+	return L[(state == 2 and "COMPLETE_OTHER") or (state == 1 and "COMPLETE") or "INCOMPLETE"];
 end
 local function GetProgressTextForRow(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -980,6 +980,10 @@ local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	DirtyQuests[key] = true;
 	rawset(t, key, value);
+	if value then
+		SetDataSubMember("CollectedQuests", key, 1);
+		SetTempDataSubMember("CollectedQuests", key, 1);
+	end
 	
 	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", key);
@@ -995,6 +999,20 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
+end
+local IsQuestFlaggedCompletedForObject = function(t)
+	-- If the quest or altQuestID is completed, then return completed.
+	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
+		return 1;
+	end
+	if not t.repeatable and app.Settings:Get("AccountWide:Quests") then
+		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+			return 2;
+		end
+		if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+			return 2;
+		end
+	end
 end
 
 -- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
@@ -3626,9 +3644,7 @@ app.BaseEncounter = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
-				return true;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "index" then
 			return 1;
 		else
@@ -4037,7 +4053,7 @@ app.BaseGarrisonTalent = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "saved" then
-			if t.questID then return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID); end
+			if t.questID then return IsQuestFlaggedCompleted(t.questID); end
 			local info = t.info;
 			if info.researched then return info.researched; end
 		elseif key == "icon" then
@@ -4669,7 +4685,7 @@ app.BaseItem = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "modID" then
 			return 1;
 		elseif key == "name" then
@@ -4832,7 +4848,7 @@ app.BaseMount = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID)) then
+			if IsSpellKnown(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
@@ -4994,12 +5010,7 @@ app.BaseNPC = {
 		elseif key == "collectible" then
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
-			if t.questID and IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
@@ -5033,7 +5044,7 @@ app.BaseObject = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5177,12 +5188,7 @@ app.BaseQuest = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5740,7 +5746,7 @@ app.BaseVignette = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -7758,9 +7764,6 @@ local function RowOnEnter(self)
 		end
 		if reference.encounterID then
 			if app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
-		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
-		--elseif reference.creatureID or (reference.npcID and reference.npcID > 0) then
-		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
@@ -7953,16 +7956,18 @@ local function RowOnEnter(self)
 		if reference.sourceQuests and not reference.saved then
 			local prereqs, bc = {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do
-				if sourceQuestID > 0 and not IsQuestFlaggedCompleted(sourceQuestID) then
+				if sourceQuestID > 0 then
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
 						local sq = sqs[1];
-						if sq and sq.isBreadcrumb then
-							table.insert(bc, sqs[1]);
-						else
-							table.insert(prereqs, sqs[1]);
+						if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
+							if sq.isBreadcrumb then
+								table.insert(bc, sqs[1]);
+							else
+								table.insert(prereqs, sqs[1]);
+							end
 						end
-					else
+					elseif not IsQuestFlaggedCompleted(sourceQuestID) then
 						table.insert(prereqs, {questID = sourceQuestID});
 					end
 				end
@@ -11563,9 +11568,10 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
+	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSelfieFilters", {});
-	GetDataMember("CollectedTitles", {});
 	GetDataMember("CollectedSpells", {});
+	GetDataMember("CollectedTitles", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
 	GetDataMember("ArtifactRelicItemLevels", {});
@@ -11655,6 +11661,15 @@ app.events.VARIABLES_LOADED = function()
 		musicRolls[app.GUID] = myMusicRolls;
 	end
 	
+	-- Cache your character's quest data.
+	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
+	local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
+	if not myQuests then
+		myQuests = {};
+		quests[app.GUID] = myQuests;
+		SetTempDataMember("CollectedQuests", myQuests);
+	end
+	
 	-- Cache your character's selfie filters data.
 	local selfieFilters = GetDataMember("CollectedSelfieFiltersPerCharacter", {});
 	local mySelfieFilters = GetTempDataMember("CollectedSelfieFilters", selfieFilters[app.GUID]);
@@ -11737,6 +11752,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedIllusions",
 		"CollectedMusicRolls",
 		"CollectedMusicRollsPerCharacter",
+		"CollectedQuests",
+		"CollectedQuestsPerCharacter",
 		"CollectedSelfieFilters",
 		"CollectedSelfieFiltersPerCharacter",
 		"CollectedSources",
