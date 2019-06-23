@@ -42,14 +42,16 @@ _.Zones =
 					["qg"] = 114550,	-- 
 					["races"] = ALLIANCE_ONLY,
 				}),
+]]--
 				q(44684, {	-- Corruption Runs Deep
-					["qg"] = 114631,	-- 
+					["qg"] = 114631,	-- Archmage Karlain
+					["coord"] = { 46.9, 75.3, 42 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-]]--
 				q(44764, {	-- Demon in Disguise
 					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
+					["coord"] = { 46.9, 75.3, 42 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 44686,	-- Thought Collection
 				}),
@@ -69,9 +71,13 @@ _.Zones =
 					["qg"] = 100729,	-- 
 					["classes"] = {6},
 				})),
+]]--
 				q(44557, {	-- Finite Numbers
-					["qg"] = 114310,	-- 
+					["qg"] = 114310,	-- Archmage Khadgar
+					["lvl"] = 110,
+					["coord"] = { 47.0, 75.2, 42 },
 				}),
+--[[
 				qart(q(40931, {	-- Following the Curse
 					["qg"] = 100323,	-- 
 					["classes"] = {6},
@@ -88,6 +94,7 @@ _.Zones =
 				q(44734, {	-- Fragments of the Past
 					["qg"] = 114310,	-- Archmage Khadgar
 					["lvl"] = 110,
+					["coord"] = { 47.0, 75.2, 42 },
 					["sourceQuest"] = 44733,	-- The Power of Corruption
 					["g"] = {
 						i(142460),	-- Violet Seal of the Archmage
@@ -97,9 +104,13 @@ _.Zones =
 				q(40755, {	-- Hiding in the Stacks
 					["qg"] = 101547,	-- 
 				}),
+]]--
 				q(44683, {	-- Holding the Lines
-					["qg"] = 114310,	-- 
+					["qg"] = 114310,	-- Archmage Khadgar
+					["lvl"] = 110,
+					["coord"] = { 47.0, 75.2, 42 },
 				}),
+--[[
 				q(45296, {	-- No Bones About It
 					["qg"] = 18255,	-- 
 					 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
@@ -119,9 +130,18 @@ _.Zones =
 				q(11032, {	-- Protector No More
 					["qg"] = 18253,	-- 
 				}),
+]]--
 				q(44685, {	-- Reclaiming the Ramparts
-					["qg"] = 114310,	-- 
+					["qg"] = 114310,	-- Archmage Khadgar
+					["lvl"] = 110,
+					["coord"] = { 47.0, 75.2, 42 },
+					["sourceQuests"] = {
+						44684,	-- Corruption Runs Deep
+						44557,	-- Finite Numbers
+						44683,	-- Holding the Lines
+					},
 				}),
+--[[
 				q(11034, {	-- Restorer No More
 					["qg"] = 18253,	-- 
 				}),
@@ -161,9 +181,10 @@ _.Zones =
 					},
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
-					["sourceQuest"] = 44733,	-- The Power of Corruption
 					["qg"] = 114310,	-- Archmage Khadgar
 					["lvl"] = 110,
+					["coord"] = { 47.0, 75.2, 42 },
+					["sourceQuest"] = 44733,	-- The Power of Corruption
 				}),
 				--[[
 				qart(q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
@@ -235,7 +256,13 @@ _.Zones =
 				q(44686, {	-- Thought Collection
 					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
+					["coord"] = { 46.9, 75.3, 42 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						44684,	-- Corruption Runs Deep
+						44557,	-- Finite Numbers
+						44683,	-- Holding the Lines
+					},
 				}),
 				q(9860, {	-- The New Directive
 					["u"] = 40,
@@ -245,8 +272,9 @@ _.Zones =
 					},
 				}),
 				q(44733, {	-- The Power of Corruption
-					["lvl"] = 110,
 					["qg"] = 114310,	-- Archmage Khadgar
+					["lvl"] = 110,
+					["coord"] = { 46.9, 75.2, 42 },
 					["sourceQuest"] = 44764,	-- Demon in Disguise
 				}),
 				q(40712, {	-- The Power Possessed
@@ -278,17 +306,16 @@ _.Zones =
 						i(77948),	-- The Dreamer
 					},
 				})),
-				{	-- Waterlogged Tome
-					["objectID"] = 258978,	-- Waterlogged Tome
+				o(258978, {	-- Waterlogged Tome
 					["questID"] = 44487,	-- Waterlogged Tome
 					["lvl"] = 110,
+					["coord"] = { 39.1, 73.7, 45 },
 					["g"] = {
-						{
+						crit(1, {	-- Waterlogged Tome
 							["achievementID"] = 11240,	-- Harbinger
-							["criteriaID"] = 1,	-- Waterlogged Tome
-						},
+						}),
 					},
-				},
+				}),
 			}),
 		}),	
 	}),
