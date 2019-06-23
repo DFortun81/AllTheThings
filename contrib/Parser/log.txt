@@ -63,6 +63,7 @@ Custom NPC ID [-4185] has no reference and should be removed.
 Custom NPC ID [-4186] has no reference and should be removed.
 Custom NPC ID [-4187] has no reference and should be removed.
 Custom NPC ID [-4188] has no reference and should be removed.
+Custom NPC ID [-5349] has no reference and should be removed.
 Custom NPC ID [-5351] has no reference and should be removed.
 Custom NPC ID [-5364] has no reference and should be removed.
 Custom NPC ID [-5992] has no reference and should be removed.

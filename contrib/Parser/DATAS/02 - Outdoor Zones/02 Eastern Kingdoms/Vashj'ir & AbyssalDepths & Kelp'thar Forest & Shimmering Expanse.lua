@@ -1065,9 +1065,10 @@ _.Zones =
 							qa(25626, {	-- Visions of the Past: Rise from the Deep
 								["qg"] = 39881,	-- 
 								["g"] = {
-									i(59671),	-- 
-									i(59670),	-- 
+									i(59671),	-- Pearlescent Spaulders
+									i(59670),	-- Volaran's Handguards
 									i(59672),	-- Quel'Dormir Signet Ring
+									i(59669),	-- Emerald Dragonet Choker
 								},
 							}),
 							qa(25760, {	-- Visions of the Past: Invasion of Vashj'ir
