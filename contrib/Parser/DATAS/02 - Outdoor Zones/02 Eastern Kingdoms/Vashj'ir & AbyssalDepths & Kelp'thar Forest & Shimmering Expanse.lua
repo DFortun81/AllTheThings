@@ -57,6 +57,7 @@ _.Zones =
 								["qg"] = 41667,	-- 
 								["g"] = {
 									i(59639),	-- 
+									i(59638),	-- Necklace of the Furious Standard
 								},
 							}),
 							qh(25980, {	-- A Standard Day for Azrajar
@@ -159,6 +160,8 @@ _.Zones =
 								["qg"] = 41600,	-- 
 								["g"] = {
 									i(59618),	-- 
+									i(59617),	-- Mentalist's Protective Bottle
+									i(59619),	-- Brain-Connector Chain
 								},
 							}),
 							qa(26080, {	-- One Last Favor
@@ -203,6 +206,7 @@ _.Zones =
 								["qg"] = 41666,	-- 
 								["g"] = {
 									i(59632),	-- 
+									i(59633),	-- Severed Visionary Tentacle
 								},
 							}),
 							qh(25988, {	-- Put It On
