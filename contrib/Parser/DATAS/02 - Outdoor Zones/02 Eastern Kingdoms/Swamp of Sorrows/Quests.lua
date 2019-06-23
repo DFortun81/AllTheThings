@@ -10,16 +10,24 @@ _.Zones =
 					crit(1, {	-- Bogpaddle
 						["sourceQuest"] = 27600,	-- In With a Bang
 					}),
-					crit(2, {	-- The Bloodmire
+					crit(2, {	-- The Bloodmire (alliance)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							27849,	-- Assault on Stonard
 							27851,	-- Cutting Supply
 						},
 					}),
-					crit(3, {	-- The Shifting Mire
+					crit(2, {	-- The Bloodmire (horde)
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 27857,	-- We're Under Attack!
+					}),
+					crit(3, {	-- The Shifting Mire (alliance)
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 24913,	-- Remember the Light
+					}),
+					crit(3, {	-- The Shifting Mire (horde)
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 27911,	-- With Dying Breath
 					}),
 					crit(4, {	-- The Sunken Temple
 						["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
@@ -106,7 +114,7 @@ _.Zones =
 						27795,	-- Tides of Darkness
 					},
 				}),
-				q(27840, {	-- Draenethyst Crystals -- aa
+				q(27840, {	-- Draenethyst Crystals
 					["qg"] = 18221,	-- Holaaru
 					["coord"] = { 69.8, 36.5, 51 },
 					["races"] = ALLIANCE_ONLY,
@@ -167,18 +175,22 @@ _.Zones =
 				}),
 				q(27910, {	-- Last Regrets
 					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27907,	-- Prayerblossom
+						27908,	-- Secrets of the Mire
+					},
 				}),
 				q(27704, {	-- Legends of the Sunken Temple
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, 51 },
 					["sourceQuest"] = 27694,	-- Pool of Tears
 				}),
-				q(27822, {	-- Lumbering Oafs -- aa
+				q(27822, {	-- Lumbering Oafs
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, 51 },
 					["races"] = ALLIANCE_ONLY,
-					--["sourceQuest"] = 27870,	-- To Marshtide Watch
 					["g"] = {
 						i(64593),	-- Helm of the Gatherer
 						i(64603),	-- Merciless Breastplate
@@ -187,15 +199,15 @@ _.Zones =
 				}),
 				q(27853, {	-- Lumbering Oafs
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27870,	-- To Marshtide Watch
 					["g"] = {
 						i(64624),	-- Helm of the Gatherer
 						i(64628),	-- Merciliess Breastplate
 						i(64631),	-- Balanced Pauldrons
 					},
 				}),
-				q(27587, {	-- Maliciously Delicious -- aa
+				q(27587, {	-- Maliciously Delicious
 					["qg"] = 45786,	-- Trade Baron Silversnap
 					["coord"] = { 73.1, 14.9, 51 },
 					["sourceQuests"] = {
@@ -216,9 +228,14 @@ _.Zones =
 				}),
 				q(27856, {	-- Marking the Fallen
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27853,	-- Lumbering Oafs
+						27852,	-- Orcs and Humans
+					},
 				}),
-				q(27691, {	-- Marshfin Madness -- aa
+				q(27691, {	-- Marshfin Madness
 					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, 51 },
 				}),
@@ -234,42 +251,49 @@ _.Zones =
 				}),
 				q(27906, {	-- Neeka Bloodscar
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27857,	-- We're Under Attack!
 				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27916,	-- Ruag's Report
 					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 27916 },
 				}),
 				q(27919, {	-- Onward to the Blasted Lands
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.9, 33.6, 51 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 24913,	-- Remember the Light
 					["isBreadcrumb"] = true,
 				}),
-				q(27821, {	-- Orcs and Humans -- aa
+				q(27821, {	-- Orcs and Humans
 					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, 51 },
 					["races"] = ALLIANCE_ONLY,
-					--["sourceQuest"] = 27870,	-- To Marshtide Watch
+					["sourceQuest"] = 27870,	-- To Marshtide Watch
 				}),
 				q(27852, {	-- Orcs and Humans
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 27871,	-- To Stonard
 				}),
 				q(27694, {	-- Pool of Tears
 					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, 51 },
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 				}),
-				q(27875, {	-- Prayerblossom -- aa
+				q(27875, {	-- Prayerblossom
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.8, 33.5, 51 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27907, {	-- Prayerblossom
 					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(54109, {	-- Queen's Favor
@@ -288,8 +312,13 @@ _.Zones =
 					},
 				}),
 				q(27855, {	-- Reinforcements Denied
-					["qg"] = 7623,	-- Dispatch Command Ruag
+					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27853,	-- Lumbering Oafs
+						27852,	-- Orcs and Humans
+					},
 				}),
 				q(24913, {	-- Remember the Light
 					["qg"] = 17127,	-- Anchorite Avuun
@@ -305,16 +334,19 @@ _.Zones =
 				}),
 				q(27916, {	-- Ruag's Report
 					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 27911 },
+					["sourceQuest"] = 27911,	-- With Dying Breath
+					["isBreadcrumb"] = true,
 				}),
-				q(27876, {	-- Secrets of the Mire -- aa
+				q(27876, {	-- Secrets of the Mire
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.8, 33.5, 51 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27908, {	-- Secrets of the Mire
 					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27818, {	-- Slithering Signs
@@ -373,7 +405,7 @@ _.Zones =
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["isBreadcrumb"] = true,
 				}),
-				q(27860, {	-- The Lost Ones -- aa
+				q(27860, {	-- The Lost Ones
 					["qg"] = 18221,	-- Holaaru
 					["coord"] = { 69.8, 36.5, 51 },
 					["races"] = ALLIANCE_ONLY,
@@ -388,8 +420,13 @@ _.Zones =
 					},
 				}),
 				q(27909, {	-- The Purespring
-					["qg"] = 47041,	-- 
+					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27907,	-- Prayerblossom
+						27908,	-- Secrets of the Mire
+					},
 				}),
 				q(2681, {	-- The Stones That Bind Us
 					["u"] = 40,
@@ -421,7 +458,12 @@ _.Zones =
 				}),
 				q(27854, {	-- Tides of Darkness
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27853,	-- Lumbering Oafs
+						27852,	-- Orcs and Humans
+					},
 					["g"] = {
 						i(64625),	-- Knight Tapper
 						i(64634),	-- Bloodmire Crossbow
@@ -432,17 +474,27 @@ _.Zones =
 				}),
 				q(27870, {	-- To Marshtide Watch
 					["qg"] = 46071,	-- Lord Itharius
+					["coord"] = { 69.4, 54.5, 51 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 				}),
 				q(27871, {	-- To Stonard
 					["qg"] = 46071,	-- Lord Itharius
+					["coord"] = { 69.4, 54.5, 51 },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 				}),
 				q(27857, {	-- We're Under Attack!
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 49.3, 55.3, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27856,	-- Marking the Fallen
+						27855,	-- Reinforcements Denied
+						27854,	-- Tides of Darkness
+					},
 					["g"] = {
 						i(64636),	-- Defender's Thrust
 						i(64626),	-- Robes of the Honorable
@@ -453,7 +505,12 @@ _.Zones =
 				}),
 				q(27911, {	-- With Dying Breath
 					["qg"] = 47041,	-- Neeka Bloodscar
+					["coord"] = { 21.2, 51.7, 51 },
 					["races"] = HORDE_ONLY,
+					["sourceQuests"] = {
+						27910,	-- Last Regrets
+						27909,	-- The Purespring
+					},
 					["g"] = {
 						i(64627),	-- Dying Breath
 					},
