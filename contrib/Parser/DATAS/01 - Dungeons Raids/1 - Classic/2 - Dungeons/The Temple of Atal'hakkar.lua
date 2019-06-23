@@ -9,21 +9,19 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 76.04, 45.21, 51 },	-- The Temple of Atal'hakkar, Swamp of Sorrows
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 27605,	-- Eranikus
+				q(27605, {	-- Eranikus
 					["qg"] = 46077,	-- Lord Itharius
+					["sourceQuest"] = 27915,	-- The Heart of the Temple
 					["groups"] = {
 						i(65931),	-- Essence of Eranikus' Shade
 					},
-				},
-				{
-					["questID"] = 27604,	-- Jammal'an the Prophet
+				}),
+				q(27604, {	-- Jammal'an the Prophet
 					["qg"] = 46077,	-- Lord Itharius
-				},
-				{
-					["questID"] = 27633,	-- The Blood God Hakkar
+				}),
+				q(27633, {	-- The Blood God Hakkar
 					["qg"] = 46077,	-- Lord Itharius
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate

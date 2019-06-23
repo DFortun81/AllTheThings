@@ -76,6 +76,7 @@ _.Zones =
 					["qg"] = 9540,	-- Enohar Thunderbrew
 					["coord"] = { 61.4, 18.6, 17 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 27919,	-- Onward to the Blasted Lands
 				}),
 				q(26185, {	-- Advice from the Cenarion Circle
 					["qg"] = 42349,	-- Mayor Charlton Connisport
