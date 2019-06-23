@@ -3233,6 +3233,15 @@ _.Zones =
 										i(135677),	-- Vindictive Gladiator's Plate Girdle
 										i(135675),	-- Vindictive Gladiator's Plate Legguards
 										i(135672),	-- Vindictive Gladiator's Plate Warboots
+										i(142643),	-- Fearless Gladiator's Plate Helm
+										i(142645),	-- Fearless Gladiator's Plate Shoulders
+										--i(136885),	-- Fearless Gladiator's Cloak of Battle
+										i(142640),	-- Fearless Gladiator's Plate Chestpiece
+										i(142647),	-- Fearless Gladiator's Plate Wristplates
+										i(142642),	-- Fearless Gladiator's Plate Gauntlets
+										i(142646),	-- Fearless Gladiator's Plate Girdle
+										i(142644),	-- Fearless Gladiator's Plate Legguards
+										i(142641),	-- Fearless Gladiator's Plate Warboots
 									},
 								}),
 								i(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [Death Knight - 5/10/19]
