@@ -1074,7 +1074,8 @@ _.Zones =
 								["qg"] = 39881,	-- 
 								["g"] = {
 									i(59709),	-- 
-									i(59708),	-- 
+									i(59708),	--
+									i(59710),	-- Wavespeaker's Focus
 								},
 							}),
 							qh(25957, {	-- Visions of the Past: Invasion of Vashj'ir

@@ -186,10 +186,12 @@ AllTheThings.FlightPathDB = {
 	{
 		name="Nighthaven, Moonglade",
 		faction=2,
+		["un"] = 1,
 	}, -- [62]
 	{
 		name="Nighthaven, Moonglade",
 		faction=1,
+		["un"] = 1,
 	}, -- [63]
 	nil, -- [64]
 	{
@@ -718,6 +720,7 @@ AllTheThings.FlightPathDB = {
 	{
 		name="Acherus: The Ebon Hold",
 		faction=0,
+		["classes"] = { 6 },	-- Death Knight
 	}, -- [315]
 	nil, -- [316]
 	nil, -- [317]
@@ -1030,6 +1033,7 @@ AllTheThings.FlightPathDB = {
 	[2066] = {
 		name="Atal'Gral, Zuldazar",
 		faction=0,
+		["un"] = 1,
 	},
 	[1293] = {
 		name="Tushui Landing, Timeless Isle",
@@ -1282,6 +1286,7 @@ AllTheThings.FlightPathDB = {
 	[2162] = {
 		name="Devoted Sanctuary, Vol'dun",
 		faction=0,
+		["u"] = 1,
 	},
 	[2164] = {
 		name="Isle of Fangs, Zuldazar",
@@ -1326,6 +1331,7 @@ AllTheThings.FlightPathDB = {
 	[1862] = {
 		name="Acherus: The Ebon Hold",
 		faction=0,
+		["classes"] = { 6 },	-- Death Knight
 	},
 	[1863] = {
 		name="Hafr Fjall, Stormheim",
@@ -1670,6 +1676,7 @@ AllTheThings.FlightPathDB = {
 	[2071] = {
 		name="Dreadpearl, Zuldazar",
 		faction=0,
+		["u"] = 1,
 	},
 	[2061] = {
 		name="The Sliver, Zuldazar",
@@ -1962,6 +1969,7 @@ AllTheThings.FlightPathDB = {
 	[1567] = {
 		name="Temple of Karabor, Shadowmoon Valley",
 		faction=2,
+		["u"] = 1,
 	},
 	[1445] = {
 		name="Durotan's Grasp, Talador",
