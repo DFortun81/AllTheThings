@@ -8,7 +8,10 @@ _.Zones =
 			n(-17, {	-- Quests
 				ach(4901, {	-- Burning Steppes Quests
 					crit(1, {	-- Preparation
-						["sourceQuest"] = 28183,	-- Return to Keeshan
+						["sourceQuests"] = {
+							28183,	-- Return to Keeshan (alliance)
+							28425,	-- Return to Ariok (horde)
+						},
 					}),
 					crit(2, {	-- Annihilation
 						["sourceQuests"] = {
@@ -39,10 +42,15 @@ _.Zones =
 						28312,	-- Latent Demons of the Land
 					},
 				}),
-				q(28448, {	-- A Deal With a Dragon (secondary QG ID 48567)
-					["qgs"] = {48567, 48565},	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
+				q(28448, {	-- A Deal With a Dragon
+					["qg"] = 48565,	-- Ariok
+					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					["sourceQuests"] = {
+						28445,	-- A Heap of Delicious Worg
+						28443,	-- Blackened Ashes
+						28444,	-- Latent Demons of the Land
+					},
 				}),
 				q(28318, {	-- A Delivery for Neeralak
 					["qg"] = 48307,	-- Colonel Troteman
@@ -52,6 +60,7 @@ _.Zones =
 				}),
 				q(28451, {	-- A Delivery for Neeralak
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
@@ -63,6 +72,7 @@ _.Zones =
 				}),
 				q(28450, {	-- A Delivery for Thorg'izog
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
@@ -74,6 +84,7 @@ _.Zones =
 				}),
 				q(28452, {	-- A Delivery for Xi'lun
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28449 },	-- Placing the Pawns
 				}),
@@ -85,6 +96,7 @@ _.Zones =
 				}),
 				q(28420, {	-- A Future Project
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
 				}),
@@ -96,6 +108,7 @@ _.Zones =
 				}),
 				q(28445, {	-- A Heap of Delicious Worg
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
@@ -107,6 +120,7 @@ _.Zones =
 				}),
 				q(28427, {	-- A Needle in a Hellhole
 					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28426 },	-- Chiselgrip, the Heart of the Steppes
 				}),
@@ -158,7 +172,7 @@ _.Zones =
 					["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
-				q(4024, {	-- A Taste of Flame
+				q(4024,  {	-- A Taste of Flame
 					["u"] = 40,
 					["g"] = {
 						un(2, i(12066)),	-- Shaleskin Cape
@@ -173,8 +187,30 @@ _.Zones =
 					["sourceQuests"] = { 28266 },	-- Trial by Magma
 				}),
 				q(28440, {	-- Abuse of Power
+					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
+				}),
+				o(207304, {	-- Adventure Board
+					["coord"] = { 17.0, 51.7, 36 },
+					["g"] = {
+						q(28068, {	-- Adventurers Wanted: Blackrock Depths
+							["races"] = ALLIANCE_ONLY,
+							["description"] = "Only available between level 47 and 56.",
+							["isBreadcrumb"] = true,
+						}),
+					},
+				}),
+				o(207303, {	-- Adventure Board
+					["coord"] = { 17.0, 51.7, 36 },
+					["g"] = {
+						q(28069, {	-- Adventurers Wanted: Blackrock Depths
+							["races"] = HORDE_ONLY,
+							["description"] = "Only available between level 47 and 56.",
+							["isBreadcrumb"] = true,
+						}),
+					},
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock
 					["qg"] = 48306,	-- John J. Keeshan
@@ -184,6 +220,7 @@ _.Zones =
 				}),
 				q(28454, {	-- Assault on Dreadmaul Rock
 					["qg"] = 48565,	-- Ariok
+					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28453 },	-- Locked and Loaded
 				}),
@@ -195,6 +232,7 @@ _.Zones =
 				}),
 				q(28443, {	-- Blackened Ashes
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
@@ -216,8 +254,13 @@ _.Zones =
 				}),
 				q(28446, {	-- Blood Tour
 					["qg"] = 48565,	-- Ariok
+					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					["sourceQuests"] = {
+						28445,	-- A Heap of Delicious Worg
+						28443,	-- Blackened Ashes
+						28444,	-- Latent Demons of the Land
+					},
 				}),
 				i(142344, {	-- Broken Axe Blade
 					["requireSkill"] = 164,	-- Classic Blacksmithing
@@ -248,6 +291,7 @@ _.Zones =
 				}),
 				q(28418, {	-- Burning Vengeance -- aa
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28667 },	-- Warchief's Command: Burning Steppes!
 				}),
@@ -268,6 +312,7 @@ _.Zones =
 				}),
 				q(28426, {	-- Chiselgrip, the Heart of the Steppes
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28417,	-- Done Nothing Wrong
@@ -282,6 +327,7 @@ _.Zones =
 				}),
 				q(28172, {	-- Done Nothing Wrong
 					["qg"] = 47779,	-- Mouton Flamestar
+					["coord"] = { 16.9, 51.3, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64496),	-- Hatchlings' Protector
@@ -291,8 +337,10 @@ _.Zones =
 				}),
 				q(28417, {	-- Done Nothing Wrong
 					["qg"] = 47779,	-- Mouton Flamestar
+					["coord"] = { 16.9, 51.3, 36 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						i(64500),	-- Flamestar Amulet
 						i(64499),	-- Hatchlings' Protector
 						i(64498),	-- Whelp Keeper's Staff
 						i(156964),	-- Clutch Rearrangement Tool
@@ -308,10 +356,15 @@ _.Zones =
 						28312,	-- Latent Demons of the Land
 					},
 				}),
-				q(28447, {	-- Draconic Vanguard (secondary QG ID 48567)
-					["qg"] = 48567,	-- Ariok (secondary ID can be 48565, same NPC, if you pick up Blood Tour last)
+				q(28447, {	-- Draconic Vanguard
+					["qg"] = 48565,	-- Ariok
+					["coord"] = { 54.7, 24.5, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28445, 28443, 28444 },	-- A Heap of Delicious Worg, Blackened Ashes, & Latent Demons of the Land
+					["sourceQuests"] = {
+						28445,	-- A Heap of Delicious Worg
+						28443,	-- Blackened Ashes
+						28444,	-- Latent Demons of the Land
+					},
 				}),
 				q(28286, {	-- Enough Damage For One Day
 					["qg"] = 48110,	-- Colonel Troteman
@@ -326,7 +379,9 @@ _.Zones =
 						i(64533),	-- Stratagem Band
 					},
 				}),
-				q(28441, {	-- Enough Damage For One Day (awarded "Infiltration" criteria)
+				q(28441, {	-- Enough Damage For One Day
+					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28440 },	-- Abuse of Power
 					["g"] = {
@@ -339,6 +394,7 @@ _.Zones =
 				}),
 				q(28442, {	-- Flame Crest
 					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28441 },	-- Enough Damage for One Day
 				}),
@@ -358,6 +414,7 @@ _.Zones =
 				}),
 				q(28437, {	-- General Thorg'izog
 					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28227,	-- Golem Training
@@ -372,6 +429,7 @@ _.Zones =
 				}),
 				q(28455, {	-- Glory Amidst Chaos
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28454 },	-- Assault on Dreadmaul Rock
 				}),
@@ -397,6 +455,7 @@ _.Zones =
 				}),
 				q(28433, {	-- Grunt Work
 					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28432 },	-- Into the Black Tooth Hovel
 				}),
@@ -408,10 +467,11 @@ _.Zones =
 				}),
 				q(28439, {	-- I Am the Law and I Am the Lash
 					["qg"] = 48133,	-- General Thorg'izog
+					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28438 },	-- Trial by Magma
 				}),
-				q(4263, {	-- Incendius!
+				q(4263,  {	-- Incendius!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -429,10 +489,11 @@ _.Zones =
 				}),
 				q(28432, {	-- Into the Black Tooth Hovel
 					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 				}),
-				q(3822, {	-- Krom'Grul
+				q(3822,  {	-- Krom'Grul
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -447,6 +508,7 @@ _.Zones =
 				}),
 				q(28444, {	-- Latent Demons of the Land
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 				}),
@@ -466,8 +528,14 @@ _.Zones =
 					},
 				}),
 				q(28453, {	-- Locked and Loaded
+					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28451, 28450, 28452 },	-- A Delivery for Neeralak, A Delivery for Thorg'izog, & A Delivery for Xi'lun
+					["sourceQuests"] = {
+						28451,	-- A Delivery for Neeralak
+						28450,	-- A Delivery for Thorg'izog
+						28452,	-- A Delivery for Xi'lun
+					},
 					["g"] = {
 						i(64568),	-- Bracers of Misbehavior
 						i(64567),	-- Mischievous Spaulders
@@ -476,7 +544,7 @@ _.Zones =
 						i(64564),	-- Glassy Band
 					},
 				}),
-				q(5081, {	-- Maxwell's Mission
+				q(5081,  {	-- Maxwell's Mission
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -503,6 +571,7 @@ _.Zones =
 				}),
 				q(28421, {	-- Mud Hunter
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
 					["g"] = {
@@ -511,6 +580,7 @@ _.Zones =
 				}),
 				q(28491, {	-- Not Fireflies, Flameflies
 					["qg"] = 10260,	-- Kibler
+					["coord"] = { 54.9, 22.5, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
 					["g"] = {
@@ -520,7 +590,7 @@ _.Zones =
 						i(66080),	-- Tiny Flamefly
 					},
 				}),
-				q(3825, {	-- Ogre Head On A Stick = Party
+				q(3825,  {	-- Ogre Head On A Stick = Party
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -544,9 +614,15 @@ _.Zones =
 						i(64543),	-- Pawn's Bracers
 					},
 				}),
-				q(28449, {	-- Placing the Pawns (awarded "Anticipation" criteria)
+				q(28449, {	-- Placing the Pawns
+					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28448, 28446, 28447 },	-- A Deal With a Dragon, Blood Tour, & Draconic Vanguard
+					["sourceQuests"] = {
+						28448,	-- A Deal With a Dragon
+						28446,	-- Blood Tour
+						28447,	-- Draconic Vanguard
+					},
 					["g"] = {
 						i(64550),	-- Breastplate of the Undercover Thorium Brother
 						i(64549),	-- Subversive Steps
@@ -559,7 +635,7 @@ _.Zones =
 					["coord"] = { 46.7, 44.0, 36 },
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
 				}),
-				q(4701, {	-- Put Her Down
+				q(4701,  {	-- Put Her Down
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -570,8 +646,12 @@ _.Zones =
 				}),
 				q(28425, {	-- Return to Ariok
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28424, 28423 },	-- Shadow Boxing & Warlocks Have the Neatest Stuff
+					["sourceQuests"] = {
+						28424,	-- Shadow Boxing
+						28423,	-- Warlocks Have the Neatest Stuff
+					},
 				}),
 				q(28183, {	-- Return to Keeshan
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
@@ -607,6 +687,7 @@ _.Zones =
 				}),
 				q(28424, {	-- Shadow Boxing
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand the Cider, and the Orb
 				}),
@@ -623,6 +704,7 @@ _.Zones =
 				}),
 				q(28419, {	-- Stocking Up
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28418 },	-- Burning Vengeance
 					["g"] = {
@@ -637,6 +719,8 @@ _.Zones =
 					["sourceQuests"] = { 28245 },	-- Grunt Work
 				}),
 				q(28434, {	-- Strategic Cuts
+					["qg"] = 28432,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 				}),
@@ -652,6 +736,8 @@ _.Zones =
 					},
 				}),
 				q(28436, {	-- Taking the Horn For Ourselves
+					["qg"] = 48568,	-- Eitrigg
+					["coord"] = { 44.5, 44.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28435 },	-- The Kodocaller's Horn
 					["g"] = {
@@ -660,14 +746,17 @@ _.Zones =
 						i(64518),	-- Leggings of the Steppes
 					},
 				}),
-				q(28569, {	-- The Bogpaddle Bullet (mutually exclusive with "Hero's Call: Swamp of Sorrows!")
+				q(28569, {	-- The Bogpaddle Bullet
 					["qg"] = 9177,	-- Oralius
+					["lvl"] = 40,
+					["coord"] = { 71.8, 68.0, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(28570, {	-- The Bogpaddle Bullet (mutually exclusive with "Warchief's Command: Swamp of Sorrows!")
+				q(28570, {	-- The Bogpaddle Bullet
 					["qg"] = 10260,	-- Kibler
 					["lvl"] = 40,
+					["coord"] = { 54.9, 22.6, 36 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -679,6 +768,7 @@ _.Zones =
 				}),
 				q(28435, {	-- The Kodocaller's Horn
 					["qg"] = 48085,	-- Quartermaster Kaoshin
+					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work
 				}),
@@ -694,8 +784,13 @@ _.Zones =
 				}),
 				q(28422, {	-- The Sand, the Cider, and the Orb
 					["qg"] = 48559,	-- Ariok
+					["coord"] = { 17.4, 51.6, 36 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 28420, 28421, 28419 },	-- A Future Project, Mud Hunter, & Stocking Up
+					["sourceQuests"] = {
+						28420,	-- A Future Project
+						28421,	-- Mud Hunter
+						28419,	-- Stocking Up
+					},
 				}),
 				q(28322, {	-- The Spoils of War
 					["qg"] = 48307,	-- Colonel Troteman
@@ -711,8 +806,9 @@ _.Zones =
 						i(64570),	-- Cracked Orb of Dominion
 					},
 				}),
-				q(28456, {	-- The Spoils of War (awarded "Annihilation" and "Infiltration" criteria and overall Burning Steppes zone achievement)
+				q(28456, {	-- The Spoils of War
 					["qg"] = 48569,	-- Eitrigg
+					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28455 },	-- Glory Amidst Chaos
 					["g"] = {
@@ -737,9 +833,11 @@ _.Zones =
 				}),
 				q(28438, {	-- Trial by Magma
 					["qg"] = 48133,	-- General Thorg'izog
+					["coord"] = { 30.6, 33.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28437 },	-- General Thorg'izog
 					["g"] = {
+						i(64532),	-- Thorg'izog's Band
 						i(64531),	-- Bracers of Gladiatorial Combat
 						i(64530),	-- Poorly Styled Gloves
 						i(64529),	-- Magma Lord Cloak
@@ -753,10 +851,11 @@ _.Zones =
 				}),
 				q(28423, {	-- Warlocks Have the Neatest Stuff
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["coord"] = { 8.3, 35.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 				}),
-				q(4903, {	-- Warlord's Command
+				q(4903,  {	-- Warlord's Command
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -769,28 +868,13 @@ _.Zones =
 				}),
 				q(44927, {	-- Worth Its Weight in Steel
 					["qg"] = 115805,	-- Hoddruc Bladebender
+					["coord"] = { 46.8, 44.9, 36 },
 					["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
 					["requireSkill"] = 164,	-- Classic Blacksmithing
 					["g"] = {
 						i(142346),	-- Plans: Bleakwood Hew
 					},
 				}),
---[[
-				o(207304, {	-- Adventure Board (according to a wowhead comment, these are only available between 47 and 56, can't confirm)
-					q(28068, {	-- Adventurers Wanted: Blackrock Depths
-						["races"] = ALLIANCE_ONLY,
-					}),
-				}),
-				o(207303, {	-- Adventure Board
-					q(28069, {	-- Adventurers Wanted: Blackrock Depths
-						["races"] = HORDE_ONLY,
-					}),
-				}),				
-				q(27469, {	-- Friends on The Other Side (Alliance NPC doesn't seem to offer the quest - marked Horde NPC as "q" instead of "qh")
-					["qg"] = 9563,	-- Ragged John
-					["races"] = ALLIANCE_ONLY,
-				}),
-]]--
 			}),
 		}),
 	}),
