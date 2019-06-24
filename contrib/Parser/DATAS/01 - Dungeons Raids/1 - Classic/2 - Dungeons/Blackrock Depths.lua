@@ -8,27 +8,33 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 242,
 		["maps"] = { 243, },
 		["coord"] = { 39.06, 18.12, 35 },	-- Blackrock Depths, Blackrock Mountain [Blackrock Depths]
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				n(-75, {	-- Detention Block
-					qa(27569, {	-- Dark Iron Tacticians
+					q(27569, {	-- Dark Iron Tacticians
 						["qg"] = 45894,	-- Prospector Seymour
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27568 },	-- Infilitrating Shadowforge City [Alliance]
 					}),
-					qa(27568, {	-- Infiltrating Shadowforge City [Alliance]
+					q(27568, {	-- Infiltrating Shadowforge City [Alliance]
 						["qg"] = 45891,	-- Oralius
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qh(27582, {	-- Infiltrating Shadowforge City [Horde]
+					q(27582, {	-- Infiltrating Shadowforge City [Horde]
 						["qg"] = 45839,	-- Galamav the Marksman
+						["races"] = HORDE_ONLY,
 					}),
-					qa(27565, {	-- Into the Prison [Alliance]
+					q(27565, {	-- Into the Prison [Alliance]
 						["qg"] = 45892,	-- Jalinda Sprig
+						["races"] = ALLIANCE_ONLY,
 					}),
-					qh(27579, {	-- Into the Prison [Horde]
+					q(27579, {	-- Into the Prison [Horde]
 						["qg"] = 45821,	-- Tha'trak Proudtusk
+						["races"] = HORDE_ONLY,
 					}),
-					qh(27585, {	-- The 109th Division
+					q(27585, {	-- The 109th Division
 						["qg"] = 45820,	-- Razal'blade
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27582 },	-- Infiltrating Shadowforge City [Horde]
 					}),
 					q(27596, {	-- The Heart of the Mountain
@@ -37,12 +43,14 @@ _.Instances = { tier(1, {	-- Classic
 					q(27603, {	-- The Sealed Gate
 						["qg"] = 45849,	-- Tinkee Steamboil
 					}),
-					qa(27567, {	-- Twilight?! No! [Alliance]
+					q(27567, {	-- Twilight?! No! [Alliance]
 						["qg"] = 45898,	-- Kevin Dawson
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27565 },	-- Into the Prison [Alliance]
 					}),
-					qh(27581, {	-- Twilight?! No! [Horde]
+					q(27581, {	-- Twilight?! No! [Horde]
 						["qg"] = 45818,	-- Lexlort
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 				}),
@@ -67,44 +75,167 @@ _.Instances = { tier(1, {	-- Classic
 						["qg"] = 12944,	-- Lokhtos Darkbargainer
 						["repeatable"] = true,
 					}),
-					qa(27578, {	-- Morgan's Fruition
-						["groups"] = {
+					q(27578, {	-- Morgan's Fruition
+						["g"] = {
 							i(65956),	-- Maxwell's Cloak
 							i(65932),	-- Thaurissan's Breastplatee
 							i(65980),	-- Dark Iron Band
 						},
 						["qg"] = 45890,   -- Marshal Maxwell
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27573 },	-- The Dark Iron Pact [Alliance]
 					}),
-					qh(27593, {	-- Rebirth of the K.E.F
-						["groups"] = {
+					q(27593, {	-- Rebirth of the K.E.F
+						["g"] = {
 							i(68054),	-- Dark Iron Band
 							i(68052),	-- Kargath Cloak
 							i(68053),	-- Thaurissan's Breastplatee
 						},
 						["qg"] = 45840,	-- Warlord Goretooth
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27591 },  -- The Dark Iron Pact [Horde]
 					}),
 					q(4295, {	-- Rocknot's Ale
 						["qg"] = 9503,	-- Private Rocknot
 						["repeatable"] = true,
 					}),
-					qa(27573, {	-- The Dark Iron Pact [Alliance]
+					q(27573, {	-- The Dark Iron Pact [Alliance]
 						["qg"] = 45899,	-- Mountaineer Orfus
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27571 },	-- The Grim Guzzler [Alliance]
 					}),
-					qh(27591, {	-- The Dark Iron Pact [Horde]
+					q(27591, {	-- The Dark Iron Pact [Horde]
 						["qg"] = 45824,	--  Thunderheart
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27589 },	-- The Grim Guzzler [Horde]
 					}),
-					qa(27571, {	-- The Grim Guzzler [Alliance]
+					q(27571, {	-- The Grim Guzzler [Alliance]
 						["qg"] = 45888,	-- Mayara Brightwing
+						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 27569 },	-- Dark Iron Tacticians
 					}),
-					qh(27589, {	-- The Grim Guzzler [Horde]
+					q(27589, {	-- The Grim Guzzler [Horde]
 						["qg"] = 45817,	-- Hierophant Theodora Mulvadania
+						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27585 },	-- The 109th Division
 					}),
+				}),
+				q(4024, {	-- A Taste of Flame
+					["u"] = 40,
+					["g"] = {
+						un(2, i(12066)),	-- Shaleskin Cape
+						un(2, i(12083)),	-- Valconian Sash
+						un(2, i(12082)),	-- Wyrmhide Spaulders
+					},
+				}),
+				q(4242, {	-- Abandoned Hope
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(12018)),	-- Conservator Helm
+						un(2, i(12021)),	-- Shieldplate Sabatons
+						un(2, i(12041)),	-- Windshear Leggings
+					},
+				}),
+				q(3907, {	-- Disharmony of Fire
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12112)),	-- Crypt Demon Bracers
+						un(2, i(12114)),	-- Nightfall Gloves
+						un(2, i(12115)),	-- Stalwart Clutch
+						un(2, i(12113)),	-- Sunborne Cape
+					},
+				}),
+				q(4126, {	-- Hurley Blackbreath
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(12000)),	-- Limb Cleaver
+						un(2, i(11964)),	-- Swiftstrike Cudgel
+					},
+				}),
+				q(4263, {	-- Incendius!
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(12112)),	-- Crypt Demon Bracers
+						un(2, i(12114)),	-- Nightfall Gloves
+						un(2, i(12115)),	-- Stalwart Clutch
+						un(2, i(12113)),	-- Sunborne Cape
+					},
+				}),
+				q(4322, {	-- Jail Break!
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(12061)),	-- Blade of Reckoning
+						un(2, i(12062)),	-- Skilled Fighting Blade
+						un(2, i(12065)),	-- Ward of the Elements
+					},
+				}),
+				q(4134, {	-- Lost Thunderbrew Recipe
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12000)),	-- Limb Cleaver
+						un(2, i(11964)),	-- Swiftstrike Cudgel
+					},
+				}),
+				q(4132, {	-- Operation: Death to Angerforge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12059)),	-- Conqueror's Medallion
+					},
+				}),
+				q(4136, {	-- Ribbly Screwspigot
+					["u"] = 40,
+					["g"] = {
+						un(2, i(11963)),	-- Penance Spaulders
+						un(2, i(11865)),	-- Rancor Boots
+						un(2, i(12049)),	-- Splintsteel Armor
+					},
+				}),
+				q(7201, {	-- The Last Element
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12038)),	-- Lagrave's Seal
+					},
+				}),
+				q(4201, {	-- The Love Potion
+					["u"] = 40,
+					["g"] = {
+						un(2, i(11962)),	-- Manacle Cuffs
+						un(2, i(11866)),	-- Nagmara's Whipping Belt
+					},
+				}),
+				q(4004, {	-- The Princess Saved?
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12545)),	-- Eye of Orgrimmar
+						un(2, i(12544)),	-- Thrall's Resolve
+					},
+				}),
+				q(4363, {	-- The Princess's Surprise
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(12548)),	-- Magni's Will
+						un(2, i(12543)),	-- Songstone of Ironforge
+					},
+				}),
+				q(4063, {	-- The Rise of the Machines
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(12109)),	-- Azure Moon Amice
+						un(2, i(12108)),	-- Basaltscale Armor
+						un(2, i(12111)),	-- Lavaplate Gauntlets
+						un(2, i(12110)),	-- Raincaster Drape
+					},
 				}),
 			}),
 			n(0, {	-- Zone Drop
@@ -150,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				o(173232, {	-- Blacksmithing Plans
-					["groups"] = {
+					["g"] = {
 						i(11614, { 	-- Plans: Dark Iron Mail
 							["description"] = "\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n",
 						}),
@@ -481,7 +612,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11623), 	-- Spritecaster Cap
 				})),
 				o(181074, { 		-- Arena Spoils Summonable Read Description
-					["groups"] = {
+					["g"] = {
 						i(21986, { 		-- Banner of Provocation
 							un(2, i(22305)), 		-- Ironweave Mantle
 							un(11, i(22317)), 		-- Lefty's Brass Knuckle
@@ -493,7 +624,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				cr(10096, e(372, {	-- Ring of Law
 					n(9031, { 	-- Anub'shiah
-						["groups"] = {
+						["g"] = {
 							i(11677), 	-- Graverot Cape
 							i(11675), 	-- Shadefiend Boots
 							i(11731), 	-- Savage Gladiator Greaves
@@ -502,7 +633,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9029, { 	-- Eviscerator
-						["groups"] = {
+						["g"] = {
 							i(11685), 	-- Splinthide Shoulders
 							i(11686), 	-- Girdle of Beastial Fury
 							i(11730), 	-- Savage Gladiator Grips
@@ -510,7 +641,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9027, { 	-- Gorosh the Dervish
-						["groups"] = {
+						["g"] = {
 							i(22266), 	-- Flarethorn
 							i(11662), 	-- Ban'thok Sash
 							i(11726), 	-- Savage Gladiatior Chain
@@ -519,7 +650,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9028, {	-- Grizzle
-						["groups"] = {
+						["g"] = {
 							i(11610), 	-- Plans: Dark Iron Pulverizer
 							i(11702), 	-- Grizzle's Skinner
 							i(11722), 	-- Dregmetal Spaulders
@@ -529,7 +660,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9032, { 	-- Hedrum the Creeper
-						["groups"] = {
+						["g"] = {
 							i(11635), 	-- Hookfang Shanker
 							i(11729), 	-- Savage Gladiator Helm
 							i(11633), 	-- Spiderfang Carapace
@@ -538,7 +669,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "This is one of the possible bosses for this event.",
 					}),
 					n(9030, { 	-- Ok'thor the Breaker
-						["groups"] = {
+						["g"] = {
 							i(11662), 	-- Ban'thok Sash
 							i(11665), 	-- Ogreseer Fists
 							i(11728), 	-- Savage Gladiator's Leggings
@@ -595,9 +726,9 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					})),
 					n(9476, {	-- Watchman Doomgrip
-						["groups"] = {
+						["g"] = {
 							o(160836, {	-- Relic Coffer
-								["groups"] = {
+								["g"] = {
 									i(11946),	-- Fire Opal Necklace
 									i(11945),	-- Dark Iron Ring
 								},
@@ -605,7 +736,7 @@ _.Instances = { tier(1, {	-- Classic
 								["modelID"] = 34286,
 							}),
 							o(161495, {	-- Secret Safe
-								["groups"] = {
+								["g"] = {
 									i(22256),	-- Mana Shaping Handwraps
 									i(22205), 	-- Black Steel Bindings
 									i(22254), 	-- Wand of Eternal Light
@@ -618,7 +749,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
 					}),
 					o(164820, {	-- Dark Keeper Nameplate
-						["groups"] = {
+						["g"] = {
 							i(11197, {	-- Dark Keeper Key
 								i(10276), 	-- Emerald Sabatons
 								i(15264), 	-- Backbreaker
@@ -705,7 +836,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(21956),   -- Design: Dark Iron Scorpid
 				})),
 				cr(9537, e(380, {	-- Hurley Blackbreath
-					["groups"] = {
+					["g"] = {
 						i(11922), 		-- Blood-Etched Blade
 						i(18044), 		-- Hurley's Tankard
 						i(11735), 		-- Ragefury Eyepatch
@@ -717,7 +848,7 @@ _.Instances = { tier(1, {	-- Classic
 					["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the event.",
 				})),
 				cr(9543, n(9543, {	-- Ribbly Screwspigot
-					["groups"] = {
+					["g"] = {
 						i(11612),	-- Plans: Dark Iron Plate
 						un(2, i(2663)),	-- Ribbly's Bandolier
 						un(2, i(2662)),	-- Ribbly's Quiver
@@ -736,7 +867,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(18653),  -- Schematic: Goblin Jumper Cables XL
 				})),
 				cr(9502, e(381, {	-- Phalanx
-					["groups"] = {
+					["g"] = {
 						i(11744), 		-- Bloodfist
 						i(22212), 		-- Golem Fitted Pauldrons
 						i(22204), 		-- Wristguards of Renown
@@ -750,7 +881,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(10602),   -- Schematic: Deadly Scope
 				}),
 				n(12944, { 			-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-					["groups"] = {
+					["g"] = {
 						i(18628, {	-- Thorium Brotherhood Contract
 							q(7604, {	-- A Binding Contract
 								i(18592),	-- Plans: Sulfuron Hammer
@@ -796,7 +927,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(11832),	-- Burst of Knowledge
 				})),
 				n(8923, { 			-- Panzor the Invincible
-					["groups"] = {
+					["g"] = {
 						i(22245),	-- Soot Encrusted Footwear
 						i(11787),	-- Shalehusk Boots
 						i(11786),	-- Stone of the Earth
@@ -807,12 +938,12 @@ _.Instances = { tier(1, {	-- Classic
 				n(9037, {			-- Gloom'rel
 					["description"] = "If you are a miner, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
 					["requireSkill"] = 186,	-- Mining
-					["groups"] = {
+					["g"] = {
 						{
 							--["objectID"] = 164869,	-- The Spectral Chalice (Object)
 							["questID"] = 4083,		-- The Spectral Chalice (Quest)
 							["icon"] = "Interface\\Icons\\INV_Misc_Bowl_01",
-							["groups"] = {
+							["g"] = {
 								recipe(14891),		-- Smelt Dark Iron (Recipe)
 							},
 						},
@@ -820,7 +951,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				cr(9039, e(385, {	-- The Seven
 					o(169243, {	-- Chest of The Seven
-						["groups"] = {
+						["g"] = {
 							i(11921), 	-- Impervious Giant
 							i(11923), 	-- The Hammer of Grace
 							i(11920), 	-- Wraith Scythe
@@ -856,74 +987,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(11934),	-- Emperor's Seal
 					i(11815),	-- Hand of Justice
 				})),
-			}),
-			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
-					un(40, q(4024, {		-- A Taste of Flame
-						un(2, i(12066)),	-- Shaleskin Cape
-						un(2, i(12083)),	-- Valconian Sash
-						un(2, i(12082)),	-- Wyrmhide Spaulders
-					})),
-					un(40, qa(4242, {		-- Abandoned Hope
-						un(2, i(12018)),	-- Conservator Helm
-						un(2, i(12021)),	-- Shieldplate Sabatons
-						un(2, i(12041)),	-- Windshear Leggings
-					})),
-					un(40, qh(3907, {		-- Disharmony of Fire
-						un(2, i(12112)),	-- Crypt Demon Bracers
-						un(2, i(12114)),	-- Nightfall Gloves
-						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape
-					})),
-					un(40, qa(4126, {		-- Hurley Blackbreath
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
-					})),
-					un(40, qa(4263, {		-- Incendius!
-						un(2, i(12112)),	-- Crypt Demon Bracers
-						un(2, i(12114)),	-- Nightfall Gloves
-						un(2, i(12115)),	-- Stalwart Clutch
-						un(2, i(12113)),	-- Sunborne Cape
-					})),
-					un(40, qa(4322, {		-- Jail Break!
-						un(2, i(12061)),	-- Blade of Reckoning
-						un(2, i(12062)),	-- Skilled Fighting Blade
-						un(2, i(12065)),	-- Ward of the Elements
-					})),
-					un(40, qh(4134, {		-- Lost Thunderbrew Recipe
-						un(2, i(12000)),	-- Limb Cleaver
-						un(2, i(11964)),	-- Swiftstrike Cudgel
-					})),
-					un(40, qh(4132, {	-- Operation: Death to Angerforge
-						un(2, i(12059)),	-- Conqueror's Medallion
-					})),
-					un(40, q(4136, {		-- Ribbly Screwspigot
-						un(2, i(11963)),	-- Penance Spaulders
-						un(2, i(11865)),	-- Rancor Boots
-						un(2, i(12049)),	-- Splintsteel Armor
-					})),
-					un(40, qh(7201, {	-- The Last Element
-						un(2, i(12038)),	-- Lagrave's Seal
-					})),
-					un(40, q(4201, {		-- The Love Potion
-						un(2, i(11962)),	-- Manacle Cuffs
-						un(2, i(11866)),	-- Nagmara's Whipping Belt
-					})),
-					un(40, qh(4004, {	-- The Princess Saved?
-						un(2, i(12545)),	-- Eye of Orgrimmar
-						un(2, i(12544)),	-- Thrall's Resolve
-					})),
-					un(40, qa(4363, {	-- The Princess's Surprise
-						un(2, i(12548)),	-- Magni's Will
-						un(2, i(12543)),	-- Songstone of Ironforge
-					})),
-					un(40, qh(4063, {		-- The Rise of the Machines
-						un(2, i(12109)),	-- Azure Moon Amice
-						un(2, i(12108)),	-- Basaltscale Armor
-						un(2, i(12111)),	-- Lavaplate Gauntlets
-						un(2, i(12110)),	-- Raincaster Drape
-					})),
-				}),
 			}),
 		},
 	}),

@@ -657,15 +657,17 @@ _.Zones =
 				}),
 				--]]
 --[[
-				qh(13189, {	-- Saurfang's Blessing
+				q(13189, {	-- Saurfang's Blessing
 					["qg"] = 31084,	-- 
+					["races"] = HORDE_ONLY,
 				}),
 				q(13166, {	-- The Battle For The Ebon Hold
 					["qg"] = 31084,	-- 
 					["classes"] = {6},	-- Death Knight
 				})),
-				qa(13188, {	-- Where Kings Walk
+				q(13188, {	-- Where Kings Walk
 					["qg"] = 31084,	-- 
+					["races"] = ALLIANCE_ONLY,
 				}),
 --]]
 				{	-- Corrupter's Scourgestones

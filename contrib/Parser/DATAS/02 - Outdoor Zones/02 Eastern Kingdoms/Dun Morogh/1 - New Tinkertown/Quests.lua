@@ -164,8 +164,9 @@ _.Zones =
 								i(59041),	-- 
 							},
 						}),
-						qa(31135, {	-- The Future of Gnomeregan
+						q(31135, {	-- The Future of Gnomeregan
 							["qg"] = 42396,	-- 
+							["races"] = ALLIANCE_ONLY,
 							["classes"] = {10},	-- Monk
 						}),
 						q(41217, {	-- The Future of Gnomeregan
@@ -176,11 +177,13 @@ _.Zones =
 							},
 						}),
 --[[
-						qa(47709, {	-- The Great Gnomeregan Race
+						q(47709, {	-- The Great Gnomeregan Race
 							["qg"] = 124280,	-- 
+							["races"] = ALLIANCE_ONLY,
 						}),
-						qa(26316, {	-- What's Keeping Jessup?
+						q(26316, {	-- What's Keeping Jessup?
 							["qg"] = 42489,	-- 
+							["races"] = ALLIANCE_ONLY,
 							["races"] = {7},	-- Gnome
 						}),
 						q(26264, {	-- What's Left Behind

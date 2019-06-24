@@ -55,14 +55,16 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(95968),	-- Vaultwalker Sabatons
 					},
 				})),
-				qh(32589, {	-- Life Blood
+				q(32589, {	-- Life Blood
 					["qg"] = 67990,	-- Lor'themar Theron
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(95590),	-- Glorious Standard of the Sunreaver Onslaught Toy
 					},
 				}),
-				qa(32599, {	-- Securing A Future
+				q(32599, {	-- Securing A Future
 					["qg"] = 67992,	-- Lady Jaina Proudmoore
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(95589),	-- Glorious Standard of the Kirin Tor Offensive Toy
 					},
