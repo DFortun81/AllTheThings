@@ -36,11 +36,13 @@ _.NeverImplemented =
 		q(32744),	-- Jin'rokh Dead (killed Jin'rokh on normal in ToT)
 		q(32756),	-- Lei Shen Dead (killed Lei Shen on normal in ToT)
 		q(32748),	-- Maegaera Dead (killed Megaera on heroic in ToT — yes, "Megaera" is spelled wrong in the tracking quest title)
+		q(35532),	-- Magisters' Terrace Reward Quest (completed Timewalking Magisters' Terrace)
 		q(35888),	-- Maraudon: dungeon completion
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
 		q(32751),	-- Primordious Dead (killed Primordius on normal in ToT — again, "Primordius" is spelled wrong in the tracking quest title)
 		q(35598),	-- Razorfen Downs: dungeon completion
 		q(35615),	-- Razorfen Kraul: dungeon completion
+		q(35518),	-- Shattered Halls Reward Quest (completed Timewalking Shattered Halls)
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
 		q(32923),	-- Short-Supply Reward (Galleon bonus roll)
 		q(32919),	-- Short-Supply Reward (Nalak bonus roll)
