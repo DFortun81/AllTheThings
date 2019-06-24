@@ -3585,11 +3585,17 @@ _.Holidays =  bubbleDown({["u"] = 21},
 		}),
 		n(-2,   {	-- Vendors
 			n(26123, {	-- Midsummer Supplier (Alliance Vendor)
+				["coords"] = {
+					{ 49.2, 71.8, 84 },		-- Stormwind City
+					{ 64.6, 26.6, 87 },		-- Ironforge
+					{ 62.0, 48.6, 89 },		-- Darnassus
+					{ 42.6, 25.6, 103 },	-- The Exodar
+				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					84,	-- Stormwind City
-					87,	-- Ironforge
-					89,	-- Darnassus
+					84,		-- Stormwind City
+					87,		-- Ironforge
+					89,		-- Darnassus
 					103,	-- The Exodar
 				},
 				["g"] = {
@@ -3619,11 +3625,17 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				},
 			}),
 			n(26124, {	-- Midsummer Merchant (Horde Vendor)
+				["coords"] = {
+					{ 47.8, 37.4, 85 },		-- Orgrimmar
+					{ 19.8, 24.6, 88 },		-- Thunder Bluff
+					{ 67.8, 11.2, 90 },		-- Undercity
+					{ 70.6, 44.0, 110 },	-- Silvermoon City
+				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,	-- Orgrimmar
-					88,	-- Thunder Bluff
-					90,	-- Undercity
+					85,		-- Orgrimmar
+					88,		-- Thunder Bluff
+					90,		-- Undercity
 					110,	-- Silvermoon City
 				},
 				["g"] = {
