@@ -1,6 +1,15 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+
+--	all coordinates confirmed for "flame warden of eastern kingdoms" achievement on 6/24/19.
+--	all coordinates for "extinguishing eastern kingdom" (alliance achievement to extinguish horde fires) also confirmed on 6/24/19 EXCEPT for eversong woods and ghostlands.
+--	all other coordinates taken from wowhead, so they should suffice but may be slightly off.  
+
+--	in my experience, coordinates for extinguishing bonfires were pretty precise, but coordinates for "honor the flame," which are based on the questgiver, were less so.
+
+--	if you confirm any additional coordinates in this file, remember to also change the coordinates on the corresponding "honor the flame" or "desecrate this fire!" quest.
+
 _.Holidays =  bubbleDown({["u"] = 21},
 {
 	holiday(235474, {	-- Midsummer Fire Festival
@@ -1314,7 +1323,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11764, {	-- Desecrate this Fire! — Arathi Highlands
 				["isYearly"] = true,
 			--	["objectID"] = 187947,	-- Horde Bonfire
-				["coord"] = { 69.0, 42.8, 14 },
+				["coord"] = { 69.0, 43.1, 14 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 14 },	-- Arathi Highlands
@@ -1338,7 +1347,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11766, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
 			--	["objectID"] = 187559,	-- Horde Bonfire
-				["coord"] = { 24.2, 37.3, 15 },
+				["coord"] = { 24.1, 37.3, 15 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 15 },	-- Badlands
@@ -1354,7 +1363,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(28917, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
 			--	["objectID"] = 207989,	-- Horde Bonfire
-				["coord"] = { 46.5, 14.2, 17 },
+				["coord"] = { 46.3, 14.4, 17 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 17 },	-- Blasted Lands
@@ -1466,7 +1475,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
 			--	["objectID"] = 187964,	-- Horde Bonfire
-				["coord"] = { 54.5, 50.0, 25 },
+				["coord"] = { 54.5, 50.1, 25 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 25 },	-- Hillsbrad Foothills
@@ -1618,7 +1627,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
 			--	["objectID"] = 187951,	-- Horde Bonfire
-				["coord"] = { 50.6, 70.7, 210 },
+				["coord"] = { 50.6, 70.8, 210 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
@@ -1626,7 +1635,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11784, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
 			--	["objectID"] = 187972,	-- Horde Bonfire
-				["coord"] = { 76.6, 74.5, 26 },
+				["coord"] = { 76.4, 74.5, 26 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 26 },	-- The Hinterlands
@@ -1634,7 +1643,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 				["isYearly"] = true,
 			--	["objectID"] = 187559,	-- Horde Bonfire
-				["coord"] = { 56.9, 51.8, 18 },
+				["coord"] = { 57.0, 51.9, 18 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 18 },	-- Tirisfal Glades
@@ -1682,7 +1691,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 				["isYearly"] = true,
 			--	["objectID"] = 207990,	-- Horde Bonfire
-				["coord"] = { 29.1, 56.4, 22 },
+				["coord"] = { 28.9, 56.8, 22 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
 				["maps"] = { 22 },	-- Western Plaguelands
@@ -2149,7 +2158,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 		--	ALLIANCE "HONOR THE FLAME" QUESTS START HERE.	
 			q(11804, {	-- Honor the Flame — Arathi Highlands
 				["isYearly"] = true,
-				["coord"] = { 44.0, 46.0, 14 },
+				["coord"] = { 44.3, 45.8, 14 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 14 },	-- Arathi Highlands
 				["qg"] = 25887,	-- Arathi Flame Warden
@@ -2170,7 +2179,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28925, {	-- Honor the Flame — Badlands
 				["isYearly"] = true,
-				["coord"] = { 19.0, 56.0, 15 },
+				["coord"] = { 18.9, 56.1, 15 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 15 },	-- Badlands
 				["qg"] = 51585,	-- Badlands Flame Warden
@@ -2184,7 +2193,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11808, {	-- Honor the Flame — Blasted Lands
 				["isYearly"] = true,
-				["coord"] = { 58.0, 17.0, 17 },
+				["coord"] = { 55.5, 15.0, 17 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 17 },	-- Blasted Lands
 				["qg"] = 25890,	-- Blasted Lands Flame Warden
@@ -2205,7 +2214,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11810, {	-- Honor the Flame — Burning Steppes
 				["isYearly"] = true,
-				["coord"] = { 68.0, 60.0, 36 },
+				["coord"] = { 68.2, 60.6, 36 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 36 },	-- Burning Steppes
 				["qg"] = 25892,	-- Burning Steppes Flame Warden
@@ -2254,14 +2263,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11813, {	-- Honor the Flame — Dun Morogh
 				["isYearly"] = true,
-				["coord"] = { 54.0, 45.0, 27 },
+				["coord"] = { 53.8, 45.2, 27 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 27 },	-- Dun Morogh
 				["qg"] = 25895,	-- Dun Morogh Flame Warden
 			}),
 			q(11814, {	-- Honor the Flame — Duskwood
 				["isYearly"] = true,
-				["coord"] = { 73.0, 55.0, 47 },
+				["coord"] = { 73.8, 54.7, 47 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 47 },	-- Duskwood
 				["qg"] = 25896,	-- Duskwood Flame Warden
@@ -2275,7 +2284,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11816, {	-- Honor the Flame — Elwynn Forest
 				["isYearly"] = true,
-				["coord"] = { 43.0, 65.0, 37 },
+				["coord"] = { 43.5, 62.7, 37 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 37 },	-- Elwynn Forest
 				["qg"] = 25898,	-- Elwynn Forest Flame Warden
@@ -2317,7 +2326,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11820, {	-- Honor the Flame — Loch Modan
 				["isYearly"] = true,
-				["coord"] = { 32.0, 40.0, 48 },
+				["coord"] = { 32.3, 41.0, 48 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 48 },	-- Loch Modan
 				["qg"] = 25902,	-- Loch Modan Flame Warden
@@ -2345,7 +2354,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11822, {	-- Honor the Flame — Redridge Mountains
 				["isYearly"] = true,
-				["coord"] = { 24.0, 53.0, 49 },
+				["coord"] = { 25.0, 53.5, 49 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 49 },	-- Redridge Mountains
 				["qg"] = 25904,	-- Redridge Flame Warden
@@ -2415,7 +2424,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28929, {	-- Honor the Flame — Swamp of Sorrows
 				["isYearly"] = true,
-				["coord"] = { 76.0, 14.0, 51 },
+				["coord"] = { 70.1, 15.4, 51 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 51 },	-- Swamp of Sorrows
 				["qg"] = 51602,	-- Swamp of Sorrows Flame Warden
@@ -2443,14 +2452,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11832, {	-- Honor the Flame — The Cape of Stranglethorn
 				["isYearly"] = true,
-				["coord"] = { 51.0, 67.0, 210 },
+				["coord"] = { 51.9, 67.8, 210 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
 				["qg"] = 25915,	-- Cape of Stranglethorn Flame Warden
 			}),
 			q(11826, {	-- Honor the Flame — The Hinterlands
 				["isYearly"] = true,
-				["coord"] = { 14.0, 50.0, 26 },
+				["coord"] = { 14.4, 50.2, 26 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 26 },	-- The Hinterlands
 				["qg"] = 25908,	-- The Hinterlands Flame Warden
@@ -2499,21 +2508,21 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11827, {	-- Honor the Flame — Western Plaguelands
 				["isYearly"] = true,
-				["coord"] = { 43.0, 82.0, 22 },
+				["coord"] = { 43.5, 82.2, 22 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 22 },	-- Western Plaguelands
 				["qg"] = 25909,	-- Western Plaguelands Flame Warden
 			}),
 			q(11583, {	-- Honor the Flame — Westfall
 				["isYearly"] = true,
-				["coord"] = { 45.0, 62.0, 52 },
+				["coord"] = { 44.6, 62.1, 52 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 52 },	-- Westfall
 				["qg"] = 25910,	-- Westfall Flame Warden
 			}),
 			q(11828, {	-- Honor the Flame — Wetlands
 				["isYearly"] = true,
-				["coord"] = { 13.0, 47.0, 56 },
+				["coord"] = { 13.5, 47.1, 56 },
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 56 },	-- Wetlands
 				["qg"] = 25911,	-- Wetlands Flame Warden
