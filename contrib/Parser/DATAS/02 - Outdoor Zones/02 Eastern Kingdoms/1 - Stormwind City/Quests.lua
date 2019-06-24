@@ -108,7 +108,7 @@ _.Zones =
 									},
 								},
 							},
-							na(-252, {	-- Kul Tiran
+							n(-252, {	-- Kul Tiran
 								qa(54706, {	-- Made in Kul Tiras
 									["qg"] = 148798,	-- Lady Jaina Proudmoore
 									["coord"] = { 52.3, 13.5, 84 },	-- Stormwind
@@ -224,7 +224,7 @@ _.Zones =
 									},
 								}),
 							}),
-							na(-207, {	-- Lightforged Draenei
+							n(-207, {	-- Lightforged Draenei
 								qa(49698, {	-- The Lightforged
 									["qg"] = 126319,	-- High Exarch Turalyon
 								}),
@@ -240,7 +240,7 @@ _.Zones =
 									},
 								}),
 							}),
-							na(-208, {	-- Void Elves
+							n(-208, {	-- Void Elves
 								qa(49787, {	-- The Ghostlands
 									["qg"] = 126321,	-- Alleria Windrunner
 									["g"] = {

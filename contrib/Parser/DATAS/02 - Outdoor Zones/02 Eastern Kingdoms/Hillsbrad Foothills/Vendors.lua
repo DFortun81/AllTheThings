@@ -9,8 +9,9 @@ _.Zones =
 				n(2480,   {	-- Bro'kin <Alchemy Supplies>
 					i(14634),	-- Recipe: Frost Oil
 				}),
-				nh(2393,  {	-- Christoph Jeffcoat <Tradesman>
-					["coord"] = { 57.51, 47.79 },					
+				n(2393,  {	-- Christoph Jeffcoat <Tradesman>
+					["coord"] = { 57.51, 47.79 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -20,20 +21,30 @@ _.Zones =
 						i(5788),	-- Pattern: Thick Murloc Armor
 					},
 				}),
-				nh(2397,  {	-- Derak Nightfall <Cook>
-					i(6330), 	-- Recipe: Bristle Whisker Catfish
-					i(21219),	-- Recipe: Sagefish Delight
-					i(21099),	-- Recipe: Smoked Sagefish
+				n(2397,  {	-- Derak Nightfall <Cook>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(6330), 	-- Recipe: Bristle Whisker Catfish
+						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
+					},
 				}),
-				nh(2698,  {	-- George Candarte <Leatherworking Supplies>
-					i(7613), 	-- Pattern: Green Leather Armor
+				n(2698,  {	-- George Candarte <Leatherworking Supplies>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(7613), 	-- Pattern: Green Leather Armor
+					},
 				}),
-				nh(47712, {	-- Harland Waldek <Weaponsmith>
-					i(4818),	-- Executioner's Sword
-					i(4817),	-- Blessed Claymore
+				n(47712, {	-- Harland Waldek <Weaponsmith>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(4818),	-- Executioner's Sword
+						i(4817),	-- Blessed Claymore
+					},
 				}),
-				nh(13219, {	-- Jorek Ironside
+				n(13219, {	-- Jorek Ironside
 					["itemID"] = 137642,	-- Mark of Honor
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(19029),	-- Horn of the Frostwolf Howler Mount
 						i(19031),	-- Frostwolf Battle Tabard
@@ -72,18 +83,24 @@ _.Zones =
 					i(4795),	-- Bear Bracers
 					i(4796),	-- Owl Bracers
 				}),
-				nh(2394,  {	-- Mallen Swain <Tailoring Supplies>
-					i(6274), 	-- Pattern: Blue Overalls
-					i(6401),	-- Pattern: Dark Silk Shirt
+				n(2394,  {	-- Mallen Swain <Tailoring Supplies>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(6274), 	-- Pattern: Blue Overalls
+						i(6401),	-- Pattern: Dark Silk Shirt
+					},
 				}),
-				nh(3539,  {	-- Ott <Weaponsmith>
-					i(12247),	-- Broad Bladed Knife
-					i(12249),	-- Merciless Axe
-					i(4825),	-- Callous Axe
-					i(4824),	-- Blurred Axe
-					i(4826),	-- Marauder Axe
-					i(4818),	-- Executioner's Sword
-					i(4817),	-- Blessed Claymore
+				n(3539,  {	-- Ott <Weaponsmith>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(12247),	-- Broad Bladed Knife
+						i(12249),	-- Merciless Axe
+						i(4825),	-- Callous Axe
+						i(4824),	-- Blurred Axe
+						i(4826),	-- Marauder Axe
+						i(4818),	-- Executioner's Sword
+						i(4817),	-- Blessed Claymore
+					},
 				}),
 				n(2684,   {	-- Rizz Loosebolt <Engineering Supplies>
 					["u"] = 33,
@@ -97,9 +114,10 @@ _.Zones =
 						i(18160),	-- Recipe: Thistle Tea
 					},
 				}),
-				na(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+				n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
 					["itemID"] = 137642,	-- Mark of Honor
 					["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(19030),	-- Stormpike Battle Charger Mount
 						i(19032),	-- Stormpike Battle Tabard
@@ -151,4 +169,3 @@ _.Zones =
 		}),
 	}),
 };
-				

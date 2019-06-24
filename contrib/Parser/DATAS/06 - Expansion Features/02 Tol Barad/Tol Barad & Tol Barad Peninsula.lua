@@ -64,10 +64,10 @@ _.ExpansionFeatures =
 			}),
 --]]
 			n(-2, { 	-- Vendor
-				nh(48531, {	-- Pogg
-					{	-- Tol Barad Commendation
-						["currencyID"] = 391,	-- Tol Barad Commendation
-						["g"] = {
+				n(48531, {	-- Pogg
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						currency(391, {	-- Tol Barad Commendation
 							i(65356), 	-- Drake of the West Wind (MOUNT!)
 							i(64999), 	-- Spectral Wolf (MOUNT!)
 							i(90898),	-- Fox Kit (PET!)
@@ -86,13 +86,13 @@ _.ExpansionFeatures =
 							i(68774),	-- Greater Inscription of Vicious Agility
 							i(68772),	-- Greater Inscription of Vicious Intellect
 							i(68773),	-- Greater Inscription of Vicious Strength
-						},
+						}),
 					},
 				}),
-				na(47328, {	-- Quartermaster Brazie
-					{	-- Tol Barad Commendation
-						["currencyID"] = 391,	-- Tol Barad Commendation
-						["g"] = {
+				n(47328, {	-- Quartermaster Brazie
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						currency(391, {	-- Tol Barad Commendation
 							i(63039),	-- Drake of the West Wind (MOUNT!)
 							i(64998),	-- Spectral Steed (MOUNT!)
 							i(90897),	-- Fox Kit (PET!)
@@ -110,7 +110,7 @@ _.ExpansionFeatures =
 							i(68774),	-- Greater Inscription of Vicious Agility
 							i(68772),	-- Greater Inscription of Vicious Intellect
 							i(68773),	-- Greater Inscription of Vicious Strength
-						},
+						}),
 					},
 				}),
 			}),

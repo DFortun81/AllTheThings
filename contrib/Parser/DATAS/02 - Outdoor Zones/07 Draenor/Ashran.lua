@@ -1718,7 +1718,8 @@ _.Zones =
 				}),
 				--]]
 				n(-2, {		-- Vendors
-					na(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
+					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							currency(823, {	-- Apexis Crystal
 								["g"] = {
@@ -1728,13 +1729,17 @@ _.Zones =
 							i(115517),	-- Wrynn's Vanguard Tabard
 						},
 					}),
-					nh(85115, {	-- Dazzerian <Warspear Quartermaster>
-						currency(823, {	-- Apexis Crystal
-							un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
-						}),
-						i(115518),	-- Vol'jin's Spear Tabard
+					n(85115, {	-- Dazzerian <Warspear Quartermaster>
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							currency(823, {	-- Apexis Crystal
+								un(2, i(116775)),	-- Breezestrider Stallion (Rep removed from Medallion of the Legion in hotfix for 8.0)
+							}),
+							i(115518),	-- Vol'jin's Spear Tabard
+						},
 					}),
-					na(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
+					n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
@@ -2300,7 +2305,8 @@ _.Zones =
 						},
 						["u"] = 2,	-- Vendor doesn't sell anything in 7.0+
 					}),
-					nh(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
+					n(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(14, i(120286)),	-- Enchanter's Illusion - Glorious Tyranny
 							un(14, i(120287)),	-- Enchanter's Illusion - Primal Victory
