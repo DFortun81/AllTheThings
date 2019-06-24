@@ -1166,7 +1166,12 @@ _.Zones =
 					
 
 					qa(28280, {	-- Tear Them From the Sky!
-						["sourceQuests"] = { 28215 },	-- Potential Energy
+						["sourceQuests"] = {
+							28212,	-- Hot Stuff
+							28215,	-- Potential Energy
+							28211,	-- Tempered in Elemental Flame
+						},
+					--	not sure if this requires "A Vision in Twilight" and its followups
 						["coord"] = { 49.1, 29.3, 241 },
 						["qg"] = 48174,	-- Nivvet Channelock
 					}),
