@@ -288,12 +288,15 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(19507)),	-- Inquisitor's Shawl
 						}),
 						n(3976, {	-- Scarlet Commander Mograine
-							un(2, i(7726)),	-- Aegis of the Scarlet Commander
-							i(7761),	-- Steelclaw Reaver
-							un(2, i(7724)),	-- Gauntlets of Divinity
-							un(2, i(7723)),	-- Mograine's Might
-							un(2, i(10330)),	-- Scarlet Leggings
-							i(2262),	-- Mark of Kern
+							["u"] = 43,
+							["g"] = {
+								un(2, i(7726)),	-- Aegis of the Scarlet Commander
+								i(7761),	-- Steelclaw Reaver
+								un(2, i(7724)),	-- Gauntlets of Divinity
+								un(2, i(7723)),	-- Mograine's Might
+								un(2, i(10330)),	-- Scarlet Leggings
+								i(2262),	-- Mark of Kern
+							}
 						}),
 						n(3977, {	-- High Inquisitor Whitemane
 							un(2, i(7721)),	-- Hand of Righteousness
