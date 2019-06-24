@@ -52,6 +52,12 @@ _.WorldEvents =
 							}),
 						},
 					})),
+					n(-17, {	-- Quests
+						un(3, q(25285)),	-- In and Out
+						un(3, q(25289)),	-- One Step Forward...
+						un(3, q(24462)),	-- Operation Item Get
+						un(3, q(25295)),	-- Press Fire
+					}),
 				},
 				["icon"] = "Interface\\Icons\\expansionicon_cataclysm",
 				["lvl"] = 80,

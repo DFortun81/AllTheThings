@@ -248,6 +248,12 @@ _.WorldEvents =
 							["qg"] = 114561,	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
+						q(43291, {	-- Defend (Dun Morogh)
+							["u"] = 40,
+						}),
+						q(43283, {	-- Demon Commander (Dun Morogh)
+							["u"] = 40,
+						}),
 						q(40755, {	-- Hiding in the Stacks
 							["groups"] = {
 								i(139905),	-- Gloves of thee Arcane Purge
@@ -288,10 +294,12 @@ _.WorldEvents =
 							["qg"] = 113655,	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
 						}),
+						--q(42803),	-- Invasion: Dun Morogh
 						--q(42237),	-- Invasion: Tanaris
 						--q(43289),	-- Defend
 						--q(43294),	-- Repel
 						--q(43290),	-- Repel
+						--q(43292),	-- Repel (Dun Morogh)
 						--q(42236),	-- Invasion: Northern Barrens
 						-- Tanaris:
 						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)

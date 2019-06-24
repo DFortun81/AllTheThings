@@ -7,6 +7,12 @@ _.Zones =
 		m(27, {	-- Dun Morogh
 			n(-16,  {	-- Rares
 				n(1130, {	-- Bjarn
+					["coords"] = {
+						{ 69.2, 55.8, 27 },
+						{ 69.8, 58.6, 27 },
+						{ 67.8, 58.8, 27 },
+						{ 66.2, 59.8, 27 },
+					},
 					["g"] = {
 						i(6337),	-- Infantry Leggings
 						i(6269),	-- Pioneer Trousers
@@ -14,6 +20,11 @@ _.Zones =
 					},
 				}),
 				n(1119, {	-- Hammerspine
+					["description"] = "Spawns at the very end of the cave.",
+					["coords"] = {
+						{ 77.9, 55.1, 27 }, -- cave entrance
+						{ 56.3, 39.1, 31 }, -- spawn area
+					},
 					["g"] = {
 						i(68743),	-- Imbued Infantry Cloak
 						i(68744),	-- Imbued Pioneer Cloak

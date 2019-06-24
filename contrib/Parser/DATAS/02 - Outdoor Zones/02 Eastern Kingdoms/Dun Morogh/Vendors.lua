@@ -7,6 +7,7 @@ _.Zones =
 		m(27, {	-- Dun Morogh
 			n(-2, {	-- Vendors
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
+					["coord"] = { 56.2, 46.3, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18772),	-- Swift Green Mechanostrider
@@ -19,6 +20,7 @@ _.Zones =
 					},
 				}),
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
+					["coord"] = { 70.6, 48.9, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18785),	-- Swift White Ram
@@ -30,6 +32,7 @@ _.Zones =
 					},
 				}),
 				n(1263, {	-- Yarlyn Amberstill
+					["coord"] = { 70.5, 49.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8497),	-- Rabbit Crate (Snowshoe)
