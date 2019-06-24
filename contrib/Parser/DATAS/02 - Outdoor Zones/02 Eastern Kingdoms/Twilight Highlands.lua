@@ -1679,7 +1679,11 @@ _.Zones =
 					qh(27690),	-- Narkrall, the Drake-Tamer
 					qh(26608),	-- Negotiations Terminated
 					qa(28862),	-- Never Leave a Dinner Behind
-					qh(28170),	-- Night Terrors
+					qh(28170, {	-- Night Terrors
+						i(63840),	-- Juju of Nimbleness
+						i(63839),	-- Harmlight Token
+						i(63838),	-- Shrine-Cleansing Purifier
+					},
 					qh(28593),	-- Of Utmost Importance
 					qh(28591),	-- Off The Wall
 					qh(27493),	-- Ogres & Ettins

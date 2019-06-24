@@ -64,6 +64,7 @@ _.Zones =
 								["qg"] = 41670,	-- 
 								["g"] = {
 									i(59636),	-- 
+									i(59635),	-- Necklace of the Furious Standard
 								},
 							}),
 							q(26143, {	-- All that Rises
@@ -72,6 +73,7 @@ _.Zones =
 									i(59609),	-- 
 									i(59608),	-- 
 									i(59610),	-- 
+									i(59607),	-- Hallazeal's Demise
 								},
 							}),
 --[[
@@ -116,6 +118,7 @@ _.Zones =
 								["g"] = {
 									i(59601),	-- 
 									i(59603),	-- 
+									i(59602),	-- Signet of the Lookout
 								},
 							}),
 --[[
@@ -184,18 +187,24 @@ _.Zones =
 --							qa(26015),	-- Phosphora Hunting
 							n(41652, {	-- Twilight Champion
 								i(57102, {	-- Twilight Cage Key
-									qa(26144, {	-- Prisoners
-										i(59615),
-										i(59616),
-										i(59614),
-									}),
+									["description"] = "Only drops while on the Ascend No More! quest",
+									["groups"] = {
+										qa(26144, {	-- Prisoners
+											i(59615),
+											i(59616),
+											i(59614),
+										}),
+									},
 								}),
-								i(57118, {	-- Twilight Cage Key
-									qh(26149, {	-- Prisoners
-										i(59612),
-										i(59613),
-										i(59611),
-									}),
+								i(57118,  {	-- Twilight Cage Key
+									["description"] = "Only drops while on the Ascend No More! quest",
+									["groups"] = {
+										qh(26149, {	-- Prisoners
+											i(59612),
+											i(59613),
+											i(59611),
+										}),
+									},
 								}),
 							}),
 --[[
@@ -213,6 +222,7 @@ _.Zones =
 								["qg"] = 41669,	-- 
 								["g"] = {
 									i(59629),	-- 
+									i(59630),	-- Severed Visionary Tentacle
 								},
 							}),
 --[[
@@ -234,6 +244,7 @@ _.Zones =
 							}),
 							qh(26126, {	-- The Perfect Fuel
 								["qg"] = 41669,	-- 
+								["description"] = "2 Remora, 3 Hammerhead",
 								["g"] = {
 									i(59643),	-- 
 									i(59642),	-- 
@@ -929,6 +940,7 @@ _.Zones =
 								["g"] = {
 									i(59743),	-- 
 									i(59741),	-- 
+									i(59742),	-- Dusky Pearl Ring
 								},
 							}),
 							{	-- Into Constant Earth
@@ -1024,6 +1036,7 @@ _.Zones =
 								["g"] = {
 									i(59660),	-- 
 									i(59659),	-- 
+									i(59661),	-- Pelagic Prism
 								},
 							}),
 							qh(25953, {	-- Swift Approach
@@ -1084,6 +1097,7 @@ _.Zones =
 								["g"] = {
 									i(59706),	-- 
 									i(59705),	-- 
+									i(59707),	-- Wavespeaker's Focus
 								},
 							}),
 							qa(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge
@@ -1101,6 +1115,7 @@ _.Zones =
 									i(59687),	-- 
 									i(59686),	-- 
 									i(59688),	-- 
+									i(59685),	-- Kvaldir Battle Standard
 								},
 							}),
 --[[
