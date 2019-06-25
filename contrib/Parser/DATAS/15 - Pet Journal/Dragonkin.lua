@@ -26,6 +26,7 @@ _.PetJournal =
 			["u"] = 3,	-- Blizzard Promotion
 		}),
 		p(142),		-- Golden Dragonhawk Hatchling
+		--i(169205),	-- Ghostly Whelpling. Cant find PEtID
 		p(2017),	-- Infinite Hatchling
 		p(1161),	-- Infinite Whelpling
 		p(1956),	-- Ironbound Proto-Whelp
