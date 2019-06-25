@@ -1173,6 +1173,8 @@ local function MergeObject(g, t, index)
 			key = "unit";
 		elseif t.criteriaID then
 			key = "criteriaID";
+		elseif t.dungeonID then
+			key = "dungeonID";
 		end
 	end
 	for i,o in ipairs(g) do
@@ -11306,6 +11308,107 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						MergeObject(temp, mapObject);
 					end
 				end
+				
+				-- Get the LFG Rewards Available at this level
+				local numRandomDungeons = GetNumRandomDungeons();
+				if numRandomDungeons > 0 then
+					local groupFinder = {achID=4476,text=DUNGEONS_BUTTON,g={}};
+					for index=1,numRandomDungeons,1 do
+						local dungeonID = GetLFGRandomDungeonInfo(index);
+						local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel = GetLFGDungeonInfo(dungeonID);
+						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
+						local _,gold,unknown,xp,unknown2,numRewards,unknown = GetLFGDungeonRewards(dungeonID);
+						local header = {dungeonID=dungeonID,text=name,description=description,lvl=minRecLevel or 1,maxlvl=maxRecLevel,g={}};
+						if expansionLevel and not isHoliday then
+							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
+						elseif isTimeWalker then
+							header.icon = app.DifficultyIcons[24];
+						end
+						for rewardIndex=1,numRewards,1 do
+							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+							if rewardType == "item" then
+								local item = { ["itemID"] = itemID, ["expanded"] = false, };
+								cache = fieldCache["itemID"][itemID];
+								if cache then
+									local ACKCHUALLY;
+									for _,data in ipairs(cache) do
+									
+										if data.f then
+											item.f = data.f;
+										end
+										if data.s then
+											item.s = data.s;
+											if data.modID == modID then
+												ACKCHUALLY = data.s;
+												item.modID = modID;
+												if tagID == 137 then
+													local parent = data.parent;
+													while parent do
+														if parent.instanceID then
+															questObject.icon = parent.icon;
+															break;
+														end
+														parent = parent.parent;
+													end
+												end
+											end
+										end
+										if data.g and #data.g > 0 then
+											if not item.g then
+												item.g = {};
+												item.progress = 0;
+												item.total = 0;
+												item.OnUpdate = OnUpdateForItem;
+											end
+											for __,subdata in ipairs(data.g) do
+												MergeObject(item.g, subdata);
+											end
+										end
+									end
+									if ACKCHUALLY then
+										item.s = ACKCHUALLY;
+									end
+								end
+								MergeObject(header.g, item);
+							elseif rewardType == "currency" then
+								if showCurrencies then
+									local item = { ["currencyID"] = itemID, ["expanded"] = false, };
+									cache = fieldCache["currencyID"][itemID];
+									if cache then
+										for _,data in ipairs(cache) do
+											if data.f then
+												item.f = data.f;
+											end
+											if data.g and #data.g > 0 then
+												if not item.g then
+													item.g = {};
+													item.progress = 0;
+													item.total = 0;
+													item.OnUpdate = OnUpdateForItem;
+												end
+												for __,subdata in ipairs(data.g) do
+													MergeObject(item.g, subdata);
+												end
+											end
+										end
+									end
+									if not item.g then
+										item.g = {};
+										item.progress = 0;
+										item.total = 0;
+										item.OnUpdate = OnUpdateForItem;
+									end
+									MergeObject(header.g, item);
+								end
+							else
+								-- print("Unhandled reward type", itemName,icon,count,claimed,rewardType,itemID,quality);
+							end
+						end
+						table.insert(groupFinder.g, header);
+					end
+					table.insert(temp, groupFinder);
+				end
+				
 				for i,o in ipairs(temp) do
 					MergeObject(self.rawData, o);
 				end
