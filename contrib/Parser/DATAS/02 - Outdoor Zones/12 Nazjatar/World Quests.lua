@@ -159,6 +159,10 @@ _.Zones =
 						},
 					},
 				}),
+				q(56381, {	-- Prince Wiggletail
+					["lvl"] = 120,
+					["collectible"] = false,
+				}),
 				q(56003, {	-- Runelocked Chest
 					["lvl"] = 120,
 					["collectible"] = false,

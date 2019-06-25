@@ -174,7 +174,7 @@ _.Zones =
 				["coord"] = { 49.1, 62.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55823, {	-- Bounty: A Few Crabs
 				["isDaily"] = true,
@@ -223,7 +223,7 @@ _.Zones =
 				["coord"] = { 50.4, 66.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55830, {	-- Bounty: More Coral Ancients
 				["isDaily"] = true,
@@ -258,7 +258,7 @@ _.Zones =
 				["coord"] = { 47.4, 63.2, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55828, {	-- Bounty: More Murlocs
 				["isDaily"] = true,
@@ -327,15 +327,15 @@ _.Zones =
 						["isDaily"] = true,
 					},
 					]]--
-					{	-- Wanted: Commander Sarj'eth
-						["questID"] = 56223,
+					q(56223, {	-- Wanted: Commander Sarj'eth
 						["isDaily"] = true,
-						["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your follower.",
-					},
-					{	-- Wanted: Lady Narjiss
-						["questID"] = 56225,
+					}),
+					q(56227, {	-- WANTED: Inquisitor Ithriza
 						["isDaily"] = true,
-					},
+					}),
+					q(56225, {	-- Wanted: Lady Narjiss
+						["isDaily"] = true,
+					}),
 					i(170075),	-- Recipe: Unagi Skewer
 				},
 			}),
@@ -429,7 +429,7 @@ _.Zones =
 				["qg"] = 154520,	-- First Arcanist Thalyssra
 				["coord"] = { 73.4, 47.8, 1355 },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55601, {	-- Coveted Crystals
 				["qg"] = 153385,	-- Blademaster Okani
@@ -654,7 +654,7 @@ _.Zones =
 				["coord"] = { 64.5, 48.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(56640, {	-- Fortunate Souls
 				["qg"] = 155482,	-- Sentinel (Shandris Feathermoon)
@@ -862,7 +862,7 @@ _.Zones =
 				["coord"] = { 33.5, 47.9, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
 			q(56151, {	-- Poen's Favorite Dish
@@ -870,7 +870,7 @@ _.Zones =
 				["coord"] = { 50.8, 64.7, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
 			q(56241, {	-- Preserved Clues
@@ -904,14 +904,28 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 55361,	-- The Lost Shaman
 			}),
+			q(55723, {	-- Requisition: A Few Carp
+				["isDaily"] = true,
+				["qgs"] = {
+					151352,	-- Lily Bopip (horde)
+				},
+				["coords"] = {
+					{ 47.3, 61.9, 1355 },	-- (horde)
+				},
+				["sourceQuests"] = {
+					55500,	-- Save A Friend (horde)
+				},
+			}),
 			q(55724, {	-- Requisition: A Few Deepcoral Buds
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
 				["qgs"] = {
 					153772,	-- Lina Bluegill (horde)
 				},
 				["coords"] = {
 					{ 47.4, 63.2, 1355 },	-- horde
+				},
+				["sourceQuests"] = {
+					55500,	-- Save A Friend (horde)
 				},
 			}),
 			q(55720, {	-- Requisition: A Few Seaweed
@@ -945,7 +959,7 @@ _.Zones =
 				["coord"] = { 49.3, 61.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55801, {	-- Requisition: We Need It All
 				["isDaily"] = true,
@@ -1008,10 +1022,6 @@ _.Zones =
 					},
 					{	-- Bounty: More Makrura
 						["questID"] = 55831,
-						["isDaily"] = true,
-					},
-					{	-- Requisition: A Few Carp
-						["questID"] = 55723,
 						["isDaily"] = true,
 					},
 					{	-- Requisition: A Few Cone Shells
@@ -1371,7 +1381,7 @@ _.Zones =
 				["coord"] = { 52.7, 52.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["sourceQuest"] = 55500,	-- Becoming a Friend
+				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(55469, {	-- To Zin-Azshari
 				["qg"] = 151848,	-- Lor'themar Theron
