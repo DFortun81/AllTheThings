@@ -32,6 +32,6 @@ _.Mounts =
 		i(83089),	-- Sunstone Panther
 		i(34061),	-- Turbo-Charged Flying Machine
 		i(64883),	-- Ultramarine Qiraji Battle Tank
-		un(1, i(153594)),	-- Xiwyllag ATV [Note: Never implemented)]
+		i(153594),	-- Xiwyllag ATV
 	}),
 };

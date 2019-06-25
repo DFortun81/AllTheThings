@@ -50,15 +50,22 @@ _.Achievements =
 							},
 						},
 					},
+					ach(13557),	-- Rustbolt Rebellion
 					{	-- Talanji's Expedition [Horde] // Storm's Wake [Alliance]
 						["allianceAchievementID"] = 12953,	-- Storm's Wake [Alliance]
 						["hordeAchievementID"] = 12948,		-- Talanji's Expedition [Horde]
 					},
+					ach(13559, {	-- The Unshackled
+						["races"] = HORDE_ONLY,
+					}),
 					{	-- The Voldunai [Horde] // Order of Embers [Alliance]
 						["allianceAchievementID"] = 12952,	-- Order of Embers [Alliance]
 						["hordeAchievementID"] = 12949,		-- The Voldunai [Horde]
 					},
 					ach(12956), 	-- Tortollan Seekers
+					ach(13558, {	-- Waveblade Ankoan
+						["races"] = ALLIANCE_ONLY,
+					}),
 					{	-- Zandalari Empire [Horde] // Proudmoore Admiralty [Alliance]
 						["allianceAchievementID"] = 12956,	-- Proudmoore Admiralty [Alliance]
 						["hordeAchievementID"] = 12950,		-- Zandalari Empire [Horde]

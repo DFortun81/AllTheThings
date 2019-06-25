@@ -776,6 +776,39 @@ _.Zones =
 					["coord"] = { 45.5, 35.8 },
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
 				}),
+				{	-- A Loa Without a Temple
+					["questID"] = 55252,
+					["qg"] = 121706,	-- Beastlord L'kala
+					["coord"] = { 66.8, 42.5, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55254,	-- An Unending Sleep
+				},
+				{	-- A Show of Faith
+					["questID"] = 55253,
+					["qg"] = 151257,	-- Torcali
+					["coord"] = { 68.3, 29.6, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55252,	-- A Loa Without a Temple
+				},
+				{	-- An Unending Sleep
+					["questID"] = 55254,
+					["qg"] = 151283,	-- Direhorn Hatchling
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+				},
+				{	-- Sleep, Eat, Repeat
+					["questID"] = 55258, -- also triggered 55259. I suspect 55259 is a daily questID
+					["qg"] = 151286,	-- Child of Torcali
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 55253,	-- A Show of Faith
+					["g"] = {
+						{	-- How To Train Your Direhorn (Sleep, Eat, Repeat)
+							["achievementID"] = 13542,
+							["criteriaID"] = 3,
+						},
+					},
+				},
 			}),
 		}),
 	}),

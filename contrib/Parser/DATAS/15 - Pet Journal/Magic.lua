@@ -22,6 +22,7 @@ _.PetJournal =
 		p(2115), 	-- Cross Gazer
 		p(1063),	-- Darkmoon Eye
 		p(114),		-- Disgusting Oozeling
+		p(2721),	-- Echoing Oozeling
 		p(1774),	-- Eidritch Manafiend
 		p(1426),	-- Elekk Plushie
 		p(1766),	-- Empowered Manafiend
@@ -79,13 +80,14 @@ _.PetJournal =
 		p(1601),	-- Servant of Demidos
 		un(35, p(2062)),	-- Shadow
 		p(229),		-- Shimmering Wyrmling
+		p(2750),	-- Shrieker
 		un(3, p(1127)),	-- Spectral Cub
 		p(1185),	-- Spectral Porcupette
 		un(10, p(242)),		-- Spectral Tiger Cub
 		p(1969),	-- Stardust
 		p(2393),	-- Sticky Oozeling
 		p(1478),	-- Syd the Squid
-		p(2435),	-- teeny Tiny Orb
+		p(2435),	-- Teeny Titan Orb
 		p(251),		-- Toxic Wasteling
 		p(1920),	-- Trasmutant
 		p(1605),	-- Trunks

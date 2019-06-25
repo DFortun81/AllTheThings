@@ -42,6 +42,13 @@ _.Achievements =
 						crit(4),		-- Ruby Sandworm Scale
 						crit(5),		-- Onyx Sandworm Scale
 					})),
+					ach(13790, {	-- Armed for Action
+						crit(1),	-- Volatile Blaster
+						crit(2),	-- Ricket's Special Delivery
+						crit(3),	-- Lightning Zap 5000
+						crit(4),	-- Supercollider
+						crit(5),	-- Boltspitter
+					}),
 					ach(13050, {	-- Bless the Rains Down in Freehold
 						crit(1),		-- Banana Hoard
 						crit(2),		-- Sweete's Feast
@@ -105,11 +112,21 @@ _.Achievements =
 						crit(6),		-- Horde of Heroes
 					})),]]
 					ach(12918),		-- Have a Heart
-					h(ach(13030, {	-- How to Ptrain Your Pterrordax
-						crit(1),		-- Nature Versus Nurture
-						crit(2),		-- Room To Grow
-						crit(3),		-- Eyes on the Skies
-						crit(4),		-- Down, But Not Out
+					ach(13542, {	-- How to Train Your Direhorn
+						crit(1),	-- Naptime
+						crit(2),	-- Held for Observation
+						crit(3),	-- Sleep, Eat, Repeat
+						crit(4),	-- Torcali's Blessing
+						crit(5),	-- Wander Not Alone
+					}),
+					h(ach(13573, {	-- How to Ptrain Your Pterrordax
+						crit(1),	-- Just Ptrust Me On This
+						ach(13030, {	-- How to Ptrain Your Pterrordax
+							crit(1),		-- Nature Versus Nurture
+							crit(2),		-- Room To Grow
+							crit(3),		-- Eyes on the Skies
+							crit(4),		-- Down, But Not Out
+						}),
 					})),
 					h(ach(13041)),	-- Hungry, Hungry Ranishu
 					a(ach(13251)),	-- In Teldrassil's Shadow
@@ -146,16 +163,21 @@ _.Achievements =
 						ach(12497, 11868),		-- Drust Do It. [A] / The Dark Heart of Nazmir [H]
 						ach(12496, 12478),		-- Stormsong and Dance [A] / Secrets in the Sands [H]
 					}),
-					--[[a(ach(12593, {	-- Loremaster of Kul Tiras
-						ach(12473),		-- A Sound Plan
-						ach(12497),		-- Drust Do It.
-						ach(12496),		-- Stormsong and Dance
-					})),
-					h(ach(13294, {	-- Loremaster of Zandalar
-						ach(11861),		-- The Throne of Zuldazar
-						ach(11868),		-- The Dark Heart of Nazmir
-						ach(12478),		-- Secrets in the Sands
-					})),]]
+					ach(13791, {	-- Making the Mount
+						i(168827),	-- Scrapforged Mechaspider
+						crit(1),	-- Shop Project
+						crit(2),	-- Right Bot for the Job
+						crit(3),	-- Ready to Rumble
+						crit(4),	-- Knock 'Em Out The Box
+						crit(5),	-- A Little Leg Work
+						crit(6),	-- The Nuts and Bolts of It
+						crit(7),	-- Factory Refurbished
+						crit(8),	-- Grease the Wheels
+						crit(9),	-- Emission Free
+						crit(10),	-- Test Drive
+						crit(11),	-- Knock His Bot Off
+						crit(12),	-- Drive it Away Today
+					}),
 					ach(13512, {	-- Master Calligrapher
 						crit(1),		-- Master of Calligraphy - Circle
 						crit(2),		-- Master of Calligraphy - Square
@@ -237,6 +259,42 @@ _.Achievements =
 						crit(4),		-- A Bad Deal
 						crit(5),		-- The Long Con
 					})),
+					a(ach(13553, {	-- The Mechagonian Threat (A)
+						crit(1),	-- The Legend of Mechagon
+						crit(2),	-- Looking Inside
+						crit(3),	-- Let's Get It Started
+						crit(4),	-- You Must be This Height
+						crit(5),	-- Report to Gila
+						crit(6),	-- A Small Team
+						crit(7),	-- The Start of Something Bigger
+						crit(8),	-- Princely Visit
+						crit(9),	-- The Resistance Needs YOU!
+						crit(10),	-- Rescuing the Resistance
+						crit(12),	-- My Father's Armies
+						crit(13),	-- We Can Fix It
+						crit(14),	-- Drill Rig Construction
+						crit(15),	-- Send My Father a Message
+						crit(16),	-- Welcome to the Resistance
+						crit(17),	-- Operation: Mechagon - The Mechoriginator
+					})),
+					h(ach(13700, {	-- The Mechagonian Threat (H)
+						crit(1),	-- The Legend of Mechagon
+						crit(2),	-- A Quick Ear Hustle
+						crit(3),	-- This is Our Vault Now
+						crit(4),	-- Let's Get It Started
+						crit(5),	-- You Must be This Height
+						crit(6),	-- Machinations for Mechagon
+						crit(7),	-- Only the Best Will Do
+						crit(8),	-- To Mechagon!
+						crit(9),	-- Prospectus Bay
+						crit(10),	-- We Come in Peace... and Profit
+						crit(12),	-- The Resistance Needs YOU!
+						crit(13),	-- My Father's Armies
+						crit(14),	-- We Can Fix It
+						crit(15),	-- Drill Rig Construction
+						crit(16),	-- Send My Father a Message
+						crit(17),	-- Welcome to the Resistance
+					})),
 					a(ach(12997)),	-- The Pride of Kul Tiras
 					a(ach(12087)),	-- The Reining Champion
 					h(ach(13263)),	-- The Shadow Hunter
@@ -274,7 +332,12 @@ _.Achievements =
 						crit(2),		-- Tides of Vengeance (A)
 						crit(3),		-- Zandalar Forever!
 						crit(4),		-- Tides of Vengeance (H)
-					}),		
+					}),
+					ach(13709, {	-- Unfathomable
+						crit(1),	-- Welcome to Nazjatar
+						crit(2),	-- Secrets in the Sea
+						crit(3),	-- Turning the Tide
+					}),
 					a(ach(13285, {	-- Upright Citizens
 						i(166247),		-- Citizens Brigade Whistle (toy)
 						crit(1),		-- Russel the Bard recruited

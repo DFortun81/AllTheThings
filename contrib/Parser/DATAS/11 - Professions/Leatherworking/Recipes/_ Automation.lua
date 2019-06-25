@@ -10,6 +10,10 @@ profession(165, {	-- Leatherworking
 			["categoryID"] = 468,
 			["g"] = {
 				{
+					["name"] = "Drum of Primal Might",
+					["recipeID"] = 293135
+				},
+				{
 					["name"] = "Fel Leather Cuff",
 					["recipeID"] = 196457
 				},
@@ -120,13 +124,21 @@ profession(165, {	-- Leatherworking
 			}
 		},
 		{
-			["name"] = "Zandalari Patterns",
+			["name"] = "Kul Tiran Patterns",
 			["categoryID"] = 871,
 			["g"] = {
 				{
 					["name"] = "Leather Armor",
 					["categoryID"] = 883,
 					["g"] = {
+						{
+							["name"] = "Banded Dredged Boots",
+							["recipeID"] = 299021
+						},
+						{
+							["name"] = "Banded Dredged Leggings",
+							["recipeID"] = 299024
+						},
 						{
 							["name"] = "Coarse Leather Armguards",
 							["recipeID"] = 256756
@@ -158,6 +170,14 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Coarse Leather Waistguard",
 							["recipeID"] = 256755
+						},
+						{
+							["name"] = "Dredged Leather Boots",
+							["recipeID"] = 299019
+						},
+						{
+							["name"] = "Dredged Leather Leggings",
+							["recipeID"] = 299022
 						},
 						{
 							["name"] = "Emblazoned Tempest Boots",
@@ -280,6 +300,94 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 256769
 						},
 						{
+							["name"] = "Notorious Combatant's Leather Armguards",
+							["nextRecipeID"] = 294809,
+							["recipeID"] = 294808
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Armguards",
+							["nextRecipeID"] = 294810,
+							["previousRecipeID"] = 294808,
+							["recipeID"] = 294809
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Armguards",
+							["previousRecipeID"] = 294809,
+							["recipeID"] = 294810
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Gauntlets",
+							["nextRecipeID"] = 294800,
+							["recipeID"] = 294799
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Gauntlets",
+							["nextRecipeID"] = 294801,
+							["previousRecipeID"] = 294799,
+							["recipeID"] = 294800
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Gauntlets",
+							["previousRecipeID"] = 294800,
+							["recipeID"] = 294801
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Leggings",
+							["nextRecipeID"] = 294803,
+							["recipeID"] = 294802
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Leggings",
+							["nextRecipeID"] = 294804,
+							["previousRecipeID"] = 294802,
+							["recipeID"] = 294803
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Leggings",
+							["previousRecipeID"] = 294803,
+							["recipeID"] = 294804
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Treads",
+							["nextRecipeID"] = 294797,
+							["recipeID"] = 294796
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Treads",
+							["nextRecipeID"] = 294798,
+							["previousRecipeID"] = 294796,
+							["recipeID"] = 294797
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Treads",
+							["previousRecipeID"] = 294797,
+							["recipeID"] = 294798
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Waistguard",
+							["nextRecipeID"] = 294806,
+							["recipeID"] = 294805
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Waistguard",
+							["nextRecipeID"] = 294807,
+							["previousRecipeID"] = 294805,
+							["recipeID"] = 294806
+						},
+						{
+							["name"] = "Notorious Combatant's Leather Waistguard",
+							["previousRecipeID"] = 294806,
+							["recipeID"] = 294807
+						},
+						{
+							["name"] = "Reinforced Dredged Boots",
+							["recipeID"] = 299020
+						},
+						{
+							["name"] = "Reinforced Dredged Leggings",
+							["recipeID"] = 299023
+						},
+						{
 							["name"] = "Sinister Combatant's Leather Armguards",
 							["nextRecipeID"] = 282313,
 							["recipeID"] = 282312
@@ -373,6 +481,22 @@ profession(165, {	-- Leatherworking
 					["name"] = "Mail Armor",
 					["categoryID"] = 884,
 					["g"] = {
+						{
+							["name"] = "Banded Cragscale Boots",
+							["recipeID"] = 299027
+						},
+						{
+							["name"] = "Banded Cragscale Greaves",
+							["recipeID"] = 299030
+						},
+						{
+							["name"] = "Cragscale Boots",
+							["recipeID"] = 299025
+						},
+						{
+							["name"] = "Cragscale Greaves",
+							["recipeID"] = 299028
+						},
 						{
 							["name"] = "Emblazoned Mistscale Boots",
 							["recipeID"] = 256773
@@ -492,6 +616,94 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Mistscale Leggings",
 							["recipeID"] = 256774
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Armguards",
+							["nextRecipeID"] = 294824,
+							["recipeID"] = 294823
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Armguards",
+							["nextRecipeID"] = 294825,
+							["previousRecipeID"] = 294823,
+							["recipeID"] = 294824
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Armguards",
+							["previousRecipeID"] = 294824,
+							["recipeID"] = 294825
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Gauntlets",
+							["nextRecipeID"] = 294815,
+							["recipeID"] = 294814
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Gauntlets",
+							["nextRecipeID"] = 294816,
+							["previousRecipeID"] = 294814,
+							["recipeID"] = 294815
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Gauntlets",
+							["previousRecipeID"] = 294815,
+							["recipeID"] = 294816
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Leggings",
+							["nextRecipeID"] = 294818,
+							["recipeID"] = 294817
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Leggings",
+							["nextRecipeID"] = 294819,
+							["previousRecipeID"] = 294817,
+							["recipeID"] = 294818
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Leggings",
+							["previousRecipeID"] = 294818,
+							["recipeID"] = 294819
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Treads",
+							["nextRecipeID"] = 294812,
+							["recipeID"] = 294811
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Treads",
+							["nextRecipeID"] = 294813,
+							["previousRecipeID"] = 294811,
+							["recipeID"] = 294812
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Treads",
+							["previousRecipeID"] = 294812,
+							["recipeID"] = 294813
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Waistguard",
+							["nextRecipeID"] = 294821,
+							["recipeID"] = 294820
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Waistguard",
+							["nextRecipeID"] = 294822,
+							["previousRecipeID"] = 294820,
+							["recipeID"] = 294821
+						},
+						{
+							["name"] = "Notorious Combatant's Mail Waistguard",
+							["previousRecipeID"] = 294821,
+							["recipeID"] = 294822
+						},
+						{
+							["name"] = "Reinforced Cragscale Boots",
+							["recipeID"] = 299026
+						},
+						{
+							["name"] = "Reinforced Cragscale Greaves",
+							["recipeID"] = 299029
 						},
 						{
 							["name"] = "Shimmerscale Armguards",
@@ -672,6 +884,22 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 256781
 						},
 						{
+							["name"] = "Notorious Combatant's Bow",
+							["nextRecipeID"] = 294827,
+							["recipeID"] = 294826
+						},
+						{
+							["name"] = "Notorious Combatant's Bow",
+							["nextRecipeID"] = 294828,
+							["previousRecipeID"] = 294826,
+							["recipeID"] = 294827
+						},
+						{
+							["name"] = "Notorious Combatant's Bow",
+							["previousRecipeID"] = 294827,
+							["recipeID"] = 294828
+						},
+						{
 							["name"] = "Recurve Bow of the Strands",
 							["nextRecipeID"] = 256788,
 							["recipeID"] = 256787
@@ -710,6 +938,16 @@ profession(165, {	-- Leatherworking
 					}
 				},
 				{
+					["name"] = "Mount Equipment",
+					["categoryID"] = 1288,
+					["g"] = {
+						{
+							["name"] = "Comfortable Rider's Barding",
+							["recipeID"] = 301411
+						}
+					}
+				},
+				{
 					["name"] = "Other",
 					["categoryID"] = 886,
 					["g"] = {
@@ -728,6 +966,10 @@ profession(165, {	-- Leatherworking
 							["name"] = "Coarse Leather Barding",
 							["previousRecipeID"] = 286019,
 							["recipeID"] = 286021
+						},
+						{
+							["name"] = "Dredged Leather Bladder",
+							["recipeID"] = 301405
 						},
 						{
 							["name"] = "Drums of the Maelstrom",
@@ -776,6 +1018,16 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Tempest Hide Pouch",
 							["recipeID"] = 276256
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1267,
+					["g"] = {
+						{
+							["name"] = "Mallet of Thunderous Skins",
+							["recipeID"] = 293076
 						}
 					}
 				}
@@ -1407,11 +1659,11 @@ profession(165, {	-- Leatherworking
 					["g"] = {
 						{
 							["name"] = "Burnished Leather",
-							["recipeID"] = 171391
+							["recipeID"] = 171713
 						},
 						{
 							["name"] = "Burnished Leather",
-							["recipeID"] = 171713
+							["recipeID"] = 171391
 						},
 						{
 							["name"] = "Secrets of Draenor Leatherworking",
@@ -2715,11 +2967,11 @@ profession(165, {	-- Leatherworking
 						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Footguards of Meditation",
-							["recipeID"] = 143144
+							["recipeID"] = 143095
 						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Footguards of Meditation",
-							["recipeID"] = 143095
+							["recipeID"] = 143144
 						},
 						{
 							["name"] = "Crafted Malevolent Gladiator's Sabatons of Alacrity",
@@ -3432,6 +3684,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 67138
 						},
 						{
+							["name"] = "Crusader's Dragonscale Breastplate",
+							["recipeID"] = 67082
+						},
+						{
 							["name"] = "Dark Arctic Chestpiece",
 							["recipeID"] = 51570
 						},
@@ -3452,6 +3708,10 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 67136
 						},
 						{
+							["name"] = "Ensorcelled Nerubian Breastplate",
+							["recipeID"] = 67080
+						},
+						{
 							["name"] = "Eviscerator's Chestguard",
 							["recipeID"] = 60703
 						},
@@ -3470,6 +3730,14 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Knightbane Carapace",
 							["recipeID"] = 67142
+						},
+						{
+							["name"] = "Knightbane Carapace",
+							["recipeID"] = 67086
+						},
+						{
+							["name"] = "Lunar Eclipse Robes",
+							["recipeID"] = 67084
 						},
 						{
 							["name"] = "Lunar Eclipse Robes",
@@ -3522,12 +3790,24 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 67137
 						},
 						{
+							["name"] = "Black Chitin Bracers",
+							["recipeID"] = 67081
+						},
+						{
 							["name"] = "Bracers of Swift Death",
 							["recipeID"] = 67139
 						},
 						{
+							["name"] = "Bracers of Swift Death",
+							["recipeID"] = 67087
+						},
+						{
 							["name"] = "Crusader's Dragonscale Bracers",
 							["recipeID"] = 67143
+						},
+						{
+							["name"] = "Crusader's Dragonscale Bracers",
+							["recipeID"] = 67083
 						},
 						{
 							["name"] = "Eaglebane Bracers",
@@ -3548,6 +3828,10 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Iceborne Wristguards",
 							["recipeID"] = 60607
+						},
+						{
+							["name"] = "Moonshadow Armguards",
+							["recipeID"] = 67085
 						},
 						{
 							["name"] = "Moonshadow Armguards",

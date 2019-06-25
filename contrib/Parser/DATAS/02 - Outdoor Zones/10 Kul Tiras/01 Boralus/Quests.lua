@@ -179,6 +179,12 @@ _.Zones =
 							},
 						},
 					},
+					q(54947, {	-- A Small Team
+						["qg"] = 151100,	-- Gila Crosswires
+						["coord"] = { 67.2, 15.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 54946,	-- Report to Gila
+					}),
 					q(53436, { 	-- Azerite for the Alliance
 						["repeatable"] = true,
 						["isWeekly"] = true,
@@ -258,6 +264,12 @@ _.Zones =
 						["qg"] = 137871,	-- Taelia
 						-- NOTE: This might have to move to a different map. - Crieve
 					}),
+					q(56043, {	-- Send the Fleet -- also triggered 56881
+						["qg"] = 153932,	-- Genn Greymane
+						["coord"] = { 70.6, 27.2, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 56031,	-- The Wolf's Offensive
+					}),
 					q(47962, {	-- Stormsong Valley
 						["sourceQuests"] = { 47189 },	-- A Nation Divided
 						["isBreadcrumb"] = true,
@@ -275,6 +287,9 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 121235,	-- Taelia
 					--	["sourceQuests"] = {  },	-- slumber is dumb and forgot lol :)
+					}),
+					q(56031, {	-- The Wolf's Offensive
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51489, {	-- Time to Leave
 						["sourceQuests"] = { 51488 },	-- Archived Knowledge 
@@ -365,6 +380,17 @@ _.Zones =
 								{ 34.2, 31.8, 942 },
 							},
 						}),
+					}),
+					q(54088, {	-- The Legend of Mechagon
+						["qg"] = 150208,	-- Tinkmaster Overspark
+						["coord"] = { 67.2, 15.6, 1161 },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(54992, {	-- The Start of Something Bigger
+						["qg"] = 150145,	-- Gila Crosswires
+						["coord"] = { 43.2, 31.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 54947,	-- A Small Team
 					}),
 					q(53761, {	-- The Pirate's Treasure
 						["sourceQuest"] = 53760,	-- Unintended Consequences

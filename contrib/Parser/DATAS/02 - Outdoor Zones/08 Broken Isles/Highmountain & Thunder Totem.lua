@@ -22,6 +22,7 @@ _.Zones =
 				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
 				869,	-- Highmountain (legion invasion ship 1)
 				870,	-- Highmountain (legion invasion ship 2)
+				1472,	-- The Dragon's Spine (8.2 Heart Forge unlock scenario)
 			},
 			["lvl"] = 98,
 			["g"] = {
@@ -1061,6 +1062,12 @@ _.Zones =
 					}),
 				}),
 				n(-17,  {	-- Quests
+					q(55497, {	-- A Friendly Face
+						["qg"] = 152385,	-- Highmountain Shaman (ebonhorn)
+						["lvl"] = 120,
+						["coord"] = { 18.9, 58.0, 1472 },
+						["sourceQuests"] = { 55425 },	-- Dominating the Indomitable
+					}),
 					q(40216, {	-- A Hunter at Heart
 						["sourceQuests"] = {
 							40170,	-- Amateur Hour
@@ -1184,6 +1191,12 @@ _.Zones =
 						["coord"] = { 53.3, 64.0, 650 },
 						["qg"] = 97344,	-- Jale Rivermane
 					}),
+					q(55407, {	-- Calming the Spine
+						["qg"] = 151695,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
+						["coord"] = { 26.7, 46.2, 1472 },
+						["sourceQuests"] = { 55400 },	-- Take My Hand
+					}),
 					q(40339, {	-- Candle of Command
 						["sourceQuests"] = { 39769 },	-- The Gates of Wax
 						["coord"] = { 55.2, 41.8, 650 },
@@ -1277,6 +1290,12 @@ _.Zones =
 							i(132088),	-- Whitewater Links
 							i(132087),	-- Thunderpeak Greatbelt
 						},
+					}),
+					q(55425, {	-- Dominating the Indomitable
+						["qg"] = 152385,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
+						["coord"] = { 17.5, 62.1, 1472 },
+						["sourceQuests"] = { 55407 },	-- Calming the Spine
 					}),
 					q(40070, {	-- Eagle Egg Recovery
 						["coord"] = { 50.9, 36.6, 650 },
@@ -1652,6 +1671,12 @@ _.Zones =
 						["sourceQuests"] = { 39440 },	-- You Lift, Brul?
 						["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
 						["qg"] = 95799,	-- Damrul the Stronk
+					}),
+					q(55400, {	-- Take My Hand
+						["qg"] = 151641,	-- Spiritwalker Ebonhorn
+						["lvl"] = 120,
+						["coord"] = { 49.5, 68.3, 650 },
+						["sourceQuests"] = { 55374 },	-- A Disurbance Beneath the Earth
 					}),
 					q(40071, {	-- Tamer Takedown
 						["coord"] = { 50.9, 36.6, 650 },

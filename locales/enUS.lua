@@ -691,7 +691,6 @@ AllTheThings.L = {
 		[-7780] = "Interface\\Icons\\INV_Misc_Bag_10",
 		[-7781] = "Interface\\Icons\\INV_Box_01",
 		
-		
 		[-9912] = "Interface\\Icons\\ClassIcon_Paladin", 	 						-- Protection / Retribution Spec
 		[-9914] = "Interface\\FriendsFrame\\PlusManz-Alliance", 					-- Alliance
 		[-9913] = "Interface\\FriendsFrame\\PlusManz-Horde", 						-- Horde
@@ -842,6 +841,8 @@ AllTheThings.L = {
 		[-10058] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10059] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10060] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
+		[-10070] = "Interface\\Icons\\Paladin_Protection",							-- 
+
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101503] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1704,6 +1705,7 @@ AllTheThings.L = {
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Scenarios",
+		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
@@ -3136,7 +3138,56 @@ AllTheThings.L = {
 		[311218] = "Xal'atath, Blade of the Black Empire",
 		[311902] = "Loose Parts",	-- Loose Parts (Horde Won)
 		[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)
-		
+		[322533] = "Mardivas's Tome of the Elements",
+		[325659] = "Mechanized Chest",
+		[325660] = "Mechanized Chest",
+		[325661] = "Mechanized Chest",
+		[325662] = "Mechanized Chest",
+		[325663] = "Mechanized Chest",
+		[325664] = "Mechanized Chest",
+		[325665] = "Mechanized Chest",
+		[325666] = "Mechanized Chest",
+		[325667] = "Mechanized Chest",
+		[325668] = "Mechanized Chest",
+		[325869] = "Empty Cask",
+		[326140] = "Bounty Board",
+		[326394] = "Arcane Chest",
+		[326395] = "Glowing Arcane Trunk",
+		[326396] = "Glowing Arcane Trunk",
+		[326397] = "Glowing Arcane Trunk",
+		[326398] = "Glowing Arcane Trunk",
+		[326399] = "Glowing Arcane Trunk",
+		[326400] = "Glowing Arcane Trunk",
+		[326401] = "Arcane Chest",
+		[326402] = "Arcane Chest",
+		[326403] = "Arcane Chest",
+		[326404] = "Arcane Chest",
+		[326405] = "Arcane Chest",
+		[326406] = "Arcane Chest",
+		[326407] = "Arcane Chest",
+		[326408] = "Arcane Chest",
+		[326409] = "Arcane Chest",
+		[326410] = "Arcane Chest",
+		[326411] = "Arcane Chest",
+		[326412] = "Arcane Chest",
+		[326413] = "Arcane Chest",
+		[326414] = "Arcane Chest",
+		[326415] = "Arcane Chest",
+		[326416] = "Arcane Chest",
+		[326417] = "Arcane Chest",
+		[326418] = "Arcane Chest",
+		[326419] = "Arcane Chest",
+		[326588] = "Azerite Weapons Cache",
+		[327170] = "Weapon Rack",
+		[327427] = "Sack of Tasks",
+		[327548] = "Powerpack Blueprints",
+		[327585] = "Bounty Board",
+		[327591] = "Preserved Journal",
+		[327592] = "Enchanted Lock",
+		[327596] = "Broken Abyssal Focus",
+		[329641] = "Wanted: Junkbrat and Roadtrogg",
+		[329783] = "Glowing Arcane Trunk",
+		[329805] = "Strange Crystal",
 		
 		[9999999] = "Treasure Chest",	-- Use these until objectID is found
 		[9999998] = "Treasure Chest",	-- Use these until objectID is found
@@ -3160,6 +3211,16 @@ AllTheThings.L = {
 		[9999973] = "Treasure Chest",	-- Use these until objectID is found
 		[9999972] = "Treasure Chest",	-- Use these until objectID is found
 		[9999971] = "Treasure Chest",	-- Use these until objectID is found
+		[9999970] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999969] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999968] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999967] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999966] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999965] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999964] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999963] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999962] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
+		[9999961] = "Crystalline Cat Figurine",	-- these don't have actual objectIDs
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

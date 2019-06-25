@@ -4,6 +4,7 @@
 _.PetJournal = 
 {
 	pa(238, { 	-- Humanoid
+		p(2755),			-- Adventurous Hopling
 		a(p(1918)),			-- Alliance Enthusiast (Alliance)
 		p(1155),			-- Anubisath Idol
 		p(216),				-- Argent Gruntling
@@ -39,6 +40,7 @@ _.PetJournal =
 		p(1384),			-- Hogs
 		p(835),				-- Hopling
 		h(p(1919)),			-- Horde Fanatic (Horde)
+		p(2683),			-- Kelpfin
 		a(un(3, p(1940))),	-- Knight-Captain Murky (Alliance)
 		p(1166),			-- Kun-Lai Runt
 		h(un(4, p(1939))),	-- Legionnaire Murky (Horde)
@@ -47,12 +49,14 @@ _.PetJournal =
 		un(4, p(189)),		-- Mini Tyrael
 		un(35, a(p(296))),	-- Moonkin Hatchling (Alliance)
 		un(35, h(p(298))),	-- Moonking Hatchling (Horde)
+		p(2681),			-- Murgle
 		un(4, p(329)),		-- Murkablo
 		un(4, p(1364)),		-- Murkalot
 		un(3, p(1168)),		-- Murki
 		un(4, p(1454)),		-- Murkidan
 		un(3, p(217)),		-- Murkimus the Gladiator
 		un(4, p(107)),		-- Murky
+		p(2682),			-- Necrofin Tadpole
 		p(1495),			-- Ore Eater
 		un(35, p(248)),		-- Pandaren Monk
 		p(122),				-- Peddlefeet
@@ -61,6 +65,9 @@ _.PetJournal =
 		p(2135),		 	-- Rebellious Imp
 		p(1349),			-- Rotten Little Helper
 		p(1628),			-- Sister of Temptation
+		p(2762),			-- Slimy Darkhunter
+		p(2763),			-- Slimy Hermit Crab
+		p(2765),			-- Slimy Sea Slug
 		p(1953),			-- Snobold Runt
 		p(515),				-- Sporeling Sprout
 		p(1935),			-- Squirky
@@ -76,5 +83,6 @@ _.PetJournal =
 		p(120),				-- Winter's Little Helper
 		p(1634),			-- Wretched Servant
 		p(1887),			-- Wyrmy Tunkins
+		p(2680),			-- Zanj'ir Poker
 	}),
 };

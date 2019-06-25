@@ -16,7 +16,7 @@ profession(773, {	-- Inscription
 			}
 		},
 		{
-			["name"] = "Zandalari Inscription",
+			["name"] = "Kul Tiran Inscription",
 			["categoryID"] = 759,
 			["g"] = {
 				{
@@ -26,6 +26,10 @@ profession(773, {	-- Inscription
 						{
 							["name"] = "Crimson Ink",
 							["recipeID"] = 264777
+						},
+						{
+							["name"] = "Maroon Ink",
+							["recipeID"] = 298929
 						},
 						{
 							["name"] = "Ultramarine Ink",
@@ -96,6 +100,26 @@ profession(773, {	-- Inscription
 					["categoryID"] = 772,
 					["g"] = {
 						{
+							["name"] = "Contract: 7th Legion",
+							["nextRecipeID"] = 284293,
+							["recipeID"] = 284292
+						},
+						{
+							["name"] = "Contract: 7th Legion",
+							["nextRecipeID"] = 284294,
+							["previousRecipeID"] = 284292,
+							["recipeID"] = 284293
+						},
+						{
+							["name"] = "Contract: 7th Legion",
+							["previousRecipeID"] = 284293,
+							["recipeID"] = 284294
+						},
+						{
+							["name"] = "Contract: Ankoan",
+							["recipeID"] = 299665
+						},
+						{
 							["name"] = "Contract: Champions of Azeroth",
 							["nextRecipeID"] = 256298,
 							["recipeID"] = 256297
@@ -110,6 +134,58 @@ profession(773, {	-- Inscription
 							["name"] = "Contract: Champions of Azeroth",
 							["previousRecipeID"] = 256298,
 							["recipeID"] = 256299
+						},
+						{
+							["name"] = "Contract: Order of Embers",
+							["nextRecipeID"] = 256279,
+							["recipeID"] = 256278
+						},
+						{
+							["name"] = "Contract: Order of Embers",
+							["nextRecipeID"] = 256280,
+							["previousRecipeID"] = 256278,
+							["recipeID"] = 256279
+						},
+						{
+							["name"] = "Contract: Order of Embers",
+							["previousRecipeID"] = 256279,
+							["recipeID"] = 256280
+						},
+						{
+							["name"] = "Contract: Proudmoore Admiralty",
+							["nextRecipeID"] = 256276,
+							["recipeID"] = 256275
+						},
+						{
+							["name"] = "Contract: Proudmoore Admiralty",
+							["nextRecipeID"] = 256277,
+							["previousRecipeID"] = 256275,
+							["recipeID"] = 256276
+						},
+						{
+							["name"] = "Contract: Proudmoore Admiralty",
+							["previousRecipeID"] = 256276,
+							["recipeID"] = 256277
+						},
+						{
+							["name"] = "Contract: Rustbolt Resistance",
+							["recipeID"] = 299671
+						},
+						{
+							["name"] = "Contract: Storm's Wake",
+							["nextRecipeID"] = 256282,
+							["recipeID"] = 256281
+						},
+						{
+							["name"] = "Contract: Storm's Wake",
+							["nextRecipeID"] = 256283,
+							["previousRecipeID"] = 256281,
+							["recipeID"] = 256282
+						},
+						{
+							["name"] = "Contract: Storm's Wake",
+							["previousRecipeID"] = 256282,
+							["recipeID"] = 256283
 						},
 						{
 							["name"] = "Contract: Talanji's Expedition",
@@ -160,6 +236,10 @@ profession(773, {	-- Inscription
 							["recipeID"] = 256296
 						},
 						{
+							["name"] = "Contract: Unshackled",
+							["recipeID"] = 299668
+						},
+						{
 							["name"] = "Contract: Voldunai",
 							["nextRecipeID"] = 256291,
 							["recipeID"] = 256290
@@ -194,7 +274,7 @@ profession(773, {	-- Inscription
 					}
 				},
 				{
-					["name"] = "Cards",
+					["name"] = "Trinkets",
 					["categoryID"] = 773,
 					["g"] = {
 						{
@@ -212,6 +292,22 @@ profession(773, {	-- Inscription
 							["name"] = "Darkmoon Card of War",
 							["previousRecipeID"] = 256245,
 							["recipeID"] = 256246
+						},
+						{
+							["name"] = "Highborne Compendium of Mystical Bulwark",
+							["recipeID"] = 302190
+						},
+						{
+							["name"] = "Highborne Compendium of Storms",
+							["recipeID"] = 302189
+						},
+						{
+							["name"] = "Highborne Compendium of Sundering",
+							["recipeID"] = 302188
+						},
+						{
+							["name"] = "Highborne Compendium of Swirling Tides",
+							["recipeID"] = 302187
 						}
 					}
 				},
@@ -250,6 +346,22 @@ profession(773, {	-- Inscription
 							["name"] = "Inscribed Vessel of Mysticism",
 							["previousRecipeID"] = 256248,
 							["recipeID"] = 256249
+						},
+						{
+							["name"] = "Notorious Combatant's Etched Vessel",
+							["nextRecipeID"] = 294791,
+							["recipeID"] = 294790
+						},
+						{
+							["name"] = "Notorious Combatant's Etched Vessel",
+							["nextRecipeID"] = 294792,
+							["previousRecipeID"] = 294790,
+							["recipeID"] = 294791
+						},
+						{
+							["name"] = "Notorious Combatant's Etched Vessel",
+							["previousRecipeID"] = 294791,
+							["recipeID"] = 294792
 						},
 						{
 							["name"] = "Sinister Combatant's Etched Vessel",
@@ -300,6 +412,10 @@ profession(773, {	-- Inscription
 						{
 							["name"] = "Mass Mill Winter's Kiss",
 							["recipeID"] = 256220
+						},
+						{
+							["name"] = "Mass Mill Zin'anthid",
+							["recipeID"] = 298927
 						}
 					}
 				},
@@ -324,6 +440,38 @@ profession(773, {	-- Inscription
 							["recipeID"] = 285641
 						},
 						{
+							["name"] = "Vantus Rune: Crucible of Storms",
+							["nextRecipeID"] = 285926,
+							["recipeID"] = 285925
+						},
+						{
+							["name"] = "Vantus Rune: Crucible of Storms",
+							["nextRecipeID"] = 285927,
+							["previousRecipeID"] = 285925,
+							["recipeID"] = 285926
+						},
+						{
+							["name"] = "Vantus Rune: Crucible of Storms",
+							["previousRecipeID"] = 285926,
+							["recipeID"] = 285927
+						},
+						{
+							["name"] = "Vantus Rune: The Eternal Palace",
+							["nextRecipeID"] = 298647,
+							["recipeID"] = 298625
+						},
+						{
+							["name"] = "Vantus Rune: The Eternal Palace",
+							["nextRecipeID"] = 298648,
+							["previousRecipeID"] = 298625,
+							["recipeID"] = 298647
+						},
+						{
+							["name"] = "Vantus Rune: The Eternal Palace",
+							["previousRecipeID"] = 298647,
+							["recipeID"] = 298648
+						},
+						{
 							["name"] = "Vantus Rune: Uldir",
 							["nextRecipeID"] = 256304,
 							["recipeID"] = 256303
@@ -345,6 +493,22 @@ profession(773, {	-- Inscription
 					["name"] = "Glyphs",
 					["categoryID"] = 1130,
 					["g"] = {
+						{
+							["name"] = "Glyph of Steaming Fury",
+							["recipeID"] = 304033
+						},
+						{
+							["name"] = "Glyph of Storm's Wake",
+							["recipeID"] = 289356
+						},
+						{
+							["name"] = "Glyph of the Cold Waves",
+							["recipeID"] = 304036
+						},
+						{
+							["name"] = "Glyph of the Dark Depths",
+							["recipeID"] = 304030
+						},
 						{
 							["name"] = "Glyph of the Dolphin",
 							["recipeID"] = 276059
@@ -378,12 +542,44 @@ profession(773, {	-- Inscription
 					}
 				},
 				{
+					["name"] = "Blood Contracts",
+					["categoryID"] = 1276,
+					["g"] = {
+						{
+							["name"] = "Blood Contract: Bloodguard",
+							["recipeID"] = 292320
+						},
+						{
+							["name"] = "Blood Contract: Bloodshed",
+							["recipeID"] = 292012
+						},
+						{
+							["name"] = "Blood Contract: Oblivion",
+							["recipeID"] = 292322
+						},
+						{
+							["name"] = "Blood Contract: Sacrifice",
+							["recipeID"] = 259665
+						}
+					}
+				},
+				{
 					["name"] = "Follower Equipment",
 					["categoryID"] = 1235,
 					["g"] = {
 						{
 							["name"] = "Crimson Ink Well",
 							["recipeID"] = 278422
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1262,
+					["g"] = {
+						{
+							["name"] = "Sanguine Feather Quill of Lana'thel",
+							["recipeID"] = 256301
 						}
 					}
 				}
@@ -1149,11 +1345,11 @@ profession(773, {	-- Inscription
 						},
 						{
 							["name"] = "War Paints",
-							["recipeID"] = 178240
+							["recipeID"] = 169081
 						},
 						{
 							["name"] = "War Paints",
-							["recipeID"] = 169081
+							["recipeID"] = 178240
 						},
 						{
 							["name"] = "Warbinder's Ink",
@@ -1701,6 +1897,10 @@ profession(773, {	-- Inscription
 					["g"] = {
 						{
 							["name"] = "Forged Documents",
+							["recipeID"] = 89244
+						},
+						{
+							["name"] = "Forged Documents",
 							["recipeID"] = 86654
 						}
 					}
@@ -1750,6 +1950,10 @@ profession(773, {	-- Inscription
 						{
 							["name"] = "Glyph of Angels",
 							["recipeID"] = 148275
+						},
+						{
+							["name"] = "Glyph of Dalaran Brilliance",
+							["recipeID"] = 293801
 						},
 						{
 							["name"] = "Glyph of Fighting Pose",

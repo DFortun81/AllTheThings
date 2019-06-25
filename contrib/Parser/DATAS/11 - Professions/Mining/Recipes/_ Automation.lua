@@ -6,7 +6,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(186, {	-- Mining
 	filter(200, {
 		{
-			["name"] = "Zandalari Mining",
+			["name"] = "Kul Tiran Mining",
 			["categoryID"] = 1065,
 			["g"] = {
 				{
@@ -44,6 +44,38 @@ profession(186, {	-- Mining
 							["name"] = "Monelite Seam",
 							["previousRecipeID"] = 253343,
 							["recipeID"] = 253344
+						},
+						{
+							["name"] = "Osmenite Deposit",
+							["nextRecipeID"] = 296148,
+							["recipeID"] = 296149
+						},
+						{
+							["name"] = "Osmenite Deposit",
+							["nextRecipeID"] = 296147,
+							["previousRecipeID"] = 296149,
+							["recipeID"] = 296148
+						},
+						{
+							["name"] = "Osmenite Deposit",
+							["previousRecipeID"] = 296148,
+							["recipeID"] = 296147
+						},
+						{
+							["name"] = "Osmenite Seam",
+							["nextRecipeID"] = 296144,
+							["recipeID"] = 296145
+						},
+						{
+							["name"] = "Osmenite Seam",
+							["nextRecipeID"] = 296143,
+							["previousRecipeID"] = 296145,
+							["recipeID"] = 296144
+						},
+						{
+							["name"] = "Osmenite Seam",
+							["previousRecipeID"] = 296144,
+							["recipeID"] = 296143
 						},
 						{
 							["name"] = "Platinum Deposit",

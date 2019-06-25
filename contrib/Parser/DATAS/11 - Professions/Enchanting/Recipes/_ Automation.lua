@@ -130,7 +130,17 @@ profession(333, {	-- Enchanting
 			}
 		},
 		{
-			["name"] = "Zandalari Enchanting",
+			["name"] = "Training",
+			["categoryID"] = 1255,
+			["g"] = {
+				{
+					["name"] = "Enchant Runic Power Core",
+					["recipeID"] = 284415
+				}
+			}
+		},
+		{
+			["name"] = "Kul Tiran Enchanting",
 			["categoryID"] = 647,
 			["g"] = {
 				{
@@ -183,6 +193,70 @@ profession(333, {	-- Enchanting
 					["name"] = "Ring Enchantments",
 					["categoryID"] = 651,
 					["g"] = {
+						{
+							["name"] = "Accord of Critical Strike",
+							["nextRecipeID"] = 298010,
+							["recipeID"] = 298009
+						},
+						{
+							["name"] = "Accord of Critical Strike",
+							["nextRecipeID"] = 298011,
+							["previousRecipeID"] = 298009,
+							["recipeID"] = 298010
+						},
+						{
+							["name"] = "Accord of Critical Strike",
+							["previousRecipeID"] = 298010,
+							["recipeID"] = 298011
+						},
+						{
+							["name"] = "Accord of Haste",
+							["nextRecipeID"] = 297994,
+							["recipeID"] = 297989
+						},
+						{
+							["name"] = "Accord of Haste",
+							["nextRecipeID"] = 298016,
+							["previousRecipeID"] = 297989,
+							["recipeID"] = 297994
+						},
+						{
+							["name"] = "Accord of Haste",
+							["previousRecipeID"] = 297994,
+							["recipeID"] = 298016
+						},
+						{
+							["name"] = "Accord of Mastery",
+							["nextRecipeID"] = 298001,
+							["recipeID"] = 297995
+						},
+						{
+							["name"] = "Accord of Mastery",
+							["nextRecipeID"] = 298002,
+							["previousRecipeID"] = 297995,
+							["recipeID"] = 298001
+						},
+						{
+							["name"] = "Accord of Mastery",
+							["previousRecipeID"] = 298001,
+							["recipeID"] = 298002
+						},
+						{
+							["name"] = "Accord of Versatility",
+							["nextRecipeID"] = 297991,
+							["recipeID"] = 297993
+						},
+						{
+							["name"] = "Accord of Versatility",
+							["nextRecipeID"] = 297999,
+							["previousRecipeID"] = 297993,
+							["recipeID"] = 297991
+						},
+						{
+							["name"] = "Accord of Versatility",
+							["previousRecipeID"] = 297991,
+							["recipeID"] = 297999
+						},
 						{
 							["name"] = "Pact of Critical Strike",
 							["nextRecipeID"] = 255090,
@@ -318,146 +392,210 @@ profession(333, {	-- Enchanting
 					["categoryID"] = 652,
 					["g"] = {
 						{
-							["name"] = "Weapon Enchant - Coastal Surge",
+							["name"] = "Coastal Surge",
 							["nextRecipeID"] = 255104,
 							["recipeID"] = 255103
 						},
 						{
-							["name"] = "Weapon Enchant - Coastal Surge",
+							["name"] = "Coastal Surge",
 							["nextRecipeID"] = 255105,
 							["previousRecipeID"] = 255103,
 							["recipeID"] = 255104
 						},
 						{
-							["name"] = "Weapon Enchant - Coastal Surge",
+							["name"] = "Coastal Surge",
 							["previousRecipeID"] = 255104,
 							["recipeID"] = 255105
 						},
 						{
-							["name"] = "Weapon Enchant - Deadly Navigation",
+							["name"] = "Deadly Navigation",
 							["nextRecipeID"] = 268908,
 							["recipeID"] = 268907
 						},
 						{
-							["name"] = "Weapon Enchant - Deadly Navigation",
+							["name"] = "Deadly Navigation",
 							["nextRecipeID"] = 268909,
 							["previousRecipeID"] = 268907,
 							["recipeID"] = 268908
 						},
 						{
-							["name"] = "Weapon Enchant - Deadly Navigation",
+							["name"] = "Deadly Navigation",
 							["previousRecipeID"] = 268908,
 							["recipeID"] = 268909
 						},
 						{
-							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["name"] = "Force Multiplier",
+							["nextRecipeID"] = 298439,
+							["recipeID"] = 298440
+						},
+						{
+							["name"] = "Force Multiplier",
+							["nextRecipeID"] = 300788,
+							["previousRecipeID"] = 298440,
+							["recipeID"] = 298439
+						},
+						{
+							["name"] = "Force Multiplier",
+							["previousRecipeID"] = 298439,
+							["recipeID"] = 300788
+						},
+						{
+							["name"] = "Gale-Force Striking",
 							["nextRecipeID"] = 255142,
 							["recipeID"] = 255141
 						},
 						{
-							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["name"] = "Gale-Force Striking",
 							["nextRecipeID"] = 255143,
 							["previousRecipeID"] = 255141,
 							["recipeID"] = 255142
 						},
 						{
-							["name"] = "Weapon Enchant - Gale-Force Striking",
+							["name"] = "Gale-Force Striking",
 							["previousRecipeID"] = 255142,
 							["recipeID"] = 255143
 						},
 						{
-							["name"] = "Weapon Enchant - Masterful Navigation",
+							["name"] = "Machinist's Brilliance",
+							["nextRecipeID"] = 300769,
+							["recipeID"] = 298433
+						},
+						{
+							["name"] = "Machinist's Brilliance",
+							["nextRecipeID"] = 300770,
+							["previousRecipeID"] = 298433,
+							["recipeID"] = 300769
+						},
+						{
+							["name"] = "Machinist's Brilliance",
+							["previousRecipeID"] = 300769,
+							["recipeID"] = 300770
+						},
+						{
+							["name"] = "Masterful Navigation",
 							["nextRecipeID"] = 268902,
 							["recipeID"] = 268901
 						},
 						{
-							["name"] = "Weapon Enchant - Masterful Navigation",
+							["name"] = "Masterful Navigation",
 							["nextRecipeID"] = 268903,
 							["previousRecipeID"] = 268901,
 							["recipeID"] = 268902
 						},
 						{
-							["name"] = "Weapon Enchant - Masterful Navigation",
+							["name"] = "Masterful Navigation",
 							["previousRecipeID"] = 268902,
 							["recipeID"] = 268903
 						},
 						{
-							["name"] = "Weapon Enchant - Quick Navigation",
+							["name"] = "Naga Hide",
+							["nextRecipeID"] = 298441,
+							["recipeID"] = 298442
+						},
+						{
+							["name"] = "Naga Hide",
+							["nextRecipeID"] = 300789,
+							["previousRecipeID"] = 298442,
+							["recipeID"] = 298441
+						},
+						{
+							["name"] = "Naga Hide",
+							["previousRecipeID"] = 298441,
+							["recipeID"] = 300789
+						},
+						{
+							["name"] = "Oceanic Restoration",
+							["nextRecipeID"] = 298437,
+							["recipeID"] = 298438
+						},
+						{
+							["name"] = "Oceanic Restoration",
+							["nextRecipeID"] = 298515,
+							["previousRecipeID"] = 298438,
+							["recipeID"] = 298437
+						},
+						{
+							["name"] = "Oceanic Restoration",
+							["previousRecipeID"] = 298437,
+							["recipeID"] = 298515
+						},
+						{
+							["name"] = "Quick Navigation",
 							["nextRecipeID"] = 268895,
 							["recipeID"] = 268894
 						},
 						{
-							["name"] = "Weapon Enchant - Quick Navigation",
+							["name"] = "Quick Navigation",
 							["nextRecipeID"] = 268897,
 							["previousRecipeID"] = 268894,
 							["recipeID"] = 268895
 						},
 						{
-							["name"] = "Weapon Enchant - Quick Navigation",
+							["name"] = "Quick Navigation",
 							["previousRecipeID"] = 268895,
 							["recipeID"] = 268897
 						},
 						{
-							["name"] = "Weapon Enchant - Siphoning",
+							["name"] = "Siphoning",
 							["nextRecipeID"] = 255111,
 							["recipeID"] = 255110
 						},
 						{
-							["name"] = "Weapon Enchant - Siphoning",
+							["name"] = "Siphoning",
 							["nextRecipeID"] = 255112,
 							["previousRecipeID"] = 255110,
 							["recipeID"] = 255111
 						},
 						{
-							["name"] = "Weapon Enchant - Siphoning",
+							["name"] = "Siphoning",
 							["previousRecipeID"] = 255111,
 							["recipeID"] = 255112
 						},
 						{
-							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["name"] = "Stalwart Navigation",
 							["nextRecipeID"] = 268914,
 							["recipeID"] = 268913
 						},
 						{
-							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["name"] = "Stalwart Navigation",
 							["nextRecipeID"] = 268915,
 							["previousRecipeID"] = 268913,
 							["recipeID"] = 268914
 						},
 						{
-							["name"] = "Weapon Enchant - Stalwart Navigation",
+							["name"] = "Stalwart Navigation",
 							["previousRecipeID"] = 268914,
 							["recipeID"] = 268915
 						},
 						{
-							["name"] = "Weapon Enchant - Torrent of Elements",
+							["name"] = "Torrent of Elements",
 							["nextRecipeID"] = 255130,
 							["recipeID"] = 255129
 						},
 						{
-							["name"] = "Weapon Enchant - Torrent of Elements",
+							["name"] = "Torrent of Elements",
 							["nextRecipeID"] = 255131,
 							["previousRecipeID"] = 255129,
 							["recipeID"] = 255130
 						},
 						{
-							["name"] = "Weapon Enchant - Torrent of Elements",
+							["name"] = "Torrent of Elements",
 							["previousRecipeID"] = 255130,
 							["recipeID"] = 255131
 						},
 						{
-							["name"] = "Weapon Enchant - Versatile Navigation",
+							["name"] = "Versatile Navigation",
 							["nextRecipeID"] = 268878,
 							["recipeID"] = 268852
 						},
 						{
-							["name"] = "Weapon Enchant - Versatile Navigation",
+							["name"] = "Versatile Navigation",
 							["nextRecipeID"] = 268879,
 							["previousRecipeID"] = 268852,
 							["recipeID"] = 268878
 						},
 						{
-							["name"] = "Weapon Enchant - Versatile Navigation",
+							["name"] = "Versatile Navigation",
 							["previousRecipeID"] = 268878,
 							["recipeID"] = 268879
 						}
@@ -477,11 +615,11 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Swift Hearthing",
-							["recipeID"] = 255068
+							["recipeID"] = 267495
 						},
 						{
 							["name"] = "Swift Hearthing",
-							["recipeID"] = 267495
+							["recipeID"] = 255068
 						}
 					}
 				},
@@ -524,6 +662,22 @@ profession(333, {	-- Enchanting
 							["name"] = "Honorable Combatant's Sorcerous Scepter",
 							["previousRecipeID"] = 269716,
 							["recipeID"] = 269719
+						},
+						{
+							["name"] = "Notorious Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 294782,
+							["recipeID"] = 294781
+						},
+						{
+							["name"] = "Notorious Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 294783,
+							["previousRecipeID"] = 294781,
+							["recipeID"] = 294782
+						},
+						{
+							["name"] = "Notorious Combatant's Sorcerous Scepter",
+							["previousRecipeID"] = 294782,
+							["recipeID"] = 294783
 						},
 						{
 							["name"] = "Sinister Combatant's Sorcerous Scepter",
@@ -572,6 +726,16 @@ profession(333, {	-- Enchanting
 					}
 				},
 				{
+					["name"] = "Mount Equipment",
+					["categoryID"] = 1290,
+					["g"] = {
+						{
+							["name"] = "Light-Step Hoofplates",
+							["recipeID"] = 301412
+						}
+					}
+				},
+				{
 					["name"] = "Disenchants",
 					["categoryID"] = 1251,
 					["g"] = {
@@ -592,6 +756,16 @@ profession(333, {	-- Enchanting
 						{
 							["name"] = "Disenchanting Rod",
 							["recipeID"] = 278418
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1249,
+					["g"] = {
+						{
+							["name"] = "Iwen's Enchanting Rod",
+							["recipeID"] = 287494
 						}
 					}
 				}
@@ -1537,11 +1711,11 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Greater Critical Strike",
-							["recipeID"] = 74248
+							["recipeID"] = 74247
 						},
 						{
 							["name"] = "Greater Critical Strike",
-							["recipeID"] = 74247
+							["recipeID"] = 74248
 						},
 						{
 							["name"] = "Greater Haste",
@@ -2775,11 +2949,11 @@ profession(333, {	-- Enchanting
 					["g"] = {
 						{
 							["name"] = "Agility",
-							["recipeID"] = 27837
+							["recipeID"] = 23800
 						},
 						{
 							["name"] = "Agility",
-							["recipeID"] = 23800
+							["recipeID"] = 27837
 						},
 						{
 							["name"] = "Crusader",

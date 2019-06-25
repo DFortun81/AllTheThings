@@ -5,6 +5,7 @@ _.PetJournal =
 {
 	pa(240, { 	-- Aquatic
 		p(2403),	-- Abyssal Eel
+		p(2678),	-- Abyssal Slitherling
 		p(836), 	-- Aqua Strider
 		p(2425),	-- Barnacled Hermit Crab
 		p(2385),	-- Barrier Hermit
@@ -14,9 +15,16 @@ _.PetJournal =
 		p(1934), 	-- Benax
 		p(649), 	-- Biletoad
 		p(1753), 	-- Bleakwater Jelly
+		p(2652),	-- Bloodseeker
 		p(1666), 	-- Blorp
 		p(2398),	-- Boghopper
+		p(2688),	-- Brilliant Glimmershell
 		h(p(2479)),	-- Bucketshell
+		p(2690),	-- Caverndark Nightmare
+		p(2658),	-- Chitterspine Deepstalker
+		p(2691),	-- Chitterspine Devourer
+		p(2689),	-- Chitterspine Needler
+		p(2648),	-- Chitterspine Skitterling
 		p(174), 	-- Chuck
 		p(2400),	-- Coastal Bounder
 		p(2386),	-- Coastal Scuttler
@@ -24,14 +32,17 @@ _.PetJournal =
 		p(2427),	-- Cou'pa
 		p(2424),	-- Crimson Frog
 		p(2562),	-- Crimson Octopode
+		p(2695),	-- Daggertooth Frenzy
 		p(751), 	-- Dancing Water Skimmer 
 		p(335), 	-- Darkmoon Turtle
+		p(2651),	-- Deeptide Fingerling
 		p(2389),	-- Elusive Swimmer
 		p(564), 	-- Emerald Turtle 
 		p(746), 	-- Emperor Crab 
 		p(383), 	-- Eternal Strider
 		p(1581), 	-- Fen Crab
 		p(847), 	-- Fishy
+		p(2665),	-- Fleeting Frog
 		p(2374),	-- Freshwater Crawler
 		p(2423),	-- Freshwater Pincher
 		p(495), 	-- Frog
@@ -43,10 +54,13 @@ _.PetJournal =
 		p(569), 	-- Garden Frog
 		p(2077), 	-- Ghost Shark
 		p(1665), 	-- Ghostshell Crab
+		p(2647),	-- Glimmershell Scuttler
+		p(2684),	-- Glittering Diamondshell
 		p(749), 	-- Golden Civet
 		p(750), 	-- Golden Civet Kitten
 		p(1338), 	-- Gulp Froglet
 		p(2399),	-- Hermit Crab
+		p(2649),	-- Hissing Chitterspine
 		p(483), 	-- Horny Toad
 		p(648), 	-- Huge Toad
 		p(1541), 	-- Hydraling
@@ -64,9 +78,12 @@ _.PetJournal =
 		p(1687), 	-- Left Shark
 		p(702), 	-- Leopard Tree Frog
 		p(1623), 	-- Leviathan Hatchling
+		p(2692),	-- Lightless Ambusher
 		p(2430),	-- Lost Platysaur
+		p(2687),	-- Lustrous Glimmershell
 		p(542), 	-- Mac Frog
 		p(132), 	-- Magical Crawdad
+		p(2694),	-- Mindlost Bloodfrenzy
 		p(566), 	-- Mirror Strider
 		p(165), 	-- Mojo
 		p(737), 	-- Mongoose
@@ -80,7 +97,9 @@ _.PetJournal =
 		}),
 		p(164), 	-- Muckbreath
 		p(1441), 	-- Mud Jumper
+		p(2696),	-- Nameless Octopode
 		p(2462),	-- Octopode Fry
+		p(2686),	-- Pearlescent Glimmershell
 		p(198), 	-- Pengu
 		p(1755), 	-- Plump Jelly
 		p(1568), 	-- Puddle Terror
@@ -89,18 +108,27 @@ _.PetJournal =
 		}),
 		p(2373),	-- River Frog
 		p(2378),	-- River Otter
+		p(2685),	-- Sandclaw Nestseeker
+		p(2646),	-- Sandclaw Pincher
+		p(2646),	-- Sandclaw Sunshell
 		p(2377),	-- Sandyback Crawler
+		p(2704),	-- Scalebrood Hydra
 		p(2445),	-- Scuttle
 		p(1448), 	-- Sea Calf
 		p(340), 	-- Sea Pony
 		p(1754), 	-- Sewer-Pipe Jelly
 		p(2381),	-- Shack Crab
-		p(2372),	-- Sshadowback Crawler
+		p(2372),	-- shadowback Crawler
 		p(388), 	-- Shore Crab
 		p(629), 	-- Shore Crawler
 		p(711), 	-- Sifang Otter
 		p(712), 	-- Sifang Otter Pup
 		a(p(2478));	-- Sir Snips
+		p(2709),	-- Skittering Eel
+		p(2758),	-- Slimy Eel
+		p(2761),	-- Slimy Fangtooth
+		p(2760),	-- Slimy Octopode
+		p(2757),	-- Slimy Otter
 		p(2475),	-- Slippy
 		p(1655), 	-- Slithershock Elver
 		p(419), 	-- Small Frog
@@ -110,6 +138,7 @@ _.PetJournal =
 		p(2446),	-- Sparkleshell Sandcrawler
 		p(1201), 	-- Spawn of G'nathus
 		p(2528),	-- Spawn of Krag'wa
+		p(2693),	-- Spawn of Nalaada
 		p(125, { 	-- Speedy
 			["u"] = 20,	-- Children's Week
 		}),
@@ -143,6 +172,7 @@ _.PetJournal =
 		p(1013), 	-- Wanderer's Festival Hatchling
 		p(64),	 	-- Wood Frog
 		p(752), 	-- Yellow-Bellied Bullfrog
+		p(2666),	-- Yellow Junkhopper
 		p(1912), 	-- Young Mutant Warturtle
 		p(2392),	-- Young Sand Sifteeer
 		p(1582), 	-- Zangar Crawler

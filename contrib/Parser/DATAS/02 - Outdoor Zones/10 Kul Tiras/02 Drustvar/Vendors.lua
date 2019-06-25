@@ -33,6 +33,7 @@ _.Zones =
 							i(163491),	-- Pristine Falcon Feather
 						}),
 						i(162624),	-- Tome of Hex: Wicker Mongrel
+						i(161908),	-- Reins of the Dusky Waycrest Gryphon
 						i(161910),	-- Reins of the Smoky Charger
 						i(161596),	-- Coven Buster's Waistguard
 						i(161591),	-- Eternal Flamekeeper's Handwraps

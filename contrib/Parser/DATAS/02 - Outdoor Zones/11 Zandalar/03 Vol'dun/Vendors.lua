@@ -12,6 +12,7 @@ _.Zones =
 							["groups"] = {
 								i(160548),	-- Tabard of the Voldunai*
 								i(161773),	-- Reins of the Alabaster Hyena*
+								i(161667),	-- Reins of the Voldunai Dunescraper
 								i(163211),	-- Akunda's Firesticks*
 								i(159753),	-- Desert Flute*
 								un(1, i(163565)),	-- Vulpera Scrapper's Armor [Was in beta, not there on 8/12/18]

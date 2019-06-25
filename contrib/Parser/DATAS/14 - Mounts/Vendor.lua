@@ -11,6 +11,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(85262),	-- Amber Scorpion
+		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
 		i(47179, {	-- Argent Charger
 			["classes"] = { 2 },	-- Paladin
@@ -112,6 +113,7 @@ _.Mounts =
 		i(89362),	-- Brown Riding Goat
 		i(13333),	-- Brown Skeletal Horse
 		i(5668),	-- Brown Wolf
+		i(161666),	-- Captured Swampstalker
 		i(33999),	-- Cenarion War Hippogryph
 		i(116789),	-- Champion's Treadblade
 		i(5655),	-- Chestnut Mare
@@ -132,6 +134,7 @@ _.Mounts =
 		}),
 		i(123974),	-- Corrupted Dreadwing
 		i(95565),	-- Crimson Primal Direhorn
+		i(169202),	-- Crimson Tidestallion
 		i(87791),	-- Crimson Water Strider
 		i(161912, {	-- Dapple Gray
 			["races"] = ALLIANCE_ONLY,
@@ -156,6 +159,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(116664),	-- Dusky Rockhide
+		i(161908),	-- Dusky Waycrest Gryphon
 		i(25472),	-- Ebon Gryphon
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
@@ -314,6 +318,7 @@ _.Mounts =
 		i(44080, {	-- Ice Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(169203),	-- Inkscale Deepseeker
 		i(45586),	-- Ironforge Ram
 		i(116782),	-- Ironside Warwolf
 		i(142369),	-- Ivory Hawkstrider
@@ -331,6 +336,7 @@ _.Mounts =
 		un(2, i(116776)),	-- Pale Thorngrazer --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
 		i(163589),	-- Reins of the Palehide Direhorn
 		i(2414),	-- Pinto
+		i(161879),	-- Proudmoore Sea Scout
 		i(91006, {	-- Purple Dragon Turtle [Panda Only]
 			["races"] = {
 				25,	-- Horde Pandaren
@@ -380,6 +386,7 @@ _.Mounts =
 		i(152796),	-- Reins of the Umber Ruinstrider
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
+		i(168829),	-- Rustbolt Resistor
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
 			["classes"] = { 4 },	-- Rogue
 		}),
@@ -412,11 +419,13 @@ _.Mounts =
 		i(64998, {	-- Spectral Steed [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),
+		i(161664),	-- Spectral Pterrorwing
 		i(64999, {	-- Spectral Wolf [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
 		i(8632),	-- Spotted Frostsaber
 		i(19030),	-- Stormpike Battle Charger
+		i(161909),	-- Stormsong Coastwatcher
 		i(45125),	-- Stormwind Steed
 		i(47100),	-- Striped Dawnsaber
 		i(8631),	-- Striped Frostsaber
@@ -513,7 +522,9 @@ _.Mounts =
 		}),
 		i(8591),	-- Turquoise Raptor
 		i(13322),	-- Unpainted Mechanostrider
+		i(167170),	-- Unshackled Waveray
 		i(8592),	-- Violet Raptor
+		i(161667),	-- Voldunai Dunescraper
 		i(46100),	-- White Kodo
 		i(5873),	-- White Ram
 		i(89390),	-- White Riding Goat
@@ -541,6 +552,7 @@ _.Mounts =
 		i(44231, {	-- Wooly Mammoth [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(167751),	-- X-995 Mechanocat
 		i(166443),	-- Yellow Marsh Hopper
 	}),
 };

@@ -52,6 +52,35 @@ _.PetBattles =
 			},
 		},
 	},
+	q(56492, {	-- Pet Battle Challenge: Stratholme
+		["qg"] = 150987,	-- Sean Wilkers
+		["coord"] = { 43.1, 19.9, 23 },
+		["maps"] = {
+			23,	-- Eastern Plaguelands
+		},
+		["g"] = {
+			ach(13627, {	-- Pet Battle Challenge: Stratholme
+				i(169670),	-- Evil Wizard Hat (minimancer)
+			}),
+			i(169665, {	-- Cleansed Remains
+				i(169666),	-- Unopened Stratholme Supply Crate
+				i(169678),	-- Ziggy
+				i(169677),	-- Crypt Fiend
+				i(169676),	-- Contained Banshee Wail (Shrieker)
+				i(169679),	-- Smelly Cleaver (Gruesome Belcher)
+			}),
+		},
+	}),
+	q(56491, {	-- Tiny Terrors of Stratholme
+		["qg"] = 150987,	-- Sean Wilkers
+		["coord"] = { 43.1, 19.9, 23 },
+		["maps"] = {
+			23,	-- Eastern Plaguelands
+		},
+		["g"] = {
+			i(122457),	-- Ultimate Battle-Training Stone
+		},
+	}),
 	{	-- Pet Battle Challenge: Wailing Caverns
 		["questID"] = 45539,
 		["qg"] = 116781,	-- Muyani

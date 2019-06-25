@@ -6,7 +6,7 @@ DO NOT MODIFY THIS FILE, I WILL CUT YOU.
 profession(202, {	-- Engineering
 	filter(200, {
 		{
-			["name"] = "Zandalari Engineering",
+			["name"] = "Kul Tiran Engineering",
 			["categoryID"] = 709,
 			["g"] = {
 				{
@@ -85,6 +85,10 @@ profession(202, {	-- Engineering
 					["name"] = "Devices",
 					["categoryID"] = 722,
 					["g"] = {
+						{
+							["name"] = "Blingtron 7000",
+							["recipeID"] = 298930
+						},
 						{
 							["name"] = "Deployable Attire Rearranger",
 							["nextRecipeID"] = 256155,
@@ -166,6 +170,14 @@ profession(202, {	-- Engineering
 							["recipeID"] = 283916
 						},
 						{
+							["name"] = "Wormhole Generator: Kul Tiras",
+							["recipeID"] = 299105
+						},
+						{
+							["name"] = "Wormhole Generator: Zandalar",
+							["recipeID"] = 299106
+						},
+						{
 							["name"] = "XA-1000 Surface Skimmer",
 							["nextRecipeID"] = 256074,
 							["recipeID"] = 256073
@@ -188,6 +200,14 @@ profession(202, {	-- Engineering
 					["categoryID"] = 1115,
 					["g"] = {
 						{
+							["name"] = "A5C-3N-D3D Synthetic Specs",
+							["recipeID"] = 299005
+						},
+						{
+							["name"] = "Abyssal Synthetic Specs",
+							["recipeID"] = 299004
+						},
+						{
 							["name"] = "AZ3-R1-T3 Synthetic Specs",
 							["nextRecipeID"] = 272057,
 							["recipeID"] = 272056
@@ -202,6 +222,10 @@ profession(202, {	-- Engineering
 							["name"] = "AZ3-R1-T3 Synthetic Specs",
 							["previousRecipeID"] = 272057,
 							["recipeID"] = 272058
+						},
+						{
+							["name"] = "Charged A5C-3N-D3D Synthetic Specs",
+							["recipeID"] = 299006
 						},
 						{
 							["name"] = "Charged SP1-R1-73D Synthetic Specs",
@@ -230,6 +254,14 @@ profession(202, {	-- Engineering
 					["categoryID"] = 1246,
 					["g"] = {
 						{
+							["name"] = "A5C-3N-D3D Gearspun Goggles",
+							["recipeID"] = 299008
+						},
+						{
+							["name"] = "Abyssal Gearspun Goggles",
+							["recipeID"] = 299007
+						},
+						{
 							["name"] = "AZ3-R1-T3 Gearspun Goggles",
 							["nextRecipeID"] = 272060,
 							["recipeID"] = 272059
@@ -244,6 +276,10 @@ profession(202, {	-- Engineering
 							["name"] = "AZ3-R1-T3 Gearspun Goggles",
 							["previousRecipeID"] = 272060,
 							["recipeID"] = 272061
+						},
+						{
+							["name"] = "Charged A5C-3N-D3D Gearspun Goggles",
+							["recipeID"] = 299009
 						},
 						{
 							["name"] = "Charged SP1-R1-73D Gearspun Goggles",
@@ -272,6 +308,14 @@ profession(202, {	-- Engineering
 					["categoryID"] = 1247,
 					["g"] = {
 						{
+							["name"] = "A5C-3N-D3D Bionic Bifocals",
+							["recipeID"] = 299011
+						},
+						{
+							["name"] = "Abyssal Bionic Bifocals",
+							["recipeID"] = 299010
+						},
+						{
 							["name"] = "AZ3-R1-T3 Bionic Bifocals",
 							["nextRecipeID"] = 272063,
 							["recipeID"] = 272062
@@ -286,6 +330,10 @@ profession(202, {	-- Engineering
 							["name"] = "AZ3-R1-T3 Bionic Bifocals",
 							["previousRecipeID"] = 272063,
 							["recipeID"] = 272064
+						},
+						{
+							["name"] = "Charged A5C-3N-D3D Bionic Bifocals",
+							["recipeID"] = 299012
 						},
 						{
 							["name"] = "Charged SP1-R1-73D Bionic Bifocals",
@@ -314,6 +362,14 @@ profession(202, {	-- Engineering
 					["categoryID"] = 1248,
 					["g"] = {
 						{
+							["name"] = "A5C-3N-D3D Orthogonal Optics",
+							["recipeID"] = 299014
+						},
+						{
+							["name"] = "Abyssal Orthogonal Optics",
+							["recipeID"] = 299013
+						},
+						{
 							["name"] = "AZ3-R1-T3 Orthogonal Optics",
 							["nextRecipeID"] = 272066,
 							["recipeID"] = 272065
@@ -328,6 +384,10 @@ profession(202, {	-- Engineering
 							["name"] = "AZ3-R1-T3 Orthogonal Optics",
 							["previousRecipeID"] = 272066,
 							["recipeID"] = 272067
+						},
+						{
+							["name"] = "Charged A5C-3N-D3D Orthogonal Optics",
+							["recipeID"] = 299015
 						},
 						{
 							["name"] = "Charged SP1-R1-73D Orthogonal Optics",
@@ -406,6 +466,38 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Magnetic Discombobulator",
 							["recipeID"] = 253122
+						},
+						{
+							["name"] = "Notorious Combatant's Discombobulator",
+							["nextRecipeID"] = 294785,
+							["recipeID"] = 294784
+						},
+						{
+							["name"] = "Notorious Combatant's Discombobulator",
+							["nextRecipeID"] = 294786,
+							["previousRecipeID"] = 294784,
+							["recipeID"] = 294785
+						},
+						{
+							["name"] = "Notorious Combatant's Discombobulator",
+							["previousRecipeID"] = 294785,
+							["recipeID"] = 294786
+						},
+						{
+							["name"] = "Notorious Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 294788,
+							["recipeID"] = 294787
+						},
+						{
+							["name"] = "Notorious Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 294789,
+							["previousRecipeID"] = 294787,
+							["recipeID"] = 294788
+						},
+						{
+							["name"] = "Notorious Combatant's Stormsteel Destroyer",
+							["previousRecipeID"] = 294788,
+							["recipeID"] = 294789
 						},
 						{
 							["name"] = "Precision Attitude Adjuster",
@@ -538,6 +630,10 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Mechantula",
 							["recipeID"] = 286478
+						},
+						{
+							["name"] = "Super-Charged Engine",
+							["recipeID"] = 256132
 						}
 					}
 				},
@@ -566,6 +662,40 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Monelite Fish Finder",
 							["recipeID"] = 278413
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 1254,
+					["g"] = {
+						{
+							["name"] = "The Ub3r-Spanner",
+							["recipeID"] = 282975
+						},
+						{
+							["name"] = "Ub3r-Module: P.O.G.O.",
+							["recipeID"] = 298255
+						},
+						{
+							["name"] = "Ub3r-Module: Scrap Cannon",
+							["recipeID"] = 298256
+						},
+						{
+							["name"] = "Ub3r-Module: Short-Fused Bomb Bots",
+							["recipeID"] = 283399
+						},
+						{
+							["name"] = "Ub3r-Module: Ub3r S3ntry Mk. X8.0",
+							["recipeID"] = 283401
+						},
+						{
+							["name"] = "Ub3r-Module: Ub3r-Coil",
+							["recipeID"] = 298257
+						},
+						{
+							["name"] = "Ub3r-Module: Ub3r-Improved Target Dummy",
+							["recipeID"] = 283403
 						}
 					}
 				}
@@ -1053,11 +1183,11 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Ultimate Gnomish Army Knife",
-							["recipeID"] = 162208
+							["recipeID"] = 169140
 						},
 						{
 							["name"] = "Ultimate Gnomish Army Knife",
-							["recipeID"] = 169140
+							["recipeID"] = 162208
 						},
 						{
 							["name"] = "World Shrinker",
@@ -1647,11 +1777,7 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Mechanized Snow Goggles",
-							["recipeID"] = 56465
-						},
-						{
-							["name"] = "Mechanized Snow Goggles",
-							["recipeID"] = 61481
+							["recipeID"] = 61483
 						},
 						{
 							["name"] = "Mechanized Snow Goggles",
@@ -1659,7 +1785,11 @@ profession(202, {	-- Engineering
 						},
 						{
 							["name"] = "Mechanized Snow Goggles",
-							["recipeID"] = 61483
+							["recipeID"] = 56465
+						},
+						{
+							["name"] = "Mechanized Snow Goggles",
+							["recipeID"] = 61481
 						},
 						{
 							["name"] = "Truesight Ice Blinders",

@@ -420,6 +420,17 @@ _.Achievements =
 						crit(13),		-- Now We are the Paragon
 						crit(14),		-- Strike!
 					}),
+					ach(13687, {	-- Glory of the Eternal Raider
+						i(167171),	-- Azshari Bloatray
+						crit(1),	-- You and What Army?
+						crit(2),	-- Fun Run
+						crit(3),	-- Intro to Marine Biology
+						crit(4),	-- Simple Geometry
+						crit(5),	-- If It Please the Court
+						crit(6),	-- A Smack of Jellyfish
+						crit(7),	-- Lactose Intolerant
+						crit(8),	-- The Best of Us
+					}),
 					ach(6927, {		-- Glory of the Pandaria Hero
 						i(87769),		-- Reins of the Crimson Cloud Serpent
 						crit(1),		-- Pandaria Dungeon Hero

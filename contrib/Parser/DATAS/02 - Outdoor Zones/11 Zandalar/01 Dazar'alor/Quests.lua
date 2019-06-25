@@ -171,24 +171,6 @@ _.Zones =
 						}),
 						
 						
-						q(47433, {	-- Offensively Defensive
-							["sourceQuests"] = { 47423 },	-- Forbidden Practices
-							["coord"] = { 51.7, 11.8, 1165 },
-							["races"] = HORDE_ONLY,
-							["qg"] = 126564,	-- Hexlord Raal
-							["g"] = {
-								i(155246),	-- Jambani Grips
-								i(155247),	-- Rastari Gauntlets
-								i(155248),	-- Zanchuli Handwraps
-								i(155249),	-- Torcalin Gloves
-								i(155263),	-- Rastari Waistguard
-								i(155264),	-- Zanchuli Sash
-								i(155265),	-- Torcalin Girdle
-								i(155266),	-- Jambani Waistwrap
-							},
-						}),
-						
-						
 						q(47440, {	-- Pa'ku, Master of Winds
 							["sourceQuests"] = { 47438 },	-- Picking a Side
 							["coord"] = { 42.5, 9.30, 1165 },
@@ -479,6 +461,27 @@ _.Zones =
 							["qg"] = 126549,
 							["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 						}),
+						qh(47433, {	-- Offensively Defensive
+							["g"] = {
+								i(155246),	-- Jambani Grips
+								i(155247),	-- Rastari Gauntlets
+								i(155248),	-- Zanchuli Handwraps
+								i(155249),	-- Torcalin Gloves
+								i(155263),	-- Rastari Waistguard
+								i(155264),	-- Zanchuli Sash
+								i(155265),	-- Torcalin Girdle
+								i(155266),	-- Jambani Waistwrap
+							},
+							["qg"] = 126564,	-- Hexlord Raal
+							["sourceQuests"] = { 47423 },	-- Forbidden Practices
+						}),
+						{	-- Only the Best Will Do
+							["questID"] = 55650,
+							["qg"] = 152505,	-- Skaggit
+							["coord"] = { 42.1, 87.8, 1165 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55649,	-- Machinations for Mechagon
+						},
 						qh(54174, {	-- Orders from Azshara
 							["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
 							["classes"] = {
@@ -508,6 +511,11 @@ _.Zones =
 							["coord"] = { 49.8, 95.9, 1165 },
 							["qg"] = 150433,	-- Bluffwatcher Proudscar
 						}),
+						qh(56044, {	-- Send the Fleet
+							["qg"] = 135691,	-- Nathanos Blightcaller
+							["coord"] = { 58.4, 62.6, 1165 },
+							["sourceQuest"] = 56030,	-- The Warchief's Order
+						}),
 						h(i(165668, {	-- The Azsharan Medallion
 							["description"]	= "To get the quest item you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball Toy",
 							["lvl"] = 120,
@@ -523,6 +531,21 @@ _.Zones =
 								qh(54172),	-- The Azsharan Medallion
 							},
 						})),
+						{	-- The Legend of Mechagon
+							["questID"] = 55646,
+							["qg"] = 152522,	-- Gazlowe
+							["coord"] = { 53.0, 43.2, 1165 },
+							["races"] = HORDE_ONLY,
+						},
+						{	-- The Missing Crew
+							["questID"] = 56379,
+							["qg"] = 135690,	-- Dread-Admiral Tattersail
+							["coord"] = { 58.4, 62.9, 862 },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								follower(1182),	-- Dread-Admiral Tattersail
+							},
+						},
 						q(53761,  {	-- The Pirate's Treasure
 							["sourceQuests"] = { 53760 },	-- Unintended Consequences
 							["coord"] = { 20.0, 35.8, 896 },
@@ -533,6 +556,16 @@ _.Zones =
 							["coord"] = { 75.0, 77.7, 895 },
 							["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
 						}),
+						qh(56030, {	-- The Warchief's Order
+							["description"] = "Automated granted when logging in.",
+						}),
+						{	-- To Mechagon!
+							["questID"] = 55651,
+							["qg"] = 152504,	-- Gazlowe
+							["coord"] = { 42.0, 87.8, 1165 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55650,	-- Only the Best Will Do
+						},
 						qh(54276, {	-- Trouble in Gnomeregan
 							["isBreadcrumb"] = true,
 							["qg"] = 147641,	-- Radek Fuselock

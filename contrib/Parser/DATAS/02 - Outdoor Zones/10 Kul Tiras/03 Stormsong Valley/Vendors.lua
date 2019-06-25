@@ -94,6 +94,7 @@ _.Zones =
 					["g"] = {
 						i(160542),	-- Storm's Wake Tabard
 						i(161912),	-- Reins of the Dapple Gray
+						i(161909),	-- Reins of the Stormsong Coastwatcher
 						i(163463),	-- Dead Ringer
 						i(163036, {	-- Polished Pet Charm
 							i(163490),	-- Pair of Bee Wings

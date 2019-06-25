@@ -18,6 +18,7 @@ pet(19450, 106); 	-- A Jubling's Tiny Home (Jubling)
 pet(129205, 1660); 	-- A Tiny Infernal Collar (Fel Pup)
 pet(163489, 2403);	-- Abyssal Eel
 pet(163506, 2420);	-- Accursed Hexxer
+pet(169322, 2755);	-- Adventurous Hopling
 pet(151828, 2072); 	-- Ageless Bronze Drake
 pet(136910, 1805);	-- Alarm-o-Bot
 pet(166714, 2566);	-- Albatross Feather
@@ -31,14 +32,17 @@ pet(139775, 1918); 	-- Alliance Enthusiast
 pet(106240, 1363);	-- Alterac Brandy (Alterac Brew-Pup)
 pet(152963, 2093);	-- Amalgam of Destruction
 pet(167055, 2589);	-- Amber Goo Puddle (Living Amber)
+pet(169363, 2697);	-- Amethyst Spireshell
 pet(44984, 212); 	-- Ammen Vale Lashling
 pet(117354, 1531); 	-- Ancient Nest Guardian
 pet(11023, 52); 	-- Ancona Chicken
 pet(93040, 1155); 	-- Anubisath Idol
+pet(169393, 2720);	-- Arachnoid Skitterbot
 pet(45022, 216); 	-- Argent Gruntling
 pet(44998, 214); 	-- Argent Squire
 pet(118516, 1603);	-- Argi
 pet(63398, 272);	-- Armadillo Pup
+pet(170072, 2766);	-- Armored Vaultbot
 pet(23712, 1927); 	-- Ash'ana
 pet(104156, 1323); 	-- Ashleaf Spriteling
 pet(128690, 1706); 	-- Ashmaw Cub
@@ -75,9 +79,9 @@ pet(93034, 1149); 	-- Blazing Rune (Corefire Imp)
 pet(129188, 1753); 	-- Bleakwater Jelly
 pet(142091, 1960); 	-- Blessed Seed (Snaplasher)
 pet(93032, 1144); 	-- Blighted Spore (Fungal Abomination)
+pet(163861, 2476);	-- Bloated Bloodfeaster
 pet(147539, 2035); 	-- Bloodbrood Whelpling
 pet(163500, 2414);	-- Bloodfeaster Larva
-pet(163861, 2476);	-- Bloodfeaster Larva (Alchemy version)
 pet(163818, 2451);	-- Bloodstone Tunneler
 pet(127704, 1577); 	-- Bloodthorn Hatchling
 pet(126925, 1666); 	-- Blorp's Bubble (Blorp)
@@ -89,6 +93,7 @@ pet(29901, 138); 	-- Blue Moth Egg (Blue Moth)
 pet(20371, 107); 	-- Blue Murloc Egg (Murky)
 pet(122532, 1600); 	-- Bone Serpent
 pet(119146, 1458); 	-- Bone Wasp
+pet(169392, 2719);	-- Bonebiter
 pet(104202, 1343); 	-- Bonkers
 pet(166452, 2547);	-- Bottled Essence of Hydrath (Hydrath Droplet)
 pet(152970, 2082);	-- Bound Stream
@@ -97,13 +102,16 @@ pet(128424, 1466);	-- Brightpaw
 pet(71387, 325);	-- Brilliant Kaliri
 pet(97557, 1235); 	-- Brilliant Phoenix Hawk Feather (Pheonix Hawk Hatchling)
 pet(118107, 1540); 	-- Brilliant Spore
+pet(169373, 2706);	-- Brinestone Algan
 pet(151829, 2071); 	-- Bronze Proto-Whelp
 pet(129362, 1777); 	-- Broot
 pet(29364, 137); 	-- Brown Rabbit Crate (Brown Rabbit)
 pet(10361, 77); 	-- Brown Snake
 pet(163244, 2402);	-- Brutus
 pet(163974, 2479);	-- Bucketshell
+pet(169374, 2707);	-- Budding Algan
 pet(163776, 2442);	-- Bumbles
+pet(170102, 2767);	-- Burnout
 pet(163508, 2422); 	-- Butterfly in A Jar
 pet(142099, 1968); 	-- Call of the Frozen Blade (Wicked Soul)
 pet(160588, 2185);	-- Cap'n Crackers
@@ -121,6 +129,7 @@ pet(8490, 44);		-- Cat Carrier (Siamese) - (Siamese Cat)
 pet(8488, 45); 		-- Cat Carrier (Silver Tabby) - (Silver Tabby Cat)
 pet(8489, 46);	 	-- Cat Carrier (White Kitten) - (White Kitten)
 pet(143754, 1999); 	-- Cavern Moccasin
+pet(169356, 2690);	-- Caverndark Nightmare
 pet(136923, 1888);	-- Celestial Calf
 pet(54810, 255);	-- Celestial Dragon
 pet(167049, 2581);	-- Celestial Gift (Comet)
@@ -129,6 +138,8 @@ pet(102145, 1303);	-- Chi-Chi, Hatchling of Chi-Ji
 pet(89368, 849); 	-- Chi-Ji Kite
 pet(11110, 84); 	-- Chicken Egg (Westfall Chicken)
 pet(163504, 2418);	-- Child of Jani
+pet(169357, 2691);	-- Chitterspine Devourer
+pet(169355, 2689);	-- Chitterspine Needler
 pet(35350, 174); 	-- Chuck's Bucket (Chuck)
 pet(92707, 1117);	-- Cinder Kitten
 pet(127748, 1662); 	-- Cinder Pup
@@ -140,6 +151,7 @@ pet(166718, 2568);	-- Cobalt Raven Hatchling (Cobalt Raven)
 pet(39898, 197); 	-- Cobra Hatchling
 pet(163823, 2457);	-- Coldlight Surfrunner
 pet(37298, 180);	-- Competitor's Souvenir (Essence of Competition)
+pet(169375, 2708);	-- Coral Lashling
 pet(49646, 244);	-- Core Hound Pup
 pet(93035, 1150); 	-- Core of Hardened Ash (Ashstone Core)
 pet(136925, 1890); 	-- Corgi Pup
@@ -162,10 +174,13 @@ pet(118106, 1537);	-- Crimson Spore
 pet(129175, 1752); 	-- Crispin
 pet(153026, 2115);	-- Cross Gazer
 pet(127868, 1688); 	-- Crusher
+pet(169677, 2749);	-- Crypt Fiend
 pet(97556, 1234); 	-- Crystal of the Void (Lesser Voidcaller)
 pet(46545, 225); 	-- Curious Oracle Hatchling
 pet(46544, 226); 	-- Curious Wolvar Pup
 pet(116801, 1521);	-- Cursed Birman
+pet(169361, 2695);	-- Daggertooth Frenzy
+pet(169365, 2699);	-- Damplight Slug
 pet(104160, 1329); 	-- Dandelion Frolicker
 pet(63138, 270);	-- Dark Phoenix Hatchling
 pet(97960, 1244); 	-- Dark Quivering Blob (Viscous Horror)
@@ -203,6 +218,7 @@ pet(109014, 1386);	-- Dread Hatchling
 pet(163634, 2431);	-- Dreadtick Leecher
 pet(97554, 1232); 	-- Dripping Strider Egg (Coilfang Stalker)
 pet(104162, 1331); 	-- Droplet of Y'Shaarj
+pet(169377, 2710);	-- Drowned Hatchling
 pet(142098, 1967); 	-- Drudge Remains (Drudge Ghoul)
 pet(163492, 2406);	-- Drustvar Piglet
 pet(44970, 205); 	-- Dun Morogh Cub
@@ -211,6 +227,7 @@ pet(93030, 1143); 	-- Dusty Clutch of Eggs (Giant Bone Spider)
 pet(127703, 1588); 	-- Dusty Sporewing
 pet(142380, 1979); 	-- Dutiful Gruntling
 pet(142379, 1978); 	-- Dutiful Squire
+pet(169396, 2721);	-- Echoing Oozeling
 pet(32616, 158); 	-- Egbert's Egg (Egbert)
 pet(113216, 1426);	-- Elekk Plushie
 pet(32622, 159); 	-- Elekk Training Collar (Peanut)
@@ -283,18 +300,21 @@ pet(97821, 1237); 	-- Gahz'rooki's Summoning Stone (Gahz'rooki)
 pet(163860, 2474);	-- Gearspring Hopper
 pet(152555, 2077);	-- Ghost Shark
 pet(39973, 190); 	-- Ghostly Skull
+pet(169205, 2754);	-- Ghostly Whelpling
 pet(43698, 193);	-- Giant Sewer Rat
 pet(142083, 1952); 	-- Giant Worm Egg (Dreadmaw)
 pet(163811, 2466);	-- Giggling Flame
 pet(120309, 1543); 	-- Glass of Warm Milk (Pygmy Cow)
 pet(129218, 1765); 	-- Glittering Arcane Crystal (Empyreal Manafiend)
 pet(142089, 1958); 	-- Glittering Ball of Yarn (Sanctum Cub)
+pet(169350, 2684);	-- Glittering Diamondshell
 pet(127701, 1598); 	-- Glowing Sporebat
 pet(93029, 1146); 	-- Gluth's Bone (Stitched Pup)
 pet(37297, 179);	-- Gold Medallion (Spirit of Competition)
 pet(65662, 260); 	-- Gold Mini Jouster
 pet(29953, 142); 	-- Golden Dragonhawk Hatchling
 pet(34518, 170);	-- Golden Pig Coin (Golden Pig)
+pet(169378, 2711);	-- Golden Snorf
 pet(104163, 1332); 	-- Gooey Sha-ling
 pet(153056, 2120);	-- Grasping Manifestation
 pet(8500, 68); 		-- Great Horned Owl
@@ -304,6 +324,7 @@ pet(21301, 119); 	-- Green Helper Box (Father WInter's Helper)
 pet(72134, 333);	-- Grell Moss (Gregarious Grell)
 pet(118517, 1602);	-- Grommloc
 pet(122105, 1622); 	-- Grotesque Statue (Grotesque)
+pet(169679, 2747);	-- Gruesome Belcher
 pet(128770, 1725);	-- Grumpling
 pet(128354, 1705); 	-- Grumpy
 pet(49662, 245);	-- Gryphon Hatchling
@@ -359,6 +380,7 @@ pet(94835, 1202); 	-- Ji-Kun Hatchling
 pet(21308, 118); 	-- Jingling Bell (WInter Reindeer)
 pet(163821, 2453);	-- Juvenile Brineshell
 pet(120051, 1597); 	-- Kaliri Hatchling
+pet(169349, 2683);	-- Kelpfin
 pet(163804, 2447);	-- Kindleweb Spiderling
 pet(44738, 199);	-- Kirin Tor Familiar
 pet(141894, 1940); 	-- Knight-Captain Murky
@@ -384,6 +406,7 @@ pet(122104, 1623); 	-- Leviathan Egg (Leviathan Hatchling)
 pet(136914, 1808);	-- Leyline Broodling
 pet(112057, 1412); 	-- Lifelike Mechanical Frostboar
 pet(15996, 95); 	-- Lifelike Mechanical Toad (Lifelike Toad)
+pet(169358, 2692);	-- Lightless Ambusher
 pet(103670, 1320);	-- Lil' Bling
 pet(163502, 2416);	-- Lil Ben'fon
 pet(62540, 268);	-- Lil' Deathwing
@@ -401,12 +424,14 @@ pet(94125, 1177); 	-- Living Sandling
 pet(166494, 2558);	-- Lord Woofington
 pet(127705, 1661); 	-- Lost Netherpup
 pet(163568, 2430);	-- Lost Platysaur [So Cute!]
+pet(169382, 2715);	-- Lost Robogrip
 pet(116155, 1511); 	-- Lovebird Hatchling
 pet(85871, 671);	-- Lucky Quilen Cub
 pet(73797, 337); 	-- Lump of Coal (Lumpy)
 pet(74610, 341); 	-- Lunar Lantern
 pet(139791, 1922); 	-- Lurking Owl Kitten
 pet(30360, 111); 	-- Lurky's Egg (Lurky)
+pet(169353, 2687);	-- Lustrous Glimmershell
 pet(46831, 1351); 	-- Macabre Marionette
 pet(67275, 292); 	-- Magic Lamp
 pet(27445, 132); 	-- Magical Crawdad Box (Magical Crawdad)
@@ -424,9 +449,13 @@ pet(118741, 1565); 	-- Mechanical Scorpid
 pet(4401, 39); 		-- Mechanical Squirrel Box (Mechanical Squirrel)
 pet(45002, 215); 	-- Mechanopeep
 pet(165849, 2530);	-- Mechantula
+pet(169385, 2718);	-- Microbot 8D
+pet(169384, 2717);	-- Microbot XD
 pet(101426, 666); 	-- Micronax Controller (Micronax)
+pet(169360, 2694);	-- Mindlost Bloodfrenzy
 pet(165894, 2534);	-- Mini Spider Tank
 pet(56806, 258);	-- Mini Thor
+pet(169670, 2638);	-- Minimancer
 pet(151632, 2064); 	-- Mining Monkey
 pet(31760, 149); 	-- Miniwing
 pet(141893, 1936);	-- Mischief
@@ -443,6 +472,7 @@ pet(41133, 192);	-- Mr. Chilly
 pet(66076, 286);	-- Mr. Grubbs
 pet(33818, 164); 	-- Muckbreath's Bucket (Muckbreath)
 pet(44980, 210); 	-- Mulgore Hatchling
+pet(169371, 2681);	-- Murgle
 pet(106244, 1364);	-- Murkalot's Flail (Murkalot)
 pet(128427, 1454);	-- Murkidan
 pet(45180, 217);	-- Murkimus' Little Spear (Murkimus the Gladiator)
@@ -451,8 +481,11 @@ pet(100870, 217);	-- Murkimus' Tyrannical Spear (Murkimus the Gladiator)
 pet(71726, 329); 	-- Murky's Little Soulstone (Murkablo)
 pet(164971, 2483);	-- Murloc Balloon
 pet(163820, 2458);	-- Muskflank Calfling
+pet(169380, 2713);	-- Mustyfur Snooter
 pet(116258, 1514);	-- Mystical Spring Bouquet
+pet(169362, 2696);	-- Nameless Octopode
 pet(151269, 2002);	-- Naxxy
+pet(169372, 2682);	-- Necrofin Tadpole
 pet(166489, 2554);	-- Needleback Pup
 pet(142085, 1954); 	-- Nerubian Relic (Nerubian Swarmer)
 pet(38628, 186);	-- Nether Ray Fry
@@ -494,6 +527,7 @@ pet(8496, 47); 		-- Parrot Cage (Cockatiel) - (Cockatiel)
 pet(8492, 50); 		-- Parrot Cage (Green Wing Macaw) - (Green Wing Macaw)
 pet(8494, 49); 		-- Parrot Cage (Hyacinth Macaw) - (Hyacinth Macaw)
 pet(8495, 51);	 	-- Parrot Cage (Senegal) - (Senegal)
+pet(169352, 2686);	-- Pearlescent Glimmershell
 pet(60869, 265);	-- Pebble
 pet(127754, 1663);	-- Periwinkle Calf
 pet(49912, 250);	-- Perky Pug
@@ -513,6 +547,7 @@ pet(89587, 381); 	-- Porcupette
 pet(158464, 2188);	-- Poda
 pet(163800, 2452);	-- Poro
 pet(10394, 70); 	-- Prairie Dog Whistle (Brown Prairie Dog)
+pet(169364, 2698);	-- Prismatic Softshell
 pet(166791, 2405);	-- Pristine Falcon Feather
 pet(166358, 2541);	-- Proper Parrot
 pet(44721, 196); 	-- Proto-Drake Whelp
@@ -563,6 +598,8 @@ pet(104159, 1328);	-- Ruby Droplet
 pet(63355, 271);	-- Rustberg Gull (Alliance)
 pet(64996, 271);	-- Rustberg Gull (Horde)
 pet(72153, 665);	-- Sand Scarab
+pet(169351, 2685);	-- Sandclaw Nestseeker
+pet(169369, 2703);	-- Sandkeep
 pet(163808, 2463);	-- Sandshell Chitterer
 pet(163512, 2426);	-- Sandstinger Wasp
 pet(167008, 2575);	-- Sandy Hermit Crab Shell (Mr. Crabs)
@@ -572,6 +609,7 @@ pet(163560, 2421);	-- Saurolisk Hatchling
 pet(163560, 2421);	-- Saurolisk Hatchling
 pet(128477, 1692);	-- Savage Cub
 pet(163684, 2436);	-- Scabby
+pet(169370, 2704);	-- Scalebrood Hydra
 pet(34955, 172);	-- Scorched Stone (Searing Scorchling)
 pet(146953, 2042); 	-- Scraps
 pet(166498, 2560);	-- Scritches
@@ -580,6 +618,7 @@ pet(114919, 1448); 	-- Sea Calf
 pet(73953, 340);	-- Sea Pony
 pet(118105, 1539);	-- Seaborne Spore
 pet(163490, 2404);	-- Seabreeze Bumblebee
+pet(169367, 2701);	-- Seafury
 pet(45606, 218); 	-- Sen'jin Fetish
 pet(118923, 1567); 	-- Sentinel's Companion
 pet(119431, 1601); 	-- Servant of Demidos
@@ -593,12 +632,14 @@ pet(97552, 1230); 	-- Shell of Tide-Calling (Tideskipper)
 pet(69992, 229);	-- Shimmering Wyrmling (No Rep Requirement)
 pet(46820, 229); 	-- Shimmering Wyrmling(Alliance)
 pet(46821, 229); 	-- Shimmering Wyrmling(Horde)
+pet(169676, 2750);	-- Shrieker
 pet(156851, 2163);	-- Silithid Mini-Tank
 pet(29957, 144); 	-- Silver Dragonhawk Hatchling
 pet(34519, 171);	-- Silver Pig Coin (Silver Pig)
 pet(88147, 820); 	-- Singing Cricket Cage
 pet(33154, 162); 	-- Sinister Squashling
 pet(163975, 2478);	-- Sir Snips
+pet(169376, 2709);	-- Skittering Eel
 pet(142097, 1966); 	-- Skull of A Frozen Whelp (Soulbroken Whelpling)
 pet(104167, 1336); 	-- Skunky Alemental
 pet(119150, 1575); 	-- Sky Fry
@@ -606,7 +647,14 @@ pet(104332, 1350);	-- Sky Lantern
 pet(115483, 1467);	-- Sky-Bo
 pet(129277, 1711); 	-- Skyhorn Nestling
 pet(32617, 157); 	-- Sleepy Willy (Willy)
+pet(167809, 2762);	-- Slimy Darkhunter
+pet(167808, 2758);	-- Slimy Eel
+pet(167807, 2761);	-- Slimy Fangtooth
+pet(167810, 2763);	-- Slimy Hermit Crab
+pet(167806, 2760);	-- Slimy Octopode
+pet(167805, 2757);	-- Slimy Otter
 pet(167011, 2577);	-- Slimy Pouch (Froglet)
+pet(167804, 2765);	-- Slimy Sea Slug
 pet(163858, 2475);	-- Slippy
 pet(122534, 1655); 	-- Slithershock Elver
 pet(122111, 1629); 	-- Smelly Gravestone (Stinkrot)
@@ -621,6 +669,7 @@ pet(151569, 2063); 	-- Sneaky Marmot
 pet(163819, 2459);	-- Snort
 pet(141530, 1941);	-- Snowfang
 pet(21309, 117); 	-- Snowman Kit (Tiny Snowman)
+pet(169379, 2712);	-- Snowsoft Nibbler
 pet(94209, 1197);	-- Snowy Panda
 pet(94152, 1183); 	-- Son of Animus
 pet(119143, 1574);	-- Son of Sethe
@@ -633,6 +682,7 @@ pet(167054, 2587);	-- Spawn of Garalon
 pet(94595, 1201); 	-- Spawn of G'nathus
 pet(165848, 2528);	-- Spawn of Krag'wa
 pet(160702, 2186);	-- Spawn of Merektha
+pet(169359, 2693);	-- Spawn of Nalaada
 pet(113623, 1442); 	-- Spectral Bell (Ghastly Kid)
 pet(90953, 1127);	-- Spectral Cub
 pet(94190, 1185);	-- Spectral Porcupette
@@ -641,6 +691,7 @@ pet(97548, 1226); 	-- Spiky Collar (Lil' Bad Wolf)
 pet(104168, 1337); 	-- Spineclaw Crab
 pet(167052, 2584);	-- Spirit of the Spring
 pet(163497, 2411);	-- Spooky Bundle of Sticks [Wicker Pup]
+pet(169886, 2753);	-- Spraybot 0D
 pet(44794, 200); 	-- Spring Rabbit's Foot (Spring Rabbit)
 pet(11474, 87); 	-- Sprite Darter Egg (Sprite Darter Hatchling)
 pet(163712, 2441);	-- Squawkling
@@ -652,6 +703,7 @@ pet(116402, 1515); 	-- Stonegrinder
 pet(129208, 1721); 	-- Stormborne Whelpling
 pet(142088, 1957); 	-- Stormforged Rune (Runeforged Servitor)
 pet(118577, 1546);	-- Stormwing
+pet(169368, 2702);	-- Stormwrath
 pet(116756, 1518); 	-- Stout Alemental
 pet(44983, 211); 	-- Strand Crawler
 pet(94191, 1184); 	-- Stunted Direhorn
@@ -729,6 +781,7 @@ pet(10393, 55); 	-- Undercity Cockroach
 pet(93036, 1151); 	-- Unscathed Egg (Untamed Hatchling)
 pet(152981, 2092);	-- Unstable Tendril
 pet(139790, 1921); 	-- Untethered Wyrmling
+pet(169383, 2716);	-- Utility Mechanoclaw
 pet(153195, 2136);	-- Uuna
 pet(38658, 187); 	-- Vampiric Batling
 pet(120050, 1596);	-- Veilwatcher Hatchling
@@ -763,6 +816,7 @@ pet(32233, 153); 	-- Wolpertinger's Tankard (Wolpertinger)
 pet(141348, 1937); 	-- Wondrous Wisdomball
 pet(11027, 64); 	-- Wood Frog Box (Wood Frog)
 pet(12264, 89); 	-- Worg Carrier (Worg Pup)
+pet(169366, 2700);	-- Wriggler
 pet(142093, 1962); 	-- Wriggling Darkness (Creeping Tentacle)
 pet(136922, 1887); 	-- Wyrmy Tunkins
 pet(101771, 1266);	-- Xu-Fu, Cub of Xuen
@@ -778,10 +832,12 @@ pet(166345, 2538);	-- Zandalari Raptor Egg (Dasher)
 pet(163499, 2413);	-- Zandalari Shinchomper
 pet(95424, 1213);  	-- Zandalari Toenibbler
 pet(118101, 1536);	-- Zangar Spore
+pet(169348, 2680);	-- Zanj'ir Poker
 pet(102146, 1305);	-- Zao, Calfling of Niuzao
 pet(152973, 2084);	-- Zephyrian Prince
 pet(128423, 1255);	-- Zeradar
 pet(13582, 94); 	-- Zergling Leash (Zergling)
+pet(169678, 2748);	-- Ziggy
 pet(49664, 247);	-- Zipao Tiger
 pet(113554, 1428);	-- Zomstrok
 pet(137298, 1903); 	-- Zoom

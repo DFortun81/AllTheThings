@@ -406,9 +406,11 @@ t(126931);	-- Seafarer's Slidewhistle
 t(45015);	-- Sen'jin Banner (Horde)
 t(97942);	-- Sen'jin Spirit Drum
 t(141649);	-- Set of Matches
+t(170187);	-- Shadescale
 t(98132);	-- Shado-Pan Geyser Gun
 t(86573);	-- Shard of Archstone
 t(119421);	-- Sha'tari Defender's Medallion (Alliance)
+t(170196);	-- Shirakess Warning Sign
 t(129055);	-- Shoe Shine Kit
 t(88387);	-- Shushen's Spittoon
 t(153293);	-- Sightless Eye
@@ -598,3 +600,39 @@ t(168123);  -- Twitching Eyeball
 t(165802);	-- Noble Gardener's Hearthstone
 t(166746);	-- Fire Eater's Hearthstone
 t(166747);	-- Brewfest Reveler's Hearthstone
+
+-----------------
+-- PATCH 8.2.0 --
+-----------------
+
+t(169275);	-- Alliance War Banner
+t(169278);	-- Alliance War Standard
+t(169796);	-- Azeroth Mini Collection: Mechagon
+t(168667);	-- Blingtron 7000
+t(170154);	-- Book of the Unshackled
+t(169865);	-- Brewfest Chowdown Trophy
+t(170155);	-- Carved Ankoan Charm
+t(170198);	-- Eternal Palace Dining Set
+t(170203);	-- Flopping Fish
+t(169298);	-- Frostwolf Insignia
+t(169768);	-- Heart of a Champion
+t(168907);	-- Holographic Digitalization Hearthstone
+t(169276);	-- Horde War Banner
+t(169277);	-- Horde War Standard
+t(168016);	-- Hyper-Compressed Ocean
+t(170380);	-- Jar of Sunwarmed Sand
+t(169347);	-- Judgment of Mechagon
+t(167931);	-- Mechagonian Sawblades
+t(170469);	-- Memento of the Deeps
+t(168824);	-- Ocean Simulator
+t(166782);	-- Pearl of the Abyss
+t(169108);	-- Rustbolt Banner
+t(170187);	-- Shadescale
+t(170196);	-- Shirakess Warning Sign
+t(169297);	-- Stormpike Insignia
+t(170204);	-- Symbol of Gral
+t(170476);	-- Underlight Sealamp
+t(168807);	-- Wormhole Generator: Kul Tiras
+t(168808);	-- Wormhole Generator: Zandalar
+t(170199);	-- Zanj'ir Weapon Rack
+

@@ -31,6 +31,28 @@ _.Zones =
 						}),
 					}),
 					n(-17,  {	-- Quests
+						q(55374, {	-- A Disturbance Beneath the Earth
+							["qg"] = 152194,	-- MOTHER
+							["coord"] = { 48.1, 72.2, 1473 },
+							["sourceQuest"] = 55533,	-- MOTHER Knows Best
+						}),
+						q(56162, {	-- Back Out to Sea
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.0, 59.1, 1355 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 57010,	-- Harnessing the Power
+						}),
+						q(56161, {	-- Back Out to Sea
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.0, 59.1, 1473 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 57010,	-- Harnessing the Power
+						}),
+						q(57010, {	-- Harnessing the Power
+							["qg"] = 152194,	-- MOTHER
+							["coord"] = { 48.0, 72.2, 1473 },
+							["sourceQuest"] = 55618,	-- The Heart Forge
+						}),
 						q(52428, {	-- Infusing the Heart
 							["sourceQuests"] = { 53028, 51211 },	-- The Heart of Azeroth (A/H)
 							["coord"] = { 50.3, 54.4 },
@@ -62,6 +84,20 @@ _.Zones =
 								i(159905),	-- Breastplate of the Champion
 							},
 						}),	
+						q(55533, {	-- MOTHER Knows Best
+							["qg"] = 152206,	-- Magni Bronzebeard
+							["coord"] = { 50.1, 59.1, 1473 },
+							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+						}),
+						q(55618, {	-- The Heart Forge
+							["qg"] = 152194,	-- MOTHER
+							["coord"] = { 48.1, 72.4, 1473 },
+							["sourceQuest"] = 55497,	-- A Friendly Face
+							["g"] = {
+								ach(13572),	-- The Heart Forge
+								i(168611),	-- Petrified Ebony Scale
+							},
+						}),
 						q(53031, {	-- The Speaker's Imperative
 							["sourceQuests"] = { 52428 },	-- Infusing the Heart
 							["coord"] = { 50.1, 53.6, 1021 },

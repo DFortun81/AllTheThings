@@ -448,6 +448,9 @@ _.Zones =
 						})),
 						q(49405, {	-- Defenders of Daelin's Gate [Alliance Only]
 							["sourceQuests"] = { 49404 },	-- Fairwind's "Friends" [Alliance Only]
+							["groups"] = {
+								i(155040),	-- Freebooter Shoulderpads
+							},
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["qg"] = 128927,	-- Taelia
@@ -621,6 +624,36 @@ _.Zones =
 						})),
 						
 						--
+						{	-- Let's Get It Started
+							["questID"] = 54945,
+							["qg"] = 149877,	-- Tinkmaster Overspark
+							["coord"] = { 65.8, 66.3, 895 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 55040,	-- Looking Inside
+						},
+						{	-- Looking Inside
+							["questID"] = 55040,
+							["qg"] = 149864,	-- Tinkmaster Overspark
+							["coord"] = { 65.5, 65.0, 895 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 54088,	-- The Legend of Mechagon
+						},
+						{	-- Report to Gila
+							["questID"] = 54946,
+							["qg"] = 152864,	-- Tinkmaster Overspark
+							["coord"] = { 65.8, 66.3, 895 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 54087,	-- You Must be This Height
+						},
+						{	-- You Must be This Height
+							["questID"] = 54087,
+							["qg"] = 149877,	-- Tinkmaster Overspark
+							["coord"] = { 65.8, 66.3, 895 },
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 54945,	-- Let's Get It Started
+						},
+						
+						
 						q(48903, {	-- The Perfect Horse, of Course
 							i(158229),	-- Lucktail Riding Cloak
 							i(158267),	-- Tortollan Traveling Lantern
@@ -737,6 +770,13 @@ _.Zones =
 								54960,	-- A Bitter Reunion
 							},
 						},
+						{	-- A Quick Ear Hustle
+							["questID"] = 55647,
+							["qg"] = 152578,	-- Gazlowe
+							["coord"] = { 65.6, 64.6, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55646,	-- The Legend of Mechagon
+						},
 						{	-- Castaway Point [Area]
 							["npcID"] = -90005,	-- Castaway Point
 							["icon"] = "Interface\\Icons\\inv_tiragardesound",
@@ -832,12 +872,33 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 54958,	-- Ships in the Night
 						},
+						{	-- Machinations for Mechagon
+							["questID"] = 55649,
+							["qg"] = 152652,	-- Gazlowe
+							["coord"] = { 65.9, 66.4, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55632,	-- You Must be This Height
+						},
+						{	-- Let's Get It Started
+							["questID"] = 55630,
+							["qg"] = 149809,	-- Gazlowe
+							["coord"] = { 65.8, 66.3, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55648,	-- This is Our Vault Now
+						},
 						{	-- Ships in the Night
 							["questID"] = 54958,
 							["qg"] = 150309,	-- Baine Bloodhoof
 							["coord"] = { 87.3, 49.6, 895 },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 55124,	-- Righting Wrongs
+						},
+						{	-- This is Our Vault Now
+							["questID"] = 55648,
+							["qg"] = 152578,	-- Gazlowe
+							["coord"] = { 65.6, 64.6, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55647,	-- A Quick Ear Hustle
 						},
 						{	-- Under Lock and Keys
 							["questID"] = 54959,
@@ -867,7 +928,13 @@ _.Zones =
 								},
 							},
 						},
-						
+						{	-- You Must Be This Height
+							["questID"] = 55632,
+							["qg"] = 149809,	-- Gazlowe
+							["coord"] = { 65.8, 66.3, 895 },
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 55630,	-- Let's Get It Started
+						},
 					},
 				}),
 			},

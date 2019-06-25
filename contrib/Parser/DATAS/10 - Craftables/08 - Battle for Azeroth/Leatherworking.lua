@@ -5,428 +5,286 @@ _.Craftables =
 {
 	tier(8, {	-- Battle For Azeroth
 		n(-187, {	-- Leatherworking
-			{	-- Coarse Leather Armguards [Alliance]
-				["itemID"] = 161945,	-- Coarse Leather Armguards [Alliance]
-			},
-			{	-- Coarse Leather Armguards [Horde]
-				["itemID"] = 154145,	-- Coarse Leather Armguards [Horde]
-			},
-			{	-- Coarse Leather Cestus [Alliance]
-				["itemID"] = 161970,	-- Coarse Leather Cestus [Alliance]
-			},
-			{	-- Coarse Leather Cestus [Horde]
-				["itemID"] = 154161,	-- Coarse Leather Cestus [Horde]
-			},
-			{	-- Coarse Leather Gauntlets [Alliance]
-				["itemID"] = 161940,	-- Coarse Leather Gauntlets [Alliance]
-			},
-			{	-- Coarse Leather Gauntlets [Horde]
-				["itemID"] = 154140,	-- Coarse Leather Gauntlets [Horde]
-			},
-			{	-- Coarse Leather Helm [Alliance]
-				["itemID"] = 161941,	-- Coarse Leather Helm [Alliance]
-			},
-			{	-- Coarse Leather Helm [Horde]
-				["itemID"] = 154141,	-- Coarse Leather Helm [Horde]
-			},
-			{	-- Coarse Leather Greaves [Alliance]
-				["itemID"] = 161942,	-- Coarse Leather Greaves [Alliance]
-			},
-			{	-- Coarse Leather Leggings [Horde]
-				["itemID"] = 154142,	-- Coarse Leather Leggings [Horde]
-			},
-			{	-- Coarse Leather Pauldrons [Alliance]
-				["itemID"] = 161943,	-- Coarse Leather Pauldrons [Alliance]
-			},
-			{	-- Coarse Leather Pauldrons [Horde]
-				["itemID"] = 154143,	-- Coarse Leather Pauldrons [Horde]
-			},
-			{	-- Coarse Leather Treads [Alliance]
-				["itemID"] = 161939,	-- Coarse Leather Treads [Alliance]
-			},
-			{	-- Coarse Leather Treads [Horde]
-				["itemID"] = 154139,	-- Coarse Leather Treads [Horde]
-			},
-			{	-- Coarse Leather Vest [Alliance]
-				["itemID"] = 161938,	-- Coarse Leather Vest [Alliance]
-			},
-			{	-- Coarse Leather Vest [Horde]
-				["itemID"] = 154138,	-- Coarse Leather Vest [Horde]
-			},
-			{	-- Coarse Leather Waistguard [Alliance]
-				["itemID"] = 161944,	-- Coarse Leather Waistguard [Alliance]
-			},
-			{	-- Coarse Leather Waistguard [Horde]
-				["itemID"] = 154144,	-- Coarse Leather Waistguard [Horde]
-			},
-			{	-- Emblazoned Mistscale Boots [Alliance]
-				["itemID"] = 162481,	-- Emblazoned Mistscale Boots [Alliance]
-			},
-			{	-- Emblazoned Mistscale Boots [Horde]
-				["itemID"] = 162472,	-- Emblazoned Mistscale Boots [Horde]
-			},
-			{	-- Emblazoned Mistscale Greaves [Alliance]
-				["itemID"] = 162482,	-- Emblazoned Mistscale Greaves [Alliance]
-			},
-			{	-- Emblazoned Mistscale Leggings [Horde]
-				["itemID"] = 162474,	-- Emblazoned Mistscale Leggings [Horde]
-			},
-			{	-- Emblazoned Tempest Boots [Alliance]
-				["itemID"] = 162485,	-- Emblazoned Tempest Boots [Alliance]
-			},
-			{	-- Emblazoned Tempest Boots [Horde]
-				["itemID"] = 162468,	-- Emblazoned Tempest Boots [Horde]
-			},
-			{	-- Emblazoned Tempest Leggings [Alliance]
-				["itemID"] = 162486,	-- Emblazoned Tempest Leggings [Alliance]
-			},
-			{	-- Emblazoned Tempest Leggings [Horde]
-				["itemID"] = 162470,	-- Emblazoned Tempest Leggings [Horde]
-			},
-			{	-- Enhanced Mistscale Boots [Alliance]
-				["itemID"] = 165404,	-- Enhanced Mistscale Boots [Alliance]
-			},
-			{	-- Enhanced Mistscale Boots [Horde]
-				["itemID"] = 165405,	-- Enhanced Mistscale Boots [Horde]
-			},
-			{	-- Enhanced Mistscale Greaves [Alliance]
-				["itemID"] = 165382,	-- Enhanced Mistscale Greaves [Alliance]
-			},
-			{	-- Enhanced Mistscale Greaves [Horde]
-				["itemID"] = 165381,	-- Enhanced Mistscale Greaves [Horde]
-			},
-			{	-- Fortified Mistscale Boots [Alliance]
-				["itemID"] = 165412,	-- Fortified Mistscale Boots [Alliance]
-			},
-			{	-- Fortified Mistscale Boots [Horde]
-				["itemID"] = 165413,	-- Fortified Mistscale Boots [Horde]
-			},
-			{	-- Fortified Mistscale Greaves [Alliance]
-				["itemID"] = 165388,	-- Fortified Mistscale Greaves [Alliance]
-			},
-			{	-- Fortified Mistscale Greaves [Horde]
-				["itemID"] = 165387,	-- Fortified Mistscale Greaves [Horde]
-			},
-			{	-- Enhanced Tempest Boots [Alliance]
-				["itemID"] = 165408,	-- Enhanced Tempest Boots [Alliance]
-			},
-			{	-- Enhanced Tempest Boots [Horde]
-				["itemID"] = 165409,	-- Enhanced Tempest Boots [Horde]
-			},
-			{	-- Enhanced Tempest Leggings [Alliance]
-				["itemID"] = 165383,	-- Enhanced Tempest Leggings [Alliance]
-			},
-			{	-- Enhanced Tempest Leggings [Horde]
-				["itemID"] = 165384,	-- Enhanced Tempest Leggings [Horde]
-			},
-			{	-- Fortified Tempest Boots [Alliance]
-				["itemID"] = 165416,	-- Fortified Tempest Boots [Alliance]
-			},
-			{	-- Fortified Tempest Boots [Horde]
-				["itemID"] = 165417,	-- Fortified Tempest Boots [Horde]
-			},
-			{	-- Fortified Tempest Leggings [Alliance]
-				["itemID"] = 165391,	-- Fortified Tempest Leggings [Alliance]
-			},
-			{	-- Fortified Tempest Leggings [Horde]
-				["itemID"] = 165392,	-- Fortified Tempest Leggings [Horde]
-			},
-			{	-- Hardened Tempest Boots [Alliance]
-				["itemID"] = 161946,	-- Hardened Tempest Boots [Alliance]
-			},
-			{	-- Hardened Tempest Boots [Horde]
-				["itemID"] = 154154,	-- Hardened Tempest Boots [Horde]
-			},
-			{	-- Hardened Tempest Knuckles [Alliance]
-				["itemID"] = 161972,	-- Hardened Tempest Knuckles [Alliance]
-			},
-			{	-- Hardened Tempest Knuckles [Horde]
-				["itemID"] = 154163,	-- Hardened Tempest Knuckles [Horde]
-			},
-			{	-- Hardened Tempest Leggings [Alliance]
-				["itemID"] = 161947,	-- Hardened Tempest Leggings [Alliance]
-			},
-			{	-- Hardened Tempest Leggings [Horde]
-				["itemID"] = 154155,	-- Hardened Tempest Leggings [Horde]
-			},
-			{	-- Honorable Combatant's Bow [Alliance]
-				["itemID"] = 161975,	-- Honorable Combatant's Bow [Alliance]
-			},
-			{	-- Honorable Combatant's Bow [Horde]
-				["itemID"] = 159896,	-- Honorable Combatant's Bow [Horde]
-			},
-			{	-- Honorable Combatant's Leather Armguards [Alliance]
-				["itemID"] = 161952,	-- Honorable Combatant's Leather Armguards [Alliance]
-			},
-			{	-- Honorable Combatant's Leather Armguards [Horde]
-				["itemID"] = 159888,	-- Honorable Combatant's Leather Armguards [Horde]
-			},
-			{	-- Honorable Combatant's Leather Gauntlets [Alliance]
-				["itemID"] = 161949,	-- Honorable Combatant's Leather Gauntlets [Alliance]
-			},
-			{	-- Honorable Combatant's Leather Gauntlets [Horde]
-				["itemID"] = 159885,	-- Honorable Combatant's Leather Gauntlets [Horde]
-			},
-			{	-- Honorable Combatant's Leather Greaves [Alliance]
-				["itemID"] = 161950,	-- Honorable Combatant's Leather Greaves [Alliance]
-			},
-			{	-- Honorable Combatant's Leather Leggings [Horde]
-				["itemID"] = 159886,	-- Honorable Combatant's Leather Leggings [Horde]
-			},
-			{	-- Honorable Combatant's Leather Treads [Alliance]
-				["itemID"] = 161948,	-- Honorable Combatant's Leather Treads [Alliance]
-			},
-			{	-- Honorable Combatant's Leather Treads [Horde]
-				["itemID"] = 159884,	-- Honorable Combatant's Leather Treads [Horde]
-			},
-			{	-- Honorable Combatant's Leather Waistguard [Alliance]
-				["itemID"] = 161951,	-- Honorable Combatant's Leather Waistguard [Alliance]
-			},
-			{	-- Honorable Combatant's Leather Waistguard [Horde]
-				["itemID"] = 159887,	-- Honorable Combatant's Leather Waistguard [Horde]
-			},
-			{	-- Honorable Combatant's Mail Armguards [Alliance]
-				["itemID"] = 161967,	-- Honorable Combatant's Mail Armguards [Alliance]
-			},
-			{	-- Honorable Combatant's Mail Armguards [Horde]
-				["itemID"] = 159893,	-- Honorable Combatant's Mail Armguards [Horde]
-			},
-			{	-- Honorable Combatant's Mail Gauntlets [Alliance]
-				["itemID"] = 161964,	-- Honorable Combatant's Mail Gauntlets [Alliance]
-			},
-			{	-- Honorable Combatant's Mail Gauntlets [Horde]
-				["itemID"] = 159890,	-- Honorable Combatant's Mail Gauntlets [Horde]
-			},
-			{	-- Honorable Combatant's Mail Greaves [Alliance]
-				["itemID"] = 161965,	-- Honorable Combatant's Mail Greaves [Alliance]
-			},
-			{	-- Honorable Combatant's Mail Leggings [Horde]
-				["itemID"] = 159891,	-- Honorable Combatant's Mail Leggings [Horde]
-			},
-			{	-- Honorable Combatant's Mail Treads [Alliance]
-				["itemID"] = 161963,	-- Honorable Combatant's Mail Treads [Alliance]
-			},
-			{	-- Honorable Combatant's Mail Treads [Horde]
-				["itemID"] = 159889,	-- Honorable Combatant's Mail Treads [Horde]
-			},
-			{	-- Honorable Combatant's Mail Waistguard [Alliance]
-				["itemID"] = 161966,	-- Honorable Combatant's Mail Waistguard [Alliance]
-			},
-			{	-- Honorable Combatant's Mail Waistguard [Horde]
-				["itemID"] = 159892,	-- Honorable Combatant's Mail Waistguard [Horde]
-			},
-			{	-- Imbued Mistscale Boots [Alliance]
-				["itemID"] = 162489,	-- Imbued Mistscale Boots [Alliance]
-			},
-			{	-- Imbued Mistscale Boots [Horde]
-				["itemID"] = 162471,	-- Imbued Mistscale Boots [Horde]
-			},
-			{	-- Imbued Mistscale Leggings [Alliance]
-				["itemID"] = 162490,	-- Imbued Mistscale Leggings [Alliance]
-			},
-			{	-- Imbued Mistscale Greeaves [Horde]
-				["itemID"] = 162473,	-- Imbued Mistscale Greeaves [Horde]
-			},
-			{	-- Imbued Tempest Boots [Alliance]
-				["itemID"] = 162493,	-- Imbued Tempest Boots [Alliance]
-			},
-			{	-- Imbued Tempest Boots [Horde]
-				["itemID"] = 162467,	-- Imbued Tempest Boots [Horde]
-			},
-			{	-- Imbued Tempest Leggings [Alliance]
-				["itemID"] = 162494,	-- Imbued Tempest Leggings [Alliance]
-			},
-			{	-- Imbued Tempest Leggings [Horde]
-				["itemID"] = 162469,	-- Imbued Tempest Leggings [Horde]
-			},
-			{	-- Mistscale Boots [Alliance]
-				["itemID"] = 161961,	-- Mistscale Boots [Alliance]
-				["g"] = {
-					{	-- Recipe: Imbued Mistscale Boots
-						["itemID"] = 162503,	-- Recipe: Imbued Mistscale Boots
+			filter(32, {	-- Bows
+				i(161975),	-- Honorable Combatant's Bow [Alliance]
+				i(159896),	-- Honorable Combatant's Bow [Horde]
+				i(167935),	-- Notorious Combatant's Bow [Alliance]
+				i(167934),	-- Notorious Combatant's Bow [Horde]
+				i(161968),	-- Recurve Bow of the Strands [Alliance]
+				i(154159),	-- Recurve Bow of the Strands [Horde]
+				i(164711),	-- Sinister Combatant's Bow [Alliance]
+				i(164670),	-- Sinister Combatant's Bow [Horde]
+			}),
+			filter(34, {	-- Fist Weapons
+				i(161970),	-- Coarse Leather Cestus [Alliance]
+				i(154161),	-- Coarse Leather Cestus [Horde]
+				i(161972),	-- Hardened Tempest Knuckles [Alliance]
+				i(154163),	-- Hardened Tempest Knuckles [Horde]
+				i(161971),	-- Mistscale Knuckles [Alliance]
+				i(154162),	-- Mistscale Knuckles [Horde]
+				i(161969),	-- Shimmerscale Striker [Alliance]
+				i(154160),	-- Shimmerscale Striker [Horde]
+			}),
+			n(-320, {	-- Head
+				i(161941),	-- Coarse Leather Helm [Alliance]
+				i(154141),	-- Coarse Leather Helm [Horde]
+				i(161956),	-- Shimmerscale Helm [Alliance]
+				i(154149),	-- Shimmerscale Helm [Horde]
+			}),
+			n(-321, {	-- Shoulders
+				i(161943),	-- Coarse Leather Pauldrons [Alliance]
+				i(154143),	-- Coarse Leather Pauldrons [Horde]
+				i(161958),	-- Shimmerscale Pauldrons [Alliance]
+				i(154151),	-- Shimmerscale Pauldrons [Horde]
+			}),
+			n(-323, {	-- Chest
+				i(161938),	-- Coarse Leather Vest [Alliance]
+				i(154138),	-- Coarse Leather Vest [Horde]
+				i(161953),	-- Shimmerscale Vest [Alliance]
+				i(154146),	-- Shimmerscale Vest [Horde]
+			}),
+			n(-327, {	-- Hands
+				i(161940),	-- Coarse Leather Gauntlets [Alliance]
+				i(154140),	-- Coarse Leather Gauntlets [Horde]
+				i(161949),	-- Honorable Combatant's Leather Gauntlets [Alliance]
+				i(159885),	-- Honorable Combatant's Leather Gauntlets [Horde]
+				i(161964),	-- Honorable Combatant's Mail Gauntlets [Alliance]
+				i(159890),	-- Honorable Combatant's Mail Gauntlets [Horde]
+				i(167947),	-- Notorious Combatant's Leather Gauntlets [Alliance]
+				i(167946),	-- Notorious Combatant's Leather Gauntlets [Horde]
+				i(167957),	-- Notorious Combatant's Mail Gauntlets [Alliance]
+				i(167956),	-- Notorious Combatant's Mail Gauntlets [Horde]
+				i(161955),	-- Shimmerscale Gauntlets [Alliance]
+				i(154148),	-- Shimmerscale Gauntlets [Horde]
+				i(164700),	-- Sinister Combatant's Leather Gauntlets [Alliance]
+				i(164659),	-- Sinister Combatant's Leather Gauntlets [Horde]
+				i(164705),	-- Sinister Combatant's Mail Gauntlets [Alliance]
+				i(164664),	-- Sinister Combatant's Mail Gauntlets [Horde]
+			}),
+			n(-326, {	-- Wrist
+				i(161945),	-- Coarse Leather Armguards [Alliance]
+				i(154145),	-- Coarse Leather Armguards [Horde]
+				i(161952),	-- Honorable Combatant's Leather Armguards [Alliance]
+				i(159888),	-- Honorable Combatant's Leather Armguards [Horde]
+				i(161967),	-- Honorable Combatant's Mail Armguards [Alliance]
+				i(159893),	-- Honorable Combatant's Mail Armguards [Horde]
+				i(167945),	-- Notorious Combatant's Leather Armguards [Alliance]
+				i(167944),	-- Notorious Combatant's Leather Armguards [Horde]
+				i(167955),	-- Notorious Combatant's Mail Armguards [Alliance]
+				i(167954),	-- Notorious Combatant's Mail Armguards [Horde]
+				i(161960),	-- Shimmerscale Armguards [Alliance]
+				i(154153),	-- Shimmerscale Armguards [Horde]
+				i(164703),	-- Sinister Combatant's Leather Armguards [Alliance]
+				i(164662),	-- Sinister Combatant's Leather Armguards [Horde]
+				i(164708),	-- Sinister Combatant's Mail Armguards [Alliance]
+				i(164667),	-- Sinister Combatant's Mail Armguards [Horde]
+			}),
+			n(-328, {	-- Waist
+				i(161944),	-- Coarse Leather Waistguard [Alliance]
+				i(154144),	-- Coarse Leather Waistguard [Horde]
+				i(161951),	-- Honorable Combatant's Leather Waistguard [Alliance]
+				i(159887),	-- Honorable Combatant's Leather Waistguard [Horde]
+				i(161966),	-- Honorable Combatant's Mail Waistguard [Alliance]
+				i(159892),	-- Honorable Combatant's Mail Waistguard [Horde]
+				i(167953),	-- Notorious Combatant's Leather Waistguard [Alliance]
+				i(167952),	-- Notorious Combatant's Leather Waistguard [Horde]
+				i(167963),	-- Notorious Combatant's Mail Waistguard [Alliance]
+				i(167962),	-- Notorious Combatant's Mail Waistguard [Horde]
+				i(161959),	-- Shimmerscale Waistguard [Alliance]
+				i(154152),	-- Shimmerscale Waistguard [Horde]
+				i(164702),	-- Sinister Combatant's Leather Waistguard [Alliance]
+				i(164661),	-- Sinister Combatant's Leather Waistguard [Horde]
+				i(164707),	-- Sinister Combatant's Mail Waistguard [Alliance]
+				i(164666),	-- Sinister Combatant's Mail Waistguard [Horde]
+			}),
+			n(-329, {	-- Legs
+				i(168721),	-- Banded Cragscale Greaves [Alliance]
+				i(168727),	-- Banded Cragscale Greaves [Horde]
+				i(168709),	-- Banded Dredged Leggings [Alliance]
+				i(168715),	-- Banded Dredged Leggings [Horde]
+				i(161942),	-- Coarse Leather Greaves [Alliance]
+				i(154142),	-- Coarse Leather Leggings [Horde]
+				i(168719, {	-- Cragscale Greaves [Alliance]
+					["g"] = {
+						i(168779),	-- Pattern: Reinforced Cragscale Greaves
 					},
-				},
-			},
-			{	-- Mistscale Boots [Horde]
-				["itemID"] = 154156,	-- Mistscale Boots [Horde]
-				["g"] = {
-					{	-- Recipe: Imbued Mistscale Boots
-						["itemID"] = 162503,	-- Recipe: Imbued Mistscale Boots
+				}),
+				i(168725, {	-- Cragscale Greaves [Horde]
+					["g"] = {
+						i(168779),	-- Pattern: Reinforced Cragscale Greaves
 					},
-				},
-			},
-			{	-- Mistscale Knuckles [Alliance]
-				["itemID"] = 161971,	-- Mistscale Knuckles [Alliance]
-			},
-			{	-- Mistscale Knuckles [Horde]
-				["itemID"] = 154162,	-- Mistscale Knuckles [Horde]
-			},
-			{	-- Mistscale Leggings [Alliance]
-				["itemID"] = 161962,	-- Mistscale Leggings [Alliance]
-				["g"] = {
-					{	-- Recipe: Imbued Mistscale Leggings
-						["itemID"] = 162505,	-- Recipe: Imbued Mistscale Leggings
+				}),
+				i(168707, {	-- Dredged Leather Leggings [Alliance]
+					["g"] = {
+						i(168775),	-- Recipe: Reinforced Dredged Leggings
 					},
-				},
-			},
-			{	-- Mistscale Greaves [Horde]
-				["itemID"] = 154157,	-- Mistscale Greaves [Horde]
-				["g"] = {
-					{	-- Recipe: Imbued Mistscale Leggings
-						["itemID"] = 162505,	-- Recipe: Imbued Mistscale Leggings
+				}),
+				i(168713, {	-- Dredged Leather Leggings [Horde]
+					["g"] = {
+						i(168775),	-- Recipe: Reinforced Dredged Leggings
 					},
-				},
-			},
-			{	-- Recurve Bow of the Strands [Alliance]
-				["itemID"] = 161968,	-- Recurve Bow of the Strands [Alliance]
-			},
-			{	-- Recurve Bow of the Strands [Horde]
-				["itemID"] = 154159,	-- Recurve Bow of the Strands [Horde]
-			},
-			{	-- Shimmerscale Armguards [Alliance]
-				["itemID"] = 161960,	-- Shimmerscale Armguards [Alliance]
-			},
-			{	-- Shimmerscale Armguards [Horde]
-				["itemID"] = 154153,	-- Shimmerscale Armguards [Horde]
-			},
-			{	-- Shimmerscale Gauntlets [Alliance]
-				["itemID"] = 161955,	-- Shimmerscale Gauntlets [Alliance]
-			},
-			{	-- Shimmerscale Gauntlets [Horde]
-				["itemID"] = 154148,	-- Shimmerscale Gauntlets [Horde]
-			},
-			{	-- Shimmerscale Helm [Alliance]
-				["itemID"] = 161956,	-- Shimmerscale Helm [Alliance]
-			},
-			{	-- Shimmerscale Helm [Horde]
-				["itemID"] = 154149,	-- Shimmerscale Helm [Horde]
-			},
-			{	-- Shimmerscale Greaves [Alliance]
-				["itemID"] = 161957,	-- Shimmerscale Greaves [Alliance]
-			},
-			{	-- Shimmerscale Leggings [Horde]
-				["itemID"] = 154150,	-- Shimmerscale Leggings [Horde]
-			},
-			{	-- Shimmerscale Pauldrons [Alliance]
-				["itemID"] = 161958,	-- Shimmerscale Pauldrons [Alliance]
-			},
-			{	-- Shimmerscale Pauldrons [Horde]
-				["itemID"] = 154151,	-- Shimmerscale Pauldrons [Horde]
-			},
-			{	-- Shimmerscale Striker [Alliance]
-				["itemID"] = 161969,	-- Shimmerscale Striker [Alliance]
-			},
-			{	-- Shimmerscale Striker [Horde]
-				["itemID"] = 154160,	-- Shimmerscale Striker [Horde]
-			},
-			{	-- Shimmerscale Treads [Alliance]
-				["itemID"] = 161954,	-- Shimmerscale Treads [Alliance]
-			},
-			{	-- Shimmerscale Treads [Horde]
-				["itemID"] = 154147,	-- Shimmerscale Treads [Horde]
-			},
-			{	-- Shimmerscale Vest [Alliance]
-				["itemID"] = 161953,	-- Shimmerscale Vest [Alliance]
-			},
-			{	-- Shimmerscale Vest [Horde]
-				["itemID"] = 154146,	-- Shimmerscale Vest [Horde]
-			},
-			{	-- Shimmerscale Waistguard [Alliance]
-				["itemID"] = 161959,	-- Shimmerscale Waistguard [Alliance]
-			},
-			{	-- Shimmerscale Waistguard [Horde]
-				["itemID"] = 154152,	-- Shimmerscale Waistguard [Horde]
-			},
-			{	-- Sinister Combatant's Bow [Alliance]
-				["itemID"] = 164711,	-- Sinister Combatant's Bow [Alliance]
-			},
-			{	-- Sinister Combatant's Bow [Horde]
-				["itemID"] = 164670,	-- Sinister Combatant's Bow [Horde]
-			},
-			{	-- Sinister Combatant's Leather Armguards [Alliance]
-				["itemID"] = 164703,	-- Sinister Combatant's Leather Armguards [Alliance]
-			},
-			{	-- Sinister Combatant's Leather Armguards [Horde]
-				["itemID"] = 164662,	-- Sinister Combatant's Leather Armguards [Horde]
-			},
-			{	-- Sinister Combatant's Leather Gauntlets [Alliance]
-				["itemID"] = 164700,	-- Sinister Combatant's Leather Gauntlets [Alliance]
-			},
-			{	-- Sinister Combatant's Leather Gauntlets [Horde]
-				["itemID"] = 164659,	-- Sinister Combatant's Leather Gauntlets [Horde]
-			},
-			{	-- Sinister Combatant's Leather Greaves [Alliance]
-				["itemID"] = 164701,	-- Sinister Combatant's Leather Greaves [Alliance]
-			},
-			{	-- Sinister Combatant's Leather Leggings [Horde]
-				["itemID"] = 164660,	-- Sinister Combatant's Leather Leggings [Horde]
-			},
-			{	-- Sinister Combatant's Leather Treads [Alliance]
-				["itemID"] = 164699,	-- Sinister Combatant's Leather Treads [Alliance]
-			},
-			{	-- Sinister Combatant's Leather Treads [Horde]
-				["itemID"] = 164658,	-- Sinister Combatant's Leather Treads [Horde]
-			},
-			{	-- Sinister Combatant's Leather Waistguard [Alliance]
-				["itemID"] = 164702,	-- Sinister Combatant's Leather Waistguard [Alliance]
-			},
-			{	-- Sinister Combatant's Leather Waistguard [Horde]
-				["itemID"] = 164661,	-- Sinister Combatant's Leather Waistguard [Horde]
-			},
-			{	-- Sinister Combatant's Mail Armguards [Alliance]
-				["itemID"] = 164708,	-- Sinister Combatant's Mail Armguards [Alliance]
-			},
-			{	-- Sinister Combatant's Mail Armguards [Horde]
-				["itemID"] = 164667,	-- Sinister Combatant's Mail Armguards [Horde]
-			},
-			{	-- Sinister Combatant's Mail Gauntlets [Alliance]
-				["itemID"] = 164705,	-- Sinister Combatant's Mail Gauntlets [Alliance]
-			},
-			{	-- Sinister Combatant's Mail Gauntlets [Horde]
-				["itemID"] = 164664,	-- Sinister Combatant's Mail Gauntlets [Horde]
-			},
-			{	-- Sinister Combatant's Mail Greaves [Alliance]
-				["itemID"] = 164706,	-- Sinister Combatant's Mail Greaves [Alliance]
-			},
-			{	-- Sinister Combatant's Mail Leggings [Horde]
-				["itemID"] = 164665,	-- Sinister Combatant's Mail Leggings [Horde]
-			},
-			{	-- Sinister Combatant's Mail Treads [Alliance]
-				["itemID"] = 164704,	-- Sinister Combatant's Mail Treads [Alliance]
-			},
-			{	-- Sinister Combatant's Mail Treads [Horde]
-				["itemID"] = 164663,	-- Sinister Combatant's Mail Treads [Horde]
-			},
-			{	-- Sinister Combatant's Mail Waistguard [Alliance]
-				["itemID"] = 164707,	-- Sinister Combatant's Mail Waistguard [Alliance]
-			},
-			{	-- Sinister Combatant's Mail Waistguard [Horde]
-				["itemID"] = 164666,	-- Sinister Combatant's Mail Waistguard [Horde]
-			},
-			{	-- Tempered Mistscale Boots [Alliance]
-				["itemID"] = 165420,	-- Tempered Mistscale Boots [Alliance]
-			},
-			{	-- Tempered Mistscale Boots [Horde]
-				["itemID"] = 165421,	-- Tempered Mistscale Boots [Horde]
-			},
-			{	-- Tempered Mistscale Greaves [Alliance]
-				["itemID"] = 165395,	-- Tempered Mistscale Greaves [Alliance]
-			},
-			{	-- Tempered Mistscale Greaves [Horde]
-				["itemID"] = 165396,	-- Tempered Mistscale Greaves [Horde]
-			},
-			{	-- Tempered Tempest Boots [Alliance]
-				["itemID"] = 165424,	-- Tempered Tempest Boots [Alliance]
-			},
-			{	-- Tempered Tempest Boots [Horde]
-				["itemID"] = 165425,	-- Tempered Tempest Boots [Horde]
-			},
-			{	-- Tempered Tempest Leggings [Alliance]
-				["itemID"] = 165399,	-- Tempered Tempest Leggings [Alliance]
-			},
-			{	-- Tempered Tempest Leggings [Horde]
-				["itemID"] = 165400,	-- Tempered Tempest Leggings [Horde]
-			},
+				}),
+				i(162482),	-- Emblazoned Mistscale Greaves [Alliance]
+				i(162474),	-- Emblazoned Mistscale Leggings [Horde]
+				i(162486),	-- Emblazoned Tempest Leggings [Alliance]
+				i(162470),	-- Emblazoned Tempest Leggings [Horde]
+				i(165382),	-- Enhanced Mistscale Greaves [Alliance]
+				i(165381),	-- Enhanced Mistscale Greaves [Horde]
+				i(165383),	-- Enhanced Tempest Leggings [Alliance]
+				i(165384),	-- Enhanced Tempest Leggings [Horde]
+				i(165388),	-- Fortified Mistscale Greaves [Alliance]
+				i(165387),	-- Fortified Mistscale Greaves [Horde]
+				i(165391),	-- Fortified Tempest Leggings [Alliance]
+				i(165392),	-- Fortified Tempest Leggings [Horde]
+				i(161947),	-- Hardened Tempest Leggings [Alliance]
+				i(154155),	-- Hardened Tempest Leggings [Horde]
+				i(161950),	-- Honorable Combatant's Leather Greaves [Alliance]
+				i(159886),	-- Honorable Combatant's Leather Leggings [Horde]
+				i(161965),	-- Honorable Combatant's Mail Greaves [Alliance]
+				i(159891),	-- Honorable Combatant's Mail Leggings [Horde]
+				i(162490),	-- Imbued Mistscale Leggings [Alliance]
+				i(162473),	-- Imbued Mistscale Greaves [Horde]
+				i(162494),	-- Imbued Tempest Leggings [Alliance]
+				i(162469),	-- Imbued Tempest Leggings [Horde]
+				i(161962, {	-- Mistscale Leggings [Alliance]
+					["g"] = {
+						i(162505),	-- Recipe: Imbued Mistscale Leggings
+					},
+				}),
+				i(154157, {	-- Mistscale Greaves [Horde]
+					["g"] = {
+						i(162505),	-- Recipe: Imbued Mistscale Leggings
+					},
+				}),
+				i(167949),	-- Notorious Combatant's Leather Leggings [Alliance]
+				i(167948),	-- Notorious Combatant's Leather Leggings [Horde]
+				i(167959),	-- Notorious Combatant's Mail Leggings [Alliance]
+				i(167958),	-- Notorious Combatant's Mail Leggings [Horde]
+				i(168720, {	-- Reinforced Cragscale Greaves [Alliance]
+					["g"] = {
+						i(168780),	-- Pattern: Banded Cragscale Greaves
+					},
+				}),
+				i(168726, {	-- Reinforced Cragscale Greaves [Horde]
+					["g"] = {
+						i(168780),	-- Pattern: Banded Cragscale Greaves
+					},
+				}),
+				i(168708, {	-- Reinforced Dredged Leggings [Alliance]
+					["g"] = {
+						i(168776),	-- Pattern: Banded Dredged Leggings
+					},
+				}),
+				i(168714, {	-- Reinforced Dredged Leggings [Horde]
+					["g"] = {
+						i(168776),	-- Pattern: Banded Dredged Leggings
+					},
+				}),
+				i(161957),	-- Shimmerscale Greaves [Alliance]
+				i(154150),	-- Shimmerscale Leggings [Horde]
+				i(164701),	-- Sinister Combatant's Leather Leggings [Alliance]
+				i(164660),	-- Sinister Combatant's Leather Leggings [Horde]
+				i(164706),	-- Sinister Combatant's Mail Leggings [Alliance]
+				i(164665),	-- Sinister Combatant's Mail Leggings [Horde]
+				i(165395),	-- Tempered Mistscale Greaves [Alliance]
+				i(165396),	-- Tempered Mistscale Greaves [Horde]
+				i(165399),	-- Tempered Tempest Leggings [Alliance]
+				i(165400),	-- Tempered Tempest Leggings [Horde]
+			}),
+			n(-330, {	-- Feet
+				i(168718),	-- Banded Cragscale Boots [Alliance]
+				i(168724),	-- Banded Cragscale Boots [Horde]
+				i(168706),	-- Banded Dredged Boots [Alliance]
+				i(168712),	-- Banded Dredged Boots [Horde]
+				i(161939),	-- Coarse Leather Treads [Alliance]
+				i(154139),	-- Coarse Leather Treads [Horde]
+				i(168716, {	-- Cragscale Boots [Alliance]
+					["g"] = {
+						i(168777),	-- Recipe: Reinforced Cragscale Boots
+					},
+				}),
+				i(168722, {	-- Cragscale Boots [Horde]
+					["g"] = {
+						i(168777),	-- Recipe: Reinforced Cragscale Boots
+					},
+				}),
+				i(168704, {	-- Dredged Leather Boots [Alliance]
+					["g"] = {
+						i(168773),	-- Recipe: Reinforced Dredged Boots
+					},
+				}),
+				i(168710, {	-- Dredged Leather Boots [Horde]
+					["g"] = {
+						i(168773),	-- Recipe: Reinforced Dredged Boots
+					},
+				}),
+				i(162481),	-- Emblazoned Mistscale Boots [Alliance]
+				i(162472),	-- Emblazoned Mistscale Boots [Horde]
+				i(162485),	-- Emblazoned Tempest Boots [Alliance]
+				i(162468),	-- Emblazoned Tempest Boots [Horde]
+				i(165404),	-- Enhanced Mistscale Boots [Alliance]
+				i(165405),	-- Enhanced Mistscale Boots [Horde]
+				i(165408),	-- Enhanced Tempest Boots [Alliance]
+				i(165409),	-- Enhanced Tempest Boots [Horde]
+				i(165412),	-- Fortified Mistscale Boots [Alliance]
+				i(165413),	-- Fortified Mistscale Boots [Horde]
+				i(165416),	-- Fortified Tempest Boots [Alliance]
+				i(165417),	-- Fortified Tempest Boots [Horde]
+				i(161946),	-- Hardened Tempest Boots [Alliance]
+				i(154154),	-- Hardened Tempest Boots [Horde]
+				i(161948),	-- Honorable Combatant's Leather Treads [Alliance]
+				i(159884),	-- Honorable Combatant's Leather Treads [Horde]
+				i(161963),	-- Honorable Combatant's Mail Treads [Alliance]
+				i(159889),	-- Honorable Combatant's Mail Treads [Horde]
+				i(162489),	-- Imbued Mistscale Boots [Alliance]
+				i(162471),	-- Imbued Mistscale Boots [Horde]
+				i(162493),	-- Imbued Tempest Boots [Alliance]
+				i(162467),	-- Imbued Tempest Boots [Horde]
+				i(161961, {	-- Mistscale Boots [Alliance]
+					["g"] = {
+						i(162503),	-- Recipe: Imbued Mistscale Boots
+					},
+				}),
+				i(154156, {	-- Mistscale Boots [Horde]
+					["g"] = {
+						i(162503),	-- Recipe: Imbued Mistscale Boots
+					},
+				}),
+				i(167951),	-- Notorious Combatant's Leather Treads [Alliance]
+				i(167950),	-- Notorious Combatant's Leather Treads [Horde]
+				i(167961),	-- Notorious Combatant's Mail Treads [Alliance]
+				i(167960),	-- Notorious Combatant's Mail Treads [Horde]
+				i(168717, {	-- Reinforced Cragscale Boots [Alliance]
+					["g"] = {
+						i(168778),	-- Recipe: Banded Cragscale Boots
+					},
+				}),
+				i(168723, {	-- Reinforced Cragscale Boots [Horde]
+					["g"] = {
+						i(168778),	-- Recipe: Banded Cragscale Boots
+					},
+				}),
+				i(168705, {	-- Reinforced Dredged Boots [Alliance]
+					["g"] = {
+						i(168774),	-- Recipe: Banded Dredge Boots
+					},
+				}),
+				i(168711, {	-- Reinforced Dredged Boots [Horde]
+					["g"] = {
+						i(168774),	-- Recipe: Banded Dredge Boots
+					},
+				}),
+				i(161954),	-- Shimmerscale Treads [Alliance]
+				i(154147),	-- Shimmerscale Treads [Horde]
+				i(164699),	-- Sinister Combatant's Leather Treads [Alliance]
+				i(164658),	-- Sinister Combatant's Leather Treads [Horde]
+				i(164704),	-- Sinister Combatant's Mail Treads [Alliance]
+				i(164663),	-- Sinister Combatant's Mail Treads [Horde]
+				i(165420),	-- Tempered Mistscale Boots [Alliance]
+				i(165421),	-- Tempered Mistscale Boots [Horde]
+				i(165424),	-- Tempered Tempest Boots [Alliance]
+				i(165425),	-- Tempered Tempest Boots [Horde]
+			}),
 		}),
 		
 	}),

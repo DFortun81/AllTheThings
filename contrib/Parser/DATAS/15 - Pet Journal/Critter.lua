@@ -6,6 +6,7 @@ _.PetJournal =
 	pa(236, { 	-- Critter
 		p(487),		-- Alpine Chipmunk
 		p(441),		-- Alpine Hare
+		p(2697),	-- Amethyst Softshell
 		p(641),		-- Arctic Hare
 		p(272),		-- Armadillo Pup
 		p(1738),	-- Auburn Ringtail
@@ -15,7 +16,9 @@ _.PetJournal =
 		p(406),		-- Beetle
 		p(374),		-- Black Lamb
 		p(398),		-- Black Rat
+		p(2657),	-- Blackchasm Crawler
 		p(1915),	-- Blind Rat
+		p(2476),	-- Bloated Bloodfeaster
 		p(2414),	-- Bloodfeaster Larva
 		p(2476),	-- Bloodfeaster Larva (Alchemy version)
 		p(639),		-- Borean Marmot
@@ -28,6 +31,7 @@ _.PetJournal =
 		p(468),		-- Creepy Crawly
 		p(1752),	-- Crispin
 		p(556),		-- Crystal Beetle
+		p(2699),	-- Damplight Slug
 		p(1061),	-- Darkmoon Hatchling
 		p(848),		-- Darkmoon Rabbit
 		p(755),		-- Death's Head Cockroach
@@ -38,13 +42,14 @@ _.PetJournal =
 		un(20, p(158)),		-- Egbert
 		p(479),		-- Elfin Rabbit
 		p(209),		-- Elwynn Lamb
+		p(2664),	-- Experimental Roach
 		p(447),		-- Fawn
 		p(2113), 	-- Felclaw Marsuul
 		p(415),		-- Fire Beetle
 		p(541),		-- Fire-Proof Roach
+		p(644),		-- Fjord Rat
 		p(2407),	-- Frenzied Cottontail
 		p(1427),	-- Frostfur Rat
-		p(644),		-- Fjord Rat
 		p(477),		-- Gazelle Fawn
 		p(193),		-- Giant Sewer Rat
 		p(2383),	-- Giant Woodworm
@@ -63,6 +68,7 @@ _.PetJournal =
 		p(823),		-- Highlands Skunk
 		p(1040),	-- Imperial Silkworm
 		p(442),		-- Irradiated Roach
+		p(2663),	-- Junkheap Roach
 		p(429),		-- Lava Beetle
 		p(203),		-- Little Fawn
 		p(2471),	-- Littlehoof
@@ -76,10 +82,12 @@ _.PetJournal =
 		p(710),		-- Marsh Fiddler
 		p(570),		-- Masked Tanuki
 		p(703),		-- Masked Tanuki Pup
+		p(2670),	-- Mechagon Marmot
 		p(391),		-- Mountain Cottontail
 		p(633),		-- Mountain Skunk
 		p(385),		-- Mouse
 		un(20, p(126)),		-- Mr. Wiggles
+		p(2660),	-- Muck Slug
 		p(1776),	-- Mudshell Conch
 		p(210),		-- Mulgore Hatchling
 		p(2554),	-- Needleback Pup
@@ -95,6 +103,7 @@ _.PetJournal =
 		p(381),		-- Porcupette
 		p(386),		-- Prairie Dog
 		p(727),		-- Prairie Mouse
+		p(2698),	-- Prismatic Softshell
 		p(1543),	-- Pygmy Cow
 		p(2133),	-- Pygmy Marsuul
 		p(378),		-- Rabbit
@@ -121,6 +130,7 @@ _.PetJournal =
 		p(2063),	-- Sneaky Marmot
 		p(640),		-- Snowshoe Hare
 		p(72),		-- Snowshoe Rabbit
+		p(2653),	-- Spireshell Snail
 		p(200),		-- Spring Rabbit
 		p(379),		-- Squirrel
 		p(492),		-- Stinkbug
@@ -134,6 +144,7 @@ _.PetJournal =
 		p(729),		-- Tolai Hare
 		p(730),		-- Tolai Hare Pup
 		p(2004),	-- Trashy
+		p(2659),	-- Trench Slug
 		p(2057),	-- Tricorne
 		p(469),		-- Twilight Beetle
 		p(55),		-- Undercity Cockroach
@@ -142,6 +153,7 @@ _.PetJournal =
 		un(20, p(127)),		-- Whiskers the Rat
 		p(118),		-- Winter Reindeer
 		p(153),		-- Wolpertinger
+		p(2700),	-- Wriggler
 		p(740),		-- Yakrat
 		p(549),		-- Yellow-Bellied Marmot
 		un(6, p(94)),	-- Zergling

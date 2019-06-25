@@ -8,6 +8,7 @@ _.Achievements =
 		["groups"] = {
 			n(-10052, {	-- Battle for Azeroth
 				["groups"] = {
+					ach(13711),	-- A Fistful of Manapearls
 					ach(13036, {	-- A Loa of a Tale
 						crit(1),		-- Tales of de Loa: Akunda
 						crit(2),		-- Tales of de Loa: Bwonsamdi
@@ -219,12 +220,63 @@ _.Achievements =
 						crit(22),		-- Bramblewing
 						crit(23),		-- Tambano
 					}),
+					ach(13762, {	-- Aqua Team Murder Force (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							ach(13759, {	-- Battle-Scarred: Bladesman Inowari
+								ach(13754, {	-- Veteran: Bladesman Inowari
+									ach(13744),	-- Seasoned: Bladesman Inowari
+								}),
+							}),
+							ach(13760, {	-- Battle-Scarred: Farseer Ori
+								ach(13755, {	-- Veteran: Farseer Ori
+									ach(13745),	-- Seasoned: Farseer Ori
+								}),
+							}),
+							ach(13758, {	-- Battle-Scarred: Hunter Akana
+								ach(13753, {	-- Veteran: Hunter Akana
+									ach(13743),	-- Seasoned: Hunter Akana
+								}),
+							}),
+						},
+					}),
+					ach(13761, {	-- Aqua Team Murder Force (H)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							ach(13750, {	-- Battle-Scarred: Neri Sharpfin
+								ach(13749, {	-- Veteran: Neri Sharpfin
+									ach(13746),	-- Seasoned: Neri Sharpfin
+								}),
+							}),
+							ach(13756, {	-- Battle-Scarred: Poen Gillbrack
+								ach(13751, {	-- Veteran: Poen Gillbrack
+									ach(13747),	-- Seasoned: Poen Gillbrack
+								}),
+							}),
+							ach(13757, {	-- Battle-Scarred: Vim Brineheart
+								ach(13752, {	-- Veteran: Vim Brineheart
+									ach(13748),	-- Seasoned: Vim Brineheart
+								}),
+							}),
+						},
+					}),
+					ach(13763, {	-- Back to the Depths
+						crit(1),	-- Summons from the Depths completed.
+					}),
 					ach(12989, {	-- Battle for Azeroth Pathfinder, Part One
 						crit(1),		-- Battle for Azeroth Explorer
 						crit(2),		-- Azerothian Diplomat
 						crit(3),		-- Wide World of Quests
 						crit(4),		-- Kul Tourist | Zandalar Forever!
 						crit(5),		-- Ready for War
+					}),
+					ach(13250, {	-- Battle for Azeroth Pathfinder, Part Two
+						i(169162),	-- Wonderwing 2.0
+						crit(1),	-- Rustbolt Resistance Revered
+						crit(2),	-- Unshackled Revered
+						crit(3),	-- Battle for Azeroth Pathfinder, Part One
+						crit(4),	-- Explore Nazjatar
+						crit(5),	-- Explore Mechagon
 					}),
 					ach(13083),		-- Better, Faster, Stronger
 					ach(13024, {	-- Carved in Stone, Written in Blood
@@ -249,6 +301,13 @@ _.Achievements =
 						crit(12),		-- Sharks
 						crit(13),		-- Crabs
 						]]--
+					}),
+					ach(13473, {	-- Diversed Investments
+						crit(1),	-- Flame Turret
+						crit(2),	-- Drill Rig
+						crit(3),	-- Charging Station
+						crit(4),	-- Rustbolt Armory
+						crit(5),	-- Reclamation Rig
 					}),
 					ach(13064, {	-- Drust the Facts, Ma'am
 						crit(1),		-- Drust Stele: The Circle
@@ -307,6 +366,34 @@ _.Achievements =
 						crit(8),		-- Zal'amak
 						crit(9),		-- The Frogmarsh
 					}),
+					ach(13712, {	-- Explore Nazjatar
+						crit(1),	-- Ashen Strand
+						crit(2),	-- Azsh'ari Terrace
+						crit(3),	-- Coral Forest
+						crit(4),	-- Deepcoil Tunnels
+						crit(5),	-- Dragon's Teeth Basin
+						crit(6),	-- The Drowned Market
+						crit(7),	-- Elun'alor Temple
+						crit(8),	-- The Empress's Approach
+						crit(9),	-- Gate of the Queen
+						crit(10),	-- The Hanging Reef
+						crit(11),	-- Kal'methir
+						crit(12),	-- Shirakess Repository
+						crit(13),	-- Spears of Azshara
+						crit(14),	-- Zanj'ir Terrace
+						crit(15),	-- Zanj'ir Wash
+						crit(16),	-- Zin-Azshari
+					}),
+					ach(13776, {	-- Explore Mechagon
+						crit(1),	-- Rustbolt
+						crit(2),	-- Sparkweaver Point
+						crit(3),	-- Junkwatt Depot
+						crit(4),	-- The Heaps
+						crit(5),	-- Scrapbone Den
+						crit(6),	-- Western Spray
+						crit(7),	-- The Outflow
+						crit(8),	-- The Fleeting Forrest
+					}),
 					ach(12558, {	-- Explore Stormsong Valley
 						crit(1),		-- Brennadam
 						crit(2),		-- Briarback Kraul
@@ -360,6 +447,7 @@ _.Achievements =
 						crit(11),		-- Xibala
 						crit(12),		-- Zeb'ahari
 					}),
+					ach(13836),	-- Feline Figurines Found
 					ach(12482, {	-- Get Hek'd
 						crit(1),		-- Golden Ravasaur Egg
 						crit(2),		-- Vilescale Pearl
@@ -374,7 +462,162 @@ _.Achievements =
 						crit(11),		-- Taking the Loa Road
 						crit(12),		-- Saurid Surprise
 					}),
+					ach(13692, {	-- Give Me the Biggest Bag You've Got
+						crit(1),	-- Spawn of Nalaada
+						crit(2),	-- Glittering Diamondshell
+						crit(3),	-- Sandclaw Nestseeker
+						crit(4),	-- Daggertooth Frenzy
+						crit(5),	-- Skittering Eel
+						crit(6),	-- Pearlescent Glimmershell
+						crit(7),	-- Scalebrood Hydra
+						crit(8),	-- Caverndark Nightmare
+						crit(9),	-- Chitterspine Needler
+						crit(10),	-- Wriggler
+						crit(11),	-- Amethyst Softshell
+						crit(12),	-- Stormwrath
+						crit(13),	-- Brinestone Algan
+						crit(14),	-- Coral Lashling
+						crit(15),	-- Budding Algan
+						crit(16),	-- Sandkeep
+						crit(17),	-- Seafury
+						crit(18),	-- Necrofin Tadpole
+						crit(19),	-- Murgle
+						crit(20),	-- Underlight Sealamp
+						crit(21),	-- Encrusted Coin
+						crit(22),	-- Flopping Fish
+						crit(23),	-- Seastorm Totem
+						crit(24),	-- Zanj'ir Weapon Rack
+						crit(25),	-- Eternal Palace Dining Set
+						crit(26),	-- Shirakess Warning Sign
+						crit(27),	-- Voidcaster's Supply Bag
+						crit(28),	-- Storm Totem
+						crit(29),	-- Sea Totem
+						crit(30),	-- Mudwrap
+						crit(31),	-- Skeletal Hand
+						crit(32),	-- Mardivas' Bag of Containing
+						crit(33),	-- Blind Eye
+						crit(34),	-- Barnacled Bag of Goods
+						crit(35),	-- Shadescale
+						crit(36),	-- Abyss Pearl
+						crit(37),	-- Intact Naga Skeleton
+						crit(38),	-- Ancient Reefwalker Bark
+						crit(39),	-- Reefwalker Bark
+						crit(40),	-- Voltscale Shield
+						crit(41),	-- Tidal Guard
+						crit(42),	-- Razorshell
+						crit(43),	-- Snapdragon Scent Gland
+						crit(44),	-- Alpha Fin
+						crit(45),	-- Exposed Fish
+						crit(46),	-- Fathom Ray Wing
+						crit(47),	-- Muck Slime
+						crit(48),	-- Brightspine Shell
+						crit(49),	-- Giant Crab leg
+						crit(50),	-- Fermented Deviate Fish
+						crit(51),	-- Eel Filet
+					}),
+					ach(13482, {	-- Head Financier of Mechagon
+						ach(13472),	-- Deep Pockets
+					}),
 					ach(13028),		-- Hoppin' Sad
+					ach(13691, {	-- I Thought You Said They'd Be Rare?
+						crit(1),	-- Alga the Eyeless
+						crit(2),	-- Allseer Oma'kil
+						crit(3),	-- Amethyst Spireshell
+						crit(4),	-- Anemonar
+						crit(5),	-- Banescale the Packfather
+						crit(6),	-- Blindlight
+						crit(7),	-- Caverndark Terror
+						crit(8),	-- Chasm-Haunter
+						crit(9),	-- Daggertooth Terror
+						crit(10),	-- Deepglider
+						crit(11),	-- Elder Unu
+						crit(12),	-- Elderspawn Nalaada
+						crit(13),	-- Garnetscale
+						crit(14),	-- Iridescent Glimmershell
+						crit(15),	-- Kelpwillow
+						crit(16),	-- King Gakula
+						crit(17),	-- Mirecrawler
+						crit(18),	-- Needlespine
+						crit(19),	-- Oronu
+						crit(20),	-- Prince Typhonus
+						crit(21),	-- Prince Vortran
+						crit(22),	-- Rockweed Shambler
+						crit(23),	-- Sandcastle
+						crit(24),	-- Sandclaw Stoneshell
+						crit(25),	-- Scale Matriarch Gratinax
+						crit(26),	-- Scale Matriarch Vynara
+						crit(27),	-- Scale Matriarch Zodia
+						crit(28),	-- Shassera
+						crit(29),	-- Shiz'narasz the Consumer
+						crit(30),	-- Siltstalker the Packmother
+						crit(31),	-- Soundless
+						crit(32),	-- Tidelord Aquatus
+						crit(33),	-- Tidelord Dispersius
+						crit(34),	-- Tidemistress Leth'sindra
+						crit(35),	-- Toxigore the Alpha
+						crit(36),	-- Urduu
+						crit(37),	-- Voice in the Deeps
+					}),
+					ach(13479, {	-- Junkyard Architect
+						ach(13478),	-- Junkyard Collector
+						crit(1),	-- Scrap Grenade
+						crit(2),	-- Scrap Trap
+						crit(3),	-- Hundred-Fathom Lure
+						crit(4),	-- Mechanocat Laser Pointer
+						crit(5),	-- Canned Minnows
+						crit(6),	-- Vaultbot Key
+						crit(7),	-- Emergency Repair Kit
+						crit(7),	-- Emergency Powerpack
+						crit(8),	-- Mechano-Treat
+						crit(10),	-- Ultrasafe Transporter: Mechagon
+						crit(11),	-- G99.99 Landshark
+						crit(12),	-- Rustbolt Gramophone
+						crit(13),	-- Rustbolt Kegerator
+						crit(14),	-- Beastbot Powerpack
+						crit(15),	-- BAWLD-371
+						crit(16),	-- Protocol Transference Device
+						crit(17),	-- Emergency Rocket Chicken
+						crit(18),	-- Battle Box
+						crit(19),	-- Rustbolt Resistance Insignia
+						crit(20),	-- Rustbolt Requisitions
+						crit(21),	-- Scrapmaster's Blowtorch
+						crit(22),	-- Experimental Adventurer's Augment
+						crit(23),	-- Advanced Adventurer Augment
+						crit(24),	-- Extraordinary Adventurer Augment
+						crit(25),	-- Holographic Digitalization Relay
+						crit(26),	-- Personal Time Displayer
+						crit(27),	-- Orange Spraybot
+						crit(28),	-- Green Spraybot
+						crit(29),	-- Blue Spraybot
+						crit(30),	-- Utility Mechanoclaw
+						crit(31),	-- Microbot XD
+						crit(32),	-- Vision of Perfection Rank 2
+						crit(33),	-- Anti-Gravity Pack
+						crit(34),	-- Rustbolt Pocket Turrent
+						crit(35),	-- Annoy-o-Tron Gang
+						crit(36),	-- Encrypted Black Market Radio
+						crit(37),	-- Re-Procedurally Generated Punchcard
+						crit(38),	-- S.P.A.R.E. Create
+					}),
+					ach(13474),		-- Junkyard Machinist
+					ach(13686, {	-- Junkyard Melomaniac
+						crit(1),	-- Ode to Tinkertown
+						crit(2),	-- Gnomeregan Forever
+						crit(3),	-- Mimiron's Brainstorm
+						crit(4),	-- Battle of Gnomeregan
+						crit(5),	-- Depths of Ulduar
+						crit(6),	-- Triumph of Gnomeregan
+					}),
+					ach(13476, {	-- Junkyard Tinkerer
+						ach(13477, {	-- Junkyard Apprentice
+							ach(13475),	-- Junkyard Scavenger
+						}),
+					}),
+					ach(13555, {	-- Junkyard Tinkmaster
+						title(403),	-- Junkyard
+						crit(1),	-- Junkyard Tinkerer
+						crit(2),	-- Head Financier of Mechagon
+					}),
 					ach(13058),		-- Kul Tiran Up the Dance Floor
 					ach(13051, {	-- Legends of the Tidesages
 						crit(1),		-- Legends of the Tidesages - Part 1
@@ -386,11 +629,154 @@ _.Achievements =
 						crit(7),		-- Legends of the Tidesages - Part 7
 						crit(8),		-- Legends of the Tidesages - Part 8
 					}),
+					ach(13541, {	-- Mecha-Done
+						i(168329),	-- Keys to the Model W
+						crit(1),	-- The Mechagonian Threat
+						crit(2),	-- Rest in Pisons
+						crit(3),	-- Outside Influences
+						crit(4),	-- Junkyard Architect
+						crit(5),	-- Junkyard Apprentice
+						crit(6),	-- Junkyard Machinist
+						crit(7),	-- Available in Eight Colors
+						crit(8),	-- Junkyard Melomanic
+						crit(9),	-- Making the Mount
+						crit(10),	-- Armed for Action
+					}),
+					ach(13707),		-- Mrrl's Secret Stash
 					ach(13027, {	-- Mushroom Harvest
 						crit(1),		-- Skullcap killed
 						crit(2),		-- Bane of the Woods killed
 						crit(3),		-- Portakillo killed
 						crit(4),		-- Toadcruel killed
+					}),
+					ach(13704, 13645),	-- Nautical Battlefield Training
+					ach(13690, {	-- Nazjatarget Eliminated
+						crit(1),	-- Szun, Breaker of Slaves
+						crit(2),	-- Frozen Winds of Zhiela
+						crit(3),	-- Zoko, Her Iron Defender
+						crit(4),	-- Tempest-Speaker Shalan'ali
+						crit(5),	-- Starseeker of the Shirakess
+						crit(6),	-- Azanz, the Slighterblade
+						crit(7),	-- Undana, Chilling Assassin
+						crit(8),	-- Kassar, Wielder of Dark Blades
+						crit(9),	-- The Zanj'ir Brutalizer
+						crit(10),	-- Champion Aldrantiss, Defender of her Kingdom
+						crit(11),	-- Champion Alzana, Arrow of Thunder
+						crit(12),	-- Champion Eldanar, Shield of Her Glory
+						crit(13),	-- Champion Kyx'zhul the Deepspeaker
+						crit(14),	-- Champion Qalina, Spear of Ice
+						crit(15),	-- Champion Vyz'olgo the Mind-Taker
+					}),
+					ach(13713),		-- Nothing to Scry About
+					ach(13556, {	-- Outside Influences
+						crit(1),	-- Aid from Nordrassil
+						crit(2),	-- One Gnome's Trash
+						crit(3),	-- Clues Abound
+						crit(4),	-- A Historical Mess
+						crit(5),	-- A Growing Mystery
+						crit(6),	-- Time for Heroics
+						crit(7),	-- Strange Discovery
+						crit(8),	-- Deck 'Em
+						crit(9),	-- Bugs, Lots of 'Em!
+						crit(10),	-- Pirates? I hate Those Guys!
+						crit(11),	-- Rico's Rescue
+						crit(12),	-- The Other Place
+						crit(13),	-- The Final Act
+						crit(14),	-- Abduction Reduction
+						crit(15),	-- Aim High
+						crit(16),	-- Pirates, Sea Monsters, Robots
+						crit(17),	-- Go For The Gold
+						crit(18),	-- The Family jewels
+						crit(19),	-- Adapt, Improve, Overcome!
+						crit(20),	-- Toys for Destruction
+						crit(21),	-- Playtime's Over
+						crit(22),	-- Battle Tested
+						crit(23),	-- Be Kind, Rewind
+						crit(24),	-- My Chicken are Not For Eating!
+						crit(25),	-- Off-the-Books Brawlin'
+						crit(26),	-- Discs of Norgannon
+						crit(27),	-- Toys Like Us
+						crit(28),	-- Waste Not
+						crit(29),	-- Taking The Air Out
+						crit(30),	-- Unprofitable Ventures
+						crit(31),	-- A Direct Approach
+						crit(32),	-- Cogfrenzy's Construction Frenzy
+					}),
+					ach(13699, {	-- Periodic Destruction
+						crit(1),	-- Arcane Amalgamation
+						crit(2),	-- Watery Amalgamation
+						crit(3),	-- Burning Amalgamation
+						crit(4),	-- Dusty Amalgamation
+						crit(5),	-- Zomera
+						crit(6),	-- Omus
+						crit(7),	-- Osgen
+						crit(8),	-- Moghiea
+						crit(9),	-- Xue
+						crit(10),	-- Ungormath
+						crit(11),	-- Spawn of Salgos
+						crit(12),	-- Herald of Salgos
+						crit(13),	-- Salgos the Eternal
+					}),
+					ach(13764, {	-- Puzzle Performer
+						crit(1),	-- Easy Leylocked Chest
+						crit(2),	-- Medium Leylocked Chest
+						crit(3),	-- Hard Leylocked Chest
+						crit(4),	-- Hard Runelocked Chest: Yellow
+						crit(5),	-- Hard Runelocked Chest: Red
+						crit(6),	-- Hard Runelocked Chest: Purple
+						crit(7),	-- Hard Runelocked Chest: Orange
+						crit(8),	-- Hard Runelocked Chest: Green
+						crit(9),	-- Hard Runelocked Chest: Blue
+						crit(10),	-- Medium Runelocked Chest: Yellow
+						crit(11),	-- Medium Runelocked Chest: Red
+						crit(12),	-- Medium Runelocked Chest: Purple
+						crit(13),	-- Medium Runelocked Chest: Orange
+						crit(14),	-- Medium Runelocked Chest: Green
+						crit(15),	-- Medium Runelocked Chest: Blue
+						crit(16),	-- Medium Runelocked Chest: Blue
+						crit(17),	-- Medium Runelocked Chest: Purple
+						crit(18),	-- Medium Runelocked Chest: Yellow
+						crit(19),	-- Medium Runelocked Chest: Red
+						crit(20),	-- Medium Runelocked Chest: Orange
+						crit(21),	-- Medium Runelocked Chest: Green
+					}),
+					ach(13470, {	-- Rest In Pistons
+						crit(1),	-- Mechagnoian Nullfier
+						crit(2),	-- The Scrap King
+						crit(3),	-- Mecharantuala
+						crit(4),	-- Jawbreaker
+						crit(5),	-- Paol Pondwader
+						crit(6),	-- Rumblerocks
+						crit(7),	-- Arachnoid Harvester
+						crit(8),	-- Killsaw
+						crit(9),	-- Fungarian Furor
+						crit(10),	-- Foul Manifestations
+						crit(11),	-- Deepwater Maw
+						crit(12),	-- OOX-Avenger/MG
+						crit(13),	-- Bonepicker
+						crit(14),	-- Boggac Skullbash
+						crit(15),	-- Uncle T'Rogg
+						crit(16),	-- Seaspit
+						crit(17),	-- Sparkqueen P'Emp
+						crit(18),	-- Rustfeather
+						crit(19),	-- Malfunctioning Beasetbot
+						crit(20),	-- Crazed Trogg
+						crit(21),	-- Earthbreaker Gulroc
+						crit(22),	-- Ol' Big Tusk
+						crit(23),	-- Gemicide
+						crit(24),	-- Oxidized Leachbeast
+						crit(25),	-- Boilburn
+						crit(26),	-- The Kleptoboss
+						crit(27),	-- Steel Singer Freza
+						crit(28),	-- Gear Checker Cogstar
+						crit(29),	-- Mr. Fixthis
+						crit(30),	-- Vaultbot
+						crit(31),	-- Enforcer KX-T57
+						crit(32),	-- The Rusty Prince
+						crit(33),	-- Gorged Gear-Cruncher
+						crit(34),	-- Caustic Mechaslime
+						crit(35),	-- The Doppel Gang
+						crit(36),	-- Scrapclaw
 					}),
 					ach(13087, {	-- Sausage Sampler
 						crit(1),		-- Fried Boar Sausage
@@ -424,6 +810,12 @@ _.Achievements =
 						crit(5),		-- Shanty of the Black Sphere
 						crit(6),		-- Shanty of the Horse
 					}),
+					ach(13696, {	-- Scrappy's Best Friend
+						crit(1),	-- Revive Scrappy
+						crit(2),	-- Feed Scrappy
+					}),
+					ach(13765),	-- Subaquatic Support
+					ach(13722),	-- Terror of the Tadpoles
 					{	-- Three Sheets to the Wind [22 items]
 						["achievementID"] = 13061,	-- Three Sheets to the Wind
 						["g"] = {
@@ -1140,6 +1532,15 @@ _.Achievements =
 							},
 						},
 					},
+					ach(13635, {	-- Tour of the Depths
+						crit(1),	-- Complete an Emissary for your ally in Nazjatar
+						crit(2),	-- Defeat one of the World Bosses of Nazjatar
+						crit(3),	-- Learn about the Scrying Stones of Nazjatar
+						crit(4),	-- Defeat one of Azshara's Champions
+						crit(5),	-- Level a Nazjatar Ally to Level 5
+						crit(6),	-- Defeat one of Mardivas's Laboratory Creations
+						crit(7),	-- Find and Assist Mrrl
+					}),
 					ach(12995, {	-- Treasures of Drustvar
 						crit(1),		-- Web-Covered Chest
 						crit(2),		-- Merchant's Chest
@@ -1211,6 +1612,31 @@ _.Achievements =
 						crit(8),		-- The Exile's Lament
 						crit(9),		-- Cache of Secrets
 						crit(10),		-- Riches of Tor'nowa
+					}),
+					ach(13549, {	-- Trove Tracker
+						crit(1),	-- 20 Arcane Chests
+						crit(2),	-- 7 Glowing Arcane Trunks
+					}),
+					ach(13638, {	-- Undersea Usurper
+						i(169194),	-- Snapback Scuttler
+						title(405),	-- of the Deeps
+						crit(1),	-- Tour of the Depths
+						crit(2),	-- Nazjatarget Elminated
+						crit(3),	-- I Thought You Said They'd Be Rare?
+						crit(4),	-- Give Me the Biggest Bag You've Got
+						crit(5),	-- Aqua Team Murder Force
+						crit(6),	-- Trove Tracker
+						crit(7),	-- A Fistful of Manapearls
+						crit(8),	-- Terror of the Tadpoles
+						crit(9),	-- Periodic Destruction
+						crit(10),	-- Nothing to Scry About
+						crit(11),	-- Mrrl's Secret Stash
+						crit(12),	-- Back to the Depths!
+						crit(13),	-- Puzzle Performer
+						crit(14),	-- Explore Nazjatar
+						crit(15),	-- The Unshackled
+						crit(16),	-- Subaquatic Support
+						crit(17),	-- Unfathomable
 					}),
 				},
 			}),

@@ -30,6 +30,22 @@ _.Achievements =
 						ach(9672), 		-- Tons of Toys (100)
 						ach(9671), 		-- Having a Ball (50)
 						ach(9670), 		-- Toying Around (25)
+						ach(13708, {	-- Most Minis Wins
+							crit(1),	-- Izira Gearsworn
+							crit(2),	-- Wrenchbot
+							crit(3),	-- Gazlowe
+							crit(4),	-- Overspark
+							crit(5),	-- Prince Erazmin
+							crit(6),	-- Bondo Bigblock
+							crit(7),	-- Cork Stuttguard
+							crit(8),	-- Roadtrogg
+							crit(9),	-- Naeno Megacrash
+							crit(10),	-- Cogstar
+							crit(11),	-- HK-8
+							crit(12),	-- Blastatron
+							crit(13),	-- King Mechagon
+							crit(14),	-- Sapphronetta
+						}),
 					}),
 				},
 			}),

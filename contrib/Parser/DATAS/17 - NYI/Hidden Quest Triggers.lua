@@ -68,5 +68,44 @@ _.NeverImplemented =
 		q(32746),	-- Zandalari Council Dead (killed Council of Elders on heroic in ToT)
 		q(35588),	-- Zul'Farrak: end-of-dungeon reward granted
 		q(35589),	-- Zul'Farrak: bonus objective completed
+		
+		-- Nazjatar
+		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
+		q(56881),	-- Triggered upon first entry into Nazjatar
+		q(57040),	-- Triggers when you select Vim Brineheart as your friend for the day
+		q(57041),	-- Triggers when you select Farseer Ori (alliance)/Neri Sharpfin (horde) as your friend for the day
+		q(57042),	-- Triggers when you select Poen Gillbrack as your friend for the day
+		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more
+		q(55404),	-- Triggered when interacting with the "Deepflame Campfire" in Mezzamere as alliance, but without picking a follower
+		q(56212),	-- Triggered when opening the first glimmering chest during "Scrying Stones"
+		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
+		q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
+		q(56661),	-- Triggered when walking into the "Void Chamber" cave
+		q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
+		q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
+		q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)
+		q(55999),	-- Triggers after completing the Glowing Arcane Trunk minigame in Zanj'ir Terrace (37.2, 19.1)
+		q(55996),	-- Triggers after completing the Glowing Arcane Trunk minigame in Azsh'ari Terrace (64.1, 28.5)
+		q(55998),	-- Triggers after completing the Glowing Arcane Trunk minigame in Shirakess Repository (55.8, 14.1)
+		q(56359),	-- Triggers after completing the Glowing Arcane Trunk minigame in Coldlight Cavern (61.4, 22.8)
+		q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
+		q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
+		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
+		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
+		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
+		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
+		
+		-- Mechagon
+		q(55547),	-- Mechanized Chest. Chests spawn randomly
+		q(55548),	-- Mechanized Chest. Chests spawn randomly
+		q(55549),	-- Mechanized Chest. Chests spawn randomly
+		q(55550),	-- Mechanized Chest. Chests spawn randomly
+		q(55551),	-- Mechanized Chest. Chests spawn randomly
+		q(55552),	-- Mechanized Chest. Chests spawn randomly
+		q(55553),	-- Mechanized Chest. Chests spawn randomly
+		q(55554),	-- Mechanized Chest. Chests spawn randomly
+		q(55555),	-- Mechanized Chest. Chests spawn randomly
+		q(55556),	-- Mechanized Chest. Chests spawn randomly
 	}),
 };

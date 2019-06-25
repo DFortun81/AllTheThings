@@ -59,11 +59,11 @@ profession(164, {	-- Blacksmithing
 				},
 				{
 					["name"] = "Hard Leystone Bar",
-					["recipeID"] = 184309
+					["recipeID"] = 184182
 				},
 				{
 					["name"] = "Hard Leystone Bar",
-					["recipeID"] = 184182
+					["recipeID"] = 184309
 				},
 				{
 					["name"] = "Hard Leystone Ingots",
@@ -131,15 +131,15 @@ profession(164, {	-- Blacksmithing
 				},
 				{
 					["name"] = "Leystone Slag",
+					["recipeID"] = 183278
+				},
+				{
+					["name"] = "Leystone Slag",
 					["recipeID"] = 184181
 				},
 				{
 					["name"] = "Leystone Slag",
 					["recipeID"] = 184308
-				},
-				{
-					["name"] = "Leystone Slag",
-					["recipeID"] = 183278
 				},
 				{
 					["name"] = "Leystone Soleplate",
@@ -188,13 +188,21 @@ profession(164, {	-- Blacksmithing
 			}
 		},
 		{
-			["name"] = "Zandalari Plans",
+			["name"] = "Kul Tiran Plans",
 			["categoryID"] = 542,
 			["g"] = {
 				{
 					["name"] = "Armor",
 					["categoryID"] = 547,
 					["g"] = {
+						{
+							["name"] = "Banded Osmenite Girdle",
+							["recipeID"] = 299003
+						},
+						{
+							["name"] = "Banded Osmenite Legguards",
+							["recipeID"] = 299000
+						},
 						{
 							["name"] = "Emblazoned Stormsteel Girdle",
 							["recipeID"] = 253192
@@ -358,6 +366,118 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Monel-Hardened Waistguard",
 							["recipeID"] = 253180
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Armguards",
+							["nextRecipeID"] = 294764,
+							["recipeID"] = 294763
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Armguards",
+							["nextRecipeID"] = 294765,
+							["previousRecipeID"] = 294763,
+							["recipeID"] = 294764
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Armguards",
+							["previousRecipeID"] = 294764,
+							["recipeID"] = 294765
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Boots",
+							["nextRecipeID"] = 294749,
+							["recipeID"] = 294748
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Boots",
+							["nextRecipeID"] = 294750,
+							["previousRecipeID"] = 294748,
+							["recipeID"] = 294749
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Boots",
+							["previousRecipeID"] = 294749,
+							["recipeID"] = 294750
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 294752,
+							["recipeID"] = 294751
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 294753,
+							["previousRecipeID"] = 294751,
+							["recipeID"] = 294752
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Gauntlets",
+							["previousRecipeID"] = 294752,
+							["recipeID"] = 294753
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Greaves",
+							["nextRecipeID"] = 294755,
+							["recipeID"] = 294754
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Greaves",
+							["nextRecipeID"] = 294756,
+							["previousRecipeID"] = 294754,
+							["recipeID"] = 294755
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Greaves",
+							["previousRecipeID"] = 294755,
+							["recipeID"] = 294756
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Waistguard",
+							["nextRecipeID"] = 294761,
+							["recipeID"] = 294760
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Waistguard",
+							["nextRecipeID"] = 294762,
+							["previousRecipeID"] = 294760,
+							["recipeID"] = 294761
+						},
+						{
+							["name"] = "Notorious Combatant's Plate Waistguard",
+							["previousRecipeID"] = 294761,
+							["recipeID"] = 294762
+						},
+						{
+							["name"] = "Notorious Combatant's Shield",
+							["nextRecipeID"] = 294758,
+							["recipeID"] = 294757
+						},
+						{
+							["name"] = "Notorious Combatant's Shield",
+							["nextRecipeID"] = 294759,
+							["previousRecipeID"] = 294757,
+							["recipeID"] = 294758
+						},
+						{
+							["name"] = "Notorious Combatant's Shield",
+							["previousRecipeID"] = 294758,
+							["recipeID"] = 294759
+						},
+						{
+							["name"] = "Osmenite Girdle",
+							["recipeID"] = 299001
+						},
+						{
+							["name"] = "Osmenite Legguards",
+							["recipeID"] = 298998
+						},
+						{
+							["name"] = "Reinforced Osmenite Girdle",
+							["recipeID"] = 299002
+						},
+						{
+							["name"] = "Reinforced Osmenite Legguards",
+							["recipeID"] = 298999
 						},
 						{
 							["name"] = "Sinister Combatant's Plate Armguards",
@@ -594,6 +714,86 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 253138
 						},
 						{
+							["name"] = "Notorious Combatant's Cutlass",
+							["nextRecipeID"] = 294767,
+							["recipeID"] = 294766
+						},
+						{
+							["name"] = "Notorious Combatant's Cutlass",
+							["nextRecipeID"] = 294768,
+							["previousRecipeID"] = 294766,
+							["recipeID"] = 294767
+						},
+						{
+							["name"] = "Notorious Combatant's Cutlass",
+							["previousRecipeID"] = 294767,
+							["recipeID"] = 294768
+						},
+						{
+							["name"] = "Notorious Combatant's Deckpounder",
+							["nextRecipeID"] = 294770,
+							["recipeID"] = 294769
+						},
+						{
+							["name"] = "Notorious Combatant's Deckpounder",
+							["nextRecipeID"] = 294771,
+							["previousRecipeID"] = 294769,
+							["recipeID"] = 294770
+						},
+						{
+							["name"] = "Notorious Combatant's Deckpounder",
+							["previousRecipeID"] = 294770,
+							["recipeID"] = 294771
+						},
+						{
+							["name"] = "Notorious Combatant's Polearm",
+							["nextRecipeID"] = 294779,
+							["recipeID"] = 294778
+						},
+						{
+							["name"] = "Notorious Combatant's Polearm",
+							["nextRecipeID"] = 294780,
+							["previousRecipeID"] = 294778,
+							["recipeID"] = 294779
+						},
+						{
+							["name"] = "Notorious Combatant's Polearm",
+							["previousRecipeID"] = 294779,
+							["recipeID"] = 294780
+						},
+						{
+							["name"] = "Notorious Combatant's Shanker",
+							["nextRecipeID"] = 294776,
+							["recipeID"] = 294775
+						},
+						{
+							["name"] = "Notorious Combatant's Shanker",
+							["nextRecipeID"] = 294777,
+							["previousRecipeID"] = 294775,
+							["recipeID"] = 294776
+						},
+						{
+							["name"] = "Notorious Combatant's Shanker",
+							["previousRecipeID"] = 294776,
+							["recipeID"] = 294777
+						},
+						{
+							["name"] = "Notorious Combatant's Spellblade",
+							["nextRecipeID"] = 294773,
+							["recipeID"] = 294772
+						},
+						{
+							["name"] = "Notorious Combatant's Spellblade",
+							["nextRecipeID"] = 294774,
+							["previousRecipeID"] = 294772,
+							["recipeID"] = 294773
+						},
+						{
+							["name"] = "Notorious Combatant's Spellblade",
+							["previousRecipeID"] = 294773,
+							["recipeID"] = 294774
+						},
+						{
 							["name"] = "Sinister Combatant's Cutlass",
 							["nextRecipeID"] = 282872,
 							["recipeID"] = 282871
@@ -754,6 +954,20 @@ profession(164, {	-- Blacksmithing
 					}
 				},
 				{
+					["name"] = "Mount Equipment",
+					["categoryID"] = 1085,
+					["g"] = {
+						{
+							["name"] = "Inflatable Mount Shoes",
+							["recipeID"] = 301413
+						},
+						{
+							["name"] = "Monelite Reinforced Chassis",
+							["recipeID"] = 265937
+						}
+					}
+				},
+				{
 					["name"] = "Conversions",
 					["categoryID"] = 1239,
 					["g"] = {
@@ -782,6 +996,16 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Storm Silver Spurs",
 							["recipeID"] = 278415
+						}
+					}
+				},
+				{
+					["name"] = "Tool of the Trade",
+					["categoryID"] = 550,
+					["g"] = {
+						{
+							["name"] = "Khaz'gorian Smithing Hammer",
+							["recipeID"] = 253145
 						}
 					}
 				}
@@ -1148,10 +1372,6 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Truesteel Ingot",
 							["recipeID"] = 171690
-						},
-						{
-							["name"] = "Truesteel Ingot",
-							["recipeID"] = 171718
 						}
 					}
 				},
@@ -2598,6 +2818,10 @@ profession(164, {	-- Blacksmithing
 							["recipeID"] = 67130
 						},
 						{
+							["name"] = "Breastplate of the White Knight",
+							["recipeID"] = 67091
+						},
+						{
 							["name"] = "Brilliant Saronite Belt",
 							["recipeID"] = 59436
 						},
@@ -2791,6 +3015,10 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Saronite Swordbreakers",
+							["recipeID"] = 67092
+						},
+						{
+							["name"] = "Saronite Swordbreakers",
 							["recipeID"] = 67131
 						},
 						{
@@ -2871,11 +3099,19 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Sunforged Bracers",
+							["recipeID"] = 67096
+						},
+						{
+							["name"] = "Sunforged Bracers",
 							["recipeID"] = 67135
 						},
 						{
 							["name"] = "Sunforged Breastplate",
 							["recipeID"] = 67134
+						},
+						{
+							["name"] = "Sunforged Breastplate",
+							["recipeID"] = 67095
 						},
 						{
 							["name"] = "Tempered Saronite Belt",
@@ -2919,11 +3155,19 @@ profession(164, {	-- Blacksmithing
 						},
 						{
 							["name"] = "Titanium Razorplate",
+							["recipeID"] = 67093
+						},
+						{
+							["name"] = "Titanium Razorplate",
 							["recipeID"] = 67132
 						},
 						{
 							["name"] = "Titanium Spikeguards",
 							["recipeID"] = 67133
+						},
+						{
+							["name"] = "Titanium Spikeguards",
+							["recipeID"] = 67094
 						},
 						{
 							["name"] = "Treads of Destiny",

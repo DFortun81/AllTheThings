@@ -9,6 +9,7 @@ _.PetJournal =
 		p(57),		-- Azure Whelpling
 		p(2583),	-- Azure Windseeker
 		p(145),		-- Blue Dragonhawk Hatchling
+		p(2719),	-- Bonebiter
 		p(2071),	-- Bronze Proto-Whelp
 		p(1563),	-- Bronze Whelpling
 		p(255), 	-- Celestial Dragon
@@ -72,6 +73,7 @@ _.PetJournal =
 			["u"] = 3,	-- Blizzard Promotion
 		}),
 		p(2081), 	-- Twilight Clutch-Sister
+		p(2677),	-- Twilight Whelpling
 		p(1151),	-- Untamed Hatchling
 		p(819), 	-- Wild Crimson Hatchling
 		p(818), 	-- Wild Golden Hatchling

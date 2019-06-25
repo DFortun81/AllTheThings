@@ -205,4 +205,32 @@ i(168056, 295386);	-- Ironclad Frostclaw
 -- PATCH 8.2.0 --
 -----------------
 
+i(168830, 290718);	-- Aerial Unit R-21/X
+i(167167, 292407);	-- Ankoan Waveray
+i(167171, 292419);	-- Azshari Bloatray
+i(161666, 275838);	-- Captured Swampstalker
+i(168408, 297560);	-- Child of Torcali
+i(169202, 300153);	-- Crimson Tidestallion
+i(169200, 300147);	-- Deepcoral Snapdragon
+i(161908, 275859);	-- Dusky Waycrest Gryphon
+i(169201, 300150);	-- Fabious
+i(169203, 300151);	-- Inkscale Deepseeker
+i(168370, 297157);	-- Junkheap Drifter
+i(168329, 296788);	-- Mechacycle Model W
+i(168826, 299158);	-- Mechagon Peacekeeper
 i(156881, 262024);	-- Notorious Gladiator's Proto-Drake
+i(161879, 275868);	-- Proudmoore Sea Scout
+i(169198, 294038);	-- Royal Snapdragon
+i(168829, 299170);	-- Rustbolt Resistor
+i(168823, 291492);	-- Rusty Mechanocrawler
+i(168827, 299159);	-- Scrapforged Mechaspider
+i(169163, 300149);	-- Silent Glider
+i(169194, 294039);	-- Snapback Scuttler
+i(169199, 300146);	-- Snapdragon Kelpstalker
+i(161664, 244712);	-- Spectral Pterrorwing
+i(161909, 275866);	-- Stormsong Coastwatcher
+i(167170, 291538);	-- Unshackled Waveray
+i(161667, 275840);	-- Voldunai Dunescraper
+i(169162, 290328);	-- Wonderwing 2.0
+i(167751, 294143);	-- X-995 Mechanocat
+i(153594, 256123);	-- Xiwyllag-ATV

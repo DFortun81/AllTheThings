@@ -9,9 +9,9 @@ _.PetJournal =
 		p(1984),	-- Albino Buzzard
 		p(2555), 	-- Albino Duskwatcher
 		a(p(331)),	-- Alliance Balloon (Alliance)
-		p(2586),	-- Amberglow Stinger
 		p(732),		-- Amber Moth
 		p(1465),	-- Amberbarb Wisp
+		p(2586),	-- Amberglow Stinger
 		p(52),		-- Ancona Chicken
 		p(2126),	-- Antoran Bilescourge
 		p(1324),	-- Ashwing Moth
@@ -23,7 +23,7 @@ _.PetJournal =
 		p(1468),	-- Bloodbeak
 		p(1977),	-- Bloodgazer Hatchling
 		p(1462),	-- Bloodsting Wasp
-		p(2422),	-- Bluee Flitter
+		p(2422),	-- Blue Flitter
 		p(259),		-- Blue Mini Jouster
 		p(138),		-- Blue Moth
 		p(1458),	-- Bone Wasp
@@ -36,8 +36,8 @@ _.PetJournal =
 		p(1586),	-- Cerulean Moth
 		p(1303),	-- Chi-Chi, Hatchling of Chi-Ji
 		p(849),		-- Chi-Ji Kite
-		p(2527),	-- Child of Pa'ku
 		p(646),		-- Chicken
+		p(2527),	-- Child of Pa'ku
 		p(1914),	-- Coastal Sandpiper
 		a(p(2568)),	-- Cobalt Raven
 		p(47),		-- Cockatiel
@@ -87,6 +87,7 @@ _.PetJournal =
 		p(1573),	-- Golden Dawnfeather
 		p(1712),	-- Golden Eaglet
 		p(68),		-- Great Horned Owl
+		p(2650),	-- Great Sea Albatross
 		p(2409),	-- Greatwing Macaw
 		p(50),		-- Green Wing Macaw
 		p(464),		-- Grey Moth
@@ -135,7 +136,8 @@ _.PetJournal =
 		p(1587),	-- Royal Moth
 		p(1411),	-- Royal Peachick
 		p(271),		-- Rustberg Gull
-		p(2426),	-- Sasdstinger Wasp
+		p(2669),	-- Rustbolt Clucker
+		p(2426),	-- Sandstinger Wasp
 		p(573),		-- Sandy Petrel
 		p(1592),	-- Sapphire Firefly
 		p(560),		-- Sea Gull

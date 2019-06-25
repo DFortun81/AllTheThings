@@ -213,6 +213,7 @@ _.Zones =
 						["g"] = {
 							i(160546),	-- Tabard of the Zandalari Empire*
 							i(161665),	-- Reins of the Cobalt Pterrordax*
+							i(161664),	-- Reins of the Spectral Pterrorwing
 							i(163210),	-- Party Totem*
 							i(162625),	-- Tome of Polymorph: Direhorn
 							i(162623),	-- Tome of Hex: Zandalari Tendonripper

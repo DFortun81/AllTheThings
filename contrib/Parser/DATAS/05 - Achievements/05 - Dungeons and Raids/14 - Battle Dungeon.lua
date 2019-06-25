@@ -29,6 +29,8 @@ _.Achievements =
 						crit(1),		-- Vol'kaal defeated
 						crit(4),		-- Yazma defeated
 					}),
+					ach(13698),		-- Clean Up On Aisle Mechagon
+					ach(13545),		-- Go Ahead, Make My Daisy
 					ach(12272),		-- Gold Fever
 					ach(12508),		-- Good Night, Sweet Prince
 					ach(12723, {	-- How to Keep a Mummy
@@ -42,6 +44,7 @@ _.Achievements =
 						crit(4),		-- Fourth trinket found
 					}),
 					ach(12273),		-- It's Lit!
+					ach(13624),		-- Keep DPS-ing and Nobody Explodes
 					ach(12848),		-- Kings' Rest
 					ach(12489, {	-- Losing My Profession
 						crit(7),		-- Brutik Blackanvil
@@ -52,7 +55,8 @@ _.Achievements =
 						crit(8),		-- Liz Vilepot
 						crit(4),		-- Seamstress Johanna
 						crit(6),		-- Threshanator 3000
-					}),					
+					}),
+					ach(13723),		-- M.C., Hammered
 					ach(12826, {	-- Mythic: Atal'Dazar
 						ach(12825),		-- Heroic: Atal'Dazar
 						ach(12824),		-- Atal'Dazar
@@ -97,6 +101,7 @@ _.Achievements =
 					ach(12503),		-- Snake Eyes
 					ach(12499),		-- Sporely Alive
 					ach(12727),		-- Stand by Me
+					ach(13706),		-- Stay Positive
 					ach(12498),		-- Taint Nobody Got Time For That
 					ach(12998),		-- That Sweete Booty
 					ach(12601),		-- The Void Lies Sleeping

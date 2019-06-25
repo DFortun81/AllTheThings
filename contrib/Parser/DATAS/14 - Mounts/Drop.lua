@@ -6,6 +6,7 @@ _.Mounts =
 	n(-26, { 	-- Drop
 		i(143643),	-- Abyss Worm
 		i(152904),	-- Acid Belcher
+		i(168830),	-- Aerial Unit R-21/X
 		i(69747),	-- Amani Battle Bear
 		i(94230),	-- Amber Primordial Direhorn
 		i(152816),	-- Antoran Charhound
@@ -38,6 +39,7 @@ _.Mounts =
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(78919),	-- Experiment 12-B
+		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount
@@ -66,6 +68,7 @@ _.Mounts =
 		i(116660),	-- Ironhoof Destroyer
 		i(166467),	-- Island Thunderscale
 		i(94231),	-- Jade Primordial Direhorn
+		i(168370),	-- Junkheap Drifter
 		i(104253),	-- Kor'kron Juggernaut
 		i(152844),	-- Lambent Mana Ray
 		i(143764),	-- Leywoven Flying Carpet
@@ -74,6 +77,7 @@ _.Mounts =
 		i(138258),	-- Long-Forgotten Hippogryph
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaorunner
+		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
 		i(116661),	-- Mottled Meadowstomper
@@ -91,11 +95,14 @@ _.Mounts =
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
+		i(169198),	-- Royal Snapdragon
+		i(168823),	-- Rusty Mechanocrawler
 		i(116767),	-- Sapphire Riberbeast
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul
 		i(116663),	-- Shadowhide Pearltusk
 		i(159842),	-- Sharkbait's Favorite Crackers
+		i(169163),	-- Silent Glider
 		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn
 		i(116786),	-- Smoky Direwolf

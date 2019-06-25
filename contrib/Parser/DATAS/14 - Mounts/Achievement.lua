@@ -10,6 +10,7 @@ _.Mounts =
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
+		i(167171),	-- Azshari Bloatray
 		i(44223),	-- Black War Bear (Alliance)
 		i(44224),	-- Black War Bear (Horde)
 		i(116666),	-- Blacksteel Battleboar
@@ -49,6 +50,7 @@ _.Mounts =
 		}),
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (Alliance)
+		i(168329),	-- Mechacycle Model W
 		i(140500),	-- Mechanized Lumber Extractor
 		i(156487),	-- Nightborne Manasaber (Horde)
 		i(156881),	-- Notoroious Gladiator's Proto-Drake
@@ -73,6 +75,7 @@ _.Mounts =
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
 		un(2, i(156880)),	-- Sinister Gladiator's Proto-Drake
+		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras
 		i(156486),	-- Starcursed Voidstrider (Alliance)
@@ -105,6 +108,7 @@ _.Mounts =
 		i(70910),	-- Vicious War Wolf*
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
+		i(169162),	-- Wonderwing 2.0
 		i(157870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
 			["races"] = HORDE_ONLY,
 		}),
