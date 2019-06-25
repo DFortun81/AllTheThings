@@ -129,7 +129,7 @@ _.Zones =
 						},
 						{	-- The Yak Wash
 							["criteriaID"] = 4,
-							["sourceQuest"] = 30492,	-- The Burlap Trail
+							["sourceQuest"] = 30492,	-- Back in Yak
 						},
 						{	-- The Burlap Trail
 							["criteriaID"] = 5,
@@ -175,7 +175,7 @@ _.Zones =
 						},
 						{	-- The Yak Wash
 							["criteriaID"] = 4,
-							["sourceQuest"] = 30492,	-- The Burlap Trail
+							["sourceQuest"] = 30492,	-- Back in Yak
 						},
 						{	-- The Burlap Trail
 							["criteriaID"] = 5,
