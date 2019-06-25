@@ -1751,15 +1751,9 @@ _.NeverImplemented =
 		un(1, i(129744)),	-- Iron Warhorse
 		un(1, i(137576)),	-- Dim Coldflame Core
 		un(1, i(137615)),	-- Molten Flarecore
-		un(1, i(161664)),	-- Reins of the Armored Ebony Pterrordax (only on beta)
-		un(1, i(161666)),	-- Reins of the Armored Orange Pterrordax (only on beta)
-		un(1, i(161667)),	-- Reins of the Armored Albino Pterrordax (only on beta)
 		un(1, i(166436)),	-- Sandy Nightsaber (only on ptr)
 		un(1, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(1, i(163188)),	-- Surf Jelly (testing version)
-		un(1, i(161879)),	-- Reins of the Proudmoore Sea Scout
-		un(1, i(161908)),	-- Reins of the Dusky Waycrest Gryphon
-		un(1, i(161909)),	-- Reins of the Stormsong Coastwatcher
 		un(1, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
 
 	}),
