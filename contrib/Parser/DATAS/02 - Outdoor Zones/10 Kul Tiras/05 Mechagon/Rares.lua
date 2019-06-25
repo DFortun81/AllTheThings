@@ -40,15 +40,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(151308, {	-- Boggac Skullbash
-					["isDaily"] = true,
-					["g"] = {
-						{	-- Rest in Pistons (Boggac Skullbash)
-							["achievementID"] = 13470,
-							["criteriaID"] = 14,
-						},
-					},
-				}),
 				n(153200, {	-- Boilburn
 					["questID"] = 55857, -- no second questID
 					["coord"] = { 51.1, 50.4, 1462 },
@@ -58,6 +49,15 @@ _.Zones =
 						{	-- Rest in Pistons (Boilburn)
 							["achievementID"] = 13470,
 							["criteriaID"] = 25,
+						},
+					},
+				}),
+				n(151308, {	-- Boggac Skullbash
+					["isDaily"] = true,
+					["g"] = {
+						{	-- Rest in Pistons (Boggac Skullbash)
+							["achievementID"] = 13470,
+							["criteriaID"] = 14,
 						},
 					},
 				}),
@@ -127,6 +127,7 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 21,
 						},
+						i(167042),	-- Blueprint: Scrap Trap
 					},
 				}),
 				n(154153, {	-- Enforcer KX-T57
@@ -138,6 +139,8 @@ _.Zones =
 							["achievementID"] = 13470,
 							["criteriaID"] = 31,
 						},
+						i(167174),	-- Blueprint: Rustbolt Pocket Turret
+						i(170467),	-- Whirring Chainblade
 					},
 				}),
 				n(151202, {	-- Foul Manifestation
@@ -153,6 +156,7 @@ _.Zones =
 						i(167871, {	-- Blueprint: G99.99 Landshark
 							["questID"] = 55063,
 						}),
+						i(167042),	-- Blueprint: Scrap Trap
 					},
 				}),
 				n(151884, {	-- Fungarian Furor
